@@ -1787,7 +1787,8 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 # TLD recruiting in city -- mtarini
 
 [anyone,"start", 
-   [    (eq, "$talk_context", tc_hire_troops), 
+   [(agent_get_entry_no, ":entry", "$g_talk_agent"),
+    (this_or_next|eq,":entry",24),(eq, "$talk_context", tc_hire_troops), 
     # prepare strings useful in the folowing dialog
     (str_store_party_name, s21, "$g_encountered_party"), # s21: CITY NAME
     (str_store_faction_name, s22, "$g_encountered_party_faction"), # s22: faction name

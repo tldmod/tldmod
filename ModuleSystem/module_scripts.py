@@ -1520,7 +1520,7 @@ scripts = [
 	(party_set_slot, center_list[x][0], slot_town_walls           , center_list[x][1][5]) for x in range(len(center_list)) ]+[   
 	(party_set_slot, center_list[x][0], slot_town_menu_background , center_list[x][1][6]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_town_elder           , center_list[x][2][3]) for x in range(len(center_list)) ]+[
-	(party_set_slot, center_list[x][0], slot_town_barman          , center_list[x][2][0]) for x in range(len(center_list)) ]+[
+	(party_set_slot, center_list[x][0], slot_town_captain          , center_list[x][2][0]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_town_weaponsmith     , center_list[x][2][1]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_town_merchant        , center_list[x][2][2]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_town_recruits_pt     , center_list[x][2][4]) for x in range(len(center_list)) ]+[
@@ -1984,7 +1984,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 28),  #Rafa: Savegame version
+    (assign,"$savegame_version", 29),  #Rafa: Savegame version
 
 	] + (is_a_wb_script==1 and [
 
@@ -9556,8 +9556,8 @@ scripts = [
       (faction_get_slot, ":capital", ":faction_no", slot_faction_advance_camp), #InVain: use advance camp instead = military walkers, no elders (captured centers are just military bases for the captors)
       (party_get_slot, ":value", ":capital", slot_town_elder),
       (party_set_slot, ":center_no", slot_town_elder, ":value"),
-      #(party_get_slot, ":value", ":capital", slot_town_barman),    # Rafa: as barmans just store the castle name and don't appear on the scenes
-      #(party_set_slot, ":center_no", slot_town_barman, ":value"),  #       just leave them alone.
+      (party_get_slot, ":value", ":capital", slot_town_captain),  
+      (party_set_slot, ":center_no", slot_town_captain, ":value"),  
       (party_get_slot, ":value", ":capital", slot_town_weaponsmith),
       (party_set_slot, ":center_no", slot_town_weaponsmith, ":value"),
       (party_get_slot, ":value", ":capital", slot_town_merchant),
@@ -22403,20 +22403,26 @@ scripts = [
 		(store_faction_of_party, ":town_faction","$current_town"),
         
 		# TLD center specific guards
-		(try_begin),
-			(neg|party_slot_eq,"$current_town", slot_town_prison, -1),
-			(party_get_slot, ":troop_prison_guard", "$current_town", slot_town_prison_guard_troop),
-		(else_try),
-			(party_get_slot, ":troop_prison_guard", "$current_town", slot_town_guard_troop),
-		(try_end),
+		# (try_begin),
+			# (neg|party_slot_eq,"$current_town", slot_town_prison, -1),
+			# (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_prison_guard_troop),
+		# (else_try),
+			# (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_guard_troop),
+		# (try_end),
 		(try_begin),
 			(neg|party_slot_eq,"$current_town", slot_town_castle, -1),
 			(party_get_slot, ":troop_castle_guard", "$current_town", slot_town_castle_guard_troop),
 		(else_try),
 			(party_get_slot, ":troop_castle_guard", "$current_town", slot_town_guard_troop),
 		(try_end),
+        (try_begin),
+			(neg|party_slot_eq,"$current_town", slot_town_captain, -1),
+			(party_get_slot, ":barracks_troop", "$current_town", slot_town_captain),
+		(else_try),
+			(party_get_slot, ":barracks_troop", "$current_town", slot_town_castle_guard_troop),
+		(try_end),
 		(set_visitor, 23, ":troop_castle_guard"),
-		(set_visitor, 24, ":troop_prison_guard"),
+		(set_visitor, 24, ":barracks_troop"),
         
         # TLD center specific guards
         (party_get_slot, ":tier_2_troop", "$current_town", slot_town_guard_troop),
@@ -24772,7 +24778,7 @@ command_cursor_scripts = [
         (try_begin),
             (assign, ":center_no", center_list[x][0]),
             (party_is_active,":center_no"),
-            (party_set_slot,":center_no",slot_town_barman, center_list[x][2][0]),
+            (party_set_slot,":center_no",slot_town_captain, center_list[x][2][0]),
         (try_end),
         ] for x in range(len(center_list)) if center_list[x][8]==0] )+[
         
@@ -25122,6 +25128,14 @@ command_cursor_scripts = [
         (assign, "$g_display_agent_labels",0), 
         (assign, "$show_hide_labels", 0), 
         (assign, "$savegame_version", 28),
+	(try_end),	
+    
+    (try_begin), #InVain - 26 Sept 2022, fix trainer troops wearing no armour
+        (le, "$savegame_version", 28),
+        (try_for_range, ":trainer_troop", training_ground_trainers_begin, training_ground_trainers_end),
+            (troop_raise_attribute, ":trainer_troop", ca_strength, 30),
+        (try_end),
+        (assign, "$savegame_version", 29),
 	(try_end),	
 ]),
 
