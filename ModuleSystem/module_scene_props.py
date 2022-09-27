@@ -1635,10 +1635,12 @@ scene_props = [
     
     #(assign, "$gate_breached",0),
     (prop_instance_get_starting_position, pos1, ":instance_no"),
-    (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
+    (set_fixed_point_multiplier, 100),
+    (position_move_z, pos1, 100,1), #safeguard against aggravators spawning underground
     (set_spawn_position, pos1),
     (spawn_agent,"trp_gate_aggravator"),
     (assign, ":gate_aggravator", reg0),
+    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, ":gate_aggravator"),
     (agent_set_speed_limit, ":gate_aggravator", 0),
     (agent_set_team, ":gate_aggravator", 2),
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
@@ -1658,22 +1660,25 @@ scene_props = [
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
     (display_message,"@Gate is breached!"),
-    (assign, ":gate_aggravator_found", 0),
+    #(assign, ":gate_aggravator_found", 0),
     
-    (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
-        (eq, ":gate_aggravator_found", 0),
-        (gt, ":agent_no", 0),
-        (agent_is_alive, ":agent_no"),  
-        (agent_get_troop_id, ":troop_id", ":agent_no"),
-        (eq, ":troop_id", "trp_gate_aggravator"),
-        (agent_get_position, pos2, ":agent_no"),
-        (set_fixed_point_multiplier, 100),
-        (get_distance_between_positions, ":distance", pos1, pos2),
-        (le, ":distance", 200),
-        #(display_message, "@gate_aggravator found"),
-        (call_script, "script_remove_agent", ":agent_no"), 
-        (assign, ":gate_aggravator_found", 1),
-    (try_end),
+    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
+    (call_script, "script_remove_agent", ":gate_aggravator"), 
+    
+    # (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
+        # (eq, ":gate_aggravator_found", 0),
+        # (gt, ":agent_no", 0),
+        # (agent_is_alive, ":agent_no"),  
+        # (agent_get_troop_id, ":troop_id", ":agent_no"),
+        # (eq, ":troop_id", "trp_gate_aggravator"),
+        # (agent_get_position, pos2, ":agent_no"),
+        # (set_fixed_point_multiplier, 100),
+        # (get_distance_between_positions, ":distance", pos1, pos2),
+        # (le, ":distance", 200),
+        # #(display_message, "@gate_aggravator found"),
+        # (call_script, "script_remove_agent", ":agent_no"), 
+        # (assign, ":gate_aggravator_found", 1),
+    # (try_end),
     
     (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"),  #move away all dependent barriers
     (try_begin),
@@ -1720,10 +1725,11 @@ scene_props = [
     
     #(assign, "$gate_breached",0),
     (prop_instance_get_starting_position, pos1, ":gate_no"),
-    (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
+    (position_move_z, pos1, 100,1), #safeguard against aggravators spawning underground
     (set_spawn_position, pos1),
     (spawn_agent,"trp_gate_aggravator"),
     (assign, ":gate_aggravator", reg0),
+    (scene_prop_set_slot, ":gate_no", slot_gate_aggravator, ":gate_aggravator"),
     (agent_set_speed_limit, ":gate_aggravator", 0),
     (agent_set_team, ":gate_aggravator", 2),
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
@@ -1743,22 +1749,9 @@ scene_props = [
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
     (display_message,"@Gate is breached!"),
-    (assign, ":gate_aggravator_found", 0),
     
-    (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
-        (eq, ":gate_aggravator_found", 0),
-        (gt, ":agent_no", 0),
-        (agent_is_alive, ":agent_no"),  
-        (agent_get_troop_id, ":troop_id", ":agent_no"),
-        (eq, ":troop_id", "trp_gate_aggravator"),
-        (agent_get_position, pos2, ":agent_no"),
-        (set_fixed_point_multiplier, 100),
-        (get_distance_between_positions, ":distance", pos1, pos2),
-        (le, ":distance", 100),
-        #(display_message, "@gate_aggravator found"),
-        (call_script, "script_remove_agent", ":agent_no"), 
-        (assign, ":gate_aggravator_found", 1),
-    (try_end),
+    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
+    (call_script, "script_remove_agent", ":gate_aggravator"), 
     
     (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"),  #move away all dependent barriers
     (try_begin),
@@ -2641,10 +2634,11 @@ scene_props = [
     
     #(assign, "$gate_breached",0),
     (prop_instance_get_starting_position, pos1, ":gate_no"),
-    (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
+    (position_move_z, pos1, 100,1), #safeguard against aggravators spawning underground
     (set_spawn_position, pos1),
     (spawn_agent,"trp_gate_aggravator"),
     (assign, ":gate_aggravator", reg0),
+    (scene_prop_set_slot, ":gate_no", slot_gate_aggravator, ":gate_aggravator"),
     (agent_set_speed_limit, ":gate_aggravator", 0),
     (agent_set_team, ":gate_aggravator", 2),
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
@@ -2664,23 +2658,10 @@ scene_props = [
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
     (display_message,"@Gate is breached!"),
-    (assign, ":gate_aggravator_found", 0),
     
-    (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
-        (eq, ":gate_aggravator_found", 0),
-        (gt, ":agent_no", 0),
-        (agent_is_alive, ":agent_no"),  
-        (agent_get_troop_id, ":troop_id", ":agent_no"),
-        (eq, ":troop_id", "trp_gate_aggravator"),
-        (agent_get_position, pos2, ":agent_no"),
-        (set_fixed_point_multiplier, 100),
-        (get_distance_between_positions, ":distance", pos1, pos2),
-        (le, ":distance", 200),
-        #(display_message, "@gate_aggravator found"),
-        (call_script, "script_remove_agent", ":agent_no"), 
-        (assign, ":gate_aggravator_found", 1),
-    (try_end),
-    
+    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
+    (call_script, "script_remove_agent", ":gate_aggravator"),     
+
     (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"),  #move away all dependent barriers
     (try_begin),
       (gt, ":max_barriers",0),
@@ -3346,50 +3327,6 @@ scene_props = [
 
 # retreat gates open at mission start and close when the assigned rally point in var_id_2 is lost. Place closed.
 ("gate_destructible_retreat",sokf_destructible,"gate_tld_displaced","bo_gate_tld_displaced",   [ 
-
-   # (ti_on_scene_prop_init, [
-   # (store_trigger_param_1, ":gate_no"),
-    
-    # #gate aggravator is activated in mission_template
-    # # (prop_instance_get_starting_position, pos1, ":instance_no"),
-    # # (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
-    # # (set_spawn_position, pos1),
-    # # (spawn_agent,"trp_gate_aggravator"),
-    # # (assign, ":gate_aggravator", reg0),
-    # # (agent_set_speed_limit, ":gate_aggravator", 0),
-    # # (agent_set_team, ":gate_aggravator", 2),
-    # # ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
-    # # (agent_set_no_dynamics, ":gate_aggravator",1),
-    # # (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
-    # # ] or []) + [
-
-    # #open gate at mission start
-    # (prop_instance_get_starting_position, pos1, ":gate_no"),
-    # (position_rotate_z, pos1, 85),
-    # (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
-    
-    # #find dependent barriers, move them down at mission start
-    # (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
-    # (try_begin),
-      # (gt, ":max_barriers",0),
-      # (try_for_range,":count",0,":max_barriers"),
-        # (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached", ":count"),
-        # (prop_instance_get_starting_position, pos1, ":barrier_no"),
-        # ] + (is_a_wb_sceneprop==1 and [  #different methods of finding dependent barriers in WB and MB
-        # (prop_instance_get_variation_id, ":var1", ":barrier_no"),
-        # (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
-        # (eq, ":var1", ":var1_gate"),
-        # ] or [
-        # (prop_instance_get_starting_position, pos2, ":gate_no"),
-        # (set_fixed_point_multiplier, 100),
-        # (get_distance_between_positions, ":distance", pos1, pos2),
-        # (le, ":distance", 200),
-        # ]) + [
-        # (position_move_z,pos1,-10000),
-        # (prop_instance_set_position,":barrier_no",pos1),
-      # (try_end),
-    # (try_end),
-   # ]),
    
    (ti_on_scene_prop_destroy, [
     (store_trigger_param_1, ":gate_no"),
@@ -3403,6 +3340,9 @@ scene_props = [
     (play_sound, "snd_dummy_destroyed"),
     (display_message,"@Gate is breached!"),
     (assign, ":gate_aggravator_found", 0),
+
+    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
+    (call_script, "script_remove_agent", ":gate_aggravator"), 
     
     (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
         (eq, ":gate_aggravator_found", 0),

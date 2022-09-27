@@ -669,6 +669,7 @@ slot_scene_belfry_props_begin   = 10
 ##  SCENE PROP SLOTS            #############################
 ########################################################
 scene_prop_open_or_close_slot             = 0 #0= closed, 1=open, 2=destroyed
+slot_gate_aggravator                      = 1 #stores agent_no of assigned gate aggravator
 
 ########################################################
 ##  TROOP SLOTS            #############################
