@@ -1520,7 +1520,7 @@ scripts = [
 	(party_set_slot, center_list[x][0], slot_town_walls           , center_list[x][1][5]) for x in range(len(center_list)) ]+[   
 	(party_set_slot, center_list[x][0], slot_town_menu_background , center_list[x][1][6]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_town_elder           , center_list[x][2][3]) for x in range(len(center_list)) ]+[
-	(party_set_slot, center_list[x][0], slot_town_barman          , center_list[x][2][0]) for x in range(len(center_list)) ]+[
+	(party_set_slot, center_list[x][0], slot_town_captain          , center_list[x][2][0]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_town_weaponsmith     , center_list[x][2][1]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_town_merchant        , center_list[x][2][2]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_town_recruits_pt     , center_list[x][2][4]) for x in range(len(center_list)) ]+[
@@ -1984,7 +1984,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 28),  #Rafa: Savegame version
+    (assign,"$savegame_version", 29),  #Rafa: Savegame version
 
 	] + (is_a_wb_script==1 and [
 
@@ -7555,9 +7555,10 @@ scripts = [
         (else_try),
           (eq, ":quest_no", "qst_deal_with_night_bandits"),
           (neg|faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good), #TLD: evil factions only
-          (is_between, ":player_level", 0, 15),
+          (is_between, ":player_level", 0, 20),
           (is_between, ":giver_center_no", centers_begin, centers_end),
-          (party_set_slot, ":giver_center_no", slot_center_has_bandits, "trp_mountain_goblin"), #TLD: goblins
+          (faction_get_slot, ":bandit_troop", ":giver_faction_no", slot_faction_tier_1_troop),
+          (party_set_slot, ":giver_center_no", slot_center_has_bandits, ":bandit_troop"),
           #(party_slot_ge, ":giver_center_no", slot_center_has_bandits, 1),
           (assign, ":quest_target_center", ":giver_center_no"),
 		  (store_faction_of_party,":quest_object_faction",":quest_target_center"),
@@ -9555,8 +9556,8 @@ scripts = [
       (faction_get_slot, ":capital", ":faction_no", slot_faction_advance_camp), #InVain: use advance camp instead = military walkers, no elders (captured centers are just military bases for the captors)
       (party_get_slot, ":value", ":capital", slot_town_elder),
       (party_set_slot, ":center_no", slot_town_elder, ":value"),
-      #(party_get_slot, ":value", ":capital", slot_town_barman),    # Rafa: as barmans just store the castle name and don't appear on the scenes
-      #(party_set_slot, ":center_no", slot_town_barman, ":value"),  #       just leave them alone.
+      (party_get_slot, ":value", ":capital", slot_town_captain),  
+      (party_set_slot, ":center_no", slot_town_captain, ":value"),  
       (party_get_slot, ":value", ":capital", slot_town_weaponsmith),
       (party_set_slot, ":center_no", slot_town_weaponsmith, ":value"),
       (party_get_slot, ":value", ":capital", slot_town_merchant),
@@ -14137,37 +14138,46 @@ scripts = [
 		(this_or_next|eq, "$current_town", "p_town_east_osgiliath"), # walkers there in osgiliaths
 		(this_or_next|eq, "$current_town", "p_town_cair_andros"), # walkers there in osgiliaths
 		(neq, "$g_defending_against_siege", 0), # walkers there when siege
-		(try_for_range, ":walker_no", 0, num_town_walkers),
-			(store_add, ":troop_slot", slot_center_walker_0_troop, ":walker_no"),
-			(try_begin),
-				(eq, "$g_defending_against_siege", 0),
-				(party_get_slot, ":walker_troop_id", "$current_town", ":troop_slot"),
-			(else_try),
-				# TODO: put military walkers when siege
-				(party_get_slot, ":walker_troop_id", "$current_town", ":troop_slot"),
-			(try_end),
-			(gt, ":walker_troop_id", 0),
-			(store_add, ":entry_no", town_walker_entries_start, ":walker_no"),
-			(try_begin), ## Kham Edit for more town walkers!
-				(this_or_next|is_between, 			"$current_town", isengard_mordor_centers_begin, isengard_mordor_centers_end),
-				(this_or_next|is_between, 			"$current_town", 		   moria_centers_begin, 		  moria_centers_end),
-				(			  is_between, 			"$current_town", 		gundabad_centers_begin, 	   gundabad_centers_end),	
-				(set_visitors, ":entry_no", ":walker_troop_id",6), #entry points 32-39 
-			(else_try),
-				(this_or_next|eq, "$current_town", "p_town_woodelf_camp"),
-				(this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
-				(this_or_next|eq, "$current_town", "p_town_woodelf_west_camp"),
-				(this_or_next|eq, "$current_town", "p_town_caras_galadhon"),
-				(this_or_next|eq, "$current_town", "p_town_cerin_dolen"),
-				(this_or_next|eq, "$current_town", "p_town_cerin_amroth"),
-				(this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
-				(			  eq, "$current_town", "p_town_henneth_annun"),
-				#(			  eq, "$current_town", "p_town_imladris_camp"), #Enough space for lots of walkers
-				(set_visitors, ":entry_no", ":walker_troop_id",1),
-			(else_try),
-				(set_visitors, ":entry_no", ":walker_troop_id",4),
-			(try_end), ## Kham Edit for more town walkers! - END
+
+        (try_begin), ## Kham Edit for more town walkers!
+            (this_or_next|is_between, 			"$current_town", isengard_mordor_centers_begin, isengard_mordor_centers_end),
+            (this_or_next|is_between, 			"$current_town", 		   moria_centers_begin, 		  moria_centers_end),
+            (			  is_between, 			"$current_town", 		gundabad_centers_begin, 	   gundabad_centers_end),	
+            #(set_visitors, ":entry_no", ":walker_troop_id",6), #entry points 32-39 
+            (assign, ":num_walkers", 7),
+        (else_try),
+            (this_or_next|eq, "$current_town", "p_town_woodelf_camp"),
+            (this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
+            (this_or_next|eq, "$current_town", "p_town_woodelf_west_camp"),
+            (this_or_next|eq, "$current_town", "p_town_caras_galadhon"),
+            (this_or_next|eq, "$current_town", "p_town_cerin_dolen"),
+            (this_or_next|eq, "$current_town", "p_town_cerin_amroth"),
+            (this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
+            (			  eq, "$current_town", "p_town_henneth_annun"),
+            #(			  eq, "$current_town", "p_town_imladris_camp"), #Enough space for lots of walkers
+            #(set_visitors, ":entry_no", ":walker_troop_id",1),
+            (assign, ":num_walkers", 2),
+        (else_try),
+            #(set_visitors, ":entry_no", ":walker_troop_id",4),
+            (assign, ":num_walkers", 5),
+        (try_end), ## Kham Edit for more town walkers! - END
+
+        (try_for_range, ":entry_no", town_walker_entries_start, 40),
+            (try_for_range, ":unused", 0, ":num_walkers"),
+                (store_random_in_range, ":walker_no", 0, num_town_walkers),
+                (store_add, ":troop_slot", slot_center_walker_0_troop, ":walker_no"),
+                (try_begin),
+                    (eq, "$g_defending_against_siege", 0),
+                    (party_get_slot, ":walker_troop_id", "$current_town", ":troop_slot"),
+                (else_try),
+                    # TODO: put military walkers when siege
+                    (party_get_slot, ":walker_troop_id", "$current_town", ":troop_slot"),
+                (try_end),
+                (gt, ":walker_troop_id", 0),
+                (set_visitor, ":entry_no", ":walker_troop_id"),
+            (try_end),
 		(try_end),
+        
 	(try_end),
 ]),
 
@@ -14182,38 +14192,43 @@ scripts = [
       (modify_visitors_at_site, ":cur_scene"),
       (reset_visitors),
       (party_get_slot, ":bandit_troop", "$current_town", slot_center_has_bandits),
+      (troop_get_upgrade_troop, ":bandit_troop2", ":bandit_troop", 0),
       (store_character_level, ":level", "trp_player"),
-        (assign, ":spawn_amount", 1),
-        (assign, "$num_center_bandits", 0),
+
+      (assign, ":spawn_amount", 1),
+      (assign, "$num_center_bandits", 0),
         (try_begin),
-          (gt, ":level", 15),
+          (gt, ":level", 12),
+          (store_random_in_range, ":random_no", 0, 100),
+          (lt, ":random_no", ":level"),
+          (assign, ":spawn_amount", 3),
+        (else_try),
+          (gt, ":level", 6),
           (store_random_in_range, ":random_no", 0, 100),
           (lt, ":random_no", ":level"),
           (assign, ":spawn_amount", 2),
         (try_end),
         (val_add, "$num_center_bandits",  ":spawn_amount"),
-        (set_visitors, 11, ":bandit_troop", ":spawn_amount"),
-        (assign, ":spawn_amount", 1),
+        (set_visitors, 30, ":bandit_troop", ":spawn_amount"),
+        
         (try_begin),
-          (gt, ":level", 20),
-          (store_random_in_range, ":random_no", 0, 100),
-          (lt, ":random_no", ":level"),
-          (assign, ":spawn_amount", 2),
+            (gt, ":level", 3),
+            (assign, ":spawn_amount", 1),
+            (try_begin),
+                (gt, ":level", 15),
+                (store_random_in_range, ":random_no", 0, 100),
+                (lt, ":random_no", ":level"),
+                (assign, ":spawn_amount", 3),
+            (else_try),
+                (gt, ":level", 9),
+                (store_random_in_range, ":random_no", 0, 100),
+                (lt, ":random_no", ":level"),
+                (assign, ":spawn_amount", 2),
+            (try_end),
+            (set_visitors, 31, ":bandit_troop2", ":spawn_amount"),
+            (val_add, "$num_center_bandits",  ":spawn_amount"),
         (try_end),
-        (set_visitors, 10, ":bandit_troop", ":spawn_amount"),
-        (val_add, "$num_center_bandits",  ":spawn_amount"),
-        (try_begin),
-          (gt, ":level", 9),
-          (assign, ":spawn_amount", 1),
-          (try_begin),
-            (gt, ":level", 25),
-            (store_random_in_range, ":random_no", 0, 100),
-            (lt, ":random_no", ":level"),
-            (assign, ":spawn_amount", 2),
-          (try_end),
-          (set_visitors, 12, ":bandit_troop", ":spawn_amount"),
-          (val_add, "$num_center_bandits",  ":spawn_amount"),
-        (try_end),
+        
         #(assign, "$town_entered", 1),
         (assign, "$all_doors_locked", 1),
 
@@ -14278,12 +14293,8 @@ scripts = [
 	   (is_between, ":entry",town_walker_entries_start,40),
        (val_add, ":num_walkers", 1),
        (agent_get_position, pos1, ":cur_agent"),
-       (try_for_range, ":i_e_p", 9, 40),#Entry points
-         (entry_point_get_position, pos2, ":i_e_p"),
-         (get_distance_between_positions, ":distance", pos1, pos2),
-         (lt, ":distance", 200),
-         (agent_set_slot, ":cur_agent", 0, ":i_e_p"),
-       (try_end),
+       (store_random_in_range, ":i_e_p", town_walker_entries_start, 40),#Entry points
+       (agent_set_slot, ":cur_agent", 0, ":i_e_p"),
        (call_script, "script_set_town_walker_destination", ":cur_agent"),
      (try_end),
 ]),
@@ -22392,20 +22403,26 @@ scripts = [
 		(store_faction_of_party, ":town_faction","$current_town"),
         
 		# TLD center specific guards
-		(try_begin),
-			(neg|party_slot_eq,"$current_town", slot_town_prison, -1),
-			(party_get_slot, ":troop_prison_guard", "$current_town", slot_town_prison_guard_troop),
-		(else_try),
-			(party_get_slot, ":troop_prison_guard", "$current_town", slot_town_guard_troop),
-		(try_end),
+		# (try_begin),
+			# (neg|party_slot_eq,"$current_town", slot_town_prison, -1),
+			# (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_prison_guard_troop),
+		# (else_try),
+			# (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_guard_troop),
+		# (try_end),
 		(try_begin),
 			(neg|party_slot_eq,"$current_town", slot_town_castle, -1),
 			(party_get_slot, ":troop_castle_guard", "$current_town", slot_town_castle_guard_troop),
 		(else_try),
 			(party_get_slot, ":troop_castle_guard", "$current_town", slot_town_guard_troop),
 		(try_end),
+        (try_begin),
+			(neg|party_slot_eq,"$current_town", slot_town_captain, -1),
+			(party_get_slot, ":barracks_troop", "$current_town", slot_town_captain),
+		(else_try),
+			(party_get_slot, ":barracks_troop", "$current_town", slot_town_castle_guard_troop),
+		(try_end),
 		(set_visitor, 23, ":troop_castle_guard"),
-		(set_visitor, 24, ":troop_prison_guard"),
+		(set_visitor, 24, ":barracks_troop"),
         
         # TLD center specific guards
         (party_get_slot, ":tier_2_troop", "$current_town", slot_town_guard_troop),
@@ -24761,7 +24778,7 @@ command_cursor_scripts = [
         (try_begin),
             (assign, ":center_no", center_list[x][0]),
             (party_is_active,":center_no"),
-            (party_set_slot,":center_no",slot_town_barman, center_list[x][2][0]),
+            (party_set_slot,":center_no",slot_town_captain, center_list[x][2][0]),
         (try_end),
         ] for x in range(len(center_list)) if center_list[x][8]==0] )+[
         
@@ -25111,6 +25128,14 @@ command_cursor_scripts = [
         (assign, "$g_display_agent_labels",0), 
         (assign, "$show_hide_labels", 0), 
         (assign, "$savegame_version", 28),
+	(try_end),	
+    
+    (try_begin), #InVain - 26 Sept 2022, fix trainer troops wearing no armour
+        (le, "$savegame_version", 28),
+        (try_for_range, ":trainer_troop", training_ground_trainers_begin, training_ground_trainers_end),
+            (troop_raise_attribute, ":trainer_troop", ca_strength, 30),
+        (try_end),
+        (assign, "$savegame_version", 29),
 	(try_end),	
 ]),
 

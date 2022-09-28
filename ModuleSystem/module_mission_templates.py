@@ -1534,7 +1534,22 @@ mission_templates = [ # not used in game
 			(store_faction_of_party, ":faction", "$current_town"),
 			(call_script, "script_increase_rank", ":faction", 2),
 			(call_script, "script_change_player_relation_with_center", "$current_town", 3),
-		(try_end)]),
+		(try_end),
+        (try_begin),
+			(party_slot_eq, "$current_town", slot_barracks_visited, 0),
+			(neg|party_slot_eq, "$current_town", slot_barracks_visited, "trp_no_troop"),
+			(entry_point_get_position, pos2, 24),
+			(get_distance_between_positions, ":dist", pos2, pos1),
+			(lt, ":dist", 300),
+			(party_set_slot, "$current_town", slot_barracks_visited, 1),
+			(party_set_slot, "$current_town", slot_center_visited, 1), # assume visited when found at least 1 merchant
+			(display_message, "@You_have_found_the_captain_of_the_garrison."),
+			#(add_xp_as_reward, 50),
+			(store_faction_of_party, ":faction", "$current_town"),
+			(call_script, "script_increase_rank", ":faction", 2),
+			(call_script, "script_change_player_relation_with_center", "$current_town", 3),
+		(try_end), 
+        ]),
 
   (ti_on_agent_spawn, 0, 0, [ (store_trigger_param_1, ":agent"), 
                               (agent_get_troop_id, ":troop", ":agent"),
@@ -2004,15 +2019,23 @@ mission_templates = [ # not used in game
      (40,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(41,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(42,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(43,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      (44,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(45,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(46,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(47,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      ],
-     tld_common_wb_muddy_water +
-    [ (ti_on_agent_spawn,0,0,[],[(store_trigger_param_1, ":agent_no"),
-								(agent_get_troop_id, ":troop_no", ":agent_no"),
-								(neq, ":troop_no", "trp_player"),
-								(agent_set_team, ":agent_no", 1),
-                ] + (is_a_wb_mt==1 and [
-                (agent_set_is_alarmed, ":agent_no", 1),
-                ] or []) + [
-                ]),
+     tld_common_wb_muddy_water + 
+
+    [ (ti_on_agent_spawn,0,0,[],
+        [(store_trigger_param_1, ":agent_no"),
+        (agent_get_troop_id, ":troop_no", ":agent_no"),
+        (try_begin),
+            (neq, ":troop_no", "trp_player"),
+            (agent_set_team, ":agent_no", 1),
+            ] + (is_a_wb_mt==1 and [
+            (agent_set_is_alarmed, ":agent_no", 1),
+            ] or []) + [
+        (else_try),
+            (entry_point_get_position, pos1, 29),
+            (agent_set_position, ":agent_no", pos1),
+        (try_end),
+        ]),
+  
       (ti_before_mission_start, 0, 0,[],[(team_set_relation, 1, 0, 0),(team_set_relation, 2, 0, 0),  #MV: both player and bandits neutral to guards
         #remove cabbage guard spawn points
         (replace_scene_props, "spr_troop_prison_guard", "spr_empty"),
@@ -2025,7 +2048,10 @@ mission_templates = [ # not used in game
 		(replace_scene_props, "spr_troop_civilian_sitting_ground", "spr_empty"),
 		(replace_scene_props, "spr_troop_civilian_sitting_chair", "spr_empty"),	
       ]),
-      common_inventory_not_available,
+ 
+      common_inventory_not_available,       
+      ] + (is_a_wb_mt==1 and [ hp_shield_init, hp_shield_trigger, ] or []) + [
+
       (ti_tab_pressed  , 0, 0,[(display_message, "@Cannot leave now.")], []),
       (ti_on_leave_area, 0, 0,[(try_begin),(eq, "$g_defending_against_siege", 0),(assign,"$g_leave_town",1),(try_end)], []),
       (0, 0, ti_once,[],[(call_script, "script_music_set_situation_with_culture", mtf_sit_ambushed),(set_party_battle_mode)]),
@@ -4792,6 +4818,7 @@ mission_templates = [ # not used in game
                 (set_spawn_position, pos1),
                 (spawn_agent,"trp_gate_aggravator"),
                 (assign, ":gate_aggravator", reg0),
+                (scene_prop_set_slot, ":gate_no", slot_gate_aggravator, ":gate_aggravator"),
                 (agent_set_speed_limit, ":gate_aggravator", 0),
                 (agent_set_team, ":gate_aggravator", 2),
                 #] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)

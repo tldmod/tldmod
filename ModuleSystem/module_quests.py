@@ -191,8 +191,8 @@ quests = [
 ( "deal_with_looters", "Deal with Tribal Orcs", qf_random_quest,
   "The Elder of {s4} has asked you to deal with several bands of tribal orcs around {s4}."
   ),
-( "deal_with_night_bandits", "Deal with Rogue Goblins", qf_random_quest,
-  "The Elder of {s14} has asked you to deal with night goblins at {s14}."
+( "deal_with_night_bandits", "Deal with Night Bandits", qf_random_quest,
+  "The Elder of {s14} has asked you to deal with night bandits at {s14}."
   ),
 ( "deliver_food", "Supply {s3} with {reg5} Units of food", qf_random_quest,
   "The {s9} of {s3} asked you to bring him {reg5} units of food in 10 days."

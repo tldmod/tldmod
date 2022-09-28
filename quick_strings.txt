@@ -1,4 +1,4 @@
-1699
+1700
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -665,6 +665,7 @@ qstr_Cannot_leave_now. Cannot_leave_now.
 qstr_You_have_found_the_l You_have_found_the_local_smithy.
 qstr_You_have_found_the_lo You_have_found_the_local_authority.
 qstr_You_have_found_the_loc You_have_found_the_local_warehouse.
+qstr_You_have_found_the_c You_have_found_the_captain_of_the_garrison.
 qstr__cancelled_the_{reg1 (cancelled_the_{reg10}_exp_pts_earned_from_killing_prisoners)
 qstr_Forming_ranks. Forming_ranks.
 qstr_Three_Nazgul_are_cir Three_Nazgul_are_circling_in_the_sky_above_the_battlefield!
@@ -1650,7 +1651,7 @@ qstr_The_{s9}_of_{s3}_ask The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_o
 qstr_The_{s9}_of_{s3}_aske The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_{s6}_in_{reg0}_days.
 qstr_Escort_the_supply_tr Escort_the_supply_train_to_{s8}.
 qstr_The_{s9}_of_{s4}_aske The_{s9}_of_{s4}_asked_you_to_hunt_down_the_troublesome_goblins_in_the_vicinity_of_the_town.
-qstr_The_{s9}_of_{s14}_ha The_{s9}_of_{s14}_has_asked_you_to_deal_with_a_group_of_goblins_making_trouble_in_{s14}._They_only_come_out_at_night,_and_only_attack_lone_people_on_the_streets.
+qstr_The_{s9}_of_{s14}_ha The_{s9}_of_{s14}_has_asked_you_to_deal_with_a_group_of_bandits_making_trouble_in_{s14}._They_only_come_out_at_night,_and_only_attack_lone_people_on_the_streets.
 qstr_refugees refugees
 qstr_slaves slaves
 qstr_{s1}_Refugees {s1}_Refugees

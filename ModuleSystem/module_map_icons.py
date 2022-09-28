@@ -331,7 +331,7 @@ map_icons = map_icons_scribbler + [
   ("thranduil",mcn_no_shadow,"thranduilhall", 1.0,0),
   ("esgaroth",mcn_no_shadow,"esgaroth", 1.0,0),
   ("debris",0,"debris", 0.6,0), #same model as ford rocks, differently scaled
-  ("empty",0,"0", 0.6,0),
+  ("empty",0,"dummy_mesh", 0.6,0),
   ("gandalf", 0, "white_rider", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("nazgul" , 0, "black_rider", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("shrubbery",0,"icon_shrubbery", 1,0), # for designating impassable forest
