@@ -3388,6 +3388,84 @@ scene_props = [
     ]),
 ], 1500),
 
+("spike_group_a_destructible",sokf_destructible,"spike_group_a","bo_spike_group_a",   [ 
+   (ti_on_scene_prop_init, [
+   (store_trigger_param_1, ":instance_no"),
+    
+    (prop_instance_get_starting_position, pos1, ":instance_no"),
+    (set_fixed_point_multiplier, 100),
+    (position_move_z, pos1, 100,1), #safeguard against aggravators spawning underground
+    (set_spawn_position, pos1),
+    (spawn_agent,"trp_gate_aggravator"),
+    (assign, ":gate_aggravator", reg0),
+    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, ":gate_aggravator"),
+    (agent_set_speed_limit, ":gate_aggravator", 0),
+    (agent_set_team, ":gate_aggravator", 2),
+    ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
+    (agent_set_no_dynamics, ":gate_aggravator",1),
+    (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
+    ] or []) + [
+  ]),
+   
+   (ti_on_scene_prop_destroy, [
+    (store_trigger_param_1, ":gate_no"),
+    (prop_instance_get_starting_position, pos1, ":gate_no"),
+    (particle_system_burst,"psys_village_fire_smoke_big",pos1,10),
+    (position_rotate_x, pos1, 60),
+    (position_move_z, pos1, -100,60),
+    (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
+    (play_sound, "snd_dummy_destroyed"),
+    
+    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
+    (call_script, "script_remove_agent", ":gate_aggravator"), 
+   ]),
+
+   (ti_on_scene_prop_hit,
+    [(play_sound, "snd_dummy_hit"),
+  (particle_system_burst, "psys_dummy_smoke", pos1, 3),
+  (particle_system_burst, "psys_dummy_straw", pos1, 10),
+    ]),
+], 500),
+
+("orc_stakes_destructible",sokf_destructible,"orc_stakes","bo_orc_stakes_new",   [ 
+   (ti_on_scene_prop_init, [
+   (store_trigger_param_1, ":instance_no"),
+    
+    (prop_instance_get_starting_position, pos1, ":instance_no"),
+    (set_fixed_point_multiplier, 100),
+    (position_move_z, pos1, 100,1), #safeguard against aggravators spawning underground
+    (set_spawn_position, pos1),
+    (spawn_agent,"trp_gate_aggravator"),
+    (assign, ":gate_aggravator", reg0),
+    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, ":gate_aggravator"),
+    (agent_set_speed_limit, ":gate_aggravator", 0),
+    (agent_set_team, ":gate_aggravator", 2),
+    ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
+    (agent_set_no_dynamics, ":gate_aggravator",1),
+    (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
+    ] or []) + [
+  ]),
+   
+   (ti_on_scene_prop_destroy, [
+    (store_trigger_param_1, ":gate_no"),
+    (prop_instance_get_starting_position, pos1, ":gate_no"),
+    (particle_system_burst,"psys_village_fire_smoke_big",pos1,10),
+    (position_rotate_x, pos1, -80),
+    (position_move_z, pos1, -100,60),
+    (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
+    (play_sound, "snd_dummy_destroyed"),
+    
+    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
+    (call_script, "script_remove_agent", ":gate_aggravator"), 
+   ]),
+
+   (ti_on_scene_prop_hit,
+    [(play_sound, "snd_dummy_hit"),
+  (particle_system_burst, "psys_dummy_smoke", pos1, 3),
+  (particle_system_burst, "psys_dummy_straw", pos1, 10),
+    ]),
+], 200),
+
 ("elf_treehouse_b",0,"elf_treehouse_b","bo_elf_treehouse_b",[]),  
 
 #("save_compartibility2",0,"0","0", []),
