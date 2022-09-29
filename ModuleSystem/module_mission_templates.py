@@ -4277,6 +4277,7 @@ mission_templates = [ # not used in game
     ]),
 
 
+   ] + (is_a_wb_mt==1 and [    
   #find and open retreat gates
   (1, 0, ti_once, [],[
             (scene_prop_get_num_instances,":max_gates","spr_gate_destructible_retreat"), 
@@ -4288,8 +4289,7 @@ mission_templates = [ # not used in game
                 (prop_instance_get_starting_position, pos1, ":gate_no"),
                 (position_rotate_z, pos1, 85), 
                 (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
-
-        ] + (is_a_wb_mt==1 and [                              
+                          
                 #find dependent barriers, move them underground
                 (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
                 (try_begin), # barriers start
@@ -4304,10 +4304,11 @@ mission_templates = [ # not used in game
                     (prop_instance_set_position,":barrier_no",pos1),
                   (try_end), # barriers loop
                 (try_end), # barriers end
-        ] or []) + [
               (try_end), # gates loop
             (try_end), # gates end
     ]),
+
+        ] or []) + [
 
   ## WB Only - When a horse archer spawns, we set them to Archers, instead of Cavalry.
 
@@ -4577,6 +4578,8 @@ mission_templates = [ # not used in game
       (team_give_order, "$defender_team_3", grc_everyone, mordr_charge),
       (set_show_messages, 1),
       #(display_message,"@Defenders: everyone CHARGE!!"),
+
+        ] + (is_a_wb_mt==1 and [ 
         #find and open retreat gates
       (scene_prop_get_num_instances,":max_gates","spr_gate_destructible_retreat"), 
         (try_begin), #gates start
@@ -4587,8 +4590,7 @@ mission_templates = [ # not used in game
             (scene_prop_set_slot, ":gate_no", scene_prop_open_or_close_slot, 1),
             (prop_instance_get_starting_position, pos1, ":gate_no"),
             (position_rotate_z, pos1, 85), 
-            (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
-        ] + (is_a_wb_mt==1 and [                              
+            (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second                             
             #find dependent barriers, move them underground
             (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
             (try_begin), # barriers start
@@ -4603,11 +4605,12 @@ mission_templates = [ # not used in game
                 (prop_instance_set_position,":barrier_no",pos1),
               (try_end), # barriers loop
             (try_end), # barriers end
-        ] or []) + [
           (try_end), # gates loop
         (try_end), # gates end
+        ] or []) + [
     (try_end), #desparate charge end
     ]),
+
 
     #update player team
     ] + (is_a_wb_mt==1 and [
