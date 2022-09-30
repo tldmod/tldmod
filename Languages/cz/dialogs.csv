@@ -823,7 +823,7 @@ dlga_start:mayor_begin|dobrý den, můj pane
 dlga_start:mayor_talk|zdravím cizinče, vidím že jsi poprvé v {s9}. jsem gildmistr města
 dlga_start:mayor_begin.1|Dobrý den, {playername}.
 ; dlga_mayor_begin:lord_deal_with_night_bandits_completed|Very nice work, {playername}, you made short work of those lawless curs!^^[earned {reg14} Resource Points of {s14}]
-; dlga_lord_deal_with_night_bandits_completed:close_window|They had it coming.
+dlga_lord_deal_with_night_bandits_completed:close_window|Měli to spočítané.
 ; dlga_mayor_talk:mayor_deliver_iron|I've brought you better quality metal, {reg9} units of {s4}, when you requested {s3}.
 ; dlga_mayor_talk:mayor_deliver_iron.1|Here's your metal supply, {reg9} units of {s4}.
 ; dlga_mayor_talk:mayor_deliver_iron.2|I've brought more metal, {reg8} units of {s4}, when you requested {reg9}.
@@ -985,7 +985,7 @@ dlga_town_dweller_talk:town_dweller_ask_info|Co mi řekneš o této vesnici?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Co mi povíš o tomto místě?
 dlga_town_dweller_talk:town_dweller_talk|Jak se tu žije?
 dlga_town_dweller_talk:town_dweller_ask_rumor|Jaké jsou tady nejnovější zvěsti?
-; dlga_town_dweller_ask_rumor:town_dweller_talk|I don't know anything that would be of interest to you.
+dlga_town_dweller_ask_rumor:town_dweller_talk|Nevím o ničem, co by tě mohlo zajímat.
 ; dlga_town_dweller_brawl:town_dweller_brawl_confirm|Are you threatening me? The guards hardly wait for your type to show up.
 ; dlga_town_dweller_brawl_confirm:close_window|Oh really? Let's see what you've got.
 ; dlga_town_dweller_brawl_confirm:close_window.1|No, I thought you were someone else.
@@ -1007,7 +1007,7 @@ dlga_hall_guard_duty:close_window|Ano veliteli. Jak si přejete.
 dlga_hall_guard_talk:hall_guard_arrest|Chci aby si okamžitě zatknul tohoto muže.
 ; dlga_hall_guard_arrest:hall_guard_arrest_2|Who do you want arrested, Commander?
 ; dlga_hall_guard_arrest_2:close_window|Ah, never mind my high spirits lads.
-; dlga_hall_guard_arrest_2:close_window.1|Forget it. I will find another way to deal with this.
+dlga_hall_guard_arrest_2:close_window.1|Zapomeň na to. Najdu jiný způsob, jak to vyřešit.
 dlga_enemy_defeated:close_window|Arggh! Tohle nenávidím.
 dlga_party_relieved:close_window|Děkujeme ti za tvou pomoc proti těm bastardům.
 dlga_start:battle_reason_stated|Budu pít s tvé lebky.

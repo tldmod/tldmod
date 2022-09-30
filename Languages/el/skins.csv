@@ -1,12 +1,12 @@
 skinkey_chin_size|Μέγεθος Πιγουνιού
 skinkey_chin_shape|Σχήμα Πιγουνιού
-skinkey_chin_forward|Πιγούνι Μπροστά
+skinkey_chin_forward|Μπροστά Πιγούνι
 skinkey_jaw_width|Φάρδος Σαγονιού
 skinkey_lower_lip|Κάτω Χείλος
 skinkey_upper_lip|Πάνω Χείλος
 skinkey_mouth_nose_distance|Απόσταση Στόματος-Μύτης
 skinkey_mouth_width|Φάρδος Στόματος
-skinkey_nostril_size|Μέγεθος Ρουθουνιού
+skinkey_nostril_size|Μέγεθος Ρουθουνιών
 skinkey_nose_height|Ύψος Μύτης
 skinkey_nose_width|Φάρδος Μύτης
 skinkey_nose_size|Μέγεθος Μύτης
@@ -23,14 +23,14 @@ skinkey_cheek_bones|Ζυγωματικά
 skinkey_eyebrow_height|Ύψος Φρυδιών
 
 skinkey_eyebrow_shape|Σχήμα Φρυδιών
-skinkey_temple_width|Φάρδος Κροτάφου
+skinkey_temple_width|Φάρδος Κρόταφου
 skinkey_face_depth|Βάθος Προσώπου
 skinkey_face_ratio|Αναλογία Προσώπου
 skinkey_face_width|Φάρδος Προσώπου
 skinkey_post_edit|Μετά-Αλλαγή
 skinkey_jaw_position|Θέση Σαγονιού
-skinkey_eyebrow_position|Θέση Βλεφάρου
-skinkey_eyebrow_depth|Βάθος Βλεφάρου
+skinkey_eyebrow_position|Θέση Φρυδιών
+skinkey_eyebrow_depth|Βάθος Φρυδιών
 skinkey_snout_height|Ύψος Μουσούδας
 skinkey_snout_width|Φάρδος Μουσούδας
 skinkey_snout_size|Μέγεθος Μουσούδας
@@ -40,6 +40,6 @@ skinkey_mouth_shape|Σχήμα Στόματος
 skinkey_eye_size|Μέγεθος Ματιών
 skinkey_eye_slant|Κλίση Ματιών
 skinkey_frawn|Λύπη
-skinkey_mouth_vert_pos|Κάθετος Θέση Στόματος
+skinkey_mouth_vert_pos|Κάθετη Θέση Στόματος
 skinkey_mouth_to_nose_dist|Απόσταση Στόματος και Μύτης
 skinkey_chin_width|Φάρδος Πιγουνιού

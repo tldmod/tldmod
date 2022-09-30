@@ -499,7 +499,7 @@ itm_mirkwood_helm_a|Leichter Helm der Waldelben
 itm_mirkwood_helm_b|Helm aus dem Grünwald
 itm_mirkwood_helm_c|Schwerer Helm aus dem Grünwald
 itm_mirkwood_helm_d|Königlicher Helm aus dem Grünwald
-; itm_woodelf_leather_boots|Woodelf Leather Boots
+itm_woodelf_leather_boots|Lederstiefel der Waldelben
 itm_harad_tunic|Tunika aus Harad
 itm_harad_padded|Gepolsterte Rüstung aus Harondor
 itm_harad_hauberk|Brünne aus Harondor
@@ -524,11 +524,11 @@ itm_harad_eaglehelm|Helm der Adlerschützen
 itm_lion_helm|Helm der Löwenbruderschaft
 itm_harad_pantherhelm|Kappe der Pantherhünen
 itm_harad_khopesh|Sichelschwert aus Harad
-; itm_black_snake_sword|Harad Cobra Sword
-; itm_harad_heavy_sword|Harad Dragon Sword
+itm_black_snake_sword|Schlangenschwert aus Harad
+itm_harad_heavy_sword|Drachenschwert aus Harad
 itm_horandor_a|Krummsäbel aus Harad
 itm_skirmisher_sword|Plänklerschwert aus Harad
-; itm_harad_sabre|Harad Salamander Sword
+itm_harad_sabre|Salamanderschwert aus Harad
 itm_harad_mace|Streitkolben aus Fern-Harad
 itm_far_harad_2h_mace|Zweihändiger Streitkolben aus Fern-Harad
 itm_harad_dagger|Messer aus Harad
@@ -642,7 +642,7 @@ itm_umb_helm_a|Schalenhelm der Korsaren
 itm_umb_helm_b|Hoher Helm der Korsaren
 itm_umb_helm_c|Leichter Korsarenhelm
 itm_umb_helm_d|Plündererhelm der Korsaren
-; itm_umb_helm_reward|Ancient Numenorean Karma
+itm_umb_helm_reward|Uralter Karma aus Numenor
 itm_corsair_trident|Dreizack der zornigen See
 itm_corsair_boots|Korsarenstiefel
 itm_umb_shield_a|Korsarenschild

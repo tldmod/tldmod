@@ -1485,8 +1485,8 @@ qstr_{s9}_asked_you_to_br|{s9} ti ha chiesto di riportare un troll selvaggio da 
 qstr_{s9}_asked_you_to_fi|{s9} ti ha chiesto di scoprire cosa succede nella Foresta di Fangorn, e di fare rapporto.
 qstr_{s9}_asked_you_to_fin|{s9} ti ha chiesto di trovare le lance perdute che i nani fecero per il Re Bladorthin. Dovrai chiedere ad {s5} il permesso di cercare le lance nelle profondità dell Montagna Solitaria.
 qstr_{s9}_has_asked_you_t|{s9} ti ha chiesto di uccidere lo stregone Dol Guldur a Bosco Atro.
-qstr_{s9}_asked_you_to_ta|{s9} ti ha chiesto di consegnare un messaggio a {s13}. Probabile luogo di ubicazione di {s13}: {s4}, quando ti è stato assegnato questo compito.
-qstr_{s9}_asked_you_to_tak|{s9} ti ha chiesto di consegnare un messaggio a {s13} di {s15}. Probabile luogo di ubicazione di {s13}: {s4}, quando ti è stato assegnato questo compito.
+qstr_{s9}_asked_you_to_ta|{s9} ti ha chiesto di consegnare un messaggio a {s13}. Probabile luogo di ubicazione di {s13}, quando ti è stato assegnato questo compito: {s4}.
+qstr_{s9}_asked_you_to_tak|{s9} ti ha chiesto di consegnare un messaggio a {s13} di {s15}. Probabile luogo di ubicazione di {s13}, quando ti è stato assegnato questo compito: {s4}.
 qstr_{s11}_asked_you_to_e|{s11} ti ha chiesto di scortare il suo messaggiero fino a {s14}
 qstr_Lend_your_experience|Presta il tuo chirurgo esperto {s3} a {s1}.
 qstr_No_commander_should_|Nessun comandante dovrebbe ammetterlo, {playername}, ma stavo ispezionando i miei soldati l'altro giorno e ci sono alcuni di loro che non sanno da quale lato impugnare una spada. Hanno bisogno di qualcuno che gli mostri il vero significato del valore. Sei un guerriero stimato, {playername}. Addestrerai alcune truppe per me? Te ne sarei molto riconoscente.

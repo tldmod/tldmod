@@ -38,7 +38,7 @@ qstr_A_peaceful_village_n|一个距洛汗西谷不远的宁静小村
 qstr_The_War_is_upon_Roha|战争正在接近洛汗！
 qstr_Minas_Tirith___The_W|米那斯提力斯—白城
 qstr_The_White_Tree_stand|圣白树在刚铎诸王血脉终结时就枯萎了。
-; qstr_And_the_Shadow_grows|And the Shadow grows ever stronger in the East
+qstr_And_the_Shadow_grows|东方的阴影前所未有的强大
 qstr_Minas_Morgul___City_|米那斯魔窟—戒灵之城
 qstr_Sauron_s_armies_marc|索伦大军倾巢而出！
 qstr_Adventurers_at_audie|冒险者觐见刚铎摄政王迪耐瑟二世...
@@ -94,7 +94,7 @@ qstr_TLD_New_FormAI|TLD新AI
 qstr_Siege_AI:__|攻城AI：
 qstr_Basic__better_perfor|基础（电脑性能更好）
 qstr_Advanced|高级
-; qstr_Campaign_difficulty:|Campaign difficulty:  
+qstr_Campaign_difficulty:|战役难度：
 qstr_Hard|困难
 qstr_Default|默认
 qstr_Easy|简单
@@ -237,8 +237,8 @@ qstr_Strengthens_all_Hero|对队中全体英雄有效
 qstr_+2_to_First_Aid__Par|急救+2
 qstr_lead_more_Uruks|能够统御更多强兽人
 qstr_+1_to_Power_Throw|+1 to Power Throw
-; qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
-; qstr__Scales_with_Charism|(Scales with Charisma. Human leaders only.)
+qstr_Recruit_Black_Numeno|可从各地招募黑暗努曼诺尔人
+qstr__Scales_with_Charism|（效果依魅力属性而定，仅对人类种族玩家生效）
 qstr_+1_to_Spotting|侦查技能等级+1
 qstr_+2_to_Weapon_Master|武器掌握+2
 qstr_+2_to_First_Aid|急救+2
@@ -726,8 +726,8 @@ qstr_Switch_Back_to_3rd_P|切换回第三人称以便调整视角模式。
 qstr_Fixed_Custom_Camera|固定自定义相机
 qstr_Press_Ctrl_+_Left_/_|按Ctrl+左方向键/Ctrl+右方向键切换肩膀显示位
 qstr_Press_Ctrl_+_Down_to|按下Ctrl + Down变换视角至正中
-; qstr_Press_Ctrl_and_+/__t|Press Ctrl and +/- to zoom in/out
-; qstr_Press_Ctrl_and_Up/Do|Press Ctrl and Up/Down arrow keys to tilt up/down
+qstr_Press_Ctrl_and_+/__t|按下Ctrl和 +/- 键以拉近拉远
+qstr_Press_Ctrl_and_Up/Do|使用Ctrl和上/下箭头键以前倾/后倾
 qstr_Fixed_Camera___Right|固定相机—右肩
 qstr_Fixed_Camera___Left_|固定相机—左肩
 qstr_Fixed_Camera___Cente|固定视角 - 正中
@@ -780,7 +780,7 @@ qstr_{s21}_{reg24?killed:|{s21}被{s22}所{reg24?击杀:击昏}。
 qstr_A_bear_has_been_summ|一头熊被召唤加入战斗！
 qstr_In_The_Last_Days_of_|在第三纪元—最后之日中，你的士兵会在每场战斗开始时自动坚守，而不是盲目冲锋。^^按以下键能让你的士兵变换阵型，“J”为线阵，“K”为盾墙，“L”为楔形阵，“；（分号）”为方阵。按“U”取消阵型。^如果你的士兵在逃跑，你可以按“V”来召集他们。每场战斗的召集次数是有上限的，其次数取决于你的统御和魅力。
 qstr_You_can_also_order_y|你也可以命令你的士兵切换装备使用类型。^^按O切换武器使用命令。按P切换盾牌使用命令。
-; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^See Info Pages for how to control the different camera modes.
+qstr_The_Last_Days_of_the|为了避免原有的视角给较矮的种族（比如半兽人和矮人）造成的不便，TLD开发了自定义视角。^^查阅信息页面可以了解如何控制不同的视角模式。
 qstr_Battlefield_is_too_s|战场太小不足以展开高级阵型。
 qstr_You_have_a_clear_per|你清晰地感到一个迫在眉睫的大危机出现在你周围
 qstr_New_ent_reached_batt|新的树人加入战斗...
@@ -831,12 +831,12 @@ qstr_You_are_now_hidden.|你在隐蔽中。
 qstr_You_move_out_of_hidi|你离开了掩体。
 qstr_The_guards_have_spot|警卫发现了一具尸体！
 qstr_Alarm_Level_is_now_a|警报级别：1！
-; qstr_You_have_been_too_sl|You have been too slow: The alarm has spread, and the sorcerer made his escape before you could get close.
+qstr_You_have_been_too_sl|你的行动太慢：警报已在林中响彻，黑法师在你接近前已成功逃脱。
 qstr_Alarm_Level_is_now_at|警报级别：0！
 qstr_The_guards_have_spott|警卫看到了你！
 qstr_Alarm_Level_is_now_at_|警报级别：2！
-; qstr_Enemy_reinforcements_|Enemy reinforcements arrived.
-; qstr_Venture_deeper_into_|Venture deeper into the forest and find a way onward.
+qstr_Enemy_reinforcements_|敌人增援到达。
+qstr_Venture_deeper_into_|深入林中，找到前进的道路。
 qstr_The_sorcerer_has_fle|巫师已经逃跑了!
 qstr_Report_this_ill_news|马上向凯兰崔尔女士报告这个坏消息。
 qstr_The_sorcerer_is_flee|巫师正在逃跑！干掉他！
@@ -934,18 +934,18 @@ qstr_You_drank_the_Ent_Wa|你喝了树人水...
 qstr_You_used_the_Orc_Bre|你使用了半兽人酒。
 qstr_You_and_your_compani|你和同伴们酌饮一口米卢沃尔（精灵甜酒）。你感到神清气爽，精力充沛。
 qstr_You_give_a_few_leave|你拿了一小把阿西拉斯草给队中医师。
-; qstr_Not_enough_party_spa|Not enough party space.
+qstr_Not_enough_party_spa|部队空位不足。
 qstr_elites|精兵
 qstr_regulars|老兵
 qstr_recruits|新兵
-; qstr_wild|wild
-; qstr_goblins|goblins
+qstr_wild|野生
+qstr_goblins|半兽人
 qstr_lordless|无主
 qstr_orc_stragglers|游荡的半兽人
 qstr_You_camp_and_beat_th|你扎营并击响了深渊之鼓。这股强大的声音吸引到了一支{s1}{s2}。
 qstr_You_camp_and_beat_the|你扎营并击响了深渊之鼓。这股有力的声音吸引到了一支{s1}{s2}。
 qstr_You_camp_and_beat_the_|你扎营并击响了深渊之鼓。这股微弱的声音吸引到了一支{s1}{s2}。
-; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
+qstr_You_camp_and_try_to_|你扎营并击响了深渊之鼓，然而你卑微的呼唤没有得到任何回应。
 qstr_Fangorn_search:_fail|搜索法贡森林：失败。
 qstr_^^^A_great_victory!^|^^^一场伟大的胜利！ ^^^这是法贡森林的又一个神话...
 qstr_^^^Defeated...^^^Sca|^^^战败了……^^^在法贡森林里走散了……独自一人……
@@ -977,8 +977,8 @@ qstr__{s17}.|，{s17}。
 qstr_A_group_of_{s1}_is_{|一群{s1}正向你{s10}。
 qstr_You_are_attacking_a_|你正攻击一群{s1}
 qstr_The_battle_against_t|对抗一群{s1}的战斗继续
-; qstr_There_are_{reg39}_al|There are {reg39} allied commanders in this battle. You can command them and their troops for {reg40}/{reg41} influence.
-; qstr_There_are_{reg39}_all|There are {reg39} allied commanders in this battle. You don't have enough influence to assume command.
+qstr_There_are_{reg39}_al|在这场战斗中有{reg39}位友军指挥官。你可以消耗{reg40}/{reg41}影响力获得指挥他们及其士兵的权力。
+qstr_There_are_{reg39}_all|在这场战斗中有{reg39}位友军指挥官。你没有足够的影响力用以指挥他们及其士兵。
 qstr_Having_a_small_party|小队伍有小的好处…你和你的士兵可以在敌人面前隐藏几个小时而不被发现。
 qstr_Your_ability_to_mast|你的技能让你能够知悉环境，找到安全的避敌地点。（你的荒野求生技能让你能够带着{reg1}名士兵避开敌人）
 qstr_{reg4}_will_be_lost.|你将丢下{reg4}。
@@ -1083,10 +1083,10 @@ qstr_You_defeated_{reg5}_e|你击败了{reg5}个敌人。
 qstr_You_failed_to_defeat|你未能打败任何敌人。
 qstr_The_sorcerer_slain_y|巫师被杀掉了，你和你的同伴匆匆地包扎了伤口然后趁着夜色撤退了。嘶哑的声音在你身后呐喊并且你感到在阴影中许多灼热的目光愤怒地搜寻着你们的身影。很快愤怒变成了沮丧追赶的声音也渐渐远去，取而代之的是幽暗密林平时沉重的寂静。你成功地逃脱了。
 qstr_The_sorcerer_slipped|师从你的手上逃脱并且溜进属于他们的黑暗领域。心中承受着失败的重担，你和你的同伴快速地处理了伤口并撤入夜色当中。嘲笑的声音在你身后尖锐地响起而且你感受到许多燃烧的眼睛快要穿透夜晚的阴影似的紧盯着你们。嘲笑和侮辱很快就幸运地消散了，取而代之的是幽暗密林平时沉重的寂静。你成功地逃脱了。
-; qstr_You_approach_a_heavi|You approach a heavily guarded region of the forest... ^^ You have to decide whether you venture forward on your own, or take some troops with you.
-; qstr_You_have_a_good_chan|You have a good chance of avoiding the guards and slipping through unnoticed.
-; qstr_You_may_have_a_chanc|You may have a chance of avoiding the guards.
-; qstr_You_will_probably_ha|You will probably have to fight the guards.
+qstr_You_approach_a_heavi|你来到了密林中一个戒备森严的地方……^^现在你得决定是独自冒险探索，还是带上几名士兵一起。
+qstr_You_have_a_good_chan|你现在很有机会避开警卫，悄无声息地溜过去。
+qstr_You_may_have_a_chanc|你有机会避开警卫。
+qstr_You_will_probably_ha|你可能得与警卫血战。
 qstr_You_wait_for_darknes|你等待黑暗的降临……
 qstr_You_are_quickly_disc|你很快就会被敌人发现了。
 qstr_You_advance_stealthi|你提前悄悄地进入森林.
@@ -1121,7 +1121,7 @@ qstr_{reg65}_Moria_and/or|{reg66}{s5}摩瑞亚以及/或者刚达巴部队已杀
 qstr_{reg65}_{s3}_troops_|{reg65}{s3}部队已杀。（计数器每小时刷新一次）
 qstr_{reg66}_{s5}_troops_|{reg66}{s5}部队已杀。（计数器每小时刷新一次）
 qstr_{reg67}_{s7}_{s8}_tr|{reg67}{s7}{s8}部队已杀。（计数器每小时刷新一下）
-; qstr_{s8}_in_{s9}_asked_y|{s8} in {s9} asked you to slay {reg67} {s10}.^ {reg68} {s11} killed. (Counter refreshes every hour)
+qstr_{s8}_in_{s9}_asked_y|{s9}的{s8}请求你杀死{reg67}个{s10}。^已杀{reg68}{s11}。（计数器每小时刷新一次）
 qstr_{s1}_is_scouted.|{s1} 被侦查了
 qstr_{s2}_was_defeated!|{s2}被击败了！
 qstr_The_Age_of_Men_has_f|人类的时代终于结束了。现在邪黑塔和欧散克塔都在集结他的军队和盟友，决定谁才是中土唯一的统治者！
@@ -1132,7 +1132,7 @@ qstr_In_a_desperate_attem|为了击败他的敌人，索隆在绝望中派出了
 qstr_Guardians_of_{s6}|{s6}的守护者
 qstr_Guard_Legion_of_{s6}|{s6}的守卫军团
 qstr_Scouts_report_that_{|根据报告显示：{s6}在{s7}周围聚集了庞大的军队，他们在做最后的挣扎，企图保卫他们的首都。
-; qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
+qstr_The_forces_of_{s2}_e|{s2}的军队在{s15}建立了前线营地！
 qstr_The_hosts_of_{s2}_ma|{s2}的军队前来保卫他们的家园！
 qstr_{playername}_s_Reser|{playername}的预备队
 qstr_Gondor_has_called_fo|刚铎已呼叫援助！

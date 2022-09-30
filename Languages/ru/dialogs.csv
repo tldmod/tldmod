@@ -306,7 +306,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Что ж, он ваш.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Боюсь, у меня на него другие планы.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Отлично! Я пошлю своих подручных, чтобы они как можно быстрее перевезли его в тюрьму. Определённо, это очень нам поможет.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Очень плохо, он представляет для нас большую ценность, {playername}.
-; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
+dlga_tld_intro_1:lord_pretalk|Учебное пособие по войне: ^^ - Фракции будут начинать осады только тогда, когда они достаточно сильны.^ - Большинство поселений можно осадить только в том случае, если их фракция достаточно ослаблена. Обычно столицы осаждаются в последнюю очередь.^ - Если фракция потеряет свою столицу, она будет побеждена.^ - Фракции набирают силу благодаря победам на поле боя и удержанию определенных ключевых поселений.^ - Фракции теряют силу из-за поражений на поле боя или потери поселений.^ - Некоторые задания или события могут повлиять на силу фракции.^- Вы можете сравнить текущие рейтинги силы фракций в меню "Отчеты".^- Дополнительные руководства по TLD см. на Информационных страницах.
 dlga_lord_start:lord_pretalk|Добро пожаловать, {s24}.^Вам уже должно быть известно, что {s12}. Ваш долг - помочь нам в нашей борьбе, {playername}. Когда Вы сможете заслужить мою признательность, [level {reg1}], я также позволю Вам пользоваться вон тем сундуком для хранения Ваших вещей,.
 dlga_lord_start:lord_talk|Что такое?
 dlga_lord_pretalk:lord_talk|Что-нибудь ещё?
@@ -1032,7 +1032,7 @@ dlga_routed_allies_talk:close_window.1|Пока нет, воин.
 dlga_start:routed_allies_talk_troll|^^ГРРРР!^^
 dlga_routed_allies_talk_troll:close_window|[Попросить их присоединиться к вам снова]
 dlga_routed_allies_talk_troll:close_window.1|[Уйти]
-; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+dlga_start:party_encounter_friend|Мы выполняем ваши приказы, {s24}.
 dlga_start:party_encounter_friend.1|{s4} Как тебя сюда занесло, {s24}?
 dlga_party_reinforce:party_reinforce_end|Враг пока бездействует - по крайней мере, мы ничего не заметили. Может быть, чуть позже. Спасибо.
 dlga_party_reinforce:party_reinforce_end.1|У нас и так достаточно воинов, спасибо вам.

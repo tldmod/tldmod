@@ -200,7 +200,7 @@ mno_leave|Verlassen
 menu_simple_encounter|^^^^^{s2}^Du hast {reg22} einsatzfähige Truppen gegen ihre {reg11}.^^Die Schlacht findet {s3}{s4} statt.^^Deine Befehle?
 mno_encounter_attack|{reg21?Greift sie an:Bereitet euch vor, euch ihnen zu stellen}.
 mno_encounter_order_attack|Befehle deinen Truppen, sie ohne dich {reg21?anzugreifen:zu konfrontieren}.
-; mno_control_allies_menu|Use influence to command your allies in the field.
+mno_control_allies_menu|Einfluss verwenden, um den Befehl über Verbündete zu übernehmen.
 mno_encounter_hide|Verberge dich vor dem Feind....
 mno_special_whip|Stürme voran, mit der {s4} knallend.
 mno_encounter_attack_bearform|{reg21?Nimm Bärengestalt an und stürze dich in den Kampf:Stelle dich ihnen in Bärengestalt}.
@@ -235,7 +235,7 @@ mno_pre_join_leave|Nicht eingreifen.
 menu_join_battle|^^^Du unterstützst {s2} gegen {s1}.^ Du hast {reg22} kampfbereite Truppen gegen {reg11} Feinde.^^Die Schlacht wird {s3}{s4} ausgetragen.
 mno_join_attack|Greif den Feind an.
 mno_join_order_attack|Befiehl deinen Truppen, mit deinen Verbündeten anzugreifen, während du zurückbleibst.
-; mno_control_allies_join_menu|Use influence to command your allies in the field.
+mno_control_allies_join_menu|Einfluss verwenden, um den Befehl über Verbündete zu übernehmen.
 mno_join_attack_bearform|Nimm Bärengestalt an und stürze dich in die Schlacht
 mno_join_leave|Zurückfallen.
 mno_player_control_allies_join_menu|Befehlige sie und greif den Feind an
