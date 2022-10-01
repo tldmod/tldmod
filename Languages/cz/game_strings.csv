@@ -1333,7 +1333,7 @@ str_party_greet_enemy_isengard|Můj Pán bude potěšen až mu ukážu vaše mrt
 str_party_greet_enemy_woodelf|Každý, kdo vstoupí do Temného hvozdu se zlobou se nikdy nevrátí!
 ; str_party_greet_friend_dale|Hail, friend of proud Dale!
 ; str_party_greet_enemy_dale|Draw your swords, we are the Men of Dale!
-; str_party_greet_friend_harad|Welcome, friend of the Haradrim!
+str_party_greet_friend_harad|Vítej, příteli Haradrimu.
 ; str_party_greet_enemy_harad|Your many bodies shall be ground into the sand!
 ; str_party_greet_friend_rhun|Greetings, friend of the Easterling tribes and Dorwinion!
 ; str_party_greet_enemy_rhun|Dwarves and Men are no match for our fierceness!
@@ -1359,7 +1359,7 @@ str_subfaction_gondor_name4|Lossarnach
 str_subfaction_gondor_name5|Pinnath Gelin
 str_subfaction_gondor_name6|Morthond
 ; str_subfaction_gondor_name7|Ithilien
-; str_default_rumor|The War. Everybody is talking about the war.
+str_default_rumor|Válka. Všichni mluví o válce.
 ; str_rohan_rumor_begin|It breaks my heart to see my babies off to war! But without them the men would have to walk.
 ; str_rohan_rumor_2|I hear orcs eat horses. Foul beasts! They also eat prisoners. That is bad too, of course.
 ; str_rohan_rumor_3|There are no horses finer than Rohan's. Even the Elves get their horses from us!
@@ -1368,7 +1368,7 @@ str_subfaction_gondor_name6|Morthond
 ; str_rohan_rumor_6|Gondor prefers sturdier horses. Our riders enjoy speed. The Elves get only the best. And our enemies steal them!
 ; str_rohan_rumor_7|I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superior but require a more experienced rider to handle.
 ; str_rohan_rumor_8|Wargs are slower than horses but can turn faster. They are also quite fragile compared to a well-bred warhorse.
-; str_rohan_rumor_9|Armies march on Rohan with pikes and spears set against our fine horsemen. The traitor Saruman will cut down the whole Fangorn forest equipping his armies before this war is over.
+str_rohan_rumor_9|Armády pochodují na Rohan s píkami a kopími nasazenými proti našim skvělým jezdcům. Zrádce Saruman vykácí celý Fangornský les, aby vyzbrojil své armády, než tato válka skončí.
 ; str_rohan_rumor_10|Being the best horsemen in the realm starts with raising the best horses.
 ; str_rohan_rumor_11|Most of the horses you see in Gondor came from us. They prefer a slightly stronger, slower horse that can carry their heavy armour.
 ; str_rohan_rumor_12|We say in Rohan that a horse is like a man. That if a horse is good it is like a man is good, and that if a horse is bad, is like a man is bad. And if a horse is hungry is like a man is hungry, and if a horse is sad is like if a man is sad. And we say if a horse is happy is like when a man is happy. We say if a horse is angry is like if man is angry. We say if a horse walk is like when a man walk, we say if a horse is old is like when a man is old, and we say if horse is young is like when a man is young. And the same we say if a horse is old is like when a man is old. And if a horse small, is like when a man's small.

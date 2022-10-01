@@ -200,7 +200,7 @@ mno_leave|Продолжить.
 menu_simple_encounter|^^^^^{s2}^У вас {reg22} бойцов против {reg11} воинов противника.^^Битва разворачивается в земле, известной как {s3}{s4}.^^Каковы будут ваши приказы?
 mno_encounter_attack|{reg21?В атаку!:Приготовиться к бою}
 mno_encounter_order_attack|Приказать воинам {reg21?атаковать:сражаться с врагом} без вашего участия.
-; mno_control_allies_menu|Use influence to command your allies in the field.
+mno_control_allies_menu|Используйте влияние, чтобы командовать своими союзниками на поле боя.
 mno_encounter_hide|Спрятаться от врага...
 mno_special_whip|Рвануться навстречу врагу, щелкнув Кнутом Господина.
 mno_encounter_attack_bearform|{reg21?Вступить в бой в обличье медведя}.
@@ -235,7 +235,7 @@ mno_pre_join_leave|Не вмешиваться.
 menu_join_battle|^^^Вы пришли на помощь войскам {s2} в сражении против {s1}.^ У вас {reg22} воинов, готовых к битве, против {reg11} бойцов врага.^^Битва разворачивается в земле, известной как {s3}{s4}.
 mno_join_attack|Атаковать врага.
 mno_join_order_attack|Приказать воинам сражаться вместе с союзниками, но без вашего участия.
-; mno_control_allies_join_menu|Use influence to command your allies in the field.
+mno_control_allies_join_menu|Используйте влияние, чтобы командовать своими союзниками на поле боя.
 mno_join_attack_bearform|Вступить в бой в форме медведя
 mno_join_leave|Отступить.
 mno_player_control_allies_join_menu|Командуйте ими и атакуйте врага
@@ -420,7 +420,7 @@ mno_cb_mordor8|Корсары
 mno_rescue_mission|Прокрасться в логово колдуна под покровом ночи.
 mno_next_rescue_scene_door|Далее!
 mno_pick_troops1|Выберите спутников для этого задания, {reg0} выбрано
-; menu_pick_troops|Whom would you take with you into the stealth mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg65?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg0} companions.
+menu_pick_troops|Кого бы вы взяли с собой в стелс миссию? ^ Только ваши самые ловкие войска и компаньоны смогут присоединиться к вам. ^Как член партии с наивысшим навыком wildcraft, {reg 65?{s1} советует: вы решаете}, что можете взять с собой до {reg11} солдат. ^^В настоящее время вы выбрали {reg0} компаньонов.
 mno_go_forward|Спутники выбраны, в путь.
 menu_burial_mound|Вы подходите к месту погребения {s1} из {s2}.   Его сразили силы из {s28}.  Вокруг лежат изрубленные останки, поломанное оружие, клочья одежды. Он сражался и пал, как герой.
 mno_pay_respects|Преклонить колена и отдать дань уважения.
