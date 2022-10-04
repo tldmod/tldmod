@@ -2038,7 +2038,7 @@ mission_templates = [ # not used in game
   
       (ti_before_mission_start, 0, 0,[],[(team_set_relation, 1, 0, 0),(team_set_relation, 2, 0, 0),  #MV: both player and bandits neutral to guards
         #remove cabbage guard spawn points
-        (replace_scene_props, "spr_troop_prison_guard", "spr_empty"),
+        (replace_scene_props, "spr_troop_archer", "spr_empty"),
         (replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
         (replace_scene_props, "spr_troop_guard", "spr_empty"),
 		(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"), # (CppCoder) These are what cause the "unable to finish" bugs.
@@ -2112,7 +2112,8 @@ mission_templates = [ # not used in game
 			(call_script, "script_change_banners_and_chest"),
 			(mission_disable_talk),
 			#remove some cabbage guard spawn points, so castle and prison guards don't spawn
-			(replace_scene_props, "spr_troop_prison_guard", "spr_empty"),
+			(replace_scene_props, "spr_troop_guard", "spr_empty"),
+            (replace_scene_props, "spr_troop_archer", "spr_empty"),
 			(replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
 			# remove all other guards except the first five - doesn't work!
 			# (init_position, pos1),
@@ -6114,7 +6115,16 @@ mission_templates = [ # not used in game
 	],tld_common_wb_muddy_water+[
     (ti_tab_pressed, 0, 0, [],[(question_box,"@Trace back your steps and go back in the open now?")]),
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission)]),
-	(ti_before_mission_start, 0, 0, [], [(assign, "$dungeons_in_scene",1), (play_sound, "snd_moria_ambiance", sf_looping), ]),
+	(ti_before_mission_start, 0, 0, [], [
+        (assign, "$dungeons_in_scene",1), 
+        (play_sound, "snd_moria_ambiance", sf_looping), 
+        (replace_scene_props, "spr_troop_archer", "spr_empty"),
+        (replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
+        (replace_scene_props, "spr_troop_guard", "spr_troop_civilian"),
+		(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"), # (CppCoder) These are what cause the "unable to finish" bugs.
+		(replace_scene_props, "spr_troop_human_prisoner", "spr_empty"),
+		(replace_scene_props, "spr_troop_moria_troll", "spr_empty"),
+        ]),
 	dungeon_darkness_effect,
 ]),
 ( "dungeon_crawl_moria_deep",mtf_battle_mode,-1,

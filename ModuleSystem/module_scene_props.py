@@ -1926,26 +1926,132 @@ scene_props = [
 ("evil_tunnel_a",0,"evil_tunnel_a","bo_evil_tunnel_a", []),
 ("minas_tirith_copy",0,"minas_tirith_new","0", []),
 
-##### CENTER GUARDS ##### #InVain: Changed helper meshes for all of these and randomized animation times
+##### CENTER GUARDS ##### 
+#InVain: Changed helper meshes for all of these and randomized animation times; 
+#You can choose a tier by scaling up; allow spawning in siege defenses
 ("troop_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
-    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
-("troop_prison_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
-    (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
-    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-    (party_get_slot, ":troop", "$current_town", slot_town_prison_guard_troop),
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
-("troop_castle_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
-    (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
-    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-    (party_get_slot, ":troop", "$current_town", slot_town_castle_guard_troop),
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
+    (set_fixed_point_multiplier, 100),
+    (prop_instance_get_scale, pos2, ":instance_no"),
+    (position_get_scale_y, ":tier", pos2),
+    (ge, ":tier", 1),
+    (val_sub, ":tier", 100),
+    (val_div, ":tier", 10),
+    (try_begin),
+        (ge, ":tier", 1),
+        (try_for_range, ":unused", 0, ":tier"),
+            (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 1), #try secondary upgrade path first - favours spearmen
+            (gt, ":upgrade_troop", 0),
+            (neg|troop_is_guarantee_ranged, ":upgrade_troop"),
+            (neg|troop_is_guarantee_horse, ":upgrade_troop"),
+            (assign, ":troop", ":upgrade_troop"),
+        (else_try), 
+            (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 0),
+            (gt, ":upgrade_troop", 0),
+            (assign, ":troop", ":upgrade_troop"),
+        (try_end),
+    (try_end),
+            
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+    (try_begin),
+        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (agent_set_team, reg0, 0),
+        (assign, ":polearm_found", 0),
 
+] + (is_a_wb_sceneprop==1 and [     
+        (try_for_range, ":weapon_slot", 0, 4), #find polearm
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (item_get_type, ":item_type", ":item"),
+            (eq, ":item_type", itp_type_polearm),
+            #(agent_equip_item, reg0, ":item", 1),
+            (agent_set_wielded_item, reg0, ":item"),
+            (assign, ":polearm_found", 1),
+                (try_for_range, ":weapon_slot", 0, 4), #find shield
+                    (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+                    (gt, ":item", 1),
+                    (item_get_type, ":item_type", ":item"),
+                    (eq, ":item_type", itp_type_shield),
+                    (agent_set_wielded_item, reg0, ":item"),
+                (try_end),
+        (try_end),
+    ] or []) + [    
+        (try_begin),
+            (eq, ":polearm_found", 1),
+            (neg|troop_is_guarantee_horse, ":troop"),
+            (agent_set_animation, reg0, "anim_stand_townguard_polearm"),
+        (else_try),
+            (neg|troop_is_guarantee_horse, ":troop"),
+            (agent_set_stand_animation, reg0, "anim_stand_townguard"),
+        (try_end),
+        
+        (store_random_in_range, reg6, 0, 100),
+        (agent_set_animation_progress, reg0, reg6),
+    (else_try),
+        (agent_set_team, reg0, 2), #non-player defender team
+    (try_end),
+    ])]),
+
+("troop_archer",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (party_get_slot, ":troop", "$current_town", slot_town_archer_troop),
+    (set_fixed_point_multiplier, 100),
+    (prop_instance_get_scale, pos2, ":instance_no"),
+    (position_get_scale_y, ":tier", pos2),
+    (val_sub, ":tier", 100),
+    (ge, ":tier", 1),
+    (val_div, ":tier", 10),
+    (try_begin),
+        (ge, ":tier", 1),
+        (try_for_range, ":unused", 0, ":tier"),
+            (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 0),
+            (gt, ":upgrade_troop", 0),
+            (assign, ":troop", ":upgrade_troop"),
+        (try_end),
+    (try_end),
+            
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+    (try_begin),
+        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (agent_set_team, reg0, 0),
+        (assign, ":bow_found", 0),
+
+] + (is_a_wb_sceneprop==1 and [     
+        (try_for_range, ":weapon_slot", 0, 4), #find bow
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (item_get_type, ":item_type", ":item"),
+            (eq, ":item_type", itp_type_bow),
+            #(agent_equip_item, reg0, ":item", 1),
+            (agent_set_wielded_item, reg0, ":item"),
+            (assign, ":bow_found", 1),
+        (try_end),
+    ] or []) + [    
+        (try_begin),
+            (neq, ":bow_found", 1),
+            (agent_set_stand_animation, reg0, "anim_stand_townguard"),
+        (try_end),
+        
+        (store_random_in_range, reg6, 0, 100),
+        (agent_set_animation_progress, reg0, reg6),
+    (else_try),
+        (agent_set_team, reg0, 2), #non-player defender team
+    (try_end),
+    ])]),
+    
+ ("troop_castle_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (party_get_slot, ":troop", "$current_town", slot_town_castle_guard_troop),
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+    (try_begin),
+        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),
+    (else_try),
+        (agent_set_team, reg0, 2), #non-player defender team
+    (try_end),
+    ])]),
+    
 ##### TROLLS #####
 ("troop_moria_troll",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
@@ -2807,7 +2913,7 @@ scene_props = [
 			(try_end),
 						 
 
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
+  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
 	
 ("troop_civilian_sitting_ground",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),

@@ -1436,8 +1436,8 @@ scripts = [
 	# troop slots
 	(faction_set_slot, faction_init[x][0], slot_faction_deserter_troop    , faction_init[x][8][0]) for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_init[x][0], slot_faction_guard_troop       , faction_init[x][8][1]) for x in range(len(faction_init)) ]+[
-	(faction_set_slot, faction_init[x][0], slot_faction_messenger_troop   , faction_init[x][8][2]) for x in range(len(faction_init)) ]+[
-	(faction_set_slot, faction_init[x][0], slot_faction_prison_guard_troop, faction_init[x][8][3]) for x in range(len(faction_init)) ]+[
+	(faction_set_slot, faction_init[x][0], slot_faction_rider_troop       , faction_init[x][8][2]) for x in range(len(faction_init)) ]+[
+	(faction_set_slot, faction_init[x][0], slot_faction_archer_troop      , faction_init[x][8][3]) for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_init[x][0], slot_faction_castle_guard_troop, faction_init[x][8][4]) for x in range(len(faction_init)) ]+[
 
 	(faction_set_slot, faction_init[x][0], slot_faction_capital           , faction_init[x][9])    for x in range(len(faction_init)) ]+[
@@ -1689,15 +1689,15 @@ scripts = [
 		# TLD center guards
 		(faction_get_slot, ":troop", ":original_faction", slot_faction_guard_troop),
 		(party_set_slot, ":center_no", slot_town_guard_troop,  ":troop"),
-		(faction_get_slot, ":troop", ":original_faction", slot_faction_prison_guard_troop),
-		(party_set_slot, ":center_no", slot_town_prison_guard_troop,  ":troop"),
+		(faction_get_slot, ":troop", ":original_faction", slot_faction_archer_troop),
+		(party_set_slot, ":center_no", slot_town_archer_troop,  ":troop"),
 		(faction_get_slot, ":troop", ":original_faction", slot_faction_castle_guard_troop),
 		(party_set_slot, ":center_no", slot_town_castle_guard_troop,  ":troop"),
 	(try_end),
 # TLD specific center guards
 	]+concatenate_scripts([[
 	(party_set_slot, subfaction_data[x][1], slot_town_guard_troop          , subfaction_data[x][3][0]) ,
-	(party_set_slot, subfaction_data[x][1], slot_town_prison_guard_troop   , subfaction_data[x][3][1]) ,
+	(party_set_slot, subfaction_data[x][1], slot_town_archer_troop   , subfaction_data[x][3][1]) ,
 	(party_set_slot, subfaction_data[x][1], slot_town_castle_guard_troop   , subfaction_data[x][3][2]) ,
 	(party_set_slot, subfaction_data[x][1],slot_party_subfaction    , subfaction_data[x][0]),
 	(party_get_slot, ":weaponsmith",      subfaction_data[x][1]    , slot_town_weaponsmith),
@@ -8005,7 +8005,7 @@ scripts = [
 			(assign, reg76, ":level_up_min"),
 			(assign, reg77, ":level_up_max"),
 			(assign, reg78, ":level_up"),
-			(display_message, "@min: {reg76}; max {reg77}; level up: {reg78} rounds"),
+			#(display_message, "@min: {reg76}; max {reg77}; level up: {reg78} rounds"),
             #Kham - Dynamic Amount / Levels END
 
             #(val_add, ":level_up", ":cur_level"), #InVain: Removed this. Now the scaling won't go overboard
@@ -8111,7 +8111,7 @@ scripts = [
 ##          (try_begin),
 ##            (call_script, "script_cf_faction_get_random_enemy_faction", ":giver_faction_no"),
 ##            (assign, ":cur_target_faction", reg0),
-##            (faction_get_slot, ":cur_target_troop", ":cur_target_faction", slot_faction_messenger_troop),
+##            (faction_get_slot, ":cur_target_troop", ":cur_target_faction", slot_faction_rider_troop),
 ##            (gt, ":cur_target_troop", 0),#Checking the validiy of cur_target_troop
 ##            (store_num_parties_destroyed_by_player, ":quest_target_amount", "pt_messenger_party"),
 ##
@@ -9586,8 +9586,8 @@ scripts = [
       (party_set_slot, ":center_no", slot_center_walker_9_troop, ":value"),
       (faction_get_slot, ":value", ":faction_no", slot_faction_guard_troop),
       (party_set_slot, ":center_no", slot_town_guard_troop, ":value"),
-      (faction_get_slot, ":value", ":faction_no", slot_faction_prison_guard_troop),
-      (party_set_slot, ":center_no", slot_town_prison_guard_troop, ":value"),
+      (faction_get_slot, ":value", ":faction_no", slot_faction_archer_troop),
+      (party_set_slot, ":center_no", slot_town_archer_troop, ":value"),
       (faction_get_slot, ":value", ":faction_no", slot_faction_castle_guard_troop),
       (party_set_slot, ":center_no", slot_town_castle_guard_troop, ":value"),
       
@@ -14029,9 +14029,9 @@ scripts = [
 # script_remove_siege_objects
 # removes all objects inappropriate for siege scene (all troop/mount spawners etc)
 ("remove_siege_objects",[ 
-	(try_for_range, ":prop", "spr_troop_guard", "spr_ZT_mb_chestnut"),
-		(replace_scene_props, ":prop", "spr_empty"),
-	(try_end),
+	# (try_for_range, ":prop", "spr_troop_guard", "spr_ZT_mb_chestnut"),
+		# (replace_scene_props, ":prop", "spr_empty"),
+	# (try_end),
 	(try_for_range, ":prop", "spr_horse_riv_warhorse", "spr_spiderweb"),
 		(replace_scene_props, ":prop", "spr_empty"),
 	(try_end),
@@ -22405,7 +22405,7 @@ scripts = [
 		# TLD center specific guards
 		# (try_begin),
 			# (neg|party_slot_eq,"$current_town", slot_town_prison, -1),
-			# (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_prison_guard_troop),
+			# (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_archer_troop),
 		# (else_try),
 			# (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_guard_troop),
 		# (try_end),
@@ -22426,7 +22426,7 @@ scripts = [
         
         # TLD center specific guards
         (party_get_slot, ":tier_2_troop", "$current_town", slot_town_guard_troop),
-        (party_get_slot, ":tier_3_troop", "$current_town", slot_town_guard_troop), #was slot_town_prison_guard_troop
+        (party_get_slot, ":tier_3_troop", "$current_town", slot_town_archer_troop), #was slot_town_archer_troop
         ########
         (try_begin),
             (gt,":tier_2_troop", 0),
