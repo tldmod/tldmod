@@ -14296,6 +14296,32 @@ scripts = [
        (store_random_in_range, ":i_e_p", town_walker_entries_start, 40),#Entry points
        (agent_set_slot, ":cur_agent", 0, ":i_e_p"),
        (call_script, "script_set_town_walker_destination", ":cur_agent"),
+      
+      (else_try), #guards patrol
+       (agent_get_entry_no, ":entry", ":cur_agent"),
+	   (is_between, ":entry",25,29),
+       (agent_get_position, pos1, ":cur_agent"),
+       (store_random_in_range, ":i_e_p", 25, 29),#Entry points
+       (agent_set_slot, ":cur_agent", 0, ":i_e_p"),
+       (call_script, "script_set_town_walker_destination", ":cur_agent"),
+
+	  ] + (is_a_wb_script==1 and [
+       (try_for_range, ":weapon_slot", 0, 4), #find polearm
+        (agent_get_item_slot, ":item", ":cur_agent", ":weapon_slot"),
+        (gt, ":item", 1),
+        (item_get_type, ":item_type", ":item"),
+        (eq, ":item_type", itp_type_polearm),
+        (agent_set_wielded_item, ":cur_agent", ":item"),
+            # (try_for_range, ":weapon_slot", 0, 4), #don't equip shield yet, lacking proper walk animation
+                # (agent_get_item_slot, ":item", ":cur_agent", ":weapon_slot"),
+                # (gt, ":item", 1),
+                # (item_get_type, ":item_type", ":item"),
+                # (eq, ":item_type", itp_type_shield),
+                # (agent_set_wielded_item, ":cur_agent", ":item"),
+            # (try_end),
+       (try_end),
+      ] or []) + [
+       
      (try_end),
 ]),
 
@@ -14323,7 +14349,8 @@ scripts = [
 #       (agent_get_troop_id, ":cur_troop", ":cur_agent"),
 #       (is_between, ":cur_troop", walkers_begin, walkers_end),
        (agent_get_entry_no, ":entry", ":cur_agent"),
-	   (is_between, ":entry",town_walker_entries_start,40),
+	   (this_or_next|is_between, ":entry",town_walker_entries_start,40),
+       (is_between, ":entry",25,29), #guards
        (agent_get_slot, ":target_entry_point", ":cur_agent", 0),
        (entry_point_get_position, pos1, ":target_entry_point"),
        (try_begin),
@@ -14423,6 +14450,11 @@ scripts = [
   ("set_town_walker_destination",
     [(store_script_param_1, ":agent_no"),	  
 	 (store_random_in_range, ":rand_dest", 1 ,12),
+     (agent_get_entry_no, ":entry", ":agent_no"),
+     (assign, ":is_guard", 0),
+       
+     (try_begin), #walkers
+	   (is_between, ":entry",town_walker_entries_start,40),
 	
 	    (try_begin),
 			(eq, ":rand_dest", 1),
@@ -14460,7 +14492,24 @@ scripts = [
 		(else_try),	
 			(assign, ":target_entry_point", 10),					
 		(try_end),
-		  
+        
+     (else_try), #guards
+        (assign, ":is_guard", 1),
+	    (try_begin),
+			(le, ":rand_dest", 3),
+			(assign, ":target_entry_point", 25),
+		(else_try),	
+			(le, ":rand_dest", 6),
+			(assign, ":target_entry_point", 26),
+		(else_try),	
+			(le, ":rand_dest", 9),
+			(assign, ":target_entry_point", 27),	
+		(else_try),	
+			(le, ":rand_dest", 12),
+			(assign, ":target_entry_point", 28),	
+		(try_end),
+     (try_end),
+            
 	      (try_begin),
 	        (agent_set_slot, ":agent_no", 0, ":target_entry_point"),
 	        (entry_point_get_position, pos1, ":target_entry_point"),
@@ -14479,10 +14528,14 @@ scripts = [
 			(try_begin),
 				(this_or_next|eq,":try_limit",tf_orc),
 				(eq,":try_limit",tf_dwarf),
-				(store_random_in_range,reg10,2,4), (agent_set_speed_limit, ":agent_no", reg10), # orc dwarf walk slower
+                (neq, ":is_guard", 1),
+				(store_random_in_range,reg10,1,7), (agent_set_speed_limit, ":agent_no", reg10), # orc dwarf walk slower
 			(else_try),
-				(store_random_in_range,reg10,3,6), (agent_set_speed_limit, ":agent_no", reg10), # humans
-			(try_end),   
+                (neq, ":is_guard", 1),
+				(store_random_in_range,reg10,2,8), (agent_set_speed_limit, ":agent_no", reg10), # humans
+			(else_try), #guards move slow
+				(store_random_in_range,reg10,1,3), (agent_set_speed_limit, ":agent_no", reg10), 
+			(try_end),  
 	   (try_end),
      (try_end),
 ]),
@@ -22426,7 +22479,20 @@ scripts = [
         
         # TLD center specific guards
         (party_get_slot, ":tier_2_troop", "$current_town", slot_town_guard_troop),
-        (party_get_slot, ":tier_3_troop", "$current_town", slot_town_archer_troop), #was slot_town_archer_troop
+        (assign, ":tier_3_troop", ":tier_2_troop"),
+        (try_begin),
+            (troop_get_upgrade_troop, ":upgrade_troop", ":tier_2_troop", 1), #try secondary upgrade path first - favours spearmen
+            (gt, ":upgrade_troop", 0),
+            (neg|troop_is_guarantee_ranged, ":upgrade_troop"),
+            (neg|troop_is_guarantee_horse, ":upgrade_troop"),
+            (assign, ":tier_3_troop", ":upgrade_troop"),
+        (else_try), 
+            (troop_get_upgrade_troop, ":upgrade_troop", ":tier_2_troop", 0),
+            (gt, ":upgrade_troop", 0),
+            (assign, ":tier_3_troop", ":upgrade_troop"),
+        (try_end),
+        
+        #(party_get_slot, ":tier_3_troop", "$current_town", slot_town_archer_troop), #was slot_town_archer_troop
         ########
         (try_begin),
             (gt,":tier_2_troop", 0),
@@ -22435,7 +22501,7 @@ scripts = [
             (assign,reg0,"trp_i4_gon_swordsman"),(assign,reg1,"trp_i4_gon_swordsman"),(assign,reg2,"trp_a4_gon_archer"),(assign,reg3,"trp_i3_footman_of_rohan"),
         (try_end),
         (shuffle_range,0,4),
-        (set_visitor,25,reg0),(set_visitor,26,reg1),(set_visitor,27,reg2),(set_visitor,28,reg3),
+        (set_visitors,25,reg0,2),(set_visitors,26,reg1,2),(set_visitors,27,reg2,2),(set_visitors,28,reg3,2),
 
         #MV replaced by companion NPC, if any, and no castle
         #TLD NPC companions
