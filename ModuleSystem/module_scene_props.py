@@ -1935,7 +1935,6 @@ scene_props = [
     (set_fixed_point_multiplier, 100),
     (prop_instance_get_scale, pos2, ":instance_no"),
     (position_get_scale_y, ":tier", pos2),
-    (ge, ":tier", 1),
     (val_sub, ":tier", 100),
     (val_div, ":tier", 10),
     (try_begin),
@@ -2000,7 +1999,6 @@ scene_props = [
     (prop_instance_get_scale, pos2, ":instance_no"),
     (position_get_scale_y, ":tier", pos2),
     (val_sub, ":tier", 100),
-    (ge, ":tier", 1),
     (val_div, ":tier", 10),
     (try_begin),
         (ge, ":tier", 1),
@@ -3653,6 +3651,49 @@ scene_props = [
 ], 200),
 
 ("elf_treehouse_b",0,"elf_treehouse_b","bo_elf_treehouse_b",[]),  
+
+("troop_rider",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (store_faction_of_party, ":faction", "$current_town"),
+    (faction_get_slot, ":troop", ":faction", slot_faction_rider_troop),
+    (set_fixed_point_multiplier, 100),
+    (prop_instance_get_scale, pos2, ":instance_no"),
+    (position_get_scale_y, ":tier", pos2),
+    (val_sub, ":tier", 100),
+    (val_div, ":tier", 10),
+    (try_begin),
+        (ge, ":tier", 1),
+        (try_for_range, ":unused", 0, ":tier"),
+            (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 0),
+            (gt, ":upgrade_troop", 0),
+            (assign, ":troop", ":upgrade_troop"),
+        (try_end),
+    (try_end),
+            
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+    (lt, "$g_encountered_party_2", 0), #don't spawn riders in siege battles
+    (agent_set_team, reg0, 0),
+
+] + (is_a_wb_sceneprop==1 and [     
+        (try_for_range, ":weapon_slot", 0, 4), #find polearm
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (item_get_type, ":item_type", ":item"),
+            (eq, ":item_type", itp_type_polearm),
+            #(agent_equip_item, reg0, ":item", 1),
+            (agent_set_wielded_item, reg0, ":item"),
+                (try_for_range, ":weapon_slot", 0, 4), #find shield
+                    (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+                    (gt, ":item", 1),
+                    (item_get_type, ":item_type", ":item"),
+                    (eq, ":item_type", itp_type_shield),
+                    (agent_set_wielded_item, reg0, ":item"),
+                (try_end),
+        (try_end),
+    ] or []) + [            
+        (store_random_in_range, reg6, 0, 100),
+        (agent_set_animation_progress, reg0, reg6),
+    ])]),
 
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),
