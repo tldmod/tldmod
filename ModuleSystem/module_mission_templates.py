@@ -1376,6 +1376,86 @@ mission_templates = [ # not used in game
 				(play_sound, "$bs_night_sound", sf_looping),
 			(try_end),
 			]),
+
+ ] + ((is_a_wb_mt==1) and [
+  (20, 0, 0, [], [ # messenger props
+        (scene_prop_get_num_instances, ":num_messengers", "spr_troop_messenger"),
+        (try_for_range, ":count", 0, ":num_messengers"),
+            (scene_prop_get_instance, ":instance_no", "spr_troop_messenger", ":count"),
+            
+            (try_begin), #spawn messenger at entry #1, send to destination
+                (store_random_in_range, ":chance", 0, 10),
+                (ge, ":chance", 8),
+                (store_faction_of_party, ":faction", "$current_town"),
+                (faction_get_slot, ":troop", ":faction", slot_faction_rider_troop),
+                (set_fixed_point_multiplier, 100),
+                (prop_instance_get_scale, pos2, ":instance_no"),
+                (position_get_scale_y, ":tier", pos2),
+                (val_sub, ":tier", 100),
+                (val_div, ":tier", 10),
+                (store_random_in_range, ":tier_randomizer", 0, 2),
+                (val_sub, ":tier", ":tier_randomizer"),
+                (try_begin),
+                    (ge, ":tier", 1),
+                    (try_for_range, ":unused", 0, ":tier"),
+                        (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 0),
+                        (gt, ":upgrade_troop", 0),
+                        (assign, ":troop", ":upgrade_troop"),
+                    (try_end),
+                (try_end),
+                        
+                (entry_point_get_position, pos1, 1), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+                (lt, "$g_encountered_party_2", 0), #don't spawn riders in siege battles
+                (agent_set_team, reg0, 0),
+                (agent_set_slot, reg0, slot_agent_walker_type, 3), #messenger  
+                (prop_instance_get_position, pos2, ":instance_no"),
+                (agent_set_slot, reg0, slot_agent_is_running_away, 0),
+                (agent_set_scripted_destination, reg0, pos2),
+            (try_end),
+            
+            #check messenger destination, send them back
+            (set_fixed_point_multiplier, 100),
+            (prop_instance_get_position, pos1, ":instance_no"),
+            (try_for_agents, ":agent_no", pos1, 500),
+                (agent_slot_eq, ":agent_no", slot_agent_walker_type, 3),
+                (store_random_in_range, ":chance", 0, 10),
+                (ge, ":chance", 3),
+                (entry_point_get_position, pos1, 1),
+                (agent_set_scripted_destination, ":agent_no", pos1),
+                (agent_set_slot, ":agent_no", slot_agent_is_running_away, 1), #needed for tracking
+            (try_end),
+        (try_end),
+      ]),
+
+  (3, 0, 0, [], [ #slow down or speed up at city entrance
+    (entry_point_get_position, pos1, 2), #player spawn on foot
+    (set_fixed_point_multiplier, 100),
+    (try_for_agents, ":agent_no", pos1, 1500),
+        (agent_slot_eq, ":agent_no", slot_agent_walker_type, 3),
+        (agent_slot_eq, ":agent_no", slot_agent_is_running_away, 1),
+        (agent_set_speed_limit, ":agent_no", 100),
+    (else_try),
+        (agent_slot_eq, ":agent_no", slot_agent_walker_type, 3),
+        (store_random_in_range, ":speed_limit", 10, 17),
+        (agent_set_speed_limit, ":agent_no", ":speed_limit"),
+    (try_end),
+      ]),
+
+  (3, 0, 0, [], [ #messengers leaving the scene
+    (entry_point_get_position, pos1, 1),
+    (set_fixed_point_multiplier, 100),
+    (try_for_agents, ":agent_no", pos1, 600),
+        (agent_slot_eq, ":agent_no", slot_agent_walker_type, 3),
+        (agent_slot_eq, ":agent_no", slot_agent_is_running_away, 1),
+        (agent_start_running_away, ":agent_no"),
+        (this_or_next|eq, "$current_town", "p_town_moria"), #indoor scenes
+        (this_or_next|eq, "$current_town", "p_town_goblin_north_outpost"), 
+        (eq, "$current_town", "p_town_erebor"),
+        (agent_fade_out, ":agent_no"),
+    (try_end),
+      ]),
+  ] or []) + [
+
   (10, 0, ti_once, [], [ # Kham - Set Tutorial Message RE: Rumours
       (try_begin),
         (eq, "$first_time_town", 0),(neq, "$cheat_mode", 1),

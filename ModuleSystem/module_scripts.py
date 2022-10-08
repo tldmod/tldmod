@@ -14244,7 +14244,8 @@ scripts = [
       (agent_get_troop_id, ":troop_no", ":agent_no"),
       (set_fixed_point_multiplier, 100),
       (assign, ":stand_animation", -1),
-	  
+	  (agent_set_slot, ":agent_no", 0, -1), #walker target, set to -1 here, reassigned for walkers later
+      
       (try_begin),
 #        (this_or_next|is_between, ":troop_no", armor_merchants_begin, armor_merchants_end),
         (is_between, ":troop_no", weapon_merchants_begin, weapon_merchants_end),
@@ -14294,15 +14295,17 @@ scripts = [
        (val_add, ":num_walkers", 1),
        (agent_get_position, pos1, ":cur_agent"),
        (store_random_in_range, ":i_e_p", town_walker_entries_start, 40),#Entry points
-       (agent_set_slot, ":cur_agent", 0, ":i_e_p"),
+       (agent_set_slot, ":cur_agent", slot_agent_target_entry_point, ":i_e_p"),
+       (agent_set_slot, ":cur_agent", slot_agent_walker_type, 1),
        (call_script, "script_set_town_walker_destination", ":cur_agent"),
       
       (else_try), #guards patrol
        (agent_get_entry_no, ":entry", ":cur_agent"),
 	   (is_between, ":entry",25,29),
+       (agent_set_slot, ":cur_agent", slot_agent_walker_type, 2),
        (agent_get_position, pos1, ":cur_agent"),
        (store_random_in_range, ":i_e_p", 25, 29),#Entry points
-       (agent_set_slot, ":cur_agent", 0, ":i_e_p"),
+       (agent_set_slot, ":cur_agent", slot_agent_target_entry_point, ":i_e_p"),
        (call_script, "script_set_town_walker_destination", ":cur_agent"),
 
 	  ] + (is_a_wb_script==1 and [
@@ -14348,10 +14351,11 @@ scripts = [
     [(try_for_agents, ":cur_agent"),
 #       (agent_get_troop_id, ":cur_troop", ":cur_agent"),
 #       (is_between, ":cur_troop", walkers_begin, walkers_end),
-       (agent_get_entry_no, ":entry", ":cur_agent"),
-	   (this_or_next|is_between, ":entry",town_walker_entries_start,40),
-       (is_between, ":entry",25,29), #guards
-       (agent_get_slot, ":target_entry_point", ":cur_agent", 0),
+       # (agent_get_entry_no, ":entry", ":cur_agent"),
+	   # (this_or_next|is_between, ":entry",town_walker_entries_start,40),
+       # (is_between, ":entry",25,29), #guards
+       (agent_get_slot, ":target_entry_point", ":cur_agent", slot_agent_target_entry_point),
+       (ge, ":target_entry_point", 0),
        (entry_point_get_position, pos1, ":target_entry_point"),
        (try_begin),
          (lt, ":target_entry_point", town_walker_entries_start),
@@ -14450,11 +14454,13 @@ scripts = [
   ("set_town_walker_destination",
     [(store_script_param_1, ":agent_no"),	  
 	 (store_random_in_range, ":rand_dest", 1 ,12),
-     (agent_get_entry_no, ":entry", ":agent_no"),
+     #(agent_get_entry_no, ":entry", ":agent_no"),
+     (agent_get_slot, ":walker_type", ":agent_no", slot_agent_walker_type),
      (assign, ":is_guard", 0),
        
      (try_begin), #walkers
-	   (is_between, ":entry",town_walker_entries_start,40),
+	   #(is_between, ":entry",town_walker_entries_start,40),
+       (eq, ":walker_type", 1),
 	
 	    (try_begin),
 			(eq, ":rand_dest", 1),
@@ -14494,6 +14500,7 @@ scripts = [
 		(try_end),
         
      (else_try), #guards
+        (eq, ":walker_type", 2),
         (assign, ":is_guard", 1),
 	    (try_begin),
 			(le, ":rand_dest", 3),
@@ -14511,7 +14518,8 @@ scripts = [
      (try_end),
             
 	      (try_begin),
-	        (agent_set_slot, ":agent_no", 0, ":target_entry_point"),
+	        (agent_set_slot, ":agent_no", slot_agent_target_entry_point, ":target_entry_point"),
+            (ge, ":target_entry_point", 0),
 	        (entry_point_get_position, pos1, ":target_entry_point"),
 	        (try_begin),
 	          (init_position, pos2),

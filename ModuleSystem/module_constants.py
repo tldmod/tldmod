@@ -170,7 +170,7 @@ slot_item_horse_charge	= slot_item_swing_damage
 ##  AGENT SLOTS            #############################
 ########################################################
 
-#slot_agent_target_entry_point     = 0 #InVain: disabled, duplicate with #11
+slot_agent_target_entry_point     = 0 #for town walkers and siege archer reinforcements
 slot_agent_target_x_pos           = 1
 slot_agent_target_y_pos           = 2
 slot_agent_is_alive_before_retreat= 3
@@ -180,8 +180,8 @@ slot_agent_tournament_point       = 6
 slot_agent_knocked_down			  = slot_agent_tournament_point # Use for tracking Knockbacks - Kham
 slot_agent_arena_team_set         = 7
 slot_agent_map_overlay_id         = 10
-slot_agent_target_entry_point     = 11
-slot_agent_walker_type            = 12
+# slot_agent_target_entry_point     = 11 #duplicate
+slot_agent_walker_type            = 12 # 1= civilians; 2=patrols; 3=messengers
 slot_agent_last_knockdown_time    = slot_agent_walker_type #Use for tracking Knockbacks    
 
 # TLD

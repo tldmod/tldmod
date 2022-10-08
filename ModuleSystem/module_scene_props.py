@@ -3695,6 +3695,36 @@ scene_props = [
         (agent_set_animation_progress, reg0, reg6),
     ])]),
 
+("troop_messenger",sokf_invisible,"arrow_helper_blue","0", [
+    (ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (store_faction_of_party, ":faction", "$current_town"),
+    (faction_get_slot, ":troop", ":faction", slot_faction_rider_troop),
+    (set_fixed_point_multiplier, 100),
+    (prop_instance_get_scale, pos2, ":instance_no"),
+    (position_get_scale_y, ":tier", pos2),
+    (val_sub, ":tier", 100),
+    (val_div, ":tier", 10),
+    (try_begin),
+        (ge, ":tier", 1),
+        (try_for_range, ":unused", 0, ":tier"),
+            (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 0),
+            (gt, ":upgrade_troop", 0),
+            (assign, ":troop", ":upgrade_troop"),
+        (try_end),
+    (try_end),
+            
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+    (lt, "$g_encountered_party_2", 0), #don't spawn riders in siege battles
+    (agent_set_team, reg0, 0),
+    (agent_set_slot, reg0, slot_agent_walker_type, 3), #messenger  
+    (entry_point_get_position, pos1, 1),
+    (agent_set_scripted_destination, reg0, pos1),
+    (agent_set_slot, reg0, slot_agent_is_running_away, 1), #needed for tracking
+    (agent_set_speed_limit, reg0, 12),
+    ])
+    ]),
+
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),
 ("save_compartibility4",0,"0","0", []),
