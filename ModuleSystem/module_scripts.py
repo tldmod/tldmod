@@ -1946,8 +1946,9 @@ scripts = [
 	(party_set_slot, "p_main_party", slot_party_number_following_player, 0),
 	
 	#Kham - Squelch compiler warnings
-	(assign, "$battle_renown_total", 0), 
-	(assign, "$hold_f1", 0),  
+	(assign, "$original_savegame_version", 0),
+    (assign, "$cheatmode_used", 0),      
+    (assign, "$hold_f1", 0),  
 	(assign, "$dormant_spawn_radius", 0),
 	(assign, "$gate_breached", 0),# unused    
     (assign, "$mouse_coordinates", 0), #wb only
@@ -1957,9 +1958,10 @@ scripts = [
     (assign, "$tld_options_overlay_14", 2),
     (assign, "$g_display_agent_labels", 2),
 
-	(val_mul, "$battle_renown_total", "$hold_f1"),
-	(val_mul, "$battle_renown_total", "$dormant_spawn_radius"),
-	(val_mul, "$hold_f1", "$battle_renown_total"),
+    (val_mul, "$hold_f1", "$cheatmode_used"),
+    (val_mul, "$hold_f1", "$original_savegame_version"),
+	(val_mul, "$hold_f1", "$dormant_spawn_radius"),
+    (val_mul, "$gate_breached", "$hold_f1"),
     (val_mul, "$gate_breached", "$gate_aggravator_agent"),
     (val_mul, "$gate_aggravator_agent", "$gate_breached"),
     (val_mul, "$gate_aggravator_agent", "$mouse_coordinates"),
@@ -1985,7 +1987,8 @@ scripts = [
 	(call_script, "script_set_slot_light_armor"),
 
     (assign,"$savegame_version", 30),  #Rafa: Savegame version
-
+    (assign,"$original_savegame_version", "$savegame_version"),
+    
 	] + (is_a_wb_script==1 and [
 
 	#Init WB Only globals
@@ -13726,7 +13729,6 @@ scripts = [
       (assign, "$cant_talk_to_enemy", 0),
       (assign, "$last_defeated_hero", 0),
       (assign, "$last_freed_hero", 0),
-      (assign, "$battle_renown_total", 0),
       (assign, "$num_routed_us", 0),# Kham
       (assign, "$num_routed_allies", 0),#Kham
       (assign, "$num_routed_enemies", 0),#Kham

@@ -2101,7 +2101,7 @@ game_menus = [
     #Kham - Removed Compile Dependence for Cheat Menu
 
  	("spacer_dev_menu"    ,[],"_"  ,[]),
- 	("Dev_Menu", [], "Developer Menu", [(jump_to_menu, "mnu_dev_menu")]),
+ 	("Dev_Menu", [], "Developer Menu", [(jump_to_menu, "mnu_dev_menu"),]),
     ("resume_travelling",[],"Resume travelling.",[(change_screen_return)]),
     ]
  ),
@@ -2113,14 +2113,14 @@ game_menus = [
 	"none", [(set_background_mesh, "mesh_ui_default_menu_window"),],
   [
   #SW - added enable/disable camp cheat menu by ConstantA - http://forums.taleworlds.net/index.php/topic,63142.msg1647442.html#msg1647442
-	 ("Cheat_enable",[(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),(jump_to_menu, "mnu_camp")]),
+	 ("Cheat_enable",[(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),(jump_to_menu, "mnu_camp"), (assign, "$cheatmode_used", 1)]),
      ("camp_cheat_option", [(eq,"$cheat_mode",1)] ,"Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat")]),
   ## MadVader test begin
-     ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest")]),
+     ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest"), (assign, "$cheatmode_used", 1)]),
   ## MadVader test end
-     ("camp_test_cppcoder",[],"Cpp Test Menu",[(jump_to_menu, "mnu_camp_cctest")]),
+     ("camp_test_cppcoder",[],"Cpp Test Menu",[(jump_to_menu, "mnu_camp_cctest"), (assign, "$cheatmode_used", 1)]),
   ## Kham Test begin
-  	 ("camp_test_kham",[(eq, cheat_switch, 1)],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest")]),
+  	 ("camp_test_kham",[(eq, cheat_switch, 1)],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest"), (assign, "$cheatmode_used", 1)]),
 
   	 ("camp_back_camp_menu",[],"Back to Camp Menu.",[(jump_to_menu, "mnu_camp")]),
  ]
@@ -5617,7 +5617,6 @@ game_menus = [
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
 	(call_script, "script_maybe_relocate_player_from_z0"),
-    (val_add, "$battle_renown_total", "$battle_renown_value"),
 	(call_script, "script_encounter_calculate_fit"),
 	 
 	(call_script, "script_party_count_fit_regulars", "p_main_party"),
