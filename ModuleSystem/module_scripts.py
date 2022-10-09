@@ -1984,7 +1984,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 29),  #Rafa: Savegame version
+    (assign,"$savegame_version", 30),  #Rafa: Savegame version
 
 	] + (is_a_wb_script==1 and [
 
@@ -25216,6 +25216,14 @@ command_cursor_scripts = [
             (troop_raise_attribute, ":trainer_troop", ca_strength, 30),
         (try_end),
         (assign, "$savegame_version", 29),
+	(try_end),	
+    
+   (try_begin), #InVain - 9 Oct 2022, reset respawn timer for old savegames
+        (le, "$savegame_version", 29),
+        (try_for_range, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+            (troop_set_slot, ":lord", slot_troop_respawn_timer, 1),
+        (try_end),
+        (assign, "$savegame_version", 30),
 	(try_end),	
 ]),
 
