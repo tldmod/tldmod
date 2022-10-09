@@ -906,6 +906,12 @@ slot_troop_shop_aval_itp_itp_type_hand_armor     = slot_troop_shop_aval_itp_coun
 #      hardcoded callback scripts such as <game_get_upgrade_cost>
 slot_troop_forbid_companion_upgrade_mode = 139
 
+#Retainers Begin
+
+slot_troop_retainer_troop = 154 #What type of troop (if any) a lord uses as their personal retainers
+
+#Retainers End
+
 # TRAIT SLOTS (=troop slots)
 tld_first_trait_string = "str_trait_title_elf_friend"
 

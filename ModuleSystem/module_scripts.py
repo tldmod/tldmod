@@ -1769,6 +1769,11 @@ scripts = [
 		(party_set_slot, ":center_no", slot_party_food_store, ":food_store_limit"),
 	(try_end),
 
+    #Retainers Begin
+    #Assign retainers before spawning parties
+    (call_script, "script_assign_retainers"),
+    #Retainers End
+
 # spawn some lords in distinct towns, TLD
     ]+[
 	(call_script, "script_create_kingdom_hero_party", lords_spawn[x][0], lords_spawn[x][1]) for x in range(len(lords_spawn)) ]+[  
@@ -10072,6 +10077,25 @@ scripts = [
 		(lt, ":num", 4),
 		(party_add_members, ":party_no", "trp_i5_isen_uruk_standard_bearer", 2),
       (try_end),
+
+      #Retainers Begin
+      #See if this lord has retainer troops
+      (try_begin),
+        (troop_get_slot, ":retainer_troop", ":troop_no", slot_troop_retainer_troop),
+        (gt, ":retainer_troop", 0),
+		(party_count_members_of_type,":num", ":party_no", ":retainer_troop"),
+        
+        (store_skill_level, ":retainer_limit", skl_leadership, ":troop_no"),
+        (val_mul, ":retainer_limit", 2),
+        (val_add, ":retainer_limit", 5), #up to 25
+        
+        #TODO: May need to add a multiplier for orc retainers
+
+        (lt, ":num", ":retainer_limit"),
+		(party_add_members, ":party_no", ":retainer_troop", 3),
+
+      (try_end),
+      #Retainers End
 
       (call_script, "script_party_get_ideal_size", ":party_no"),
       (assign, ":ideal_size", reg0),
@@ -25210,6 +25234,14 @@ command_cursor_scripts = [
         (try_end),
         (assign, "$savegame_version", 29),
 	(try_end),	
+
+    #Retainers Begin
+    (try_begin), #Renmauzuo - 9 Oct 2022, assign retainer troops to lords
+        (le, "$savegame_version", 29),
+        (call_script, "script_assign_retainers"),
+        (assign, "$savegame_version", 30),
+	(try_end),
+    #Retainers End
 ]),
 
 #Kham
@@ -31323,5 +31355,19 @@ if is_a_wb_script==1:
        (call_script, "script_agent_troop_get_banner_mesh", ":agent_no", ":troop_no"),
        (cur_agent_set_banner_tableau_material, ":tableau_no", reg0),
      ]),
+
+    #Retainers Begin
+    # Assigns all retainers to lords at game start. Put in a separate script so it can also be called in the save game update.
+    # #script_assign_retainers
+    # # INPUT: none
+    # # OUTPUT: none
+    ("assign_retainers",
+        [
+            (troop_set_slot, "trp_gondor_lord", slot_troop_retainer_troop, "trp_steward_guard"), #Steward Guards for Denethor
+            (troop_set_slot, "trp_rohan_lord", slot_troop_retainer_troop, "trp_c6_king_s_man_of_rohan"), #King's Guard for Theoden
+            (troop_set_slot, "trp_knight_1_7", slot_troop_retainer_troop, "trp_a6_ithilien_master_ranger"), #Rangers for Faramir
+        ]),
+    #Retainers End
+
 
 ] or []) 
