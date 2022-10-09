@@ -681,25 +681,25 @@ game_menus = [
        (troop_equip_items, "$g_player_troop"),
 ## US     
 		(set_visitors, 1, "trp_i6_2h_guard_of_rohan",				6),
-		(set_visitors, 2, "trp_dismounted_elite_skirmisher_of_rohan",		6),
-		(set_visitors, 3, "trp_dismounted_elite_skirmisher_of_rohan",			6),
+		(set_visitors, 2, "trp_ac4_dism_veteran_skirmisher_of_rohan",		6),
+		(set_visitors, 3, "trp_ac4_dism_veteran_skirmisher_of_rohan",			6),
 		(set_visitors, 4, "trp_i5_raider_of_rohan",					6),
 		(set_visitors, 5, "trp_i6_footman_guard_of_rohan",					6),
 		(set_visitors, 6, "trp_i4_veteran_footman_of_rohan",					6),
 		(set_visitors, 7, "trp_i6_warden_of_methuseld",						6),
-		(set_visitors, 8, "trp_dismounted_veteran_skirmisher_of_rohan",		6),
+		(set_visitors, 8, "trp_ac4_dism_veteran_skirmisher_of_rohan",		6),
 		(set_visitors, 9, "trp_i1_rohan_youth",								6),
 		(set_visitors, 10, "trp_i2_guardsman_of_rohan",						6),
 		(set_visitors, 11, "trp_i3_footman_of_rohan",							6),
 		(set_visitors, 12, "trp_i5_elite_footman_of_rohan",					6),
 		(set_visitors, 13, "trp_a4_lorien_gal_warden",					8),
-		(set_visitors, 14, "trp_dismounted_veteran_skirmisher_of_rohan",	6),
-		(set_visitors, 15, "trp_dismounted_veteran_skirmisher_of_rohan",	6),
-		(set_visitors, 40, "trp_dismounted_veteran_skirmisher_of_rohan",	2),
-		(set_visitors, 41, "trp_dismounted_veteran_skirmisher_of_rohan",	2),
-		(set_visitors, 42, "trp_dismounted_veteran_skirmisher_of_rohan",	2),
-		(set_visitors, 43, "trp_dismounted_veteran_skirmisher_of_rohan",	2),
-		(set_visitors, 44, "trp_dismounted_veteran_skirmisher_of_rohan",	2),
+		(set_visitors, 14, "trp_ac4_dism_veteran_skirmisher_of_rohan",	6),
+		(set_visitors, 15, "trp_ac4_dism_veteran_skirmisher_of_rohan",	6),
+		(set_visitors, 40, "trp_ac4_dism_veteran_skirmisher_of_rohan",	2),
+		(set_visitors, 41, "trp_ac4_dism_veteran_skirmisher_of_rohan",	2),
+		(set_visitors, 42, "trp_ac4_dism_veteran_skirmisher_of_rohan",	2),
+		(set_visitors, 43, "trp_ac4_dism_veteran_skirmisher_of_rohan",	2),
+		(set_visitors, 44, "trp_ac4_dism_veteran_skirmisher_of_rohan",	2),
 ## ENEMY
 		(set_visitors, 16, "trp_a2_isen_uruk_tracker",							6),
 		(set_visitors, 17, "trp_a3_isen_large_uruk_tracker",					6),
@@ -2101,7 +2101,7 @@ game_menus = [
     #Kham - Removed Compile Dependence for Cheat Menu
 
  	("spacer_dev_menu"    ,[],"_"  ,[]),
- 	("Dev_Menu", [], "Developer Menu", [(jump_to_menu, "mnu_dev_menu")]),
+ 	("Dev_Menu", [], "Developer Menu", [(jump_to_menu, "mnu_dev_menu"),]),
     ("resume_travelling",[],"Resume travelling.",[(change_screen_return)]),
     ]
  ),
@@ -2113,14 +2113,14 @@ game_menus = [
 	"none", [(set_background_mesh, "mesh_ui_default_menu_window"),],
   [
   #SW - added enable/disable camp cheat menu by ConstantA - http://forums.taleworlds.net/index.php/topic,63142.msg1647442.html#msg1647442
-	 ("Cheat_enable",[(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),(jump_to_menu, "mnu_camp")]),
+	 ("Cheat_enable",[(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),(jump_to_menu, "mnu_camp"), (assign, "$cheatmode_used", 1)]),
      ("camp_cheat_option", [(eq,"$cheat_mode",1)] ,"Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat")]),
   ## MadVader test begin
-     ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest")]),
+     ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest"), (assign, "$cheatmode_used", 1)]),
   ## MadVader test end
-     ("camp_test_cppcoder",[],"Cpp Test Menu",[(jump_to_menu, "mnu_camp_cctest")]),
+     ("camp_test_cppcoder",[],"Cpp Test Menu",[(jump_to_menu, "mnu_camp_cctest"), (assign, "$cheatmode_used", 1)]),
   ## Kham Test begin
-  	 ("camp_test_kham",[(eq, cheat_switch, 1)],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest")]),
+  	 ("camp_test_kham",[(eq, cheat_switch, 1)],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest"), (assign, "$cheatmode_used", 1)]),
 
   	 ("camp_back_camp_menu",[],"Back to Camp Menu.",[(jump_to_menu, "mnu_camp")]),
  ]
@@ -5617,7 +5617,6 @@ game_menus = [
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
 	(call_script, "script_maybe_relocate_player_from_z0"),
-    (val_add, "$battle_renown_total", "$battle_renown_value"),
 	(call_script, "script_encounter_calculate_fit"),
 	 
 	(call_script, "script_party_count_fit_regulars", "p_main_party"),
@@ -6918,6 +6917,7 @@ game_menus = [
     "none",
     code_to_set_city_background + [ 
 	    (str_store_party_name, s1, "$g_encountered_party"),
+        (assign, "$current_town", "$g_encountered_party"),
         (str_store_party_name, s2, "$g_encountered_party_2"),
     ],
     [ ("approach_besiegers",[(store_faction_of_party, ":faction_no", "$g_encountered_party_2"),

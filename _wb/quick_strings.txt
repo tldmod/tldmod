@@ -1,4 +1,4 @@
-1941
+1940
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_476_wb__dev_^_B _rev_476_wb_|_dev_^_Built_2022-09-26_20:20___
+qstr__rev_487_wb__dev_^_B _rev_487_wb_|_dev_^_Built_2022-10-08_18:31___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -304,7 +304,6 @@ qstr_{s0}_{reg3?{reg3}:}_ {s0},_{reg3?{reg3}:}_{s1}_({s2})
 qstr_{s0}^{reg3?{reg3}:}_ {s0}^{reg3?{reg3}:}_{s1}_({s2})
 qstr_{s0}^TOTAL:_{reg3}__ {s0}^TOTAL:_{reg3}_({s2})
 qstr_^None ^None
-qstr_min:_{reg76};_max_{r min:_{reg76};_max_{reg77};_level_up:_{reg78}_rounds
 qstr_near_the_Great_East_ near_the_Great_East_Road,_the_abandoned_old_road
 qstr_near_what_is_left_of near_what_is_left_of_the_Old_Forest_Road,_the_ancient_dwarven_path_that_used_to_cross_the_thick_forest
 qstr_close_to_the_Hand_sh close_to_the_Hand-shaped_sign_of_Saruman,_pointing_toward_the_tower_of_Orthanc

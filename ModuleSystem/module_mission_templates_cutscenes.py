@@ -45,7 +45,7 @@ mission_templates_cutscenes = [
     
     (ti_before_mission_start, 0, 0, [],
       [ #remove cabbage guard spawn points
-        (replace_scene_props, "spr_troop_prison_guard", "spr_empty"),
+        (replace_scene_props, "spr_troop_archer", "spr_empty"),
         (replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
         (replace_scene_props, "spr_troop_guard", "spr_empty"),
         

@@ -2329,7 +2329,7 @@ ai_scripts = [
       (str_store_troop_name, s5, ":troop_no"),
       (party_set_name, "$pout_party", "str_s5_s_party"),
   # add bodyguards. Transformation of lord+guards to a host moved to simple triggers
-	  (faction_get_slot,":guard",":troop_faction_no",slot_faction_prison_guard_troop),
+	  (faction_get_slot,":guard",":troop_faction_no",slot_faction_castle_guard_troop),
       (try_begin),
         (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":troop_no"),
         (faction_get_slot,":guard",":troop_faction_no",slot_faction_castle_guard_troop), # marshalls get elite guards
