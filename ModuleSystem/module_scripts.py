@@ -1436,8 +1436,8 @@ scripts = [
 	# troop slots
 	(faction_set_slot, faction_init[x][0], slot_faction_deserter_troop    , faction_init[x][8][0]) for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_init[x][0], slot_faction_guard_troop       , faction_init[x][8][1]) for x in range(len(faction_init)) ]+[
-	(faction_set_slot, faction_init[x][0], slot_faction_messenger_troop   , faction_init[x][8][2]) for x in range(len(faction_init)) ]+[
-	(faction_set_slot, faction_init[x][0], slot_faction_prison_guard_troop, faction_init[x][8][3]) for x in range(len(faction_init)) ]+[
+	(faction_set_slot, faction_init[x][0], slot_faction_rider_troop       , faction_init[x][8][2]) for x in range(len(faction_init)) ]+[
+	(faction_set_slot, faction_init[x][0], slot_faction_archer_troop      , faction_init[x][8][3]) for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_init[x][0], slot_faction_castle_guard_troop, faction_init[x][8][4]) for x in range(len(faction_init)) ]+[
 
 	(faction_set_slot, faction_init[x][0], slot_faction_capital           , faction_init[x][9])    for x in range(len(faction_init)) ]+[
@@ -1689,15 +1689,15 @@ scripts = [
 		# TLD center guards
 		(faction_get_slot, ":troop", ":original_faction", slot_faction_guard_troop),
 		(party_set_slot, ":center_no", slot_town_guard_troop,  ":troop"),
-		(faction_get_slot, ":troop", ":original_faction", slot_faction_prison_guard_troop),
-		(party_set_slot, ":center_no", slot_town_prison_guard_troop,  ":troop"),
+		(faction_get_slot, ":troop", ":original_faction", slot_faction_archer_troop),
+		(party_set_slot, ":center_no", slot_town_archer_troop,  ":troop"),
 		(faction_get_slot, ":troop", ":original_faction", slot_faction_castle_guard_troop),
 		(party_set_slot, ":center_no", slot_town_castle_guard_troop,  ":troop"),
 	(try_end),
 # TLD specific center guards
 	]+concatenate_scripts([[
 	(party_set_slot, subfaction_data[x][1], slot_town_guard_troop          , subfaction_data[x][3][0]) ,
-	(party_set_slot, subfaction_data[x][1], slot_town_prison_guard_troop   , subfaction_data[x][3][1]) ,
+	(party_set_slot, subfaction_data[x][1], slot_town_archer_troop   , subfaction_data[x][3][1]) ,
 	(party_set_slot, subfaction_data[x][1], slot_town_castle_guard_troop   , subfaction_data[x][3][2]) ,
 	(party_set_slot, subfaction_data[x][1],slot_party_subfaction    , subfaction_data[x][0]),
 	(party_get_slot, ":weaponsmith",      subfaction_data[x][1]    , slot_town_weaponsmith),
@@ -1946,8 +1946,9 @@ scripts = [
 	(party_set_slot, "p_main_party", slot_party_number_following_player, 0),
 	
 	#Kham - Squelch compiler warnings
-	(assign, "$battle_renown_total", 0), 
-	(assign, "$hold_f1", 0),  
+	(assign, "$original_savegame_version", 0),
+    (assign, "$cheatmode_used", 0),      
+    (assign, "$hold_f1", 0),  
 	(assign, "$dormant_spawn_radius", 0),
 	(assign, "$gate_breached", 0),# unused    
     (assign, "$mouse_coordinates", 0), #wb only
@@ -1957,9 +1958,10 @@ scripts = [
     (assign, "$tld_options_overlay_14", 2),
     (assign, "$g_display_agent_labels", 2),
 
-	(val_mul, "$battle_renown_total", "$hold_f1"),
-	(val_mul, "$battle_renown_total", "$dormant_spawn_radius"),
-	(val_mul, "$hold_f1", "$battle_renown_total"),
+    (val_mul, "$hold_f1", "$cheatmode_used"),
+    (val_mul, "$hold_f1", "$original_savegame_version"),
+	(val_mul, "$hold_f1", "$dormant_spawn_radius"),
+    (val_mul, "$gate_breached", "$hold_f1"),
     (val_mul, "$gate_breached", "$gate_aggravator_agent"),
     (val_mul, "$gate_aggravator_agent", "$gate_breached"),
     (val_mul, "$gate_aggravator_agent", "$mouse_coordinates"),
@@ -1984,8 +1986,9 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 29),  #Rafa: Savegame version
-
+    (assign,"$savegame_version", 30),  #Rafa: Savegame version
+    (assign,"$original_savegame_version", "$savegame_version"),
+    
 	] + (is_a_wb_script==1 and [
 
 	#Init WB Only globals
@@ -8078,7 +8081,7 @@ scripts = [
 			(assign, reg76, ":level_up_min"),
 			(assign, reg77, ":level_up_max"),
 			(assign, reg78, ":level_up"),
-			(display_message, "@min: {reg76}; max {reg77}; level up: {reg78} rounds"),
+			#(display_message, "@min: {reg76}; max {reg77}; level up: {reg78} rounds"),
             #Kham - Dynamic Amount / Levels END
 
             #(val_add, ":level_up", ":cur_level"), #InVain: Removed this. Now the scaling won't go overboard
@@ -8184,7 +8187,7 @@ scripts = [
 ##          (try_begin),
 ##            (call_script, "script_cf_faction_get_random_enemy_faction", ":giver_faction_no"),
 ##            (assign, ":cur_target_faction", reg0),
-##            (faction_get_slot, ":cur_target_troop", ":cur_target_faction", slot_faction_messenger_troop),
+##            (faction_get_slot, ":cur_target_troop", ":cur_target_faction", slot_faction_rider_troop),
 ##            (gt, ":cur_target_troop", 0),#Checking the validiy of cur_target_troop
 ##            (store_num_parties_destroyed_by_player, ":quest_target_amount", "pt_messenger_party"),
 ##
@@ -9659,8 +9662,8 @@ scripts = [
       (party_set_slot, ":center_no", slot_center_walker_9_troop, ":value"),
       (faction_get_slot, ":value", ":faction_no", slot_faction_guard_troop),
       (party_set_slot, ":center_no", slot_town_guard_troop, ":value"),
-      (faction_get_slot, ":value", ":faction_no", slot_faction_prison_guard_troop),
-      (party_set_slot, ":center_no", slot_town_prison_guard_troop, ":value"),
+      (faction_get_slot, ":value", ":faction_no", slot_faction_archer_troop),
+      (party_set_slot, ":center_no", slot_town_archer_troop, ":value"),
       (faction_get_slot, ":value", ":faction_no", slot_faction_castle_guard_troop),
       (party_set_slot, ":center_no", slot_town_castle_guard_troop, ":value"),
       
@@ -13799,7 +13802,6 @@ scripts = [
       (assign, "$cant_talk_to_enemy", 0),
       (assign, "$last_defeated_hero", 0),
       (assign, "$last_freed_hero", 0),
-      (assign, "$battle_renown_total", 0),
       (assign, "$num_routed_us", 0),# Kham
       (assign, "$num_routed_allies", 0),#Kham
       (assign, "$num_routed_enemies", 0),#Kham
@@ -14102,9 +14104,9 @@ scripts = [
 # script_remove_siege_objects
 # removes all objects inappropriate for siege scene (all troop/mount spawners etc)
 ("remove_siege_objects",[ 
-	(try_for_range, ":prop", "spr_troop_guard", "spr_ZT_mb_chestnut"),
-		(replace_scene_props, ":prop", "spr_empty"),
-	(try_end),
+	# (try_for_range, ":prop", "spr_troop_guard", "spr_ZT_mb_chestnut"),
+		# (replace_scene_props, ":prop", "spr_empty"),
+	# (try_end),
 	(try_for_range, ":prop", "spr_horse_riv_warhorse", "spr_spiderweb"),
 		(replace_scene_props, ":prop", "spr_empty"),
 	(try_end),
@@ -14232,7 +14234,7 @@ scripts = [
             (assign, ":num_walkers", 2),
         (else_try),
             #(set_visitors, ":entry_no", ":walker_troop_id",4),
-            (assign, ":num_walkers", 5),
+            (assign, ":num_walkers", 4),
         (try_end), ## Kham Edit for more town walkers! - END
 
         (try_for_range, ":entry_no", town_walker_entries_start, 40),
@@ -14317,7 +14319,8 @@ scripts = [
       (agent_get_troop_id, ":troop_no", ":agent_no"),
       (set_fixed_point_multiplier, 100),
       (assign, ":stand_animation", -1),
-	  
+	  (agent_set_slot, ":agent_no", 0, -1), #walker target, set to -1 here, reassigned for walkers later
+      
       (try_begin),
 #        (this_or_next|is_between, ":troop_no", armor_merchants_begin, armor_merchants_end),
         (is_between, ":troop_no", weapon_merchants_begin, weapon_merchants_end),
@@ -14367,8 +14370,36 @@ scripts = [
        (val_add, ":num_walkers", 1),
        (agent_get_position, pos1, ":cur_agent"),
        (store_random_in_range, ":i_e_p", town_walker_entries_start, 40),#Entry points
-       (agent_set_slot, ":cur_agent", 0, ":i_e_p"),
+       (agent_set_slot, ":cur_agent", slot_agent_target_entry_point, ":i_e_p"),
+       (agent_set_slot, ":cur_agent", slot_agent_walker_type, 1),
        (call_script, "script_set_town_walker_destination", ":cur_agent"),
+      
+      (else_try), #guards patrol
+       (agent_get_entry_no, ":entry", ":cur_agent"),
+	   (is_between, ":entry",25,29),
+       (agent_set_slot, ":cur_agent", slot_agent_walker_type, 2),
+       (agent_get_position, pos1, ":cur_agent"),
+       (store_random_in_range, ":i_e_p", 25, 29),#Entry points
+       (agent_set_slot, ":cur_agent", slot_agent_target_entry_point, ":i_e_p"),
+       (call_script, "script_set_town_walker_destination", ":cur_agent"),
+
+	  ] + (is_a_wb_script==1 and [
+       (try_for_range, ":weapon_slot", 0, 4), #find polearm
+        (agent_get_item_slot, ":item", ":cur_agent", ":weapon_slot"),
+        (gt, ":item", 1),
+        (item_get_type, ":item_type", ":item"),
+        (eq, ":item_type", itp_type_polearm),
+        (agent_set_wielded_item, ":cur_agent", ":item"),
+            # (try_for_range, ":weapon_slot", 0, 4), #don't equip shield yet, lacking proper walk animation
+                # (agent_get_item_slot, ":item", ":cur_agent", ":weapon_slot"),
+                # (gt, ":item", 1),
+                # (item_get_type, ":item_type", ":item"),
+                # (eq, ":item_type", itp_type_shield),
+                # (agent_set_wielded_item, ":cur_agent", ":item"),
+            # (try_end),
+       (try_end),
+      ] or []) + [
+       
      (try_end),
 ]),
 
@@ -14395,9 +14426,11 @@ scripts = [
     [(try_for_agents, ":cur_agent"),
 #       (agent_get_troop_id, ":cur_troop", ":cur_agent"),
 #       (is_between, ":cur_troop", walkers_begin, walkers_end),
-       (agent_get_entry_no, ":entry", ":cur_agent"),
-	   (is_between, ":entry",town_walker_entries_start,40),
-       (agent_get_slot, ":target_entry_point", ":cur_agent", 0),
+       # (agent_get_entry_no, ":entry", ":cur_agent"),
+	   # (this_or_next|is_between, ":entry",town_walker_entries_start,40),
+       # (is_between, ":entry",25,29), #guards
+       (agent_get_slot, ":target_entry_point", ":cur_agent", slot_agent_target_entry_point),
+       (ge, ":target_entry_point", 0),
        (entry_point_get_position, pos1, ":target_entry_point"),
        (try_begin),
          (lt, ":target_entry_point", town_walker_entries_start),
@@ -14496,6 +14529,13 @@ scripts = [
   ("set_town_walker_destination",
     [(store_script_param_1, ":agent_no"),	  
 	 (store_random_in_range, ":rand_dest", 1 ,12),
+     #(agent_get_entry_no, ":entry", ":agent_no"),
+     (agent_get_slot, ":walker_type", ":agent_no", slot_agent_walker_type),
+     (assign, ":is_guard", 0),
+       
+     (try_begin), #walkers
+	   #(is_between, ":entry",town_walker_entries_start,40),
+       (eq, ":walker_type", 1),
 	
 	    (try_begin),
 			(eq, ":rand_dest", 1),
@@ -14533,9 +14573,28 @@ scripts = [
 		(else_try),	
 			(assign, ":target_entry_point", 10),					
 		(try_end),
-		  
+        
+     (else_try), #guards
+        (eq, ":walker_type", 2),
+        (assign, ":is_guard", 1),
+	    (try_begin),
+			(le, ":rand_dest", 3),
+			(assign, ":target_entry_point", 25),
+		(else_try),	
+			(le, ":rand_dest", 6),
+			(assign, ":target_entry_point", 26),
+		(else_try),	
+			(le, ":rand_dest", 9),
+			(assign, ":target_entry_point", 27),	
+		(else_try),	
+			(le, ":rand_dest", 12),
+			(assign, ":target_entry_point", 28),	
+		(try_end),
+     (try_end),
+            
 	      (try_begin),
-	        (agent_set_slot, ":agent_no", 0, ":target_entry_point"),
+	        (agent_set_slot, ":agent_no", slot_agent_target_entry_point, ":target_entry_point"),
+            (ge, ":target_entry_point", 0),
 	        (entry_point_get_position, pos1, ":target_entry_point"),
 	        (try_begin),
 	          (init_position, pos2),
@@ -14546,16 +14605,26 @@ scripts = [
 	   (agent_get_troop_id, ":troop_no", ":agent_no"), # orcs and dwarves walk slower
 	   (troop_get_type,":try_limit",":troop_no"),
 	   (try_begin),
-			(neq, "$current_town", "p_town_west_osgiliath"), # guys run in osgiliaths
-			(neq, "$current_town", "p_town_east_osgiliath"),
+			# (neq, "$current_town", "p_town_west_osgiliath"), # guys run in osgiliaths
+			# (neq, "$current_town", "p_town_east_osgiliath"),
 #			(neq, "$g_defending_against_siege", 0), # guys run when siege
 			(try_begin),
 				(this_or_next|eq,":try_limit",tf_orc),
 				(eq,":try_limit",tf_dwarf),
-				(store_random_in_range,reg10,2,4), (agent_set_speed_limit, ":agent_no", reg10), # orc dwarf walk slower
+                (neq, ":is_guard", 1),
+				(store_random_in_range,reg10,1,7),  # orc dwarf walk slower
 			(else_try),
-				(store_random_in_range,reg10,3,6), (agent_set_speed_limit, ":agent_no", reg10), # humans
-			(try_end),   
+                (neq, ":is_guard", 1),
+				(store_random_in_range,reg10,2,8),  # humans
+			(else_try), #guards move slow
+				(store_random_in_range,reg10,1,3),  
+			(try_end), 
+            (try_begin),
+                (this_or_next|eq, "$current_town", "p_town_west_osgiliath"),
+                (eq, "$current_town", "p_town_east_osgiliath"),
+                (val_add, reg10, 4),
+            (try_end),
+            (agent_set_speed_limit, ":agent_no", reg10),
 	   (try_end),
      (try_end),
 ]),
@@ -22478,7 +22547,7 @@ scripts = [
 		# TLD center specific guards
 		# (try_begin),
 			# (neg|party_slot_eq,"$current_town", slot_town_prison, -1),
-			# (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_prison_guard_troop),
+			# (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_archer_troop),
 		# (else_try),
 			# (party_get_slot, ":troop_prison_guard", "$current_town", slot_town_guard_troop),
 		# (try_end),
@@ -22499,7 +22568,20 @@ scripts = [
         
         # TLD center specific guards
         (party_get_slot, ":tier_2_troop", "$current_town", slot_town_guard_troop),
-        (party_get_slot, ":tier_3_troop", "$current_town", slot_town_guard_troop), #was slot_town_prison_guard_troop
+        (assign, ":tier_3_troop", ":tier_2_troop"),
+        (try_begin),
+            (troop_get_upgrade_troop, ":upgrade_troop", ":tier_2_troop", 1), #try secondary upgrade path first - favours spearmen
+            (gt, ":upgrade_troop", 0),
+            (neg|troop_is_guarantee_ranged, ":upgrade_troop"),
+            (neg|troop_is_guarantee_horse, ":upgrade_troop"),
+            (assign, ":tier_3_troop", ":upgrade_troop"),
+        (else_try), 
+            (troop_get_upgrade_troop, ":upgrade_troop", ":tier_2_troop", 0),
+            (gt, ":upgrade_troop", 0),
+            (assign, ":tier_3_troop", ":upgrade_troop"),
+        (try_end),
+        
+        #(party_get_slot, ":tier_3_troop", "$current_town", slot_town_archer_troop), #was slot_town_archer_troop
         ########
         (try_begin),
             (gt,":tier_2_troop", 0),
@@ -22508,7 +22590,7 @@ scripts = [
             (assign,reg0,"trp_i4_gon_swordsman"),(assign,reg1,"trp_i4_gon_swordsman"),(assign,reg2,"trp_a4_gon_archer"),(assign,reg3,"trp_i3_footman_of_rohan"),
         (try_end),
         (shuffle_range,0,4),
-        (set_visitor,25,reg0),(set_visitor,26,reg1),(set_visitor,27,reg2),(set_visitor,28,reg3),
+        (set_visitors,25,reg0,2),(set_visitors,26,reg1,2),(set_visitors,27,reg2,2),(set_visitors,28,reg3,2),
 
         #MV replaced by companion NPC, if any, and no castle
         #TLD NPC companions
@@ -25209,6 +25291,14 @@ command_cursor_scripts = [
             (troop_raise_attribute, ":trainer_troop", ca_strength, 30),
         (try_end),
         (assign, "$savegame_version", 29),
+	(try_end),	
+    
+   (try_begin), #InVain - 9 Oct 2022, reset respawn timer for old savegames
+        (le, "$savegame_version", 29),
+        (try_for_range, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+            (troop_set_slot, ":lord", slot_troop_respawn_timer, 1),
+        (try_end),
+        (assign, "$savegame_version", 30),
 	(try_end),	
 ]),
 
