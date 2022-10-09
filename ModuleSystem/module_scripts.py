@@ -14159,7 +14159,7 @@ scripts = [
             (assign, ":num_walkers", 2),
         (else_try),
             #(set_visitors, ":entry_no", ":walker_troop_id",4),
-            (assign, ":num_walkers", 5),
+            (assign, ":num_walkers", 4),
         (try_end), ## Kham Edit for more town walkers! - END
 
         (try_for_range, ":entry_no", town_walker_entries_start, 40),
@@ -14530,20 +14530,26 @@ scripts = [
 	   (agent_get_troop_id, ":troop_no", ":agent_no"), # orcs and dwarves walk slower
 	   (troop_get_type,":try_limit",":troop_no"),
 	   (try_begin),
-			(neq, "$current_town", "p_town_west_osgiliath"), # guys run in osgiliaths
-			(neq, "$current_town", "p_town_east_osgiliath"),
+			# (neq, "$current_town", "p_town_west_osgiliath"), # guys run in osgiliaths
+			# (neq, "$current_town", "p_town_east_osgiliath"),
 #			(neq, "$g_defending_against_siege", 0), # guys run when siege
 			(try_begin),
 				(this_or_next|eq,":try_limit",tf_orc),
 				(eq,":try_limit",tf_dwarf),
                 (neq, ":is_guard", 1),
-				(store_random_in_range,reg10,1,7), (agent_set_speed_limit, ":agent_no", reg10), # orc dwarf walk slower
+				(store_random_in_range,reg10,1,7),  # orc dwarf walk slower
 			(else_try),
                 (neq, ":is_guard", 1),
-				(store_random_in_range,reg10,2,8), (agent_set_speed_limit, ":agent_no", reg10), # humans
+				(store_random_in_range,reg10,2,8),  # humans
 			(else_try), #guards move slow
-				(store_random_in_range,reg10,1,3), (agent_set_speed_limit, ":agent_no", reg10), 
-			(try_end),  
+				(store_random_in_range,reg10,1,3),  
+			(try_end), 
+            (try_begin),
+                (this_or_next|eq, "$current_town", "p_town_west_osgiliath"),
+                (eq, "$current_town", "p_town_east_osgiliath"),
+                (val_add, reg10, 4),
+            (try_end),
+            (agent_set_speed_limit, ":agent_no", reg10),
 	   (try_end),
      (try_end),
 ]),
