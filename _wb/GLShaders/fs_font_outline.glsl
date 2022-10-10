@@ -1,4 +1,4 @@
-#version 130
+/* swy: don't set version 130 as macOS doesn't support it */
 
 uniform sampler2D diffuse_texture;
 varying vec4 outColor0;
@@ -46,7 +46,7 @@ void main ()
 
     // weighted average, with 4 extra points having 0.5 weight each,
     // so 1 + 0.5*4 = 3 is the divisor
-    alpha = (alpha + asum/4);
+    alpha = (alpha + asum/4.0);
     // -------
 
     float intour = intour( dist, width );
@@ -56,7 +56,7 @@ void main ()
                + intsamp( box.xw, width )
                + intsamp( box.zy, width );
 
-    intour = (intour + isum/4);
+    intour = (intour + isum/4.0);
 
     gl_FragColor = clamp(vec4
     ( /* mix the border and text colors using the inner contour mask.

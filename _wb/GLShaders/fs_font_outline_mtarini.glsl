@@ -1,4 +1,4 @@
-#version 130
+/* swy: don't set version 130 as macOS doesn't support it */
 
 uniform sampler2D diffuse_texture;
 varying vec4 outColor0;
