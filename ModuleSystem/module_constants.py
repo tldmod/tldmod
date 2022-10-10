@@ -909,6 +909,7 @@ slot_troop_forbid_companion_upgrade_mode = 139
 #Retainers Begin
 
 slot_troop_retainer_troop = 154 #What type of troop (if any) a lord uses as their personal retainers
+slot_troop_friendship_reward = 155 #Lord wants to give the player a gift (may store *type* of gift in the future)
 
 #Retainers End
 

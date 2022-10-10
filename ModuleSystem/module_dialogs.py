@@ -8475,6 +8475,28 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 [anyone,"lord_leave_prison", [], "We'll meet again.", "close_window",[(call_script,"script_stand_back"),]],
 
+#Retainers Begin
+[anyone,"lord_leave", [
+    (troop_get_slot, ":friendship_reward", "$g_talk_troop", slot_troop_friendship_reward),
+    (gt, ":friendship_reward", 0),
+    (troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward, 0),
+    (call_script, "script_lord_reward_troops", "$g_talk_troop"),
+    (str_store_troop_name, s24, reg40),
+    #TODO: Ren - Add additional friendship rewards. Maybe. Some of this may also need to be moved to a script if it's reused elsewhere (such as after a battle)
+    #Also should adjust text to handle singular vs plural, and maybe good vs evil
+    ], "Before you leave, you have always a been good friend to me. Allow me to repay you by giving you some troops. I have {reg41} {s24} that are prepared to join you.", "lord_offer_troops",[]],
+
+    #TODO: Ren - Adjust player resposnes to account for party being full
+    [anyone|plyr,"lord_offer_troops", [], "I will gladly accept them into my party", "close_window",[
+        (party_remove_members, "$g_talk_troop_party", reg40, reg41),
+        (party_add_members, "p_main_party", reg40, reg41),
+        (call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1)
+    ]],
+
+    [anyone|plyr,"lord_offer_troops", [], "I fear I cannot accept them at this time.", "close_window",[(call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1)]],
+
+#Retainers End
+
 [anyone|auto_proceed,"lord_leave", [(lt, "$g_talk_troop_faction_relation", 0)],
 "We'll see about that, {playername}.", "close_window",[(call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1)]],
 
