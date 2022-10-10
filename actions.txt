@@ -604,8 +604,8 @@
   31.5 man_cheer 650 1597 6 0 0 0 0 0.0 
  stand_townguard 0  1
   79 stand_guardsman 0 2397 1342177280 0 0 0 0  0.25 
- stand_lady 0  1
-  29 lady_stand 0 863 1342177280 0 0 0 0  0.25 
+ stand_townguard_polearm 0  1
+  79 stand_guardsman 0 2397 1342177280 0 0 0 0  0.25 
  stand_lord 0  1
   10 lord_stand 0 111 1342177280 0 0 0 0  0.25 
  dance 0  1

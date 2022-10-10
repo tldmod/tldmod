@@ -633,7 +633,7 @@ player_side_faction
 enemy_side_faction
 inital_player_xp
 g_fac_str_siegable
-battle_renown_total
+original_savegame_version
 tld_option_animal_ambushes
 g_defiled_armor_item
 g_defiled_armor_rotation
@@ -755,3 +755,4 @@ reinforcements_arrived
 tld_campaign_diffulty
 tld_options_overlay_14
 g_display_agent_labels
+cheatmode_used
