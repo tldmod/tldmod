@@ -14041,6 +14041,12 @@ scripts = [
 	(try_for_range, ":prop", "spr_horse_warg_1C", "spr_sound_waterfall"),
 		(replace_scene_props, ":prop", "spr_empty"),
 	(try_end),
+    (try_for_range, ":prop", "spr_troop_civilian", "spr_water_fall_big"),
+		(replace_scene_props, ":prop", "spr_empty"),
+	(try_end),
+    (try_for_range, ":prop", "spr_troop_rider", spr_troop_messenger+1),
+		(replace_scene_props, ":prop", "spr_empty"),
+	(try_end),
 ]),
 
 # script_describe_relation_to_s63
