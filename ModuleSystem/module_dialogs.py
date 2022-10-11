@@ -8498,7 +8498,17 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     ], "{s23} Allow me to repay you by giving you some troops. I have {reg41} {s24} who {reg42?is:are} prepared to join you.", "lord_offer_troops",[]],
 
     #TODO: Ren - Adjust player resposnes to account for party being full
-    [anyone|plyr,"lord_offer_troops", [], "I will gladly accept them into my party", "close_window",[
+    [anyone|plyr,"lord_offer_troops", [
+        (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
+        (gt, ":free_capacity", 0), #skip this option if the player has no room
+        (try_begin),
+            (ge, ":free_capacity", reg41),
+            (assign, reg42, 1),
+        (else_try),
+            (assign, reg42, 0),
+            (assign, reg41, ":free_capacity"),
+        (try_end),
+    ], "Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.", "close_window",[
         (party_add_members, "p_main_party", reg40, reg41),
         (call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1)
     ]],

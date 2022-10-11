@@ -31515,8 +31515,6 @@ if is_a_wb_script==1:
                 (store_troop_faction, ":hero_fac", ":troop_no"),
 	        	(party_get_slot, ":hero_subfac", ":party", slot_party_subfaction),
 
-                (assign, reg0, ":hero_subfac"),
-                (display_message, "@Hero Subfaction {reg0}"),
                 (party_get_num_companion_stacks, ":num_stacks", ":party"),
                 (assign, ":reward_troop_level", 0),
                 (try_for_range, ":stack", 1, ":num_stacks"), #start at 1 to skip the leader
