@@ -8477,18 +8477,28 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 #Retainers Begin
 [anyone,"lord_leave", [
-    (troop_get_slot, ":friendship_reward", "$g_talk_troop", slot_troop_friendship_reward),
-    (gt, ":friendship_reward", 0),
-    (troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward, 0),
+    (troop_slot_eq, "$g_talk_troop", slot_troop_friendship_reward, friendship_reward_troops),
+    (troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward, friendship_reward_none),
+    (call_script, "script_troop_get_player_relation", "$g_talk_troop"),
+    (assign, ":player_relation", reg0),
     (call_script, "script_lord_reward_troops", "$g_talk_troop"),
-    (str_store_troop_name, s24, reg40),
+    (store_sub, reg42, reg41, 1),
+
+    (try_begin),
+        (ge, ":player_relation", 70),
+        (str_store_string,s23,"@Before you leave, know that you have always a been good friend to me."),
+    (else_try),
+        (str_store_string,s23,"@Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend."),
+    (try_end),
+
+    (str_store_troop_name_by_count, s24, reg40),
+
     #TODO: Ren - Add additional friendship rewards. Maybe. Some of this may also need to be moved to a script if it's reused elsewhere (such as after a battle)
-    #Also should adjust text to handle singular vs plural, and maybe good vs evil
-    ], "Before you leave, you have always a been good friend to me. Allow me to repay you by giving you some troops. I have {reg41} {s24} that are prepared to join you.", "lord_offer_troops",[]],
+    #Also text could be adjusted for good vs evil
+    ], "{s23} Allow me to repay you by giving you some troops. I have {reg41} {s24} who {reg42?is:are} prepared to join you.", "lord_offer_troops",[]],
 
     #TODO: Ren - Adjust player resposnes to account for party being full
     [anyone|plyr,"lord_offer_troops", [], "I will gladly accept them into my party", "close_window",[
-        (party_remove_members, "$g_talk_troop_party", reg40, reg41),
         (party_add_members, "p_main_party", reg40, reg41),
         (call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1)
     ]],

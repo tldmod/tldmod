@@ -906,13 +906,6 @@ slot_troop_shop_aval_itp_itp_type_hand_armor     = slot_troop_shop_aval_itp_coun
 #      hardcoded callback scripts such as <game_get_upgrade_cost>
 slot_troop_forbid_companion_upgrade_mode = 139
 
-#Retainers Begin
-
-slot_troop_retainer_troop = 154 #What type of troop (if any) a lord uses as their personal retainers
-slot_troop_friendship_reward = 155 #Lord wants to give the player a gift (may store *type* of gift in the future)
-
-#Retainers End
-
 # TRAIT SLOTS (=troop slots)
 tld_first_trait_string = "str_trait_title_elf_friend"
 
@@ -2797,3 +2790,14 @@ player_control_allies_inf = 3
 
 # Troll Hiring Constants
 slot_troop_troll_armoured_variant = 164 #Gets the armoured variant of a troll troop.
+
+#Retainers Begin
+
+slot_troop_retainer_troop = 165 #What type of troop (if any) a lord uses as their personal retainers
+slot_troop_friendship_reward = 166 #Lord wants to give the player a gift (may store *type* of gift in the future)
+slot_troop_friendship_roll = 167 #Stores a friendship roll ahead of time so it can't be cheesed by saving before quest turn in
+
+friendship_reward_none = 0
+friendship_reward_troops = 1
+
+#Retainers End

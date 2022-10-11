@@ -10911,6 +10911,14 @@ scripts = [
       (else_try),
         #(val_div, ":quest_importance", 4),
         (val_max, ":quest_importance", 1),
+
+        #Retainers Begin
+        #Give a chance for a friendship reward from friendly lords
+        (try_begin),
+            (is_between, ":quest_giver", kingdom_heroes_begin, kingdom_heroes_end),
+            (call_script, "script_cf_lord_friendship_reward", ":quest_giver"),
+        (try_end),
+        #Retainers End
       (try_end),
       
       (try_begin),
@@ -10918,10 +10926,6 @@ scripts = [
         (call_script, "script_change_player_relation_with_center", ":quest_giver_center", ":quest_importance"),
       (else_try),
         (call_script, "script_change_player_relation_with_troop", ":quest_giver", ":quest_importance"),
-        #Retainers Begin
-        #Give a chance for a friendship reward
-        (call_script, "script_cf_lord_friendship_reward", ":quest_giver"),
-        #Retainers End
       (try_end),
       
 	  #InVain: Bonus quest XP from intelligence
@@ -16150,6 +16154,11 @@ scripts = [
      (try_begin),
        (is_between, ":giver_troop_no", kingdom_heroes_begin, kingdom_heroes_end),
        (str_store_troop_name_link, s62, ":giver_troop_no"),
+       #Retainers Begin
+       #Store friendship reward roll ahead of time so it can't be cheesed by saving and reloading right before quest turn in
+       (store_random_in_range, ":random", 0, 100),
+       (troop_set_slot, ":giver_troop_no", slot_troop_friendship_roll, ":random"),
+       #Retainers End
      (else_try),
        (str_store_troop_name, s62, ":giver_troop_no"),
      (try_end),
@@ -31474,25 +31483,26 @@ if is_a_wb_script==1:
             (assign, ":player_relation", reg0),
             #Must have at least 20 relation to get friendship reward
             (ge, ":player_relation", 20),
-            (store_random_in_range, ":random", 0, 100),
+            (troop_get_slot, ":random", ":troop_no", slot_troop_friendship_roll),
             (le, ":random", ":player_relation"),
             #TODO: Ren - Add a "cooldown" to friendship rewards so lords only give them every X days
-            (troop_set_slot, ":troop_no", slot_troop_friendship_reward, 1), #In the future different values could be used for different types of gifts
+            (troop_set_slot, ":troop_no", slot_troop_friendship_reward, friendship_reward_troops), #In the future different values could be used for different types of gifts
         ]),
 
 
     # Determines the type and number of troops a lord would like to award the player
-    # #script_cf_lord_friendship_reward
+    # #script_lord_reward_troops
     # # INPUT: troop_no
     # # OUTPUT: reward_troop, troop_count
     ("lord_reward_troops",
         [
             (store_script_param, ":troop_no", 1),
+            #Determine number of troops
             (call_script, "script_troop_get_player_relation", ":troop_no"),
             (assign, ":player_relation", reg0),
             (assign, ":troop_count", ":player_relation"),
-            (val_div, ":troop_count", 20),
-            (val_min, ":troop_count", 1), #Shouldn't be necessary as the player needs 20 relation to even get a reward, but just in case
+            (val_div, ":troop_count", 20), #1-5 based on relation
+            (val_max, ":troop_count", 1), #Shouldn't be necessary as the player needs 20 relation to even get a reward, but just in case
             (assign, ":reward_troop", -1),
             (troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
 
@@ -31500,39 +31510,49 @@ if is_a_wb_script==1:
                 #See if lord has retainer troops first
                 (troop_get_slot, ":reward_troop", ":troop_no", slot_troop_retainer_troop),
                 (gt, ":reward_troop", 0),
-                (party_count_companions_of_type, ":stack_size", ":party", ":reward_troop"),
-                (gt, ":stack_size", 0),
+                (display_message, "@DEBUG: Has retainer"),
+
             (else_try),
                 #If no retainer then choose the highest level troop from the lord's party, prioritizing appropriate subfaction troops
-                (troop_get_slot, ":hero_subfac", ":troop_no", slot_troop_subfaction),
+                (store_troop_faction, ":hero_fac", ":troop_no"),
+	        	(party_get_slot, ":hero_subfac", ":party", slot_party_subfaction),
+
+                (assign, reg0, ":hero_subfac"),
+                (display_message, "@Hero Subfaction {reg0}"),
                 (party_get_num_companion_stacks, ":num_stacks", ":party"),
                 (assign, ":reward_troop_level", 0),
                 (try_for_range, ":stack", 1, ":num_stacks"), #start at 1 to skip the leader
                     (party_stack_get_troop_id, ":stack_troop", ":party", ":stack"),
                     (store_character_level, ":troop_level", ":stack_troop"),
 
-                    (assign, ":preferred_troop", 0),
-                    (try_begin),
-                        #If this troop is higher level it is preferred
-                        (ge, ":troop_level", ":reward_troop_level"),
-                        (assign, ":preferred_troop", 1),
-                    (else_try),
-                        #If they are equal level break ties by checking subfaction
-                        (eq, ":troop_level", ":reward_troop_level"),
-                        (troop_get_slot, ":troop_subfac", ":stack_troop", slot_troop_subfaction),
-                        (eq, ":troop_subfac", ":hero_subfac"),
-                        (assign, ":preferred_troop", 1),
-                        #A side effect of this is that lords that don't belong to a sub faction will prefer not to give away subfaction troops
-                        #But maybe that's better
-                    (try_end),
+                    #See if this troop is higher level than the current best
+                    (ge, ":troop_level", ":reward_troop_level"),
+                    
+                    #Only give faction appropriate troops
+                    (store_troop_faction, ":troop_fac", ":stack_troop"),
+                    (eq, ":troop_fac", ":hero_fac"),
+                    
+                    #If lord has a subfaction they will only give subfaction troops
+                    (troop_get_slot, ":troop_subfac", ":stack_troop", slot_troop_subfaction),
+                    (this_or_next|eq, ":troop_subfac", ":hero_subfac"),
+                    (eq, ":hero_subfac", 0),
 
-                    (eq, ":preferred_troop", 1),
+                    #Don't give free trolls
+                    (troop_get_type, ":type", ":reward_troop"),
+                    (neq, ":type", tf_troll),
+
                     (assign, ":reward_troop_level", ":troop_level"),
                     (assign, ":reward_troop", ":stack_troop"),
                 (try_end),
-                (party_count_companions_of_type, ":stack_size", ":party", ":reward_troop"),
             (try_end),
-            (val_max, ":troop_count", ":stack_size"), #Don't give away more than we have
+
+            (try_begin),
+                #Give extra orcs
+                (troop_get_type, ":type", ":reward_troop"),
+                (eq, ":type", tf_orc),
+                (val_mul, ":troop_count", 3),
+            (try_end),
+
             (assign, reg40, ":reward_troop"),
             (assign, reg41, ":troop_count"),
         ]),
