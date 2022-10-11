@@ -31510,8 +31510,6 @@ if is_a_wb_script==1:
                 #See if lord has retainer troops first
                 (troop_get_slot, ":reward_troop", ":troop_no", slot_troop_retainer_troop),
                 (gt, ":reward_troop", 0),
-                (display_message, "@DEBUG: Has retainer"),
-
             (else_try),
                 #If no retainer then choose the highest level troop from the lord's party, prioritizing appropriate subfaction troops
                 (store_troop_faction, ":hero_fac", ":troop_no"),
