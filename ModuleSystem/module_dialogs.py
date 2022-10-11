@@ -8491,13 +8491,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         (str_store_string,s23,"@Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend."),
     (try_end),
 
-    (str_store_troop_name_by_count, s24, reg40),
+    (str_store_troop_name_by_count, s24, reg40, reg41),
 
     #TODO: Ren - Add additional friendship rewards. Maybe. Some of this may also need to be moved to a script if it's reused elsewhere (such as after a battle)
     #Also text could be adjusted for good vs evil
     ], "{s23} Allow me to repay you by giving you some troops. I have {reg41} {s24} who {reg42?is:are} prepared to join you.", "lord_offer_troops",[]],
 
-    #TODO: Ren - Adjust player resposnes to account for party being full
     [anyone|plyr,"lord_offer_troops", [
         (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
         (gt, ":free_capacity", 0), #skip this option if the player has no room

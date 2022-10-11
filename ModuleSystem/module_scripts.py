@@ -31517,8 +31517,19 @@ if is_a_wb_script==1:
 
                 (party_get_num_companion_stacks, ":num_stacks", ":party"),
                 (assign, ":reward_troop_level", 0),
+
                 (try_for_range, ":stack", 1, ":num_stacks"), #start at 1 to skip the leader
+                    #Copy all of the lord's troops to an array for shuffling
+                    #This prevents them from always giving out the same troop if they have multiple top tier troops
                     (party_stack_get_troop_id, ":stack_troop", ":party", ":stack"),
+                    (troop_set_slot, "trp_temp_array_a", ":stack", ":stack_troop"),
+                (try_end),
+                
+                (call_script, "script_shuffle_troop_slots", "trp_temp_array_a", 1, ":num_stacks"),
+
+
+                (try_for_range, ":stack", 1, ":num_stacks"), #start at 1 to skip the leader
+                    (troop_get_slot, ":stack_troop", "trp_temp_array_a", ":stack"),
                     (store_character_level, ":troop_level", ":stack_troop"),
 
                     #See if this troop is higher level than the current best
