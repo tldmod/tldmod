@@ -3972,6 +3972,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 ##### TODO: QUESTS COMMENT OUT BEGIN
 [anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Increase Relation", "lord_pretalk",[(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),]],
+#Retainers Begin
+[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Force Friendship Reward", "lord_pretalk",[(troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward, friendship_reward_troops),]],
+[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Roll for Friendship Reward", "lord_pretalk",[(call_script, "script_cf_lord_friendship_reward", "$g_talk_troop"),]],
+#Retainers End
 [anyone|plyr,"lord_talk",[#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
                             (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
                             (check_quest_active,"qst_lend_companion"),
@@ -8474,6 +8478,67 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 #[anyone,"enemy_lord_tell_mission", [(str_store_quest_name, s7, "$random_quest_no")], "ERROR: Enemy lord quest not handled: {s7}.", "close_window", []],
 
 [anyone,"lord_leave_prison", [], "We'll meet again.", "close_window",[(call_script,"script_stand_back"),]],
+
+#Retainers Begin
+[anyone,"lord_leave", [
+    (troop_slot_eq, "$g_talk_troop", slot_troop_friendship_reward, friendship_reward_troops),
+    (troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward, friendship_reward_none),
+    (call_script, "script_troop_get_player_relation", "$g_talk_troop"),
+    (assign, ":player_relation", reg0),
+    (call_script, "script_lord_reward_troops", "$g_talk_troop"),
+    (store_sub, reg42, reg41, 1),
+
+    (try_begin),
+        (eq, "$player_looks_like_an_orc", 1),
+                (try_begin),
+            (ge, ":player_relation", 70),
+            (str_store_string,s23,"@Wait, {playername}. I don't say this often, but you are an exceptionally reliable servant."),
+        (else_try),
+            (str_store_string,s23,"@Halt, {playername}. I once thought you little more than a snaga, but you are proving to be a useful servant."),
+        (try_end),
+        (str_store_string, s24, "@Take these warriors, that your horde might continue to serve me."),
+    (else_try),
+        (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+                (try_begin),
+            (ge, ":player_relation", 70),
+            (str_store_string,s23,"@One last thing, {playername}. In a land filled with backstabbers and rivals, you have always been a true ally."),
+        (else_try),
+            (str_store_string,s23,"@Wait, {playername}. When we met I sensed in you a rival, but I a see now I was mistaken."),
+        (try_end),
+        (str_store_string, s24, "@Take these warriors, and use them to strike down our foes."),
+    (else_try),
+        (try_begin),
+            (ge, ":player_relation", 70),
+            (str_store_string,s23,"@Before you leave, {playername}, know that you have always a been good friend to me."),
+        (else_try),
+            (str_store_string,s23,"@Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend."),
+        (try_end),
+        (str_store_string, s24, "@Allow me to repay you by giving you some troops."),
+    (try_end),
+
+    (str_store_troop_name_by_count, s25, reg40, reg41),
+
+    #TODO: Ren - Add additional friendship rewards. Maybe. Some of this may also need to be moved to a script if it's reused elsewhere (such as after a battle)
+    ], "{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.", "lord_offer_troops",[]],
+
+    [anyone|plyr,"lord_offer_troops", [
+        (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
+        (gt, ":free_capacity", 0), #skip this option if the player has no room
+        (try_begin),
+            (ge, ":free_capacity", reg41),
+            (assign, reg42, 1),
+        (else_try),
+            (assign, reg42, 0),
+            (assign, reg41, ":free_capacity"),
+        (try_end),
+    ], "Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.", "close_window",[
+        (party_add_members, "p_main_party", reg40, reg41),
+        (call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1)
+    ]],
+
+    [anyone|plyr,"lord_offer_troops", [], "I fear I cannot accept them at this time.", "close_window",[(call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1)]],
+
+#Retainers End
 
 [anyone|auto_proceed,"lord_leave", [(lt, "$g_talk_troop_faction_relation", 0)],
 "We'll see about that, {playername}.", "close_window",[(call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1)]],

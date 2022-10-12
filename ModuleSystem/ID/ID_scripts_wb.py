@@ -749,5 +749,8 @@ script_cf_bearform_on_dismount = 747
 script_cf_on_hit_blood = 748
 script_agent_troop_get_banner_mesh = 749
 script_troop_agent_set_banner = 750
+script_assign_retainers = 751
+script_cf_lord_friendship_reward = 752
+script_lord_reward_troops = 753
 
 
