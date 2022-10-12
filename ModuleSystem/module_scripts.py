@@ -31479,14 +31479,22 @@ if is_a_wb_script==1:
     ("cf_lord_friendship_reward",
         [
             (store_script_param, ":troop_no", 1),
+
+            #Check that enough time has passed since last reward
+            (store_current_hours, ":cur_hours"),
+            (troop_get_slot, ":reward_hours", ":troop_no", slot_troop_friendship_reward_hours),
+            (le, ":reward_hours", ":cur_hours"),
+
             (call_script, "script_troop_get_player_relation", ":troop_no"),
             (assign, ":player_relation", reg0),
             #Must have at least 20 relation to get friendship reward
             (ge, ":player_relation", 20),
             (troop_get_slot, ":random", ":troop_no", slot_troop_friendship_roll),
             (le, ":random", ":player_relation"),
-            #TODO: Ren - Add a "cooldown" to friendship rewards so lords only give them every X days
             (troop_set_slot, ":troop_no", slot_troop_friendship_reward, friendship_reward_troops), #In the future different values could be used for different types of gifts
+            
+            (val_add, ":cur_hours", 72), #Only choose to give a reward once per 3 days. Could maybe tweak this with options
+            (troop_set_slot, ":troop_no", slot_troop_friendship_reward_hours, ":cur_hours"), #In the future different values could be used for different types of gifts
         ]),
 
 

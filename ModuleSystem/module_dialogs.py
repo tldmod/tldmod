@@ -3973,7 +3973,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 ##### TODO: QUESTS COMMENT OUT BEGIN
 [anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Increase Relation", "lord_pretalk",[(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),]],
 #Retainers Begin
-[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Get Friendship Reward", "lord_pretalk",[(troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward, friendship_reward_troops),]],
+[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Force Friendship Reward", "lord_pretalk",[(troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward, friendship_reward_troops),]],
+[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Roll for Friendship Reward", "lord_pretalk",[(call_script, "script_cf_lord_friendship_reward", "$g_talk_troop"),]],
 #Retainers End
 [anyone|plyr,"lord_talk",[#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
                             (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
