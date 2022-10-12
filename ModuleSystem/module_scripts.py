@@ -31514,6 +31514,7 @@ if is_a_wb_script==1:
                 #If no retainer then choose the highest level troop from the lord's party, prioritizing appropriate subfaction troops
                 (store_troop_faction, ":hero_fac", ":troop_no"),
 	        	(party_get_slot, ":hero_subfac", ":party", slot_party_subfaction),
+                (troop_get_type, ":hero_type", ":troop_no"),
 
                 (party_get_num_companion_stacks, ":num_stacks", ":party"),
                 (assign, ":reward_troop_level", 0),
@@ -31531,6 +31532,7 @@ if is_a_wb_script==1:
                 (try_for_range, ":stack", 1, ":num_stacks"), #start at 1 to skip the leader
                     (troop_get_slot, ":stack_troop", "trp_temp_array_a", ":stack"),
                     (store_character_level, ":troop_level", ":stack_troop"),
+                    (str_store_troop_name, s24, ":stack_troop"),
 
                     #See if this troop is higher level than the current best
                     (ge, ":troop_level", ":reward_troop_level"),
@@ -31545,8 +31547,30 @@ if is_a_wb_script==1:
                     (eq, ":hero_subfac", 0),
 
                     #Don't give free trolls
-                    (troop_get_type, ":type", ":reward_troop"),
+                    (troop_get_type, ":type", ":stack_troop"),
                     (neq, ":type", tf_troll),
+
+                    (assign, ":race_appropriate", 1),
+                    (try_begin),
+                        #Make sure Imladris heroes give appropriate troops (elves give elves, Halbarad gives Dunedain)
+                        (eq, ":hero_fac", "fac_imladris"),
+                        (neq, ":hero_type", ":type"),
+                        (assign, ":race_appropriate", 0),
+                    (else_try),
+                        #Mordor uruk lords only give uruks
+                        (eq, ":hero_fac", "fac_mordor"),
+                        (eq, ":hero_type", tf_uruk),
+                        (neq, ":type", tf_uruk),
+                        (assign, ":race_appropriate", 0),
+                    (try_end),
+                    (eq, ":race_appropriate", 1),
+
+                    #Don't give standard bearers
+                    (neq, ":stack_troop", "trp_lothlorien_standard_bearer"),
+                    (neq, ":stack_troop", "trp_i5_greenwood_standard_bearer"),
+                    (neq, ":stack_troop", "trp_i6_rivendell_standard_bearer"),
+                    (neq, ":stack_troop", "trp_i5_mordor_uruk_standard_bearer"),
+                    (neq, ":stack_troop", "trp_i5_mordor_uruk_standard_bearer"),
 
                     (assign, ":reward_troop_level", ":troop_level"),
                     (assign, ":reward_troop", ":stack_troop"),

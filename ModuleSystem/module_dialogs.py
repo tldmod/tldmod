@@ -3972,6 +3972,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 ##### TODO: QUESTS COMMENT OUT BEGIN
 [anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Increase Relation", "lord_pretalk",[(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),]],
+#Retainers Begin
+[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Get Friendship Reward", "lord_pretalk",[(troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward, friendship_reward_troops),]],
+#Retainers End
 [anyone|plyr,"lord_talk",[#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
                             (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
                             (check_quest_active,"qst_lend_companion"),
@@ -8495,7 +8498,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
     #TODO: Ren - Add additional friendship rewards. Maybe. Some of this may also need to be moved to a script if it's reused elsewhere (such as after a battle)
     #Also text could be adjusted for good vs evil
-    ], "{s23} Allow me to repay you by giving you some troops. I have {reg41} {s24} who {reg42?is:are} prepared to join you.", "lord_offer_troops",[]],
+    ], "{s23} Allow me to repay you by giving you some troops. I have {reg41} {s24} who {reg42?are:is} prepared to join you.", "lord_offer_troops",[]],
 
     [anyone|plyr,"lord_offer_troops", [
         (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
