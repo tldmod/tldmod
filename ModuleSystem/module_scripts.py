@@ -31501,8 +31501,8 @@ if is_a_wb_script==1:
             (call_script, "script_troop_get_player_relation", ":troop_no"),
             (assign, ":player_relation", reg0),
             (assign, ":troop_count", ":player_relation"),
-            (val_div, ":troop_count", 20), #1-5 based on relation
-            (val_max, ":troop_count", 1), #Shouldn't be necessary as the player needs 20 relation to even get a reward, but just in case
+            (val_div, ":troop_count", 25), #1-4 based on relation
+            (val_max, ":troop_count", 1),
             (assign, ":reward_troop", -1),
             (troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
 
