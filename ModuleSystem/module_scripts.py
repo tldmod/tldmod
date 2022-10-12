@@ -1769,6 +1769,11 @@ scripts = [
 		(party_set_slot, ":center_no", slot_party_food_store, ":food_store_limit"),
 	(try_end),
 
+    #Retainers Begin
+    #Assign retainers before spawning parties
+    (call_script, "script_assign_retainers"),
+    #Retainers End
+
 # spawn some lords in distinct towns, TLD
     ]+[
 	(call_script, "script_create_kingdom_hero_party", lords_spawn[x][0], lords_spawn[x][1]) for x in range(len(lords_spawn)) ]+[  
@@ -3834,6 +3839,7 @@ scripts = [
       (store_script_param, ":extra_text_id", 2),
       (store_script_param, ":item_modifier", 3),
 	  #(item_get_type,":itp", ":item_no"),
+      (item_get_type, ":type", ":item_no"), #Ren: Moved this out of the try block below as it's now use in two places
 
 	  #(item_get_slot, ":light_armor", ":item_no", slot_item_light_armor),
 
@@ -4119,7 +4125,6 @@ scripts = [
         (try_end),
     ] + (is_a_wb_script==1 and [
 	  (else_try),
-	  	(item_get_type, ":type", ":item_no"),
 		(this_or_next|eq, ":type", itp_type_bow),
       	(this_or_next|eq, ":type", itp_type_crossbow),
       	(eq, ":type", itp_type_thrown),
@@ -4128,6 +4133,79 @@ scripts = [
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Range: {reg55}"),(try_end),
 		(set_trigger_result, color_item_text_normal),
 	] or []) + [
+      (try_end),
+
+      #Ren: Check if race restrictions are applicable
+      (try_begin),
+        (eq, ":extra_text_id", 4),
+        #If it's body, head, or foot armor show the race restrictions
+        (this_or_next|eq, ":type", itp_type_body_armor),
+        (eq, ":type", itp_type_foot_armor),
+        (store_item_value, reg30, ":item_no"),
+		(val_mod, reg30,10),
+        (troop_get_type, ":race", "$player_current_troop_type"),
+        (assign, ":can_use", 0), 
+
+        #Base messages on side. Good players don't need to know about orcs or uruks, evil player's don't need to know about elves or dwarves
+        (try_begin),
+            (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+	        (try_begin), 
+				(eq, reg30, 8),
+		        (str_store_string, s2, "@Dwarves"),
+                (try_begin), 
+                    (eq, ":race", tf_dwarf),
+                    (assign, ":can_use", 1), 
+                (try_end),
+            (else_try),
+                #Good is pretty simple since it's either dwarf only, or everyone but dwarf
+		        (str_store_string, s2, "@Humans and Elves"),
+                (try_begin), 
+                    (neq, ":race", tf_dwarf),
+                    (assign, ":can_use", 1), 
+                (try_end),
+            (try_end),
+        (else_try),
+	        (try_begin), 
+				(eq, reg30, 1),
+		        (str_store_string, s2, "@Orcs"),
+                (try_begin), 
+                    (eq, ":race", tf_orc),
+                    (assign, ":can_use", 1), 
+                (try_end),
+            (else_try),
+				(eq, reg30, 2),
+		        (str_store_string, s2, "@Uruks and Uruk-Hai"),
+                (try_begin), 
+                    (this_or_next|eq, ":race", tf_uruk),
+                    (             eq, ":race", tf_urukhai),
+                    (assign, ":can_use", 1), 
+                (try_end),
+            (else_try),
+				(eq, reg30, 3),
+		        (str_store_string, s2, "@Humans, Uruks, and Uruk-Hai"),
+                (try_begin), 
+                    (neq, ":race", tf_orc),
+                    (assign, ":can_use", 1), 
+                (try_end),
+            (else_try),
+		        (str_store_string, s2, "@Humans"),
+				(assign, ":can_use", 1), 
+                (try_begin), 
+                    (this_or_next|eq, ":race", tf_orc),
+                    (this_or_next|eq, ":race", tf_uruk),
+                    (             eq, ":race", tf_urukhai),
+                    (assign, ":can_use", 0), 
+                (try_end),
+            (try_end),
+        (try_end),
+
+        (set_result_string, "@This item can be used by {s2}"),
+        (try_begin),
+            (eq, ":can_use",1),
+		    (set_trigger_result, color_good_news),
+        (else_try),
+		    (set_trigger_result, color_bad_news),
+        (try_end),
       (try_end),
 ]),
 
@@ -10003,6 +10081,25 @@ scripts = [
 		(party_add_members, ":party_no", "trp_i5_isen_uruk_standard_bearer", 2),
       (try_end),
 
+      #Retainers Begin
+      #See if this lord has retainer troops
+      (try_begin),
+        (troop_get_slot, ":retainer_troop", ":troop_no", slot_troop_retainer_troop),
+        (gt, ":retainer_troop", 0),
+		(party_count_members_of_type,":num", ":party_no", ":retainer_troop"),
+        
+        (store_skill_level, ":retainer_limit", skl_leadership, ":troop_no"),
+        (val_mul, ":retainer_limit", 2),
+        (val_add, ":retainer_limit", 5), #up to 25
+        
+        #TODO: Ren - May need to add a multiplier for orc retainers
+
+        (lt, ":num", ":retainer_limit"),
+		(party_add_members, ":party_no", ":retainer_troop", 3),
+
+      (try_end),
+      #Retainers End
+
       (call_script, "script_party_get_ideal_size", ":party_no"),
       (assign, ":ideal_size", reg0),
 #      (display_message, "@DEBUG: Host ideal size: {reg0}", debug_color),
@@ -10814,6 +10911,14 @@ scripts = [
       (else_try),
         #(val_div, ":quest_importance", 4),
         (val_max, ":quest_importance", 1),
+
+        #Retainers Begin
+        #Give a chance for a friendship reward from friendly lords
+        (try_begin),
+            (is_between, ":quest_giver", kingdom_heroes_begin, kingdom_heroes_end),
+            (call_script, "script_cf_lord_friendship_reward", ":quest_giver"),
+        (try_end),
+        #Retainers End
       (try_end),
       
       (try_begin),
@@ -16055,6 +16160,11 @@ scripts = [
      (try_begin),
        (is_between, ":giver_troop_no", kingdom_heroes_begin, kingdom_heroes_end),
        (str_store_troop_name_link, s62, ":giver_troop_no"),
+       #Retainers Begin
+       #Store friendship reward roll ahead of time so it can't be cheesed by saving and reloading right before quest turn in
+       (store_random_in_range, ":random", 0, 100),
+       (troop_set_slot, ":giver_troop_no", slot_troop_friendship_roll, ":random"),
+       #Retainers End
      (else_try),
        (str_store_troop_name, s62, ":giver_troop_no"),
      (try_end),
@@ -25233,6 +25343,14 @@ command_cursor_scripts = [
         (try_end),
         (assign, "$savegame_version", 30),
 	(try_end),	
+
+    #Retainers Begin
+    (try_begin), #Renmauzuo - 9 Oct 2022, assign retainer troops to lords
+        (le, "$savegame_version", 30),
+        (call_script, "script_assign_retainers"),
+        (assign, "$savegame_version", 31),
+	(try_end),
+    #Retainers End
 ]),
 
 #Kham
@@ -31346,5 +31464,144 @@ if is_a_wb_script==1:
        (call_script, "script_agent_troop_get_banner_mesh", ":agent_no", ":troop_no"),
        (cur_agent_set_banner_tableau_material, ":tableau_no", reg0),
      ]),
+
+    #Retainers Begin
+    # Assigns all retainers to lords at game start. Put in a separate script so it can also be called in the save game update.
+    # #script_assign_retainers
+    # # INPUT: none
+    # # OUTPUT: none
+    ("assign_retainers",
+        [
+            (troop_set_slot, "trp_gondor_lord", slot_troop_retainer_troop, "trp_steward_guard"), #Steward Guards for Denethor
+            (troop_set_slot, "trp_rohan_lord", slot_troop_retainer_troop, "trp_c6_king_s_man_of_rohan"), #King's Guard for Theoden
+            (troop_set_slot, "trp_knight_1_7", slot_troop_retainer_troop, "trp_a6_ithilien_master_ranger"), #Rangers for Faramir
+        ]),
+
+
+    # Checks if the lord wants to give a gift to the player based on their friendship level
+    # #script_cf_lord_friendship_reward
+    # # INPUT: troop_no
+    # # OUTPUT: none
+    ("cf_lord_friendship_reward",
+        [
+            (store_script_param, ":troop_no", 1),
+
+            #Check that enough time has passed since last reward
+            (store_current_hours, ":cur_hours"),
+            (troop_get_slot, ":reward_hours", ":troop_no", slot_troop_friendship_reward_hours),
+            (le, ":reward_hours", ":cur_hours"),
+
+            (call_script, "script_troop_get_player_relation", ":troop_no"),
+            (assign, ":player_relation", reg0),
+            #Must have at least 20 relation to get friendship reward
+            (ge, ":player_relation", 20),
+            (troop_get_slot, ":random", ":troop_no", slot_troop_friendship_roll),
+            (le, ":random", ":player_relation"),
+            (troop_set_slot, ":troop_no", slot_troop_friendship_reward, friendship_reward_troops), #In the future different values could be used for different types of gifts
+            
+            (val_add, ":cur_hours", 72), #Only choose to give a reward once per 3 days. Could maybe tweak this with options
+            (troop_set_slot, ":troop_no", slot_troop_friendship_reward_hours, ":cur_hours"), #In the future different values could be used for different types of gifts
+        ]),
+
+
+    # Determines the type and number of troops a lord would like to award the player
+    # #script_lord_reward_troops
+    # # INPUT: troop_no
+    # # OUTPUT: reward_troop, troop_count
+    ("lord_reward_troops",
+        [
+            (store_script_param, ":troop_no", 1),
+            #Determine number of troops
+            (call_script, "script_troop_get_player_relation", ":troop_no"),
+            (assign, ":player_relation", reg0),
+            (assign, ":troop_count", ":player_relation"),
+            (val_div, ":troop_count", 25), #1-4 based on relation
+            (val_max, ":troop_count", 1),
+            (assign, ":reward_troop", -1),
+            (troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
+
+            (try_begin),
+                #See if lord has retainer troops first
+                (troop_get_slot, ":reward_troop", ":troop_no", slot_troop_retainer_troop),
+                (gt, ":reward_troop", 0),
+            (else_try),
+                #If no retainer then choose the highest level troop from the lord's party, prioritizing appropriate subfaction troops
+                (store_troop_faction, ":hero_fac", ":troop_no"),
+	        	(party_get_slot, ":hero_subfac", ":party", slot_party_subfaction),
+                (troop_get_type, ":hero_type", ":troop_no"),
+
+                (party_get_num_companion_stacks, ":num_stacks", ":party"),
+                (assign, ":reward_troop_level", 0),
+
+                (try_for_range, ":stack", 1, ":num_stacks"), #start at 1 to skip the leader
+                    #Copy all of the lord's troops to an array for shuffling
+                    #This prevents them from always giving out the same troop if they have multiple top tier troops
+                    (party_stack_get_troop_id, ":stack_troop", ":party", ":stack"),
+                    (troop_set_slot, "trp_temp_array_a", ":stack", ":stack_troop"),
+                (try_end),
+                
+                (call_script, "script_shuffle_troop_slots", "trp_temp_array_a", 1, ":num_stacks"),
+
+
+                (try_for_range, ":stack", 1, ":num_stacks"), #start at 1 to skip the leader
+                    (troop_get_slot, ":stack_troop", "trp_temp_array_a", ":stack"),
+                    (store_character_level, ":troop_level", ":stack_troop"),
+                    (str_store_troop_name, s24, ":stack_troop"),
+
+                    #See if this troop is higher level than the current best
+                    (ge, ":troop_level", ":reward_troop_level"),
+                    
+                    #Only give faction appropriate troops
+                    (store_troop_faction, ":troop_fac", ":stack_troop"),
+                    (eq, ":troop_fac", ":hero_fac"),
+                    
+                    #If lord has a subfaction they will only give subfaction troops
+                    (troop_get_slot, ":troop_subfac", ":stack_troop", slot_troop_subfaction),
+                    (this_or_next|eq, ":troop_subfac", ":hero_subfac"),
+                    (eq, ":hero_subfac", 0),
+
+                    #Don't give free trolls
+                    (troop_get_type, ":type", ":stack_troop"),
+                    (neq, ":type", tf_troll),
+
+                    (assign, ":race_appropriate", 1),
+                    (try_begin),
+                        #Make sure Imladris heroes give appropriate troops (elves give elves, Halbarad gives Dunedain)
+                        (eq, ":hero_fac", "fac_imladris"),
+                        (neq, ":hero_type", ":type"),
+                        (assign, ":race_appropriate", 0),
+                    (else_try),
+                        #Mordor uruk lords only give uruks
+                        (eq, ":hero_fac", "fac_mordor"),
+                        (eq, ":hero_type", tf_uruk),
+                        (neq, ":type", tf_uruk),
+                        (assign, ":race_appropriate", 0),
+                    (try_end),
+                    (eq, ":race_appropriate", 1),
+
+                    #Don't give standard bearers
+                    (neq, ":stack_troop", "trp_lothlorien_standard_bearer"),
+                    (neq, ":stack_troop", "trp_i5_greenwood_standard_bearer"),
+                    (neq, ":stack_troop", "trp_i6_rivendell_standard_bearer"),
+                    (neq, ":stack_troop", "trp_i5_mordor_uruk_standard_bearer"),
+                    (neq, ":stack_troop", "trp_i5_mordor_uruk_standard_bearer"),
+
+                    (assign, ":reward_troop_level", ":troop_level"),
+                    (assign, ":reward_troop", ":stack_troop"),
+                (try_end),
+            (try_end),
+
+            (try_begin),
+                #Give extra orcs
+                (troop_get_type, ":type", ":reward_troop"),
+                (eq, ":type", tf_orc),
+                (val_mul, ":troop_count", 3),
+            (try_end),
+
+            (assign, reg40, ":reward_troop"),
+            (assign, reg41, ":troop_count"),
+        ]),
+    #Retainers End
+
 
 ] or []) 
