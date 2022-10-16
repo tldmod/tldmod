@@ -1,4 +1,4 @@
-1940
+1956
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_487_wb__dev_^_B _rev_487_wb_|_dev_^_Built_2022-10-08_18:31___
+qstr__rev_497_wb__dev_^_B _rev_497_wb_|_dev_^_Built_2022-10-16_15:14___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -278,6 +278,13 @@ qstr_Bonus_to_Strength__P Bonus_to_Strength_(Player_only)
 qstr_Lead_more_Orcs Lead_more_Orcs
 qstr_+{reg1}_to_Party_Mor +{reg1}_to_Party_Morale
 qstr_Range:_{reg55} Range:_{reg55}
+qstr_Dwarves Dwarves
+qstr_Humans_and_Elves Humans_and_Elves
+qstr_Orcs Orcs
+qstr_Uruks_and_Uruk_Hai Uruks_and_Uruk-Hai
+qstr_Humans_Uruks_and_Uru Humans,_Uruks,_and_Uruk-Hai
+qstr_Humans Humans
+qstr_This_item_can_be_use This_item_can_be_used_by_{s2}
 qstr_Do_you_want_to_disem Do_you_want_to_disembark?
 qstr_Move_here Move_here
 qstr_View_notes View_notes
@@ -1760,6 +1767,15 @@ qstr_We_need_to_grind_dow We_need_to_grind_down_our_worthless_enemies,_{playerna
 qstr_{s9}_asked_you_to_el {s9}_asked_you_to_eliminate_{reg1}_{s13}_parties.
 qstr_{s9}_asked_you_to_fr {s9}_asked_you_to_free_{s13}_from_the_menace_of_a_Troll_raging_in_its_outskirts.
 qstr_{reg1}_{s16}_joined_ {reg1}_{s16}_joined_your_party.
+qstr_Wait_{playername}._I Wait,_{playername}._I_don't_say_this_often,_but_you_are_an_exceptionally_reliable_servant.
+qstr_Halt_{playername}._I Halt,_{playername}._I_once_thought_you_little_more_than_a_snaga,_but_you_are_proving_to_be_a_useful_servant.
+qstr_Take_these_warriors_ Take_these_warriors,_that_your_horde_might_continue_to_serve_me.
+qstr_One_last_thing_{play One_last_thing,_{playername}._In_a_land_filled_with_backstabbers_and_rivals,_you_have_always_been_a_true_ally.
+qstr_Wait_{playername}._W Wait,_{playername}._When_we_met_I_sensed_in_you_a_rival,_but_I_a_see_now_I_was_mistaken.
+qstr_Take_these_warriors_a Take_these_warriors,_and_use_them_to_strike_down_our_foes.
+qstr_Before_you_leave_{pl Before_you_leave,_{playername},_know_that_you_have_always_a_been_good_friend_to_me.
+qstr_Wait_{playername}._I_ Wait,_{playername}._I_don't_know_you_half_as_well_as_I_should_like,_but_thus_far_you_have_been_a_good_friend.
+qstr_Allow_me_to_repay_yo Allow_me_to_repay_you_by_giving_you_some_troops.
 qstr_the_Dwarves_so_that_ the_Dwarves,_so_that_if_you_pass_by_Erebor_or_the_Iron_Hills,_you_can_try_to_arm_yourself_with_the_fabled_Dwarven_weaponry
 qstr_Gondor_so_that_if_yo Gondor,_so_that_if_you_pass_by_their_lands,_you_can_try_to_purchase_some_of_their_well-known_armours
 qstr_Rohan_so_that_if_you Rohan,_so_that_if_you_pass_by_their_lands,_you_can_try_to_purchase_some_of_their_fabled_horses
