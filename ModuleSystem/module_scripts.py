@@ -14412,31 +14412,31 @@ scripts = [
        (agent_set_slot, ":cur_agent", slot_agent_walker_type, 1),
        (call_script, "script_set_town_walker_destination", ":cur_agent"),
       
-      (else_try), #guards patrol
-       (agent_get_entry_no, ":entry", ":cur_agent"),
-	   (is_between, ":entry",25,29),
-       (agent_set_slot, ":cur_agent", slot_agent_walker_type, 2),
-       (agent_get_position, pos1, ":cur_agent"),
-       (store_random_in_range, ":i_e_p", 25, 29),#Entry points
-       (agent_set_slot, ":cur_agent", slot_agent_target_entry_point, ":i_e_p"),
-       (call_script, "script_set_town_walker_destination", ":cur_agent"),
+      # (else_try), #guards patrol
+       # (agent_get_entry_no, ":entry", ":cur_agent"),
+	   # (is_between, ":entry",25,29),
+       # (agent_set_slot, ":cur_agent", slot_agent_walker_type, 2),
+       # (agent_get_position, pos1, ":cur_agent"),
+       # (store_random_in_range, ":i_e_p", 25, 29),#Entry points
+       # (agent_set_slot, ":cur_agent", slot_agent_target_entry_point, ":i_e_p"),
+       # (call_script, "script_set_town_walker_destination", ":cur_agent"),
 
-	  ] + (is_a_wb_script==1 and [
-       (try_for_range, ":weapon_slot", 0, 4), #find polearm
-        (agent_get_item_slot, ":item", ":cur_agent", ":weapon_slot"),
-        (gt, ":item", 1),
-        (item_get_type, ":item_type", ":item"),
-        (eq, ":item_type", itp_type_polearm),
-        (agent_set_wielded_item, ":cur_agent", ":item"),
-            # (try_for_range, ":weapon_slot", 0, 4), #don't equip shield yet, lacking proper walk animation
-                # (agent_get_item_slot, ":item", ":cur_agent", ":weapon_slot"),
-                # (gt, ":item", 1),
-                # (item_get_type, ":item_type", ":item"),
-                # (eq, ":item_type", itp_type_shield),
-                # (agent_set_wielded_item, ":cur_agent", ":item"),
-            # (try_end),
-       (try_end),
-      ] or []) + [
+	  # ] + (is_a_wb_script==1 and [
+       # (try_for_range, ":weapon_slot", 0, 4), #find polearm
+        # (agent_get_item_slot, ":item", ":cur_agent", ":weapon_slot"),
+        # (gt, ":item", 1),
+        # (item_get_type, ":item_type", ":item"),
+        # (eq, ":item_type", itp_type_polearm),
+        # (agent_set_wielded_item, ":cur_agent", ":item"),
+            # # (try_for_range, ":weapon_slot", 0, 4), #don't equip shield yet, lacking proper walk animation
+                # # (agent_get_item_slot, ":item", ":cur_agent", ":weapon_slot"),
+                # # (gt, ":item", 1),
+                # # (item_get_type, ":item_type", ":item"),
+                # # (eq, ":item_type", itp_type_shield),
+                # # (agent_set_wielded_item, ":cur_agent", ":item"),
+            # # (try_end),
+       # (try_end),
+      # ] or []) + [
        
      (try_end),
 ]),
@@ -14469,6 +14469,7 @@ scripts = [
        # (is_between, ":entry",25,29), #guards
        (agent_get_slot, ":target_entry_point", ":cur_agent", slot_agent_target_entry_point),
        (ge, ":target_entry_point", 0),
+       (agent_slot_eq, ":cur_agent", slot_agent_walker_type, 1), #civilian walker
        (entry_point_get_position, pos1, ":target_entry_point"),
        (try_begin),
          (lt, ":target_entry_point", town_walker_entries_start),
@@ -14568,12 +14569,13 @@ scripts = [
     [(store_script_param_1, ":agent_no"),	  
 	 (store_random_in_range, ":rand_dest", 1 ,12),
      #(agent_get_entry_no, ":entry", ":agent_no"),
-     (agent_get_slot, ":walker_type", ":agent_no", slot_agent_walker_type),
+     #(agent_get_slot, ":walker_type", ":agent_no", slot_agent_walker_type),
+     #(agent_slot_eq, ":agent_no", slot_agent_walker_type, 1), #only for civilian walker
      (assign, ":is_guard", 0),
        
      (try_begin), #walkers
 	   #(is_between, ":entry",town_walker_entries_start,40),
-       (eq, ":walker_type", 1),
+       #(eq, ":walker_type", 1),
 	
 	    (try_begin),
 			(eq, ":rand_dest", 1),
@@ -14612,22 +14614,22 @@ scripts = [
 			(assign, ":target_entry_point", 10),					
 		(try_end),
         
-     (else_try), #guards
-        (eq, ":walker_type", 2),
-        (assign, ":is_guard", 1),
-	    (try_begin),
-			(le, ":rand_dest", 3),
-			(assign, ":target_entry_point", 25),
-		(else_try),	
-			(le, ":rand_dest", 6),
-			(assign, ":target_entry_point", 26),
-		(else_try),	
-			(le, ":rand_dest", 9),
-			(assign, ":target_entry_point", 27),	
-		(else_try),	
-			(le, ":rand_dest", 12),
-			(assign, ":target_entry_point", 28),	
-		(try_end),
+     # (else_try), #guards
+        # (eq, ":walker_type", 2),
+        # (assign, ":is_guard", 1),
+	    # (try_begin),
+			# (le, ":rand_dest", 3),
+			# (assign, ":target_entry_point", 25),
+		# (else_try),	
+			# (le, ":rand_dest", 6),
+			# (assign, ":target_entry_point", 26),
+		# (else_try),	
+			# (le, ":rand_dest", 9),
+			# (assign, ":target_entry_point", 27),	
+		# (else_try),	
+			# (le, ":rand_dest", 12),
+			# (assign, ":target_entry_point", 28),	
+		# (try_end),
      (try_end),
             
 	      (try_begin),
@@ -31603,5 +31605,49 @@ if is_a_wb_script==1:
        (cur_agent_set_banner_tableau_material, ":tableau_no", reg0),
      ]),
 
+  # #script_town_guard_patrols
+  # # INPUT: scene prop type for spawning guards
+  # # OUTPUT: none
+  ("town_guard_patrols",
+    [
+    (store_script_param, ":prop_type",1),
+    (scene_prop_get_num_instances, ":num_patrols", ":prop_type"),
+    (set_fixed_point_multiplier, 100),
+    (get_player_agent_no, ":player_agent"),
+    
+    (try_for_range, ":count", 0, ":num_patrols"),
+        (scene_prop_get_instance, ":instance_no_source", ":prop_type", ":count"),
+        (prop_instance_get_variation_id_2, ":var2_source", ":instance_no_source"),
+        (gt, ":var2_source", 0),
+        (prop_instance_get_position, pos1, ":instance_no_source"),
+        (assign, ":target_found", 0),
+
+        (scene_prop_get_num_instances, ":num_patrol_targets", "spr_troop_guard_patrol_target_var2"),
+        (try_for_range, ":count_targets", 0, ":num_patrol_targets"),
+            (scene_prop_get_instance, ":instance_no_target", "spr_troop_guard_patrol_target_var2", ":count_targets"),
+            (prop_instance_get_variation_id_2, ":var2_target", ":instance_no_target"),
+            (eq, ":var2_target", ":var2_source"), #patrol target found
+            (assign, ":target_found", 1),
+            (assign, ":num_patrol_targets", 0), #break loop
+            (prop_instance_get_position, pos2, ":instance_no_target"),
+        (try_end),
+
+        (gt, ":target_found", 0),
+
+        (try_for_agents, ":agent_no", pos1, 400),        
+            (agent_slot_eq, ":agent_no", slot_agent_walker_type, 2),
+            (agent_slot_eq, ":agent_no", slot_agent_target_entry_point, ":instance_no_source"),
+            (neq, ":agent_no", ":player_agent"),
+            (agent_set_scripted_destination, ":agent_no", pos2),
+        (try_end),
+
+        (try_for_agents, ":agent_no", pos2, 400),   #send back home     
+            (agent_slot_eq, ":agent_no", slot_agent_walker_type, 2),
+            (neq, ":agent_no", ":player_agent"),
+            (agent_slot_eq, ":agent_no", slot_agent_target_entry_point, ":instance_no_source"), #check home position
+            (agent_set_scripted_destination, ":agent_no", pos1),
+        (try_end),
+    (try_end),
+    ]),
 
 ] or []) 

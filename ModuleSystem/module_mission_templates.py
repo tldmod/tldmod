@@ -1454,7 +1454,21 @@ mission_templates = [ # not used in game
         (agent_fade_out, ":agent_no"),
     (try_end),
       ]),
+
+  ### town patrols (separate triggers, maybe shift the load of the nested prop loops)
+  (15, 0, 0, [], [ 
+    (call_script, "script_town_guard_patrols", "spr_troop_guard"),
+      ]),
+
+  (9, 0, 0, [], [ 
+    (call_script, "script_town_guard_patrols", "spr_troop_archer"),
+      ]),
+      
+  (20, 0, 0, [], [ 
+    (call_script, "script_town_guard_patrols", "spr_troop_rider"),
+      ]),      
   ] or []) + [
+
 
   (10, 0, ti_once, [], [ # Kham - Set Tutorial Message RE: Rumours
       (try_begin),

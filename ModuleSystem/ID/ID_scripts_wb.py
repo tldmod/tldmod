@@ -752,5 +752,6 @@ script_cf_bearform_on_dismount = 750
 script_cf_on_hit_blood = 751
 script_agent_troop_get_banner_mesh = 752
 script_troop_agent_set_banner = 753
+script_town_guard_patrols = 754
 
 

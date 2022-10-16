@@ -1932,6 +1932,12 @@ scene_props = [
 ("troop_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
+    (assign, ":var1", 0),
+    (assign, ":var2", 0),
+    ] + (is_a_wb_sceneprop==1 and [
+    (prop_instance_get_variation_id, ":var1", ":instance_no"),
+    (prop_instance_get_variation_id_2, ":var2", ":instance_no"),
+    ] or []) + [ 
     (set_fixed_point_multiplier, 100),
     (prop_instance_get_scale, pos2, ":instance_no"),
     (position_get_scale_y, ":tier", pos2),
@@ -1939,23 +1945,42 @@ scene_props = [
     (val_div, ":tier", 10),
     (try_begin),
         (ge, ":tier", 1),
-        (try_for_range, ":unused", 0, ":tier"),
-            (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 1), #try secondary upgrade path first - favours spearmen
-            (gt, ":upgrade_troop", 0),
-            (neg|troop_is_guarantee_ranged, ":upgrade_troop"),
-            (neg|troop_is_guarantee_horse, ":upgrade_troop"),
-            (assign, ":troop", ":upgrade_troop"),
-        (else_try), 
-            (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 0),
-            (gt, ":upgrade_troop", 0),
-            (assign, ":troop", ":upgrade_troop"),
-        (try_end),
+        (try_begin),
+            (eq, ":var1", 0),
+            (try_for_range, ":unused", 0, ":tier"),
+                (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 1), #try secondary upgrade path first - favours spearmen
+                (gt, ":upgrade_troop", 0),
+                (neg|troop_is_guarantee_ranged, ":upgrade_troop"),
+                (neg|troop_is_guarantee_horse, ":upgrade_troop"),
+                (assign, ":troop", ":upgrade_troop"),
+            (else_try), 
+                (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 0),
+                (gt, ":upgrade_troop", 0),
+                (assign, ":troop", ":upgrade_troop"),
+            (try_end),
+        (else_try), #secondary update path
+            (try_for_range, ":unused", 0, ":tier"),
+                (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 0),
+                (gt, ":upgrade_troop", 0),
+                (neg|troop_is_guarantee_ranged, ":upgrade_troop"),
+                (neg|troop_is_guarantee_horse, ":upgrade_troop"),
+                (assign, ":troop", ":upgrade_troop"),
+            (else_try), 
+                (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 1),
+                (gt, ":upgrade_troop", 0),
+                (assign, ":troop", ":upgrade_troop"),
+            (try_end),
+         (try_end),
     (try_end),
             
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
     (try_begin),
         (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
         (agent_set_team, reg0, 0),
+        (agent_set_slot, reg0, slot_agent_target_entry_point, ":instance_no"), #home position
+        (agent_set_slot, reg0, slot_agent_walker_type, 2), #patrol
+        (store_random_in_range,reg10,1,3), 
+        (agent_set_speed_limit, reg0, reg10),
         (assign, ":polearm_found", 0),
 
 ] + (is_a_wb_sceneprop==1 and [     
@@ -1967,6 +1992,7 @@ scene_props = [
             #(agent_equip_item, reg0, ":item", 1),
             (agent_set_wielded_item, reg0, ":item"),
             (assign, ":polearm_found", 1),
+                (eq, ":var2", 0), #not a patrol
                 (try_for_range, ":weapon_slot", 0, 4), #find shield
                     (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
                     (gt, ":item", 1),
@@ -1978,6 +2004,7 @@ scene_props = [
     ] or []) + [    
         (try_begin),
             (eq, ":polearm_found", 1),
+            (eq, ":var2", 0), #not a patrol
             (neg|troop_is_guarantee_horse, ":troop"),
             (agent_set_animation, reg0, "anim_stand_townguard_polearm"),
         (else_try),
@@ -1993,7 +2020,7 @@ scene_props = [
     ])]),
 
 ("troop_archer",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
-    (store_trigger_param_1, ":instance_no"),
+    (store_trigger_param_1, ":instance_no"), 
     (party_get_slot, ":troop", "$current_town", slot_town_archer_troop),
     (set_fixed_point_multiplier, 100),
     (prop_instance_get_scale, pos2, ":instance_no"),
@@ -2012,7 +2039,11 @@ scene_props = [
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
     (try_begin),
         (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (agent_set_slot, reg0, slot_agent_target_entry_point, ":instance_no"), #home position
+        (agent_set_slot, reg0, slot_agent_walker_type, 2), #patrol
         (agent_set_team, reg0, 0),
+        (store_random_in_range,reg10,1,3), 
+        (agent_set_speed_limit, reg0, reg10),        
         (assign, ":bow_found", 0),
 
 ] + (is_a_wb_sceneprop==1 and [     
@@ -3672,6 +3703,10 @@ scene_props = [
             
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
     (lt, "$g_encountered_party_2", 0), #don't spawn riders in siege battles
+    (agent_set_slot, reg0, slot_agent_target_entry_point, ":instance_no"), #home position
+    (agent_set_slot, reg0, slot_agent_walker_type, 2), #patrol
+    (store_random_in_range,reg10,5,12), 
+    (agent_set_speed_limit, reg0, reg10),
     (agent_set_team, reg0, 0),
 
 ] + (is_a_wb_sceneprop==1 and [     
@@ -3724,6 +3759,8 @@ scene_props = [
     (agent_set_speed_limit, reg0, 12),
     ])
     ]),
+
+("troop_guard_patrol_target_var2",sokf_invisible,"arrow_helper_blue","0", []),
 
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),
