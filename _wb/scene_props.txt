@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 2026
+ 2027
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -6175,6 +6175,9 @@ spr_troop_messenger 16384 0 arrow_helper_blue 0 1
 
 
 spr_troop_guard_patrol_target_var2 16384 0 arrow_helper_blue 0 0
+
+
+spr_troop_messenger_exit 16384 0 arrow_helper_blue 0 0
 
 
 spr_save_compartibility4 0 0 0 0 0

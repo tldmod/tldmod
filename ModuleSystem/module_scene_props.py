@@ -3762,6 +3762,8 @@ scene_props = [
 
 ("troop_guard_patrol_target_var2",sokf_invisible,"arrow_helper_blue","0", []),
 
+("troop_messenger_exit",sokf_invisible,"arrow_helper_blue","0", []),
+
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),
 ("save_compartibility4",0,"0","0", []),

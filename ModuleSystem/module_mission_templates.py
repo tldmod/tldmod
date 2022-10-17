@@ -1380,15 +1380,17 @@ mission_templates = [ # not used in game
  ] + ((is_a_wb_mt==1) and [
   (20, 0, 0, [], [ # messenger props
         (scene_prop_get_num_instances, ":num_messengers", "spr_troop_messenger"),
+        (scene_prop_get_num_instances, ":num_messenger_exits", "spr_troop_messenger_exit"),
+        (set_fixed_point_multiplier, 100),
+        
         (try_for_range, ":count", 0, ":num_messengers"),
             (scene_prop_get_instance, ":instance_no", "spr_troop_messenger", ":count"),
             
-            (try_begin), #spawn messenger at entry #1, send to destination
+            (try_begin), #spawn messenger at a exit point, send to destination
                 (store_random_in_range, ":chance", 0, 10),
                 (ge, ":chance", 8),
                 (store_faction_of_party, ":faction", "$current_town"),
                 (faction_get_slot, ":troop", ":faction", slot_faction_rider_troop),
-                (set_fixed_point_multiplier, 100),
                 (prop_instance_get_scale, pos2, ":instance_no"),
                 (position_get_scale_y, ":tier", pos2),
                 (val_sub, ":tier", 100),
@@ -1404,7 +1406,10 @@ mission_templates = [ # not used in game
                     (try_end),
                 (try_end),
                         
-                (entry_point_get_position, pos1, 1), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+                (store_random_in_range, ":rand_exit", 0, ":num_messenger_exits"),
+                (scene_prop_get_instance, ":instance_no_target", "spr_troop_messenger_exit", ":rand_exit"),
+                (prop_instance_get_position, pos1, ":instance_no_target"),
+                (set_spawn_position, pos1),  (spawn_agent, ":troop"),
                 (lt, "$g_encountered_party_2", 0), #don't spawn riders in siege battles
                 (agent_set_team, reg0, 0),
                 (agent_set_slot, reg0, slot_agent_walker_type, 3), #messenger  
@@ -1413,17 +1418,20 @@ mission_templates = [ # not used in game
                 (agent_set_scripted_destination, reg0, pos2),
             (try_end),
             
-            #check messenger destination, send them back
-            (set_fixed_point_multiplier, 100),
+            #find a random messenger exit point, send them out
             (prop_instance_get_position, pos1, ":instance_no"),
             (try_for_agents, ":agent_no", pos1, 500),
                 (agent_slot_eq, ":agent_no", slot_agent_walker_type, 3),
                 (store_random_in_range, ":chance", 0, 10),
                 (ge, ":chance", 3),
-                (entry_point_get_position, pos1, 1),
-                (agent_set_scripted_destination, ":agent_no", pos1),
+                (gt, ":num_messenger_exits", 0),
+                (store_random_in_range, ":rand_exit", 0, ":num_messenger_exits"),
+                (scene_prop_get_instance, ":instance_no_target", "spr_troop_messenger_exit", ":rand_exit"),
+                (prop_instance_get_position, pos2, ":instance_no_target"),
+                (agent_set_scripted_destination, ":agent_no", pos2),
                 (agent_set_slot, ":agent_no", slot_agent_is_running_away, 1), #needed for tracking
             (try_end),
+
         (try_end),
       ]),
 
@@ -1442,16 +1450,21 @@ mission_templates = [ # not used in game
       ]),
 
   (3, 0, 0, [], [ #messengers leaving the scene
-    (entry_point_get_position, pos1, 1),
+    #(entry_point_get_position, pos1, 1),
     (set_fixed_point_multiplier, 100),
-    (try_for_agents, ":agent_no", pos1, 600),
-        (agent_slot_eq, ":agent_no", slot_agent_walker_type, 3),
-        (agent_slot_eq, ":agent_no", slot_agent_is_running_away, 1),
-        (agent_start_running_away, ":agent_no"),
-        (this_or_next|eq, "$current_town", "p_town_moria"), #indoor scenes
-        (this_or_next|eq, "$current_town", "p_town_goblin_north_outpost"), 
-        (eq, "$current_town", "p_town_erebor"),
-        (agent_fade_out, ":agent_no"),
+    (scene_prop_get_num_instances, ":num_messenger_exits", "spr_troop_messenger_exit"),
+    (try_for_range, ":count", 0, ":num_messenger_exits"),
+        (scene_prop_get_instance, ":instance_no", "spr_troop_messenger_exit", ":count"),
+        (prop_instance_get_position, pos1, ":instance_no"),
+        (try_for_agents, ":agent_no", pos1, 600),
+            (agent_slot_eq, ":agent_no", slot_agent_walker_type, 3),
+            (agent_slot_eq, ":agent_no", slot_agent_is_running_away, 1),
+            (agent_start_running_away, ":agent_no"),
+            (this_or_next|eq, "$current_town", "p_town_moria"), #indoor scenes
+            (this_or_next|eq, "$current_town", "p_town_goblin_north_outpost"), 
+            (eq, "$current_town", "p_town_erebor"),
+            (agent_fade_out, ":agent_no"),
+        (try_end),
     (try_end),
       ]),
 
