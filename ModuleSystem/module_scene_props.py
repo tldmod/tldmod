@@ -3764,6 +3764,25 @@ scene_props = [
 
 ("troop_messenger_exit",sokf_invisible,"arrow_helper_blue","0", []),
 
+("troop_civilian_walker",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
+    (store_trigger_param_1, ":instance_no"),
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(store_random_in_range, ":rand", 0, 9),
+    (store_add, ":troop_slot", slot_center_walker_1_troop, ":rand"),
+    (party_get_slot, ":troop", "$current_town", ":troop_slot"),
+
+    (spawn_agent, ":troop"),
+    (agent_set_team, reg0, 0),
+    (store_random_in_range, reg6, 0, 100),
+    (agent_set_animation_progress, reg0, reg6),
+    
+    (agent_set_slot, reg0, slot_agent_walker_type, 1), #walker
+    (agent_set_slot, reg0, slot_agent_target_entry_point, ":instance_no"), #store home position
+  
+  ])]),
+
+
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),
 ("save_compartibility4",0,"0","0", []),

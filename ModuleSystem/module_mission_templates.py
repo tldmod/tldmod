@@ -1480,6 +1480,30 @@ mission_templates = [ # not used in game
   (20, 0, 0, [], [ 
     (call_script, "script_town_guard_patrols", "spr_troop_rider"),
       ]),      
+
+    ###walker props    
+  (3, 0, 0, [], [ 
+    (set_fixed_point_multiplier, 100),
+    (get_player_agent_no, ":player_agent"),
+    (scene_prop_get_num_instances, ":num_walker_props", "spr_troop_civilian_walker"),
+    (try_for_range, ":count", 0, ":num_walker_props"),
+        (scene_prop_get_instance, ":instance_no", "spr_troop_civilian_walker", ":count"),
+        (prop_instance_get_position, pos1, ":instance_no"),
+            (try_for_agents, ":agent_no", pos1, 200),
+                (neq, ":agent_no", ":player_agent"),
+                (agent_slot_eq, ":agent_no", slot_agent_walker_type, 1),
+                (store_random_in_range, ":chance", 0, 10),
+                (lt, ":chance", 4),
+                (store_random_in_range, ":rand_target", 0, ":num_walker_props"),
+                (scene_prop_get_instance, ":instance_no_target", "spr_troop_civilian_walker", ":rand_target"),
+                (prop_instance_get_position, pos2, ":instance_no_target"),
+                (agent_set_scripted_destination, ":agent_no", pos2),
+                (store_random_in_range, ":speed", 2, 6), 
+                (agent_set_speed_limit, ":agent_no", ":speed"),
+            (try_end),
+    (try_end),
+      ]),
+
   ] or []) + [
 
 
