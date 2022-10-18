@@ -655,10 +655,10 @@ itemsfile version 2
  itm_free_gondor_auxila_helm Gondor_Light_Helm Gondor_Light_Helm 4  gondor_auxila_helm 134  gondor_auxila_helm2 1  gondor_auxila_helm2 0  gondor_auxila_helm3 704643206  65548 0 400 704643206 1.5 90 20 0 0 9 0 0 0 0 0 0 0
 0
 
- itm_gondor_auxila_helm Gondor_Light_Helm Gondor_Light_Helm 4  gondor_auxila_helm 134  gondor_auxila_helm2 1  gondor_auxila_helm2 0  gondor_auxila_helm3 704643206  65548 0 400 704643206 1.5 90 20 0 0 9 0 0 0 0 0 0 0
+ itm_gondor_auxila_helm Gondor_Light_Helm Gondor_Light_Helm 4  gondor_auxila_helm 134  gondor_auxila_helm2 1  gondor_auxila_helm2 0  gondor_auxila_helm3 704643072  65548 0 400 704643206 1.5 90 20 0 0 9 0 0 0 0 0 0 0
 0
 
- itm_gondorian_archer_helm Gondor_Archer_Helm Gondor_Archer_Helm 4  gondor_bowman_helm 134  gondor_archer_helm 1  gondor_archer_helm 0  gondor_archer_helm2 704643206  65548 0 700 704643206 2 92 27 0 0 11 0 0 0 0 0 0 0
+ itm_gondorian_archer_helm Gondor_Archer_Helm Gondor_Archer_Helm 4  gondor_bowman_helm 134  gondor_archer_helm 1  gondor_archer_helm 0  gondor_archer_helm2 704643072  65548 0 700 704643206 2 92 27 0 0 11 0 0 0 0 0 0 0
 0
 
  itm_tower_archer_helm Tower_Archer_Helm Tower_Archer_Helm 1  gondor_tower_archer_helm 0  65548 0 1100 704643206 2.5 94 31 0 0 12 0 0 0 0 0 0 0
@@ -673,13 +673,13 @@ itemsfile version 2
  itm_gondor_citadel_knight_helm Citadel_Knight_Helm Citadel_Knight_Helm 1  gondor_citadel_knight_helm 0  65548 0 1500 704643206 6 96 39 0 0 16 0 0 0 0 0 0 0
 0
 
- itm_gondor_infantry_helm Gondor_Infantry_Helm Gondor_Infantry_Helm 4  gondor_footman_helm 134  gondor_regular_helm 1  gondor_regular_helm 0  gondor_regular_helm2 704643206  65548 0 1200 704643206 5 93 34 0 0 15 0 0 0 0 0 0 0
+ itm_gondor_infantry_helm Gondor_Infantry_Helm Gondor_Infantry_Helm 4  gondor_footman_helm 134  gondor_regular_helm 1  gondor_regular_helm 0  gondor_regular_helm2 704643072  65548 0 1200 704643206 5 93 34 0 0 15 0 0 0 0 0 0 0
 0
 
- itm_gondor_knight_helm Gondor_Cavalry_Helm Gondor_Cavalry_Helm 4  gondor_squire_helm 0  gondor_knight_helm 1  gondor_knight_helm 0  gondor_knight_helm2 704643206  65548 0 1300 704643206 5 93 35 0 0 15 0 0 0 0 0 0 0
+ itm_gondor_knight_helm Gondor_Cavalry_Helm Gondor_Cavalry_Helm 4  gondor_squire_helm 0  gondor_knight_helm 1  gondor_knight_helm 0  gondor_knight_helm2 704643072  65548 0 1300 704643206 5 93 35 0 0 15 0 0 0 0 0 0 0
 0
 
- itm_gondor_dolamroth_helm Dol_Amroth_Helm Dol_Amroth_Helm 4  gondor_dolamroth_helm_1 134  gondor_dolamroth_helm_2 1  gondor_dolamroth_helm_2 0  gondor_dolamroth_helm_3 704643206  65548 0 1300 704643206 6 93 36 0 0 15 0 0 0 0 0 0 0
+ itm_gondor_dolamroth_helm Dol_Amroth_Helm Dol_Amroth_Helm 4  gondor_dolamroth_helm_1 134  gondor_dolamroth_helm_2 1  gondor_dolamroth_helm_2 0  gondor_dolamroth_helm_3 704643072  65548 0 1300 704643206 6 93 36 0 0 15 0 0 0 0 0 0 0
 0
 
  itm_swan_knight_helm Swan_Knight_Helm Swan_Knight_Helm 1  gondor_dolamroth_knight_helm 0  65548 0 1800 704643206 8 96 42 0 0 18 0 0 0 0 0 0 0
@@ -956,7 +956,7 @@ itemsfile version 2
  itm_lorien_helm_b Lorien_Archer_Helm Lorien_Archer_Helm 1  lorienhelmetarcherhigh 0  65548 0 1800 704643206 3 95 40 0 0 15 0 0 0 0 0 0 0
 0
 
- itm_lorien_helm_c Lorien_Infantry_Helm Lorien_Infantry_Helm 2  lorienhelmetinf_a 0  lorienhelmetinf_b 704643206  65548 0 1900 704643206 4 96 42 0 0 16 0 0 0 0 0 0 0
+ itm_lorien_helm_c Lorien_Infantry_Helm Lorien_Infantry_Helm 3  lorienhelmetinf_a 0  lorienhelmetinf_a 1  lorienhelmetinf_b 704643072  65548 0 1900 704643206 4 96 42 0 0 16 0 0 0 0 0 0 0
 0
 
  itm_free_orc_chain_greaves Orc_Greaves Orc_Greaves 1  orc_chain_greaves_lr 0  65550 0 701 174063750 3 100 0 0 15 0 0 0 0 0 0 0 0
@@ -1055,19 +1055,19 @@ itemsfile version 2
  itm_uruk_ragwrap Uruk_Ragwrap Uruk_Ragwrap 1  uruk_ragwrap_lr 0  65550 0 23 174063750 2 90 0 0 3 0 0 0 0 0 0 0 0
 0
 
- itm_free_isen_orc_helm_c Isengard_Orc_Helm Isengard_Orc_Helm 1  orc_isen_helm_a 0  1073807372 0 400 174063750 3 91 21 0 0 9 0 0 0 0 0 0 0
+ itm_free_isen_orc_helm_a Isengard_Orc_Helm Isengard_Orc_Helm 1  orc_isen_helm_a 0  1073807372 0 400 174063750 3 91 21 0 0 9 0 0 0 0 0 0 0
 0
 
  itm_free_isen_orc_helm_b Isengard_Orc_Helm Isengard_Orc_Helm 1  orc_isen_helm_b 0  1073807372 0 400 174063750 3 91 21 0 0 9 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_helm_a Isengard_Orc_Helm Isengard_Orc_Helm 3  orc_isen_helm_b 0  orc_isen_helm_a 6291590  orc_isen_helm_c 234881024  65548 0 400 174063750 4 91 21 0 0 9 0 0 0 0 0 0 0
+ itm_isen_orc_helm_a Isengard_Orc_Helm Isengard_Orc_Helm 4  orc_isen_helm_b 0  orc_isen_helm_b 1  orc_isen_helm_a 6291590  orc_isen_helm_c 234881024  65548 0 400 174063750 4 91 21 0 0 9 0 0 0 0 0 0 0
 0
 
  itm_free_isen_uruk_helm_a Uruk-Hai_Helm Uruk-Hai_Helm 1  urukhai_helm_a 0  65548 0 600 174063750 5 92 25 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_helm_a Uruk-Hai_Helm Uruk-Hai_Helm 3  urukhai_helm_b 0  urukhai_helm_a 6291590  urukhai_helm_c 234881024  65548 0 700 174063750 5 93 27 0 0 13 0 0 0 0 0 0 0
+ itm_isen_uruk_helm_a Uruk-Hai_Helm Uruk-Hai_Helm 4  urukhai_helm_b 0  urukhai_helm_b 1  urukhai_helm_a 6291590  urukhai_helm_c 234881024  65548 0 700 174063750 5 93 27 0 0 13 0 0 0 0 0 0 0
 0
 
  itm_free_isen_uruk_helm_c Uruk-Hai_Helm Uruk-Hai_Helm 1  urukhai_helm_c 0  65548 0 900 704643206 6 94 30 0 0 14 0 0 0 0 0 0 0
@@ -1076,7 +1076,7 @@ itemsfile version 2
  itm_isen_uruk_helm_d Uruk-Hai_Captain_Helm Uruk-Hai_Captain_Helm 1  urukhai_captainhelm 0  65548 0 1300 704643206 8 95 35 0 0 15 0 0 0 0 0 0 0
 0
 
- itm_isen_uruk_helm_e Uruk-Hai_Tracker_Helm Uruk-Hai_Tracker_Helm 2  urukhai_trackerhelm_a 0  urukhai_trackerhelm_b 234881024  65548 0 500 174063750 2 91 23 0 0 11 0 0 0 0 0 0 0
+ itm_isen_uruk_helm_e Uruk-Hai_Tracker_Helm Uruk-Hai_Tracker_Helm 3  urukhai_trackerhelm_a 0  urukhai_trackerhelm_a 1  urukhai_trackerhelm_b 234881024  65548 0 500 174063750 2 91 23 0 0 11 0 0 0 0 0 0 0
 0
 
  itm_free_isen_uruk_helm_f Uruk-Hai_Tracker_Helm Uruk-Hai_Tracker_Helm 1  urukhai_trackerhelm_b 0  65548 0 600 174063750 2 92 25 0 0 12 0 0 0 0 0 0 0
@@ -1247,25 +1247,25 @@ itemsfile version 2
  itm_angmar_shield Angmar_Shield Angmar_Shield 1  angmar_shield 0  266247 5100273664 3000 0 4 100 0 20 0 3 1600 96 0 40 0 0 1
 0
 
- itm_orc_nosehelm Orc_Nosehelm Orc_Nosehelm 3  orc_helm_nose_b 0  orc_helm_nose_a 6291590  orc_helm_nose_c 234881024  65548 0 200 174063750 2 90 18 0 0 8 0 0 0 0 0 0 0
+ itm_orc_nosehelm Orc_Nosehelm Orc_Nosehelm 4  orc_helm_nose_b 0  orc_helm_nose_b 1  orc_helm_nose_a 6291590  orc_helm_nose_c 234881024  65548 0 200 174063750 2 90 18 0 0 8 0 0 0 0 0 0 0
 0
 
- itm_orc_kettlehelm Orc_Kettlehelm Orc_Kettlehelm 3  orc_helm_kettle_b 0  orc_helm_kettle_a 6291590  orc_helm_kettle_c 234881024  65548 0 500 174063750 3 91 22 0 0 10 0 0 0 0 0 0 0
+ itm_orc_kettlehelm Orc_Kettlehelm Orc_Kettlehelm 4  orc_helm_kettle_b 0  orc_helm_kettle_b 1  orc_helm_kettle_a 6291590  orc_helm_kettle_c 234881024  65548 0 500 174063750 3 91 22 0 0 10 0 0 0 0 0 0 0
 0
 
- itm_orc_buckethelm Orc_Buckethelm Orc_Buckethelm 3  orc_helm_sallet_b 0  orc_helm_sallet_a 6291590  orc_helm_sallet_c 234881024  65548 0 650 174063750 5 92 25 0 0 12 0 0 0 0 0 0 0
+ itm_orc_buckethelm Orc_Buckethelm Orc_Buckethelm 4  orc_helm_sallet_b 0  orc_helm_sallet_b 1  orc_helm_sallet_a 6291590  orc_helm_sallet_c 234881024  65548 0 650 174063750 5 92 25 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_orc_morion Orc_Morion Orc_Morion 3  orc_helm_morion_b 0  orc_helm_morion_a 6291590  orc_helm_morion_c 234881024  65548 0 500 174063750 4 91 23 0 0 11 0 0 0 0 0 0 0
+ itm_orc_morion Orc_Morion Orc_Morion 4  orc_helm_morion_b 0  orc_helm_morion_b 1  orc_helm_morion_a 6291590  orc_helm_morion_c 234881024  65548 0 500 174063750 4 91 23 0 0 11 0 0 0 0 0 0 0
 0
 
- itm_orc_beakhelm Orc_Beakhelm Orc_Beakhelm 4  orc_helm_vulture_b 0  orc_helm_vulture_a 6291590  orc_helm_vulture_c 234881024  orc_helm_crow 131072  65548 0 600 174194822 4 91 24 0 0 11 0 0 0 0 0 0 0
+ itm_orc_beakhelm Orc_Beakhelm Orc_Beakhelm 5  orc_helm_vulture_b 0  orc_helm_vulture_b 1  orc_helm_vulture_a 6291590  orc_helm_vulture_c 234881024  orc_helm_crow 131072  65548 0 600 174194822 4 91 24 0 0 11 0 0 0 0 0 0 0
 0
 
- itm_orc_bughelm Orc_Bughelm Orc_Bughelm 4  orc_helm_bug_b 0  orc_helm_bug_a 6291590  orc_helm_bug_c 234881024  orc_helm_bug_d 131072  65548 0 650 174194822 5 92 25 0 0 12 0 0 0 0 0 0 0
+ itm_orc_bughelm Orc_Bughelm Orc_Bughelm 5  orc_helm_bug_b 0  orc_helm_bug_b 1  orc_helm_bug_a 6291590  orc_helm_bug_c 234881024  orc_helm_bug_d 131072  65548 0 650 174194822 5 92 25 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_orc_visorhelm Orc_Visorhelm Orc_Visorhelm 3  orc_helm_visor_b 0  orc_helm_visor_a 6291590  orc_helm_visor_c 234881024  65548 0 600 174063750 4 91 24 0 0 11 0 0 0 0 0 0 0
+ itm_orc_visorhelm Orc_Visorhelm Orc_Visorhelm 4  orc_helm_visor_b 0  orc_helm_visor_b 1  orc_helm_visor_a 6291590  orc_helm_visor_c 234881024  65548 0 600 174063750 4 91 24 0 0 11 0 0 0 0 0 0 0
 0
 
  itm_free_orc_helm_g oldOrc_Crowhelm oldOrc_Crowhelm 1  orc_helm_crow 0  65548 0 400 174063750 3 100 23 0 0 0 0 0 0 0 0 0 0
@@ -1574,25 +1574,25 @@ itemsfile version 2
  itm_rohan_guard Rohan_Guard_Armor Rohan_Guard_Armor 4  rohan_royal_guard_armor2 134  rohan_royal_guard_armor1 0  rohan_royal_guard_armor1_cape 268435456  rohan_royal_guard_armor1_lordly 704643072  16842765 0 3000 973078662 38 95 0 38 17 20 0 0 0 0 0 0 0
 0
 
- itm_rohan_light_helmet_a Rohan_Light_Helm Rohan_Light_Helm 3  rohan_recruit_helm_a 134  rohan_recruit_helm_b 0  rohan_recruit_helm_c 704643072  65548 0 500 167772294 1.5 100 26 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_light_helmet_a Rohan_Light_Helm Rohan_Light_Helm 4  rohan_recruit_helm_a 134  rohan_recruit_helm_b 1  rohan_recruit_helm_b 0  rohan_recruit_helm_c 704643072  65548 0 500 167772294 1.5 91 26 0 0 9 0 0 0 0 0 0 0
 0
 
- itm_rohan_light_helmet_b Rohan_Light_Helm Rohan_Light_Helm 3  rohan_light_helmet_a 134  rohan_light_helmet_b 0  rohan_light_helmet_b 704643072  65548 0 600 167772294 1.5 100 28 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_light_helmet_b Rohan_Light_Helm Rohan_Light_Helm 4  rohan_light_helmet_a 134  rohan_light_helmet_b 1  rohan_light_helmet_b 0  rohan_light_helmet_b 704643072  65548 0 600 167772294 1.5 92 28 0 0 10 0 0 0 0 0 0 0
 0
 
- itm_rohan_inf_helmet_a Rohan_Eyeguard_Helm Rohan_Eyeguard_Helm 4  rohan_inf_helmet_a 134  rohan_inf_helmet_b 0  rohan_inf_helmet_c 167772160  rohan_captain_helmet 536870912  65548 0 1000 704643206 2 100 33 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_inf_helmet_a Rohan_Eyeguard_Helm Rohan_Eyeguard_Helm 5  rohan_inf_helmet_a 134  rohan_inf_helmet_b 1  rohan_inf_helmet_b 0  rohan_inf_helmet_c 167772160  rohan_captain_helmet 536870912  65548 0 1100 704643206 3 94 33 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_rohan_inf_helmet_b Rohan_Eyeguard_Helm Rohan_Eyeguard_Helm 3  rohan_eye_helm_a 134  rohan_eye_helm_b 0  rohan_eye_helm_c 704643072  65548 0 1000 704643206 2 100 33 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_inf_helmet_b Rohan_Eyeguard_Helm Rohan_Eyeguard_Helm 4  rohan_eye_helm_a 134  rohan_eye_helm_b 1  rohan_eye_helm_b 0  rohan_eye_helm_c 704643072  65548 0 1100 704643206 3 94 33 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_rohan_archer_helmet_a Rohan_Nasal_Helm Rohan_Nasal_Helm 3  rohan_archer_helmet_a 134  rohan_archer_helmet_b 0  rohan_archer_helm_d 704643072  65548 0 900 704643206 2 100 31 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_archer_helmet_a Rohan_Nasal_Helm Rohan_Nasal_Helm 4  rohan_archer_helmet_a 134  rohan_archer_helmet_b 1  rohan_archer_helmet_b 0  rohan_archer_helm_d 704643072  65548 0 1000 704643206 3 93 31 0 0 11 0 0 0 0 0 0 0
 0
 
- itm_rohan_archer_helmet_b Rohan_Nasal_Helm Rohan_Nasal_Helm 3  rohan_nasal_helm_a 134  rohan_nasal_helm_b 0  rohan_nasal_helm_c 704643072  65548 0 900 704643206 3 100 31 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_archer_helmet_b Rohan_Nasal_Helm Rohan_Nasal_Helm 4  rohan_nasal_helm_a 134  rohan_nasal_helm_b 1  rohan_nasal_helm_b 0  rohan_nasal_helm_c 704643072  65548 0 1000 704643206 3 93 31 0 0 11 0 0 0 0 0 0 0
 0
 
- itm_rohan_archer_helmet_c Rohan_Guard_Helm Rohan_Guard_Helm 4  rohan_guard_helm_a 134  rohan_guard_helm_b 0  rohan_guard_helm_c 167772160  rohan_theoden_helm 536870912  65548 0 1100 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_rohan_archer_helmet_c Rohan_Guard_Helm Rohan_Guard_Helm 5  rohan_guard_helm_a 134  rohan_guard_helm_b 1  rohan_guard_helm_b 0  rohan_guard_helm_c 167772160  rohan_theoden_helm 536870912  65548 0 1200 704643206 5 95 35 0 0 15 0 0 0 0 0 0 0
 0
 
  itm_free_rohan_cav_helmet_a Rohan_Cavalry_Helm Rohan_Cavalry_Helm 3  rohan_light_helmet_a 134  rohan_light_helmet_b 0  rohan_light_helmet_b 167772160  12 0 1300 167772294 2 100 34 0 0 0 0 0 0 0 0 0 0
@@ -1713,16 +1713,16 @@ itemsfile version 2
  itm_mirkwood_spear_shield_c Woodelf_Round_Shield Woodelf_Round_Shield 1  mirkwood_royal_round 0  327687 5100273664 700 771751936 2 94 0 18 0 2 300 93 0 40 0 0 0
 0
 
- itm_mirkwood_helm_a Woodelf_Archer_Helm Woodelf_Archer_Helm 3  mirkwood_helm_a 134  mirkwood_helm_b 0  mirkwood_helm_c 167772160  65548 0 600 167772294 1 92 25 0 0 0 0 0 0 0 0 0 0
+ itm_mirkwood_helm_a Woodelf_Archer_Helm Woodelf_Archer_Helm 4  mirkwood_helm_a 134  mirkwood_helm_b 1  mirkwood_helm_b 0  mirkwood_helm_c 167772160  65548 0 600 167772294 1 92 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_b Greenwood_Helm Greenwood_Helm 3  mirkwoodnormalspearman_a_light 134  mirkwoodnormalspearman_a 0  mirkwoodnormalspearman_b 167772160  65548 0 900 167772294 1 93 30 0 0 10 0 0 0 0 0 0 0
+ itm_mirkwood_helm_b Greenwood_Helm Greenwood_Helm 4  mirkwoodnormalspearman_a_light 134  mirkwoodnormalspearman_a 1  mirkwoodnormalspearman_a 0  mirkwoodnormalspearman_b 167772160  65548 0 900 167772294 1 93 30 0 0 10 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_c Greenwood_Heavy_Helm Greenwood_Heavy_Helm 3  mirkwoodroyalspearman_a_light 134  mirkwoodroyalspearman_a 0  mirkwoodroyalspearman_b 167772160  65548 0 1200 167772294 2 94 34 0 0 12 0 0 0 0 0 0 0
+ itm_mirkwood_helm_c Greenwood_Heavy_Helm Greenwood_Heavy_Helm 4  mirkwoodroyalspearman_a_light 134  mirkwoodroyalspearman_a 1  mirkwoodroyalspearman_a 0  mirkwoodroyalspearman_b 167772160  65548 0 1200 167772294 2 94 34 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_d Greenwood_Royal_Helm Greenwood_Royal_Helm 2  mirkwoodroyalarcher_a 0  mirkwoodroyalarcher_a 167772160  65548 0 1300 704643072 3 95 36 0 0 13 0 0 0 0 0 0 0
+ itm_mirkwood_helm_d Greenwood_Royal_Helm Greenwood_Royal_Helm 3  mirkwoodroyalarcher_a 1  mirkwoodroyalarcher_a 0  mirkwoodroyalarcher_b 167772160  65548 0 1300 704643072 3 95 36 0 0 13 0 0 0 0 0 0 0
 0
 
  itm_woodelf_leather_boots Woodelf_Leather_Boots Woodelf_Leather_Boots 2  TLDO_elf_boots 0  TLDO_mirkwood_boots 167772160  65550 0 550 167772294 1 90 0 0 16 0 0 0 0 0 0 0 0
@@ -1911,31 +1911,31 @@ itemsfile version 2
  itm_free_khand_helmet_d1 Khand_Masked_Helm Khand_Masked_Helm 1  khand_inf_helm_d4 0  65548 0 1200 704643206 3.5 100 38 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_inf_helm_a Khand_Helm Khand_Helm 3  khand_inf_helm_a1 134  khand_inf_helm_a2 0  khand_inf_helm_a3 167772160  65548 0 800 167772294 3 92 28 0 0 13 0 0 0 0 0 0 0
+ itm_khand_inf_helm_a Khand_Helm Khand_Helm 4  khand_inf_helm_a1 134  khand_inf_helm_a2 1  khand_inf_helm_a2 0  khand_inf_helm_a3 167772160  65548 0 800 167772294 3 92 28 0 0 13 0 0 0 0 0 0 0
 0
 
- itm_khand_inf_helm_b Khand_Helm Khand_Helm 3  khand_inf_helm_b1 134  khand_inf_helm_b2 0  khand_inf_helm_b3 167772160  65548 0 850 167772294 3 93 29 0 0 14 0 0 0 0 0 0 0
+ itm_khand_inf_helm_b Khand_Helm Khand_Helm 4  khand_inf_helm_b1 134  khand_inf_helm_b2 1  khand_inf_helm_b2 0  khand_inf_helm_b3 167772160  65548 0 850 167772294 3 93 29 0 0 14 0 0 0 0 0 0 0
 0
 
- itm_khand_inf_helm_c1 Khand_Bowl_Helm Khand_Bowl_Helm 3  khand_inf_helm_c1a 134  khand_inf_helm_c1b 0  khand_inf_helm_c1c 167772160  65548 0 1000 167772294 4 94 31 0 0 16 0 0 0 0 0 0 0
+ itm_khand_inf_helm_c1 Khand_Bowl_Helm Khand_Bowl_Helm 4  khand_inf_helm_c1a 134  khand_inf_helm_c1b 1  khand_inf_helm_c1b 0  khand_inf_helm_c1c 167772160  65548 0 1000 167772294 4 94 31 0 0 16 0 0 0 0 0 0 0
 0
 
- itm_khand_inf_helm_c2 Khand_Bowl_Helm Khand_Bowl_Helm 3  khand_inf_helm_c2a 134  khand_inf_helm_c2b 0  khand_inf_helm_c2c 167772160  65548 0 1000 167772294 4 94 31 0 0 16 0 0 0 0 0 0 0
+ itm_khand_inf_helm_c2 Khand_Bowl_Helm Khand_Bowl_Helm 4  khand_inf_helm_c2a 134  khand_inf_helm_c2b 1  khand_inf_helm_c2b 0  khand_inf_helm_c2c 167772160  65548 0 1000 167772294 4 94 31 0 0 16 0 0 0 0 0 0 0
 0
 
- itm_khand_inf_helm_d Khand_Cone_Helm Khand_Cone_Helm 3  khand_inf_helm_d1 134  khand_inf_helm_d2 0  khand_inf_helm_d4 167772160  65548 0 1200 167772294 5 95 34 0 0 17 0 0 0 0 0 0 0
+ itm_khand_inf_helm_d Khand_Cone_Helm Khand_Cone_Helm 4  khand_inf_helm_d1 134  khand_inf_helm_d2 1  khand_inf_helm_d2 0  khand_inf_helm_d4 167772160  65548 0 1200 167772294 5 95 34 0 0 17 0 0 0 0 0 0 0
 0
 
- itm_khand_cav_helm_a Khand_Rider_Helm Khand_Rider_Helm 3  khand_cav_helm_a1 134  khand_cav_helm_a2 0  khand_cav_helm_a3 167772160  65548 0 1100 704643206 5 94 33 0 0 16 0 0 0 0 0 0 0
+ itm_khand_cav_helm_a Khand_Rider_Helm Khand_Rider_Helm 4  khand_cav_helm_a1 134  khand_cav_helm_a2 1  khand_cav_helm_a2 0  khand_cav_helm_a3 167772160  65548 0 1100 704643206 5 94 33 0 0 16 0 0 0 0 0 0 0
 0
 
- itm_khand_cav_helm_b Khand_Rider_Helm Khand_Rider_Helm 2  khand_cav_helm_b 0  khand_cav_helm_b2 167772160  65548 0 1100 167772294 5 94 33 0 0 16 0 0 0 0 0 0 0
+ itm_khand_cav_helm_b Khand_Rider_Helm Khand_Rider_Helm 3  khand_cav_helm_b 1  khand_cav_helm_b 0  khand_cav_helm_b2 167772160  65548 0 1100 167772294 5 94 33 0 0 16 0 0 0 0 0 0 0
 0
 
- itm_khand_cav_helm_c Khand_Decorated_Helm Khand_Decorated_Helm 2  khand_cav_helm_c 0  khand_cav_helm_c3 167772160  65548 0 1600 704643072 9 97 40 0 0 20 0 0 0 0 0 0 0
+ itm_khand_cav_helm_c Khand_Decorated_Helm Khand_Decorated_Helm 3  khand_cav_helm_c 1  khand_cav_helm_c 0  khand_cav_helm_c3 167772160  65548 0 1600 704643072 9 97 40 0 0 20 0 0 0 0 0 0 0
 0
 
- itm_khand_helm_mask Khand_Mask Khand_Mask 2  Khand_Helmet_Mask2 0  Khand_Helmet_Mask1 167772160  16842764 0 100 167772294 0.5 91 20 0 0 0 0 0 0 0 0 0 0
+ itm_khand_helm_mask Khand_Mask Khand_Mask 3  Khand_Helmet_Mask2 1  Khand_Helmet_Mask2 0  Khand_Helmet_Mask1 167772160  16842764 0 100 167772294 0.5 91 20 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_khand_light Khand_Kilt Khand_Kilt 3  khand_light_a 134  khand_light_b 0  khand_light_c 167772160  16842765 0 40 167772294 2 100 0 10 8 0 0 0 0 0 0 0 0
@@ -2074,22 +2074,22 @@ itemsfile version 2
  itm_free_rhun_helm_horde Rhun_Horde_Helm Rhun_Horde_Helm 3  RhunHelmHorde1_new 134  RhunHelmHorde2 0  RhunHelmHorde3 167772160  65548 0 800 167772294 4 92 28 0 0 13 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_chieftain Rhun_Chieftain_Helm Rhun_Chieftain_Helm 2  RhunHelmDeathDealer1 0  RhunHelmDeathDealer2 704643206  65548 0 1600 704643072 8 97 40 0 0 20 0 0 0 0 0 0 0
+ itm_rhun_helm_chieftain Rhun_Chieftain_Helm Rhun_Chieftain_Helm 3  RhunHelmDeathDealer1 1  RhunHelmDeathDealer1 0  RhunHelmDeathDealer2 704643072  65548 0 1600 704643072 8 97 40 0 0 20 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_pot Rhun_Pot_Helm Rhun_Pot_Helm 3  RhunHelmPot1 134  RhunHelmPot2 0  RhunHelmPot3 167772160  65548 0 1200 704643206 6 95 34 0 0 15 0 0 0 0 0 0 0
+ itm_rhun_helm_pot Rhun_Pot_Helm Rhun_Pot_Helm 4  RhunHelmPot1 134  RhunHelmPot2 1  RhunHelmPot2 0  RhunHelmPot3 167772160  65548 0 1200 704643206 6 95 34 0 0 15 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_barbed Rhun_Barbed_Helm Rhun_Barbed_Helm 3  RhunHelmConical0 134  RhunHelmConical1 0  RhunHelmConical2 167772160  65548 0 600 167772294 2 91 25 0 0 12 0 0 0 0 0 0 0
+ itm_rhun_helm_barbed Rhun_Barbed_Helm Rhun_Barbed_Helm 4  RhunHelmConical0 134  RhunHelmConical1 1  RhunHelmConical1 0  RhunHelmConical2 167772160  65548 0 600 167772294 2 91 25 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_round Rhun_Round_Helm Rhun_Round_Helm 3  RhunHelmRound0 134  RhunHelmRound1 0  RhunHelmRound2 167772160  65548 0 800 167772294 3 92 28 0 0 13 0 0 0 0 0 0 0
+ itm_rhun_helm_round Rhun_Round_Helm Rhun_Round_Helm 4  RhunHelmRound0 134  RhunHelmRound1 1  RhunHelmRound1 0  RhunHelmRound2 167772160  65548 0 800 167772294 3 92 28 0 0 13 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_horde Rhun_Horde_Helm Rhun_Horde_Helm 4  RhunHelmHorde1_new 134  RhunHelmHorde2 0  RhunHelmHorde2 1  RhunHelmHorde3 167772160  65548 0 800 167772294 4 92 28 0 0 13 0 0 0 0 0 0 0
+ itm_rhun_helm_horde Rhun_Horde_Helm Rhun_Horde_Helm 4  RhunHelmHorde1_new 134  RhunHelmHorde2 1  RhunHelmHorde2 0  RhunHelmHorde3 167772160  65548 0 800 167772294 4 92 28 0 0 13 0 0 0 0 0 0 0
 0
 
- itm_rhun_helm_leather Rhun_Leather_Helm Rhun_Leather_Helm 3  RhunHelmLeather1 134  RhunHelmLeather2 0  RhunHelmLeather3 167772160  65548 0 600 123731968 1.5 91 25 0 0 12 0 0 0 0 0 0 0
+ itm_rhun_helm_leather Rhun_Leather_Helm Rhun_Leather_Helm 4  RhunHelmLeather1 134  RhunHelmLeather2 1  RhunHelmLeather2 0  RhunHelmLeather3 167772160  65548 0 600 123731968 1.5 91 25 0 0 12 0 0 0 0 0 0 0
 0
 
  itm_free_rhun_helm_l Rhun_Chieftain_Helm Rhun_Chieftain_Helm 2  RhunHelmDeathDealer1 0  RhunHelmDeathDealer2 704643206  65548 0 1600 704643206 8 97 40 0 0 20 0 0 0 0 0 0 0
@@ -2239,16 +2239,16 @@ itemsfile version 2
  itm_umb_armor_f Corsair_Noble_Armour Corsair_Noble_Armour 4  corsair_heavy_1 0  corsair_heavy_0 134  corsair_heavy_2 167772160  corsair_heavy_3 268435456  16842765 0 1100 973078662 24 94 1 25 8 10 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_a Corsair_Shell_Helm Corsair_Shell_Helm 2  shell_helmet 0  shell_helmet_b 167772160  65548 0 1200 704643072 4 96 35 0 0 16 0 0 0 0 0 0 0
+ itm_umb_helm_a Corsair_Shell_Helm Corsair_Shell_Helm 3  shell_helmet 1  shell_helmet 0  shell_helmet_b 167772160  65548 0 1200 704643072 4 96 35 0 0 16 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_b Corsair_Tall_Helm Corsair_Tall_Helm 2  umbar_tall_helmet 0  umbar_tall_helmet_b 167772160  65548 0 1200 704643206 5 96 35 0 0 16 0 0 0 0 0 0 0
+ itm_umb_helm_b Corsair_Tall_Helm Corsair_Tall_Helm 3  umbar_tall_helmet 1  umbar_tall_helmet 0  umbar_tall_helmet_b 167772160  65548 0 1200 704643206 5 96 35 0 0 16 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_c Corsair_Militia_Helm Corsair_Militia_Helm 2  umbar_militia_helmet 0  umbar_militia_helmet_b 167772160  65548 0 700 167772294 2 90 25 0 0 11 0 0 0 0 0 0 0
+ itm_umb_helm_c Corsair_Militia_Helm Corsair_Militia_Helm 3  umbar_militia_helmet 1  umbar_militia_helmet 0  umbar_militia_helmet_b 167772160  65548 0 700 167772294 2 90 25 0 0 11 0 0 0 0 0 0 0
 0
 
- itm_umb_helm_d Corsair_Raider_Helm Corsair_Raider_Helm 2  raider_helmet 0  raider_helmet_b 167772160  65548 0 800 167772294 2 90 28 0 0 12 0 0 0 0 0 0 0
+ itm_umb_helm_d Corsair_Raider_Helm Corsair_Raider_Helm 3  raider_helmet 1  raider_helmet 0  raider_helmet_b 167772160  65548 0 800 167772294 2 90 28 0 0 12 0 0 0 0 0 0 0
 0
 
  itm_umb_helm_reward Ancient_Numenorean_Karma Ancient_Numenorean_Karma 1  umbar_karma 0  65548 0 1200 704643206 3 100 35 0 0 0 0 0 0 0 0 0 0
@@ -2324,7 +2324,7 @@ itemsfile version 2
  itm_beorn_chief Beorning_Chieftan's_Tunic Beorning_Chieftan's_Tunic 1  beorn_chieftain 0  16777229 0 2300 704643206 18 100 1 33 15 18 0 0 0 0 0 0 0
 0
 
- itm_beorn_helmet Bear_Skullcap Bear_Skullcap 2  beorn_helmet 0  beorn_helmet_light 134  65548 0 1000 704643206 6 94 32 0 0 15 0 0 0 0 0 0 0
+ itm_beorn_helmet Bear_Skullcap Bear_Skullcap 3  beorn_helmet 0  beorn_helmet 1  beorn_helmet_light 134  65548 0 1000 704643206 6 94 32 0 0 15 0 0 0 0 0 0 0
 0
 
  itm_beorn_shield Northmen_Shield Northmen_Shield 2  northmen_shield 0  northmen_shield 771751936  327687 4831838208 200 251658402 3 90 0 14 0 1 290 86 0 35 0 0 0
@@ -2441,7 +2441,7 @@ itemsfile version 2
  itm_north_nasal_helm North_Nasal_Helm North_Nasal_Helm 3  north_nasal 1  north_nasal 0  north_nasal_good 167772160  65548 0 1000 704643206 4 92 32 0 0 13 0 0 0 0 0 0 0
 0
 
- itm_dwarf_helm_p Dwarf_King_Helm Dwarf_King_Helm 1  DwarfHelmKingCrown 0  12 0 2500 704643206 9 100 50 0 0 20 0 0 0 0 0 0 0
+ itm_dwarf_helm_p Dwarf_King_Helm Dwarf_King_Helm 1  DwarfHelmKingCrown 0  12 0 2500 704643206 9 100 50 0 0 21 0 0 0 0 0 0 0
 0
 
  itm_dwarf_miner Dwarf_Light_Helm Dwarf_Light_Helm 4  DwarfHelmMinerCap 1  DwarfHelmMinerCap 0  DwarfHelmMiner 134217728  DwarfHelmMiner 67108864  65548 0 200 251658240 1 90 14 0 0 0 0 0 0 0 0 0 0
@@ -2450,10 +2450,10 @@ itemsfile version 2
  itm_north_chieftain North_Chieftain_Helm North_Chieftain_Helm 1  north_nasal_good 1  65548 0 1150 704643206 5 94 34 0 0 15 0 0 0 0 0 0 0
 0
 
- itm_dwarf_helm_round Dwarf_Round_Helm Dwarf_Round_Helm 3  DwarfHelmRoundChain 0  DwarfHelmRoundChain 0  DwarfHelmRoundMask 704643206  65548 0 1200 704643206 4 93 35 0 0 14 0 0 0 0 0 0 0
+ itm_dwarf_helm_round Dwarf_Round_Helm Dwarf_Round_Helm 3  DwarfHelmRoundChain 1  DwarfHelmRoundChain 0  DwarfHelmRoundMask 704643072  65548 0 1200 704643206 4 93 35 0 0 14 0 0 0 0 0 0 0
 0
 
- itm_dwarf_helm_sallet Dwarf_Sallet Dwarf_Sallet 3  DwarfHelmSalletChain 1  DwarfHelmSalletChain 0  DwarfHelmSalletSargeant 704643206  65548 0 1800 704643206 8 95 42 0 0 21 0 0 0 0 0 0 0
+ itm_dwarf_helm_sallet Dwarf_Sallet Dwarf_Sallet 3  DwarfHelmSalletChain 1  DwarfHelmSalletChain 0  DwarfHelmSalletSargeant 704643072  65548 0 1800 704643206 8 95 42 0 0 21 0 0 0 0 0 0 0
 0
 
  itm_dwarf_armor_d Iron_Hills_Coat_of_Scales Iron_Hills_Coat_of_Scales 2  dwarven_scale_mail 1  dwarven_scale_mail 0  16842765 0 2908 704643072 32 95 0 44 10 20 0 0 0 0 0 0 0
