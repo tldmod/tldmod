@@ -2800,5 +2800,7 @@ slot_troop_friendship_reward_hours = 168 #Last time a lord gave a friendship rew
 
 friendship_reward_none = 0
 friendship_reward_troops = 1
+friendship_reward_gear = 2
+friendship_reward_end = 3
 
 #Retainers End

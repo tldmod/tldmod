@@ -27625,10 +27625,13 @@ command_cursor_scripts = [
             (ge, ":player_relation", 20),
             (troop_get_slot, ":random", ":troop_no", slot_troop_friendship_roll),
             (le, ":random", ":player_relation"),
-            (troop_set_slot, ":troop_no", slot_troop_friendship_reward, friendship_reward_troops), #In the future different values could be used for different types of gifts
+            #Randomly select a reward
+            #TODO: Ren - Make the selection sensitive to player's needs, ie not giving troops when party is full
+            (store_random_in_range, ":random_reward", friendship_reward_troops, friendship_reward_end),
+            (troop_set_slot, ":troop_no", slot_troop_friendship_reward, ":random_reward"),
             
             (val_add, ":cur_hours", 72), #Only choose to give a reward once per 3 days. Could maybe tweak this with options
-            (troop_set_slot, ":troop_no", slot_troop_friendship_reward_hours, ":cur_hours"), #In the future different values could be used for different types of gifts
+            (troop_set_slot, ":troop_no", slot_troop_friendship_reward_hours, ":cur_hours"),
         ]),
 
 
@@ -27655,7 +27658,7 @@ command_cursor_scripts = [
             (else_try),
                 #If no retainer then choose the highest level troop from the lord's party, prioritizing appropriate subfaction troops
                 (store_troop_faction, ":hero_fac", ":troop_no"),
-	        	(party_get_slot, ":hero_subfac", ":party", slot_party_subfaction),
+                (party_get_slot, ":hero_subfac", ":party", slot_party_subfaction),
                 (troop_get_type, ":hero_type", ":troop_no"),
 
                 (party_get_num_companion_stacks, ":num_stacks", ":party"),
@@ -27728,6 +27731,105 @@ command_cursor_scripts = [
 
             (assign, reg40, ":reward_troop"),
             (assign, reg41, ":troop_count"),
+        ]),
+
+
+    # Determines the type and quality of item a lord would like to award the player
+    # #script_lord_reward_equipment
+    # # INPUT: troop_no
+    # # OUTPUT: reward_item, item_quality
+    ("lord_reward_equipment",
+        [
+            (store_script_param, ":troop_no", 1),
+
+            #Non-combat rulers don't wear appropriate gear, so if it's one of them we subsitute a high tier faction troop
+            (try_begin),
+                (eq, ":troop_no", "trp_lorien_lord"),
+                (assign, ":gear_troop", "trp_a6_lorien_grey_warden"),
+            (else_try),
+                (eq, ":troop_no", "trp_mordor_lord"),
+                (assign, ":gear_troop", "trp_c5_mordor_num_knight"), #Knight so horses can be given
+            (else_try),
+                (eq, ":troop_no", "trp_gondor_lord"),
+                (assign, ":gear_troop", "trp_c6_gon_tower_knight"),
+            (else_try),
+                (eq, ":troop_no", "trp_isengard_lord"),
+                (assign, ":gear_troop", "trp_i6_isen_uruk_berserker"),
+            (else_try),
+                #Combat lords give rewards based on their own gear
+                (assign, ":gear_troop", ":troop_no"),
+            (end_try),
+
+            (assign, ":eligible_items", 0),
+            (try_for_range, ":item_slot", ek_item_0, ek_food),
+                (troop_get_inventory_slot, ":item", ":gear_troop", ":item_slot"),
+
+                #Skip if slot is empty
+                (neq, ":item", -1),
+
+                #Don't give out unique items this way
+                ] + (is_a_wb_script and [
+                (neg|item_has_property, ":item", itp_unique),
+                (item_has_property, ":item", itp_shop),
+                ] or []) + [
+
+                #If item is eligible store it in the array
+                (troop_set_slot, "trp_temp_array_a", ":eligible_items", ":item"),
+                
+                #Increment after storing to prevent off by one errors
+                (val_add, ":eligible_items", 1),
+            (end_try),
+
+            #Shuffle and pick reward
+            (call_script, "script_shuffle_troop_slots", "trp_temp_array_a", 0, ":eligible_items"),
+            (troop_get_slot, ":reward_item", "trp_temp_array_a", 0),
+
+            #Get appropriate mods based on item type
+            (item_get_type, ":item_type", ":reward_item"),
+            (assign, ":mod0", imod_plain),
+            (try_begin),
+                (eq, ":item_type", itp_type_horse),
+                (assign, ":mod1", imod_stubborn),
+                (assign, ":mod2", imod_spirited),
+                (assign, ":mod3", imod_champion),
+            (else_try),
+                (this_or_next | eq, ":item_type", itp_type_arrows),
+                (this_or_next | eq, ":item_type", itp_type_bolts),
+                (this_or_next | eq, ":item_type", itp_type_bullets),
+                (eq, ":item_type", itp_type_thrown),
+                (assign, ":mod1", imod_fine),
+                (assign, ":mod2", imod_balanced),
+                (assign, ":mod3", imod_large_bag),
+            (else_try),
+                (is_between, ":item_type", itp_type_head_armor, itp_type_pistol),
+                (assign, ":mod1", imod_thick),
+                (assign, ":mod2", imod_reinforced),
+                (assign, ":mod3", imod_masterwork),
+            (else_try),
+                (assign, ":mod1", imod_balanced),
+                (assign, ":mod2", imod_tempered),
+                (assign, ":mod3", imod_masterwork),
+            (try_end),
+
+            (call_script, "script_troop_get_player_relation", ":troop_no"),
+            (assign, ":player_relation", reg0),
+
+            (try_begin),
+                (ge, ":player_relation", 90),
+                (assign, ":selected_mod", ":mod3"),
+            (else_try),
+                (ge, ":player_relation", 60),
+                (assign, ":selected_mod", ":mod2"),
+            (else_try),
+                (ge, ":player_relation", 30),
+                (assign, ":selected_mod", ":mod1"),
+            (else_try),
+                (assign, ":selected_mod", ":mod0"),
+            (try_end),
+
+
+            (assign, reg40, ":reward_item"),
+            (assign, reg41, ":selected_mod"),
         ]),
     #Retainers End
 
