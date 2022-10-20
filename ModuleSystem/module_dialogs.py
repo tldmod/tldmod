@@ -3972,10 +3972,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 ##### TODO: QUESTS COMMENT OUT BEGIN
 [anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Increase Relation", "lord_pretalk",[(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),]],
-#Retainers Begin
-[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Force Friendship Reward", "lord_pretalk",[(troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward, friendship_reward_gear),]],
-[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Roll for Friendship Reward", "lord_pretalk",[(call_script, "script_cf_lord_friendship_reward", "$g_talk_troop"),]],
-#Retainers End
+#Friendship Rewards Begin
+[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Force Friendship Reward", "lord_pretalk",[
+    (call_script, "script_lord_friendship_reward_progress", "$g_talk_troop", 100),]],
+#Friendship Rewards End
 [anyone|plyr,"lord_talk",[#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
                             (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
                             (check_quest_active,"qst_lend_companion"),
@@ -8479,13 +8479,17 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 [anyone,"lord_leave_prison", [], "We'll meet again.", "close_window",[(call_script,"script_stand_back"),]],
 
-#Retainers Begin
+#Friendship Rewards Begin
 [anyone,"lord_leave", [
-    (troop_slot_eq, "$g_talk_troop", slot_troop_friendship_reward, friendship_reward_troops),
-    (troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward, friendship_reward_none),
+    (troop_slot_eq, "$g_talk_troop", slot_troop_friendship_reward_type, friendship_reward_troops),
+    (troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward_type, friendship_reward_none),
+    (troop_slot_ge, "$g_talk_troop", slot_troop_friendship_reward_progress, 100),
+    (troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward_progress, 0),
+    (troop_get_slot, reg40, "$g_talk_troop", slot_troop_friendship_reward_id),
+
     (call_script, "script_troop_get_player_relation", "$g_talk_troop"),
     (assign, ":player_relation", reg0),
-    (call_script, "script_lord_reward_troops", "$g_talk_troop"),
+    (call_script, "script_lord_reward_troops_count", "$g_talk_troop"),
     (store_sub, reg42, reg41, 1),
 
     (try_begin),
@@ -8539,11 +8543,15 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     [anyone|plyr,"lord_offer_troops", [], "I fear I cannot accept them at this time.", "close_window",[(call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1)]],
 
     [anyone,"lord_leave", [
-    (troop_slot_eq, "$g_talk_troop", slot_troop_friendship_reward, friendship_reward_gear),
-    (troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward, friendship_reward_none),
+    (troop_slot_eq, "$g_talk_troop", slot_troop_friendship_reward_type, friendship_reward_gear),
+    (troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward_type, friendship_reward_none),
+    (troop_slot_ge, "$g_talk_troop", slot_troop_friendship_reward_progress, 100),
+    (troop_set_slot, "$g_talk_troop", slot_troop_friendship_reward_progress, 0),
+    (troop_get_slot, reg40, "$g_talk_troop", slot_troop_friendship_reward_id),
+
     (call_script, "script_troop_get_player_relation", "$g_talk_troop"),
     (assign, ":player_relation", reg0),
-    (call_script, "script_lord_reward_equipment", "$g_talk_troop"),
+    (call_script, "script_lord_reward_equipment_modifier", "$g_talk_troop"),
     (str_store_item_name, s22, reg40),
 
     (try_begin),
@@ -8584,7 +8592,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     ]],
 
     [anyone|plyr,"lord_offer_item", [], "I'm afraid I must decline.", "close_window",[(call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1)]],
-#Retainers End
+#Friendship Rewards End
 
 [anyone|auto_proceed,"lord_leave", [(lt, "$g_talk_troop_faction_relation", 0)],
 "We'll see about that, {playername}.", "close_window",[(call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1)]],

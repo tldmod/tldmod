@@ -10593,6 +10593,14 @@ scripts = [
           (try_end),
           (call_script, "script_update_troop_notes", ":troop_no"),
         (try_end),
+
+        #Friendship Rewards Begin
+        #Add relation change to friendship reward progress
+        (try_begin),
+            (is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+            (call_script, "script_lord_friendship_reward_progress", ":troop_no", ":difference"),
+        (try_end),
+        #Friendship Rewards End
       (try_end),
 ]),
 
@@ -10911,14 +10919,6 @@ scripts = [
       (else_try),
         #(val_div, ":quest_importance", 4),
         (val_max, ":quest_importance", 1),
-
-        #Retainers Begin
-        #Give a chance for a friendship reward from friendly lords
-        (try_begin),
-            (is_between, ":quest_giver", kingdom_heroes_begin, kingdom_heroes_end),
-            (call_script, "script_cf_lord_friendship_reward", ":quest_giver"),
-        (try_end),
-        #Retainers End
       (try_end),
       
       (try_begin),
@@ -16162,11 +16162,6 @@ scripts = [
      (try_begin),
        (is_between, ":giver_troop_no", kingdom_heroes_begin, kingdom_heroes_end),
        (str_store_troop_name_link, s62, ":giver_troop_no"),
-       #Retainers Begin
-       #Store friendship reward roll ahead of time so it can't be cheesed by saving and reloading right before quest turn in
-       (store_random_in_range, ":random", 0, 100),
-       (troop_set_slot, ":giver_troop_no", slot_troop_friendship_roll, ":random"),
-       #Retainers End
      (else_try),
        (str_store_troop_name, s62, ":giver_troop_no"),
      (try_end),
@@ -27604,50 +27599,49 @@ command_cursor_scripts = [
             (troop_set_slot, "trp_rohan_lord", slot_troop_retainer_troop, "trp_c6_king_s_man_of_rohan"), #King's Guard for Theoden
             (troop_set_slot, "trp_knight_1_7", slot_troop_retainer_troop, "trp_a6_ithilien_master_ranger"), #Rangers for Faramir
         ]),
+    #Retainers End
 
-
+    #Friendship Rewards Begin
     # Checks if the lord wants to give a gift to the player based on their friendship level
-    # #script_cf_lord_friendship_reward
-    # # INPUT: troop_no
+    # #script_lord_friendship_reward_progress
+    # # INPUT: troop_no, new_progress
     # # OUTPUT: none
-    ("cf_lord_friendship_reward",
+    ("lord_friendship_reward_progress",
         [
             (store_script_param, ":troop_no", 1),
+            (store_script_param, ":new_progress", 2),
 
-            #Check that enough time has passed since last reward
-            (store_current_hours, ":cur_hours"),
-            (troop_get_slot, ":reward_hours", ":troop_no", slot_troop_friendship_reward_hours),
-            (le, ":reward_hours", ":cur_hours"),
-
-            (call_script, "script_troop_get_player_relation", ":troop_no"),
-            (assign, ":player_relation", reg0),
-            #Must have at least 20 relation to get friendship reward
-            (ge, ":player_relation", 20),
-            (troop_get_slot, ":random", ":troop_no", slot_troop_friendship_roll),
-            (le, ":random", ":player_relation"),
-            #Randomly select a reward
-            #TODO: Ren - Make the selection sensitive to player's needs, ie not giving troops when party is full
-            (store_random_in_range, ":random_reward", friendship_reward_troops, friendship_reward_end),
-            (troop_set_slot, ":troop_no", slot_troop_friendship_reward, ":random_reward"),
+            (troop_get_slot, ":old_progress", ":troop_no", slot_troop_friendship_reward_progress),
+            (val_add, ":new_progress", ":old_progress"),
+            (troop_set_slot, ":troop_no", slot_troop_friendship_reward_progress, ":new_progress"),
             
-            (val_add, ":cur_hours", 72), #Only choose to give a reward once per 3 days. Could maybe tweak this with options
-            (troop_set_slot, ":troop_no", slot_troop_friendship_reward_hours, ":cur_hours"),
+            #Randomly select a reward
+            #Ideally this would be sensitive to player's needs (ie, no troops if party is full, but that's hard to do when pre-rolling)
+            (try_begin),
+                (troop_get_slot, ":reward", ":troop_no", slot_troop_friendship_reward_type),
+                (lt, ":reward", 1),
+                (store_random_in_range, ":random_reward", friendship_reward_troops, friendship_reward_end),
+                (troop_set_slot, ":troop_no", slot_troop_friendship_reward_type, ":random_reward"),
+                (try_begin),
+                    (eq, ":random_reward", friendship_reward_troops),
+                    (call_script, "script_lord_reward_troops_type", ":troop_no"),
+                (else_try),
+                    (eq, ":random_reward", friendship_reward_gear),
+                    (call_script, "script_lord_reward_equipment_type", ":troop_no"),
+                (try_end),
+                (troop_set_slot, ":troop_no", slot_troop_friendship_reward_id, reg40),
+            (try_end),
         ]),
 
+    #Count and Type scripts are split into two so that type can be pre-determined to avoid cheesing, while count is calculated at reward time to use the appropriate relation
 
-    # Determines the type and number of troops a lord would like to award the player
-    # #script_lord_reward_troops
+    # Determines the type of troops a lord would like to award the player
+    # #script_lord_reward_troops_type
     # # INPUT: troop_no
-    # # OUTPUT: reward_troop, troop_count
-    ("lord_reward_troops",
+    # # OUTPUT: reward_troop
+    ("lord_reward_troops_type",
         [
             (store_script_param, ":troop_no", 1),
-            #Determine number of troops
-            (call_script, "script_troop_get_player_relation", ":troop_no"),
-            (assign, ":player_relation", reg0),
-            (assign, ":troop_count", ":player_relation"),
-            (val_div, ":troop_count", 25), #1-4 based on relation
-            (val_max, ":troop_count", 1),
             (assign, ":reward_troop", -1),
             (troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
 
@@ -27722,6 +27716,25 @@ command_cursor_scripts = [
                 (try_end),
             (try_end),
 
+            (assign, reg40, ":reward_troop"),
+        ]),
+
+    # Determines the number of troops a lord would like to award the player
+    # #script_lord_reward_troops_count
+    # # INPUT: troop_no
+    # # OUTPUT: troop_count
+    ("lord_reward_troops_count",
+        [
+            (store_script_param, ":troop_no", 1),
+            (troop_get_slot, ":reward_troop", ":troop_no", slot_troop_friendship_reward_id),
+            
+            #Determine number of troops
+            (call_script, "script_troop_get_player_relation", ":troop_no"),
+            (assign, ":player_relation", reg0),
+            (assign, ":troop_count", ":player_relation"),
+            (val_div, ":troop_count", 25), #1-4 based on relation
+            (val_max, ":troop_count", 1),
+
             (try_begin),
                 #Give extra orcs
                 (troop_get_type, ":type", ":reward_troop"),
@@ -27729,16 +27742,14 @@ command_cursor_scripts = [
                 (val_mul, ":troop_count", 3),
             (try_end),
 
-            (assign, reg40, ":reward_troop"),
             (assign, reg41, ":troop_count"),
         ]),
 
-
-    # Determines the type and quality of item a lord would like to award the player
-    # #script_lord_reward_equipment
+    # Determines the type of item a lord would like to award the player
+    # #script_lord_reward_equipment_type
     # # INPUT: troop_no
-    # # OUTPUT: reward_item, item_quality
-    ("lord_reward_equipment",
+    # # OUTPUT: reward_item
+    ("lord_reward_equipment_type",
         [
             (store_script_param, ":troop_no", 1),
 
@@ -27784,6 +27795,19 @@ command_cursor_scripts = [
             (call_script, "script_shuffle_troop_slots", "trp_temp_array_a", 0, ":eligible_items"),
             (troop_get_slot, ":reward_item", "trp_temp_array_a", 0),
 
+            (assign, reg40, ":reward_item"),
+        ]),
+
+    # Determines the quality of item a lord would like to award the player
+    # #script_lord_reward_equipment_modifier
+    # # INPUT: troop_no
+    # # OUTPUT: selected_mod
+    ("lord_reward_equipment_modifier",
+        [
+            (store_script_param, ":troop_no", 1),
+
+            (troop_get_slot, ":reward_item", ":troop_no", slot_troop_friendship_reward_id),
+
             #Get appropriate mods based on item type
             (item_get_type, ":item_type", ":reward_item"),
             (assign, ":mod0", imod_plain),
@@ -27827,11 +27851,9 @@ command_cursor_scripts = [
                 (assign, ":selected_mod", ":mod0"),
             (try_end),
 
-
-            (assign, reg40, ":reward_item"),
             (assign, reg41, ":selected_mod"),
         ]),
-    #Retainers End
+    #Friendship Rewards End
 
 ]
 
