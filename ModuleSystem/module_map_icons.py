@@ -100,8 +100,9 @@ map_icons = map_icons_scribbler + [
   ("dunadan_horseman",0,"dunadan_horseman", avatar_scale, snd_gallop, 0.15, 0.173, 0), #unused
   ("rivendell_elf",0,"rivendell_elf", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
 
-  ("mordor_captain",0,"mordor_captain", avatar_scale, snd_gallop, 0.15, 0.173, 0), 
-  ("pikeman_isengard",0,"pikeman_isengard", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0), #unused
+  ("mordor_captain",0,"mordor_captain", avatar_scale, snd_gallop, 0.15, 0.173, 0),
+  ("ent",0,"icon_ent_frame0", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),  
+  #("pikeman_isengard",0,"pikeman_isengard", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0), #unused
 
   ("orc",0,"orc", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("orc_isengard",0,"orc_isengard", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),

@@ -1334,13 +1334,16 @@ scripts = [
 #script_fangorn_fight_ents
 # Script: start a battle with wandering ents  (mtarini)
 ("fangorn_fight_ents",[
-	(store_random_in_range, ":scene_to_use", "scn_forest_fangorn1", "scn_forest_ithilien_small1"),       
+    (store_random_in_range, ":scene_to_use", "scn_forest_fangorn1", "scn_forest_ithilien_small1"),       
 	#(assign,"$g_fangorn_rope_pulled", 0), # ents calm down after a good fight
 	(val_max,"$g_fangorn_rope_pulled", 21), # this also means ents gets a max reinforcement of at least 3 
+    (call_script, "script_safe_remove_party","$g_encountered_party"), #remove ent party
+    (quest_set_slot, "qst_investigate_fangorn", slot_quest_target_amount, 0),
 	(assign, "$g_encountered_party", "p_legend_fangorn"), # just so that the find music script dosn't go nuts
-	(reset_visitors),
 	(modify_visitors_at_site, ":scene_to_use"),
-	(set_jump_entry, 0), 
+    (reset_visitors),
+	(set_jump_entry, 4), 
+    #(display_message, "@spawn at 4"),
   (set_visitor, 4, "trp_player"),
   (store_random_in_range, ":num_ents", 1, 3),
   (set_visitors, 0, "trp_ent", ":num_ents"),
@@ -4724,6 +4727,10 @@ scripts = [
 	(else_try),
 		(eq, ":template_no", "pt_refugees"),
 		(set_trigger_result, 55),
+	(else_try),
+        (eq, "$g_player_is_captive", 1), #while burning trees
+		(eq, ":template_no", "pt_ents"),
+		(set_trigger_result, 45),        
 	(else_try),
 		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
 		(party_get_skill_level, ":speed_multiplier", ":party_no", skl_persuasion), #Wildcraft

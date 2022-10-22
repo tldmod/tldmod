@@ -7179,16 +7179,15 @@ tld_remove_riderless_animals,
       (1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
      
       # Player:
-      (4,mtef_team_1|mtef_attackers|mtef_use_exact_number,0,aif_start_alarmed,8,[]),
-      (4,mtef_team_1|mtef_attackers|mtef_use_exact_number,0,aif_start_alarmed,8,[]),
+      (4,mtef_team_1|mtef_attackers|mtef_use_exact_number|mtef_infantry_first|af_override_horse,0,aif_start_alarmed,8,[]),
+      (4,mtef_team_1|mtef_attackers|mtef_use_exact_number|mtef_infantry_first|af_override_horse,0,aif_start_alarmed,8,[]),
      
 
    ],
   # Triggers
   tld_common_wb_muddy_water+
   tld_common_battle_scripts+
-  common_deathcam_triggers +
-  moto_formations_triggers +  [
+  common_deathcam_triggers + [
   
 
   common_battle_on_player_down,

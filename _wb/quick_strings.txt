@@ -1,4 +1,4 @@
-1966
+1964
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_505_wb__dev_^_B _rev_505_wb_|_dev_^_Built_2022-10-22_12:30___
+qstr__rev_505_wb__dev_^_B _rev_505_wb_|_dev_^_Built_2022-10-22_16:31___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1179,7 +1179,6 @@ qstr_You_camp_and_beat_th You_camp_and_beat_the_Drums_of_the_Deep._The_mighty_so
 qstr_You_camp_and_beat_the You_camp_and_beat_the_Drums_of_the_Deep._The_powerful_sound_attracts_a_group_of_{s1}_{s2}.
 qstr_You_camp_and_beat_the_ You_camp_and_beat_the_Drums_of_the_Deep._The_weak_sound_attracts_a_group_of_{s1}_{s2}.
 qstr_You_camp_and_try_to_ You_camp_and_try_to_beat_the_Drums_of_the_Deep,_yet_noone_answers_your_pitiful_call.
-qstr_Fangorn_search:_fail Fangorn_search:_failed.
 qstr_^^^A_great_victory!^ ^^^A_great_victory!^^^So_this_is_what_all_the_myths_about_Fangorn_meant...
 qstr_^^^Defeated...^^^Sca ^^^Defeated...^^^Scattered_in_the_Fangorn_Forest..._Alone...
 qstr_Troll_caged_in_wheel Troll_caged_in_wheeled_cage.
@@ -1964,4 +1963,3 @@ qstr_Sleep_sounds_good... Sleep_sounds_good...
 qstr_For_Balin!! For_Balin!!
 qstr_For_Balin... For_Balin...
 qstr_{s6} {s6}
-qstr__rev_504_wb__dev_^_B _rev_504_wb_|_dev_^_Built_2022-10-22_12:46___

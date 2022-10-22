@@ -1309,9 +1309,29 @@ triggers = [
   (0.5, 0, 0, [],[#(gt,"$g_fangorn_rope_pulled",-100)],[
       (call_script,"script_party_is_in_fangorn","p_main_party"),
       (assign,":inside_fangorn",reg0),
+      (assign, ":continue", 1),
+      (try_begin),
+        (check_quest_active, "qst_investigate_fangorn"),
+        (quest_get_slot, ":timeout", "qst_investigate_fangorn", slot_quest_target_amount), #used to disable fangorn check while burning trees
+        (store_current_hours, ":hours"),
+        (eq, ":hours", ":timeout"),
+        (jump_to_menu, "mnu_fangorn_search_fails"),
+        (assign, ":continue", 0),
+       (else_try),
+        (check_quest_active, "qst_investigate_fangorn"),
+        (lt, ":hours", ":timeout"),
+        (assign, ":continue", 0),
+      (else_try),
+        (check_quest_active, "qst_investigate_fangorn"),
+        (gt, ":hours", ":timeout"),
+        (assign, ":continue", 1),
+      (try_end),
+      
       (try_begin),
         (eq, "$g_player_is_captive", 0),
         (eq,":inside_fangorn",1),
+        (eq,":continue",1),
+        (neq, "$g_fast_mode", 1),
         (troop_slot_eq, "trp_treebeard", slot_troop_met_previously, 0), # and didn't meet Treabeard
         #(assign,reg5,"$g_fangorn_rope_pulled"),
         (try_begin),
@@ -1336,6 +1356,11 @@ triggers = [
         (ge,"$g_fangorn_rope_pulled",5),
         (val_sub,"$g_fangorn_rope_pulled", 5), # if outside fangorn, fangorn calms down (to 0).
         (val_max,"$g_fangorn_rope_pulled", 0),
+        (try_for_parties, ":ents"), #remove any ent parties, just to be sure
+            (party_get_template_id, ":template", ":ents"),
+            (eq, ":template", "pt_ents"),
+            (call_script, "script_safe_remove_party",":ents"),
+        (try_end),
       (try_end),
   ]),
   

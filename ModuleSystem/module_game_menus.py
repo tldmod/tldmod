@@ -3484,6 +3484,8 @@ game_menus = [
                                 (troop_set_slot, "trp_gandalf", slot_troop_leaded_party, ":party"),
                                 (assign, "$g_tld_gandalf_state", tld_cc_gandalf_advice),
                                 (display_message, "@Gandalf would like to have a little chat!", 0x30FFC8),
+                                (rest_for_hours, 3, 1, 1), #rest while attackable
+                                (change_screen_map)
                                 ]),
  ] for ct in range(cheat_switch)])+[
      ("back_mtest",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
@@ -4308,16 +4310,39 @@ game_menus = [
 	 (this_or_next|is_between,reg5,tf_orc_begin, tf_orc_end) ,# orcs olny option
 	 (check_quest_active, "qst_investigate_fangorn"), #  or also whoever was given the quest to investigate can...
 	 ]
-	 ,"Let's find out! Search the area! Burn down a tree or two!",
+	 ,"Let's find out! Search the area! Burn down a tree or two! (Camp)",
 	 [(store_random_in_range,":chance",0,100),
 	  (try_begin),
 	    (lt,":chance",60),
-		(call_script,"script_fangorn_fight_ents"),
+		#(call_script,"script_fangorn_fight_ents"),
+        (set_spawn_radius,4),
+        (spawn_around_party, "p_main_party", "pt_ents"),
+        (party_set_ai_behavior, reg0, ai_bhvr_attack_party),
+        (party_set_ai_object, reg0, "p_main_party"),
+        (party_set_flags, reg0, pf_default_behavior, 0),
+        (party_set_slot, reg0, slot_party_ai_state, spai_undefined),
+        (assign, "$g_tld_gandalf_state", tld_cc_gandalf_advice),
+        (party_set_ai_initiative, reg0, 0), #make sure they don't flee
+        ] + (is_a_wb_menu==1 and [
+        (party_set_courage, reg0, 15),
+        ] or []) + [
+        (call_script,"script_create_smoking_remnants","p_main_party","icon_shrubbery",8,1),
+        (rest_for_hours, 4, 1, 1), #rest while attackable
+        (store_current_hours, ":hours"),
+        (val_add, ":hours", 3),
+        (quest_set_slot, "qst_investigate_fangorn", slot_quest_target_amount, ":hours"), #used to disable fangorn check while waiting
+        (change_screen_map),
 	(else_try),
 		(val_add,"$g_fangorn_rope_pulled", 30), 
 		(val_clamp,"$g_fangorn_rope_pulled", 0,75), 
-		(display_message,"@Fangorn search: failed."),
-		(jump_to_menu, "mnu_fangorn_search_fails"),
+		#(display_message,"@Fangorn search: failed."),
+		#(jump_to_menu, "mnu_fangorn_search_fails"),
+        (rest_for_hours, 4, 1, 1), #rest while attackable
+        (store_current_hours, ":hours"),
+        (val_add, ":hours", 3),
+        (quest_set_slot, "qst_investigate_fangorn", slot_quest_target_amount, ":hours"), #used to disable fangorn check while waiting
+        (call_script,"script_create_smoking_remnants","p_main_party","icon_shrubbery",8,1),
+        (change_screen_map),
 	  (try_end),
 	  #(change_screen_map),
 	 ]),
@@ -4329,6 +4354,7 @@ game_menus = [
     ("continue",[],"Continue...",
 	 [(call_script,"script_fangorn_deal_damage","p_main_party"),
 	  (call_script,"script_after_fangorn_damage_to_player"),
+      (rest_for_hours_interactive, 0, 1, 1), #abort resting
 	 ]),
    ]
  ),
@@ -4883,6 +4909,7 @@ game_menus = [
           (try_begin),
             (this_or_next|eq, "$g_encountered_party_template", "pt_gandalf"),
             (this_or_next|eq, "$g_encountered_party_template", "pt_nazgul"),
+            (this_or_next|eq, "$g_encountered_party_template", "pt_ents"),
             (eq, "$g_encountered_party_template", "pt_runaway_serfs"),
             (assign, ":is_quest_party", 1),
           (try_end),
@@ -4902,6 +4929,10 @@ game_menus = [
               (eq, "$g_encountered_party_template", "pt_nazgul"),
               (gt, "$g_tld_nazgul_state", 0),
               (call_script, "script_start_conversation_cutscene", "$g_tld_nazgul_state"),
+            (else_try), 
+              (eq, "$g_encountered_party_template", "pt_ents"),
+              (check_quest_active, "qst_investigate_fangorn"),
+              (call_script,"script_fangorn_fight_ents"),
             (else_try), #normal dialogs
 			  (call_script, "script_setup_party_meeting", "$g_encountered_party"),
             (try_end),
