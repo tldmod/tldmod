@@ -1,4 +1,4 @@
-1956
+1966
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2022-10-20_03:30___
+qstr__rev_505_wb__dev_^_B _rev_505_wb_|_dev_^_Built_2022-10-22_12:30___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1771,11 +1771,20 @@ qstr_Wait_{playername}._I Wait,_{playername}._I_don't_say_this_often,_but_you_ar
 qstr_Halt_{playername}._I Halt,_{playername}._I_once_thought_you_little_more_than_a_snaga,_but_you_are_proving_to_be_a_useful_servant.
 qstr_Take_these_warriors_ Take_these_warriors,_that_your_horde_might_continue_to_serve_me.
 qstr_One_last_thing_{play One_last_thing,_{playername}._In_a_land_filled_with_backstabbers_and_rivals,_you_have_always_been_a_true_ally.
-qstr_Wait_{playername}._W Wait,_{playername}._When_we_met_I_sensed_in_you_a_rival,_but_I_a_see_now_I_was_mistaken.
+qstr_Wait_{playername}._W Wait,_{playername}._When_we_met_I_sensed_in_you_a_rival,_but_I_see_now_I_was_mistaken.
 qstr_Take_these_warriors_a Take_these_warriors,_and_use_them_to_strike_down_our_foes.
-qstr_Before_you_leave_{pl Before_you_leave,_{playername},_know_that_you_have_always_a_been_good_friend_to_me.
+qstr_Before_you_leave_{pl Before_you_leave,_{playername},_know_that_you_have_always_been_a_good_friend_to_me.
 qstr_Wait_{playername}._I_ Wait,_{playername}._I_don't_know_you_half_as_well_as_I_should_like,_but_thus_far_you_have_been_a_good_friend.
 qstr_Allow_me_to_repay_yo Allow_me_to_repay_you_by_giving_you_some_troops.
+qstr_Wait_{playername}._C Wait,_{playername}._Capable_servants_like_you_and_your_warriors_deserve_the_best_equipment.
+qstr_Halt_{playername}._It Halt,_{playername}._It's_shameful_to_have_my_servants_using_such_inferior_equipment.
+qstr_Take_this_{s22}_and_ Take_this_{s22}_and_let_it_aid_your_rampage.
+qstr_Before_you_go_{playe Before_you_go,_{playername}._Great_warriors_like_you_and_your_companions_deserve_only_the_best_weapons,_armor,_and_mounts.
+qstr_Wait_{playername}._Y Wait,_{playername}._Your_army_has_done_well,_but_I_think_you'd_do_better_with_superior_equipment.
+qstr_Take_this_{s22}._I_h Take_this_{s22}._I_have_no_need_of_it.
+qstr_Just_a_moment_{playe Just_a_moment,_{playername}._Heroes_like_you_and_your_companions_are_worthy_of_the_finest_weapons,_armor,_and_horses.
+qstr_Wait_{playername}._Yo Wait,_{playername}._You_have_been_an_able_commander_in_the_war_effort._I_think_it's_time_you_had_some_better_equipment.
+qstr_Accept_this_{s22}_ma Accept_this_{s22},_may_it_aid_you_and_your_companions.
 qstr_the_Dwarves_so_that_ the_Dwarves,_so_that_if_you_pass_by_Erebor_or_the_Iron_Hills,_you_can_try_to_arm_yourself_with_the_fabled_Dwarven_weaponry
 qstr_Gondor_so_that_if_yo Gondor,_so_that_if_you_pass_by_their_lands,_you_can_try_to_purchase_some_of_their_well-known_armours
 qstr_Rohan_so_that_if_you Rohan,_so_that_if_you_pass_by_their_lands,_you_can_try_to_purchase_some_of_their_fabled_horses
@@ -1955,3 +1964,4 @@ qstr_Sleep_sounds_good... Sleep_sounds_good...
 qstr_For_Balin!! For_Balin!!
 qstr_For_Balin... For_Balin...
 qstr_{s6} {s6}
+qstr__rev_504_wb__dev_^_B _rev_504_wb_|_dev_^_Built_2022-10-22_12:46___
