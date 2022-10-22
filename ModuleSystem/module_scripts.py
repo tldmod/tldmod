@@ -1994,7 +1994,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 30),  #Rafa: Savegame version
+    (assign,"$savegame_version", 32),  #Rafa: Savegame version
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -14264,7 +14264,7 @@ scripts = [
             (this_or_next|is_between, 			"$current_town", 		   moria_centers_begin, 		  moria_centers_end),
             (			  is_between, 			"$current_town", 		gundabad_centers_begin, 	   gundabad_centers_end),	
             #(set_visitors, ":entry_no", ":walker_troop_id",6), #entry points 32-39 
-            (assign, ":num_walkers", 7),
+            (assign, ":num_walkers", 5),
         (else_try),
             (this_or_next|eq, "$current_town", "p_town_woodelf_camp"),
             (this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
@@ -14417,33 +14417,7 @@ scripts = [
        (store_random_in_range, ":i_e_p", town_walker_entries_start, 40),#Entry points
        (agent_set_slot, ":cur_agent", slot_agent_target_entry_point, ":i_e_p"),
        (agent_set_slot, ":cur_agent", slot_agent_walker_type, 1),
-       (call_script, "script_set_town_walker_destination", ":cur_agent"),
-      
-      # (else_try), #guards patrol
-       # (agent_get_entry_no, ":entry", ":cur_agent"),
-	   # (is_between, ":entry",25,29),
-       # (agent_set_slot, ":cur_agent", slot_agent_walker_type, 2),
-       # (agent_get_position, pos1, ":cur_agent"),
-       # (store_random_in_range, ":i_e_p", 25, 29),#Entry points
-       # (agent_set_slot, ":cur_agent", slot_agent_target_entry_point, ":i_e_p"),
-       # (call_script, "script_set_town_walker_destination", ":cur_agent"),
-
-	  # ] + (is_a_wb_script==1 and [
-       # (try_for_range, ":weapon_slot", 0, 4), #find polearm
-        # (agent_get_item_slot, ":item", ":cur_agent", ":weapon_slot"),
-        # (gt, ":item", 1),
-        # (item_get_type, ":item_type", ":item"),
-        # (eq, ":item_type", itp_type_polearm),
-        # (agent_set_wielded_item, ":cur_agent", ":item"),
-            # # (try_for_range, ":weapon_slot", 0, 4), #don't equip shield yet, lacking proper walk animation
-                # # (agent_get_item_slot, ":item", ":cur_agent", ":weapon_slot"),
-                # # (gt, ":item", 1),
-                # # (item_get_type, ":item_type", ":item"),
-                # # (eq, ":item_type", itp_type_shield),
-                # # (agent_set_wielded_item, ":cur_agent", ":item"),
-            # # (try_end),
-       # (try_end),
-      # ] or []) + [
+       (call_script, "script_set_town_walker_destination", ":cur_agent"),      
        
      (try_end),
 ]),
@@ -14580,64 +14554,44 @@ scripts = [
      #(agent_slot_eq, ":agent_no", slot_agent_walker_type, 1), #only for civilian walker
      (assign, ":is_guard", 0),
        
-     (try_begin), #walkers
-	   #(is_between, ":entry",town_walker_entries_start,40),
-       #(eq, ":walker_type", 1),
-	
-	    (try_begin),
-			(eq, ":rand_dest", 1),
-			(assign, ":target_entry_point", 9),
-		(else_try),	
-			(eq, ":rand_dest", 2),
-			(assign, ":target_entry_point", 10),
-		(else_try),	
-			(eq, ":rand_dest", 3),
-			(assign, ":target_entry_point", 12),	
-		(else_try),	
-			(eq, ":rand_dest", 4),
-			(assign, ":target_entry_point", 32),	
-		(else_try),	
-			(eq, ":rand_dest", 2),
-			(assign, ":target_entry_point", 33),	
-		(else_try),	
-			(eq, ":rand_dest", 5),
-			(assign, ":target_entry_point", 34),	
-		(else_try),	
-			(eq, ":rand_dest", 6),
-			(assign, ":target_entry_point", 35),	
-		(else_try),	
-			(eq, ":rand_dest", 7),
-			(assign, ":target_entry_point", 36),	
-		(else_try),	
-			(eq, ":rand_dest", 8),
-			(assign, ":target_entry_point", 37),	
-		(else_try),	
-			(eq, ":rand_dest", 9),
-			(assign, ":target_entry_point", 38),	
-		(else_try),	
-			(eq, ":rand_dest", 10),
-			(assign, ":target_entry_point", 39),	
-		(else_try),	
-			(assign, ":target_entry_point", 10),					
-		(try_end),
-        
-     # (else_try), #guards
-        # (eq, ":walker_type", 2),
-        # (assign, ":is_guard", 1),
-	    # (try_begin),
-			# (le, ":rand_dest", 3),
-			# (assign, ":target_entry_point", 25),
-		# (else_try),	
-			# (le, ":rand_dest", 6),
-			# (assign, ":target_entry_point", 26),
-		# (else_try),	
-			# (le, ":rand_dest", 9),
-			# (assign, ":target_entry_point", 27),	
-		# (else_try),	
-			# (le, ":rand_dest", 12),
-			# (assign, ":target_entry_point", 28),	
-		# (try_end),
-     (try_end),
+        (try_begin), #walkers
+           #(is_between, ":entry",town_walker_entries_start,40),
+           #(eq, ":walker_type", 1),
+            (eq, ":rand_dest", 1),
+            (assign, ":target_entry_point", 9),
+        (else_try),	
+            (eq, ":rand_dest", 2),
+            (assign, ":target_entry_point", 10),
+        (else_try),	
+            (eq, ":rand_dest", 3),
+            (assign, ":target_entry_point", 12),	
+        (else_try),	
+            (eq, ":rand_dest", 4),
+            (assign, ":target_entry_point", 32),	
+        (else_try),	
+            (eq, ":rand_dest", 2),
+            (assign, ":target_entry_point", 33),	
+        (else_try),	
+            (eq, ":rand_dest", 5),
+            (assign, ":target_entry_point", 34),	
+        (else_try),	
+            (eq, ":rand_dest", 6),
+            (assign, ":target_entry_point", 35),	
+        (else_try),	
+            (eq, ":rand_dest", 7),
+            (assign, ":target_entry_point", 36),	
+        (else_try),	
+            (eq, ":rand_dest", 8),
+            (assign, ":target_entry_point", 37),	
+        (else_try),	
+            (eq, ":rand_dest", 9),
+            (assign, ":target_entry_point", 38),	
+        (else_try),	
+            (eq, ":rand_dest", 10),
+            (assign, ":target_entry_point", 39),	
+        (else_try),	
+            (assign, ":target_entry_point", 10),					
+        (try_end),
             
 	      (try_begin),
 	        (agent_set_slot, ":agent_no", slot_agent_target_entry_point, ":target_entry_point"),
@@ -22637,7 +22591,7 @@ scripts = [
             (assign,reg0,"trp_i4_gon_swordsman"),(assign,reg1,"trp_i4_gon_swordsman"),(assign,reg2,"trp_a4_gon_archer"),(assign,reg3,"trp_i3_footman_of_rohan"),
         (try_end),
         (shuffle_range,0,4),
-        (set_visitors,25,reg0,2),(set_visitors,26,reg1,2),(set_visitors,27,reg2,2),(set_visitors,28,reg3,2),
+        (set_visitors,25,reg0,1),(set_visitors,26,reg1,1),(set_visitors,27,reg2,1),(set_visitors,28,reg3,1),
 
         #MV replaced by companion NPC, if any, and no castle
         #TLD NPC companions
@@ -25355,6 +25309,17 @@ command_cursor_scripts = [
         (assign, "$savegame_version", 31),
 	(try_end),
     #Retainers End
+    
+    (try_begin), #InVain - 9 Oct 2022, update Rohan town archer troops
+        (le, "$savegame_version", 31),
+        (faction_set_slot, "fac_rohan", slot_faction_archer_troop, "trp_a3_dism_skirmisher_of_rohan"),
+        (try_for_range, ":center_no", centers_begin, centers_end),
+            (store_faction_of_party, ":center_faction", ":center_no"),
+            (eq, ":center_faction", "fac_rohan"),
+            (party_set_slot, ":center_no", slot_town_archer_troop, "trp_a3_dism_skirmisher_of_rohan"),
+        (try_end),
+        (assign, "$savegame_version", 32),
+	(try_end),	
 ]),
 
 #Kham
