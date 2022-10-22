@@ -139,10 +139,22 @@ simple_triggers = [
       (try_end),
       (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),  # TLD clear rumors in lords
         (troop_set_slot, ":troop_no", slot_troop_rumor_check, 0),
+        #Friendship Rewards Begin
+        (try_begin),
+                #Give some friendship reward progress for lords who already like the player
+                (call_script, "script_troop_get_player_relation", ":troop_no"),
+                (assign, ":player_relation", reg0),
+                #Must have at least 20 relation to get friendship reward
+                (ge, ":player_relation", 20),
+                (val_div, ":player_relation", 5),
+                (call_script, "script_lord_friendship_reward_progress", ":troop_no", ":player_relation"),
+        (try_end),
+        #Friendship Rewards End
       (try_end),
       (try_for_range, ":troop_no", weapon_merchants_begin, mayors_end), # TLD clear rumors in merchants/elders
         (troop_set_slot, ":troop_no", slot_troop_rumor_check, 0),
       (try_end),
+
   ]),
   # (9)
   (4.15,[(try_begin),

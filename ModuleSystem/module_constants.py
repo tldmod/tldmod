@@ -2794,11 +2794,18 @@ slot_troop_troll_armoured_variant = 164 #Gets the armoured variant of a troll tr
 #Retainers Begin
 
 slot_troop_retainer_troop = 165 #What type of troop (if any) a lord uses as their personal retainers
-slot_troop_friendship_reward = 166 #Lord wants to give the player a gift (may store *type* of gift in the future)
-slot_troop_friendship_roll = 167 #Stores a friendship roll ahead of time so it can't be cheesed by saving before quest turn in
-slot_troop_friendship_reward_hours = 168 #Last time a lord gave a friendship reward, used to limit reward frequency
+
+#Retainers End
+
+#Friendship Rewards Begin
+
+slot_troop_friendship_reward_type = 166 #Type of gift lord wants to give player (troops, gear, etc)
+slot_troop_friendship_reward_progress = 167 #Progress towards next friendship reward
+slot_troop_friendship_reward_id = 168 #ID of the gift the lord plans to give (troop id for troops, item id for gear, etc)
 
 friendship_reward_none = 0
 friendship_reward_troops = 1
+friendship_reward_gear = 2
+friendship_reward_end = 3
 
-#Retainers End
+#Friendship Rewards End
