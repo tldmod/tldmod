@@ -251,7 +251,6 @@ field_ai_triggers = [
    # based on if closest 3 enemies are within 5 meters and if currently attacking/defending.
   
  [
-
   (try_for_agents, ":agent"), # Run through all active NPCs on the battle field.
      # Hasn't been defeated.
     (agent_is_alive, ":agent"),
@@ -302,16 +301,26 @@ field_ai_triggers = [
              (else_try),
     
     # Still mounted
-                (agent_get_position, pos1, ":agent"),    
-                (call_script, "script_get_closest3_distance_of_enemies_at_pos1", ":team", pos1),
-                (assign, ":avg_dist", reg0), # Find distance of nearest 3 enemies
+                (agent_get_position, pos1, ":agent"),
+                (agent_get_speed, pos10, ":agent"),
+                (position_get_y, ":speed", pos10),                
+                # (call_script, "script_get_closest3_distance_of_enemies_at_pos1", ":team", pos1),
+                # (assign, ":avg_dist", reg0), # Find distance of nearest 3 enemies
+                (agent_ai_get_cached_enemy, ":enemy_agent", ":agent", 0), #InVain: get closest cached enemy instead
+                (ge, ":enemy_agent", 0),              
+                (agent_is_active, ":enemy_agent"),
+                (agent_is_alive, ":enemy_agent"),
+                (agent_is_human, ":enemy_agent"),
+                (agent_get_position, pos2, ":enemy_agent"),
+                (get_distance_between_positions, ":dist", pos1, pos2),
     
      #SHOULD CLOSEST MATTER???
                 (try_begin),
-                    (lt, ":avg_dist", 500), # Are the enemies within 5 meters?
-                    (agent_get_combat_state, ":combat", ":agent"),
-                    (gt, ":combat", 3), # Agent currently in combat? ...avoids switching before contact
                     (eq, ":wielded", ":lance"), # Still using lance?
+                    (lt, ":dist", 500), # Are the enemies within 5 meters? (InVain: changed to closest cached enemy only)
+                    (lt, ":speed", 300), #slowed down? (InVain)
+                    (agent_get_combat_state, ":combat", ":agent"),
+                    (gt, ":combat", 3), # Agent currently in combat? ...avoids switching before contact                    
                       (try_begin),
                             (gt, ":shield_order", 0),
                           (assign, ":inc_two_handers", 0),
@@ -320,8 +329,9 @@ field_ai_triggers = [
                       (try_end),
                     (call_script, "script_weapon_use_backup_weapon", ":agent", ":inc_two_handers"), # Then equip a close weapon
                 (else_try),
+                    (gt, ":dist", 500),
                     (neq, ":wielded", ":lance"), # Enemies farther than 5 meters and/or not fighting, and not using lance?
-                     (neg|agent_slot_eq, ":agent", slot_team_shield_order, 2), #Not commanded to use side-arms
+                    (neg|agent_slot_eq, ":agent", slot_team_shield_order, 2), #Not commanded to use side-arms
                     (agent_set_wielded_item, ":agent", ":lance"), # Then equip it!
                 (try_end),
              (try_end),
@@ -330,6 +340,7 @@ field_ai_triggers = [
           (party_slot_eq, "p_main_party", slot_party_pref_wu_harcher, 1),
           (agent_get_slot, ":bow", ":agent", slot_agent_horsebow),
           (gt, ":bow", 0),  # Horse archer?
+          (eq,"$field_ai_horse_archer",0), #InVain: Only if horse archer AI is turned off, avoids conflicts
           (neq, ":fire_order", aordr_hold_your_fire), #Not ordered to hold fire
     
      # Get wielded item.
