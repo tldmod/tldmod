@@ -5431,6 +5431,7 @@ scripts = [
             
             (try_begin),
                 (eq, ":stack_troop_new", "trp_player"),
+                (gt, ":agi_wp_bonus", 2),
                 (display_message, "@You gained {reg84} weapon points from your agility."),
             (try_end),
         (try_end),
