@@ -1,41 +1,41 @@
-; imod_plain|Plain %s
-; imod_cracked|Poor %s
-; imod_rusty|Crude %s
-; imod_bent|Bent %s
-; imod_chipped|Chipped %s
-; imod_battered|Battered %s
-; imod_poor|Poor %s
-; imod_crude|Simple %s
-; imod_old|Ancient %s
-; imod_cheap|Cheap %s
-; imod_fine|Fine %s
-; imod_well_made|Well Made %s
-; imod_sharp|Sharp %s
-; imod_balanced|Balanced %s
-; imod_tempered|Tempered %s
-; imod_deadly|Deadly %s
-; imod_exquisite|Exquisite %s
-; imod_masterwork|Masterwork %s
-; imod_heavy|Heavy %s
-; imod_strong|Strong %s
-; imod_powerful|Powerful %s
-; imod_tattered|Tattered %s
-; imod_ragged|Rough %s
-; imod_rough|Rough %s
-; imod_sturdy|Sturdy %s
-; imod_thick|Robust %s
-; imod_hardened|Hardened %s
-; imod_reinforced|Reinforced %s
-; imod_superb|Superb %s
-; imod_lordly|Masterwork %s
-; imod_lame|Lame %s
-; imod_swaybacked|Swaybacked %s
+imod_plain|Polos %s
+imod_cracked|Buruk%s
+imod_rusty|Kasar %s
+imod_bent|Bengkok %s
+imod_chipped|Gempil %s
+imod_battered|Usang %s
+imod_poor|Buruk %s
+imod_crude|Sederhana %s
+imod_old|Kuno %s
+imod_cheap|Murah %s
+imod_fine|Baik %s
+imod_well_made|Terbaik %s
+imod_sharp|Tajam %s
+imod_balanced|Seimbang %s
+imod_tempered|Tempered %s
+imod_deadly|Mematikan %s
+imod_exquisite|Istimewa %s
+imod_masterwork|Mahakarya %s
+imod_heavy|Berat %s
+imod_strong|Kuat %s
+imod_powerful|Dahsyat %s
+imod_tattered|Tua %s
+imod_ragged|Kasar %s
+imod_rough|Kasar %s
+imod_sturdy|Kokoh %s
+imod_thick|Tangguh %s
+imod_hardened|Ditempa %s
+imod_reinforced|Ditambal %s
+; imod_cloak|%s with cloak
+imod_lordly|Mahakarya %s
+imod_lame|Payah %s
+imod_swaybacked|Lordosis %s
 ; imod_stubborn|Stubborn %s
 ; imod_timid|Timid %s
-; imod_meek|Meek %s
+; imod_meek|Blood-covered %s
 ; imod_spirited|Spirited %s
-; imod_champion|Champion %s
-; imod_fresh|Fresh %s
+imod_champion|Jawara %s
+imod_fresh|Segar %s
 ; imod_day_old|Day-old %s
 ; imod_two_day_old|Two Days-old %s
 ; imod_smelling|Smelling %s
