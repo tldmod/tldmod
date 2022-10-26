@@ -6225,7 +6225,11 @@ mission_templates = [ # not used in game
     [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[])
 	],tld_common_wb_muddy_water+[
 	(ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
-	(ti_before_mission_start, 0, 0, [], [(assign, "$dungeons_in_scene",1)]),	
+	(ti_before_mission_start, 0, 0, [], [(assign, "$dungeons_in_scene",1), 
+       ] + (is_a_wb_mt==1 and [
+        (scene_set_day_time, 12),
+       ] or []) + [
+    ]),	
 	dungeon_darkness_effect,
 ]),
 
