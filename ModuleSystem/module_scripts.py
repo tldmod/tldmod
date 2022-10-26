@@ -27645,6 +27645,7 @@ command_cursor_scripts = [
                     (troop_get_slot, ":stack_troop", "trp_temp_array_a", ":stack"),
                     (store_character_level, ":troop_level", ":stack_troop"),
                     (str_store_troop_name, s24, ":stack_troop"),
+                    (neg|troop_is_hero,":stack_troop"), #just in case
 
                     #See if this troop is higher level than the current best
                     (ge, ":troop_level", ":reward_troop_level"),
@@ -27687,6 +27688,11 @@ command_cursor_scripts = [
                     (assign, ":reward_troop_level", ":troop_level"),
                     (assign, ":reward_troop", ":stack_troop"),
                 (try_end),
+            (try_end),
+
+            (try_begin), #fallback option, incase something went wron
+                (eq, ":reward_troop", 0), 
+                (faction_get_slot, ":reward_troop", ":hero_fac", slot_faction_tier_5_troop),
             (try_end),
 
             (assign, reg40, ":reward_troop"),
