@@ -83,7 +83,7 @@ morale_scripts = [
 		(party_set_icon, ":party_id", ":icon"),
 	]),
 
-	# script_cf_get_tier_morale
+	# script_cf_agent_get_tier_morale
 	# This script stores the agents tier morale based on level in reg0.
 	# param0 = agent
 	("cf_agent_get_tier_morale",
@@ -788,7 +788,7 @@ morale_scripts = [
 	]),
 
 	# This script finds a position at the border nearest to the agent
-	#
+	# script_find_exit_position_at_pos4
 	("find_exit_position_at_pos4", 
 	[
 		(store_script_param, ":agent_no", 1),
@@ -870,25 +870,25 @@ morale_scripts = [
     [
 	(try_begin),
 		(lt,"$allies_coh",75),
-              	(store_random_in_range,":routed",1,101),
-              	(assign,":chance_ply",80),
-              	(val_sub,":chance_ply","$allies_coh"),
-                (try_begin),            
-                  	(le,":routed",":chance_ply"),                   
-                  	(call_script, "script_flee_allies"),
-                  	(display_message,"@Morale of your troops wavers!",color_bad_news),      
-		(try_end),
+        (store_random_in_range,":routed",1,101),
+        (assign,":chance_ply",80),
+        (val_sub,":chance_ply","$allies_coh"),
+        (try_begin),            
+            (le,":routed",":chance_ply"),                   
+            (call_script, "script_flee_allies"),
+            (display_message,"@Morale of your troops wavers!",color_bad_news),      
+        (try_end),
 	(try_end),
 
 	(try_begin),
-              	(lt,"$enemies_coh",75),
-              	(store_random_in_range,":routed",1,101),
-              	(assign,":chance_ply",80),
-              	(val_sub,":chance_ply","$enemies_coh"),
+        (lt,"$enemies_coh",75),
+        (store_random_in_range,":routed",1,101),
+        (assign,":chance_ply",80),
+        (val_sub,":chance_ply","$enemies_coh"),
 		(try_begin),  
-                  	(le,":routed",":chance_ply"),                        
-                  	(call_script, "script_flee_enemies"),
-                  	(display_message,"@Morale of your enemies wavers!",color_good_news), 
+            (le,":routed",":chance_ply"),                        
+            (call_script, "script_flee_enemies"),
+            (display_message,"@Morale of your enemies wavers!",color_good_news), 
 		(try_end),            
 	(try_end),
      ]),
@@ -986,64 +986,67 @@ morale_scripts = [
         	(val_div,":chance_ply",2),
         	(store_random_in_range,":routed",1,101),
 		(try_begin),
-                	(le,":routed",":chance_ply"),
-			(agent_get_position,pos2,":agent"),
-			(position_move_z,pos2,200,0),
-                	(agent_clear_scripted_mode,":agent"),
+        
+        (le,":routed",":chance_ply"),
+        (agent_get_position,pos2,":agent"),
+        (position_move_z,pos2,200,0),
+                (agent_clear_scripted_mode,":agent"),
 
-            ] + ((is_a_wb_script==1) and [
-            
-            ## WB has an operation for fleeing - Kham
-            (agent_start_running_away, ":agent"),
-            (agent_set_slot, ":agent", slot_agent_is_running_away, 1),
-            
-            ] or [
-			
-			(call_script, "script_find_exit_position_at_pos4", ":agent"),
-			(agent_set_scripted_destination,":agent",pos4,1),
+        ] + ((is_a_wb_script==1) and [
+        
+        ## WB has an operation for fleeing - Kham
+        (agent_start_running_away, ":agent"),
+        (agent_set_slot, ":agent", slot_agent_is_running_away, 1),
+        
+        ] or [
+        
+        (call_script, "script_find_exit_position_at_pos4", ":agent"),
+        (agent_set_scripted_destination,":agent",pos4,1),
 
-			]) + [
+        ]) + [
 
         (try_end),
 	(end_try),	
      ]),
 
+    #script_flee_enemies
 	("flee_enemies",
 	[
 	(call_script, "script_find_exit_position_at_pos4", -1),
 
 	(try_for_agents,":agent"),
-         	(agent_is_alive,":agent"),
-         	(agent_is_human,":agent"),
-         	(neg|agent_is_ally,":agent"),
-         	(store_agent_hit_points,":hitpoints",":agent",0),
+        (agent_is_alive,":agent"),
+        (agent_is_human,":agent"),
+        (neg|agent_is_ally,":agent"),
+        (store_agent_hit_points,":hitpoints",":agent",0),
 		(agent_get_troop_id,":troop_type", ":agent"),
 		(store_character_level, ":troop_level", ":troop_type"),
 		(val_div,":troop_level",10),
 		(val_add,":hitpoints",":troop_level"),		 
-        	(assign,":chance_ply",100),
-         	(val_sub,":chance_ply",":hitpoints"),
-         	(val_sub,":chance_ply",4),
-         	(val_div,":chance_ply",2),
-         	(store_random_in_range,":routed",1,101),
+        (assign,":chance_ply",100),
+        (val_sub,":chance_ply",":hitpoints"),
+        (val_sub,":chance_ply",4),
+        (val_div,":chance_ply",2),
+            
+        (store_random_in_range,":routed",1,101),
 	 	(try_begin),
-                   	(le,":routed",":chance_ply"),
-                	(agent_get_position,pos2,":agent"),
-		 			(position_move_z,pos2,200,0),
-                    (agent_clear_scripted_mode,":agent"),
+            (le,":routed",":chance_ply"),
+            (agent_get_position,pos2,":agent"),
+            (position_move_z,pos2,200,0),
+            (agent_clear_scripted_mode,":agent"),
 
-					] + ((is_a_wb_script==1) and [
+            ] + ((is_a_wb_script==1) and [
 
-		            ## WB has an operation for fleeing - Kham
-		            (agent_start_running_away, ":agent"),
-		            (agent_set_slot, ":agent", slot_agent_is_running_away, 1),
-		            
-		            ] or [
-					
-					(call_script, "script_find_exit_position_at_pos4", ":agent"),
-					(agent_set_scripted_destination,":agent",pos4,1),
-					
-					]) + [
+            ## WB has an operation for fleeing - Kham
+            (agent_start_running_away, ":agent"),
+            (agent_set_slot, ":agent", slot_agent_is_running_away, 1),
+            
+            ] or [
+            
+            (call_script, "script_find_exit_position_at_pos4", ":agent"),
+            (agent_set_scripted_destination,":agent",pos4,1),
+            
+            ]) + [
 
         (try_end),
 	(end_try),	
@@ -1059,52 +1062,53 @@ morale_scripts = [
 	(assign, ":allies_routed", 0),
 	(assign, ":allies_total", 0),
 	(try_for_agents,":agent"),
-         	(agent_is_alive,":agent"),
-         	(agent_is_human,":agent"),
-         	(agent_is_ally,":agent"),
+        (agent_is_alive,":agent"),
+        (agent_is_human,":agent"),
+        (agent_is_ally,":agent"),
 		(get_player_agent_no, ":player_agent"),
 		(neq, ":player_agent", ":agent"),
 		(val_add, ":allies_total", 1),
 		#(assign, reg0, ":chance_ply"),
 		#(assign, reg1, ":routed"),
 		#(display_message, "@{reg1} less than {reg0}"),
-              	(try_begin),
+        (try_begin),
 			(call_script, "script_cf_agent_get_morale", ":agent"),
-         		(assign, ":chance_ply", reg1),
-         		(store_random_in_range,":routed",0,101),
-                   	(le,":routed",":chance_ply"),
+            (assign, ":chance_ply", reg1),
+            (store_random_in_range,":routed",0,101),
+            (le,":routed",":chance_ply"),
 		   	(agent_slot_eq, ":agent", slot_agent_routed, 0),
 		   	(agent_set_slot, ":agent", slot_agent_routed, 1),
-              		(agent_get_position,pos2,":agent"),
+            (agent_get_position,pos2,":agent"),
 		 	(position_move_z,pos2,200,0),
-                        (agent_clear_scripted_mode,":agent"),
+            (agent_clear_scripted_mode,":agent"),
                     
-                    ] + ((is_a_wb_script==1) and [
-						
-		            ## WB has an operation for fleeing - Kham
-		            (agent_start_running_away, ":agent"),
-		            (agent_set_slot, ":agent", slot_agent_is_running_away, 1),
-		            
-		            ] or [
-					
-					(call_script, "script_find_exit_position_at_pos4", ":agent"),
-					(agent_set_scripted_destination,":agent",pos4,1),
+            ] + ((is_a_wb_script==1) and [
+                
+            ## WB has an operation for fleeing - Kham
+            (agent_start_running_away, ":agent"),
+            (agent_set_slot, ":agent", slot_agent_is_running_away, 1),
+            
+            ] or [
+            
+            (call_script, "script_find_exit_position_at_pos4", ":agent"),
+            (agent_set_scripted_destination,":agent",pos4,1),
 
-					]) + [
+            ]) + [
 
-           	(try_end),
-		(try_begin),
+        (try_end),
+		
+        (try_begin),
 		   	(agent_slot_eq, ":agent", slot_agent_routed, 1),
 			(val_add, ":allies_routed", 1),
-       			(store_random_in_range,":rand",1,101),
+       		(store_random_in_range,":rand",1,101),
 			(lt, ":rand", 33), # 33% chance.
 			(agent_get_horse, ":horse", ":agent"),
 			(try_begin),
 				#(gt, ":horse", -1),
           			#(agent_set_animation, ":agent", "anim_nazgul_noooo_mounted_short"),
 			#(else_try),
-				(le, ":horse", -1),
-          			(agent_set_animation, ":agent", "anim_nazgul_noooo_short"),	
+			(le, ":horse", -1),
+          	(agent_set_animation, ":agent", "anim_nazgul_noooo_short"),	
 			(try_end),
 		(try_end),
 	(try_end),
@@ -1112,6 +1116,10 @@ morale_scripts = [
 	(assign, reg1, ":allies_routed"),	
      ]),
 
+    #script_rout_enemies
+    #output: 
+    #reg1 = enemies_routed
+    #reg0 = enemies_total
     ("rout_enemies",
     [
 	(call_script, "script_find_exit_position_at_pos4", -1),
@@ -1182,7 +1190,7 @@ morale_scripts = [
 	(assign,":num_allies_rallied",0),
 	(assign,":num_enemies_rallied",0),
 
-	(try_for_agents,":agent"),
+	(try_for_agents,":agent"), #allies
 		(agent_is_ally,":agent"),
 		(agent_is_human,":agent"),
 		(store_agent_hit_points,":hitpoints",":agent",0),
@@ -1199,7 +1207,8 @@ morale_scripts = [
 			(agent_slot_eq,":agent",slot_agent_rallied,1),
 			(val_add, ":num_allies_rallied", 1),
 		(try_end),
-	(else_try),
+	
+    (else_try), # enemies
 		(agent_is_human,":agent"),
 		(store_agent_hit_points,":hitpoints",":agent",0),
 		(agent_get_troop_id,":troop_type", ":agent"),
