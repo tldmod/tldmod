@@ -3589,7 +3589,7 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 			(try_begin), 						#sounds for alive horses
 				(agent_is_alive, ":mount"),
 				(store_random_in_range, ":random", 1, 101), 
-				(try_begin),(le, ":random", 7),(agent_play_sound, ":mount", "snd_horse_snort1"),(try_end),
+				(try_begin),(le, ":random", 3),(agent_play_sound, ":mount", "snd_horse_snort1"),(try_end),
 			(else_try), 						#sounds for dying horses
 				(agent_slot_eq, ":mount", slot_agent_mount_dead, 0),
 				(agent_play_sound, ":mount", "snd_neigh1"),
@@ -3611,7 +3611,7 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 				(agent_is_alive, ":mount"),
 				(is_between, ":item", item_warg_begin ,item_warg_end),
 				(val_add, "$wargs_in_battle", 1), #  wargs_in_battle++
-				(store_random_in_range, ":random", 1, 101), (le, ":random", 4),  # 4% of time
+				(store_random_in_range, ":random", 1, 101), (le, ":random", 2),  # 2% of time
 				#(display_message,"@warg says: 'woof, woof!'"),
 				(agent_play_sound, ":mount", "snd_warg_lone_woof"),
 			(else_try), 						#sounds for dying wargs
