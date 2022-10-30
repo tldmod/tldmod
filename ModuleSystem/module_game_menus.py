@@ -4931,7 +4931,7 @@ game_menus = [
               (call_script, "script_start_conversation_cutscene", "$g_tld_nazgul_state"),
             (else_try), 
               (eq, "$g_encountered_party_template", "pt_ents"),
-              (check_quest_active, "qst_investigate_fangorn"),
+              #(check_quest_active, "qst_investigate_fangorn"),
               (call_script,"script_fangorn_fight_ents"),
             (else_try), #normal dialogs
 			  (call_script, "script_setup_party_meeting", "$g_encountered_party"),
