@@ -859,7 +859,7 @@ morale_scripts = [
   #script_healthbars
     ("healthbars",
     [
-	(assign,reg1,"$allies_coh_base"),
+	(assign,reg1,"$allies_coh"),
 	(assign,reg2,"$enemies_coh"),
 	(assign,reg3,"$new_kills"),
 	(display_message,"@Your troops are at {reg1}% cohesion (+{reg3}% bonus), the enemy at {reg2}%!",0x6495ed),
@@ -1176,7 +1176,7 @@ morale_scripts = [
 
   
 
-  #script_coherence
+  #script_coherence, overhauled by InVain
     ("coherence",
     [
 	(get_scene_boundaries, pos3, pos4),	
@@ -1185,50 +1185,109 @@ morale_scripts = [
 	(assign,":coh_allies",0),
 	(assign,":num_enemies",0),
 	(assign,":coh_enemies",0),
-	(assign,":num_allies_alive",0),
-	(assign,":num_enemies_alive",0),
+	# (assign,":num_allies_alive",0),
+	# (assign,":num_enemies_alive",0),
 	(assign,":num_allies_rallied",0),
 	(assign,":num_enemies_rallied",0),
+ 	(assign,":num_allies_routed",0),
+	(assign,":num_enemies_routed",0),
+ 	(assign,":leadership_allies",0),
+	(assign,":leadership_enemies",0),      
 
 	(try_for_agents,":agent"), #allies
-		(agent_is_ally,":agent"),
 		(agent_is_human,":agent"),
-		(store_agent_hit_points,":hitpoints",":agent",0),
+        (agent_is_alive, ":agent"),
+		#(store_agent_hit_points,":hitpoints",":agent",0), #Invain: get rid of hitpoints on coherence level, only matters for agent morale 
 		(agent_get_troop_id,":troop_type", ":agent"),
 		(store_character_level, ":troop_level", ":troop_type"),
-		(val_mul,":hitpoints",":troop_level"),
-		(val_add,":num_allies", ":troop_level"),
-		(val_add,":coh_allies",":hitpoints"),
-		(try_begin),
-			(agent_is_alive, ":agent"),
-			(val_add, ":num_allies_alive", 1),
-		(try_end),
-		(try_begin),
-			(agent_slot_eq,":agent",slot_agent_rallied,1),
-			(val_add, ":num_allies_rallied", 1),
-		(try_end),
-	
-    (else_try), # enemies
-		(agent_is_human,":agent"),
-		(store_agent_hit_points,":hitpoints",":agent",0),
-		(agent_get_troop_id,":troop_type", ":agent"),
-		(store_character_level, ":troop_level", ":troop_type"),
-		(val_mul,":hitpoints",":troop_level"),
-		(val_add,":num_enemies", ":troop_level"),
-		(val_add,":coh_enemies",":hitpoints"),
-		(try_begin),
-			(agent_is_alive, ":agent"),
-			(val_add, ":num_enemies_alive", 1),
-		(try_end),
-		(try_begin),
-			(agent_slot_eq,":agent",slot_agent_rallied,1),
-			(val_add, ":num_enemies_rallied", 1),
-		(try_end),
-	(end_try),
+		(val_mul,":troop_level",4),  
 
-	# Difference between in battle agents.
-	(store_sub, ":advantage", ":num_allies_alive", ":num_enemies_alive"),
-	
+        (try_begin),
+            (agent_is_ally,":agent"), #allies
+            (val_add,":num_allies", 1), # troop count
+            (val_add,":coh_allies",":troop_level"), # average level
+            (try_begin),
+                (agent_slot_eq,":agent",slot_agent_rallied,1),
+                (val_add, ":num_allies_rallied", 1),
+            (try_end),
+            (try_begin),
+                (agent_slot_eq,":agent",slot_agent_routed,1),
+                (val_add, ":num_allies_routed", 1),
+            (try_end),
+            (try_begin),
+                (troop_is_hero,":troop_type"),
+                (store_skill_level, ":troop_leaderskip", skl_leadership, ":troop_type"),
+                (val_add, ":leadership_allies", ":troop_leaderskip"),
+                (this_or_next|eq, ":troop_type", "trp_player"), #double bonus for player or lords
+                (is_between, ":troop_type", kingdom_heroes_begin, kingdom_heroes_end),
+                (val_add, ":leadership_allies", ":troop_leaderskip"),
+            (try_end),
+            (try_begin),
+                (this_or_next|eq, ":troop_type", "trp_lothlorien_standard_bearer"),
+                (this_or_next|eq, ":troop_type", "trp_i5_greenwood_standard_bearer"),
+                (this_or_next|eq, ":troop_type", "trp_i6_rivendell_standard_bearer"),
+                (this_or_next|eq, ":troop_type", "trp_i5_isen_uruk_standard_bearer"),
+                (this_or_next|eq, ":troop_type", "trp_i5_mordor_uruk_standard_bearer"),
+                (this_or_next|eq, ":troop_type", "trp_i5_greenwood_standard_bearer"),
+                (eq, ":troop_type", "trp_i5_greenwood_standard_bearer"),
+                (val_add, ":leadership_allies", 2),
+            (try_end),
+            (try_begin),
+                (this_or_next|eq, ":troop_type", "trp_a6_ithilien_leader"),
+                (this_or_next|eq, ":troop_type", "trp_i6_loss_leader"),
+                (this_or_next|eq, ":troop_type", "trp_i6_pel_leader"),
+                (this_or_next|eq, ":troop_type", "trp_a6_pel_marine_leader"),
+                (this_or_next|eq, ":troop_type", "trp_c6_lam_leader"),
+                (this_or_next|eq, ":troop_type", "trp_c6_pinnath_leader"),
+                (this_or_next|eq, ":troop_type", "trp_c6_amroth_leader"),
+                (eq, ":troop_type", "trp_captain_of_gondor"),
+                (val_add, ":leadership_allies", 3),
+            (try_end),
+        
+        (else_try), # enemies
+            (val_add,":num_enemies", 1), # troop count
+            (val_add,":coh_enemies",":troop_level"), # average level
+            (try_begin),
+                (agent_slot_eq,":agent",slot_agent_rallied,1),
+                (val_add, ":num_enemies_rallied", 1),
+            (try_end),
+            (try_begin),
+                (agent_slot_eq,":agent",slot_agent_routed,1),
+                (val_add, ":num_enemies_routed", 1),
+            (try_end),
+        (try_end),        
+        (try_begin),
+                (troop_is_hero,":troop_type"),
+                (store_skill_level, ":troop_leaderskip", skl_leadership, ":troop_type"),
+                (val_add, ":leadership_enemies", ":troop_leaderskip"),
+                (this_or_next|eq, ":troop_type", "trp_player"), #double bonus for player or lords
+                (is_between, ":troop_type", kingdom_heroes_begin, kingdom_heroes_end),
+                (val_add, ":leadership_enemies", ":troop_leaderskip"),
+            (try_end),
+            (try_begin),
+                (this_or_next|eq, ":troop_type", "trp_lothlorien_standard_bearer"),
+                (this_or_next|eq, ":troop_type", "trp_i5_greenwood_standard_bearer"),
+                (this_or_next|eq, ":troop_type", "trp_i6_rivendell_standard_bearer"),
+                (this_or_next|eq, ":troop_type", "trp_i5_isen_uruk_standard_bearer"),
+                (this_or_next|eq, ":troop_type", "trp_i5_mordor_uruk_standard_bearer"),
+                (this_or_next|eq, ":troop_type", "trp_i5_greenwood_standard_bearer"),
+                (eq, ":troop_type", "trp_i5_greenwood_standard_bearer"),
+                (val_add, ":leadership_enemies", 2),
+            (try_end),
+            (try_begin),
+                (this_or_next|eq, ":troop_type", "trp_a6_ithilien_leader"),
+                (this_or_next|eq, ":troop_type", "trp_i6_loss_leader"),
+                (this_or_next|eq, ":troop_type", "trp_i6_pel_leader"),
+                (this_or_next|eq, ":troop_type", "trp_a6_pel_marine_leader"),
+                (this_or_next|eq, ":troop_type", "trp_c6_lam_leader"),
+                (this_or_next|eq, ":troop_type", "trp_c6_pinnath_leader"),
+                (this_or_next|eq, ":troop_type", "trp_c6_amroth_leader"),
+                (eq, ":troop_type", "trp_captain_of_gondor"),
+                (val_add, ":leadership_enemies", 3),
+            (try_end),
+        
+    (try_end), #end try for agents
+
 	(try_begin),
 		(gt,":num_allies",0),
 		(val_div,":coh_allies",":num_allies"),
@@ -1236,9 +1295,68 @@ morale_scripts = [
 		(assign, ":coh_allies", 0),
 	(try_end),
 
-	(assign,"$allies_coh_base",":coh_allies"),
-	(val_add, "$allies_coh_base", ":advantage"),
-	(val_add, "$allies_coh_base", ":num_allies_rallied"),
+	(try_begin),
+		(gt,":num_enemies",0),
+		(val_div,":coh_enemies",":num_enemies"),
+	(else_try),
+		(assign, ":coh_enemies", 0),
+	(try_end),
+
+    # (assign, reg74, ":num_allies"),
+    # (assign, reg75, ":coh_allies"),
+    # (assign, reg76, ":leadership_allies"),
+
+    # (display_message, "@allies: {reg74}, base coherence {reg75}, leaderhsip {reg76}"),
+    
+    # (assign, reg74, ":num_enemies"),
+    # (assign, reg75, ":coh_enemies"),
+    # (assign, reg76, ":leadership_enemies"),
+    
+    # (display_message, "@enemies: {reg74}, base coherence {reg75}, leaderhsip {reg76}"), 
+    
+	# Difference between in battle agents.
+	#(store_sub, ":advantage", ":num_allies", ":num_enemies"), #InVain: use relative advantage instead
+    (store_mul, ":advantage", ":num_enemies", 100),
+    (val_div, ":advantage", ":num_allies"),
+    (val_clamp, ":advantage", 50, 200), #up to twice outnumbered for any side
+    (val_sub, ":advantage", 100), #reduce gap: -50 to 100
+    (val_div, ":advantage", 3), #-16 to 33; tweakable
+    (val_add, ":advantage", 100), #84 to 133
+
+    # (assign, reg74, ":advantage"),
+    # (display_message, "@advantage {reg74}"),   
+
+    (val_mul, ":coh_allies", 100),
+    (val_div, ":coh_allies", ":advantage"), #75 to 119 %    
+    
+	(val_add, ":coh_allies", ":num_allies_rallied"),
+	(assign,"$allies_coh",":coh_allies"),
+    
+    (val_mul, ":coh_enemies", ":advantage"),
+    (val_div, ":coh_enemies", 100), #84 to 133%, slight buff for enemies
+
+	(assign,"$enemies_coh",":coh_enemies"),    
+	(val_add, "$enemies_coh", ":num_enemies_rallied"),
+
+
+    #leadership bonus and player kills
+    #(val_div, ":leadership_allies", 2), #tweakable
+	(val_add,"$allies_coh",":leadership_allies"),
+	(val_add,"$allies_coh","$new_kills"),
+
+    #(val_div, ":leadership_enemies", 2), #tweakable
+	(val_add,"$enemies_coh",":leadership_enemies"),
+
+    #party morale (allies only)
+    (party_get_morale, ":party_morale", p_main_party),
+    (val_add, ":party_morale", 20), #add a bit of leeway, tweakable
+    (val_mul, "$allies_coh", ":party_morale"),
+    (val_div, "$allies_coh", 100),
+
+	(try_begin),
+		(lt, "$allies_coh", 0),
+		(assign, "$allies_coh", 0),
+	(try_end),
 
 	# Nazgul penalty
 	(try_begin),
@@ -1248,33 +1366,13 @@ morale_scripts = [
 		(agent_get_team, ":player_team", ":player"),
 		(try_begin),
 			(teams_are_enemies, "$nazgul_team", ":player_team"),
-			(val_sub, "$allies_coh_base", ":nazgul_penalty"),
+			(val_sub, "$allies_coh", ":nazgul_penalty"),
 			(val_add, "$enemies_coh", ":nazgul_penalty"),
 		(else_try),
 			(val_sub, "$enemies_coh", ":nazgul_penalty"),
-			(val_add, "$allies_coh_base", ":nazgul_penalty"),
+			(val_add, "$allies_coh", ":nazgul_penalty"),
 		(try_end),
 	(try_end),
-
-	(try_begin),
-		(lt, "$allies_coh_base", 0),
-		(assign, "$allies_coh_base", 0),
-	(try_end),
-
-	(assign,"$allies_coh","$allies_coh_base"),
-
-	(try_begin),
-		(gt,":num_enemies",0),
-		(val_div,":coh_enemies",":num_enemies"),
-	(else_try),
-		(assign, ":coh_enemies", 0),
-	(try_end),
-
-	(assign,"$enemies_coh",":coh_enemies"),
-	(val_sub, "$enemies_coh", ":advantage"),
-	(val_add, "$enemies_coh", ":num_enemies_rallied"),
-
-	(val_add,"$allies_coh","$new_kills"),
 
 	(try_begin),
 		(lt|this_or_next, "$enemies_coh", 0),
