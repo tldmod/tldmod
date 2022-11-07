@@ -1114,6 +1114,7 @@ morale_scripts = [
 	(try_end),
 	(assign, reg0, ":allies_total"),
 	(assign, reg1, ":allies_routed"),	
+    (val_sub, "$allies_coh_modifier", ":allies_routed")
      ]),
 
     #script_rout_enemies
@@ -1172,6 +1173,7 @@ morale_scripts = [
 	(try_end),
 	(assign, reg0, ":enemies_total"),
 	(assign, reg1, ":enemies_routed"),
+    (val_sub, "$enemies_coh_modifier", ":enemies_routed")
     ]),  
 
   
@@ -1353,6 +1355,10 @@ morale_scripts = [
     (val_mul, "$allies_coh", ":party_morale"),
     (val_div, "$allies_coh", 100),
 
+    #coherence modifier (battle events, normalized over time)
+    (val_add, "$allies_coh", "$allies_coh_modifier"),
+    (val_add, "$enemies_coh", "$enemies_coh_modifier"),
+
 	(try_begin),
 		(lt, "$allies_coh", 0),
 		(assign, "$allies_coh", 0),
@@ -1385,4 +1391,13 @@ morale_scripts = [
 		(assign, "$allies_coh", 0),
 	(try_end),
      ]),  
+
+  #script_normalize_coherence_modifier by InVain: Reduces any temporary positive or negative coherence effects by 2/3 per tick
+    ("normalize_coherence_modifier",
+    [
+	(val_mul,"$allies_coh_modifier", 2),
+    (val_div,"$allies_coh_modifier", 3),
+	(val_mul,"$enemies_coh_modifier", 2),
+    (val_div,"$enemies_coh_modifier", 3),
+     ]),
 ]

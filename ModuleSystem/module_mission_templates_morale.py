@@ -17,7 +17,7 @@ tld_morale_triggers = [
  	# This trigger always happens to prevent a "you killed 30000 troops in this battle." bug when you turn battle morale on
 	# after it was turned off for some time. -CC
 
-     	(1, 0, ti_once, [], [
+     	(2, 0, ti_once, [], [
         	(get_player_agent_kill_count,"$base_kills",0),
         	(assign,"$new_kills_a",0),
 		(assign,"$new_kills",0),
@@ -27,6 +27,8 @@ tld_morale_triggers = [
 			(call_script, "script_coherence"),    
 			(call_script, "script_healthbars"),
 		(try_end),
+        (assign, "$allies_coh_modifier", 50), #set initial coherence bonus, will lower over time
+        (assign, "$enemies_coh_modifier", 50),
         	#(assign,"$new_enemy_kills_a",0),
 		#(assign,"$new_enemy_kills",0),
     	]),
@@ -297,7 +299,8 @@ tld_morale_triggers = [
 	# morale check (changed from 15)
 	(30, 0, 10, [(eq, "$tld_option_morale", 1)], 
 	[
-		(call_script, "script_coherence"),    
+		(call_script, "script_coherence"),
+        (call_script, "script_normalize_coherence_modifier"),            
 		(call_script, "script_morale_check"),    
         ]),
 
