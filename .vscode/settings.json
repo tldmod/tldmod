@@ -1,0 +1,14 @@
+{ // swy: make imports from the various ModuleSystem sub-folders work on Visual Studio Code, without this it can't find the values of things like trp_ or itm_ constants: https://stackoverflow.com/questions/65200732/vscode-settings-for-pylance
+    "python.autoComplete.extraPaths": [
+        "ModuleSystem/Data",
+        "ModuleSystem/Header",
+        "ModuleSystem/ID",
+        "ModuleSystem/Process",
+    ],
+    "python.analysis.extraPaths": [
+        "ModuleSystem/Data",
+        "ModuleSystem/Header",
+        "ModuleSystem/ID",
+        "ModuleSystem/Process"
+    ]
+}
