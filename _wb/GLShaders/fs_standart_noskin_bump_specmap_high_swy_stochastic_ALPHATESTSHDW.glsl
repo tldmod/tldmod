@@ -1,4 +1,3 @@
-#version 130
 
 uniform sampler2D diffuse_texture;
 uniform sampler2D specular_texture;
@@ -78,6 +77,7 @@ void TriangleGrid(vec2 uv,
 
 vec4 stochasticTex2D(sampler2D texSampler, vec2 uvCoords, bool gammaCorrect) /* swy: use gamma-correction only for diffuse/real-color textures, not for things like normal or specular maps */
 {
+#ifdef STOCHASTIC_ENABLED
     float w1, w2, w3; ivec2 vertex1, vertex2, vertex3;
     TriangleGrid(uvCoords, w1, w2, w3, vertex1, vertex2, vertex3);
     
@@ -101,6 +101,9 @@ vec4 stochasticTex2D(sampler2D texSampler, vec2 uvCoords, bool gammaCorrect) /* 
             we could also use some kind of height blending, by exploiting the .z channels of
             normalmaps or the albedo itself with some RGB tweaking */
     return (w1 * texA) + (w2 * texB) + (w3 * texC);
+#else
+    vec4 tex = texture2D(texSampler, uvCoords); if (gammaCorrect) tex.rgb = pow(tex.rgb, vec3(2.2)); return tex;
+#endif
 }
 
 
