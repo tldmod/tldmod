@@ -182,12 +182,12 @@ morale_scripts = [
 			(store_skill_level,":leader","skl_leadership",reg0),
 		(try_end),
 		(val_div,":troop_level", 10),
-         	(val_div,":hitpoints", 2),
-         	(assign,reg1,100),		
-						
-         	(val_sub,reg1,":hitpoints"),
-         	(val_sub,reg1,":leader"),
-         	(val_sub,reg1,":troop_level"),
+        (val_div,":hitpoints", 2),
+        (assign,reg1,100),		
+                    
+        (val_sub,reg1,":hitpoints"),
+        (val_sub,reg1,":leader"),
+        (val_sub,reg1,":troop_level"),
 
 		(try_begin), # Ents, spies and berserkers don't flee.
 			(eq|this_or_next, ":troop_type", "trp_ent"),
@@ -219,28 +219,40 @@ morale_scripts = [
 			(assign, reg1, -100),
 		(else_try),
 		
-		#Map Morale Bonus / penalty - Kham
+		# #Map Morale Bonus / penalty - Kham #disabled, party morale now affects coherence instead
 		
-		(try_begin),
-			(agent_get_party_id, ":party_no", ":agent_no"),
-			(eq, ":party_no", "p_main_party"), #Only for Player Troops, so there are less AI routing.
-			(ge, ":party_no", 0),
-			(party_get_morale, ":map_morale", ":party_no"),
-			(try_begin),
-				(ge, ":map_morale", 75),
-				(val_sub, reg1, 15),
-			(else_try),
-				(is_between, ":map_morale", 50, 75),
-				(val_sub, reg1, 10),
-			(else_try),
-				(is_between, ":map_morale", 25, 50),
-				(val_add, reg1, 5),
-			(else_try),
-				(lt, ":map_morale", 25),
-				(val_add, reg1, 10),
-			(try_end),
-		(try_end),
+		# (try_begin),
+			# (agent_get_party_id, ":party_no", ":agent_no"),
+			# (eq, ":party_no", "p_main_party"), #Only for Player Troops, so there are less AI routing.
+			# (ge, ":party_no", 0),
+			# (party_get_morale, ":map_morale", ":party_no"),
+			# (try_begin),
+				# (ge, ":map_morale", 75),
+				# (val_sub, reg1, 15),
+			# (else_try),
+				# (is_between, ":map_morale", 50, 75),
+				# (val_sub, reg1, 10),
+			# (else_try),
+				# (is_between, ":map_morale", 25, 50),
+				# (val_add, reg1, 5),
+			# (else_try),
+				# (lt, ":map_morale", 25),
+				# (val_add, reg1, 10),
+			# (try_end),
+		# (try_end),
 
+
+    # Coherence bonus / penalty (Invain) #not used yet, doesn't make sense for current formula
+        # (try_begin),
+            # (agent_is_ally, ":agent_no"),
+            # (assign, ":coherence", "$coh_allies"),
+        # (else_try),
+            # (assign, ":coherence", "$coh_enemies"),
+        # (try_end),
+        
+        # (val_sub, ":coherence", 75),
+        # (val_sub, reg1, ":coherence")
+        
 
 		# leader bonuses -CC
 		(try_begin),
@@ -352,11 +364,20 @@ morale_scripts = [
 			(try_end),
 		(try_end),
 		
-		# Rallied agents are 20% less likely to flee.
-		(try_begin),
-			(agent_slot_eq, ":agent_no", slot_agent_rallied, 1),
-			(val_sub, reg1, 20),
-		(try_end),
+		# Rallied agents are 20% less likely to flee. #InVain: We use that slot for storing the general agent morale modifier instead, allows much more flexibility
+		# (try_begin),
+			# (agent_slot_eq, ":agent_no", slot_agent_morale_modifier, 1),
+			# (val_sub, reg1, 20),
+		# (try_end),
+        
+        #agent morale modifier (affected by ingame events)
+        (agent_get_slot, ":morale_modifier", ":agent_no", slot_agent_morale_modifier),
+        (val_sub, reg1, ":morale_modifier"),
+        
+        #normalise it with every check
+        (val_mul, ":morale_modifier", 2),
+        (val_div, ":morale_modifier", 3),
+        (agent_set_slot, ":agent_no", slot_agent_morale_modifier, ":morale_modifier"),
 
 		# Tier morale
 		(call_script, "script_cf_agent_get_tier_morale", ":agent_no"),
@@ -1209,7 +1230,7 @@ morale_scripts = [
             (val_add,":num_allies", 1), # troop count
             (val_add,":coh_allies",":troop_level"), # average level
             (try_begin),
-                (agent_slot_eq,":agent",slot_agent_rallied,1),
+                (agent_slot_eq,":agent",slot_agent_morale_modifier,1),
                 (val_add, ":num_allies_rallied", 1),
             (try_end),
             (try_begin),
@@ -1250,7 +1271,7 @@ morale_scripts = [
             (val_add,":num_enemies", 1), # troop count
             (val_add,":coh_enemies",":troop_level"), # average level
             (try_begin),
-                (agent_slot_eq,":agent",slot_agent_rallied,1),
+                (agent_slot_eq,":agent",slot_agent_morale_modifier,1),
                 (val_add, ":num_enemies_rallied", 1),
             (try_end),
             (try_begin),

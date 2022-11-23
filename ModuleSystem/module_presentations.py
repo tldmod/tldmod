@@ -3241,7 +3241,7 @@ presentations = [
         (agent_is_alive,":player_agent"), #  test for alive players.
         (agent_is_human, ":player_agent"),
         (assign, ":max_rallies", 1),
-        (agent_get_slot, ":times_rallied", ":player_agent", slot_agent_rallied),
+        (agent_get_slot, ":times_rallied", ":player_agent", slot_agent_morale_modifier),
         (store_attribute_level, ":cha", "trp_player", ca_charisma),
         (store_div, ":normal_rallies", ":cha", 5),
         (val_add, ":max_rallies", ":normal_rallies"),
