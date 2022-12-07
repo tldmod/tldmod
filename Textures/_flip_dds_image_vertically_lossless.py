@@ -94,10 +94,10 @@ def load_texture(file_path):
 if len(sys.argv) < 3:
     print("usage: source.dds output.dds")
     print("       (keep in mind that the resolution and number of mipmaps must match)")
-#    exit(-2)
+    exit(-2)
 
-src = '/home/swyter/.local/share/Steam/steamapps/common/MountBlade Warband/_renderdoc_dumped_tld_interface_corrupted_text.dds' # sys.argv[1]
-dst = src + '_flipped.dds' # sys.argv[2]
+src = sys.argv[1] # '/home/swyter/.local/share/Steam/steamapps/common/MountBlade Warband/_renderdoc_dumped_tld_interface_corrupted_text.dds'
+dst = sys.argv[2] # src + '_flipped.dds'
 
 src_t = load_texture(src)
 
@@ -105,7 +105,7 @@ src_t = load_texture(src)
 
 # swy: use the transparent texture as base; as it always has to be either DXT3 or DXT5,
 #      so it's a good template. if the mips didn't match it would be strange.
-dst_fin_t = copy.deepcopy(src_t)
+dst_fin_t = copy.deepcopy(src_t) # swy: i was getting mirrored images because i was writing in a mirrored copy of src_t by mistake; make dst_fin_t have its own buffer/copy of the data. lost a lot of time thanks to this :)
 
 offset_src = 0x80 # swy: end of the DDS header, start of the actual data
 offset_dst = offset_src
@@ -150,6 +150,10 @@ for mip in range(dst_fin_t['mipmaps']):
         block_data = dst_fin_t['data'][cur_offset:cur_offset + 16]
         block_data_src = copy.deepcopy(block_data)
 
+
+        # swy: reordering the BC3/DXT5 indices is a bit more involved than what one would expect, each palette index has 3 bits, so there are 4 of them every three 4-bit nibbles
+        #      as we don't need to swap the bits in the same row we don't need to edit the nibbles themselves, the bitflag struct field ordering makes this a bit of a chore
+
         # ____ ____/\____ ____/\____
         # 111
         #    2 22
@@ -159,10 +163,10 @@ for mip in range(dst_fin_t['mipmaps']):
         #                    6  66
         #                         77
 
-        # DE 13  1C 91 C9 1C 91 C9
+        # DE 13  1C 91 C9 1C 91 C9 (swy: example 1, maybe wrong, but we can see how the patterns move around without changing the nibbles themselves)
         # DE 13  99 CC 11 9C CC 11
 
-        # FF FF  12 34 56 78 9A BC
+        # FF FF  12 34 56 78 9A BC (swy: example 2, manually set the nibbles to be incremental and moved the indices around in the 010 editor template to get the thing below)
         # FF FF  C9 8B A7 63 25 41
 
         def top_nibble(val):
@@ -197,6 +201,7 @@ for mip in range(dst_fin_t['mipmaps']):
         block_data[14] = block_data_src[13]
         block_data[15] = block_data_src[12]
 
+        # swy: replace the whole block with the modified copy
         dst_fin_t['data'][cur_offset:cur_offset + 16] = block_data
 
     cur_width /= 2; cur_height /= 2
