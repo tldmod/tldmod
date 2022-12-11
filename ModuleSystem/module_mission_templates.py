@@ -2078,6 +2078,8 @@ mission_templates = [ # not used in game
 			(agent_get_horse,"$horse_player","$current_player_agent"), #checks for horse lameness in mission
 			(troop_get_inventory_slot_modifier,"$horse_mod","trp_player",8),
 			]),
+
+    #reinforcements
 	(1, 0, 5,  [
 			(lt,"$defender_reinforcement_stage",8),
 			(store_mission_timer_a,":mission_time"),
@@ -2086,7 +2088,19 @@ mission_templates = [ # not used in game
 			(lt,":num_defenders",10)
 			],[
 			(add_reinforcements_to_entry,0,10),
-			(val_add,"$defender_reinforcement_stage",1)]),
+			(val_add,"$defender_reinforcement_stage",1),
+            
+            #temporary morale boost
+            (ge, "$tld_option_morale", 1),
+            (get_player_agent_no, ":player"),
+            (agent_get_team, ":player_team", ":player"),
+            (try_begin),
+                (teams_are_enemies, 0, ":player_team"),
+                (val_add, "$enemies_coh_modifier", 20),
+            (else_try), 
+                (val_add, "$allies_coh_modifier", 20),
+            (try_end)]),
+            
 	(1, 0, 5, [
 			(lt,"$attacker_reinforcement_stage",8),
 			(store_mission_timer_a,":mission_time"),
@@ -2095,7 +2109,18 @@ mission_templates = [ # not used in game
 			(lt,":num_attackers",10)
 			],[
 			(add_reinforcements_to_entry,3,10),
-			(val_add,"$attacker_reinforcement_stage",1)]),
+			(val_add,"$attacker_reinforcement_stage",1),
+            
+            #temporary morale boost
+            (ge, "$tld_option_morale", 1),
+            (get_player_agent_no, ":player"),
+            (agent_get_team, ":player_team", ":player"),
+            (try_begin),
+                (teams_are_enemies, 0, ":player_team"),
+                (val_add, "$enemies_coh_modifier", 20),
+            (else_try), 
+                (val_add, "$allies_coh_modifier", 20),
+            (try_end),]),
   
   #(0,0,0, [(key_clicked, key_b)],[(display_message, "@Mordor Cloud added"),(call_script, "script_set_mordor_cloud_scene_prop")]),
 

@@ -317,6 +317,26 @@ tld_morale_triggers = [
 		(call_script, "script_rout_check"),       
         ]),
 
+	] + ((is_a_wb_mt==1) and [	
+    # temporary coherence effect of killed friendlies/allies (WB only)
+    (ti_on_agent_killed_or_wounded, 0, 0, [],
+      [
+        (store_trigger_param_1, ":killed_agent"),
+        (agent_is_active, ":killed_agent"),
+        (agent_is_human, ":killed_agent"),
+        (gt, ":killed_agent", 0),
+        
+        (try_begin),
+            (agent_is_ally, ":killed_agent"),
+            (val_sub, "$allies_coh_modifier", 1),
+            #(val_add, "$enemies_coh_modifier", 1),
+        (else_try),
+           # (val_add, "$allies_coh_modifier", 1),
+            (val_sub, "$enemies_coh_modifier", 1), 
+        (try_end),             
+    ]),
+	] or []) + [
+
 	# Custom trigger, ensures agents get to position and when they do, remove them, but
 	# only after 90 seconds, to ensure agents have time to advance and engage in 
 	# battle before immediately fleeing, otherwise there is no fight. -CppCoder - Changed to 3.5 mins (kham)
@@ -362,8 +382,10 @@ tld_morale_triggers = [
 
 		(try_begin),
             		(gt,":more_kills","$new_kills_a"),
+                    (store_sub, ":recent_kills", ":more_kills", "$new_kills_a"),
+                    (val_add,"$allies_coh_modifier",":recent_kills"), #for temporary coherence effect
             		(assign,"$new_kills_a",":more_kills"),
-			(assign,"$new_kills",":more_kills"),
+			(assign,"$new_kills",":more_kills"), #/2 for permanent coherence effect
 			(val_div,"$new_kills",2),
             		(assign,reg1,":more_kills"),
             		(display_message,"@You have killed {reg1} enemies in this battle!",0x6495ed),         

@@ -592,7 +592,7 @@ qstr___Infantry_formation __Infantry_formation_disassembled.
 qstr___Cavalry_formation_ __Cavalry_formation_disassembled.
 qstr___Archer_formation_d __Archer_formation_disassembled.
 qstr_{s1}_has_fled_the_ba {s1}_has_fled_the_battle!
-qstr_Your_troops_are_at_{ Your_troops_are_at_{reg1}%_cohesion_(+{reg3}%_bonus),_the_enemy_at_{reg2}%!
+qstr_Your_side_is_at_{reg Your_side_is_at_{reg1}%_cohesion_({reg3}%_recent_events),_the_enemy_at_{reg2}%!
 qstr_Morale_of_your_troop Morale_of_your_troops_wavers!
 qstr_Morale_of_your_enemi Morale_of_your_enemies_wavers!
 qstr_Your_enemies_flee_in Your_enemies_flee_in_terror!

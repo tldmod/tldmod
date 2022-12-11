@@ -882,8 +882,8 @@ morale_scripts = [
     [
 	(assign,reg1,"$allies_coh"),
 	(assign,reg2,"$enemies_coh"),
-	(assign,reg3,"$new_kills"),
-	(display_message,"@Your troops are at {reg1}% cohesion (+{reg3}% bonus), the enemy at {reg2}%!",0x6495ed),
+	(assign,reg3,"$allies_coh_modifier"),
+	(display_message,"@Your side is at {reg1}% cohesion ({reg3}% recent events), the enemy at {reg2}%!",0x6495ed),
      ]),
 
   #script_morale_check
@@ -987,6 +987,7 @@ morale_scripts = [
 ## 		FLEEING SCRIPTS 		##
 ##==============================================##
 
+    #script_flee_allies
     ("flee_allies",
     [
 	(call_script, "script_find_exit_position_at_pos4", -1),
@@ -1077,6 +1078,7 @@ morale_scripts = [
 ## 		ROUTING SCRIPTS 		##
 ##==============================================##
 
+    #script_rout_allies
     ("rout_allies",
     [
 	(call_script, "script_find_exit_position_at_pos4", -1),

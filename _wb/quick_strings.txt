@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_521_wb__dev_^_B _rev_521_wb_|_dev_^_Built_2022-11-23_19:54___
+qstr__rev_525_wb__dev_^_B _rev_525_wb_|_dev_^_Built_2022-12-11_16:31___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -696,7 +696,7 @@ qstr_bodyguard bodyguard
 qstr_undetermined_type_of undetermined_type_of
 qstr_{!}battlegroup_get_a {!}battlegroup_get_action_radius:_negative_radius_for_team_{reg0}_division_{reg1}_formation_{reg2}
 qstr_{s1}_has_fled_the_ba {s1}_has_fled_the_battle!
-qstr_Your_troops_are_at_{ Your_troops_are_at_{reg1}%_cohesion_(+{reg3}%_bonus),_the_enemy_at_{reg2}%!
+qstr_Your_side_is_at_{reg Your_side_is_at_{reg1}%_cohesion_({reg3}%_recent_events),_the_enemy_at_{reg2}%!
 qstr_Morale_of_your_troop Morale_of_your_troops_wavers!
 qstr_Morale_of_your_enemi Morale_of_your_enemies_wavers!
 qstr_Your_enemies_flee_in Your_enemies_flee_in_terror!
