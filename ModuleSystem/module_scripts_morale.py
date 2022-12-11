@@ -1317,6 +1317,7 @@ morale_scripts = [
 		(gt,":num_allies",0),
 		(val_div,":coh_allies",":num_allies"),
 	(else_try),
+        (assign, ":num_allies", 1),
 		(assign, ":coh_allies", 0),
 	(try_end),
 
