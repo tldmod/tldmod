@@ -92,8 +92,6 @@ tld_morale_triggers = [
 			(val_add, ":times_rallied", 1),
 			(agent_set_slot, ":player", slot_agent_morale_modifier, ":times_rallied"),
             (val_add, "$allies_coh_modifier", ":rally_strength"),
-            (assign, reg78, ":rally_strength"),
-            (display_message, "@rally strength: {reg78}"),
 			(try_begin),
 				(agent_get_horse, ":horse", ":player"),
 				(ge, ":horse", 0),

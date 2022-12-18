@@ -242,16 +242,16 @@ morale_scripts = [
 		# (try_end),
 
 
-    # Coherence bonus / penalty (Invain) #not used yet, doesn't make sense for current formula
-        # (try_begin),
-            # (agent_is_ally, ":agent_no"),
-            # (assign, ":coherence", "$coh_allies"),
-        # (else_try),
-            # (assign, ":coherence", "$coh_enemies"),
-        # (try_end),
+    # Coherence bonus / penalty (Invain)
+        (try_begin),
+            (agent_is_ally, ":agent_no"),
+            (assign, ":coherence", "$allies_coh"),
+        (else_try),
+            (assign, ":coherence", "$enemies_coh"),
+        (try_end),
         
-        # (val_sub, ":coherence", 75),
-        # (val_sub, reg1, ":coherence")
+        (val_sub, ":coherence", 50), #coherence below increases chance of fleeing
+        (val_sub, reg1, ":coherence"),
         
 
 		# leader bonuses -CC
@@ -390,38 +390,6 @@ morale_scripts = [
 			(val_sub, reg1, ":morale_bonus"),
 		(try_end),
 
-		# Morale Buffs/Debuffs of Encounter Effects
-
- 	] + ((is_a_wb_script==1) and [
-		(try_begin),
-
-			(party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
-			(ge, ":encounter_effect", LORIEN_MIST), #Encounter effect present
-
-			(call_script, "script_cf_agent_get_faction", ":agent_no"),
-			(assign, ":faction_id", reg0),
-			(faction_get_slot, ":faction_side", ":faction_id", slot_faction_side),
-			(gt, ":faction_id", -1),
-
-			(try_begin),
-				(eq, ":encounter_effect", LORIEN_MIST),
-				(try_begin),
-					(eq, ":faction_side", faction_side_good),
-					(val_sub, reg1, ENCOUNTER_EFFECT_MORALE_BUFF),
-				(else_try),
-					(val_add, reg1, ENCOUNTER_EFFECT_MORALE_DEBUFF),
-				(try_end),
-			(else_try),
-				(is_between, ":encounter_effect", SAURON_DARKNESS, END_EFFECTS),
-				(try_begin),
-					(eq, ":faction_side", faction_side_good),
-					(val_add, reg1, ENCOUNTER_EFFECT_MORALE_DEBUFF),
-				(else_try),
-					(val_sub, reg1, ENCOUNTER_EFFECT_MORALE_BUFF),
-				(try_end),
-			(try_end),
-		(try_end),
-	] or []) + [
 
 	]),
 
@@ -896,7 +864,7 @@ morale_scripts = [
         (val_sub,":chance_ply","$allies_coh"),
         (try_begin),            
             (le,":routed",":chance_ply"),                   
-            (call_script, "script_flee_allies"),
+            (call_script, "script_rout_allies"),
             (display_message,"@Morale of your troops wavers!",color_bad_news),      
         (try_end),
 	(try_end),
@@ -908,7 +876,7 @@ morale_scripts = [
         (val_sub,":chance_ply","$enemies_coh"),
 		(try_begin),  
             (le,":routed",":chance_ply"),                        
-            (call_script, "script_flee_enemies"),
+            (call_script, "script_rout_enemies"),
             (display_message,"@Morale of your enemies wavers!",color_good_news), 
 		(try_end),            
 	(try_end),
@@ -1403,6 +1371,46 @@ morale_scripts = [
 			(val_add, "$allies_coh", ":nazgul_penalty"),
 		(try_end),
 	(try_end),
+
+		# Morale Buffs/Debuffs of Encounter Effects (moved from agent morale)
+
+ 	] + ((is_a_wb_script==1) and [
+		(try_begin),
+
+			(party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
+			(ge, ":encounter_effect", LORIEN_MIST), #Encounter effect present
+
+			(faction_get_slot, ":allies_faction_side", "$players_kingdom", slot_faction_side),
+            (store_faction_of_party, ":enemy_faction", "$g_enemy_party"),
+            (faction_get_slot, ":enemies_faction_side", ":enemy_faction", slot_faction_side),            
+
+			(try_begin), #good side effects
+				(eq, ":encounter_effect", LORIEN_MIST),
+				(try_begin),
+					(eq, ":allies_faction_side", faction_side_good),
+					(val_add, "$allies_coh", ENCOUNTER_EFFECT_MORALE_BUFF),
+                    (val_sub, "$enemies_coh", ENCOUNTER_EFFECT_MORALE_DEBUFF),
+				(else_try),
+					(val_sub, "$allies_coh", ENCOUNTER_EFFECT_MORALE_DEBUFF),
+                    (val_add, "$enemies_coh", ENCOUNTER_EFFECT_MORALE_BUFF),
+				(try_end),
+			(else_try), #evil side effects
+				(is_between, ":encounter_effect", SAURON_DARKNESS, END_EFFECTS),
+				(try_begin),
+					(eq, ":allies_faction_side", faction_side_good),
+					(val_sub, "$allies_coh", ENCOUNTER_EFFECT_MORALE_BUFF),
+                    (val_add, "$enemies_coh", ENCOUNTER_EFFECT_MORALE_BUFF),
+				(else_try),
+                    (eq, ":enemies_faction_side", faction_side_good),
+					(val_sub, "$allies_coh", ENCOUNTER_EFFECT_MORALE_DEBUFF),
+                    (val_add, "$enemies_coh", ENCOUNTER_EFFECT_MORALE_BUFF),
+                (else_try), #if both sides are evil (hand vs. eye), both get buffed
+                    (val_add, "$allies_coh", ENCOUNTER_EFFECT_MORALE_BUFF),
+                    (val_add, "$enemies_coh", ENCOUNTER_EFFECT_MORALE_BUFF),
+				(try_end),
+			(try_end),
+		(try_end),
+	] or []) + [
 
 	(try_begin),
 		(lt|this_or_next, "$enemies_coh", 0),

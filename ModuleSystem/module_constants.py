@@ -2291,7 +2291,7 @@ tld_morale_leader_urukhai	= 25 # Uruk hai, when leader falls
 tld_morale_bonus_easterlings	= 20
 tld_morale_bonus_elves		= 35
 
-tld_morale_rout			= 60
+tld_morale_rout			= 40
 
 tld_morale_rout_allies		= -tld_morale_rout
 tld_morale_rout_enemies		= tld_morale_rout
