@@ -691,7 +691,7 @@ qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_You_yell_for_your_ho You_yell_for_your_horse.
 qstr_You_do_not_need_to_r You_do_not_need_to_rally_your_troops_yet.
-qstr_You_rally_your_troop You_rally_your_troops!
+qstr_You_rally_{reg10}_tr You_rally_{reg10}_troops!
 qstr_{s5}_rallies_{reg65? {s5}_rallies_{reg65?her:his}_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
 qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
