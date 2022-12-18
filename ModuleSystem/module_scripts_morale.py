@@ -1334,6 +1334,7 @@ morale_scripts = [
 
 
     #leadership bonus and player kills
+    (assign, "$allies_leadership", ":leadership_allies"), #store collective leadership for outside use
     #(val_div, ":leadership_allies", 2), #tweakable
 	(val_add,"$allies_coh",":leadership_allies"),
 	(val_add,"$allies_coh","$new_kills"),

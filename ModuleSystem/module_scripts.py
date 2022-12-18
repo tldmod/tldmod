@@ -1965,6 +1965,7 @@ scripts = [
     (assign, "$rescue_convo_troop", 3),
     (assign, "$tld_options_overlay_14", 2),
     (assign, "$g_display_agent_labels", 2),
+    (assign, "$allies_leadership", 2),
 
     (val_mul, "$hold_f1", "$cheatmode_used"),
     (val_mul, "$hold_f1", "$original_savegame_version"),
@@ -1978,6 +1979,7 @@ scripts = [
     (val_mul, "$attacker_archer_melee", "$rescue_convo_troop"),   
     (val_mul, "$attacker_archer_melee", "$tld_options_overlay_14"),   
     (val_mul, "$attacker_archer_melee", "$g_display_agent_labels"),  
+    (val_mul, "$attacker_archer_melee", "$allies_leadership"),  
 
 	#Kham - Squelch compiler warnings END
 	
