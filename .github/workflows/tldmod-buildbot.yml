@@ -26,7 +26,7 @@ jobs:
                          curl        \
                          sed         \
                          grep        \
-                         lib32gcc1   \
+                         lib32gcc-s1 \
                          jq
 
     - name: Find if we're a normal nightly run or a Workshop build
