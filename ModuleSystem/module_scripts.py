@@ -713,10 +713,16 @@ scripts = [
 ("game_get_join_cost",
   [ (store_script_param_1, ":troop_id"),
 	(store_character_level, ":troop_level", ":troop_id"),
+    (party_get_slot, ":relation", "$current_town", slot_center_player_relation),
 	(call_script, "script_game_get_troop_wage", ":troop_id",0),
 	(store_mul, ":join_cost", reg0, ":troop_level"), # join cost: Wage*troop level: Higher level troops are expensive to recruit
-	(val_mul, ":join_cost", 3),
-	(val_div, ":join_cost", 4),
+	#(val_mul, ":join_cost", 2),
+	(val_div, ":join_cost", 2),
+    
+    (store_sub, ":relation_mod", 120, ":relation"),
+    (val_mul,  ":join_cost", ":relation_mod"),
+    (val_div, ":join_cost", 100),
+    
     
     # trait discounts: 75% of the original price
     (store_troop_faction, ":troop_faction", ":troop_id"),
@@ -783,9 +789,9 @@ scripts = [
 		(try_end),
 
 		(assign, ":perc", 40), # base: 80 percent #InVain: Halved all values, because script_game_get_join_cost changed to exponential growth (with troop level)
-		(try_begin),(eq,":origin",0), (assign, ":perc", 35), (try_end), # from map: 70%
-		(try_begin),(eq,":origin",1), (assign, ":perc", 40), (try_end), # to city garrison: 80%
-		(try_begin),(eq,":origin",2), (assign, ":perc", 45), (try_end), # to war party: 90%
+		(try_begin),(eq,":origin",0), (assign, ":perc", 25), (try_end), # from map: 70%
+		(try_begin),(eq,":origin",1), (assign, ":perc", 35), (try_end), # to city garrison: 80%
+		(try_begin),(eq,":origin",2), (assign, ":perc", 40), (try_end), # to war party: 90%
 		(try_begin),(eq,":wounded",1),(val_sub,":perc", 15), (try_end), # if wounded: -30%
 		
 		(call_script, "script_game_get_join_cost", ":troop_id"),
@@ -885,6 +891,14 @@ scripts = [
       
 	  (try_begin),
 		(neg|is_between, ":troop_faction", kingdoms_begin, kingdoms_end), # bandits are free
+		(assign, reg0, 0),
+      (try_end),
+
+	  (try_begin), #after war of the two towers has started, remaining enemy side troops in player party are free
+		(gt, "$tld_war_began", 1),
+        (faction_get_slot, ":troop_side", ":troop_faction", slot_faction_side),
+        (faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+        (neq, ":player_side", ":troop_side"),
 		(assign, reg0, 0),
       (try_end),
 	  
