@@ -2140,6 +2140,7 @@ scripts = [
     (troop_set_slot, "trp_i5_khand_pit_master", slot_troop_hp_shield, 30),
     (troop_set_slot, "trp_player", slot_troop_hp_shield, 1),
     (troop_set_slot, "trp_black_numenorean_sorcerer", slot_troop_hp_shield, 100),
+    (troop_set_slot, "trp_orc_pretender", slot_troop_hp_shield, 50),
     
 	(try_for_range, ":NPC_hp_shield", "trp_npc1", heroes_begin),
 		(troop_set_slot, ":NPC_hp_shield", slot_troop_hp_shield, 1),

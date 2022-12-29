@@ -5716,6 +5716,16 @@ mission_templates = [ # not used in game
 	  (26,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(27,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(28,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(29,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
     ],tld_common_wb_muddy_water+[
 	common_inventory_not_available,
+    
+     ] + (is_a_wb_mt==1 and [
+    tld_move_ai,
+    tld_ai_kicking,
+    tld_ai_is_kicked,
+    tld_melee_ai,
+    tld_improved_horse_archer_ai,
+    hp_shield_init,
+    hp_shield_trigger,
+    ] or []) + [
 #	(ti_tab_pressed, 0, 0, [(display_message, "@Cannot leave now.")], []),
 			
 	(ti_tab_pressed,0,0,[],[

@@ -12382,12 +12382,18 @@ game_menus = [
 		(eq,"$mutiny_stage",4), #fight won
 		(str_store_string, s1, "@^^^You have slain the offender, and other orcs quickly fall back in line. ^ For some time the maggots will be quiet for sure."),
 		(assign,"$mutiny_stage",0),
+        (assign, "$mutiny_counter",216), #double mutiny counter
 		(call_script, "script_change_player_party_morale", 20), #kham - Give + morale when player wins.
     (else_try),
 		(eq,"$mutiny_stage",2), # pre-fight dialog begin
 		(call_script, "script_setup_troop_meeting", "trp_orc_pretender",100),
 	(else_try),
 		(eq,"$mutiny_stage",3), # pre-fight dialog ended and fight on the way
+        (try_begin), #high level characters get extra challenge
+                (store_character_level, ":level","trp_player"),
+                (gt, ":level", 17),
+            	(troop_set_slot, "trp_orc_pretender", slot_troop_has_combat_ai, 1),
+        (try_end),
 		(modify_visitors_at_site, "scn_duel_scene"),
 		(reset_visitors),
 		(set_jump_entry, 0), 

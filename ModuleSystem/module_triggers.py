@@ -1800,28 +1800,34 @@ triggers = [
   # check for mutiny when orcs in party
   (2, 0, 2, [
       (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+      (party_get_morale, ":party_morale", p_main_party),
+      (le, ":party_morale", 90), #counter only ticks if morale is <90
+      (val_sub, "$mutiny_counter",2),
       
+      #InVain: Removed this block, instead added morale checks here and for final mutiny chance below
       ## Kham - Reduce rate of mutiny by level and rank (player faction, I could also look at player's rank in mordor & isengard, but lets start with this)
-      (store_character_level, ":level","trp_player"),
-      (call_script, "script_get_faction_rank", "$players_kingdom"),
-      (assign, ":rank", reg0),
-      (store_skill_level, reg1, "skl_leadership", "trp_player"),
-      (this_or_next|lt, reg1,     6),
-      (this_or_next|lt, ":level",17),
-      (             lt, ":rank",  5),
-      (try_begin), ## Reduce deduction by 1 when player is level 12 or rank 3, just to ease it a bit, before disappearing completely.
-        (this_or_next|eq, reg1,     5),
-        (this_or_next|is_between, ":level",13,17),
-        (             is_between, ":rank",  3,5),
-        (val_sub, "$mutiny_counter",1),
-      (else_try),
-        (val_sub, "$mutiny_counter",2),
-      (try_end),
+      # (store_character_level, ":level","trp_player"),
+      # (call_script, "script_get_faction_rank", "$players_kingdom"),
+      # (assign, ":rank", reg0),
+      # (store_skill_level, reg1, "skl_leadership", "trp_player"),
+      # (this_or_next|lt, reg1,     6),
+      # (this_or_next|lt, ":level",17),
+      # (             lt, ":rank",  5),
       
+      # (try_begin), ## Reduce deduction by 1 when player is level 12 or rank 3, just to ease it a bit, before disappearing completely.
+        # (this_or_next|eq, reg1,     5),
+        # (this_or_next|is_between, ":level",13,17),
+        # (             is_between, ":rank",  3,5),
+        # (val_sub, "$mutiny_counter",1),
+      # (else_try),
+        # (val_sub, "$mutiny_counter",2),
+      # (try_end),      
       ## Kham Changes END
+
       (le, "$mutiny_counter",0),
       (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
       (assign, ":orcs", 0),
+      
       (try_for_range, ":stack_no", 0, ":num_stacks"), # count number of orcs and max level
         (party_stack_get_troop_id, ":stack_troop", "p_main_party" ,":stack_no"),
         (neg|troop_is_hero, ":stack_troop"),
@@ -1830,17 +1836,26 @@ triggers = [
         (party_stack_get_size, reg1, "p_main_party",":stack_no"),
         (val_add, ":orcs", reg1),
       (try_end),
+      
       (store_skill_level, reg1, "skl_leadership", "trp_player"), # persuasion neutralizes 5 orcs per level ##Kham - Change to Leadership instead, as there is nothing else persuasion is used for
       (val_mul, reg1, 5),
       (val_sub, ":orcs", reg1),
       (troop_get_type, reg1, "trp_player"),
-    (try_begin),(eq, reg1, tf_orc),(val_sub, ":orcs", 10),(try_end), # player being an orc himself neutralizes 10 orcs
+      
+      (try_begin),
+        (eq, reg1, tf_orc), (val_sub, ":orcs", 10),
+      (try_end), # player being an orc himself neutralizes 10 orcs
+      
       (val_max, ":orcs", 1),
       (party_get_num_companions, reg1, "p_main_party"),
       (gt, reg1, 15), # for big enough party
       (val_div, reg1, ":orcs"),
       (lt, reg1, 2), # more than 50% of "adjusted orcs" in party?
-      (store_random_in_range, reg1, 0, 10),(lt, reg1, 2), #20% mutiny chance
+      
+      #(store_sub, ":chance", 100, ":party_morale"),
+      (store_random_in_range, reg1, 0, 80), 
+      (gt, reg1, ":party_morale"), #mutiny chance, doesn't happen when morale is >80
+      
       ],[
       (assign, "$mutiny_counter",108), # 4.3 days between uprisings
       (try_begin),
