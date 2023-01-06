@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
       
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         fetch-depth: 1
       
@@ -27,6 +27,7 @@ jobs:
                          sed         \
                          grep        \
                          lib32gcc-s1 \
+                         python2     \
                          jq
 
     - name: Find if we're a normal nightly run or a Workshop build
@@ -37,7 +38,7 @@ jobs:
         
         # swy: https://stackoverflow.com/a/18558871/674685
         case ${GITHUB_REF} in refs/tags/workshop-*)
-          echo ::set-output name=TRAVIS_TAG_VAR::${GITHUB_REF#refs/tags/}
+          echo "TRAVIS_TAG_VAR=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
           echo 'swy: this seems like a workshop release; setting TRAVIS_TAG_VAR variable.'
         esac
 
@@ -59,7 +60,7 @@ jobs:
         TRAVIS_TAG: ${{ steps.find_tag.outputs.TRAVIS_TAG_VAR }}
         
     - name: Archive production artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@main
       with:
         name: buildbot-output
         # swy: one level up, hardcoded because it doesn't like relative paths:
