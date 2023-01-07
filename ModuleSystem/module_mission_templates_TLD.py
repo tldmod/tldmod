@@ -4486,6 +4486,27 @@ reward_birds_wb = ((is_a_wb_mt==1) and [
     ],
     [])
 	] or [])
+
+tld_ai_fadeout_spheres =   (3, 0, 0, [], [ #agent fadeout sphere test
+    (scene_prop_get_num_instances, ":num_fadeout_spheres", "spr_ai_fadeout_sphere"),
+    (set_fixed_point_multiplier, 100),
+    (try_for_range, ":count", 0, ":num_fadeout_spheres"),
+        (scene_prop_get_instance, ":instance_no", "spr_ai_fadeout_sphere", ":count"),
+        (prop_instance_get_position, pos2, ":instance_no"),
+        (prop_instance_get_scale, pos3, ":instance_no"),
+        (position_get_scale_y, ":scale", pos3),
+        (try_for_agents, ":agent_no", pos2, ":scale"),
+            (agent_is_alive, ":agent_no"),
+            ] + (is_a_wb_mt==1 and [
+                (agent_fade_out, ":agent_no"),
+            ] or [
+                (agent_deliver_damage_to_agent, ":agent_no", ":agent_no", 1000),
+            ]) + [
+            # (str_store_agent_name, s2, ":agent_no"),
+            # (display_message, "@{s2} is in fadeout range"),
+        (try_end),
+    (try_end),
+    ])
 	
 # ( "custom_battle_football",mtf_battle_mode,-1,
     # "The match starts in a minute!",

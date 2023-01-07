@@ -1170,7 +1170,10 @@ scene_props = [
 ("city_fly_day",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_bug_fly_1"),])]),
 ("flue_smoke_tall",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_flue_smoke_tall")])]),
 ("flue_smoke_short",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_flue_smoke_short")])]),
-("moon_beam",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_moon_beam_1"),(particle_system_add_new, "psys_moon_beam_paricle_1")])]),
+("moon_beam",0,"0","0",[(ti_on_scene_prop_init,
+    [(particle_system_add_new, "psys_moon_beam_1"),
+    #(particle_system_add_new, "psys_moon_beam_paricle_1") #separate prop now
+    ])]),
 ("fire_small",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_fireplace_fire_small")])]),
 ("fire_big",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_fireplace_fire_big")])]),
 ("battle_field_smoke",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_war_smoke_tall")])]),
@@ -3781,6 +3784,64 @@ scene_props = [
     (agent_set_slot, reg0, slot_agent_target_entry_point, ":instance_no"), #store home position
   
   ])]),
+
+("light_white",sokf_invisible,"light_sphere","0",  [
+     (ti_on_init_scene_prop,
+      [   (store_trigger_param_1, ":prop_instance_no"),
+          (set_fixed_point_multiplier, 100),
+          (prop_instance_get_scale, pos5, ":prop_instance_no"),
+          (position_get_scale_x, ":scale", pos5),
+          (store_mul, ":red", 3 * 200, ":scale"),
+          (store_mul, ":green", 3 * 200, ":scale"),
+          (store_mul, ":blue", 3 * 200, ":scale"),
+          (val_div, ":red", 100),
+          (val_div, ":green", 100),
+          (val_div, ":blue", 100),
+          (set_current_color,":red", ":green", ":blue"),
+          (set_position_delta,0,0,0),
+          (add_point_light, 10, 30),
+      ])]),
+
+("light_rgb",sokf_invisible,"light_sphere","0",  [
+     (ti_on_init_scene_prop,
+      [   (store_trigger_param_1, ":prop_instance_no"),      
+          (set_fixed_point_multiplier, 100),
+          (prop_instance_get_scale, pos5, ":prop_instance_no"),
+          (position_get_scale_x, ":scale_x", pos5),
+          (position_get_scale_y, ":scale_y", pos5),
+          (position_get_scale_z, ":scale_z", pos5),
+          (store_mul, ":red", 3 * 150, ":scale_x"),
+          (store_mul, ":green", 3 * 150, ":scale_y"),
+          (store_mul, ":blue", 3 * 150, ":scale_z"),
+          (val_div, ":red", 100),
+          (val_div, ":green", 100),
+          (val_div, ":blue", 100),
+          (set_current_color,":red", ":green", ":blue"),
+          (set_position_delta,0,0,0),
+          (assign, ":flicker_magnitude", 0),
+          (assign, ":flicker_interval", 0),
+             ] + (is_a_wb_sceneprop==1 and [
+            (prop_instance_get_variation_id, ":flicker_magnitude", ":prop_instance_no"),
+            (prop_instance_get_variation_id_2, ":flicker_interval", ":prop_instance_no"),
+             ] or []) + [  
+          (add_point_light, ":flicker_magnitude", ":flicker_interval"),
+      ])]),
+
+("glow_a", 0, "glow_a", "0", []),
+("glow_a_daytime_specific", 0, "glow_a", "0", [ #important: place according to current daytime (noon = point north)
+     (ti_on_init_scene_prop,
+      [   (store_trigger_param_1, ":prop_instance_no"),
+          (store_time_of_day, ":daytime"), #0-24h
+          (val_mul, ":daytime", 15), #0-360
+          (prop_instance_get_position, pos1, ":prop_instance_no"),
+          #(position_get_rotation_around_z, ":rotation", pos1),
+          (position_rotate_z, pos1, ":daytime"),
+          (prop_instance_set_position, ":prop_instance_no", pos1),
+      ])]),
+("glow_b", 0, "glow_b", "0", []),
+
+("ai_fadeout_sphere",sokf_invisible,"sphere_1m","0", []),
+
 
 
 #("save_compartibility2",0,"0","0", []),
