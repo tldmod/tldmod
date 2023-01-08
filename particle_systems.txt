@@ -288,14 +288,14 @@ psys_bug_fly_1 530 prt_mesh_snow_dust_1  5 5 1.2 0 50 20
 0 0.05   1 0.05
 20 20 0.5   0 0 0   5 
 100 0.5 
-psys_moon_beam_1 8722 prt_mesh_moon_beam  2 4 1.2 0 0 0 
+psys_moon_beam_1 8722 prt_mesh_moon_beam  1 2 1.2 0 0 0 
 0.5 1   1 0
 0 0.4   1 0.4
 0 0.5   1 0.5
 0 0.6   1 0.6
 0 2   1 2.2
-1 1 0.2   0 0 -2   0 
-100 0.5 
+1 1 0.2   0 0 -1   0 
+20 0.5 
 psys_moon_beam_paricle_1 8722 prt_sparks_mesh_1  10 1.5 1.5 0 10 10 
 0.5 1   1 0
 0.5 0.5   1 0.5

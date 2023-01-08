@@ -644,16 +644,16 @@ particle_systems = [
 #-*-*-*- Fire Fly End*-*-*-*-#
 #-*-*-*- Moon Beam *-*-*-*-*-*-*#
   ("moon_beam_1", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size, "prt_mesh_moon_beam",#prt_mesh_moon_beam
-     2, 4, 1.2, 0, 0, 0,          #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     1, 2, 1.2, 0, 0, 0,          #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
      (0.5, 1), (1, 0),            #alpha keys
      (0, 0.4), (1, 0.4),                #red keys
      (0, 0.5), (1, 0.5),                #green keys
      (0, 0.6), (1, 0.6),                #blue keys
      (0, 2),   (1, 2.2),        #scale keys
      (1, 1, 0.2),                 #emit box size
-     (0, 0, -2),                     #emit velocity
+     (0, 0, -1),                     #emit velocity
       0,                            #emit dir randomness
-      100,                          #rotation speed
+      20,                          #rotation speed
       0.5,                          #rotation damping
        ),
      ("moon_beam_paricle_1", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size, "prt_sparks_mesh_1",
