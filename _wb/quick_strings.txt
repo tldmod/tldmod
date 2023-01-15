@@ -1,4 +1,4 @@
-1964
+1967
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_536_wb__dev_^_B _rev_536_wb_|_dev_^_Built_2023-01-08_21:48___
+qstr__rev_539_wb__dev_^_B _rev_539_wb_|_dev_^_Built_2023-01-15_16:13___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1344,6 +1344,9 @@ qstr_^^^You_lost_your_fig ^^^You_lost_your_fight_against_the_mutiny!_^Seems_like
 qstr_^^^You_have_slain_th ^^^You_have_slain_the_offender,_and_other_orcs_quickly_fall_back_in_line._^_For_some_time_the_maggots_will_be_quiet_for_sure.
 qstr_You_cover_up_your_tr You_cover_up_your_tracks_and_move_onward.
 qstr_Breaking_camp... Breaking_camp...
+qstr_Party_morale_is_low. Party_morale_is_low._Troops_desert_from_your_party.
+qstr_Desertion Desertion
+qstr_{s1}_has_deserted_fr {s1}_has_deserted_from_your_party.
 qstr_You_have_left_{s1}. You_have_left_{s1}.
 qstr_You_are_entering_{s1 You_are_entering_{s1}_({s2}).
 qstr_You_are_entering_{s1} You_are_entering_{s1}.

@@ -157,10 +157,30 @@ simple_triggers = [
 
   ]),
   # (9)
-  (4.15,[(try_begin),
+  (4.15,[ #unpaid troops leaving and desertion
+    (try_begin),
         (store_random_in_range, ":dieroll", 1,101), (lt,":dieroll",10),
         (call_script, "script_make_unpaid_troop_go"),
-      (try_end),
+    
+        #desertion
+        (store_skill_level, ":player_leadership", "skl_leadership", "trp_player"),
+        (party_get_morale, ":morale", "p_main_party"),
+        (val_mul, ":player_leadership", 2),
+        (store_sub, ":desertion_check", 40, ":player_leadership"),
+        (try_begin),
+            (lt, ":morale", ":desertion_check"),
+            (val_mul, ":morale", 2),
+            (store_random_in_range, ":rand", 0, 100),
+            (gt, ":rand", ":morale"),
+            (dialog_box, "@Party morale is low. Troops desert from your party.", "@Desertion"),
+            (val_div, ":rand", 10),
+            (try_for_range, ":unused", 0, ":rand"),
+                (call_script, "script_cf_party_remove_random_regular_troop", "p_main_party"),
+                (str_store_troop_name, s1, reg0),
+                (display_message, "@{s1} has deserted from your party."),
+            (try_end),
+        (try_end),
+    (try_end),        
   ]),
   
   # (10) Reducing luck by 1 in every 180 hours #No luck in TLD, still keeping this trigger to avoid "global variable never used" warning
