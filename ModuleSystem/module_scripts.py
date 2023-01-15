@@ -10805,22 +10805,37 @@ scripts = [
       # being more inclined to be unhappy than higher level troops and higher 
       # level troops can kick guys in line up to a point.
       # 5 * (count+5)^2 / (count * level)
-      (store_add, ":morale_penalty_for_size", ":num_men", 5),
-      (val_mul, ":morale_penalty_for_size", ":morale_penalty_for_size"),
-      (val_mul, ":morale_penalty_for_size", 5),
+      
+      #InVain: Old formular commented out, this was silly maths
+      # (store_add, ":morale_penalty_for_size", ":num_men", 5),
+      # (val_mul, ":morale_penalty_for_size", ":morale_penalty_for_size"),
+      # (val_mul, ":morale_penalty_for_size", 5),
+      # (val_div, ":morale_penalty_for_size", ":level_total"),
+
+      #InVain: New formula for proper exponential growth, overtakes old linear growth at ca. 120 troops
+      # 5+ (x^3 / 25*level_total)
+      (store_mul, ":morale_penalty_for_size", ":num_men", ":num_men"),
+      (val_mul, ":morale_penalty_for_size", ":num_men"),
       (val_div, ":morale_penalty_for_size", ":level_total"),
+      (val_div, ":morale_penalty_for_size", 25),
+      (val_add, ":morale_penalty_for_size", 5),
       
       # the math works great for large numbers but not so great for small ones.
       # if we get a value that's more than twice the size, min it to that.
+      #InVain: Not needed anymore
+      # (try_begin),
+         # (store_mul, ":double", ":num_men", 2),
+         # (gt, ":morale_penalty_for_size", ":double"),
+         # (assign, ":morale_penalty_for_size", ":double"),
+      # (try_end),
+
+      #InVain: Penalty if you go over your party size limit (can happen with Warg riders)
+      (call_script, "script_game_get_party_companion_limit"),
+      (assign, ":party_size_limit", reg0),
       (try_begin),
-         (store_mul, ":double", ":num_men", 2),
-         (gt, ":morale_penalty_for_size", ":double"),
-         (assign, ":morale_penalty_for_size", ":double"),
-      (try_end),
-	  
-      (try_begin),
-         (lt, ":num_men", 10), #InVain: Crude patch for the counterintuitive small party malus.
-         (assign, ":morale_penalty_for_size", 0),
+        (gt, ":num_men", ":party_size_limit"),
+        (store_sub, ":penalty", ":num_men", ":party_size_limit"),
+        (val_add, ":morale_penalty_for_size", ":penalty"),
       (try_end),
 
       (assign, "$g_player_party_morale_modifier_party_size", ":morale_penalty_for_size"),
