@@ -391,7 +391,7 @@ menu_fangorn_danger|^^^^^^Strange, threatening noises all around you.^Are the tr
 mno_be_quiet_elf|Respect the hatred of the trees. Move along quietly.
 mno_be_quiet|Put the weapons down and stay quiet! Now out of here!
 mno_be_bold|Go on! I'm not afraid of plants or old myths!
-mno_fight_back|Let's find out! Search the area! Burn down a tree or two!
+mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
 menu_fangorn_battle_debrief|you shouldn't be reading this
 menu_fangorn_battle_debrief_won|{s55}
@@ -598,6 +598,7 @@ mno_aw_chamber_door|Open the door.
 mno_trade_with_arms_merchant|Visit the {s40}.
 mno_trade_with_horse_merchant|Visit the {s41}.
 mno_town_prison|Never: Enter the prison.
+mno_town_prison_door|To the Training Grounds
 mno_dungeon_enter|Search for the lost spears inside the mountains.
 mno_dungeon_enter_door|Open the door.
 mno_dwarven_warehouse|Visit the Dwarven Warehouse
@@ -614,6 +615,7 @@ mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Climb up to the top level.
 mno_tirith_toplevel_door|Go to the Citadel
 mno_erebor_gates|Visit the Great Gates.
+mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|Leave...
 mno_town_leave_door|Leave Area
 menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
@@ -966,7 +968,7 @@ mno_choose_scene_128|erebor castle: indoors
 mno_choose_scene_129|erebor castle 2: indoors
 menu_choose_scenes_130|Choose a scene: (Page 11 of 36)
 mno_choose_scene_130|erebor center: indoors
-mno_choose_scene_131|erebor dungeon 01: indoors
+mno_choose_scene_131|erebor gate: generate
 mno_choose_scene_132|erebor outside: generate
 mno_choose_scene_133|erebor siege: generate
 mno_choose_scene_134|erebor siege inner: generate
