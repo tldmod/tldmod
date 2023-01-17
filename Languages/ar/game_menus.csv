@@ -1,9 +1,11 @@
 menu_start_game_1|^^^^^^^^^^ مالذي تحاربون لأجله؟
 mno_start_good|فجر العصر الجديد
 mno_start_evil|شفق الرجال
+mno_faction_intros|تعرف على الفصائل المختلفة للأرض الوسطى
 mno_go_bback|إرجع
 menu_start_phase_2|^^^^^في منتصف الارض.الظلام ينتشر الى الشرق,^  
 mno_go_forth|انطلق لصراطك المختار
+mno_change_tld_options|تغيير خيارات TLD.
 menu_start_game_3|اختر السنايرو
 mno_custom_battle_scenario_1|مناوشة, قاندور vs هاراد
 mno_custom_battle_scenario_12|اختر الطائفة للمعركة
@@ -12,20 +14,21 @@ mno_custom_battle_scenario_4|الدفاع عن هليمز ديب, روهان vs 
 mno_custom_battle_scenario_5|مناوشة, الطوائف الشمالية vs روهن
 mno_custom_battle_scenario_6|معركة حصار, الغوله vs الاقزام
 mno_custom_battle_scenario_7|كمين, الغولة vs ميرك ود
-; mno_custom_battle_scenario_8|The Last Stand of Durin's Folk
-; mno_custom_battle_scenario_88|Chasing an Orc Scout Party
+mno_custom_battle_scenario_8|الموقف الأخير لقوم دورين
+mno_custom_battle_scenario_88|مطاردة حزب الكشافة اورك
 mno_custom_battle_scenario_11|معركة اختبارية (موازنة للانسيابية)
 mno_custom_battle_scenario_10|اختبار معركة مشهدية
 mno_troll_battle_scenario|اختبار معركة للترولز
 mno_warg_battle_scenario|اختبار معركة للوراقز
 mno_build_your_own_scene|ابن مشهد خاص بك 
-; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
+mno_go_back|عد
+menu_tutorial|^^ مرحبًا بك في البرنامج التعليمي القتالي لـ Mount & Blade. هنا سوف تتعلم أساسيات القتال ، بالإضافة إلى نظرة عامة موجزة عن قيادة القوات أثناء المعارك الميدانية.
 mno_tutorial_1|التعلم الجزء #1 : الحركات المبدئية و اختيارات الاسلحة,{s1}
 mno_tutorial_2|التعلم الجزء #2: القتال مع الدرع, {s2}
 mno_tutorial_3|التعلم الجزء #3: القتال من دون درع, {s3}
 mno_tutorial_3b_door|المستوى التالي 
 mno_tutorial_4|التعلم الجزء #4: ركوب الخيل او الورق, {s4}
-; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
+mno_tutorial_5|درس # 5: قيادة فرقة من الجنود. {s5}
 mno_go_back_dot|عد للخلف 
 mno_action_view_troop_trees|عرض شجرة الجنود
 mno_view_upkeep_costs|عرض قيمة الاجور
@@ -41,7 +44,7 @@ mno_leave_custom_battle_2|تراجع
 menu_custom_battle_end|المعركة انتهت,{s1} جانبك قتل {reg5} اعداء و خسر  {reg6} جنود في المعركة. انت قتلت {reg7} اعداء في المعركة  
 mno_replay|العب هذه المعركة مجددا
 mno_continue_dot|اكمل 
-; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+menu_custom_battle_durin_end|^ ^ ^ ^ ^ ^ لقد كان موقفًا أخيرًا مثيرًا للإعجاب ، لكنه محكوم عليه بالفشل في النهاية. ^^ لقد قتلت أنت وأقاربك {reg5} من الأعداء. ^ لقد قتلت شخصيًا {reg7} من المعارضين في القتال.
 mno_replay_cbd|العب هذه المعركة مجددا
 mno_continue_dot_cbd|اكمل 
 mno_dot_go_back|عد 
@@ -49,7 +52,6 @@ menu_start_good|اختر عرقك
 mno_start_ma|البشر
 mno_start_el|الايلفز
 mno_start_dw|الاقزام
-mno_go_back|عد
 menu_start_evil|من تخدم ؟
 mno_start_eye|ساورون قائد موردور, "ملك الخواتم"
 mno_start_hand|سارومان قائد ايزنقارد, "اليد البيضاء"
@@ -59,13 +61,14 @@ mno_start_ur|الاورك, الفصيلة الجديدة من الغوله
 mno_start_em|انسان, محكوم من ساورون 
 menu_start_hand|مالكك هو "اليد اليضاء"^اختر عرقك
 mno_start_whor|غولو يخدم :اليد البيضاء"
-; mno_start_isur|one of the URUK-HAI, bred in Isengard
+mno_start_isur|واحدة من URUK-HAI ، ولدت في Isengard
 mno_start_duma|رجل من الدون لاند, الاراضي الغربية 
 menu_start_good_man|اختر شعبك
 mno_start_go|قوندور, مملكة البرج الابيض
 mno_start_ro|روهان, رجال الخيل 
 mno_start_du|دوندين, السلالة الحاكمة القديمة من البشر
 mno_start_be|بيورنينقوز, رجال الدببة
+mno_start_wo|WOODMEN ، من أفاريز ميركوود
 mno_start_da|المملكة الشمالية في ديل
 menu_start_good_elf|في اي غابة تعيش بها. ايها الحكيم؟
 mno_start_ri|ريفن ديل, من الحاكم ايل روند
@@ -88,6 +91,9 @@ mno_start_bn|النوميرونز السود, المرتدين من الغرب
 mno_start_um|اومبار, القراصنة من البحور الجنوبية 
 mno_start_rh|روهن, الهمج من الشرق
 mno_start_kh|كهاند, الشعوب المتوحشة من الجنوب شرق 
+menu_start_eye_uruk|اين تتخفى ؟
+mno_start_arm_uruk|في الجيوش المحشودة في موردور 
+mno_start_cav_uruk|في كهوف ال قول قولدور
 menu_start_eye_orc|اين تتخفى ؟
 mno_start_arm|في الجيوش المحشودة في موردور 
 mno_start_cav|في كهوف ال قول قولدور
@@ -98,9 +104,12 @@ mno_start_cliff|في حواف جبل قوندباد
 menu_start_gondor_mt|اختر اصلك
 mno_start_1_com|بلا اصل 
 mno_start_2_hib|ذو اصل عالي 
-menu_start_haradrim|انت من ال هاردريم^رجل الصحراء^اختر اصولك
+menu_start_haradrim|^^^^^^^انت من ال هاردريم^رجل الصحراء^اختر اصولك
 mno_start_1_des|رجل الصحراء
 mno_start_2_far|من قبيلة ال فار هاراد 
+menu_start_numenorean|^ ^ ^ ^ ^ ^ ^ ^ أنت اسم أسود ، ^ مخلص للظلام ومورجوث. ^ حدد المكان الذي تخدم فيه العين
+mno_start_1_bn|بجانب فم سورون ، في مورانون
+mno_start_2_bn|في قلعة مستحضر الأرواح ، دول غولدور
 menu_choose_gender|ماهوا جنسك؟
 mno_start_male|ذكر 
 mno_start_female|انثى 
@@ -108,234 +117,247 @@ mno_proc|اكمل طبيعيًا
 menu_start_as_one|مانوعك من الجنود
 mno_start_default|كن (Default) {s23}
 mno_start_up1|كن (Easy) {s21}
-; mno_start_up2|Become a {s22} (Easy)
+mno_start_up2|كن {s22} (سهل)
 mno_continue|اكمل....
 menu_character_report|الروح المعنوية للجيش: 
-; menu_camp|^^^^You are in {s1}.{s2}^^What do you want to do?
+menu_camp|^ ^ ^ ^ أنت في {s1}. {s2} ^^ ماذا تريد أن تفعل؟
 mno_camp_scene|تجول
-; mno_camp_troop|Review{reg10? troops:}{reg12? and:}{reg11? prisoners:}.
+mno_camp_troop|مراجعة {reg10؟ القوات:} {reg12؟ و:} {reg11؟ السجناء:}.
 mno_camp_action|استعمل الغرض
 mno_camp_wait_here|خيم هنا لبعض الوقت
-; mno_camp_options|Change TLD options.
-; mno_Dev_Menu|Developer Menu
-; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
-; mno_Cheat_enable|Enable cheat/modding options.
-; menu_game_options|^^^^^^^^Click on an option to toggle:
-; mno_game_options_war_level_start|War Starts at Level: {s1}
-; mno_game_options_restrict_items|Restricted player equipment:  {s7}
-; mno_game_options_formations|Battle formations and AI:  {s7}
-; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
-; mno_game_options_town_menu|Town NPCs always accessible from Menus:  {s7}
-; mno_game_options_cutscenes|Cutscenes:  {s7}
-; mno_game_options_injuries|Injuries for companions:  {s7}.
-; mno_game_options_death|Permanent death for lords and companions:  {s7}.
-; mno_game_options_death2|Permanent death for player (that is YOU!):  {s7}.
-; mno_game_options_morale|Battle morale system:  {s7}
-; mno_game_options_animal_ambushes|Animal ambushes:  {s7}
-; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
-; mno_game_options_bright_nights|Brighter Nights:  {s7}.
-; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
-; mno_game_options_tweaks|Gameplay tweaks...
-; mno_game_options_back|Back to camp menu.
-; mno_game_options_start_back|Back.
-; menu_camp_tweaks|^^^^^^^^Choose an option that you would like to adjust.
-; mno_tweak_options_compat|Compatibility tweaks...
-; mno_tweak_options_strat|Strategy tweaks...
-; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...
-; mno_tweak_options_back|Back to options menu.
-; menu_camp_compat_tweaks|^^^^^^^^Click on an option to change (hold shift to decrease):^(these are for compatibilty and are not cheats)
-; mno_game_options_compat_party|Maximum number of parties: {s1}
-; mno_game_options_compat_back|Back to tweaks menu.
-; menu_camp_strat_tweaks|^^^^^^^^Click on an option to toggle:^(warning: these are cheats!)
-; mno_strat_tweaks_siege_reqs|Siege strength requirements: {s7}
-; mno_strat_tweaks_siege_relax_rate|Siege str. req. relaxation rate: {reg1}
-; mno_strat_tweaks_regen_rate|Strength regen rate: {s7}
-; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
-; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
-; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
-; mno_strat_tweaks_back|Back to tweaks menu.
-; menu_camp_action|^^^^^^^^^     Which object?
-; mno_camp_customize_defilement|Customize Defiled Armor
-; mno_camp_drink_water|Drink the Ent Water!
-; mno_camp_action_4|Back.
-; menu_assasins_attack_player_won|You have successfully defeated assassins from {s2}, sent by {s3}.
-; menu_assasins_attack_player_retreat|You escaped with your life!
-; menu_fangorn_danger|^^^^^^Strange, threatening noises all around you.^Are the trees talking? There's a sense of deep anger and pain in the air.^Your orders?
-; mno_be_quiet_elf|Respect the hatred of the trees. Move along quietly.
-; mno_be_quiet|Put the weapons down and stay quiet! Now out of here!
-; mno_be_bold|Go on! I'm not afraid of plants or old myths!
-; mno_fight_back|Let's find out! Search the area! Burn down a tree or two!
-; menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
-; menu_fangorn_battle_debrief_won|^^^A great victory!^^^So this is what all the myths about Fangorn meant...
-; menu_fangorn_killed_player_only|^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.
-; mno_ow_get_out|Ouch! Let's get out of this cursed place!
-; menu_fangorn_killed_troop_and_player|^^^^^^You wander in the thick, dark forest.^^All of a sudden you are hit by something! Maybe a heavy branch fell on your head.^^When you recover, minutes later, you find that not all of your troops were that lucky.^^
-; menu_fangorn_killed_troop_only|^^^^^^^^You wander in the thick, dark forest. Your troops are fearful.^^All of a sudden, you hear screams from the rear! You hurry back, only to find a few of your troops on the ground, in a pool of blood.^^A few others are nowhere to be found...
-; mno_get_out|Let's get out of this cursed place!
-; menu_can_capture_troll|The downed wild troll still breaths!^^Its evil eyes stare at you filled with pain and rage.^Even now that it has been taken down, and lies helpless in a pool of its blood, it looks tremendously dangerous...
-; mno_killit|Dispatch it, now. Make sure it dies.
-; mno_cageit1|Cage it and drag it around.
-; mno_cageit2|Cage it together with the other troll.
-; mno_cheat_disabable|Disable cheat/modding options.
-; menu_drank_ent_water_human|^^^You drink the water. It tastes clean and refreshing. It has a pleasant fragrance, as of musk.^You feel refreshed.^^However, you also have a strange, unnatural feeling. Something tells you that you'd better never, ever again drink this water.
-; menu_drank_ent_water_orc|^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.
-; mno_i_shall_surv|I... shall... survive!
-; menu_end_game|^^^^^The decision is made, and you resolve to give up your adventurer's life and settle down. You sell off your weapons and armour, gather up all your belongings, and ride off into the sunset....
+mno_camp_options|تغيير خيارات TLD.
+mno_Dev_Menu|قائمة المطور
+menu_dev_menu|هذه هي خيارات التطوير التي تمنحك الكثير من الغش / الأدوات لتلعب بها. ^ ^ ومع ذلك ، سينتج عن ذلك بعض أحداث العمل قيد التقدم ، والمشغلات ، وتغييرات الحملة التي قد تؤدي إلى كسر اللعبة. ^^ استخدمها على مسؤوليتك الخاصة! ^^ أيضًا ، عند الإبلاغ عن الأخطاء ، يرجى إخبارنا أنك تستخدم قائمة المطورين.
+mno_Cheat_enable|تفعيل خيارات الغش / التعديل.
+menu_game_options|^ ^ ^ ^ ^ ^ ^ ^ انقر على خيار للتبديل:
+mno_game_options_war_level_start|تبدأ الحرب على المستوى: {s1}
+mno_game_options_restrict_items|معدات اللاعب المقيدة: {s7}
+mno_game_options_formations|تشكيلات المعركة والذكاء الاصطناعي: {s7}
+mno_game_options_siege_ai|تنسيق حصار، مثل: {s7}
+mno_game_options_town_menu|يمكن الوصول دائمًا إلى شخصيات المدينة غير القابلة للعب من القوائم: {s7}
+mno_game_options_cutscenes|مشاهد: {s7}
+mno_game_options_injuries|إصابات الصحبه: {ق 7}.
+mno_game_options_death|الموت الدائم للوردات و الصحبه: {ق 7}.
+mno_game_options_death2|الموت الدائم للاعب (that is YOU!): {s7}.
+mno_game_options_morale|نظام معنويات المعركة: {s7}
+mno_game_options_animal_ambushes|نصب كمائن للحيوانات: {s7}
+mno_game_options_horse_ko|رسائل تلف الراكب الساقط: {s7}
+mno_game_options_bright_nights|ليالي أكثر إشراقًا:  {s7}.
+mno_game_options_camera_pref|وضع الكاميرا المفضل: {s7}.
+mno_game_options_tweaks|تعديلات اللعب ...
+mno_game_options_back|العوده الى قائمة المخيم.
+mno_game_options_start_back|العوده.
+menu_camp_tweaks|^ ^ ^ ^ ^ ^ ^ ^ حدد الخيار الذي تريد تعديله.
+mno_tweak_options_compat|تعديلات التوافق ...
+mno_tweak_options_strat|تعديلات الإستراتيجية ...
+mno_tweak_options_battlefield_ai|تعديلات المعركه AI ...
+mno_tweak_options_back|العوده الى قائمة الاعدادات.
+menu_camp_compat_tweaks|^ ^ ^ ^ ^ ^ ^ ^ انقر فوق خيار للتغيير (اضغط باستمرار على الشفت للتقليل): ^ (هذه للتوافق وليست غش)
+mno_game_options_compat_party|الحد الأقصى لعدد الصحبه: {s1}
+mno_game_options_compat_back|العودة إلى قائمة التعديلات.
+menu_camp_strat_tweaks|^ ^ ^ ^ ^ ^ ^ ^ انقر على خيار للتبديل:^(warning: these are cheats!)
+mno_strat_tweaks_siege_reqs|متطلبات قوة الحصار: {s7}
+mno_strat_tweaks_siege_relax_rate|شارع الحصار. مطلوب. معدل الاسترخاء: {reg1}
+mno_strat_tweaks_regen_rate|معدل استعادة القوة: {s7}
+mno_strat_tweaks_siege_regen_limit|تتجدد قوة الفصيل بشكل أبطأ عند: {reg1}
+mno_strat_tweaks_influence_gain_rate|معدل كسب التأثير: {s7}
+mno_strat_tweaks_rank_gain_rate|معدل كسب الترتيب: {s7}
+mno_strat_tweaks_back|العودة إلى قائمة المهام.
+menu_camp_action|^ ^ ^ ^ ^ ^ ^ ^ ^ اى موضوع؟
+mno_camp_drink_water|اشرب ماء اينت!
+mno_camp_drink_orc_brew|مر حول Orc !
+mno_camp_drink_miruvor|مر حول Miruvor!
+mno_camp_use_athelas|استخدم أثيلاس لعلاج الجروح.
+mno_camp_use_drums|تغلب على طبول الأعماق.
+mno_camp_action_4|العوده.
+menu_assasins_attack_player_won|لقد نجحت في هزيمة قتلة من {s2} ، تم إرسالهم بواسطة {s3}.
+menu_assasins_attack_player_retreat|انت هربت بعمرك يالخوي!
+menu_fangorn_danger|^ ^ ^ ^ ^ ^ ^ أصوات غريبة ، مهددة في كل مكان من حولك. ^ هل تتحدث الأشجار؟ هناك شعور بالغضب الشديد والألم في الهواء. ^ أوامرك؟
+mno_be_quiet_elf|احترم كراهية الأشجار. تحرك بهدوء.
+mno_be_quiet|ضع الأسلحة جانباً وابقى صامتاً! الآن من هنا!
+mno_be_bold|تابع! أنا لا أخاف من النباتات أو الأساطير القديمة!
+mno_fight_back|هيا نكتشف! ابحث في المنطقة! احرق شجرة أو اثنتين!
+menu_fangorn_search_fails|^ ^ ^ ^ ^ ^ إنك تبحث في الغابة الكثيفة المظلمة ولكنك لا تجد شيئًا. ^ ومع ذلك ، تشعر بالملاحظة والتهديد ، أكثر وأكثر.
+menu_fangorn_killed_player_only|^ ^ ^ ^ ^ ^ تتجول في الغابة الكثيفة المظلمة. فجأة يصطدم بشيء ما! ربما سقط غصن ثقيل على رأسك؟ ^ أنت تبقى فاقدًا للوعي لدقائق فقط. أنت تتأذى بشدة ولكن يمكنك الاستمرار.
+mno_ow_get_out|اه! دعنا نخرج من هذا المكان الملعون!
+menu_fangorn_killed_troop_and_player|^ ^ ^ ^ ^ ^ تتجول في الغابة الكثيفة المظلمة. ^^ فجأة يصطدم بشيء ما! ربما سقط غصن ثقيل على رأسك. ^^ عندما تتعافى ، وبعد دقائق ، تجد أن ليس كل جنودك محظوظين. ^^
+menu_fangorn_killed_troop_only|^ ^ ^ ^ ^ ^ ^ ^ ^ تتجول في الغابة الكثيفة والمظلمة. قواتك خائفة ^ ^ فجأة ، تسمع صراخ من الخلف! تسرع في العودة ، فقط لتجد القليل من جنودك على الأرض ، في بركة من الدماء. ^ ^ لا يوجد مكان آخر يمكن العثور عليه ...
+mno_get_out|دعنا نخرج من هذا المكان الملعون!
+menu_can_capture_troll|القزم البري الذي سقط يتنفس ما زال يتنفس عيناها الشريرة تحدقان فيك مليئة بالألم والغضب. ^ حتى الآن بعد أن تم إنزالها ، وترقد بلا حول ولا قوة في بركة من دمائها ، تبدو خطيرة للغاية ...
+mno_killit|أرسلها الآن. تأكد من أنها ماتت.
+mno_cageit1|ضعها في قفص واسحبه.
+mno_cageit2|ضعها في قفص مع القزم الآخر.
+mno_cheat_disabable|تعطيل خيارات الغش / التعديل.
+menu_drank_ent_water_human|^ ^ ^ أنت تشرب الماء. طعمها نظيف ومنعش. له رائحة لطيفة مثل المسك. تشعر بالانتعاش. ^ ^ ومع ذلك ، لديك أيضا شعور غريب وغير طبيعي. هناك شيء يخبرك أنه من الأفضل ألا تشرب هذه المياه مرة أخرى.
+menu_drank_ent_water_orc|^ ^ ^ أنت تشرب الماء. إنه مجرد ماء. ^ فجأة ، تمسك حلقك ، في نوبة ألم. ^ مسمومة! ^ تختنق ، تتقيأ دمًا أسود ، وتكاد تموت. ^^ إنه مؤلم ، أوه ، إنه مؤلم.
+mno_i_shall_surv|أنا ... يجب ... البقاء على قيد الحياة!
+menu_end_game|^ ^ ^ ^ ^ تم اتخاذ القرار ، وأنت عازم على التخلي عن حياة مغامرك والاستقرار. أنت تبيع أسلحتك ودروعك ، وتجمع كل متعلقاتك ، وتنطلق نحو غروب الشمس ...
 mno_end_game_bye|وداعاً.
-; menu_cattle_herd|You encounter some people.
-; mno_cattle_drive_away|Order them to follow.
-; mno_cattle_stop|Bring them to a stop.
-; mno_leave|Leave.
-; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.^^Your orders?
-; mno_encounter_attack|{reg21?Charge them:Prepare to face them}.
-; mno_encounter_order_attack|Order your troops to {reg21?attack:face them} without you.
-; mno_encounter_hide|Hide from the enemy...
-; mno_special_whip|Rush forward toward them cracking the {s4}.
-; mno_encounter_leave|Disengage.
-; mno_encounter_retreat|Pull back, leaving some soldiers behind to cover your retreat.
+menu_cattle_herd|تصادف بعض الناس.
+mno_cattle_drive_away|اطلب منهم أن يتبعوا.
+mno_cattle_stop|اجعلهم يتوقفون.
+mno_leave|ارحل.
+menu_simple_encounter|^ ^ ^ ^ ^ {s2} ^ لديك {reg22} من القوات المناسبة للمعركة ضد {reg11}. ^^ المعركة تجري في {s3} {s4}. ^^؟
+mno_encounter_attack|{reg21؟ اشحنهم: استعد لمواجهتهم}.
+mno_encounter_order_attack|اطلب من قواتك {reg21؟ attack: face them} بدونك.
+mno_control_allies_menu|استخدم النفوذ لقيادة حلفائك في الميدان.
+mno_encounter_hide|ازبن من الاعداء...
+mno_special_whip|اندفع للأمام تجاههم في كسر {s4}.
+mno_encounter_attack_bearform|{reg21؟ قفز إلى المعركة في شكل دب: اقلب الجلد ووجهه}.
+mno_encounter_leave|فك الارتباط
+mno_encounter_retreat|انسحب تاركًا بعض الجنود خلفك لتغطية انسحابك.
+mno_player_control_allies_simple|قم بقيادةهم واشحن العدو
+mno_player_control_allies_back|ارجع للخلف
 mno_hide_close|اكمل....
-; menu_encounter_retreat_confirm|^^^^^As the party member with the highest tactics skill,   ({reg2}), {reg3?you devise:{s3} devises} a plan that will allow you and your men to escape with your lives,   but you'll have to leave {reg4} soldiers behind to stop the enemy from giving chase.
-; mno_leave_behind|Go on. The sacrifice of these men will save the rest.
-; mno_dont_leave_behind|No. We leave no one behind.
-; menu_encounter_retreat|^^^^^You tell {reg4} of your troops to hold the enemy while you retreat with the rest of your party.
-; menu_order_attack_begin|^^^^^^          Your troops prepare to attack the enemy.
-; mno_order_attack_begin|Order the attack to begin.
-; mno_call_back|Call them back.
-; menu_order_attack_2|^{s4}^Your casualties: {s8}^^Enemy casualties: {s9}
-; mno_order_attack_continue|Order your soldiers to continue the attack.
-; mno_order_retreat|Call your soldiers back.
-; menu_kingdom_army_quest_report_to_army|{s8} sends word that he wishes you to join his new military campaign.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
-; mno_reject|Send a message you are too busy.
-; mno_send_word|Send word you'll join him shortly.
-; menu_kingdom_army_quest_messenger|{s8} sends word that he wishes to speak with you about a task he needs performed.   He requests you to come and see him as soon as possible.
-; menu_kingdom_army_quest_join_siege_order|{s8} sends word that you are to join the siege of {s9} in preparation for a full assault.    Your troops are to take {s9} at all costs.
-; menu_kingdom_army_follow_failed|You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.
-; menu_battle_debrief|{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}
-; mno_inspect_troll|Inspect downed troll
-; menu_pre_join|^^^^^You come across a battle between {s2} and {s1}. You decide to...
-; mno_pre_join_help_attackers|Move in to help the {s2}.
-; mno_pre_join_help_defenders|Rush to the aid of the {s1}.
-; mno_pre_join_help_refugees|Rush to the aid of the {s1}.
-; mno_pre_join_leave|Don't get involved.
-; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.
-; mno_join_attack|Charge the enemy.
-; mno_join_order_attack|Order your troops to attack with your allies while you stay back.
-; mno_join_leave|Disengage.
-; menu_join_order_attack|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
-; mno_enter|Enter.
-; menu_battlefields|^^^^^^^^^Select a field...
-; mno_enter_f1|Field 1
-; mno_enter_f2|Field 2
-; mno_enter_f3|Field 3
-; mno_enter_f4|Field 4
-; mno_enter_f5|Field 5
-; menu_join_siege_outside|^^^^^^{s1} has come under siege by {s2}.
-; mno_approach_besiegers|Approach the siege camp.
-; mno_pass_through_siege|Pass through the siege lines and enter {s1}.
-; menu_cut_siege_without_fight|The besiegers let you approach the gates without challenge.
-; menu_besiegers_camp_with_allies|{s1} remains under siege. The banners of {s2} fly above the camp of the besiegers,    where you and your troops are welcomed.
-; mno_talk_to_siege_commander| Request a meeting with the commander.
-; mno_join_siege_with_allies|Join the next assault.
-; mno_join_siege_stay_back|Order your soldiers to join the next assault without you.
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. Perusing the book,  you stumble on the words 'true silver'! Studying the pages you suddenly understand  that those are the descriptions of dwarven stashes somewhere on the lower levels. Hah!  Would not it be cool to uncover the long lost dwarven mithril!?  ^You eagerly follow the directions, into a narrow winding tunnel and down...  ^...^After a couple of hours of fruitless search you understand that you are lost deep in Moria and need to find a way out.
-; mno_moria_exit_scene|Find your way out!
-; menu_castle_outside|You are outside {s2}.{s11} {s3} {s4}
-; mno_moria_enter|Return into main hall of Moria trough the secret entrance
-; mno_moria_enter_door|Enter Moria.
-; mno_castle_start_siege|Besiege the {reg6?town:castle}.
-; mno_castle_leave|Leave.
-; menu_castle_besiege|You are laying siege to {s1}. {s2} {s3}
-; mno_siege_request_meeting|Call for a meeting with the castle commander.
-; mno_wait_24_hours|Wait until tomorrow.
-; mno_castle_lead_attack|Lead your soldiers in an assault.
-; mno_attack_stay_back|Order your soldiers to attack while you stay back...
-; mno_build_ladders|Prepare ladders to attack the walls.
-; mno_lift_siege|Abandon the siege.
-; menu_siege_attack_meets_sally|^^^^^^The defenders sally out to meet your assault.
-; menu_construct_ladders|As the party member with the highest Engineer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to build enough scaling ladders for the assault.
-; mno_build_ladders_cont|Do it.
-; menu_castle_attack_walls_simulate|{s4}^^Your casualties:{s8}^^Enemy casualties were: {s9}
-; menu_castle_attack_walls_with_allies_simulate|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
-; menu_castle_taken_by_friends|Nothing to see here.
-; menu_castle_taken|{s3} has fallen to your troops, and you now have full control of the {reg2?town:castle}.  {reg1? It would seem that there is nothing stopping you from taking it for yourself...:}
-; menu_castle_taken_2|{s3} has fallen to your troops, and you now have full control of the castle. It is time to send word to {s9} about your victory. {s5}
-; mno_castle_taken_no_claim|Ask no rewards.
-; menu_siege_started_defender|{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...
-; mno_siege_defender_join_battle|Join the battle.
-; mno_siege_defender_troops_join_battle|Order your men to join the battle without you.
-; menu_siege_join_defense|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
-; menu_village_hunt_down_fugitive_defeated|^^^^^A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark. Time passes. When you open your eyes again you find yourself battered and bloody, but luckily none of the wounds appear to be lethal.
-; menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
-; menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
-; menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
-; menu_close|Nothing.
-; menu_town|You arrived in {s60}.{s12}{s13}
-; mno_town_menu_0|Go to some location.
-; mno_town_menu_0_door|Door to some location.
-; mno_town_approach|Approach {s1}...
-; mno_town_castle|Go to {s1}.
-; mno_town_castle_door|Door to the castle.
-; mno_town_center|Walk to the main square...
-; mno_town_center_door|Door to the town center.
-; mno_aw_chamber_door|Open the door.
-; mno_trade_with_arms_merchant|Visit the {s40}.
-; mno_trade_with_horse_merchant|Visit the {s41}.
-; mno_town_prison_door|Door to the prison.
-; mno_dungeon_enter|Search for the lost spears inside the mountains.
-; mno_dungeon_enter_door|Open the door.
-; mno_dwarven_warehouse|Visit the Dwarven Warehouse
-; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
-; mno_talk_to_castle_commander|Visit the {s61} Barracks.
-; mno_speak_with_elder|Speak with the {s6}.
-; mno_isengard_underground|Go to the underground caverns.
-; mno_tirith_toplevel|Climb up to the top level.
-; mno_erebor_gates|Visit the Great Gates.
-; mno_town_leave|Leave...
-; mno_town_leave_door|Leave Area
-; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
-; menu_disembark|Do you wish to disembark?
-; mno_disembark_yes|Yes.
-; mno_disembark_no|No.
-; menu_ship_reembark|Do you wish to embark?
-; mno_reembark_yes|Yes.
-; mno_reembark_no|No.
-; menu_center_reports|Town Name: {s1}^Rent Income: {reg1} denars^Tariff Income: {reg2} denars^Food Stock: for {reg3} days
-; menu_sneak_into_town_suceeded|Disguised in the garments of a poor pilgrim, you fool the guards and make your way into the town.
-; menu_sneak_into_town_caught|As you try to sneak in, one of the guards recognizes you and raises the alarm! You must flee back through the gates before all the guards in the town come down on you!
-; mno_sneak_caught_fight|Try to fight your way out!
-; mno_sneak_caught_surrender|Surrender.
-; menu_sneak_into_town_caught_dispersed_guards|You drive off the guards and cover your trail before running off, easily losing your pursuers in the maze of streets.
-; menu_sneak_into_town_caught_ran_away|You make your way back through the gates and quickly retreat to the safety out of town.
-; menu_tld_player_defeated|^^^^^Suddenly a shattering pain explodes in the back of your head! \\ You shiver, as all the world goes black around you...^Is this your end?
-; menu_recover_after_death_fangorn|You wake up. The forest is still around you. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?
-; menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream.
-; mno_whatever|Get up!
-; menu_recover_after_death_default|^^^^^You regain your conciousness. You lie on the spot you fell.  The enemies must have taken you up for dead and left you there.  However, it seems that none of your wounds were lethal,  and although you feel awful, you find out you can still walk.  You get up and try to look for any other survivors from your party.
-; menu_recover_after_death_town|^^^^You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town.  It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
-; menu_recover_after_death_town_alone|You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town. Your companions found you. It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
-; menu_notification_center_under_siege|{s1} has been besieged by {s2} of {s3}!
-; menu_notification_one_side_left|^^^^^The War of the Ring is over!^^The {s1} have defeated all their enemies and stand victorious!
-; menu_notification_total_defeat|^^^^^The War of the Ring is over for you!^^The {s1} have been defeated by their enemies and you stand alone in defeat!
-; menu_notification_your_faction_collapsed|^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, together with anyone left from {s11}, can still help your side win.
-; menu_notification_faction_defeated|^^^^^{s1} Defeated!^{s1} is no more, defeated by the forces of {s13}!
-; menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
-; menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
-; mno_explore|Explore this place.
-; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
-; mno_attack_lair|Attack them now
-; mno_leave_bandit_lair|Leave for now.
-; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
-; mno_gondor_reinforcement_event_close|Close
-; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
-; mno_gondor_beacons_close|Leave...
+menu_encounter_retreat_confirm|^ ^ ^ ^ ^ بصفتك عضوًا في المجموعة يتمتع بأعلى مهارة في التكتيكات ، ({reg2}) ، {reg3؟ ابتكرت: {s3} تضع} خطة تسمح لك ولرجالك بالهروب بحياتك ، لكن عليك ترك جنود {reg4} خلفك لمنع العدو من المطاردة.
+mno_leave_behind|تابع. تضحية هؤلاء الرجال ستنقذ البقية.
+mno_dont_leave_behind|لا ، نحن لا نترك أحدًا خلفنا.
+menu_encounter_retreat|^ ^ ^ ^ ^ أنت تخبر {reg4} من قواتك بإمساك العدو بينما تتراجع مع بقية مجموعتك.
+menu_order_attack_begin|^ ^ ^ ^ ^ ^ تستعد قواتك لمهاجمة العدو.
+mno_order_attack_begin|امرهم ببد الهجوم .
+mno_call_back|امرهم بلرجوع.
+menu_order_attack_2|^ {s4} ^ خسائرك: {s8} ^^ خسائر العدو: {s9}
+mno_order_attack_continue|امرهم باستكمال الهجوم
+mno_order_retreat|امر جنودك للرجوع
+menu_kingdom_army_quest_report_to_army|يرسل {s8} كلمة أنه يرغب في انضمامك إلى حملته العسكرية الجديدة. تحتاج إلى إحضار ما لا يقل عن {reg13} من القوات إلى الجيش ويتم توجيهك إلى رفع المزيد من المحاربين بكل سرعة إذا لم يكن لديك ما يكفي.
+mno_reject|ارسل رسالة انك مشغول للغاية
+mno_send_word|ارسل رساله سانضم لك قريبا
+menu_kingdom_army_quest_messenger|يرسل {s8} كلمة يرغب في التحدث معك حول مهمة يحتاج إلى أداؤها. يطلب منك أن تأتي وتراه في أسرع وقت ممكن.
+menu_kingdom_army_quest_join_siege_order|يرسل {s8} كلمة تفيد بأنك ستنضم إلى حصار {s9} استعدادًا لهجوم كامل. القوات الخاصة بك سوف تأخذ {s9} بأي ثمن.
+menu_kingdom_army_follow_failed|لقد عصيت الأوامر وفشلت في اتباع {s8}. يرسل رسالة يفترض أن لديك أمورًا أكثر إلحاحًا ، لكنه يحذر من أن صبره ليس بلا حدود.
+menu_battle_debrief|{s11} ^ الخسائر الخاصة بك: {s8} {s10} ^^ خسائر العدو: {s9}
+mno_inspect_troll|فحص القزم الذي سقط
+menu_pre_join|^ ^ ^ ^ ^ واجهت معركة بين {s2} و {s1}. قررت أن ...
+mno_pre_join_help_attackers|تحرك لمساعدة {s2}.
+mno_pre_join_help_defenders|التسرع لمساعدة {s1}.
+mno_pre_join_help_refugees|التسرع لمساعدة {s1}.
+mno_pre_join_leave|مالي دخل فيهم
+menu_join_battle|^ ^ ^ ^ أنت تساعد {s2} ضد {s1}. ^ لديك {reg22} من القوات الصالحة للمعركة ضد العدو {reg11}. ^^ المعركة تدور في {s3} {s4}.
+mno_join_attack|مهاجمة العدو.
+mno_join_order_attack|اطلب من قواتك الهجوم مع حلفائك أثناء بقائك في الخلف.
+mno_control_allies_join_menu|استخدم النفوذ لقيادة حلفائك في الميدان.
+mno_join_attack_bearform|قفز إلى المعركة في شكل دب
+mno_join_leave|فك الارتباط
+mno_player_control_allies_join_menu|قم بقيادةهم ومهاجمة العدو
+menu_join_order_attack|{s4} ^^ خسائرك: {s8} ^^ خسائر الحلفاء: {s9} ^^ خسائر العدو: {s10}
+mno_enter|ادخل.
+menu_battlefields|^ ^ ^ ^ ^ ^ ^ ^ ^ ^ حدد خانة ...
+mno_enter_f1|حقل 1 
+mno_enter_f2|حقل 2
+mno_enter_f3|حقل 3 
+mno_enter_f4|حقل 4
+mno_enter_f5|حقل 5
+menu_join_siege_outside|^ ^ ^ ^ ^ ^ {s1} تعرض للحصار من قبل {s2}.
+mno_approach_besiegers|اقترب من معسكر الحصار.
+mno_pass_through_siege|مر عبر خطوط الحصار وادخل {s1}.
+menu_cut_siege_without_fight|يتيح لك المحاصرون الاقتراب من البوابات دون اعتراض.
+menu_besiegers_camp_with_allies|{s1} لا يزال تحت الحصار. رايات {s2} تطير فوق معسكر المحاصرين حيث يتم الترحيب بك وبقواتك.
+mno_talk_to_siege_commander|طلب لقاء مع القائد.
+mno_join_siege_with_allies|انضم إلى الهجوم التالي.
+mno_join_siege_stay_back|اطلب من جنودك الانضمام إلى الهجوم التالي بدونك.
+menu_moria_must_escape|^ ^ يبدو أن الكتاب يسرد قصة المحاولة الأخيرة للأقزام للاستقرار في موريا. محاولة انتهت على ما يبدو بموت رهيب لجميع المتورطين. عند قراءة الكتاب ، تتعثر في عبارة "الفضة الحقيقية"! عند دراسة الصفحات التي تدركها فجأة أن هذه هي أوصاف مخابئ أقزام في مكان ما في المستويات الدنيا. ههه! ألن يكون من الرائع الكشف عن قزم ميثريل المفقود منذ زمن طويل !؟ ^ أنت تتبع الاتجاهات بشغف ، في نفق متعرج ضيق وأسفل ... ^ ... ^ بعد بضع ساعات من البحث غير المثمر ، تدرك أنك تائه في أعماق موريا وتحتاج إلى إيجاد مخرج.
+mno_moria_exit_scene|ابحث عن طريقك للخروج!
+menu_castle_outside|أنت خارج {s2}. {s11} {s3} {s4}
+mno_moria_enter|العودة إلى قاعة موريا الرئيسية من خلال المدخل السري
+mno_moria_enter_door|أدخل موريا.
+mno_cheat_steal_book_door|احصل على الكتاب
+mno_castle_start_siege|حاصر {reg6؟ town: castle}.
+mno_castle_leave|ارحل.
+menu_castle_besiege|أنت تفرض حصارًا على {s1}. {s2} {s3}
+mno_siege_request_meeting|دعوة للقاء مع قائد القلعة.
+mno_wait_24_hours|انتظر لين بكره
+mno_castle_lead_attack|قُد جنودك في هجوم.
+mno_attack_stay_back|امر جنودك بالهجوم أثناء بقائك في الخلف ...
+mno_build_ladders|جهز السلالم لمهاجمة الجدران.
+mno_lift_siege|اسحب على الحصار.
+menu_siege_attack_meets_sally|^ ^ ^ ^ ^ ^ واصف المدافعون مواجهة هجومك.
+menu_construct_ladders|بصفتك عضوًا في المجموعة يتمتع بأعلى مهارة مهندس ({reg2}) ، {reg3؟ تقدر: {s3} تقدر} أن الأمر سيستغرق {reg4} ساعات لبناء سلالم متدرجة كافية للهجوم.
+mno_build_ladders_cont|افعلها
+menu_castle_attack_walls_simulate|{s4} ^^ خسائرك: {s8} ^^ خسائر العدو كانت: {s9}
+menu_castle_attack_walls_with_allies_simulate|{s4} ^^ خسائرك: {s8} ^^ خسائر الحلفاء: {s9} ^^ خسائر العدو: {s10}
+menu_castle_taken_by_friends|مافيه شي تراه هنا.
+menu_castle_taken|{s3} سقطت بيد قواتك ، وأنت الآن تتحكم بشكل كامل في {reg2؟ town: castle}. {reg1؟ يبدو أنه لا يوجد ما يمنعك من أخذها لنفسك ...:}
+menu_castle_taken_2|لقد سقط {s3} في يد قواتك ، وأنت الآن تتمتع بالسيطرة الكاملة على القلعة. حان الوقت لإرسال كلمة إلى {s9} حول انتصارك. {s5}
+mno_castle_taken_no_claim|الشريف ماياخذ مكافاة.
+menu_siege_started_defender|{s1} يشن هجومًا على جدران {s2}. لديك {reg22} من القوات الصالحة للمعركة ضد العدو {reg11}. قررت أن ...
+mno_siege_defender_join_battle|انضم للمعركه .
+mno_siege_defender_troops_join_battle|اطلب من رجالك الانضمام إلى المعركة بدونك.
+mno_siege_defender_do_not_join_battle|مالي دخل فيهم
+menu_siege_join_defense|{s4} ^^ خسائرك: {s8} ^^ خسائر الحلفاء: {s9} ^^ خسائر العدو: {s10}
+menu_village_hunt_down_fugitive_defeated|^ ^ ^ ^ ^ ضربة قوية من الهارب توصلك الى الارض وتدور رؤيتك وتظل مظلمة. الوقت يمضي. عندما تفتح عينيك مرة أخرى تجد نفسك مضروبًا وداميًا ، لكن لحسن الحظ لا يبدو أن أيًا من الجروح مميتة.
+menu_town_bandits_succeeded|^ ^ ^ ^ ^ تسقط العفاريت امامك كالقمح في منجل! سرعان ما تقف بمفردك بينما يرقد معظم مهاجميك فاقدًا للوعي أو ميتًا أو يحتضر. بالتأكيد سيكون السكان المحليون ممتنين جدًا لأنك أنقذتهم من هذا الخطر.
+menu_town_brawl_lost|^ ^ ^ ^ ^ ^ لقد تم طردك من البرد. الأشخاص الذين هاجمتهم يفتشونك بسرعة بحثًا عن الأشياء الثمينة ، قبل متابعة أعمالهم اليومية.
+menu_town_brawl_won|^ ^ ^ ^ ^ لقد هزمت جميع المعارضين والحراس المرسلين لقمع الاضطراب. تقوم بتفتيشهم سريعًا بحثًا عن الأشياء الثمينة ثم تختفي حتى تهدأ الأعصاب. ^ ربما في المرة القادمة سيظهرون مزيدًا من الاحترام ويتراجعون.
+menu_close|لاشيئ.
+menu_town|لقد وصلت في {s60}. {s12} {s13}
+mno_town_menu_0|اذهب إلى بعض المواقع.
+mno_town_menu_0_door|باب لبعض المواقع.
+mno_town_approach|اقتراب{s1} ...
+mno_town_castle|اذهب إلى {s1}.
+mno_town_castle_door|باب القلعة.
+mno_town_center|المشي في ساحة المدينة.
+mno_town_center_door|باب الى وسط المدينة.
+mno_aw_chamber_door|افتح الباب.
+mno_trade_with_arms_merchant|قم بزيارة {s40}.
+mno_trade_with_horse_merchant|قم بزيارة {s41}.
+mno_town_prison_door|باب السجن.
+mno_dungeon_enter|ابحث عن الرماح المفقودة داخل الجبال.
+mno_dungeon_enter_door|افتح الباب.
+mno_dwarven_warehouse|قم بزيارة مستودع Dwarven
+mno_dwarven_warehouse_door|ادخل مستودع Dwarven.
+mno_talk_to_castle_commander|قم بزيارة {s61} Barracks.
+mno_speak_with_elder|تحدث مع {s6}.
+mno_isengard_underground|اذهب إلى الكهوف تحت الأرض.
+mno_isengard_underground_door|اذهب إلى الكهوف تحت الأرض
+mno_tirith_toplevel|يصعد إلى المستوى الأعلى.
+mno_tirith_toplevel_door|اذهب إلى القلعة
+mno_erebor_gates|قم بزيارة Great Gates.
+mno_town_leave|ارحل...
+mno_town_leave_door|ارحل من المنطقة.
+menu_player_initiated_siege_result|لقد هاجمت هذا المركز تحت شعار {s2}.
+menu_disembark|هل ترغب في النزول؟
+mno_disembark_yes|نعم.
+mno_disembark_no|لا.
+menu_ship_reembark|هل ترغب في الانطلاق؟
+mno_reembark_yes|نعم.
+mno_reembark_no|لا.
+menu_center_reports|اسم المدينة: {s1} ^ دخل الإيجار: {reg1} denars ^ Tariff Income: {reg2} denars ^ Food Stock: for {reg3} days
+menu_sneak_into_town_suceeded|متنكرا في ثياب حاج فقير ، تخدع الحراس وتشق طريقك إلى المدينة.
+menu_sneak_into_town_caught|أثناء محاولتك التسلل ، يتعرف عليك أحد الحراس ويطلق ناقوس الخطر! يجب أن تهرب من خلال البوابات قبل أن ينزل عليك جميع الحراس في المدينة!
+mno_sneak_caught_fight|حاول أن تقاتل في طريقك للخروج!
+mno_sneak_caught_surrender|استسلام.
+menu_sneak_into_town_caught_dispersed_guards|أنت تدفع بعيدًا عن الحراس وتغطي دربك قبل الهروب ، وتفقد بسهولة من يلاحقونك في متاهة الشوارع.
+menu_sneak_into_town_caught_ran_away|تشق طريقك مرة أخرى عبر البوابات وتراجع سريعًا إلى الأمان خارج المدينة.
+menu_tld_player_defeated|^ ^ ^ ^ ^ فجأة ينفجر ألم محطم في مؤخرة رأسك! \\ أنت ترتجف لأن كل العالم يتحول إلى اللون الأسود من حولك ... ^ هل هذه هي نهايتك؟
+menu_recover_after_death_fangorn|استيقظ. الغابة لا تزال حولك. كل عظم يؤلم. أنت على قيد الحياة ، بالمعجزة. ^ لقد كانت هزيمة ، لكن على الأقل كنت قادرًا على رؤية ما حدث. ^ الآن أنت تعرف ما يحدث في هذه الغابة اللعينة ، ونجوت لتخبر. ^^ هل سيصدقك أحد؟
+menu_recover_after_death_moria|^ ^ ^ ^ ^ تستعيد وعيك. أنت مستلق على تربة ناعمة ، والهواء النقي ينساب على وجهك. أنت بالخارج ^ لابد أن العفاريت أخذوك ليموتوا وألقوا بك في حفرة مظلمة. ^ لابد أنك قد حملت إلى السطح بواسطة تيار تحت الأرض.
+mno_whatever|استيقظ.
+menu_recover_after_death_default|^ ^ ^ ^ ^ تستعيد وعيك. أنت تكذب على المكان الذي وقعت فيه. يجب أن يكون الأعداء قد أخذوك من الموت وتركوك هناك. ومع ذلك ، يبدو أن أيا من جروحك لم تكن مميتة ، وعلى الرغم من شعورك بالفزع ، فإنك تكتشف أنه لا يزال بإمكانك المشي. تنهض وتحاول البحث عن ناجين آخرين من حزبك.
+menu_recover_after_death_town|^ ^ ^ ^ تستعيد وعيك وتجد نفسك في ضواحي المدينة. انت على قيد الحياة! لا أحد في الجوار وأنت تغتنم فرصتك لتجر نفسك خارج المدينة. يبدو أن أيًا من جروحك لم تكن مميتة ، وعلى الرغم من شعورك بالسوء ، فلا يزال بإمكانك المشي.
+menu_recover_after_death_town_alone|تستعيد وعيك وتجد نفسك في ضواحي المدينة. انت على قيد الحياة! لا أحد في الجوار وأنت تغتنم فرصتك لتجر نفسك خارج المدينة. وجدك رفاقك. يبدو أن أيًا من جروحك لم تكن مميتة ، وعلى الرغم من شعورك بالسوء ، فلا يزال بإمكانك المشي.
+menu_notification_center_under_siege|تم محاصرة {s1} بواسطة {s2} من {s3}!
+menu_notification_one_side_left|^ ^ ^ ^ ^ انتهت حرب الخاتم! ^^ لقد هزم {s1} كل أعدائهم وانتصروا!
+menu_notification_total_defeat|^ ^ ^ ^ ^ انتهت حرب الخاتم بالنسبة لك! ^^ {s1}لقد هزمهم أعداؤهم وأنت تقف وحيدًا في الهزيمة
+menu_notification_your_faction_collapsed|^ ^ ^ ^ ^ هزم وطنك {s11}! ^ ومع ذلك ، لا يزال الحلفاء الآخرون في الحرب. أنت ، مع أي شخص متبقٍ من {s11} ، لا يزال بإمكانك مساعدة فريقك على الفوز.
+menu_notification_faction_defeated|^ ^ ^ ^ ^ {s1} هزم! ^ {s1} ليس أكثر ، هزم من قبل قوى {s13}!
+menu_ruins|^ ^ ^ ^ أنت تقترب من {s1}. تم تدمير معسكر قوي بالأرض ، على الرغم من أنه لا يزال بإمكانك رؤية آثار التحصينات والأسلحة الصدئة المتناثرة.
+menu_legendary_place|^ ^ ^ ^ لقد اتبعت الشائعات ووجدت {s1}. يمكنك الآن استكشاف هذا المكان ومعرفة ما إذا كانت الشائعات صحيحة.
+mno_explore|اسكتشف هاذا المكان.
+menu_ring_hunter_lair|^ ^ ^ ^ لقد اتبعت درب Ring Hunters عبر غابة ميركوود ووصلت إلى {s1}. تراهم يستعدون للمغادرة بصدر.
+mno_attack_lair|هاجمهم الآن
+mno_leave_bandit_lair|غادر الآن.
+menu_gondor_reinforcement_event|^ ^ ^ ^ ^ مضاءة منارات جوندور ، ويدعو ميناس تيريث للمساعدة! سوف يسير أمراء الإقطاعيات الجنوبية الآن شمالًا للدفاع عن المدينة البيضاء ضد الظلام القادم.
+mno_gondor_reinforcement_event_close|القريب
+menu_gondor_beacons|تنظر إلى {s1} ، أحد منارات التحذير في جوندور ، والتي تُستخدم في دق ناقوس الخطر في شمال وجنوب جوندور.
+mno_gondor_beacons_close|ارحل...
 ; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
-; mno_player_added_to_war_council_close|Close
+mno_player_added_to_war_council_close|القريب
 ; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
-; mno_player_added_to_siege_reports_close|Close
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
-; mno_player_added_to_allow_follow_close|Close
+mno_player_added_to_siege_reports_close|القريب
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.
+mno_player_added_to_allow_follow_close|القريب
 ; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
-; mno_center_besieged_event_close|Close
+mno_center_besieged_event_close|القريب
 ; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
 mno_intro_next|اكمل....
 ; mno_start_defend_caravan|Defend the Caravan!
@@ -357,14 +379,16 @@ mno_intro_next|اكمل....
 ; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
 ; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
 ; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7} 
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+; menu_hungry_orc|none
+; menu_leaving_elf|none
 ; mno_defend_refugees|Keep your eye out for raiders...
 ; mno_attack_refugees|Attack the refugee train...
 ; mno_leave_refugees|Leave them for now...
 mno_evil_war_tut_continue|اكمل....
 ; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
 ; mno_guardian_party_reject|Send a message you cannot join him.
-; mno_guardian_party_send_word|Send word you'll join him shortly.
+mno_guardian_party_send_word|ارسل رساله سانضم لك قريبا
 ; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
 ; mno_training_continue|Begin training...
 ; menu_alternate_training_conclusion|{s5}
@@ -386,7 +410,7 @@ mno_cb_gondor7|بيور رينغز
 ; menu_custom_battle_choose_faction3|^^^^^^^^^^Choose evil faction
 mno_cb_mordor|موردور
 mno_cb_mordor1|إيزينجارد
-; mno_cb_mordor2|Dunland
+mno_cb_mordor2|دنلاند
 ; mno_cb_mordor3|Haradrim
 ; mno_cb_mordor4|Easterlings
 mno_cb_mordor5|موريا
@@ -396,7 +420,7 @@ mno_cb_mordor7|روهن
 ; mno_rescue_mission|Sneak into the sorcerer's lair under the night's cover.
 ; mno_next_rescue_scene_door|Continue onward!
 ; mno_pick_troops1|Pick companions for the mission, {reg0} selected
-; menu_pick_troops|Whom would you take with you into the stealth mission?    Currently you picked {reg0} companions. You can take up to 10 troops with you
+; menu_pick_troops|Whom would you take with you into the stealth mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg65?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg0} companions.
 ; mno_go_forward|End selecting companions and proceed.
 ; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 ; mno_pay_respects|Kneel and pay your respects.
@@ -412,17 +436,22 @@ mno_cb_mordor7|روهن
 ; mno_leave_pyre|Leave the pyre.
 ; menu_town_ruins|When you approach, you see that {s1} is {s2}
 ; mno_ruin_menu_0|Explore the place.
-; mno_ruin_leave|Leave...
+mno_ruin_leave|ارحل...
+; menu_premutiny|none
 ; menu_death|You have been killed. Though the war still rages on, you will no longer be part of it.
 ; menu_animal_ambush|You and your companions find yourselves separated from the rest of your party, when suddenly...
 ; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
 ; menu_animal_ambush_fail|The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.
-; menu_build_your_scene|You can build your own battlescene here, using one of the slots provided below and game Edit mode  (you need to switch edit mode ON in M&B lauching screen Options first).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
-; mno_scene1|Battlefield5 (file scn battlefield5.sco)
-; mno_scene2|Battlefield6 (file scn battlefield6.sco)
-; mno_scene3|Battlefield7 (file scn battlefield7.sco)
-; mno_scene4|Battlefield8 (file scn battlefield8.sco)
-; mno_scene5|Battlefield9 (file scn battlefield9.sco)
+; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+; mno_scene1|Plain Big (file scn custom 1.sco)
+; mno_scene2|Plain Med (file scn custom 2.sco)
+; mno_scene3|Plain Small (file scn custom 3.sco)
+; mno_scene4|Steppe Big (file scn custom 4.sco)
+; mno_scene5|Steppe Med (file scn custom 5.sco)
+; mno_scene6|Steppe Small (file scn custom 6.sco)
+; mno_scene7|Forest Big (file scn custom 7.sco)
+; mno_scene8|Forest Med (file scn custom 8.sco)
+; mno_scene9|Forest Small (file scn custom 9.sco)
 ; mno_back_3dot|Back...
 mno_back|عد للخلف 
 ; mno_next|Next...

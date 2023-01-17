@@ -1,43 +1,43 @@
-; imod_plain|Plain %s
-; imod_cracked|Poor %s
-; imod_rusty|Crude %s
-; imod_bent|Bent %s
-; imod_chipped|Chipped %s
-; imod_battered|Battered %s
-; imod_poor|Poor %s
-; imod_crude|Simple %s
-; imod_old|Ancient %s
-; imod_cheap|Cheap %s
-; imod_fine|Fine %s
-; imod_well_made|Well Made %s
-; imod_sharp|Sharp %s
-; imod_balanced|Balanced %s
-; imod_tempered|Tempered %s
-; imod_deadly|Deadly %s
-; imod_exquisite|Exquisite %s
-; imod_masterwork|Masterwork %s
-; imod_heavy|Heavy %s
-; imod_strong|Strong %s
-; imod_powerful|Powerful %s
-; imod_tattered|Tattered %s
-; imod_ragged|Rough %s
-; imod_rough|Rough %s
-; imod_sturdy|Sturdy %s
-; imod_thick|Robust %s
-; imod_hardened|Hardened %s
-; imod_reinforced|Reinforced %s
-; imod_superb|Superb %s
-; imod_lordly|Masterwork %s
-; imod_lame|Lame %s
-; imod_swaybacked|Swaybacked %s
-; imod_stubborn|Stubborn %s
-; imod_timid|Timid %s
-; imod_meek|Meek %s
-; imod_spirited|Spirited %s
-; imod_champion|Champion %s
-; imod_fresh|Fresh %s
-; imod_day_old|Day-old %s
-; imod_two_day_old|Two Days-old %s
-; imod_smelling|Smelling %s
-; imod_rotten|Rotten %s
-; imod_large_bag|Large Bag of %s
+imod_plain|سهل%s
+imod_cracked|%sرديء
+imod_rusty|خام%s
+imod_bent|محني%s
+imod_chipped|متكسرة%s
+imod_battered|مضروب%s
+imod_poor|%sرديء
+imod_crude|بسيط%s
+imod_old|عتيق%s
+imod_cheap|بخس%s
+imod_fine|جيد%s
+imod_well_made|جيد الصنع%s
+imod_sharp|حاد%s
+imod_balanced|متعادل%s
+imod_tempered|مزاج%s
+imod_deadly|مهلك%s
+imod_exquisite|رائع, متقن%s
+imod_masterwork|عمل فني مميز%s
+imod_heavy|ثقيل%s
+imod_strong|قوي, شديد%s
+imod_powerful|قوي%s
+imod_tattered|ممزقة%s
+imod_ragged|قاس%s
+imod_rough|قاس%s
+imod_sturdy|دوار%s
+imod_thick|نشيط%s
+imod_hardened|تصلب%s
+imod_reinforced|عززت%s
+imod_cloak|مع عباءة%s
+imod_lordly|عمل فني مميز%s
+imod_lame|كسيح%s
+imod_swaybacked|متأرجح%s
+imod_stubborn|عنيد%s
+imod_timid|متردد%s
+imod_meek|مغطى بالدم%s
+imod_spirited|مفعم بالحيوية%s
+imod_champion|%sبطولي
+imod_fresh|طازج%s
+imod_day_old|يوم%s
+imod_two_day_old|يومان%s
+imod_smelling|شم%s
+imod_rotten|عفن%s
+imod_large_bag|كيس كبير من%s

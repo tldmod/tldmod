@@ -306,7 +306,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Peki, artık sizindir.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Korkarım ki onun için başka planlarım var.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Mükemmel! Onu hızla hapishanemize götürmek için adamlarımı gönderecegim. Bu, eminim ki davamıza yardımcı olacaktır.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Çok kötü, o bizim için çok degerliydi, {playername}.
-; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
+dlga_tld_intro_1:lord_pretalk|Savaş Egitimi:^^- Taraflar yalnızca yeterince güçlü oldukları zaman kuşatma başlatabilirler.^- Çogu yerleşke sadece ait oldukları taraf yeterince zayıf oldugu vakit kuşatılabilir. Başkentler çogunlukla en son kuşatılırlar.^- Eger bir taraf başkentini kaybederse tamamen yenik sayılırlar.^- Tarafların güçleri savaş kaybetmelerine veya bir yerleşim yerlerinin kaybedilmesine baglı olarak azalır.^- Bazı görevler veya olaylar tarafların gücüne etki edebilir.^- 'Raporlar' kısmından mevcut taraf güçlerini karşılaştırabilirsin.^- Daha fazla TLD rehberi için Bilgi Sayfalarına bakabilirsin.
 dlga_lord_start:lord_pretalk|Ah, hoşgeldin, {s24},^Çoktan biliyor olmalısın ki {s12},  görevin bu büyük mücadelede saflarımıza katılmaktır, {playername}. Bana güvenilirligini kanıtladıgın zaman [level {reg1}], kişisel eşyalarını depolamak için yan tarafta gördügün sandıgı kullanmana izin verecegim.
 dlga_lord_start:lord_talk|Bu da ne?
 dlga_lord_pretalk:lord_talk|Herhangi bir şey?
@@ -1032,7 +1032,7 @@ dlga_routed_allies_talk:close_window.1|Daha degil, asker.
 dlga_start:routed_allies_talk_troll|^^HIRRR!^^
 dlga_routed_allies_talk_troll:close_window|[Onları tekrar katmak]
 dlga_routed_allies_talk_troll:close_window.1|[Ayrıl]
-; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+dlga_start:party_encounter_friend|Emirlerinizi dinliyoruz, {s24}.
 dlga_start:party_encounter_friend.1|{s4} Seni buraya getiren nedir, {s24}?
 dlga_party_reinforce:party_reinforce_end|Çok fazla düşman hareketi görmedik henüz. Belki daha sonra, teşekkürler.
 dlga_party_reinforce:party_reinforce_end.1|Daha fazla askere ihtiyacımız yok, teşekkür ederim.

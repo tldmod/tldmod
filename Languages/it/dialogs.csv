@@ -849,7 +849,7 @@ dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|Hai bisogno di
 dlga_mayor_begin:close_window|È bello rivederti {playername}. Ho sentito che sei riuscito a scortare quella gente in salvo. Dirò al tuo comandante quanto ti sei dimostrato affidabile.^^[guadagnati {reg14} Punti Risorsa di {s14}]
 dlga_mayor_begin:move_cattle_herd_failed|Ho sentito che hai perso quella gente sulla via di {s9}. Ho passato un brutto momento a spiegare il tuo fallimento al comandante qui. Hai qualcosa da dire ?
 dlga_move_cattle_herd_failed:move_cattle_herd_failed_2|Mi dispiace. Ma sono stato attaccato lungo il tragitto.
-dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|Mi dispiace. Quelle persone hanno vagato fuori durante la notte.
+dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|Mi dispiace. Quelle persone si sono allontanate durante la notte.
 dlga_move_cattle_herd_failed_2:close_window|Beh, era tua responsabilità consegnarle in sicurezza, non importa a che costo. Dovresti sapere che il Comandante ha chiesto chi sia responsabile per questo fallimento. Quindi gli ho detto che eri tu.
 dlga_mayor_begin:mayor_friendly_pretalk|Ho sentito delle tue gesta. Hai dato a quei goblin la punizione che si meritavano. Sei davvero bravo come dicono.^^[guadagnati {reg14} Punti Risorsa di {s14}]
 dlga_mayor_begin:mayor_talk|Cosa posso fare per te ?

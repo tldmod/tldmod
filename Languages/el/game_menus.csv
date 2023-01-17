@@ -200,10 +200,10 @@ mno_leave|Φύγε.
 menu_simple_encounter|^^^^^{s2}^Έχεις {reg22} στρατιώτες έτοιμους για μάχη ενάντια στους {reg11} δικούς τους.^^Η μάχη διαδραματίζεται στο {s3}{s4}.^^Οι διαταγές σου;
 mno_encounter_attack|{reg21?Όρμηξε τους: Ετοιμάσου να τους αντιμετωπίσεις}.
 mno_encounter_order_attack|Διέταξε τα στρατεύματα σου {reg21?attack:face them} χωρίς εσένα.
-; mno_control_allies_menu|Use influence to command your allies in the field.
+mno_control_allies_menu|Χρησιμοποίησε επιρροή για να διοικήσεις τους συμμάχους σου στο πεδίο της μάχης.
 mno_encounter_hide|Κρύψου από τον εχθρό...
 mno_special_whip|Τρέξε κατά επάνω τους ραγίζοντας το {s4}.
-; mno_encounter_attack_bearform|{reg21?Leap into battle in bear form:Turn skin and face them}.
+mno_encounter_attack_bearform|{reg21?Πέσε στη μάχη με μορφή αρκούδας:Άλλαξε δέρμα και αντιμετώπισε τους}.
 mno_encounter_leave|Απομακρύνσου.
 mno_encounter_retreat|Υποχώρησε, αφήνοντας κάποιους στρατιώτες πίσω για να σε καλύπτουν.
 mno_player_control_allies_simple|Διέταξε τους και όρμησέ στον εχθρό 
@@ -235,7 +235,7 @@ mno_pre_join_leave|Μην συμμετέχεις.
 ; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.
 mno_join_attack|Όρμησε στον εχθρό.
 ; mno_join_order_attack|Order your troops to attack with your allies while you stay back.
-; mno_control_allies_join_menu|Use influence to command your allies in the field.
+mno_control_allies_join_menu|Χρησιμοποίησε επιρροή για να διοικήσεις τους συμμάχους σου στο πεδίο της μάχης.
 ; mno_join_attack_bearform|Leap into battle in bear form
 mno_join_leave|Απομακρύνσου.
 mno_player_control_allies_join_menu|Διέταξε τους και όρμησέ στον εχθρό 
