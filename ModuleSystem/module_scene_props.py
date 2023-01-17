@@ -3756,8 +3756,14 @@ scene_props = [
     (lt, "$g_encountered_party_2", 0), #don't spawn riders in siege battles
     (agent_set_team, reg0, 0),
     (agent_set_slot, reg0, slot_agent_walker_type, 3), #messenger  
-    (entry_point_get_position, pos1, 1),
-    (agent_set_scripted_destination, reg0, pos1),
+    
+    #send them out
+    (scene_prop_get_num_instances, ":num_messenger_exits", "spr_troop_messenger_exit"),
+    (gt, ":num_messenger_exits", 0),
+    (store_random_in_range, ":rand_exit", 0, ":num_messenger_exits"),
+    (scene_prop_get_instance, ":instance_no_target", "spr_troop_messenger_exit", ":rand_exit"),
+    (prop_instance_get_position, pos2, ":instance_no_target"),
+    (agent_set_scripted_destination, reg0, pos2),
     (agent_set_slot, reg0, slot_agent_is_running_away, 1), #needed for tracking
     (agent_set_speed_limit, reg0, 12),
     ])
