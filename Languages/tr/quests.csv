@@ -61,8 +61,8 @@ qst_troublesome_bandits|Belalı Goblinleri avla.
 qst_troublesome_bandits_text|{s4}'ün {s9}'u senden kasaba çevresinde sorun çıkartan goblinleri avlamanı istedi.
 qst_deal_with_looters|Kabile Orklarının işini bitir.
 qst_deal_with_looters_text| {s4} yaşlısı senden {s4} çevresindeki bir kaç kabile Orku grubuyla ilgilenmeni istedi.
-qst_deal_with_night_bandits|Haydut Goblinlerin işini bitir
-qst_deal_with_night_bandits_text|{s14} yaşlısı senden {s14}'deki gece Goblinleriyle ilgilenmeni istedi.
+; qst_deal_with_night_bandits|Deal with Night Bandits
+; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
 qst_deliver_food|{s3}'e {reg5} tane yiyecek götür.
 qst_deliver_food_text|{s3}'ün {s9}'ü ona 10 gün içinde {reg5} tane yiyecek götürmeni istedi.
 qst_deliver_iron|{s3}'e {reg5} tane {s6} götür.

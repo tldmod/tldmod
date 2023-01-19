@@ -249,6 +249,13 @@ qstr_Bonus_to_Strength__P|Bonus k Sile (Len hráč)
 qstr_Lead_more_Orcs|Veď viac Ohyzdov
 qstr_+{reg1}_to_Party_Mor|+{reg1} k Morálke družiny
 qstr_Range:_{reg55}|Dostrel: {reg55}
+qstr_Dwarves|Trpaslíci
+; qstr_Humans_and_Elves|Humans and Elves
+; qstr_Orcs|Orcs
+; qstr_Uruks_and_Uruk_Hai|Uruks and Uruk-Hai
+; qstr_Humans_Uruks_and_Uru|Humans, Uruks, and Uruk-Hai
+; qstr_Humans|Humans
+; qstr_This_item_can_be_use|This item can be used by {s2}
 qstr_Do_you_want_to_disem|Chceš vystúpiť?
 qstr_Move_here|Poď sem
 qstr_View_notes|Prezrieť si poznámky
@@ -628,7 +635,7 @@ qstr_support|podpora
 qstr_bodyguard|osobný strážca
 qstr_undetermined_type_of|neurčitý typ
 qstr_{s1}_has_fled_the_ba|{s1} utiekol z boja!
-qstr_Your_troops_are_at_{|Tvoje jednotky sú na {reg1}% jednoty (+{reg3}% bonus), nepriateľ na {reg2}%!
+; qstr_Your_side_is_at_{reg|Your side is at {reg1}% cohesion ({reg3}% recent events), the enemy at {reg2}%!
 qstr_Morale_of_your_troop|Morálka tvojich jednotiek kolísa!
 qstr_Morale_of_your_enemi|Morálka tvojich nepriateľov kolísa!
 qstr_Your_enemies_flee_in|Tvoji nepriatelia so strachom uháňajú z boja!
@@ -737,6 +744,7 @@ qstr_Cannot_leave_now.|Teraz nemôžeš odísť.
 qstr_You_have_found_the_l|Našiel si miestneho kováča...
 qstr_You_have_found_the_lo|Našiel si miestnu autoritu...
 qstr_You_have_found_the_loc|Našiel si miestne skladisko...
+; qstr_You_have_found_the_c|You have found the captain of the garrison.
 qstr_You_look_through_Hen|Hľadíš skrz Henneth Annun, Okno zapadajúceho slnka. Prekrásny výhľad v tebe obnoví vieru v Západ a Moc za Veľkým morom.
 qstr__cancelled_the_{reg1|(zrušených {reg10} exp. bodov získaných za zabitie väzňov)
 qstr_Forming_ranks.|Formujú línie
@@ -768,7 +776,7 @@ qstr_{s11}_is_{s10}_in_th|{s11} je {s10} kvôli útoku Nazgúla!
 qstr_Received_{reg66}_dam|Utŕžil {reg66} poškodenia.
 qstr_You_yell_for_your_ho|Voláš na svojho koňa.
 qstr_You_do_not_need_to_r|Zatiaľ nie je potrebné vyburcovať tvojich vojakov.
-qstr_You_rally_your_troop|Povzbudzuješ svojich mužov!
+; qstr_You_rally_{reg10}_tr|You rally {reg10} troops!
 qstr_{s5}_rallies_{reg65?|{s5} burcuje {reg65?jej:jeho} vojakov!
 qstr_You_have_killed_{reg|V boji si zabil {reg1} nepriateľov!
 qstr_Your_bravery_inspire|Tvoja udatnosť podnecuje tvojich mužov!
@@ -946,7 +954,6 @@ qstr_You_used_the_Orc_Bre|Použil si Ohyzdiu pálenku
 ; qstr_You_camp_and_beat_the|You camp and beat the Drums of the Deep. The powerful sound attracts a group of {s1} {s2}.
 ; qstr_You_camp_and_beat_the_|You camp and beat the Drums of the Deep. The weak sound attracts a group of {s1} {s2}.
 ; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
-qstr_Fangorn_search:_fail|Skúmanie Farngornu: neúspešné.
 qstr_^^^A_great_victory!^|^^^Veľké víťazstvo!^^^Tak o tomto hovorili všetky tie legendy Farngornu... 
 qstr_^^^Defeated...^^^Sca|^^^ Porazený ... ^^^ Zatúlaný vo Fangornskom Lese ... Osamotený ...
 qstr_Troll_caged_in_wheel|Zlobor uväznený vo voze.
@@ -1514,6 +1521,24 @@ qstr_We_need_to_grind_dow|Potrebujeme už konečne rozdrviť našich ubohých ne
 qstr_{s9}_asked_you_to_el|{s9} chce, aby si eliminoval {reg1} {s13} skupín.
 qstr_{s9}_asked_you_to_fr|{s9} chce, aby si zbavil {s13} nebezpečného zlobra, ktorý vyčíňa v tých krajoch.
 ; qstr_{reg1}_{s16}_joined_|{reg1} {s16} joined your party.
+; qstr_Wait_{playername}._I|Wait, {playername}. I don't say this often, but you are an exceptionally reliable servant.
+; qstr_Halt_{playername}._I|Halt, {playername}. I once thought you little more than a snaga, but you are proving to be a useful servant.
+; qstr_Take_these_warriors_|Take these warriors, that your horde might continue to serve me.
+; qstr_One_last_thing_{play|One last thing, {playername}. In a land filled with backstabbers and rivals, you have always been a true ally.
+; qstr_Wait_{playername}._W|Wait, {playername}. When we met I sensed in you a rival, but I see now I was mistaken.
+; qstr_Take_these_warriors_a|Take these warriors, and use them to strike down our foes.
+; qstr_Before_you_leave_{pl|Before you leave, {playername}, know that you have always been a good friend to me.
+; qstr_Wait_{playername}._I_|Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend.
+; qstr_Allow_me_to_repay_yo|Allow me to repay you by giving you some troops.
+; qstr_Wait_{playername}._C|Wait, {playername}. Capable servants like you and your warriors deserve the best equipment.
+; qstr_Halt_{playername}._It|Halt, {playername}. It's shameful to have my servants using such inferior equipment.
+; qstr_Take_this_{s22}_and_|Take this {s22} and let it aid your rampage.
+; qstr_Before_you_go_{playe|Before you go, {playername}. Great warriors like you and your companions deserve only the best weapons, armor, and mounts.
+; qstr_Wait_{playername}._Y|Wait, {playername}. Your army has done well, but I think you'd do better with superior equipment.
+; qstr_Take_this_{s22}._I_h|Take this {s22}. I have no need of it.
+; qstr_Just_a_moment_{playe|Just a moment, {playername}. Heroes like you and your companions are worthy of the finest weapons, armor, and horses.
+; qstr_Wait_{playername}._Yo|Wait, {playername}. You have been an able commander in the war effort. I think it's time you had some better equipment.
+; qstr_Accept_this_{s22}_ma|Accept this {s22}, may it aid you and your companions.
 qstr_the_Dwarves_so_that_|Trpaslíci, pokiaľ budeš prechádzať cez Erebor alebo Železné hory, môžeš sa vyzbrojiť v preslávených trpasličích zbrojniciach.
 qstr_Gondor_so_that_if_yo|Gondor, pokiaľ budeš prechádzať týmto prastarým kráľovstvom, môžeš si skúsiť zaobstarať jedno z ich preslávených brnení vysokej kvality.
 qstr_Rohan_so_that_if_you|Rohan, pokiaľ budeš prechádzať touto krajinou, skús si kúpiť koňa z jedného zo slávnych plemien.
@@ -1624,7 +1649,7 @@ qstr_The_{s9}_of_{s3}_ask|{s9} z {s3} ťa požiadal, aby si mu dodal {reg5} kuso
 qstr_The_{s9}_of_{s3}_aske|{s9} z {s3} ťa požiadal, aby si mu priviezol {reg5} kusov {s6} do {reg0} dní.
 qstr_Escort_the_supply_tr|Eskortuj zásobovaciu karavanu do {s8}.
 qstr_The_{s9}_of_{s4}_aske|{s9} z {s4} ťa požiadal aby si našiel a zabil dobiedzavých škratov v blízkosti mesta.
-qstr_The_{s9}_of_{s14}_ha|{s9} z {s14} ťa poveril, aby si pobil skupinu škratov, ktorí robia problémy v {s14}. Vychádzajú len v noci a po uliciach útočia len na osamelých ľudí.
+; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of bandits making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
 qstr_refugees|utečenci
 qstr_slaves|otroci
 qstr_{s1}_Refugees|{s1} Utečenci

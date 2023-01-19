@@ -61,8 +61,8 @@ qst_troublesome_bandits|Tuhoa harmilliset menninkäiset
 ; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome goblins in the vicinity of the town.
 qst_deal_with_looters|Hoitele heimoörkit
 ; qst_deal_with_looters_text|The Elder of {s4} has asked you to deal with several bands of tribal orcs around {s4}.
-qst_deal_with_night_bandits|Hoitele kelmimenninkäiset
-; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night goblins at {s14}.
+; qst_deal_with_night_bandits|Deal with Night Bandits
+; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
 ; qst_deliver_food|Supply {s3} with {reg5} Units of food
 ; qst_deliver_food_text|The {s9} of {s3} asked you to bring him {reg5} units of food in 10 days.
 ; qst_deliver_iron|Supply {s3} with {reg5} Units of {s6}

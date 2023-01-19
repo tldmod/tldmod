@@ -249,6 +249,13 @@ qstr_Bonus_to_Strength__P|Bonus de Force (joueur seulement)
 qstr_Lead_more_Orcs|Diriger plus d'orcs
 qstr_+{reg1}_to_Party_Mor|+{reg1} au moral du groupe
 qstr_Range:_{reg55}|Portée : {reg55}
+qstr_Dwarves|des Nains
+qstr_Humans_and_Elves|Humains et elfes
+qstr_Orcs|Orques
+qstr_Uruks_and_Uruk_Hai|Uruks et Uruk-Hai
+qstr_Humans_Uruks_and_Uru|Humains, Uruks, et Uruk-Hai
+qstr_Humans|Humains
+qstr_This_item_can_be_use|Cet article peut être utilisé par {s2}
 qstr_Do_you_want_to_disem|Voulez-vous débarquer ?
 qstr_Move_here|Aller ici
 qstr_View_notes|Voir les notes
@@ -628,7 +635,7 @@ qstr_support|soutien
 qstr_bodyguard|garde du corps
 qstr_undetermined_type_of|type indéterminé
 qstr_{s1}_has_fled_the_ba|{s1} a fui la bataille !
-qstr_Your_troops_are_at_{|Vos troupes ont une cohésion de {reg1} % (+{reg3} % bonus), celle de l’ennemi est de {reg2} % !
+qstr_Your_side_is_at_{reg|Votre camp a une cohésion de {reg1}% ({reg3} % évènements récents), l'ennemi à {reg2} % !
 qstr_Morale_of_your_troop|Le moral des vos troupes vacille !
 qstr_Morale_of_your_enemi|Le moral de vos ennemis vacille !
 qstr_Your_enemies_flee_in|Vos ennemis fuient éperdument !
@@ -737,6 +744,7 @@ qstr_Cannot_leave_now.|Vous ne pouvez pas partir maintenant.
 qstr_You_have_found_the_l|Vous avez trouvé le forgeron local.
 qstr_You_have_found_the_lo|Vous avez trouvé la personne en charge de l'autorité ici.
 qstr_You_have_found_the_loc|Vous avez trouvé l'entrepôt local.
+qstr_You_have_found_the_c|Vous avez trouvé le capitaine de la garnison.
 qstr_You_look_through_Hen|Vous regardez à travers Henneth Annun, la Fenêtre du soleil couchant. La vue magnifique restaure votre foi en l'Ouest et les Pouvoirs au delà.
 qstr__cancelled_the_{reg1|(annulation des {reg10} points d'expérience gagnés en tuant des prisonniers)
 qstr_Forming_ranks.|Formation en rang.
@@ -768,7 +776,7 @@ qstr_{s11}_is_{s10}_in_th|{s11} est {s10} par l'attaque du Nazgûl !
 qstr_Received_{reg66}_dam|{reg66} dégâts reçus.
 qstr_You_yell_for_your_ho|Vous criez pour votre cheval.
 qstr_You_do_not_need_to_r|Vous n'avez pas encore besoin de rallier vos troupes.
-qstr_You_rally_your_troop|Vous ralliez vos troupes !
+qstr_You_rally_{reg10}_tr|Vous rassemblez {reg10} soldats !
 qstr_{s5}_rallies_{reg65?|{s5} rassemble ses troupes !
 qstr_You_have_killed_{reg|Vous avez tué {reg1} ennemis dans cette bataille !
 qstr_Your_bravery_inspire|Votre bravoure inspire vos troupes !
@@ -946,7 +954,6 @@ qstr_You_camp_and_beat_th|Vous dressez un campement et faites battre les tambour
 qstr_You_camp_and_beat_the|Vous montez le camp et battez les tambours des profondeurs. Le son puissant attire un groupe de {s1} {s2}.
 qstr_You_camp_and_beat_the_|Vous montez le camp et battez les tambours des profondeurs. Le son peu puissant attire un groupe de {s1} {s2}.
 qstr_You_camp_and_try_to_|Vous montez le camp et battez les tambours des profondeurs, mais personne ne répond à votre appel minable.
-qstr_Fangorn_search:_fail|Recherche de Fangorn : échouée.
 qstr_^^^A_great_victory!^|^^^C'est une grande victoire !^^^Donc, c'est ce que voulaient dire tous ces mythes à propos de Fangorn...
 qstr_^^^Defeated...^^^Sca|^^^Battus..^^^Éparpillés dans la forêt de Fangorn... Seul{/e}...
 qstr_Troll_caged_in_wheel|Troll emprisonné dans une cage.
@@ -1514,6 +1521,24 @@ qstr_We_need_to_grind_dow|Nous devons broyer nos stupides adversaires, {playerna
 qstr_{s9}_asked_you_to_el|{s9} vous a demandé d’éliminer {reg1} groupes de {s13}.
 qstr_{s9}_asked_you_to_fr|{s9} vous a demandé de délivrer {s13} de la menace d’un troll déchaîné dans ses environs.
 qstr_{reg1}_{s16}_joined_|{reg1} {s16} se sont joints à votre groupe.
+qstr_Wait_{playername}._I|Attendez, {playername}. Je ne le dis pas souvent, mais vous êtes un serviteur exceptionnellement fiable.
+qstr_Halt_{playername}._I|Halte, {playername}. Je pensais que vous n'étiez rien de plus qu'un snaga, mais vous vous révélez être un serviteur utile.
+qstr_Take_these_warriors_|Prenez ces guerriers, pour que votre horde puisse continuer à me servir.
+qstr_One_last_thing_{play|Une dernière chose, {playername}. Dans un pays rempli de traîtres et de rivaux, vous avez toujours été un véritable allié.
+qstr_Wait_{playername}._W|Attendez, {playername}. Quand nous nous sommes rencontrés, j'ai pensé que nous pourrions être rivaux, mais je vois maintenant que je me suis trompé.
+qstr_Take_these_warriors_a|Prenez ces guerriers, et utilisez-les pour abattre nos ennemis.
+qstr_Before_you_leave_{pl|Avant de partir, {playername}, sachez que je vous avez toujours été {un bon ami/une bonne amie} pour moi.
+qstr_Wait_{playername}._I_|Attendez, {playername}. Je ne vous connais pas aussi bien que je le voudrais, mais jusqu'à présent, vous avez été {un bon ami/une bonne amie}.
+qstr_Allow_me_to_repay_yo|Permettez-moi de vous remercier en vous donnant quelques soldats.
+qstr_Wait_{playername}._C|Attendez, {playername}. Les serviteurs compétents comme vous et vos guerriers méritent le meilleur équipement.
+qstr_Halt_{playername}._It|Halte, {playername}. C'est une honte que mes serviteurs utilisent un équipement aussi médiocre.
+qstr_Take_this_{s22}_and_|Prenez ceci : {s22}. En espérant que cela vous aide dans vos pérégrinations.
+qstr_Before_you_go_{playe|Avant que vous ne partiez, {playername}. Les grands guerriers comme vous et vos compagnons ne méritent que les meilleures armes, armures et montures.
+qstr_Wait_{playername}._Y|Attend, {playername}. Votre armée s'est bien comportée, mais je pense que vous feriez encore mieux avec un équipement supérieur.
+qstr_Take_this_{s22}._I_h|Prenez ceci : {s22}. Je n'en ai aucune utilité.
+qstr_Just_a_moment_{playe|Un instant, {playername}. Les héros comme vous et vos compagnons sont dignes des meilleures armes, armures et chevaux.
+qstr_Wait_{playername}._Yo|Attendez, {playername}. Vous avez été un commandant compétent dans l'effort de guerre. Je pense qu'il est temps que vous ayez un meilleur équipement.
+qstr_Accept_this_{s22}_ma|Acceptez ceci : {s22}. Puisse ce présent vous aider, vous et vos compagnons.
 qstr_the_Dwarves_so_that_|des nains, si vous passez par Erebor ou les Collines de Fer, vous pourrez vous équiper d'une arme sortie des légendaires forges naines.
 qstr_Gondor_so_that_if_yo|Gondor, si vous passez sur leurs terres vous pourrez acheter une de leurs célèbres armures
 qstr_Rohan_so_that_if_you|Rohan, si vous traversez leurs terres vous pourrez acquérir un de leurs superbes chevaux.
@@ -1624,7 +1649,7 @@ qstr_The_{s9}_of_{s3}_ask|Le {s9} de {s3} vous a demandé de lui apporter {reg5}
 qstr_The_{s9}_of_{s3}_aske|Le {s9} de {s3} vous a demandé de lui apporter {reg5} unités de {s6} dans les {reg0} jours.
 qstr_Escort_the_supply_tr|Escortez le convoi de ravitaillement à {s8}.
 qstr_The_{s9}_of_{s4}_aske|Le {s9} de {s4} vous a demandé de traquer les gobelins gênants au voisinage de la ville.
-qstr_The_{s9}_of_{s14}_ha|Le {s9} de {s14} vous a demandé de vous occuper d'un groupe de gobelins causant des troubles à {s14}. Ils ne sortent que la nuit, et n'attaquent que des gens seuls dans les rues.
+qstr_The_{s9}_of_{s14}_ha|Le {s9} de {s14} vous a demandé de vous occuper d'un groupe de bandits causant des troubles à {s14}. Ils ne sortent que la nuit, et n'attaquent que des gens seuls dans les rues.
 qstr_refugees|réfugiés
 qstr_slaves|esclaves
 qstr_{s1}_Refugees|Réfugiés {s1}

@@ -61,8 +61,8 @@ qst_troublesome_bandits|Traquer les gobelins gênants.
 qst_troublesome_bandits_text|Le {s9} de {s4} vous a demandé de traquer les gobelins gênants dans le voisinage de la ville.
 qst_deal_with_looters|S'occuper des orques tribaux
 qst_deal_with_looters_text|L'ancien de {s4} vous a demandé de vous occuper de plusieurs groupes d'orques tribaux autour de {s4}.
-qst_deal_with_night_bandits|S'occuper des gobelins vauriens
-qst_deal_with_night_bandits_text|L'ancien de {s14} vous a demandé de vous occuper des gobelins nocturnes à {s14}.
+qst_deal_with_night_bandits|S'occuper des bandits nocturnes
+qst_deal_with_night_bandits_text|L'ancien de {s14} vous a demandé de vous occuper des bandits nocturnes à {s14}.
 qst_deliver_food|Fournir {reg5} unités de nourriture à {s3}
 qst_deliver_food_text|Le {s9} de {s3} vous a demandé de lui apporter {reg5} unités de nourriture en 10 jours.
 qst_deliver_iron|Fournir {reg5} unités de {s6} à {s3}

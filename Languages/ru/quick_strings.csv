@@ -249,6 +249,13 @@ qstr_Bonus_to_Strength__P|Бонус к силе (только для игрок
 qstr_Lead_more_Orcs|Бонус к числу орков
 qstr_+{reg1}_to_Party_Mor|+{reg1} к боевому духу отряда
 qstr_Range:_{reg55}|Дальность: {reg55}
+qstr_Dwarves|Гномы
+; qstr_Humans_and_Elves|Humans and Elves
+; qstr_Orcs|Orcs
+; qstr_Uruks_and_Uruk_Hai|Uruks and Uruk-Hai
+; qstr_Humans_Uruks_and_Uru|Humans, Uruks, and Uruk-Hai
+; qstr_Humans|Humans
+; qstr_This_item_can_be_use|This item can be used by {s2}
 qstr_Do_you_want_to_disem|Вы хотите высадиться?
 qstr_Move_here|Перейти
 qstr_View_notes|Заметки
@@ -628,7 +635,7 @@ qstr_support|вспомогательный боец
 qstr_bodyguard|телохранитель
 qstr_undetermined_type_of|неизвестный род войск
 qstr_{s1}_has_fled_the_ba|{s1} сбежал с поля боя! 
-qstr_Your_troops_are_at_{|Уровень сплочённости ваших воинов - {reg1}% (бонус +{reg3}% ), у врага - {reg2}%!
+; qstr_Your_side_is_at_{reg|Your side is at {reg1}% cohesion ({reg3}% recent events), the enemy at {reg2}%!
 qstr_Morale_of_your_troop|Ваши воины дрогнули!
 qstr_Morale_of_your_enemi|Враги дрогнули!
 qstr_Your_enemies_flee_in|Враги бегут в ужасе!
@@ -737,6 +744,7 @@ qstr_Cannot_leave_now.|Сейчас нельзя уйти.
 qstr_You_have_found_the_l|Вы нашли местную кузницу.
 qstr_You_have_found_the_lo|Вы нашли местного управленца.
 qstr_You_have_found_the_loc|Вы нашли местный склад.
+; qstr_You_have_found_the_c|You have found the captain of the garrison.
 qstr_You_look_through_Hen|Вы смотрите сквозь Хеннет Аннун, Окно Заката. Это поистине прекрасное зрелище восстанавливает вашу веру в Запад и сверхъестественные силы.
 qstr__cancelled_the_{reg1|(отменены {reg10} очков опыта за убийство пленников)
 qstr_Forming_ranks.|Воины строятся шеренгами.
@@ -768,7 +776,7 @@ qstr_{s11}_is_{s10}_in_th|{s11} {s10} во время нападения наз�
 qstr_Received_{reg66}_dam|Получено {reg66} урона.
 qstr_You_yell_for_your_ho|Вы призываете вашего коня.
 qstr_You_do_not_need_to_r|Пока не требуется созыв ваших войск.
-qstr_You_rally_your_troop|Вы созываете своих воинов!
+; qstr_You_rally_{reg10}_tr|You rally {reg10} troops!
 qstr_{s5}_rallies_{reg65?|{s5} вдохновляет {reg65?её:его} войск!
 qstr_You_have_killed_{reg|Вы убили {reg1} врагов в этой битве! 
 qstr_Your_bravery_inspire|Ваша отвага вдохновляет ваших воинов! 
@@ -946,7 +954,6 @@ qstr_You_camp_and_beat_th|Вы встаёте на лагерь, и бьете �
 qstr_You_camp_and_beat_the|Ты разбиваешь лагерь и бьешь в Барабаны Бездны. Мощный звук привлекает группу {s1} {s2}.
 qstr_You_camp_and_beat_the_|Ты разбиваешь лагерь и бьешь в Барабаны Бездны. Слабый звук привлекает группу {s1} {s2}.
 qstr_You_camp_and_try_to_|Ты разбиваешь лагерь и пытаешься бить в Барабаны Бездны, но никто не отвечает на твой жалкий зов.
-qstr_Fangorn_search:_fail|Разведка Фангорна: провал.
 qstr_^^^A_great_victory!^|^^^Великая победа!^^^Так вот что значили все россказни о Фангорне...
 qstr_^^^Defeated...^^^Sca|^^^Поражение...^^^Раздавлен в древнем лесу Фангорн...В полном одиночестве...
 qstr_Troll_caged_in_wheel|Тролль посажен в клетку на колёсах.
@@ -1514,6 +1521,24 @@ qstr_We_need_to_grind_dow|Мы должны стереть в порошок н�
 qstr_{s9}_asked_you_to_el|{s9} хочет чтобы вы уничтожили {reg1} отрядов типа "{s13}".
 qstr_{s9}_asked_you_to_fr|{s9} просит вас избавить {s13} от свирепствующего в округе тролля.
 qstr_{reg1}_{s16}_joined_|{reg1} {s16} присоединился к Вашему отряду.
+; qstr_Wait_{playername}._I|Wait, {playername}. I don't say this often, but you are an exceptionally reliable servant.
+; qstr_Halt_{playername}._I|Halt, {playername}. I once thought you little more than a snaga, but you are proving to be a useful servant.
+; qstr_Take_these_warriors_|Take these warriors, that your horde might continue to serve me.
+; qstr_One_last_thing_{play|One last thing, {playername}. In a land filled with backstabbers and rivals, you have always been a true ally.
+; qstr_Wait_{playername}._W|Wait, {playername}. When we met I sensed in you a rival, but I see now I was mistaken.
+; qstr_Take_these_warriors_a|Take these warriors, and use them to strike down our foes.
+; qstr_Before_you_leave_{pl|Before you leave, {playername}, know that you have always been a good friend to me.
+; qstr_Wait_{playername}._I_|Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend.
+; qstr_Allow_me_to_repay_yo|Allow me to repay you by giving you some troops.
+; qstr_Wait_{playername}._C|Wait, {playername}. Capable servants like you and your warriors deserve the best equipment.
+; qstr_Halt_{playername}._It|Halt, {playername}. It's shameful to have my servants using such inferior equipment.
+; qstr_Take_this_{s22}_and_|Take this {s22} and let it aid your rampage.
+; qstr_Before_you_go_{playe|Before you go, {playername}. Great warriors like you and your companions deserve only the best weapons, armor, and mounts.
+; qstr_Wait_{playername}._Y|Wait, {playername}. Your army has done well, but I think you'd do better with superior equipment.
+; qstr_Take_this_{s22}._I_h|Take this {s22}. I have no need of it.
+; qstr_Just_a_moment_{playe|Just a moment, {playername}. Heroes like you and your companions are worthy of the finest weapons, armor, and horses.
+; qstr_Wait_{playername}._Yo|Wait, {playername}. You have been an able commander in the war effort. I think it's time you had some better equipment.
+; qstr_Accept_this_{s22}_ma|Accept this {s22}, may it aid you and your companions.
 qstr_the_Dwarves_so_that_|гномьих денег, так что, если окажетесь в Эреборе или Железных холмах, то сможете получить оружие из их прославленных кузней
 qstr_Gondor_so_that_if_yo|гондорских денег, так что, если окажетесь там, сможете приобрести какой-нибудь прославленный доспех
 qstr_Rohan_so_that_if_you|роханских денег, так что, если окажетесь там, сможете купить их знаменитых лошадей
@@ -1624,7 +1649,7 @@ qstr_The_{s9}_of_{s3}_ask|{s9} поселения {s3} попросил вас �
 qstr_The_{s9}_of_{s3}_aske|{s9} поселения {s3} попросил вас привезти ему {s6}, {reg5} мешков, в течение {reg0} дней.
 qstr_Escort_the_supply_tr|Сопроводите обоз в {s8}.
 qstr_The_{s9}_of_{s4}_aske|{s9} поселения {s4} попросил вас покончить с несколькими бандами диких орков в окрестностях города.
-qstr_The_{s9}_of_{s14}_ha|{s9} поселения {s14} попросил вас покончить со зловредными гоблинами, которые разгуливают ночью по улицам и нападают на прохожих.
+; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of bandits making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
 qstr_refugees|беженцев
 qstr_slaves|рабов
 qstr_{s1}_Refugees|{s1} Беженцы

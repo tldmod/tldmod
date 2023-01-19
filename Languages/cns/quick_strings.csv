@@ -249,6 +249,13 @@ qstr_Bonus_to_Strength__P|奖励力量属性（仅玩家）
 qstr_Lead_more_Orcs|统御更多半兽人
 qstr_+{reg1}_to_Party_Mor|部队士气 +{reg1}
 qstr_Range:_{reg55}|射程：{reg55}
+qstr_Dwarves|矮人
+; qstr_Humans_and_Elves|Humans and Elves
+; qstr_Orcs|Orcs
+; qstr_Uruks_and_Uruk_Hai|Uruks and Uruk-Hai
+; qstr_Humans_Uruks_and_Uru|Humans, Uruks, and Uruk-Hai
+; qstr_Humans|Humans
+; qstr_This_item_can_be_use|This item can be used by {s2}
 qstr_Do_you_want_to_disem|你想上岸吗？
 qstr_Move_here|移动到这里
 qstr_View_notes|查看笔记
@@ -628,7 +635,7 @@ qstr_support|支援
 qstr_bodyguard|护卫
 qstr_undetermined_type_of|未定类型
 qstr_{s1}_has_fled_the_ba|{s1}逃离了战场！
-qstr_Your_troops_are_at_{|我军士气为{reg1}%(+{reg3}%加成)，敌军士气为{reg2}%！
+; qstr_Your_side_is_at_{reg|Your side is at {reg1}% cohesion ({reg3}% recent events), the enemy at {reg2}%!
 qstr_Morale_of_your_troop|我军士气动摇了！
 qstr_Morale_of_your_enemi|敌方士气动摇了！
 qstr_Your_enemies_flee_in|敌军因恐惧而溃逃！
@@ -737,6 +744,7 @@ qstr_Cannot_leave_now.|现在不能离开。
 qstr_You_have_found_the_l|你找到了当地铁匠。
 qstr_You_have_found_the_lo|你找到了地方长官。
 qstr_You_have_found_the_loc|你找到了当地仓库。
+; qstr_You_have_found_the_c|You have found the captain of the garrison.
 qstr_You_look_through_Hen|你端详汉那斯安南，也就是落日之窗。美丽的景色恢复了你对西方和世界的信心。
 qstr__cancelled_the_{reg1|(取消了杀囚获得的{reg10}经验值)
 qstr_Forming_ranks.|正在列阵。
@@ -768,7 +776,7 @@ qstr_{s11}_is_{s10}_in_th|{s11}在戒灵的攻击中{s10}！
 qstr_Received_{reg66}_dam|受到{reg66}点伤害。
 qstr_You_yell_for_your_ho|你呼唤你的马。
 qstr_You_do_not_need_to_r|你暂时不需要集结你的部队。
-qstr_You_rally_your_troop|你集结了部队！
+; qstr_You_rally_{reg10}_tr|You rally {reg10} troops!
 qstr_{s5}_rallies_{reg65?|{s5}集结了{reg65?她的:他的}的部队！
 qstr_You_have_killed_{reg|你在战斗中杀死了{reg1}名敌人！
 qstr_Your_bravery_inspire|你的英勇鼓舞了你的部队！
@@ -946,7 +954,6 @@ qstr_You_camp_and_beat_th|你扎营并击响了深渊之鼓。这股强大的声
 qstr_You_camp_and_beat_the|你扎营并击响了深渊之鼓。这股有力的声音吸引到了一支{s1}{s2}。
 qstr_You_camp_and_beat_the_|你扎营并击响了深渊之鼓。这股微弱的声音吸引到了一支{s1}{s2}。
 qstr_You_camp_and_try_to_|你扎营并击响了深渊之鼓，然而你卑微的呼唤没有得到任何回应。
-qstr_Fangorn_search:_fail|搜索法贡森林：失败。
 qstr_^^^A_great_victory!^|^^^一场伟大的胜利！ ^^^这是法贡森林的又一个神话...
 qstr_^^^Defeated...^^^Sca|^^^战败了……^^^在法贡森林里走散了……独自一人……
 qstr_Troll_caged_in_wheel|食人妖被关在笼车里。
@@ -1514,6 +1521,24 @@ qstr_We_need_to_grind_dow|我们要把没用的敌人碾碎，{playername}。他
 qstr_{s9}_asked_you_to_el|{s9}希望你去消灭{reg1}队{s13}。
 qstr_{s9}_asked_you_to_fr|{s9}希望你解决{s13}近郊游荡着的一只狂暴的食人妖。
 qstr_{reg1}_{s16}_joined_|{reg1}名{s16}加入了你的队伍。
+; qstr_Wait_{playername}._I|Wait, {playername}. I don't say this often, but you are an exceptionally reliable servant.
+; qstr_Halt_{playername}._I|Halt, {playername}. I once thought you little more than a snaga, but you are proving to be a useful servant.
+; qstr_Take_these_warriors_|Take these warriors, that your horde might continue to serve me.
+; qstr_One_last_thing_{play|One last thing, {playername}. In a land filled with backstabbers and rivals, you have always been a true ally.
+; qstr_Wait_{playername}._W|Wait, {playername}. When we met I sensed in you a rival, but I see now I was mistaken.
+; qstr_Take_these_warriors_a|Take these warriors, and use them to strike down our foes.
+; qstr_Before_you_leave_{pl|Before you leave, {playername}, know that you have always been a good friend to me.
+; qstr_Wait_{playername}._I_|Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend.
+; qstr_Allow_me_to_repay_yo|Allow me to repay you by giving you some troops.
+; qstr_Wait_{playername}._C|Wait, {playername}. Capable servants like you and your warriors deserve the best equipment.
+; qstr_Halt_{playername}._It|Halt, {playername}. It's shameful to have my servants using such inferior equipment.
+; qstr_Take_this_{s22}_and_|Take this {s22} and let it aid your rampage.
+; qstr_Before_you_go_{playe|Before you go, {playername}. Great warriors like you and your companions deserve only the best weapons, armor, and mounts.
+; qstr_Wait_{playername}._Y|Wait, {playername}. Your army has done well, but I think you'd do better with superior equipment.
+; qstr_Take_this_{s22}._I_h|Take this {s22}. I have no need of it.
+; qstr_Just_a_moment_{playe|Just a moment, {playername}. Heroes like you and your companions are worthy of the finest weapons, armor, and horses.
+; qstr_Wait_{playername}._Yo|Wait, {playername}. You have been an able commander in the war effort. I think it's time you had some better equipment.
+; qstr_Accept_this_{s22}_ma|Accept this {s22}, may it aid you and your companions.
 qstr_the_Dwarves_so_that_|矮人使用的货币，如果你途径铁丘陵或孤山的话，你可以试着用传说中的矮人武器武装自己
 qstr_Gondor_so_that_if_yo|刚铎使用的货币，如果你途径他们的领土的话，你可以试着购买一些他们远近闻名的护甲
 qstr_Rohan_so_that_if_you|洛汗使用的货币，如果你途径他们的领土的话，你可以试着购买一些他们传说中的战马
@@ -1624,7 +1649,7 @@ qstr_The_{s9}_of_{s3}_ask|{s3}的{s9}希望你在{reg6}天内带给他{reg5}单�
 qstr_The_{s9}_of_{s3}_aske|{s3}的{s9}希望你在{reg0}天内带给他{reg5}单位的{s6}。
 qstr_Escort_the_supply_tr|护送补给队前往{s8}
 qstr_The_{s9}_of_{s4}_aske|{s4}的{s9}希望你在城镇附近追捕棘手的半兽人
-qstr_The_{s9}_of_{s14}_ha|{s14}的{s9}希望你能解决肆虐{s14}的半兽人。这群半兽人只在夜间攻击街上的独行者。
+; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of bandits making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
 qstr_refugees|难民
 qstr_slaves|奴隶
 qstr_{s1}_Refugees|{s1}难民

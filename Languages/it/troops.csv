@@ -458,12 +458,12 @@ trp_c6_rider_guard_of_rohan|Guardia dell'Ordine di Eorl di Rohan
 trp_c6_rider_guard_of_rohan_pl|Guardie dell'Ordine di Eorl di Rohan
 trp_i6_2h_guard_of_rohan|Guardia dell'Ordine di Helm di Rohan
 trp_i6_2h_guard_of_rohan_pl|Guardie dell'Ordine di Helm di Rohan
-trp_dismounted_veteran_skirmisher_of_rohan|Schermagliatore Veterano di Rohan
-trp_dismounted_veteran_skirmisher_of_rohan_pl|Schermagliatori Veterani di Rohan
-trp_dismounted_elite_skirmisher_of_rohan|Schermagliatore d'Élite di Rohan
-trp_dismounted_elite_skirmisher_of_rohan_pl|Schermagliatori d'Élite di Rohan
-trp_dismounted_thengel_guard_of_rohan|Guardia dell'Ordine di Thengel di Rohan
-trp_dismounted_thengel_guard_of_rohan_pl|Guardie dell'Ordine di Thengel di Rohan
+trp_ac3_dism_skirmisher_of_rohan2|Schermagliatore di Rohan
+trp_ac3_dism_skirmisher_of_rohan2_pl|Schermagliatori di Rohan
+trp_ac4_dism_veteran_skirmisher_of_rohan2|Schermagliatore Veterano di Rohan
+trp_ac4_dism_veteran_skirmisher_of_rohan2_pl|Schermagliatori Veterani di Rohan
+trp_ac5_dism_elite_skirmisher_of_rohan2|Schermagliatore d'Élite di Rohan
+trp_ac5_dism_elite_skirmisher_of_rohan2_pl|Schermagliatori d'Élite di Rohan
 trp_i1_harad_levy|Coscritto di Harad
 trp_i1_harad_levy_pl|Coscritti di Harad
 trp_i3_harad_infantry|Fante leggero di Harad
@@ -1636,3 +1636,9 @@ trp_tribal_orc_warrior|Orco Tribale Guerriero
 trp_tribal_orc_warrior_pl|Orchi Tribali Guerrieri
 trp_tribal_orc_chief|Capo Orco Tribale
 trp_tribal_orc_chief_pl|Capi Orchi Tribali
+trp_a3_dism_skirmisher_of_rohan|Schermagliatore di Rohan
+trp_a3_dism_skirmisher_of_rohan_pl|Schermagliatori di Rohan
+trp_a4_dism_veteran_skirmisher_of_rohan|Schermagliatore Veterano di Rohan
+trp_a4_dism_veteran_skirmisher_of_rohan_pl|Schermagliatori Veterani di Rohan
+trp_a5_dism_elite_skirmisher_of_rohan|Schermagliatore d'Élite di Rohan
+trp_a5_dism_elite_skirmisher_of_rohan_pl|Schermagliatori d'Élite di Rohan

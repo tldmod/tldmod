@@ -178,6 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|이 덩치를 잘 대해 주세요.
 dlga_player_hire_troop:close_window.1|전 훈련이 필요합니다.
 dlga_player_hire_troop:tld_sell_prisoners|죄수들을 좀 데려왔다네.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} 어디 그 망할 자식 좀 보자고.
+; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
+; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|우리 지하감옥 관련 기록을 좀 확인해보도록 하지...
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|마음이 좀 바뀌었나, 응?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|감옥에서 아무도 도망치지 못하게 하겠습니다.
@@ -609,6 +611,12 @@ dlga_lord_talk:lord_leave_prison|떠나야할 것 같습니다.
 dlga_lord_talk:lord_leave|담소는 여기까지. 이제 가야할 것 같습니다.
 dlga_lord_talk:lord_leave.1|이만 물러나야할 것 같군요.
 dlga_lord_leave_prison:close_window|우린 다시 만날 걸세.
+; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
+; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
+; dlga_lord_offer_troops:close_window.1|I fear I cannot accept them at this time.
+; dlga_lord_leave:lord_offer_item|{s23} {s24}
+; dlga_lord_offer_item:close_window|Thank you, I shall see  that it is put to good use.
+; dlga_lord_offer_item:close_window.1|I'm afraid I must decline.
 dlga_lord_leave:close_window|두고봐야 알겠지, {playername}.
 dlga_lord_leave:close_window.1|물론이네, {playername}. 평안하길.
 dlga_lord_leave:close_window.2|즐거운 여행 되길, {playername}.
@@ -919,9 +927,9 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|나는 저 골치 아�
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|알겠네. 그 고블린들을 추적해 없애겠네.
 dlga_merchant_quest_taken_bandits:close_window|그래주시겠습니까? 정말 다행이군요. 행운을 빕니다.
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|죄송합니다. 지금은 이것을 할 시간이 없습니다.
-dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|사실입니다! 그 곳을 위협하는 도적 고블린 떼가 있는데 어떻게 처리해야할지 막막합니다. 밤을 틈 타 술취한 신병들을 습격하고는 동이 터 경비병들이 나타나기 전에 번개처럼 빠르게 사라집니다. 우리는 놈들 중 한 마리도 잡지 못했습니다. 놈들은 고립된 사람만을 공격하고, 많은 무리 앞에는 자신을 드러내지 않습니다. 나는 이 고블린들을 혼자서 싸워 이길 수 있는 사람이 필요합니다. 그게 놈들을 처리할 유일한 방법인 것처럼 보이니까요. 임무를 맡으시겠습니까?
-dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|그 곳을 위협하는 도적 고블린 떼가 있는데 어떻게 처리해야할지 막막합니다. 밤을 틈 타 술취한 신병들을 습격하고는 동이 터 경비병들이 나타나기 전에 번개처럼 빠르게 사라집니다. 우리는 놈들 중 한 마리도 잡지 못했습니다. 놈들은 고립된 사람만을 공격하고, 많은 무리 앞에는 자신을 드러내지 않습니다. 나는 이 고블린들을 혼자서 싸워 이길 수 있는 사람이 필요합니다. 그게 놈들을 처리할 유일한 방법인 것처럼 보이니까요. 임무를 맡으시겠습니까?
-dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|도적 고블린 죽이기? 내가 좋아하는 일이지!
+; dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|아니, 흥미 없소.
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|내 짐을 덜어주시는군요, {playername}. 성공적으로 돌아왔을 때에는 후한 보상을 기대하시죠. 그냥 살아서 돌아오는 것을 우선적으로 생각하십시오. 알겠죠?
 dlga_merchant_quest_requested:merchant_quest_brief.9|이곳의 수비대 지휘관은 {s13}까지 {s12} 무리를 데려갈 전사를 찾고 있다.

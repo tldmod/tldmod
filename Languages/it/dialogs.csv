@@ -178,6 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|Prenditi cura di questo grande comp
 dlga_player_hire_troop:close_window.1|Ho bisogno di addestramento.
 dlga_player_hire_troop:tld_sell_prisoners|Ho qualcosa per te.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Diamo un'occhiata a questa misera feccia.
+dlga_player_hire_troop:tld_sell_prisoners_all|Voglio che prendi tutti i prigionieri che ho con me.
+dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Molto bene, li porterò tutti nelle nostre segrete.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Fammi controllare le registrazioni delle nostre prigioni.
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Hai cambiato idea, eh ?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Farò in modo che non possano sfuggire dalle nostre segrete.
@@ -609,6 +611,12 @@ dlga_lord_talk:lord_leave_prison|Devo andare adesso.
 dlga_lord_talk:lord_leave|Questa discussione è giunta al termine. Me ne vado.
 dlga_lord_talk:lord_leave.1|Ora devo andare.
 dlga_lord_leave_prison:close_window|Ci rivedremo ancora.
+dlga_lord_leave:lord_offer_troops|{s23} {s24} ho {reg41} {s25} che {reg42?sono:è} in grado di unirsi a voi.
+dlga_lord_offer_troops:close_window|Grazie, {reg42?li accetterò volentieri nel mio gruppo, ma temo di avere spazio solo per {reg41}}.
+dlga_lord_offer_troops:close_window.1|Temo di non poterli accettare in questo momento.
+dlga_lord_leave:lord_offer_item|{s23} {s24}
+dlga_lord_offer_item:close_window|Grazie, vedrò di farne buon uso.
+dlga_lord_offer_item:close_window.1|Temo di dover rifiutare.
 dlga_lord_leave:close_window|Ne riparleremo, {playername}.
 dlga_lord_leave:close_window.1|Ma certo, {playername}. Addio.
 dlga_lord_leave:close_window.2|Buon viaggio a te, {playername}.
@@ -919,9 +927,9 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|Ho bisogno di qualcuno
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Va bene. Caccerò i goblin.
 dlga_merchant_quest_taken_bandits:close_window|Lo farai ? Ne sono felice. Buona fortuna !
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Spiacente. Non ho tempo per questo adesso.
-dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Eccome ! C'è un gruppo di goblin furfanti che tormentano il luogo, e io sono stufo di avere a che fare con loro. Hanno teso imboscate e derubato reclute ubriache al calare delle tenebre, per poi scomparire veloci come il fulmine all'arrivo delle guardie. Non siamo riusciti a catturare nemmeno uno dei loro. Attaccano solamente persone sole, non osando mai presentarsi quando è presente un gruppo nelle vicinanze. Ho bisogno di qualcuno che possa battersi da solo con questi goblin e vincere. Sembra che sia l'unico modo di liberarsi di loro. Sei all'altezza del compito ?
-dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|C'è un gruppo di goblin furfanti che tormentano il luogo, e io sono stufo di avere a che fare con loro. Hanno teso imboscate e derubato reclute ubriache al calare delle tenebre, per poi scomparire veloci come il fulmine all'arrivo delle guardie. Non siamo riusciti a catturare nemmeno uno dei loro. Attaccano solamente persone sole, non osando mai presentarsi quando è presente un gruppo nelle vicinanze. Ho bisogno di qualcuno che possa battersi da solo con questi goblin e vincere. Sembra che sia l'unico modo di liberarsi di loro. Sei all'altezza del compito ?
-dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Uccidere dei goblin furfanti ? Perché lo chiedi, certo !
+dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Eccome ! C'è un gruppo di banditi che tormentano il luogo, e io sono stufo di avere a che fare con loro. Hanno teso imboscate e derubato reclute ubriache al calare delle tenebre, per poi scomparire veloci come il fulmine all'arrivo delle guardie. Non siamo riusciti a catturare nemmeno uno di loro. Attaccano unicamente persone sole, non osando mai mostrarsi quando è presente un gruppo nelle vicinanze. Ho bisogno di qualcuno che possa battersi da solo contro questi banditi e sconfiggerli. Sembra che sia l'unico modo per liberarsi di loro. Credi di essere all'altezza del compito ?
+dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|C'è un gruppo di banditi che tormentano il luogo, e io sono stufo di avere a che fare con loro. Hanno teso imboscate e derubato reclute ubriache al calare delle tenebre, per poi scomparire veloci come il fulmine all'arrivo delle guardie. Non siamo riusciti a catturare nemmeno uno di loro. Attaccano unicamente persone sole, non osando mai mostrarsi quando è presente un gruppo nelle vicinanze. Ho bisogno di qualcuno che possa battersi da solo contro questi banditi e sconfiggerli. Sembra che sia l'unico modo per liberarsi di loro. Credi di essere all'altezza del compito ?
+dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Uccidere delle canaglie di banditi? Perché lo chiedi, certo !
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|No, non sono interessato.
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|Questo mi toglie un peso dalle spalle, {playername}. Aspettati una lauta ricompensa se torni vincitore. Solo non farti ammazzare, intesi ?
 dlga_merchant_quest_requested:merchant_quest_brief.9|Il comandante della guarnigione sta cercando un guerriero valoroso per portare un gruppo di {s12} a {s13}.

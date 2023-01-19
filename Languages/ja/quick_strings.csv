@@ -249,6 +249,13 @@ qstr_Bonus_to_Strength__P|体力にボーナス (プレイヤーのみ)
 qstr_Lead_more_Orcs|指揮可能なオークの数が増大
 qstr_+{reg1}_to_Party_Mor|パーティの士気+{reg1}
 qstr_Range:_{reg55}|範囲: {reg55}
+qstr_Dwarves|ドワーフ
+; qstr_Humans_and_Elves|Humans and Elves
+; qstr_Orcs|Orcs
+; qstr_Uruks_and_Uruk_Hai|Uruks and Uruk-Hai
+; qstr_Humans_Uruks_and_Uru|Humans, Uruks, and Uruk-Hai
+; qstr_Humans|Humans
+; qstr_This_item_can_be_use|This item can be used by {s2}
 qstr_Do_you_want_to_disem|上陸しますか？
 qstr_Move_here|ここへ移動
 qstr_View_notes|詳細を見る
@@ -628,7 +635,7 @@ qstr_support|補助兵
 qstr_bodyguard|護衛兵
 qstr_undetermined_type_of|未分類の
 qstr_{s1}_has_fled_the_ba|{s1}は戦場から逃げました！
-qstr_Your_troops_are_at_{|味方の兵の団結力は{reg1}%(+{reg3}%ボーナス)、敵兵は{reg2}%です！
+; qstr_Your_side_is_at_{reg|Your side is at {reg1}% cohesion ({reg3}% recent events), the enemy at {reg2}%!
 qstr_Morale_of_your_troop|味方の兵が浮き足立っています！
 qstr_Morale_of_your_enemi|敵兵が浮き足立っています！
 qstr_Your_enemies_flee_in|敵兵が恐怖で逃げています！
@@ -737,6 +744,7 @@ qstr_Cannot_leave_now.|今は離脱できません。
 qstr_You_have_found_the_l|拠点の鍛冶屋を見つけました。
 qstr_You_have_found_the_lo|拠点の管理責任者を見つけました。
 qstr_You_have_found_the_loc|拠点の貯蔵所を見つけました。
+; qstr_You_have_found_the_c|You have found the captain of the garrison.
 qstr_You_look_through_Hen|あなたは夕陽の窓とも呼ばれるヘンネス・アンヌーンを見て回った。 その美しさに、あなたは西方とその底力に対する認識をあらためた。
 qstr__cancelled_the_{reg1|(捕虜を殺害して得た経験値{reg10}をキャンセルしました)
 qstr_Forming_ranks.|横陣を組みます。
@@ -768,7 +776,7 @@ qstr_{s11}_is_{s10}_in_th|ナズグールの攻撃により、{s11}が{s10}！
 qstr_Received_{reg66}_dam|{reg66}のダメージを受けました。
 qstr_You_yell_for_your_ho|あなたは自分の馬を呼びました。
 qstr_You_do_not_need_to_r|まだ檄を飛ばす必要はありません。
-qstr_You_rally_your_troop|あなたは自軍の兵士たちを奮い立たせました！
+; qstr_You_rally_{reg10}_tr|You rally {reg10} troops!
 qstr_{s5}_rallies_{reg65?|{s5}は部下の兵に檄を飛ばしました！
 qstr_You_have_killed_{reg|あなたは敵兵を{reg1}名倒しました！
 qstr_Your_bravery_inspire|あなたの勇猛さに兵士たちが勇気づけられています！
@@ -946,7 +954,6 @@ qstr_You_camp_and_beat_th|あなたは野営を張り、地底の太鼓を打ち
 ; qstr_You_camp_and_beat_the|You camp and beat the Drums of the Deep. The powerful sound attracts a group of {s1} {s2}.
 ; qstr_You_camp_and_beat_the_|You camp and beat the Drums of the Deep. The weak sound attracts a group of {s1} {s2}.
 ; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
-qstr_Fangorn_search:_fail|ファンゴルンの森探索:失敗。
 qstr_^^^A_great_victory!^|^^^大いなる勝利だ！^^^なるほど、これがファンゴルンの伝説のからくりか・・・
 qstr_^^^Defeated...^^^Sca|^^^敗れた・・・^^^ファンゴルンの森に散ってしまった・・・ひとりだ・・・
 qstr_Troll_caged_in_wheel|トロルは車輪付きの檻に入れられました。
@@ -1514,6 +1521,24 @@ qstr_We_need_to_grind_dow|{playername}、 我々は役立たずの敵勢を 粉�
 qstr_{s9}_asked_you_to_el|{s9}より、 {s13}を{reg1}部隊壊滅させるよう、 依頼された。
 qstr_{s9}_asked_you_to_fr|{s9}より、 {s13}郊外で暴れるトロルの脅威から、 町を開放するよう頼まれた。
 qstr_{reg1}_{s16}_joined_|あなたのパーティに{reg1}名の{s16}が加わりました。
+; qstr_Wait_{playername}._I|Wait, {playername}. I don't say this often, but you are an exceptionally reliable servant.
+; qstr_Halt_{playername}._I|Halt, {playername}. I once thought you little more than a snaga, but you are proving to be a useful servant.
+; qstr_Take_these_warriors_|Take these warriors, that your horde might continue to serve me.
+; qstr_One_last_thing_{play|One last thing, {playername}. In a land filled with backstabbers and rivals, you have always been a true ally.
+; qstr_Wait_{playername}._W|Wait, {playername}. When we met I sensed in you a rival, but I see now I was mistaken.
+; qstr_Take_these_warriors_a|Take these warriors, and use them to strike down our foes.
+; qstr_Before_you_leave_{pl|Before you leave, {playername}, know that you have always been a good friend to me.
+; qstr_Wait_{playername}._I_|Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend.
+; qstr_Allow_me_to_repay_yo|Allow me to repay you by giving you some troops.
+; qstr_Wait_{playername}._C|Wait, {playername}. Capable servants like you and your warriors deserve the best equipment.
+; qstr_Halt_{playername}._It|Halt, {playername}. It's shameful to have my servants using such inferior equipment.
+; qstr_Take_this_{s22}_and_|Take this {s22} and let it aid your rampage.
+; qstr_Before_you_go_{playe|Before you go, {playername}. Great warriors like you and your companions deserve only the best weapons, armor, and mounts.
+; qstr_Wait_{playername}._Y|Wait, {playername}. Your army has done well, but I think you'd do better with superior equipment.
+; qstr_Take_this_{s22}._I_h|Take this {s22}. I have no need of it.
+; qstr_Just_a_moment_{playe|Just a moment, {playername}. Heroes like you and your companions are worthy of the finest weapons, armor, and horses.
+; qstr_Wait_{playername}._Yo|Wait, {playername}. You have been an able commander in the war effort. I think it's time you had some better equipment.
+; qstr_Accept_this_{s22}_ma|Accept this {s22}, may it aid you and your companions.
 qstr_the_Dwarves_so_that_|ドワーフの間で使われている通貨だから、 もしエレボールかくろがね連山の近くを通ることがあるなら、 名高いドワーフの武器を手に入れるといい
 qstr_Gondor_so_that_if_yo|ゴンドールで使われている通貨だから、 もし領内を通ることがあるなら、 彼らの有名な防具を手に入れるといい
 qstr_Rohan_so_that_if_you|ローハンで使われている通貨だから、 もし領内を通ることがあるなら、 彼らの名高い馬を手に入れるといい
@@ -1624,7 +1649,7 @@ qstr_The_{s9}_of_{s3}_ask|{s3}の{s9}より、 {reg5}個の食料を、 {reg6}�
 qstr_The_{s9}_of_{s3}_aske|{s3}の{s9}より、 {reg5}個の{s6}を、 {reg0}日以内に調達してくるよう、 頼まれた。
 qstr_Escort_the_supply_tr|{s8}まで 補給隊を護衛せよ
 qstr_The_{s9}_of_{s4}_aske|{s4}の{s9}より、 集落の近辺をうろつく迷惑なゴブリンどもを退治するよう、 頼まれた。
-qstr_The_{s9}_of_{s14}_ha|{s14}の{s9}より、 {s14}で悪さを働くゴブリンの一団を退治するよう 頼まれた。 ゴブリンどもは夜のあいだだけ出没し、 単独で通りを歩く者だけを狙うという。
+; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of bandits making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
 qstr_refugees|難民
 qstr_slaves|奴隷
 qstr_{s1}_Refugees|{s1}の難民

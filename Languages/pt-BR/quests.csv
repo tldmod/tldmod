@@ -61,8 +61,8 @@ qst_troublesome_bandits|Cace os Goblins problemáticos
 qst_troublesome_bandits_text|O {s9} de {s4} pediu-lhe para caçar os Goblins problemáticos nos arredores da cidade.
 qst_deal_with_looters|Lide com os Orcs Tribais
 qst_deal_with_looters_text|O Ancião de {s4} pediu-lhe para lidar com as diversas bandas de Orcs Tribais ao redor de {s4}.
-qst_deal_with_night_bandits|Lide com os Goblins Trapaceiros
-qst_deal_with_night_bandits_text|O Ancião de {s14} pediu-lhe para lidar com os Goblins Noturnos em {s14}.
+; qst_deal_with_night_bandits|Deal with Night Bandits
+; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
 qst_deliver_food|Abasteça {s3} com {reg5} Unidades de alimentos
 qst_deliver_food_text|O {s9} do {s3} pediu-lhe para trazê-lo {reg5} unidades de alimentos em até 10 dias.
 qst_deliver_iron|Abasteça {s3} com {reg5} unidades de {s6}

@@ -178,6 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|よし！さあ、このでかぶ�
 dlga_player_hire_troop:close_window.1|訓練をしたい。
 dlga_player_hire_troop:tld_sell_prisoners|捕虜を連行してきた。
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} さて、哀れな囚人どもの顔を拝むとしましょうか。
+; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
+; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|捕虜台帳を確認させて頂きます・・・
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|気が変わったのですか？
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|こやつらが牢獄から逃げ出さないよう、 私が責任を持って管理しましょう。
@@ -609,6 +611,12 @@ dlga_lord_talk:lord_leave_prison|失礼させていただきます。
 dlga_lord_talk:lord_leave|おしゃべりはこれまで。失礼する。
 dlga_lord_talk:lord_leave.1|失礼します。
 dlga_lord_leave_prison:close_window|また会おう。
+; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
+; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
+; dlga_lord_offer_troops:close_window.1|I fear I cannot accept them at this time.
+; dlga_lord_leave:lord_offer_item|{s23} {s24}
+; dlga_lord_offer_item:close_window|Thank you, I shall see  that it is put to good use.
+; dlga_lord_offer_item:close_window.1|I'm afraid I must decline.
 dlga_lord_leave:close_window|{playername}よ、あまり調子に乗りすぎぬことだ。
 dlga_lord_leave:close_window.1|うむ。{playername}よ、さらばだ。
 dlga_lord_leave:close_window.2|{playername}よ、旅の無事を祈る。
@@ -919,9 +927,9 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|そのゴブリンの�
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|了解した。そのゴブリンどもを退治しよう。
 dlga_merchant_quest_taken_bandits:close_window|やってくれますか？ありがたい。 幸運を祈ります。
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|残念{だ/ね}。今はこの仕事を引き受ける余裕がない{/のよ}。
-dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|もちろんあります！ この辺を荒らしまわる、 ごろつきゴブリンどもの一団がいて、 我々の手に負えないんです。 やつらは夜の闇にまぎれて 酔っ払いなどを襲って金目の物を奪い、 衛兵が駆けつける頃には 素早く姿を消してしまうのです。 我々はまだ一匹も捕まえることができていません。 やつらは獲物が単独であるときだけを狙い、 複数がいる場合は絶対に姿を現さないのです。 たったひとりでゴブリンどもを倒せる猛者が必要なのです。 それ以外に解決方法があるとは思えません。 やって頂けますか？
-dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|この辺を荒らしまわる、 ごろつきゴブリンどもの一団がいて、 我々の手に負えないんです。 やつらは夜の闇にまぎれて 酔っ払いなどを襲って金目の物を奪い、 衛兵が駆けつける頃には 素早く姿を消してしまうのです。 我々はまだ一匹も捕まえることができていません。 やつらは獲物が単独であるときだけを狙い、 複数がいる場合は絶対に姿を現さないのです。 たったひとりでゴブリンどもを倒せる猛者が必要なのです。 それ以外に解決方法があるとは思えません。 やって頂けますか？
-dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|ごろつきゴブリンの退治{だって/ですって}？喜んで引き受け{よう/るわ}！
+; dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|悪い{が/けど}、興味がない{/わ}。
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|これで肩の荷が下りましたよ、 {playername}殿。 成功のあかつきには報酬をはずみますよ。 くれぐれも、 返り討ちに遭わないように気をつけてくださいよ？
 dlga_merchant_quest_requested:merchant_quest_brief.9|ここの守備隊の隊長が、 {s12}の一行を {s13}へ連れて行ってくれる、 信頼できる戦士を探しているんです。

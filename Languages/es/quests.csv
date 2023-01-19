@@ -61,8 +61,8 @@ qst_troublesome_bandits|Da caza a los Trasgos problemáticos.
 qst_troublesome_bandits_text|El {s9} de {s4} te ha pedido que des caza a los Trasgos problemáticos que rondan cerca de la ciudad.
 qst_deal_with_looters|Encárgate de los Orcos Tribales
 qst_deal_with_looters_text|El Anciano de {s4} te ha pedido que te encargues de varias bandas de Orcos Tribales alrededor de {s4}.
-qst_deal_with_night_bandits|Encárgate de los Trasgos Nocturnos.
-qst_deal_with_night_bandits_text|El Anciano de {s14} te ha pedido que te encargues de los trasgos nocturnos en {s14}.
+; qst_deal_with_night_bandits|Deal with Night Bandits
+; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
 qst_deliver_food|Suministra a {s3} {reg5} Unidades de comida.
 qst_deliver_food_text|El {s9} de {s3} te ha pedido que le lleves {reg5} unidades de comida en 10 días.
 qst_deliver_iron|Suministra a {s3} {reg5} Unidades de {s6}.

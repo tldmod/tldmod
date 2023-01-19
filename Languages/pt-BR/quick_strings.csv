@@ -249,6 +249,13 @@ qstr_Bonus_to_Strength__P|Bônus em Força (Jogador apenas)
 qstr_Lead_more_Orcs|Lidere mais Orcs
 qstr_+{reg1}_to_Party_Mor|+{reg1} em Moral do Destacamento
 qstr_Range:_{reg55}|Alcance: {reg55}
+qstr_Dwarves|Anões
+; qstr_Humans_and_Elves|Humans and Elves
+; qstr_Orcs|Orcs
+; qstr_Uruks_and_Uruk_Hai|Uruks and Uruk-Hai
+; qstr_Humans_Uruks_and_Uru|Humans, Uruks, and Uruk-Hai
+; qstr_Humans|Humans
+; qstr_This_item_can_be_use|This item can be used by {s2}
 qstr_Do_you_want_to_disem|Deseja desembarcar?
 qstr_Move_here|Mover aqui
 qstr_View_notes|Ver anotações
@@ -628,7 +635,7 @@ qstr_support|Suporte
 qstr_bodyguard|guarda-costas
 qstr_undetermined_type_of|tipo indeterminado de
 qstr_{s1}_has_fled_the_ba|{s1} fugiu da batalha!
-qstr_Your_troops_are_at_{|Suas tropas estão {reg1}% coesão (+{reg3}% bônus), o inimigo está a {reg2}%! 
+; qstr_Your_side_is_at_{reg|Your side is at {reg1}% cohesion ({reg3}% recent events), the enemy at {reg2}%!
 qstr_Morale_of_your_troop|A moral de suas tropas caiu!
 qstr_Morale_of_your_enemi|A moral dos inimigos caiu!
 qstr_Your_enemies_flee_in|Seus inimigos fogem aterrorizados!
@@ -737,6 +744,7 @@ qstr_Cannot_leave_now.|Não pode sair agora.
 qstr_You_have_found_the_l|Você encontrou o ferreiro local.
 qstr_You_have_found_the_lo|Você encontrou a autoridade local.
 qstr_You_have_found_the_loc|Você encontrou o armazém local.
+; qstr_You_have_found_the_c|You have found the captain of the garrison.
 qstr_You_look_through_Hen|Você olha através de Henneth Annun, a janela do pôr do sol. A bela vista restaura sua fé no oeste e nas Forças além.
 qstr__cancelled_the_{reg1|(cancelados os {reg10} pontos de exp. ganhos por matar prisioneiros)
 qstr_Forming_ranks.|Formando fileiras.
@@ -768,7 +776,7 @@ qstr_{s11}_is_{s10}_in_th|{s11} está {s10} no ataque Nazgul!
 qstr_Received_{reg66}_dam|Recebeu {reg66} de dano.
 qstr_You_yell_for_your_ho|Você grita por seu cavalo.
 qstr_You_do_not_need_to_r|Você não precisa reagrupar suas tropas ainda.
-qstr_You_rally_your_troop|Você reagrupa suas tropas!
+; qstr_You_rally_{reg10}_tr|You rally {reg10} troops!
 qstr_{s5}_rallies_{reg65?|{s5} reagrupa {reg65?suas:suas} tropas!
 qstr_You_have_killed_{reg|Você matou {reg1} inimigos nessa batalha!
 qstr_Your_bravery_inspire|Sua bravura inspira suas tropas!
@@ -946,7 +954,6 @@ qstr_You_used_the_Orc_Bre|Você usou a Cerveja Orc.
 ; qstr_You_camp_and_beat_the|You camp and beat the Drums of the Deep. The powerful sound attracts a group of {s1} {s2}.
 ; qstr_You_camp_and_beat_the_|You camp and beat the Drums of the Deep. The weak sound attracts a group of {s1} {s2}.
 ; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
-qstr_Fangorn_search:_fail|Busca Fangorn: falhou.
 qstr_^^^A_great_victory!^|^^^Uma grande vitória!^^^Então era isso o que todos os mitos sobre Fangorn queriam dizer...
 qstr_^^^Defeated...^^^Sca|^^^Derrotado...^^^Espalhado na Floresta de Fangorn...Sozinho...
 qstr_Troll_caged_in_wheel|Troll preso em gaiola de rodas
@@ -1514,6 +1521,24 @@ qstr_We_need_to_grind_dow|Precisamos esmagar nossos inimigos sem valor, {playern
 qstr_{s9}_asked_you_to_el|{s9} pediu-lhe para eliminar {reg1} {s13} partes.
 qstr_{s9}_asked_you_to_fr|{s9} pediu-lhe para libertar {s13} da ameaça de um Troll que grassa na sua periferia .
 ; qstr_{reg1}_{s16}_joined_|{reg1} {s16} joined your party.
+; qstr_Wait_{playername}._I|Wait, {playername}. I don't say this often, but you are an exceptionally reliable servant.
+; qstr_Halt_{playername}._I|Halt, {playername}. I once thought you little more than a snaga, but you are proving to be a useful servant.
+; qstr_Take_these_warriors_|Take these warriors, that your horde might continue to serve me.
+; qstr_One_last_thing_{play|One last thing, {playername}. In a land filled with backstabbers and rivals, you have always been a true ally.
+; qstr_Wait_{playername}._W|Wait, {playername}. When we met I sensed in you a rival, but I see now I was mistaken.
+; qstr_Take_these_warriors_a|Take these warriors, and use them to strike down our foes.
+; qstr_Before_you_leave_{pl|Before you leave, {playername}, know that you have always been a good friend to me.
+; qstr_Wait_{playername}._I_|Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend.
+; qstr_Allow_me_to_repay_yo|Allow me to repay you by giving you some troops.
+; qstr_Wait_{playername}._C|Wait, {playername}. Capable servants like you and your warriors deserve the best equipment.
+; qstr_Halt_{playername}._It|Halt, {playername}. It's shameful to have my servants using such inferior equipment.
+; qstr_Take_this_{s22}_and_|Take this {s22} and let it aid your rampage.
+; qstr_Before_you_go_{playe|Before you go, {playername}. Great warriors like you and your companions deserve only the best weapons, armor, and mounts.
+; qstr_Wait_{playername}._Y|Wait, {playername}. Your army has done well, but I think you'd do better with superior equipment.
+; qstr_Take_this_{s22}._I_h|Take this {s22}. I have no need of it.
+; qstr_Just_a_moment_{playe|Just a moment, {playername}. Heroes like you and your companions are worthy of the finest weapons, armor, and horses.
+; qstr_Wait_{playername}._Yo|Wait, {playername}. You have been an able commander in the war effort. I think it's time you had some better equipment.
+; qstr_Accept_this_{s22}_ma|Accept this {s22}, may it aid you and your companions.
 qstr_the_Dwarves_so_that_|os Anões, de modo que, se você passar por Erebor ou pelas Colinas de Ferro, você pode tentar se armar com o armamento dos Anões fabulosos.
 qstr_Gondor_so_that_if_yo|Gondor, para que se você passar por suas terras, você pode tentar comprar algumas de suas armaduras conhecidas
 qstr_Rohan_so_that_if_you|Rohan, de modo que se você passar por suas terras, você pode tentar comprar alguns de seus cavalos fabulosos
@@ -1624,7 +1649,7 @@ qstr_The_{s9}_of_{s3}_ask|O {s9} de {s3} pediu que você trouxesse para ele {reg
 qstr_The_{s9}_of_{s3}_aske|O {s9} de {s3} pediu que você trouxesse {reg5} unidades de {s6} em {reg0} dias.
 qstr_Escort_the_supply_tr|Escoltar o comboio de abastecimento para {s8}.
 qstr_The_{s9}_of_{s4}_aske|O {s9} de {s4} pediu-lhe para caçar os goblins problemáticos nos arredores da cidade.
-qstr_The_{s9}_of_{s14}_ha|O {s9} de {s14} pediu a você para lidar com um grupo de goblins que está causando problemas em {s14}. Eles só saem à noite e só atacam pessoas solitárias nas ruas.
+; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of bandits making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
 qstr_refugees|refugiados
 qstr_slaves|escravos
 qstr_{s1}_Refugees|{s1} Refugiados

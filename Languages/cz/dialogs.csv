@@ -178,6 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|Dobře se postarej o tohohle velik�
 dlga_player_hire_troop:close_window.1|Potřebuji nějaký trénink.
 dlga_player_hire_troop:tld_sell_prisoners|Přivedl jsem vám nějake zajatce.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Podívejme se na ubohou spodinu.
+; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
+; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Dovolte mi zkontrolovat záznamy z našeho vězení...
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Změnil jsi svůj názor, eh?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Postarám se o to, aby z našich žalářů už nikdy nevylezli.
@@ -609,6 +611,12 @@ dlga_lord_talk:lord_leave_prison|Musím jít.
 dlga_lord_talk:lord_leave|Náš hovor skončil. Odcházím.
 dlga_lord_talk:lord_leave.1|Omluv mě.
 dlga_lord_leave_prison:close_window|Na viděnou. 
+; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
+; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
+; dlga_lord_offer_troops:close_window.1|I fear I cannot accept them at this time.
+; dlga_lord_leave:lord_offer_item|{s23} {s24}
+; dlga_lord_offer_item:close_window|Thank you, I shall see  that it is put to good use.
+; dlga_lord_offer_item:close_window.1|I'm afraid I must decline.
 dlga_lord_leave:close_window|Uvidíme, {playername}.
 dlga_lord_leave:close_window.1|Zajisté, {playername}. Sbohem.
 dlga_lord_leave:close_window.2|Přeji ti dobré cesty, {playername}.
@@ -919,9 +927,9 @@ dlga_merchant_quest_requested:merchant_quest_brief.8|Vlastně, hledal jsem schop
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Dobře, ulovím ty skřety.
 dlga_merchant_quest_taken_bandits:close_window|Skutečně? To mě velice těší. Hodně štěstí.
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Omlouvam se. Na toto nemam prave ted cas. 
-dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Je to tak! Okolí obtěžuje skupina skřetů, a já nevím jak si s nimi poradit. V noci přepadají a okrádají opilé brance, a jak dorazí stráže, zmizí jak pára nad hrncem. Ještě jsme nechytili ani jediného. Napadají jen samotné lidi, před více lidmi prchají. Potřebuji někoho, kdo se o ně postará sám. Uděláš to?
-dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|Okolí obtěžuje skupina skřetů, a já nevím jak si s nimi poradit. V noci přepadají a okrádají opilé brance, a jak dorazí stráže, zmizí jak pára nad hrncem. Ještě jsme nechytili ani jediného. Napadají jen samotné lidi, před více lidmi prchají. Potřebuji někoho, kdo se o ně postará sám. Uděláš to?
-dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Zabíjení loupežívých skřetů ? No, samozřejmě!
+; dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Ne, nemám zájem.
 ; dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|That takes a weight off my shoulders, {playername}. You can expect a fine reward if you come back successful. Just don't get yourself killed, eh?
 ; dlga_merchant_quest_requested:merchant_quest_brief.9|The garrison commander here is looking for a resourceful warrior to take a group of {s12} to {s13}.

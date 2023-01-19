@@ -61,8 +61,8 @@ qst_troublesome_bandits|獵殺棘手的哥布林
 qst_troublesome_bandits_text|{s4}的{s9}要你在城鎮附近獵殺棘手的哥布林。
 qst_deal_with_looters|解決部落半獸人
 qst_deal_with_looters_text|{s4}的長者要你解決{s4}附近的幾群部落半獸人。
-qst_deal_with_night_bandits|解決哥布林盜匪
-qst_deal_with_night_bandits_text|{s14}的長者要你解決{s14}的哥布林夜匪。
+; qst_deal_with_night_bandits|Deal with Night Bandits
+; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
 qst_deliver_food|補給{reg5}單位的食物給{s3}
 qst_deliver_food_text|{s3}的{s9}要你在10天內帶給他{reg5}單位的食物。
 qst_deliver_iron|補給{reg5}單位的{s6}給{s3}

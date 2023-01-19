@@ -61,8 +61,8 @@ qst_troublesome_bandits|ตามล่า Goblins เจ้าปัญหา
 qst_troublesome_bandits_text|{s9} จาก {s4} ขอให้คุณตามล่า Goblins เจ้าปัญหาในบริเวณใกล้เคียงเมือง
 qst_deal_with_looters|จัดการกับเผ่า Orcs
 qst_deal_with_looters_text|ผู้อาวุโสของ {s4} ขอให้คุณจัดการกับชนเผ่า Orc บริเวณรอบๆนี้ {s4}
-qst_deal_with_night_bandits|จัดการกับ Rogue Goblins
-qst_deal_with_night_bandits_text|ผู้เฒ่าแห่ง {s14} ขอให้คุณจัดการกับ night goblins ที่ {s14}
+; qst_deal_with_night_bandits|Deal with Night Bandits
+; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
 qst_deliver_food|จัดหา {s3} ด้วย {reg5} หน่วยของอาหาร
 qst_deliver_food_text|{s9} จาก {s3} ขอให้คุณนำอาหาร {reg5} หน่วยมาให้เขาใน 10 วัน
 qst_deliver_iron|จัดหา {s3} ด้วย {reg5} หน่วยของ {s6}

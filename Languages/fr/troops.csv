@@ -458,12 +458,12 @@ trp_c6_rider_guard_of_rohan|Garde d'Eorl du Rohan
 trp_c6_rider_guard_of_rohan_pl|Gardes d'Eorl du Rohan
 trp_i6_2h_guard_of_rohan|Garde de Helm du Rohan
 trp_i6_2h_guard_of_rohan_pl|Gardes de Helm du Rohan
-trp_dismounted_veteran_skirmisher_of_rohan|Tirailleur vétéran du Rohan
-trp_dismounted_veteran_skirmisher_of_rohan_pl|Archers vétérans du Rohan
-trp_dismounted_elite_skirmisher_of_rohan|Tirailleur d'élite du Rohan
-trp_dismounted_elite_skirmisher_of_rohan_pl|Tirailleurs d'élite du Rohan
-trp_dismounted_thengel_guard_of_rohan|Garde de Thengel du Rohan
-trp_dismounted_thengel_guard_of_rohan_pl|Gardes de Thengel du Rohan
+trp_ac3_dism_skirmisher_of_rohan2|Tirailleur du Rohan
+trp_ac3_dism_skirmisher_of_rohan2_pl|Tirailleurs du Rohan
+trp_ac4_dism_veteran_skirmisher_of_rohan2|Tirailleur vétéran du Rohan
+trp_ac4_dism_veteran_skirmisher_of_rohan2_pl|Archers vétérans du Rohan
+trp_ac5_dism_elite_skirmisher_of_rohan2|Tirailleur d'élite du Rohan
+trp_ac5_dism_elite_skirmisher_of_rohan2_pl|Tirailleurs d'élite du Rohan
 trp_i1_harad_levy|Recrue du Harad
 trp_i1_harad_levy_pl|Recrues du Harad
 trp_i3_harad_infantry|Fantassin léger du Harad
@@ -1636,3 +1636,9 @@ trp_tribal_orc_warrior|Guerrier orque tribal
 trp_tribal_orc_warrior_pl|Guerriers orques tribaux
 trp_tribal_orc_chief|Chef orque tribal
 trp_tribal_orc_chief_pl|Chefs orques tribaux
+trp_a3_dism_skirmisher_of_rohan|Tirailleur du Rohan
+trp_a3_dism_skirmisher_of_rohan_pl|Tirailleurs du Rohan
+trp_a4_dism_veteran_skirmisher_of_rohan|Tirailleur vétéran du Rohan
+trp_a4_dism_veteran_skirmisher_of_rohan_pl|Archers vétérans du Rohan
+trp_a5_dism_elite_skirmisher_of_rohan|Tirailleur d'élite du Rohan
+trp_a5_dism_elite_skirmisher_of_rohan_pl|Tirailleurs d'élite du Rohan

@@ -178,6 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|好好照顧這個大傢伙，他�
 dlga_player_hire_troop:close_window.1|我需要一些訓練。
 dlga_player_hire_troop:tld_sell_prisoners|我為你帶來了一些囚犯。
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33}讓我們瞧瞧這些可悲的渣滓！
+; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
+; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|讓我查查我們地牢的紀錄…
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|你，改變主意啦？
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|我會確保他們逃不出我們地牢的。
@@ -609,6 +611,12 @@ dlga_lord_talk:lord_leave_prison|我得走了。
 dlga_lord_talk:lord_leave|我們的談話結束了。我走了。
 dlga_lord_talk:lord_leave.1|我必須離開了。
 dlga_lord_leave_prison:close_window|我們會再見的。
+; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
+; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
+; dlga_lord_offer_troops:close_window.1|I fear I cannot accept them at this time.
+; dlga_lord_leave:lord_offer_item|{s23} {s24}
+; dlga_lord_offer_item:close_window|Thank you, I shall see  that it is put to good use.
+; dlga_lord_offer_item:close_window.1|I'm afraid I must decline.
 dlga_lord_leave:close_window|再看看吧，{playername}。
 dlga_lord_leave:close_window.1|當然，{playername}。告別。
 dlga_lord_leave:close_window.2|祝你一路順風，{playername}。
@@ -919,9 +927,9 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|我需要有人幫我�
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|好吧。我會獵殺這些哥布林的。
 dlga_merchant_quest_taken_bandits:close_window|你會嗎？很高興聽到你這麼說。祝你好運。
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|抱歉。我現在沒時間做這件事。
-dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|來的正好！有一群哥布林盜匪正在騷擾這個地區，然後我已經快想不出辦法對付他們了。他們經常利用夜色的掩護偷襲跟洗劫喝醉的新兵，然後在衛兵趕到時如閃電般的逃離。我們根本沒辦法抓到任何一隻。他們只攻擊落單的人，從不在人群前現身。我需要一個能夠獨自解決他們的人。這似乎是解決他們的唯一辦法。你能接受這個任務嗎？
-dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|有一群哥布林盜匪正在騷擾這個地區，然後我已經快想不出辦法對付他們了。他們經常利用夜色的掩護偷襲跟洗劫喝醉的新兵，然後在衛兵趕到時如閃電般的逃離。我們根本沒辦法抓到任何一隻。他們只攻擊落單的人，從不在人群前現身。我需要一個能夠獨自解決他們的人。這似乎是解決他們的唯一辦法。你能接受這個任務嗎？
-dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|擊殺哥布林盜匪？怎麼不呢，當然了！
+; dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|不了，我沒興趣。
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|這真是幫我解決了一個重擔啊，{playername}。你成功回來時可以期待從我這裡拿到豐厚的報酬。可別把自己搞死了知道嗎？
 dlga_merchant_quest_requested:merchant_quest_brief.9|這裡的駐軍指揮官正在尋找一個足智多謀的戰士來幫他帶一群{s12}到{s13}。

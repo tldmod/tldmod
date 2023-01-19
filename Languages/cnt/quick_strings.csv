@@ -249,6 +249,13 @@ qstr_Bonus_to_Strength__P|力量加成(只限玩家)
 qstr_Lead_more_Orcs|領導更多半獸人
 qstr_+{reg1}_to_Party_Mor|隊伍士氣+{reg1}
 qstr_Range:_{reg55}|距離：{reg55}
+qstr_Dwarves|矮人
+; qstr_Humans_and_Elves|Humans and Elves
+; qstr_Orcs|Orcs
+; qstr_Uruks_and_Uruk_Hai|Uruks and Uruk-Hai
+; qstr_Humans_Uruks_and_Uru|Humans, Uruks, and Uruk-Hai
+; qstr_Humans|Humans
+; qstr_This_item_can_be_use|This item can be used by {s2}
 qstr_Do_you_want_to_disem|你想上岸嗎？
 qstr_Move_here|移動到此處
 qstr_View_notes|查看筆記
@@ -628,7 +635,7 @@ qstr_support|支援
 qstr_bodyguard|護衛
 qstr_undetermined_type_of|未確定類型的
 qstr_{s1}_has_fled_the_ba|{s1}逃離了戰場！
-qstr_Your_troops_are_at_{|我方部隊凝聚程度為{reg1}%(+{reg3}%加成)，敵方為{reg2}%！
+; qstr_Your_side_is_at_{reg|Your side is at {reg1}% cohesion ({reg3}% recent events), the enemy at {reg2}%!
 qstr_Morale_of_your_troop|我方部隊的士氣正在動搖！
 qstr_Morale_of_your_enemi|敵方的士氣正在動搖！
 qstr_Your_enemies_flee_in|你的敵方正在潰散！
@@ -737,6 +744,7 @@ qstr_Cannot_leave_now.|現在不能離開。
 qstr_You_have_found_the_l|你找到了當地的鍛治匠。
 qstr_You_have_found_the_lo|你找到了地方官。
 qstr_You_have_found_the_loc|你找到了當地的倉庫。
+; qstr_You_have_found_the_c|You have found the captain of the garrison.
 qstr_You_look_through_Hen|你透過日落之窗，漢那斯安南向外看。美麗的景象恢復了你對西方和世外之力的信心。
 qstr__cancelled_the_{reg1|(取消殺死囚犯獲得的{reg10}經驗值)
 qstr_Forming_ranks.|正在列陣。
@@ -768,7 +776,7 @@ qstr_{s11}_is_{s10}_in_th|{s11}在戒靈的攻擊下{s10}！
 qstr_Received_{reg66}_dam|受到{reg66}傷害。
 qstr_You_yell_for_your_ho|你呼喚了你的馬。
 qstr_You_do_not_need_to_r|你還不需要鼓舞你的部隊。
-qstr_You_rally_your_troop|你鼓舞了你的部隊！
+; qstr_You_rally_{reg10}_tr|You rally {reg10} troops!
 qstr_{s5}_rallies_{reg65?|{s5}鼓舞了{reg65?她的:他的}部隊！
 qstr_You_have_killed_{reg|你在這場戰鬥中殺了{reg1}名敵人！
 qstr_Your_bravery_inspire|你的英勇啟發了你的部隊！
@@ -946,7 +954,6 @@ qstr_You_camp_and_beat_th|你的營地奏響了深淵之鼓。其雄偉的聲音
 ; qstr_You_camp_and_beat_the|You camp and beat the Drums of the Deep. The powerful sound attracts a group of {s1} {s2}.
 ; qstr_You_camp_and_beat_the_|You camp and beat the Drums of the Deep. The weak sound attracts a group of {s1} {s2}.
 ; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
-qstr_Fangorn_search:_fail|搜索法貢森林：失敗。
 qstr_^^^A_great_victory!^|^^^一場偉大的勝利！^^^原來法貢森林的神話是這個意思...
 qstr_^^^Defeated...^^^Sca|^^^被擊敗了...^^^在法貢森林裡走散了...獨自一人...
 qstr_Troll_caged_in_wheel|食人妖被關在有輪的籠子裡。
@@ -1514,6 +1521,24 @@ qstr_We_need_to_grind_dow|我們要把一文不值的敵人碾碎，{playername}
 qstr_{s9}_asked_you_to_el|{s9}要你去消滅{reg1}支{s13}隊伍。
 qstr_{s9}_asked_you_to_fr|{s9}要你從一隻狂暴食人妖的威脅下解放{s13}近郊。
 qstr_{reg1}_{s16}_joined_|{reg1}名{s16}加入了你的隊伍。
+; qstr_Wait_{playername}._I|Wait, {playername}. I don't say this often, but you are an exceptionally reliable servant.
+; qstr_Halt_{playername}._I|Halt, {playername}. I once thought you little more than a snaga, but you are proving to be a useful servant.
+; qstr_Take_these_warriors_|Take these warriors, that your horde might continue to serve me.
+; qstr_One_last_thing_{play|One last thing, {playername}. In a land filled with backstabbers and rivals, you have always been a true ally.
+; qstr_Wait_{playername}._W|Wait, {playername}. When we met I sensed in you a rival, but I see now I was mistaken.
+; qstr_Take_these_warriors_a|Take these warriors, and use them to strike down our foes.
+; qstr_Before_you_leave_{pl|Before you leave, {playername}, know that you have always been a good friend to me.
+; qstr_Wait_{playername}._I_|Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend.
+; qstr_Allow_me_to_repay_yo|Allow me to repay you by giving you some troops.
+; qstr_Wait_{playername}._C|Wait, {playername}. Capable servants like you and your warriors deserve the best equipment.
+; qstr_Halt_{playername}._It|Halt, {playername}. It's shameful to have my servants using such inferior equipment.
+; qstr_Take_this_{s22}_and_|Take this {s22} and let it aid your rampage.
+; qstr_Before_you_go_{playe|Before you go, {playername}. Great warriors like you and your companions deserve only the best weapons, armor, and mounts.
+; qstr_Wait_{playername}._Y|Wait, {playername}. Your army has done well, but I think you'd do better with superior equipment.
+; qstr_Take_this_{s22}._I_h|Take this {s22}. I have no need of it.
+; qstr_Just_a_moment_{playe|Just a moment, {playername}. Heroes like you and your companions are worthy of the finest weapons, armor, and horses.
+; qstr_Wait_{playername}._Yo|Wait, {playername}. You have been an able commander in the war effort. I think it's time you had some better equipment.
+; qstr_Accept_this_{s22}_ma|Accept this {s22}, may it aid you and your companions.
 qstr_the_Dwarves_so_that_|矮人當地使用的貨幣，所以如果你途經孤山或鐵丘陵，你可以試著用傳聞中的矮人武器武裝自己
 qstr_Gondor_so_that_if_yo|剛鐸當地使用的貨幣，所以如果你途經他們的土地，你可以試著購買一些他們遠近馳名的鎧甲
 qstr_Rohan_so_that_if_you|洛汗當地使用的貨幣，所以如果你途經他們的土地，你可以試著購買一些他們傳聞中的馬匹
@@ -1624,7 +1649,7 @@ qstr_The_{s9}_of_{s3}_ask|{s3}的{s9}要你在{reg6}天內帶給他{reg5}單位�
 qstr_The_{s9}_of_{s3}_aske|{s3}的{s9}要你在{reg0}天內帶給他{reg5}單位的{s6}。
 qstr_Escort_the_supply_tr|護送補給隊到{s8}。
 qstr_The_{s9}_of_{s4}_aske|{s4}的{s9}要你在城鎮附近獵殺棘手的哥布林。
-qstr_The_{s9}_of_{s14}_ha|{s14}的{s9}希望你能解決在{s14}搗亂的哥布林。他們只在晚上出現，然後只攻擊街上落單的人。
+; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of bandits making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
 qstr_refugees|難民
 qstr_slaves|奴隸
 qstr_{s1}_Refugees|{s1}的難民

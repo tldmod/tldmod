@@ -61,8 +61,8 @@ qst_troublesome_bandits|Vadászd le a problémás koboldokat
 qst_troublesome_bandits_text|A {s4}i {s9} megkért rá hogy vadászd le a problémás koboldokat, akik a város környékén garázdálkodnak.
 qst_deal_with_looters|Bánj el a törzsi orkokkal
 qst_deal_with_looters_text|{s4} elöljárója megkért hogy bánj el {s4} környékén garázdálkodó törzsi orkok csapataival.
-qst_deal_with_night_bandits|Bánj el a kobold zsiványokkal
-qst_deal_with_night_bandits_text|{s14} elöljárója megkért hogy bánj el {s14} településén az éjjel garázdálkodó koboldokkal.
+; qst_deal_with_night_bandits|Deal with Night Bandits
+; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
 qst_deliver_food|Szállíts {s3} településébe {reg5} egységnyi ételt
 qst_deliver_food_text|{s3}i {s9} megkért rá hogy hozz neki {reg5} adagnyi ételt 10 napon belül.
 qst_deliver_iron|Szállíts {s3} településébe {reg5} adagnyi {s6} tárgyat

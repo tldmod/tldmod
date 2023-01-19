@@ -178,6 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|Prenez bien soin de ce grand gailla
 dlga_player_hire_troop:close_window.1|J'ai besoin d’un peu d’entraînement.
 dlga_player_hire_troop:tld_sell_prisoners|Je vous ai apporté quelques prisonniers.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{ s33} Voyons voir ces misérables.
+dlga_player_hire_troop:tld_sell_prisoners_all|Je veux que vous preniez tous les prisonniers que j'ai avec moi.
+dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Très bien, je vais les emmener et les mettre dans nos cachots.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Laissez-moi regarder les registres de notre prison...
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Vous avez changé d'avis, hein ?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Je m'assurerai qu'ils ne puissent s'échapper de nos geôles.
@@ -609,6 +611,12 @@ dlga_lord_talk:lord_leave_prison|Je dois partir à présent.
 dlga_lord_talk:lord_leave|Cette petite discussion est terminée. Je dois y aller.
 dlga_lord_talk:lord_leave.1|Je dois prendre congé.
 dlga_lord_leave_prison:close_window|Nous nous reverrons.
+dlga_lord_leave:lord_offer_troops|{s23} {s24} J'ai {reg41} {s25} qui {reg42?sont prêts:est prêt} à se joindre à vous.
+dlga_lord_offer_troops:close_window|Merci beaucoup, {reg42?c'est avec plaisir que je les prendrai dans mon groupe:mais je crains de n'avoir la place que pour {reg41} d'entre eux}.
+dlga_lord_offer_troops:close_window.1|Je crains de ne pas pouvoir les prendre pour le moment.
+dlga_lord_leave:lord_offer_item|{s23} {s24}
+dlga_lord_offer_item:close_window|Merci, je veillerai à en faire bon usage.
+dlga_lord_offer_item:close_window.1|J'ai bien peur de devoir refuser.
 dlga_lord_leave:close_window|Nous verrons cela, {playername}.
 dlga_lord_leave:close_window.1|Bien sûr, {playername}. Au revoir.
 dlga_lord_leave:close_window.2|Faites bon voyage, {playername}.
@@ -919,9 +927,9 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|J'ai besoin de quelqu'
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|D'accord, je vais traquer ces gobelins.
 dlga_merchant_quest_taken_bandits:close_window|Vraiment ? Je suis si heureux d'entendre cela. Bonne chance à vous.
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|{Navré/Navrée}, je n'ai pas le temps pour le moment.
-dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|En effet ! Il y a un groupe de gobelins qui harcèle la région et je ne sais plus quoi faire à leur sujet. Ils ont tendu une embuscade à des recrues ivres sous le couvert de la nuit, puis se sont éclipsés comme l'éclair quand les gardes sont finalement arrivés. Nous n'avons pas été capables d'attraper ne serait-ce que l'un d'entre eux. Ils n'attaquent que des gens isolés, n'osant jamais se montrer face à un groupe entier. Je besoin de quelqu'un qui puisse s'occuper seul de ces gobelins, cela semble être la seule façon de s'en débarrasser. Vous sentez-vous à la hauteur de la tâche ?
-dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|Il y a un groupe de gobelins vauriens qui harcèle la région et je ne sais plus quoi faire à leur sujet. Ils ont tendu une embuscade à des recrues ivres sous le couvert de la nuit, puis se sont éclipsés comme l'éclair quand les gardes sont finalement arrivés. Nous n'avons pas été capables d'attraper ne serait-ce que l'un d'entre eux. Ils n'attaquent que des gens isolés, n'osant jamais se montrer face à un groupe entier. Je besoin de quelqu'un qui puisse s'occuper seul de ces Gobelins car cela semble être la seule façon de s'en débarrasser. Vous sentez-vous à la hauteur de la tâche ?
-dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Tuer des pillards gobelins ? Mais avec plaisir !
+dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|En effet ! Il y a un groupe de bandits qui harcèle la région et je ne sais plus quoi faire à leur sujet. Ils ont tendu une embuscade à des recrues ivres sous le couvert de la nuit, puis se sont éclipsés comme l'éclair quand les gardes sont finalement arrivés. Nous n'avons pas été capables d'attraper ne serait-ce que l'un d'entre eux. Ils n'attaquent que des gens isolés, n'osant jamais se montrer face à un groupe entier. Je besoin de quelqu'un qui puisse s'occuper seul de ces bandits, cela semble être la seule façon de s'en débarrasser. Vous sentez-vous à la hauteur de la tâche ?
+dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|Il y a un groupe de bandits qui harcèle la région et je ne sais plus quoi faire à leur sujet. Ils ont tendu une embuscade à des recrues ivres sous le couvert de la nuit, puis se sont éclipsés comme l'éclair quand les gardes sont finalement arrivés. Nous n'avons pas été capables d'attraper ne serait-ce que l'un d'entre eux. Ils n'attaquent que des gens isolés, n'osant jamais se montrer face à un groupe entier. Je besoin de quelqu'un qui puisse s'occuper seul de ces bandits, cela semble être la seule façon de s'en débarrasser. Vous sentez-vous à la hauteur de la tâche ?
+dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Tuer des bandits rebelles ? Mais avec plaisir !
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Non, je ne suis pas intéressé{/e}.
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|Cela m'ôte un poids des épaules, {playername}. Vous pouvez vous attendre à une belle récompense si vous revenez victorieu{x/se}. Surtout ne vous faites pas tuer, hein ?
 dlga_merchant_quest_requested:merchant_quest_brief.9|Le commandant de la de garnison cherche un guerrier plein de ressources pour accompagner un groupe de {s12} à {s13}.

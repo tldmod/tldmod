@@ -1,7 +1,7 @@
 skl_trade|Торговля
 skl_trade_desc|Торговцы становятся сговорчивее и предлагают более лучшее снаряжение. (умение отряда)
 skl_leadership|Лидерство
-skl_leadership_desc|С каждым новым уровнем этого навыка количество людей, которыми вы можете командовать, увеличивается на 5, поднимается боевой дух и снижаются расходы на армию на 5%%.  Количество добровольцев, которые хотят вступить в ваш отряд, увеличивается. (умение лидера)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|Содержание пленных
 skl_prisoner_management_desc|С каждым новым уровнем этого навыка максимальное число пленных увеличивается на %d (умение лидера).
 skl_persuasion|Единение с природой

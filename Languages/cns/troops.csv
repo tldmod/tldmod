@@ -458,12 +458,12 @@ trp_c6_rider_guard_of_rohan|洛汗先王伊欧护卫
 trp_c6_rider_guard_of_rohan_pl|洛汗先王伊欧护卫
 trp_i6_2h_guard_of_rohan|洛汗国王侍卫
 trp_i6_2h_guard_of_rohan_pl|洛汗国王侍卫
-trp_dismounted_veteran_skirmisher_of_rohan|洛汗资深散兵
-trp_dismounted_veteran_skirmisher_of_rohan_pl|洛汗资深散兵
-trp_dismounted_elite_skirmisher_of_rohan|洛汗精英散兵
-trp_dismounted_elite_skirmisher_of_rohan_pl|洛汗精英散兵
-trp_dismounted_thengel_guard_of_rohan|洛汗先王塞哲尔护卫
-trp_dismounted_thengel_guard_of_rohan_pl|洛汗先王塞哲尔护卫
+; trp_ac3_dism_skirmisher_of_rohan2|Skirmisher of Rohan
+; trp_ac3_dism_skirmisher_of_rohan2_pl|Skirmishers of Rohan
+; trp_ac4_dism_veteran_skirmisher_of_rohan2|Veteran Skirmisher of Rohan
+; trp_ac4_dism_veteran_skirmisher_of_rohan2_pl|Veteran Skirmishers of Rohan
+; trp_ac5_dism_elite_skirmisher_of_rohan2|Elite Skirmisher of Rohan
+; trp_ac5_dism_elite_skirmisher_of_rohan2_pl|Elite Skirmishers of Rohan
 trp_i1_harad_levy|哈拉德新兵
 trp_i1_harad_levy_pl|哈拉德新兵
 trp_i3_harad_infantry|哈拉德轻步兵
@@ -1636,3 +1636,9 @@ trp_tribal_orc_warrior|部落半兽人战士
 trp_tribal_orc_warrior_pl|部落半兽人战士
 trp_tribal_orc_chief|部落半兽人酋长
 trp_tribal_orc_chief_pl|部落半兽人酋长
+; trp_a3_dism_skirmisher_of_rohan|Skirmisher of Rohan
+; trp_a3_dism_skirmisher_of_rohan_pl|Skirmishers of Rohan
+; trp_a4_dism_veteran_skirmisher_of_rohan|Veteran Skirmisher of Rohan
+; trp_a4_dism_veteran_skirmisher_of_rohan_pl|Veteran Skirmishers of Rohan
+; trp_a5_dism_elite_skirmisher_of_rohan|Elite Skirmisher of Rohan
+; trp_a5_dism_elite_skirmisher_of_rohan_pl|Elite Skirmishers of Rohan

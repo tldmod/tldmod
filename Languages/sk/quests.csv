@@ -61,8 +61,8 @@ qst_troublesome_bandits|Postaraj sa o Dobiedzavých Škratov.
 qst_troublesome_bandits_text|{s9} z {s4} ťa požiadal aby si našiel a zabil dobiedzavých škratov v blízkosti mesta.
 qst_deal_with_looters|Postaraj sa o Kmeňových Ohyzdov.
 qst_deal_with_looters_text|Starosta z {s4}u ťa požiadal, aby si pobil niekoľko tlúp Kmeňových Ohyzdov v okolí {s4}u.
-qst_deal_with_night_bandits|Znič tlupu Tuláckych Škratov
-qst_deal_with_night_bandits_text|Starosta z {s14}u ťa požiadal, aby si zničil skupinu nočných škratov v {s14}u.
+; qst_deal_with_night_bandits|Deal with Night Bandits
+; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
 qst_deliver_food|Dovez {s3} {reg5} kusov jedla.
 qst_deliver_food_text|{s9} z {s3} ťa požiadal aby si mu priniesol {reg5} kusov jedla do 10 dní.
 qst_deliver_iron|Prines {reg5} kusov {s6} do {s3}.

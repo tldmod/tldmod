@@ -249,6 +249,13 @@ qstr_Bonus_to_Strength__P|Bonus alla Forza (Solo per il personaggio)
 qstr_Lead_more_Orcs|Comanda più Orchi
 qstr_+{reg1}_to_Party_Mor|+{reg1} al morale della compagnia
 qstr_Range:_{reg55}|Portata: {reg55}
+qstr_Dwarves|Nani
+qstr_Humans_and_Elves|Uomini ed Elfi
+qstr_Orcs|Orchi
+qstr_Uruks_and_Uruk_Hai|Uruks e Uruk-Hai
+qstr_Humans_Uruks_and_Uru|Uomini, Uruks, e Uruk-Hai
+qstr_Humans|Uomini
+qstr_This_item_can_be_use|Questo oggetto può essere usato da {s2}
 qstr_Do_you_want_to_disem|Vuoi sbarcare ?
 qstr_Move_here|Vai qui
 qstr_View_notes|Controlla le note
@@ -628,7 +635,7 @@ qstr_support|sostegno
 qstr_bodyguard|guardia del corpo
 qstr_undetermined_type_of|tipo indefinito di
 qstr_{s1}_has_fled_the_ba|{s1} fugge dalla battaglia !
-qstr_Your_troops_are_at_{|Le tue truppe hanno il {reg1}% di coesione (+{reg3}% bonus), il nemico ne ha {reg2}% !
+qstr_Your_side_is_at_{reg|Le tue truppe sono al {reg1}% di coesione ({reg3}% eventi recenti), le truppe nemiche al {reg2}%!
 qstr_Morale_of_your_troop|Il morale delle tue truppe vacilla !
 qstr_Morale_of_your_enemi|Il morale del nemico vacilla !
 qstr_Your_enemies_flee_in|I tuoi nemici fuggono terrorizzati !
@@ -737,6 +744,7 @@ qstr_Cannot_leave_now.|Non puoi allontanarti in questo momento.
 qstr_You_have_found_the_l|Hai trovato la fucina locale.
 qstr_You_have_found_the_lo|Hai trovato l'autorità locale.
 qstr_You_have_found_the_loc|Hai trovato l'emporio locale.
+qstr_You_have_found_the_c|Hai trovato il capitano della guarnigione.
 qstr_You_look_through_Hen|Guardi verso Henneth Annun, la Finestra del Tramonto. La splendida vista ripristina la tua fede nell'Ovest e nelle forze al di là dell'orizzonte.
 qstr__cancelled_the_{reg1|(Cancellati i {reg10} exp guadagnati per aver ucciso prigionieri)
 qstr_Forming_ranks.|Formare i ranghi.
@@ -768,7 +776,7 @@ qstr_{s11}_is_{s10}_in_th|{s11}  {s10} nell'attacco dei Nazgul !
 qstr_Received_{reg66}_dam|Ricevuti {reg66} danni.
 qstr_You_yell_for_your_ho|Chiami il tuo animale.
 qstr_You_do_not_need_to_r|Non hai bisogno d'incitare le truppe, per adesso.
-qstr_You_rally_your_troop|Sproni le tue truppe !
+qstr_You_rally_{reg10}_tr|Raduni {reg10} truppe!
 qstr_{s5}_rallies_{reg65?|{s5} sprona {reg65?le sue:le sue} truppe !
 qstr_You_have_killed_{reg|Hai ucciso {reg1} nemici in questa battaglia !
 qstr_Your_bravery_inspire|Il tuo coraggio ispira le tue truppe !
@@ -946,7 +954,6 @@ qstr_You_camp_and_beat_th|Ti accampi e fai risuonare i Tamburi degli Abissi. Il 
 qstr_You_camp_and_beat_the|Ti accampi e fai risuonare i Tamburi degli Abissi. Il potente rimbombo attrae un gruppo di {s1} {s2}.
 qstr_You_camp_and_beat_the_|Ti accampi e fai risuonare i Tamburi degli Abissi. Il fievole rimbombo attrae un gruppo di {s1} {s2}.
 qstr_You_camp_and_try_to_|Ti accampi e tenti di far risuonarei Tamburi degli Abissi, tuttavia nessuno risponde alla tua misera chiamata.
-qstr_Fangorn_search:_fail|Ricerca Fangorn: fallita.
 qstr_^^^A_great_victory!^|^^Vittoria !^^^Così era questo il significato di tutte le leggende su Fangorn...
 qstr_^^^Defeated...^^^Sca|^^^Sconfitto...^^^Disperso nella Foresta Fangorn...Da solo...
 qstr_Troll_caged_in_wheel|Troll imprigionato in una gabbia su ruote.
@@ -1514,6 +1521,24 @@ qstr_We_need_to_grind_dow|Dobbiamo colpire i nostri vili nemici, {playername}. L
 qstr_{s9}_asked_you_to_el|{s9} ti ha chiesto di eliminare {reg1} compagnie di {s13}.
 qstr_{s9}_asked_you_to_fr|{s9} ti ha chiesto di liberare {s13} dalla minacca di un Troll furioso nella sua periferia.
 qstr_{reg1}_{s16}_joined_|{reg1} {s16} si unisce alla tua compagnia.
+qstr_Wait_{playername}._I|Aspetta, {playername}. Non lo dico spesso, ma sei un servitore eccezionalmente affidabile.
+qstr_Halt_{playername}._I|Fermati, {playername}. Una volta ti credevo poco più di uno snaga, ma ti stai dimostrando un utile servitore.
+qstr_Take_these_warriors_|Prendi questi guerrieri, affinché la tua orda possa continuare a servirmi.
+qstr_One_last_thing_{play|Un'ultima cosa, {playername}. In una terra piena di traditori e rivali, sei sempre stato un vero alleato.
+qstr_Wait_{playername}._W|Aspetta, {playername}. Quando ci siamo incontrati ho percepito in te un rivale, ma ora capisco che mi sbagliavo.
+qstr_Take_these_warriors_a|Prendi questi guerrieri e usali per abbattere i nostri nemici.
+qstr_Before_you_leave_{pl|Prima di partire, {playername}, sappi che sei sempre stato un buon amico per me.
+qstr_Wait_{playername}._I_|Aspetta, {playername}. Non ti conosco bene quanto vorrei, ma finora sei stato un buon amico.
+qstr_Allow_me_to_repay_yo|Permettimi di ripagarti fornendoti delle truppe.
+qstr_Wait_{playername}._C|Aspetta, {playername}. Servi capaci come te e i tuoi guerrieri meritano il miglior equipaggiamento.
+qstr_Halt_{playername}._It|Fermati, {playername}. È vergognoso che i miei servitori usino equipaggiamenti così scadenti.
+qstr_Take_this_{s22}_and_|Prendi questo {s22} e lascia che scateni la tua furia.
+qstr_Before_you_go_{playe|Prima che tu vada, {playername}. I grandi guerrieri come te e i tuoi compagni meritano solo le migliori armi, armature e cavalcature.
+qstr_Wait_{playername}._Y|Aspetta, {playername}. Il tuo esercito si è comportato bene, ma penso che potreste fare di meglio con un equipaggiamento superiore.
+qstr_Take_this_{s22}._I_h|Prendi questo {S22}. Non ne ho bisogno.
+qstr_Just_a_moment_{playe|Solo un momento, {playername}. Eroi come te e i tuoi compagni sono degni delle migliori armi, armature e cavalli.
+qstr_Wait_{playername}._Yo|Aspetta, {playername}. Sei stato un abile comandante nello sforzo bellico. Penso sia ora che tu abbia un equipaggiamento migliore.
+qstr_Accept_this_{s22}_ma|Accetta questo {s22}, possa essere di aiuto per te e i tuoi compagni.
 qstr_the_Dwarves_so_that_|i Nani, se attraversi Erebor o le Colline di Ferro, puoi tentare di armarti con il leggendario equipaggiamento nanico.
 qstr_Gondor_so_that_if_yo|Gondor, se attraversi le loro lande, puoi tentare di acquistare alcune delle loro famose armature.
 qstr_Rohan_so_that_if_you|Rohan, se attraversi le loro terre, puoi cercare di comprare alcuni dei loro leggendari cavalli.
@@ -1624,7 +1649,7 @@ qstr_The_{s9}_of_{s3}_ask|Il {s9} di {s3} ti ha chiesto di portargli {reg5} unit
 qstr_The_{s9}_of_{s3}_aske|Il {s9} di {s3} ti ha chiesto di portargli {reg5} unità di {s6} in {reg0} giorni.
 qstr_Escort_the_supply_tr|Scorta la carovana di provviste fino a {s8}.
 qstr_The_{s9}_of_{s4}_aske|Il {s9} di {s4} ti ha chiesto di abbattere alcuni goblin fastidiosi nelle vicinanze della città.
-qstr_The_{s9}_of_{s14}_ha|Il {s9} di {s14} ti ha chiesto di eliminare un gruppo di goblin che creano problemi a {s14}. Loro escono solo di notte, e attaccano persone sole per le strade.
+qstr_The_{s9}_of_{s14}_ha|Il {s9} di {s14} ti ha chiesto di eliminare un gruppo di banditi che creano problemi a {s14}. Loro escono solo di notte, e attaccano persone sole per le strade.
 qstr_refugees|profughi
 qstr_slaves|schiavi
 qstr_{s1}_Refugees|Profughi di {s1}

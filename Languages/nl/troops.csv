@@ -458,12 +458,12 @@ trp_c6_rider_guard_of_rohan|Eoarl Bewaker van Rohan
 trp_c6_rider_guard_of_rohan_pl|Eorl Bewakers van Rohan
 trp_i6_2h_guard_of_rohan|Roer Bewaker van Rohan
 trp_i6_2h_guard_of_rohan_pl|Roer Bewakers van Rohan
-trp_dismounted_veteran_skirmisher_of_rohan|Ervaren Schermutselaar van Rohan
-trp_dismounted_veteran_skirmisher_of_rohan_pl|Ervaren Schermutselaren van Rohan
-trp_dismounted_elite_skirmisher_of_rohan|Elite Schermutselaar van Rohan
-trp_dismounted_elite_skirmisher_of_rohan_pl|Elite Schermutselaren van Rohan
-trp_dismounted_thengel_guard_of_rohan|Thengel Bewaker van Rohan
-trp_dismounted_thengel_guard_of_rohan_pl|Thengel Bewakers van Rohan
+trp_ac3_dism_skirmisher_of_rohan2|Schermutselaar van Rohan
+trp_ac3_dism_skirmisher_of_rohan2_pl|Schermutselaren van Rohan
+trp_ac4_dism_veteran_skirmisher_of_rohan2|Ervaren Schermutselaar van Rohan
+trp_ac4_dism_veteran_skirmisher_of_rohan2_pl|Ervaren Schermutselaren van Rohan
+trp_ac5_dism_elite_skirmisher_of_rohan2|Elite Schermutselaar van Rohan
+trp_ac5_dism_elite_skirmisher_of_rohan2_pl|Elite Schermutselaren van Rohan
 trp_i1_harad_levy|Harad Dienstplichtige
 trp_i1_harad_levy_pl|Harad Dienstplichtigen
 trp_i3_harad_infantry|Harad Lichte Voetman
@@ -1636,3 +1636,9 @@ trp_tribal_orc_pl|Stammen Orks
 ; trp_tribal_orc_warrior_pl|Tribal Orc Warriors
 ; trp_tribal_orc_chief|Tribal Orc Chief
 ; trp_tribal_orc_chief_pl|Tribal Orc Chiefs
+trp_a3_dism_skirmisher_of_rohan|Schermutselaar van Rohan
+trp_a3_dism_skirmisher_of_rohan_pl|Schermutselaren van Rohan
+trp_a4_dism_veteran_skirmisher_of_rohan|Ervaren Schermutselaar van Rohan
+trp_a4_dism_veteran_skirmisher_of_rohan_pl|Ervaren Schermutselaren van Rohan
+trp_a5_dism_elite_skirmisher_of_rohan|Elite Schermutselaar van Rohan
+trp_a5_dism_elite_skirmisher_of_rohan_pl|Elite Schermutselaren van Rohan

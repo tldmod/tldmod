@@ -61,8 +61,8 @@ qst_troublesome_bandits|追捕棘手的半兽人
 qst_troublesome_bandits_text|{s4}的{s9}希望你在城镇附近追捕棘手的半兽人
 qst_deal_with_looters|解决掉部落半兽人
 qst_deal_with_looters_text|{s4}的长老希望你能解决掉位于{s4}附近的几队部落半兽人。
-qst_deal_with_night_bandits|解决半兽人夜匪
-qst_deal_with_night_bandits_text|{s14}的长老希望你能解决肆虐{s14}的半兽人夜匪
+; qst_deal_with_night_bandits|Deal with Night Bandits
+; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
 qst_deliver_food|向{s3}支援{reg5}单位的食物
 qst_deliver_food_text|{s3}的{s9}希望你在10天内带给他{reg5}单位的食物。
 qst_deliver_iron|向{s3}支援{reg5}单位的{s6}

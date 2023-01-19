@@ -249,6 +249,13 @@ qstr_Bonus_to_Strength__P|힘에 보너스 (플레이어 전용)
 qstr_Lead_more_Orcs|더 많은 오르크를 이끔
 qstr_+{reg1}_to_Party_Mor|부대 사기 +{reg1}
 qstr_Range:_{reg55}|범위: {reg55}
+qstr_Dwarves|난쟁이
+; qstr_Humans_and_Elves|Humans and Elves
+; qstr_Orcs|Orcs
+; qstr_Uruks_and_Uruk_Hai|Uruks and Uruk-Hai
+; qstr_Humans_Uruks_and_Uru|Humans, Uruks, and Uruk-Hai
+; qstr_Humans|Humans
+; qstr_This_item_can_be_use|This item can be used by {s2}
 qstr_Do_you_want_to_disem|내리길 원하십니까?
 qstr_Move_here|여기로 이동
 qstr_View_notes|노트 보기
@@ -628,7 +635,7 @@ qstr_support|support
 qstr_bodyguard|경호원
 qstr_undetermined_type_of|undetermined type of
 qstr_{s1}_has_fled_the_ba|{s1}이 전투에서 도망쳤다!
-qstr_Your_troops_are_at_{|당신의 군대는 {reg1}%의 결합력(+{reg3}% 보너스), 적군은 {reg2}%!
+; qstr_Your_side_is_at_{reg|Your side is at {reg1}% cohesion ({reg3}% recent events), the enemy at {reg2}%!
 qstr_Morale_of_your_troop|당신 부대의 사기가 흔들린다!
 qstr_Morale_of_your_enemi|당신 적들의 사기가 흔들린다!
 qstr_Your_enemies_flee_in|당신의 적이 공포에 휩싸여 도망친다!
@@ -737,6 +744,7 @@ qstr_Cannot_leave_now.|지금은 떠날 수 없다.
 qstr_You_have_found_the_l|당신은 지역 대장간을 찾았다.
 qstr_You_have_found_the_lo|당신은 지역 authority를 찾았다.
 qstr_You_have_found_the_loc|당신은 지역 창고를 찾았다.
+; qstr_You_have_found_the_c|You have found the captain of the garrison.
 qstr_You_look_through_Hen|당신은 "해지는 창" 헨네스 안눈을 통해 보고 있다. 아름다운 광경이 당신의 서부와 그 너머의 힘에 대한 믿음을 회복시켜준다.
 qstr__cancelled_the_{reg1|(죄수를 죽여 얻는 {reg10} pts 경험치 무효화)
 qstr_Forming_ranks.|대열을 형성해라.
@@ -768,7 +776,7 @@ qstr_{s11}_is_{s10}_in_th|나즈굴의 공격으로 {s11}은 {s10}!
 qstr_Received_{reg66}_dam|{reg66} 만큼의 피해를 입었습니다.
 qstr_You_yell_for_your_ho|당신은 말에게 소리를 지른다.
 qstr_You_do_not_need_to_r|아직 당신 부대를 집결시킬 필요는 없다.
-qstr_You_rally_your_troop|당신은 부대를 집결시켰다!
+; qstr_You_rally_{reg10}_tr|You rally {reg10} troops!
 qstr_{s5}_rallies_{reg65?|{s5}가 {reg65?그녀의:그의} 부대를 집결시키고 있습니다!
 qstr_You_have_killed_{reg|당신은 전투에서 {reg1} 명의 적을 처치했다!
 qstr_Your_bravery_inspire|당신의 용기가 부대를 고양시킨다!
@@ -946,7 +954,6 @@ qstr_You_camp_and_beat_th|당신은 진을 치고 깊은 곳의 북을 두드린
 ; qstr_You_camp_and_beat_the|You camp and beat the Drums of the Deep. The powerful sound attracts a group of {s1} {s2}.
 ; qstr_You_camp_and_beat_the_|You camp and beat the Drums of the Deep. The weak sound attracts a group of {s1} {s2}.
 ; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
-qstr_Fangorn_search:_fail|팡고른 탐색: 실패.
 qstr_^^^A_great_victory!^|^^^대승이다!^^^이게 팡고른 숲을 둘러싼 전설의 정체였군...
 qstr_^^^Defeated...^^^Sca|^^^패배...^^^팡고른 숲에 흩어졌다... 혼자...
 qstr_Troll_caged_in_wheel|바퀴달린 우리에 트롤을 가두었다.
@@ -1514,6 +1521,24 @@ qstr_We_need_to_grind_dow|우리는 무가치한 적들을 갈아버려야한다
 qstr_{s9}_asked_you_to_el|{s9}는 당신에게 {reg1}의 {reg13} 부대를 제거하라 요청했다.
 qstr_{s9}_asked_you_to_fr|{s9}이 {s19}를 위협하는 교외의 성난 트롤을 처리해 주길 요청했다.
 qstr_{reg1}_{s16}_joined_|{reg1} {s16}이 당신의 부대에 합류했다.
+; qstr_Wait_{playername}._I|Wait, {playername}. I don't say this often, but you are an exceptionally reliable servant.
+; qstr_Halt_{playername}._I|Halt, {playername}. I once thought you little more than a snaga, but you are proving to be a useful servant.
+; qstr_Take_these_warriors_|Take these warriors, that your horde might continue to serve me.
+; qstr_One_last_thing_{play|One last thing, {playername}. In a land filled with backstabbers and rivals, you have always been a true ally.
+; qstr_Wait_{playername}._W|Wait, {playername}. When we met I sensed in you a rival, but I see now I was mistaken.
+; qstr_Take_these_warriors_a|Take these warriors, and use them to strike down our foes.
+; qstr_Before_you_leave_{pl|Before you leave, {playername}, know that you have always been a good friend to me.
+; qstr_Wait_{playername}._I_|Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend.
+; qstr_Allow_me_to_repay_yo|Allow me to repay you by giving you some troops.
+; qstr_Wait_{playername}._C|Wait, {playername}. Capable servants like you and your warriors deserve the best equipment.
+; qstr_Halt_{playername}._It|Halt, {playername}. It's shameful to have my servants using such inferior equipment.
+; qstr_Take_this_{s22}_and_|Take this {s22} and let it aid your rampage.
+; qstr_Before_you_go_{playe|Before you go, {playername}. Great warriors like you and your companions deserve only the best weapons, armor, and mounts.
+; qstr_Wait_{playername}._Y|Wait, {playername}. Your army has done well, but I think you'd do better with superior equipment.
+; qstr_Take_this_{s22}._I_h|Take this {s22}. I have no need of it.
+; qstr_Just_a_moment_{playe|Just a moment, {playername}. Heroes like you and your companions are worthy of the finest weapons, armor, and horses.
+; qstr_Wait_{playername}._Yo|Wait, {playername}. You have been an able commander in the war effort. I think it's time you had some better equipment.
+; qstr_Accept_this_{s22}_ma|Accept this {s22}, may it aid you and your companions.
 qstr_the_Dwarves_so_that_|난쟁이들, 에레보르나 철산을 지나갈 일이 생긴다면 전설의 난쟁이 무기로 무장해 보라
 qstr_Gondor_so_that_if_yo|곤도르, 그들의 땅을 지나갈 일이 생기면, 그들의 고품질 방어구를 살 수도 있을 것이다.
 qstr_Rohan_so_that_if_you|로한, 그들의 땅을 지나갈 일이 생긴다면, 그들로부터 전설적인 명마들을 살 수 있을 것이다.
@@ -1624,7 +1649,7 @@ qstr_The_{s9}_of_{s3}_ask|{s3}의 {s9}가 당신에게 {reg6}일 이내로 {reg5
 qstr_The_{s9}_of_{s3}_aske|{s3}의 {s9}가 당신에게 {reg0}일 이내로 {reg5} 개의 {s6}을 가져다주길 요청했습니다.
 qstr_Escort_the_supply_tr|{s8}까지 보급 수레를 호위하자.
 qstr_The_{s9}_of_{s4}_aske|{s4}의 {s9}가 도시 부근의 골칫거리 고블린을 추적해 주길 요청했습니다.
-qstr_The_{s9}_of_{s14}_ha|{s14}의 {s9}이 당신에게 {s14} 근처에서 문제를 일으키고 있는 고블린 무리를 처리해달라 요청했습니다. 그들은 오직 밤에만 다니며, 거리의 홀로 있는 사람만을 공격합니다.
+; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of bandits making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
 qstr_refugees|난민
 qstr_slaves|노예
 qstr_{s1}_Refugees|{s1} 난민들

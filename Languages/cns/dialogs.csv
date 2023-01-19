@@ -178,6 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|好好照顾这个大家伙吧，�
 dlga_player_hire_troop:close_window.1|我需要一些训练。
 dlga_player_hire_troop:tld_sell_prisoners|我给你带来了一些囚犯。
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33}让我们瞧瞧这些可怜的渣滓！
+dlga_player_hire_troop:tld_sell_prisoners_all|我想把队伍里的俘虏直接都转交给你。
+dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|干得漂亮，我这就让他们都蹲牢里去。
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|让我看看地牢的名单…
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|你改变主意了么？
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|我保证会好好看押他们的。
@@ -609,6 +611,12 @@ dlga_lord_talk:lord_leave_prison|我必须得走了。
 dlga_lord_talk:lord_leave|我的话说完了，我要走了。
 dlga_lord_talk:lord_leave.1|恳请你让我离开。
 dlga_lord_leave_prison:close_window|我们会再见面的。
+dlga_lord_leave:lord_offer_troops|{s23}{s24}我想让{reg41}个{s25}{reg42?加入:加入}你的部队。
+dlga_lord_offer_troops:close_window|谢谢，{reg42?我很高兴能够接收他们入队:，只是恐怕我只能带上{reg41}名}。
+dlga_lord_offer_troops:close_window.1|恐怕这次我接收不下他们。
+dlga_lord_leave:lord_offer_item|{s23} {s24}
+dlga_lord_offer_item:close_window|谢谢，我会善用您的好意的。
+dlga_lord_offer_item:close_window.1|恐怕我不得不拒绝。
 dlga_lord_leave:close_window|咱们走着瞧，{playername}。
 dlga_lord_leave:close_window.1|当然，{playername}。再会。
 dlga_lord_leave:close_window.2|祝你一路顺风，{playername}。
@@ -919,9 +927,9 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|我需要有人能帮�
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|好吧，我会帮忙追捕这群半兽人的。
 dlga_merchant_quest_taken_bandits:close_window|你答应了？很高兴听到你的决定，祝你好运。
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|抱歉，我现在没工夫做这件事儿。
-dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|我当然有！我们这儿有一群半兽人夜匪经常侵扰当地民众，我已经试过无数种解决办法了但都没什么效果。他们经常在夜色的掩护下伏击醉酒的新兵，等卫兵姗姗来迟，他们早就跑的没影了。这么长时间我们连他们中的一个都抓不住。他们只袭击那些落单的人，人多的时候这群胆小鬼从来不敢露面。我需要某人单枪匹马的解决掉这群半兽人，因为这似乎是唯一的方法了。你愿意接受这个任务么？
-dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|我们这儿有一群半兽人夜匪经常侵扰当地民众，我已经试过无数种解决办法了但都没什么效果。他们经常在夜色的掩护下伏击醉酒的新兵，等卫兵姗姗来迟，他们早就跑的没影了。这么长时间我们连他们中的一个都抓不住。他们只袭击那些落单的人，人多的时候这群胆小鬼从来不敢露面。我需要某人单枪匹马的解决掉这群半兽人，因为这似乎是唯一的方法了。你愿意接受这个任务么？
-dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|干掉一些半兽人夜匪？为什么不呢？
+; dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|不，我对此没兴趣。
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|这对我来说是个不小的负担，{playername}。如果你真能成功的回来，你的奖金不会少的。你只要别把自己害死就好。
 dlga_merchant_quest_requested:merchant_quest_brief.9|这里的驻军指挥官正寻找一位足智多谋的战士把一群{s12}送到{s13}.

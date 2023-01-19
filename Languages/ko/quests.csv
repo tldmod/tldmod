@@ -61,8 +61,8 @@ qst_troublesome_bandits|골칫거리 고블린 추적
 qst_troublesome_bandits_text|{s4}의 {s9}가 도시 부근의 골칫거리 고블린을 추적해 주길 요청했습니다.
 qst_deal_with_looters|부족 오르크 처리
 qst_deal_with_looters_text|{s4}의 장로가 {s4} 근처의 부족 오르크 몇 무리를 처리해 주길 바랍니다.
-qst_deal_with_night_bandits|도둑 고블린을 처리하라
-qst_deal_with_night_bandits_text|{s14}의 장로가 {s14}의 밤고블린을 처리해 주길 바랍니다.
+; qst_deal_with_night_bandits|Deal with Night Bandits
+; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
 qst_deliver_food|{s3}으로 식량 {reg5}개 조달
 qst_deliver_food_text|{s3}의 {s9}가 10일 이내로 {reg5}의 식량을 가져다 주길 바랍니다.
 qst_deliver_iron|{s3}으로 {s6} {reg5}개 조달

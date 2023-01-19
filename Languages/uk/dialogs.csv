@@ -178,6 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|Тепер гарненько по�
 dlga_player_hire_troop:close_window.1|Мені потрібно потренуватися.
 dlga_player_hire_troop:tld_sell_prisoners|Я маю кілька полонених...
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Давайте поглянемо на цих покидьків.
+; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
+; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Давайте переглянемо відомості про ув'язнених...
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Ви, мабуть передумали, так?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Я простежу, щоб вони не втекли з наших темниць.
@@ -609,6 +611,12 @@ dlga_lord_talk:lord_leave_prison|Мені треба йти.
 dlga_lord_talk:lord_leave|Наша коротка бесіда підійшла до кінця. Мені треба йти.
 dlga_lord_talk:lord_leave.1|Мені потрібно йти.
 dlga_lord_leave_prison:close_window|Ми ще зустрінемося.
+; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
+; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
+; dlga_lord_offer_troops:close_window.1|I fear I cannot accept them at this time.
+; dlga_lord_leave:lord_offer_item|{s23} {s24}
+; dlga_lord_offer_item:close_window|Thank you, I shall see  that it is put to good use.
+; dlga_lord_offer_item:close_window.1|I'm afraid I must decline.
 dlga_lord_leave:close_window|Подивимося, {playername}.
 dlga_lord_leave:close_window.1|Звичайно, {playername}. Прощавай.
 dlga_lord_leave:close_window.2|Нехай щастить, {playername}.
@@ -919,9 +927,9 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|Мені потріб�
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Гаразд. Я розшукаю цих гоблінів і покінчу з ними.
 dlga_merchant_quest_taken_bandits:close_window|Зробите? Я такий радий це чути. Удачі вам.
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Даруйте, але зараз я не маю на це часу.
-dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Ще як можете! У нас завелася банда мерзенних гоблінів, і я ніяк не можу впоратися з ними, хоч вішайся. Вони виходять ночами і грабують п'яних новобранців, а, коли з'являється варта, вони зникають з блискавичною швидкістю. Ми не зуміли піймати жодного з них. Вони нападають тільки на самотніх перехожих, ніколи не наважуючись показуватися при вигляді якої-небудь компанії. Мені потрібен хтось, хто зміг би самотужки виманити цих гоблінів і перемогти їх. Здається, це єдиний спосіб впоратися з ними. Ви можете взятися за це?
-dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|У нас завелася банда мерзенних гоблінів, і я ніяк не можу впоратися з ними, хоч вішайся. Вони виходять у ночі та грабують п'яних новобранців, а, коли з'являється варта, вони зникають з блискавичною швидкістю. Ми не зуміли піймати жодного з них. Вони нападають тільки на самотніх перехожих, ніколи не наважуючись показуватися при вигляді якої-небудь компанії. Мені потрібен хтось, хто зміг би самотужки виманити цих гоблінів і перемогти їх. Здається, це єдиний спосіб впоратися з ними. Ви можете взятися за це?
-dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Вбити гоблінів-розбійників? Чому ні? Гаразд!
+; dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Ні, мене це не цікавить.
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|Як гора з плечей, {playername}. Ви можете розраховувати на хорошу нагороду, якщо повернетеся з перемогою. Тільки бережіть себе, добре?
 dlga_merchant_quest_requested:merchant_quest_brief.9|Командир гарнізону шукає вправного воїна, який міг би супроводжувати групу {s12} у {s13}.

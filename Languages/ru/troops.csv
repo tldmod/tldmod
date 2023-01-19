@@ -458,12 +458,12 @@ trp_c6_rider_guard_of_rohan|Роханский воин гвардии Эорл�
 trp_c6_rider_guard_of_rohan_pl|Роханские воины гвардии Эорла
 trp_i6_2h_guard_of_rohan|Страж Хельмовой Пади
 trp_i6_2h_guard_of_rohan_pl|Стражи Хельмовой Пади
-trp_dismounted_veteran_skirmisher_of_rohan|Опытный застрельщик Рохана
-trp_dismounted_veteran_skirmisher_of_rohan_pl|Опытные застрельщики Рохана
-trp_dismounted_elite_skirmisher_of_rohan|Отборный застрельщик Рохана
-trp_dismounted_elite_skirmisher_of_rohan_pl|Отборные застрельщики Рохана
-trp_dismounted_thengel_guard_of_rohan|Роханский воин гвардии Тенгела
-trp_dismounted_thengel_guard_of_rohan_pl|Роханские воины гвардии Тенгела
+trp_ac3_dism_skirmisher_of_rohan2|Застрельщик Рохана
+trp_ac3_dism_skirmisher_of_rohan2_pl|Застрельщики Рохана
+trp_ac4_dism_veteran_skirmisher_of_rohan2|Опытный застрельщик Рохана
+trp_ac4_dism_veteran_skirmisher_of_rohan2_pl|Опытные застрельщики Рохана
+trp_ac5_dism_elite_skirmisher_of_rohan2|Отборный застрельщик Рохана
+trp_ac5_dism_elite_skirmisher_of_rohan2_pl|Отборные застрельщики Рохана
 trp_i1_harad_levy|Харадский новобранец
 trp_i1_harad_levy_pl|Харадские новобранцы
 trp_i3_harad_infantry|Харадский Легкий Пехотинец
@@ -1636,3 +1636,9 @@ trp_tribal_orc_warrior|Дикий Орк-Воин
 trp_tribal_orc_warrior_pl|Дикие Орки-Воины
 trp_tribal_orc_chief|Вождь Диких Орков
 trp_tribal_orc_chief_pl|Вожди Диких Орков
+trp_a3_dism_skirmisher_of_rohan|Застрельщик Рохана
+trp_a3_dism_skirmisher_of_rohan_pl|Застрельщики Рохана
+trp_a4_dism_veteran_skirmisher_of_rohan|Опытный застрельщик Рохана
+trp_a4_dism_veteran_skirmisher_of_rohan_pl|Опытные застрельщики Рохана
+trp_a5_dism_elite_skirmisher_of_rohan|Отборный застрельщик Рохана
+trp_a5_dism_elite_skirmisher_of_rohan_pl|Отборные застрельщики Рохана

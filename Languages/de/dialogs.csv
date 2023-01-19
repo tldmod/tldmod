@@ -178,6 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|Kümmere dich gut um deinen neuen g
 dlga_player_hire_troop:close_window.1|Ich brauche etwas Übung.
 dlga_player_hire_troop:tld_sell_prisoners|Ich bringe Euch einige Gefangene.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Lass uns diesen jämmerlichen Abschaum ansehen.
+; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
+; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Ich will die Gefängnisberichte sehen...
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Ihr habt Euch umentschieden, ja?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Ich werde sicherstellen, dass sie nicht aus unseren Verliesen entkommen.
@@ -609,6 +611,12 @@ dlga_lord_talk:lord_leave_prison|Ich muss nun gehen.
 dlga_lord_talk:lord_leave|Diese kleine Unterhaltung ist nun vorüber. Ich gehe nun.
 dlga_lord_talk:lord_leave.1|Ich bitte, mich entfernen zu dürfen.
 dlga_lord_leave_prison:close_window|Wir werden uns wiedersehen.
+; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
+; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
+; dlga_lord_offer_troops:close_window.1|I fear I cannot accept them at this time.
+; dlga_lord_leave:lord_offer_item|{s23} {s24}
+; dlga_lord_offer_item:close_window|Thank you, I shall see  that it is put to good use.
+; dlga_lord_offer_item:close_window.1|I'm afraid I must decline.
 dlga_lord_leave:close_window|Wir werden sehen, {playername}.
 dlga_lord_leave:close_window.1|Natürlich, {playername}. Lebt wohl.
 dlga_lord_leave:close_window.2|Ich wünsche Euch gute Reisen, {playername}.
@@ -919,9 +927,9 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|Ich brauche jemanden, 
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Gut, ich werde die Orks jagen.
 dlga_merchant_quest_taken_bandits:close_window|Werdet Ihr? Ich bin sehr froh, das zu hören. Viel Glück!
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Verzeihung, aber ich habe gerade keine Zeit dafür.
-dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Allerdings! Eine Gruppe aufsässiger Orks macht die Gegend unsicher und ich weiß nicht, wie ich mit ihnen fertig werden soll. Sie überfallen und berauben betrunkene Rekruten im Schutze der Nacht und verschwinden dann schnell wie der Blitz, wenn die Wachen endlich auftauchen. Wir haben keinen einzigen von ihnen fangen können. Sie greifen nur einzelne Leute an und zeigen sich nicht, wenn eine Gruppe in der Nähe ist. Ich brauche jemanden, der es mit diesen Orks allein aufnimmt und sie besiegt. Das scheint der einzige Weg zu sein, sie loszuwerden. Schafft Ihr das?
-dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|Eine Gruppe aufsässiger Orks macht die Gegend unsicher und ich weiß nicht, wie ich mit ihnen fertig werden soll. Sie überfallen und berauben betrunkene Rekruten im Schutze der Nacht und verschwinden dann schnell wie der Blitz, wenn die Wachen endlich auftauchen. Wir haben keinen einzigen von ihnen fangen können. Sie greifen nur einzelne Leute an und zeigen sich nicht, wenn eine Gruppe in der Nähe ist. Ich brauche jemanden, der es mit diesen Orks allein aufnimmt und sie besiegt. Das scheint der einzige Weg zu sein, sie loszuwerden. Schafft Ihr das?
-dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Aufsässige Orks töten? Aber sicher!
+; dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Nein, das kümmert mich nicht.
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|Das nimmt mir eine Bürde von den Schultern, {playername}. Ihr könnt eine gute Belohnung erwarten, wenn Ihr erfolgreich seid. Lasst Euch nicht umbringen, ja?
 dlga_merchant_quest_requested:merchant_quest_brief.9|Der Befehlshaber sucht nach einem einfallsreichen Krieger, der eine Gruppe {s12} nach {s13} bringt.

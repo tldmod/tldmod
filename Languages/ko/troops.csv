@@ -458,12 +458,12 @@ trp_c6_rider_guard_of_rohan|로한 에오를 근위대
 trp_c6_rider_guard_of_rohan_pl|로한 에오를 근위대
 trp_i6_2h_guard_of_rohan|로한 헬름 수비대
 trp_i6_2h_guard_of_rohan_pl|로한 헬름 수비대
-trp_dismounted_veteran_skirmisher_of_rohan|로한 고참 척후병
-trp_dismounted_veteran_skirmisher_of_rohan_pl|로한 고참 척후병
-trp_dismounted_elite_skirmisher_of_rohan|로한 정예 척후병
-trp_dismounted_elite_skirmisher_of_rohan_pl|로한 정예 척후병
-trp_dismounted_thengel_guard_of_rohan|로한 셍겔 근위대
-trp_dismounted_thengel_guard_of_rohan_pl|로한 셍겔 근위대
+trp_ac3_dism_skirmisher_of_rohan2|로한 척후병
+trp_ac3_dism_skirmisher_of_rohan2_pl|로한 척후병
+trp_ac4_dism_veteran_skirmisher_of_rohan2|로한 고참 척후병
+trp_ac4_dism_veteran_skirmisher_of_rohan2_pl|로한 고참 척후병
+trp_ac5_dism_elite_skirmisher_of_rohan2|로한 정예 척후병
+trp_ac5_dism_elite_skirmisher_of_rohan2_pl|로한 정예 척후병
 trp_i1_harad_levy|하라드 징집병
 trp_i1_harad_levy_pl|하라드 징집병
 trp_i3_harad_infantry|하라드 경장보병
@@ -1636,3 +1636,9 @@ trp_tribal_orc_warrior|부족 오르크 전사
 trp_tribal_orc_warrior_pl|부족 오르크 전사
 trp_tribal_orc_chief|부족 오르크 족장
 trp_tribal_orc_chief_pl|부족 오르크 족장
+trp_a3_dism_skirmisher_of_rohan|로한 척후병
+trp_a3_dism_skirmisher_of_rohan_pl|로한 척후병
+trp_a4_dism_veteran_skirmisher_of_rohan|로한 고참 척후병
+trp_a4_dism_veteran_skirmisher_of_rohan_pl|로한 고참 척후병
+trp_a5_dism_elite_skirmisher_of_rohan|로한 정예 척후병
+trp_a5_dism_elite_skirmisher_of_rohan_pl|로한 정예 척후병

@@ -458,12 +458,12 @@ trp_c6_rider_guard_of_rohan|Eorlov rohanský strážca
 trp_c6_rider_guard_of_rohan_pl|Eorlova rohanská stráž
 trp_i6_2h_guard_of_rohan|Helmov Strážca z Rohanu
 trp_i6_2h_guard_of_rohan_pl|Helmovi Strážci z rohanu
-trp_dismounted_veteran_skirmisher_of_rohan|Skúsený ľahký kavalerista z Rohanu
-trp_dismounted_veteran_skirmisher_of_rohan_pl|Skúsená ľahká jazda Rohanu
-trp_dismounted_elite_skirmisher_of_rohan|Elitný ľahký kavalerista z Rohanu
-trp_dismounted_elite_skirmisher_of_rohan_pl|Elitná ľahká jazda Rohanu
-trp_dismounted_thengel_guard_of_rohan|Thengelov rohanský gardista
-trp_dismounted_thengel_guard_of_rohan_pl|Thengelova rohanská garda
+trp_ac3_dism_skirmisher_of_rohan2|Rohanský ľahký kavalerista
+trp_ac3_dism_skirmisher_of_rohan2_pl|Ľahká jazda Rohanu
+trp_ac4_dism_veteran_skirmisher_of_rohan2|Skúsený ľahký kavalerista z Rohanu
+trp_ac4_dism_veteran_skirmisher_of_rohan2_pl|Skúsená ľahká jazda Rohanu
+trp_ac5_dism_elite_skirmisher_of_rohan2|Elitný ľahký kavalerista z Rohanu
+trp_ac5_dism_elite_skirmisher_of_rohan2_pl|Elitná ľahká jazda Rohanu
 trp_i1_harad_levy|Haradský branec
 trp_i1_harad_levy_pl|Haradskí branci
 trp_i3_harad_infantry|Haradský odvedenec
@@ -1636,3 +1636,9 @@ trp_tribal_orc_warrior|Bojový Kmeňový Ohyzd
 trp_tribal_orc_warrior_pl|Bojoví Kmeňoví Ohyzdi
 trp_tribal_orc_chief|Ohyzdí náčelník kmeňa
 trp_tribal_orc_chief_pl|Ohyzdí náčelníci kmeňa
+trp_a3_dism_skirmisher_of_rohan|Rohanský ľahký kavalerista
+trp_a3_dism_skirmisher_of_rohan_pl|Ľahká jazda Rohanu
+trp_a4_dism_veteran_skirmisher_of_rohan|Skúsený ľahký kavalerista z Rohanu
+trp_a4_dism_veteran_skirmisher_of_rohan_pl|Skúsená ľahká jazda Rohanu
+trp_a5_dism_elite_skirmisher_of_rohan|Elitný ľahký kavalerista z Rohanu
+trp_a5_dism_elite_skirmisher_of_rohan_pl|Elitná ľahká jazda Rohanu

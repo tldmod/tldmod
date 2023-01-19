@@ -458,12 +458,12 @@ trp_c6_rider_guard_of_rohan|Guardia Eorl de Rohan
 trp_c6_rider_guard_of_rohan_pl|Guardias Eorl de Rohan
 trp_i6_2h_guard_of_rohan|Guardia Helm de Rohan
 trp_i6_2h_guard_of_rohan_pl|Guardias Helm de Rohan
-trp_dismounted_veteran_skirmisher_of_rohan|Escaramuzador Veterano de Rohan
-trp_dismounted_veteran_skirmisher_of_rohan_pl|Escaramuzadores Veteranos de Rohan
-trp_dismounted_elite_skirmisher_of_rohan|Escaramuzador de Élite de Rohan
-trp_dismounted_elite_skirmisher_of_rohan_pl|Escaramuzadores de Élite de Rohan
-trp_dismounted_thengel_guard_of_rohan|Guardia Thengel de Rohan
-trp_dismounted_thengel_guard_of_rohan_pl|Guardias Thengel de Rohan
+trp_ac3_dism_skirmisher_of_rohan2|Escaramuzador de Rohan
+trp_ac3_dism_skirmisher_of_rohan2_pl|Escaramuzadores de Rohan
+trp_ac4_dism_veteran_skirmisher_of_rohan2|Escaramuzador Veterano de Rohan
+trp_ac4_dism_veteran_skirmisher_of_rohan2_pl|Escaramuzadores Veteranos de Rohan
+trp_ac5_dism_elite_skirmisher_of_rohan2|Escaramuzador de Élite de Rohan
+trp_ac5_dism_elite_skirmisher_of_rohan2_pl|Escaramuzadores de Élite de Rohan
 trp_i1_harad_levy|Recluta de Harad
 trp_i1_harad_levy_pl|Reclutas de Harad
 trp_i3_harad_infantry|Infante Ligero Haradrim
@@ -1636,3 +1636,9 @@ trp_tribal_orc_warrior|Guerrero Tribal Orco
 trp_tribal_orc_warrior_pl|Guerreros Tribales Orcos
 trp_tribal_orc_chief|Jefe Tribal Orco
 trp_tribal_orc_chief_pl|Jefes Tribales Orcos
+trp_a3_dism_skirmisher_of_rohan|Escaramuzador de Rohan
+trp_a3_dism_skirmisher_of_rohan_pl|Escaramuzadores de Rohan
+trp_a4_dism_veteran_skirmisher_of_rohan|Escaramuzador Veterano de Rohan
+trp_a4_dism_veteran_skirmisher_of_rohan_pl|Escaramuzadores Veteranos de Rohan
+trp_a5_dism_elite_skirmisher_of_rohan|Escaramuzador de Élite de Rohan
+trp_a5_dism_elite_skirmisher_of_rohan_pl|Escaramuzadores de Élite de Rohan

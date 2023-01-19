@@ -61,8 +61,8 @@ qst_troublesome_bandits|迷惑なゴブリンを退治せよ
 qst_troublesome_bandits_text|町の周辺にいる迷惑なゴブリンを退治するよう、 {s4}の{s9}に頼まれた。
 qst_deal_with_looters|部族オークを退治せよ
 qst_deal_with_looters_text|{s4}周辺にいる、 いくつかの部族オークの群れを退治するよう、 {s4}の長老に頼まれた。
-qst_deal_with_night_bandits|ごろつきゴブリンを退治せよ
-qst_deal_with_night_bandits_text|{s14}に、 夜になると出没するというゴブリンを退治するよう、 {s14}の長老に頼まれた。
+; qst_deal_with_night_bandits|Deal with Night Bandits
+; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
 qst_deliver_food|{s3}に 食料を{reg5}個供給せよ
 qst_deliver_food_text|10日以内に食料を{reg5}個調達してくるよう、 {s3}の{s9}に頼まれた。
 qst_deliver_iron|{s3}に {s6}を {reg5}個供給せよ

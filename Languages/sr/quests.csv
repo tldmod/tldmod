@@ -61,8 +61,8 @@ qst_troublesome_bandits|Ulovi Gobline koje prave probleme
 qst_troublesome_bandits_text|{s9} od {s4} je trazio da ulovis Gobline koje prave probleme u blizini grada.
 qst_deal_with_looters|Ubij Plemenske Orkove
 qst_deal_with_looters_text|Vodja od {s4} je tražio da se obračunas sa nekoliko bandi plemenskih orkova koji se nalaze u blizini {s4}.
-qst_deal_with_night_bandits|Pobavi se sa Nevaljalim Goblinima
-qst_deal_with_night_bandits_text|Vodja od {s14} je trazio da se obracunas sa nocnim goblinima u {s14}.
+; qst_deal_with_night_bandits|Deal with Night Bandits
+; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
 qst_deliver_food|Prevezi u {s3} {reg5} hrane
 qst_deliver_food_text|{s9} od {s3} je trazio da mu doneses {reg5} hrane u roku od 10 dana.
 qst_deliver_iron|Prevezi u {s3}  {reg5} vrste {s6}
