@@ -1318,6 +1318,13 @@ simple_triggers = [
       (assign, ":consumption_amount", ":num_men"),	  
 	  #(assign, reg2, ":consumption_amount"),
 	  #(display_message, "@food_consumption: {reg2}"),
+      
+      (party_get_skill_level, reg0, "p_main_party", "skl_inventory_management"),
+      (val_mul, reg0, 5),
+      (store_sub, ":consumption_reduce", 100, reg0),
+      (val_mul, ":consumption_amount", ":consumption_reduce"),
+      (val_div, ":consumption_amount", 100),
+      
       (assign, ":no_food_displayed", 0),
       (try_for_range, ":unused", 0, ":consumption_amount"),
         (assign, ":available_food", 0),
