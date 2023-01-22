@@ -12190,7 +12190,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 # CppCoder bugfix: Trolls go rawr...
 [anyone,"prisoner_chat_00", [(store_conversation_troop,reg1),(troop_get_type, ":troll", reg1),(eq, ":troll", tf_troll), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "^^GROWL!^^", "close_window",[]],
 
-[anyone,"prisoner_chat_00", [], "You put me in chains already, what more do you want?", "prisoner_chat_3",[]],
+[anyone,"prisoner_chat_00", [], "You put me in chains already, what more do you want?", "prisoner_chat_3",[(store_conversation_troop,"$g_talk_troop")]],
 [anyone|plyr,"prisoner_chat_3", [],"Don't try anything, you scum!", "prisoner_chat_4",[]],
 [anyone|plyr,"prisoner_chat_3", [
   (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),(neg|troop_is_hero,"$g_talk_troop"), (neg|is_between, "$g_talk_troop", heroes_begin, heroes_end),

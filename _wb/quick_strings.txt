@@ -1,4 +1,4 @@
-1967
+1968
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_539_wb__dev_^_B _rev_539_wb_|_dev_^_Built_2023-01-15_16:13___
+qstr__rev_544_wb__dev_^_B _rev_544_wb_|_dev_^_Built_2023-01-22_15:29___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1204,6 +1204,7 @@ qstr_{reg11}0___{reg11}9 {reg11}0_-_{reg11}9
 qstr_Regular_troops_only Regular_troops_only
 qstr_Heroes_only Heroes_only
 qstr_Regulars_and_Heroes Regulars_and_Heroes
+qstr_Added_10_prisoners. Added_10_prisoners.
 qstr_Added_1000_experienc Added_1000_experience_to_player.
 qstr_Attributes_skills_an Attributes,_skills_and_proficiencies_raised.
 qstr_Items_added_to_playe Items_added_to_player_inventory.
