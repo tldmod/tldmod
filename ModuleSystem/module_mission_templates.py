@@ -1920,12 +1920,12 @@ mission_templates = [ # not used in game
 	(try_begin),
 		(gt, reg20, 0),
 		
-		(call_script, "script_party_remove_party_from_prisoners", "p_main_party", "p_enemy_casualties"), # remove prisoners
+		(call_script, "script_party_remove_party_from_prisoners", "p_main_party", "p_enemy_casualties"), # remove prisoners, returns removed number in reg0
 		
 		(try_begin), # add as many human meat pieces as number of removed prisoners
 			(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), # unless good
 
-      #Butcher trait gets 1.2x more human meat - Kham
+      #Butcher trait gets 2x more human meat - Kham
 
       (try_begin),
         (troop_slot_eq, "trp_traits", slot_trait_butcher, 1),
@@ -1933,8 +1933,8 @@ mission_templates = [ # not used in game
           (le, reg0, 0),
           (assign, reg0,1),
         (try_end),
-        (val_mul, reg0, 10),
-        (val_div, reg0, 8),
+        (val_mul, reg0, 2),
+        #(val_div, reg0, 8),
         
       #Butcher mod ends
 
@@ -1945,10 +1945,10 @@ mission_templates = [ # not used in game
 		(try_end),
 
     (try_begin),
-      (lt, "$butcher_trait_kills",35),
       (val_add, "$butcher_trait_kills", reg0),
-    (else_try),
       (ge, "$butcher_trait_kills", 35),
+      (store_random_in_range, ":chance", 0, 500), #0,2% per butcher kill
+      (lt, ":chance", "$butcher_trait_kills"),
       (call_script, "script_cf_gain_trait_butcher"),
     (try_end),
 		

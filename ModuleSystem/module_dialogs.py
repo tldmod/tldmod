@@ -12227,13 +12227,15 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     #(agent_deliver_damage_to_agent, reg1, ":agent"),
   (try_end),
   (party_remove_prisoners, "p_main_party", "$g_talk_troop", 1),
-  (try_begin),
-    (lt, "$butcher_trait_kills",35),
-    (val_add, "$butcher_trait_kills",1),
-  (else_try),
-    (ge, "$butcher_trait_kills", 35),
-    (call_script, "script_cf_gain_trait_butcher"),
-  (try_end),
+
+    (try_begin),
+      (val_add, "$butcher_trait_kills", 1),
+      (ge, "$butcher_trait_kills", 35),
+      (store_random_in_range, ":chance", 0, 500), #0,2% per butcher kill
+      (lt, ":chance", "$butcher_trait_kills"),
+      (call_script, "script_cf_gain_trait_butcher"),
+    (try_end),
+
   (try_begin),
     (troop_slot_eq, "trp_traits",  slot_trait_butcher,1),
     (troop_add_item,"trp_player", "itm_human_meat",imod_fresh),
