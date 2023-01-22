@@ -2209,6 +2209,10 @@ mission_templates = [ # not used in game
 		(replace_scene_props, "spr_troop_civilian", "spr_empty"),
 		(replace_scene_props, "spr_troop_civilian_sitting_ground", "spr_empty"),
 		(replace_scene_props, "spr_troop_civilian_sitting_chair", "spr_empty"),	
+        (replace_scene_props, "spr_troop_messenger", "spr_empty"),	
+        (replace_scene_props, "spr_troop_archer", "spr_empty"),	
+        (replace_scene_props, "spr_troop_rider", "spr_empty"),	
+        (replace_scene_props, "spr_troop_civilian_walker", "spr_empty"),	
       ]),
  
       common_inventory_not_available,       
@@ -2273,18 +2277,19 @@ mission_templates = [ # not used in game
 	(ti_before_mission_start, 0, 0, [], [
 			(call_script, "script_change_banners_and_chest"),
 			(mission_disable_talk),
-			#remove some cabbage guard spawn points, so castle and prison guards don't spawn
-			(replace_scene_props, "spr_troop_guard", "spr_empty"),
+			#remove all troop spawn props
             (replace_scene_props, "spr_troop_archer", "spr_empty"),
-			(replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
-			# remove all other guards except the first five - doesn't work!
-			# (init_position, pos1),
-			# (position_move_z, pos1, -1000000),
-			# (scene_prop_get_num_instances, ":num_guards", "spr_troop_guard"),
-			# (try_for_range, ":count", 5, ":num_guards"),
-			  # (scene_prop_get_instance, ":guard_instance", "spr_troop_guard", ":count"),
-			  # (prop_instance_set_position, ":guard_instance", pos1), #does this work?? how do you remove a single prop? (GA: you can't)
-			# (try_end),
+            (replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
+            (replace_scene_props, "spr_troop_guard", "spr_empty"),
+            (replace_scene_props, "spr_troop_guard_sitting", "spr_empty"),
+            (replace_scene_props, "spr_troop_human_prisoner", "spr_empty"),
+            (replace_scene_props, "spr_troop_moria_troll", "spr_empty"),	
+            (replace_scene_props, "spr_troop_civilian", "spr_empty"),
+            (replace_scene_props, "spr_troop_civilian_sitting_ground", "spr_empty"),
+            (replace_scene_props, "spr_troop_civilian_sitting_chair", "spr_empty"),		
+            (replace_scene_props, "spr_troop_archer", "spr_empty"),	
+            (replace_scene_props, "spr_troop_rider", "spr_empty"),	
+            (replace_scene_props, "spr_troop_civilian_walker", "spr_empty"),
 			]),
 	common_inventory_not_available,
 	(ti_tab_pressed  , 0, 0,[(display_message, "@Cannot leave now.")], []),
