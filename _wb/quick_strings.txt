@@ -1,4 +1,4 @@
-1968
+1969
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_544_wb__dev_^_B _rev_544_wb_|_dev_^_Built_2023-01-22_15:29___
+qstr__rev_551_wb__dev_^_B _rev_551_wb_|_dev_^_Built_2023-01-29_17:37___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -203,6 +203,7 @@ qstr_DEBUG:_{s1}_no_longe DEBUG:_{s1}_no_longer_leads_a_party.
 qstr_DEBUG:_{s1}_is_no_lo DEBUG:_{s1}_is_no_longer_a_prisoner.
 qstr_DEBUG:_{s1}_is_now_a DEBUG:_{s1}_is_now_a_prisoner_of_player.
 qstr_DEBUG:_{s1}_is_now_a_ DEBUG:_{s1}_is_now_a_prisoner_of_{s2}.
+qstr_{s1}_Scouts {s1}_Scouts
 qstr_Left_for_dead_but_mi Left_for_dead_but_miraculously_survived:_{reg1?{reg1}_time{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_ 1_Res.Pt_({s2})
 qstr_{reg1}_Res.Pts__{s2} {reg1}_Res.Pts_({s2})

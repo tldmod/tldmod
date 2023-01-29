@@ -2934,6 +2934,13 @@ scripts = [
             
             (try_begin),
               (lt, ":random_num", 10),
+              
+                #not when retreat parties are involved
+                (party_get_template_id, ":attacker_party_template", ":root_attacker_party"),
+                (party_get_template_id, ":defender_party_template", ":root_defender_party"),
+                (neq,  ":attacker_party_template", "pt_retreat_troops"),
+                (neq,  ":defender_party_template", "pt_retreat_troops"),              
+              
               (assign, ":trigger_result", 1), #End battle!
             (try_end),
           (else_try),
@@ -2958,6 +2965,13 @@ scripts = [
             
             (try_begin),
               (lt, ":random_num", 5), #15% is a bit higher than 10% (which is open area escape probability)
+              
+                #not when retreat parties are involved
+                (party_get_template_id, ":attacker_party_template", ":root_attacker_party"),
+                (party_get_template_id, ":defender_party_template", ":root_defender_party"),
+                (neq,  ":attacker_party_template", "pt_retreat_troops"),
+                (neq,  ":defender_party_template", "pt_retreat_troops"),
+              
               (assign, ":trigger_result", 1), #End battle!
               
               (call_script, "script_find_theater", ":root_defender_party"),
@@ -2975,8 +2989,8 @@ scripts = [
 # param1: Defender Party
 # param2: Attacker Party
 ("game_event_battle_end",[
-    #(store_script_param_1, ":root_defender_party"),
-    #(store_script_param_2, ":root_attacker_party"),
+    (store_script_param_1, ":root_defender_party"),
+    (store_script_param_2, ":root_attacker_party"),
       
 	#Fixing deleted heroes
 	(try_for_range, ":cur_troop", kingdom_heroes_begin, kingdom_heroes_end),
@@ -3065,6 +3079,36 @@ scripts = [
 			(try_end),
 		(try_end),
 	(try_end),
+    
+    (try_begin), #if a cover party miraculously survives, turn it into a regular scout party
+       
+        (assign, ":scout_party", 0),
+        (try_begin),
+            (party_is_active, ":root_attacker_party"),
+            (party_get_template_id, ":attacker_party_template", ":root_attacker_party"),
+            (eq,  ":attacker_party_template", "pt_retreat_troops"),
+            (assign, ":scout_party", ":root_attacker_party"),
+         (else_try),
+            (party_is_active, ":root_defender_party"),
+            (party_get_template_id, ":defender_party_template", ":root_defender_party"),
+            (eq,  ":defender_party_template", "pt_retreat_troops"),
+            (assign, ":scout_party", ":root_defender_party"),
+        (try_end),
+        
+        (gt, ":scout_party", 0),
+        (party_set_slot, ":scout_party", slot_party_type, spt_scout),
+        (faction_get_slot, ":capital", "$players_kingdom", slot_faction_capital),
+        (party_set_slot, ":scout_party", slot_party_home_center, ":capital"), #er... something
+        (party_set_slot, ":scout_party", slot_party_victory_value, ws_scout_vp), # victory points for party kill
+        (party_set_faction, ":scout_party", "$players_kingdom"),
+        (str_store_faction_name, s1, "$players_kingdom"),
+        (party_set_name, ":scout_party", "@{s1} Scouts"),
+        (party_set_slot, ":scout_party", slot_party_ai_object, ":capital"),
+        (party_set_slot, ":scout_party", slot_party_ai_state, spai_undefined),
+        (party_set_ai_behavior, ":scout_party", ai_bhvr_patrol_location),
+        (party_set_ai_patrol_radius, ":scout_party", 30),
+    (try_end),
+    
 ]),
 
 #script_order_best_besieger_party_to_guard_center:
@@ -5047,6 +5091,7 @@ scripts = [
 ("party_calculate_strength",
     [ (store_script_param_1, ":party"), #Party_id
       (store_script_param_2, ":exclude_leader"), #Party_id
+      (party_get_template_id, ":party_template", ":party"),
       (assign, ":strength", 0),
       (party_get_num_companion_stacks, ":num_stacks",":party"),
       (assign, ":first_stack", 0),
@@ -5080,6 +5125,11 @@ scripts = [
         (val_div, ":strength", 100),
       (try_end),
       (assign, reg0, ":strength"),
+      
+      (try_begin), #InVain: Cover troops always have 1 party strength, so they don't win battles
+        (eq,":party_template", "pt_retreat_troops"),
+        (assign, reg0, 1),
+      (try_end),
 ]),
 
 #script_loot_player_items:

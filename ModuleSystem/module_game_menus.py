@@ -5225,7 +5225,7 @@ game_menus = [
 		  (this_or_next|eq, "$g_encountered_party", "$qst_raider_party_2"),
 		  (this_or_next|eq, "$g_encountered_party", "$qst_raider_party_3"),
           (eq, "$g_encountered_party", "$qst_reinforcement_party"),
-          (this_or_next|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
+          (eq, "trp_traits", slot_trait_bear_shape, 1),
           #(eq, "$cheat_mode", 1),(eq, cheat_switch, 1),
           ],
          "{reg21?Leap_into_battle_in_bear_form:Turn_skin_and_face_them}.",[
@@ -5411,7 +5411,7 @@ game_menus = [
         (set_spawn_radius, 0),
         (spawn_around_party, "p_main_party", "pt_retreat_troops"),
         (assign, ":retreat_party", reg0),
-        (party_set_faction, ":retreat_party", "$players_kingdom"),
+        (party_set_faction, ":retreat_party", fac_player_faction),
         (faction_get_slot, ":tier_1_troop", "$players_kingdom", slot_faction_tier_1_troop),
         (party_add_members, ":retreat_party", ":tier_1_troop",1),
         (party_remove_members, ":retreat_party", "trp_farmer", 1),
@@ -6558,8 +6558,16 @@ game_menus = [
     [ (str_store_party_name, 1,"$g_encountered_party"),
       (str_store_party_name, 2,"$g_encountered_party_2"),
     ],
-    [ ("pre_join_help_attackers",
-	  [   (store_faction_of_party, ":attacker_faction", "$g_encountered_party_2"),
+    [     
+    ("pre_join_help_attackers",
+	  [     
+             #bugfix: don't help cover troops
+            (party_get_template_id, ":party_template_1", "$g_encountered_party"),
+            (party_get_template_id, ":party_template_2", "$g_encountered_party_2"),
+            (neq, ":party_template_1", "pt_retreat_troops"),
+            (neq, ":party_template_2", "pt_retreat_troops"),
+
+          (store_faction_of_party, ":attacker_faction", "$g_encountered_party_2"),
           (store_relation, ":attacker_relation", ":attacker_faction", "fac_player_supporters_faction"),
           (store_faction_of_party, ":defender_faction", "$g_encountered_party"),
           (store_relation, ":defender_relation", ":defender_faction", "fac_player_supporters_faction"),
@@ -6572,6 +6580,11 @@ game_menus = [
               (assign,"$g_ally_party","$g_encountered_party_2"),
               (jump_to_menu,"mnu_join_battle")]),
       ("pre_join_help_defenders",[
+            #bugfix: don't help cover troops
+            (party_get_template_id, ":party_template_1", "$g_encountered_party"),
+            (party_get_template_id, ":party_template_2", "$g_encountered_party_2"),
+            (neq, ":party_template_1", "pt_retreat_troops"),
+            (neq, ":party_template_2", "pt_retreat_troops"),
           (store_faction_of_party, ":attacker_faction", "$g_encountered_party_2"),
           (store_relation, ":attacker_relation", ":attacker_faction", "fac_player_supporters_faction"),
           (store_faction_of_party, ":defender_faction", "$g_encountered_party"),
