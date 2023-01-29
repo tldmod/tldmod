@@ -6784,6 +6784,7 @@ game_menus = [
             (change_screen_mission),
         ]),
     ] or []) + [
+    
       ("join_leave",[],"Disengage.",[
         (try_begin),
            #(neg|troop_is_wounded, "trp_player"),
@@ -10084,7 +10085,7 @@ game_menus = [
 ]),
 
 ## Kham - Gondor Beacons Menu - END
-## Kham - Player Added to War Council Start
+## Kham - Player Added to War Council Start ##InVain: unused
 
 ("player_added_to_war_council",0,
    "^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.",
@@ -10108,7 +10109,7 @@ game_menus = [
 ]),
 
 ## Kham - Player Added to War Council END
-## Kham - Player Added to Siege Reports
+## Kham - Player Added to Siege Reports ##InVain: unused
 
 ("player_added_to_siege_reports",0,
    "^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.",
@@ -10132,7 +10133,7 @@ game_menus = [
 
 ## Kham - Player Added to Siege Reports END
 
-## Kham - Player Added to Allow Party Follow
+## Kham - Player Added to Allow Party Follow ##InVain: unused
 
 ("player_added_to_allow_follow",0,
    "^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed to command {s2} to follow you, for a total of {reg55} maximum followers.",

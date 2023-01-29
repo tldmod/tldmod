@@ -26865,6 +26865,7 @@ command_cursor_scripts = [
 ("cf_gp_marshall_travel_to_position", [
 	(quest_get_slot, ":quest_target_troop", "qst_guardian_party_quest", slot_quest_target_troop),
 	(troop_get_slot, ":party", ":quest_target_troop", slot_troop_leaded_party),
+    (gt, ":party", 0),
 	(party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),
 	(set_fixed_point_multiplier, 10),
  	(position_set_x, pos56, 452),

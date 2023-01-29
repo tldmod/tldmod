@@ -3542,40 +3542,41 @@ simple_triggers = [
   
   
   ## Kham - War Council + Siege Reports Trigger + Check Followers
+   ##InVain: disabled reports, not really necessary and buggy
   
   (12,[
-      (try_for_range, ":faction_wc", kingdoms_begin, kingdoms_end),
-        (neq, "$g_fast_mode", 1),
-        (faction_slot_eq, ":faction_wc", slot_faction_state, sfs_active), #Needs to be alive
-        (call_script, "script_get_faction_rank", ":faction_wc"),
-        (assign, ":rank", reg0), #rank points to rank number 0-9
-        (try_begin),
-          (faction_slot_eq, ":faction_wc", slot_faction_war_council, 0),
-          (ge, ":rank",8),
-          (jump_to_menu, "mnu_player_added_to_war_council"),
-          (faction_set_slot, ":faction_wc", slot_faction_war_council, 1),
-        (else_try),
-          (faction_slot_eq, ":faction_wc", slot_faction_allowed_follow, 2),
-          (ge, ":rank",7),
-          (jump_to_menu, "mnu_player_added_to_allow_follow"),
-          (faction_set_slot, ":faction_wc", slot_faction_allowed_follow, 3),
-        (else_try),
-          (faction_slot_eq, ":faction_wc", slot_faction_allowed_follow, 1),
-          (ge, ":rank",5),
-          (jump_to_menu, "mnu_player_added_to_allow_follow"),
-          (faction_set_slot, ":faction_wc", slot_faction_allowed_follow, 2),
-        (else_try),
-          (faction_slot_eq, ":faction_wc", slot_faction_siege_reports, 0),
-          (ge, ":rank", 4),
-          (faction_set_slot, ":faction_wc", slot_faction_siege_reports, 1),
-          (jump_to_menu, "mnu_player_added_to_siege_reports"),
-        (else_try),
-          (faction_slot_eq, ":faction_wc", slot_faction_allowed_follow, 0),
-          (ge, ":rank",3),
-          (jump_to_menu, "mnu_player_added_to_allow_follow"),
-          (faction_set_slot, ":faction_wc", slot_faction_allowed_follow, 1),
-        (try_end),
-      (try_end), #End Range
+      # (try_for_range, ":faction_wc", kingdoms_begin, kingdoms_end),
+        # (neq, "$g_fast_mode", 1),
+        # (faction_slot_eq, ":faction_wc", slot_faction_state, sfs_active), #Needs to be alive
+        # (call_script, "script_get_faction_rank", ":faction_wc"),
+        # (assign, ":rank", reg0), #rank points to rank number 0-9
+        # (try_begin),
+          # (faction_slot_eq, ":faction_wc", slot_faction_war_council, 0),
+          # (ge, ":rank",8),
+          # (jump_to_menu, "mnu_player_added_to_war_council"),
+          # (faction_set_slot, ":faction_wc", slot_faction_war_council, 1),
+        # (else_try),
+          # (faction_slot_eq, ":faction_wc", slot_faction_allowed_follow, 2),
+          # (ge, ":rank",7),
+          # (jump_to_menu, "mnu_player_added_to_allow_follow"),
+          # (faction_set_slot, ":faction_wc", slot_faction_allowed_follow, 3),
+        # (else_try),
+          # (faction_slot_eq, ":faction_wc", slot_faction_allowed_follow, 1),
+          # (ge, ":rank",5),
+          # (jump_to_menu, "mnu_player_added_to_allow_follow"),
+          # (faction_set_slot, ":faction_wc", slot_faction_allowed_follow, 2),
+        # (else_try),
+          # (faction_slot_eq, ":faction_wc", slot_faction_siege_reports, 0),
+          # (ge, ":rank", 4),
+          # (faction_set_slot, ":faction_wc", slot_faction_siege_reports, 1),
+          # (jump_to_menu, "mnu_player_added_to_siege_reports"),
+        # (else_try),
+          # (faction_slot_eq, ":faction_wc", slot_faction_allowed_follow, 0),
+          # (ge, ":rank",3),
+          # (jump_to_menu, "mnu_player_added_to_allow_follow"),
+          # (faction_set_slot, ":faction_wc", slot_faction_allowed_follow, 1),
+        # (try_end),
+      # (try_end), #End Range
       
       
       (try_begin),
