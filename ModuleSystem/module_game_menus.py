@@ -5214,23 +5214,23 @@ game_menus = [
           (eq,"$cant_leave_encounter", 1),
 		  (eq, "$cheat_mode", 1),
           ],"DEBUG: avoid this battle.",[ (leave_encounter),(change_screen_return)]),
- ] for ct in range(cheat_switch)]) + (is_a_wb_menu==1 and [("encounter_attack_bearform",[
+
           # Arsakes: BEAR shapeshift option
+ ] for ct in range(cheat_switch)]) + (is_a_wb_menu==1 and [
+          ("encounter_attack_bearform",[
           (this_or_next|eq, 		"$encountered_party_friendly", 0),
-		  (this_or_next|is_between, "$g_encountered_party_template", "pt_wild_troll",
-                      "pt_looters"),
+		  (this_or_next|is_between, "$g_encountered_party_template", "pt_wild_troll", "pt_looters"),
 		  (this_or_next|eq,"$g_encountered_party_template", "pt_ring_hunters"),
 		  (this_or_next|eq, "$g_encountered_party", "$qst_raider_party_1"),
 		  (this_or_next|eq, "$g_encountered_party", "$qst_raider_party_2"),
 		  (this_or_next|eq, "$g_encountered_party", "$qst_raider_party_3"),
-                  (eq, "$g_encountered_party", "$qst_reinforcement_party"),
-                  (this_or_next|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
-                  (eq, "$cheat_mode", 1),(eq, cheat_switch, 1),
+          (eq, "$g_encountered_party", "$qst_reinforcement_party"),
+          (this_or_next|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
+          #(eq, "$cheat_mode", 1),(eq, cheat_switch, 1),
           ],
          "{reg21?Leap_into_battle_in_bear_form:Turn_skin_and_face_them}.",[
                         (call_script, "script_cf_select_bear_form"),
                         (call_script,"script_start_current_battle"),
-
       ]),] or []) + [
 
       ("encounter_leave",[
@@ -6762,8 +6762,9 @@ game_menus = [
       	],
       	 "Use influence to command your allies in the field.", [
       		(jump_to_menu, "mnu_player_control_allies_join"),
-      ]),] + (is_a_wb_menu==1 and [("join_attack_bearform",[
+
           # BEAR SHAPESHIFT OPTION
+      ]),] + (is_a_wb_menu==1 and [("join_attack_bearform",[
           (this_or_next|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
           (eq, "$cheat_mode", 1),
         ],
