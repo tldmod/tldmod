@@ -1342,11 +1342,10 @@ morale_scripts = [
     #(val_div, ":leadership_enemies", 2), #tweakable
 	(val_add,"$enemies_coh",":leadership_enemies"),
 
-    #party morale (allies only)
+    #party morale (allies only) - get average of party morale and base coherence
     (party_get_morale, ":party_morale", p_main_party),
-    (val_add, ":party_morale", 20), #add a bit of leeway, tweakable
-    (val_mul, "$allies_coh", ":party_morale"),
-    (val_div, "$allies_coh", 100),
+    (val_add, "$allies_coh", ":party_morale"),
+    (val_div, "$allies_coh", 2),
 
     #coherence modifier (battle events, normalized over time)
     (val_add, "$allies_coh", "$allies_coh_modifier"),

@@ -1705,7 +1705,12 @@ game_menus = [
     (try_end),
     (str_store_string, s1, "@Current party morale is {reg5}.^Current party morale modifiers are:^^Base morale:  +50^Party size: {s2}{reg1}^Leadership: {s3}{reg2}^Food variety: {s4}{reg3}{s5}^Special items: {s6}{reg6}^Recent events: {s7}{reg4}^TOTAL:  {reg5}"),
     ],
-    [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports")])]
+    
+    [
+    ("cheat_increase_morale",[(eq,"$cheat_mode",1)],"Cheat: Increase Morale",[(call_script, "script_change_player_party_morale", 10),(jump_to_menu, "mnu_morale_report")]),    
+    ("continue",[],"Continue...",[(jump_to_menu, "mnu_reports")])
+    ],
+    
  ),
 ( "faction_orders",0,
    "{s9}", "none",
@@ -2295,6 +2300,7 @@ game_menus = [
          (troop_add_item, "trp_player", "itm_cram"),
 		 (assign, "$g_camp_mode", 1),
 		 (assign, "$g_fast_mode", 1),
+         (call_script, "script_change_player_party_morale", 100),
          (assign, "$g_player_icon_state", pis_camping),
          (rest_for_hours_interactive, 24 * 30, 60), #30 day rest while not attackable with 40x speed #kham x 60
          (change_screen_return),
