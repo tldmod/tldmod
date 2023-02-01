@@ -2092,7 +2092,7 @@ mission_templates = [ # not used in game
 			(add_reinforcements_to_entry,0,10),
 			(val_add,"$defender_reinforcement_stage",1),
             
-            #temporary morale boost
+            #temporary coherence boost
             (ge, "$tld_option_morale", 1),
             (store_sub, ":morale_effect", 10, "$defender_reinforcement_stage"),
             (val_mul, ":morale_effect", 2),
@@ -2103,7 +2103,17 @@ mission_templates = [ # not used in game
                 (val_add, "$enemies_coh_modifier", ":morale_effect"),
             (else_try), 
                 (val_add, "$allies_coh_modifier", ":morale_effect"),
-            (try_end)]),
+            (try_end),
+
+            (try_begin), #if coherence has reached 0, stop reinforcements
+                (teams_are_enemies, 0, ":player_team"),
+                (lt, "$enemies_coh", 1),
+                (assign,"$defender_reinforcement_stage",20),
+            (else_try), 
+                (lt, "$allies_coh", 1),
+                (assign,"$defender_reinforcement_stage",20),
+            (try_end), 
+            ]),
             
 	(1, 0, 5, [
 			(lt,"$attacker_reinforcement_stage",8),
@@ -2115,7 +2125,7 @@ mission_templates = [ # not used in game
 			(add_reinforcements_to_entry,3,10),
 			(val_add,"$attacker_reinforcement_stage",1),
             
-            #temporary morale boost
+            #temporary coherence boost
             (ge, "$tld_option_morale", 1),
             (store_sub, ":morale_effect", 10, "$defender_reinforcement_stage"),
             (val_mul, ":morale_effect", 2),
@@ -2126,7 +2136,17 @@ mission_templates = [ # not used in game
                 (val_add, "$enemies_coh_modifier", ":morale_effect"),
             (else_try), 
                 (val_add, "$allies_coh_modifier", ":morale_effect"),
-            (try_end),]),
+            (try_end),
+            
+            (try_begin), #if coherence has reached 0, stop reinforcements
+                (teams_are_enemies, 0, ":player_team"),
+                (lt, "$enemies_coh", 1),
+                (assign,"$attacker_reinforcement_stage",20),
+            (else_try), 
+                (lt, "$allies_coh", 1),
+                (assign,"$attacker_reinforcement_stage",20),
+            (try_end),              
+            ]),
   
   #(0,0,0, [(key_clicked, key_b)],[(display_message, "@Mordor Cloud added"),(call_script, "script_set_mordor_cloud_scene_prop")]),
 
