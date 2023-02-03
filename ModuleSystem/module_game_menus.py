@@ -193,6 +193,8 @@ game_menus = [
 	  ("change_tld_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options")]),
 	  ]) + [
 
+      ("see_info_pages",[],"TLD game concepts.",[(change_screen_notes, 5, 5),]),
+
 	  ("spacer",[],"_",[]),
 	]+concatenate_scripts([[
       ("cheat00",[(eq, cheat_switch, 1),(troop_get_upgrade_troop,":t","$player_current_troop_type",0),(gt,":t",0),(str_store_troop_name,s21,":t"),
@@ -2291,8 +2293,8 @@ game_menus = [
     (call_script, "script_increase_rank", "$ambient_faction", 100),
     (faction_get_slot, reg0, "$ambient_faction", slot_faction_rank),
     (faction_get_slot, reg1, "$ambient_faction", slot_faction_influence),
-    (val_add, reg1, 100),
-    (faction_set_slot, "$ambient_faction", slot_faction_influence, reg1),
+    (val_sub, reg1, 100),
+    (faction_set_slot, "$ambient_faction", slot_faction_influence, 0),
     (str_store_faction_name, s1, "$ambient_faction"),
     (display_message, "@{s1} rank points increased to {reg0}, influence to {reg1}!", 0x30FFC8),
    ]),
