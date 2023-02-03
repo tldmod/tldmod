@@ -178,8 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|Kümmere dich gut um deinen neuen g
 dlga_player_hire_troop:close_window.1|Ich brauche etwas Übung.
 dlga_player_hire_troop:tld_sell_prisoners|Ich bringe Euch einige Gefangene.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Lass uns diesen jämmerlichen Abschaum ansehen.
-; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
-; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
+dlga_player_hire_troop:tld_sell_prisoners_all|Nimm all Gefangenen, die ich dabei habe.
+dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Gut, ich werde sie alle in die Verließe führen lassen.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Ich will die Gefängnisberichte sehen...
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Ihr habt Euch umentschieden, ja?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Ich werde sicherstellen, dass sie nicht aus unseren Verliesen entkommen.
@@ -308,7 +308,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Ja, er gehört Euch.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Ich fürchte, ich habe andere Pläne mit ihm.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Hervorragend! Ich werde meine Männer senden, um ihn schnellstmöglich in unser Verlies zu bringen. Das wird unserer Sache gewiss helfen.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Zu schade, er wäre sehr wertvoll für uns, {playername}.
-; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
+dlga_tld_intro_1:lord_pretalk|Kriegs-Tutorial:^^    - Fraktionen werden nur Belagerungen beginnen, wenn sie stark genug sind.^    - Die meisten Orte und Lager können erst dann belagert werden, wenn ihre Fraktion schon geschwächt ist. Die Hauptstädte werden meist zuletzt belagert.^    - Wenn eine Fraktion ihre Hauptstadt verliert, ist sie besiegt.^    - Fraktionen gewinnen Stärke durch Siege im Feld oder durch das Halten von Ortschaften.^    - Fraktionen verlieren Stärke durch Niederlagen im Feld oder durch das Verlieren von Ortschaften.^    - Einige Quests oder Vorfälle beeinflussen die Fraktionsstärke.^    - Du kannst die aktuelle Stärke der Fraktionen im 'Reporte'-Menü vergleichen.^    - Siehe auch die Infoseiten für mehr TLD-Leitfäden.
 dlga_lord_start:lord_pretalk|Ah, willkommen, {s24}.^ Ihr solltet bereits wissen, dass {s12}. Eure Pflicht ist, uns in diesem Kampf zu unterstützen, {playername}. Wenn Ihr Euch meines Vertrauens würdig zeigt, [Stufe {reg1}], werde ich Euch erlauben, diese Truhe dort zur Aufbewahrung Eurer Gegenstände zu verwenden.
 dlga_lord_start:lord_talk|Was ist?
 dlga_lord_pretalk:lord_talk|Sonst noch etwas?
@@ -611,12 +611,12 @@ dlga_lord_talk:lord_leave_prison|Ich muss nun gehen.
 dlga_lord_talk:lord_leave|Diese kleine Unterhaltung ist nun vorüber. Ich gehe nun.
 dlga_lord_talk:lord_leave.1|Ich bitte, mich entfernen zu dürfen.
 dlga_lord_leave_prison:close_window|Wir werden uns wiedersehen.
-; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
-; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
-; dlga_lord_offer_troops:close_window.1|I fear I cannot accept them at this time.
-; dlga_lord_leave:lord_offer_item|{s23} {s24}
-; dlga_lord_offer_item:close_window|Thank you, I shall see  that it is put to good use.
-; dlga_lord_offer_item:close_window.1|I'm afraid I must decline.
+dlga_lord_leave:lord_offer_troops|{s23} {s24} Ich habe {reg41} {s25}, {reg42?die bereit sind:der bereit ist}, sich euch anzuschließen.
+dlga_lord_offer_troops:close_window|Habt Dank, {reg42?ich will Sie gerne in meine Reihen aufnehmen:aber ich fürchte, ich habe keinen Platz für sie {reg41}}.
+dlga_lord_offer_troops:close_window.1|Ich fürchte, ich kann sie gerade nicht aufnehmen.
+dlga_lord_leave:lord_offer_item|{s23} {s24}
+dlga_lord_offer_item:close_window|Habt Dank, ich kann es gut gebrauchen.
+dlga_lord_offer_item:close_window.1|Ich fürchte ich muss ablehnen.
 dlga_lord_leave:close_window|Wir werden sehen, {playername}.
 dlga_lord_leave:close_window.1|Natürlich, {playername}. Lebt wohl.
 dlga_lord_leave:close_window.2|Ich wünsche Euch gute Reisen, {playername}.
@@ -927,9 +927,9 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|Ich brauche jemanden, 
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Gut, ich werde die Orks jagen.
 dlga_merchant_quest_taken_bandits:close_window|Werdet Ihr? Ich bin sehr froh, das zu hören. Viel Glück!
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Verzeihung, aber ich habe gerade keine Zeit dafür.
-; dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
-; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
-; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
+dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Allerdings! Eine Gruppe Räuber macht die Gegend unsicher und ich weiß nicht, wie ich mit ihnen fertig werden soll. Sie überfallen und berauben betrunkene Rekruten im Schutze der Nacht und verschwinden dann schnell wie der Blitz, wenn die Wachen endlich auftauchen. Wir haben keinen einzigen von ihnen fangen können. Sie greifen nur einzelne Leute an und zeigen sich nicht, wenn eine Gruppe in der Nähe ist. Ich brauche jemanden, der es mit diesen Räubern allein aufnimmt und sie besiegt. Das scheint der einzige Weg zu sein, sie loszuwerden. Schafft Ihr das?
+dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|Eine Gruppe Räuber macht die Gegend unsicher und ich weiß nicht, wie ich mit ihnen fertig werden soll. Sie überfallen und berauben betrunkene Rekruten im Schutze der Nacht und verschwinden dann schnell wie der Blitz, wenn die Wachen endlich auftauchen. Wir haben keinen einzigen von ihnen fangen können. Sie greifen nur einzelne Leute an und zeigen sich nicht, wenn eine Gruppe in der Nähe ist. Ich brauche jemanden, der es mit diesen Räubern allein aufnimmt und sie besiegt. Das scheint der einzige Weg zu sein, sie loszuwerden. Schafft Ihr das?
+dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Räuber jagen? Aber sicher!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Nein, das kümmert mich nicht.
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|Das nimmt mir eine Bürde von den Schultern, {playername}. Ihr könnt eine gute Belohnung erwarten, wenn Ihr erfolgreich seid. Lasst Euch nicht umbringen, ja?
 dlga_merchant_quest_requested:merchant_quest_brief.9|Der Befehlshaber sucht nach einem einfallsreichen Krieger, der eine Gruppe {s12} nach {s13} bringt.
@@ -1040,7 +1040,7 @@ dlga_routed_allies_talk:close_window.1|Noch nicht, Soldat.
 dlga_start:routed_allies_talk_troll|^^KNURR!^^
 dlga_routed_allies_talk_troll:close_window|[Lass sie sich dir wieder anschließen]
 dlga_routed_allies_talk_troll:close_window.1|[Verlassen]
-; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+dlga_start:party_encounter_friend|Wir folgen Eurem Befehl, {s24}.
 dlga_start:party_encounter_friend.1|{s4} Was führt Euch her, {s24}?
 dlga_party_reinforce:party_reinforce_end|Wir haben bis jetzt noch nicht viele Regungen des Feindes bemerkt. Vielleicht später, danke.
 dlga_party_reinforce:party_reinforce_end.1|Wir brauchen nicht noch mehr Soldaten, habt Dank.

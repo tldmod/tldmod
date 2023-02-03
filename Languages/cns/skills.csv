@@ -1,7 +1,7 @@
 skl_trade|交易
 skl_trade_desc|你能够更好地与铁匠和物资官合作，让他们提供给好的装备。（队伍技能）
 skl_leadership|统御
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
+skl_leadership_desc|每点增加队伍人数上限5，提高队伍士气与战场凝聚力，同时能够让更多且更优秀的新兵愿意应征进入你的麾下。（领袖技能）
 skl_prisoner_management|俘虏管理
 skl_prisoner_management_desc|每点增加俘虏上限%d。(领袖技能)
 skl_persuasion|自然力

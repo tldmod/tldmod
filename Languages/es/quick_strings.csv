@@ -250,12 +250,12 @@ qstr_Lead_more_Orcs|Liderar a más orcos
 qstr_+{reg1}_to_Party_Mor|+{reg1} a la Moral del Grupo
 qstr_Range:_{reg55}|Distancia: {reg55}
 qstr_Dwarves|Enanos
-; qstr_Humans_and_Elves|Humans and Elves
-; qstr_Orcs|Orcs
-; qstr_Uruks_and_Uruk_Hai|Uruks and Uruk-Hai
-; qstr_Humans_Uruks_and_Uru|Humans, Uruks, and Uruk-Hai
-; qstr_Humans|Humans
-; qstr_This_item_can_be_use|This item can be used by {s2}
+qstr_Humans_and_Elves|Humanos y Elfos
+qstr_Orcs|Orcos
+qstr_Uruks_and_Uruk_Hai|Uruks y Uruk-Hai
+qstr_Humans_Uruks_and_Uru|Humanos, Uruks, y Uruk-Hai
+qstr_Humans|Humanos
+qstr_This_item_can_be_use|Este objeto puede ser usado por {s2}
 qstr_Do_you_want_to_disem|¿Quieres desembarcar?
 qstr_Move_here|Mover aquí
 qstr_View_notes|Ver Notas
@@ -635,7 +635,7 @@ qstr_support|apoyo
 qstr_bodyguard|guardaespaldas
 qstr_undetermined_type_of|tipo indeterminado
 qstr_{s1}_has_fled_the_ba|¡{s1} ha huido de la batalla!
-; qstr_Your_side_is_at_{reg|Your side is at {reg1}% cohesion ({reg3}% recent events), the enemy at {reg2}%!
+qstr_Your_side_is_at_{reg|¡Tus tropas tienen un {reg1}% de cohesión ({reg3}% por hechos recientes), los enemigos tienen un {reg2}%!
 qstr_Morale_of_your_troop|¡La moral de tus tropas flaquea!
 qstr_Morale_of_your_enemi|¡La moral de tus enemigos flaquea!
 qstr_Your_enemies_flee_in|¡Los enemigos huyen aterrorizados!
@@ -744,7 +744,7 @@ qstr_Cannot_leave_now.|No puedes abandonar ahora.
 qstr_You_have_found_the_l|Has encontrado al herrero local...
 qstr_You_have_found_the_lo|Has encontrado a la autoridad local...
 qstr_You_have_found_the_loc|Has encontrado el almacén local...
-; qstr_You_have_found_the_c|You have found the captain of the garrison.
+qstr_You_have_found_the_c|Has encontrado al capitán de la guarnición.
 qstr_You_look_through_Hen|Miras a través de la cortina de agua de Henneth Annûn, la Ventana del Sol Poniente. La hermosa vista restaura tu fe en el Oeste y enlos Poderes de más allá.
 qstr__cancelled_the_{reg1|(cancelados los {reg10} pts. de exp. ganados por matar prisioneros)
 qstr_Forming_ranks.|Formando filas.
@@ -776,7 +776,7 @@ qstr_{s11}_is_{s10}_in_th|¡{s11} cae {s10} en el ataque del Nazgûl!
 qstr_Received_{reg66}_dam|Recibes {reg66} de daño.
 qstr_You_yell_for_your_ho|Llamas a tu caballo.
 qstr_You_do_not_need_to_r|Aún no necesitas arengar a tus tropas.
-; qstr_You_rally_{reg10}_tr|You rally {reg10} troops!
+qstr_You_rally_{reg10}_tr|¡Arengas a {reg10} tropas!
 qstr_{s5}_rallies_{reg65?|¡{s5} arenga a {reg65?sus:sus} tropas!
 qstr_You_have_killed_{reg|¡Has matado {reg1} enemigos en esta batalla!
 qstr_Your_bravery_inspire|¡Tu valentía inspira a tus tropas!
@@ -1521,24 +1521,24 @@ qstr_We_need_to_grind_dow|Tenemos que aplastar a nuestros cobardes enemigos, {pl
 qstr_{s9}_asked_you_to_el|{s9} te ha pedido que acabes con {reg1} grupos de {s13}.
 qstr_{s9}_asked_you_to_fr|{s9} te ha pedido que liberes a {s13} de la amenaza de un Troll furioso en sus cercanías.
 qstr_{reg1}_{s16}_joined_|{reg1} {s16} se han unido a tu grupo.
-; qstr_Wait_{playername}._I|Wait, {playername}. I don't say this often, but you are an exceptionally reliable servant.
-; qstr_Halt_{playername}._I|Halt, {playername}. I once thought you little more than a snaga, but you are proving to be a useful servant.
-; qstr_Take_these_warriors_|Take these warriors, that your horde might continue to serve me.
-; qstr_One_last_thing_{play|One last thing, {playername}. In a land filled with backstabbers and rivals, you have always been a true ally.
-; qstr_Wait_{playername}._W|Wait, {playername}. When we met I sensed in you a rival, but I see now I was mistaken.
-; qstr_Take_these_warriors_a|Take these warriors, and use them to strike down our foes.
-; qstr_Before_you_leave_{pl|Before you leave, {playername}, know that you have always been a good friend to me.
-; qstr_Wait_{playername}._I_|Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend.
-; qstr_Allow_me_to_repay_yo|Allow me to repay you by giving you some troops.
-; qstr_Wait_{playername}._C|Wait, {playername}. Capable servants like you and your warriors deserve the best equipment.
-; qstr_Halt_{playername}._It|Halt, {playername}. It's shameful to have my servants using such inferior equipment.
-; qstr_Take_this_{s22}_and_|Take this {s22} and let it aid your rampage.
-; qstr_Before_you_go_{playe|Before you go, {playername}. Great warriors like you and your companions deserve only the best weapons, armor, and mounts.
-; qstr_Wait_{playername}._Y|Wait, {playername}. Your army has done well, but I think you'd do better with superior equipment.
-; qstr_Take_this_{s22}._I_h|Take this {s22}. I have no need of it.
-; qstr_Just_a_moment_{playe|Just a moment, {playername}. Heroes like you and your companions are worthy of the finest weapons, armor, and horses.
-; qstr_Wait_{playername}._Yo|Wait, {playername}. You have been an able commander in the war effort. I think it's time you had some better equipment.
-; qstr_Accept_this_{s22}_ma|Accept this {s22}, may it aid you and your companions.
+qstr_Wait_{playername}._I|Espera, {playername}. No digo esto a menudo, pero eres {un/una} sirviente excepcionalmente fiable.
+qstr_Halt_{playername}._I|Alto ahí, {playername}. Antes pensaba que era poco más que un snaga, pero estás demostrando ser {un/una} sirviente útil.
+qstr_Take_these_warriors_|Toma estos guerreros, para que tu horda continúe sirviéndome.
+qstr_One_last_thing_{play|Una cosa más, {playername}. En una tierra llena de traidores y rivales, tú siempre has sido {un verdadero aliado/una verdadera aliada}.
+qstr_Wait_{playername}._W|Espera, {playername}. Cuando nos conocimos, sentí que serías mi rival, pero ahora veo que me equivocaba.
+qstr_Take_these_warriors_a|Toma estos guerreros, y úsalos para derrotar a nuestros enemigos.
+qstr_Before_you_leave_{pl|Antes de irte, {playername}, debes saber que siempre has sido para mí {un buen amigo/una buena amiga}.
+qstr_Wait_{playername}._I_|Espera, {playername}. No te conozco ni la mitad de bien de lo que me gustaría, pero hasta ahora has sido {un buen amigo/una buena amiga}.
+qstr_Allow_me_to_repay_yo|Permíteme recompensarte dándote algunas tropas.
+qstr_Wait_{playername}._C|Espera, {playername}. Sirvientes capaces como tú y tus guerreros merecen el mejor equipamiento.
+qstr_Halt_{playername}._It|Alto ahí, {playername}. Es vergonzoso que mis sirvientes vayan por ahí tan mal equipados.
+qstr_Take_this_{s22}_and_|Toma este {s22} para que te ayude en tus correrías
+qstr_Before_you_go_{playe|Antes de que te vayas, {playername}. Grandes guerreros como tú y tus compañeros merecen solo las mejores armas, armaduras y monturas.
+qstr_Wait_{playername}._Y|Espera, {playername}. Tu ejército ha hecho un buen trabajo, pero creo que lo haréis todavía mejor con un equipamiento superior.
+qstr_Take_this_{s22}._I_h|Toma mi {s22}. No lo necesito.
+qstr_Just_a_moment_{playe|Solo un momento, {playername}. Héroes como tú y tus compañeros merecen solo las mejores armas, armaduras y monturas.
+qstr_Wait_{playername}._Yo|Espera, {playername}. Tus habilidades de mando han sido muy útiles para el esfuerzo de guerra. Creo que es hora de que tengas un equipamiento mejor.
+qstr_Accept_this_{s22}_ma|Acepta este {s22}; que os sirva bien a ti y a tus compañeros.
 qstr_the_Dwarves_so_that_|los Enanos, para que, si pasas por Erebor o las Colinas de Hierro, puedas intentar hacerte con una de esas renombradas armas enanas
 qstr_Gondor_so_that_if_yo|Gondor, para que, si pasas por sus tierras, puedas intentar comprar una de sus renombradas armaduras
 qstr_Rohan_so_that_if_you|Rohan, para que, si pasas por sus tierras, puedas intentar comprar uno de sus renombrados caballos
@@ -1649,7 +1649,7 @@ qstr_The_{s9}_of_{s3}_ask|El {s9} de {s3} te ha pedido que le lleves {reg5} unid
 qstr_The_{s9}_of_{s3}_aske|El {s9} de {s3} te ha pedido que le lleves {reg5} unidades de {s6} en {reg0} días.
 qstr_Escort_the_supply_tr|Escolta una Caravana de Suministros a {s8}
 qstr_The_{s9}_of_{s4}_aske|El {s9} de {s4} te ha pedido que acabes con los molestos trasgos a las afueras de la ciudad.
-; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of bandits making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
+qstr_The_{s9}_of_{s14}_ha|El {s9} de {s14} te ha pedido que te ocupes de un grupo de bandidos que están causando estragos en {s14}. Sólo salen de noche y atacan a personas solas en la calle.
 qstr_refugees|refugiados
 qstr_slaves|esclavos
 qstr_{s1}_Refugees|Refugiados de {s1}

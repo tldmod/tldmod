@@ -1688,10 +1688,10 @@ qstr_Then_let_us_go._Stay|Dann lasst uns aufbrechen. Bleibt in der Nähe, Ihr we
 qstr_There_will_be_blood_|Es wird Blut fließen, das ist sicher. Bleibt in der Nähe, oder ihr werdet es verpassen.
 qstr_Goodbye_friends.|Lebt wohl, Freunde.
 qstr_See_you_later_if_you|Ich sehe Euch später, sofern Ihr nicht getötet wurdet.
-; qstr_I_don_t_need_your_he|I don't need your help any longer. Go home.
-; qstr_I_don_t_have_any_nee|I don't have any need for you. Get lost.
-; qstr_We_will_return_to_ou|We will return to our previous task. Goodbye.
-; qstr_Lads_we_re_going_hom|Lads, we're going home!
+qstr_I_don_t_need_your_he|Ich brauche eure Hilfe gerade nicht. Geht heim.
+qstr_I_don_t_have_any_nee|Ich kann euch gerade nicht gebrauchen. Verzieht euch.
+qstr_We_will_return_to_ou|Wir werden uns wieder unserem ursprünglichen Befehl zuwenden. Lebt wohl.
+qstr_Lads_we_re_going_hom|Jungs, wir gehen nach hause!
 qstr__^Oh_and_take_back_t|^Oh, und nehmt die zurück, die nicht zu unseren Leuten gehören.
 qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Diese tapferen:Dieser tapfere} {reg28?Soldaten werden:Soldat wird} uns bei der Verteidigung unserer Heimat sicher helfen.{s32}{s23}^^[{reg14} Ressourcenpunte von {s14} verdient]
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Diese:Dieser} nützliche {reg28?Truppe:Soldat} wird uns helfen, mehr Verwüstung anzurichten.{s32}^{s23}^^[{reg14} Ressourcenpunkte von {s14} verdient]
