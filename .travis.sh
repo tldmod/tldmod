@@ -189,18 +189,25 @@ _fold_start_ '[Final tree view]'
 
 _fold_final_
 
-_fold_start_ '[Uploading finished TLD packages]'
+_fold_start_ '[Uploading finished TLD packages to Bitbucket]'
     curl --fail -LOJ https://bitbucket.org/Swyter/bitbucket-curl-upload-to-repo-downloads/raw/default/upload-to-bitbucket.sh && chmod +x ./upload-to-bitbucket.sh
 
     sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfile"   | tee    bitbucket.log
     sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfilewb" | tee -a bitbucket.log
 
-
     # fail the build if things didn't go as expected
     grep --no-messages 'error' bitbucket.log && exit 1;
     
 _fold_final_
-    
+
+_fold_start_ '[Uploading finished TLD packages to GitHub]'
+    owner="tldmod"; repo="tldmod"; release_id="24712210"
+    ghasset="https://uploads.github.com/repos/$owner/$repo/releases/$release_id/assets"
+
+    curl --fail --location --data-binary @"$bbfile"   -H "Authorization: token $ghtoken" -H "Content-Type: application/octet-stream" "$ghasset?name=$bbfile"
+    curl --fail --location --data-binary @"$bbfilewb" -H "Authorization: token $ghtoken" -H "Content-Type: application/octet-stream" "$ghasset?name=$bbfilewb"
+_fold_final_
+
 _fold_start_ '[Archiving packages in the Wayback Machine]'
     # wait a bit for the servers to flush their caches
     sleep 4
