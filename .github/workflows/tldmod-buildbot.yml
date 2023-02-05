@@ -49,6 +49,7 @@ jobs:
       env:
         ghuser:   ${{ secrets.GHUSER   }}
         ghtoken:  ${{ secrets.GHTOKEN  }}
+        ghauth:   ${{ secrets.GHAUTH   }}
         
         bbuser:   ${{ secrets.BBUSER   }}
         bbpass:   ${{ secrets.BBPASS   }}

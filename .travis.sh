@@ -201,11 +201,11 @@ _fold_start_ '[Uploading finished TLD packages to Bitbucket]'
 _fold_final_
 
 _fold_start_ '[Uploading finished TLD packages to GitHub]'
-    owner="tldmod"; repo="tldmod"; release_id="24712210"
+    owner="tldmod"; repo="tldmod-downloads"; release_id="24712210"
     ghasset="https://uploads.github.com/repos/$owner/$repo/releases/$release_id/assets"
 
-    curl --fail --location --data-binary @"$bbfile"   -H "Authorization: token $ghtoken" -H "Content-Type: application/octet-stream" "$ghasset?name=$bbfile"
-    curl --fail --location --data-binary @"$bbfilewb" -H "Authorization: token $ghtoken" -H "Content-Type: application/octet-stream" "$ghasset?name=$bbfilewb"
+    curl --fail --location --data-binary @"$bbfile"   -H "Authorization: token $ghauth" -H "Content-Type: application/octet-stream" "$ghasset?name=$bbfile"
+    curl --fail --location --data-binary @"$bbfilewb" -H "Authorization: token $ghauth" -H "Content-Type: application/octet-stream" "$ghasset?name=$bbfilewb"
 _fold_final_
 
 _fold_start_ '[Archiving packages in the Wayback Machine]'
