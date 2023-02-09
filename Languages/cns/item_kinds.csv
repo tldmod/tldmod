@@ -93,6 +93,7 @@ itm_hood_black|黑兜帽
 itm_hood_green|绿色兜帽
 itm_hood_grey|灰色兜帽
 itm_hood_leather|皮革兜帽
+; itm_mail_coif|Mail Coif
 itm_axe_a|北方人斧
 itm_axe_b|北方人长毛斧
 itm_axe_c|北方人斧
@@ -164,7 +165,6 @@ itm_riv_foot_scale|瑞文戴尔鳞甲
 itm_riv_surcoat|瑞文戴尔外套
 itm_riv_knight|瑞文戴尔骑士甲
 itm_riv_armor_h_archer|瑞文戴尔铠甲
-itm_riv_armor_leader|瑞文戴尔首领甲
 itm_riv_boots|瑞文戴尔靴
 itm_gon_footman|刚铎链甲衫
 itm_gon_jerkin|刚铎短上衣
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|刚铎带旗骑枪
 itm_amroth_lance_banner|多尔安罗斯带旗骑枪
 itm_rohan_lance_banner_sun|洛汗烈日旗骑枪
 itm_rohan_lance_banner_horse|洛汗骠骑旗骑枪
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|一碗奇怪的水
 itm_map|中土世界地图
 itm_athelas_reward|干阿西拉斯草
@@ -781,7 +782,6 @@ itm_rohan_armor_th|洛汗皇家盔甲
 itm_wilderness_cowl|Hunter Cowl
 itm_prisoner_coll_chain|俘虏手链
 itm_witchking_helmet|法师面具盔
-itm_lorien_royal_armor|洛里昂皇家盔甲
 itm_feet_chains|脚链
 itm_feet_chains_dwarf|脚链
 itm_spider|蜘蛛

@@ -1513,7 +1513,7 @@ qstr_{s9}_has_asked_you_to|{s9} Ti ha chiesto di salvare {reg1} prigionieri.
 qstr_We_have_reports_that_a|Abbiamo rapporti di gruppi di nemici in probabile adunata a {s13}. Ovviamente è un grave problema per me perché non so né quanti uomini abbia il nemico, né se i miei uomini saranno pronti per scontrarsi con loro sul campo di battaglia. Voglio che ti avvicini a {s13} e raccogli quante più informazioni possibili.
 qstr_My_spies_tell_me_of_|Le mie spie mi hanno allertato di un grande gruppo di guerrieri raggruppati presso {s13}. Non dovrebbero essere un problema per noi e i nostri servi, ma non farebbe male sapere quanti sono. Voglio che ti avvicini abbastanza alla zona di {s13}, e scopri quanto più riesci. 
 qstr_{s9}_asked_you_to_sco|{s9} ti ha chiesto di perlustrare {s13}.
-qstr_We_have_reports_of_s|Abbiamo notizie di attività nemiche vicino a {s13}. Finora i nostri esploratori hanno fallito nell' avvicinarsi a sufficienza al nemico per vederne i movimenti. Voglio che tu componga una squadra di esploratori, che ti avvicini abbastanza a {s13}, e che mandi in azione gli esploratori. Ti darò anche alcune reclute, ma non dovresti mandarle da sole.
+qstr_We_have_reports_of_s|Abbiamo notizie di attività nemiche vicino a {s13}. Finora i nostri esploratori hanno fallito nell'avvicinarsi a sufficienza al nemico per vederne i movimenti. Voglio che tu componga una squadra di esploratori, che vi avviciniate abbastanza a {s13}, mandandoli quindi in azione. Ti darò anche alcune reclute, ma non dovresti inviarle da sole.
 qstr_My_spies_tell_me_the|Le mie spie mi hanno detto che il nemico vuole fare qualcosa a {s13}. I nostri esploratori hanno vigliaccamente fallito nell' esplorare le zone nemiche. Voglio che tu recluti una tua squadra di esploratori, ti avvicini abbastanza a {s13}, e li lasci li. Pero', assicurati che non scappino ! Ti fornirò io queste reclute, non ne sentiremo la mancanza.
 qstr_{s9}_asked_you_to_di|{s9} ti ha chiesto di inviare una pattuglia d'esplorazione vicino a {s13}.^Procurati {reg1} soldati di {s15}, di cui almeno uno sia {s14}, avvicinati a {s13} e parla a {s14} per inviare la pattuglia.
 qstr_We_need_to_take_the_|Dobbiamo portare la battaglia sul campo nemico, {playername}. In questo momento possiamo riuscirci colpendo le loro pattuglie e i loro messaggeri. Voglio che tu elimini {reg1} compagnie di {s13}, tutto questo ci permetterà di riprendere l'iniziativa.
@@ -1576,35 +1576,35 @@ qstr_Stars_sail_through_t|Le stelle navigano attraverso mari celesti, gli uomini
 qstr__RESOURCE_POINT_TUTO|(GUIDA AI PUNTI RISORSA)^^ I Punti Risorsa che possono essere usati per acquistare dal popolo di Lorien non sono gli stessi che hai guadagnato relativi alla tua fazione, ma quelli che guadagnerai nel contee del Lothlorien. ^^Controlla la sezione RAPPORTI per maggiori informazioni.
 qstr__RESOURCE_POINT_TUTOR|(GUIDA AI PUNTI RISORSA)^^ I Punti Risorsa che puoi usare per fare acquisti dal popolo di Beorn non sono gli stessi che hai guadagnato nel Lothlorien, ma sono quelli che guadagnerai a nelle contee di Beorn. ^^Controlla la sezione RAPPORTI per maggiori informazioni.
 qstr_I_have_long_wished_t|Da tempo desideravo visitare gli amici dei boschi..
-qstr_What_form_shall_the_|Quale forma deve assumere il favore di Lorien..
+qstr_What_form_shall_the_|Quale forma assumerà il favore di Lorien...
 qstr_Our_bees_make_honey_|Le nostre api fanno miele e cera, i nostri allevamenti ci danno latte, burro e formaggio...
 qstr_I_have_long_wished_to|Da tempo desideravo andare in visita agli amici del bosco, assaggiare il vostro Pan di Via e ascoltare le vostre canzoni ! ^^Abbiamo portato i nostri spumeggianti vini dorati, i nostri tomi polverosi e gli antichi stendardi di cui andiamo orgogliosi, che ci ricordano la nostra valle dai ruscelli che cantano, ma sono curioso di conoscere le meraviglie uniche che si trovano nel Laurelindorenan.
-qstr_What_form_shall_the_f|Quale forma deve assumere il favore di Lorien ? Oro che muta in foglie con l'arrivo del mattino ? Bevande chiare prive di sapore e polveroso pane magico per i miei uomini ? ^^Vino rosso sangue, carne di cervo appena cacciato, armerie piene di lance affilate e di frecce accuminate ! Questa è l'ospitalità che preferisco.
+qstr_What_form_shall_the_f|Quale forma assumerà il favore di Lorien ? Oro che muta in foglie con l'arrivo del mattino ? Bevande chiare prive di sapore e polveroso pane magico per i miei uomini ? ^^Vino rosso sangue, carne di cervo appena cacciato, armerie piene di lance affilate e di frecce acuminate ! Questa è l'ospitalità che preferisco.
 qstr_Our_bees_make_honey_a|Le nostre api fanno il miele e la cera, i nostri allevamenti ci danno latte, burro e formaggio.^^ Il pane che facciamo da soli, un'ascia affilata che posso commerciare con i Nani quando passano da qui.^^ Di cos'altro posso avere bisogno, a parte un paio di mani forti ?
 qstr_If_fate_wills_it_I_s|Se il fato vorrà, tornerò nelle vostre terre ancora, e ne conoscerò tutti i segreti.
-qstr_If_I_ever_have_need_|Se mai avrò bisogno dell'aiuto che Lorien può offrire, verrò. Di qualsiasi utilità potrà essere.
+qstr_If_I_ever_have_need_|Se mai dovessi avere bisogno dell'aiuto che Lorien può offrire, verrò a chiederlo. Qualunque cosa possa servire.
 qstr__nod_and_say_nothing|(non dire niente)
 qstr_Oh_there_are_many_an|Oh, ve ne sono molti e ogni amico di Lorien merita questi doni ! ^^Che ci si trovi spalla a spalla ancora una volta sul campo di battaglia, o che tu sia agli ordini della nostra Signora o del suo seguito, il nostro popolo ricompenserà i tuoi servigi con tutto ciò di cui avrai bisogno - nuove armi, solide armature di maglia, frecce piumate e viveri per le tue truppe. ^^Chi lo sa, col tempo potresti divenire {un grande Signore/una grande Signora} di Lorien, una persona che può offrire consiglio ad altri, o chiedere favori.
-qstr_The_joys_of_the_Gold|Le gioie della Valle d'Oro sono morte e i veri amici di Lorien sono bevenuti a goderne.  ^^Dovremmo stare spalla a spalla sul campo di battaglia ancora una volta, oppure ci troveremo agli ordini della nostra Lady e dei suoi signori; il nostro popolo ti ricompenserà per il tuo sostegno con ogni cosa tu richieda - armi lucenti, vesti di maglia pesante, frecce letali e cibo nutriente per le tue truppe.^^Chissà, con il tempo potresti diventare Gran {Lord/Lady} di Lorien, una persona che potrebbe dare consiglio, o chiedere favori.
+qstr_The_joys_of_the_Gold|Le gioie della Valle d'Oro sono molte e un vero amico di Lorien è benvenuto a goderne. ^^Se dovessimo stare spalla a spalla sul campo di battaglia ancora una volta, o se dovessi eseguire gli ordini della nostra Lady e dei suoi signori; il nostro popolo ti ricompenserà per il tuo sostegno con ogni cosa tu richieda - armi lucenti, cotte di maglia resistenti, frecce letali e cibo nutriente per le tue truppe.^^Chissà, con il tempo potresti diventare Gran {Lord/Lady} di Lorien, una persona che potrebbe dare consiglio, o chiedere favori.
 qstr_Our_Golden_Valley_gi|La nostra Valle Dorata abbonda di doni e un amico di Lorien vi può attingere. ^^Dovremmo stare spalla a spalla sul campo di battaglia ancora una volta, o accorrere alla chiamata della nostra Lady e dei suoi signori; il nostro popolo compenserà il tuo appoggio con tutto ciò che puoi desiderare, mentre sei lontano da casa.
 qstr_I_shall_keep_that_in|Dovrò tenerlo a mente. ^^ Hantanyel, áva márië !
-qstr_That_may_be_so_some_|Così può essere, alcune strade del mondo sono contorte.^^ Boe i 'waen !
+qstr_That_may_be_so_some_|Potrebbe essere così, alcune strade del mondo sono contorte.^^ Boe i 'waen !
 qstr_I_seldom_wander_far_|Raramente mi allontano da casa. Andiamo via di qui, il più velocemente possibile. Ci potrebbero essere altri goblin che si aggirano da queste parti.
 qstr_Who_are_you?_A_mere_|Chi sei tu? Un semplice {s25} ? Non ho tempo per quelli della tua sorta ! Lasciami in pace ! {s2}
 qstr_What_do_you_want?|Che cosa vuoi ?
 qstr_Greetings_{playernam|Salute, {playername}. Cosa posso fare per te?
 qstr_What?_You_come_to_me|Cosa ? Vieni da me e non sai di cosa mi occupo ? Dai un'occhiata in giro.^^ Vedi del sangue ? Senti dei lamenti ? Senti il loro dolore ? Questo è ciò che faccio ! Rompo cose per renderle migliori! Se vieni da me, ferito e dolorante, posso farti sentire meglio !
-qstr_I_am_a_healer._Come_|Io guarisco. Vieni da me quando tu o i tuoi compagni sarete seriamente feriti, e io curerò le vostre ferite al meglio delle mie capacità.
+qstr_I_am_a_healer._Come_|Sono un guaritore. Vieni da me quando tu o i tuoi compagni siete gravemente feriti e io vi curerò al meglio delle mie capacità.
 qstr__Costs_500_Resource_|(Costo 500 Punti Risorsa, 5 Punti Influenza)
 qstr_Ha!_I_can_see_that!_|Ha ! Vedo ! Posso farlo, si.. A parte il tuo sangue, quello non è gratis! {s2}
-qstr_Yes_I_see_that._We_c|Si, lo vedo. Possiamo prenderci cura di te, si, ma avrò bisogno di mandare alcuni ingredienti. {s2}
+qstr_Yes_I_see_that._We_c|Sì, lo vedo. Posso fare qualcosa, ma avrò bisogno di procurarmi alcuni ingredienti. {s2}
 qstr__Costs_1000_Resource_|(Costo 1000 Punti Risorsa, 10 Punti Influenza)
 qstr_I_ll_have_my_worms_d|Avrò a disposizione i miei vermi a prendersi cura di te. Non sono i migliori, ma qualche volta fanno quel che devono. Dimmi quando li vuoi qui. {s2}
 qstr_I_ll_have_my_assista|I miei collaboratori che si stanno prendendo cura dei tuoi uomini. Stanno ancora imparando, quindi ti prego di avere pazienza con loro. Fammi sapere quando avrai bisogno di loro. {s2}
 qstr_Alright!_Worms!_Get_|Molto bene ! Vermi ! Aprite le orecchie e ascoltate !
 qstr_Let_us_begin._My_ass|Cominciamo. I miei assistenti si prenderanno cura di te e dei tuoi uomini.
 qstr_All_done!_Ha!_You_di|Tutto fatto ! Ha ! Non hai gridato molto, impressionante ! Ora va, lasciami.
-qstr_We_ve_done_what_We_c|Abbiamo fatto il possibile. Ora tu e i tuoi uomini avete bisogno di riposo.
+qstr_We_ve_done_what_We_c|Ho fatto il possibile. Ora tu e i tuoi uomini avete bisogno di riposo.
 qstr_Boss_the_lads_are_hu|Capo, i ragazzi hanno fame ! Facciamo sempre tutto il lavoro ma moriamo di fame !
 qstr_Master_the_lads_are_|Capo, i ragazzi hanno fame ! Non possiamo combattere così tanto a stomaco vuoto !
 qstr_Yes!_With_proper_fed|Si ! Con le pance piene, ti serviremo due volte meglio !

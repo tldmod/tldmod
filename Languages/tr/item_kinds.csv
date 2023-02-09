@@ -93,6 +93,7 @@ itm_hood_black|Siyah Başlık
 itm_hood_green|Yeşil Başlık
 itm_hood_grey|Gri Başlık
 itm_hood_leather|Deri Başlık
+; itm_mail_coif|Mail Coif
 itm_axe_a|Kuzeyli Baltası
 itm_axe_b|Kuzeyli Sakallı Baltası
 itm_axe_c|Kuzeyli Baltası
@@ -164,7 +165,6 @@ itm_riv_foot_scale|Ayrıkvadi Pullu zırh
 itm_riv_surcoat|Ayrıkvadi Cübbesi
 itm_riv_knight|Ayrıkvadi  Şövalye Zırhı
 itm_riv_armor_h_archer|Ayrıkvadi Zırhı
-itm_riv_armor_leader|Ayrıkvadi Lider Zırhı
 itm_riv_boots|Ayrıkvadi Çizmeleri
 itm_gon_footman|Gondor Örgü Zırhı
 itm_gon_jerkin|Gondor Deri Yelek
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|Gondor Sancak Mızragı
 itm_amroth_lance_banner|Dol Amroth Sancak Mızragı
 itm_rohan_lance_banner_sun|Rohan Güneş Sancak Mızragı
 itm_rohan_lance_banner_horse|Rohan At Sancak Mızragı
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Tuhaf Su Kabı
 itm_map|Orta Dünya'nınHaritaları
 itm_athelas_reward|Kurutulmuş Athelas Yaprakları
@@ -781,7 +782,6 @@ itm_rohan_armor_th|Rohan Kraliyet Zırhı
 itm_wilderness_cowl|Avcı Cüppesi
 itm_prisoner_coll_chain|Esir Zincirleri
 itm_witchking_helmet|Sihirbaz'ın Maskesi
-itm_lorien_royal_armor|Lorien Kraliyet Zırhı
 itm_feet_chains|Ayak Zincirleri
 itm_feet_chains_dwarf|Ayak Zincirleri
 itm_spider|Örümcek

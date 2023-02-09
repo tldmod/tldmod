@@ -93,6 +93,7 @@ itm_hood_black|Zwarte Kap
 itm_hood_green|Groene Kap
 itm_hood_grey|Grijze Kap
 itm_hood_leather|Leren Kap
+; itm_mail_coif|Mail Coif
 itm_axe_a|Nordman Bijl
 itm_axe_b|Nordman Gebaarde Bijl
 itm_axe_c|Nordman Bijl
@@ -164,7 +165,6 @@ itm_riv_spear|Rivendell Speer
 ; itm_riv_surcoat|Rivendell Surcoat
 ; itm_riv_knight|Rivendell Knightly Armour
 itm_riv_armor_h_archer|Rivendell Pantser
-itm_riv_armor_leader|Rivendell Leider Pantser
 itm_riv_boots|Rivendell Schoenen
 itm_gon_footman|Gondor Maliënkolder Shirt
 itm_gon_jerkin|Gondor Wambuis
@@ -726,6 +726,7 @@ itm_dwarf_spear|Dwergen Speer
 ; itm_amroth_lance_banner|Dol Amroth Lance With Banner
 ; itm_rohan_lance_banner_sun|Rohan Lance With Sun Banner
 ; itm_rohan_lance_banner_horse|Rohan Lance With Horse Banner
+; itm_fur_gloves_reward|Hunter Gloves
 ; itm_ent_water|Strange Bowl of Water
 itm_map|Kaart van Midden-Aarde
 ; itm_athelas_reward|Dried Athelas Leaves
@@ -781,7 +782,6 @@ itm_dale_bow_reward|Boog van Bard
 ; itm_wilderness_cowl|Hunter Cowl
 ; itm_prisoner_coll_chain|Prisoner Chains
 ; itm_witchking_helmet|Sorcerer's Mask
-; itm_lorien_royal_armor|Lorien Royal Armor
 itm_feet_chains|Voetketenen
 itm_feet_chains_dwarf|Voetketenen
 itm_spider|Spin

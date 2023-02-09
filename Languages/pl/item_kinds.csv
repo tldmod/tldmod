@@ -93,6 +93,7 @@ itm_hood_black|Czarny Kaptur
 itm_hood_green|Zielony Kaptur
 itm_hood_grey|Szary Kaptur
 itm_hood_leather|Skórzany Kaptur
+; itm_mail_coif|Mail Coif
 itm_axe_a|Topór Północy
 itm_axe_b|Północny Brodaty Topór
 itm_axe_c|Topór Północy
@@ -164,7 +165,6 @@ itm_riv_foot_scale|Zbroja łuskowa Rivendell
 itm_riv_surcoat|Surkot z Rivendell
 itm_riv_knight|Zbroja rycerska z Rivendell
 itm_riv_armor_h_archer|Zbroja z Rivendell
-itm_riv_armor_leader|Skórzana Zbroja z Rivendell
 itm_riv_boots|Buty z Rivendell
 itm_gon_footman|Gondorska Koszulka Kolcza
 itm_gon_jerkin|Gondorska Kurtka
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|Lanca z Chorągwią Gondoru
 itm_amroth_lance_banner|Lanca z Chorągwią Dol Amroth
 itm_rohan_lance_banner_sun|Lanca z Chorągwią Rohanu
 itm_rohan_lance_banner_horse|Lanca z Chorągwią Rohanu
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Dziwna Misa z Wodą
 itm_map|Mapy Śródziemia
 itm_athelas_reward|Wysuszone Liści Athelasu
@@ -781,7 +782,6 @@ itm_rohan_armor_th|Królewska Zbroja Rohanu
 itm_wilderness_cowl|Płaszcz Łowcy
 itm_prisoner_coll_chain|Łańcuchy Więzienne
 itm_witchking_helmet|Maska Czarownika
-itm_lorien_royal_armor|Królewska Zbroja z Lorien
 itm_feet_chains|Łańcuchy na Stopy
 itm_feet_chains_dwarf|Łańcuchy na Stopy
 itm_spider|Pająk

@@ -93,6 +93,7 @@ itm_hood_black|Cappuccio Nero
 itm_hood_green|Cappuccio Verde
 itm_hood_grey|Cappuccio Grigio
 itm_hood_leather|Cappuccio di Cuoio
+itm_mail_coif|Cotta di Maglia
 itm_axe_a|Ascia Nordica
 itm_axe_b|Ascia Barbuta Nordica
 itm_axe_c|Ascia Nordica
@@ -164,7 +165,6 @@ itm_riv_foot_scale|Armatura a Scaglie di Gran Burrone
 itm_riv_surcoat|Sorcotto di Gran Burrone
 itm_riv_knight|Armatura da Cavaliere di Gran Burrone
 itm_riv_armor_h_archer|Armatura di Gran Burrone
-itm_riv_armor_leader|Armatura nobile di Gran Burrone
 itm_riv_boots|Stivali di Gran Burrone
 itm_gon_footman|Cotta di maglia di Gondor
 itm_gon_jerkin|Giustacuore di Gondor
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|Lancia con Stendardo di Gondor
 itm_amroth_lance_banner|Lancia con Stendardo di Dol Amroth
 itm_rohan_lance_banner_sun|Lancia di con Insegne del Sole di Rohan
 itm_rohan_lance_banner_horse|Lancia con Insegne del Cavallo di Rohan
+itm_fur_gloves_reward|Guanti da Caccia
 itm_ent_water|Strana Ciotola d'Acqua
 itm_map|Mappe della Terra di Mezzo
 itm_athelas_reward|Foglie Essiccate di Athelas
@@ -781,7 +782,6 @@ itm_rohan_armor_th|Armatura Reale di Rohan
 itm_wilderness_cowl|Cappuccio da Cacciatore
 itm_prisoner_coll_chain|Catene del Prigioniero
 itm_witchking_helmet|Maschera da Stregone
-itm_lorien_royal_armor|Armatura Reale di Lorien
 itm_feet_chains|Catene per le Caviglie
 itm_feet_chains_dwarf|Catene per le Caviglie
 itm_spider|Ragno

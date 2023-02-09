@@ -345,13 +345,13 @@ dlga_tell_dorwinion_sack_3:lord_pretalk|Le carovane vengono spesso attaccate lun
 dlga_lord_talk:lord_healer_wound_ask|Ho saputo che sei un grande guaritore. Corrisponde al vero, e potrai aiutarmi?
 dlga_lord_healer_wound_ask:lord_pretalk|{s1}
 dlga_lord_healer_wound_ask:lord_healer_wound_ask_check|{s1}
-dlga_lord_healer_wound_ask_check:lord_healer_wound_heal|Io e i miei uomini abbiamo ferite che richiedono cure che non sono legate solo al tempo. Puoi curare le nostre ferite?
+dlga_lord_healer_wound_ask_check:lord_healer_wound_heal|Io e i miei compagni abbiamo ferite che richiedono qualcosa in più del tempo per guarire. Sei in grado di curarle?
 dlga_lord_healer_wound_ask_check:lord_healer_injured_ask|Sia io che i miei uomini abbiamo riportato ferite, e non abbiamo il tempo di attendere che guariscano. Puoi darci aiuto?
 dlga_lord_healer_wound_ask_check:lord_pretalk|Non ora.
 dlga_lord_healer_wound_heal:lord_healers_wound_check|{s1}
 dlga_lord_healer_injured_ask:lord_healers_injured_check|{s1}
-dlga_lord_healers_injured_check:lord_healers_injured_heal|Si, prenditi cura di noi.
-dlga_lord_healers_wound_check:lord_healers_wound_heal|Si, prenditi cura di noi.
+dlga_lord_healers_injured_check:lord_healers_injured_heal|Sì, prenditi cura di noi.
+dlga_lord_healers_wound_check:lord_healers_wound_heal|Sì, prenditi cura di noi.
 dlga_lord_healers_wound_check:lord_pretalk|Non ora.
 dlga_lord_healers_injured_check:lord_pretalk|Non ora.
 dlga_lord_talk:ring_hunters_start|Mio Signore, sono pronto ad assumere più ardui incarichi per servirti meglio e portare questa guerra alla fine. Che cosa vuoi che faccia ?
@@ -558,7 +558,7 @@ dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Cercalo n
 dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Come desidera, mia signora. Faro del mio meglio per eliminare questo male
 dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Mi perdoni, mia Signora. Ho delle questioni urgenti da sbrigare prima che io possa aiutare la vostra gente con questo .
 dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Comprendo, {playername}. Ma non aspettare troppo a lungo, perché lo sforzo di resistere alla sua magia mi sta stancando.
-dlga_lord_tell_mission:lord_mission_deliver_message|Devo spedire una lettera a {s13}, dovrebbe trovarsi a {s4}. Se andassi da quelle parti, potresti consegnargliela? La lettera dev'essere recapitata entro 30 giorni.
+dlga_lord_tell_mission:lord_mission_deliver_message|Devo spedire una lettera a {s13}, dovrebbe trovarsi a {s4}. Se dovessi recarti da quelle parti, potresti consegnargliela? La lettera dev'essere recapitata entro 30 giorni.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Certamente, intendo passare per {s4}, non ci sono problemi.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|Dubito che incontrerò {s13} a breve, {s65}. È meglio che la facciate consegnare da qualcun altro.
 dlga_lord_mission_deliver_message_accepted:close_window|Lo apprezzo, {playername}. Ecco la lettera. Porgi i miei saluti a {s13}, quando vi incontrerete.
@@ -685,8 +685,8 @@ dlga_beorn_help1:beorn_help2a|(annuisci senza dire una parola)
 dlga_beorn_help2:beorn_help3|È saggio non avvicinarsi a coloro che lo servono, ma oggi sembra che non potremo andare troppo lontano. ^^Tutto il nostro popolo saprà quante teste di goblin hai fatto rotolare oggi ! E tutti ti accoglieranno con idromele e carne, in qualunque parte dei nostri luoghi giungerai.
 dlga_beorn_help2a:beorn_help3|*grugnisce con approvazione* ^^Un elfo di poche parole, eh ? Sembri più simile a uno di noi, niente a che vedere con le monotone canzoni o le noiose poesie elfiche. ^^Il racconto di una buona storia, che narri dei tempi in cui le colline erano giovani e le foreste sconfinate, questo è ciò che ci piace di più ! ^^Questo è ciò che dirò al mio popolo di te. Tutti sapranno quanti fetidi orchi hai fatto fuori oggi. Idromele e cuori caldi ti accoglieranno in ogni nostra grande sala.
 dlga_beorn_help3:beorn_help4|(GUIDA AI PUNTI RISORSA)^^ I P.R. che puoi usare per fare acquisti presso Beorn non sono gli stessi che hai ottenuto nel Lothlorien, bensì quelli che guadagnerai nelle contee di Beorn. ^^Controlla la sezione RAPPORTI.
-dlga_beorn_help4:beorn_help4a|*ride compiaciuto* Anche voi elfi pensate di poter diventare dei fratelli-orso ?..
-dlga_beorn_help4a:beorn_help5|*ride di gusto* Anche voi elfi pensate di poter diventare dei fratelli-orso ?.. L'idromele dorato è dolce e riscalda il cuore, ma forse le lame degli elfi e le loro frecce accuminate sono più importanti in questi giorni oscuri..
+dlga_beorn_help4:beorn_help4a|*ridendo con un tono squillante* Ritieni che anche gli elfi siano dei fratelli-orso ?...
+dlga_beorn_help4a:beorn_help5|*ridendo con un tono squillante* Ritieni che anche gli elfi siano dei fratelli-orso ?... L'idromele dorato è dolce e riscalda il cuore, ma forse le lame degli elfi e le loro frecce acuminate sono più importanti in questi giorni oscuri...
 dlga_beorn_help4:beorn_help5|(posa una mano sul cuore, annuisci e sorridi)
 dlga_beorn_help5:beorn_help6|Possiamo essere rozzi e pelosi, cupi e chiusi. Ma aiutiamo i nostri amici, quelli che aiutano anche noi. ^^Se i nostri capi pensano che tu e le tue azioni siano di valore, ti seguiremo in battaglia.
 dlga_beorn_help6:beorn_help7|(GUIDA AI GRADI NELLE FAZIONI) ^^I punti graduatoria ti permettono di salire di grado nella tua fazione (e/o in altre fazioni). ^^Ciò determina il limite di grandezza della tua compagnia, il reddito fornito da ogni fazione e sblocca altre specifiche ricompense dalle fazioni stesse.
@@ -705,11 +705,11 @@ dlga_woodelf_help_1:woodelf_help_2.1|Non ho mai visto un Orco così grande prima
 dlga_woodelf_help_2:woodelf_help_3.1|Lo sei ? Certo che lo sei ! Ho visto che sei un guerriero capace. Sono stato davvero fortunato oggi, e approfittando di questa buona fortuna mi affretterò verso il mio villaggio per avvertire la mia gente della presenza di queste bestie immonde.
 dlga_woodelf_help_3:close_window|Che tu possa fare viaggi sereni, Torbal. Sono certo che c'incontreremo ancora.
 dlga_healers_ask:healer_who|Cosa stai facendo?
-dlga_healers_ask:healer_wound_ask|Io e i miei uomini abbiamo ferite che richiedono cure che non sono legate solo al tempo. Puoi curare le nostre ferite?
+dlga_healers_ask:healer_wound_ask|Io e i miei compagni abbiamo ferite che richiedono qualcosa in più del tempo per guarire. Sei in grado di curarle?
 dlga_healers_ask:healer_injured_ask|Sia io che i miei uomini abbiamo riportato ferite, e non abbiamo il tempo di attendere che guariscano. Puoi darci aiuto?
 dlga_healers_ask:close_window|Niente.
-dlga_healers_injured_check:healers_injured_heal|Si, prenditi cura di noi.
-dlga_healers_wound_check:healers_wound_heal|Si, prenditi cura di noi.
+dlga_healers_injured_check:healers_injured_heal|Sì, prenditi cura di noi.
+dlga_healers_wound_check:healers_wound_heal|Sì, prenditi cura di noi.
 dlga_healers_wound_check:close_window|Non ora.
 dlga_healers_injured_check:close_window|Non ora.
 dlga_hungry_orc_1:hungry_orc_2|Cosa ti aspetti che faccia per questa cosa, topo di fogna?

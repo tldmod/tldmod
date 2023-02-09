@@ -93,6 +93,7 @@ itm_hood_black|검은 후드
 itm_hood_green|녹색 후드
 itm_hood_grey|회색 후드
 itm_hood_leather|가죽 후드
+; itm_mail_coif|Mail Coif
 itm_axe_a|북부인 도끼
 itm_axe_b|북부인 미늘도끼
 itm_axe_c|북부인 도끼
@@ -164,7 +165,6 @@ itm_riv_foot_scale|리븐델 미늘갑옷
 itm_riv_surcoat|리븐델 겉옷
 itm_riv_knight|리븐델 기사 갑옷
 itm_riv_armor_h_archer|리븐델 갑옷
-itm_riv_armor_leader|리븐델 지휘관 갑옷
 itm_riv_boots|리븐델 부츠
 itm_gon_footman|곤도르 사슬 셔츠
 itm_gon_jerkin|곤도르 조끼
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|곤도르 창과 깃발
 itm_amroth_lance_banner|돌 암로스 창과 깃발
 itm_rohan_lance_banner_sun|로한 창과 태양 깃발
 itm_rohan_lance_banner_horse|로한 창과 기마대 깃발
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|수상한 액체가 담긴 그릇
 itm_map|중간계 지도
 itm_athelas_reward|말린 임금님풀
@@ -781,7 +782,6 @@ itm_rohan_armor_th|로한 왕실 갑옷
 itm_wilderness_cowl|Hunter Cowl
 itm_prisoner_coll_chain|포로용 쇠사슬
 itm_witchking_helmet|마술사의 가면
-itm_lorien_royal_armor|로리엔 왕실 갑옷
 itm_feet_chains|쇠고랑
 itm_feet_chains_dwarf|쇠고랑
 itm_spider|거미

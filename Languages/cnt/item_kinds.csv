@@ -93,6 +93,7 @@ itm_hood_black|黑色兜帽
 itm_hood_green|綠色兜帽
 itm_hood_grey|灰色兜帽
 itm_hood_leather|皮兜帽
+; itm_mail_coif|Mail Coif
 itm_axe_a|北方斧
 itm_axe_b|北方鉤斧
 itm_axe_c|北方斧
@@ -164,7 +165,6 @@ itm_riv_foot_scale|瑞文戴爾鱗甲
 itm_riv_surcoat|瑞文戴爾罩衫
 itm_riv_knight|瑞文戴爾騎士鎧甲
 itm_riv_armor_h_archer|瑞文戴爾鎧甲
-itm_riv_armor_leader|瑞文戴爾領隊鎧甲
 itm_riv_boots|瑞文戴爾靴
 itm_gon_footman|剛鐸鎖子甲上衣
 itm_gon_jerkin|剛鐸短上衣
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|剛鐸騎槍加旗幟
 itm_amroth_lance_banner|多爾安姆羅斯騎槍加旗幟
 itm_rohan_lance_banner_sun|洛汗騎槍加太陽旗
 itm_rohan_lance_banner_horse|洛汗騎槍加馬旗
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|一碗奇怪的水
 itm_map|中土世界地圖
 itm_athelas_reward|乾燥阿系拉斯葉
@@ -781,7 +782,6 @@ itm_rohan_armor_th|洛汗王家鎧甲
 itm_wilderness_cowl|獵人兜帽
 itm_prisoner_coll_chain|囚鏈
 itm_witchking_helmet|巫師面具
-itm_lorien_royal_armor|羅瑞安王家鎧甲
 itm_feet_chains|腳鏈
 itm_feet_chains_dwarf|腳鏈
 itm_spider|蜘蛛

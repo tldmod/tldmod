@@ -93,6 +93,7 @@ itm_hood_black|Schwarze Kapuze
 itm_hood_green|Grüne Kapuze
 itm_hood_grey|Graue Kapuze
 itm_hood_leather|Lederkapuze
+; itm_mail_coif|Mail Coif
 itm_axe_a|Nordmannaxt
 itm_axe_b|Bartaxt der Nordmänner
 itm_axe_c|Nordmannaxt
@@ -164,7 +165,6 @@ itm_riv_foot_scale|Schuppenpanzer aus Bruchtal
 itm_riv_surcoat|Waffenrock aus Bruchtal
 itm_riv_knight|Ritterrüstung aus Bruchtal
 itm_riv_armor_h_archer|Rüstung aus Bruchtal
-itm_riv_armor_leader|Fürstliche Rüstung aus Bruchtal
 itm_riv_boots|Stiefel aus Bruchtal
 itm_gon_footman|Kettenhemd aus Gondor
 itm_gon_jerkin|Wams aus Gondor
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|Lanze mit Banner von Gondor
 itm_amroth_lance_banner|Lanze mit Banner von Dol Amroth
 itm_rohan_lance_banner_sun|Lanze mit Sonnenbanner von Rohan
 itm_rohan_lance_banner_horse|Lanze mit Pferdebanner von Rohan
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Fremdartige Schüssel voll Wasser
 itm_map|Karten von Mittelerde
 itm_athelas_reward|Getrocknete Athelas-Blätter
@@ -781,7 +782,6 @@ itm_rohan_armor_th|Königliche Rüstung von Rohan
 itm_wilderness_cowl|Jägerkapuze
 itm_prisoner_coll_chain|Gefangenenketten
 itm_witchking_helmet|Zauberermaske
-itm_lorien_royal_armor|Königliche Rüstung von Lorien
 itm_feet_chains|Fußketten
 itm_feet_chains_dwarf|Fußketten
 itm_spider|Spinne

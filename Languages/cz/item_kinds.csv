@@ -93,6 +93,7 @@ itm_hood_black|Černá Kápě
 itm_hood_green|Zelená kápě
 itm_hood_grey|Šedá kapuce
 itm_hood_leather|Kožená kapuce
+; itm_mail_coif|Mail Coif
 itm_axe_a|Severská sekera
 itm_axe_b|Severská Bradatice
 itm_axe_c|Severská sekera
@@ -164,7 +165,6 @@ itm_riv_foot_scale|Šupinová zbroj Roklinky
 itm_riv_surcoat|Plášť Roklinky
 itm_riv_knight|Rytířská zbroj Roklinky
 itm_riv_armor_h_archer|Rivendelská zbroj
-itm_riv_armor_leader|Zbroj Rivendelského vůdce
 itm_riv_boots|Rivendelské boty
 itm_gon_footman|Gondorská kroužková košile
 itm_gon_jerkin|Gondorský krátký kožený kabát
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|Gondorské kopí s praporem
 itm_amroth_lance_banner|Dol Armothské kopí s praporem
 itm_rohan_lance_banner_sun|Rohanské kopí se slunečním praporem
 itm_rohan_lance_banner_horse|Rohanské kopí se koňským praporem
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Divná miska s vodou
 itm_map|Mapy Středozemě
 itm_athelas_reward|Sušené lístky Athelasu
@@ -781,7 +782,6 @@ itm_rohan_armor_th|Rohanská královská zbroj
 itm_wilderness_cowl|Lovcova kápě
 itm_prisoner_coll_chain|Řetězy otroků
 itm_witchking_helmet|Maska čaroděje
-itm_lorien_royal_armor|Lorienské královské brnění
 itm_feet_chains|Okovy
 itm_feet_chains_dwarf|Okovy
 itm_spider|Pavouk

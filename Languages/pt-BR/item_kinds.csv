@@ -93,6 +93,7 @@ itm_hood_black|Capuz Escuro
 itm_hood_green|Capuz Verde
 itm_hood_grey|Capuz Cinza
 itm_hood_leather|Capuz de Couro
+; itm_mail_coif|Mail Coif
 itm_axe_a|Machado dos Homens do Norte
 itm_axe_b|Machado Barbado dos Homens do Norte
 itm_axe_c|Machado dos Homens do Norte
@@ -164,7 +165,6 @@ itm_riv_foot_scale|Cotas de Valfenda
 itm_riv_surcoat|Sobretudo de Valfenda
 itm_riv_knight|Armadura de Cavaleiro de Valfenda
 itm_riv_armor_h_archer|Armadura de Valfenda 
-itm_riv_armor_leader|Armadura de Líder de Valfenda
 itm_riv_boots|Botas de Valfenda
 itm_gon_footman|Camisa de Cota-Malha de Gondor
 itm_gon_jerkin|Colete de Gondor
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|Lança com Estandarte de Gondor
 itm_amroth_lance_banner|Lança com Estandarte de Dol Amroth
 itm_rohan_lance_banner_sun|Lança com Estandarte de Sol de Rohan
 itm_rohan_lance_banner_horse|Lança com Estandarte de Cavalo de Rohan
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Estranha Tigela de Água
 itm_map|Mapas da Terra Média
 itm_athelas_reward|Folhas secas do rei.
@@ -781,7 +782,6 @@ itm_rohan_armor_th|Armadura Real de Rohan
 itm_wilderness_cowl|Capuz de Caçador
 itm_prisoner_coll_chain|Correntes de Prisioneiro
 itm_witchking_helmet|Máscara do Feiticeiro
-itm_lorien_royal_armor|Armadura Real de Lorien
 itm_feet_chains|Correntes de Pés
 itm_feet_chains_dwarf|Correntes de Pés
 itm_spider|Aranha

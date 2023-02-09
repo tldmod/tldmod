@@ -93,6 +93,7 @@ itm_hood_black|Чорний капюшон
 itm_hood_green|Зелений капюшон
 itm_hood_grey|Сірий капюшон
 itm_hood_leather|Шкірний капюшон
+; itm_mail_coif|Mail Coif
 itm_axe_a|Північна сокира
 itm_axe_b|Північна бородоподібна сокира
 itm_axe_c|Північна сокира
@@ -164,7 +165,6 @@ itm_riv_foot_scale|Рівендельска луската броня
 itm_riv_surcoat|Рівендельська сюрка
 itm_riv_knight|Рівендельска лицарська броня
 itm_riv_armor_h_archer|Рівенділська броня
-itm_riv_armor_leader|Рівенділська броня воєначальника
 itm_riv_boots|Рівенділські чоботи
 itm_gon_footman|Ґондорська кольчуга
 itm_gon_jerkin|Ґондорська куртка
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|Ґондорський спис з прапорцем
 itm_amroth_lance_banner|Дол-Амротський спис з прапорцем
 itm_rohan_lance_banner_sun|Роганський спис з прапором сонця
 itm_rohan_lance_banner_horse|Роганський спис з прапором коня
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Дивна чаша води
 itm_map|Карти Середзем'я
 itm_athelas_reward|Сушене листя Ателаса
@@ -781,7 +782,6 @@ itm_rohan_armor_th|Роганська королівська броня
 itm_wilderness_cowl|Капюшон мисливця
 itm_prisoner_coll_chain|Кайдани
 itm_witchking_helmet|Маска Чародія
-itm_lorien_royal_armor|Лоріенська королівська броня
 itm_feet_chains|Кайдани на ноги
 itm_feet_chains_dwarf|Кайдани на ноги
 itm_spider|Павук

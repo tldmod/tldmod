@@ -93,6 +93,7 @@ itm_hood_black|Capuchon noir
 itm_hood_green|Capuchon vert
 itm_hood_grey|Capuchon gris
 itm_hood_leather|Capuche en cuir
+itm_mail_coif|Coiffe en mailles
 itm_axe_a|Hache d'homme du Nord
 itm_axe_b|Hache à barbe d'homme du Nord
 itm_axe_c|Hache d'homme du Nord
@@ -164,7 +165,6 @@ itm_riv_foot_scale|Armure écaillée de Fendeval
 itm_riv_surcoat|Manteau de Fendeval
 itm_riv_knight|Armure de chevalier de Fendeval
 itm_riv_armor_h_archer|Armure de Fendeval
-itm_riv_armor_leader|Armure de seigneur de Fendeval
 itm_riv_boots|Bottes de Fendeval
 itm_gon_footman|Cotte de mailles gondorienne
 itm_gon_jerkin|Justaucorps gondorien
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|Lance du Gondor avec bannière
 itm_amroth_lance_banner|Lance de Dol Amroth avec bannière
 itm_rohan_lance_banner_sun|Lance rohirrim avec bannière du Soleil
 itm_rohan_lance_banner_horse|Lance rohirrim avec bannière du Cheval
+itm_fur_gloves_reward|Gants de chasseur
 itm_ent_water|Étrange bol d'eau
 itm_map|Cartes de la Terre du Milieu
 itm_athelas_reward|Feuilles d'athelas séchées
@@ -781,7 +782,6 @@ itm_rohan_armor_th|Armure royale du Rohan
 itm_wilderness_cowl|Capuche de chasseur
 itm_prisoner_coll_chain|Chaînes de prisonnier
 itm_witchking_helmet|Masque de sorcier
-itm_lorien_royal_armor|Armure royale de la Lórien
 itm_feet_chains|Chaînes pour pieds
 itm_feet_chains_dwarf|Chaînes pour pieds
 itm_spider|Araignée

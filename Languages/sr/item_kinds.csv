@@ -93,6 +93,7 @@ itm_hood_black|Crna kapuljača
 itm_hood_green|Zelena kapuljaca
 ; itm_hood_grey|Grey Hood
 ; itm_hood_leather|Leather Hood
+; itm_mail_coif|Mail Coif
 itm_axe_a|Severnjačka sekira
 itm_axe_b|Severnjacka bradata sekira
 itm_axe_c|Severnjacka sekira
@@ -164,7 +165,6 @@ itm_riv_spear|Rivendalsko Koplje
 ; itm_riv_surcoat|Rivendell Surcoat
 ; itm_riv_knight|Rivendell Knightly Armour
 itm_riv_armor_h_archer|Rivendalski Oklop
-itm_riv_armor_leader|Oklop Rivendalskog Vođe
 itm_riv_boots|Rivendalske Cipele
 itm_gon_footman|Gondorska Verižnjača
 itm_gon_jerkin|Gondorski Prsluk
@@ -726,6 +726,7 @@ itm_harad_scale_greaves|Haradske Oklopne Cizme
 ; itm_amroth_lance_banner|Dol Amroth Lance With Banner
 ; itm_rohan_lance_banner_sun|Rohan Lance With Sun Banner
 ; itm_rohan_lance_banner_horse|Rohan Lance With Horse Banner
+; itm_fur_gloves_reward|Hunter Gloves
 ; itm_ent_water|Strange Bowl of Water
 ; itm_map|Maps of Middle Earth
 ; itm_athelas_reward|Dried Athelas Leaves
@@ -781,7 +782,6 @@ itm_harad_scale_greaves|Haradske Oklopne Cizme
 ; itm_wilderness_cowl|Hunter Cowl
 ; itm_prisoner_coll_chain|Prisoner Chains
 ; itm_witchking_helmet|Sorcerer's Mask
-; itm_lorien_royal_armor|Lorien Royal Armor
 ; itm_feet_chains|Feet Chains
 ; itm_feet_chains_dwarf|Feet Chains
 ; itm_spider|Spider

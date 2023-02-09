@@ -93,6 +93,7 @@ itm_hood_black|Чёрный Капюшон
 itm_hood_green|Зелёный Капюшон
 itm_hood_grey|Серый Капюшон
 itm_hood_leather|Кожаный Капюшон
+; itm_mail_coif|Mail Coif
 itm_axe_a|Топорик Северян
 itm_axe_b|Бородовидный Топорик Северян
 itm_axe_c|Топорик Северян
@@ -164,7 +165,6 @@ itm_riv_foot_scale|Ривендельская чешуйчатая броня
 itm_riv_surcoat|Ривендельская накидка
 itm_riv_knight|Ривендельский доспех
 itm_riv_armor_h_archer|Ривендельская броня
-itm_riv_armor_leader|Ривендельская броня военачальника
 itm_riv_boots|Ривендельскые сапоги
 itm_gon_footman|Гондорская кольчуга
 itm_gon_jerkin|Гондорская куртка
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|Гондорское копьё с флажком
 itm_amroth_lance_banner|Дол-амротское копьё с флажком
 itm_rohan_lance_banner_sun|Роханское копьё со знаменем солнца
 itm_rohan_lance_banner_horse|Роханское копьё со знаменем коня
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Странная чаша с водой
 itm_map|Карты Средиземья
 itm_athelas_reward|Сушеные листья Ателаса
@@ -781,7 +782,6 @@ itm_rohan_armor_th|Роханская королевская броня
 itm_wilderness_cowl|Капюшон охотника
 itm_prisoner_coll_chain|Кандалы
 itm_witchking_helmet|Маска чародея
-itm_lorien_royal_armor|Лориэнская королевская броня
 itm_feet_chains|Кандалы на ноги
 itm_feet_chains_dwarf|Кандалы на ноги
 itm_spider|Паук

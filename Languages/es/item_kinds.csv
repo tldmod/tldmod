@@ -93,6 +93,7 @@ itm_hood_black|Capucha Negra
 itm_hood_green|Capucha Verde
 itm_hood_grey|Capucha Gris
 itm_hood_leather|Capucha de Cuero
+itm_mail_coif|Almófar
 itm_axe_a|Hacha Norteña
 itm_axe_b|Hacha Barbada Norteña
 itm_axe_c|Hacha Norteña
@@ -164,7 +165,6 @@ itm_riv_foot_scale|Armadura de Escamas de Rivendel
 itm_riv_surcoat|Sobrevesta de Rivendel
 itm_riv_knight|Armadura de Caballero de Rivendel
 itm_riv_armor_h_archer|Armadura Pesada de Arquero de Rivendel
-itm_riv_armor_leader|Armadura de Líder de Rivendel
 itm_riv_boots|Botas de Rivendel
 itm_gon_footman|Cota de Malla de Gondor
 itm_gon_jerkin|Jubón de Gondor
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|Lanza con Estandarte de Gondor
 itm_amroth_lance_banner|Lanza con Estandarte de Dol Amroth
 itm_rohan_lance_banner_sun|Lanza con Estandarte del Sol de Rohan
 itm_rohan_lance_banner_horse|Lanza con Estandarte del Corcel de Rohan
+itm_fur_gloves_reward|Guantes de Caza
 itm_ent_water|Recipiente extraño con agua
 itm_map|Mapas de la Tierra Media
 itm_athelas_reward|Hojas Secas de Athelas
@@ -781,7 +782,6 @@ itm_rohan_armor_th|Armadura Real de Rohan
 itm_wilderness_cowl|Capucha de Cazador
 itm_prisoner_coll_chain|Cadenas de Prisionero
 itm_witchking_helmet|Máscara del Hechicero
-itm_lorien_royal_armor|Armadura Real de Lórien
 itm_feet_chains|Grilletes
 itm_feet_chains_dwarf|Grilletes
 itm_spider|Araña

@@ -93,6 +93,7 @@ itm_hood_black|黒い頭巾
 itm_hood_green|緑の頭巾
 itm_hood_grey|灰色の頭巾
 itm_hood_leather|皮の頭巾
+; itm_mail_coif|Mail Coif
 itm_axe_a|北国人の斧
 itm_axe_b|北国人のヒゲ斧
 itm_axe_c|北国人の斧
@@ -164,7 +165,6 @@ itm_riv_foot_scale|裂け谷のスケイル
 itm_riv_surcoat|裂け谷のシュールコー
 itm_riv_knight|裂け谷騎士の鎧
 itm_riv_armor_h_archer|裂け谷の鎧
-itm_riv_armor_leader|裂け谷指揮官の鎧
 itm_riv_boots|裂け谷のブーツ
 itm_gon_footman|ゴンドールの鎖かたびら
 itm_gon_jerkin|ゴンドールの胴着
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|ゴンドールの戦旗つきランス
 itm_amroth_lance_banner|ドル・アムロスの戦旗つきランス
 itm_rohan_lance_banner_sun|ローハンの太陽の戦旗つきランス
 itm_rohan_lance_banner_horse|ローハンの馬の戦旗つきランス
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|おわんに入った奇妙な水
 itm_map|中つ国の地図
 itm_athelas_reward|乾燥させたアセラスの葉
@@ -781,7 +782,6 @@ itm_rohan_armor_th|ローハンの上級鎧
 itm_wilderness_cowl|狩人の頭巾
 itm_prisoner_coll_chain|捕虜の鎖
 itm_witchking_helmet|妖術師の仮面
-itm_lorien_royal_armor|ローリエンの上級鎧
 itm_feet_chains|足の鎖
 itm_feet_chains_dwarf|足の鎖
 itm_spider|大蜘蛛

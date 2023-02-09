@@ -93,6 +93,7 @@ itm_hood_black|Fekete csuklya
 itm_hood_green|Zöld csuklya
 itm_hood_grey|Szürke Csuklya
 itm_hood_leather|Börcsuklya
+; itm_mail_coif|Mail Coif
 itm_axe_a|Északlakó balta
 itm_axe_b|Északlakó szakállas balta
 itm_axe_c|Északlakó balta
@@ -164,7 +165,6 @@ itm_riv_foot_scale|Völgyzugolyi pikkelypáncél
 itm_riv_surcoat|Völgyzugolyi köpönyeg
 itm_riv_knight|Völgyzugolyi lovagi páncélzat
 itm_riv_armor_h_archer|Völgyzugolyi páncélzat
-itm_riv_armor_leader|Völgyzugolyi parancsnoki páncélzat
 itm_riv_boots|Völgyzugolyi csizmák
 itm_gon_footman|Gondori láncing
 itm_gon_jerkin|Gondori zeke
@@ -726,6 +726,7 @@ itm_gondor_lance_banner|Gondori lobogós kopja
 itm_amroth_lance_banner|Dol Amrothi lobogós kopja
 itm_rohan_lance_banner_sun|Rohani lobogós kopja
 itm_rohan_lance_banner_horse|Rohani ló lobogós kopja
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Furcsa edényi víz
 itm_map|Középfölde térképei
 ; itm_athelas_reward|Dried Athelas Leaves
@@ -781,7 +782,6 @@ itm_rohan_armor_th|Rohani nemesi páncélzat
 ; itm_wilderness_cowl|Hunter Cowl
 itm_prisoner_coll_chain|Rabszolga láncai
 ; itm_witchking_helmet|Sorcerer's Mask
-itm_lorien_royal_armor|Lórieni királyi páncélzat
 itm_feet_chains|Láb bilincsek
 itm_feet_chains_dwarf|Láb bilincsek
 itm_spider|Pók
