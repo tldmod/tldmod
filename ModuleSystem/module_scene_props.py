@@ -3570,7 +3570,7 @@ scene_props = [
     ]),
 ], 1500),
 
-("spike_group_a_destructible",sokf_destructible,"spike_group_a","bo_spike_group_a",   [ 
+("spike_group_a_destructible",sokf_destructible,"spike_group_a","bo_spike_group_a_big",   [ 
    (ti_on_scene_prop_init, [
    (store_trigger_param_1, ":instance_no"),
     
@@ -3579,63 +3579,7 @@ scene_props = [
     (position_move_z, pos1, 100,1), #safeguard against aggravators spawning underground
     (set_spawn_position, pos1),
     (spawn_agent,"trp_gate_aggravator"),
-    (assign, ":gate_aggravator", reg0),
-    (agent_set_speed_limit, ":gate_aggravator", 0),
-    (agent_set_team, ":gate_aggravator", 2),
-    ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
-    (agent_set_no_dynamics, ":gate_aggravator",1),
-    (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
-    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, ":gate_aggravator"), 
-    ] or []) + [
-  ]),
-   
-   (ti_on_scene_prop_destroy, [
-    (store_trigger_param_1, ":gate_no"),
-    (prop_instance_get_starting_position, pos1, ":gate_no"),
-    (particle_system_burst,"psys_village_fire_smoke_big",pos1,10),
-    (position_rotate_x, pos1, 60),
-    (position_move_z, pos1, -100,60),
-    (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
-    (play_sound, "snd_dummy_destroyed"),
-    
-    ] + (is_a_wb_sceneprop==1 and [        
-    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
-    (call_script, "script_remove_agent", ":gate_aggravator"), 
-    ] or [ 
-    (assign, ":gate_aggravator_found", 0),
-    (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
-        (eq, ":gate_aggravator_found", 0),
-        (gt, ":agent_no", 0),
-        (agent_is_alive, ":agent_no"),  
-        (agent_get_troop_id, ":troop_id", ":agent_no"),
-        (eq, ":troop_id", "trp_gate_aggravator"),
-        (agent_get_position, pos2, ":agent_no"),
-        (set_fixed_point_multiplier, 100),
-        (get_distance_between_positions, ":distance", pos1, pos2),
-        (le, ":distance", 200),
-        #(display_message, "@gate_aggravator found"),
-        (call_script, "script_remove_agent", ":agent_no"), 
-        (assign, ":gate_aggravator_found", 1),
-    (try_end),
-    ]) + [
-   ]),
-
-   (ti_on_scene_prop_hit,
-    [(play_sound, "snd_dummy_hit"),
-  (particle_system_burst, "psys_dummy_smoke", pos1, 3),
-  (particle_system_burst, "psys_dummy_straw", pos1, 10),
-    ]),
-], 500),
-
-("orc_stakes_destructible",sokf_destructible,"orc_stakes","bo_orc_stakes_new",   [ 
-   (ti_on_scene_prop_init, [
-   (store_trigger_param_1, ":instance_no"),
-    
-    (prop_instance_get_starting_position, pos1, ":instance_no"),
-    (set_fixed_point_multiplier, 100),
-    (position_move_z, pos1, 100,1), #safeguard against aggravators spawning underground
-    (set_spawn_position, pos1),
-    (spawn_agent,"trp_gate_aggravator"),
+    (agent_get_position, pos1, reg0),      
     (assign, ":gate_aggravator", reg0),
     (agent_set_speed_limit, ":gate_aggravator", 0),
     (agent_set_team, ":gate_aggravator", 2),
@@ -3651,7 +3595,7 @@ scene_props = [
     (prop_instance_get_starting_position, pos1, ":gate_no"),
     (particle_system_burst,"psys_village_fire_smoke_big",pos1,10),
     (position_rotate_x, pos1, -80),
-    (position_move_z, pos1, -100,60),
+    (position_move_z, pos1, -200,1),
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
     
@@ -3675,13 +3619,122 @@ scene_props = [
         (assign, ":gate_aggravator_found", 1),
     (try_end),
     ]) + [
+    
+    (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached_2m"),  #move away all dependent barriers
+    (try_begin),
+      (gt, ":max_barriers",0),
+      (try_for_range,":count",0,":max_barriers"),
+        (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached_2m", ":count"),
+        (prop_instance_get_starting_position, pos1, ":barrier_no"),
+        (prop_instance_get_starting_position, pos2, ":gate_no"),
+        (set_fixed_point_multiplier, 100),
+        (get_distance_between_positions, ":distance", pos1, pos2),
+        (le, ":distance", 200), #two meters
+        (position_move_z,pos1,-10000),
+        (prop_instance_set_position,":barrier_no",pos1),
+      (try_end),
+    (try_end),
+    
    ]),
 
-   (ti_on_scene_prop_hit,
-    [(play_sound, "snd_dummy_hit"),
-  (particle_system_burst, "psys_dummy_smoke", pos1, 3),
-  (particle_system_burst, "psys_dummy_straw", pos1, 10),
+   (ti_on_scene_prop_hit,    [
+    (try_begin),
+        (store_trigger_param, ":attacker_agent",3),
+        (store_trigger_param, ":missile", 6), 
+        (agent_get_team, ":team", ":attacker_agent"),
+        (this_or_next|neg|teams_are_enemies, 2, ":team"),
+        (gt, ":missile", 0),
+        (set_trigger_result, 0),
+    (else_try),
+        (play_sound, "snd_dummy_hit"),
+        (particle_system_burst, "psys_dummy_smoke", pos1, 3),
+        (particle_system_burst, "psys_dummy_straw", pos1, 10),
+    (try_end),
     ]),
+], 500),
+
+("orc_stakes_destructible",sokf_destructible,"orc_stakes","bo_orc_stakes_new",   [ 
+   (ti_on_scene_prop_init, [
+   (store_trigger_param_1, ":instance_no"),
+    
+    (prop_instance_get_starting_position, pos1, ":instance_no"),
+    (set_fixed_point_multiplier, 100),
+    (position_move_z, pos1, 100,1), #safeguard against aggravators spawning underground
+    (set_spawn_position, pos1),
+    (spawn_agent,"trp_gate_aggravator"),
+    (agent_get_position, pos1, reg0),      
+    (assign, ":gate_aggravator", reg0),
+    (agent_set_speed_limit, ":gate_aggravator", 0),
+    (agent_set_team, ":gate_aggravator", 2),
+    ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
+    (agent_set_no_dynamics, ":gate_aggravator",1),
+    (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
+    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, ":gate_aggravator"),
+    ] or []) + [
+  ]),
+   
+   (ti_on_scene_prop_destroy, [
+    (store_trigger_param_1, ":gate_no"),
+    (prop_instance_get_starting_position, pos1, ":gate_no"),
+    (particle_system_burst,"psys_village_fire_smoke_big",pos1,10),
+    (position_rotate_x, pos1, -80),
+    (position_move_z, pos1, -200,1),
+    (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
+    (play_sound, "snd_dummy_destroyed"),
+    
+    ] + (is_a_wb_sceneprop==1 and [        
+    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
+    (call_script, "script_remove_agent", ":gate_aggravator"), 
+    ] or [    
+    (assign, ":gate_aggravator_found", 0),
+    (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
+        (eq, ":gate_aggravator_found", 0),
+        (gt, ":agent_no", 0),
+        (agent_is_alive, ":agent_no"),  
+        (agent_get_troop_id, ":troop_id", ":agent_no"),
+        (eq, ":troop_id", "trp_gate_aggravator"),
+        (agent_get_position, pos2, ":agent_no"),
+        (set_fixed_point_multiplier, 100),
+        (get_distance_between_positions, ":distance", pos1, pos2),
+        (le, ":distance", 200),
+        #(display_message, "@gate_aggravator found"),
+        (call_script, "script_remove_agent", ":agent_no"), 
+        (assign, ":gate_aggravator_found", 1),
+    (try_end),
+    ]) + [
+    
+    (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached_2m"),  #move away all dependent barriers
+    (try_begin),
+      (gt, ":max_barriers",0),
+      (try_for_range,":count",0,":max_barriers"),
+        (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached_2m", ":count"),
+        (prop_instance_get_starting_position, pos1, ":barrier_no"),
+        (prop_instance_get_starting_position, pos2, ":gate_no"),
+        (set_fixed_point_multiplier, 100),
+        (get_distance_between_positions, ":distance", pos1, pos2),
+        (le, ":distance", 200), #two meters
+        (position_move_z,pos1,-10000),
+        (prop_instance_set_position,":barrier_no",pos1),
+      (try_end),
+    (try_end),
+    
+   ]),
+
+   (ti_on_scene_prop_hit,    [
+    (try_begin),
+        (store_trigger_param, ":attacker_agent",3),
+        (store_trigger_param, ":missile", 6), 
+        (agent_get_team, ":team", ":attacker_agent"),
+        (this_or_next|neg|teams_are_enemies, 2, ":team"),
+        (gt, ":missile", 0),
+        (set_trigger_result, 0),
+    (else_try),
+        (play_sound, "snd_dummy_hit"),
+        (particle_system_burst, "psys_dummy_smoke", pos1, 3),
+        (particle_system_burst, "psys_dummy_straw", pos1, 10),
+    (try_end),
+    ]),
+    
 ], 200),
 
 ("elf_treehouse_b",0,"elf_treehouse_b","bo_elf_treehouse_b",[]),  
@@ -3847,6 +3900,7 @@ scene_props = [
 ("glow_b", 0, "glow_b", "0", []),
 
 ("ai_fadeout_sphere",sokf_invisible,"sphere_1m","0", []),
+("ai_limiter_gate_breached_2m" ,sokf_invisible|sokf_type_ai_limiter|sokf_moveable,"barrier_2m" ,"bo_barrier_2m" , []),
 
 
 
