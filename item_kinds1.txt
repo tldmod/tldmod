@@ -258,7 +258,7 @@ itemsfile version 2
  itm_free_olog_hands Olog_Hai_Hands Olog_Hai_Hands 1  olog_hand_L 0  137438957583 0 1 0 58 100 0 1 0 70 0 0 0 0 0 0 0
 0
 
- itm_warg_ghost_armour HIDEME_armour HIDEME_armour 1  0 0  139603218445 0 0 0 0 100 200 200 200 0 0 0 0 0 0 0 0
+ itm_warg_ghost_armour HIDEME_armour HIDEME_armour 1  dummy_mesh_skinned 0  139603218445 0 0 0 0 100 200 200 200 0 0 0 0 0 0 0 0
 0
 
  itm_warg_ghost_lance HIDEME_lance HIDEME_lance 1  0 0  137443168260 0 0 0 1 100 0 0 0 0 0 100 0 1 0 256 0
@@ -1259,10 +1259,10 @@ itemsfile version 2
  itm_orc_morion Orc_Morion Orc_Morion 4  orc_helm_morion_b 0  orc_helm_morion_b 1  orc_helm_morion_a 6291590  orc_helm_morion_c 234881024  65548 0 500 174063750 4 91 23 0 0 11 0 0 0 0 0 0 0
 0
 
- itm_orc_beakhelm Orc_Beakhelm Orc_Beakhelm 5  orc_helm_vulture_b 0  orc_helm_vulture_b 1  orc_helm_vulture_a 6291590  orc_helm_vulture_c 234881024  orc_helm_crow 536870912  65548 0 600 174194822 4 91 24 0 0 11 0 0 0 0 0 0 0
+ itm_orc_beakhelm Orc_Beakhelm Orc_Beakhelm 5  orc_helm_vulture_b 0  orc_helm_vulture_b 1  orc_helm_vulture_a 6291590  orc_helm_vulture_c 234881024  orc_helm_crow 536870912  65548 0 600 710934662 4 91 24 0 0 11 0 0 0 0 0 0 0
 0
 
- itm_orc_bughelm Orc_Bughelm Orc_Bughelm 5  orc_helm_bug_b 0  orc_helm_bug_b 1  orc_helm_bug_a 6291590  orc_helm_bug_c 234881024  orc_helm_bug_d 536870912  65548 0 650 174194822 5 92 25 0 0 12 0 0 0 0 0 0 0
+ itm_orc_bughelm Orc_Bughelm Orc_Bughelm 5  orc_helm_bug_b 0  orc_helm_bug_b 1  orc_helm_bug_a 6291590  orc_helm_bug_c 234881024  orc_helm_bug_d 536870912  65548 0 650 710934662 5 92 25 0 0 12 0 0 0 0 0 0 0
 0
 
  itm_orc_visorhelm Orc_Visorhelm Orc_Visorhelm 4  orc_helm_visor_b 0  orc_helm_visor_b 1  orc_helm_visor_a 6291590  orc_helm_visor_c 234881024  65548 0 600 174063750 4 91 24 0 0 11 0 0 0 0 0 0 0
@@ -2556,13 +2556,13 @@ itemsfile version 2
  itm_fur_gloves_reward Hunter_Gloves Hunter_Gloves 1  narf_demi_gauntlets_fur_L 0  4111 0 2000 0 0 100 0 3 0 0 0 0 0 0 0 0 0
 0
 
- itm_empty_hands empty_hands empty_hands 1  0 0  137438957583 0 130 0 33 100 0 1 0 0 0 0 0 0 0 0 0
+ itm_empty_hands empty_hands empty_hands 1  dummy_mesh 0  137438957583 0 130 0 33 100 0 1 0 0 0 0 0 0 0 0 0
 0
 
- itm_empty_legs empty_legs empty_legs 1  0 0  137438957582 0 130 0 33 100 0 0 1 0 0 0 0 0 0 0 0
+ itm_empty_legs empty_legs empty_legs 1  dummy_mesh_skinned 0  137438957582 0 130 0 33 100 0 0 1 0 0 0 0 0 0 0 0
 0
 
- itm_empty_head empty_head empty_head 3  0 0  chieftainhelm 256  pointedhelmet 64  208305917964 0 1 0 58 100 50 0 0 0 0 0 0 0 0 0 0
+ itm_empty_head empty_head empty_head 3  dummy_mesh 0  chieftainhelm 256  pointedhelmet 64  208305917964 0 1 0 58 100 50 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_ent_water Strange_Bowl_of_Water Strange_Bowl_of_Water 1  ent_water 0  4107 0 200 0 2 100 0 0 0 0 0 0 0 0 0 0 0

@@ -382,7 +382,7 @@ items =[
 #
 # warg ghost items...  (mtarini)
 #  invisible items which are used for ghost riders (riding unmounted wargs)
-["warg_ghost_armour","HIDEME_armour" ,[("0",0)],itp_unique|itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
+["warg_ghost_armour","HIDEME_armour" ,[("dummy_mesh_skinned",0)],itp_unique|itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(200)|body_armor(200)|leg_armor(200)|difficulty(0),0],
 ["warg_ghost_lance" ,"HIDEME_lance"  ,[("0",0)],itp_unique|itp_no_pick_up_from_ground|itp_type_polearm|itp_no_blur|itp_primary|itp_no_parry,0,0,weight(1)|difficulty(0)|spd_rtng(100)|weapon_length(1)|thrust_damage(0,pierce),imodbits_none],
 # CC: ghost lance had itcf_thrust_onehanded_lance_horseback before, changed to prevent animals from couching
 # other HIDEME items already ingame
@@ -810,8 +810,8 @@ items =[
 ["orc_kettlehelm","Orc_Kettlehelm",[("orc_helm_kettle_b",0),("orc_helm_kettle_b",imodbit_plain),("orc_helm_kettle_a",imodbits_orc_bad),("orc_helm_kettle_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,500,weight(3)|abundance(91)|head_armor(22)|body_armor(0)|difficulty(10),imodbits_orc_armor | imodbit_cracked],
 ["orc_buckethelm","Orc_Buckethelm",[("orc_helm_sallet_b",0),("orc_helm_sallet_b",imodbit_plain),("orc_helm_sallet_a",imodbits_orc_bad),("orc_helm_sallet_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,650,weight(5)|abundance(92)|head_armor(25)|body_armor(0)|difficulty(12),imodbits_orc_armor | imodbit_cracked],
 ["orc_morion","Orc_Morion",[("orc_helm_morion_b",0),("orc_helm_morion_b",imodbit_plain),("orc_helm_morion_a",imodbits_orc_bad),("orc_helm_morion_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,500,weight(4)|abundance(91)|head_armor(23)|body_armor(0)|difficulty(11),imodbits_orc_armor | imodbit_cracked],
-["orc_beakhelm","Orc_Beakhelm",[("orc_helm_vulture_b",0),("orc_helm_vulture_b",imodbit_plain),("orc_helm_vulture_a",imodbits_orc_bad),("orc_helm_vulture_c",imodbits_orc_good),("orc_helm_crow",imodbit_lordly)],itp_type_head_armor|itp_shop,0,600,weight(4)|abundance(91)|head_armor(24)|body_armor(0)|difficulty(11),imodbits_orc_armor | imodbit_cracked |imodbit_masterwork],
-["orc_bughelm","Orc_Bughelm",[("orc_helm_bug_b",0),("orc_helm_bug_b",imodbit_plain),("orc_helm_bug_a",imodbits_orc_bad),("orc_helm_bug_c",imodbits_orc_good),("orc_helm_bug_d",imodbit_lordly)],itp_type_head_armor|itp_shop,0,650,weight(5)|abundance(92)|head_armor(25)|body_armor(0)|difficulty(12),imodbits_orc_armor | imodbit_cracked| imodbit_masterwork],
+["orc_beakhelm","Orc_Beakhelm",[("orc_helm_vulture_b",0),("orc_helm_vulture_b",imodbit_plain),("orc_helm_vulture_a",imodbits_orc_bad),("orc_helm_vulture_c",imodbits_orc_good),("orc_helm_crow",imodbit_lordly)],itp_type_head_armor|itp_shop,0,600,weight(4)|abundance(91)|head_armor(24)|body_armor(0)|difficulty(11),imodbits_orc_armor | imodbit_cracked |imodbit_lordly],
+["orc_bughelm","Orc_Bughelm",[("orc_helm_bug_b",0),("orc_helm_bug_b",imodbit_plain),("orc_helm_bug_a",imodbits_orc_bad),("orc_helm_bug_c",imodbits_orc_good),("orc_helm_bug_d",imodbit_lordly)],itp_type_head_armor|itp_shop,0,650,weight(5)|abundance(92)|head_armor(25)|body_armor(0)|difficulty(12),imodbits_orc_armor | imodbit_cracked| imodbit_lordly],
 ["orc_visorhelm","Orc_Visorhelm",[("orc_helm_visor_b",0),("orc_helm_visor_b",imodbit_plain),("orc_helm_visor_a",imodbits_orc_bad),("orc_helm_visor_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,600,weight(4)|abundance(91)|head_armor(24)|body_armor(0)|difficulty(11),imodbits_orc_armor | imodbit_cracked],
 ["free_orc_helm_g","oldOrc_Crowhelm",[("orc_helm_crow",0)],itp_type_head_armor|itp_shop,0,400,weight(3)|head_armor(23)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
 ["free_orc_helm_i","oldOrc_Snouthelm",[("orc_helm_sallet_b",0)],itp_type_head_armor|itp_shop,0,600,weight(3)|head_armor(25)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
@@ -1354,9 +1354,10 @@ items =[
 ["ent_feet_boots","Ent_Feet",[("ent_foot",0),("troll_feet",imodbit_cracked),("gunda_troll_feet",imodbit_rusty),("mordor_troll_feet",imodbit_bent),("olog_feet",imodbit_hardened),("olog_feet",imodbit_thick)],itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(0)|leg_armor(60)|difficulty(30),0],
 ["ent_hands","Ent_Hands",[("ent_hand_L",0),("olog_hand_L",imodbit_large_bag),("isen_olog_hand_L",imodbit_rotten),("troll_handL",imodbit_cracked),("gunda_troll_handL",imodbit_rusty),("mordor_troll_handL",imodbit_bent)],itp_type_hand_armor|itp_unique,0,1,weight(250)|body_armor(1)|difficulty(30),0],
 ["fur_gloves_reward","Hunter_Gloves",[("narf_demi_gauntlets_fur_L",0)],itp_type_hand_armor|itp_unique,0,2000,weight(0.2)|body_armor(3)|difficulty(0),imodbits_none,[]],
-["empty_hands","empty_hands",[("0",0)],itp_type_hand_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|body_armor(1)|difficulty(0),0],
-["empty_legs","empty_legs",[("0",0)],itp_type_foot_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|leg_armor(1)|difficulty(0),0],
-["empty_head","empty head",[("0",0),("chieftainhelm",imodbit_old), ("pointedhelmet", imodbit_poor)],itp_type_head_armor|itp_unique|itp_covers_beard|itp_covers_head|itp_no_pick_up_from_ground,0,1,weight(250)|head_armor(50)|difficulty(0),0],
+["empty_hands","empty_hands",[("dummy_mesh",0)],itp_type_hand_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|body_armor(1)|difficulty(0),0],
+["empty_legs","empty_legs",[("dummy_mesh_skinned",0)],itp_type_foot_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|leg_armor(1)|difficulty(0),0],
+["empty_head","empty head",[("dummy_mesh",0),("chieftainhelm",imodbit_old), ("pointedhelmet", imodbit_poor)],itp_type_head_armor|itp_unique|itp_covers_beard|itp_covers_head|itp_no_pick_up_from_ground,0,1,weight(250)|head_armor(50)|difficulty(0),0],
+
 #### TLD REWARD ITEMS BEGIN
 # magic items begin
 ["ent_water","Strange_Bowl_of_Water",[("ent_water",0)],itp_unique|itp_type_goods,0,200,weight(2)|abundance(0)|0,imodbits_none],
