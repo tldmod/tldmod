@@ -11,7 +11,7 @@ skl_engineer ----- 18 0 -----
 skl_first_aid First_Aid 18 10 Heroes_regain_5%%_per_skill_level_of_hit-points_lost_during_mission._(Party_skill)
 skl_surgery Surgery 18 10 Each_point_to_this_skill_gives_a_4%%_chance_that_a_mortally_struck_party_member_will_be_wounded_rather_than_killed._(Party_skill)
 skl_wound_treatment Wound_Treatment 18 10 Party_healing_speed_is_increased_by_20%%_per_level_of_this_skill._(Party_skill)
-skl_inventory_management Inventory_Management 18 10 Increases_inventory_capacity_by_+6_per_skill_level._Reduces_food_consumption._(Party_skill)
+skl_inventory_management Inventory_Management 2 10 Increases_inventory_capacity_by_+6_per_skill_level._Reduces_food_consumption._(Leader_skill)
 skl_spotting Spotting 18 10 Party_seeing_range_is_increased_by_10%%_per_skill_level._(Party_skill)
 skl_pathfinding Path-finding 18 10 Party_map_speed_is_increased_by_3%%_per_skill_level._(Party_skill)
 skl_tactics Tactics 18 10 Every_two_levels_of_this_skill_increases_starting_battle_advantage_by_1._(Party_skill)
