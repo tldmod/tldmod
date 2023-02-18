@@ -2120,14 +2120,14 @@ game_menus = [
 	"none", [(set_background_mesh, "mesh_ui_default_menu_window"),],
   [
   #SW - added enable/disable camp cheat menu by ConstantA - http://forums.taleworlds.net/index.php/topic,63142.msg1647442.html#msg1647442
-	 ("Cheat_enable",[(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),(jump_to_menu, "mnu_camp"), (assign, "$cheatmode_used", 1)]),
+	 ("Cheat_enable",[(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),(jump_to_menu, "mnu_camp"), (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")]),
      ("camp_cheat_option", [(eq,"$cheat_mode",1)] ,"Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat")]),
   ## MadVader test begin
-     ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest"), (assign, "$cheatmode_used", 1)]),
+     ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest"), (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}") ]),
   ## MadVader test end
-     ("camp_test_cppcoder",[],"Cpp Test Menu",[(jump_to_menu, "mnu_camp_cctest"), (assign, "$cheatmode_used", 1)]),
+     ("camp_test_cppcoder",[(eq, cheat_switch, 1)],"Cpp Test Menu",[(jump_to_menu, "mnu_camp_cctest"), (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")]),
   ## Kham Test begin
-  	 ("camp_test_kham",[(eq, cheat_switch, 1)],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest"), (assign, "$cheatmode_used", 1)]),
+  	 ("camp_test_kham",[(eq, cheat_switch, 1)],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest"), (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")]),
 
   	 ("camp_back_camp_menu",[],"Back to Camp Menu.",[(jump_to_menu, "mnu_camp")]),
  ]
@@ -2138,7 +2138,7 @@ game_menus = [
    "Hurry up and pick something already.",
    "none", [],
   [
-     	("camp_cctest_injure",[],"Injure Me",[(call_script,"script_injury_routine", "trp_player")]),
+     	("camp_cctest_injure",[],"Injure Me",[(call_script,"script_injury_routine", "trp_player"),(val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")]),
 
 	("camp_cctest_injure_party_heroes", [], "Injure Companions",
 	[
@@ -2150,6 +2150,7 @@ game_menus = [
     		(main_party_has_troop, ":npc"),
 			(call_script,"script_injury_routine", ":npc"),
     	(try_end),
+        (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
 	]),
 
     	("camp_cctest_heal",[],"Heal my Injuries. (Does not fix prof. or attributes.)",[(troop_set_slot, "trp_player", slot_troop_wound_mask, 0)]),
@@ -2157,7 +2158,8 @@ game_menus = [
      	("camp_cctest_kill_lord",[],"Kill a Random Lord",
 	[
 		(store_random_in_range, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
-		(call_script, "script_hero_leader_killed_abstractly", ":cur_troop_id","p_main_party")
+		(call_script, "script_hero_leader_killed_abstractly", ":cur_troop_id","p_main_party"),
+        (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
 	]),
 
      	("camp_cctest_rout_ally",[],"Add troops to routed allies",
@@ -2166,6 +2168,7 @@ game_menus = [
 		(party_add_members, "p_routed_allies", ":troop_no", 1),
     		(party_get_num_companions, reg1, "p_routed_allies"),
 		(display_message, "@Ally party size: {reg1}", color_good_news),
+        (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
 	]),
 
      	("camp_cctest_rout_enemy",[],"Add troops to routed enemies",
@@ -2174,6 +2177,7 @@ game_menus = [
 		(party_add_members, "p_routed_enemies", ":troop_no", 1),
     		(party_get_num_companions, reg1, "p_routed_enemies"),
 		(display_message, "@Enemy party size: {reg1}", color_bad_news),
+        (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
 	]),
 
      	("camp_cctest_rout_spawn",[],"Spawn routed parties",
@@ -2182,6 +2186,7 @@ game_menus = [
 		(assign, "$g_spawn_enemies_routed", 1),
 		(call_script,"script_cf_spawn_routed_parties"),
 		(display_message, "@Spawned routed parties!", color_good_news),
+        (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
 	]),		
 	
 
@@ -2190,6 +2195,7 @@ game_menus = [
 		(try_for_range, ":trait", slot_trait_first, slot_trait_last+1),
 			(call_script, "script_gain_trait", ":trait"),
 		(try_end),
+        (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
 	]),
 
      	("camp_cctest_parties",[],"Count Parties",
@@ -2199,6 +2205,7 @@ game_menus = [
 			(val_add, reg0, 1),
 		(try_end),
 		(display_message, "@Party count: {reg0}"),
+        (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
 	]),
 
      	("camp_cctest_items",[],"Refactionize Items",[(call_script, "script_set_item_faction")]),
@@ -2209,10 +2216,12 @@ game_menus = [
        		(position_get_x, reg2, pos13),
       		(position_get_y, reg3, pos13),
       		(display_message, "@Party position ({reg2},{reg3}).", 0x30FFC8),
+            (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
 	]),
 
     ("party_add_xp",[], "Add 1000000 XP to Party", 
     	[(party_add_xp, "p_main_party", 1000000), (display_message, "@XP added", color_good_news),
+        (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
 	]),
 #     	("camp_cctest_defiled",[],"Add WIP Items",
 #	[
@@ -2275,6 +2284,7 @@ game_menus = [
      (troop_equip_items, "trp_player"),
      (troop_sort_inventory, "trp_player"),
      (display_message, "@You have been pimped up!", 0x30FFC8),
+     (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
     ]
    ),
    ("camp_mvtest_expwar",[(eq,"$tld_war_began",0)],"Start the War!",[(add_xp_to_troop,9000,"trp_player"), (display_message, "@9000 XP added - now wait for the War...(assumes war starts at level 8)", 0x30FFC8),]),
@@ -2287,16 +2297,18 @@ game_menus = [
 		(party_set_slot, ":capital", slot_center_destroyed, 1),
     (try_end),
     (display_message, "@Good factions defeated! Now wait for it...", 0x30FFC8),
+    (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
    ]),
-   ("camp_mvtest_rank",[],"Give me local money, rank and influence.",[
+   ("camp_mvtest_rank",[(eq, cheat_switch, 1),],"Give me local money, rank and influence.",[
     (troop_add_gold, "trp_player", 10000),
-    (call_script, "script_increase_rank", "$ambient_faction", 100),
+    (call_script, "script_increase_rank", "$ambient_faction", 50),
     (faction_get_slot, reg0, "$ambient_faction", slot_faction_rank),
     (faction_get_slot, reg1, "$ambient_faction", slot_faction_influence),
-    (val_sub, reg1, 100),
-    (faction_set_slot, "$ambient_faction", slot_faction_influence, 0),
+    (val_add, reg1, 5),
+    (faction_set_slot, "$ambient_faction", slot_faction_influence, reg1),
     (str_store_faction_name, s1, "$ambient_faction"),
     (display_message, "@{s1} rank points increased to {reg0}, influence to {reg1}!", 0x30FFC8),
+    (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
    ]),
    ("camp_mvtest_wait",[(eq, cheat_switch, 1),],"Fast forward for 30 days.",[
          (troop_add_item, "trp_player", "itm_cram"),
@@ -2306,6 +2318,7 @@ game_menus = [
          (assign, "$g_player_icon_state", pis_camping),
          (rest_for_hours_interactive, 24 * 30, 60), #30 day rest while not attackable with 40x speed #kham x 60
          (change_screen_return),
+         (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
    ]), 
    # ("camp_mvtest_rankfunc",[],"Test rank functions.",[
     # (try_for_range, ":rank_index", 0, 13),
@@ -2348,6 +2361,7 @@ game_menus = [
 	(assign, reg1, ":new_size"),
     (display_message, "@Party size increased from {reg0} to {reg1}!", 0x30FFC8),
     (troop_set_slot, "trp_player", slot_troop_state, 0),
+    (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
    ]),
    # ("camp_mvtest_free_willy",[],"Free all prisoners (for corrupt saves)",[
     # (spawn_around_party, "p_main_party", "pt_looters"),
@@ -2389,6 +2403,7 @@ game_menus = [
     (enable_party, "p_legend_mirkwood"),
     (enable_party, "p_legend_fangorn"),
     (display_message, "@All four legendary places enabled!", 0x30FFC8),
+    (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
    ]),
    ("camp_mvtest_intro",[(eq, cheat_switch, 1),],"Test cutscenes...",[(jump_to_menu, "mnu_mvtest_cutscenes"),]),
    # ("camp_mvtest_rewards",[],"Print ambient faction reward items.",[
@@ -3048,7 +3063,7 @@ game_menus = [
         (display_message, "@Gothmog besieges West Osgiliath!", 0x30FFC8),
         (change_screen_map),
       ]),
-	  ("order_siege_erech",[
+	  ("order_siege_MT",[
         (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_is_active, ":king_party"),
      ],"Order Gothmog to besiege Erech.",
@@ -3057,11 +3072,11 @@ game_menus = [
 		(try_for_range, ":unused", 0, 40),
 			(call_script, "script_cf_reinforce_party", ":king_party"),
 		(try_end),
-        (party_relocate_near_party, ":king_party", "p_town_erech", 0),
-        (party_set_slot, "p_town_erech", slot_center_is_besieged_by, ":king_party"),
-        (call_script, "script_party_set_ai_state", ":king_party", spai_besieging_center, "p_town_erech"),
+        (party_relocate_near_party, ":king_party", "p_town_minas_tirith", 0),
+        (party_set_slot, "p_town_minas_tirith", slot_center_is_besieged_by, ":king_party"),
+        (call_script, "script_party_set_ai_state", ":king_party", spai_besieging_center, "p_town_minas_tirith"),
         (party_set_ai_behavior, ":king_party", ai_bhvr_attack_party),
-        (party_set_ai_object, ":king_party", "p_town_erech"),
+        (party_set_ai_object, ":king_party", "p_town_minas_tirith"),
         (party_set_flags, ":king_party", pf_default_behavior, 1),
         (party_set_slot, ":king_party", slot_party_ai_substate, 1),
         (display_message, "@Gothmog besieges Erech!", 0x30FFC8),
@@ -4467,7 +4482,7 @@ game_menus = [
 [ (set_background_mesh, "mesh_ui_default_menu_window"),
   (assign, reg5, "$cheat_find_item_range_begin"),
   (store_add, reg6, "$cheat_find_item_range_begin", max_inventory_items),
-  (val_min, reg6, "itm_save_compartibility_item10"),
+  (val_min, reg6, "itm_good_mace"),
   (val_sub, reg6, 1),
 ],
 [
@@ -4475,7 +4490,7 @@ game_menus = [
     [
       (val_add, "$cheat_find_item_range_begin", max_inventory_items),
       (try_begin),
-        (ge, "$cheat_find_item_range_begin", "itm_save_compartibility_item10"),
+        (ge, "$cheat_find_item_range_begin", "itm_good_mace"),
         (assign, "$cheat_find_item_range_begin", 0),
       (try_end),
       (jump_to_menu, "mnu_cheat_find_item"),
@@ -4486,7 +4501,7 @@ game_menus = [
     [
       (troop_clear_inventory, "trp_dormant"),
       (store_add, ":max_item", "$cheat_find_item_range_begin", max_inventory_items),
-      (val_min, ":max_item", "itm_save_compartibility_item10"),
+      (val_min, ":max_item", "itm_good_mace"),
       (store_sub, ":num_items_to_add", ":max_item", "$cheat_find_item_range_begin"),
       (try_for_range, ":i_slot", 0, ":num_items_to_add"),
         (store_add, ":item_id", "$cheat_find_item_range_begin", ":i_slot"),
@@ -4700,22 +4715,22 @@ game_menus = [
  	 ("cheat_disabable",[],
 		"Disable cheat/modding options.",[(assign, "$cheat_mode", 0),	(jump_to_menu, "mnu_camp"),]),
 
-	("camp_cheat_find_item",[], "Find an item...",[(jump_to_menu, "mnu_cheat_find_item")]),
+	("camp_cheat_find_item",[], "Find an item...",[(jump_to_menu, "mnu_cheat_find_item"),(val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")]),
 
 	("crossdressing", [(assign,reg6, "$tld_option_crossdressing"), ], "Crossdressing: {reg6?Enabled:Disabled}", 
-	  [(store_sub, "$tld_option_crossdressing", 1, "$tld_option_crossdressing"), (jump_to_menu, "mnu_camp_cheat"),]),
+	  [(store_sub, "$tld_option_crossdressing", 1, "$tld_option_crossdressing"), (jump_to_menu, "mnu_camp_cheat"),(val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")]),
 
 	#("cheat_change_race",[],"Change your race (for development use).",[(jump_to_menu, "mnu_cheat_change_race"),]),	   
-	("impose_quest", [], "Impose a quest...",  [(jump_to_menu, "mnu_cheat_impose_quest")]),
-    ("impose_battle_field", [], "Impose a battlefield...",  [(jump_to_menu, "mnu_cheat_force_scene")]),
-	("relocate_party", [],   "Move to town...", [(jump_to_menu, "mnu_teleport_to_town")]),
+	("impose_quest", [], "Impose a quest...",  [(jump_to_menu, "mnu_cheat_impose_quest"),(val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")]),
+    ("impose_battle_field", [], "Impose a battlefield...",  [(jump_to_menu, "mnu_cheat_force_scene"),(val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")]),
+	("relocate_party", [],   "Move to town...", [(jump_to_menu, "mnu_teleport_to_town"),(val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")]),
 	("add_troops", [], "Add troops to player party.", [
 	   (assign, "$select_any_troop_nextmenu","mnu_camp_cheat" ), 
 	   (assign, "$select_any_troop_add_selected_troops",1 ), 
-	   (jump_to_menu, "mnu_select_any_troop") 
+	   (jump_to_menu, "mnu_select_any_troop") ,(val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
 	 ]),
     ("cheat_add_prisoners", [], "Add 10 prisoners",  [(party_add_prisoners, p_main_party, trp_a1_arnor_scout, 10),(display_message, "@Added 10 prisoners."), ]),
-	("cheat_get_item", [], "Gain a free magic item", [(jump_to_menu, "mnu_cheat_free_magic_item")]),
+	#("cheat_get_item", [], "Gain a free magic item", [(jump_to_menu, "mnu_cheat_free_magic_item")]),
 	("cheat_add_xp", [], "Add 1000 experience to player.", [(add_xp_to_troop, 1000, "trp_player"), (display_message, "@Added 1000 experience to player."), ]),	  	
     ("camp_mod_2",    [],
       "Raise player's attributes, skills, and proficiencies.",
@@ -4752,6 +4767,7 @@ game_menus = [
 		(troop_raise_proficiency_linear, "trp_player", wpt_firearm, 350),	 
 		 
          (display_message, "@Attributes, skills and proficiencies raised."),
+         (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
         ]
       ),      
 
@@ -4774,6 +4790,7 @@ game_menus = [
 		(troop_add_item, "trp_player","itm_tools",0),
 		
 	    (display_message, "@Items added to player inventory."),
+        (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
         ]
        ),	  
 	  	   
@@ -4782,6 +4799,7 @@ game_menus = [
       "Spawn a looter party nearby.",
       [  (spawn_around_party, "p_main_party", "pt_looters"),
          (display_message, "@Looter party was spawned nearby."),
+         (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")
       ]),
 	  
       # ("camp_mod_5",   [],

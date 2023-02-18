@@ -1595,9 +1595,9 @@ triggers = [
         (display_log_message, "@{s27}: Party morale decreased.", color_bad_news),
       (try_end),
       # gaining new traits
-      (try_begin),
-        (call_script, "script_cf_check_trait_captain"),
-      (try_end),
+      # (try_begin),
+        # (call_script, "script_cf_check_trait_captain"),
+      # (try_end),
       (try_begin),
         (troop_slot_eq, "trp_traits", slot_trait_command_voice, 0),
         (gt, "$trait_check_commands_issued", 0),
@@ -1648,6 +1648,7 @@ triggers = [
         (call_script, "script_cf_gain_trait_fell_beast"), #MV: let the scripts sort out if it's an orc or not :)
       (try_end),
       (try_begin),
+        (eq, 0, 1), #disabled
         (troop_slot_eq, "trp_traits", slot_trait_foe_hammer, 0),
         (assign, ":count", 0),
         (store_troop_faction, ":tmp", "trp_player"),

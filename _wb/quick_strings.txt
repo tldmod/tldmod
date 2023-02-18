@@ -1,4 +1,4 @@
-1969
+1970
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_551_wb__dev_^_B _rev_551_wb_|_dev_^_Built_2023-01-29_17:37___
+qstr__rev_565_wb__dev_^_B _rev_565_wb_|_dev_^_Built_2023-02-18_15:52___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1066,6 +1066,7 @@ qstr_{s2}^^{s5}^{s6} {s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2} Traits_gained:^{s2}
 qstr_^^You_are_{s17}. ^^You_are_{s17}.
 qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
+qstr_Cheats_used:_{reg78} Cheats_used:_{reg78}
 qstr_Ally_party_size:_{re Ally_party_size:_{reg1}
 qstr_Enemy_party_size:_{r Enemy_party_size:_{reg1}
 qstr_Spawned_routed_parti Spawned_routed_parties!

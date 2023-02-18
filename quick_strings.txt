@@ -1,4 +1,4 @@
-1728
+1729
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -851,6 +851,7 @@ qstr_{s2}^^{s5}^{s6} {s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2} Traits_gained:^{s2}
 qstr_^^You_are_{s17}. ^^You_are_{s17}.
 qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
+qstr_Cheats_used:_{reg78} Cheats_used:_{reg78}
 qstr_Ally_party_size:_{re Ally_party_size:_{reg1}
 qstr_Enemy_party_size:_{r Enemy_party_size:_{reg1}
 qstr_Spawned_routed_parti Spawned_routed_parties!
