@@ -2459,7 +2459,7 @@ ai_scripts = [
 
          (faction_get_slot, ":hosts", ":troop_faction_no", slot_faction_hosts),
          (faction_get_slot, ":strength", ":troop_faction_no", slot_faction_strength),
-         (try_begin), ## Kham - Lets give Gondor more Hosts - Let's hide it in a menu for testing
+         (try_begin), ## Kham - Lets give Gondor and Rohan more Hosts
             #(eq, "$gondor_ai_testing", 1),
             (this_or_next|eq, ":faction_no", "fac_gondor"),
 			(eq, ":faction_no", "fac_rohan"),
@@ -2504,43 +2504,20 @@ ai_scripts = [
          (eq,":check_pass",1),
 
          (store_random_in_range,":rnd",0,100),
-         (try_begin),
-            (eq, "$gondor_ai_testing", 1),
-            (eq, ":faction_no", "fac_gondor"),
-            (assign,":chance",20),              # Kham - lets give Gondor more hosts frequently
-            (display_message, "@Gondor AI Tweaks - More frequent hosts"),
-         (else_try),
-            (assign,":chance",10),              # faction passes random check 
-         (try_end),
          (this_or_next|faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"), # marshall/king bypasses random check
-         (lt, ":rnd", ":chance"),  # faction passes random check 
+         (lt, ":rnd", 10),  # faction passes random check 
 
          (val_add, ":hosts",1),
          (faction_set_slot, ":troop_faction_no", slot_faction_hosts,":hosts"), # host is spawned
          
          (party_set_slot, ":party", slot_party_type, spt_kingdom_hero_party), # TLD party type changed to host
-         
-         #Kham - Change Host VP for Gondor (Sept 2018)
+         (party_set_slot, ":party", slot_party_victory_value, ws_host_vp), # TLD victory points for party kill
 
-         (try_begin),
-            (eq, ":troop_faction_no", "fac_gondor"),
-            (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), #only if player is Good
-            (party_set_slot, ":party", slot_party_victory_value, ws_host_vp/2), # TLD victory points/2 for Gondor
-         (else_try),
-            (party_set_slot, ":party", slot_party_victory_value, ws_host_vp), # TLD victory points for party kill
-         (try_end),
 
          (try_begin), #MV: double that for kings
             (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"),
-            (eq, ":troop_faction_no", "fac_gondor"),
-            (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), #only if player is Good
-            (party_set_slot, ":party", slot_party_victory_value, ws_host_vp),
-         (else_try),
-            (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"),
             (party_set_slot, ":party", slot_party_victory_value, ws_host_vp*2),
          (try_end),
-
-         #Kham - Change Host VP for Gondor END (Sept 2018)
 
          (str_store_faction_name, s6, ":troop_faction_no"), # TLD host naming after faction
          (str_store_troop_name, s5, ":hero"),

@@ -1,4 +1,4 @@
-1729
+1726
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -128,8 +128,6 @@ qstr_{s1}_Scouts {s1}_Scouts
 qstr_Left_for_dead_but_mi Left_for_dead_but_miraculously_survived:_{reg1?{reg1}_time{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_ 1_Res.Pt_({s2})
 qstr_{reg1}_Res.Pts__{s2} {reg1}_Res.Pts_({s2})
-qstr_Gondor_AI_Tweaks___M Gondor_AI_Tweaks_-_Make_Gondor_marshall_a_bit_stronger
-qstr_Gondor_AI_Tweaks___G Gondor_AI_Tweaks_-_Gondro_Party_Size_Boost
 qstr_+30_to_Party_Morale +30_to_Party_Morale
 qstr_+20_to_Party_Morale +20_to_Party_Morale
 qstr_+1_to_Riding_Skill +1_to_Riding_Skill
@@ -567,7 +565,6 @@ qstr_The_Remnant_Forces_o The_Remnant_Forces_of_{s22}_have_gathered_to_reinforce
 qstr_The_strength_of_the_ The_strength_of_the_remaining_allied_factions_of_the_{s15}_theater_has_increased
 qstr_{s30}_reinforced_by_ {s30}_reinforced_by_{reg65}_fac_str
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
-qstr_Gondor_AI_Tweaks___Mo Gondor_AI_Tweaks_-_More_frequent_hosts
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_to_{s15}!
 qstr_ERROR ERROR
 qstr_Rohan_capital_moved_ Rohan_capital_moved_from_Edoras_to_Hornburg!

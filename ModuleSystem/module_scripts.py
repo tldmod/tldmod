@@ -1952,7 +1952,6 @@ scripts = [
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
 	(assign, "$tld_option_max_parties", 1500), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
 	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
-	(assign, "$gondor_ai_testing", 0), #kham - Gondor Ai Tweaks
 	(assign, "$gondor_reinforcement_event",0), #kham - Gondor Reinforcement Event
 	(assign, "$gondor_reinforcement_event_menu",0), #kham - Gondor Reinforcement Event
 	(assign, "$first_time_town", 0), #kham - rumour tutorial box
@@ -1980,6 +1979,7 @@ scripts = [
     (assign, "$tld_options_overlay_14", 2),
     (assign, "$g_display_agent_labels", 2),
     (assign, "$allies_leadership", 2),
+	(assign, "$gondor_ai_testing", 2), #unused 
 
     (val_mul, "$hold_f1", "$cheatmode_used"),
     (val_mul, "$hold_f1", "$original_savegame_version"),
@@ -1994,6 +1994,7 @@ scripts = [
     (val_mul, "$attacker_archer_melee", "$tld_options_overlay_14"),   
     (val_mul, "$attacker_archer_melee", "$g_display_agent_labels"),  
     (val_mul, "$attacker_archer_melee", "$allies_leadership"),  
+    (val_mul, "$allies_leadership", "$gondor_ai_testing"),      
 
 	#Kham - Squelch compiler warnings END
 	
@@ -3752,14 +3753,7 @@ scripts = [
 
         (try_begin),
           (faction_slot_eq, ":faction_id", slot_faction_marshall, ":party_leader"),
-          (try_begin),
-          	(eq, "$gondor_ai_testing", 1),
-          	(eq, ":faction_id", "fac_gondor"),
-          	(val_add, ":limit", 100), #Kham - Make Gondor Marshall bit stronger. Lets test! (Feb 16, 2017)
-          	(display_message, "@Gondor AI Tweaks - Make Gondor marshall a bit stronger"),
-          (else_try),
-          	(val_add, ":limit", 70), #TLD: was 100, kings were too strong --> around 200 base limit for marshalls
-          (try_end),
+          (val_add, ":limit", 70), #TLD: was 100, kings were too strong --> around 200 base limit for marshalls
         (try_end),
       (try_end),
       
@@ -3798,12 +3792,6 @@ scripts = [
 		(eq, ":faction_id", "fac_gundabad"), # (InVain): Gundabad now receives a boost to party size. (4/3)
 		(val_mul, ":limit", 4), 
       		(val_div, ":limit", 3),
-	(else_try),
-		(eq, "$gondor_ai_testing",1),
-		(eq, ":faction_id", "fac_gondor"), # Kham - Test give Gondor boost to party size (4/3)
-		(val_mul, ":limit", 4), 
-      		(val_div, ":limit", 3),
-      		(display_message, "@Gondor AI Tweaks - Gondro Party Size Boost"),
 	(try_end),
 
       #] + (is_a_wb_script==1 and [
