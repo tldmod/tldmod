@@ -1,4 +1,4 @@
-1967
+1968
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_566_wb__dev_^_B _rev_566_wb_|_dev_^_Built_2023-02-19_14:59___
+qstr__rev_568_wb__dev_^_B _rev_568_wb_|_dev_^_Built_2023-02-25_19:47___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -193,6 +193,7 @@ qstr_its its
 qstr_[no_upkeep_costs] [no_upkeep_costs]
 qstr_Short_of_Resource_Po Short_of_Resource_Points!!
 qstr_{s10}_will_soon_reas {s10}_will_soon_reassign_some_of_{s12}_troops_away_from_your_party!
+qstr_{s10}_has_reassigned {s10}_has_reassigned_troops_from_your_reserves.
 qstr_Superior_orders_from Superior_orders_from_{s11}_to_reassign_troops:
 qstr_{reg12}_{s10}_left_t {reg12}_{s10}_left_the_party!
 qstr_Fangorn_claimed_{reg Fangorn_claimed_{reg0}_killed_and_{reg1}_wounded_among_your_troops!
@@ -1050,8 +1051,8 @@ qstr_You_are_suffering_fr You_are_suffering_from_{s1}.
 qstr_You_are_suffering_fro You_are_suffering_from_{s1}_and_{s2}.
 qstr_You_are_suffering_from You_are_suffering_from_{s1},_{s2},_and_{s3}.
 qstr_You_are_suffering_from_ You_are_suffering_from_{s1},_{s2},_{s3}_and_{s4}.
-qstr_Weekly_upkeep_for_tr Weekly_upkeep_for_troops:^{reg5}_Resource_Points^
-qstr_{s12}^__{s4}:_{reg4} {s12}^__{s4}:_{reg4}_Resource_points_({reg5})
+qstr_Troop_upkeep__paid_e Troop_upkeep_(paid_every_four_days):^
+qstr_{s12}^^__{s4}:_{reg8 {s12}^^__{s4}:_{reg8}/{reg5}_Resource_Points_^Party:_{reg4}^Reserves:_{reg7}
 qstr_No_upkeep_costs No_upkeep_costs
 qstr_Orc_hiring_bonus:_+2 Orc_hiring_bonus:_+2/3_for_each_orc^
 qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size_modifiers_are:^^Base_size:__+10^Leadership:_{s2}{reg1}^Charisma:_{s3}{reg2}^Ranks:_{s4}{reg3}^{s5}TOTAL:__{reg5}
