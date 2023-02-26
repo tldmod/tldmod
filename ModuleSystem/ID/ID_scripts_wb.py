@@ -757,5 +757,7 @@ script_cf_on_hit_blood = 755
 script_agent_troop_get_banner_mesh = 756
 script_troop_agent_set_banner = 757
 script_town_guard_patrols = 758
+script_siege_adjust_battle_size = 759
+script_reset_battle_size = 760
 
 

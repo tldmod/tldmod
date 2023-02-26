@@ -31891,4 +31891,29 @@ if is_a_wb_script==1:
     (try_end),
     ]),
 
+  # #script_siege_adjust_battle_size
+  # # INPUT: none
+  # # OUTPUT: none
+  ("siege_adjust_battle_size",
+    [
+   (options_get_battle_size, reg5),
+   (try_begin),
+        (gt, reg5, 415),
+        (assign, "$player_battlesize", reg5),
+        (options_set_battle_size, 415), #200
+        (assign, "$player_battlesize_changed", 1),
+    (try_end),
+     ]),
+
+  # #script_reset_battle_size
+  # # INPUT: none
+  # # OUTPUT: none
+  ("reset_battle_size",
+    [
+   (try_begin),
+        (eq, "$player_battlesize_changed", 1),
+        (assign, "$player_battlesize_changed",0),
+        (options_set_battle_size, "$player_battlesize"),
+    (try_end),
+     ]),
 ] or []) 

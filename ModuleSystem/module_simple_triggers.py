@@ -207,7 +207,7 @@ simple_triggers = [
   ]),
   
   # (12) keep track of main party region ("$current_player_region"),
-  # and display log messages keey player informed of what region is he in,   (mtarini)
+  # and display log messages keey player informed of what region is he in,   (mtarini) // Reset battle size if changed for siege
   (0.5,[(call_script,"script_get_region_of_party", "p_main_party"),
       (assign, ":new_region", reg1),
       (neq, "$current_player_region", ":new_region"), # region change!
@@ -245,6 +245,11 @@ simple_triggers = [
         (try_end),
       (try_end),
       (assign, "$current_player_region", ":new_region"),
+      
+      
+      ] + (is_a_wb_trigger==1 and [
+        (call_script, "script_reset_battle_size"),
+      ] or []) + [      
   ]),
   
   # (13) Party AI: pruning some of the prisoners in each center (once a week) - Kham: Changed from 72 to 46 hours

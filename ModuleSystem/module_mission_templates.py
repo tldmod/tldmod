@@ -4610,7 +4610,11 @@ mission_templates = [ # not used in game
     (assign,":entry",11), #iterate through 8 9 10 - changed to 12,13,14
     (store_normalized_team_count,":num_attackers",":atkteam"),
     (lt,":num_attackers",15),
-    
+
+      ] + (is_a_wb_mt==1 and [
+        (call_script, "script_siege_adjust_battle_size"),
+      ] or []) + [
+
     (store_random_in_range, ":attack_flank", 0, 4), #store attack flank, there's also a chance that there's no attack flank
     
     (try_for_range,":flank",0,3), #cycle through attacker teams and reinforce
@@ -4664,6 +4668,11 @@ mission_templates = [ # not used in game
     ]),
 
   (0, 0, 10, [(lt,"$defender_reinforcement_stage", 100),(store_mission_timer_a,":mission_time"),(ge,":mission_time",30)],[ 
+    
+      ] + (is_a_wb_mt==1 and [
+        (call_script, "script_siege_adjust_battle_size"),
+      ] or []) + [    
+    
     (assign, reg77, "$defender_reinforcement_stage"),
     #(display_message, "@defender reinforcement stage: {reg77}"),
     (assign,":defteam","$defender_team"),
