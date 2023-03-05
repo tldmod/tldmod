@@ -2030,7 +2030,6 @@ game_menus = [
    "none",
 	[ (assign, "$g_player_icon_state", pis_normal),
 	  (call_script,"script_maybe_relocate_player_from_z0"),
-      (call_script, "script_make_player_pay_upkeep"),
 	  # (party_get_current_terrain, reg78,"p_main_party"),
 	  # (display_message, "@current terrain: {reg78}"),
 
