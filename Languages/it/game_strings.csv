@@ -79,23 +79,23 @@ str_cant_use_inventory_disguised|Non puoi accedere all'inventario mentre sei cam
 str_cant_use_inventory_tutorial|Non puoi accedere all'inventario mentre sei nel campo d'addestramento
 str_1_denar|1 Punto Risorsa
 str_reg1_denars|{reg1} Punti Risorsa
-str_january_reg1_reg2|T.A.{reg2}, Narvinyë {reg1} (Gennaio)
-str_february_reg1_reg2|T.A.{reg2}, Nénimë {reg1} (Febbraio)
-str_march_reg1_reg2|T.A.{reg2}, Súlìmë {reg1} (Marzo)
-str_april_reg1_reg2|T.A.{reg2}, Víressë {reg1} (Aprile)
-str_may_reg1_reg2|T.A.{reg2}, Lótessë {reg1} (Maggio)
-str_june_reg1_reg2|T.A.{reg2}, Náríë {reg1} (Giugno)
-str_july_reg1_reg2|T.A.{reg2}, Cermië {reg1} (Luglio)
-str_august_reg1_reg2|T.A.{reg2}, Urimë {reg1} (Agosto)
-str_september_reg1_reg2|T.A.{reg2}, Yavannië {reg1} (Settembre)
-str_october_reg1_reg2|T.A.{reg2}, Narquelië {reg1} (Ottobre)
-str_november_reg1_reg2|T.A.{reg2}, Hísimë {reg1} (Novembre)
-str_december_reg1_reg2|T.A.{reg2}, Ringarë {reg1} (Dicembre)
-str_calendar_spec_day_1|T.A.{reg2}, Yestarë (Capodanno)
-str_calendar_spec_day_2|T.A.{reg2}, Tuilérë (Primavera)
-str_calendar_spec_day_3|T.A.{reg2}, Loëndë (Festa di mezzo Anno)
-str_calendar_spec_day_4|T.A.{reg2}, Yáviérë (Festa del Raccolto)
-str_calendar_spec_day_5|T.A.{reg2}, Mettarë (Vigilia di Capodanno)
+str_january_reg1_reg2|T.E.{reg2}, Narvinyë {reg1} (Gennaio)
+str_february_reg1_reg2|T.E.{reg2}, Nénimë {reg1} (Febbraio)
+str_march_reg1_reg2|T.E.{reg2}, Súlìmë {reg1} (Marzo)
+str_april_reg1_reg2|T.E.{reg2}, Víressë {reg1} (Aprile)
+str_may_reg1_reg2|T.E.{reg2}, Lótessë {reg1} (Maggio)
+str_june_reg1_reg2|T.E.{reg2}, Náríë {reg1} (Giugno)
+str_july_reg1_reg2|T.E.{reg2}, Cermië {reg1} (Luglio)
+str_august_reg1_reg2|T.E.{reg2}, Urimë {reg1} (Agosto)
+str_september_reg1_reg2|T.E.{reg2}, Yavannië {reg1} (Settembre)
+str_october_reg1_reg2|T.E.{reg2}, Narquelië {reg1} (Ottobre)
+str_november_reg1_reg2|T.E.{reg2}, Hísimë {reg1} (Novembre)
+str_december_reg1_reg2|T.E.{reg2}, Ringarë {reg1} (Dicembre)
+str_calendar_spec_day_1|T.E.{reg2}, Yestarë (Capodanno)
+str_calendar_spec_day_2|T.E.{reg2}, Tuilérë (Primavera)
+str_calendar_spec_day_3|T.E.{reg2}, Loëndë (Festa di mezzo Anno)
+str_calendar_spec_day_4|T.E.{reg2}, Yáviérë (Festa del Raccolto)
+str_calendar_spec_day_5|T.E.{reg2}, Mettarë (Vigilia di Capodanno)
 str_town_nighttime| È notte fonda.
 str_door_locked|La porta è chiusa a chiave.
 str_castle_is_abondened|Il castello sembra essere disabitato.
@@ -590,7 +590,7 @@ str_npc17_intro_response_2|Sì, i boschi sono incantevoli, ma ora devo muovermi.
 str_npc1_backstory_a|Tu vieni in tempi difficili, amico. Ithilien brulica di esploratori nemici e razziatori, e alcuni hanno visto grandi orde di orchi in marcia. Stiamo provando ad impedire a queste creature di attraversare il fiume e ho comandato un gruppo di abili Raminghi per riuscirci. Il mio Capitano Faramir è motivato e io non mi preoccupo dell'Ombra che incombe su di noi.
 str_npc2_backstory_a|Ah, sei stato gentile a preoccuparti di me. Sono appena stato assegnato come guardia del Sovrintendente. Un nobile compito, ma se posso dirlo, non molto esaltante.
 str_npc3_backstory_a|Beh, il mio elmo sembra diventare sempre più piccolo ogni minuto, e il terreno sembra fragile come un foglio di carta. Ah, se solo non avessi bevuto tutta quella birra la scorsa notte - di solito reggo bene le bevute, devo aver tracannato della birra d'orco avariata.
-str_npc4_backstory_a|Il mio nome è Galmyne, e il mio compito è conoscere le tue intenzioni, {playername}. Lascia che ti spieghi il perchè.
+str_npc4_backstory_a|Il mio nome è Galmyne, e il mio compito è conoscere le tue intenzioni, {playername}. Lascia che ti spieghi il perché.
 str_npc5_backstory_a|Forse hai sentito parlare delle mie gesta nelle battaglie passate e dimenticate dagli Uomini mortali. Nel pieno di questa guerra, gli Eldar sono nuovamente in pericolo, ma questa... sarà l'ultima guerra.
 str_npc6_backstory_a|Scusa la mia sfrontatezza, straniero, ma non abbiamo molti visitatori qui e quelli che arrivano non sembrano molto affidabili. Solo la scorsa settimana, questo nano è apparso e... lasciamo perdere. Il mio nome è Luevanna, degli Elfi Silvani di Bosco Atro.
 str_npc7_backstory_a|Gentile da parte tua chiedere, {playername}. Stiamo combattendo le incursioni degli Easterlings e degli Orchi di Gundabad, ma niente che noi o i nostri alleati di Dale non possiamo gestire.
@@ -792,7 +792,7 @@ str_npc15_payment_response|Inestimabile, non è vero ? Ti porto il tuo equipaggi
 str_npc16_payment_response|Onoro i nostri antenati, i miei e i tuoi. [Costo: {reg14}/{reg15} Punti Influenza]
 str_npc17_payment_response|Tuo zio starà bene. Sei con me adesso. [Costo: {reg14}/{reg15} Punti Influenza]
 str_npc1_morality_speech|Comandante, non riesco a capire come puoi {s21} e abbandonare i nostri uomini. Il Capitano Faramir non avrebbe mai mancato di compassione nei confronti dei suoi Raminghi, causando loro sofferenze non necessarie.
-str_npc2_morality_speech|Spero non ti spiaccia se lo dico, ma è un po' difficile per me veder {s21}. Forse dovrei cercare di essere un soldato più temprato, ma se potessi essere più... Attento ai nostri soldati, dormirei meglio.
+str_npc2_morality_speech|Spero non ti dispiaccia se lo dico, ma è un po' difficile per me vederci {s21}. Forse dovrei cercare di essere un soldato più temprato, ma se potessi essere più... attento ai nostri soldati, dormirei meglio.
 str_npc3_morality_speech|Comandante, noi Eorlingas non siamo mai stati {s21}. I nostri cavalli non si stancano facilmente e, una volta radunati, nessuna carica fatta al momento giusto può non essere a nostro favore. Fate attenzione la prossima volta che combatterete contro il fato.
 str_npc4_morality_speech|Non prestare attenzione a ciò che dicono i soldati, alle volte {s21} è la più saggia linea d'azione. Anche io apprezzo le vite risparmiate e le ferite evitate, ma solo per poter combattere un altro giorno, quando il fato volgerà a nostro favore.
 str_npc5_morality_speech|Devi riconsiderare le tue azioni, comandante. {s21} non ci rende più onorevoli dei nostri nemici e riduce la fiducia dei nostri alleati.
@@ -1642,7 +1642,7 @@ str_rohan_rank_3|Rohir, Cavaliere di Rohan
 str_rohan_rank_4|Scyldbora, Portatore dello Scudo di Rohan
 str_rohan_rank_5|Swéordbora, Portaspada di Rohan
 str_rohan_rank_6|Frumgar, Prima Lancia di Rohan
-str_rohan_rank_7|Bealdoraed, Maestro consulente di Rohan
+str_rohan_rank_7|Bealdoraed, Mastro Consigliere di Rohan
 str_rohan_rank_8|Eorl, Nobiluomo di Rohan
 str_rohan_rank_9|Haleth, Eroe di Rohan
 str_mordor_rank_0|Verme
@@ -1893,7 +1893,7 @@ str_trait_desc_brigand_friend|Sei diventato altamente stimato tra le tribù Barb
 str_trait_title_blessed|Benedetto
 str_trait_desc_blessed|Senti che sei stato benedetto da poteri che giungono dall'altra parte del mare e forse da ancora più lontano.Non sai perchè sia successo o cosa potrebbe significare,ma sei certo che sia così.
 str_trait_title_reverent|Riverente
-str_trait_desc_reverent|Hai acquisito una reputazione di rispetto e saggezza.Gli Uomini e gli Elfi ascoltano la tua opinione con più piacere.
+str_trait_desc_reverent|Ti sei guadagnato una reputazione di riverenza e saggezza. Uomini ed Elfi sono più propensi ad ascoltare i tuoi consigli.
 str_trait_title_merciful|Misericordioso
 str_trait_desc_merciful|Hai acquisito una reputazione di trattamento misericordioso presso gli uomini malvagi che servono il Nemico. Molti degli uomini temprati che ti servono sono infastiditi dal tuo comportamento e soffrono una penalità di morale. Tra i saggi, però, la tua misericordia è vista come una prova di alta considerazione e ricevi un bonus in Punti Influenza.
 str_trait_title_bravery|Coraggio

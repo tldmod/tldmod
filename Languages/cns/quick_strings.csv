@@ -250,12 +250,12 @@ qstr_Lead_more_Orcs|统御更多半兽人
 qstr_+{reg1}_to_Party_Mor|部队士气 +{reg1}
 qstr_Range:_{reg55}|射程：{reg55}
 qstr_Dwarves|矮人
-; qstr_Humans_and_Elves|Humans and Elves
-; qstr_Orcs|Orcs
-; qstr_Uruks_and_Uruk_Hai|Uruks and Uruk-Hai
-; qstr_Humans_Uruks_and_Uru|Humans, Uruks, and Uruk-Hai
-; qstr_Humans|Humans
-; qstr_This_item_can_be_use|This item can be used by {s2}
+qstr_Humans_and_Elves|人类和精灵
+qstr_Orcs|半兽人
+qstr_Uruks_and_Uruk_Hai|强兽人
+qstr_Humans_Uruks_and_Uru|人类和强兽人
+qstr_Humans|人类
+qstr_This_item_can_be_use|{s2}可用
 qstr_Do_you_want_to_disem|你想上岸吗？
 qstr_Move_here|移动到这里
 qstr_View_notes|查看笔记
@@ -635,7 +635,7 @@ qstr_support|支援
 qstr_bodyguard|护卫
 qstr_undetermined_type_of|未定类型
 qstr_{s1}_has_fled_the_ba|{s1}逃离了战场！
-; qstr_Your_side_is_at_{reg|Your side is at {reg1}% cohesion ({reg3}% recent events), the enemy at {reg2}%!
+qstr_Your_side_is_at_{reg|我军凝聚力为{reg1}%（+{reg3}%加成），敌军凝聚力为{reg2}%！
 qstr_Morale_of_your_troop|我军士气动摇了！
 qstr_Morale_of_your_enemi|敌方士气动摇了！
 qstr_Your_enemies_flee_in|敌军因恐惧而溃逃！
@@ -744,7 +744,7 @@ qstr_Cannot_leave_now.|现在不能离开。
 qstr_You_have_found_the_l|你找到了当地铁匠。
 qstr_You_have_found_the_lo|你找到了地方长官。
 qstr_You_have_found_the_loc|你找到了当地仓库。
-; qstr_You_have_found_the_c|You have found the captain of the garrison.
+qstr_You_have_found_the_c|你找到了当地驻军兵营长官。
 qstr_You_look_through_Hen|你端详汉那斯安南，也就是落日之窗。美丽的景色恢复了你对西方和世界的信心。
 qstr__cancelled_the_{reg1|(取消了杀囚获得的{reg10}经验值)
 qstr_Forming_ranks.|正在列阵。
@@ -776,7 +776,7 @@ qstr_{s11}_is_{s10}_in_th|{s11}在戒灵的攻击中{s10}！
 qstr_Received_{reg66}_dam|受到{reg66}点伤害。
 qstr_You_yell_for_your_ho|你呼唤你的马。
 qstr_You_do_not_need_to_r|你暂时不需要集结你的部队。
-; qstr_You_rally_{reg10}_tr|You rally {reg10} troops!
+qstr_You_rally_{reg10}_tr|你集结了{reg10}士兵！
 qstr_{s5}_rallies_{reg65?|{s5}集结了{reg65?她的:他的}的部队！
 qstr_You_have_killed_{reg|你在战斗中杀死了{reg1}名敌人！
 qstr_Your_bravery_inspire|你的英勇鼓舞了你的部队！
@@ -1521,24 +1521,24 @@ qstr_We_need_to_grind_dow|我们要把没用的敌人碾碎，{playername}。他
 qstr_{s9}_asked_you_to_el|{s9}希望你去消灭{reg1}队{s13}。
 qstr_{s9}_asked_you_to_fr|{s9}希望你解决{s13}近郊游荡着的一只狂暴的食人妖。
 qstr_{reg1}_{s16}_joined_|{reg1}名{s16}加入了你的队伍。
-; qstr_Wait_{playername}._I|Wait, {playername}. I don't say this often, but you are an exceptionally reliable servant.
-; qstr_Halt_{playername}._I|Halt, {playername}. I once thought you little more than a snaga, but you are proving to be a useful servant.
-; qstr_Take_these_warriors_|Take these warriors, that your horde might continue to serve me.
-; qstr_One_last_thing_{play|One last thing, {playername}. In a land filled with backstabbers and rivals, you have always been a true ally.
-; qstr_Wait_{playername}._W|Wait, {playername}. When we met I sensed in you a rival, but I see now I was mistaken.
-; qstr_Take_these_warriors_a|Take these warriors, and use them to strike down our foes.
-; qstr_Before_you_leave_{pl|Before you leave, {playername}, know that you have always been a good friend to me.
-; qstr_Wait_{playername}._I_|Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend.
-; qstr_Allow_me_to_repay_yo|Allow me to repay you by giving you some troops.
-; qstr_Wait_{playername}._C|Wait, {playername}. Capable servants like you and your warriors deserve the best equipment.
-; qstr_Halt_{playername}._It|Halt, {playername}. It's shameful to have my servants using such inferior equipment.
-; qstr_Take_this_{s22}_and_|Take this {s22} and let it aid your rampage.
-; qstr_Before_you_go_{playe|Before you go, {playername}. Great warriors like you and your companions deserve only the best weapons, armor, and mounts.
-; qstr_Wait_{playername}._Y|Wait, {playername}. Your army has done well, but I think you'd do better with superior equipment.
-; qstr_Take_this_{s22}._I_h|Take this {s22}. I have no need of it.
-; qstr_Just_a_moment_{playe|Just a moment, {playername}. Heroes like you and your companions are worthy of the finest weapons, armor, and horses.
-; qstr_Wait_{playername}._Yo|Wait, {playername}. You have been an able commander in the war effort. I think it's time you had some better equipment.
-; qstr_Accept_this_{s22}_ma|Accept this {s22}, may it aid you and your companions.
+qstr_Wait_{playername}._I|等等，{playername}，我得说你是个特别可靠的仆人。
+qstr_Halt_{playername}._I|先别走，{playername}，我曾觉得你不过是个奴隶下仆（强兽人对半兽人藐视的说法），但你证明自己是个有用的仆人。
+qstr_Take_these_warriors_|带上这些战士，让他们与你一起继续为我效力吧。
+qstr_One_last_thing_{play|{playername}，我得说一句在这么个满是背叛和竞争的地方，你一直以来都是个可靠的盟友。
+qstr_Wait_{playername}._W|等等，{playername}。我们第一次见面时我把你看作竞争对手，现在看来我错了。
+qstr_Take_these_warriors_a|带上这些战士，让他们助力你击溃我们的敌人吧。
+qstr_Before_you_leave_{pl|{playername}，在你走之前我想让你知道，对我来说你一直是个好战友。
+qstr_Wait_{playername}._I_|等等，{playername}。我还不是很了解你，但一段时间来你都是位好战友。
+qstr_Allow_me_to_repay_yo|请让我回赠你一些士兵作为感谢吧。
+qstr_Wait_{playername}._C|等等，{playername}。像你和你麾下战士这样能干的仆人，值得配备最好的装备。
+qstr_Halt_{playername}._It|别走，{playername}，我的仆人用寒碜的装备可太不体面了。
+qstr_Take_this_{s22}_and_|收下这{s22}吧，让其助力你在战场上奋勇杀敌。
+qstr_Before_you_go_{playe|在你启程前收下这些，{playername}。你和你部下这样强大的战士，值得使用最好的武器、盔甲和坐骑。
+qstr_Wait_{playername}._Y|等等，{playername}。你的队伍能征善战，但如果你有更精良的装备，想必能更上一层楼。
+qstr_Take_this_{s22}._I_h|收下这个{s22}吧，我这里用不到了。
+qstr_Just_a_moment_{playe|等一下，{playername}。像你和你的部下这样的英雄人物，值得最精良的武器、盔甲和战马。
+qstr_Wait_{playername}._Yo|等等，{playername}。自大战爆发以来你作为指挥官战功累累，我想是时候给你更好的装备了。
+qstr_Accept_this_{s22}_ma|收下这{s22}，希望能帮到你和你的部下。
 qstr_the_Dwarves_so_that_|矮人使用的货币，如果你途径铁丘陵或孤山的话，你可以试着用传说中的矮人武器武装自己
 qstr_Gondor_so_that_if_yo|刚铎使用的货币，如果你途径他们的领土的话，你可以试着购买一些他们远近闻名的护甲
 qstr_Rohan_so_that_if_you|洛汗使用的货币，如果你途径他们的领土的话，你可以试着购买一些他们传说中的战马
@@ -1649,7 +1649,7 @@ qstr_The_{s9}_of_{s3}_ask|{s3}的{s9}希望你在{reg6}天内带给他{reg5}单�
 qstr_The_{s9}_of_{s3}_aske|{s3}的{s9}希望你在{reg0}天内带给他{reg5}单位的{s6}。
 qstr_Escort_the_supply_tr|护送补给队前往{s8}
 qstr_The_{s9}_of_{s4}_aske|{s4}的{s9}希望你在城镇附近追捕棘手的半兽人
-; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of bandits making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
+qstr_The_{s9}_of_{s14}_ha|{s14}的{s9}希望你能解决肆虐{s14}的劫匪。这帮家伙只在夜间出没，而且只攻击落单的行人。
 qstr_refugees|难民
 qstr_slaves|奴隶
 qstr_{s1}_Refugees|{s1}难民

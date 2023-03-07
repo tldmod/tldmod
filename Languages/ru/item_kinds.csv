@@ -93,7 +93,7 @@ itm_hood_black|Чёрный Капюшон
 itm_hood_green|Зелёный Капюшон
 itm_hood_grey|Серый Капюшон
 itm_hood_leather|Кожаный Капюшон
-; itm_mail_coif|Mail Coif
+itm_mail_coif|Кольчужный Капюшон
 itm_axe_a|Топорик Северян
 itm_axe_b|Бородовидный Топорик Северян
 itm_axe_c|Топорик Северян
@@ -291,7 +291,6 @@ itm_orc_tribal_b|Необработанная кожа
 itm_orc_tribal_c|Необработанная кожа
 itm_evil_gauntlets_a|Чёрные перчатки
 itm_evil_gauntlets_b|Чёрные латные перчатки
-itm_free_isen_orc_armor_a|Изенгардская орочья броня
 itm_isen_orc_light_a|Изенгардская орочья легкая упряжка
 itm_isen_orc_light_b|Изенгардская орочья легкая упряжка
 itm_isen_orc_pad_a|Изенгардская легкая пластинчатая броня
@@ -500,6 +499,7 @@ itm_mirkwood_helm_b|Зеленолесский шлем
 itm_mirkwood_helm_c|Зеленолесский тяжёлый шлем
 itm_mirkwood_helm_d|Зеленолесский королевский шлем
 itm_woodelf_leather_boots|Кожаные ботинки Лесных эльфов
+itm_mirkwood_boots|Лесные Ботинки
 itm_harad_tunic|Харадская одежда
 itm_harad_padded|Харондорская подбитая броня
 itm_harad_hauberk|Харондорский хауберк
@@ -726,7 +726,7 @@ itm_gondor_lance_banner|Гондорское копьё с флажком
 itm_amroth_lance_banner|Дол-амротское копьё с флажком
 itm_rohan_lance_banner_sun|Роханское копьё со знаменем солнца
 itm_rohan_lance_banner_horse|Роханское копьё со знаменем коня
-; itm_fur_gloves_reward|Hunter Gloves
+itm_fur_gloves_reward|Перчатки Охотника
 itm_ent_water|Странная чаша с водой
 itm_map|Карты Средиземья
 itm_athelas_reward|Сушеные листья Ателаса

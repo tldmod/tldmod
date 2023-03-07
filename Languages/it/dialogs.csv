@@ -16,7 +16,7 @@ dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL !
 dlga_start:hobbit_merry_talk_met|Salve di nuovo, {playername} !
 dlga_start:hobbit_pippin_talk_met|Salve di nuovo, {playername} !
 dlga_start:hobbit_general_talk_1|Salve, {Signore/Signora} ! Il mio nome è Meriadoc Brandybuck, ma puoi chiamarmi Merry !
-dlga_start:hobbit_general_talk_1.1|Salve, {Signore/Signora} ! Il mio nome è Peregrino Tuc ma puoi chiamarmi Pipino !
+dlga_start:hobbit_general_talk_1.1|Salve, {Signore/Signora} ! Il mio nome è Peregrino Tuc, ma puoi chiamarmi Pipino !
 dlga_hobbit_general_talk_1:close_window|Ora non ho tempo.
 dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Che strano, non ho mai visto nessuno della tua specie.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Sai, penso di aver visto uno come te, a Edoras.
@@ -284,7 +284,7 @@ dlga_lord_runaway_serf_half_completed:lord_pretalk.1|Bah, si è dimostrata una p
 dlga_lord_start:lord_deliver_cattle_to_army_thank|Ah, {playername}. Sono contento che tu abbia consegnato {reg13} unità di {s4}, come avevo richiesto. Sono impressionato.
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk|Nessun problema, {s65}.
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk.1|Felice di essere d'aiuto.
-dlga_lord_start:lord_scout_waypoints_thank|Hai compiuto una buona ricognizione,  {playername}. Le mie staffette mi hanno appena consegnato i tuoi rapporti su {s13}, {s14}, {s15}. Ben fatto.
+dlga_lord_start:lord_scout_waypoints_thank|Hai compiuto una buona ricognizione, {playername}. Le mie staffette mi hanno appena consegnato i tuoi rapporti su {s13}, {s14}, {s15}. Ben fatto.
 dlga_lord_scout_waypoints_thank:lord_pretalk|Un compito semplice, {s65}.
 dlga_lord_scout_waypoints_thank:lord_pretalk.1|Niente che non potessi gestire.
 dlga_lord_scout_waypoints_thank:lord_pretalk.2|È stato un piacere, Signore.

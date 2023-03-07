@@ -1016,8 +1016,8 @@ qstr_{s8}_of_{s9}|{s8} di {s9}
 qstr__Your_own_banner_fli|Il tuo stendardo sventola dal cancello
 qstr__You_see_the_banner_|Riesci a vedere lo stendardo di {s7} sul cancello
 qstr__This_castle_seems_t|Il castello sembra non appartenga a nessuno
-qstr__Your_own_banner_flie|Il tuo stendardo sventola sui cancelli della città
-qstr__You_see_the_banner_o|Vedi lo stendardo di {s7} sui cancelli della città
+qstr__Your_own_banner_flie|Il tuo stendardo sventola sui cancelli della città.
+qstr__You_see_the_banner_o|Vedi lo stendardo di {s7} sui cancelli della città.
 qstr__The_townsfolk_here_|Gli abitanti di questo luogo hanno dichiarato la loro indipendenza
 qstr_Go_to_the_secret_ent|Raggiungi l'entrata segreta di Moria
 qstr_Search_for_a_secret_|Cerca un'entrata segreta per Moria
@@ -1328,7 +1328,7 @@ qstr_You_do_not_have_enou|Non hai truppe a sufficienza per dare aiuto in questa 
 qstr_Stay_close_we_will_t|Restate vicini, prenderemo posizione vicino al nemico. Quando ci saremo radunati, attaccheremo.
 qstr_You_have_taken_too_l|Hai impiegato troppo tempo... Adesso dobbiamo andare, con te o senza di te. Ci raduneremo nei pressi del nemico ed entro tre giorni, colpiremo.
 qstr_Make_haste_{playerna|Fa in fretta, {playername}. Non vogliamo che si riprendano.
-qstr_Your_mission_is_comp|La tua missione è completa, {s9} vuole te per riprendere a seguire la sua armata fino a nuovo avviso.
+qstr_Your_mission_is_comp|La tua missione è completa, {s9} vuole che riprendi a seguire la sua armata fino a nuovo avviso.
 qstr_{s13}_asked_you_to_g|{s13} ti ha chiesto di raccogliere {reg3} unità di {s4} e riportarglieli.
 qstr_Moreover_should_you_|Inoltre, se dovessi diventare {s24}, avrai accesso al mio Consiglio di Guerra, dove potrai prendere decisioni che influenzeranno il corso della nostra campagna. Per il momento, come {s25}, seguici e resta in zona. Ci sposteremo presto.
 qstr_For_the_moment_just_|Per il momento, seguici e resta nelle vicinanze. Ci muoveremo presto.
@@ -1516,7 +1516,7 @@ qstr_{s9}_asked_you_to_sco|{s9} ti ha chiesto di perlustrare {s13}.
 qstr_We_have_reports_of_s|Abbiamo notizie di attività nemiche vicino a {s13}. Finora i nostri esploratori hanno fallito nell'avvicinarsi a sufficienza al nemico per vederne i movimenti. Voglio che tu componga una squadra di esploratori, che vi avviciniate abbastanza a {s13}, mandandoli quindi in azione. Ti darò anche alcune reclute, ma non dovresti inviarle da sole.
 qstr_My_spies_tell_me_the|Le mie spie mi hanno detto che il nemico vuole fare qualcosa a {s13}. I nostri esploratori hanno vigliaccamente fallito nell' esplorare le zone nemiche. Voglio che tu recluti una tua squadra di esploratori, ti avvicini abbastanza a {s13}, e li lasci li. Pero', assicurati che non scappino ! Ti fornirò io queste reclute, non ne sentiremo la mancanza.
 qstr_{s9}_asked_you_to_di|{s9} ti ha chiesto di inviare una pattuglia d'esplorazione vicino a {s13}.^Procurati {reg1} soldati di {s15}, di cui almeno uno sia {s14}, avvicinati a {s13} e parla a {s14} per inviare la pattuglia.
-qstr_We_need_to_take_the_|Dobbiamo portare la battaglia sul campo nemico, {playername}. In questo momento possiamo riuscirci colpendo le loro pattuglie e i loro messaggeri. Voglio che tu elimini {reg1} compagnie di {s13}, tutto questo ci permetterà di riprendere l'iniziativa.
+qstr_We_need_to_take_the_|Dobbiamo portare la battaglia sul campo nemico, {playername}. In questo momento possiamo riuscirci colpendo le loro pattuglie e i loro messaggeri. Voglio che tu elimini {reg1} {s13}, tutto questo ci permetterà di riprendere l'iniziativa.
 qstr_We_need_to_grind_dow|Dobbiamo colpire i nostri vili nemici, {playername}. Le loro pattuglie e carovane stanno crescendo troppo coraggiosamente per i miei gusti. Voglio che tu elimini {reg1} {s13}, così incominceranno a capire cosa gli aspetta.
 qstr_{s9}_asked_you_to_el|{s9} ti ha chiesto di eliminare {reg1} compagnie di {s13}.
 qstr_{s9}_asked_you_to_fr|{s9} ti ha chiesto di liberare {s13} dalla minacca di un Troll furioso nella sua periferia.

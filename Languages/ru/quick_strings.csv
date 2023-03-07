@@ -250,11 +250,11 @@ qstr_Lead_more_Orcs|Бонус к числу орков
 qstr_+{reg1}_to_Party_Mor|+{reg1} к боевому духу отряда
 qstr_Range:_{reg55}|Дальность: {reg55}
 qstr_Dwarves|Гномы
-; qstr_Humans_and_Elves|Humans and Elves
-; qstr_Orcs|Orcs
-; qstr_Uruks_and_Uruk_Hai|Uruks and Uruk-Hai
-; qstr_Humans_Uruks_and_Uru|Humans, Uruks, and Uruk-Hai
-; qstr_Humans|Humans
+qstr_Humans_and_Elves|Люди и Эльфы
+qstr_Orcs|Орки
+qstr_Uruks_and_Uruk_Hai|Уруки и Урук-Хай
+qstr_Humans_Uruks_and_Uru|Люди, Уруки и Урук-Хай
+qstr_Humans|Люди
 ; qstr_This_item_can_be_use|This item can be used by {s2}
 qstr_Do_you_want_to_disem|Вы хотите высадиться?
 qstr_Move_here|Перейти
@@ -1533,9 +1533,9 @@ qstr_{reg1}_{s16}_joined_|{reg1} {s16} присоединился к Вашем�
 ; qstr_Wait_{playername}._C|Wait, {playername}. Capable servants like you and your warriors deserve the best equipment.
 ; qstr_Halt_{playername}._It|Halt, {playername}. It's shameful to have my servants using such inferior equipment.
 ; qstr_Take_this_{s22}_and_|Take this {s22} and let it aid your rampage.
-; qstr_Before_you_go_{playe|Before you go, {playername}. Great warriors like you and your companions deserve only the best weapons, armor, and mounts.
+qstr_Before_you_go_{playe|Прежде чем ты уйдёшь, {playername}. Великие воины вроде тебя и твоих спутников заслуживают исключительно на лучшую экипировку.
 ; qstr_Wait_{playername}._Y|Wait, {playername}. Your army has done well, but I think you'd do better with superior equipment.
-; qstr_Take_this_{s22}._I_h|Take this {s22}. I have no need of it.
+qstr_Take_this_{s22}._I_h|Возьми это {s22}. Мне это не нужно.
 ; qstr_Just_a_moment_{playe|Just a moment, {playername}. Heroes like you and your companions are worthy of the finest weapons, armor, and horses.
 ; qstr_Wait_{playername}._Yo|Wait, {playername}. You have been an able commander in the war effort. I think it's time you had some better equipment.
 ; qstr_Accept_this_{s22}_ma|Accept this {s22}, may it aid you and your companions.

@@ -93,7 +93,7 @@ itm_hood_black|黑兜帽
 itm_hood_green|绿色兜帽
 itm_hood_grey|灰色兜帽
 itm_hood_leather|皮革兜帽
-; itm_mail_coif|Mail Coif
+itm_mail_coif|链甲头巾
 itm_axe_a|北方人斧
 itm_axe_b|北方人长毛斧
 itm_axe_c|北方人斧
@@ -291,7 +291,6 @@ itm_orc_tribal_b|未处理的皮肤
 itm_orc_tribal_c|未处理的皮肤
 itm_evil_gauntlets_a|黑色手套
 itm_evil_gauntlets_b|黑色护手
-itm_free_isen_orc_armor_a|艾辛格半兽人甲
 itm_isen_orc_light_a|艾辛格半兽人胸甲
 itm_isen_orc_light_b|艾辛格半兽人胸甲
 itm_isen_orc_pad_a|艾辛格半兽人轻型锻甲
@@ -500,6 +499,7 @@ itm_mirkwood_helm_b|幽暗密林盔
 itm_mirkwood_helm_c|幽暗密林重盔
 itm_mirkwood_helm_d|幽暗密林王室盔
 itm_woodelf_leather_boots|木精灵皮靴
+itm_mirkwood_boots|绿林靴
 itm_harad_tunic|哈拉德束腰外衣
 itm_harad_padded|哈隆铎加厚甲
 itm_harad_hauberk|哈隆铎链甲
@@ -726,7 +726,7 @@ itm_gondor_lance_banner|刚铎带旗骑枪
 itm_amroth_lance_banner|多尔安罗斯带旗骑枪
 itm_rohan_lance_banner_sun|洛汗烈日旗骑枪
 itm_rohan_lance_banner_horse|洛汗骠骑旗骑枪
-; itm_fur_gloves_reward|Hunter Gloves
+itm_fur_gloves_reward|猎手手套
 itm_ent_water|一碗奇怪的水
 itm_map|中土世界地图
 itm_athelas_reward|干阿西拉斯草
