@@ -7,14 +7,14 @@ luajit tx.lua convert
 
 # push our latest strings to the web
 # tx push -s -t -f --skip --no-interactive
-# tx push -s -f --skip --no-interactive
+# tx push -s --skip --no-interactive
 # tx push -s -t -f --skip --no-interactive
 # tx push -t -l sv --skip --no-interactive
 # tx push -t -l zh-Hant --skip --no-interactive
 
 # pull latest translations
-tx pull -a -f --skip --minimum-perc=40 --mode=reviewer
-# tx pull -a -f --skip --minimum-perc=1
+tx pull -a -f --skip --minimum-perc 40 --workers 20 --silent
+# tx pull -a -f --skip --minimum-perc 1 --workers 20 --silent
 
 # revert back to mab format
 luajit tx.lua revert

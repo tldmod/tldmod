@@ -1,99 +1,100 @@
 [main]
-host = https://www.transifex.com
-lang_map = pt_BR: pt-BR, zh-Hans: cns, zh-Hant: cnt, ar_EG: ar-EG, cs: cz
+host     = https://www.transifex.com
+lang_map = zh-Hant: cnt, ar_EG: ar-EG, cs: cz, pt_BR: pt-BR, zh-Hans: cns
 
-[tld.dialogs]
+[o:tld:p:tld:r:dialogs]
 file_filter = <lang>/dialogs.csv
 source_file = _base/dialogs.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.factions]
+[o:tld:p:tld:r:factions]
 file_filter = <lang>/factions.csv
 source_file = _base/factions.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.game_menus]
+[o:tld:p:tld:r:game_menus]
 file_filter = <lang>/game_menus.csv
 source_file = _base/game_menus.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.game_strings]
+[o:tld:p:tld:r:game_strings]
 file_filter = <lang>/game_strings.csv
 source_file = _base/game_strings.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.info_pages]
-file_filter = <lang>/info_pages.csv
-source_file = _base/info_pages.csv
-source_lang = en
-type = INI
-
-[tld.hints]
+[o:tld:p:tld:r:hints]
 file_filter = <lang>/hints.csv
 source_file = en/hints.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.item_kinds]
+[o:tld:p:tld:r:info_pages]
+file_filter = <lang>/info_pages.csv
+source_file = _base/info_pages.csv
+source_lang = en
+type        = INI
+
+[o:tld:p:tld:r:item_kinds]
 file_filter = <lang>/item_kinds.csv
 source_file = _base/item_kinds.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.item_modifiers]
+[o:tld:p:tld:r:item_modifiers]
 file_filter = <lang>/item_modifiers.csv
 source_file = _base/item_modifiers.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.parties]
+[o:tld:p:tld:r:parties]
 file_filter = <lang>/parties.csv
 source_file = _base/parties.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.party_templates]
+[o:tld:p:tld:r:party_templates]
 file_filter = <lang>/party_templates.csv
 source_file = _base/party_templates.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.quests]
+[o:tld:p:tld:r:quests]
 file_filter = <lang>/quests.csv
 source_file = _base/quests.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.quick_strings]
+[o:tld:p:tld:r:quick_strings]
 file_filter = <lang>/quick_strings.csv
 source_file = _base/quick_strings.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.skills]
+[o:tld:p:tld:r:skills]
 file_filter = <lang>/skills.csv
 source_file = _base/skills.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.skins]
+[o:tld:p:tld:r:skins]
 file_filter = <lang>/skins.csv
 source_file = _base/skins.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.troops]
+[o:tld:p:tld:r:troops]
 file_filter = <lang>/troops.csv
 source_file = _base/troops.csv
 source_lang = en
-type = INI
+type        = INI
 
-[tld.ui]
+[o:tld:p:tld:r:ui]
 file_filter = <lang>/ui.csv
 source_file = _base/ui.csv
 source_lang = en
-type = INI
+type        = INI
+
