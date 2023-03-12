@@ -1075,9 +1075,12 @@ items =[
 ["harad_leather_greaves","Harad_Leather_Greaves",[("harad_leather_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,550,weight(4)|abundance(92)|leg_armor(16)|difficulty(0),imodbits_cloth],
 ["harad_scale_greaves","Harad_Greaves",[("harad_greaves_giles",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1100,weight(6)|abundance(93)|leg_armor(22)|difficulty(11),imodbits_armor|imodbit_lordly],
 ["harad_lamellar_greaves","Harad_Splinted_Greaves",[("harad_lamellar_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1300,weight(7)|abundance(94)|leg_armor(24)|difficulty(12),imodbits_armor|imodbit_lordly],
+### CAMEL ###
+["camel","Harad_Camel",[("giles_evil_camel",0)],itp_type_horse|itp_unique,0,2000,hit_points(180)|body_armor(20)|difficulty(4)|horse_speed(30)|horse_maneuver(50)|horse_charge(10)|horse_scale(110)|abundance(100),imodbits_horse_basic|0],
+
 #####TLD KHAND ITEMS##########
 ###HELMS########### #free Dec 2019
-["free_khand_helmet_a1","Khand_Helm_With_Camail",[("khand_inf_helm_a2",0)],itp_type_head_armor|itp_shop,0,1000,weight(3)|head_armor(35)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
+#["free_khand_helmet_a1","Khand_Helm_With_Camail",[("khand_inf_helm_a2",0)],itp_type_head_armor|itp_shop,0,1000,weight(3)|head_armor(35)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
 ["free_khand_helmet_a2","Khand_Helm",[("khand_inf_helm_a3",0)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(30)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
 ["free_khand_helmet_a3","Khand_Veiled_Helm",[("khand_inf_helm_a1",0)],itp_type_head_armor|itp_shop,0,600,weight(2)|head_armor(28)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
 ["free_khand_helmet_b1","Khand_Decorated_Helm",[("khand_cav_helm_c",0)],itp_type_head_armor|itp_shop,0,900,weight(3)|head_armor(33)|difficulty(0),imodbits_armor|imodbit_lordly | imodbit_cracked],
