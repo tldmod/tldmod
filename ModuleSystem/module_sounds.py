@@ -360,4 +360,8 @@ sounds = [
 
 ("bees_people_ambiance"   	,sf_2d|sf_priority_8|sf_vol_3|sf_looping|sf_stream_from_hd, ["bees_people.wav"]),
 ("bees_birds_ambiance"      ,sf_2d|sf_priority_8|sf_vol_3|sf_looping|sf_stream_from_hd, ["bees_birds.wav"]),
+
+#doubles for muted hardcoded sounds
+("camel_sounds", 0,                      ["camelGargle.wav", "camelGroan01.wav", "camelGroan02.wav", "camelRoar01.wav"]),
+("camel_death" ,sf_priority_5|sf_vol_7, ["camelDeath01.wav", "camelDeath02.wav", "camelDeath03.wav"]),
 ]

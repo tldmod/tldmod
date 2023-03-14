@@ -1,5 +1,5 @@
 soundsfile version 2
-639
+646
  drum_3.wav 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -639,7 +639,14 @@ soundsfile version 2
  trollSnarl.wav 2656
  bees_people.wav 907
  bees_birds.wav 907
-284
+ camelGargle.wav 0
+ camelGroan01.wav 0
+ camelGroan02.wav 0
+ camelRoar01.wav 0
+ camelDeath01.wav 1872
+ camelDeath02.wav 1872
+ camelDeath03.wav 1872
+286
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -924,3 +931,5 @@ snd_spider_strike 2656 2 628 636
 snd_wolf_strike 2656 2 550 636 
 snd_bees_people_ambiance 907 1 637 
 snd_bees_birds_ambiance 907 1 638 
+snd_camel_sounds 0 4 639 640 641 642 
+snd_camel_death 1872 3 643 644 645 

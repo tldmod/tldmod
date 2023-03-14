@@ -2014,7 +2014,7 @@ fac_reward_items_list = [
 #fac_dale
 [(2,itm_cooking_cauldron,0),(3,itm_map ,0),			(4,itm_leather_gloves_reward, 0), (5, itm_thrush_reward, 0), (6, itm_dale_armor_reward, 0), (7, itm_dale_sword_reward, imod_masterwork), (8, itm_black_arrows_reward, imod_masterwork), (9, itm_dale_bow_reward, 0)],
 #fac_harad
-[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_lg_bow, imod_balanced), (5, itm_rohan_saddle, imod_masterwork), (6, itm_herbarium_reward, 0), (7, itm_eagle_guard_spear, imod_masterwork), (8, itm_black_snake_armor, imod_lordly), (9, itm_harad_totem_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_lg_bow, imod_balanced), (5, itm_rohan_saddle, imod_masterwork), (6, itm_herbarium_reward, 0), (7, itm_camel, 0), (8, itm_black_snake_armor, imod_lordly), (9, itm_harad_totem_reward, 0)],
 #fac_rhun
 [(2,itm_cooking_cauldron,0),(3,itm_rhun_horse_d, imod_heavy),(4,itm_rohan_saddle, imod_heavy), (5, itm_rhun_greataxe, imod_balanced), (6, itm_ring_a_reward, 0), (7, itm_rhun_horse_h, 0), (8, itm_rhun_bow, imod_balanced), (9, itm_khamul_helm, 0)],
 #fac_khand
@@ -2052,7 +2052,7 @@ fac_reward_items_list = [
 #fac_dale
 [(2,itm_cooking_cauldron,0),(3,itm_map ,0),			(4,itm_leather_gloves_reward, 0), (5, itm_thrush_reward, 0), (6, itm_dale_armor_reward, 0), (7, itm_dale_sword_reward, imod_masterwork), (8, itm_black_arrows_reward, imod_masterwork), (9, itm_dale_bow_reward, 0)],
 #fac_harad
-[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_lg_bow, imod_balanced), (5, itm_rohan_saddle, imod_masterwork), (6, itm_herbarium_reward, 0), (7, itm_eagle_guard_spear, imod_masterwork), (8, itm_black_snake_armor, imod_lordly), (9, itm_harad_totem_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_lg_bow, imod_balanced), (5, itm_rohan_saddle, imod_masterwork), (6, itm_herbarium_reward, 0), (7, itm_camel, 0), (8, itm_black_snake_armor, imod_lordly), (9, itm_harad_totem_reward, 0)],
 #fac_rhun
 [(2,itm_cooking_cauldron,0),(3,itm_rhun_horse_d, imod_heavy),(4,itm_rohan_saddle, imod_heavy), (5, itm_rhun_greataxe, imod_balanced), (6, itm_ring_a_reward, 0), (7, itm_rhun_horse_h, 0), (8, itm_rhun_bow, imod_balanced), (9, itm_khamul_helm, 0)],
 #fac_khand

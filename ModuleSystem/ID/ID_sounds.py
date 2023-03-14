@@ -282,5 +282,7 @@ snd_spider_strike = 280
 snd_wolf_strike = 281
 snd_bees_people_ambiance = 282
 snd_bees_birds_ambiance = 283
+snd_camel_sounds = 284
+snd_camel_death = 285
 
 
