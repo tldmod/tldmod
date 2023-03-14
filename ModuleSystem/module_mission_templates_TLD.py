@@ -3390,64 +3390,168 @@ or
 
 )
 
+#InVain: Adjusted for all monsters: Camels, bears etc, also player
 custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
-	1,0,1, [(eq,"$trolls_in_battle",1)],[
-                (get_player_agent_no, ":player_agent"),
-		(try_for_agents,":troll"),          # horse rearing near troll
-			(agent_is_alive, ":troll"), #GA: horses hate dead trolls too - Removed (kham)
-			(agent_get_troop_id,":troop_race",":troll"),
-			(try_begin), # CC: Change string if it is an ent and not a troll			
-				(assign, reg73, 0),
-				(eq, ":troop_race", "trp_ent"),
-				(assign, reg73, 1),
-			(try_end),
-			(troop_get_type, ":type", ":troop_race"),
-			(try_begin),
-				(eq, ":type", tf_troll),
-				(agent_get_position,pos1,":troll"),
-				(agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":troll"),
-				(assign, reg10, ":num_nearby_agents"),
-				(gt, ":num_nearby_agents", 0),
+	1,0,2, [],[
+        (get_player_agent_no, ":player_agent"),
+        (set_fixed_point_multiplier, 100),
+        (store_mission_timer_a, ":timer"),
+		(try_for_agents,":monster"),          # horse rearing near troll
+			(agent_is_alive, ":monster"),
+            (agent_is_human, ":monster"),
+			(agent_get_troop_id,":troop_no",":monster"),
+            (str_clear, s5),
+            (str_clear, s6),
+            (str_store_agent_name, s5, ":monster"),
+			(troop_get_type, ":type", ":troop_no"),
+            (agent_get_horse, ":monster_horse", ":monster"),
+            
+            (try_begin),
+                (ge, ":monster_horse", 1),
+                (agent_get_item_id, ":monster_horse_type", ":monster_horse"),
+                #(str_store_item_name, s5, ":monster_horse_type"),  
+            (try_end),
+            
+            (try_begin),
+                (neg|troop_is_hero, ":troop_no"),
+                
+                (this_or_next|eq, ":type", tf_troll),
+                (this_or_next|eq, ":monster_horse_type", itm_camel),
+                (this_or_next|eq, ":monster_horse_type", itm_bear),
+                (eq, ":monster_horse_type", itm_werewolf),
+                #(display_message, "@{s5} troop found"),
 
-				(try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
-					(agent_ai_get_cached_enemy, ":rider", ":troll", ":nearby_agent_no"),
-					(agent_is_active, ":rider"),
-					(agent_get_horse, ":horse", ":rider"),
-					(agent_is_alive,":rider"),
-					(gt, ":horse", 1),
-					(agent_get_position,pos2,":rider"),
-					(get_distance_between_positions,":dist",pos1,pos2),
-					(lt,":dist",700),
-					(agent_get_troop_id, ":rider_troop", ":rider"), #Riding skill helps avoid (InVain)
-                                        # Arsakes: exclude all invisible riders (animals + wargs + bearshifter)
-                                        (neg|is_between, ":rider_troop", warg_ghost_begin, warg_ghost_end),
-                                        (neg|is_between, ":rider_troop", "trp_spider", "trp_dorwinion_sack"),
-                                        (neq, ":rider_troop", "trp_werewolf"),
-                                        (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"),
+            (try_begin),
+                (ge, ":monster_horse", 1),
+                (agent_get_item_id, ":monster_horse_type", ":monster_horse"),
+                (str_store_item_name, s5, ":monster_horse_type"),  
+                            #(display_message, "@{s6} mount found"),
+            (try_end),
 
-					(store_skill_level, ":riding", "skl_riding", ":rider_troop"),
-					(store_add, ":riding_chance", ":riding", 6),
-						#(assign, reg5, ":riding_chance"),
-						#(display_message, "@chance = {reg5}"),
-					(store_random_in_range, ":random", 0, ":riding_chance"),
-						#(assign, reg6, ":random"),
-						#(display_message, "@random = {reg6}"),
-					(try_begin),(le,":random",1),(agent_set_animation,":horse","anim_horse_rear"      ),(agent_play_sound,":horse","snd_neigh"),
-					 #(else_try),(eq,":random",1),(agent_set_animation,":horse","anim_horse_turn_right"),(agent_play_sound,":horse","snd_horse_low_whinny"), #these animations don't seem to bring the horse to a stop
-					 #(else_try),(eq,":random",2),(agent_set_animation,":horse","anim_horse_turn_left"),(agent_play_sound,":horse","snd_horse_low_whinny"),
-					(try_end),
-                    # let the player know what happened
-					(try_begin),
-                        (eq, ":rider", ":player_agent"),
-                        (is_between, ":random", 0, 2),
-                        (display_message, "@Your mount is scared by the {reg73?ent:troll}!",color_bad_news),
-					   (else_try),
-					    (eq, ":rider", ":player_agent"),
-                        (ge, ":random", 6),
-                        (display_message, "@Your mount is scared by the {reg73?ent:troll}, but you can master it!",color_bad_news),
-					(try_end),
-				(try_end),
-			(try_end),
+
+                (try_begin),
+                    (agent_get_position,pos1,":monster"),
+                    (agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":monster"),
+                    (assign, reg10, ":num_nearby_agents"),
+                    (gt, ":num_nearby_agents", 0),
+
+                    (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
+                        (agent_ai_get_cached_enemy, ":rider", ":monster", ":nearby_agent_no"),
+                        (agent_is_active, ":rider"),
+                        (agent_is_alive,":rider"),
+                        (agent_is_human, ":rider"),
+                        (agent_get_horse, ":horse", ":rider"),                        
+                        (gt, ":horse", 1),
+                        (agent_get_item_id, ":victim_horse_type", ":horse"),
+                        (agent_get_position,pos2,":rider"),
+                        (get_distance_between_positions,":dist",pos1,pos2),
+                        (lt,":dist",700),
+                        (agent_get_troop_id, ":rider_troop", ":rider"), 
+
+                        #never scared
+                        (neg|is_between, ":rider_troop", "trp_spider", "trp_dorwinion_sack"),
+                        (neq, ":rider_troop", "trp_werewolf"),
+                        (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"),
+
+                        #conditionally scared
+                        (assign, ":scare_check", 1),
+                        (try_begin), #wargs not scared by trolls
+                            (eq, ":type", tf_troll), (is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
+                            (assign, ":scare_check", 0),
+                        (else_try),
+                            (eq, ":monster_horse_type", itm_camel), (this_or_next|eq, ":victim_horse_type", itm_camel), (is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
+                            (assign, ":scare_check", 0),
+                        (else_try),
+                            (eq, ":monster_horse_type", itm_bear), (eq, ":victim_horse_type", itm_bear),
+                            (assign, ":scare_check", 0),                    
+                        (try_end),
+
+                        (eq, ":scare_check", 1),
+                        (agent_get_slot, ":last_stun", ":horse", slot_agent_last_knockdown_time), #use a slot to avoid stunlocking (also affected by trolls)
+                        (gt, ":timer", ":last_stun"), 
+                        (val_add, ":timer", 6), #six seconds cooldown between stuns
+                        (agent_set_slot, ":horse", slot_agent_last_knockdown_time, ":timer"),                        
+                        (store_skill_level, ":riding", "skl_riding", ":rider_troop"), #Riding skill helps avoid (InVain)
+                        (val_add, ":riding", 2),
+                        (store_random_in_range, ":scare_chance", 0, 12),
+                        (try_begin),
+                            (ge,":scare_chance",":riding"),
+                            (agent_set_animation,":horse","anim_horse_rear"),
+                            (agent_play_sound,":horse","snd_neigh"), 
+                        (try_end),                    
+                        # let the player know what happened
+                        (try_begin),
+                            (eq, ":rider", ":player_agent"),
+                            (ge,":scare_chance",":riding"),
+                            (display_message, "@Your mount is scared by the {s5}!",color_bad_news),
+                           (else_try),
+                            (eq, ":rider", ":player_agent"),
+                            (lt,":scare_chance",":riding"),
+                            (display_message, "@Your mount is scared by the {s5}, but you can master it!",color_bad_news),
+                        (try_end),
+                    (try_end),         
+                (try_end),
+            
+            (else_try), #for players and NPCs, we use agent loops
+                (agent_is_alive, ":monster"),               
+                (agent_is_human, ":monster"),
+                (this_or_next|troop_is_hero, ":troop_no"),
+                (eq, ":troop_no", trp_player),
+                (str_store_agent_name, s5, ":monster"),
+                # (display_message, "@{s5} found, yes hero"),
+                # (agent_get_horse, ":horse", ":monster"),
+                (assign, reg78, ":monster_horse_type"),
+                #(display_message, "@player horse: {reg78}"),
+                (agent_get_team, ":monster_team", ":monster"),
+                
+                (this_or_next|eq, ":type", tf_troll),
+                (eq, ":monster_horse_type", itm_camel),
+                #(display_message, "@player on camel found"),
+                          
+                (agent_get_position,pos1,":monster"),
+                (try_for_agents, ":victim", pos1, 700),
+                    (agent_is_active, ":victim"),
+                    (agent_is_alive,":victim"),
+                    (agent_is_human, ":victim"),
+                    (agent_get_horse, ":horse", ":victim"),  
+                    (gt, ":horse", 1),
+                    (agent_get_team, ":victim_team", ":victim"),
+                    (teams_are_enemies, ":monster_team", ":victim_team"),
+                    (agent_get_troop_id, ":rider_troop", ":victim"), #Riding skill helps avoid (InVain)
+                    
+                    #never scared
+                    (neg|is_between, ":rider_troop", "trp_spider", "trp_dorwinion_sack"),
+                    (neq, ":rider_troop", "trp_werewolf"),
+                    (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"),
+
+                    #conditionally scared
+                    (assign, ":scare_check", 1),
+                    (try_begin), #wargs not scared by trolls
+                        (eq, ":type", tf_troll), (is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
+                        (assign, ":scare_check", 0),
+                    (else_try), #camels only scare horses
+                        (eq, ":monster_horse_type", itm_camel), (this_or_next|eq, ":victim_horse_type", itm_camel), (is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
+                        (assign, ":scare_check", 0),
+                    (else_try),
+                        (eq, ":monster_horse_type", itm_bear), (eq, ":victim_horse_type", itm_bear),
+                        (assign, ":scare_check", 0),                    
+                    (try_end),
+
+                    (eq, ":scare_check", 1),
+                    (agent_get_slot, ":last_stun", ":horse", slot_agent_last_knockdown_time), #use a slot to avoid stunlocking (also affected by trolls)
+                    (gt, ":timer", ":last_stun"), 
+                    (val_add, ":timer", 6), #six seconds cooldown between stuns
+                    (agent_set_slot, ":horse", slot_agent_last_knockdown_time, ":timer"),                        
+                    (store_skill_level, ":riding", "skl_riding", ":rider_troop"), #Riding skill helps avoid (InVain)
+                    (val_add, ":riding", 2),
+                    (store_random_in_range, ":scare_chance", 0, 12),
+                    (try_begin),
+                        (ge,":scare_chance",":riding"),
+                        (agent_set_animation,":horse","anim_horse_rear"),
+                        (agent_play_sound,":horse","snd_neigh"), 
+                    (try_end),    
+                (try_end),
+            (try_end),
 		(try_end),
 	])
 
