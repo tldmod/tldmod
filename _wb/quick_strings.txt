@@ -1,4 +1,4 @@
-1968
+1969
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_573_wb__dev_^_B _rev_573_wb_|_dev_^_Built_2023-03-14_21:06___
+qstr__rev_577_wb__dev_^_B _rev_577_wb_|_dev_^_Built_2023-03-15_19:59___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -276,6 +276,7 @@ qstr_Less_Wargs_upkeep Less_Wargs_upkeep
 qstr_Light_Armor Light_Armor
 qstr_Bonus_to_Strength__P Bonus_to_Strength_(Player_only)
 qstr_Lead_more_Orcs Lead_more_Orcs
+qstr_Can_scare_horses Can_scare_horses
 qstr_+{reg1}_to_Party_Mor +{reg1}_to_Party_Morale
 qstr_Range:_{reg55} Range:_{reg55}
 qstr_Dwarves Dwarves
