@@ -27112,7 +27112,7 @@ command_cursor_scripts = [
 	(item_set_slot, "itm_rhun_armor_m",			slot_item_light_armor, 1),
 	(item_set_slot, "itm_rhun_armor_n",			slot_item_light_armor, 1),
 	(item_set_slot, "itm_harad_champion",		slot_item_light_armor, 1),
-	(item_set_slot, "itm_panther_guard",		slot_item_light_armor, 1),
+	#(item_set_slot, "itm_panther_guard",		slot_item_light_armor, 1),
 	(item_set_slot, "itm_khand_light",			slot_item_light_armor, 1),
 	(item_set_slot, "itm_gundabad_armor_a",		slot_item_light_armor, 1),
     (item_set_slot, "itm_gundabad_armor_b",		slot_item_light_armor, 1),
