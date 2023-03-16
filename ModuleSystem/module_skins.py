@@ -620,10 +620,10 @@ skins = [
     [], #beard meshes ,"beard_q"
     ["hair_blonde_elf"], #hair textures
     ["beard_blonde"], #beard_materials
-    [("elfface_young"  ,0xffcbe0e0,["hair_blonde_elf"],[0xffffffff, 0xffb04717, 0xff502a19]),
+    [("elfface_young"  ,0xffcbe0e0,["hair_blonde_elf"],[0xffffffff, 0xffb04717, 0xff502a19, 0xff07080c]),
      ("elfface_young_2",0xffdfefe1,["hair_blonde_elf"],[0xffffffff, 0xffb04717, 0xff632e18, 0xff502a19, 0xff19100c]),
-     ("elfface_young_4",0xffd0e0e0,["hair_blonde_elf"],[0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
-     ("elfface_young_3",0xffdceded,["hair_blonde_elf"],[0xff2f180e, 0xff171313, 0xff07080c]),
+     ("elfface_young_4",0xffd0e0e0,["hair_blonde_elf"],[0xffffffff, 0xff83301a, 0xff502a19, 0xff19100c, 0xff0c0d19]),     
+     ("elfface_young_3",0xffdceded,["hair_blonde_elf"],[0xffffffff, 0xff2f180e, 0xff171313, 0xff07080c, 0xff07080c]),
      ], #elf_face_textures,
     [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_lothlorien_yell"),(voice_victory,"snd_lothlorien_victory")], #voice sounds
     "skel_elf", 1.0,
