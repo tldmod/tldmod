@@ -1737,10 +1737,10 @@ itemsfile version 2
  itm_harad_padded Harad_Padded_Jerkin Harad_Padded_Jerkin 4  CWE_arabian_light_armor_a 134  CWE_arabian_light_armor_b 1  CWE_arabian_light_armor_b 0  CWE_arabian_light_armor_c 167772160  16842765 0 350 167772294 9 90 0 14 5 0 0 0 0 0 0 0 0
 0
 
- itm_harad_lamellar Harad_Lamellar_Vest Harad_Lamellar_Vest 4  CWE_heavy_armor_arabs_1a 134  CWE_heavy_armor_arabs_1b 1  CWE_heavy_armor_arabs_1b 0  CWE_heavy_armor_arabs_1c 704643072  16842765 0 900 704643206 22 92 0 22 8 0 0 0 0 0 0 0 0
+ itm_harad_lamellar Harad_Scale_Vest Harad_Scale_Vest 4  CWE_heavy_armor_arabs_1a 134  CWE_heavy_armor_arabs_1b 1  CWE_heavy_armor_arabs_1b 0  CWE_heavy_armor_arabs_1c 704643072  16842765 0 900 704643206 22 92 0 22 8 0 0 0 0 0 0 0 0
 0
 
- itm_harad_heavy_lamellar Harad_Heavy_Lamellar Harad_Heavy_Lamellar 5  CWE_heavy_armor_arabs_2a 134  CWE_heavy_armor_arabs_2b 1  CWE_heavy_armor_arabs_2b 0  CWE_heavy_armor_arabs_2c 167772160  CWE_heavy_armor_arabs_2d 536870912  16842765 0 1400 704643206 26 94 0 28 10 11 0 0 0 0 0 0 0
+ itm_harad_heavy_lamellar Harad_Heavy_Scale_Vest Harad_Heavy_Scale_Vest 5  CWE_heavy_armor_arabs_2a 134  CWE_heavy_armor_arabs_2b 1  CWE_heavy_armor_arabs_2b 0  CWE_heavy_armor_arabs_2c 167772160  CWE_heavy_armor_arabs_2d 536870912  16842765 0 1400 704643206 26 94 0 28 10 11 0 0 0 0 0 0 0
 0
 
  itm_harad_heavy Harasjala_Armor Harasjala_Armor 5  harad_lamellar 134  harad_heavy_1 1  harad_heavy_1 0  harad_heavy 167772160  CWE_heavy_armor_arabs_2d 536870912  16842765 0 2200 704643206 30 96 1 35 12 18 0 0 0 0 0 0 0
