@@ -1938,26 +1938,26 @@ itemsfile version 2
  itm_khand_helm_mask Khand_Mask Khand_Mask 3  Khand_Helmet_Mask2 1  Khand_Helmet_Mask2 0  Khand_Helmet_Mask1 167772160  16842764 0 100 167772294 0.5 91 20 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_khand_light Khand_Kilt Khand_Kilt 4  khand_light_a 134  khand_light_b 1  khand_light_b 0  khand_light_c 167772160  16842765 0 40 167772294 2 100 0 10 8 0 0 0 0 0 0 0 0
+ itm_khand_light Khand_Kilt Khand_Kilt 4  khand_light_a 134  khand_light_b 1  khand_light_b 0  khand_light_c 167772160  16842765 0 40 167772294 2 90 0 10 8 0 0 0 0 0 0 0 0
 1
 -50  22 2072 1 1224979098644774912 1506 2 1224979098644774913 1224979098644774912 31 2 1224979098644774913 1 2319 1 1 527 3 1224979098644774914 642 81 527 3 1224979098644774915 642 82 2121 3 1224979098644774916 1224979098644774915 1224979098644774914 32 2 1224979098644774916 0 4 0 32 2 1224979098644774912 -1 1507 1 1224979098644774912 527 3 1224979098644774917 642 92 2147483679 2 1224979098644774917 -1 2109 2 1224979098644774917 1224979098644774916 2105 2 1224979098644774917 1224979098644774914 5 0 2136 3 1224979098644774917 1224979098644774914 1224979098644774915 3 0 4 0 2320 2 1 1224979098644774917 1978 2 1 0 3 0 
 
- itm_khand_light_lam Khand_Light_Lamellar Khand_Light_Lamellar 1  khand_light_lam 0  16842765 0 700 167772294 18 92 0 22 8 9 0 0 0 0 0 0 0
+ itm_khand_light_lam Khand_Light_Footmen_Armor Khand_Light_Footmen_Armor 4  CWE_turk_med_a1 134  CWE_turk_med_a2 1  CWE_turk_med_a2 0  CWE_turk_med_a3 167772160  16842765 0 700 167772294 18 92 0 22 8 9 0 0 0 0 0 0 0
 0
 
- itm_khand_foot_lam Khand_Footman_Armor Khand_Footman_Armor 4  khand_foot_lam_a 134  khand_foot_lam_b 1  khand_foot_lam_b 0  khand_foot_lam_c 167772160  16842765 0 1300 167772294 25 93 0 28 8 14 0 0 0 0 0 0 0
+ itm_khand_foot_lam Khand_Heavy_Footman_Armor Khand_Heavy_Footman_Armor 4  CWE_turk_med_a1 134  CWE_turk_med_a2 1  CWE_turk_med_a2 0  CWE_turk_med_a3 167772160  16842765 0 1300 167772294 25 93 0 28 8 14 0 0 0 0 0 0 0
 0
 
- itm_khand_med_lam Khand_Medium_Lamellar Khand_Medium_Lamellar 4  khand_med_lam_b 134  khand_med_lam_c 1  khand_med_lam_c 0  khand_med_lam_d 167772160  16842765 0 2000 167772294 34 94 0 32 13 16 0 0 0 0 0 0 0
+ itm_khand_med_lam Khand_Medium_Lamellar Khand_Medium_Lamellar 4  CWE_turk_heavy_b1 134  CWE_turk_heavy_b2 1  CWE_turk_heavy_b2 0  CWE_turk_heavy_b3 167772160  16842765 0 1450 167772294 30 94 0 25 13 14 0 0 0 0 0 0 0
 0
 
- itm_khand_heavy_lam Khand_Heavy_Lamellar Khand_Heavy_Lamellar 4  khand_heavy_lam_a 134  khand_heavy_lam_b 1  khand_heavy_lam_b 0  khand_noble_lam 167772160  16842765 0 2900 704643206 40 96 0 38 16 20 0 0 0 0 0 0 0
+ itm_khand_heavy_lam Khand_Heavy_Lamellar Khand_Heavy_Lamellar 4  CWE_turk_heavy_c1 134  CWE_turk_heavy_c2 1  CWE_turk_heavy_c2 0  CWE_turk_heavy_c3 167772160  16842765 0 2300 704643206 34 95 0 32 16 18 0 0 0 0 0 0 0
 0
 
- itm_free_khand_light_lam Khand_Light_Lamellar Khand_Light_Lamellar 1  khand_light_lam 0  16842765 0 1000 167772294 19 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_khand_mail Khand_Mail Khand_Mail 4  CWE_turk_heavy_a1 134  CWE_turk_heavy_a2 1  CWE_turk_heavy_a2 0  CWE_turk_heavy_a3 167772160  16842765 0 2100 704643206 28 94 0 30 16 14 0 0 0 0 0 0 0
 0
 
- itm_free_khand_med_lam_b Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_b 0  16842765 0 1200 167772294 22 100 0 26 10 0 0 0 0 0 0 0 0
+ itm_khand_noble_lam Khand_Noble_Armor Khand_Noble_Armor 4  CWE_ghulam_heavy1 134  CWE_ghulam_heavy2 1  CWE_ghulam_heavy2 0  CWE_ghulam_heavy3 167772160  16842765 0 2900 704643206 40 96 0 38 16 20 0 0 0 0 0 0 0
 0
 
  itm_free_khand_med_lam_c Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_c 0  16842765 0 1300 167772294 23 100 0 27 10 0 0 0 0 0 0 0 0
