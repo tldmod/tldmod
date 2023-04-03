@@ -1100,7 +1100,6 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
 	custom_track_companion_casualties,
 	common_battle_healing,
 	custom_troll_hitting,
-	tld_remove_galadriel,
   tld_remove_volunteer_troops,
 	#common_battle_kill_underwater,
   reset_fog,

@@ -511,25 +511,37 @@ tld_slow_wounded  = (1, 0, 0, [(eq, "$slow_when_wounded", 1),],
 			
 	
 
-# CC: This trigger prevents galadriel (maybe other non-battle heroes?) from fighting in battles.
-tld_remove_galadriel = 	(0.1,0,0,
-			[(eq, "$current_town", "p_town_caras_galadhon")], 
-			[
-			(try_for_agents, ":cur_agent"),
-				(agent_get_troop_id,":troop", ":cur_agent"),
-				(eq, ":troop", "trp_lorien_lord"),
-				(call_script, "script_remove_agent", ":cur_agent"),
-			(try_end),
-			])
+# CC: This trigger prevents galadriel (maybe other non-battle heroes?) from fighting in battles. #InVain: Combined with trigger below
+# tld_remove_galadriel = 	(10,0,0,
+			# [(eq, "$current_town", "p_town_caras_galadhon")], 
+			# [
+			# (try_for_agents, ":cur_agent"),
+                # (agent_is_alive),
+				# (agent_get_troop_id,":troop", ":cur_agent"),
+				# (eq, ":troop", "trp_lorien_lord"),
+            # ] + (is_a_wb_mt==1 and [
+                # (agent_fade_out, ":cur_agent"),
+            # ] or [
+				# (call_script, "script_remove_agent", ":cur_agent"),
+            # ]) + [
+                # (display_message, "@galadriel removed?"),
+			# (try_end),
+			# ])
 
-tld_remove_volunteer_troops = (0.1,0,0, [(is_between, "$current_town", centers_begin, centers_end)], 
-			[
-			(try_for_agents, ":cur_agent"),
+tld_remove_volunteer_troops = (ti_on_agent_spawn, 0, 0, [(is_between, "$current_town", centers_begin, centers_end)], 
+			[ (store_trigger_param_1, ":cur_agent"),
+                (gt, ":cur_agent", 0), #avoids script errors for some reason
+                (agent_is_alive),
 				(agent_get_troop_id,":troop", ":cur_agent"),
-				(this_or_next|eq, ":troop", "trp_volunteers"), #Kham - remove 'volunteer' agent
-				(eq, ":troop", "trp_werewolf"), # Kham - Remove Werewolves from Sieges
+				(this_or_next|eq, ":troop", "trp_volunteers"),
+                (this_or_next|eq, ":troop", "trp_lorien_lord"),
+                (this_or_next|eq, ":troop", "trp_isengard_lord"),
+				(eq, ":troop", "trp_werewolf"),
+            ] + (is_a_wb_mt==1 and [
+                (agent_fade_out, ":cur_agent"),
+            ] or [
 				(call_script, "script_remove_agent", ":cur_agent"),
-			(try_end),
+            ]) + [
 			])
 	
 

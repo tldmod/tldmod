@@ -3131,7 +3131,7 @@ troops = [
    [itm_leather_jerkin,itm_leather_boots,],
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["start_quest_caravaneer","Torbal_the_Caravaneer","_",tf_hero| tf_randomize_face,0,0,fac_neutral,
-   [itm_leather_jerkin,itm_leather_boots,],
+   [itm_leather_jerkin,itm_leather_boots,itm_shortened_spear],
       def_attrib|level(50),wp(400),knows_common|knows_power_strike_10|knows_ironflesh_10,mercenary_face_1,mercenary_face_2],
 # ["brigand_arena_master","Tournament_Master","_",tf_hero| tf_randomize_face,scn_zendar_arena|entry(52),0,fac_commoners,
    # [itm_leather_jerkin,itm_leather_boots,],
