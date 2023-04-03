@@ -27766,6 +27766,7 @@ command_cursor_scripts = [
                 (gt, ":reward_troop", 0),
             (else_try),
                 #If no retainer then choose the highest level troop from the lord's party, prioritizing appropriate subfaction troops
+                (gt, ":party", 0),
                 (store_troop_faction, ":hero_fac", ":troop_no"),
                 (party_get_slot, ":hero_subfac", ":party", slot_party_subfaction),
                 (troop_get_type, ":hero_type", ":troop_no"),
@@ -27833,7 +27834,7 @@ command_cursor_scripts = [
             (try_end),
 
             (try_begin), #fallback option, incase something went wron
-                (eq, ":reward_troop", 0), 
+                (le, ":reward_troop", 0), 
                 (faction_get_slot, ":reward_troop", ":hero_fac", slot_faction_tier_5_troop),
             (try_end),
 

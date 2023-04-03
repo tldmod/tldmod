@@ -3293,19 +3293,19 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
     (try_begin), #South Good
       (eq, "$g_talk_troop_faction", "fac_gondor"),
-      (str_store_string, s5, "@My lord, {s12} is safe. The Corsairs were defeated."),
+      (str_store_string, s6, "@My lord, {s12} is safe. The Corsairs were defeated."),
     (else_try),
-      (str_store_string, s5, "@My lord, Esgaroth is safe. The men of Rhûn were defeated."),
+      (str_store_string, s6, "@My lord, Esgaroth is safe. The men of Rhûn were defeated."),
     (try_end),
   (else_try),
     (try_begin),
       (eq, "$g_talk_troop_faction", "fac_umbar"), #South Evil
-      (str_store_string, s5, "@The surroundings of {s12} burn. The pillaging was glorious indeed!"),
+      (str_store_string, s6, "@The surroundings of {s12} burn. The pillaging was glorious indeed!"),
     (else_try),
-      (str_store_string, s5, "@The surroundings of Esgaroth burn. The pillaging was glorious indeed!"),
+      (str_store_string, s6, "@The surroundings of Esgaroth burn. The pillaging was glorious indeed!"),
     (try_end),
   (try_end)],
-"{s5}", "lord_sea_battle_completed",[]],
+"{s6}", "lord_sea_battle_completed",[]],
 
 [anyone,"lord_sea_battle_completed", [
     (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
@@ -3314,19 +3314,19 @@ How could I expect someone like {playername} to be up to the challenge. My serva
       (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
       (try_begin), #South Good
         (eq, "$g_talk_troop_faction", "fac_gondor"),
-        (str_store_string, s5, "@This is welcome news indeed, {playername}. We were ill-prepared for such bold action from the Corsairs. But thanks to you, the black sails have been driven away, at least for a time, and we may hope, at least, that we have struck them a blow this day. You have our thanks."),
+        (str_store_string, s6, "@This is welcome news indeed, {playername}. We were ill-prepared for such bold action from the Corsairs. But thanks to you, the black sails have been driven away, at least for a time, and we may hope, at least, that we have struck them a blow this day. You have our thanks."),
       (else_try),
-        (str_store_string, s5, "@ Good work, {playername}! They showed more cunning than we credited them with, I'll give them that. But these Easterlings don't fight half as well on their boats as they do on their horses, it would seem! Perhaps we, too, should consider launching a fleet of our own... In any case, we thank you, {playername}, on behalf of Esgaroth and all the people of Dale."),
+        (str_store_string, s6, "@ Good work, {playername}! They showed more cunning than we credited them with, I'll give them that. But these Easterlings don't fight half as well on their boats as they do on their horses, it would seem! Perhaps we, too, should consider launching a fleet of our own... In any case, we thank you, {playername}, on behalf of Esgaroth and all the people of Dale."),
       (try_end),
     (else_try),
       (try_begin),
         (eq, "$g_talk_troop_faction", "fac_umbar"), #South Evil
-        (str_store_string, s5, "@Even from here, we could see the flames and smell the despair of our enemies on the wind! You have done splendidly, {playername}. Let terror now strike the heart of every man, woman and child in Gondor, for they know now that not even their mightiest strongholds are beyond our reach!"),
+        (str_store_string, s6, "@Even from here, we could see the flames and smell the despair of our enemies on the wind! You have done splendidly, {playername}. Let terror now strike the heart of every man, woman and child in Gondor, for they know now that not even their mightiest strongholds are beyond our reach!"),
       (else_try),
-        (str_store_string, s5, "@Even from here, we could see the flames and smell the despair of our enemies on the wind! You have done splendidly, {playername}. Let terror now strike the heart of every man, woman and child in Dale, for they know now that not even their mightiest strongholds are beyond our reach!"),
+        (str_store_string, s6, "@Even from here, we could see the flames and smell the despair of our enemies on the wind! You have done splendidly, {playername}. Let terror now strike the heart of every man, woman and child in Dale, for they know now that not even their mightiest strongholds are beyond our reach!"),
       (try_end),
     (try_end)],
-"{s5}", "lord_pretalk",[
+"{s6}", "lord_pretalk",[
 
     (call_script,"script_quest_sea_battle_consequences",1),
     (call_script, "script_finish_quest", "qst_blank_quest_03", 100),
@@ -7798,6 +7798,7 @@ Please, I will be deeply indebted to you if you grant me this request.", "lord_m
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",2),
     (assign, "$g_leave_encounter",1),
     (change_screen_return),
+    (finish_mission, 0),
     (jump_to_menu, "mnu_alternate_training_fight"),
   ]],
 
