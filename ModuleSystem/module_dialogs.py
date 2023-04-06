@@ -6785,7 +6785,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (this_or_next|eq,":raid_village_faction", "fac_lorien"),
     (this_or_next|eq,":raid_village_faction", "fac_woodelf"),
     (neg|is_between, ":raid_village_faction", kingdoms_begin, kingdoms_end), ## For some reason, the search counts 'ruins' etc. This takes them out! 
-    (assign,":raid_village_faction", "fac_rohan"), ## Rohan is the closest to areas where elves would mostly be.
+    (assign,":raid_village_faction", "fac_beorn"), ## Rohan is the closest to areas where elves would mostly be.
   (try_end),
   (str_store_faction_name,s3,":raid_village_faction")],
     "{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they are protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?", "lord_mission_raid_village_a",
