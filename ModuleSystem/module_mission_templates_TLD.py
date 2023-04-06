@@ -528,10 +528,10 @@ tld_slow_wounded  = (1, 0, 0, [(eq, "$slow_when_wounded", 1),],
 			# (try_end),
 			# ])
 
-tld_remove_volunteer_troops = (ti_on_agent_spawn, 0, 0, [(is_between, "$current_town", centers_begin, centers_end)], 
+tld_remove_volunteer_troops = (ti_on_agent_spawn, 1, 0, [(is_between, "$current_town", centers_begin, centers_end)], 
 			[ (store_trigger_param_1, ":cur_agent"),
                 (gt, ":cur_agent", 0), #avoids script errors for some reason
-                (agent_is_alive),
+                (agent_is_alive, ":cur_agent"),
 				(agent_get_troop_id,":troop", ":cur_agent"),
 				(this_or_next|eq, ":troop", "trp_volunteers"),
                 (this_or_next|eq, ":troop", "trp_lorien_lord"),
