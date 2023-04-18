@@ -178,8 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|Тепер гарненько по�
 dlga_player_hire_troop:close_window.1|Мені потрібно потренуватися.
 dlga_player_hire_troop:tld_sell_prisoners|Я маю кілька полонених...
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Давайте поглянемо на цих покидьків.
-; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
-; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
+dlga_player_hire_troop:tld_sell_prisoners_all|Я хочу, щоб ви взяли з собою всіх полонених, яких я маю.
+dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Добре, я відведу їх усіх до наших підземель.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Давайте переглянемо відомості про ув'язнених...
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Ви, мабуть передумали, так?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Я простежу, щоб вони не втекли з наших темниць.
@@ -308,7 +308,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Що ж, він ваш.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Боюся, у мене на нього інші плани.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Відмінно! Я пошлю своїх підручних, щоб вони якомога швидше перевезли його до в'язниці. Безумовно, це дуже нам допоможе.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Дуже погано, він представляє для нас велику цінність, {playername}.
-; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
+dlga_tld_intro_1:lord_pretalk|Посібник з війни:^^- Фракції починають облоги лише тоді, коли вони достатньо сильні.^- Більшість поселень можна взяти в облогу, лише якщо їхня фракція достатньо ослаблена. Зазвичай столиці облягають останніми.^- Якщо фракція втрачає свою столицю, вона зазнає поразки.^- Фракції отримують силу завдяки перемогам у полі та утриманню певних ключових поселень.^- Фракції втрачають силу через поразки в полі або від втрати поселень.^- Деякі квести або події можуть вплинути на силу фракції.^- Ви можете порівняти поточні рейтинги сили фракції в меню «Звіти».^- Перегляньте інформаційні сторінки, щоб отримати додаткові посібники з TLD.
 dlga_lord_start:lord_pretalk|Ласкаво просимо, {s24}.^Вам вже має бути відомо, що {s12}. Ваш обов'язок - допомогти нам у нашій боротьбі, {playername}. Коли Ви зможете заслужити мою вдячність, [level {reg1}], я також дозволю Вам користуватися скринею для зберігання Ваших речей,.
 dlga_lord_start:lord_talk|Що таке?
 dlga_lord_pretalk:lord_talk|Щось ще?
@@ -613,10 +613,10 @@ dlga_lord_talk:lord_leave.1|Мені потрібно йти.
 dlga_lord_leave_prison:close_window|Ми ще зустрінемося.
 ; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
 ; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
-; dlga_lord_offer_troops:close_window.1|I fear I cannot accept them at this time.
+dlga_lord_offer_troops:close_window.1|Я боюся, що зараз не зможу прийняти їх.
 ; dlga_lord_leave:lord_offer_item|{s23} {s24}
-; dlga_lord_offer_item:close_window|Thank you, I shall see  that it is put to good use.
-; dlga_lord_offer_item:close_window.1|I'm afraid I must decline.
+dlga_lord_offer_item:close_window|Дякую, я подбаю про те, щоб це було використано з користю.
+dlga_lord_offer_item:close_window.1|Я боюся, що я повинен відмовитися.
 dlga_lord_leave:close_window|Подивимося, {playername}.
 dlga_lord_leave:close_window.1|Звичайно, {playername}. Прощавай.
 dlga_lord_leave:close_window.2|Нехай щастить, {playername}.
@@ -927,7 +927,7 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|Мені потріб�
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Гаразд. Я розшукаю цих гоблінів і покінчу з ними.
 dlga_merchant_quest_taken_bandits:close_window|Зробите? Я такий радий це чути. Удачі вам.
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Даруйте, але зараз я не маю на це часу.
-; dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Справді! Група бандитів турбує це місце, і я не знаю, як з ними впоратися. Вони влаштовували засідки та грабували п’яних новобранців під покровом ночі, а потім швидко, як блискавка, зникали, коли нарешті з’явилися охоронці. Нам не вдалося спіймати жодного з них. Вони нападають лише на одиноких людей, ніколи не наважуючись показати себе, коли навколо група. Мені потрібен хтось, хто зможе впоратися з цими бандитами сам і перемогти. Здається, це єдиний спосіб їх позбутися. Ви впораєтесь із завданням?
 ; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
 ; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Ні, мене це не цікавить.
