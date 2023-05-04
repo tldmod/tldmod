@@ -26,7 +26,7 @@ dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|오, 내 친애하�
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|오, 내 친애하는 사촌 말이군요! 메리아독 브랜디벅, 메리라고도 부르죠. 우린 호빗입니다, {선생/선생}, 그리고 우리 둘 다 샤이어 출신이죠! 오랜 친구 메리, 에도라스에서 어떻게 지내는지 궁금하네요.
 dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|부탁이 하나 있습니다, {나리/마님}.
 dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|물론이지, {s1}. 뭐지?
-dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|전언을 전해주시겠습니까, 제 사촌인 {s1} 에게? 그는 {s3}의 {s2} 에 있을 겁니다. {s4}를 섬기고 있겠군요..
+dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|제 사촌인 {s1} 에게 전언을 전해주시겠습니까 ? 그는 {s3}의 {s2} 에 있을 겁니다. {s4}를 섬기고 있겠군요..
 dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|{s1}을 지나갈 일이 생기면 이 전언을 기꺼이 그대의 사촌에게 전해주도록 하지.
 dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|미안하군, {s1}, 내겐 그럴 시간이 없다네.
 dlga_hobbit_general_talk_ask_accept:close_window|고마워요! {s1}
@@ -45,8 +45,8 @@ dlga_treebeard_introduce_2:treebeard_introduce_3|방해해서 미안합니다.. 
 dlga_treebeard_introduce_3:treebeard_introduce_4|(뻣뻣한 다리의 나무 거인은 작은 가지, 잎 뒤에 가려진 입을 벌립니다. 아주 굵고, 느리고, 진동하는 목소리로 그는 아주 천천히, 위엄있게 말합니다.) "흐룸... 흠... '나'는 내 이름을 말하지 않을 거야.. 지금은. 말하는 데에 아주 오래 걸리든. 내 이름은 항상 자라고 또 오래 살았기 때문에 하나의 이야기와 같아. 진짜 이름을 말하려면 거기 속한 이야기를 내 언어, 고대 엔트어로 말해야만 해. 그건 사랑스러운 언어지만, 우리는 그 언어로 말하고 들을 가치가 있는 것이 아니라면 그 언어로 아무 말도 하지 않기 때문에, 그 언어로 말하는 건 아주 오래 걸려."
 dlga_treebeard_introduce_4:treebeard_introduce_5|오, 당신은 엔트였군요! 전설에서 당신들에 대해 말하는 걸 들어본 적이 있습니다. 당신을 만나 영광입니다. 폐를 끼치고 싶진 않으니 원하신다면 떠나겠습니다.
 dlga_treebeard_introduce_5:treebeard_questtalk|뻣뻣한 나무거인(엔트)와 동료 엔트는 침묵 속에서 수분 동안 우두커니 산들바람이 그들의 수풀로 우거진 머리칼과 수염을 더듬고 지나가도록 서있었다. 그들은 한 마가목처럼 보이는 한 이상할만치 성미급한 엔트가 말을 하고싶어 안절부절 못할때까지 서로를 한참동안 쳐다보았다. 그러나 그 엔트도 예의 커다란 엔트가 말을 이을때까지 침묵을 유지했다.
-dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?말했듯, 우린 자네가 보여준 예의바른 태도에 감사를 표하고 싶네... {reg1?당신의 종에서 당신같은 존재는 드물지, 엘프와 다시 이야기 할 수 있어서 즐겁군.}.}  엔트부인들이 사라진 후 세계는 암울했다네... 그리고 우리의 고향을 파괴하려는 암흑의 군주가 만들어낸 사악한 생명체들이 판을 치고있지... 저희는 빠르지만, 성급하지 않은 그런 이를 찾고있어... 우리가 다음 계획을 준비하는 동안 우리를 도와줄 수 있는 그런...^많은 오르크 군대가 숲을 급습하고 불화살로 우리 나무를 태웠다네... 만약 자네가 오르크들을 물리치고 오르크들이 다시는 우리의 숲을 위협하지 않게 만들 수 있다면, 우린 자네를 진정한 친구로서 맞아줄 수 있을거라네... 이 일을 먼저 처리 한 뒤에 다시 얘기해보세나...
-dlga_treebeard_quest_brief:close_window|오르크는 실로 사악하기 그지 없죠. 그들이 다시는 숲에 해를 끼칠수 없도록 하겠습니다.
+dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?말했듯, 우린 자네가 보여준 예의바른 태도에 감사를 표하고 싶네... {reg1?당신의 종에서 당신같은 존재는 드물지, 엘프와 다시 이야기 할 수 있어서 즐겁군.}.}  엔트부인들이 사라진 후 세계는 암울했다네... 그리고 우리의 고향을 파괴하려는 암흑의 군주가 만들어낸 사악한 생명체들이 판을 치고있지... 저희는 빠르지만, 성급하지 않은 그런 이를 찾고있어... 우리가 다음 계획을 준비하는 동안 우리를 도와줄 수 있는 그런...^많은 오르크 군대가 숲을 급습하고 불화살로 우리 나무를 태웠다네... 만약 자네가 오크들을 물리치고 오크들이 다시는 우리의 숲을 위협하지 않게 만들 수 있다면, 우린 자네를 진정한 친구로서 맞아줄 수 있을거라네... 이 일을 먼저 처리 한 뒤에 다시 얘기해보세나...
+dlga_treebeard_quest_brief:close_window|오크들은 실로 사악하기 그지 없죠. 그들이 다시는 숲에 해를 끼칠수 없도록 하겠습니다.
 dlga_treebeard_quest_brief:treebeard_pretalk|죄송합니다. 지금은 이것을 할 시간이 없습니다.
 dlga_treebeard_questtalk:close_window|(엔트 장로는 굳게 닫힌 그의 입을 천천히 열었고, 다른 엔트들도 당신을 보며 땅을 울리는 깊고 긴 소리를 웅얼거렸다. 곧 당신은 이것이 엔트식 웃음이라는걸 알아차렸다.  비교적 어린, 마가목처럼 보이는 앤트가 그의 발가락이 7개 달린 거대한 발로 땅을 구르자 당신은 금방이라도 넘어질 지경이었다..)   진정하게, 날쌘돌이, 우리는 우리의 젊은 전사가 다치는걸 원하지않는다네. 흐으으음.... 나는 나무수염, 엔트중 가장 오래된 자이며, 우리 모두가 네 노고에 감사하고있다네...흐으음.... 그 성공을 축하하기 위해 이 엔트워터를 줄테니- 받아주게나.
 dlga_treebeard_questtalk:close_window.1|(뻣뻣한 거인과 그의 엔트 동지들은 산들바람이 그들의 나뭇잎 머리카락과 수염을 흔드는 동안 침묵하며 서있다.)
@@ -55,9 +55,9 @@ dlga_treebeard_talk_response:treebeard_about_himself|당신에 대해 더 알려
 dlga_treebeard_talk_response:treebeard_about_entwives|엔트 부인에 대해서 말해주세요
 dlga_treebeard_talk_response:treebeard_about_ents|엔트에 대해 더 알려주세요.
 dlga_treebeard_talk_response:close_window|아무것도 아닙니다. 잘 있어요.
-dlga_treebeard_about_himself:treebeard_pretalk|(엔트 장로는 굳건하고 억세보였다. 잠시뒤 그는 느릿하게 말을 이어갔다.) 성급해하지 말게.. 우리는 이 문제에 대해 오르크들을 나무로부터 떼어놓고나서도 얘기할수있을테니.
+dlga_treebeard_about_himself:treebeard_pretalk|(엔트 장로는 굳건하고 억세보였다. 잠시뒤 그는 느릿하게 말을 이어갔다.) 성급해하지 말게.. 우리는 이 문제에 대해 오크들을 나무로부터 떼어놓고나서도 얘기할수있을테니.
 dlga_treebeard_about_himself:treebeard_pretalk.1|흠... 난 내 종 중에서 가장 나이가 많다네... 몇몇의 필멸자들은 나를 나무수염이라 하고 엘프들은 날 팡고른이라 부르지... 흠...나와 나무껍질거죽, 그리고 잎새머리는 암흑시대 이전부터 숲을 걸어온 유일한 엔트이지... 젊은 날쎈돌이야 바람결을 맞는 조그마한 나무처럼 구부러지고, 흔들릴 수 있지만... 지금의 나는 내가 어렸을적 만큼 유연하지 않다네... 흠... 만약 엔트부인들이 여기 있었더라면....
-dlga_treebeard_about_entwives:treebeard_pretalk|(엔트 지도자의 목소리가 매우 깊어지고 갑자기 슬픈 표정을 짓는다. )^'흠... 안타까운 얘기지만... 나무들이 오르크에게서 자유로워 졌을 때 이야기해 보지...
+dlga_treebeard_about_entwives:treebeard_pretalk|(엔트 지도자의 목소리가 매우 깊어지고 갑자기 슬픈 표정을 짓는다. )^'흠... 안타까운 얘기지만... 나무들이 오크에게서 자유로워 졌을 때 이야기해 보지...
 dlga_treebeard_about_entwives:treebeard_pretalk.1|허험...흠... 아름다운 엔트부인들... 그들은 심고 키우기를 좋아했지... 우리는 그녀들의 목소리에 귀를 기울여야만 했어... 음... 지금은 갈색땅이라 불리우는 그곳에 정원을 가꾸기 위해 떠난 그녀들은 필멸자들에게 땅을 비옥하게 만드는 법을 가르쳐 주기도 했지... 우린 여러번 그들을 방문하기도 했다네, 사우론.....이 공격하기 전까진... 이제 엔트부인들은 모두 시들고 말았다네... 흐으음... 핌브레실... 어엿하게 자라난 그녀의 씨앗들... 여태껏 정성스레 찾아왔지만... 찾을 수 없었다네... 아직까지도...
 dlga_treebeard_about_ents:treebeard_pretalk|흐으음... 우리들은 위협으로부터 나무들을 보호하는 목자라네.... 우리는 다른 어떤 필멸의 종족보다도 오래됐지만 우리를 무지로부터 구해준 엘프들 보다는 오래되지 않았다네.... 시대들이 지나가며 많은것들이 변해갔지.... 처음엔 우린 좀 더 유연하고 잽쌌다네..... 허나 세월이 우리로부터 그것을 앗아갔어..... 어떤 엔트는 우리처럼 살아 움직이는.... 다시말해 활기찬 엔트지만 많은 엔트들이 깊은 잠에 빠져 '나무'처럼 되어가고 있다네...... 대다수의 나무들은 물론 그저 나무일 뿐이지만 그중 몇몇 엔트들은 반쯤은 깨어있고.... 또 몇은 완전히 깨어있고.... 그중 몇은 다시 움직이기 시작한다네... 항상 있는 일이야... 숲에 무슨 일이 벌어질 때... 그중 몇은 악의를 품은 이도 있겠지.... 그렇다면, 우리는 우리가 할 수 있는 일을 할 뿐이라네... 수상하거나 무례한 이들을 쫓아내는 것...
 dlga_start:close_window.1|으으으음?
@@ -161,7 +161,7 @@ dlga_companion_faction_demolished:close_window.1|미안하지만, 우리는 다�
 dlga_companion_home_description:companion_home_description_2|좀 더 자세히 얘기해보게.
 dlga_companion_home_description:close_window| 애석하게도 지금 우리에게 잡담할 시간은 없어보이는군.
 dlga_companion_home_description:close_window.1|난 내 동료가 그런 사소한 것들로 날 귀찮게 하지 않았으면 좋겠어.
-dlga_start:player_hire_troop|{s33}^^제가 {s21} 주둔군의 책임자입니다. 절 보자셨다고요?
+dlga_start:player_hire_troop|{s33}^^제가 {s21} 주둔군의 책임자입니다. 절 보자하셨다고요?
 dlga_player_hire_troop:player_hire_troop_give|내 부대의 대원들이 {s21}를 지키는데에 더 유용할걸세.
 dlga_player_hire_troop:close_window|여기 주둔한 내 병사들을 재검토하고 싶군.
 dlga_player_hire_troop:player_hire_trolls_take|나는 전투 트롤을 지휘하기에 충분한 지휘관이다- 이제 내놔!
@@ -178,8 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|이 덩치를 잘 대해 주세요.
 dlga_player_hire_troop:close_window.1|전 훈련이 필요합니다.
 dlga_player_hire_troop:tld_sell_prisoners|죄수들을 좀 데려왔다네.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} 어디 그 망할 자식 좀 보자고.
-; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
-; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
+dlga_player_hire_troop:tld_sell_prisoners_all|내가 데리고 있는 모든 포로들을 데려갔으면 하는데.
+dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|알겠습니다,  전부 저희 지하감옥에 데려가도록 하죠.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|우리 지하감옥 관련 기록을 좀 확인해보도록 하지...
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|마음이 좀 바뀌었나, 응?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|감옥에서 아무도 도망치지 못하게 하겠습니다.
@@ -547,7 +547,7 @@ dlga_lord_mission_investigate_fangorn_accepted:lord_pretalk|좋다. 가서 소�
 dlga_lord_tell_mission:lord_mission_find_lost_spears|{playername} 처럼 용맹한 지휘관에게 맡길 만한 임무가 있습니다. 룬 무리와 교전하며 저희는 고전하고 있고, 전투에서 하나둘씩 패배하고 있습니다. 언젠가 전설에 따르면 (오래 전 돌아가신) Bladorthin 왕이 난쟁이들에게 주문제작해 만든 창들이 있었다고 합니다. 이 창들은 세번이나 벼려졌고 도금까지 되어있지만, 배달되거나 값을 받았다는 전설은 없습니다..
 dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|그렇다면 제가 어떻게 하면 좋겠습니까? 군주이시여?
 dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|그 무기들이 있다면 우리 군대의 사기를 효과적으로 고양시킬 수 있을 것입니다. 그 창들을 찾아주십시오. 주문을 받은 외로운 산의 난쟁이들에게 가서 물어보십시오. 조심하셔야합니다. 오르크와 트롤들과 마주칠 수 있으니까요. 이 임무를 맡아주시겠습니까?
-dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|오르크나 트롤이 무슨 대수라고! 제가 창을 찾아드리겠습니다. 군주이시여.
+dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|오크나 트롤이 무슨 대수라고! 제가 창을 찾아드리겠습니다. 군주이시여.
 dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|유감스럽지만 그러지 못할 것 같군요. 군주이시여.
 dlga_lord_mission_find_lost_spears_rejected:lord_pretalk|신중함이야말로 당신의 용맹함이 지닌 가장 큰 장점이군요. 정찰을 계속하는게 좋겠습니다.
 dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|그럼 행운을 비네!
@@ -659,7 +659,7 @@ dlga_castle_gate_open:close_window.2|어서 들어오시죠. 문을 열어드리
 dlga_castle_gate_open:close_window.3|들어오시죠, 하지만 성벽 안에서 소란을 일으키지 않도록 주의해주십쇼. {s2}께선 문제가 일어나는 것을 원하지 않습니다.
 dlga_castle_gate_open:close_window.4|{s2}께서는 당신이 여기 계시는 것이 못마땅하시답니다. 이제 가시죠.
 dlga_start:caravan_help1|도와주셔서 감사합니다! 이제 안전합니다. 제 이름은 Torbal이고, 물건을 운송하던 중에 습격을 받았습니다.^^ 저렇게 큰 오르크를 보신 적 있습니까? 지금까지 피해왔던 평범한 종류와는 다른 놈들인 것 같던데요. 놈들 방패에 칠한 건 고대 모르도르 표식입니다. 강 이쪽 편에서는 오래 동안 보지 못했던 것이죠. ^^뭔가 끔찍한 일이 일어나려나 봅니다.. 전쟁이 다가오고 있어요! ^^ 가장 가까운 마을로 가서 그곳 지휘권자에게 당신이 본 것에 대해 경고해주는 것이 좋겠습니다. 중요한 일이니 서둘러주십시오.
-dlga_caravan_help1:caravan_help2|아니요, 그렇게 큰 오르크는 본 적 없습니다. 못된 것... ^^ 나는 우리 모두가 느끼고 있는 전쟁에 참여하기 위해 왔다네.
+dlga_caravan_help1:caravan_help2|아니요, 그렇게 큰 오크는 본 적 없습니다. 못된 것... ^^ 나는 우리 모두가 느끼고 있는 전쟁에 참여하기 위해 왔다네.
 dlga_caravan_help2:caravan_help_tut|그렇습니까? 역시 그랬군요! 유능한 전사일 줄 알았다니까요. ^^오늘은 운이 좋았군요. 이 행운을 틈타 마을로 가서 이 더러운 짐승들에 대해 경고해주어야겠습니다. ^^여기, {s10} 근방에서 쓰이는 화폐입니다. 
 dlga_caravan_help_tut:caravan_help3|(자원 포인트 튜토리얼)^^. {s11} 지역에서 구입할 때 사용하는 자원 포인트는 당신 팩션에 상관 없이 {s11} 지역에서만 얻을 수 있습니다. REPORTS에서 더 많은 정보를 확인하세요.
 dlga_caravan_help3:caravan_help4|안전한 여행 되시게, Torbal. 다시 만날것 같은 예감이 드는군.

@@ -58,14 +58,14 @@ ui_are_you_sure_you_want_to_import_the_character|คุณแน่ใจหร�
 ; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw.
 ; ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
 ; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
-; ui_delivered_number_damage|Delivered %d damage.
+ui_delivered_number_damage|ได้รับความเสียหาย%d
 ui_mission_losses_killed|ฆ่า :
 ; ui_party_losses|%s  : %d wounded --- %d killed of %d.
 ui_following|กำลังติดตาม
 ui_accompanying|ที่มาพร้อมกับ
 ui_dumping_value_items|%d จะหายไปตลอดกาล คุณแน่ใจหรือไม่?
-; ui_dumping_value_item|One item will be permanently lost, are you sure?
-; ui_notification_requirements_not_met|You don't have the required skills or attributes for this weapon.
+ui_dumping_value_item|สิ่งของชิ้นหนึ่งจะหายไปอย่างถาวร คุณแน่ใจหรือไม่?
+ui_notification_requirements_not_met|คุณไม่มีทักษะหรือคุณสมบัติที่จำเป็นสำหรับอาวุธนี้
 ui_disband|ยุบกลุ่ม
 ui_you_hit_a_friendly_troop|คุณโจมตีฝ่ายเดียวกัน
 ui_you_are_not_carrying_any_arrows|คุณไม่ได้พกพาลูกธนู
@@ -79,23 +79,23 @@ ui_you_got_number_experience|คุณได้รับค่าประสบ
 ui_you_have_advanced_to_level_number|คุณได้เลื่อนระดับไปสู่เลเวล %d
 ui_you_got_value|ได้รับ %s
 ui_quest_succeeded_value|ภารกิจสำเร็จ: %s
-; ui_number_of_companions_exceeds_leadership_limit| Number of companions exceeds leadership limit.
-; ui_number_of_prisoners_exceeds_prisoner_management_limit| Number of prisoners exceeds prisoner management limit.
+ui_number_of_companions_exceeds_leadership_limit|สหายหลายคนเกินขีดจำกัดความเป็นผู้นำ
+ui_number_of_prisoners_exceeds_prisoner_management_limit|นักโทษจำนวนมากเกินขีดจำกัดการจัดการนักโทษ
 ui_shared_number_experience_within_party|คุณได้แบ่งปันค่าประสบการณ์ %d หน่วย กับกองทัพของคุณ
 ui_your_relations_with_value_has_improved_from_number_to_number|ค่าความสัมพันธ์กับ %s ได้พัฒนาจาก  %d ไปสู่  %d
 ui_your_relations_with_value_has_deteriorated_from_number_to_number|ค่าความสัมพันธ์กับ %s ได้ลดลงจากจาก %d ไปสู่ %d
 ui_you_lost_value|คุณสูญเสีย %s
-; ui_change_graphics_settings_explanation|Some changes you have made will take effect when you enter a new area.
+ui_change_graphics_settings_explanation|การเปลี่ยนแปลงบางอย่างที่คุณทำจะมีผลเมื่อคุณเข้าสู่พื้นที่ใหม่
 ; ui_game_log_window|Game Log Window
 ; ui_blunt_short|b
 ; ui_tracks|Tracks
 ui_order_button_hold_fire|เตรียมยิง
 ui_order_button_fire_at_will|ยิงเมื่อมีโอกาส
 ui_order_button_fire_orders|คำสั่งยิง
-; ui_need_to_learn_prisoner_management|You need to learn Prisoner Management skill in order to take prisoners.
+ui_need_to_learn_prisoner_management|คุณต้องเรียนรู้ทักษะการจัดการนักโทษเพื่อรับนักโทษ
 ; ui_game_log_window|Game Log Window
-; ui_unbalanced|Unbalanced
-; ui_can_crush_through_blocks|Can crush through blocks
+ui_unbalanced|ไม่สมดุล
+ui_can_crush_through_blocks|สามารถบดขยี้ผ่านบล็อก
 
 ; ui_order_1|Select Order 1
 ; ui_order_2|Select Order 2
@@ -103,8 +103,8 @@ ui_order_button_fire_orders|คำสั่งยิง
 ; ui_order_4|Select Order 4
 ; ui_order_5|Select Order 5
 ; ui_order_6|Select Order 6
-; ui_order_button_hold_this_position|Hold this position
-; ui_order_button_follow_me|Follow me
+ui_order_button_hold_this_position|ตรึ่งตำแหน่งนี้
+ui_order_button_follow_me|ปฏิบัติตามฉัน
 ; ui_order_button_charge|Charge
 ; ui_order_button_stand_ground|Stand ground
 ; ui_order_button_retreat|Retreat
@@ -113,7 +113,7 @@ ui_order_button_fire_orders|คำสั่งยิง
 ; ui_order_button_spread_out|Spread out
 ; ui_order_button_stand_closer|Stand closer
 ui_order_button_mount_horses|ขี่
-; ui_order_button_dismount|Dismount
+ui_order_button_dismount|ลงจากหลังม้า
 ui_order_button_hold_fire|เตรียมยิง
 ui_order_button_fire_at_will|ยิงเมื่อมีโอกาส
 ; ui_order_button_use_blunt_weapons|Use only blunt weapons

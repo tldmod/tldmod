@@ -613,10 +613,10 @@ dlga_lord_talk:lord_leave.1|Omluv mě.
 dlga_lord_leave_prison:close_window|Na viděnou. 
 ; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
 ; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
-; dlga_lord_offer_troops:close_window.1|I fear I cannot accept them at this time.
+dlga_lord_offer_troops:close_window.1|Obávám se je v tuhle dobu nebudu moci přijmout.
 ; dlga_lord_leave:lord_offer_item|{s23} {s24}
 ; dlga_lord_offer_item:close_window|Thank you, I shall see  that it is put to good use.
-; dlga_lord_offer_item:close_window.1|I'm afraid I must decline.
+dlga_lord_offer_item:close_window.1|Obávám se že budu muset odmítnout.
 dlga_lord_leave:close_window|Uvidíme, {playername}.
 dlga_lord_leave:close_window.1|Zajisté, {playername}. Sbohem.
 dlga_lord_leave:close_window.2|Přeji ti dobré cesty, {playername}.
