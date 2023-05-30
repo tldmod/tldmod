@@ -1803,10 +1803,10 @@ itemsfile version 2
  itm_harad_khopesh Harad_Khopesh Harad_Khopesh 1  harad_khopesh 0  4259842 9223388529822793742 340 156672 2.5 92 0 0 0 0 30720 90 0 80 0 256 30
 0
 
- itm_black_snake_sword Harad_Cobra_Sword Harad_Cobra_Sword 2  harad_sword_cobra_low 0  harad_sword_cobra 156672  4259842 9223388529822793742 360 156672 2.5 91 0 0 0 0 30720 97 0 80 0 256 30
+ itm_black_snake_sword Harad_Cobra_Sword Harad_Cobra_Sword 4  harad_sword_cobra_low 0  harad_sword_cobra 156672  scab_cobra_low 3458764513820540928  scab_cobra 3458764513820697600  4259842 9223388564182532110 360 156672 2.5 91 0 0 0 0 30720 97 0 80 0 256 30
 0
 
- itm_harad_heavy_sword Harad_Dragon_Sword Harad_Dragon_Sword 2  harad_sword_dragon_low 0  harad_sword_dragon 156672  4259842 9223388529822793742 400 156672 2.5 95 0 0 0 0 32768 92 0 95 0 256 32
+ itm_harad_heavy_sword Harad_Dragon_Sword Harad_Dragon_Sword 4  harad_sword_dragon_low 0  harad_sword_dragon 156672  scab_dragon_low 3458764513820540928  scab_dragon 3458764513820697600  4259842 9223388564182532110 400 156672 2.5 95 0 0 0 0 32768 92 0 95 0 256 32
 0
 
  itm_horandor_a Harad_Scimitar Harad_Scimitar 1  horandor_a 0  4259842 9223388529822793742 320 156672 2.5 91 0 0 0 0 22528 96 0 90 0 256 22
@@ -1815,7 +1815,7 @@ itemsfile version 2
  itm_skirmisher_sword Harad_Skirmisher_Sword Harad_Skirmisher_Sword 1  skirmisher_sword 0  4259842 9223388529822793742 300 156672 2.5 90 0 0 0 0 30720 96 0 60 0 256 30
 0
 
- itm_harad_sabre Harad_Salamander_Sword Harad_Salamander_Sword 2  harad_sword_salamander_low 0  harad_sword_salamander 156672  4259842 9223388529822793742 320 156672 2.5 91 0 0 0 0 27648 102 0 68 0 256 27
+ itm_harad_sabre Harad_Salamander_Sword Harad_Salamander_Sword 4  harad_sword_salamander_low 0  harad_sword_salamander 156672  scab_salamander_low 3458764513820540928  scab_salamander 3458764513820697600  4259842 9223388529822793742 320 156672 2.5 91 0 0 0 0 27648 102 0 68 0 256 27
 0
 
  itm_harad_mace Far_Harad_Mace Far_Harad_Mace 1  harad_mace 0  4259842 9223388529822793742 350 156672 2.5 93 0 0 0 12 30720 96 0 50 0 512 542
