@@ -2631,7 +2631,7 @@ itemsfile version 2
  itm_cooking_cauldron Cooking_Cauldron Cooking_Cauldron 1  cauldron_a 0  11 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_eorl_cavalry_sword Sword_of_Eorl Sword_of_Eorl 1  eorl_cavalry_sword_b_longer 0  71307266 9223635919939043583 3000 156672 3 100 0 0 0 18 53248 97 0 110 0 278 52
+ itm_eorl_cavalry_sword Sword_of_Eorl Sword_of_Eorl 1  eorl_cavalry_sword_b_longer 0  71307267 9223635919939043583 3000 156672 3 100 0 0 0 18 53248 97 0 110 0 278 52
 0
 
  itm_garlic_reward Garlic Garlic 1  garlic.9 0  11 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2718,7 +2718,7 @@ itemsfile version 2
  itm_leather_boots_reward Hunter_Boots Hunter_Boots 1  got_stark_hanter_boots 0  4110 0 200 123731968 1 100 0 0 22 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_armor_th Rohan_Royal_Armor Rohan_Royal_Armor 9  theoden_armour 0  dno_priest_3_1_dark 2048  dm_nazgulrobe 512  pippin 32  merry 16  dno_priest_3_1 8  dno_priest_3_final 2199023255552  old_nazgulrobe 256  galadriel 4  16777229 0 4800 704643206 35 100 0 44 25 18 0 0 0 0 0 0 0
+ itm_rohan_armor_th Rohan_Royal_Armor Rohan_Royal_Armor 9  theoden_armour 0  dno_priest_3_1_dark 2048  dm_nazgulrobe 512  pippin 32  merry 16  dno_priest_3_1 2199023255552  dno_priest_3_final 8  old_nazgulrobe 256  galadriel 4  16777229 0 4800 704643206 35 100 0 44 25 18 0 0 0 0 0 0 0
 0
 
  itm_wilderness_cowl Hunter_Cowl Hunter_Cowl 1  got_stark_hood 0  1073745932 0 1000 167772294 1 100 12 0 0 0 0 0 0 0 0 0 0
