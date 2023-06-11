@@ -61,8 +61,8 @@ qst_troublesome_bandits|- Kłopotliwe gobliny
 qst_troublesome_bandits_text|{s9} miasta {s4} poprosił cię, byś dopadł{/a} grasujące w pobliżu kłopotliwe gobliny.
 qst_deal_with_looters|- Orkowie
 qst_deal_with_looters_text|Starszy {s4} poprosił cię, byś zaj{ął/ęła} się plemiennymi orkami błąkającymi się wokół {s4}.
-; qst_deal_with_night_bandits|Deal with Night Bandits
-; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
+qst_deal_with_night_bandits|Rozpraw się z Nocnymi Bandytami
+qst_deal_with_night_bandits_text|Starszy {s14} poprosił cię o rozprawienie się z nocnymi bandytami w {s14}.
 qst_deliver_food|- Żywność dla {s3}
 qst_deliver_food_text|{s9} z {s3} poprosił cię, byś dostarczył{/a} im {reg5} szt żywności w ciągu 10 dni.
 qst_deliver_iron|- {s6}

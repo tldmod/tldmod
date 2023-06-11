@@ -93,7 +93,7 @@ itm_hood_black|Czarny Kaptur
 itm_hood_green|Zielony Kaptur
 itm_hood_grey|Szary Kaptur
 itm_hood_leather|Skórzany Kaptur
-; itm_mail_coif|Mail Coif
+itm_mail_coif|Czepiec kolczy
 itm_axe_a|Topór Północy
 itm_axe_b|Północny Brodaty Topór
 itm_axe_c|Topór Północy
@@ -498,8 +498,8 @@ itm_mirkwood_helm_a|Hełm Strzelca Leśnych Elfów
 itm_mirkwood_helm_b|Hełm Leśnych Elfów
 itm_mirkwood_helm_c|Ciężki Hełm Leśnych Elfów
 itm_mirkwood_helm_d|Królewski Hełm Leśnych Elfów
-; itm_woodelf_leather_boots|Woodelf Leather Boots
-; itm_mirkwood_boots|Greenwood Boots
+itm_woodelf_leather_boots|Skórzane buty Leśnych Elfów
+itm_mirkwood_boots|Buty z Mrocznej Puszczy
 itm_harad_tunic|Haradzka Szata
 itm_harad_padded|Przeszywanica z Harondoru
 itm_harad_hauberk|Kolczuga z Harondoru
@@ -524,11 +524,11 @@ itm_harad_eaglehelm|Hełm Gwardii Orła
 itm_lion_helm|Hełm Gwardii Lwa
 itm_harad_pantherhelm|Czapa Gwardii Pantery
 itm_harad_khopesh|Haradzki Chopesz
-; itm_black_snake_sword|Harad Cobra Sword
-; itm_harad_heavy_sword|Harad Dragon Sword
+itm_black_snake_sword|Haradzki Miecz Kobry
+itm_harad_heavy_sword|Haradzki Smoczy Miecz
 itm_horandor_a|Haradzki Sejmitar
 itm_skirmisher_sword|Haradzki Miecz Harcownika
-; itm_harad_sabre|Harad Salamander Sword
+itm_harad_sabre|Haradzki Miecz Salamandry
 itm_harad_mace|Buława z Dalekiego Haradu
 itm_far_harad_2h_mace|Wielka Buława z Dalekiego Haradu
 itm_harad_dagger|Haradzki Nóź
@@ -642,7 +642,7 @@ itm_umb_helm_a|Muszlowy Hełm Korsarza
 itm_umb_helm_b|Wysoki Hełm Korsarzy
 itm_umb_helm_c|Hełm Korsarza
 itm_umb_helm_d|Hełm Łupieżcy z Umbaru
-; itm_umb_helm_reward|Ancient Numenorean Karma
+itm_umb_helm_reward|Starożytna Numenorejska Karma
 itm_corsair_trident|Trójząb Morskiego Gniewu
 itm_corsair_boots|Buty Korsarza
 itm_umb_shield_a|Tarcza Korsarza
@@ -726,7 +726,7 @@ itm_gondor_lance_banner|Lanca z Chorągwią Gondoru
 itm_amroth_lance_banner|Lanca z Chorągwią Dol Amroth
 itm_rohan_lance_banner_sun|Lanca z Chorągwią Rohanu
 itm_rohan_lance_banner_horse|Lanca z Chorągwią Rohanu
-; itm_fur_gloves_reward|Hunter Gloves
+itm_fur_gloves_reward|Rękawice Łowcy
 itm_ent_water|Dziwna Misa z Wodą
 itm_map|Mapy Śródziemia
 itm_athelas_reward|Wysuszone Liści Athelasu

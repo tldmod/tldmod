@@ -178,7 +178,7 @@ dlga_player_hire_troll_buy_done:close_window|Теперь хорошенько �
 dlga_player_hire_troop:close_window.1|Мне нужно потренироваться.
 dlga_player_hire_troop:tld_sell_prisoners|Я прив{ёл/ела} несколько пленных...
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Давайте взглянем на эти отбросы.
-; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
+dlga_player_hire_troop:tld_sell_prisoners_all|Я хочу, чтобы вы забрали всех заключенных, которые у меня есть.
 ; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Давайте просмотрим сведения о заключённых...
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Передумали, да?

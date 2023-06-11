@@ -38,7 +38,7 @@ qstr_A_peaceful_village_n|Niedaleko Westfold znajduje się spokojna wioska...
 qstr_The_War_is_upon_Roha|Wojna wkroczyła do Rohanu!
 qstr_Minas_Tirith___The_W|Minas Tirith - Białe Miasto
 qstr_The_White_Tree_stand|Białe Drzewo zdaje się martwe odkąd wygasła Królewska linia
-; qstr_And_the_Shadow_grows|And the Shadow grows ever stronger in the East
+qstr_And_the_Shadow_grows|Cień staje się coraz silniejszy na wschodzie
 qstr_Minas_Morgul___City_|Minas Morgul - Miasto Nazguli
 qstr_Sauron_s_armies_marc|Armia Saurona maszeruje na Wojnę!
 qstr_Adventurers_at_audie|Poszukiwacze Przygód na audiencji u Namiestnika Denethora...
@@ -94,7 +94,7 @@ qstr_TLD_New_FormAI|Nowe FormAI modułu TLD
 qstr_Siege_AI:__|Oblężenie AI:
 qstr_Basic__better_perfor|Podstawowy (lepsza wydajność)
 qstr_Advanced|Zaawansowany 
-; qstr_Campaign_difficulty:|Campaign difficulty:  
+qstr_Campaign_difficulty:|Trudność Kampanii:
 qstr_Hard|Trudny
 qstr_Default|Domyślny
 qstr_Easy|Łatwy
@@ -237,8 +237,8 @@ qstr_Strengthens_all_Hero|Wzmacnia wszystkich Bohaterów
 qstr_+2_to_First_Aid__Par|+2 do Pierwszej Pomocy (Drużyna)
 qstr_lead_more_Uruks|Poprowadź więcej Uruków
 qstr_+1_to_Power_Throw|+1 do Potężnego Rzutu
-; qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
-; qstr__Scales_with_Charism|(Scales with Charisma. Human leaders only.)
+qstr_Recruit_Black_Numeno|Zwerbuj Czarnych Numenorejczyków z różnych miejsc
+qstr__Scales_with_Charism|(Skaluję się z Charyzmą. Tylko ludzcy przywódcy).
 qstr_+1_to_Spotting|+1 do Spostrzegania
 qstr_+2_to_Weapon_Master|+2 do Mistrzostwo w Broniach
 qstr_+2_to_First_Aid|+2 do Pierwszej Pomocy
@@ -250,12 +250,12 @@ qstr_Lead_more_Orcs|Poprowadź więcej Orków
 qstr_+{reg1}_to_Party_Mor|+{reg1} do morale drużyny
 qstr_Range:_{reg55}|Zasięg: {reg55}
 qstr_Dwarves|Krasnoludy
-; qstr_Humans_and_Elves|Humans and Elves
-; qstr_Orcs|Orcs
-; qstr_Uruks_and_Uruk_Hai|Uruks and Uruk-Hai
-; qstr_Humans_Uruks_and_Uru|Humans, Uruks, and Uruk-Hai
-; qstr_Humans|Humans
-; qstr_This_item_can_be_use|This item can be used by {s2}
+qstr_Humans_and_Elves|Ludzie i Elfy
+qstr_Orcs|Orkowie
+qstr_Uruks_and_Uruk_Hai|Urukowie i Uruk-Hai
+qstr_Humans_Uruks_and_Uru|Ludzie, Urukowie i Uruk-Hai
+qstr_Humans|Ludzie
+qstr_This_item_can_be_use|Ten przedmiot może być używany przez {s2}.
 qstr_Do_you_want_to_disem|Chcesz wyładować?
 qstr_Move_here|Przemieść się tutaj
 qstr_View_notes|Przejrzyj notatki
@@ -635,7 +635,7 @@ qstr_support|wsparcie
 qstr_bodyguard|strażnik
 qstr_undetermined_type_of|nieokreślony typ
 qstr_{s1}_has_fled_the_ba|{s1} uciekł z pola walki!
-; qstr_Your_side_is_at_{reg|Your side is at {reg1}% cohesion ({reg3}% recent events), the enemy at {reg2}%!
+qstr_Your_side_is_at_{reg|Twoja strona ma {reg1}% jedności ({reg3}% ostatnich wydarzeń), wróg {reg2}%!
 qstr_Morale_of_your_troop|Morale twoich ludzi słabną!
 qstr_Morale_of_your_enemi|Morale przeciwnika maleją!
 qstr_Your_enemies_flee_in|Twoi przeciwnicy uciekają w popłochu!
@@ -733,8 +733,8 @@ qstr_Switch_Back_to_3rd_P|Przełącz z powrotem do widoku z 3 osoby na kamerę o
 qstr_Fixed_Custom_Camera|Poprawiona Kamera Użytkownika
 qstr_Press_Ctrl_+_Left_/_|Naciśnij Ctrl + Lewo / Ctrl + klawisze strzałek w prawo, aby zmienić ramiona
 qstr_Press_Ctrl_+_Down_to|Naciśnij Ctrl + Strzałka w dół, by wycentrować.
-; qstr_Press_Ctrl_and_+/__t|Press Ctrl and +/- to zoom in/out
-; qstr_Press_Ctrl_and_Up/Do|Press Ctrl and Up/Down arrow keys to tilt up/down
+qstr_Press_Ctrl_and_+/__t|Naciśnij Ctrl i +/-, aby powiększyć/pomniejszyć.
+qstr_Press_Ctrl_and_Up/Do|Naciśnij klawisz Ctrl i klawisze strzałek w górę/w dół, aby przechylić w górę/w dół.
 qstr_Fixed_Camera___Right|Poprawiona kamera - prawe ramię
 qstr_Fixed_Camera___Left_|Poprawiona kamera - lewę ramię
 qstr_Fixed_Camera___Cente|Kamera naprawiona - wycentrowano
@@ -744,7 +744,7 @@ qstr_Cannot_leave_now.|Nie można teraz opuścić lokacji.
 qstr_You_have_found_the_l|Znalazłeś lokalnego kowala.
 qstr_You_have_found_the_lo|Znalazłeś lokalny autorytet.
 qstr_You_have_found_the_loc|Znalazłeś lokalny magazyn.
-; qstr_You_have_found_the_c|You have found the captain of the garrison.
+qstr_You_have_found_the_c|Znalazłeś kapitana garnizonu.
 qstr_You_look_through_Hen|Spoglądasz przez Henneth Annun, Okno Zachodzącego Słońca. Piękny widok odnawia twoją wiarę w Zachód i moce kryjące się za nim.
 qstr__cancelled_the_{reg1|(Anulowano {reg10} punktów doświadczenia za zabijanie więźniów)
 qstr_Forming_ranks.|Formować szeregi!
@@ -776,7 +776,7 @@ qstr_{s11}_is_{s10}_in_th|{s11} {s10} w wyniku ataku Nazgula!
 qstr_Received_{reg66}_dam|Otrzymano {reg66} obrażeń.
 qstr_You_yell_for_your_ho|Krzyczysz na swego konia.
 qstr_You_do_not_need_to_r|Nie musisz jeszcze zmobilizować swoich żołnierzy.
-; qstr_You_rally_{reg10}_tr|You rally {reg10} troops!
+qstr_You_rally_{reg10}_tr|Zebrałeś {reg10} żołnierzy!
 qstr_{s5}_rallies_{reg65?|{s5} zagrzewa do walki {reg65?her:his} żołnierzy!
 qstr_You_have_killed_{reg|Zabiłeś w walce {reg1} wrogów!
 qstr_Your_bravery_inspire|Odwagą inspirujesz swoje wojska!
@@ -788,7 +788,7 @@ qstr_{s21}_{reg24?killed:|{s21} {reg24? zabity:pozbawiony przytomności} przez {
 qstr_A_bear_has_been_summ|Niedźwiedź został wezwany do bitwy!
 qstr_In_The_Last_Days_of_|W grze The Last Days of the Third Age twoje oddziały będą się ustawiać i utrzymywać na początku każdej bitwy, zamiast szarżować na oślep. Aby ustawić oddziały w formację, naciśnij 'J' dla rang, 'K' dla tarczy-ściany, 'L' dla klina, ';' dla kwadratu. Aby cofnąć formację, wciśnij 'U'. Jeśli twoje oddziały uciekają, możesz nacisnąć 'V', aby je zmobilizować. W każdej bitwie możesz wykonać ograniczoną liczbę szarż, a ich ilość zależy od twojego przywództwa i charyzmy.
 qstr_You_can_also_order_y|Możesz również rozkazać swoim żołnierzom, aby cyklicznie wybierali rodzaj broni, której chcesz użyć^^ Naciśnij O, aby przełączać się pomiędzy rodzajami rozkazów broni. Naciśnij P, aby przełączać się między rodzajami rozkazu tarczy.
-; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^See Info Pages for how to control the different camera modes.
+qstr_The_Last_Days_of_the|W Last Days of the Third Age zaimplementowano niestandardową kamerę, aby ominąć obecne ograniczenia kamery w odniesieniu do krótszych ras (np. orków i krasnoludów).^^ Zobacz strony z informacjami, aby dowiedzieć się, jak kontrolować różne tryby kamery.
 qstr_Battlefield_is_too_s|Pole bitwy jest za małe dla skomplikowanych formacji AI.
 qstr_You_have_a_clear_per|Jasno domyślasz się wielkiego niebezpieczeństwa, wszędzie wokół Ciebie! 
 qstr_New_ent_reached_batt|Na pole bitwy przybył nowy Ent...
@@ -839,12 +839,12 @@ qstr_You_are_now_hidden.|Jesteś teraz ukryt{y/a}.
 qstr_You_move_out_of_hidi|Opuszczasz kryjówkę.
 qstr_The_guards_have_spot|Straż odkryła ciało!
 qstr_Alarm_Level_is_now_a|Poziom Alarmu 1!
-; qstr_You_have_been_too_sl|You have been too slow: The alarm has spread, and the sorcerer made his escape before you could get close.
+qstr_You_have_been_too_sl|Byliście zbyt powolni: alarm się rozprzestrzenił, a czarnoksiężnik uciekł, zanim zdążyliście się zbliżyć.
 qstr_Alarm_Level_is_now_at|Poziom Alarmu 0!
 qstr_The_guards_have_spott|Straż cię odkryła!
 qstr_Alarm_Level_is_now_at_|Poziom Alarmu 2!
-; qstr_Enemy_reinforcements_|Enemy reinforcements arrived.
-; qstr_Venture_deeper_into_|Venture deeper into the forest and find a way onward.
+qstr_Enemy_reinforcements_|Przybyły posiłki wroga.
+qstr_Venture_deeper_into_|Zapuść się głębiej w las i znajdź dalszą drogę.
 qstr_The_sorcerer_has_fle|Czarownik uciekł!
 qstr_Report_this_ill_news|Bezzwłocznie przekaż Pani złe wieści.
 qstr_The_sorcerer_is_flee|Czarownik ucieka! Zabij go!
@@ -942,18 +942,18 @@ qstr_You_drank_the_Ent_Wa|Napił{e/a}ś się Wody Entów...
 qstr_You_used_the_Orc_Bre|Użyłeś naparu orków
 qstr_You_and_your_compani|Ty i Twoi towarzysze wypijacie łyk Miruvoru. Czujesz się odświeżony i wzmocniony.
 qstr_You_give_a_few_leave|Dajesz kilka liści Athelasu swoim uzdrowicielom.
-; qstr_Not_enough_party_spa|Not enough party space.
+qstr_Not_enough_party_spa|Za mało miejsca w drużynie.
 qstr_elites|Elitarni
 qstr_regulars|Regularni
 qstr_recruits|rekruci
-; qstr_wild|wild
-; qstr_goblins|goblins
+qstr_wild|dzikie
+qstr_goblins|gobliny
 qstr_lordless|bezpański
 qstr_orc_stragglers|orkowi maruderzy
 qstr_You_camp_and_beat_th|Rozbijasz obóz i uderzasz w Bębny Głębin. Potężny dźwięk przyciąga grupę {s1} {s2}.
-; qstr_You_camp_and_beat_the|You camp and beat the Drums of the Deep. The powerful sound attracts a group of {s1} {s2}.
-; qstr_You_camp_and_beat_the_|You camp and beat the Drums of the Deep. The weak sound attracts a group of {s1} {s2}.
-; qstr_You_camp_and_try_to_|You camp and try to beat the Drums of the Deep, yet noone answers your pitiful call.
+qstr_You_camp_and_beat_the|Rozbijasz obóz i uderzasz w Bębny Głębin. Potężny dźwięk przyciąga grupę {s1}. {s2}.
+qstr_You_camp_and_beat_the_|Rozbijasz obóz i uderzasz w Bębny Głębin. Słaby dźwięk przyciąga grupę {s1}. {s2}.
+qstr_You_camp_and_try_to_|Rozbijasz obóz i uderzyć w Bębny Głębin, ale nikt nie odpowiada na twoje żałosne wołanie.
 qstr_^^^A_great_victory!^|^^^Znakomite zwycięstwo!^^^Teraz rozumiem o co chodziło z tymi Fangoriańskimi mitami...
 qstr_^^^Defeated...^^^Sca|Pokonani...^^ Rozproszeni w lesie Fangorn... Samotni...
 qstr_Troll_caged_in_wheel|Trol zamknięty w klatce.
@@ -984,8 +984,8 @@ qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|Zmierza ku tobie {s1}^^
 qstr_You_are_attacking_a_|Napotkał{eś/aś} jakąś grupę. Po chwili okazuje się, że to {s1}^^
 qstr_The_battle_against_t|Bitwa z {s1} trwa.
-; qstr_There_are_{reg39}_al|There are {reg39} allied commanders in this battle. You can command them and their troops for {reg40}/{reg41} influence.
-; qstr_There_are_{reg39}_all|There are {reg39} allied commanders in this battle. You don't have enough influence to assume command.
+qstr_There_are_{reg39}_al|W bitwie biorą udział {reg39} sojuszniczych dowódców. Możesz dowodzić nimi i ich oddziałami za {reg40}/{reg41} wpływów.
+qstr_There_are_{reg39}_all|There are {reg39} allied commanders in this battle. You don't have enough influence to assume command.
 qstr_Having_a_small_party|Posiadanie małej imprezy ma swoje zalety ... Ty i twoi żołnierze ukrywacie się przed wrogiem przez kilka godzin, aby mieć pewność, że nie zobaczycie.
 qstr_Your_ability_to_mast|Twoja umiejętność panowania nad otoczeniem pozwoliła ci znaleźć bezpieczne miejsce do ukrycia się. (Twoja umiejętność w Wildcraft pozwala ci ukrywać się z oddziałami {reg1}).
 qstr_{reg4}_will_be_lost.|{reg4} zostanie utracone.
@@ -1090,10 +1090,10 @@ qstr_You_defeated_{reg5}_e|Pokonałeś wrogów {reg5}.
 qstr_You_failed_to_defeat|Nie udało Ci się pokonać żadnego wroga.
 qstr_The_sorcerer_slain_y|Po zabiciu czarnoksiężnika, Ty i Twoi towarzysze pospiesznie opatrzyliście rany i wymknęliście się w noc. Zewsząd dobiegają Cię ochrypłe głosy i czujesz, że w cieniu szuka Cię wiele płonących oczu. Wkrótce gniew zamienia się w rozczarowanie, a odgłosy pościgu cichną, zastąpione przez zwyczajową, ciężką ciszę Mirkwood. Udało ci się uciec
 qstr_The_sorcerer_slipped|Czarownik wymknął się z twojego uścisku i wślizgnął się w ciemność swojej domeny. Z sercami obciążonymi porażką, ty i twoi towarzysze pospiesznie zabandażowaliście rany i wycofaliście się w noc. Szydercze głosy wrzeszczą na wasze plecy i czujecie wiele płonących oczu, które próbują przebić się przez cień. Śmiechy i obelgi wkrótce zostają litościwie stłumione, a na ich miejsce pojawia się zwyczajowa, ciężka cisza Mrocznej Puszczy. Udało Ci się uciec.
-; qstr_You_approach_a_heavi|You approach a heavily guarded region of the forest... ^^ You have to decide whether you venture forward on your own, or take some troops with you.
-; qstr_You_have_a_good_chan|You have a good chance of avoiding the guards and slipping through unnoticed.
-; qstr_You_may_have_a_chanc|You may have a chance of avoiding the guards.
-; qstr_You_will_probably_ha|You will probably have to fight the guards.
+qstr_You_approach_a_heavi|Zbliżasz się do silnie strzeżonego obszaru lasu... Musisz zdecydować, czy pójdziesz naprzód sam, czy zabierzesz ze sobą kilka oddziałów.
+qstr_You_have_a_good_chan|Masz duże szanse na uniknięcie strażników i prześlizgnięcie się niezauważonym.
+qstr_You_may_have_a_chanc|Możesz mieć szansę na uniknięcie strażników.
+qstr_You_will_probably_ha|Prawdopodobnie będziesz musiał walczyć ze strażnikami.
 qstr_You_wait_for_darknes|Czekasz do zmroku...
 qstr_You_are_quickly_disc|Zostajesz szybko odkryt{y/a} przez wroga.
 qstr_You_advance_stealthi|Ukrywasz się głęboko w lesie.
@@ -1128,7 +1128,7 @@ qstr_{reg65}_Moria_and/or|{reg65} Moria i / lub wojska Gundabadu zabite. (Liczni
 qstr_{reg65}_{s3}_troops_|{reg65} {s3} żołnierze zginęli. (Licznik odświeża się co godzinę)
 qstr_{reg66}_{s5}_troops_|{reg66} {s5} żołnierze zginęli. (Licznik odświeża się co godzinę)
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} żołnierze zginęli. (Licznik odświeża się co godzinę)
-; qstr_{s8}_in_{s9}_asked_y|{s8} in {s9} asked you to slay {reg67} {s10}.^ {reg68} {s11} killed. (Counter refreshes every hour)
+qstr_{s8}_in_{s9}_asked_y|{s8} w {s9} poprosił cię o zabicie {reg67}. {s10}.^ {reg68} {s11} zabity/ch. (Licznik odświeża się co godzinę)
 qstr_{s1}_is_scouted.|Spatrolowano {s1} i okolice.
 qstr_{s2}_was_defeated!|{s2} poniósł porażkę!
 qstr_The_Age_of_Men_has_f|Era Ludzi w końcu minęła. Teraz Dwie Wieże zbierają rozproszone zastępy i sojuszników by zadecydować kto będzie rządził Śródziemiem!
@@ -1139,7 +1139,7 @@ qstr_In_a_desperate_attem|W desperackiej próbie obrony przed wrogami, Sauron wy
 qstr_Guardians_of_{s6}|Obrońcy {s6}
 qstr_Guard_Legion_of_{s6}|Strzeż Legion {s6}
 qstr_Scouts_report_that_{|Zwiadowcy meldują, że {s6} pozyskał wielką armię w pobliżu {s7}, w ostatniej próbie obrony swej stolicy.
-; qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
+qstr_The_forces_of_{s2}_e|Siły {s2} założyły obóz w {s15}!
 qstr_The_hosts_of_{s2}_ma|Zastępy {s2} wracają by bronić własnych domów!
 qstr_{playername}_s_Reser|Rezerwy {playername}
 qstr_Gondor_has_called_fo|Gondor wezwał pomocnika!
@@ -1521,24 +1521,24 @@ qstr_We_need_to_grind_dow|Musimy stępić ostrze wroga, {playername}. Ich patrol
 qstr_{s9}_asked_you_to_el|{s9} poprosił cię, byś wyeliminował{/a} {reg1} {s13} oddziałów.
 qstr_{s9}_asked_you_to_fr|{s9} poprosił cię o uwolnienie {s13} od rozszalałego Trola.
 qstr_{reg1}_{s16}_joined_|{reg1} {s16} dołączył do twojej drużyny.
-; qstr_Wait_{playername}._I|Wait, {playername}. I don't say this often, but you are an exceptionally reliable servant.
-; qstr_Halt_{playername}._I|Halt, {playername}. I once thought you little more than a snaga, but you are proving to be a useful servant.
-; qstr_Take_these_warriors_|Take these warriors, that your horde might continue to serve me.
-; qstr_One_last_thing_{play|One last thing, {playername}. In a land filled with backstabbers and rivals, you have always been a true ally.
-; qstr_Wait_{playername}._W|Wait, {playername}. When we met I sensed in you a rival, but I see now I was mistaken.
-; qstr_Take_these_warriors_a|Take these warriors, and use them to strike down our foes.
-; qstr_Before_you_leave_{pl|Before you leave, {playername}, know that you have always been a good friend to me.
-; qstr_Wait_{playername}._I_|Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend.
-; qstr_Allow_me_to_repay_yo|Allow me to repay you by giving you some troops.
-; qstr_Wait_{playername}._C|Wait, {playername}. Capable servants like you and your warriors deserve the best equipment.
-; qstr_Halt_{playername}._It|Halt, {playername}. It's shameful to have my servants using such inferior equipment.
-; qstr_Take_this_{s22}_and_|Take this {s22} and let it aid your rampage.
-; qstr_Before_you_go_{playe|Before you go, {playername}. Great warriors like you and your companions deserve only the best weapons, armor, and mounts.
-; qstr_Wait_{playername}._Y|Wait, {playername}. Your army has done well, but I think you'd do better with superior equipment.
-; qstr_Take_this_{s22}._I_h|Take this {s22}. I have no need of it.
-; qstr_Just_a_moment_{playe|Just a moment, {playername}. Heroes like you and your companions are worthy of the finest weapons, armor, and horses.
-; qstr_Wait_{playername}._Yo|Wait, {playername}. You have been an able commander in the war effort. I think it's time you had some better equipment.
-; qstr_Accept_this_{s22}_ma|Accept this {s22}, may it aid you and your companions.
+qstr_Wait_{playername}._I|Czekaj, {playername}. Nie mówię tego często, ale jesteś wyjątkowo niezawodnym sługą.
+qstr_Halt_{playername}._I|Stój, {playername}. Kiedyś uważałem cię tylko za snaga, ale okazujesz się być użytecznym sługą.
+qstr_Take_these_warriors_|Weź tych wojowników, aby twoja horda nadal mi służyła.
+qstr_One_last_thing_{play|Ostatnia rzecz, {playername}. W krainie pełnej zdrajców i rywali zawsze byłeś prawdziwym sojusznikiem
+qstr_Wait_{playername}._W|Czekaj, {playername}. Kiedy się poznaliśmy, wyczułem w tobie rywala, ale teraz widzę, że się myliłem.
+qstr_Take_these_warriors_a|Weź tych wojowników i użyj ich do pokonania naszych wrogów.
+qstr_Before_you_leave_{pl|Zanim odejdziesz, {playername}, wiedz, że zawsze byłeś dla mnie dobrym przyjacielem.
+qstr_Wait_{playername}._I_|Czekaj, {playername}. Nie znam cię nawet w połowie tak dobrze, jakbym chciał, ale do tej pory byłeś dobrym przyjacielem.
+qstr_Allow_me_to_repay_yo|Pozwól, że ci się odwdzięczę, dając ci kilka oddziałów.
+qstr_Wait_{playername}._C|Zaczekaj, {playername}. Zdolni słudzy, tacy jak ty i twoi wojownicy, zasługują na najlepszy sprzęt.
+qstr_Halt_{playername}._It|Stój, {playername}. To wstyd, że moi słudzy używają tak słabego sprzętu.
+qstr_Take_this_{s22}_and_|Weź to {s22} i pozwól mu wspomóc swój szał.
+qstr_Before_you_go_{playe|Zanim odejdziesz, {playername}. Wielcy wojownicy, tacy jak ty i twoi towarzysze, zasługują tylko na najlepszą broń, zbroje i wierzchowce.
+qstr_Wait_{playername}._Y|Czekaj, {playername}. Twoja armia spisała się dobrze, ale myślę, że lepiej poradziłbyś sobie z lepszym wyposażeniem.
+qstr_Take_this_{s22}._I_h|Weź to {s22}. Nie potrzebuję tego.
+qstr_Just_a_moment_{playe|Chwileczkę, {playername}. Bohaterowie tacy jak ty i twoi towarzysze są godni najlepszej broni, zbroi i koni.
+qstr_Wait_{playername}._Yo|Czekaj, {playername}. Byłeś zdolnym dowódcą podczas działań wojennych. Myślę, że nadszedł czas na lepszy sprzęt.
+qstr_Accept_this_{s22}_ma|Przyjmij to {s22}, niech pomoże tobie i twoim towarzyszom
 qstr_the_Dwarves_so_that_|Krasnoludy, gdyż przejeżdżając przez Erebor lub Żelazne Wzgórza  , możesz spróbować wyposażyć się w bajeczny krasnoludzki oręż
 qstr_Gondor_so_that_if_yo|Gondor, gdyż przejeżdżając przez ich ziemie, możesz spróbować kupić ich sławne zbroje
 qstr_Rohan_so_that_if_you|Rohan, gdyż przejeżdżając przez ich ziemie, możesz spróbować kupić ich bajeczne konie
@@ -1649,7 +1649,7 @@ qstr_The_{s9}_of_{s3}_ask|{s9} z {s3} poprosił cię, byś dostarczył{/a} mu {r
 qstr_The_{s9}_of_{s3}_aske|{s9} z {s3} poprosił cię, byś dostarczył{/a} mu {reg5} {s6} w ciągu {reg0} dni.
 qstr_Escort_the_supply_tr|Eskortuj transport zapasów do {s8}.
 qstr_The_{s9}_of_{s4}_aske|{s9} z {s4} poprosił cię, byś zaj{ął/ęła} się sprawiającymi kłopoty miastu goblinami.
-; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of bandits making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
+qstr_The_{s9}_of_{s14}_ha|{s9} z {s14} poprosił cię o zajęcie się grupą bandytów sprawiających kłopoty w {s14}. Pojawiają się oni tylko w nocy i atakują samotnych ludzi na ulicach.
 qstr_refugees|uchodźców
 qstr_slaves|niewolników
 qstr_{s1}_Refugees|{s1} Uchodźców
@@ -1688,10 +1688,10 @@ qstr_Then_let_us_go._Stay|A więc chodźmy. Zostań blisko. Będę cię potrzebo
 qstr_There_will_be_blood_|Na pewno będzie krew. Pozostań blisko lub przegap.
 qstr_Goodbye_friends.|Do zobaczenia, przyjaciele.
 qstr_See_you_later_if_you|Do zobaczenia, o ile nie zginiesz.
-; qstr_I_don_t_need_your_he|I don't need your help any longer. Go home.
-; qstr_I_don_t_have_any_nee|I don't have any need for you. Get lost.
-; qstr_We_will_return_to_ou|We will return to our previous task. Goodbye.
-; qstr_Lads_we_re_going_hom|Lads, we're going home!
+qstr_I_don_t_need_your_he|Nie potrzebuję już twojej pomocy. Idź do domu.
+qstr_I_don_t_have_any_nee|Nie potrzebuję cię. Spadaj.
+qstr_We_will_return_to_ou|Wrócimy do naszego poprzedniego zajęcia. Do widzenia.
+qstr_Lads_we_re_going_hom|Chłopaki, wracamy do domu!
 qstr__^Oh_and_take_back_t| ^Och, i zabierz tych, którzy nie są z naszego ludu.
 qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Those:That} odważny {reg28?soldiers:soldier} z pewnością pomoże nam obronić nasze ziemie.{s32} {s23}^^[earned {reg14} Punkty Surowców {s14}]
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Those:That} przydatny {reg28?troops:troop} nam spowodować większy bajzel.{s32}^{s23}^^[earned {reg14} Punkty Surowców {s14}]
