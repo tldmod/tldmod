@@ -178,8 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|Şimdi bu büyük adama iyi bakın,
 dlga_player_hire_troop:close_window.1|Biraz egitime ihtiyacım var.
 dlga_player_hire_troop:tld_sell_prisoners|Sana biraz esir getirdim.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Hadi sefil pisligi görelim.
-; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
-; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
+dlga_player_hire_troop:tld_sell_prisoners_all|Benimle birlikte tüm mahkumları götürmek istiyorum.
+dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Anladım, hepsini kendi zindanlarımıza götürecegim.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Zindandanın kayıtlarını kontrol etmeme izin ver.
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Fikrini degiştirdin mi?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Zindanımızdan kaçmayacaklarından emin olacagım.
@@ -611,12 +611,12 @@ dlga_lord_talk:lord_leave_prison|Şimdi gitmeliyim.
 dlga_lord_talk:lord_leave|Bu küçük sohbet bitti.Ben gidiyorum
 dlga_lord_talk:lord_leave.1|Müsaadenizle.
 dlga_lord_leave_prison:close_window|Tekrar görüşecegiz.
-; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
-; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
-; dlga_lord_offer_troops:close_window.1|I fear I cannot accept them at this time.
-; dlga_lord_leave:lord_offer_item|{s23} {s24}
-; dlga_lord_offer_item:close_window|Thank you, I shall see  that it is put to good use.
-; dlga_lord_offer_item:close_window.1|I'm afraid I must decline.
+dlga_lord_leave:lord_offer_troops|{s23} {s24}, {reg41} {s25} var, kimler {reg42?are:is} sana?
+dlga_lord_offer_troops:close_window|Teşekkür ederim, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
+dlga_lord_offer_troops:close_window.1|Ne yazık ki şu anda onları kabul edemem.
+dlga_lord_leave:lord_offer_item|{s23} {s24}
+dlga_lord_offer_item:close_window|Teşekkür ederim, bunun iyi bir şekilde kullanılmasını saglayacagım.
+dlga_lord_offer_item:close_window.1|Üzgünüm, reddetmek zorundayım.
 dlga_lord_leave:close_window|Görecegiz bakalım, {playername}.
 dlga_lord_leave:close_window.1|Tabii ki, {playername}. Elveda.
 dlga_lord_leave:close_window.2|Sizede iyi yolculuklar, {playername}.
@@ -927,9 +927,9 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|O sürekli problem ç�
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Pekala.Goblinlerin Peşine Düşecegim
 dlga_merchant_quest_taken_bandits:close_window|Yapacak mısın? Bunu duyduguma çok sevindim. Bol şanslar.
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Üzgünüm,bunun için zamanım yok.
-; dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
-; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
-; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
+dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Gerçekten mi! Burayı rahatsız eden bir grup haydut var ve onlarla nasıl başa çıkacagım konusunda çaresizim. Geceleyin sarhoş askerleri pusuya düşürüp soymaya devam ediyorlar, ve sonunda bekçiler ortaya çıktıgında hızlıca kayboluyorlar. Henüz hiçbirini yakalayamadık. Sadece tek başına olanları saldırıyorlar, hiçbir zaman bir grup oldugunda ortaya çıkmaya cesaret edemiyorlar. Bu haydutlarla yalnız başına mücadele edebilecek ve galip gelebilecek birisine ihtiyacım var. Onlardan kurtulmanın tek yolunun bu gibi görünüyor. Görev için hazır mısınız?
+dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|Burayı rahatsız eden bir haydut grubu var ve onlarla nasıl başa çıkacagım konusunda son noktadayım. Geceleyin sarhoş askerlere pusu kurup soygun yapıyorlar ve bekçiler nihayet ortaya çıktıgında şimşek hızıyla kayboluyorlar. Hiçbirini yakalamayı başaramadık. Sadece yalnız insanlara saldırıyorlar, hiçbir zaman grup oldugunda ortaya çıkmaya cesaret edemiyorlar. Bu haydutlarla tek başına mücadele edebilecek ve galip gelebilecek birine ihtiyacım var. Onlardan kurtulmanın tek yolunun bu gibi görünüyor. Bu görev için hazır mısınız?
+dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Haydutları öldürmek mi? Elbette, kesinlikle yapabilirim!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Hayır, ilgilenmiyorum.
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|Omuzlarımdan büyük bir yükü kaldırdın, {playername}. Eger başarıyla geri dönersen güzel bir ödül bekleyebilirsin. Yalnız kendini öldürme, olur mu?
 dlga_merchant_quest_requested:merchant_quest_brief.9|Buradaki garnizon kumandanı bir grup {s12}'yi, {s13}'e götürecek iyi bir savaşçı arıyor.
