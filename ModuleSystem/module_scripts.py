@@ -12716,6 +12716,7 @@ scripts = [
   
 # script_select_battle_tactic
 ("select_battle_tactic", [
+	(assign, ":defense_not_an_option", 0),
 	(assign, "$ai_team_1_battle_tactic", 0),
 	(get_player_agent_no, ":player_agent"),
 	(agent_get_team, ":player_team", ":player_agent"),
@@ -12732,11 +12733,10 @@ scripts = [
 		(store_add, "$ai_team_2", ":player_team", 2),
 	(try_end),
 	(set_show_messages, 0),
-	(call_script, "script_select_battle_tactic_aux", "$ai_team_1"),
+	(call_script, "script_select_battle_tactic_aux", "$ai_team_1", ":defense_not_an_option"), # swy: second parameter is always zero here
 	(assign, "$ai_team_1_battle_tactic", reg0),
 	(try_begin),
 		(ge, "$ai_team_2", 0),
-		(assign, ":defense_not_an_option", 0),
 		(try_begin),
           (eq, "$ai_team_1_battle_tactic", btactic_hold),
           (assign, ":defense_not_an_option", 1), #don't let two AI defend at the same time
