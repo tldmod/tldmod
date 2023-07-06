@@ -87,10 +87,10 @@ itemsfile version 2
  itm_pony Pony Pony 1  pony 0  65537 0 70 119185604608 0 90 0 0 0 0 30 40 20 100 0 1 0
 0
 
- itm_arnor_warhorse Arnorian_Warhorse Arnorian_Warhorse 1  arnor_warhorse_a 0  65537 0 2200 119185604608 0 92 0 40 0 4 150 34 37 100 0 35 0
+ itm_free_arnor_warhorse Arnorian_Warhorse Arnorian_Warhorse 1  arnor_warhorse_b 0  65537 0 2200 119185604608 0 92 0 40 0 4 150 34 37 100 0 35 0
 0
 
- itm_dunedain_warhorse Dunedain_Warhorse Dunedain_Warhorse 1  arnor_warhorse_b 0  65537 0 1800 119185604608 0 94 0 36 0 4 140 35 38 100 0 30 0
+ itm_dunedain_warhorse Dunedain_Warhorse Dunedain_Warhorse 2  arnor_warhorse_a 0  arnor_warhorse_b 262144  65537 0 1800 119185604608 0 94 0 36 0 4 140 35 38 100 0 30 0
 0
 
  itm_rohirrim_courser Rohirrim_Courser Rohirrim_Courser 1  rohan_horse01 0  65537 0 700 16106389504 0 91 0 12 0 2 90 40 46 100 0 22 0
@@ -466,34 +466,34 @@ itemsfile version 2
  itm_loss_throwing_axes Lossarnach_Throwing_Axes Lossarnach_Throwing_Axes 3  loss_throwing_axe 0  loss_throwing_axe_quiver 3458764513820540928  loss_throwing_axe_inventory 1152921504606846976  71368714 35702112256 300 4398046781448 5 100 0 0 92 0 0 99 20 53 3 53 0
 0
 
- itm_arnor_helm_a Arnor_Light_Helm Arnor_Light_Helm 4  arnor_helm_a1 134  arnor_helm_a2 1  arnor_helm_a2 0  arnor_helm_a3 704643072  65548 0 1000 704643206 3 92 32 0 0 12 0 0 0 0 0 0 0
+ itm_free_dunedain_helm_a Arnor_Light_Helm Arnor_Light_Helm 1  arnor_helm_a1 0  1073807372 0 300 251658240 1 100 14 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_helm_b Arnor_Helm Arnor_Helm 4  arnor_helm_b1 134  arnor_helm_b2 1  arnor_helm_b2 0  arnor_helm_b3 704643072  65548 0 1000 704643206 3 93 35 0 0 13 0 0 0 0 0 0 0
+ itm_free_dunedain_helm_b Arnor_Helm Arnor_Helm 1  arnor_helm_b1 0  65548 0 1400 704643072 6 95 38 0 0 15 0 0 0 0 0 0 0
 0
 
  itm_arnor_helm_c Arnor_Decorated_Helm Arnor_Decorated_Helm 4  arnor_helm_c1 134  arnor_helm_c2 1  arnor_helm_c2 0  arnor_helm_c3 704643072  65548 0 1200 704643206 4 95 38 0 0 15 0 0 0 0 0 0 0
 0
 
- itm_free_dunedain_helm_a Dunedain_Hood Dunedain_Hood 1  arnor_hood 0  1073807372 0 300 251658240 1 100 14 0 0 0 0 0 0 0 0 0 0
+ itm_arnor_helm_b Arnor_Helm Arnor_Helm 4  arnor_helm_b1 134  arnor_helm_b2 1  arnor_helm_b2 0  arnor_helm_b3 704643072  65548 0 1000 704643206 3 93 35 0 0 13 0 0 0 0 0 0 0
 0
 
- itm_free_dunedain_helm_b Arnor_Decorated_Helm Arnor_Decorated_Helm 1  arnor_helm_c1 0  65548 0 1400 704643072 6 95 38 0 0 15 0 0 0 0 0 0 0
+ itm_arnor_helm_a Arnor_Light_Helm Arnor_Light_Helm 4  arnor_helm_a1 134  arnor_helm_a2 1  arnor_helm_a2 0  arnor_helm_a3 704643072  65548 0 1000 704643206 3 92 32 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_arnor_armor_a Arnorian_Armor Arnorian_Armor 1  arnor_armor_a1 0  16842765 0 2300 704643206 27 92 0 35 13 16 0 0 0 0 0 0 0
+ itm_free_arnor_armor_a Arnorian_Armor Arnorian_Armor 1  arnor_armor_a1 0  16842765 0 2300 704643206 27 92 0 35 13 16 0 0 0 0 0 0 0
 0
 
- itm_arnor_light_a Dunedain_Ranger_Jerkin Dunedain_Ranger_Jerkin 6  arnor_leather_jerkin_1 134  arnor_leather_jerkin_2 1  arnor_leather_jerkin_2 0  arnor_leather_jerkin_2_cape 268435456  arnor_leather_jerkin_3 167772160  arnor_leather_jerkin_3_cape 671088640  16842765 0 480 167772294 5 90 0 14 8 0 0 0 0 0 0 0 0
+ itm_arnor_light_a Dunedain_Ranger_Jerkin Dunedain_Ranger_Jerkin 6  arnor_leather_jerkin_1 134  arnor_leather_jerkin_2 1  arnor_leather_jerkin_2 0  arnor_leather_jerkin_2_cape 268435456  arnor_leather_jerkin_3 167772160  arnor_leather_jerkin_3_cape 671088640  16842765 0 250 167772294 5 90 0 10 6 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_light_b Dunedain_Ranger_Mail Dunedain_Ranger_Mail 6  arnor_leather_mail_1 134  arnor_leather_mail_2 1  arnor_leather_mail_1 0  arnor_leather_mail_2_cape 268435456  arnor_leather_mail_3 167772160  arnor_leather_mail_3_cape 536870912  16842765 0 1300 704643206 21 92 0 26 10 12 0 0 0 0 0 0 0
+ itm_arnor_light_b Dunedain_Ranger_Mail Dunedain_Ranger_Mail 6  arnor_leather_mail_1 134  arnor_leather_mail_2 1  arnor_leather_mail_1 0  arnor_leather_mail_2_cape 268435456  arnor_leather_mail_3 167772160  arnor_leather_mail_3_cape 536870912  16842765 0 1000 704643206 21 92 0 24 8 12 0 0 0 0 0 0 0
 0
 
- itm_arnor_med_a Dunedain_Ranger_Coat Dunedain_Ranger_Coat 6  arnor_leather_light_1 134  arnor_leather_light_2 1  arnor_leather_light_2 0  arnor_leather_light_2_cape 268435456  arnor_leather_light_3 167772160  arnor_leather_light_3_cape 536870912  16842765 0 900 704643206 15 91 0 20 10 0 0 0 0 0 0 0 0
+ itm_arnor_med_a Dunedain_Ranger_Coat Dunedain_Ranger_Coat 6  arnor_leather_light_1 134  arnor_leather_light_2 1  arnor_leather_light_2 0  arnor_leather_light_2_cape 268435456  arnor_leather_light_3 167772160  arnor_leather_light_3_cape 536870912  16842765 0 700 704643206 15 91 0 18 8 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_med_b Dunedain_Mail Dunedain_Mail 6  arnor_leather_heavy_1 134  arnor_leather_heavy_2 1  arnor_leather_heavy_2 0  arnor_leather_heavy_2_cloak 268435456  arnor_leather_heavy_3 167772160  arnor_leather_heavy_3_cape 536870912  16842765 0 230 704643206 27 94 0 35 13 16 0 0 0 0 0 0 0
+ itm_arnor_med_b Dunedain_Mail Dunedain_Mail 6  arnor_leather_heavy_1 134  arnor_leather_heavy_2 1  arnor_leather_heavy_2 0  arnor_leather_heavy_2_cape 268435456  arnor_leather_heavy_3 167772160  arnor_leather_heavy_3_cape 536870912  16842765 0 1700 704643206 27 94 0 32 10 16 0 0 0 0 0 0 0
 0
 
  itm_arnor_heavy Arnorian_High_Armor Arnorian_High_Armor 6  arnor_armor_a1 134  arnor_armor_a2 1  arnor_armor_a2 0  arnor_armor_a2_cape 268435456  arnor_armor_a3 167772160  arnor_armor_a3_cape 536870912  16842765 0 3000 704643206 33 95 0 40 15 20 0 0 0 0 0 0 0
@@ -502,28 +502,28 @@ itemsfile version 2
  itm_arnor_greaves Arnorian_Greaves Arnorian_Greaves 1  narf_splinted_greaves_nospurs 0  69390 0 1800 704643206 7 94 0 0 28 15 0 0 0 0 0 0 0
 0
 
- itm_free_arnor_splinted Arnorian_Splinted_Greaves Arnorian_Splinted_Greaves 1  narf_splinted_greaves_nospurs 0  69390 0 1200 704643206 3.5 100 0 0 28 0 0 0 0 0 0 0 0
+ itm_arnor_shield_c Arnor_Cavalry_Shield Arnor_Cavalry_Shield 4  arnor_kite_shield_a 134  arnor_kite_shield_b 1  arnor_kite_shield_b 0  arnor_kite_shield_c 771751936  327687 4831838208 400 771751936 2 93 0 19 0 3 340 82 0 60 0 0 0
 0
 
  itm_arnor_shield_a Arnor_Round_Shield Arnor_Round_Shield 2  arnor_cav_shield 0  arnor_cav_shield_b 771751936  327687 5100273664 400 771751936 2 91 0 15 0 1 300 90 0 30 0 0 0
 0
 
- itm_arnor_shield_c Arnor_Cavalry_Shield Arnor_Cavalry_Shield 4  arnor_kite_shield_a 134  arnor_kite_shield_b 1  arnor_kite_shield_b 0  arnor_kite_shield_c 771751936  327687 4831838208 400 771751936 2 93 0 19 0 3 340 82 0 60 0 0 0
-0
-
- itm_free_arnor_shield_b Arnor_Shield Arnor_Shield 1  arnor_shield_inf_b 0  327687 5100273664 400 771751936 2 100 0 14 0 0 380 100 0 50 0 0 0
-0
-
- itm_free_arnor_shield_d Arnor_Cavalry_Shield Arnor_Cavalry_Shield 1  arnor_cav_shield_b 0  327687 5100273664 400 771751936 2 100 0 14 0 0 380 100 0 50 0 0 0
+ itm_arnor_sword_c Arnor_War_Sword Arnor_War_Sword 2  arnor_sword_b 0  arnor_sword_b_scab 3458764513820540928  6356995 9223635954365890800 700 156672 2.25 93 0 0 0 13 37888 102 0 110 0 282 37
 0
 
  itm_arnor_sword_a Arnor_Bastard_Sword Arnor_Bastard_Sword 2  arnor_sword_c 0  arnor_sword_c_scab 3458764513820540928  4259843 9223635954298781951 650 156672 2.25 92 0 0 0 11 33792 110 0 101 0 282 33
 0
 
- itm_arnor_sword_c Arnor_War_Sword Arnor_War_Sword 2  arnor_sword_b 0  arnor_sword_b_scab 3458764513820540928  6356995 9223635954365890800 700 156672 2.25 93 0 0 0 13 37888 102 0 110 0 282 37
+ itm_arnor_sword_f Arnor_Shortsword Arnor_Shortsword 2  arnor_sword_a 0  arnor_sword_a_scab 3458764513820540928  4259842 9223388564182532111 300 156672 1.25 90 0 0 0 0 28672 107 0 83 0 277 28
 0
 
- itm_arnor_sword_f Arnor_Shortsword Arnor_Shortsword 2  arnor_sword_a 0  arnor_sword_a_scab 3458764513820540928  4259842 9223388564182532111 300 156672 1.25 90 0 0 0 0 28672 107 0 83 0 277 28
+ itm_free_arnor_sword_a Arnor_Bastard_Sword Arnor_Bastard_Sword 2  arnor_sword_c 0  arnor_sword_c_scab 3458764513820540928  4259843 9223635954298781951 650 156672 2.25 92 0 0 0 11 33792 110 0 101 0 282 33
+0
+
+ itm_free_arnor_shield_c Arnor_Cavalry_Shield Arnor_Cavalry_Shield 4  arnor_kite_shield_a 134  arnor_kite_shield_b 1  arnor_kite_shield_b 0  arnor_kite_shield_c 771751936  327687 4831838208 400 771751936 2 93 0 19 0 3 340 82 0 60 0 0 0
+0
+
+ itm_free_arnor_sword_f Arnor_Shortsword Arnor_Shortsword 2  arnor_sword_a 0  arnor_sword_a_scab 3458764513820540928  4259842 9223388564182532111 300 156672 1.25 90 0 0 0 0 28672 107 0 83 0 277 28
 0
 
  itm_riv_helm_a Rivendell_Coif Rivendell_Coif 1  rivendell_coif_new 0  65548 0 800 704643206 1 100 24 0 0 0 0 0 0 0 0 0 0
