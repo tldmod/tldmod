@@ -131,21 +131,19 @@ itm_harad_javelin|Harad Javelin
 itm_gondor_javelin|Gondor Javelin
 itm_rohirrim_throwing_axe|Northmen Throwing Axes
 itm_loss_throwing_axes|Lossarnach Throwing Axes
-itm_arnor_helm_a|Arnor Helm
+itm_arnor_helm_c|Arnor Decorated Helm
 itm_arnor_helm_b|Arnor Helm
-itm_arnor_helm_c|Arnor Helm
-itm_dunedain_helm_b|Arnor Decorated Helm
-itm_arnor_armor_a|Arnorian Armor
-itm_arnor_armor_b|Arnorian Armor
-itm_arnor_armor_c|Dunedain Ranger Leather
-itm_arnor_armor_d|Dunedain Ranger Leather
-itm_arnor_armor_e|Arnorian Reinforced Jerkin
-itm_arnor_armor_f|Arnorian High Armor
+itm_arnor_helm_a|Arnor Light Helm
+itm_arnor_light_a|Dunedain Ranger Jerkin
+itm_arnor_light_b|Dunedain Ranger Mail
+itm_arnor_med_a|Dunedain Ranger Coat
+itm_arnor_med_b|Dunedain Mail
+itm_arnor_heavy|Arnorian High Armor
 itm_arnor_greaves|Arnorian Greaves
-itm_arnor_shield_a|Arnor Shield
 itm_arnor_shield_c|Arnor Cavalry Shield
-itm_arnor_sword_a|Arnor Bastard Sword
+itm_arnor_shield_a|Arnor Round Shield
 itm_arnor_sword_c|Arnor War Sword
+itm_arnor_sword_a|Arnor Bastard Sword
 itm_arnor_sword_f|Arnor Shortsword
 itm_riv_helm_a|Rivendell Coif
 itm_riv_helm_b|Rivendell Archer Helm
@@ -501,11 +499,11 @@ itm_mirkwood_helm_d|Greenwood Royal Helm
 itm_woodelf_leather_boots|Woodelf Leather Boots
 itm_mirkwood_boots|Greenwood Boots
 itm_harad_tunic|Harad Tunic
-itm_harad_padded|Harondor Padded Armor
-itm_harad_hauberk|Harondor Hauberk
-itm_harad_lamellar|Harasjala Armor
-itm_harad_heavy|Harad Noble Armor
-itm_harad_skirmisher|Light Harad Garb
+itm_harad_padded|Harad Padded Jerkin
+itm_harad_lamellar|Harad Scale Vest
+itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_heavy|Harasjala Armor
+itm_harad_pectoral|Harad Breastplate
 itm_harad_archer|Harad Archer Armor
 itm_black_snake_armor|Maranka Armor
 itm_harad_champion|Far Harad Garb
@@ -558,10 +556,12 @@ itm_khand_cav_helm_b|Khand Rider Helm
 itm_khand_cav_helm_c|Khand Decorated Helm
 itm_khand_helm_mask|Khand Mask
 itm_khand_light|Khand Kilt
-itm_khand_light_lam|Khand Light Lamellar
-itm_khand_foot_lam|Khand Footman Armor
+itm_khand_light_lam|Khand Light Footmen Armor
+itm_khand_foot_lam|Khand Heavy Footman Armor
 itm_khand_med_lam|Khand Medium Lamellar
 itm_khand_heavy_lam|Khand Heavy Lamellar
+itm_khand_mail|Khand Mail
+itm_khand_noble_lam|Khand Noble Armor
 itm_khand_axe_great|Khand Great Axe
 itm_khand_axe_winged|Khand Winged Axe
 itm_khand_halberd|Khand Halberd

@@ -56,8 +56,8 @@ itm_hunter|Hunter
 itm_hunter_pl|Hunter
 itm_pony|Pony
 itm_pony_pl|Pony
-itm_arnor_warhorse|Arnorian Warhorse
-itm_arnor_warhorse_pl|Arnorian Warhorse
+itm_free_arnor_warhorse|Arnorian Warhorse
+itm_free_arnor_warhorse_pl|Arnorian Warhorse
 itm_dunedain_warhorse|Dunedain Warhorse
 itm_dunedain_warhorse_pl|Dunedain Warhorse
 itm_rohirrim_courser|Rohirrim Courser
@@ -308,46 +308,46 @@ itm_rohirrim_throwing_axe|Northmen Throwing Axes
 itm_rohirrim_throwing_axe_pl|Northmen Throwing Axes
 itm_loss_throwing_axes|Lossarnach Throwing Axes
 itm_loss_throwing_axes_pl|Lossarnach Throwing Axes
-itm_arnor_helm_a|Arnor Helm
-itm_arnor_helm_a_pl|Arnor Helm
+itm_free_dunedain_helm_a|Arnor Light Helm
+itm_free_dunedain_helm_a_pl|Arnor Light Helm
+itm_free_dunedain_helm_b|Arnor Helm
+itm_free_dunedain_helm_b_pl|Arnor Helm
+itm_arnor_helm_c|Arnor Decorated Helm
+itm_arnor_helm_c_pl|Arnor Decorated Helm
 itm_arnor_helm_b|Arnor Helm
 itm_arnor_helm_b_pl|Arnor Helm
-itm_arnor_helm_c|Arnor Helm
-itm_arnor_helm_c_pl|Arnor Helm
-itm_free_dunedain_helm_a|Dunedain Hood
-itm_free_dunedain_helm_a_pl|Dunedain Hood
-itm_dunedain_helm_b|Arnor Decorated Helm
-itm_dunedain_helm_b_pl|Arnor Decorated Helm
-itm_arnor_armor_a|Arnorian Armor
-itm_arnor_armor_a_pl|Arnorian Armor
-itm_arnor_armor_b|Arnorian Armor
-itm_arnor_armor_b_pl|Arnorian Armor
-itm_arnor_armor_c|Dunedain Ranger Leather
-itm_arnor_armor_c_pl|Dunedain Ranger Leather
-itm_arnor_armor_d|Dunedain Ranger Leather
-itm_arnor_armor_d_pl|Dunedain Ranger Leather
-itm_arnor_armor_e|Arnorian Reinforced Jerkin
-itm_arnor_armor_e_pl|Arnorian Reinforced Jerkin
-itm_arnor_armor_f|Arnorian High Armor
-itm_arnor_armor_f_pl|Arnorian High Armor
+itm_arnor_helm_a|Arnor Light Helm
+itm_arnor_helm_a_pl|Arnor Light Helm
+itm_free_arnor_armor_a|Arnorian Armor
+itm_free_arnor_armor_a_pl|Arnorian Armor
+itm_arnor_light_a|Dunedain Ranger Jerkin
+itm_arnor_light_a_pl|Dunedain Ranger Jerkin
+itm_arnor_light_b|Dunedain Ranger Mail
+itm_arnor_light_b_pl|Dunedain Ranger Mail
+itm_arnor_med_a|Dunedain Ranger Coat
+itm_arnor_med_a_pl|Dunedain Ranger Coat
+itm_arnor_med_b|Dunedain Mail
+itm_arnor_med_b_pl|Dunedain Mail
+itm_arnor_heavy|Arnorian High Armor
+itm_arnor_heavy_pl|Arnorian High Armor
 itm_arnor_greaves|Arnorian Greaves
 itm_arnor_greaves_pl|Arnorian Greaves
-itm_free_arnor_splinted|Arnorian Splinted Greaves
-itm_free_arnor_splinted_pl|Arnorian Splinted Greaves
-itm_arnor_shield_a|Arnor Shield
-itm_arnor_shield_a_pl|Arnor Shield
 itm_arnor_shield_c|Arnor Cavalry Shield
 itm_arnor_shield_c_pl|Arnor Cavalry Shield
-itm_free_arnor_shield_b|Arnor Shield
-itm_free_arnor_shield_b_pl|Arnor Shield
-itm_free_arnor_shield_d|Arnor Cavalry Shield
-itm_free_arnor_shield_d_pl|Arnor Cavalry Shield
-itm_arnor_sword_a|Arnor Bastard Sword
-itm_arnor_sword_a_pl|Arnor Bastard Sword
+itm_arnor_shield_a|Arnor Round Shield
+itm_arnor_shield_a_pl|Arnor Round Shield
 itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_c_pl|Arnor War Sword
+itm_arnor_sword_a|Arnor Bastard Sword
+itm_arnor_sword_a_pl|Arnor Bastard Sword
 itm_arnor_sword_f|Arnor Shortsword
 itm_arnor_sword_f_pl|Arnor Shortsword
+itm_free_arnor_sword_a|Arnor Bastard Sword
+itm_free_arnor_sword_a_pl|Arnor Bastard Sword
+itm_free_arnor_shield_c|Arnor Cavalry Shield
+itm_free_arnor_shield_c_pl|Arnor Cavalry Shield
+itm_free_arnor_sword_f|Arnor Shortsword
+itm_free_arnor_sword_f_pl|Arnor Shortsword
 itm_riv_helm_a|Rivendell Coif
 itm_riv_helm_a_pl|Rivendell Coif
 itm_riv_helm_b|Rivendell Archer Helm
@@ -1146,16 +1146,16 @@ itm_mirkwood_boots|Greenwood Boots
 itm_mirkwood_boots_pl|Greenwood Boots
 itm_harad_tunic|Harad Tunic
 itm_harad_tunic_pl|Harad Tunic
-itm_harad_padded|Harondor Padded Armor
-itm_harad_padded_pl|Harondor Padded Armor
-itm_harad_hauberk|Harondor Hauberk
-itm_harad_hauberk_pl|Harondor Hauberk
-itm_harad_lamellar|Harasjala Armor
-itm_harad_lamellar_pl|Harasjala Armor
-itm_harad_heavy|Harad Noble Armor
-itm_harad_heavy_pl|Harad Noble Armor
-itm_harad_skirmisher|Light Harad Garb
-itm_harad_skirmisher_pl|Light Harad Garb
+itm_harad_padded|Harad Padded Jerkin
+itm_harad_padded_pl|Harad Padded Jerkin
+itm_harad_lamellar|Harad Scale Vest
+itm_harad_lamellar_pl|Harad Scale Vest
+itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_heavy_lamellar_pl|Harad Heavy Scale Vest
+itm_harad_heavy|Harasjala Armor
+itm_harad_heavy_pl|Harasjala Armor
+itm_harad_pectoral|Harad Breastplate
+itm_harad_pectoral_pl|Harad Breastplate
 itm_harad_archer|Harad Archer Armor
 itm_harad_archer_pl|Harad Archer Armor
 itm_black_snake_armor|Maranka Armor
@@ -1244,8 +1244,8 @@ itm_harad_scale_greaves|Harad Greaves
 itm_harad_scale_greaves_pl|Harad Greaves
 itm_harad_lamellar_greaves|Harad Splinted Greaves
 itm_harad_lamellar_greaves_pl|Harad Splinted Greaves
-itm_free_khand_helmet_a1|Khand Helm With Camail
-itm_free_khand_helmet_a1_pl|Khand Helm With Camail
+itm_camel|Harad Camel
+itm_camel_pl|Harad Camel
 itm_free_khand_helmet_a2|Khand Helm
 itm_free_khand_helmet_a2_pl|Khand Helm
 itm_free_khand_helmet_a3|Khand Veiled Helm
@@ -1284,18 +1284,18 @@ itm_khand_helm_mask|Khand Mask
 itm_khand_helm_mask_pl|Khand Mask
 itm_khand_light|Khand Kilt
 itm_khand_light_pl|Khand Kilt
-itm_khand_light_lam|Khand Light Lamellar
-itm_khand_light_lam_pl|Khand Light Lamellar
-itm_khand_foot_lam|Khand Footman Armor
-itm_khand_foot_lam_pl|Khand Footman Armor
+itm_khand_light_lam|Khand Light Footmen Armor
+itm_khand_light_lam_pl|Khand Light Footmen Armor
+itm_khand_foot_lam|Khand Heavy Footman Armor
+itm_khand_foot_lam_pl|Khand Heavy Footman Armor
 itm_khand_med_lam|Khand Medium Lamellar
 itm_khand_med_lam_pl|Khand Medium Lamellar
 itm_khand_heavy_lam|Khand Heavy Lamellar
 itm_khand_heavy_lam_pl|Khand Heavy Lamellar
-itm_free_khand_light_lam|Khand Light Lamellar
-itm_free_khand_light_lam_pl|Khand Light Lamellar
-itm_free_khand_med_lam_b|Khand Medium Lamellar
-itm_free_khand_med_lam_b_pl|Khand Medium Lamellar
+itm_khand_mail|Khand Mail
+itm_khand_mail_pl|Khand Mail
+itm_khand_noble_lam|Khand Noble Armor
+itm_khand_noble_lam_pl|Khand Noble Armor
 itm_free_khand_med_lam_c|Khand Medium Lamellar
 itm_free_khand_med_lam_c_pl|Khand Medium Lamellar
 itm_free_khand_med_lam_d|Khand Medium Lamellar

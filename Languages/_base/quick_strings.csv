@@ -247,6 +247,7 @@ qstr_Less_Wargs_upkeep|Less Wargs upkeep
 qstr_Light_Armor|Light Armor
 qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
 qstr_Lead_more_Orcs|Lead more Orcs
+qstr_Can_scare_horses|Can scare horses
 qstr_+{reg1}_to_Party_Mor|+{reg1} to Party Morale
 qstr_Range:_{reg55}|Range: {reg55}
 qstr_Dwarves|Dwarves
@@ -764,8 +765,8 @@ qstr_Two_Nazgul_are_circl|Two Nazgul are circling in the sky above the battlefie
 qstr_A_Nazgul_is_circling|A Nazgul is circling in the sky above the battlefield!
 qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
 qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
-qstr_Your_mount_is_scared|Your mount is scared by the {reg73?ent:troll}!
-qstr_Your_mount_is_scared_|Your mount is scared by the {reg73?ent:troll}, but you can master it!
+qstr_Your_mount_is_scared|Your mount is scared by the {s5}!
+qstr_Your_mount_is_scared_|Your mount is scared by the {s5}, but you can master it!
 qstr_Nazgul_sweep!|Nazgul sweep!
 qstr_You_and_your_horse_p|You and your horse panic, the Nazgul cries are unbearable!
 qstr_Your_horse_panics_th|Your horse panics, the Nazgul cries are unbearable!
@@ -904,8 +905,8 @@ qstr_You_are_suffering_fr|You are suffering from {s1}.
 qstr_You_are_suffering_fro|You are suffering from {s1} and {s2}.
 qstr_You_are_suffering_from|You are suffering from {s1}, {s2}, and {s3}.
 qstr_You_are_suffering_from_|You are suffering from {s1}, {s2}, {s3} and {s4}.
-qstr_Weekly_upkeep_for_tr|Weekly upkeep for troops:^{reg5} Resource Points^
-qstr_{s12}^__{s4}:_{reg4}|{s12}^  {s4}: {reg4} Resource points ({reg5})
+qstr_Troop_upkeep__paid_e|Troop upkeep (paid every four days):^
+qstr_{s12}^^__{s4}:_{reg8|{s12}^^  {s4}: {reg8}/{reg5} Resource Points ^Party: {reg4}^Reserves: {reg7}
 qstr_No_upkeep_costs|No upkeep costs
 qstr_Orc_hiring_bonus:_+2|Orc hiring bonus: +2/3 for each orc^
 qstr_Current_party_size_l|Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Ranks: {s4}{reg3}^{s5}TOTAL:  {reg5}
@@ -1108,6 +1109,9 @@ qstr_^^^You_lost_your_fig|^^^You lost your fight against the mutiny! ^Seems like
 qstr_^^^You_have_slain_th|^^^You have slain the offender, and other orcs quickly fall back in line. ^ For some time the maggots will be quiet for sure.
 qstr_You_cover_up_your_tr|You cover up your tracks and move onward.
 qstr_Breaking_camp...|Breaking camp...
+qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
+qstr_Desertion|Desertion
+qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
 qstr_You_have_left_{s1}.|You have left {s1}.
 qstr_You_are_entering_{s1|You are entering {s1} ({s2}).
 qstr_You_are_entering_{s1}|You are entering {s1}.

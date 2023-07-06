@@ -9,6 +9,7 @@ mno_quick2|[dev: quick start Mordor]
 menu_start_phase_2|^^^^^              Middle Earth. A shadow is growing in the East, ^              and dark things come forth that have long been hidden. ^              The free peoples prepare for war, the like of which has not been seen for an age. ^              Men, Elves, Dwarves and Orcs; all will play their part. ^^              What part, however, remains to be seen... 
 mno_go_forth|          Go forth upon your chosen path...
 mno_change_tld_options|Change TLD options.
+mno_see_info_pages|TLD game concepts.
 mno_cheat00|CHEAT: become a {s21}
 mno_cheat01|CHEAT: become a  {s21}
 mno_cheat03|CHEAT: add 10 {s21} to party
@@ -17,7 +18,7 @@ mno_custom_battle_scenario_1|Skirmish, Gondor factions vs Harad
 mno_custom_battle_scenario_12|Choose factions for battle
 mno_custom_battle_scenario_3|Skirmish, Elves vs Black Numenoreans
 mno_custom_battle_scenario_4|Helms Deep Defense, Rohan vs Isengard
-mno_custom_battle_scenario_5|Skirmish, North factions vs Rhun
+mno_custom_battle_scenario_5|Skirmish, North factions vs Rhûn
 mno_custom_battle_scenario_6|Siege Attack, Orcs vs Dwarves
 mno_custom_battle_scenario_7|Ambush, Orcs vs Mirkwood
 mno_custom_battle_scenario_8|The Last Stand of Durin's Folk
@@ -168,6 +169,7 @@ mno_start_up1|Become a {s21} (Easy)
 mno_start_up2|Become a {s22} (Easy)
 menu_auto_return|This menu automatically returns to caller.
 menu_morale_report|^^{s1}
+mno_cheat_increase_morale|Cheat: Increase Morale
 mno_continue|Continue...
 menu_faction_orders|{s9}
 mno_faction_orders_next_faction|Select next faction.
@@ -251,7 +253,7 @@ menu_mvtest_town_wealth_report|{s1}
 menu_mvtest_sieges|Test sieges
 mno_order_siege|Order ambient faction to besiege...
 mno_order_siege_wo|Order Gothmog to besiege West Osgiliath.
-mno_order_siege_erech|Order Gothmog to besiege Erech.
+mno_order_siege_MT|Order Gothmog to besiege Erech.
 mno_order_siege_pinnath|Order Gothmog to besiege Pinnath Gelin.
 mno_order_siege_edhellond|Order Gothmog to besiege Edhellond.
 mno_order_siege_candros|Order Gothmog to besiege Edoras.
@@ -353,7 +355,7 @@ mno_f_woodelf|Mirkwood items
 mno_f_imladris|Imladris items
 mno_f_harad|Harad items
 mno_f_khand|Khand items
-mno_f_rhun|Rhun items
+mno_f_rhun|Rhûn items
 mno_f_dale|Dale items
 mno_f_umbar|Umbar items
 mno_f_moria|Moria items
@@ -410,7 +412,7 @@ mno_mi20|{s20}
 menu_cheat_impose_quest|Current imposed quest:^{s20}^^Which quest do you want to impose?^(no other quests will be given)
 mno_just_back|Back
 mno_none|None
-mno_qst_mirkwood_sorcerer|qst mirkwood sorcerer
+mno_qst_mirkwood_sorcerer|sea battle
 mno_cheat_kill_faction_quest|Kill GuildMaster Bandit Quest
 mno_cheat_raise_troops|Raise Troops
 mno_cheat_defend_refugees|Defend Refugees
@@ -453,7 +455,7 @@ mno_impose_quest|Impose a quest...
 mno_impose_battle_field|Impose a battlefield...
 mno_relocate_party|Move to town...
 mno_add_troops|Add troops to player party.
-mno_cheat_get_item|Gain a free magic item
+mno_cheat_add_prisoners|Add 10 prisoners
 mno_cheat_add_xp|Add 1000 experience to player.
 mno_camp_mod_2|Raise player's attributes, skills, and proficiencies.
 mno_camp_mod_3|Add gear and gold to player.
@@ -760,7 +762,7 @@ mno_cb_mordor3|Haradrim
 mno_cb_mordor4|Easterlings
 mno_cb_mordor5|Moria
 mno_cb_mordor6|Gundabad
-mno_cb_mordor7|Rhun
+mno_cb_mordor7|Rhûn
 mno_cb_mordor8|Corsairs
 menu_ancient_ruins|{s1}^^{s2}
 mno_rescue_mission|Sneak into the sorcerer's lair under the night's cover.

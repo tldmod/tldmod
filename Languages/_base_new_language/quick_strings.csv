@@ -83,7 +83,7 @@ qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
 qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
 qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
-qstr__rev_536_wb__dev_^_B| rev 536 wb | dev ^ Built 2023-01-08 21:48   
+qstr__rev_600_wb__dev_^_B| rev 600 wb | dev ^ Built 2023-07-06 19:53   
 qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
 qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
 qstr_Attributes|Attributes
@@ -192,6 +192,7 @@ qstr_its|its
 qstr_[no_upkeep_costs]|[no upkeep costs]
 qstr_Short_of_Resource_Po|Short of Resource Points!!
 qstr_{s10}_will_soon_reas|{s10} will soon reassign some of {s12} troops away from your party!
+qstr_{s10}_has_reassigned|{s10} has reassigned troops from your reserves.
 qstr_Superior_orders_from|Superior orders from {s11} to reassign troops:
 qstr_{reg12}_{s10}_left_t|{reg12} {s10} left the party!
 qstr_Fangorn_claimed_{reg|Fangorn claimed {reg0} killed and {reg1} wounded among your troops!
@@ -202,11 +203,10 @@ qstr_DEBUG:_{s1}_no_longe|DEBUG: {s1} no longer leads a party.
 qstr_DEBUG:_{s1}_is_no_lo|DEBUG: {s1} is no longer a prisoner.
 qstr_DEBUG:_{s1}_is_now_a|DEBUG: {s1} is now a prisoner of player.
 qstr_DEBUG:_{s1}_is_now_a_|DEBUG: {s1} is now a prisoner of {s2}.
+qstr_{s1}_Scouts|{s1} Scouts
 qstr_Left_for_dead_but_mi|Left for dead but miraculously survived: {reg1?{reg1} time{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_|1 Res.Pt ({s2})
 qstr_{reg1}_Res.Pts__{s2}|{reg1} Res.Pts ({s2})
-qstr_Gondor_AI_Tweaks___M|Gondor AI Tweaks - Make Gondor marshall a bit stronger
-qstr_Gondor_AI_Tweaks___G|Gondor AI Tweaks - Gondro Party Size Boost
 qstr_+30_to_Party_Morale|+30 to Party Morale
 qstr_+20_to_Party_Morale|+20 to Party Morale
 qstr_+1_to_Riding_Skill|+1 to Riding Skill
@@ -275,6 +275,7 @@ qstr_Less_Wargs_upkeep|Less Wargs upkeep
 qstr_Light_Armor|Light Armor
 qstr_Bonus_to_Strength__P|Bonus to Strength (Player only)
 qstr_Lead_more_Orcs|Lead more Orcs
+qstr_Can_scare_horses|Can scare horses
 qstr_+{reg1}_to_Party_Mor|+{reg1} to Party Morale
 qstr_Range:_{reg55}|Range: {reg55}
 qstr_Dwarves|Dwarves
@@ -643,7 +644,6 @@ qstr_The_Remnant_Forces_o|The Remnant Forces of {s22} have gathered to reinforce
 qstr_The_strength_of_the_|The strength of the remaining allied factions of the {s15} theater has increased
 qstr_{s30}_reinforced_by_|{s30} reinforced by {reg65} fac str
 qstr_{s1}_has_been_besieg|{s1} has been besieged by {s2} of {s3}.
-qstr_Gondor_AI_Tweaks___Mo|Gondor AI Tweaks - More frequent hosts
 qstr_The_forces_of_{s2}_m|The forces of {s2} march to {s15}!
 qstr_ERROR|ERROR
 qstr_Rohan_capital_moved_|Rohan capital moved from Edoras to Hornburg!
@@ -872,8 +872,8 @@ qstr_Two_Nazgul_are_circl|Two Nazgul are circling in the sky above the battlefie
 qstr_A_Nazgul_is_circling|A Nazgul is circling in the sky above the battlefield!
 qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
 qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
-qstr_Your_mount_is_scared|Your mount is scared by the {reg73?ent:troll}!
-qstr_Your_mount_is_scared_|Your mount is scared by the {reg73?ent:troll}, but you can master it!
+qstr_Your_mount_is_scared|Your mount is scared by the {s5}!
+qstr_Your_mount_is_scared_|Your mount is scared by the {s5}, but you can master it!
 qstr_Nazgul_sweep!|Nazgul sweep!
 qstr_You_and_your_horse_p|You and your horse panic, the Nazgul cries are unbearable!
 qstr_Your_horse_panics_th|Your horse panics, the Nazgul cries are unbearable!
@@ -1046,8 +1046,8 @@ qstr_You_are_suffering_fr|You are suffering from {s1}.
 qstr_You_are_suffering_fro|You are suffering from {s1} and {s2}.
 qstr_You_are_suffering_from|You are suffering from {s1}, {s2}, and {s3}.
 qstr_You_are_suffering_from_|You are suffering from {s1}, {s2}, {s3} and {s4}.
-qstr_Weekly_upkeep_for_tr|Weekly upkeep for troops:^{reg5} Resource Points^
-qstr_{s12}^__{s4}:_{reg4}|{s12}^  {s4}: {reg4} Resource points ({reg5})
+qstr_Troop_upkeep__paid_e|Troop upkeep (paid every four days):^
+qstr_{s12}^^__{s4}:_{reg8|{s12}^^  {s4}: {reg8}/{reg5} Resource Points ^Party: {reg4}^Reserves: {reg7}
 qstr_No_upkeep_costs|No upkeep costs
 qstr_Orc_hiring_bonus:_+2|Orc hiring bonus: +2/3 for each orc^
 qstr_Current_party_size_l|Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Ranks: {s4}{reg3}^{s5}TOTAL:  {reg5}
@@ -1059,6 +1059,7 @@ qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|Traits gained:^{s2}
 qstr_^^You_are_{s17}.|^^You are {s17}.
 qstr_Assassins_in_the_cam|Assassins in the camp, defend yourself!
+qstr_Cheats_used:_{reg78}|Cheats used: {reg78}
 qstr_Ally_party_size:_{re|Ally party size: {reg1}
 qstr_Enemy_party_size:_{r|Enemy party size: {reg1}
 qstr_Spawned_routed_parti|Spawned routed parties!
@@ -1198,6 +1199,7 @@ qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
 qstr_Regular_troops_only|Regular troops only
 qstr_Heroes_only|Heroes only
 qstr_Regulars_and_Heroes|Regulars and Heroes
+qstr_Added_10_prisoners.|Added 10 prisoners.
 qstr_Added_1000_experienc|Added 1000 experience to player.
 qstr_Attributes_skills_an|Attributes, skills and proficiencies raised.
 qstr_Items_added_to_playe|Items added to player inventory.
@@ -1338,6 +1340,9 @@ qstr_^^^You_lost_your_fig|^^^You lost your fight against the mutiny! ^Seems like
 qstr_^^^You_have_slain_th|^^^You have slain the offender, and other orcs quickly fall back in line. ^ For some time the maggots will be quiet for sure.
 qstr_You_cover_up_your_tr|You cover up your tracks and move onward.
 qstr_Breaking_camp...|Breaking camp...
+qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
+qstr_Desertion|Desertion
+qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
 qstr_You_have_left_{s1}.|You have left {s1}.
 qstr_You_are_entering_{s1|You are entering {s1} ({s2}).
 qstr_You_are_entering_{s1}|You are entering {s1}.
