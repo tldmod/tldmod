@@ -484,19 +484,19 @@ itemsfile version 2
  itm_free_arnor_armor_a Arnorian_Armor Arnorian_Armor 1  arnor_armor_a1 0  16842765 0 2300 704643206 27 92 0 35 13 16 0 0 0 0 0 0 0
 0
 
- itm_arnor_light_a Dunedain_Ranger_Jerkin Dunedain_Ranger_Jerkin 6  arnor_leather_jerkin_1 134  arnor_leather_jerkin_2 1  arnor_leather_jerkin_2 0  arnor_leather_jerkin_2_cape 268435456  arnor_leather_jerkin_3 167772160  arnor_leather_jerkin_3_cape 671088640  16842765 0 250 167772294 5 90 0 10 6 0 0 0 0 0 0 0 0
+ itm_arnor_light_a Dunedain_Ranger_Jerkin Dunedain_Ranger_Jerkin 6  arnor_leather_jerkin_1 134  arnor_leather_jerkin_2 1  arnor_leather_jerkin_2 0  arnor_leather_jerkin_2_cape 268435456  arnor_leather_jerkin_3 167772160  arnor_leather_jerkin_3_cape 671088640  16842765 0 250 436207750 5 90 0 10 6 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_light_b Dunedain_Ranger_Mail Dunedain_Ranger_Mail 6  arnor_leather_mail_1 134  arnor_leather_mail_2 1  arnor_leather_mail_1 0  arnor_leather_mail_2_cape 268435456  arnor_leather_mail_3 167772160  arnor_leather_mail_3_cape 536870912  16842765 0 1000 704643206 21 92 0 24 8 12 0 0 0 0 0 0 0
+ itm_arnor_light_b Dunedain_Ranger_Mail Dunedain_Ranger_Mail 6  arnor_leather_mail_1 134  arnor_leather_mail_2 1  arnor_leather_mail_1 0  arnor_leather_mail_2_cape 268435456  arnor_leather_mail_3 167772160  arnor_leather_mail_3_cape 536870912  16842765 0 1000 973078662 21 92 0 24 8 12 0 0 0 0 0 0 0
 0
 
- itm_arnor_med_a Dunedain_Ranger_Coat Dunedain_Ranger_Coat 6  arnor_leather_light_1 134  arnor_leather_light_2 1  arnor_leather_light_2 0  arnor_leather_light_2_cape 268435456  arnor_leather_light_3 167772160  arnor_leather_light_3_cape 536870912  16842765 0 700 704643206 15 91 0 18 8 0 0 0 0 0 0 0 0
+ itm_arnor_med_a Dunedain_Ranger_Coat Dunedain_Ranger_Coat 6  arnor_leather_light_1 134  arnor_leather_light_2 1  arnor_leather_light_2 0  arnor_leather_light_2_cape 268435456  arnor_leather_light_3 167772160  arnor_leather_light_3_cape 536870912  16842765 0 700 973078662 15 91 0 18 8 0 0 0 0 0 0 0 0
 0
 
- itm_arnor_med_b Dunedain_Mail Dunedain_Mail 6  arnor_leather_heavy_1 134  arnor_leather_heavy_2 1  arnor_leather_heavy_2 0  arnor_leather_heavy_2_cape 268435456  arnor_leather_heavy_3 167772160  arnor_leather_heavy_3_cape 536870912  16842765 0 1700 704643206 27 94 0 32 10 16 0 0 0 0 0 0 0
+ itm_arnor_med_b Dunedain_Mail Dunedain_Mail 6  arnor_leather_heavy_1 134  arnor_leather_heavy_2 1  arnor_leather_heavy_2 0  arnor_leather_heavy_2_cape 268435456  arnor_leather_heavy_3 167772160  arnor_leather_heavy_3_cape 536870912  16842765 0 1700 973078662 27 94 0 32 10 16 0 0 0 0 0 0 0
 0
 
- itm_arnor_heavy Arnorian_High_Armor Arnorian_High_Armor 6  arnor_armor_a1 134  arnor_armor_a2 1  arnor_armor_a2 0  arnor_armor_a2_cape 268435456  arnor_armor_a3 167772160  arnor_armor_a3_cape 536870912  16842765 0 3000 704643206 33 95 0 40 15 20 0 0 0 0 0 0 0
+ itm_arnor_heavy Arnorian_High_Armor Arnorian_High_Armor 6  arnor_armor_a1 134  arnor_armor_a2 1  arnor_armor_a2 0  arnor_armor_a2_cape 268435456  arnor_armor_a3 167772160  arnor_armor_a3_cape 536870912  16842765 0 3000 973078662 33 95 0 40 15 20 0 0 0 0 0 0 0
 0
 
  itm_arnor_greaves Arnorian_Greaves Arnorian_Greaves 1  narf_splinted_greaves_nospurs 0  69390 0 1800 704643206 7 94 0 0 28 15 0 0 0 0 0 0 0
