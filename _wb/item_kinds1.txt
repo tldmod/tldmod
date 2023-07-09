@@ -1731,7 +1731,7 @@ itemsfile version 2
  itm_mirkwood_boots Greenwood_Boots Greenwood_Boots 1  mirkwood_boots 0  69390 0 650 167772294 1 92 0 0 17 0 0 0 0 0 0 0 0
 0
 
- itm_harad_tunic Harad_Tunic Harad_Tunic 4  harad_tunic 134  harad_tunic 1  harad_tunic 0  harad_tunic 167772160  16842765 0 50 167772294 4 90 0 12 3 0 0 0 0 0 0 0 0
+ itm_harad_tunic Harad_Tunic Harad_Tunic 4  harad_skirmisher 134  harad_tunic 1  harad_tunic 0  harad_archer 167772160  16842765 0 50 167772294 4 90 0 12 3 0 0 0 0 0 0 0 0
 0
 
  itm_harad_padded Harad_Padded_Jerkin Harad_Padded_Jerkin 4  CWE_arabian_light_armor_a 134  CWE_arabian_light_armor_b 1  CWE_arabian_light_armor_b 0  CWE_arabian_light_armor_c 167772160  16842765 0 350 167772294 9 90 0 14 5 0 0 0 0 0 0 0 0
@@ -1749,22 +1749,22 @@ itemsfile version 2
  itm_harad_pectoral Harad_Breastplate Harad_Breastplate 4  harad_tier_1_giles 134  harad_tier_2_giles 1  harad_tier_2_giles 0  harad_tier_3_giles 704643072  16842765 0 900 167772294 4 90 0 25 5 9 0 0 0 0 0 0 0
 0
 
- itm_harad_archer Harad_Archer_Armor Harad_Archer_Armor 1  harad_archer 0  16777229 0 600 167772294 8 90 0 16 6 0 0 0 0 0 0 0 0
+ itm_free_harad_archer Harad_Archer_Armor Harad_Archer_Armor 1  harad_archer 0  16777229 0 600 167772294 8 90 0 16 6 0 0 0 0 0 0 0 0
 0
 
- itm_black_snake_armor Maranka_Armor Maranka_Armor 1  black_snake_armor 0  16777229 0 1300 704643206 16 100 2 25 11 9 0 0 0 0 0 0 0
+ itm_black_snake_armor Maranka_Armor Maranka_Armor 3  black_snake_armor_light 134  black_snake_armor 0  black_snake_armor 1  16777229 0 1300 704643206 16 100 2 25 11 9 0 0 0 0 0 0 0
 0
 
  itm_harad_champion Far_Harad_Garb Far_Harad_Garb 2  harad_champion 0  panther_guard 704643072  16777229 0 500 704643206 4 90 0 14 8 0 0 0 0 0 0 0 0
 0
 
- itm_panther_guard Panther_Hide Panther_Hide 1  panther_guard 0  16842765 0 900 704643206 5 90 0 15 8 0 0 0 0 0 0 0 0
+ itm_free_panther_guard Panther_Hide Panther_Hide 1  panther_guard 0  16842765 0 900 704643206 5 90 0 15 8 0 0 0 0 0 0 0 0
 0
 
  itm_harad_scale Harad_Scale_Armor Harad_Scale_Armor 4  CWE_armor_archer_saracin_4a 134  CWE_armor_archer_saracin_4b 1  CWE_armor_archer_saracin_4c 0  harad_scale_3 704643072  16777229 0 1200 704643206 28 94 0 27 9 11 0 0 0 0 0 0 0
 0
 
- itm_harad_tiger_scale Tiger_Guard_Armor Tiger_Guard_Armor 1  harad_tier_3_giles 0  16777229 0 1400 704643206 30 95 2 30 8 15 0 0 0 0 0 0 0
+ itm_free_harad_tiger_scale Tiger_Guard_Armor Tiger_Guard_Armor 1  harad_tier_3_giles 0  16777229 0 1400 704643206 30 95 2 30 8 15 0 0 0 0 0 0 0
 0
 
  itm_harad_lion_scale Lion_Guard_Armor Lion_Guard_Armor 1  CWE_heavy_armor_arabs_2d 0  16777229 0 1400 704643206 30 95 2 30 8 15 0 0 0 0 0 0 0
@@ -1821,7 +1821,7 @@ itemsfile version 2
  itm_harad_mace Far_Harad_Mace Far_Harad_Mace 1  harad_mace 0  4259842 9223388529822793742 350 156672 2.5 93 0 0 0 12 30720 96 0 50 0 512 542
 0
 
- itm_far_harad_2h_mace Far_Harad_Two_Handed_Mace Far_Harad_Two_Handed_Mace 1  far_harad_2h_mace 0  279515037699 9223635925844623584 500 271496 4.5 92 0 0 0 14 28672 100 0 74 0 256 540
+ itm_far_harad_2h_mace Far_Harad_Two_Handed_Mace Far_Harad_Two_Handed_Mace 1  far_harad_2h_mace 0  279246602243 9223635925844623584 500 271496 4.5 92 0 0 0 14 28672 100 0 74 0 256 540
 0
 
  itm_harad_dagger Harad_Knife Harad_Knife 1  harad_dagger 0  12664834 9223372037685248015 100 150 0.75 90 0 0 0 0 22528 120 0 47 0 275 22
@@ -1881,7 +1881,7 @@ itemsfile version 2
  itm_harad_lamellar_greaves Harad_Splinted_Greaves Harad_Splinted_Greaves 1  harad_lamellar_greaves 0  69390 0 1300 704643206 7 94 0 0 24 12 0 0 0 0 0 0 0
 0
 
- itm_camel Harad_Camel Harad_Camel 1  giles_evil_camel 0  4097 0 2000 16106389504 0 100 0 22 0 4 180 50 30 110 0 18 0
+ itm_camel Harad_Camel Harad_Camel 2  giles_evil_camel_brown 0  giles_evil_camel 111669411840  4097 0 2000 16106389504 0 100 0 22 0 2 180 48 28 110 0 18 0
 0
 
  itm_free_khand_helmet_a2 Khand_Helm Khand_Helm 1  khand_inf_helm_a3 0  65548 0 800 704643206 2 100 30 0 0 0 0 0 0 0 0 0 0

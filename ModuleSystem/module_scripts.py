@@ -27729,6 +27729,7 @@ command_cursor_scripts = [
             (troop_set_slot, "trp_gondor_lord", slot_troop_retainer_troop, "trp_steward_guard"), #Steward Guards for Denethor
             (troop_set_slot, "trp_rohan_lord", slot_troop_retainer_troop, "trp_c6_king_s_man_of_rohan"), #King's Guard for Theoden
             (troop_set_slot, "trp_knight_1_7", slot_troop_retainer_troop, "trp_a6_ithilien_master_ranger"), #Rangers for Faramir
+            (troop_set_slot, "trp_knight_2_7", slot_troop_retainer_troop, "trp_ac5_camel_rider"), #camel riders for Harad lord
         ]),
     #Retainers End
 

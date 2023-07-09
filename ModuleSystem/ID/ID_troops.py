@@ -983,4 +983,5 @@ trp_future_troop_10 = 981
 trp_a3_dism_skirmisher_of_rohan = 982
 trp_a4_dism_veteran_skirmisher_of_rohan = 983
 trp_a5_dism_elite_skirmisher_of_rohan = 984
-trp_last = 985
+trp_ac5_camel_rider = 985
+trp_last = 986

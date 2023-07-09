@@ -985,6 +985,7 @@ itm_harad_pectoral_good = (itm_harad_pectoral, imod_reinforced)
 itm_harad_pectoral_bad = (itm_harad_pectoral, imod_cracked)
 itm_harad_pectoral_lordly = (itm_harad_pectoral, imod_lordly)
 itm_harad_champion_good = (itm_harad_champion, imod_reinforced)
+itm_black_snake_armor_bad = (itm_black_snake_armor, imod_cracked)
 
 # arnor armors
 itm_arnor_light_a_bad			= (itm_arnor_light_a, imod_crude)
@@ -1021,6 +1022,7 @@ itm_dunedain_warhorse_heavy = (itm_dunedain_warhorse, imod_heavy)
 
 #big packs for javelins
 itm_javelin_big = (itm_javelin, imod_large_bag) 
+itm_harad_javelin_big = (itm_harad_javelin, imod_large_bag) 
 itm_dunland_javelin_big = (itm_dunland_javelin, imod_large_bag) 
 
 # 0x000000018000004136db6db6db6db6db00000000001db6db0000000000000000  default player face
@@ -1405,7 +1407,7 @@ troops = [
 ["i5_harad_lion_guard","Lion_Guard","Lion_Guards",tf_harad| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,[itm_lion_helm,itm_harad_heavy_lamellar_lordly,itm_leather_gloves,itm_harad_scale_greaves,itm_harad_khopesh,itm_black_snake_sword,itm_harad_long_shield_b,],attr_evil_tier_5,wp_tier_5,knows_common|knows_athletics_6|knows_power_strike_5|knows_ironflesh_4|knows_shield_3,haradrim_face_1,haradrim_face_2],
 ["a3_harad_hunter","Harad_Hunter","Harad_Hunters",tf_harad| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,[itm_harad_heavy_inf_helm,itm_harad_tunic,itm_harad_padded_bad,itm_harad_tunic_good, itm_desert_boots,itm_harad_bow,itm_harad_arrows,itm_harad_short_spear,itm_harad_dagger,],attr_evil_tier_3,wp_tier_bow_3,knows_common|knows_ironflesh_1|knows_power_throw_2|knows_power_draw_2|knows_athletics_3|knows_riding_1|knows_horse_archery_1|knows_looting_1|knows_tactics_1|knows_spotting_1|knows_wound_treatment_1|knows_first_aid_1|knows_leadership_2|knows_trade_1,haradrim_face_1,haradrim_face_2],
 ["a4_harad_archer","Harad_Archer","Harad_Archers",tf_harad| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,[itm_harad_heavy_inf_helm,itm_harad_tunic_good,itm_harad_padded,itm_harad_lamellar_bad,itm_harad_leather_greaves,itm_desert_boots, itm_harad_bow,itm_harad_arrows,itm_harad_short_spear,itm_harad_dagger,],attr_evil_tier_4,wp_tier_bow_4,knows_common|knows_athletics_3|knows_power_draw_3|knows_ironflesh_1,haradrim_face_1,haradrim_face_2],
-["a5_harad_eagle_guard","Eagle_Guard","Eagle_Guards",tf_harad| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,[itm_harad_eaglehelm,itm_harad_padded_good, itm_harad_lamellar_good,itm_harad_pectoral,itm_leather_gloves,itm_harad_leather_greaves,itm_lg_bow,itm_harad_arrows,itm_harad_arrows,itm_eagle_guard_spear,],attr_evil_tier_5,wp_tier_bow_5,knows_common|knows_athletics_4|knows_power_draw_4|knows_ironflesh_2,haradrim_face_1,haradrim_face_2],
+["a5_harad_eagle_guard","Eagle_Guard","Eagle_Guards",tf_harad| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,[itm_harad_eaglehelm,itm_black_snake_armor_bad,itm_harad_pectoral,itm_leather_gloves,itm_harad_leather_greaves,itm_lg_bow,itm_harad_arrows,itm_harad_arrows,itm_eagle_guard_spear,],attr_evil_tier_5,wp_tier_bow_5,knows_common|knows_athletics_4|knows_power_draw_4|knows_ironflesh_2,haradrim_face_1,haradrim_face_2],
 #HARONDOR
 ["c2_harondor_scout","Harondor_Scout","Harondor_Scouts",tf_harad| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_harad,[itm_harad_cav_helm_a,itm_harad_tunic,itm_harad_padded,itm_desert_boots,itm_horandor_a,itm_harad_shield_a,itm_saddle_horse],attr_evil_tier_2,wp_tier_2,knows_common|knows_athletics_2|knows_shield_1|knows_power_strike_1,haradrim_face_1,haradrim_face_2],
 ["c3_harondor_rider","Harondor_Rider","Harondor_Riders",tf_harad| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,[itm_harad_cav_helm_b,itm_harad_tunic_good,itm_harad_padded_good,itm_harad_scale_bad,itm_harad_lamellar_bad,itm_harad_leather_greaves,itm_desert_boots, itm_horandor_a,itm_harad_shield_b,itm_harad_shield_c,itm_harad_horse],attr_evil_tier_3,wp_tier_3,knows_common|knows_riding_2|knows_shield_2|knows_power_strike_2,haradrim_face_1,haradrim_face_2],
@@ -2137,7 +2139,7 @@ troops = [
    [itm_mordor_warhorse2,itm_m_cap_armor,itm_uruk_chain_greaves,itm_evil_gauntlets_b_good,itm_hood_black,itm_mordor_longsword,],
       attr_tier_7,wp_tier_6,knight_skills_1|knows_riding_4,0x0000000fff00000012078077c00ff1c000000000001cf0680000000000000000],
 ["harad_lord","Chief_Ul-Ulcari","Chief",tf_hero| tf_harad| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
-   [itm_harad_warhorse,itm_harad_heavy,itm_harad_leather_greaves,itm_evil_gauntlets_a,itm_harad_dragon_helm,itm_harad_khopesh,],
+   [itm_harad_warhorse,itm_harad_heavy_good,itm_harad_scale_greaves,itm_evil_gauntlets_a,itm_harad_dragon_helm,itm_harad_long_spear,itm_harad_heavy_sword_good,itm_harad_yellow_shield,],
       attr_tier_7,wp_tier_6,knight_skills_4|knows_riding_4|knows_trainer_5,0x00000009ff0020071415a5f9fb60c1b700000000001d663b0000000000000000],
 ["rhun_lord","Jarl_Helcaroth","Jarl",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_evil_man,0,0,fac_rhun,
    [itm_rhun_horse_h,itm_rhun_armor_k_good,itm_splinted_greaves_good,itm_evil_gauntlets_b_good,itm_rhun_helm_chieftain_good,itm_rhun_greatsword,],
@@ -2293,14 +2295,13 @@ troops = [
       attr_tier_7,wp_tier_6,knight_skills_5|knows_persuasion_5|knows_trainer_4,0x000000002c000104003fb3f407b83d0d00000000000000000000000000000000],
 #Harad
 ["knight_2_6","Chieftain_Karna_the_Lion","_",tf_hero| tf_harad| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
-   [itm_harad_warhorse,itm_harad_lion_scale,itm_harad_leather_greaves,itm_evil_gauntlets_a,itm_harad_dragon_helm,itm_harad_khopesh,itm_harad_long_shield_c,],
+   [itm_harad_lion_scale,itm_harad_scale_greaves,itm_evil_gauntlets_a,itm_lion_helm,itm_harad_khopesh,itm_harad_long_shield_c,],
       attr_tier_7,wp_tier_6,knight_skills_1|knows_riding_4|knows_persuasion_3|knows_trainer_3,0x00000009ff00300b1415a5f77872f7b700000000001d663b0000000000000000],
-["knight_2_7","Chieftain_Na’man","_",tf_hero| tf_harad| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
-   [itm_harad_warhorse,itm_harad_heavy,itm_harad_leather_greaves,itm_evil_gauntlets_a,itm_harad_dragon_helm,itm_harad_khopesh,itm_harad_long_shield_c,],
-      attr_tier_7,wp_tier_6,knight_skills_2|knows_riding_4|knows_persuasion_3|knows_trainer_4,0x000000003f00000f20a8b7f9e87ff1b700000000001c3ab80000000000000000],
-["knight_2_8","Chieftain_Haarith","_",tf_hero| tf_harad| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
-   [itm_harad_warhorse,itm_harad_tiger_scale,itm_harad_leather_greaves,itm_evil_gauntlets_a,itm_harad_dragon_helm,itm_harad_khopesh,itm_harad_long_shield_c,],
-      attr_tier_7,wp_tier_6,knight_skills_2|knows_riding_4|knows_persuasion_3|knows_trainer_4,0x000000003f00100421526ff7708d22f700000000001fea200000000000000000],
+["knight_2_7","Chieftain_Na’man","_",tf_hero| tf_harad| tfg_ranged| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
+[itm_harad_heavy_inf_helm,itm_black_snake_armor,itm_leather_gloves,itm_harad_lamellar_greaves,itm_harad_javelin_big,itm_harad_javelin_big,itm_far_harad_2h_mace,itm_harad_long_spear,(itm_camel, imod_champion)],attr_tier_7,wp_tier_6,knight_skills_2|knows_power_throw_7|knows_riding_7|knows_horse_archery_8,0x000000003f00000f20a8b7f9e87ff1b700000000001c3ab80000000000000000],
+["knight_2_8","Chieftain_Haarith","_",tf_hero| tf_harad| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_harad,
+   [itm_harad_warhorse,itm_harad_pectoral_lordly,itm_harad_leather_greaves,itm_evil_gauntlets_a,itm_harad_dragon_helm,itm_harad_heavy_sword_good,itm_harad_long_shield_c,itm_nomad_bow,itm_harad_arrows,],
+      attr_tier_7,wp_tier_6,knight_skills_2|knows_riding_4|knows_persuasion_3|knows_trainer_4|knows_horse_archery_8,0x000000003f00100421526ff7708d22f700000000001fea200000000000000000],
 # ["knight_2_9","Harad_Chieftain","_",tf_hero,0,reserved,fac_harad,[itm_saddle_horse,itm_rich_outfit,itm_mail_hauberk,itm_leather_boots,itm_mail_boots,itm_mail_mittens,itm_two_handed_axe,itm_shield_heater_c],knight_attrib_4,wp(230),knight_skills_4|knows_riding_4,0x0000000c160451d2136469c4d9b159ad00000000001e28f10000000000000000,vaegir_face_older_2],
 # ["knight_2_10","Harad_Lieutenant","_",tf_hero,0,reserved,fac_harad,[itm_warhorse,itm_fur_coat,itm_mail_hauberk,itm_leather_boots,itm_mail_boots,itm_mail_mittens,itm_shield_heater_c],knight_attrib_5,wp(260),knight_skills_5|knows_riding_4|knows_trainer_6,0x0000000f7c00520e66b76edd5cd5eb6e00000000001f691e0000000000000000,vaegir_face_older_2],
 #Rhun
@@ -3516,6 +3517,8 @@ attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,o
 ["a3_dism_skirmisher_of_rohan","Skirmisher_of_Rohan","Skirmishers_of_Rohan",tf_rohan| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,[itm_rohan_light_helmet_a,itm_rohan_light_helmet_b,itm_rohan_light_helmet_b_good,itm_rohan_recruit_good, itm_rohan_leather_bad, itm_rohan_leather,itm_dale_light_b_bad,itm_north_leather_good,itm_rohan_shoes,itm_leather_boots_bad,itm_nomad_bow,itm_khergit_arrows,itm_rohan_sword_c,itm_spear,],attr_tier_4,wp_tier_4,knows_horse_archery_5|knows_riding_6|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_2|knows_power_throw_4,rohan_face_young_1,rohan_face_old_2],
 ["a4_dism_veteran_skirmisher_of_rohan","Veteran_Skirmisher_of_Rohan","Veteran_Skirmishers_of_Rohan",tf_rohan| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,[itm_rohan_light_helmet_a,itm_rohan_light_helmet_b_good,itm_rohan_archer_helmet_a_bad,itm_rohan_leather_good,itm_rohan_mail_bad, itm_rohan_mail,itm_dale_light_b,itm_leather_boots,itm_nomad_bow,itm_khergit_arrows,itm_rohirrim_long_hafted_axe,itm_rohan_sword_c,],attr_tier_5,wp_tier_5,knows_horse_archery_7|knows_riding_7|knows_power_draw_5|knows_power_strike_3|knows_ironflesh_3|knows_power_throw_5,rohan_face_middle_1,rohan_face_old_2],
 ["a5_dism_elite_skirmisher_of_rohan","Elite_Skirmisher_of_Rohan","Elite_Skirmishers_of_Rohan",tf_rohan| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,[itm_rohan_archer_helmet_a,itm_rohan_light_helmet_a,itm_rohan_mail_good, itm_rohan_rider,itm_rohan_rider_bad,itm_dale_light_b_good,itm_leather_gloves,itm_rohan_light_greaves,itm_leather_boots,itm_strong_bow,itm_khergit_arrows,itm_rohan_spear,itm_rohan_sword_c,itm_rohirrim_long_hafted_axe,],attr_tier_6,wp_tier_6,knows_horse_archery_5|knows_riding_7|knows_power_draw_5|knows_power_throw_5|knows_power_strike_3|knows_ironflesh_3,rohan_face_middle_1,rohan_face_old_2],
+
+["ac5_camel_rider","Harad_Camel_Rider","Harad_Camel_Riders",tf_harad| tfg_ranged| tf_mounted| tfg_armor| tfg_helm| tfg_horse|tfg_gloves| tfg_boots,0,0,fac_harad,[itm_black_snake_helm,itm_harad_heavy_inf_helm,itm_black_snake_armor,itm_leather_gloves,itm_harad_leather_greaves,itm_harad_javelin_big,itm_harad_javelin_big,itm_far_harad_2h_mace,itm_harad_long_spear,itm_camel],attr_evil_tier_5,wp_tier_bow_5,knows_common|knows_ironflesh_6|knows_power_strike_4|knows_power_throw_7|knows_riding_7|knows_horse_archery_8 ,haradrim_face_1,haradrim_face_2],
 
 #Add new troops here, right before trp_last!
 
