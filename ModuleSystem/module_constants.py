@@ -2028,7 +2028,7 @@ fac_reward_items_list = [
 #fac_gundabad
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4, itm_orc_throwing_axes_reward, 0), (5, itm_uruk_falchion_b, imod_balanced), (6, itm_warg_reward, 0), (7, itm_gundabad_helm_e, imod_lordly), (8, itm_gundabad_armor_e, imod_lordly), (9, itm_orc_idol_reward, 0)],
 #fac_dunland
-[(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4, itm_crebain_reward, 0), (5, itm_wilderness_cowl, 0), (6, itm_fur_gloves_reward, 0), (7, itm_leather_boots_reward, 0), (8, itm_dunland_armor_k, imod_lordly), (9, itm_dun_berserker, imod_masterwork)],
+[(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4, itm_crebain_reward, 0), (5, itm_wilderness_cowl, 0), (6, itm_fur_gloves_reward, 0), (7, itm_leather_boots_reward, 0), (8, itm_dunland_chieftain, imod_lordly), (9, itm_dun_berserker, imod_masterwork)],
 #fac_beorn
 [(2,itm_cooking_cauldron,0),(3, itm_fur_gloves_reward, 0),(4, itm_leather_boots_reward, 0), (5, itm_wilderness_cowl, 0), (6, itm_herbarium_reward, 0), (7, itm_beorn_axe_reward, imod_masterwork), (8, itm_beorn_chief, imod_lordly), (9, itm_beorn_shield_reward, imod_reinforced)],
 
@@ -2066,7 +2066,7 @@ fac_reward_items_list = [
 #fac_gundabad
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4, itm_orc_throwing_axes_reward, 0), (5, itm_uruk_falchion_b, imod_balanced), (6, itm_warg_reward, 0), (7, itm_gundabad_helm_e, imod_lordly), (8, itm_gundabad_armor_e, imod_lordly), (9, itm_orc_idol_reward, 0)],
 #fac_dunland
-[(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4, itm_crebain_reward, 0), (5, itm_wilderness_cowl, 0), (6, itm_fur_gloves_reward, 0), (7, itm_leather_boots_reward, 0), (8, itm_dunland_armor_k, imod_lordly), (9, itm_dun_berserker, imod_masterwork)],
+[(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4, itm_crebain_reward, 0), (5, itm_wilderness_cowl, 0), (6, itm_fur_gloves_reward, 0), (7, itm_leather_boots_reward, 0), (8, itm_dunland_chieftain, imod_lordly), (9, itm_dun_berserker, imod_masterwork)],
 #fac_beorn
 [(2,itm_cooking_cauldron,0),(3, itm_fur_gloves_reward, 0),(4, itm_leather_boots_reward, 0), (5, itm_wilderness_cowl, 0), (6, itm_herbarium_reward, 0), (7, itm_beorn_axe_reward, imod_masterwork), (8, itm_beorn_chief, imod_lordly), (9, itm_beorn_shield_reward, imod_reinforced)],
 ]) + [ 
