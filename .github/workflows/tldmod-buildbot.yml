@@ -18,6 +18,7 @@ jobs:
       
     - name: Install dependencies
       run: | 
+        sudo apt-get update # swy: avoid 404 errors, you'd think the package manager would be smart enough to do this :)
         sudo apt install p7zip       \
                          tree        \
                          git         \
