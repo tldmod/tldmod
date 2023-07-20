@@ -1,5 +1,5 @@
-dlga_start:mutiny_pretalk_1|Агов, {playername}. Ми ось що тобі скажемо.. ^Хлопці бурчать! Хочуть більше відпочинку і менше марширувати.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|Повернися у стрій, черве! Ми на війні і тут я твій командир.
+dlga_start:mutiny_pretalk_1|Агов, {playername}. Ми ось що тобі скажемо.. ^ Хлопці бурчать! Хочуть більше відпочинку і менше маршувати.
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|Повернися у стрій, черве! Ми на війні й тут я твій командир.
 dlga_mutiny_pretalk_2:close_window|Як забажаєте, командире. Як забажаєте...
 dlga_start:mutiny_talk_1|Агов, командире. Ми ось що тобі скажемо... Хлопці невдоволені, зовсім. ^Невдосталь людятини, не достатньо розваг. ^Хлопці про тебе ненедобре гуторять, командире!
 dlga_mutiny_talk_1:mutiny_talk_2|Що? Бунт на війні? ^Це карається смертю, черве!
@@ -611,8 +611,8 @@ dlga_lord_talk:lord_leave_prison|Мені треба йти.
 dlga_lord_talk:lord_leave|Наша коротка бесіда підійшла до кінця. Мені треба йти.
 dlga_lord_talk:lord_leave.1|Мені потрібно йти.
 dlga_lord_leave_prison:close_window|Ми ще зустрінемося.
-; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
-; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
+dlga_lord_leave:lord_offer_troops|{s23} {s24} У мене {reg41} {s25}, котрі {reg42?are:is} готові приєднатися до вас.
+dlga_lord_offer_troops:close_window|Дякую, {reg42? Я з радістю прийму їх до своєї групи: але, боюся, у мене є місце лише для {reg41}}.
 dlga_lord_offer_troops:close_window.1|Я боюся, що зараз не зможу прийняти їх.
 ; dlga_lord_leave:lord_offer_item|{s23} {s24}
 dlga_lord_offer_item:close_window|Дякую, я подбаю про те, щоб це було використано з користю.
@@ -928,8 +928,8 @@ dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Гаразд. 
 dlga_merchant_quest_taken_bandits:close_window|Зробите? Я такий радий це чути. Удачі вам.
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Даруйте, але зараз я не маю на це часу.
 dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Справді! Група бандитів турбує це місце, і я не знаю, як з ними впоратися. Вони влаштовували засідки та грабували п’яних новобранців під покровом ночі, а потім швидко, як блискавка, зникали, коли нарешті з’явилися охоронці. Нам не вдалося спіймати жодного з них. Вони нападають лише на одиноких людей, ніколи не наважуючись показати себе, коли навколо група. Мені потрібен хтось, хто зможе впоратися з цими бандитами сам і перемогти. Здається, це єдиний спосіб їх позбутися. Ви впораєтесь із завданням?
-; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
-; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
+dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|У нас завелася банда мерзенних гоблінів, і я ніяк не можу впоратися з ними, хоч вішайся. Вони виходять у ночі та грабують п'яних новобранців, а, коли з'являється варта, вони зникають з блискавичною швидкістю. Ми не зуміли піймати жодного з них. Вони нападають тільки на самотніх перехожих, ніколи не наважуючись показуватися при вигляді якої-небудь компанії. Мені потрібен хтось, хто зміг би самотужки виманити цих гоблінів і перемогти їх. Здається, це єдиний спосіб впоратися з ними. Ви можете взятися за це?
+dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Вбити гоблінів-розбійників? Чому б ні!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Ні, мене це не цікавить.
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|Як гора з плечей, {playername}. Ви можете розраховувати на хорошу нагороду, якщо повернетеся з перемогою. Тільки бережіть себе, добре?
 dlga_merchant_quest_requested:merchant_quest_brief.9|Командир гарнізону шукає вправного воїна, який міг би супроводжувати групу {s12} у {s13}.
@@ -1040,7 +1040,7 @@ dlga_routed_allies_talk:close_window.1|Поки що ні, вояче.
 dlga_start:routed_allies_talk_troll|^^ГАРЧАННЯ!^^
 dlga_routed_allies_talk_troll:close_window|[Попросити їх приєднатися до вас знову]
 dlga_routed_allies_talk_troll:close_window.1|[Піти]
-; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+dlga_start:party_encounter_friend|Ми слідуємо вашим наказам, {s24}.
 dlga_start:party_encounter_friend.1|{s4} Що тебе сюди привело, {s24}?
 dlga_party_reinforce:party_reinforce_end|Ми ще не бачили великої активності ворога. Може бути, трохи пізніше. Дякую.
 dlga_party_reinforce:party_reinforce_end.1|У нас і так достатньо воїнів, дякую вам.

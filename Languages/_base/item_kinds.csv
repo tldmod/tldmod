@@ -26,7 +26,6 @@ itm_steppe_horse|Steppe Horse
 itm_courser|Courser
 itm_hunter|Hunter
 itm_pony|Pony
-itm_arnor_warhorse|Arnorian Warhorse
 itm_dunedain_warhorse|Dunedain Warhorse
 itm_rohirrim_courser|Rohirrim Courser
 itm_rohirrim_hunter|Rohirrim Hunter
@@ -424,18 +423,15 @@ itm_gundabad_helm_c|Gundabad Helm
 itm_gundabad_helm_d|Gundabad Helm
 itm_gundabad_helm_e|Wargrider Helm
 itm_dunland_wolfboots|Dunland Wolfboots
-itm_dunland_armor_a|Dunnish Fur Armor
-itm_dunland_armor_b|Dunnish Fur Armor
-itm_dunland_armor_c|Dunnish Fur Armor
-itm_dunland_armor_d|Dunnish Fur Armor
-itm_dunland_armor_e|Dunnish Fur Armor
-itm_dunland_armor_g|Dunnish Fur Armor
-itm_dunland_armor_h|Dun Long Fur Armor
-itm_dunland_armor_i|Dunnish Hauberk
-itm_dunland_armor_j|Dunland Hauberk
-itm_dunland_armor_k|Dun Chief Armor
+itm_dunland_tunic_1|Dunnish Leather Tunic
+itm_dunland_tunic_2|Dunnish Leather Tunic
+itm_dunland_fur_1|Dunnish Fur
+itm_dunland_fur_2|Dunnish Fur
+itm_dunland_mail_1|Dunnish Hauberk
+itm_dunland_mail_2|Dunnish Hauberk
+itm_dunland_chieftain|Dunnish Chief Armor
 itm_dun_helm_a|Dunnish Wolf Cap
-itm_dun_helm_b|Dunnish Antler Cap
+itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|Dunnish Tall Helm
 itm_dun_helm_d|Dunnish Tall Helm
 itm_dun_helm_e|Dunnish Antler Helm

@@ -1,7 +1,7 @@
 skl_trade|Торговець
 skl_trade_desc|Торговці стають більш поступливими і пропонують більш краще спорядження. (Вміння загону)
 skl_leadership|Лідерство
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
+skl_leadership_desc|З кожним новим рівнем цієї навички кількість людей, якими ви можете командувати, збільшується на 5, піднімається бойовий дух і злагодження в бою. Кількість добровольців, які хочуть вступити в ваш загін, збільшується. (Вміння лідера)
 skl_prisoner_management|Утримання полонених
 skl_prisoner_management_desc|З кожним новим рівнем цієї навички максимальне число полонених збільшується на%d (вміння лідера).
 skl_persuasion|Виживання
