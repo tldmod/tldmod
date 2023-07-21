@@ -960,30 +960,30 @@ itm_gundabad_helm_e|Wargrider Helm
 itm_gundabad_helm_e_pl|Wargrider Helm
 itm_dunland_wolfboots|Dunland Wolfboots
 itm_dunland_wolfboots_pl|Dunland Wolfboots
-itm_dunland_armor_a|Dunnish Fur Armor
-itm_dunland_armor_a_pl|Dunnish Fur Armor
-itm_dunland_armor_b|Dunnish Fur Armor
-itm_dunland_armor_b_pl|Dunnish Fur Armor
-itm_dunland_armor_c|Dunnish Fur Armor
-itm_dunland_armor_c_pl|Dunnish Fur Armor
-itm_dunland_armor_d|Dunnish Fur Armor
-itm_dunland_armor_d_pl|Dunnish Fur Armor
-itm_dunland_armor_e|Dunnish Fur Armor
-itm_dunland_armor_e_pl|Dunnish Fur Armor
-itm_dunland_armor_g|Dunnish Fur Armor
-itm_dunland_armor_g_pl|Dunnish Fur Armor
-itm_dunland_armor_h|Dun Long Fur Armor
-itm_dunland_armor_h_pl|Dun Long Fur Armor
-itm_dunland_armor_i|Dunnish Hauberk
-itm_dunland_armor_i_pl|Dunnish Hauberk
-itm_dunland_armor_j|Dunland Hauberk
-itm_dunland_armor_j_pl|Dunland Hauberk
-itm_dunland_armor_k|Dun Chief Armor
-itm_dunland_armor_k_pl|Dun Chief Armor
+itm_free_dunland_armor_a|Dunnish Fur Armor
+itm_free_dunland_armor_a_pl|Dunnish Fur Armor
+itm_free_dunland_armor_b|Dunnish Fur Armor
+itm_free_dunland_armor_b_pl|Dunnish Fur Armor
+itm_free_dunland_armor_c|Dunnish Fur Armor
+itm_free_dunland_armor_c_pl|Dunnish Fur Armor
+itm_dunland_tunic_1|Dunnish Leather Tunic
+itm_dunland_tunic_1_pl|Dunnish Leather Tunic
+itm_dunland_tunic_2|Dunnish Leather Tunic
+itm_dunland_tunic_2_pl|Dunnish Leather Tunic
+itm_dunland_fur_1|Dunnish Fur
+itm_dunland_fur_1_pl|Dunnish Fur
+itm_dunland_fur_2|Dunnish Fur
+itm_dunland_fur_2_pl|Dunnish Fur
+itm_dunland_mail_1|Dunnish Hauberk
+itm_dunland_mail_1_pl|Dunnish Hauberk
+itm_dunland_mail_2|Dunnish Hauberk
+itm_dunland_mail_2_pl|Dunnish Hauberk
+itm_dunland_chieftain|Dunnish Chief Armor
+itm_dunland_chieftain_pl|Dunnish Chief Armor
 itm_dun_helm_a|Dunnish Wolf Cap
 itm_dun_helm_a_pl|Dunnish Wolf Cap
-itm_dun_helm_b|Dunnish Antler Cap
-itm_dun_helm_b_pl|Dunnish Antler Cap
+itm_dun_helm_b|Dunnish Fur Cap
+itm_dun_helm_b_pl|Dunnish Fur Cap
 itm_dun_helm_c|Dunnish Tall Helm
 itm_dun_helm_c_pl|Dunnish Tall Helm
 itm_dun_helm_d|Dunnish Tall Helm
@@ -1156,18 +1156,18 @@ itm_harad_heavy|Harasjala Armor
 itm_harad_heavy_pl|Harasjala Armor
 itm_harad_pectoral|Harad Breastplate
 itm_harad_pectoral_pl|Harad Breastplate
-itm_harad_archer|Harad Archer Armor
-itm_harad_archer_pl|Harad Archer Armor
+itm_free_harad_archer|Harad Archer Armor
+itm_free_harad_archer_pl|Harad Archer Armor
 itm_black_snake_armor|Maranka Armor
 itm_black_snake_armor_pl|Maranka Armor
 itm_harad_champion|Far Harad Garb
 itm_harad_champion_pl|Far Harad Garb
-itm_panther_guard|Panther Hide
-itm_panther_guard_pl|Panther Hide
+itm_free_panther_guard|Panther Hide
+itm_free_panther_guard_pl|Panther Hide
 itm_harad_scale|Harad Scale Armor
 itm_harad_scale_pl|Harad Scale Armor
-itm_harad_tiger_scale|Tiger Guard Armor
-itm_harad_tiger_scale_pl|Tiger Guard Armor
+itm_free_harad_tiger_scale|Tiger Guard Armor
+itm_free_harad_tiger_scale_pl|Tiger Guard Armor
 itm_harad_lion_scale|Lion Guard Armor
 itm_harad_lion_scale_pl|Lion Guard Armor
 itm_harad_dragon_helm|Kiloka Helm
