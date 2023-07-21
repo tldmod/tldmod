@@ -247,6 +247,7 @@ qstr_Less_Wargs_upkeep|Menší údržba za Vrky
 qstr_Light_Armor|Lehké brnění
 qstr_Bonus_to_Strength__P|Bonus k Síle (pouze hráč)
 qstr_Lead_more_Orcs|Vést více skřetů
+; qstr_Can_scare_horses|Can scare horses
 qstr_+{reg1}_to_Party_Mor|+{reg1} k Morálce Družiny
 ; qstr_Range:_{reg55}|Range: {reg55}
 qstr_Dwarves|Trpaslíci
@@ -764,8 +765,8 @@ qstr_Two_Nazgul_are_circl|Dva Nazgůlové krouží na obloze nad bojištěm!
 qstr_A_Nazgul_is_circling|Nazgůl krouží na obloze nad bojištěm!
 qstr_Some_of_your_human_t|Některé z lidských jednotek nejsou zastrašeny tmou.(Noční jednotky nejsou postiženy penalizací za tmu)
 qstr_You_are_filled_with_|Když se díváš na nepřítele, jsi naplněný vztekem (Bersekr aktivní).
-qstr_Your_mount_is_scared|Tvůj kůň je vyděšený {reg73?entem:trolem}!
-qstr_Your_mount_is_scared_|Tvůj kůň je vyděšený {reg73?entem:trolem}, ale zvládneš to!
+qstr_Your_mount_is_scared|Tvůj kůň je vyděšený {s5}!
+; qstr_Your_mount_is_scared_|Your mount is scared by the {s5}, but you can master it!
 qstr_Nazgul_sweep!|Nazgul křičí!
 qstr_You_and_your_horse_p|Ty i tvůj kůň panikaříte, řev Nazgůla je nesnesitelný!
 qstr_Your_horse_panics_th|Tvůj kůň se plaší, řev Nazgůla je nesnesitelný.
@@ -904,8 +905,8 @@ qstr_You_are_suffering_fr|Trpíš {s1}.
 qstr_You_are_suffering_fro|Trpíš {s1} a {s2}.
 qstr_You_are_suffering_from|Trpíš {s1}, {s2}, a {s3}.
 qstr_You_are_suffering_from_|Trpíš {s1}, {s2}, {s3} a {s4}.
-qstr_Weekly_upkeep_for_tr|Týdenní náklady na vojáky:^{reg5} Resource Pointů^
-qstr_{s12}^__{s4}:_{reg4}|{s12}^  {s4}: {reg4} Resource pointů ({reg5})
+; qstr_Troop_upkeep__paid_e|Troop upkeep (paid every four days):^
+; qstr_{s12}^^__{s4}:_{reg8|{s12}^^  {s4}: {reg8}/{reg5} Resource Points ^Party: {reg4}^Reserves: {reg7}
 qstr_No_upkeep_costs|Žádné náklady
 qstr_Orc_hiring_bonus:_+2|Bonus na najímání skřetů: +2/3 za každého skřeta^
 qstr_Current_party_size_l|Současný velikostní limit skupiny je {reg5}.^Modifikátory velikosti skupiny jsou:^^Základní velikost:  +10^Vůdcovství: {s2}{reg1}^Charisma: {s3}{reg2}^Ranky: {s4}{reg3}^{s5}CELKEM:  {reg5}
@@ -1108,6 +1109,9 @@ qstr_^^^You_lost_your_fig|^^^Prohrál jsi boj proti vzbouřenci! ^Vypadá to že
 qstr_^^^You_have_slain_th|^^^Zabil jsi provinilce a ostatní skřeti rychle zapadli zpátky do řady. ^Na nějakou dobu budou ti červi jistě potichu.
 qstr_You_cover_up_your_tr|Zakryj stopy a běž kupředu.
 qstr_Breaking_camp...|Rozbíjíš tábor...
+; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
+; qstr_Desertion|Desertion
+; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
 qstr_You_have_left_{s1}.|Opustil jsi oblast {s1}.
 qstr_You_are_entering_{s1|Vstupuješ do oblasti {s1} ({s2}).
 qstr_You_are_entering_{s1}|Vstupuješ do oblasti {s1}.

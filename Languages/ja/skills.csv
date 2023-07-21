@@ -15,7 +15,7 @@ skl_surgery_desc|1レベル毎に4%%の確率で、 戦闘で致死ダメージ�
 skl_wound_treatment|治療
 skl_wound_treatment_desc|パーティの回復速度が 1レベル毎に20%%速くなります。 (パーティスキル)
 skl_inventory_management|荷物管理
-skl_inventory_management_desc|確保できるアイテムの最大数が 1レベル毎に6個増加します。 (リーダースキル)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|観測術
 skl_spotting_desc|1レベル毎に、 マップ画面上での視界が 10%%広くなります。 (パーティスキル)
 skl_pathfinding|経路探索

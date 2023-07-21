@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^C'est étrange, vous entendez des bruits menaçants to
 mno_be_quiet_elf|Respectez le courroux des arbres. Circulez calmement et en bon ordre.
 mno_be_quiet|Baissez vos armes et restez calmes ! Maintenant, hors d'ici !
 mno_be_bold|Continuez ! Je n'ai pas peur des plantes ou des vieilles légendes !
-mno_fight_back|Allons voir ! Explorez la zone ! Brûlez un arbre ou deux !
+mno_fight_back|Allons voir ! Explorez la zone ! Brûlez un arbre ou deux ! (Campement)
 menu_fangorn_search_fails|^^^^^^Vous explorez la profonde et obscure forêt, mais ne trouvez rien. ^Malgré tout, vous vous sentez de plus en plus observé et menacé.
 menu_fangorn_killed_player_only|^^^^^^Vous vous promenez dans l'épaisse et obscure forêt.^Tout d'un coup vous êtes frappé{/e} par quelque chose ! Peut-être qu'une grosse branche vous est tombée sur la tête ?^Vous restez inconscient{/e} seulement quelques minutes. Vous êtes gravement blessé{/e} mais vous pouvez continuer.
 mno_ow_get_out|Aïe ! Sortons de cet endroit maudit !
@@ -301,6 +301,7 @@ mno_aw_chamber_door|Ouvrir la porte.
 mno_trade_with_arms_merchant|Visiter {s40}.
 mno_trade_with_horse_merchant|Visiter {s41}.
 mno_town_prison_door|Porte vers la prison.
+mno_town_prison_door|Porte vers la prison.
 mno_dungeon_enter|Chercher les lances perdues dans les montagnes.
 mno_dungeon_enter_door|Ouvrir la porte.
 mno_dwarven_warehouse|Visiter l’entrepôt des nains.
@@ -312,6 +313,7 @@ mno_isengard_underground_door|Aller dans les grottes souterraines
 mno_tirith_toplevel|Grimper au dernier niveau.
 mno_tirith_toplevel_door|Aller à la Citadelle
 mno_erebor_gates|Visiter les Grandes Portes.
+mno_erebor_gates_door|Aller aux Grandes Portes
 mno_town_leave|Partir...
 mno_town_leave_door|Quitter la zone.
 menu_player_initiated_siege_result|Vous attaquez ce lieu sous la bannière de {s2}.

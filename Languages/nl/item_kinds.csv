@@ -26,7 +26,6 @@ itm_steppe_horse|Steppe Paard
 itm_courser|Renpaard
 itm_hunter|Jager
 itm_pony|Pony
-itm_arnor_warhorse|Arnorian Oorlogspaard
 itm_dunedain_warhorse|Dunedain Oorlogspaard
 itm_rohirrim_courser|Rohirrim Renpaard
 itm_rohirrim_hunter|Rohirrim Jager
@@ -131,21 +130,19 @@ itm_harad_javelin|Harad Werpspeer
 itm_gondor_javelin|Gondor Werpspeer
 itm_rohirrim_throwing_axe|Nordman Gewerpte Bijlen
 itm_loss_throwing_axes|Lossarnach Werpbijlen
-itm_arnor_helm_a|Arnor Helm
+itm_arnor_helm_c|Arnor Versierde Helm
 itm_arnor_helm_b|Arnor Helm
-itm_arnor_helm_c|Arnor Helm
-itm_dunedain_helm_b|Arnor Versierde Helm
-itm_arnor_armor_a|Arnorian Pantser
-itm_arnor_armor_b|Arnorian Pantser
-itm_arnor_armor_c|Dunedain Ranger Leer
-itm_arnor_armor_d|Dunedain Ranger Leer
-itm_arnor_armor_e|Arnorian Versterkte Wambuis
-itm_arnor_armor_f|Arnorian Hoge Armor
+; itm_arnor_helm_a|Arnor Light Helm
+; itm_arnor_light_a|Dunedain Ranger Jerkin
+; itm_arnor_light_b|Dunedain Ranger Mail
+; itm_arnor_med_a|Dunedain Ranger Coat
+; itm_arnor_med_b|Dunedain Mail
+itm_arnor_heavy|Arnorian Hoge Armor
 itm_arnor_greaves|Arnorian Pantserplaten
-itm_arnor_shield_a|Arnor Schild
 itm_arnor_shield_c|Arnor Cavalerie Schild 
-itm_arnor_sword_a|Arnor Bastaard Zwaard
+; itm_arnor_shield_a|Arnor Round Shield
 ; itm_arnor_sword_c|Arnor War Sword
+itm_arnor_sword_a|Arnor Bastaard Zwaard
 itm_arnor_sword_f|Arnor Kort Zwaard
 itm_riv_helm_a|Rivendell Huif
 itm_riv_helm_b|Rivendell Boogschutters Helm
@@ -426,18 +423,15 @@ itm_gundabad_helm_c|Gundabad Helm
 itm_gundabad_helm_d|Gundabad Helm
 itm_gundabad_helm_e|Wargrijder Helm
 itm_dunland_wolfboots|Dunland Wolvenlaarzen
-itm_dunland_armor_a|Dunnish Vacht Pantser
-itm_dunland_armor_b|Dunnish Vacht Pantser
-itm_dunland_armor_c|Dunnish Vacht Pantser
-itm_dunland_armor_d|Dunnish Vacht Pantser
-itm_dunland_armor_e|Dunnish Vacht Pantser
-itm_dunland_armor_g|Dunnish Vacht Pantser
-itm_dunland_armor_h|Dun Lang Vacht Pantser
-; itm_dunland_armor_i|Dunnish Hauberk
-; itm_dunland_armor_j|Dunland Hauberk
-; itm_dunland_armor_k|Dun Chief Armor
+; itm_dunland_tunic_1|Dunnish Leather Tunic
+; itm_dunland_tunic_2|Dunnish Leather Tunic
+; itm_dunland_fur_1|Dunnish Fur
+; itm_dunland_fur_2|Dunnish Fur
+; itm_dunland_mail_1|Dunnish Hauberk
+; itm_dunland_mail_2|Dunnish Hauberk
+; itm_dunland_chieftain|Dunnish Chief Armor
 itm_dun_helm_a|Dunnish Wolven Pet
-itm_dun_helm_b|Dunnish Geweien Pet
+; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|Dunnish Lang Helm
 itm_dun_helm_d|Dunnish Lang Helm
 ; itm_dun_helm_e|Dunnish Antler Helm
@@ -501,11 +495,11 @@ itm_rohan_shield_g|Rohan Koninklijk Schild
 ; itm_woodelf_leather_boots|Woodelf Leather Boots
 ; itm_mirkwood_boots|Greenwood Boots
 itm_harad_tunic|Harad Tuniek
-; itm_harad_padded|Harondor Padded Armor
-; itm_harad_hauberk|Harondor Hauberk
-itm_harad_lamellar|Harasjala Pantser
-; itm_harad_heavy|Harad Noble Armor
-itm_harad_skirmisher|Lichte Harad Kleding
+; itm_harad_padded|Harad Padded Jerkin
+; itm_harad_lamellar|Harad Scale Vest
+; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_heavy|Harasjala Pantser
+; itm_harad_pectoral|Harad Breastplate
 itm_harad_archer|Harad Boogschutterspantser
 itm_black_snake_armor|Maranka Pantser
 ; itm_harad_champion|Far Harad Garb
@@ -558,10 +552,12 @@ itm_khand_inf_helm_b|Khand Helm
 ; itm_khand_cav_helm_c|Khand Decorated Helm
 itm_khand_helm_mask|Khand Masker
 ; itm_khand_light|Khand Kilt
-; itm_khand_light_lam|Khand Light Lamellar
-; itm_khand_foot_lam|Khand Footman Armor
+; itm_khand_light_lam|Khand Light Footmen Armor
+; itm_khand_foot_lam|Khand Heavy Footman Armor
 ; itm_khand_med_lam|Khand Medium Lamellar
 ; itm_khand_heavy_lam|Khand Heavy Lamellar
+; itm_khand_mail|Khand Mail
+itm_khand_noble_lam|Khand Nobel Pantser
 ; itm_khand_axe_great|Khand Great Axe
 ; itm_khand_axe_winged|Khand Winged Axe
 ; itm_khand_halberd|Khand Halberd

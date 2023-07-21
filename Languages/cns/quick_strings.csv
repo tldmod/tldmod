@@ -247,6 +247,7 @@ qstr_Less_Wargs_upkeep|缺乏座狼维护
 qstr_Light_Armor|轻甲
 qstr_Bonus_to_Strength__P|奖励力量属性（仅玩家）
 qstr_Lead_more_Orcs|统御更多半兽人
+; qstr_Can_scare_horses|Can scare horses
 qstr_+{reg1}_to_Party_Mor|部队士气 +{reg1}
 qstr_Range:_{reg55}|射程：{reg55}
 qstr_Dwarves|矮人
@@ -764,8 +765,8 @@ qstr_Two_Nazgul_are_circl|两个戒灵正在战场的上空盘旋！
 qstr_A_Nazgul_is_circling|一个戒灵正在战场的上空盘旋！
 qstr_Some_of_your_human_t|你的一些人类部队并不畏惧黑夜。（夜间部队不受夜间惩罚的影响）
 qstr_You_are_filled_with_|当你盯着敌人时，你充满愤怒（狂战士能力激活）。
-qstr_Your_mount_is_scared|你的坐骑被{reg73?ent:troll}吓坏了！
-qstr_Your_mount_is_scared_|虽然你的坐骑被{reg73?树人:食人妖}吓到了，但你冷静地化险为夷！
+qstr_Your_mount_is_scared|你的坐骑被{s5}吓坏了！
+qstr_Your_mount_is_scared_|虽然你的坐骑被{s5}吓到了，但你冷静地化险为夷！
 qstr_Nazgul_sweep!|戒灵来了！
 qstr_You_and_your_horse_p|戒灵的啼声是你和你的马无法承受的恐惧！
 qstr_Your_horse_panics_th|戒灵的啼声是你的马无法承受的恐惧！
@@ -904,8 +905,8 @@ qstr_You_are_suffering_fr|你正遭受{s1}困扰
 qstr_You_are_suffering_fro|你正遭受{s1}和{s2}的困扰
 qstr_You_are_suffering_from|你正遭受{s1}，{s2}和{s3}的困扰
 qstr_You_are_suffering_from_|你正遭受{s1}，{s2}，{s3}和{s4}的困扰
-qstr_Weekly_upkeep_for_tr|每周部队维护：^{reg5}资源点^
-qstr_{s12}^__{s4}:_{reg4}|{s12}^{s4}：{reg4}资源点({reg5})
+; qstr_Troop_upkeep__paid_e|Troop upkeep (paid every four days):^
+; qstr_{s12}^^__{s4}:_{reg8|{s12}^^  {s4}: {reg8}/{reg5} Resource Points ^Party: {reg4}^Reserves: {reg7}
 qstr_No_upkeep_costs|无维护费
 qstr_Orc_hiring_bonus:_+2|半兽人招募加成：每个半兽人+2/3^
 qstr_Current_party_size_l|当前部队规模上限是：{reg5}。^当前队伍规模修正为：^^基础人数：+10^统御技能：{s2}{reg1}^魅属性：{s3}{reg2}^军衔：{s4}{reg3}^{s5}总计：{reg5}
@@ -1108,6 +1109,9 @@ qstr_^^^You_lost_your_fig|^^^你在和叛乱者的决斗中失败了！^看来�
 qstr_^^^You_have_slain_th|^^^你杀了出格者，其他半兽人迅速的返回了队列。^相信这段时间这群渣滓肯定会安分不少。
 qstr_You_cover_up_your_tr|你掩盖你的行迹并继续前进。
 qstr_Breaking_camp...|停止露营...
+; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
+; qstr_Desertion|Desertion
+; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
 qstr_You_have_left_{s1}.|你离开了{s1}。
 qstr_You_are_entering_{s1|你进入了{s1}({s2})。
 qstr_You_are_entering_{s1}|你进入了{s1}。

@@ -15,7 +15,7 @@ skl_surgery_desc|Každý bod tejto schopnosti zvyšuje šancu o 4%% na to, že s
 skl_wound_treatment|Liečenie zranení
 skl_wound_treatment_desc|Liečenie zranení v družine sa zvýši o 20%% za každú úroveň tejto schopnosti. (Schopnosť družiny)
 skl_inventory_management|Veľkosť inventára
-skl_inventory_management_desc|Zvyšuje kapacitu inventára +6 za každú úroveň tejto schopnosti. (Schopnosť vodcu)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Pozorovanie
 skl_spotting_desc|Vzdialenosť na ktorú družina vidí je zvýšená o 10%% za každú úroveň tejto schopnosti. (Schopnosť družiny)
 skl_pathfinding|Cestovanie

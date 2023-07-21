@@ -15,7 +15,7 @@ skl_surgery_desc|Cada ponto nesta habilidade lhe dá 4%% de chance de que um mem
 skl_wound_treatment|Tratar Feridas
 skl_wound_treatment_desc|Velocidade de Regeneração do grupo é aumentada em 20%% por cada nível. (Habilidade de Grupo)
 skl_inventory_management|Gestão de Inventário
-skl_inventory_management_desc|Aumenta a capacidade do inventário em +6 por cada nível. (Habilidade do Líder)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Observação
 skl_spotting_desc|Capacidade de avistamento do grupo é aumentada em 10%% por cada nível. (Habilidade do Grupo)
 skl_pathfinding|Cria-Trilhas

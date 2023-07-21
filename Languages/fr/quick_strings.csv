@@ -247,6 +247,7 @@ qstr_Less_Wargs_upkeep|Coût d'entretien des wargs réduit
 qstr_Light_Armor|Armure légère 
 qstr_Bonus_to_Strength__P|Bonus de Force (joueur seulement)
 qstr_Lead_more_Orcs|Diriger plus d'orcs
+qstr_Can_scare_horses|Peut effrayer les chevaux
 qstr_+{reg1}_to_Party_Mor|+{reg1} au moral du groupe
 qstr_Range:_{reg55}|Portée : {reg55}
 qstr_Dwarves|des Nains
@@ -764,8 +765,8 @@ qstr_Two_Nazgul_are_circl|Deux Nazgûl survolent le ciel au-dessus du champ de b
 qstr_A_Nazgul_is_circling|Un Nazgûl survole le ciel au-dessus du champ de bataille !
 qstr_Some_of_your_human_t|Certains de vos soldats humains ne sont pas intimidés par les ténèbres (les troupes nocturnes ne sont pas affectées par les pénalités de combat la nuit).
 qstr_You_are_filled_with_|Vous êtes rempli de rage en posant vos yeux sur l'ennemi (Berserker actif).
-qstr_Your_mount_is_scared|Votre monture est effrayée par {reg73?l'ent:le troll} !
-qstr_Your_mount_is_scared_|Votre monture est effrayée par {reg73?l'ent:le troll}, mais vous arrivez à la maîtriser !
+qstr_Your_mount_is_scared|Votre monture est effrayée par le {s5} !
+qstr_Your_mount_is_scared_|Votre monture est effrayée par le {s5}, mais vous arrivez à la maîtriser !
 qstr_Nazgul_sweep!|Le Nazgûl balaie !
 qstr_You_and_your_horse_p|Vous et votre cheval paniquez, les hurlements du Nazgûl sont insupportables !
 qstr_Your_horse_panics_th|Votre cheval panique, les cris du Nazgûl sont insupportables !
@@ -904,8 +905,8 @@ qstr_You_are_suffering_fr|Vous souffrez de {s1}.
 qstr_You_are_suffering_fro|Vous souffrez de {s1} et {s2}.
 qstr_You_are_suffering_from|Vous souffrez de {s1}, {s2} et {s3}.
 qstr_You_are_suffering_from_|Vous souffrez de {s1}, {s2}, {s3} et {s4}.
-qstr_Weekly_upkeep_for_tr|Entretien hebdomadaire des troupes :^{reg5} Points de ressources^
-qstr_{s12}^__{s4}:_{reg4}|{s12}^ {s4} : {reg4} Points de ressources ({reg5})
+qstr_Troop_upkeep__paid_e|Entretien des troupes (payé tous les quatre jours) :^
+qstr_{s12}^^__{s4}:_{reg8|{s12}^^  {s4} : {reg8}/{reg5} points de ressource^Groupe : {reg4}^Réserves : {reg7}
 qstr_No_upkeep_costs|Pas de coûts d'entretien
 qstr_Orc_hiring_bonus:_+2|Bonus de recrutement d'orques : +2/3 pour chaque orque^
 qstr_Current_party_size_l|La taille limite actuelle du groupe est de {reg5}.^Les facteurs influant sur l'effectif maximum du groupe sont :^^Taille de base : +10^Sens du commandement : {s2}{reg1}^Charisme : {s3}{reg2}^Rangs : {s4}{reg3}^{s5}TOTAL : {reg5}
@@ -1108,6 +1109,9 @@ qstr_^^^You_lost_your_fig|^^^Vous avez perdu votre combat contre la mutinerie ! 
 qstr_^^^You_have_slain_th|^^^Vous avez tué le contrevenant, et les autres orques retournent rapidement dans le rang. ^Les asticots seront calmes pour quelques temps, pour sûr.
 qstr_You_cover_up_your_tr|Vous couvrez vos traces et allez de l'avant.
 qstr_Breaking_camp...|Le groupe lève le camp...
+qstr_Party_morale_is_low.|Le moral du groupe est bas. Des soldats désertent de votre groupe.
+qstr_Desertion|Désertion
+qstr_{s1}_has_deserted_fr|{s1} a déserté de votre groupe
 qstr_You_have_left_{s1}.|Vous avez quitté {s1}.
 qstr_You_are_entering_{s1|Vous entrez dans {s1} ({s2}).
 qstr_You_are_entering_{s1}|vous entrez dans {s1}.

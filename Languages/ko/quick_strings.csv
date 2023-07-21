@@ -247,6 +247,7 @@ qstr_Less_Wargs_upkeep|와르그 유지비
 qstr_Light_Armor|경장갑
 qstr_Bonus_to_Strength__P|힘에 보너스 (플레이어 전용)
 qstr_Lead_more_Orcs|더 많은 오르크를 이끔
+; qstr_Can_scare_horses|Can scare horses
 qstr_+{reg1}_to_Party_Mor|부대 사기 +{reg1}
 qstr_Range:_{reg55}|범위: {reg55}
 qstr_Dwarves|난쟁이
@@ -764,8 +765,8 @@ qstr_Two_Nazgul_are_circl|두 마리의 나즈굴이 전장의 상공을 돌고 
 qstr_A_Nazgul_is_circling|나즈굴이 전장의 하늘을 돌고 있다!
 qstr_Some_of_your_human_t|당신 부대의 인간 중 일부는 어둠에 전혀 굴하지 않는다. (밤 병종은 밤 시간의 패널티를 받지 않습니다)
 qstr_You_are_filled_with_|적들에게 향하는 당신의 눈에 분노만이 가득하다. (광전사 행동).
-qstr_Your_mount_is_scared|당신의 탈것이 {reg73?엔트:트롤}에게 겁을 먹었다!
-qstr_Your_mount_is_scared_|탈 것이 {reg73?ent:troll}에 겁을 먹은건가? 어떻게든 극복하게나!
+qstr_Your_mount_is_scared|당신의 탈것이 {s5}에게 겁을 먹었다!
+; qstr_Your_mount_is_scared_|Your mount is scared by the {s5}, but you can master it!
 qstr_Nazgul_sweep!|나즈굴이 휩쓴다!
 qstr_You_and_your_horse_p|나즈굴의 견딜 수 없는 울음 소리에, 당신과 당신의 말이 혼란에 빠졌다!
 qstr_Your_horse_panics_th|나즈굴의 견딜 수 없는 울음 소리에, 당신의 말이 혼란에 빠졌다!
@@ -904,8 +905,8 @@ qstr_You_are_suffering_fr|당신은 {s1}로 고통받고 있다.
 qstr_You_are_suffering_fro|당신은 {s1}과 {s2}로 고통받고 있다.
 qstr_You_are_suffering_from|당신은 {s1}, {s2}와 {s3}로 고통받고 있다.
 qstr_You_are_suffering_from_|당신은 {s1} {s2}, {s3}과 {s4}로 고통받고 있다.
-qstr_Weekly_upkeep_for_tr|부대 주간 유지비:^{reg5} 자원 포인트^
-qstr_{s12}^__{s4}:_{reg4}|{s12}^ {s4}: {reg4} 자원 포인트 ({reg5})
+; qstr_Troop_upkeep__paid_e|Troop upkeep (paid every four days):^
+; qstr_{s12}^^__{s4}:_{reg8|{s12}^^  {s4}: {reg8}/{reg5} Resource Points ^Party: {reg4}^Reserves: {reg7}
 qstr_No_upkeep_costs|유지 비용 없음
 qstr_Orc_hiring_bonus:_+2|오르크 고용 보너스: 각 오르크에 +2/3 
 qstr_Current_party_size_l|현제 부대 규모 제한 {reg5}.^현재 부대 사기에 영향을 주는 것들:^^기본 규모: +10^리더십: {s2}{reg1}^카리스마: {s3}{reg2}^계금: {s4}{reg3}^{s5} 총합: {reg5}
@@ -1108,6 +1109,9 @@ qstr_^^^You_lost_your_fig|^^^당신을 상대로 한 반역에서 패배했다! 
 qstr_^^^You_have_slain_th|^^^당신은 반역자를 처치했고, 다른 오르크들은 재빨리 선을 지키기 시작했다.^당분간 이 구더기같은 놈들이 조용해질 것이 분명하다.
 qstr_You_cover_up_your_tr|당신은 흔적을 지우며 앞으로 나아갔다.
 qstr_Breaking_camp...|캠프를 해체한다...
+; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
+; qstr_Desertion|Desertion
+; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
 qstr_You_have_left_{s1}.|당신은 {s1}을 떠났다.
 qstr_You_are_entering_{s1|당신은 {s1}을 지나는 중이다 ({s2}).
 qstr_You_are_entering_{s1}|당신은 {s1}을 지나는 중이다.

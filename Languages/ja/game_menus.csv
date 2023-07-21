@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^これはおかしい。周囲のあちこちから不
 mno_be_quiet_elf|木々の憎悪はもっともだ。静かに移動せよ。
 mno_be_quiet|武器をしまって静かにするんだ！この場から離れるぞ！
 mno_be_bold|かかって来い！植物だの古い伝説だの、私は一切恐れないぞ！
-mno_fight_back|原因をつきとめるぞ！ここ一帯を調べろ！そこの木を一、二本燃やせ！
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|^^^^^^あなたは暗く、深い森のなかを探しまわったが、何も^見つけられなかった。しかし、監視の目にさらされているという思いと、^あたりに漂う脅威は、どんどん強くなっている。
 menu_fangorn_killed_player_only|^^^^^^あなたは深く、暗い森のなかを探し回った。^突然、あなたは何かに殴られた！大きな木の枝が頭を直撃したのだろうか？^あなたは数分の間、気を失った。ひどい痛みが残っているが、^探索の続行に支障はない。
 mno_ow_get_out|いたた！この呪われた場所から逃げろ！
@@ -301,6 +301,7 @@ mno_aw_chamber_door|扉を開ける。
 mno_trade_with_arms_merchant|{s40}に行く。
 mno_trade_with_horse_merchant|{s41}に行く。
 mno_town_prison_door|牢獄へ行く。
+mno_town_prison_door|牢獄へ行く。
 mno_dungeon_enter|失われた槍を探しに山の内部へ行く。
 mno_dungeon_enter_door|扉を開ける。
 mno_dwarven_warehouse|ドワーフの倉庫を訪ねる
@@ -312,6 +313,7 @@ mno_isengard_underground_door|地下の洞窟へ行く。
 mno_tirith_toplevel|最上層に登る。
 mno_tirith_toplevel_door|城塞へ行く
 mno_erebor_gates|大門へ行く。
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|立ち去る・・・
 mno_town_leave_door|立ち去る
 menu_player_initiated_siege_result|{s2}の旗のもと、あなたはこの拠点を攻撃しました。

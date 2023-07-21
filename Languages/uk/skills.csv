@@ -15,7 +15,7 @@ skl_surgery_desc|З кожним новим рівнем цієї навички
 skl_wound_treatment|Перев'язка ран
 skl_wound_treatment_desc|З кожним новим рівнем цієї навички швидкість вилікування загону зростає на 20 %% (вміння групи).
 skl_inventory_management|Упаковка
-skl_inventory_management_desc|З кожним новим рівнем цієї навички місткість вашого інвентарю збільшується на +6 пунктів (вміння лідера).
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Пильність
 skl_spotting_desc|З кожним новим рівнем цієї навички поле зору загону збільшується на 10%% (вміння загону).
 skl_pathfinding|Пошук шляху

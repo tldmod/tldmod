@@ -15,7 +15,7 @@ skl_surgery_desc|Bu yetenege harcanan her puan grup üyelerinizin ölmek yerine 
 skl_wound_treatment|Yara bakımı
 skl_wound_treatment_desc|Grup iyileşme hızı bu yetenegin her puanı ile 20%% oranında artar.  (Grup Yetenegi)
 skl_inventory_management|Envanter yönetimi
-skl_inventory_management_desc|Her seviye artışında envanter kapasitesi +6 yükselir.(Lider yetenegi) 
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Tespit etme
 skl_spotting_desc|Grubunuzun görüş sınırı yeteneginizin her puanı ile %10 artar. (Grup Yetenegi)
 skl_pathfinding|Yol bulma

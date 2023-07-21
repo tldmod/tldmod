@@ -15,7 +15,7 @@ skl_surgery_desc|Hvert point til denne færdighed giver en 4%% chance at en død
 skl_wound_treatment|Sår Behandling
 skl_wound_treatment_desc|Holdets helbrednings hastighed stiger med 20%% per niveau til denne færdighed. (Hold færdighed)
 skl_inventory_management|Lagerstyring
-skl_inventory_management_desc|Forhøjer inventarlistens kapacitet med +6 per færdigheds niveau. (Leder færdighed) 
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Opdage
 skl_spotting_desc|Holdets syns rækkevide er forhøjet med 10%% per færdigheds niveau. (Hold færdighed)
 skl_pathfinding|Sti-finder

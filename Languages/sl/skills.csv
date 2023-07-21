@@ -15,7 +15,7 @@ skl_surgery|Kirurgija
 skl_wound_treatment|Zdravljenje ran
 ; skl_wound_treatment_desc|Party healing speed is increased by 20%% per level of this skill. (Party skill)
 ; skl_inventory_management|Inventory Management
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. (Leader skill)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Opazovanje
 ; skl_spotting_desc|Party seeing range is increased by 10%% per skill level. (Party skill)
 skl_pathfinding|Iskanje poti

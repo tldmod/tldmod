@@ -15,7 +15,7 @@ skl_surgery_desc|Minden pont ad 4%% esélyt, hogy egy halálra sebzett társ csa
 skl_wound_treatment|Sebkezelés
 skl_wound_treatment_desc|A csapat gyógyulási sebessége szintenként 20%%-al nő. (Csapat képesség)
 skl_inventory_management|Tárgykezelés
-skl_inventory_management_desc|Növeli a tárgykapacitást szintenként 6-al. (Vezető képesség)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Éberség
 skl_spotting_desc|A csapat látótávolságát megnöveli 10%% egységnyivel per képesség szint. (Csapat képesség)
 skl_pathfinding|Útkeresés

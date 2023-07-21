@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^Outoja, uhkaavia ääniä kaikkialla ympärilläsi.^Pu
 mno_be_quiet_elf|Kunnioittakaa puitten vihamielisyyttä. Liikkukaamme hiljaa.
 mno_be_quiet|Laskekaa aseenne ja pysykää hiljaa! Nyt ulos täältä!
 mno_be_bold|Jatketaan! Minähän en mitään kasveja tai vanhoja myyttejä pelkää!
-mno_fight_back|Otetaan siitä selvää! Tutkikaa alue! Polttakaa puu tai pari!
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|Etsit pimeää, paksua metsää, mutta et löydä mitään.^Silti, tunnet itsesi havainnoiduksi ja uhatulta yhä enemmän ja enemmän.
 menu_fangorn_killed_player_only|^^^^^^Vaeltelet paksussa, mustassa metsässä.^Yhtäkkiä sinuun on osunut jokin! Ehkä painava oksa putosi päähäsi?^Ôlet tajuton ainoastaan muutaman minuutin. Olet pahasti vahingoittunut, mutta voit mennä eteenpäin.
 mno_ow_get_out|Aihh! Lähdetään tästä kirotusta paikasta!
@@ -301,6 +301,7 @@ mno_aw_chamber_door|Avaa ovi.
 mno_trade_with_arms_merchant|Vieraile {s40}.
 mno_trade_with_horse_merchant|Vieraile {s41}.
 mno_town_prison_door|Ovi vankilaan.
+mno_town_prison_door|Ovi vankilaan.
 mno_dungeon_enter|Etsi kadonneita keihäitä vuorien uumenista.
 mno_dungeon_enter_door|Avaa ovi.
 mno_dwarven_warehouse|Vieraile kääpiövarastolla
@@ -312,6 +313,7 @@ mno_isengard_underground|Mene maanalaisiin luolastoihin.
 mno_tirith_toplevel|Kiipeä ylimmälle tasolle.
 ; mno_tirith_toplevel_door|Go to the Citadel
 mno_erebor_gates|Vieraile Isoilla porteilla
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|Poistu...
 mno_town_leave_door|Poistu alueelta
 menu_player_initiated_siege_result|Hyökkäsit tätä keskusta vastaan palvellessasi {s2} lippua.

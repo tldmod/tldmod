@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^Strano, senti rumori minacciosi intorno a te.^Sono gli
 mno_be_quiet_elf|Rispetta l'odio degli alberi. Allontanati silenziosamente.
 mno_be_quiet|Abbassa le armi e rimani calmo ! Ora via da qui !
 mno_be_bold|Continua ! Non ho paura delle piante e di vecchie leggende !
-mno_fight_back|Mettetevi a cercare ! Ispezionare l'area ! Abbattete e bruciate un albero o due !
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|^^^^^^Esplori l'oscura, fitta foresta ma non trovi niente.^Eppure, ti senti osservato e minacciato, sempre di più.
 menu_fangorn_killed_player_only|^^^^^^Osservi nella fitta, oscura foresta.^All'improvviso qualcosa ti colpisce ! Forse un pesante ramo è caduto sulla tua testa ?^Rimani incosciente per qualche minuto. Hai delle ferite serie ma puoi continuare.
 mno_ow_get_out|Ahi ! Andiamocene da questo posto maledetto !
@@ -301,6 +301,7 @@ mno_aw_chamber_door|Apri la porta.
 mno_trade_with_arms_merchant|Visita {s40}.
 mno_trade_with_horse_merchant|Visita {s41}.
 mno_town_prison_door|Porta della prigione.
+mno_town_prison_door|Porta della prigione.
 mno_dungeon_enter|Cerca le lance perdute all'interno delle montagne.
 mno_dungeon_enter_door|Apri la porta.
 mno_dwarven_warehouse|Visita il Magazzino dei Nani
@@ -312,6 +313,7 @@ mno_isengard_underground_door|Dirigiti verso le caverne sotterranee
 mno_tirith_toplevel|Raggiungi il livello più alto
 mno_tirith_toplevel_door|Sali alla Cittadella
 mno_erebor_gates|Visita i Grandi Cancelli.
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|Vattene...
 mno_town_leave_door|Abbandona l'area
 menu_player_initiated_siege_result|Hai attaccato questo centro sotto lo stendardo di {s2}.

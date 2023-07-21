@@ -26,7 +26,6 @@ itm_steppe_horse|Cavalo da Estepe
 itm_courser|Corcel
 itm_hunter|Caçador
 itm_pony|Pônei
-itm_arnor_warhorse|Cavalo de Guerra Arnoriano
 itm_dunedain_warhorse|Cavalo de Guerra de Arnor
 itm_rohirrim_courser|Corcel de Rohan
 itm_rohirrim_hunter|Caçador de Rohan
@@ -131,21 +130,19 @@ itm_harad_javelin|Dardo de Harad
 itm_gondor_javelin|Dardo de Gondor
 itm_rohirrim_throwing_axe|Machados de Arremesso do Norte
 itm_loss_throwing_axes|Machados de Arremesso de Lossarnach
-itm_arnor_helm_a|Elmo de Arnor
+itm_arnor_helm_c|Elmo Decorado de Arnor
 itm_arnor_helm_b|Elmo de Arnor 
-itm_arnor_helm_c|Elmo de Arnor 
-itm_dunedain_helm_b|Elmo Decorado de Arnor
-itm_arnor_armor_a|Armadura Arnoriana
-itm_arnor_armor_b|Armadura Arnoriana 
-itm_arnor_armor_c|Couro de Guardião de Arnor
-itm_arnor_armor_d|Couro de Guardião de Arnor
-itm_arnor_armor_e|Colete Reforçado Arnoriano
-itm_arnor_armor_f|Armadura de Nobre Arnoriano
+; itm_arnor_helm_a|Arnor Light Helm
+; itm_arnor_light_a|Dunedain Ranger Jerkin
+; itm_arnor_light_b|Dunedain Ranger Mail
+; itm_arnor_med_a|Dunedain Ranger Coat
+; itm_arnor_med_b|Dunedain Mail
+itm_arnor_heavy|Armadura de Nobre Arnoriano
 itm_arnor_greaves|Perneiras Arnorianas
-itm_arnor_shield_a|Escudo de Arnor
 itm_arnor_shield_c|Escudo de Cavalaria de Arnor
-itm_arnor_sword_a|Espada Bastarda de Arnor
+; itm_arnor_shield_a|Arnor Round Shield
 itm_arnor_sword_c|Espada de Guerra de Arnor
+itm_arnor_sword_a|Espada Bastarda de Arnor
 itm_arnor_sword_f|Espada Curta de Arnor
 itm_riv_helm_a|Touca de Valfenda
 itm_riv_helm_b|Elmo de Arqueiro de Valfenda
@@ -426,18 +423,15 @@ itm_gundabad_helm_c|Elmo de Gundabad
 itm_gundabad_helm_d|Elmo de Gundabad
 itm_gundabad_helm_e|Elmo de Cavaleiro de Warg
 itm_dunland_wolfboots|Botas de Lobo das Terras Pardas
-itm_dunland_armor_a|Armadura de Pele Terra-pardense
-itm_dunland_armor_b|Armadura de Pele Terra-pardense
-itm_dunland_armor_c|Armadura de Pele Terra-pardense
-itm_dunland_armor_d|Armadura de Pele Terra-pardense
-itm_dunland_armor_e|Armadura de Pele Terrapardense
-itm_dunland_armor_g|Armadura de Pele Terra-pardense
-itm_dunland_armor_h|Armadura Longa de Pele das Terras Pardas
-itm_dunland_armor_i|Cota de Malha Terra-pardense
-itm_dunland_armor_j|Cota de Malha das Terras Pardas
-itm_dunland_armor_k|Armadura de Chefe das Terras Pardas
+; itm_dunland_tunic_1|Dunnish Leather Tunic
+; itm_dunland_tunic_2|Dunnish Leather Tunic
+; itm_dunland_fur_1|Dunnish Fur
+; itm_dunland_fur_2|Dunnish Fur
+itm_dunland_mail_1|Cota de Malha Terra-pardense
+itm_dunland_mail_2|Cota de Malha Terra-pardense
+; itm_dunland_chieftain|Dunnish Chief Armor
 itm_dun_helm_a|Touca de Lobo Terra-pardense
-itm_dun_helm_b|Touca de Veado Terra-pardense
+; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|Elmo Alto Terra-pardense
 itm_dun_helm_d|Elmo Alto Terra-pardense
 itm_dun_helm_e|Elmo de Chifres Terra-pardense
@@ -501,11 +495,11 @@ itm_mirkwood_helm_d|Elmo Real da Floresta Verde
 ; itm_woodelf_leather_boots|Woodelf Leather Boots
 ; itm_mirkwood_boots|Greenwood Boots
 itm_harad_tunic|Túnica de Harad
-itm_harad_padded|Armadura Acolchoada de Harondor
-itm_harad_hauberk|Cota de Malha de Harondor
-itm_harad_lamellar|Armadura de Harasjala
-itm_harad_heavy|Armadura Nobre de Harad
-itm_harad_skirmisher|Traje Leve de Harad
+; itm_harad_padded|Harad Padded Jerkin
+; itm_harad_lamellar|Harad Scale Vest
+; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_heavy|Armadura de Harasjala
+; itm_harad_pectoral|Harad Breastplate
 itm_harad_archer|Armadura de Arqueiro de Harad
 itm_black_snake_armor|Armadura Maranka
 itm_harad_champion|Traje de Distante Harad
@@ -558,10 +552,12 @@ itm_khand_cav_helm_b|Elmo de Cavaleiro Khand
 itm_khand_cav_helm_c|Elmo Decorado de Khand
 itm_khand_helm_mask|Máscara de Khand
 itm_khand_light|Saiote de Khand
-itm_khand_light_lam|Armadura Leve de Placas de Khand
-itm_khand_foot_lam|Armadura de Infantaria de Khand
+; itm_khand_light_lam|Khand Light Footmen Armor
+; itm_khand_foot_lam|Khand Heavy Footman Armor
 itm_khand_med_lam|Armadura Média de Placas de Khand
 itm_khand_heavy_lam|Armadura Pesada de Placas de Khand
+; itm_khand_mail|Khand Mail
+itm_khand_noble_lam|Armadura Nobre de Khand
 itm_khand_axe_great|Machado Grande de Khand
 itm_khand_axe_winged|Machado Rápido de Khand
 itm_khand_halberd|Alabarda de Khand

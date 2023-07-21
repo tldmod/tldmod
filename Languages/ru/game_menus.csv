@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^Странные, пугающие звуки окру
 mno_be_quiet_elf|Следует уважать гнев деревьев. Двигайтесь как можно тише.
 mno_be_quiet|Опустите оружие и замолчите! А теперь - прочь отсюда!
 mno_be_bold|Вперёд! Я не боюсь сорняков из старых сказок!
-mno_fight_back|Нужно вызнать, в чём дело! Обыскать округу! Сжечь пару деревьев!
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|^^^^^^Вы обследуете тёмный, густой лес, но не можете ничего найти.^Однако вам всё больше чудится, что за вами наблюдают и вам грозит опасность.
 menu_fangorn_killed_player_only|^^^^^^Вы обследуете тёмный, густой лес.^Внезапно вы получаете удар! Может быть, тяжёлая ветка свалилась вам на голову?^Вы на короткое время теряете сознание. Вы серьёзно ранены, но можете продолжать движение.
 mno_ow_get_out|Ай! Пора убираться из этого проклятого места!
@@ -301,6 +301,7 @@ mno_aw_chamber_door|Открыть дверь.
 mno_trade_with_arms_merchant|Посетить {s40}.
 mno_trade_with_horse_merchant|Посетить {s41}.
 mno_town_prison_door|Войти в темницу.
+mno_town_prison_door|Войти в темницу.
 mno_dungeon_enter|Войти в подземелье.
 mno_dungeon_enter_door|Открыть дверь.
 mno_dwarven_warehouse|Посетить склад гномов
@@ -312,6 +313,7 @@ mno_isengard_underground_door|Войти в подземелье
 mno_tirith_toplevel|Взойти на верхний уровень.
 mno_tirith_toplevel_door|Отправляйся в Цитадель
 mno_erebor_gates|Посетить Великие Врата.
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|Продолжить...
 mno_town_leave_door|Покинуть местность
 menu_player_initiated_siege_result|Вы напали на гарнизон под знамёнами {s2}.

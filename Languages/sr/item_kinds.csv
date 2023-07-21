@@ -26,7 +26,6 @@ itm_steppe_horse|Stepski konj
 itm_courser|Kurser
 itm_hunter|Lovački konj
 itm_pony|Poni
-itm_arnor_warhorse|Arnorski Ratni Konj
 itm_dunedain_warhorse|Dunedainski Ratni Konj
 itm_rohirrim_courser|Rohirimski Kurser
 itm_rohirrim_hunter|Rohirimski Lovački Konj
@@ -131,21 +130,19 @@ itm_harad_javelin|Haradsko Koplje
 itm_gondor_javelin|Gondorsko Koplje
 ; itm_rohirrim_throwing_axe|Northmen Throwing Axes
 itm_loss_throwing_axes|Sekira za Bacanje Losarnaha
-itm_arnor_helm_a|Arnorska Kaciga
+itm_arnor_helm_c|Arnorska Ukrašena Kaciga
 itm_arnor_helm_b|Arnorska Kaciga
-itm_arnor_helm_c|Arnorska Kaciga
-itm_dunedain_helm_b|Arnorska Ukrašena Kaciga
-itm_arnor_armor_a|Arnorski Oklop
-itm_arnor_armor_b|Arnorski Oklop
-itm_arnor_armor_c|Dunedainska Rendžerska Koža
-itm_arnor_armor_d|Dunedainska Rendžerska Koža
-itm_arnor_armor_e|Arnosko Ojačano Koplje
-itm_arnor_armor_f|Arnorsko Jaki Oklop
+; itm_arnor_helm_a|Arnor Light Helm
+; itm_arnor_light_a|Dunedain Ranger Jerkin
+; itm_arnor_light_b|Dunedain Ranger Mail
+; itm_arnor_med_a|Dunedain Ranger Coat
+; itm_arnor_med_b|Dunedain Mail
+itm_arnor_heavy|Arnorsko Jaki Oklop
 itm_arnor_greaves|Arnorske čizme
-itm_arnor_shield_a|Arnorski Štit
 itm_arnor_shield_c|Arnorski Konjanički Štit
-itm_arnor_sword_a|Arnorski lažni mač
+; itm_arnor_shield_a|Arnor Round Shield
 ; itm_arnor_sword_c|Arnor War Sword
+itm_arnor_sword_a|Arnorski lažni mač
 itm_arnor_sword_f|Arnorski Kratki Mač
 itm_riv_helm_a|Rivendalska Kapa
 itm_riv_helm_b|Kaciga Rivendalskog Strelca
@@ -426,18 +423,15 @@ itm_gundabad_helm_c|Gundabadska Kaciga
 itm_gundabad_helm_d|Gundabadska Kaciga
 itm_gundabad_helm_e|Kaciga Jahaca Vargi
 itm_dunland_wolfboots|Dunlandske Vuk-Cizme
-itm_dunland_armor_a|Dunski Krzneni Oklop
-itm_dunland_armor_b|Dunski Krzneni Oklop
-itm_dunland_armor_c|Dunski Krzneni Oklop
-itm_dunland_armor_d|Dunski Krzneni Oklop
-itm_dunland_armor_e|Dunski Krzneni Oklop
-itm_dunland_armor_g|Dunski Krzneni Oklop
-itm_dunland_armor_h|Dusnki Dugi Krzneni Oklop
-itm_dunland_armor_i|Dunska Oklopna Kosulja
-itm_dunland_armor_j|Dunlandska Oklopna Kosulja
-itm_dunland_armor_k|Oklop Vodlje Duna
+; itm_dunland_tunic_1|Dunnish Leather Tunic
+; itm_dunland_tunic_2|Dunnish Leather Tunic
+; itm_dunland_fur_1|Dunnish Fur
+; itm_dunland_fur_2|Dunnish Fur
+itm_dunland_mail_1|Dunska Oklopna Kosulja
+itm_dunland_mail_2|Dunska Oklopna Kosulja
+; itm_dunland_chieftain|Dunnish Chief Armor
 itm_dun_helm_a|Dunska Vuk Kaciga
-itm_dun_helm_b|Dunska Kaciga Sa Rogovima
+; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|Dunska Velika Kaciga
 itm_dun_helm_d|Dunska Velika Kaciga
 ; itm_dun_helm_e|Dunnish Antler Helm
@@ -501,11 +495,11 @@ itm_rohirrim_war_greaves|Rohirim Ratne Cizme
 ; itm_woodelf_leather_boots|Woodelf Leather Boots
 ; itm_mirkwood_boots|Greenwood Boots
 itm_harad_tunic|Haradsla Tunika
-itm_harad_padded|Harondorski Tapacirani Oklop
-itm_harad_hauberk|Harodnorska Oklopna Kosulja
-itm_harad_lamellar|Harasjalski Oklop
-; itm_harad_heavy|Harad Noble Armor
-itm_harad_skirmisher|Laka Haradska Odeca
+; itm_harad_padded|Harad Padded Jerkin
+; itm_harad_lamellar|Harad Scale Vest
+; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_heavy|Harasjalski Oklop
+; itm_harad_pectoral|Harad Breastplate
 itm_harad_archer|Oklop Haradskih Strelaca
 itm_black_snake_armor|Marankski Oklop
 itm_harad_champion|Duga Haradska Odeca
@@ -558,10 +552,12 @@ itm_harad_scale_greaves|Haradske Oklopne Cizme
 ; itm_khand_cav_helm_c|Khand Decorated Helm
 ; itm_khand_helm_mask|Khand Mask
 ; itm_khand_light|Khand Kilt
-; itm_khand_light_lam|Khand Light Lamellar
-; itm_khand_foot_lam|Khand Footman Armor
+; itm_khand_light_lam|Khand Light Footmen Armor
+; itm_khand_foot_lam|Khand Heavy Footman Armor
 ; itm_khand_med_lam|Khand Medium Lamellar
 ; itm_khand_heavy_lam|Khand Heavy Lamellar
+; itm_khand_mail|Khand Mail
+; itm_khand_noble_lam|Khand Noble Armor
 ; itm_khand_axe_great|Khand Great Axe
 ; itm_khand_axe_winged|Khand Winged Axe
 ; itm_khand_halberd|Khand Halberd

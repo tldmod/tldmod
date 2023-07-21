@@ -26,7 +26,6 @@ itm_steppe_horse|Steppenpferd
 itm_courser|Renner
 itm_hunter|Jagdpferd
 itm_pony|Pony
-itm_arnor_warhorse|Arnorisches Schlachtross
 itm_dunedain_warhorse|Schlachtross der Dunedain
 itm_rohirrim_courser|Renner der Rohirrim
 itm_rohirrim_hunter|Jagdpferd der Rohirrim
@@ -131,21 +130,19 @@ itm_harad_javelin|Wurfspeer aus Harad
 itm_gondor_javelin|Wurfspeer aus Gondor
 itm_rohirrim_throwing_axe|Nordmann-Wurfäxte
 itm_loss_throwing_axes|Wurfaxt aus Lossarnach
-itm_arnor_helm_a|Helm aus Arnor
+itm_arnor_helm_c|Verzierter Helm aus Arnor
 itm_arnor_helm_b|Helm aus Arnor
-itm_arnor_helm_c|Helm aus Arnor
-itm_dunedain_helm_b|Verzierter Helm aus Arnor
-itm_arnor_armor_a|Rüstung aus Arnor
-itm_arnor_armor_b|Rüstung aus Arnor
-itm_arnor_armor_c|Waldläufer-Lederrüstung der Dunedain
-itm_arnor_armor_d|Waldläufer-Lederrüstung der Dunedain
-itm_arnor_armor_e|Verstärktes Wams aus Arnor
-itm_arnor_armor_f|Edle Rüstung aus Arnor
+; itm_arnor_helm_a|Arnor Light Helm
+; itm_arnor_light_a|Dunedain Ranger Jerkin
+; itm_arnor_light_b|Dunedain Ranger Mail
+; itm_arnor_med_a|Dunedain Ranger Coat
+; itm_arnor_med_b|Dunedain Mail
+itm_arnor_heavy|Edle Rüstung aus Arnor
 itm_arnor_greaves|Beinschienen aus Arnor
-itm_arnor_shield_a|Schild aus Arnor
 itm_arnor_shield_c|Arnorischer Reiterschild
-itm_arnor_sword_a|Bastardschwert aus Arnor
+; itm_arnor_shield_a|Arnor Round Shield
 itm_arnor_sword_c|Kriegsschwert aus Arnor
+itm_arnor_sword_a|Bastardschwert aus Arnor
 itm_arnor_sword_f|Kurzschwert aus Arnor
 itm_riv_helm_a|Kettenhaube aus Bruchtal
 itm_riv_helm_b|Schützenhelm aus Bruchtal
@@ -426,18 +423,15 @@ itm_gundabad_helm_c|Helm vom Gundabadberg
 itm_gundabad_helm_d|Helm vom Gundabadberg
 itm_gundabad_helm_e|Wargreiterhelm
 itm_dunland_wolfboots|Wolfstiefel aus Dunland
-itm_dunland_armor_a|Fellrüstung aus Dunland
-itm_dunland_armor_b|Fellrüstung aus Dunland
-itm_dunland_armor_c|Fellrüstung aus Dunland
-itm_dunland_armor_d|Fellrüstung aus Dunland
-itm_dunland_armor_e|Fellrüstung aus Dunland
-itm_dunland_armor_g|Fellrüstung aus Dunland
-itm_dunland_armor_h|Lange Fellrüstung aus Dunland
-itm_dunland_armor_i|Brünne aus Dunland
-itm_dunland_armor_j|Brünne aus Dunland
-itm_dunland_armor_k|Häuptlingsrüstung aus Dunland
+; itm_dunland_tunic_1|Dunnish Leather Tunic
+; itm_dunland_tunic_2|Dunnish Leather Tunic
+; itm_dunland_fur_1|Dunnish Fur
+; itm_dunland_fur_2|Dunnish Fur
+itm_dunland_mail_1|Brünne aus Dunland
+itm_dunland_mail_2|Brünne aus Dunland
+; itm_dunland_chieftain|Dunnish Chief Armor
 itm_dun_helm_a|Wolfskappe aus Dunland
-itm_dun_helm_b|Geweihkappe aus Dunland
+; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|Hoher Helm aus Dunland
 itm_dun_helm_d|Hoher Helm aus Dunland
 itm_dun_helm_e|Geweihhelm aus Dunland
@@ -501,11 +495,11 @@ itm_mirkwood_helm_d|Königlicher Helm aus dem Grünwald
 itm_woodelf_leather_boots|Lederstiefel der Waldelben
 itm_mirkwood_boots|Stiefel aus Grünwald
 itm_harad_tunic|Tunika aus Harad
-itm_harad_padded|Gepolsterte Rüstung aus Harondor
-itm_harad_hauberk|Brünne aus Harondor
-itm_harad_lamellar|Harasjala-Rüstung
-itm_harad_heavy|Fürstliche Rüstung aus Harad
-itm_harad_skirmisher|Leichtes Gewand aus Harad
+; itm_harad_padded|Harad Padded Jerkin
+; itm_harad_lamellar|Harad Scale Vest
+; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_heavy|Harasjala-Rüstung
+; itm_harad_pectoral|Harad Breastplate
 itm_harad_archer|Bogenschützenrüstung aus Harad
 itm_black_snake_armor|Maranka-Rüstung
 itm_harad_champion|Gewand aus Fern-Harad
@@ -558,10 +552,12 @@ itm_khand_cav_helm_b|Reiterhelm aus Khand
 itm_khand_cav_helm_c|Verzierter Helm aus Khand
 itm_khand_helm_mask|Maske aus Khand
 itm_khand_light|Kriegerrock aus Khand
-itm_khand_light_lam|Leichte Lamellenrüstung aus Khand
-itm_khand_foot_lam|Kriegerrüstung aus Khand
+; itm_khand_light_lam|Khand Light Footmen Armor
+; itm_khand_foot_lam|Khand Heavy Footman Armor
 itm_khand_med_lam|Mittelschwere Lamellenrüstung aus Khand
 itm_khand_heavy_lam|Schwere Lamellenrüstung aus Khand
+; itm_khand_mail|Khand Mail
+itm_khand_noble_lam|Fürstliche Rüstung aus Khand
 itm_khand_axe_great|Große Axt aus Khand
 itm_khand_axe_winged|Flügelaxt aus Khand
 itm_khand_halberd|Hellebarde aus Khand

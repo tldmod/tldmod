@@ -15,7 +15,7 @@ skl_surgery_desc|Chaque point de cette compétence donne 4 %% de chances qu'une 
 skl_wound_treatment|Soins
 skl_wound_treatment_desc|La vitesse de guérison du groupe est augmentée de 20 %% par niveau de compétence. (Compétence de groupe)
 skl_inventory_management|Gestion de l'inventaire
-skl_inventory_management_desc|Augmente la capacité de l'inventaire de 6 cases par niveau de compétence. (Compétence de commandant)
+skl_inventory_management_desc|Augmente la capacité de l'inventaire de 6 cases par niveau de compétence. Réduit la consommation de nourriture. (Compétence de commandant)
 skl_spotting|Repérage
 skl_spotting_desc|La distance de vision du groupe est augmentée de 10 %% par niveau de compétence. (Compétence de groupe)
 skl_pathfinding|Marche forcée

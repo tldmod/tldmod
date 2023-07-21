@@ -15,7 +15,7 @@ skl_surgery_desc|Mỗi điểm của kỹ năng này cho 4%% cơ hội khiến m
 skl_wound_treatment|Điều trị vết thương
 skl_wound_treatment_desc|Tốc độ hồi máu của nhóm được tăng thêm 20%% mỗi cấp của kỹ năng này. (Kỹ năng nhóm)
 skl_inventory_management|Quản lý hàng tồn kho
-skl_inventory_management_desc|Tăng khả năng tồn kho lên +6 mỗi cấp độ kỹ năng. (Kỹ năng lãnh đạo)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Đánh dấu
 skl_spotting_desc|Phạm vi nhìn thấy nhóm được tăng thêm 10%% mỗi cấp độ kỹ năng. (Kỹ năng nhóm)
 skl_pathfinding|Tìm đường

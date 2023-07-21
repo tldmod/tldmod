@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^Cudna, strasna buka je svuda oko tebe.^ Da li to drvec
 mno_be_quiet_elf|Postuj drvece. Kreci se oprezno.
 mno_be_quiet|Odlozi oruzje i umiri se! Sad napolje iz ove sume!
 mno_be_bold|Ajde bre,pa nece mene plasiti neke babske price!
-mno_fight_back|Hajde da istrazimo!Pretrazi oblast! I spali koje drvo usput!
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|^^^^^^Pretrazio si mracnu,gustu sumu ali nisi nista nasao u njoj.^Ipak,ne osecas se prijatno u njoj,i sve vise i vise se osecas ugrozenim.
 menu_fangorn_killed_player_only|^^^^^^Pretrazio si sumu.^Odjednom,neko ili nesto te je udarilo! Mozda je to samo grana?^Bio si bez svesti samo par minuta. Povredjen si, ali mozes nastaviti.
 mno_ow_get_out|Bezimo iz ove proklete sume!
@@ -301,6 +301,7 @@ mno_aw_chamber_door|Otvori vrata.
 mno_trade_with_arms_merchant|Poseti {s40}.
 mno_trade_with_horse_merchant|Poseti {s41}.
 mno_town_prison_door|Vrata od zatvora.
+mno_town_prison_door|Vrata od zatvora.
 mno_dungeon_enter|Trazi izgubljena koplja unutar planine.
 mno_dungeon_enter_door|Otvori vrata.
 mno_dwarven_warehouse|Poseti skladište patuljaka.
@@ -312,6 +313,7 @@ mno_isengard_underground|Idi u podzemne pecine.
 mno_tirith_toplevel|Popenji se na vrh.
 ; mno_tirith_toplevel_door|Go to the Citadel
 ; mno_erebor_gates|Visit the Great Gates.
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|Napusti...
 mno_town_leave_door|Napusti zonu
 ; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.

@@ -26,7 +26,6 @@ itm_steppe_horse|草原马
 itm_courser|骏马
 itm_hunter|猎马
 itm_pony|矮种马
-itm_arnor_warhorse|亚尔诺战马
 itm_dunedain_warhorse|登丹战马
 itm_rohirrim_courser|洛汗骏马
 itm_rohirrim_hunter|洛汗猎马
@@ -131,21 +130,19 @@ itm_harad_javelin|哈拉德标枪
 itm_gondor_javelin|刚铎标枪
 itm_rohirrim_throwing_axe|飞斧
 itm_loss_throwing_axes|罗萨那奇掷斧
-itm_arnor_helm_a|亚尔诺头盔
+itm_arnor_helm_c|亚尔诺饰纹盔
 itm_arnor_helm_b|亚尔诺头盔
-itm_arnor_helm_c|亚尔诺头盔
-itm_dunedain_helm_b|亚尔诺饰纹盔
-itm_arnor_armor_a|亚尔诺铠甲
-itm_arnor_armor_b|亚尔诺铠甲
-itm_arnor_armor_c|登丹游侠皮甲
-itm_arnor_armor_d|登丹游侠皮甲
-itm_arnor_armor_e|亚尔诺加厚短上衣
-itm_arnor_armor_f|亚尔诺重甲
+; itm_arnor_helm_a|Arnor Light Helm
+; itm_arnor_light_a|Dunedain Ranger Jerkin
+; itm_arnor_light_b|Dunedain Ranger Mail
+; itm_arnor_med_a|Dunedain Ranger Coat
+; itm_arnor_med_b|Dunedain Mail
+itm_arnor_heavy|亚尔诺重甲
 itm_arnor_greaves|亚尔诺胫甲
-itm_arnor_shield_a|亚尔诺盾
 itm_arnor_shield_c|亚尔诺骑兵盾
-itm_arnor_sword_a|亚尔诺变种剑
+; itm_arnor_shield_a|Arnor Round Shield
 itm_arnor_sword_c|亚尔诺战剑
+itm_arnor_sword_a|亚尔诺变种剑
 itm_arnor_sword_f|亚尔诺短剑
 itm_riv_helm_a|瑞文戴尔兜帽
 itm_riv_helm_b|瑞文戴尔射手盔
@@ -426,18 +423,15 @@ itm_gundabad_helm_c|刚达巴盔
 itm_gundabad_helm_d|刚达巴盔
 itm_gundabad_helm_e|座狼骑兵盔
 itm_dunland_wolfboots|登兰德狼皮靴
-itm_dunland_armor_a|丹尼斯皮甲
-itm_dunland_armor_b|丹尼斯皮甲
-itm_dunland_armor_c|丹尼斯皮甲
-itm_dunland_armor_d|丹尼斯皮甲
-itm_dunland_armor_e|丹尼斯皮甲
-itm_dunland_armor_g|丹尼斯皮甲
-itm_dunland_armor_h|登兰德长皮甲
-itm_dunland_armor_i|丹尼斯锁子甲
-itm_dunland_armor_j|登兰德锁子甲
-itm_dunland_armor_k|登兰德酋长甲
+; itm_dunland_tunic_1|Dunnish Leather Tunic
+; itm_dunland_tunic_2|Dunnish Leather Tunic
+; itm_dunland_fur_1|Dunnish Fur
+; itm_dunland_fur_2|Dunnish Fur
+itm_dunland_mail_1|丹尼斯锁子甲
+itm_dunland_mail_2|丹尼斯锁子甲
+; itm_dunland_chieftain|Dunnish Chief Armor
 itm_dun_helm_a|丹尼斯狼皮帽
-itm_dun_helm_b|丹尼斯鹿角帽
+; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|丹尼斯高盔
 itm_dun_helm_d|丹尼斯高盔
 itm_dun_helm_e|丹尼斯鹿角盔
@@ -501,11 +495,11 @@ itm_mirkwood_helm_d|幽暗密林王室盔
 itm_woodelf_leather_boots|木精灵皮靴
 itm_mirkwood_boots|绿林靴
 itm_harad_tunic|哈拉德束腰外衣
-itm_harad_padded|哈隆铎加厚甲
-itm_harad_hauberk|哈隆铎链甲
-itm_harad_lamellar|哈拉斯扎拉甲
-itm_harad_heavy|哈拉德贵族甲
-itm_harad_skirmisher|哈拉德轻型甲
+; itm_harad_padded|Harad Padded Jerkin
+; itm_harad_lamellar|Harad Scale Vest
+; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_heavy|哈拉斯扎拉甲
+; itm_harad_pectoral|Harad Breastplate
 itm_harad_archer|哈拉德射手甲
 itm_black_snake_armor|马兰卡甲
 itm_harad_champion|远哈拉德轻甲
@@ -558,10 +552,12 @@ itm_khand_cav_helm_b|侃德骑手盔
 itm_khand_cav_helm_c|侃德饰纹盔
 itm_khand_helm_mask|侃德面具
 itm_khand_light|侃德短裙
-itm_khand_light_lam|侃德轻型板甲
-itm_khand_foot_lam|侃德步兵甲
+; itm_khand_light_lam|Khand Light Footmen Armor
+; itm_khand_foot_lam|Khand Heavy Footman Armor
 itm_khand_med_lam|侃德板甲
 itm_khand_heavy_lam|侃德重型板甲
+; itm_khand_mail|Khand Mail
+itm_khand_noble_lam|侃德贵族甲
 itm_khand_axe_great|侃德巨斧
 itm_khand_axe_winged|侃德翼斧
 itm_khand_halberd|侃德斧枪

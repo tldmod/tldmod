@@ -15,7 +15,7 @@ skl_surgery_desc|Elk punt voor deze vaardigheid geeft een 4%% kans dat een dodel
 skl_wound_treatment|Wondverzorging
 skl_wound_treatment_desc|De snelheid waarmee je groep weer heelt gaat omhoog met 20%% per punt voor deze vaardigheid. (groep's vaardigheid)
 skl_inventory_management|inventaris Beheer
-skl_inventory_management_desc|vergroot inventaris capaciteit met +6 vakken per punt voor deze vaardigheid (leider vaardigheid)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Spotten
 skl_spotting_desc|Je groep kan 10%% verder zien per punt voor deze vaardigheid (groep's vaardigheid)
 skl_pathfinding|Padvinden

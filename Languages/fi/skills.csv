@@ -15,7 +15,7 @@ skl_surgery|Kirurgia
 skl_wound_treatment|Haavojen hoitaminen
 ; skl_wound_treatment_desc|Party healing speed is increased by 20%% per level of this skill. (Party skill)
 skl_inventory_management|Tavaraluettelon Käsittely
-skl_inventory_management_desc|Korottaa tavaraluettelon kapasiteettia +6 per taito taso (Johtaja taso)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Huomaaminen
 ; skl_spotting_desc|Party seeing range is increased by 10%% per skill level. (Party skill)
 skl_pathfinding|Polun löytäminen

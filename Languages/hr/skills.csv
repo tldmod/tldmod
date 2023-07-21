@@ -15,7 +15,7 @@ skl_surgery_desc|Svaki dodatni bod ove vještine daje 4%%  priliku da će smrtno
 skl_wound_treatment|Obrada rana
 skl_wound_treatment_desc|Svakim  dodatni nivo ove vještine ubrzava oporavak Družine za 20%%. (vještina družine)
 skl_inventory_management|Upravljanje inventarom
-skl_inventory_management_desc|Povećava kapacitet inventara za +6 za svaki dodatni nivo vještine. (Vještina Vođe)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Uočavanje
 skl_spotting_desc|Doseg pogleda družine se povećava za 10%%  za svaki dodatni nivo vještine. (vještina družine)
 skl_pathfinding|Pronalazak puta

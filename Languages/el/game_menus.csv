@@ -176,7 +176,7 @@ menu_fangorn_danger|Περίεργοι, απολιτικοί ήχοι υπάρχ
 mno_be_quiet_elf|Σεβάσου το μίσος των δέντρων. Φύγε ήσυχα.
 mno_be_quiet|Κατεβάστε τα όπλα σας και μείνετε ήσυχοι! Τώρα φύγετε από εδώ!
 mno_be_bold|Συνεχίστε! Δεν φοβάμαι ούτε φυτά, ούτε παλιούς μύθους!
-mno_fight_back|Ας μάθουμε! Ψάξτε την περιοχή! Κάψτε και κάνα δέντρο!
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|Ψάχνεις στο σκοτεινό, πυκνό δάσος αλλά δεν βρίσκεις τίποτα. Νιώθεις ότι κάποιος σε κοιτάει και σε απειλεί, όλο και περισσότερο.
 menu_fangorn_killed_player_only|Περπατάς στο πυκνό και σκοτεινό δάσος. Ξαφνικά κάτι σε χτύπησε! Ίσως κάνα βαρύ κλαδί έπεσε στο κεφάλι σου. Μένεις αναίσθητος μόνο για λίγα λεπτά. Είσαι βαριά πληγωμένος αλλά μπορείς να συνεχίσεις.
 mno_ow_get_out|Άουτς! Ας φύγουμε από αυτό το καταραμένο μέρος!
@@ -301,6 +301,7 @@ mno_siege_defender_do_not_join_battle|Μην συμμετέχεις.
 ; mno_trade_with_arms_merchant|Visit the {s40}.
 ; mno_trade_with_horse_merchant|Visit the {s41}.
 ; mno_town_prison_door|Door to the prison.
+; mno_town_prison_door|Door to the prison.
 ; mno_dungeon_enter|Search for the lost spears inside the mountains.
 ; mno_dungeon_enter_door|Open the door.
 ; mno_dwarven_warehouse|Visit the Dwarven Warehouse
@@ -312,6 +313,7 @@ mno_siege_defender_do_not_join_battle|Μην συμμετέχεις.
 ; mno_tirith_toplevel|Climb up to the top level.
 ; mno_tirith_toplevel_door|Go to the Citadel
 ; mno_erebor_gates|Visit the Great Gates.
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|Φύγε...
 ; mno_town_leave_door|Leave Area
 ; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.

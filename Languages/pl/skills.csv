@@ -15,7 +15,7 @@ skl_surgery_desc|Każdy punkt w tej umiejętności daje 4%% szansy na to, że ś
 skl_wound_treatment|Leczenie ran
 skl_wound_treatment_desc|Szybkość leczenia oddziału wzrasta o 20%% na każdy poziom tej umiejętności. (Umiejętność oddziału)
 skl_inventory_management|Zarządzanie ekwipunkiem
-skl_inventory_management_desc|Zwiększa pojemność ekwipunku o 6 pól na każdy poziom umiejętności. (Umiejętność dowódcy)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Spostrzegawczość
 skl_spotting_desc|Zasięg wzroku oddziału zwiększa się o 10%% na poziom umiejętności. (Umiejętność oddziału)
 skl_pathfinding|Szukanie ścieżek

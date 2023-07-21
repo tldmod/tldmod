@@ -176,7 +176,7 @@ menu_assasins_attack_player_retreat|Pobjegao si sa svojim životom!
 ; mno_be_quiet_elf|Respect the hatred of the trees. Move along quietly.
 ; mno_be_quiet|Put the weapons down and stay quiet! Now out of here!
 ; mno_be_bold|Go on! I'm not afraid of plants or old myths!
-; mno_fight_back|Let's find out! Search the area! Burn down a tree or two!
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 ; menu_fangorn_search_fails|^^^^^^You search the dark, thick forest but find nothing.^Still, you feel observed and threatened, more and more.
 ; menu_fangorn_killed_player_only|^^^^^^You wander in the thick, dark forest.^All of a sudden you are hit by something! Maybe a heavy branch fell on your head?^You stay unconcious only for minutes. You are badly hurt but you can go on.
 ; mno_ow_get_out|Ouch! Let's get out of this cursed place!
@@ -301,6 +301,7 @@ mno_aw_chamber_door|Otvori vrata.
 mno_trade_with_arms_merchant|Posjeti {s40}.
 mno_trade_with_horse_merchant|Posjeti  {s41}.
 ; mno_town_prison_door|Door to the prison.
+; mno_town_prison_door|Door to the prison.
 ; mno_dungeon_enter|Search for the lost spears inside the mountains.
 mno_dungeon_enter_door|Otvori vrata.
 ; mno_dwarven_warehouse|Visit the Dwarven Warehouse
@@ -312,6 +313,7 @@ mno_dungeon_enter_door|Otvori vrata.
 ; mno_tirith_toplevel|Climb up to the top level.
 ; mno_tirith_toplevel_door|Go to the Citadel
 ; mno_erebor_gates|Visit the Great Gates.
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|Napusti...
 mno_town_leave_door|Napusti područje
 ; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.

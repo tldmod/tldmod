@@ -15,7 +15,7 @@ skl_surgery_desc|С каждым новым уровнем этого навык
 skl_wound_treatment|Перевязка ран
 skl_wound_treatment_desc|С каждым новым уровнем этого навыка скорость излечения отряда возрастает на 20%% (умение отряда).
 skl_inventory_management|Упаковка
-skl_inventory_management_desc|С каждым новым уровнем этого навыка вместительность вашего инвентаря увеличивается на 6 пунктов (умение лидера).
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Зоркость
 skl_spotting_desc|С каждым новым уровнем этого навыка поле зрения отряда увеличивается на 10%% (умение отряда).
 skl_pathfinding|Поиск пути

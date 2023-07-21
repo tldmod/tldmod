@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^Dziwne, otaczają cie jakby szepty.^Czyżby to rozmawi
 mno_be_quiet_elf|Poszanuj panujący wokół spokój. Poruszaj się jak najciszej.
 mno_be_quiet|Połóż broń na ziemi i bądź cicho! A teraz wynoś sie stąd!
 mno_be_bold|Dalej! Nie lękam się roślin i starych mitów!
-mno_fight_back|Przekonajmy się! Przeszukajcie okolicę! Spalcie parę drzew!
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|^^^^^^Przeszukujesz  gęsty, mroczny las, ale nic nie znajdujesz.^Jednakże, czujesz się obserwowany, a poczucie niebezpieczeństwa narasta.
 menu_fangorn_killed_player_only|^^^^^^Podróżujesz przez mroczny, gęsty las.^Nagle zostajesz przez coś uderzony! Może gałąź spadła Ci na głowę?^Leżysz nieprzytomny przez parę minut. Jesteś ciężko ranny, lecz wciąż możesz iść dalej.
 mno_ow_get_out|Ahh! Wydostańmy się z tego przeklętego miejsca!
@@ -301,6 +301,7 @@ mno_aw_chamber_door|Otwórz drzwi.
 mno_trade_with_arms_merchant|Odwiedź zbrojownię.
 mno_trade_with_horse_merchant|Odwiedź magazyny.
 mno_town_prison_door|Drzwi do więzienia.
+mno_town_prison_door|Drzwi do więzienia.
 mno_dungeon_enter|Wejdź do lochów.
 mno_dungeon_enter_door|Otwórz drzwi.
 mno_dwarven_warehouse|Odwiedź magazyn Krasnoludów
@@ -312,6 +313,7 @@ mno_isengard_underground_door|Wejdź do podziemnych jaskiń
 mno_tirith_toplevel|Wspinaj się na wyższy poziom.
 mno_tirith_toplevel_door|Idź do Cytadeli
 mno_erebor_gates|Odwiedź Wielką Bramę
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|Odejdź...
 mno_town_leave_door|Wyjdź
 menu_player_initiated_siege_result|Zaatakowałeś ten ośrodek pod sztandarem {s2}.

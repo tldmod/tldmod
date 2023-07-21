@@ -26,7 +26,6 @@ itm_steppe_horse|ステップ馬
 itm_courser|コーサー
 itm_hunter|ハンター
 itm_pony|ポニー
-itm_arnor_warhorse|アルノール軍馬
 itm_dunedain_warhorse|ドゥネダイン軍馬
 itm_rohirrim_courser|ロヒアリムコーサー
 itm_rohirrim_hunter|ロヒアリムハンター
@@ -131,21 +130,19 @@ itm_harad_javelin|ハラドの投げ槍
 itm_gondor_javelin|ゴンドールの投げ槍
 itm_rohirrim_throwing_axe|北国人の投げ斧
 itm_loss_throwing_axes|ロスサールナッハの投げ斧
-itm_arnor_helm_a|アルノールの兜
+itm_arnor_helm_c|アルノールの細工入り兜
 itm_arnor_helm_b|アルノールの兜
-itm_arnor_helm_c|アルノールの兜
-itm_dunedain_helm_b|アルノールの細工入り兜
-itm_arnor_armor_a|アルノールの鎧
-itm_arnor_armor_b|アルノールの鎧
-itm_arnor_armor_c|ドゥネダイン野伏の革鎧
-itm_arnor_armor_d|ドゥネダイン野伏の革鎧
-itm_arnor_armor_e|アルノールの補強された胴着
-itm_arnor_armor_f|アルノールの上級鎧
+; itm_arnor_helm_a|Arnor Light Helm
+; itm_arnor_light_a|Dunedain Ranger Jerkin
+; itm_arnor_light_b|Dunedain Ranger Mail
+; itm_arnor_med_a|Dunedain Ranger Coat
+; itm_arnor_med_b|Dunedain Mail
+itm_arnor_heavy|アルノールの上級鎧
 itm_arnor_greaves|アルノールのすね当て
-itm_arnor_shield_a|アルノールの盾
 itm_arnor_shield_c|アルノール騎兵の盾
-itm_arnor_sword_a|アルノールのバスタードソード
+; itm_arnor_shield_a|Arnor Round Shield
 itm_arnor_sword_c|アルノールの長剣
+itm_arnor_sword_a|アルノールのバスタードソード
 itm_arnor_sword_f|アルノールの短剣
 itm_riv_helm_a|裂け谷のコイフ
 itm_riv_helm_b|裂け谷弓兵の兜
@@ -426,18 +423,15 @@ itm_gundabad_helm_c|グンダバドの兜
 itm_gundabad_helm_d|グンダバドの兜
 itm_gundabad_helm_e|ワーグ騎兵の兜
 itm_dunland_wolfboots|褐色人の狼ブーツ
-itm_dunland_armor_a|褐色人の毛皮鎧
-itm_dunland_armor_b|褐色人の毛皮鎧
-itm_dunland_armor_c|褐色人の毛皮鎧
-itm_dunland_armor_d|褐色人の毛皮鎧
-itm_dunland_armor_e|褐色人の毛皮鎧
-itm_dunland_armor_g|褐色人の毛皮鎧
-itm_dunland_armor_h|褐色人の丈の長い毛皮鎧
-itm_dunland_armor_i|褐色人のホバーク
-itm_dunland_armor_j|褐色人のホバーク
-itm_dunland_armor_k|褐色人族長の鎧
+; itm_dunland_tunic_1|Dunnish Leather Tunic
+; itm_dunland_tunic_2|Dunnish Leather Tunic
+; itm_dunland_fur_1|Dunnish Fur
+; itm_dunland_fur_2|Dunnish Fur
+itm_dunland_mail_1|褐色人のホバーク
+itm_dunland_mail_2|褐色人のホバーク
+; itm_dunland_chieftain|Dunnish Chief Armor
 itm_dun_helm_a|褐色人の狼の被り物
-itm_dun_helm_b|褐色人の鹿の角の被り物
+; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|褐色人の山高兜
 itm_dun_helm_d|褐色人の山高兜
 itm_dun_helm_e|褐色人の鹿の角の兜
@@ -501,11 +495,11 @@ itm_mirkwood_helm_d|緑森の上級兜
 ; itm_woodelf_leather_boots|Woodelf Leather Boots
 ; itm_mirkwood_boots|Greenwood Boots
 itm_harad_tunic|ハラドのチュニック
-itm_harad_padded|ハロンドールの当て物の入った鎧
-itm_harad_hauberk|ハロンドールのホバーク
-itm_harad_lamellar|ハラシヤラ鎧
-itm_harad_heavy|ハラド貴族の鎧
-itm_harad_skirmisher|ハラドの軽装祭服
+; itm_harad_padded|Harad Padded Jerkin
+; itm_harad_lamellar|Harad Scale Vest
+; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_heavy|ハラシヤラ鎧
+; itm_harad_pectoral|Harad Breastplate
 itm_harad_archer|ハラド弓兵の鎧
 itm_black_snake_armor|マランカ鎧
 itm_harad_champion|遠ハラドの祭服
@@ -558,10 +552,12 @@ itm_khand_cav_helm_b|ハンドの騎兵の兜
 itm_khand_cav_helm_c|ハンドの飾りのついた兜
 itm_khand_helm_mask|ハンドの仮面
 itm_khand_light|ハンドのキルト
-itm_khand_light_lam|ハンドの軽装薄金鎧
-itm_khand_foot_lam|ハンドの歩兵の鎧
+; itm_khand_light_lam|Khand Light Footmen Armor
+; itm_khand_foot_lam|Khand Heavy Footman Armor
 itm_khand_med_lam|ハンドの薄金鎧
 itm_khand_heavy_lam|ハンドの重装薄金鎧
+; itm_khand_mail|Khand Mail
+itm_khand_noble_lam|ハンドの上級鎧
 itm_khand_axe_great|ハンドの大斧
 itm_khand_axe_winged|ハンドの両刃斧
 itm_khand_halberd|ハンドのハルバード

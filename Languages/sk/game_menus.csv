@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^Divné, a strašidelné zvuky sa ozývajú lesom okolo
 mno_be_quiet_elf|Majte rešpekt k stromom a ich nenávisti. Potichu pokračujte.
 mno_be_quiet|Skloňte zbrane a buďte ticho! Musíme sa odtiaľ dostať preč!
 mno_be_bold|Pokračujte! Nebojím sa rastlín a starých mýtov!
-mno_fight_back|Poďme to zistiť! Preskúmajte oblasť! Spaľte dva či tri stromy!
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|^^^^^^Prehľadáte tmavý, hustý les, ale nenajdete nič.^Napriek tomu sa vám zdá, že vás niečo sleduje. Niečo strašidelné.
 menu_fangorn_killed_player_only|^^^^^^Prechádzaš sa hustým, temným lesom.^Odrazu ťa niečo trafilo! Možno ti na hlavu spadol ťažký konár.^Ostaneš v bezvedomí len pár minut. Zisťuješ, že si ťažko zranený, ale môžeš pokračovať.
 mno_ow_get_out|Ouch! Musíme zmiznúť z tohto prekliatého miesta!
@@ -301,6 +301,7 @@ mno_aw_chamber_door|Otvoriť dvere.
 mno_trade_with_arms_merchant|Navštíviť {s40}.
 mno_trade_with_horse_merchant|Navštíviť {s41}.
 mno_town_prison_door|Dvere do väzenia.
+mno_town_prison_door|Dvere do väzenia.
 mno_dungeon_enter|Hľadaj stratené kopije vnútri hôr.
 mno_dungeon_enter_door|Otvoriť dvere.
 mno_dwarven_warehouse|Navštíviť trpasličie skladisko
@@ -312,6 +313,7 @@ mno_isengard_underground_door|Ísť do podzemných jaskýň
 mno_tirith_toplevel|Vyšplhať na horné poschodie.
 ; mno_tirith_toplevel_door|Go to the Citadel
 mno_erebor_gates|Navštívte Veľké Brány.
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|Odísť...
 mno_town_leave_door|Opustiť oblasť
 menu_player_initiated_siege_result|Zaútočil si na mesto pod zástavou {s2}.

@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^奇怪，你聽到四周發出一些威脅的噪音。
 mno_be_quiet_elf|尊重這些憤怒的古樹。悄悄地前進。
 mno_be_quiet|收起武器且保持安靜！馬上離開這裡！
 mno_be_bold|繼續前進！我不害怕植物和古老的神話！
-mno_fight_back|讓我們來一探究竟吧！搜索這個區域！燒燒幾棵樹！ 
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|^^^^^^你搜索了漆黑濃密的森林，但什麽都沒有找到。^然而，你感到來自四周的視線和威脅變得越來越多了。
 menu_fangorn_killed_player_only|^^^^^^你在這個漆黑濃密的森林徘徊。^忽然間某個東西砸到你了的頭上！可能是一根很重的樹枝吧？^你昏迷幾分鐘中後醒了過來。你傷得很重但還能繼續前進。
 mno_ow_get_out|噢！讓我們離開這個被詛咒的地方！
@@ -301,6 +301,7 @@ mno_aw_chamber_door|開門。
 mno_trade_with_arms_merchant|訪問{s40}。
 mno_trade_with_horse_merchant|訪問{s41}。
 mno_town_prison_door|進入監獄的門。
+mno_town_prison_door|進入監獄的門。
 mno_dungeon_enter|在山中搜索失落的長槍。
 mno_dungeon_enter_door|打開門。
 mno_dwarven_warehouse|拜訪矮人倉庫
@@ -312,6 +313,7 @@ mno_isengard_underground_door|前往地下洞穴
 mno_tirith_toplevel|爬到頂層。
 mno_tirith_toplevel_door|前往堡壘
 mno_erebor_gates|訪問大門。
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|離開...
 mno_town_leave_door|離開區域
 menu_player_initiated_siege_result|你在{s2}的旗幟下進攻這個據點。

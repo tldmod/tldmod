@@ -247,6 +247,7 @@ qstr_Less_Wargs_upkeep|Снижает содержание всадников н
 qstr_Light_Armor|Лёгкая броня
 qstr_Bonus_to_Strength__P|Бонус к силе (только для игрока)
 qstr_Lead_more_Orcs|Бонус к числу орков
+; qstr_Can_scare_horses|Can scare horses
 qstr_+{reg1}_to_Party_Mor|+{reg1} к боевому духу отряда
 qstr_Range:_{reg55}|Дальность: {reg55}
 qstr_Dwarves|Гномы
@@ -764,8 +765,8 @@ qstr_Two_Nazgul_are_circl|Два Назгула кружат в небе над 
 qstr_A_Nazgul_is_circling|Назгул кружит над полем боя!
 qstr_Some_of_your_human_t|Некоторые из ваших человеческих воинов не боятся темноты.(Ночные воины не подвержены штрафам в ночное время)
 qstr_You_are_filled_with_|Вы наполняетесь яростью, когда видите врага (активен Берсерк).
-qstr_Your_mount_is_scared|Ваш скакун напуган  {reg73?ent:troll}!
-qstr_Your_mount_is_scared_|Ваш скакун напуган {reg73?ent:troll}, но вы можете успокоить его!
+qstr_Your_mount_is_scared|Ваш скакун напуган {s5}!
+qstr_Your_mount_is_scared_|Ваш скакун напуган {s5}, но вы можете успокоить его!
 qstr_Nazgul_sweep!|Назгул атакует!
 qstr_You_and_your_horse_p|Вы и ваша лошадь в ужасе, крики назгула невыносимы!
 qstr_Your_horse_panics_th|Ваша лошадь несётся прочь, крики назгула невыносимы!
@@ -904,8 +905,8 @@ qstr_You_are_suffering_fr|Рана ({s1}) причиняет вам страда
 qstr_You_are_suffering_fro|Раны ({s1} и {s2}) причиняют вам страдания. 
 qstr_You_are_suffering_from|Раны ({s1}, {s2} и {s3}) причиняют вам страдания. 
 qstr_You_are_suffering_from_|Раны ({s1}, {s2}, {s3} и {s4}) причиняют вам страдания. 
-qstr_Weekly_upkeep_for_tr|Еженедельное содержание войск:^{reg5} очков снабжения^
-qstr_{s12}^__{s4}:_{reg4}|{s12}^ {s4}: {reg4} очков снабжения ({reg5})
+; qstr_Troop_upkeep__paid_e|Troop upkeep (paid every four days):^
+; qstr_{s12}^^__{s4}:_{reg8|{s12}^^  {s4}: {reg8}/{reg5} Resource Points ^Party: {reg4}^Reserves: {reg7}
 qstr_No_upkeep_costs|Войска не требуют содержания
 qstr_Orc_hiring_bonus:_+2|Бонус найма орков: +2/3 за каждого орка в отряде^
 qstr_Current_party_size_l|Текущий лимит размера отряда равен {reg5}.^Модификаторы размера отряда таковы:^^Базовый размер: +10^Лидерство: {s2}{reg1}^Харизма: {s3}{reg2}^Ранги: {s4}{reg3}^{s5}ИТОГО: {reg5}
@@ -1108,6 +1109,9 @@ qstr_^^^You_lost_your_fig|^^^Вы проиграли в поединке с бу
 qstr_^^^You_have_slain_th|^^^Вы сразили мятежника, и другие орки быстро смолкли. ^ Некоторое время эти твари будут тише воды.
 qstr_You_cover_up_your_tr|Вы тихо двинулись дальше.
 qstr_Breaking_camp...|Сворачиваем лагерь...
+; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
+; qstr_Desertion|Desertion
+; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
 qstr_You_have_left_{s1}.|Вы покинули регион {s1}.
 qstr_You_are_entering_{s1|Вы входите в регион {s1} ({s2}).
 qstr_You_are_entering_{s1}|Вы входите в регион {s1}.

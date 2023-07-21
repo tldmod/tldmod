@@ -176,7 +176,7 @@ menu_fangorn_danger|^ ^ ^ ^ ^ ^ ^ أصوات غريبة ، مهددة في كل 
 mno_be_quiet_elf|احترم كراهية الأشجار. تحرك بهدوء.
 mno_be_quiet|ضع الأسلحة جانباً وابقى صامتاً! الآن من هنا!
 mno_be_bold|تابع! أنا لا أخاف من النباتات أو الأساطير القديمة!
-mno_fight_back|هيا نكتشف! ابحث في المنطقة! احرق شجرة أو اثنتين!
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|^ ^ ^ ^ ^ ^ إنك تبحث في الغابة الكثيفة المظلمة ولكنك لا تجد شيئًا. ^ ومع ذلك ، تشعر بالملاحظة والتهديد ، أكثر وأكثر.
 menu_fangorn_killed_player_only|^ ^ ^ ^ ^ ^ تتجول في الغابة الكثيفة المظلمة. فجأة يصطدم بشيء ما! ربما سقط غصن ثقيل على رأسك؟ ^ أنت تبقى فاقدًا للوعي لدقائق فقط. أنت تتأذى بشدة ولكن يمكنك الاستمرار.
 mno_ow_get_out|اه! دعنا نخرج من هذا المكان الملعون!
@@ -301,6 +301,7 @@ mno_aw_chamber_door|افتح الباب.
 mno_trade_with_arms_merchant|قم بزيارة {s40}.
 mno_trade_with_horse_merchant|قم بزيارة {s41}.
 mno_town_prison_door|باب السجن.
+mno_town_prison_door|باب السجن.
 mno_dungeon_enter|ابحث عن الرماح المفقودة داخل الجبال.
 mno_dungeon_enter_door|افتح الباب.
 mno_dwarven_warehouse|قم بزيارة مستودع Dwarven
@@ -312,6 +313,7 @@ mno_isengard_underground_door|اذهب إلى الكهوف تحت الأرض
 mno_tirith_toplevel|يصعد إلى المستوى الأعلى.
 mno_tirith_toplevel_door|اذهب إلى القلعة
 mno_erebor_gates|قم بزيارة Great Gates.
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|ارحل...
 mno_town_leave_door|ارحل من المنطقة.
 menu_player_initiated_siege_result|لقد هاجمت هذا المركز تحت شعار {s2}.

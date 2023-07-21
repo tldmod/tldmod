@@ -26,7 +26,6 @@ itm_steppe_horse|Koń Stepowy
 itm_courser|Rumak
 itm_hunter|Łowca
 itm_pony|Kuc
-itm_arnor_warhorse|Arnorski Koń Bojowy
 itm_dunedain_warhorse|Koń Bojowy Dunedainów
 itm_rohirrim_courser|Rohański Rumak
 itm_rohirrim_hunter|Rohański Łowca
@@ -131,21 +130,19 @@ itm_harad_javelin|Haradzki Oszczep
 itm_gondor_javelin|Gondorski Oszczep
 itm_rohirrim_throwing_axe|Toporki do rzucania Ludzi Północy
 itm_loss_throwing_axes|Toporki do Rzucania z Lossarnach
-itm_arnor_helm_a|Arnorski Hełm
+itm_arnor_helm_c|Arnorski Zdobiony Hełm
 itm_arnor_helm_b|Arnorski Hełm
-itm_arnor_helm_c|Arnorski Hełm
-itm_dunedain_helm_b|Arnorski Zdobiony Hełm
-itm_arnor_armor_a|Arnorska Zbroja
-itm_arnor_armor_b|Arnorska Zbroja
-itm_arnor_armor_c|Skórznia Strażnika Dunedainów
-itm_arnor_armor_d|Skórznia Strażnika Dunedainów
-itm_arnor_armor_e|Arnorska Wzmacniana Kurtka
-itm_arnor_armor_f|Arnorska Wspaniała Zbroja
+; itm_arnor_helm_a|Arnor Light Helm
+; itm_arnor_light_a|Dunedain Ranger Jerkin
+; itm_arnor_light_b|Dunedain Ranger Mail
+; itm_arnor_med_a|Dunedain Ranger Coat
+; itm_arnor_med_b|Dunedain Mail
+itm_arnor_heavy|Arnorska Wspaniała Zbroja
 itm_arnor_greaves|Arnorskie Nagolenniki
-itm_arnor_shield_a|Arnorska Tarcza
 itm_arnor_shield_c|Arnorska Tarcza Kawaleryjska
-itm_arnor_sword_a|Arnorski Miecz Półtoraręczny
+; itm_arnor_shield_a|Arnor Round Shield
 itm_arnor_sword_c|Wojenny Miecz Arnoru
+itm_arnor_sword_a|Arnorski Miecz Półtoraręczny
 itm_arnor_sword_f|Arnorski Krótki Miecz
 itm_riv_helm_a|Czepiec z Rivendell
 itm_riv_helm_b|Hełm Łucznika z Rivendell
@@ -426,18 +423,15 @@ itm_gundabad_helm_c|Gundabadzki Hełm
 itm_gundabad_helm_d|Gundabadzki Hełm
 itm_gundabad_helm_e|Hełm Jeźdźców Wargów
 itm_dunland_wolfboots|Dunlandzkie Wilcze Buty
-itm_dunland_armor_a|Dunlandzka Futrzana Zbroja
-itm_dunland_armor_b|Dunlandzka Futrzana Zbroja
-itm_dunland_armor_c|Dunlandzka Futrzana Zbroja
-itm_dunland_armor_d|Dunlandzka Futrzana Zbroja
-itm_dunland_armor_e|Dunlandzka Futrzana Zbroja
-itm_dunland_armor_g|Dunlandzka Futrzana Zbroja
-itm_dunland_armor_h|Dunlandzka Długa Futrzana Zbroja
-itm_dunland_armor_i|Dunlandzka Koszula Kolcza
-itm_dunland_armor_j|Dunlandzka Koszula Kolcza
-itm_dunland_armor_k|Zbroja Wodza Dunlendingów
+; itm_dunland_tunic_1|Dunnish Leather Tunic
+; itm_dunland_tunic_2|Dunnish Leather Tunic
+; itm_dunland_fur_1|Dunnish Fur
+; itm_dunland_fur_2|Dunnish Fur
+itm_dunland_mail_1|Dunlandzka Koszula Kolcza
+itm_dunland_mail_2|Dunlandzka Koszula Kolcza
+; itm_dunland_chieftain|Dunnish Chief Armor
 itm_dun_helm_a|Dunlandzka Wilcza Czapa
-itm_dun_helm_b|Dunlandzka Jelenia Czapa
+; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|Dunlandzki Wspaniały Hełm
 itm_dun_helm_d|Dunlandzki Wspaniały Hełm
 itm_dun_helm_e|Dunlandzki Hełm z Porożem
@@ -501,11 +495,11 @@ itm_mirkwood_helm_d|Królewski Hełm Leśnych Elfów
 itm_woodelf_leather_boots|Skórzane buty Leśnych Elfów
 itm_mirkwood_boots|Buty z Mrocznej Puszczy
 itm_harad_tunic|Haradzka Szata
-itm_harad_padded|Przeszywanica z Harondoru
-itm_harad_hauberk|Kolczuga z Harondoru
-itm_harad_lamellar|Pancerz Harasjala
-itm_harad_heavy|Szlachecka Zbroja Harad
-itm_harad_skirmisher|Haradzkie Okrycie
+; itm_harad_padded|Harad Padded Jerkin
+; itm_harad_lamellar|Harad Scale Vest
+; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_heavy|Pancerz Harasjala
+; itm_harad_pectoral|Harad Breastplate
 itm_harad_archer|Haradzka Zbroja Łucznika
 itm_black_snake_armor|Pancerz Maranka
 itm_harad_champion|Szaty z Dalekiego Haradu
@@ -558,10 +552,12 @@ itm_khand_cav_helm_b|Hełm Jeźdźca z Khandu
 itm_khand_cav_helm_c|Zdobiony Hełm z Khandu
 itm_khand_helm_mask|Maska z Khandu
 itm_khand_light|Kilt z Khandu
-itm_khand_light_lam|Lekka lamelka z Khandu
-itm_khand_foot_lam|Pancerz Piechura z Khandu
+; itm_khand_light_lam|Khand Light Footmen Armor
+; itm_khand_foot_lam|Khand Heavy Footman Armor
 itm_khand_med_lam|Zbroja lamelkowa z Khandu
 itm_khand_heavy_lam|Ciężka Zbroja lemelkowa z Khandu
+; itm_khand_mail|Khand Mail
+itm_khand_noble_lam|Szlachecka Zbroja z Khandu
 itm_khand_axe_great|Wielki Topór z Khandu
 itm_khand_axe_winged|Topór z Khandu
 itm_khand_halberd|Halabarda z Khandu

@@ -15,7 +15,7 @@ skl_surgery_desc|Setiap poin untuk skill ini memberikan 4 %% peluang bahwa setia
 skl_wound_treatment|Perawatan luka 
 ; skl_wound_treatment_desc|Party healing speed is increased by 20%% per level of this skill. (Party skill)
 skl_inventory_management|Manajemen inventaris
-skl_inventory_management_desc|Menambah kapasitas inventaris sebesar +6 tiap level skill. (Skill pemimpin)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Pemantauan
 skl_spotting_desc|Jarak penglihatan parti bertambah menjadi 10 %% per level skill. (Skill parti)
 skl_pathfinding|Pencari Jejak 

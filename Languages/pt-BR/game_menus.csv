@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^Você escuta barulhos estranhos e ameaçadores em volt
 mno_be_quiet_elf|Respeitar o ódio das árvores. Seguir em frente silenciosamente.
 mno_be_quiet|Abaixem as armas e permaneçam quietos! Agora, fora daqui!
 mno_be_bold|Continuar! Eu não tenho medo de plantas ou antigos mitos!
-mno_fight_back|Vamos descobrir! Procure na área! Queime uma árvore ou duas!
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|^^^^^^Você procura na escuridão da densa floresta, mas não encontra nada.^No entanto, você sente que está sendo observado e odiado cada vez mais.
 menu_fangorn_killed_player_only|^^^^^^Você vagueia na densa e escura floresta.^De repente, você é acertado por alguma coisa! Talvez um galho pesado tenha caído em cima de sua cabeça?^Você fica inconsciente por alguns minutos. Você está seriamente ferido, mas pode continuar.
 mno_ow_get_out|Oras! Vamos sair deste lugar amaldiçoado!
@@ -301,6 +301,7 @@ mno_aw_chamber_door|Abrir a porta.
 mno_trade_with_arms_merchant|Visitar {s40}.
 mno_trade_with_horse_merchant|Visitar {s41}.
 mno_town_prison_door|Entrada para a prisão.
+mno_town_prison_door|Entrada para a prisão.
 mno_dungeon_enter|Procurar pelas lanças perdidas dentro das montanhas.
 mno_dungeon_enter_door|Abrir a porta. 
 mno_dwarven_warehouse|Visitar o Armazém dos Anãos
@@ -312,6 +313,7 @@ mno_isengard_underground_door|Ir para as cavernas subterrâneas
 mno_tirith_toplevel|Escalar para o andar superior.
 mno_tirith_toplevel_door|Vá para a Cidadela!\n \n\n \n \n \n \n 
 mno_erebor_gates|Visite os Grande Portões.
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|Ir embora...
 mno_town_leave_door|Abandonar área
 menu_player_initiated_siege_result|Você atacou este centro sob a bandeira de {s2}.

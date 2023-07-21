@@ -247,6 +247,7 @@ qstr_Less_Wargs_upkeep|ワーグ騎兵の維持費が低下
 qstr_Light_Armor|軽装鎧
 qstr_Bonus_to_Strength__P|体力にボーナス (プレイヤーのみ)
 qstr_Lead_more_Orcs|指揮可能なオークの数が増大
+; qstr_Can_scare_horses|Can scare horses
 qstr_+{reg1}_to_Party_Mor|パーティの士気+{reg1}
 qstr_Range:_{reg55}|範囲: {reg55}
 qstr_Dwarves|ドワーフ
@@ -764,8 +765,8 @@ qstr_Two_Nazgul_are_circl|戦場の上空で2体のナズグールが旋回し�
 qstr_A_Nazgul_is_circling|戦場の上空でナズグールが旋回しています！
 qstr_Some_of_your_human_t|あなたの兵のうち、いくらかは人間にもかかわらず闇の力にひるんでいません(ナイト系の兵は夜間のペナルティを受けません)。
 qstr_You_are_filled_with_|敵の姿を目にしたあなたは、怒りで満たされました(狂戦士が発動しました)。
-qstr_Your_mount_is_scared|あなたの馬は{reg73?エント:トロル}に怯えています！
-qstr_Your_mount_is_scared_|あなたの馬は{reg73?エント:トロル}に怯えていますが、なんとかなだめる事はできそうです！
+qstr_Your_mount_is_scared|あなたの馬は{s5}に怯えています！
+; qstr_Your_mount_is_scared_|Your mount is scared by the {s5}, but you can master it!
 qstr_Nazgul_sweep!|ナズグールの攻撃！
 qstr_You_and_your_horse_p|ナズグールの耐え難い叫び声に、あなたと馬は動揺しています！
 qstr_Your_horse_panics_th|ナズグールの耐え難い叫び声に、あなたの馬が動揺しています！
@@ -904,8 +905,8 @@ qstr_You_are_suffering_fr|あなたは{s1}に悩まされています。
 qstr_You_are_suffering_fro|あなたは{s1}、 および{s2}に悩まされています。
 qstr_You_are_suffering_from|あなたは{s1}、 {s2}、 および{s3}に悩まされています。
 qstr_You_are_suffering_from_|あなたは{s1}、 {s2}、 {s3}、 および{s4}に悩まされています。
-qstr_Weekly_upkeep_for_tr|一週間の兵士維持費:^{reg5}リソースポイント^
-qstr_{s12}^__{s4}:_{reg4}|{s12}^  {s4}:{reg4}リソースポイント({reg5})
+; qstr_Troop_upkeep__paid_e|Troop upkeep (paid every four days):^
+; qstr_{s12}^^__{s4}:_{reg8|{s12}^^  {s4}: {reg8}/{reg5} Resource Points ^Party: {reg4}^Reserves: {reg7}
 qstr_No_upkeep_costs|維持費なし
 qstr_Orc_hiring_bonus:_+2|オーク雇用費:オーク1匹につき+2/3^
 qstr_Current_party_size_l|現在のパーティの人数上限は{reg5}です。^人数上限の修正値は次の通りです:^^基本値:+10^統率力:{s2}{reg1}^カリスマ:{s3}{reg2}^ランク:{s4}{reg3}^{s5}合計:{reg5}
@@ -1108,6 +1109,9 @@ qstr_^^^You_lost_your_fig|^^^あなたは反乱兵に倒されました！ ど�
 qstr_^^^You_have_slain_th|^^^あなたが反乱兵を血祭りにあげると、 他のオークどもは素早く持ち場に戻りました。 虫けらどもも、これでしばらくはおとなしくなるでしょう。
 qstr_You_cover_up_your_tr|あなたは自分の足跡を消し、さらに進んでいきました。
 qstr_Breaking_camp...|野営を撤収しました・・・
+; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
+; qstr_Desertion|Desertion
+; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
 qstr_You_have_left_{s1}.|あなたは{s1}を後にしました。
 qstr_You_are_entering_{s1|あなたは{s1}({s2})に入りました。
 qstr_You_are_entering_{s1}|あなたは{s1}に入りました。

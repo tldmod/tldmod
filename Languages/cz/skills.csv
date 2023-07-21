@@ -15,7 +15,7 @@ skl_surgery_desc|Kazdy bod teto dovednosti dá 4%% šanci ze smrtelně zraněný
 skl_wound_treatment|Léčba zranění
 skl_wound_treatment_desc|Léčeni skupiny je o 20%% rychlejší za každou úroveň dovednosti. (Dovednost skupiny)
 skl_inventory_management|Organizace inventáře
-skl_inventory_management_desc|Zvyšuje kapacitu inventáře o +6 za každou úroveň dovednosti. (Vůdcova dovednost)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Pozorování
 skl_spotting_desc|Skupina vidí o 10%% dál každou úroveň dovednosti. (Dovednost skupiny)
 skl_pathfinding|Hledání cest

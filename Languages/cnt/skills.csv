@@ -15,7 +15,7 @@ skl_surgery_desc|每點增加4%%的機會，使得本來會死亡的隊伍成員
 skl_wound_treatment|療傷
 skl_wound_treatment_desc|每點增加隊伍生命值回復速度20%%。 (隊伍技能)
 skl_inventory_management|物品管理
-skl_inventory_management_desc|每點增加物品欄容量+6格。 (領袖技能)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|偵察
 skl_spotting_desc|每點增加隊伍偵察範圍10%%。 (隊伍技能) 
 skl_pathfinding|尋路

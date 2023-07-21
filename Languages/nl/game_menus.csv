@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^Raar, Allemaal dreigende geluiden overal om je heen.^P
 mno_be_quiet_elf|Respecteer de haat van de bomen. Beweeg verder stil.
 mno_be_quiet|Leg de wapens neer en blijf rustig! En nu wegwezen!
 mno_be_bold|Ga door! Ik ben niet bang voor de oude planten of oude mythen!
-mno_fight_back|Laten we het uitzoeken! Zoek in de omgeving! Brand één of twee bomen plat!
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|^^^^^^Je zoekt in het donkere dikke bos maar vind niks.^ Toch voel je je waargenomen en bedreigd steeds meer krijg je het gevoel dat je bekeken word.
 menu_fangorn_killed_player_only|^^^^^^Je dwaalt in het dicht begroeide, donkere bos.^Ineens wordt je geraakt! Misschien een zware tak die op je hoofd viel? Je raakt bewusteloos voor slechts enkele minuten. Je bent wel ernstig gewond maar je kan toch verder gaan.
 mno_ow_get_out|Auw! Laten we weggaan van deze vervloekte plek!
@@ -301,6 +301,7 @@ mno_aw_chamber_door|Open de deur.
 mno_trade_with_arms_merchant|Bezoek de {s40}.
 mno_trade_with_horse_merchant|Bezoek de {s41}.
 mno_town_prison_door|Deur naar de gevangenis.
+mno_town_prison_door|Deur naar de gevangenis.
 mno_dungeon_enter|Zoek naar verloren speren in de bergen.
 mno_dungeon_enter_door|Open de deur.
 mno_dwarven_warehouse|Bezoek het Warenhuis van de Dwergen.
@@ -312,6 +313,7 @@ mno_isengard_underground_door|Ga naar de ondergrondse grotten
 mno_tirith_toplevel|Klim naar het hoogste niveau.
 mno_tirith_toplevel_door|Ga naar de Citadel
 mno_erebor_gates|Bezoek de Grote Poorten.
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|Ga weg...
 mno_town_leave_door|Verlaat het gebied
 menu_player_initiated_siege_result|Je hebt deze center aangevallen in de naam van {s2}

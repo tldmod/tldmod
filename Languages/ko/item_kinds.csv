@@ -26,7 +26,6 @@ itm_steppe_horse|초원 말
 itm_courser|군마
 itm_hunter|사냥마
 itm_pony|조랑말
-itm_arnor_warhorse|아르노르 전쟁마
 itm_dunedain_warhorse|두네다인 전쟁마
 itm_rohirrim_courser|로히림 군마
 itm_rohirrim_hunter|로히림 사냥꾼
@@ -131,21 +130,19 @@ itm_harad_javelin|하라드 투창
 itm_gondor_javelin|곤도르 투창
 itm_rohirrim_throwing_axe|북부인 투척 도끼
 itm_loss_throwing_axes|롯사르나흐 투척 도끼
-itm_arnor_helm_a|아르노르 투구
+itm_arnor_helm_c|아르노르 장식된 투구
 itm_arnor_helm_b|아르노르 투구
-itm_arnor_helm_c|아르노르 투구
-itm_dunedain_helm_b|아르노르 장식된 투구
-itm_arnor_armor_a|아르노르 갑옷
-itm_arnor_armor_b|아르노르 갑옷
-itm_arnor_armor_c|두네다인 순찰자 가죽갑옷
-itm_arnor_armor_d|두네다인 순찰자 가죽갑옷
-itm_arnor_armor_e|아르노르 강화된 조끼
-itm_arnor_armor_f|아르노르 고위 갑옷
+; itm_arnor_helm_a|Arnor Light Helm
+; itm_arnor_light_a|Dunedain Ranger Jerkin
+; itm_arnor_light_b|Dunedain Ranger Mail
+; itm_arnor_med_a|Dunedain Ranger Coat
+; itm_arnor_med_b|Dunedain Mail
+itm_arnor_heavy|아르노르 고위 갑옷
 itm_arnor_greaves|아르노르 정강이 보호대
-itm_arnor_shield_a|아르노르 방패
 itm_arnor_shield_c|아르노르 기병 방패
-itm_arnor_sword_a|아르노르 바스타드 소드
+; itm_arnor_shield_a|Arnor Round Shield
 itm_arnor_sword_c|아르노르 전쟁검
+itm_arnor_sword_a|아르노르 바스타드 소드
 itm_arnor_sword_f|아르노르 숏소드
 itm_riv_helm_a|리븐델 두건
 itm_riv_helm_b|리븐델 궁병 투구
@@ -426,18 +423,15 @@ itm_gundabad_helm_c|군다바드 투구
 itm_gundabad_helm_d|군다바드 투구
 itm_gundabad_helm_e|와르그기수 투구
 itm_dunland_wolfboots|던랜드 늑대부츠
-itm_dunland_armor_a|던랜드인 모피 갑옷
-itm_dunland_armor_b|던랜드인 모피 갑옷
-itm_dunland_armor_c|던랜드인 모피 갑옷
-itm_dunland_armor_d|던랜드인 모피 갑옷
-itm_dunland_armor_e|던랜드인 모피 갑옷
-itm_dunland_armor_g|던랜드인 모피 갑옷
-itm_dunland_armor_h|던랜드 긴 모피 갑옷
-itm_dunland_armor_i|던랜드인 사슬갑옷
-itm_dunland_armor_j|던랜드인 사슬갑옷
-itm_dunland_armor_k|던랜드 대장 갑옷
+; itm_dunland_tunic_1|Dunnish Leather Tunic
+; itm_dunland_tunic_2|Dunnish Leather Tunic
+; itm_dunland_fur_1|Dunnish Fur
+; itm_dunland_fur_2|Dunnish Fur
+itm_dunland_mail_1|던랜드인 사슬갑옷
+itm_dunland_mail_2|던랜드인 사슬갑옷
+; itm_dunland_chieftain|Dunnish Chief Armor
 itm_dun_helm_a|던랜드인 늑대 모자
-itm_dun_helm_b|던랜드인 뿔 모자
+; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|던랜드인 높은 투구
 itm_dun_helm_d|던랜드인 높은 투구
 itm_dun_helm_e|던랜드인 뿔 투구
@@ -501,11 +495,11 @@ itm_mirkwood_helm_d|초록숲 왕실 투구
 ; itm_woodelf_leather_boots|Woodelf Leather Boots
 ; itm_mirkwood_boots|Greenwood Boots
 itm_harad_tunic|하라드 튜닉
-itm_harad_padded|하론도르 패드를 덧댄 갑옷
-itm_harad_hauberk|하론도르 사슬갑옷
-itm_harad_lamellar|하라드인 갑옷
-itm_harad_heavy|하라드 고귀한 갑옷
-itm_harad_skirmisher|가벼운 하라드 의복
+; itm_harad_padded|Harad Padded Jerkin
+; itm_harad_lamellar|Harad Scale Vest
+; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_heavy|하라드인 갑옷
+; itm_harad_pectoral|Harad Breastplate
 itm_harad_archer|하라드 궁수 갑옷
 itm_black_snake_armor|마란카 갑옷
 itm_harad_champion|원하라드 의복
@@ -558,10 +552,12 @@ itm_khand_cav_helm_b|칸드 기수 투구
 itm_khand_cav_helm_c|간드 장식된 투구
 itm_khand_helm_mask|칸드 마스크
 itm_khand_light|칸드 킬트
-itm_khand_light_lam|칸드 가벼운 찰갑
-itm_khand_foot_lam|칸드 시종 갑옷
+; itm_khand_light_lam|Khand Light Footmen Armor
+; itm_khand_foot_lam|Khand Heavy Footman Armor
 itm_khand_med_lam|칸드 찰갑
 itm_khand_heavy_lam|칸드 두꺼운 찰갑
+; itm_khand_mail|Khand Mail
+itm_khand_noble_lam|칸드 귀족 갑옷
 itm_khand_axe_great|칸드 거대한 도끼
 itm_khand_axe_winged|칸드 양날 도끼
 itm_khand_halberd|칸드 할버드

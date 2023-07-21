@@ -247,6 +247,7 @@ qstr_Less_Wargs_upkeep|Warglara daha az bakım
 qstr_Light_Armor|Hafif Zırh
 qstr_Bonus_to_Strength__P|Gücü Geliştirir (Sadece oyuncu için)
 qstr_Lead_more_Orcs|Daha fazla Ork yönet
+; qstr_Can_scare_horses|Can scare horses
 qstr_+{reg1}_to_Party_Mor|Grup moraline +{reg1}
 qstr_Range:_{reg55}|Menzil: {reg55}
 qstr_Dwarves|Cüceler
@@ -764,8 +765,8 @@ qstr_Two_Nazgul_are_circl|İki Nazgul savaş alanının üstündeki gökyüzünd
 qstr_A_Nazgul_is_circling|Bir tane Nazgul  savaş alanının yukarısında daire çiziyor.
 qstr_Some_of_your_human_t|İnsan birliklerinin bir kısmı karanlıgın gölgesinde degiller. (Gece Askerleri gece cezalarından etkilenmez).
 qstr_You_are_filled_with_|Gözlerini düşmana dogru intikamla doldurdun (Çılgınlık Aktif)
-qstr_Your_mount_is_scared|Binegin  {reg73?ent:troll} Tarafından korkutuldu!
-qstr_Your_mount_is_scared_|Atın {reg73?Agaç Adam:troll} 'dan korkuyor, ama sen bunun üstesinden gelebilirsin!
+qstr_Your_mount_is_scared|Binegin {s5} Tarafından korkutuldu!
+qstr_Your_mount_is_scared_|Atın {s5} 'dan korkuyor, ama sen bunun üstesinden gelebilirsin!
 qstr_Nazgul_sweep!|Nazgul salınıyor!
 qstr_You_and_your_horse_p|Sen ve atın paniklediniz, Nazgul'un çıglıkları dayanılmaz.
 qstr_Your_horse_panics_th|Atın panikledi, Nazgul'un çıglıkları dayanılmaz.
@@ -904,8 +905,8 @@ qstr_You_are_suffering_fr|{s1} yüzünden acı çekiyorsun.
 qstr_You_are_suffering_fro|{s1} ve {s2} yüzünden acı çekiyorsun.
 qstr_You_are_suffering_from|{s1}, {s2}, ve {s3} yüzünden acı çekiyorsun.
 qstr_You_are_suffering_from_|{s1}, {s2}, {s3} ve {s4} yüzünden acı çekiyorsun.
-qstr_Weekly_upkeep_for_tr|Birliklerinin haftalık masrafı:^{reg5} Kaynak Puanı^
-qstr_{s12}^__{s4}:_{reg4}|{s12}^ {s4}: {reg4} Kaynak Puanı ({reg5})
+; qstr_Troop_upkeep__paid_e|Troop upkeep (paid every four days):^
+; qstr_{s12}^^__{s4}:_{reg8|{s12}^^  {s4}: {reg8}/{reg5} Resource Points ^Party: {reg4}^Reserves: {reg7}
 qstr_No_upkeep_costs|Bakım masrafı yok
 qstr_Orc_hiring_bonus:_+2|Ork işe alma bonusu: Her ork için +2/3
 qstr_Current_party_size_l|Grup büyüklügü limiti {reg5}.^Grup büyüklügü bileşenleri:^^Temel büyüklük:  +10^Liderlik: {s2}{reg1}^Karizma: {s3}{reg2}^Nam: {s4}{reg3}^{s5}TOPLAM:  {reg5}
@@ -1108,6 +1109,9 @@ qstr_^^^You_lost_your_fig|^^^Ayaklanmaya karşı savaşımı kaybettin! ^Orklar�
 qstr_^^^You_have_slain_th|^^^ Saldırganı öldürdün ve bunu gören diger Orklar çabucak geri çekildiler. ^ Solucanlar bir süre daha  seslerini çıkartamayacaklardır.
 qstr_You_cover_up_your_tr|İzlerini silip yoluna devam ediyorsun.
 qstr_Breaking_camp...|Kamp kaldırılıyor...
+; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
+; qstr_Desertion|Desertion
+; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
 qstr_You_have_left_{s1}.|{s1} 'dan ayrıldın 
 qstr_You_are_entering_{s1|({s2}) {s1} civarına giriyorsun.
 qstr_You_are_entering_{s1}|{s1} civarına giriyorsun.

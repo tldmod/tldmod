@@ -247,6 +247,7 @@ qstr_Less_Wargs_upkeep|減少座狼的工資
 qstr_Light_Armor|輕型鎧甲
 qstr_Bonus_to_Strength__P|力量加成(只限玩家)
 qstr_Lead_more_Orcs|領導更多半獸人
+; qstr_Can_scare_horses|Can scare horses
 qstr_+{reg1}_to_Party_Mor|隊伍士氣+{reg1}
 qstr_Range:_{reg55}|距離：{reg55}
 qstr_Dwarves|矮人
@@ -764,8 +765,8 @@ qstr_Two_Nazgul_are_circl|兩隻戒靈正在戰場上空盤旋！
 qstr_A_Nazgul_is_circling|一隻戒靈正在戰場上空盤旋！
 qstr_Some_of_your_human_t|你部分的人類部隊並不畏懼黑暗。(夜間部隊不受夜間減益的影響)
 qstr_You_are_filled_with_|你注視了敵人後充滿了憤怒(發動狂暴化)。
-qstr_Your_mount_is_scared|你的座騎被{reg73?樹人:食人妖}嚇到了！
-qstr_Your_mount_is_scared_|你的座騎被{reg73?樹人:食人妖}嚇到了，但你還能駕馭牠！
+qstr_Your_mount_is_scared|你的座騎被{s5}嚇到了！
+qstr_Your_mount_is_scared_|你的座騎被{s5}嚇到了，但你還能駕馭牠！
 qstr_Nazgul_sweep!|戒靈掃過！
 qstr_You_and_your_horse_p|戒靈的叫聲難以忍受，你和你的馬陷入恐慌！
 qstr_Your_horse_panics_th|戒靈的叫聲難以忍受，你的馬陷入恐慌！
@@ -904,8 +905,8 @@ qstr_You_are_suffering_fr|你正被{s1}折磨著。
 qstr_You_are_suffering_fro|你正被{s1}和{s2}折磨著。
 qstr_You_are_suffering_from|你正被{s1}、{s2}和{s3}折磨著。
 qstr_You_are_suffering_from_|你正被{s1}、{s2}、{s3}和{s4}折磨著。
-qstr_Weekly_upkeep_for_tr|每週部隊工資：^{reg5}資源點^
-qstr_{s12}^__{s4}:_{reg4}|{s12}^{s4}：{reg4}資源點({reg5})
+; qstr_Troop_upkeep__paid_e|Troop upkeep (paid every four days):^
+; qstr_{s12}^^__{s4}:_{reg8|{s12}^^  {s4}: {reg8}/{reg5} Resource Points ^Party: {reg4}^Reserves: {reg7}
 qstr_No_upkeep_costs|無工資費
 qstr_Orc_hiring_bonus:_+2|半獸人招募加成：每個半獸人+2/3^
 qstr_Current_party_size_l|當前隊伍大小上限是：{reg5}。 ^當前隊伍大小加權為：^^基礎大小：+10^統御：{s2}{reg1}^魅力：{s3}{reg2}^階級：{s4}{reg3}^{s5}總計：{reg5}
@@ -1108,6 +1109,9 @@ qstr_^^^You_lost_your_fig|^^^你在和叛亂者的戰鬥中失敗了！^看來�
 qstr_^^^You_have_slain_th|^^^你殺了出頭者，其他半獸人迅速的歸隊了。^短時間內蛆蟲們肯定會安分不少。
 qstr_You_cover_up_your_tr|你掩蓋了你的行蹤並繼續前進。
 qstr_Breaking_camp...|拔營...
+; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
+; qstr_Desertion|Desertion
+; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
 qstr_You_have_left_{s1}.|你離開了{s1}。
 qstr_You_are_entering_{s1|你進入了{s1}({s2})。
 qstr_You_are_entering_{s1}|你進入了{s1}。

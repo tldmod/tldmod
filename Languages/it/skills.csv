@@ -15,7 +15,7 @@ skl_surgery_desc|Ogni punto in questa abilità aumenta del 4%% la probabilità c
 skl_wound_treatment|Trattamento Ferite
 skl_wound_treatment_desc|Per ogni punto in questa abilità la velocità di guarigione dei membri della Compagnia aumenta del 20%%. (Abilità di Gruppo)
 skl_inventory_management|Gestione Inventario
-skl_inventory_management_desc|Per ogni punto in questa abilità la capacità dell'inventario viene aumentata di 6. (Abilità del Comandante)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Avvistamento
 skl_spotting_desc|Per ogni punto in questa abilità la capacità visiva della Compagnia aumenta del 10%%. (Abilità di Gruppo)
 skl_pathfinding|Orientamento

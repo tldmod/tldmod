@@ -176,7 +176,7 @@ menu_fangorn_danger|이상하게도, 위협적인 소음이 당신 주변을 온
 mno_be_quiet_elf|나무들의 증오심을 존중한다. 조용히 이동한다
 mno_be_quiet|무기를 내리고 조용히 하라! 이곳을 벗어난다!
 mno_be_bold|계속 가자! 나는 식물이나 오래된 미신같은 건 두렵지 않아!
-mno_fight_back|알아봐야겠어! 이 지역을 조사하라! 나무를 한 두 그루 정도 불태워 봐!
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|^^^^^^당신은 어둡고 빽빽한 숲을 조사했지만 아무것도 찾을 수 없었습니다.^하지만 당신은 더 많은 관찰과 위협을 느꼈습니다.
 menu_fangorn_killed_player_only|^^^^^^당신은 빽빽한, 어두운 숲을 배회했습니다.^갑자기 당신은 무언가에 얻어맞았습니다! 아마도 묵직한 가지가 당신의 머리에 떨어진 듯 한데요?^당신은 몇분간 의식을 잃었습니다. 당신은 심하게 다쳤지만 도망칠 수 있었습니다.
 mno_ow_get_out|아야! 이 저주받은 곳에서 나가자!
@@ -301,6 +301,7 @@ mno_aw_chamber_door|문 열기
 mno_trade_with_arms_merchant|무기 상인과 거래
 mno_trade_with_horse_merchant|말 상인과 거래
 mno_town_prison_door|감옥에 입장
+mno_town_prison_door|감옥에 입장
 mno_dungeon_enter|산 속에서 잃어버린 창들을 찾기
 mno_dungeon_enter_door|문 열기
 mno_dwarven_warehouse|난쟁이족 창고 방문하기
@@ -312,6 +313,7 @@ mno_isengard_underground_door|지하 동굴로 들어가기.
 mno_tirith_toplevel|꼭대기층으로 올라가기
 mno_tirith_toplevel_door|요새로 가기
 mno_erebor_gates|정문으로 가기.
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|떠나기
 mno_town_leave_door|떠나기
 menu_player_initiated_siege_result|당신은 {s2}의 깃발 아래 중심지를 공격했습니다.

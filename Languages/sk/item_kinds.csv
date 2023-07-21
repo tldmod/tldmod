@@ -26,7 +26,6 @@ itm_steppe_horse|Stepný Kôň
 itm_courser|Žrebec
 itm_hunter|Lovecký Kôň
 itm_pony|Poník
-itm_arnor_warhorse|Arnorský Vojnový Kôň
 itm_dunedain_warhorse|Dunedainský vojnový kôň
 itm_rohirrim_courser|Rohanský Žrebec
 itm_rohirrim_hunter|Rohanský Lovecký Kôň
@@ -131,21 +130,19 @@ itm_harad_javelin|Haradská vrhacia kopija
 itm_gondor_javelin|Gondorská vrhacia kopija
 itm_rohirrim_throwing_axe|Severanské vrhacie sekery
 itm_loss_throwing_axes|Lossarnachské vrhacie sekery
-itm_arnor_helm_a|Arnorská helma
+itm_arnor_helm_c|Arnorská zdobená helma
 itm_arnor_helm_b|Arnorská helma
-itm_arnor_helm_c|Arnorská helma
-itm_dunedain_helm_b|Arnorská zdobená helma
-itm_arnor_armor_a|Arnorské brnenie
-itm_arnor_armor_b|Arnorské brnenie
-itm_arnor_armor_c|Dunedainský lovecký kožuch
-itm_arnor_armor_d|Dunedainský lovecký kožuch
-itm_arnor_armor_e|Arnorská vystužená vesta
-itm_arnor_armor_f|Arnorské šlachtické brnenie
+; itm_arnor_helm_a|Arnor Light Helm
+; itm_arnor_light_a|Dunedain Ranger Jerkin
+; itm_arnor_light_b|Dunedain Ranger Mail
+; itm_arnor_med_a|Dunedain Ranger Coat
+; itm_arnor_med_b|Dunedain Mail
+itm_arnor_heavy|Arnorské šlachtické brnenie
 itm_arnor_greaves|Arnorské holenice
-itm_arnor_shield_a|Arnorský štít
 itm_arnor_shield_c|Arnorský jazdecký štít
-itm_arnor_sword_a|Arnorský meč Bastard
+; itm_arnor_shield_a|Arnor Round Shield
 ; itm_arnor_sword_c|Arnor War Sword
+itm_arnor_sword_a|Arnorský meč Bastard
 itm_arnor_sword_f|Arnosrký krátky meč
 itm_riv_helm_a|Roklinská čiapka
 itm_riv_helm_b|Roklinský lukostrelecká helma
@@ -426,18 +423,15 @@ itm_gundabad_helm_c|Gundabadská helma
 itm_gundabad_helm_d|Gundabadská helma
 itm_gundabad_helm_e|Helma vročieho jazdca
 itm_dunland_wolfboots|Vrchovecké vĺčie topánky
-itm_dunland_armor_a|Vrchovecké kožušinové brnenie
-itm_dunland_armor_b|Vrchovecké kožušinové brnenie
-itm_dunland_armor_c|Vrchovecké kožušinové brnenie
-itm_dunland_armor_d|Vrchovecké kožušinové brnenie
-itm_dunland_armor_e|Vrchovecké kožušinové brnenie
-itm_dunland_armor_g|Vrchovecké kožušinové brnenie
-itm_dunland_armor_h|Vrchovecké dlhé kožušinové brnenie
-itm_dunland_armor_i|Vrchovecká krúžková zbroj
-itm_dunland_armor_j|Vrchovecká krúžková zbroj
-itm_dunland_armor_k|Vrchovecké náčelnícke brnenie
+; itm_dunland_tunic_1|Dunnish Leather Tunic
+; itm_dunland_tunic_2|Dunnish Leather Tunic
+; itm_dunland_fur_1|Dunnish Fur
+; itm_dunland_fur_2|Dunnish Fur
+itm_dunland_mail_1|Vrchovecká krúžková zbroj
+itm_dunland_mail_2|Vrchovecká krúžková zbroj
+; itm_dunland_chieftain|Dunnish Chief Armor
 itm_dun_helm_a|VRchovecká vlčia čiapka
-itm_dun_helm_b|Vrchovecká čapica z rohoviny
+; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|Vrchovecká vysoká prilba
 itm_dun_helm_d|Vrchovecká vysoká prilba
 itm_dun_helm_e|Vrchovecká parohatá prilba
@@ -501,11 +495,11 @@ itm_mirkwood_helm_d|Temnohvozdská kráľovská prilba
 ; itm_woodelf_leather_boots|Woodelf Leather Boots
 ; itm_mirkwood_boots|Greenwood Boots
 itm_harad_tunic|Haradská tunika
-itm_harad_padded|Harondorské vystužené brnenie
-itm_harad_hauberk|Harondorská krúžková zbroj
-itm_harad_lamellar|Harasjalské brnenie
-itm_harad_heavy|Haradské šľachtické brnenie
-itm_harad_skirmisher|Ľahký haradský odev
+; itm_harad_padded|Harad Padded Jerkin
+; itm_harad_lamellar|Harad Scale Vest
+; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_heavy|Harasjalské brnenie
+; itm_harad_pectoral|Harad Breastplate
 itm_harad_archer|Haradské lukostrelecké brnenie
 itm_black_snake_armor|Marankské brnenie
 itm_harad_champion|Odev Ďalekého Haradu
@@ -558,10 +552,12 @@ itm_khand_cav_helm_b|Khandská jazdecká prilba
 itm_khand_cav_helm_c|Khandská zdobená helma
 itm_khand_helm_mask|Khandská maska
 itm_khand_light|Khandský šorc
-itm_khand_light_lam|Khandské ľahké lamelové brnenie
-itm_khand_foot_lam|Khandské pešiacké brnenie
+; itm_khand_light_lam|Khand Light Footmen Armor
+; itm_khand_foot_lam|Khand Heavy Footman Armor
 itm_khand_med_lam|Khandské stredné lamelové brnenie
 itm_khand_heavy_lam|Khandské ťažké lamelové brnenie
+; itm_khand_mail|Khand Mail
+itm_khand_noble_lam|Khandské šľachtické brnenie
 itm_khand_axe_great|Khandská veľká sekera
 itm_khand_axe_winged|Khandská okrídlená sekera
 itm_khand_halberd|Khandská halapartňa

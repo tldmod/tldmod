@@ -15,7 +15,7 @@ skl_surgery_desc|Svaki poen ovog skila dodaje 4%% sanse da ce vas vojnik koji je
 skl_wound_treatment|Lecenje rana.
 skl_wound_treatment_desc|Grupno lecenje je povecano za 20%% po skilu. (Grupni skil)
 skl_inventory_management|Upravljanje Zalihama
-skl_inventory_management_desc|Povecava kapacitet zaliha za +6 po levelu (Vodjin skil)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Osmatranje
 skl_spotting_desc|Grupna vidljivost je povecana za 10%% po levelu. (Grpuni skil)
 skl_pathfinding|Pronalazenje Puta

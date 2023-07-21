@@ -15,7 +15,7 @@ skl_surgery_desc|ทุกเวลเวลของสกิลจะเพิ
 skl_wound_treatment|การดูแลรักษาบาดแผล
 skl_wound_treatment_desc|อัตราการฟื้นฟูของกองทัพเพิ่มขึ้น 20%% ต่อเลเวลของสกิล (สกิลที่ส่งผลทั้งกองทัพ)
 skl_inventory_management|การจัดการช่องเก็บของ
-skl_inventory_management_desc|เพิ่มช่องเก็บของ +6 ช่องต่อเลเวลสกิล (สกิลสำหรับผู้นำกองทัพ)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|การสังเกต
 skl_spotting_desc|เพิ่มระยะการมองเห็นของกองทัพ 10%% ต่อเลเวลสกิล (สกิลที่ส่งผลทั้งกองทัพ)
 skl_pathfinding|การสำรวจเส้นทาง

@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^Furcsa, fenyegető zajokat hallasz.^A fák beszélnek 
 mno_be_quiet_elf|Tiszteld a fák gyűlőletét. Menj tovább csendben!
 mno_be_quiet|Tedd el a fegyvereket és maradj csöndben! Most pedig tűnés innen!
 mno_be_bold|Gyerünk! Nem félek holmi növényektől vagy régi mende-mondáktól!
-mno_fight_back|Járjunk utána! Kutassátok át területet! Égessünk fel egy-két fát!
+; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
 menu_fangorn_search_fails|^^^^^^Átkutatod a sötét, sűrű erdőt, de semmit sem találsz.^Mégis úgy érzed, valaki figyel, és egyre jobban fenyegetve érzed magad.
 menu_fangorn_killed_player_only|^^^^^^A sűrű, sötét erdőben vándorolsz.^Hirtelen valami megüt. Talán egy nehéz ág esett a fejedre?^Csupán néhány percig maradsz eszméletlen.Súlyosan megsérültél, de folytathatod utadat.
 mno_ow_get_out|Ááuu! Tűnjünk el erről az átkozott helyről!
@@ -301,6 +301,7 @@ mno_aw_chamber_door|Nyisd ki az ajtót.
 mno_trade_with_arms_merchant|Látogasd meg a {s40}ot.
 mno_trade_with_horse_merchant|Meglátogatod a {s41}t.
 mno_town_prison_door|A tömlöcbe vezető ajtó.
+mno_town_prison_door|A tömlöcbe vezető ajtó.
 mno_dungeon_enter|A hegyekben keresd az elveszett lándzsát.
 mno_dungeon_enter_door|Nyisd ki az ajtót.
 mno_dwarven_warehouse|Látogasd meg a Törp Raktárat
@@ -312,6 +313,7 @@ mno_isengard_underground_door|Menj a földalatti barlangokba
 mno_tirith_toplevel|Mássz fel a legfelső szintre.
 ; mno_tirith_toplevel_door|Go to the Citadel
 mno_erebor_gates|Nézd meg a Nagy Kapukat.
+; mno_erebor_gates_door|Go to the Great Gates
 mno_town_leave|Távozás...
 mno_town_leave_door|Helyszín elhagyása
 menu_player_initiated_siege_result|Megtámadtad ezt a központot {s2} zászlaja alatt.
