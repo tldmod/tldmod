@@ -1409,7 +1409,7 @@ scene_props = [
 ("gondor_citadel_side_building_3",0,"gondor_citadel_side_building_3","bo_gondor_citadel_side_building_3", []),
   ("gondor_citadel_side_building_3_E",0,"gondor_citadel_side_building_3","0", []),
 ("gondor_citadel_tower",0,"gondor_citadel_tower","bo_gondor_citadel_tower", []),
-  ("gondor_citadel_tower_E",0,"gondor_citadel_tower","0", []),
+  ("gondor_citadel_tower_E",0,"gondor_citadel_tower_lod","0", []),
 ("gondor_citadel_tree",0,"gondor_citadel_tree","bo_gondor_citadel_tree", []),
   ("gondor_citadel_tree_E",0,"gondor_citadel_tree","0", []),
   

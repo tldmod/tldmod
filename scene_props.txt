@@ -2600,7 +2600,7 @@ spr_gondor_citadel_side_building_3_E 0 0 gondor_citadel_side_building_3 0 0
 spr_gondor_citadel_tower 0 0 gondor_citadel_tower bo_gondor_citadel_tower 0
 
 
-spr_gondor_citadel_tower_E 0 0 gondor_citadel_tower 0 0
+spr_gondor_citadel_tower_E 0 0 gondor_citadel_tower_lod 0 0
 
 
 spr_gondor_citadel_tree 0 0 gondor_citadel_tree bo_gondor_citadel_tree 0
