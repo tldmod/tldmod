@@ -18340,19 +18340,20 @@ scripts = [
 # Input: arg1 = troop_no
 # Output: none (can fail)
 ("cf_check_hero_can_escape_from_player",
-    [   #(store_script_param_1, ":troop_no"),
-        # (assign, ":quest_target", 0),
-        # (try_begin),
-          # (check_quest_active, "qst_persuade_lords_to_make_peace"),
-          # (this_or_next|quest_slot_eq, "qst_persuade_lords_to_make_peace", slot_quest_target_troop, ":troop_no"),
-          # (quest_slot_eq, "qst_persuade_lords_to_make_peace", slot_quest_object_troop, ":troop_no"),
-          # (assign, ":quest_target", 1),
-        # (try_end),
-        # (eq, ":quest_target", 0),
+    [   (store_script_param_1, ":troop_no"),
         
-        (assign, ":always_capture", 0),
-        (try_begin),
+        (assign, ":can_capture", 0),
+               
+        (try_begin), 
           (check_quest_active, "qst_capture_enemy_hero"),
+          (assign, ":can_capture", 1),
+        (try_end),
+ 
+        (try_begin), #can't capture faction leaders
+            (store_troop_faction, ":faction_no", ":troop_no"),
+            (faction_slot_eq, ":faction_no", slot_faction_leader, ":troop_no"),
+            (assign, ":can_capture", 0),
+        (else_try), #can't capture more than one        
           (assign, ":has_prisoner", 0),
           (party_get_num_prisoner_stacks, ":num_stacks", "p_main_party"),
           (try_for_range, ":i_stack", 0, ":num_stacks"),
@@ -18362,12 +18363,17 @@ scripts = [
             (assign, ":has_prisoner", 1),
           (try_end),
           (eq, ":has_prisoner", 0),
-          (assign, ":always_capture", 1),
+          (assign, ":can_capture", 0),
         (try_end),
-        (eq, ":always_capture", 0),
+        
+        (eq, ":can_capture", 1),   
+        (party_get_skill_level, ":prs_management", "p_main_party", "skl_prisoner_management"),
+        (val_mul, ":prs_management", 7),
         
         (store_random_in_range, ":rand", 0, 100),
-        (lt, ":rand", hero_escape_after_defeat_chance),
+        (val_add, ":rand", ":prs_management"),
+        (lt, ":rand", 80),
+        #(lt, ":rand", hero_escape_after_defeat_chance),
 ]),
 
 # script_cf_party_remove_random_regular_troop

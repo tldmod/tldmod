@@ -2600,6 +2600,16 @@ simple_triggers = [
             (eq, ":defeated_lord_faction", ":cur_kingdom"),
             (troop_set_slot, ":defeated_lord", slot_troop_occupation, 0),
           (try_end),
+
+         #remove any prisoner lords from defeated faction
+         (party_get_num_prisoner_stacks, ":num_stacks", "p_main_party"),
+         (try_for_range, ":i_stack", 0, ":num_stacks"),
+           (party_prisoner_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
+           (troop_is_hero, ":stack_troop"),
+           (store_troop_faction, ":stack_faction", ":stack_troop"),
+           (eq, ":cur_kingdom", ":stack_faction"),
+           (party_remove_prisoners, "p_main_party",  ":stack_troop", 1),
+         (try_end),
           
           # check if all good factions are defeated, to start the eye-hand war
           (try_begin), #check wott
