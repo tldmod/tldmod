@@ -6,7 +6,7 @@ MODE CON: COLS=110
 luajit tx.lua convert
 
 ::push our latest strings to the web
-::tx push --source --resources tld.info_pages --use-git-timestamps
+::tx push --source --resources tld.item_kinds,tld.troops --use-git-timestamps
 ::tx push -s -t -f --skip --no-interactive
 ::tx push -s -t -f --skip --no-interactive
 ::tx push -t -l sv --skip --no-interactive
