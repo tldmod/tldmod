@@ -3945,6 +3945,7 @@ scripts = [
       (assign, ":limit", 0),
       (store_skill_level, ":skill", "skl_prisoner_management", "trp_player"),
       (store_mul, ":limit", ":skill", 5),
+      (val_add, ":limit", 5),
       (assign, reg0, ":limit"),
       (set_trigger_result, reg0),
 ]),
@@ -5736,15 +5737,39 @@ scripts = [
         (party_stack_get_troop_id,     ":stack_troop",":source_party",":stack_no"),
         (this_or_next|neg|troop_is_hero, ":stack_troop"),
         (eq, "$g_move_heroes", 1),
+        
         (troop_get_type,":race",":stack_troop"),
-        (neq,":race",tf_orc),        ## TLD good guys finish all orcs, evil guys finish all elves, GA
-        (neq,":race",tf_uruk),
-        (neq,":race",tf_urukhai),
         (neq,":race",tf_troll),
-        (neq,":race",tf_lorien),
-        (neq,":race",tf_imladris),
-        (neq,":race",tf_woodelf),
+        (assign, ":can_capture", 1),
+        
+        (try_begin),            
+            (this_or_next|eq,":race",tf_orc),        ## TLD good guys finish all orcs, evil guys finish all elves, GA
+            (this_or_next|eq,":race",tf_uruk), 
+            (this_or_next|eq,":race",tf_urukhai),
+            (this_or_next|eq,":race",tf_lorien),
+            (this_or_next|eq,":race",tf_imladris),
+            (eq,":race",tf_woodelf),
+            (assign, ":can_capture", 0),
+            (try_begin),    #except if player party is involved and capture prisoners quest active
+                (eq, ":source_party", "p_collective_enemy"),
+                (check_quest_active, "qst_capture_prisoners"),
+                (assign, ":can_capture", 1),
+            (try_end),
+        (try_end),
+        
+        (eq, ":can_capture", 1),
         (party_stack_get_size, ":stack_size",":source_party",":stack_no"),
+        
+        (try_begin),
+            (eq, ":source_party", "p_collective_enemy"), #player party involved? Scale prisoners with prisoner management       
+            (party_get_skill_level, ":prs_management", "p_main_party", "skl_prisoner_management"),
+            (val_mul, ":prs_management", ":stack_size"),
+            (val_div, ":prs_management", 20),
+            (val_add, ":stack_size", 1),
+            (store_random_in_range, ":stack_size_new", ":prs_management", ":stack_size"),
+            (assign, ":stack_size", ":stack_size_new"),
+        (try_end),
+       
         (party_add_prisoners, ":target_party", ":stack_troop", ":stack_size"),
       (try_end),
 ]),
@@ -18339,15 +18364,15 @@ scripts = [
 # script_cf_check_hero_can_escape_from_player
 # Input: arg1 = troop_no
 # Output: none (can fail)
-("cf_check_hero_can_escape_from_player",
+("cf_check_hero_can_escape_from_player", #InVain: Invert order of this check, now we check if they can be captured, not if they can escape
     [   (store_script_param_1, ":troop_no"),
-        
-        (assign, ":can_capture", 0),
+        (check_quest_active, "qst_capture_enemy_hero"),
+        (assign, ":can_capture", 1),
                
-        (try_begin), 
-          (check_quest_active, "qst_capture_enemy_hero"),
-          (assign, ":can_capture", 1),
-        (try_end),
+        # (try_begin), 
+          # (check_quest_active, "qst_capture_enemy_hero"),
+          # (assign, ":can_capture", 1),
+        # (try_end),
  
         (try_begin), #can't capture faction leaders
             (store_troop_faction, ":faction_no", ":troop_no"),
@@ -18362,7 +18387,7 @@ scripts = [
             (troop_slot_eq, ":stack_troop", slot_troop_occupation, slto_kingdom_hero),
             (assign, ":has_prisoner", 1),
           (try_end),
-          (eq, ":has_prisoner", 0),
+          (eq, ":has_prisoner", 1),
           (assign, ":can_capture", 0),
         (try_end),
         
@@ -18372,7 +18397,7 @@ scripts = [
         
         (store_random_in_range, ":rand", 0, 100),
         (val_add, ":rand", ":prs_management"),
-        (lt, ":rand", 80),
+        (gt, ":rand", 90),
         #(lt, ":rand", hero_escape_after_defeat_chance),
 ]),
 

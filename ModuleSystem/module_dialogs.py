@@ -2262,7 +2262,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone,"defeat_lord_answer_1", [], "I am at your mercy.", "close_window", [(call_script,"script_stand_back"),]],
 
-[anyone|plyr,"defeat_lord_answer", [], "You have fought well. You are free to go.", "defeat_lord_answer_2",
+[anyone|plyr,"defeat_lord_answer", [(eq, 1, 0)], "You have fought well. You are free to go.", "defeat_lord_answer_2", #never!
    [#(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),
     #(call_script, "script_change_player_honor", 3),
     (call_script, "script_add_log_entry", logent_lord_defeated_but_let_go_by_player, "trp_player",  -1, "$g_talk_troop", "$g_talk_troop_faction")]],

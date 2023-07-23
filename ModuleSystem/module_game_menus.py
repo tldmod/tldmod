@@ -4558,7 +4558,7 @@ game_menus = [
   ],[
 	("just_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
-	("qst_mirkwood_sorcerer",[],"sea_battle",[(assign,"$cheat_imposed_quest","qst_blank_quest_03")]),
+	("qst_capture_prisoners",[],"qst_capture_prisoners",[(assign,"$cheat_imposed_quest","qst_capture_prisoners")]),
 	("cheat_kill_faction_quest",[],"Kill GuildMaster Bandit Quest",[(assign,"$cheat_imposed_quest","qst_blank_quest_17")]),
 	("cheat_raise_troops",[],"Raise Troops",[(assign,"$cheat_imposed_quest","qst_raise_troops")]),
 	("cheat_defend_refugees",[],"Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
@@ -6065,17 +6065,19 @@ game_menus = [
             (store_current_day, ":day_of_defeat"),
             (troop_set_slot, ":stack_troop", slot_troop_respawn_timer, ":day_of_defeat"),
 
-            (try_begin),
+            (try_begin), #InVain: Invert order of this check, now we check if they can be captured, not if they can escape
               (call_script, "script_cf_check_hero_can_escape_from_player", ":stack_troop"),
+              # (troop_set_slot, ":stack_troop", slot_troop_prisoner_of_party, "p_main_party"),
+              # (party_force_add_prisoners, "p_main_party", ":stack_troop", 1),#take prisoner
+              (assign, "$talk_context", tc_hero_defeated),
+              (call_script, "script_setup_troop_meeting",":stack_troop", ":stack_troop_dna"),
+              (assign, ":done", 1),              
+            (else_try),
               (str_store_troop_name, s1, ":stack_troop"),
               (str_store_faction_name, s3, ":defeated_faction"),
               (str_store_string, s17, "@{s1} of {s3} managed to escape."),
               (display_log_message, "@{s17}"),
               (jump_to_menu, "mnu_enemy_slipped_away"),
-              (assign, ":done", 1),
-            (else_try),
-              (assign, "$talk_context", tc_hero_defeated),
-              (call_script, "script_setup_troop_meeting",":stack_troop", ":stack_troop_dna"),
               (assign, ":done", 1),
             (try_end),
           (try_end),

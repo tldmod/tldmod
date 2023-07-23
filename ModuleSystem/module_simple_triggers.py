@@ -157,7 +157,7 @@ simple_triggers = [
 
   ]),
   # (9)
-  (4.15,[ #unpaid troops leaving and desertion
+  (4.15,[ #unpaid troops leaving, desertion, prisoners escape
     (try_begin),
         (store_random_in_range, ":dieroll", 1,101), (lt,":dieroll",10),
         (call_script, "script_make_unpaid_troop_go"),
@@ -180,6 +180,10 @@ simple_triggers = [
                 (display_message, "@{s1} has deserted from your party."),
             (try_end),
         (try_end),
+        
+        #prisoners escape
+        
+        
     (try_end),        
   ]),
   
@@ -865,8 +869,15 @@ simple_triggers = [
   ]),
   
   # (29) Check escape chances of hero prisoners.
-  (48,[  (call_script, "script_randomly_make_prisoner_heroes_escape_from_party", "p_main_party", 50),
-      (try_for_range, ":center_no", centers_begin, centers_end),
+  (24,[  
+      (assign, ":hero_escape_chance", 210), #player party, scale chance with prisoner management
+      (party_get_skill_level, ":prs_management", "p_main_party", "skl_prisoner_management"),
+      (val_mul, ":prs_management", 20),
+      (val_sub, ":hero_escape_chance", ":prs_management"),
+      (assign, reg78, ":hero_escape_chance"),
+      (call_script, "script_randomly_make_prisoner_heroes_escape_from_party", "p_main_party", ":hero_escape_chance"),
+      
+      (try_for_range, ":center_no", centers_begin, centers_end), #towns, maybe unneeded in TLD?
         ##         (party_slot_eq, ":center_no", slot_town_lord, "trp_player"),
         (party_is_active, ":center_no"), #TLD
         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
