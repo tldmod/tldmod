@@ -182,8 +182,33 @@ simple_triggers = [
         (try_end),
         
         #prisoners escape
+        (party_get_skill_level, ":prs_management", "p_main_party", "skl_prisoner_management"),
+        (party_get_num_prisoners, ":num_prisoners", "p_main_party"),
+        (call_script, "script_game_get_party_prisoner_limit"),
+        (assign, ":max_prisoners", reg0),
         
-        
+        (store_mul, ":chance", ":num_prisoners", 50),
+        (val_div, ":chance", ":max_prisoners"),
+
+        (try_begin),
+            (party_get_num_companions, ":num_companions", "p_main_party"),
+            (gt, ":num_prisoners", ":num_companions"),
+            (val_mul, ":chance", ":num_prisoners"),
+            (val_div, ":chance", ":num_companions"),
+            (display_message, "@You don't have enough troops to guard all your prisoners. Their chance of escaping is increased."),
+            #(dialog_box, "@You don't have enough troops to guard all your prisoners. Their chance of escaping is increased.", "@Too many prisoners"),
+        (try_end),
+
+
+        (gt, ":num_prisoners", ":prs_management"),
+        (store_random_in_range, ":rolls", ":prs_management", ":num_prisoners"),
+        (try_for_range, ":unused", 0, ":rolls"),
+            (store_random_in_range, ":rand", 0, 1000),
+            (lt, ":rand", ":chance"),
+            (call_script, "script_cf_party_remove_random_prisoner", "p_main_party"),
+            (str_store_troop_name, s1, reg0),
+            (display_message, "@{s1} has escaped from your party."),
+        (try_end),
     (try_end),        
   ]),
   

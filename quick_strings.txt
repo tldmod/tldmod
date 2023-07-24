@@ -1,4 +1,4 @@
-1728
+1730
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1133,6 +1133,8 @@ qstr_Breaking_camp... Breaking_camp...
 qstr_Party_morale_is_low. Party_morale_is_low._Troops_desert_from_your_party.
 qstr_Desertion Desertion
 qstr_{s1}_has_deserted_fr {s1}_has_deserted_from_your_party.
+qstr_You_don_t_have_enoug You_don't_have_enough_troops_to_guard_all_your_prisoners._Their_chance_of_escaping_is_increased.
+qstr_{s1}_has_escaped_fro {s1}_has_escaped_from_your_party.
 qstr_You_have_left_{s1}. You_have_left_{s1}.
 qstr_You_are_entering_{s1 You_are_entering_{s1}_({s2}).
 qstr_You_are_entering_{s1} You_are_entering_{s1}.

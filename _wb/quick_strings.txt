@@ -1,4 +1,4 @@
-1969
+1971
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_604_wb__dev_^_B _rev_604_wb_|_dev_^_Built_2023-07-09_12:08___
+qstr__rev_618_wb__dev_^_B _rev_618_wb_|_dev_^_Built_2023-07-24_17:48___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1349,6 +1349,8 @@ qstr_Breaking_camp... Breaking_camp...
 qstr_Party_morale_is_low. Party_morale_is_low._Troops_desert_from_your_party.
 qstr_Desertion Desertion
 qstr_{s1}_has_deserted_fr {s1}_has_deserted_from_your_party.
+qstr_You_don_t_have_enoug You_don't_have_enough_troops_to_guard_all_your_prisoners._Their_chance_of_escaping_is_increased.
+qstr_{s1}_has_escaped_fro {s1}_has_escaped_from_your_party.
 qstr_You_have_left_{s1}. You_have_left_{s1}.
 qstr_You_are_entering_{s1 You_are_entering_{s1}_({s2}).
 qstr_You_are_entering_{s1} You_are_entering_{s1}.
