@@ -9775,6 +9775,8 @@ scripts = [
       (store_faction_of_party, ":old_faction", ":center_no"),
       (party_set_slot, ":center_no", slot_center_ex_faction, ":old_faction"),
       (party_set_faction, ":center_no", ":faction_no"),
+      
+      (call_script,"script_cancel_all_related_center_quest",":center_no"),
 
       ## Not needed in TLD  - Kham
       #(try_begin),
@@ -28052,6 +28054,20 @@ command_cursor_scripts = [
        (party_remove_prisoners, ":party_no", ":stack_troop", 1),
        (assign, reg0, ":stack_troop"),
      (try_end),
+]),
+
+#script_cancel_all_related_center_quest
+# INPUT: arg1 = party_no
+("cancel_all_related_center_quest",
+    [(store_script_param, ":center", 1),
+    (party_get_slot, ":mayor", ":center", slot_town_elder),
+    (try_for_range, ":quest", mayor_quests_begin, mayor_quests_end_2),
+        (this_or_next|quest_slot_eq, ":quest", slot_quest_target_center, ":center"),
+        (this_or_next|quest_slot_eq, ":quest", slot_quest_giver_center, ":center"),
+        (this_or_next|quest_slot_eq, ":quest", slot_quest_object_center, ":center"),
+        (quest_slot_eq, ":quest", slot_quest_giver_troop, ":mayor"),
+        (call_script, "script_cancel_quest"),
+    (try_end),
 ]),
 
 ]

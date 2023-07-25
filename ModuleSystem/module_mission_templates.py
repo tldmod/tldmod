@@ -2231,7 +2231,8 @@ mission_templates = [ # not used in game
         (replace_scene_props, "spr_troop_messenger", "spr_empty"),	
         (replace_scene_props, "spr_troop_archer", "spr_empty"),	
         (replace_scene_props, "spr_troop_rider", "spr_empty"),	
-        (replace_scene_props, "spr_troop_civilian_walker", "spr_empty"),	
+        (replace_scene_props, "spr_troop_civilian_walker", "spr_empty"),
+        (replace_scene_props, "spr_troop_messenger", "spr_empty"),	
       ]),
  
       common_inventory_not_available,       
@@ -2309,6 +2310,7 @@ mission_templates = [ # not used in game
             (replace_scene_props, "spr_troop_archer", "spr_empty"),	
             (replace_scene_props, "spr_troop_rider", "spr_empty"),	
             (replace_scene_props, "spr_troop_civilian_walker", "spr_empty"),
+            (replace_scene_props, "spr_troop_messenger", "spr_empty"),
 			]),
 	common_inventory_not_available,
 	(ti_tab_pressed  , 0, 0,[(display_message, "@Cannot leave now.")], []),

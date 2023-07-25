@@ -3018,6 +3018,7 @@ ai_scripts = [
 	(store_faction_of_party, ":center_faction", ":center"),
 
     (party_set_slot, ":center", slot_center_is_besieged_by, -1),
+    (call_script,"script_cancel_all_related_center_quest",":center"),
     
     # first remove any volunteers
     (call_script,"script_delete_volunteers_party",":center"),
