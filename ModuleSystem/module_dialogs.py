@@ -6746,9 +6746,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   "Thank you, {playername}. Now go, quickly!","close_window",[
       (quest_get_slot, ":quest_giver_center", "$random_quest_no", slot_quest_giver_center),
       (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
-      (set_spawn_radius, 10),
-      (spawn_around_party,":quest_giver_center",":quest_target_party_template"),
-      (assign, "$qst_defend_village_party", reg0),
+      # (set_spawn_radius, 10),
+      # (spawn_around_party,":quest_giver_center",":quest_target_party_template"),
+      # (assign, "$qst_defend_village_party", reg0),
+        (call_script,"script_cf_spawn_around_party_on_walkable_terrain",":quest_giver_center",":quest_target_party_template",10),
+        (assign,"$qst_defend_village_party",reg0),
+        (call_script, "script_move_party_to_hardcoded_locations", "$qst_defend_village_party"), #Checks if party needs to be moved.      
       (str_store_party_name, s1, ":quest_giver_center"),
       (quest_get_slot, reg3, "$random_quest_no", slot_quest_expiration_days),
       (str_store_troop_name_link,s9,"$g_talk_troop"),
@@ -6815,9 +6818,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       [
       (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
       (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
-      (set_spawn_radius, 15),
-      (spawn_around_party,":quest_target_center",":quest_target_party_template"),
-      (assign, "$qst_raid_village_party", reg0),
+      # (set_spawn_radius, 15),
+      # (spawn_around_party,":quest_target_center",":quest_target_party_template"),
+      # (assign, "$qst_raid_village_party", reg0),
+        (call_script,"script_cf_spawn_around_party_on_walkable_terrain",":quest_target_center",":quest_target_party_template",15),
+        (assign,"$qst_raid_village_party",reg0),
+        (call_script, "script_move_party_to_hardcoded_locations", "$qst_raid_village_party"), #Checks if party needs to be moved.         
       (str_store_party_name, s1, ":quest_target_center"),
       (quest_get_slot, reg3, "$random_quest_no", slot_quest_expiration_days),
       (str_store_troop_name_link,s9,"$g_talk_troop"),

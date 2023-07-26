@@ -4558,7 +4558,7 @@ game_menus = [
   ],[
 	("just_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
-	("qst_capture_prisoners",[],"qst_capture_prisoners",[(assign,"$cheat_imposed_quest","qst_capture_prisoners")]),
+	("qst_defend_village",[],"qst_defend_village",[(assign,"$cheat_imposed_quest","qst_defend_village")]),
 	("cheat_kill_faction_quest",[],"Kill GuildMaster Bandit Quest",[(assign,"$cheat_imposed_quest","qst_blank_quest_17")]),
 	("cheat_raise_troops",[],"Raise Troops",[(assign,"$cheat_imposed_quest","qst_raise_troops")]),
 	("cheat_defend_refugees",[],"Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
