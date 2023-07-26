@@ -392,24 +392,24 @@ trp_ac6_riv_knight|Cavaliere di Imladris
 trp_ac6_riv_knight_pl|Cavalieri di Imladris
 trp_i6_rivendell_standard_bearer|Portastendardo di Gran Burrone
 trp_i6_rivendell_standard_bearer_pl|Portastendardi di Gran Burrone
-trp_a1_arnor_scout|Esploratore Dunedain
-trp_a1_arnor_scout_pl|Esploratori Dunedain
-trp_a2_arnor_vet_scout|Inseguitore Dunedain
-trp_a2_arnor_vet_scout_pl|Inseguitori Dunedain
-trp_i3_arnor_swordsman|Spadaccino Dunedain
-trp_i3_arnor_swordsman_pl|Spadaccini Dunedain
-trp_i4_arnor_vet_swordsman|Spadaccino Veterano Dunedain
-trp_i4_arnor_vet_swordsman_pl|Spadaccini Veterani Dunedain
+trp_a1_arnor_scout|Esploratore Dúnedain
+trp_a1_arnor_scout_pl|Esploratori Dúnedain
+trp_a2_arnor_vet_scout|Inseguitore Dúnedain
+trp_a2_arnor_vet_scout_pl|Inseguitori Dúnedain
+trp_i3_arnor_swordsman|Spadaccino Dúnedain
+trp_i3_arnor_swordsman_pl|Spadaccini Dúnedain
+trp_i4_arnor_vet_swordsman|Spadaccino Veterano Dúnedain
+trp_i4_arnor_vet_swordsman_pl|Spadaccini Veterani Dúnedain
 trp_i5_arnor_champion|Campione di Arnor
 trp_i5_arnor_champion_pl|Campioni di Arnor
-trp_c4_arnor_horseman|Cavallerizzo Dunedain
-trp_c4_arnor_horseman_pl|Cavallerizzi Dunedain
+trp_c4_arnor_horseman|Cavallerizzo Dúnedain
+trp_c4_arnor_horseman_pl|Cavallerizzi Dúnedain
 trp_c5_arnor_knight|Cavaliere di Arnor
 trp_c5_arnor_knight_pl|Cavalieri di Arnor
-trp_a3_arnor_ranger|Ramingo Dunedain
-trp_a3_arnor_ranger_pl|Raminghi Dunedain
-trp_a4_arnor_vet_ranger|Ramingo Dunedain Veterano
-trp_a4_arnor_vet_ranger_pl|Raminghi Dunedain Veterani
+trp_a3_arnor_ranger|Ramingo Dúnedain
+trp_a3_arnor_ranger_pl|Raminghi Dúnedain
+trp_a4_arnor_vet_ranger|Ramingo Dúnedain Veterano
+trp_a4_arnor_vet_ranger_pl|Raminghi Dúnedain Veterani
 trp_a5_arnor_master_ranger|Mastro Ramingo di Arnor
 trp_a5_arnor_master_ranger_pl|Mastri Raminghi di Arnor
 trp_i1_rohan_youth|Giovane di Rohan
@@ -1642,5 +1642,5 @@ trp_a4_dism_veteran_skirmisher_of_rohan|Schermagliatore Veterano di Rohan
 trp_a4_dism_veteran_skirmisher_of_rohan_pl|Schermagliatori Veterani di Rohan
 trp_a5_dism_elite_skirmisher_of_rohan|Schermagliatore d'Élite di Rohan
 trp_a5_dism_elite_skirmisher_of_rohan_pl|Schermagliatori d'Élite di Rohan
-; trp_ac5_camel_rider|Harad Camel Rider
-; trp_ac5_camel_rider_pl|Harad Camel Riders
+trp_ac5_camel_rider|Cavaliere Cammellato di Harad
+trp_ac5_camel_rider_pl|Cavalieri Cammellati di Harad

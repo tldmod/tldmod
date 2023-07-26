@@ -15,7 +15,7 @@ skl_surgery_desc|Jeder Punkt dieser Fähigkeit ermöglicht eine 4%% Chance, dass
 skl_wound_treatment|Wundheilung
 skl_wound_treatment_desc|Die Heilungsgeschwindigkeit der Truppe wird um 20%% pro Fertigkeitsstufe erhöht. (Truppen-Fähigkeit)
 skl_inventory_management|Inventarverwaltung
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+skl_inventory_management_desc|Erhöht das Aufnahmevermögen des Inventars um +6 pro Fertigkeitsstufe. Verringert den Nahrungsverbrauch. (Anführer-Fähigkeit)
 skl_spotting|Aufklärung
 skl_spotting_desc|Die Sichtweite der Truppe wird um 10%% pro Fertigkeitsstufe erhöht (Truppen-Fähigkeit)
 skl_pathfinding|Wegfindung

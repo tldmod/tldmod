@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^Merkwürdige, bedrohliche Geräusch um dich herum.^Spr
 mno_be_quiet_elf|Respektiere den Hass der Bäume. Gehe leise weiter.
 mno_be_quiet|Leg deine Waffen nieder und verhalte dich ruhig! Nichts wie raus!
 mno_be_bold|Immer weiter! Ich fürchte weder Pflanzen noch alte Mythen!
-; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
+mno_fight_back|Lasst es uns herausfinden! Durchsucht die Umgebung! Brennt einen Baum nieder, oder zwei! (Hier Kampieren)
 menu_fangorn_search_fails|^^^^^^Du durchsuchst den dunklen, dichten Wald, entdeckst aber nichts.^Trotzdem fühlst du dich beobachtet und bedroht, mehr und mehr.
 menu_fangorn_killed_player_only|^^^^^^Du wanderst durch den dichten, dunklen Wald.^Plötzlich wirst du von etwas getroffen! Vielleicht ist dir ein schwerer Ast auf den Kopf gefallen?^Du bist für einige Minuten bewusstlos. Du bist schwer verletzt, kannst aber weitergehen.
 mno_ow_get_out|Autsch! Lasst uns diesen verwunschenen Ort verlassen!
@@ -300,7 +300,7 @@ mno_town_center_door|Tür zum Stadtzentrum.
 mno_aw_chamber_door|Öffne die Tür.
 mno_trade_with_arms_merchant|Besuche {s40}.
 mno_trade_with_horse_merchant|Besuche {s41}.
-; mno_town_prison_door|To the Training Grounds
+mno_town_prison_door|Zum Übungsplatz
 mno_dungeon_enter|Suche die verlorenen Speere in den Bergen.
 mno_dungeon_enter_door|Öffne die Tür.
 mno_dwarven_warehouse|Suche das Warenlager der Zwerge auf.
@@ -312,7 +312,7 @@ mno_isengard_underground_door|Gehe hinab in die Gruben
 mno_tirith_toplevel|Klettere auf die höchste Ebene.
 mno_tirith_toplevel_door|Gehe zur Zitadelle
 mno_erebor_gates|Suche das Haupttor auf.
-; mno_erebor_gates_door|Go to the Great Gates
+mno_erebor_gates_door|Zum Großen Tor
 mno_town_leave|Verlassen...
 mno_town_leave_door|Verlasse die Gegend
 menu_player_initiated_siege_result|Du greifst den Ort unter dem Banner von {s2} an.

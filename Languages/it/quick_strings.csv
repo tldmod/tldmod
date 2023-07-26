@@ -247,7 +247,7 @@ qstr_Less_Wargs_upkeep|Minore gestione Wargs
 qstr_Light_Armor|Armatura Leggera
 qstr_Bonus_to_Strength__P|Bonus alla Forza (Solo per il personaggio)
 qstr_Lead_more_Orcs|Comanda più Orchi
-; qstr_Can_scare_horses|Can scare horses
+qstr_Can_scare_horses|Può spaventare i cavalli
 qstr_+{reg1}_to_Party_Mor|+{reg1} al morale della compagnia
 qstr_Range:_{reg55}|Portata: {reg55}
 qstr_Dwarves|Nani
@@ -765,7 +765,7 @@ qstr_Two_Nazgul_are_circl|Due Nazgul volano in circolo sopra al campo di battagl
 qstr_A_Nazgul_is_circling|Un Nazgul vola circolarmente nei cieli sul campo di battaglia.
 qstr_Some_of_your_human_t|Alcune delle tue truppe umane non sono scoraggiate dall'oscurità. (I Combattenti Notturni non sono influenzati dai rigori della notte)
 qstr_You_are_filled_with_|La rabbia ti pervade mentre fissi il nemico (Berserk attivo).
-qstr_Your_mount_is_scared|La tua bestia è spaventata dal {s5} !
+qstr_Your_mount_is_scared|La tua cavalcatura è spaventata dal {s5} !
 qstr_Your_mount_is_scared_|La tua cavalcatura è spaventata da {s5}, ma puoi domarla !
 qstr_Nazgul_sweep!|Spazzata Nazgul !
 qstr_You_and_your_horse_p|Tu e il tuo cavallo andate nel panico, le urla dei Nazgul sono insopportabili !
@@ -905,8 +905,8 @@ qstr_You_are_suffering_fr|Stai soffrendo per {s1}.
 qstr_You_are_suffering_fro|Stai soffrendo per {s1} e {s2}.
 qstr_You_are_suffering_from|Sei affetto da {s1}, {s2} e {s3}.
 qstr_You_are_suffering_from_|Sei affetto da {s1}, {s2}, {s3} e {s4}.
-; qstr_Troop_upkeep__paid_e|Troop upkeep (paid every four days):^
-; qstr_{s12}^^__{s4}:_{reg8|{s12}^^  {s4}: {reg8}/{reg5} Resource Points ^Party: {reg4}^Reserves: {reg7}
+qstr_Troop_upkeep__paid_e|Sostentamento Truppe (pagate ogni quattro giorni):^
+qstr_{s12}^^__{s4}:_{reg8|{s12}^^ {s4}: {reg8}/{reg5} Punti Risorsa ^Compagnia: {reg4}^Riserve: {reg7}
 qstr_No_upkeep_costs|Nessun costo di mantenimento
 qstr_Orc_hiring_bonus:_+2|Bonus orchi arruolati: +2/3 per ogni orco^
 qstr_Current_party_size_l|L'attuale limite di dimensione della compagnia è {reg5}.^I qualificatori in uso attuali sono:^^Dimensione inziale: +10^Comando: {s2}{reg1}^Persuasione: {s3}{reg2}^Grado: {s4}{reg3}^{s5}TOTALE: {reg5}
@@ -1109,9 +1109,9 @@ qstr_^^^You_lost_your_fig|^^^Hai avuto la peggio contro l'ammutinamento ! ^Sembr
 qstr_^^^You_have_slain_th|^^^Hai ucciso l'autore del reato, e gli altri orchi rapidamente tornano in linea. ^Per qualche tempo queste spregevoli creature saranno tranquille di sicuro.
 qstr_You_cover_up_your_tr|Copri le tue tracce e continui a muoverti.
 qstr_Breaking_camp...|Smantellamento del campo...
-; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
-; qstr_Desertion|Desertion
-; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
+qstr_Party_morale_is_low.|Il morale della compagnia è basso. Alcuni disertano.
+qstr_Desertion|Diserzione
+qstr_{s1}_has_deserted_fr|{s1} - diserzione dalla tua compagnia
 qstr_You_have_left_{s1}.|Lasci: {s1}.
 qstr_You_are_entering_{s1|Accedi a: {s1} ({s2}).
 qstr_You_are_entering_{s1}|Accedi a: {s1}.

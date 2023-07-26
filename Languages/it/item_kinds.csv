@@ -130,17 +130,17 @@ itm_harad_javelin|Giavellotto dell'Harad
 itm_gondor_javelin|Giavellotto di Gondor
 itm_rohirrim_throwing_axe|Asce da Lancio degli Uomini del Nord
 itm_loss_throwing_axes|Asce da lancio del Lossarnach
-itm_arnor_helm_c|Elmo Arnor decorato
+itm_arnor_helm_c|Elmo Decorato di Arnor
 itm_arnor_helm_b|Elmo di Arnor
-; itm_arnor_helm_a|Arnor Light Helm
-; itm_arnor_light_a|Dunedain Ranger Jerkin
-; itm_arnor_light_b|Dunedain Ranger Mail
-; itm_arnor_med_a|Dunedain Ranger Coat
-; itm_arnor_med_b|Dunedain Mail
+itm_arnor_helm_a|Elmo Arnoriano Leggero
+itm_arnor_light_a|Farsetto da Ranger Dúnedain
+itm_arnor_light_b|Maglia da Ranger Dúnedain
+itm_arnor_med_a|Mantella da Ranger Dúnedain
+itm_arnor_med_b|Cotta di Maglia Dúnedain
 itm_arnor_heavy|Alta armatura Arnoriana 
 itm_arnor_greaves|Gambali Arnoriani
 itm_arnor_shield_c|Scudo da cavalleria di Arnor
-; itm_arnor_shield_a|Arnor Round Shield
+itm_arnor_shield_a|Scudo Rotondo Arnoriano
 itm_arnor_sword_c|Spada da Guerra di Arnor
 itm_arnor_sword_a|Spada bastarda di Arnor
 itm_arnor_sword_f|Spada corta di Arnor
@@ -423,15 +423,15 @@ itm_gundabad_helm_c|Elmo di Gundabad
 itm_gundabad_helm_d|Elmo di Gundabad
 itm_gundabad_helm_e|Elmo da CavalcaMannari
 itm_dunland_wolfboots|Stivali del Lupo Dunlandiani
-; itm_dunland_tunic_1|Dunnish Leather Tunic
-; itm_dunland_tunic_2|Dunnish Leather Tunic
-; itm_dunland_fur_1|Dunnish Fur
-; itm_dunland_fur_2|Dunnish Fur
+itm_dunland_tunic_1|Tunica in Pelle Dunlandiana
+itm_dunland_tunic_2|Tunica in Pelle Dunlandiana
+itm_dunland_fur_1|Pelliccia Dunlandiana
+itm_dunland_fur_2|Pelliccia Dunlandiana
 itm_dunland_mail_1|Usbergo Dunlandiano
 itm_dunland_mail_2|Usbergo Dunlandiano
-; itm_dunland_chieftain|Dunnish Chief Armor
+itm_dunland_chieftain|Armatura da Capo Dunlandiano
 itm_dun_helm_a|Copricapo Lupo Dunlandiano
-; itm_dun_helm_b|Dunnish Fur Cap
+itm_dun_helm_b|Cappuccio in Pelliccia Dunlandiano
 itm_dun_helm_c|Elmo Alto Dunlandiano
 itm_dun_helm_d|Elmo Alto Dunlandiano
 itm_dun_helm_e|Elmo Ramificato Dunlandiano
@@ -495,11 +495,11 @@ itm_mirkwood_helm_d|Elmo Reale di Boscoverde
 itm_woodelf_leather_boots|Stivali in Pelle degli Elfi Silvani
 itm_mirkwood_boots|Stivali di Boscoverde
 itm_harad_tunic|Tunica Harad
-; itm_harad_padded|Harad Padded Jerkin
-; itm_harad_lamellar|Harad Scale Vest
-; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_padded|Giustacuore Imbottito di Harad
+itm_harad_lamellar|Veste in Scaglie di Harad
+itm_harad_heavy_lamellar|Veste Pesante a Scaglie di Harad
 itm_harad_heavy|Armatura Harasjala
-; itm_harad_pectoral|Harad Breastplate
+itm_harad_pectoral|Corazza Pettorale di Harad
 itm_black_snake_armor|Armatura Maranka
 itm_harad_champion|Abito del Lontano Harad
 itm_harad_scale|Corazza a Scaglie Haradrim
@@ -549,11 +549,11 @@ itm_khand_cav_helm_b|Elmo da Cavallerizzo di Khand
 itm_khand_cav_helm_c|Elmo Decorato del Khand
 itm_khand_helm_mask|Maschera del Khand
 itm_khand_light|Kilt Kandhiano
-; itm_khand_light_lam|Khand Light Footmen Armor
-; itm_khand_foot_lam|Khand Heavy Footman Armor
+itm_khand_light_lam|Armatura Leggera da Fante di Arnor
+itm_khand_foot_lam|Armatura di Fanteria Pesante di Khand
 itm_khand_med_lam|Armatura Lamellare Media del Khand
 itm_khand_heavy_lam|Armatura Lamellare Pesante del Khand
-; itm_khand_mail|Khand Mail
+itm_khand_mail|Cotta di Maglia di Khand
 itm_khand_noble_lam|Armatura da Nobile del Khand
 itm_khand_axe_great|Ascia Suprema del Khand
 itm_khand_axe_winged|Ascia Bipenne del Khand
