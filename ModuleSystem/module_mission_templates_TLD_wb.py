@@ -4417,3 +4417,16 @@ common_battle_init_banner = (
     (agent_get_troop_id, ":troop_no", ":agent_no"),
     (call_script, "script_troop_agent_set_banner", "tableau_game_troop_label_banner", ":agent_no", ":troop_no"),
   ])
+  
+
+tld_place_inventory_backup =   (0.1, 0, ti_once, [], [ #agent fadeout sphere test
+        (scene_prop_get_num_instances, ":inv_found", "spr_inventory"),
+        (try_begin),
+          (lt, ":inv_found", 1),
+          (get_player_agent_no, ":player"),
+          (agent_get_position, pos1, ":player"),
+          (set_spawn_position, pos1),
+          (spawn_scene_prop, "spr_inventory"),
+          (display_message, "@inventory spawned"),
+        (try_end),
+    ])  

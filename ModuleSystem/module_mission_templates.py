@@ -1058,6 +1058,8 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     #Batching
     batching_agent_spawn_human,
     batching_agent_spawn_mount,
+    
+    tld_place_inventory_backup, 
 
 ] + beorning_shapeshift   #Chaning into bear
 + tld_bow_shield
