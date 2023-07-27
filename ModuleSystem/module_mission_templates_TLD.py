@@ -3414,10 +3414,11 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
 			(agent_get_troop_id,":troop_no",":monster"),
             (str_clear, s5),
             (str_clear, s6),
+            (assign, ":monster_horse_type", 0),            
 			(troop_get_type, ":type", ":troop_no"),
             (agent_get_horse, ":monster_horse", ":monster"),
             
-            (try_begin),
+            (try_begin), 
                 (ge, ":monster_horse", 1),
                 (agent_get_item_id, ":monster_horse_type", ":monster_horse"),
                 #(str_store_item_name, s5, ":monster_horse_type"),  
@@ -3437,7 +3438,6 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
                     (agent_get_item_id, ":monster_horse_type", ":monster_horse"),
                     (str_store_item_name, s5, ":monster_horse_type"),  
                 (try_end),
-
 
                 (agent_get_position,pos1,":monster"),
                 (agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":monster"),
@@ -3461,6 +3461,7 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
                     (neg|is_between, ":rider_troop", "trp_spider", "trp_dorwinion_sack"),
                     (neq, ":rider_troop", "trp_werewolf"),
                     (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"),
+                    (neq, ":victim_horse_type", "itm_mearas_reward"),
 
                     #conditionally scared
                     (assign, ":scare_check", 1),
