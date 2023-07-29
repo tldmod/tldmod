@@ -4427,6 +4427,6 @@ tld_place_inventory_backup =   (0.1, 0, ti_once, [], [ #agent fadeout sphere tes
           (agent_get_position, pos1, ":player"),
           (set_spawn_position, pos1),
           (spawn_scene_prop, "spr_inventory"),
-          (display_message, "@inventory spawned"),
+          #(display_message, "@inventory spawned"),
         (try_end),
     ])  
