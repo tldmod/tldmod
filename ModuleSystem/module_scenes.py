@@ -582,7 +582,7 @@ scenes = [
   ] or [
 ("ironhill_camp_siege"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007200016da000364d9000060f500007591000064e7",[],[],"outer_terrain_steppe"),
   ]) + [
-("isengard_siege"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
+("isengard_siege"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000320000500000d234800002ba680005bd500005b5d",[],[],"outer_terrain_isen"),
   
 #Inner siege placeholders
 ("thranduils_halls_siege_inner",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001400ddb4200058d66000023ad0000751200000359",[],[],"outer_terrain_forest"), 

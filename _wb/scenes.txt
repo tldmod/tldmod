@@ -1460,10 +1460,10 @@ scn_ironhill_camp_siege ironhill_camp_siege 256 none none 0 0 100 100 -100 0x000
   0 
   0 
  outer_terrain_steppe 
-scn_isengard_siege isengard_siege 256 none none 0 0 100 100 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
+scn_isengard_siege isengard_siege 256 none none 0 0 100 100 -100 0x0000000320000500000d234800002ba680005bd500005b5d 
   0 
   0 
- outer_mountains2north 
+ outer_terrain_isen 
 scn_thranduils_halls_siege_inner thranduils_halls_siege_inner 256 none none 0 0 100 100 -100 0x00000001400ddb4200058d66000023ad0000751200000359 
   0 
   0 
