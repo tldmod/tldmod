@@ -514,7 +514,7 @@ items =[
 ["free_arnor_sword_f","Arnor_Shortsword",[("arnor_sword_a",0),("arnor_sword_a_scab",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,300,weight(1.25)|abundance(90)|difficulty(0)|spd_rtng(107)|weapon_length(83)|swing_damage(28,cut)|thrust_damage(21,pierce),imodbits_weapon_good,[]],
 #
 #RIVENDELL HELMS##########
-["riv_helm_a","Rivendell_Coif",[("rivendell_coif_new",0)],itp_type_head_armor|itp_shop,0,800,weight(1)|head_armor(24)|difficulty(0),imodbits_armor|imodbit_lordly,[]],
+["riv_helm_a","Rivendell_Coif",[("rivendell_coif_new",0)],itp_type_head_armor,0,800,weight(1)|head_armor(24)|difficulty(0),imodbits_armor|imodbit_lordly,[]],
 ["riv_helm_b","Rivendell_Archer_Helm",[("rivendellarcherhelmet",0)],itp_type_head_armor|itp_shop,0,1200,weight(2)|abundance(93)|head_armor(35)|body_armor(0)|difficulty(12),imodbits_armor|imodbit_lordly,[]],
 ["riv_helm_c","Rivendell_Infantry_Helm",[("rivendellswordfighterhelmet",0)],itp_type_head_armor|itp_shop,0,1600,weight(3)|abundance(96)|head_armor(40)|body_armor(0)|difficulty(15),imodbits_elf_armor,[]],
 #free Jan 2017, -> itm_witchking_helmet
