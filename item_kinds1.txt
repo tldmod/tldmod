@@ -159,7 +159,7 @@ itemsfile version 2
  itm_dol_amroth_warhorse2 Dol_Amroth_Heavy_Warhorse Dol_Amroth_Heavy_Warhorse 1  da_warhorse01 0  65537 0 2200 119185604608 0 96 0 48 0 4 140 31 35 112 0 41 0
 0
 
- itm_gondor_warhorse Gondor_Warhorse Gondor_Warhorse 1  gondor_warhorse01 0  65537 0 1800 16106389504 0 95 0 42 0 4 135 34 36 108 0 33 0
+ itm_gondor_warhorse Gondor_Warhorse Gondor_Warhorse 2  gondor_warhorse01 0  gondor_warhorse02 262144  65537 0 1800 119185604608 0 95 0 42 0 4 135 34 36 108 0 33 0
 0
 
  itm_gondor_lam_horse Lamedon_Armored_Horse Lamedon_Armored_Horse 1  lam_warhorse01 0  65537 0 1500 16106389504 0 94 0 35 0 4 135 34 36 102 0 26 0
