@@ -1019,60 +1019,70 @@ scripts = [
 		(try_end),  # end of for each stack
 
         #capital reserves
-        (party_get_num_companion_stacks, ":num_stacks",":reserve_party_cap"),
-		(try_for_range_backwards, ":i", 0, ":num_stacks"),
-            (gt, ":reserve_party_cap", 0),
-			(party_stack_get_size, ":stack_size",":reserve_party_cap",":i"),
-			(party_stack_get_troop_id, ":stack_troop",":reserve_party_cap",":i"),
+        (try_begin),
+            (party_is_active, ":reserve_party_cap"),
+            (party_get_num_companion_stacks, ":num_stacks",":reserve_party_cap"),
+            (try_for_range_backwards, ":i", 0, ":num_stacks"),
+                (gt, ":reserve_party_cap", 0),
+                (party_stack_get_size, ":stack_size",":reserve_party_cap",":i"),
+                (party_stack_get_troop_id, ":stack_troop",":reserve_party_cap",":i"),
 
-			(store_troop_faction, ":fac_troop", ":stack_troop"),
-			(eq,":fac_troop",":fac"),
-			
-			(call_script, "script_game_get_troop_wage", ":stack_troop",0 ),
-			(assign, ":cur_wage", reg0),
-			(val_mul, ":cur_wage", ":stack_size"),		
-			(val_div, ":cur_wage", 2), #half wages for reserves
-		
-			(try_begin), (ge,  ":allowance",":cur_wage"), 
-				# CAN afford
-				(val_add, ":spending", ":cur_wage"),
-				(val_add, ":tot_spending", ":cur_wage"),
-				(val_sub, ":allowance",":cur_wage"), 
-				(troop_set_slot, ":stack_troop", slot_troop_upkeep_not_paid, 0),
-			(else_try),
-				# CAN'T afford: For reserves, we don't give warning. Troops leave immediatly.
-                (party_remove_members, ":reserve_party_cap", ":stack_troop", 1),
-                (val_add, ":n_tot_unpaid_troops_reserve", 1),                
-			(try_end),			
-		(try_end),  # end of for each stack
+                (store_troop_faction, ":fac_troop", ":stack_troop"),
+                (eq,":fac_troop",":fac"),
+                
+                (call_script, "script_game_get_troop_wage", ":stack_troop",0 ),
+                (assign, ":cur_wage", reg0),
+                (val_mul, ":cur_wage", ":stack_size"),		
+                (val_div, ":cur_wage", 2), #half wages for reserves
+            
+                (try_begin), (ge,  ":allowance",":cur_wage"), 
+                    # CAN afford
+                    (val_add, ":spending", ":cur_wage"),
+                    (val_add, ":tot_spending", ":cur_wage"),
+                    (val_sub, ":allowance",":cur_wage"), 
+                    (troop_set_slot, ":stack_troop", slot_troop_upkeep_not_paid, 0),
+                (else_try),
+                    # CAN'T afford: For reserves, we don't give warning. Troops leave immediatly.
+                    (party_remove_members, ":reserve_party_cap", ":stack_troop", 1),
+                    (val_add, ":n_tot_unpaid_troops_reserve", 1),                
+                (try_end),			
+            (try_end),  # end of for each stack
+         # (else_try),
+             # (display_message, "@no cap reserves"),
+         (try_end),
 
         #advance camp reserves
-        (party_get_num_companion_stacks, ":num_stacks",":reserve_party_ac"),
-		(try_for_range_backwards, ":i", 0, ":num_stacks"),
-            (gt, ":reserve_party_ac", 0),
-			(party_stack_get_size, ":stack_size",":reserve_party_ac",":i"),
-			(party_stack_get_troop_id, ":stack_troop",":reserve_party_ac",":i"),
+        (try_begin),
+            (party_is_active, ":reserve_party_ac"),
+            (party_get_num_companion_stacks, ":num_stacks",":reserve_party_ac"),
+            (try_for_range_backwards, ":i", 0, ":num_stacks"),
+                (gt, ":reserve_party_ac", 0),
+                (party_stack_get_size, ":stack_size",":reserve_party_ac",":i"),
+                (party_stack_get_troop_id, ":stack_troop",":reserve_party_ac",":i"),
 
-			(store_troop_faction, ":fac_troop", ":stack_troop"),
-			(eq,":fac_troop",":fac"),
-			
-			(call_script, "script_game_get_troop_wage", ":stack_troop",0 ),
-			(assign, ":cur_wage", reg0),
-			(val_mul, ":cur_wage", ":stack_size"),		
-			(val_div, ":cur_wage", 2), #half wages for reserves
-		
-			(try_begin), (ge,  ":allowance",":cur_wage"), 
-				# CAN afford
-				(val_add, ":spending", ":cur_wage"),
-				(val_add, ":tot_spending", ":cur_wage"),
-				(val_sub, ":allowance",":cur_wage"), 
-				(troop_set_slot, ":stack_troop", slot_troop_upkeep_not_paid, 0),
-			(else_try),
-				# CAN'T afford: For reserves, we don't give warning. Troops leave immediatly.
-                (party_remove_members, ":reserve_party_ac", ":stack_troop", 1),
-                (val_add, ":n_tot_unpaid_troops_reserve", 1),  
-			(try_end),			
-		(try_end),  # end of for each stack
+                (store_troop_faction, ":fac_troop", ":stack_troop"),
+                (eq,":fac_troop",":fac"),
+                
+                (call_script, "script_game_get_troop_wage", ":stack_troop",0 ),
+                (assign, ":cur_wage", reg0),
+                (val_mul, ":cur_wage", ":stack_size"),		
+                (val_div, ":cur_wage", 2), #half wages for reserves
+            
+                (try_begin), (ge,  ":allowance",":cur_wage"), 
+                    # CAN afford
+                    (val_add, ":spending", ":cur_wage"),
+                    (val_add, ":tot_spending", ":cur_wage"),
+                    (val_sub, ":allowance",":cur_wage"), 
+                    (troop_set_slot, ":stack_troop", slot_troop_upkeep_not_paid, 0),
+                (else_try),
+                    # CAN'T afford: For reserves, we don't give warning. Troops leave immediatly.
+                    (party_remove_members, ":reserve_party_ac", ":stack_troop", 1),
+                    (val_add, ":n_tot_unpaid_troops_reserve", 1),  
+                (try_end),			
+            (try_end),  # end of for each stack
+         # (else_try),
+             # (display_message, "@no ac reserves"),    
+         (try_end),
 
 
 		(try_begin),(gt,  ":n_unpaid_troops", 0 ), 
