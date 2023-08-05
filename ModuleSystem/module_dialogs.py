@@ -11020,7 +11020,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 # Medium Grade Scraps
 [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_iron"),
-        (eq, 1, 0), # enable/disable switch
+        #(eq, 1, 0), # enable/disable switch
                               (quest_slot_eq, "qst_deliver_iron", slot_quest_target_center, "$g_encountered_party"),
                               (quest_get_slot, ":quest_target_item", "qst_deliver_iron", slot_quest_target_item),
             (eq, ":quest_target_item", "itm_metal_scraps_bad"),
