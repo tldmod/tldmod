@@ -3620,11 +3620,11 @@ scene_props = [
     (try_end),
     ]) + [
     
-    (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached_2m"),  #move away all dependent barriers
+    (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_spikes_broken"),  #move away all dependent barriers
     (try_begin),
       (gt, ":max_barriers",0),
       (try_for_range,":count",0,":max_barriers"),
-        (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached_2m", ":count"),
+        (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_spikes_broken", ":count"),
         (prop_instance_get_starting_position, pos1, ":barrier_no"),
         (prop_instance_get_starting_position, pos2, ":gate_no"),
         (set_fixed_point_multiplier, 100),
@@ -3703,11 +3703,11 @@ scene_props = [
     (try_end),
     ]) + [
     
-    (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached_2m"),  #move away all dependent barriers
+    (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_spikes_broken"),  #move away all dependent barriers
     (try_begin),
       (gt, ":max_barriers",0),
       (try_for_range,":count",0,":max_barriers"),
-        (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached_2m", ":count"),
+        (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_spikes_broken", ":count"),
         (prop_instance_get_starting_position, pos1, ":barrier_no"),
         (prop_instance_get_starting_position, pos2, ":gate_no"),
         (set_fixed_point_multiplier, 100),
@@ -3900,7 +3900,7 @@ scene_props = [
 ("glow_b", 0, "glow_b", "0", []),
 
 ("ai_fadeout_sphere",sokf_invisible,"sphere_1m","0", []),
-("ai_limiter_gate_breached_2m" ,sokf_invisible|sokf_type_ai_limiter|sokf_moveable,"barrier_2m" ,"bo_barrier_2m" , []),
+("ai_limiter_spikes_broken" ,sokf_invisible|sokf_type_ai_limiter|sokf_moveable,"barrier_2m" ,"bo_barrier_2m" , []),
 
 
 

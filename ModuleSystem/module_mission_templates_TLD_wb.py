@@ -4430,3 +4430,20 @@ tld_place_inventory_backup =   (0.1, 0, ti_once, [], [ #agent fadeout sphere tes
           #(display_message, "@inventory spawned"),
         (try_end),
     ])  
+    
+tld_ai_fadeout_spheres =   (3, 0, 0, [], [ #agent fadeout sphere test
+    (scene_prop_get_num_instances, ":num_fadeout_spheres", "spr_ai_fadeout_sphere"),
+    (set_fixed_point_multiplier, 100),
+    (try_for_range, ":count", 0, ":num_fadeout_spheres"),
+        (scene_prop_get_instance, ":instance_no", "spr_ai_fadeout_sphere", ":count"),
+        (prop_instance_get_position, pos2, ":instance_no"),
+        (prop_instance_get_scale, pos3, ":instance_no"),
+        (position_get_scale_y, ":scale", pos3),
+        (try_for_agents, ":agent_no", pos2, ":scale"),
+            (agent_is_alive, ":agent_no"),
+            (agent_fade_out, ":agent_no"),
+            # (str_store_agent_name, s2, ":agent_no"),
+            # (display_message, "@{s2} is in fadeout range"),
+        (try_end),
+    (try_end),
+    ])    

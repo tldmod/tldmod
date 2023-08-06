@@ -1060,6 +1060,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     batching_agent_spawn_mount,
     
     tld_place_inventory_backup, 
+    tld_ai_fadeout_spheres,    
 
 ] + beorning_shapeshift   #Chaning into bear
 + tld_bow_shield
@@ -1083,7 +1084,6 @@ or [] ) + [
   reset_fog,
   horse_whistle_init,
   horse_whistle,
-  tld_ai_fadeout_spheres,
 ] + tld_morale_triggers + fade + khams_custom_player_camera + custom_troll_hitting_new + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack + reward_birds_wb
 
 
@@ -1093,6 +1093,7 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
   common_battle_init_banner,
   hp_shield_init,
   hp_shield_trigger,
+  tld_ai_fadeout_spheres,  
 
   ] + tld_bow_shield
   or [] ) + [
@@ -1105,7 +1106,6 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
   tld_remove_volunteer_troops,
 	#common_battle_kill_underwater,
   reset_fog,
-  tld_ai_fadeout_spheres,
 ] + fade + bright_nights + khams_custom_player_camera + bright_nights
 
 
