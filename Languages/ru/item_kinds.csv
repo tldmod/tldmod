@@ -132,15 +132,15 @@ itm_rohirrim_throwing_axe|Метательные топоры северян
 itm_loss_throwing_axes|Лоссарнахские метательные топоры
 itm_arnor_helm_c|Арнорский украшенный шлем
 itm_arnor_helm_b|Арнорский шлем
-; itm_arnor_helm_a|Arnor Light Helm
-; itm_arnor_light_a|Dunedain Ranger Jerkin
-; itm_arnor_light_b|Dunedain Ranger Mail
-; itm_arnor_med_a|Dunedain Ranger Coat
-; itm_arnor_med_b|Dunedain Mail
-; itm_arnor_heavy|Arnorian High Armor
+itm_arnor_helm_a|Лёгкий шлем Арнора
+itm_arnor_light_a|Встревоженный рейнджер Дунэдайн
+itm_arnor_light_b|Гонец рейнджеров Дунэдайн
+itm_arnor_med_a|Куртка рейнджеров Дунэдайн
+itm_arnor_med_b|Кольчуга Дунэдайн
+itm_arnor_heavy|Арнорская высотная броня
 itm_arnor_greaves|Арнорские поножи
 itm_arnor_shield_c|Арнорский кавалерийский щит
-; itm_arnor_shield_a|Arnor Round Shield
+itm_arnor_shield_a|Круглый щит Арнора
 itm_arnor_sword_c|Арнорский боевой меч
 itm_arnor_sword_a|Арнорский Полуторный Меч
 itm_arnor_sword_f|Арнорский короткий меч
@@ -423,15 +423,15 @@ itm_gundabad_helm_c|Гундабадский шлем
 itm_gundabad_helm_d|Гундабадский шлем
 itm_gundabad_helm_e|Шлем волчьего наездника
 itm_dunland_wolfboots|Дунландские волчьи ботинки
-; itm_dunland_tunic_1|Dunnish Leather Tunic
-; itm_dunland_tunic_2|Dunnish Leather Tunic
-; itm_dunland_fur_1|Dunnish Fur
-; itm_dunland_fur_2|Dunnish Fur
+itm_dunland_tunic_1|Дунландская кожаная туника
+itm_dunland_tunic_2|Дунландская кожаная туника
+itm_dunland_fur_1|Дунландский мех
+itm_dunland_fur_2|Дунландский мех
 itm_dunland_mail_1|Дунландский хауберк
 itm_dunland_mail_2|Дунландский хауберк
-; itm_dunland_chieftain|Dunnish Chief Armor
+itm_dunland_chieftain|Дунландская броня вождя
 itm_dun_helm_a|Дунландский волчий шлем
-; itm_dun_helm_b|Dunnish Fur Cap
+itm_dun_helm_b|Дунландская меховая шапка
 itm_dun_helm_c|Дунландский высокий шлем
 itm_dun_helm_d|Дунландский высокий шлем
 itm_dun_helm_e|Дунландский Олений Шлем
@@ -495,11 +495,11 @@ itm_mirkwood_helm_d|Зеленолесский королевский шлем
 itm_woodelf_leather_boots|Кожаные ботинки Лесных эльфов
 itm_mirkwood_boots|Лесные Ботинки
 itm_harad_tunic|Харадская одежда
-; itm_harad_padded|Harad Padded Jerkin
-; itm_harad_lamellar|Harad Scale Vest
-; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_padded|Харрадская подбитая куртка
+itm_harad_lamellar|Харадский чешуйчатый нагрудник
+itm_harad_heavy_lamellar|Харадский тяжёлый чешуйчатый нагрудник
 itm_harad_heavy|Броня-харасьяла
-; itm_harad_pectoral|Harad Breastplate
+itm_harad_pectoral|Харадский нагрудник
 itm_black_snake_armor|Броня-маранка
 itm_harad_champion|Дальнехарадская одежда
 itm_harad_scale|Харадская чешуйчатая броня
@@ -549,11 +549,11 @@ itm_khand_cav_helm_b|Хандский шлем всадника
 itm_khand_cav_helm_c|Хандский украшенный шлем
 itm_khand_helm_mask|Хандская маска
 itm_khand_light|Хандская юбка
-; itm_khand_light_lam|Khand Light Footmen Armor
-; itm_khand_foot_lam|Khand Heavy Footman Armor
+itm_khand_light_lam|Хандская лёгкая броня пехотинца
+itm_khand_foot_lam|Хандская тяжёлая броня пехотинца
 itm_khand_med_lam|Хандский средний ламеллярный доспех
 itm_khand_heavy_lam|Хандский тяжёлый ламеллярный доспех
-; itm_khand_mail|Khand Mail
+itm_khand_mail|Хандский гонец
 itm_khand_noble_lam|Хандская броня знатного воина
 itm_khand_axe_great|Хандский большой топор
 itm_khand_axe_winged|Хандский крылатый топор

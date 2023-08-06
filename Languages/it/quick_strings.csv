@@ -1054,7 +1054,7 @@ qstr_Beorn_s_Hall|La Casa di Beorn
 qstr_the_Hall|la Sala del Re
 qstr_the_Great_Chamber_of|la Grande Sala di Thrór
 qstr_Stay_indoors_for_som|Alloggia qui per un po'. Punti Risorsa per notte: ({reg1})
-qstr_Camp_outside_for_som|Accampati all'aperto per qualche di tempo (nessun costo)
+qstr_Camp_outside_for_som|Accampati all'aperto per qualche tempo (nessun costo)
 qstr_{s4}_s_scouts_have_s|Gli esploratori di {s4} hanno visto e riferito del tuo fallimento. Hai portato il biasimo su {s4} e la responsabilità di questo fallimento è soltanto tua.
 qstr_{s1}_s_Ship|Nave di {s1}
 qstr_Time_passes...|Il tempo scorre...
@@ -1112,6 +1112,8 @@ qstr_Breaking_camp...|Smantellamento del campo...
 qstr_Party_morale_is_low.|Il morale della compagnia è basso. Alcuni disertano.
 qstr_Desertion|Diserzione
 qstr_{s1}_has_deserted_fr|{s1} - diserzione dalla tua compagnia
+qstr_You_don_t_have_enoug|Non disponi di truppe sufficienti per fare la guardia a tutti i tuoi prigionieri. La loro possibilità di fuga è aumentata.
+qstr_{s1}_has_escaped_fro|{s1} ha trovato il modo di evadere.
 qstr_You_have_left_{s1}.|Lasci: {s1}.
 qstr_You_are_entering_{s1|Accedi a: {s1} ({s2}).
 qstr_You_are_entering_{s1}|Accedi a: {s1}.

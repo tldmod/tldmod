@@ -1112,6 +1112,8 @@ qstr_Breaking_camp...|Le groupe lève le camp...
 qstr_Party_morale_is_low.|Le moral du groupe est bas. Des soldats désertent de votre groupe.
 qstr_Desertion|Désertion
 qstr_{s1}_has_deserted_fr|{s1} a déserté de votre groupe
+qstr_You_don_t_have_enoug|Vous n'avez pas suffisamment de troupes pour garder tous vos prisonniers. Leur chance de s'échapper augmente.
+qstr_{s1}_has_escaped_fro|{s1} s'est échappé de votre groupe.
 qstr_You_have_left_{s1}.|Vous avez quitté {s1}.
 qstr_You_are_entering_{s1|Vous entrez dans {s1} ({s2}).
 qstr_You_are_entering_{s1}|vous entrez dans {s1}.

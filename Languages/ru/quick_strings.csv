@@ -247,7 +247,7 @@ qstr_Less_Wargs_upkeep|Снижает содержание всадников н
 qstr_Light_Armor|Лёгкая броня
 qstr_Bonus_to_Strength__P|Бонус к силе (только для игрока)
 qstr_Lead_more_Orcs|Бонус к числу орков
-; qstr_Can_scare_horses|Can scare horses
+qstr_Can_scare_horses|Может напугать лошадей
 qstr_+{reg1}_to_Party_Mor|+{reg1} к боевому духу отряда
 qstr_Range:_{reg55}|Дальность: {reg55}
 qstr_Dwarves|Гномы
@@ -256,7 +256,7 @@ qstr_Orcs|Орки
 qstr_Uruks_and_Uruk_Hai|Уруки и Урук-Хай
 qstr_Humans_Uruks_and_Uru|Люди, Уруки и Урук-Хай
 qstr_Humans|Люди
-; qstr_This_item_can_be_use|This item can be used by {s2}
+qstr_This_item_can_be_use|Этот предмет может быть использован {s2}
 qstr_Do_you_want_to_disem|Вы хотите высадиться?
 qstr_Move_here|Перейти
 qstr_View_notes|Заметки
@@ -636,7 +636,7 @@ qstr_support|вспомогательный боец
 qstr_bodyguard|телохранитель
 qstr_undetermined_type_of|неизвестный род войск
 qstr_{s1}_has_fled_the_ba|{s1} сбежал с поля боя! 
-; qstr_Your_side_is_at_{reg|Your side is at {reg1}% cohesion ({reg3}% recent events), the enemy at {reg2}%!
+qstr_Your_side_is_at_{reg|Уровень сплочённости Вашей стороны - {reg1}% ({reg3}% из-за последних событий), у врага - {reg2}%!
 qstr_Morale_of_your_troop|Ваши воины дрогнули!
 qstr_Morale_of_your_enemi|Враги дрогнули!
 qstr_Your_enemies_flee_in|Враги бегут в ужасе!
@@ -745,7 +745,7 @@ qstr_Cannot_leave_now.|Сейчас нельзя уйти.
 qstr_You_have_found_the_l|Вы нашли местную кузницу.
 qstr_You_have_found_the_lo|Вы нашли местного управленца.
 qstr_You_have_found_the_loc|Вы нашли местный склад.
-; qstr_You_have_found_the_c|You have found the captain of the garrison.
+qstr_You_have_found_the_c|Вы нашли капитана гарнизона
 qstr_You_look_through_Hen|Вы смотрите сквозь Хеннет Аннун, Окно Заката. Это поистине прекрасное зрелище восстанавливает вашу веру в Запад и сверхъестественные силы.
 qstr__cancelled_the_{reg1|(отменены {reg10} очков опыта за убийство пленников)
 qstr_Forming_ranks.|Воины строятся шеренгами.
@@ -777,7 +777,7 @@ qstr_{s11}_is_{s10}_in_th|{s11} {s10} во время нападения наз�
 qstr_Received_{reg66}_dam|Получено {reg66} урона.
 qstr_You_yell_for_your_ho|Вы призываете вашего коня.
 qstr_You_do_not_need_to_r|Пока не требуется созыв ваших войск.
-; qstr_You_rally_{reg10}_tr|You rally {reg10} troops!
+qstr_You_rally_{reg10}_tr|Вы созываете {reg10} воинов!
 qstr_{s5}_rallies_{reg65?|{s5} вдохновляет {reg65?её:его} войск!
 qstr_You_have_killed_{reg|Вы убили {reg1} врагов в этой битве! 
 qstr_Your_bravery_inspire|Ваша отвага вдохновляет ваших воинов! 
@@ -905,8 +905,8 @@ qstr_You_are_suffering_fr|Рана ({s1}) причиняет вам страда
 qstr_You_are_suffering_fro|Раны ({s1} и {s2}) причиняют вам страдания. 
 qstr_You_are_suffering_from|Раны ({s1}, {s2} и {s3}) причиняют вам страдания. 
 qstr_You_are_suffering_from_|Раны ({s1}, {s2}, {s3} и {s4}) причиняют вам страдания. 
-; qstr_Troop_upkeep__paid_e|Troop upkeep (paid every four days):^
-; qstr_{s12}^^__{s4}:_{reg8|{s12}^^  {s4}: {reg8}/{reg5} Resource Points ^Party: {reg4}^Reserves: {reg7}
+qstr_Troop_upkeep__paid_e|Жалование воина (платится каждые 4 дня):
+qstr_{s12}^^__{s4}:_{reg8|{s12}\n\n{s4}: {reg8}/{reg5} Очков снабжения\nОтряд: {reg4}\nРезерв: {reg7}
 qstr_No_upkeep_costs|Войска не требуют содержания
 qstr_Orc_hiring_bonus:_+2|Бонус найма орков: +2/3 за каждого орка в отряде^
 qstr_Current_party_size_l|Текущий лимит размера отряда равен {reg5}.^Модификаторы размера отряда таковы:^^Базовый размер: +10^Лидерство: {s2}{reg1}^Харизма: {s3}{reg2}^Ранги: {s4}{reg3}^{s5}ИТОГО: {reg5}
@@ -1109,9 +1109,11 @@ qstr_^^^You_lost_your_fig|^^^Вы проиграли в поединке с бу
 qstr_^^^You_have_slain_th|^^^Вы сразили мятежника, и другие орки быстро смолкли. ^ Некоторое время эти твари будут тише воды.
 qstr_You_cover_up_your_tr|Вы тихо двинулись дальше.
 qstr_Breaking_camp...|Сворачиваем лагерь...
-; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
-; qstr_Desertion|Desertion
-; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
+qstr_Party_morale_is_low.|Боевой дух отряда низок. Воины дезертируют из Вашего отряда.
+qstr_Desertion|Дезертирство
+qstr_{s1}_has_deserted_fr|{s1} дезертировал из Вашего отряда
+qstr_You_don_t_have_enoug|У Вас не хватает воинов для охраны всех Ваших пленных. Вероятность их побега увеличилась.
+qstr_{s1}_has_escaped_fro|{s1} сбежал из Вашего отряда.
 qstr_You_have_left_{s1}.|Вы покинули регион {s1}.
 qstr_You_are_entering_{s1|Вы входите в регион {s1} ({s2}).
 qstr_You_are_entering_{s1}|Вы входите в регион {s1}.
@@ -1525,24 +1527,24 @@ qstr_We_need_to_grind_dow|Мы должны стереть в порошок н�
 qstr_{s9}_asked_you_to_el|{s9} хочет чтобы вы уничтожили {reg1} отрядов типа "{s13}".
 qstr_{s9}_asked_you_to_fr|{s9} просит вас избавить {s13} от свирепствующего в округе тролля.
 qstr_{reg1}_{s16}_joined_|{reg1} {s16} присоединился к Вашему отряду.
-; qstr_Wait_{playername}._I|Wait, {playername}. I don't say this often, but you are an exceptionally reliable servant.
-; qstr_Halt_{playername}._I|Halt, {playername}. I once thought you little more than a snaga, but you are proving to be a useful servant.
-; qstr_Take_these_warriors_|Take these warriors, that your horde might continue to serve me.
-; qstr_One_last_thing_{play|One last thing, {playername}. In a land filled with backstabbers and rivals, you have always been a true ally.
-; qstr_Wait_{playername}._W|Wait, {playername}. When we met I sensed in you a rival, but I see now I was mistaken.
-; qstr_Take_these_warriors_a|Take these warriors, and use them to strike down our foes.
-; qstr_Before_you_leave_{pl|Before you leave, {playername}, know that you have always been a good friend to me.
-; qstr_Wait_{playername}._I_|Wait, {playername}. I don't know you half as well as I should like, but thus far you have been a good friend.
-; qstr_Allow_me_to_repay_yo|Allow me to repay you by giving you some troops.
-; qstr_Wait_{playername}._C|Wait, {playername}. Capable servants like you and your warriors deserve the best equipment.
-; qstr_Halt_{playername}._It|Halt, {playername}. It's shameful to have my servants using such inferior equipment.
-; qstr_Take_this_{s22}_and_|Take this {s22} and let it aid your rampage.
+qstr_Wait_{playername}._I|Постой, {playername}. Я не говорю подобного часто, но Вы исключительно надёжный слуга.
+qstr_Halt_{playername}._I|Стой, {playername}. Когда-то я думал, что ты чуть лучше снаги, но ты показываешь себя полезным слугой.
+qstr_Take_these_warriors_|Возьми этих воинов, чтобы твоя орда продолжала служить мне.
+qstr_One_last_thing_{play|И напоследок, {playername}. В землях, полных предательствами и соперничеством, Вы всегда были надёжным товарищем.
+qstr_Wait_{playername}._W|Постой, {playername}. Когда мы впервые встретились, я увидел в Вас соперника, но сейчас я понимаю свою ошибку.
+qstr_Take_these_warriors_a|Возьми этих воинов, и используй их чтобы сразить наших врагов.
+qstr_Before_you_leave_{pl|Перед тем как ты уйдёшь, {playername}, знай, что ты всегда был для меня настоящим другом.
+qstr_Wait_{playername}._I_|Постой, {playername}. Я не знаю тебя и наполовину так, как хотел бы, но ты всегда был для меня хорошим другом.
+qstr_Allow_me_to_repay_yo|Позволь мне отплатить тебе несколькими моими воинами.
+qstr_Wait_{playername}._C|Постой, {playername}. Надёжные слуги как ты и твои воины заслуживают лучшего снаряжения.
+qstr_Halt_{playername}._It|Стой, {playername}. Стыдно видеть моих слуг в столь ужасной экипировке.
+qstr_Take_this_{s22}_and_|Возьми {s22} и дай ему поддержать твою ярость.
 qstr_Before_you_go_{playe|Прежде чем ты уйдёшь, {playername}. Великие воины вроде тебя и твоих спутников заслуживают исключительно на лучшую экипировку.
-; qstr_Wait_{playername}._Y|Wait, {playername}. Your army has done well, but I think you'd do better with superior equipment.
+qstr_Wait_{playername}._Y|Постой, {playername}. Ваша армия храбро сражалась, но думаю, что Вам пригодится более могущественная экипировка. 
 qstr_Take_this_{s22}._I_h|Возьми это {s22}. Мне это не нужно.
-; qstr_Just_a_moment_{playe|Just a moment, {playername}. Heroes like you and your companions are worthy of the finest weapons, armor, and horses.
-; qstr_Wait_{playername}._Yo|Wait, {playername}. You have been an able commander in the war effort. I think it's time you had some better equipment.
-; qstr_Accept_this_{s22}_ma|Accept this {s22}, may it aid you and your companions.
+qstr_Just_a_moment_{playe|Момент, {playername}. Герои вроде Вас и ваших товарищей заслуживают лучших клинок, доспехов, и лошадей.
+qstr_Wait_{playername}._Yo|Постойте, {playername}. Вы показали себя способным командиром в военной науке. Думаю настало время Вам надеть более подходящую экипировку.
+qstr_Accept_this_{s22}_ma|Примите {s22}, и пусть оно поможет Вам и Вашим воинам.
 qstr_the_Dwarves_so_that_|гномьих денег, так что, если окажетесь в Эреборе или Железных холмах, то сможете получить оружие из их прославленных кузней
 qstr_Gondor_so_that_if_yo|гондорских денег, так что, если окажетесь там, сможете приобрести какой-нибудь прославленный доспех
 qstr_Rohan_so_that_if_you|роханских денег, так что, если окажетесь там, сможете купить их знаменитых лошадей
@@ -1653,7 +1655,7 @@ qstr_The_{s9}_of_{s3}_ask|{s9} поселения {s3} попросил вас �
 qstr_The_{s9}_of_{s3}_aske|{s9} поселения {s3} попросил вас привезти ему {s6}, {reg5} мешков, в течение {reg0} дней.
 qstr_Escort_the_supply_tr|Сопроводите обоз в {s8}.
 qstr_The_{s9}_of_{s4}_aske|{s9} поселения {s4} попросил вас покончить с несколькими бандами диких орков в окрестностях города.
-; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of bandits making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
+qstr_The_{s9}_of_{s14}_ha|{s9} поселения {s14} попросил вас покончить с шайкой бандитов, досаждающих {s14}, которые разгуливают ночью по улицам и нападают на прохожих.
 qstr_refugees|беженцев
 qstr_slaves|рабов
 qstr_{s1}_Refugees|{s1} Беженцы

@@ -1112,6 +1112,8 @@ qstr_Breaking_camp...|Lager abbrechen...
 qstr_Party_morale_is_low.|Schlechte Moral: Soldaten desertieren aus deinem Trupp.
 qstr_Desertion|Desertion
 qstr_{s1}_has_deserted_fr|{s1} ist desertiert.
+qstr_You_don_t_have_enoug|Du hast nicht genügend Truppen, um deine Gefangenen zu bewachen. Die Wahrscheinlichkeit, dass sie fliehen, ist erhöht.
+qstr_{s1}_has_escaped_fro|{s1} ist geflohen.
 qstr_You_have_left_{s1}.|Du hast {s1} verlassen.
 qstr_You_are_entering_{s1|Du bist nun {s1} ({s2}).
 qstr_You_are_entering_{s1}|Du bist nun {s1}.

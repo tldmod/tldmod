@@ -62,7 +62,7 @@ qst_troublesome_bandits_text|{s9} из {s4} попросил вас уничто
 qst_deal_with_looters|Покончите с дикими орками
 qst_deal_with_looters_text|Управитель города {s4} попросил вас покончить с несколькими бандами диких орков в окрестностях {s4}.
 qst_deal_with_night_bandits|Разберитесь с ночными гоблинами
-; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
+qst_deal_with_night_bandits_text|Управитель города {s14} попросил вас покончить с бандитами, разгуливающими по ночам в {s14}.
 qst_deliver_food|Обеспечьте {s3} {reg5} порциями провизии
 qst_deliver_food_text|{s9} из {s3} попросил вас привезти ему {reg5} порций провизии в течение 10 дней.
 qst_deliver_iron|Привезите в {s3} {s6}, {reg5} штук

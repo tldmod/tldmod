@@ -179,7 +179,7 @@ dlga_player_hire_troop:close_window.1|Мне нужно потренироват
 dlga_player_hire_troop:tld_sell_prisoners|Я прив{ёл/ела} несколько пленных...
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Давайте взглянем на эти отбросы.
 dlga_player_hire_troop:tld_sell_prisoners_all|Я хочу, чтобы вы забрали всех заключенных, которые у меня есть.
-; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
+dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Очень хорошо, я заберу их всех в наши темницы.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Давайте просмотрим сведения о заключённых...
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Передумали, да?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Я прослежу, чтобы они не сбежали из наших темниц.
@@ -611,11 +611,11 @@ dlga_lord_talk:lord_leave_prison|Мне надо идти.
 dlga_lord_talk:lord_leave|Наша короткая беседа подошла к концу. Мне надо идти.
 dlga_lord_talk:lord_leave.1|Я долж{ен/на} идти.
 dlga_lord_leave_prison:close_window|Мы ещё встретимся.
-; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
-; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
+dlga_lord_leave:lord_offer_troops|{s23} {s24} у меня есть {reg41} {s25} которые {reg42?are:is} готовы присоединиться к Вам.
+dlga_lord_offer_troops:close_window|Спасибо, {reg42?Я с радостью приму их в свою команду, но боюсь, что у меня не хватит места для {reg41}}
 dlga_lord_offer_troops:close_window.1|Боюсь, что я не могу принять их в этот момент
-; dlga_lord_leave:lord_offer_item|{s23} {s24}
-; dlga_lord_offer_item:close_window|Thank you, I shall see  that it is put to good use.
+dlga_lord_leave:lord_offer_item|{s23} {s24}
+dlga_lord_offer_item:close_window|Спасибо, я позабочусь о том, чтобы это было использовано с пользой.
 dlga_lord_offer_item:close_window.1|Боюсь, мне прийдётся отказаться.
 dlga_lord_leave:close_window|Посмотрим, {playername}.
 dlga_lord_leave:close_window.1|Конечно, {playername}. Прощай.
@@ -927,9 +927,9 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|Мне нужен кт
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Идёт. Я разыщу этих гоблинов и покончу с ними.
 dlga_merchant_quest_taken_bandits:close_window|Сделаете? Я так рад это слышать. Удачи вам.
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Извините, у меня сейчас нет на это времени.
-; dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
-; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
-; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
+dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Ещё как можете! У нас завелась бандитская шайка, и я никак не могу справиться с ними, хоть в петлю лезь. Они выходят по ночам и грабят пьяных новобранцев, а, когда появляется стража, они исчезают с быстротой молнии. Мы не сумели поймать ни одного из них. Они нападают только на одиноких прохожих, никогда не отваживаясь показываться при виде какой-нибудь компании. Мне нужен кто-то, кто смог бы в одиночку выманить этих бандитов и победить их. Кажется, это единственный способ управиться с ними. Вы можете взяться за это?
+dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|У нас завелась бандитская шайка, и я никак не могу справиться с ними, хоть в петлю лезь. Они выходят по ночам и грабят пьяных новобранцев, а, когда появляется стража, они исчезают с быстротой молнии. Мы не сумели поймать ни одного из них. Они нападают только на одиноких прохожих, никогда не отваживаясь показываться при виде какой-нибудь компании. Мне нужен кто-то, кто смог бы в одиночку выманить этих бандитов и победить их. Кажется, это единственный способ управиться с ними. Вы можете взяться за это?
+dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Убить бандитов-разбойников? Почему нет? Сделаю!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Нет, меня это не интересует.
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|Как гора с плеч, {playername}. Вы можете рассчитывать на хорошую награду, если вернётесь с победой. Только берегите себя, хорошо?
 dlga_merchant_quest_requested:merchant_quest_brief.9|Начальник гарнизона ищет умелого воина, который мог бы сопроводить группу {s12} в {s13}.

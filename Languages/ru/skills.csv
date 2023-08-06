@@ -1,9 +1,9 @@
 skl_trade|Торговля
 skl_trade_desc|Торговцы становятся сговорчивее и предлагают более лучшее снаряжение. (умение отряда)
 skl_leadership|Лидерство
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
+skl_leadership_desc|С каждым новым уровнем этого навыка количество людей, которыми вы можете командовать, увеличивается на 5, поднимается боевой дух и слаженность в бою. Количество добровольцев, которые хотят вступить в ваш отряд, увеличивается. (умение лидера)
 skl_prisoner_management|Содержание пленных
-skl_prisoner_management_desc|С каждым новым уровнем этого навыка максимальное число пленных увеличивается на %d (умение лидера).
+skl_prisoner_management_desc|С каждым новым уровнем этого навыка максимальное число пленных увеличивается на %d. Увеличивает вероятность захвата в плен и хранения заключенных. (умение лидера).
 skl_persuasion|Единение с природой
 skl_persuasion_desc|Способность выживать в дикой природе и подчинять её своей воле. Этот навык влияет на способность отряда скрываться от врагов, а также на скорость движения отряда по лесной местности. (умение отряда)
 skl_engineer|-----
@@ -15,7 +15,7 @@ skl_surgery_desc|С каждым новым уровнем этого навык
 skl_wound_treatment|Перевязка ран
 skl_wound_treatment_desc|С каждым новым уровнем этого навыка скорость излечения отряда возрастает на 20%% (умение отряда).
 skl_inventory_management|Упаковка
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+skl_inventory_management_desc|С каждым новым уровнем этого навыка вместительность вашего инвентаря увеличивается на +6 пунктов. Уменьшает расход пищи. (умение лидера).
 skl_spotting|Зоркость
 skl_spotting_desc|С каждым новым уровнем этого навыка поле зрения отряда увеличивается на 10%% (умение отряда).
 skl_pathfinding|Поиск пути
