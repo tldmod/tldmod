@@ -28075,11 +28075,12 @@ command_cursor_scripts = [
     [(store_script_param, ":center", 1),
     (party_get_slot, ":mayor", ":center", slot_town_elder),
     (try_for_range, ":quest", mayor_quests_begin, mayor_quests_end_2),
+        (check_quest_active, ":quest"),
         (this_or_next|quest_slot_eq, ":quest", slot_quest_target_center, ":center"),
         (this_or_next|quest_slot_eq, ":quest", slot_quest_giver_center, ":center"),
         (this_or_next|quest_slot_eq, ":quest", slot_quest_object_center, ":center"),
         (quest_slot_eq, ":quest", slot_quest_giver_troop, ":mayor"),
-        (call_script, "script_cancel_quest"),
+        (call_script, "script_cancel_quest", ":quest"),
     (try_end),
 ]),
 
