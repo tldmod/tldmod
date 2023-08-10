@@ -4478,7 +4478,14 @@ mission_templates = [ # not used in game
                 (scene_prop_get_instance,":gate_no", "spr_gate_destructible_retreat", ":count"),
                 (scene_prop_set_slot, ":gate_no", scene_prop_open_or_close_slot, 1),
                 (prop_instance_get_starting_position, pos1, ":gate_no"),
-                (position_rotate_z, pos1, 85), 
+                (prop_instance_get_scale, pos2, ":gate_no"),
+                (position_get_scale_x, ":orientation", pos2),
+                (try_begin),
+                    (lt, ":orientation", 0), #mirrored?
+                    (position_rotate_z, pos1, -85),
+                (else_try),
+                    (position_rotate_z, pos1, 85), 
+                (try_end),
                 (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
                           
                 #find dependent barriers, move them underground
@@ -4685,12 +4692,14 @@ mission_templates = [ # not used in game
     (assign, ":spawn_point_blocked", 0),
     (get_player_agent_no, ":player_agent"),
     (try_for_range,":team",0,3), #cycle through defender teams, check if depleted and reinforce
+        (assign, ":reinforcements", 0),
         (try_begin),
           (neg|troop_slot_eq,"trp_no_troop",":team",-1), #team 0 slot number, choke point not taken yet
           (neg|troop_slot_ge,"trp_no_troop",":team",15), #if choke point not taken, we check for choke point guards
           #(lt,":num_defenders",14),
-          (assign, ":reinforcements", 1), # defender reinforcements trickling in.
+          (assign, ":reinforcements", 1), # defender reinforcements trickle in.
         (else_try), #if choke point is taken, we check overall defender number
+          (troop_slot_eq,"trp_no_troop",":team",-1),
           (store_normalized_team_count,":num_defenders",":defteam"), #note: gets overall defender number, not actual team size
           (lt,":num_defenders",30),
           (assign, ":reinforcements", 9), #1.5x attackers, to push them back.
@@ -5007,11 +5016,11 @@ mission_templates = [ # not used in game
               (gt, ":max_gates",0),
               (try_for_range,":count",0,":max_gates"), #gates loop
                 (scene_prop_get_instance,":gate_no", "spr_gate_destructible_retreat", ":count"),
+                (prop_instance_get_variation_id_2, ":var2", ":gate_no"),
+                (eq, ":var2", ":entry"),                
                 (scene_prop_slot_eq, ":gate_no", scene_prop_open_or_close_slot, 1),
                 (scene_prop_set_slot, ":gate_no", scene_prop_open_or_close_slot, 0),
                 (prop_instance_get_starting_position, pos1, ":gate_no"),
-                (prop_instance_get_variation_id_2, ":var2", ":gate_no"),
-                (eq, ":var2", ":entry"),
                 (position_rotate_z, pos1, 0), #back to starting position
                 (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
                 
