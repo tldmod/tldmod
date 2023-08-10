@@ -6202,7 +6202,7 @@ spr_glow_b 0 0 glow_b 0 0
 spr_ai_fadeout_sphere 16384 0 sphere_1m 0 0
 
 
-spr_ai_limiter_gate_breached_2m 81928 0 barrier_2m bo_barrier_2m 0
+spr_ai_limiter_spikes_broken 81928 0 barrier_2m bo_barrier_2m 0
 
 
 spr_save_compartibility4 0 0 0 0 0

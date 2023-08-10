@@ -22006,19 +22006,17 @@ scripts = [
 		(faction_slot_eq, ":fac", slot_faction_side, faction_side_good),
 		#(spawn_around_party, ":place", "pt_mound"),
         (call_script,"script_cf_spawn_around_party_on_walkable_terrain",":place", "pt_mound",3),        
-		(party_set_name, reg0, "@{s1}'s_Burial_Mound"),
-        (call_script, "script_move_party_to_hardcoded_locations", reg0), #Checks if party needs to be moved.          
+		(party_set_name, reg0, "@{s1}'s_Burial_Mound"),         
 	(else_try),
 		#(spawn_around_party, ":place", "pt_pyre"),
         (call_script,"script_cf_spawn_around_party_on_walkable_terrain",":place", "pt_pyre",3),       
-		(party_set_name, reg0, "@{s1}'s_Funeral_Pyre"),
-        (call_script, "script_move_party_to_hardcoded_locations", reg0), #Checks if party needs to be moved.            
+		(party_set_name, reg0, "@{s1}'s_Funeral_Pyre"),           
 	(try_end),
 	#(party_set_faction,reg0,":fac"),
 	(party_set_slot, reg0, slot_mound_state, 1),
 	(party_set_slot, reg0, slot_party_commander_party, ":hero"),
 	(party_set_slot, reg0, slot_mound_killer_faction, ":place_faction"),
-
+    (call_script, "script_move_party_to_hardcoded_locations", reg0), #Checks if party needs to be moved. 
  ]),
 #script_display_dead_heroes
 ("display_dead_heroes",[
