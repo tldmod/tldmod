@@ -3,7 +3,7 @@ skl_trade_desc|Los herreros y mercaderes de suministros se vuelven más dispuest
 skl_leadership|Liderazgo
 skl_leadership_desc|Cada punto incrementa el número máximo de tropas que puedes liderar en 5, incrementa la moral del grupo y su cohesión en combate. Encontrarás más y mejores voluntarios dispuestos a seguirte. (Habilidad de líder)
 skl_prisoner_management|Manejo de prisioneros
-skl_prisoner_management_desc|Cada nivel de esta habilidad incrementa el número máximo de prisioneros en %d. (Habilidad de líder)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
 skl_persuasion|Dominio de las tierras salvajes
 skl_persuasion_desc|La habilidad para sobrevivir en la naturaleza salvaje y doblegarla a tu voluntad. Esra habilidad afecta a la capacidad del grupo para esconderse de los enemigos, y la velocidad del grupo en terreno boscoso. (Habilidad de Grupo)
 skl_engineer|-----

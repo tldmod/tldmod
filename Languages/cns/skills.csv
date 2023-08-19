@@ -3,7 +3,7 @@ skl_trade_desc|你能够更好地与铁匠和物资官合作，让他们提供�
 skl_leadership|统御
 skl_leadership_desc|每点增加队伍人数上限5，提高队伍士气与战场凝聚力，同时能够让更多且更优秀的新兵愿意应征进入你的麾下。（领袖技能）
 skl_prisoner_management|俘虏管理
-skl_prisoner_management_desc|每点增加俘虏上限%d。(领袖技能)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
 skl_persuasion|自然力
 skl_persuasion_desc|助于在野外生存和掌控自然的能力。该能力会影响部队躲避敌人的能力和在有森林覆盖的地区移动的速度。（部队能力）
 skl_engineer|-----

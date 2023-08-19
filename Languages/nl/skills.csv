@@ -3,7 +3,7 @@ skl_trade_desc|Zorgt ervoor dat smeden en voorraad meesters beter meewerken en b
 skl_leadership|Leiderschap
 ; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|Gevangenen Beheer
-skl_prisoner_management_desc|Elk punt voor deze vaardigheid vergroot het maximum aantal gevangenen met %d (Leider vaardigheid)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
 skl_persuasion|Planten Vaardigheid
 skl_persuasion_desc|Het vermogen om te overleven in de wildernis en het naar je zin te buigen. Deze vaardigheid beïnvloedt het vermogen van de groep om zich voor de vijand te verbergen en de snelheid van de groep wanneer de groep zich op een bebost terrein bevindt. (groepsvaardigheid)
 skl_engineer|-----

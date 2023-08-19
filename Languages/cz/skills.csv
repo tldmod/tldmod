@@ -3,7 +3,7 @@ skl_trade_desc|Učiní kováře a zásobovací mistry více kooperativními a bu
 skl_leadership|Vůdcovství
 ; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|Vězeňský management
-skl_prisoner_management_desc|Každá úroveň této dovednosti zvyšuje maximální počet vězňů o %d. (Vůdcova dovednost)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
 skl_persuasion|Zálesáctví
 skl_persuasion_desc|Schopnost přežít v divoké přírodě a přizpůsobit si ji k obrazu svému. Tato dovednost zvyšuje schopnost družiny schovat se před nepřítelem, a rychlost tvé družiny v lese. (Dovednost skupiny)
 skl_engineer|-----

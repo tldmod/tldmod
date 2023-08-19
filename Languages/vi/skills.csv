@@ -3,7 +3,7 @@ skl_trade_desc|Làm cho thợ rèn và thợ cung cấp hợp tác hơn và cung
 skl_leadership|Khả năng lãnh đạo
 ; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
 skl_prisoner_management|Quản lý tù nhân
-skl_prisoner_management_desc|Mỗi cấp độ của kỹ năng này sẽ tăng số lượng tù nhân tối đa lên %d. (Kỹ năng lãnh đạo)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
 skl_persuasion|Wildcraft
 skl_persuasion_desc|Khả năng tồn tại trong vùng hoang dã và uốn nắn nó theo ý muốn của bạn. Kỹ năng này ảnh hưởng đến khả năng ẩn nấp khỏi kẻ thù của cả nhóm và tốc độ của nhóm khi ở trong địa hình nhiều cây cối. (Kỹ năng nhóm)
 skl_engineer|-----
