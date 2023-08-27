@@ -1743,7 +1743,7 @@ itemsfile version 2
  itm_harad_heavy_lamellar Harad_Heavy_Scale_Vest Harad_Heavy_Scale_Vest 5  CWE_heavy_armor_arabs_2a 134  CWE_heavy_armor_arabs_2b 1  CWE_heavy_armor_arabs_2b 0  CWE_heavy_armor_arabs_2c 167772160  CWE_heavy_armor_arabs_2d 536870912  16842765 0 1400 704643206 26 94 0 28 10 11 0 0 0 0 0 0 0
 0
 
- itm_harad_heavy Harasjala_Armor Harasjala_Armor 5  harad_lamellar 134  harad_heavy_1 1  harad_heavy_1 0  harad_heavy 167772160  CWE_heavy_armor_arabs_2d 536870912  16842765 0 2200 704643206 30 96 1 35 12 18 0 0 0 0 0 0 0
+ itm_harad_heavy Harasjala_Armor Harasjala_Armor 4  harad_heavy_0 134  harad_heavy_1 1  harad_heavy_1 0  harad_heavy 704643072  16842765 0 2200 704643206 30 96 1 35 12 18 0 0 0 0 0 0 0
 0
 
  itm_harad_pectoral Harad_Breastplate Harad_Breastplate 4  harad_tier_1_giles 134  harad_tier_2_giles 1  harad_tier_2_giles 0  harad_tier_3_giles 704643072  16842765 0 900 167772294 4 90 0 25 5 9 0 0 0 0 0 0 0
