@@ -761,5 +761,6 @@ script_troop_agent_set_banner = 759
 script_town_guard_patrols = 760
 script_siege_adjust_battle_size = 761
 script_reset_battle_size = 762
+script_game_get_use_string = 763
 
 

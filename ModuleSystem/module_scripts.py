@@ -32028,4 +32028,20 @@ if is_a_wb_script==1:
         (options_set_battle_size, "$player_battlesize"),
     (try_end),
      ]),
+     
+  #script_game_get_use_string #imported from native
+  # This script is called from the game engine for getting using information text
+  # INPUT: used_scene_prop_id  
+  # OUTPUT: s0
+  ("game_get_use_string",
+   [
+     (store_script_param, ":instance_id", 1),
+
+     (prop_instance_get_scene_prop_kind, ":scene_prop_id", ":instance_id"),
+     
+     (try_begin),
+        (eq, ":scene_prop_id", "spr_ammo_barrel"),
+        (str_store_string, s0, "@Refill Ammunition"),    
+     (try_end),
+    ]),     
 ] or []) 

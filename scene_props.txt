@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 2035
+ 2037
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -6203,6 +6203,12 @@ spr_ai_fadeout_sphere 16384 0 sphere_1m 0 0
 
 
 spr_ai_limiter_spikes_broken 81928 0 barrier_2m bo_barrier_2m 0
+
+
+spr_ammo_barrel 0 0 ammo_barrel bo_ammo_barrel 0
+
+
+spr_inventory_static 5 0 package bobaggage 0
 
 
 spr_save_compartibility4 0 0 0 0 0

@@ -1,4 +1,4 @@
-1971
+1972
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_639_wb__dev_^_B _rev_639_wb_|_dev_^_Built_2023-08-10_14:43___
+qstr__rev_642_wb__dev_^_B _rev_642_wb_|_dev_^_Built_2023-09-09_17:20___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -837,6 +837,7 @@ qstr_You_shapeshift_into_ You_shapeshift_into_a_bear!
 qstr_You_got_{reg1}_exper You_got_{reg1}_experience_in_bear_form.
 qstr_Your_ability_to_chan Your_ability_to_change_skin_has_manifested,_from_now_on_you_can_walk_wild_paths_both_as_man_and_a_bear.
 qstr_You_change_back_to_h You_change_back_to_human_form...
+qstr_Refill_Ammunition Refill_Ammunition
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
