@@ -1289,7 +1289,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_conversation_state", 1),
          (else_try),
            (eq, "$g_tld_conversation_state", 102), #end mission
-           (ge, ":cur_time", 7),
+           (ge, ":cur_time", 6),
            (val_add, "$g_tld_conversation_state", 1),
            (finish_mission, 0),
            # finish chain

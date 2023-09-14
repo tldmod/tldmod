@@ -2992,7 +2992,7 @@ simple_triggers = [
           (party_set_ai_patrol_radius, ":guard_party", 3), #must be tight radius
           
           #fill it up with lord army reinforcements and upgrade a lot
-          (store_random_in_range, ":reinforcement_waves", 50, 60), #average about 8 troops per reinf
+          (store_random_in_range, ":reinforcement_waves", 80, 100), #average about 8 troops per reinf
           (try_for_range, ":unused", 0, ":reinforcement_waves"),
             (call_script, "script_cf_reinforce_party", ":guard_party"),
           (try_end),

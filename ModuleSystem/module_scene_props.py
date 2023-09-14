@@ -1806,7 +1806,7 @@ scene_props = [
   #(entry_point_get_position,pos1,39),
   #(agent_set_position, "$gate_aggravator_agent", pos1), # place gate aggravator agent to proper position
     ]),
-], 3000),
+], 4000),
 
 ("tree_destructible",sokf_destructible|spr_hit_points(600),"tree_e_2","bo_tree_e_2",   [
    (ti_on_scene_prop_destroy,

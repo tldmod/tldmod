@@ -1707,7 +1707,7 @@ troops = [
       attr_tier_6,wp_tier_6,knows_common|knows_riding_4|knows_shield_3|knows_power_strike_3|knows_ironflesh_3,uruk_hai_face1,uruk_hai_face2],
 ["high_captain_of_isengard","High_Captain_of_Isengard","High_Captains_of_Isengard",tf_urukhai| tfg_gloves| tfg_armor| tfg_helm| tfg_boots,0,0,fac_isengard,
    [itm_isen_uruk_helm_d,itm_isen_uruk_heavy_c,itm_evil_gauntlets_a,itm_uruk_greaves,itm_isen_uruk_shield_b,itm_isengard_sword,],
-      attr_tier_6,wp_tier_6,knows_common|knows_riding_5|knows_shield_4|knows_power_strike_5|knows_ironflesh_3,uruk_hai_face1,uruk_hai_face2],
+      attr_tier_6,wp_tier_6,knows_common|knows_tactics_8|knows_riding_5|knows_shield_4|knows_power_strike_5|knows_ironflesh_3,uruk_hai_face1,uruk_hai_face2],
 ["lieutenant_of_mordor","Lieutenant_of_Mordor","Lieutenants_of_Mordor",tf_evil_man| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_mordor,
    [itm_mordor_cap_helm,itm_m_cap_armor,itm_leather_gloves,itm_uruk_greaves,itm_mordor_man_shield_a,itm_mordor_longsword,itm_mordor_warhorse2,],
       attr_tier_6,wp_tier_6,knows_common|knows_tactics_1|knows_athletics_2|knows_shield_1|knows_power_strike_4,mordor_man1,mordor_man2],

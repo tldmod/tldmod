@@ -4861,7 +4861,12 @@ scripts = [
 	(else_try),
         (eq, "$g_player_is_captive", 1), #while burning trees
 		(eq, ":template_no", "pt_ents"),
-		(set_trigger_result, 45),        
+		(set_trigger_result, 45),      
+ 	(else_try),
+        (faction_get_slot, ":guardian_party_exists", "fac_isengard", slot_faction_guardian_party),
+		(gt, ":guardian_party_exists", 1),
+        (eq, ":party_no", ":guardian_party_exists"),
+		(set_trigger_result, 45),       
 	(else_try),
 		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
 		(party_get_skill_level, ":speed_multiplier", ":party_no", skl_persuasion), #Wildcraft
@@ -5843,6 +5848,8 @@ scripts = [
         	(neg|check_quest_active, "qst_guardian_party_quest"),
         	(quest_slot_ge, "qst_guardian_party_quest", slot_quest_current_state, 1), #Or Lords are going to be scripted
         	(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 5), #5 when GP is defeated.
+            (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_isengard),
+            (display_message, "@legion defeated"),
        	(else_try),
        		(eq, ":root_party", ":guardian_party_exists"),
         	(check_quest_active, "qst_guardian_party_quest"),
@@ -5857,6 +5864,8 @@ scripts = [
 			  (gt, ":lord_party", 0),
               (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
             (try_end),
+            (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_isengard),
+            (display_message, "@legion defeated"),
         (try_end),
 
      	# Guardian Party Quest - END
@@ -22010,12 +22019,12 @@ scripts = [
 	(else_try),
 		#(spawn_around_party, ":place", "pt_pyre"),
         (call_script,"script_cf_spawn_around_party_on_walkable_terrain",":place", "pt_pyre",3),       
-		(party_set_name, reg0, "@{s1}'s_Funeral_Pyre"),           
+		(party_set_name, reg0, "@{s1}'s_Funeral_Pyre"),        
 	(try_end),
 	#(party_set_faction,reg0,":fac"),
-	(party_set_slot, reg0, slot_mound_state, 1),
-	(party_set_slot, reg0, slot_party_commander_party, ":hero"),
-	(party_set_slot, reg0, slot_mound_killer_faction, ":place_faction"),
+    (party_set_slot, reg0, slot_mound_state, 1),
+    (party_set_slot, reg0, slot_party_commander_party, ":hero"),
+    (party_set_slot, reg0, slot_mound_killer_faction, ":place_faction"),        
     (call_script, "script_move_party_to_hardcoded_locations", reg0), #Checks if party needs to be moved. 
  ]),
 #script_display_dead_heroes
@@ -23114,6 +23123,8 @@ scripts = [
     
     #determine talker
     (try_begin),
+      (this_or_next|eq, ":convo_code", tld_cc_gandalf_helms_deep),
+      (this_or_next|eq, ":convo_code", tld_cc_gandalf_isengard),
       (this_or_next|eq, ":convo_code", tld_cc_gandalf_advice),
       (this_or_next|eq, ":convo_code", tld_cc_gandalf_ally_down),
       (this_or_next|eq, ":convo_code", tld_cc_gandalf_enemy_down),
@@ -23124,6 +23135,7 @@ scripts = [
     (try_end),
     
     #fill up dialog lines in strings s50, s51... and set number of lines
+    ##GANDALF
     (try_begin),
       (eq, ":convo_code", tld_cc_gandalf_advice),
       
@@ -23217,6 +23229,75 @@ scripts = [
       (assign, "$g_tld_convo_lines", 5),
       (val_or, "$g_tld_conversations_done", tld_conv_bit_gandalf_victory),
     (else_try),
+      (eq, ":convo_code", tld_cc_gandalf_helms_deep),            
+      (str_store_string, s50, "@Oh, {playername}, what a curious coincidence that I happen upon you, of all people."),
+      (str_store_string, s51, "@Curious indeed, what tidings do you bring, Mithrandir?"),
+      (str_store_string, s52, "@There's a big mess I'm trying to clean up in Western Rohan, and I'm afraid I'm running out of time. Your assistance would mean a great deal to me, {playername}."),
+      (str_store_string, s53, "@What can I do?"),      
+      (str_store_string, s54, "@Saruman has unleashed Isengard. Orcs are marching against Helm's Deep. Go there, help King Theoden defend the ancient fortress. It is crucial for my plans that Rohan's strength does not fail. Leave now, with all your haste!"),     
+      (assign, "$g_tld_convo_lines", 5),
+      (val_or, "$g_tld_conversations_done", tld_cc_gandalf_helms_deep),  
+      (call_script, "script_send_legion", "p_town_isengard", "p_town_hornburg", 50),
+      (faction_get_slot, ":guardian_party", "fac_isengard", slot_faction_guardian_party),
+      (party_add_leader, ":guardian_party", "trp_high_captain_of_isengard"),
+      (troop_raise_skill, "trp_high_captain_of_isengard", skl_tactics, 10),
+     (try_begin),
+          (troop_get_slot, ":theoden_party", "trp_rohan_lord", slot_troop_leaded_party),
+          (gt, ":theoden_party", 0),
+          (party_is_active, ":theoden_party"),
+          (call_script, "script_party_set_ai_state", ":theoden_party", spai_holding_center, "p_town_hornburg"),
+          (party_set_ai_initiative, ":theoden_party",0),        
+          (party_set_slot, ":theoden_party", slot_party_scripted_ai, 1), #Kham - override AI when scripted.
+          (display_message, "@theoden on his way?"),
+      (try_end),
+      (store_current_hours, ":cur_hours"),
+      (val_add, ":cur_hours", 72), #72 hours no AI recalc
+      (faction_set_slot, "fac_rohan", slot_faction_scripted_until, ":cur_hours"),
+      (faction_set_slot, "$g_cheat_selected_faction", slot_faction_ai_state, sfai_default),
+      (faction_set_slot, "$g_cheat_selected_faction", slot_faction_ai_object, -1), 
+      (try_for_range, ":unused", 0, 15), #weaken HD garrison
+        (call_script, "script_party_count_fit_for_battle", "p_town_hornburg"),
+        (gt, reg0, 150),
+        (inflict_casualties_to_party_group, p_town_hornburg, 200, p_temp_wounded), 
+      (try_end),
+      (try_for_range, ":unused", 0, 10), #weaken Theoden
+        (troop_get_slot, ":theoden_party", "trp_rohan_lord", slot_troop_leaded_party),
+        (gt, ":theoden_party", 0),
+        (call_script, "script_party_count_fit_for_battle", ":theoden_party"),
+        (gt, reg0, 100),
+        (inflict_casualties_to_party_group, ":theoden_party", 200, p_temp_wounded),
+        (troop_set_health, "trp_rohan_lord", 100),        
+      (try_end),        
+    (else_try),
+      (eq, ":convo_code", tld_cc_gandalf_isengard),
+      
+      (str_store_string, s50, "@Looks like I arrived just in time - again. But you have not been idle either, as I see. Well done, {playername}!"),
+      (str_store_string, s51, "@This was a hard battle, Mithrandir! Saruman's host is scattered. Let us now cut the head of the serpent!"),
+      (str_store_string, s52, "@Indeed. Isengard shall be our next target. Strange things are going about in Nan Curunir. I want you to head there as soon as you can. Do not idle!"),
+      (assign, "$g_tld_convo_lines", 3),
+      (val_or, "$g_tld_conversations_done", tld_cc_gandalf_isengard),
+      
+        #Ents attack Isengard
+        (set_spawn_radius,4),
+        (spawn_around_party, "p_town_isengard", "pt_none"),
+        (assign, ":ent_party", reg0),
+        (party_set_name, ":ent_party", "@Ents"),
+        (party_add_members, ":ent_party", trp_ent, 50),
+        (party_set_icon, ":ent_party", icon_ent),
+        (party_set_ai_object, ":ent_party", "p_town_isengard"),
+        (party_set_slot, ":ent_party", slot_party_ai_state, spai_undefined),
+        (party_set_faction, ":ent_party", "$players_kingdom"),
+        (party_set_ai_initiative, ":ent_party", 0),
+      (party_set_slot, "p_town_isengard", slot_center_is_besieged_by, ":ent_party"),
+      (call_script, "script_party_set_ai_state", ":ent_party", spai_besieging_center, "p_town_isengard"),
+      (party_set_ai_behavior, ":ent_party", ai_bhvr_attack_party),
+      (party_set_flags, ":ent_party", pf_default_behavior, 1),
+      (party_set_slot, ":ent_party", slot_party_ai_substate, 1),
+      (party_set_slot, ":ent_party", slot_party_scripted_ai, 1),      
+
+
+    ##NAZGUL
+    (else_try), 
       (eq, ":convo_code", tld_cc_nazgul_baggins),
       
       (str_store_string, s50, "@Bagginsssss... Sssshhhire..."),
@@ -23274,6 +23355,8 @@ scripts = [
     
     #determine mission troop and its data
     (try_begin),
+      (this_or_next|eq, ":mission_code", tld_cc_gandalf_helms_deep),
+      (this_or_next|eq, ":mission_code", tld_cc_gandalf_isengard),
       (this_or_next|eq, ":mission_code", tld_cc_gandalf_advice),
       (this_or_next|eq, ":mission_code", tld_cc_gandalf_ally_down),
       (this_or_next|eq, ":mission_code", tld_cc_gandalf_enemy_down),
@@ -28083,6 +28166,67 @@ command_cursor_scripts = [
         (call_script, "script_cancel_quest", ":quest"),
     (try_end),
 ]),
+
+
+# script_send_legion
+# INPUT:    arg1 = home_center
+#           arg2 = destination_center
+#           arg3 = legion size
+  ("send_legion",
+    [
+    (store_script_param, ":home_center",1),
+    (store_script_param, ":destination",2),
+    (store_script_param, ":reinforcement_waves",3),
+    
+    (store_faction_of_party, ":faction", ":home_center", ),
+      (set_spawn_radius, 1),
+      (spawn_around_party, ":home_center", "pt_none"),
+      (assign, ":guard_party", reg0),
+      (faction_set_slot, ":faction", slot_faction_guardian_party, ":guard_party"),
+      (faction_set_slot, ":faction", slot_faction_guardian_party_spawned, 1),
+      
+      #party slots
+      (str_store_faction_name, s6, ":faction"),
+      (try_begin),
+        (faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
+        (party_set_name, ":guard_party", "@Army of {s6}"),
+      (else_try),
+        (party_set_name, ":guard_party", "@Host of {s6}"),
+      (try_end),
+      (try_begin),
+        (eq, ":faction", "fac_isengard"),
+        (party_set_icon, ":guard_party", icon_wargrider_walk_x4),
+      # (else_try),
+        # (eq, ":faction", "fac_woodelf"),
+        # (party_set_icon, ":guard_party", icon_mirkwood_elf_x3),
+      (try_end),
+      (party_set_slot, ":guard_party", slot_party_type, spt_guardian),
+      (party_set_slot, ":guard_party", slot_party_victory_value, ws_guard_vp), # huge victory points for party kill
+      (party_set_slot, ":guard_party", slot_party_home_center, ":home_center"),
+      (party_set_faction, ":guard_party", ":faction"),
+      (party_set_slot, ":guard_party", slot_party_ai_object, ":destination"),
+      (party_set_slot, ":destination", slot_center_is_besieged_by, ":guard_party"),
+      (call_script, "script_party_set_ai_state", ":guard_party", spai_besieging_center, ":destination"),
+      (party_set_ai_behavior, ":guard_party", ai_bhvr_attack_party),
+      (party_set_flags, ":guard_party", pf_default_behavior, 1),
+      (party_set_slot, ":guard_party", slot_party_ai_substate, 1),      
+
+      #fill it up with lord army reinforcements and upgrade a lot
+      #(store_random_in_range, ":reinforcement_waves", 50, 60), #average about 8 troops per reinf
+      (try_for_range, ":unused", 0, ":reinforcement_waves"),
+        (call_script, "script_cf_reinforce_party", ":guard_party"),
+      (try_end),
+      (try_for_range, ":unused", 0, 50),
+        (party_upgrade_with_xp, ":guard_party", 6000, 0),
+      (try_end),
+      # (store_random_in_range, ":reinforcement_waves", 50, 60), #average about 8 troops per reinf
+      # (try_for_range, ":unused", 0, ":reinforcement_waves"),
+        # (call_script, "script_cf_reinforce_party", ":guard_party"),
+      # (try_end),
+      
+        # (str_store_party_name, s5, ":destination"),
+        # (display_message, "@host attacking {s5}"),
+     ]),
 
 ]
 

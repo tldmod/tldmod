@@ -1,4 +1,4 @@
-1972
+1985
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_642_wb__dev_^_B _rev_642_wb_|_dev_^_Built_2023-09-09_17:20___
+qstr__rev_643_wb__dev_^_B _rev_643_wb_|_dev_^_Built_2023-09-14_11:04___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -300,6 +300,7 @@ qstr_Med Med
 qstr_Bad Bad
 qstr_You_gained_{reg84}_e You_gained_{reg84}_experience_from_your_intelligence.
 qstr_You_gained_{reg84}_w You_gained_{reg84}_weapon_points_from_your_agility.
+qstr_legion_defeated legion_defeated
 qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded,_{reg6}_routed
 qstr_{reg4}_killed_{reg5}_ {reg4}_killed,_{reg5}_wounded
 qstr_{reg4}_killed_{reg5}_r {reg4}_killed,_{reg5}_routed
@@ -631,6 +632,16 @@ qstr_Thank_you_Mithrandir Thank_you,_Mithrandir!
 qstr_The_wizard_Saruman_i The_wizard_Saruman_is_gone_and_Barad_Dur_has_been_shattered_to_dust_along_with_its_Dark_Lord!_All_the_peoples_of_Middle_Earth_are_relieved_of_the_threat_that_nearly_consumed_all_that_was_good_and_pure_in_this_world._The_Enemy_is_vanquished_and_The_King_has_returned!
 qstr_It_was_a_long_and_bl It_was_a_long_and_bloody_war_and_many_of_our_close_friends_are_also_no_longer_with_us.
 qstr_There_is_much_to_reg There_is_much_to_regret_and_mourn,_and_even_more_to_rebuild_and_mend_in_the_coming_days._But_for_now,_let_us_be_jubilant_with_those_of_our_friends_that_are_with_us_still_and_celebrate_all_we_have_achieved_in_The_Last_Days_Of_The_Third_Age.
+qstr_Oh_{playername}_what Oh,_{playername},_what_a_curious_coincidence_that_I_happen_upon_you,_of_all_people.
+qstr_Curious_indeed_what_ Curious_indeed,_what_tidings_do_you_bring,_Mithrandir?
+qstr_There_s_a_big_mess_I There's_a_big_mess_I'm_trying_to_clean_up_in_Western_Rohan,_and_I'm_afraid_I'm_running_out_of_time._Your_assistance_would_mean_a_great_deal_to_me,_{playername}.
+qstr_What_can_I_do? What_can_I_do?
+qstr_Saruman_has_unleashe Saruman_has_unleashed_Isengard._Orcs_are_marching_against_Helm's_Deep._Go_there,_help_King_Theoden_defend_the_ancient_fortress._It_is_crucial_for_my_plans_that_Rohan's_strength_does_not_fail._Leave_now,_with_all_your_haste!
+qstr_theoden_on_his_way? theoden_on_his_way?
+qstr_Looks_like_I_arrived Looks_like_I_arrived_just_in_time_-_again._But_you_have_not_been_idle_either,_as_I_see._Well_done,_{playername}!
+qstr_This_was_a_hard_batt This_was_a_hard_battle,_Mithrandir!_Saruman's_host_is_scattered._Let_us_now_cut_the_head_of_the_serpent!
+qstr_Indeed._Isengard_sha Indeed._Isengard_shall_be_our_next_target._Strange_things_are_going_about_in_Nan_Curunir._I_want_you_to_head_there_as_soon_as_you_can._Do_not_idle!
+qstr_Ents Ents
 qstr_Bagginsssss..._Ssssh Bagginsssss..._Sssshhhire...
 qstr_I..._don_t_know! I..._don't_know!
 qstr_It..._beckonsssssss. It..._beckonsssssss...
@@ -763,6 +774,8 @@ qstr_Total:_{reg62} Total:_{reg62}
 qstr_lord_{reg1}:_{s1}_is_at lord_{reg1}:_{s1}_is_attacking_{s2}
 qstr_lord_{reg1}:_{s1}_NOT_a lord_{reg1}:_{s1}_NOT_attacking_{s2}
 qstr_{s2}_{reg3?was:is_ar {s2}_{reg3?was:is_around_{s5}.
+qstr_Army_of_{s6} Army_of_{s6}
+qstr_Host_of_{s6} Host_of_{s6}
 qstr_warp_array_created_a warp_array_created_at_{reg1}
 qstr_warp_temp_array_crea warp_temp_array_created_at_{reg1}
 qstr_{s0} {s0}
