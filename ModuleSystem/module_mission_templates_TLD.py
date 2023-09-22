@@ -4441,139 +4441,153 @@ reward_birds_wb = ((is_a_wb_mt==1) and [
 	(try_end),
 	]),
 
-    (0.1, 0, 0,  #change refresh rate to alter wing speed - copy trigger for separate bird speeds 
-    [
-	(store_mission_timer_b_msec, ":cur_time"),
-	(gt, ":cur_time", 500), #1/2 second grace period 
-      (set_fixed_point_multiplier, 100),
-      (assign, ":var0", 0),
-      (try_begin), 
-        #using global var for bird prop; if we validate player_has_item here it will stop animating if they discard it!
-        #(assign, ":var1", "$birdprop"),
-		(try_for_range, ":var1", "spr_birds_crebain", "spr_birds_end"), #InVain: So it also detects pre-palced bird props in scenes, not only those spawned from reward items
-            
-        (scene_prop_get_num_instances, ":var2", ":var1"),
-        (ge, ":var2", 1),
-        (try_for_range, ":var3", 0, ":var2"),
-          (scene_prop_get_instance, ":var4", ":var1", ":var3"),
-          (scene_prop_slot_eq, ":var4", 41, 0),
-          (scene_prop_get_slot, ":var5", ":var4", 37),
-          (prop_instance_deform_to_time, ":var4", ":var5"),
-          (val_add, ":var5", 1),
-          (try_begin),
-            (ge, ":var5", 26),
-            (assign, ":var5", 1),
-          (try_end),
-          (scene_prop_set_slot, ":var4", 37, ":var5"),
-        (try_end),
-      (else_try),
-        (assign, ":var0", 1),
-      (try_end),
-      (eq, ":var0", 1),
-       (try_begin),
-       # # (eq, "$cheat_mode_sa", 1),
-         #(display_message, "@{!}DEBUG -- vertex keys woron END (stage no animated crows)"),
-       (try_end),
-	   (try_end),
-    ],
-    []),
+    ##InVain: Got rid of this trigger, we can do it all via prop_instance_deform_in_cycle_loop within the scene prop entry
+    # (0.1, 0, 0,  #change refresh rate to alter wing speed - copy trigger for separate bird speeds 
+    # #slot 37 = animation progress
+    # #slot 41: 0=alive; 1=dead; 2=?
+    # [
+    # (store_mission_timer_b_msec, ":cur_time"),
+    # (gt, ":cur_time", 500), #1/2 second grace period 
+    # (set_fixed_point_multiplier, 100),
+    # (assign, ":check", 0), #what's this for?
+    # (try_begin), 
+        # (try_for_range, ":birdprop", "spr_birds_crebain", "spr_birds_end"), #InVain: So it also detects pre-palced bird props in scenes, not only those spawned from reward items
+            # (scene_prop_get_num_instances, ":num_instances", ":birdprop"),
+            # (ge, ":num_instances", 1),
+            # (try_for_range, ":count", 0, ":num_instances"),
+                # (scene_prop_get_instance, ":instance_no", ":birdprop", ":count"),
+                # (scene_prop_slot_eq, ":instance_no", 41, 0),
+                # (scene_prop_get_slot, ":progress", ":instance_no", 37),
+                # (prop_instance_deform_to_time, ":instance_no", ":progress"),
+                # (val_add, ":progress", 1),
+                # (try_begin),
+                    # (ge, ":progress", 26),
+                    # (assign, ":progress", 1),
+                # (try_end),
+                # (scene_prop_set_slot, ":instance_no", 37, ":progress"),
+            # (try_end),
+        # (else_try),
+            # (assign, ":check", 1),
+        # (try_end),
+        # (eq, ":check", 1),
+    # (try_end),
+    # ],
+    # []),
 
 
-    (0.1, 0, ti_once, 
+    (0.4, 0, 0, 
+    #slot 41: 0=alive; 1=dead; 2=?
+    #slot 38 = rotation 
+    #slot 39 = ideal height
+    #pos1 = destination
+    [    ],
     [
-	(store_mission_timer_b_msec, ":cur_time"),
+    (store_mission_timer_b_msec, ":cur_time"),
 	(gt, ":cur_time", 500), #1/2 second grace period 
       (set_fixed_point_multiplier, 100),
-      (assign, ":var0", 1),
       (try_begin),
         # (eq, "$g_disable_flying_birds", 1),
       # (else_try),
-        (try_for_range, ":var1", "spr_birds_crebain", "spr_birds_end"), 
-          (scene_prop_get_num_instances, ":var2", ":var1"),
-          (ge, ":var2", 1),
-          (assign, ":var0", 0),
-          (try_for_range, ":var3", 0, ":var2"),
-            (scene_prop_get_instance, ":var4", ":var1", ":var3"),
+        (try_for_range, ":birdprop", "spr_birds_crebain", "spr_birds_end"), 
+          (scene_prop_get_num_instances, ":num_instances", ":birdprop"),
+          (ge, ":num_instances", 1),
+          (try_for_range, ":count", 0, ":num_instances"),
+            (scene_prop_get_instance, ":instance_no", ":birdprop", ":count"),
             (try_begin),
-              (scene_prop_slot_eq, ":var4", 41, 0),
-              (try_begin),
-                (try_begin),
-                  (scene_prop_get_slot, ":var5", ":var4", 44),
-                  (ge, ":var5", 0),
-                  (prop_instance_get_position, pos1, ":var5"),
-                (else_try),
-                  (prop_instance_get_starting_position, pos1, ":var4"),
-                (try_end),
-                (try_begin),
-                  (prop_instance_get_position, pos2, ":var4"),
-                  (get_distance_between_positions, ":var6", pos2, pos1),
-                  (le, ":var6", 200),
+              (scene_prop_slot_eq, ":instance_no", 41, 0), #bird not shot or dead
+              
+              #(try_begin),
+                # (try_begin), #unused, probably: find initial destination pos, if slot not set, use prop starting pos
+                  # (scene_prop_get_slot, ":var5", ":instance_no", 44),
+                  # (ge, ":var5", 0),
+                  # (prop_instance_get_position, pos1, ":var5"),
+                # (else_try),
+                  (prop_instance_get_starting_position, pos1, ":instance_no"),
+                # (try_end),
+                
+                (try_begin), #if destination = starting pos, move prop away 
+                  (prop_instance_get_position, pos2, ":instance_no"),
+                  (get_distance_between_positions, ":dist_1", pos2, pos1),
+                  (le, ":dist_1", 200),
                   (try_begin),
-                    (neg|scene_prop_slot_eq, ":var4", 45, 1),
+                    (neg|scene_prop_slot_eq, ":instance_no", 45, 1),
                     (position_move_z, pos2, 700),
                   (try_end),
-                  (position_move_x, 2, 4000),
-                  (prop_instance_set_position, ":var4", pos2),
-                  (prop_instance_enable_physics, ":var4", 1),
+                  (position_move_x, pos2, 4000),
+                  (prop_instance_set_position, ":instance_no", pos2),
+                  (prop_instance_enable_physics, ":instance_no", 1),
                 (try_end),
-                (assign, ":var7", 1),
-                (try_begin),
-                  (prop_instance_is_animating, ":var8", ":var4"),
-                  (eq, ":var8", 1),
-                  (assign, ":var7", 0),
-                  (prop_instance_get_position, pos3, ":var4"),
-                  (prop_instance_get_animation_target_position, 2, ":var4"),
-                  (get_distance_between_positions, ":var9", pos2, pos3),
-                  (le, ":var9", 50),
-                  (assign, ":var7", 1),
+                
+                (assign, ":is_close", 1),
+                (try_begin), #check if prop is animating and if close to destination
+                  (prop_instance_is_animating, ":is_animating", ":instance_no"),
+                  (eq, ":is_animating", 1),
+                  (assign, ":is_close", 0),
+                  (prop_instance_get_position, pos3, ":instance_no"),
+                  (prop_instance_get_animation_target_position, pos2, ":instance_no"),
+                  (get_distance_between_positions, ":dist_2", pos2, pos3),
+                  (le, ":dist_2", 600),
+                  (assign, ":is_close", 1),
                 (try_end),
-                (eq, ":var7", 1),
-                (scene_prop_get_slot, ":var10", ":var4", 38),
-                (scene_prop_get_slot, ":var11", ":var4", 39),
-                (val_add, ":var10", 30),
-                (position_rotate_z, pos1, ":var10"),
-                (position_move_x, 1, 4000),
-                (try_begin),
-                  (neg|scene_prop_slot_eq, ":var4", 45, 1),
-                  (store_add, ":var12", 700, ":var11"),
+                
+                (eq, ":is_close", 1),
+                (scene_prop_get_slot, ":slot_38", ":instance_no", 38), #rotation
+                (scene_prop_get_slot, ":slot_39", ":instance_no", 39), #height offset ..or something
+
+                (val_add, ":slot_38", 30), #add rotation
+                (position_rotate_z, pos1, ":slot_38"),
+                (position_move_x, pos1, 4000), #move destination forward
+
+                (try_begin), #get ideal height from slot
+                  (neg|scene_prop_slot_eq, ":instance_no", 45, 1),
+                  (store_add, ":ideal_height", 700, ":slot_39"),
                 (else_try),
-                  (assign, ":var12", ":var11"),
+                  (assign, ":ideal_height", ":slot_39"),
                 (try_end),
-                (position_move_z, pos1, ":var12"),
-                (try_begin),
-                  (position_get_distance_to_terrain, ":var13", pos1),
-                  (store_div, ":var14", 700, 2),
-                  (this_or_next|ge, 0, ":var13"),
-                  (ge, ":var14", ":var13"),
+                (position_move_z, pos1, ":ideal_height"),
+
+                (try_begin), #if pos1 is too low, add ideal height
+                  (position_get_distance_to_terrain, ":height", pos1),
+                  (store_div, ":var14", 700, 2), #=350?
+                  (this_or_next|ge, 0, ":height"),
+                  (ge, ":var14", ":height"),
                   (position_set_z_to_ground_level, pos1),
-                  (position_move_z, pos1, ":var12"),
+                  (position_move_z, pos1, ":ideal_height"),
                 (try_end),
-                (prop_instance_get_position, pos2, ":var4"),
-                (get_distance_between_positions, ":var15", pos2, pos1),
-                (val_div, ":var15", 9),
-                (prop_instance_animate_to_position, ":var4", pos1, ":var15"),
-                (try_begin),
-                  (ge, ":var10", 360),
-                  (assign, ":var10", 0),
-                  (store_random_in_range, ":var11", 0, 16),
-                  (val_mul, ":var11", 80),
-                  (scene_prop_set_slot, ":var4", 39, ":var11"),
+                
+                #calculate speed and send them off
+                (prop_instance_get_position, pos2, ":instance_no"),
+                (get_distance_between_positions, ":dist_3", pos2, pos1),
+                (val_div, ":dist_3", 9), #speed is dist/9
+                (prop_instance_animate_to_position, ":instance_no", pos1, ":dist_3"), #send them on their way
+
+                # debug, for tracking
+                # (set_spawn_position, pos1), 
+                # (spawn_scene_prop, spr_banner_stand_a),
+
+                (try_begin), #assign new rotation and height slots, one could also add some randomness here, instead of flying in circles
+                  (ge, ":slot_38", 360), #only change height if it's flown a full circle already
+                  (assign, ":slot_38", 0),
+                  (store_random_in_range, ":slot_39", 0, 16),
+                  (val_mul, ":slot_39", 80),
+                  (scene_prop_set_slot, ":instance_no", 39, ":slot_39"),
                 (try_end),
-                (scene_prop_set_slot, ":var4", 38, ":var10"),
-              (try_end),
+                (scene_prop_set_slot, ":instance_no", 38, ":slot_38"),
+              #(try_end),
+              
             (else_try), #Dead birds - currently unused 
-              (scene_prop_slot_eq, ":var4", 41, 1),
+              (scene_prop_slot_eq, ":instance_no", 41, 1),
               (set_fixed_point_multiplier, 100),
               (position_set_x, pos0, 2500),
               (position_set_y, pos0, 80),
               (position_set_z, pos0, 0),
-              (prop_instance_dynamics_set_properties, ":var4", 0),
+              (prop_instance_dynamics_set_properties, ":instance_no", 0),
               (position_set_x, pos0, 0),
               (position_set_y, pos0, 0),
               (position_set_z, pos0, -800),
-              (prop_instance_dynamics_set_omega, ":var4", 0),
+              (prop_instance_dynamics_set_omega, ":instance_no", 0),
               (try_begin),
-                (prop_instance_get_position, pos1, ":var4"),
+                (prop_instance_get_position, pos1, ":instance_no"),
                # (particle_system_burst, "psys_hit_bird_blood", pos1, 1),
                # (particle_system_burst, "psys_hit_bird_feathers", pos1, 1),
                 (position_get_distance_to_terrain, ":var15", pos1),
@@ -4582,26 +4596,20 @@ reward_birds_wb = ((is_a_wb_mt==1) and [
                 #(position_align_to_ground, pos1, 1, 1),
                 (position_rotate_x, pos1, -90),
                 (position_rotate_z, pos1, ":var10"),
-                (prop_instance_enable_physics, ":var4", 0),
-                (prop_instance_set_position, ":var4", pos1),
+                (prop_instance_enable_physics, ":instance_no", 0),
+                (prop_instance_set_position, ":instance_no", pos1),
                 (position_move_z, pos1, -1),
-                (prop_instance_animate_to_position, ":var4", pos1, 100000000),
-                (scene_prop_set_slot, ":var4", 41, 2),
-                (scene_prop_get_slot, ":var16", ":var4", 43),
-                (prop_instance_deform_to_time, ":var4", ":var16"),
+                (prop_instance_animate_to_position, ":instance_no", pos1, 100000000),
+                (scene_prop_set_slot, ":instance_no", 41, 2),
+                (scene_prop_get_slot, ":var16", ":instance_no", 43), #dead frame
+                (prop_instance_deform_to_time, ":instance_no", ":var16"),
               (try_end),
             (try_end),
+            
           (try_end),
         (try_end),
       (try_end),
-      (eq, ":var0", 1),
-      # (try_begin),
-       # # (eq, "$cheat_mode_sa", 1),
-        # (assign, "$g_mission_cam_set_bird_target", -2),
-        # (display_message, "@{!}DEBUG -- animation of flight END (stage no animated birds)", 0x00005500),
-      # (try_end),
-    ],
-    [])
+    ])
 	] or [])
 
 	

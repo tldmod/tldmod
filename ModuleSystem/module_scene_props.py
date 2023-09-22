@@ -3329,50 +3329,35 @@ scene_props = [
 ] + (is_a_wb_sceneprop==1 and [
   ("birds_crebain", sokf_moveable|sokf_dynamic_physics, "woron_flight", "0", [
     (ti_on_scene_prop_init,[
-      (store_trigger_param_1, ":var0"),
-      (assign, ":var1", 25),
-      (scene_prop_set_slot, ":var0", 40, ":var1"),
-      (val_add, ":var1", 1),
-      (store_random_in_range, ":var2", 1, ":var1"),
-      (scene_prop_set_slot, ":var0", 37, ":var2"),
+      (store_trigger_param_1, ":instance_no"),
       (store_random_in_range, ":var3", 0, 16),
+      (prop_instance_deform_to_time, ":instance_no", ":var3"),      
       (val_mul, ":var3", 80),
-      (scene_prop_set_slot, ":var0", 39, ":var3"),
-      (scene_prop_set_slot, ":var0", 42, 8),
-      (scene_prop_set_slot, ":var0", 43, 11),
-      (scene_prop_set_slot, ":var0", 44, -1),
+      (scene_prop_set_slot, ":instance_no", 39, ":var3"), #height offset
+      (scene_prop_set_slot, ":instance_no", 43, 11), #dead frame
+      (prop_instance_deform_in_cycle_loop, ":instance_no", 1, 17, 1700),
     ]), ]),
 
   ("birds_thrush", sokf_moveable|sokf_dynamic_physics, "thrush_flight", "0", [
     (ti_on_scene_prop_init,[
-      (store_trigger_param_1, ":var0"),
-      (assign, ":var1", 26),
-      (scene_prop_set_slot, ":var0", 40, ":var1"),
-      (val_add, ":var1", 1),
-      (store_random_in_range, ":var2", 1, ":var1"),
-      (scene_prop_set_slot, ":var0", 37, ":var2"),
+      (store_trigger_param_1, ":instance_no"),
       (store_random_in_range, ":var3", 0, 16),
+      (prop_instance_deform_to_time, ":instance_no", ":var3"),      
       (val_mul, ":var3", 80),
-      (scene_prop_set_slot, ":var0", 39, ":var3"),
-      (scene_prop_set_slot, ":var0", 42, 9),
-      (scene_prop_set_slot, ":var0", 43, 12),
-      (scene_prop_set_slot, ":var0", 44, -1),
+      (scene_prop_set_slot, ":instance_no", 39, ":var3"), #height offset
+      (scene_prop_set_slot, ":instance_no", 43, 12), #dead frame
+      (prop_instance_deform_in_cycle_loop, ":instance_no", 1, 18, 1700),
     ]),]),
 
   ("birds_pigeon", sokf_moveable|sokf_dynamic_physics, "golub_flight", "0", [
     (ti_on_scene_prop_init,[
-      (store_trigger_param_1, ":var0"),
-      (assign, ":var1", 26),
-      (scene_prop_set_slot, ":var0", 40, ":var1"),
-      (val_add, ":var1", 1),
-      (store_random_in_range, ":var2", 1, ":var1"),
-      (scene_prop_set_slot, ":var0", 37, ":var2"),
+      (store_trigger_param_1, ":instance_no"),
       (store_random_in_range, ":var3", 0, 16),
+      (prop_instance_deform_to_time, ":instance_no", ":var3"),      
       (val_mul, ":var3", 80),
-      (scene_prop_set_slot, ":var0", 39, ":var3"),
-      (scene_prop_set_slot, ":var0", 42, 9),
-      (scene_prop_set_slot, ":var0", 43, 12),
-      (scene_prop_set_slot, ":var0", 44, -1),
+      (scene_prop_set_slot, ":instance_no", 39, ":var3"), #height offset
+      (scene_prop_set_slot, ":instance_no", 43, 12), #dead frame
+      (prop_instance_deform_in_cycle_loop, ":instance_no", 1, 18, 1700),
     ]),]),
 
     ] or [	
