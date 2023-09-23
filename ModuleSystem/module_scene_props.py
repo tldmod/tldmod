@@ -3899,6 +3899,20 @@ scene_props = [
 
 ("inventory_static",sokf_type_container,"package","bobaggage", []),
 
+] + (is_a_wb_sceneprop==1 and [ 
+  ("fellbeast", sokf_moveable|sokf_dynamic_physics, "beest", "0", [
+    (ti_on_scene_prop_init,[
+      (store_trigger_param_1, ":instance_no"),
+      (store_random_in_range, ":var3", 0, 16),
+      (prop_instance_deform_to_time, ":instance_no", ":var3"),      
+      (val_mul, ":var3", 200),
+      (scene_prop_set_slot, ":instance_no", 39, ":var3"), #height offset
+      (scene_prop_set_slot, ":instance_no", 43, 11), #dead frame
+      (prop_instance_deform_in_cycle_loop, ":instance_no", 1, 17, 2000),
+      (assign, "$nazgul_in_battle", 1),
+    ]), ]),
+       ] or [("fellbeast", 0, "beest", "0", []),]) + [  
+
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),
 ("save_compartibility4",0,"0","0", []),

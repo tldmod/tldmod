@@ -4612,7 +4612,143 @@ reward_birds_wb = ((is_a_wb_mt==1) and [
     ])
 	] or [])
 
-	
+nazgul_flying = ((is_a_wb_mt==1) and [ 
+
+    (0.4, 0, 0, 
+    #slot 41: 0=alive; 1=dead; 2=?
+    #slot 38 = rotation 
+    #slot 39 = ideal height
+    #pos1 = destination
+    [(ge, "$nazgul_in_battle", 1)],
+    [
+    (store_mission_timer_b_msec, ":cur_time"),
+	(gt, ":cur_time", 500), #1/2 second grace period 
+      (set_fixed_point_multiplier, 100),
+      (try_begin),
+        # (eq, "$g_disable_flying_birds", 1),
+      # (else_try),
+          (scene_prop_get_num_instances, ":num_instances", "spr_fellbeast"),
+          (ge, ":num_instances", 1),
+          (try_for_range, ":count", 0, ":num_instances"),
+            (scene_prop_get_instance, ":instance_no", "spr_fellbeast", ":count"),
+            (try_begin),
+                (scene_prop_slot_eq, ":instance_no", 41, 0), #bird not shot or dead
+                (prop_instance_get_starting_position, pos1, ":instance_no"),
+               
+                (try_begin), #if destination = starting pos, move prop away 
+                    (prop_instance_get_position, pos2, ":instance_no"),
+                    (get_distance_between_positions, ":dist_1", pos2, pos1),
+                    (le, ":dist_1", 200),
+                    (try_begin),
+                    (neg|scene_prop_slot_eq, ":instance_no", 45, 1),
+                    (position_move_z, pos2, 700),
+                    (try_end),
+                    (position_move_x, pos2, 12000),
+                    (prop_instance_set_position, ":instance_no", pos2),
+                    (prop_instance_enable_physics, ":instance_no", 1),
+                (try_end),
+                
+                (assign, ":is_close", 1),
+                (try_begin), #check if prop is animating and if close to destination
+                  (prop_instance_is_animating, ":is_animating", ":instance_no"),
+                  (eq, ":is_animating", 1),
+                  (assign, ":is_close", 0),
+                  (prop_instance_get_position, pos3, ":instance_no"),
+                  (prop_instance_get_animation_target_position, pos2, ":instance_no"),
+                  (get_distance_between_positions, ":dist_2", pos2, pos3),
+                  (le, ":dist_2", 1200),
+                  (assign, ":is_close", 1), 
+                (try_end),
+                
+                (eq, ":is_close", 1),
+                (store_random_in_range, ":chance", 0, 100), #make it screech from time to time
+                (try_begin),
+                    (ge, ":chance", 95),
+                    (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_long" ),
+                (else_try),
+                    (ge, ":chance", 90),
+                    (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_short" ),
+                (try_end),
+                
+                (scene_prop_get_slot, ":slot_38", ":instance_no", 38), #rotation
+                (scene_prop_get_slot, ":slot_39", ":instance_no", 39), #height offset ..or something
+
+                (val_add, ":slot_38", 30), #add rotation
+                (position_rotate_z, pos1, ":slot_38"),
+                (position_move_x, pos1, 18000), #move destination forward
+
+                (try_begin), #get ideal height from slot
+                  (neg|scene_prop_slot_eq, ":instance_no", 45, 1),
+                  (store_add, ":ideal_height", 700, ":slot_39"),
+                (else_try),
+                  (assign, ":ideal_height", ":slot_39"),
+                (try_end),
+                (position_move_z, pos1, ":ideal_height"),
+
+                (try_begin), #if pos1 is too low, add ideal height
+                  (position_get_distance_to_terrain, ":height", pos1),
+                  (store_div, ":var14", 700, 2), #=350?
+                  (this_or_next|ge, 0, ":height"),
+                  (ge, ":var14", ":height"),
+                  (position_set_z_to_ground_level, pos1),
+                  (position_move_z, pos1, ":ideal_height"),
+                (try_end),
+                
+                #calculate speed and send them off
+                (prop_instance_get_position, pos2, ":instance_no"),
+                (get_distance_between_positions, ":dist_3", pos2, pos1),
+                (val_div, ":dist_3", 18), #speed is dist/9
+                (prop_instance_animate_to_position, ":instance_no", pos1, ":dist_3"), #send them on their way
+
+                # debug, for tracking
+                (set_spawn_position, pos1), 
+                (spawn_scene_prop, spr_banner_stand_a),
+
+                (try_begin), #assign new rotation and height slots, one could also add some randomness here, instead of flying in circles
+                  (ge, ":slot_38", 360), #only change height if it's flown a full circle already
+                  (assign, ":slot_38", 0),
+                  (store_random_in_range, ":slot_39", 0, 16),
+                  (val_mul, ":slot_39", 80),
+                  (scene_prop_set_slot, ":instance_no", 39, ":slot_39"),
+                (try_end),
+                (scene_prop_set_slot, ":instance_no", 38, ":slot_38"),
+              #(try_end),
+              
+            (else_try), #Dead birds - currently unused 
+              (scene_prop_slot_eq, ":instance_no", 41, 1),
+              (set_fixed_point_multiplier, 100),
+              (position_set_x, pos0, 2500),
+              (position_set_y, pos0, 80),
+              (position_set_z, pos0, 0),
+              (prop_instance_dynamics_set_properties, ":instance_no", 0),
+              (position_set_x, pos0, 0),
+              (position_set_y, pos0, 0),
+              (position_set_z, pos0, -800),
+              (prop_instance_dynamics_set_omega, ":instance_no", 0),
+              (try_begin),
+                (prop_instance_get_position, pos1, ":instance_no"),
+               # (particle_system_burst, "psys_hit_bird_blood", pos1, 1),
+               # (particle_system_burst, "psys_hit_bird_feathers", pos1, 1),
+                (position_get_distance_to_terrain, ":var15", pos1),
+                (le, ":var15", 100),
+                (position_get_rotation_around_z, ":var10", pos1),
+                #(position_align_to_ground, pos1, 1, 1),
+                (position_rotate_x, pos1, -90),
+                (position_rotate_z, pos1, ":var10"),
+                (prop_instance_enable_physics, ":instance_no", 0),
+                (prop_instance_set_position, ":instance_no", pos1),
+                (position_move_z, pos1, -1),
+                (prop_instance_animate_to_position, ":instance_no", pos1, 100000000),
+                (scene_prop_set_slot, ":instance_no", 41, 2),
+                (scene_prop_get_slot, ":var16", ":instance_no", 43), #dead frame
+                (prop_instance_deform_to_time, ":instance_no", ":var16"),
+              (try_end),
+            (try_end),
+            
+          (try_end),
+      (try_end),
+    ])
+	] or [])	
 # ( "custom_battle_football",mtf_battle_mode,-1,
     # "The match starts in a minute!",
     # [

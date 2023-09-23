@@ -1084,7 +1084,7 @@ or [] ) + [
   reset_fog,
   horse_whistle_init,
   horse_whistle,
-] + tld_morale_triggers + fade + khams_custom_player_camera + custom_troll_hitting_new + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack + reward_birds_wb
+] + tld_morale_triggers + fade + khams_custom_player_camera + custom_troll_hitting_new + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack + reward_birds_wb + nazgul_flying
 
 
 tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
@@ -1114,7 +1114,7 @@ tld_common_peacetime_scripts = [
 	tld_player_cant_ride,
 	dungeon_darkness_effect,
   reset_fog,
-] + custom_tld_bow_to_kings + bright_nights + fade + reward_birds_wb + khams_custom_player_camera +((is_a_wb_mt==1) and tld_bow_shield or [] )#Custom Cam triggers
+] + custom_tld_bow_to_kings + bright_nights + fade + reward_birds_wb + khams_custom_player_camera + nazgul_flying +((is_a_wb_mt==1) and tld_bow_shield or [] )#Custom Cam triggers
 
 
 tld_common_wb_muddy_water = ((is_a_wb_mt==1) and [

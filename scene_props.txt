@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 2037
+ 2038
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -6209,6 +6209,9 @@ spr_ammo_barrel 0 0 ammo_barrel bo_ammo_barrel 0
 
 
 spr_inventory_static 5 0 package bobaggage 0
+
+
+spr_fellbeast 0 0 beest 0 0
 
 
 spr_save_compartibility4 0 0 0 0 0
