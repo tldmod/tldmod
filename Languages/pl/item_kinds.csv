@@ -132,15 +132,15 @@ itm_rohirrim_throwing_axe|Toporki do rzucania Ludzi Północy
 itm_loss_throwing_axes|Toporki do Rzucania z Lossarnach
 itm_arnor_helm_c|Arnorski Zdobiony Hełm
 itm_arnor_helm_b|Arnorski Hełm
-; itm_arnor_helm_a|Arnor Light Helm
+itm_arnor_helm_a|Lekki hełm Arnoru
 ; itm_arnor_light_a|Dunedain Ranger Jerkin
 ; itm_arnor_light_b|Dunedain Ranger Mail
-; itm_arnor_med_a|Dunedain Ranger Coat
-; itm_arnor_med_b|Dunedain Mail
+itm_arnor_med_a|Płaszcz Strażnika Dunedainów
+itm_arnor_med_b|Kolczuga z Dunedainów
 itm_arnor_heavy|Arnorska Wspaniała Zbroja
 itm_arnor_greaves|Arnorskie Nagolenniki
 itm_arnor_shield_c|Arnorska Tarcza Kawaleryjska
-; itm_arnor_shield_a|Arnor Round Shield
+itm_arnor_shield_a|Arnorska Okrągła Tarcza
 itm_arnor_sword_c|Wojenny Miecz Arnoru
 itm_arnor_sword_a|Arnorski Miecz Półtoraręczny
 itm_arnor_sword_f|Arnorski Krótki Miecz
@@ -423,15 +423,15 @@ itm_gundabad_helm_c|Gundabadzki Hełm
 itm_gundabad_helm_d|Gundabadzki Hełm
 itm_gundabad_helm_e|Hełm Jeźdźców Wargów
 itm_dunland_wolfboots|Dunlandzkie Wilcze Buty
-; itm_dunland_tunic_1|Dunnish Leather Tunic
-; itm_dunland_tunic_2|Dunnish Leather Tunic
-; itm_dunland_fur_1|Dunnish Fur
-; itm_dunland_fur_2|Dunnish Fur
+itm_dunland_tunic_1|Dunladzka Skórzana Tunika
+itm_dunland_tunic_2|Dunladzka Skórzana Tunika
+itm_dunland_fur_1|Dunladzkie Futro
+itm_dunland_fur_2|Dunladzkie Futro
 itm_dunland_mail_1|Dunlandzka Koszula Kolcza
 itm_dunland_mail_2|Dunlandzka Koszula Kolcza
-; itm_dunland_chieftain|Dunnish Chief Armor
+itm_dunland_chieftain|Zbroja Dunlandzkiego Wodza
 itm_dun_helm_a|Dunlandzka Wilcza Czapa
-; itm_dun_helm_b|Dunnish Fur Cap
+itm_dun_helm_b|Dunladzka Futrzana Czapa
 itm_dun_helm_c|Dunlandzki Wspaniały Hełm
 itm_dun_helm_d|Dunlandzki Wspaniały Hełm
 itm_dun_helm_e|Dunlandzki Hełm z Porożem
@@ -499,7 +499,7 @@ itm_harad_tunic|Haradzka Szata
 ; itm_harad_lamellar|Harad Scale Vest
 ; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
 itm_harad_heavy|Pancerz Harasjala
-; itm_harad_pectoral|Harad Breastplate
+itm_harad_pectoral|Napierśnik Harada
 itm_black_snake_armor|Pancerz Maranka
 itm_harad_champion|Szaty z Dalekiego Haradu
 itm_harad_scale|Haradzka Zbroja Łuskowa
@@ -549,11 +549,11 @@ itm_khand_cav_helm_b|Hełm Jeźdźca z Khandu
 itm_khand_cav_helm_c|Zdobiony Hełm z Khandu
 itm_khand_helm_mask|Maska z Khandu
 itm_khand_light|Kilt z Khandu
-; itm_khand_light_lam|Khand Light Footmen Armor
-; itm_khand_foot_lam|Khand Heavy Footman Armor
+itm_khand_light_lam|Lekki Pancerz Piechura z Khandu
+itm_khand_foot_lam|Ciężki Pancerz Piechura z Khandu
 itm_khand_med_lam|Zbroja lamelkowa z Khandu
 itm_khand_heavy_lam|Ciężka Zbroja lemelkowa z Khandu
-; itm_khand_mail|Khand Mail
+itm_khand_mail|Kolczuga z Khandu
 itm_khand_noble_lam|Szlachecka Zbroja z Khandu
 itm_khand_axe_great|Wielki Topór z Khandu
 itm_khand_axe_winged|Topór z Khandu

@@ -300,7 +300,7 @@ mno_town_center_door|Drzwi do wieży centralnej.
 mno_aw_chamber_door|Otwórz drzwi.
 mno_trade_with_arms_merchant|Odwiedź zbrojownię.
 mno_trade_with_horse_merchant|Odwiedź magazyny.
-; mno_town_prison_door|To the Training Grounds
+mno_town_prison_door|Do obozu treningowego.
 mno_dungeon_enter|Wejdź do lochów.
 mno_dungeon_enter_door|Otwórz drzwi.
 mno_dwarven_warehouse|Odwiedź magazyn Krasnoludów
@@ -312,7 +312,7 @@ mno_isengard_underground_door|Wejdź do podziemnych jaskiń
 mno_tirith_toplevel|Wspinaj się na wyższy poziom.
 mno_tirith_toplevel_door|Idź do Cytadeli
 mno_erebor_gates|Odwiedź Wielką Bramę
-; mno_erebor_gates_door|Go to the Great Gates
+mno_erebor_gates_door|Idź do Wielkiej Bramy
 mno_town_leave|Odejdź...
 mno_town_leave_door|Wyjdź
 menu_player_initiated_siege_result|Zaatakowałeś ten ośrodek pod sztandarem {s2}.

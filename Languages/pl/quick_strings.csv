@@ -1109,11 +1109,11 @@ qstr_^^^You_lost_your_fig|^^^Poniosł{e/a}ś porażkę! ^Wygląda na to, że two
 qstr_^^^You_have_slain_th|^^^Zabijasz szczura, reszta wraca szybko do szeregu. ^ Przez jakiś czas będzie spokój.
 qstr_You_cover_up_your_tr|Ukryłeś ślady i ruszyłeś do przodu.
 qstr_Breaking_camp...|Zwijasz obóz...
-; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
+qstr_Party_morale_is_low.|Morale oddziału są niskie. Jednostki opuszczają twój odział.
 ; qstr_Desertion|Desertion
-; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
-; qstr_You_don_t_have_enoug|You don't have enough troops to guard all your prisoners. Their chance of escaping is increased.
-; qstr_{s1}_has_escaped_fro|{s1} has escaped from your party.                                                           
+qstr_{s1}_has_deserted_fr|{s1} opuścił twój oddział.
+qstr_You_don_t_have_enoug|Nie masz dość jednostek żeby strzec wszystkich więźniów. Ich szanse na ucieczkę rosną
+qstr_{s1}_has_escaped_fro|{s1} uciekł z twojego oddziału.
 qstr_You_have_left_{s1}.|Opuściłeś {s1}.
 qstr_You_are_entering_{s1|Wkraczasz {s1} ({s2}).
 qstr_You_are_entering_{s1}|Wkraczasz {s1}.
