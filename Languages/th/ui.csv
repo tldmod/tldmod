@@ -69,7 +69,6 @@ ui_notification_requirements_not_met|คุณไม่มีทักษะห�
 ui_disband|ยุบกลุ่ม
 ui_you_hit_a_friendly_troop|คุณโจมตีฝ่ายเดียวกัน
 ui_you_are_not_carrying_any_arrows|คุณไม่ได้พกพาลูกธนู
-ui_delivered_number_damage_to_horse|ทำดาเมจ %d ให้กับม้า
 ui_received_number_damage|คุณได้รับ %d ดาเมจ
 ; ui_you_have_improved_your_proficiency_in_value_to_number|You have improved your proficiency in %s to %d.
 ; ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%s ถูกสังหารโดย %s
 ui_value_knocked_unconscious_by_value|%s ถูกทำให้หมดสติโดย %s
 ui_you_got_number_experience|คุณได้รับค่าประสบการณ์ %d หน่วย
 ui_you_have_advanced_to_level_number|คุณได้เลื่อนระดับไปสู่เลเวล %d
-ui_you_got_value|ได้รับ %s
 ui_quest_succeeded_value|ภารกิจสำเร็จ: %s
 ui_number_of_companions_exceeds_leadership_limit|สหายหลายคนเกินขีดจำกัดความเป็นผู้นำ
 ui_number_of_prisoners_exceeds_prisoner_management_limit|นักโทษจำนวนมากเกินขีดจำกัดการจัดการนักโทษ
@@ -89,11 +87,7 @@ ui_change_graphics_settings_explanation|การเปลี่ยนแปล�
 ; ui_game_log_window|Game Log Window
 ; ui_blunt_short|b
 ; ui_tracks|Tracks
-ui_order_button_hold_fire|เตรียมยิง
-ui_order_button_fire_at_will|ยิงเมื่อมีโอกาส
-ui_order_button_fire_orders|คำสั่งยิง
 ui_need_to_learn_prisoner_management|คุณต้องเรียนรู้ทักษะการจัดการนักโทษเพื่อรับนักโทษ
-; ui_game_log_window|Game Log Window
 ui_unbalanced|ไม่สมดุล
 ui_can_crush_through_blocks|สามารถบดขยี้ผ่านบล็อก
 

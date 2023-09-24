@@ -691,7 +691,6 @@ ui_notification_requirements_not_met|Non possiedi l'abilità richiesta o gli att
 ui_disband|Disperdere
 ui_you_hit_a_friendly_troop|Hai colpito un alleato!
 ui_you_are_not_carrying_any_arrows|Non hai frecce.
-ui_delivered_number_damage_to_horse|Inflitti %d danni all'animale.
 ui_received_number_damage|Ricevuto %d danni.
 ui_you_have_improved_your_proficiency_in_value_to_number|Hai migliorato la tua competenza in %s a %d.
 ui_your_proficiency_in_value_has_improved_by_number_to_number|La tua competenza in %s è migliorata da +%d a %d.
@@ -699,7 +698,6 @@ ui_value_killed_by_value|%s ucciso da %s.
 ui_value_knocked_unconscious_by_value|%s tramortito da %s.
 ui_you_got_number_experience|Ottieni %d esperienza.
 ui_you_have_advanced_to_level_number|Hai raggiunto il livello %d.
-ui_you_got_value|%s guadagnato.
 ui_quest_succeeded_value|Missione completata: %s.
 ui_number_of_companions_exceeds_leadership_limit|Il numero dei compagni supera il limite in Comando.
 ui_number_of_prisoners_exceeds_prisoner_management_limit|Il numero di prigionieri supera il limite di gestione degli stessi.
@@ -711,11 +709,7 @@ ui_change_graphics_settings_explanation|Alcune modifiche che hai fatto avranno e
 ui_game_log_window|Finestra Log di Gioco
 ui_blunt_short|b
 ui_tracks|Tracce
-ui_order_button_hold_fire|Non tirate
-ui_order_button_fire_at_will|Tirare a volontà
-ui_order_button_fire_orders|Ordini di tiro
 ui_need_to_learn_prisoner_management|Devi apprendere l'abilità nella Gestione dei Prigionieri per poter catturare prigionieri.
-ui_game_log_window|Finestra Log di Gioco
 ui_unbalanced|Sbilanciato
 ui_can_crush_through_blocks|Può frantumare i blocchi
 

@@ -69,7 +69,6 @@ ui_accompanying|Prateći
 ui_disband|Otpusti
 ; ui_you_hit_a_friendly_troop|You hit a friendly troop!
 ; ui_you_are_not_carrying_any_arrows|You are not carrying any arrows.
-ui_delivered_number_damage_to_horse|Napravio %d štete konju. 
 ; ui_received_number_damage|Received %d damage.
 ; ui_you_have_improved_your_proficiency_in_value_to_number|You have improved your proficiency in %s to %d.
 ; ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%subijen od%s.
 ; ui_value_knocked_unconscious_by_value|%s knocked unconscious by %s.
 ; ui_you_got_number_experience|You got %d experience.
 ; ui_you_have_advanced_to_level_number|You have advanced to level %d.
-ui_you_got_value|%s zarađeno.
 ; ui_quest_succeeded_value|Quest succeeded: %s.
 ; ui_number_of_companions_exceeds_leadership_limit| Number of companions exceeds leadership limit.
 ; ui_number_of_prisoners_exceeds_prisoner_management_limit| Number of prisoners exceeds prisoner management limit.
@@ -89,11 +87,7 @@ ui_you_got_value|%s zarađeno.
 ; ui_game_log_window|Game Log Window
 ; ui_blunt_short|b
 ui_tracks|Tragovi
-; ui_order_button_hold_fire|Hold your fire
-; ui_order_button_fire_at_will|Fire at will
-; ui_order_button_fire_orders|Fire orders
 ; ui_need_to_learn_prisoner_management|You need to learn Prisoner Management skill in order to take prisoners.
-; ui_game_log_window|Game Log Window
 ui_unbalanced|Nebalansirano
 ; ui_can_crush_through_blocks|Can crush through blocks
 

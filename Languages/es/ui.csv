@@ -69,7 +69,6 @@ ui_notification_requirements_not_met|No tienes los atributos o habilidades neces
 ui_disband|Licenciar
 ui_you_hit_a_friendly_troop|¡Has herido a una tropa amiga!
 ui_you_are_not_carrying_any_arrows|No llevas ninguna flecha encima.
-ui_delivered_number_damage_to_horse|Has hecho %d puntos de daño a la montura.
 ui_received_number_damage|Recibes %d puntos de daño.
 ui_you_have_improved_your_proficiency_in_value_to_number|Has mejorado tu competencia en %s a %d.
 ui_your_proficiency_in_value_has_improved_by_number_to_number|Tu competencia en %s ha mejorado en +%d, a un total de %d.
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%s ha muerto a manos de %s.
 ui_value_knocked_unconscious_by_value|%s ha sido herido por %s.
 ui_you_got_number_experience|Ganas %d puntos de experiencia.
 ui_you_have_advanced_to_level_number|Has avanzado al nivel %d.
-ui_you_got_value|Has conseguido %s.
 ui_quest_succeeded_value|Misión cumplida con éxito: %s.
 ui_number_of_companions_exceeds_leadership_limit| El número de compañeros supera el límite de la habilidad de liderazgo.
 ui_number_of_prisoners_exceeds_prisoner_management_limit| El número de prisioneros supera el límite de manejo de prisioneros.
@@ -89,11 +87,7 @@ ui_change_graphics_settings_explanation|Algunos de los cambios que has hecho sur
 ui_game_log_window|Ventana de registro
 ui_blunt_short|cont
 ui_tracks|Rastros
-ui_order_button_hold_fire|No disparar
-ui_order_button_fire_at_will|Disparar a discreción
-ui_order_button_fire_orders|Órdenes de disparo
 ui_need_to_learn_prisoner_management|Necesitas aprender la habilidad de manejo de prisioneros antes de poder apresarlos.
-ui_game_log_window|Ventana de registro
 ui_unbalanced|Desequilibrado
 ui_can_crush_through_blocks|Puede atravesar bloqueos
 

@@ -69,7 +69,6 @@ ui_notification_requirements_not_met|Ви не маєте необхідних �
 ui_disband|Розпустити
 ui_you_hit_a_friendly_troop|Ви завдали шкоду дружньому загону!
 ui_you_are_not_carrying_any_arrows|У вас немає стріл з тобою.
-ui_delivered_number_damage_to_horse|Нанесено %d шкоди тварині.
 ui_received_number_damage|Отримано %d шкоди.
 ui_you_have_improved_your_proficiency_in_value_to_number|Ви покращили свою майстерність з %s до %d .
 ui_your_proficiency_in_value_has_improved_by_number_to_number|Ваше майстерність з %s покращилася на +%d до %d. 
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%s вбитий %s.
 ui_value_knocked_unconscious_by_value|%s знепритомнів від %s.
 ui_you_got_number_experience|Ви отримали %d досвіду.
 ui_you_have_advanced_to_level_number|Ви досягли рівня %d
-ui_you_got_value|Ви отримали %s.
 ui_quest_succeeded_value|Завдання виконано: %s.
 ui_number_of_companions_exceeds_leadership_limit|Кількість супутників перевищує ліміт лідерства.
 ui_number_of_prisoners_exceeds_prisoner_management_limit|Кількість ув'язнених перевищує ліміт управління в'язнями.
@@ -89,11 +87,7 @@ ui_change_graphics_settings_explanation|Деякі внесені вами зм�
 ui_game_log_window|Вікно ігрового журналу
 ui_blunt_short|б
 ui_tracks|Доріжки
-ui_order_button_hold_fire|Стримати вогонь
-ui_order_button_fire_at_will|Вогонь за бажанням
-ui_order_button_fire_orders|Накази зі стрільби
 ui_need_to_learn_prisoner_management|Вам потрібно навчитися навичкам управління в'язнями, щоб забрати в’язнів.
-ui_game_log_window|Вікно ігрового журналу
 ui_unbalanced|Незбалансований
 ui_can_crush_through_blocks|Це дозволяє пробити блок
 

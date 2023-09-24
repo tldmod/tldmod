@@ -69,7 +69,6 @@ ui_notification_requirements_not_met|이 무기를 사용하기에는 스킬이�
 ui_disband|해산하다
 ui_you_hit_a_friendly_troop|당신은 우호적인 부대를 공격했다!
 ui_you_are_not_carrying_any_arrows|화살이 다 떨어졌습니다.
-ui_delivered_number_damage_to_horse|말에게 %d 만큼의 피해를 입혔습니다.
 ui_received_number_damage|%d 만큼의 피해를 입었습니다.
 ui_you_have_improved_your_proficiency_in_value_to_number|%s 숙련도가 %d 만큼 올랐습니다.
 ui_your_proficiency_in_value_has_improved_by_number_to_number|당신의 %s 숙련도가 +%d 되어 %d만큼 올랐습니다.
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%s가 %s에 의해 죽었습니다.
 ui_value_knocked_unconscious_by_value|%s가 %s에 의해 의식을 잃었습니다.
 ui_you_got_number_experience|경험치를 %d 만큼 얻었습니다.
 ui_you_have_advanced_to_level_number|당신의 레벨이 %d로 올랐습니다.
-ui_you_got_value|%s 받음.
 ui_quest_succeeded_value|다음 퀘스트를 완료했습니다: %s
 ui_number_of_companions_exceeds_leadership_limit|동료의 수가 당신의 리더십 한계를 초과했습니다.
 ui_number_of_prisoners_exceeds_prisoner_management_limit|포로의 수가 당신의 포로 수송 한계를 초과했습니다.
@@ -89,11 +87,7 @@ ui_change_graphics_settings_explanation|당신이 변경한 몇 가지 사항은
 ui_game_log_window|게임 로그 창
 ui_blunt_short|b
 ui_tracks|흔적
-ui_order_button_hold_fire|사격 중지!
-ui_order_button_fire_at_will|자유 사격!
-ui_order_button_fire_orders|사격 명령
 ui_need_to_learn_prisoner_management|포로를 더 수용하려면 포로 수송 스킬을 더 배워야합니다.
-ui_game_log_window|게임 로그 창
 ui_unbalanced|불균형함
 ui_can_crush_through_blocks|방어를 뚫고 공격
 

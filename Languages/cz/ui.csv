@@ -69,7 +69,6 @@ ui_notification_requirements_not_met|Nemáte dostatečnou dovednost nebo Atribut
 ui_disband|Propustit
 ui_you_hit_a_friendly_troop|Zasáhl jsi spřátelenou Jednotku!
 ui_you_are_not_carrying_any_arrows|Nemáš u sebe žádné šípy.
-ui_delivered_number_damage_to_horse|Zasazeno %d poškození koni/vrku.
 ui_received_number_damage|Obdrženo %d poškození.
 ui_you_have_improved_your_proficiency_in_value_to_number|Zvýšil jsi svou dovednost v %s na %d.
 ui_your_proficiency_in_value_has_improved_by_number_to_number|Tvá dovednost %s se zvýšila o +%d na %d.
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%s byl zabit jednotkou %s.
 ui_value_knocked_unconscious_by_value|%s byl omráčen jednotkou %s.
 ui_you_got_number_experience|Získal jsi %d zkušeností.
 ui_you_have_advanced_to_level_number|Postoupil jsi na úroveň %d.
-ui_you_got_value|%s obdrženo.
 ui_quest_succeeded_value|Úkol dokončen %s.
 ui_number_of_companions_exceeds_leadership_limit|Množství společníků přesahuje limit vůdcovství.
 ui_number_of_prisoners_exceeds_prisoner_management_limit|Množství vězňů přesahuje limit vězeňského managementu.
@@ -89,11 +87,7 @@ ui_change_graphics_settings_explanation|Některé změny budou vidět při vstup
 ui_game_log_window|Okno herního logu.
 ui_blunt_short|b
 ui_tracks|Stopy
-ui_order_button_hold_fire|Zadržte palbu!
-ui_order_button_fire_at_will|Palte dle vlastního uvážení!
-ui_order_button_fire_orders|Rozkazy ke střelbě
 ui_need_to_learn_prisoner_management|Musíte se naučit Správu věznů aby jste mohli brát zajatce.
-ui_game_log_window|Okno herního logu.
 ui_unbalanced|Nevyrovnané.
 ui_can_crush_through_blocks|Může prorazit skrz blokování.
 

@@ -69,7 +69,6 @@ ui_notification_requirements_not_met|你不俱備此武器所需的技能或屬�
 ui_disband|遣散
 ui_you_hit_a_friendly_troop|你擊中友方部隊！
 ui_you_are_not_carrying_any_arrows|你沒有攜帶任何箭。
-ui_delivered_number_damage_to_horse|給對方的坐騎造成%d點傷害。
 ui_received_number_damage|受到%d點傷害。
 ui_you_have_improved_your_proficiency_in_value_to_number|你提高了%s的熟練程度由到%d
 ui_your_proficiency_in_value_has_improved_by_number_to_number|你%s的熟練程度經由＋%d提升到%d
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%s已被%s殺死。
 ui_value_knocked_unconscious_by_value|%s被%s擊昏了。
 ui_you_got_number_experience|你獲得%d經驗值。
 ui_you_have_advanced_to_level_number|你已升級到%d等。
-ui_you_got_value|獲得 %s。
 ui_quest_succeeded_value|任務達成：%s
 ui_number_of_companions_exceeds_leadership_limit|部隊人數超過你的統御技能。
 ui_number_of_prisoners_exceeds_prisoner_management_limit|俘虜人數超過你的俘虜管理技能。
@@ -89,11 +87,7 @@ ui_change_graphics_settings_explanation|您進行的某些更改將在您進入�
 ui_game_log_window|遊戲日誌。
 ui_blunt_short|b
 ui_tracks|追蹤
-ui_order_button_hold_fire|停火
-ui_order_button_fire_at_will|自由射擊
-ui_order_button_fire_orders|射擊命令
 ui_need_to_learn_prisoner_management|你需要學習俘虜管理技能來增加俘虜。
-ui_game_log_window|遊戲日誌。
 ui_unbalanced|失衡
 ui_can_crush_through_blocks|可突破障礙
 

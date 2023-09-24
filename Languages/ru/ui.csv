@@ -69,7 +69,6 @@ ui_notification_requirements_not_met|Вам не хватает навыков, 
 ui_disband|Распустить
 ui_you_hit_a_friendly_troop|Вы попали в дружественного воина!
 ui_you_are_not_carrying_any_arrows|У вас нет стрел.
-ui_delivered_number_damage_to_horse|Нанесено %d урона животному.
 ui_received_number_damage|Получено %d урона
 ui_you_have_improved_your_proficiency_in_value_to_number|Вы улучшили навык с %s до %d
 ui_your_proficiency_in_value_has_improved_by_number_to_number|Ваш навык %s улучшился с +%d до %d
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%s убит %s
 ui_value_knocked_unconscious_by_value|%s оглушён %s
 ui_you_got_number_experience|Вы получили %d опыта.
 ui_you_have_advanced_to_level_number|Вы перешли на %d уровень .
-ui_you_got_value|Вы получили %s.
 ui_quest_succeeded_value|Задание выполнено: %s
 ui_number_of_companions_exceeds_leadership_limit|Количество компаньонов превысило доступный лимит 
 ui_number_of_prisoners_exceeds_prisoner_management_limit|Количество заключенных превысило доступный лимит 
@@ -89,11 +87,7 @@ ui_change_graphics_settings_explanation|Некоторые изменения в
 ui_game_log_window|Игровой журнал
 ui_blunt_short|дробящее
 ui_tracks|Следы
-ui_order_button_hold_fire|Прекратить огонь
-ui_order_button_fire_at_will|Стрелять по готовности
-ui_order_button_fire_orders|Команды стрельбы
 ui_need_to_learn_prisoner_management|Вам нужно повысить навык управления пленниками, чтобы взять заключенных.
-ui_game_log_window|Игровой журнал
 ui_unbalanced|Несбалансированный 
 ui_can_crush_through_blocks|Пробивает блок
 

@@ -69,7 +69,6 @@ ui_notification_requirements_not_met|Attributs ou compétences trop faibles pour
 ui_disband|Renvoyer
 ui_you_hit_a_friendly_troop|Vous avez touché un allié !
 ui_you_are_not_carrying_any_arrows|Vous ne transportez aucune flèche.
-ui_delivered_number_damage_to_horse|%d de dégâts infligés à la monture.
 ui_received_number_damage|Points de dégâts subis : %d
 ui_you_have_improved_your_proficiency_in_value_to_number|Votre maîtrise en %s est passée à %d.
 ui_your_proficiency_in_value_has_improved_by_number_to_number|Votre maîtrise en %s a été améliorée de +%d pour un total de %d.
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%s a été tué par %s.
 ui_value_knocked_unconscious_by_value|%s a été assommé par %s.
 ui_you_got_number_experience|Vous avez obtenu %d points d'expérience.
 ui_you_have_advanced_to_level_number|Vous avez atteint le niveau %d.
-ui_you_got_value|Vous avez obtenu %s.
 ui_quest_succeeded_value|Quête réussie : %s.
 ui_number_of_companions_exceeds_leadership_limit| Le nombre de vos compagnons excède votre limite de commandement.
 ui_number_of_prisoners_exceeds_prisoner_management_limit| Le nombre de prisonniers excède votre limite de gestion de prisonniers.
@@ -89,11 +87,7 @@ ui_change_graphics_settings_explanation|Certaines des modifications que vous ave
 ui_game_log_window|Fenêtre du journal du jeu
 ui_blunt_short|c
 ui_tracks|Traces
-ui_order_button_hold_fire|Cessez le feu
-ui_order_button_fire_at_will|Feu à volonté
-ui_order_button_fire_orders|Ordres de tir
 ui_need_to_learn_prisoner_management|Il faut au moins 1 en compétence Gestion des prisonniers pour faire des prisonniers.
-ui_game_log_window|Fenêtre du journal du jeu
 ui_unbalanced|Déséquilibré
 ui_can_crush_through_blocks|Peut broyer les boucliers
 

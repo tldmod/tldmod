@@ -69,7 +69,6 @@ ui_notification_requirements_not_met|この武器を扱うにはスキルか属�
 ui_disband|解放する
 ui_you_hit_a_friendly_troop|あなたは味方を攻撃しています！
 ui_you_are_not_carrying_any_arrows|矢を持っていません。
-ui_delivered_number_damage_to_horse|馬に%dのダメージを与えました。
 ui_received_number_damage|%dのダメージを受けました。
 ui_you_have_improved_your_proficiency_in_value_to_number|%sの熟練度が%dに上がりました。
 ui_your_proficiency_in_value_has_improved_by_number_to_number|%sの熟練度が+%d上がって%dになりました。
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%sが%sに殺されました。
 ui_value_knocked_unconscious_by_value|%sは%sの攻撃を受けて気絶しました。
 ui_you_got_number_experience|あなたは経験値を%d獲得しました。
 ui_you_have_advanced_to_level_number|あなたのレベルが%dに上がりました。
-ui_you_got_value|%s獲得しました。
 ui_quest_succeeded_value|成功したクエスト:%s
 ui_number_of_companions_exceeds_leadership_limit| 複数の仲間達が あなたの統率力の 限界を超えています。
 ui_number_of_prisoners_exceeds_prisoner_management_limit| 複数の囚人達が 囚人管理能力の 限界を超えています。
@@ -89,11 +87,7 @@ ui_change_graphics_settings_explanation|変更された設定のうちのいく�
 ui_game_log_window|ゲームログ画面
 ui_blunt_short|b
 ui_tracks|足跡
-ui_order_button_hold_fire|[命令]撃ち方やめ
-ui_order_button_fire_at_will|[命令]撃ち方はじめ
-ui_order_button_fire_orders|[命令]武器使用命令
 ui_need_to_learn_prisoner_management|捕虜を確保するには 捕虜管理の スキルが必要です。
-ui_game_log_window|ゲームログ画面
 ui_unbalanced|防御移行時に遅延
 ui_can_crush_through_blocks|防御を崩す効果
 

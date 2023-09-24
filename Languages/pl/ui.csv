@@ -69,7 +69,6 @@ ui_notification_requirements_not_met|Nie posiadasz wymaganych umiejętności lub
 ui_disband|Rozwiąż
 ui_you_hit_a_friendly_troop|Zaatakowałeś sojuszniczą jednostkę!
 ui_you_are_not_carrying_any_arrows|Nie masz przy sobie żadnej strzały.
-ui_delivered_number_damage_to_horse|Wierzchowiec otrzymał %d obrażeń.
 ui_received_number_damage|Otrzymano %d obrażeń.
 ui_you_have_improved_your_proficiency_in_value_to_number|Twoja sprawność w %s została zwiększona do %d.
 ui_your_proficiency_in_value_has_improved_by_number_to_number|Twoja biegłość w %s została poprawiona o +%d do %d.
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%szabity przez %s.
 ui_value_knocked_unconscious_by_value|%s został ogłuszony przez %s.
 ui_you_got_number_experience|Dostałeś %d doświadczenia.
 ui_you_have_advanced_to_level_number|Awansowałeś do poziomu %d.
-ui_you_got_value|%s zarobione
 ui_quest_succeeded_value|Misja zakończona pomyślnie: %s.
 ui_number_of_companions_exceeds_leadership_limit|Liczba towarzyszy przekracza limit dowodzenia 
 ui_number_of_prisoners_exceeds_prisoner_management_limit|Liczba jeńców przekracza limit zarządzania jeńcami.
@@ -89,11 +87,7 @@ ui_change_graphics_settings_explanation|Część zmian pojawi się dopiero gdy w
 ui_game_log_window|Okno logów gry
 ui_blunt_short|b
 ui_tracks|Ścieżki
-ui_order_button_hold_fire|Wstrzymać Ogień
-ui_order_button_fire_at_will|Strzelać bez rozkazu
-ui_order_button_fire_orders|Rozkazy ostrzału
 ui_need_to_learn_prisoner_management|Musisz posiadać umiejętność Zarządzanie Więźniami, żeby móc brać jeńców.
-ui_game_log_window|Okno logów gry
 ui_unbalanced|Niezbalansowane
 ui_can_crush_through_blocks|Pozwala na przebicie bloku
 

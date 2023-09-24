@@ -69,7 +69,6 @@ ui_notification_requirements_not_met|你没有使用此武器所需的技能或�
 ui_disband|解散
 ui_you_hit_a_friendly_troop|你击中了自己人！
 ui_you_are_not_carrying_any_arrows|你没有携带箭。
-ui_delivered_number_damage_to_horse|对坐骑造成%d点伤害。
 ui_received_number_damage|受到了 %d 点伤害。
 ui_you_have_improved_your_proficiency_in_value_to_number|你的 %s 熟练度提高到 %d 。
 ui_your_proficiency_in_value_has_improved_by_number_to_number|你的 %s 熟练度提高 %d 点到 %d 。
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%s 被 %s 杀了。
 ui_value_knocked_unconscious_by_value|%s 被 %s.击昏了。
 ui_you_got_number_experience|你获得了  %d 点经验。
 ui_you_have_advanced_to_level_number|你已升到第 %d 级。
-ui_you_got_value|获得%s。
 ui_quest_succeeded_value|任务成功：%s
 ui_number_of_companions_exceeds_leadership_limit|队伍人数超过统御上限。
 ui_number_of_prisoners_exceeds_prisoner_management_limit|俘虏人数超过俘虏管理上限。
@@ -89,11 +87,7 @@ ui_change_graphics_settings_explanation|一些变化需要进入新的场景后�
 ui_game_log_window|日志窗口
 ui_blunt_short|b
 ui_tracks|跟踪
-ui_order_button_hold_fire|停止射击
-ui_order_button_fire_at_will|自由射击
-ui_order_button_fire_orders|听命射击
 ui_need_to_learn_prisoner_management|你需要学习俘虏管理技能才能接收更多的俘虏。
-ui_game_log_window|日志窗口
 ui_unbalanced|不平衡的
 ui_can_crush_through_blocks|能碾碎石块
 

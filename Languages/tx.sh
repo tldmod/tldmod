@@ -6,7 +6,7 @@ echo "Updating translations from Transifex..."
 luajit tx.lua convert
 
 # push our latest strings to the web
-# tx push -s -t -f --skip --no-interactive
+# tx push --source --resources tld.item_kinds,tld.troops --use-git-timestamps
 # tx push -s --skip --no-interactive
 # tx push -s -t -f --skip --no-interactive
 # tx push -t -l sv --skip --no-interactive

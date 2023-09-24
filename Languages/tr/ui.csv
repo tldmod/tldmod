@@ -69,7 +69,6 @@ ui_notification_requirements_not_met|Bu silah için gerekli beceri yada yetenege
 ui_disband|terhis et
 ui_you_hit_a_friendly_troop|Dost bir birime zarar verdin!
 ui_you_are_not_carrying_any_arrows|Yanında hiç ok kalmadı.
-ui_delivered_number_damage_to_horse|Binege %d hasar verildi
 ui_received_number_damage|%d Hasar alındı.
 ui_you_have_improved_your_proficiency_in_value_to_number|%s hünerini %d seviyesine yükselttin.
 ui_your_proficiency_in_value_has_improved_by_number_to_number|%s hünerin +%d artarak %d oldu.
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%s,%starafından öldürüldü.
 ui_value_knocked_unconscious_by_value|%s, %s tarafından bayıltıldı.
 ui_you_got_number_experience|%d Tecrübe puanı kazandın.
 ui_you_have_advanced_to_level_number|Seviye %d yükseldin
-ui_you_got_value|%s kazandı
 ui_quest_succeeded_value|Görev tamamlandı: %s.
 ui_number_of_companions_exceeds_leadership_limit|Yoldaş sayısı, liderlik limitini aşıyor.
 ui_number_of_prisoners_exceeds_prisoner_management_limit|Tutsak sayısı, tutsak yönetimi limitini aşıyor.
@@ -89,11 +87,7 @@ ui_change_graphics_settings_explanation|Yaptıgınız bazı degişiklikler, yeni
 ui_game_log_window|Oyun log penceresi
 ui_blunt_short|b
 ui_tracks|İzler
-ui_order_button_hold_fire|Ateş etmeyin
-ui_order_button_fire_at_will|Ateş serbest
-ui_order_button_fire_orders|menzilli emirleri
 ui_need_to_learn_prisoner_management|Esir alabilmek için Esir Yönetimi yetenegini ögrenmen gerek.
-ui_game_log_window|Oyun log penceresi
 ui_unbalanced|Dengesiz
 ui_can_crush_through_blocks|Blokların içinden geçebilir
 

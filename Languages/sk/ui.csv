@@ -69,7 +69,6 @@ ui_notification_requirements_not_met|Nemáš dostatočné schopnosti či vlastno
 ui_disband|Prepustiť z armády
 ui_you_hit_a_friendly_troop|Zasiahol si priateľskú jednotku!
 ui_you_are_not_carrying_any_arrows|Nenesieš so sebou žiadne šípy.
-ui_delivered_number_damage_to_horse|Spôsobené %d poškodenie zvieraťu.
 ui_received_number_damage|Utrpel si %d poškodenia.
 ui_you_have_improved_your_proficiency_in_value_to_number|Zlepšila sa ti zručnosť %sna %d.
 ui_your_proficiency_in_value_has_improved_by_number_to_number|Zlepšila sa ti zručnosť %so %d na %d.
@@ -77,7 +76,6 @@ ui_value_killed_by_value|%s bol zabitý %s.
 ui_value_knocked_unconscious_by_value|%supadol do bezvedomia, môže za to%s.
 ui_you_got_number_experience|Získal si %d skúseností.
 ui_you_have_advanced_to_level_number|Postúpil si na úroveň %d.
-ui_you_got_value|%s získané.
 ui_quest_succeeded_value|Úloha splnená: %s.
 ui_number_of_companions_exceeds_leadership_limit|Počet spoločníkov prekročil hranicu vodcovstva.
 ui_number_of_prisoners_exceeds_prisoner_management_limit|Počet zajatcov prekročil hranicu väzenia.
@@ -89,11 +87,7 @@ ui_change_graphics_settings_explanation|Niektoré zmeny, ktoré si previedol, sa
 ui_game_log_window|Záznamové Okno Hry
 ui_blunt_short|b
 ui_tracks|Stopy
-ui_order_button_hold_fire|Zastaviť streľbu
-ui_order_button_fire_at_will|Voľná streľba
-ui_order_button_fire_orders|Rozkazy streľby
 ui_need_to_learn_prisoner_management|Potrebuješ sa naučiť schopnosť Väzenie aby si mohol získať zajatcov.
-ui_game_log_window|Záznamové Okno Hry
 ui_unbalanced|Nevyvážené
 ui_can_crush_through_blocks|Môže prerážať skrz ochranu
 
