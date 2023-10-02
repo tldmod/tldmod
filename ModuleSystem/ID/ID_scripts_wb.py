@@ -763,5 +763,6 @@ script_town_guard_patrols = 761
 script_siege_adjust_battle_size = 762
 script_reset_battle_size = 763
 script_game_get_use_string = 764
+script_lookat = 765
 
 

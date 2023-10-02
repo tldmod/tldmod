@@ -32188,4 +32188,70 @@ if is_a_wb_script==1:
         (str_store_string, s0, "@Refill Ammunition"),    
      (try_end),
     ]),     
+    
+    
+    #("script_lookat", pos##, pos##), #by DSTN
+    #This script will take a position and rotate it such that +Y will face the target exactly.
+    #It does this with some basic trig, I'll explain it in the comments inside the script.
+    #INPUT:
+    #    Param 1: Positional register of the pos## that will be rotated
+    #    Param 2: Positional register of the pos## that will be targeted
+    #OUTPUT:
+    #    N/A
+
+    ("lookat",
+    [
+    (store_script_param, ":looker", 1),        # This is the positional register that will turn to face the :target (+Y being forward)
+    (store_script_param, ":target", 2),        # This is the positional register that will be targeted
+    (assign, ":local", pos13),                # This just makes the local_var :local equivilent to pos13
+
+    (init_position, pos1),                        # Get a clean positional register so. . .
+    (position_copy_rotation, ":looker", pos1),    # We can scrub the rotational data from the :looker to simplify the math
+
+    # The maths are pretty easy once we figure it out. Essentially, make two triangles with the two positions
+    # Use those triangles to determine the angles that the :looker will need to rotate to face the :target
+
+    (position_transform_position_to_local, ":local", ":looker", ":target"),    # We will use the local data to determine side lengths
+
+    (position_get_z, ":l_z", ":looker"),        # :looker z value
+
+    (position_get_z, ":t_z", ":target"),        # :target z value
+
+    (position_get_x, ":local_x", ":local"),        # The opposite side of the first triangle
+    (position_get_y, ":local_y", ":local"),        # The adjacent side of the first triangle
+
+    (store_sub, ":z_dis", ":l_z", ":t_z"),        # The adjacent side of the second triangle
+
+    (get_distance_between_positions, ":hypo", ":looker", ":target"),    # Distance between the positions will be the hypotenuse of both triangles
+
+    (convert_to_fixed_point, ":z_dis"),        # When doing fixed point maths only one needs to be fixed point or else it won't convert from the fp correctly
+    (convert_to_fixed_point, ":local_x"),    # When doing fixed point maths only one needs to be fixed point or else it won't convert from the fp correctly
+
+        # SOH CAH TOA, sin(opp/hyp), cos(adj/hyp), tan(opp/adj)
+
+    (store_div, ":adj_hyp", ":z_dis", ":hypo"),    # Use the second triangle's adjacent / hypotenuse
+
+    (store_acos, ":x_angle", ":adj_hyp"),        # To get the angle we need to adjust the pitch
+    (convert_from_fixed_point, ":x_angle"),        # Convert from fixed point to make it useable by the rotation
+    (val_add, ":x_angle", 270),                    # Move it by 270 degrees to convert the angle into the correct quadrant
+
+    (try_begin),
+        (eq, ":local_y", 0),                    # If the adjacent side's length would be 0
+        (assign, ":z_angle", 0),                # Set the yaw to 0 to prevent division by zero errors
+    (else_try),
+        (store_div, ":opp_adj", ":local_x", ":local_y"),    # Use the second triangle's opposite side / adjacent side
+        (store_atan, ":z_angle", ":opp_adj"),                # To get the angle of the yaw
+        (convert_from_fixed_point, ":z_angle"),                # Convert from fixed point to make it useable by the rotation
+        (val_mul, ":z_angle", -1),                            # Mirror the yaw to change it from CCW to CW
+    (try_end),
+
+    (try_begin),
+        (lt, ":local_y", 0),            # If the :target is behind the :looker
+        (val_add, ":z_angle", 180),        # Move the yaw 180 degrees
+    (try_end),
+
+
+    (position_rotate_z, ":looker", ":z_angle"),    # Rotate left/right (yaw) first
+    (position_rotate_x, ":looker", ":x_angle"),    # Then rotate up/down (pitch) last
+    ]),    
 ] or []) 
