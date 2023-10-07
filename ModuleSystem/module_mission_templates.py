@@ -4372,9 +4372,9 @@ mission_templates = [ # not used in game
      (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,3,[]),
      
      # Initial defender spawn point (was 11)  - Split this into 3 and distribute teams   																								  
-     (40,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]),
-     (40,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]),
-     (40,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]),
+     (40,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
+     (40,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
+     (40,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
 
      # Defender choke points (was 10)
      (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]), # team left flank
@@ -4392,16 +4392,16 @@ mission_templates = [ # not used in game
      (49,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,7,[]),
 
      # defender archer target positions (was 40-43)
-     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team left flank
-     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-   (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-   (54,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team center
-     (55,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
-     (56,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team right flank
-   (57,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (58,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (59,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team left flank
+     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+   (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+   (54,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team center
+     (55,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (56,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team right flank
+   (57,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (58,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (59,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
   ],
    tld_common_wb_muddy_water+
     common_deathcam_triggers+
@@ -5026,7 +5026,14 @@ mission_templates = [ # not used in game
                 
                 #spawn gate aggravator
                 (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
-                (position_move_x, pos1, 100,1), #move them slightly into the middle so they're easier to hit
+                (prop_instance_get_scale, pos2, ":gate_no"),
+                (position_get_scale_x, ":orientation", pos2),
+                (try_begin), #move them slightly into the middle so they're easier to hit
+                    (lt, ":orientation", 0), #mirrored?
+                    (position_move_x, pos1, 100,0), 
+                (else_try),
+                    (position_move_x, pos1, -100,0), 
+                (try_end),
                 (set_spawn_position, pos1),
                 (spawn_agent,"trp_gate_aggravator"),
                 (assign, ":gate_aggravator", reg0),
