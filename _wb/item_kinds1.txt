@@ -1403,7 +1403,7 @@ itemsfile version 2
  itm_moria_armor_d Moria_Bolted_Leather Moria_Bolted_Leather 1  orc_moria_d 0  16842765 0 801 174063750 27 93 0 18 10 13 0 0 0 0 0 0 0
 0
 
- itm_moria_armor_e Moria_Orc_Heavy_Mail Moria_Orc_Heavy_Mail 4  orc_moria_e 0  uruk_mordor_light_mail_a_orc 16777216  uruk_mordor_heavy_mail_b_orc 134217728  uruk_mordor_platemail_a_orc 536870912  16842765 0 1201 704643206 30 95 0 23 11 16 0 0 0 0 0 0 0
+ itm_moria_armor_e Moria_Orc_Heavy_Mail Moria_Orc_Heavy_Mail 4  orc_moria_e 0  uruk_mordor_light_mail_a_orc 16777216  uruk_mordor_heavy_mail_b_orc 134217728  uruk_mordor_platemail_a_orc 536870912  16842765 0 1201 167772294 30 95 0 23 11 16 0 0 0 0 0 0 0
 0
 
  itm_moria_orc_shield_a Moria_Great_Shield Moria_Great_Shield 1  moria_orc_shield_a 0  327687 5100273664 500 251658402 5 93 0 18 0 4 330 86 0 60 0 0 0
@@ -1559,10 +1559,10 @@ itemsfile version 2
  itm_rohan_leather Rohan_Leather_Vest Rohan_Leather_Vest 5  rohan_lamellar_poor 134  rohan_lamellar 1  rohan_lamellar 0  rohan_lamellar_cape 268435456  rohan_lamellar_reinforced 167772160  16842765 0 300 436207750 9 100 0 13 9 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_mail Rohan_Hauberk Rohan_Hauberk 6  rohan_mail_poor 134  rohan_mail 1  rohan_mail 0  rohan_mail_cape 268435456  rohan_mail_reinforced 33554432  rohan_mail_reinforced_cape 671088640  16842765 0 800 973078662 24 100 0 20 12 0 0 0 0 0 0 0 0
+ itm_rohan_mail Rohan_Hauberk Rohan_Hauberk 6  rohan_mail_poor 134  rohan_mail 1  rohan_mail 0  rohan_mail_cape 268435456  rohan_mail_reinforced 33554432  rohan_mail_reinforced_cape 671088640  16842765 0 1225 973078662 24 91 0 24 11 10 0 0 0 0 0 0 0
 0
 
- itm_rohan_rider Rohan_Rider_Armor Rohan_Rider_Armor 6  rohan_rider_poor 134  rohan_rider 1  rohan_rider 0  rohan_rider_cape 268435456  rohan_rider_reinforced 33554432  rohan_rider_reinforced_cape 671088640  16842765 0 1400 973078662 27 91 0 25 12 12 0 0 0 0 0 0 0
+ itm_rohan_rider Rohan_Rider_Armor Rohan_Rider_Armor 6  rohan_rider_poor 134  rohan_rider 1  rohan_rider 0  rohan_rider_cape 268435456  rohan_rider_reinforced 33554432  rohan_rider_reinforced_cape 671088640  16842765 0 1600 973078662 27 91 0 27 13 12 0 0 0 0 0 0 0
 0
 
  itm_rohan_scale Rohan_Scale_Armor Rohan_Scale_Armor 6  rohan_scale_poor 134  rohan_scale 1  rohan_scale 0  rohan_scale_cape 268435456  rohan_scale_reinforced 33554432  rohan_scale_reinforced_cape 671088640  16842765 0 2000 973078662 30 92 0 30 15 16 0 0 0 0 0 0 0
