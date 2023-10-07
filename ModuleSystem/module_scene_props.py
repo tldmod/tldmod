@@ -1751,7 +1751,8 @@ scene_props = [
     (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
     (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
     (particle_system_burst,"psys_pistol_smoke",pos1,200),
-    (position_rotate_x, pos1, 85),
+    (position_rotate_x, pos1, 95),
+    (position_move_z, pos1, -100,1),
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
     (display_message,"@Gate is breached!"),
@@ -2019,6 +2020,10 @@ scene_props = [
         (agent_set_animation_progress, reg0, reg6),
     (else_try),
         (agent_set_team, reg0, 2), #non-player defender team
+] + (is_a_wb_sceneprop==1 and [          
+        (agent_set_division, reg0, grc_archers), #set them to archers, so they stand ground
+        (agent_set_scripted_destination, reg0, pos1, 0, 1), #make sure
+    ] or []) + [           
     (try_end),
     ])]),
 
@@ -2081,6 +2086,9 @@ scene_props = [
         (agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),
     (else_try),
         (agent_set_team, reg0, 2), #non-player defender team
+] + (is_a_wb_sceneprop==1 and [          
+        (agent_set_division, reg0, grc_archers), #set them to archers, so they stand ground
+    ] or []) + [    
     (try_end),
     ])]),
     
@@ -3898,6 +3906,9 @@ scene_props = [
        ] or [("ammo_barrel", 0, "ammo_barrel", "bo_ammo_barrel", []),]) + [      
 
 ("inventory_static",sokf_type_container,"package","bobaggage", []),
+
+#Helms Deep
+("HD_breached",0,"HD_breached","bo_helms_deep_breached", []),
 
 ] + (is_a_wb_sceneprop==1 and [ 
   ("fellbeast", sokf_moveable|sokf_dynamic_physics, "beest", "0", [
