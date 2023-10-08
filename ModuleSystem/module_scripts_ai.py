@@ -3018,7 +3018,6 @@ ai_scripts = [
 ("destroy_center",[
 	(store_script_param, ":center", 1),
 	(store_faction_of_party, ":center_faction", ":center"),
-
     (party_set_slot, ":center", slot_center_is_besieged_by, -1),
     (call_script,"script_cancel_all_related_center_quest",":center"),
     
@@ -3083,8 +3082,37 @@ ai_scripts = [
     (try_end),
     
     (try_begin), #if Hornburg is destroyed, Isengard becomes siegable (because auf the Ent attack)
-        (eq, ":center", "p_town_hornburg"),
+        (this_or_next|eq, ":center", "p_town_hornburg"),
+        (eq, ":center", "p_town_edoras"), 
         (party_set_slot, "p_town_isengard", slot_center_siegability, 1), 
+        (try_for_parties, ":besieger"), #turn guardian party into a patrol
+            (party_slot_eq, ":besieger", slot_party_type, spt_guardian),
+            (party_slot_eq, ":besieger", slot_party_ai_object, ":center"),
+            (party_set_slot, ":besieger", slot_party_type, spt_patrol),
+            (party_set_slot, ":besieger", slot_party_victory_value, ws_patrol_vp), # victory points for party kill
+            (party_set_slot, ":besieger", slot_party_home_center, "p_town_isengard"),
+            
+            # (party_set_slot, ":besieger", slot_party_ai_state, spai_undefined),
+            # (party_set_ai_behavior, ":besieger", ai_bhvr_patrol_party),
+            # (party_set_ai_object, ":besieger", "p_town_isengard"),
+            # (party_set_ai_patrol_radius, ":besieger", 15),
+            (call_script, "script_party_set_ai_state", ":besieger", spai_patrolling_around_center, "p_town_isengard"),
+            (party_set_ai_initiative, ":besieger", 100),
+            (party_set_flags, ":besieger", pf_show_faction, 1),
+            #(disable_party, ":besieger"), 
+            (troop_get_slot, ":theoden_party", "trp_rohan_lord", slot_troop_leaded_party),
+            (gt, ":theoden_party", 0),            
+            (party_set_slot, ":theoden_party", slot_party_scripted_ai, 0),
+            (faction_set_slot, "fac_rohan", slot_faction_scripted_until, 0),
+        (try_end),        
+    (else_try), 
+        (eq, ":center", "p_town_isengard"), 
+        (try_for_parties, ":besieger"),
+            (party_slot_eq, ":besieger", slot_party_type, spt_guardian),
+            (party_slot_eq, ":besieger", slot_party_ai_object, ":center"),
+            #(call_script, "script_safe_remove_party", ":besieger"),
+            (disable_party, ":besieger"), #removing it causes script errors in script_simulate_battle, so we use this instead
+        (try_end),
     (try_end),
     
 	# detach all attached parties, in case there are parties in the camp

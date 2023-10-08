@@ -2447,31 +2447,31 @@ simple_triggers = [
         
         # Kham - Removed crushed condition and added Last Stand Event
 
-        (assign, ":has_guardian", 0),
-        (assign, ":guardian_party_defeated", 0),
-        (try_begin),
-          (this_or_next|eq, ":cur_kingdom", "fac_isengard"),
-          (eq, ":cur_kingdom", "fac_woodelf"),
-          (assign, ":has_guardian", 1),
-        (try_end),
+        # (assign, ":has_guardian", 0),
+        # (assign, ":guardian_party_defeated", 0),
+        # (try_begin),
+          # (this_or_next|eq, ":cur_kingdom", "fac_isengard"),
+          # (eq, ":cur_kingdom", "fac_woodelf"),
+          # (assign, ":has_guardian", 1),
+        # (try_end),
 
         (try_begin),
-          (eq, ":has_guardian", 0),
+          #(eq, ":has_guardian", 0),
           (neg|faction_slot_ge, ":cur_kingdom", slot_faction_strength, 1), # TLD or faction strength down
           (faction_slot_eq, ":cur_kingdom", slot_faction_last_stand, 0),
           (faction_set_slot, ":cur_kingdom", slot_faction_last_stand, 1),
           #(str_store_faction_name, s10, ":cur_kingdom"),
           #(display_message, "@DEBUG: {s10} is now in Last Stand mode", color_neutral_news),
-        (else_try),
-          (eq, ":has_guardian", 1),
-          (faction_slot_eq, ":cur_kingdom", slot_faction_guardian_party_spawned, 1), #Guardian party has spawned
-          (faction_get_slot, ":guardian_party", ":cur_kingdom", slot_faction_guardian_party),
-          (neg|party_is_active, ":guardian_party"),
-          (assign, ":guardian_party_defeated", 1),
+        # (else_try),
+          # (eq, ":has_guardian", 1),
+          # (faction_slot_eq, ":cur_kingdom", slot_faction_guardian_party_spawned, 1), #Guardian party has spawned
+          # (faction_get_slot, ":guardian_party", ":cur_kingdom", slot_faction_guardian_party),
+          # (neg|party_is_active, ":guardian_party"),
+          # (assign, ":guardian_party_defeated", 1),
         (try_end),
 
         (this_or_next|neq, ":cur_kingdom", ":capital_faction"), # TLD capital captured
-        (this_or_next|eq, ":guardian_party_defeated", 1),
+        #(this_or_next|eq, ":guardian_party_defeated", 1),
         (neg|party_slot_eq, ":capital", slot_center_destroyed,0), #TLD or capital destroyed
 
         
