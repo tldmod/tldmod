@@ -2854,7 +2854,7 @@ simple_triggers = [
   
   # (56) TLD Messages about faction strength changes
   (5,[(gt, "$tld_war_began", 0),
-		(try_for_range,":faction",kingdoms_begin,kingdoms_end),
+	  (try_for_range,":faction",kingdoms_begin,kingdoms_end),
         (faction_slot_eq, ":faction", slot_faction_state, sfs_active),
         (faction_get_slot,":strength",":faction",slot_faction_strength),
         (ge, ":strength", 1), #additional check for above
@@ -2951,68 +2951,69 @@ simple_triggers = [
         (try_end),
         
         #MV: spawn a guardian party (once) when faction strength below fac_str_guardian
+        # InVain: Disabled
         #this is a fun quick fix to defeat dying factions and avoid grinding
-        (try_begin),
-          #MV: disabled in 3.15, not needed anymore except for factions with unsiegable capitals like Isengard and Woodelves
-          (eq, ":faction", "fac_isengard"),
-          #(             eq, ":faction", "fac_woodelf"),
-          (neg|faction_slot_ge, ":faction", slot_faction_strength, fac_str_guardian),
-          (faction_slot_eq, ":faction", slot_faction_guardian_party, 0),
+        # (try_begin),
+          # #MV: disabled in 3.15, not needed anymore except for factions with unsiegable capitals like Isengard and Woodelves
+          # (eq, ":faction", "fac_isengard"),
+          # #(             eq, ":faction", "fac_woodelf"),
+          # (neg|faction_slot_ge, ":faction", slot_faction_strength, fac_str_guardian),
+          # (faction_slot_eq, ":faction", slot_faction_guardian_party, 0),
           
-          (faction_get_slot, ":capital", ":faction", slot_faction_capital),
-          (set_spawn_radius, 1),
-          (spawn_around_party, ":capital", "pt_none"),
-          (assign, ":guard_party", reg0),
-          (faction_set_slot, ":faction", slot_faction_guardian_party, ":guard_party"),
-          (faction_set_slot, ":faction", slot_faction_guardian_party_spawned, 1),
+          # (faction_get_slot, ":capital", ":faction", slot_faction_capital),
+          # (set_spawn_radius, 1),
+          # (spawn_around_party, ":capital", "pt_none"),
+          # (assign, ":guard_party", reg0),
+          # (faction_set_slot, ":faction", slot_faction_guardian_party, ":guard_party"),
+          # (faction_set_slot, ":faction", slot_faction_guardian_party_spawned, 1),
           
-          #party slots
-          (str_store_faction_name, s6, ":faction"),
-          (try_begin),
-            (faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
-            (party_set_name, ":guard_party", "@Guardians of {s6}"),
-          (else_try),
-            (party_set_name, ":guard_party", "@Guard Legion of {s6}"),
-          (try_end),
-          # CC bugfix: set the icons to properly match the party
-          (try_begin),
-            (eq, ":faction", "fac_isengard"),
-            (party_set_icon, ":guard_party", icon_wargrider_walk_x4),
+          # #party slots
+          # (str_store_faction_name, s6, ":faction"),
+          # (try_begin),
+            # (faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
+            # (party_set_name, ":guard_party", "@Guardians of {s6}"),
           # (else_try),
-            # (eq, ":faction", "fac_woodelf"),
-            # (party_set_icon, ":guard_party", icon_mirkwood_elf_x3),
-          (try_end),
-          (party_set_slot, ":guard_party", slot_party_type, spt_guardian),
-          (party_set_slot, ":guard_party", slot_party_victory_value, ws_guard_vp), # huge victory points for party kill
-          (party_set_slot, ":guard_party", slot_party_home_center, ":capital"),
-          (party_set_faction, ":guard_party", ":faction"),
-          (party_set_slot, ":guard_party", slot_party_ai_object, ":capital"),
-          (party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
-          (party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
-          (party_set_ai_patrol_radius, ":guard_party", 3), #must be tight radius
+            # (party_set_name, ":guard_party", "@Guard Legion of {s6}"),
+          # (try_end),
+          # # CC bugfix: set the icons to properly match the party
+          # (try_begin),
+            # (eq, ":faction", "fac_isengard"),
+            # (party_set_icon, ":guard_party", icon_wargrider_walk_x4),
+          # # (else_try),
+            # # (eq, ":faction", "fac_woodelf"),
+            # # (party_set_icon, ":guard_party", icon_mirkwood_elf_x3),
+          # (try_end),
+          # (party_set_slot, ":guard_party", slot_party_type, spt_guardian),
+          # (party_set_slot, ":guard_party", slot_party_victory_value, ws_guard_vp), # huge victory points for party kill
+          # (party_set_slot, ":guard_party", slot_party_home_center, ":capital"),
+          # (party_set_faction, ":guard_party", ":faction"),
+          # (party_set_slot, ":guard_party", slot_party_ai_object, ":capital"),
+          # (party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
+          # (party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
+          # (party_set_ai_patrol_radius, ":guard_party", 3), #must be tight radius
           
-          #fill it up with lord army reinforcements and upgrade a lot
-          (store_random_in_range, ":reinforcement_waves", 80, 100), #average about 8 troops per reinf
-          (try_for_range, ":unused", 0, ":reinforcement_waves"),
-            (call_script, "script_cf_reinforce_party", ":guard_party"),
-          (try_end),
-          (try_for_range, ":unused", 0, 40), #lords get initially about 14x4000, we do 40x6000 (about 4-5x more)
-            (party_upgrade_with_xp, ":guard_party", 6000, 0),
-          (try_end),
+          # #fill it up with lord army reinforcements and upgrade a lot
+          # (store_random_in_range, ":reinforcement_waves", 80, 100), #average about 8 troops per reinf
+          # (try_for_range, ":unused", 0, ":reinforcement_waves"),
+            # (call_script, "script_cf_reinforce_party", ":guard_party"),
+          # (try_end),
+          # (try_for_range, ":unused", 0, 40), #lords get initially about 14x4000, we do 40x6000 (about 4-5x more)
+            # (party_upgrade_with_xp, ":guard_party", 6000, 0),
+          # (try_end),
           
-          #tell the player what happened
-          (try_begin),
-            (store_relation, ":rel", "$players_kingdom", ":faction"),
-            (gt, ":rel", 0),
-            (assign, ":news_color", color_good_news),
-          (else_try),
-            (assign, ":news_color", color_bad_news),
-          (try_end),
-          (str_store_party_name, s7, ":capital"),
-          (assign, reg70, ":faction"),
-          (jump_to_menu, "mnu_guardian_party_spawned"),
-          (display_log_message, "@Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.", ":news_color"),
-        (try_end),
+          # #tell the player what happened
+          # (try_begin),
+            # (store_relation, ":rel", "$players_kingdom", ":faction"),
+            # (gt, ":rel", 0),
+            # (assign, ":news_color", color_good_news),
+          # (else_try),
+            # (assign, ":news_color", color_bad_news),
+          # (try_end),
+          # (str_store_party_name, s7, ":capital"),
+          # (assign, reg70, ":faction"),
+          # (jump_to_menu, "mnu_guardian_party_spawned"),
+          # (display_log_message, "@Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.", ":news_color"),
+        # (try_end),
       (try_end),
   ]),
   
@@ -3950,48 +3951,48 @@ simple_triggers = [
       
       #Good Guys attack Guardian Party gets resolved ENDs here
       
-      #Check when to show menu
-      (try_begin),
-        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
-        (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_active), #Rohan still active,
-        (faction_slot_ge, "fac_rohan", slot_faction_strength, fac_str_ok),
-        (call_script, "script_get_faction_rank", "fac_rohan"), (assign, ":rank", reg0), #rank points to rank number 0-9
-        (gt, ":rank", 5), #Rank 6 with Rohan
-        (jump_to_menu, "mnu_guardian_party_quest"),
-        (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 1),
-        (quest_set_slot, "qst_guardian_party_quest", slot_quest_object_center, "fac_rohan"),
-        (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_troop, "trp_rohan_lord"),
-      (else_try),
-        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
-        (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_defeated), #Rohan defeated,
-        (faction_slot_eq, "fac_gondor", slot_faction_state, sfs_active), #Gondor still active,
-        (faction_slot_ge, "fac_gondor", slot_faction_strength, fac_str_ok),
-        (call_script, "script_get_faction_rank", "fac_gondor"), (assign, ":rank", reg0), #rank points to rank number 0-9
-        (gt, ":rank", 5), #Rank 6 with Gondor
-        (jump_to_menu, "mnu_guardian_party_quest"),
-        (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 1),
-        (quest_set_slot, "qst_guardian_party_quest", slot_quest_object_center, "fac_gondor"),
-        (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_troop, "trp_knight_1_3"),
-      (else_try),
-        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
-        (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_defeated), #Rohan defeated,
-        (faction_slot_eq, "fac_gondor", slot_faction_state, sfs_defeated), #Gondor defeated,
-        (try_for_range, ":surviving_good", kingdoms_begin, kingdoms_end),
-          (store_relation, ":relation", ":surviving_good", "$players_kingdom"),
-          (gt, ":relation", 0),
-          (faction_slot_eq, ":surviving_good", slot_faction_active_theater, theater_SW), #In Rohan
-          (faction_slot_eq, ":surviving_good", slot_faction_state, sfs_active),
-          (faction_slot_ge, ":surviving_good", slot_faction_strength, fac_str_ok),
-          (call_script, "script_get_faction_rank", ":surviving_good"), (assign, ":rank", reg0), #rank points to rank number 0-9
-          (gt, ":rank", 4), #Rank 5 with whoever is still alive
-          (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
-          (jump_to_menu, "mnu_guardian_party_quest"),
-          (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 1),
-          (faction_get_slot, ":marshall", ":surviving_good", slot_faction_marshall),
-          (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_troop, ":marshall"),
-          (quest_set_slot, "qst_guardian_party_quest", slot_quest_object_center, ":surviving_good"),
-        (try_end),
-      (try_end),
+      #Check when to show menu #InVain: Disabled, but only quest initialisation for now, cleanup will happen later
+      # (try_begin),
+        # (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
+        # (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_active), #Rohan still active,
+        # (faction_slot_ge, "fac_rohan", slot_faction_strength, fac_str_ok),
+        # (call_script, "script_get_faction_rank", "fac_rohan"), (assign, ":rank", reg0), #rank points to rank number 0-9
+        # (gt, ":rank", 5), #Rank 6 with Rohan
+        # (jump_to_menu, "mnu_guardian_party_quest"),
+        # (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 1),
+        # (quest_set_slot, "qst_guardian_party_quest", slot_quest_object_center, "fac_rohan"),
+        # (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_troop, "trp_rohan_lord"),
+      # (else_try),
+        # (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
+        # (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_defeated), #Rohan defeated,
+        # (faction_slot_eq, "fac_gondor", slot_faction_state, sfs_active), #Gondor still active,
+        # (faction_slot_ge, "fac_gondor", slot_faction_strength, fac_str_ok),
+        # (call_script, "script_get_faction_rank", "fac_gondor"), (assign, ":rank", reg0), #rank points to rank number 0-9
+        # (gt, ":rank", 5), #Rank 6 with Gondor
+        # (jump_to_menu, "mnu_guardian_party_quest"),
+        # (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 1),
+        # (quest_set_slot, "qst_guardian_party_quest", slot_quest_object_center, "fac_gondor"),
+        # (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_troop, "trp_knight_1_3"),
+      # (else_try),
+        # (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
+        # (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_defeated), #Rohan defeated,
+        # (faction_slot_eq, "fac_gondor", slot_faction_state, sfs_defeated), #Gondor defeated,
+        # (try_for_range, ":surviving_good", kingdoms_begin, kingdoms_end),
+          # (store_relation, ":relation", ":surviving_good", "$players_kingdom"),
+          # (gt, ":relation", 0),
+          # (faction_slot_eq, ":surviving_good", slot_faction_active_theater, theater_SW), #In Rohan
+          # (faction_slot_eq, ":surviving_good", slot_faction_state, sfs_active),
+          # (faction_slot_ge, ":surviving_good", slot_faction_strength, fac_str_ok),
+          # (call_script, "script_get_faction_rank", ":surviving_good"), (assign, ":rank", reg0), #rank points to rank number 0-9
+          # (gt, ":rank", 4), #Rank 5 with whoever is still alive
+          # (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
+          # (jump_to_menu, "mnu_guardian_party_quest"),
+          # (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 1),
+          # (faction_get_slot, ":marshall", ":surviving_good", slot_faction_marshall),
+          # (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_troop, ":marshall"),
+          # (quest_set_slot, "qst_guardian_party_quest", slot_quest_object_center, ":surviving_good"),
+        # (try_end),
+      # (try_end),
   ]),
   
   # Encounter Effects Trigger - InVain & Kham

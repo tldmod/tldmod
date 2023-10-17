@@ -1,4 +1,4 @@
-1744
+1742
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -643,6 +643,7 @@ qstr_Tribal_Orc_Warrior Tribal_Orc_Warrior
 qstr_Tribal_Orc_Chief Tribal_Orc_Chief
 qstr_A_quest_was_cancelle A_quest_was_cancelled_for_update_compatibility._No_need_to_worry.
 qstr_Savegame_compatibili Savegame_compatibility:_Campaign_Difficulty_set_to_default._Adjust_in_TLD_options.
+qstr_Notice:_Isengard_Las Notice:_Isengard_Last_Stand_quest_cancelled_for_savegame_compatibility_reasons._Isengard_can_now_be_sieged_like_a_regular_city.
 qstr_Something_wrong_not_ Something_wrong,_not_enough_troops_to_remove
 qstr_Troop:_{s6}___Level: Troop:_{s6}_-_Level:_{reg1}
 qstr_{reg6}_Centers_Left_ {reg6}_Centers_Left_for_{s2}
@@ -1179,9 +1180,6 @@ qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!
 qstr_The_forces_of_{s22}_ The_forces_of_{s22}_have_rallied!_{s22}_is_now_{s23}.
 qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.
 qstr_In_a_desperate_attem In_a_desperate_attempt_to_defend_against_his_enemies,_Sauron_sends_out_his_legions_of_Mordor!
-qstr_Guardians_of_{s6} Guardians_of_{s6}
-qstr_Guard_Legion_of_{s6} Guard_Legion_of_{s6}
-qstr_Scouts_report_that_{ Scouts_report_that_{s6}_gathered_a_large_army_in_the_vicinity_of_{s7},_in_a_last_ditch_attempt_to_defend_the_capital.
 qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_Advance_Camp_in_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_{playername}_s_Reser {playername}'s_Reserves

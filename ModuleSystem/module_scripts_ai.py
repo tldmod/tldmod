@@ -932,7 +932,8 @@ ai_scripts = [
     [ (store_script_param, ":party_no", 1),
       (store_script_param, ":new_ai_state", 2),
       (store_script_param, ":new_ai_object", 3),
-      (neg|party_slot_eq, ":party_no", slot_party_scripted_ai, 1),
+      (store_current_hours, ":cur_hours"),
+      (neg|party_slot_ge, ":party_no", slot_party_scripted_ai, ":cur_hours"),
 
       ##Kham fix for invalid parties
        (try_begin),
@@ -1923,7 +1924,8 @@ ai_scripts = [
          (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
          (party_is_active, ":party_no"),
          (gt, ":party_no", 0),
-         (neg|party_slot_eq, ":party_no", slot_party_scripted_ai, 1), #Kham - override AI when scripted.
+         (store_current_hours, ":cur_hours"),
+         (neg|party_slot_ge, ":party_no", slot_party_scripted_ai, ":cur_hours"), #Kham - override AI when scripted.
          (call_script, "script_process_hero_ai", ":troop_no"),
        (try_end),
 ]),

@@ -2088,7 +2088,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 32),  #Rafa: Savegame version
+    (assign,"$savegame_version", 33),  #Rafa: Savegame version
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -23266,8 +23266,10 @@ scripts = [
           (gt, ":theoden_party", 0),
           (party_is_active, ":theoden_party"),
           (call_script, "script_party_set_ai_state", ":theoden_party", spai_holding_center, ":target_center"),
-          (party_set_ai_initiative, ":theoden_party",0),        
-          (party_set_slot, ":theoden_party", slot_party_scripted_ai, 1), #Kham - override AI when scripted.
+          (party_set_ai_initiative, ":theoden_party",0),
+          (store_current_hours, ":cur_hours"),
+          (val_add, ":cur_hours", 72), #72 hours no AI recalc
+          (party_set_slot, ":theoden_party", slot_party_scripted_ai, ":cur_hours"),
       (try_end),
       (store_current_hours, ":cur_hours"),
       (val_add, ":cur_hours", 72), #72 hours no AI recalc
@@ -23316,7 +23318,9 @@ scripts = [
         (party_set_ai_behavior, ":ent_party", ai_bhvr_attack_party),
         (party_set_flags, ":ent_party", pf_default_behavior, 1),
         (party_set_slot, ":ent_party", slot_party_ai_substate, 1),
-        (party_set_slot, ":ent_party", slot_party_scripted_ai, 1),      
+        (store_current_hours, ":cur_hours"),
+        (val_add, ":cur_hours", 100),       
+        (party_set_slot, ":ent_party", slot_party_scripted_ai, ":cur_hours"),      
         
         #disable scripted mode for Theoden and Rohan
         (troop_get_slot, ":theoden_party", "trp_rohan_lord", slot_troop_leaded_party),
@@ -25618,6 +25622,22 @@ command_cursor_scripts = [
         (try_end),
         (assign, "$savegame_version", 32),
 	(try_end),	
+    
+    (try_begin), #InVain - 10 Oct 2023, cancel Isengard legion quest
+        (check_quest_active, "qst_guardian_party_quest"),
+        (quest_get_slot, ":attacking_faction", "qst_guardian_party_quest", slot_quest_object_center),
+        (try_for_range, ":lords", kingdom_heroes_begin, kingdom_heroes_end),
+            (store_troop_faction, ":lord_fac", ":lords"),
+            (eq, ":lord_fac", ":attacking_faction"),
+            (troop_get_slot, ":lord_party", ":lords", slot_troop_leaded_party),
+            (gt, ":lord_party", 0),
+            (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
+        (try_end),
+        (call_script, "script_cancel_quest", "qst_guardian_party_quest"),
+        (display_message, "@Notice: Isengard Last Stand quest cancelled for savegame compatibility reasons. Isengard can now be sieged like a regular city."),
+        (assign, "$savegame_version", 33),
+        (party_set_slot, "p_town_isengard", slot_center_siegability, tld_siegable_capital),        
+	(try_end),	    
 ]),
 
 #Kham

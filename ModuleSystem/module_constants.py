@@ -1659,7 +1659,7 @@ center_list = [
 # Isengard centers
 (p_town_isengard, [scn_isengard_center, scn_isengard_castle, scn_mordor_prison,scn_mordor_tavern, scn_isengard_arena, scn_isengard_siege,mesh_town_isengard],
 	[trp_captain_of_isengard, trp_smith_isengard, trp_merchant_isengard, trp_elder_isengard, pt_isengard_recruits,  trp_isengard_lord,trp_i2_isen_orc,trp_i3_isen_large_orc,trp_a2_isen_uruk_tracker,trp_i2_isen_uruk], 
-	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_high, 1, tld_siegable_never),
+	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_high, 1, tld_siegable_capital),
 (p_town_urukhai_outpost, [scn_uruk_hai_outpost_center, -1, -1, -1, scn_isengard_arena, scn_uruk_hai_outpost_center_siege, mesh_town_evilcamp],
 	[trp_captain_of_isengard, trp_smith_uoutpost, trp_merchant_uoutpost, trp_elder_uoutpost, pt_isengard_recruits,  trp_isengard_lord,trp_i2_isen_orc,trp_i3_isen_large_orc,trp_a2_isen_uruk_tracker,trp_i2_isen_uruk], 
 	[icon_mfc_isengard],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 2, tld_siegable_always),

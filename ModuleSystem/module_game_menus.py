@@ -11693,7 +11693,7 @@ game_menus = [
 ##### Guardian Party Quest Start ########
 
 
-( "guardian_party_quest",0,
+( "guardian_party_quest",0, #InVain: disabled
    "{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.\
    You need to bring at least {reg13} troops to the army,\
    and are instructed to raise more warriors with all due haste if you do not have enough.",
