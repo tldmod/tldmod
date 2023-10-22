@@ -933,6 +933,7 @@ ai_scripts = [
       (store_script_param, ":new_ai_state", 2),
       (store_script_param, ":new_ai_object", 3),
       (store_current_hours, ":cur_hours"),
+      (val_max, ":cur_hours", 2), #make sure the condition doesn't block the script at game start (hour zero)
       (neg|party_slot_ge, ":party_no", slot_party_scripted_ai, ":cur_hours"),
 
       ##Kham fix for invalid parties
