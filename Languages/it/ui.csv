@@ -631,7 +631,7 @@ ui_tutorial_inventory|In The Last Days, avrai bisogno di Punti Risorsa per otten
 ui_you_dont_have_value|Non possiedi: %s
 ui_merchant_cant_afford_value|%s: Ci stai offrendo più del necessario ! Forse dovresti tenere qualcosa per te (stai offrendo beni per %s, noi possiamo accettarne solo %s).
 ui_merchant_pay_whatever|No, non ne ho bisogno, puoi tenerlo.
-ui_horse|Monta
+ui_horse|Cavalcatura
 ui_reclaim_your_sold_goods|Recupera i beni già dati, prima di dare questo !
 ui_return_your_bought_goods|Restituisci i beni presi, prime di cedere questo !
 ui_return_price|se restituito: +%d P.R.
@@ -654,7 +654,7 @@ ui_horse_charged_for_number_damage|Inflitti %d danni da carica.
 ui_horse_received_number_damage|L'animale ha ricevuto %d danni.
 ui_horse_fell_dead|L'animale è morto...
 ui_horse_crippled|L'animale è azzoppato...
-ui_you_got_value|%s guadagnato.
+ui_you_got_value|%s guadagnati.
 ui_has_deserted_the_party|ha abbandonato la Compagnia.
 ui_have_deserted_the_party|hanno abbandonato la Compagnia.
 ui_loading_textures|Caricamento Textures (sii paziente)...
@@ -691,7 +691,7 @@ ui_notification_requirements_not_met|Non possiedi l'abilità richiesta o gli att
 ui_disband|Disperdere
 ui_you_hit_a_friendly_troop|Hai colpito un alleato!
 ui_you_are_not_carrying_any_arrows|Non hai frecce.
-ui_received_number_damage|Ricevuto %d danni.
+ui_received_number_damage|Ricevuti %d danni.
 ui_you_have_improved_your_proficiency_in_value_to_number|Hai migliorato la tua competenza in %s a %d.
 ui_your_proficiency_in_value_has_improved_by_number_to_number|La tua competenza in %s è migliorata da +%d a %d.
 ui_value_killed_by_value|%s ucciso da %s.
