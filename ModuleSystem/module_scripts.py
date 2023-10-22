@@ -2088,7 +2088,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 33),  #Rafa: Savegame version
+    (assign,"$savegame_version", 34),  #Rafa: Savegame version
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -25637,7 +25637,14 @@ command_cursor_scripts = [
         (display_message, "@Notice: Isengard Last Stand quest cancelled for savegame compatibility reasons. Isengard can now be sieged like a regular city."),
         (assign, "$savegame_version", 33),
         (party_set_slot, "p_town_isengard", slot_center_siegability, tld_siegable_capital),        
-	(try_end),	    
+	(try_end),	  
+
+    (try_begin), #InVain - 22 Oct 2023, update merchants
+        (le, "$savegame_version", 33),
+        (call_script, "script_set_item_faction"),
+        (assign, "$savegame_version", 34),
+	(try_end),	
+    
 ]),
 
 #Kham
