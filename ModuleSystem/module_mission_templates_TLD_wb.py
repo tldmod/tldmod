@@ -1594,6 +1594,7 @@ kham_check_formations = (0, 0, 0, [
 tld_improved_horse_archer_ai =  (1, 0, 0, [ #Run it every 1 second instead of every half. Should be enough.
 
           (eq,"$field_ai_horse_archer",1),
+          (neq, "$battle_won", 1),
           
   ],
 
@@ -1603,6 +1604,15 @@ tld_improved_horse_archer_ai =  (1, 0, 0, [ #Run it every 1 second instead of ev
             (agent_is_alive, ":agent_no"),
             (agent_is_human, ":agent_no"),
             (agent_is_non_player, ":agent_no"),
+            (agent_get_team, ":team_no", ":agent_no"),
+            
+            (try_begin),
+                (all_enemies_defeated, ":team_no"),
+                (agent_set_attack_action, ":agent_no", -2, 1),
+                (assign, ":battle_over", 1),
+            (try_end),
+            
+            (neq, ":battle_over", 1),
             
             (agent_get_troop_id, ":troop_id", ":agent_no"),
             (store_skill_level, ":horse_archery_level", "skl_horse_archery", ":troop_id"),
