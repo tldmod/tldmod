@@ -2320,7 +2320,7 @@ defiled_items_end			= "itm_save_compartibility_item10"
 
 # Max values for resources and influence
 
-tld_rp_cap				= 200000
+tld_rp_cap				= -1
 tld_if_cap				= 5000
 tld_influence_trait_bonus		= 2
 

@@ -5632,7 +5632,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (quest_set_slot, "qst_deliver_gift", slot_quest_gold_reward, 0),
   (call_script, "script_finish_quest", "qst_deliver_gift", 100),
   (call_script, "script_add_faction_rps", "$g_talk_troop_faction", ":gold"),
-        (quest_get_slot, ":gift_no", "qst_deliver_gift", slot_quest_target_item),
+  (val_div, ":gold", 2000),
+  (val_add, ":gold", 2),
+  (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", ":gold"),
+  (quest_get_slot, ":gift_no", "qst_deliver_gift", slot_quest_target_item),
   (assign, reg20, ":gift_no"),
   (store_mul, ":gift_str", ":faction_index", tld_gifts_per_faction),
   (val_add, ":gift_str", gift_strings_begin),
@@ -5713,8 +5716,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (val_add, ":gift_str", ":gift_no"),
   (str_store_string, s2, ":gift_str"),
   (store_mul, ":gift_cost_a", ":gift_no", ":gift_no"),
-  (store_mul, ":gift_cost", ":gift_cost_a", 500),
-  (store_add, reg14, ":gift_cost", 500),
+  (store_mul, ":gift_cost", ":gift_cost_a", 1000),
+  (store_add, reg14, ":gift_cost", 1000),
   (call_script,"script_update_respoint"),
   (faction_get_slot,  ":rps", "$g_talk_troop_faction", slot_faction_respoint),
   (ge,":rps",reg14), # Player must be able to afford gift...
@@ -5732,8 +5735,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (val_add, ":gift_str", gift_strings_begin),
   (val_add, ":gift_str", ":gift_no"),
   (store_mul, ":gift_cost_a", ":gift_no", ":gift_no"), # i^2
-  (store_mul, ":gift_cost", ":gift_cost_a", 500), # (i^2)*500
-  (store_add, reg14, ":gift_cost", 500), #(i^2)*500 + 500
+  (store_mul, ":gift_cost", ":gift_cost_a", 1000), # (i^2)*500
+  (store_add, reg14, ":gift_cost", 1000), #(i^2)*500 + 500
   (store_sub, reg0, 0, reg14),
   (call_script, "script_add_faction_rps", "$g_talk_troop_faction", reg0),
   (str_store_string, s1, ":gift_str"),
@@ -5746,7 +5749,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (quest_set_slot, "qst_deliver_gift", slot_quest_target_faction, ":target_faction"),
     (quest_set_slot, "qst_deliver_gift", slot_quest_object_faction, "$g_talk_troop_faction"),
     (quest_set_slot, "qst_deliver_gift", slot_quest_object_faction, "$g_talk_troop_faction"),
-  (quest_set_slot, "qst_deliver_gift", slot_quest_dont_give_again_remaining_days, 15), # Can only give a gift every 15 days.
+  (quest_set_slot, "qst_deliver_gift", slot_quest_dont_give_again_remaining_days, 10), # Can only give a gift every 10 days.
   (try_begin),
     (faction_slot_eq|this_or_next, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
     (faction_slot_eq|neg, "$g_talk_troop_faction", slot_faction_culture, mtf_culture_orcs),
