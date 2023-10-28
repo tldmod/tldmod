@@ -2032,6 +2032,10 @@ game_menus = [
 	  (call_script,"script_maybe_relocate_player_from_z0"),
 	  # (party_get_current_terrain, reg78,"p_main_party"),
 	  # (display_message, "@current terrain: {reg78}"),
+      	# (party_get_position, pos1, "p_main_party"),
+	# (position_get_x, reg78, pos1),
+	# (position_get_y, reg77, pos1),
+    # (display_message, "@x: {reg78}; y:{reg77}"),
 
 	  #(assign, reg0, "$current_player_landmark",), (display_message, "@DEBUG: LANDMARK ID {reg0}"),
 	  

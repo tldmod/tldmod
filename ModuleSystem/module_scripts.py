@@ -27344,7 +27344,8 @@ command_cursor_scripts = [
 		(party_set_position, ":party", pos1),
 	(else_try),
 		(eq, ":region", region_eastfold),
-        (eq, ":terrain", rt_swamp),
+        (this_or_next|eq, ":terrain", rt_swamp),
+        (is_between, ":y", -1250, -1000), #catch a small spot of plain terrain in the river delta
 		(store_random_in_range, ":rand_x", -3500, -1000), #same as above
 		(store_random_in_range, ":rand_y", 0, -4400),
 		(position_set_x, pos1, ":rand_x"),
