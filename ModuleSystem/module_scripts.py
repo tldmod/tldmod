@@ -2747,7 +2747,7 @@ scripts = [
 					(assign, "$g_move_heroes", 1), 
 					(party_set_faction, "p_temp_party", ":faction_receiving_prisoners"),
 					(call_script, "script_party_add_party_prisoners", "p_temp_party", ":collective_casualties"),
-					(call_script, "script_party_prisoners_add_party_companions", "p_temp_party", ":collective_casualties"),
+					(call_script, "script_party_prisoners_add_party_companions", "p_temp_party", ":collective_casualties", 0),
 				(try_end),
 
 				(try_begin),
@@ -5756,6 +5756,7 @@ scripts = [
 ("party_prisoners_add_party_companions",
     [ (store_script_param_1, ":target_party"), #Target Party_id
       (store_script_param_2, ":source_party"), #Source Party_id
+      (store_script_param, ":player_involved", 3), 
       (party_get_num_companion_stacks, ":num_stacks",":source_party"),
       (try_for_range, ":stack_no", 0, ":num_stacks"),
         (party_stack_get_troop_id,     ":stack_troop",":source_party",":stack_no"),
@@ -5776,6 +5777,7 @@ scripts = [
             (assign, ":can_capture", 0),
             (try_begin),    #except if player party is involved and capture prisoners quest active
                 (eq, ":source_party", "p_collective_enemy"),
+                (eq, ":player_involved", 1),
                 (check_quest_active, "qst_capture_prisoners"),
                 (assign, ":can_capture", 1),
             (try_end),
@@ -5785,7 +5787,8 @@ scripts = [
         (party_stack_get_size, ":stack_size",":source_party",":stack_no"),
         
         (try_begin),
-            (eq, ":source_party", "p_collective_enemy"), #player party involved? Scale prisoners with prisoner management       
+            (eq, ":source_party", "p_collective_enemy"), #player party involved? Scale prisoners with prisoner management 
+            (eq, ":player_involved", 1),
             (party_get_skill_level, ":prs_management", "p_main_party", "skl_prisoner_management"),
             (val_mul, ":prs_management", ":stack_size"),
             (val_div, ":prs_management", 20),

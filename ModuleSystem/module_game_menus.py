@@ -4300,7 +4300,7 @@ game_menus = [
 		(party_set_faction, "p_temp_party", ":fac"), # mtarini: need this 
 		
 		(call_script, "script_party_add_party_prisoners", "p_temp_party", "p_main_party"),
-		(call_script, "script_party_prisoners_add_party_companions", "p_temp_party", "p_main_party"),
+		(call_script, "script_party_prisoners_add_party_companions", "p_temp_party", "p_main_party",0),
 		(distribute_party_among_party_group, "p_temp_party","$capturer_party"),
 		
 		(call_script,"script_party_remove_all_companions","p_main_party"),#removing all troops
@@ -6113,7 +6113,7 @@ game_menus = [
 		  (party_set_faction, "p_temp_party", "$players_kingdom"),  # mtarini: need this to avoid to free enemyes
 		
           (assign, "$g_move_heroes", 0),
-          (call_script, "script_party_prisoners_add_party_companions", "p_temp_party", "p_collective_enemy"),
+          (call_script, "script_party_prisoners_add_party_companions", "p_temp_party", "p_collective_enemy", 1), #assigned third parameter: player party is target party
           (call_script, "script_party_add_party_prisoners", "p_temp_party", "p_collective_enemy"),
 
           (try_begin),
@@ -6469,7 +6469,7 @@ game_menus = [
 		  (party_set_faction, "p_temp_party", ":fac"),
 
           (call_script, "script_party_add_party_prisoners", "p_temp_party", "p_main_party"),
-          (call_script, "script_party_prisoners_add_party_companions", "p_temp_party", "p_main_party"),
+          (call_script, "script_party_prisoners_add_party_companions", "p_temp_party", "p_main_party", 0),
           (distribute_party_among_party_group, "p_temp_party", "$g_enemy_party"),
         
           (call_script, "script_party_remove_all_companions", "p_main_party"),
