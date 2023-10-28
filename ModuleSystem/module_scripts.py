@@ -14462,7 +14462,8 @@ scripts = [
         (try_begin), ## Kham Edit for more town walkers!
             (this_or_next|is_between, 			"$current_town", isengard_mordor_centers_begin, isengard_mordor_centers_end),
             (this_or_next|is_between, 			"$current_town", 		   moria_centers_begin, 		  moria_centers_end),
-            (			  is_between, 			"$current_town", 		gundabad_centers_begin, 	   gundabad_centers_end),	
+            (			  is_between, 			"$current_town", 		gundabad_centers_begin, 	   gundabad_centers_end),
+            (neq, "$current_town", p_town_goblin_north_outpost), #exception, too many walkers clog the ladders
             #(set_visitors, ":entry_no", ":walker_troop_id",6), #entry points 32-39 
             (assign, ":num_walkers", 5),
         (else_try),
