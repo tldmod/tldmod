@@ -11694,62 +11694,6 @@ game_menus = [
 ]),
 ##### EVIL Intro Quest END #######
 
-##### Guardian Party Quest Start ########
-
-
-( "guardian_party_quest",0, #InVain: disabled
-   "{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.\
-   You need to bring at least {reg13} troops to the army,\
-   and are instructed to raise more warriors with all due haste if you do not have enough.",
-    "none",
-    [   
-    	(quest_get_slot, ":attacking_faction", "qst_guardian_party_quest", slot_quest_object_center),
-    	(set_background_mesh, "mesh_ui_default_menu_window"),
-        (set_fixed_point_multiplier, 100),
-        (position_set_x, pos0, 65),
-        (position_set_y, pos0, 30),
-        (position_set_z, pos0, 170),
-        (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":attacking_faction", pos0),
-        
-        (quest_get_slot, ":quest_target_troop", "qst_guardian_party_quest", slot_quest_target_troop),
-        (assign, ":quest_target_amount", 30),
-        (call_script, "script_get_information_about_troops_position", ":quest_target_troop", 0),
-        (str_clear, s9),
-        (try_begin),
-          (eq, reg0, 1), #troop is found and text is correct
-          (str_store_string, s9, s1),
-        (try_end),
-        (str_store_troop_name, s8, ":quest_target_troop"),
-        (assign, reg13, ":quest_target_amount"),
-      ],
-    [
-      ("guardian_party_reject",[],"Send a message you cannot join him.",
-       [  (change_screen_return),
-       	  (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 2), # Set AI to go attack Guardian Party
-        ]),
-      ("guardian_party_send_word",[],"Send word you'll join him shortly.",
-       [   (quest_get_slot, ":quest_target_troop", "qst_guardian_party_quest", slot_quest_target_troop),
-       	   (quest_get_slot, ":attacking_faction", "qst_guardian_party_quest", slot_quest_object_center),
-           (assign, ":quest_target_amount", 30),
-           (str_store_troop_name_link, s13, ":quest_target_troop"),
-           (assign, reg13, ":quest_target_amount"),
-           (setup_quest_text, "qst_guardian_party_quest"),
-           (str_store_string, s2, "@{s13} asked you to join him with at least {reg13} troops and meet Isengard's Last Stand."),
-           (call_script, "script_start_quest", "qst_guardian_party_quest", ":quest_target_troop"),
-           (call_script, "script_report_quest_troop_positions", "qst_guardian_party_quest", ":quest_target_troop", 3),
-
-           #Gather army
-			(try_for_range, ":accompany_marshall", heroes_begin, heroes_end),
-				(store_troop_faction, ":troop_faction", ":accompany_marshall"),
-				(eq, ":troop_faction", ":attacking_faction"),
-				(neq, ":accompany_marshall", ":quest_target_troop"),
-				(call_script, "script_accompany_marshall", ":accompany_marshall", ":quest_target_troop"),
-			(try_end),
-           (change_screen_return),
-        ]),
-     ]
- ),
-
 
 #Kham - Training START
 ] + (is_a_wb_menu==1 and [

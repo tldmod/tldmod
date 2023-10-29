@@ -3518,7 +3518,7 @@ simple_triggers = [
   
   
   
-  ## Kham Gondor Reinforcement Event - Via script_succeed_quest
+  ## Kham Gondor Reinforcement Event - Via script_succeed_quest #unused
   
   (24,
     [
@@ -3560,7 +3560,7 @@ simple_triggers = [
   ]),
   
   
-  (12,
+  (12, #unused
     [
       #(eq, "$cheat_mode",1),
       (eq, "$tld_war_began", 1),
@@ -3897,9 +3897,9 @@ simple_triggers = [
       (quest_set_slot, "qst_tld_introduction", slot_quest_current_state, 1),]
   ),
   
-  #Guardian Party Quest Trigger
+  #lore events trigger
   
-  (1, [
+  (7, [
       #(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Test
       (faction_get_slot, ":guardian_party_exists", "fac_isengard", slot_faction_guardian_party), # Guardian Party spawned
       #(assign, reg70, ":guardian_party_exists"),
@@ -3909,90 +3909,6 @@ simple_triggers = [
       (eq, ":side", faction_side_good),
       
       (assign, ":continue", 0),
-      (try_begin),
-        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
-        (assign, ":continue", 1),
-      (else_try),
-        (quest_slot_ge, "qst_guardian_party_quest", slot_quest_current_state, 2), #Good guys attack Guardian Party W/O Player
-        (neg|quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 5), #When party is defeated, end all AI
-        (assign, ":continue", 1),
-      (else_try),
-        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 5), #When party is defeated, end all AI
-        (faction_slot_eq, "fac_isengard", slot_faction_state, sfs_active),
-        (quest_get_slot, ":attacking_faction", "qst_guardian_party_quest", slot_quest_object_center),
-        (gt, ":attacking_faction", 0),
-        (try_for_range, ":lords", kingdom_heroes_begin, kingdom_heroes_end),
-          (store_troop_faction, ":lord_fac", ":lords"),
-          (eq, ":lord_fac", ":attacking_faction"),
-          (troop_get_slot, ":lord_party", ":lords", slot_troop_leaded_party),
-          (ge, ":lord_party", 1), #for some reason, this can be -1
-          (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
-        (try_end),
-      (try_end),
-      
-      (eq, ":continue", 1),
-      (faction_slot_eq, "fac_isengard", slot_faction_state, sfs_active),
-      
-      #(display_message, "@{reg70} - Qst GP Trigger 1"),
-      #Good Guys attack Guardian Party gets resolved here:
-      
-      (try_begin),
-        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 2),
-        (call_script, "script_cf_gp_quest_accompany_marshall"),
-      (else_try),
-        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 3),
-        (call_script, "script_cf_gp_marshall_travel_to_position"),
-        (call_script, "script_cf_gp_quest_accompany_marshall"),
-      (else_try),
-        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 4),
-        (call_script, "script_cf_gp_quest_attack_guardian"), #Wait time is checked here.
-        (call_script, "script_cf_gp_quest_accompany_marshall"),
-      (try_end),
-      
-      #Good Guys attack Guardian Party gets resolved ENDs here
-      
-      #Check when to show menu #InVain: Disabled, but only quest initialisation for now, cleanup will happen later
-      # (try_begin),
-        # (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
-        # (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_active), #Rohan still active,
-        # (faction_slot_ge, "fac_rohan", slot_faction_strength, fac_str_ok),
-        # (call_script, "script_get_faction_rank", "fac_rohan"), (assign, ":rank", reg0), #rank points to rank number 0-9
-        # (gt, ":rank", 5), #Rank 6 with Rohan
-        # (jump_to_menu, "mnu_guardian_party_quest"),
-        # (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 1),
-        # (quest_set_slot, "qst_guardian_party_quest", slot_quest_object_center, "fac_rohan"),
-        # (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_troop, "trp_rohan_lord"),
-      # (else_try),
-        # (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
-        # (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_defeated), #Rohan defeated,
-        # (faction_slot_eq, "fac_gondor", slot_faction_state, sfs_active), #Gondor still active,
-        # (faction_slot_ge, "fac_gondor", slot_faction_strength, fac_str_ok),
-        # (call_script, "script_get_faction_rank", "fac_gondor"), (assign, ":rank", reg0), #rank points to rank number 0-9
-        # (gt, ":rank", 5), #Rank 6 with Gondor
-        # (jump_to_menu, "mnu_guardian_party_quest"),
-        # (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 1),
-        # (quest_set_slot, "qst_guardian_party_quest", slot_quest_object_center, "fac_gondor"),
-        # (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_troop, "trp_knight_1_3"),
-      # (else_try),
-        # (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
-        # (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_defeated), #Rohan defeated,
-        # (faction_slot_eq, "fac_gondor", slot_faction_state, sfs_defeated), #Gondor defeated,
-        # (try_for_range, ":surviving_good", kingdoms_begin, kingdoms_end),
-          # (store_relation, ":relation", ":surviving_good", "$players_kingdom"),
-          # (gt, ":relation", 0),
-          # (faction_slot_eq, ":surviving_good", slot_faction_active_theater, theater_SW), #In Rohan
-          # (faction_slot_eq, ":surviving_good", slot_faction_state, sfs_active),
-          # (faction_slot_ge, ":surviving_good", slot_faction_strength, fac_str_ok),
-          # (call_script, "script_get_faction_rank", ":surviving_good"), (assign, ":rank", reg0), #rank points to rank number 0-9
-          # (gt, ":rank", 4), #Rank 5 with whoever is still alive
-          # (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
-          # (jump_to_menu, "mnu_guardian_party_quest"),
-          # (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 1),
-          # (faction_get_slot, ":marshall", ":surviving_good", slot_faction_marshall),
-          # (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_troop, ":marshall"),
-          # (quest_set_slot, "qst_guardian_party_quest", slot_quest_object_center, ":surviving_good"),
-        # (try_end),
-      # (try_end),
   ]),
   
   # Encounter Effects Trigger - InVain & Kham

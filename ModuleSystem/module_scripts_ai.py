@@ -87,18 +87,8 @@ ai_scripts = [
        
 	   (store_script_param_1, ":faction_no"),
 
-    (assign, ":guardian_party_quest_active", 0),
-
-     (try_begin),
-      (check_quest_active, "qst_guardian_party_quest"),
-      (quest_get_slot, ":guardian_party_attacker", "qst_guardian_party_quest", slot_quest_object_center),
-      (eq, ":faction_no", ":guardian_party_attacker"),
-      (assign, ":guardian_party_quest_active", 1),
-     (try_end),
-
-     (this_or_next|faction_slot_eq, ":faction_no", slot_faction_last_stand, 0), #Kham - No Faction AI during last stand event
-     (neq, ":guardian_party_quest_active", 1), #No Faction AI for guardian party attacker faction
-
+       (faction_slot_eq, ":faction_no", slot_faction_last_stand, 0), #Kham - No Faction AI during last stand event
+       
 	   (faction_get_slot, ":old_faction_ai_state", ":faction_no", slot_faction_ai_state),
        (faction_get_slot, ":old_faction_ai_object", ":faction_no", slot_faction_ai_object),
        (faction_get_slot, ":old_faction_ai_last_offensive_time", ":faction_no", slot_faction_ai_last_offensive_time),

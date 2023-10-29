@@ -5857,25 +5857,6 @@ scripts = [
 
         (try_begin),
         	(eq, ":root_party", ":guardian_party_exists"),
-        	(neg|check_quest_active, "qst_guardian_party_quest"),
-        	(quest_slot_ge, "qst_guardian_party_quest", slot_quest_current_state, 1), #Or Lords are going to be scripted
-        	(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 5), #5 when GP is defeated.
-            (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_isengard),
-            (display_message, "@legion defeated"),
-       	(else_try),
-       		(eq, ":root_party", ":guardian_party_exists"),
-        	(check_quest_active, "qst_guardian_party_quest"),
-        	(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 5), #5 when GP is defeated.
-        	(quest_get_slot, ":attacking_faction", "qst_guardian_party_quest", slot_quest_object_center),
-        	(call_script, "script_succeed_quest", "qst_guardian_party_quest"),
-        	(call_script, "script_end_quest", "qst_guardian_party_quest"),
-            (try_for_range, ":lords", kingdom_heroes_begin, kingdom_heroes_end),
-              (store_troop_faction, ":lord_fac", ":lords"),
-              (eq, ":lord_fac", ":attacking_faction"),
-              (troop_get_slot, ":lord_party", ":lords", slot_troop_leaded_party),
-			  (gt, ":lord_party", 0),
-              (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
-            (try_end),
             (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_isengard),
             (display_message, "@legion defeated"),
         (try_end),
@@ -24179,13 +24160,6 @@ command_cursor_scripts = [
     (call_script, "script_party_set_ai_state", ":party", spai_accompanying_army, ":lord_to_follow"),
     (party_set_ai_initiative, ":party", 10),
 
-    (try_begin),
-    	(check_quest_active, "qst_guardian_party_quest"),
-    	(party_set_slot, ":party", slot_party_scripted_ai, 1),
-	    (call_script, "script_party_set_ai_state", ":party", spai_accompanying_army, ":lord_to_follow"),
-    	(party_set_ai_initiative, ":party", 10),
-    (try_end),
-
     (assign, ":OK", 1),    
   (try_end),
 
@@ -27043,7 +27017,7 @@ command_cursor_scripts = [
 ]),
 
 
-### Kham Attack Party Scripts
+### Kham Attack Party Scripts #InVain: unused, keep for now
 ("attack_party", [
     (store_script_param_1, ":lord"),
     (store_script_param_2, ":party_to_attack"),
@@ -27115,101 +27089,6 @@ command_cursor_scripts = [
   ]),
 
 ### Kham Attack Party Scripts END
-
-
-### Guardian Party Quest Scripts
-
-#script_gp_quest_accompany_marshall
-#Called from Simple Triggers, takes the faction's lords and follows the marshall
-("cf_gp_quest_accompany_marshall", [
-
-	(quest_get_slot, ":quest_target_troop", "qst_guardian_party_quest", slot_quest_target_troop),
-    (quest_get_slot, ":attacking_faction", "qst_guardian_party_quest", slot_quest_object_center),
-    (troop_get_slot, ":party", ":quest_target_troop", slot_troop_leaded_party),
-    (quest_get_slot, ":quest_slot", "qst_guardian_party_quest", slot_quest_current_state),
-    (party_is_active, ":party"),
-    (try_for_range, ":accompany_marshall", heroes_begin, heroes_end),
-      (store_troop_faction, ":troop_faction", ":accompany_marshall"),
-      (eq, ":troop_faction", ":attacking_faction"),
-      (neq, ":accompany_marshall", ":quest_target_troop"),
-      (call_script, "script_accompany_marshall", ":accompany_marshall", ":quest_target_troop"),
-    (try_end),
-   # (display_message, "@Lords attempting to follow marshall", color_good_news), #Debug
-    (try_begin),
-    	(neg|check_quest_active, "qst_guardian_party_quest"), #Don't travel yet when player accepts the quest
-    	(le, ":quest_slot", 2), #Dont set the slot when marshall is waiting
-    	(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 3), #3 for waiting marshall
-    (try_end),
-
-    (try_for_parties, ":patrols"),
-    	(party_is_active, ":patrols"),
-    	(party_get_slot, ":type", ":patrols", slot_party_type),
-    	(this_or_next|eq, ":type", spt_raider),
-    	(eq, ":type", spt_patrol),
-    	(store_faction_of_party, ":patrol_fac", ":patrols"),
-    	(eq, ":patrol_fac", ":attacking_faction"),
-		(call_script, "script_party_set_ai_state", ":patrols", spai_accompanying_army, ":quest_target_troop"),
-		(party_set_ai_initiative, ":patrols", 10), #don't react to random enemies much
-    (try_end),
-
- 	#(quest_get_slot, reg65, "qst_guardian_party_quest", slot_quest_current_state),
- 	#(display_message, "@{reg65} - Current State: Following Script.", color_good_news),
- ]),
-
-#script_cf_gp_marshall_travel_to_position
-#Called from Simple Triggers, takes the faction's marshall moves to position
-("cf_gp_marshall_travel_to_position", [
-	(quest_get_slot, ":quest_target_troop", "qst_guardian_party_quest", slot_quest_target_troop),
-	(troop_get_slot, ":party", ":quest_target_troop", slot_troop_leaded_party),
-    (gt, ":party", 0),
-	(party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),
-	(set_fixed_point_multiplier, 10),
- 	(position_set_x, pos56, 452),
-    (position_set_y, pos56, -476),
-    (party_set_ai_behavior, ":party", ai_bhvr_travel_to_point),
-    (party_set_ai_target_position, ":party", pos56),
-    (party_set_flags, ":party", pf_default_behavior, 0),
-    (party_set_ai_initiative, ":party", 10),
-    (party_get_position, pos57, ":party"),
-    (get_distance_between_positions, ":dist", pos56,pos57),
-    (store_current_hours, ":cur_hours"),
-    (try_begin),
-    	(neg|quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 4),
-    	(le, ":dist", 2300),
-    	#(display_message, "@Distance Check and State Passed", color_bad_news),
-	    (store_add, ":gathering_time", ":cur_hours", 24), #1 day of waiting
-    	(quest_set_slot, "qst_guardian_party_quest", slot_quest_expiration_days, ":gathering_time"),
-    	(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 4), #4 for travelling marshall
-    (try_end),
-    #(quest_get_slot, reg69, "qst_guardian_party_quest", slot_quest_expiration_days),
-    #(assign, reg70, ":dist"),
-    #(assign, reg68, ":cur_hours"),
-    
-    #(display_message, "@Marshall Travelling to Position Near Guardian Party - Distance: {reg70} -- Cur Hours: {reg68} -  Wait Time:{reg69}", color_good_news), #Debug
- 	#(quest_get_slot, reg65, "qst_guardian_party_quest", slot_quest_current_state),
- 	#(display_message, "@{reg65} - Current State: Travelling Script.", color_good_news),
- ]),
-
-#script_cf_gp_quest_attack_guardian
-#Called from Simple Triggers, takes the faction's marshall and attacks guardian party
-("cf_gp_quest_attack_guardian", [
-	(faction_get_slot, ":guardian_party", "fac_isengard", slot_faction_guardian_party), 
-	(store_current_hours, ":cur_hours"),
-
-	(quest_get_slot, ":waiting_time", "qst_guardian_party_quest", slot_quest_expiration_days), 
-	(ge, ":cur_hours", ":waiting_time"), #Wait time over
-
-	(quest_get_slot, ":quest_target_troop_2", "qst_guardian_party_quest", slot_quest_target_troop),
-	(troop_get_slot, ":party_2", ":quest_target_troop_2", slot_troop_leaded_party),
-	(party_is_active, ":party_2"),
-	(party_slot_eq, ":party_2", slot_party_type, spt_kingdom_hero_party),
-	(call_script, "script_attack_party", ":quest_target_troop_2", ":guardian_party"),
-	#(display_message, "@Marshall Attacking Isengard Guardian Party", color_good_news),
-	(try_begin),
-		(neg|party_is_active, ":guardian_party"),
-		(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 5), #5 when GP is defeated.
-	(try_end),
- ]),
 
 
 #script_last_faction_stand and auxillary scripts
