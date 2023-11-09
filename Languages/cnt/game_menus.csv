@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^奇怪，你聽到四周發出一些威脅的噪音。
 mno_be_quiet_elf|尊重這些憤怒的古樹。悄悄地前進。
 mno_be_quiet|收起武器且保持安靜！馬上離開這裡！
 mno_be_bold|繼續前進！我不害怕植物和古老的神話！
-; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
+mno_fight_back|讓我們來一探究竟吧！搜索這個區域！燒燒幾棵樹！ （扎營）
 menu_fangorn_search_fails|^^^^^^你搜索了漆黑濃密的森林，但什麽都沒有找到。^然而，你感到來自四周的視線和威脅變得越來越多了。
 menu_fangorn_killed_player_only|^^^^^^你在這個漆黑濃密的森林徘徊。^忽然間某個東西砸到你了的頭上！可能是一根很重的樹枝吧？^你昏迷幾分鐘中後醒了過來。你傷得很重但還能繼續前進。
 mno_ow_get_out|噢！讓我們離開這個被詛咒的地方！
@@ -200,7 +200,7 @@ mno_leave|離開。
 menu_simple_encounter|^^^^^{s2}^你有{reg22}名可戰鬥的部下對抗{reg11}名敵軍。^^戰鬥將在{s3}{s4}展開。^^你的命令是？
 mno_encounter_attack|{reg21?向他們衝鋒:準備迎戰他們}。
 mno_encounter_order_attack|命令你的部下{reg21?進攻:迎戰他們}而不親自參與。
-; mno_control_allies_menu|Use influence to command your allies in the field.
+mno_control_allies_menu|消耗影響力，取得在戰場上指揮友軍的權力。
 mno_encounter_hide|躲避敵人...
 mno_special_whip|向前衝突破{s4}。
 mno_encounter_attack_bearform|{reg21?變成熊衝進戰場:變身迎戰他們}。
@@ -235,7 +235,7 @@ mno_pre_join_leave|不卷入其中。
 menu_join_battle|^^^你正在幫助{s2}對抗{s1}，^你有{reg22}名部下參加戰鬥對抗敵方的{reg11}人。^^戰鬥將在{s3}{s4}展開。
 mno_join_attack|向敵人衝鋒。
 mno_join_order_attack|命令你的部隊加入盟友進攻而不親自參與。 
-; mno_control_allies_join_menu|Use influence to command your allies in the field.
+mno_control_allies_join_menu|消耗影響力，取得在戰場上指揮友軍的權力。
 mno_join_attack_bearform|變成熊衝進戰場
 mno_join_leave|脫離。
 mno_player_control_allies_join_menu|指揮他們向敵人衝鋒
@@ -300,7 +300,7 @@ mno_town_center_door|進入城鎮中心的門。
 mno_aw_chamber_door|開門。
 mno_trade_with_arms_merchant|訪問{s40}。
 mno_trade_with_horse_merchant|訪問{s41}。
-; mno_town_prison_door|To the Training Grounds
+mno_town_prison_door|前往訓練場
 mno_dungeon_enter|在山中搜索失落的長槍。
 mno_dungeon_enter_door|打開門。
 mno_dwarven_warehouse|拜訪矮人倉庫
@@ -312,7 +312,7 @@ mno_isengard_underground_door|前往地下洞穴
 mno_tirith_toplevel|爬到頂層。
 mno_tirith_toplevel_door|前往堡壘
 mno_erebor_gates|訪問大門。
-; mno_erebor_gates_door|Go to the Great Gates
+mno_erebor_gates_door|前往大門
 mno_town_leave|離開...
 mno_town_leave_door|離開區域
 menu_player_initiated_siege_result|你在{s2}的旗幟下進攻這個據點。
@@ -421,7 +421,7 @@ mno_cb_mordor8|海盜
 mno_rescue_mission|在黑夜的掩護下潛入巫師的巢穴。
 mno_next_rescue_scene_door|繼續向前！
 mno_pick_troops1|選擇一起執行任務的同伴，已選擇了{reg0}人
-; menu_pick_troops|Whom would you take with you into the stealth mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg65?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg0} companions.
+menu_pick_troops|你要選擇誰和你一起執行這次潛行任務？ ^只有身手最敏捷的部下和同伴能夠加入行動。 ^身為隊伍中荒野求生技能最高的人，{reg65?{s1}建議你最多:你覺得能}帶{reg11}名手下。 ^^目前你選了{reg0}名。
 mno_go_forward|結束同伴選擇並且繼續。
 menu_burial_mound|你接近了{s2}的{s1}的墓塚。他戰敗於{s28}的部隊之下。附近堆滿了死去敵人鈍掉的武器。
 mno_pay_respects|跪下並獻上你的敬意。

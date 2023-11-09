@@ -1,9 +1,9 @@
 skl_trade|議價
 skl_trade_desc|能夠更好地與鐵匠和補給官合作，使他們提供更好的裝備。(隊伍技能)
 skl_leadership|統御
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
+skl_leadership_desc|每點增加隊伍人數上限5，提高隊伍士氣與戰場凝聚力，同時能夠讓更多且更優秀的新兵願意應徵進入你的麾下。 （領袖技能）
 skl_prisoner_management|俘虜管理
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
+skl_prisoner_management_desc|每點增加俘虜上限%d。(領袖技能)
 skl_persuasion|綠野仙蹤
 skl_persuasion_desc|在荒野中生存並將其轉為助力的能力。這個技能影響隊伍在樹林中躲避敵人的能力和移動速度。 (隊伍技能)
 skl_engineer|-----
@@ -15,7 +15,7 @@ skl_surgery_desc|每點增加4%%的機會，使得本來會死亡的隊伍成員
 skl_wound_treatment|療傷
 skl_wound_treatment_desc|每點增加隊伍生命值回復速度20%%。 (隊伍技能)
 skl_inventory_management|物品管理
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+skl_inventory_management_desc|每點增加物品欄容量+6格。 (領袖技能)
 skl_spotting|偵察
 skl_spotting_desc|每點增加隊伍偵察範圍10%%。 (隊伍技能) 
 skl_pathfinding|尋路

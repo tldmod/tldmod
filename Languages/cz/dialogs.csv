@@ -178,8 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|Dobře se postarej o tohohle velik�
 dlga_player_hire_troop:close_window.1|Potřebuji nějaký trénink.
 dlga_player_hire_troop:tld_sell_prisoners|Přivedl jsem vám nějake zajatce.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Podívejme se na ubohou spodinu.
-; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
-; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
+dlga_player_hire_troop:tld_sell_prisoners_all|Chci aby sis vzal všechny vězně které mám sebou.
+dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Inu dobrá, vezu je všechny do našeho žaláře.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Dovolte mi zkontrolovat záznamy z našeho vězení...
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Změnil jsi svůj názor, eh?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Postarám se o to, aby z našich žalářů už nikdy nevylezli.
@@ -279,7 +279,7 @@ dlga_lord_start:lord_bring_back_runaway_serfs_failed|{jméno hráče}. Trpěliv�
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Odpusťtě, {s65}, ti otroci byli slizcí jako úhoři.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, to je stěží ospravedlnění za selhání, {playername}. Teď, když mě omluvíte, potřebuji zachytit nové muže, aby pracovali na těchto polích předtím, než jsme hladoví.
 dlga_lord_start:lord_runaway_serf_half_completed|Zklamal jsi mě, {playername}. Chtěl jsem po tobě tři skupiny navrácených otroků. 3, ne {reg17}. Ti co se vrátili, teď budou muset dřít dvakrát tvrději. A co se týče tvé odměny {playername}, zaplatím ti jen za ty, co jsi vrátil, ne za ty uprchlé. Na, vem si to. Ať je to za námi.
-dlga_lord_runaway_serf_half_completed:lord_pretalk|Dakujem, si uzasny{s65}
+dlga_lord_runaway_serf_half_completed:lord_pretalk|Děkuji, {s65}. Jsi opravdu štědrý.
 dlga_lord_runaway_serf_half_completed:lord_pretalk.1|Bah, tohle se ukázalo být ztrátou času.
 dlga_lord_start:lord_deliver_cattle_to_army_thank|Ah, {playername}. Jsem potěšen, že jsi doručil {reg13} jednotky {s4}, jak jsem požadoval. Jsem ohromen.
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk|Bez problému, {s65}.
@@ -308,7 +308,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Je celý tvůj.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Obávám se, že mám pro něj jiné využití.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Výborně! Nechal jsem své muže poslat ho do našeho vězení. Toto naší věci moc pomůže.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Škoda, byl by pro nás drahocenný, {playername}.
-; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
+dlga_tld_intro_1:lord_pretalk|Tutoriál k válce: ^^- Frakce budou obléhat pouze pokud jsou dostatečně silné.^- Většina měst může být obléhána pokud je jejich frakce dostatečně oslabena. Obvykle, hlavní města jsou obléhána jako poslední.^- Pokud frakce přijde o jejich hlavní město, bude poražena.^- Frakce získávají sílu z vítězství na bojovém poli a za držení určitých klíčových oblastí.^- Frakce ztrácí sílu z proher na bojovém poli nebo ztrátou města.^- Některé úkoly nebo události mohou ovlivnit sílu frakce.^-  Můžeš porovnat momentální sílu frakce v 'hlášení'.^- Prohlédněte si Info stránky pro více TLD návodů.
 dlga_lord_start:lord_pretalk|Ah, vítejte, {s24}.^ Měli byste už vědět, že {s12}. Vaše povinnost je pomoci v našem boji, {playername}. Když prokážete, že si zasloužíte mou důvěru [level {reg1}], dovolím vám také přístup k té truhle tamhle, pro tebe aby sis mohl uskladnit svoje osobní věci.
 dlga_lord_start:lord_talk|Co se děje?
 dlga_lord_pretalk:lord_talk|Jeste neco?
@@ -611,8 +611,8 @@ dlga_lord_talk:lord_leave_prison|Musím jít.
 dlga_lord_talk:lord_leave|Náš hovor skončil. Odcházím.
 dlga_lord_talk:lord_leave.1|Omluv mě.
 dlga_lord_leave_prison:close_window|Na viděnou. 
-; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
-; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
+dlga_lord_leave:lord_offer_troops|{s23} {s24} Mám {reg41} {s25} jenž {reg42?are:is} připraveni se k tobě přidat.
+dlga_lord_offer_troops:close_window|Děkuji ti,  {reg42? s radostí je uvítám v mé družině, ale obávám se že mám misto pouze pro {reg41}}.
 dlga_lord_offer_troops:close_window.1|Obávám se je v tuhle dobu nebudu moci přijmout.
 ; dlga_lord_leave:lord_offer_item|{s23} {s24}
 ; dlga_lord_offer_item:close_window|Thank you, I shall see  that it is put to good use.
@@ -1013,7 +1013,7 @@ dlga_start:hall_guard_talk|Vaše rozkazy, veliteli?
 ; dlga_hall_guard_talk:hall_guard_duty|Stay on duty and let me know if anyone comes to see me.
 dlga_hall_guard_duty:close_window|Ano veliteli. Jak si přejete.
 dlga_hall_guard_talk:hall_guard_arrest|Chci aby si okamžitě zatknul tohoto muže.
-; dlga_hall_guard_arrest:hall_guard_arrest_2|Who do you want arrested, Commander?
+dlga_hall_guard_arrest:hall_guard_arrest_2|Koho chcete zatknout, veliteli?
 ; dlga_hall_guard_arrest_2:close_window|Ah, never mind my high spirits lads.
 dlga_hall_guard_arrest_2:close_window.1|Zapomeň na to. Najdu jiný způsob, jak to vyřešit.
 dlga_enemy_defeated:close_window|Arggh! Tohle nenávidím.
@@ -1033,14 +1033,14 @@ dlga_regular_member_talk:close_window|Nic. Pokračujte v chůzi.
 dlga_disband_regular_member_confirm_yn:close_window|Ano, jděte tam a čekejte na další rozkazy od {s14}. Hodně štěstí, vojáku!
 dlga_disband_regular_member_confirm_yn:close_window.1|Ještě ne, stále tě potřebuji.
 dlga_disband_regular_member_confirm_yn:disband_regular_member_insist|Ale stále jste zde potřeba!
-; dlga_disband_regular_member_insist:close_window|I know, but my duty brings me to different battles.^I will soon leave.
-; dlga_start:routed_allies_talk|{reg1?My lord:Master}, you have survived! Shall we join you again?
+dlga_disband_regular_member_insist:close_window|Vím, ale moje povinnost mě do jiných bitev.^Brzy odejdu.
+dlga_start:routed_allies_talk|{reg1?My lord:Master}, vy jste přežil! Měli bychom se k vám znovu přidat?
 dlga_routed_allies_talk:close_window|Ano, společně budeme znovu bojovat o {s1}.
 dlga_routed_allies_talk:close_window.1|Ještě ne, vojáku
 dlga_start:routed_allies_talk_troll|Vrčí.
 dlga_routed_allies_talk_troll:close_window|[Nechte je znovu se k vám přidat]
 dlga_routed_allies_talk_troll:close_window.1|[Odejít.]
-; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+dlga_start:party_encounter_friend|Posloucháme tvé rozkazy, {s24}.
 dlga_start:party_encounter_friend.1|Co tě sem přivádí?
 dlga_party_reinforce:party_reinforce_end|Zatím jsme žádné nepřátelé nespatřili. Možná později, děkuji.
 dlga_party_reinforce:party_reinforce_end.1|Nepotřebujeme žádné další vojáky, děkuji.
@@ -1048,14 +1048,14 @@ dlga_party_reinforce:party_reinforce_end.1|Nepotřebujeme žádné další vojá
 ; dlga_party_reinforce:party_reinforce_end.2|Unfortunately you don't have any {s22} soldiers to reinforce us with.
 dlga_party_reinforce_check:party_reinforce_check_1|Nech mě zkontrolovat seznam vojáků ...
 dlga_party_reinforce_check_1:party_reinforce_end|Takže sis to rozmyslel... Chápu.
-; dlga_party_reinforce_check_1:party_reinforce_end.1|Those soldiers are of no use to us. ^Take them back.
-; dlga_start:close_window.29|You are making me late! Wizards are never late!
+dlga_party_reinforce_check_1:party_reinforce_end.1|Tihle vojáci jsou nám k ničemu. ^Vem si je zpátky.
+dlga_start:close_window.29|Přijdu kvůli tobě pozdě! Čarodějové nikdy nechodí pozdě!
 dlga_start:close_window.30|On... mně volááááááá...
 ; dlga_start:close_window.31|You there! You survived? Good! You can't be waving a stick about! Take this!
 ; dlga_start:ori_choose_1|You fight well, kinsman! I don't know how you've been surviving so far. I remember you joining us recently, before all this... before Balin fell... Where are you from?
-; dlga_ori_choose_1:ori_choose_finish|I was a tracker, sent to the woods near the Bear people. I recently heard about Balin's company and joined.
-; dlga_ori_choose_1:ori_choose_finish.1|I am a distant cousin, a veteran bodyguard from a mine far away. Then I heard of Balin and joined.
-; dlga_ori_choose_1:ori_choose_finish.2|I am from the Iron Hills, a veteran of the wars, and a miner during peace. I heard of Balin and joined, wanting more kill orcs.
+dlga_ori_choose_1:ori_choose_finish|Byl jsem stopař, vyslán do lesů poblíž Medvědího lidu. Nedávno jsem slyšel o Balinově bandě a přidal se.
+dlga_ori_choose_1:ori_choose_finish.1|Jsem vzdálený bratranec, veteránská osobní stráž z dalekého dolu. Pak jsem zaslechl o Balinovi a přidal se.
+dlga_ori_choose_1:ori_choose_finish.2|Jsem ze Železných Hor, veterán válek, a horník v dobách míru. Slyšel jsem o Balinovi a přidal se, v doufání že zabiju více skřetů.
 ; dlga_ori_choose_finish:close_window|Good to know! I found these, fit for your background. We shall make our stand here and take as many of them with us!
 ; dlga_start:close_window.32|It looks like you are shaking off those rusty skills, eh? Here, take a swig of this. It will make you feel better. More orcs are coming!
 dlga_start:close_window.33|Sundej tu zaprášenou věc ze sebe a oblékni si tohle. Mělo by tě to lepe ubránit. Tito orkové tvrdě koušou!

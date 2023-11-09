@@ -178,8 +178,8 @@ dlga_player_hire_troll_buy_done:close_window|好好照顧這個大傢伙，他�
 dlga_player_hire_troop:close_window.1|我需要一些訓練。
 dlga_player_hire_troop:tld_sell_prisoners|我為你帶來了一些囚犯。
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33}讓我們瞧瞧這些可悲的渣滓！
-; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
-; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
+dlga_player_hire_troop:tld_sell_prisoners_all|我想把隊伍裡的俘虜直接都轉交給你。
+dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|幹得漂亮，我這就讓他們都蹲牢裡去。
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|讓我查查我們地牢的紀錄…
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|你，改變主意啦？
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|我會確保他們逃不出我們地牢的。
@@ -308,7 +308,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|好吧，他是你的了。
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|我恐怕對他還有別的計劃。 
 dlga_lord_buy_prisoner_accept:lord_pretalk|棒極了！我會立即派人馬把他押入我們的監獄。這將對我們的大業有很有幫助。
 dlga_lord_buy_prisoner_deny:lord_pretalk|真遺憾，{playername}，他明明對我們很有價值的。
-; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
+dlga_tld_intro_1:lord_pretalk|大戰指南：^^（1）派系只會在自身勢力值夠高時攻城。 ^（2）大多數據點都是可以被攻打的，只要所屬派系夠軟弱。通常，首都會是最後被攻擊的。 ^（3）如果派系失去首都，那麼就會徹底戰敗。 ^（4）勢力會因戰鬥勝利或占有特定據點而獲得勢力值。 ^（5）反之，勢力會因戰鬥失敗或失去據點而失去勢力值。 ^（6）一些任務或事件會影響派系勢力值。 ^（7）報告選單介面瀏覽所有派系的勢力值。 ^（8）查看記錄資訊頁面以取得更多TLD遊玩指南。
 dlga_lord_start:lord_pretalk|啊，歡迎，{s24}。^你應該已經知道{s12}了。{playername}，你的職責是幫助我們的鬥爭。當你證明自己值得信任[等級{reg1}]時，我也會允許你使用那邊那個箱子來存放你的個人物品。
 dlga_lord_start:lord_talk|什麼事？
 dlga_lord_pretalk:lord_talk|還有其他的嗎？
@@ -611,12 +611,12 @@ dlga_lord_talk:lord_leave_prison|我得走了。
 dlga_lord_talk:lord_leave|我們的談話結束了。我走了。
 dlga_lord_talk:lord_leave.1|我必須離開了。
 dlga_lord_leave_prison:close_window|我們會再見的。
-; dlga_lord_leave:lord_offer_troops|{s23} {s24} I have {reg41} {s25} who {reg42?are:is} prepared to join you.
-; dlga_lord_offer_troops:close_window|Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.
-; dlga_lord_offer_troops:close_window.1|I fear I cannot accept them at this time.
-; dlga_lord_leave:lord_offer_item|{s23} {s24}
-; dlga_lord_offer_item:close_window|Thank you, I shall see  that it is put to good use.
-; dlga_lord_offer_item:close_window.1|I'm afraid I must decline.
+dlga_lord_leave:lord_offer_troops|{s23}{s24}我想要{reg41}個{s25}{reg42?加入:加入}你的部隊。
+dlga_lord_offer_troops:close_window|謝謝，{reg42?我很高興能夠接收他們入隊:，只是恐怕我只能帶上{reg41}名}。
+dlga_lord_offer_troops:close_window.1|恐怕這次我接收不下他們。
+dlga_lord_leave:lord_offer_item|{s23} {s24}
+dlga_lord_offer_item:close_window|謝謝，我會善用您的好意的。
+dlga_lord_offer_item:close_window.1|恐怕我只好拒絕。
 dlga_lord_leave:close_window|再看看吧，{playername}。
 dlga_lord_leave:close_window.1|當然，{playername}。告別。
 dlga_lord_leave:close_window.2|祝你一路順風，{playername}。
@@ -927,9 +927,9 @@ dlga_merchant_quest_brief:troublesome_bandits_quest_brief|我需要有人幫我�
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|好吧。我會獵殺這些哥布林的。
 dlga_merchant_quest_taken_bandits:close_window|你會嗎？很高興聽到你這麼說。祝你好運。
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|抱歉。我現在沒時間做這件事。
-; dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
-; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these bandits alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
-; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
+dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|我當然有！我們這兒盤踞著一群強盜，我已經試過無數種解決方法了，但都沒什麼效果。他們常在夜色的掩護下伏擊醉酒的新兵，等衛兵姍姍來遲，它們早就跑的沒影了。一直以來我們連其中一個都抓不住。他們只襲擊那些落單的人，人多的時候這群膽小鬼從來不敢露面。我需要某人能夠單槍匹馬的解決掉他們，因為這似乎是唯一的方法了。你願意接受這個任務麼？
+dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|我們這兒盤踞著一群強盜，我已經試過無數種解決方法了，但都沒什麼效果。他們常在夜色的掩護下伏擊醉酒的新兵，等衛兵姍姍來遲，它們早就跑的沒影了。一直以來我們連其中一個都抓不住。他們只襲擊那些落單的人，人多的時候這群膽小鬼從來不敢露面。我需要某人能夠單槍匹馬的解決掉他們，因為這似乎是唯一的方法了。你願意接受這個任務麼？
+dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|幹掉一些流氓土匪？為什麼不呢！
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|不了，我沒興趣。
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|這真是幫我解決了一個重擔啊，{playername}。你成功回來時可以期待從我這裡拿到豐厚的報酬。可別把自己搞死了知道嗎？
 dlga_merchant_quest_requested:merchant_quest_brief.9|這裡的駐軍指揮官正在尋找一個足智多謀的戰士來幫他帶一群{s12}到{s13}。
@@ -1040,7 +1040,7 @@ dlga_routed_allies_talk:close_window.1|還不行，士兵。
 dlga_start:routed_allies_talk_troll|^^低吼！^^
 dlga_routed_allies_talk_troll:close_window|[讓他們再次加入你]
 dlga_routed_allies_talk_troll:close_window.1|[離開]
-; dlga_start:party_encounter_friend|We are following your orders, {s24}.
+dlga_start:party_encounter_friend|我們正聽從您的指揮，{s24}。
 dlga_start:party_encounter_friend.1|{s4}是什麼把你帶到這裡的，{s24}？
 dlga_party_reinforce:party_reinforce_end|我們目前沒有發現太多敵軍活動。之後再說吧，謝謝。
 dlga_party_reinforce:party_reinforce_end.1|我們目前不需要更多的士兵了，謝謝你。

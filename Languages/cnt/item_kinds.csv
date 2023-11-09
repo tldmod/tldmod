@@ -92,7 +92,7 @@ itm_hood_black|黑色兜帽
 itm_hood_green|綠色兜帽
 itm_hood_grey|灰色兜帽
 itm_hood_leather|皮兜帽
-; itm_mail_coif|Mail Coif
+itm_mail_coif|鏈甲頭巾
 itm_axe_a|北方斧
 itm_axe_b|北方鉤斧
 itm_axe_c|北方斧
@@ -132,15 +132,15 @@ itm_rohirrim_throwing_axe|北方擲斧
 itm_loss_throwing_axes|羅薩納奇擲斧
 itm_arnor_helm_c|亞爾諾飾紋盔
 itm_arnor_helm_b|亞爾諾盔
-; itm_arnor_helm_a|Arnor Light Helm
-; itm_arnor_light_a|Dunedain Ranger Jerkin
-; itm_arnor_light_b|Dunedain Ranger Mail
-; itm_arnor_med_a|Dunedain Ranger Coat
-; itm_arnor_med_b|Dunedain Mail
+itm_arnor_helm_a|亞爾諾輕型盔
+itm_arnor_light_a|登丹遊俠內衣
+itm_arnor_light_b|登丹遊俠鏈甲
+itm_arnor_med_a|登丹遊俠大衣
+itm_arnor_med_b|登丹鏈甲
 itm_arnor_heavy|亞爾諾高等鎧
 itm_arnor_greaves|亞爾諾脛甲
 itm_arnor_shield_c|亞爾諾騎兵盾
-; itm_arnor_shield_a|Arnor Round Shield
+itm_arnor_shield_a|亞爾諾圓盾
 itm_arnor_sword_c|亞爾諾戰劍
 itm_arnor_sword_a|亞爾諾變種劍
 itm_arnor_sword_f|亞爾諾短劍
@@ -423,15 +423,15 @@ itm_gundabad_helm_c|剛達巴半獸人盔
 itm_gundabad_helm_d|剛達巴半獸人盔
 itm_gundabad_helm_e|座狼騎手盔
 itm_dunland_wolfboots|登蘭德狼靴
-; itm_dunland_tunic_1|Dunnish Leather Tunic
-; itm_dunland_tunic_2|Dunnish Leather Tunic
-; itm_dunland_fur_1|Dunnish Fur
-; itm_dunland_fur_2|Dunnish Fur
+itm_dunland_tunic_1|登蘭德皮革外衣
+itm_dunland_tunic_2|登蘭德皮革外衣
+itm_dunland_fur_1|登蘭德毛皮大衣
+itm_dunland_fur_2|登蘭德毛皮大衣
 itm_dunland_mail_1|登蘭德胸甲
 itm_dunland_mail_2|登蘭德胸甲
-; itm_dunland_chieftain|Dunnish Chief Armor
+itm_dunland_chieftain|登蘭德酋長鎧甲
 itm_dun_helm_a|登蘭德狼帽
-; itm_dun_helm_b|Dunnish Fur Cap
+itm_dun_helm_b|登蘭德皮帽
 itm_dun_helm_c|登蘭德高盔
 itm_dun_helm_d|登蘭德高盔
 itm_dun_helm_e|登蘭德鹿角盔
@@ -492,14 +492,14 @@ itm_mirkwood_helm_a|木精靈弓兵盔
 itm_mirkwood_helm_b|綠森盔
 itm_mirkwood_helm_c|綠森重型盔
 itm_mirkwood_helm_d|綠森王家盔
-; itm_woodelf_leather_boots|Woodelf Leather Boots
-; itm_mirkwood_boots|Greenwood Boots
+itm_woodelf_leather_boots|木精靈皮靴
+itm_mirkwood_boots|綠林靴
 itm_harad_tunic|哈拉德束腰外衣
-; itm_harad_padded|Harad Padded Jerkin
-; itm_harad_lamellar|Harad Scale Vest
-; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_padded|哈拉德加厚短上衣
+itm_harad_lamellar|哈拉德鱗甲
+itm_harad_heavy_lamellar|哈拉德重裝鱗甲
 itm_harad_heavy|哈拉斯加拉鎧甲
-; itm_harad_pectoral|Harad Breastplate
+itm_harad_pectoral|哈拉德胸甲
 itm_black_snake_armor|馬拉卡鎧甲
 itm_harad_champion|遠哈拉德外罩
 itm_harad_scale|哈拉德鱗甲
@@ -515,11 +515,11 @@ itm_harad_eaglehelm|鷹衛隊盔
 itm_lion_helm|獅衛隊盔
 itm_harad_pantherhelm|豹衛隊帽
 itm_harad_khopesh|哈拉德鐮狀劍
-; itm_black_snake_sword|Harad Cobra Sword
-; itm_harad_heavy_sword|Harad Dragon Sword
+itm_black_snake_sword|哈拉德眼鏡蛇刃
+itm_harad_heavy_sword|哈拉德龍刃
 itm_horandor_a|哈拉德月牙彎刀
 itm_skirmisher_sword|哈拉德散兵劍
-; itm_harad_sabre|Harad Salamander Sword
+itm_harad_sabre|哈拉德火蜥刀
 itm_harad_mace|遠哈拉德戰錘
 itm_far_harad_2h_mace|遠哈拉德雙手戰錘
 itm_harad_dagger|哈拉德刃
@@ -549,11 +549,11 @@ itm_khand_cav_helm_b|侃德騎手盔
 itm_khand_cav_helm_c|侃德飾紋盔
 itm_khand_helm_mask|侃德面具
 itm_khand_light|侃德呢短裙
-; itm_khand_light_lam|Khand Light Footmen Armor
-; itm_khand_foot_lam|Khand Heavy Footman Armor
+itm_khand_light_lam|侃德輕型步兵甲
+itm_khand_foot_lam|侃德重裝步兵甲
 itm_khand_med_lam|侃德中型片甲
 itm_khand_heavy_lam|侃德重型片甲
-; itm_khand_mail|Khand Mail
+itm_khand_mail|侃德鐵甲
 itm_khand_noble_lam|侃 德 貴  族 鎧 甲
 itm_khand_axe_great|侃德大斧
 itm_khand_axe_winged|侃德翼斧
@@ -635,7 +635,7 @@ itm_umb_helm_a|海盜硬殼盔
 itm_umb_helm_b|海盜高盔
 itm_umb_helm_c|海盜民兵盔
 itm_umb_helm_d|海盜掠奪者盔
-; itm_umb_helm_reward|Ancient Numenorean Karma
+itm_umb_helm_reward|古努曼諾爾盔
 itm_corsair_trident|海怒三叉戟
 itm_corsair_boots|海盜靴
 itm_umb_shield_a|海盜盾
@@ -719,7 +719,7 @@ itm_gondor_lance_banner|剛鐸騎槍加旗幟
 itm_amroth_lance_banner|多爾安姆羅斯騎槍加旗幟
 itm_rohan_lance_banner_sun|洛汗騎槍加太陽旗
 itm_rohan_lance_banner_horse|洛汗騎槍加馬旗
-; itm_fur_gloves_reward|Hunter Gloves
+itm_fur_gloves_reward|獵人手套
 itm_ent_water|一碗奇怪的水
 itm_map|中土世界地圖
 itm_athelas_reward|乾燥阿系拉斯葉
