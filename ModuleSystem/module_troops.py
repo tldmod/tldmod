@@ -3524,6 +3524,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
    [itm_orc_coif,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_bone_cudgel_heavy,itm_bone_cudgel,itm_orc_sabre,itm_orc_simple_spear,itm_orc_ragwrap,itm_orc_slasher,itm_orc_axe,itm_metal_scraps_bad],
 attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,orc_face2],
 
+#for future bandits
 ["future_troop_6","Mountain_Goblin","Mountain_Goblins",tf_orc| tf_no_capture_alive,0,0,fac_tribal_orcs,
    [itm_orc_tribal_a,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_orc_shield_a,itm_orc_shield_b,itm_orc_shield_c,itm_orc_ragwrap,itm_bone_cudgel_heavy,itm_twohand_wood_club,itm_bone_cudgel,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_3|knows_power_strike_2,orc_face3,orc_face4],
@@ -3546,6 +3547,19 @@ attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,o
 ["a5_dism_elite_skirmisher_of_rohan","Elite_Skirmisher_of_Rohan","Elite_Skirmishers_of_Rohan",tf_rohan| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,[itm_rohan_archer_helmet_a,itm_rohan_light_helmet_a,itm_rohan_mail_good, itm_rohan_rider,itm_rohan_rider_bad,itm_dale_light_b_good,itm_leather_gloves,itm_rohan_light_greaves,itm_leather_boots,itm_strong_bow,itm_khergit_arrows,itm_rohan_spear,itm_rohan_sword_c,itm_rohirrim_long_hafted_axe,],attr_tier_6,wp_tier_6,knows_horse_archery_5|knows_riding_7|knows_power_draw_5|knows_power_throw_5|knows_power_strike_3|knows_ironflesh_3,rohan_face_middle_1,rohan_face_old_2],
 
 ["ac5_camel_rider","Harad_Camel_Rider","Harad_Camel_Riders",tf_harad| tfg_ranged| tf_mounted| tfg_armor| tfg_helm| tfg_horse|tfg_gloves| tfg_boots,0,0,fac_harad,[itm_black_snake_helm,itm_harad_heavy_inf_helm,itm_black_snake_armor,itm_leather_gloves,itm_harad_leather_greaves,itm_harad_javelin_big,itm_harad_javelin_big,itm_far_harad_2h_mace,itm_harad_long_spear,itm_camel],attr_evil_tier_5,wp_tier_bow_5,knows_common|knows_ironflesh_6|knows_power_strike_4|knows_power_throw_7|knows_riding_7|knows_horse_archery_8 ,haradrim_face_1,haradrim_face_2],
+
+["aragorn","Aragorn","_",tf_hero| tf_dunedain| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_imladris,
+   [itm_leather_boots,itm_leather_gloves,itm_arnor_med_b_good_cloak,itm_arnor_sword_f,],
+      attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_riding_5|knows_persuasion_7|knows_power_draw_4,0x00000008a400224736db6db75b6db6db00000000001db6db0000000000000000],
+      
+["legolas","Legolas","_",tf_hero| tf_woodelf| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_woodelf,
+   [itm_mirkwood_leather_good,itm_mirkwood_boots,itm_leather_gloves,itm_lorien_bow,itm_woodelf_arrows,itm_mirkwood_knife],
+      attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_persuasion_7|knows_power_draw_9,0x0000000fc00030023fc36db75b6ab6db00000000001d36db0000000000000000],
+      
+["gimli","Gimli","_",tf_hero| tf_dwarf| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
+   [itm_dwarf_vest_b,itm_dwarf_chain_boots,itm_leather_gloves,itm_dwarf_throwing_axe,itm_dwarf_great_axe,],
+      attr_dwarf_tier_6,wp_dwarf_tier_6,knows_riding_10|knows_persuasion_3|knight_skills_5|knows_riding_4,0x00000001b000014258e46ec7d780e9fe00000000001ce4710000000000000000],
+
 
 #Add new troops here, right before trp_last!
 

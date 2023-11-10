@@ -521,6 +521,56 @@ dialogs = [
 [anyone|plyr, "hobbit_merry_talk_met", [], "Hello, messer Merry.","close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")] ],
 [anyone|plyr, "hobbit_pippin_talk_met", [], "Hello, messer Pippin.","close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")] ],
 
+#InVain: Treebeard Isengard dialogue (must go before, additional requirement
+[trp_treebeard, "start", [(check_quest_active, "qst_guardian_party_quest"),(quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
+"{s2} Did Gandalf send you? I must say that your arrival is well timed. I have a wizard to look after, but first, we must nail him down in his tower. This is going to be a nasty business. Rock, steel and fire await us inside. You seem experienced with orc-slaying. Can you help us?", "treebeard_isengard_1", 
+[(try_begin),
+    (troop_slot_eq, "trp_treebeard", slot_troop_met_previously, 0),
+    (str_store_string, s2, "@Hrooom... Hmmm...Who are you?"),
+    (troop_set_slot, "trp_treebeard", slot_troop_met_previously, 1),
+  (else_try),
+    (str_store_string, s2, "@Hrooom... Hmmm...Oh, it's you again, {playername}."),
+  (try_end),
+]],
+
+[trp_treebeard|plyr, "treebeard_isengard_1", [], "Yes, I will help you.", "close_window",[
+    (quest_get_slot, ":ent_party", "qst_guardian_party_quest", slot_quest_target_party),
+    (party_set_slot, "p_town_isengard", slot_center_is_besieged_by, ":ent_party"),
+    (call_script, "script_party_set_ai_state", ":ent_party", spai_besieging_center, "p_town_isengard"),
+    (inflict_casualties_to_party_group, "p_town_isengard", 1000, p_temp_wounded), 
+    (party_set_ai_behavior, ":ent_party", ai_bhvr_attack_party),
+    (party_set_flags, ":ent_party", pf_default_behavior, 1),
+    (party_set_slot, ":ent_party", slot_party_ai_substate, 1),
+ 
+
+    #disable scripted mode for Theoden and Rohan
+    (troop_get_slot, ":theoden_party", "trp_rohan_lord", slot_troop_leaded_party),
+    (gt, ":theoden_party", 0),            
+    (party_set_slot, ":theoden_party", slot_party_scripted_ai, 0),
+    (faction_set_slot, "fac_rohan", slot_faction_scripted_until, 0),
+    
+    (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 1),
+    
+    (call_script,"script_stand_back"),(assign, "$g_leave_encounter",1),(change_screen_return),
+]],
+
+[trp_treebeard, "start", [(check_quest_active, "qst_guardian_party_quest"),(neq,"$talk_context",tc_ally_thanks), (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 1), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
+"(Ent Song)", "close_window", 
+    [(call_script,"script_stand_back"),
+    (assign, "$g_leave_encounter",1),
+    (change_screen_return),]],
+
+[trp_treebeard, "start", [(check_quest_active, "qst_guardian_party_quest"), (eq,"$talk_context",tc_ally_thanks),(quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 1), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
+"Thank you for your help. I must say it it was quite satisfying to crush all those orcs. You were of great help to us. But now we need to do some work you cannot help us with. You should maybe find a safe spot outside of Isengard and wait until we are finished.", "close_window", 
+    [(call_script,"script_stand_back"),
+    (assign, "$g_leave_encounter",1),
+    (change_screen_return),
+    (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 2),]],
+
+[trp_treebeard, "start", [(check_quest_active, "qst_guardian_party_quest"), (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 2), (store_current_scene, ":scene"), (eq, ":scene", "scn_isengard_center_flooded"),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
+"Hello again, thank you for your help. I must say it will take a long while to flush all of Saruman's filth away. But we're on a good way. He will do no more harm.", "close_window", 
+[(call_script, "script_finish_quest", "qst_guardian_party_quest", 100), 
+(call_script,"script_stand_back"),]],
   
 #MV: Treebeard dialogs - text by Treebeard (JL)
 [trp_treebeard, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],

@@ -3908,7 +3908,7 @@ simple_triggers = [
       (faction_get_slot, ":side", "$players_kingdom", slot_faction_side),
       (eq, ":side", faction_side_good),
       
-      (assign, ":continue", 0),
+
   ]),
   
   # Encounter Effects Trigger - InVain & Kham

@@ -12312,6 +12312,7 @@ game_menus = [
 	    (modify_visitors_at_site,"scn_isengard_center_flooded"),
         (reset_visitors),
         (set_visitor, 1, "trp_player"),
+        (set_visitor, 27, "trp_treebeard"),
         (jump_to_menu, "mnu_town_ruins"),
         (jump_to_scene,"scn_isengard_center_flooded"),
         (change_screen_mission),], "_"),

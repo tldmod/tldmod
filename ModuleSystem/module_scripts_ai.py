@@ -3084,15 +3084,9 @@ ai_scripts = [
             (party_set_slot, ":besieger", slot_party_type, spt_patrol),
             (party_set_slot, ":besieger", slot_party_victory_value, ws_patrol_vp), # victory points for party kill
             (party_set_slot, ":besieger", slot_party_home_center, "p_town_isengard"),
-            
-            # (party_set_slot, ":besieger", slot_party_ai_state, spai_undefined),
-            # (party_set_ai_behavior, ":besieger", ai_bhvr_patrol_party),
-            # (party_set_ai_object, ":besieger", "p_town_isengard"),
-            # (party_set_ai_patrol_radius, ":besieger", 15),
             (call_script, "script_party_set_ai_state", ":besieger", spai_patrolling_around_center, "p_town_isengard"),
             (party_set_ai_initiative, ":besieger", 100),
             (party_set_flags, ":besieger", pf_show_faction, 1),
-            #(disable_party, ":besieger"), 
             (troop_get_slot, ":theoden_party", "trp_rohan_lord", slot_troop_leaded_party),
             (gt, ":theoden_party", 0),            
             (party_set_slot, ":theoden_party", slot_party_scripted_ai, 0),
@@ -3105,6 +3099,13 @@ ai_scripts = [
             (party_slot_eq, ":besieger", slot_party_ai_object, ":center"),
             #(call_script, "script_safe_remove_party", ":besieger"),
             (disable_party, ":besieger"), #removing it causes script errors in script_simulate_battle, so we use this instead
+        (try_end),
+        (try_begin),
+            (check_quest_active, "qst_guardian_party_quest"),
+            (str_store_string, s6, "@You have breached the Ring of Isengard with the help of the Tree Men. During the battle, Isengard was flooded, but Orthanc still stands unscathed in midst of the havoc. You should investigate the aftermath."),
+            (add_quest_note_from_sreg, "qst_blank_quest_05", 2, s6, 0),            
+            (dialog_box,s6,"@The Flooding of Isengard"),
+            (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 2),
         (try_end),
     (try_end),
     
