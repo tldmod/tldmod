@@ -2260,8 +2260,9 @@ tld_cc_gandalf_victory    = 4
 tld_cc_nazgul_baggins     = 5
 tld_cc_nazgul_evil_war    = 6
 tld_cc_nazgul_victory     = 7
-tld_cc_gandalf_helms_deep = 8
-tld_cc_gandalf_isengard = 9
+tld_cc_gandalf_rohan_quest_start     = 8
+tld_cc_gandalf_rohan_quest_win     = 9
+tld_cc_gandalf_rohan_quest_fail = 10
 
 #conversation bit masks for $g_tld_conversations_done
 tld_conv_bit_gandalf_advice     = 0x01

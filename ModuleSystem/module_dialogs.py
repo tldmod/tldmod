@@ -521,6 +521,74 @@ dialogs = [
 [anyone|plyr, "hobbit_merry_talk_met", [], "Hello, messer Merry.","close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")] ],
 [anyone|plyr, "hobbit_pippin_talk_met", [], "Hello, messer Pippin.","close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")] ],
 
+#InVain: Aragorn/Legolas/Gimli HD dialog
+
+[anyone,"start", [  (check_quest_active, "qst_guardian_party_quest"),
+                    (eq, "$talk_context", tc_entering_center_quest_talk),
+                    (quest_slot_eq, "qst_guardian_party_quest", slot_quest_target_center, "$g_encountered_party"),
+                    (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, -1),
+                    (eq, "$g_talk_troop", "trp_aragorn")],
+"Hello {playername}. Good to see you here. Will you help us defend Helm's Deep?", "HD_defense_01",
+   [ ]],
+
+[anyone|plyr,"HD_defense_01", [],
+"Yes, I will help you.", "HD_defense_02",
+   []],
+
+[anyone,"HD_defense_02", [],
+"Very well. All is prepared. No let's rest and wait for the enemy to advance.", "close_window",
+   [(call_script, "script_send_legion", "p_town_isengard", "$current_town", 70),
+    (assign, ":guardian_party", reg0),
+    (party_add_leader, ":guardian_party", "trp_high_captain_of_isengard", 4),
+    (troop_raise_skill, "trp_high_captain_of_isengard", skl_tactics, 10),    
+    (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_party, ":guardian_party"),
+    (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, -2),
+    (quest_set_slot, "qst_guardian_party_quest", slot_quest_expiration_days, 5), #add a few days
+
+    (party_get_position, pos2, p_town_westfold), #spawn aorund westfold
+    (map_get_random_position_around_position, pos1, pos2),
+    (party_set_position, ":guardian_party", pos1),    
+
+    (party_add_leader, "$current_town", trp_aragorn, 1), #add as leader so Aragorn shows up in tc_ally_thanks
+    (party_force_add_members, "$current_town", trp_gimli, 1), 
+    (party_force_add_members, "$current_town", trp_legolas, 1), 
+    (assign,"$auto_enter_town","$current_town"),
+    (assign, "$g_town_visit_after_rest", 1),
+    (assign, "$g_last_rest_center", "$current_town"),
+    (assign, "$g_last_rest_payment_until", -1),
+    (assign, reg2, 24),
+    (val_sub, reg2, reg1),
+    (rest_for_hours, reg2, 6), #rest while not attackable   
+    (change_screen_return),]],
+
+[anyone,"start", [  (check_quest_active, "qst_guardian_party_quest"),
+                    (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, -2),
+                    (eq, "$g_talk_troop", "trp_aragorn")],
+"That was a hard battle. Well fought!", "close_window",
+   [(assign, "$g_leave_encounter",1),
+    (change_screen_return),
+    (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, -3),
+    #(call_script, "script_finish_quest", "qst_guardian_party_quest", 100),
+    ]],
+
+# [anyone,"start", [  (check_quest_active, "qst_guardian_party_quest"),
+                    # (eq, "$talk_context", tc_entering_center_quest_talk),
+                    # (quest_slot_eq, "qst_guardian_party_quest", slot_quest_target_center, "$g_encountered_party"),
+                    # (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, -2),
+                    # (eq, "$g_talk_troop", "trp_aragorn")],
+# "The battle isn't over yet. Take heart!", "close_window",
+   # [(troop_set_health, "trp_rohan_lord", 100), 
+   # (troop_set_health, "trp_aragorn", 100),
+   # #(assign,"$auto_enter_town","$current_town"),
+   # #(rest_for_hours, 1, 4),
+   # (quest_get_slot, ":guard_party",  "qst_guardian_party_quest", slot_quest_target_party),   
+   # #(call_script, "script_party_set_ai_state", ":guard_party", spai_besieging_center, "$current_town"),   
+   # (change_screen_return),
+   # (store_troop_health, ":player_health", trp_player),
+   # (le, ":player_health", 20),
+   # (troop_set_health, trp_player, 40),   
+   # ]],
+
 #InVain: Treebeard Isengard dialogue (must go before, additional requirement
 [trp_treebeard, "start", [(check_quest_active, "qst_guardian_party_quest"),(quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
 "{s2} Did Gandalf send you? I must say that your arrival is well timed. I have a wizard to look after, but first, we must nail him down in his tower. This is going to be a nasty business. Rock, steel and fire await us inside. You seem experienced with orc-slaying. Can you help us?", "treebeard_isengard_1", 
@@ -541,6 +609,7 @@ dialogs = [
     (party_set_ai_behavior, ":ent_party", ai_bhvr_attack_party),
     (party_set_flags, ":ent_party", pf_default_behavior, 1),
     (party_set_slot, ":ent_party", slot_party_ai_substate, 1),
+    (party_set_faction, ":ent_party", "$players_kingdom"),
  
 
     #disable scripted mode for Theoden and Rohan

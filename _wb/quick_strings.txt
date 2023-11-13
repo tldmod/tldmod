@@ -1,4 +1,4 @@
-1979
+1980
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2023-11-10_20:54___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2023-11-13_20:17___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -300,7 +300,6 @@ qstr_Med Med
 qstr_Bad Bad
 qstr_You_gained_{reg84}_e You_gained_{reg84}_experience_from_your_intelligence.
 qstr_You_gained_{reg84}_w You_gained_{reg84}_weapon_points_from_your_agility.
-qstr_legion_defeated legion_defeated
 qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded,_{reg6}_routed
 qstr_{reg4}_killed_{reg5}_ {reg4}_killed,_{reg5}_wounded
 qstr_{reg4}_killed_{reg5}_r {reg4}_killed,_{reg5}_routed
@@ -642,8 +641,9 @@ qstr_Either_would_relief_ Either_would_relief_me_of_great_worries._You_must_deci
 qstr_Gandalf_asked_you_to Gandalf_asked_you_to_either_help_Theoden_defend_{s3}_or_find_out_what_is_happening_in_Isengard.
 qstr_Ents Ents
 qstr_Looks_like_I_arrived Looks_like_I_arrived_just_in_time_-_again._But_you_have_not_been_idle_either,_as_I_see._Well_done,_{playername}!
-qstr_This_was_a_hard_batt This_was_a_hard_battle,_Mithrandir!_Saruman's_host_is_scattered._Let_us_now_cut_the_head_of_the_serpent!
-qstr_Indeed._Isengard_sha Indeed._Isengard_shall_be_our_next_target._Strange_things_are_going_about_in_Nan_Curunir._I_want_you_to_head_there_as_soon_as_you_can._Do_not_idle!
+qstr_Gandalf_Rohan_is_saf Gandalf,_Rohan_is_safe.
+qstr_You_failed! You_failed!
+qstr_I_m_sorry I'm_sorry
 qstr_Bagginsssss..._Ssssh Bagginsssss..._Sssshhhire...
 qstr_I..._don_t_know! I..._don't_know!
 qstr_It..._beckonsssssss. It..._beckonsssssss...
@@ -781,6 +781,7 @@ qstr_lord_{reg1}:_{s1}_NOT_a lord_{reg1}:_{s1}_NOT_attacking_{s2}
 qstr_{s2}_{reg3?was:is_ar {s2}_{reg3?was:is_around_{s5}.
 qstr_Army_of_{s6} Army_of_{s6}
 qstr_Host_of_{s6} Host_of_{s6}
+qstr_The_host_of_Isengard The_host_of_Isengard_has_razed_{s2}!
 qstr_warp_array_created_a warp_array_created_at_{reg1}
 qstr_warp_temp_array_crea warp_temp_array_created_at_{reg1}
 qstr_{s0} {s0}
