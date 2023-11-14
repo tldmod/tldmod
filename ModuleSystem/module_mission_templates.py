@@ -1091,6 +1091,7 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
 
   health_restore_on_kill, #Testing if this will be resource intensive.
   common_battle_init_banner,
+  tld_melee_ai,
   hp_shield_init,
   hp_shield_trigger,
   tld_ai_fadeout_spheres,  
