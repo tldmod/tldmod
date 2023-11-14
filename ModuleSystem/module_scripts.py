@@ -2088,7 +2088,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 34),  #Rafa: Savegame version
+    (assign,"$savegame_version", 35),  #Rafa: Savegame version
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -2194,7 +2194,12 @@ scripts = [
 	(try_for_range, ":has_hp_shield", heroes_begin, heroes_end),
 		(troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 200),
 	(try_end),
-
+    
+	(try_for_range, ":has_hp_shield", trp_aragorn, trp_gimli+1),
+		(troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 200),
+        (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
+	(try_end),
+    
 	(troop_set_slot, "trp_nazgul", slot_troop_hp_shield, 1000000),
 
 	(troop_set_slot, "trp_killer_witcher", slot_troop_hp_shield, 200),
@@ -23252,11 +23257,11 @@ scripts = [
       (try_end),
       (str_store_party_name, s3, ":target_center"),
       
-      (str_store_string, s50, "@Oh, {playername}, what a curious coincidence that I happen upon you, of all people. There's a big mess I'm trying to clean up in Western Rohan, and I'm afraid I'm running out of time."),
-      (str_store_string, s51, "@Curious indeed! What tidings do you bring, Mithrandir? What can I do?"),   
-      (str_store_string, s52, "@Saruman has unleashed Isengard. {s1} It is crucial for my plans that Rohan's strength does not fail. Yet also, the emptying of Isengard has left it vulnerable. Strange things are about to happen in Nan Curunir. Alas, even I cannot be everywhere at once!"),
-      (str_store_string, s53, "@Do you want me to help King Theoden defend {s3}, or hasten to Isengard and find out what's going on?"),
-      (str_store_string, s54, "@Either would relief me of great worries. You must decide your course on your own, {playername}, as shall I. But we must act quickly! Hasten now!"), 
+        (str_store_string, s50, "@Ah, {playername}, happy chance that we come on each other in this fashion! Grim tidings I bring from Western Rohan, and haste is sore needed."),
+        (str_store_string, s51, "@What tidings do you bring, Mithrandir? What can I do?"),   
+        (str_store_string, s52, "@Saruman has loosed Isengard upon Rohan. {s1} For the success of my designs, the valiant Rohirrim must not fall, {playername}! The danger to them is very great, yet also the emptying of Isengard has left it vulnerable, for Saruman has despatched his full strength against Theoden King. This may be the time to move into Nan Curunir. A choice is now laid before you, Commander, a choice you must make, for neither you nor I may be everywhere at once!"),
+        (str_store_string, s53, "@Do you want me to help King Theoden defend {s3}, or hasten to Isengard and see what I can do?"),
+        (str_store_string, s54, "@Either would be a great boon to me. You must decide your course on your own, {playername}, as shall I. Shadowfax shall bear me now on a swift errand. You must act quickly as well! Hasten now!"), 
       (assign, "$g_tld_convo_lines", 5),
 
         (setup_quest_text, "qst_guardian_party_quest"),
@@ -23310,16 +23315,26 @@ scripts = [
         # (val_add, ":cur_hours", 100),       
         # (party_set_slot, ":ent_party", slot_party_scripted_ai, ":cur_hours"),     
         (party_set_slot, ":ent_party", slot_party_type, spt_guardian), 
-        (party_add_leader, ":ent_party", "trp_treebeard"),        
-        (troop_raise_skill, "trp_treebeard", skl_tactics, 10),
+        (party_add_leader, ":ent_party", "trp_ent_1"),        
+        (troop_raise_skill, "trp_ent_1", skl_tactics, 10),
         (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_party, ":ent_party"),
         (call_script,"script_create_smoking_remnants","p_town_isengard","icon_shrubbery",24,1),
       
     (else_try),
-      (eq, ":convo_code", tld_cc_gandalf_rohan_quest_win),     
-      (str_store_string, s50, "@Looks like I arrived just in time - again. But you have not been idle either, as I see. Well done, {playername}!"),
-      (str_store_string, s51, "@Gandalf, Rohan is safe."),      
-      (assign, "$g_tld_convo_lines", 2),
+      (eq, ":convo_code", tld_cc_gandalf_rohan_quest_win),
+
+      (try_begin),
+          (quest_slot_ge, "qst_guardian_party_quest", slot_quest_current_state, 1), #Isengard
+          (str_store_string, s50, "@Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope."),
+          (str_store_string, s51, "@Missing String"),
+          (str_store_string, s52, "@Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!"),
+          (assign, "$g_tld_convo_lines", 3),
+      (else_try), #Helm's Deep
+           (str_store_string, s50, "@Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!"),
+          (str_store_string, s51, "@Missing String"),
+          (str_store_string, s52, "@Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!"),
+          (assign, "$g_tld_convo_lines", 3),
+      (try_end),
       
       (quest_get_slot, ":target_center", qst_guardian_party_quest, slot_quest_target_center),
       (remove_member_from_party, trp_aragorn, ":target_center"),
@@ -23329,9 +23344,10 @@ scripts = [
 
     (else_try),
       (eq, ":convo_code", tld_cc_gandalf_rohan_quest_fail),     
-      (str_store_string, s50, "@You failed!"),
-      (str_store_string, s51, "@I'm sorry"),      
-      (assign, "$g_tld_convo_lines", 2),
+      (str_store_string, s50, "@{Playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back."),
+      (str_store_string, s51, "@Missing String"),      
+      (str_store_string, s52, "@You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not."),
+      (assign, "$g_tld_convo_lines", 3),
       (call_script, "script_end_quest", "qst_guardian_party_quest"),
             
     ##NAZGUL
@@ -25645,6 +25661,23 @@ command_cursor_scripts = [
         (call_script, "script_set_item_faction"),
         (assign, "$savegame_version", 34),
 	(try_end),	
+
+    (try_begin), #InVain - 14 Nov 2023, HP shield for companions + make sure equipment shows up in old savegames
+        (le, "$savegame_version", 34),
+        (try_for_range, ":has_hp_shield", trp_aragorn, trp_gimli+1),
+            (troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 200),
+            (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
+        (try_end),
+
+     ] + (is_a_wb_script==1 and [
+     
+        (call_script, "script_clone_troop", "trp_a5_arnor_master_ranger", "trp_aragorn"),
+        (call_script, "script_clone_troop", "trp_a5_greenwood_vigilant", "trp_legolas"),
+        (call_script, "script_clone_troop", "trp_i6_dwarf_longbeard_axeman", "trp_gimli"),
+
+     ] or []) + [     
+        (assign, "$savegame_version", 35),
+	(try_end),
     
 ]),
 

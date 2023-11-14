@@ -528,18 +528,30 @@ dialogs = [
                     (quest_slot_eq, "qst_guardian_party_quest", slot_quest_target_center, "$g_encountered_party"),
                     (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, -1),
                     (eq, "$g_talk_troop", "trp_aragorn")],
-"Hello {playername}. Good to see you here. Will you help us defend Helm's Deep?", "HD_defense_01",
+"It is well that you are here, {playername}. My name is Aragorn, son of Arathorn, and I am the Heir of Isildur – see, here is Anduril, the Flame of the West, which I bear in battle. The Blade that was Broken shines again! It will not be long before Saruman’s forces reach these walls. I ask you now to lend me your aid and defend the Rohirrim, for the honour of the Lord of the Mark. Let this be the hour when we draw swords together!", "HD_defense_01",
    [ ]],
+   
+[anyone,"start", [  (check_quest_active, "qst_guardian_party_quest"),
+                    (eq, "$talk_context", tc_entering_center_quest_talk),
+                    (quest_slot_eq, "qst_guardian_party_quest", slot_quest_target_center, "$g_encountered_party"),
+                    (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, -1),
+                    (eq, "$g_talk_troop", "trp_legolas")],
+"Mae lovannen! Things here look ill, {playername}, but less ill now that you are here with us! Gellon len covad. I am Legolas of Mirkwood, and though I do not much like this place I like the approaching hordes of Saruman even less. What would I give for a hundred more of my kin here! There are too few of us, too few. We shall need your aid, Commander, though we may be but a few leaves in the forest. Come, let me show you where our bows will be of the most use…", "HD_defense_01",
+   [ ]],   
 
-[anyone|plyr,"HD_defense_01", [],
-"Yes, I will help you.", "HD_defense_02",
-   []],
+[anyone,"start", [  (check_quest_active, "qst_guardian_party_quest"),
+                    (eq, "$talk_context", tc_entering_center_quest_talk),
+                    (quest_slot_eq, "qst_guardian_party_quest", slot_quest_target_center, "$g_encountered_party"),
+                    (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, -1),
+                    (eq, "$g_talk_troop", "trp_gimli")],
+"Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazaˆd! Khazaˆd ai-meˆnu!", "HD_defense_01",
+   [ ]],   
 
-[anyone,"HD_defense_02", [],
-"Very well. All is prepared. No let's rest and wait for the enemy to advance.", "close_window",
+[anyone|auto_proceed,"HD_defense_01", [], "Now, let us rest for a while. The enemy will be here by nightfall.", "close_window",
    [(call_script, "script_send_legion", "p_town_isengard", "$current_town", 70),
     (assign, ":guardian_party", reg0),
     (party_add_leader, ":guardian_party", "trp_high_captain_of_isengard", 4),
+    (party_add_template, ":guardian_party", "pt_dunland_war_party"), #add a few Dunlendings
     (troop_raise_skill, "trp_high_captain_of_isengard", skl_tactics, 10),    
     (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_party, ":guardian_party"),
     (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, -2),
@@ -555,16 +567,17 @@ dialogs = [
     (assign,"$auto_enter_town","$current_town"),
     (assign, "$g_town_visit_after_rest", 1),
     (assign, "$g_last_rest_center", "$current_town"),
-    (assign, "$g_last_rest_payment_until", -1),
-    (assign, reg2, 24),
-    (val_sub, reg2, reg1),
-    (rest_for_hours, reg2, 6), #rest while not attackable   
+    (rest_for_hours, 15, 6), #rest while not attackable   
     (change_screen_return),]],
 
 [anyone,"start", [  (check_quest_active, "qst_guardian_party_quest"),
                     (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, -2),
                     (eq, "$g_talk_troop", "trp_aragorn")],
-"That was a hard battle. Well fought!", "close_window",
+"{Playername}, I am glad to see you live still. The men are weary with battle, but thanks to you they see the dawn of a new day. The hillmen have given themselves up, and they shall be put to work to repair the evil which they have joined, after which I hope they will return to their own lands. They were easily deceived by Saruman, for much was taken from them, and much remains to be given back; we shall have to see what can be done for them later.", "aragorn_thanks_HD",
+   []],
+
+[anyone,"aragorn_thanks_HD", [],
+"I hope our paths may cross again, {playername}. I bid you farewell now, for I ride on an errand most urgent. With the first light of morning we must go, my friends and I, and take a dark road out of this valley. {Playername}, the times are evil, but your valour gladdens the hearts of all free peoples everywhere, from the North to the South. Fight well, and we may meet again beyond the shadows!", "close_window",
    [(assign, "$g_leave_encounter",1),
     (change_screen_return),
     (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, -3),
@@ -589,9 +602,9 @@ dialogs = [
    # (troop_set_health, trp_player, 40),   
    # ]],
 
-#InVain: Treebeard Isengard dialogue (must go before, additional requirement
-[trp_treebeard, "start", [(check_quest_active, "qst_guardian_party_quest"),(quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
-"{s2} Did Gandalf send you? I must say that your arrival is well timed. I have a wizard to look after, but first, we must nail him down in his tower. This is going to be a nasty business. Rock, steel and fire await us inside. You seem experienced with orc-slaying. Can you help us?", "treebeard_isengard_1", 
+#InVain: Bregalad/Quickbeam dialog for Isengard quest
+[trp_ent_1, "start", [(check_quest_active, "qst_guardian_party_quest"),(quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
+"{s2} Ha, hmmm! Welcome, friends! Your arrival is timely. I have a Wizard to manage here, but first, we must nail him down in his tower. This will be a nasty business. Rock, axe and fire await us inside. Will you help us?", "treebeard_isengard_1", 
 [(try_begin),
     (troop_slot_eq, "trp_treebeard", slot_troop_met_previously, 0),
     (str_store_string, s2, "@Hrooom... Hmmm...Who are you?"),
@@ -601,7 +614,11 @@ dialogs = [
   (try_end),
 ]],
 
-[trp_treebeard|plyr, "treebeard_isengard_1", [], "Yes, I will help you.", "close_window",[
+[trp_ent_1|plyr, "treebeard_isengard_1", [],
+"Yes, Gandalf sent me. Let us storm the Ring of Isengard!", "treebeard_isengard_2", 
+[]],
+
+[trp_ent_1, "treebeard_isengard_2", [], "Very well, follow me then. We have already breached the Ring. Now, let us clean up inside! Hoom, hom! Hoom, hom! To Isengard with doom we come! With doom we come, with doom we come!", "close_window",[
     (quest_get_slot, ":ent_party", "qst_guardian_party_quest", slot_quest_target_party),
     (party_set_slot, "p_town_isengard", slot_center_is_besieged_by, ":ent_party"),
     (call_script, "script_party_set_ai_state", ":ent_party", spai_besieging_center, "p_town_isengard"),
@@ -623,23 +640,31 @@ dialogs = [
     (call_script,"script_stand_back"),(assign, "$g_leave_encounter",1),(change_screen_return),
 ]],
 
-[trp_treebeard, "start", [(check_quest_active, "qst_guardian_party_quest"),(neq,"$talk_context",tc_ally_thanks), (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 1), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
+[trp_ent_1, "start", [(check_quest_active, "qst_guardian_party_quest"),(neq,"$talk_context",tc_ally_thanks), (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 1), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
 "(Ent Song)", "close_window", 
     [(call_script,"script_stand_back"),
     (assign, "$g_leave_encounter",1),
     (change_screen_return),]],
 
-[trp_treebeard, "start", [(check_quest_active, "qst_guardian_party_quest"), (eq,"$talk_context",tc_ally_thanks),(quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 1), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
-"Thank you for your help. I must say it it was quite satisfying to crush all those orcs. You were of great help to us. But now we need to do some work you cannot help us with. You should maybe find a safe spot outside of Isengard and wait until we are finished.", "close_window", 
+[trp_ent_1, "start", [(check_quest_active, "qst_guardian_party_quest"), (eq,"$talk_context",tc_ally_thanks),(quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 1), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
+"Thank you for your help. I must say it was quite satisfying to manage those Orcs. You were of great help to us. But now, hm, we have work to do that you cannot help with. You should maybe find a safe spot outside Isengard and wait until we are finished.", "close_window", 
     [(call_script,"script_stand_back"),
     (assign, "$g_leave_encounter",1),
     (change_screen_return),
     (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 2),]],
 
-[trp_treebeard, "start", [(check_quest_active, "qst_guardian_party_quest"), (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 2), (store_current_scene, ":scene"), (eq, ":scene", "scn_isengard_center_flooded"),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
-"Hello again, thank you for your help. I must say it will take a long while to flush all of Saruman's filth away. But we're on a good way. He will do no more harm.", "close_window", 
+[trp_ent_1, "start", [(check_quest_active, "qst_guardian_party_quest"), (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 2), (store_current_scene, ":scene"), (eq, ":scene", "scn_isengard_center_flooded"),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
+"Hello again. It is good to see you safe and dry. I must say it will take a long while to flush all of Saruman's filth away. But we’ve done quite well, hmm, yes. He will do no more harm.", "treebeard_isengard_3", 
+[]],
+
+[trp_ent_1, "treebeard_isengard_3", [(check_quest_active, "qst_guardian_party_quest")],
+"Ho, hmm, I owe you great thanks. I had not expected any help from others, and it is good to learn that our Last March may not end quite so badly, after all! Since the tree-killer is dealt with, we should now be able to keep Rohan's northern marches safe, for a while.", "close_window", 
 [(call_script, "script_finish_quest", "qst_guardian_party_quest", 100), 
 (call_script,"script_stand_back"),]],
+
+[trp_ent_1, "treebeard_isengard_3", [(quest_get_slot, ":status", "qst_guardian_party_quest", slot_quest_current_state),(le, ":status", 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
+"Hmm? Ho, hmm… ah. So, you have come all the way from Rohan, have you? Hmm. I have heard some news from the south, yes. Good news, news to gladden all hearts. I have good will to Theoden King, and I am glad he was aided by the likes of you in his hour of peril, hmm! We have managed here well enough, and now we Ents will see to it that Saruman does not set foot beyond Isengard, without our leave. The Isen flows well again, and soon I hope the water will once more be fit to drink. Ha, hm, I feel a song coming on. A song of the old days… the old trees I knew…", "close_window", 
+[(call_script,"script_stand_back"),]],
   
 #MV: Treebeard dialogs - text by Treebeard (JL)
 [trp_treebeard, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
