@@ -27328,9 +27328,12 @@ command_cursor_scripts = [
 			(position_set_x, pos1, ":rand_x"),
 		(else_try),
 			(lt, ":x", -2900),
-			(gt, ":y", -21700),
+			(gt, ":y", -21000),
 			(store_random_in_range, ":rand_y", -21800, -22700),
 			(position_set_y, pos1, ":rand_y"),
+            (lt, ":x", -6000), #make sure it isn't teleported into the lake
+            (store_random_in_range, ":rand_x", -6000, -5000),
+			(position_set_x, pos1, ":rand_x"),
 		(try_end),
 		(party_set_position, ":party", pos1),
 		#(display_message, "@Scout Camp Party moved! - N Mirkwood"),
