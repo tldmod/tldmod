@@ -1385,10 +1385,10 @@ itemsfile version 2
  itm_black_num_helm Black_Numenorean_Helm Black_Numenorean_Helm 1  black_numenor_helmet 0  65548 0 1500 704643206 7 96 38 0 0 20 0 0 0 0 0 0 0
 0
 
- itm_mordor_sword Bastard_Sword_of_Mordor Bastard_Sword_of_Mordor 1  mordor_sword 0  138477571 9223635924234010879 700 150 2.25 94 0 0 0 11 37888 101 0 109 0 282 37
+ itm_mordor_sword Bastard_Sword_of_Mordor Bastard_Sword_of_Mordor 2  mordor_sword_giles 0  scab_mordor_sword_giles 3458764513820540928  138477571 9223635954298781951 700 150 2.25 94 0 0 0 11 37888 101 0 109 0 282 37
 0
 
- itm_mordor_longsword Sword_of_Mordor Sword_of_Mordor 2  sword_of_mordor 0  scab_sword_of_mordor 3458764513820540928  4259842 9223388564182532111 650 150 2.75 96 0 0 0 10 34816 97 0 94 0 287 34
+ itm_mordor_longsword Sword_of_Mordor Sword_of_Mordor 2  sword_of_mordor_giles 0  scab_sword_of_mordor 3458764513820540928  4259842 9223388564182532111 650 150 2.75 96 0 0 0 10 34816 97 0 94 0 287 34
 0
 
  itm_moria_armor_a Moria_Breast_Harness Moria_Breast_Harness 1  orc_moria_a 0  16842765 0 51 174063750 8 100 0 6 4 0 0 0 0 0 0 0 0
@@ -2625,7 +2625,7 @@ itemsfile version 2
  itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  71307266 9223388564182532111 200 156672 1.5 100 0 0 0 12 43008 110 0 90 0 301 298
 0
 
- itm_nazgul_sword Wicked_Sword Wicked_Sword 2  nazgul_sword 0  nazgul_sword_scab 3458764513820540928  4368371715 9223635954298781951 200 156672 4.5 100 0 0 0 18 51200 103 0 112 0 301 306
+ itm_nazgul_sword Wicked_Sword Wicked_Sword 2  nazgul_sword_giles 0  nazgul_sword_scab 3458764513820540928  4368371715 9223635954298781951 200 156672 4.5 100 0 0 0 18 51200 103 0 112 0 301 306
 0
 
  itm_cooking_cauldron Cooking_Cauldron Cooking_Cauldron 1  cauldron_a 0  11 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0

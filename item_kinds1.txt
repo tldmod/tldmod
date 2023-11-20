@@ -1385,10 +1385,10 @@ itemsfile version 2
  itm_black_num_helm Black_Numenorean_Helm Black_Numenorean_Helm 1  black_numenor_helmet 0  65548 0 1500 704643206 7 96 38 0 0 20 0 0 0 0 0 0 0
 0
 
- itm_mordor_sword Bastard_Sword_of_Mordor Bastard_Sword_of_Mordor 1  mordor_sword 0  138477571 9223635924234010879 700 150 2.25 94 0 0 0 11 37888 101 0 109 0 282 37
+ itm_mordor_sword Bastard_Sword_of_Mordor Bastard_Sword_of_Mordor 1  mordor_sword_new 0  138477571 9223635924234010879 700 150 2.25 94 0 0 0 11 37888 101 0 109 0 282 37
 0
 
- itm_mordor_longsword Sword_of_Mordor Sword_of_Mordor 2  sword_of_mordor 0  scab_sword_of_mordor 3458764513820540928  4259842 9223388564182532111 650 150 2.75 96 0 0 0 10 34816 97 0 94 0 287 34
+ itm_mordor_longsword Sword_of_Mordor Sword_of_Mordor 2  sword_of_mordor_new 0  scab_sword_of_mordor 3458764513820540928  4259842 9223388564182532111 650 150 2.75 96 0 0 0 10 34816 97 0 94 0 287 34
 0
 
  itm_moria_armor_a Moria_Breast_Harness Moria_Breast_Harness 1  orc_moria_a 0  16842765 0 51 174063750 8 100 0 6 4 0 0 0 0 0 0 0 0
@@ -1957,6 +1957,7 @@ itemsfile version 2
  itm_khand_mail Khand_Mail Khand_Mail 4  CWE_turk_heavy_a1 134  CWE_turk_heavy_a2 1  CWE_turk_heavy_a2 0  CWE_turk_heavy_a3 704643072  16842765 0 2100 704643206 28 94 0 30 16 14 0 0 0 0 0 0 0
 0
 
+ itm_khand_noble_lam Khand_Noble_Armor Khand_Noble_Armor 4  CWE_ghulam_heavy1 134  CWE_ghulam_heavy2 1  CWE_ghulam_heavy2 0  CWE_ghulam_heavy3 704643072  16842765 0 2900 704643206 40 96 0 38 16 20 0 0 0 0 0 0 0
 0
 
  itm_free_khand_med_lam_c Khand_Medium_Lamellar Khand_Medium_Lamellar 1  khand_med_lam_c 0  16842765 0 1300 167772294 23 100 0 27 10 0 0 0 0 0 0 0 0
@@ -2624,7 +2625,7 @@ itemsfile version 2
  itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  71307266 9223388564182532111 200 156672 1.5 100 0 0 0 12 43008 110 0 90 0 301 298
 0
 
- itm_nazgul_sword Wicked_Sword Wicked_Sword 2  nazgul_sword 0  nazgul_sword_scab 3458764513820540928  4368371715 9223635954298781951 200 156672 4.5 100 0 0 0 18 51200 103 0 112 0 301 306
+ itm_nazgul_sword Wicked_Sword Wicked_Sword 2  nazgul_sword_new 0  nazgul_sword_scab 3458764513820540928  4368371715 9223635954298781951 200 156672 4.5 100 0 0 0 18 51200 103 0 112 0 301 306
 0
 
  itm_cooking_cauldron Cooking_Cauldron Cooking_Cauldron 1  cauldron_a 0  11 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
