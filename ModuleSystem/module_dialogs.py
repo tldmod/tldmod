@@ -567,40 +567,36 @@ dialogs = [
     (assign,"$auto_enter_town","$current_town"),
     (assign, "$g_town_visit_after_rest", 1),
     (assign, "$g_last_rest_center", "$current_town"),
-    (rest_for_hours, 15, 6), #rest while not attackable   
+    (rest_for_hours, 24, 6), #rest while not attackable   
     (change_screen_return),]],
 
 [anyone,"start", [  (check_quest_active, "qst_guardian_party_quest"),
                     (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, -2),
-                    (eq, "$g_talk_troop", "trp_aragorn")],
-"{Playername}, I am glad to see you live still. The men are weary with battle, but thanks to you they see the dawn of a new day. The hillmen have given themselves up, and they shall be put to work to repair the evil which they have joined, after which I hope they will return to their own lands. They were easily deceived by Saruman, for much was taken from them, and much remains to be given back; we shall have to see what can be done for them later.", "aragorn_thanks_HD",
+                    (eq, "$g_talk_troop", "trp_aragorn"),
+                    (eq, "$talk_context", tc_ally_thanks),],
+"{playername}, I am glad to see you live still. The men are weary with battle, but thanks to you they see the dawn of a new day. The hillmen have given themselves up, and they shall be put to work to repair the evil which they have joined, after which I hope they will return to their own lands. They were easily deceived by Saruman, for much was taken from them, and much remains to be given back; we shall have to see what can be done for them later.", "aragorn_thanks_HD",
    []],
 
 [anyone,"aragorn_thanks_HD", [],
-"I hope our paths may cross again, {playername}. I bid you farewell now, for I ride on an errand most urgent. With the first light of morning we must go, my friends and I, and take a dark road out of this valley. {Playername}, the times are evil, but your valour gladdens the hearts of all free peoples everywhere, from the North to the South. Fight well, and we may meet again beyond the shadows!", "close_window",
+"I hope our paths may cross again, {playername}. I bid you farewell now, for I ride on an errand most urgent. With the first light of morning we must go, my friends and I, and take a dark road out of this valley. {playername}, the times are evil, but your valour gladdens the hearts of all free peoples everywhere, from the North to the South. Fight well, and we may meet again beyond the shadows!", "close_window",
    [(assign, "$g_leave_encounter",1),
     (change_screen_return),
     (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, -3),
     #(call_script, "script_finish_quest", "qst_guardian_party_quest", 100),
     ]],
 
-# [anyone,"start", [  (check_quest_active, "qst_guardian_party_quest"),
-                    # (eq, "$talk_context", tc_entering_center_quest_talk),
-                    # (quest_slot_eq, "qst_guardian_party_quest", slot_quest_target_center, "$g_encountered_party"),
-                    # (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, -2),
-                    # (eq, "$g_talk_troop", "trp_aragorn")],
-# "The battle isn't over yet. Take heart!", "close_window",
-   # [(troop_set_health, "trp_rohan_lord", 100), 
-   # (troop_set_health, "trp_aragorn", 100),
-   # #(assign,"$auto_enter_town","$current_town"),
-   # #(rest_for_hours, 1, 4),
-   # (quest_get_slot, ":guard_party",  "qst_guardian_party_quest", slot_quest_target_party),   
-   # #(call_script, "script_party_set_ai_state", ":guard_party", spai_besieging_center, "$current_town"),   
-   # (change_screen_return),
-   # (store_troop_health, ":player_health", trp_player),
-   # (le, ":player_health", 20),
-   # (troop_set_health, trp_player, 40),   
-   # ]],
+[anyone,"start", [(eq, "$g_talk_troop", "trp_aragorn"),(eq, "$talk_context", tc_court_talk),(eq, "$current_town", p_town_hornburg)],
+"In a little while I take the road again, {playername}, a hard road untrodden by many for uncounted years. I hope your path is easier than mine, friend. In the meantime, perhaps you may wish to go into the deep Caverns of Helm's Deep, of which my companion Gimli the Dwarf has spoken much.", "close_window",
+   []],
+   
+[anyone,"start", [(eq, "$g_talk_troop", "trp_gimli"),(eq, "$talk_context", tc_court_talk),(eq, "$current_town", p_town_hornburg)],
+"Have you yet been to the caves in the back? The Glittering Caves of Aglarond, {playername}! Happy is the chance that has led your footsteps here!", "close_window",
+   []],
+   
+[anyone,"start", [(eq, "$g_talk_troop", "trp_legolas"),(eq, "$talk_context", tc_court_talk),(eq, "$current_town", p_town_hornburg)],
+"I have pledged to my friend Gimli Gloin's son that when the war is over, I shall return here with him and see the Glittering Caves of Aglarond for myself. If you have the time, {playername}, you could do this before you go on your way again. A brief respite from all the fighting!", "close_window",
+   []],   
+
 
 #InVain: Bregalad/Quickbeam dialog for Isengard quest
 [trp_ent_1, "start", [(check_quest_active, "qst_guardian_party_quest"),(quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
@@ -641,7 +637,7 @@ dialogs = [
 ]],
 
 [trp_ent_1, "start", [(check_quest_active, "qst_guardian_party_quest"),(neq,"$talk_context",tc_ally_thanks), (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 1), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
-"(Ent Song)", "close_window", 
+"Hoom, hom! Hoom, hom! To Isengard with doom we come! With doom we come, with doom we come!", "close_window", 
     [(call_script,"script_stand_back"),
     (assign, "$g_leave_encounter",1),
     (change_screen_return),]],

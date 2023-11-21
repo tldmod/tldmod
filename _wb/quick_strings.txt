@@ -1,4 +1,4 @@
-1983
+1982
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2023-11-21_12:13___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2023-11-21_14:41___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -667,7 +667,6 @@ qstr_Rohan_capital_moved_ Rohan_capital_moved_from_Edoras_to_Hornburg!
 qstr_Dale_capital_moved_f Dale_capital_moved_from_Dale_to_Esgaroth!
 qstr_Gundabad_capital_mov Gundabad_capital_moved_from_Gundabad_to_Goblin_Town!
 qstr_You_have_breached_th You_have_breached_the_Ring_of_Isengard_with_the_help_of_the_Tree_Men._During_the_battle,_Isengard_was_flooded,_but_Orthanc_still_stands_unscathed_in_midst_of_the_havoc._You_should_investigate_the_aftermath.
-qstr_The_Flooding_of_Isen The_Flooding_of_Isengard
 qstr_The_hosts_of_{s2}_re The_hosts_of_{s2}_retreat_back_to_their_homes!
 qstr____Ruins_of_{s1}___ ___Ruins_of_{s1}___
 qstr_{s1}_siege_attack! {s1}_siege_attack!

@@ -8414,8 +8414,7 @@ game_menus = [
             (try_end),
             (try_begin),
               (eq, ":attackers_retreat", 1),
-              (party_get_slot, ":besieger", "$g_encountered_party", slot_center_is_besieged_by),
-              (neg|party_slot_eq, ":besieger", slot_party_type, spt_guardian), #guardian parties never retreat
+              (neg|party_slot_eq, "$g_enemy_party", slot_party_type, spt_guardian), #guardian parties never retreat
               (party_get_slot, ":siege_hardness", "$g_encountered_party", slot_center_siege_hardness),
               (val_add, ":siege_hardness", 100),
               (party_set_slot, "$g_encountered_party", slot_center_siege_hardness, ":siege_hardness"),
@@ -12616,6 +12615,14 @@ game_menus = [
 [
 	("continue",[],"Continue...",[(change_screen_map)]),
 	("repeat",[(eq, cheat_switch, 1)],"DEBUG: Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
+]),
+
+("isengard_flooding",0,
+   "^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...",
+    "none",
+    [   (set_background_mesh, "mesh_draw_ent_attack_orc"),    ],
+   	[("isengard_continue", [], "Continue", [(change_screen_map),]),
+
 ]),
 
 ("build_your_scene",0,
