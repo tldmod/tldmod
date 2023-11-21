@@ -2333,7 +2333,7 @@ itemsfile version 2
  itm_beorn_axe Beorning_Axe Beorning_Axe 1  beorning_axe 0  2251838810554372 9223635925844623584 470 156672 5 93 0 0 0 15 44032 94 0 92 0 256 43
 0
 
- itm_beorn_staff Woodmen_Staff Woodmen_Staff 1  woodman_staff 0  2252074830495748 4222131026005760 100 271496 2 90 0 0 0 0 22528 114 0 104 0 532 534
+ itm_beorn_staff Woodmen_Staff Woodmen_Staff 3  woodman_staff 0  gandstaff 128  sarustaff 2097152  2252074830495748 4222131026005760 100 271496 2 90 0 0 0 0 22528 114 0 104 0 532 534
 0
 
  itm_beorn_battle_axe Beorning_War_Axe Beorning_War_Axe 1  beorning_war_axe 0  2251804450816004 9223635925844623584 540 156672 6 94 0 0 0 16 49152 94 0 90 0 256 48
@@ -2700,7 +2700,7 @@ itemsfile version 2
  itm_leather_gloves_reward Archer_Gloves Archer_Gloves 5  CWE_gloves_king_L 0  CWE_gloves_a_black_L 128  ent_hand_L 2097152  olog_hand_L 4  isen_olog_hand_L 256  4111 0 2000 0 0 100 0 3 0 0 0 0 0 0 0 0 0
 0
 
- itm_beorn_shield_reward Beorning_Shield Beorning_Shield 1  beorning_shield 0  266247 5100273664 4000 251658402 4.5 100 0 18 0 3 340 95 0 55 0 0 0
+ itm_beorn_shield_reward Beorning_Shield Beorning_Shield 2  beorning_shield 0  gandstaff_shield 128  266247 5100273664 4000 251658402 4.5 100 0 18 0 3 340 95 0 55 0 0 0
 0
 
  itm_beorn_axe_reward Bear_Club Bear_Club 1  beorning_club 0  279177465858 9223388532775583758 2000 156672 4.5 100 0 0 0 12 32768 93 0 67 0 0 544

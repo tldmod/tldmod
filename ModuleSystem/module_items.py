@@ -1264,7 +1264,7 @@ items =[
 ######WEAPONS###########
 ["beorn_axe","Beorning_Axe",[("beorning_axe",0)],itp_type_polearm|itp_no_blur|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_back,470,weight(5)|abundance(93)|difficulty(15)|spd_rtng(94)|weapon_length(92)|swing_damage(43,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 # use itm_dale_sword, itm_dwarf_sword_a, itm_dwarf_sword_b for Beorning's imported swords
-["beorn_staff","Woodmen_Staff",[("woodman_staff",0)],itp_type_polearm|itp_no_blur|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_wooden_attack|itp_can_knock_down,itc_staff|itcf_carry_back,100,weight(2)|abundance(90)|difficulty(0)|spd_rtng(114)|weapon_length(104)|swing_damage(22,blunt)|thrust_damage(20,blunt),imodbits_weapon_wood],
+["beorn_staff","Woodmen_Staff",[("woodman_staff",0),("gandstaff",imodbit_crude),("sarustaff",imodbit_tattered),],itp_type_polearm|itp_no_blur|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_wooden_attack|itp_can_knock_down,itc_staff|itcf_carry_back,100,weight(2)|abundance(90)|difficulty(0)|spd_rtng(114)|weapon_length(104)|swing_damage(22,blunt)|thrust_damage(20,blunt),imodbits_weapon_wood],
 ["beorn_battle_axe","Beorning_War_Axe",[("beorning_war_axe",0)],itp_type_polearm|itp_no_blur|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through,itc_nodachi|itcf_carry_back,540,weight(6)|abundance(94)|difficulty(16)|spd_rtng(94)|weapon_length(90)|swing_damage(48,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 
 ###TLD DWARF ITEMS##########
@@ -1414,7 +1414,7 @@ items =[
 ["dale_sword_reward","Dale_Royal_Sword",[("Mandible_royal_sword",0),("Mandible_royal_sword_scabbard",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_unique,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(12)|spd_rtng(97)|weapon_length(110)|swing_damage(48,cut)|thrust_damage(30,pierce),imodbits_none],
 ["dale_armor_reward","Dale_Noblemen_Mail",[("dale_reward",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2600,weight(25)|abundance(100)|head_armor(4)|body_armor(36)|leg_armor(15)|difficulty(20),imodbits_none,],
 ["leather_gloves_reward","Archer_Gloves",[("CWE_gloves_king_L",0),("CWE_gloves_a_black_L",imodbit_crude),("ent_hand_L",imodbit_tattered),("olog_hand_L",imodbit_rusty),("isen_olog_hand_L",imodbit_old)],itp_type_hand_armor|itp_unique,0,2000,weight(0.2)|body_armor(3)|difficulty(0),imodbits_none,[]],
-["beorn_shield_reward","Beorning_Shield",[("beorning_shield",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,4000,weight(4.5)|abundance(100)|difficulty(3)|hit_points(340)|body_armor(18)|spd_rtng(95)|weapon_length(55),imodbits_shield,],
+["beorn_shield_reward","Beorning_Shield",[("beorning_shield",0),("gandstaff_shield",imodbit_crude),],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,4000,weight(4.5)|abundance(100)|difficulty(3)|hit_points(340)|body_armor(18)|spd_rtng(95)|weapon_length(55),imodbits_shield,],
 ["beorn_axe_reward","Bear_Club",[("beorning_club",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack|itp_crush_through|itp_can_knock_down|itp_unique,itc_scimitar|itcf_carry_mace_left_hip,2000,weight(4.5)|difficulty(12)|spd_rtng(93)|weapon_length(67)|swing_damage(32,blunt),imodbits_weapon_good],
 ["drums_of_the_deep","Drums_of_the_Deep",[("moria_drum",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 
@@ -1542,6 +1542,7 @@ items =[
 
 ["ent_head_helm2","Ent_Head",[("ent_head2",0),],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(30),0],
 ["ent_head_helm3","Ent_Head",[("ent_head3",0),],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(30),0],
+
 ] or []) + [ 
 
 ]
