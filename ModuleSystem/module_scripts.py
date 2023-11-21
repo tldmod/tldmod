@@ -5870,6 +5870,10 @@ scripts = [
             (quest_slot_eq, "qst_guardian_party_quest", slot_quest_target_party, ":root_party"),
             (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_rohan_quest_win),
             (call_script, "script_destroy_center", p_town_isengard),
+            (troop_get_slot, ":saru_party", trp_isengard_lord, slot_troop_leaded_party),
+            (gt, ":saru_party", 0),
+            (call_script, "script_clear_party_group", ":saru_party", "fac_rohan"),
+            (troop_set_slot, trp_isengard_lord, slot_troop_occupation, 0), #just to be sure
             #(display_message, "@legion defeated"),
         (else_try), #Ent party?
             (quest_slot_eq, "qst_guardian_party_quest", slot_quest_target_party, ":root_party"),

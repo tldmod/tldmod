@@ -548,7 +548,7 @@ dialogs = [
    [ ]],   
 
 [anyone|auto_proceed,"HD_defense_01", [], "Now, let us rest for a while. The enemy will be here by nightfall.", "close_window",
-   [(call_script, "script_send_legion", "p_town_isengard", "$current_town", 70),
+   [(call_script, "script_send_legion", "p_town_isengard", "$current_town", 5),
     (assign, ":guardian_party", reg0),
     (party_add_leader, ":guardian_party", "trp_high_captain_of_isengard", 4),
     (party_add_template, ":guardian_party", "pt_dunland_war_party"), #add a few Dunlendings
@@ -746,9 +746,9 @@ dialogs = [
   # [trp_treebeard, "treebeard_goodbye", [], "Goodbye, little orc!", "close_window",[]],
 
 #MV: Other ents
-[trp_ent_1, "start", [], "Mmmmm?", "close_window",[(call_script,"script_stand_back"),]],
-[trp_ent_2, "start", [], "Mmhhrmmm?", "close_window",[(call_script,"script_stand_back"),]],
-[trp_ent_3, "start", [], "Mmmrhrrhmm?", "close_window",[(call_script,"script_stand_back"),]],
+[trp_ent_1, "start", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "Mmmmm?", "close_window",[(call_script,"script_stand_back"),]],
+[trp_ent_2, "start", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "Mmhhrmmm?", "close_window",[(call_script,"script_stand_back"),]],
+[trp_ent_3, "start", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "Mmmrhrrhmm?", "close_window",[(call_script,"script_stand_back"),]],
 
  # [party_tpl|pt_manhunters,"start", [(eq,"$talk_context",tc_party_encounter)], "Hey, you there! You seen any outlaws around here?", "manhunter_talk_b",[]],
  # [party_tpl|pt_manhunters|plyr,"manhunter_talk_b", [], "Yes, they went this way about an hour ago.", "manhunter_talk_b1",[]],

@@ -1540,6 +1540,8 @@ items =[
 ["rohan_tunic_a_wb","Rohan_Tunic",[("L_roh_shirt_M1",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(6)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
 ["rohan_tunic_b_wb","Rohan_Tunic",[("L_roh_long_shirt_cape_M4",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(6)|leg_armor(4)|difficulty(0),imodbits_cloth,[]],
 
+["ent_head_helm2","Ent_Head",[("ent_head2",0),],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(30),0],
+["ent_head_helm3","Ent_Head",[("ent_head3",0),],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(30),0],
 ] or []) + [ 
 
 ]

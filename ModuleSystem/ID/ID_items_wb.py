@@ -944,3 +944,5 @@ itm_wimple_with_veil_wb = 942
 itm_fine_hat_wb = 943
 itm_rohan_tunic_a_wb = 944
 itm_rohan_tunic_b_wb = 945
+itm_ent_head_helm2 = 946
+itm_ent_head_helm3 = 947
