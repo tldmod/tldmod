@@ -193,6 +193,16 @@ game_menus = [
 	  ("change_tld_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options")]),
 	  ]) + [
 
+        ##InVain: Disabled for now. We enable the switch when a few more events have been added
+      # ("lore_events_switch",[(try_begin),(eq,"$lore_mode",0),(str_store_string, s7, "@OFF"),
+									# (else_try),(str_store_string, s7, "@ON"),(try_end),],
+        # "Lore events:  {s7}",[
+        # (store_sub, "$lore_mode", 1, "$lore_mode"),
+        # (val_clamp, "$lore_mode", 0, 2),
+        # (jump_to_menu, "mnu_start_phase_2"),
+        # (display_message, "@Lore events can alter the course of your campaign. More lore events may be added in the future. If you prefer a classic TLD experience, you can turn them off. Can only be changed at game start."),
+        # ]),
+
       ("see_info_pages",[],"TLD game concepts.",[(change_screen_notes, 5, 5),]),
 
 	  ("spacer",[],"_",[]),

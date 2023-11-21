@@ -3903,15 +3903,25 @@ simple_triggers = [
   #lore events trigger
   
   (7, [
-      #(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Test
-      (faction_get_slot, ":guardian_party_exists", "fac_isengard", slot_faction_guardian_party), # Guardian Party spawned
-      #(assign, reg70, ":guardian_party_exists"),
-      (gt, ":guardian_party_exists", 0),
-      #(display_message, "@{reg70} - Qst GP Trigger 0"),
-      (faction_get_slot, ":side", "$players_kingdom", slot_faction_side),
-      (eq, ":side", faction_side_good),
-      
+      (faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+        (faction_get_slot, ":fac_strength", ":faction_no", slot_faction_strength),
+        (neg|faction_slot_eq, ":faction_no", slot_faction_state, sfs_defeated),
+        
+        (try_begin), #Isengard Last Stand
+            (eq, "$lore_mode", 1),
+            (eq, ":faction_no", fac_isengard),
+            (le, ":fac_strength", fac_str_guardian),
+            (neg|check_quest_active, qst_guardian_party_quest),
+            (neg|check_quest_finished, qst_guardian_party_quest),
+            (eq, ":player_side", faction_side_good),
+            (faction_slot_ge, fac_rohan, fac_str_ok), #Rohan still okay?
+            (call_script, "script_find_theater", "p_main_party"),
+            (eq, reg0, theater_SW), #player in Rohan?
+            (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_rohan_quest_start),
+        (try_end),
 
+      (try_end), #end faction loop
   ]),
   
   # Encounter Effects Trigger - InVain & Kham

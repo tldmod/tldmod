@@ -4413,8 +4413,7 @@ mission_templates = [ # not used in game
     (team_set_relation, 7, 0, 1),(team_set_relation, 7, 2, 1),(team_set_relation, 7, 4, 1), # TLD gate aggravator team
     (team_set_relation, 7, 1, -1),(team_set_relation, 7, 3, -1),(team_set_relation, 7, 5, -1),
     (team_set_relation, 6, 1, 0),(team_set_relation, 6, 3, 0),(team_set_relation, 6, 5, 0), # player team starts neutral until player side is assigned
-	(team_set_relation, 6, 0, 0),(team_set_relation, 6, 2, 0),(team_set_relation, 6, 4, 0), # 
-    (assign, "$gate_breached",0), #for scenes without gates, just to make sure it's 0
+	(team_set_relation, 6, 0, 0),(team_set_relation, 6, 2, 0),(team_set_relation, 6, 4, 0), #
     (call_script, "script_change_banners_and_chest"),
     (call_script, "script_remove_siege_objects")]),
 
@@ -5149,7 +5148,6 @@ mission_templates = [ # not used in game
     (team_set_relation, 7, 1, -1),(team_set_relation, 7, 3, -1),(team_set_relation, 7, 5, -1),
     (team_set_relation, 6, 1, 0),(team_set_relation, 6, 3, 0),(team_set_relation, 6, 5, 0), # player team starts neutral until player side is assigned
 	(team_set_relation, 6, 0, 0),(team_set_relation, 6, 2, 0),(team_set_relation, 6, 4, 0), # 
-    (assign, "$gate_breached",0), #for scenes without gates, just to make sure it's 0
     (call_script, "script_change_banners_and_chest"),
     (call_script, "script_remove_siege_objects")]),
 

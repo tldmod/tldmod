@@ -2042,13 +2042,13 @@ scripts = [
 	(assign, "$tld_player_level_to_begin_war",8), #Kham - Custom Level to Start the War
 	(assign, "$FormAI_AI_no_defense",0), #Kham - FormAI - don't allow AI Defensive
 	(party_set_slot, "p_main_party", slot_party_number_following_player, 0),
+	(assign, "$lore_mode", 1),# unused      
 	
 	#Kham - Squelch compiler warnings
 	(assign, "$original_savegame_version", 0),
     (assign, "$cheatmode_used", 0),      
     (assign, "$hold_f1", 0),  
-	(assign, "$dormant_spawn_radius", 0),
-	(assign, "$gate_breached", 0),# unused    
+	(assign, "$dormant_spawn_radius", 0),  
     (assign, "$mouse_coordinates", 0), #wb only
     (assign, "$attacker_archer_melee",0),
     (assign, "$attacker_team_3", 5),
@@ -2061,9 +2061,7 @@ scripts = [
     (val_mul, "$hold_f1", "$cheatmode_used"),
     (val_mul, "$hold_f1", "$original_savegame_version"),
 	(val_mul, "$hold_f1", "$dormant_spawn_radius"),
-    (val_mul, "$gate_breached", "$hold_f1"),
-    (val_mul, "$gate_breached", "$gate_aggravator_agent"),
-    (val_mul, "$gate_aggravator_agent", "$gate_breached"),
+    (val_mul, "$gate_aggravator_agent", "$hold_f1"),
     (val_mul, "$gate_aggravator_agent", "$mouse_coordinates"),
     (val_mul, "$gate_aggravator_agent", "$attacker_archer_melee"),
     (val_mul, "$attacker_archer_melee", "$attacker_team_3"),
