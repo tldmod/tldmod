@@ -23301,6 +23301,10 @@ scripts = [
             (troop_set_health, "trp_rohan_lord", 100),        
           (try_end),  
 
+        (faction_set_slot, "fac_rohan", slot_faction_ai_state, sfai_default), #cancel any campaigns
+        (faction_set_slot, "fac_rohan", slot_faction_ai_object, -1),
+        (call_script,"script_check_and_finish_active_army_quests_for_faction","$players_kingdom",), #quit any campaign quests
+
         #spawn ents, set as target party
         (set_spawn_radius,4),
         (spawn_around_party, "p_town_isengard", "pt_none"),
@@ -23320,7 +23324,7 @@ scripts = [
         (party_add_leader, ":ent_party", "trp_ent_1"),        
         (troop_raise_skill, "trp_ent_1", skl_tactics, 10),
         (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_party, ":ent_party"),
-        (call_script,"script_create_smoking_remnants","p_town_isengard","icon_shrubbery",24,1),
+        (call_script,"script_create_smoking_remnants","p_town_isengard","icon_shrubbery",48,1),
       
     (else_try),
       (eq, ":convo_code", tld_cc_gandalf_rohan_quest_win),
@@ -23343,6 +23347,7 @@ scripts = [
       (remove_member_from_party, trp_legolas, ":target_center"),  
       (remove_member_from_party, trp_gimli, ":target_center"),  
       (call_script, "script_finish_quest", "qst_guardian_party_quest", 100),
+      (quest_set_slot, "qst_treebeard_kill_orcs", slot_quest_current_state, 1), #disable Treebeard quest
 
     (else_try),
       (eq, ":convo_code", tld_cc_gandalf_rohan_quest_fail),     

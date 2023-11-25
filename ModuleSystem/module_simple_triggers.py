@@ -1699,6 +1699,7 @@ simple_triggers = [
       (neg|faction_slot_eq, "$players_kingdom", slot_faction_ai_state, sfai_default),
       (neg|check_quest_active, "qst_report_to_army"),
       (neg|check_quest_active, "qst_follow_army"),
+      (neg|check_quest_active, "qst_guardian_party_quest"), #not during story quests      
       (neg|quest_slot_ge, "qst_report_to_army", slot_quest_dont_give_again_remaining_days, 1),
       (faction_get_slot, ":faction_marshall", "$players_kingdom", slot_faction_marshall),
       (gt, ":faction_marshall", 0),
