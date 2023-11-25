@@ -582,6 +582,10 @@ dialogs = [
    [(assign, "$g_leave_encounter",1),
     (change_screen_return),
     (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, -3),
+    (faction_get_slot,":fac_strength","fac_rohan",slot_faction_strength_tmp),
+    (val_add, ":fac_strength", 500),
+    (faction_set_slot,"fac_rohan",slot_faction_strength_tmp,":fac_strength"),
+    (call_script, "script_change_player_relation_with_troop", "trp_rohan_lord", 20),
     #(call_script, "script_finish_quest", "qst_guardian_party_quest", 100),
     ]],
 
@@ -656,11 +660,25 @@ dialogs = [
 [trp_ent_1, "treebeard_isengard_3", [(check_quest_active, "qst_guardian_party_quest")],
 "Ho, hmm, I owe you great thanks. I had not expected any help from others, and it is good to learn that our Last March may not end quite so badly, after all! Since the tree-killer is dealt with, we should now be able to keep Rohan's northern marches safe, for a while.", "close_window", 
 [(call_script, "script_finish_quest", "qst_guardian_party_quest", 100), 
-(call_script,"script_stand_back"),]],
+(call_script,"script_stand_back"),
+(add_xp_as_reward, 2000),
+(neg|quest_slot_eq, qst_treebeard_kill_orcs, slot_quest_current_state, 1), #not gotten ent water before?
+(troop_add_item, "trp_player", "itm_ent_water", 0),
+(party_set_slot, p_town_west_emnet, slot_center_spawn_raiders, pt_ents), #ent parties will now patrol in western Rohan
+(party_set_slot, p_town_westfold, slot_center_spawn_raiders, pt_ents),
+]],
 
 [trp_ent_1, "treebeard_isengard_3", [(quest_get_slot, ":status", "qst_guardian_party_quest", slot_quest_current_state),(le, ":status", 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
 "Hmm? Ho, hmm… ah. So, you have come all the way from Rohan, have you? Hmm. I have heard some news from the south, yes. Good news, news to gladden all hearts. I have good will to Theoden King, and I am glad he was aided by the likes of you in his hour of peril, hmm! We have managed here well enough, and now we Ents will see to it that Saruman does not set foot beyond Isengard, without our leave. The Isen flows well again, and soon I hope the water will once more be fit to drink. Ha, hm, I feel a song coming on. A song of the old days… the old trees I knew…", "close_window", 
-[(call_script,"script_stand_back"),]],
+[(call_script,"script_stand_back"),(troop_set_slot, "trp_treebeard", slot_troop_met_previously, 1),]],
+
+# for Ent parties spawning later
+[anyone, "start", [(eq, "$g_talk_troop", trp_ent), (eq, "$talk_context", tc_party_encounter), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"), (faction_slot_eq,"$players_kingdom", slot_faction_side, faction_side_good),], "Hrooom! What do you want?", "ent_encounter",
+   []],
+
+[anyone|plyr, "ent_encounter", [], "Hail, tree shepherd! Thank you for keeping these marshes safe. I will not stand in your way.", "close_window",
+   [(call_script,"script_stand_back"),
+    (assign, "$g_leave_encounter",1),]],
   
 #MV: Treebeard dialogs - text by Treebeard (JL)
 [trp_treebeard, "start", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")],
@@ -3708,7 +3726,10 @@ How could I expect someone like {playername} to be up to the challenge. My serva
    (troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
     (assign, "$g_leave_encounter",1),]],
   
-
+[anyone, "lord_mission_told_deliver_cattle_to_army_rejected", [], "That . . . is unfortunate, {playername}. I shall have to find someone else who's up to the task. Please go now, I've work to do.", "close_window",
+   [(call_script,"script_stand_back"),
+   (troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
+    (assign, "$g_leave_encounter",1),]],
 
 [anyone,"lord_start",[(check_quest_active,"qst_report_to_army"),
                         (quest_slot_eq, "qst_report_to_army", slot_quest_target_troop, "$g_talk_troop")],

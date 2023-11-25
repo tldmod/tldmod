@@ -23271,6 +23271,7 @@ scripts = [
         (call_script, "script_start_quest", "qst_guardian_party_quest", "trp_gandalf"),
         (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_center, ":target_center"),
         (quest_set_slot, "qst_guardian_party_quest", slot_quest_expiration_days, 3),
+        (quest_set_slot, "qst_guardian_party_quest", slot_quest_xp_reward, 3000),
 
           (try_begin), #send Theoden and disable Rohan faction AI
               (troop_get_slot, ":theoden_party", "trp_rohan_lord", slot_troop_leaded_party),
@@ -23347,6 +23348,7 @@ scripts = [
       (remove_member_from_party, trp_legolas, ":target_center"),  
       (remove_member_from_party, trp_gimli, ":target_center"),  
       (call_script, "script_finish_quest", "qst_guardian_party_quest", 100),
+      (call_script, "script_increase_rank", "fac_rohan", 50),
       (quest_set_slot, "qst_treebeard_kill_orcs", slot_quest_current_state, 1), #disable Treebeard quest
 
     (else_try),

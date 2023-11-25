@@ -3589,6 +3589,7 @@ game_menus = [
     ("player_control_allies",[],"Battlesize set to {reg66}", [(options_set_battle_size, reg66),]),
      ] or []) + [
     ("spawn_orc_horde",[],"Spawn Orc Horde", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_orc_horde"),(display_message, "@Orc Horde Spawned!"),]),
+    ("spawn_ent_party",[],"Spawn Ent Party", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_ents"),]),    
     ("spawn_vet_archer",[],"Spawn Vet Archer", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_vet_archer"),(display_message, "@Vet Archer Spawned!"),(assign, ":party", reg0),(call_script, "script_party_wound_all_members", ":party"),]),
     ("melee_ai_test",[],"Melee AI Test", [
     	(set_spawn_radius,1),
@@ -4006,7 +4007,7 @@ game_menus = [
 		"Drink the Ent Water!",
 		[
 	    (troop_get_type,reg5,"trp_player"),
-	    (troop_remove_item,"itm_ent_water"),
+	    (troop_remove_item, trp_player, "itm_ent_water"),
 		(display_log_message,"@You drank the Ent Water..."),
 		(assign,"$g_ent_water_ever_drunk",1),
 		(assign,"$g_ent_water_taking_effect",1),
@@ -5007,6 +5008,8 @@ game_menus = [
               (call_script, "script_start_conversation_cutscene", "$g_tld_nazgul_state"),
             (else_try), 
               (eq, "$g_encountered_party_template", "pt_ents"),
+              (faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+              (neq, ":player_side", faction_side_good), 
               #(check_quest_active, "qst_investigate_fangorn"),
               (call_script,"script_fangorn_fight_ents"),
             (else_try), #normal dialogs

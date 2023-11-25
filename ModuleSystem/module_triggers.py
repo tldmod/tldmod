@@ -1207,7 +1207,7 @@ triggers = [
   ]),
   
   #TLD magic items stuff(mtarini)
-  (12, 12,ti_once,[(eq,"$g_ent_water_taking_effect",1),
+  (12, 12,0,[(eq,"$g_ent_water_taking_effect",1),
       (troop_get_type,reg5,"trp_player"),
       (store_troop_health,reg6, "trp_player"),
       (ge|this_or_next, reg6, 95), # takes effect only after you fully recovered...
