@@ -528,20 +528,43 @@ tld_slow_wounded  = (1, 0, 0, [(eq, "$slow_when_wounded", 1),],
 			# (try_end),
 			# ])
 
-tld_remove_volunteer_troops = (ti_on_agent_spawn, 1, 0, [(is_between, "$current_town", centers_begin, centers_end)], 
-			[ (store_trigger_param_1, ":cur_agent"),
+tld_assign_special_troops = (ti_on_agent_spawn, 1, 0, [(is_between, "$current_town", centers_begin, centers_end)], #handles troops to be removed and battle companions
+			[  (store_trigger_param_1, ":cur_agent"),
                 (gt, ":cur_agent", 0), #avoids script errors for some reason
                 (agent_is_alive, ":cur_agent"),
 				(agent_get_troop_id,":troop", ":cur_agent"),
-				(this_or_next|eq, ":troop", "trp_volunteers"),
-                (this_or_next|eq, ":troop", "trp_lorien_lord"),
-                (this_or_next|eq, ":troop", "trp_isengard_lord"),
-				(eq, ":troop", "trp_werewolf"),
-            ] + (is_a_wb_mt==1 and [
-                (agent_fade_out, ":cur_agent"),
-            ] or [
-				(call_script, "script_remove_agent", ":cur_agent"),
-            ]) + [
+                
+                (try_begin),
+                    (this_or_next|eq, ":troop", "trp_volunteers"),
+                    (this_or_next|eq, ":troop", "trp_lorien_lord"),
+                    (this_or_next|eq, ":troop", "trp_isengard_lord"),
+                    (eq, ":troop", "trp_werewolf"),
+                ] + (is_a_wb_mt==1 and [
+                    (agent_fade_out, ":cur_agent"),
+                ] or [
+                    (call_script, "script_remove_agent", ":cur_agent"),
+                ]) + [
+                (try_end),
+            
+            (try_begin), #handle Aragorn, Legolas, Gimli
+                (check_quest_active, "qst_guardian_party_quest"),
+                (quest_slot_eq, qst_guardian_party_quest, slot_quest_target_center, "$current_town"),
+                (this_or_next|eq, ":troop", "trp_aragorn"),
+                (this_or_next|eq, ":troop", "trp_legolas"),
+				(eq, ":troop", "trp_gimli"),
+                (agent_set_slot, ":cur_agent", slot_agent_is_not_reinforcement, 1),
+                (get_player_agent_no, ":player_agent"),
+                (set_fixed_point_multiplier, 100),
+                (agent_get_position, pos20, ":player_agent"),
+                (position_move_z, pos1, 200),
+                (agent_set_position, ":cur_agent", pos20),
+                (agent_get_team, ":player_team", ":player_agent"),
+                (agent_set_team, ":cur_agent", ":player_team"),
+                (agent_clear_scripted_mode, ":cur_agent"),
+                 ] + (is_a_wb_mt==1 and [
+                (agent_force_rethink, ":cur_agent"),
+                ] or []) + [
+            (try_end)
 			])
 	
 

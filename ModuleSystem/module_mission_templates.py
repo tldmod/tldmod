@@ -1104,7 +1104,7 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
 	custom_track_companion_casualties,
 	common_battle_healing,
 	custom_troll_hitting,
-  tld_remove_volunteer_troops,
+  tld_assign_special_troops,
 	#common_battle_kill_underwater,
   reset_fog,
 ] + fade + bright_nights + khams_custom_player_camera + bright_nights
@@ -3206,7 +3206,7 @@ mission_templates = [ # not used in game
   
 
   common_battle_on_player_down,
-  tld_remove_volunteer_troops,
+  tld_assign_special_troops,
 
   # Make the teams enemies... and disable morale
   (ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1),(assign, "$battle_won", 0), (assign, "$tld_option_morale", 0),]),
@@ -4534,6 +4534,7 @@ mission_templates = [ # not used in game
 	(neq, ":agent_no", "$gate_aggravator_agent"),
 	(agent_get_party_id, ":party_no", ":agent_no"),
 	(agent_get_troop_id, ":troop_id", ":agent_no"),
+    (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
 	(str_store_troop_name,s1, ":troop_id"),
 	(agent_get_entry_no, ":entry", 	":agent_no"), # spawn records, not actual entry number
         (try_begin),

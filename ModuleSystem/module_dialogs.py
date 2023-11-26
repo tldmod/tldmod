@@ -548,7 +548,7 @@ dialogs = [
    [ ]],   
 
 [anyone|auto_proceed,"HD_defense_01", [], "Now, let us rest for a while. The enemy will be here by nightfall.", "close_window",
-   [(call_script, "script_send_legion", "p_town_isengard", "$current_town", 5),
+   [(call_script, "script_send_legion", "p_town_isengard", "$current_town", 70),
     (assign, ":guardian_party", reg0),
     (party_add_leader, ":guardian_party", "trp_high_captain_of_isengard", 4),
     (party_add_template, ":guardian_party", "pt_dunland_war_party"), #add a few Dunlendings
