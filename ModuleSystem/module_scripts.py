@@ -5790,6 +5790,7 @@ scripts = [
         (eq, "$g_move_heroes", 1),
         
         (troop_get_type,":race",":stack_troop"),
+        (store_troop_faction, ":faction", ":stack_troop"),
         (neq,":race",tf_troll),
         (assign, ":can_capture", 1),
         
@@ -5800,6 +5801,7 @@ scripts = [
             (this_or_next|eq,":race",tf_lorien),
             (this_or_next|eq,":race",tf_imladris),
             (eq,":race",tf_woodelf),
+            (is_between, ":faction", kingdoms_begin, kingdoms_end), #only applys to faction troops, no bandits
             (assign, ":can_capture", 0),
             (try_begin),    #except if player party is involved and capture prisoners quest active
                 (eq, ":source_party", "p_collective_enemy"),
