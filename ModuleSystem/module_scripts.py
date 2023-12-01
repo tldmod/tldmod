@@ -2086,7 +2086,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 35),  #Rafa: Savegame version
+    (assign,"$savegame_version", 36),  #Rafa: Savegame version
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -2691,6 +2691,14 @@ scripts = [
 			(call_script, "script_party_count_fit_for_battle", "p_collective_enemy", 0),
 			(assign, ":new_attacker_strength", reg0),
 
+            (try_begin), #make sure leader dies last, so their skills apply
+                (gt, ":new_attacker_strength", 0),
+                (party_stack_get_troop_id, ":party_leader", ":root_attacker_party", 0),
+                (troop_is_hero, ":party_leader"),
+                (troop_set_health, ":party_leader", 100),
+            (try_end),
+
+
 			(try_begin),
 				(gt, ":new_attacker_strength", 0),
 				# night in TLD is primary WAR TIME =)! GA
@@ -2700,6 +2708,13 @@ scripts = [
 			(try_end),
 			(call_script, "script_party_count_fit_for_battle", "p_collective_ally", 0),
 			(assign, ":new_defender_strength", reg0),
+
+            (try_begin), #make sure leader dies last, so their skills apply
+                (gt, ":new_defender_strength", 0),
+                (party_stack_get_troop_id, ":party_leader", ":root_defender_party", 0),
+                (troop_is_hero, ":party_leader"),
+                (troop_set_health, ":party_leader", 100),
+            (try_end),
 
 			(try_begin),
 				(this_or_next|eq, ":new_attacker_strength", 0),
@@ -25687,7 +25702,20 @@ command_cursor_scripts = [
      ] or []) + [     
         (assign, "$savegame_version", 35),
 	(try_end),
-    
+
+    (try_begin), #InVain - assign surgery to lords, turn on lore mode
+        (le, "$savegame_version", 35),
+        (try_for_range, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+            (store_troop_faction, ":faction", ":lord"),
+            (faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
+	   		(troop_raise_skill, ":lord", skl_surgery, 8),
+        (else_try),
+            (troop_raise_skill, ":lord", skl_surgery, 4),
+	   	(try_end),
+        (assign, "$lore_mode", 1),
+        (assign, "$savegame_version", 36),
+	(try_end),	
+
 ]),
 
 #Kham

@@ -5611,6 +5611,11 @@ game_menus = [
 		  (str_store_string, s4, "str_order_attack_success"),
 		(else_try),
 		  (str_store_string, s4, "str_order_attack_continue"),
+          (try_begin), #make sure leader dies last, so their skills apply
+                (party_stack_get_troop_id, ":party_leader", "p_collective_enemy", 0),
+                (troop_is_hero, ":party_leader"),
+                (troop_set_health, ":party_leader", 100),
+            (try_end),
 		(try_end),
     ],
     [("order_attack_continue",[(eq, "$no_soldiers_left", 0)],"Order your soldiers to continue the attack.",[(jump_to_menu,"mnu_order_attack_2")]),
@@ -7012,6 +7017,11 @@ game_menus = [
 		  (str_store_string, s4, "str_join_order_attack_success"),
 		(else_try),
 		  (str_store_string, s4, "str_join_order_attack_continue"),
+          (try_begin), #make sure leader dies last, so their skills apply
+                (party_stack_get_troop_id, ":party_leader", "p_collective_enemy", 0),
+                (troop_is_hero, ":party_leader"),
+                (troop_set_health, ":party_leader", 100),
+          (try_end),
 		(try_end),
     ],
     [("continue",[],"Continue...",[(jump_to_menu,"mnu_join_battle")])]
@@ -8158,6 +8168,11 @@ game_menus = [
           (str_store_string, s4, "str_attack_walls_success"),
         (else_try),
           (str_store_string, s4, "str_attack_walls_continue"),
+          (try_begin), #make sure leader dies last, so their skills apply
+                (party_stack_get_troop_id, ":party_leader", "$g_encountered_party", 0),
+                (troop_is_hero, ":party_leader"),
+                (troop_set_health, ":party_leader", 100),
+           (try_end),
         (try_end),
      ],
     [
@@ -8244,6 +8259,11 @@ game_menus = [
           (str_store_string, s4, "str_attack_walls_success"),
         (else_try),
           (str_store_string, s4, "str_attack_walls_continue"),
+          (try_begin), #make sure leader dies last, so their skills apply
+                (party_stack_get_troop_id, ":party_leader", "p_collective_enemy", 0),
+                (troop_is_hero, ":party_leader"),
+                (troop_set_health, ":party_leader", 100),
+          (try_end),
         (try_end),
      ],
     [("continue",[],"Continue...",[(jump_to_menu,"mnu_besiegers_camp_with_allies")]),]
@@ -8572,6 +8592,11 @@ game_menus = [
           (str_store_string, s4, "str_siege_defender_order_attack_success"),
         (else_try),
           (str_store_string, s4, "str_siege_defender_order_attack_continue"),
+          (try_begin), #make sure leader dies last, so their skills apply
+                (party_stack_get_troop_id, ":party_leader", "p_collective_enemy", 0),
+                (troop_is_hero, ":party_leader"),
+                (troop_set_health, ":party_leader", 100),
+          (try_end),          
         (try_end),
     ],
     [("continue",[],"Continue...",[(jump_to_menu,"mnu_siege_started_defender"),]),]

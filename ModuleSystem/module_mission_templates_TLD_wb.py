@@ -4457,3 +4457,36 @@ tld_ai_fadeout_spheres =   (3, 0, 0, [], [ #agent fadeout sphere test
         (try_end),
     (try_end),
     ])    
+    
+tld_calculate_wounded = (ti_on_agent_killed_or_wounded, 0, 0, [], [ 
+	(store_trigger_param_1, ":agent_no"),
+    (agent_get_party_id, ":party_no", ":agent_no"),
+    (ge, ":party_no", 0),
+    (party_is_active, ":party_no"),
+    (agent_get_troop_id, ":troop_no", ":agent_no"),
+    
+    #surgery
+    (party_stack_get_troop_id, ":party_leader", ":party_no", 0),
+    (store_skill_level, ":surgery", skl_surgery, ":party_leader"),    
+    (try_begin),
+        (eq, ":party_no", p_main_party),
+        (party_get_skill_level, ":surgery", "p_main_party", skl_surgery),
+    (try_end),        
+    (val_mul, ":surgery", 4),
+    (val_add, ":surgery", 100),
+    
+    #troop level
+    (store_character_level, ":chance", ":troop_no"), 
+    #(val_mul, ":chance", 2),
+    (val_mul, ":chance", ":surgery"),
+    (val_div, ":chance", 100),
+    
+    (str_store_agent_name, s5, ":agent_no"),
+    (store_random_in_range, ":rnd", 0, 100),
+    (try_begin),
+        (le, ":rnd", ":chance"),
+        (set_trigger_result, 2), #wound
+    (else_try),
+        (set_trigger_result, 1), #kill
+    (try_end),        
+    ])

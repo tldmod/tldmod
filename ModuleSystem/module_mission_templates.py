@@ -1060,7 +1060,8 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     batching_agent_spawn_mount,
     
     tld_place_inventory_backup, 
-    tld_ai_fadeout_spheres,    
+    tld_ai_fadeout_spheres,
+    tld_calculate_wounded    
 
 ] + beorning_shapeshift   #Chaning into bear
 + tld_bow_shield
