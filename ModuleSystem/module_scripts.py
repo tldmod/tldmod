@@ -25726,7 +25726,7 @@ command_cursor_scripts = [
             (troop_raise_attribute, ":trp", ca_strength, 30),
             (troop_equip_items, ":trp"),            
 	   	(try_end),
-        # (assign, "$savegame_version", 37),
+        (assign, "$savegame_version", 37),
         # (troop_add_item, trp_pippin_notmet, itm_rohan_armor_th, imod_battered),
         # (troop_equip_items, trp_pippin_notmet),  
         # (call_script, "script_clone_troop", "trp_pippin_notmet_old", "trp_pippin_notmet"),

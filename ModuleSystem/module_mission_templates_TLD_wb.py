@@ -4464,6 +4464,7 @@ tld_calculate_wounded = (ti_on_agent_killed_or_wounded, 0, 0, [], [
     (ge, ":party_no", 0),
     (party_is_active, ":party_no"),
     (agent_get_troop_id, ":troop_no", ":agent_no"),
+    (neg|troop_is_hero, ":troop_no"),
     
     #surgery
     (party_stack_get_troop_id, ":party_leader", ":party_no", 0),
