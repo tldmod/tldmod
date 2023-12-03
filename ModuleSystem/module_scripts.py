@@ -12620,6 +12620,7 @@ scripts = [
     # Place the two hobbits; USE ENTRY POINT 8 !!! (mtarini)
     (try_begin),
       (gt, "$tld_war_began", 0),
+      (faction_slot_eq, "fac_isengard", slot_faction_state, sfs_defeated),
       (eq, ":castle_scene", "scn_minas_tirith_castle"),
       
       (try_begin),
@@ -12630,6 +12631,7 @@ scripts = [
       (try_end),
     (else_try), 
       (gt, "$tld_war_began", 0),
+      (faction_slot_eq, "fac_isengard", slot_faction_state, sfs_defeated),
       (eq, ":castle_scene", "scn_edoras_castle"),
       
       (try_begin),
@@ -25716,8 +25718,22 @@ command_cursor_scripts = [
 	   	(try_end),
         (assign, "$lore_mode", 1),
         (assign, "$savegame_version", 36),
+	(try_end),
+	
+    (try_begin), #InVain - update equipment
+        (le, "$savegame_version", 36),
+        (try_for_range, ":trp", trp_aragorn, trp_last),        
+            (troop_raise_attribute, ":trp", ca_strength, 30),
+            (troop_equip_items, ":trp"),            
+	   	(try_end),
+        # (assign, "$savegame_version", 37),
+        # (troop_add_item, trp_pippin_notmet, itm_rohan_armor_th, imod_battered),
+        # (troop_equip_items, trp_pippin_notmet),  
+        # (call_script, "script_clone_troop", "trp_pippin_notmet_old", "trp_pippin_notmet"),
+        (check_quest_active, "qst_deliver_message_hobbit"),
+        (call_script, "script_cancel_quest", "qst_deliver_message_hobbit"),
+        (display_message, "@Hobbit quest aborted for compatibility reasons. Hobbits will now only appear after certain conditions are met."),
 	(try_end),	
-
 ]),
 
 #Kham

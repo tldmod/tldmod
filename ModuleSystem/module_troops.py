@@ -1171,7 +1171,7 @@ troops = [
 ["i2_beorning_warrior","Beorning_Warrior","Beorning_Warriors",tfg_armor| tfg_boots,0,0,fac_beorn,[itm_north_skullcap,itm_gondor_ranger_hood,itm_beorn_tunic,itm_beorn_padded_bad,itm_furry_boots,itm_beorn_axe,itm_dwarf_sword_b,itm_beorn_shield,itm_north_round_shield,],attr_tier_2,wp_tier_2,knows_common|knows_ironflesh_3|knows_power_strike_2|knows_athletics_4|knows_tracking_2|knows_pathfinding_1|knows_spotting_1|knows_surgery_1|knows_persuasion_1|knows_trade_1,beorn_face1,beorn_face2],
 ["i3_beorning_tolltacker","Beorning_Toll-Taker","Beorning_Toll-Takers",tfg_armor| tfg_boots|tfg_shield,0,0,fac_beorn,[itm_north_skullcap,itm_beorn_helmet_light,itm_beorn_padded, itm_beorn_heavy_bad,itm_furry_boots,itm_dwarf_sword_b,itm_beorn_shield,itm_north_round_shield,itm_rohirrim_throwing_axe,],attr_tier_3,wp_tier_3,knows_common|knows_athletics_4|knows_power_strike_3|knows_ironflesh_4|knows_power_throw_2,beorn_face1,beorn_face2],
 ["i4_beorning_sentinel","Beorning_Sentinel","Beorning_Sentinels",tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_north_skullcap,itm_beorn_helmet_light,itm_beorn_heavy,itm_leather_boots,itm_dwarf_sword_b,itm_dale_sword,itm_beorn_shield,itm_beorn_shield_good,itm_rohirrim_throwing_axe,],attr_tier_4,wp_tier_4,knows_common|knows_athletics_4|knows_power_strike_3|knows_ironflesh_5|knows_shield_3|knows_power_throw_2,beorn_face1,beorn_face2],
-["i5_beorning_warden_of_the_ford","Beorning_Warden_of_the_Ford","Beorning_Wardens_of_the_Ford",tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_north_skullcap,itm_beorn_helmet, itm_beorn_heavy_good,itm_leather_gloves,itm_leather_boots,itm_dwarf_sword_a,itm_dwarf_sword_b,itm_dale_sword,itm_dale_sword_long,itm_beorn_shield_good,],attr_tier_5,wp_tier_5,knows_common|knows_athletics_5|knows_power_strike_3|knows_ironflesh_6|knows_shield_5|knows_power_throw_3,beorn_face1,beorn_face2],
+["i5_beorning_warden_of_the_ford","Beorning_Warden_of_the_Ford","Beorning_Wardens_of_the_Ford",tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_north_skullcap,itm_beorn_helmet, itm_beorn_heavy_good,itm_leather_gloves,itm_leather_boots,itm_dwarf_sword_a,itm_dwarf_sword_b,itm_dale_sword,itm_dale_sword_long,itm_beorn_shield_good,itm_rohirrim_throwing_axe,],attr_tier_5,wp_tier_5,knows_common|knows_athletics_5|knows_power_strike_3|knows_ironflesh_6|knows_shield_5|knows_power_throw_3,beorn_face1,beorn_face2],
 ["i3_beorning_carrock_lookout","Beorning_Carrock_Lookout","Beorning_Carrock_Lookouts",tfg_armor| tfg_boots,0,0,fac_beorn,[itm_north_skullcap,itm_beorn_helmet_light,itm_beorn_tunic_good,itm_beorn_padded_bad,itm_beorn_berserk_bad,itm_furry_boots,itm_beorn_axe,itm_javelin,],attr_tier_3,wp_tier_3,knows_common|knows_athletics_6|knows_power_strike_4|knows_ironflesh_6|knows_power_throw_2,beorn_face1,beorn_face2],
 ["i4_beorning_carrock_fighter","Beorning_Carrock_Fighter","Beorning_Carrock_Fighters",tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_beorn_helmet,itm_beorn_helmet_light,itm_beorn_padded, itm_beorn_berserk,itm_furry_boots,itm_beorn_axe,itm_beorn_battle_axe,itm_javelin,itm_javelin,],attr_tier_4,wp_tier_4,knows_common|knows_athletics_7|knows_power_strike_5|knows_ironflesh_7|knows_power_throw_4,beorn_face1,beorn_face2],
 ["i5_beorning_carrock_berserker","Beorning_Carrock_Berserker","Beorning_Carrock_Berserkers",tfg_gloves| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_beorn_helmet,itm_beorn_padded_good,itm_beorn_berserk_good,itm_furry_boots,itm_beorn_battle_axe,itm_javelin,itm_javelin,],attr_tier_5,wp_tier_6,knows_common|knows_athletics_8|knows_power_strike_7|knows_ironflesh_9|knows_power_throw_6,beorn_face1,beorn_face2],
@@ -2225,19 +2225,19 @@ troops = [
 
 ## hobbits: two versions: for when you didn't meet them, and for when you did meet them (I wish there was a way to RENAME a Troop. str_set_troop_name FTW)  mtarini
 
-["pippin_notmet","halfling","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+["pippin_notmet_old","halfling_old","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
    [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_pippin_outfit],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
-["merry_notmet","halfling","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+["merry_notmet_old","halfling_old","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
    [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_merry_outfit],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
-["pippin","Pippin","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+["pippin_old","Pippin_old","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
    [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_pippin_outfit],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
-["merry","Merry","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+["merry_old","Merry_old","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
    [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_merry_outfit],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
@@ -3571,7 +3571,25 @@ attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,o
    [itm_dwarf_vest_b,itm_dwarf_chain_boots,itm_leather_gloves,itm_dwarf_throwing_axe,itm_dwarf_great_axe,itm_rohan_shield_g,itm_dwarf_throwing_axe,],
       attr_dwarf_tier_6,wp_dwarf_tier_6,knows_riding_10|knows_persuasion_3|knight_skills_5|knows_riding_4,0x000000003a00204358e46ec7d780e9fe00000000001de4710000000000000000],
 
+["stub1","BUG","BUG",0,0,0,fac_commoners,[],0,0,0,0], #need this stub for new troops below to work properly
 
+## hobbits: two versions: for when you didn't meet them, and for when you did meet them (I wish there was a way to RENAME a Troop. str_set_troop_name FTW)  mtarini
+
+["pippin_notmet","halfling","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+   [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_pippin_outfit],
+       attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
+
+["merry_notmet","halfling","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+   [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_merry_outfit],
+       attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
+
+["pippin","Pippin","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+   [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_pippin_outfit],
+       attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
+
+["merry","Merry","_",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+   [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_merry_outfit],
+       attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 #Add new troops here, right before trp_last!
 
 ["last","BUG","BUG",0,0,0,fac_commoners,[],0,0,0,0],    #the last troop must stay a stub, so that range calls for all troops include the last but one troop.
