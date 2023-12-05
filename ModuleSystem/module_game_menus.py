@@ -7492,6 +7492,21 @@ game_menus = [
         ],
     [
 
+	  #menu #0
+	  ("cheat_steal_book",[(eq, "$current_town", "p_town_moria"),(eq,"$cheat_mode",1),], "CHEAT: steal book now",[
+			(troop_add_item, "trp_player","itm_book_of_moria",0),
+			(try_begin),
+				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+				(str_store_string, s12, "@Get book." ),
+				(jump_to_menu,"mnu_moria_must_escape"),
+				(finish_mission),
+			(else_try),
+				(str_store_string, s12, "str_empty_string"),
+			(try_end),
+	  ]
+	  ,"Get the book"),
+
+        #menu #1
 	  ("moria_enter",[
 				(eq, "$current_town", "p_town_moria"),
 				(this_or_next|eq, "$found_moria_entrance", 1),(eq,"$cheat_mode",1), (eq, "$moria_book_given",0),
@@ -7505,6 +7520,7 @@ game_menus = [
             (change_screen_mission),
 	  ],"Enter Moria."),
 	  
+      #menu #2
 	  #Enter dungeon in Moria begin (mtarini)
       ("moria_secret",[
         (eq, "$current_town", "p_town_moria"),
@@ -7526,19 +7542,6 @@ game_menus = [
             (change_screen_mission),
        ]),
       #Enter dungeon in Moria end (mtarini)
-	  
-	  ("cheat_steal_book",[(eq, "$current_town", "p_town_moria"),(eq,"$cheat_mode",1),], "CHEAT: steal book now",[
-			(troop_add_item, "trp_player","itm_book_of_moria",0),
-			(try_begin),
-				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-				(str_store_string, s12, "@Get book." ),
-				(jump_to_menu,"mnu_moria_must_escape"),
-				(finish_mission),
-			(else_try),
-				(str_store_string, s12, "str_empty_string"),
-			(try_end),
-	  ]
-	  ,"Get the book"),
       
 	  ##Kham - Player Initiated Siege BEGIN
 	  ("player_castle_initiate_siege",
@@ -8849,7 +8852,16 @@ game_menus = [
     [
        # stub menus to make passage 2 lead to castle
 	   ("town_menu_0",[(eq,0,1),],"Go to some location.",
-       [], "Door to some location."),
+       [(try_begin),
+            (eq, "$current_town", p_town_moria),
+            (display_message, "@The tomb is destroyed. A fierce fight took place here."),
+            (party_slot_eq, "$current_town", slot_exploration_point_1, 0),
+            (add_xp_as_reward, 500),
+            (party_set_slot, "$current_town", slot_exploration_point_1, 1),
+        (else_try),
+            (display_message, "@Nothing of interest"),
+        (try_end),            
+       ], "Inspect..."),
 
        ("town_approach",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
           (this_or_next|eq,"$entry_to_town_forbidden",0),

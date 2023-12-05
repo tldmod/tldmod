@@ -1,4 +1,4 @@
-1983
+1985
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2023-12-05_20:11___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2023-12-05_21:01___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1279,9 +1279,9 @@ qstr__This_castle_seems_t _This_castle_seems_to_belong_to_no_one.
 qstr__Your_own_banner_flie _Your_own_banner_flies_over_the_town_gates.
 qstr__You_see_the_banner_o _You_see_the_banner_of_{s7}_over_the_town_gates.
 qstr__The_townsfolk_here_ _The_townsfolk_here_have_declared_their_independence.
+qstr_Get_book. Get_book.
 qstr_Go_to_the_secret_ent Go_to_the_secret_entrance_to_Moria
 qstr_Search_for_a_secret_ Search_for_a_secret_entrance_to_Moria
-qstr_Get_book. Get_book.
 qstr_The_{reg6?town_s:cas The_{reg6?town's:castle's}_food_stores_should_last_for_{reg3}_more_days.
 qstr_The_{reg6?town_s:cast The_{reg6?town's:castle's}_food_stores_have_run_out_and_the_defenders_are_starving.
 qstr_You_re_preparing_to_ You're_preparing_to_attack_the_walls,_the_work_should_finish_in_{reg9}_hours.
@@ -1301,6 +1301,8 @@ qstr_Luckily_some_of_your Luckily_some_of_your_companions_came_to_search_for_you
 qstr_Luckily_some_passing Luckily_some_passing_locals_found_you_lying_in_the_ditch,_and_recognised_you_as_someone_other_than_a_simple_beggar._They_carried_you_to_safety_and_dressed_your_wounds.
 qstr_{s29} {s29}
 qstr_{s13}^^You_have_succ {s13}^^You_have_successfully_sneaked_in.
+qstr_The_tomb_is_destroye The_tomb_is_destroyed._A_fierce_fight_took_place_here.
+qstr_Nothing_of_interest Nothing_of_interest
 qstr_the_place the_place
 qstr_the_castle the_castle
 qstr_the_Throne_Room the_Throne_Room
