@@ -12368,7 +12368,7 @@ game_menus = [
     "none",
 	code_to_set_city_background + [
 	(try_begin),
-		(eq, "$g_encountered_party", "p_town_isengard"),
+		(eq, "$g_encountered_party", "p_town_isengard"), (faction_slot_eq,"$players_kingdom", slot_faction_side, faction_side_good),
 		(str_store_string, s2, "@flooded. Somebody or something must have ruined the Isen dams."),
 	(else_try),
 		(str_store_string, s2, "@destroyed. Only smoldering ruins remain."),
@@ -12376,7 +12376,8 @@ game_menus = [
 	(party_get_slot, ":elder_troop", "$g_encountered_party", slot_town_elder),
 	(str_store_troop_name_plural, s1, ":elder_troop"), # elders store place referral, "trp_no_troop" stores "the_place"
     ],
-    [("ruin_menu_0",[(eq, "$g_encountered_party", "p_town_isengard")],"Explore the place.",[
+    [("ruin_menu_0",[(eq, "$g_encountered_party", "p_town_isengard"),(faction_slot_eq,"$players_kingdom", slot_faction_side, faction_side_good),],
+    "Explore the place.",[
 	    (modify_visitors_at_site,"scn_isengard_center_flooded"),
         (reset_visitors),
         (set_visitor, 1, "trp_player"),
