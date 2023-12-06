@@ -5,9 +5,10 @@ MODE CON: COLS=110
 ::convert everything to Joomla INI format
 luajit tx.lua convert
 
-::push our latest strings to the web
-::tx push --source --resources tld.item_kinds,tld.troops --use-git-timestamps
-::tx push -s -t -f --skip --no-interactive
+::push our latest strings to the web (uncomment the first line and comment out the `tx pull` and three italian lines below before running it)
+::tx push --source --use-git-timestamps
+::tx push --source --use-git-timestamps --resources tld.item_kinds,tld.troops
+::tx push -s --skip --no-interactive
 ::tx push -s -t -f --skip --no-interactive
 ::tx push -t -l sv --skip --no-interactive
 ::tx push -t -l zh-Hant --skip --no-interactive
