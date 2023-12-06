@@ -1094,14 +1094,14 @@ trp_beorn_lord|Chief Grimbeorn the Old
 trp_beorn_lord_pl|Chief
 trp_lorien_marshall|Celeborn
 trp_lorien_marshall_pl| 
-trp_pippin_notmet|halfling
-trp_pippin_notmet_pl| 
-trp_merry_notmet|halfling
-trp_merry_notmet_pl| 
-trp_pippin|Pippin
-trp_pippin_pl| 
-trp_merry|Merry
-trp_merry_pl| 
+trp_pippin_notmet_old|halfling old
+trp_pippin_notmet_old_pl| 
+trp_merry_notmet_old|halfling old
+trp_merry_notmet_old_pl| 
+trp_pippin_old|Pippin old
+trp_pippin_old_pl| 
+trp_merry_old|Merry old
+trp_merry_old_pl| 
 trp_knight_1_1|Angbor the Fearless
 trp_knight_1_1_pl| 
 trp_knight_1_2|Húrin of the Keys
@@ -1968,5 +1968,21 @@ trp_a5_dism_elite_skirmisher_of_rohan|Elite Skirmisher of Rohan
 trp_a5_dism_elite_skirmisher_of_rohan_pl|Elite Skirmishers of Rohan
 trp_ac5_camel_rider|Harad Camel Rider
 trp_ac5_camel_rider_pl|Harad Camel Riders
+trp_aragorn|Aragorn
+trp_aragorn_pl| 
+trp_legolas|Legolas
+trp_legolas_pl| 
+trp_gimli|Gimli
+trp_gimli_pl| 
+trp_stub1|BUG
+trp_stub1_pl|BUG
+trp_pippin_notmet|halfling
+trp_pippin_notmet_pl| 
+trp_merry_notmet|halfling
+trp_merry_notmet_pl| 
+trp_pippin|Pippin
+trp_pippin_pl| 
+trp_merry|Merry
+trp_merry_pl| 
 trp_last|BUG
 trp_last_pl|BUG
