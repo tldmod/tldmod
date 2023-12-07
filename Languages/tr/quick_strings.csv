@@ -578,6 +578,22 @@ qstr_Thank_you_Mithrandir|Teşekkürler, Mithrandir!
 qstr_The_wizard_Saruman_i|Saruman gitti ve Barad Dur karanlık Lord'la birlikte toz haline geldi! Orta Dünya'daki tüm insanlar, onların bu dünyadaki iyi ve saf olan her şeyi neredeyse yok edecek olan ölümcül tehdidinden kurtuldular. Düşman yenildi ve Kral geri döndü!
 qstr_It_was_a_long_and_bl|Bu uzun ve kanlı bir savaştı ve yakın arkadaşlarımızın çogu artık bizlerle degil.
 qstr_There_is_much_to_reg|Çok fazla pişmanlık ve yas var, önümüzdeki günlerde, yeniden inşa etmek ve onarmak için çok fazla şey var. Ancak şu an için, hala sahip oldugumuz arkadaşlarımızın degerini bilelim ve Üçüncü Çagın Son Günlerinde elde ettigimiz başarılarımızı kutlayalım.
+; qstr_Orcs_are_marching_ag|Orcs are marching against Helm's Deep.
+; qstr_Orcs_are_marching_aga|Orcs are marching against Edoras.
+; qstr_Ah_{playername}_happ|Ah, {playername}, happy chance that we come on each other in this fashion! Grim tidings I bring from Western Rohan, and haste is sore needed.
+; qstr_What_tidings_do_you_|What tidings do you bring, Mithrandir? What can I do?
+; qstr_Saruman_has_loosed_I|Saruman has loosed Isengard upon Rohan. {s1} For the success of my designs, the valiant Rohirrim must not fall, {playername}! The danger to them is very great, yet also the emptying of Isengard has left it vulnerable, for Saruman has despatched his full strength against Theoden King. This may be the time to move into Nan Curunir. A choice is now laid before you, Commander, a choice you must make, for neither you nor I may be everywhere at once!
+; qstr_Do_you_want_me_to_he|Do you want me to help King Theoden defend {s3}, or hasten to Isengard and see what I can do?
+; qstr_Either_would_be_a_gr|Either would be a great boon to me. You must decide your course on your own, {playername}, as shall I. Shadowfax shall bear me now on a swift errand. You must act quickly as well! Hasten now!
+; qstr_Gandalf_asked_you_to|Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard.
+qstr_Ents|Agaç Adamlar
+; qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope.
+; qstr_Missing_String|Missing String
+; qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
+; qstr_Hail_{playername}!_I_|Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!
+; qstr_Your_deed_has_greatl|Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!
+; qstr_{Playername}_I_will_|{Playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
+; qstr_You_have_failed_me_{|You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not.
 qstr_Bagginsssss..._Ssssh|Bagginsssss... Sssshhhire...
 qstr_I..._don_t_know!|Ben... bilmiyorum!
 qstr_It..._beckonsssssss.|O... çagırıyoooor...
@@ -596,8 +612,11 @@ qstr_The_forces_of_{s2}_m|{s2} kuvvetleri {s15}'a ileri marş!
 qstr_Rohan_capital_moved_|Rohan'ın Başkenti Edoras'tan Migferdibi'ne taşındı!
 qstr_Dale_capital_moved_f|Dale başkenti Dale'den Esgaroth'a taşındı!
 qstr_Gundabad_capital_mov|Gundabad'ın Başkenti Gundabad'dan Goblin Kasabası'na taşındı!
+; qstr_You_have_breached_th|You have breached the Ring of Isengard with the help of the Tree Men. During the battle, Isengard was flooded, but Orthanc still stands unscathed in midst of the havoc. You should investigate the aftermath.
 qstr_The_hosts_of_{s2}_re|{S2} 'nin ev sahipleri evlerine geri çekiliyorlar!
 qstr____Ruins_of_{s1}___|{s1} Harabeleri
+; qstr_{s1}_has_joined_the_|{s1} has joined the Hand
+; qstr_{s1}_has_joined_the_E|{s1} has joined the Eye
 qstr_ranks|rütbeler
 qstr_shield_wall|kalkan duvarı
 qstr_wedge|takoz
@@ -663,6 +682,9 @@ qstr_loses_Faction_Strength|Yıkıcı baskın nedeniyle Taraf Kuvveti kaybedilir
 qstr_loses_Faction_Strength_|denizdeki başarılarından dolayı Taraf Kuvveti kaybetti.
 qstr_You_spent_{reg67}_of|{s1} 'e olan etkinizin {reg67} kadarını kullandın, {reg66} kaldı.
 qstr_{s2}_{reg3?was:is_ar|{S2} {reg3?oldu: {S5} civarındadır.
+; qstr_Army_of_{s6}|Army of {s6}
+; qstr_Host_of_{s6}|Host of {s6}
+; qstr_The_host_of_Isengard|The host of Isengard has razed {s2}!
 qstr_{s1}_{s0}|{S1}, {s0}
 qstr_{s1}_and_{s0}|{s1} ve {S0}
 qstr_No_Troops_Left.|hiç birlik kalmadı.
@@ -725,6 +747,7 @@ qstr_You_shapeshift_into_|Bir ayıya dönüştün!
 qstr_You_got_{reg1}_exper|Ayı şeklindeyken {reg1} kadar tecrübe kazandın
 qstr_Your_ability_to_chan|Şekil degiştirme yetenegin tezahür etti, bundan böyle yabani yollarda hem insan hem de ayı olarak gezebilirsin.
 qstr_You_change_back_to_h|İnsani şekline geri döndün...
+; qstr_Refill_Ammunition|Refill Ammunition
 qstr_Your_mount_stumbles!|Bineginiz tökezliyor! Sakatlanmış gibi görünüyor.
 qstr_Bitten_by_your_own_w|Kendi wargın tarafından ısırıldın
 qstr_You_weigh_too_much_f|Bir midilli için çok agırsın
@@ -1041,6 +1064,8 @@ qstr_You_have_fallen._The|Düştün. Haydutlar bulabilecekleri degerli eşyalar 
 qstr_Luckily_some_of_your|Neyse ki yoldaşlarınızdan bazıları, dönmediginiz için sizi aramaya geldi ve sizi hendekte yatarken buldular. Sizi güvene alıp yaralarınızı sardılar.
 qstr_Luckily_some_passing|Neyse ki, geçen yerliler sizi hendekte yatarken buldular ve sizi basit bir dilenciden başka birisi oldugunuzu anladılar. Sizi güvenli bir yere götürüp yaralarınızı sardılar.
 qstr_{s13}^^You_have_succ|{s13}^^Başarıyla sızdın.
+; qstr_The_tomb_is_destroye|The tomb is destroyed. A fierce fight took place here.
+; qstr_Nothing_of_interest|Nothing of interest
 qstr_the_place|yer
 qstr_the_castle|kale
 qstr_the_Throne_Room|Taht Odası
@@ -1112,8 +1137,6 @@ qstr_Breaking_camp...|Kamp kaldırılıyor...
 ; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
 ; qstr_Desertion|Desertion
 ; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
-; qstr_You_don_t_have_enoug|You don't have enough troops to guard all your prisoners. Their chance of escaping is increased.
-; qstr_{s1}_has_escaped_fro|{s1} has escaped from your party.                                                           
 qstr_You_have_left_{s1}.|{s1} 'dan ayrıldın 
 qstr_You_are_entering_{s1|({s2}) {s1} civarına giriyorsun.
 qstr_You_are_entering_{s1}|{s1} civarına giriyorsun.
@@ -1247,6 +1270,8 @@ qstr_Ask_him_if_he_has_an|Hiç fazladan geriye pipo otu kalıp kalmadıgını so
 qstr_Tell_him_I_ll_be_the|Bir daha görüştügümüzde ona daha uzun boylu olacagımı söyle!
 qstr_Ask_if_he_s_seen_Gan|Ona Gandalf'ı görüp görmedigini sorun!
 qstr_You_gained_250_exper|250 Tecrübe puanı kazandın.
+; qstr_Hrooom..._Hmmm...Who|Hrooom... Hmmm...Who are you?
+; qstr_Hrooom..._Hmmm...Oh_|Hrooom... Hmmm...Oh, it's you again, {playername}.
 qstr_Treebeard_wants_you_|Agaçsakal, Fangorn'da agaçları kesen orkları bulmanı ve yok etmeni istiyor.
 qstr_Something_wrong_not_e|Bir şeyler yanlış, burada bir izci grubu için yeteri kadar asker yok
 qstr_my_home_town|benim memleketim
@@ -1470,8 +1495,8 @@ qstr_I_want_you_and_your_|Seni ve adamlarını öldürme görevi için istiyorum
 qstr_{playername}_you_nee|{playername}, saygımı ve adamlarının saygısını kazanmalısın. {s6} {reg22} {s7} birlikleri!
 qstr_{s9}_wants_you_to_per|{s9} senden bizzat {reg22} {s6} kadar birligi öldürmeni istiyor.
 qstr_{s9}_wants_you_and_y|{s9} sen ve adamlarından {reg22} {s6} kadar birligi öldürmeni istiyor.
-qstr_{playername}_we_have_|{playername}, acımasız haberler aldık. Umbar Korsanları gittikçe daha cesurlaşıyor ve biz konuşurken bile {s6} yakınlarında bir filo toplanıyor. Zaten kıyı şeridi boyunca ilerliyorlar ve yakında şehrede ineceklerdir.^^ Filoya şehre ulaşmadan müdahale etmeliyiz. {s6} tarafına dogru acele edin ve yerel yetkililerle konuşun.
-qstr_{playername}_we_have_r|{playername}, acımasız haberler aldık. Rhûn'un vahşileri düşündügümüzden daha kurnaz ve cesur çıktı - İzcilerimize görülmeden, Uzun Göl boyunca onları taşımak için yeterli sayıda tekne ve sal inşa ettiler ve dogrudan Esgaroth'ta saldırıyorlar!^^ Filoya şehre ulaşmadan müdahale etmeliyiz. Birliklerini olabildigince çabuk sür ve barbarları su boyunca kovala!
+qstr_{playername}_we_have|{playername}, Isengard hemen ayaklarımızın ucunda yer alıyor. Son savunma hatlarını kurdular ve Saruman'ı kulesinde koruyorlar. Benimle gel ve yüzleşelim!
+qstr_{playername}_we_have_|{playername}, acımasız haberler aldık. Rhûn'un vahşileri düşündügümüzden daha kurnaz ve cesur çıktı - İzcilerimize görülmeden, Uzun Göl boyunca onları taşımak için yeterli sayıda tekne ve sal inşa ettiler ve dogrudan Esgaroth'ta saldırıyorlar!^^ Filoya şehre ulaşmadan müdahale etmeliyiz. Birliklerini olabildigince çabuk sür ve barbarları su boyunca kovala!
 qstr_If_you_seek_pillage_|Eger talan ve yagma arıyorsan, işte eşsiz bir fırsat, {playername}.^^  {s7} limanından bir Korsan filosu kalkıyor, ve dogrudan {s6} için bir rota belirleyecek, ki yolmak için pek olgunlaşmış bir yer! Saldırılarında onlara katıl ve ganimetlerden pay kap!
 qstr_The_soft_weaklings_o|Esgaroth'un yumuşak karınlıları hızlı atlılarımız ve vahşi savaşçılarımız karşısında bir hiç, {playername}. Bu baya bilinen bişey. Göl insanları kendilerini güvende sanıyorlar, bizden uzak suyun karşısında,ama yakında onlara öyle olmadıgını gösterecegiz!^^ Savaşçılarımızı direk göl üzerinden taşıyacak kadar iyi tekneler ve sallar yaptık. Bizi orda beklemeyecekler! ^^Ana Kampa git ve saldırıya katılmak istiyorsan kamp komutanıyla konuş.
 qstr_{s9}_asked_you_to_he|{s9} sizden bir Korsan baskınına karşı {s3} bölgesini savunmasına yardım etmenizi istedi. Şehre acele edin, lonca ustasıyla konuşun ve yerel garnizonun yardımına yetişin.

@@ -291,7 +291,7 @@ menu_town_brawl_won|^^^^^Hai battuto tutti gli avversari e le guardie hanno ripo
 menu_close|Niente.
 menu_town|Sei arrivato a: {s60}.{s12}{s13}
 mno_town_menu_0|Vai da qualche parte.
-mno_town_menu_0_door|Porta che conduce verso un luogo.
+mno_town_menu_0_door|Ispeziona....
 mno_town_approach|Vai verso {s1}...
 mno_town_castle|Raggiungi {s1}.
 mno_town_castle_door|Portone del castello.
@@ -387,9 +387,6 @@ mno_defend_refugees|Tieni gli occhi aperti per i razziatori...
 mno_attack_refugees|Attacca la carovana di profughi...
 mno_leave_refugees|Lasciamoli, per il momento...
 mno_evil_war_tut_continue|Continua...
-menu_guardian_party_quest|{s8} riferisce che Isengard li sta mettendo alle strette e ha preparato la sua ultima resistenza. Desidera che tu ti unisca a questa battaglia finale contro gli eserciti di Isengard. Dovrai portare con te almeno {reg13} soldati, hai ricevuto ordini per cui dovrai reclutare altri combattenti se non ne disponi a sufficienza.
-mno_guardian_party_reject|Invia un messaggio dicendo che non puoi raggiungerlo.
-mno_guardian_party_send_word|Fagli sapere che presto ti unirai a lui.
 menu_alternate_training_fight|Affronterai {reg5} avversari. Iniziamo?
 mno_training_continue|Inizio addestramento...
 menu_alternate_training_conclusion|{s5}
@@ -443,6 +440,8 @@ menu_death|Sei stato ucciso. Anche se la guerra continua ad infuriare, tu non po
 menu_animal_ambush|Tu e i tuoi compagni vi trovate separati dal resto della compagnia, quando improvvisamente...
 menu_animal_ambush_success|I {s2} {reg0?cadono:cadono} davanti a te come spighe di grano sotto la falce ! In poco tempo tutti i tuoi nemici giacciono sul terreno, morti o feriti. {s3}
 menu_animal_ambush_fail|Le bestie mordono e feriscono te {reg0?,: e i tuoi compagni{reg2?,:,}} ma fortunatamente riuscite a respingerli. Forse non vi attaccheranno ancora.
+menu_isengard_flooding|^^^^^@Ti trovi in mezzo ai cadaveri dei nemici e agli alleati trionfanti, inclusi gli Ent; essi ruggiscono, rimbombano facendo risuonare le loro voci, fin quando le pietre della torre di Orthanc non si frantumano cadendo. Risuonano come un'ululante tempesta che rompe pilastri, scaglia valanghe di massi lungo i pozzi, lancia enormi lastre di pietra in aria come fossero foglie... Non assomiglia a nulla che tu abbia visto prima.^^ Bregalad - o Sveltolampo come a te è noto - ti raggiunge a grandi passi e si ferma per avvertirti, '{playername} ! Fa attenzione ! Allontanati dalla Torre - ben presto diroccheremo la diga e faremo irrompere l'Isen in questa vallata, per un certo tempo. Troverai arduo rimanere qui, credo!' Segui rapidamente il suo consiglio e ti allontani da Orthanc.^^ Verso mezzanotte Isengard comincia ad essere invasa dalle acque formando inquietanti pozze nere. Non puoi fare a meno di rabbrividire alla vista dei fumi che formano altissime colonne, mentre una grande spirale di vapore si alza serpeggiando avvolgendo la Torre, fino a quando assume la somiglianza di un elevato strato di nubi, con la parte di sotto infuocata e quella superiore illuminata dalla luna. L'ira degli Ent è lenta, ma dotata di una potenza inesorabile.
+mno_isengard_continue|Continua
 menu_build_your_scene|Qui puoi costruire il tuo scenario di battaglia personalizzato, usando una delle slot qua sotto e l'Editor del gioco (Devi prima togliere il flag dal quadratino "Edit Mode" nelle opzioni del launcher di M&B).^Poi, puoi verificare gli scenari che hai costruito (con estensione .sco dalla cartella TLD/SceneObj) e inviarli al team di sviluppo di TLD e, se la tua scena risultasse valida, potrà essere inclusa nelle prossime versioni della mod come contesto di una battaglia !^^ Prova anche a specificare in quale regione della mappa vuoi che la tua scena appaia.^ Un paio di suggerimenti: Cerca di evitare di inserire acque troppo profonde, montagne troppo grandi o appuntite e altri sentieri in cui non si può passare, eccetto se sei uno sceneggiatore con molta esperienza e sai come cambiare l'AI delle truppe per non andare in un posto dove non vuoi che vadano, e quindi imporre alla IA di prendere altre direzioni.^ (Gruppi #0-1 sono per gli attaccanti, #4 per i difensori, non toccare #5-8).
 mno_scene1|Grande Pianura (file scn custom 1.sco)
 mno_scene2|Pianura Media (file scn custom 2.sco)

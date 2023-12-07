@@ -39,6 +39,25 @@ dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Hello, Pippin mester. Levelet
 dlga_hobbit_deliver_message:close_window|Köszönöm, {playername}. Kedves volt tőled hogy elhoztad nekem.
 dlga_hobbit_merry_talk_met:close_window|Üdv, Trufa mester.
 dlga_hobbit_pippin_talk_met:close_window|Üdv, Pippin mester.
+; dlga_start:hd_defense_01|It is well that you are here, {playername}. My name is Aragorn, son of Arathorn, and I am the Heir of Isildur – see, here is Anduril, the Flame of the West, which I bear in battle. The Blade that was Broken shines again! It will not be long before Saruman’s forces reach these walls. I ask you now to lend me your aid and defend the Rohirrim, for the honour of the Lord of the Mark. Let this be the hour when we draw swords together!
+; dlga_start:hd_defense_01.1|Mae lovannen! Things here look ill, {playername}, but less ill now that you are here with us! Gellon len covad. I am Legolas of Mirkwood, and though I do not much like this place I like the approaching hordes of Saruman even less. What would I give for a hundred more of my kin here! There are too few of us, too few. We shall need your aid, Commander, though we may be but a few leaves in the forest. Come, let me show you where our bows will be of the most use…
+; dlga_start:hd_defense_01.2|Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazaˆd! Khazaˆd ai-meˆnu!
+; dlga_hd_defense_01:close_window|Now, let us rest for a while. The enemy will be here by nightfall.
+; dlga_start:aragorn_thanks_hd|{playername}, I am glad to see you live still. The men are weary with battle, but thanks to you they see the dawn of a new day. The hillmen have given themselves up, and they shall be put to work to repair the evil which they have joined, after which I hope they will return to their own lands. They were easily deceived by Saruman, for much was taken from them, and much remains to be given back; we shall have to see what can be done for them later.
+; dlga_aragorn_thanks_hd:close_window|I hope our paths may cross again, {playername}. I bid you farewell now, for I ride on an errand most urgent. With the first light of morning we must go, my friends and I, and take a dark road out of this valley. {playername}, the times are evil, but your valour gladdens the hearts of all free peoples everywhere, from the North to the South. Fight well, and we may meet again beyond the shadows!
+; dlga_start:close_window.1|In a little while I take the road again, {playername}, a hard road untrodden by many for uncounted years. I hope your path is easier than mine, friend. In the meantime, perhaps you may wish to go into the deep Caverns of Helm's Deep, of which my companion Gimli the Dwarf has spoken much.
+; dlga_start:close_window.2|Have you yet been to the caves in the back? The Glittering Caves of Aglarond, {playername}! Happy is the chance that has led your footsteps here!
+; dlga_start:close_window.3|I have pledged to my friend Gimli Gloin's son that when the war is over, I shall return here with him and see the Glittering Caves of Aglarond for myself. If you have the time, {playername}, you could do this before you go on your way again. A brief respite from all the fighting!
+; dlga_start:treebeard_isengard_1|{s2} Ha, hmmm! Welcome, friends! Your arrival is timely. I have a Wizard to manage here, but first, we must nail him down in his tower. This will be a nasty business. Rock, axe and fire await us inside. Will you help us?
+; dlga_treebeard_isengard_1:treebeard_isengard_2|Yes, Gandalf sent me. Let us storm the Ring of Isengard!
+; dlga_treebeard_isengard_2:close_window|Very well, follow me then. We have already breached the Ring. Now, let us clean up inside! Hoom, hom! Hoom, hom! To Isengard with doom we come! With doom we come, with doom we come!
+; dlga_start:close_window.4|Hoom, hom! Hoom, hom! To Isengard with doom we come! With doom we come, with doom we come!
+; dlga_start:close_window.5|Thank you for your help. I must say it was quite satisfying to manage those Orcs. You were of great help to us. But now, hm, we have work to do that you cannot help with. You should maybe find a safe spot outside Isengard and wait until we are finished.
+; dlga_start:treebeard_isengard_3|Hello again. It is good to see you safe and dry. I must say it will take a long while to flush all of Saruman's filth away. But we’ve done quite well, hmm, yes. He will do no more harm.
+; dlga_treebeard_isengard_3:close_window|Ho, hmm, I owe you great thanks. I had not expected any help from others, and it is good to learn that our Last March may not end quite so badly, after all! Since the tree-killer is dealt with, we should now be able to keep Rohan's northern marches safe, for a while.
+; dlga_treebeard_isengard_3:close_window.1|Hmm? Ho, hmm… ah. So, you have come all the way from Rohan, have you? Hmm. I have heard some news from the south, yes. Good news, news to gladden all hearts. I have good will to Theoden King, and I am glad he was aided by the likes of you in his hour of peril, hmm! We have managed here well enough, and now we Ents will see to it that Saruman does not set foot beyond Isengard, without our leave. The Isen flows well again, and soon I hope the water will once more be fit to drink. Ha, hm, I feel a song coming on. A song of the old days… the old trees I knew…
+; dlga_start:ent_encounter|Hrooom! What do you want?
+; dlga_ent_encounter:close_window|Hail, tree shepherd! Thank you for keeping these marshes safe. I will not stand in your way.
 dlga_start:treebeard_introduce_1|(Rádöbbensz hogy most egy igazán rendkívüli teremtményt bámulsz. Nagyon magas és merev lábú, kéregszerű bőrrel és lomb hajjal. Moha is található teste egyes részein. De jelenleg egyiket sem veszed észre ezekből, csak a szemeit. A mély szemei felmérnek téged, lassan és ünnepélyesen, de nagyon élesen és áthatóan. Azt hiszed hogy barnák, zöld fénnyel burkolva, mintha egy hatalmas kút lenne mögöttük, megtelve évszázadok emlékeivel és hosszú, lassú, szilárd gondolkodással. De a felszínen a szemei a jelennel csillognak... mint ahogy a nap csillog a fa külső levelein, vagy a nagyon mély tó hullámain.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(Mondani akarnál valamit, de egy furcsa, fojtogató érzés fog el ahogy a levegő túl léghiányos vagy túl híg lesz ahhoz, hogy lélegezni lehessen... egy már-már kétségbeesett légvétellel sikerül leráznod magadról az érzést és a hatalmas fajellegű lény egy kicsit kevésbé bámul rád hevesen. A teremtmény továbbra is téged néz, és észreveszed hogy a többi, hatalmas fa lény is téged figyel, mintha arra számítanának, hogy megszólalsz...)
 dlga_treebeard_introduce_2:treebeard_introduce_3|Bocsássa meg a tolakodásomat... Csak egy megviselt utazó vagyok, aki menedéket keres a mostanában történtek elől... Az én nevem {playername}. Megkérdezhetem, hogy ki is vagy te?
@@ -60,13 +79,13 @@ dlga_treebeard_about_himself:treebeard_pretalk.1|Burárum... A fajtám legidőse
 dlga_treebeard_about_entwives:treebeard_pretalk|(Az Entek vezetője hirtelen szomorú kifejezést ölt magára, és hangja szokatlanmód elmélyül.)^'Burárum... Ez egy szomorú történet... ahogy az erdő megtisztul az orkoktól még beszélgethetünk erről.'
 dlga_treebeard_about_entwives:treebeard_pretalk.1|Ahum... a gyönyörű entasszonyok... szerettek ültetni és növekedni... többet kellett volna rájuk hallgatnunk... burárum... aztán elmentek a Barnaföldekre hogy kerteket ültessenek és hogy megtanítsák a halandókat hogyan tegyék a földet termővé... néha meglátogattuk őket... ameddig... Szauron nem támadt... az entasszonyok most már elvesztek... hmm... Fimbrethil... olyan színe volt mint az érett búzának.... kerestük őket... de nem találtuk meg őket... még...
 dlga_treebeard_about_ents:treebeard_pretalk|Burárum... mi vagyunk a fák pásztorai, és mi védjük meg őket a veszélyektől. Idősebbek vagyunk mint bármely más halandó faj, de nem idősebbek mint a tündék, akik kigyógyítottak minket a némaságból. Sok minden változott az idők során. Kezdetekben hamaribbak voltunk és rugalmasabbak. Ahogy telt az idő sokunk elveszett. Néhányunk megmaradt igazi entnek, és eléggé élők maradtak, a magunk módján, de sokunk álmos lett, és fás lett, ha mondhatom így. A legtöbb fa nem több, mint fa, persze; de sokuk félig ébren van. Néhányuk teljesen ébren van, és egy pár, nos, ah, kezdenek entesek lenni. Mindig is így volt. Amikor ez megtörténik, rájössz hogy némelyiknek rossz szíve van. Ennek ellenére, megteszünk minden tőlünk telhetőt. Távol tartjuk az idegeneket és a bolondokat; gyakorlunk és tanítunk, sétálunk és gyökeret eresztünk. 
-dlga_start:close_window.1|Mmmmm?
-dlga_start:close_window.2|Mmhhrmmm?
-dlga_start:close_window.3|Mmmrhrrhmm?
+dlga_start:close_window.6|Mmmmm?
+dlga_start:close_window.7|Mmhhrmmm?
+dlga_start:close_window.8|Mmmrhrrhmm?
 dlga_start:looters_2_join|Hajolj meg a/az {s4} ereje előtt és szolgálj engem!
 dlga_looters_2_join:close_window|Engedelmeskedünk, Mester.
-dlga_start:close_window.4|^^MORGÁS!^^
-dlga_start:close_window.5|^^MORGÁS!^^
+dlga_start:close_window.9|^^MORGÁS!^^
+dlga_start:close_window.10|^^MORGÁS!^^
 dlga_start:member_castellan_talk|Igen, {playername}? Mit tehetek érted?
 dlga_member_castellan_pretalk:member_castellan_talk|Volna még más is?
 dlga_member_castellan_talk:member_review_castle_garrison|Ellenőrizni akarom a kastély helyőrségét.
@@ -109,8 +128,8 @@ dlga_member_question_2:member_health|Hogy szolgál az egészséged?
 dlga_member_question_2:member_background_recap|Meséld el megint a történeted.
 dlga_member_background_recap_3:do_member_trade|Aztán, nem sokkal később, csatlakoztam hozzád.
 dlga_do_member_view_char:member_talk|Volna még más is?
-dlga_start:close_window.6|Menjünk ahogy készen állsz.
-dlga_start:close_window.7|Kérlek ne pazarold ma már többet az időmet. Talán még találkozunk. 
+dlga_start:close_window.11|Menjünk ahogy készen állsz.
+dlga_start:close_window.12|Kérlek ne pazarold ma már többet az időmet. Talán még találkozunk. 
 dlga_companion_recruit_signup_response:close_window|Sajnálatos módon nem tudok több kezet alkalmazni a csapatomban.
 dlga_companion_recruit_rank:close_window|Úgy tűnik nem vagy eléggé megbecsült az embereim által, {playername}. Te egy {s29} vagy és neked {s24} kell lenned ahhoz, hogy csatlakozzak hozzád [{reg3} rang pontra van szükséged ehhez].^Beszéljünk erről újra, miután már megbecsültebb leszel.
 dlga_companion_recruit_rank:companion_recruit_payment.1|Örömmel látom hogy {s29} rangúvá váltál, és már alig várom hogy csatlakozhassak hozzád.
@@ -214,7 +233,7 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|Ne támadj! Megadjuk m
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|A végsőkig harcolni fogunk!
 dlga_party_encounter_offer_dont_fight:close_window|Tartozok neked egyel, nemde. Nos... jól van, legyen. Elengedlek, most az egyszer.
 dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha. De én harcolni akarok veled.
-dlga_start:close_window.8|El veled, hitvány koldus.
+dlga_start:close_window.13|El veled, hitvány koldus.
 dlga_start:lord_start|Ez csak nem az én bátor bajnokom, {playername}...
 dlga_start:lord_start.1|Jó újra látni téged, {playername}...
 dlga_start:lord_start.2|Újra találkoztunk, {playername}...
@@ -628,7 +647,7 @@ dlga_start:castle_guard_players|Az utasításai, Parancsnok?
 dlga_castle_guard_players:close_window|Nyisd ki az ajtót. Bemegyek.
 dlga_castle_guard_players:close_window.1|Hagyjuk.
 dlga_start:castle_guard_sneaked_intro_1|Takarodj a szemem elől, koldus! Bűzlesz!
-dlga_start:close_window.9|Takarodj el mielőtt elvesztem a hidegvérem, te hitvány koldus!
+dlga_start:close_window.14|Takarodj el mielőtt elvesztem a hidegvérem, te hitvány koldus!
 dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|Beakarok menni, hogy beszélhessek az úrral.
 dlga_castle_guard_sneaked_intro_1:close_window|[Távozás]
 dlga_castle_guard_sneaked_intro_2:close_window|Elvesztetted a józan eszedet, {ember/asszony}? Koldusok nem léphetnek be a csarnokba. Most pedig takarodj mielőtt véresre verlek.
@@ -722,8 +741,8 @@ dlga_hungry_orc_choice:hungry_orc_no_check|Semmi esetre sem. Egyik emberemet sem
 ; dlga_sad_elf_choice:sad_elf_leave|I feel your pain. You have done your share in this war. You may leave.
 ; dlga_sad_elf_choice:sad_elf_no|The Elves must not abandon Middle-earth to the shadow. This war we fight not for ourselves and each of us will have to play their role. I cannot give you leave. [Leadership Check]
 ; dlga_sad_elf_leave:close_window|Thank you, my {lord/lady}!^^To the Sea, to the Sea! The white gulls are crying,^The wind is blowing, and the white foam is flying.^West, west away, the round sun is falling.
-dlga_start:close_window.11|Pont időben érkeztél. Egyesítsük most erőinket és tanítsuk móresre az ellenfelet.
-dlga_start:close_window.12|Nagy hibát követsz el azzal hogy ellenünk fordultál.
+dlga_start:close_window.16|Pont időben érkeztél. Egyesítsük most erőinket és tanítsuk móresre az ellenfelet.
+dlga_start:close_window.17|Nagy hibát követsz el azzal hogy ellenünk fordultál.
 dlga_start:ally_thanks_meet|Nem hiszem hogy megfelelően bemutattak volna minket egymásnak ezelőtt, barátom. Épp az előbb mentetted meg az életemet, és nem tudom még a nevedet se...
 dlga_start:ally_thanks_meet.1|A segítségét szívesen látjuk idegen. Az én nevem {s1}. Megtudhatom az önét?
 dlga_start:ally_thanks_meet.2|Köszönöm a segítségét, idegen. Még nem mutatkoztunk be egymásnak megfelelően, nemde? Hogy hívják?
@@ -731,13 +750,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|Az én nevem {playername}.
 dlga_ally_thanks_meet_2:close_window|Igazán örvendek a találkozásnak {playername}. Az én nevem {s1} és örökké az adósa leszek. Ha lesz valaha is valami, amiben segíthetek, csak szóljon...
 dlga_ally_thanks_meet_2:close_window.1|Örvendek a találkozásnak {playername}. Az adósa vagyok, ezek után amit tett. Remélem egy nap majd visszatudom fizetni.
 dlga_ally_thanks_meet_2:close_window.2|Örvendek a találkozásnak {playername}. Én {s1} vagyok. Köszönöm a segítséged, és remélem a jövőben még találkozunk.
-dlga_start:close_window.13|Már megint kihúztál minket a csávából, {playername}! Őszintén, te vagy a legjobb barát. {s43}
-dlga_start:close_window.14|Pont az utolsó pillanatban érkeztél, {playername}! Hálás köszönetem! {s43}
-dlga_start:close_window.15|Pont időben érkezett, {playername}. Nem fogom elfelejteni hogy segített. {s43}
-dlga_start:close_window.16|Jó téged itt látni, {playername}. {s43}
-dlga_start:close_window.19|Köszönöm a segítséged, Parancsnok. Megmentetted az {reg1?életünk:életem} az előbb.
-dlga_start:close_window.20|Köszönöm a segítséged, Parancsok. A dolgok nem igazán álltak jól, de aztán megérkeztél és minden megváltozott.
-dlga_start:close_window.21|Köszönöm a segítséged, Parancsnok. Igazi csoda volt hogy a közelben jártál.
+dlga_start:close_window.18|Már megint kihúztál minket a csávából, {playername}! Őszintén, te vagy a legjobb barát. {s43}
+dlga_start:close_window.19|Pont az utolsó pillanatban érkeztél, {playername}! Hálás köszönetem! {s43}
+dlga_start:close_window.20|Pont időben érkezett, {playername}. Nem fogom elfelejteni hogy segített. {s43}
+dlga_start:close_window.21|Jó téged itt látni, {playername}. {s43}
+dlga_start:close_window.24|Köszönöm a segítséged, Parancsnok. Megmentetted az {reg1?életünk:életem} az előbb.
+dlga_start:close_window.25|Köszönöm a segítséged, Parancsok. A dolgok nem igazán álltak jól, de aztán megérkeztél és minden megváltozott.
+dlga_start:close_window.26|Köszönöm a segítséged, Parancsnok. Igazi csoda volt hogy a közelben jártál.
 dlga_start:freed_hero_answer|Adósod vagyok azért hogy megmentettél, barátom.
 dlga_freed_hero_answer:freed_hero_answer_1|Nem mész sehova. Ezennel a foglyom vagy!
 dlga_freed_hero_answer_1:close_window|Jaj. Fog-e valaha a szerencsém jobbra fordulni?
@@ -826,7 +845,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|Íjak.
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|Dobófegyverek.
 dlga_trainer_choose_weapon_player:trainer_pretalk|Semelyik, meggondoltam magam.
 dlga_trainer_begin_training:close_window|Rendben van, legyen így. Miután végeztél az edzéseddel, gyere vissza és beszélj velem.
-dlga_start:close_window.22|El veled, hitvány koldus.
+dlga_start:close_window.27|El veled, hitvány koldus.
 ; dlga_start:mayor_begin|Good day, my lord.
 dlga_start:mayor_talk|Üdv idegen, úgy nézel ki új vagy {s9}ban/ben. Én vagyok a város céhmestere.
 dlga_start:mayor_begin.1|Szép napot, {playername}.
@@ -912,8 +931,8 @@ dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|Sajnálom, valaki m�
 ; dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Alright. I will escort the supply train.
 ; dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|I am afraid I don't have that many soldiers with me.
 ; dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Sorry. I can't do that right now
-; dlga_start:close_window.23|We can cover the rest of the way ourselves. Thanks.
-; dlga_start:close_window.24|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Thanks for escorting us. Good luck.^^[earned {reg14} Resource Points of {s14}]
+; dlga_start:close_window.28|We can cover the rest of the way ourselves. Thanks.
+; dlga_start:close_window.29|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Thanks for escorting us. Good luck.^^[earned {reg14} Resource Points of {s14}]
 ; dlga_start:merchant_caravan_intro_1|Greetings. You must be our escort, right?
 ; dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Yes. My name is {playername}. I will lead you to {s1}.
 ; dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Well, It is good to know we won't travel alone. What do you want us to do now?
@@ -963,7 +982,7 @@ dlga_prisoner_chat_00:close_window|^^MORGÁS!^^
 ; dlga_prisoner_chat_4:close_window|Yeah, like I'm in a position for trying? Get lost!
 ; dlga_prisoner_slaughter:prisoner_slaughter_02|One day you will pay!
 ; dlga_prisoner_slaughter:close_window|One day you will pay.... Aaa-ghgllr!...
-dlga_start:close_window.25|El veled, hitvány koldus.
+dlga_start:close_window.30|El veled, hitvány koldus.
 ; dlga_start:town_merchant_talk|Greetings, Commander. How can I serve you today?
 ; dlga_start:town_merchant_talk.1|Good day. What can I do for you?
 ; dlga_town_merchant_talk:trade_requested_weapons|I want to request new equipment. Show me what you have in your warehouse.
@@ -1002,14 +1021,14 @@ dlga_start:player_castle_guard_talk|Igen, Parancsnok?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|Hogyan megy az őrjárat, katona?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Minden csendes, Parancsnok. Nincs jelentenivalóm.
 dlga_player_castle_guard_talk_3:close_window|Helyes. Tartsd nyitva a szemeid.
-dlga_start:close_window.26|Szép napot, Parancsnok. Jó hogy itt vagy velünk {s10}-ban/ben.
-dlga_start:close_window.27|Figyelj oda a modorodra, és nem lesz itt semmi probléma.
+dlga_start:close_window.31|Szép napot, Parancsnok. Jó hogy itt vagy velünk {s10}-ban/ben.
+dlga_start:close_window.32|Figyelj oda a modorodra, és nem lesz itt semmi probléma.
 ; dlga_start:hall_guard_easter_egg|Ah, just past midnight. You know, an unusual incident happened recently - do you want to hear about it?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Igen, kérlek folytasd.
 dlga_hall_guard_easter_egg:close_window|Nem, nem érdekelnek a pletykák.
 dlga_hall_guard_easter_egg_scene:close_window|Nos... egy nem hétköznapi kalandor csapat tűnt fel nemrégiben: egy ember, egy törp és egy tünde, és aztán...
 dlga_start:hall_guard_talk|Az utasításai, Parancsnok?
-dlga_start:close_window.28|Nem szabadna beszélgetnünk őrség közben, Parancsnok.
+dlga_start:close_window.33|Nem szabadna beszélgetnünk őrség közben, Parancsnok.
 dlga_hall_guard_talk:hall_guard_duty|Folytasd, és tudasd velem ha valaki látni akarna.
 dlga_hall_guard_duty:close_window|Igenis, Parancsnok. Ahogyan kívánod.
 ; dlga_hall_guard_talk:hall_guard_arrest|I want you to arrest this man immediately!
@@ -1049,28 +1068,28 @@ dlga_party_reinforce:party_reinforce_check|Erősítés a csapatunknak? Mi mindig
 ; dlga_party_reinforce_check:party_reinforce_check_1|Let me check the soldier roster... 
 dlga_party_reinforce_check_1:party_reinforce_end|Szóval, meggondoltad magad...^Értem.
 ; dlga_party_reinforce_check_1:party_reinforce_end.1|Those soldiers are of no use to us. ^Take them back.
-; dlga_start:close_window.29|You are making me late! Wizards are never late!
-; dlga_start:close_window.30|It... beckonsssssss...
-dlga_start:close_window.31|Te ott! Túlélted? Nagyszerű! Nem hadonászhatsz csak egy bottal! Vedd ezt el!
+; dlga_start:close_window.34|You are making me late! Wizards are never late!
+; dlga_start:close_window.35|It... beckonsssssss...
+dlga_start:close_window.36|Te ott! Túlélted? Nagyszerű! Nem hadonászhatsz csak egy bottal! Vedd ezt el!
 dlga_start:ori_choose_1|Jól küzdesz, rokon! Nem tudom hogy élhetted túl ilyen sokáig. Emlékszem hogy nem rég csatlakoztál hozzánk, mielőtt még minden... mielőtt Balin elesett... Honnan származol?
 dlga_ori_choose_1:ori_choose_finish|Nyomkövető voltam, az erdőkbe küldve közel a Medve emberekhez. Nemrég hallottam Balin társaságáról és csatlakoztam.
 dlga_ori_choose_1:ori_choose_finish.1|Távoli rokon vagyok, egy veterán testőr egy távoli bányából. Aztán hallottam Balinról és csatlakoztam.
 dlga_ori_choose_1:ori_choose_finish.2|A Vasdombokból származom, háborús veterán vagyok és bányász békeidőkben. Hallottam Balinról és csatlakoztam, mivel még több orkot akartam ölni.
 dlga_ori_choose_finish:close_window|Jó tudni! Ezeket találtam, passzolnak a hátteredhez. Itt fogunk helytállni és annyit fogunk magunkkal vinni amennyit csak tudunk!
-dlga_start:close_window.32|Úgy látszik lerázod magadról azokat a berozsdált képességeidet, he? Tessék, igyál ebből egy kortyot. Jobban fogod magad tőle érezni. Még több ork közelít! 
-dlga_start:close_window.33|Vedd le azt a poros vackot és vedd fel ezt. Jobban kéne védenie. Ezek az orkok keményen harapnak!
-dlga_start:close_window.34|Valami nagy jön! Felkészülni!
-dlga_start:close_window.35|Túl sokan vannak... de mi törpök vagyunk!
-dlga_start:close_window.36|Ezek az orkok kinyitottak egy barlangot ami tele volt kincsekkel. Itt van pár dolog amit találtam, menj előre és vidd őket magaddal.
-dlga_start:close_window.37|Ne... hallom őket... kint vannak! Ott vannak mindenhol!
-dlga_start:close_window.38|Tessék... ez Balin nagyúré... megérdemled ezeket...
+dlga_start:close_window.37|Úgy látszik lerázod magadról azokat a berozsdált képességeidet, he? Tessék, igyál ebből egy kortyot. Jobban fogod magad tőle érezni. Még több ork közelít! 
+dlga_start:close_window.38|Vedd le azt a poros vackot és vedd fel ezt. Jobban kéne védenie. Ezek az orkok keményen harapnak!
+dlga_start:close_window.39|Valami nagy jön! Felkészülni!
+dlga_start:close_window.40|Túl sokan vannak... de mi törpök vagyunk!
+dlga_start:close_window.41|Ezek az orkok kinyitottak egy barlangot ami tele volt kincsekkel. Itt van pár dolog amit találtam, menj előre és vidd őket magaddal.
+dlga_start:close_window.42|Ne... hallom őket... kint vannak! Ott vannak mindenhol!
+dlga_start:close_window.43|Tessék... ez Balin nagyúré... megérdemled ezeket...
 dlga_start:party_encounter_hostile_attacker|Nincs esélyed ellenünk. Add meg magad vagy megölünk mindannyiótokat!
 dlga_party_encounter_hostile_attacker:close_window|Ne támadj! Megadjuk magunkat.
 dlga_party_encounter_hostile_attacker:close_window.1|A végsőkig harcolni fogunk!
 dlga_start:party_encounter_hostile_defender|Mit szeretnél?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Add meg magad vagy véged!
 dlga_party_encounter_hostile_defender:close_window|Semmi. Békén is hagyunk.
-dlga_start:close_window.40|* szavak nélkül rádmered *
+dlga_start:close_window.45|* szavak nélkül rádmered *
 dlga_start:battle_reason_stated.1|Add meg magad vagy meghalsz. Válassz.
 dlga_battle_reason_stated:close_window|Nem félek tőled. Harcolni fogok.
 dlga_start:free|Hello. Mit tehetek érted?

@@ -291,7 +291,7 @@ menu_town_brawl_won|^^^^^你击败了你的对手，但守卫已经发出警号�
 menu_close|没什么。
 menu_town|你抵达了{s60}。{s12}{s13}
 mno_town_menu_0|前往某处
-mno_town_menu_0_door|进入某处
+; mno_town_menu_0_door|Inspect...
 mno_town_approach|前往{s1}...
 mno_town_castle|进入{s1}。
 mno_town_castle_door|进入城堡。
@@ -387,9 +387,6 @@ mno_defend_refugees|注意袭击者……
 mno_attack_refugees|攻击难民队…
 mno_leave_refugees|暂时离开他们……
 mno_evil_war_tut_continue|继续...
-menu_guardian_party_quest||{s8}送信说艾辛格已经到了最后关头，并且已经准备好最后一战。他希望你能够加入最后的战斗对抗艾辛格的敌人。你需要至少带着{reg13}名士兵加入大军，如果你没有足够的士兵，你需要抓紧时间训练出来。
-mno_guardian_party_reject|让信使回去报告，说你不能加入他。
-mno_guardian_party_send_word|让信使回去报告，告诉他你很快就会过去。
 menu_alternate_training_fight|你的对手将会是{reg5}。准备好了吗？
 mno_training_continue|开始训练……
 menu_alternate_training_conclusion|{s5}
@@ -443,6 +440,8 @@ menu_death|你被杀害了。 尽管战争仍旧如火如荼，但这已经不�
 menu_animal_ambush|你和你的同伴在休息的时候，突然分开了…
 menu_animal_ambush_success|你面前的{s2}{reg0?堕落者：堕落者}如小麦般被你收割。很快，所有的攻击者都躺倒在地，重伤或死亡。 {s3}
 menu_animal_ambush_fail|动物咬撕你{reg0?，:和你的同伴{reg2?们，:，}}但幸运的是，你设法避开他们。希望他们不会再攻击你。
+; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
+; mno_isengard_continue|Continue
 menu_build_your_scene|你可以在这里创造属于你自己的战场场景。首先在设置中打开编辑模式，再选择底下任意一个存位，然后进入场景按Ctrl+E打开编辑模式。你可以把自己的作品提交给TLD制作组，做得很好的话，你的场景会在下一版本的随机战斗中出现！（提交时请重命名，并把TLD/SceneObj文件夹下相应的sco文件发给制作组）^^记得说明你所制作的场景，具体是在中土的哪个地方。 ^友情提示：不要做深水或高山，或是其他难以通行的地形——除非你是资深场景制作师，明白如何利用AI网格让AI避开“陷坑”。^（#0~1是给攻击方，＃4是给防守方，别碰＃5-8
 mno_scene1|大型平原（file scn custom 1.sco）
 mno_scene2|中型平原（file scn custom 2.sco）

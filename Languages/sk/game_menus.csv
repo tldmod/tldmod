@@ -291,7 +291,7 @@ menu_town_brawl_won|^^^^^Porazil si všetkých protivníkov a stráže poslané 
 menu_close|Nič.
 menu_town|Dorazil si do {s60}.{s12}{s13}
 mno_town_menu_0|Ísť na nejaké miesto.
-mno_town_menu_0_door|Dvere do nejakej lokality.
+; mno_town_menu_0_door|Inspect...
 mno_town_approach|Prísť bližšie k {s1}...
 mno_town_castle|Ísť do {s1}.
 mno_town_castle_door|Brána do hradu.
@@ -387,9 +387,6 @@ mno_defend_refugees|Pozor na nájazdníkov...
 mno_attack_refugees|Zaútočiť na utečencov...
 mno_leave_refugees|Na teraz ich nechať na pokoji...
 mno_evil_war_tut_continue|Pokračuj
-menu_guardian_party_quest|{s8} ti posiela správu, že celý Isengard je na nohách a dokončil prípravy pre svoj posledný odpor. Želá si, aby s i sa k nemu pripojil v tejto poslednej bitke proti vojskám Isengardu. Musíš so sebou priviesť najmenej {ref13} vojakov a ak toľkých so sebou práve nemáš, nalieha na teba, aby si si ich čo najrýchlejšie zohnal a pripojil sa k nemu.
-mno_guardian_party_reject|Poslať správu, že sa k nemu nemôžeš pripojiť.
-mno_guardian_party_send_word|Poslať odkaz, že sa k nemu čo najskôr pripojíš.
 menu_alternate_training_fight|Budeš bojovať proti {reg5} protivníkom. Si pripravený? 
 mno_training_continue|Započať s tréningom...
 menu_alternate_training_conclusion|{s5}
@@ -443,6 +440,8 @@ menu_death|Bol si zabitý. Vojna pokračuje, ale ty už naďalej nie si jej sú�
 menu_animal_ambush|Ty a tvoji spoločníci ste sa oddelili od zvyšku družiny, keď odrazu...
 menu_animal_ambush_success|{s2} pred tebou {reg0?padol:padajú} ako pšenica pred kosou! Onedlho ležia všetci tvojí protivníci na podlahe, zranený či mrtvý. {s3}
 menu_animal_ambush_fail|Zvieratá ťa kušu a drápu po tebe {reg0?,: a tvoj spoločník{reg2?s,:,}} ale našťastie sa ti podarilo zahnať ich. Dúfaš, že nezaútočia znovu.
+; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
+; mno_isengard_continue|Continue
 menu_build_your_scene|Tu si môžeš vybudovať svoje vlastné bojové pole, použitím jedného z voľných slotov, ktoré sú k dispozícií nižšie a v hracom Edit móde (budeš musieť najprv prepnúť Edit mód ON na úvodnej obrazovke M&B v možnosti Nastavenia). Potom môžeš zaslať scény, ktoré si vybudoval (podľa mena, sco súbory z TLD/SceneObj priečinku) týmu vývojárov z TLD, a keď je tvoja scéna dobrá, môže sa objaviť v ďalšom vydaní ako náhodná bojová scéna!^^ Skús špecifikovať v ktorom regióne na mape sveta chceš, aby sa tvoja scéna objavovala.^ Niekoľko rád: vyhni sa hlbokej vode, vysokým horám a iným neprejazdným miestam, pokiaľ nie si skúsený programátor scén a vieš, ako zakázať jednotkám umelej inteligencie, aby šli tam kde ich nechceš, a aby si vytvoril trasy pre umelú inteligenciu v iných miestach.^ (Vstupy #0-1 sú pre útočníkov, #4 pre obrancov, nerob nič s #5-8
 mno_scene1|Pole Veľké (súbor scn custom 1.sco)
 mno_scene2|Pole Stredné (súbor scn custom 2.sco)

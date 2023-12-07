@@ -291,7 +291,7 @@ menu_town_brawl_won|^^^^^Pokonałeś wszystkich przeciwników i strażników wys
 menu_close|Zamknij.
 menu_town|Przybywasz do {s60}.{s12}{s13}
 mno_town_menu_0|Przejdź do jakiejś lokalizacji.
-mno_town_menu_0_door|Drzwi do jakiegoś miejsca.
+; mno_town_menu_0_door|Inspect...
 mno_town_approach|Podejdź do {s1}...
 mno_town_castle|Idź do {s1}.
 mno_town_castle_door|Drzwi do zamku.
@@ -387,9 +387,6 @@ mno_defend_refugees|Uważaj na rajderów. . .
 mno_attack_refugees|Atakuj uchodźców. . .
 mno_leave_refugees|Zostaw ich na razie. . .
 mno_evil_war_tut_continue|Dalej...
-menu_guardian_party_quest|{s8} wysyła wiadomość, że Isengard jest na kolanach i przygotował swoje ostatnie tchnienie. Życzy on ci przyłączenia się do tej ostatniej bitwy z armiami Isengarda. Musisz przynieść co najmniej {reg13} żołnierzy do wojska, i są instruowani, aby podnieść więcej wojowników z należnym pośpiechem, jeśli nie masz wystarczająco dużo.
-mno_guardian_party_reject|Wyślij wiadomość, że nie możesz do niego dołączyć.
-mno_guardian_party_send_word|Wyślij wiadomość, że wkrótce do niego dołączysz.
 menu_alternate_training_fight|Będziesz miał do czynienia z {reg5} przeciwnikami. Jesteś gotowy?
 mno_training_continue|Rozpocząć szkolenie. . .
 menu_alternate_training_conclusion|{s5}
@@ -443,6 +440,8 @@ menu_death|Powinieneś być martwy. Chociaż wojna wciąż trwa, ty nie jesteś 
 menu_animal_ambush|Ty i twoi kompani oddzieliliście się od reszty drużyny, kiedy nagle...
 menu_animal_ambush_success|{s2} {reg0?fall:falls} przed wami jak zboże skoszone sierpem! Wkrótce wszyscy przeciwnicy leżą na ziemi - ranni, lub martwi. {s3}
 menu_animal_ambush_fail|Zwierzęta zaatakowały ciebie {reg0?,: i twojego kompana {reg2?s,:,}} ale na szczęście udało ci się je odgonić. Miejmy nadzieję że nie zaatakują cie ponownie.
+; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
+; mno_isengard_continue|Continue
 menu_build_your_scene|Możesz zrobić swoją własną scenę bitwy, używając jednego ze slotów udzielonych poniżej oraz trybu edycji gry (musisz włączyć tryb edycji w oknie włączania gry. Najpierw przejdź do opcji, potem wciśnij Ctrl+E wewnątrz sceny żeby mieć dostęp do trybu edycji). Możesz oddawać sceny które stworzyłeś (mianowicie, pliki sco z folderu TLD/SceneObj) do teamu deweloperskiego moda TLD, a jeśli twoja scena jest dobra, może pojawić się w przyszłych update'ach jako jedna w battlegroundsach^^ Spróbuj sprecyzować na którym regionie mapy chciałbyś aby twoja scena się pojawiła.^ Kilka podpowiedzi: unikaj głębokiej wody, stromych gór i innych nieprzekraczalnych miejsc, chyba że jesteś doświadczonym twórcą scenek i wiesz jak powstrzymać jednostki kontrolowane przez AI od pójścia tam gdzie ich nie chcesz, i stworzyć poprawkę do AI w innych miejscach.^\n(Wejścia #0-1 są dla atakujących, #4 dla broniących, nie używaj #5-8
 mno_scene1|Równina Duża (file scn custom 1.sco)
 mno_scene2|Równina Średnia (file scn custom 2.sco)

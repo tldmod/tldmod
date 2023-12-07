@@ -984,10 +984,6 @@ trp_dunland_lord_pl|Вождь
 trp_beorn_lord|Вождь Грімбеорн Старий
 trp_beorn_lord_pl|Вождь
 trp_lorien_marshall|Келеборн
-trp_pippin_notmet|Гобіти
-trp_merry_notmet|Гобіти
-trp_pippin|Піпін
-trp_merry|Меррі
 trp_knight_1_1|Ангбор Безстрашний
 trp_knight_1_2|Хранитель ключів Хурін
 trp_knight_1_3|Принц Імрахіль
@@ -1644,3 +1640,10 @@ trp_a5_dism_elite_skirmisher_of_rohan|Добірний застрільник Р
 trp_a5_dism_elite_skirmisher_of_rohan_pl|Добірні застрільники Рогана
 ; trp_ac5_camel_rider|Harad Camel Rider
 ; trp_ac5_camel_rider_pl|Harad Camel Riders
+; trp_aragorn|Aragorn
+; trp_legolas|Legolas
+; trp_gimli|Gimli
+trp_pippin_notmet|Гобіти
+trp_merry_notmet|Гобіти
+trp_pippin|Піпін
+trp_merry|Меррі

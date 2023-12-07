@@ -578,6 +578,22 @@ qstr_Thank_you_Mithrandir|Děkuji ti, Mithrandire!
 qstr_The_wizard_Saruman_i|Čaroděj Saruman je pryč a Barad Dur byl zničen na prach společně s Temným Pánem! Všem lidem Středozemě se ulevilo, že hrozba, která málem pohltila všechno dobré a čisté na tomto světě je pryč. Nepřítel je poražen a Král se vrátil!
 qstr_It_was_a_long_and_bl|Byla to dlouhá a krvavá válka a spousta tvých blízkých přátel již není mezi námi.
 qstr_There_is_much_to_reg|Je spousta toho čeho bychom měli litovat a nad čím truchlit. Je ještě více toho co je třeba znovu vystavět a opravit v následujících dnech. Ale teď pojďme slavit s těmi z našich přátel, kteří jsou stále s námi, to čeho jsme dosáhli v The Last Days Of The Third Age.
+; qstr_Orcs_are_marching_ag|Orcs are marching against Helm's Deep.
+; qstr_Orcs_are_marching_aga|Orcs are marching against Edoras.
+; qstr_Ah_{playername}_happ|Ah, {playername}, happy chance that we come on each other in this fashion! Grim tidings I bring from Western Rohan, and haste is sore needed.
+; qstr_What_tidings_do_you_|What tidings do you bring, Mithrandir? What can I do?
+; qstr_Saruman_has_loosed_I|Saruman has loosed Isengard upon Rohan. {s1} For the success of my designs, the valiant Rohirrim must not fall, {playername}! The danger to them is very great, yet also the emptying of Isengard has left it vulnerable, for Saruman has despatched his full strength against Theoden King. This may be the time to move into Nan Curunir. A choice is now laid before you, Commander, a choice you must make, for neither you nor I may be everywhere at once!
+; qstr_Do_you_want_me_to_he|Do you want me to help King Theoden defend {s3}, or hasten to Isengard and see what I can do?
+; qstr_Either_would_be_a_gr|Either would be a great boon to me. You must decide your course on your own, {playername}, as shall I. Shadowfax shall bear me now on a swift errand. You must act quickly as well! Hasten now!
+; qstr_Gandalf_asked_you_to|Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard.
+qstr_Ents|Enti
+; qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope.
+; qstr_Missing_String|Missing String
+; qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
+; qstr_Hail_{playername}!_I_|Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!
+; qstr_Your_deed_has_greatl|Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!
+; qstr_{Playername}_I_will_|{Playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
+; qstr_You_have_failed_me_{|You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not.
 qstr_Bagginsssss..._Ssssh|Kraj... Pytlík...
 qstr_I..._don_t_know!|Já... nevím!
 qstr_It..._beckonsssssss.|On... mně volááááááá...
@@ -596,8 +612,11 @@ qstr_The_forces_of_{s2}_m|Síly z {s2} pochodují do {s15}!
 qstr_Rohan_capital_moved_|Rohanské hlavní město se přesunuto z Edorasu do Helmovy hlásky!
 qstr_Dale_capital_moved_f|Dolské hlavní město přesunuto z Dolu do Esgarothu!
 qstr_Gundabad_capital_mov|Gundabadské hlavní město přesunuto z Gundabadu do Gobliního města!
+; qstr_You_have_breached_th|You have breached the Ring of Isengard with the help of the Tree Men. During the battle, Isengard was flooded, but Orthanc still stands unscathed in midst of the havoc. You should investigate the aftermath.
 qstr_The_hosts_of_{s2}_re|Hordy z {s2} ustupují do svých domovů!
 qstr____Ruins_of_{s1}___|{s1} (Ruiny)
+; qstr_{s1}_has_joined_the_|{s1} has joined the Hand
+; qstr_{s1}_has_joined_the_E|{s1} has joined the Eye
 qstr_ranks|řady
 qstr_shield_wall|štítová hradba
 qstr_wedge|klín
@@ -663,6 +682,9 @@ qstr_loses_Faction_Strength|frakce ztrácí Sílu, kvůli ničivému nájezdu.
 qstr_loses_Faction_Strength_|frakce ztrácí Sílu, díky tvému úspěchu na moři.
 qstr_You_spent_{reg67}_of|Utratil jsi {reg67} bodů vlivu s frakcí {s1}, zbývá ti {reg66}.
 qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?byl:je} poblíž {s5}.
+; qstr_Army_of_{s6}|Army of {s6}
+; qstr_Host_of_{s6}|Host of {s6}
+; qstr_The_host_of_Isengard|The host of Isengard has razed {s2}!
 qstr_{s1}_{s0}|{s1}, {s0}
 qstr_{s1}_and_{s0}|{s1} a {s0}
 qstr_No_Troops_Left.|Nezbývají žádní vojáci.
@@ -725,6 +747,7 @@ qstr_You_shapeshift_into_|Přeměnil ses v medvěda!
 qstr_You_got_{reg1}_exper|Získal si {reg1} zkušeností v medvědí formě.
 ; qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
 qstr_You_change_back_to_h|Proměnil ses zpět na člověka...
+; qstr_Refill_Ammunition|Refill Ammunition
 qstr_Your_mount_stumbles!|Tvůj kůň zakopl! Vypadá že je chromý.
 qstr_Bitten_by_your_own_w|Kousl tě vlastní vrk!
 qstr_You_weigh_too_much_f|Vážíš příliš mnoho pro poníka!
@@ -1041,6 +1064,8 @@ qstr_You_have_fallen._The|Padl jsi. Bandité rychle prohledali tvé tělo kvůli
 qstr_Luckily_some_of_your|Naštěstí někteří z tvých společníků se tě vydali hledat, když jsi se nevrátil a našli tě ležet v příkopu. Odnesli tě do bezpečí a ovázali ti rány.
 qstr_Luckily_some_passing|Naštěstí tě nějací kolemjdoucí našli ležet v příkopu a poznali že nejsi obyčejný žebrák. Odnesli tě do bezpečí a ovázali ti rány.
 qstr_{s13}^^You_have_succ|{s13}^^Úspěšně jsi se vplížil dovnitř.
+; qstr_The_tomb_is_destroye|The tomb is destroyed. A fierce fight took place here.
+; qstr_Nothing_of_interest|Nothing of interest
 qstr_the_place|město
 qstr_the_castle|hradu
 qstr_the_Throne_Room|trůnního sálu
@@ -1112,8 +1137,6 @@ qstr_Breaking_camp...|Rozbíjíš tábor...
 ; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
 ; qstr_Desertion|Desertion
 ; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
-; qstr_You_don_t_have_enoug|You don't have enough troops to guard all your prisoners. Their chance of escaping is increased.
-; qstr_{s1}_has_escaped_fro|{s1} has escaped from your party.                                                           
 qstr_You_have_left_{s1}.|Opustil jsi oblast {s1}.
 qstr_You_are_entering_{s1|Vstupuješ do oblasti {s1} ({s2}).
 qstr_You_are_entering_{s1}|Vstupuješ do oblasti {s1}.
@@ -1247,6 +1270,8 @@ qstr_Ask_him_if_he_has_an|Zeptej se ho jestli mu zbyl nějaký tabák do dýmky!
 qstr_Tell_him_I_ll_be_the|Řekni mu že já budu ten vyšší až se znovu uvidíme!
 qstr_Ask_if_he_s_seen_Gan|Zeptejte se, jestli viděl Gandalfa!
 qstr_You_gained_250_exper|Dostal jsi 250 zkušeností.
+; qstr_Hrooom..._Hmmm...Who|Hrooom... Hmmm...Who are you?
+; qstr_Hrooom..._Hmmm...Oh_|Hrooom... Hmmm...Oh, it's you again, {playername}.
 qstr_Treebeard_wants_you_|Stromovous chce aby si našel a porazil skřety, kteří kácí stromy ve Fangornu.
 qstr_Something_wrong_not_e|Něco je špatně, nedostatek jednotek pro průzkumnou skupinu
 qstr_my_home_town|mé domovské město
@@ -1470,8 +1495,8 @@ qstr_I_want_you_and_your_|Chci aby jste ty a tví muži zabili
 qstr_{playername}_you_nee|{playername}, musíte si zasloužit můj respekt a respekt vašich mužů. {s6} {reg22} {s7} vojáků!
 qstr_{s9}_wants_you_to_per|{s9} chce abys osobně zabil {reg22} {s6} vojáků.
 qstr_{s9}_wants_you_and_y|{s9} chce, abyste ty a tvoji muži zabili {reg22} {s6} vojáků.
-qstr_{playername}_we_have_|{playername}, obdrželi jsme ponuré zprávy. Korzáři z Umbaru jsou stále drzejší a zatím co tady hovoříme, shromažďují flotilu blízko {s6}. Už loupí podél pobřeží a brzy budou u samotného města.^^ Musíme flotilu zastavit než se dostane k městu. Pospěš k  {s6} a promluv si s místní autoritou.
-qstr_{playername}_we_have_r|{playername}, obdrželi jsme ponuré zprávy. Divoši z Rhûnu jsou mazanější a odvážnější než jsme si mysleli - nepozorováni našimi zvědy, vybudovali dostatek lodí a raftů, aby se dostali přes Dlouhé jezero a zaútočili přímo na  Esgaroth!^^ Musíme flotilu zastavit než dorazí k městu. Veď své vojáky tak rychle jak jen můžeš a zažeň je zpátky na druhou stranu jezera!
+qstr_{playername}_we_have|{playername}, Železný pas je na kolenou. Připravili poslední obranu a chrání Sarumana v jeho věži. Vyjeď se mnou proti nim!
+qstr_{playername}_we_have_|{playername}, obdrželi jsme ponuré zprávy. Divoši z Rhûnu jsou mazanější a odvážnější než jsme si mysleli - nepozorováni našimi zvědy, vybudovali dostatek lodí a raftů, aby se dostali přes Dlouhé jezero a zaútočili přímo na  Esgaroth!^^ Musíme flotilu zastavit než dorazí k městu. Veď své vojáky tak rychle jak jen můžeš a zažeň je zpátky na druhou stranu jezera!
 qstr_If_you_seek_pillage_|Pokud prahneš po drancování a lupu, tak tady je bezkonkurenční příležitost {playername}.^^ Korzárská flotila vyplouvá z {s7} a míří přímo k městu {s6}, které je zralé k oškubání! Připoj se k jejich útoku a rozdělte si kořist!
 qstr_The_soft_weaklings_o|Ti slaboši z Esgarothu se nemůžou rovnat našim rychlým jezdcům a divokým válečníkům, {playername}. To je jasné. Jezerní lidé věří že jsou v bezpečí, za vodou, daleko od nás, ale my jim brzy ukážeme opak!^^ Vyrobili jsme lodě a rafty, dostatečně silné, aby dovezly naše válečníky přes jezero. Nebudou nás čekat! ^^Běž do Hlavního tábora a promluv si s náčelníkem aby ses přidal s nájezdu.
 qstr_{s9}_asked_you_to_he|{s9} tě požádal aby jsi pomohl bránit {s3} proti nájezdu Korzárů. Pospěš do města, promluv si s cechovým mistrem a nabídni svou pomoc místní posádce.

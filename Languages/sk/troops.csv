@@ -984,10 +984,6 @@ trp_dunland_lord_pl|Náčelník
 trp_beorn_lord|Náčelník Grimbeorn Starý
 trp_beorn_lord_pl|Náčelník
 trp_lorien_marshall|Celeborn
-trp_pippin_notmet|hobit
-trp_merry_notmet|hobit
-trp_pippin|Pútnik Bral
-trp_merry|Chicholm Brandylen
 trp_knight_1_1|Angbor Nebojácny
 trp_knight_1_2|Húrin Strážca Kľúčov
 trp_knight_1_3|Princ Imrahil
@@ -1644,3 +1640,10 @@ trp_a5_dism_elite_skirmisher_of_rohan|Elitný ľahký kavalerista z Rohanu
 trp_a5_dism_elite_skirmisher_of_rohan_pl|Elitná ľahká jazda Rohanu
 ; trp_ac5_camel_rider|Harad Camel Rider
 ; trp_ac5_camel_rider_pl|Harad Camel Riders
+; trp_aragorn|Aragorn
+; trp_legolas|Legolas
+; trp_gimli|Gimli
+trp_pippin_notmet|hobit
+trp_merry_notmet|hobit
+trp_pippin|Pútnik Bral
+trp_merry|Chicholm Brandylen

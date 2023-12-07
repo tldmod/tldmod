@@ -578,6 +578,22 @@ qstr_Thank_you_Mithrandir|감사합니다, 미스란디르!
 qstr_The_wizard_Saruman_i|마법사 사루만은 사라졌고 바랏 두르는 암흑의 군주와 함께 산산이 흩어졌네! 중간계의 모든 자유민들은 이 세상의 선하고 순수한 모든 것의 위협으로부터 벗어났다네. 적들은 패배했고 왕께서 귀환하셨다!
 qstr_It_was_a_long_and_bl|이 끔찍한 전쟁은 너무도 길었고 우리의 소중한 친구들은 더이상 우리와 함께 있지 않다.
 qstr_There_is_much_to_reg|후회하고 애도할 것이 많으며, 앞으로 가까운 시일 내로 재건하고 고쳐야 할 것은 더더욱 많다네. 하지만 지금 당장은, 아직 우리 곁에 함께하는 친구들과 The Last Days Of The Third Age에서 이룬 것들을 축하하세나.
+; qstr_Orcs_are_marching_ag|Orcs are marching against Helm's Deep.
+; qstr_Orcs_are_marching_aga|Orcs are marching against Edoras.
+; qstr_Ah_{playername}_happ|Ah, {playername}, happy chance that we come on each other in this fashion! Grim tidings I bring from Western Rohan, and haste is sore needed.
+; qstr_What_tidings_do_you_|What tidings do you bring, Mithrandir? What can I do?
+; qstr_Saruman_has_loosed_I|Saruman has loosed Isengard upon Rohan. {s1} For the success of my designs, the valiant Rohirrim must not fall, {playername}! The danger to them is very great, yet also the emptying of Isengard has left it vulnerable, for Saruman has despatched his full strength against Theoden King. This may be the time to move into Nan Curunir. A choice is now laid before you, Commander, a choice you must make, for neither you nor I may be everywhere at once!
+; qstr_Do_you_want_me_to_he|Do you want me to help King Theoden defend {s3}, or hasten to Isengard and see what I can do?
+; qstr_Either_would_be_a_gr|Either would be a great boon to me. You must decide your course on your own, {playername}, as shall I. Shadowfax shall bear me now on a swift errand. You must act quickly as well! Hasten now!
+; qstr_Gandalf_asked_you_to|Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard.
+qstr_Ents|엔트
+; qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope.
+; qstr_Missing_String|Missing String
+; qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
+; qstr_Hail_{playername}!_I_|Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!
+; qstr_Your_deed_has_greatl|Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!
+; qstr_{Playername}_I_will_|{Playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
+; qstr_You_have_failed_me_{|You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not.
 qstr_Bagginsssss..._Ssssh|배기이인스.... 샤아아아아이어...
 qstr_I..._don_t_know!|나... 나는 몰라!
 qstr_It..._beckonsssssss.|그것이... 손짓한다...
@@ -596,8 +612,11 @@ qstr_The_forces_of_{s2}_m|{s2}의 군대가 {s15}로 진군 중이다!
 qstr_Rohan_capital_moved_|로한의 수도가 에도라스에서 나팔산성/혼버그로 이전되었습니다!
 qstr_Dale_capital_moved_f|너른골의 수도가 너른골에서 에스가로스로 이전했습니다!
 qstr_Gundabad_capital_mov|군다바드의 수도가 군다바드에서 고블린 도시로 이전되었습니다!
+; qstr_You_have_breached_th|You have breached the Ring of Isengard with the help of the Tree Men. During the battle, Isengard was flooded, but Orthanc still stands unscathed in midst of the havoc. You should investigate the aftermath.
 qstr_The_hosts_of_{s2}_re|{s2}의 주최자가 그들의 고향으로 퇴각합니다!
 qstr____Ruins_of_{s1}___|   {s1}의 폐허   
+; qstr_{s1}_has_joined_the_|{s1} has joined the Hand
+; qstr_{s1}_has_joined_the_E|{s1} has joined the Eye
 qstr_ranks|대열
 qstr_shield_wall|방패 진형
 qstr_wedge|쐐기 진형
@@ -663,6 +682,9 @@ qstr_loses_Faction_Strength|파괴적 약탈로 인해 세력 군사력을 잃�
 qstr_loses_Faction_Strength_|당신이 바다에서 거둔 성공으로 인해 세력 군사력을 잃는다.
 qstr_You_spent_{reg67}_of|당신은 {s1}에 {reg67} 영향력을 사용했고, {reg66}이 남아있다.
 qstr_{s2}_{reg3?was:is_ar|{s2}가 {s5} 근처에 {reg3?있었다:있다}
+; qstr_Army_of_{s6}|Army of {s6}
+; qstr_Host_of_{s6}|Host of {s6}
+; qstr_The_host_of_Isengard|The host of Isengard has razed {s2}!
 qstr_{s1}_{s0}|{s1}, {s0}
 qstr_{s1}_and_{s0}|{s1} 그리고 {s0}
 qstr_No_Troops_Left.|병력이 더이상 남지 않았다.
@@ -725,6 +747,7 @@ qstr_You_shapeshift_into_|곰으로 변신했다!
 qstr_You_got_{reg1}_exper|당신은 곰 형태에서 {reg1}만큼의 경험치를 얻었다.
 qstr_Your_ability_to_chan|당신은 모습을 변화시킬 수 있게 되었습니다. 이제부터 사람과 곰 모습을 통해 야생의 길을 걸을 수 있습니다.
 qstr_You_change_back_to_h|인간 형상으로 돌아왔다...
+; qstr_Refill_Ammunition|Refill Ammunition
 qstr_Your_mount_stumbles!|당신의 탈것이 무너진다! 다리를 저는 것 같다.
 qstr_Bitten_by_your_own_w|당신의 와르그에게 물렸다!
 qstr_You_weigh_too_much_f|당신은 조랑말을 타기에 너무 무겁다!
@@ -1041,6 +1064,8 @@ qstr_You_have_fallen._The|당신은 쓰러졌다. 도적들은 재빨리 찾을 
 qstr_Luckily_some_of_your|다행히 당신이 돌아오지 않은 것을 염려한 동료 몇 명이 당신을 찾으러 왔으며, 당신이 도랑에 누워있는 것을 발견했다. 그들은 당신을 안전한 곳으로 데려갔고 당신의 상처를 치료했다.
 qstr_Luckily_some_passing|다행히 지나가던 동네 사람들이 도랑에 누워있는 당신을 발견했고, 당신을 단순한 거지와 다르다는 것을 발견했다. 그들은 당신을 안전한 곳으로 데려갔고 당신의 상처를 치료해주었다.
 qstr_{s13}^^You_have_succ|{s13}^^당신은 성공적으로 숨어들었다.
+; qstr_The_tomb_is_destroye|The tomb is destroyed. A fierce fight took place here.
+; qstr_Nothing_of_interest|Nothing of interest
 qstr_the_place|그 장소에
 qstr_the_castle|그 성에
 qstr_the_Throne_Room|왕좌의 방
@@ -1112,8 +1137,6 @@ qstr_Breaking_camp...|캠프를 해체한다...
 ; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
 ; qstr_Desertion|Desertion
 ; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
-; qstr_You_don_t_have_enoug|You don't have enough troops to guard all your prisoners. Their chance of escaping is increased.
-; qstr_{s1}_has_escaped_fro|{s1} has escaped from your party.                                                           
 qstr_You_have_left_{s1}.|당신은 {s1}을 떠났다.
 qstr_You_are_entering_{s1|당신은 {s1}을 지나는 중이다 ({s2}).
 qstr_You_are_entering_{s1}|당신은 {s1}을 지나는 중이다.
@@ -1247,6 +1270,8 @@ qstr_Ask_him_if_he_has_an|담배잎이 좀 남아있는지 물어봐요!
 qstr_Tell_him_I_ll_be_the|다시 볼 날이 오면 내가 더 클거라고 전해주세요!
 qstr_Ask_if_he_s_seen_Gan|간달프를 봤는지 물어봐요!
 qstr_You_gained_250_exper|당신은 250 경험치를 얻었다.
+; qstr_Hrooom..._Hmmm...Who|Hrooom... Hmmm...Who are you?
+; qstr_Hrooom..._Hmmm...Oh_|Hrooom... Hmmm...Oh, it's you again, {playername}.
 qstr_Treebeard_wants_you_|나무수염은 당신이 벌목하는 오르크들을 찾아내어 죽이는걸 원합니다
 qstr_Something_wrong_not_e|뭔가 잘못되었다, 정찰대를 꾸리기엔 병력이 너무 적다
 qstr_my_home_town|나의 고향.
@@ -1470,8 +1495,8 @@ qstr_I_want_you_and_your_|너와 네 부하들이 죽였으면 좋겠다
 qstr_{playername}_you_nee|{playername}, 당신은 당신 부하들과 내 신뢰를 얻어야한다. {s6} {reg22} {s7} troops!
 qstr_{s9}_wants_you_to_per|{s9}는 {reg22} 명의 {s6} 병력을 개인적으로 죽이기를 원한다.
 qstr_{s9}_wants_you_and_y|{s9}는 {reg22} 명의 {s6} 병력을 죽이기를 원한다.
-qstr_{playername}_we_have_|{playername}, 우리는 암울한 소식을 받았다. 움바르의 해적들은 우리가 생각했던 것보다 더 교활하고 대담했고, {s6} 근처에 함대가 집결하고 있다. 우리의 정찰병들의 시선을 피해 그들은 해안선을 따라 빼앗았고, 그들은 곧 이 도시에 들이닥칠 것이다.^^ 함대가 도시에 도착하기 전에 요격해야 한다. {s6}으로 서둘러 가서, 그곳의 지역 authority와 대화하라.
-qstr_{playername}_we_have_r|{playername}, 우리는 암울한 소식을 받았다. 룬의 야만인들은 우리가 생각했던 것보다 더 교활하고 대담하다 - 우리의 정찰병들에게 보이지 않고, 그들은 긴 호수를 가로질러 그들을 실어 나르기 위해 충분한 보트와 뗏목을 만들었고, 그들은 에스가로스를 직접 공격하고 있다!^^ 함대가 도시에 도착하기 전에 요격해야 한다. 가능한 한 빨리 군대를 이끌고 야만인들을 물 건너로 몰아내라!
+qstr_{playername}_we_have|{playername}, 우리는 아이센가드를 무릎꿇게 했다. 그들은 최후의 항전을 시작했으며, 그의 탑에서 사루만을 보호하고 있다. 나와 함께 달려 그들을 맞아주자!
+qstr_{playername}_we_have_|{playername}, 우리는 암울한 소식을 받았다. 룬의 야만인들은 우리가 생각했던 것보다 더 교활하고 대담하다 - 우리의 정찰병들에게 보이지 않고, 그들은 긴 호수를 가로질러 그들을 실어 나르기 위해 충분한 보트와 뗏목을 만들었고, 그들은 에스가로스를 직접 공격하고 있다!^^ 함대가 도시에 도착하기 전에 요격해야 한다. 가능한 한 빨리 군대를 이끌고 야만인들을 물 건너로 몰아내라!
 qstr_If_you_seek_pillage_|약탈과 약탈품을 찾고 있다면, 여기 견줄 수 없을 만한 기회가 있다, {playername}.^^ 해적 함대가 {s7}의 항구를 떠났다, 그리고 수확하기에 무르익은 {s6}까지 곧장 가는 항로를 잡았지. 그들의 공격에 가담하고, 약탈품을 나눠가져라!
 qstr_The_soft_weaklings_o|에스가로스의 나약한 약골들은 우리의 빠른 기병들과 흉포한 전사들의 상대가 되지 않는다, {playername}. 모두가 알고 있다. 호수 사람들은 자신들이 물 건너의 우리들로부터 안전하다 믿을 지 몰라도, 우리는 곧 그들에게 전혀 다르다는 것을 보여줄 것이다!^^우리는 보트와 뗏목을 만들었는데, 우리 전사들을 호수를 가로질러 운반하기에 충분하다. 그들은 우리를 예상하지 못할 것이다!^^공격에 합류하고 싶으면 본진으로 가서 캠프 지휘관과 대화하라.
 qstr_{s9}_asked_you_to_he|{s9}이 해적의 습격으로부터 {s3}을 방어해달라 요청했습니다. 서둘로 도시로 가서 guild master에게 말하고 지역 수비대에게 당신의 도움을 빌려주십시오.

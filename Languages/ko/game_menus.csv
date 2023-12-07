@@ -291,7 +291,7 @@ menu_town_brawl_won|^^^^당신은 모든 상대를 두들겨 팬 후 소요를 �
 menu_close|아무 것도 안하기
 menu_town|당신은 {s60}에 도착했습니다.{s12}{s13}
 mno_town_menu_0|들어가기
-mno_town_menu_0_door|입구
+; mno_town_menu_0_door|Inspect...
 mno_town_approach|다가가기
 mno_town_castle|{s1}에 가기
 mno_town_castle_door|마을 입구
@@ -387,9 +387,6 @@ mno_defend_refugees|침략자들을 주시한다...
 mno_attack_refugees|난민 무리를 공격한다...
 mno_leave_refugees|잠시 놔둔다...
 mno_evil_war_tut_continue|계속...
-menu_guardian_party_quest|{s8}은 아이센가드는 벼랑 끝에 서있으며, 최후의 항전을 시도하고 있다고 말했습니다. 그는 당신이 아이센가드와의 최후의 전투에 참여하길 원한다고 서신을 전해왔습니다. 작전에 참여하려면 적어도 {reg13}명의 병사가 있어야 하고, 만약 병사가 없다면 서둘러 징집하라고 지침을 내렸습니다.
-mno_guardian_party_reject|그와 합류할 수 없다고 전한다.
-mno_guardian_party_send_word|곧 합류할 것이라 전하기
 menu_alternate_training_fight|자네는 {reg5}명의 상대와 맞서야 하네. 준비 되었는가?
 mno_training_continue|훈련을 시작한다...
 menu_alternate_training_conclusion|{s5}
@@ -443,6 +440,8 @@ menu_death|당신은 죽었습니다. 전쟁은 계속되고 있지만 당신은
 menu_animal_ambush|당신과 당신의 동료들은 나머지 일행과 떨어져 있다는 것을 알아차렸습니다, 그리고 갑자기...
 menu_animal_ambush_success|{s2}들은 당신 앞에 낫에 잘린 벼이삭마냥 {reg0?쓰러졌습니다:쓰러졌습니다} !  곧 당신을 공격한 이들은 전부 죽거나 기절해 쓰러져 있습니다. {s3}
 menu_animal_ambush_fail|짐승들이 당신{reg0?,: 그리고 당신 동료{reg2?들,:,}}을 물어뜯으며 공격하지만 운좋게도 그들을 물리치는데 성공했습니다. 바라건대 다시는 짐승들에게 공격받지 않기를.
+; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
+; mno_isengard_continue|Continue
 menu_build_your_scene|아래에 제공된 슬롯 중 하나와 게임 편집 모드를 사용하여 자신만의 전투 장면을 만들 수 있습니다(먼저 M&B 화면 옵션에서 편집 모드를 ON으로 전환한 다음 장면 내에서 Ctrl+E를 눌러 편집 모드에 액세스해야 합니다). 그런 다음 작성한 장면(예: TLD/SceneObj 폴더의 sco 파일)을 TLD의 개발 팀에 제출할 수 있으며, 장면이 좋으면 이후 릴리스에서 랜덤 배틀그라운드 중 하나로 나타날 수 있습니다!^^ 지도에서 장면을 표시할 영역을 지정합니다.^ 몇 가지 힌트: 여러분이 장면 제작자가 아니어서 AI 부대가 원하지 않는 곳을 걷지 못하게 하는 방법을 알지 못한다면 깊은 물, 가파른 산 및 기타 통행할 수 없는 장소를 피하고 AI 메쉬를 다른 장소에 만들 수 있습니다.^ (0-1번 항목은 공격자, 4번 항목은 수비수, 5-8번 항목은 터치하지 마십시오.
 mno_scene1|Plain Big (file scn custom 1.sco)
 mno_scene2|Plain Med (file scn custom 2.sco)

@@ -578,6 +578,22 @@ qstr_Thank_you_Mithrandir|ありがとうございます、ミスランディア
 qstr_The_wizard_Saruman_i|魔法使いサルマンは消え去り、 バラド＝ドゥーアもその闇の主とともに塵あくたとなって崩れ去った！ 中つ国の民は、 この世界の清きものをすべて飲み込まんとする脅威から開放された。 敵は打ち破られ、 王は戻ったのだ！
 qstr_It_was_a_long_and_bl|多くの犠牲を払った、 長い戦いでした。 我々の親しい友たちも、 その多くが命を落としてしまいました。
 qstr_There_is_much_to_reg|後悔や嘆き悲しむべきことは尽きず、 それにもまして、 これからは過酷な修復と再建の日々が始まる。 だが、 とりあえずは、 共に戦い抜いた友たちと喜びを分かち合い、 この時代の最後の日々を勝利して迎えられたことを祝おうではないか。
+; qstr_Orcs_are_marching_ag|Orcs are marching against Helm's Deep.
+; qstr_Orcs_are_marching_aga|Orcs are marching against Edoras.
+; qstr_Ah_{playername}_happ|Ah, {playername}, happy chance that we come on each other in this fashion! Grim tidings I bring from Western Rohan, and haste is sore needed.
+; qstr_What_tidings_do_you_|What tidings do you bring, Mithrandir? What can I do?
+; qstr_Saruman_has_loosed_I|Saruman has loosed Isengard upon Rohan. {s1} For the success of my designs, the valiant Rohirrim must not fall, {playername}! The danger to them is very great, yet also the emptying of Isengard has left it vulnerable, for Saruman has despatched his full strength against Theoden King. This may be the time to move into Nan Curunir. A choice is now laid before you, Commander, a choice you must make, for neither you nor I may be everywhere at once!
+; qstr_Do_you_want_me_to_he|Do you want me to help King Theoden defend {s3}, or hasten to Isengard and see what I can do?
+; qstr_Either_would_be_a_gr|Either would be a great boon to me. You must decide your course on your own, {playername}, as shall I. Shadowfax shall bear me now on a swift errand. You must act quickly as well! Hasten now!
+; qstr_Gandalf_asked_you_to|Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard.
+qstr_Ents|エント
+; qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope.
+; qstr_Missing_String|Missing String
+; qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
+; qstr_Hail_{playername}!_I_|Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!
+; qstr_Your_deed_has_greatl|Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!
+; qstr_{Playername}_I_will_|{Playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
+; qstr_You_have_failed_me_{|You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not.
 qstr_Bagginsssss..._Ssssh|バギンズ・・・ ホビット庄・・・
 qstr_I..._don_t_know!|な・・・ なんの事だ！
 qstr_It..._beckonsssssss.|それは・・・ 手招くのだ・・・
@@ -596,8 +612,11 @@ qstr_The_forces_of_{s2}_m|{s2}の軍勢が、{s15}を目指して進軍してい
 qstr_Rohan_capital_moved_|ローハンがエドラスから角笛城へ、遷都をしました！
 qstr_Dale_capital_moved_f|谷間の国はエスガロスへ遷都を行いました！
 qstr_Gundabad_capital_mov|グンダバドはゴブリン町へ遷都を行いました！
+; qstr_You_have_breached_th|You have breached the Ring of Isengard with the help of the Tree Men. During the battle, Isengard was flooded, but Orthanc still stands unscathed in midst of the havoc. You should investigate the aftermath.
 qstr_The_hosts_of_{s2}_re|{s2}の軍勢は本拠地へ退却しました！
 qstr____Ruins_of_{s1}___|{s1}の廃墟
+; qstr_{s1}_has_joined_the_|{s1} has joined the Hand
+; qstr_{s1}_has_joined_the_E|{s1} has joined the Eye
 qstr_ranks|横陣
 qstr_shield_wall|シールドウォール
 qstr_wedge|くさび形
@@ -663,6 +682,9 @@ qstr_loses_Faction_Strength|は破壊的な襲撃を受けたため、 勢力ポ
 qstr_loses_Faction_Strength_|はあなたの海における活躍により、 勢力ポイントが下がりました。
 qstr_You_spent_{reg67}_of|あなたは{s1}での影響力ポイントを{reg67}消費しました。 残りは{reg66}です。
 qstr_{s2}_{reg3?was:is_ar|{s2}は{s5}周辺にい{reg3?た:る。
+; qstr_Army_of_{s6}|Army of {s6}
+; qstr_Host_of_{s6}|Host of {s6}
+; qstr_The_host_of_Isengard|The host of Isengard has razed {s2}!
 qstr_{s1}_{s0}|{s1},{s0}
 qstr_{s1}_and_{s0}|{s1}および{s0}
 qstr_No_Troops_Left.|兵はもういません。
@@ -725,6 +747,7 @@ qstr_You_shapeshift_into_|あなたは熊に姿を変えました！
 qstr_You_got_{reg1}_exper|あなたは熊の姿で{reg1}の経験値を獲得しました。
 qstr_Your_ability_to_chan|あなたが姿を変える能力を持つ事は明らかになりました。 これよりあなたは自然において、 人間であると同時に熊としても認識されます。
 qstr_You_change_back_to_h|あなたは人間の姿に戻った・・・
+; qstr_Refill_Ammunition|Refill Ammunition
 qstr_Your_mount_stumbles!|あなたの馬がよろめいています！どうやら足をくじいているようです。
 qstr_Bitten_by_your_own_w|あなたのワーグが噛み付いてきました！
 qstr_You_weigh_too_much_f|ポニーに乗るには、あなたは重すぎます！
@@ -1041,6 +1064,8 @@ qstr_You_have_fallen._The|あなたは倒されました。 野盗はあなた�
 qstr_Luckily_some_of_your|幸いにも、 あなたの戻りが遅いのを案じて探しに来たコンパニオンが、 排水溝に横たわるあなたを発見しました。 あなたは安全な場所に運ばれ、 傷の手当を受けました。
 qstr_Luckily_some_passing|幸いにも通りがかった地元の民が排水溝に横たわるあなたを発見し、 そこらの物乞いではないと判断しました。 彼らはあなたを安全な場所へ運び、傷の手当をしてくれました。
 qstr_{s13}^^You_have_succ|{s13}^^潜入に成功しました。
+; qstr_The_tomb_is_destroye|The tomb is destroyed. A fierce fight took place here.
+; qstr_Nothing_of_interest|Nothing of interest
 qstr_the_place|この拠点
 qstr_the_castle|この城
 qstr_the_Throne_Room|王の間
@@ -1112,8 +1137,6 @@ qstr_Breaking_camp...|野営を撤収しました・・・
 ; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
 ; qstr_Desertion|Desertion
 ; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
-; qstr_You_don_t_have_enoug|You don't have enough troops to guard all your prisoners. Their chance of escaping is increased.
-; qstr_{s1}_has_escaped_fro|{s1} has escaped from your party.                                                           
 qstr_You_have_left_{s1}.|あなたは{s1}を後にしました。
 qstr_You_are_entering_{s1|あなたは{s1}({s2})に入りました。
 qstr_You_are_entering_{s1}|あなたは{s1}に入りました。
@@ -1247,6 +1270,8 @@ qstr_Ask_him_if_he_has_an|彼にパイプ草を持ってないか聞いてよ！
 qstr_Tell_him_I_ll_be_the|今度会ったら僕が背の高いほうになるよって言ってよ！
 qstr_Ask_if_he_s_seen_Gan|ガンダルフに会ったか聞いてよ！
 qstr_You_gained_250_exper|経験値を250取得しました。
+; qstr_Hrooom..._Hmmm...Who|Hrooom... Hmmm...Who are you?
+; qstr_Hrooom..._Hmmm...Oh_|Hrooom... Hmmm...Oh, it's you again, {playername}.
 qstr_Treebeard_wants_you_|ファンゴルンの森で木を伐採している オークの一団を倒すよう、 木の鬚に頼まれた。
 qstr_Something_wrong_not_e|なにかがおかしい、偵察隊を編成するための兵が足りない。
 qstr_my_home_town|我が本拠地
@@ -1470,8 +1495,8 @@ qstr_I_want_you_and_your_|おぬしとおぬしの部下の手で
 qstr_{playername}_you_nee|{playername}よ、 おぬしは私やまわりの者たちに、自らの価値を証明しなければならん。 {s6}{s7}の兵を{reg22}名、殺してくれ！
 qstr_{s9}_wants_you_to_per|{s9}の要請により、 {reg22}名の{s6}の兵を、 みずからの手で殺す事となった。
 qstr_{s9}_wants_you_and_y|{s9}の要請により、 {reg22}名の{s6}の兵を、 自分と部下たちの手で殺す事となった。
-qstr_{playername}_we_have_|{playername}よ、 恐ろしい報せを受け取った。 日を追うごとに大胆さを増すウンバールの海賊どもが、 いま我々がこうして話しているあいだにも、 {s6}から遠くない位置に艦隊を集結させておるらしい。 すでにやつらは沿岸部一帯を略奪したが、 いよいよ市街地を襲撃しに来るのだ。^^やつらが市街地に到着するまえに、 やつらの艦を捕捉しなければならない。 急いで{s6}へ行って、 現地の責任者に会ってくれ。
-qstr_{playername}_we_have_r|{playername}よ、 恐ろしい報せを受け取った。 リューンの蛮人どもは、 我々が考えていたよりも悪知恵が働くらしい。 やつらは、たての湖を渡って直接エスガロスに上陸するため、 我々の斥候の目をかいぐぐって小舟やいかだを建造していたらしい！^^市街地に上陸されるまえに、やつらの船を捕捉しなければならない。 兵を率いてできるだけ急いで現地へ行き、 あの野蛮人どもを湖の反対側へ追い払ってくれ！
+qstr_{playername}_we_have|{playername}よ、 いよいよアイゼンガルドを追い詰めたぞ。 やつらは塔にこもるサルマンを守るため、 最後の抵抗を始めた。さあ共に戦おう！
+qstr_{playername}_we_have_|{playername}よ、 恐ろしい報せを受け取った。 リューンの蛮人どもは、 我々が考えていたよりも悪知恵が働くらしい。 やつらは、たての湖を渡って直接エスガロスに上陸するため、 我々の斥候の目をかいぐぐって小舟やいかだを建造していたらしい！^^市街地に上陸されるまえに、やつらの船を捕捉しなければならない。 兵を率いてできるだけ急いで現地へ行き、 あの野蛮人どもを湖の反対側へ追い払ってくれ！
 qstr_If_you_seek_pillage_|{playername}よ、 もし略奪して荒らしまわる機会を探しているのなら、 これはまたとない好機であろう。^^これより海賊船が{s7}より出航する。 目的地は、熟して摘み取られるのを待っている{s6}だ！ 作戦に参加して、戦利品にありつくがよい！
 qstr_The_soft_weaklings_o|{playername}よ、 ひ弱なエスガロスの連中など、 我々の機敏な騎兵と獰猛な戦士の相手ではない。 これはやつらも自覚しておるだろう。 あの湖の民は我々との間に湖があるため、 自分たちは安全であると考えておる。 だが、間もなくその考えは間違っていたと思い知るであろう！^^我々は戦士たちを乗せて湖を渡るのにじゅうぶんな、 小舟といかだを用意した。これは予想できまい！^^もしこの襲撃作戦におぬしも加わろうと考えるなら、 我々の野営本陣へ行き、野営の責任者にその旨を伝えるがよい。
 qstr_{s9}_asked_you_to_he|{s9}の要請により、海賊の襲撃から {s3}を守ることとなった。 現地へ急行して現場責任者に会い、 現地の守備隊と合流しよう。

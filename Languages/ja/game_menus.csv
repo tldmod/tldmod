@@ -291,7 +291,7 @@ menu_town_brawl_won|^^^^^あなたが敵をすべて倒すと、 騒動を聞き
 menu_close|何でもない。
 menu_town|{s60}に到着しました。{s12}{s13}
 mno_town_menu_0|その辺をうろうろする。
-mno_town_menu_0_door|どこかへ通じる扉。
+; mno_town_menu_0_door|Inspect...
 mno_town_approach|{s1}へ向かう・・・
 mno_town_castle|{s1}に行く。
 mno_town_castle_door|城に入る。
@@ -387,9 +387,6 @@ mno_defend_refugees|襲ってくる者がいないか、注意を怠るな・・
 mno_attack_refugees|難民の群れを襲う・・・
 mno_leave_refugees|一旦やり過ごす・・・
 mno_evil_war_tut_continue|続ける・・・
-menu_guardian_party_quest|{s8}からの伝令によると、 後のないアイゼンガルドは 最後の企みの準備を完了したとの事です。 このアイゼンガルドとの最後の戦いに、 あなたも参加するように要請されています。 最低でも{reg13}名の兵を連れて行く必要があります。 兵が足りなければ、 急いで戦士を補充するように求められています。
-mno_guardian_party_reject|参加することはできない、と伝える。
-mno_guardian_party_send_word|すぐにはせ参じる、と伝える。
 menu_alternate_training_fight|{reg5}名を相手にします。準備はよろしいですか？
 mno_training_continue|訓練をはじめる・・・
 menu_alternate_training_conclusion|{s5}
@@ -443,6 +440,8 @@ menu_death|あなたは殺されました。 戦争の猛威はいまだ弱ま�
 menu_animal_ambush|あなたとコンパニオンは、他の兵とはぐれてしまいました。すると突然・・・
 menu_animal_ambush_success|{s2}{reg0?の一群は:は}、 あなたの前に、 鎌に刈られる小麦のようになぎ倒されました！ 地面に横たわり、 ぴくりとも動きません。 {s3}
 menu_animal_ambush_fail|獣どもはあなた{reg0?:とコンパニオン{reg2?たち:}}に噛み付き、 突進してきましたが、 あなたはなんとか彼らを追い払うことができました。 これであきらめてくれることを願いましょう。
+; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
+; mno_isengard_continue|Continue
 menu_build_your_scene|下に用意されたスロットのうちのひとつをエディットモードで編集して、 あなたの手で戦場シーンをつくる事ができます。 (M&Bのランチャーの設定でエディットモードをONにしたうえで、 任意のシーンを開いた状態でCtrl+Eを押すとエディットモードになります)。 あなたの作った戦場シーン (TLD/SceneObjフォルダにあるscoファイルです) をTLDの開発チームに送ってくれれば (出来が良ければの話ですが)、 戦場のうちのひとつとしてゲームに登場するかも知れません！^^どの地域で使われる事を想定したシーンなのかを明確にするようにしてください。^ちょっとしたヒントです:深い水場や、険しい山といった侵入不可な地形を登場させるのは、 AIが地形上をどのように移動するのかをしっかりと理解してからにしましょう。^(#0-1は攻撃側、#4は守備側のマップです。#5-8は編集しないでください)
 mno_scene1|Plain Big (file scn custom 1.sco)
 mno_scene2|Plain Med (file scn custom 2.sco)

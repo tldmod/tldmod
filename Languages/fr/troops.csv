@@ -984,10 +984,6 @@ trp_dunland_lord_pl|Chef
 trp_beorn_lord|Chef Grimbeorn le Vieux
 trp_beorn_lord_pl|Chef
 trp_lorien_marshall|Celeborn
-trp_pippin_notmet|Demi-homme
-trp_merry_notmet|Demi-Homme
-trp_pippin|Pippin
-trp_merry|Merry
 trp_knight_1_1|Angbor l'Intrépide
 trp_knight_1_2|Húrin des Clefs
 trp_knight_1_3|Prince Imrahil
@@ -1644,3 +1640,10 @@ trp_a5_dism_elite_skirmisher_of_rohan|Tirailleur d'élite du Rohan
 trp_a5_dism_elite_skirmisher_of_rohan_pl|Tirailleurs d'élite du Rohan
 trp_ac5_camel_rider|Cavalier sur dromadaire du Harad
 trp_ac5_camel_rider_pl|Cavaliers sur dromadaire du Harad
+; trp_aragorn|Aragorn
+; trp_legolas|Legolas
+; trp_gimli|Gimli
+trp_pippin_notmet|Demi-homme
+trp_merry_notmet|Demi-Homme
+trp_pippin|Pippin
+trp_merry|Merry

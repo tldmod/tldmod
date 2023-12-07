@@ -578,6 +578,22 @@ qstr_Thank_you_Mithrandir|Merci, Mithrandir !
 qstr_The_wizard_Saruman_i|Le magicien Saruman est parti et Barad-Dûr a été réduite en poussière avec son Seigneur Sombre ! Tous les peuples de la Terre du Milieu sont délivrés de la menace qui a bien failli consumer tout ce qui était bon et pur en ce monde. L'ennemi est vaincu et le roi est de retour !
 qstr_It_was_a_long_and_bl|Ce fût une longue et sanglante guerre, et beaucoup de nos amis proches ne sont plus de ce monde.
 qstr_There_is_much_to_reg|Il y a beaucoup à regretter et à pleurer, et encore plus à reconstruire et à réparer dans les jours à venir. Mais pour l'instant, soyons radieux avec ceux de nos amis qui sont toujours avec nous et célébrons tout ce que nous avons accompli dans Les Derniers Jours du Troisième Âge.
+; qstr_Orcs_are_marching_ag|Orcs are marching against Helm's Deep.
+; qstr_Orcs_are_marching_aga|Orcs are marching against Edoras.
+; qstr_Ah_{playername}_happ|Ah, {playername}, happy chance that we come on each other in this fashion! Grim tidings I bring from Western Rohan, and haste is sore needed.
+; qstr_What_tidings_do_you_|What tidings do you bring, Mithrandir? What can I do?
+; qstr_Saruman_has_loosed_I|Saruman has loosed Isengard upon Rohan. {s1} For the success of my designs, the valiant Rohirrim must not fall, {playername}! The danger to them is very great, yet also the emptying of Isengard has left it vulnerable, for Saruman has despatched his full strength against Theoden King. This may be the time to move into Nan Curunir. A choice is now laid before you, Commander, a choice you must make, for neither you nor I may be everywhere at once!
+; qstr_Do_you_want_me_to_he|Do you want me to help King Theoden defend {s3}, or hasten to Isengard and see what I can do?
+; qstr_Either_would_be_a_gr|Either would be a great boon to me. You must decide your course on your own, {playername}, as shall I. Shadowfax shall bear me now on a swift errand. You must act quickly as well! Hasten now!
+; qstr_Gandalf_asked_you_to|Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard.
+qstr_Ents|Ents
+; qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope.
+; qstr_Missing_String|Missing String
+; qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
+; qstr_Hail_{playername}!_I_|Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!
+; qstr_Your_deed_has_greatl|Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!
+; qstr_{Playername}_I_will_|{Playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
+; qstr_You_have_failed_me_{|You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not.
 qstr_Bagginsssss..._Ssssh|Besssssssac... Comté...
 qstr_I..._don_t_know!|Je... ne sais pas !
 qstr_It..._beckonsssssss.|Il... m'appeeeeelle...
@@ -596,8 +612,11 @@ qstr_The_forces_of_{s2}_m|Les forces de {s2} marchent sur {s15} !
 qstr_Rohan_capital_moved_|La capitale du Rohan est déplacée d'Edoras à la Ferté-au-Cor !
 qstr_Dale_capital_moved_f|La capitale du Val à été déplacée du Val à Esgaroth !
 qstr_Gundabad_capital_mov|La capitale du Gundabad à été déplacé de Gundabad à Ville des Gobelins !
+; qstr_You_have_breached_th|You have breached the Ring of Isengard with the help of the Tree Men. During the battle, Isengard was flooded, but Orthanc still stands unscathed in midst of the havoc. You should investigate the aftermath.
 qstr_The_hosts_of_{s2}_re|Les armées de {s2} se replient jusqu’à leurs terres ! 
 qstr____Ruins_of_{s1}___| Ruines de {s1}
+; qstr_{s1}_has_joined_the_|{s1} has joined the Hand
+; qstr_{s1}_has_joined_the_E|{s1} has joined the Eye
 qstr_ranks|rangs
 qstr_shield_wall|mur de boucliers
 qstr_wedge|coin
@@ -663,6 +682,9 @@ qstr_loses_Faction_Strength|perd de la Force de faction suite au raid destructeu
 qstr_loses_Faction_Strength_|perd de la Force de faction suite à votre succès en mer.
 qstr_You_spent_{reg67}_of|Vous dépensez {reg67} de votre influence avec {s1}, il vous en reste {reg66}.
 qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?se trouvait:se trouve} dans les environs de {s5}.
+; qstr_Army_of_{s6}|Army of {s6}
+; qstr_Host_of_{s6}|Host of {s6}
+; qstr_The_host_of_Isengard|The host of Isengard has razed {s2}!
 qstr_{s1}_{s0}|{s1}, {s0}
 qstr_{s1}_and_{s0}|{s1} et {s0}
 qstr_No_Troops_Left.|Plus de soldats.
@@ -725,6 +747,7 @@ qstr_You_shapeshift_into_|Vous vous transformez en ours !
 qstr_You_got_{reg1}_exper|Vous avez obtenu {reg1} XP sous votre forme d'ours
 qstr_Your_ability_to_chan|Votre aptitude à changer de peau s'est manifestée, à partir de maintenant vous pourrez parcourir la nature comme un homme ou comme un ours.
 qstr_You_change_back_to_h|Vous reprenez forme humaine...
+; qstr_Refill_Ammunition|Refill Ammunition
 qstr_Your_mount_stumbles!|Votre monture trébuche ! Elle semble boiter.
 qstr_Bitten_by_your_own_w|Mordu par votre propre warg !
 qstr_You_weigh_too_much_f|Vous êtes trop lourd pour un poney !
@@ -1041,6 +1064,8 @@ qstr_You_have_fallen._The|Vous êtes tombé{/e}. Les bandits fouillent rapidemen
 qstr_Luckily_some_of_your|Par chance, certains de vos compagnons ne vous voyant pas revenir partent à votre recherche et vous trouvent gisant dans le fossé. Ils vous emmènent en lieu sûr et pansent vos blessures.
 qstr_Luckily_some_passing|Par chance, quelques badaud locaux vous trouvent gisant dans le fossé et reconnaissent en vous quelqu'un d'autre qu'un simple mendiant. Ils vous emmènent en lieu sûr et pansent vos blessures.
 qstr_{s13}^^You_have_succ|{s13}^^Vous vous êtes infiltré{/e} avec succès.
+; qstr_The_tomb_is_destroye|The tomb is destroyed. A fierce fight took place here.
+; qstr_Nothing_of_interest|Nothing of interest
 qstr_the_place|l'endroit
 qstr_the_castle|au château
 qstr_the_Throne_Room|la salle du trône
@@ -1112,8 +1137,6 @@ qstr_Breaking_camp...|Le groupe lève le camp...
 qstr_Party_morale_is_low.|Le moral du groupe est bas. Des soldats désertent de votre groupe.
 qstr_Desertion|Désertion
 qstr_{s1}_has_deserted_fr|{s1} a déserté de votre groupe
-qstr_You_don_t_have_enoug|Vous n'avez pas suffisamment de troupes pour garder tous vos prisonniers. Leur chance de s'échapper augmente.
-qstr_{s1}_has_escaped_fro|{s1} s'est échappé de votre groupe.
 qstr_You_have_left_{s1}.|Vous avez quitté {s1}.
 qstr_You_are_entering_{s1|Vous entrez dans {s1} ({s2}).
 qstr_You_are_entering_{s1}|vous entrez dans {s1}.
@@ -1247,6 +1270,8 @@ qstr_Ask_him_if_he_has_an|Demandez-lui s'il lui reste de l'herbe à pipe !
 qstr_Tell_him_I_ll_be_the|Dites-lui que je serai plus grand que lui à notre prochaine rencontre !
 qstr_Ask_if_he_s_seen_Gan|Demandez-lui s'il à vu Gandalf !
 qstr_You_gained_250_exper|Vous gagnez 250 points d'expérience.
+; qstr_Hrooom..._Hmmm...Who|Hrooom... Hmmm...Who are you?
+; qstr_Hrooom..._Hmmm...Oh_|Hrooom... Hmmm...Oh, it's you again, {playername}.
 qstr_Treebeard_wants_you_|Barbebois vous demande de trouver et de tuer les orques qui coupent les arbres de Fangorn.
 qstr_Something_wrong_not_e|Quelque chose ne va pas, pas assez de soldats pour créer un groupe d'éclaireurs
 qstr_my_home_town|ma ville
@@ -1470,8 +1495,8 @@ qstr_I_want_you_and_your_|Je veux que vous et vos hommes tuiez
 qstr_{playername}_you_nee|{playername}, vous devez gagnez mon respect et celui de vos hommes. {s6} {reg22} soldats {s7} !
 qstr_{s9}_wants_you_to_per|{s9} veut que vous tuiez personnellement {reg22} soldats {s6}.
 qstr_{s9}_wants_you_and_y|{s9} veut que vous et vos hommes tuiez {reg22} soldats {s6}.
-qstr_{playername}_we_have_|{playername}, nous avons reçu de mauvaises nouvelles. Les corsaires d'Umbar sont de plus en plus audacieux et, en ce moment même, une flotte se rassemble non loin de {s6}. Ils sont déjà sur la côte et bientôt sur la ville même.^^ Nous devons intercepter la flotte avant qu’elle n’atteigne la ville. Partez pour {s6} et parlez aux autorités locales.
-qstr_{playername}_we_have_r|{playername}, nous avons reçu de mauvaises nouvelles. Les sauvages de Rhûn ont plus de ruse et d’audace que nous ne le pensions : inaperçus de nos éclaireurs, ils ont construit suffisamment de bateaux et de radeaux pour les transporter sur le Long Lac, et ils frappent directement Esgaroth !^^ Nous devons intercepter la flotte avant qu'elle n'atteigne la ville. Conduisez vos troupes là-bas le plus rapidement possible et repoussez les barbares sur l'eau !
+qstr_{playername}_we_have|{playername}, nous avons mis l'Isengard à genoux. Ils ont réunis leurs dernières troupes pour un combat final et protègent Saruman caché dans sa tour. Chevauchez avec moi et allons à leur rencontre !
+qstr_{playername}_we_have_|{playername}, nous avons reçu de mauvaises nouvelles. Les sauvages de Rhûn ont plus de ruse et d’audace que nous ne le pensions : inaperçus de nos éclaireurs, ils ont construit suffisamment de bateaux et de radeaux pour les transporter sur le Long Lac, et ils frappent directement Esgaroth !^^ Nous devons intercepter la flotte avant qu'elle n'atteigne la ville. Conduisez vos troupes là-bas le plus rapidement possible et repoussez les barbares sur l'eau !
 qstr_If_you_seek_pillage_|Si vous avez soif de pillage, voici une occasion sans pareille, {playername}.^^ Une flotte de corsaires quitte le port de {s7} et se rendra à {s6} qui est mûre pour la cueillette ! Rejoignez-les dans leur assaut et partagez le butin !
 qstr_The_soft_weaklings_o|Les mauviettes d'Esgaroth ne sont pas de taille pour nos rapides cavaliers et féroces guerriers, {playername}, c'est bien connu. Les hommes du lac se croient en sécurité, de l'autre côté de l'eau, mais nous leur montrerons bientôt le contraire !^^ Nous avons fabriqué des bateaux et des radeaux, assez bons pour transporter nos guerriers sur le lac. Ils ne s'attendront pas à nous voir !^^ Allez au camp principal et parlez au commandant du camp si vous souhaitez participer à l'assaut.
 qstr_{s9}_asked_you_to_he|{s9} vous a demandé de défendre {s3} contre un raid corsaire. Chevauchez jusqu’à la cité, parlez au maître de guilde et prêtez main forte à la garnison.

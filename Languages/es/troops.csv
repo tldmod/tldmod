@@ -984,10 +984,6 @@ trp_dunland_lord_pl|Jefe
 trp_beorn_lord|Jefe Grimbeorn El Viejo
 trp_beorn_lord_pl|Jefe
 trp_lorien_marshall|Celeborn
-trp_pippin_notmet|Mediano
-trp_merry_notmet|Mediano
-trp_pippin|Pippin
-trp_merry|Merry
 trp_knight_1_1|Angbor el Intrépido
 trp_knight_1_2|Húrin de las Llaves
 trp_knight_1_3|Príncipe Imrahil
@@ -1644,3 +1640,10 @@ trp_a5_dism_elite_skirmisher_of_rohan|Escaramuzador de Élite de Rohan
 trp_a5_dism_elite_skirmisher_of_rohan_pl|Escaramuzadores de Élite de Rohan
 trp_ac5_camel_rider|Jinete a camello Haradrim
 trp_ac5_camel_rider_pl|Jinetes a camello Haradrim
+; trp_aragorn|Aragorn
+; trp_legolas|Legolas
+; trp_gimli|Gimli
+trp_pippin_notmet|Mediano
+trp_merry_notmet|Mediano
+trp_pippin|Pippin
+trp_merry|Merry

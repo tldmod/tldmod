@@ -291,7 +291,7 @@ menu_town_brawl_won|^^^^^Pobedio si protivnike, i strazar dolazi da izvidi situa
 menu_close|Ništa.
 menu_town|Dosao si u {s60}.{s12}{s13}
 mno_town_menu_0|Idi na neku lokaciju.
-mno_town_menu_0_door|Vrata za neku lokaciju.
+; mno_town_menu_0_door|Inspect...
 mno_town_approach|Pridji {s1}...
 mno_town_castle|Idi u {s1}
 mno_town_castle_door|Vrata od zamka.
@@ -387,9 +387,6 @@ mno_raid_villagers|Napdni selo!
 ; mno_attack_refugees|Attack the refugee train...
 ; mno_leave_refugees|Leave them for now...
 mno_evil_war_tut_continue|Nastavi...
-; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
-; mno_guardian_party_reject|Send a message you cannot join him.
-mno_guardian_party_send_word|Pošalji poruku da ćeš mu se uskoro pridružiti.
 ; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
 ; mno_training_continue|Begin training...
 ; menu_alternate_training_conclusion|{s5}
@@ -443,6 +440,8 @@ menu_death|Ubijen si. Iako rat idalje besni, ti u njemu vise neces ucestvovati.
 menu_animal_ambush|Ti i tvoji saborci bivate odvojeni od ostatka grupa, kada odjednom...
 menu_animal_ambush_success|{s2} {reg0?fall:falls} je pred tebe kao zito sto pada od kose! Uskoro, svi tvoji napadaci leze na zemlji, mrtvi ili ranjeni. {s3}
 menu_animal_ambush_fail|Zivotinje te grizu i vuku te{reg0?,: i tvog saborca{reg2?s,:,}} ali srecom si uspeo da ih udaljis. Uz malo srece, nece te vise dirati.
+; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
+; mno_isengard_continue|Continue
 ; menu_build_your_scene|You can build your own battle scene, using one of the slots provided below and the game edit mode  (you need to switch edit mode ON in M&B lauching screen Options first, then press Ctrl+E within a scene to access the edit mode).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
 ; mno_scene1|Plain Big (file scn custom 1.sco)
 ; mno_scene2|Plain Med (file scn custom 2.sco)

@@ -984,10 +984,6 @@ trp_dunland_lord_pl|족장
 trp_beorn_lord|연로한 그림베오른 족장
 trp_beorn_lord_pl|족장
 trp_lorien_marshall|켈레보른
-trp_pippin_notmet|하플링
-trp_merry_notmet|하플링
-trp_pippin|피핀
-trp_merry|메리
 trp_knight_1_1|"용감한" 앙그보르
 trp_knight_1_2|"장신의" 후린
 trp_knight_1_3|임라힐 대공
@@ -1644,3 +1640,10 @@ trp_a5_dism_elite_skirmisher_of_rohan|로한 정예 척후병
 trp_a5_dism_elite_skirmisher_of_rohan_pl|로한 정예 척후병
 ; trp_ac5_camel_rider|Harad Camel Rider
 ; trp_ac5_camel_rider_pl|Harad Camel Riders
+; trp_aragorn|Aragorn
+; trp_legolas|Legolas
+; trp_gimli|Gimli
+trp_pippin_notmet|하플링
+trp_merry_notmet|하플링
+trp_pippin|피핀
+trp_merry|메리

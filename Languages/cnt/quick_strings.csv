@@ -578,6 +578,22 @@ qstr_Thank_you_Mithrandir|謝謝你，米斯蘭達！
 qstr_The_wizard_Saruman_i|巫師薩魯曼已逝而黑邪塔連同其黑暗之主也被粉碎！中土世界的人民已從近乎吞噬世上所有美好與聖潔的威脅下得到解放。敵人被擊敗且王已回歸！
 qstr_It_was_a_long_and_bl|在這個漫長而血腥的戰爭後我們有許多摯友已經不在了。
 qstr_There_is_much_to_reg|我們有著許多的遺憾和悲傷，而未來還有更多的事物等著我們去重建和修繕。但現在，讓我們與仍在身邊的朋友一起慶祝我們在第三紀元的最後之日所達成的豐功偉業吧！
+; qstr_Orcs_are_marching_ag|Orcs are marching against Helm's Deep.
+; qstr_Orcs_are_marching_aga|Orcs are marching against Edoras.
+; qstr_Ah_{playername}_happ|Ah, {playername}, happy chance that we come on each other in this fashion! Grim tidings I bring from Western Rohan, and haste is sore needed.
+; qstr_What_tidings_do_you_|What tidings do you bring, Mithrandir? What can I do?
+; qstr_Saruman_has_loosed_I|Saruman has loosed Isengard upon Rohan. {s1} For the success of my designs, the valiant Rohirrim must not fall, {playername}! The danger to them is very great, yet also the emptying of Isengard has left it vulnerable, for Saruman has despatched his full strength against Theoden King. This may be the time to move into Nan Curunir. A choice is now laid before you, Commander, a choice you must make, for neither you nor I may be everywhere at once!
+; qstr_Do_you_want_me_to_he|Do you want me to help King Theoden defend {s3}, or hasten to Isengard and see what I can do?
+; qstr_Either_would_be_a_gr|Either would be a great boon to me. You must decide your course on your own, {playername}, as shall I. Shadowfax shall bear me now on a swift errand. You must act quickly as well! Hasten now!
+; qstr_Gandalf_asked_you_to|Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard.
+qstr_Ents|樹人
+; qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope.
+; qstr_Missing_String|Missing String
+; qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
+; qstr_Hail_{playername}!_I_|Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!
+; qstr_Your_deed_has_greatl|Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!
+; qstr_{Playername}_I_will_|{Playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
+; qstr_You_have_failed_me_{|You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not.
 qstr_Bagginsssss..._Ssssh|巴金斯… 夏爾…
 qstr_I..._don_t_know!|我...不知道！
 qstr_It..._beckonsssssss.|它... 在招手...
@@ -596,8 +612,11 @@ qstr_The_forces_of_{s2}_m|{s2}的部隊正在向{s15}邁進！
 qstr_Rohan_capital_moved_|洛汗的首都已從伊多拉斯遷至號角堡！
 qstr_Dale_capital_moved_f|河谷鎮的首都已從河谷鎮遷至長湖鎮！
 qstr_Gundabad_capital_mov|剛達巴的首都已從剛達巴遷至哥布林鎮！
+; qstr_You_have_breached_th|You have breached the Ring of Isengard with the help of the Tree Men. During the battle, Isengard was flooded, but Orthanc still stands unscathed in midst of the havoc. You should investigate the aftermath.
 qstr_The_hosts_of_{s2}_re|{s2}的大軍撤回他們的家園了！
 qstr____Ruins_of_{s1}___|{s1}的廢墟
+; qstr_{s1}_has_joined_the_|{s1} has joined the Hand
+; qstr_{s1}_has_joined_the_E|{s1} has joined the Eye
 qstr_ranks|列陣
 qstr_shield_wall|盾牆
 qstr_wedge|楔形陣
@@ -663,6 +682,9 @@ qstr_loses_Faction_Strength|由於遭到毀滅性的襲擊而失去了陣營力�
 qstr_loses_Faction_Strength_|由於你在海上的成功而失去了陣營力量。
 qstr_You_spent_{reg67}_of|你使用了對{s1}的{reg67}影響力，還剩下{reg66}。
 qstr_{s2}_{reg3?was:is_ar|{s2}{reg3?曾在:正在{s5}附近。
+; qstr_Army_of_{s6}|Army of {s6}
+; qstr_Host_of_{s6}|Host of {s6}
+; qstr_The_host_of_Isengard|The host of Isengard has razed {s2}!
 qstr_{s1}_{s0}|{s1}，{s0}
 qstr_{s1}_and_{s0}|{s1}和{s0}
 qstr_No_Troops_Left.|沒有剩下任何部隊。
@@ -725,6 +747,7 @@ qstr_You_shapeshift_into_|你變形成一頭熊！
 qstr_You_got_{reg1}_exper|你在熊型態下獲得{reg1}經驗值。
 qstr_Your_ability_to_chan|你變身的能力已經覺醒了，現在起你可以用人或熊的型態繼續旅途。
 qstr_You_change_back_to_h|你變回人形...
+; qstr_Refill_Ammunition|Refill Ammunition
 qstr_Your_mount_stumbles!|你的坐騎步履蹣跚！看來是瘸了。
 qstr_Bitten_by_your_own_w|你被自己的座狼咬了！
 qstr_You_weigh_too_much_f|你對小馬來說太重了！
@@ -1041,6 +1064,8 @@ qstr_You_have_fallen._The|你被打倒了。強盜們迅速的從你身上搜刮
 qstr_Luckily_some_of_your|幸運的是你的同伴見你沒有按時返回所以出來找你，並發現了倒在水溝中的你。他們把你扛到了安全處並包紮了你的傷口。
 qstr_Luckily_some_passing|幸運的是一些路過的當地人發現了倒在水溝中的你，並認出了你不是平凡的乞丐。他們把你扛到了安全處並包紮了你的傷口。
 qstr_{s13}^^You_have_succ|{s13}^^你成功的潛入了。
+; qstr_The_tomb_is_destroye|The tomb is destroyed. A fierce fight took place here.
+; qstr_Nothing_of_interest|Nothing of interest
 qstr_the_place|當地
 qstr_the_castle|城堡
 qstr_the_Throne_Room|王座大廳
@@ -1112,8 +1137,6 @@ qstr_Breaking_camp...|拔營...
 qstr_Party_morale_is_low.|部隊士氣過低，士兵離開了你的部隊。
 qstr_Desertion|逃兵
 qstr_{s1}_has_deserted_fr|{s1} 離開了你的隊伍。
-qstr_You_don_t_have_enoug|隊伍人數不足以看管俘虜，逃跑的機率增加。
-qstr_{s1}_has_escaped_fro|{s1} 逃離了你的部隊。
 qstr_You_have_left_{s1}.|你離開了{s1}。
 qstr_You_are_entering_{s1|你進入了{s1}({s2})。
 qstr_You_are_entering_{s1}|你進入了{s1}。
@@ -1247,6 +1270,8 @@ qstr_Ask_him_if_he_has_an|問他還有沒有剩下任何煙斗草！
 qstr_Tell_him_I_ll_be_the|告訴他我們再見時我會是比較高的那個的！
 qstr_Ask_if_he_s_seen_Gan|問他有沒有見到甘道夫！
 qstr_You_gained_250_exper|你獲得了250經驗值。
+; qstr_Hrooom..._Hmmm...Who|Hrooom... Hmmm...Who are you?
+; qstr_Hrooom..._Hmmm...Oh_|Hrooom... Hmmm...Oh, it's you again, {playername}.
 qstr_Treebeard_wants_you_|樹鬍想要你找到并打敗在法貢森林伐木的半獸人。
 qstr_Something_wrong_not_e|有點問題，沒有足夠的部隊組成斥候隊伍
 qstr_my_home_town|我的故鄉
@@ -1470,8 +1495,8 @@ qstr_I_want_you_and_your_|我要你和你的人馬去殺
 qstr_{playername}_you_nee|{playername}，你需要贏得我和你手下的敬重。{s6}{reg22}名來自{s7}的部隊！
 qstr_{s9}_wants_you_to_per|{s9}要你親自去殺{reg22}名{s6}的部隊。
 qstr_{s9}_wants_you_and_y|{s9}要你和你的手下去殺{reg22}名{s6}的部隊。
-qstr_{playername}_we_have_|{playername}，我們收到了嚴峻的消息。昂巴的海盜變得越來越大膽，在我們說話的同時，一支艦隊正在離{s6}不遠處聚集。他們沿著海岸線打劫，很快就會到達城市本身了。我們必須在艦隊抵達城市前攔截它。快點前往{s6}，剩下的則跟地方官談吧。
-qstr_{playername}_we_have_r|{playername}，我們收到了嚴峻的消息。盧恩的蠻族比我們想像的更加狡猾和大膽-躲過我們斥候的偵測，他們建造了足夠的船隻和木筏來穿越長湖，並會直接對長湖鎮發起攻勢！我們必須在艦隊抵達城市前攔截它。帶領你的部隊盡可能迅速的到那裡，把野蠻人趕回湖泊的另一邊吧！
+qstr_{playername}_we_have|{playername}，我們幾乎打倒了艾辛格。他們發起了最後一搏來保護在塔裡的薩魯曼。跟我一起去會會他們吧！
+qstr_{playername}_we_have_|{playername}，我們收到了嚴峻的消息。盧恩的蠻族比我們想像的更加狡猾和大膽-躲過我們斥候的偵測，他們建造了足夠的船隻和木筏來穿越長湖，並會直接對長湖鎮發起攻勢！我們必須在艦隊抵達城市前攔截它。帶領你的部隊盡可能迅速的到那裡，把野蠻人趕回湖泊的另一邊吧！
 qstr_If_you_seek_pillage_|如果你想要燒殺擄掠，這會是個錯過就沒了的好機會喔，{playername}。一支海盜的艦隊正從{s7}的港口出發，並將一路航向{s6}，其本身充滿著甜美的果實等著摘採！加入他們的進攻，好好享用戰利品吧！
 qstr_The_soft_weaklings_o|{playername}，長湖鎮的弱者們無法匹敵我們迅速的騎兵和勇猛的戰士。這是眾所皆知的。躲在湖泊的對面，長湖鎮的人以為自己很安全，但我們很快就會給他們一個驚喜！^^我們造了足夠的船隻，和木筏，來穿越大湖。他們絕對料想不到的！^^如果你想加入襲擊，那就前往主營地並跟營地指揮官談吧。
 qstr_{s9}_asked_you_to_he|{s9}要你幫助保衛{s3}免受海盜襲擊。趕緊前往城市與公會長交談，並向當地的駐軍提供援助吧。

@@ -984,10 +984,6 @@ trp_dunland_lord_pl|Chefe
 trp_beorn_lord|Chefe Grimbeorn o Velho
 trp_beorn_lord_pl|Chefe
 trp_lorien_marshall|Celeborn
-trp_pippin_notmet|Pequenino
-trp_merry_notmet|Pequenino
-trp_pippin|Pippin
-trp_merry|Merry
 trp_knight_1_1|Angbor o Destemido
 trp_knight_1_2|Húrin das Chaves
 trp_knight_1_3|Príncipe Imrahil
@@ -1644,3 +1640,10 @@ trp_a5_dism_elite_skirmisher_of_rohan|Escaramuçador de Elite de Rohan
 trp_a5_dism_elite_skirmisher_of_rohan_pl|Escaramuçadores de Elite de Rohan
 ; trp_ac5_camel_rider|Harad Camel Rider
 ; trp_ac5_camel_rider_pl|Harad Camel Riders
+; trp_aragorn|Aragorn
+; trp_legolas|Legolas
+; trp_gimli|Gimli
+trp_pippin_notmet|Pequenino
+trp_merry_notmet|Pequenino
+trp_pippin|Pippin
+trp_merry|Merry

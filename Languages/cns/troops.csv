@@ -984,10 +984,6 @@ trp_dunland_lord_pl|酋长
 trp_beorn_lord|郁比翁
 trp_beorn_lord_pl|酋长
 trp_lorien_marshall|凯勒鹏
-trp_pippin_notmet|半身人
-trp_merry_notmet|半身人
-trp_pippin|皮平
-trp_merry|梅里
 trp_knight_1_1|无畏者安格柏
 trp_knight_1_2|携匙者胡林
 trp_knight_1_3|印拉希尔亲王
@@ -1644,3 +1640,10 @@ trp_a5_dism_elite_skirmisher_of_rohan|洛汗精锐骑射手
 trp_a5_dism_elite_skirmisher_of_rohan_pl|洛汗精锐骑射手
 ; trp_ac5_camel_rider|Harad Camel Rider
 ; trp_ac5_camel_rider_pl|Harad Camel Riders
+; trp_aragorn|Aragorn
+; trp_legolas|Legolas
+; trp_gimli|Gimli
+trp_pippin_notmet|半身人
+trp_merry_notmet|半身人
+trp_pippin|皮平
+trp_merry|梅里
