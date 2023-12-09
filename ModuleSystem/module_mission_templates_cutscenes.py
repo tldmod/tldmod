@@ -1119,7 +1119,8 @@ mission_templates_cutscenes = [
       # ambience sounds
       (1, 0, ti_once, [], [			
          (try_begin),
-           (eq, "$g_tld_convo_talker", "trp_gandalf"),
+           (this_or_next|eq, "$g_tld_convo_talker", "trp_gandalf"),
+           (eq, "$g_tld_convo_talker", "trp_radagast"),
            (play_sound, "snd_wind_ambiance", sf_looping),
          (else_try),
            (play_sound, "snd_morgul_ambiance", sf_looping),
@@ -1222,7 +1223,8 @@ mission_templates_cutscenes = [
 
            #Set text color
            (try_begin),
-             (eq, "$g_tld_convo_talker", "trp_gandalf"),
+             (this_or_next|eq, "$g_tld_convo_talker", "trp_gandalf"),
+             (eq, "$g_tld_convo_talker", "trp_radagast"),
              (overlay_set_color, "$g_presentation_obj_1", 0x80FF80), #Gandalf: green
            (else_try),
              (overlay_set_color, "$g_presentation_obj_1", 0xFF8080), #Nazgul: red
@@ -1245,7 +1247,8 @@ mission_templates_cutscenes = [
              (mission_cam_set_position, pos1),
              #Set text color
              (try_begin),
-               (eq, "$g_tld_convo_talker", "trp_gandalf"),
+               (this_or_next|eq, "$g_tld_convo_talker", "trp_gandalf"),
+               (eq, "$g_tld_convo_talker", "trp_radagast"),
                (overlay_set_color, "$g_presentation_obj_1", 0x80FF80), #Gandalf: green
              (else_try),
                (overlay_set_color, "$g_presentation_obj_1", 0xFF8080), #Nazgul: red

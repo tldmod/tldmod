@@ -412,4 +412,6 @@ party_templates = [
 
 ## Kham - Retreat Troops
 ("retreat_troops","Cover Troops",icon_axeman|carries_goods(3),0,fac_outlaws,merchant_personality,[(trp_farmer,1,1)]),
+
+("radagast", "Lone Rider",icon_generic_knight|pf_default_behavior|pf_quest_party|pf_hide_defenders,0,fac_neutral,merchant_personality,[(trp_radagast,1,1)]),
 ] + common_warp_templates

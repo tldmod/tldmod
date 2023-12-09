@@ -3181,9 +3181,10 @@ troops = [
    [itm_uruk_greaves,itm_evil_gauntlets_a,itm_nazgulrobe,itm_empty_head,itm_nazgul_sword,itm_mordor_warhorse2,],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
-["quick_battle_6_player","quick_battle_6_player","_",tf_hero,0,0,fac_player_faction,
-   [itm_leather_jerkin,itm_leather_boots,itm_corsair_bow,itm_corsair_arrows,],
-      knight_attrib_1,wp(130),knight_skills_1|knows_riding_4,0x000000000008010b01f041a9249f65fd],
+["radagast","Radagast","Home-grown Gandalves",tf_hero| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
+   [itm_hunter,itm_woodman_scout_cloak,itm_leather_boots,itm_dale_sword_long,itm_beorn_staff],
+      attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10|knows_shield_10,0x0000000d5c00428966e28f496d95b91b00000000001da51c0000000000000000],
+
 # GA scene stub NPCs
 ["barman","Barman","_",tf_hero| tf_randomize_face,0,0,fac_neutral,
    [itm_leather_jerkin,itm_leather_boots,],

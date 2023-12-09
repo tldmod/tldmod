@@ -13376,6 +13376,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 # [anyone|plyr,"party_encounter_enemy", [(neg|encountered_party_is_attacker)], "Not this time. Begone.", "close_window", [(assign, "$g_leave_encounter",1)]],
 
 [anyone,"start", [(eq, "$talk_context", tc_party_encounter),
+                  (this_or_next|eq, "$g_encountered_party_template", "pt_radagast"),
                   (eq, "$g_encountered_party_template", "pt_gandalf"),
                   (eq, "$g_tld_gandalf_state", 0),], #not willing to talk
 "You are making me late! Wizards are never late!", "close_window", [(assign, "$g_leave_encounter", 1)]],

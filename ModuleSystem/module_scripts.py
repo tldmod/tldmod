@@ -23155,6 +23155,8 @@ scripts = [
 #Starts a cutscene according to the conversation number
 ("start_conversation_cutscene",[
     (store_script_param_1, ":convo_code"),
+    (call_script, "script_find_theater", "p_main_party"),
+    (assign, ":current_theater", reg0),
     
     #determine talker
     (try_begin),
@@ -23165,7 +23167,13 @@ scripts = [
       (this_or_next|eq, ":convo_code", tld_cc_gandalf_ally_down),
       (this_or_next|eq, ":convo_code", tld_cc_gandalf_enemy_down),
       (eq, ":convo_code", tld_cc_gandalf_victory),
-      (assign, "$g_tld_convo_talker", "trp_gandalf"),
+      (try_begin),
+        (this_or_next|eq, ":current_theater", theater_SE),
+        (eq, ":current_theater", theater_SW),
+        (assign, "$g_tld_convo_talker", "trp_gandalf"),
+      (else_try),
+        (assign, "$g_tld_convo_talker", "trp_radagast"),
+      (try_end),
     (else_try),
       (assign, "$g_tld_convo_talker", "trp_nazgul"),
     (try_end),
@@ -23229,7 +23237,12 @@ scripts = [
       (str_store_faction_name, s5, ":best_faction"),
       
       (str_store_string, s50, "@Good to see the Shadow has not yet managed to defeat you, {playername}."),
-      (str_store_string, s51, "@You are the one they call Gandalf or Mithrandir."),
+      (try_begin),
+        (eq, "$g_tld_convo_talker", trp_gandalf),
+        (str_store_string, s51, "@You are the one they call Gandalf or Mithrandir."),
+      (else_try),
+        (str_store_string, s51, "@You are the one they call Radagast."),
+      (try_end),
       (str_store_string, s52, "@That is what some call me. In my times I have also been called other things, but unless the Darkness is stopped, soon there may not be anyone left to call me anything at all."),
       (str_store_string, s53, "@What do you mean?"),
       (str_store_string, s54, "@In spite of their valiant resistance, {s3} has been overwhelmed by the forces of evil. {s3}'s people are scattered and the good {s4} is no more."),
@@ -23258,7 +23271,12 @@ scripts = [
       (call_script, "script_get_own_rank_title_to_s24", "$players_kingdom", reg0),
       
       (str_store_string, s50, "@Well met, {playername}, {s24}. My trust in you has not been misplaced. The might of the forces of the Shadow has been broken and your efforts played no small part in it!"),
-      (str_store_string, s51, "@Thank you, Mithrandir!"),
+      (try_begin),
+        (eq, "$g_tld_convo_talker", trp_gandalf),
+        (str_store_string, s51, "@Thank you, Mithrandir!"),
+      (else_try),
+        (str_store_string, s51, "@Thank you, Radagast!"),
+      (try_end),
       (str_store_string, s52, "@The wizard Saruman is gone and Barad Dur has been shattered to dust along with its Dark Lord! All the peoples of Middle Earth are relieved of the threat that nearly consumed all that was good and pure in this world. The Enemy is vanquished and The King has returned!"),
       (str_store_string, s53, "@It was a long and bloody war and many of our close friends are also no longer with us."),
       (str_store_string, s54, "@There is much to regret and mourn, and even more to rebuild and mend in the coming days. But for now, let us be jubilant with those of our friends that are with us still and celebrate all we have achieved in The Last Days Of The Third Age."),
@@ -23444,10 +23462,19 @@ scripts = [
       (this_or_next|eq, ":mission_code", tld_cc_gandalf_ally_down),
       (this_or_next|eq, ":mission_code", tld_cc_gandalf_enemy_down),
       (eq, ":mission_code", tld_cc_gandalf_victory),
-      (assign, ":mission_troop", "trp_gandalf"),
-      (assign, ":party_template", "pt_gandalf"),
       (assign, ":mission_troop_side", faction_side_good),
       (assign, ":state", "$g_tld_gandalf_state"),
+      (call_script, "script_find_theater", "p_main_party"),
+        (assign, ":current_theater", reg0),
+        (try_begin),
+            (this_or_next|eq, ":current_theater", theater_SE),
+            (eq, ":current_theater", theater_SW),
+            (assign, ":mission_troop", "trp_gandalf"),
+            (assign, ":party_template", "pt_gandalf"),
+        (else_try),
+            (assign, ":mission_troop", "trp_radagast"),
+            (assign, ":party_template", "pt_radagast"),
+        (try_end),
     (else_try),
       (assign, ":mission_troop", "trp_nazgul"),
       (assign, ":party_template", "pt_nazgul"),
@@ -23508,7 +23535,8 @@ scripts = [
     (assign, ":state", ":mission_code"), #this overwrites any previous mission, even if it was a conversation - more recent news are more important
     
     (try_begin),
-      (eq, ":mission_troop", "trp_gandalf"),
+      (this_or_next|eq, ":mission_troop", "trp_gandalf"),
+      (eq, ":mission_troop", "trp_radagast"),
       (assign, "$g_tld_gandalf_state", ":state"),
     (else_try),
       (assign, "$g_tld_nazgul_state", ":state"),
@@ -23523,7 +23551,8 @@ scripts = [
     
     #determine mission troop data
     (try_begin),
-      (eq, ":mission_troop", "trp_gandalf"),
+      (this_or_next|eq, ":mission_troop", "trp_gandalf"),
+      (eq, ":mission_troop", "trp_radagast"),
       (assign, ":mission_troop_side", faction_side_good),
     (else_try),
       (assign, ":mission_troop_side", faction_side_eye),
@@ -23549,7 +23578,8 @@ scripts = [
         (assign, ":nearest_town", "p_town_minas_tirith"),
       (try_end),
       (try_begin),
-        (eq, ":mission_troop", "trp_gandalf"),
+        (this_or_next|eq, ":mission_troop", "trp_gandalf"),
+        (eq, ":mission_troop", "trp_radagast"),
         (eq, "$g_tld_gandalf_state", tld_cc_gandalf_advice),
         (assign, ":nearest_town", "$g_tld_convo_subject"), #special case
       (try_end),
@@ -23566,7 +23596,8 @@ scripts = [
     (assign, ":state", 0), # we are done, but the party still exists
     
     (try_begin),
-      (eq, ":mission_troop", "trp_gandalf"),
+      (this_or_next|eq, ":mission_troop", "trp_gandalf"),
+      (eq, ":mission_troop", "trp_radagast"),
       (assign, "$g_tld_gandalf_state", ":state"),
     (else_try),
       (assign, "$g_tld_nazgul_state", ":state"),

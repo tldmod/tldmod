@@ -4985,6 +4985,7 @@ game_menus = [
           (assign, ":is_quest_party", 0),
           (try_begin),
             (this_or_next|eq, "$g_encountered_party_template", "pt_gandalf"),
+            (this_or_next|eq, "$g_encountered_party_template", "pt_radagast"),
             (this_or_next|eq, "$g_encountered_party_template", "pt_nazgul"),
             (this_or_next|eq, "$g_encountered_party_template", "pt_ents"),
             (eq, "$g_encountered_party_template", "pt_runaway_serfs"),
@@ -4999,6 +5000,7 @@ game_menus = [
 			(assign, "$new_encounter", 0),
 			(assign, "$talk_context", tc_party_encounter),
             (try_begin), #cutscene dialogs
+              (this_or_next|eq, "$g_encountered_party_template", "pt_radagast"),
               (eq, "$g_encountered_party_template", "pt_gandalf"),
               (gt, "$g_tld_gandalf_state", 0),
               (call_script, "script_start_conversation_cutscene", "$g_tld_gandalf_state"),
