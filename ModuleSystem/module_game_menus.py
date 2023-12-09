@@ -5615,6 +5615,7 @@ game_menus = [
 		  (str_store_string, s4, "str_order_attack_continue"),
           (try_begin), #make sure leader dies last, so their skills apply
                 (party_stack_get_troop_id, ":party_leader", "p_collective_enemy", 0),
+                (is_between, ":party_leader", soldiers_begin, trp_last), #just to be sure
                 (troop_is_hero, ":party_leader"),
                 (troop_set_health, ":party_leader", 100),
             (try_end),
@@ -7021,6 +7022,7 @@ game_menus = [
 		  (str_store_string, s4, "str_join_order_attack_continue"),
           (try_begin), #make sure leader dies last, so their skills apply
                 (party_stack_get_troop_id, ":party_leader", "p_collective_enemy", 0),
+                (is_between, ":party_leader", soldiers_begin, trp_last), #just to be sure
                 (troop_is_hero, ":party_leader"),
                 (troop_set_health, ":party_leader", 100),
           (try_end),
@@ -8175,6 +8177,7 @@ game_menus = [
           (str_store_string, s4, "str_attack_walls_continue"),
           (try_begin), #make sure leader dies last, so their skills apply
                 (party_stack_get_troop_id, ":party_leader", "$g_encountered_party", 0),
+                (is_between, ":party_leader", soldiers_begin, trp_last), #just to be sure
                 (troop_is_hero, ":party_leader"),
                 (troop_set_health, ":party_leader", 100),
            (try_end),
@@ -8266,6 +8269,7 @@ game_menus = [
           (str_store_string, s4, "str_attack_walls_continue"),
           (try_begin), #make sure leader dies last, so their skills apply
                 (party_stack_get_troop_id, ":party_leader", "p_collective_enemy", 0),
+                (is_between, ":party_leader", soldiers_begin, trp_last), #just to be sure
                 (troop_is_hero, ":party_leader"),
                 (troop_set_health, ":party_leader", 100),
           (try_end),
@@ -8599,6 +8603,7 @@ game_menus = [
           (str_store_string, s4, "str_siege_defender_order_attack_continue"),
           (try_begin), #make sure leader dies last, so their skills apply
                 (party_stack_get_troop_id, ":party_leader", "p_collective_enemy", 0),
+                (is_between, ":party_leader", soldiers_begin, trp_last), #just to be sure
                 (troop_is_hero, ":party_leader"),
                 (troop_set_health, ":party_leader", 100),
           (try_end),          

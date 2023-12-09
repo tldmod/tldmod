@@ -2694,6 +2694,7 @@ scripts = [
             (try_begin), #make sure leader dies last, so their skills apply
                 (gt, ":new_attacker_strength", 0),
                 (party_stack_get_troop_id, ":party_leader", ":root_attacker_party", 0),
+                (is_between, ":party_leader", soldiers_begin, trp_last), #just to be sure
                 (troop_is_hero, ":party_leader"),
                 (troop_set_health, ":party_leader", 100),
             (try_end),
@@ -2712,6 +2713,7 @@ scripts = [
             (try_begin), #make sure leader dies last, so their skills apply
                 (gt, ":new_defender_strength", 0),
                 (party_stack_get_troop_id, ":party_leader", ":root_defender_party", 0),
+                (is_between, ":party_leader", soldiers_begin, trp_last), #just to be sure
                 (troop_is_hero, ":party_leader"),
                 (troop_set_health, ":party_leader", 100),
             (try_end),

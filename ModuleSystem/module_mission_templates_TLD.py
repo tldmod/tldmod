@@ -1388,6 +1388,7 @@ formations_triggers = [
 			(class_is_listening_order, "$fplayer_team_no", reg0),
 			(val_add, ":num_bgroups", 1),
 		(try_end),		
+        (get_player_agent_no, "$fplayer_agent_no"), #can prevent script errors in rare cases
 		(agent_get_position, pos22, "$fplayer_agent_no"),		
 		(try_begin),
 			(neq, "$infantry_formation_type", formation_none),
