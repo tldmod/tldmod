@@ -2086,7 +2086,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 36),  #Rafa: Savegame version
+    (assign,"$savegame_version", 38),  #Rafa: Savegame version
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -25767,6 +25767,26 @@ command_cursor_scripts = [
         (call_script, "script_cancel_quest", "qst_deliver_message_hobbit"),
         (display_message, "@Hobbit quest aborted for compatibility reasons. Hobbits will now only appear after certain conditions are met."),
 	(try_end),	
+    
+    (try_begin), #Update Radagast for old savegames
+        (le, "$savegame_version", 37),
+        ] + (is_a_wb_script==1 and [
+        (call_script, "script_clone_troop", "trp_knight_4_12", "trp_radagast"),
+        ] or []) + [   
+        (troop_remove_item, "trp_radagast", itm_beorn_chief),
+        (troop_remove_item, "trp_radagast", itm_beorn_helmet),
+        (troop_remove_item, "trp_radagast", itm_evil_gauntlets_a),
+        (troop_remove_item, "trp_radagast", itm_beorn_shield_reward),
+        (troop_remove_item, "trp_radagast", itm_dwarf_throwing_axe),
+        (troop_remove_item, "trp_radagast", itm_beorn_shield_reward),
+        (troop_add_item, "trp_radagast", itm_woodman_scout, imod_cloak),
+        (troop_add_item, "trp_radagast", itm_hunter, 0),
+        (troop_add_item, "trp_radagast", itm_beorn_staff, 0),
+        (troop_raise_skill, trp_radagast, skl_riding, 8),
+        (troop_equip_items, "trp_radagast"),
+        (assign, "$savegame_version", 38),
+	(try_end),
+    
 ]),
 
 #Kham
