@@ -3183,7 +3183,7 @@ troops = [
 
 ["radagast","Radagast","Home-grown Gandalves",tf_hero| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
    [itm_hunter,itm_woodman_scout_cloak,itm_leather_boots,itm_dale_sword_long,itm_beorn_staff],
-      attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10|knows_shield_10,0x0000000d5c00428966e28f496d95b91b00000000001da51c0000000000000000],
+      attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10|knows_shield_10,0x0000000e430032832e09910bc353f94a00000000001ee0ce0000000000000000],
 
 # GA scene stub NPCs
 ["barman","Barman","_",tf_hero| tf_randomize_face,0,0,fac_neutral,
@@ -3562,15 +3562,15 @@ attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,o
 
 ["aragorn","Aragorn","_",tf_hero| tf_dunedain| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_imladris,
    [itm_leather_boots,itm_leather_gloves,itm_arnor_light_b_good_cloak,itm_riv_bas_sword,],
-      attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_riding_5|knows_persuasion_7|knows_power_draw_4,0x000000073f00300944db6e27226dc8ec00000000001d15210000000000000000],
+      attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_riding_5|knows_persuasion_7|knows_power_draw_4,0x00000002bf00114f269c66a89466598b00000000001d42db0000000000000000],
       
 ["legolas","Legolas","_",tf_hero| tf_woodelf| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_woodelf,
    [itm_lorien_light_good_cloak,itm_mirkwood_boots,itm_leather_gloves,itm_lorien_bow,itm_woodelf_arrows,itm_mirkwood_knife],
-      attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_persuasion_7|knows_power_draw_9,0x00000005ee00200a3fc36db75b6ab6db00000000001cb6db0000000000000000],
+      attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_persuasion_7|knows_power_draw_9,0x000000000d00100b5d6489458ca054f400000000001db4630000000000000000],
       
 ["gimli","Gimli","_",tf_hero| tf_dwarf| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_vest_b,itm_dwarf_chain_boots,itm_leather_gloves,itm_dwarf_throwing_axe,itm_dwarf_great_axe,itm_rohan_shield_g,itm_dwarf_throwing_axe,],
-      attr_dwarf_tier_6,wp_dwarf_tier_6,knows_riding_10|knows_persuasion_3|knight_skills_5|knows_riding_4,0x000000003a00204358e46ec7d780e9fe00000000001de4710000000000000000],
+      attr_dwarf_tier_6,wp_dwarf_tier_6,knows_riding_10|knows_persuasion_3|knight_skills_5|knows_riding_4,0x00000009cc004182254c6a57e6b2656d00000000001f689e0000000000000000],
 
 ["stub1","BUG","BUG",0,0,0,fac_commoners,[],0,0,0,0], #need this stub for new troops below to work properly
 

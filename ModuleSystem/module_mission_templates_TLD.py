@@ -563,6 +563,11 @@ tld_assign_special_troops = (ti_on_agent_spawn, 1, 0, [(is_between, "$current_to
                 (agent_clear_scripted_mode, ":cur_agent"),
                  ] + (is_a_wb_mt==1 and [
                 (agent_force_rethink, ":cur_agent"),
+                (le, "$original_savegame_version", 34), #bugfix for old savegames
+                (eq, ":troop", "trp_aragorn"),
+                (agent_equip_item, ":cur_agent", itm_arnor_light_b, ek_body, imod_lordly),
+                (agent_equip_item, ":cur_agent", itm_riv_bas_sword, 0, imod_lordly),
+                (agent_equip_item, ":cur_agent", itm_leather_boots, ek_foot, imod_lordly),
                 ] or []) + [
             (try_end)
 			])
