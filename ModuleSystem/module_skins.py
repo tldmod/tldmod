@@ -54,6 +54,7 @@ man_face_keys = [
 (230,0,-0.4,0.8, "Chin Shape"), 
 (250,0,-0.25,0.55, "Chin Forward"), 
 (130,0,-0.5,1.0, "Jaw Width"),
+(290,0,-0.5,1.0, "Jaw Definition"),
 (120,0,-0.5,0.6, "Lower Lip"),
 (110,0,-0.2,0.6, "Upper Lip"),
 (100,0,0.2,-0.2, "Mouth-Nose Distance"),
@@ -82,43 +83,47 @@ man_face_keys = [
 (150,0,-0.25,0.45, "Face Ratio"),
 (140,0,-0.4,0.5, "Face Width"),
 
-(280,0,1.0,1.0, "Post-Edit"),
+(300,0,1.0,1.0, "Post-Edit"),
 ]
 
 elf_face_keys = [
-(20,0, 0.7,-0.6, "Chin Size"),
-(260,0, -0.6,1.4, "Chin Shape"),
-(10,0,-0.5,0.9, "Chin Forward"),
-(240,0,0.9,-0.3, "Jaw Width"),
-(210,0,-0.5,0.5, "Jaw Position"),
-(250,0,0.8,-1.0, "Mouth-Nose Distance"),
-(200,0,-0.3,0.4, "Mouth Width"),
-(50,0,-1.5,0.5, "Cheeks"),
+(240,0,-0.4,0.3, "Chin Size"), 
+(230,0,-0.4,0.8, "Chin Shape"), 
+(250,0,-0.25,0.55, "Chin Forward"), 
+(130,0,-0.5,1.0, "Jaw Width"),
+(290,0,-0.5,1.0, "Jaw Definition"),
+(120,0,-0.5,0.6, "Lower Lip"),
+(110,0,-0.2,0.6, "Upper Lip"),
+(100,0,0.2,-0.2, "Mouth-Nose Distance"),
+(90,0,0.55,-0.55, "Mouth Width"),
 
-(60,0,-0.4,1.35, "Nose Height"),
-(70,0,-0.6,-0.2, "Nose Width"),
-(80,0,1.0,0.2, "Nose Size"),
-(270,0,-0.5,1.0, "Nose Shape"),
-(90,0,-0.2,1.4, "Nose Bridge"),
+(30,0,-0.3,0.3, "Nostril Size"),
+(60,0,0.25,-0.25, "Nose Height"),
+(40,0,-0.2,0.3, "Nose Width"),
+(70,0,-0.3,0.4, "Nose Size"),
+(50,0,0.2,-0.3, "Nose Shape"),
+(80,0,-0.3,0.65, "Nose Bridge"),
 
-(100,0,-0.3,1.5, "Cheek Bones"),
-(150,0,-0.2,3.0, "Eye Width"),
-(110,0,1.1,-0.5, "Eye to Eye Dist"),
-(120,0,0.9,-1.0, "Eye Shape"),
-(130,0,-0.5, 1.1, "Eye Depth"),
-(140,0,1.0,-1.2, "Eyelids"),
+(160,0,-0.2,0.25, "Eye Width"),
+(190,0,-0.25,0.15, "Eye to Eye Dist"),
+(170,0,-0.85,0.85, "Eye Shape"),
+(200,0,-0.3,0.7, "Eye Depth"),
+(180,0,-1.5,1.5, "Eyelids"),
 
-(160,0,1.0,-0.2, "Eyebrow Position"),
-(170,0,-0.1,1.9, "Eyebrow Height"),
-(220,0,-0.1,0.9, "Eyebrow Depth"),
-(180,0,-0.5,1.6, "Eyebrow Shape"),
-(230,0,1.2,-0.7, "Temple Width"),
+(20,0,0.6,-0.25, "Cheeks"),
+(260,0,-0.6,0.5, "Cheek Bones"),
+(220,0,0.8,-0.8, "Eyebrow Height"),
+(210,0,-0.75,0.75, "Eyebrow Shape"),
+(10,0,-0.6,0.5, "Temple Width"),
 
-(30,0,-0.6,0.9, "Face Depth"),
-(40,0,0.9,-0.6, "Face Ratio"),
-(190,0,0.0,0.95, "Face Width"),
+(270,0,-0.3,1.0, "Face Depth"),
+(150,0,-0.25,0.45, "Face Ratio"),
+(140,0,-0.4,0.5, "Face Width"),
 
-(280,0,0.0,1.0, "Post-Edit"),
+(300,0,-0.7,1.5, "Ear Pointiness"),
+(310,0,-0.7,1.5, "Ear Length"),
+
+(320,0,0.0,1.0, "Post-Edit"),
 ]
 
 
@@ -232,6 +237,53 @@ woman_face_keys = [
 (280,0,0.0,1.0, "Post-Edit"),
 ]
 
+woman_face_keys_new =[
+
+(10, 0, -0.5, 0.5, "jaw_forward"),
+(20, 0, -0.5, 0.8, "jaw_width"),
+(30, 0, -0.8, 0.6, "mouth_width"),
+(40, 0, -1, 1, "jaw_height"),
+(50, 0, -1, 1, "cheeks"),
+(60, 0, -1, 1, "nose_height"),
+(70, 0, 0, 0.8, "nose_width"),
+(80, 0, -0.9, 1, "nose_size"),
+(90, 0, -0.9, 1, "nose_bridge"),
+(100, 0, -1, 1, "_cheekbones"),
+(110, 0, -0.5, 1, "eye_distance"),
+(120, 0, -1, 1, "eye_shape"),
+(130, 0, -0.5, 0.8, "eye_depth"),
+(140, 0, -0.5, 1.3, "eyelids"),
+(150, 0, -1, 0.8, "eye_size"),
+(160, 0, -1, 1, "eyebrow_position"),
+(170, 0, -1, 1, "eyebrow_height"),
+(180, 0, -1.5, 1.2, "eyebrow_shape"),
+(190, 0, -0.5, 0.5, "head_width"),
+(200, 0, -1.2, 1.2, "face_depth"),
+(210, 0, -1, 1, "face_ratio"),
+(220, 0, -1.5, 1.2, "chin_width"),
+(230, 0, -1, 1, "chin_height"),
+(240, 0, -1.2, 1.2, "nose_shape"),
+(250, 0, 0, 1, "eyebrow_depth"),
+(260, 0, -0.3, 0.8, "temple_width"),
+(270, 0, -1, 1, "mouth_to_nose_distance"),
+(280, 0, -1.5, 1.2, "chin_size"),
+(290, 0, -1, 1, "nose_tip"),
+(300, 0, -1, 1.2, "nostril_size"),
+(310, 0, -0.5, 1, "nose_arch"),
+(320, 0, 0, 1, "chin_cleft"),
+(330, 0, -1.5, 1, "jaw_definition"),
+(340, 0, -1, 1, "upper_lip"),
+(350, 0, -1, 1, "lower_lip"),
+(360, 0, -1, 1, "upper_lip_heart"),
+(370, 0, -1.2, 1.2, "lower_lip_shape"),
+(380, 0,  0, 1, "smile"),
+(390, 0,  0, 1, "frown"),
+(400, 0,  -0.8, 1.2, "eye_iris_size"),
+(410, 0, -0.5, 1, "pointy_ear"),
+(420, 0, -1, 1, "neck_thickness"),
+
+(430,0,0.0,1.0, "Post-Edit"),
+]
 
 gondor_face_keys = man_face_keys
 rohan_face_keys = man_face_keys
@@ -311,7 +363,7 @@ skins = [
 #1  
   ( "woman", skf_use_morph_key_30,
     "woman_body",  "woman_calf_l", "f_handL",
-    "female_head", woman_face_keys,
+    "female_head", woman_face_keys_new,
     ["woman_hair_p","woman_hair_n","woman_hair_o","woman_hair_q","woman_hair_r","woman_hair_t","woman_hair_s","welf_hair_1","welf_hair_2","welf_hair_3","welf_hair_4","welf_hair_5","welf_hair_6", "welf_hair_7","welf_hair_8"], #woman_hair_meshes
     [],
     ["hair_blonde"], #hair textures
@@ -534,7 +586,7 @@ skins = [
 #9   Dwarf
   ( "dwarf", skf_use_morph_key_10 ,
     "dwarf_body", "dwarf_calf_l", "dwarf_handL",
-    "dwarf_head", dwarf_face_keys,
+    "dwarf_head", man_face_keys,
     ["man_hair_s","man_hair_n","man_hair_p","man_hair_r","man_hair_q","man_hair_v","man_hair_y9"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
     ["beard_dwarf_1","beard_dwarf_2", "beard_dwarf_3", "beard_dwarf_4","beard_dwarf_5","beard_dwarf_6","beard_dwarf_7","beard_dwarf_8",], #beard meshes ,
     ["hair_blonde_dwarf"], #hair textures
