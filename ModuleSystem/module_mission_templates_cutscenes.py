@@ -227,10 +227,133 @@ mission_templates_cutscenes = [
     "Intro cutscene mission",
     [(0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
      (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-    ], fade_cutscene+
+     (2,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),(3,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+     (4,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),(5,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+     (6,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),(7,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
+     (8 ,mtef_scene_source,af_override_horse,0,1,[]),
+     (9 ,mtef_visitor_source,af_override_horse,0,1,[]),(10,mtef_visitor_source,af_override_horse,0,1,[]),(11,mtef_visitor_source,af_override_horse,0,1,[]),(12,mtef_visitor_source,af_override_horse,0,1,[]),(13,mtef_scene_source,0,0,1,[]),(14,mtef_scene_source,0,0,1,[]),(15,mtef_scene_source,0,0,1,[]),
+     (16,mtef_visitor_source,0,0,1,[]),(17,mtef_visitor_source,0,0,1,[]),(18,mtef_visitor_source,0,0,1,[]),(19,mtef_visitor_source,0,0,1,[]),(20,mtef_visitor_source,0,0,1,[]),(21,mtef_visitor_source,0,0,1,[]),(22,mtef_visitor_source,0,0,1,[]),(23,mtef_visitor_source,af_override_horse,0,1,[]),
+     (24,mtef_visitor_source,af_override_horse,0,1,[]),(25,mtef_visitor_source,af_override_horse,0,1,[]),(26,mtef_visitor_source,af_override_horse,0,1,[]),(27,mtef_visitor_source,af_override_horse,0,1,[]),(28,mtef_visitor_source,af_override_horse,0,1,[]),(29,mtef_visitor_source,af_override_horse,0,1,[]),(30,mtef_visitor_source,af_override_horse,0,1,[]),(31,mtef_visitor_source,af_override_horse,0,1,[]),
+     (32,mtef_visitor_source,af_override_horse|af_override_weapons|af_override_head,0,1,[]),(33,mtef_visitor_source,af_override_horse|af_override_weapons,0,1,[]),(34,mtef_visitor_source,af_override_horse|af_override_weapons|af_override_head,0,1,[]),(35,mtef_visitor_source,af_override_horse|af_override_weapons,0,1,[]),(36,mtef_visitor_source,af_override_horse,0,1,[]),(37,mtef_visitor_source,af_override_horse|af_override_head,0,1,[]),(38,mtef_visitor_source,af_override_horse|af_override_weapons,0,1,[]),(39,mtef_visitor_source,af_override_horse,0,1,[]),
+     (40,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(41,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(42,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(43,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+     (44,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(45,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(46,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(47,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+     ], fade_cutscene+
     [
     (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu, "mnu_auto_intro_mordor"),]),
-    
+
+    ### TOWN CENTER TRIGGERS
+            
+            
+    (1, 0, ti_once, [],[(call_script, "script_init_town_walker_agents"),]),
+    (3, 0, 0, [(call_script, "script_tick_town_walkers")], []),
+
+ ] + ((is_a_wb_cutscene==1) and [
+          (1, 0, 15, [], [ # messenger props
+                (scene_prop_get_num_instances, ":num_messengers", "spr_troop_messenger"),
+                (scene_prop_get_num_instances, ":num_messenger_exits", "spr_troop_messenger_exit"),
+                (set_fixed_point_multiplier, 100),
+                
+                (try_for_range, ":count", 0, ":num_messengers"),
+                    (scene_prop_get_instance, ":instance_no", "spr_troop_messenger", ":count"),
+                    
+                    (try_begin), #spawn messenger at a exit point, send to destination
+                        (store_random_in_range, ":chance", 0, 10),
+                        (ge, ":chance", 8),
+                        (store_faction_of_party, ":faction", "$current_town"),
+                        (faction_get_slot, ":troop", ":faction", slot_faction_rider_troop),
+                        (prop_instance_get_scale, pos2, ":instance_no"),
+                        (position_get_scale_y, ":tier", pos2),
+                        (val_sub, ":tier", 100),
+                        (val_div, ":tier", 10),
+                        (store_random_in_range, ":tier_randomizer", 0, 2),
+                        (val_sub, ":tier", ":tier_randomizer"),
+                        (try_begin),
+                            (ge, ":tier", 1),
+                            (try_for_range, ":unused", 0, ":tier"),
+                                (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 0),
+                                (gt, ":upgrade_troop", 0),
+                                (assign, ":troop", ":upgrade_troop"),
+                            (try_end),
+                        (try_end),
+                                
+                        (store_random_in_range, ":rand_exit", 0, ":num_messenger_exits"),
+                        (scene_prop_get_instance, ":instance_no_target", "spr_troop_messenger_exit", ":rand_exit"),
+                        (prop_instance_get_position, pos1, ":instance_no_target"),
+                        (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+                        (lt, "$g_encountered_party_2", 0), #don't spawn riders in siege battles
+                        (agent_set_team, reg0, 0),
+                        (agent_set_slot, reg0, slot_agent_walker_type, 3), #messenger  
+                        (prop_instance_get_position, pos2, ":instance_no"),
+                        (agent_set_slot, reg0, slot_agent_is_running_away, 0),
+                        (agent_set_scripted_destination, reg0, pos2),
+                    (try_end),
+                    
+                    #find a random messenger exit point, send them out
+                    (prop_instance_get_position, pos1, ":instance_no"),
+                    (try_for_agents, ":agent_no", pos1, 500),
+                        (agent_slot_eq, ":agent_no", slot_agent_walker_type, 3),
+                        (store_random_in_range, ":chance", 0, 10),
+                        (ge, ":chance", 3),
+                        (gt, ":num_messenger_exits", 0),
+                        (store_random_in_range, ":rand_exit", 0, ":num_messenger_exits"),
+                        (scene_prop_get_instance, ":instance_no_target", "spr_troop_messenger_exit", ":rand_exit"),
+                        (prop_instance_get_position, pos2, ":instance_no_target"),
+                        (agent_set_scripted_destination, ":agent_no", pos2),
+                        (agent_set_slot, ":agent_no", slot_agent_is_running_away, 1), #needed for tracking
+                    (try_end),
+
+                (try_end),
+              ]),
+
+              (3, 0, 0, [], [ #slow down or speed up at city entrance
+                (entry_point_get_position, pos1, 2), #player spawn on foot
+                (set_fixed_point_multiplier, 100),
+                (try_for_agents, ":agent_no", pos1, 1500),
+                    (agent_slot_eq, ":agent_no", slot_agent_walker_type, 3),
+                    (agent_slot_eq, ":agent_no", slot_agent_is_running_away, 1),
+                    (agent_set_speed_limit, ":agent_no", 100),
+                (else_try),
+                    (agent_slot_eq, ":agent_no", slot_agent_walker_type, 3),
+                    (store_random_in_range, ":speed_limit", 10, 17),
+                    (agent_set_speed_limit, ":agent_no", ":speed_limit"),
+                (try_end),
+                  ]),
+
+              (0.2, 0, 0, [], [ #messengers leaving the scene
+                #(entry_point_get_position, pos1, 1),
+                (set_fixed_point_multiplier, 100),
+                (scene_prop_get_num_instances, ":num_messenger_exits", "spr_troop_messenger_exit"),
+                (try_for_range, ":count", 0, ":num_messenger_exits"),
+                    (scene_prop_get_instance, ":instance_no", "spr_troop_messenger_exit", ":count"),
+                    (prop_instance_get_position, pos1, ":instance_no"),
+                    (try_for_agents, ":agent_no", pos1, 600),
+                        (agent_slot_eq, ":agent_no", slot_agent_walker_type, 3),
+                        (agent_slot_eq, ":agent_no", slot_agent_is_running_away, 1),
+                        (agent_start_running_away, ":agent_no"),
+                        (this_or_next|eq, "$current_town", "p_town_moria"), #indoor scenes
+                        (this_or_next|eq, "$current_town", "p_town_goblin_north_outpost"), 
+                        (eq, "$current_town", "p_town_erebor"),
+                        (agent_fade_out, ":agent_no"),
+                    (try_end),
+                (try_end),
+                  ]),
+
+              ### town patrols (separate triggers, maybe shift the load of the nested prop loops)
+              (15, 0, 0, [], [ 
+                (call_script, "script_town_guard_patrols", "spr_troop_guard"),
+                  ]),
+
+              (9, 0, 0, [], [ 
+                (call_script, "script_town_guard_patrols", "spr_troop_archer"),
+                  ]),
+                  
+              (20, 0, 0, [], [ 
+                (call_script, "script_town_guard_patrols", "spr_troop_rider"),
+                  ]), 
+
+] or []) + [
+
+    ### CUTSCENE TRIGGERS
     (ti_before_mission_start, 0, 0, [],
       [ 
         (assign, "$g_tld_intro_state", 10),
@@ -290,40 +413,40 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 12), #through the gate 44
-           (ge, ":cur_time", 3),								 
+           (ge, ":cur_time", 5),								 
            (entry_point_get_position, pos1, 44),
           # (init_position, pos1),
           # (position_rotate_z, pos1, -120),
           # (position_set_x, pos1, 17300),
           # (position_set_y, pos1, 21600),
           # (position_set_z, pos1,  1300),
-           (mission_cam_animate_to_position, pos1, 2000, 0),
+           (mission_cam_animate_to_position, pos1, 4100, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 13), #just turn in place
-           (ge, ":cur_time", 5),
+           (ge, ":cur_time", 9),
 		   (entry_point_get_position, pos1, 45),
            #(init_position, pos1),
            #(position_rotate_z, pos1, -95),
            #(position_set_x, pos1, 17300),
            #(position_set_y, pos1, 21600),
            #(position_set_z, pos1,  1300),
-           (mission_cam_animate_to_position, pos1, 2000, 0),
+           (mission_cam_animate_to_position, pos1, 2100, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 14), #left through the streets
-           (ge, ":cur_time", 7),
+           (ge, ":cur_time", 11),
 		   (entry_point_get_position, pos1, 46),
            #(init_position, pos1),
            #(position_rotate_z, pos1, -100),
            #(position_set_x, pos1, 20800),
            #(position_set_y, pos1, 22000),
            #(position_set_z, pos1,  1300),
-           (mission_cam_animate_to_position, pos1, 3000, 0),
+           (mission_cam_animate_to_position, pos1, 4100, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 15), #up a bit, look up to the tower
-           (ge, ":cur_time", 10),
+           (ge, ":cur_time", 15),
 		   (entry_point_get_position, pos1, 47),
            #(init_position, pos1),
            #(position_rotate_z, pos1, -120),
@@ -331,11 +454,11 @@ mission_templates_cutscenes = [
            #(position_set_x, pos1, 25000),
            #(position_set_y, pos1, 20100),
            #(position_set_z, pos1,  3000),
-           (mission_cam_animate_to_position, pos1, 2600, 0),
+           (mission_cam_animate_to_position, pos1, 3100, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 16), #second gate, look at the tower
-           (ge, ":cur_time", 13),
+           (ge, ":cur_time", 18),
 		   (entry_point_get_position, pos1, 48),
           # (init_position, pos1),
           # (position_rotate_z, pos1, -180),
@@ -347,7 +470,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 17), #top of the city
-           (ge, ":cur_time", 17),
+           (ge, ":cur_time", 22),
 		   (entry_point_get_position, pos1, 49),
            #(init_position, pos1),
            #(position_rotate_z, pos1, 100),
@@ -359,7 +482,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 18), #white tree
-           (ge, ":cur_time", 20),
+           (ge, ":cur_time", 25),
 		   (entry_point_get_position, pos1, 50),
           # (init_position, pos1),
           # (position_rotate_z, pos1, -150),
@@ -371,7 +494,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 19), #off the cliff
-           (ge, ":cur_time", 25),
+           (ge, ":cur_time", 32),
 		   (entry_point_get_position, pos1, 51),
          #  (init_position, pos1),
          #  (position_rotate_z, pos1, -160),
@@ -383,7 +506,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 20), #drop to the right
-           (ge, ":cur_time", 28),
+           (ge, ":cur_time", 35),
 		   (entry_point_get_position, pos1, 52),
          #  (init_position, pos1),
          #  (position_rotate_z, pos1, -150),
@@ -394,7 +517,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 21), #guard position
-           (ge, ":cur_time", 31),
+           (ge, ":cur_time", 38),
 		   (entry_point_get_position, pos1, 53),
          #  (init_position, pos1),
          #  (position_set_x, pos1, 14900),
@@ -406,7 +529,7 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 22), #finish
-           (ge, ":cur_time", 37),
+           (ge, ":cur_time", 44),
            (finish_mission, 0),
            (val_add, "$g_tld_intro_state", 1),
            #chain to next intro mission
@@ -590,8 +713,8 @@ mission_templates_cutscenes = [
 
 ("intro_joke", 0, -1,
     "Intro cutscene mission",
-    [(0,mtef_visitor_source|mtef_team_2,af_override_horse,0,1,[]),
-     (1,mtef_visitor_source|mtef_team_2,af_override_horse,0,1,[]),
+    [(0,mtef_visitor_source|mtef_team_2,0,0,1,[]),
+     (1,mtef_visitor_source|mtef_team_2,0,0,1,[]),
     ],
     [
     (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]+return_exit_macro),

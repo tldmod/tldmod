@@ -10396,6 +10396,8 @@ game_menus = [
        (assign, "$current_town", "p_town_minas_tirith"), #for the cabbage guards 
        (modify_visitors_at_site, "scn_minas_tirith_center"),
        (reset_visitors),
+       (call_script, "script_init_town_walkers"),
+       #(call_script, "script_initialize_center_scene", 0),       
        (set_visitor, 1, "trp_player"),
        (jump_to_scene, "scn_minas_tirith_center"),
        (change_screen_mission),
