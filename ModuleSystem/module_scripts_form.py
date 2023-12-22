@@ -591,7 +591,7 @@ formAI_scripts = [
 			(try_begin),	#enemy far away AND ranged not charging
 				(gt, ":enemy_from_archers", AI_charge_distance),
 				(gt, ":inf_closest_dist", AI_charge_distance),
-				(neq, ":archer_order", mordr_charge),
+				#(neq, ":archer_order", mordr_charge), #InVain: disabled this, doesn't make sense and makes factions without archers (Dunland) charge from the start
 				(try_begin),	#fighting not started OR not enough infantry
 					(this_or_next|le, "$battle_phase", BP_Jockey),
 					(lt, ":percent_level_infantry", ":percent_level_enemy_infantry"),
@@ -795,6 +795,9 @@ formAI_scripts = [
 					(call_script, "script_formation_end", ":team_no", grc_infantry),
 					(team_give_order, ":team_no", grc_infantry, ":infantry_order"),
 					(team_set_order_position, ":team_no", grc_infantry, pos61),
+                    (team_get_gap_distance, ":gap_distance", ":team_no", grc_infantry), #InVain: Make factions without formation stand closer
+                    (gt, ":gap_distance", 2),
+                    (team_give_order, ":team_no", grc_infantry, mordr_stand_closer), 
 					#(eq, ":infantry_order", mordr_hold), #Kham
 					#(assign, ":place_leader_by_infantry", 1), #Kham
 				(try_end),
@@ -1193,8 +1196,10 @@ formAI_scripts = [
 				(try_begin),
 					(gt, ":num_targets", 0), #JL Kham - To charge through a target there needs to be a target
 					(eq, ":cavalry_order", mordr_charge),
+                    (ge, ":timer", 90),
 					(copy_position, ":cav_destination", Cavalry_Pos),
-					(this_or_next|ge, ":perc_cav", 80), #if Cav size >= 80% of total AI troop size JL
+					#(this_or_next|ge, ":perc_cav", 80), #if Cav size >= 80% of total AI troop size JL
+                    (ge, ":perc_cav", 70), #InVain: This instead
 					(ge, ":around_charge", "$formai_rand7"), #or if odds are good (if odds are not good (lower than 55-65) and there are less than 80 cav --> try other tactics) added by JL					
 					(call_script, "script_point_y_toward_position", ":cav_destination", Nearest_Target_Pos),
 					(position_move_y, ":cav_destination", ":nearest_target_distance", 0), 
@@ -1222,7 +1227,7 @@ formAI_scripts = [
 					(position_move_y, ":cav_destination", "$formai_rand1", 0), #added (0m to 5m infront) JL
 					(try_begin), #move cavalry as a patrol 3% every scond JL
 						(ge, ":chance", 97), #JL
-						(store_random_in_range, "$formai_rand0", -2000, 2000), #x-factor update JL
+						(store_random_in_range, "$formai_rand0", -2500, 2500), #x-factor update JL #Increased InVain
 						(position_move_x, ":cav_destination", "$formai_rand0", 0), #patrol positioning JL
 						(position_move_y, ":cav_destination", "$formai_rand1", 0), #added another (0m to 5m infront) JL
 					(try_end),					
@@ -1251,7 +1256,7 @@ formAI_scripts = [
 				#move around threat in the way to destination
 				(try_begin),
 					(gt, ":num_threats", 0), #there must be a threat if we are to move around it -- JL
-					(gt, ":num_targets",0), #and if there needs to be a target, otherwise it is not good to go around because the cav will veer and be at disadvantage! Kham
+					#(gt, ":num_targets",0), #and if there needs to be a target, otherwise it is not good to go around because the cav will veer and be at disadvantage! Kham
 					(call_script, "script_point_y_toward_position", Cavalry_Pos, Nearest_Threat_Pos),
 					(call_script, "script_point_y_toward_position", Nearest_Threat_Pos, ":cav_destination"),
 					(position_get_rotation_around_z, reg0, Cavalry_Pos),
@@ -1329,7 +1334,7 @@ formAI_scripts = [
 					(ge, ":perc_cav", 20), #if Cavalry >= 20% of total AI troop size JL
 					(try_begin), #then if
 						(this_or_next|le, ":enemy_from_infantry", "$formai_rand3"), #if enemy is less than or equal to 20m to 30m from infantry
-						(this_or_next|le, ":enemy_from_archers", "$formai_rand3"),	#or enemy is less than or equal to 20m to 30m from archers
+						(le, ":enemy_from_archers", "$formai_rand3"),	#or enemy is less than or equal to 20m to 30m from archers
 					#	(ge, ":imp_charge", 97), #there is 4% chance every second that the cavalry will charge anyway because of impetousness
 						(assign, "$charge_activated", 1), #then charge
 					#	(display_message,"@Cavalry charge ordered because target is within charge distance."), ##############
@@ -1339,7 +1344,7 @@ formAI_scripts = [
 					(this_or_next|eq, ":infantry_order", mordr_charge), #or infantry order is to charge
 					(this_or_next|eq, ":archer_order", mordr_charge), #or archer orders are to charge
 					(this_or_next|le, ":enemy_from_infantry", AI_Self_Defence_Distance), #if enemy is less than or equal to 10m from infantry
-					(this_or_next|le, ":enemy_from_archers", AI_Self_Defence_Distance),	#or enemy is less than or equal to 10m from archers					
+					(le, ":enemy_from_archers", AI_Self_Defence_Distance),	#or enemy is less than or equal to 10m from archers					
 				#	(ge, ":imp_charge", 99), #there is 2% chance every second that the cavalry will charge anyway because of impetousness
 					(assign, "$charge_activated", 1), #then charge
 				#	(display_message,"@Cavalry charge ordered because target is within charge distance."), ##############
@@ -1443,7 +1448,7 @@ formAI_scripts = [
 				#permanent charge if infantry or archers are in charge mode, added Kham
 				(try_begin),
 					(this_or_next|eq, "$inf_charge_activated", 1), #if infantry is hard charging
-					(this_or_next|eq, "$arc_charge_activated", 1), #or archers are hard charging
+					(eq, "$arc_charge_activated", 1), #or archers are hard charging
 					#(ge, ":imp_charge", 90), #there is a 10% chance that they will perma charge in this situation so around 10 seconds of activity and then a charge ensues. <-Jun18 update
 					(assign, "$charge_activated", 1), #tell cavalry to stop formations and charge hard 
 				#	(display_message,"@Targets are close to cav and foot soldiers need support. Charging through permanently."), #############
@@ -3775,7 +3780,7 @@ formAI_scripts = [
 		(assign, reg0, formation_ranks),
 	(else_try),
 		(eq, ":ffaction", "fac_rhun"),	#Rhun
-		(assign, reg0, formation_ranks),
+		(assign, reg0, formation_none),
 	(else_try),
 		(eq, ":ffaction", "fac_khand"),	#Khand
 		(assign, reg0, formation_ranks),
@@ -3784,13 +3789,13 @@ formAI_scripts = [
 		(assign, reg0, formation_ranks),
 	(else_try),
 		(eq, ":ffaction", "fac_moria"),	#Moria
-		(assign, reg0, formation_ranks),
+		(assign, reg0, formation_none),
 	(else_try),
 		(eq, ":ffaction", "fac_guldur"),	#Dol Guldur
-		(assign, reg0, formation_ranks),
+		(assign, reg0, formation_none),
 	(else_try),
 		(eq, ":ffaction", "fac_gundabad"),    #Gundabad
-		(assign, reg0, formation_ranks),
+		(assign, reg0, formation_none),
 	(else_try),
 		(eq, ":ffaction", "fac_dunland"),	#Dunland
 		(assign, reg0, formation_none),
