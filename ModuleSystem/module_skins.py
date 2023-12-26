@@ -363,7 +363,7 @@ skins = [
 #1  
   ( "woman", skf_use_morph_key_30,
     "woman_body",  "woman_calf_l", "f_handL",
-    "female_head", woman_face_keys_new,
+    "female_head", woman_face_keys,
     ["woman_hair_p","woman_hair_n","woman_hair_o","woman_hair_q","woman_hair_r","woman_hair_t","woman_hair_s","welf_hair_1","welf_hair_2","welf_hair_3","welf_hair_4","welf_hair_5","welf_hair_6", "welf_hair_7","welf_hair_8"], #woman_hair_meshes
     [],
     ["hair_blonde"], #hair textures
@@ -586,7 +586,7 @@ skins = [
 #9   Dwarf
   ( "dwarf", skf_use_morph_key_10 ,
     "dwarf_body", "dwarf_calf_l", "dwarf_handL",
-    "dwarf_head", man_face_keys,
+    "male_head", man_face_keys,
     ["man_hair_s","man_hair_n","man_hair_p","man_hair_r","man_hair_q","man_hair_v","man_hair_y9"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
     ["beard_dwarf_1","beard_dwarf_2", "beard_dwarf_3", "beard_dwarf_4","beard_dwarf_5","beard_dwarf_6","beard_dwarf_7","beard_dwarf_8",], #beard meshes ,
     ["hair_blonde_dwarf"], #hair textures
