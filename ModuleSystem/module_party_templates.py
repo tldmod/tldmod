@@ -329,7 +329,7 @@ party_templates = [
 #Dunlenders (7-14, 5-10, 4-8)
 ("dunland_reinf_a" ,"_",0,0,fac_commoners,0,[(trp_i2_dun_warrior,3,6),(trp_i1_dun_wildman,4,8),]),
 ("dunland_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_i3_dun_vet_warrior,3,6),(trp_i3_dun_pikeman,2,4),]),
-("dunland_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_ac4_dun_crebain_rider,1,2),(trp_i4_dun_wolf_warrior,2,4),(trp_i4_dun_vet_pikeman,1,2),]),
+("dunland_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_ac4_dun_crebain_rider,2,4),(trp_i4_dun_wolf_warrior,2,4),(trp_i4_dun_vet_pikeman,1,2),]),
 
 #Volunteer templates
 #MV guidelines:
@@ -357,7 +357,7 @@ party_templates = [
 ("khand_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_khand_bondsman,2,5)]),
 ("umbar_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_corsair_youth,3,6)]),
 ("lorien_recruits"    ,"_",0,0,fac_commoners,0,[(trp_a1_lorien_scout,1,3),(trp_a2_lorien_archer,1,1)]), #two T1
-("imladris_recruits"  ,"_",0,0,fac_commoners,0,[(trp_a1_riv_scout,1,2),(trp_a1_arnor_scout,1,2)]), #two T1
+("imladris_recruits"  ,"_",0,0,fac_commoners,0,[(trp_a1_riv_scout,0,2),(trp_a1_arnor_scout,2,3)]), #two T1
 ("woodelf_recruits"   ,"_",0,0,fac_commoners,0,[(trp_a1_greenwood_scout,1,4)]),
 ("moria_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_moria_snaga,5,10)]),
 ("guldur_recruits"    ,"_",0,0,fac_commoners,0,[(trp_i1_guldur_orc_snaga,5,10)]),
@@ -366,8 +366,8 @@ party_templates = [
 ("gundabad_recruits"  ,"_",0,0,fac_commoners,0,[(trp_i1_gunda_goblin,3,6)]),
 ("gundabad_cap_recruits","_",0,0,fac_commoners,0,[(trp_i1_gunda_goblin,3,7)]),
 ("dale_recruits"      ,"_",0,0,fac_commoners,0,[(trp_i1_dale_militia,1,4),(trp_c2_rhovanion_retainer,1,2)]), #T1 and T2
-("dwarf_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_dwarf_apprentice,2,4)]), #T1 and T2
-("dwarf_iron_recruits","_",0,0,fac_commoners,0,[(trp_i2_iron_hills_miner,1,3)]), #T1 and T2
+("dwarf_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_dwarf_apprentice,2,3),(trp_i2_iron_hills_miner,0,2)]), #T1 and T2
+("dwarf_iron_recruits","_",0,0,fac_commoners,0,[(trp_i2_iron_hills_miner,1,2),(trp_i1_dwarf_apprentice,1,2)]), #T1 and T2
 ("dunland_recruits"   ,"_",0,0,fac_commoners,0,[(trp_i1_dun_wildman,3,7)]),
 
 ("caravan_survivors","Caravan Survivors",icon_generic_knight|carries_goods(2),0,fac_neutral,merchant_personality,[(trp_sea_raider,5,5)]),
