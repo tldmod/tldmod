@@ -16,6 +16,7 @@ from module_troops import *
 
 from module_scripts_ai import *
 from module_scripts_form import *
+from module_scripts_form_v5 import *
 from module_scripts_morale import *
 from module_scripts_common_warp import *
 from header_presentations import *
@@ -28389,7 +28390,7 @@ command_cursor_scripts = [
 
 ]
 
-scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts
+scripts = scripts + ai_scripts + formAI_scripts+ formAI_v5_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts
 
 
 ################################################################################################
