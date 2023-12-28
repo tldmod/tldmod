@@ -329,7 +329,7 @@ party_templates = [
 #Dunlenders (7-14, 5-10, 4-8)
 ("dunland_reinf_a" ,"_",0,0,fac_commoners,0,[(trp_i2_dun_warrior,3,6),(trp_i1_dun_wildman,4,8),]),
 ("dunland_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_i3_dun_vet_warrior,3,6),(trp_i3_dun_pikeman,2,4),]),
-("dunland_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_ac4_dun_crebain_rider,2,4),(trp_i4_dun_wolf_warrior,2,4),(trp_i4_dun_vet_pikeman,1,2),]),
+("dunland_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_ac4_dun_crebain_rider,1,3),(trp_i4_dun_wolf_warrior,2,4),(trp_i4_dun_vet_pikeman,1,3),]),
 
 #Volunteer templates
 #MV guidelines:
