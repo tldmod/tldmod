@@ -274,6 +274,7 @@ formAI_v5_scripts = [
   # Output: none
   ("team_field_melee_tactics_moto", [
       (store_script_param, ":team_no", 1),
+      #(assign, reg22, ":team_no"),
       #	(store_script_param, ":rel_army_size", 2),
       (store_script_param, ":battle_presence", 3),
       (call_script, "script_calculate_decision_numbers", ":team_no", ":battle_presence"),
@@ -447,7 +448,7 @@ formAI_v5_scripts = [
           (try_begin),	#enemy far away AND ranged not charging
             (gt, ":enemy_bg_nearest_archers_dist", AI_charge_distance),
             (gt, ":enemy_agent_nearest_infantry_dist", AI_charge_distance),
-            (neq, ":archer_order", mordr_charge),
+            #(neq, ":archer_order", mordr_charge), #InVain: disabled this, doesn't make sense and makes factions without archers (Dunland) charge from the start
             (try_begin),	#fighting not started OR not enough infantry
               (this_or_next | le, "$battle_phase", BP_Jockey_MOTO),
               (lt, ":percent_level_infantry", ":percent_level_enemy_infantry"),
@@ -827,22 +828,27 @@ formAI_v5_scripts = [
           (try_begin),
             (ge, reg0, 50),
             (call_script, "script_formation_end_moto", ":team_no", grc_cavalry),
-            (try_begin),
+            #(display_message, "@team {reg22}, cav formation dissolved due to horse archers"),
+            (try_begin), 
               (eq, ":num_archers", 0),
+              (ge, ":timer", 45), #InVain: Caused HA to charge too early
               (team_get_movement_order, reg0, ":team_no", grc_cavalry),
               (try_begin),
                 (neq, reg0, mordr_charge),
                 (team_give_order, ":team_no", grc_cavalry, mordr_charge),
+                #(display_message, "@team {reg22}, HA charge 1"),
               (try_end),
             (else_try),
               (team_get_movement_order, reg0, ":team_no", grc_cavalry),
               (try_begin),
                 (neq, reg0, ":cavalry_order"),
                 (team_give_order, ":team_no", grc_cavalry, ":cavalry_order"),
+                #(display_message, "@team {reg22}, HA order 1"),
               (try_end),
               (copy_position, ":cav_destination", Archers_Pos_MOTO),
               (position_move_y, ":cav_destination", -500, 0),
               (call_script, "script_set_formation_destination_moto", ":team_no", grc_cavalry, ":cav_destination"),
+              #(display_message, "@team {reg22}, HA hold at archer position"),
             (try_end),
             
           #close in with no unguarded target farther off, free fight
@@ -868,6 +874,7 @@ formAI_v5_scripts = [
             (try_begin),
               (neq, reg0, mordr_charge),
               (team_give_order, ":team_no", grc_cavalry, mordr_charge),
+              #(display_message, "@team {reg22}, cav charge 1"),
             (try_end),
             
           #grand charge if target closer than threat AND not guarded
@@ -880,6 +887,7 @@ formAI_v5_scripts = [
             (try_begin),
               (neq, reg0, mordr_hold),
               (team_give_order, ":team_no", grc_cavalry, mordr_hold),
+              #(display_message, "@team {reg22}, cav hold 1"),
             (try_end),
             
             #lead archers up to firing point
@@ -911,14 +919,19 @@ formAI_v5_scripts = [
               (call_script, "script_point_y_toward_position_moto", ":cav_destination", Nearest_Target_Pos),
               (position_move_y, ":cav_destination", ":nearest_target_distance", 0),
               (position_move_y, ":cav_destination", AI_charge_distance, 0),	#charge on through to the other side
+              #(display_message, "@team {reg22}, cav destination 1"),
             (else_try),
               (neq, ":cavalry_order", mordr_charge),
               (eq, ":num_archers", 0),
               (copy_position, ":cav_destination", Cavalry_Pos_MOTO),	#must be reinforcements, so gather at average position
+              # (position_move_x, ":cav_destination", 2500, 0),
+              # (position_move_y, ":cav_destination", 1000, 0),
+              #(display_message, "@team {reg22}, cav destination 2"),
             (else_try),
               (copy_position, ":cav_destination", Archers_Pos_MOTO),	#hold near archers
               (position_move_x, ":cav_destination", 500, 0),
               (position_move_y, ":cav_destination", -1000, 0),
+              #(display_message, "@team {reg22}, cav destination 3"),
             (try_end),
             
             #move around threat in the way to destination
@@ -950,6 +963,7 @@ formAI_v5_scripts = [
                 (position_move_y, ":cav_destination", ":distance_to_move", 0),
                 (call_script, "script_point_y_toward_position_moto", ":cav_destination", Cavalry_Pos_MOTO),
                 (position_rotate_z, ":cav_destination", 180),
+                #(display_message, "@team {reg22}, cav destination 3"),
               (try_end),
             (try_end),
             (get_scene_boundaries, pos0, pos1),
@@ -973,16 +987,30 @@ formAI_v5_scripts = [
               (call_script, "script_form_cavalry_moto", ":team_no", grc_cavalry, ":team_leader", 0, 0),
               (store_add, ":slot", slot_team_d0_formation, grc_cavalry),
               (team_set_slot, ":team_no", ":slot", formation_wedge),
+              #(display_message, "@team {reg22}: cav formation 1"),
               # (team_give_order, ":team_no", grc_cavalry, mordr_hold),
             (else_try),
               (call_script, "script_formation_end_moto", ":team_no", grc_cavalry),
               (team_get_movement_order, reg0, ":team_no", grc_cavalry),
+              #(display_message, "@team {reg22}: cav formation 2"),
               (try_begin),
                 (neq, reg0, ":cavalry_order"),
                 (team_give_order, ":team_no", grc_cavalry, ":cavalry_order"),
+                
+                #(display_message, "@team {reg22}: cav order 1"),
               (try_end),
             (try_end),
             (call_script, "script_set_formation_destination_moto", ":team_no", grc_cavalry, ":cav_destination"),
+            #(display_message, "@team {reg22}: cav destination 11"),
+            # (try_begin),
+                # (eq, ":team_no", 3),
+                # (scene_prop_get_instance, ":prop", spr_banner_stand_a, 0),
+                # (prop_instance_set_position, ":prop", ":cav_destination"),
+            # (else_try),
+                # (eq, ":team_no", 0),
+                # (scene_prop_get_instance, ":prop", spr_broom, 0),
+                # (prop_instance_set_position, ":prop", ":cav_destination"),
+            # (try_end),
           (try_end),
         (try_end),
         
@@ -1038,7 +1066,7 @@ formAI_v5_scripts = [
       
   ]),
   
-  # script_field_tactics by motomataru
+  # script_field_tactics_moto by motomataru
   # Input: flag 1 to include ranged
   # Output: none
   ("field_tactics_moto", [
@@ -1237,6 +1265,7 @@ formAI_v5_scripts = [
       
       #lag this check to be sure
       (store_mission_timer_c, ":time_stamp"),
+      (val_max, ":time_stamp", 6),  #avoid false positives the first five seconds of mission #FormAI v5.1
       (try_begin),	#time lag
         (gt, ":any_fighting", 0),
         (assign, "$teams_last_fighting", ":time_stamp"),
@@ -1592,7 +1621,7 @@ formAI_v5_scripts = [
       (set_show_messages, 1),
       (set_fixed_point_multiplier, ":store_fpm"),]),
   
-  # script_form_cavalry by motomataru
+  # script_form_cavalry_moto by motomataru
   # Input: (pos1), team, division, agent number of team leader, spacing, flag
   # TRUE to include team leader in formation
   # Output: none
@@ -2596,19 +2625,19 @@ formAI_v5_scripts = [
 		(assign, reg0, formation_shield),
 	(else_try),
 		(eq, ":ffaction", "fac_moria"),	#Moria
-		(assign, reg0, formation_ranks),
+		(assign, reg0, formation_none),
 	(else_try),
 		(eq, ":ffaction", "fac_guldur"),	#Dol Guldur
 		(assign, reg0, formation_ranks),
 	(else_try),
 		(eq, ":ffaction", "fac_gundabad"),    #Gundabad
-		(assign, reg0, formation_ranks),
+		(assign, reg0, formation_none),
 	(else_try),
 		(eq, ":ffaction", "fac_dunland"),	#Dunland
-		(assign, reg0, formation_none),
+		(assign, reg0, formation_shield),
 	(else_try),
 		(eq, ":ffaction", "fac_beorn"),	#Beornings
-		(assign, reg0, formation_none),
+		(assign, reg0, formation_shield),
 	(else_try),
 		(eq, ":ffaction", "fac_player_faction"),	#independent player
 		(assign, reg0, formation_ranks),
@@ -4395,7 +4424,7 @@ formAI_v5_scripts = [
       (assign, reg0, ":distance_between"),
       (set_fixed_point_multiplier, ":save_fpm"),]),
   
-  #script_agent_fix_division
+  #script_agent_fix_division_moto
   #Input: agent_id
   #Output: nothing (agent divisions changed, slot set)
   #To fix AI troop divisions from the engine applying player's party divisions
@@ -4477,7 +4506,7 @@ formAI_v5_scripts = [
         (agent_set_slot, ":agent", slot_agent_new_division, ":target_division"),
       (try_end),]),
   
-  # script_store_battlegroup_type
+  # script_store_battlegroup_type_moto
   # Input: team, division
   # Output: reg0 and slot_team_dx_type with sdt_* value
   # Automatically called from store_battlegroup_data
@@ -4634,7 +4663,7 @@ formAI_v5_scripts = [
       (team_set_slot, ":fteam", ":slot", ":div_type"),
       (assign, reg0, ":div_type"),]),
   
-  # script_store_battlegroup_data by motomataru #EDITED TO SLOTS FOR MANY
+  # script_store_battlegroup_data_moto by motomataru #EDITED TO SLOTS FOR MANY
   # DIVISIONS BY CABA'DRIN
   # Input: none
   # Output: sets positions and globals to track data on ALL groups in a battle
@@ -6173,7 +6202,7 @@ formAI_v5_scripts = [
 # end formations additions
   ]),
   
-  # script_formation_battle_tactic_apply_aux #CABA - OK; Need expansion when new AI divisions to work with
+  # script_formation_battle_tactic_apply_aux_moto #CABA - OK; Need expansion when new AI divisions to work with
   # Input: team_no, battle_tactic
   # Output: battle_tactic
   ("formation_battle_tactic_apply_aux_moto",
