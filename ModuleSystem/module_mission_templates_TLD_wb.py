@@ -1607,7 +1607,8 @@ tld_improved_horse_archer_ai =  (1, 0, 0, [ #Run it every 1 second instead of ev
             (agent_get_team, ":team_no", ":agent_no"),
             
             (try_begin),
-                (all_enemies_defeated, ":team_no"),
+                (this_or_next|all_enemies_defeated, ":team_no"),
+                (agent_slot_eq, ":agent_no", slot_agent_is_running_away, 1),
                 (agent_set_attack_action, ":agent_no", -2, 1),
                 (assign, ":battle_over", 1),
             (try_end),
@@ -3207,7 +3208,7 @@ common_division_data = [  #4 triggers
           (agent_is_non_player, ":agent"),
           (agent_get_group, ":team", ":agent"),
           (gt, ":team", -1),  #not a MP spectator
-          (call_script, "script_agent_fix_division", ":agent"), #Division fix
+          (call_script, "script_agent_fix_division_moto", ":agent"), #Division fix
         (try_end),
       (try_end),
       
@@ -3266,7 +3267,7 @@ common_division_data = [  #4 triggers
   #catch spawning agents after initial setup
   (ti_on_agent_spawn, 0, 0, [(eq, "$tld_option_formations", 2),(call_script, "script_cf_division_data_available_moto")], [
       (store_trigger_param_1, ":agent"),
-      (call_script, "script_agent_fix_division", ":agent"), #Division fix
+      (call_script, "script_agent_fix_division_moto", ":agent"), #Division fix
   ]),
   
   # Trigger file: common_division_data_regular_trigger
