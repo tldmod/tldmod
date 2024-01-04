@@ -72,7 +72,7 @@ itemsfile version 2
  itm_sumpter_horse Sumpter_Horse Sumpter_Horse 4  sumpter_horse 0  CWE_horse_light_a 2  CWE_horse_light_b 4  CWE_horse_light_c 8  65537 0 70 16106389504 0 90 0 1 0 1 40 33 28 95 0 5 0
 0
 
- itm_saddle_horse Saddle_Horse Saddle_Horse 1  saddle_horse 0  65537 0 150 16106389504 0 90 0 7 0 1 60 34 39 100 0 8 0
+ itm_saddle_horse Saddle_Horse Saddle_Horse 1  sumpter_horse 0  65537 0 150 16106389504 0 90 0 7 0 1 60 34 39 100 0 8 0
 0
 
  itm_steppe_horse Steppe_Horse Steppe_Horse 1  steppe_horse 0  65537 0 160 16106389504 0 90 0 10 0 2 70 41 35 95 0 7 0
@@ -81,7 +81,7 @@ itemsfile version 2
  itm_courser Courser Courser 1  courser 0  65537 0 350 16106389504 0 91 0 10 0 2 70 37 43 100 0 11 0
 0
 
- itm_hunter Hunter Hunter 1  hunting_horse 0  65537 0 600 16106389504 0 91 0 20 0 3 90 34 36 100 0 18 0
+ itm_hunter Hunter Hunter 1  saddle_horse 0  65537 0 600 16106389504 0 91 0 20 0 3 90 34 36 100 0 18 0
 0
 
  itm_pony Pony Pony 1  pony 0  65537 0 70 119185604608 0 90 0 0 0 0 30 40 20 100 0 1 0
@@ -333,16 +333,16 @@ itemsfile version 2
  itm_black_tunic Black_Tunic Black_Tunic 1  gondor_tunic 0  553713677 0 100 123731968 2 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_hood_black Black_Hood Black_Hood 6  fi_helm10_black 0  hood_black_simple 134  fi_helm10_black_mask 167772160  gondor_wimple_a 1099511627776  gondor_wimple_b 2199023255552  gondor_fine_fem_hat 4398046511104  1073807372 0 100 167772294 1 100 12 0 0 0 0 0 0 0 0 0 0
+ itm_hood_black Black_Hood Black_Hood 6  fi_helm10_black 0  hood_black_simple 134  fi_helm10_black_mask 167772160  gondor_wimple_a 1099511627776  gondor_wimple_b 2199023255552  gondor_fine_fem_hat 4398046511104  1610678284 0 100 167772294 1 100 12 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_hood_green Green_Hood Green_Hood 3  fi_helm10_green 0  hood_green_simple 134  fi_helm10_green_mask 167772160  1073807372 0 120 167772294 1 100 14 0 0 0 0 0 0 0 0 0 0
+ itm_hood_green Green_Hood Green_Hood 3  fi_helm10_green 0  hood_green_simple 134  fi_helm10_green_mask 167772160  1610678284 0 120 167772294 1 100 14 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_hood_grey Grey_Hood Grey_Hood 3  fi_helm10_grey 0  hood_grey_simple 134  hood_grey_large 167772160  1073807372 0 80 167772294 1 100 11 0 0 0 0 0 0 0 0 0 0
+ itm_hood_grey Grey_Hood Grey_Hood 3  fi_helm10_grey 0  hood_grey_simple 134  hood_grey_large 167772160  1610678284 0 80 167772294 1 100 11 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_hood_leather Leather_Hood Leather_Hood 3  fi_helm10_leather 0  hood_leather_simple 134  fi_helm10_leather_mask 167772160  1073807372 0 250 167772294 1 100 15 0 0 0 0 0 0 0 0 0 0
+ itm_hood_leather Leather_Hood Leather_Hood 3  fi_helm10_leather 0  hood_leather_simple 134  fi_helm10_leather_mask 167772160  1610678284 0 250 167772294 1 100 15 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_mail_coif Mail_Coif Mail_Coif 2  maci_mail_coif 0  crusader_koif_a 167772160  1073807372 0 250 167772294 2 100 22 0 0 0 0 0 0 0 0 0 0
@@ -1205,13 +1205,13 @@ itemsfile version 2
  itm_orc_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2953248768 200 525450 1.25 100 0 0 74 0 0 86 53 0 0 20 0
 0
 
- itm_orc_shield_a Orc_Shield Orc_Shield 1  orc_shield_a 0  327687 5100273664 100 251658402 3 90 0 5 0 0 180 96 0 40 0 0 0
+ itm_orc_shield_a Simple_Shield Simple_Shield 1  orc_shield_a 0  327687 5100273664 100 251658402 3 90 0 5 0 0 180 96 0 40 0 0 0
 0
 
- itm_orc_shield_b Orc_Shield Orc_Shield 1  orc_shield_b 0  327687 5100273664 100 251658402 3 90 0 5 0 0 180 96 0 40 0 0 0
+ itm_orc_shield_b Fur_Shield Fur_Shield 1  orc_shield_b 0  327687 5100273664 100 251658402 3 90 0 5 0 0 180 96 0 40 0 0 0
 0
 
- itm_orc_shield_c Orc_Tower_Shield Orc_Tower_Shield 4  orc_shield_c 0  orc_shield_c_strong 134217728  orc_shield_c_strong 67108864  orc_shield_c_strong 33554432  327687 4831838208 250 251658402 5 90 0 6 0 2 230 82 0 65 0 0 0
+ itm_orc_shield_c Fur_Tower_Shield Fur_Tower_Shield 4  orc_shield_c 0  orc_shield_c_strong 134217728  orc_shield_c_strong 67108864  orc_shield_c_strong 33554432  327687 4831838208 250 251658402 5 90 0 6 0 2 230 82 0 65 0 0 0
 0
 
  itm_mordor_orc_shield_a Mordor_Orc_Shield Mordor_Orc_Shield 1  mordor_orc_shield_a 0  327687 5100273664 100 251658402 3 90 0 8 0 0 200 96 0 35 0 0 0
@@ -1487,16 +1487,16 @@ itemsfile version 2
  itm_dun_helm_c Dunnish_Tall_Helm Dunnish_Tall_Helm 4  dunland_helm_a 134  dunland_helm_b 1  dunland_helm_b 0  dunland_helm_c 167772160  65548 0 900 167772294 2 93 30 0 0 16 0 0 0 0 0 0 0
 0
 
- itm_dun_helm_d Dunnish_Tall_Helm Dunnish_Tall_Helm 1  dunland_helm_b 0  65548 0 900 167772294 2 93 30 0 0 16 0 0 0 0 0 0 0
+ itm_free_dun_helm_d Dunnish_Tall_Helm Dunnish_Tall_Helm 1  dunland_helm_b 0  65548 0 900 167772294 2 93 30 0 0 16 0 0 0 0 0 0 0
 0
 
- itm_dun_helm_e Dunnish_Antler_Helm Dunnish_Antler_Helm 1  dunland_helm_c 0  65548 0 1200 704643206 4 94 35 0 0 17 0 0 0 0 0 0 0
+ itm_free_dun_helm_e Dunnish_Antler_Helm Dunnish_Antler_Helm 1  dunland_helm_c 0  65548 0 1200 704643206 4 94 35 0 0 17 0 0 0 0 0 0 0
 0
 
- itm_dun_shield_a Dunnish_Shield Dunnish_Shield 1  dun_roundshield 0  327687 5100273664 300 251658402 2 90 0 15 0 2 310 88 0 55 0 0 0
+ itm_dun_shield_a Dunnish_Roundshield Dunnish_Roundshield 1  dun_roundshield 0  327687 5100273664 300 251658402 2 90 0 15 0 2 290 88 0 55 0 0 0
 0
 
- itm_dun_shield_b Dunnish_Shield Dunnish_Shield 1  dun_roundshield_b 0  327687 5100273664 300 251658402 2 90 0 15 0 2 310 88 0 55 0 0 0
+ itm_dun_shield_b Dunnish_Oval_Shield Dunnish_Oval_Shield 1  dun_roundshield_b_new 0  327687 5100273664 300 251658402 3.5 90 0 13 0 2 320 82 0 65 0 0 0
 0
 
  itm_dun_berserker Dunland_Chieftain_Sword Dunland_Chieftain_Sword 2  dunland_sword_1 0  dunland_sword_1_scab 3458764513820540928  4299161602 9223388564182532111 540 786582 3 95 0 0 0 12 32768 97 0 98 0 274 32
@@ -2795,7 +2795,7 @@ itemsfile version 2
  itm_fur_coat_wb Dale_Coat Dale_Coat 1  dale_coat 0  553648141 0 400 123731968 6 100 0 13 6 0 0 0 0 0 0 0 0
 0
 
- itm_fur_hat_a_new_wb Fur_Hat Fur_Hat 1  fur_hat_a_new 0  1073741836 0 100 167772294 1 100 12 0 0 0 0 0 0 0 0 0 0
+ itm_fur_hat_a_new_wb Fur_Hat Fur_Hat 1  fur_hat_a_new 0  1627389964 0 100 167772294 1 100 12 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_noel_hat_a_wb Fur_Hat Fur_Hat 1  noel_hat_a 0  1073741836 0 100 167772294 1 100 12 0 0 0 0 0 0 0 0 0 0

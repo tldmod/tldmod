@@ -7750,6 +7750,7 @@ game_menus = [
       ("castle_cheat_town_walls",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),], "CHEAT! Town Walls.",
        [
          (party_get_slot, ":scene", "$current_town", slot_town_walls),
+         (assign, "$gate_aggravator_agent", 0), #disable gate aggravators
          (set_jump_mission,"mt_ai_training"),
          (jump_to_scene,":scene"),
          (change_screen_mission)]),
