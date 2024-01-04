@@ -22907,6 +22907,7 @@ scripts = [
         (try_end),
 
         (call_script, "script_init_town_walkers"),
+        (assign, "$gate_aggravator_agent", 0),
         (assign, ":override_state", af_override_horse),
         (try_begin),
             (eq, "$sneaked_into_town", 1), #setup disguise

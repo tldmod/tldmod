@@ -1718,7 +1718,7 @@ center_list = [
 	[icon_mfc_dale],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
 
 (p_town_dunland_camp, [scn_dunland_camp_center, -1, -1,-1,-1,scn_dunland_camp_siege, mesh_town_evilcamp],
-	[-1, trp_smith_dunland, trp_merchant_dunland, trp_elder_dunland, pt_dunland_recruits, trp_dunland_lord, trp_i1_dun_wildman,trp_i2_dun_warrior, trp_i3_dun_pikeman, trp_i5_dun_wolf_guard], 
+	[trp_dunnish_lieutenant, trp_smith_dunland, trp_merchant_dunland, trp_elder_dunland, pt_dunland_recruits, trp_dunland_lord, trp_i1_dun_wildman,trp_i2_dun_warrior, trp_i3_dun_pikeman, trp_i5_dun_wolf_guard], 
 	[icon_mfc_dunland],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_high, 2, tld_siegable_capital),
 (p_town_harad_camp, [scn_harad_camp_center, -1, -1,-1, scn_harad_arena,scn_harad_camp_siege, mesh_town_harad],
 	[-1, trp_smith_harad, trp_merchant_harad, trp_elder_harad, pt_harad_recruits, trp_harad_lord,trp_i1_harad_levy,trp_i1_harad_levy,trp_i3_harad_infantry,trp_c3_harondor_rider], 

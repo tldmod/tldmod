@@ -10373,6 +10373,7 @@ game_menus = [
      (modify_visitors_at_site, ":town_scene"),
      (reset_visitors),
      (call_script, "script_init_town_walkers"),
+     (assign, "$gate_aggravator_agent", 0),
      (set_jump_mission,"mt_town_brawl"),
      (jump_to_scene, ":town_scene"),
      (change_screen_mission),

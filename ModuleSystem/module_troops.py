@@ -1744,7 +1744,7 @@ troops = [
 ["a5_dun_night_wolf","Dunnish_Night_Wolf","Dunnish_Night_Wolfs",tf_dunland| tf_randomize_face| tfg_shield| tfg_armor| tfg_boots| tfg_ranged,0,0,fac_dunland,[itm_dun_helm_a, itm_wilderness_cowl,itm_dunland_mail_1, itm_dunland_chieftain_bad,itm_fur_gloves_reward,itm_dunland_wolfboots,itm_leather_boots_dark,itm_dunnish_axe,itm_dunnish_war_axe,itm_dunland_javelin,itm_dunland_javelin,itm_dunland_javelin,itm_dunland_javelin,itm_dunland_javelin,itm_dun_shield_a,],attr_evil_tier_5,wp_tier_5,knows_common|knows_athletics_7|knows_shield_3|knows_power_strike_3|knows_ironflesh_2|knows_power_throw_7,dunland_face1,dunland_face2],
 
 ["dunnish_lieutenant","Dunnish_Hetman","Dunnish_Hetmen",tf_dunland| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dunland,
-   [itm_dunland_wolfboots,itm_dunland_tunic_2,itm_dun_berserker,itm_dun_helm_c,itm_dun_shield_b,itm_evil_gauntlets_a,],
+   [itm_dunland_wolfboots,itm_dunland_chieftain,itm_dun_berserker,itm_dun_helm_c,itm_dun_shield_b,itm_evil_gauntlets_a,],
       attr_tier_6,wp_tier_6,knows_common|knows_athletics_2|knows_shield_1|knows_power_strike_3|knows_ironflesh_3,dunland_face1,dunland_face2],
 ["goblin_chieftain","Goblin_Chieftain","Goblin_Chieftains",tf_orc| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_sabre,itm_moria_orc_shield_a,itm_moria_orc_shield_b,itm_leather_gloves,itm_isen_orc_mail_a,itm_orc_coif,itm_orc_coif,itm_orc_ragwrap,itm_wargarmored_1b,],
@@ -2437,7 +2437,7 @@ troops = [
       attr_dwarf_tier_6,wp_dwarf_tier_6,knows_riding_10|knows_persuasion_3|knight_skills_1|knows_riding_4|knows_surgery_8,0x00000009bf00510616936b596c56ddfe00000000001ecc780000000000000000],
 #Dunland
 ["knight_5_11","Chief_Fudreim","_",tf_hero| tf_dunland| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_dunland,
-   [itm_dunland_chieftain_good,itm_dunland_wolfboots,itm_evil_gauntlets_a,itm_dun_helm_c,itm_dun_berserker,itm_dun_shield_b,itm_dunland_javelin,],
+   [itm_dunland_mail_2_good,itm_dunland_wolfboots,itm_evil_gauntlets_a,itm_dun_helm_c_good,itm_rohan_2h_sword,itm_dunland_javelin,],
       attr_tier_7,wp_tier_6,knight_skills_1|knows_surgery_8,0x0000000cbf00528736db6db71b6db6db00000000001fd6db0000000000000000],
 ["knight_5_12","Chief_Wulf","_",tf_hero| tf_dunland| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_dunland,
    [itm_dunland_chieftain,itm_leather_boots_reward,itm_fur_gloves_reward,itm_dun_helm_a,itm_dun_berserker,itm_dun_shield_b,itm_dunland_javelin,],
