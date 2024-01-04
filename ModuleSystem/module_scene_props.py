@@ -1636,7 +1636,7 @@ scene_props = [
     (try_end),
     ] or []) + [
     
-    #(assign, "$gate_breached",0),
+    (eq, "$gate_aggravator_agent", 1),
     (prop_instance_get_starting_position, pos1, ":instance_no"),
     (set_fixed_point_multiplier, 100),
     (position_move_z, pos1, 100,1), #safeguard against aggravators spawning underground
@@ -1729,7 +1729,7 @@ scene_props = [
     (try_end),
     ] or []) + [
     
-    #(assign, "$gate_breached",0),
+    (eq, "$gate_aggravator_agent", 1),
     (prop_instance_get_starting_position, pos1, ":gate_no"),
     (position_move_z, pos1, 100,1), #safeguard against aggravators spawning underground
     (set_spawn_position, pos1),
@@ -2799,7 +2799,7 @@ scene_props = [
     (try_end),
     ] or []) + [
     
-    #(assign, "$gate_breached",0),
+    (eq, "$gate_aggravator_agent", 1),
     (prop_instance_get_starting_position, pos1, ":gate_no"),
     (position_move_z, pos1, 100,1), #safeguard against aggravators spawning underground
     (set_spawn_position, pos1),
@@ -2953,7 +2953,24 @@ scene_props = [
 			(try_end),
 						 
 
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
+  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),
+
+    #remove weapons and helms
+  ] + (is_a_wb_sceneprop==1 and [     
+        (try_for_range, ":weapon_slot", 0, 3), 
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+        (try_end),
+        (try_begin),
+            (agent_get_item_slot, ":helm", reg0, ek_head),
+            (gt, ":helm", 1),
+            (neg|item_has_property, ":helm", itp_civilian),
+            (agent_unequip_item, reg0, ":helm", ek_head),
+        (try_end),
+    ] or []) + [  
+  
+  ])]),
 	
 ("troop_civilian_sitting_ground",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
@@ -2972,7 +2989,23 @@ scene_props = [
 	        (else_try),
 	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_5_troop),
 			(try_end),
-	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground"),])]),
+	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground"),
+    
+        #remove weapons and helms
+  ] + (is_a_wb_sceneprop==1 and [     
+        (try_for_range, ":weapon_slot", 0, 3), 
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+        (try_end),
+        (try_begin),
+            (agent_get_item_slot, ":helm", reg0, ek_head),
+            (gt, ":helm", 1),
+            (neg|item_has_property, ":helm", itp_civilian),
+            (agent_unequip_item, reg0, ":helm", ek_head),
+        (try_end),
+    ] or []) + [  
+    ])]),
 	
 ("troop_civilian_sitting_chair",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
@@ -2991,7 +3024,23 @@ scene_props = [
 	        (else_try),
 	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_5_troop),
 			(try_end),
-	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_throne")])]),
+	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_throne"),
+    
+        #remove weapons and helms
+  ] + (is_a_wb_sceneprop==1 and [     
+        (try_for_range, ":weapon_slot", 0, 3), 
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+        (try_end),
+        (try_begin),
+            (agent_get_item_slot, ":helm", reg0, ek_head),
+            (gt, ":helm", 1),
+            (neg|item_has_property, ":helm", itp_civilian),
+            (agent_unequip_item, reg0, ":helm", ek_head),
+        (try_end),
+    ] or []) + [  
+    ])]),
 	
 ("water_fall_big", 0, "0", "0", [
 	(ti_on_init_scene_prop,
@@ -3566,7 +3615,7 @@ scene_props = [
 ("spike_group_a_destructible",sokf_destructible,"spike_group_a","bo_spike_group_a_big",   [ 
    (ti_on_scene_prop_init, [
    (store_trigger_param_1, ":instance_no"),
-    
+   (eq, "$gate_aggravator_agent", 1),    
     (prop_instance_get_starting_position, pos1, ":instance_no"),
     (set_fixed_point_multiplier, 100),
     (position_move_z, pos1, 100,1), #safeguard against aggravators spawning underground
@@ -3649,7 +3698,7 @@ scene_props = [
 ("orc_stakes_destructible",sokf_destructible,"orc_stakes","bo_orc_stakes_new",   [ 
    (ti_on_scene_prop_init, [
    (store_trigger_param_1, ":instance_no"),
-    
+   (eq, "$gate_aggravator_agent", 1),      
     (prop_instance_get_starting_position, pos1, ":instance_no"),
     (set_fixed_point_multiplier, 100),
     (position_move_z, pos1, 100,1), #safeguard against aggravators spawning underground

@@ -1958,7 +1958,7 @@ scripts = [
 	(assign, "$found_moria_entrance", 0),
 	(assign, "$current_player_region", -1),
 	(assign, "$spawn_horse", 1),
-	(assign, "$gate_aggravator_agent", 0), # unused
+	(assign, "$gate_aggravator_agent", 1), #re-used for controlling if aggravators spawn
 #    (assign, "$equip_needs_checking", 1),
 	(assign, "$g_tld_conversations_done", 0),
 	(assign, "$g_tld_gandalf_state", -1),
@@ -2062,9 +2062,9 @@ scripts = [
     (val_mul, "$hold_f1", "$cheatmode_used"),
     (val_mul, "$hold_f1", "$original_savegame_version"),
 	(val_mul, "$hold_f1", "$dormant_spawn_radius"),
-    (val_mul, "$gate_aggravator_agent", "$hold_f1"),
-    (val_mul, "$gate_aggravator_agent", "$mouse_coordinates"),
-    (val_mul, "$gate_aggravator_agent", "$attacker_archer_melee"),
+    (val_mul, "$hold_f1", "$mouse_coordinates"),
+    (val_mul, "$hold_f1", "$attacker_archer_melee"),
+    (val_mul, "$attacker_archer_melee", "$hold_f1"),
     (val_mul, "$attacker_archer_melee", "$attacker_team_3"),
     (val_mul, "$attacker_archer_melee", "$rescue_convo_troop"),   
     (val_mul, "$attacker_archer_melee", "$tld_options_overlay_14"),   

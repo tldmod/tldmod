@@ -3392,7 +3392,7 @@ mission_templates = [ # not used in game
     (set_rain,1,100),
     (team_set_relation, 0, 1, -1),
     (team_set_relation, 6,1, -1),
-    (assign, "$gate_aggravator_agent", -1),
+    (assign, "$gate_aggravator_agent", 1),
     (assign, "$battle_won", 0)
   ]),
 
@@ -4416,7 +4416,8 @@ mission_templates = [ # not used in game
     (team_set_relation, 6, 1, 0),(team_set_relation, 6, 3, 0),(team_set_relation, 6, 5, 0), # player team starts neutral until player side is assigned
 	(team_set_relation, 6, 0, 0),(team_set_relation, 6, 2, 0),(team_set_relation, 6, 4, 0), #
     (call_script, "script_change_banners_and_chest"),
-    (call_script, "script_remove_siege_objects")]),
+    (call_script, "script_remove_siege_objects"),
+    (assign, "$gate_aggravator_agent", 1),]),
 
   # Siege Tutorial
 
@@ -4531,8 +4532,6 @@ mission_templates = [ # not used in game
    (4, 0, ti_once, [], #assign initial teams
    [(try_for_agents, ":agent_no"),
 	(get_player_agent_no, ":player_agent"),
-	#(neq, ":agent_no", ":player_agent"),
-	(neq, ":agent_no", "$gate_aggravator_agent"),
 	(agent_get_party_id, ":party_no", ":agent_no"),
 	(agent_get_troop_id, ":troop_id", ":agent_no"),
     (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
@@ -6054,7 +6053,7 @@ mission_templates = [ # not used in game
     custom_battle_check_victory_condition,
     common_battle_victory_display,
     custom_battle_check_defeat_condition,
-	(ti_before_mission_start,0,0,[],[(set_rain,1,100),(team_set_relation,6,0,1),(team_set_relation,6,2,1),(assign,"$gate_aggravator_agent",-1)]),
+	(ti_before_mission_start,0,0,[],[(set_rain,1,100),(team_set_relation,6,0,1),(team_set_relation,6,2,1),(assign,"$gate_aggravator_agent",1)]),
     (0, 0, ti_once,[],[
 		(assign, "$defender_team", 0),
 		(assign, "$attacker_team", 1),
