@@ -537,7 +537,7 @@ formAI_v5_scripts = [
               (store_add, ":slot", slot_team_d0_formation_space, grc_infantry),
               (team_set_slot, ":team_no", ":slot", ":spacing"),
               
-              (assign, ":place_leader_by_infantry", 1),
+              #(assign, ":place_leader_by_infantry", 1), #InVain: Disabled
               
             (else_try),
               (call_script, "script_formation_end_moto", ":team_no", grc_infantry),
@@ -547,7 +547,7 @@ formAI_v5_scripts = [
                 (team_give_order, ":team_no", grc_infantry, ":infantry_order"),
               (try_end),
               (eq, ":infantry_order", mordr_hold),
-              (assign, ":place_leader_by_infantry", 1),
+              #(assign, ":place_leader_by_infantry", 1), #InVain: Disabled
             (try_end),
             
             #hold near archers?
@@ -1120,7 +1120,7 @@ formAI_v5_scripts = [
       (try_end),
       
       #apply tactics to every AI team
-      (set_show_messages, 0),
+      (set_show_messages, 0),  #comment to debug
       (try_for_range, ":ai_team", 0, 4),
         (team_get_slot, ":ai_team_size", ":ai_team", slot_team_adj_size),
         (gt, ":ai_team_size", 0),
@@ -1197,7 +1197,8 @@ formAI_v5_scripts = [
           (call_script, "script_team_field_melee_tactics_moto", ":ai_team", ":team_percentage", ":team_battle_presence"),
         (try_end),
       (try_end),
-      (set_show_messages, 1),]),
+      (set_show_messages, 1), #comment to debug
+      ]),
   
   
   # # Utilities used by AI by motomataru
