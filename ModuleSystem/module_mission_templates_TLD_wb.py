@@ -2737,18 +2737,18 @@ extended_battle_menu = [  #15 triggers
       (neg|main_hero_fallen),
       ],[
       (assign, "$gk_order", 0),
-      (try_begin),
-        (is_presentation_active, "prsnt_battle"),
-        (assign, "$g_presentation_active", 1),
-      (try_end),
+      # (try_begin), #InVain: Currently unused
+        # (is_presentation_active, "prsnt_battle"),
+        # (assign, "$g_presentation_active", 1),
+      # (try_end),
       (try_begin),
         (presentation_set_duration, 0),
         (assign, "$switch_presentation_new", "prsnt_order_display"),
-        (try_begin),
-          (gt, "$g_display_agent_labels", 0),
-          (eq, "$show_hide_labels", 1),
-          (start_presentation, "prsnt_display_agent_labels"),
-        (try_end),
+        # (try_begin), #InVain: unused
+          # (gt, "$g_display_agent_labels", 0),
+          # (eq, "$show_hide_labels", 1),
+          # (start_presentation, "prsnt_display_agent_labels"),
+        # (try_end),
       (try_end),
       (assign, "$native_opening_menu", 1),
       (try_begin),
@@ -3170,12 +3170,12 @@ extended_battle_menu = [  #15 triggers
   (0.7, 0, 0, [
       (eq, "$tld_option_formations", 2),
       (eq, "$g_presentation_active", 1),
-      (neg|is_presentation_active, "prsnt_order_display"),
+      (neg|is_presentation_active, "prsnt_order_display"), #InVain: Problem is that prsnt_order_display is disabled elsewhere, but only if divisions 1-3 are selected
       (eq, "$gk_order", 0),
       ],[
-      (presentation_set_duration, 0),
-      (assign, "$switch_presentation_new", "prsnt_battle"),
-      (assign, "$g_presentation_active", 0),
+      #(presentation_set_duration, 0), #so we just disable the consequences, this looks somewhat better
+      #(assign, "$switch_presentation_new", "prsnt_battle"),
+      (assign, "$g_presentation_active", 0), #InVain: Makes this global ineffective, need to keep in mind for future
   ]),
 ]#end extended battle menu
 

@@ -1234,6 +1234,10 @@ presentations = [
         (assign, "$g_formation_archers_selected", 0),
         (assign, "$g_formation_cavalry_selected", 0),
         (assign, "$g_presentation_battle_active", 1),
+    ] + (is_a_wb_cutscene==1 and [
+        (close_order_menu), #InVain
+    ] or []) + [
+
 
         (str_clear, s7),
 
@@ -1511,6 +1515,8 @@ presentations = [
 
         (presentation_set_duration, 999999),
         ]),
+      
+      
       (ti_on_presentation_event_state_change,
        [(store_trigger_param_1, ":object"),
         (store_trigger_param_2, ":value"),
@@ -1797,6 +1803,7 @@ presentations = [
           (try_end),
         (try_end),
         ]),
+      
       (ti_on_presentation_run,
        [(store_trigger_param_1, ":cur_time"),
         (try_begin),
@@ -6253,6 +6260,7 @@ if wb_compile_switch==1:
     (ti_on_presentation_run, [
         (store_trigger_param_1, ":cur_time"),
         (gt, ":cur_time", 250), #0.25 Second after Pres. Start
+        (set_fixed_point_multiplier, 100),
         (try_begin),
           (this_or_next|game_key_clicked, gk_order_1),
           (this_or_next|game_key_clicked, gk_order_2),
