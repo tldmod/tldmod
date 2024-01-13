@@ -1704,10 +1704,10 @@ center_list = [
 	[icon_mfc_northmen],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_high, 1, tld_siegable_capital),
 
 (p_town_moria, [scn_moria_center, -1, scn_mordor_prison,scn_mordor_tavern,scn_mordor_arena,scn_moria_siege,mesh_town_moria],
-	[-1, trp_smith_moria, trp_merchant_moria, trp_elder_moria, pt_moria_recruits, trp_moria_lord,trp_i1_moria_snaga,trp_i2_moria_goblin,trp_c3_moria_wolf_rider,trp_i3_moria_large_goblin], 
+	[-1, trp_smith_moria, trp_merchant_moria, trp_elder_moria, pt_moria_recruits, trp_moria_lord,trp_i1_moria_snaga,trp_i2_moria_goblin,trp_a2_moria_goblin_archer,trp_i3_moria_large_goblin], 
 	[icon_mfc_moria],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_high, 1, tld_siegable_capital),
 (p_town_troll_cave, [scn_troll_cave_center, -1, -1,-1,-1,scn_troll_cave_siege, mesh_ui_default_menu_window],
-	[-1, trp_smith_troll_cave, trp_merchant_troll_cave, trp_elder_troll_cave, pt_moria_recruits, trp_moria_lord,trp_i1_moria_snaga,trp_i2_moria_goblin,trp_c3_moria_wolf_rider,trp_i3_moria_large_goblin], 
+	[-1, trp_smith_troll_cave, trp_merchant_troll_cave, trp_elder_troll_cave, pt_moria_recruits, trp_moria_lord,trp_i1_moria_snaga,trp_i2_moria_goblin,trp_a2_moria_goblin_archer,trp_i3_moria_large_goblin], 
 	[icon_mfc_moria],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
 
 (p_town_dale, [scn_dale_center, scn_dale_castle, scn_rohan_prison,scn_rohan_tavern,scn_dale_arena, scn_dale_siege, mesh_ui_default_menu_window],
