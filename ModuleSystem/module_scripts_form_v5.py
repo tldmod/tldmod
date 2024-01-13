@@ -34,7 +34,7 @@ formAI_v5_scripts = [
 ######## FORM V5 #
 
 # # AI with Formations Scripts
-  # script_calculate_decision_numbers by motomataru
+  # script_calculate_decision_numbers_moto by motomataru
   # Input: AI team, size relative to battle in %
   # Output: reg0 - battle presence plus level bump, reg1 - level bump (team avg
   # level / 3)
@@ -1203,7 +1203,7 @@ formAI_v5_scripts = [
   
   # # Utilities used by AI by motomataru
   
-  # script_find_high_ground_around_pos1_corrected by motomataru
+  # script_find_high_ground_around_pos1_corrected_moto by motomataru
   # Input: arg1: destination position
   #			arg2: search_radius (in meters)
   #			pos1 should hold center_position_no
@@ -1255,7 +1255,7 @@ formAI_v5_scripts = [
       (set_fixed_point_multiplier, ":fixed_point_multiplier"),]),
   
   
-  # script_cf_count_casualties by motomataru
+  # script_cf_count_casualties_moto by motomataru
   # Input: none
   # Output: evalates T/F, reg0 num casualties
   ("cf_count_casualties_moto", [
@@ -1272,7 +1272,7 @@ formAI_v5_scripts = [
       (gt, ":num_casualties", 0)]),
   
   
-  # script_cf_any_fighting by motomataru
+  # script_cf_any_fighting_moto by motomataru
   # Input: none
   # Output: evalates T/F
   ("cf_any_fighting_moto", [
@@ -1302,7 +1302,7 @@ formAI_v5_scripts = [
       (gt, ":fighting_finished", ":time_stamp"),]),
   
   
-  # script_get_nearest_enemy_battlegroup_location by motomataru
+  # script_get_nearest_enemy_battlegroup_location_moto by motomataru
   # Input: destination position, fron team, from position
   # Output: destination position, reg0 with distance
   # Run script_store_battlegroup_data before calling!
@@ -1330,7 +1330,7 @@ formAI_v5_scripts = [
   # #AI end
 
 # #Formations Scripts
-  # script_field_start_position by motomataru
+  # script_field_start_position_moto by motomataru
   # Input: team
   # Output: pos2 = current army position advanced by cavalry wedge depth over
   # infantry formation depth
@@ -1384,7 +1384,7 @@ formAI_v5_scripts = [
         (position_move_y, pos2, ":depth_cavalry"),
       (try_end),]),
   
-  # script_division_reset_places by motomataru
+  # script_division_reset_places_moto by motomataru
   # Input: none
   # Output: none
   # Resets globals for placing divisions around player for
@@ -1395,7 +1395,7 @@ formAI_v5_scripts = [
       (assign, "$next_infantry_place", -1 * formation_minimum_spacing_horse_width),	#first spot LEFT of the player
   ]),
   
-  # script_battlegroup_place_around_leader by motomataru
+  # script_battlegroup_place_around_leader_moto by motomataru
   # Input: team, division, team leader
   # Output: pos61 division position, moves pos1
   ("battlegroup_place_around_leader_moto", [
@@ -1417,7 +1417,7 @@ formAI_v5_scripts = [
         (call_script, "script_battlegroup_place_around_pos1_moto", ":fteam", ":fdivision", ":fleader"),
       (try_end),]),
   
-  # script_battlegroup_place_around_pos1 by motomataru
+  # script_battlegroup_place_around_pos1_moto by motomataru
   # Input: team, division
   # Output: pos61 division position, moves pos1
   ("battlegroup_place_around_pos1_moto", [
@@ -1739,7 +1739,7 @@ formAI_v5_scripts = [
         (end_try),
       (end_try),]),
   
-  # script_form_archers by motomataru
+  # script_form_archers_moto by motomataru
   # Input: (pos1), team, division, agent number of team leader, spacing, flag
   # TRUE to include team leader in formation, formation
   # Output: none
@@ -1797,7 +1797,7 @@ formAI_v5_scripts = [
         (try_end),
       (try_end),]),
   
-  # script_form_infantry by motomataru
+  # script_form_infantry_moto by motomataru
   # Input: (pos1), team, division, agent number of team leader, spacing, flag
   # TRUE to include team leader in formation, formation
   # Output: none
@@ -2590,7 +2590,7 @@ formAI_v5_scripts = [
       (try_end),
   ]),
   
-  # script_get_default_formation by motomataru
+  # script_get_default_formation_moto by motomataru
   # Input: team id
   # Output: reg0 default formation
   ("get_default_formation_moto", [
@@ -2671,7 +2671,7 @@ formAI_v5_scripts = [
 		(assign, reg0, formation_none),	#riffraff don't use formations
 	(try_end),]),
   
-  # script_switch_to_noswing_weapons by motomataru
+  # script_switch_to_noswing_weapons_moto by motomataru
   # Input: agent, formation spacing
   # Output: none
   ("switch_to_noswing_weapons_moto", [
@@ -2698,7 +2698,7 @@ formAI_v5_scripts = [
         (try_end),
       (try_end),]),
   
-  # script_switch_from_noswing_weapons by motomataru
+  # script_switch_from_noswing_weapons_moto by motomataru
   # Input: agent
   # Output: none
   ("switch_from_noswing_weapons_moto", [
@@ -2824,7 +2824,7 @@ formAI_v5_scripts = [
       #Housekeeping
       (agent_set_slot, ":agent", slot_agent_formation_rank, ":rank"),]),
   
-  # script_pick_native_formation by motomataru
+  # script_pick_native_formation_moto by motomataru
   # Input: team, division
   # Output: reg0 with formation_*_row (see module_constants)
   #         reg1 with number of rows
@@ -2867,7 +2867,7 @@ formAI_v5_scripts = [
         (assign, reg1, 5),
       (try_end)]),
   
-  # script_calculate_default_ranks by motomataru
+  # script_calculate_default_ranks_moto by motomataru
   # Input: number of troops
   # Output: reg1 with number of rows
   # calculates number of rows closest to the old Roman 5:1 cohort arrangement
@@ -2885,7 +2885,7 @@ formAI_v5_scripts = [
       (val_div, reg1, 10),
       (val_add, reg1, 1),]),
   
-  # script_get_centering_amount by motomataru
+  # script_get_centering_amount_moto by motomataru
   # Input: formation type, number of troops, extra spacing
   #        Use formation type formation_default to use script for archer line
   # Output: reg0 number of centimeters to adjust x-position to center formation
@@ -2922,7 +2922,7 @@ formAI_v5_scripts = [
       (try_end),
       (val_div, reg0, 2),]),
   
-  # script_formation_end
+  # script_formation_end_moto
   # Input: team, division
   # Output: none
   ("formation_end_moto", [
@@ -2992,7 +2992,7 @@ formAI_v5_scripts = [
         (try_end),
       (try_end),]),
   
-  # script_formation_move_position by motomataru
+  # script_formation_move_position_moto by motomataru
   # Input: team, division, formation current position, (1 to advance or -1 to
   # withdraw or 0 to redirect)
   # Output: pos1 (offset for centering)
@@ -3050,7 +3050,7 @@ formAI_v5_scripts = [
         (try_end),
       (try_end),]),
   
-  # script_cf_battlegroup_valid_formation
+  # script_cf_battlegroup_valid_formation_moto
   # Input: team, division, formation
   # Output: reg0: troop count/1 if too few troops/0 if wrong type
   ("cf_battlegroup_valid_formation_moto", [
@@ -3096,7 +3096,7 @@ formAI_v5_scripts = [
       (assign, reg0, ":num_troops"),
       (gt, ":num_troops", 1)]),
   
-  # script_cf_valid_formation_member by motomataru #CABA - Modified for
+  # script_cf_valid_formation_member_moto by motomataru #CABA - Modified for
   # Classify_agent phase out
   # Input: team, division, agent number of team leader, test agent
   # Output: failure indicates agent is not member of formation
@@ -3119,7 +3119,7 @@ formAI_v5_scripts = [
       (neq, ":agent_race", tf_troll),]),
   
   # #Player team formations functions
-  # script_player_attempt_formation
+  # script_player_attempt_formation_moto
   # Inputs: arg1: division
   #			arg2: formation identifier (formation_*)
   #         arg3: flag 1 to form at current location (rather than next to
@@ -3213,7 +3213,7 @@ formAI_v5_scripts = [
         (call_script, "script_battlegroup_place_around_pos1_moto", "$fplayer_team_no", ":fdivision", "$fplayer_agent_no"),
       (try_end),]),
   
-  # script_player_formation_end
+  # script_player_formation_end_moto
   # Input: division
   # Output: none
   ("player_formation_end_moto", [
@@ -3241,7 +3241,7 @@ formAI_v5_scripts = [
         (display_message, "@{s1}: formation disassembled."),
       (try_end),]),
   
-  # script_player_order_formations by motomataru TODO add native weapon
+  # script_player_order_formations_moto by motomataru TODO add native weapon
   # commands
   # Inputs: arg1: order to formation (mordr_*)
   # Output: none
@@ -3668,7 +3668,7 @@ formAI_v5_scripts = [
         (try_end),
       (try_end)]),
   
-  # script_memorize_division_placements by motomataru
+  # script_memorize_division_placements_moto by motomataru
   # Inputs: none
   # Output: none
   ("memorize_division_placements_moto", [
@@ -3716,7 +3716,7 @@ formAI_v5_scripts = [
         (display_message, "@The placement of {s1} division {reg0} memorized."),
       (try_end),]),
   
-  # script_default_division_placements by motomataru
+  # script_default_division_placements_moto by motomataru
   # Inputs: none
   # Output: none
   ("default_division_placements_moto", [
@@ -3734,7 +3734,7 @@ formAI_v5_scripts = [
         (display_message, "@The placement of {s1} division {reg0} set to default."),
       (try_end),]),
   
-  # script_process_place_divisions by motomataru
+  # script_process_place_divisions_moto by motomataru
   # Inputs: none
   # Output: none
   # Expects team_set_order_position has been done
@@ -3878,7 +3878,7 @@ formAI_v5_scripts = [
       (try_end),	#num_bgroups > 0
   ]),
   
-  # script_process_player_division_positioning by motomataru
+  # script_process_player_division_positioning_moto by motomataru
   # Inputs: none
   # Output: none
   # Expects Enemy_Team_Pos_MOTO
@@ -4086,8 +4086,8 @@ formAI_v5_scripts = [
       (assign, "$FormAI_autorotate", ":save_autorotate"),]),
   
   
-  # #Utilities used by formations
-  # script_cf_is_thrusting_weapon by motomataru
+  # #Utilities used by formations_moto
+  # script_cf_is_thrusting_weapon_moto by motomataru
   # Input: item
   # Output: T/F
   ("cf_is_thrusting_weapon_moto", [
@@ -4104,7 +4104,7 @@ formAI_v5_scripts = [
       #a happy medium.
       (ge, ":thrust_damage", ":swing_damage"),]),
   
-  # script_cf_is_weapon_ranged by motomataru
+  # script_cf_is_weapon_ranged_moto by motomataru
   # Input: weapon ID, flag 0/1 to consider thrown weapons
   # Output: T/F
   ("cf_is_weapon_ranged_moto", [
@@ -4130,7 +4130,7 @@ formAI_v5_scripts = [
       
       (neq, ":test_val", 0),]),
   
-  # script_equip_best_melee_weapon by motomataru
+  # script_equip_best_melee_weapon_moto by motomataru
   # Input: agent id, flag to force shield, flag to force for length ALONE,
   # current fire order
   # Output: none
@@ -4248,7 +4248,7 @@ formAI_v5_scripts = [
         (try_end),
       (try_end),]),
   
-  # script_set_formation_destination by motomataru
+  # script_set_formation_destination_moto by motomataru
   # Input: team, troop class, position
   # Kluge around buggy *_order_position functions for teams 0-3
   ("set_formation_destination_moto", [
@@ -4269,7 +4269,7 @@ formAI_v5_scripts = [
       
       (team_set_order_position, ":fteam", ":fdivision", ":fposition"),]),
   
-  # script_get_formation_destination by motomataru
+  # script_get_formation_destination_moto by motomataru
   # Input: position, team, troop class
   # Output: input position (pos0 used)
   # Kluge around buggy *_order_position functions for teams 0-3
@@ -4308,7 +4308,7 @@ formAI_v5_scripts = [
       # (try_end),
       (position_set_z_to_ground_level, ":fposition"),]),
   
-  # script_formation_current_position by motomataru
+  # script_formation_current_position_moto by motomataru
   # Input: destination position (not pos0), team, division
   # Output: in destination position
   # As opposed to script_battlegroup_get_position, this obtains target rotation
@@ -4323,7 +4323,7 @@ formAI_v5_scripts = [
       (call_script, "script_battlegroup_dist_center_to_front_moto", ":fteam", ":fdivision"),
       (position_move_y, ":fposition", reg0, 0),]),
   
-  # script_str_store_division_type_name by motomataru
+  # script_str_store_division_type_name_moto by motomataru
   # Input: destination, division type (sdt_*)
   # Output: none
   ("str_store_division_type_name_moto", [
@@ -4357,7 +4357,7 @@ formAI_v5_scripts = [
         (str_store_string, ":str_reg", "@undetermined type of"),
       (try_end),]),
   
-  # script_formation_to_native_order by motomataru
+  # script_formation_to_native_order_moto by motomataru
   # Input: team, division, formation
   # Output: issues team_give_order with appropriate command to make formation
   ("formation_to_native_order_moto", [
@@ -4398,7 +4398,7 @@ formAI_v5_scripts = [
         (team_give_order, ":team", ":division", mordr_form_5_row),
       (try_end)]),
   
-  # script_point_y_toward_position by motomataru
+  # script_point_y_toward_position_moto by motomataru
   # Input: from position, to position
   # Output: reg0 distance in cm
   # Basically, points the first position at the second, so then simple move_y
@@ -4541,7 +4541,7 @@ formAI_v5_scripts = [
         (agent_set_slot, ":agent", slot_agent_new_division, ":target_division"),
       (try_end),]),
   
-  # script_store_battlegroup_type_moto
+  # script_store_battlegroup_type_moto_moto
   # Input: team, division
   # Output: reg0 and slot_team_dx_type with sdt_* value
   # Automatically called from store_battlegroup_data
@@ -4698,7 +4698,7 @@ formAI_v5_scripts = [
       (team_set_slot, ":fteam", ":slot", ":div_type"),
       (assign, reg0, ":div_type"),]),
   
-  # script_store_battlegroup_data_moto by motomataru #EDITED TO SLOTS FOR MANY
+  # script_store_battlegroup_data_moto_moto by motomataru #EDITED TO SLOTS FOR MANY
   # DIVISIONS BY CABA'DRIN
   # Input: none
   # Output: sets positions and globals to track data on ALL groups in a battle
@@ -5311,7 +5311,7 @@ formAI_v5_scripts = [
       (try_end), #Team Loop
   ]),
   
-  # script_cf_division_data_available by motomataru
+  # script_cf_division_data_available_moto by motomataru
   ("cf_division_data_available_moto", [
       (assign, ":evidence", 0),
       (try_for_range, ":team", 0, 4),
@@ -5320,7 +5320,7 @@ formAI_v5_scripts = [
       (try_end),
       (neq, ":evidence", 0)]),
   
-  # script_battlegroup_get_position by motomataru #CABA - EDITED TO USE SLOTS,
+  # script_battlegroup_get_position_moto by motomataru #CABA - EDITED TO USE SLOTS,
   # NOT STORED POS NUMBERS
   # Input: destination position, team, division
   # Output: battle group position
@@ -5358,7 +5358,7 @@ formAI_v5_scripts = [
       (position_rotate_z, ":bgposition", ":zrot", 0),
       (position_set_z_to_ground_level, ":bgposition"),]),
   
-  # script_battlegroup_get_attack_destination by motomataru
+  # script_battlegroup_get_attack_destination_moto by motomataru
   # Input: destination position, team, division, target team, target division
   # Output: melee position against target battlegroup
   ("battlegroup_get_attack_destination_moto", [
@@ -5456,7 +5456,7 @@ formAI_v5_scripts = [
       (call_script, "script_point_y_toward_position_moto", ":bgposition", Enemy_Team_Pos_MOTO),
       (position_move_y, ":bgposition", ":distance_to_move"),]),
   
-  # script_battlegroup_dist_center_to_front by motomataru
+  # script_battlegroup_dist_center_to_front_moto by motomataru
   # Input: team, division
   # Output: reg0 distance to front of battlegroup from center in cm
   ("battlegroup_dist_center_to_front_moto", [
@@ -5530,7 +5530,7 @@ formAI_v5_scripts = [
         (val_div, reg0, 3),
       (try_end),]),
   
-  # script_battlegroup_get_action_radius by motomataru
+  # script_battlegroup_get_action_radius_moto by motomataru
   # Input: team, division
   # Output: reg0 radius of battlegroup's "zone of control" (now length of
   # battlegroup in cm)
@@ -5597,7 +5597,7 @@ formAI_v5_scripts = [
       
       (val_mul, reg0, 2),]),
   
-  # script_team_get_position_of_enemies by motomataru
+  # script_team_get_position_of_enemies_moto by motomataru
   # Input: destination position, team, troop class/division
   # Output: destination position: average position if reg0 > 0
   #			reg0: number of enemies
@@ -5671,7 +5671,7 @@ formAI_v5_scripts = [
       
       (assign, reg0, ":total_size"),]),
   
-  # script_get_distance_to_battlegroup by motomataru
+  # script_get_distance_to_battlegroup_moto by motomataru
   # Gets distance from "from position" to the theoretical nearest side of the
   # battlegroup, accounting for rotation of battlegroup
   # Input: bg team, bg division, from position
@@ -5732,7 +5732,7 @@ formAI_v5_scripts = [
       (assign, reg0, ":distance_to_battlegroup"),
       (assign, reg2, ":cos_theta"),]),
   
-  # script_get_item_modifier_effects
+  # script_get_item_modifier_effects_moto
   # Input: itp_*, imod_*
   # Output: reg0 damage effect
   #         reg1 speed effect
@@ -6004,7 +6004,7 @@ formAI_v5_scripts = [
       (assign, reg4, ":difficulty"),
       (assign, reg5, ":price_factor"),]),
       
-  # script_evaluate_item moto chief
+  # script_evaluate_item_moto moto chief
   # Input: item_id, item_mod
   # Output: reg0 value meant to compare items of a given type
   ("evaluate_item_moto", [
