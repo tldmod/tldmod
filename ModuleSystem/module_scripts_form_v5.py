@@ -1712,6 +1712,7 @@ formAI_v5_scripts = [
           (eq, ":troop_level", ":rank_level"),
           (call_script, "script_cf_valid_formation_member_moto", ":fteam", ":fdivision", ":fleader", ":agent"),
           (agent_set_scripted_destination, ":agent", pos1, 1),
+          (agent_set_slot, ":agent", slot_agent_positioned, 1),
           (try_begin),	#First Agent
             (store_add, ":slot", slot_team_d0_first_member, ":fdivision"),
             (neg | team_slot_ge, ":fteam", ":slot", 0),
@@ -2959,6 +2960,7 @@ formAI_v5_scripts = [
           (agent_set_speed_limit, ":agent", 100),
           (agent_set_slot, ":agent", slot_agent_formation_rank, 0),
           (agent_set_slot, ":agent", slot_agent_inside_formation, 0),
+          (agent_set_slot, ":agent", slot_agent_positioned, 0), #InVain, used to track if agent is in formation
         (try_end),
         
         (try_begin),

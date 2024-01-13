@@ -1606,6 +1606,8 @@ tld_improved_horse_archer_ai =  (1, 0, 0, [ #Run it every 1 second instead of ev
             (agent_is_non_player, ":agent_no"),
             (agent_get_team, ":team_no", ":agent_no"),
             
+            (agent_slot_eq, ":agent_no", slot_agent_positioned, 0), #InVain, from FormAI v5
+            
             (try_begin),
                 (this_or_next|all_enemies_defeated, ":team_no"),
                 (agent_slot_eq, ":agent_no", slot_agent_is_running_away, 1),

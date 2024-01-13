@@ -2707,7 +2707,7 @@ slot_agent_formation_rank      = 27
 slot_agent_inside_formation    = 28
 slot_agent_nearest_enemy_agent = 29
 slot_agent_new_division        = 30
-slot_agent_positioned          = 31
+slot_agent_positioned          = 31 #InVain: Also used for checking if agent is in formation, for example in order to disable horse archer AI
 
 slot_item_alternate            = 46	#table between swing/noswing versions of same weapon
 
