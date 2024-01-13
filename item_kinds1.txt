@@ -93,40 +93,40 @@ itemsfile version 2
  itm_dunedain_warhorse Dunedain_Warhorse Dunedain_Warhorse 2  arnor_warhorse_a 0  arnor_warhorse_b 262144  65537 0 1800 119185604608 0 94 0 36 0 4 140 35 38 100 0 30 0
 0
 
- itm_rohirrim_courser Rohirrim_Courser Rohirrim_Courser 1  rohan_horse01 0  65537 0 700 16106389504 0 91 0 12 0 2 90 40 46 100 0 22 0
+ itm_rohirrim_courser Rohirrim_Courser Rohirrim_Courser 1  rohan_horse01 0  65537 0 700 16106389504 0 91 0 12 0 2 90 40 46 100 0 29 0
 0
 
- itm_rohirrim_hunter Rohirrim_Hunter Rohirrim_Hunter 1  rohan_horse02 0  65537 0 1150 16106389504 0 92 0 18 0 3 120 39 42 100 0 26 0
+ itm_rohirrim_hunter Rohirrim_Hunter Rohirrim_Hunter 1  rohan_horse02 0  65537 0 1150 16106389504 0 92 0 18 0 3 120 39 42 100 0 34 0
 0
 
- itm_rohirrim_courser2 Rohirrim_Armoured_Courser Rohirrim_Armoured_Courser 1  rohan_horse03b 0  65537 0 1150 16106389504 0 94 0 28 0 3 110 40 42 100 0 24 0
+ itm_rohirrim_courser2 Rohirrim_Armoured_Courser Rohirrim_Armoured_Courser 1  rohan_horse03b 0  65537 0 1150 16106389504 0 95 0 28 0 3 110 40 42 100 0 31 0
 0
 
- itm_rohan_warhorse Rohirrim_Warhorse Rohirrim_Warhorse 1  rohan_warhorse01 0  65537 0 1700 119185604608 0 95 0 30 0 3 135 36 40 100 0 34 0
+ itm_rohan_warhorse Rohirrim_Warhorse Rohirrim_Warhorse 1  rohan_warhorse01 0  65537 0 1700 119185604608 0 96 0 30 0 3 135 36 40 100 0 44 0
 0
 
- itm_thengel_warhorse Eorl_Warhorse Eorl_Warhorse 2  rohan_warhorse01 0  rohan_warhorse02 262144  65537 0 1900 119185604608 0 96 0 35 0 4 135 36 36 105 0 41 0
+ itm_thengel_warhorse Eorl_Warhorse Eorl_Warhorse 2  rohan_warhorse01 0  rohan_warhorse02 262144  65537 0 1900 119185604608 0 97 0 35 0 4 135 36 36 105 0 53 0
 0
 
- itm_rhun_horse_a Rhun_Horse Rhun_Horse 1  rhunhorselight1 0  65537 0 320 16106389504 0 91 0 10 0 2 70 39 38 100 0 10 0
+ itm_rhun_horse_a Rhun_Horse Rhun_Horse 1  rhunhorselight1 0  65537 0 320 16106389504 0 91 0 10 0 2 70 39 38 100 0 15 0
 0
 
- itm_rhun_horse_b Rhun_Horse Rhun_Horse 1  rhunhorselight2 0  65537 0 320 16106389504 0 91 0 10 0 2 70 39 38 100 0 10 0
+ itm_rhun_horse_b Rhun_Horse Rhun_Horse 1  rhunhorselight2 0  65537 0 320 16106389504 0 91 0 10 0 2 70 39 38 100 0 15 0
 0
 
- itm_rhun_horse_d Rhun_Horse Rhun_Horse 1  rhunhorselight4 0  65537 0 320 16106389504 0 91 0 10 0 2 70 39 38 100 0 10 0
+ itm_rhun_horse_d Rhun_Horse Rhun_Horse 1  rhunhorselight4 0  65537 0 320 16106389504 0 91 0 10 0 2 70 39 38 100 0 15 0
 0
 
- itm_rhun_horse_e Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav1 0  65537 0 1400 16106389504 0 93 0 30 0 3 130 38 37 108 0 25 0
+ itm_rhun_horse_e Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav1 0  65537 0 1400 16106389504 0 93 0 30 0 3 130 38 37 108 0 33 0
 0
 
- itm_rhun_horse_f Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav2 0  65537 0 1400 16106389504 0 93 0 30 0 3 130 38 37 108 0 25 0
+ itm_rhun_horse_f Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav2 0  65537 0 1400 16106389504 0 93 0 30 0 3 130 38 37 108 0 33 0
 0
 
- itm_rhun_horse_g Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav3 0  65537 0 2100 16106389504 0 94 0 35 0 4 160 36 36 112 0 28 0
+ itm_rhun_horse_g Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav3 0  65537 0 2100 16106389504 0 94 0 35 0 4 160 36 36 112 0 36 0
 0
 
- itm_rhun_horse_h Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav4 0  1 0 2400 16106389504 0 96 0 37 0 4 160 38 40 115 0 32 0
+ itm_rhun_horse_h Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav4 0  1 0 2400 16106389504 0 96 0 37 0 4 160 38 40 115 0 42 0
 0
 
  itm_dale_horse Rhovanion_Horse Rhovanion_Horse 1  bry_rus_horse_ponyfied_2 0  65537 0 550 16106389504 0 91 0 16 0 2 90 35 41 92 0 12 0
