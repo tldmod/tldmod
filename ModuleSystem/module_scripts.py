@@ -31539,7 +31539,7 @@ if is_a_wb_script==1:
 			#(neq, ":race", tf_troll),
 				(try_begin),
 					(eq, ":race", tf_troll),
-					(val_sub, ":counter", 5), #pushback is less probable if another troll is around
+					(val_sub, ":counter", 15), #pushback is less probable if another troll is around
 					#(display_message, "@troll counted: minus 4"),
 				(try_end),
 		  	(neg|is_between, ":troop_id", warg_ghost_begin, warg_ghost_end),
@@ -31555,7 +31555,7 @@ if is_a_wb_script==1:
 		#(display_message, "@{reg77} agents nearby", color_bad_news),
 
 		#(ge, ":counter", 4), #when surrounded by 4 enemies
-		(store_random_in_range, ":pushback_chance", 0, 11), #actually, let's make it slightly random: 10% pushback chance per troop in range
+		(store_random_in_range, ":pushback_chance", 0, 20), #actually, let's make it slightly random: 10% pushback chance per troop in range
 		(ge, ":counter", ":pushback_chance"),
 		(agent_set_animation, ":agent", "anim_troll_pushback"),
 		(agent_play_sound, ":agent", "snd_troll_yell"),
