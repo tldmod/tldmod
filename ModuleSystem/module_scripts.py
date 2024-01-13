@@ -28599,7 +28599,8 @@ if is_a_wb_script==1:
   ("get_page_no_of_troop_tree_for_troop_on",
   [
       (store_script_param, ":troop_no", 1),
-      
+	  
+	  (assign, ":page_no", -1),
       #(store_sub, ":num_factions", npc_kingdoms_end, npc_kingdoms_begin),
       (store_troop_faction, ":troop_faction", ":troop_no"),
       (try_begin),
