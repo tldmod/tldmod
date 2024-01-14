@@ -32346,7 +32346,8 @@ if is_a_wb_script==1:
      (prop_instance_get_scene_prop_kind, ":scene_prop_id", ":instance_id"),
      
      (try_begin),
-        (eq, ":scene_prop_id", "spr_ammo_barrel"),
+        (this_or_next|eq, ":scene_prop_id", "spr_ammo_stack_good"),
+        (eq, ":scene_prop_id", "spr_ammo_stack_evil"),
         (str_store_string, s0, "@Refill Ammunition"),    
      (try_end),
     ]),     

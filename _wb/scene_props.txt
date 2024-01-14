@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 2039
+ 2040
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -6208,7 +6208,11 @@ spr_ai_fadeout_sphere 16384 0 sphere_1m 0 0
 spr_ai_limiter_spikes_broken 81928 0 barrier_2m bo_barrier_2m 0
 
 
-spr_ammo_barrel 536870912 512 ammo_barrel bo_ammo_barrel 1
+spr_ammo_stack_good 536870912 512 ammo_stack bo_ammo_barrel 1
+-44  4 2072 1 1224979098644774912 1700 1 1224979098644774913 1728 1 1224979098644774913 1800 2 1224979098644774912 500 
+
+
+spr_ammo_stack_evil 536870912 512 ammo_stack_evil bo_ammo_barrel 1
 -44  4 2072 1 1224979098644774912 1700 1 1224979098644774913 1728 1 1224979098644774913 1800 2 1224979098644774912 500 
 
 

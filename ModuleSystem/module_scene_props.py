@@ -3945,14 +3945,23 @@ scene_props = [
 ("ai_limiter_spikes_broken" ,sokf_invisible|sokf_type_ai_limiter|sokf_moveable,"barrier_2m" ,"bo_barrier_2m" , []),
 
 ] + (is_a_wb_sceneprop==1 and [ 
-("ammo_barrel", spr_use_time(2), "ammo_barrel", "bo_ammo_barrel", [
+("ammo_stack_good", spr_use_time(2), "ammo_stack", "bo_ammo_barrel", [
      (ti_on_scene_prop_use,
       [(store_trigger_param_2, ":scene_prop"),
       (get_player_agent_no, ":player_agent"),   
       (agent_refill_ammo, ":player_agent"),
       (scene_prop_enable_after_time, ":scene_prop", 500),  
       ])]),
-       ] or [("ammo_barrel", 0, "ammo_barrel", "bo_ammo_barrel", []),]) + [      
+("ammo_stack_evil", spr_use_time(2), "ammo_stack_evil", "bo_ammo_barrel", [
+     (ti_on_scene_prop_use,
+      [(store_trigger_param_2, ":scene_prop"),
+      (get_player_agent_no, ":player_agent"),   
+      (agent_refill_ammo, ":player_agent"),
+      (scene_prop_enable_after_time, ":scene_prop", 500),  
+      ])]),      
+       ] or [("ammo_stack_good", 0, "ammo_stack", "bo_ammo_barrel", []),("ammo_stack_evil", 0, "ammo_stack_evil", "bo_ammo_barrel", []),]) + [      
+
+
 
 ("inventory_static",sokf_type_container,"package","bobaggage", []),
 
