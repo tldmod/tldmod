@@ -1383,7 +1383,7 @@ mission_templates = [ # not used in game
 			]),
 
  ] + ((is_a_wb_mt==1) and [
-  (20, 0, 0, [], [ # messenger props
+  (20, 0, 0, [], [ # messenger props WB only
         (scene_prop_get_num_instances, ":num_messengers", "spr_troop_messenger"),
         (scene_prop_get_num_instances, ":num_messenger_exits", "spr_troop_messenger_exit"),
         (set_fixed_point_multiplier, 100),
@@ -1473,7 +1473,7 @@ mission_templates = [ # not used in game
     (try_end),
       ]),
 
-  ### town patrols (separate triggers, maybe shift the load of the nested prop loops)
+  ### town patrols (separate triggers, maybe shift the load of the nested prop loops) WB only
   (15, 0, 0, [], [ 
     (call_script, "script_town_guard_patrols", "spr_troop_guard"),
       ]),
@@ -1486,7 +1486,7 @@ mission_templates = [ # not used in game
     (call_script, "script_town_guard_patrols", "spr_troop_rider"),
       ]),      
 
-    ###walker props    
+    ###walker props    WB only
   (3, 0, 0, [], [ 
     (set_fixed_point_multiplier, 100),
     (get_player_agent_no, ":player_agent"),
@@ -1509,8 +1509,40 @@ mission_templates = [ # not used in game
     (try_end),
       ]),
 
-  ] or []) + [
 
+  (0.3, 0, 0, [], [ #animated agents WB only
+    
+    #wood hackers
+    (call_script, "script_animate_town_agents", spr_troop_civilian_wood_hacker_1h, 3, 3),
+    (call_script, "script_animate_town_agents", spr_troop_civilian_wood_hacker_2h, 4, 3),
+    (call_script, "script_animate_town_agents", spr_troop_civilian_tree_feller, 4, 1),   
+    
+    #hammerer
+    (call_script, "script_animate_town_agents", spr_troop_civilian_hammer, 2, 3),
+
+    #farmers
+    (call_script, "script_animate_town_agents", spr_troop_civilian_farmer_mattock, 4, 3),
+    (call_script, "script_animate_town_agents", spr_troop_civilian_farmer_shovel, 2, 0), #doesn't work so well
+    
+    #miners use two attack actions, so we fire the script twice with higher pause count
+    (call_script, "script_animate_town_agents", spr_troop_civilian_miner, 6, 4),
+    #(call_script, "script_animate_town_agents", spr_troop_civilian_miner, 6, 1), 
+    
+    #smiths
+    (call_script, "script_animate_town_agents", spr_troop_smith, 3, 3), 
+    
+    (call_script, "script_animate_town_agents", spr_troop_guard_fight_single, 5, 4),
+
+    #refill training archers
+    (scene_prop_get_num_instances, ":num_props", "spr_troop_archer_fight_single"),
+    (try_for_range, ":count", 0, ":num_props"),
+        (scene_prop_get_instance, ":instance_no", "spr_troop_archer_fight_single", ":count"),
+        (scene_prop_get_slot, ":agent", ":instance_no", slot_gate_aggravator),
+        (agent_refill_ammo, ":agent"),
+    (try_end),
+      ]),
+
+  ] or []) + [
 
   (10, 0, ti_once, [], [ # Kham - Set Tutorial Message RE: Rumours
       (try_begin),
@@ -2228,7 +2260,7 @@ mission_templates = [ # not used in game
         (replace_scene_props, "spr_troop_guard", "spr_empty"),
 		(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"), # (CppCoder) These are what cause the "unable to finish" bugs.
 		(replace_scene_props, "spr_troop_human_prisoner", "spr_empty"),
-		(replace_scene_props, "spr_troop_moria_troll", "spr_empty"),	
+		(replace_scene_props, "spr_troop_troll", "spr_empty"),	
 		(replace_scene_props, "spr_troop_civilian", "spr_empty"),
 		(replace_scene_props, "spr_troop_civilian_sitting_ground", "spr_empty"),
 		(replace_scene_props, "spr_troop_civilian_sitting_chair", "spr_empty"),	
@@ -2307,7 +2339,7 @@ mission_templates = [ # not used in game
             (replace_scene_props, "spr_troop_guard", "spr_empty"),
             (replace_scene_props, "spr_troop_guard_sitting", "spr_empty"),
             (replace_scene_props, "spr_troop_human_prisoner", "spr_empty"),
-            (replace_scene_props, "spr_troop_moria_troll", "spr_empty"),	
+            (replace_scene_props, "spr_troop_troll", "spr_empty"),	
             (replace_scene_props, "spr_troop_civilian", "spr_empty"),
             (replace_scene_props, "spr_troop_civilian_sitting_ground", "spr_empty"),
             (replace_scene_props, "spr_troop_civilian_sitting_chair", "spr_empty"),		
@@ -6352,7 +6384,10 @@ mission_templates = [ # not used in game
         (replace_scene_props, "spr_troop_guard", "spr_troop_civilian"),
 		(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"), # (CppCoder) These are what cause the "unable to finish" bugs.
 		(replace_scene_props, "spr_troop_human_prisoner", "spr_empty"),
-		(replace_scene_props, "spr_troop_moria_troll", "spr_empty"),
+		(replace_scene_props, "spr_troop_troll", "spr_empty"),
+        (try_for_range, ":prop", spr_troop_civilian_lying, spr_troop_civilian_farmer_shovel+1), #remove town agents
+            (replace_scene_props, ":prop", "spr_empty"),
+        (try_end),
         ]),
 	dungeon_darkness_effect,
 ]),

@@ -762,5 +762,6 @@ script_siege_adjust_battle_size = 760
 script_reset_battle_size = 761
 script_game_get_use_string = 762
 script_lookat = 763
+script_animate_town_agents = 764
 
 

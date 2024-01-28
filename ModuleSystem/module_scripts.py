@@ -25788,7 +25788,19 @@ command_cursor_scripts = [
         (troop_equip_items, "trp_radagast"),
         (assign, "$savegame_version", 38),
 	(try_end),
-    
+
+    (try_begin), #InVain - update town walkers
+        (le, "$savegame_version", 38),
+        (try_for_range, ":center", centers_begin, centers_end),
+            (try_for_range, ":slot", slot_center_walker_0_troop, slot_center_walker_0_dna),
+                (party_get_slot, ":troop", ":center", ":slot"),
+                (troop_is_mounted, ":troop"),
+                (party_get_slot, ":new_troop", ":center", slot_town_guard_troop), #should be infantry
+                (party_set_slot, ":center", ":slot", ":new_troop"),
+            (try_end),
+        (try_end),
+        (assign, "$savegame_version", 39),
+	(try_end),	    
 ]),
 
 #Kham
@@ -32416,5 +32428,40 @@ if is_a_wb_script==1:
 
     (position_rotate_z, ":looker", ":z_angle"),    # Rotate left/right (yaw) first
     (position_rotate_x, ":looker", ":x_angle"),    # Then rotate up/down (pitch) last
-    ]),    
+    ]),
+    
+# script_animate_town_agents
+# Input: Prop type, frequency (pauses), animation type (thrust, right, left, overswing, or random)
+("animate_town_agents", [
+    (store_script_param, ":prop", 1),
+    (store_script_param, ":frequency", 2),
+    (store_script_param, ":animation", 3),
+    (set_fixed_point_multiplier, 100),
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_position, pos4, ":player_agent"),
+    (scene_prop_get_num_instances, ":num_props", ":prop"),
+    (try_for_range, ":count", 0, ":num_props"),
+        (scene_prop_get_instance, ":instance_no", ":prop", ":count"),
+        (prop_instance_get_position, pos2, ":instance_no"),
+        (scene_prop_get_slot, ":agent", ":instance_no", slot_gate_aggravator),
+        (prop_instance_get_position, pos3,":instance_no"),
+        (get_distance_between_positions, ":distance", pos3, pos4),
+        # (try_begin),
+            # (eq, ":prop", spr_troop_smith),
+            # (assign, reg66, ":distance"),
+            # (display_message, "@distance: {reg66}"),
+        # (try_end),
+        (is_between, ":distance", 350, 3000), #only if player isn't too close, but also not too far either (avoid too many sounds)
+        (agent_set_look_target_position, ":agent", pos2),
+        (neg|position_is_behind_position, pos2, pos3),
+        (store_random_in_range, ":chance", 0, 15),
+        (ge, ":chance", ":frequency"), #number of pauses
+        (try_begin),
+            (eq, ":animation", 4),
+            (store_random_in_range, ":animation", 0, 4),
+         (try_end),
+        (agent_set_attack_action, ":agent", ":animation", 0), #overhead
+    (try_end),
+]),
+
 ] or []) 

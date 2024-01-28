@@ -414,10 +414,12 @@ scene_props = [
    (ti_on_scene_prop_hit,
     [   (store_trigger_param_1, ":instance_no"),
         (store_trigger_param_2, ":damage"),
+        (store_trigger_param, ":agent", 3),
         (assign, reg60, ":damage"),
         (val_div, ":damage", 8),
         (prop_instance_get_position, pos2, ":instance_no"),
         (get_player_agent_no, ":player_agent"),
+        (eq, ":agent", ":player_agent"),
         (agent_get_position, pos3, ":player_agent"),
         (try_begin),
           (position_is_behind_position, pos3, pos2),
@@ -2022,7 +2024,8 @@ scene_props = [
         (agent_set_team, reg0, 2), #non-player defender team
 ] + (is_a_wb_sceneprop==1 and [          
         (agent_set_division, reg0, grc_archers), #set them to archers, so they stand ground
-        (agent_set_scripted_destination, reg0, pos1, 0, 1), #make sure
+        #(agent_set_scripted_destination, reg0, pos1, 0, 1), #make sure
+        (agent_ai_set_aggressiveness, reg0, 5), #test
     ] or []) + [           
     (try_end),
     ])]),
@@ -2088,16 +2091,19 @@ scene_props = [
         (agent_set_team, reg0, 2), #non-player defender team
 ] + (is_a_wb_sceneprop==1 and [          
         (agent_set_division, reg0, grc_archers), #set them to archers, so they stand ground
+        (agent_ai_set_aggressiveness, reg0, 5), #test
     ] or []) + [    
     (try_end),
     ])]),
     
 ##### TROLLS #####
-("troop_moria_troll",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+("troop_troll",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-    (assign, ":troop", "trp_moria_troll"),
+    (store_faction_of_party, ":fac", "$current_town"),
+    (faction_get_slot, ":troop", ":fac", slot_faction_troll_troop),    
+    (gt, ":troop", 0),
     (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand"),])]),
   
 
@@ -2898,7 +2904,7 @@ scene_props = [
 ( "smithy_grindstone_wheel"                    ,0,"smithy_grindstone_wheel","bo_smithy_grindstone_wheel",[]),
 ( "smithy_forge_bellows"                       ,0,"smithy_forge_bellows","bo_smithy_forge_bellows",[]),
 ( "smithy_forge"                               ,0,"smithy_forge","bo_smithy_forge",[]),
-( "smithy_anvil"                               ,0,"smithy_anvil","bo_smithy_anvil",[]),
+( "smithy_anvil"                               ,0,"smithy_anvil","0",[]),
 ( "tannery_hide_a"                             ,0,"tannery_hide_a","bo_tannery_hide_a",[]),
 ( "tannery_hide_b"                             ,0,"tannery_hide_b","bo_tannery_hide_b",[]),
 #WB only props end
@@ -2957,7 +2963,7 @@ scene_props = [
 
     #remove weapons and helms
   ] + (is_a_wb_sceneprop==1 and [     
-        (try_for_range, ":weapon_slot", 0, 3), 
+        (try_for_range, ":weapon_slot", 0, 4), 
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (agent_unequip_item, reg0, ":item", ":weapon_slot"),
@@ -2972,7 +2978,7 @@ scene_props = [
   
   ])]),
 	
-("troop_civilian_sitting_ground",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+("troop_civilian_sitting_ground",sokf_invisible,"sitting","bo_sitting", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
@@ -2989,11 +2995,14 @@ scene_props = [
 	        (else_try),
 	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_5_troop),
 			(try_end),
-	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground"),
+	#(spawn_scene_prop, "spr_barrier_2m_horizontal"),
+    (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground"),
     
         #remove weapons and helms
-  ] + (is_a_wb_sceneprop==1 and [     
-        (try_for_range, ":weapon_slot", 0, 3), 
+  ] + (is_a_wb_sceneprop==1 and [ 
+        (agent_set_no_dynamics, reg0, 1),
+        (agent_ai_set_interact_with_player, reg0, 0),
+        (try_for_range, ":weapon_slot", 0, 4), 
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (agent_unequip_item, reg0, ":item", ":weapon_slot"),
@@ -3007,7 +3016,7 @@ scene_props = [
     ] or []) + [  
     ])]),
 	
-("troop_civilian_sitting_chair",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+("troop_civilian_sitting_chair",sokf_invisible,"sit","bo_sitting", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
@@ -3024,10 +3033,13 @@ scene_props = [
 	        (else_try),
 	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_5_troop),
 			(try_end),
-	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_throne"),
+	#(spawn_scene_prop, "spr_barrier_2m_horizontal"),
+    (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_throne"),
     
         #remove weapons and helms
   ] + (is_a_wb_sceneprop==1 and [     
+    (agent_set_no_dynamics, reg0, 1),
+    (agent_ai_set_interact_with_player, reg0, 0),        
         (try_for_range, ":weapon_slot", 0, 3), 
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -3967,6 +3979,537 @@ scene_props = [
 
 #Helms Deep
 ("HD_breached",0,"HD_breached","bo_helms_deep_breached", []),
+
+("troop_civilian_lying",sokf_invisible,"man_body_lie","bo_man_body_lie", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (store_faction_of_party, ":fac", "$current_town"),
+    (faction_get_slot, ":troop", ":fac", slot_faction_tier_1_troop), #get a tier 1 troop so they don't wear heavy armour
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    (store_random_in_range, ":anim", 0, 3),
+    (val_add, ":anim", "anim_fall_face_hold"),
+  ] + (is_a_wb_sceneprop==1 and [     
+    (spawn_scene_prop, "spr_barrier_2m_horizontal"), #this helps so they don't sink into the ground 
+    (scene_prop_set_visibility, reg0, 0),
+    ] or []) + [       
+	(spawn_agent, ":troop"),
+    (agent_set_team, reg0, 0),(agent_set_animation, reg0, ":anim"),(agent_set_stand_animation, reg0, 100),
+    
+        #remove weapons and helms
+  ] + (is_a_wb_sceneprop==1 and [    
+        (agent_set_no_dynamics, reg0, 1),
+        (agent_ai_set_interact_with_player, reg0, 0),
+        (try_for_range, ":weapon_slot", 0, 5), #weapons and helm
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+        (try_end),
+        (try_begin),
+            (agent_get_item_slot, ":gloves", reg0, ek_gloves),
+            (gt, ":gloves", 1),
+            (agent_unequip_item, reg0, ":gloves", ek_gloves),
+        (try_end),        
+        (store_random_in_range, ":chance", 0, 10),
+        (try_begin), 
+            (ge, ":chance", 3),
+            (agent_get_item_slot, ":boots", reg0, ek_foot),
+            (gt, ":boots", 1),
+            (agent_unequip_item, reg0, ":boots", ek_foot),
+        (try_end),    
+        (try_begin),
+            (ge, ":chance", 8),
+            (agent_get_item_slot, ":armour", reg0, ek_body),
+            (gt, ":armour", 1),
+            (agent_unequip_item, reg0, ":armour", ek_body),
+        (try_end),
+    ] or []) + [  
+    ])]),
+
+("troop_guard_fight_duel",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+  ] + (is_a_wb_sceneprop==1 and [  
+    (store_trigger_param_1, ":instance_no"),
+    (set_fixed_point_multiplier, 100),
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
+    (spawn_agent, ":troop"), (assign, ":fighter_1", reg0),(agent_set_team, ":fighter_1", 0),(agent_ai_set_interact_with_player, ":fighter_1", 0),(agent_set_is_alarmed, ":fighter_1", 1),(agent_set_no_death_knock_down_only, ":fighter_1", 1),
+    (agent_get_item_slot, ":old_weapon", ":fighter_1", 0), #assume that weapon is in first slot
+    (agent_unequip_item, ":fighter_1", ":old_weapon", 0),
+    (item_get_type, ":weapon_type", ":old_weapon"),
+    (assign, ":new_weapon", itm_wood_club),
+    (try_begin),
+        (eq, ":weapon_type", itp_type_two_handed_wpn),
+        (assign, ":new_weapon", itm_twohand_wood_club),
+    (else_try),
+        (eq, ":weapon_type", itp_type_polearm),
+        (assign, ":new_weapon", itm_practice_staff),
+    (try_end),        
+    (agent_equip_item, ":fighter_1", ":new_weapon", 0),
+    (agent_set_wielded_item, ":fighter_1", ":new_weapon"),    
+    (position_move_y, pos1, 500,0),
+    (position_rotate_z, pos1, 180),
+    (set_spawn_position, pos1),
+    (spawn_agent, ":troop"),(assign, ":fighter_2", reg0),
+    (agent_set_team, ":fighter_2", 0),(agent_ai_set_interact_with_player, ":fighter_2", 0),(agent_set_is_alarmed, ":fighter_2", 1),(agent_set_no_death_knock_down_only, ":fighter_2", 1),
+    (agent_add_relation_with_agent, ":fighter_2", ":fighter_1", -1),(agent_add_relation_with_agent, ":fighter_1", ":fighter_2", -1),
+    (agent_get_item_slot, ":old_weapon", ":fighter_2", 0), #assume that weapon is in first slot
+    (agent_unequip_item, ":fighter_2", ":old_weapon", 0),
+    (item_get_type, ":weapon_type", ":old_weapon"),
+    (assign, ":new_weapon", itm_wood_club),
+    (try_begin),
+        (eq, ":weapon_type", itp_type_two_handed_wpn),
+        (assign, ":new_weapon", itm_twohand_wood_club),
+    (else_try),
+        (eq, ":weapon_type", itp_type_polearm),
+        (assign, ":new_weapon", itm_practice_staff),
+    (try_end),        
+    (agent_equip_item, ":fighter_2", ":new_weapon", 0),
+    (agent_set_wielded_item, ":fighter_2", ":new_weapon"), 
+    ] or []) + [  
+  ])]),
+  
+("troop_guard_fight_single",0,"wood_a","bo_wood_a_bigger", [(ti_on_init_scene_prop,[
+  ] + (is_a_wb_sceneprop==1 and [  
+    (store_trigger_param_1, ":instance_no"),
+    (set_fixed_point_multiplier, 100),
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
+    #(spawn_agent, "trp_gate_aggravator"),(agent_set_team, reg0, 0), (assign, reg1, reg0),(agent_set_no_dynamics, reg0, 1), (agent_ai_set_interact_with_player, reg0, 0),(agent_set_is_alarmed, reg0, 1),(agent_set_no_death_knock_down_only, reg0, 1),
+    
+    (position_move_y, pos1, -80,0),(set_spawn_position, pos1),
+    (spawn_agent, ":troop"),(agent_set_team, reg0, 0),
+    #(agent_set_no_dynamics, reg0, 1),
+    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+    (agent_set_scripted_destination, reg0, pos1), 
+    (agent_set_damage_modifier, reg0, 0),
+    #(agent_add_relation_with_agent, reg0, reg1, -1),(agent_ai_set_interact_with_player, reg0, 0),(agent_set_is_alarmed, reg0, 1),(agent_set_no_death_knock_down_only, reg0, 1),
+
+    (assign, ":weapon_found", 0),
+    (try_for_range, ":weapon_slot", 0, 4), #find weapon, non-polearm first
+        (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+        (gt, ":item", 1),
+        (item_get_type, ":item_type", ":item"),
+        (this_or_next|eq, ":item_type", itp_type_one_handed_wpn),
+        (eq, ":item_type", itp_type_two_handed_wpn),
+        #(agent_equip_item, reg0, ":item", 1),
+        (agent_set_wielded_item, reg0, ":item"),
+        (assign, ":weapon_found", 1),
+    (try_end),
+    (try_for_range, ":weapon_slot", 0, 4), #find shield
+        (eq, ":weapon_found", 1),
+        (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+        (gt, ":item", 1),
+        (item_get_type, ":item_type", ":item"),
+        (eq, ":item_type", itp_type_shield),
+        #(agent_equip_item, reg0, ":item", 1),
+        (agent_set_wielded_item, reg0, ":item"),
+    (try_end),
+    
+    (eq, ":weapon_found", 0), #no non-polearm weapon found? equip polearm w/o shield
+    (try_for_range, ":weapon_slot", 0, 4),      
+        (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+        (gt, ":item", 1),
+        (item_get_type, ":item_type", ":item"),
+        #(agent_equip_item, reg0, ":item", 1),
+        (agent_set_wielded_item, reg0, ":item"),
+    (try_end),
+    ] or []) + [          ]),
+        
+   (ti_on_scene_prop_hit,
+    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (get_player_agent_no, ":player_agent"),
+        (agent_get_position, pos4, ":player_agent"),
+        (get_distance_between_positions, ":distance", pos1, pos4),
+        (le, ":distance", 20000), #20m  
+        (play_sound, "snd_dummy_hit"),
+        (particle_system_burst, "psys_dummy_smoke", pos1, 2),
+        (particle_system_burst, "psys_dummy_straw", pos1, 10),
+    ])]),
+
+("troop_troll_fight_duel",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+  ] + (is_a_wb_sceneprop==1 and [  
+    (store_trigger_param_1, ":instance_no"),
+    (set_fixed_point_multiplier, 100),
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    (store_faction_of_party, ":fac", "$current_town"),
+    (faction_get_slot, ":troop", ":fac", slot_faction_troll_troop),
+    (gt, ":troop", 0),
+    (spawn_agent, ":troop"), (assign, ":fighter_1", reg0),(agent_set_team, ":fighter_1", 0),(agent_ai_set_interact_with_player, ":fighter_1", 0),(agent_set_is_alarmed, ":fighter_1", 1),(agent_set_no_death_knock_down_only, ":fighter_1", 1),
+    (position_move_y, pos1, 300,0),
+    (position_rotate_z, pos1, 180),
+    (set_spawn_position, pos1),
+    (spawn_agent, ":troop"),(assign, ":fighter_2", reg0),
+    (agent_set_team, ":fighter_2", 0),(agent_ai_set_interact_with_player, ":fighter_2", 0),(agent_set_is_alarmed, ":fighter_2", 1),(agent_set_no_death_knock_down_only, ":fighter_2", 1),
+    (agent_add_relation_with_agent, ":fighter_2", ":fighter_1", -1),(agent_add_relation_with_agent, ":fighter_1", ":fighter_2", -1),
+    ] or []) + [  
+  ])]),
+
+("troop_archer_fight_single",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+  ] + (is_a_wb_sceneprop==1 and [  
+    (store_trigger_param_1, ":instance_no"),
+    (set_fixed_point_multiplier, 100),
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (prop_instance_get_position, pos1, ":instance_no"), 
+    (set_spawn_position, pos1),
+    (party_get_slot, ":troop", "$current_town", slot_town_archer_troop),
+    (spawn_agent, "trp_gate_aggravator"),
+    (agent_set_team, reg0, 0), 
+    (assign, reg1, reg0),
+    (agent_set_no_dynamics, reg0, 1), 
+    (agent_ai_set_interact_with_player, reg0, 0),
+    (agent_set_is_alarmed, reg0, 1),
+    (agent_set_no_death_knock_down_only, reg0, 1),
+    (agent_set_visibility, reg0, 0),
+    
+    (position_move_y, pos1, -1000,0),(set_spawn_position, pos1),
+    (spawn_agent, ":troop"),(agent_set_team, reg0, 0),
+    #(agent_set_no_dynamics, reg0, 1),
+    (agent_set_scripted_destination, reg0, pos1), 
+    (agent_add_relation_with_agent, reg0, reg1, -1),(agent_ai_set_interact_with_player, reg0, 0),(agent_set_is_alarmed, reg0, 1),(agent_set_no_death_knock_down_only, reg0, 1),
+    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+    ] or []) + [ 
+  ])]),
+  
+("barrier_2m_horizontal" ,sokf_invisible|sokf_type_barrier,"barrier_2m_horizontal" ,"bo_barrier_2m_horizontal" , []),
+
+("troop_civilian_wood_hacker_1h",0,"prop_wood_chopper","bo_prop_wood_chopper",   [
+    (ti_on_init_scene_prop,[
+        (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100),
+        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (prop_instance_get_position, pos1, ":instance_no"), 
+        (copy_position, pos2, pos1),
+        (position_move_y, pos2, -95,0),(set_spawn_position, pos2),
+        (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
+        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (party_get_slot, ":troop", "$current_town", ":walker_type"),
+        (spawn_agent, ":troop"),
+  ] + (is_a_wb_sceneprop==1 and [ 
+        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (neg|item_has_property, ":item", itp_civilian),
+            (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+        (try_end),
+        (agent_set_no_dynamics, reg0, 1),  
+        (agent_equip_item, reg0, "itm_civilian_woodaxe_1h", 1),
+        (agent_set_wielded_item, reg0, "itm_civilian_woodaxe_1h"),
+        (agent_set_look_target_position, reg0, pos2),
+    ] or []) + [          ]),
+        
+   (ti_on_scene_prop_hit,
+    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (get_player_agent_no, ":player_agent"),
+        (agent_get_position, pos4, ":player_agent"),
+        (get_distance_between_positions, ":distance", pos1, pos4),
+        (le, ":distance", 20000), #20m  
+        (play_sound, "snd_dummy_hit"),
+        (particle_system_burst, "psys_dummy_smoke", pos1, 2),
+        (particle_system_burst, "psys_dummy_straw", pos1, 10),
+    ])]),
+    
+("troop_civilian_wood_hacker_2h",0,"prop_wood_chopper","bo_prop_wood_chopper",   [
+    (ti_on_init_scene_prop,[
+        (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100),
+        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (prop_instance_get_position, pos1, ":instance_no"), 
+        (copy_position, pos2, pos1),
+        (position_move_y, pos2, -130,0),(set_spawn_position, pos2),
+        (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
+        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (party_get_slot, ":troop", "$current_town", ":walker_type"),
+        (spawn_agent, ":troop"),
+  ] + (is_a_wb_sceneprop==1 and [
+        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (neg|item_has_property, ":item", itp_civilian),
+            (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+        (try_end),
+        (agent_set_no_dynamics, reg0, 1),  
+        (agent_equip_item, reg0, "itm_civilian_woodaxe_2h", 1),
+        (agent_set_wielded_item, reg0, "itm_civilian_woodaxe_2h"),
+        (agent_set_look_target_position, reg0, pos2),
+] or []) + [ ]),
+        
+   (ti_on_scene_prop_hit,
+    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (get_player_agent_no, ":player_agent"),
+        (agent_get_position, pos4, ":player_agent"),
+        (get_distance_between_positions, ":distance", pos1, pos4),
+        (le, ":distance", 20000), #20m
+        (play_sound, "snd_dummy_hit"),
+        (particle_system_burst, "psys_dummy_smoke", pos1, 2),
+        (particle_system_burst, "psys_dummy_straw", pos1, 10),
+    ])]),
+    
+("troop_civilian_tree_feller",0,"wood_a","bo_wood_a_bigger",   [
+    (ti_on_init_scene_prop,[
+        (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100),
+        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (prop_instance_get_position, pos1, ":instance_no"), 
+        (copy_position, pos2, pos1),
+        (position_move_y, pos2, -160,0),(set_spawn_position, pos2),
+        (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
+        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (party_get_slot, ":troop", "$current_town", ":walker_type"),
+        (spawn_agent, ":troop"),
+  ] + (is_a_wb_sceneprop==1 and [
+        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (neg|item_has_property, ":item", itp_civilian),
+            (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+        (try_end),  
+        (agent_set_no_dynamics, reg0, 1),  
+        (agent_equip_item, reg0, "itm_civilian_woodaxe_2h", 1),
+        (agent_set_wielded_item, reg0, "itm_civilian_woodaxe_2h"),
+        (agent_set_look_target_position, reg0, pos2),
+    ] or []) + [ ]),
+        
+   (ti_on_scene_prop_hit,
+    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (get_player_agent_no, ":player_agent"),
+        (agent_get_position, pos4, ":player_agent"),
+        (get_distance_between_positions, ":distance", pos1, pos4),
+        (le, ":distance", 20000), #20m
+        (play_sound, "snd_dummy_hit"),
+        (particle_system_burst, "psys_dummy_smoke", pos1, 2),
+        (particle_system_burst, "psys_dummy_straw", pos1, 10),
+    ])]),  
+    
+("troop_civilian_miner",0,"PW_rock_a","bo_PW_rock_a",   [
+    (ti_on_init_scene_prop,[
+        (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100),
+        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (prop_instance_get_position, pos1, ":instance_no"),
+        (copy_position, pos2, pos1),
+        (position_move_y, pos2, -130,0),(set_spawn_position, pos2),
+        (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers       
+        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (party_get_slot, ":troop", "$current_town", ":walker_type"),
+        (spawn_agent, ":troop"),
+  ] + (is_a_wb_sceneprop==1 and [    
+        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (neg|item_has_property, ":item", itp_civilian),
+            (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+        (try_end),  
+        (agent_set_no_dynamics, reg0, 1),  
+        (agent_equip_item, reg0, "itm_civilian_pickaxe", 1),
+        (agent_set_wielded_item, reg0, "itm_civilian_pickaxe"),
+        (agent_set_look_target_position, reg0, pos2),
+    ] or []) + [  ]),
+    
+   (ti_on_scene_prop_hit,
+    [   (play_sound, "snd_footstep_horse_1b"), 
+        #(play_sound, "snd_jump_end"),
+        (particle_system_burst, "psys_dummy_smoke", pos1, 3),
+        #(particle_system_burst, "psys_dummy_straw", pos1, 10),
+    ])]),  
+
+("troop_smith",0,"prop_smith","bo_prop_smith",   [
+    (ti_on_init_scene_prop,[
+        (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100),
+        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (prop_instance_get_position, pos1, ":instance_no"), 
+        
+        #spawn smith
+        (copy_position, pos2, pos1),
+        (position_move_x, pos2, -100,0),(set_spawn_position, pos2),
+        (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
+        (spawn_agent, ":troop"),
+  ] + (is_a_wb_sceneprop==1 and [    
+        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (neg|item_has_property, ":item", itp_civilian),
+            (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+        (try_end),  
+        (agent_set_no_dynamics, reg0, 1),  
+        (agent_equip_item, reg0, "itm_civilian_hammer", 1),
+        (agent_set_wielded_item, reg0, "itm_civilian_hammer"),
+        (agent_set_look_target_position, reg0, pos1),
+        (agent_set_scripted_destination, reg0, pos2, 0, 1),
+    ] or []) + [        
+        # #spawn helper
+        # (copy_position, pos3, pos1),
+        # (position_move_y, pos3, 50,0),
+        # (position_move_x, pos3, 50,0),
+        # (position_rotate_z, pos3, 120),
+        # (set_spawn_position, pos3),
+        # (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),        
+        # (spawn_agent, ":troop"),  
+        # (agent_set_animation, reg0, "anim_defend_forward_greatsword_keep"), 
+        # (agent_set_stand_animation, reg0, "anim_defend_forward_greatsword_keep"), 
+  # ] + (is_a_wb_sceneprop==1 and [         
+        # #(scene_prop_set_slot, ":instance_no", 99, reg0), #just a random slot for this single scene prop
+        # (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+            # (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            # (gt, ":item", 1),
+            # (neg|item_has_property, ":item", itp_civilian),
+            # (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+        # (try_end),  
+        # #(agent_set_scripted_destination, reg0, pos3, 0, 1),
+        # (agent_set_look_target_position, reg0, pos2),
+        # (spawn_scene_prop, spr_spike_a),        
+    # ] or []) + [        
+        ]),
+        
+   (ti_on_scene_prop_hit,
+    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (get_player_agent_no, ":player_agent"),
+        (agent_get_position, pos4, ":player_agent"),
+        (get_distance_between_positions, ":distance", pos1, pos4),
+        # (assign, reg66, ":distance"),
+        # (display_message, "@distance: {reg66}"),
+        (le, ":distance", 2500), #20m
+        (play_sound, "snd_sword_clash_1"),
+        (particle_system_burst, "psys_fire_glow_1", pos1, 3),
+        (particle_system_burst, "psys_torch_fire_sparks", pos1, 10),
+    ])]), 
+
+("troop_smith_helper",sokf_invisible,"defend_twohanded_WB_frame","bo_defend_twohanded_WB_frame", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (store_faction_of_party, ":fac", "$current_town"),
+    (faction_get_slot, ":troop", ":fac", slot_faction_tier_1_troop), #get a tier 1 troop so they don't wear heavy armour
+    (prop_instance_get_position, pos3, ":instance_no"), (set_spawn_position, pos1),
+    # (position_move_y, pos3, 30,0),
+    # (position_move_x, pos3, 30,0),
+    # (position_rotate_z, pos3, 120),
+    (set_spawn_position, pos3),
+    (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),        
+    (spawn_agent, ":troop"),  
+    (agent_set_animation, reg0, "anim_defend_forward_greatsword_keep"), 
+    (agent_set_stand_animation, reg0, "anim_defend_forward_greatsword_keep"), 
+    ] + (is_a_wb_sceneprop==1 and [         
+    #(scene_prop_set_slot, ":instance_no", 99, reg0), #just a random slot for this single scene prop
+    (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+        (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+        (gt, ":item", 1),
+        (neg|item_has_property, ":item", itp_civilian),
+        (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+    (try_end),  
+    #(agent_set_scripted_destination, reg0, pos3, 0, 1),
+    ] or []) + [   
+    ])]),
+
+("troop_civilian_hammer",0,"prop_hammerer","bo_prop_hammerer",   [
+    (ti_on_init_scene_prop,[
+        (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100),
+        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (prop_instance_get_position, pos1, ":instance_no"),
+        (copy_position, pos2, pos1),
+        (position_move_y, pos2, -80,0),(set_spawn_position, pos2),
+        (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
+        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (party_get_slot, ":troop", "$current_town", ":walker_type"),
+        (spawn_agent, ":troop"),
+        ] + (is_a_wb_sceneprop==1 and [           
+        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (neg|item_has_property, ":item", itp_civilian),
+            (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+        (try_end),  
+        (agent_set_no_dynamics, reg0, 1),  
+        (agent_equip_item, reg0, "itm_civilian_hammer", 1),
+        (agent_set_wielded_item, reg0, "itm_civilian_hammer"),
+        (agent_set_look_target_position, reg0, pos1),
+        ] or []) + [          ]),
+        
+   (ti_on_scene_prop_hit,
+    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (get_player_agent_no, ":player_agent"),
+        (agent_get_position, pos4, ":player_agent"),
+        (get_distance_between_positions, ":distance", pos1, pos4),
+        (le, ":distance", 20000), #20m
+        (play_sound, "snd_shield_hit_metal_wood"),
+        (particle_system_burst, "psys_dummy_smoke", pos1, 1),
+        #(particle_system_burst, "psys_dummy_straw", pos1, 10),
+    ])]),
+
+("troop_civilian_farmer_mattock",0,"earth_heap","bo_earth_heap",   [
+    (ti_on_init_scene_prop,[
+        (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100),
+        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (prop_instance_get_position, pos1, ":instance_no"), 
+        (copy_position, pos2, pos1),
+        (position_move_y, pos2, -100,0),(set_spawn_position, pos2),
+        (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
+        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (party_get_slot, ":troop", "$current_town", ":walker_type"),
+        (spawn_agent, ":troop"),
+  ] + (is_a_wb_sceneprop==1 and [
+        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (neg|item_has_property, ":item", itp_civilian),
+            (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+        (try_end),  
+        (agent_set_no_dynamics, reg0, 1),  
+        (store_random_in_range, ":item_to_equip", 0, 3),
+        (val_add, ":item_to_equip", itm_civilian_war_mattock),
+        (agent_equip_item, reg0, ":item_to_equip", 1),
+        (agent_set_wielded_item, reg0, ":item_to_equip"),
+        (agent_set_look_target_position, reg0, pos1),
+] or []) + [ ]),
+        
+   (ti_on_scene_prop_hit,
+    [   (play_sound, "snd_wooden_hit_high_armor_low_damage"),
+        (particle_system_burst, "psys_dummy_smoke", pos1, 3),
+        (particle_system_burst, "psys_dummy_straw", pos1, 10),
+    ])]),
+
+#doesn't work so good, somehow the agent often doesn't aim at the target prop
+("troop_civilian_farmer_shovel",0,"earth_heap","bo_earth_heap",   [
+    (ti_on_init_scene_prop,[
+        (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100),
+        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (prop_instance_get_position, pos1, ":instance_no"), 
+        (copy_position, pos2, pos1),
+        (position_move_y, pos2, -80,1),(set_spawn_position, pos2),
+        (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
+        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (party_get_slot, ":troop", "$current_town", ":walker_type"),
+        (spawn_agent, ":troop"),
+  ] + (is_a_wb_sceneprop==1 and [
+        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (neg|item_has_property, ":item", itp_civilian),
+            (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+        (try_end),  
+        #(agent_set_no_dynamics, reg0, 1),  
+        (agent_equip_item, reg0, "itm_civilian_shovel", 1),
+        (agent_set_wielded_item, reg0, "itm_civilian_shovel"),
+        (agent_set_look_target_position, reg0, pos1),
+] or []) + [ ]),
+        
+   (ti_on_scene_prop_hit,
+    [   (play_sound, "snd_wooden_hit_high_armor_low_damage"),
+        (particle_system_burst, "psys_dummy_smoke", pos1, 3),
+        (particle_system_burst, "psys_dummy_straw", pos1, 10),
+    ])]),
 
 ] + (is_a_wb_sceneprop==1 and [ 
   ("fellbeast", sokf_moveable|sokf_dynamic_physics, "beest", "0", [

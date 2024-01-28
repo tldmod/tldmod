@@ -1,5 +1,5 @@
 itemsfile version 2
-948
+956
  itm_no_item INVALID_ITEM INVALID_ITEM 1  invalid_item 0  11 0 3 0 1.5 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -2859,5 +2859,29 @@ itemsfile version 2
 0
 
  itm_ent_head_helm3 Ent_Head Ent_Head 1  ent_head3 0  4108 0 1 0 58 100 60 0 0 30 0 0 0 0 0 0 0
+0
+
+ itm_civilian_hammer Hammer Hammer 1  civilian_hammer_khazad 0  4194306 9223388532775583758 300 0 4.5 100 0 0 0 0 1024 75 0 120 0 0 513
+0
+
+ itm_civilian_woodaxe_1h Axe Axe 1  axe_c 0  4299161602 9223388532775583758 300 0 4.5 100 0 0 0 0 1024 75 0 100 0 0 513
+0
+
+ itm_civilian_woodaxe_2h Heavy_Axe Heavy_Axe 1  2_handed_axe 0  2251799819976708 576 500 0 4.5 100 0 0 0 0 1024 65 0 250 0 0 1
+0
+
+ itm_civilian_war_mattock Mattock Mattock 1  civilian_war_mattock 0  2251799819976708 9223635923965575392 500 0 4.5 100 0 0 0 0 1024 60 0 250 0 0 1
+0
+
+ itm_civilian_great_mattock Mattock Mattock 1  civilian_great_mattock 0  2251799819976708 9223635923965575392 500 0 4.5 100 0 0 0 0 1024 65 0 250 0 0 1
+0
+
+ itm_civilian_adz Mattock Mattock 1  civilian_adz 0  2251799819976708 9223635919670608096 500 0 4.5 100 0 0 0 0 1024 70 0 250 0 0 1
+0
+
+ itm_civilian_pickaxe Mattock Mattock 1  civilian_pickaxe 0  2251799819976708 4294967872 500 0 4.5 100 0 0 0 0 1024 65 0 180 0 0 1
+0
+
+ itm_civilian_shovel Shovel Shovel 1  civilian_shovel 0  2251799817912324 9254615759470988544 350 0 2.25 100 0 0 0 0 1024 60 0 70 0 257 513
 0
 
