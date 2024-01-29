@@ -5804,12 +5804,12 @@ scripts = [
             (this_or_next|eq,":race",tf_lorien),
             (this_or_next|eq,":race",tf_imladris),
             (eq,":race",tf_woodelf),
-            (is_between, ":faction", kingdoms_begin, kingdoms_end), #only applys to faction troops, no bandits
             (assign, ":can_capture", 0),
             (try_begin),    #except if player party is involved and capture prisoners quest active
                 (eq, ":source_party", "p_collective_enemy"),
                 (eq, ":player_involved", 1),
                 (check_quest_active, "qst_capture_prisoners"),
+                (is_between, ":faction", kingdoms_begin, kingdoms_end), #only applies to faction troops, no bandits                
                 (assign, ":can_capture", 1),
             (try_end),
         (try_end),
