@@ -4527,6 +4527,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
         (faction_slot_eq, "fac_gundabad", slot_faction_state, sfs_active),
         (str_store_string, s3, "@Gundabad"),  
       (try_end),      
+     (assign, "$oath_kills",0),
      (quest_set_slot, "qst_oath_of_vengeance", 2, "fac_moria"), # target faction
      (quest_set_slot, "qst_oath_of_vengeance", 7, "fac_gundabad"), # target faction 2
      (quest_set_slot, "qst_oath_of_vengeance", 6, 1),

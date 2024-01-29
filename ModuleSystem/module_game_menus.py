@@ -12270,6 +12270,8 @@ game_menus = [
 	(store_current_day, ":day"),
 	(quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
 	(quest_set_slot, "qst_oath_of_vengeance", 2, ":target"), # target faction
+    (quest_set_slot, "qst_oath_of_vengeance", 7, 0), # target faction 2
+    (quest_set_slot, "qst_oath_of_vengeance", 6, 0),
 	
 	#Kham - Oath of Vengeance Refactor Start
 	#(assign,":count", 0), # count and store initial killcount of target faction' parties
@@ -12323,6 +12325,8 @@ game_menus = [
 	(store_current_day, ":day"),
 	(quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
 	(quest_set_slot, "qst_oath_of_vengeance", 2, ":target"), # target faction
+    (quest_set_slot, "qst_oath_of_vengeance", 7, 0), # target faction 2
+    (quest_set_slot, "qst_oath_of_vengeance", 6, 0),
 	
 	#Kham - Oath of Vengeance Refactor Start
 	#(assign,":count", 0), # count and store initial killcount of target faction' parties
