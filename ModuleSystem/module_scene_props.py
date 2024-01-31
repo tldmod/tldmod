@@ -4511,6 +4511,8 @@ scene_props = [
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
     ])]),
 
+("ai_melee_on_off_var1",sokf_invisible,"sphere_1m","0", []), #var 1 sets agent_ai_set_always_attack_in_melee
+
 ] + (is_a_wb_sceneprop==1 and [ 
   ("fellbeast", sokf_moveable|sokf_dynamic_physics, "beest", "0", [
     (ti_on_scene_prop_init,[

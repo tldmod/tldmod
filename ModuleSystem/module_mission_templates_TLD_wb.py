@@ -4494,3 +4494,23 @@ tld_calculate_wounded = (ti_on_agent_killed_or_wounded, 0, 0, [], [
         (set_trigger_result, 1), #kill
     (try_end),        
     ])
+    
+tld_ai_melee_spheres =   (3, 0, 0, [], [ #agent fadeout sphere test
+    (scene_prop_get_num_instances, ":num_spheres", "spr_ai_melee_on_off_var1"),
+    (set_fixed_point_multiplier, 100),
+    (try_for_range, ":count", 0, ":num_spheres"),
+        (scene_prop_get_instance, ":instance_no", "spr_ai_melee_on_off_var1", ":count"),
+        (prop_instance_get_position, pos2, ":instance_no"),
+        (prop_instance_get_scale, pos3, ":instance_no"),
+        (prop_instance_get_variation_id, ":value", ":instance_no"),
+        (position_get_scale_y, ":scale", pos3),
+        (try_for_agents, ":agent_no", pos2, ":scale"),
+            (agent_is_alive, ":agent_no"),
+            (neg|agent_is_defender, ":agent_no"),
+            (agent_ai_set_always_attack_in_melee, ":agent_no", ":value"),
+            # (str_store_agent_name, s5, ":agent_no"),
+            # (assign, reg77, ":value"),
+            # (display_message, "@{s5} set to {reg77}"),
+        (try_end),
+    (try_end),
+    ]) 

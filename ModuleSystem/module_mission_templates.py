@@ -1061,6 +1061,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     
     tld_place_inventory_backup, 
     tld_ai_fadeout_spheres,
+    tld_ai_melee_spheres,
     tld_calculate_wounded    
 
 ] + beorning_shapeshift   #Chaning into bear
@@ -1095,7 +1096,8 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
   tld_melee_ai,
   hp_shield_init,
   hp_shield_trigger,
-  tld_ai_fadeout_spheres,  
+  tld_ai_fadeout_spheres,
+  tld_ai_melee_spheres,  
 
   ] + tld_bow_shield
   or [] ) + [
@@ -4726,8 +4728,8 @@ mission_templates = [ # not used in game
         (call_script, "script_siege_adjust_battle_size"),
       ] or []) + [    
     
-    (assign, reg77, "$defender_reinforcement_stage"),
-    (display_message, "@defender reinforcement stage: {reg77}"),
+    # (assign, reg77, "$defender_reinforcement_stage"),
+    # (display_message, "@defender reinforcement stage: {reg77}"),
     (assign,":defteam","$defender_team"),
     (assign,":entry",8), #Changed to 9,10,11 --> spawn entry
     (assign,":entry_number", 43), # 44,45,46 --> actual entry point
