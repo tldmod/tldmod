@@ -1,4 +1,4 @@
-1987
+1988
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-01-29_21:11___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-01-31_20:18___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -955,6 +955,7 @@ qstr_on_the_right_flank on_the_right_flank
 qstr_through_the_center through_the_center
 qstr_Attackers_charge_{s2 Attackers_charge_{s2}
 qstr_Attackers_charge_{s1 Attackers_charge_{s1}
+qstr_defender_reinforceme defender_reinforcement_stage:_{reg77}
 qstr_{s1}_rallied_to_your {s1}_rallied_to_your_side_due_to_your_Charisma.
 qstr_Last_attacker_wave._ Last_attacker_wave._Do_you_want_to_retreat?
 qstr_Attackers_almost_def Attackers_almost_defeated._Do_you_want_to_retreat?

@@ -4710,14 +4710,24 @@ mission_templates = [ # not used in game
     (try_end),   
     ]),
 
-  (0, 0, 10, [(lt,"$defender_reinforcement_stage", 100),(store_mission_timer_a,":mission_time"),(ge,":mission_time",30)],[ 
+  (0, 0, 10, [  (assign, ":continue", 1), 
+                (store_mission_timer_a,":mission_time"),
+                (ge,":mission_time",30),
+                (try_begin), #limit defender reinforcements if player is attacker, so sieges don't drag on
+                    (get_player_agent_no, ":player"),
+                    (neg|agent_is_defender, ":player"),
+                    (gt,"$defender_reinforcement_stage", 25),
+                    (assign, ":continue", 0),
+                (try_end),
+                (eq, ":continue", 1),
+                ],[ 
     
       ] + (is_a_wb_mt==1 and [
         (call_script, "script_siege_adjust_battle_size"),
       ] or []) + [    
     
     (assign, reg77, "$defender_reinforcement_stage"),
-    #(display_message, "@defender reinforcement stage: {reg77}"),
+    (display_message, "@defender reinforcement stage: {reg77}"),
     (assign,":defteam","$defender_team"),
     (assign,":entry",8), #Changed to 9,10,11 --> spawn entry
     (assign,":entry_number", 43), # 44,45,46 --> actual entry point
@@ -4925,6 +4935,7 @@ mission_templates = [ # not used in game
             (try_for_agents, ":agent_no"),
                 (agent_is_alive, ":agent_no"),
                 (neg|agent_is_defender, ":agent_no"),
+                (neq, ":agent_no", ":player_agent"),
             ] + (is_a_wb_mt==1 and [
                 (agent_fade_out, ":agent_no"),
             ] or [
