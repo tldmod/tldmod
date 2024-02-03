@@ -196,7 +196,7 @@ dlga_ziggy_reason:ziggy_no 69631 106  0 Not_at_this_time,_Zigûrphel._Go_back_to
 dlga_ziggy_no:close_window 4095 108  1 540 3 942 11 0 Very_well,_Commander,_but_you_would_be_a_fool_to_forego_my_gift.  6  2 500 3 942 11 1 2052 0 
 dlga_ziggy_no:close_window.1 4095 108  1 560 3 942 11 1 Very_well,_Commander.  6  1 2052 0 
 dlga_ziggy_yes:ziggy_choose_prisoners 4095 107  0 Excellent._Which_of_these_specimens_would_you_give?  75  0 
-dlga_ziggy_choose_prisoners:ziggy_chosen_prisoner 90111 75  8 1651 2 1224979098644774912 0 30 2 1224979098644774912 1 50 1 1224979098644774913 33 3 1224979098644774913 25 454 2147483681 3 1224979098644774913 529 614 1632 3 1224979098644774914 0 1224979098644774913 32 2 1224979098644774914 0 2322 2 1 1224979098644774913 {s1}  109  1 50 1 144115188075855920 
+dlga_ziggy_choose_prisoners:ziggy_chosen_prisoner 90111 75  8 1651 2 1224979098644774912 0 30 2 1224979098644774912 1 50 1 1224979098644774913 33 3 1224979098644774913 25 471 2147483681 3 1224979098644774913 529 614 1632 3 1224979098644774914 0 1224979098644774913 32 2 1224979098644774914 0 2322 2 1 1224979098644774913 {s1}  109  1 50 1 144115188075855920 
 dlga_ziggy_choose_prisoners:ziggy_no 69631 75  0 I_have_none_I_want_to_offer.  108  1 500 3 942 11 2 
 dlga_ziggy_chosen_prisoner:ziggy_ritual 4095 109  1 2147484188 3 942 11 2 Thank_you,_Commander!_A_moment..._ah_yes,_this_one_should_do_nicely..._Agannūlo_burudan_kinum!_Kadō_nakh,_îdô_ugru-dalad_dâira!  110  13 2171 2 1224979098644774912 942 2171 2 1224979098644774913 144115188075855920 2122 3 1224979098644774914 1224979098644774912 2 2105 2 1224979098644774914 1224979098644774913 2110 2 1224979098644774914 100 2133 2 144115188075856645 0 2136 3 1224979098644774915 0 100 4 0 2147483680 2 1224979098644774915 1224979098644774914 2133 2 144115188075856645 1 5 0 2133 2 144115188075856645 0 3 0 
 dlga_ziggy_chosen_prisoner:ziggy_ritual.1 4095 109  1 540 3 942 11 2 _What_have_we_here?_Proud,_defiant?_Fearful,_as_you_should_be?_Now_shall_I_give_you_a_reason_for_fear,_indeed!_Agannūlo_burudan_kinum!_Kadō_nakh,_îdô_ugru-dalad_dâira!  110  13 2171 2 1224979098644774912 942 2171 2 1224979098644774913 144115188075855920 2122 3 1224979098644774914 1224979098644774912 2 2105 2 1224979098644774914 1224979098644774913 2110 2 1224979098644774914 100 2133 2 144115188075856645 0 2136 3 1224979098644774915 0 100 4 0 2147483680 2 1224979098644774915 1224979098644774914 2133 2 144115188075856645 1 5 0 2133 2 144115188075856645 0 3 0 
@@ -1195,18 +1195,18 @@ dlga_town_dweller_brawl:town_dweller_brawl_confirm 4095 605  0 Are_you_threateni
 dlga_town_dweller_brawl_confirm:close_window 69631 606  0 Oh_really?_Let's_see_what_you've_got.  6  8 1 1 403 2060 1 172 4 0 2147484189 3 144115188075856029 25 870 1 3 164 144115188075856029 -2 3 0 1 3 14 144115188075856308 -1 1907 0 
 dlga_town_dweller_brawl_confirm:close_window.1 69631 606  0 No,_I_thought_you_were_someone_else.  6  1 1 1 403 
 dlga_town_dweller_talk:close_window 69631 601  0 [Leave]  6  1 1 1 403 
-dlga_start:player_castle_guard_talk 4095 0  3 31 2 144115188075855951 0 33 3 144115188075855891 10 471 541 3 144115188075856029 7 0 Yes,_Commander?  607  0 
+dlga_start:player_castle_guard_talk 4095 0  3 31 2 144115188075855951 0 33 3 144115188075855891 10 479 541 3 144115188075856029 7 0 Yes,_Commander?  607  0 
 dlga_player_castle_guard_talk:player_castle_guard_talk_2 69631 607  0 How_goes_the_watch,_soldier?  608  0 
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3 4095 608  0 All_is_quiet_Commander._Nothing_to_report.  609  0 
 dlga_player_castle_guard_talk_3:close_window 69631 609  0 Good._Keep_your_eyes_open.  6  1 1 1 403 
-dlga_start:close_window.31 4095 0  5 31 2 144115188075855951 0 33 3 144115188075855891 10 471 33 3 144115188075856308 3 21 31 2 144115188075855993 144115188075856308 2330 2 10 144115188075856029 Good_day,_Commander._It's_good_having_you_here_in_{s10}.  6  1 1 1 403 
-dlga_start:close_window.32 4095 0  3 31 2 144115188075855951 0 33 3 144115188075855891 10 471 33 3 144115188075856308 3 21 Mind_your_manners_around_here_and_we'll_have_no_trouble.  6  1 1 1 403 
-dlga_start:hall_guard_easter_egg 4095 0  5 31 2 144115188075855951 1 33 3 144115188075855891 10 471 31 2 144115188075855998 18 2271 1 1224979098644774912 31 2 1224979098644774912 0 Ah,_just_past_midnight._You_know,_an_unusual_incident_happened_recently_-_do_you_want_to_hear_about_it?  610  0 
+dlga_start:close_window.31 4095 0  5 31 2 144115188075855951 0 33 3 144115188075855891 10 479 33 3 144115188075856308 3 21 31 2 144115188075855993 144115188075856308 2330 2 10 144115188075856029 Good_day,_Commander._It's_good_having_you_here_in_{s10}.  6  1 1 1 403 
+dlga_start:close_window.32 4095 0  3 31 2 144115188075855951 0 33 3 144115188075855891 10 479 33 3 144115188075856308 3 21 Mind_your_manners_around_here_and_we'll_have_no_trouble.  6  1 1 1 403 
+dlga_start:hall_guard_easter_egg 4095 0  5 31 2 144115188075855951 1 33 3 144115188075855891 10 479 31 2 144115188075855998 18 2271 1 1224979098644774912 31 2 1224979098644774912 0 Ah,_just_past_midnight._You_know,_an_unusual_incident_happened_recently_-_do_you_want_to_hear_about_it?  610  0 
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene 69631 610  0 Yes,_please_go_on.  611  0 
 dlga_hall_guard_easter_egg:close_window 69631 610  0 No,_I_don't_care_for_gossip.  6  1 1 1 403 
 dlga_hall_guard_easter_egg_scene:close_window 4095 611  0 Well.._an_unusual_group_of_adventurers_appeared_recently:_a_man,_a_dwarf_and_an_elf,_and_then...  6  3 1 1 403 2060 1 176 1907 0 
-dlga_start:hall_guard_talk 4095 0  4 31 2 144115188075855951 1 33 3 144115188075855891 10 471 33 3 144115188075856308 3 21 541 3 144115188075856029 7 0 Your_orders,_Commander?  612  0 
-dlga_start:close_window.33 4095 0  3 31 2 144115188075855951 1 33 3 144115188075855891 10 471 33 3 144115188075856308 3 21 We_are_not_supposed_to_talk_while_on_guard,_Commander.  6  1 1 1 403 
+dlga_start:hall_guard_talk 4095 0  4 31 2 144115188075855951 1 33 3 144115188075855891 10 479 33 3 144115188075856308 3 21 541 3 144115188075856029 7 0 Your_orders,_Commander?  612  0 
+dlga_start:close_window.33 4095 0  3 31 2 144115188075855951 1 33 3 144115188075855891 10 479 33 3 144115188075856308 3 21 We_are_not_supposed_to_talk_while_on_guard,_Commander.  6  1 1 1 403 
 dlga_hall_guard_talk:hall_guard_duty 69631 612  0 Stay_on_duty_and_let_me_know_if_anyone_comes_to_see_me.  613  0 
 dlga_hall_guard_duty:close_window 4095 613  0 Yes,_Commander._As_you_wish.  6  1 1 1 403 
 dlga_hall_guard_talk:hall_guard_arrest 69631 612  0 I_want_you_to_arrest_this_man_immediately!  614  0 

@@ -1103,7 +1103,7 @@ new_companions_begin = trp_npc18
 new_companions_end = trp_npc27 + 1
 
 soldiers_begin = trp_farmer
-soldiers_end = trp_town_walker_1
+soldiers_end = trp_mirkwood_walker_1
 
 tavern_minstrels_begin = trp_tavern_minstrel_1
 tavern_minstrels_end   = companions_begin
@@ -1168,13 +1168,10 @@ scenes_begin = scn_minas_tirith_center
 scenes_end = scn_castle_1_exterior
 
 regular_troops_begin       = trp_novice_fighter
-regular_troops_end         = trp_ramun_the_slave_trader
+regular_troops_end         = trp_trainer_gondor
 
 training_ground_trainers_begin    = trp_trainer_gondor
 training_ground_trainers_end      = trp_ransom_broker_1
-
-spy_walkers_begin = trp_spy_walker_1
-spy_walkers_end = trp_walker_man_gondor_black
 
 weapon_merchants_begin = trp_smith_mtirith
 weapon_merchants_end   = trp_barman_eastemnet
@@ -1671,36 +1668,36 @@ center_list = [
 	[icon_mfc_isengard],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 2, tld_siegable_always),
 # Elf centers
 (p_town_caras_galadhon, [scn_caras_galadhon_center, -1, scn_elf_prison,scn_elf_tavern,scn_elf_arena,scn_caras_galadhon_siege,mesh_town_caras_galadhon],
-	[-1, trp_smith_cgaladhon, trp_merchant_cgaladhon, trp_elder_cgaladhon, pt_lorien_recruits, trp_lorien_lord, trp_a1_lorien_scout, trp_a3_lorien_vet_warden, trp_a2_lorien_archer, trp_i3_lorien_inf], 
+	[-1, trp_smith_cgaladhon, trp_merchant_cgaladhon, trp_elder_cgaladhon, pt_lorien_recruits, trp_lorien_lord, trp_a1_lorien_scout, trp_a2_lorien_warden, trp_lorien_walker_1, trp_lorien_walker_2], 
 	[icon_mfc_lorien],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_med, 1, tld_siegable_capital),
 (p_town_cerin_dolen, [scn_cerin_dolen_center, -1, -1, -1, -1, scn_cerin_dolen_siege, mesh_ui_default_menu_window],
-	[-1, trp_smith_cdolen, trp_merchant_cdolen, trp_elder_cdolen, pt_lorien_recruits,  trp_lorien_lord, trp_a1_lorien_scout, trp_a3_lorien_vet_warden, trp_a2_lorien_archer, trp_i3_lorien_inf], 
+	[-1, trp_smith_cdolen, trp_merchant_cdolen, trp_elder_cdolen, pt_lorien_recruits,  trp_lorien_lord, trp_a1_lorien_scout, trp_a2_lorien_warden, trp_lorien_walker_1, trp_lorien_walker_2], 
 	[icon_mfc_lorien],[500],[2,1,4,1,4,1], str_income_med, garrison_limit_low, 2, tld_siegable_always),
 (p_town_cerin_amroth, [scn_cerin_amroth_center, -1, -1, -1, -1, scn_cerin_amroth_siege, mesh_ui_default_menu_window],
-	[-1, trp_smith_camroth, trp_merchant_camroth, trp_elder_camroth, pt_lorien_recruits,  trp_lorien_lord, trp_a1_lorien_scout, trp_a3_lorien_vet_warden, trp_a2_lorien_archer, trp_i3_lorien_inf], 
+	[-1, trp_smith_camroth, trp_merchant_camroth, trp_elder_camroth, pt_lorien_recruits,  trp_lorien_lord, trp_a1_lorien_scout, trp_a2_lorien_warden, trp_lorien_walker_1, trp_lorien_walker_2], 
 	[icon_mfc_lorien],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 2, tld_siegable_normal),
 
 (p_town_thranduils_halls, [scn_thranduils_halls_center, scn_thranduil_hall_room, scn_elf_prison,scn_elf_tavern,scn_elf_arena,scn_thranduils_halls_siege,mesh_town_thranduils],
-	[-1, trp_smith_thranduils_halls, trp_merchant_thranduils_halls, trp_elder_thalls, pt_woodelf_recruits, trp_woodelf_lord, trp_a3_greenwood_archer, trp_a1_greenwood_scout, trp_a3_greenwood_archer, trp_i2_greenwood_infantry], 
+	[-1, trp_smith_thranduils_halls, trp_merchant_thranduils_halls, trp_elder_thalls, pt_woodelf_recruits, trp_woodelf_lord, trp_mirkwood_walker_1, trp_a1_greenwood_scout, trp_mirkwood_walker_1, trp_mirkwood_walker_2], 
 	[icon_mfc_woodelf],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 1, tld_siegable_capital),
 (p_town_woodelf_camp, [scn_woodelf_camp_center, -1, -1,-1,-1,scn_woodelf_camp_siege, mesh_town_goodcamp],
-	[-1, trp_smith_woodelf_camp, trp_merchant_woodelf_camp, trp_elder_woodelf_camp, pt_woodelf_recruits, trp_woodelf_lord, trp_a3_greenwood_archer, trp_a1_greenwood_scout, trp_a3_greenwood_archer, trp_i2_greenwood_infantry], 
+	[-1, trp_smith_woodelf_camp, trp_merchant_woodelf_camp, trp_elder_woodelf_camp, pt_woodelf_recruits, trp_woodelf_lord, trp_mirkwood_walker_1, trp_a1_greenwood_scout, trp_mirkwood_walker_1, trp_mirkwood_walker_2], 
 	[icon_mfc_woodelf],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 2, tld_siegable_always),
 (p_town_woodelf_west_camp, [scn_woodelf_west_camp_center, -1, -1,-1,-1,scn_woodelf_west_camp_siege, mesh_town_goodcamp],
-	[-1, trp_smith_woodelf_west_camp, trp_merchant_woodelf_west_camp, trp_elder_woodelf_west_camp, pt_woodelf_recruits, trp_woodelf_lord, trp_a3_greenwood_archer, trp_a1_greenwood_scout, trp_a3_greenwood_archer, trp_i2_greenwood_infantry], 
+	[-1, trp_smith_woodelf_west_camp, trp_merchant_woodelf_west_camp, trp_elder_woodelf_west_camp, pt_woodelf_recruits, trp_woodelf_lord, trp_mirkwood_walker_1, trp_a1_greenwood_scout, trp_mirkwood_walker_1, trp_mirkwood_walker_2], 
 	[icon_mfc_woodelf],[500],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 2, tld_siegable_normal),
 (p_town_imladris_camp, [scn_rivendell_camp_center, -1, -1,-1,-1,scn_rivendell_camp_siege,mesh_town_rivendell_camp],
 	[-1, trp_smith_imladris, trp_merchant_imladris, trp_elder_imladris, pt_imladris_recruits, trp_imladris_lord, trp_a1_riv_scout,trp_i3_riv_swordbearer, trp_a3_riv_archer,trp_a1_arnor_scout], 
 	[icon_mfc_imladris],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_med, 2, tld_siegable_capital),
 
 (p_town_woodsmen_village, [scn_woodsmen_village2_center, -1, -1,-1,-1,scn_woodsmen_village2_siege, mesh_ui_default_menu_window],
-	[-1, trp_smith_woodmen, trp_merchant_woodmen, trp_elder_wvillage, pt_woodman_recruits, trp_beorn_lord, trp_i1_woodmen_man, trp_a2_woodmen_tracker, trp_i2_woodmen_forester, trp_i4_woodmen_axemen], 
+	[-1, trp_smith_woodmen, trp_merchant_woodmen, trp_elder_wvillage, pt_woodman_recruits, trp_beorn_lord, trp_i1_woodmen_man, trp_beorn_walker, trp_i2_woodmen_forester, trp_beorn_walker_fem], 
 	[icon_mfc_northmen],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_always),
 (p_town_beorning_village, [scn_beorning_village_center, -1, -1,-1,-1,scn_beorning_village_siege, mesh_ui_default_menu_window],
-	[-1, trp_smith_beorn_v, trp_merchant_beorn_v, trp_elder_beorn_v, pt_beorn_recruits, trp_beorn_lord, trp_i1_beorning_man, trp_i4_beorning_sentinel, trp_i1_woodmen_man, trp_i3_beorning_tolltacker], 
+	[-1, trp_smith_beorn_v, trp_merchant_beorn_v, trp_elder_beorn_v, pt_beorn_recruits, trp_beorn_lord, trp_i1_beorning_man, trp_i1_woodmen_man, trp_beorn_walker,  trp_beorn_walker_fem], 
 	[icon_mfc_northmen],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_always),
 (p_town_beorn_house, [scn_woodsmen_village_center, scn_beorn_castle, -1,-1, scn_beorn_arena,scn_woodsmen_village_siege,mesh_town_beorns_house],
-	[-1, trp_smith_beorn, trp_merchant_beorn, trp_elder_beorn, pt_beorn_recruits, trp_beorn_lord, trp_i1_beorning_man, trp_i4_beorning_carrock_fighter, trp_i2_beorning_warrior, trp_i1_woodmen_man], 
+	[-1, trp_smith_beorn, trp_merchant_beorn, trp_elder_beorn, pt_beorn_recruits, trp_beorn_lord, trp_i1_beorning_man, trp_i1_woodmen_man, trp_beorn_walker, trp_beorn_walker_fem], 
 	[icon_mfc_northmen],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_high, 1, tld_siegable_capital),
 
 (p_town_moria, [scn_moria_center, -1, scn_mordor_prison,scn_mordor_tavern,scn_mordor_arena,scn_moria_siege,mesh_town_moria],
@@ -1766,10 +1763,10 @@ center_list = [
 	[-1, trp_smith_gundabad_m, trp_merchant_gundabad_m, trp_elder_gunda_m, pt_gundabad_recruits, trp_gundabad_lord,trp_i1_gunda_goblin,trp_i2_gunda_orc,trp_i3_gunda_orc_fighter,trp_i4_gunda_orc_warrior], 
 	[icon_mfc_gundabad],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 2, tld_siegable_normal),
 (p_town_erebor, [scn_erebor_center, scn_erebor_castle, scn_rohan_prison,-1,scn_dwarf_arena,scn_erebor_siege, mesh_town_erebor],
-	[-1, trp_smith_erebor, trp_merchant_erebor, trp_elder_erebor, pt_dwarf_recruits, trp_dwarf_lord, trp_i1_dwarf_apprentice, trp_a2_dwarf_lookout, trp_a4_dwarf_bowman, trp_i2_iron_hills_miner], 
+	[-1, trp_smith_erebor, trp_merchant_erebor, trp_elder_erebor, pt_dwarf_recruits, trp_dwarf_lord, trp_i1_dwarf_apprentice, trp_dwarf_walker, trp_dwarf_walker, trp_i2_iron_hills_miner], 
 	[icon_mfc_dwarf],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_high, 1, tld_siegable_capital),
 (p_town_ironhill_camp, [scn_ironhill_camp_center, -1, -1,-1,-1,scn_ironhill_camp_siege, mesh_town_goodcamp],
-	[-1, trp_smith_ironhill, trp_merchant_ironhill, trp_elder_ironhill, pt_dwarf_iron_recruits, trp_dwarf_lord,trp_a2_dwarf_lookout, trp_a4_dwarf_bowman, trp_i4_iron_hills_infantry, trp_i2_iron_hills_miner], 
+	[-1, trp_smith_ironhill, trp_merchant_ironhill, trp_elder_ironhill, pt_dwarf_iron_recruits, trp_dwarf_lord,trp_dwarf_walker, trp_i1_dwarf_apprentice, trp_dwarf_walker, trp_i2_iron_hills_miner], 
 	[icon_mfc_dwarf],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_low, 0, tld_siegable_always),
 	
 	

@@ -2044,7 +2044,6 @@ scripts = [
 	(assign, "$FormAI_AI_no_defense",0), #Kham - FormAI - don't allow AI Defensive
 	(party_set_slot, "p_main_party", slot_party_number_following_player, 0),
 	(assign, "$lore_mode", 1),# unused      
-	
 	#Kham - Squelch compiler warnings
 	(assign, "$original_savegame_version", 0),
     (assign, "$cheatmode_used", 0),      
