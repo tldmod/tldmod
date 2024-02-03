@@ -2055,7 +2055,6 @@ scripts = [
     (assign, "$rescue_convo_troop", 3),
     (assign, "$tld_options_overlay_14", 2),
     (assign, "$g_display_agent_labels", 2),
-    (assign, "$allies_leadership", 2),
 	(assign, "$gondor_ai_testing", 2), #unused 
 
     (val_mul, "$hold_f1", "$cheatmode_used"),
@@ -14578,7 +14577,7 @@ scripts = [
         (assign, "$all_doors_locked", 1),
 
       #(display_message, "@You have run into a trap!", 0xFFFF2222),
-      (display_message, "@You are attacked by a group of goblins!", 0xFFFF2222),
+      (display_message, "@You are attacked by a group of bandits!", 0xFFFF2222),
       (jump_to_scene, ":cur_scene"),
       (change_screen_mission),
 ]),
