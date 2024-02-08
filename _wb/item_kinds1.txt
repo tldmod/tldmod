@@ -1,5 +1,5 @@
 itemsfile version 2
-956
+957
  itm_no_item INVALID_ITEM INVALID_ITEM 1  invalid_item 0  11 0 3 0 1.5 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -2883,5 +2883,8 @@ itemsfile version 2
 0
 
  itm_civilian_shovel Shovel Shovel 1  civilian_shovel 0  2251799817912324 9254615759470988544 350 0 2.25 100 0 0 0 0 1024 60 0 70 0 257 513
+0
+
+ itm_nazgul_robe_wb Nazgul_robe Nazgul_robe 1  old_nazgulrobe 0  553648141 0 500 123731968 3 100 0 10 10 0 0 0 0 0 0 0 0
 0
 

@@ -1552,6 +1552,8 @@ items =[
 ["civilian_adz","Mattock",[("civilian_adz",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_two_handed,itc_nodachi|itcf_slashright_twohanded,500,weight(4.5)|spd_rtng(70)|weapon_length(250)|swing_damage(1,cut),0],
 ["civilian_pickaxe","Mattock",[("civilian_pickaxe",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_two_handed,itcf_overswing_polearm|itcf_slashright_twohanded|itcf_carry_axe_back,500,weight(4.5)|spd_rtng(65)|weapon_length(180)|swing_damage(1,cut),0],
 ["civilian_shovel","Shovel",[("civilian_shovel",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_spear,itc_spear_upstab,350,weight(2.25)|spd_rtng(60)|weapon_length(70)|thrust_damage(1,pierce)|swing_damage(1,blunt),0],
+["nazgul_robe_wb","Nazgul_robe",[("old_nazgulrobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
+
 
 ] or []) + [ 
 

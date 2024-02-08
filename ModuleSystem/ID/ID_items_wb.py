@@ -954,3 +954,4 @@ itm_civilian_great_mattock = 952
 itm_civilian_adz = 953
 itm_civilian_pickaxe = 954
 itm_civilian_shovel = 955
+itm_nazgul_robe_wb = 956

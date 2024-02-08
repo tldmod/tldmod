@@ -32450,7 +32450,7 @@ if is_a_wb_script==1:
             # (assign, reg66, ":distance"),
             # (display_message, "@distance: {reg66}"),
         # (try_end),
-        (is_between, ":distance", 350, 3000), #only if player isn't too close, but also not too far either (avoid too many sounds)
+        (is_between, ":distance", 350, 5000), #only if player isn't too close, but also not too far either (avoid too many sounds)
         (agent_set_look_target_position, ":agent", pos2),
         (neg|position_is_behind_position, pos2, pos3),
         (store_random_in_range, ":chance", 0, 15),

@@ -3249,8 +3249,8 @@ troops = [
 ["black_numenorean_sorcerer","Black_Numenorean_Sorcerer","Black_numenorean_sorcerer", tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
    [itm_m_cap_armor,itm_mordor_helm,itm_mordor_sword,itm_leather_boots,],
       def_attrib|level(45),wp(400),knows_common|knows_athletics_10|knows_power_strike_6|knows_ironflesh_10,mercenary_face_1,mercenary_face_2],
-["black_numenorean_acolyte","Black_Numenorean_Acolyte","Black_Numenorean_Acolytes",tf_evil_man| tfg_armor| tfg_boots,0,0,fac_mordor,
-   [itm_leather_boots,itm_leather_gloves,itm_evil_light_armor,itm_orc_simple_spear_heavy,],
+["evil_priest","Evil_Priest","Evil_Priests",tf_evil_man| tfg_armor| tfg_boots,0,0,fac_mordor,
+   [itm_leather_boots_dark_bad,(itm_rohan_armor_th, imod_old),itm_hood_black],
       attr_tier_2,wp_tier_2,knows_common|knows_athletics_1|knows_power_strike_1,mordor_man1,mordor_man2],
 ["wolf_rider_of_mirkwood","Wolf_Rider_of_Mirkwood","Wolf_Riders_of_Mirkwood",tf_orc| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_bow,itm_arrows,itm_orc_sabre,itm_orc_sabre,itm_isen_uruk_light_a,itm_isen_uruk_light_a,itm_orc_coif,itm_wargarmored_2c,],
@@ -3264,9 +3264,9 @@ troops = [
 ["orc_pretender","Orc_Pretender","_",tf_orc| tfg_shield| tfg_armor| tfg_helm| tf_no_capture_alive,0,0,fac_neutral,
    [itm_orc_slasher,itm_orc_sabre,itm_moria_orc_shield_b,itm_moria_orc_shield_a,itm_moria_armor_e,itm_orc_greaves,],
       attr_orc_tier_6,wp_tier_6,knows_athletics_5|knows_power_strike_4|knows_ironflesh_10,orc_face5,orc_face8],
-["human_prisoner","Human_Prisoner","_",tf_hero| tfg_helm,0,0,fac_neutral,
+["human_prisoner","Human_Prisoner","_", tfg_helm,0,0,fac_neutral,
    [itm_prisoner_coll_chain,],
-      attr_orc_tier_4,wp_tier_6,knows_athletics_5|knows_power_strike_4,0x000000063f00004336db75b7ab6eb6b400000000001db6eb0000000000000000],
+      attr_orc_tier_4,wp_tier_6,knows_athletics_5|knows_power_strike_4,mercenary_face_1,mercenary_face_2],
  
 # CC: Ambush troops here...
 
