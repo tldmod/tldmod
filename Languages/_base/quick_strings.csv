@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|Death to the trespassers of the lands of {s16}!
 qstr_CHARGE!_Let_s_clear_|CHARGE! Let's clear the {s18} {s19}scum from {s17}!
 qstr_{s14}Now_that_{s19}s|{s14}Now that {s19}scum will taste the fury of the bear people!
 qstr_Attack!|Attack!
-qstr_You_are_attacked_by_|You are attacked by a group of goblins!
+qstr_You_are_attacked_by_|You are attacked by a group of bandits!
 qstr_Holding|Holding
 qstr_Following|Following
 qstr_Charging|Charging
@@ -564,6 +564,7 @@ qstr_What_should_I_do?|What should I do?
 qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
 qstr_Good_to_see_the_Shad|Good to see the Shadow has not yet managed to defeat you, {playername}.
 qstr_You_are_the_one_they|You are the one they call Gandalf or Mithrandir.
+qstr_You_are_the_one_they_|You are the one they call Radagast.
 qstr_That_is_what_some_ca|That is what some call me. In my times I have also been called other things, but unless the Darkness is stopped, soon there may not be anyone left to call me anything at all.
 qstr_What_do_you_mean?|What do you mean?
 qstr_In_spite_of_their_va|In spite of their valiant resistance, {s3} has been overwhelmed by the forces of evil. {s3}'s people are scattered and the good {s4} is no more.
@@ -575,6 +576,7 @@ qstr_What_do_you_want_of_|What do you want of me, old man?
 qstr_Just_know_that_a_Daw|Just know that a Dawn is coming. It is inevitable. And should you still be alive to see it, consider what you shall have to say for yourself then.
 qstr_Well_met_{playername|Well met, {playername}, {s24}. My trust in you has not been misplaced. The might of the forces of the Shadow has been broken and your efforts played no small part in it!
 qstr_Thank_you_Mithrandir|Thank you, Mithrandir!
+qstr_Thank_you_Radagast!|Thank you, Radagast!
 qstr_The_wizard_Saruman_i|The wizard Saruman is gone and Barad Dur has been shattered to dust along with its Dark Lord! All the peoples of Middle Earth are relieved of the threat that nearly consumed all that was good and pure in this world. The Enemy is vanquished and The King has returned!
 qstr_It_was_a_long_and_bl|It was a long and bloody war and many of our close friends are also no longer with us.
 qstr_There_is_much_to_reg|There is much to regret and mourn, and even more to rebuild and mend in the coming days. But for now, let us be jubilant with those of our friends that are with us still and celebrate all we have achieved in The Last Days Of The Third Age.

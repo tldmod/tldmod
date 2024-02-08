@@ -798,12 +798,12 @@ itm_orc_throwing_axes|Orc Throwing Axes
 itm_orc_throwing_axes_pl|Orc Throwing Axes
 itm_orc_bow|Orc Bow
 itm_orc_bow_pl|Orc Bow
-itm_orc_shield_a|Orc Shield
-itm_orc_shield_a_pl|Orc Shield
-itm_orc_shield_b|Orc Shield
-itm_orc_shield_b_pl|Orc Shield
-itm_orc_shield_c|Orc Tower Shield
-itm_orc_shield_c_pl|Orc Tower Shield
+itm_orc_shield_a|Simple Shield
+itm_orc_shield_a_pl|Simple Shield
+itm_orc_shield_b|Fur Shield
+itm_orc_shield_b_pl|Fur Shield
+itm_orc_shield_c|Fur Tower Shield
+itm_orc_shield_c_pl|Fur Tower Shield
 itm_mordor_orc_shield_a|Mordor Orc Shield
 itm_mordor_orc_shield_a_pl|Mordor Orc Shield
 itm_mordor_orc_shield_b|Mordor Orc Shield
@@ -986,14 +986,14 @@ itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_b_pl|Dunnish Fur Cap
 itm_dun_helm_c|Dunnish Tall Helm
 itm_dun_helm_c_pl|Dunnish Tall Helm
-itm_dun_helm_d|Dunnish Tall Helm
-itm_dun_helm_d_pl|Dunnish Tall Helm
-itm_dun_helm_e|Dunnish Antler Helm
-itm_dun_helm_e_pl|Dunnish Antler Helm
-itm_dun_shield_a|Dunnish Shield
-itm_dun_shield_a_pl|Dunnish Shield
-itm_dun_shield_b|Dunnish Shield
-itm_dun_shield_b_pl|Dunnish Shield
+itm_free_dun_helm_d|Dunnish Tall Helm
+itm_free_dun_helm_d_pl|Dunnish Tall Helm
+itm_free_dun_helm_e|Dunnish Antler Helm
+itm_free_dun_helm_e_pl|Dunnish Antler Helm
+itm_dun_shield_a|Dunnish Roundshield
+itm_dun_shield_a_pl|Dunnish Roundshield
+itm_dun_shield_b|Dunnish Oval Shield
+itm_dun_shield_b_pl|Dunnish Oval Shield
 itm_dun_berserker|Dunland Chieftain Sword
 itm_dun_berserker_pl|Dunland Chieftain Sword
 itm_dunnish_antler_axe|Dunnish Antler Axe
@@ -1894,3 +1894,21 @@ itm_ent_head_helm2|Ent Head
 itm_ent_head_helm2_pl|Ent Head
 itm_ent_head_helm3|Ent Head
 itm_ent_head_helm3_pl|Ent Head
+itm_civilian_hammer|Hammer
+itm_civilian_hammer_pl|Hammer
+itm_civilian_woodaxe_1h|Axe
+itm_civilian_woodaxe_1h_pl|Axe
+itm_civilian_woodaxe_2h|Heavy Axe
+itm_civilian_woodaxe_2h_pl|Heavy Axe
+itm_civilian_war_mattock|Mattock
+itm_civilian_war_mattock_pl|Mattock
+itm_civilian_great_mattock|Mattock
+itm_civilian_great_mattock_pl|Mattock
+itm_civilian_adz|Mattock
+itm_civilian_adz_pl|Mattock
+itm_civilian_pickaxe|Mattock
+itm_civilian_pickaxe_pl|Mattock
+itm_civilian_shovel|Shovel
+itm_civilian_shovel_pl|Shovel
+itm_nazgul_robe_wb|Nazgul robe
+itm_nazgul_robe_wb_pl|Nazgul robe

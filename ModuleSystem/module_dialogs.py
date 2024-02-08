@@ -676,7 +676,7 @@ dialogs = [
 [anyone, "start", [(eq, "$g_talk_troop", trp_ent), (eq, "$talk_context", tc_party_encounter), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"), (faction_slot_eq,"$players_kingdom", slot_faction_side, faction_side_good),], "Hrooom! What do you want?", "ent_encounter",
    []],
 
-[anyone|plyr, "ent_encounter", [], "Hail, tree shepherd! Thank you for keeping these marshes safe. I will not stand in your way.", "close_window",
+[anyone|plyr, "ent_encounter", [], "Hail, tree shepherd! Thank you for keeping these marches safe. I will not stand in your way.", "close_window",
    [(call_script,"script_stand_back"),
     (assign, "$g_leave_encounter",1),]],
   
