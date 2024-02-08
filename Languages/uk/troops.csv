@@ -396,20 +396,20 @@ trp_a1_arnor_scout|Розвідник Дунедайн
 trp_a1_arnor_scout_pl|Розвідники Дунедайн
 trp_a2_arnor_vet_scout|Слідопит Дунедайн
 trp_a2_arnor_vet_scout_pl|Слідопити Дунедайн
-trp_i3_arnor_swordsman|Дунадан Мечник
+trp_i3_arnor_swordsman|Дунeдайн Мечник
 trp_i3_arnor_swordsman_pl|Мечники Дунедайн
-trp_i4_arnor_vet_swordsman|Дунадан Досвідчений-Мечник
+trp_i4_arnor_vet_swordsman|Дунедайн Досвідчений-Мечник
 trp_i4_arnor_vet_swordsman_pl|Досвідчені-Мечники Дунедайн
 trp_i5_arnor_champion|Чемпіон Арнора
 trp_i5_arnor_champion_pl|Чемпіони Арнора
-trp_c4_arnor_horseman|Дунадан Вершник
+trp_c4_arnor_horseman|Дунедайн Вершник
 trp_c4_arnor_horseman_pl|Вершники Дунедайн
 trp_c5_arnor_knight|Лицар Арнора
 trp_c5_arnor_knight_pl|Лицарі Арнора
 trp_a3_arnor_ranger|Рейнджер Дунедайн
 trp_a3_arnor_ranger_pl|Рейнджери Дунедайн
-trp_a4_arnor_vet_ranger|Досвідчений рейнджер Дунедайн
-trp_a4_arnor_vet_ranger_pl|Досвідчені рейнджери Дунедайн
+trp_a4_arnor_vet_ranger|Досвідчений Рейнджер Дунедайн
+trp_a4_arnor_vet_ranger_pl|Досвідчені Рейнджери Дунедайн
 trp_a5_arnor_master_ranger|Майстер-Рейнджер Арнору
 trp_a5_arnor_master_ranger_pl|Майстри-Рейнджери Арнору
 trp_i1_rohan_youth|Роганський молодий воїн
@@ -1638,11 +1638,11 @@ trp_a4_dism_veteran_skirmisher_of_rohan|Досвідчений застріль�
 trp_a4_dism_veteran_skirmisher_of_rohan_pl|Досвідчені застрільники Рогана
 trp_a5_dism_elite_skirmisher_of_rohan|Добірний застрільник Рогана
 trp_a5_dism_elite_skirmisher_of_rohan_pl|Добірні застрільники Рогана
-; trp_ac5_camel_rider|Harad Camel Rider
-; trp_ac5_camel_rider_pl|Harad Camel Riders
-; trp_aragorn|Aragorn
-; trp_legolas|Legolas
-; trp_gimli|Gimli
+trp_ac5_camel_rider|Погоничі верблюдів Харада
+trp_ac5_camel_rider_pl|Вершники на верблюдах Харада
+trp_aragorn|Арагорн
+trp_legolas|Леґолас
+trp_gimli|Ґімлі
 trp_pippin_notmet|Гобіти
 trp_merry_notmet|Гобіти
 trp_pippin|Піпін

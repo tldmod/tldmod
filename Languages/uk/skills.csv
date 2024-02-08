@@ -3,7 +3,7 @@ skl_trade_desc|Торговці стають більш поступливими
 skl_leadership|Лідерство
 skl_leadership_desc|З кожним новим рівнем цієї навички кількість людей, якими ви можете командувати, збільшується на 5, піднімається бойовий дух і злагодження в бою. Кількість добровольців, які хочуть вступити в ваш загін, збільшується. (Вміння лідера)
 skl_prisoner_management|Утримання полонених
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
+skl_prisoner_management_desc|Кожен рівень цього вміння збільшує максимальну кількість полонених на %d. Покращує шанси захоплення та утримання полонених (вміння лідера).
 skl_persuasion|Виживання
 skl_persuasion_desc|Здатність вижити в дикій природі та підкорити її своїй волі. Ця навичка впливає на здатність загону сховатися від ворога та швидкість загону у лісистій місцевості. (групове уміння)
 skl_engineer|-----
@@ -15,7 +15,7 @@ skl_surgery_desc|З кожним новим рівнем цієї навички
 skl_wound_treatment|Перев'язка ран
 skl_wound_treatment_desc|З кожним новим рівнем цієї навички швидкість вилікування загону зростає на 20 %% (вміння групи).
 skl_inventory_management|Упаковка
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+skl_inventory_management_desc|Збільшує місткість інвентарю на +6 за кожен рівень вміння. Зменшує споживання їжі. (Уміння лідера)
 skl_spotting|Пильність
 skl_spotting_desc|З кожним новим рівнем цієї навички поле зору загону збільшується на 10%% (вміння загону).
 skl_pathfinding|Пошук шляху

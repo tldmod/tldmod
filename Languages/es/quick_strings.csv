@@ -1,6 +1,6 @@
 qstr_Received_{reg0}_dama|Recibes {reg0} de daño.
 qstr_Gate_is_breached!|¡El portón ha caído!
-qstr_Gate_opens..._You_ha|La puerta se abre... te has internado en el lugar más sagrado en la Tierra Media.
+qstr_Gate_opens..._You_ha|La puerta se abre... Te has internado en el lugar más sagrado en la Tierra Media.
 qstr_Secret_place_discove|¡Lugar secreto descubierto!
 qstr_Next_Page|Página Siguiente
 qstr_Action|Acción
@@ -578,22 +578,22 @@ qstr_Thank_you_Mithrandir|¡Gracias, Mithrandir!
 qstr_The_wizard_Saruman_i|¡El mago Saruman ha caído y Barad Dûr ha sido reducida a polvo junto con su Señor Oscuro! Los pueblos de la Tierra Media han sido liberados de la amenaza que casi consumió todo el bien y la pureza de este mundo. ¡El Enemigo ha sido vencido y el Rey ha regresado!
 qstr_It_was_a_long_and_bl|Ha sido una guerra larga y sangrienta, muchos de nuestros amigos ya no están entre nosotros.
 qstr_There_is_much_to_reg|Hay mucho que lamentar y llorar, y más aún que reconstruir y reparar en los días venideros. Pero por ahora, alegrémonos con aquellos de nuestros amigos que aún siguen con nosotros y celebremos todo lo conseguido en Los Últimos Días de la Tercera Edad.
-; qstr_Orcs_are_marching_ag|Orcs are marching against Helm's Deep.
-; qstr_Orcs_are_marching_aga|Orcs are marching against Edoras.
-; qstr_Ah_{playername}_happ|Ah, {playername}, happy chance that we come on each other in this fashion! Grim tidings I bring from Western Rohan, and haste is sore needed.
-; qstr_What_tidings_do_you_|What tidings do you bring, Mithrandir? What can I do?
-; qstr_Saruman_has_loosed_I|Saruman has loosed Isengard upon Rohan. {s1} For the success of my designs, the valiant Rohirrim must not fall, {playername}! The danger to them is very great, yet also the emptying of Isengard has left it vulnerable, for Saruman has despatched his full strength against Theoden King. This may be the time to move into Nan Curunir. A choice is now laid before you, Commander, a choice you must make, for neither you nor I may be everywhere at once!
-; qstr_Do_you_want_me_to_he|Do you want me to help King Theoden defend {s3}, or hasten to Isengard and see what I can do?
-; qstr_Either_would_be_a_gr|Either would be a great boon to me. You must decide your course on your own, {playername}, as shall I. Shadowfax shall bear me now on a swift errand. You must act quickly as well! Hasten now!
-; qstr_Gandalf_asked_you_to|Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard.
+qstr_Orcs_are_marching_ag|Los orcos están marchando contra el Abismo de Helm.
+qstr_Orcs_are_marching_aga|Los orcos están marchando contra Edoras.
+qstr_Ah_{playername}_happ|¡Ah, {playername}, es una coincidencia afortunada que nos hayamos encontrado así! Traigo noticias funestas del oeste de Rohan, y hay que darse prisa.
+qstr_What_tidings_do_you_|¿Qué nuevas traes, Mithrandir? ¿Qué puedo hacer?
+qstr_Saruman_has_loosed_I|Saruman ha desatado sobre Rohan la furia de Isengard. {s1} ¡Para que se cumplan mis designios, los valientes Rohirrim no deben caer, {playername}! El peligro que los acecha es grande, pero Isengard ha quedado vacío y es vulnerable, porque Saruman ha lanzado a todas sus fuerzas contra Théoden Rey. Puede que este sea el momento de atacar Nan Curunir. Tienes una decisión ante ti, Capitán, una decisión que debes tomar, ¡pues ni tú no yo podemos estar en todas partes a la vez!
+qstr_Do_you_want_me_to_he|¿Quieres que ayude al Rey Théoden a defender {s3}, o que me dirija a Isengard y vea lo que puedo hacer?
+qstr_Either_would_be_a_gr|Elijas lo que elijas, me harás un gran servicio. Debes decidir tu camino por tu cuenta, {playername}, igual que yo. Sombragrís me llevará ahora a una misión urgente. ¡Tú también debes darte prisa! ¡Apresúrate!
+qstr_Gandalf_asked_you_to|Gandalf te ha pedido que ayudes a Théoden a defender {s3} o qué averigües qué está pasando en Isengard.
 qstr_Ents|Ents
-; qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope.
-; qstr_Missing_String|Missing String
-; qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
-; qstr_Hail_{playername}!_I_|Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!
-; qstr_Your_deed_has_greatl|Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!
-; qstr_{Playername}_I_will_|{Playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
-; qstr_You_have_failed_me_{|You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not.
+qstr_Hail_{playername}!_I|¡Salve, {playername}! Espero que estés de una pieza. En cualquier caso, me alegro de que hayas ayudado a mi amigo Fangorn, o Bárbol, como puede que tú le conozcas. Los pastores de árboles son muy poderosos, pero era bastante verosímil que estuvieran marchando a su perdición. Tal vez los hayas salvado de un gran peligro, Capitán, y eso me llena de alegría. No me gustaría ver desaparecer de este mudo a Ias más antiguas de sus criaturas, no, aún no… No, no antes de que vuelvan a ver a las Ents-mujeres, o eso espero.
+qstr_Missing_String|Missing String
+qstr_Well_thank_you_{play|Bueno, gracias, {playername}, y adiós. ¡Puede que volvamos a vernos, antes de la luna menguante!
+qstr_Hail_{playername}!_I_|¡Salve, {playername}! Espero que estés de una pieza. En cualquier caso, parece que has aplicado tu acero donde más falta hacía. Ningún enemigo ha tomado Cuernavilla, y es posible que ninguno lo haga. ¡no mientras valientes como tú defiendan la Puerta de Helm, me atrevería a decir!
+qstr_Your_deed_has_greatl|Tu hazaña ha sido de gran ayuda para mis designios, más incluso de lo que había esperado o planeado. Adiós, {playername}, y gracias. ¡Puede que volvamos a vernos, antes de la luna menguante!
+qstr_{Playername}_I_will_|{Playername}, te preguntaré una cosa. Tu valía como capitán está bien acreditada, igual que tu diligencia; ¿te superaron enemigos superiores? ¿Te demoraste demasiado, por prudencia o por miedo? He aquí que hemos caído en un peligro aún mayor del que había previsto. La fuerza de Rohan está quebrada, su pueblo desperdigado y desprotegido: el Abismo de Helm ha caído. Los árboles se ha marchitado antes de tiempo, y la noche se oscurece con el humo de las forjas de Isengard: los Ents del Bosque de Fangorn están muertos o han huido.
+qstr_You_have_failed_me_{|Me has fallado, {playername}; o quizás sea yo quien te ha fallado a ti. Tal vez había algún fallo en mis designios, algún grave error que no supe reconocer… El terror de Mordor se acerca. Ahora, déjame, {playername}. Puede que volvamos a vernos... o puede que no.
 qstr_Bagginsssss..._Ssssh|Bolssssón... Comarca...
 qstr_I..._don_t_know!|¡No... no sé nada!
 qstr_It..._beckonsssssss.|Nosss... llaamaaaaa...
@@ -612,11 +612,11 @@ qstr_The_forces_of_{s2}_m|¡Las fuerzas de {s2} marchan a {s15}!
 qstr_Rohan_capital_moved_|¡La capital de Rohan se ha trasladado de Edoras a Cuernavilla!
 qstr_Dale_capital_moved_f|¡La capital de Valle se ha trasladado de Valle a Esgaroth!
 qstr_Gundabad_capital_mov|¡La capital de Gundabad se ha trasladado del Motne Gundabad a la Ciudad de los Trasgos!
-; qstr_You_have_breached_th|You have breached the Ring of Isengard with the help of the Tree Men. During the battle, Isengard was flooded, but Orthanc still stands unscathed in midst of the havoc. You should investigate the aftermath.
+qstr_You_have_breached_th|Has atravesado el círculo de Isengard con la ayuda de los Hombres Árbol. Durante la batalla, Isengard se ha inundado, pero Orthanc aún se alza sin un rasguño en mitad del caos. Deberías investigar las ruinas.
 qstr_The_hosts_of_{s2}_re|¡Las huestes de {s2} se retiran de vuelta a sus hogares!
 qstr____Ruins_of_{s1}___|Ruinas de {s1}
-; qstr_{s1}_has_joined_the_|{s1} has joined the Hand
-; qstr_{s1}_has_joined_the_E|{s1} has joined the Eye
+qstr_{s1}_has_joined_the_|{s1} se ha unido a la Mano
+qstr_{s1}_has_joined_the_E|{s1} se ha unido al Ojo
 qstr_ranks|filas
 qstr_shield_wall|muro de escudos
 qstr_wedge|cuña
@@ -682,9 +682,9 @@ qstr_loses_Faction_Strength|pierde fuerza de facción debido a un asalto destruc
 qstr_loses_Faction_Strength_|pierde fuerza de facción debido a tus éxitos navales.
 qstr_You_spent_{reg67}_of|Gastas {reg67} de tu influencia con {s1}, te quedan {reg66}.
 qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?estaba:está} cerca de {s5}.
-; qstr_Army_of_{s6}|Army of {s6}
-; qstr_Host_of_{s6}|Host of {s6}
-; qstr_The_host_of_Isengard|The host of Isengard has razed {s2}!
+qstr_Army_of_{s6}|Ejército de {s6}
+qstr_Host_of_{s6}|Hueste de {s6}
+qstr_The_host_of_Isengard|¡La hueste de Isengard ha arrasado {s2}!
 qstr_{s1}_{s0}|{s1}, {s0}
 qstr_{s1}_and_{s0}|{s1} y {s0}
 qstr_No_Troops_Left.|No quedan tropas.
@@ -747,7 +747,7 @@ qstr_You_shapeshift_into_|¡Te has convertido en oso!
 qstr_You_got_{reg1}_exper|Ganas %d puntos de experiencia al convertirte en oso.
 qstr_Your_ability_to_chan|Has conseguido despertar tu habilidad innata como bailarín de piel, a partir de ahora podrás recorrer tu salvaje camino tanto como hombre como oso.
 qstr_You_change_back_to_h|Vuelves a tu forma humana...
-; qstr_Refill_Ammunition|Refill Ammunition
+qstr_Refill_Ammunition|Reponer munición
 qstr_Your_mount_stumbles!|¡Tu montura trastabilla! Parece haber quedado coja...
 qstr_Bitten_by_your_own_w|¡Tu propio huargo te ha mordido!
 qstr_You_weigh_too_much_f|¡Pesas demasiado para montar un poney!
@@ -1064,8 +1064,8 @@ qstr_You_have_fallen._The|Has caído. Los bandidos registran tu cuerpo rápidame
 qstr_Luckily_some_of_your|Por suerte, algunos de tus compañeros llegan en tu busca y te encuentran en el suelo. Rápidamente te llevan a un sitio seguro y atienden tus heridas.
 qstr_Luckily_some_passing|Por fortuna, algunas buenas gentes de la zona te encuentran a un lado del camino y descubren que no eres un vil mendigo. Te llevan a una posada cercana y atienden tus heridas.
 qstr_{s13}^^You_have_succ|{s13}^^Te has colado con éxito.
-; qstr_The_tomb_is_destroye|The tomb is destroyed. A fierce fight took place here.
-; qstr_Nothing_of_interest|Nothing of interest
+qstr_The_tomb_is_destroye|La tumba está destruida. Una feroz lucha tuvo lugar aquí.
+qstr_Nothing_of_interest|Nada de interés
 qstr_the_place|l lugar
 qstr_the_castle|l castillo
 qstr_the_Throne_Room|l Salón del Trono
@@ -1270,8 +1270,8 @@ qstr_Ask_him_if_he_has_an|¡Pregúntale si le queda algo de hierba para pipa!
 qstr_Tell_him_I_ll_be_the|¡Dile que cuando volvamos a vernos, yo seré el más alto de los dos!
 qstr_Ask_if_he_s_seen_Gan|¡Pregúntale si ha visto a Gandalf!
 qstr_You_gained_250_exper|Has ganado 250 puntos de experiencia.
-; qstr_Hrooom..._Hmmm...Who|Hrooom... Hmmm...Who are you?
-; qstr_Hrooom..._Hmmm...Oh_|Hrooom... Hmmm...Oh, it's you again, {playername}.
+qstr_Hrooom..._Hmmm...Who|Hrooom... Hmmm... ¿Quién eres?
+qstr_Hrooom..._Hmmm...Oh_|Hrooom... Hmmm... Oh, eres tú otra vez, {playername}.
 qstr_Treebeard_wants_you_|Bárbol quiere que encuentres y elimines a los orcos que están talando árboles en Fangorn.
 qstr_Something_wrong_not_e|Algo falla, no tienes tropas suficientes para la partida de exploradores
 qstr_my_home_town|mi lugar de origen

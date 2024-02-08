@@ -1,7 +1,7 @@
 dlga_start:mutiny_pretalk_1|이봐, {playername}. 할 말이 있는데.. ^여기 녀석들이 재미 좀 보고싶다는데. 이렇게 행군만 하는 것보다.
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|물러서라, 구더기 같은 놈! 우린 전쟁 중이고 난 네놈의 지휘관이다.
 dlga_mutiny_pretalk_2:close_window|그러시다면야, 지휘관님. 바라시는대로..
-dlga_start:mutiny_talk_1|이봐, 지휘관. 할 말이 있는데.. 여기 녀석들 불행해보여. 정말로말이야.^인간 살점도 부족하고, 즐길거리도 부족해.^녀석들이 네가 부족해빠졌다고 말하고 있다고, 지휘관!
+dlga_start:mutiny_talk_1|이봐, 지휘관. 할 말이 있는데.. 여기 녀석들 불행해 보여. 정말로 말이야.^인간 살점도 부족하고, 즐길거리도 부족해.^녀석들이 네가 부족해빠졌다고 말하고 있다고, 지휘관!
 dlga_mutiny_talk_1:mutiny_talk_2|뭐야? 전시 반란? ^ 이건 사형감이다, 이 구더기 자식!
 dlga_mutiny_talk_2:close_window|할 말이 있는데 말이야.. ^여기 녀석들은 내가 널 죽여버리면 더 뛰어난 지휘관감이 될 거라 하더군!
 dlga_start:troll_introduce_1|문제있어?
