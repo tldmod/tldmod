@@ -4454,6 +4454,9 @@ tld_ai_fadeout_spheres =   (3, 0, 0, [], [ #agent fadeout sphere test
         (position_get_scale_y, ":scale", pos3),
         (try_for_agents, ":agent_no", pos2, ":scale"),
             (agent_is_alive, ":agent_no"),
+            (agent_get_position, pos4, ":agent_no"),
+            (get_distance_between_positions, ":dist", pos2, pos4),
+            (le, ":dist", ":scale"), #need to put this extra check because WSE breaks the try_for_agents operation
             (agent_fade_out, ":agent_no"),
             # (str_store_agent_name, s2, ":agent_no"),
             # (display_message, "@{s2} is in fadeout range"),
@@ -4507,6 +4510,9 @@ tld_ai_melee_spheres =   (3, 0, 0, [], [ #agent fadeout sphere test
         (try_for_agents, ":agent_no", pos2, ":scale"),
             (agent_is_alive, ":agent_no"),
             (neg|agent_is_defender, ":agent_no"),
+            (agent_get_position, pos4, ":agent_no"),
+            (get_distance_between_positions, ":dist", pos2, pos4),
+            (le, ":dist", ":scale"), #need to put this extra check because WSE breaks the try_for_agents operation
             (agent_ai_set_always_attack_in_melee, ":agent_no", ":value"),
             # (str_store_agent_name, s5, ":agent_no"),
             # (assign, reg77, ":value"),

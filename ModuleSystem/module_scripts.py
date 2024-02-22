@@ -32308,6 +32308,9 @@ if is_a_wb_script==1:
             (agent_slot_eq, ":agent_no", slot_agent_walker_type, 2),
             (agent_slot_eq, ":agent_no", slot_agent_target_entry_point, ":instance_no_source"),
             (neq, ":agent_no", ":player_agent"),
+            (agent_get_position, pos3, ":agent_no"),
+            (get_distance_between_positions, ":dist", pos1, pos3),
+            (le, ":dist", 400), #need to put this extra check because WSE breaks the try_for_agents operation
             (agent_set_scripted_destination, ":agent_no", pos2),
         (try_end),
 
@@ -32315,6 +32318,9 @@ if is_a_wb_script==1:
             (agent_slot_eq, ":agent_no", slot_agent_walker_type, 2),
             (neq, ":agent_no", ":player_agent"),
             (agent_slot_eq, ":agent_no", slot_agent_target_entry_point, ":instance_no_source"), #check home position
+            (agent_get_position, pos3, ":agent_no"),
+            (get_distance_between_positions, ":dist", pos2, pos3),
+            (le, ":dist", 400), #need to put this extra check because WSE breaks the try_for_agents operation            
             (agent_set_scripted_destination, ":agent_no", pos1),
         (try_end),
     (try_end),
