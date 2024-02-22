@@ -4292,7 +4292,7 @@ scene_props = [
         (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"),
         (copy_position, pos2, pos1),
-        (position_move_y, pos2, -130,0),(set_spawn_position, pos2),
+        (position_move_y, pos2, -150,0),(set_spawn_position, pos2),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers       
         (val_add, ":walker_type", slot_center_walker_1_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
@@ -4486,7 +4486,7 @@ scene_props = [
         (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"), 
         (copy_position, pos2, pos1),
-        (position_move_y, pos2, -80,1),(set_spawn_position, pos2),
+        (position_move_y, pos2, -80,0),(set_spawn_position, pos2),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
         (val_add, ":walker_type", slot_center_walker_1_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
