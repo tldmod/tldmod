@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|Mort aux envahisseurs des terres de {s16} !
 qstr_CHARGE!_Let_s_clear_|CHARGEZ ! Nettoyons {s17} des racailles de {s18} {s19} !
 qstr_{s14}Now_that_{s19}s|{s14}Maintenant, ces racailles de {s19} vont goûter à la fureur du peuple des Ours !
 qstr_Attack!|À l’attaque !
-qstr_You_are_attacked_by_|Vous êtes attaqués par un groupe de gobelins !
+qstr_You_are_attacked_by_|Vous êtes attaqués par un groupe de bandits !
 qstr_Holding|Tenir la position
 qstr_Following|Suivre
 qstr_Charging|Charger
@@ -564,6 +564,7 @@ qstr_What_should_I_do?|Que dois-je faire ?
 qstr_Find_{s3}_s_whereabo|Trouvez au plus vite où se trouve {s3} et parlez avec {reg3?elle:lui}. Bonne chance !
 qstr_Good_to_see_the_Shad|Il est bon de voir que l'Ombre ne vous a pas encore vaincu{/e}, {playername}.
 qstr_You_are_the_one_they|Vous êtes celui qu'on appelle Gandalf, ou Mithrandir.
+qstr_You_are_the_one_they_|Vous êtes la personne que l'on appelle Radagast.
 qstr_That_is_what_some_ca|C'est ainsi que l'on me nomme. Autrefois, on m'a aussi appelé autrement, mais à moins que l'Ombre ne soit stoppée, il pourrait ne plus y avoir personne pour me nommer tout court.
 qstr_What_do_you_mean?|Que voulez-vous dire ?
 qstr_In_spite_of_their_va|En dépit de leur vaillante résistance, {s3} a été submergé par les forces du mal. Le peuple de {s3} est dispersé et le bon {s4} n'est plus.
@@ -575,6 +576,7 @@ qstr_What_do_you_want_of_|Que voulez-vous de moi, vieil homme ?
 qstr_Just_know_that_a_Daw|Sachez juste que l'Aube arrive. Elle est inévitable. Et si vous êtes toujours en vie pour la voir, réfléchissez à ce que vous aurez alors à dire.
 qstr_Well_met_{playername|Heureuse rencontre, {playername}, {s24}. Ma confiance en vous n'était pas erronée. La puissance des forces de l'Ombre a été brisée et vos efforts n'ont pas été secondaires dans ce qui s'est passé. 
 qstr_Thank_you_Mithrandir|Merci, Mithrandir !
+qstr_Thank_you_Radagast!|Merci, Ragagast !
 qstr_The_wizard_Saruman_i|Le magicien Saruman est parti et Barad-Dûr a été réduite en poussière avec son Seigneur Sombre ! Tous les peuples de la Terre du Milieu sont délivrés de la menace qui a bien failli consumer tout ce qui était bon et pur en ce monde. L'ennemi est vaincu et le roi est de retour !
 qstr_It_was_a_long_and_bl|Ce fût une longue et sanglante guerre, et beaucoup de nos amis proches ne sont plus de ce monde.
 qstr_There_is_much_to_reg|Il y a beaucoup à regretter et à pleurer, et encore plus à reconstruire et à réparer dans les jours à venir. Mais pour l'instant, soyons radieux avec ceux de nos amis qui sont toujours avec nous et célébrons tout ce que nous avons accompli dans Les Derniers Jours du Troisième Âge.

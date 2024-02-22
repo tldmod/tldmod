@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|¡Muerte a los intrusos en las tierras de {s16}!
 qstr_CHARGE!_Let_s_clear_|¡CARGAD! ¡Borremos de la faz de {s17} a esa escoría de {s19} de {s18}!
 qstr_{s14}Now_that_{s19}s|{s14} ¡Ahroa la escoria de {s19} probará la furia de los Beórnidas!
 qstr_Attack!|¡Al ataque!
-qstr_You_are_attacked_by_|¡Un grupo de trasgos te ataca!
+; qstr_You_are_attacked_by_|You are attacked by a group of bandits!
 qstr_Holding|Manteniendo posición
 qstr_Following|Siguiendo
 qstr_Charging|Cargando
@@ -564,6 +564,7 @@ qstr_What_should_I_do?|¿Qué debo hacer?
 qstr_Find_{s3}_s_whereabo|Encuentra a {s3} dondequiera que esté y ponte a sus órdenes. ¡Buena suerte!
 qstr_Good_to_see_the_Shad|Es bueno ver que la Sombra todavía no ha conseguido derrotarte, {playername}.
 qstr_You_are_the_one_they|Tu eres aquel al que llaman Gandalf o Mithrandir.
+; qstr_You_are_the_one_they_|You are the one they call Radagast.
 qstr_That_is_what_some_ca|Así me llaman algunos. En otros tiempos también tuve otros nombres, pero a menos que la Oscuridad sea detenida, puede que no quede nadie para llamarme de ninguna manera.
 qstr_What_do_you_mean?|¿Qué quieres decir?
 qstr_In_spite_of_their_va|A pesar de su valiente resistencia, {s3} ha sido arrollado por las fuerzas del mal. La gente de {s3} está dispersa y su líder {s4} ha caído.
@@ -575,6 +576,7 @@ qstr_What_do_you_want_of_|¿Qué es lo que quieres de mi, anciano?
 qstr_Just_know_that_a_Daw|Sólo quiero que sepas que un nuevo Amanecer se acerca. Es inevitable. Y en caso de que vivas para verlo, pregúntate qué podrás decir en tu favor cuando llegue el momento.
 qstr_Well_met_{playername|{Bienhallado/Bienhallada}, {playername}, {s24}. No me equivoqué al poner mi confianza en ti. El poder de las fuerzas de la Sombra ha sido quebrado, y tus esfuerzos han sido una parte fundamental de su derrota.
 qstr_Thank_you_Mithrandir|¡Gracias, Mithrandir!
+; qstr_Thank_you_Radagast!|Thank you, Radagast!
 qstr_The_wizard_Saruman_i|¡El mago Saruman ha caído y Barad Dûr ha sido reducida a polvo junto con su Señor Oscuro! Los pueblos de la Tierra Media han sido liberados de la amenaza que casi consumió todo el bien y la pureza de este mundo. ¡El Enemigo ha sido vencido y el Rey ha regresado!
 qstr_It_was_a_long_and_bl|Ha sido una guerra larga y sangrienta, muchos de nuestros amigos ya no están entre nosotros.
 qstr_There_is_much_to_reg|Hay mucho que lamentar y llorar, y más aún que reconstruir y reparar en los días venideros. Pero por ahora, alegrémonos con aquellos de nuestros amigos que aún siguen con nosotros y celebremos todo lo conseguido en Los Últimos Días de la Tercera Edad.

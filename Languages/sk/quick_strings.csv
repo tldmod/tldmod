@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|Smrť privandrovalcom zo zemí {s16}u!
 qstr_CHARGE!_Let_s_clear_|ÚTOK! Očistíme {s17} od špinavých {s18} {s19}!
 qstr_{s14}Now_that_{s19}s|{s14}Teraz tieto {s19}ské ohavy okúsia hnev medvedieho ľudu!
 qstr_Attack!|Útok!
-qstr_You_are_attacked_by_|Si napadnutý skupinou škratov!
+; qstr_You_are_attacked_by_|You are attacked by a group of bandits!
 qstr_Holding|Držia pozíciu
 qstr_Following|Následujú ťa
 qstr_Charging|Útočia
@@ -564,6 +564,7 @@ qstr_What_should_I_do?|Čo mám robiť?
 qstr_Find_{s3}_s_whereabo|Vyhľadaj {s3}, nech už je kdekoľvek, a pohovor si s {reg3?ňou:ním}. Veľa šťastia!
 qstr_Good_to_see_the_Shad|Je dobré, že ťa Tieň ešte neskazil, {playername}.
 qstr_You_are_the_one_they|Ty si ten, ktorého nazývajú Gandalf či Mithrandir. 
+; qstr_You_are_the_one_they_|You are the one they call Radagast.
 qstr_That_is_what_some_ca|Niektorí ma tak nazývajú. Môjho času som mal mnoho mien, ale pokiaľ nezastavíme Temnotu, neostane nikto, kto ma volal hoc len jediným z nich. 
 qstr_What_do_you_mean?|Čo tým myslíš?
 qstr_In_spite_of_their_va|V zášti ich statočného odporu, {s3} bol ovládnutý sílami temna. {s3}ský ľud sa rozpŕchol a dobrý {s4} už nie je.
@@ -575,6 +576,7 @@ qstr_What_do_you_want_of_|Čo odo mňa očakávaš, starý muž?
 qstr_Just_know_that_a_Daw|Buď si vedomý toho, že Úsvit sa blíži. Je nevýhnutný. A pokiaľ do vtedy chceš ostať nažive, sám musíš zvážiť čo je nutné vykonať. 
 qstr_Well_met_{playername|Dobre, že sme sa opäť stretávame, {playername}, {s24}. Vsadil som do teba dôveru, a dobre som urobil. Moc Tieňa sa rozpadla, a tvoje činy k tomu nemálo prispeli. 
 qstr_Thank_you_Mithrandir|Ďakujem, Mithrandir!
+; qstr_Thank_you_Radagast!|Thank you, Radagast!
 qstr_The_wizard_Saruman_i|Čarodej Saruman je preč a Barad Dur sa zrútila a rozbila na prach spolu s Temným Pánom! Všetok ľud Stredozeme si konečne vydýchol od hrozby, ktorá takmer pohltila všetko dobré a krásne v tomto svete. Nepriateľ je porazený a Kráľ sa navrátil!
 qstr_It_was_a_long_and_bl|Bola to dlhá a krvavá vojna a veľa našich blízkych priateľov už nie je medzi nami.
 qstr_There_is_much_to_reg|Je čoho ľutovať a nad čím smútiť, a ešte viac je treba v nastávajúcich dňoch vybudovať a opraviť. Ale teraz sa radujme s tými, čo s námi vydržali, a oslavujme čoho sme dosiahli v Posledných Dňoch Tretieho Veku. 

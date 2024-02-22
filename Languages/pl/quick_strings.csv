@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|Śmierć najeźdźcom!
 qstr_CHARGE!_Let_s_clear_|Atak! Oczyśćmy {s18} {s19}szumowiny z {s17}!
 qstr_{s14}Now_that_{s19}s|{s14}Teraz {s19}szumowiny odczują smak furii ludzi niedźwiedzi!
 qstr_Attack!|Do ataku!
-qstr_You_are_attacked_by_|Zaatakowała Cię grupa bandytów!
+; qstr_You_are_attacked_by_|You are attacked by a group of bandits!
 qstr_Holding|Utrz. pozycję
 qstr_Following|Za tobą
 qstr_Charging|Atakują
@@ -564,6 +564,7 @@ qstr_What_should_I_do?|Co powin{ienem/nam} zrobić?
 qstr_Find_{s3}_s_whereabo|Dowiedz się gdzie przebywa {s3} i porozmawiaj z {reg3?her:him} . Powodzenia!
 qstr_Good_to_see_the_Shad|Dobrze widzieć, że Cień cię jeszcze nie pokonał, {playername}.
 qstr_You_are_the_one_they|Nazywają cię Gandalf albo Mithrandir.
+; qstr_You_are_the_one_they_|You are the one they call Radagast.
 qstr_That_is_what_some_ca|Rzeczywiście tak niektórzy mnie zwą. W moich czasach byłem znany pod innymi imionami, ale jeśli Ciemność nie zostanie zatrzymana, niedługo niezostanie nikt kto będzie mnie znał pod jakimkolwiek mianem.
 qstr_What_do_you_mean?|Co masz na myśli?
 qstr_In_spite_of_their_va|Mimo mężnego oporu, {s3} został pokonany przez siły zła. Ludzie zostali rozproszenia, a dobro przestało istnieć.
@@ -575,6 +576,7 @@ qstr_What_do_you_want_of_|Czego ode mnie chcesz, stary?
 qstr_Just_know_that_a_Daw|Wiedz tylko, że Świt nadchodzi. To nieuniknione. I powi{nieneś/nnaś} pozostać przy życiu by to ujrzeć.
 qstr_Well_met_{playername|Witaj {playername}, {s24}. Nie myliłem się pokładając w tobie moje nadzieje. Potęga Ciemności została złamana, a Twoje czyny odegrały w tym nie małą role!
 qstr_Thank_you_Mithrandir|Dziękuję, Mithrandirze!
+; qstr_Thank_you_Radagast!|Thank you, Radagast!
 qstr_The_wizard_Saruman_i|Czarodziej Saruman odszedł, a Barad Dur rozbite w pył wraz z Mrocznym Lordem! Wszystkie ludy Śródziemia zostały uwolnione od niemal pożarło wszystko co dobre i czyste w tym świecie. Wróg został wygnany a Król powrócił!
 qstr_It_was_a_long_and_bl|To była długa i krwawa wojna i wielu twych bliskich przyjaciół nie ma już wśród nas.
 qstr_There_is_much_to_reg|Jest wiele do opłakiwania, i nawet więcej do odbudowy i uleczenia w najbliższych dniach. Ale teraz cieszmy się i świętujmy z tym przyjaciółmi, którzy są wśród nas, w Ostatnich Dniach Trzeciej Ery.

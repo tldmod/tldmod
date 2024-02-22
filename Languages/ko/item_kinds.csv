@@ -348,9 +348,9 @@ itm_orc_axe|오르크 도끼
 itm_orc_two_handed_axe|오르크 거대도끼
 itm_orc_throwing_axes|오르크 투척 도끼
 itm_orc_bow|오르크 활
-itm_orc_shield_a|오르크 방패
-itm_orc_shield_b|오르크 방패
-itm_orc_shield_c|오르크 타워 방패
+; itm_orc_shield_a|Simple Shield
+; itm_orc_shield_b|Fur Shield
+; itm_orc_shield_c|Fur Tower Shield
 itm_mordor_orc_shield_a|모르도르 오르크 방패
 itm_mordor_orc_shield_b|모르도르 오르크 방패
 itm_mordor_orc_shield_c|모르도르 오르크 방패
@@ -435,8 +435,8 @@ itm_dun_helm_a|던랜드인 늑대 모자
 itm_dun_helm_c|던랜드인 높은 투구
 itm_dun_helm_d|던랜드인 높은 투구
 itm_dun_helm_e|던랜드인 뿔 투구
-itm_dun_shield_a|던랜드인 방패
-itm_dun_shield_b|던랜드인 방패
+; itm_dun_shield_a|Dunnish Roundshield
+; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|던랜드 부족장 검
 itm_dunnish_antler_axe|던랜드인 뿔 도끼
 itm_dunnish_war_axe|던랜드인 전쟁 도끼

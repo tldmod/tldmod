@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|Smrt nepřátelům země {s16}!
 qstr_CHARGE!_Let_s_clear_|ÚTOK! Vyčistíme území {s18} {s19}od špíny z frakce {s17}!
 qstr_{s14}Now_that_{s19}s|{s14}Teď špína z frakce {s19} ochutná zlobu medvědích lidí!
 qstr_Attack!|Utok!
-qstr_You_are_attacked_by_|Zaútočila na tebe skupina goblinů!
+; qstr_You_are_attacked_by_|You are attacked by a group of bandits!
 qstr_Holding|Drží pozici
 qstr_Following|Následují
 qstr_Charging|Útočí
@@ -564,6 +564,7 @@ qstr_What_should_I_do?|Co bych měl dělat?
 ; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with {reg3?her:him}. Good luck!
 qstr_Good_to_see_the_Shad|Rád vidím že ze Temnotě ještě nepodařilo tě přemoct, {playername}.
 qstr_You_are_the_one_they|Ty jsi ten, kterého nazývají Gandalf nebo Mithrandir.
+; qstr_You_are_the_one_they_|You are the one they call Radagast.
 qstr_That_is_what_some_ca|Takto mne někteří nazývají. V mých časech jsem byl nazýván různě, ale dokud nebude Temnota zastavena, tak brzy nezbude nikdo kdo by mně nazýval jakkoliv.
 qstr_What_do_you_mean?|Co myslíš?
 qstr_In_spite_of_their_va|I přes jejich statečný odpor, byl {s3} přemožen silami zla. Lidé z {s3} jsou roztroušeni a dobrý {s4} již není více.
@@ -575,6 +576,7 @@ qstr_What_do_you_want_of_|Co po mně chceš, starý muži?
 qstr_Just_know_that_a_Daw|Věz že Úsvit se blíží. Je nevyhnutelný. A ty bys měl být naživu abys to viděl. Zvaž co bys pak měl sám sobě říct.
 qstr_Well_met_{playername|Zdravím tě, {playername} z {s24}. Má důvěra v tebe byla správná. Mocné síly Temnoty byly poraženy a tvé činy se na vítězství podílely nemalou měrou!
 qstr_Thank_you_Mithrandir|Děkuji ti, Mithrandire!
+; qstr_Thank_you_Radagast!|Thank you, Radagast!
 qstr_The_wizard_Saruman_i|Čaroděj Saruman je pryč a Barad Dur byl zničen na prach společně s Temným Pánem! Všem lidem Středozemě se ulevilo, že hrozba, která málem pohltila všechno dobré a čisté na tomto světě je pryč. Nepřítel je poražen a Král se vrátil!
 qstr_It_was_a_long_and_bl|Byla to dlouhá a krvavá válka a spousta tvých blízkých přátel již není mezi námi.
 qstr_There_is_much_to_reg|Je spousta toho čeho bychom měli litovat a nad čím truchlit. Je ještě více toho co je třeba znovu vystavět a opravit v následujících dnech. Ale teď pojďme slavit s těmi z našich přátel, kteří jsou stále s námi, to čeho jsme dosáhli v The Last Days Of The Third Age.

@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|Morte aos invasores das terras de {s16}!
 qstr_CHARGE!_Let_s_clear_|ATACAR! Vamos limpar a escória de {s18} {s19}de {s17}!
 qstr_{s14}Now_that_{s19}s|{s14}Agora a escória de {s19} vai experimentar a fúria do povo urso!
 qstr_Attack!|Ataque!
-qstr_You_are_attacked_by_|Você está sob ataque de um grupo de goblins!
+; qstr_You_are_attacked_by_|You are attacked by a group of bandits!
 qstr_Holding|Segurando
 qstr_Following|Seguindo
 qstr_Charging|Investindo
@@ -564,6 +564,7 @@ qstr_What_should_I_do?|O que devo fazer?
 qstr_Find_{s3}_s_whereabo|Encontre o paradeiro de {s3} imediatamente e fale com {reg3?her:him}. Boa sorte!
 qstr_Good_to_see_the_Shad|Bom ver que a Sombra ainda não conseguir te derrotar, {playername}.
 qstr_You_are_the_one_they|Você é aquele a quem chamam de Gandalf ou Mithrandir.
+; qstr_You_are_the_one_they_|You are the one they call Radagast.
 qstr_That_is_what_some_ca|Isso é o que alguns me chamam. No meu tempo eu também tenho sido chamado de outras coisas, mas a menos que a Escuridão seja detida, em breve pode não haver mais ninguém para me chamar de alguma coisa.
 qstr_What_do_you_mean?|O que você quer dizer?
 qstr_In_spite_of_their_va|Apesar de sua valente resistência, {s3} foi subjugado pelas forças do mal. As pessoas de {s3} estão dispersas e as boas {s4} não são mais.
@@ -575,6 +576,7 @@ qstr_What_do_you_want_of_|O que você quer de mim, velho?
 qstr_Just_know_that_a_Daw|Só saiba que o Amanhecer está chegando. É inevitável. E você deveria ainda estar vivo para vê-lo, então considere o que você deve ter que dizer por si próprio.
 qstr_Well_met_{playername|Bem conhecido, {playername}, {s24}. Minha confiança em você não foi perdida. O poder das forças da Sombra foi quebrado e seus esforços não tiveram um pequeno papel nisso!
 qstr_Thank_you_Mithrandir|Obrigado, Mithrandir!
+; qstr_Thank_you_Radagast!|Thank you, Radagast!
 qstr_The_wizard_Saruman_i|O mago Saruman se foi e Barad Dur foi despedaçado junto com seu Senhor do Escuro! Todos os povos da Terra Média estão aliviados da ameaça que quase consumiu tudo o que era bom e puro neste mundo. O inimigo é derrotado e o rei voltou!
 qstr_It_was_a_long_and_bl|Foi uma longa e sangrenta guerra e muitos de nossos melhores amigos não estão mais entre nós.
 qstr_There_is_much_to_reg|Há muito a se lamentar e lamentar, e ainda mais para reconstruir e consertar nos próximos dias. Mas, por enquanto, vamos estar exultantes com os de nossos amigos que ainda estão conosco e celebrar tudo o que conquistamos nos Últimos Dias da Terceira Era.

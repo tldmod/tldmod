@@ -348,9 +348,9 @@ itm_orc_axe|Orkowy Topór
 itm_orc_two_handed_axe|Orkowski Wielki Topór
 itm_orc_throwing_axes|Orkowe Toporki do Rzucania
 itm_orc_bow|Orkowy Łuk
-itm_orc_shield_a|Orkowa Tarcza
-itm_orc_shield_b|Orkowa Tarcza
-itm_orc_shield_c|Orkowy Pawęż
+; itm_orc_shield_a|Simple Shield
+; itm_orc_shield_b|Fur Shield
+; itm_orc_shield_c|Fur Tower Shield
 itm_mordor_orc_shield_a|Mordorska Orkowa Tarcza
 itm_mordor_orc_shield_b|Mordorska Orkowa Tarcza
 itm_mordor_orc_shield_c|Mordorska Orkowa Tarcza
@@ -435,8 +435,8 @@ itm_dun_helm_b|Dunladzka Futrzana Czapa
 itm_dun_helm_c|Dunlandzki Wspaniały Hełm
 itm_dun_helm_d|Dunlandzki Wspaniały Hełm
 itm_dun_helm_e|Dunlandzki Hełm z Porożem
-itm_dun_shield_a|Dunlandzka Tarcza
-itm_dun_shield_b|Dunlandzka Tarcza
+; itm_dun_shield_a|Dunnish Roundshield
+; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|Dunlandzki Miecz Herszta
 itm_dunnish_antler_axe|Dunlandzki Topór z Poroża
 itm_dunnish_war_axe|Dunlandzki Topór Bojowy

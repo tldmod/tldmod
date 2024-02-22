@@ -348,9 +348,9 @@ itm_orc_axe|Orc Bijl
 ; itm_orc_two_handed_axe|Orc Great Axe
 itm_orc_throwing_axes|Orc Werpbijlen
 itm_orc_bow|Ork Boog
-itm_orc_shield_a|Orc Schild
-itm_orc_shield_b|Orc Schild
-; itm_orc_shield_c|Orc Tower Shield
+; itm_orc_shield_a|Simple Shield
+; itm_orc_shield_b|Fur Shield
+; itm_orc_shield_c|Fur Tower Shield
 itm_mordor_orc_shield_a|Mordor Ork Schild
 itm_mordor_orc_shield_b|Mordor Ork Schild
 itm_mordor_orc_shield_c|Mordor Ork Schild
@@ -435,8 +435,8 @@ itm_dun_helm_a|Dunnish Wolven Pet
 itm_dun_helm_c|Dunnish Lang Helm
 itm_dun_helm_d|Dunnish Lang Helm
 ; itm_dun_helm_e|Dunnish Antler Helm
-itm_dun_shield_a|Dunnish Schild
-itm_dun_shield_b|Dunnish Schild
+; itm_dun_shield_a|Dunnish Roundshield
+; itm_dun_shield_b|Dunnish Oval Shield
 ; itm_dun_berserker|Dunland Chieftain Sword
 ; itm_dunnish_antler_axe|Dunnish Antler Axe
 ; itm_dunnish_war_axe|Dunnish War Axe

@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|{s16}土地的擅闖者去死吧！
 qstr_CHARGE!_Let_s_clear_|衝鋒！讓我們從{s18}清除這群來自{s17}{s19}的渣滓！
 qstr_{s14}Now_that_{s19}s|{s14}讓{s19}的渣滓嚐嚐熊之民的怒火吧！
 qstr_Attack!|攻擊！
-qstr_You_are_attacked_by_|你被一群哥布林攻擊了！
+; qstr_You_are_attacked_by_|You are attacked by a group of bandits!
 qstr_Holding|堅守中
 qstr_Following|跟隨中
 qstr_Charging|衝鋒中
@@ -564,6 +564,7 @@ qstr_What_should_I_do?|我該做什麼？
 qstr_Find_{s3}_s_whereabo|盡快找到{s3}的下落並跟{reg3?她:他}談談吧。祝你好運！
 qstr_Good_to_see_the_Shad|{playername}，很高興看到你還沒被索倫的陰影打敗。
 qstr_You_are_the_one_they|看來你就是人們所說的甘道夫或米斯蘭達吧。
+; qstr_You_are_the_one_they_|You are the one they call Radagast.
 qstr_That_is_what_some_ca|有些人的確如此稱呼我。以前我也被用其他名字稱呼過。但除非黑暗被阻止，不然很快不會剩下任何人能用名字稱呼我了。
 qstr_What_do_you_mean?|你的意思是？
 qstr_In_spite_of_their_va|儘管他們英勇的抵抗過，{s3}最終還是被邪惡勢力吞沒了。{s3}的人們四散而美好的{s4}已經一去不復返了。
@@ -575,6 +576,7 @@ qstr_What_do_you_want_of_|你想要我幹嘛，老頭？
 qstr_Just_know_that_a_Daw|要記得黎明將至。這是必然。而如果你能活著看到那一天，想想該怎麼面對自己吧。
 qstr_Well_met_{playername|很高興見到你，{playername}，{s24}。我當初果然沒有看錯你。陰影的強大勢力已被打碎而你幫了大忙！
 qstr_Thank_you_Mithrandir|謝謝你，米斯蘭達！
+; qstr_Thank_you_Radagast!|Thank you, Radagast!
 qstr_The_wizard_Saruman_i|巫師薩魯曼已逝而黑邪塔連同其黑暗之主也被粉碎！中土世界的人民已從近乎吞噬世上所有美好與聖潔的威脅下得到解放。敵人被擊敗且王已回歸！
 qstr_It_was_a_long_and_bl|在這個漫長而血腥的戰爭後我們有許多摯友已經不在了。
 qstr_There_is_much_to_reg|我們有著許多的遺憾和悲傷，而未來還有更多的事物等著我們去重建和修繕。但現在，讓我們與仍在身邊的朋友一起慶祝我們在第三紀元的最後之日所達成的豐功偉業吧！

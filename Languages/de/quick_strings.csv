@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|Tod allen Eindringlingen in {s16}!
 qstr_CHARGE!_Let_s_clear_|GREIFT AN! Lasst uns diesen aus {s18} stammenden {s19}-Abschaum hier {s17} vernichten!
 qstr_{s14}Now_that_{s19}s|{s14}Nun wird dieser {s19}-Abschaum den Zorn der Bärenmenschen erfahren!
 qstr_Attack!|Greift an!
-qstr_You_are_attacked_by_|Du wirst von einer Gruppe Orks angegriffen!
+; qstr_You_are_attacked_by_|You are attacked by a group of bandits!
 qstr_Holding|Stellung haltend
 qstr_Following|Folgend
 qstr_Charging|Angreifend
@@ -564,6 +564,7 @@ qstr_What_should_I_do?|Was soll ich tun?
 qstr_Find_{s3}_s_whereabo|Findet {s3} sobald wie möglich und sprecht mit {reg3?ihr:ihm}. Viel Glück!
 qstr_Good_to_see_the_Shad|Es freut mich, dass der Schatten Euch noch nicht besiegt hat, {playername}.
 qstr_You_are_the_one_they|Ihr seid der, den sie Gandalf oder Mithrandir nennen.
+; qstr_You_are_the_one_they_|You are the one they call Radagast.
 qstr_That_is_what_some_ca|So nennen sie mich. In meiner Zeit hier bin ich schon vieles genannt worden, aber wenn die Dunkelheit nicht aufgehalten wird, wird es bald niemanden mehr geben, der mich irgendetwas nennen könnte.
 qstr_What_do_you_mean?|Was meint Ihr?
 qstr_In_spite_of_their_va|Trotz tapferen Widerstands wurde {s3} von den Mächten des Bösen überrannt. {s3}s Volk ist verstreut und {s4} ist gefallen.
@@ -575,6 +576,7 @@ qstr_What_do_you_want_of_|Was wollt Ihr von mir, alter Mann?
 qstr_Just_know_that_a_Daw|Wisst einfach, dass die Dämmerung heraufzieht. Es ist unumgänglich. Und solltet Ihr noch lange genug leben, um sie zu sehen, bedenkt, was Ihr zu Euch dann sagen solltet.
 qstr_Well_met_{playername|Eine freudige Begegnung, {playername}, {s24}. Mein Vertrauen in Euch war nicht umsonst. Die Macht des Schattens wurde gebrochen und Eure Bemühungen haben darin eine nicht unwichtige Rolle gespielt.
 qstr_Thank_you_Mithrandir|Habt Dank, Mithrandir!
+; qstr_Thank_you_Radagast!|Thank you, Radagast!
 qstr_The_wizard_Saruman_i|Der Zauberer Saruman ist besiegt und Barad-dur wurde zu Staub zerschmettert, gemeinsam mit seinem Dunklen Herrn! Alle Völker Mittelerdes sind nun frei von der Bedrohung, die beinahe all das, was gut und rein in dieser Welt ist, verschlungen hätte. Der Feind ist vernichtet und der König zurückgekehrt!
 qstr_It_was_a_long_and_bl|Es war ein langer und blutiger Krieg und viele unserer besten Freunde weilen nicht mehr unter uns.
 qstr_There_is_much_to_reg|Es gibt viel zu bedauern und zu betrauern in den folgenden Tagen, und noch mehr wieder aufzubauen und zu heilen. Aber jetzt lasst uns frohlocken mit jenen unserer Freunde, die noch immer bei uns sind, und all das feiern, was wir vollbracht haben  während dieser Letzten Tage des Dritten Zeitalters!

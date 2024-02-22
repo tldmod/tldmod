@@ -348,9 +348,9 @@ itm_orc_axe|Hacha de Orco
 itm_orc_two_handed_axe|Gran Hacha Orca
 itm_orc_throwing_axes|Hacha Arrojadiza de Orco
 itm_orc_bow|Arco Orco
-itm_orc_shield_a|Escudo Orco
-itm_orc_shield_b|Escudo Orco
-itm_orc_shield_c|Pavés Orco
+; itm_orc_shield_a|Simple Shield
+; itm_orc_shield_b|Fur Shield
+; itm_orc_shield_c|Fur Tower Shield
 itm_mordor_orc_shield_a|Escudo Orco de Mordor
 itm_mordor_orc_shield_b|Escudo Orco de Mordor
 itm_mordor_orc_shield_c|Escudo Orco de Mordor
@@ -435,8 +435,8 @@ itm_dun_helm_b|Gorro de Pieles Dunlendino
 itm_dun_helm_c|Yelmo Alto Dunlendino
 itm_dun_helm_d|Yelmo Alto Dunlendino
 itm_dun_helm_e|Yelmo Astado Dunlendino
-itm_dun_shield_a|Escudo Dunlendino
-itm_dun_shield_b|Escudo Dunlendino
+; itm_dun_shield_a|Dunnish Roundshield
+; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|Espada de Jefe Dunlendino
 itm_dunnish_antler_axe|Hacha de Cuerno Dunlendina
 itm_dunnish_war_axe|Hacha de Guerra Dunlendina

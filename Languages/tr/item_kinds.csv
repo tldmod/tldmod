@@ -348,9 +348,9 @@ itm_orc_axe|Ork Baltası
 itm_orc_two_handed_axe|Büyük Ork Baltası
 itm_orc_throwing_axes|Ork Fırlatma Baltaları
 itm_orc_bow|Ork Yayı
-itm_orc_shield_a|Ork Kalkanı
-itm_orc_shield_b|Ork Kalkanı
-itm_orc_shield_c|Ork Kule Kalkanı
+; itm_orc_shield_a|Simple Shield
+; itm_orc_shield_b|Fur Shield
+; itm_orc_shield_c|Fur Tower Shield
 itm_mordor_orc_shield_a|Mordor Ork Kalkanı
 itm_mordor_orc_shield_b|Mordor Ork Kalkanı
 itm_mordor_orc_shield_c|Mordor Ork Kalkanı 
@@ -435,8 +435,8 @@ itm_dun_helm_a|Dunnish Kurt Kepi
 itm_dun_helm_c|Dunnish Uzun Migfer
 itm_dun_helm_d|Dunnish Uzun Migfer
 itm_dun_helm_e|Dun Boynuz Migferi
-itm_dun_shield_a|Dunnish Kalkanı
-itm_dun_shield_b|Dunnish Kalkanı
+; itm_dun_shield_a|Dunnish Roundshield
+; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|Dunland Kabile Reisi Kılıcı
 itm_dunnish_antler_axe|Dunnish Anten Baltası
 itm_dunnish_war_axe|Dunnish Savaş Baltası

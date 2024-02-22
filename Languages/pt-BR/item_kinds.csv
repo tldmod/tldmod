@@ -348,9 +348,9 @@ itm_orc_axe|Machado Orc
 itm_orc_two_handed_axe|Machado Grande Orc
 itm_orc_throwing_axes|Machados de Arremesso Orc
 itm_orc_bow|Arco Orc
-itm_orc_shield_a|Escudo Orc
-itm_orc_shield_b|Escudo Orc 
-itm_orc_shield_c|Escudo Torre Orc
+; itm_orc_shield_a|Simple Shield
+; itm_orc_shield_b|Fur Shield
+; itm_orc_shield_c|Fur Tower Shield
 itm_mordor_orc_shield_a|Escudo Orc de Mordor
 itm_mordor_orc_shield_b|Escudo Orc de Mordor 
 itm_mordor_orc_shield_c|Escudo Orc de Mordor 
@@ -435,8 +435,8 @@ itm_dun_helm_a|Touca de Lobo Terra-pardense
 itm_dun_helm_c|Elmo Alto Terra-pardense
 itm_dun_helm_d|Elmo Alto Terra-pardense
 itm_dun_helm_e|Elmo de Chifres Terra-pardense
-itm_dun_shield_a|Escudo Terra-pardense
-itm_dun_shield_b|Escudo Terra-pardense
+; itm_dun_shield_a|Dunnish Roundshield
+; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|Espada de Chefe das Terras Pardas
 itm_dunnish_antler_axe|Machado de Veado Terra-pardense
 itm_dunnish_war_axe|Machado de Guerra Terra-pardense

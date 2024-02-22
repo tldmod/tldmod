@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|{s16}의 땅을 침입한 이들에게 죽음을!
 qstr_CHARGE!_Let_s_clear_|돌격! {s17}의 {s18} {s19} 쓰레기들을 쓸어버리자!
 qstr_{s14}Now_that_{s19}s|{s14} 이제 {s19}들은 곰 사람들의 분노를 맛보게 될 것이다!
 qstr_Attack!|공격!
-qstr_You_are_attacked_by_|고블린 무리에게 습격받았다!
+; qstr_You_are_attacked_by_|You are attacked by a group of bandits!
 qstr_Holding|정지
 qstr_Following|따라와
 qstr_Charging|돌격
@@ -564,6 +564,7 @@ qstr_What_should_I_do?|난 뭘 하면 될까?
 qstr_Find_{s3}_s_whereabo|{s3}의 행방을 찾고 지금 당장{reg3?그녀:그}와 대화해보게. 행운을 비네!
 qstr_Good_to_see_the_Shad|어둠의 손에 쓰러지지 않은 모습을 보니 좋군, {playername}.
 qstr_You_are_the_one_they|당신이 간달프, 사람들이 미스란디르라 부르는 분이군요.
+; qstr_You_are_the_one_they_|You are the one they call Radagast.
 qstr_That_is_what_some_ca|그렇게 불리곤 하지. 세월에 따라 나는 다양한 이름으로 불렸으나, 어둠을 막아내지 못한다면 나를 그런 이름으로 불러줄 그 어떤 자도 남지 않게 될 걸세.
 qstr_What_do_you_mean?|무슨 말을 하시는겁니까?
 qstr_In_spite_of_their_va|그들의 용맹한 항전에도 불구하고, {s3}은 악의 힘 앞에 굴복했다. {s3}의 백성들은 산산이 흩어졌고 {s4}는 더이상 존재하지 않는다.
@@ -575,6 +576,7 @@ qstr_What_do_you_want_of_|나에게 무엇을 원하십니까, 나이든 이여?
 qstr_Just_know_that_a_Daw|새벽이 오고 있다는 것만 알아두게. 피할 수 없는. 그리고 자네가 살아서 그걸 볼 수 있게 된다면, 스스로에게 어떤 말을 할 수 있을지를 생각해보게.
 qstr_Well_met_{playername|반갑군, {s24} {playername}. 자네를 향한 내 믿음이 틀리지 않았군. 그림자의 세력은 붕괴했고 자네의 노력이 적지 않은 기여를 했어!
 qstr_Thank_you_Mithrandir|감사합니다, 미스란디르!
+; qstr_Thank_you_Radagast!|Thank you, Radagast!
 qstr_The_wizard_Saruman_i|마법사 사루만은 사라졌고 바랏 두르는 암흑의 군주와 함께 산산이 흩어졌네! 중간계의 모든 자유민들은 이 세상의 선하고 순수한 모든 것의 위협으로부터 벗어났다네. 적들은 패배했고 왕께서 귀환하셨다!
 qstr_It_was_a_long_and_bl|이 끔찍한 전쟁은 너무도 길었고 우리의 소중한 친구들은 더이상 우리와 함께 있지 않다.
 qstr_There_is_much_to_reg|후회하고 애도할 것이 많으며, 앞으로 가까운 시일 내로 재건하고 고쳐야 할 것은 더더욱 많다네. 하지만 지금 당장은, 아직 우리 곁에 함께하는 친구들과 The Last Days Of The Third Age에서 이룬 것들을 축하하세나.

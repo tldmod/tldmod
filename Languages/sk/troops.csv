@@ -887,14 +887,13 @@ trp_walker_woman_rohan_d|Rohanská dáma
 trp_walker_woman_gondor_b|Gondorská žena
 trp_walker_woman_gondor_bw|Gondorská žena
 trp_walker_woman_gondor_w|Gondorský šľachtic
-trp_ramun_the_slave_trader|Otrokár Ramun
-trp_guide|Rychlý Jimmy
-trp_galeas|Galeas
-trp_farmer_from_bandit_village|Sedliak
-trp_farmer_from_bandit_village_pl|Sedliaci
-trp_trainer_1|Tréner
-trp_trainer_2|Tréner
-trp_trainer_3|Tréner
+; trp_mirkwood_walker_1|Greenwood Elf
+; trp_mirkwood_walker_2|Greenwood Elf
+; trp_lorien_walker_1|Lothlorien Elf
+; trp_lorien_walker_2|Lothlorien Elf
+trp_dwarf_walker|Trpaslík
+; trp_beorn_walker|Peasant Man
+trp_beorn_walker_fem|Roľnícka žena
 trp_trainer_4|Tréner
 trp_trainer_gondor|Tréner
 trp_trainer_rohan|Tréner
@@ -1507,6 +1506,7 @@ trp_gandalf|Gandalf
 trp_gandalf_pl|tuzemský Gandalfovia
 trp_nazgul|Nazgul
 trp_nazgul_pl|Skrotený Nazgul
+; trp_radagast|Radagast
 trp_barman|Barman
 trp_elder|Starosta mesta
 trp_gear_merchant|Zbrojmajster
@@ -1524,8 +1524,8 @@ trp_uruk_hai_sentry|Uruk-haiská stráž
 trp_uruk_hai_sentry_pl|uruk-haiská stráž
 trp_black_numenorean_sorcerer|Čierno-númenorejský černokňažník
 trp_black_numenorean_sorcerer_pl|Čierno-númenorejský černokňažník
-trp_black_numenorean_acolyte|Čierno-númenorejský pomocník
-trp_black_numenorean_acolyte_pl|Čierno-númenorejský pomocník
+; trp_evil_priest|Evil Priest
+; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|Vlčí jazdec z Temnohvozdu
 trp_wolf_rider_of_mirkwood_pl|Vlčí jazdci z Temnohvozdu
 trp_warg_rider_of_mirkwood|Vročí jazdec z Temnohvozdu

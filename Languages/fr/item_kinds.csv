@@ -348,9 +348,9 @@ itm_orc_axe|Hache orque
 itm_orc_two_handed_axe|Grande hache orque
 itm_orc_throwing_axes|Haches orque de lancer
 itm_orc_bow|Arc orque
-itm_orc_shield_a|Bouclier orque
-itm_orc_shield_b|Bouclier orque
-itm_orc_shield_c|Pavois orque
+itm_orc_shield_a|Bouclier basique
+itm_orc_shield_b|Bouclier en fourrure
+itm_orc_shield_c|Pavois en fourrure
 itm_mordor_orc_shield_a|Bouclier orque du Mordor
 itm_mordor_orc_shield_b|Bouclier orque du Mordor
 itm_mordor_orc_shield_c|Bouclier orque du Mordor
@@ -435,8 +435,8 @@ itm_dun_helm_b|Capuchon en fourrure dunlandais
 itm_dun_helm_c|Grand casque dunlandais
 itm_dun_helm_d|Grand casque dunlandais
 itm_dun_helm_e|Casque à Ramures dunlandais
-itm_dun_shield_a|Bouclier dunlandais
-itm_dun_shield_b|Bouclier dunlandais
+itm_dun_shield_a|Rondache dunlandaise
+itm_dun_shield_b|Bouclier ovale dunlandais
 itm_dun_berserker|Épée de chef dunlandais
 itm_dunnish_antler_axe|Hache à manche en andouillers dunlandais
 itm_dunnish_war_axe|Hache de guerre dunlandaise

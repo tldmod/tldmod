@@ -887,14 +887,13 @@ trp_walker_woman_rohan_d|ローハンの女
 trp_walker_woman_gondor_b|ゴンドールの女
 trp_walker_woman_gondor_bw|ゴンドールの女
 trp_walker_woman_gondor_w|ゴンドールの貴族
-trp_ramun_the_slave_trader|奴隷商人ラムン
-trp_guide|クイック・ジミー
-trp_galeas|ガレアス
-trp_farmer_from_bandit_village|農民
-trp_farmer_from_bandit_village_pl|農民
-trp_trainer_1|教官
-trp_trainer_2|教官
-trp_trainer_3|教官
+; trp_mirkwood_walker_1|Greenwood Elf
+; trp_mirkwood_walker_2|Greenwood Elf
+; trp_lorien_walker_1|Lothlorien Elf
+; trp_lorien_walker_2|Lothlorien Elf
+trp_dwarf_walker|ドワーフ
+; trp_beorn_walker|Peasant Man
+trp_beorn_walker_fem|農民の女
 trp_trainer_4|教官
 trp_trainer_gondor|教官
 trp_trainer_rohan|教官
@@ -1507,6 +1506,7 @@ trp_gandalf|ガンダルフ
 trp_gandalf_pl|地元で育ったガンダルフ
 trp_nazgul|ナズグール
 trp_nazgul_pl|家畜化されたナズグール
+; trp_radagast|Radagast
 trp_barman|バーテン
 trp_elder|長老
 trp_gear_merchant|道具商
@@ -1524,8 +1524,8 @@ trp_uruk_hai_sentry|ウルク＝ハイの衛兵
 trp_uruk_hai_sentry_pl|ウルク＝ハイの衛兵
 trp_black_numenorean_sorcerer|黒きヌーメノール人の妖術師
 trp_black_numenorean_sorcerer_pl|黒きヌーメノール人の妖術師
-trp_black_numenorean_acolyte|黒きヌーメノール人の侍祭
-trp_black_numenorean_acolyte_pl|黒きヌーメノール人の侍祭
+; trp_evil_priest|Evil Priest
+; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|闇の森の狼騎兵
 trp_wolf_rider_of_mirkwood_pl|闇の森の狼騎兵
 trp_warg_rider_of_mirkwood|闇の森のワーグ騎兵

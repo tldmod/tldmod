@@ -887,14 +887,13 @@ trp_walker_woman_rohan_d|Cidadãs de Rohan
 trp_walker_woman_gondor_b|Mulher de Gondor
 trp_walker_woman_gondor_bw|Mulheres de Gondor
 trp_walker_woman_gondor_w|Nobre de Gondor
-trp_ramun_the_slave_trader|Ramun O Vendedor de Escravos
-trp_guide|Jimmy Ligeiro
-trp_galeas|Galeas
-trp_farmer_from_bandit_village|Fazendeiro
-trp_farmer_from_bandit_village_pl|Fazendeiros
-trp_trainer_1|Treinador
-trp_trainer_2|Treinador
-trp_trainer_3|Treinador
+; trp_mirkwood_walker_1|Greenwood Elf
+; trp_mirkwood_walker_2|Greenwood Elf
+; trp_lorien_walker_1|Lothlorien Elf
+; trp_lorien_walker_2|Lothlorien Elf
+trp_dwarf_walker|Anão 
+; trp_beorn_walker|Peasant Man
+trp_beorn_walker_fem|Camponesa
 trp_trainer_4|Treinador
 trp_trainer_gondor|Treinador
 trp_trainer_rohan|Treinador
@@ -1507,6 +1506,7 @@ trp_gandalf|Gandalf
 trp_gandalf_pl|Gandalves Cultivados em casa
 trp_nazgul|Nazgul
 trp_nazgul_pl|Nazgul Domesticado
+; trp_radagast|Radagast
 trp_barman|Barman
 trp_elder|Ancião Central
 trp_gear_merchant|Vendedor de Equipamento
@@ -1524,8 +1524,8 @@ trp_uruk_hai_sentry|Uruk-Hai Sentinela
 trp_uruk_hai_sentry_pl|Uruk Hai Sentinelas
 trp_black_numenorean_sorcerer|Numenoriano Negro Feiticeiro
 trp_black_numenorean_sorcerer_pl|Numenorianos Negros Feiticeiros
-trp_black_numenorean_acolyte|Numenoriano Negro Acólito
-trp_black_numenorean_acolyte_pl|Numenorianos Negros Acólitos
+; trp_evil_priest|Evil Priest
+; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|Montador de Lobo da Floresta das Trevas
 trp_wolf_rider_of_mirkwood_pl|Montadores de Lobo da Floresta das Trevas
 trp_warg_rider_of_mirkwood|Montador de Warg da Floresta das Trevas

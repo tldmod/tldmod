@@ -887,14 +887,13 @@ trp_walker_woman_rohan_d|로한 여성 주민
 trp_walker_woman_gondor_b|곤도르 여성 주민
 trp_walker_woman_gondor_bw|곤도르 여성 주민
 trp_walker_woman_gondor_w|곤도르 귀족
-trp_ramun_the_slave_trader|노예상인 라문
-trp_guide|퀵 지미
-trp_galeas|갈레아스
-trp_farmer_from_bandit_village|농부
-trp_farmer_from_bandit_village_pl|농부들
-trp_trainer_1|훈련교관
-trp_trainer_2|훈련교관
-trp_trainer_3|훈련교관
+; trp_mirkwood_walker_1|Greenwood Elf
+; trp_mirkwood_walker_2|Greenwood Elf
+; trp_lorien_walker_1|Lothlorien Elf
+; trp_lorien_walker_2|Lothlorien Elf
+trp_dwarf_walker|난쟁이
+; trp_beorn_walker|Peasant Man
+trp_beorn_walker_fem|여성 농민
 trp_trainer_4|훈련교관
 trp_trainer_gondor|훈련교관
 trp_trainer_rohan|훈련교관
@@ -1507,6 +1506,7 @@ trp_gandalf|간달프
 trp_gandalf_pl|집에서 자란 간달프
 trp_nazgul|나즈굴
 trp_nazgul_pl|길들여진 나즈굴
+; trp_radagast|Radagast
 trp_barman|술집 주인
 trp_elder|중앙 장로
 trp_gear_merchant|도구 상인
@@ -1524,8 +1524,8 @@ trp_uruk_hai_sentry|우르크-하이 경비병
 trp_uruk_hai_sentry_pl|우르크-하이 경비병
 trp_black_numenorean_sorcerer|검은 누메노르 주술사
 trp_black_numenorean_sorcerer_pl|검은 누메노르 주술사
-trp_black_numenorean_acolyte|검은 누메노르 시종
-trp_black_numenorean_acolyte_pl|검은 누메노르 시종
+; trp_evil_priest|Evil Priest
+; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|어둠숲 늑대기수
 trp_wolf_rider_of_mirkwood_pl|어둠숲 늑대기수
 trp_warg_rider_of_mirkwood|어둠숲 와르그기수

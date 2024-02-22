@@ -159,7 +159,7 @@ qstr_Accomplice_of_{s5}|Stretto Collaboratore di {s5}
 qstr_Useful_Tool_of_{s5}|Utile Strumento di {s5}
 qstr_Servant_of_{s5}|Servo di {s5}
 qstr_Unknown_to_{s5}|Sconosciuto a {s5}
-qstr_You_have_been_{reg1?|Sei stato {reg1?promosso:declassato} a {s24} ({reg0}) !
+qstr_You_have_been_{reg1?|Hai ricevuto {reg1?una promozione:un declassamento} a {s24} ({reg0}) !
 qstr_You_{reg1?earned:los|Hai {reg1?guadagnato:perso} {reg11} Punti Rango {reg12?e {reg12} Punti Influenza :}con la fazione di {s11}.
 qstr_You_{reg1?earned:lost|Hai {reg1?guadagnato:perso} {reg11} Punti Rango {reg12?e {reg12} Punti Influenza :}di {s11}.
 qstr_You_spent_{reg10}_of|Hai speso {reg10} dei tuoi Punti Influenza su {s1}, te ne restano {reg11}.
@@ -173,7 +173,7 @@ qstr_{s10}_will_soon_reas|{s10} riassegnerà a breve alcuni  {s12} delle sue tru
 qstr_Superior_orders_from|Ordini superiori da {s11} per riassegnare le truppe.
 qstr_{reg12}_{s10}_left_t|{reg12} {s10} ha lasciato la compagnia !
 qstr_Fangorn_claimed_{reg|Fangorn ha mietuto {reg0} uccisi e {reg1} feriti fra le tue linee !
-qstr_You_were_wounded_in_|Sei stato ferito nella foresta di Fangorn !
+qstr_You_were_wounded_in_|Hai subito ferite nella foresta di Fangorn !
 qstr_{s1}_of_{s3}_was_def|{s1} di {s3} ha subito una sconfitta in battaglia.
 qstr_{s2}_have_razed_{s1}|{s2} ha razziato {s1} !
 qstr_Left_for_dead_but_mi|Creduto morto ma miracolosamente sopravvissuto: {reg1?{reg1} tempo {reg2?s:}:MAI}
@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|Morte agli intrusi sulle terre di {s16} !
 qstr_CHARGE!_Let_s_clear_|CARICA ! Ripuliamo {s17} dalla feccia {s18} {s19} !
 qstr_{s14}Now_that_{s19}s|{s14} Ora la feccia {s19} assaggerà la furia della gente orso !
 qstr_Attack!|Attacco ! 
-qstr_You_are_attacked_by_|Sei stato attacato da un gruppo di goblins !
+qstr_You_are_attacked_by_|Subisci l'attacco di un gruppo di banditi !
 qstr_Holding|Mantenere
 qstr_Following|Seguire
 qstr_Charging|Caricare
@@ -531,11 +531,11 @@ qstr_News_has_arrived_tha|Giunge notizia secondo cui {s1} di {s2} ha trovato la 
 qstr_{s1}_s_Burial_Mound|Tumulo funebre di {s1}
 qstr_{s1}_s_Funeral_Pyre|Pira funeraria di {s1}
 qstr_{s1}_is_logged_as_de|{s1} è annotato come deceduto
-qstr_You_have_been_discov|Sei stato scoperto prima di scalare le mura.
+qstr_You_have_been_discov|Ti hanno scoperto prima che scalassi le mura.
 qstr_The_enemy_is_coming_|Il nemico arriva in forze, devi ritirarti !
 qstr_Scout_this_area_alon|Esplora quest'area da solo e incontra i tuoi uomini al di là di essa.
 qstr_Be_stealthy_but_elim|Sii furtivo ma elimina rapidamente ogni minaccia !
-qstr_You_are_spotted_by_a|Sei stato scoperto da una pattuglia !
+qstr_You_are_spotted_by_a|Una pattuglia ti scopre !
 qstr_Eliminate_them_befor|Eliminali prima che diano l'allarme !
 qstr_You_have_reached_the|Hai raggiunto i sotterranei !
 qstr_Eliminate_the_guards|Elimina le guardie e libera i tuoi uomini !
@@ -544,11 +544,11 @@ qstr_Gondor_takes_a_capti|Gondor ha preso un prigioniero.
 qstr_Rohan_takes_a_captiv|Rohan ha preso un prigioniero.
 qstr_Mordor_takes_a_capti|Mordor ha preso un prigioniero.
 qstr_Isengard_takes_a_cap|Isengard ha preso un prigioniero.
-qstr_You_were_grievously_|Sei stato ferito terribilmente e il tuo corpo è stato gettato fra i morti. Cogliendo il momento adatto sei riuscito a scappare superando il muro, ma i nemici potrebbero aver notato i tuoi movimenti, meglio andarsene alla svelta da qui.
-qstr_You_were_grievously_w|Sei stato ferito in maniera preoccupante. I tuoi uomini sono riusciti a trascinarti lontano, ma hanno subito terribili perdite nell'azione. 
-qstr_You_were_grievously_wo|Sei stato ferito in maniera preoccupante. I tuoi uomini sono riusciti a trascinarti lontano ma hanno subito terribili perdite durante l'azione. Come se non bastasse, alcuni compagni sono stati catturati e condotti a {s2}.
-qstr_You_were_grievously_wou|Sei stato ferito in maniera preoccupante. I tuoi uomini sono riusciti a trascinarti lontano dal combattimento, ma sfortunatamente lo stregone è riuscito a scappare.
-qstr_You_were_grievously_woun|Sei stato ferito terribilmente e il tuo corpo è stato gettato fra i morti. Cogliendo il momento adatto sei riuscito a scappare, ma sfortunatamente lo stregone è riuscito a fuggire.
+qstr_You_were_grievously_|Hai subito terribili ferite, il tuo corpo è stato gettato fra i cadaveri. Cogliendo il momento adatto riesci a fuggire scavalcando un muro, ma i nemici potrebbero aver notato i tuoi movimenti, meglio andarsene alla svelta da qui.
+qstr_You_were_grievously_w|Hai ferite preoccupanti. I tuoi uomini sono riusciti a trascinarti lontano, ma hanno subito terribili perdite nell'azione. 
+qstr_You_were_grievously_wo|Hai ferite preoccupanti. I tuoi uomini sono riusciti a trascinarti lontano ma hanno subito terribili perdite durante l'azione. Come se non bastasse, alcuni compagni sono stati catturati e condotti a {s2}.
+qstr_You_were_grievously_wou|Hai ferite preoccupanti. I tuoi uomini sono riusciti a trascinarti lontano dal combattimento, ma sfortunatamente lo stregone è riuscito a scappare.
+qstr_You_were_grievously_woun|Hai subito terribili ferite, il tuo corpo è stato gettato fra i cadaveri. Cogliendo il momento adatto riesci a fuggire, ma sfortunatamente anche lo stregone si è dato alla fuga.
 qstr_Some_of_your_compani|Alcuni dei tuoi compagni stanno soffrendo per delle vecchie ferite.
 qstr_Item_you_just_equipp|L'oggetto equipaggiato non è adatto a personaggi di questa razza e sarà subito riposto nell'inventario del giocatore^^Assicurati che il tuo equipaggiamento abbia spazio per l'oggetto, o sarà perso per sempre.
 qstr_Inappropriate_equipm|Equipaggiamento inappropriato.
@@ -564,6 +564,7 @@ qstr_What_should_I_do?|Cosa dovrei fare ?
 qstr_Find_{s3}_s_whereabo|Scopri immediatamente dove si trova {s3} e parla con {reg3?lei:lui} . Buona Fortuna !
 qstr_Good_to_see_the_Shad|È un sollievo vedere che l'Ombra non è ancora riuscita a piegarti, {playername}.
 qstr_You_are_the_one_they|Tu sei quello che chiamano Gandalf o Mithrandir.
+qstr_You_are_the_one_they_|Tu sei colui che chiamano Radagast.
 qstr_That_is_what_some_ca|Quello è il nome con cui alcuni mi chiamano. Nel tempo mi hanno dato nomi diversi, ma a meno che l'Oscurità non sia fermata, presto potrebbe non rimanere nessuno a chiamarmi in alcun modo.
 qstr_What_do_you_mean?|Cosa intendi dire ?
 qstr_In_spite_of_their_va|Nonostante una strenua difesa, {s3} è stata travolta dalle forze del male. Il popolo di {s3} è allo sbando e il buon {s4} non esiste più.
@@ -575,6 +576,7 @@ qstr_What_do_you_want_of_|Che vuoi da me, vecchio ?
 qstr_Just_know_that_a_Daw|Sappi solo che l'Alba è in arrivo. È inevitabile. E dovresti essere ancora in vita per poterla vedere, pensa cosa dovrai dire a tua discolpa allora.
 qstr_Well_met_{playername|Ben incontrato, {playername}, {s24}. La mia fiducia nei tuoi confronti non era mal riposta. La potenza delle forze dell'Ombra è in frantumi e i tuoi sforzi hanno avuto un ruolo non indifferente in tutto questo !
 qstr_Thank_you_Mithrandir|Grazie, Mithrandir !
+qstr_Thank_you_Radagast!|Ti ringrazio, Radagast !
 qstr_The_wizard_Saruman_i|Saruman non c'è più e Barad Dur è stata ridotta in polvere insieme al suo Signore Oscuro ! Tutte le popolazioni della Terra di Mezzo sono alleviate dalla minaccia che ha quasi cancellato quanto c'era di buono in questo mondo. Il nemico è sconfitto e il Re è tornato !
 qstr_It_was_a_long_and_bl|È stata una lunga e sanguinosa guerra e molti dei nostri più cari amici non sono più con noi.
 qstr_There_is_much_to_reg|C'è molto da rimpiangere e su cui versare lacrime, e ancora tanto da ricostruire e riparare nei giorni che verranno. Ma per adesso, cerchiamo di gioire con gli amici che sono ancora con noi e festeggiamo quanto abbiamo raggiunto negli ultimi giorni della terza era.
@@ -749,7 +751,7 @@ qstr_Your_ability_to_chan|La tua abilità di mutaforma si è manifestata, da ora
 qstr_You_change_back_to_h|Torni alla forma umana...
 qstr_Refill_Ammunition|Rifornisci Munizioni
 qstr_Your_mount_stumbles!|Il tuo animale incespica ! Sembra sia zoppo.
-qstr_Bitten_by_your_own_w|Sei stato morso dal tuo stesso Warg !
+qstr_Bitten_by_your_own_w|Hai ricevuto un morso dal tuo stesso Warg !
 qstr_You_weigh_too_much_f|Pesi troppo per un pony !
 qstr_Your_mount_rears_ref|La bestia s'impenna, rifiuta di obbedire ai tuoi comandi !
 qstr_Cannot_Change_Camera|Non puoi cambiare la Modalità Camera mentre sei in Prima Persona
@@ -1053,7 +1055,7 @@ qstr_Your_forces_are_buil|La tua armata sta costruendo una torre d'assedio. Si s
 qstr_You_are_ready_to_att|Sei pronto ad attaccare le mura in qualunque momento.
 qstr_The_siege_tower_is_b|La torre d'assedio è costruita e pronta per assaltare
 qstr_As_a_last_defensive_|Come ultimo sforzo difensivo, vi ritirate nella sala principale del castello. Tu e i soldati rimanenti tenterete una resistenza disperata qui. Se sarete sconfitti, non ci sarà un'altra possibilità.
-qstr_You_ve_been_driven_a|Sei stato allontanato dalle mura. Adesso gli attaccanti si stanno aggirando per le strade. Se riesci a sconfiggerli, potresti forse svoltare le sorti della battaglia e salvare il giorno
+qstr_You_ve_been_driven_a|Ti hanno respinto dalle mura. Adesso gli attaccanti si stanno aggirando per le strade. Se riesci a sconfiggerli, potresti forse svoltare le sorti della battaglia.
 qstr_You_ve_breached_the_|Hai oltrepassato le mura della città, ma i difensori tenacemente continuano a resistere per le strade ! Dovete sconfiggere loro prima di poter attaccare il torrione nel cuore della città.
 qstr_The_town_centre_is_y|Il centro dell'insediamento è tuo, ma i difensori rimanenti si sono ritirati al castello. Dovrà cadere prima che tu completi la tua vittoria
 qstr_The_remaining_defende|I difensori restanti si sono ritirati nel castello come ultima difesa. Devi entrare e distruggere ogni resistenza rimanente.
@@ -1121,7 +1123,7 @@ qstr_You_have_a_good_chan|Hai buone probabilità di eludere le guardie e inflitr
 qstr_You_may_have_a_chanc|Potresti avere la possibilità di eludere le guardie.
 qstr_You_will_probably_ha|Probabilmente dovrai scontrarti con le guardie.
 qstr_You_wait_for_darknes|Attendi la notte per passare inosservato...
-qstr_You_are_quickly_disc|Sei stato velocemente scoperto dal nemico.
+qstr_You_are_quickly_disc|Il nemico ti scopre rapidamente.
 qstr_You_advance_stealthi|Avanzi di nascosto lontano nella foresta.
 qstr_You_have_evaded_the_|Hai evitato le pattuglie e ti sei arrampicato verso le rovine !
 qstr_You_have_found_the_s|Hai trovato lo stregone !
@@ -1252,7 +1254,7 @@ qstr_Well_just_look_aroun|Beh guardati attorno, a che ti servono degli screensho
 qstr_Say_cheese!|Sorridi !
 qstr_Why_did_you_make_mod|Perché avete reso l'installazione della mod così complessa ?
 qstr_Well_if_you_are_here|Bene, se sei arrivato fin qui e mi stai parlando, allora hai RTFM dopotutto
-qstr_You_just_got_windyfl|Sei appena stato windyflorato !
+qstr_You_just_got_windyfl|Ti hanno windyflorato !
 qstr_Merry|Merry
 qstr_Pippin|Pipino
 qstr_the_Citadel|La Cittadella
@@ -1283,7 +1285,7 @@ qstr_I_am_suffering_from_{s1|Sto soffrendo per {s1}, {s2} e {s3} e {s4}.
 qstr_I_don_t_have_any_ser|Non ho nessuna ferita grave, ti ringrazio.
 qstr_Good_day_to_you.|Buona giornata a te.
 qstr_Ah_it_s_you_again._G|Ah, sei tu di nuovo. Arrivederci.
-qstr_My_apologies_if_I_wa|Mi scuso se prima sono stato rude. Dimmi, qual'era la tua storia?
+qstr_My_apologies_if_I_wa|Mi scuso per i modi rudi che ho usato in precedenza. Dimmi, qual'era la tua storia?
 qstr_I_was_reconsidering_|Stavo ripensando alla nostra ultima conversazione. Qual'era la tua storia.. Puoi ricordarmela ?
 qstr_Zigrphel_gained_{reg|Zigûrphel  ha guadagnato {reg78} punti d'esperienza.
 qstr_Greetings_{s23}_{s24|Salve, {s23}, {s24}.
@@ -1364,7 +1366,7 @@ qstr_{s13}_asked_you_to_g|{s13} ti ha chiesto di raccogliere {reg3} unità di {s
 qstr_Moreover_should_you_|Inoltre, se dovessi diventare {s24}, avrai accesso al mio Consiglio di Guerra, dove potrai prendere decisioni che influenzeranno il corso della nostra campagna. Per il momento, come {s25}, seguici e resta in zona. Ci sposteremo presto.
 qstr_For_the_moment_just_|Per il momento, seguici e resta nelle vicinanze. Ci muoveremo presto.
 qstr_{s9}_asked_you_to_sc|{s9} ti ha chiesto di esplorare {s13}, {s14} and {s15}, e riportargli le informazioni.
-qstr_You_have_been_most_h|Sei stato di grande aiuto, {playername}. I miei ringraziamenti.
+qstr_You_have_been_most_h|Hai prestato un grande aiuto, {playername}. I miei ringraziamenti.
 qstr_You_are_a_good_serva|Sei un buon servitore, {playername}. Continua così.
 qstr_Superb_work_{playern|Che lavoro superbo, {playername}. Ammiro il tuo spirito di sacrificio.
 qstr_Your_efficiency_is_p|La tua efficienza è piacevole, {playername}. Continua così ed arriverai lontano.
@@ -1515,7 +1517,7 @@ qstr_{s9}_asked_you_to_def|{s9} ti ha chiesto di difendere un villaggio sotto at
 qstr_{s9}_asked_you_to_ra|{s9} ti ha chiesto di assalire un villaggio nei pressi di {s1}.
 qstr_These_soldiers_may_w|Questi soldati potrebbero di sicuro dare la svolta ai miei piani, {playername}. Sono certo che li hai addestrati bene. I miei ringraziamenti e complimenti vanno a te.
 qstr_I_wish_you_had_train|Avrei preferito che tu li avessi addestrati tutti, {playername}. Ma in questi tempi malvagi, prenderò con gratitudine tutto quello che potrai offrire.
-qstr_Good_work_in_shaping|Ottimo lavoro nell' addestramento di quelle reclute, {playername}, sei stato utilissimo. Fiduciosamente dureranno di piu' dell' ultima volta, ma torna a trovarmi se non lo fanno.
+qstr_Good_work_in_shaping|Ottimo lavoro nell' addestramento di quelle reclute, {playername}, il tuo aiuto è stato prezioso. Ho fiducia che dureranno piu' dell' ultima volta, ma torna a trovarmi se ciò non avvenisse.
 qstr_Is_that_all_you_coul|È questo tutto quello che puoi fare, {playername} ? Questo difficilmente potrà rimpiazzare le perdite di ieri. Dalli a me !
 qstr_Well_the_soldiers_ar|Bene, i soldati sono sotto il tuo comando. Sono certo che ne avrai cura.
 qstr_Well_you_may_do_as_y|Bene, fai come vuoi. Io ed i miei compagni possiamo sempre diventare piu' tosti se necessario.
@@ -1558,8 +1560,8 @@ qstr_Take_these_warriors_|Prendi questi guerrieri, affinché la tua orda possa c
 qstr_One_last_thing_{play|Un'ultima cosa, {playername}. In una terra piena di traditori e rivali, sei sempre stato un vero alleato.
 qstr_Wait_{playername}._W|Aspetta, {playername}. Quando ci siamo incontrati ho percepito in te un rivale, ma ora capisco che mi sbagliavo.
 qstr_Take_these_warriors_a|Prendi questi guerrieri e usali per abbattere i nostri nemici.
-qstr_Before_you_leave_{pl|Prima di partire, {playername}, sappi che sei sempre stato un buon amico per me.
-qstr_Wait_{playername}._I_|Aspetta, {playername}. Non ti conosco bene quanto vorrei, ma finora sei stato un buon amico.
+qstr_Before_you_leave_{pl|Prima di partire, {playername}, sappi che la tua amicizia è sempre stata imporante per me.
+qstr_Wait_{playername}._I_|Aspetta, {playername}. Non ti conosco bene quanto vorrei, ma finora hai dato mostra di essere una persona affidabile.
 qstr_Allow_me_to_repay_yo|Permettimi di ripagarti fornendoti delle truppe.
 qstr_Wait_{playername}._C|Aspetta, {playername}. Servi capaci come te e i tuoi guerrieri meritano il miglior equipaggiamento.
 qstr_Halt_{playername}._It|Fermati, {playername}. È vergognoso che i miei servitori usino equipaggiamenti così scadenti.
@@ -1568,7 +1570,7 @@ qstr_Before_you_go_{playe|Prima che tu vada, {playername}. I grandi guerrieri co
 qstr_Wait_{playername}._Y|Aspetta, {playername}. Il tuo esercito si è comportato bene, ma penso che potreste fare di meglio con un equipaggiamento superiore.
 qstr_Take_this_{s22}._I_h|Prendi questo {S22}. Non ne ho bisogno.
 qstr_Just_a_moment_{playe|Solo un momento, {playername}. Eroi come te e i tuoi compagni sono degni delle migliori armi, armature e cavalli.
-qstr_Wait_{playername}._Yo|Aspetta, {playername}. Sei stato un abile comandante nello sforzo bellico. Penso sia ora che tu abbia un equipaggiamento migliore.
+qstr_Wait_{playername}._Yo|Aspetta, {playername}. Hai mostrato le tue abilità come comandante nello sforzo bellico. Penso sia ora che tu abbia un equipaggiamento migliore.
 qstr_Accept_this_{s22}_ma|Accetta questo {s22}, possa essere di aiuto per te e i tuoi compagni.
 qstr_the_Dwarves_so_that_|i Nani, se attraversi Erebor o le Colline di Ferro, puoi tentare di armarti con il leggendario equipaggiamento nanico.
 qstr_Gondor_so_that_if_yo|Gondor, se attraversi le loro lande, puoi tentare di acquistare alcune delle loro famose armature.

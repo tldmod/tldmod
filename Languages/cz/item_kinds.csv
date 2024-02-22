@@ -348,9 +348,9 @@ itm_orc_axe|Skřetí sekera
 itm_orc_two_handed_axe|Velká skřetí sekera
 itm_orc_throwing_axes|Skřetí vrhací sekery
 itm_orc_bow|Skřetí luk
-itm_orc_shield_a|Skřetí štít
-itm_orc_shield_b|Skřetí štít
-itm_orc_shield_c|Skřetí pavéza
+; itm_orc_shield_a|Simple Shield
+; itm_orc_shield_b|Fur Shield
+; itm_orc_shield_c|Fur Tower Shield
 itm_mordor_orc_shield_a|Mordorský skřetí štít
 itm_mordor_orc_shield_b|Mordorský skřetí štít
 itm_mordor_orc_shield_c|Mordorský skřetí štít
@@ -435,8 +435,8 @@ itm_dun_helm_a|Dunlandská vlčí čapka
 itm_dun_helm_c|Dunlandská vysoká čapka
 itm_dun_helm_d|Dunlandská vysoká čapka
 itm_dun_helm_e|Dunlandská helma s parohy
-itm_dun_shield_a|Dunlandský štít
-itm_dun_shield_b|Dunlandský štít
+; itm_dun_shield_a|Dunnish Roundshield
+; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|Dunlandský velitelský meč
 itm_dunnish_antler_axe|Dunlandská parohová sekera
 itm_dunnish_war_axe|Dunlandská válečná sekera

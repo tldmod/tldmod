@@ -348,9 +348,9 @@ itm_orc_axe|Орочий топор
 itm_orc_two_handed_axe|Большой орочий топор
 itm_orc_throwing_axes|Орочьи метательные топоры
 itm_orc_bow|Орочий лук
-itm_orc_shield_a|Орочий щит
-itm_orc_shield_b|Орочий щит
-itm_orc_shield_c|Орочий ростовой щит
+itm_orc_shield_a|Простой щит
+itm_orc_shield_b|Меховой щит
+itm_orc_shield_c|Меховой башенный щит
 itm_mordor_orc_shield_a|Мордорский орочий щит
 itm_mordor_orc_shield_b|Мордорский орочий щит
 itm_mordor_orc_shield_c|Мордорский орочий щит
@@ -435,8 +435,8 @@ itm_dun_helm_b|Дунландская меховая шапка
 itm_dun_helm_c|Дунландский высокий шлем
 itm_dun_helm_d|Дунландский высокий шлем
 itm_dun_helm_e|Дунландский Олений Шлем
-itm_dun_shield_a|Дунландский щит
-itm_dun_shield_b|Дунландский щит
+; itm_dun_shield_a|Dunnish Roundshield
+; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|Меч дунландского вождя
 itm_dunnish_antler_axe|Дунландский топор из оленьего рога
 itm_dunnish_war_axe|Дунландский боевой топор

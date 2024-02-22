@@ -348,9 +348,9 @@ itm_orc_axe|Orkovska Sekira
 ; itm_orc_two_handed_axe|Orc Great Axe
 itm_orc_throwing_axes|Orkovska Sekira za Bacanje
 itm_orc_bow|Orkovski Luk
-itm_orc_shield_a|Orkovski Štit
-itm_orc_shield_b|Orkovski Štit
-; itm_orc_shield_c|Orc Tower Shield
+; itm_orc_shield_a|Simple Shield
+; itm_orc_shield_b|Fur Shield
+; itm_orc_shield_c|Fur Tower Shield
 itm_mordor_orc_shield_a|Štit Mordorskog Orka
 itm_mordor_orc_shield_b|Štit Mordorskog Orka
 itm_mordor_orc_shield_c|Štit Mordorskog Orka
@@ -435,8 +435,8 @@ itm_dun_helm_a|Dunska Vuk Kaciga
 itm_dun_helm_c|Dunska Velika Kaciga
 itm_dun_helm_d|Dunska Velika Kaciga
 ; itm_dun_helm_e|Dunnish Antler Helm
-itm_dun_shield_a|Dunski Stit
-itm_dun_shield_b|Dunski Stit
+; itm_dun_shield_a|Dunnish Roundshield
+; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|Mac Plemenskog Vodlje Dunlanda
 itm_dunnish_antler_axe|Dunska Sekira Sa Rogovima
 itm_dunnish_war_axe|Dunska Ratna Sekira

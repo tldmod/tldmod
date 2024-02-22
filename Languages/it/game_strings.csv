@@ -114,7 +114,7 @@ str_entrance_to_town_forbidden|Le guardie cittadine vigilano attentamente, sembr
 str_sneaking_to_town_impossible|Le guardie cittadine sono allertate. Non sarai in grado di intrufolarti in città nemmeno con un ottimo travestimento.
 str_battle_won|Hai vinto la battaglia !
 str_battle_lost|Hai perso la battaglia !
-str_player_down|Sei stato messo fuori combattimento, ma le tue truppe continuano a battersi !
+str_player_down|Ti hanno messo fuori combattimento, ma le tue truppe continuano a battersi !
 str_attack_walls_success|Al termine di una sanguinosa battaglia, i tuoi valorosi soldati conquistano le mura sconfiggendo il nemico !
 str_attack_walls_failure|I tuoi soldati cadono a frotte mentre provano ad assaltare le mura, quei pochi che sopravvivono si danno alla fuga, non li rivedrai mai più.
 str_attack_walls_continue|Si scatena una sanguinosa battaglia ed entrambi gli eserciti si battono con egual valore. Nonostante gli sforzi delle tue truppe, il castello rimane in mano nemica.
@@ -519,7 +519,7 @@ str_squander_money|sperpera i denari datici con fiducia
 str_murder_merchant|facci coinvolgere in assassinii a sangue freddo
 str_round_up_serfs|raduna servi per conto di qualche nobile
 str_battle_fate_1|Siamo stati separati nella foga della battaglia
-str_battle_fate_2|Sono stato ferito e scambiato per morto
+str_battle_fate_2|Mi hanno ferito e pensavano che fossi un cadavere.
 str_battle_fate_3|Un colpo nemico mi ha fatto perdere i sensi
 str_battle_fate_4|Ero in ostaggio, per un riscatto
 str_battle_fate_5|Ero in catene, ma ho avuto modo di fuggire
@@ -588,7 +588,7 @@ str_npc15_intro_response_2|Hmmf. Tieni lontane quelle luride zampette, Snaga.
 str_npc16_intro_response_2|Fatti gli affari tuoi !
 str_npc17_intro_response_2|Sì, i boschi sono incantevoli, ma ora devo muovermi.
 str_npc1_backstory_a|Tu vieni in tempi difficili, amico. Ithilien brulica di esploratori nemici e razziatori, e alcuni hanno visto grandi orde di orchi in marcia. Stiamo provando ad impedire a queste creature di attraversare il fiume e ho comandato un gruppo di abili Raminghi per riuscirci. Il mio Capitano Faramir è motivato e io non mi preoccupo dell'Ombra che incombe su di noi.
-str_npc2_backstory_a|Ah, sei stato gentile a preoccuparti di me. Sono appena stato assegnato come guardia del Sovrintendente. Un nobile compito, ma se posso dirlo, non molto esaltante.
+str_npc2_backstory_a|Ah, sei gentile a preoccuparti per me. Sono appena stato assegnato come guardia del Sovrintendente. Un nobile compito, ma se posso dirlo, non molto esaltante.
 str_npc3_backstory_a|Beh, il mio elmo sembra diventare sempre più piccolo ogni minuto, e il terreno sembra fragile come un foglio di carta. Ah, se solo non avessi bevuto tutta quella birra la scorsa notte - di solito reggo bene le bevute, devo aver tracannato della birra d'orco avariata.
 str_npc4_backstory_a|Il mio nome è Galmyne, e il mio compito è conoscere le tue intenzioni, {playername}. Lascia che ti spieghi il perché.
 str_npc5_backstory_a|Forse hai sentito parlare delle mie gesta nelle battaglie passate e dimenticate dagli Uomini mortali. Nel pieno di questa guerra, gli Eldar sono nuovamente in pericolo, ma questa... sarà l'ultima guerra.
@@ -605,7 +605,7 @@ str_npc15_backstory_a|Sono Bolzog il Dotato, Riparatore d'Ossa, Chiuditore di Ta
 str_npc16_backstory_a|Beh, veramente dovrebbe essere lo straniero a dichiararsi per primo. Nondimeno, dirò che sono Varfang dei Balchoth... Posso immaginare che tu non abbia ancora ascoltato le canzoni e i racconti che parlano dei Balchoth, altrimenti udirne il solo nome avrebbe dovuto mettere alla prova il tuo coraggio e riempire il tuo cuore di terrore.
 str_npc17_backstory_a|Mi chiamano Dímborn e lavoro nella foresta. Qui è bello. Mi piacciono le foreste. Ci sono tanti alberi. A me piacciono gli alberi. Ho lavorato nelle foreste per tutta la vita, perché sono forte e perché mi piacciono gli alberi.
 str_npc1_backstory_b|Devi sapere che sono un Ramingo dell'Ithilien di discendenza e di valore Dúnedain. Ho esperienza nel seguire tracce e nell'esplorazione, le mie abilità con arco e spada sono ben note agli Orchi. Sono anche in grado di addestrare ogni anima che vorrà combattere l'Ombra che si approssima.
-str_npc2_backstory_b|Sono stato addestrato in qualità di guardiano di Minas Tirith, per mantenere l'ordine nella Città Bianca e servire il lord Sovrintendente.
+str_npc2_backstory_b|Mi hanno addestrato in qualità di guardiano di Minas Tirith, per mantenere l'ordine nella Città Bianca e servire il lord Sovrintendente.
 str_npc3_backstory_b|Sono un cavaliere dell'éored dell'Ovestfalda - sono partiti senza di me diretti ai guadi dell'Isen. So che si comporteranno in modo degno della verde bandiera, ma temo che molti fra loro non faranno ritorno.
 str_npc4_backstory_b|Ho avuto i miei natali in una nobile famiglia e ho servito Lady Éowyn come damigella d'onore da quando eravamo piccole. I nostri padri furono tanto saggi da permetterci di addestrarci con i nostri fratelli al combattimento, per diventare scudiere di Rohan.
 str_npc5_backstory_b|Lord Elrond mi ha inviato come emissario a Lord Celeborn, per avvisare che è richiesto il suo intervento in guerra in questa parte del Rhovanion.
@@ -800,7 +800,7 @@ str_npc7_morality_speech|Non ho gradito la tua decisione di {s21}. Cadere in bat
 str_npc8_morality_speech|Comandante, devo obiettare. {s21} lo trovo inutilmente crudele. Faccio quello che posso per alleviare le loro sofferenze, ma ti prego di non fare altri dispendiosi errori.
 str_npc9_morality_speech|Gli Uruk-Hai combattenti decidono mai di {s21}. Se il capo mostra poco coraggio, potrebbe trovarsi solo nel cuore della notte. Gulm ha parlato.
 str_npc15_morality_speech|Puoi pensare che Bolzog il Grande può curare tutto, {playername}, ma anche io ho i miei limiti ! Se continui a {s21} anche il mio talento avrà difficoltà ! Devi darmi una mano ! Non posso far risorgere i morti, se muoiono o vengono fatti a pezzi !
-str_npc1_2ary_morality_speech|Comandante, sono stato creciuto come Dúnadan, sia nel valore che nell'onore. Preferirei che noi non {s21}.
+str_npc1_2ary_morality_speech|Comandante, mi hanno cresciuto come Dúnadan, sia nel valore che nell'onore. Preferirei che noi non {s21}.
 str_npc4_2ary_morality_speech|Chiedo scusa, comandante. Le donne del mio rango possono accettare la morte, ma non il disonore. Che {s21} porta la vergogna alla mia casata e ai miei antenati.
 str_npc15_2ary_morality_speech|Hi-hi-hi ! Sei furbo, mio Signore ! Hai preso l'oro e annuendo hai detto 'si padrone'.. Ma per tutto il tempo hai progettato questo ! Hi-Hi ! Solo, dobbiamo fare attenzione, che il Grande Capo non si accorga che l'hai ingannato..
 str_npc1_personalityclash_speech|Ho già detto che odio {s11} ?
@@ -1088,7 +1088,7 @@ str_comment_you_ran_from_me_enemy_spiteful|L'ultima volta che ci siamo incontrat
 str_comment_you_ran_from_me_enemy_chivalrous|L'ultima volta che ci siamo incontrati, sei scappato. Impara a stare in piedi e a combattere da uomo !
 str_comment_you_ran_from_me_enemy_benevolent|L'ultima volta che ti ho visto stavi scappando, speravo di non doverti incontrare ancora.
 str_comment_you_ran_from_me_enemy_coldblooded|La scorsa volta sei scappato. Fu una decisione saggia.
-str_comment_you_ran_from_me_enemy|Sei stato capace di fuggire l'ultima volta che le nostre strade si sono incrociate, ma dubito che tu possa essere ancora così fortunato.
+str_comment_you_ran_from_me_enemy|Hai avuto modo di fuggire l'ultima volta che le nostre strade si sono incrociate, ma la fortuna prima o poi finisce.
 str_comment_you_ran_from_foe_allied_chivalrous|Mi hanno detto che sei fuggito di fronte a {s54}, abbandonando i tuoi uomini. Prego che questo non sia vero, perché una simile condotta ci disonorerebbe tutti.
 str_comment_you_ran_from_foe_allied_upstanding|Dicono che sei fuggito di fronte a {s54}, abbandonando i tuoi uomini. Non credo sempre a simili voci, e so anche che situazioni estreme richiedono soluzioni estreme. Ma ti prego di avere maggior cura della tua reputazione, poiché gli uomini non combatteranno in eserciti in cui potrebbero essere abbandonati sul campo di battaglia.
 str_comment_you_ran_from_foe_allied_spiteful|Tuttavia, dicono che sei scappato da {s54} come un piccolo coniglio tremante, lasciando i tuoi uomini ad essere macellati. Ha ! Che spettacolo sarebbe stato potervi assistere !
@@ -1259,7 +1259,7 @@ str_rebellion_argument_neutral|Trovo che la tua argomentazione non sia pienament
 str_rebellion_argument_unfavorable|Trovo che la tua argomentazione non sia affatto convincente
 str_rebellion_persuasion_favorable|Hai chiarito bene la tua opinione.
 str_rebellion_persuasion_neutral|Hai esposto ragionevolmente la tua causa.
-str_rebellion_persuasion_unfavorable|Sei stato poco convincente.
+str_rebellion_persuasion_unfavorable|Le tue parole non sono state convincenti.
 str_rebellion_relation_very_favorable|Ho il più alto rispetto per la tua persona.
 str_rebellion_relation_favorable|Ti conosco e ti rispetto.
 str_rebellion_relation_neutral|Non ti conosco bene quanto vorrei.
@@ -1489,7 +1489,7 @@ str_beorn_rumor_6|Il male si insinua dalle cime delle montagne.
 str_beorn_rumor_7|La grande foresta non è più come un tempo !
 str_beorn_rumor_8|La forza dell'ascia non si trova nella lama, ma nell'impugnatura.
 str_beorn_rumor_9|Abbiamo dormito durante lo scorso inverno. Cosa ? Si, hai bisogno di mangiare molto in autunno per superare un inverno come questo.
-str_beorn_rumor_10|Gli uomini di Rohan sono nostri parenti, gli orsi sono nel nostro sangue, i goblins sono la nostra preda !
+str_beorn_rumor_10|Gli uomini di Rohan sono nostri parenti, gli orsi sono nel nostro sangue, gli orchi sono la nostra preda !
 str_beorn_rumor_11|Mutarci in orsi ? È ovvio che non possiamo. Chi ti ha detto una cosa simile ? Ha ha ha !
 str_beorn_rumor_12|Beorn era un grande uomo. No, non un uomo, un gigante !
 str_beorn_rumor_13|I migliori e più audaci guerrieri del bosco non temono le ombre della foresta. Essi possono combattere nell'oscurità bene quanto gli orchi e le altre oscenità che si aggirano tra i boschi.
@@ -1891,7 +1891,7 @@ str_trait_desc_rohan_friend|Sei diventato altamente stimato dal Re Theoden di Ro
 str_trait_title_brigand_friend|Campione Barbaro
 str_trait_desc_brigand_friend|Sei diventato altamente stimato tra le tribù Barbariche servitrici di Sauron e come risultato delle tue impressive azioni nell' arena. Ora puoi reclutare Barbari ad un costo ridotto.
 str_trait_title_blessed|Benedetto
-str_trait_desc_blessed|Senti che sei stato benedetto da poteri che giungono dall'altra parte del mare e forse da ancora più lontano.Non sai perchè sia successo o cosa potrebbe significare,ma sei certo che sia così.
+str_trait_desc_blessed|Senti la benedizione di poteri che giungono dall'altra parte del mare e forse da ancora più lontano. Non sai perchè sia successo o cosa potrebbe significare, ma senti che è così.
 str_trait_title_reverent|Riverente
 str_trait_desc_reverent|Ti sei guadagnato una reputazione di riverenza e saggezza. Uomini ed Elfi sono più propensi ad ascoltare i tuoi consigli.
 str_trait_title_merciful|Misericordioso

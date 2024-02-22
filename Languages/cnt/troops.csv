@@ -887,14 +887,13 @@ trp_walker_woman_rohan_d|洛汗少女
 trp_walker_woman_gondor_b|剛鐸女子
 trp_walker_woman_gondor_bw|剛鐸女子
 trp_walker_woman_gondor_w|剛鐸貴族
-trp_ramun_the_slave_trader|奴隸商人拉蒙
-trp_guide|機靈的吉米
-trp_galeas|蓋勒阿斯
-trp_farmer_from_bandit_village|農民
-trp_farmer_from_bandit_village_pl|農民
-trp_trainer_1|教練
-trp_trainer_2|教練
-trp_trainer_3|教練
+; trp_mirkwood_walker_1|Greenwood Elf
+; trp_mirkwood_walker_2|Greenwood Elf
+; trp_lorien_walker_1|Lothlorien Elf
+; trp_lorien_walker_2|Lothlorien Elf
+trp_dwarf_walker|矮人
+; trp_beorn_walker|Peasant Man
+trp_beorn_walker_fem|農婦
 trp_trainer_4|教練
 trp_trainer_gondor|教練
 trp_trainer_rohan|教練
@@ -1507,6 +1506,7 @@ trp_gandalf|甘道夫
 trp_gandalf_pl|自產的甘道夫
 trp_nazgul|戒靈
 trp_nazgul_pl|被馴服的戒靈
+; trp_radagast|Radagast
 trp_barman|酒保
 trp_elder|據點長者
 trp_gear_merchant|裝備商人
@@ -1524,8 +1524,8 @@ trp_uruk_hai_sentry|強獸人哨兵
 trp_uruk_hai_sentry_pl|強獸人哨兵
 trp_black_numenorean_sorcerer|黑努美諾爾巫師
 trp_black_numenorean_sorcerer_pl|黑努美諾爾巫師
-trp_black_numenorean_acolyte|黑努美諾爾侍僧
-trp_black_numenorean_acolyte_pl|黑努美諾爾侍僧
+; trp_evil_priest|Evil Priest
+; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|幽暗密林狼騎手
 trp_wolf_rider_of_mirkwood_pl|幽暗密林狼騎手
 trp_warg_rider_of_mirkwood|幽暗密林座狼騎手

@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|{s16} diyarına izinsiz girenlere ölüm!
 qstr_CHARGE!_Let_s_clear_|HÜCUUUM! Şu  {s17}'dan gelen lanet {s18} {s19} pisliklerini yeryüzünden silelim!
 qstr_{s14}Now_that_{s19}s|{s14}Şimdi {s19} pisligi ayı adamların öfkesini tadacak!
 qstr_Attack!|Saldırın!
-qstr_You_are_attacked_by_|Bir grup goblin tarafından saldırıya ugradın!
+; qstr_You_are_attacked_by_|You are attacked by a group of bandits!
 qstr_Holding|Tutuluyor
 qstr_Following|Takip ediliyor
 qstr_Charging|Saldırıyor
@@ -564,6 +564,7 @@ qstr_What_should_I_do?|Ne yapmalıyım?
 qstr_Find_{s3}_s_whereabo|Hemen {s3} adlı kişinin nerede oldugunu bulun ve {reg3?onla:onla} konuşun. İyi şanslar!
 qstr_Good_to_see_the_Shad|Karanlıgın henüz sizi yenmeyi başaramadıgını görmek güzel, {playername}.
 qstr_You_are_the_one_they|Sen Gandalf ya da Mithrandir olmalısın.
+; qstr_You_are_the_one_they_|You are the one they call Radagast.
 qstr_That_is_what_some_ca|Bazıları bana böyle seslenir.Başka zamanlarda başka şekilde çagrıldıgım da oldu.Fakat eger karanlık durmazsa bana her hangi bir şekilde seslenecek kimse kalmayacak.
 qstr_What_do_you_mean?|Ne demek istiyorsun?
 qstr_In_spite_of_their_va|Onların cesur savaşmalarına ragmen yine de {s3}, kötülük kuvvetleri tarafından bogulmuştu. {s3} 'nin insanları artık perişan durumda ve iyi {s4} artık yok.
@@ -575,6 +576,7 @@ qstr_What_do_you_want_of_|Benden ne istiyorsun, yaşlı adam?
 qstr_Just_know_that_a_Daw|Sadece Şafagın geliyor oldugunu bil. Bu kaçınılmaz. Ve bunu görmek için hayatta kalmaya çalışmalısın, o zaman bunun için kendine ne söylemen gerektigini düşün.
 qstr_Well_met_{playername|Hoş bulduk, {playername}, {s24}. Sana olan güvenim haksız yere degil. Gölgenin Kuvvetlerinin gücü kırıldı ve çabalarınız da bunun olmasında hiç de küçük bir rol oynamadı! 
 qstr_Thank_you_Mithrandir|Teşekkürler, Mithrandir!
+; qstr_Thank_you_Radagast!|Thank you, Radagast!
 qstr_The_wizard_Saruman_i|Saruman gitti ve Barad Dur karanlık Lord'la birlikte toz haline geldi! Orta Dünya'daki tüm insanlar, onların bu dünyadaki iyi ve saf olan her şeyi neredeyse yok edecek olan ölümcül tehdidinden kurtuldular. Düşman yenildi ve Kral geri döndü!
 qstr_It_was_a_long_and_bl|Bu uzun ve kanlı bir savaştı ve yakın arkadaşlarımızın çogu artık bizlerle degil.
 qstr_There_is_much_to_reg|Çok fazla pişmanlık ve yas var, önümüzdeki günlerde, yeniden inşa etmek ve onarmak için çok fazla şey var. Ancak şu an için, hala sahip oldugumuz arkadaşlarımızın degerini bilelim ve Üçüncü Çagın Son Günlerinde elde ettigimiz başarılarımızı kutlayalım.

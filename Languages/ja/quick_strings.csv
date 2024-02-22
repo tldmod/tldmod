@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|{s16}への侵入者には、 死だ!
 qstr_CHARGE!_Let_s_clear_|突撃！ {s18} {s19}のクズどもを、 {s17}から一掃するぞ！
 qstr_{s14}Now_that_{s19}s|{s14}{s19}のクズめ、 我ら熊人の怒りをたっぷり味わえ！
 qstr_Attack!|攻撃！
-qstr_You_are_attacked_by_|ゴブリンの一団に襲われました！
+; qstr_You_are_attacked_by_|You are attacked by a group of bandits!
 qstr_Holding|待機
 qstr_Following|追従
 qstr_Charging|突撃
@@ -564,6 +564,7 @@ qstr_What_should_I_do?|私は何をすればよいのでしょう？
 qstr_Find_{s3}_s_whereabo|ただちに{s3}の所在を探し、{reg3?彼女:彼}と話をするのだ。幸運を祈る！
 qstr_Good_to_see_the_Shad|おぬしがいまだ闇の力に屈していないのは幸運といえよう、 {playername}。
 qstr_You_are_the_one_they|あなたはガンダルフ、もしくはミスランディアと呼ばれている方ですね。
+; qstr_You_are_the_one_they_|You are the one they call Radagast.
 qstr_That_is_what_some_ca|そう呼ぶ者もおるな。 また違った名前で呼ぶ者もあるが、 この闇を食い止めねば、 まもなくわしを呼ぶ者すらいなくなってしまうであろう。
 qstr_What_do_you_mean?|どういう意味ですか？
 qstr_In_spite_of_their_va|勇敢な抵抗もむなしく、 {s3}は闇の力に飲み込まれてしまった。 {s3}の民は散り散りになり、 愛すべき{s4}はもうこの世にいない。
@@ -575,6 +576,7 @@ qstr_What_do_you_want_of_|ご老体、私は何をすればいいのですか？
 qstr_Just_know_that_a_Daw|夜明けがせまっているという事を知っておくのだ。 これは避けられない運命にある。 おぬしがそのときを生きて迎えられたときのために、 心の準備はしておくことだ。
 qstr_Well_met_{playername|おお、{playername}、{s24}よ。 おぬしを見込んだわしの目に、狂いはなかった。 闇の力は打ち破られたのだ。おぬしは少なからぬ働きをしてくれた！
 qstr_Thank_you_Mithrandir|ありがとうございます、ミスランディア！
+; qstr_Thank_you_Radagast!|Thank you, Radagast!
 qstr_The_wizard_Saruman_i|魔法使いサルマンは消え去り、 バラド＝ドゥーアもその闇の主とともに塵あくたとなって崩れ去った！ 中つ国の民は、 この世界の清きものをすべて飲み込まんとする脅威から開放された。 敵は打ち破られ、 王は戻ったのだ！
 qstr_It_was_a_long_and_bl|多くの犠牲を払った、 長い戦いでした。 我々の親しい友たちも、 その多くが命を落としてしまいました。
 qstr_There_is_much_to_reg|後悔や嘆き悲しむべきことは尽きず、 それにもまして、 これからは過酷な修復と再建の日々が始まる。 だが、 とりあえずは、 共に戦い抜いた友たちと喜びを分かち合い、 この時代の最後の日々を勝利して迎えられたことを祝おうではないか。

@@ -348,9 +348,9 @@ itm_orc_axe|半兽人斧
 itm_orc_two_handed_axe|半兽人双手斧
 itm_orc_throwing_axes|半兽人掷斧
 itm_orc_bow|半兽人弓
-itm_orc_shield_a|半兽人盾
-itm_orc_shield_b|半兽人盾
-itm_orc_shield_c|半兽人塔盾
+; itm_orc_shield_a|Simple Shield
+; itm_orc_shield_b|Fur Shield
+; itm_orc_shield_c|Fur Tower Shield
 itm_mordor_orc_shield_a|魔多半兽人盾
 itm_mordor_orc_shield_b|魔多半兽人盾
 itm_mordor_orc_shield_c|魔多半兽人盾
@@ -435,8 +435,8 @@ itm_dun_helm_a|丹尼斯狼皮帽
 itm_dun_helm_c|丹尼斯高盔
 itm_dun_helm_d|丹尼斯高盔
 itm_dun_helm_e|丹尼斯鹿角盔
-itm_dun_shield_a|丹尼斯盾
-itm_dun_shield_b|丹尼斯盾
+; itm_dun_shield_a|Dunnish Roundshield
+; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|登兰德酋长剑
 itm_dunnish_antler_axe|丹尼斯鹿角斧
 itm_dunnish_war_axe|丹尼斯战斧

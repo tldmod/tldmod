@@ -887,14 +887,13 @@ trp_walker_woman_rohan_d|Maid aus Rohan
 trp_walker_woman_gondor_b|Frau aus Gondor
 trp_walker_woman_gondor_bw|Frau aus Gondor
 trp_walker_woman_gondor_w|Edelmann aus Gondor
-trp_ramun_the_slave_trader|Ramun der Sklavenhändler
-trp_guide|Schneller Jimmy
-trp_galeas|Galeas
-trp_farmer_from_bandit_village|Bauer
-trp_farmer_from_bandit_village_pl|Bauern
-trp_trainer_1|Ausbilder
-trp_trainer_2|Ausbilder
-trp_trainer_3|Ausbilder
+; trp_mirkwood_walker_1|Greenwood Elf
+; trp_mirkwood_walker_2|Greenwood Elf
+; trp_lorien_walker_1|Lothlorien Elf
+; trp_lorien_walker_2|Lothlorien Elf
+trp_dwarf_walker|Ein Zwerg
+; trp_beorn_walker|Peasant Man
+trp_beorn_walker_fem|Einfache Frau
 trp_trainer_4|Ausbilder
 trp_trainer_gondor|Ausbilder
 trp_trainer_rohan|Ausbilder
@@ -1507,6 +1506,7 @@ trp_gandalf|Gandalf
 trp_gandalf_pl|Selbstangebaute Gadalfs
 trp_nazgul|Nazgul
 trp_nazgul_pl|Gezähmte Nazgul
+; trp_radagast|Radagast
 trp_barman|Wirt
 trp_elder|Ältester
 trp_gear_merchant|Ausrüstungshändler
@@ -1524,8 +1524,8 @@ trp_uruk_hai_sentry|Uruk-Hai-Wachposten
 trp_uruk_hai_sentry_pl|Uruk-Hai-Wachposten
 trp_black_numenorean_sorcerer|Zauberer der Schwarzen Numenorer
 trp_black_numenorean_sorcerer_pl|Zauberer der Schwarzen Numenorer
-trp_black_numenorean_acolyte|Akolyth der Schwarzen Numenorer
-trp_black_numenorean_acolyte_pl|Akolythen der Schwarzen Numenorer
+; trp_evil_priest|Evil Priest
+; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|Wolfsreiter aus dem Düsterwald
 trp_wolf_rider_of_mirkwood_pl|Wolfsreiter aus dem Düsterwald
 trp_warg_rider_of_mirkwood|Wargreiter aus dem Düsterwald
