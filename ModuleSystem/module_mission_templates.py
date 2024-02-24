@@ -2419,7 +2419,7 @@ mission_templates = [ # not used in game
         (replace_scene_props, "spr_troop_rider", "spr_empty"),	
         (replace_scene_props, "spr_troop_civilian_walker", "spr_empty"),
         (replace_scene_props, "spr_troop_messenger", "spr_empty"),
-        (try_for_range, ":prop", spr_troop_civilian_lying, spr_troop_civilian_cheer+1), #remove town agents
+        (try_for_range, ":prop", spr_troop_civilian_lying, spr_troop_priest+1), #remove town agents
             (replace_scene_props, ":prop", "spr_empty"),
         (try_end),        
       ]),
@@ -2499,7 +2499,7 @@ mission_templates = [ # not used in game
             (replace_scene_props, "spr_troop_rider", "spr_empty"),	
             (replace_scene_props, "spr_troop_civilian_walker", "spr_empty"),
             (replace_scene_props, "spr_troop_messenger", "spr_empty"),
-                    (try_for_range, ":prop", spr_troop_civilian_lying, spr_troop_civilian_cheer+1), #remove town agents
+                    (try_for_range, ":prop", spr_troop_civilian_lying, spr_troop_priest+1), #remove town agents
             (replace_scene_props, ":prop", "spr_empty"),
         (try_end),
 			]),
@@ -6551,7 +6551,7 @@ mission_templates = [ # not used in game
 		(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"), # (CppCoder) These are what cause the "unable to finish" bugs.
 		(replace_scene_props, "spr_troop_human_prisoner", "spr_empty"),
 		(replace_scene_props, "spr_troop_troll", "spr_empty"),
-        (try_for_range, ":prop", spr_troop_civilian_lying, spr_troop_civilian_cheer+1), #remove town agents
+        (try_for_range, ":prop", spr_troop_civilian_lying, spr_troop_priest+1), #remove town agents
             (replace_scene_props, ":prop", "spr_empty"),
         (try_end),
         ]),
