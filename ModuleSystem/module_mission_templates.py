@@ -3963,7 +3963,21 @@ mission_templates = [ # not used in game
       (store_random_in_range, ":ran_time", 5, 15),
       (ge, ":mission_time_b", ":ran_time"), #Random time between 10 - 20 secs
       (reset_mission_timer_b),
-      (lt,"$enemy_reinforcement_stage", 8), #up to 8 reinforcements     
+      (lt,"$enemy_reinforcement_stage", 8), #up to 8 reinforcements
+      (set_fixed_point_multiplier, 100),
+      
+      (get_player_agent_no, ":player"),
+      (agent_get_position, pos6, ":player"),
+      
+      (try_for_range, ":unused", 0, 5),
+          (store_random_in_range, ":enemy_entry", 12, 21), #This just randomizes the entry points the enemy comes from.
+          (entry_point_get_position, pos5, ":enemy_entry"),
+          (get_distance_between_positions, ":dist", pos5, pos6), #don't spawn next to player
+          (ge, ":dist", 1000),
+          (set_spawn_position, pos5),
+          (assign, ":unused", 5),
+      (try_end),
+      
       (val_add, "$enemy_reinforcement_stage", 1), 
       #This checks the faction of the quest giver.
       (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
@@ -4030,11 +4044,6 @@ mission_templates = [ # not used in game
         (assign, ":troop_pic", ":enemy_ranged_troop"),
       (try_end),
       (call_script, "script_troop_talk_presentation", ":troop_pic", 7, 0),
-
-      (store_random_in_range, ":enemy_entry", 12, 21), #This just randomizes the entry points the enemy comes from.
-      (entry_point_get_position, pos5, ":enemy_entry"),
-      (set_spawn_position, pos5), 
-      
       #This spawns the troops, coin flip on whether troops are ranged / melee, as per the above troop assignments.
       (try_for_range, ":unused", 0, ":num_enemies"),
           (store_random_in_range, ":rnd_troop", 0,100),
@@ -4156,6 +4165,22 @@ mission_templates = [ # not used in game
   (call_script, "script_count_mission_casualties_from_agents"),
   (jump_to_menu, "mnu_sea_battle_quest_results"),
   (finish_mission, 1),]),
+
+
+] + ((is_a_wb_mt==1) and [
+
+(3, 0, 0, [], [ #agent fadeout if under sea level
+   (set_fixed_point_multiplier, 100),
+    (try_for_agents, ":agent"),
+        (agent_get_position, pos1, ":agent"),
+        (position_get_z, ":height", pos1),
+        (lt, ":height", -3),
+        (agent_fade_out, ":agent"),
+    (try_end),
+    ]),
+
+  health_restore_on_kill,
+] or []) + [
  
   common_inventory_not_available, 
   common_music_situation_update,
@@ -4385,7 +4410,20 @@ mission_templates = [ # not used in game
       (store_random_in_range, ":ran_time", 5, 15),
       (ge, ":mission_time_c", ":ran_time"), #Random time between 25 - 40 secs
       (reset_mission_timer_c),
-      (lt,"$enemy_reinforcement_stage", 8),      
+      (lt,"$enemy_reinforcement_stage", 8),
+      
+      (get_player_agent_no, ":player"),
+      (agent_get_position, pos6, ":player"),
+
+      (try_for_range, ":unused", 0, 5),
+          (store_random_in_range, ":enemy_entry", 12, 21), #This just randomizes the entry points the enemy comes from.
+          (entry_point_get_position, pos5, ":enemy_entry"),
+          (get_distance_between_positions, ":dist", pos5, pos6), #don't spawn next to player
+          (ge, ":dist", 1000),
+          (set_spawn_position, pos5),
+          (assign, ":unused", 5),
+      (try_end),
+      
       (val_add, "$enemy_reinforcement_stage", 1),
       (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
       (store_faction_of_party, ":faction", ":troop"),      
@@ -4442,9 +4480,7 @@ mission_templates = [ # not used in game
         (assign, ":troop_pic", ":ally_ranged_troop"),
       (try_end),
       (call_script, "script_troop_talk_presentation", ":troop_pic", 7, 0),
-      (store_random_in_range, ":ally_entry", 2, 11),
-      (entry_point_get_position, pos4, ":ally_entry"),
-      (set_spawn_position, pos4), 
+
       (try_for_range, ":unused", 0, ":num_enemies"),
           (store_random_in_range, ":rnd_troop", 0,100),
           (le, ":rnd_troop", 50),
@@ -4480,6 +4516,22 @@ mission_templates = [ # not used in game
   (call_script, "script_count_mission_casualties_from_agents"),
   (jump_to_menu, "mnu_sea_battle_quest_results"),
   (finish_mission, 1),]),
+
+] + ((is_a_wb_mt==1) and [
+
+(3, 0, 0, [], [ #agent fadeout if under sea level
+   (set_fixed_point_multiplier, 100),
+    (try_for_agents, ":agent"),
+        (agent_get_position, pos1, ":agent"),
+        (position_get_z, ":height", pos1),
+        (lt, ":height", -3),
+        (agent_fade_out, ":agent"),
+    (try_end),
+    ]),
+
+  health_restore_on_kill,
+
+] or []) + [
  
   common_inventory_not_available, 
   common_music_situation_update,
