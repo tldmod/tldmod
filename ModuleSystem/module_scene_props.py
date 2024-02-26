@@ -193,7 +193,7 @@ scene_props = [
 ("destroy_heap",0,"destroy_heap","bo_destroy_heap", []),
   ("destroy_heap_E",0,"destroy_heap","0", []),
 ("destroy_castle_a",0,"destroy_castle_a","bo_destroy_castle_a", []),
-  ("destroy_castle_a_dwarf",0,"destroy_castle_c_dwarf","bo_destroy_castle_a", []),
+  ("destroy_castle_c_dwarf",0,"destroy_castle_c_dwarf","bo_destroy_castle_c", []),
 ("destroy_castle_b",0,"destroy_castle_b","bo_destroy_castle_b", []),
   ("destroy_castle_b_E",0,"destroy_castle_b","0", []),
 ("destroy_castle_c",0,"destroy_castle_c","bo_destroy_castle_c", []),
