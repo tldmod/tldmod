@@ -18450,12 +18450,11 @@ scripts = [
         
         (eq, ":can_capture", 1),   
         (party_get_skill_level, ":prs_management", "p_main_party", "skl_prisoner_management"),
-        (val_mul, ":prs_management", 7),
+        (val_mul, ":prs_management", 9),
+        (val_add, ":prs_management", 20), #scaling goes 20, 29, 38, 47, 56, 65, 74, 83, 92, 102, 110
         
         (store_random_in_range, ":rand", 0, 100),
-        (val_add, ":rand", ":prs_management"),
-        (gt, ":rand", 90),
-        #(lt, ":rand", hero_escape_after_defeat_chance),
+        (gt, ":prs_management", ":rand"),
 ]),
 
 # script_cf_party_remove_random_regular_troop
