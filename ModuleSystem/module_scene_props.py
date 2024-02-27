@@ -2605,12 +2605,28 @@ scene_props = [
     (store_trigger_param_1, ":instance_no"),
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (spawn_agent, "trp_human_prisoner"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground")])]),
-("troop_guard_sitting",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+("troop_guard_sitting",sokf_invisible,"sitting","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground")])]),
+  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground"),
+  
+  #for better clip control
+  ] + (is_a_wb_sceneprop==1 and [ 
+        (agent_set_no_dynamics, reg0, 1),
+        (agent_ai_set_interact_with_player, reg0, 0),       
+        (troop_get_type, ":race", ":troop"),
+        (try_begin), 
+            (eq, ":race", tf_orc),
+            (position_move_z, pos1, 15), #small races move 30cm upwards
+        (else_try),
+            (eq, ":race", tf_dwarf),
+            (position_move_z, pos1, 40),
+        (try_end),
+        (agent_set_position, reg0, pos1),
+    ] or []) + [  
+  ])]),
 
 ("sound_waterfall"       ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,0),(play_sound, "snd_waterfall", 0)])]),
 ("sound_water_wavesplash",sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,0),(play_sound, "snd_water_wavesplash_source", 0)])]),
@@ -2980,6 +2996,7 @@ scene_props = [
 	
 ("troop_civilian_sitting_ground",sokf_invisible,"sitting","bo_sitting", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
+    (set_fixed_point_multiplier, 100),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(store_random_in_range, ":civilian", 1, 5),
@@ -3000,8 +3017,6 @@ scene_props = [
     
         #remove weapons and helms
   ] + (is_a_wb_sceneprop==1 and [ 
-        (agent_set_no_dynamics, reg0, 1),
-        (agent_ai_set_interact_with_player, reg0, 0),
         (try_for_range, ":weapon_slot", 0, 4), 
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -3013,6 +3028,19 @@ scene_props = [
             (neg|item_has_property, ":helm", itp_civilian),
             (agent_unequip_item, reg0, ":helm", ek_head),
         (try_end),
+        
+        #for better clip control
+        (agent_set_no_dynamics, reg0, 1),
+        (agent_ai_set_interact_with_player, reg0, 0),
+        (troop_get_type, ":race", ":troop"),
+        (try_begin), 
+            (eq, ":race", tf_orc),
+            (position_move_z, pos1, 15),
+        (else_try),
+            (eq, ":race", tf_dwarf),
+            (position_move_z, pos1, 40),
+        (try_end),
+        (agent_set_position, reg0, pos1),
     ] or []) + [  
     ])]),
 	
@@ -3051,6 +3079,17 @@ scene_props = [
             (neg|item_has_property, ":helm", itp_civilian),
             (agent_unequip_item, reg0, ":helm", ek_head),
         (try_end),
+        
+        #for better clip control
+        (troop_get_type, ":race", ":troop"),
+        (try_begin), 
+            (eq, ":race", tf_orc),
+            (position_move_z, pos1, 15),
+        (else_try),
+            (eq, ":race", tf_dwarf),
+            (position_move_z, pos1, 40),
+        (try_end),
+        (agent_set_position, reg0, pos1),        
     ] or []) + [  
     ])]),
 	
@@ -3988,17 +4027,15 @@ scene_props = [
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (store_random_in_range, ":anim", 0, 3),
     (val_add, ":anim", "anim_fall_face_hold"),
-  ] + (is_a_wb_sceneprop==1 and [     
-    (spawn_scene_prop, "spr_barrier_2m_horizontal"), #this helps so they don't sink into the ground 
-    (scene_prop_set_visibility, reg0, 0),
-    ] or []) + [       
+  # ] + (is_a_wb_sceneprop==1 and [     
+    # (spawn_scene_prop, "spr_barrier_2m_horizontal"), #this helps so they don't sink into the ground 
+    # (scene_prop_set_visibility, reg0, 0),
+    # ] or []) + [       
 	(spawn_agent, ":troop"),
     (agent_set_team, reg0, 0),(agent_set_animation, reg0, ":anim"),(agent_set_stand_animation, reg0, 100),
     
         #remove weapons and helms
   ] + (is_a_wb_sceneprop==1 and [    
-        (agent_set_no_dynamics, reg0, 1),
-        (agent_ai_set_interact_with_player, reg0, 0),
         (try_for_range, ":weapon_slot", 0, 5), #weapons and helm
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4022,6 +4059,19 @@ scene_props = [
             (gt, ":armour", 1),
             (agent_unequip_item, reg0, ":armour", ek_body),
         (try_end),
+        
+        #for better clip control
+        (agent_set_no_dynamics, reg0, 1),
+        (agent_ai_set_interact_with_player, reg0, 0),
+        (troop_get_type, ":race", ":troop"),
+        (try_begin), 
+            (eq, ":race", tf_orc),
+            (position_move_z, pos1, 10),
+        (else_try),
+            (eq, ":race", tf_dwarf),
+            (position_move_z, pos1, 35),
+        (try_end),
+        (agent_set_position, reg0, pos1),
     ] or []) + [  
     ])]),
 
