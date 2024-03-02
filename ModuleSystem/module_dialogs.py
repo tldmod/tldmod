@@ -13380,12 +13380,12 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                   (this_or_next|eq, "$g_encountered_party_template", "pt_radagast"),
                   (eq, "$g_encountered_party_template", "pt_gandalf"),
                   (eq, "$g_tld_gandalf_state", 0),], #not willing to talk
-"You are making me late! Wizards are never late!", "close_window", [(assign, "$g_leave_encounter", 1)]],
+"You are making me late! Wizards are never late!", "close_window", [(assign, "$g_leave_encounter", 1), (call_script, "script_send_from_conversation_mission", "$g_talk_troop"),]],
 
 [anyone,"start", [(eq, "$talk_context", tc_party_encounter),
                   (eq, "$g_encountered_party_template", "pt_nazgul"),
                   (eq, "$g_tld_nazgul_state", 0),], #not willing to talk
-"It... beckonsssssss...", "close_window", [(assign, "$g_leave_encounter", 1)]],
+"It... beckonsssssss...", "close_window", [(assign, "$g_leave_encounter", 1),(call_script, "script_send_from_conversation_mission", "$g_talk_troop"),]],
 
 ] + (is_a_wb_dialog and [
 #### Kham Ori's Last Stand Dialogues ##########
