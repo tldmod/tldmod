@@ -2,13 +2,13 @@ menu_start_game_1|^^^^^^^^^^Wofür kämpfst du?
 mno_start_good|Den BEGINN eines neuen Zeitalters.
 mno_start_evil|Den UNTERGANG der Menschheit.
 mno_faction_intros|Lerne mehr über die Völker von Mittelerde
-mno_go_bback|Zurück.
+mno_go_bback|Zurück
 menu_start_phase_2|^^^^^ Mittelerde. Ein Schatten regt sich im Osten, ^ und dunkle Geheimnisse, die lange verborgen lagen, offenbaren sich. ^ Die freien Völker bereiten sich auf einen Krieg vor. Einen Krieg, wie ihn die Welt seit einem Zeitalter nicht gesehen hat. ^ Menschen, Elben, Zwerge und Orks; sie alle werden ihre Rolle spielen. ^^ Welche dies jedoch sein wird, kann nur die Zukunft zeigen...
 mno_go_forth|Betritt nun den Pfad deines Schicksals...
 mno_change_tld_options|TLD-Optionen ändern.
 menu_start_game_3|^^^^^^^^Wähle ein Szenario:
 mno_custom_battle_scenario_1|Gefecht; Reiche von Gondor vs. Harad
-mno_custom_battle_scenario_12|Wähle die Fraktionen für das Gefecht.
+mno_custom_battle_scenario_12|Wähle die Fraktionen für das Gefecht
 mno_custom_battle_scenario_3|Gefecht; Elben gegen Schwarze Númenórer
 mno_custom_battle_scenario_4|Verteidigung von Helms Klamm; Rohan gegen Isengart
 mno_custom_battle_scenario_5|Gefecht; Reiche des Nordens gegen Rhûn
@@ -30,7 +30,7 @@ mno_tutorial_3b_door|Nächster Raum
 mno_tutorial_4|Tutorial #4: Reiten. {s4}
 mno_tutorial_5|Tutorial #5: Soldaten Befehle erteilen. {s5}
 mno_go_back_dot|Zurück.
-mno_action_view_troop_trees|Truppenbäume ansehen
+mno_action_view_troop_trees|Truppenbäume ansehen.
 mno_view_upkeep_costs|Unterhaltskosten betrachten.
 mno_view_character_report|Betrachte Charakterbericht
 mno_view_party_size_report|Betrachte Truppengröße-Bericht
@@ -44,7 +44,7 @@ mno_leave_custom_battle_2|Abbrechen
 menu_custom_battle_end|^^^^^^Die Schlacht ist vorüber. {s1} Deine Seite tötete {reg5} Feinde und verlor {reg6} Truppen im Laufe des Gefechts.^Du selbst hast {reg7} Gegner im Kampf erschlagen.
 mno_replay|Dieses Gefecht noch einmal spielen.
 mno_continue_dot|Fortsetzen
-menu_custom_battle_durin_end|^^^^^^Es war ein beachtenswerter letzter Kampf, aber zum Scheitern verurteilt.^^ Du und deine Kampfgefährten erschlugt {reg5} Feinde.^Du selbst  erschlugst {reg7} Feinde in diesem Kampf.
+menu_custom_battle_durin_end|^^^^^^Es war ein beachtenswerter letzter Kampf, aber zum Scheitern verurteilt.^^ Du und deine Kampfgefährten erschlugt {reg5} Feinde.^Du selbst erschlugst {reg7} Feinde in diesem Kampf.
 mno_replay_cbd|Dieses Gefecht noch einmal spielen.
 mno_continue_dot_cbd|Fortsetzen.
 mno_dot_go_back|. Zurück
@@ -61,7 +61,7 @@ mno_start_ur|Ein URUK, das neue Gezücht der Orks.
 mno_start_em|Ein MENSCH, von Sauron unterjocht.
 menu_start_hand|^^^^^^^^^^Dein Herr ist die Weiße Hand^Wähle deine Rasse
 mno_start_whor|Ein ORK, Diener der Weißen Hand
-mno_start_isur|Einer der URUK-HAI, gezüchtet in Isengard
+mno_start_isur|Einer der URUK-HAI, gezüchtet in Isengart
 mno_start_duma|Ein MENSCH aus Dunland, den westlichen Ebenen.
 menu_start_good_man|^^^^^^^^^^Wählt Euer Volk:
 mno_start_go|GONDOR, das Königreich des Weißen Turms
@@ -107,9 +107,9 @@ mno_start_2_hib|Von edler Geburt
 menu_start_haradrim|^^^^^^^Du bist einer der Haradrim,^ein Mensch der Wüste.^Wähle deine Abstammung.
 mno_start_1_des|Wüstenmensch
 mno_start_2_far|Stammeskrieger aus Fern-Harad
-menu_start_numenorean|^^^^^^^Ihr seid ein Schwarzer Numenorer,^der Dunkelheit und dem Morgoth treu.^Wählt, wo Ihr dem Auge dient.
+menu_start_numenorean|^^^^^^^Du bist ein Schwarzer Numenorer,^der Dunkelheit und dem Morgoth treu.^Wähle, wo du dem Auge dienst.
 mno_start_1_bn|Neben Saurons Mund, in MORANNON
-mno_start_2_bn|In der Festung des Geisterbeschwörers, DOL GULDUR
+mno_start_2_bn|In der Festung des Nekromanten, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^Dein Geschlecht?
 mno_start_male|Männlich
 mno_start_female|Weiblich
@@ -291,7 +291,7 @@ menu_town_brawl_won|^^^^^Du hast all deine Gegner und die Wachen, die zur Beseit
 menu_close|Nichts.
 menu_town|Du bist in {s60} angekommen.{s12}{s13}
 mno_town_menu_0|Gehe irgendwo hin.
-; mno_town_menu_0_door|Inspect...
+mno_town_menu_0_door|Untersuche...
 mno_town_approach|Nähere dich {s1}...
 mno_town_castle|Gehe {s1}.
 mno_town_castle_door|Tür zur Feste.
@@ -312,7 +312,7 @@ mno_isengard_underground_door|Gehe hinab in die Gruben
 mno_tirith_toplevel|Klettere auf die höchste Ebene.
 mno_tirith_toplevel_door|Gehe zur Zitadelle
 mno_erebor_gates|Suche das Haupttor auf.
-mno_erebor_gates_door|Zum Großen Tor
+mno_erebor_gates_door|Gehe zum Haupttor
 mno_town_leave|Verlassen...
 mno_town_leave_door|Verlasse die Gegend
 menu_player_initiated_siege_result|Du greifst den Ort unter dem Banner von {s2} an.
@@ -366,7 +366,7 @@ mno_start_raid_caravan|Überfalle den Kaufmannszug!
 mno_start_ambush_orcs|Lege den Orcs einen Hinterhalt!
 mno_start_kill_scouts|Hindere die Späher daran, deine Ankunft zu melden!
 mno_go_your_way|Überlasst sie ihrem Schicksal
-mno_defend_villagers|Verteidige das Dorf!
+mno_defend_villagers|Verteidige die Dorfbewohner!
 mno_raid_villagers|Plündere das Dorf!
 mno_go_away|Zurückziehen und sammeln.
 menu_scout_camp_quest|Du hast den Spähposten gefunden. Deine Männer bereiten sich auf den Angriff vor.
@@ -440,8 +440,8 @@ menu_death|Du wurdest getötet. Auch wenn der Krieg andauert, wirst du nicht lä
 menu_animal_ambush|Du und deine Gefährten finden sich vom Rest der Truppen getrennt, als plötzlich...
 menu_animal_ambush_success|Die {s2} {reg0?fallen:fällt} vor dir wie die Fliegen! Schon bald liegen all deine Angreifer am Boden, verwundet oder tot. {s3}
 menu_animal_ambush_fail|Die Tiere beißen und reißen an dir{reg0?,: und deine{reg2?n,:m,} Gefährten}, aber zum Glück konnten sie abgewehrt werden. Hoffentlich greifen sie nicht erneut an.
-; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
-; mno_isengard_continue|Continue
+menu_isengard_flooding|^^^^^@Du bist von toten Feinden und triumphierenden Verbündeten umgeben, einschließlich der Ents; sie brüllen, dröhnen und trompeten, bis Steine knacken und um den Turm von Orthanc umherfallen. Sie sind wie ein heulender Sturm, der Säulen bricht, Lawinen von Felsbrocken in die Schächte wirft und riesige Steinplatten wie Blätter in die Luft wirft... So etwas hast Du noch nie gesehen. Bregalad - oder Quickbeam, wie er auch genannt wird - kommt vorbei und bleibt nur stehen, um zu sagen: "{playername}! Vorsicht! Halte dich fern vom Turm - wir werden bald den Damm brechen und den Isen für kurze Zeit in dieses Tal bringen. Ich denke, es wird schwer für dich, hierzubleiben" Schnell befolgst du seinen Rat und eilst weg vom Orthanc.^^ Gegen Mitternacht füllt sich Isengart mit schwarzen kriechenden Strömen und Pfützen. Du kannst nicht anders, als zu zittern, als du Rauch und Dampf in großen Säulen aufsteigen siehst. Eine große Spirale aus Dampf um den Turm herum steigt auf und schlängelt sich, bis sie einem hohen Gipfel aus Wolken ähnelt, unten feurig und oben im Mondlicht. Der Zorn der Ents ist langsam, aber besitzt eine unwiderstehliche Kraft...
+mno_isengard_continue|Fortsetzen
 menu_build_your_scene|Du kannst hier dein eigenes Schlachtfeld erstellen, indem du eine der Optionen unten und den Editiermodus verwendest: Schalte ihn zunächst im M&B-Launcher ein, betritt eine der Scenen unten und drücke Strg+E. Du kannst fertige eigene Szenen (also die sco-Dateien im Ordner TLD/SceneObj) an das TLD-Entwicklerteam einreichen und vielleicht tauchen sie in späteren Versionen als Zufallsschlachtfelder auf!^^ Gib möglichst genau an, in welcher Gegend auf der Karte deine Szene auftauchen soll.^ Hinweise: Vermeide tiefes Wasser, steile Berge und andere unpassierbare Orte, es sei denn, du weißt, wie du die AI daran hinderst, diese zu betreten. Erstelle auch ein AI-Mesh.^ (Die Eintrittspunkte "Entry #0-1" sind für die Angreifer, #4 für die Verteidiger, lass #5-8 unverändert.)
 mno_scene1|Ebene groß (Datei scn_custom_1.sco)
 mno_scene2|Ebene Mittel (Datei scn_custom_2.sco)

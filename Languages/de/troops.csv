@@ -110,7 +110,7 @@ trp_ac5_rhovanion_marchwarden|Rhovanion-Grenzwächter
 trp_ac5_rhovanion_marchwarden_pl|Rhovanion-Grenzwächter
 trp_i1_rhun_tribesman|Stammesmann aus Rhun
 trp_i1_rhun_tribesman_pl|Stammesmänner aus Rhun
-trp_ac2_rhun_horse_scout|Berittener Später aus Rhun
+trp_ac2_rhun_horse_scout|Berittener Späher aus Rhun
 trp_ac2_rhun_horse_scout_pl|Berittene Späher aus Rhun
 trp_ac3_rhun_horse_archer|Berittene Bogenschützen aus Rhun
 trp_ac3_rhun_horse_archer_pl|Berittene Bogenschützen aus Rhun
@@ -887,12 +887,12 @@ trp_walker_woman_rohan_d|Maid aus Rohan
 trp_walker_woman_gondor_b|Frau aus Gondor
 trp_walker_woman_gondor_bw|Frau aus Gondor
 trp_walker_woman_gondor_w|Edelmann aus Gondor
-; trp_mirkwood_walker_1|Greenwood Elf
-; trp_mirkwood_walker_2|Greenwood Elf
-; trp_lorien_walker_1|Lothlorien Elf
-; trp_lorien_walker_2|Lothlorien Elf
+trp_mirkwood_walker_1|Grünwaldelb
+trp_mirkwood_walker_2|Grünwaldelb
+trp_lorien_walker_1|Elb aus Lothlorien
+trp_lorien_walker_2|Elb aus Lothlorien
 trp_dwarf_walker|Ein Zwerg
-; trp_beorn_walker|Peasant Man
+trp_beorn_walker|Einfacher Mann
 trp_beorn_walker_fem|Einfache Frau
 trp_trainer_4|Ausbilder
 trp_trainer_gondor|Ausbilder
@@ -1506,7 +1506,7 @@ trp_gandalf|Gandalf
 trp_gandalf_pl|Selbstangebaute Gadalfs
 trp_nazgul|Nazgul
 trp_nazgul_pl|Gezähmte Nazgul
-; trp_radagast|Radagast
+trp_radagast|Radagast
 trp_barman|Wirt
 trp_elder|Ältester
 trp_gear_merchant|Ausrüstungshändler
@@ -1524,8 +1524,8 @@ trp_uruk_hai_sentry|Uruk-Hai-Wachposten
 trp_uruk_hai_sentry_pl|Uruk-Hai-Wachposten
 trp_black_numenorean_sorcerer|Zauberer der Schwarzen Numenorer
 trp_black_numenorean_sorcerer_pl|Zauberer der Schwarzen Numenorer
-; trp_evil_priest|Evil Priest
-; trp_evil_priest_pl|Evil Priests
+trp_evil_priest|Böse Priester
+trp_evil_priest_pl|Böse Priester
 trp_wolf_rider_of_mirkwood|Wolfsreiter aus dem Düsterwald
 trp_wolf_rider_of_mirkwood_pl|Wolfsreiter aus dem Düsterwald
 trp_warg_rider_of_mirkwood|Wargreiter aus dem Düsterwald
@@ -1596,12 +1596,12 @@ trp_gunda_vet_troll|Abgerichteter Bergtroll
 trp_gunda_vet_troll_pl|Abgerichtete Bergtrolle
 trp_gunda_placeholder|Abgerichteter Bergtroll
 trp_gunda_placeholder_pl|Abgerichtete Bergtrolle
-trp_isen_troll|Troll von Isengard
-trp_isen_troll_pl|Trolle von Isengard
-trp_isen_vet_troll|Abgerichteter Troll von Isengard
-trp_isen_vet_troll_pl|Abgerichtete Trolle von Isengard
-trp_isen_armored_troll|Gepanzerter Troll von Isengard
-trp_isen_armored_troll_pl|Gepanzerte Trolle von Isengard
+trp_isen_troll|Troll von Isengart
+trp_isen_troll_pl|Trolle von Isengart
+trp_isen_vet_troll|Abgerichteter Troll von Isengart
+trp_isen_vet_troll_pl|Abgerichtete Trolle von Isengart
+trp_isen_armored_troll|Gepanzerter Troll von Isengart
+trp_isen_armored_troll_pl|Gepanzerte Trolle von Isengart
 trp_mordor_troll|Troll aus Mordor
 trp_mordor_troll_pl|Trolle aus Mordor
 trp_mordor_vet_troll|Abgerichteter Troll aus Mordor
@@ -1640,9 +1640,9 @@ trp_a5_dism_elite_skirmisher_of_rohan|Angesehener Scharmützler aus Rohan
 trp_a5_dism_elite_skirmisher_of_rohan_pl|Angesehene Scharmützler aus Rohan
 trp_ac5_camel_rider|Kamelreiter von Harad
 trp_ac5_camel_rider_pl|Kamelreiter von Harad
-; trp_aragorn|Aragorn
-; trp_legolas|Legolas
-; trp_gimli|Gimli
+trp_aragorn|Aragorn
+trp_legolas|Legolas
+trp_gimli|Gimli
 trp_pippin_notmet|Halbling
 trp_merry_notmet|Halbling
 trp_pippin|Pippin

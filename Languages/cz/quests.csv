@@ -62,7 +62,7 @@ qst_troublesome_bandits_text| {s9} z {s4} tě požádal, aby si ulovil gobliny v
 qst_deal_with_looters|Postarej se o klanové skřety.
 qst_deal_with_looters_text|Stařešina z {s4} tě požádal, aby si se vypořádal s několika tlupami divokých orků okolo {s4}.
 ; qst_deal_with_night_bandits|Deal with Night Bandits
-; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
+qst_deal_with_night_bandits_text|Stařešina {s14} tě požádal aby jsi se vypořádal s nočními bandity v {s14}
 qst_deliver_food|Zásobuj {s3}  {reg5} jednotkami jídla.
 qst_deliver_food_text|{s9} z {s3} tě požádal, aby si mu přinesl {reg5} jednotek jídla do 10 dnů.
 qst_deliver_iron|Zásobuj {s3} {reg5} jednotkami {s6}

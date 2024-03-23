@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^Podivné a hrozivé zvuky praskají a skřípou v lese
 mno_be_quiet_elf|Mějte respekt ke stromům a jejich nenávisti. Tiše jdete dal.
 mno_be_quiet|Složte zbraně a buďte potichu! Musíme se odsud dostat!
 mno_be_bold|Pokračujte! Nebojím se pár stromků a starých povídaček!
-; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
+mno_fight_back|Uvidíme co a jak! Prohledejte okolí! Zapalte pár stromů! (tábor)
 menu_fangorn_search_fails|^^^^^^Prohledáte okolní temný a hustý les, ale nenacházíte nic.^Přesto se vám čím dál víc zdá, že vás něco sleduje. Něco hrozivého.
 menu_fangorn_killed_player_only|^^^^^^Procházíš se hustým temným lesem.^Z ničeho nic tě něco udeřilo! Možná ti na hlavu spadla těžká větev?^Z bezvědomí se probíráš po několika minutách. Je to nemalé zranění, ale můžeš jít dále.
 mno_ow_get_out|Ouva! Musíme zmizet z tohoto prokletého místa!
@@ -200,7 +200,7 @@ mno_leave|Odejít.
 menu_simple_encounter|^^^^^{s2}^Máš k dispozici {reg22} jednotek k boji proti jejich {reg11}.^^Bitva se odehrává v {s3}{s4}.^^Jaké jsou tvé rozkazy?
 mno_encounter_attack|{reg21?Zaútočte na ně:Připravte se jim čelit}.
 mno_encounter_order_attack|Přikaž svým jednotkám, aby {reg21?zaútočili:se jim postavili} bez tebe.
-; mno_control_allies_menu|Use influence to command your allies in the field.
+mno_control_allies_menu|Využij vliv, abys velel svým spojencům na bitevním poli.
 mno_encounter_hide|Skryj se před nepřítelem...
 mno_special_whip|Spěcháte směrem k nim, praskající {s4}.
 mno_encounter_attack_bearform|{reg21?Vtrhnout do bitvy v medvědí podobě:Změnit vzhled a čelit jim}.
@@ -235,7 +235,7 @@ mno_pre_join_leave|Nezapojit se.
 menu_join_battle|^^^Pomáháš {s2} proti {s1}.^ Máš {reg22} připravených vojáků proti {reg11} nepřátelům.^^Bitva se odehrává v {s3}{s4}.
 mno_join_attack|Zaútočit na nepřítele.
 mno_join_order_attack|Nařiď svým jednotkám, aby zaútočili s tvými spojenci, mezitím co ty zůstaneš vzadu.
-; mno_control_allies_join_menu|Use influence to command your allies in the field.
+mno_control_allies_join_menu|Využij vliv, abys velel svým spojencům na bitevním poli.
 mno_join_attack_bearform|Vtrhnout do bitvy v medvědí podobě.
 mno_join_leave|Uvolnit se od nepřítele.
 mno_player_control_allies_join_menu|Zavel a zaútoč na nepřítele

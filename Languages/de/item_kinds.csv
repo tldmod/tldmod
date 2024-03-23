@@ -332,7 +332,7 @@ itm_twohand_wood_club|Große Holzkeule
 itm_bone_cudgel|Knochenkeule
 itm_orc_pick|Ork-Picke
 itm_orc_hammer|Bösartiger Kriegshammer
-itm_orc_club_b|Wargreiterkolben
+itm_orc_club_b|Wargreiterkeule
 itm_orc_club_c|Orkknüppel mit Dornen
 itm_orc_club_d|Bösartiger Streitkolben
 itm_orc_sledgehammer|Grober Orkhammer
@@ -348,9 +348,9 @@ itm_orc_axe|Orkaxt
 itm_orc_two_handed_axe|Ork-Großaxt
 itm_orc_throwing_axes|Orkische Wurfäxte
 itm_orc_bow|Orkbogen
-; itm_orc_shield_a|Simple Shield
-; itm_orc_shield_b|Fur Shield
-; itm_orc_shield_c|Fur Tower Shield
+itm_orc_shield_a|Einfacher Schild
+itm_orc_shield_b|Orkischer Fellschild
+itm_orc_shield_c|Orkischer Fell-Turmschild
 itm_mordor_orc_shield_a|Orkschild aus Mordor
 itm_mordor_orc_shield_b|Orkschild aus Mordor
 itm_mordor_orc_shield_c|Orkschild aus Mordor
@@ -435,8 +435,8 @@ itm_dun_helm_b|Fellkappe aus Dunland
 itm_dun_helm_c|Hoher Helm aus Dunland
 itm_dun_helm_d|Hoher Helm aus Dunland
 itm_dun_helm_e|Geweihhelm aus Dunland
-; itm_dun_shield_a|Dunnish Roundshield
-; itm_dun_shield_b|Dunnish Oval Shield
+itm_dun_shield_a|Rundschild aus Dunland
+itm_dun_shield_b|Ovaler Schild aus Dunland
 itm_dun_berserker|Häuptlingsschwert aus Dunland
 itm_dunnish_antler_axe|Geweihaxt aus Dunland
 itm_dunnish_war_axe|Kriegsaxt aus Dunland
@@ -497,7 +497,7 @@ itm_mirkwood_boots|Stiefel aus Grünwald
 itm_harad_tunic|Tunika aus Harad
 itm_harad_padded|Polsterwams aus Harad
 itm_harad_lamellar|Schuppenweste aus Harad
-itm_harad_heavy_lamellar|Schwerze Schuppenweste aus Harad
+itm_harad_heavy_lamellar|Schwere Schuppenweste aus Harad
 itm_harad_heavy|Harasjala-Rüstung
 itm_harad_pectoral|Brustpanzer aus Harad
 itm_black_snake_armor|Maranka-Rüstung

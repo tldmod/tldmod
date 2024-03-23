@@ -15,7 +15,7 @@ skl_surgery_desc|Kazdy bod teto dovednosti dá 4%% šanci ze smrtelně zraněný
 skl_wound_treatment|Léčba zranění
 skl_wound_treatment_desc|Léčeni skupiny je o 20%% rychlejší za každou úroveň dovednosti. (Dovednost skupiny)
 skl_inventory_management|Organizace inventáře
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+skl_inventory_management_desc|Zvyšuje kapacitu inventáře o +6 za každou úroveň dovedonsti. Snižuje konzumaci jídla. (Vůdcova dovednost)
 skl_spotting|Pozorování
 skl_spotting_desc|Skupina vidí o 10%% dál každou úroveň dovednosti. (Dovednost skupiny)
 skl_pathfinding|Hledání cest
@@ -27,7 +27,7 @@ skl_tracking_desc|Stopy poskytnou více informací. (Dovednost skupiny)
 skl_trainer|Trenér
 skl_trainer_desc|Každý den, každý hrdina s touto dovedností přidá nějaké zkušenosti ostatním členům skupiny jejichž úroveň je nižší než jeho/její. Zkušenosti se dostávají po:{0,4,10,16,23,30,38,46,55,65,80}. (Osobní dovednost)
 skl_looting|Rabování
-; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
+skl_looting_desc|Zvyšuje počet a kvalitu kořist získané po bitvě. (Schopnost skupiny)
 skl_horse_archery|Střelba z koně
 skl_horse_archery_desc|Snižuje sankce poškození a přesnosti při střelbě nebo házení na koni. (Osobní dovednost)
 skl_riding|Jezdectví

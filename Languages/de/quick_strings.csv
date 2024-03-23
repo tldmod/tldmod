@@ -73,7 +73,7 @@ qstr_an_ORC^_serving_the_|Ein ORK, ^Diener des ^Lidlosen Auges
 qstr_an_URUK^_the_new_bre|Ein URUK, ^das neue Gezücht ^der Orks.
 qstr_a_MAN^_subjugated_by|Ein MENSCH ^des Ostens, ^von Sauron unterjocht.
 qstr_an_ORC^_serving_the_W|Ein ORK, ^Diener der ^Weißen Hand
-qstr_one_of_the_URUK_HAI^|Einer der URUK-HAI, ^gezüchtet in ^Isengard
+qstr_one_of_the_URUK_HAI^|Einer der URUK-HAI, ^gezüchtet in ^Isengart
 qstr_a_MAN_of_Dunland^_th|Ein MENSCH ^aus Dunland,^ den westlichen Ebenen.
 qstr_Click_the_center_but|Klicke auf die Fraktionsanzeige, um die Fraktion zu wechseln^Klicke auf die Truppen, um Details zu sehen
 qstr_Level:_{reg3}^Health|Stufe: {reg3}^Gesundheit: {reg4}
@@ -100,7 +100,7 @@ qstr_Default|Standard
 qstr_Easy|Einfach
 qstr_Town_NPCs_Always_Acc|NPCs in Städten sind immer vom Menü aus erreichbar:
 qstr_Cutscenes:__|Zwischensequenzen:
-qstr_Injuries_for_compani|Verletzungen für deine Gefährten:
+qstr_Injuries_for_compani|Verletzung deiner Gefährten:
 qstr_Permanent_death_for_|Dauerhafter Tod für Anführer und Gefährten:
 qstr_Permanent_death_for_p|Dauerhafter Tod für den Spieler (das bist DU!):
 qstr_Battle_morale_system|Schlachtmoralsystem:
@@ -110,7 +110,7 @@ qstr_No_Messages|Keine
 qstr_Player_damage_only|Nur Spieler
 qstr_All_Messages|Alle
 qstr_Preferred_Camera_Mod|Bevorzugte Kamera:
-qstr_Default_Camera|Standartkamera
+qstr_Default_Camera|Standardkamera
 qstr_Free_Mode_Custom_Cam|Freier Modus
 qstr_Fixed_Over_The_Shoul|Feste Schulterkamera
 qstr_Prevent_AI_from_taki|Verhindere defensive KI in der Schlacht:
@@ -308,18 +308,18 @@ qstr_{s1}_gained_faction_|{s1} gewinnt an Fraktionsstärke
 qstr_{s1}_lost_faction_st|{s1} verliert Fraktionsstärke
 qstr_{s2}_{reg3?was:is_cu|{s2} {reg3?war:ist derzeit} in {s3}
 qstr_{s2}_{reg3?was:is}_t|{s2} reist{reg3?:e} nach {s3} und {reg4?sie:er} {reg3?war:sollte derzeit} in der Nähe von {s4}{reg3?: sein}
-qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?befand:befindet} sich in der Wildnis und {reg4?sie:er} {reg3?war:sollte derzeit} in der Nähe von {s4}{reg3?: sein}
+qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?befand:befindet} sich in der Wildnis und {reg4?sie:er} {reg3?war:sollte derzeit} in der Nähe von {s3}{reg3?: sein}
 qstr_{s2}_{reg3?was:is}_b|{s2} {reg3?war:ist} Gefangener in {s3}.
 qstr_{s2}_{reg3?was:has_b|{s2} {reg3?wurde:wurde} von {reg4?ihren:seinen} Feinden gefangen genommen.
 qstr_{reg3?{s2}_s_locatio|{reg3?{s2}s Aufenthaltsort war unbekannt:Ich weiß nicht, wo {s2} ist}.
 qstr_{s6}_has_joined_your|{s6} hat sich deiner Truppe angeschlossen
-qstr_elven|Elben-
-qstr_dwarven|Zwergen-
+qstr_elven|Elben
+qstr_dwarven|Zwergen
 qstr_orc|Ork-
 qstr_uruk|Uruk-
 qstr_uruk_hai|Uruk-Hai-
 qstr_trollish|Troll-
-qstr_man|Menschen-
+qstr_man|Menschen
 qstr_riding|reitet
 qstr_marching|marschiert
 qstr_charging|stürmt
@@ -394,7 +394,7 @@ qstr_The_Wise_Master_shal|Der Weise Herr wird zufrieden sein, wenn ich ihm die L
 qstr_{s14}Now_we_will_put|{s14}Nun werden wir die Leiden dieser abscheulichen Kreaturen beenden.
 qstr_{s14}Today_we_shall_|{s14}Heute werden wir den Feinden von Imladris und aller Schönheit in der Schlacht begegnen!
 qstr_All_who_enter_Mirkwo|Alle jene, die den Düsterwald mit Bosheit im Herzen betreten, werden ihn niemals verlassen!
-qstr_Men_of_{s16}_the_ene|Männer von {s16}, der Feind ist hier! Kämpft für Euer Land!
+qstr_Men_of_{s16}_the_ene|Männer von {s16}, der Feind ist hier! Kämpft für euer Land!
 qstr_Men_of_{s16}_charge!|Männer von {s16}, greift an! Kämpft für Euer Land!
 qstr_{s14}Grind_their_bod|{s14}Malmt ihre Körper in den Staub!
 qstr_{s14}Dwarves_or_men_|{s14}Zwerge oder Menschen, sie werden gegen unseren Grimm nicht bestehen!
@@ -413,7 +413,7 @@ qstr_Death_to_the_trespas|Tod allen Eindringlingen in {s16}!
 qstr_CHARGE!_Let_s_clear_|GREIFT AN! Lasst uns diesen aus {s18} stammenden {s19}-Abschaum hier {s17} vernichten!
 qstr_{s14}Now_that_{s19}s|{s14}Nun wird dieser {s19}-Abschaum den Zorn der Bärenmenschen erfahren!
 qstr_Attack!|Greift an!
-; qstr_You_are_attacked_by_|You are attacked by a group of bandits!
+qstr_You_are_attacked_by_|Du wirst von einer Gruppe Banditen angegriffen!
 qstr_Holding|Stellung haltend
 qstr_Following|Folgend
 qstr_Charging|Angreifend
@@ -543,7 +543,7 @@ qstr_{s1}_has_been_captur|{s1} wurde vom Feind genommen.
 qstr_Gondor_takes_a_capti|Gondor nimmt einen Gefangenen
 qstr_Rohan_takes_a_captiv|Rohan nimmt einen Gefangenen
 qstr_Mordor_takes_a_capti|Mordor nimmt einen Gefangenen
-qstr_Isengard_takes_a_cap|Isengard nimmt einen Gefangenen
+qstr_Isengard_takes_a_cap|Isengart nimmt einen Gefangenen
 qstr_You_were_grievously_|Du wurdest schwer verwundet und zu den Toten geworfen. Im richtigen Moment gelingt es dir, über die Mauer zu fliehen, aber der Feind könnte dich bemerkt haben. Mach besser, dass du wegkommst!
 qstr_You_were_grievously_w|Du wurdest in der Schlacht schwer verwundet. Deine Männer konnten dich fortschleifen, erlitten dabei aber furchtbare Verluste.
 qstr_You_were_grievously_wo|Du wurdest in der Schlacht schwer verwundet. Deine Männer konnten dich fortschleifen, erlitten dabei aber furchtbare Verluste. Unglücklicherweise wurden einige deiner Gefährten gefangen genommen und nach {s2} gebracht.
@@ -564,7 +564,7 @@ qstr_What_should_I_do?|Was soll ich tun?
 qstr_Find_{s3}_s_whereabo|Findet {s3} sobald wie möglich und sprecht mit {reg3?ihr:ihm}. Viel Glück!
 qstr_Good_to_see_the_Shad|Es freut mich, dass der Schatten Euch noch nicht besiegt hat, {playername}.
 qstr_You_are_the_one_they|Ihr seid der, den sie Gandalf oder Mithrandir nennen.
-; qstr_You_are_the_one_they_|You are the one they call Radagast.
+qstr_You_are_the_one_they_|Du bist derjenige, den sie Radagast nennen.
 qstr_That_is_what_some_ca|So nennen sie mich. In meiner Zeit hier bin ich schon vieles genannt worden, aber wenn die Dunkelheit nicht aufgehalten wird, wird es bald niemanden mehr geben, der mich irgendetwas nennen könnte.
 qstr_What_do_you_mean?|Was meint Ihr?
 qstr_In_spite_of_their_va|Trotz tapferen Widerstands wurde {s3} von den Mächten des Bösen überrannt. {s3}s Volk ist verstreut und {s4} ist gefallen.
@@ -576,26 +576,26 @@ qstr_What_do_you_want_of_|Was wollt Ihr von mir, alter Mann?
 qstr_Just_know_that_a_Daw|Wisst einfach, dass die Dämmerung heraufzieht. Es ist unumgänglich. Und solltet Ihr noch lange genug leben, um sie zu sehen, bedenkt, was Ihr zu Euch dann sagen solltet.
 qstr_Well_met_{playername|Eine freudige Begegnung, {playername}, {s24}. Mein Vertrauen in Euch war nicht umsonst. Die Macht des Schattens wurde gebrochen und Eure Bemühungen haben darin eine nicht unwichtige Rolle gespielt.
 qstr_Thank_you_Mithrandir|Habt Dank, Mithrandir!
-; qstr_Thank_you_Radagast!|Thank you, Radagast!
+qstr_Thank_you_Radagast!|Danke, Radagast!
 qstr_The_wizard_Saruman_i|Der Zauberer Saruman ist besiegt und Barad-dur wurde zu Staub zerschmettert, gemeinsam mit seinem Dunklen Herrn! Alle Völker Mittelerdes sind nun frei von der Bedrohung, die beinahe all das, was gut und rein in dieser Welt ist, verschlungen hätte. Der Feind ist vernichtet und der König zurückgekehrt!
 qstr_It_was_a_long_and_bl|Es war ein langer und blutiger Krieg und viele unserer besten Freunde weilen nicht mehr unter uns.
 qstr_There_is_much_to_reg|Es gibt viel zu bedauern und zu betrauern in den folgenden Tagen, und noch mehr wieder aufzubauen und zu heilen. Aber jetzt lasst uns frohlocken mit jenen unserer Freunde, die noch immer bei uns sind, und all das feiern, was wir vollbracht haben  während dieser Letzten Tage des Dritten Zeitalters!
-; qstr_Orcs_are_marching_ag|Orcs are marching against Helm's Deep.
-; qstr_Orcs_are_marching_aga|Orcs are marching against Edoras.
-; qstr_Ah_{playername}_happ|Ah, {playername}, happy chance that we come on each other in this fashion! Grim tidings I bring from Western Rohan, and haste is sore needed.
-; qstr_What_tidings_do_you_|What tidings do you bring, Mithrandir? What can I do?
-; qstr_Saruman_has_loosed_I|Saruman has loosed Isengard upon Rohan. {s1} For the success of my designs, the valiant Rohirrim must not fall, {playername}! The danger to them is very great, yet also the emptying of Isengard has left it vulnerable, for Saruman has despatched his full strength against Theoden King. This may be the time to move into Nan Curunir. A choice is now laid before you, Commander, a choice you must make, for neither you nor I may be everywhere at once!
-; qstr_Do_you_want_me_to_he|Do you want me to help King Theoden defend {s3}, or hasten to Isengard and see what I can do?
-; qstr_Either_would_be_a_gr|Either would be a great boon to me. You must decide your course on your own, {playername}, as shall I. Shadowfax shall bear me now on a swift errand. You must act quickly as well! Hasten now!
-; qstr_Gandalf_asked_you_to|Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard.
+qstr_Orcs_are_marching_ag|Orcs marschieren gen Helms Klamm.
+qstr_Orcs_are_marching_aga|Orks marschieren gen Edoras.
+qstr_Ah_{playername}_happ|Ah, {playername}, welch glücklicher Zufall, dass wir uns auf diese Weise begegnen! Ich bringe düstere Botschaft aus West-Rohan und Eile ist dringend geboten.
+qstr_What_tidings_do_you_|Welche Neuigkeiten bringst du, Mithrandir? Was kann ich tun?
+qstr_Saruman_has_loosed_I|Saruman hat Isengart auf Rohan losgelassen. {s1} Für den Erfolg meiner Pläne dürfen die tapferen Rohirrim nicht fallen, {playername}! Die Gefahr für sie ist sehr groß, aber hat das Leeren von Isengart hat es auch verwundbar zurückgelassen. Saruman hat seine volle Stärke gegen Theoden König geschickt. Dies könnte die Zeit sein, um nach Nan Curunir zu ziehen. Eine Wahl liegt nun vor dir, Kommandant, eine Wahl, die du treffen musst, denn weder du noch ich können überall gleichzeitig sein!
+qstr_Do_you_want_me_to_he|Möchtest du, dass ich König Theoden dabei helfe, {s3} zu verteidigen, oder soll ich nach Isengart eilen und sehen, was ich tun kann?
+qstr_Either_would_be_a_gr|Beides wäre ein großer Segen für mich. Du musst deinen eigenen Weg wählen, {playername}, so wie ich es auch tun werde. Schattenfell wird mich nun auf eine schnelle Mission tragen. Du musst auch rasch handeln! Beeile dich jetzt!
+qstr_Gandalf_asked_you_to|Gandalf bat dich darum, entweder Theoden bei der Verteidigung von {s3} zu helfen oder herauszufinden, was in Isengart passiert.
 qstr_Ents|Ents
-; qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope.
-; qstr_Missing_String|Missing String
-; qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
-; qstr_Hail_{playername}!_I_|Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!
-; qstr_Your_deed_has_greatl|Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!
-; qstr_{Playername}_I_will_|{Playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
-; qstr_You_have_failed_me_{|You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not.
+qstr_Hail_{playername}!_I|Heil, {playername}! Ich hoffe, du bist unverletzt. Auf jeden Fall freue ich mich, dass du meinem Freund Fangorn, oder Baumbart, wie du ihn vielleicht zu nennen gelern hast, geholfen hast.  Die Baumhirten sind sehr mächtig, aber es war wahrscheinlich, dass sie ihrem Untergang entgegen marschierten. Du hast sie vielleicht vor großer Gefahr gerettet, Kommandant!  Dafür bin ich froh. Ich möchte nicht mit ansehen, wie die ältesten aller lebenden Wesen von der Welt verschwinden, nein, noch nicht... nein, nicht bevor sie die Entfrauen wiedersehen, hoffe ich.
+qstr_Missing_String|Missing String
+qstr_Well_thank_you_{play|Nun, danke, {playername}, und lebwohl. Mögen wir uns wiedersehen, ehe der Mond abnimmt!
+qstr_Hail_{playername}!_I_|Heil, {playername}! Ich hoffe, du bist unverletzt. Auf jeden Fall scheinst du dein Schwert gegen den richtigen Feind gerichtet zu haben. Kein Feind hat bisher die Hornburg eingenommen und wahrscheinlich wird dies auch keiner jemals tun - solange Leute wie du Helm's Tor verteidigen, das versichere ich dir!
+qstr_Your_deed_has_greatl|Deine Tat hat meinen Plänen sehr geholfen, sogar mehr als ich gehofft oder geplant hätte. Leb wohl, {playername}, und danke dir. Mögen wir uns wiedersehen, bevor der Mond abnimmt!
+qstr_{Playername}_I_will_|{Playername}, Ich werde dich jetzt etwas fragen. Du bist ein fähiger Hauptmann und ein pflichtbewusster; wurdest du von großen Feinden überwältigt? Hast du aus Vorsicht oder sogar aus Angst zu lange gezögert? Schau, wir sind nun in eine größere Gefahr geraten, als ich hätte voraussehen können. Die Stärke von Rohan ist gebrochen, ihr Volk ist zerstreut und schutzlos: Helms Klamm ist gefallen. Die Bäume sind vorzeitig verdorrt und die Nacht liegt über den Schmiedefeuern von Isengart: Die Ents des Fangornwaldes sind tot oder zurückgedrängt.
+qstr_You_have_failed_me_{|Du hast mich enttäuscht, {playername} - oder vielleicht bin ich es, der dich enttäuscht hat. Vielleicht gab es einen Fehler in meiner Konstruktion, einen schwerwiegenden Fehler, den ich nicht erkannt habe... Der Schrecken von Mordor naht. Verlasse mich jetzt, {playername}. Vielleicht sehen wir uns wieder... oder vielleicht auch nicht.
 qstr_Bagginsssss..._Ssssh|Beutliiin... Aueeeenlaaand...
 qstr_I..._don_t_know!|Ich... weiß nichts davon!
 qstr_It..._beckonsssssss.|Er... ruuuuft...
@@ -614,11 +614,11 @@ qstr_The_forces_of_{s2}_m|Die Truppen von {s2} marschieren nach {s15}!
 qstr_Rohan_capital_moved_|Rohan verlegte seinen Hauptsitz von Edoras in die Hornburg!
 qstr_Dale_capital_moved_f|Thal verlegte seinen Hauptsitz nach Esgaroth!
 qstr_Gundabad_capital_mov|Die Orcs von Gundabad verlegen ihren Hauptsitz in die Orkstadt!
-; qstr_You_have_breached_th|You have breached the Ring of Isengard with the help of the Tree Men. During the battle, Isengard was flooded, but Orthanc still stands unscathed in midst of the havoc. You should investigate the aftermath.
+qstr_You_have_breached_th|Du hast mit Hilfe der Baumhirten den Ring von Isengart durchbrochen. Während der Schlacht wurde Isengart überflutet, aber der Orthanc steht immer noch unversehrt inmitten des Chaos. Du solltest die Folgen untersuchen.
 qstr_The_hosts_of_{s2}_re|Die Armeen von {s2} ziehen sich in ihre Heimat zurück!
 qstr____Ruins_of_{s1}___|Ruinen von {s1}
-; qstr_{s1}_has_joined_the_|{s1} has joined the Hand
-; qstr_{s1}_has_joined_the_E|{s1} has joined the Eye
+qstr_{s1}_has_joined_the_|{s1} ist der Hand beigetreten
+qstr_{s1}_has_joined_the_E|{s1} ist dem Auge beigetreten
 qstr_ranks|Reihen
 qstr_shield_wall|Schildwall
 qstr_wedge|Keil
@@ -684,9 +684,9 @@ qstr_loses_Faction_Strength|wird durch den Überfall geschwächt.
 qstr_loses_Faction_Strength_|wird durch deinen Sieg auf See geschwächt.
 qstr_You_spent_{reg67}_of|Du verwendest {reg67} Einfluss in {s1}, {reg66} verbleiben.
 qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:ist in der Nähe von {s5}.
-; qstr_Army_of_{s6}|Army of {s6}
-; qstr_Host_of_{s6}|Host of {s6}
-; qstr_The_host_of_Isengard|The host of Isengard has razed {s2}!
+qstr_Army_of_{s6}|Armee von {s6}
+qstr_Host_of_{s6}|Heer von {s6}
+qstr_The_host_of_Isengard|Die Heere von Isengart haben {s2} niedergebrannt!
 qstr_{s1}_{s0}|{s1}, {s0}
 qstr_{s1}_and_{s0}|{s1} und {s0}
 qstr_No_Troops_Left.|Keine Truppen mehr.
@@ -749,7 +749,7 @@ qstr_You_shapeshift_into_|Du nimmst Bärengestalt an!
 qstr_You_got_{reg1}_exper|Du hast als Bär {reg1} Erfahrung erhalten.
 qstr_Your_ability_to_chan|Du hast deine Fähigkeit als pelzwechsler entdeckt. Von nun an kannst du die Wildnis als Mensch oder als Bär durchstreifen.
 qstr_You_change_back_to_h|Du wechselst zurück in deine menschliche Form...
-; qstr_Refill_Ammunition|Refill Ammunition
+qstr_Refill_Ammunition|Munition nachfüllen
 qstr_Your_mount_stumbles!|Dein Reittier stolpert! Es scheint zu lahmen.
 qstr_Bitten_by_your_own_w|Dein eigener Warg hat dich gebissen!
 qstr_You_weigh_too_much_f|Du bist zu schwer für ein Pony!
@@ -880,7 +880,7 @@ qstr_The_battle_is_won!|Die Schlacht ist gewonnen!
 qstr_A_band_of_tribal_orc|Eine Bande Stammesorks ist aufgetaucht!
 qstr_Gaaaar!!_We_wants_th|Gaaaar!! Wir wolln das Menschenfleisch!
 qstr_{s31}_scouts_have_ap|{s31}-Späher sind aufgetaucht!
-qstr_Those_are_ours!_We_h|Die gehören uns! Wir haben sie verfolgt seitdem sie aufgebrochen sind! Niemand stellt sich uns in den Weg!
+qstr_Those_are_ours!_We_h|Die gehören uns! Wir haben sie verfolgt, seitdem sie aufgebrochen sind! Niemand stellt sich uns in den Weg!
 qstr_Trolls_appeared!|Trolle sind aufgetaucht!
 qstr_Gaaaar!!|Gaaaar!!
 qstr_{s31}_scouts_have_app|{s31}-Späher tauchen auf, um den Flüchtlingen zu helfen!
@@ -1066,8 +1066,8 @@ qstr_You_have_fallen._The|Du bist gefallen. Die Räuber durchsuchen dich schnell
 qstr_Luckily_some_of_your|Glücklicherweise kommen einige deiner Gefährten auf der Such nach dir des Weges und finden dich am Straßenrand liegend. Rasch bringen sie dich in Sicherheit und versorgen deine Wunden.
 qstr_Luckily_some_passing|Glücklicherweise kommen einige Städter des Weges, sehen dich am Straßenrand liegen, und erkennen, dass du mehr als ein lumpiger Bettler bist. Sie tragen dich zur nächsten Herberge und verarzten deine Wunden.
 qstr_{s13}^^You_have_succ|{s13}^^Du bist erfolgreich hineingeschlichen.
-; qstr_The_tomb_is_destroye|The tomb is destroyed. A fierce fight took place here.
-; qstr_Nothing_of_interest|Nothing of interest
+qstr_The_tomb_is_destroye|Die Grabstätte ist zerstört. Hier fand ein heftiger Kampf statt.
+qstr_Nothing_of_interest|Nichts von Interesse
 qstr_the_place|die Örtlichkeit
 qstr_the_castle|die Feste
 qstr_the_Throne_Room|zum Thronsaal
@@ -1112,7 +1112,7 @@ qstr_^^^^^^^You_come_upon|^^^^^^^Du triffst auf die Flüchtlinge aus {s2} auf ih
 qstr_^^^^^^^You_come_upon_|^^^^^^^Du triffst endlich auf die Flüchtlinge, die du seit {s2} verfolgst. Ihr Ziel scheint zu sein {s3} und es sind viele Alte und Kranke darunter. ^^Es gibt einige Wachen, aber nicht genug, um dich und deine Männer daran zu hindern, sie alle abzuschlachten.
 qstr_^^At_last_the_Master|^^Endlich, der Meister macht den ersten Zug! Die Fackeln leuchten hell, die scharfen Schwerter glänzen. Du und deine Jungs werdet bald eure Marschbefehle erhalten. Ei, es wird genug Kampf für alle geben, und Ruhm ebenso!^^Dir wird die Ehre zugesprochen, dem Meister im gezackten Turm deine Aufwartung machen zu dürfen. Wahrscheinlich werden deine ersten Aufgaben Snaga-Arbeit sein. Hier ein Dorf niederbrennen, dort einem Versorgungstrupp auflauern. Aber du wirst dich schon noch beweisen können. Wer sagt denn, dass du nicht bald ebenso wichtig bist wie {s2} und sein Gefolge in {s3}?
 qstr_^^Your_head_suddenly|^^Plötzlich siehst du ein Bild vor Augen - das flammende Auge. Alle deine Gefährten halten inne. Du erkennst, ihr alle gerade dasselbe Bild seht, den selben Ruf vernehmt. Gewaltig ist die Kunst des Lidlosen Auges - gewaltig ist die Macht von Barad-dûr!^^Du hörst die ungesprochenen Worte und verstehst, ohne zu hören. Die Zeit ist gekommen, der Dunkle Herrscher befiehlt - ihr alle werdet eure Feinde mit offenem Krieg überziehen. Befehle werden kommen von {s2} in {s3}. Deine ersten Aufgaben werden gering sein, aber du wirst dich noch früh genug beweisen können.^^Der Krieg hat begonnen, der Untergang des Westens ist nahe!
-qstr_{s13}_asked_you_to_j|{s13} bat dich, dich mit mindestens {reg13} Truppen bei ihm zu melden, um Isengards letzte Verteidigungslinie anzugreifen.
+qstr_{s13}_asked_you_to_j|{s13} bat dich, dich mit mindestens {reg13} Truppen bei ihm zu melden, um Isengarts letzte Verteidigungslinie anzugreifen.
 qstr_You_defeated_{reg5}_|Du hast {reg5} Feinde besiegt und deinen Befehlshaber beeindruckt.
 qstr_You_defeated_{reg5}_e|Du hast {reg5} Feinde besiegt.
 qstr_You_failed_to_defeat|Du hast nicht einen Feind besiegt.
@@ -1215,7 +1215,7 @@ qstr_Refugees_Escaped:_{r|Entkommene Flüchtlingszüge: {reg10} --- Vernichtete 
 qstr_Raider_Parties_Kille|Plünderertrupps vernichtet: {reg12}
 qstr_One_of_the_target_ce|Der Zielort der Flüchtlinge wurde zerstört. Die Flüchtlinge haben sich zerstreut und sind unauffindbar.
 qstr_As_an_Orc_or_a_Dwarf|Als Orc oder Zwerg kannst du die einstellbaren Kamermodi nutzen. Siehe 'Spielkonzepte' für weitere Informationen.
-qstr_Custom_Camera|The Last Days of the Third Age verfügt über eine angepasste 'Kamera'-Perspektive für kleine Charaktere (Orks und Zwerge). Sie ist einfach zu verwenden, verlangt aber möglicherweise eine gewisse Eingewöhnung.^^Es gibt (zusätzlich zur alten Standartposition) zwei neue Modi: Feste Kameraposition und Freier Modus.^^Die feste Kameraposition ist optimal für alle Rassen, kann aber nicht konfiguriert werden.^^Der freie Modus positioniert den Charakter in der Mitte des Bildschirms. Diese Kamera kann den Wünschen des Spielers angepasst werden. Beim Benutzen eines Bogens oder einer Wurfwaffe springt die Kamera an die Standartposition, um das Zielen zu erleichtern (was anfangs ziemlich schwierig sein kann, aber Gewöhnungssache ist). Sobald das Geschoss losgelassen wurde, springt die Kamera zurück auf die selbst eingestellte Position.^^^Steuerung:^^Drücke gleichzeitig Strg+Ende, um die Kamera zwischen den drei Modi umzuschalten: Standartposition / Feste Position / Freier Modus.^^ Freier Modus - Kamerahöhe (Tilt): Drücke und halte Strg+"Page Up" / "Page Down", um die Kamerahöhe einzustellen.^^Freier Modus - Kamerabstand (Zoom): Drücke und halte Strg+ "+" (Nummernblock) / "-" (Nummerblock), um den Kamerabstand einzustellen.^^Halte zusätzlich die Umschalttaste, um eine feinere Einstellung der Kamerahöhe / des Kameraabstands zu ermöglichen.
+qstr_Custom_Camera|The Last Days of the Third Age verfügt über eine angepasste 'Kamera'-Perspektive für kleine Charaktere (Orks und Zwerge). Sie ist einfach zu verwenden, verlangt aber möglicherweise eine gewisse Eingewöhnung.^^Es gibt (zusätzlich zur alten Standardposition) zwei neue Modi: Feste Kameraposition und Freier Modus.^^Die feste Kameraposition ist optimal für alle Rassen, kann aber nicht konfiguriert werden.^^Der freie Modus positioniert den Charakter in der Mitte des Bildschirms. Diese Kamera kann den Wünschen des Spielers angepasst werden. Beim Benutzen eines Bogens oder einer Wurfwaffe springt die Kamera an die Standardposition, um das Zielen zu erleichtern (was anfangs ziemlich schwierig sein kann, aber Gewöhnungssache ist). Sobald das Geschoss losgelassen wurde, springt die Kamera zurück auf die selbst eingestellte Position.^^^Steuerung:^^Drücke gleichzeitig Strg+Ende, um die Kamera zwischen den drei Modi umzuschalten: Standardposition / Feste Position / Freier Modus.^^ Freier Modus - Kamerahöhe (Tilt): Drücke und halte Strg+"Page Up" / "Page Down", um die Kamerahöhe einzustellen.^^Freier Modus - Kameraabstand (Zoom): Drücke und halte Strg+ "+" (Nummernblock) / "-" (Nummernblock), um den Kameraabstand einzustellen.^^Halte zusätzlich die Umschalttaste, um eine feinere Einstellung der Kamerahöhe / des Kameraabstands zu ermöglichen.
 qstr_{reg65?my_Lady:my_Lo|{reg65?meine Herrin:mein Herr}
 qstr_{reg65?My_Lady:My_Lo|{reg65?Meine Herrin:Mein Herr}
 qstr_{reg65?mistress:mast|{reg65?Gebieterin:Gebieter}
@@ -1267,13 +1267,13 @@ qstr_Merry_asked_you_to_d|Merry bat dich, eine Nachricht an seinen Vetter Pippin
 qstr_Pippin_asked_you_to_|Pippin bat dich, eine Nachricht an seinen Vetter Merry in Minas Tirith zu überbringen.
 qstr_Tell_him_I_ve_grown_|Sagt ihm, ich bin um einen ganzen Zoll gewachsen!
 qstr_Tell_Pip_he_smokes_t|Sagt Pip, dass er zu viel raucht!
-qstr_Tell_him_I_can_ride_|Sagt ihm, dass ich nun auf einem richtigen Pferd reiten kann.
-qstr_Ask_him_if_he_has_an|Fragt ihn, ob er etwas Pfeifenkraut übrig hat.
-qstr_Tell_him_I_ll_be_the|Sagt ihm, dass ich der größere sein werde, wenn wir uns wiedersehen.
+qstr_Tell_him_I_can_ride_|Sagt ihm, dass ich nun auf einem richtigen Pferd reiten kann!
+qstr_Ask_him_if_he_has_an|Fragt ihn, ob er etwas Pfeifenkraut übrig hat!
+qstr_Tell_him_I_ll_be_the|Sagt ihm, dass ich der größere sein werde, wenn wir uns wiedersehen!
 qstr_Ask_if_he_s_seen_Gan|Fragt ihn, ob er Gandalf gesehen hat!
 qstr_You_gained_250_exper|250 Erfahrungspunkte erhalten.
-; qstr_Hrooom..._Hmmm...Who|Hrooom... Hmmm...Who are you?
-; qstr_Hrooom..._Hmmm...Oh_|Hrooom... Hmmm...Oh, it's you again, {playername}.
+qstr_Hrooom..._Hmmm...Who|Hrooom... Hmmm...Wer bist du?
+qstr_Hrooom..._Hmmm...Oh_|Hrooom... Hmmm... Oh, Du bist es wieder, {playername}.
 qstr_Treebeard_wants_you_|Baumbart bat Euch, die Orks, welche die Bäume in Fangorn abholzen, zu finden und zu besiegen.
 qstr_Something_wrong_not_e|Nicht genügend Soldaten für Spähtrupp
 qstr_my_home_town|meine Heimatstadt
@@ -1296,7 +1296,7 @@ qstr_I_need_some_soldiers|Ich brauche einige Soldaten, die meine Toten ersetzen.
 qstr_Maybe_the_weaklings_|Die Schwächlinge aus dem Süden müssen ihre weichhäutigen Trolle vielleicht mit Rüstungen schützen, doch nicht wir - unsere Trolle sind aus Gundabad!
 qstr_Do_I_look_like_a_smi|Sehe ich aus wie ein Schmied? Pah! Geh und sprich mit einem, wenn du Rüstungen brauchst.
 qstr_Excellent_job_{s23}!|Hervorragende Arbeit, {23}! Ich wünschte all unsere Anführer wären so hingebungsvoll wie du.^
-qstr_Nicely_done_{s23}.|Schön gemacht, {s23}.
+qstr_Nicely_done_{s23}.|Gut gemacht, {s23}.
 qstr_Good_work_{s23}.|Gute Arbeit, {s23}.
 qstr_The_more_you_capture|Je mehr du gefangen nimmst, desto besser, {s23}.
 qstr_Caught_a_few_straggl|Hast du einige Nachzügler gefangen, {s23}?
@@ -1352,10 +1352,10 @@ qstr_This_is_evil_news_yo|Ihr bringt schlimme Neuigkeiten. Die schwarzen Segel w
 qstr_This_is_evil_news_you|Ihr bringt schlimme Neuigkeiten. Die schwarzen Segel werden immer kühner und niemand in Belfalas ist mehr vor ihnen sicher. Ich kann Euch nicht die alleinige Schuld an Eurem Scheitern geben, {playername}, aber uns wurde wahrlich ein harter Schlag versetzt. Geht nun. Die Hoffnung für Thal schwindet und wir müssen kämpfen, um das, was noch übrig ist, am Leben zu halten.
 qstr_Pah!_It_seems_you_we|Pah! Es sieht so aus, als wärst du eine Landratte, {playername}. Jetzt sitzen sie in ihren hohen Türmen, die Herren von Gondor, eitel und fett wie Könige, und lachen über die schwarzen Segel. Vielleicht wären deine Truppen an den Rudern einer Kriegsgaleere besser aufgehoben. Eine Schande, dass sie unter deinem Befehl stehen, nicht unter meinem. Das Auge wird nicht zufrieden sein, oh nein. Geh nun!
 qstr_Have_you_nothing_bet|Hast du nichts anderes anzubieten als die Ausreden eines Schwächlings, {playername}? Vielleicht bist du doch nicht so stark, wie wir dachten. Diene uns in Zukunft besser, {playername}, denn die Schwachen werden keine Gnade erfahren
-qstr_{playername}_we_have|{playername}, die Macht Isengards ist beinahe gebrochen. Saruman hat sein letztes Aufgebot entsandt, um sich und seinen Turm zu schützen. Reitet mit mir!
+qstr_{playername}_we_have|{playername}, die Macht Isengarts ist beinahe gebrochen. Saruman hat sein letztes Aufgebot entsandt, um sich und seinen Turm zu schützen. Reitet mit mir!
 qstr_Are_you_ready_to_mee|Seid Ihr bereit, um Isengarts letztem Aufgebot zu begegnen?
-qstr_I_am_ready_to_ride_w|Ich bin bereit, mich Euch gegen Isengard zu reiten!
-qstr_I_am_ready_to_ride_wi|Ich bin bereit, mich Euch gegen Isengard zu reiten! Lasst es uns jetzt zu Ende bringen!
+qstr_I_am_ready_to_ride_w|Ich bin bereit, mich Euch gegen Isengart zu reiten!
+qstr_I_am_ready_to_ride_wi|Ich bin bereit, mich Euch gegen Isengart zu reiten! Lasst es uns jetzt zu Ende bringen!
 qstr_I_am_not_ready_to_ri|Ich bin noch nicht bereit. Ich brauche noch etwas Zeit, um mich vorzubereiten.
 qstr_You_do_not_have_enou|Ihr habt nicht genügend Truppen, um in dieser Schlacht von Nutzen zu sein. Hebt noch mindestens 30 Männer aus und sucht mich danach rasch wieder auf!
 qstr_Stay_close_we_will_t|Bleibt in der Nähe. Wir werden uns nahe der Stellung des Feindes versammeln. SObald wir genügend Truppen haben, greifen wir an.
@@ -1373,7 +1373,7 @@ qstr_Your_efficiency_is_p|Eure Tüchtigkeit stellt mich zufrieden, {playername}.
 qstr_It_was_an_honour_to_|Es war mir eine Ehre, Euch zu dienen.
 qstr_Your_wish_is_my_comm|Euer Wunsch ist mir Befehl.
 qstr_Sauron_in_Mordor_the|Sauron in Mordor, die Korsaren von Umbar, die Variags von Khand und die Stämme der Haradrim
-qstr_Saruman_in_Isengard_|Saruman in Isengard und die wilden Menschen aus Dunland
+qstr_Saruman_in_Isengard_|Saruman in Isengart und die wilden Menschen aus Dunland
 qstr_Orcs_of_Moria_and_Do|die Orks von Gundabad und Dol Guldur
 qstr_Orcs_of_Gundabad_and|die Orks von Gundabad und die Stämme von Rhûn
 qstr_Men_of_Gondor|die Menschen von Gondor
@@ -1497,10 +1497,10 @@ qstr_I_want_you_and_your_|Ihr und Eure Männer, ich will dass Ihr
 qstr_{playername}_you_nee|{playername}, Ihr müsst Euch meinen Respekt erst noch verdienen. {s6} {reg22} Krieger von {s7} erschlagt
 qstr_{s9}_wants_you_to_per|{s9} will, dass du mit eigener Hand {reg22} Truppen von {s6} tötest.
 qstr_{s9}_wants_you_and_y|{s9} will, dass du und deine Männer {reg22} Truppen von {s6} tötest.
-qstr_{playername}_we_have|{playername}, die Macht Isengards ist beinahe gebrochen. Saruman hat sein letztes Aufgebot entsandt, um sich und seinen Turm zu schützen. Reitet mit mir!
+qstr_{playername}_we_have|{playername}, die Macht Isengarts ist beinahe gebrochen. Saruman hat sein letztes Aufgebot entsandt, um sich und seinen Turm zu schützen. Reitet mit mir!
 qstr_{playername}_we_have_|{playername}, wir haben schlachte Kunde erhalten. Die Wilden aus Rhûn sind gewitzter und kühner, als wir dachten. Vor unseren Augen verborgen haben sie eine kleine Flotte aus Booten und Flößen gebaut, die sie über den Langen See tragen wird. Und sie beabsichtigen, Esgaroth zu stürmen!^^ Wir müssen ihre Flotte abfangen, ehe sie die Stadt erreicht. Eilt nach Esgaroth und sprecht mit der örtlichen Amtsgewalt!
 qstr_If_you_seek_pillage_|Wenn du auf Raub und Beute aus bist, dann bietet sich dir hier eine einmalige Gelegenheit, {playername}.^^Eine Korsarenflotte wird vom {s7} aus aufbrechen und direkten Kurs auf {s6} setzen, eine reife Frucht, die nur darauf wartet, von uns gepflückt zu werden! Schließe dich ihnen an und du erhältst einen Anteil an der Beute!
-qstr_The_soft_weaklings_o|Die weichen Schwächlinge von Esgaroth haben unseren schnellen Reitern und wilden Kriegern nichts entgegenzusetzen, {playername}, das ist bekannt. Die Menschen vom See glauben jedoch, sie wären jenseits des Wassers vor uns sicher, jedoch werden wir ihnen bald das Gegenteil beweisen!^^ Wir haben Boote und Flöße vorbereitet, stark genug, um unsere Krieger über den See zu tragen. Die Seemenschen werden uns nicht erwarten!^^Gehe zum Hauptlager und sprich mit dem Lageraufseher, wenn du dich dem Unternehmen anschleßen willst.
+qstr_The_soft_weaklings_o|Die weichen Schwächlinge von Esgaroth haben unseren schnellen Reitern und wilden Kriegern nichts entgegenzusetzen, {playername}, das ist bekannt. Die Menschen vom See glauben jedoch, sie wären jenseits des Wassers vor uns sicher, jedoch werden wir ihnen bald das Gegenteil beweisen!^^ Wir haben Boote und Flöße vorbereitet, stark genug, um unsere Krieger über den See zu tragen. Die Seemenschen werden uns nicht erwarten!^^Gehe zum Hauptlager und sprich mit dem Lageraufseher, wenn du dich dem Unternehmen anschließen willst.
 qstr_{s9}_asked_you_to_he|{s9} bat dich, bei der Verteidigung von {s3} gegen den Korsarenangriff zu helfen. Eile zu der Stadt, sprich mit der örtlichen Amtsgewalt und bemanne die Abfangflotte.
 qstr_{s9}_asked_you_to_hel|{s9} bat dich, bei der Verteidigung von Esggaroth gegen den Angriff von See zu helfen. Eile zur Seestadt, sprich mit der örtlichen Amtsgewalt und bemanne die Abfangflotte
 qstr_{s9}_offered_you_an_|{s9} bot dir an, dich dem Seeangriff auf {s3} anzuschließen. Sprich mit dem Lagerverwalter von {s3} und bemanne die Flotte.
@@ -1576,12 +1576,12 @@ qstr_the_Dwarves_so_that_|Zwergengold, sodass Ihr, wenn Ihr den Erebor oder die 
 qstr_Gondor_so_that_if_yo|Geld aus Gondor, sodass Ihr, wenn Ihr einmal durch dieses Land ziehen solltet, dort einen der berühmten Harnische erwerben könnt.
 qstr_Rohan_so_that_if_you|Geld aus Rohan, sodass Ihr, wenn ihr einmal durch dieses Land ziehen solltet, eines seiner berühmten Pferde kaufen könnt.
 qstr_Dale_so_that_if_you_|Geld aus Thal, sodass Ihr, wenn Ihr einmal diese Stadt besucht, einen Ihrer weithin gerühmten Bögen kaufen könnt.
-qstr_Without_my_help_you_|Ohne meine Hilfe wärt ihr alle tot und verbrannt!^^Ich kämpfe im Namen Sarumans von Isengard. Stellt euch mir in den Weg - und sterbt!
+qstr_Without_my_help_you_|Ohne meine Hilfe wärt ihr alle tot und verbrannt!^^Ich kämpfe im Namen Sarumans von Isengart. Stellt euch mir in den Weg - und sterbt!
 qstr_Without_my_help_you_w|Ohne meine Hilfe wärt ihr alle tot und verbrannt!^^Ich kämpfe im Namen des Herrn von Mordor, der bald die ganze Welt beherrschen wird!
 qstr__*snort*_There_is_on|*Schnaubt verächtlch* Es gibt nur den einen Herrn, Made. Früher oder später wirst auch du dich Lugbúrz unterwerfen, du Schwächling!
 qstr_*snort*_Another_one_|*Schnaubt verächtlich* Noch einer fürs Fußvolk, Pfeilfutter! Ab mit dir, Schwächling. Wir können dich hier nicht gebrauchen.
 qstr_Go_to_Moria_and_get_|Geh nach Moria und schnapp dir einen netten Warg - oder ein paar Snagas, die du herumkommandieren kannst!
-qstr_Go_to_Isengard_and_g|Geh nach Isengard und schnapp dir was Nettes für dich - vielleicht schließen sich dir auch einige der Kämpfenden Uruk-hai an?
+qstr_Go_to_Isengard_and_g|Geh nach Isengart und schnapp dir was Nettes für dich - vielleicht schließen sich dir auch einige der Kämpfenden Uruk-hai an?
 qstr_Go_up_north_to_Gunda|Geh nach Norden, nach Gundabad - die Maden da sind dumm und hässlich, aber sie haben gute Pelze.
 qstr_Get_some_snagas_of_y|Presse ein paar Snagas in deinen Dienst, so wie meine hier. Vielleicht hast du bald schon einen richtigen Kriegstrupp?
 qstr_Our_friends_and_alli|Unsere Freunde und Verbündeten werden von dir hören, ganz sicher! Vielleicht geben sie dir sogar ein neues Reittier, oder eine Klinge? Niemand hat Zeit für die Schwachen... Aber wenn du stark bist, ha! Wir helfen denen, die uns helfen, siehst du? Tausche etwas von dieser Beute gegen ein gutes Pferd, vielleicht bei den Menschen von Rhûn - zum Reiten oder zum Essen, ganz wie du willst, harrharr!
