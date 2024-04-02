@@ -2044,6 +2044,7 @@ scripts = [
 	(assign, "$FormAI_AI_no_defense",0), #Kham - FormAI - don't allow AI Defensive
 	(party_set_slot, "p_main_party", slot_party_number_following_player, 0),
 	(assign, "$lore_mode", 1),# unused      
+    (assign, "$play_ambient_sounds", 1), 
 	#Kham - Squelch compiler warnings
 	(assign, "$original_savegame_version", 0),
     (assign, "$cheatmode_used", 0),      
@@ -2055,7 +2056,6 @@ scripts = [
     (assign, "$rescue_convo_troop", 3),
     (assign, "$tld_options_overlay_14", 2),
     (assign, "$g_display_agent_labels", 2),
-	(assign, "$gondor_ai_testing", 2), #unused 
 
     (val_mul, "$hold_f1", "$cheatmode_used"),
     (val_mul, "$hold_f1", "$original_savegame_version"),
@@ -2067,8 +2067,7 @@ scripts = [
     (val_mul, "$attacker_archer_melee", "$rescue_convo_troop"),   
     (val_mul, "$attacker_archer_melee", "$tld_options_overlay_14"),   
     (val_mul, "$attacker_archer_melee", "$g_display_agent_labels"),  
-    (val_mul, "$attacker_archer_melee", "$allies_leadership"),  
-    (val_mul, "$allies_leadership", "$gondor_ai_testing"),      
+    (val_mul, "$attacker_archer_melee", "$allies_leadership"),     
 
 	#Kham - Squelch compiler warnings END
 	
@@ -14414,6 +14413,7 @@ scripts = [
 # to be called every two seconds. TODO for TLD centers
 ("center_ambiance_sounds",
    [(try_begin),
+      (eq, "$play_ambient_sounds", 1), 
       (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
       (neg|is_currently_night),
         (party_get_slot,":sound","$g_encountered_party", slot_center_occasional_sound1_day), 
@@ -32467,5 +32467,43 @@ if is_a_wb_script==1:
         (agent_set_attack_action, ":agent", ":animation", 0), #overhead
     (try_end),
 ]),
+
+# script_sound_props
+# Input: Prop type, pos4 is player position
+("sound_props", [
+    (store_script_param, ":prop", 1),
+    (scene_prop_get_num_instances, ":num_props", ":prop"),
+    (try_for_range, ":count", 0, ":num_props"),
+        (scene_prop_get_instance, ":instance_no", ":prop", ":count"),
+        (prop_instance_get_variation_id, ":sound", ":instance_no"),
+        (val_mul, ":sound", 100),
+        (prop_instance_get_variation_id_2, ":sound_2", ":instance_no"),
+        (val_add, ":sound", ":sound_2"),
+        (assign, reg76, ":sound"), 
+        (prop_instance_get_scale, pos2, ":instance_no"),
+        (position_get_scale_x, ":range", pos2),
+        (val_sub, ":range", 100),
+        (val_mul, ":range", 100),
+        (prop_instance_get_position, pos3, ":instance_no"),
+        (get_distance_between_positions, ":distance", pos3, pos4),
+        # (assign, reg77, ":distance"),
+        # (assign, reg78, ":range"),
+        # (display_message, "@distance {reg77}/{reg78}"),
+        (le, ":distance", ":range"),
+        (scene_prop_slot_eq, ":instance_no", slot_prop_playing_sound, 0),
+        (gt, ":sound", 0),
+        (play_sound_at_position, ":sound", pos3), 
+        (store_last_sound_channel, ":channel"),
+        (scene_prop_set_slot, ":instance_no", slot_prop_playing_sound, ":channel"),
+        (assign, reg78, ":channel"),
+        # (display_message, "@play_sound {reg76}; channel {reg78}"),
+    (else_try),
+        (gt, ":distance", ":range"),
+        (scene_prop_get_slot, ":channel", ":instance_no", slot_prop_playing_sound),
+        (gt, ":channel", 0),
+        (stop_sound_channel, ":channel", 1),
+        (scene_prop_set_slot, ":instance_no", slot_prop_playing_sound, 0),
+    (try_end),
+]),    
 
 ] or []) 

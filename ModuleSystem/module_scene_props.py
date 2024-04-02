@@ -4292,7 +4292,7 @@ scene_props = [
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos4, ":player_agent"),
         (get_distance_between_positions, ":distance", pos1, pos4),
-        (le, ":distance", 20000), #20m
+        (le, ":distance", 15000), #15m
         (play_sound, "snd_dummy_hit"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 2),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
@@ -4329,7 +4329,7 @@ scene_props = [
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos4, ":player_agent"),
         (get_distance_between_positions, ":distance", pos1, pos4),
-        (le, ":distance", 20000), #20m
+        (le, ":distance", 15000), #15m
         (play_sound, "snd_dummy_hit"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 2),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
@@ -4592,8 +4592,8 @@ scene_props = [
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos4, ":player_agent"),
         (get_distance_between_positions, ":distance", pos1, pos4),
-        (le, ":distance", 20000), #20m  
-        (play_sound, "snd_wooden_hit_high_armor_low_damage"),
+        (le, ":distance", 500), #5m  
+        (play_sound, "snd_wooden_hit_high_armor_low_damage", sf_vol_1),
         (particle_system_burst, "psys_game_blood_rand_2", pos1, 100),
         #(particle_system_burst, "psys_dummy_smoke", pos1, 1),
     ])]),
@@ -4702,13 +4702,32 @@ scene_props = [
 # only really works for looping sounds
 ("sound_emitter_var1x100_plus_var2_scalable" ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[												 
     (store_trigger_param_1, ":instance_no"),
+    (set_fixed_point_multiplier, 10000),
     (prop_instance_get_scale, pos2, ":instance_no"),
     (position_get_scale_x, ":scale_x", pos2),
-    (eq, ":scale_x", 0),
-    (display_message, "@sound emitter: var1 x 100 + var2 is sound_no; (scale_x -1) x 100 is range in metres"),  
+    (eq, ":scale_x", 10000), #only show tutorial message if scale is unchanged
+    (display_message, "@debug: sound emitter: var1 x 100 + var2 is sound_no; (scale_x -1) x 100 is range in metres"),
+    (display_message, "@debug: scale prop to disable this message"),
   ])]),
 
+# var1 x 100 + var2 is sound_no; (scale_x -1) x 100 is range in metres
+# only really works for looping sounds
+("sound_emitter_ambient_var1x100_plus_var2_scalable" ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[												 
+    (store_trigger_param_1, ":instance_no"),
+    (set_fixed_point_multiplier, 10000),
+    (prop_instance_get_scale, pos2, ":instance_no"),
+    (position_get_scale_x, ":scale_x", pos2),
+    (eq, ":scale_x", 10000), #only show tutorial message if scale is unchanged
+    (display_message, "@{!} debug: sound emitter: var1 x 100 + var2 is sound_no; (scale_x -1) x 100 is range in metres"),
+    (display_message, "@{!} debug: ambient sound emitter: stops all looping sounds, sets a new ambient sound while in range"),
+    (display_message, "@{!} debug: scale prop to disable this message"),
+  ])]),
+
+("sound_fire_big_scalable" ,sokf_invisible,"collision_cube","0", []),
+
 ("ai_melee_on_off_var1",sokf_invisible,"sphere_1m","0", []), #var 1 sets agent_ai_set_always_attack_in_melee
+
+("rock_bridge",0,"rock_bridge_tld","bo_rock_bridge_tld", []),
 
 ] + (is_a_wb_sceneprop==1 and [ 
   ("fellbeast", sokf_moveable|sokf_dynamic_physics, "beest", "0", [
