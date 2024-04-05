@@ -162,8 +162,8 @@ sounds = [
 ("man_hit_cut_weak",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
 ("man_hit_cut_strong",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
 ("man_victory",sf_priority_5|sf_vol_10, ["man_victory_3.wav","man_victory_4.wav","man_victory_5.wav","man_victory_8.wav","man_victory_15.wav","man_victory_49.wav","man_victory_52.wav","man_victory_54.wav","man_victory_57.wav","man_victory_71.wav"]),
-("fire_loop",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]), #"Fire_Torch_Loop3.ogg"
-("torch_loop",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]),
+("fire_loop",sf_looping|sf_start_at_random_pos, ["CWE_fx_fire_large_01_lp.ogg"]), #"Fire_Torch_Loop3.ogg"
+("torch_loop",sf_looping|sf_start_at_random_pos, ["CWE_fx_fire_embers_02b_lp.ogg"]),
 ("dummy_hit",sf_priority_9, ["shield_hit_cut_3.wav","shield_hit_cut_5.wav"]),
 ("dummy_destroyed",sf_priority_9, ["shield_broken.wav"]),
 ("gourd_destroyed",sf_priority_9, ["shield_broken.wav"]),#TODO

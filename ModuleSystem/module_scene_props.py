@@ -116,6 +116,10 @@ scene_props = [
         (particle_system_add_new, "psys_torch_smoke"),
         (particle_system_add_new, "psys_torch_fire_sparks"),
         #(play_sound, "snd_torch_loop", 0), #InVain disabled to prevent sound overflow
+         ] + (is_a_wb_sceneprop==1 and [   
+        (store_trigger_param_1, ":instance_no"),
+        (scene_prop_set_slot, ":instance_no", slot_prop_sound, "snd_torch_loop"),
+        ] or []) + [ 
         (set_position_delta,0,-35,56),
         (particle_system_add_new, "psys_fire_glow_1"),
 #        (particle_system_emit, "psys_fire_glow_1",9000000),
@@ -140,6 +144,10 @@ scene_props = [
         (particle_system_add_new, "psys_fire_glow_1"),
         (particle_system_emit, "psys_fire_glow_1",9000000),
         #(play_sound, "snd_torch_loop", 0), #InVain disabled to prevent sound overflow
+         ] + (is_a_wb_sceneprop==1 and [   
+        (store_trigger_param_1, ":instance_no"),
+        (scene_prop_set_slot, ":instance_no", slot_prop_sound, "snd_torch_loop"),
+        ] or []) + [        
     ])]),
 #  ("Baggage",sokf_place_at_origin|sokf_entity_body,"package","bobaggage"),
 ("barrier_20m",sokf_invisible|sokf_type_barrier,"barrier_20m","bo_barrier_20m", []),
@@ -1088,6 +1096,10 @@ scene_props = [
     #(particle_system_add_new, "psys_fire_glow_1"),
     #(set_position_delta,0,0,95),
     #(particle_system_add_new, "psys_cooking_smoke"),
+     ] + (is_a_wb_sceneprop==1 and [   
+    (store_trigger_param_1, ":instance_no"),
+    (scene_prop_set_slot, ":instance_no", slot_prop_sound, "snd_torch_loop"),
+    ] or []) + [ 
   ]),
 ]),
 ("cooking_fire",0,"fire_floor","0",
@@ -1099,6 +1111,10 @@ scene_props = [
         (set_position_delta,0,0,50),
         (particle_system_add_new, "psys_fire_glow_1"),
         (particle_system_emit, "psys_fire_glow_1",9000000),
+        ] + (is_a_wb_sceneprop==1 and [   
+        (store_trigger_param_1, ":instance_no"),
+        (scene_prop_set_slot, ":instance_no", slot_prop_sound, "snd_torch_loop"),
+        ] or []) + [ 
     ]),
 ]),
 ("cauldron_a",0,"cauldron_a","bo_cauldron_a", []),
@@ -1197,7 +1213,11 @@ scene_props = [
      (set_position_delta,70,0,-5),
      (particle_system_add_new, "psys_fire_glow_1"),
      (particle_system_emit, "psys_fire_glow_1",9000000),
-     #(play_sound, "snd_fire_loop", 0), #InVain: disabled to prevent sound overflow
+     #(play_sound, "snd_torch_loop", 0), #InVain: disabled to prevent sound overflow
+         ] + (is_a_wb_sceneprop==1 and [   
+        (store_trigger_param_1, ":instance_no"),
+        (scene_prop_set_slot, ":instance_no", slot_prop_sound, "snd_torch_loop"),
+        ] or []) + [ 
     ]),
 ]),
 
@@ -4255,7 +4275,7 @@ scene_props = [
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos4, ":player_agent"),
         (get_distance_between_positions, ":distance", pos1, pos4),
-        (le, ":distance", 20000), #20m  
+        (le, ":distance", 1500), #15m  
         (play_sound, "snd_dummy_hit"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 2),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
@@ -4488,7 +4508,7 @@ scene_props = [
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos4, ":player_agent"),
         (get_distance_between_positions, ":distance", pos1, pos4),
-        (le, ":distance", 20000), #20m
+        (le, ":distance", 1500), #15m
         (play_sound, "snd_shield_hit_metal_wood"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 1),
         #(particle_system_burst, "psys_dummy_straw", pos1, 10),
@@ -4723,7 +4743,9 @@ scene_props = [
     (display_message, "@{!} debug: scale prop to disable this message"),
   ])]),
 
-("sound_fire_big_scalable" ,sokf_invisible,"collision_cube","0", []),
+#("sound_fire_big_scalable" ,sokf_invisible,"collision_cube","0", []),
+("sound_fire_big_scalable"       ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,0),(play_sound, "snd_torch_loop", 0)])]),
+
 
 ("ai_melee_on_off_var1",sokf_invisible,"sphere_1m","0", []), #var 1 sets agent_ai_set_always_attack_in_melee
 
