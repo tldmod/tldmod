@@ -17,7 +17,7 @@ sounds = [
 ("sword_clash_1", 0,["sword_clank_metal_09.wav","sword_clank_metal_09b.wav","sword_clank_metal_10.wav","sword_clank_metal_10b.wav","sword_clank_metal_12.wav","sword_clank_metal_12b.wav","sword_clank_metal_13.wav","sword_clank_metal_13b.wav"]),
 ("sword_clash_2", 0,["s_swordClash2.wav"]),
 ("sword_clash_3", 0,["s_swordClash3.wav"]),
-("sword_swing", sf_vol_8|sf_priority_2,["s_swordSwing.wav"]),
+("sword_swing", sf_vol_3|sf_priority_2,["s_swordSwing.wav"]),
 ("footstep_grass", sf_vol_4|sf_priority_1,["footstep_1.wav","footstep_2.wav","footstep_3.wav","footstep_4.wav"]),
 ("footstep_wood", sf_vol_6|sf_priority_1,["footstep_wood_1.wav","footstep_wood_2.wav","footstep_wood_4.wav"]),
 ("footstep_water", sf_vol_4|sf_priority_3,["water_walk_1.wav","water_walk_2.wav","water_walk_3.wav","water_walk_4.wav"]),
@@ -163,7 +163,7 @@ sounds = [
 ("man_hit_cut_strong",sf_priority_5|sf_vol_10, ["man_hit_13.wav","man_hit_29.wav","man_hit_32.wav","man_hit_47.wav","man_hit_57.wav"]),
 ("man_victory",sf_priority_5|sf_vol_10, ["man_victory_3.wav","man_victory_4.wav","man_victory_5.wav","man_victory_8.wav","man_victory_15.wav","man_victory_49.wav","man_victory_52.wav","man_victory_54.wav","man_victory_57.wav","man_victory_71.wav"]),
 ("fire_loop",sf_looping|sf_start_at_random_pos, ["CWE_fx_fire_large_01_lp.ogg"]), #"Fire_Torch_Loop3.ogg"
-("torch_loop",sf_looping|sf_start_at_random_pos, ["CWE_fx_fire_embers_02b_lp.ogg"]),
+("torch_loop",sf_priority_2|sf_vol_2|sf_looping|sf_start_at_random_pos, ["CWE_fx_fire_embers_02b_lp.ogg"]),
 ("dummy_hit",sf_priority_9, ["shield_hit_cut_3.wav","shield_hit_cut_5.wav"]),
 ("dummy_destroyed",sf_priority_9, ["shield_broken.wav"]),
 ("gourd_destroyed",sf_priority_9, ["shield_broken.wav"]),#TODO
@@ -283,13 +283,13 @@ sounds = [
 ("water_wavesplash_ambiance",sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["water_wavesplash_loop.wav"]),
 ("wind_ambiance"            ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["wind_loop.wav"]),
 ("isengard_ambiance"        ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["isen_loop.wav"]),
-("evilmen_ambiance"         ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["evil_men_loop.wav"]),
+("evilmen_ambiance"         ,sf_2d|sf_priority_8|sf_vol_4|sf_looping, ["evil_men_loop.wav"]),
 ("orcs_ambiance"            ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["beast_loop.wav"]),
 ("morgul_ambiance"          ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["morgul_loop.wav"]),
 ("gondor_ambiance"          ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["gondor_people_loop.wav"]),
 ("rohan_ambiance"           ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["rohan_people_loop.wav"]),
 ("dwarf_ambiance"           ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["dwarf_men_loop.wav"]),
-("harad_ambiance"           ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["harad_loop.wav"]),
+("harad_ambiance"           ,sf_2d|sf_priority_8|sf_vol_4|sf_looping, ["harad_loop.wav"]),
 ("deadmarshes_ambiance"     ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["evil_flies_loop.wav"]),
 ("night_ambiance"           ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["night_loop.wav"]),
 ("neutralforest_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["neutral_forest_loop.wav"]),
@@ -330,12 +330,12 @@ sounds = [
 ("horse_low_whinny1",          sf_vol_9, ["horse_whinny-1.wav","horse_whinny-2.wav"]),
 ("mount_death",                sf_vol_9, ["horse_snort_4.wav","horse_snort_5.wav"]),
 
-("waterfall" ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["henneth_loop.wav"]),
+("waterfall" ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["CWE_amb_waterfall_medium_01_2d_lp.ogg"]),
 ("orc_cheer", sf_priority_5|sf_vol_10,                                  ["orc_yell_1.wav","orc_yell_2.wav","orc_grunt_long_1.wav", "orc_victory_1.wav","orc_victory_2.wav","orc_victory_3.wav","orc_victory_4.wav","orc_victory_5.wav","orc_victory_6.wav"]), 
 # directional sounds for props
 ("water_wavesplash_source",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["water_wavesplash_loop.wav"]),
 ("water_waves_source"     ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["water_waves_loop.wav"]),
-("water_splash_source"    ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["water_splash_loop.wav"]),
+("water_splash_source"    ,sf_priority_9|sf_vol_9|sf_looping|sf_start_at_random_pos, ["water_splash_loop.ogg"]),
 #("fire_loop"             ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]), #"Fire_Torch_Loop3.ogg"
 #("torch_loop"            ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]),
 
@@ -358,8 +358,8 @@ sounds = [
 ("spider_strike", sf_priority_6|sf_vol_10, ["spider_battle01.wav", "trollSnarl.wav",]),
 ("wolf_strike",   sf_priority_6|sf_vol_10, ["warg_growl01.wav", "trollSnarl.wav",]),
 
-("bees_people_ambiance"   	,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["bees_people.wav"]),
-("bees_birds_ambiance"      ,sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["bees_birds.wav"]),
+("bees_people_ambiance"   	,sf_2d|sf_priority_8|sf_vol_4|sf_looping, ["bees_people.wav"]),
+("bees_birds_ambiance"      ,sf_2d|sf_priority_8|sf_vol_5|sf_looping, ["bees_birds.wav"]),
 
 #doubles for muted hardcoded sounds
 ("camel_sounds", 0,                      ["camelGargle.wav", "camelGroan01.wav", "camelGroan02.wav", "camelRoar01.wav"]),

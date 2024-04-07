@@ -3072,7 +3072,7 @@ scene_props = [
   
   ])]),
 	
-("troop_civilian_sitting_ground",sokf_invisible,"sitting","bo_sitting", [(ti_on_init_scene_prop,[
+("troop_civilian_sitting_ground",sokf_invisible,"sitting","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (set_fixed_point_multiplier, 100),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
