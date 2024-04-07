@@ -1119,8 +1119,66 @@ scene_props = [
 ]),
 ("cauldron_a",0,"cauldron_a","bo_cauldron_a", []),
 ("fry_pan_a",0,"fry_pan_a","0", []),
-("tripod_cauldron_a",0,"tripod_cauldron_a","bo_tripod_cauldron_a", []),
-("tripod_cauldron_b",0,"tripod_cauldron_b","bo_tripod_cauldron_b", []),
+
+# Mark7's Dynamic Props
+("tripod_cauldron_a",0,"tripod_cauldron_a_new","bo_tripod_cauldron_a", [
+    ] + (is_a_wb_sceneprop==1 and [  
+     (ti_on_scene_prop_init,[
+         (store_trigger_param_1, ":instance_no"),
+        (store_random_in_range,":r",0,100), # Random animations time
+				(try_begin),
+          (ge, ":r", 50),
+          (try_begin),
+          (ge, ":r", 75),
+          (prop_instance_deform_in_cycle_loop, ":instance_no", 1,24, 3000),
+          #(display_message, "@tripod_cauldron_a ANIM + Fast"),
+          (else_try),
+          (prop_instance_deform_in_cycle_loop, ":instance_no", 1,24, 4000),
+          #(display_message, "@tripod_cauldron_a ANIM + Slow"),
+          (try_end),
+        (else_try),
+        (try_begin),
+          (ge, ":r", 25),
+         (prop_instance_deform_in_cycle_loop, ":instance_no", 24,1, 3000),
+         #(display_message, "@tripod_cauldron_a ANIM - Fast"),
+          (else_try),
+          (prop_instance_deform_in_cycle_loop, ":instance_no", 24,1, 4000),
+          #(display_message, "@tripod_cauldron_a ANIM - Slow"),
+          (try_end),
+        (try_end),
+    ]),
+    ] or []) + [ 
+     ]),
+("tripod_cauldron_b",0,"tripod_cauldron_b_new","bo_tripod_cauldron_b", [
+     ] + (is_a_wb_sceneprop==1 and [  
+     (ti_on_scene_prop_init,[
+         (store_trigger_param_1, ":instance_no"),
+        (store_random_in_range,":r",0,100), # Random animations time
+				(try_begin),
+          (ge, ":r", 50),
+          (try_begin),
+          (ge, ":r", 75),
+          (prop_instance_deform_in_cycle_loop, ":instance_no", 1,24, 3000),
+          #(display_message, "@tripod_cauldron_b ANIM + Fast"),
+          (else_try),
+          (prop_instance_deform_in_cycle_loop, ":instance_no", 1,24, 4000),
+          #(display_message, "@tripod_cauldron_b ANIM + Slow"),
+          (try_end),
+        (else_try),
+        (try_begin),
+          (ge, ":r", 25),
+         (prop_instance_deform_in_cycle_loop, ":instance_no", 24,1, 3000),
+         #(display_message, "@tripod_cauldron_b ANIM - Fast"),
+          (else_try),
+          (prop_instance_deform_in_cycle_loop, ":instance_no", 24,1, 4000),
+          #(display_message, "@tripod_cauldron_b ANIM - Slow"),
+          (try_end),
+        (try_end),
+    ]),
+    ] or []) + [ 
+     ]),
+# Mark7's Dynamic Props end     
+    
 ("open_stable_a",0,"Gutek_open_stable_a","bo_open_stable_a", []),
 ("open_stable_b",0,"Gutek_open_stable_b","bo_open_stable_b", []),
 ("plate_a",0,"plate_a","0", []),
@@ -4000,6 +4058,37 @@ scene_props = [
       ])]),
 
 ("glow_a", 0, "glow_a", "0", []),
+
+# Mark7's Dynamic Props
+      # ("glow_a", 0, "glow_a_new", "0", [
+      # ] + (is_a_wb_sceneprop==1 and [
+     # (ti_on_scene_prop_init,[
+         # (store_trigger_param_1, ":instance_no"),
+        # (store_random_in_range,":r",0,100), # Random animations time
+				# (try_begin),
+          # (ge, ":r", 50),
+          # (try_begin),
+          # (ge, ":r", 75),
+          # (prop_instance_deform_in_cycle_loop, ":instance_no", 1,24, 3000),
+          # #(display_message, "@glow_a ANIM + Fast"),
+          # (else_try),
+          # (prop_instance_deform_in_cycle_loop, ":instance_no", 1,24, 4000),
+          # #(display_message, "@glow_a ANIM + Slow"),
+          # (try_end),
+        # (else_try),
+        # (try_begin),
+          # (ge, ":r", 25),
+         # (prop_instance_deform_in_cycle_loop, ":instance_no", 24,1, 3000),
+         # #(display_message, "@glow_a ANIM - Fast"),
+          # (else_try),
+          # (prop_instance_deform_in_cycle_loop, ":instance_no", 24,1, 4000),
+          # #(display_message, "@glow_a ANIM - Slow"),
+          # (try_end),
+        # (try_end),
+    # ]),
+    # ] or []) + [ 
+     # ]),
+     
 ("glow_a_daytime_specific", 0, "glow_a", "0", [ #important: place according to current daytime (noon = point north)
      (ti_on_init_scene_prop,
       [   (store_trigger_param_1, ":prop_instance_no"),
@@ -4010,7 +4099,36 @@ scene_props = [
           (position_rotate_z, pos1, ":daytime"),
           (prop_instance_set_position, ":prop_instance_no", pos1),
       ])]),
-("glow_b", 0, "glow_b", "0", []),
+      
+ ("glow_b", 0, "glow_b_new", "0", [
+     ] + (is_a_wb_sceneprop==1 and [
+     (ti_on_scene_prop_init,[
+         (store_trigger_param_1, ":instance_no"),
+        (store_random_in_range,":r",0,100), # Random animations time
+				(try_begin),
+          (ge, ":r", 50),
+          (try_begin),
+          (ge, ":r", 75),
+          (prop_instance_deform_in_cycle_loop, ":instance_no", 1,24, 3000),
+          #(display_message, "@glow_b ANIM + Fast"),
+          (else_try),
+          (prop_instance_deform_in_cycle_loop, ":instance_no", 1,24, 4000),
+          #(display_message, "@glow_b ANIM + Slow"),
+          (try_end),
+        (else_try),
+        (try_begin),
+          (ge, ":r", 25),
+         (prop_instance_deform_in_cycle_loop, ":instance_no", 24,1, 3000),
+         #(display_message, "@glow_b ANIM - Fast"),
+          (else_try),
+          (prop_instance_deform_in_cycle_loop, ":instance_no", 24,1, 4000),
+          #(display_message, "@glow_b ANIM - Slow"),
+          (try_end),
+        (try_end),
+    ]),
+     ] or []) + [ 
+     ]),
+# Mark7's Dynamic Props end
 
 ("ai_fadeout_sphere",sokf_invisible,"sphere_1m","0", []),
 ("ai_limiter_spikes_broken" ,sokf_invisible|sokf_type_ai_limiter|sokf_moveable,"barrier_2m" ,"bo_barrier_2m" , []),

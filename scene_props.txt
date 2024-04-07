@@ -1886,10 +1886,10 @@ spr_cauldron_a 0 0 cauldron_a bo_cauldron_a 0
 spr_fry_pan_a 0 0 fry_pan_a 0 0
 
 
-spr_tripod_cauldron_a 0 0 tripod_cauldron_a bo_tripod_cauldron_a 0
+spr_tripod_cauldron_a 0 0 tripod_cauldron_a_new bo_tripod_cauldron_a 0
 
 
-spr_tripod_cauldron_b 0 0 tripod_cauldron_b bo_tripod_cauldron_b 0
+spr_tripod_cauldron_b 0 0 tripod_cauldron_b_new bo_tripod_cauldron_b 0
 
 
 spr_open_stable_a 0 0 Gutek_open_stable_a bo_open_stable_a 0
@@ -6196,7 +6196,7 @@ spr_glow_a_daytime_specific 0 0 glow_a 0 1
 -40  6 2071 1 1224979098644774912 2271 1 1224979098644774913 2107 2 1224979098644774913 15 1850 2 1 1224979098644774912 725 2 1 1224979098644774913 1855 2 1224979098644774912 1 
 
 
-spr_glow_b 0 0 glow_b 0 0
+spr_glow_b 0 0 glow_b_new 0 0
 
 
 spr_ai_fadeout_sphere 16384 0 sphere_1m 0 0
