@@ -32447,7 +32447,7 @@ if is_a_wb_script==1:
     (try_for_range, ":count", 0, ":num_props"),
         (scene_prop_get_instance, ":instance_no", ":prop", ":count"),
         (prop_instance_get_position, pos2, ":instance_no"),
-        (scene_prop_get_slot, ":agent", ":instance_no", slot_gate_aggravator),
+        (scene_prop_get_slot, ":agent", ":instance_no", slot_prop_agent_1),
         (prop_instance_get_position, pos3,":instance_no"),
         (get_distance_between_positions, ":distance", pos3, pos4),
         # (try_begin),

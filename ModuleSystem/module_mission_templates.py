@@ -5105,7 +5105,7 @@ mission_templates = [ # not used in game
                 (set_spawn_position, pos1),
                 (spawn_agent,"trp_gate_aggravator"),
                 (assign, ":gate_aggravator", reg0),
-                (scene_prop_set_slot, ":gate_no", slot_gate_aggravator, ":gate_aggravator"),
+                (scene_prop_set_slot, ":gate_no", slot_prop_agent_1, ":gate_aggravator"),
                 (agent_set_speed_limit, ":gate_aggravator", 0),
                 (agent_set_team, ":gate_aggravator", 2),
                 #] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)

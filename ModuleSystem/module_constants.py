@@ -669,9 +669,10 @@ slot_scene_belfry_props_begin   = 10
 ##  SCENE PROP SLOTS            #############################
 ########################################################
 scene_prop_open_or_close_slot             = 0 #0= closed, 1=open, 2=destroyed
-slot_gate_aggravator                      = 1 #stores agent_no of assigned gate aggravator
-slot_prop_playing_sound                   = 2 #0 or 1, may also store sound channel
-slot_prop_sound                           = 3 #stores sound_ID to play
+slot_prop_agent_1                      = 1 #stores agent_no of assigned gate aggravator
+slot_prop_agent_2                      = 2 #stores agent_no of secondary agent if needed
+slot_prop_playing_sound                   = 3 #0 or 1, may also store sound channel
+slot_prop_sound                           = 4 #stores sound_ID to play
 
 ########################################################
 ##  TROOP SLOTS            #############################

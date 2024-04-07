@@ -1728,7 +1728,7 @@ scene_props = [
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
     (agent_set_no_dynamics, ":gate_aggravator",1),
     (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
-    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, ":gate_aggravator"),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, ":gate_aggravator"),
     ] or []) + [
     #(team_give_order, 7, grc_everyone, mordr_stand_ground),
   ]),
@@ -1746,7 +1746,7 @@ scene_props = [
     #(assign, ":gate_aggravator_found", 0),
 
     ] + (is_a_wb_sceneprop==1 and [        
-    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
+    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_prop_agent_1),
     (call_script, "script_remove_agent", ":gate_aggravator"), 
     ] or [    
     (assign, ":gate_aggravator_found", 0),
@@ -1820,7 +1820,7 @@ scene_props = [
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
     (agent_set_no_dynamics, ":gate_aggravator",1),
     (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
-    (scene_prop_set_slot, ":gate_no", slot_gate_aggravator, ":gate_aggravator"),
+    (scene_prop_set_slot, ":gate_no", slot_prop_agent_1, ":gate_aggravator"),
     ] or []) + [
     #(team_give_order, 7, grc_everyone, mordr_stand_ground),
   ]),
@@ -1838,7 +1838,7 @@ scene_props = [
     (display_message,"@Gate is breached!"),
     
     ] + (is_a_wb_sceneprop==1 and [        
-    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
+    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_prop_agent_1),
     (call_script, "script_remove_agent", ":gate_aggravator"), 
     ] or [    
     (assign, ":gate_aggravator_found", 0),
@@ -2910,7 +2910,7 @@ scene_props = [
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
     (agent_set_no_dynamics, ":gate_aggravator",1),
     (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
-    (scene_prop_set_slot, ":gate_no", slot_gate_aggravator, ":gate_aggravator"),
+    (scene_prop_set_slot, ":gate_no", slot_prop_agent_1, ":gate_aggravator"),
     ] or []) + [
     #(team_give_order, 7, grc_everyone, mordr_stand_ground),
   ]),
@@ -2927,7 +2927,7 @@ scene_props = [
     (display_message,"@Gate is breached!"),
     
     ] + (is_a_wb_sceneprop==1 and [        
-    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
+    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_prop_agent_1),
     (call_script, "script_remove_agent", ":gate_aggravator"), 
     ] or [    
     (assign, ":gate_aggravator_found", 0),
@@ -3692,7 +3692,7 @@ scene_props = [
     #(assign, ":gate_aggravator_found", 0),
 
     ] + (is_a_wb_sceneprop==1 and [        
-    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
+    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_prop_agent_1),
     (call_script, "script_remove_agent", ":gate_aggravator"), 
     ] or [    
     (assign, ":gate_aggravator_found", 0),
@@ -3757,7 +3757,7 @@ scene_props = [
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
     (agent_set_no_dynamics, ":gate_aggravator",1),
     (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
-    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, ":gate_aggravator"),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, ":gate_aggravator"),
     ] or []) + [
   ]),
    
@@ -3771,7 +3771,7 @@ scene_props = [
     (play_sound, "snd_dummy_destroyed"),
     
     ] + (is_a_wb_sceneprop==1 and [        
-    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
+    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_prop_agent_1),
     (call_script, "script_remove_agent", ":gate_aggravator"), 
     ] or [    
     (assign, ":gate_aggravator_found", 0),
@@ -3840,7 +3840,7 @@ scene_props = [
     ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
     (agent_set_no_dynamics, ":gate_aggravator",1),
     (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
-    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, ":gate_aggravator"),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, ":gate_aggravator"),
     ] or []) + [
   ]),
    
@@ -3854,7 +3854,7 @@ scene_props = [
     (play_sound, "snd_dummy_destroyed"),
     
     ] + (is_a_wb_sceneprop==1 and [        
-    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_gate_aggravator),
+    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_prop_agent_1),
     (call_script, "script_remove_agent", ":gate_aggravator"), 
     ] or [    
     (assign, ":gate_aggravator_found", 0),
@@ -4223,6 +4223,7 @@ scene_props = [
     (spawn_agent, ":troop"), (assign, ":fighter_1", reg0),(agent_set_team, ":fighter_1", 0),(agent_ai_set_interact_with_player, ":fighter_1", 0),(agent_set_is_alarmed, ":fighter_1", 1),(agent_set_no_death_knock_down_only, ":fighter_1", 1),
     (agent_get_item_slot, ":old_weapon", ":fighter_1", 0), #assume that weapon is in first slot
     (agent_unequip_item, ":fighter_1", ":old_weapon", 0),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, ":fighter_1"),
     (item_get_type, ":weapon_type", ":old_weapon"),
     (assign, ":new_weapon", itm_wood_club),
     (try_begin),
@@ -4238,6 +4239,7 @@ scene_props = [
     (position_rotate_z, pos1, 180),
     (set_spawn_position, pos1),
     (spawn_agent, ":troop"),(assign, ":fighter_2", reg0),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_2, ":fighter_2"),
     (agent_set_team, ":fighter_2", 0),(agent_ai_set_interact_with_player, ":fighter_2", 0),(agent_set_is_alarmed, ":fighter_2", 1),(agent_set_no_death_knock_down_only, ":fighter_2", 1),
     (agent_add_relation_with_agent, ":fighter_2", ":fighter_1", -1),(agent_add_relation_with_agent, ":fighter_1", ":fighter_2", -1),
     (agent_get_item_slot, ":old_weapon", ":fighter_2", 0), #assume that weapon is in first slot
@@ -4268,7 +4270,7 @@ scene_props = [
     (position_move_y, pos1, -80,0),(set_spawn_position, pos1),
     (spawn_agent, ":troop"),(agent_set_team, reg0, 0),
     #(agent_set_no_dynamics, reg0, 1),
-    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_scripted_destination, reg0, pos1), 
     (agent_set_damage_modifier, reg0, 0),
     #(agent_add_relation_with_agent, reg0, reg1, -1),(agent_ai_set_interact_with_player, reg0, 0),(agent_set_is_alarmed, reg0, 1),(agent_set_no_death_knock_down_only, reg0, 1),
@@ -4324,11 +4326,13 @@ scene_props = [
     (store_faction_of_party, ":fac", "$current_town"),
     (faction_get_slot, ":troop", ":fac", slot_faction_troll_troop),
     (gt, ":troop", 0),
-    (spawn_agent, ":troop"), (assign, ":fighter_1", reg0),(agent_set_team, ":fighter_1", 0),(agent_ai_set_interact_with_player, ":fighter_1", 0),(agent_set_is_alarmed, ":fighter_1", 1),(agent_set_no_death_knock_down_only, ":fighter_1", 1),
+    (spawn_agent, ":troop"), (assign, ":fighter_1", reg0),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, ":fighter_1"),(agent_set_team, ":fighter_1", 0),(agent_ai_set_interact_with_player, ":fighter_1", 0),(agent_set_is_alarmed, ":fighter_1", 1),(agent_set_no_death_knock_down_only, ":fighter_1", 1),
     (position_move_y, pos1, 300,0),
     (position_rotate_z, pos1, 180),
     (set_spawn_position, pos1),
     (spawn_agent, ":troop"),(assign, ":fighter_2", reg0),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_2, ":fighter_2"),
     (agent_set_team, ":fighter_2", 0),(agent_ai_set_interact_with_player, ":fighter_2", 0),(agent_set_is_alarmed, ":fighter_2", 1),(agent_set_no_death_knock_down_only, ":fighter_2", 1),
     (agent_add_relation_with_agent, ":fighter_2", ":fighter_1", -1),(agent_add_relation_with_agent, ":fighter_1", ":fighter_2", -1),
     ] or []) + [  
@@ -4343,6 +4347,7 @@ scene_props = [
     (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_archer_troop),
     (spawn_agent, "trp_gate_aggravator"),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_2, reg0),
     (agent_set_team, reg0, 0), 
     (assign, reg1, reg0),
     (agent_set_no_dynamics, reg0, 1), 
@@ -4356,7 +4361,7 @@ scene_props = [
     #(agent_set_no_dynamics, reg0, 1),
     (agent_set_scripted_destination, reg0, pos1), 
     (agent_add_relation_with_agent, reg0, reg1, -1),(agent_ai_set_interact_with_player, reg0, 0),(agent_set_is_alarmed, reg0, 1),(agent_set_no_death_knock_down_only, reg0, 1),
-    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     ] or []) + [ 
   ])]),
   
@@ -4375,7 +4380,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [ 
-        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4412,7 +4417,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [
-        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4449,7 +4454,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [
-        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4486,7 +4491,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [    
-        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4519,7 +4524,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [    
-        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4608,7 +4613,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
         ] + (is_a_wb_sceneprop==1 and [           
-        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4645,7 +4650,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [
-        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4680,7 +4685,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [
-        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4712,7 +4717,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [ 
-        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4748,7 +4753,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
         ] + (is_a_wb_sceneprop==1 and [           
-        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4773,7 +4778,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
         ] + (is_a_wb_sceneprop==1 and [           
-        (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),
+        (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4790,7 +4795,7 @@ scene_props = [
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (spawn_agent, "trp_human_prisoner"),(agent_set_team, reg0, 0), 
     (agent_set_animation, reg0, "anim_nazgul_noooo_short"),
-  ] + (is_a_wb_sceneprop==1 and [(scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0), ] or []) + [      
+  ] + (is_a_wb_sceneprop==1 and [(scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0), ] or []) + [      
     ])]),
 
 ("troop_civilian_cheer",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
@@ -4804,7 +4809,7 @@ scene_props = [
 
     #remove weapons and helms
   ] + (is_a_wb_sceneprop==1 and [   
-    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),  
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),  
         (try_for_range, ":weapon_slot", 0, 4), 
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4822,7 +4827,7 @@ scene_props = [
 
     #remove weapons and helms (for old savegames)
   ] + (is_a_wb_sceneprop==1 and [  
-    (scene_prop_set_slot, ":instance_no", slot_gate_aggravator, reg0),  
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),  
         (agent_set_is_alarmed, reg0, 1),
         (try_for_range, ":weapon_slot", 0, 9), 
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
