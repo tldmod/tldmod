@@ -14643,7 +14643,31 @@ scripts = [
        (agent_set_slot, ":cur_agent", slot_agent_walker_type, 1),
        (call_script, "script_set_town_walker_destination", ":cur_agent"),      
        
-     (try_end),
+       #equip carry items
+       (agent_get_troop_id, ":walker_troop", ":cur_agent"),
+       (this_or_next|party_slot_eq, "$current_town", slot_center_walker_1_troop, ":walker_troop"), #walker troops 1 and 2 are "workers"
+       (party_slot_eq, "$current_town", slot_center_walker_2_troop, ":walker_troop"),
+       (store_random_in_range, ":chance", 0, 100),
+       (lt, ":chance", 60),
+        #remove weapons and helms
+      ] + (is_a_wb_script==1 and [     
+            (try_for_range, ":weapon_slot", 0, 4), 
+                (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+                (gt, ":item", 1),
+                (agent_unequip_item, reg0, ":item", ":weapon_slot"),
+            (try_end),
+            (try_begin),
+                (agent_get_item_slot, ":helm", reg0, ek_head),
+                (gt, ":helm", 1),
+                (neg|item_has_property, ":helm", itp_civilian),
+                (agent_unequip_item, reg0, ":helm", ek_head),
+            (try_end),    
+       (store_random_in_range, ":item", "itm_civilian_carry_amphora", "itm_civilian_carry_wood2"),
+       (agent_equip_item, ":cur_agent", ":item", 1),
+       (agent_set_wielded_item, ":cur_agent", ":item"),
+       (agent_set_attack_action, ":cur_agent", 3, 1),
+         ] or []) + [     
+     (try_end), 
 ]),
 
 # script_agent_get_town_walker_details

@@ -1544,16 +1544,21 @@ items =[
 ["ent_head_helm3","Ent_Head",[("ent_head3",0),],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(30),0],
 
 #civilian tools
-["civilian_hammer","Hammer",[("civilian_hammer_khazad",0)],itp_type_one_handed_wpn|itp_primary|itp_disable_agent_sounds,itc_scimitar|itcf_carry_mace_left_hip,300,weight(4.5)|spd_rtng(75)|weapon_length(120)|swing_damage(1,blunt),0],
-["civilian_woodaxe_1h","Axe",[("axe_c",0)],itp_type_one_handed_wpn|itp_primary|itp_disable_agent_sounds,itc_scimitar|itcf_carry_mace_left_hip,300,weight(4.5)|spd_rtng(75)|weapon_length(100)|swing_damage(1,blunt),0],
-["civilian_woodaxe_2h","Heavy_Axe",[("2_handed_axe",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_two_handed|itp_disable_agent_sounds,itcf_overswing_polearm|itcf_slashright_twohanded,500,weight(4.5)|spd_rtng(65)|weapon_length(250)|swing_damage(1,cut),0],
-["civilian_war_mattock","Mattock",[("civilian_war_mattock",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_two_handed|itp_disable_agent_sounds,itc_nodachi|itcf_carry_axe_back,500,weight(4.5)|spd_rtng(60)|weapon_length(250)|swing_damage(1,cut),0],
-["civilian_great_mattock","Mattock",[("civilian_great_mattock",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_two_handed|itp_disable_agent_sounds,itc_nodachi|itcf_carry_axe_back,500,weight(4.5)|spd_rtng(65)|weapon_length(250)|swing_damage(1,cut),0],
-["civilian_adz","Mattock",[("civilian_adz",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_two_handed|itp_disable_agent_sounds,itc_nodachi|itcf_slashright_twohanded,500,weight(4.5)|spd_rtng(70)|weapon_length(250)|swing_damage(1,cut),0],
-["civilian_pickaxe","Mattock",[("civilian_pickaxe",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_two_handed|itp_disable_agent_sounds,itcf_overswing_polearm|itcf_slashright_twohanded|itcf_carry_axe_back,500,weight(4.5)|spd_rtng(65)|weapon_length(180)|swing_damage(1,cut),0],
-["civilian_shovel","Shovel",[("civilian_shovel",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_spear|itp_disable_agent_sounds,itc_spear_upstab,350,weight(2.25)|spd_rtng(60)|weapon_length(70)|thrust_damage(1,pierce)|swing_damage(1,blunt),0],
-["nazgul_robe_wb","Nazgul_robe",[("old_nazgulrobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_disable_agent_sounds,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
+["civilian_hammer","Hammer",[("civilian_hammer_khazad",0)],itp_type_one_handed_wpn|itp_primary,itc_scimitar|itcf_carry_mace_left_hip,300,weight(4.5)|spd_rtng(75)|weapon_length(120)|swing_damage(1,blunt),0],
+["civilian_woodaxe_1h","Axe",[("axe_c",0)],itp_type_one_handed_wpn|itp_primary,itc_scimitar|itcf_carry_mace_left_hip,300,weight(4.5)|spd_rtng(75)|weapon_length(100)|swing_damage(1,blunt),0],
+["civilian_woodaxe_2h","Heavy_Axe",[("2_handed_axe",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_two_handed,itcf_overswing_polearm|itcf_slashright_twohanded,500,weight(4.5)|spd_rtng(65)|weapon_length(250)|swing_damage(1,cut),0],
+["civilian_war_mattock","Mattock",[("civilian_war_mattock",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_two_handed,itc_nodachi|itcf_carry_axe_back,500,weight(4.5)|spd_rtng(60)|weapon_length(250)|swing_damage(1,cut),0],
+["civilian_great_mattock","Mattock",[("civilian_great_mattock",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_two_handed,itc_nodachi|itcf_carry_axe_back,500,weight(4.5)|spd_rtng(65)|weapon_length(250)|swing_damage(1,cut),0],
+["civilian_adz","Mattock",[("civilian_adz",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_two_handed,itc_nodachi|itcf_slashright_twohanded,500,weight(4.5)|spd_rtng(70)|weapon_length(250)|swing_damage(1,cut),0],
+["civilian_pickaxe","Mattock",[("civilian_pickaxe",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_two_handed,itcf_overswing_polearm|itcf_slashright_twohanded|itcf_carry_axe_back,500,weight(4.5)|spd_rtng(65)|weapon_length(180)|swing_damage(1,cut),0],
+["civilian_shovel","Shovel",[("civilian_shovel",0)],itp_type_polearm|itp_no_blur|itp_primary|itp_spear,itc_spear_upstab,350,weight(2.25)|spd_rtng(60)|weapon_length(70)|thrust_damage(1,pierce)|swing_damage(1,blunt),0],
+["nazgul_robe_wb","Nazgul_robe",[("old_nazgulrobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
 
+["civilian_carry_amphora","Amphora",[("amphora_carry",0)],itp_type_one_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1)|weapon_length(1)|swing_damage(1,blunt),0],
+["civilian_carry_sack","Sack",[("sack_carry",0)],itp_type_one_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1)|weapon_length(1)|swing_damage(1,blunt),0],
+["civilian_carry_wood_heap","Fire Wood",[("wood_heap_b_carry",0)],itp_type_one_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1)|weapon_length(1)|swing_damage(1,blunt),0],
+["civilian_carry_wood","Wood",[("ado_wood_carry",0)],itp_type_one_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1)|weapon_length(1)|swing_damage(1,blunt),0],
+["civilian_carry_wood2","Wood",[("ado_wood_carry",0)],itp_type_two_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1)|weapon_length(1)|swing_damage(1,blunt),0],
 
 ] or []) + [ 
 
