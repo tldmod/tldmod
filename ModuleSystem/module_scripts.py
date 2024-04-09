@@ -32487,6 +32487,7 @@ if is_a_wb_script==1:
     (store_script_param, ":prop", 1),
     (store_script_param, ":frequency", 2),
     (store_script_param, ":animation", 3),
+    (store_script_param, ":item", 4),
     (set_fixed_point_multiplier, 100),
     (get_player_agent_no, ":player_agent"),
     (agent_get_position, pos4, ":player_agent"),
@@ -32512,6 +32513,10 @@ if is_a_wb_script==1:
             (store_random_in_range, ":animation", 0, 4),
          (try_end),
         (agent_set_attack_action, ":agent", ":animation", 0), #overhead
+        (agent_get_wielded_item, ":wielded", ":agent", 0), #just to be sure they don't spawn without their item for some reason
+        (lt, ":wielded", 1),
+        (agent_equip_item, ":agent", ":item", 1),
+        (agent_set_wielded_item, ":agent", ":item"),        
     (try_end),
 ]),
 

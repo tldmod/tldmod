@@ -4523,7 +4523,8 @@ scene_props = [
         #spawn smith
         (copy_position, pos2, pos1),
         (position_move_x, pos2, -100,0),(set_spawn_position, pos2),
-        (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
+        (store_faction_of_party, ":fac", "$current_town"),
+        (faction_get_slot, ":troop", ":fac", slot_faction_tier_1_troop), #get a tier 1 troop so they don't wear heavy armour
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [    
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),

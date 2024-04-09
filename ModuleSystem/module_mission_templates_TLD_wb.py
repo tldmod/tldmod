@@ -4525,27 +4525,27 @@ tld_animated_town_agents = [
   (0.3, 0, 0, [], [ #animated agents WB only
     
     #wood hackers
-    (call_script, "script_animate_town_agents", spr_troop_civilian_wood_hacker_1h, 3, 3),
-    (call_script, "script_animate_town_agents", spr_troop_civilian_wood_hacker_2h, 4, 3),
-    (call_script, "script_animate_town_agents", spr_troop_civilian_tree_feller, 4, 1),   
+    (call_script, "script_animate_town_agents", spr_troop_civilian_wood_hacker_1h, 3, 3, itm_civilian_woodaxe_1h),
+    (call_script, "script_animate_town_agents", spr_troop_civilian_wood_hacker_2h, 4, 3, itm_civilian_woodaxe_2h),
+    (call_script, "script_animate_town_agents", spr_troop_civilian_tree_feller, 4, 1, itm_civilian_woodaxe_2h),   
     
     #hammerer
-    (call_script, "script_animate_town_agents", spr_troop_civilian_hammer, 2, 3),
+    (call_script, "script_animate_town_agents", spr_troop_civilian_hammer, 2, 3, itm_civilian_hammer),
 
     #farmers
-    (call_script, "script_animate_town_agents", spr_troop_civilian_farmer_mattock, 4, 3),
-    (call_script, "script_animate_town_agents", spr_troop_civilian_farmer_shovel, 2, 0), #doesn't work so well
+    (call_script, "script_animate_town_agents", spr_troop_civilian_farmer_mattock, 4, 3, itm_civilian_war_mattock),
+    (call_script, "script_animate_town_agents", spr_troop_civilian_farmer_shovel, 2, 0, itm_civilian_shovel), #doesn't work so well
     
     #miners use two attack actions, so we fire the script twice with higher pause count
-    (call_script, "script_animate_town_agents", spr_troop_civilian_miner, 6, 4),
+    (call_script, "script_animate_town_agents", spr_troop_civilian_miner, 6, 4, itm_civilian_pickaxe),
     #(call_script, "script_animate_town_agents", spr_troop_civilian_miner, 6, 1), 
     
     #smiths
-    (call_script, "script_animate_town_agents", spr_troop_smith, 3, 3), 
+    (call_script, "script_animate_town_agents", spr_troop_smith, 3, 3, itm_civilian_hammer), 
     
-    (call_script, "script_animate_town_agents", spr_troop_civilian_butcher, 4, 3),
+    (call_script, "script_animate_town_agents", spr_troop_civilian_butcher, 4, 3, itm_orc_axe),
     
-    (call_script, "script_animate_town_agents", spr_troop_guard_fight_single, 5, 4),
+    (call_script, "script_animate_town_agents", spr_troop_guard_fight_single, 5, 4, itm_practice_staff),
       ]),
 
   (1, 0, 0, [], [ #oh no and cheer
