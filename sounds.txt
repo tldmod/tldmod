@@ -582,42 +582,42 @@ soundsfile version 2
  night_loop.wav 899
  neutral_forest_loop.wav 899
  fangorn_loop.wav 899
- good_eagle01.wav 1153
- good_workshop.wav 1153
- good_bird01.wav 1153
- good_bird02.wav 1153
- good_bird03.wav 1153
- good_bird_wings.wav 1153
- rohan01.wav 1153
- rohan02.wav 1153
- rohan03.wav 1153
- rohan04.wav 1153
- dwarves01.wav 1153
- dwarves02.wav 1153
- osgiliath05.wav 1153
- osgiliath02.wav 1153
- dale_bell_1.wav 1153
- dale_bell_1_2_combined.wav 1153
- dale_bell_2.wav 1153
- dale_bell_3.wav 1153
- evil_crow.wav 1153
- harad01.wav 1153
- harad02.wav 1153
- harad03.wav 1153
- sea_seagulls.wav 1153
- sea_seaside.wav 1153
- orc_warg.wav 1153
- orc_beast01.wav 1153
- orc_beast02.wav 1153
- orc_beast03.wav 1153
- moria01.wav 1153
- moria02.wav 1153
- osgiliath04.wav 1153
- morgul01.wav 1153
- morgul02.wav 1153
- osgiliath01.wav 1153
- osgiliath03.wav 1153
- gondor_army.wav 1153
+ good_eagle01.wav 1152
+ good_workshop.wav 1152
+ good_bird01.wav 1152
+ good_bird02.wav 1152
+ good_bird03.wav 1152
+ good_bird_wings.wav 1152
+ rohan01.wav 1152
+ rohan02.wav 1152
+ rohan03.wav 1152
+ rohan04.wav 1152
+ dwarves01.wav 1152
+ dwarves02.wav 1152
+ osgiliath05.wav 1152
+ osgiliath02.wav 1152
+ dale_bell_1.wav 1152
+ dale_bell_1_2_combined.wav 1152
+ dale_bell_2.wav 1152
+ dale_bell_3.wav 1152
+ evil_crow.wav 1152
+ harad01.wav 1152
+ harad02.wav 1152
+ harad03.wav 1152
+ sea_seagulls.wav 1152
+ sea_seaside.wav 1152
+ orc_warg.wav 1152
+ orc_beast01.wav 1152
+ orc_beast02.wav 1152
+ orc_beast03.wav 1152
+ moria01.wav 1152
+ moria02.wav 1152
+ osgiliath04.wav 1152
+ morgul01.wav 1152
+ morgul02.wav 1152
+ osgiliath01.wav 1152
+ osgiliath03.wav 1152
+ gondor_army.wav 1152
  horse_exterior_whinny_01.wav 0
  horse_exterior_whinny_02.wav 0
  horse_exterior_whinny_03.wav 0
@@ -884,29 +884,29 @@ snd_deadmarshes_ambiance 899 1 578
 snd_night_ambiance 899 1 579 
 snd_neutralforest_ambiance 899 1 580 
 snd_fangorn_ambiance 899 1 581 
-snd_gondor_occasional 1153 6 136 136 582 230 583 222 
-snd_elves_occasional 1153 6 136 136 584 585 586 587 
-snd_lorien_occasional 1153 5 561 584 585 586 587 
-snd_beorn_occasional 1153 7 584 585 586 583 229 222 228 
-snd_rohan_occasional 1153 10 588 589 590 591 583 582 584 230 222 226 
-snd_dwarf_occasional 1153 5 592 593 230 594 595 
-snd_dale_occasional 1153 14 136 136 584 585 586 583 583 229 230 222 596 597 598 599 
-snd_rhun_occasional 1153 8 588 589 590 591 600 229 230 222 
-snd_harad_occasional 1153 11 136 589 590 591 600 601 602 603 601 602 603 
-snd_umbar_occasional 1153 5 136 136 136 604 605 
-snd_dunland_occasional 1153 8 136 600 582 219 220 221 222 228 
-snd_orc_occasional 1153 6 136 600 606 607 608 609 
-snd_guldur_occasional 1153 8 136 136 136 136 600 607 608 609 
-snd_moria_occasional 1153 5 136 136 136 610 611 
-snd_isengard_occasional 1153 14 136 136 611 600 607 608 609 229 606 230 592 593 612 228 
-snd_urukhai_occasional 1153 6 600 607 608 609 606 228 
-snd_seaside_occasional 1153 6 584 585 586 604 605 230 
-snd_morgul_occasional 1153 9 136 136 136 136 136 136 136 613 614 
-snd_eosgi_occasional 1153 8 607 608 609 615 595 616 612 594 
-snd_wosgi_occasional 1153 7 136 136 615 595 616 612 594 
-snd_tirith_occasional 1153 6 136 582 617 230 136 136 
-snd_morannon_occasional 1153 1 136 
-snd_tirith_top_occasional 1153 6 136 582 136 136 136 136 
+snd_gondor_occasional 1152 6 136 136 582 230 583 222 
+snd_elves_occasional 1152 6 136 136 584 585 586 587 
+snd_lorien_occasional 1152 5 561 584 585 586 587 
+snd_beorn_occasional 1152 7 584 585 586 583 229 222 228 
+snd_rohan_occasional 1152 10 588 589 590 591 583 582 584 230 222 226 
+snd_dwarf_occasional 1152 5 592 593 230 594 595 
+snd_dale_occasional 1152 14 136 136 584 585 586 583 583 229 230 222 596 597 598 599 
+snd_rhun_occasional 1152 8 588 589 590 591 600 229 230 222 
+snd_harad_occasional 1152 11 136 589 590 591 600 601 602 603 601 602 603 
+snd_umbar_occasional 1152 5 136 136 136 604 605 
+snd_dunland_occasional 1152 8 136 600 582 219 220 221 222 228 
+snd_orc_occasional 1152 6 136 600 606 607 608 609 
+snd_guldur_occasional 1152 8 136 136 136 136 600 607 608 609 
+snd_moria_occasional 1152 5 136 136 136 610 611 
+snd_isengard_occasional 1152 14 136 136 611 600 607 608 609 229 606 230 592 593 612 228 
+snd_urukhai_occasional 1152 6 600 607 608 609 606 228 
+snd_seaside_occasional 1152 6 584 585 586 604 605 230 
+snd_morgul_occasional 1152 9 136 136 136 136 136 136 136 613 614 
+snd_eosgi_occasional 1152 8 607 608 609 615 595 616 612 594 
+snd_wosgi_occasional 1152 7 136 136 615 595 616 612 594 
+snd_tirith_occasional 1152 10 136 582 617 230 136 136 596 597 598 599 
+snd_morannon_occasional 1152 1 136 
+snd_tirith_top_occasional 1152 6 136 582 136 136 136 136 
 snd_meeting_elf 1120 12 530 531 515 516 517 518 519 520 521 522 523 524 
 snd_meeting_uruk 1120 7 423 424 425 426 427 428 429 
 snd_meeting_man 1120 7 290 289 288 298 285 279 283 

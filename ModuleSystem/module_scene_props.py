@@ -3959,6 +3959,8 @@ scene_props = [
 
 ("troop_messenger",sokf_invisible,"arrow_helper_blue","0", [
     (ti_on_init_scene_prop,[
+    (store_random_in_range, ":chance", 0, 100),
+    (lt, ":chance", 60),
     (store_trigger_param_1, ":instance_no"),
     (store_faction_of_party, ":faction", "$current_town"),
     (faction_get_slot, ":troop", ":faction", slot_faction_rider_troop),
@@ -4595,7 +4597,9 @@ scene_props = [
         (gt, ":item", 1),
         (neg|item_has_property, ":item", itp_civilian),
         (agent_unequip_item, reg0, ":item", ":weapon_slot"),
-    (try_end),  
+    (try_end),
+    (agent_set_no_dynamics, reg0, 1),
+    (agent_set_position, reg0, pos3),
     #(agent_set_scripted_destination, reg0, pos3, 0, 1),
     ] or []) + [   
     ])]),
@@ -4666,7 +4670,12 @@ scene_props = [
 ] or []) + [ ]),
         
    (ti_on_scene_prop_hit,
-    [   (play_sound, "snd_wooden_hit_high_armor_low_damage"),
+    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (get_player_agent_no, ":player_agent"),
+        (agent_get_position, pos4, ":player_agent"),
+        (get_distance_between_positions, ":distance", pos1, pos4),
+        (le, ":distance", 1500), #15m
+        (play_sound, "snd_wooden_hit_high_armor_low_damage"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 3),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
     ])]),
@@ -4699,7 +4708,12 @@ scene_props = [
 ] or []) + [ ]),
         
    (ti_on_scene_prop_hit,
-    [   (play_sound, "snd_wooden_hit_high_armor_low_damage"),
+    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (get_player_agent_no, ":player_agent"),
+        (agent_get_position, pos4, ":player_agent"),
+        (get_distance_between_positions, ":distance", pos1, pos4),
+        (le, ":distance", 1500), #15m
+        (play_sound, "snd_wooden_hit_high_armor_low_damage"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 3),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
     ])]),
@@ -4867,7 +4881,7 @@ scene_props = [
   ])]),
 
 #("sound_fire_big_scalable" ,sokf_invisible,"collision_cube","0", []),
-("sound_fire_big_scalable"       ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,0),(play_sound, "snd_torch_loop", 0)])]),
+("sound_fire_big_scalable"       ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,0),(play_sound, "snd_fire_loop", 0)])]),
 
 
 ("ai_melee_on_off_var1",sokf_invisible,"sphere_1m","0", []), #var 1 sets agent_ai_set_always_attack_in_melee

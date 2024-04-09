@@ -1955,6 +1955,7 @@ center_sounds=[#center      specific day ambiance , specific always ambiance    
     (p_town_west_osgiliath,0                  ,0         					,snd_wosgi_occasional),
     (p_town_east_osgiliath,0                  ,0 		           			,snd_eosgi_occasional),
     (p_town_esgaroth     ,snd_town_ambiance   ,snd_water_splash_ambiance    ,snd_beorn_occasional),
+    (p_town_minas_tirith ,snd_gondor_ambiance ,snd_wind_ambiance            ,snd_tirith_occasional),
     (p_town_lossarnach   ,snd_gondor_ambiance ,snd_goodforest_ambiance      ,snd_elves_occasional),
     (p_town_pinnath_gelin,snd_gondor_ambiance ,snd_goodforest_ambiance      ,snd_elves_occasional),
     (p_town_erebor       ,snd_town_ambiance   ,snd_moria_ambiance           ,snd_dwarf_occasional),
@@ -1965,6 +1966,7 @@ center_sounds=[#center      specific day ambiance , specific always ambiance    
 	(p_town_goblin_north_outpost     ,0       ,snd_moria_ambiance           ,0),
 	(p_town_beorn_house,snd_bees_people_ambiance,snd_neutralforest_ambiance      ,snd_beorn_occasional),
 	(p_town_woodsmen_village     ,0     	  ,snd_evilforest_ambiance      ,snd_beorn_occasional),
+    (p_town_ironhill_camp     ,snd_wind_ambiance     	       ,snd_wind_ambiance       ,snd_dwarf_occasional),
 ] 
 
 ## tableau meshes list for factions

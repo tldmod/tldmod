@@ -563,6 +563,7 @@ scripts = [
           (val_mul, ":difference", 100),
           (val_mul, ":difference", ":player_charisma"),
           (val_div, ":difference", 1200), #starts to scale from 12, reduces below
+          (val_max, ":difference", 1),
 		  
 
           (val_add, ":val", ":difference"),
@@ -10829,9 +10830,11 @@ scripts = [
             (val_mul, ":difference", 100),
             (val_mul, ":difference", ":player_charisma"),
             (val_div, ":difference", 1200), #starts to scale from 12, reduces below
+            (val_max, ":difference", 1),
         (else_try),
             (val_mul, ":difference", 100),
             (val_div, ":difference", 10), #starts to scale from 10
+            (val_min, ":difference", -1),
         (try_end),
       
       (party_get_slot, ":player_relation", ":center_no", slot_center_player_relation),
@@ -14412,14 +14415,27 @@ scripts = [
 # script_center_ambiance_sounds
 # to be called every two seconds. TODO for TLD centers
 ("center_ambiance_sounds",
-   [(try_begin),
+   [(set_fixed_point_multiplier, 100),
+   (try_begin),
       (eq, "$play_ambient_sounds", 1), 
       (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-      (neg|is_currently_night),
+      
+      #play somewhere around the player
+      (get_player_agent_no, ":player_agent"),
+      (agent_get_position, pos5, ":player_agent"),
+      (store_random_in_range, ":x", -1000, 1000),
+      (store_random_in_range, ":y", -1000, 1000),
+      (position_move_x, pos5, ":x"),
+      (position_move_y, pos5, ":y"),
+      #(neg|is_currently_night),
         (party_get_slot,":sound","$g_encountered_party", slot_center_occasional_sound1_day), 
         (store_random_in_range, ":r", 0, 7),
         (ge, ":r", 5),
-           (play_sound, ":sound"), 
+        ] + (is_a_wb_script==1 and [
+        (play_sound_at_position, ":sound", pos5),
+        ] or [
+        (play_sound, ":sound"),
+        ]) + [              
     (try_end),
 ]),
 
