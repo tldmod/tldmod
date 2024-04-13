@@ -13387,6 +13387,38 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                   (eq, "$g_tld_nazgul_state", 0),], #not willing to talk
 "It... beckonsssssss...", "close_window", [(assign, "$g_leave_encounter", 1),(call_script, "script_send_from_conversation_mission", "$g_talk_troop"),]],
 
+[anyone,"start", [(agent_get_slot, ":rank_req", "$g_talk_agent", slot_agent_secret_guardian),
+                  (gt, ":rank_req", 0),
+                  ], 
+"Halt! You are not allowed to enter here!", "close_window",
+                [(agent_get_position, pos4, "$g_talk_agent"),
+                (position_move_y, pos4, 600), #move player out of range
+                (position_rotate_z, pos4, 180),
+                (get_player_agent_no, ":player_agent"),
+                (agent_set_position, ":player_agent", pos4),
+                (call_script,"script_stand_back"),
+                ]],
+
+[anyone,"start", [(agent_get_slot, ":rank_req", "$g_talk_agent", slot_agent_secret_guardian),
+                  (lt, ":rank_req", 0),
+                  (display_message, "@check 1"),
+                  (agent_set_slot, "$g_talk_agent", slot_agent_secret_guardian, 0),
+                  (display_message, "@check 2"),
+                  (agent_get_slot, ":barrier", "$g_talk_agent", slot_agent_assigned_prop),
+                  (prop_instance_get_position, pos4, ":barrier"),
+                  (position_move_z, pos4, -5000),
+                  (prop_instance_set_position, ":barrier", pos4),], 
+"Halt!", "secret_guardian_let_through",
+                []],
+
+[anyone|plyr,"secret_guardian_let_through", [(call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"),], 
+"I am {playername}, {s24}. Let me through!", "secret_guardian_let_through1",
+                []],
+
+[anyone,"secret_guardian_let_through1", [], 
+"Yes commander, you may pass.", "close_window",
+                [(call_script,"script_stand_back"), (display_message, "@check 3"), ]],
+
 ] + (is_a_wb_dialog and [
 #### Kham Ori's Last Stand Dialogues ##########
 

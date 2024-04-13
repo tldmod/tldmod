@@ -1,12 +1,10 @@
-1750
+1751
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
-qstr_debug:_sound_emitter debug:_sound_emitter:_var1_x_100_+_var2_is_sound_no;_(scale_x_-1)_x_100_is_range_in_metres
-qstr_debug:_scale_prop_to debug:_scale_prop_to_disable_this_message
 qstr_{!}_debug:_sound_emi {!}_debug:_sound_emitter:_var1_x_100_+_var2_is_sound_no;_(scale_x_-1)_x_100_is_range_in_metres
-qstr_{!}_debug:_ambient_s {!}_debug:_ambient_sound_emitter:_stops_all_looping_sounds,_sets_a_new_ambient_sound_while_in_range
 qstr_{!}_debug:_scale_pro {!}_debug:_scale_prop_to_disable_this_message
+qstr_{!}_debug:_ambient_s {!}_debug:_ambient_sound_emitter:_stops_all_looping_sounds,_sets_a_new_ambient_sound_while_in_range
 qstr_Next_Page Next_Page
 qstr_Action Action
 qstr_Mount Mount
@@ -1591,6 +1589,9 @@ qstr_Take_this_{s22}._I_h Take_this_{s22}._I_have_no_need_of_it.
 qstr_Just_a_moment_{playe Just_a_moment,_{playername}._Heroes_like_you_and_your_companions_are_worthy_of_the_finest_weapons,_armor,_and_horses.
 qstr_Wait_{playername}._Yo Wait,_{playername}._You_have_been_an_able_commander_in_the_war_effort._I_think_it's_time_you_had_some_better_equipment.
 qstr_Accept_this_{s22}_ma Accept_this_{s22},_may_it_aid_you_and_your_companions.
+qstr_check_1 check_1
+qstr_check_2 check_2
+qstr_check_3 check_3
 qstr_the_Dwarves_so_that_ the_Dwarves,_so_that_if_you_pass_by_Erebor_or_the_Iron_Hills,_you_can_try_to_arm_yourself_with_the_fabled_Dwarven_weaponry
 qstr_Gondor_so_that_if_yo Gondor,_so_that_if_you_pass_by_their_lands,_you_can_try_to_purchase_some_of_their_well-known_armours
 qstr_Rohan_so_that_if_you Rohan,_so_that_if_you_pass_by_their_lands,_you_can_try_to_purchase_some_of_their_fabled_horses

@@ -179,6 +179,8 @@ slot_agent_is_not_reinforcement   = 5
 slot_agent_tournament_point       = 6
 slot_agent_knocked_down			  = slot_agent_tournament_point # Use for tracking Knockbacks - Kham
 slot_agent_arena_team_set         = 7
+slot_agent_secret_guardian       = 8 #1=active, -1=let pass, 0=inactive
+slot_agent_assigned_prop          = 9
 slot_agent_map_overlay_id         = 10
 # slot_agent_target_entry_point     = 11 #duplicate
 slot_agent_walker_type            = 12 # 1= civilians; 2=patrols; 3=messengers
@@ -204,8 +206,8 @@ slot_agent_mount_orig_rider = 24
 
 # why not use duplicate slots for an agent that will never use it? -CC
 
-slot_agent_warg_pouncing		= 13
-slot_agent_warg_pounce_time		= 14
+slot_agent_warg_pouncing		= slot_agent_troll_swing_status
+slot_agent_warg_pounce_time		= slot_agent_troll_swing_move
 
 # Kham 
 slot_agent_is_running_away		= 25

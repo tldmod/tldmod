@@ -2270,7 +2270,10 @@ scene_props = [
     (position_rotate_z, pos1, 130),
     (prop_instance_animate_to_position, ":instance_no", pos1, 600), #animate in 4 second
     (play_sound, "snd_elf_song"), #dummy_destroyed"),
-  (display_message,"@Gate opens... You have reached the most sacred place in Middle Earth!"),   ]),
+    (display_message,"@Gate opens... You have reached the most sacred place in Middle Earth!"),
+    (scene_slot_eq, "scn_aw_tomb", slot_scene_visited, 0),
+    (add_xp_as_reward, 2000),
+    (scene_set_slot, "scn_aw_tomb", slot_scene_visited, 1),  ]),
   ]),
 ## isengard props
 ("isen_orthanc_tower", 0, "isen_orthanc_tower", "bo_isen_orthanc_tower", []),
@@ -4864,8 +4867,8 @@ scene_props = [
     (prop_instance_get_scale, pos2, ":instance_no"),
     (position_get_scale_x, ":scale_x", pos2),
     (eq, ":scale_x", 10000), #only show tutorial message if scale is unchanged
-    (display_message, "@debug: sound emitter: var1 x 100 + var2 is sound_no; (scale_x -1) x 100 is range in metres"),
-    (display_message, "@debug: scale prop to disable this message"),
+    (display_message, "@{!} debug: sound emitter: var1 x 100 + var2 is sound_no; (scale_x -1) x 100 is range in metres"),
+    (display_message, "@{!} debug: scale prop to disable this message"),
   ])]),
 
 # var1 x 100 + var2 is sound_no; (scale_x -1) x 100 is range in metres
@@ -4882,10 +4885,12 @@ scene_props = [
   ])]),
 
 #("sound_fire_big_scalable" ,sokf_invisible,"collision_cube","0", []),
-("sound_fire_big_scalable"       ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,0),(play_sound, "snd_fire_loop", 0)])]),
-
+("sound_fire_big"       ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,0),(play_sound, "snd_fire_loop", 0)])]),
 
 ("ai_melee_on_off_var1",sokf_invisible,"sphere_1m","0", []), #var 1 sets agent_ai_set_always_attack_in_melee
+
+("secret_point_of_interest",sokf_invisible,"sphere_1m","0", []),
+("secret_guardian",sokf_invisible,"arrow_helper_blue","0", []),
 
 ("rock_bridge",0,"rock_bridge_tld","bo_rock_bridge_tld", []),
 
