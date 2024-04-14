@@ -9055,7 +9055,6 @@ game_menus = [
 #             (change_screen_map_conversation, ":troop")
 #	]),
 
-
 	   ("town_prison", [(eq,1,0)],"Never: Enter the prison.", #InVain: Disable access to the prison through passages, too. But need to keep this entry for passage number compatibility.
        [(try_begin),
             (neg|party_slot_eq,"$current_town", slot_town_arena, -1),
@@ -9075,47 +9074,60 @@ game_menus = [
         (change_screen_mission),
         (music_set_situation, 0),
        
-       # (try_begin),
-             # # (eq,"$all_doors_locked",1),
-             # # (display_message,"str_door_locked",0xFFFFAAAA),
-           # # (else_try),
-             # # (this_or_next|party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
-             # # (eq, "$g_encountered_party_faction", "$players_kingdom"),
-             # # #(assign, "$town_entered", 1),
-             # # (call_script, "script_enter_dungeon", "$current_town", "mt_visit_town_castle"),
-           # # (else_try),
+       (try_begin),
+             # (eq,"$all_doors_locked",1),
              # (display_message,"str_door_locked",0xFFFFAAAA),
-           # (try_end),
+           # (else_try),
+             # (this_or_next|party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+             # (eq, "$g_encountered_party_faction", "$players_kingdom"),
+             # #(assign, "$town_entered", 1),
+             # (call_script, "script_enter_dungeon", "$current_town", "mt_visit_town_castle"),
+           # (else_try),
+             (display_message,"str_door_locked",0xFFFFAAAA),
+           (try_end),
         ],"To the Training Grounds"),
 		
 		
-	 #Enter dungeon in Erebor begin (Kolba)
-      ("dungeon_enter",[#(eq, cheat_switch, 1), # not done yet
-	    (party_slot_eq,"$current_town",slot_party_type, spt_town),
-        (eq, "$current_town", "p_town_erebor"),
-        (quest_slot_ge, "qst_find_lost_spears", slot_quest_current_state, 1),
-        ],"Search for the lost spears inside the mountains.",[
-              (set_jump_mission, "mt_tld_erebor_dungeon"),
-              #(modify_visitors_at_site,"scn_erebor_dungeon_01"),	      
-              (reset_visitors),
-              (set_visitor,1,"trp_player"),
-              (set_visitor, 2, "trp_i1_gunda_goblin"),
-              (set_visitor, 3, "trp_i4_gunda_orc_warrior"),
-              (set_visitor, 4, "trp_i3_gunda_orc_fighter"),
-              #(jump_to_scene, "scn_erebor_dungeon_01"),
-              (change_screen_mission),
-       ],"Open the door."),
-      #Enter dungeon in Erebor end (Kolba)	  
+	 # #Enter dungeon in Erebor begin (Kolba)
+      # ("dungeon_enter",[#(eq, cheat_switch, 1), # not done yet
+	    # (party_slot_eq,"$current_town",slot_party_type, spt_town),
+        # (eq, "$current_town", "p_town_erebor"),
+        # (quest_slot_ge, "qst_find_lost_spears", slot_quest_current_state, 1),
+        # ],"Search for the lost spears inside the mountains.",[
+              # (set_jump_mission, "mt_tld_erebor_dungeon"),
+              # #(modify_visitors_at_site,"scn_erebor_dungeon_01"),	      
+              # (reset_visitors),
+              # (set_visitor,1,"trp_player"),
+              # (set_visitor, 2, "trp_i1_gunda_goblin"),
+              # (set_visitor, 3, "trp_i4_gunda_orc_warrior"),
+              # (set_visitor, 4, "trp_i3_gunda_orc_fighter"),
+              # #(jump_to_scene, "scn_erebor_dungeon_01"),
+              # (change_screen_mission),
+       # ],"Open the door."),
+      # #Enter dungeon in Erebor end (Kolba)	  
 
-      #Enter Dwarven Warehouse (Kham)
-	("dwarven_warehouse",[(eq,1,0)],
-	"Visit the Dwarven Warehouse",[
-							(set_jump_mission,"mt_tld_dwarven_warehouse"),
-							(set_passage_menu, "mnu_town"),
-							(jump_to_scene,"scn_underground_warehouse"),
-							(change_screen_mission),
-		],"Enter Dwarven Warehouse"),
-	#Enter Dwarven Warehouse End (Kham)
+      # #Enter Dwarven Warehouse (Kham)
+	# ("dwarven_warehouse",[(eq,1,0)],
+	# "Visit the Dwarven Warehouse",[
+							# (set_jump_mission,"mt_tld_dwarven_warehouse"),
+							# (set_passage_menu, "mnu_town"),
+							# (jump_to_scene,"scn_underground_warehouse"),
+							# (change_screen_mission),
+		# ],"Enter Dwarven Warehouse"),
+	# #Enter Dwarven Warehouse End (Kham)
+
+	("talk_to_healer",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
+	   	  (eq,"$entry_to_town_forbidden",0), 
+          (party_get_slot, ":healer", "$current_town", slot_town_healer),
+          (gt, ":healer", 1),
+          (troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 1),
+          (str_store_troop_name, s40, ":healer"),
+       ],"Speak with {s40}.",[
+             (set_jump_mission,"mt_conversation_encounter"),
+             (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
+             (set_visitor,0,"trp_player"),
+             (party_get_slot, ":healer", "$current_town", slot_town_healer),
+             (call_script, "script_setup_troop_meeting", ":healer", 0), ]),
 		
 	("talk_to_castle_commander",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
 	   	  (eq,"$entry_to_town_forbidden",0), 

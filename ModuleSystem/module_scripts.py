@@ -1656,6 +1656,15 @@ scripts = [
 		(party_set_slot, ":town_no", slot_town_alley, "scn_town_alley"),
 	(try_end),
 
+    #healers
+    (party_set_slot, "p_town_morannon", slot_town_healer, "trp_morannon_healer"),
+    (party_set_slot, "p_town_minas_tirith", slot_town_healer, "trp_minas_tirith_healer"),
+    (party_set_slot, "p_town_edoras", slot_town_healer, "trp_edoras_healer"),
+    (party_set_slot, "p_town_isengard", slot_town_healer, "trp_isengard_healer"),
+    (party_set_slot, "p_town_dol_guldur", slot_town_healer, "trp_guldur_healer"),
+    (party_set_slot, "p_town_gundabad", slot_town_healer, "trp_gundabad_healer"),
+    (party_set_slot, "p_town_thranduils_halls", slot_town_healer, "trp_mirkwood_healer"),
+
 	# Centers spawns init from ws_party_spawns_list in module_constants.py      
 	]+[
 	(party_set_slot, ws_party_spawns_list[x][0], slot_center_spawn_scouts,  ws_party_spawns_list[x][1]) for x in range(len(ws_party_spawns_list)) ]+[
@@ -25855,9 +25864,16 @@ command_cursor_scripts = [
         (assign, "$savegame_version", 39),
 	(try_end),	    
     
-    (try_begin), #InVain - update Hornburg castle scene
+    (try_begin), #InVain - update Hornburg castle scene, set healer slots
         (le, "$savegame_version", 39),
         (party_set_slot, "p_town_hornburg", slot_town_castle, -1),
+        (party_set_slot, "p_town_morannon", slot_town_healer, "trp_morannon_healer"),
+        (party_set_slot, "p_town_minas_tirith", slot_town_healer, "trp_minas_tirith_healer"),
+        (party_set_slot, "p_town_edoras", slot_town_healer, "trp_edoras_healer"),
+        (party_set_slot, "p_town_isengard", slot_town_healer, "trp_isengard_healer"),
+        (party_set_slot, "p_town_dol_guldur", slot_town_healer, "trp_guldur_healer"),
+        (party_set_slot, "p_town_gundabad", slot_town_healer, "trp_gundabad_healer"),
+        (party_set_slot, "p_town_thranduils_halls", slot_town_healer, "trp_mirkwood_healer"),        
         (assign, "$savegame_version", 40),
 	(try_end),	      
 ]),

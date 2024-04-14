@@ -9746,6 +9746,17 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ### Kham Healers Dialogue Begin
 
 [anyone,"start", [
+  (is_between, "$g_talk_troop", "trp_morannon_healer", "trp_hungry_uruk"),
+  (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+  (try_begin),
+    (neq, ":side", faction_side_good),
+    (str_store_string, s1, "@What do you want?"),
+  (else_try),
+    (str_store_string, s1, "@Greetings. What can I do for you?"),
+  (try_end)], 
+    "{s1}", "healers_meet",[]],
+
+[anyone,"healers_ask", [
       (is_between, "$g_talk_troop", "trp_morannon_healer", "trp_hungry_uruk"),
       (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
       (lt, ":rank", 3),
@@ -9761,20 +9772,11 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (try_end), ], 
           "{s1}", "close_window",[(call_script, "script_stand_back")]],
 
-[anyone,"start", [
-  (is_between, "$g_talk_troop", "trp_morannon_healer", "trp_hungry_uruk"),
-  (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
-  (try_begin),
-    (neq, ":side", faction_side_good),
-    (str_store_string, s1, "@What do you want?"),
-  (else_try),
-    (str_store_string, s1, "@Greetings, {playername}. What can I do for you?"),
-  (try_end)], 
-    "{s1}", "healers_ask",[]],
-
-
-[anyone|plyr,"healers_ask", [], 
+[anyone|plyr,"healers_meet", [], 
     "What do you do?.", "healer_who",[]],
+
+[anyone|plyr,"healers_meet", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 1),], 
+    "I need your help.", "healers_ask",[]],
 
 [anyone|plyr,"healers_ask", [
   (eq, "$tld_option_injuries", 1),
@@ -9825,7 +9827,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   #Do we continue?
   (gt, ":wounds",0),
   ], 
-    "My men and I have wounds that require more than just time to heal. Can you heal our wounds?", "healer_wound_ask",[]],
+    "My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?", "healer_wound_ask",[]],
 
 [anyone|plyr,"healers_ask", [
   (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
@@ -9839,18 +9841,24 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   (eq, ":yes", 1)], 
     "My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?", "healer_injured_ask",[]],
 
-[anyone|plyr,"healers_ask", [], 
+[anyone|plyr,"healers_meet", [], 
     "Nothing.", "close_window",[(call_script, "script_stand_back")]],
 
 [anyone,"healer_who", [
   (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
   (try_begin),
     (neq, ":side", faction_side_good),
-    (str_store_string, s1, "@What? You come to me and you do not know what I do? Take a look around you.^^ Do you see the blood? Do you hear the crying? Do you feel their pain? That is what I do! I break things to make them better again! If you come to me, broken and in pain, I can make you better!"),
+    (str_store_string, s2, "@What? You come to me and you do not know what I do? Take a look around you.^^ Do you see the blood? Do you hear the crying? Do you feel their pain? That is what I do! I break things to make them better again! If you come to me, broken and in pain, I can make you better!"),
   (else_try),
-    (str_store_string, s1, "@I am a healer. Come to me when you or your companions are seriously wounded, and I will mend your injuries to the best of my ability."),
+    (str_store_string, s2, "@I am a healer. Come to me when you or your companions are seriously wounded, and I will mend your injuries to the best of my ability."),
   (try_end)], 
-    "{s1}.", "healers_ask",[]],
+    "{s2}.", "healers_meet",
+    [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),
+    (display_message, "@You have found the local healer"),
+    (call_script, "script_increase_rank", "$ambient_faction", 3),
+    (call_script, "script_change_player_relation_with_center", "$current_town", 4),
+    (troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),
+    (party_set_slot, "$current_town", slot_town_healer, "$g_talk_troop"),]],
 
 [anyone,"healer_wound_ask", [
   (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),

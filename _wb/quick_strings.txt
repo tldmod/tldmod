@@ -1,4 +1,4 @@
-2001
+2002
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -87,7 +87,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-04-14_11:07___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-04-14_12:40___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1869,11 +1869,12 @@ qstr_Our_Golden_Valley_gi Our_Golden_Valley_gives_goods_aplenty_and_a_friend_to_
 qstr_I_shall_keep_that_in I_shall_keep_that_in_mind.^^_Hantanyel,_áva_márië!
 qstr_That_may_be_so_some_ That_may_be_so,_some_paths_of_the_world_run_crooked.^^_Boe_i_'waen!
 qstr_I_seldom_wander_far_ I_seldom_wander_far_away_from_home._Be_off_now,_as_fast_as_you_can._There_may_be_more_goblins_prowling_around.
-qstr_Who_are_you?_A_mere_ Who_are_you?_A_mere_{s25}?_I_do_not_have_time_for_the_likes_of_you!_Leave_me_be!_{s2}
 qstr_What_do_you_want? What_do_you_want?
-qstr_Greetings_{playernam Greetings,_{playername}._What_can_I_do_for_you?
+qstr_Greetings._What_can_ Greetings._What_can_I_do_for_you?
+qstr_Who_are_you?_A_mere_ Who_are_you?_A_mere_{s25}?_I_do_not_have_time_for_the_likes_of_you!_Leave_me_be!_{s2}
 qstr_What?_You_come_to_me What?_You_come_to_me_and_you_do_not_know_what_I_do?_Take_a_look_around_you.^^_Do_you_see_the_blood?_Do_you_hear_the_crying?_Do_you_feel_their_pain?_That_is_what_I_do!_I_break_things_to_make_them_better_again!_If_you_come_to_me,_broken_and_in_pain,_I_can_make_you_better!
 qstr_I_am_a_healer._Come_ I_am_a_healer._Come_to_me_when_you_or_your_companions_are_seriously_wounded,_and_I_will_mend_your_injuries_to_the_best_of_my_ability.
+qstr_You_have_found_the_loca You_have_found_the_local_healer
 qstr__Costs_500_Resource_ (Costs_500_Resource,_5_Influence)
 qstr_Ha!_I_can_see_that!_ Ha!_I_can_see_that!_I_can_do_that,_yes.._Aside_from_your_blood,_this_is_not_for_free!_{s2}
 qstr_Yes_I_see_that._We_c Yes,_I_see_that._We_can_do_tend_to_you_yes,_but_I'll_need_to_send_for_some_ingredients._{s2}

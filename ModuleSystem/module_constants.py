@@ -370,13 +370,14 @@ slot_merchant_visited    = 35
 slot_elder_visited       = 36
 slot_castle_visited      = 37
 slot_barracks_visited    = 38
+slot_town_healer         = 39 #stores troop#
 
-slot_village_raided_by        = 34 #unused in TLD
-slot_village_state            = 35 #unused in TLD, svs_normal, svs_being_raided, svs_looted, svs_recovering, svs_deserted
-slot_village_raid_progress    = 36 #unused in TLD
-slot_village_recover_progress = 37 #unused in TLD
+# slot_village_raided_by        = 34 #unused in TLD
+# slot_village_state            = 35 #unused in TLD, svs_normal, svs_being_raided, svs_looted, svs_recovering, svs_deserted
+# slot_village_raid_progress    = 36 #unused in TLD
+# slot_village_recover_progress = 37 #unused in TLD
 slot_village_smoke_added      = 38 # used for ruins smoking after destruction
-slot_village_infested_by_bandits   = 39 #TLD: not used
+#slot_village_infested_by_bandits   = 39 #TLD: not used
 
 slot_town_menu_background     = 40 #TLD menu background picture
 
