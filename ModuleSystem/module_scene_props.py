@@ -4007,7 +4007,7 @@ scene_props = [
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(store_random_in_range, ":rand", 0, 9),
-    (store_add, ":troop_slot", slot_center_walker_1_troop, ":rand"),
+    (store_add, ":troop_slot", slot_center_walker_0_troop, ":rand"),
     (party_get_slot, ":troop", "$current_town", ":troop_slot"),
 
     (spawn_agent, ":troop"),
@@ -4381,7 +4381,7 @@ scene_props = [
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -95,0),(set_spawn_position, pos2),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
-        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [ 
@@ -4418,7 +4418,7 @@ scene_props = [
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -130,0),(set_spawn_position, pos2),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
-        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [
@@ -4455,7 +4455,7 @@ scene_props = [
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -160,0),(set_spawn_position, pos2),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
-        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [
@@ -4492,7 +4492,7 @@ scene_props = [
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -150,0),(set_spawn_position, pos2),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers       
-        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [    
@@ -4617,7 +4617,7 @@ scene_props = [
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -80,0),(set_spawn_position, pos2),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
-        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
         ] + (is_a_wb_sceneprop==1 and [           
@@ -4654,7 +4654,7 @@ scene_props = [
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -100,0),(set_spawn_position, pos2),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
-        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [
@@ -4694,7 +4694,7 @@ scene_props = [
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -80,0),(set_spawn_position, pos2),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
-        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [
@@ -4731,7 +4731,7 @@ scene_props = [
         (copy_position, pos2, pos1),
         (position_move_x, pos2, -95,0),(set_spawn_position, pos2),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
-        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
   ] + (is_a_wb_sceneprop==1 and [ 
@@ -4767,7 +4767,7 @@ scene_props = [
         (prop_instance_get_position, pos1, ":instance_no"),
         (set_spawn_position, pos1),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
-        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
         ] + (is_a_wb_sceneprop==1 and [           
@@ -4792,7 +4792,7 @@ scene_props = [
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -40,0),(set_spawn_position, pos2),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
-        (val_add, ":walker_type", slot_center_walker_1_troop),
+        (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
         ] + (is_a_wb_sceneprop==1 and [           
@@ -4821,7 +4821,7 @@ scene_props = [
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(store_random_in_range, ":slot", 0, 4),
-    (val_add, ":slot", slot_center_walker_1_troop),
+    (val_add, ":slot", slot_center_walker_0_troop),
     (party_get_slot, ":troop", "$current_town", ":slot"),
     (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),
 
