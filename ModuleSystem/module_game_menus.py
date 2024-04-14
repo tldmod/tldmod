@@ -9347,13 +9347,19 @@ game_menus = [
  ] for ct in range(1-cheat_switch)])+[
 
 #menu no. 19
-	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_isengard"),(eq,"$entry_to_town_forbidden",0)
+	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_isengard"),(eq,"$entry_to_town_forbidden",0), (scene_slot_eq, "scn_isengard_underground", slot_scene_visited, 1),
 						], "Go to the underground caverns.",
 						[
 						(call_script, "script_initialize_center_scene", "scn_isengard_underground"),
 						#(set_jump_mission, "mt_town_center"),
 						(jump_to_scene, "scn_isengard_underground"),
-						(change_screen_mission)], "Go to the underground caverns"),
+						(change_screen_mission),
+                        (scene_slot_eq, "scn_isengard_underground", slot_scene_visited, 0),
+                        (display_message, "@As you enter the vast caverns underneath the Ring of Isengard, where thousands of orcs work to supply the growing armies of the White Hand, you gain confidence in the rise of a new power and the demise of the old world."),
+                        (add_xp_as_reward, 100),
+                        (call_script, "script_change_player_relation_with_center", "$current_town", 3),
+                        (call_script, "script_increase_rank", "$ambient_faction", 3),                        
+                        (scene_set_slot, "scn_isengard_underground", slot_scene_visited, 1),], "Go to the underground caverns"),
 
 #menu no. 20
 	  ("tirith_toplevel",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_minas_tirith"),(eq,"$entry_to_town_forbidden",0)
@@ -9373,6 +9379,24 @@ game_menus = [
                          #(set_jump_mission, "mt_town_center"),
 						 (jump_to_scene, "scn_erebor_gate"),
 						 (change_screen_mission)],"Go to the Great Gates"),
+
+#menu no. 22						 
+  	  ("glittering_caves",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_hornburg"),(eq,"$entry_to_town_forbidden",0), (scene_slot_eq, "scn_hornburg_castle", slot_scene_visited, 1),
+						], "Go to the Glittering Caves.",
+						[
+                         (set_jump_mission, "mt_legendary_place_visit"),
+                         (set_jump_entry, 1),
+						 (jump_to_scene, "scn_hornburg_castle"),
+						 (change_screen_mission),
+                         (assign,"$dungeons_in_scene",1),
+                         (assign, "$bs_night_sound", "snd_moria_ambiance"),
+                         (assign, "$bs_day_sound", "snd_moria_ambiance"),
+                        (scene_slot_eq, "scn_hornburg_castle", slot_scene_visited, 0),
+                        (display_message, "@You have found the Glittering Caves, one of the marvels of the Northern World."),
+                        (add_xp_as_reward, 100),
+                        (call_script, "script_change_player_relation_with_center", "$current_town", 3),                       
+                        (scene_set_slot, "scn_hornburg_castle", slot_scene_visited, 1),
+                         ],"Go to the Glittering Caves"),
 						
       ("town_leave",[],"Leave...",[
             (assign, "$g_permitted_to_center",0),

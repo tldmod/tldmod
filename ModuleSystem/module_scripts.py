@@ -2085,7 +2085,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 38),  #Rafa: Savegame version
+    (assign,"$savegame_version", 40),  #Rafa: Savegame version
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -14417,8 +14417,17 @@ scripts = [
 ("center_ambiance_sounds",
    [(set_fixed_point_multiplier, 100),
    (try_begin),
-      (eq, "$play_ambient_sounds", 1), 
-      (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+      (ge, "$play_ambient_sounds", 1), 
+      (assign, ":sound", 0),
+      (try_begin),
+        (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+        (party_get_slot,":sound","$g_encountered_party", slot_center_occasional_sound1_day), 
+        (gt, ":sound", 0),
+      (else_try),
+        (ge, "$play_ambient_sounds", 2), #we use 0 and 1 for off/on, greater than that stores sound#
+        (assign, ":sound", "$play_ambient_sounds"),
+      (try_end),
+      (gt, ":sound", 0),
       
       #play somewhere around the player
       (get_player_agent_no, ":player_agent"),
@@ -14428,7 +14437,7 @@ scripts = [
       (position_move_x, pos5, ":x"),
       (position_move_y, pos5, ":y"),
       #(neg|is_currently_night),
-        (party_get_slot,":sound","$g_encountered_party", slot_center_occasional_sound1_day), 
+        
         (store_random_in_range, ":r", 0, 7),
         (ge, ":r", 5),
         ] + (is_a_wb_script==1 and [
@@ -25845,6 +25854,12 @@ command_cursor_scripts = [
         (try_end),
         (assign, "$savegame_version", 39),
 	(try_end),	    
+    
+    (try_begin), #InVain - update Hornburg castle scene
+        (le, "$savegame_version", 39),
+        (party_set_slot, "p_town_hornburg", slot_town_castle, -1),
+        (assign, "$savegame_version", 40),
+	(try_end),	      
 ]),
 
 #Kham

@@ -395,8 +395,6 @@ castle_guard_sneaked_intro_2
 castle_guard_intro_1
 castle_guard_intro_2
 castle_guard_intro_2b
-secret_guardian_let_through
-secret_guardian_let_through1
 castle_gate_guard_talk
 castle_gate_open
 request_meeting_castle_lord
@@ -635,6 +633,8 @@ party_reinforce_end
 party_reinforce_check
 party_reinforce_check_1
 party_reinforce_check_2
+secret_guardian_let_through
+secret_guardian_let_through1
 party_encounter_hostile_attacker
 party_encounter_hostile_defender
 party_encounter_hostile_ultimatum_surrender

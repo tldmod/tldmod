@@ -6269,10 +6269,13 @@ mission_templates = [ # not used in game
 ]),
 ("legendary_place_visit",0,-1,
  "You visit a legendary place.",
-    [(0,mtef_scene_source|mtef_team_0,0,0,1,[]),(1,mtef_scene_source|mtef_team_0,0,0,1,[]),(16,mtef_scene_source|mtef_team_0,0,0,1,[]),
+    [(0,mtef_scene_source|mtef_team_0,0,0,1,[]),(1,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),(16,mtef_scene_source|mtef_team_0,0,0,1,[]),
      (17,mtef_scene_source|mtef_team_0,0,0,1,[]),(18,mtef_scene_source|mtef_team_0,0,0,1,[]),(19,mtef_scene_source|mtef_team_0,0,0,1,[]),
-     ],tld_common_wb_muddy_water+[
+     ],tld_common_wb_muddy_water+fade+tld_common_peacetime_scripts+[
+    
     (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
+    (0,0,ti_once,[],[(music_set_situation, 0),]), #no music
+    (2, 0, 0, [(call_script, "script_center_ambiance_sounds")], []),
 	  
     (0,0,ti_once,[],
       [(try_begin),
@@ -6281,6 +6284,7 @@ mission_templates = [ # not used in game
 			 (else_try),
          (play_sound, "$bs_day_sound",   sf_looping),
 			 (try_end)]),
+
      (10, 0, ti_once, [], [ # Kham - Give legendary place description
         (try_begin),
           (eq, "$g_encountered_party", "p_legend_amonhen"),

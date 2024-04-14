@@ -1,4 +1,4 @@
-1751
+1753
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1108,6 +1108,8 @@ qstr_the_Hall the_Hall
 qstr_the_Great_Chamber_of the_Great_Chamber_of_Thrór
 qstr_Stay_indoors_for_som Stay_indoors_for_some_time_({reg1}_Resource_points_per_night)
 qstr_Camp_outside_for_som Camp_outside_for_some_time_(free)
+qstr_As_you_enter_the_vas As_you_enter_the_vast_caverns_underneath_the_Ring_of_Isengard,_where_thousands_of_orcs_work_to_supply_the_growing_armies_of_the_White_Hand,_you_gain_confidence_in_the_rise_of_a_new_power_and_the_demise_of_the_old_world.
+qstr_You_have_found_the_G You_have_found_the_Glittering_Caves,_one_of_the_marvels_of_the_Northern_World.
 qstr_{s4}_s_scouts_have_s {s4}'s_scouts_have_seen_and_reported_your_failure._You_have_brought_shame_to_{s4}_and_the_responsibility_of_this_failure_is_yours_alone.
 qstr_{s1}_s_Ship {s1}'s_Ship
 qstr_Time_passes... Time_passes...
@@ -1589,9 +1591,6 @@ qstr_Take_this_{s22}._I_h Take_this_{s22}._I_have_no_need_of_it.
 qstr_Just_a_moment_{playe Just_a_moment,_{playername}._Heroes_like_you_and_your_companions_are_worthy_of_the_finest_weapons,_armor,_and_horses.
 qstr_Wait_{playername}._Yo Wait,_{playername}._You_have_been_an_able_commander_in_the_war_effort._I_think_it's_time_you_had_some_better_equipment.
 qstr_Accept_this_{s22}_ma Accept_this_{s22},_may_it_aid_you_and_your_companions.
-qstr_check_1 check_1
-qstr_check_2 check_2
-qstr_check_3 check_3
 qstr_the_Dwarves_so_that_ the_Dwarves,_so_that_if_you_pass_by_Erebor_or_the_Iron_Hills,_you_can_try_to_arm_yourself_with_the_fabled_Dwarven_weaponry
 qstr_Gondor_so_that_if_yo Gondor,_so_that_if_you_pass_by_their_lands,_you_can_try_to_purchase_some_of_their_well-known_armours
 qstr_Rohan_so_that_if_you Rohan,_so_that_if_you_pass_by_their_lands,_you_can_try_to_purchase_some_of_their_fabled_horses
@@ -1750,3 +1749,6 @@ qstr_{s31}{reg28?Those:That}_ {s31}{reg28?Those:That}_brave_{reg28?soldiers:sold
 qstr_{s31}{reg28?Those:That}_u {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_wreak_more_havoc.{s32}^{s23}^^[earned_{reg14}_Resource_Points_of_{s14}]
 qstr_Good_luck_in_your_tr Good_luck_in_your_travels.
 qstr_Try_not_getting_your Try_not_getting_yourself_killed.
+qstr_check_1 check_1
+qstr_check_2 check_2
+qstr_check_3 check_3
