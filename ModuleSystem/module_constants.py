@@ -380,6 +380,7 @@ slot_village_smoke_added      = 38 # used for ruins smoking after destruction
 #slot_village_infested_by_bandits   = 39 #TLD: not used
 
 slot_town_menu_background     = 40 #TLD menu background picture
+slot_town_all_found            = 41
 
 slot_center_last_player_alarm_hour = 42
 

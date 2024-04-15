@@ -1,4 +1,4 @@
-2002
+2006
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -87,7 +87,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-04-14_12:40___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-04-15_18:15___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -121,7 +121,6 @@ qstr_Campaign_difficulty: Campaign_difficulty:__
 qstr_Hard Hard
 qstr_Default Default
 qstr_Easy Easy
-qstr_Town_NPCs_Always_Acc Town_NPCs_Always_Accessible_from_Menus:__
 qstr_Cutscenes:__ Cutscenes:__
 qstr_Injuries_for_compani Injuries_for_companions:__
 qstr_Permanent_death_for_ Permanent_death_for_lords_and_companions:__
@@ -1330,6 +1329,11 @@ qstr_Stay_indoors_for_som Stay_indoors_for_some_time_({reg1}_Resource_points_per
 qstr_Camp_outside_for_som Camp_outside_for_some_time_(free)
 qstr_As_you_enter_the_vas As_you_enter_the_vast_caverns_underneath_the_Ring_of_Isengard,_where_thousands_of_orcs_work_to_supply_the_growing_armies_of_the_White_Hand,_you_gain_confidence_in_the_rise_of_a_new_power_and_the_demise_of_the_old_world.
 qstr_You_have_found_the_G You_have_found_the_Glittering_Caves,_one_of_the_marvels_of_the_Northern_World.
+qstr_As_the_party_member_ As_the_party_member_with_the_highest_Bargainer_skill_({reg2}),_{reg3?you_estimate:{s3}_estimates}_that_it_will_take_{reg4}_hours_to_find_the_most_notable_persons_in_town.
+qstr_You_have_already_fou You_have_already_found_all_persons_of_interest.
+qstr_the_captain_of_the_g the_captain_of_the_garrison,_and_the_civil_authority.
+qstr_and_the_captain_of_t and_the_captain_of_the_garrison._As_this_place_was_recently_captured,_it_has_not_civil_authority.
+qstr_You_also_heard_of_a_ You_also_heard_of_a_healer,_but_you_will_have_to_find_them_on_your_own.
 qstr_{s4}_s_scouts_have_s {s4}'s_scouts_have_seen_and_reported_your_failure._You_have_brought_shame_to_{s4}_and_the_responsibility_of_this_failure_is_yours_alone.
 qstr_{s1}_s_Ship {s1}'s_Ship
 qstr_Time_passes... Time_passes...
