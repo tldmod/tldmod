@@ -12530,8 +12530,9 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone,"trade_requested_weapons", [], "Ah, yes commander. These wares are the best you'll find anywhere.", "merchant_trade",[#(assign, "$equip_needs_checking", 1),
   (change_screen_trade)]],
-[anyone,"trade_requested_horse", [], "Fierce mounts for the riding and killing, and meat to feed them with! You won't find better beasts than these anywhere else.", "merchant_trade",[#(assign, "$equip_needs_checking", 1),
+[anyone,"trade_requested_horse", [(troop_get_type, ":race", "$g_talk_troop"), (is_between, ":race", tf_orc_begin, tf_orc_end),], "Fierce mounts for the riding and killing, and meat to feed them with! You won't find better beasts than these anywhere else.", "merchant_trade",[#(assign, "$equip_needs_checking", 1),
                   (change_screen_trade)]],
+[anyone,"trade_requested_horse", [], "You have a fine eye for horses, {sir/madam}. You won't find better beasts than these anywhere else.", "merchant_trade",[[change_screen_trade]]],
 
 [anyone,"merchant_trade", [], "Anything else?", "town_merchant_talk",[]],
 [anyone|plyr,"town_merchant_talk", [], "Tell me. What are people talking about these days?", "merchant_gossip",[]],
