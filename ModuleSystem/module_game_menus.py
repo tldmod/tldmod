@@ -9455,7 +9455,11 @@ game_menus = [
        (str_store_troop_name, s3, ":max_skill_owner"),
      (try_end),
      
-     (str_store_string, s4, "@As the party member with the highest Bargainer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to find the most notable persons in town."),
+     (faction_get_slot, reg6, "$ambient_faction", slot_faction_influence),
+     (store_div, reg5, reg4, 2),
+     (assign, "$tld_action_cost", reg5),
+     
+     (str_store_string, s4, "@As the party member with the highest Bargainer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to find the most notable persons in town. [Costs {reg5}/{reg6} influence]"),
 
     (assign, ":check_count", 0),
     (assign, ":count", 0),
@@ -9504,9 +9508,11 @@ game_menus = [
         (assign, "$temp_2", 1),
     (try_end),
     ],
-    [ ("town_find_NPCs_cont",[(eq, "$temp_2", 0),],
+    [ ("town_find_NPCs_cont",[(eq, "$temp_2", 0),(ge, reg6, reg5),],
        "Do it.", [
            (assign,"$auto_menu", "mnu_town_find_NPCs_end"),
+           (val_sub, reg6, "$tld_action_cost"),
+           (faction_set_slot, "$ambient_faction", slot_faction_influence, reg6),
            (call_script, "script_get_max_skill_of_player_party", "skl_trade"),
            (store_sub, ":hours_takes", 11, reg0),
            (rest_for_hours_interactive, ":hours_takes", 5, 0),
