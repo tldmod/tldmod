@@ -12283,7 +12283,7 @@ scripts = [
 	(else_try),
 		(this_or_next|eq,":landmark","p_town_calembel"),
         (eq, ":region", region_lamedon),
-        (store_random_in_range, ":scene", 0, 4),
+        (store_random_in_range, ":scene", 0, 8),
         (eq, ":scene",0),
         (assign,":scene_to_use","scn_gondor_battlefield_morgul"),
     (else_try),
@@ -12339,16 +12339,16 @@ scripts = [
 	        	(is_between,":scene",30,40),
 	        	(assign,":scene_to_use","scn_lebennin_4"), #custom flower hills
 	        (else_try),
-	        	(is_between,":scene",40,45),
+	        	(is_between,":scene",40,42),
 	        	(assign,":scene_to_use","scn_village_gondor_battlefield_1"), # Gondor village
 	        (else_try),
-	        	(is_between,":scene",45,50),
+	        	(is_between,":scene",42,44),
 	        	(assign,":scene_to_use","scn_village_gondor_battlefield_2"), # Gondor village
 	        (else_try),
-	        	(is_between,":scene",50,55),
+	        	(is_between,":scene",44,46),
 	        	(assign,":scene_to_use","scn_scout_camp_gondor_battlefield_1"), # Gondor village ruins
 	        (else_try),
-	        	(is_between,":scene",55,60),
+	        	(is_between,":scene",46,48),
 	        	(assign,":scene_to_use","scn_scout_camp_gondor_battlefield_2"), # Gondor village ruins
 	        (else_try),
 				(assign, ":native_terrain_to_use", rt_plain),  # gondor default
@@ -12434,7 +12434,7 @@ scripts = [
 			(store_random_in_range, ":scene_to_use", "scn_forest_ithilien_small1", "scn_forest_lorien1"),
 		(else_try),
         	(store_random_in_range, reg1, 0,5),
-			(try_begin),(store_random_in_range, ":scene_to_use", "scn_forest_ithilien1", scn_forest_ithilien6+1),       
+			(try_begin),(ge, reg1, 2),(store_random_in_range, ":scene_to_use", "scn_forest_ithilien1", scn_forest_ithilien6+1),       
             (else_try),(assign, ":native_terrain_to_use", rt_plain),
             (try_end), 
 		(try_end),
@@ -12455,7 +12455,7 @@ scripts = [
 		(assign, "$small_scene_used", 1),
 	(else_try),		# gondor regions
 		(is_between,":region",region_pelennor, region_anorien+1),
-			(store_random_in_range, ":scene", 1, 100),
+			(store_random_in_range, ":scene", 1, 200),
 	        (try_begin),
 	        	(is_between,":scene",0,5),
 	        	(assign,":scene_to_use","scn_village_gondor_battlefield_1"), #InVain: Gondor village
