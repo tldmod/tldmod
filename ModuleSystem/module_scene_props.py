@@ -4375,6 +4375,7 @@ scene_props = [
 ("barrier_2m_horizontal" ,sokf_invisible|sokf_type_barrier,"barrier_2m_horizontal" ,"bo_barrier_2m_horizontal" , []),
 
 ("troop_civilian_wood_hacker_1h",0,"prop_wood_chopper","bo_prop_wood_chopper",   [
+  ] + (is_a_wb_sceneprop==1 and [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
@@ -4385,8 +4386,7 @@ scene_props = [
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
         (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
-        (spawn_agent, ":troop"),
-  ] + (is_a_wb_sceneprop==1 and [ 
+        (spawn_agent, ":troop"), 
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
@@ -4398,20 +4398,33 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_woodaxe_1h", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_woodaxe_1h"),
         (agent_set_look_target_position, reg0, pos2),
-    ] or []) + [          ]),
+        ]),
         
    (ti_on_scene_prop_hit,
-    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+    [   (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (prop_instance_get_variation_id, ":var1", ":instance_no"),
+        (try_begin),
+            (ge, ":var1", 1),
+            (store_mul, ":sound_dist", ":var1", 100),
+        (else_try),
+            (assign, ":sound_dist", 1500),
+        (try_end),
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos4, ":player_agent"),
         (get_distance_between_positions, ":distance", pos1, pos4),
-        (le, ":distance", 1500), #15m  
+        # (assign, reg66, ":distance"),
+        # (display_message, "@distance: {reg66}"),
+        (le, ":distance", ":sound_dist"), 
         (play_sound, "snd_dummy_hit"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 2),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
-    ])]),
+    ])
+    ] or []) + [
+    ]),
     
 ("troop_civilian_wood_hacker_2h",0,"prop_wood_chopper","bo_prop_wood_chopper",   [
+  ] + (is_a_wb_sceneprop==1 and [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
@@ -4423,7 +4436,6 @@ scene_props = [
         (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
-  ] + (is_a_wb_sceneprop==1 and [
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
@@ -4435,21 +4447,34 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_woodaxe_2h", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_woodaxe_2h"),
         (agent_set_look_target_position, reg0, pos2),
-] or []) + [ ]),
+        ]),
         
    (ti_on_scene_prop_hit,
-    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+    [   (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (prop_instance_get_variation_id, ":var1", ":instance_no"),
+        (try_begin),
+            (ge, ":var1", 1),
+            (store_mul, ":sound_dist", ":var1", 100),
+        (else_try),
+            (assign, ":sound_dist", 1500),
+        (try_end),
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos4, ":player_agent"),
         (get_distance_between_positions, ":distance", pos1, pos4),
-        (le, ":distance", 15000), #15m
+        # (assign, reg66, ":distance"),
+        # (display_message, "@distance: {reg66}"),
+        (le, ":distance", ":sound_dist"),
         (play_sound, "snd_dummy_hit"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 2),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
-    ])]),
+    ])
+    ] or []) + [    
+    ]),
     
 ("troop_civilian_tree_feller",0,"wood_a","bo_wood_a_bigger",   [
-    (ti_on_init_scene_prop,[
+  ] + (is_a_wb_sceneprop==1 and [
+        (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
         (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
@@ -4460,7 +4485,6 @@ scene_props = [
         (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
-  ] + (is_a_wb_sceneprop==1 and [
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
@@ -4472,20 +4496,33 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_woodaxe_2h", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_woodaxe_2h"),
         (agent_set_look_target_position, reg0, pos2),
-    ] or []) + [ ]),
+        ]),
         
    (ti_on_scene_prop_hit,
-    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+    [   (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (prop_instance_get_variation_id, ":var1", ":instance_no"),
+        (try_begin),
+            (ge, ":var1", 1),
+            (store_mul, ":sound_dist", ":var1", 100),
+        (else_try),
+            (assign, ":sound_dist", 1500),
+        (try_end),
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos4, ":player_agent"),
         (get_distance_between_positions, ":distance", pos1, pos4),
-        (le, ":distance", 15000), #15m
+        # (assign, reg66, ":distance"),
+        # (display_message, "@distance: {reg66}"),
+        (le, ":distance", ":sound_dist"),
         (play_sound, "snd_dummy_hit"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 2),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
-    ])]),  
+    ])
+        ] or []) + [ 
+    ]),  
     
 ("troop_civilian_miner",0,"PW_rock_a","bo_PW_rock_a",   [
+  ] + (is_a_wb_sceneprop==1 and [  
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
@@ -4496,8 +4533,7 @@ scene_props = [
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers       
         (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
-        (spawn_agent, ":troop"),
-  ] + (is_a_wb_sceneprop==1 and [    
+        (spawn_agent, ":troop"),  
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
@@ -4509,20 +4545,23 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_pickaxe", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_pickaxe"),
         (agent_set_look_target_position, reg0, pos2),
-    ] or []) + [  ]),
+        ]), 
     
    (ti_on_scene_prop_hit,
     [   (play_sound, "snd_footstep_horse_1b"), 
         #(play_sound, "snd_jump_end"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 3),
         #(particle_system_burst, "psys_dummy_straw", pos1, 10),
-    ])]),  
+    ])
+    ] or []) + [     
+    ]),  
 
 ("troop_smith",0,"prop_smith","bo_prop_smith",   [
+  ] + (is_a_wb_sceneprop==1 and [ 
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (lt, "$g_encountered_party_2", 0), 
         (prop_instance_get_position, pos1, ":instance_no"), 
         
         #spawn smith
@@ -4530,8 +4569,7 @@ scene_props = [
         (position_move_x, pos2, -100,0),(set_spawn_position, pos2),
         (store_faction_of_party, ":fac", "$current_town"),
         (faction_get_slot, ":troop", ":fac", slot_faction_tier_1_troop), #get a tier 1 troop so they don't wear heavy armour
-        (spawn_agent, ":troop"),
-  ] + (is_a_wb_sceneprop==1 and [    
+        (spawn_agent, ":troop"),   
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
@@ -4543,44 +4581,32 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_hammer", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_hammer"),
         (agent_set_look_target_position, reg0, pos1),
-        (agent_set_scripted_destination, reg0, pos2, 0, 1),
-    ] or []) + [        
-        # #spawn helper
-        # (copy_position, pos3, pos1),
-        # (position_move_y, pos3, 50,0),
-        # (position_move_x, pos3, 50,0),
-        # (position_rotate_z, pos3, 120),
-        # (set_spawn_position, pos3),
-        # (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),        
-        # (spawn_agent, ":troop"),  
-        # (agent_set_animation, reg0, "anim_defend_forward_greatsword_keep"), 
-        # (agent_set_stand_animation, reg0, "anim_defend_forward_greatsword_keep"), 
-  # ] + (is_a_wb_sceneprop==1 and [         
-        # #(scene_prop_set_slot, ":instance_no", 99, reg0), #just a random slot for this single scene prop
-        # (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
-            # (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
-            # (gt, ":item", 1),
-            # (neg|item_has_property, ":item", itp_civilian),
-            # (agent_unequip_item, reg0, ":item", ":weapon_slot"),
-        # (try_end),  
-        # #(agent_set_scripted_destination, reg0, pos3, 0, 1),
-        # (agent_set_look_target_position, reg0, pos2),
-        # (spawn_scene_prop, spr_spike_a),        
-    # ] or []) + [        
+        (agent_set_scripted_destination, reg0, pos2, 0, 1),           
         ]),
         
    (ti_on_scene_prop_hit,
-    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+    [   (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (prop_instance_get_variation_id, ":var1", ":instance_no"),
+        (try_begin),
+            (ge, ":var1", 1),
+            (store_mul, ":sound_dist", ":var1", 100),
+        (else_try),
+            (assign, ":sound_dist", 3500),
+        (try_end),
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos4, ":player_agent"),
         (get_distance_between_positions, ":distance", pos1, pos4),
         # (assign, reg66, ":distance"),
         # (display_message, "@distance: {reg66}"),
-        (le, ":distance", 3500), #20m
+        (le, ":distance", ":sound_dist"),
         (play_sound, "snd_sword_clash_1"),
         (particle_system_burst, "psys_fire_glow_1", pos1, 3),
         (particle_system_burst, "psys_torch_fire_sparks", pos1, 10),
-    ])]), 
+    ])
+    ] or []) + [      
+    ]), 
+
 
 ("troop_smith_helper",sokf_invisible,"defend_twohanded_WB_frame","bo_defend_twohanded_WB_frame", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
@@ -4611,6 +4637,7 @@ scene_props = [
     ])]),
 
 ("troop_civilian_hammer",0,"prop_hammerer","bo_prop_hammerer",   [
+    ] + (is_a_wb_sceneprop==1 and [ 
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
@@ -4621,8 +4648,7 @@ scene_props = [
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
         (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
-        (spawn_agent, ":troop"),
-        ] + (is_a_wb_sceneprop==1 and [           
+        (spawn_agent, ":troop"),          
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
@@ -4634,20 +4660,33 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_hammer", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_hammer"),
         (agent_set_look_target_position, reg0, pos1),
-        ] or []) + [          ]),
+        ]),
         
    (ti_on_scene_prop_hit,
-    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+    [   (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (prop_instance_get_variation_id, ":var1", ":instance_no"),
+        (try_begin),
+            (ge, ":var1", 1),
+            (store_mul, ":sound_dist", ":var1", 100),
+        (else_try),
+            (assign, ":sound_dist", 1500),
+        (try_end),
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos4, ":player_agent"),
         (get_distance_between_positions, ":distance", pos1, pos4),
-        (le, ":distance", 1500), #15m
+        # (assign, reg66, ":distance"),
+        # (display_message, "@distance: {reg66}"),
+        (le, ":distance", ":sound_dist"),
         (play_sound, "snd_shield_hit_metal_wood"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 1),
         #(particle_system_burst, "psys_dummy_straw", pos1, 10),
-    ])]),
+    ])
+    ] or []) + [
+    ]),
 
 ("troop_civilian_farmer_mattock",0,"earth_heap","bo_earth_heap",   [
+  ] + (is_a_wb_sceneprop==1 and [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
@@ -4659,7 +4698,6 @@ scene_props = [
         (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
-  ] + (is_a_wb_sceneprop==1 and [
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
@@ -4673,21 +4711,34 @@ scene_props = [
         (agent_equip_item, reg0, ":item_to_equip", 1),
         (agent_set_wielded_item, reg0, ":item_to_equip"),
         (agent_set_look_target_position, reg0, pos1),
-] or []) + [ ]),
+        ]),
         
    (ti_on_scene_prop_hit,
-    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+    [   (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (prop_instance_get_variation_id, ":var1", ":instance_no"),
+        (try_begin),
+            (ge, ":var1", 1),
+            (store_mul, ":sound_dist", ":var1", 100),
+        (else_try),
+            (assign, ":sound_dist", 1500),
+        (try_end),
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos4, ":player_agent"),
         (get_distance_between_positions, ":distance", pos1, pos4),
-        (le, ":distance", 1500), #15m
+        # (assign, reg66, ":distance"),
+        # (display_message, "@distance: {reg66}"),
+        (le, ":distance", ":sound_dist"),
         (play_sound, "snd_wooden_hit_high_armor_low_damage"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 3),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
-    ])]),
+    ])
+    ] or []) + [
+    ]),
 
 #doesn't work so good, somehow the agent often doesn't aim at the target prop
 ("troop_civilian_farmer_shovel",0,"earth_heap","bo_earth_heap",   [
+  ] + (is_a_wb_sceneprop==1 and [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
@@ -4699,7 +4750,6 @@ scene_props = [
         (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
-  ] + (is_a_wb_sceneprop==1 and [
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
@@ -4711,7 +4761,7 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_shovel", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_shovel"),
         (agent_set_look_target_position, reg0, pos1),
-] or []) + [ ]),
+        ]),
         
    (ti_on_scene_prop_hit,
     [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
@@ -4719,12 +4769,15 @@ scene_props = [
         (agent_get_position, pos4, ":player_agent"),
         (get_distance_between_positions, ":distance", pos1, pos4),
         (le, ":distance", 1500), #15m
-        (play_sound, "snd_wooden_hit_high_armor_low_damage"),
+        #(play_sound, "snd_wooden_hit_high_armor_low_damage"), #no sound needed
         (particle_system_burst, "psys_dummy_smoke", pos1, 3),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
-    ])]),
+    ])
+    ] or []) + [ 
+    ]),
 
 ("troop_civilian_butcher",0,"raw_meat","bo_wood_a_bigger",   [
+  ] + (is_a_wb_sceneprop==1 and [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
@@ -4735,8 +4788,7 @@ scene_props = [
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
         (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
-        (spawn_agent, ":troop"),
-  ] + (is_a_wb_sceneprop==1 and [ 
+        (spawn_agent, ":troop"), 
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
@@ -4748,18 +4800,30 @@ scene_props = [
         (agent_equip_item, reg0, "itm_orc_axe", 1),
         (agent_set_wielded_item, reg0, "itm_orc_axe"),
         (agent_set_look_target_position, reg0, pos2),
-    ] or []) + [          ]),
+         ]),
         
    (ti_on_scene_prop_hit,
-    [   (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+    [   (store_trigger_param_1, ":instance_no"),
+        (set_fixed_point_multiplier, 100), #sound is pretty loud, avoid hearingit from across the map
+        (prop_instance_get_variation_id, ":var1", ":instance_no"),
+        (try_begin),
+            (ge, ":var1", 1),
+            (store_mul, ":sound_dist", ":var1", 100),
+        (else_try),
+            (assign, ":sound_dist", 500),
+        (try_end),
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos4, ":player_agent"),
         (get_distance_between_positions, ":distance", pos1, pos4),
-        (le, ":distance", 500), #5m  
+        # (assign, reg66, ":distance"),
+        # (display_message, "@distance: {reg66}"),
+        (le, ":distance", ":sound_dist"),
         (play_sound, "snd_wooden_hit_high_armor_low_damage", sf_vol_1),
         (particle_system_burst, "psys_game_blood_rand_2", pos1, 100),
         #(particle_system_burst, "psys_dummy_smoke", pos1, 1),
-    ])]),
+    ])
+    ] or []) + [
+    ]),
 
 ("troop_civilian_worker_stand",sokf_invisible,"arrow_helper_blue","0",   [
     (ti_on_init_scene_prop,[
