@@ -960,3 +960,7 @@ itm_civilian_carry_sack = 958
 itm_civilian_carry_wood_heap = 959
 itm_civilian_carry_wood = 960
 itm_civilian_carry_wood2 = 961
+itm_animal_spider = 962
+itm_animal_bear = 963
+itm_animal_wolf = 964
+itm_animal_werewolf = 965

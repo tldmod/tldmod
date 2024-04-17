@@ -9456,7 +9456,7 @@ game_menus = [
      (try_end),
      
      (faction_get_slot, reg6, "$ambient_faction", slot_faction_influence),
-     (store_div, reg5, reg4, 2),
+     (store_div, reg5, reg4, 3),
      (assign, "$tld_action_cost", reg5),
      
      (str_store_string, s4, "@As the party member with the highest Bargainer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to find the most notable persons in town. [Costs {reg5}/{reg6} influence]"),

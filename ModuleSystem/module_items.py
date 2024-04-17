@@ -1560,6 +1560,12 @@ items =[
 ["civilian_carry_wood","Wood",[("ado_wood_carry",0)],itp_type_one_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
 ["civilian_carry_wood2","Wood",[("ado_wood_carry",0)],itp_type_two_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
 
+
+#non-ridable animals
+["animal_spider","Spider",[("spider",0)], itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(50)|horse_maneuver(75)|horse_charge(25),imodbits_none,[]],
+["animal_bear","Bear",    [("bear_2",0)],   itp_unique, 0, 1200, hit_points(130)|body_armor(48)|horse_speed(50)|horse_maneuver(48)|horse_charge(25)|horse_scale(120)|difficulty(10),imodbits_none,[]],
+["animal_wolf","Wolf",    [("wolf",0)],   itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(50)|horse_maneuver(50)|horse_charge(25)|horse_scale(85)|difficulty(10),imodbits_none,[]],
+["animal_werewolf","Werewolf",    [("mm_warg_a",0)],   itp_unique, 0, 1200, hit_points(130)|body_armor(35)|horse_speed(60)|horse_maneuver(60)|horse_charge(35)|horse_scale(100)|difficulty(10),imodbits_none,[]],
 ] or []) + [ 
 
 ]

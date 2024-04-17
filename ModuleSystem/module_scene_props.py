@@ -3471,18 +3471,20 @@ scene_props = [
 	        (else_try),
 	        	(spawn_horse,"itm_animal_big", imod_large_bag),
 			(try_end),])]),
-("animal_wolf",sokf_invisible,"wolf","0", [(ti_on_init_scene_prop,[
-    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-  (spawn_horse,"itm_wolf", 0),])]),
-("animal_bear",sokf_invisible,"bear","0", [(ti_on_init_scene_prop,[
-    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-  (spawn_horse,"itm_bear", 0),])]),
-("animal_spider",sokf_invisible,"spider","0", [(ti_on_init_scene_prop,[
-    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-  (spawn_horse,"itm_spider", 0),])]),
-("animal_werewolf",sokf_invisible,"mm_warg_a","0", [(ti_on_init_scene_prop,[
-    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-  (spawn_horse,"itm_werewolf", 0),])]),
+
+] + (is_a_wb_sceneprop==1 and [
+("animal_wolf",sokf_invisible,"wolf","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_animal_wolf", 0),])]),
+("animal_bear",sokf_invisible,"bear","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_animal_bear", 0),])]),
+("animal_spider",sokf_invisible,"spider","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_animal_spider", 0),])]),
+("animal_werewolf",sokf_invisible,"mm_warg_a","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_animal_werewolf", 0),])]),
+ 
+    ] or [	
+    ("animal_wolf",sokf_invisible,"wolf","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_wolf", 0),])]),
+    ("animal_bear",sokf_invisible,"bear","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_bear", 0),])]),
+    ("animal_spider",sokf_invisible,"spider","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_spider", 0),])]),
+    ("animal_werewolf",sokf_invisible,"mm_warg_a","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_werewolf", 0),])]),
+	]) + [
+ 
 ("animal_sheep",sokf_invisible,"CWE_sheep_mod_a","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(store_random_in_range, ":animal_var", 1, 3),														 

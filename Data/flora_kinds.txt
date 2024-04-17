@@ -1,4 +1,4 @@
-205
+204
 grass 6442469687300 6
  PW_grass_yellow_e  0
  PW_grass_a_xx  0
@@ -839,112 +839,39 @@ misc_chairs_nocol 0 16
  bench_tavern_b  0
  ado_wood_bench_fine  0
  ado_wood_bench_plain  0
-misc_camp_good_placeholder 0 16
- chair_castle_a  0
- tavern_chair_a  0
- tavern_chair_b  0
- gothic_stool  0
- chair_trunk_a  0
- chair_trunk_b  0
- chair_trunk_c  0
- chair_trestle  0
- ado_wood_chair1  0
- ado_wood_chair2  0
- ado_wood_chair_fine  0
- ado_wood_stool  0
- bench_tavern  0
- bench_tavern_b  0
- ado_wood_bench_fine  0
- ado_wood_bench_plain  0
-misc_camp_evil_placeholder 0 16
- chair_castle_a  0
- tavern_chair_a  0
- tavern_chair_b  0
- gothic_stool  0
- chair_trunk_a  0
- chair_trunk_b  0
- chair_trunk_c  0
- chair_trestle  0
- ado_wood_chair1  0
- ado_wood_chair2  0
- ado_wood_chair_fine  0
- ado_wood_stool  0
- bench_tavern  0
- bench_tavern_b  0
- ado_wood_bench_fine  0
- ado_wood_bench_plain  0
-misc_town_placeholder 0 16
- chair_castle_a  0
- tavern_chair_a  0
- tavern_chair_b  0
- gothic_stool  0
- chair_trunk_a  0
- chair_trunk_b  0
- chair_trunk_c  0
- chair_trestle  0
- ado_wood_chair1  0
- ado_wood_chair2  0
- ado_wood_chair_fine  0
- ado_wood_stool  0
- bench_tavern  0
- bench_tavern_b  0
- ado_wood_bench_fine  0
- ado_wood_bench_plain  0
-misc_food_good 0 36
- bowl_wood  0
- chandelier_table  0
- cup  0
- cup  0
- jug  0
- cloth_a_new  0
- cloth_b_new  0
- bowl_a  0
- plate_a  0
- plate_b  0
- plate_c  0
- fry_pan_a  0
- cauldron_a  0
- knife_eating  0
- spoon  0
- apple_a  0
- apple_b  0
- cheese_a  0
- cheese_b  0
- cheese_slice_a  0
- bread_a  0
- bread_b  0
- bread_slice_a  0
- fish_roasted_a  0
- chicken_roasted  0
- sausages  0
- khazad_dwarf_cram  0
- fried_pig  0
- gourd  0
- marrow_a  0
- marrow_b  0
- potlamp  0
- khazad_dwarf_ale_pint_1  0
- khazad_dwarf_ale_pint_2  0
- candle_b  0
- ewer_a  0
-misc_food_evil 0 17
- bowl_wood  0
- cup  0
- cup  0
- jug  0
- plate_a  0
- plate_b  0
- plate_c  0
- fry_pan_a  0
- cauldron_a  0
- spoon  0
- cheese_a  0
- cheese_b  0
- cheese_slice_a  0
- bread_a  0
- bread_b  0
- bread_slice_a  0
- khazad_dwarf_cram  0
+misc_barrels_baskets 0 6
+ barrel  bobarrel
+ barrel_new  bobarrel
+ winery_huge_barrel  bo_winery_huge_barrel
+ winery_middle_barrel  bo_winery_middle_barrel
+ basket_a  bo_basket_a
+ korzina_1  bo_korzina_1
+misc_crates 0 6
+ box_new  bo_box_a
+ ado_wood_crate_1  bo_ado_wood_crate_1
+ ado_wood_crate_2  bo_ado_wood_crate_2
+ ado_wood_crate_broken  bo_ado_wood_crate_broken
+ ado_wood_crate_closed  bo_ado_wood_crate_closed
+ ado_wood_crate_tall  bo_ado_wood_crate_tall
+misc_chests 0 4
+ chest_b_new  bo_chest_b
+ chest_c_new  bo_chest_c
+ chest_b  bo_chest_b
+ chest_c  bo_chest_c
+misc_carts 0 13
+ cart  bocart
+ wagon_c  0
+ winery_wine_cart_small_loaded  bo_winery_wine_cart_small_loaded
+ winery_wine_cart_loaded  bo_winery_wine_cart_loaded
+ winery_wine_cart_empty  bo_winery_wine_cart_empty
+ winery_wine_cart_small_empty  bo_winery_wine_cart_small_empty
+ Gutek_cart  bocart
+ ado_wood_cart  bo_ado_wood_cart
+ ado_wood_cart_2  bo_ado_wood_cart_2
+ ado_wood_cart_2_broken  bo_ado_wood_cart_2_broken
+ ado_wood_cart_3  bo_ado_wood_cart_3
+ ado_wood_wheelbarrow  bo_ado_wood_wheelbarrow
+ wheelbarrow  bo_wheelbarrow
 arrow_cluster 0 3
  arrows_a  0
  arrows_b  0
@@ -953,3 +880,4 @@ arrow_cluster_evil 0 3
  arrows_evil_a  0
  arrows_evil_b  0
  arrows_evil_c  0
+ 
