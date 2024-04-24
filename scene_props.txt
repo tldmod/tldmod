@@ -4886,7 +4886,7 @@ spr_distant_mountain_snow_1 69632 0 distant_mountain_snow_1 0 0
 spr_distant_mountain_snow_2 69632 0 distant_mountain_snow_2 0 0
 
 
-spr_osgiliath_far_f 0 0 osgiliath_far 0 0
+spr_osgiliath_far_f 0 0 osgiliath_far bo_cyl 0
 
 
 spr_hill 0 0 hill_steppe bo_hill 0
@@ -5190,7 +5190,7 @@ spr_morgul_gate_house 0 0 morgul_mt_gate_house_evil bo_morgul_mt_gate_house_evil
 -40  6 4 0 2273 0 1798 2 450 469277 5 0 1798 2 1000 1058334 3 0 
 
 
-spr_morgul__gate 0 0 morgul_gate bo_morgul_gate 0
+spr_morgul__gate 0 0 morgul_gate_new bo_morgul_gate_new 0
 
 
 spr_morgul_short_tower 0 0 morgul_short_tower bo_morgul_short_tower 0

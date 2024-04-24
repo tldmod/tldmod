@@ -260,8 +260,8 @@ sounds = [
 ("evil_orders",  sf_vol_3, ["order_form_ranks_(orc).wav"]),
 ("evil_horn",   sf_vol_10, ["horn_isengard.wav"]),
 
-("nazgul_skreech_long", sf_2d|sf_vol_15, ["nazgul_02.wav"]),
-("nazgul_skreech_short",sf_2d|sf_vol_15, ["nazgul_01.wav"]),
+("nazgul_skreech_long", sf_priority_15|sf_stream_from_hd|sf_2d|sf_vol_15, ["nazgul_02.wav"]),
+("nazgul_skreech_short",sf_priority_15|sf_stream_from_hd|sf_2d|sf_vol_15, ["nazgul_01.wav"]),
 
 ("horror_scream_man"  ,sf_priority_10|sf_vol_10,["horror_scream_man_0.wav","horror_scream_man_1.wav","horror_scream_man_2.wav","horror_scream_man_3.wav","horror_scream_man_4.wav"]),
 ("horror_scream_woman",sf_priority_10|sf_vol_10,["horror_scream_woman.wav"]),

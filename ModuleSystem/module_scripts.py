@@ -31724,6 +31724,47 @@ if is_a_wb_script==1:
 	(try_end),
 ]),
 
+#script_aoe_pushback #copied from troll code
+#input: pos69
+("aoe_pushback", [
+	(store_script_param_1, ":damage"),
+	(store_script_param_2, ":area"),
+
+	(set_fixed_point_multiplier, 100),
+
+    (try_for_agents, ":nearby", pos69, ":area"),
+        (agent_is_alive, ":nearby"),
+        (agent_is_active, ":nearby"),
+        (agent_is_human, ":nearby"),
+        (gt, ":nearby", 0),
+        (agent_get_troop_id, ":enemy_troop_id", ":nearby"),
+        (troop_get_type, ":race", ":enemy_troop_id"),
+        (neq, ":race", tf_troll),
+        (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
+        (neg|is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"),
+        (neq, ":enemy_troop_id", "trp_werewolf"),
+        (agent_get_horse, ":target_horse", ":nearby"),
+        (try_begin),
+          (lt, ":target_horse", 0),
+          (assign, ":hit_anim", "anim_strike_fly_back_rise"),
+        (else_try),
+          (gt, ":target_horse", 0),
+          (assign, ":hit_anim", "anim_strike_fly_back_rise"),
+          (agent_start_running_away, ":target_horse"),
+          (agent_stop_running_away, ":target_horse"),
+        (try_end),
+        (agent_set_animation, ":nearby", ":hit_anim"),
+        (str_store_agent_name, s2, ":nearby"),
+        (display_message, "@{s2} attacked"),
+        (agent_deliver_damage_to_agent, ":nearby", ":nearby", ":damage", "itm_troll_aoe"),
+    (try_end),
+    (store_random_in_range,":random_timings",10,50),
+    (agent_set_animation_progress, ":nearby", ":random_timings"), # differentiate timings a bit       
+    (store_random_in_range, ":rand_sound", 0, 3),
+    (store_add, ":sound", ":rand_sound", "snd_wooden_hit_low_armor_low_damage"),
+    (play_sound_at_position, ":sound", pos69),    
+]),
+
 #Beornign shapeshifter related mechanics starts here
 
 ] + (is_a_wb_script==1 and [

@@ -539,8 +539,8 @@ soundsfile version 2
  pull_bow_1.ogg 2048
  order_form_ranks_(orc).wav 768
  horn_isengard.wav 2560
- nazgul_02.wav 3841
- nazgul_01.wav 3841
+ nazgul_02.wav 4089
+ nazgul_01.wav 4089
  horror_scream_man_0.wav 2720
  horror_scream_man_1.wav 2720
  horror_scream_man_2.wav 2720
@@ -855,8 +855,8 @@ snd_thunder 3841 1 535
 snd_pull_ballista 2048 1 536 
 snd_evil_orders 768 1 537 
 snd_evil_horn 2560 1 538 
-snd_nazgul_skreech_long 3841 1 539 
-snd_nazgul_skreech_short 3841 1 540 
+snd_nazgul_skreech_long 4089 1 539 
+snd_nazgul_skreech_short 4089 1 540 
 snd_horror_scream_man 2720 5 541 542 543 544 545 
 snd_horror_scream_woman 2720 1 546 
 snd_horror_scream_orc 2720 1 547 
