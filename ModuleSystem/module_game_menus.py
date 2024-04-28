@@ -7751,7 +7751,7 @@ game_menus = [
        [
          (party_get_slot, ":scene", "$current_town", slot_town_walls),
          (assign, "$gate_aggravator_agent", 0), #disable gate aggravators
-         (set_jump_mission,"mt_ai_training"),
+         #(set_jump_mission,"mt_ai_training"),
          (jump_to_scene,":scene"),
          (change_screen_mission)]),
  ] for ct in range(cheat_switch)])+[

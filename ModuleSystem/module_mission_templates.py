@@ -4557,6 +4557,7 @@ mission_templates = [ # not used in game
                     (prop_instance_get_variation_id, ":var1", ":barrier_no"),
                     (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
                     (eq, ":var1", ":var1_gate"),
+                    #(display_message, "@barrier found"),
                     (position_move_z,pos1,-1000),
                     (prop_instance_set_position,":barrier_no",pos1),
                   (try_end), # barriers loop
@@ -5008,7 +5009,7 @@ mission_templates = [ # not used in game
   ## We check the troop slot of trp_no_troop (defenders: 0,1,2) which corresponds to each choke point (entry 41,42,43)
   ## If we find less than 2 defenders near the chokepoint, we consider that chokepoint taken and the team that is assigned to that choke point is asked to charge.
 
-  (10, 0, 0,[(gt, "$defender_reinforcement_stage", 2)], [# check if targets are captured by attackers;
+  (10, 0, 0,[(gt, "$defender_reinforcement_stage", -1)], [# check if targets are captured by attackers;
     (try_for_range, ":slot",0,6),
       (neg|troop_slot_eq,"trp_no_troop",":slot",-1), # -1 in slot means this flank defeated its choke and proceeds with charge
       (troop_set_slot,"trp_no_troop",":slot",0),
@@ -5094,25 +5095,27 @@ mission_templates = [ # not used in game
                 (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
                 
                 #spawn gate aggravator
-                (position_move_z, pos1, 200,1), #safeguard against aggravators spawning underground
+                (position_move_z, pos1, 50,1), #safeguard against aggravators spawning underground
                 (prop_instance_get_scale, pos2, ":gate_no"),
-                (position_get_scale_x, ":orientation", pos2),
-                (try_begin), #move them slightly into the middle so they're easier to hit
-                    (lt, ":orientation", 0), #mirrored?
-                    (position_move_x, pos1, 100,0), 
-                (else_try),
-                    (position_move_x, pos1, -100,0), 
-                (try_end),
+                (position_get_scale_x, ":x", pos2),
+                (val_mul, ":x", -2),
+                (position_move_x, pos1, ":x",0), 
+                # (try_begin), #move them slightly into the middle so they're easier to hit
+                    # (lt, ":orientation", 0), #mirrored?
+                    # (position_move_x, pos1, 100,0), 
+                # (else_try),
+                    # (position_move_x, pos1, -100,0), 
+                # (try_end),
                 (set_spawn_position, pos1),
+                #(spawn_scene_prop, spr_banner_stand_a), #debug
                 (spawn_agent,"trp_gate_aggravator"),
                 (assign, ":gate_aggravator", reg0),
                 (scene_prop_set_slot, ":gate_no", slot_prop_agent_1, ":gate_aggravator"),
                 (agent_set_speed_limit, ":gate_aggravator", 0),
                 (agent_set_team, ":gate_aggravator", 2),
-                #] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
                 (agent_set_no_dynamics, ":gate_aggravator",1),
                 (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
-                #] or []) + [
+                (agent_set_position, ":gate_aggravator", pos1),
                  
                 #find dependent barriers, move them into place
                 (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 

@@ -2799,7 +2799,7 @@ scene_props = [
 ("distant_mountain_snow_1",sokf_place_at_origin|sokf_moveable,"distant_mountain_snow_1","0", []),
 ("distant_mountain_snow_2",sokf_place_at_origin|sokf_moveable,"distant_mountain_snow_2","0", []),
 
-("osgiliath_far_f",0,"osgiliath_far","bo_cyl", []),   
+("osgiliath_far_f",0,"osgiliath_far","0", []),   
 ("hill",0,"hill_steppe","bo_hill", []),
 ("water_river",0,"TLD_water_plane","0", []),
 ("water_fall",0,"water_fall","0", []),
@@ -3683,6 +3683,7 @@ scene_props = [
    
    (ti_on_scene_prop_destroy, [
     (store_trigger_param_1, ":gate_no"),
+    (set_fixed_point_multiplier, 100),
     ] + (is_a_wb_sceneprop==1 and [   
     (scene_prop_set_slot, ":gate_no", scene_prop_open_or_close_slot, 2),
     ] or []) + [
