@@ -9446,6 +9446,11 @@ game_menus = [
      (assign, reg2, ":max_skill"),
 
      (store_sub, reg4, 11, ":max_skill"),
+     (try_begin), #home faction bonus
+        (eq, "$ambient_faction", "$players_kingdom"),
+        (val_sub, reg4, 4),
+     (try_end),     
+     (val_max, reg4, 1),
      
      (try_begin),
        (eq, ":max_skill_owner", "trp_player"),
@@ -9456,7 +9461,7 @@ game_menus = [
      (try_end),
      
      (faction_get_slot, reg6, "$ambient_faction", slot_faction_influence),
-     (store_div, reg5, reg4, 3),
+     (store_div, reg5, reg4, 4),
      (assign, "$tld_action_cost", reg5),
      
      (str_store_string, s4, "@As the party member with the highest Bargainer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to find the most notable persons in town. [Costs {reg5}/{reg6} influence]"),
@@ -9515,7 +9520,7 @@ game_menus = [
            (faction_set_slot, "$ambient_faction", slot_faction_influence, reg6),
            (call_script, "script_get_max_skill_of_player_party", "skl_trade"),
            (store_sub, ":hours_takes", 11, reg0),
-           (rest_for_hours_interactive, ":hours_takes", 5, 0),
+           (rest_for_hours_interactive, ":hours_takes", 3, 0),
            (change_screen_return),
            ]),
       ("go_back_dot",[],"Go back.", [(jump_to_menu,"mnu_town")]),],
@@ -9524,7 +9529,9 @@ game_menus = [
 ( "town_find_NPCs_end",0,
     "Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}",
     "none",
-    [(call_script, "script_get_max_skill_of_player_party", "skl_trade"),
+    [
+    (assign,"$auto_menu",-1), #just in case
+    (call_script, "script_get_max_skill_of_player_party", "skl_trade"),
      (assign, ":max_skill_owner", reg1),
 
      (try_begin),
@@ -9564,7 +9571,7 @@ game_menus = [
       (try_end),   
          
     ],
-    [("go_back_dot",[],"Go back.", [(jump_to_menu,"mnu_town")]),],
+    [("go_back_dot",[],"Go back.", [(change_screen_return),(start_encounter, "$current_town")]),], #weird trickery in order to ensure we're still in an encounter
  ),
 
 ##### Kham - Player Initiated Siege Result Begin
