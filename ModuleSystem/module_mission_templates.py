@@ -1382,6 +1382,7 @@ mission_templates = [ # not used in game
 			(else_try),
 				(play_sound, "$bs_night_sound", sf_looping),
 			(try_end),
+            (assign, "$temp_2", 0), #for spawn control on scene props, particle effects etc.
 			]),
 
  ] + ((is_a_wb_mt==1) and [
@@ -6286,7 +6287,9 @@ mission_templates = [ # not used in game
         (play_sound, "$bs_night_sound", sf_looping),
 			 (else_try),
          (play_sound, "$bs_day_sound",   sf_looping),
-			 (try_end)]),
+			 (try_end),
+        (assign, "$temp_2", 0), #for spawn control on scene props, particle effects etc.    
+        ]),
 
      (10, 0, ti_once, [], [ # Kham - Give legendary place description
         (try_begin),

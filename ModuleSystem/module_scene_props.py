@@ -3193,7 +3193,7 @@ scene_props = [
             [(try_begin),(is_currently_night),(set_fog_distance,450,0x07291D),
 			 (else_try),                      (set_fog_distance,1000,0x10261E),
 			 (try_end),])]),
-("morgul__gate",0,"morgul_gate_new","bo_morgul_gate_new", []),
+("morgul__gate",0,"morgul_gate","bo_morgul_gate", []),
 ("morgul_short_tower",0,"morgul_short_tower","bo_morgul_short_tower", []),	
 ("morgul_tower_b_vp_E",0,"morgul_tower_b_color","0", []),
 ("morgul_stone_minaret_a",0,"morgul_stone_minaret_a","bo_stone_minaret_a", []),

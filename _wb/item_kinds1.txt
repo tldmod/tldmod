@@ -258,7 +258,7 @@ itemsfile version 2
  itm_free_olog_hands Olog_Hai_Hands Olog_Hai_Hands 1  olog_hand_L 0  137438957583 0 1 0 58 100 0 1 0 70 0 0 0 0 0 0 0
 0
 
- itm_warg_ghost_armour HIDEME_armour HIDEME_armour 1  arnor_leather_jerkin_1 0  139603218445 0 0 0 0 100 200 200 200 0 0 0 0 0 0 0 0
+ itm_warg_ghost_armour HIDEME_armour HIDEME_armour 1  dummy_mesh_skinned 0  139603218445 0 0 0 0 100 200 200 200 0 0 0 0 0 0 0 0
 0
 
  itm_warg_ghost_lance HIDEME_lance HIDEME_lance 1  dummy_mesh 0  2251937256853508 0 0 0 1 100 0 0 0 0 0 100 0 1 0 256 0
