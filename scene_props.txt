@@ -6310,7 +6310,8 @@ spr_ai_melee_on_off_var1 16384 0 sphere_1m 0 0
 spr_secret_point_of_interest 16384 0 sphere_1m 0 0
 
 
-spr_secret_guardian 16384 0 arrow_helper_blue 0 0
+spr_secret_guardian 16384 0 arrow_helper_blue 0 1
+-40  0 
 
 
 spr_rock_bridge 0 0 rock_bridge_tld bo_rock_bridge_tld 0

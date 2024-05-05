@@ -4957,7 +4957,31 @@ scene_props = [
 ("ai_melee_on_off_var1",sokf_invisible,"sphere_1m","0", []), #var 1 sets agent_ai_set_always_attack_in_melee
 
 ("secret_point_of_interest",sokf_invisible,"sphere_1m","0", []),
-("secret_guardian",sokf_invisible,"arrow_helper_blue","0", []),
+("secret_guardian",sokf_invisible,"arrow_helper_blue","0", [
+    (ti_on_init_scene_prop,[
+    ] + (is_a_wb_sceneprop==1 and [     
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles												 
+    (store_trigger_param_1, ":instance_no"),
+    (prop_instance_get_variation_id_2, ":var2", ":instance_no"),
+    (try_begin),
+        (gt, ":var2", 1),
+        (assign, ":troop", ":var2"),
+    (else_try),
+        (party_get_slot, ":troop", "$current_town", slot_town_castle_guard_troop),
+    (try_end),
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+    (assign, ":agent", reg0),    
+    (agent_set_team, ":agent", 0),(agent_set_stand_animation, ":agent", "anim_stand"),
+    (store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, ":agent", reg6),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, ":agent"),
+    (agent_set_slot, ":agent", slot_agent_secret_guardian, 1),
+    # (position_rotate_z, pos1, 180),
+    # (set_spawn_position, pos1),
+    # (spawn_scene_prop, "spr_barrier_8m"),
+    # (agent_set_slot, ":agent", slot_agent_assigned_prop, reg0),
+    ] or []) + [  
+ 
+  ])]),
 
 ("rock_bridge",0,"rock_bridge_tld","bo_rock_bridge_tld", []),
 
