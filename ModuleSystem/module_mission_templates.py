@@ -1367,7 +1367,8 @@ mission_templates = [ # not used in game
 			 (else_try),                              (call_script, "script_music_set_situation_with_culture", mtf_sit_town), #MV: was mtf_sit_travel
 			(try_end),
 
-			(try_begin),
+			(assign, "$play_ambient_sounds", 1), 
+            (try_begin),
 				(eq, "$bs_day_sound", 0),
 				(party_get_slot, ":a","$current_town",slot_center_ambient_sound_always),
 				(try_begin),(gt,":a",0),(play_sound, ":a", sf_looping),(try_end),

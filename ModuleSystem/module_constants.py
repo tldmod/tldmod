@@ -676,7 +676,7 @@ scene_prop_open_or_close_slot             = 0 #0= closed, 1=open, 2=destroyed
 slot_prop_agent_1                      = 1 #stores agent_no of assigned gate aggravator
 slot_prop_agent_2                      = 2 #stores agent_no of secondary agent if needed
 slot_prop_playing_sound                   = 3 #0 or 1, may also store sound channel
-slot_prop_sound                           = 4 #stores sound_ID to play
+slot_prop_sound                           = 4 #stores sound_ID to play, or sound channel
 slot_prop_temp_hp_1                        = 5 #useful for hidden HP calculations
 slot_prop_temp_hp_2                        = 5 #useful for hidden HP calculations
 
@@ -1951,7 +1951,7 @@ faction_strings =[#shop rumors begin	shop rumors end          loop_ambient_day  
  (fac_beorn   ,str_beorn_rumor_begin   ,str_lorien_rumor_begin  ,snd_rohan_ambiance  ,snd_neutralforest_ambiance,snd_beorn_occasional),
 ]
 # specific ambient sounds for selected centers  ]+concatenate_scripts([[     ] for ct in range(cheat_switch)])+[
-center_sounds=[#center      specific day ambiance , specific always ambiance      , occasional sounds (later to be divided into occasional nature and occasional faction)
+center_sounds=[#center      slot_center_ambient_sound_day , slot_center_ambient_sound_always      , slot_center_occasional_sound1_day (later to be divided into occasional nature and occasional faction)
     (p_town_dol_amroth   ,snd_gondor_ambiance ,snd_water_waves_ambiance     ,snd_seaside_occasional),
     (p_town_pelargir     ,snd_gondor_ambiance ,snd_water_wavesplash_ambiance,snd_seaside_occasional),
     (p_town_edhellond    ,snd_gondor_ambiance ,snd_water_waves_ambiance     ,snd_seaside_occasional),
@@ -1966,6 +1966,7 @@ center_sounds=[#center      specific day ambiance , specific always ambiance    
     (p_town_pinnath_gelin,snd_gondor_ambiance ,snd_goodforest_ambiance      ,snd_elves_occasional),
     (p_town_erebor       ,snd_town_ambiance   ,snd_moria_ambiance           ,snd_dwarf_occasional),
     (p_town_minas_morgul ,0                   ,snd_morgul_ambiance          ,snd_morgul_occasional),
+    (p_town_gundabad     ,0                   ,snd_wind_ambiance            ,snd_orc_occasional),    
     (p_town_gundabad_m_outpost,snd_orcs_ambiance,snd_evilforest_ambiance	,snd_orc_occasional),
     (p_town_troll_cave   ,0                   ,snd_evilforest_ambiance      ,snd_orc_occasional),
     (p_town_morannon     ,0                   ,snd_wind_ambiance            ,0),

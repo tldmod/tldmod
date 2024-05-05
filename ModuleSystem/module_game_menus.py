@@ -9425,6 +9425,7 @@ game_menus = [
       ("town_leave",[],"Leave...",[
             (assign, "$g_permitted_to_center",0),
             (change_screen_return,0),
+            (stop_all_sounds, 1), #safeguard against ambiance sounds not stopping
             (store_faction_of_party, ":fac", "$current_town"),
             (try_begin),
 		(eq|this_or_next, ":fac", "fac_mordor"),

@@ -4928,25 +4928,25 @@ scene_props = [
 
 # var1 x 100 + var2 is sound_no; (scale_x -1) x 100 is range in metres
 # only really works for looping sounds
-("sound_emitter_var1x100_plus_var2_scalable" ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[												 
+("sound_emitter_var1x10_plus_var2_scalable" ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[												 
     (store_trigger_param_1, ":instance_no"),
     (set_fixed_point_multiplier, 10000),
     (prop_instance_get_scale, pos2, ":instance_no"),
     (position_get_scale_x, ":scale_x", pos2),
     (eq, ":scale_x", 10000), #only show tutorial message if scale is unchanged
-    (display_message, "@{!} debug: sound emitter: var1 x 100 + var2 is sound_no; (scale_x -1) x 100 is range in metres"),
+    (display_message, "@{!} debug: sound emitter: var1 x 10 + var2 is sound_no; (scale_x -1) x 100 is range in metres"),
     (display_message, "@{!} debug: scale prop to disable this message"),
   ])]),
 
 # var1 x 100 + var2 is sound_no; (scale_x -1) x 100 is range in metres
 # only really works for looping sounds
-("sound_emitter_ambient_var1x100_plus_var2_scalable" ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[												 
+("sound_emitter_ambient_var1x10_plus_var2_scalable" ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[												 
     (store_trigger_param_1, ":instance_no"),
     (set_fixed_point_multiplier, 10000),
     (prop_instance_get_scale, pos2, ":instance_no"),
     (position_get_scale_x, ":scale_x", pos2),
     (eq, ":scale_x", 10000), #only show tutorial message if scale is unchanged
-    (display_message, "@{!} debug: sound emitter: var1 x 100 + var2 is sound_no; (scale_x -1) x 100 is range in metres"),
+    (display_message, "@{!} debug: sound emitter: var1 x 10 + var2 is sound_no; (scale_x -1) x 100 is range in metres"),
     (display_message, "@{!} debug: ambient sound emitter: stops all looping sounds, sets a new ambient sound while in range"),
     (display_message, "@{!} debug: scale prop to disable this message"),
   ])]),
