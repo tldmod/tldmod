@@ -3040,24 +3040,35 @@ scene_props = [
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-	(store_random_in_range, ":civilian", 1, 5),
-														 
-	        (try_begin),
-	        	(eq, ":civilian",1),
-	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_1_troop),
-	        (else_try),
-	        	(eq, ":civilian",2),
-	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_2_troop),
-	        (else_try),
-	        	(eq, ":civilian",3),
-	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_3_troop),
-	        (else_try),
-	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_5_troop),
-			(try_end),
-						 
+	(store_random_in_range, ":civilian_slot", 0, 5),
+    (val_add, ":civilian_slot", slot_center_walker_0_troop),
+    (party_get_slot, ":troop", "$current_town", ":civilian_slot"),					 
 
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),
-
+    (spawn_agent, ":troop"),(agent_set_team, reg0, 0),
+    #randomize animation
+    (assign, ":animation", "anim_stand"),
+    (store_random_in_range, ":rnd", 0, 5),
+    (try_begin),
+        (eq, ":rnd", 0),
+        (assign, ":animation", "anim_stand"),
+     (else_try),
+        (eq, ":rnd", 1),
+        (assign, ":animation", "anim_stand"),
+        #(assign, ":animation", anim_stand_shopkeeper), #not implemented yet
+     (else_try),
+        (eq, ":rnd", 2),
+        (assign, ":animation", "anim_stand_man"),
+     (else_try),
+        (eq, ":rnd", 3),
+        (assign, ":animation", "anim_stand_townguard"),
+     (else_try),
+        (eq, ":rnd", 4),
+        (assign, ":animation", "anim_stand_lord"),
+    (try_end),
+    (agent_set_stand_animation, reg0, ":animation"),
+    
+    (store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),
+        
     #remove weapons and helms
   ] + (is_a_wb_sceneprop==1 and [     
         (try_for_range, ":weapon_slot", 0, 4), 
@@ -3071,8 +3082,7 @@ scene_props = [
             (neg|item_has_property, ":helm", itp_civilian),
             (agent_unequip_item, reg0, ":helm", ek_head),
         (try_end),
-    ] or []) + [  
-  
+    ] or []) + [
   ])]),
 	
 ("troop_civilian_sitting_ground",sokf_invisible,"sitting","0", [(ti_on_init_scene_prop,[
@@ -3080,20 +3090,10 @@ scene_props = [
     (set_fixed_point_multiplier, 100),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-	(store_random_in_range, ":civilian", 1, 5),
-	        (try_begin),
-	        	(eq, ":civilian",1),
-	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_1_troop),
-	        (else_try),
-	        	(eq, ":civilian",2),
-	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_2_troop),
-	        (else_try),
-	        	(eq, ":civilian",3),
-	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_3_troop),
-	        (else_try),
-	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_5_troop),
-			(try_end),
-	#(spawn_scene_prop, "spr_barrier_2m_horizontal"),
+	(store_random_in_range, ":civilian_slot", 0, 5),
+    (val_add, ":civilian_slot", slot_center_walker_0_troop),
+    (party_get_slot, ":troop", "$current_town", ":civilian_slot"),
+    
     (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground"),
     
         #remove weapons and helms
@@ -3129,20 +3129,10 @@ scene_props = [
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-	(store_random_in_range, ":civilian", 1, 5),
-	        (try_begin),
-	        	(eq, ":civilian",1),
-	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_1_troop),
-	        (else_try),
-	        	(eq, ":civilian",2),
-	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_2_troop),
-	        (else_try),
-	        	(eq, ":civilian",3),
-	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_3_troop),
-	        (else_try),
-	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_5_troop),
-			(try_end),
-	#(spawn_scene_prop, "spr_barrier_2m_horizontal"),
+
+	(store_random_in_range, ":civilian_slot", 0, 5),
+    (val_add, ":civilian_slot", slot_center_walker_0_troop),
+    (party_get_slot, ":troop", "$current_town", ":civilian_slot"),
     (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_throne"),
     
         #remove weapons and helms
@@ -4173,12 +4163,8 @@ scene_props = [
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (store_random_in_range, ":anim", 0, 3),
     (val_add, ":anim", "anim_fall_face_hold"),
-  # ] + (is_a_wb_sceneprop==1 and [     
-    # (spawn_scene_prop, "spr_barrier_2m_horizontal"), #this helps so they don't sink into the ground 
-    # (scene_prop_set_visibility, reg0, 0),
-    # ] or []) + [       
 	(spawn_agent, ":troop"),
-    (agent_set_team, reg0, 0),(agent_set_animation, reg0, ":anim"),(agent_set_stand_animation, reg0, 100),
+    (agent_set_team, reg0, 0),(agent_set_animation, reg0, ":anim"),(agent_set_animation_progress, reg0, 100),
     
         #remove weapons and helms
   ] + (is_a_wb_sceneprop==1 and [    
@@ -4934,7 +4920,7 @@ scene_props = [
     (prop_instance_get_scale, pos2, ":instance_no"),
     (position_get_scale_x, ":scale_x", pos2),
     (eq, ":scale_x", 10000), #only show tutorial message if scale is unchanged
-    (display_message, "@{!} debug: sound emitter: var1 x 10 + var2 is sound_no; (scale_x -1) x 100 is range in metres"),
+    (display_message, "@{!} debug: sound emitter: var1 x 10 + var2 is sound_no; first two digits after comma in scale x is range in metres"),
     (display_message, "@{!} debug: scale prop to disable this message"),
   ])]),
 
@@ -4946,7 +4932,7 @@ scene_props = [
     (prop_instance_get_scale, pos2, ":instance_no"),
     (position_get_scale_x, ":scale_x", pos2),
     (eq, ":scale_x", 10000), #only show tutorial message if scale is unchanged
-    (display_message, "@{!} debug: sound emitter: var1 x 10 + var2 is sound_no; (scale_x -1) x 100 is range in metres"),
+    (display_message, "@{!} debug: sound emitter: var1 x 10 + var2 is sound_no; first two digits after comma in scale x is range in metres"),
     (display_message, "@{!} debug: ambient sound emitter: stops all looping sounds, sets a new ambient sound while in range"),
     (display_message, "@{!} debug: scale prop to disable this message"),
   ])]),

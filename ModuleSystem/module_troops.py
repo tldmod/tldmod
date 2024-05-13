@@ -1678,7 +1678,7 @@ troops = [
    [itm_lorien_bow,itm_elven_arrows,itm_lorien_armor_c,itm_lorien_helm_b,itm_lorien_shield_b,itm_lorien_boots,itm_lorien_sword_a,itm_lorien_warhorse,],
       attr_elf_tier_6,wp_elf_tier_6,knows_inventory_management_1|knows_power_draw_6|knows_tactics_6|knows_tracking_1|knows_horse_archery_6|knows_riding_5|knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,lorien_elf_face_1,lorien_elf_face_2],
 ["elf_captain_of_lothlorien","Elf_Captain_of_Lothlorien","Elf_Captains_of_Lothlorien",tf_lorien| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_lorien,
-   [itm_lorien_bow,itm_elven_arrows,itm_lorien_armor_c,itm_lorien_helm_b,itm_lorien_shield_b,itm_lorien_boots,itm_lorien_sword_a,itm_lorien_warhorse,],
+   [itm_lorien_bow,itm_elven_arrows,itm_lorien_heavy_good_cloak,itm_lorien_helm_b,itm_lorien_shield_b,itm_lorien_boots,itm_lorien_sword_a,itm_lorien_warhorse,],
       attr_elf_tier_6,wp_elf_tier_6,knows_inventory_management_1|knows_power_draw_6|knows_tactics_4|knows_tracking_1|knows_horse_archery_5|knows_riding_5|knows_athletics_5|knows_power_strike_5|knows_ironflesh_5,lorien_elf_face_1,lorien_elf_face_2],
 ["lothlorien_lieutenant","Lothlorien_Lieutenant","Lothlorien_Lieutenants",tf_lorien| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_lorien,
    [itm_lorien_bow,itm_elven_arrows,itm_lorien_armor_c,itm_lorien_helm_b,itm_lorien_shield_b,itm_lorien_boots,itm_lorien_sword_a,],

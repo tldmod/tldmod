@@ -1696,7 +1696,7 @@ center_list = [
 	[trp_elf_captain_of_mirkwood, trp_smith_woodelf_west_camp, trp_merchant_woodelf_west_camp, trp_elder_woodelf_west_camp, pt_woodelf_recruits, trp_woodelf_lord, trp_mirkwood_walker_1, trp_a1_greenwood_scout, trp_mirkwood_walker_1, trp_mirkwood_walker_2], 
 	[icon_mfc_woodelf],[500],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 2, tld_siegable_normal),
 (p_town_imladris_camp, [scn_rivendell_camp_center, -1, -1,-1,-1,scn_rivendell_camp_siege,mesh_town_rivendell_camp],
-	[trp_elf_captain_of_mirkwood, trp_smith_imladris, trp_merchant_imladris, trp_elder_imladris, pt_imladris_recruits, trp_imladris_lord, trp_a1_riv_scout, trp_a1_arnor_scout, trp_i3_riv_swordbearer, trp_a3_riv_archer], 
+	[trp_elf_captain_of_rivendell, trp_smith_imladris, trp_merchant_imladris, trp_elder_imladris, pt_imladris_recruits, trp_imladris_lord, trp_a1_riv_scout, trp_a1_arnor_scout, trp_i3_riv_swordbearer, trp_a3_riv_archer], 
 	[icon_mfc_imladris],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_med, 2, tld_siegable_capital),
 
 (p_town_woodsmen_village, [scn_woodsmen_village2_center, -1, -1,-1,-1,scn_woodsmen_village2_siege, mesh_ui_default_menu_window],
