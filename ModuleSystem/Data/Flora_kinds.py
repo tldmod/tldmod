@@ -1329,6 +1329,14 @@ fauna_kinds = [
   [['arrows_evil_a', '0'],
    ['arrows_evil_b', '0'],
    ['arrows_evil_c', '0'],]),   
+
+ ('wheat_group', 
+  0,
+  [['wheat_group_a', '0'],
+   ['wheat_group_b', '0'],
+   ['wheat_group_c', '0'],
+   ['wheat_group_d', '0'],
+   ['wheat_group_e', '0'],]),  
 ]
 
 def save_fauna_kinds():

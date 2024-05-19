@@ -1406,7 +1406,7 @@ faction_init = [
 # 0) subfaction index,1) city, 2) substring_present_in_all_troop_names, 3)[guard_troop,archer_troop,castle_guard_troop],  				5)[ reinforcements for garrisons],  								6) [leaders...]
 subfaction_data= [      
  (subfac_pelargir     ,p_town_pelargir     ,"Pelargir"  ,[trp_i1_pel_watchman,		trp_a2_pel_marine,		    trp_i3_pel_vet_infantry],		[pt_pelargir_reinf_a  ,pt_pelargir_reinf_b  ,pt_pelargir_reinf_c  ],[trp_i6_pel_leader, trp_a6_pel_marine_leader,]),
- (subfac_dol_amroth   ,p_town_dol_amroth   ,"Amroth"    ,[trp_c2_amroth_squire,		trp_i2_gon_watchman,    	trp_c6_amroth_swan_knight],		[pt_dol_amroth_reinf_a,pt_dol_amroth_reinf_b,pt_dol_amroth_reinf_c],[trp_c6_amroth_leader]),
+ (subfac_dol_amroth   ,p_town_dol_amroth   ,"Amroth"    ,[trp_i1_amroth_recruit,	trp_i2_gon_watchman,    	trp_c6_amroth_swan_knight],		[pt_dol_amroth_reinf_a,pt_dol_amroth_reinf_b,pt_dol_amroth_reinf_c],[trp_c6_amroth_leader]),
  (subfac_ethring      ,p_town_calembel     ,"Lamedon"   ,[trp_i1_lam_clansman,		trp_i2_gon_watchman,		trp_c5_lam_knight],			    [pt_lamedon_reinf_a   ,pt_lamedon_reinf_b   ,pt_lamedon_reinf_c   ],[trp_c6_lam_leader]),
  (subfac_lossarnach   ,p_town_lossarnach   ,"Lossarnach",[trp_i1_loss_woodsman,		trp_i2_gon_watchman,		trp_i5_loss_axemaster],			[pt_lossarnach_reinf_a,pt_lossarnach_reinf_b,pt_lossarnach_reinf_c],[trp_i6_loss_leader]),
  (subfac_pinnath_gelin,p_town_pinnath_gelin,"Pinnath"   ,[trp_i1_pinnath_plainsman,	trp_a2_pinnath_bowman,		trp_c3_pinnath_knight],			[pt_pinnath_reinf_a   ,pt_pinnath_reinf_b   ,pt_pinnath_reinf_c   ],[trp_c6_pinnath_leader]),

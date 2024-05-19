@@ -3045,12 +3045,13 @@ scene_props = [
     (party_get_slot, ":troop", "$current_town", ":civilian_slot"),					 
 
     (spawn_agent, ":troop"),(agent_set_team, reg0, 0),
+  ] + (is_a_wb_sceneprop==1 and [     
     #randomize animation
     (assign, ":animation", "anim_stand"),
     (store_random_in_range, ":rnd", 0, 5),
     (try_begin),
         (eq, ":rnd", 0),
-        (assign, ":animation", "anim_stand"),
+        (assign, ":animation", "anim_stand_cutscene"),
      (else_try),
         (eq, ":rnd", 1),
         (assign, ":animation", "anim_stand"),
@@ -3069,8 +3070,7 @@ scene_props = [
     
     (store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),
         
-    #remove weapons and helms
-  ] + (is_a_wb_sceneprop==1 and [     
+    #remove weapons and helms    
         (try_for_range, ":weapon_slot", 0, 4), 
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -4605,7 +4605,7 @@ scene_props = [
     # (position_move_x, pos3, 30,0),
     # (position_rotate_z, pos3, 120),
     (set_spawn_position, pos3),
-    (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),        
+    #(party_get_slot, ":troop", "$current_town", slot_town_guard_troop),        
     (spawn_agent, ":troop"),  
     (agent_set_animation, reg0, "anim_defend_forward_greatsword_keep"), 
     (agent_set_stand_animation, reg0, "anim_defend_forward_greatsword_keep"), 
@@ -4970,6 +4970,9 @@ scene_props = [
   ])]),
 
 ("rock_bridge",0,"rock_bridge_tld","bo_rock_bridge_tld", []),
+( "basket_grain",0,"basket_grain","bo_apple_basket",[]),
+( "basket_coal",0,"basket_coal","bo_apple_basket",[]),
+( "basket_earth",0,"basket_earth","bo_apple_basket",[]),
 
 ] + (is_a_wb_sceneprop==1 and [ 
   ("fellbeast", sokf_moveable|sokf_dynamic_physics, "Fellbeast_Flap_1", "bo_Fellbeast_Flap_1", [
