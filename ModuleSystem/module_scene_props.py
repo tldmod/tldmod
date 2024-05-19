@@ -3085,7 +3085,7 @@ scene_props = [
     ] or []) + [
   ])]),
 	
-("troop_civilian_sitting_ground",sokf_invisible,"sitting","0", [(ti_on_init_scene_prop,[
+("troop_civ_sitting_ground",sokf_invisible,"sitting","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (set_fixed_point_multiplier, 100),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
@@ -3125,7 +3125,7 @@ scene_props = [
     ] or []) + [  
     ])]),
 	
-("troop_civilian_sitting_chair",sokf_invisible,"sit","bo_sitting", [(ti_on_init_scene_prop,[
+("troop_civ_sitting_chair",sokf_invisible,"sit","bo_sitting", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
@@ -3995,7 +3995,7 @@ scene_props = [
 
 ("troop_messenger_exit",sokf_invisible,"arrow_helper_blue","0", []),
 
-("troop_civilian_walker",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
+("troop_civ_walker",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
@@ -4155,7 +4155,7 @@ scene_props = [
 #Helms Deep
 ("HD_breached",0,"HD_breached","bo_helms_deep_breached", []),
 
-("troop_civilian_lying",sokf_invisible,"man_body_lie","bo_man_body_lie", [(ti_on_init_scene_prop,[
+("troop_civ_lying",sokf_invisible,"man_body_lie","bo_man_body_lie", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (store_faction_of_party, ":fac", "$current_town"),
@@ -4361,7 +4361,7 @@ scene_props = [
   
 ("barrier_2m_horizontal" ,sokf_invisible|sokf_type_barrier,"barrier_2m_horizontal" ,"bo_barrier_2m_horizontal" , []),
 
-("troop_civilian_wood_hacker_1h",0,"prop_wood_chopper","bo_prop_wood_chopper",   [
+("troop_work_wood_hacker_1h",0,"prop_wood_chopper","bo_prop_wood_chopper",   [
   ] + (is_a_wb_sceneprop==1 and [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
@@ -4410,7 +4410,7 @@ scene_props = [
     ] or []) + [
     ]),
     
-("troop_civilian_wood_hacker_2h",0,"prop_wood_chopper","bo_prop_wood_chopper",   [
+("troop_work_wood_hacker_2h",0,"prop_wood_chopper","bo_prop_wood_chopper",   [
   ] + (is_a_wb_sceneprop==1 and [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
@@ -4459,7 +4459,7 @@ scene_props = [
     ] or []) + [    
     ]),
     
-("troop_civilian_tree_feller",0,"wood_a","bo_wood_a_bigger",   [
+("troop_work_tree_feller",0,"wood_a","bo_wood_a_bigger",   [
   ] + (is_a_wb_sceneprop==1 and [
         (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
@@ -4508,7 +4508,7 @@ scene_props = [
         ] or []) + [ 
     ]),  
     
-("troop_civilian_miner",0,"PW_rock_a","bo_PW_rock_a",   [
+("troop_work_miner",0,"PW_rock_a","bo_PW_rock_a",   [
   ] + (is_a_wb_sceneprop==1 and [  
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
@@ -4623,7 +4623,7 @@ scene_props = [
     ] or []) + [   
     ])]),
 
-("troop_civilian_hammer",0,"prop_hammerer","bo_prop_hammerer",   [
+("troop_work_hammer",0,"prop_hammerer","bo_prop_hammerer",   [
     ] + (is_a_wb_sceneprop==1 and [ 
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
@@ -4672,7 +4672,7 @@ scene_props = [
     ] or []) + [
     ]),
 
-("troop_civilian_farmer_mattock",0,"earth_heap","bo_earth_heap",   [
+("troop_work_farmer_mattock",0,"earth_heap","bo_earth_heap",   [
   ] + (is_a_wb_sceneprop==1 and [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
@@ -4724,7 +4724,7 @@ scene_props = [
     ]),
 
 #doesn't work so good, somehow the agent often doesn't aim at the target prop
-("troop_civilian_farmer_shovel",0,"earth_heap","bo_earth_heap",   [
+("troop_work_farmer_shovel",0,"earth_heap","bo_earth_heap",   [
   ] + (is_a_wb_sceneprop==1 and [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
@@ -4763,7 +4763,7 @@ scene_props = [
     ] or []) + [ 
     ]),
 
-("troop_civilian_butcher",0,"raw_meat","bo_wood_a_bigger",   [
+("troop_work_butcher",0,"raw_meat","bo_wood_a_bigger",   [
   ] + (is_a_wb_sceneprop==1 and [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
@@ -4812,7 +4812,7 @@ scene_props = [
     ] or []) + [
     ]),
 
-("troop_civilian_worker_stand",sokf_invisible,"arrow_helper_blue","0",   [
+("troop_work_stand",sokf_invisible,"arrow_helper_blue","0",   [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
@@ -4836,7 +4836,7 @@ scene_props = [
         ] or []) + [          ]),
         ]),
 
-("troop_civilian_worker_table",sokf_invisible,"arrow_helper_blue","0",   [
+("troop_work_table",sokf_invisible,"arrow_helper_blue","0",   [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
@@ -4869,7 +4869,7 @@ scene_props = [
   ] + (is_a_wb_sceneprop==1 and [(scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0), ] or []) + [      
     ])]),
 
-("troop_civilian_cheer",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
+("troop_civ_cheer",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
@@ -4970,9 +4970,9 @@ scene_props = [
   ])]),
 
 ("rock_bridge",0,"rock_bridge_tld","bo_rock_bridge_tld", []),
-( "basket_grain",0,"basket_grain","bo_apple_basket",[]),
-( "basket_coal",0,"basket_coal","bo_apple_basket",[]),
-( "basket_earth",0,"basket_earth","bo_apple_basket",[]),
+("basket_grain",0,"basket_grain","bo_apple_basket",[]),
+("basket_coal",0,"basket_coal","bo_apple_basket",[]),
+("basket_earth",0,"basket_earth","bo_apple_basket",[]),
 
 ] + (is_a_wb_sceneprop==1 and [ 
   ("fellbeast", sokf_moveable|sokf_dynamic_physics, "Fellbeast_Flap_1", "bo_Fellbeast_Flap_1", [
