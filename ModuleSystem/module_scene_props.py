@@ -2059,7 +2059,6 @@ scene_props = [
     (try_end),
             
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
-    (assign, ":polearm_found", 0),
 
 ] + (is_a_wb_sceneprop==1 and [  
     (try_begin), #remove horse
@@ -2068,6 +2067,7 @@ scene_props = [
         (remove_agent, ":horse"),
         (agent_set_visibility, ":horse", 0),
     (try_end),
+    ] or []) + [     
        
     (try_begin),
         (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
@@ -2076,7 +2076,9 @@ scene_props = [
         (agent_set_slot, reg0, slot_agent_walker_type, 2), #patrol
         (store_random_in_range,reg10,1,3), 
         (agent_set_speed_limit, reg0, reg10),
-   
+        (assign, ":polearm_found", 0),
+
+] + (is_a_wb_sceneprop==1 and [     
         (try_for_range, ":weapon_slot", 0, 4), #find polearm
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -2114,8 +2116,8 @@ scene_props = [
         (agent_set_division, reg0, grc_archers), #set them to archers, so they stand ground
         #(agent_set_scripted_destination, reg0, pos1, 0, 1), #make sure
         (agent_ai_set_aggressiveness, reg0, 1), #test
-    (try_end),    
-    ] or []) + [           
+    ] or []) + [        
+    (try_end),               
     ])]),
 
 ("troop_archer",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
