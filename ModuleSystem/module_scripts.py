@@ -3633,6 +3633,18 @@ scripts = [
 	#GA: add some capacity if there are orcs in the party (you can recruit loads of orcs in TLD)  
 	  (assign,":total",0),
       (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+      
+      (try_for_range, ":i_stack", 0, ":num_stacks"), #leadership and charisma bonus from companions
+        (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
+        (troop_is_hero, ":stack_troop"),
+        (store_skill_level, ":skill", "skl_leadership", ":stack_troop"),
+        (store_attribute_level, ":charisma", ":stack_troop", ca_charisma),
+        (val_mul, ":skill", 3),
+        (val_div, ":charisma", 2),
+        (val_add, ":limit", ":skill"),
+        (val_add, ":limit", ":charisma"),
+      (try_end),
+      
       (try_for_range, ":i_stack", 0, ":num_stacks"), #count number of orcs in party
         (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
         (troop_get_type, ":type", ":stack_troop"),

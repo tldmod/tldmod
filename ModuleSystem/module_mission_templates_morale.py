@@ -171,7 +171,9 @@ tld_morale_triggers = [
 			(try_end),
 
             (assign, reg10, ":rallied_agents"),
-            (display_message, "@You rally {reg10} troops!", color_good_news),            
+            (display_message, "@You rally {reg10} troops!", color_good_news),
+            (val_mul, reg10, 10),
+            (add_xp_as_reward, reg10),
 		(try_end),
 
 	] + ((is_a_wb_mt==1) and [

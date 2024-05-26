@@ -1918,6 +1918,18 @@ game_menus = [
     (val_mul, ":leadership", 5),
     (store_attribute_level, ":charisma", "trp_player", ca_charisma),
 
+    (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+    (try_for_range, ":i_stack", 0, ":num_stacks"), #leadership and charisma bonus from companions
+        (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
+        (troop_is_hero, ":stack_troop"),
+        (store_skill_level, ":npc_skill", "skl_leadership", ":stack_troop"),
+        (store_attribute_level, ":npc_charisma", ":stack_troop", ca_charisma),
+        (val_mul, ":npc_skill", 3),
+        (val_div, ":npc_charisma", 2),
+        (val_add, ":charisma", ":npc_charisma"),
+        (val_add, ":leadership", ":npc_skill"),
+    (try_end),
+
     (assign, ":ranks", 0),
     (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
       (call_script, "script_get_faction_rank", ":faction"),

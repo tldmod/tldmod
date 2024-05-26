@@ -104,7 +104,7 @@ ui_explanation_firearms|Covers usage of pistols and muskets.
 ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: Ironflesh, Power Strike, Power Throw, Power Draw.
 ui_explanation_agility|Agility: Each point gives five weapon points and slightly increases movement speed. The following skills can not be developed beyond 1/3 of Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting.
 ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
-ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
+ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_level|Level: %d
 ui_xp|Experience: %d
 ui_next_level_at|Next level at: %d

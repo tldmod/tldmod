@@ -57,7 +57,7 @@ ui_crouch|Crouch
 ui_are_you_sure_you_want_to_import_the_character|Are you sure you want to import the character?
 ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: ironflesh, Power-strike, Power-throw, Power-draw.
 ui_explanation_intelligence|Intelligence: Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Trainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
-ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
+ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|Delivered %d damage.
 ui_mission_losses_killed|killed :
 ui_party_losses|%s  : %d wounded --- %d killed of %d.
