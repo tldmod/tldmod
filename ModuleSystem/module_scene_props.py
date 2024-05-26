@@ -1712,6 +1712,7 @@ scene_props = [
    (prop_instance_get_variation_id_2, ":health", ":instance_no"),
     (try_begin),
         (gt, ":health", 0), #if not assigned, get fallback health from scene prop entry (WB only)
+        (val_mul, ":health", 100),
         (scene_prop_set_hit_points, ":instance_no", ":health"),
     (try_end),
     ] or []) + [
@@ -2058,6 +2059,16 @@ scene_props = [
     (try_end),
             
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+    (assign, ":polearm_found", 0),
+
+] + (is_a_wb_sceneprop==1 and [  
+    (try_begin), #remove horse
+        (agent_get_horse, ":horse", reg0),
+        (gt, ":horse", 0),
+        (remove_agent, ":horse"),
+        (agent_set_visibility, ":horse", 0),
+    (try_end),
+       
     (try_begin),
         (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
         (agent_set_team, reg0, 0),
@@ -2065,9 +2076,7 @@ scene_props = [
         (agent_set_slot, reg0, slot_agent_walker_type, 2), #patrol
         (store_random_in_range,reg10,1,3), 
         (agent_set_speed_limit, reg0, reg10),
-        (assign, ":polearm_found", 0),
-
-] + (is_a_wb_sceneprop==1 and [     
+   
         (try_for_range, ":weapon_slot", 0, 4), #find polearm
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -2089,10 +2098,11 @@ scene_props = [
         (try_begin),
             (eq, ":polearm_found", 1),
             (eq, ":var2", 0), #not a patrol
-            (neg|troop_is_guarantee_horse, ":troop"),
+            #(neg|troop_is_guarantee_horse, ":troop"),
+            (agent_set_position, reg0, pos1),
             (agent_set_animation, reg0, "anim_stand_townguard_polearm"),
         (else_try),
-            (neg|troop_is_guarantee_horse, ":troop"),
+            #(neg|troop_is_guarantee_horse, ":troop"),
             (agent_set_stand_animation, reg0, "anim_stand_townguard"),
         (try_end),
         
@@ -2103,9 +2113,9 @@ scene_props = [
 ] + (is_a_wb_sceneprop==1 and [          
         (agent_set_division, reg0, grc_archers), #set them to archers, so they stand ground
         #(agent_set_scripted_destination, reg0, pos1, 0, 1), #make sure
-        (agent_ai_set_aggressiveness, reg0, 5), #test
+        (agent_ai_set_aggressiveness, reg0, 1), #test
+    (try_end),    
     ] or []) + [           
-    (try_end),
     ])]),
 
 ("troop_archer",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
@@ -2121,6 +2131,12 @@ scene_props = [
         (try_for_range, ":unused", 0, ":tier"),
             (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 0),
             (gt, ":upgrade_troop", 0),
+            (troop_is_guarantee_ranged, ":upgrade_troop"),
+            (assign, ":troop", ":upgrade_troop"),
+        (else_try),
+            (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 1),
+            (gt, ":upgrade_troop", 0),
+            (troop_is_guarantee_ranged, ":upgrade_troop"),
             (assign, ":troop", ":upgrade_troop"),
         (try_end),
     (try_end),
@@ -2133,9 +2149,9 @@ scene_props = [
         (agent_set_team, reg0, 0),
         (store_random_in_range,reg10,1,3), 
         (agent_set_speed_limit, reg0, reg10),        
-        (assign, ":bow_found", 0),
 
-] + (is_a_wb_sceneprop==1 and [     
+] + (is_a_wb_sceneprop==1 and [   
+        (assign, ":bow_found", 0),  
         (try_for_range, ":weapon_slot", 0, 4), #find bow
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
@@ -2144,8 +2160,7 @@ scene_props = [
             #(agent_equip_item, reg0, ":item", 1),
             (agent_set_wielded_item, reg0, ":item"),
             (assign, ":bow_found", 1),
-        (try_end),
-    ] or []) + [    
+        (try_end),    
         (try_begin),
             (neq, ":bow_found", 1),
             (agent_set_stand_animation, reg0, "anim_stand_townguard"),
@@ -2155,6 +2170,19 @@ scene_props = [
         (agent_set_animation_progress, reg0, reg6),
     (else_try),
         (agent_set_team, reg0, 2), #non-player defender team
+        (try_for_range, ":weapon_slot", 0, 4), #check if they have a bow
+            (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+            (gt, ":item", 1),
+            (item_get_type, ":item_type", ":item"),
+            (this_or_next|eq, ":item_type", itp_type_bow),
+            (eq, ":item_type", itp_type_thrown),
+            (assign, ":bow_found", 1),
+        (try_end),
+        (neq, ":bow_found", 1),
+        (agent_equip_item, reg0, itm_regular_bow, 3),
+        (agent_equip_item, reg0, itm_arrows, 4),
+        (agent_set_wielded_item, reg0, itm_regular_bow),
+    ] or []) + [        
     (try_end),
     ])]),
     
@@ -2169,7 +2197,7 @@ scene_props = [
         (agent_set_team, reg0, 2), #non-player defender team
 ] + (is_a_wb_sceneprop==1 and [          
         (agent_set_division, reg0, grc_archers), #set them to archers, so they stand ground
-        (agent_ai_set_aggressiveness, reg0, 5), #test
+        (agent_ai_set_aggressiveness, reg0, 3), #test
     ] or []) + [    
     (try_end),
     ])]),
@@ -2898,6 +2926,7 @@ scene_props = [
    (prop_instance_get_variation_id_2, ":health", ":gate_no"),
     (try_begin),
         (gt, ":health", 0), #if not assigned, get fallback health from scene prop entry (WB only)
+        (val_mul, ":health", 100),
         (scene_prop_set_hit_points, ":gate_no", ":health"),
     (try_end),
     ] or []) + [
@@ -4214,10 +4243,10 @@ scene_props = [
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
-    (spawn_agent, ":troop"), (assign, ":fighter_1", reg0),(agent_set_team, ":fighter_1", 0),(agent_ai_set_interact_with_player, ":fighter_1", 0),(agent_set_is_alarmed, ":fighter_1", 1),(agent_set_no_death_knock_down_only, ":fighter_1", 1),
+    (spawn_agent, ":troop"), (assign, ":fighter_1", reg0),(agent_set_team, ":fighter_1", 0),(agent_ai_set_interact_with_player, ":fighter_1", 0),(agent_set_is_alarmed, ":fighter_1", 1),(agent_set_no_death_knock_down_only, ":fighter_1", 1),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, ":fighter_1"),
     (agent_get_item_slot, ":old_weapon", ":fighter_1", 0), #assume that weapon is in first slot
     (agent_unequip_item, ":fighter_1", ":old_weapon", 0),
-    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, ":fighter_1"),
     (item_get_type, ":weapon_type", ":old_weapon"),
     (assign, ":new_weapon", itm_wood_club),
     (try_begin),
@@ -4257,17 +4286,14 @@ scene_props = [
     (store_trigger_param_1, ":instance_no"),
     (set_fixed_point_multiplier, 100),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
-    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    (prop_instance_get_position, pos1, ":instance_no"),
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
-    #(spawn_agent, "trp_gate_aggravator"),(agent_set_team, reg0, 0), (assign, reg1, reg0),(agent_set_no_dynamics, reg0, 1), (agent_ai_set_interact_with_player, reg0, 0),(agent_set_is_alarmed, reg0, 1),(agent_set_no_death_knock_down_only, reg0, 1),
     
     (position_move_y, pos1, -80,0),(set_spawn_position, pos1),
     (spawn_agent, ":troop"),(agent_set_team, reg0, 0),
-    #(agent_set_no_dynamics, reg0, 1),
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_scripted_destination, reg0, pos1), 
     (agent_set_damage_modifier, reg0, 0),
-    #(agent_add_relation_with_agent, reg0, reg1, -1),(agent_ai_set_interact_with_player, reg0, 0),(agent_set_is_alarmed, reg0, 1),(agent_set_no_death_knock_down_only, reg0, 1),
 
     (assign, ":weapon_found", 0),
     (try_for_range, ":weapon_slot", 0, 4), #find weapon, non-polearm first
@@ -4295,9 +4321,19 @@ scene_props = [
         (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
         (gt, ":item", 1),
         (item_get_type, ":item_type", ":item"),
+        (neq, ":item_type", itp_type_shield),
         #(agent_equip_item, reg0, ":item", 1),
         (agent_set_wielded_item, reg0, ":item"),
-    (try_end),
+        (item_get_weapon_length, ":length", ":item"), #polearm users need more space
+        (val_add, ":length", 30),
+        (val_mul, ":length", -1),
+        # (assign, reg78, ":length"),
+        # (display_message, "@length {reg78}"),
+        (prop_instance_get_position, pos1, ":instance_no"),
+        (position_move_y, pos1, ":length",0),
+        (agent_set_position, reg0, pos1),
+        (agent_set_scripted_destination, reg0, pos1), 
+    (try_end), 
     ] or []) + [          ]),
         
    (ti_on_scene_prop_hit,
@@ -4356,6 +4392,21 @@ scene_props = [
     (agent_set_scripted_destination, reg0, pos1), 
     (agent_add_relation_with_agent, reg0, reg1, -1),(agent_ai_set_interact_with_player, reg0, 0),(agent_set_is_alarmed, reg0, 1),(agent_set_no_death_knock_down_only, reg0, 1),
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    
+    (assign, ":bow_found", 0),    
+    (try_for_range, ":weapon_slot", 0, 4), #check if they have a bow or throwing weapon
+        (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+        (gt, ":item", 1),
+        (item_get_type, ":item_type", ":item"),
+        (this_or_next|eq, ":item_type", itp_type_bow),
+        (eq, ":item_type", itp_type_thrown),
+        (assign, ":bow_found", 1),
+    (try_end),
+    (try_begin),        
+        (neq, ":bow_found", 1),
+        (agent_equip_item, reg0, itm_regular_bow, 3),
+        (agent_equip_item, reg0, itm_arrows, 4),
+    (try_end),
     ] or []) + [ 
   ])]),
   
@@ -4973,7 +5024,12 @@ scene_props = [
 ("basket_grain",0,"basket_grain","bo_apple_basket",[]),
 ("basket_coal",0,"basket_coal","bo_apple_basket",[]),
 ("basket_earth",0,"basket_earth","bo_apple_basket",[]),
+("basket_cloth",0,"basket_cloth","bo_apple_basket",[]),
 
+("animal_dog",sokf_invisible,"wolf","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(spawn_horse,"itm_animal_small", imod_chipped),])]),
+            
 ] + (is_a_wb_sceneprop==1 and [ 
   ("fellbeast", sokf_moveable|sokf_dynamic_physics, "Fellbeast_Flap_1", "bo_Fellbeast_Flap_1", [
     (ti_on_scene_prop_init,[

@@ -1406,9 +1406,9 @@ faction_init = [
 # 0) subfaction index,1) city, 2) substring_present_in_all_troop_names, 3)[guard_troop,archer_troop,castle_guard_troop],  				5)[ reinforcements for garrisons],  								6) [leaders...]
 subfaction_data= [      
  (subfac_pelargir     ,p_town_pelargir     ,"Pelargir"  ,[trp_i1_pel_watchman,		trp_a2_pel_marine,		    trp_i3_pel_vet_infantry],		[pt_pelargir_reinf_a  ,pt_pelargir_reinf_b  ,pt_pelargir_reinf_c  ],[trp_i6_pel_leader, trp_a6_pel_marine_leader,]),
- (subfac_dol_amroth   ,p_town_dol_amroth   ,"Amroth"    ,[trp_i1_amroth_recruit,	trp_i2_gon_watchman,    	trp_c6_amroth_swan_knight],		[pt_dol_amroth_reinf_a,pt_dol_amroth_reinf_b,pt_dol_amroth_reinf_c],[trp_c6_amroth_leader]),
- (subfac_ethring      ,p_town_calembel     ,"Lamedon"   ,[trp_i1_lam_clansman,		trp_i2_gon_watchman,		trp_c5_lam_knight],			    [pt_lamedon_reinf_a   ,pt_lamedon_reinf_b   ,pt_lamedon_reinf_c   ],[trp_c6_lam_leader]),
- (subfac_lossarnach   ,p_town_lossarnach   ,"Lossarnach",[trp_i1_loss_woodsman,		trp_i2_gon_watchman,		trp_i5_loss_axemaster],			[pt_lossarnach_reinf_a,pt_lossarnach_reinf_b,pt_lossarnach_reinf_c],[trp_i6_loss_leader]),
+ (subfac_dol_amroth   ,p_town_dol_amroth   ,"Amroth"    ,[trp_i1_amroth_recruit,	trp_a3_gon_bowman,    	    trp_c6_amroth_swan_knight],		[pt_dol_amroth_reinf_a,pt_dol_amroth_reinf_b,pt_dol_amroth_reinf_c],[trp_c6_amroth_leader]),
+ (subfac_ethring      ,p_town_calembel     ,"Lamedon"   ,[trp_i1_lam_clansman,		trp_a3_gon_bowman,		    trp_c5_lam_knight],			    [pt_lamedon_reinf_a   ,pt_lamedon_reinf_b   ,pt_lamedon_reinf_c   ],[trp_c6_lam_leader]),
+ (subfac_lossarnach   ,p_town_lossarnach   ,"Lossarnach",[trp_i1_loss_woodsman,		trp_a3_gon_bowman,		    trp_i5_loss_axemaster],			[pt_lossarnach_reinf_a,pt_lossarnach_reinf_b,pt_lossarnach_reinf_c],[trp_i6_loss_leader]),
  (subfac_pinnath_gelin,p_town_pinnath_gelin,"Pinnath"   ,[trp_i1_pinnath_plainsman,	trp_a2_pinnath_bowman,		trp_c3_pinnath_knight],			[pt_pinnath_reinf_a   ,pt_pinnath_reinf_b   ,pt_pinnath_reinf_c   ],[trp_c6_pinnath_leader]),
  (subfac_blackroot    ,p_town_erech        ,"Blackroot" ,[trp_a1_blackroot_hunter,	trp_a2_blackroot_bowman,	trp_a5_blackroot_shadow_hunter],[pt_blackroot_reinf_a ,pt_blackroot_reinf_b ,pt_blackroot_reinf_c ],[trp_a5_blackroot_shadow_hunter]),
  (subfac_rangers      ,p_town_henneth_annun,"Ithilien"  ,[trp_a4_ithilien_ranger,	trp_a4_ithilien_ranger,	    trp_a6_ithilien_master_ranger],	[pt_ithilien_reinf_a  ,pt_ithilien_reinf_b  ,pt_ithilien_reinf_c  ],[trp_a6_ithilien_leader]),
@@ -1595,7 +1595,7 @@ center_list = [
 	[trp_captain_of_gondor, trp_smith_linhir, trp_merchant_linhir, trp_elder_linhir, pt_gondor_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_woman_gondor_bw,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
 	[icon_mfc_gondor],[500],[2,8,2,8,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_always),
 (p_town_dol_amroth, [scn_dol_amroth_center, scn_dol_amroth_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_dol_amroth_siege,mesh_town_dol_amroth],
-	[trp_c6_amroth_leader, trp_smith_dolamroth, trp_merchant_dolamroth, trp_elder_dolamroth, pt_dol_amroth_recruits, trp_knight_1_3, trp_walker_man_gondor_blue,trp_walker_woman_gondor_bw,trp_walker_man_gondor_white,trp_walker_woman_gondor_b], 
+	[trp_c6_amroth_leader, trp_smith_dolamroth, trp_merchant_dolamroth, trp_elder_dolamroth, pt_dol_amroth_recruits, trp_knight_1_3, trp_walker_man_gondor_blue,trp_walker_woman_gondor_b,trp_walker_man_gondor_white,trp_walker_woman_gondor_bw], 
 	[icon_mfc_dol_amroth],[500],[2,8,3,8,2,5], str_income_med, garrison_limit_high, 1, tld_siegable_normal),
 (p_town_edhellond, [scn_edhellond_center, scn_gondor_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_edhellond_siege, mesh_town_edhellond],
 	[trp_captain_of_gondor, trp_smith_edhellond, trp_merchant_edhellond, trp_elder_edhellond, pt_gondor_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_bw,trp_walker_woman_gondor_b], 

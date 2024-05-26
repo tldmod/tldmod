@@ -4496,16 +4496,22 @@ tld_calculate_wounded = (ti_on_agent_killed_or_wounded, 0, 0, [], [
     (val_min, ":chance", 90),
     
     (assign, reg77, ":chance"),
-    (str_store_agent_name, s5, ":agent_no"),
+    (str_store_agent_name, s55, ":agent_no"),
     (store_random_in_range, ":rnd", 0, 100),
     
     (try_begin),
         (le, ":rnd", ":chance"),
         (set_trigger_result, 2), #wound
-        #(display_message, "@{s5} wounded, surgery {reg75}, level {reg76}, chance: {reg77}"),
+        # (try_begin),
+            # (agent_is_ally, ":agent_no"),
+            # (display_message, "@{s55} wounded, surgery {reg75}, level {reg76}, chance: {reg77}"),
+        # (try_end),
     (else_try),
         (set_trigger_result, 1), #kill
-        #(display_message, "@{s5} killed, surgery {reg75}, level {reg76}, chance: {reg77}"),
+        # (try_begin),
+            # (agent_is_ally, ":agent_no"),
+            # (display_message, "@{s55} killed, surgery {reg75}, level {reg76}, chance: {reg77}"),
+        # (try_end),
     (try_end),        
     ])
     
@@ -4536,25 +4542,25 @@ tld_animated_town_agents = [
   (0.3, 0, 0, [], [ #animated agents WB only
     
     #wood hackers
-    (call_script, "script_animate_town_agents", spr_troop_civilian_wood_hacker_1h, 3, 3, itm_civilian_woodaxe_1h),
-    (call_script, "script_animate_town_agents", spr_troop_civilian_wood_hacker_2h, 4, 3, itm_civilian_woodaxe_2h),
-    (call_script, "script_animate_town_agents", spr_troop_civilian_tree_feller, 4, 1, itm_civilian_woodaxe_2h),   
+    (call_script, "script_animate_town_agents", spr_troop_work_wood_hacker_1h, 3, 3, itm_civilian_woodaxe_1h),
+    (call_script, "script_animate_town_agents", spr_troop_work_wood_hacker_2h, 4, 3, itm_civilian_woodaxe_2h),
+    (call_script, "script_animate_town_agents", spr_troop_work_tree_feller, 4, 1, itm_civilian_woodaxe_2h),   
     
     #hammerer
-    (call_script, "script_animate_town_agents", spr_troop_civilian_hammer, 2, 3, itm_civilian_hammer),
+    (call_script, "script_animate_town_agents", spr_troop_work_hammer, 2, 3, itm_civilian_hammer),
 
     #farmers
-    (call_script, "script_animate_town_agents", spr_troop_civilian_farmer_mattock, 4, 3, itm_civilian_war_mattock),
-    (call_script, "script_animate_town_agents", spr_troop_civilian_farmer_shovel, 2, 0, itm_civilian_shovel), #doesn't work so well
+    (call_script, "script_animate_town_agents", spr_troop_work_farmer_mattock, 4, 3, itm_civilian_war_mattock),
+    (call_script, "script_animate_town_agents", spr_troop_work_farmer_shovel, 2, 0, itm_civilian_shovel), #doesn't work so well
     
     #miners use two attack actions, so we fire the script twice with higher pause count
-    (call_script, "script_animate_town_agents", spr_troop_civilian_miner, 6, 4, itm_civilian_pickaxe),
+    (call_script, "script_animate_town_agents", spr_troop_work_miner, 6, 4, itm_civilian_pickaxe),
     #(call_script, "script_animate_town_agents", spr_troop_civilian_miner, 6, 1), 
     
     #smiths
     (call_script, "script_animate_town_agents", spr_troop_smith, 3, 3, itm_civilian_hammer), 
     
-    (call_script, "script_animate_town_agents", spr_troop_civilian_butcher, 4, 3, itm_orc_axe),
+    (call_script, "script_animate_town_agents", spr_troop_work_butcher, 4, 3, itm_orc_axe),
     
     (call_script, "script_animate_town_agents", spr_troop_guard_fight_single, 5, 4, itm_practice_staff),
       ]),
@@ -4588,9 +4594,9 @@ tld_animated_town_agents = [
     (try_end),
 
     #cheer
-    (scene_prop_get_num_instances, ":num_props", "spr_troop_civilian_cheer"),
+    (scene_prop_get_num_instances, ":num_props", "spr_troop_civ_cheer"),
     (try_for_range, ":count", 0, ":num_props"),
-        (scene_prop_get_instance, ":instance_no", "spr_troop_civilian_cheer", ":count"),
+        (scene_prop_get_instance, ":instance_no", "spr_troop_civ_cheer", ":count"),
         (prop_instance_get_position, pos2, ":instance_no"),
         (scene_prop_get_slot, ":agent", ":instance_no", slot_prop_agent_1),
         (prop_instance_get_position, pos3,":instance_no"),
@@ -4618,9 +4624,9 @@ tld_animated_town_agents = [
     (try_end),
 
     #worker stand
-    (scene_prop_get_num_instances, ":num_props", "spr_troop_civilian_worker_stand"),
+    (scene_prop_get_num_instances, ":num_props", "spr_troop_work_stand"),
     (try_for_range, ":count", 0, ":num_props"),
-        (scene_prop_get_instance, ":instance_no", "spr_troop_civilian_worker_stand", ":count"),
+        (scene_prop_get_instance, ":instance_no", "spr_troop_work_stand", ":count"),
         (prop_instance_get_position, pos2, ":instance_no"),
         (scene_prop_get_slot, ":agent", ":instance_no", slot_prop_agent_1),
         (agent_set_scripted_destination, ":agent", pos2),
@@ -4634,9 +4640,9 @@ tld_animated_town_agents = [
     (try_end),
 
     #worker table
-    (scene_prop_get_num_instances, ":num_props", "spr_troop_civilian_worker_table"),
+    (scene_prop_get_num_instances, ":num_props", "spr_troop_work_table"),
     (try_for_range, ":count", 0, ":num_props"),
-        (scene_prop_get_instance, ":instance_no", "spr_troop_civilian_worker_table", ":count"),
+        (scene_prop_get_instance, ":instance_no", "spr_troop_work_table", ":count"),
         (prop_instance_get_position, pos2, ":instance_no"),
         (scene_prop_get_slot, ":agent", ":instance_no", slot_prop_agent_1),
         (agent_set_scripted_destination, ":agent", pos2),

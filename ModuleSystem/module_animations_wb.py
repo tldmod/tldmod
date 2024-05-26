@@ -1764,7 +1764,7 @@ animations = [
    [79.0, "stand_guardsman", 0, 2397, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],
  ],
  
- ["stand_townguard_polearm", acf_enforce_all, amf_priority_kick|amf_keep,
+ ["stand_townguard_polearm", acf_enforce_all, amf_priority_die|amf_keep,
    [11.0, "guard_lookaround", 0, 144, arf_use_stand_progress|arf_cyclic|arf_blend_in_3, 0, (0, 0, 0), 0.25],
    [11.0, "guard_lookaround02", 0, 144, arf_use_stand_progress|arf_cyclic|arf_blend_in_3, 0, (0, 0, 0), 0.25],
  ],
