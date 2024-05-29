@@ -9443,11 +9443,27 @@ scripts = [
 ("let_nearby_parties_join_current_battle",
     [ (store_script_param, ":besiege_mode", 1),
       (store_script_param, ":dont_add_friends", 2),
-      (assign, ":join_distance", 5), #Kham - Changed from 4
+      (set_fixed_point_multiplier, 100),
+      #(assign, ":join_distance", 5), #Kham - Changed from 4
+      (assign, ":friend_join_distance", 400),
+      (assign, ":enemy_join_distance", 450),
       (try_begin),
         (is_currently_night),
-        (assign, ":join_distance", 3), #Kham - Changed from 3
+        #(assign, ":join_distance", 3), #Kham - Changed from 3
+        (val_sub, ":friend_join_distance", 100),
+        (val_sub, ":enemy_join_distance", 100),
       (try_end),
+      (party_get_skill_level, ":tactics", p_main_party, skl_tactics),
+      (val_mul, ":tactics", 3),
+      (store_add, ":friend_tactics", 100, ":tactics"),
+      (store_sub, ":enemy_tactics", 100, ":tactics"),
+      (val_mul, ":friend_join_distance", ":friend_tactics"),
+      (val_mul, ":enemy_join_distance", ":enemy_tactics"),
+      (val_div, ":friend_join_distance", 100),
+      (val_div, ":enemy_join_distance", 100),
+      
+      (party_get_position, pos1, p_main_party),
+      
       (try_for_parties, ":party_no"),
         (neq, ":party_no", "p_main_party"),
         (neq, ":party_no", "$g_enemy_party"),
@@ -9458,12 +9474,15 @@ scripts = [
         (lt, ":attached_to", 0), #party is not attached to another party
         (get_party_ai_behavior, ":behavior", ":party_no"),
         (neq, ":behavior", ai_bhvr_in_town),
-        (neg|party_slot_eq, ":party_no", slot_party_type, spt_cattle_herd), #TLD: "cattle" won't join
+        (party_get_slot, ":party_type", ":party_no", slot_party_type),
+        (neq, ":party_type", spt_town), #...except towns
+        (neq, ":party_type", spt_kingdom_caravan), #...and caravans
+        (neq, ":party_type", spt_cattle_herd), #...and "cattle"
+        (quest_get_slot, ":escorted_caravan", "qst_escort_merchant_caravan", slot_quest_target_party), #check for caravan quest
+        (neq, ":party_no", ":escorted_caravan"),        
 
         (assign, ":caravan_continue", 1),
-
-
-        (try_begin),
+        (try_begin), #InVain: Probably unnecessary, but keep
         	(party_get_template_id, ":template_type", ":party_no"),
         	(this_or_next|party_slot_eq, ":party_no", slot_party_type, spt_kingdom_caravan), #Caravans
         	(is_between, ":template_type", "pt_gondor_caravan", "pt_gondor_p_train"), #again, caravans
@@ -9476,9 +9495,14 @@ scripts = [
         (try_end),
 
         (eq, ":caravan_continue", 1),
-      
-        (store_distance_to_party_from_party, ":distance", ":party_no", "p_main_party"),
-        (lt, ":distance", ":join_distance"),
+        
+        (party_get_position, pos2, ":party_no"),
+        (get_distance_between_positions, ":distance", pos1, pos2),
+
+        #(store_distance_to_party_from_party, ":distance", ":party_no", "p_main_party"),
+        (lt, ":distance", 600),
+        # (assign, reg78, ":distance"),
+        # (display_message, "@distance: {reg78}"),
 
         (store_faction_of_party, ":faction_no", ":party_no"),
         (store_faction_of_party, ":enemy_faction", "$g_enemy_party"),
@@ -9512,10 +9536,7 @@ scripts = [
           (eq, ":besiege_mode", 0),
           (lt, ":reln_with_player", 0),
           (gt, ":reln_with_enemy", 0),
-          (party_get_slot, ":party_type", ":party_no", slot_party_type),
-          #(eq, ":party_type", spt_kingdom_hero_party), #TLD: all parties can join
-          (neq, ":party_type", spt_town), #...except towns
-          (neq, ":party_type", spt_kingdom_caravan), #...and caravans
+          (lt, ":distance", ":enemy_join_distance"),
 
           #(get_party_ai_behavior, ":ai_bhvr", ":party_no"),
           #(neq, ":ai_bhvr", ai_bhvr_avoid_party), - Kham Removed (Nov 2018)
@@ -9534,14 +9555,9 @@ scripts = [
             # (eq, ":faction_no", "$players_kingdom"),
             # (faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
             # (assign, ":do_join", 1),
-          (try_end),
+          (try_end), 
           (eq, ":do_join", 1),
-          (party_get_slot, ":party_type", ":party_no"),
-          #(eq, ":party_type", spt_kingdom_hero_party), #TLD: all parties can join
-          (neq, ":party_type", spt_town), #...except towns
-          (neq, ":party_type", spt_kingdom_caravan), #...and caravans
-          (quest_get_slot, ":escorted_caravan", "qst_escort_merchant_caravan", slot_quest_target_party), #check for caravan quest
-          (neq, ":party_no", ":escorted_caravan"),
+          (lt, ":distance", ":friend_join_distance"),
 
           #MV commented out personal relations
           #(party_stack_get_troop_id, ":leader", ":party_no", 0),
