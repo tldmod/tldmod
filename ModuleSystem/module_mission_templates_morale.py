@@ -43,17 +43,20 @@ tld_morale_triggers = [
 		(try_end),
 	]),
 
-	# Rally your troops, five second wait inbetween. -CC
-     	(0, 0, 5, [(eq, "$tld_option_morale", 1),(get_player_agent_no, ":player"),(agent_is_alive, ":player"),(key_clicked, key_v)], 
+	# Rally your troops, five second wait inbetween. -CC #InVain: Increase to 15, so you can't spam
+     	(0, 0, 15, [(eq, "$tld_option_morale", 1),(get_player_agent_no, ":player"),(agent_is_alive, ":player"),(key_clicked, key_v)], 
 	[
 		(assign,":ally","$allies_coh"),
 		(assign,":enemy","$enemies_coh"),
 		(val_sub,":ally",":enemy"),
 		(assign, ":continue", 0),
         (assign, ":rallied_agents", 0),
+        (store_mission_timer_a, ":time"),
             
 		(try_begin),
 			#(le, ":ally", tld_morale_rout_allies),
+            (le, "$allies_coh", 80),
+            (ge, ":time", 30),
 			(assign, ":continue", 1),
 		(else_try),
 			(display_message, "@You do not need to rally your troops yet.", color_neutral_news),
@@ -173,6 +176,7 @@ tld_morale_triggers = [
             (assign, reg10, ":rallied_agents"),
             (display_message, "@You rally {reg10} troops!", color_good_news),
             (val_mul, reg10, 10),
+            (val_min, reg10, 500),
             (add_xp_as_reward, reg10),
 		(try_end),
 
