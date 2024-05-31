@@ -4954,7 +4954,7 @@ tld_points_of_interest = [
                 (ge, ":player_level", 12),
                 (store_random_in_range, ":chance", 0, 100),
                 (lt, ":chance", 15), #so it doesn't happen immediatly
-                (display_message, "@You endure the horrors of the Dead City and explore its innermost circles. The Silent Watchers recognise your valour and don't oppose you. (You gained 1 Charisma.)"),
+                (display_message, "@You endure the horrors of the Dead City and explore its innermost circles. The Silent Watchers recognise your boldness and don't oppose you. (You gained 1 Charisma.)"),
                 (add_xp_as_reward, 500),
                 (call_script, "script_change_player_relation_with_center", "$current_town", 10),
                 (call_script, "script_increase_rank", "$ambient_faction", 20),
