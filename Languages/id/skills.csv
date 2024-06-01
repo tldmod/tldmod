@@ -1,11 +1,11 @@
 skl_trade|Penawar
-; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
+skl_trade_desc|Menjadikan pandai besi dan ahli pasokan lebih kooperatif dan menawarkan peralatan yang lebih baik. (Keterampilan pasukan)
 skl_leadership|Kepemimpinan
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
+skl_leadership_desc|Setiap poin meningkatkan jumlah maksimum pasukan yang dapat Anda perintahkan sebanyak 5, meningkatkan semangat pasukan dan koherensi dalam pertempuran. Membuat semakin banyak relawan yang bersedia mengikuti Anda. (Keterampilan pemimpin)
 skl_prisoner_management|Manajemen Tawanan
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
-; skl_persuasion|Wildcraft
-; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+skl_prisoner_management_desc|Setiap level keterampilan ini meningkatkan jumlah maksimum tahanan sebesar %d. Meningkatkan peluang menangkap dan menahan tahanan. (Keterampilan pemimpin)
+skl_persuasion|kerajinan liar
+skl_persuasion_desc|Kemampuan untuk bertahan hidup di alam liar dan menyesuaikannya dengan keinginan Anda. Skill ini mempengaruhi kemampuan party untuk bersembunyi dari musuh, dan kecepatan party saat berada di medan hutan. (Keterampilan pasukan)
 skl_engineer|-----\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 
 skl_engineer_desc|-----\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 
 skl_first_aid|Pertolongan Pertama 
@@ -13,36 +13,36 @@ skl_first_aid_desc|Pahlawan dapat meraih kembali 5 %% tiap level skill darah yan
 skl_surgery|Pembedahan
 skl_surgery_desc|Setiap poin untuk skill ini memberikan 4 %% peluang bahwa setiap anggota parti yang terluka berat hanya menjadi terluka saja dan tidak meninggal. (Skill Parti)
 skl_wound_treatment|Perawatan luka 
-; skl_wound_treatment_desc|Party healing speed is increased by 20%% per level of this skill. (Party skill)
+skl_wound_treatment_desc|Kecepatan penyembuhan party meningkat sebesar 20%% per level skill ini. (Keterampilan pasukan)
 skl_inventory_management|Manajemen inventaris
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+skl_inventory_management_desc|Meningkatkan kapasitas inventaris sebesar +6 per level keahlian. Mengurangi konsumsi makanan. (Keterampilan pemimpin)
 skl_spotting|Pemantauan
 skl_spotting_desc|Jarak penglihatan parti bertambah menjadi 10 %% per level skill. (Skill parti)
 skl_pathfinding|Pencari Jejak 
-; skl_pathfinding_desc|Party map speed is increased by 3%% per skill level. (Party skill)
+skl_pathfinding_desc|Kecepatan peta grup meningkat sebesar 3%% per level keterampilan. (Keterampilan pasukan)
 skl_tactics|Taktik
 skl_tactics_desc|Setiap dua level skill ini dapat meningkatkan tingkat keberuntungan pertempuran sebesar 1. (Skill Parti)
 skl_tracking|Pelacakan
-; skl_tracking_desc|Tracks become more informative. (Party skill)
+skl_tracking_desc|Trek menjadi lebih informatif. (Keterampilan pasukan)
 skl_trainer|Pelatih
 skl_trainer_desc|Setiap hari. Setiap pahlawan yang mempunyai ketrampilan ini dapat menambah pengalaman anggota lain yang levelnya berada di bawah dia . Pengalaman dapat didapatkan sebagai berikut: {0,4,10,16,23,30,38,46,55,65,80}. (Skill Personal)
 skl_looting|Menjarah 
-; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
-; skl_horse_archery|Mounted Archery
+skl_looting_desc|Meningkatkan jumlah dan kualitas jarahan yang diperoleh setelah pertempuran. (Keterampilan pasukan)
+skl_horse_archery|Penunggang Panahan
 skl_horse_archery_desc|Mengurangi penalti kerusakan dan akurasi untuk memanah dan melempar saat sedang menunggangi kuda. (Skill Personal)
 skl_riding|Menunggang
 skl_riding_desc|memungkinkan Anda untuk menunggang kuda (atau binatang buas lainnya) dari tingkat kesulitan yang lebih tinggi dan meningkatkan kecepatan dan manuver berkuda Anda. (Skill Personal)
 skl_athletics|Atletik
 skl_athletics_desc|Meningkatkan kecepatanmu dalam berlari. (Skill Personal)
 skl_shield|Tameng
-; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
+skl_shield_desc|mengurangi kerusakan pada perisai (sebesar 8%% per level keterampilan), meningkatkan kecepatan dan jangkauan perisai, mengurangi penalti perisai saat digunakan dengan busur. (Keterampilan pribadi)
 skl_weapon_master|Ahli Senjata
 skl_weapon_master_desc|membuatnya lebih mudah untuk mempelajari keahlian senjata dan meningkatkan batas kemampuan. Batasnya sebagai berikut : 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Skill Personal)
-; skl_power_draw|Power Draw
-; skl_power_draw_desc|lets character use more powerful bows. Each point to this skill (up to four plus power-draw requirement of the bow) increases bow damage by 14%%. (Personal skill)
-; skl_power_throw|Power Throw
-; skl_power_throw_desc|Each point to this skill increases throwing damage by 10%%. (Personal skill)
-; skl_power_strike|Power Strike
-; skl_power_strike_desc|Each point to this skill increases melee damage by 8%%. (Personal skill)
-; skl_ironflesh|Ironflesh
-; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)
+skl_power_draw|Kekuatan Penarikan
+skl_power_draw_desc|memungkinkan karakter menggunakan busur yang lebih kuat. Setiap poin pada keterampilan ini (hingga empat ditambah persyaratan penarikan daya busur) meningkatkan kerusakan busur sebesar 14%%. (Keterampilan pribadi)
+skl_power_throw|Kekuatan Lemparan
+skl_power_throw_desc|Setiap poin pada skill ini meningkatkan damage lemparan sebesar 10%%. (Keterampilan pribadi)
+skl_power_strike|Kekuatan Serangan
+skl_power_strike_desc|Setiap poin pada skill ini meningkatkan damage jarak dekat sebesar 8%%. (Keterampilan pribadi)
+skl_ironflesh|Daging Besi
+skl_ironflesh_desc|Setiap poin pada keterampilan ini meningkatkan darah sebesar +2, dan memungkinkan Anda menghindari beberapa kerusakan tanpa terluka. (Keterampilan pribadi)

@@ -3,76 +3,76 @@ qst_deliver_message_text|{s9} tanya ke kamu untuk kirim pesan ini ke {s13}. {s13
 qst_deliver_message_to_enemy_lord|Kirim pesan ini ke {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} meminta kamu untuk mengirim pesan ini ke {s13} dari {s15}. {s13} berada di {s4} ketika kamu diberikan misi ini
 qst_raise_troops|Berdiri {reg1} {s14}
-; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
+qst_raise_troops_text|{s9} meminta Anda untuk menaikkan {reg1} {s14} dan membawanya ke {him/her}.
 qst_escort_messenger|Kawal pesan ini ke {s14}
 qst_escort_messenger_text|Tidak ada
 qst_hunt_down_fugitive|Berburu {s4}
-; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the fugitive named {s4}. He is currently believed to be at {s3}.
+qst_hunt_down_fugitive_text|{s9} memintamu untuk memburu buronan bernama {s4}. Dia saat ini diyakini berada di {s3}.
 qst_bring_back_runaway_serfs|Ambil budak yang lari
 qst_bring_back_runaway_serfs_text|{s9} meminta kamu mengembalikan tiga grup budak yang lari dan kembalikan ke {2}. Dia bilang tiga grup lari ke arah {s3}.
 qst_follow_spy|Ikuti mata-mata ke tempat rapat
-; qst_follow_spy_text|{s11} asked you to follow the spy that will leave {s12}. You must be careful not to be seen by the spy during his travel, or else he may get suspicious and turn back. Once the spy meets with his accomplice, you are to ambush and capture them and bring them both back to {s11}.
+qst_follow_spy_text|{s11} memintamu untuk mengikuti mata-mata yang akan meninggalkan {s12}. Anda harus berhati-hati agar tidak terlihat oleh mata-mata selama perjalanannya, jika tidak, dia akan curiga dan berbalik. Setelah mata-mata bertemu dengan komplotannya, Anda harus menyergap dan menangkap mereka dan membawa mereka kembali ke {s11}.
 qst_capture_enemy_hero|Tangkap komandan musuh
 qst_capture_enemy_hero_text|{s11} menyuruh anda untuk menangkap komandan musuh.
-; qst_lend_companion|Lend Your Companion {s3} to {s9}
-; qst_lend_companion_text|{s9} asked you to lend your companion {s3} to him for a week.
+qst_lend_companion|Pinjamkan Rekan Anda {s3} ke {s9}
+qst_lend_companion_text|{s9} meminta Anda untuk meminjamkan teman Anda {s3} kepadanya selama seminggu.
 qst_capture_prisoners|Bawa {reg1} tawanan musuh
-; qst_capture_prisoners_text|{s9} wanted you to bring him {reg1} enemy prisoners.
+qst_capture_prisoners_text|{s9} ingin Anda memberinya tahanan musuh {reg1}.
 qst_investigate_fangorn|Investigasi Kota Fangorn
-; qst_investigate_fangorn_text|{s9} asked you to find out what is going on in the Fangorn forest, and to report back.
+qst_investigate_fangorn_text|{s9} meminta Anda untuk mencari tahu apa yang terjadi di hutan Fangorn, dan melaporkannya kembali.
 qst_capture_troll|Tangkap sebuah troll
-; qst_capture_troll_text|{s9} asked you to bring back a savage troll for use in his army.
-; qst_kill_troll|Dispatch raging Troll
-; qst_kill_troll_text|{s9} asked you to free {s13} from the menace of a Troll raging in its outskirts.
-; qst_mirkwood_sorcerer|Slay a sorcerer in Mirkwood
-; qst_mirkwood_sorcerer_text|Galadriel's power to defend Lothlorien has been undermined by the foul rituals of a sorcerer of Dol Guldur.  Though he is a mortal, he represents a great threat to the Elves. Search for him in Mirkwood forest, not far from Dol Guldur itself. Use stealth to prevent the alarm from being raised as there will be only one opportunity to defeat him.
-; qst_find_lost_spears|Find the lost spears of king Bladorthin
-; qst_find_lost_spears_text|{s9} asked you to find the lost spears dwarves once made for king Bladorthin. You have to ask the dwarves permission to search for the spears in the depths of the Lonely Mountain.
+qst_capture_troll_text|{s9} memintamu untuk membawa kembali troll buas untuk digunakan dalam pasukannya.
+qst_kill_troll|Kirim Troll yang mengamuk
+qst_kill_troll_text|{s9} memintamu untuk membebaskan {s13} dari ancaman Troll yang mengamuk di pinggirannya.
+qst_mirkwood_sorcerer|Bunuh seorang penyihir di Mirkwood
+qst_mirkwood_sorcerer_text|Kekuatan Galadriel untuk membela Lothlorien telah dirusak oleh ritual kotor seorang penyihir Dol Guldur. Meskipun dia manusia biasa, dia merupakan ancaman besar bagi para Peri. Cari dia di hutan Mirkwood, tidak jauh dari Dol Guldur itu sendiri. Gunakan sembunyi-sembunyi untuk mencegah alarm dibunyikan karena hanya akan ada satu kesempatan untuk mengalahkannya.
+qst_find_lost_spears|Temukan tombak raja Bladorthin yang hilang
+qst_find_lost_spears_text|{s9} memintamu untuk menemukan tombak hilang yang pernah dibuat para kurcaci untuk raja Bladorthin. Anda harus meminta izin kepada para kurcaci untuk mencari tombak di kedalaman Lonely Mountain.
 qst_defend_village|Pertahankan Desa
 qst_raid_village|Raid Desa
 qst_destroy_scout_camp|Hancurkan Kamp Pengintai
 qst_rescue_prisoners|Selamatkan {reg1} Tawanan
-; qst_rescue_prisoners_text|{s9} wanted you to rescue {reg1} prisoners.
-; qst_scout_enemy_town|Scout Enemy Town
-; qst_scout_enemy_town_text|{s9} asked you to scout around {s13}.
-; qst_dispatch_scouts|Dispatch a Scout Party
-; qst_dispatch_scouts_text|{s9} asked you to dispatch a scout party near {s13}.
-; qst_eliminate_patrols|Eliminate {reg1} Enemy Parties
-; qst_eliminate_patrols_text|{s9} asked you to eliminate {reg1} {s13} enemy parties.
-; qst_lend_surgeon|Lend Your Surgeon {s3} to {s1}
-; qst_lend_surgeon_text|Lend your experienced surgeon {s3} to {s1}.
+qst_rescue_prisoners_text|{s9} ingin Anda menyelamatkan tahanan {reg1}.
+qst_scout_enemy_town|Intai Kota Musuh
+qst_scout_enemy_town_text|{s9} memintamu untuk mengintai di sekitar {s13}.
+qst_dispatch_scouts|Mengirimkan Pasukan Pengintai
+qst_dispatch_scouts_text|{s9} meminta Anda untuk mengirimkan pasukan pengintai di dekat {s13}.
+qst_eliminate_patrols|Kalahkan {reg1} Pasukan Musuh
+qst_eliminate_patrols_text|{s9} memintamu untuk melenyapkan {reg1} {s13} pihak musuh.
+qst_lend_surgeon|Pinjamkan Ahli Bedah Anda {s3} ke {s1}
+qst_lend_surgeon_text|Pinjamkan ahli bedah berpengalaman Anda {s3} ke {s1}.
 qst_follow_army|Ikuti Pasukan {s9}'s
 qst_follow_army_text|Tidak ada
-; qst_report_to_army|Report to {s13}
+qst_report_to_army|Laporkan ke {s13}
 qst_report_to_army_text|Tidak ada
-; qst_deliver_cattle_to_army|Deliver {reg3} units of food to {s13}
+qst_deliver_cattle_to_army|Kirimkan {reg3} Makanan ke unit {s13}
 qst_deliver_cattle_to_army_text|Tidak ada
 qst_join_siege_with_army|Ikuti pengepungan {s14}
 qst_join_siege_with_army_text|Tidak ada
-; qst_scout_waypoints|Scout {s13}, {s14} and {s15}
+qst_scout_waypoints|Intai {s13}, {s14} dan {s15}
 qst_scout_waypoints_text|Tidak ada
 qst_move_cattle_herd|Pindahkan {s12} Ke {s13}
-; qst_move_cattle_herd_text|The Elder of {s10} asked you to move some {s12} to {s13}.
+qst_move_cattle_herd_text|Tetua {s10} meminta Anda untuk memindahkan beberapa {s12} ke {s13}.
 qst_escort_merchant_caravan|Kawal Kereta Suplai ke {s8}
-; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
+qst_escort_merchant_caravan_text|Antarkan kereta suplai ke {s8} dan bicaralah dengan mereka saat berada di dekatnya.
 ; qst_deliver_wine|Deliver {reg5} Units of {s6} to {s4}
 ; qst_deliver_wine_text|The {s9} of {s3} asked you to deliver {reg5} units of {s6} to {s4} in 7 days.
 qst_troublesome_bandits|Cari Goblins Pembawa Masalah
-; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome goblins in the vicinity of the town.
+qst_troublesome_bandits_text|{s9} dari {s4} memintamu untuk memburu para goblin yang merepotkan di sekitar kota.
 qst_deal_with_looters|Tangani Tribal Orcs
-; qst_deal_with_looters_text|The Elder of {s4} has asked you to deal with several bands of tribal orcs around {s4}.
-qst_deal_with_night_bandits|Tangani Goblin Nakal
-; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night goblins at {s14}.
+qst_deal_with_looters_text|Tetua {s4} telah meminta Anda untuk menangani beberapa kelompok suku Orc di sekitar {s4}.
+qst_deal_with_night_bandits|Menangani Bandit Malam
+; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
 ; qst_deliver_food|Supply {s3} with {reg5} Units of food
-; qst_deliver_food_text|The {s9} of {s3} asked you to bring him {reg5} units of food in 10 days.
+qst_deliver_food_text|{s9} dari {s3} meminta Anda untuk membawakannya {reg5} makanan dalam 10 hari.
 ; qst_deliver_iron|Supply {s3} with {reg5} Units of {s6}
-; qst_deliver_iron_text|The {s9} of {s3} asked you to bring him {reg5} units of {s6}.
-; qst_tld_introduction|Go to your faction leader.
+qst_deliver_iron_text|{s9} dari {s3} meminta Anda untuk membawakannya {reg5} unit {s6}.
+qst_tld_introduction|Pergi ke pemimpin faksi Anda.
 qst_tld_introduction_text|Tidak ada
 qst_treebeard_kill_orcs|Kalahkan orc penebang pohon
 qst_treebeard_kill_orcs_text|Treebeard Ingin kamu cari dan kalahkan orcs yang sedang menebang pohon di Fangorn.
-; qst_oath_of_vengeance|Oath of Vengeance
-; qst_oath_of_vengeance_text|Enraged by the death of {s1}, you have sworn an oath of vengeance upon the forces of {s2}. You must now destroy as many of the armies of {s2} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!
+qst_oath_of_vengeance|Sumpah Pembalasan
+qst_oath_of_vengeance_text|Marah dengan kematian {s1}, Anda telah bersumpah untuk membalas dendam pada kekuatan {s2}. Anda sekarang harus menghancurkan sebanyak mungkin pasukan {s2} dalam beberapa hari mendatang. Anda sangat menyadari bahwa pengikut Anda telah menyaksikan sumpah ini dan Anda tidak ingin dikenal sebagai pelanggar sumpah. Pesta pertumpahan darah sekarang harus dimulai!
 ; qst_deliver_gift|Deliver a {s4} of {s1} from {s2} to {s3}
 ; qst_deliver_gift_text|You have requested to deliver a {s4} of {s1} to {s3} from {s2}.
 ; qst_ring_hunters|Ring Hunters
@@ -83,7 +83,7 @@ qst_treebeard_kill_orcs_text|Treebeard Ingin kamu cari dan kalahkan orcs yang se
 ; qst_blank_quest_03|Sea Battle
 ; qst_blank_quest_04|Kill {s35} {s6} {s7}
 ; qst_blank_quest_05|Kill {s35} {s36} troops.
-
+; qst_blank_quest_06|Defeat {s35} in battle.
 
 
 
@@ -100,5 +100,5 @@ qst_treebeard_kill_orcs_text|Treebeard Ingin kamu cari dan kalahkan orcs yang se
 
 
 ; qst_guardian_party_quest|Isengard's Last Stand
-; qst_quests_end|Quests End
+qst_quests_end|Misi Berakhir
 ; qst_quests_end_text|.

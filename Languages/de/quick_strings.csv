@@ -580,7 +580,7 @@ qstr_Thank_you_Radagast!|Danke, Radagast!
 qstr_The_wizard_Saruman_i|Der Zauberer Saruman ist besiegt und Barad-dur wurde zu Staub zerschmettert, gemeinsam mit seinem Dunklen Herrn! Alle Völker Mittelerdes sind nun frei von der Bedrohung, die beinahe all das, was gut und rein in dieser Welt ist, verschlungen hätte. Der Feind ist vernichtet und der König zurückgekehrt!
 qstr_It_was_a_long_and_bl|Es war ein langer und blutiger Krieg und viele unserer besten Freunde weilen nicht mehr unter uns.
 qstr_There_is_much_to_reg|Es gibt viel zu bedauern und zu betrauern in den folgenden Tagen, und noch mehr wieder aufzubauen und zu heilen. Aber jetzt lasst uns frohlocken mit jenen unserer Freunde, die noch immer bei uns sind, und all das feiern, was wir vollbracht haben  während dieser Letzten Tage des Dritten Zeitalters!
-qstr_Orcs_are_marching_ag|Orcs marschieren gen Helms Klamm.
+qstr_Orcs_are_marching_ag|Orks marschieren gen Helms Klamm.
 qstr_Orcs_are_marching_aga|Orks marschieren gen Edoras.
 qstr_Ah_{playername}_happ|Ah, {playername}, welch glücklicher Zufall, dass wir uns auf diese Weise begegnen! Ich bringe düstere Botschaft aus West-Rohan und Eile ist dringend geboten.
 qstr_What_tidings_do_you_|Welche Neuigkeiten bringst du, Mithrandir? Was kann ich tun?
@@ -613,7 +613,7 @@ qstr_{s1}_has_been_besieg|{s1} wird von {s2} von {s3} belagert.
 qstr_The_forces_of_{s2}_m|Die Truppen von {s2} marschieren nach {s15}!
 qstr_Rohan_capital_moved_|Rohan verlegte seinen Hauptsitz von Edoras in die Hornburg!
 qstr_Dale_capital_moved_f|Thal verlegte seinen Hauptsitz nach Esgaroth!
-qstr_Gundabad_capital_mov|Die Orcs von Gundabad verlegen ihren Hauptsitz in die Orkstadt!
+qstr_Gundabad_capital_mov|Die Orks von Gundabad verlegen ihren Hauptsitz in die Orkstadt!
 qstr_You_have_breached_th|Du hast mit Hilfe der Baumhirten den Ring von Isengart durchbrochen. Während der Schlacht wurde Isengart überflutet, aber der Orthanc steht immer noch unversehrt inmitten des Chaos. Du solltest die Folgen untersuchen.
 qstr_The_hosts_of_{s2}_re|Die Armeen von {s2} ziehen sich in ihre Heimat zurück!
 qstr____Ruins_of_{s1}___|Ruinen von {s1}
@@ -1040,10 +1040,10 @@ qstr_You_retreated_from_b|Du hast dich aus der Schlacht zurückgezogen.
 qstr_{s9}_wants_you_to_fo|{s9} will, dass du seiner Armee bis auf Weiteres folgst.
 qstr_{s8}_of_{s9}|{s8} von {s9}
 qstr__Your_own_banner_fli|Dein eigenes Banner weht über dem Burgtor.
-qstr__You_see_the_banner_|Du siehst das Banner von {s7} über dem Burgtor wehen.
+qstr__You_see_the_banner_| Du siehst das Banner von {s7} über dem Burgtor wehen.
 qstr__This_castle_seems_t|Diese Burg scheint niemandem zu gehören.
 qstr__Your_own_banner_flie|Dein eigenes Banner fliegt über den Stadttoren.
-qstr__You_see_the_banner_o|Du siehst das Banner von {s7} über den Stadttoren.
+qstr__You_see_the_banner_o| Du siehst das Banner von {s7} über den Stadttoren.
 qstr__The_townsfolk_here_|Die Städter hier haben ihre Unabhängigkeit erklärt.
 qstr_Go_to_the_secret_ent|Gehe zum geheimen Eingang nach Moria
 qstr_Search_for_a_secret_|Such nach einem geheimen Eingang nach Moria
@@ -1214,7 +1214,7 @@ qstr_Reinforcements|Verstärkung
 qstr_Refugees_Escaped:_{r|Entkommene Flüchtlingszüge: {reg10} --- Vernichtete Flüchtlingszüge: {reg11}
 qstr_Raider_Parties_Kille|Plünderertrupps vernichtet: {reg12}
 qstr_One_of_the_target_ce|Der Zielort der Flüchtlinge wurde zerstört. Die Flüchtlinge haben sich zerstreut und sind unauffindbar.
-qstr_As_an_Orc_or_a_Dwarf|Als Orc oder Zwerg kannst du die einstellbaren Kamermodi nutzen. Siehe 'Spielkonzepte' für weitere Informationen.
+qstr_As_an_Orc_or_a_Dwarf|Als Ork oder Zwerg kannst du die einstellbaren Kamermodi nutzen. Siehe 'Spielkonzepte' für weitere Informationen.
 qstr_Custom_Camera|The Last Days of the Third Age verfügt über eine angepasste 'Kamera'-Perspektive für kleine Charaktere (Orks und Zwerge). Sie ist einfach zu verwenden, verlangt aber möglicherweise eine gewisse Eingewöhnung.^^Es gibt (zusätzlich zur alten Standardposition) zwei neue Modi: Feste Kameraposition und Freier Modus.^^Die feste Kameraposition ist optimal für alle Rassen, kann aber nicht konfiguriert werden.^^Der freie Modus positioniert den Charakter in der Mitte des Bildschirms. Diese Kamera kann den Wünschen des Spielers angepasst werden. Beim Benutzen eines Bogens oder einer Wurfwaffe springt die Kamera an die Standardposition, um das Zielen zu erleichtern (was anfangs ziemlich schwierig sein kann, aber Gewöhnungssache ist). Sobald das Geschoss losgelassen wurde, springt die Kamera zurück auf die selbst eingestellte Position.^^^Steuerung:^^Drücke gleichzeitig Strg+Ende, um die Kamera zwischen den drei Modi umzuschalten: Standardposition / Feste Position / Freier Modus.^^ Freier Modus - Kamerahöhe (Tilt): Drücke und halte Strg+"Page Up" / "Page Down", um die Kamerahöhe einzustellen.^^Freier Modus - Kameraabstand (Zoom): Drücke und halte Strg+ "+" (Nummernblock) / "-" (Nummernblock), um den Kameraabstand einzustellen.^^Halte zusätzlich die Umschalttaste, um eine feinere Einstellung der Kamerahöhe / des Kameraabstands zu ermöglichen.
 qstr_{reg65?my_Lady:my_Lo|{reg65?meine Herrin:mein Herr}
 qstr_{reg65?My_Lady:My_Lo|{reg65?Meine Herrin:Mein Herr}

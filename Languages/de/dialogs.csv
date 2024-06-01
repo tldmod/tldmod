@@ -405,7 +405,7 @@ dlga_start:beorn_message|{Mein Herr/Meine Herrin}, wir erhielten Nachricht aus {
 dlga_beorn_message:beorn_message2|Dies war kein gewöhnlicher Räubertrupp. Dies war eine Auswahl der Besten des Dunklen Herrschers... dennoch, ihre Anführer sind nicht hier... Sie haben ein Versteck nahe dem Düsterwald und ich muss mich eilen.
 dlga_beorn_message2:beorn_message_end|Ja, wir hörten von dem Schlupfwinkel und wir haben Späher dorthin gesandt. Wir sahen, wie sie das Versteck niederbrannten und rasch in Richtung Mordor aufbrachen... Wenn Ihr erst dorthin gegangen wärt, so hättet ihr uns nicht helfen können. Wir sind Euch wahrlich dankbar für Euren Sieg.
 dlga_beorn_message_end:beorn_message_close|Dann muss ich {s1} Bericht darüber erstatten, was hier geschehen ist. Kehrt heim in Euer Dorf und sendet Späher aus. Es könnte Nachzügler geben.
-dlga_beorn_message_close:close_window|Jawohl, Hauptmann. Wir werden wachsam bleiben und weitere Krieger von den Höfen einziehen. Eurer Sieg heute hat uns allen Mut gemacht.
+dlga_beorn_message_close:close_window|Jawohl, Hauptmann. Wir werden wachsam bleiben und weitere Krieger von den Höfen einziehen. Euer Sieg heute hat uns allen Mut gemacht.
 dlga_lord_give_troops:lord_give_troops_check|Verstärkung? Ich kann immer ein paar mehr Soldaten gebrauchen.
 dlga_lord_give_troops:lord_pretalk|Leider habt Ihr keine Soldaten aus {s14} dabei.
 dlga_lord_give_troops_check:lord_give_troops_check_1|Ich will die Truppenliste sehen...
@@ -992,7 +992,7 @@ dlga_player_upgrade_trolls_take:close_window|Wer bist du, dass du das von mir ve
 dlga_player_upgrade_trolls_take:player_upgrade_trolls_ask|Du hast dich um unsere Sache verdient gemacht. Wir werden diesen Burschen mit Eisen beschirmen! (Kostet {reg21} Resourcenpunkte.)
 dlga_player_upgrade_trolls_take:close_window.1|Deine Trolle sind wie Welpen! Du musst sie erst abrichten, ehe sie Rüstungen tragen können!
 dlga_player_upgrade_trolls_take:close_window.2|Sowas machen wir hier nicht...
-dlga_player_upgrade_trolls_take:close_window.3|Deine Trolle können nichtmal richtig sprechen. Sie gehören nicht zu uns. Nimm sie wieder mit dahin, wo du sie her hast!
+dlga_player_upgrade_trolls_take:close_window.3|Deine Trolle können nicht mal richtig sprechen. Sie gehören nicht zu uns. Nimm sie wieder mit dahin, wo du sie herhast!
 dlga_player_upgrade_trolls_take:player_upgrade_troll_not_enough|Vergiss es.
 dlga_player_upgrade_trolls_ask:player_upgrade_troll_buy_done|Ich werden einen von ihnen ausrüsten.
 dlga_player_upgrade_trolls_ask:player_upgrade_troll_not_enough|Ich verdiene das wohl noch nicht. Ich werde dich nicht damit behelligen.
