@@ -7533,6 +7533,7 @@ game_menus = [
 			(set_jump_mission,"mt_dungeon_crawl_moria_hall"),
             (jump_to_scene, "scn_moria_center"),
 			(assign, "$found_moria_entrance", 1),
+            (assign, "$g_encountered_party_2", "p_town_moria"), #dirty trick to influence troop spawn props
             (change_screen_mission),
 	  ],"Enter Moria."),
 	  

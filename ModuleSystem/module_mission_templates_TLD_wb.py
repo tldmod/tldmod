@@ -4709,6 +4709,28 @@ tld_animated_town_agents = [
             #(display_message, "@start fight"),
         (try_end),
     (try_end),
+    
+    #important NPCs wave at player
+    (try_for_agents, ":agent"),
+        (agent_get_troop_id, ":troop_no", ":agent"),
+        (this_or_next|party_slot_eq, "$current_town", slot_town_merchant, ":troop_no"),
+        (this_or_next|party_slot_eq, "$current_town", slot_town_elder, ":troop_no"),
+        (this_or_next|party_slot_eq, "$current_town", slot_town_weaponsmith, ":troop_no"),
+        (this_or_next|party_slot_eq, "$current_town", slot_town_captain, ":troop_no"),
+        (this_or_next|is_between, ":troop_no", companions_begin, companions_end),
+        (is_between, ":troop_no", new_companions_begin, new_companions_end),
+        (neq, ":troop_no", trp_npc21), #Berta
+        (neq, ":troop_no", trp_npc18), #Turmbathu
+        (agent_get_position, pos5, ":agent"),
+        (get_distance_between_positions, ":dist", pos4, pos5),
+        (lt, ":dist", 2000),
+        (agent_set_look_target_agent, ":agent", ":player_agent"),
+        (store_random_in_range, ":chance", 0, 10),
+        (gt, ":chance", 8),
+        (agent_set_animation, ":agent", "anim_greet_simple"),
+        # (str_store_agent_name, s7, ":agent"),
+        # (display_message, "@{s7} waves at you."),       
+    (try_end),
       ]),        
 ]
 

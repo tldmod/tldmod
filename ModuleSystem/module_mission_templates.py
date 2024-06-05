@@ -6421,17 +6421,24 @@ mission_templates = [ # not used in game
 ]),
 ( "dungeon_crawl_moria_hall",0,-1,
     "Explore around Moria",
-    [(0 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[])
+    [(0 ,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[])
 	],tld_common_wb_muddy_water+[
     (ti_tab_pressed, 0, 0, [],[(question_box,"@Trace back your steps and go back in the open now?")]),
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission)]),
 	(ti_before_mission_start, 0, 0, [], [
         (assign, "$dungeons_in_scene",1), 
         (play_sound, "snd_moria_ambiance", sf_looping), 
+        
+        (team_set_relation, 2, 1, -1),
+        (team_set_relation, 1, 2, -1),
+        
+        #disable guard props
         (replace_scene_props, "spr_troop_archer", "spr_empty"),
         (replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
-        (replace_scene_props, "spr_troop_guard", "spr_troop_civilian"),
-		(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"), # (CppCoder) These are what cause the "unable to finish" bugs.
+        #(replace_scene_props, "spr_troop_guard", "spr_empty"),
+        (replace_scene_props, "spr_troop_civilian", "spr_troop_guard"),
+        (replace_scene_props, "spr_troop_civ_sitting_ground", "spr_empty"),
+		(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"),
 		(replace_scene_props, "spr_troop_human_prisoner", "spr_empty"),
 		(replace_scene_props, "spr_troop_troll", "spr_empty"),
         (try_for_range, ":prop", spr_troop_civ_lying, spr_troop_priest+1), #remove town agents
