@@ -9332,11 +9332,11 @@ game_menus = [
 							(set_jump_mission,"mt_ai_training"),
 							(jump_to_scene,":scene"),
 							(change_screen_mission)]),
-      # ("castle_cheat_dungeon",[(eq, cheat_switch, 1),(eq, 0, 1)], "CHEAT: Prison.",[ # unneeded
-							# (set_jump_mission,"mt_ai_training"),
-							# (party_get_slot, ":castle_scene", "$current_town", slot_town_prison),
-							# (jump_to_scene,":castle_scene"),
-							# (change_screen_mission)]),
+       ("castle_cheat_dungeon",[(eq, cheat_switch, 1),(eq, 0, 1)], "CHEAT: Prison.",[ # unneeded
+							(set_jump_mission,"mt_ai_training"),
+							(party_get_slot, ":castle_scene", "$current_town", slot_town_prison),
+							(jump_to_scene,":castle_scene"),
+							(change_screen_mission)]),
       ("castle_cheat_town_walls",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),], "CHEAT! Town Walls.",[
 							(party_get_slot, ":scene", "$current_town", slot_town_walls),
 							(set_jump_mission,"mt_ai_training"),
@@ -9376,7 +9376,7 @@ game_menus = [
       #("town_cheat_alley",[(eq, 0, 1),], "CHEAT",[]),
 	  ("castle_cheat_interior",[(eq, 0, 1),], "CHEAT",[]),
 	  ("castle_cheat_town_exterior",[(eq, 0, 1),], "CHEAT",[]),
-	  # ("castle_cheat_dungeon",[(eq, 0, 1),], "CHEAT",[]),
+	  ("castle_cheat_dungeon",[(eq, 0, 1),], "CHEAT",[]),
 	  ("castle_cheat_town_walls",[(eq, 0, 1),], "CHEAT",[]),
 	  ("cheat_town_start_siege",[(eq, 0, 1),], "CHEAT",[]),
 	  # ("center_reports",[(eq, 0, 1),], "CHEAT",[]),
