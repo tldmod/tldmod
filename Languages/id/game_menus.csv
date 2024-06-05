@@ -301,20 +301,22 @@ mno_aw_chamber_door|Buka Pintu.
 mno_trade_with_arms_merchant|Kunjungi {s40}.
 mno_trade_with_horse_merchant|Kunjungi {s41}.
 mno_town_prison_door|Ke Tempat Latihan
-mno_dungeon_enter|Cari tombak yang hilang di dalam pegunungan.
-mno_dungeon_enter_door|Buka Pintu.
-mno_dwarven_warehouse|Kunjungi Gudang Kurcaci
-mno_dwarven_warehouse_door|Masuki Gudang Kurcaci
+; mno_talk_to_healer|Speak with {s40}.
 mno_talk_to_castle_commander|Kunjungi Barak {s61}.
 mno_speak_with_elder|Bicaralah dengan {s6}.
+; mno_town_ask|Ask around for persons of import...
 mno_isengard_underground|Pergi ke gua bawah tanah.
 mno_isengard_underground_door|Pergi ke gua bawah tanah
 mno_tirith_toplevel|Naik ke tingkat teratas.
 mno_tirith_toplevel_door|Pergi ke Citadel
 mno_erebor_gates|Kunjungi Gerbang Besar.
 mno_erebor_gates_door|Pergi ke Gerbang Besar
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|Tinggalkan...
 mno_town_leave_door|Tinggalkan Area
+mno_town_find_NPCs_cont|Lakukan.
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 menu_player_initiated_siege_result|Anda menyerang pusat ini di bawah bendera {s2}.
 menu_disembark|Apakah Anda ingin turun?
 mno_disembark_yes|Ya

@@ -57,7 +57,7 @@ dlga_hobbit_pippin_talk_met:close_window|Witam, panie Pippin.
 ; dlga_treebeard_isengard_3:close_window|Ho, hmm, I owe you great thanks. I had not expected any help from others, and it is good to learn that our Last March may not end quite so badly, after all! Since the tree-killer is dealt with, we should now be able to keep Rohan's northern marches safe, for a while.
 ; dlga_treebeard_isengard_3:close_window.1|Hmm? Ho, hmm… ah. So, you have come all the way from Rohan, have you? Hmm. I have heard some news from the south, yes. Good news, news to gladden all hearts. I have good will to Theoden King, and I am glad he was aided by the likes of you in his hour of peril, hmm! We have managed here well enough, and now we Ents will see to it that Saruman does not set foot beyond Isengard, without our leave. The Isen flows well again, and soon I hope the water will once more be fit to drink. Ha, hm, I feel a song coming on. A song of the old days… the old trees I knew…
 ; dlga_start:ent_encounter|Hrooom! What do you want?
-; dlga_ent_encounter:close_window|Hail, tree shepherd! Thank you for keeping these marshes safe. I will not stand in your way.
+; dlga_ent_encounter:close_window|Hail, tree shepherd! Thank you for keeping these marches safe. I will not stand in your way.
 dlga_start:treebeard_introduce_1|(Dociera do ciebie, że tak niezwykłego stworzenia jeszcze nigdy nie spotkał{e/a}ś. Jest bardzo wysokie, o kończynach pokrytych korą, niby skórą i liściastymi włosami. Część ciała pokrywa mech. Ale w tym momencie zauważasz oczy. Ich głębia przeraża cię, bije od nich powaga, jednocześnie są niezwykle przenikliwe. Wyglądają na brązowe, połączone zielonym światłem, jakby za nimi rozciągała się studnia, wypełniona wiekami pamięci oraz myśli. Ale na powierzchni tych oczu błyszczy teraźnieszość... niczym słońce połyskujące na liściach ogromnego drzewa, albo falach bardzo głębokiego jeziora.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(Pragniesz coś powiedzieć ale nagły przypływ duszności nie pozwala na choćby słowo... z niemal desperacją zaczerpujesz powietrza, czując przy tym na sobie świdrujący wzrok wielkiego drzewopodobnego stwora. Inne wielkie drzewo stwory również ci się przyglądają, jakby spodziewając twych słów...)
 dlga_treebeard_introduce_2:treebeard_introduce_3|Przepraszam za najście... Jestem strudzonym wędrowcem szukającym schronienia... moje imię brzmi {playername}. Mogę zapytać kim jesteś?
@@ -658,7 +658,6 @@ dlga_castle_guard_intro_2:castle_guard_intro_2|Możesz wejść, ale wpierw zosta
 dlga_castle_guard_intro_2:close_window|Proszę, weź moją broń. Wchodzę.
 dlga_castle_guard_intro_2:castle_guard_intro_2b|Nie, nikomu nie oddaję broni.
 dlga_castle_guard_intro_2b:close_window|Więc nie możesz wejść.
-dlga_start:castle_gate_guard_talk|Czego chcesz?
 dlga_castle_gate_guard_pretalk:castle_gate_guard_talk|Tak?
 dlga_castle_gate_guard_talk:castle_gate_open|Potrzebujemy schronienia na noc. Wpuścisz nas?
 dlga_castle_gate_guard_talk:request_meeting_castle_lord|IChcę rozmawiać z panem zamku.
@@ -723,8 +722,9 @@ dlga_kill_scout_8:close_window|Jak chcecie, jak chcecie. W ten sposób!
 dlga_woodelf_help_1:woodelf_help_2.1|Nigdy wcześniej nie widziałem tak dużego orka. Paskudne istoty. Nie obawiaj się. Jestem żołnierzem w nadchodzącej wojnie, którą wszyscy wyczuwaliśmy.   
 dlga_woodelf_help_2:woodelf_help_3.1|Naprawdę? Oczywiście, że jesteś! Widziałem na własnie oczy, że jesteś zdolnym wojownikiem. Mam dzisiaj szczęście, więc powinienem z tego skorzystać i udać się do mojej wioski aby ostrzec moich ludzi przed tymi plugawymi bestiami.
 dlga_woodelf_help_3:close_window|Bezpiecznej podróży Torbal. Jestem pewny, że jeszcze się spotkamy.
-dlga_healers_ask:healer_who|Co robisz?. .
-dlga_healers_ask:healer_wound_ask|Moi wojownicy i ja mamy rany, które wymagają więcej czasu niż tylko na gojenie się. Czy potrafisz goić nasze rany?
+dlga_healers_meet:healer_who|Co robisz?. .
+; dlga_healers_meet:healers_ask|I need your help.
+; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
 dlga_healers_ask:healer_injured_ask|Moi wojownicy i ja jesteśmy ranni i nie mamy czasu, aby czekać na ich uzdrowienie. Czy możesz udzielić pomocy?
 dlga_healers_ask:close_window|Zamknij.
 dlga_healers_injured_check:healers_injured_heal|Tak, prosimy o kontakt.
@@ -741,8 +741,8 @@ dlga_sad_elf_2:sad_elf_choice|Ach, opowieści z morza. A z zewnątrz. Mój {lord
 dlga_sad_elf_choice:sad_elf_leave|Czuję wasz ból. Zrobił pan swój udział w tej wojnie. Możesz odejść.
 dlga_sad_elf_choice:sad_elf_no|Elfy nie mogą opuścić Śródziemia w cień. Ta wojna nie toczy się o nas samych i każdy z nas będzie musiał odegrać swoją rolę. Nie mogę udzielić panu odejścia. [Leadership Check]
 dlga_sad_elf_leave:close_window|Dziękuję wam, mój {lord/lady}!^^Na Morze, Na Morze! Białe mewy płaczą,^Wiatr wieje, a biała piana leci. ^Zachód, na zachód gdzie, okrągłe słońce pada.
-dlga_start:close_window.16|Popełniasz poważny błąd walcząc przeciwko nam.
-dlga_start:close_window.17|Znów ratujesz nasze tyłki, {playername}! Zaiste, jesteś najlepsz{ym/ą} z przyjaciół. {s43}
+dlga_start:close_window.15|Popełniasz poważny błąd walcząc przeciwko nam.
+dlga_start:close_window.16|Znów ratujesz nasze tyłki, {playername}! Zaiste, jesteś najlepsz{ym/ą} z przyjaciół. {s43}
 dlga_start:ally_thanks_meet|Chyba jak dotąd nie mieliśmy przyjemności się spotkać. Uratował{eś/aś} mi życie, a ja nadal nie znam twego imienia...
 dlga_start:ally_thanks_meet.1|Twoja pomoc była nieoceniona, nieznajom{y/a}. Jestem {s1}. Mogę poznać twe imię?
 dlga_start:ally_thanks_meet.2|Dzięki za pomoc, nieznajom{y/a}.  Nie spotkaliśmy się wcześniej, prawda? Jak cię zwą?
@@ -750,13 +750,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|Zwą mnie {playername}.
 dlga_ally_thanks_meet_2:close_window|Naprawdę miło mi cię poznać, {playername}. Jestem {s1} i na zawsze pozostanę twoim dłużnikiem. Jeśli kiedykolwiek będę ci mógł jakoś pomóc, po prostu daj mi znać...
 dlga_ally_thanks_meet_2:close_window.1|Miło cię poznać, {playername}. Jestem twoim dozgonnym dłużnikiem za to, co tu zrobił{eś/aś}. Mam nadzieję, że kiedyś znajdę sposób, by móc ci się odwdzięczyć.
 dlga_ally_thanks_meet_2:close_window.2|Miło cię poznać, {playername}. Jestem {s1}. Dzięki za pomoc i mam nadzieję, że się jeszcze spotkamy.
-dlga_start:close_window.18|Zjawił{eś/aś} się w samą porę! {playername}, masz moje szczere podziękowania! {s43}
-dlga_start:close_window.19|Zjawił{eś/aś} się w porę, {playername}. Dzięki! Nie zapomnę twej pomocy. {s43}
-dlga_start:close_window.20|Dobrze cię tu widzieć, {playername}. {s43}
-dlga_start:close_window.21|{s43}
-dlga_start:close_window.24|Dzięki za pomoc, Pani{e/}. Sprawa nie wyglądała najlepiej, ale wtedy ty się pojawił{eś/aś} i wszystko się odmieniło.
-dlga_start:close_window.25|Dzięki za pomoc. 
-dlga_start:close_window.26|Precz ty podły żebraku.
+dlga_start:close_window.17|Zjawił{eś/aś} się w samą porę! {playername}, masz moje szczere podziękowania! {s43}
+dlga_start:close_window.18|Zjawił{eś/aś} się w porę, {playername}. Dzięki! Nie zapomnę twej pomocy. {s43}
+dlga_start:close_window.19|Dobrze cię tu widzieć, {playername}. {s43}
+dlga_start:close_window.20|{s43}
+dlga_start:close_window.23|Dzięki za pomoc, Pani{e/}. Sprawa nie wyglądała najlepiej, ale wtedy ty się pojawił{eś/aś} i wszystko się odmieniło.
+dlga_start:close_window.24|Dzięki za pomoc. 
+dlga_start:close_window.25|Precz ty podły żebraku.
 dlga_start:freed_hero_answer|Jestem twym dłużnikiem za wyswobodzenie mnie, {przyjacielu/miła damo}.
 dlga_freed_hero_answer:freed_hero_answer_1|Nigdzie nie pójdziesz. Zostaniesz moim więźniem!
 dlga_freed_hero_answer_1:close_window|Ach, czy mój los nigdy się nie odmieni?
@@ -845,7 +845,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|Łuki.
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|Broń miotana.
 dlga_trainer_choose_weapon_player:trainer_pretalk|Żadna, zmienił{e/a} zdanie.
 dlga_trainer_begin_training:close_window|Świetnie. Gdy skończysz trening, wróć ze mną porozmawiać.
-dlga_start:close_window.27|Spadaj, zanim stracę cierpliwość, ty ohydny żebraku!
+dlga_start:close_window.26|Spadaj, zanim stracę cierpliwość, ty ohydny żebraku!
 dlga_start:mayor_begin|Dzień dobry, Mój Panie.
 dlga_start:mayor_talk|Witaj nieznajom{y/a}, wydajesz się być now{y/a} w mieście {s9}. Jestem tutaj zarządcą.
 dlga_start:mayor_begin.1|Dzień dobry, {playername}.
@@ -931,8 +931,8 @@ dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|Wysyłam transport
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|W porządku. Odeskortuję transport zaopatrzenia.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Obawiam się, że nie mam ze sobą aż tylu żołnierzy.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Przykro mi. Teraz nie mogę tego zrobić.
-dlga_start:close_window.28|Cóż, prawie dotarliśmy do {s21}. Resztę drogi możemy przebyć sami. Oto twoja zapłata... {reg14} PP. Dzięki za odeskortowanie nas. Powodzenia.
-dlga_start:close_window.29|Prawie dotarliśmy do {s21}. Dalej już sobie poradzimy. Dzięki za eskortę.^[earned {reg14} Resource Points of {s14}]
+dlga_start:close_window.27|Cóż, prawie dotarliśmy do {s21}. Resztę drogi możemy przebyć sami. Oto twoja zapłata... {reg14} PP. Dzięki za odeskortowanie nas. Powodzenia.
+dlga_start:close_window.28|Prawie dotarliśmy do {s21}. Dalej już sobie poradzimy. Dzięki za eskortę.^[earned {reg14} Resource Points of {s14}]
 dlga_start:merchant_caravan_intro_1|Bądź pozdrowion{y/a}. To pewnie ty jesteś naszą eskortą?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Tak. Jestem {playername}. Mam was eskortować do {s1}.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Cóż, dobrze wiedzieć, że nie będziemy podróżowali sami. Co mamy robić?
@@ -982,7 +982,7 @@ dlga_prisoner_chat_3:prisoner_slaughter|Będziesz naszym następnym posiłkiem! 
 dlga_prisoner_chat_4:close_window|Taaa, wyglądam na kogoś kto byłby w stanie? Odwal się!
 dlga_prisoner_slaughter:prisoner_slaughter_02|Zapłacisz mi za to!
 dlga_prisoner_slaughter:close_window|Pewnego dnia zapłacisz.... Aaa-ghgllr!...
-dlga_start:close_window.30|Spadaj, zanim stracę cierpliwość, ty ohydny żebraku!
+dlga_start:close_window.29|Spadaj, zanim stracę cierpliwość, ty ohydny żebraku!
 dlga_start:town_merchant_talk|Witam Pan{ie/i}. Czym mogę dziś służyć?
 dlga_start:town_merchant_talk.1|Witam. W czym mogę służyć?
 dlga_town_merchant_talk:trade_requested_weapons|Chcę zapytać o nowy ekwipunek. Pokaż mi, co masz na stanie.
@@ -1001,6 +1001,7 @@ dlga_player_upgrade_troll_not_enough:close_window|Marnujesz mój czas.
 dlga_player_upgrade_troll_buy_done:close_window|Tak, tak, chodź tu. Tak, ty...
 dlga_trade_requested_weapons:merchant_trade|Ach, tak, Pani{e/}. Lepszego ekwipunku nie znajdziesz nigdzie indziej.
 dlga_trade_requested_horse:merchant_trade|Ostry uchwyt do jazdy i zabijania oraz mięso, którym można je karmić! Nie znajdziesz lepszych bestii niż te nigdzie indziej.
+; dlga_trade_requested_horse:merchant_trade.1|You have a fine eye for horses, {sir/madam}. You won't find better beasts than these anywhere else.
 dlga_merchant_trade:town_merchant_talk|Coś jeszcze?
 dlga_town_merchant_talk:merchant_gossip|Powiedz, o czym ludzie ostatnio mówią?
 dlga_town_merchant_talk:close_window|Do widzenia.
@@ -1021,14 +1022,14 @@ dlga_start:player_castle_guard_talk|Tak, Pani{e/}?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|Jak tam warta, żołnierzu?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Spokojnie, Pani{e/}. Na razie nic godnego uwagi.
 dlga_player_castle_guard_talk_3:close_window|Dobrze. Miej oczy szeroko otwarte.
-dlga_start:close_window.31|Pilnuj swoich manier, a nie będziesz miał{/a} kłopotów.
-dlga_start:close_window.32|Nie wolno nam rozmawiać, gdy jesteśmy na straży, {Panie/Pani}.
+dlga_start:close_window.30|Pilnuj swoich manier, a nie będziesz miał{/a} kłopotów.
+dlga_start:close_window.31|Nie wolno nam rozmawiać, gdy jesteśmy na straży, {Panie/Pani}.
 dlga_start:hall_guard_easter_egg|Ach, dopiero minęła północ. Ostatnio zdarzyło się co dziwnego - chcesz o tym usłyszeć?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Tak, mów dalej proszę.
 dlga_hall_guard_easter_egg:close_window|Nie, nie obchodzą mnie plotki.
 dlga_hall_guard_easter_egg_scene:close_window|Cóż.. niezwykła grupa ostatnio się tutaj zatrzymała: człowiek, krasnolud i elf...
 dlga_start:hall_guard_talk|Co rozkażesz, {Mój Panie/Moja Pani}?
-dlga_start:close_window.33|Opóźniasz mnie! Czarodzieje nigdy się nie spóźniają!
+dlga_start:close_window.32|Opóźniasz mnie! Czarodzieje nigdy się nie spóźniają!
 dlga_hall_guard_talk:hall_guard_duty|Zostań na posterunku i daj mi znać, jeśli ktoś będzie chciał się ze mną widzieć.
 dlga_hall_guard_duty:close_window|Tak, {Mój Panie/Moja Pani}. Jak sobie życzysz.
 dlga_hall_guard_talk:hall_guard_arrest|Chcę, żeby ten człowiek został niezwłocznie aresztowany!
@@ -1068,8 +1069,11 @@ dlga_party_reinforce:party_reinforce_end.2|Niestety nie masz żadnych żołnierz
 dlga_party_reinforce_check:party_reinforce_check_1|Pozwól, że rzucę okiem na spis... 
 dlga_party_reinforce_check_1:party_reinforce_end|Więc zmienił{e/a}ś zdanie...^Rozumiem.
 dlga_party_reinforce_check_1:party_reinforce_end.1|Ci żołnierze do niczego się nie nadają. ^Zabierz ich z powrotem.
-dlga_start:close_window.34|Przez ciebie się spóźnię. Czarodzieje nigdy się nie spóźniają!
-dlga_start:close_window.35|To... przyzywaaaaaaaaa...
+dlga_start:close_window.33|Przez ciebie się spóźnię. Czarodzieje nigdy się nie spóźniają!
+dlga_start:close_window.34|To... przyzywaaaaaaaaa...
+dlga_start:secret_guardian_let_through|Stać!
+; dlga_secret_guardian_let_through:secret_guardian_let_through1|I am {playername}, {s24}. Let me through!
+; dlga_secret_guardian_let_through1:close_window|Yes commander, you may pass.
 dlga_start:close_window.36|Hej, ty. Jesteś twardszy niż sądziłem. To dobrze, ale nie możesz odpierać ataków tym badylem. Weź to.
 dlga_start:ori_choose_1|Nieźle walczysz, przyjacielu. Nie wiem, jak Ci się udało przetrwać tak długo. Pamiętam, że dołączyłeś do nas całkiem niedawno... zanim... Balin upadł... Skąd pochodzisz?
 dlga_ori_choose_1:ori_choose_finish|Byłem poganiaczem bydła wysłanym w okolice Niedźwiedziego Ludu. Słyszałem o oddziale Balina i postanowiłem dołączyć.

@@ -1,7 +1,7 @@
 ui_at_learning_limit|(límite de aprendizaje alcanzado para esta raza)
 ui_not_enough_skill_points_to_learn|(puntos de habilidad insuficientes para aprender)
 ui_not_enough_attributetype_to_learn_this_skill|(%s insuficiente para aprender esta habilidad)
-ui_explanation_agility|Agilidad: Cada punto proporciona cinco puntos de armas e incrementa la velocidad del arma en un 0.5%. Las siguientes habilidades no pueden desarrollarse por encima de 1/3 de Agilidad: Maestría con armas, Escudo, Atletismo, Cabalgar, Arquería montada, Saqueo.
+ui_explanation_agility|Agilidad: Cada punto proporciona cinco puntos de armas e incrementa la velocidad del arma en un 0.5%. Las siguientes habilidades no pueden desarrollarse por encima de 1/3 de la Agilidad: Maestría con armas, Escudo, Atletismo, Cabalgar, Arquería montada, Saqueo.
 ui_retreated_battle|%s ha huido del campo de batalla.
 ui_riding_skill_not_adequate_to_mount|(Habilidad de cabalgar demasiado baja)
 ui_camp|Acciones
@@ -57,7 +57,7 @@ ui_crouch|Agacharse
 ui_are_you_sure_you_want_to_import_the_character|¿Seguro que quieres importar el personaje?
 ui_explanation_strength|Fuerza: Cada punto añade +1 a los puntos de vida. Las siguientes habilidades no pueden desarrollarse por encima de 1/3 de Fuerza: Piel curtida, Potencia de Golpe, Lanzamiento, Arquería.
 ui_explanation_intelligence|Inteligencia: Cada punto de inteligencia genera inmediatamente otro punto extra de habilidad. Las siguientes habilidades no pueden desarrollarse por encima de 1/3 de la Inteligencia: Instrucción, Rastrear, Tácticas, Busca-rutas, Avistamiento, Administrar inventario, Tratamiento de heridas, Cirugía, Primeros auxilios.
-ui_explanation_charisma|Carisma: Mejora tu relación con personas y facciones. Cada punto aumenta el tamaño máximo de tu grupo en +1. Las siguientes habilidades no pueden desarrollarse mas allá de 1/3 del Carisma: Manejo de prisioneros, Dominio de las tierras salvajes, Liderazgo, Comercio.
+ui_explanation_charisma|Carisma: Mejora tu relación con personas y facciones. Cada punto aumenta el tamaño máximo de tu grupo en +1 (0,5 en el caso de los compañeros). Las siguientes habilidades no pueden desarrollarse mas allá de 1/3 del Carisma: Manejo de prisioneros, Dominio de las tierras salvajes, Liderazgo, Comercio.
 ui_delivered_number_damage|Haces %d puntos de daño.
 ui_mission_losses_killed|Muertos :
 ui_party_losses|%s  : %d heridos--- %d muertos de %d.
@@ -143,6 +143,6 @@ ui_return|Volver
 ui_factions|Facciones
 ui_troop_upgrades|Mejoras de tropas
 ui_hdr_mode|Modo HDR:
-ui_autoexpore|Autoexposición (poner a SÍ al activar HDR)
+ui_autoexpore|Autoexposición (se recomienda activar si HDR está activado)
 ui_saving_policy_realistic|Guardar obligatoriamente al salir (no se recomienda)
-ui_saving_policy_nonrealistic|Salir sin guardar (Recomendado, y así guardar en múltiples ranuras)
+ui_saving_policy_nonrealistic|Salir sin guardar (recomendado, mantén varias partidas guardadas)

@@ -57,7 +57,7 @@ ui_crouch|Drepnúť si
 ui_are_you_sure_you_want_to_import_the_character|Si si istý, že chceš previesť túto postavu?
 ui_explanation_strength|Sila: Každý bod ti pridáva +1 bodov života. Následujúce schopnosti nemôžu byť vylepšené nad 1/3 hodnoty Sily: Valivuk, Mocný úder, Mocný vrh, Sila napnutia tetivy
 ui_explanation_intelligence|Inteligencia: Každý bod inteligencie ti ihneď dá ďalší bod skúseností a mierne navýši tvoj zisk XP pri rôznych činnostiach. Nasledujúce schopnosti nemôžu byť vylepšené nad 1/3 hodnotu Inteligencie: Tréner, Stopovanie, Taktika, Cestovanie, Ostražitosť, Inventár, Liečenie zranení, Chirurgia a Prvá pomoc.
-; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
+; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|Spôsobil si %d poškodenia.
 ui_mission_losses_killed|zabitých :
 ui_party_losses|%s : %d  ranených --- %d zabitých z %d.

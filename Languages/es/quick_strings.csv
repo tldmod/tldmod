@@ -98,7 +98,6 @@ qstr_Campaign_difficulty:|Dificultad de la campaña:
 qstr_Hard|Difícil
 qstr_Default|Por defecto
 qstr_Easy|Fácil
-qstr_Town_NPCs_Always_Acc|PNJs de las ciudades siempre accesibles desde el menú:  
 qstr_Cutscenes:__|Cinemáticas:  
 qstr_Injuries_for_compani|Compañeros pueden sufrir heridas:  
 qstr_Permanent_death_for_|Líderes y compañeros pueden morir permanentemente:  
@@ -413,7 +412,7 @@ qstr_Death_to_the_trespas|¡Muerte a los intrusos en las tierras de {s16}!
 qstr_CHARGE!_Let_s_clear_|¡CARGAD! ¡Borremos de la faz de {s17} a esa escoría de {s19} de {s18}!
 qstr_{s14}Now_that_{s19}s|{s14} ¡Ahroa la escoria de {s19} probará la furia de los Beórnidas!
 qstr_Attack!|¡Al ataque!
-; qstr_You_are_attacked_by_|You are attacked by a group of bandits!
+qstr_You_are_attacked_by_|¡Te ataca un grupo de bandidos!
 qstr_Holding|Manteniendo posición
 qstr_Following|Siguiendo
 qstr_Charging|Cargando
@@ -564,7 +563,7 @@ qstr_What_should_I_do?|¿Qué debo hacer?
 qstr_Find_{s3}_s_whereabo|Encuentra a {s3} dondequiera que esté y ponte a sus órdenes. ¡Buena suerte!
 qstr_Good_to_see_the_Shad|Es bueno ver que la Sombra todavía no ha conseguido derrotarte, {playername}.
 qstr_You_are_the_one_they|Tu eres aquel al que llaman Gandalf o Mithrandir.
-; qstr_You_are_the_one_they_|You are the one they call Radagast.
+qstr_You_are_the_one_they_|Eres ese al que llaman Radagast.
 qstr_That_is_what_some_ca|Así me llaman algunos. En otros tiempos también tuve otros nombres, pero a menos que la Oscuridad sea detenida, puede que no quede nadie para llamarme de ninguna manera.
 qstr_What_do_you_mean?|¿Qué quieres decir?
 qstr_In_spite_of_their_va|A pesar de su valiente resistencia, {s3} ha sido arrollado por las fuerzas del mal. La gente de {s3} está dispersa y su líder {s4} ha caído.
@@ -576,7 +575,7 @@ qstr_What_do_you_want_of_|¿Qué es lo que quieres de mi, anciano?
 qstr_Just_know_that_a_Daw|Sólo quiero que sepas que un nuevo Amanecer se acerca. Es inevitable. Y en caso de que vivas para verlo, pregúntate qué podrás decir en tu favor cuando llegue el momento.
 qstr_Well_met_{playername|{Bienhallado/Bienhallada}, {playername}, {s24}. No me equivoqué al poner mi confianza en ti. El poder de las fuerzas de la Sombra ha sido quebrado, y tus esfuerzos han sido una parte fundamental de su derrota.
 qstr_Thank_you_Mithrandir|¡Gracias, Mithrandir!
-; qstr_Thank_you_Radagast!|Thank you, Radagast!
+qstr_Thank_you_Radagast!|¡Gracias, Radagast!
 qstr_The_wizard_Saruman_i|¡El mago Saruman ha caído y Barad Dûr ha sido reducida a polvo junto con su Señor Oscuro! Los pueblos de la Tierra Media han sido liberados de la amenaza que casi consumió todo el bien y la pureza de este mundo. ¡El Enemigo ha sido vencido y el Rey ha regresado!
 qstr_It_was_a_long_and_bl|Ha sido una guerra larga y sangrienta, muchos de nuestros amigos ya no están entre nosotros.
 qstr_There_is_much_to_reg|Hay mucho que lamentar y llorar, y más aún que reconstruir y reparar en los días venideros. Pero por ahora, alegrémonos con aquellos de nuestros amigos que aún siguen con nosotros y celebremos todo lo conseguido en Los Últimos Días de la Tercera Edad.
@@ -745,6 +744,7 @@ qstr_A_thunderstorm_from_|Una tormenta procedente de las Montañas Nubladas se d
 qstr_A_thunderstorm_from_t|Una tormenta procedente de las Montañas Nubladas se desata sobre el campo de batalla. Los arqueros encuentran difícil disparar con este mal tiempo.
 qstr_A_poisonous_fog_from|Una niebla venenosa procedente de Dol Guldur flota en el campo de batalla. Tus tropas y tú os sentís debilitados. Hay miedo entre los soldados.
 qstr_A_poisonous_fog_from_|Una niebla venenosa procedente de Dol Guldur flota en el campo de batalla.  Tú no notas ninguna diferencia, pero puedes oír el sufrimiento de tus enemigos y oler su miedo.
+qstr_{s2}_attacked|{s2} ha atacado
 qstr_You_shapeshift_into_|¡Te has convertido en oso!
 qstr_You_got_{reg1}_exper|Ganas %d puntos de experiencia al convertirte en oso.
 qstr_Your_ability_to_chan|Has conseguido despertar tu habilidad innata como bailarín de piel, a partir de ahora podrás recorrer tu salvaje camino tanto como hombre como oso.
@@ -765,13 +765,27 @@ qstr_Fixed_Camera___Right|Cámara: hombro derecho
 qstr_Fixed_Camera___Left_|Cámara fija: hombro izquierdo
 qstr_Fixed_Camera___Cente|Cámara fija - Centrada
 qstr_Shield_is_too_big_to|El escudo es demasiado grande como para usarlo con un arco.
+qstr_You_happen_upon_an_O|Te encuentras ante una vieja hostería. Mientras inspeccionas el desgastado edificio de piedra, reparas en un grupo de muchachos jugando entre las columnas, los únicos niños que has visto en  Minas Tirith.  Uno de ellos te saluda y tú le devuelves el gesto. Tu corazón se llena de alegría y olvidas, por un breve instante, los pesares de la guerra.
+qstr_You_look_through_Hen|Miras a través de la cortina de agua de Henneth Annûn, la Ventana del Sol Poniente. La hermosa vista restaura tu fe en el Oeste y enlos Poderes de más allá.
+qstr_As_you_follow_the_st|A medida que subes por la recta escalera tallada en la roca de la montaña, y después por otra, más sinuosa, que se aferra a la pared del acantilado, te das cuenta de que no deberías seguir adelante por este camino, si es que aprecias tu vida.
+qstr_You_are_unable_to_en|Eres incapaz de soportar los horrores de la Ciudad Muerta.
+qstr_You_endure_the_horro|Logras sobreponerte a los horrores de la Ciudad Muerta y explorar sus círculos interiores. Los Centinelas Silenciosos reconocen tu osadía y no se oponen a tu voluntad (ganas 1 punto de Carisma).
+qstr_You_are_unable_to_end|Eres incapaz de soportar los horrores del templo.
+qstr_You_endure_the_horror|Te sobrepones al horror de los atroces rituales perpetrados en este lugar sagrado. Las crueles gentes de Rhun reconocen la fortaleza que has demostrado y algunos de sus más formidables guerreros deciden unirse a tu compañía.
+qstr_You_find_yourself_in|Te encuentras en una profunda caverna. Los pelos de tu nuca se erizan mientras miras a tu alrededor, y empiezas a notar una extraña sensación de peligro. Este no es lugar para ti. Te retiras cautelosamente, gruñendo. Cuando la Sombra haya cubierto el mundo de arriba, entonces tal vez puedas regresar aquí sin temor...
+qstr_You_find_yourself_in_|Te encuentras en una profunda caverna. Los pelos de tu nuca se erizan mientras miras a tu alrededor, y empiezas a notar una extraña sensación de peligro. Alzando tu arma, lanzas un desafío a cualquier enemigo invisible que habite este paraje. Puede que antaño este fuera un lugar lleno de maravillas..., pero ahora, con el poder que has obtenido, te das cuenta de que no tienes nada que temer del pasado olvidado de un mundo en ruinas.
+qstr_With_trepidation_you|Con vacilación, te asomas al pilón de plata. El agua te muestra visiones horribles; sangre y terror y dolor. Retrocedes instintivamente..., pero entonces las visiones se desvanecen y en su lugar ves un despejado cielo nocturno, con lo que parece ser un barco de plata flotando a través del firmamento. Una sensación de calma se apodera de ti. Aún hay esperanza.
+qstr_The_Lady_s_garden_li|El jardín de la Dama es un remanso de paz bajo la brillante luz del día. No notas nada fuera de lo normal...
+qstr_You_kneel_to_pay_you|Te arrodillas para presentar tus respetos a los soberanos caídos de este hermoso reino. A tu lado, una doncella guerrera de Rohan entona un cántico. "Ne sceal hearpan sweg wigend weccean; ne winfaet gylden guma sceal healdan!". Tu corazón se estremece al oír sus palabras.
+qstr_You_wonder_about_the|Te preguntas qué serán esas dos filas de túmulos en frente de las puertas, pero como simple {s24} que eres, no comprendes su significado.
+qstr_Halt!_You_are_not_al|¡Alto! ¡No tienes permiso para entrar aquí!
+qstr_Halt!_You_are_not_all|¡Alto! ¡No puedes entrar aquí sin el permiso de la Dama!
 qstr_While_visiting_towns|Mientras visitas los diferentes asentamientos, ciudades y campamentos, puedes hablar con la gente que veas deambulando por sus calles. Los miembros de las diferentes facciones tendrán cosas diferentes que decir: algunos compartirán sus pensamientos, otros compartirán rumores. En ambos casos, estos comentarios pueden ayudarte a comprender mejor la cultura y la facción  del personaje, o pueden contener pistas para encontrar lugares secretos, o trucos y consejos para viajar por las tierras salvajes y  y luchar en la Guerra del Anillo.
 qstr_Cannot_leave_now.|No puedes abandonar ahora.
 qstr_You_have_found_the_l|Has encontrado al herrero local...
 qstr_You_have_found_the_lo|Has encontrado a la autoridad local...
 qstr_You_have_found_the_loc|Has encontrado el almacén local...
 qstr_You_have_found_the_c|Has encontrado al capitán de la guarnición.
-qstr_You_look_through_Hen|Miras a través de la cortina de agua de Henneth Annûn, la Ventana del Sol Poniente. La hermosa vista restaura tu fe en el Oeste y enlos Poderes de más allá.
 qstr__cancelled_the_{reg1|(cancelados los {reg10} pts. de exp. ganados por matar prisioneros)
 qstr_Forming_ranks.|Formando filas.
 qstr_{reg2?You:Your_mount|¡{reg2?Recibes:Tu montura recibe} {reg1} de daño extra!
@@ -1082,6 +1096,13 @@ qstr_the_Hall| los Salones
 qstr_the_Great_Chamber_of| la Gran Cámara de Thrór
 qstr_Stay_indoors_for_som|Quedarse aquí durante algún tiempo ({reg1} Puntos de Recursos por noche)
 qstr_Camp_outside_for_som|Acampar fuera durante algún tiempo (sin coste)
+qstr_As_you_enter_the_vas|Cuando penetras en las vastas cavernas situadas bajo el círculo de Isengard, donde millares de orcos trabajan para pertrechar a las crecientes legiones de la Mano Blanca, aumenta tu confianza en el alzamiento de un nuevo poder y en el fin del viejo mundo.
+qstr_You_have_found_the_G|Has encontrado las Cavernas Centelleantes, una de las maravillas del mundo septentrional.
+qstr_As_the_party_member_|Como miembro del grupo con la mejor habilidad de Comercio ({reg2}), {reg3?calculas:{s3} calcula} que tardareis unas {reg4} horas en encontrar a las personas más notables del lugar.  [Cuesta {reg5}/{reg6} puntos de influencia]
+qstr_You_have_already_fou|Ya has encontrado a todas las personas de interés.
+qstr_the_captain_of_the_g|el capitán de la guarnición y la autoridad civil.
+qstr_and_the_captain_of_t|y el capitán de la guarnición. Como este lugar ha sido conquistado hace poco, no se ha establecido una autoridad civil.
+qstr_You_also_heard_of_a_|También has oído hablar de un sanador, pero tendrás que encontrarlo por tu cuenta.
 qstr_{s4}_s_scouts_have_s|Los exploradores de {s4}' han sido testigos y han informado de tu fracaso. Has traido la deshonra sobre {s4} y la responsabilidad de este fracaso es solo tuya.
 qstr_{s1}_s_Ship|Barco de {s1}
 qstr_Time_passes...|El tiempo pasa...
@@ -1623,11 +1644,12 @@ qstr_Our_Golden_Valley_gi|Nuestro Valle de Oro nos proporciona sobrados recursos
 qstr_I_shall_keep_that_in|Lo tendré en cuenta.^^ ¡Hantanyel, áva márië!
 qstr_That_may_be_so_some_|Es posible, algunos caminos nos llevan por recodos tortuosos.^^ ¡Boe i 'waen!
 qstr_I_seldom_wander_far_|Raramente me alejo de mi hogar. Ahora vete, tan rápido como puedas, puede haber más trasgos al acecho.
-qstr_Who_are_you?_A_mere_|¿Quién eres? ¿ {Un/Una} simple {s25}? ¡No tengo tiempo para gente como tú! ¡Déjame en paz! {s2}
 qstr_What_do_you_want?|¿Qué es lo que quieres?
-qstr_Greetings_{playernam|Saludos, {playername}. ¿Qué puedo hacer por ti?
+qstr_Greetings._What_can_|Saludos. ¿Qué puedo hacer por ti?
+qstr_Who_are_you?_A_mere_|¿Quién eres? ¿ {Un/Una} simple {s25}? ¡No tengo tiempo para gente como tú! ¡Déjame en paz! {s2}
 qstr_What?_You_come_to_me|¿Qué? ¿Vienes a mi sin saber a lo que me dedico? Mira a tu alrededor.^^ ¿No ves la sangre? ¿No oyes los lamentos? ¿No puedes sentir su dolor? ¡Eso es a lo que me dedico! ¡Los rompo y los quiebro para luego recomponerlos, mejor que antes! Si vienes a mí, con tu cuerpo roto y dolorido, puedo hacer que mejores.
 qstr_I_am_a_healer._Come_|Me diedico a las artes de curación. Ven a mí cuando tus compañeros o tú estéis gravemente heridos,  y os atenderé en la medida de mis habilidades.
+qstr_You_have_found_the_loca|Has encontrado al sanador local
 qstr__Costs_500_Resource_|(Cuesta 500 Puntos de Recursos, 5 de Influencia)
 qstr_Ha!_I_can_see_that!_|¡Ja! ¡Ya lo veo! Sí, puedo hacerlo.. ¡Pero aparte de tu sangre, mis servicios tienen un precio! {s2}
 qstr_Yes_I_see_that._We_c|Sí, ouedo verlo. Podemos atenderte, claro, pero necesitaré mandar a buscar algunos ingredientes. {s2}

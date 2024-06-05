@@ -301,20 +301,22 @@ mno_aw_chamber_door|Nyisd ki az ajtót.
 mno_trade_with_arms_merchant|Látogasd meg a {s40}ot.
 mno_trade_with_horse_merchant|Meglátogatod a {s41}t.
 ; mno_town_prison_door|To the Training Grounds
-mno_dungeon_enter|A hegyekben keresd az elveszett lándzsát.
-mno_dungeon_enter_door|Nyisd ki az ajtót.
-mno_dwarven_warehouse|Látogasd meg a Törp Raktárat
-mno_dwarven_warehouse_door|Lépj be a Törp Raktárba
+; mno_talk_to_healer|Speak with {s40}.
 mno_talk_to_castle_commander|Látogasd meg a/az {s61} barakkokat.
 mno_speak_with_elder|Beszélj {s6} parancsnokhoz.
+; mno_town_ask|Ask around for persons of import...
 mno_isengard_underground|Menj a földalatti barlangokba.
 mno_isengard_underground_door|Menj a földalatti barlangokba
 mno_tirith_toplevel|Mássz fel a legfelső szintre.
 ; mno_tirith_toplevel_door|Go to the Citadel
 mno_erebor_gates|Nézd meg a Nagy Kapukat.
 ; mno_erebor_gates_door|Go to the Great Gates
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|Távozás...
 mno_town_leave_door|Helyszín elhagyása
+mno_town_find_NPCs_cont|Gyerünk!
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 menu_player_initiated_siege_result|Megtámadtad ezt a központot {s2} zászlaja alatt.
 menu_disembark|Szeretnél partra szállni?
 mno_disembark_yes|Igen.

@@ -301,20 +301,22 @@ mno_aw_chamber_door|Kapıyı aç.
 mno_trade_with_arms_merchant|{s40}'ı ziyaret et.
 mno_trade_with_horse_merchant|{s41}'i ziyaret et.
 mno_town_prison_door|Egitim Alanları'na gider
-mno_dungeon_enter|Kayıp mızraklar için dagları ara.
-mno_dungeon_enter_door|Kapıyı aç.
-mno_dwarven_warehouse|Cüce erzak deposunu ziyaret et
-mno_dwarven_warehouse_door|Cüce erzak deposuna gir
+; mno_talk_to_healer|Speak with {s40}.
 mno_talk_to_castle_commander|{s61} kışlasını ziyaret et.
 mno_speak_with_elder| {s6} ile konuş
+; mno_town_ask|Ask around for persons of import...
 mno_isengard_underground|Yeraltı magaralarına git.
 mno_isengard_underground_door|Yeraltı magaralarına git
 mno_tirith_toplevel|Zirveye tırman.
 mno_tirith_toplevel_door|Kalenin tepesine çık
 mno_erebor_gates|Büyük Kapıları ziyaret et.
 mno_erebor_gates_door|Büyük Kapılara git.
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|Ayrıl...
 mno_town_leave_door|Bölgeden Ayrıl
+mno_town_find_NPCs_cont|Yap.
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 menu_player_initiated_siege_result|{s2} sancagı altındaki bu merkeze saldırdın.
 menu_disembark|Karaya çıkmak mı istiyorsun?
 mno_disembark_yes|Evet.

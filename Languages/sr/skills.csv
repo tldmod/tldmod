@@ -1,7 +1,7 @@
 skl_trade|Trgovac
 ; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Vodjstvo
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|Menadzment Zarobljenika
 ; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
 ; skl_persuasion|Wildcraft
@@ -21,7 +21,7 @@ skl_spotting_desc|Grupna vidljivost je povecana za 10%% po levelu. (Grpuni skil)
 skl_pathfinding|Pronalazenje Puta
 skl_pathfinding_desc|Brzina na mapi je povecana za 3%% po levelu. (Grupni skil)
 skl_tactics|Taktika
-skl_tactics_desc|Na svaka dva levela borbena prednost je povecana za 1. (Grupni skil)
+; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Pracenje
 skl_tracking_desc|Putokazi imaju vise detalja. (Grupni skil)
 skl_trainer|Trener

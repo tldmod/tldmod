@@ -57,7 +57,7 @@ ui_crouch|çömelmek
 ui_are_you_sure_you_want_to_import_the_character|Karakteri içe aktarmak istediginizden emin misiniz?
 ui_explanation_strength|Güç: Her puan Cana +1 ekler. Bu yetenekler Gücün 1/3'ünü geçemez; Demirbeden, Güçlü Vurma, Güçlü Fırlatma, Güçlü Çekme.
 ui_explanation_intelligence|Zeka: Her zeka puanı anında bir ekstra beceri puanı verir ve bazı durumlarda XP kazancını biraz artırır. Aşagıdaki beceriler Zekanın 1 / 3'ünün ötesinde geliştirilemez: Talimci, İz Bulma, Taktik, Yön bulma, Tespit etme, Envanter Yönetimi, Yara Bakımı, Cerrahlık ve İlk Yardım.
-ui_explanation_charisma|Karizma: Kitle ve ihtilaflar karşısında statü kazanırsın. Her puan, parti büyüklügü sınırınızı +1 arttırır. Aşagıdaki beceriler Karizma'nın 1/3'ünden sonra geliştirilemez: Esir yönetimi, Yaban ustalıgı, Liderlik, Ticaret.
+; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|%d hasar verildi.
 ui_mission_losses_killed|Öldürüldü
 ui_party_losses|%s :%d yaralandı --- %d öldürüldü %d

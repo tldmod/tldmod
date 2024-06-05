@@ -51,13 +51,13 @@ p_town_rhun_main_camp|Κεντρικό Στρατόπεδο Ρουν
 p_town_rhun_south_camp|Νότιο Φυλάκιο Ρουν
 p_town_rhun_north_camp|Βόρειο Φυλάκιο Ρουν
 p_town_gundabad|Γκούνταμπαντ
-p_town_gundabad_ne_outpost|Κράτημα Γκρίζων Βουνών
-p_town_gundabad_nw_outpost|Φαράγγι Γκρίζων Βουνών
+; p_town_gundabad_ne_outpost|Ruined Dwarf Hold
+; p_town_gundabad_nw_outpost|Goblin Hideout
 p_town_goblin_north_outpost|Τελώνιούπολη
 p_town_goblin_south_outpost|Νότιο Φυλάκιο Γκόμπλιν
 p_town_gundabad_m_outpost|Φυλάκιο Γκούνταμπαντ Μέρκγουντ
 p_town_erebor|Έρεμπορ
-p_town_ironhill_camp|Λατομείο Σιδερένιων Λόφων
+; p_town_ironhill_camp|Grey Mountains Gateway
 p_advcamp_gondor|Στρατόπεδο Προέλασης Γκόντορ
 p_advcamp_rohan|Στρατόπεδο Προέλασης Ρόχαν
 p_advcamp_isengard|Στρατόπεδο Προέλασης Άιζενγκαρντ
@@ -98,10 +98,6 @@ p_ford_rohan2|Έντγουος
 p_ford_fangorn|Έντγουος
 p_ford_fangorn2|Λίμλαϊτ
 p_ford_moria|Σίλβερλόουντ
-; p_legend_amonhen|Amon Hen
-; p_legend_deadmarshes|Dead Marshes
-; p_legend_mirkwood|Mirkwood Forest
-; p_legend_fangorn|Fangorn Entmoot
 p_fangorn_center|Κέντρο Φάνγκορν
 p_ring_hunter_lair|Φωλιά Κυνηγών του Δαχτυλιδιού
 p_raft|Άνδρες Σχεδίων

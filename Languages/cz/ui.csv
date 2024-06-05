@@ -57,7 +57,7 @@ ui_crouch|Skrčit
 ui_are_you_sure_you_want_to_import_the_character|Jste si jistý že chcete Importovat postavu?
 ui_explanation_strength|Síla: Každý bod přidává +1 bod zdraví. Nad 1/3 pohyblivosti se nelze naučit tyto schopnosti: Odolnost, Síla úderu, Síla vrhu, Síla napnutí.
 ui_explanation_intelligence|Inteligence: Každý bod inteligence ihned přidá jeden bod schopností navíc a při některých příležitostech mírně zvyšuje zisk XP. Nad 1/3 inteligence se nelze naučit tyto schopnosti: Trenér, Stopování, Taktika, Hledání cest, Pozorování, Organizace inventáře, Léčba zranění, Chirurgie a První pomoc.
-; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
+; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|Zasazeno %d poškození.
 ui_mission_losses_killed|Zabil :
 ui_party_losses|%s : %d Zraněno -- %d zabito z %d

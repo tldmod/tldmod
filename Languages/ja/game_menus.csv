@@ -301,20 +301,22 @@ mno_aw_chamber_door|扉を開ける。
 mno_trade_with_arms_merchant|{s40}に行く。
 mno_trade_with_horse_merchant|{s41}に行く。
 ; mno_town_prison_door|To the Training Grounds
-mno_dungeon_enter|失われた槍を探しに山の内部へ行く。
-mno_dungeon_enter_door|扉を開ける。
-mno_dwarven_warehouse|ドワーフの倉庫を訪ねる
-mno_dwarven_warehouse_door|ドワーフの倉庫に入る
+; mno_talk_to_healer|Speak with {s40}.
 mno_talk_to_castle_commander|{s61}の兵舎へ行く。
 mno_speak_with_elder|{s6}に会う。
+; mno_town_ask|Ask around for persons of import...
 mno_isengard_underground|地下の洞窟へ行く。
 mno_isengard_underground_door|地下の洞窟へ行く。
 mno_tirith_toplevel|最上層に登る。
 mno_tirith_toplevel_door|城塞へ行く
 mno_erebor_gates|大門へ行く。
 ; mno_erebor_gates_door|Go to the Great Gates
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|立ち去る・・・
 mno_town_leave_door|立ち去る
+mno_town_find_NPCs_cont|準備に取りかかる。
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 menu_player_initiated_siege_result|{s2}の旗のもと、あなたはこの拠点を攻撃しました。
 menu_disembark|上陸しますか？
 mno_disembark_yes|する

@@ -1,7 +1,7 @@
 skl_trade|Onderhandelaar
 skl_trade_desc|Zorgt ervoor dat smeden en voorraad meesters beter meewerken en betere uitrusting aanbieden. (Groep vaardigheid)
 skl_leadership|Leiderschap
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|Gevangenen Beheer
 ; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
 skl_persuasion|Planten Vaardigheid
@@ -21,7 +21,7 @@ skl_spotting_desc|Je groep kan 10%% verder zien per punt voor deze vaardigheid (
 skl_pathfinding|Padvinden
 skl_pathfinding_desc|Snelheid van je groep op de kaart gaat met 3%% omhoog per punt in deze vaardigheid (groep's vaardigheid)
 skl_tactics|Tactieken
-skl_tactics_desc|Elke twee punten voor deze vaardigheid vergroot het voordeel aan het begin van het gevecht met 1. (groep's vaardigheid)
+; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Spoorzoeken
 skl_tracking_desc|Sporen geven meer informatie. (groep's vaardigheid)
 skl_trainer|Trainer

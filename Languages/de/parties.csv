@@ -51,13 +51,13 @@ p_town_rhun_main_camp|Hauptlager von Rhûn
 p_town_rhun_south_camp|Südlager von Rhûn
 p_town_rhun_north_camp|Nordlager von Rhûn
 p_town_gundabad|Gundabad
-p_town_gundabad_ne_outpost|Alte Bergfestung
-p_town_gundabad_nw_outpost|Schlucht
+; p_town_gundabad_ne_outpost|Ruined Dwarf Hold
+; p_town_gundabad_nw_outpost|Goblin Hideout
 p_town_goblin_north_outpost|Orkstadt
 p_town_goblin_south_outpost|Südlicher Orkposten
 p_town_gundabad_m_outpost|Waldlager von Gundabad
 p_town_erebor|Erebor
-p_town_ironhill_camp|Steinbruch
+; p_town_ironhill_camp|Grey Mountains Gateway
 p_advcamp_gondor|Vorstoßlager von Gondor
 p_advcamp_rohan|Vorstoßlager von Rohan
 p_advcamp_isengard|Vorstoßlager von Isengart
@@ -98,10 +98,6 @@ p_ford_rohan2|Entwasser
 p_ford_fangorn|Entwasser
 p_ford_fangorn2|Limklar
 p_ford_moria|Silberlauf
-p_legend_amonhen|Amon Hen
-p_legend_deadmarshes|Totensümpfe
-p_legend_mirkwood|Düsterwald
-p_legend_fangorn|Fangorn Entthing
 p_fangorn_center|Herz des Fangorns
 p_ring_hunter_lair|Schlupfwinkel der Ringjäger
 p_raft|Flößer

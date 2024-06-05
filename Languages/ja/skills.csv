@@ -1,7 +1,7 @@
 skl_trade|取引
 skl_trade_desc|鍛冶屋と補給係が より協力的になり、 より良い装備を融通して くれるようになります。 (パーティスキル)
 skl_leadership|統率力
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|囚人管理
 ; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
 skl_persuasion|ワイルドクラフト
@@ -21,7 +21,7 @@ skl_spotting_desc|1レベル毎に、 マップ画面上での視界が 10%%広�
 skl_pathfinding|経路探索
 skl_pathfinding_desc|マップ画面上でのパーティの速度が 1レベル毎に3%%速くなります。 (パーティスキル)
 skl_tactics|戦略
-skl_tactics_desc|2レベル毎に、 戦闘開始時の優位性が1増えます。 (パーティスキル)
+; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|追跡術
 skl_tracking_desc|レベルが高い程マップ画面上での 情報量が増えます。 (パーティスキル)
 skl_trainer|訓練

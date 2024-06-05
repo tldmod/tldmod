@@ -1,7 +1,7 @@
 skl_trade|議價
 skl_trade_desc|能夠更好地與鐵匠和補給官合作，使他們提供更好的裝備。(隊伍技能)
 skl_leadership|統御
-skl_leadership_desc|每點增加隊伍人數上限5，提高隊伍士氣與戰場凝聚力，同時能夠讓更多且更優秀的新兵願意應徵進入你的麾下。 （領袖技能）
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|俘虜管理
 skl_prisoner_management_desc|每點增加俘虜上限%d。(領袖技能)
 skl_persuasion|綠野仙蹤
@@ -21,7 +21,7 @@ skl_spotting_desc|每點增加隊伍偵察範圍10%%。 (隊伍技能)
 skl_pathfinding|尋路
 skl_pathfinding_desc|每點增加隊伍地圖移動速度3%%。 (隊伍技能) 
 skl_tactics|戰術
-skl_tactics_desc|每2點增加1點戰鬥優勢。 (隊伍技能) 
+; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|跟踪
 skl_tracking_desc|從足跡中能發現更多的信息。 (隊伍技能) 
 skl_trainer|教練

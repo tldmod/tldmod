@@ -1,7 +1,7 @@
 skl_trade|Commercio
 skl_trade_desc|Rende i fabbri e gli empori più cooperativi e con equipaggiamenti migliori (Abilità di Gruppo)
 skl_leadership|Comando
-skl_leadership_desc|Ogni punto incrementa di 5 unità il numero massimo di truppe che puoi comandare, incrementa il morale della tua Compagnia e la coesione in battaglia. Rende più forti e numerosi i volontari disposti a seguirti. (Abilità del Comandante)
+skl_leadership_desc|Ogni punto incrementa di 5 unità il numero massimo di truppe che puoi comandare (3 per i compagni), incrementa il morale della tua Compagnia e la coesione in battaglia. Rende più forti e numerosi i volontari disposti a seguirti. (Abilità del Comandante)
 skl_prisoner_management|Gestione Prigionieri
 skl_prisoner_management_desc|Ogni livello di quest'abilità incrementa il numero massimo di prigionieri di %d. Aumenta la probabilità di catturare e mantenere prigionieri. (Abilità del Comandante)
 skl_persuasion|Mimetismo
@@ -21,7 +21,7 @@ skl_spotting_desc|Per ogni punto in questa abilità la capacità visiva della Co
 skl_pathfinding|Orientamento
 skl_pathfinding_desc|Per ogni punto in questa abilità la velocità della Compagnia sulla mappa aumenta del 3%%. (Abilità di Gruppo)
 skl_tactics|Tattica
-skl_tactics_desc|Ogni due punti di questa abilità viene incrementato il vantaggio iniziale in battaglia di 1. (Abilità di Gruppo)
+skl_tactics_desc|Incrementa il vantaggio in battaglia. Aumenta la disunione in battaglia per le compagnie nemiche e riduce la distanza di collegamento fra le compagnie alleate del 3% per ogni livello. (Abilità del Comandante)
 skl_tracking|Seguire Tracce
 skl_tracking_desc|Le orme sul terreno forniscono più informazioni. (Abilità di Gruppo)
 skl_trainer|Addestramento

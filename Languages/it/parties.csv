@@ -51,13 +51,13 @@ p_town_rhun_main_camp|Campo Centrale di Rhûn
 p_town_rhun_south_camp|Accampamento Meridionale di Rhûn
 p_town_rhun_north_camp|Accampamento Settentrionale di Rhûn
 p_town_gundabad|Gundabad
-p_town_gundabad_ne_outpost|Tenuta dei Monti Grigi
-p_town_gundabad_nw_outpost|Burrone dei Monti Grigi
+p_town_gundabad_ne_outpost|Fortezza dei Nani in rovina
+p_town_gundabad_nw_outpost|Covo dei Goblin
 p_town_goblin_north_outpost|Città dei Goblin
 p_town_goblin_south_outpost|Avamposto Meridionale dei Goblin
 p_town_gundabad_m_outpost|Avamposto di Gundabad nel Bosco Atro
 p_town_erebor|Erebor
-p_town_ironhill_camp|Cava Dei Colli Ferrosi
+p_town_ironhill_camp|Passaggio per le Montagne Grigie
 p_advcamp_gondor|Accampamento Avanzato di Gondor
 p_advcamp_rohan|Accampamento Avanzato di Rohan 
 p_advcamp_isengard|Accampamento Avanzato di Isengard 
@@ -98,10 +98,6 @@ p_ford_rohan2|Entalluvio
 p_ford_fangorn|Entalluvio
 p_ford_fangorn2|Limterso
 p_ford_moria|Argentaroggia
-p_legend_amonhen|Amon Hen
-p_legend_deadmarshes|Paludi Morte
-p_legend_mirkwood|Bosco Atro
-p_legend_fangorn|Ent-consiglio di Fangorn
 p_fangorn_center|Centro di Fangorn
 p_ring_hunter_lair|Tana dei Cacciatori dell'Anello
 p_raft|Traghettatori

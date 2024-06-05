@@ -1,7 +1,7 @@
 skl_trade|Handel
 skl_trade_desc|Dank dieser Fähigkeiten wird dir in Städten bessere Ausrüstung für weniger Ressourcenpunkte angeboten. (Truppen-Fähigkeit)
 skl_leadership|Führerschaft
-skl_leadership_desc|Jeder Punkt erhöht die Maximalzahl der Soldaten, die du befehligen kannst, um 5, erhöht die Truppen-Moral und den Zusammenhalt in der Schlacht. Mehr und stärkere Freiwillige werden sich dir anschließen. (Anführer-Fähigkeit)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|Gefangenenaufsicht
 skl_prisoner_management_desc|Jede Stufe dieser Fähigkeit erhöht die Maximalzahl der Gefangenen um %d. Erhöht die Chancen, Gefange zu machen und an der Flucht zu hindern. (Anführer-Fähigkeit)
 skl_persuasion|Wildkunde
@@ -21,7 +21,7 @@ skl_spotting_desc|Die Sichtweite der Truppe wird um 10%% pro Fertigkeitsstufe er
 skl_pathfinding|Wegfindung
 skl_pathfinding_desc|Die Kartengeschwindigkeit der Truppe wird um 3%% pro Fertigkeitsstufe erhöht. (Truppen-Fähigkeit)
 skl_tactics|Taktik
-skl_tactics_desc|Jeweils zwei Stufen dieser Fähigkeit erhöhen den Kampfbeginnsvorteil um 1. (Truppen-Fähigkeit)
+; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Spurensuche
 skl_tracking_desc|Spuren werden informativer. (Truppen-Fähigkeit)
 skl_trainer|Ausbilder

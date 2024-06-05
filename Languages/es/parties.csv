@@ -51,13 +51,13 @@ p_town_rhun_main_camp|Campamento Principal de Rhûn
 p_town_rhun_south_camp|Avanzada Sur de Rhûn
 p_town_rhun_north_camp|Avanzada Norte de Rhûn
 p_town_gundabad|Gundabad
-p_town_gundabad_ne_outpost|Fortaleza de las Montañas Grises
-p_town_gundabad_nw_outpost|Barranco de las Montañas Grises
+p_town_gundabad_ne_outpost|Fortaleza enana en ruinas
+p_town_gundabad_nw_outpost|Escondite de trasgos
 p_town_goblin_north_outpost|Ciudad de los Trasgos
 p_town_goblin_south_outpost|Avanzada Sur de los Trasgos
 p_town_gundabad_m_outpost|Avanzada Forestal de Gundabad
 p_town_erebor|Erebor
-p_town_ironhill_camp|Cantera de las Colinas de Hierro
+p_town_ironhill_camp|Paso de las Montañas Grises
 p_advcamp_gondor|Avanzada de Gondor
 p_advcamp_rohan|Avanzada Rohirrim
 p_advcamp_isengard|Avanzada de Isengard
@@ -98,10 +98,6 @@ p_ford_rohan2|Entaguas
 p_ford_fangorn|Entaguas
 p_ford_fangorn2|Limclaro
 p_ford_moria|el Cauce de Plata
-p_legend_amonhen|Amon Hen
-p_legend_deadmarshes|Ciénagas de los Muertos
-p_legend_mirkwood|Corazón del Bosque Negro
-p_legend_fangorn|Cámara de los Ents
 p_fangorn_center|Centro de Fangorn
 p_ring_hunter_lair|Guarida de los Caza-anillos
 p_raft|Balseros

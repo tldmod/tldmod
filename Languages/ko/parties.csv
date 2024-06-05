@@ -51,13 +51,13 @@ p_town_rhun_main_camp|룬 중심 캠프
 p_town_rhun_south_camp|룬 남쪽 전초기지
 p_town_rhun_north_camp|룬 북쪽 전초기지
 p_town_gundabad|군다바드
-p_town_gundabad_ne_outpost|회색산맥 요새
-p_town_gundabad_nw_outpost|회색산맥 골짜기
+; p_town_gundabad_ne_outpost|Ruined Dwarf Hold
+; p_town_gundabad_nw_outpost|Goblin Hideout
 p_town_goblin_north_outpost|고블린 도시
 p_town_goblin_south_outpost|고블린 남쪽 전초기지
 p_town_gundabad_m_outpost|군다바드 어둠숲 전초기지
 p_town_erebor|에레보르
-p_town_ironhill_camp|철산 채석장
+; p_town_ironhill_camp|Grey Mountains Gateway
 p_advcamp_gondor|곤도르 전진 캠프
 p_advcamp_rohan|로한 전진 캠프
 p_advcamp_isengard|이센가드 전진 캠프
@@ -98,10 +98,6 @@ p_ford_rohan2|엔트워시
 p_ford_fangorn|엔트워시
 p_ford_fangorn2|림라이트
 p_ford_moria|켈레브란트
-p_legend_amonhen|아몬 헨
-p_legend_deadmarshes|죽음의 늪
-p_legend_mirkwood|어둠숲
-p_legend_fangorn|팡고른 엔트뭇
 p_fangorn_center|Fangorn Center
 p_ring_hunter_lair|반지 추적자 은신처
 p_raft|일당

@@ -301,20 +301,22 @@ mno_siege_defender_do_not_join_battle|Μην συμμετέχεις.
 ; mno_trade_with_arms_merchant|Visit the {s40}.
 ; mno_trade_with_horse_merchant|Visit the {s41}.
 ; mno_town_prison_door|To the Training Grounds
-; mno_dungeon_enter|Search for the lost spears inside the mountains.
-; mno_dungeon_enter_door|Open the door.
-; mno_dwarven_warehouse|Visit the Dwarven Warehouse
-; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
+; mno_talk_to_healer|Speak with {s40}.
 ; mno_talk_to_castle_commander|Visit the {s61} Barracks.
 ; mno_speak_with_elder|Speak with the {s6}.
+; mno_town_ask|Ask around for persons of import...
 ; mno_isengard_underground|Go to the underground caverns.
 ; mno_isengard_underground_door|Go to the underground caverns
 ; mno_tirith_toplevel|Climb up to the top level.
 ; mno_tirith_toplevel_door|Go to the Citadel
 ; mno_erebor_gates|Visit the Great Gates.
 ; mno_erebor_gates_door|Go to the Great Gates
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|Φύγε...
 ; mno_town_leave_door|Leave Area
+; mno_town_find_NPCs_cont|Do it.
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 ; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
 ; menu_disembark|Do you wish to disembark?
 ; mno_disembark_yes|Yes.

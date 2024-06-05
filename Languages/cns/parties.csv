@@ -51,13 +51,13 @@ p_town_rhun_main_camp|卢恩主营
 p_town_rhun_south_camp|卢恩南方前哨
 p_town_rhun_north_camp|卢恩北方前哨
 p_town_gundabad|刚达巴山
-p_town_gundabad_ne_outpost|灰色山脉营垒
-p_town_gundabad_nw_outpost|灰色山脉深谷前哨
+; p_town_gundabad_ne_outpost|Ruined Dwarf Hold
+; p_town_gundabad_nw_outpost|Goblin Hideout
 p_town_goblin_north_outpost|半兽人村
 p_town_goblin_south_outpost|半兽人南部前哨
 p_town_gundabad_m_outpost|刚达巴幽暗密林前哨
 p_town_erebor|孤山
-p_town_ironhill_camp|铁丘陵采石场
+; p_town_ironhill_camp|Grey Mountains Gateway
 p_advcamp_gondor|刚铎前线营地
 p_advcamp_rohan|洛汗前线营地
 p_advcamp_isengard|艾辛格前线营地
@@ -98,10 +98,6 @@ p_ford_rohan2|树沐河
 p_ford_fangorn|树沐河
 p_ford_fangorn2|林莱河
 p_ford_moria|银流河
-p_legend_amonhen|阿蒙汉山
-p_legend_deadmarshes|死亡沼泽
-p_legend_mirkwood|幽暗密林
-; p_legend_fangorn|Fangorn Entmoot
 p_fangorn_center|法贡森林中心
 p_ring_hunter_lair|魔戒猎手巢穴
 p_raft|艄公

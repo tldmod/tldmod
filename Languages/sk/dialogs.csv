@@ -57,7 +57,7 @@ dlga_hobbit_pippin_talk_met:close_window|Zdravím, pán Pipin.
 ; dlga_treebeard_isengard_3:close_window|Ho, hmm, I owe you great thanks. I had not expected any help from others, and it is good to learn that our Last March may not end quite so badly, after all! Since the tree-killer is dealt with, we should now be able to keep Rohan's northern marches safe, for a while.
 ; dlga_treebeard_isengard_3:close_window.1|Hmm? Ho, hmm… ah. So, you have come all the way from Rohan, have you? Hmm. I have heard some news from the south, yes. Good news, news to gladden all hearts. I have good will to Theoden King, and I am glad he was aided by the likes of you in his hour of peril, hmm! We have managed here well enough, and now we Ents will see to it that Saruman does not set foot beyond Isengard, without our leave. The Isen flows well again, and soon I hope the water will once more be fit to drink. Ha, hm, I feel a song coming on. A song of the old days… the old trees I knew…
 ; dlga_start:ent_encounter|Hrooom! What do you want?
-; dlga_ent_encounter:close_window|Hail, tree shepherd! Thank you for keeping these marshes safe. I will not stand in your way.
+; dlga_ent_encounter:close_window|Hail, tree shepherd! Thank you for keeping these marches safe. I will not stand in your way.
 dlga_start:treebeard_introduce_1|(Zisťuješ, že sa pozeráš na prazvláštne stvorenie. Je veľmi vysoké, má silné končatiny s kožou ako kôra a porastom listov. Části jeho tela pokrýva mach. Ale v tejto chvíli si všímaš len oči. Hlboké oči ťa pozorujú, pomalé a vážné, ale veľmi bystré a prenikajúce. Myslíš si, že sú hnedé, so zelenkastým svitom, ako keby si sa cez ne díval do hlbočiznej studne plnej prastarých spomienok a dlhého, pomalého a vytrvalého premýšľania. Ich povrch sa však trblieta prítomnosťou... ako slnko žiariace na krajných listoch ohromného stromu, alebo vlnky veľmi hlbokého jazera.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(Chystáš sa niečo povedať, ale zaľahne ťa divný dusivý pocit, ako keby bol vzduch príliš riedky či skromný na dýchanie... skoro so zúfalým nadýchnutím vzduchu sa ti podarí zbaviť toho pocitu a obrovské stvorenie podobné stromu zmierni svoj pohľad. Tvor sa na teba aj naďalej díva a ty si všimneš ďalšie obrovské stromové tvory, ktoré ťa pozorujú rovnako, ako keby čakali pokiaľ prehovoríš...)"
 dlga_treebeard_introduce_2:treebeard_introduce_3|Veľmi sa ospravedlňujem za vyrušenie... Som len unavený pútnik hľadajúci úkryt kvôli nedávnym udalostiam... moje meno je {playername}. Nevadilo by, keby som sa vás spýtal, čo ste zač ?
@@ -658,7 +658,6 @@ dlga_castle_guard_intro_2:castle_guard_intro_2|Môžeš vstúpiť, pokiaľ si od
 dlga_castle_guard_intro_2:close_window|Tu to je, moje zbrane. Teraz chcem vstúpiť.
 dlga_castle_guard_intro_2:castle_guard_intro_2b|Nie, nikomu nebudem dávať svoje zbrane.
 dlga_castle_guard_intro_2b:close_window|Potom nemôžeš vstúpiť.
-dlga_start:castle_gate_guard_talk|Čo chceš ?
 dlga_castle_gate_guard_pretalk:castle_gate_guard_talk|Ano?
 dlga_castle_gate_guard_talk:castle_gate_open|Potrebujeme nocľah. Pustíte nás dnu ?
 dlga_castle_gate_guard_talk:request_meeting_castle_lord|Chcem si prehovoriť s veliteľom hradu.
@@ -723,8 +722,9 @@ dlga_kill_scout_8:close_window|Ako chceš, ako chceš. Tadiaľto!
 dlga_woodelf_help_1:woodelf_help_2.1|Nikdy pred tým som nevidel takého obrovského ohyzda. Odporné kreatúry. Ale nemám z nich strach. Som vojakom v nadchádzajúcej vojne, ktorú sme už všetci očakávali. 
 dlga_woodelf_help_2:woodelf_help_3.1|Vážne? Samozrejme že si! Videl som, že si schopný bojovník. Dnes mám teda šťastie. Mal by som toho využiť a ponáhľať sa do dediny upozorniť ľudí na tieto nečisté beštie. 
 dlga_woodelf_help_3:close_window|Bezpečnú cestu, Torbal. Určite sa ešte stretneme.
-dlga_healers_ask:healer_who|Čo robíš?.
-dlga_healers_ask:healer_wound_ask|Ja a moji muži sme utŕžili zranenia, aké nedokáže zhojiť ani čas. Dokázal by si nás vyliečiť?
+dlga_healers_meet:healer_who|Čo robíš?.
+; dlga_healers_meet:healers_ask|I need your help.
+; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
 dlga_healers_ask:healer_injured_ask|Ja i moji mužmi sme ranení, avšak nie je času čakať na to, kým sa naše rany zhoja. Dokázal by si nám poskytnúť pomoc?
 dlga_healers_ask:close_window|Nič.
 dlga_healers_injured_check:healers_injured_heal|Áno, pripoj sa k nám.
@@ -741,8 +741,8 @@ dlga_sad_elf_2:sad_elf_choice|Ach, príbehy z mora. Aj tie spoza neho. {Môj pan
 dlga_sad_elf_choice:sad_elf_leave|Cítim tvoju bolesť. Vykonal si však v tejto vojne už svoj podiel. Máš moje zvolenie odísť.
 dlga_sad_elf_choice:sad_elf_no|Elfovia nesmú zanechať Stredozem tieňu. V tejto vojne nebojujeme len sami za seba, ale každý z nás musí zohrať svoju úlohu. Nemôžem ťa prepustiť. [tvoja úroveň Vodcovstva určí poslušnosť]
 dlga_sad_elf_leave:close_window|Ďakujem, {môj pane/moja pani}!^^K moru, k moru! Snehobiele čajky plačú,^Víchor skučí až pena z vôd pučí.^Na Západe, na Západe, slnko sa tam s nami lúči.
-dlga_start:close_window.16|Dorazil si práve v čas. Spojme naše sily a dajme nepriateľom poriadnu lekciu.
-dlga_start:close_window.17|Robíš veľkú chybu že proti nám bojuješ.
+dlga_start:close_window.15|Dorazil si práve v čas. Spojme naše sily a dajme nepriateľom poriadnu lekciu.
+dlga_start:close_window.16|Robíš veľkú chybu že proti nám bojuješ.
 dlga_start:ally_thanks_meet|Nemyslím že sme sa už riadne zoznámili. Zachránil si mi síce život, ale ja stále neviem ani tvoje meno...
 dlga_start:ally_thanks_meet.1|Tvoja pomoc bola veľmi vítaná cudzinec. Moje meno je {s1}. Smiem vedieť to tvoje ?
 dlga_start:ally_thanks_meet.2|Ďakujem ti za pomoc, cudzinec. Ešte sme sa riadne nestretli, že ? Ako sa voláš ?
@@ -750,13 +750,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|Moje meno je {playername}.
 dlga_ally_thanks_meet_2:close_window|Dobre, že sme na seba narazili, {playername}. Moje meno je {s1} a som ti naveky zaviazaný. Pokiaľ budeš niekedy potrebovať s čímkoľvek pomôcť, príď za mnou...
 dlga_ally_thanks_meet_2:close_window.1|Rád ťa vidím {playername}. Som ti dlžníkom za to, čo si pre mňa práve vykonal. Dúfam, že nájdem spôsob ako ti to splatiť.
 dlga_ally_thanks_meet_2:close_window.2|Zdravím {playername}. Som {s1}. Ďakujem ti za pomoc a dúfam, že sa znova stretneme. 
-dlga_start:close_window.18|Opäť si nám zachránil krky, {playername}! Ozaj, si ten najlepší priateľ.  {s43}
-dlga_start:close_window.19|Dorazil si na poslednú chvíľu! {playername}. Nemôžem ti za to dosť poďakovať! {s43}
-dlga_start:close_window.20|Ukázal si sa práve včas, {playername}. Nezabudnem na tvoju pomoc. {s43}
-dlga_start:close_window.21|Dobre že tu si, {playername}. {s43}
-dlga_start:close_window.24|Ďakujem ti za pomoc, Veliteľ. Zachránil si tam {reg1?naše životy:môj život}.
-dlga_start:close_window.25|Ďakujem ti za pomoc, Veliteľ. Nevyvíjalo sa to pre nás priaznivo, ale po tom, čo si sa ukázal, sa situácia zmenila. 
-dlga_start:close_window.26|Ďakujem ti za pomoc, Veliteľ. Mal som šťastie že si bol po mojom boku.
+dlga_start:close_window.17|Opäť si nám zachránil krky, {playername}! Ozaj, si ten najlepší priateľ.  {s43}
+dlga_start:close_window.18|Dorazil si na poslednú chvíľu! {playername}. Nemôžem ti za to dosť poďakovať! {s43}
+dlga_start:close_window.19|Ukázal si sa práve včas, {playername}. Nezabudnem na tvoju pomoc. {s43}
+dlga_start:close_window.20|Dobre že tu si, {playername}. {s43}
+dlga_start:close_window.23|Ďakujem ti za pomoc, Veliteľ. Zachránil si tam {reg1?naše životy:môj život}.
+dlga_start:close_window.24|Ďakujem ti za pomoc, Veliteľ. Nevyvíjalo sa to pre nás priaznivo, ale po tom, čo si sa ukázal, sa situácia zmenila. 
+dlga_start:close_window.25|Ďakujem ti za pomoc, Veliteľ. Mal som šťastie že si bol po mojom boku.
 dlga_start:freed_hero_answer|Oslobodil si ma a ja som ti teraz dlžný, priateľ. 
 dlga_freed_hero_answer:freed_hero_answer_1|Nikam nepôjdeš. Teraz si mojím väzňom!
 dlga_freed_hero_answer_1:close_window|Žiaľbohu. To sa na mňa nikdy šťastie neobráti?
@@ -845,7 +845,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|Luky.
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|Vrhacie zbrane.
 dlga_trainer_choose_weapon_player:trainer_pretalk|Už nič, rozmyslel som si to.
 dlga_trainer_begin_training:close_window|Dobre, tak poďme na to. Keď skončíš s tréningom, príď za mnou.
-dlga_start:close_window.27|Zmizni, odporný žobrák.
+dlga_start:close_window.26|Zmizni, odporný žobrák.
 dlga_start:mayor_begin|Dobrý deň, môj pane.
 dlga_start:mayor_talk|Zdravím cudzinče, vyzeráš, že si nový v {s9}. Som kastelán tohto mesta.
 dlga_start:mayor_begin.1|Dobrý deň, {playername}.
@@ -931,8 +931,8 @@ dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|Potrebujem poslať
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Dobre. Budem mu robiť sprievod.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Bohužiaľ nemám dosť vojakov.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Prepáčte. Nemám na to čas.
-dlga_start:close_window.28|Zbytok cesty už zvládneme sami. Ďakujeme. 
-dlga_start:close_window.29|Nuž, už sme takmer v {s21}. Doraziť už zvládneme sami. Vďaka za sprievod. Veľa šťastia.^^[získaných {reg14} Bodov Zásob {s14u}]
+dlga_start:close_window.27|Zbytok cesty už zvládneme sami. Ďakujeme. 
+dlga_start:close_window.28|Nuž, už sme takmer v {s21}. Doraziť už zvládneme sami. Vďaka za sprievod. Veľa šťastia.^^[získaných {reg14} Bodov Zásob {s14u}]
 dlga_start:merchant_caravan_intro_1|Zdravím. Vy ste náš ochranný sprievod, že?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Áno. Moje meno je {playername}. Zavediem vás do {s1}.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Je dobré vedieť, že necestujeme úplne sami. Máte pre nás nejaké príkazy?
@@ -982,7 +982,7 @@ dlga_prisoner_chat_3:prisoner_slaughter|Zožereme ťa na večeru!{s20}
 dlga_prisoner_chat_4:close_window|Hah, ako keby som bol v pozícií, kedy môžem niečo skúšať, že? Zmizni!
 dlga_prisoner_slaughter:prisoner_slaughter_02|Jedného dňa za to zaplatíš!
 dlga_prisoner_slaughter:close_window|Jedného dňa za to zaplátíš.... Aaa-ghgllr!...
-dlga_start:close_window.30|Zmizni, odporný žobrák.
+dlga_start:close_window.29|Zmizni, odporný žobrák.
 dlga_start:town_merchant_talk|Zdravím, veliteľ. Ako vám dnes poslúžim?
 dlga_start:town_merchant_talk.1|Dobrý deň. Poslúžim? 
 dlga_town_merchant_talk:trade_requested_weapons|Potrebujem novú výbavu. Ukáž čo máš na skalde.
@@ -1001,6 +1001,7 @@ dlga_player_upgrade_troll_not_enough:close_window|Plytváš mojím časom...
 dlga_player_upgrade_troll_buy_done:close_window|Áno... Áno! Poď sem, ty veľký, ty...
 dlga_trade_requested_weapons:merchant_trade|Ah áno, veliteľ. Lepší tovar než tento budete ťažko hľadať.
 dlga_trade_requested_horse:merchant_trade|Horkokrvné zvery na jazdenie a zabíjanie, a mäso, aby si ich mohol kŕmiť. Nikde nenájdeš lepšie zvery na jazdenie, než sú tieto.
+; dlga_trade_requested_horse:merchant_trade.1|You have a fine eye for horses, {sir/madam}. You won't find better beasts than these anywhere else.
 dlga_merchant_trade:town_merchant_talk|Ešte niečo ?
 dlga_town_merchant_talk:merchant_gossip|Kolujú medzi ľuďmi nejaké drby? 
 dlga_town_merchant_talk:close_window|Dovidenia.
@@ -1021,14 +1022,14 @@ dlga_start:player_castle_guard_talk|Áno, veliteľ?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|Ako ide hliadka, vojak?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Všetko je v poriadku Veliteľ. Nie je čo hlásiť.
 dlga_player_castle_guard_talk_3:close_window|Dobre. Ale oči na stopkách.
-dlga_start:close_window.31|Dobrý deň, Veliteľ. Je dobré, že ste v {s10}.
-dlga_start:close_window.32|Dobre si premysli, čo tu budeš robiť, a nebudeme mať žiaden problém.
+dlga_start:close_window.30|Dobrý deň, Veliteľ. Je dobré, že ste v {s10}.
+dlga_start:close_window.31|Dobre si premysli, čo tu budeš robiť, a nebudeme mať žiaden problém.
 dlga_start:hall_guard_easter_egg|Ah, práve včera o polnoci. Viete, nedávno sa stala neobyčajná príhoda - chcete o tom počuť?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Áno. Pokračuj prosím.
 dlga_hall_guard_easter_egg:close_window|Nie, báchorky ma nezaujimajú.
 dlga_hall_guard_easter_egg_scene:close_window|Nuž... nedávno sa tu objavila zvláštna skupina cudzincov: človek, elf a trpaslík, a potom...
 dlga_start:hall_guard_talk|Vaše rozkazy, veliteľ ?
-dlga_start:close_window.33|Nemáme sa s nikým baviť, keď sme na stráži, Veliteľ.
+dlga_start:close_window.32|Nemáme sa s nikým baviť, keď sme na stráži, Veliteľ.
 dlga_hall_guard_talk:hall_guard_duty|Zostante v službe a oznámte mi, keď za mnou niekto príde.
 dlga_hall_guard_duty:close_window|Jak si prajete, Veliteľ.
 dlga_hall_guard_talk:hall_guard_arrest|Chcem, aby si okamžite zatkol toho muža!
@@ -1068,8 +1069,11 @@ dlga_party_reinforce:party_reinforce_end.2|Bohužiaľ nemáš žiadny vojakov z 
 dlga_party_reinforce_check:party_reinforce_check_1|Prezriem si tvojich mužov.
 dlga_party_reinforce_check_1:party_reinforce_end|Takže ty si si to rozmyslel...^Chápem.
 dlga_party_reinforce_check_1:party_reinforce_end.1|Týchto vojakov nepotrebujeme. ^Nechaj si ich.
-dlga_start:close_window.34|Zdržuješ ma! A čarodejovia nikdy nemeškajú!
-dlga_start:close_window.35|Ono násssss to... voláááá...
+dlga_start:close_window.33|Zdržuješ ma! A čarodejovia nikdy nemeškajú!
+dlga_start:close_window.34|Ono násssss to... voláááá...
+dlga_start:secret_guardian_let_through|Stáť!
+; dlga_secret_guardian_let_through:secret_guardian_let_through1|I am {playername}, {s24}. Let me through!
+; dlga_secret_guardian_let_through1:close_window|Yes commander, you may pass.
 dlga_start:close_window.36|Ty tam! Ty si prežil? Výborne! Nemôžeš sa v boji oháňať sukovicou! Tu máš, zober si toto!
 dlga_start:ori_choose_1|Bojuješ dobre, bratku! Netuším síce, ako sa ti doteraz podarilo prežiť, ale pamätám si, že si sa k nám nedávno pridával, pred týmto všetkým... pred tým, než Balin padol... Odkiaľ si?
 dlga_ori_choose_1:ori_choose_finish|Býval som stopárom, ktorého poslali do lesov neďaleko Medvedieho ľudu. Nedávno som niečo začul o Balinovej družine a pridal sa.

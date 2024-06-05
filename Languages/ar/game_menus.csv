@@ -301,20 +301,22 @@ mno_aw_chamber_door|افتح الباب.
 mno_trade_with_arms_merchant|قم بزيارة {s40}.
 mno_trade_with_horse_merchant|قم بزيارة {s41}.
 ; mno_town_prison_door|To the Training Grounds
-mno_dungeon_enter|ابحث عن الرماح المفقودة داخل الجبال.
-mno_dungeon_enter_door|افتح الباب.
-mno_dwarven_warehouse|قم بزيارة مستودع Dwarven
-mno_dwarven_warehouse_door|ادخل مستودع Dwarven.
+; mno_talk_to_healer|Speak with {s40}.
 mno_talk_to_castle_commander|قم بزيارة {s61} Barracks.
 mno_speak_with_elder|تحدث مع {s6}.
+; mno_town_ask|Ask around for persons of import...
 mno_isengard_underground|اذهب إلى الكهوف تحت الأرض.
 mno_isengard_underground_door|اذهب إلى الكهوف تحت الأرض
 mno_tirith_toplevel|يصعد إلى المستوى الأعلى.
 mno_tirith_toplevel_door|اذهب إلى القلعة
 mno_erebor_gates|قم بزيارة Great Gates.
 ; mno_erebor_gates_door|Go to the Great Gates
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|ارحل...
 mno_town_leave_door|ارحل من المنطقة.
+mno_town_find_NPCs_cont|افعلها
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 menu_player_initiated_siege_result|لقد هاجمت هذا المركز تحت شعار {s2}.
 menu_disembark|هل ترغب في النزول؟
 mno_disembark_yes|نعم.

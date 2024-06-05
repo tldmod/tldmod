@@ -301,20 +301,22 @@ mno_aw_chamber_door|Abrir a porta.
 mno_trade_with_arms_merchant|Visitar {s40}.
 mno_trade_with_horse_merchant|Visitar {s41}.
 ; mno_town_prison_door|To the Training Grounds
-mno_dungeon_enter|Procurar pelas lanças perdidas dentro das montanhas.
-mno_dungeon_enter_door|Abrir a porta. 
-mno_dwarven_warehouse|Visitar o Armazém dos Anãos
-mno_dwarven_warehouse_door|Entrar no Armazém dos Anãos
+; mno_talk_to_healer|Speak with {s40}.
 mno_talk_to_castle_commander|Visitar o {s61} Quartel.
 mno_speak_with_elder|Conversar com o {s6}.
+; mno_town_ask|Ask around for persons of import...
 mno_isengard_underground|Ir para as cavernas subterrâneas.
 mno_isengard_underground_door|Ir para as cavernas subterrâneas
 mno_tirith_toplevel|Escalar para o andar superior.
 mno_tirith_toplevel_door|Vá para a Cidadela!\n \n\n \n \n \n \n 
 mno_erebor_gates|Visite os Grande Portões.
 ; mno_erebor_gates_door|Go to the Great Gates
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|Ir embora...
 mno_town_leave_door|Abandonar área
+mno_town_find_NPCs_cont|Faça isso.
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 menu_player_initiated_siege_result|Você atacou este centro sob a bandeira de {s2}.
 menu_disembark|Você deseja desembarcar?
 mno_disembark_yes|Sim.

@@ -51,13 +51,13 @@ p_town_rhun_main_camp|リューンの野営
 p_town_rhun_south_camp|リューン南の前哨
 p_town_rhun_north_camp|リューン北の前哨
 p_town_gundabad|グンダバド
-p_town_gundabad_ne_outpost|灰色山脈の砦
-p_town_gundabad_nw_outpost|灰色山脈の渓谷
+; p_town_gundabad_ne_outpost|Ruined Dwarf Hold
+; p_town_gundabad_nw_outpost|Goblin Hideout
 p_town_goblin_north_outpost|ゴブリン町
 p_town_goblin_south_outpost|ゴブリン南の前哨
 p_town_gundabad_m_outpost|グンダバド闇の森の前哨
 p_town_erebor|エレボール
-p_town_ironhill_camp|くろがね連山採石場
+; p_town_ironhill_camp|Grey Mountains Gateway
 p_advcamp_gondor|ゴンドール遠征軍野営
 p_advcamp_rohan|ローハン遠征軍野営
 p_advcamp_isengard|アイゼンガルド遠征軍野営
@@ -98,10 +98,6 @@ p_ford_rohan2|エント川
 p_ford_fangorn|エント川
 p_ford_fangorn2|白光川
 p_ford_moria|銀筋川
-p_legend_amonhen|アモン・ヘン
-p_legend_deadmarshes|死者の沼地
-p_legend_mirkwood|闇の森の大森林
-p_legend_fangorn|ファンゴルンの森のエントの寄合
 p_fangorn_center|ファンゴルン中央
 p_ring_hunter_lair|指輪狩り一味の隠れ家
 p_raft|いかだの男たち

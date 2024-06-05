@@ -1,7 +1,7 @@
 skl_trade|Pechincheiro
 ; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Liderança
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|Gestão de Prisioneiros
 ; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
 ; skl_persuasion|Wildcraft
@@ -21,7 +21,7 @@ skl_spotting_desc|A visão do grupo é aumento a 10% a cada nível de habilidade
 skl_pathfinding|Encontrando o caminho.
 skl_pathfinding_desc|velocidade do grupo no mapa é aumentado a 3 %% por nível de habilidade. (Habilidade do grupo)
 skl_tactics|Táticas
-skl_tactics_desc|A cada dois níveis dessa habilidade aumenta a vantagem de batalha inicial por 1. ( habilidade do grupo)
+; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Rastreamento
 skl_tracking_desc|Rastros tornam-se mais informativos. (Habilidade do grupo)
 skl_trainer|Treinador

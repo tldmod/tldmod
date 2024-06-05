@@ -57,7 +57,7 @@ ui_crouch|しゃがむ
 ui_are_you_sure_you_want_to_import_the_character|本当にそのキャラクタをインポートしますか？
 ui_explanation_strength|体力: 1ポイント毎に 1ヒットポイントを得ます。 以下のスキルは体力の1/3を越えて 上昇させることは出来ません: 鋼の肉体、 強打、 豪投、 弓術
 ui_explanation_intelligence|知性: 1ポイント毎に 1スキルポイントを得ます。 また、獲得する経験値が増える事があります。 以下のスキルは知性の1/3を越えて 成長することは出来ません: 訓練、 追跡術、 戦略、 経路探索、 観測術、 荷物管理、 治療、 手術、 応急手当て
-ui_explanation_charisma|魅力:ファクションと民に対する 名声が向上します。 1ポイント毎にパーティの サイズ制限を+1します。 以下のスキルは魅力の1/3を越えて 成長することは出来ません: 統率力、 囚人管理、 ワイルドクラフト、 取引
+; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|%dダメージ与えました。
 ui_mission_losses_killed|死者:
 ui_party_losses|%s:負傷%d名---死亡%d/%d名。

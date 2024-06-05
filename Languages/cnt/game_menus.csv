@@ -301,20 +301,22 @@ mno_aw_chamber_door|開門。
 mno_trade_with_arms_merchant|訪問{s40}。
 mno_trade_with_horse_merchant|訪問{s41}。
 mno_town_prison_door|前往訓練場
-mno_dungeon_enter|在山中搜索失落的長槍。
-mno_dungeon_enter_door|打開門。
-mno_dwarven_warehouse|拜訪矮人倉庫
-mno_dwarven_warehouse_door|進入矮人倉庫
+; mno_talk_to_healer|Speak with {s40}.
 mno_talk_to_castle_commander|訪問{s61}的兵營 。
 mno_speak_with_elder|與{s6}談話。
+; mno_town_ask|Ask around for persons of import...
 mno_isengard_underground|前往地下洞穴。
 mno_isengard_underground_door|前往地下洞穴
 mno_tirith_toplevel|爬到頂層。
 mno_tirith_toplevel_door|前往堡壘
 mno_erebor_gates|訪問大門。
 mno_erebor_gates_door|前往大門
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|離開...
 mno_town_leave_door|離開區域
+mno_town_find_NPCs_cont|執行。
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 menu_player_initiated_siege_result|你在{s2}的旗幟下進攻這個據點。
 menu_disembark|你想要上岸嗎？
 mno_disembark_yes|是。

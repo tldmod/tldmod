@@ -301,20 +301,22 @@ mno_aw_chamber_door|Otvori vrata.
 mno_trade_with_arms_merchant|Poseti {s40}.
 mno_trade_with_horse_merchant|Poseti {s41}.
 ; mno_town_prison_door|To the Training Grounds
-mno_dungeon_enter|Trazi izgubljena koplja unutar planine.
-mno_dungeon_enter_door|Otvori vrata.
-mno_dwarven_warehouse|Poseti skladište patuljaka.
-mno_dwarven_warehouse_door|Uđji u skladište patuljaka.
+; mno_talk_to_healer|Speak with {s40}.
 mno_talk_to_castle_commander|Poseti {s61} kasarnu.
 mno_speak_with_elder|Razgovaraj sa {s6}.
+; mno_town_ask|Ask around for persons of import...
 mno_isengard_underground|Idi u podzemne pecine.
 ; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Popenji se na vrh.
 ; mno_tirith_toplevel_door|Go to the Citadel
 ; mno_erebor_gates|Visit the Great Gates.
 ; mno_erebor_gates_door|Go to the Great Gates
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|Napusti...
 mno_town_leave_door|Napusti zonu
+mno_town_find_NPCs_cont|Uradi to.
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 ; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
 menu_disembark|Zelis li da se iskrcas?
 mno_disembark_yes|Da.

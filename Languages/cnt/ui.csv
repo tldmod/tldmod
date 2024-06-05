@@ -57,7 +57,7 @@ ui_crouch|蹲下
 ui_are_you_sure_you_want_to_import_the_character|你確定要導入角色嗎？
 ui_explanation_strength|力量：每一點使你的生命上限 +1。以下技能不可超過力量的1/3：鐵骨，強擊，強擲，強弓。
 ui_explanation_intelligence|智力：每一點給予你額外一點技能點，並在某些事件下少量提升所得經驗值。以下技能不可超過智力的1/3：教練，追蹤，戰術，尋路，偵察，物品管理，療傷，手術，急救。
-ui_explanation_charisma|魅力：增進你與人或陣營之間的關係。每一點使你的隊伍上限 +1。以下技能不可超過魅力的1/3：俘虜管理，綠野仙蹤，統御，交易。
+; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|造成%d點傷害
 ui_mission_losses_killed|殺了：
 ui_party_losses|%s：%d負傷--- %d死亡%d。

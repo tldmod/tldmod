@@ -57,7 +57,7 @@ ui_crouch|Gugolás
 ui_are_you_sure_you_want_to_import_the_character|Biztos benne, hogy importálni szeretné a karaktert?
 ui_explanation_strength|Erő: Minden pont +1-et ad hozzá a találati pontokhoz. A következő képességek nem fejleszthetők ki az Erősség 1/3-át meghaladó mértékben: ironflesh, Power-strike, Power-throw, Power-draw.
 ui_explanation_intelligence|Intelligencia: Az intelligencia minden pontja azonnal hozzáad egy extra készségpontot, és bizonyos esetekben kissé növeli az XP nyereségét. A következő készségeket nem lehet az intelligencia 1/3-át meghaladó mértékben fejleszteni: Trainer, Tracking, Tactics, Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, and First Aid.
-; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
+; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|%d sebzést okoztál
 ui_mission_losses_killed|megölt :
 ui_party_losses|%s :%d sebesült --- %d megölték%d.

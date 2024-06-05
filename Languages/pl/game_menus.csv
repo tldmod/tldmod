@@ -301,20 +301,22 @@ mno_aw_chamber_door|Otwórz drzwi.
 mno_trade_with_arms_merchant|Odwiedź zbrojownię.
 mno_trade_with_horse_merchant|Odwiedź magazyny.
 mno_town_prison_door|Do obozu treningowego.
-mno_dungeon_enter|Wejdź do lochów.
-mno_dungeon_enter_door|Otwórz drzwi.
-mno_dwarven_warehouse|Odwiedź magazyn Krasnoludów
-mno_dwarven_warehouse_door|Wejdź do magazynu Krasnoludów
+; mno_talk_to_healer|Speak with {s40}.
 mno_talk_to_castle_commander|Odwiedź baraki.
 mno_speak_with_elder|Rozmawiaj z miejscowymi władzami.
+; mno_town_ask|Ask around for persons of import...
 mno_isengard_underground|Udaj się do podziemnych jaskini.
 mno_isengard_underground_door|Wejdź do podziemnych jaskiń
 mno_tirith_toplevel|Wspinaj się na wyższy poziom.
 mno_tirith_toplevel_door|Idź do Cytadeli
 mno_erebor_gates|Odwiedź Wielką Bramę
 mno_erebor_gates_door|Idź do Wielkiej Bramy
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|Odejdź...
 mno_town_leave_door|Wyjdź
+mno_town_find_NPCs_cont|Dalej.
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 menu_player_initiated_siege_result|Zaatakowałeś ten ośrodek pod sztandarem {s2}.
 menu_disembark|Chcesz opuścić statek?
 mno_disembark_yes|Tak.

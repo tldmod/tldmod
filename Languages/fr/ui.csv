@@ -57,7 +57,7 @@ ui_crouch|S'accroupir
 ui_are_you_sure_you_want_to_import_the_character|Êtes-vous certain de vouloir importer ce personnage ?
 ui_explanation_strength|Force : Chaque point ajoute 1 point de vie. Les compétences suivantes ne peuvent pas être augmentées au delà d'1/3 de la Force : Vigueur, Puissance de frappe, Puissance de jet, Puissance de tension.
 ui_explanation_intelligence|Intelligence : Chaque point en intelligence octroie 1 point de compétence supplémentaire et augmente parfois un peu les gains d'XP. Les compétences suivantes ne peuvent pas être augmentées au delà d'1/3 de l’intelligence : Mentor, Pistage, Tactique, Marche forcée, Repérage, Gestion de l’inventaire, Soins, Chirurgie, Premiers secours.
-ui_explanation_charisma|Charisme : Augmente votre renom auprès des gens et des factions. Chaque point augmente de 1 la limite de taille de votre groupe. Les compétences suivantes ne peuvent pas être augmentées au delà d'1/3 du Charisme : Gestion des prisonniers, Vie sauvage, Commandement, Commerce.
+; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|Dégâts infligés : %d
 ui_mission_losses_killed|tués :
 ui_party_losses|%s : %d blessés --- %d décès sur %d.

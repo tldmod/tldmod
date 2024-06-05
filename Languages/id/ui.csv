@@ -57,7 +57,7 @@ ui_crouch|Crouch
 ui_are_you_sure_you_want_to_import_the_character|Apakah Anda yakin ingin mengimpor karakter tersebut?
 ui_explanation_strength|Kekuatan: Setiap poin menambah +1 pada poin hit. Keterampilan berikut tidak dapat dikembangkan melebihi 1/3 Kekuatan: ironflesh, Kekuatan-serangan, Kekuatan-lemparan, Kekuatan-tarikan.
 ui_explanation_intelligence|Intelijen: Setiap poin intelijen segera memberikan satu poin keterampilan tambahan, dan sedikit meningkatkan perolehan XP pada beberapa kesempatan. Keterampilan berikut tidak dapat dikembangkan melebihi 1/3 dari Kecerdasan: Pelatih, Pelacakan, Taktik, Pencarian Jalan, Penelusuran, Manajemen Inventaris, Perawatan Luka, Pembedahan, dan Pertolongan Pertama.
-ui_explanation_charisma|Karisma: Meningkatkan kedudukan Anda di mata orang-orang dan faksi. Setiap poin meningkatkan batas ukuran pesta Anda sebesar +1. Keterampilan berikut tidak dapat dikembangkan melebihi 1/3 Karisma: Manajemen Tahanan, Keahlian Liar, Kepemimpinan, Perdagangan.
+; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ; ui_delivered_number_damage|Delivered %d damage.
 ui_mission_losses_killed|terbunuh:
 ; ui_party_losses|%s  : %d wounded --- %d killed of %d.

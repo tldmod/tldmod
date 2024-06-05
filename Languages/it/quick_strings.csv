@@ -98,7 +98,6 @@ qstr_Campaign_difficulty:|Difficoltà della Campagna:
 qstr_Hard|Difficile
 qstr_Default|Predefinita
 qstr_Easy|Facile
-qstr_Town_NPCs_Always_Acc|NPC delle città subito visibili nei menu:
 qstr_Cutscenes:__|Intermezzi:
 qstr_Injuries_for_compani|Ferite per i compagni:
 qstr_Permanent_death_for_|Morte per i lords e i loro compagni:
@@ -745,6 +744,7 @@ qstr_A_thunderstorm_from_|Un temporale dalle Montagne Nebbiose infuria sul campo
 qstr_A_thunderstorm_from_t|Una tempesta dalle Montagne Nebbiose imperversa sul campo di battaglia. Gli arcieri incontrano difficoltà in un clima simle.
 qstr_A_poisonous_fog_from|Una nebbia venefica da Dol Guldur indugia sul campo di battaglia. Tu e i tuoi soldati vi sentite indeboliti. C'è spavento fra gli uomini.
 qstr_A_poisonous_fog_from_|Una venefica nebbia da Dol Guldur indugia sul campo di battaglia. Tu non percepisci alcuna differenza, ma senti i tuoi nemici soffrire e percepisci l'odore della loro paura.
+qstr_{s2}_attacked|{s2} ha attaccato
 qstr_You_shapeshift_into_|Ti trasformi in un orso !
 qstr_You_got_{reg1}_exper|Hai guadagnato {reg1}  esperienza in forma d'orso.
 qstr_Your_ability_to_chan|La tua abilità di mutaforma si è manifestata, da ora in poi potrai percorrere sentieri selvaggi sia in forma d'uomo che di orso.
@@ -765,13 +765,27 @@ qstr_Fixed_Camera___Right|Inquadratura Fissa - Spalla Destra
 qstr_Fixed_Camera___Left_|Inquadratura Fissa - Spalla Sinistra
 qstr_Fixed_Camera___Cente|Inquadratura Fissa - Centrata
 qstr_Shield_is_too_big_to|Lo scudo è troppo grande per essere usato con un arco.
+qstr_You_happen_upon_an_O|Ti imbatti in una Vecchia Locanda. Mentre ispezioni l'edificio in pietra corroso dalle intemperie, noti un gruppo di ragazzi che giocano tra i pilastri, gli unici bambini che hai visto a Minas Tirith. Uno di loro ti saluta e tu ricambi il saluto. Il tuo cuore si rallegra e dimentichi, per un breve momento, il dolore della guerra.
+qstr_You_look_through_Hen|Guardi verso Henneth Annun, la Finestra del Tramonto. La splendida vista ripristina la tua fede nell'Ovest e nelle forze al di là dell'orizzonte.
+qstr_As_you_follow_the_st|Mentre prosegui sulle diritte scale, scavate nella roccia della montagna, e successivamente su una seconda rampa tortuosa che aderisce alla parete rocciosa, ti rendi conto che non dovresti insistere oltre su questo percorso, se tieni alla tua vita. .
+qstr_You_are_unable_to_en|Non sei in grado di sopportare gli orrori della Città Morta.
+qstr_You_endure_the_horro|Resisti agli orrori della Città Morta ed esplori i suoi ambienti più nascosti. Gli Osservatori Silenziosi riconoscono la tua audacia e non si oppongono a te. (Hai guadagnato 1 punto in Carisma.)
+qstr_You_are_unable_to_end|Non sei in grado di sopportare gli orrori del tempio.
+qstr_You_endure_the_horror|Riesci a resistere agli orrori degli indicibili rituali in questo sacro luogo. Il crudele popolo di Rhun riconosce la forza che hai dimostrato, e alcuni fra i più valorosi tra loro decidono di unirsi al tuo gruppo.
+qstr_You_find_yourself_in|Ti ritrovi in ​​una profonda caverna. Ti si rizzano i capelli in testa mentre ti guardi intorno, e inizi a provare uno strano senso di pericolo. Questo luogo non è adatto a una persona come te. Ringhiando, ti ritiri. Quando l'Ombra avrà coperto il mondo lassù, forse allora, potrai tornare qui senza timori...
+qstr_You_find_yourself_in_|Ti ritrovi in ​​una profonda caverna. Ti si rizzano i peli sulla schiena, mentre ti guardi intorno e inizi a provare uno strano senso di pericolo. Alzando in alto la tua arma, ringhi sfidando il nemico invisibile che si cela in questo luogo. Questo posto potrebbe essere stato pieno di meraviglie un tempo... ma ora, con il vero potere che hai acquisito, ti rendi conto che non hai nulla da temere dal passato dimenticato di un mondo distrutto.
+qstr_With_trepidation_you|Con trepidazione guardi all'interno del catino d'argento. L'acqua ti mostra orrende visioni; sangue, terrore e dolore. Indietreggi... ma poi le immagini svaniscono e vedi invece un cielo notturno limpido, con quella che sembra essere una barca argentata che galleggia attraverso la distesa. Un senso di calma ti travolge. La speranza non è del tutto scomparsa.
+qstr_The_Lady_s_garden_li|Il giardino della Signora giace tranquillo nella luce del giorno. Non provi nulla di straordinario...
+qstr_You_kneel_to_pay_you|Ti inginocchi per rendere omaggio ai sovrani caduti di questo bel regno. Accanto a te, una scudiera di Rohan alza la voce in un canto. "Ne sceal heartpan sweg Wigend Weccean; ne winfaet gylden guma sceal hedgen !". Il tuo cuore soffre nel sentire le sue parole.
+qstr_You_wonder_about_the|Ti interroghi sulle due file di tumuli davanti ai cancelli, ma come semplice {s24}, non ne capisci il significato.
+qstr_Halt!_You_are_not_al|Fermati ! Non ti è permesso entrare qui !
+qstr_Halt!_You_are_not_all|Fermati ! Non puoi accedere in questo luogo senza il permesso della Signora !
 qstr_While_visiting_towns|Mentre visiti le città, gli insediamenti e gli accampamenti, puoi parlare con le persone che vi si aggirano. I membri delle diverse fazioni hanno cose differenti da dire - alcuni ti sveleranno i loro timori, altri condivideranno indiscrezioni e voci di corridoio. Tutti potranno comunque darti una migliore comprensione della cultura della loro fazione, oppure potrebbero essere detentori d'indizi per trovare luoghi segreti, o di consigli per viaggiare nella natura selvaggia e combattere nella Guerra dell'Anello.
 qstr_Cannot_leave_now.|Non puoi allontanarti in questo momento.
 qstr_You_have_found_the_l|Hai trovato la fucina locale.
 qstr_You_have_found_the_lo|Hai trovato l'autorità locale.
 qstr_You_have_found_the_loc|Hai trovato l'emporio locale.
 qstr_You_have_found_the_c|Hai trovato il capitano della guarnigione.
-qstr_You_look_through_Hen|Guardi verso Henneth Annun, la Finestra del Tramonto. La splendida vista ripristina la tua fede nell'Ovest e nelle forze al di là dell'orizzonte.
 qstr__cancelled_the_{reg1|(Cancellati i {reg10} exp guadagnati per aver ucciso prigionieri)
 qstr_Forming_ranks.|Formare i ranghi.
 qstr_{reg2?You:Your_mount|{reg2?Tu hai ricevuto:Il tuo animale ha ricevuto} {reg1} danni extra !
@@ -1082,6 +1096,13 @@ qstr_the_Hall|la sala
 qstr_the_Great_Chamber_of|la Grande Sala di Thrór
 qstr_Stay_indoors_for_som|Alloggia qui per un po'. Punti Risorsa per notte: ({reg1})
 qstr_Camp_outside_for_som|Accampati all'aperto per qualche tempo (nessun costo)
+qstr_As_you_enter_the_vas|Mentre entri nelle vaste caverne sotto l'Anello di Isengard, dove migliaia di orchi lavorano per rifornire gli eserciti in crescita della Mano Bianca, acquisisci fiducia nell'ascesa di un nuovo potere e nella fine del vecchio mondo.
+qstr_You_have_found_the_G|Hai trovato le Grotte Scintillanti, una delle meraviglie del Mondo del Nord.
+qstr_As_the_party_member_| 69% match \nIn quanto membro della compagnia con maggiore abilità commmerciale, ({reg2}), {reg3?stimi:{s3} stima} che impiegherete {reg4} ore per rintracciare le persone più eminenti della zona. [Costo {reg5}/{reg6} Punti Influenza]
+qstr_You_have_already_fou|Hai già trovato tutte le persone d'interesse.
+qstr_the_captain_of_the_g|il capitano della guarnigione e l'autorità civile.
+qstr_and_the_captain_of_t|e il capitano della guarnigione. Poiché questo luogo è stato conquistato di recente, non ha autorità civile.
+qstr_You_also_heard_of_a_|Hai anche sentito parlare di un guaritore, ma dovrai trovarli da solo.
 qstr_{s4}_s_scouts_have_s|Gli esploratori di {s4} hanno visto e riferito del tuo fallimento. Hai portato il biasimo su {s4} e la responsabilità di questo fallimento è soltanto tua.
 qstr_{s1}_s_Ship|Nave di {s1}
 qstr_Time_passes...|Il tempo scorre...
@@ -1623,11 +1644,12 @@ qstr_Our_Golden_Valley_gi|La nostra Valle Dorata abbonda di doni e un amico di L
 qstr_I_shall_keep_that_in|Dovrò tenerlo a mente. ^^ Hantanyel, áva márië !
 qstr_That_may_be_so_some_|Potrebbe essere così, alcune strade del mondo sono contorte.^^ Boe i 'waen !
 qstr_I_seldom_wander_far_|Raramente mi allontano da casa. Andiamo via di qui, il più velocemente possibile. Ci potrebbero essere altri goblin che si aggirano da queste parti.
-qstr_Who_are_you?_A_mere_|Chi sei tu? Un semplice {s25} ? Non ho tempo per quelli della tua sorta ! Lasciami in pace ! {s2}
 qstr_What_do_you_want?|Che cosa vuoi ?
-qstr_Greetings_{playernam|Salute, {playername}. Cosa posso fare per te?
+qstr_Greetings._What_can_|Salute. Cosa posso fare per voi ?
+qstr_Who_are_you?_A_mere_|Chi sei tu? Un semplice {s25} ? Non ho tempo per quelli della tua sorta ! Lasciami in pace ! {s2}
 qstr_What?_You_come_to_me|Cosa ? Vieni da me e non sai di cosa mi occupo ? Dai un'occhiata in giro.^^ Vedi del sangue ? Senti dei lamenti ? Senti il loro dolore ? Questo è ciò che faccio ! Rompo cose per renderle migliori! Se vieni da me, ferito e dolorante, posso farti sentire meglio !
 qstr_I_am_a_healer._Come_|Sono un guaritore. Vieni da me quando tu o i tuoi compagni siete gravemente feriti e io vi curerò al meglio delle mie capacità.
+qstr_You_have_found_the_loca|Hai trovato il guaritore locale
 qstr__Costs_500_Resource_|(Costo 500 Punti Risorsa, 5 Punti Influenza)
 qstr_Ha!_I_can_see_that!_|Ha ! Vedo ! Posso farlo, si.. A parte il tuo sangue, quello non è gratis! {s2}
 qstr_Yes_I_see_that._We_c|Sì, lo vedo. Posso fare qualcosa, ma avrò bisogno di procurarmi alcuni ingredienti. {s2}

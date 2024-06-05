@@ -301,20 +301,22 @@ mno_aw_chamber_door|Avaa ovi.
 mno_trade_with_arms_merchant|Vieraile {s40}.
 mno_trade_with_horse_merchant|Vieraile {s41}.
 ; mno_town_prison_door|To the Training Grounds
-mno_dungeon_enter|Etsi kadonneita keihäitä vuorien uumenista.
-mno_dungeon_enter_door|Avaa ovi.
-mno_dwarven_warehouse|Vieraile kääpiövarastolla
-mno_dwarven_warehouse_door|Käy sisään kääpiövarastoon
+; mno_talk_to_healer|Speak with {s40}.
 mno_talk_to_castle_commander|Vieraile {s61} baraakeilla.
 mno_speak_with_elder|Puhu  {s6}n kanssa.
+; mno_town_ask|Ask around for persons of import...
 mno_isengard_underground|Mene maanalaisiin luolastoihin.
 ; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Kiipeä ylimmälle tasolle.
 ; mno_tirith_toplevel_door|Go to the Citadel
 mno_erebor_gates|Vieraile Isoilla porteilla
 ; mno_erebor_gates_door|Go to the Great Gates
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|Poistu...
 mno_town_leave_door|Poistu alueelta
+mno_town_find_NPCs_cont|Tee se.
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 menu_player_initiated_siege_result|Hyökkäsit tätä keskusta vastaan palvellessasi {s2} lippua.
 menu_disembark|Haluatko nousta maihin?
 mno_disembark_yes|Kyllä.

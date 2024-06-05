@@ -57,7 +57,7 @@ ui_crouch|Agachar
 ui_are_you_sure_you_want_to_import_the_character|Tem certeza de que deseja importar o personagem?
 ui_explanation_strength|Força: Cada ponto adiciona +1 aos pontos de vida. As seguintes habilidades não podem ser desenvolvidas além de 1/3 da Força: Ironflesh, Power-strike, Power-throw, Power-draw.
 ui_explanation_intelligence|Inteligência: Cada ponto de inteligência dá imediatamente um ponto de habilidade extra e aumenta ligeiramente o ganho de XP em algumas ocasiões. As seguintes perícias não podem ser desenvolvidas além de 1/3 da Inteligência: Treinador, Rastreamento, Táticas, Descobrir Caminhos, Detecção, Gerenciamento de Estoque, Tratamento de Feridas, Cirurgia e Primeiros Socorros.
-; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1. The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
+; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|Causado %d de dano.
 ui_mission_losses_killed|morto:
 ui_party_losses|%s : %d ferido --- %d morto de %d.

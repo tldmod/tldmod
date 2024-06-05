@@ -1,11 +1,11 @@
 skl_trade|Comercio
 skl_trade_desc|Los herreros y mercaderes de suministros se vuelven más dispuestos a cooperar, ofreciendo un mejor equipamiento. (Habilidad de Grupo)
 skl_leadership|Liderazgo
-skl_leadership_desc|Cada punto incrementa el número máximo de tropas que puedes liderar en 5, incrementa la moral del grupo y su cohesión en combate. Encontrarás más y mejores voluntarios dispuestos a seguirte. (Habilidad de líder)
+skl_leadership_desc|Cada punto aumenta en 5 el número máximo de tropas que puedes comandar (3 en el caso de los compañeros), incrementa la moral de tu compañía y la cohesión en combate. Hace que más y mejores voluntarios están dispuestos a unirse a ti. (Habilidad personal)
 skl_prisoner_management|Manejo de prisioneros
-skl_prisoner_management_desc|Cada nivel de esta habilidad aumenta el numero máximo de prisioneros en %d. Mejora las probabilidades de capturar prisioneros y evitar que escapen. (habilidad de líder)
+skl_prisoner_management_desc|Cada nivel de esta habilidad aumenta el numero máximo de prisioneros en %d. Mejora las probabilidades de capturar prisioneros y evitar que escapen. (Habilidad de líder)
 skl_persuasion|Dominio de las tierras salvajes
-skl_persuasion_desc|La habilidad para sobrevivir en la naturaleza salvaje y doblegarla a tu voluntad. Esra habilidad afecta a la capacidad del grupo para esconderse de los enemigos, y la velocidad del grupo en terreno boscoso. (Habilidad de Grupo)
+skl_persuasion_desc|La habilidad para sobrevivir en la naturaleza salvaje y doblegarla a tu voluntad. Esra habilidad afecta a la capacidad del grupo para esconderse de los enemigos, y la velocidad del grupo en terreno boscoso. (Habilidad de grupo)
 skl_engineer|-----
 skl_engineer_desc|-----
 skl_first_aid|Primeros auxilios
@@ -21,7 +21,7 @@ skl_spotting_desc|El rango de visión del grupo se incrementa un 10%% por nivel 
 skl_pathfinding|Busca-rutas
 skl_pathfinding_desc|La velocidad del grupo en el mapa se incrementa un 3%% por nivel de habilidad. (Habilidad de grupo)
 skl_tactics|Tácticas
-skl_tactics_desc|Cada dos niveles de esta habilidad, se incrementa la ventaja inicial de batalla en 1. (Habilidad de grupo)
+skl_tactics_desc|Aumenta la ventaja de batalla. Aumenta la distancia a la que los aliados pueden unirse a la batalla y la disminuye para los enemigos en un 3% por nivel de habilidad. (Habilidad de líder)
 skl_tracking|Rastreo
 skl_tracking_desc|Se obtiene más información sobre los rastros. (Habilidad de grupo)
 skl_trainer|Instrucción
@@ -35,7 +35,7 @@ skl_riding_desc|Permite montar caballos (u otras bestias) de mayor nivel de difi
 skl_athletics|Atletismo
 skl_athletics_desc|Incrementa la velocidad al correr. (Habilidad personal)
 skl_shield|Escudo
-skl_shield_desc|reduce el daño a los escudos (un 8%% por nivel de habilidad), mejora la velocidad y la cobertura del escudo, reduce la penalización de escudo al usarlo con un arco. (habilidad personal)
+skl_shield_desc|reduce el daño a los escudos (un 8%% por nivel de habilidad), mejora la velocidad y la cobertura del escudo, reduce la penalización de escudo al usarlo con un arco. (Habilidad personal)
 skl_weapon_master|Maestría con armas
 skl_weapon_master_desc|Facilita el aprendizaje de las competencias en armas e incrementa los límites de estas competencias. Los límites funcionan así: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Habilidad personal)
 skl_power_draw|Arquería
@@ -45,4 +45,4 @@ skl_power_throw_desc|Cada punto de esta habilidad incrementa el daño de lanzami
 skl_power_strike|Potencia de golpe
 skl_power_strike_desc|Cada punto de esta habilidad incrementa el daño cuerpo a cuerpo en un 8%%. (Habilidad personal)
 skl_ironflesh|Piel curtida
-skl_ironflesh_desc|Cada punto de esta habilidad aumenta los puntos de vida en +2, y te permite soportar más daño sin resultar herido. (habilidad personal)
+skl_ironflesh_desc|Cada punto de esta habilidad aumenta los puntos de vida en +2, y te permite soportar más daño sin resultar herido. (Habilidad personal)

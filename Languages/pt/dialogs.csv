@@ -57,7 +57,7 @@ dlga_hobbit_pippin_talk_met:close_window|Olá, messer Pippin.
 ; dlga_treebeard_isengard_3:close_window|Ho, hmm, I owe you great thanks. I had not expected any help from others, and it is good to learn that our Last March may not end quite so badly, after all! Since the tree-killer is dealt with, we should now be able to keep Rohan's northern marches safe, for a while.
 ; dlga_treebeard_isengard_3:close_window.1|Hmm? Ho, hmm… ah. So, you have come all the way from Rohan, have you? Hmm. I have heard some news from the south, yes. Good news, news to gladden all hearts. I have good will to Theoden King, and I am glad he was aided by the likes of you in his hour of peril, hmm! We have managed here well enough, and now we Ents will see to it that Saruman does not set foot beyond Isengard, without our leave. The Isen flows well again, and soon I hope the water will once more be fit to drink. Ha, hm, I feel a song coming on. A song of the old days… the old trees I knew…
 ; dlga_start:ent_encounter|Hrooom! What do you want?
-; dlga_ent_encounter:close_window|Hail, tree shepherd! Thank you for keeping these marshes safe. I will not stand in your way.
+; dlga_ent_encounter:close_window|Hail, tree shepherd! Thank you for keeping these marches safe. I will not stand in your way.
 dlga_start:treebeard_introduce_1|(Você acha que você está olhando para uma criatura mais extraordinárias. Ele é muito alto e rígido com casca parecida como pele e cabelo frondoso. Musgo também está cobrindo partes de seu corpo. Mas no momento em que você está observando pouco os olhos . Os olhos profundos estão examinando você, lenta e solene , mas muito afiado e penetrante. você acha que eles são marrons , com dose de luz verde, como se há um nascente bem atrás deles, preenchido com memórias antigas e longas, devagar, com pensamentos estáveis. Mas na superfície de seus olhos estão brilhando com o presente ... como o sol cintilante sobre as folhas externas de uma grande árvore , ou as ondulações de um lago muito profundo.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|( Estás prestes a dizer algo mas um sentimento estranho e sufocante cai sobre ti, como se o ar fosse demasiado fino ou pouco para respirar... Inspirando quase desesperadamente, consegues livrar-te dessa sensação e a criatura arbórea diminui um pouco a intensidade do seu olhar. Continua, no entanto, a olhar para ti e apercebes-te que as outras criaturas arbóreas fazem o mesmo, como se estivessem à espera que dissesses algo...)
 dlga_treebeard_introduce_2:treebeard_introduce_3|Perdão pela minha invasão... Eu sou um cansado viajante procurando por um refugio de eventos recentes... meu nome é {playername}. Posso perguntar quem é você?
@@ -658,7 +658,6 @@ dlga_castle_guard_intro_2:castle_guard_intro_2|Você pode ir em depois de deixar
 dlga_castle_guard_intro_2:close_window|Aqui, pegue minhas armas. Vou entrar .
 dlga_castle_guard_intro_2:castle_guard_intro_2b|Não, eu dou minhas armas para ninguém .
 dlga_castle_guard_intro_2b:close_window|Então você não pode entrar.
-dlga_start:castle_gate_guard_talk|O que você quer?
 dlga_castle_gate_guard_pretalk:castle_gate_guard_talk|Pois não?
 dlga_castle_gate_guard_talk:castle_gate_open|Precisamos de abrigo para a noite . Você vai nos deixar entrar?
 dlga_castle_gate_guard_talk:request_meeting_castle_lord|Quero falar com o senhor do castelo
@@ -723,8 +722,9 @@ dlga_castle_gate_open:close_window.4|Meu senhor {s2} não quero você aqui . Beg
 ; dlga_woodelf_help_1:woodelf_help_2.1|I have never seen such a large orc before. Nasty things. Do not fret. I am a Soldier in this coming war that we have all been sensing.
 ; dlga_woodelf_help_2:woodelf_help_3.1|You are? Of course you are! I have seen that you are a capable warrior. I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts.
 ; dlga_woodelf_help_3:close_window|Safe journey to you, Torbal. I'm sure we will meet again.
-; dlga_healers_ask:healer_who|What do you do?.
-; dlga_healers_ask:healer_wound_ask|My men and I have wounds that require more than just time to heal. Can you heal our wounds?
+; dlga_healers_meet:healer_who|What do you do?.
+; dlga_healers_meet:healers_ask|I need your help.
+; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
 ; dlga_healers_ask:healer_injured_ask|My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?
 ; dlga_healers_ask:close_window|Nothing.
 ; dlga_healers_injured_check:healers_injured_heal|Yes, attend to us.
@@ -741,8 +741,8 @@ dlga_castle_gate_open:close_window.4|Meu senhor {s2} não quero você aqui . Beg
 ; dlga_sad_elf_choice:sad_elf_leave|I feel your pain. You have done your share in this war. You may leave.
 ; dlga_sad_elf_choice:sad_elf_no|The Elves must not abandon Middle-earth to the shadow. This war we fight not for ourselves and each of us will have to play their role. I cannot give you leave. [Leadership Check]
 ; dlga_sad_elf_leave:close_window|Thank you, my {lord/lady}!^^To the Sea, to the Sea! The white gulls are crying,^The wind is blowing, and the white foam is flying.^West, west away, the round sun is falling.
-dlga_start:close_window.16|Você veio na hora certa. Vamos juntar nossas forças e ensinar nosso inimigo uma lição.
-dlga_start:close_window.17|Você está cometendo um grande erro lutando contra nós ..
+dlga_start:close_window.15|Você veio na hora certa. Vamos juntar nossas forças e ensinar nosso inimigo uma lição.
+dlga_start:close_window.16|Você está cometendo um grande erro lutando contra nós ..
 dlga_start:ally_thanks_meet|Eu não acho que nós nos encontramos adequadamente meu amigo. Você acabou de salvar minha vida lá fora , e eu ainda não sei seu nome ...
 dlga_start:ally_thanks_meet.1|Sua ajuda foi  muito bem-vindos estranho. Meu nome é{s1}. Posso aprender a sua?
 dlga_start:ally_thanks_meet.2|Obrigado pela vossa ajuda , estranho. Nós não nos conhecemos bem ainda, temos nós ? Qual é o seu nome?
@@ -750,13 +750,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|Meu nome é {playername}.
 dlga_ally_thanks_meet_2:close_window|Bem , na verdade conheci {playername}. Meu nome é {s1} e estou eternamente em dívida com você . Se há sempre algo que eu possa ajudá-lo, deixe-me saber .....
 dlga_ally_thanks_meet_2:close_window.1|Bem conheci {playername}.Estou em dívida com você para o que você fez. Espero que um dia eu vou encontrar uma maneira de pagá-lo .
 dlga_ally_thanks_meet_2:close_window.2|Bem conheci {playername}. Estou {s1}. Obrigado pela sua ajuda e espero que nos encontremos de novo ..
-dlga_start:close_window.18|Mais uma vez você salvar nossos pescoços , {playername}! Na verdade, você é o melhor dos amigos . {s43}
-dlga_start:close_window.19|Você chegou apenas em cima da hora ! {playername}. Você tem meus mais profundos agradecimentos ! {s43}
-dlga_start:close_window.20|Você virou -se a tempo {playername}. Eu não vou esquecer de sua ajuda {s43}
-dlga_start:close_window.21|Bom te ver aqui, {playername}. {s43}
-dlga_start:close_window.24|Obrigado pela vossa ajuda , Comandante. Você salvou {reg1?our lives:Minha vida} la fora
-dlga_start:close_window.25|Obrigado pela vossa ajuda , Comandante. As coisas não parecem muito bem para nós , mas então você veio e tudo mudou.
-dlga_start:close_window.26|Obrigado pela vossa ajuda , Comandante. Foi sorte de ter você por perto.
+dlga_start:close_window.17|Mais uma vez você salvar nossos pescoços , {playername}! Na verdade, você é o melhor dos amigos . {s43}
+dlga_start:close_window.18|Você chegou apenas em cima da hora ! {playername}. Você tem meus mais profundos agradecimentos ! {s43}
+dlga_start:close_window.19|Você virou -se a tempo {playername}. Eu não vou esquecer de sua ajuda {s43}
+dlga_start:close_window.20|Bom te ver aqui, {playername}. {s43}
+dlga_start:close_window.23|Obrigado pela vossa ajuda , Comandante. Você salvou {reg1?our lives:Minha vida} la fora
+dlga_start:close_window.24|Obrigado pela vossa ajuda , Comandante. As coisas não parecem muito bem para nós , mas então você veio e tudo mudou.
+dlga_start:close_window.25|Obrigado pela vossa ajuda , Comandante. Foi sorte de ter você por perto.
 dlga_start:freed_hero_answer|Estou em dívida com você para me libertar amigo .
 dlga_freed_hero_answer:freed_hero_answer_1|Você não vai a lugar nenhum . Você vai ser meu prisioneiro agora!
 dlga_freed_hero_answer_1:close_window|Alas. Será que a minha sorte nunca mudam ?
@@ -845,7 +845,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|Arcos.
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|Armas de arremesso.
 dlga_trainer_choose_weapon_player:trainer_pretalk|Nenhum, eu mudei de idéia.
 dlga_trainer_begin_training:close_window|Muito bem , aqui vamos nós. Uma vez que você terminar o treinamento , voltar e falar comigo.
-dlga_start:close_window.27|Fora com você, mendigo vil.
+dlga_start:close_window.26|Fora com você, mendigo vil.
 dlga_start:mayor_begin|Bom dia, meu senhor.
 dlga_start:mayor_talk|Olá, forasteiro, você parece ser novo para {s9}. Eu sou o mestre de aliança da cidade.
 dlga_start:mayor_begin.1|Bom Dia {playername}.
@@ -931,8 +931,8 @@ dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|Vou enviar um comb
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Bem. Vou escoltar o comboio de suprimentos.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Eu tenho medo eu não tenho que muitos soldados comigo.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Desculpe. Eu não posso fazer isso agora
-dlga_start:close_window.28|Podemos cobrir o resto do caminho mesmos. Obrigado.
-dlga_start:close_window.29|Bem, nós já quase alcançou {s21}. Podemos cobrir o resto do caminho mesmos. Obrigado por escoltar-nos. Boa sorte.^^[earned {reg14} pontos de recurso de {s14}]
+dlga_start:close_window.27|Podemos cobrir o resto do caminho mesmos. Obrigado.
+dlga_start:close_window.28|Bem, nós já quase alcançou {s21}. Podemos cobrir o resto do caminho mesmos. Obrigado por escoltar-nos. Boa sorte.^^[earned {reg14} pontos de recurso de {s14}]
 dlga_start:merchant_caravan_intro_1|Saudações. Você deve ser a nossa escolta, certo?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Sim. Meu nome é {playername}. Eu vou levar você para {s1}.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Bem, é bom saber que não vai viajar sozinho. O que você quer que a gente faz agora?
@@ -982,7 +982,7 @@ dlga_prisoner_chat_3:prisoner_slaughter|Acontecer de você ser o nosso próximo 
 dlga_prisoner_chat_4:close_window|Sim, como eu estou em uma posição para tentar? Dá o fora!
 dlga_prisoner_slaughter:prisoner_slaughter_02|Um dia você vai pagar!
 dlga_prisoner_slaughter:close_window|Um dia você vai pagar.... Aaa-ghgllr!...
-dlga_start:close_window.30|Fora com você, mendigo vil.
+dlga_start:close_window.29|Fora com você, mendigo vil.
 dlga_start:town_merchant_talk|Saudações, Comandante. Como posso servi-lo hoje?
 dlga_start:town_merchant_talk.1|Bom Dia. O que posso fazer para você?
 dlga_town_merchant_talk:trade_requested_weapons|Eu quero solicitar novos equipamentos. Mostra-me o que você tem em seu armazém.
@@ -1001,6 +1001,7 @@ dlga_town_merchant_talk:trade_requested_horse|Estou pensando em começar um mont
 ; dlga_player_upgrade_troll_buy_done:close_window|Yes… yes! Come here, you big lunk, you...
 dlga_trade_requested_weapons:merchant_trade|Ah, sim comandante . Essas mercadorias são o melhor que você encontrará em qualquer lugar.
 ; dlga_trade_requested_horse:merchant_trade|Fierce mounts for the riding and killing, and meat to feed them with! You won't find better beasts than these anywhere else.
+; dlga_trade_requested_horse:merchant_trade.1|You have a fine eye for horses, {sir/madam}. You won't find better beasts than these anywhere else.
 dlga_merchant_trade:town_merchant_talk|Algo mais?\n
 dlga_town_merchant_talk:merchant_gossip|Conte-me. Quais são as pessoas falando sobre estes dias?
 dlga_town_merchant_talk:close_window|Adeus.
@@ -1021,14 +1022,14 @@ dlga_start:player_castle_guard_talk|Sim, Comandante?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|Como vai o relógio , soldado?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Tudo é  tranquila Comandante. Nada a assinalar.
 dlga_player_castle_guard_talk_3:close_window|Boa. Mantenha seus olhos abertos.
-dlga_start:close_window.31|Bom dia , comandante. É bom ter você aqui em {s10}.
-dlga_start:close_window.32|Como ter boas maneiras por aqui e nós não terá nenhum problema
+dlga_start:close_window.30|Bom dia , comandante. É bom ter você aqui em {s10}.
+dlga_start:close_window.31|Como ter boas maneiras por aqui e nós não terá nenhum problema
 dlga_start:hall_guard_easter_egg|Ah , apenas após a meia-noite . Você sabe, um incidente incomum aconteceu recentemente - quer ouvir sobre isso ?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Sim, por favor continuar.
 dlga_hall_guard_easter_egg:close_window|Não, eu não me importo com fofoca.
 dlga_hall_guard_easter_egg_scene:close_window|Bem .. um grupo incomum de aventureiros Apareceu recentemente : um homem , um anão e um elfo, e então ..
 dlga_start:hall_guard_talk|Suas ordens , Comandante?
-dlga_start:close_window.33|Nós não devemos falar enquanto estiver em guarda, comandante.
+dlga_start:close_window.32|Nós não devemos falar enquanto estiver em guarda, comandante.
 dlga_hall_guard_talk:hall_guard_duty|Fique de plantão e deixe-me saber se alguém vem me ver.
 dlga_hall_guard_duty:close_window|Como desejar comandante. Como desejar.
 dlga_hall_guard_talk:hall_guard_arrest|Eu quero que você prender este homem imediatamente!
@@ -1068,8 +1069,11 @@ dlga_party_reinforce:party_reinforce_end.2|Infelizmente você não tem nenhum {s
 dlga_party_reinforce_check:party_reinforce_check_1|Deixe-me verificar o soldado lista ...
 dlga_party_reinforce_check_1:party_reinforce_end|ão você mudou de idéia ...^I eu vejo.
 dlga_party_reinforce_check_1:party_reinforce_end.1|Esses soldados não têm qualquer utilidade para nós. ^Leve-os de volta .
-dlga_start:close_window.34|Você está me fazendo atrasado! Assistentes nunca está atrasado!
-dlga_start:close_window.35|É ... beckonsssssss ...
+dlga_start:close_window.33|Você está me fazendo atrasado! Assistentes nunca está atrasado!
+dlga_start:close_window.34|É ... beckonsssssss ...
+dlga_start:secret_guardian_let_through|Alto!
+; dlga_secret_guardian_let_through:secret_guardian_let_through1|I am {playername}, {s24}. Let me through!
+; dlga_secret_guardian_let_through1:close_window|Yes commander, you may pass.
 ; dlga_start:close_window.36|You there! You survived? Good! You can't be waving a stick about! Take this!
 ; dlga_start:ori_choose_1|You fight well, kinsman! I don't know how you've been surviving so far. I remember you joining us recently, before all this... before Balin fell... Where are you from?
 ; dlga_ori_choose_1:ori_choose_finish|I was a tracker, sent to the woods near the Bear people. I recently heard about Balin's company and joined.

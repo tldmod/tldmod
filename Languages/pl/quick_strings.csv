@@ -98,7 +98,6 @@ qstr_Campaign_difficulty:|Trudność Kampanii:
 qstr_Hard|Trudny
 qstr_Default|Domyślny
 qstr_Easy|Łatwy
-qstr_Town_NPCs_Always_Acc|Miejscowi NPC zawsze dostępni z menu: 
 qstr_Cutscenes:__|Przerywniki filmowe: 
 qstr_Injuries_for_compani|Urazy dla towarzyszy: 
 qstr_Permanent_death_for_|Trwała śmierć dla lordów i towarzyszy: 
@@ -745,6 +744,7 @@ qstr_A_thunderstorm_from_|Burza z Gór Mglistych dotarła nad pole walki. Twoi �
 qstr_A_thunderstorm_from_t|Burza z Gór Mglistych dotarła nad pole walki. Łucznicy nie radzą sobie najlepiej w taką pogodę.
 qstr_A_poisonous_fog_from|Trująca mgła z Dol Guldur spowija pole bitwy. Ty i twoi ludzie czujecie się słabo. Wśród twojej kompanii szerzy się strach.
 qstr_A_poisonous_fog_from_|Trująca mgła z Dol Guldur spowija pole bitwy. Nie robi ona na tobie wrażenia, ale wyczuwasz cierpienie i strach swego przeciwnika.
+; qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|Zmieniasz się w niedźwiedzia!
 qstr_You_got_{reg1}_exper|Zdobyłeś {reg1} doświadczenia w formie niedźwiedzia.
 qstr_Your_ability_to_chan|Twoja umiejętność zmieniania formy się ujawniła, od teraz możesz przemierzać swe ścieżki zarówno jako człowiek jak i niedźwiedź.
@@ -765,13 +765,27 @@ qstr_Fixed_Camera___Right|Poprawiona kamera - prawe ramię
 qstr_Fixed_Camera___Left_|Poprawiona kamera - lewę ramię
 qstr_Fixed_Camera___Cente|Kamera naprawiona - wycentrowano
 qstr_Shield_is_too_big_to|Tarcza jest zbyt duża do używania wraz z łukiem.
+; qstr_You_happen_upon_an_O|You happen upon an Old Guesthouse. As you inspect the weathered stone building, you notice a group of boys playing among the pillars, the only children you have seen in Minas Tirith.  One of them greets you and you wave back. Your heart is gladdened and you forget, for a brief moment, the sorrow of war.
+qstr_You_look_through_Hen|Spoglądasz przez Henneth Annun, Okno Zachodzącego Słońca. Piękny widok odnawia twoją wiarę w Zachód i moce kryjące się za nim.
+; qstr_As_you_follow_the_st|As you follow the straight stairs, cut into the rock of the mountain, and then a second set of stairs, winding as it clings to the cliff-face, you realize that you should not pursue this path any further if you value your own life.
+; qstr_You_are_unable_to_en|You are unable to endure the horrors of the Dead City.
+; qstr_You_endure_the_horro|You endure the horrors of the Dead City and explore its innermost circles. The Silent Watchers recognise your boldness and don't oppose you. (You gained 1 Charisma.)
+; qstr_You_are_unable_to_end|You are unable to endure the horrors of the temple.
+; qstr_You_endure_the_horror|You endure the horrors of the unspeakable rituals in this sacred place. The cruel people of Rhun recognise the strength you have shown and some of their mightiest decide to join your party.
+; qstr_You_find_yourself_in|You find yourself in a deep cavern. Your hackles rise as you look around you, and you begin to feel a strange sense of danger. This is no place for one such as you. Snarling, you make your retreat. When the Shadow has covered the world above, perhaps then, you may return here without fear...
+; qstr_You_find_yourself_in_|You find yourself in a deep cavern. Your hackles rise as you look around you, and you begin to feel a strange sense of danger. Raising your weapon high, you snarl your defiance at the unseen foe in this place. This may have been a place of wonder once... but now, with the true power you have gained, you realize you have nothing to fear from the forgotten past of a broken world.
+; qstr_With_trepidation_you|With trepidation, you look within the silver basin. The water shows you visions of horror; blood and terror and grief. You recoil... but then, the visions vanish and you see instead a clear night sky, with what seems to be a silver boat floating across the expanse. A sense of calm washes over you. Hope is not wholly gone.
+; qstr_The_Lady_s_garden_li|The Lady's garden lies peacefully in the bright daylight. You sense nothing out of the ordinary...
+; qstr_You_kneel_to_pay_you|You kneel to pay your respects to the fallen rulers of this fair realm. Beside you, a shield-maiden of Rohan raises her voice in song. Ne sceal hearpan sweg wigend weccean; ne winfaet gylden guma sceal healdan! Your heart aches to hear her words.
+; qstr_You_wonder_about_the|You wonder about the two rows of burial mounds in front of the gates, yet as a mere {s24}, you do not understand their significance.
+; qstr_Halt!_You_are_not_al|Halt! You are not allowed to enter here!
+; qstr_Halt!_You_are_not_all|Halt! You are not allowed to enter here without the Lady's leave!
 qstr_While_visiting_towns|Odwiedzając miasta, osady i obozy, możesz porozmawiać z ludźmi, którzy chodzą po okolicy. Członkowie różnych frakcji mają różne rzeczy do powiedzenia - niektórzy pozwolą ci na własne myśli, inni podzielą się plotkami. Obydwaj mogą jedynie lepiej zrozumieć kulturę i frakcję danej osoby, albo mogą znaleźć wskazówki, jak znaleźć tajne miejsca lub porady i wskazówki dotyczące podróżowania przez Pustkowie i walki w Wojnie o Pierścień.
 qstr_Cannot_leave_now.|Nie można teraz opuścić lokacji.
 qstr_You_have_found_the_l|Znalazłeś lokalnego kowala.
 qstr_You_have_found_the_lo|Znalazłeś lokalny autorytet.
 qstr_You_have_found_the_loc|Znalazłeś lokalny magazyn.
 qstr_You_have_found_the_c|Znalazłeś kapitana garnizonu.
-qstr_You_look_through_Hen|Spoglądasz przez Henneth Annun, Okno Zachodzącego Słońca. Piękny widok odnawia twoją wiarę w Zachód i moce kryjące się za nim.
 qstr__cancelled_the_{reg1|(Anulowano {reg10} punktów doświadczenia za zabijanie więźniów)
 qstr_Forming_ranks.|Formować szeregi!
 qstr_{reg2?You:Your_mount|{reg2? You: Twój wierzchowiec} otrzymał {reg1} dodatkowe obrażenia!
@@ -1082,6 +1096,13 @@ qstr_the_Hall|Hala
 qstr_the_Great_Chamber_of|Wielka Hala Thróra
 qstr_Stay_indoors_for_som|Odpocznij tu przez jakiś czas ({reg1} Pkt Prestiżu za noc)
 qstr_Camp_outside_for_som|Rozbij obóz na zewnątrz (za darmo)
+; qstr_As_you_enter_the_vas|As you enter the vast caverns underneath the Ring of Isengard, where thousands of orcs work to supply the growing armies of the White Hand, you gain confidence in the rise of a new power and the demise of the old world.
+; qstr_You_have_found_the_G|You have found the Glittering Caves, one of the marvels of the Northern World.
+; qstr_As_the_party_member_|As the party member with the highest Bargainer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to find the most notable persons in town. [Costs {reg5}/{reg6} influence]
+; qstr_You_have_already_fou|You have already found all persons of interest.
+; qstr_the_captain_of_the_g|the captain of the garrison, and the civil authority.
+; qstr_and_the_captain_of_t|and the captain of the garrison. As this place was recently captured, it has not civil authority.
+; qstr_You_also_heard_of_a_|You also heard of a healer, but you will have to find them on your own.
 qstr_{s4}_s_scouts_have_s|Zwiadowcy {s4} widzieli i zgłosili twoją porażkę. Przyniosłeś wstyd {s4}, a odpowiedzialność za tę porażkę spoczywa wyłącznie na Tobie.
 qstr_{s1}_s_Ship|Statek
 qstr_Time_passes...|Po pewnym czasie...
@@ -1623,11 +1644,12 @@ qstr_Our_Golden_Valley_gi|Nasza Złota Dolina obfituje w towary i przyjaciela Lo
 qstr_I_shall_keep_that_in|Zapamiętam to sobie.^^ Hantanyel, áva márië!
 qstr_That_may_be_so_some_|Może tak być, niektóre części świata są oszukańcze. ^^ Boe i 'waen!
 qstr_I_seldom_wander_far_|Rzadko kiedy oddalam się od domu. Odjedź z stąd jak najszybciej.Tutaj wciąż mogą grasować gobliny.
-qstr_Who_are_you?_A_mere_|Kim jesteś? Tylko {s25}? Nie mam czasu dla takich jak ty! Zostaw mnie! {s2}
 qstr_What_do_you_want?|Czego chcesz?
-qstr_Greetings_{playernam|Pozdrowienia, {playername}. Co mogę dla ciebie zrobić?
+; qstr_Greetings._What_can_|Greetings. What can I do for you?
+qstr_Who_are_you?_A_mere_|Kim jesteś? Tylko {s25}? Nie mam czasu dla takich jak ty! Zostaw mnie! {s2}
 qstr_What?_You_come_to_me|Co? Przychodzisz do mnie i nie wiesz, co robię? Rozejrzyj się wokół. ^^ Widzisz krew? Czy słyszysz płacz? Czy czujesz ich ból? To właśnie robię! Rozbijam rzeczy, żeby znów były lepsze! Jeśli przyjdziesz do mnie, złamany i dotknięty bólem, będę mógł cię ulepszyć!
 qstr_I_am_a_healer._Come_|Jestem uzdrowicielem. Przyjdź do mnie, gdy ty lub twoi towarzysze jesteście poważnie ranni, a ja zrekompensuję twoje obrażenia najlepiej jak potrafię.
+; qstr_You_have_found_the_loca|You have found the local healer
 qstr__Costs_500_Resource_|(Koszt 500 zasobów, 5 wpływów)
 qstr_Ha!_I_can_see_that!_|Ha! Rozumiem! Mogę to zrobić, tak ... Oprócz twojej krwi to nie jest za darmo! {s2}
 qstr_Yes_I_see_that._We_c|Tak widzę to. Możemy zrobić to tak, ale muszę wysłać kilka składników. {s2}

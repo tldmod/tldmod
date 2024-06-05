@@ -301,20 +301,22 @@ mno_aw_chamber_door|Otevřít dveře.
 mno_trade_with_arms_merchant|Navštiv {s40}.
 mno_trade_with_horse_merchant|Navštiv {s41}.
 ; mno_town_prison_door|To the Training Grounds
-mno_dungeon_enter|Hledej ztracená kopí v horách.
-mno_dungeon_enter_door|Otevřít dveře.
-mno_dwarven_warehouse|Navštivte trpasličí sklad
-mno_dwarven_warehouse_door|Vstup do trpasličího skladu
+; mno_talk_to_healer|Speak with {s40}.
 mno_talk_to_castle_commander|Navštívit kasárnu.
 mno_speak_with_elder|Promluv si s {s6}.
+; mno_town_ask|Ask around for persons of import...
 mno_isengard_underground|Jdi do podzemních jeskyní.
 mno_isengard_underground_door|Jdi do podzemních jeskyní
 mno_tirith_toplevel|Vyšplhej na horní patro.
 mno_tirith_toplevel_door|Jít do Citadely!
 mno_erebor_gates|Navštiv Velké Brány.
 ; mno_erebor_gates_door|Go to the Great Gates
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|Odejít...
 mno_town_leave_door|Opustit oblast
+mno_town_find_NPCs_cont|Udělej to.
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 menu_player_initiated_siege_result|Zaútočil jsi na centrum pod vlajkou {s2}.
 menu_disembark|Přeješ si vystoupit?
 mno_disembark_yes|Ano.

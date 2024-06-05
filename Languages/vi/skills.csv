@@ -1,7 +1,7 @@
 skl_trade|Người mặc cả
 skl_trade_desc|Làm cho thợ rèn và thợ cung cấp hợp tác hơn và cung cấp thiết bị tốt hơn. (Kỹ năng nhóm)
 skl_leadership|Khả năng lãnh đạo
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|Quản lý tù nhân
 ; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
 skl_persuasion|Wildcraft
@@ -21,7 +21,7 @@ skl_spotting_desc|Phạm vi nhìn thấy nhóm được tăng thêm 10%% mỗi c
 skl_pathfinding|Tìm đường
 skl_pathfinding_desc|Tốc độ bản đồ của nhóm được tăng thêm 3%% mỗi cấp độ kỹ năng. (Kỹ năng nhóm)
 skl_tactics|Chiến thuật
-skl_tactics_desc|Mỗi hai cấp độ của kỹ năng này sẽ tăng lợi thế đầu trận lên 1. (Kỹ năng nhóm)
+; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Theo dõi
 skl_tracking_desc|Theo dõi trở nên nhiều thông tin hơn. (Kỹ năng nhóm)
 skl_trainer|Huấn luyện viên

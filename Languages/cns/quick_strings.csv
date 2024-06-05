@@ -98,7 +98,6 @@ qstr_Campaign_difficulty:|战役难度：
 qstr_Hard|困难
 qstr_Default|默认
 qstr_Easy|简单
-qstr_Town_NPCs_Always_Acc|城镇NPC总是显示在菜单上：
 qstr_Cutscenes:__|过场动画: 
 qstr_Injuries_for_compani|同伴会受伤: 
 qstr_Permanent_death_for_|领主和同伴永久死亡：
@@ -745,6 +744,7 @@ qstr_A_thunderstorm_from_|从迷雾山脉刮来的雷雨在战场上肆虐。你
 qstr_A_thunderstorm_from_t|从迷雾山脉刮来的雷雨在战场上肆虐。弓箭手很难在这样恶劣的天气下发挥全力。
 qstr_A_poisonous_fog_from|从多尔哥多飘来的毒雾在战场上肆虐。你和你的部队感到全身虚弱。人们都很害怕。
 qstr_A_poisonous_fog_from_|从多尔哥多飘来的毒雾在战场上肆虐。你没有感到任何不同，但你却听到了敌人遭受痛苦的声音并且你能闻到他们的恐惧。
+; qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|你变形成了一头熊！
 qstr_You_got_{reg1}_exper|你在熊形态下获得了{reg1}点经验。
 qstr_Your_ability_to_chan|你换皮的能力已经显现。从现在起，你可以保持人形或是换皮为熊。
@@ -765,13 +765,27 @@ qstr_Fixed_Camera___Right|固定相机—右肩
 qstr_Fixed_Camera___Left_|固定相机—左肩
 qstr_Fixed_Camera___Cente|固定视角 - 正中
 qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
+; qstr_You_happen_upon_an_O|You happen upon an Old Guesthouse. As you inspect the weathered stone building, you notice a group of boys playing among the pillars, the only children you have seen in Minas Tirith.  One of them greets you and you wave back. Your heart is gladdened and you forget, for a brief moment, the sorrow of war.
+qstr_You_look_through_Hen|你端详汉那斯安南，也就是落日之窗。美丽的景色恢复了你对西方和世界的信心。
+; qstr_As_you_follow_the_st|As you follow the straight stairs, cut into the rock of the mountain, and then a second set of stairs, winding as it clings to the cliff-face, you realize that you should not pursue this path any further if you value your own life.
+; qstr_You_are_unable_to_en|You are unable to endure the horrors of the Dead City.
+; qstr_You_endure_the_horro|You endure the horrors of the Dead City and explore its innermost circles. The Silent Watchers recognise your boldness and don't oppose you. (You gained 1 Charisma.)
+; qstr_You_are_unable_to_end|You are unable to endure the horrors of the temple.
+; qstr_You_endure_the_horror|You endure the horrors of the unspeakable rituals in this sacred place. The cruel people of Rhun recognise the strength you have shown and some of their mightiest decide to join your party.
+; qstr_You_find_yourself_in|You find yourself in a deep cavern. Your hackles rise as you look around you, and you begin to feel a strange sense of danger. This is no place for one such as you. Snarling, you make your retreat. When the Shadow has covered the world above, perhaps then, you may return here without fear...
+; qstr_You_find_yourself_in_|You find yourself in a deep cavern. Your hackles rise as you look around you, and you begin to feel a strange sense of danger. Raising your weapon high, you snarl your defiance at the unseen foe in this place. This may have been a place of wonder once... but now, with the true power you have gained, you realize you have nothing to fear from the forgotten past of a broken world.
+; qstr_With_trepidation_you|With trepidation, you look within the silver basin. The water shows you visions of horror; blood and terror and grief. You recoil... but then, the visions vanish and you see instead a clear night sky, with what seems to be a silver boat floating across the expanse. A sense of calm washes over you. Hope is not wholly gone.
+; qstr_The_Lady_s_garden_li|The Lady's garden lies peacefully in the bright daylight. You sense nothing out of the ordinary...
+; qstr_You_kneel_to_pay_you|You kneel to pay your respects to the fallen rulers of this fair realm. Beside you, a shield-maiden of Rohan raises her voice in song. Ne sceal hearpan sweg wigend weccean; ne winfaet gylden guma sceal healdan! Your heart aches to hear her words.
+; qstr_You_wonder_about_the|You wonder about the two rows of burial mounds in front of the gates, yet as a mere {s24}, you do not understand their significance.
+; qstr_Halt!_You_are_not_al|Halt! You are not allowed to enter here!
+; qstr_Halt!_You_are_not_all|Halt! You are not allowed to enter here without the Lady's leave!
 qstr_While_visiting_towns|当访问城镇、据点和营地时，你可以与四处走动的人们谈话。不同派系的人有不同的事可说—一些能够让你理解他们的想法，其它的会分享他们的传闻。他们都能够让你更加了解他们的文化和派系，有时他们可能知道找到神秘地点的线索，或是在野外生存和在魔戒圣战中战斗的技巧和窍门。
 qstr_Cannot_leave_now.|现在不能离开。
 qstr_You_have_found_the_l|你找到了当地铁匠。
 qstr_You_have_found_the_lo|你找到了地方长官。
 qstr_You_have_found_the_loc|你找到了当地仓库。
 qstr_You_have_found_the_c|你找到了当地驻军兵营长官。
-qstr_You_look_through_Hen|你端详汉那斯安南，也就是落日之窗。美丽的景色恢复了你对西方和世界的信心。
 qstr__cancelled_the_{reg1|(取消了杀囚获得的{reg10}经验值)
 qstr_Forming_ranks.|正在列阵。
 qstr_{reg2?You:Your_mount|{reg2?You:Your mount}  受到 {reg1} 点额外伤害!
@@ -1082,6 +1096,13 @@ qstr_the_Hall|大厅
 qstr_the_Great_Chamber_of|瑟瑞尔大殿
 qstr_Stay_indoors_for_som|驻扎一段时间(每晚{reg1}资源点)
 qstr_Camp_outside_for_som|露营一段时间(无额外费用)
+; qstr_As_you_enter_the_vas|As you enter the vast caverns underneath the Ring of Isengard, where thousands of orcs work to supply the growing armies of the White Hand, you gain confidence in the rise of a new power and the demise of the old world.
+; qstr_You_have_found_the_G|You have found the Glittering Caves, one of the marvels of the Northern World.
+; qstr_As_the_party_member_|As the party member with the highest Bargainer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to find the most notable persons in town. [Costs {reg5}/{reg6} influence]
+; qstr_You_have_already_fou|You have already found all persons of interest.
+; qstr_the_captain_of_the_g|the captain of the garrison, and the civil authority.
+; qstr_and_the_captain_of_t|and the captain of the garrison. As this place was recently captured, it has not civil authority.
+; qstr_You_also_heard_of_a_|You also heard of a healer, but you will have to find them on your own.
 qstr_{s4}_s_scouts_have_s|{s4}的斥候目睹并报告了你的失败。你使{s4}蒙羞，并且这次失败的责任完全在你。
 qstr_{s1}_s_Ship|{s1}的船
 qstr_Time_passes...|时间流逝...
@@ -1623,11 +1644,12 @@ qstr_Our_Golden_Valley_gi|黄金谷（罗斯洛立安别名）有大量物资提
 qstr_I_shall_keep_that_in|我会记住这点的。^^ Hantanyel, áva márië!（辛达林语：感谢你，再见！）
 qstr_That_may_be_so_some_|当是如此，路途总有弯曲。^^ Boe i 'waen!（我要走了！）
 qstr_I_seldom_wander_far_|我很少离家很远，但请快些，那里四处游荡的半兽人可能越来越多了。
-qstr_Who_are_you?_A_mere_|你是谁？只不过是个{s25}？我可没时间和你纠缠！让开！{s2}
 qstr_What_do_you_want?|你想要做什么？
-qstr_Greetings_{playernam|你好，{playername}。有什么我可以效劳的吗？
+; qstr_Greetings._What_can_|Greetings. What can I do for you?
+qstr_Who_are_you?_A_mere_|你是谁？只不过是个{s25}？我可没时间和你纠缠！让开！{s2}
 qstr_What?_You_come_to_me|什么？你来找我却不知道我能做什么？看看你的周围。^^你看到那些血渍了吗？你听到那些哭鸣了吗？你感受到他们的疼痛了吗？这就是我干的活！我拆开伤口以便让它们再好起来！如果你浑身伤痛，就来找我，我可以让你感觉好一些！
 qstr_I_am_a_healer._Come_|我是医师。当你或是你的同伴受重伤时可以来找我，我会尽我所能治疗你们的伤口。
+; qstr_You_have_found_the_loca|You have found the local healer
 qstr__Costs_500_Resource_|(失去500 资源点和5点影响力)
 qstr_Ha!_I_can_see_that!_|哈！我看到了！我能做到，没问题……除了你的血，都不是免费的！{s2}
 qstr_Yes_I_see_that._We_c|是的，我看到了。我们可以照顾你，但是我需要一些配药。{s2}

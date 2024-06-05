@@ -57,7 +57,7 @@ ui_crouch|Присесть
 ui_are_you_sure_you_want_to_import_the_character|Вы уверены, что хотите импортировать этого персонажа?
 ui_explanation_strength|Сила: Каждое очко добавляет +1 очко к здоровью. Следующие навыки не могут быть развиты выше 1/3 от Силы: Железная кожа, Сильный бросок, Сильный удар, Сильный выстрел.
 ui_explanation_intelligence|Интеллект: Каждое очко Интеллекта немедленно дает дополнительное очко навыков и немного увеличивает прирост опыта от некоторых действий. Следующие навыки не могут быть развиты выше 1/3 от интеллекта: Обучение, Слежение, Тактика,Поиск следов, Обнаружение, Управление инвентарем, Перевязка ран, Хирургия и Первая помощь.
-ui_explanation_charisma|Харизма: Улучшает ваши позиции среди народа и фракций. Каждый пункт увеличивает размер отряда на +1. Следующие навыки не могут превышать 1/3 Харизмы: Управление пленными, Лесное ремесло, Лидерство, Торговля
+; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
 ui_delivered_number_damage|Нанесено %d урона 
 ui_mission_losses_killed|убито :
 ui_party_losses|%s : %d ранено --- %d убито из %d

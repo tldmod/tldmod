@@ -301,20 +301,22 @@ mno_aw_chamber_door|Открыть дверь.
 mno_trade_with_arms_merchant|Посетить {s40}.
 mno_trade_with_horse_merchant|Посетить {s41}.
 mno_town_prison_door|В тренировочный лагерь
-mno_dungeon_enter|Войти в подземелье.
-mno_dungeon_enter_door|Открыть дверь.
-mno_dwarven_warehouse|Посетить склад гномов
-mno_dwarven_warehouse_door|Войти в склад гномов
+; mno_talk_to_healer|Speak with {s40}.
 mno_talk_to_castle_commander|Войти в казармы фракции {s61}.
 mno_speak_with_elder|Поговорить с местным управителем.
+; mno_town_ask|Ask around for persons of import...
 mno_isengard_underground|Войти в подземелье.
 mno_isengard_underground_door|Войти в подземелье
 mno_tirith_toplevel|Взойти на верхний уровень.
 mno_tirith_toplevel_door|Отправляйся в Цитадель
 mno_erebor_gates|Посетить Великие Врата.
 mno_erebor_gates_door|Пройти в Великие Ворота
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|Продолжить...
 mno_town_leave_door|Покинуть местность
+mno_town_find_NPCs_cont|Изготовить штурмовые лестницы.
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 menu_player_initiated_siege_result|Вы напали на гарнизон под знамёнами {s2}.
 menu_disembark|Вы хотите высадиться?
 mno_disembark_yes|Да.

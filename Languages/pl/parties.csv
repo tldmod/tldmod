@@ -51,13 +51,13 @@ p_town_rhun_main_camp|Główny Obóz Rhun
 p_town_rhun_south_camp|Południowy Posterunek Rhun
 p_town_rhun_north_camp|Północny Posterunek Rhun
 p_town_gundabad|Gundabad
-p_town_gundabad_ne_outpost|Posterunek w Górach Szarych
-p_town_gundabad_nw_outpost|Wąwóz w Górach Szarych
+; p_town_gundabad_ne_outpost|Ruined Dwarf Hold
+; p_town_gundabad_nw_outpost|Goblin Hideout
 p_town_goblin_north_outpost|Miasto Goblinów
 p_town_goblin_south_outpost|Południowy Posterunek Goblinów
 p_town_gundabad_m_outpost|Gundabadzki Posterunek w Mrocznej Puszczy
 p_town_erebor|Erebor
-p_town_ironhill_camp|Kamieniołomy Żelaznych Wzgórz
+; p_town_ironhill_camp|Grey Mountains Gateway
 p_advcamp_gondor|Obozowisko Gondoru
 p_advcamp_rohan|Obozowisko Rohanu
 p_advcamp_isengard|Obozowisko Isengardu
@@ -98,10 +98,6 @@ p_ford_rohan2|Rzeka Entów
 p_ford_fangorn|Rzeka Entów
 p_ford_fangorn2|Mętna Woda
 p_ford_moria|Srebrna żyła
-p_legend_amonhen|Amon Hen
-p_legend_deadmarshes|Martwe Bagna
-p_legend_mirkwood|Mroczna Puszcza
-p_legend_fangorn|Las Fangorn
 p_fangorn_center|Centrum Fangorn
 p_ring_hunter_lair|Nora łowców pierścienia
 p_raft|Tłum ludzi

@@ -165,9 +165,9 @@ mno_strat_tweaks_rank_gain_rate|Velocidad de obtención de rango: {s7}
 mno_strat_tweaks_back|Volver al menú de ajustes.
 menu_camp_action|^^^^^^^^^     ¿Qué objeto?
 mno_camp_drink_water|¡Beber el Agua de los Ents!
-mno_camp_drink_orc_brew|¡Pasar y compartir el brebaje orco entre tus tropas!
+mno_camp_drink_orc_brew|¡Repartir el brebaje orco entre tus tropas!
 mno_camp_drink_miruvor|¡Repartir el Miruvor!
-mno_camp_use_athelas|Usar Athelas para el tratamiento de heridas.
+mno_camp_use_athelas|Usar Athelas para tratar heridas.
 mno_camp_use_drums|Hacer sonar los Tambores de las Profundidades  
 mno_camp_action_4|Atrás.
 menu_assasins_attack_player_won|Has derrotado los asesinos de {s2}, enviados por {s3}.
@@ -203,7 +203,7 @@ mno_encounter_order_attack|Ordenar a tus tropas {reg21?atacar:enfrentarse a ello
 mno_control_allies_menu|Usar Influencia para dar órdenes a tus aliados en el campo de batalla.
 mno_encounter_hide|Esconderse del enemigo...
 mno_special_whip|Acercarse rápidamente hacia ellos restallando el {s4}.
-mno_encounter_attack_bearform|{reg21?Atacar en forma de oso:Cambia de piel y enfréntate al enemigo}.
+mno_encounter_attack_bearform|{reg21?Lanzarte a la batalla en forma de oso:Cambia de piel y enfréntate al enemigo}.
 mno_encounter_leave|Separarse.
 mno_encounter_retreat|Huir, dejando a algún soldado detrás para cubrir tu retirada.
 mno_player_control_allies_simple|Ponerlos bajo tus órdenes y enfrentarse al enemigo.
@@ -301,20 +301,22 @@ mno_aw_chamber_door|Abrir la puerta.
 mno_trade_with_arms_merchant|Visitar {s40}.
 mno_trade_with_horse_merchant|Visitar {s41}.
 mno_town_prison_door|Al campo de entrenamiento
-mno_dungeon_enter|Buscar las lanzas perdidas dentro de la montaña.
-mno_dungeon_enter_door|Abrir la puerta.
-mno_dwarven_warehouse|Visitar el Almacén Enano
-mno_dwarven_warehouse_door|Entrar en el Almacén Enano.
+mno_talk_to_healer|Hablar con  {s40}.
 mno_talk_to_castle_commander|Visitar el cuartel de {s61}.
 mno_speak_with_elder|Hablar con el {s6}.
+mno_town_ask|Preguntar por gente importante...
 mno_isengard_underground|Ir a las cavernas subterráneas.
 mno_isengard_underground_door|Ir a las cavernas subterráneas.
 mno_tirith_toplevel|Ir al nivel superior.
 mno_tirith_toplevel_door|Ir a la Ciudadela
 mno_erebor_gates|Visitar las Grandes Puertas.
 mno_erebor_gates_door|Ir a las Grandes Puertas.
+mno_glittering_caves|Ir a las Cavernas Centelleantes.
+mno_glittering_caves_door|Ir a las Cavernas Centelleantes.
 mno_town_leave|Irse...
 mno_town_leave_door|Salir del área
+mno_town_find_NPCs_cont|Hacerlo.
+menu_town_find_NPCs_end|Hablando con la gente de {s2}, {reg3?has averiguado:{s3} ha averiguado} dónde se encuentran los establos locales y el almacén, la herrería, {s4} ^^{s6}
 menu_player_initiated_siege_result|Atacaste este centro bajo el estandarte de {s2}.
 menu_disembark|¿Quieres desembarcar?
 mno_disembark_yes|Sí.
@@ -440,9 +442,9 @@ menu_death|Te han matado. Aunque la guerra sigue su sangriento curso tú ya no f
 menu_animal_ambush|Tú y tus compañeros os encontráis separados del resto del grupo cuando de repente...
 menu_animal_ambush_success|{reg0?El:Los} {s2} {reg0?cae:caen} ante ti como el trigo seco bajo la guadaña. Poco después todos tus atacantes yacen en el suelo, muertos o heridos. {s3}
 menu_animal_ambush_fail|Los animales {reg0?te muerden y desgarran,:os muerden y desgarran a ti y a tu{reg2?s : }compañero{reg2?s,:,}} pero por suerte consigues mantenerlos a raya y ahuyentarlos. Con un poco de suerte no te atacarán de nuevo.
-menu_isengard_flooding|^^^^^@Te rodean enemigos muertos y aliados triunfantes, incluyendo a los Ents; rugen y braman y aúllan de tal modo que las piedras se resquebrajan y caen alrededor de la torre de Orthanc. Son como una tempestad, despedazando las columnas, arrojando avalanchas de piedras a los fosos, lanzando al aire enormes bloques de roca como si fuesen hojas... No se parece a nada que hayas visto antes.^^ Bregalad -- o Ramaviva, como tú lo conoces -- se acerca a grandes zancadas y se detiene solo para decir: '¡{playername}! ¡Cuidado! Mantente lejos de la Torre; pronto romperemos el dique y traeremos el Isen al valle durante un tiempo. ¡Creo que encontrarás muy difícil quedarte aquí!' Te apresuras a seguir su consejo y te apartas de Orthanc.^^ Cerca de medianoche, Isengard empieza a llenarse de charcos y arroyos de aguas negras. No puedes evitar un estremecimiento al ver grandes columnas de humo y vapor elevándose y enroscándose alrededor de la Torre, hasta que parece un elevado pico de nubes, incandescente por abajo y arriba iluminado por la luna. La cólera de los Ents es lenta, pero posee una fuerza irresistible...
+menu_isengard_flooding|^^^^^@Te rodean enemigos muertos y aliados triunfantes, incluyendo a los Ents; rugen y braman y aúllan de tal modo que las piedras se resquebrajan y caen en torno a la torre de Orthanc. Son como una tempestad, despedazando las columnas, arrojando avalanchas de piedras a los fosos, lanzando al aire enormes bloques de roca como si fuesen hojas... No se parece a nada que hayas visto antes.^^ Bregalad -- o Ramaviva, como tú lo conoces -- se acerca a grandes zancadas y se detiene solo para decir: '¡{playername}! ¡Cuidado! Mantente lejos de la Torre; pronto romperemos el dique y traeremos el Isen al valle durante un tiempo. ¡Creo que encontrarás muy difícil quedarte aquí!' Te apresuras a seguir su consejo y te apartas de Orthanc.^^ Cerca de medianoche, Isengard empieza a llenarse de charcos y arroyos de aguas negras. No puedes evitar un estremecimiento al ver grandes columnas de humo y vapor elevándose y enroscándose alrededor de la Torre, hasta que parece un elevado pico envuelto en nubes, incandescente por abajo y arriba iluminado por la luna. La cólera de los Ents es lenta, pero posee una fuerza irresistible...
 mno_isengard_continue|Continuar
-menu_build_your_scene|Puedes crear tu propio escenario de batalla, utilizando una de las ranuras disponibles abajo y activando el modo de edición (primero tienes que marcar la casilla correspondiente en las opciones del lanzador inciar el juego, entrar en un esenario de batalla y pulsar Ctrl+E para acceder al editor). Puedes enviarnos los escenarios que hayas creado (los archivos sco de dentro de la carpeta TLD/SceneObj) y si tu creación es lo bastante buena, podría aparecer en versiones posteriores como uno de los mapas de batalla aleatorios.^^ Intenta especificar en qué región del mapa quieres que aparezca.^ Un par de consejos: evita las aguas profundas, las montañas empinadas y otros obstáculos infranqueables, a no ser que tengas expperiencia creando mapas y sepas usar las barreras y las «AI Mesh» para hacer que la IA de las tropas vaya donde tú quieras que vaya y no se meta donde no debe.^ (Los puntos de entrada del 0 al 1 son para atacantes, el 4 para los defensores, ni se te ocurra tocar los que van del 5 al 8)
+menu_build_your_scene|Puedes crear tu propio escenario de batalla, utilizando una de las ranuras disponibles abajo y activando el modo de edición (primero tienes que activar el modo de edición en las opciones del lanzador al iniciar el juego, entrar en un escenario de batalla y pulsar Ctrl+E para acceder al editor). Puedes enviarnos los escenarios que hayas creado (los archivos sco de la carpeta TLD/SceneObj) y si tu creación es lo bastante buena, podría aparecer en versiones posteriores como uno de los mapas de batalla aleatorios.^^ Intenta especificar en qué región del mapa quieres que aparezca.^ Un par de consejos: evita las aguas profundas, las montañas empinadas y otros obstáculos infranqueables, a no ser que tengas experiencia creando mapas y sepas usar las barreras y las «AI Mesh» para hacer que la IA de las tropas vaya donde tú quieras que vaya y no se meta donde no debe.^ (Los puntos de entrada del 0 al 1 son para atacantes, el 4 para los defensores, ni se te ocurra tocar los que van del 5 al 8)
 mno_scene1|Llanura grande (archivo: scn custom 1.sco)
 mno_scene2|Llanura mediana (archivo: scn custom 2.sco)
 mno_scene3|Llanura pequeña (archivo: scn custom 3.sco)

@@ -136,8 +136,8 @@ mno_game_options_formations|Formazioni di battaglia e IA: {s7}
 mno_game_options_siege_ai|IA Assedio Avanzata: {s7}
 mno_game_options_town_menu|PNG delle città sempre accessibili dal Menu: {s7}
 mno_game_options_cutscenes|Scene d'intermezzo: {s7}
-mno_game_options_injuries|Ferite per gli eroi: {s7}.
-mno_game_options_death|Morte permanente per nobili ed eroi: {s7}.
+mno_game_options_injuries|Ferite per i compagni: {s7}.
+mno_game_options_death|Morte permanente per nobili e compagni: {s7}.
 mno_game_options_death2|Morte permanente per il giocatore (sei TU !): {s7}.
 mno_game_options_morale|Calcolo del morale in battaglia: {s7}
 mno_game_options_animal_ambushes|Imboscate degli animali: {s7}
@@ -301,20 +301,22 @@ mno_aw_chamber_door|Apri la porta.
 mno_trade_with_arms_merchant|Visita {s40}.
 mno_trade_with_horse_merchant|Visita {s41}.
 mno_town_prison_door|Al campo d'addestramento
-mno_dungeon_enter|Cerca le lance perdute all'interno delle montagne.
-mno_dungeon_enter_door|Apri la porta.
-mno_dwarven_warehouse|Visita il Magazzino dei Nani
-mno_dwarven_warehouse_door|Entra nel Magazzino dei Nani
+mno_talk_to_healer|Parla con {s40}.
 mno_talk_to_castle_commander|Visita le caserme di {s61}.
 mno_speak_with_elder|Parla con {s6}.
+mno_town_ask|Chiedete in giro se vi sono persone importanti...
 mno_isengard_underground|Dirigiti verso le caverne sotterranee 
 mno_isengard_underground_door|Dirigiti verso le caverne sotterranee
 mno_tirith_toplevel|Raggiungi il livello più alto
 mno_tirith_toplevel_door|Sali alla Cittadella
 mno_erebor_gates|Visita i Grandi Cancelli.
 mno_erebor_gates_door|Va verso i Grandi Cancelli
+mno_glittering_caves|Vai alle Grotte Scintillanti.
+mno_glittering_caves_door|Vai alle Grotte Scintillanti.
 mno_town_leave|Vattene...
 mno_town_leave_door|Abbandona l'area
+mno_town_find_NPCs_cont|Fallo.
+menu_town_find_NPCs_end|Parlando con la gente di {s2}, {reg3?hai scoperto:{s3} ha scoperto} l'ubicazione delle stalle e del magazzino locali, della fucina, {s4} ^^{s6}
 menu_player_initiated_siege_result|Hai attaccato questo centro sotto lo stendardo di {s2}.
 menu_disembark|Desideri sbarcare ?
 mno_disembark_yes|Si.

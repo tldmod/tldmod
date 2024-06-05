@@ -1,7 +1,7 @@
 skl_trade|Trgovac
 ; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Vodstvo
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|Upravljanje zatvorenicima
 ; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
 skl_persuasion|Preživljavanje u divljini
@@ -21,7 +21,7 @@ skl_spotting_desc|Doseg pogleda družine se povećava za 10%%  za svaki dodatni 
 skl_pathfinding|Pronalazak puta
 skl_pathfinding_desc|Za svaki dodatni nivo vještine brzina otkrivanja mape za Družinu se povećava za 3%%. (vještina družine)
 skl_tactics|Taktika
-skl_tactics_desc|Svaka dodatna dva nivoa ove vještine povećavaju početnu prednost za 1. (vještina družine)
+; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Praćenje
 skl_tracking_desc|Više se može pročitati iz traga. (vještina družine)
 skl_trainer|Trener

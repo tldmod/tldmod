@@ -51,13 +51,13 @@ p_town_rhun_main_camp|Hlavní tábor Východňanů
 p_town_rhun_south_camp|Jižní tábor Východňanů
 p_town_rhun_north_camp|Severní tábor Východňanů
 p_town_gundabad|Gundabad
-p_town_gundabad_ne_outpost|Država Šedých hor
-p_town_gundabad_nw_outpost|Rokle Šedých hor
+; p_town_gundabad_ne_outpost|Ruined Dwarf Hold
+; p_town_gundabad_nw_outpost|Goblin Hideout
 p_town_goblin_north_outpost|Gobliní město
 p_town_goblin_south_outpost|Jižní gobliní hlídka
 p_town_gundabad_m_outpost|Gundabadská hlídka v Temném Hvozdu
 p_town_erebor|Erebor
-p_town_ironhill_camp|Lom Železných Hor
+; p_town_ironhill_camp|Grey Mountains Gateway
 p_advcamp_gondor|Pochodový tábor Gondoru
 p_advcamp_rohan|Pochodový tábor Rohanu
 p_advcamp_isengard|Pochodový tábor Železného Pasu
@@ -98,10 +98,6 @@ p_ford_rohan2|Entva
 p_ford_fangorn|Entva
 p_ford_fangorn2|Lipava
 p_ford_moria|Stříberka
-p_legend_amonhen|Amon Hen
-p_legend_deadmarshes|Mrtvé močály
-p_legend_mirkwood|Temný hvozd
-p_legend_fangorn|Enti snem
 p_fangorn_center|Střed Fangornu
 p_ring_hunter_lair|Doupě hledačů prstenu
 p_raft|Voraři

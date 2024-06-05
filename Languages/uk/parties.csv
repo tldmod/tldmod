@@ -51,13 +51,13 @@ p_town_rhun_main_camp|Головний табір Руну
 p_town_rhun_south_camp|Південна застава Руну
 p_town_rhun_north_camp|Північна застава Руну
 p_town_gundabad|Гундабад
-p_town_gundabad_ne_outpost|Сірі гори тримають
-p_town_gundabad_nw_outpost|Сірі гори Яр
+; p_town_gundabad_ne_outpost|Ruined Dwarf Hold
+; p_town_gundabad_nw_outpost|Goblin Hideout
 p_town_goblin_north_outpost|Гоблінабад
 p_town_goblin_south_outpost|Південний аванпост гоблінів
 p_town_gundabad_m_outpost|Гундабадський аванпост в Темноліссі
 p_town_erebor|Еребор
-p_town_ironhill_camp|Каменярня гномів в Залізних пагорбах
+; p_town_ironhill_camp|Grey Mountains Gateway
 p_advcamp_gondor|Гондорський передовий табір
 p_advcamp_rohan|Роганський передовий табір
 p_advcamp_isengard|Ізенгардський передовий табір
@@ -98,10 +98,6 @@ p_ford_rohan2|Ентов купіль
 p_ford_fangorn|Ентов купіль
 p_ford_fangorn2|Світлимка
 p_ford_moria|Келебрант
-p_legend_amonhen|Амон-Хен
-p_legend_deadmarshes|Мертвецькі болота
-p_legend_mirkwood|Темнолісся
-p_legend_fangorn|Рада Ентів
 p_fangorn_center|Центр Фанґорну
 p_ring_hunter_lair|Лігво Мисливців за Перснем
 p_raft|Плотогони

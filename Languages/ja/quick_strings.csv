@@ -98,7 +98,6 @@ qstr_Advanced|高度
 qstr_Hard|難しい
 qstr_Default|標準
 qstr_Easy|やさしい
-qstr_Town_NPCs_Always_Acc|メニューから拠点のNPCにアクセス:
 qstr_Cutscenes:__|カットシーン:
 qstr_Injuries_for_compani|コンパニオンの負傷:
 qstr_Permanent_death_for_|指揮官とコンパニオンが死亡する:
@@ -745,6 +744,7 @@ qstr_A_thunderstorm_from_|霧ふり山から降り注ぐ激しい雷雨が戦場
 qstr_A_thunderstorm_from_t|霧ふり山から降り注ぐ激しい雷雨が戦場を覆っています。 弓兵は思うように働く事ができません。
 qstr_A_poisonous_fog_from|ドル・グルドゥアから流れてきた不快な濃霧が戦場に漂っています。 あなたとあなたの兵たちは体調が悪くなりました。兵たちは恐怖を感じています。
 qstr_A_poisonous_fog_from_|ドル・グルドゥアから流れてきた不快な濃霧が戦場に漂っています。 あなたはこれといった影響は感じませんが、敵勢の苦しむ声が聞こえてきます。敵は恐怖しているようです。
+; qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|あなたは熊に姿を変えました！
 qstr_You_got_{reg1}_exper|あなたは熊の姿で{reg1}の経験値を獲得しました。
 qstr_Your_ability_to_chan|あなたが姿を変える能力を持つ事は明らかになりました。 これよりあなたは自然において、 人間であると同時に熊としても認識されます。
@@ -765,13 +765,27 @@ qstr_Fixed_Camera___Right|固定カメラ - 右肩
 qstr_Fixed_Camera___Left_|固定カメラ - 左肩
 qstr_Fixed_Camera___Cente|固定カメラ - 中央
 qstr_Shield_is_too_big_to|盾は大きすぎて弓と同時には扱えません。
+; qstr_You_happen_upon_an_O|You happen upon an Old Guesthouse. As you inspect the weathered stone building, you notice a group of boys playing among the pillars, the only children you have seen in Minas Tirith.  One of them greets you and you wave back. Your heart is gladdened and you forget, for a brief moment, the sorrow of war.
+qstr_You_look_through_Hen|あなたは夕陽の窓とも呼ばれるヘンネス・アンヌーンを見て回った。 その美しさに、あなたは西方とその底力に対する認識をあらためた。
+; qstr_As_you_follow_the_st|As you follow the straight stairs, cut into the rock of the mountain, and then a second set of stairs, winding as it clings to the cliff-face, you realize that you should not pursue this path any further if you value your own life.
+; qstr_You_are_unable_to_en|You are unable to endure the horrors of the Dead City.
+; qstr_You_endure_the_horro|You endure the horrors of the Dead City and explore its innermost circles. The Silent Watchers recognise your boldness and don't oppose you. (You gained 1 Charisma.)
+; qstr_You_are_unable_to_end|You are unable to endure the horrors of the temple.
+; qstr_You_endure_the_horror|You endure the horrors of the unspeakable rituals in this sacred place. The cruel people of Rhun recognise the strength you have shown and some of their mightiest decide to join your party.
+; qstr_You_find_yourself_in|You find yourself in a deep cavern. Your hackles rise as you look around you, and you begin to feel a strange sense of danger. This is no place for one such as you. Snarling, you make your retreat. When the Shadow has covered the world above, perhaps then, you may return here without fear...
+; qstr_You_find_yourself_in_|You find yourself in a deep cavern. Your hackles rise as you look around you, and you begin to feel a strange sense of danger. Raising your weapon high, you snarl your defiance at the unseen foe in this place. This may have been a place of wonder once... but now, with the true power you have gained, you realize you have nothing to fear from the forgotten past of a broken world.
+; qstr_With_trepidation_you|With trepidation, you look within the silver basin. The water shows you visions of horror; blood and terror and grief. You recoil... but then, the visions vanish and you see instead a clear night sky, with what seems to be a silver boat floating across the expanse. A sense of calm washes over you. Hope is not wholly gone.
+; qstr_The_Lady_s_garden_li|The Lady's garden lies peacefully in the bright daylight. You sense nothing out of the ordinary...
+; qstr_You_kneel_to_pay_you|You kneel to pay your respects to the fallen rulers of this fair realm. Beside you, a shield-maiden of Rohan raises her voice in song. Ne sceal hearpan sweg wigend weccean; ne winfaet gylden guma sceal healdan! Your heart aches to hear her words.
+; qstr_You_wonder_about_the|You wonder about the two rows of burial mounds in front of the gates, yet as a mere {s24}, you do not understand their significance.
+; qstr_Halt!_You_are_not_al|Halt! You are not allowed to enter here!
+; qstr_Halt!_You_are_not_all|Halt! You are not allowed to enter here without the Lady's leave!
 qstr_While_visiting_towns|町や拠点、野営のなかでは、歩き回っている人々と話をすることができます。 話の内容は各勢力によって違い、 自分たちの考えだったり、 うわさ話だったりします。 どちらもその人物の文化と所属勢力についての理解を深めるだけのものですが、 秘密の場所のヒントや、 旅をする上や指輪戦争を戦う上でのヒントやコツを話してくれる事もあります。
 qstr_Cannot_leave_now.|今は離脱できません。
 qstr_You_have_found_the_l|拠点の鍛冶屋を見つけました。
 qstr_You_have_found_the_lo|拠点の管理責任者を見つけました。
 qstr_You_have_found_the_loc|拠点の貯蔵所を見つけました。
 ; qstr_You_have_found_the_c|You have found the captain of the garrison.
-qstr_You_look_through_Hen|あなたは夕陽の窓とも呼ばれるヘンネス・アンヌーンを見て回った。 その美しさに、あなたは西方とその底力に対する認識をあらためた。
 qstr__cancelled_the_{reg1|(捕虜を殺害して得た経験値{reg10}をキャンセルしました)
 qstr_Forming_ranks.|横陣を組みます。
 qstr_{reg2?You:Your_mount|{reg2?あなた:あなたの馬}は追加ダメージを{reg1}受けました！
@@ -1082,6 +1096,13 @@ qstr_the_Hall|大広間
 qstr_the_Great_Chamber_of|スロールの朝見の間
 qstr_Stay_indoors_for_som|屋内に宿営する(一晩につきリソースポイントを{reg1}消費します)
 qstr_Camp_outside_for_som|野外に野営を張る(無料)
+; qstr_As_you_enter_the_vas|As you enter the vast caverns underneath the Ring of Isengard, where thousands of orcs work to supply the growing armies of the White Hand, you gain confidence in the rise of a new power and the demise of the old world.
+; qstr_You_have_found_the_G|You have found the Glittering Caves, one of the marvels of the Northern World.
+; qstr_As_the_party_member_|As the party member with the highest Bargainer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to find the most notable persons in town. [Costs {reg5}/{reg6} influence]
+; qstr_You_have_already_fou|You have already found all persons of interest.
+; qstr_the_captain_of_the_g|the captain of the garrison, and the civil authority.
+; qstr_and_the_captain_of_t|and the captain of the garrison. As this place was recently captured, it has not civil authority.
+; qstr_You_also_heard_of_a_|You also heard of a healer, but you will have to find them on your own.
 qstr_{s4}_s_scouts_have_s|{s4}の斥候が、あなたの任務失敗を報告しました。 この{s4}に恥をかかせた失敗の全責任は、 あなたひとりにあります。
 qstr_{s1}_s_Ship|{s1}の船
 qstr_Time_passes...|時間が過ぎていきます・・・
@@ -1623,11 +1644,12 @@ qstr_Our_Golden_Valley_gi|我々の黄金の谷間はたくさんの美しさを
 qstr_I_shall_keep_that_in|覚えておこう。^^ハーンターニエル、アーヴァ・マーリー！
 qstr_That_may_be_so_some_|そうかも知れない。道はいつもまっすぐとは限らないものだ。^^ボア・イ・ウィーン！
 qstr_I_seldom_wander_far_|私が故郷から遠く離れる事はほとんどない。 急いでこの場所を離れるといい。 まだこの辺りをゴブリンがうろついているかも知れない。
-qstr_Who_are_you?_A_mere_|なんだおまえは？ただの{s25}だと？ おまえなどに構っているヒマはない！去れ！ {s2}
 qstr_What_do_you_want?|何か用か？
-qstr_Greetings_{playernam|ごきげんよう、{playername}殿。何かご用かな？
+; qstr_Greetings._What_can_|Greetings. What can I do for you?
+qstr_Who_are_you?_A_mere_|なんだおまえは？ただの{s25}だと？ おまえなどに構っているヒマはない！去れ！ {s2}
 qstr_What?_You_come_to_me|なんですって？私が何者なのかご存じないのに、ここへ来たのですか？ 自分のまわりをご覧になってください。^^血のりがあるでしょう？泣き声が聞こえませんか？ 彼らの苦痛が感じられませんか？これが私の仕事ですよ！ 私は破壊と修復でもって、彼らを改良するのです！ あなたが故障と痛みに苦しんで私のところへ来れば、 私はあなたを改良してさしあげますよ！
 qstr_I_am_a_healer._Come_|私は治療師です。あなた自身か部下の誰かが重傷を負ってしまったら、 私に診せてください。私にできる限りの治療を施しましょう。
+; qstr_You_have_found_the_loca|You have found the local healer
 qstr__Costs_500_Resource_|(リソースポイントを500、影響力ポイントを5消費します)
 qstr_Ha!_I_can_see_that!_|ああ！なるほど、それはそうでしょう・・・あなたの血液とは別に、 治療費は頂きますよ！ {s2}
 qstr_Yes_I_see_that._We_c|なるほど、確かにそうだろう。治療することはできるが、 いろいろと材料が必要になる。 {s2}

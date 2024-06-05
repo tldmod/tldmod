@@ -1,7 +1,7 @@
 skl_trade|Bargevinst
 ; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Lederskab
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Leader skill)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|Fange Administration
 ; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
 ; skl_persuasion|Wildcraft
@@ -21,7 +21,7 @@ skl_spotting_desc|Holdets syns rækkevide er forhøjet med 10%% per færdigheds 
 skl_pathfinding|Sti-finder
 skl_pathfinding_desc|Holdets kort hastighed er forhøjet med 3%% per færdighed niveau. (Hold færdighed) 
 skl_tactics|Taktik
-skl_tactics_desc|Hvert andet niveau af denne færdighed forhøjer start kamp fordel med 1. (Hold færdighed)
+; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Spore
 skl_tracking_desc|Spor bliver mere informative. (Hold færdighed)
 skl_trainer|Træner

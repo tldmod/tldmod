@@ -1,7 +1,7 @@
 skl_trade|Penawar
 skl_trade_desc|Menjadikan pandai besi dan ahli pasokan lebih kooperatif dan menawarkan peralatan yang lebih baik. (Keterampilan pasukan)
 skl_leadership|Kepemimpinan
-skl_leadership_desc|Setiap poin meningkatkan jumlah maksimum pasukan yang dapat Anda perintahkan sebanyak 5, meningkatkan semangat pasukan dan koherensi dalam pertempuran. Membuat semakin banyak relawan yang bersedia mengikuti Anda. (Keterampilan pemimpin)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|Manajemen Tawanan
 skl_prisoner_management_desc|Setiap level keterampilan ini meningkatkan jumlah maksimum tahanan sebesar %d. Meningkatkan peluang menangkap dan menahan tahanan. (Keterampilan pemimpin)
 skl_persuasion|kerajinan liar
@@ -21,7 +21,7 @@ skl_spotting_desc|Jarak penglihatan parti bertambah menjadi 10 %% per level skil
 skl_pathfinding|Pencari Jejak 
 skl_pathfinding_desc|Kecepatan peta grup meningkat sebesar 3%% per level keterampilan. (Keterampilan pasukan)
 skl_tactics|Taktik
-skl_tactics_desc|Setiap dua level skill ini dapat meningkatkan tingkat keberuntungan pertempuran sebesar 1. (Skill Parti)
+; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Pelacakan
 skl_tracking_desc|Trek menjadi lebih informatif. (Keterampilan pasukan)
 skl_trainer|Pelatih

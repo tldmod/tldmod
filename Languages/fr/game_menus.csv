@@ -301,20 +301,22 @@ mno_aw_chamber_door|Ouvrir la porte.
 mno_trade_with_arms_merchant|Visiter {s40}.
 mno_trade_with_horse_merchant|Visiter {s41}.
 mno_town_prison_door|Vers le terrain d'entraînement
-mno_dungeon_enter|Chercher les lances perdues dans les montagnes.
-mno_dungeon_enter_door|Ouvrir la porte.
-mno_dwarven_warehouse|Visiter l’entrepôt des nains.
-mno_dwarven_warehouse_door|Entrer dans l'entrepôt des nains.
+; mno_talk_to_healer|Speak with {s40}.
 mno_talk_to_castle_commander|Se rendre à la caserne de {s61}.
 mno_speak_with_elder|Parler avec le {s6}.
+; mno_town_ask|Ask around for persons of import...
 mno_isengard_underground|Aller vers les cavernes souterraines.
 mno_isengard_underground_door|Aller dans les grottes souterraines
 mno_tirith_toplevel|Grimper au dernier niveau.
 mno_tirith_toplevel_door|Aller à la Citadelle
 mno_erebor_gates|Visiter les Grandes Portes.
 mno_erebor_gates_door|Aller aux Grandes Portes
+; mno_glittering_caves|Go to the Glittering Caves.
+; mno_glittering_caves_door|Go to the Glittering Caves
 mno_town_leave|Partir...
 mno_town_leave_door|Quitter la zone.
+mno_town_find_NPCs_cont|Faites le.
+; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
 menu_player_initiated_siege_result|Vous attaquez ce lieu sous la bannière de {s2}.
 menu_disembark|Souhaitez-vous débarquer ?
 mno_disembark_yes|Oui.

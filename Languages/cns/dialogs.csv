@@ -57,7 +57,7 @@ dlga_hobbit_pippin_talk_met:close_window|你好，信使皮平。
 ; dlga_treebeard_isengard_3:close_window|Ho, hmm, I owe you great thanks. I had not expected any help from others, and it is good to learn that our Last March may not end quite so badly, after all! Since the tree-killer is dealt with, we should now be able to keep Rohan's northern marches safe, for a while.
 ; dlga_treebeard_isengard_3:close_window.1|Hmm? Ho, hmm… ah. So, you have come all the way from Rohan, have you? Hmm. I have heard some news from the south, yes. Good news, news to gladden all hearts. I have good will to Theoden King, and I am glad he was aided by the likes of you in his hour of peril, hmm! We have managed here well enough, and now we Ents will see to it that Saruman does not set foot beyond Isengard, without our leave. The Isen flows well again, and soon I hope the water will once more be fit to drink. Ha, hm, I feel a song coming on. A song of the old days… the old trees I knew…
 ; dlga_start:ent_encounter|Hrooom! What do you want?
-; dlga_ent_encounter:close_window|Hail, tree shepherd! Thank you for keeping these marshes safe. I will not stand in your way.
+; dlga_ent_encounter:close_window|Hail, tree shepherd! Thank you for keeping these marches safe. I will not stand in your way.
 dlga_start:treebeard_introduce_1|(你正注视着一个奇妙生物。他身材很高，有着树皮样的僵硬皮肤和一头如叶般茂盛的头发；苔藓也覆盖了他身体的一部分。但现在，唯一引起你注意的仅仅是一双眼睛。那双深邃的棕色眼睛闪着绿色的光芒，此刻正缓慢、严肃，但又极具穿透力地打量着你。你觉得那双眼睛后面是一口深不见底的古井，装满了岁月的记忆，以及漫长、和缓、稳定的思虑。但它们的表面闪耀着现实，就像洒在一棵巨树的外层树叶上的细碎阳光，或是深幽湖水表面涟漪的粼粼波光。)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(你张了张嘴，想要说些什么，但一种奇怪的窒息感忽然落在你身上，就好像空气忽然变得太薄或太少，以至于不能呼吸。你近乎绝望的深吸了一口气，设法摆脱之前的状态；与此同时，那个如树般的生物略微降低注视你的强度，但在你的周围，更多的树状生物正在将他们的目光投向你，就好像希望你说些什么…)
 dlga_treebeard_introduce_2:treebeard_introduce_3|请原谅我的侵扰…我只是一个寻求避难所的疲惫旅行者而已。我的名字是{playername}。 不知我是否有幸进一步了解您？
@@ -658,7 +658,6 @@ dlga_castle_guard_intro_2:castle_guard_intro_2|请把你的武器交给我，没
 dlga_castle_guard_intro_2:close_window|给，拿好了。我进去了。
 dlga_castle_guard_intro_2:castle_guard_intro_2b|不行，我是不会把武器交给任何人的！
 dlga_castle_guard_intro_2b:close_window|那你不能进去。
-dlga_start:castle_gate_guard_talk|你想要做什么？
 dlga_castle_gate_guard_pretalk:castle_gate_guard_talk|什么事儿？
 dlga_castle_gate_guard_talk:castle_gate_open|我们正在找地方过夜。你能让我们进去么？
 dlga_castle_gate_guard_talk:request_meeting_castle_lord|我想和这座城堡的主人谈谈。
@@ -723,8 +722,9 @@ dlga_kill_scout_8:close_window|好吧，好吧。走这边！
 dlga_woodelf_help_1:woodelf_help_2.1|我从没见过如此大的半兽人。真是些肮脏的东西…不用担心，我是一名正为未来大战做准备的士兵。
 dlga_woodelf_help_2:woodelf_help_3.1|你是一名士兵？毫无疑问！你精湛的武艺我刚刚已经见识过了。看来今天的确走运，我应该趁此机会返回村庄，把这群肮脏野兽的消息通知给我的村民们。
 dlga_woodelf_help_3:close_window|祝你一路平安，托巴尔。我想我们会再见面的。
-dlga_healers_ask:healer_who|你想要做什么？
-dlga_healers_ask:healer_wound_ask|我和我的人有一些时间无法愈合的伤口，你能帮助我们疗伤吗？
+dlga_healers_meet:healer_who|你想要做什么？
+; dlga_healers_meet:healers_ask|I need your help.
+; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
 dlga_healers_ask:healer_injured_ask|我和我的人受伤了，而且我们没有时间来等伤口自己好。你能帮我们吗？
 dlga_healers_ask:close_window|没什么。
 dlga_healers_injured_check:healers_injured_heal|来，加入我们。
@@ -741,8 +741,8 @@ dlga_sad_elf_2:sad_elf_choice|啊，来自大海的故事。以及那一边。�
 dlga_sad_elf_choice:sad_elf_leave|我可以理解你的苦衷。你已经在战争中尽了你应尽的职责了。你现在可以走了。
 dlga_sad_elf_choice:sad_elf_no|精灵们不能抛弃中土与黑暗之中不顾。这场战争我们不仅仅是为自己而战，我们中的每一人都会发挥他们自己的作用。我不能让你离开。[LeadershipCheck]
 dlga_sad_elf_leave:close_window|感谢你，我的{lord/lady}！^^向大海前进，向大海前进！白色的海鸥在鸣叫，^海风在吹拂，白色的浪花在翻滚。^向西，一路向西，圆日在落下。
-; dlga_start:close_window.16|You have come just in time. Let us join our forces now and teach our enemy a lesson.
-; dlga_start:close_window.17|You are making a big mistake by fighting against us.
+; dlga_start:close_window.15|You have come just in time. Let us join our forces now and teach our enemy a lesson.
+; dlga_start:close_window.16|You are making a big mistake by fighting against us.
 dlga_start:ally_thanks_meet|我不觉得我们曾在正式场合见过面，我的朋友。你刚刚救了我的命，但我还不知道你的名字…
 dlga_start:ally_thanks_meet.1|你出手的正是时候，陌生人。我叫{s1}。我是否能有幸知道你的名字？
 dlga_start:ally_thanks_meet.2|感谢相助，陌生人。我想我们还没有正式介绍过自己，不是么？你叫什么名字？
@@ -750,13 +750,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|我叫{playername}。
 dlga_ally_thanks_meet_2:close_window|这的确是一次非常愉快的会面，{playername}。我叫{s1}，你的帮助我将终生难忘。如果有任何需要我的地方，请直接告诉我…
 dlga_ally_thanks_meet_2:close_window.1|你好{playername}。你刚刚做的事情帮到了我，我欠你一个人情。希望有一天我能找到机会反过来帮助你。
 dlga_ally_thanks_meet_2:close_window.2|你好{playername}。我叫{s1}。谢谢你的援助，期待和你下次见面。
-; dlga_start:close_window.18|Again you save our necks, {playername}! Truly, you are the best of friends. {s43}
-; dlga_start:close_window.19|You arrived just in the nick of time! {playername}. You have my deepest thanks! {s43}
-; dlga_start:close_window.20|You turned up just in time, {playername}. I will not forget your help. {s43}
-; dlga_start:close_window.21|Good to see you here, {playername}. {s43}
-; dlga_start:close_window.24|Thank you for your help, Commander. You saved {reg1?our lives:my life} out there.
-; dlga_start:close_window.25|Thank you for your help, Commander. Things didn't look very well for us but then you came up and everything changed.
-; dlga_start:close_window.26|Thank you for your help, Commander. It was fortunate to have you nearby.
+; dlga_start:close_window.17|Again you save our necks, {playername}! Truly, you are the best of friends. {s43}
+; dlga_start:close_window.18|You arrived just in the nick of time! {playername}. You have my deepest thanks! {s43}
+; dlga_start:close_window.19|You turned up just in time, {playername}. I will not forget your help. {s43}
+; dlga_start:close_window.20|Good to see you here, {playername}. {s43}
+; dlga_start:close_window.23|Thank you for your help, Commander. You saved {reg1?our lives:my life} out there.
+; dlga_start:close_window.24|Thank you for your help, Commander. Things didn't look very well for us but then you came up and everything changed.
+; dlga_start:close_window.25|Thank you for your help, Commander. It was fortunate to have you nearby.
 dlga_start:freed_hero_answer|你救了我的朋友，我欠你一个人情。
 dlga_freed_hero_answer:freed_hero_answer_1|你哪都别想去了。你现在是我的阶下囚了！
 dlga_freed_hero_answer_1:close_window|哎。我就没有转运的那一天么？
@@ -845,7 +845,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|弓箭
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|投掷武器
 dlga_trainer_choose_weapon_player:trainer_pretalk|不了，我改变主意了。
 dlga_trainer_begin_training:close_window|很好，让我们开始吧。等你完成训练之后再来找我。
-; dlga_start:close_window.27|Away with you, vile beggar.
+; dlga_start:close_window.26|Away with you, vile beggar.
 dlga_start:mayor_begin|日安，大人。
 dlga_start:mayor_talk|你好陌生人，你似乎是第一次来{s9}。我是这里的行政长官。
 dlga_start:mayor_begin.1|日安，{playername}。
@@ -931,8 +931,8 @@ dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|我打算派遣一
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|好，我会保护好他们的。
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|很遗憾我的队伍中没那么多人。
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|抱歉，我现在不能做这件事。
-; dlga_start:close_window.28|We can cover the rest of the way ourselves. Thanks.
-; dlga_start:close_window.29|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Thanks for escorting us. Good luck.^^[earned {reg14} Resource Points of {s14}]
+; dlga_start:close_window.27|We can cover the rest of the way ourselves. Thanks.
+; dlga_start:close_window.28|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Thanks for escorting us. Good luck.^^[earned {reg14} Resource Points of {s14}]
 dlga_start:merchant_caravan_intro_1|向你问好。你一定是我们的护卫，对吧？
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|没错，我是{playername}。我奉命带你前往{s1}。
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|很好，很高兴我们并不是单独前往，你现在想要我们做什么？
@@ -982,7 +982,7 @@ dlga_prisoner_chat_3:prisoner_slaughter|你恰巧是我们的下一顿晚餐！{
 dlga_prisoner_chat_4:close_window|哈，说得好像我是自愿被关起来的一样？滚开！
 dlga_prisoner_slaughter:prisoner_slaughter_02|总有一天你要为此付出代价的！
 dlga_prisoner_slaughter:close_window|总有一天你要为此付出代价的…啊嘎噶！…
-; dlga_start:close_window.30|Away with you, vile beggar.
+; dlga_start:close_window.29|Away with you, vile beggar.
 dlga_start:town_merchant_talk|向你问好，指挥官，我今天能有幸为你服务么？
 dlga_start:town_merchant_talk.1|日安。有什么我可以效劳的吗？
 dlga_town_merchant_talk:trade_requested_weapons|我需要新的装备，跟我说说你的仓库中都有什么好东西。
@@ -1001,6 +1001,7 @@ dlga_player_upgrade_troll_not_enough:close_window|浪费我的时间...
 dlga_player_upgrade_troll_buy_done:close_window|对... 对！ 过来你个傻子,你
 dlga_trade_requested_weapons:merchant_trade|啊，好的指挥官。你在任何地方都不会找到比我这儿更好的货物了。
 dlga_trade_requested_horse:merchant_trade|我这的坐骑不论是用来杀人还是旅行都是绝对的首选，过了这个村可就没这个店了！
+; dlga_trade_requested_horse:merchant_trade.1|You have a fine eye for horses, {sir/madam}. You won't find better beasts than these anywhere else.
 dlga_merchant_trade:town_merchant_talk|还有其他的事情么？
 dlga_town_merchant_talk:merchant_gossip|跟我说说最近人们都在谈论些什么？
 dlga_town_merchant_talk:close_window|再见。
@@ -1021,14 +1022,14 @@ dlga_start:player_castle_guard_talk|什么事儿？指挥官。
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|士兵，有什么不寻常的动静么？
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|一切正常，指挥官。
 dlga_player_castle_guard_talk_3:close_window|好。保持警惕。
-; dlga_start:close_window.31|Good day, Commander. It's good having you here in {s10}.
-; dlga_start:close_window.32|Mind your manners around here and we'll have no trouble.
+; dlga_start:close_window.30|Good day, Commander. It's good having you here in {s10}.
+; dlga_start:close_window.31|Mind your manners around here and we'll have no trouble.
 dlga_start:hall_guard_easter_egg|啊，午夜才刚刚过去。最近发生一件很不寻常的事儿—你想听听么？
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|嗯，你继续。
 dlga_hall_guard_easter_egg:close_window|我对流言蜚语一点兴趣都没有。
 dlga_hall_guard_easter_egg_scene:close_window|得嘞…最近出现了一队与众不同的冒险者：一个人类，一个矮人还有一个精灵，除此之外…
 dlga_start:hall_guard_talk|听候差遣！指挥官。
-; dlga_start:close_window.33|We are not supposed to talk while on guard, Commander.
+; dlga_start:close_window.32|We are not supposed to talk while on guard, Commander.
 dlga_hall_guard_talk:hall_guard_duty|继续站岗，如果有人来找我就转告我一声。
 dlga_hall_guard_duty:close_window|好的，指挥官。如你所愿。
 dlga_hall_guard_talk:hall_guard_arrest|我想让你立即去逮捕这个人！
@@ -1068,8 +1069,11 @@ dlga_party_reinforce:party_reinforce_end.2|很遗憾你没有任何来自{s22}�
 dlga_party_reinforce_check:party_reinforce_check_1|我要检查一下部队花名册…
 dlga_party_reinforce_check_1:party_reinforce_end|所以你已经改变主意了…^明白。
 dlga_party_reinforce_check_1:party_reinforce_end.1|这些士兵对我们一点儿用处都没有。^请把他们带回去吧。
-; dlga_start:close_window.34|You are making me late! Wizards are never late!
-; dlga_start:close_window.35|It... beckonsssssss...
+; dlga_start:close_window.33|You are making me late! Wizards are never late!
+; dlga_start:close_window.34|It... beckonsssssss...
+; dlga_start:secret_guardian_let_through|Halt!
+; dlga_secret_guardian_let_through:secret_guardian_let_through1|I am {playername}, {s24}. Let me through!
+; dlga_secret_guardian_let_through1:close_window|Yes commander, you may pass.
 dlga_start:close_window.36|你在那里！你活了下来？好！你不能只挥舞着棍子！拿着它！
 dlga_start:ori_choose_1|你打得很好，族人！我不知道你到目前为止是如何活下来的。我记得你最近加入我们之前，所有的一切…在巴林倒下之前…你之前做过什么？
 dlga_ori_choose_1:ori_choose_finish|我是一名追踪者，被派遣到熊人旁边的树林里。我最近听说了巴林的小队的事情然后加入了他。
