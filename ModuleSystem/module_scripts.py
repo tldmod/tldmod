@@ -2604,6 +2604,9 @@ scripts = [
 			(else_try),
 				(eq, "$auto_besiege_town", "$g_encountered_party"),
 				(jump_to_menu, "mnu_besiegers_camp_with_allies"),
+            (else_try),
+                (party_slot_eq, "$g_encountered_party", slot_center_destroyed, 1),	
+                (jump_to_menu, "mnu_town_ruins"), #just in case, sometimes parties continue sieging ruined places for some time
 			(else_try),
 				(jump_to_menu, "mnu_join_siege_outside"),
 			(try_end),
