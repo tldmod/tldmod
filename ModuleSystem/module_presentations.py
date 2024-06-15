@@ -4778,18 +4778,7 @@ if wb_compile_switch==1:
         (val_div, ":level", 2),                                      #      i.e. for level 16 it does ((20 - 16) / 2) = 2, set to index 2 at initialization.
         (overlay_set_val, "$tld_options_overlay_0", ":level"),
         (val_sub, ":y_pos", Screen_Text_Height),
-    
-    (create_text_overlay, reg1, "@Restrict Player Equipment:  ", tf_right_align, tf_double_space),
-        (position_set_y, pos0, ":y_pos"),
-        (overlay_set_position, reg1, pos0),
-        (create_check_box_overlay, "$tld_options_overlay_1", "mesh_checkbox_on", "mesh_checkbox_off"),
-        (copy_position, pos1, pos0),
-        (store_add, reg2, ":y_pos", Screen_Checkbox_Height_Adj),
-        (position_set_y, pos1, reg2),
-        (overlay_set_position, "$tld_options_overlay_1", pos1),
-        (overlay_set_val, "$tld_options_overlay_1", "$tld_option_crossdressing"),
-        (val_sub, ":y_pos", Screen_Text_Height),
-    
+       
     (create_text_overlay, reg1, "@Battle Formations and AI:  ", tf_right_align, tf_double_space),
         (position_set_y, pos0, ":y_pos"),
         (overlay_set_position, reg1, pos0),
@@ -4807,7 +4796,15 @@ if wb_compile_switch==1:
         (overlay_set_position, "$tld_options_overlay_2", pos1),
         (overlay_set_val, "$tld_options_overlay_2", "$tld_option_formations"),
         (val_sub, ":y_pos", Screen_Text_Height),
-
+        
+        (try_begin),
+            (eq, "$tld_option_formations", 2),
+            (create_game_button_overlay, "$g_presentation_obj_3", "@Beta Formations Tweaks"),
+            (position_set_x, pos1, (2*Screen_Width/3)-360),
+            (position_set_y, pos1, Screen_Border_Width),
+            (overlay_set_position, "$g_presentation_obj_3", pos1),
+          (try_end),
+        
     #Siege Type
     (create_text_overlay, reg1, "@Siege AI:  ", tf_right_align, tf_double_space),
         (position_set_y, pos0, ":y_pos"),
@@ -5034,6 +5031,8 @@ if wb_compile_switch==1:
       (ti_on_presentation_event_state_change, [
         (store_trigger_param_1, ":object"),
         (store_trigger_param_2, ":value"),
+        # (assign, reg76, ":object"),
+        # (display_message, "@check object {reg76}"),
 
         (try_begin),
           (eq, ":object", "$tld_options_overlay_1"),
@@ -5041,6 +5040,7 @@ if wb_compile_switch==1:
         (else_try),
           (eq, ":object", "$tld_options_overlay_2"),
           (assign, "$tld_option_formations", ":value"),
+          (display_message, "@Set to Native if you encounter any types of AI problems during battle."),
          #(assign, reg65, "$tld_option_formations",),
          #(display_message, "@Formations - {reg65}"),
           (try_begin),
@@ -5061,6 +5061,7 @@ if wb_compile_switch==1:
         (else_try),
           (eq, ":object", "$tld_options_overlay_5"),
           (assign, "$tld_option_cutscenes", ":value"),
+          (display_message, "@Disable cutscenes if you encounter any crashes at the start of the war."),
         (else_try),
           (eq, ":object", "$tld_options_overlay_6"),
           (assign, "$tld_option_injuries", ":value"),
@@ -5085,6 +5086,7 @@ if wb_compile_switch==1:
         (else_try),
           (eq, ":object", "$tld_options_overlay_16"),
           (assign, "$tld_campaign_diffulty", ":value"),
+          (display_message, "@Campaign Difficulty affects abundance of volunteers, lord party size, and strength income for allied factions."),
         (else_try),
           (eq, ":object", "$tld_options_overlay_0"),   
           (val_mul, ":value", 2),                # swy: map the combobox indices to actual levels, whose order is also reversed
@@ -5092,6 +5094,8 @@ if wb_compile_switch==1:
           (assign, "$tld_player_level_to_begin_war", ":level_2"),
           (assign, reg0, "$tld_player_level_to_begin_war"),
           (display_message, "@War Will Start at Level {reg0}", 0x289128),
+          (gt, ":level_2", 14),
+          (display_message, "@Be aware that many quests and campaign mechanics scale with player level. Increasing this setting will give you more time to prepare, but will make the war unfold quicker."),
         (else_try),
           (eq, ":object", "$tld_options_overlay_11"),
           (assign, "$show_mount_ko_message", ":value"),
