@@ -1358,6 +1358,9 @@ mission_templates = [ # not used in game
        
 	(1, 0, ti_once, [],[ # set walkers, music and ambient sounds
 			(get_player_agent_no, "$current_player_agent"),
+             ] + ((is_a_wb_mt==1) and [
+            (agent_set_speed_modifier, "$current_player_agent", 120), # speed up player in towns
+              ] or []) + [
 			(try_begin),
 				(eq, "$g_mt_mode", tcm_default),
 				(store_current_scene, ":cur_scene"),
@@ -6421,6 +6424,13 @@ mission_templates = [ # not used in game
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission), ]),
 	(ti_before_mission_start, 0, 0, [], [ (assign, "$player_is_inside_dungeon",0),(assign, "$dungeons_in_scene",1)]),
 	dungeon_darkness_effect,
+
+    ] + ((is_a_wb_mt==1) and [    
+    (1, 0, ti_once, [],[ 
+        (get_player_agent_no, "$current_player_agent"),
+        (agent_set_speed_modifier, "$current_player_agent", 120)]),
+     ] or []) + [
+    
 ]),
 ( "dungeon_crawl_moria_hall",0,-1,
     "Explore around Moria",
@@ -6449,6 +6459,12 @@ mission_templates = [ # not used in game
         (try_end),
         ]),
 	dungeon_darkness_effect,
+    
+    ] + ((is_a_wb_mt==1) and [    
+    (1, 0, ti_once, [],[ 
+        (get_player_agent_no, "$current_player_agent"),
+        (agent_set_speed_modifier, "$current_player_agent", 120)]),
+     ] or []) + [
 ]),
 ( "dungeon_crawl_moria_deep",mtf_battle_mode,-1,
     "Lost in Moria! Orcs are everywhere! You must find a way out!",
@@ -6460,6 +6476,11 @@ mission_templates = [ # not used in game
 	(ti_before_mission_start, 0, 0, [], [ (set_fog_distance,18,0x000001),(assign, "$dungeons_in_scene",1),(play_sound, "snd_moria_ambiance", sf_looping),]),
     (0,0,ti_once,[],[(entry_point_get_position, pos1, 1), (set_spawn_position, pos1),(spawn_item, "itm_orc_throwing_arrow"),]),
 	dungeon_darkness_effect,
+    ] + ((is_a_wb_mt==1) and [    
+    (1, 0, ti_once, [],[ 
+        (get_player_agent_no, "$current_player_agent"),
+        (agent_set_speed_modifier, "$current_player_agent", 120)]),
+     ] or []) + [    
 ]),
 
 ############ 808 stealth & rescue templates

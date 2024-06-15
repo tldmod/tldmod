@@ -14932,10 +14932,10 @@ scripts = [
 				(this_or_next|eq,":try_limit",tf_orc),
 				(eq,":try_limit",tf_dwarf),
                 (neq, ":is_guard", 1),
-				(store_random_in_range,reg10,1,7),  # orc dwarf walk slower
+				(store_random_in_range,reg10,1,11),  # orc dwarf walk slower
 			(else_try),
                 (neq, ":is_guard", 1),
-				(store_random_in_range,reg10,2,8),  # humans
+				(store_random_in_range,reg10,2,12),  # humans                
 			(else_try), #guards move slow
 				(store_random_in_range,reg10,1,3),  
 			(try_end), 
@@ -14945,6 +14945,10 @@ scripts = [
                 (val_add, reg10, 4),
             (try_end),
             (agent_set_speed_limit, ":agent_no", reg10),
+            ] + ((is_a_wb_script==1) and [
+            (lt, reg10, 10),
+            (agent_set_speed_modifier, ":agent_no", 80), # makes walkers more realistic
+            ] or []) + [                 
 	   (try_end),
      (try_end),
 ]),
