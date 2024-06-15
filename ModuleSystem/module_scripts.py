@@ -896,6 +896,11 @@ scripts = [
 		(assign, reg0, 0),
       (try_end),
 
+	  (try_begin), #troops from defeated factions are free
+		(faction_slot_eq, ":troop_faction", slot_faction_state, sfs_defeated),
+		(assign, reg0, 0),
+      (try_end),
+
 	  (try_begin), #after war of the two towers has started, remaining enemy side troops in player party are free
 		(gt, "$tld_war_began", 1),
         (faction_get_slot, ":troop_side", ":troop_faction", slot_faction_side),
@@ -1131,6 +1136,7 @@ scripts = [
 
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
 		(faction_get_slot, ":allowance",  ":fac", slot_faction_respoint),
+        (neg|faction_slot_eq, ":fac", slot_faction_state, sfs_defeated), #not for defeated factions
 		(assign, ":spending",  0), # for this faction
 		#(assign, ":n_tot_left",  0), # for this factions
 		(assign,  ":msg_shown", 0),
