@@ -9163,7 +9163,7 @@ game_menus = [
 	   	  (eq,"$entry_to_town_forbidden",0), 
           (party_get_num_companions, ":no_companions", "$g_encountered_party"),
           (ge, ":no_companions", 1),
-          (party_slot_ge, "$current_town", slot_barracks_visited, 1),
+          (this_or_next|eq,"$tld_option_town_menu_hidden",0),(party_slot_ge, "$current_town", slot_barracks_visited, 1),
        ],"Visit the {s61} Barracks.",[
              (set_jump_mission,"mt_conversation_encounter"),
              (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),

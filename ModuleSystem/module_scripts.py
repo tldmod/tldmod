@@ -887,18 +887,19 @@ scripts = [
       (try_end),
        
 	  (try_begin),
-		(troop_is_hero,":troop_id"), # no upkeep for heros! (player included)
-		(assign, reg0, 0),
+		#(troop_is_hero,":troop_id"), # no upkeep for heros! (player included)
+        (eq, ":troop_id", "trp_player"), #just in case
+		(assign, ":wage", 0),
       (try_end),
       
 	  (try_begin),
 		(neg|is_between, ":troop_faction", kingdoms_begin, kingdoms_end), # bandits are free
-		(assign, reg0, 0),
+		(assign, ":wage", 0),
       (try_end),
 
 	  (try_begin), #troops from defeated factions are free
 		(faction_slot_eq, ":troop_faction", slot_faction_state, sfs_defeated),
-		(assign, reg0, 0),
+		(assign, ":wage", 0),
       (try_end),
 
 	  (try_begin), #after war of the two towers has started, remaining enemy side troops in player party are free
@@ -906,7 +907,7 @@ scripts = [
         (faction_get_slot, ":troop_side", ":troop_faction", slot_faction_side),
         (faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
         (neq, ":player_side", ":troop_side"),
-		(assign, reg0, 0),
+		(assign, ":wage", 0),
       (try_end),
 	  
       (assign, reg0, ":wage"),
