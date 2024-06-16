@@ -15,7 +15,7 @@ imod_balanced Balanced_%s 4 0.2
 imod_tempered Tempered_%s 4 0.2
 imod_deadly Deadly_%s 8.5 0.3
 imod_exquisite Exquisite_%s 14.5 0.3
-imod_masterwork Masterwork_%s 6 0.15
+imod_masterwork Masterwork_%s 5 0.15
 imod_heavy Heavy_%s 2 0.3
 imod_strong Strong_%s 3 0.2
 imod_powerful Powerful_%s 3.2 0.4
@@ -24,10 +24,10 @@ imod_ragged Rough_%s 0.95 1.0
 imod_rough Rough_%s 0.95 1.0
 imod_sturdy Sturdy_%s 1.3 0.5
 imod_thick Robust_%s 1.5 0.4
-imod_hardened Hardened_%s 1.8.5 0.4
+imod_hardened Hardened_%s 1.8 0.4
 imod_reinforced Reinforced_%s 3 0.3
-imod_cloak %s_with_cloak 1.5 0.6
-imod_lordly Masterwork_%s 5 0.1
+imod_cloak %s_with_cloak 1.2 0.8
+imod_lordly Masterwork_%s 4 0.15
 imod_lame Lame_%s 0.8 1.0
 imod_swaybacked Swaybacked_%s 0.8 1.0
 imod_stubborn Stubborn_%s 0.9 0.5
