@@ -1483,15 +1483,15 @@ mission_templates = [ # not used in game
       ]),
 
   ### town patrols (separate triggers, maybe shift the load of the nested prop loops) WB only
-  (15, 0, 0, [], [ 
+  (1, 0, 15, [], [ 
     (call_script, "script_town_guard_patrols", "spr_troop_guard"),
       ]),
 
-  (9, 0, 0, [], [ 
+  (2, 0, 9, [], [ 
     (call_script, "script_town_guard_patrols", "spr_troop_archer"),
       ]),
       
-  (20, 0, 0, [], [ 
+  (3, 0, 20, [], [ 
     (call_script, "script_town_guard_patrols", "spr_troop_rider"),
       ]),      
 

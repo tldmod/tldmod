@@ -14714,15 +14714,15 @@ scripts = [
        (agent_set_slot, ":cur_agent", slot_agent_target_entry_point, ":i_e_p"),
        (agent_set_slot, ":cur_agent", slot_agent_walker_type, 1),
        (call_script, "script_set_town_walker_destination", ":cur_agent"),      
-       
+
+      ] + (is_a_wb_script==1 and [       
        #equip carry items
        (agent_get_troop_id, ":walker_troop", ":cur_agent"),
-       (this_or_next|party_slot_eq, "$current_town", slot_center_walker_1_troop, ":walker_troop"), #walker troops 1 and 2 are "workers"
-       (party_slot_eq, "$current_town", slot_center_walker_2_troop, ":walker_troop"),
+       (this_or_next|party_slot_eq, "$current_town", slot_center_walker_0_troop, ":walker_troop"), #walker troops 0 and 1 are "workers"
+       (party_slot_eq, "$current_town", slot_center_walker_1_troop, ":walker_troop"),
        (store_random_in_range, ":chance", 0, 100),
        (lt, ":chance", 60),
-        #remove weapons and helms
-      ] + (is_a_wb_script==1 and [     
+        #remove weapons and helms     
             (try_for_range, ":weapon_slot", 0, 4), 
                 (agent_get_item_slot, ":item", ":cur_agent", ":weapon_slot"),
                 (gt, ":item", 1),
@@ -14738,6 +14738,7 @@ scripts = [
        (agent_equip_item, ":cur_agent", ":item", 1),
        (agent_set_wielded_item, ":cur_agent", ":item"),
        (agent_set_attack_action, ":cur_agent", 3, 1),
+       (agent_set_speed_limit, ":cur_agent", 5), #make sure they don't run
          ] or []) + [     
      (try_end), 
 ]),
