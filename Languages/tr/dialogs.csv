@@ -726,7 +726,7 @@ dlga_healers_meet:healer_who|Ne yapıyorsun?.
 ; dlga_healers_meet:healers_ask|I need your help.
 ; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
 dlga_healers_ask:healer_injured_ask|Ben ve ordum yaralandık ve onların bizi iyileştirmesini beklemek için zamanımız yok. Bize yardım saglayabilir misiniz?
-dlga_healers_ask:close_window|Hiçbir şey.
+dlga_healers_meet:close_window|Hiçbir şey.
 dlga_healers_injured_check:healers_injured_heal|Evet, lütfen devam et.
 dlga_healers_wound_check:healers_wound_heal|Evet, lütfen devam et.
 dlga_healers_wound_check:close_window|Hayır, şimdi degil.

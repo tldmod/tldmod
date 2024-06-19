@@ -21,7 +21,7 @@ skl_spotting_desc|Το εύρος το οποίο βλέπει η ομάδα α�
 skl_pathfinding|Εύρεση διαδρομής
 skl_pathfinding_desc|Η ταχύτητα της ομάδας αυξάνεται κατά 3%% ανά επίπεδο της ικανότητας. (Ομαδική Ικανότητα) 
 skl_tactics|Τακτική
-; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Ιχνηλασία
 skl_tracking_desc|Τα ίχνη γίνονται πιο λεπτομερειακά. (Ομαδική Ικανότητα)
 skl_trainer|Εκπαιδευτής

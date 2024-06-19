@@ -683,8 +683,8 @@ ui_explanation_charisma|Carisma: Migliora la tua reputazione con le persone e le
 ui_delivered_number_damage|Hai inflitto %d danni.
 ui_mission_losses_killed|Uccisi :
 ui_party_losses|%s : %d feriti --- %d uccisi di %d.
-ui_following|Segue
-ui_accompanying|Accompagna
+ui_following|Segue 
+ui_accompanying|Accompagna 
 ui_dumping_value_items|%d oggetti saranno persi per sempre, confermi ?
 ui_dumping_value_item|Un oggetto sarà perduto per sempre, confermi ?
 ui_notification_requirements_not_met|Non possiedi l'abilità richiesta o gli attributi necessari per usare quest'arma.

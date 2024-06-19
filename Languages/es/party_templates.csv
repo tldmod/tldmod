@@ -1,31 +1,31 @@
-pt_rescued_prisoners|Prisioneros Rescatados
+pt_rescued_prisoners|Prisioneros rescatados
 pt_enemy|Enemigo
-pt_hero_party|Grupo del Héroe
+pt_hero_party|Grupo del héroe
 pt_cattle_herd|Rebaño de ganado
 pt_ruins|Ruinas
 pt_legendary_place|Lugar legendario
-pt_mound|Túmulo de Héroe
-pt_pyre|Pira de Héroe
-pt_wild_troll|Troll Salvaje
-pt_raging_trolls|Trolls Enfurecidos
-pt_looters|Orcos Tribales
+pt_mound|Túmulo de héroe
+pt_pyre|Pira de héroe
+pt_wild_troll|Troll salvaje
+pt_raging_trolls|Trolls enfurecidos
+pt_looters|Orcos tribales
 pt_forest_bandits|Chusma orca
-pt_mountain_bandits|Trasgos Salvajes
+pt_mountain_bandits|Trasgos salvajes
 pt_steppe_bandits|Dunlendinos desterrados
 pt_sea_raiders|Renegados corsarios
 pt_deserters|Desertores
-pt_merchant_caravan|Caravana Mercante
-pt_troublesome_bandits|Trasgos Problemáticos
-pt_fangorn_orcs|Orcos Leñadores
+pt_merchant_caravan|Caravana mercante
+pt_troublesome_bandits|Trasgos problemáticos
+pt_fangorn_orcs|Orcos leñadores
 pt_village_farmers|Aldeanos granjeros
-pt_spy_partners|Viajeros Sospechosos
-pt_spy_partners_evil|Viajeros Sospechosos
-pt_runaway_serfs|Esclavos Fugitivos
-pt_spy|Jinete Solitario
-pt_spy_evil|Jinete Solitario
+pt_spy_partners|Viajeros sospechosos
+pt_spy_partners_evil|Viajeros sospechosos
+pt_runaway_serfs|Esclavos fugitivos
+pt_spy|Jinete solitario
+pt_spy_evil|Jinete solitario
 pt_ents|Ents
-pt_gandalf|Jinete Solitario
-pt_nazgul|Jinete Solitario
+pt_gandalf|Jinete solitario
+pt_nazgul|Jinete solitario
 pt_gondor_scouts|Exploradores de Gondor
 pt_blackroot_auxila|Auxiliares del Valle de la Raíz Negra
 pt_lamedon_auxila|Auxiliares de Lamedon
@@ -34,20 +34,20 @@ pt_pinnath_gelin_auxila|Auxiliares de Pinnath Gelin
 pt_ranger_scouts|Exploradores Montaraces
 pt_rohan_scouts|Exploradores Rohirrim
 pt_lorien_scouts|Exploradores de Lothlórien
-pt_woodelf_scouts|Exploradores Elfos del Bosque Negro
+pt_woodelf_scouts|Exploradores elfos del Bosque Negro
 pt_imladris_scouts|Exploradores Dúnedain
 pt_dale_scouts|Exploradores de Valle
 pt_esgaroth_scouts|Exploradores de Esgaroth
-pt_dwarf_scouts|Vigías Enanos
+pt_dwarf_scouts|Vigías enanos
 pt_beorn_scouts|Exploradores Beórnidas
-pt_woodmen_scouts|Exploradores de los Bosques
+pt_woodmen_scouts|Exploradores de los Hombres del Bosque
 pt_mordor_scouts|Exploradores de Mordor
 pt_morgul_scouts|Exploradores de Morgul
 pt_isengard_scouts|Exploradores de Isengard
-pt_isengard_scouts_warg|Jinetes de Huargo de Isengard
+pt_isengard_scouts_warg|Jinetes de huargo de Isengard
 pt_harad_scouts|Exploradores Haradrim
-pt_dunland_scouts|Exploradores Dunlendinos
-pt_umbar_scouts|Exploradores Corsarios
+pt_dunland_scouts|Exploradores dunlendinos
+pt_umbar_scouts|Exploradores corsarios
 pt_khand_scouts|Exploradores Orientales
 pt_moria_scouts|Exploradores de Moria
 pt_guldur_scouts|Exploradores de Dol Guldur
@@ -59,12 +59,12 @@ pt_imladris_raiders|Cazadores de Rivendel
 pt_lorien_raiders|Cazadores de Lothlórien
 pt_woodelf_raiders|Cazadores del Bosque Negro
 pt_dale_raiders|Cazadores de Valle
-pt_dwarf_raiders|Cazadores Enanos
-pt_ranger_raiders|Montaraces Incursores
+pt_dwarf_raiders|Cazadores enanos
+pt_ranger_raiders|Incursores Montaraces
 pt_morgul_raiders|Incursores de Morgul
 pt_mordor_raiders|Incursores de Mordor
 pt_isengard_raiders|Incursores de Isengard
-pt_dunland_raiders|Incursores Dunledinos
+pt_dunland_raiders|Incursores dunledinos
 pt_harad_raiders|Incursores Haradrim
 pt_khand_raiders|Incursores de Khand
 pt_umbar_raiders|Incursores de Umbar
@@ -79,7 +79,7 @@ pt_lorien_patrol|Patrulla de Lothlórien
 pt_woodelf_patrol|Patrulla del Bosque Negro
 pt_dale_patrol|Patrulla de Valle
 pt_esgaroth_patrol|Patrulla de Esgaroth
-pt_dwarf_patrol|Patrulla Enana
+pt_dwarf_patrol|Patrulla enana
 pt_ranger_patrol|Patrulla de Montaraces
 pt_amroth_patrol|Patrulla de Dol Amroth
 pt_pelargir_patrol|Patrulla de Pelargir
@@ -93,7 +93,7 @@ pt_harad_war_party|Tropa Haradrim
 pt_dunland_war_party|Tropa Dunlendina
 pt_khand_war_party|Tropa de Khand
 pt_moria_war_party|Tropa de Moria
-pt_guldur_war_party|Grupo de Guerra de Dol Guldur
+pt_guldur_war_party|Tropa de Dol Guldur
 pt_rhun_war_party|Tropa de Rhûn
 pt_gondor_company|Patrulla de Minas Tirith
 pt_rohan_company|Compañía de Rohan
@@ -101,21 +101,21 @@ pt_imladris_company|Compañía de Rivendel
 pt_lorien_company|Compañía de Lothlórien
 pt_woodelf_company|Compañía del Bosque Negro
 pt_dale_company|Compañía de Valle
-pt_dwarf_company|Compañía Enana
-pt_gondor_elite_company|Compañía de Élite de Gondor
-pt_rohan_elite_company|Compañía de Élite de Rohan
-pt_imladris_elite_company|Compañía de Élite de Rivendel
-pt_lorien_elite_company|Compañía de Élite de Lothlórien
-pt_woodelf_elite_company|Compañía de Élite del Bosque Negro
-pt_dale_elite_company|Compañía de Élite de Valle
-pt_dwarf_elite_company|Compañía de Élite Enana
+pt_dwarf_company|Compañía enana
+pt_gondor_elite_company|Compañía de élite de Gondor
+pt_rohan_elite_company|Compañía de élite de Rohan
+pt_imladris_elite_company|Compañía de élite de Rivendel
+pt_lorien_elite_company|Compañía de élite de Lothlórien
+pt_woodelf_elite_company|Compañía de élite del Bosque Negro
+pt_dale_elite_company|Compañía de élite de Valle
+pt_dwarf_elite_company|Compañía de élite enana
 pt_gondor_caravan|Caravana de Gondor
 pt_rohan_caravan|Caravana de Rohan
 pt_imladris_caravan|Caravana de Rivendel
 pt_lorien_caravan|Caravana de Lothlórien
 pt_woodelf_caravan|Caravana del Bosque Negro
 pt_dale_caravan|Caravana de Valle
-pt_dwarf_caravan|Caravana Enana
+pt_dwarf_caravan|Caravana enana
 pt_mordor_caravan|Caravana de suministros de Mordor
 pt_isengard_caravan|Caravana de suministros de Isengard
 pt_gunda_caravan|Caravana de suministros de Gundabad
@@ -129,9 +129,9 @@ pt_dwarf_p_train|Caravana Enana de prisioneros
 pt_mordor_p_train|Caravana de prisioneros de Mordor
 pt_isengard_p_train|Caravana de prisioneros de Isengard
 pt_kingdom_hero_party|Tropa
-pt_caravan_survivors|Caravana de Supervivientes
-pt_routed_allies|Aliados Huidos
-pt_routed_enemies|Enemigos Huidos
+pt_caravan_survivors|Supervivientes de la caravana
+pt_routed_allies|Aliados huidos
+pt_routed_enemies|Enemigos huidos
 pt_legion_minas_morgul|Legión de Minas Morgul
 pt_legion_udun|Legión de Udûn
 pt_legion_gorgoroth|Legión de Gorgoroth
@@ -139,11 +139,11 @@ pt_legion_barad_dur|Legión de Barad-Dûr
 pt_beorn_messenger|Mensajero Beórnida
 pt_village|Aldea
 pt_ring_hunters|Caza-anillos
-pt_scout_camp_small|Campamento de Exploradores
-pt_scout_camp_large|Campamento de Exploradores Fortificado
-pt_beorn_caravan|Caravana de los Bosques
-pt_orc_horde|Horda Orca
+pt_scout_camp_small|Campamento de exploradores
+pt_scout_camp_large|Campamento de exploradores fortificado
+pt_beorn_caravan|Caravana de Hombres de los Bosques
+pt_orc_horde|Horda orca
 pt_volunteers|Reservas
 pt_refugees|Refugiados
-pt_retreat_troops|Proteger tropas
-pt_radagast|Jinete Solitario
+pt_retreat_troops|Tropas de cobertura
+pt_radagast|Jinete solitario

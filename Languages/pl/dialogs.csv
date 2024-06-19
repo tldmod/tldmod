@@ -726,7 +726,7 @@ dlga_healers_meet:healer_who|Co robisz?. .
 ; dlga_healers_meet:healers_ask|I need your help.
 ; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
 dlga_healers_ask:healer_injured_ask|Moi wojownicy i ja jesteśmy ranni i nie mamy czasu, aby czekać na ich uzdrowienie. Czy możesz udzielić pomocy?
-dlga_healers_ask:close_window|Zamknij.
+dlga_healers_meet:close_window|Zamknij.
 dlga_healers_injured_check:healers_injured_heal|Tak, prosimy o kontakt.
 dlga_healers_wound_check:healers_wound_heal|Tak, prosimy o kontakt.
 dlga_healers_wound_check:close_window|Nie teraz.

@@ -57,11 +57,11 @@ qst_escort_merchant_caravan|Escolta Caravana de Suministros a {s8}
 qst_escort_merchant_caravan_text|Escolta una Caravana de Suministros a {s8} y habla con ellos cuando estéis cerca.
 qst_deliver_wine|Entrega {reg5} unidades de {s6} a {s4}.
 qst_deliver_wine_text|El {s9} de {s3} te ha pedido que entregues {reg5} unidades de {s6} en {s4} en 7 días.
-qst_troublesome_bandits|Da caza a los Trasgos problemáticos.
-qst_troublesome_bandits_text|El {s9} de {s4} te ha pedido que des caza a los Trasgos problemáticos que rondan cerca de la ciudad.
+qst_troublesome_bandits|Da caza a los trasgos problemáticos.
+qst_troublesome_bandits_text|El {s9} de {s4} te ha pedido que des caza a los trasgos problemáticos que rondan cerca de la ciudad.
 qst_deal_with_looters|Encárgate de los Orcos Tribales
 qst_deal_with_looters_text|El Anciano de {s4} te ha pedido que te encargues de varias bandas de Orcos Tribales alrededor de {s4}.
-qst_deal_with_night_bandits|Encárgate de los Bandidos Nocturnos.
+qst_deal_with_night_bandits|Encárgate de los bandidos nocturnos.
 qst_deal_with_night_bandits_text|El Anciano de {s14} te ha pedido que te encargues de los bandidos nocturnos en {s14}.
 qst_deliver_food|Suministra a {s3} {reg5} Unidades de comida.
 qst_deliver_food_text|El {s9} de {s3} te ha pedido que le lleves {reg5} unidades de comida en 10 días.

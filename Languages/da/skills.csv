@@ -21,7 +21,7 @@ skl_spotting_desc|Holdets syns rækkevide er forhøjet med 10%% per færdigheds 
 skl_pathfinding|Sti-finder
 skl_pathfinding_desc|Holdets kort hastighed er forhøjet med 3%% per færdighed niveau. (Hold færdighed) 
 skl_tactics|Taktik
-; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Spore
 skl_tracking_desc|Spor bliver mere informative. (Hold færdighed)
 skl_trainer|Træner

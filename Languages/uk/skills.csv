@@ -21,7 +21,7 @@ skl_spotting_desc|З кожним новим рівнем цієї навичк�
 skl_pathfinding|Пошук шляху
 skl_pathfinding_desc|З кожним новим рівнем цієї навички швидкість пересування загону по карті збільшується на 3%% (вміння групи).
 skl_tactics|Тактика
-; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Стеження
 skl_tracking_desc|Стеження стає більш інформативним (вміння групи).
 skl_trainer|Тренер

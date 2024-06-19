@@ -726,7 +726,7 @@ dlga_healers_meet:healer_who|Cosa stai facendo ?
 dlga_healers_meet:healers_ask|Ho bisogno del vostro aiuto.
 dlga_healers_ask:healer_wound_ask|Io e i miei compagni abbiamo ferite gravi che richiedono ben più del semplice tempo per guarire. Puoi sanare le nostre ferite ?
 dlga_healers_ask:healer_injured_ask|Sia io che i miei uomini abbiamo riportato ferite, e non abbiamo il tempo di attendere che guariscano. Puoi darci aiuto?
-dlga_healers_ask:close_window|Niente.
+dlga_healers_meet:close_window|Niente.
 dlga_healers_injured_check:healers_injured_heal|Sì, prenditi cura di noi.
 dlga_healers_wound_check:healers_wound_heal|Sì, prenditi cura di noi.
 dlga_healers_wound_check:close_window|Non ora.

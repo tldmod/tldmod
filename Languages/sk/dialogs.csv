@@ -726,7 +726,7 @@ dlga_healers_meet:healer_who|Čo robíš?.
 ; dlga_healers_meet:healers_ask|I need your help.
 ; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
 dlga_healers_ask:healer_injured_ask|Ja i moji mužmi sme ranení, avšak nie je času čakať na to, kým sa naše rany zhoja. Dokázal by si nám poskytnúť pomoc?
-dlga_healers_ask:close_window|Nič.
+dlga_healers_meet:close_window|Nič.
 dlga_healers_injured_check:healers_injured_heal|Áno, pripoj sa k nám.
 dlga_healers_wound_check:healers_wound_heal|Áno, pripoj sa k nám.
 dlga_healers_wound_check:close_window|Teraz nie.

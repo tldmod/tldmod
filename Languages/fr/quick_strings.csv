@@ -117,7 +117,11 @@ qstr_Brighter_Nights:__|Nuits plus lumineuses :
 qstr_Done|Fait
 qstr_Gameplay_Tweaks|Modifications de gameplay
 qstr_Beta_Formations_Twea|Modifications des formations bêta
+; qstr_Set_to_Native_if_you|Set to Native if you encounter any types of AI problems during battle.
+; qstr_Disable_cutscenes_if|Disable cutscenes if you encounter any crashes at the start of the war.
+; qstr_Campaign_Difficulty_a|Campaign Difficulty affects abundance of volunteers, lord party size, and strength income for allied factions.
 qstr_War_Will_Start_at_Le|La guerre commencera au niveau {reg0}
+; qstr_Be_aware_that_many_q|Be aware that many quests and campaign mechanics scale with player level. Increasing this setting will give you more time to prepare, but will make the war unfold quicker.
 qstr_Troop_Tree|Arbre des troupes
 qstr__Click_on_a_unit_for|(Cliquer sur une unité pour voir les détails)
 qstr_Weapons|Armes
@@ -765,6 +769,7 @@ qstr_Fixed_Camera___Right|Caméra fixe - épaule droite
 qstr_Fixed_Camera___Left_|Caméra fixe - épaule gauche
 qstr_Fixed_Camera___Cente|Caméra fixe - Centrée
 qstr_Shield_is_too_big_to|Le bouclier est trop grand pour pouvoir être utilisé avec un arc.
+; qstr_{s7}_waves_at_you.|{s7} waves at you.
 ; qstr_You_happen_upon_an_O|You happen upon an Old Guesthouse. As you inspect the weathered stone building, you notice a group of boys playing among the pillars, the only children you have seen in Minas Tirith.  One of them greets you and you wave back. Your heart is gladdened and you forget, for a brief moment, the sorrow of war.
 qstr_You_look_through_Hen|Vous regardez à travers Henneth Annun, la Fenêtre du soleil couchant. La vue magnifique restaure votre foi en l'Ouest et les Pouvoirs au delà.
 ; qstr_As_you_follow_the_st|As you follow the straight stairs, cut into the rock of the mountain, and then a second set of stairs, winding as it clings to the cliff-face, you realize that you should not pursue this path any further if you value your own life.

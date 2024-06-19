@@ -117,7 +117,11 @@ qstr_Brighter_Nights:__|夜を明るくする:
 qstr_Done|完了
 qstr_Gameplay_Tweaks|ゲームプレイに関する調整
 qstr_Beta_Formations_Twea|ベータ版の陣形の調整
+; qstr_Set_to_Native_if_you|Set to Native if you encounter any types of AI problems during battle.
+; qstr_Disable_cutscenes_if|Disable cutscenes if you encounter any crashes at the start of the war.
+; qstr_Campaign_Difficulty_a|Campaign Difficulty affects abundance of volunteers, lord party size, and strength income for allied factions.
 qstr_War_Will_Start_at_Le|レベル{reg0}で戦争開始
+; qstr_Be_aware_that_many_q|Be aware that many quests and campaign mechanics scale with player level. Increasing this setting will give you more time to prepare, but will make the war unfold quicker.
 qstr_Troop_Tree|兵科ツリー
 qstr__Click_on_a_unit_for|(ユニットをクリックすると詳細表示)
 qstr_Weapons|武器
@@ -765,6 +769,7 @@ qstr_Fixed_Camera___Right|固定カメラ - 右肩
 qstr_Fixed_Camera___Left_|固定カメラ - 左肩
 qstr_Fixed_Camera___Cente|固定カメラ - 中央
 qstr_Shield_is_too_big_to|盾は大きすぎて弓と同時には扱えません。
+; qstr_{s7}_waves_at_you.|{s7} waves at you.
 ; qstr_You_happen_upon_an_O|You happen upon an Old Guesthouse. As you inspect the weathered stone building, you notice a group of boys playing among the pillars, the only children you have seen in Minas Tirith.  One of them greets you and you wave back. Your heart is gladdened and you forget, for a brief moment, the sorrow of war.
 qstr_You_look_through_Hen|あなたは夕陽の窓とも呼ばれるヘンネス・アンヌーンを見て回った。 その美しさに、あなたは西方とその底力に対する認識をあらためた。
 ; qstr_As_you_follow_the_st|As you follow the straight stairs, cut into the rock of the mountain, and then a second set of stairs, winding as it clings to the cliff-face, you realize that you should not pursue this path any further if you value your own life.

@@ -21,7 +21,7 @@ skl_spotting_desc|Vzdialenosť na ktorú družina vidí je zvýšená o 10%% za 
 skl_pathfinding|Cestovanie
 skl_pathfinding_desc|Rychlosť družiny na mape je zvýšená o 3%% za každý level tejto schopnosti. (Schopnosť Družiny)
 skl_tactics|Taktika
-; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Stopovanie
 skl_tracking_desc|Stopy budú poskytovať viac informácií. (Schopnosť družiny)
 skl_trainer|Cvičiteľ

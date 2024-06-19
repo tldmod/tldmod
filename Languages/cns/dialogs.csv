@@ -726,7 +726,7 @@ dlga_healers_meet:healer_who|你想要做什么？
 ; dlga_healers_meet:healers_ask|I need your help.
 ; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
 dlga_healers_ask:healer_injured_ask|我和我的人受伤了，而且我们没有时间来等伤口自己好。你能帮我们吗？
-dlga_healers_ask:close_window|没什么。
+; dlga_healers_meet:close_window|Nothing.
 dlga_healers_injured_check:healers_injured_heal|来，加入我们。
 dlga_healers_wound_check:healers_wound_heal|来，加入我们。
 dlga_healers_wound_check:close_window|现在不行

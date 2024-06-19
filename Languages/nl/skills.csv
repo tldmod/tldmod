@@ -21,7 +21,7 @@ skl_spotting_desc|Je groep kan 10%% verder zien per punt voor deze vaardigheid (
 skl_pathfinding|Padvinden
 skl_pathfinding_desc|Snelheid van je groep op de kaart gaat met 3%% omhoog per punt in deze vaardigheid (groep's vaardigheid)
 skl_tactics|Tactieken
-; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Spoorzoeken
 skl_tracking_desc|Sporen geven meer informatie. (groep's vaardigheid)
 skl_trainer|Trainer

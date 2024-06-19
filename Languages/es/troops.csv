@@ -399,7 +399,7 @@ trp_a2_arnor_vet_scout_pl|Rastreadores Dúnedain
 trp_i3_arnor_swordsman|Espadachín Dúnadan
 trp_i3_arnor_swordsman_pl|Espadachines Dúnedain
 trp_i4_arnor_vet_swordsman| Espadachín Dúnadan veterano
-trp_i4_arnor_vet_swordsman_pl|Espadachines Dúnedain Veteranos
+trp_i4_arnor_vet_swordsman_pl|Espadachines Dúnedain veteranos
 trp_i5_arnor_champion|Campeón de Arnor
 trp_i5_arnor_champion_pl|Campeones de Arnor
 trp_c4_arnor_horseman|Jinete Dúnadan
@@ -408,7 +408,7 @@ trp_c5_arnor_knight|Caballero de Arnor
 trp_c5_arnor_knight_pl|Caballeros de Arnor
 trp_a3_arnor_ranger|Montaraz Dúnadan
 trp_a3_arnor_ranger_pl|Montaraces Dúnedain
-trp_a4_arnor_vet_ranger|Montaraz Dúnadan Veterano
+trp_a4_arnor_vet_ranger|Montaraz Dúnadan veterano
 trp_a4_arnor_vet_ranger_pl|Montaraces Dúnedain veteranos
 trp_a5_arnor_master_ranger|Montaraz experto de Arnor
 trp_a5_arnor_master_ranger_pl|Montaraces expertos de Arnor
@@ -562,50 +562,50 @@ trp_i2_corsair_warrior|Guerrero de Umbar
 trp_i2_corsair_warrior_pl|Guerreros de Umbar
 trp_i3_corsair_spearman|Lancero de Umbar
 trp_i3_corsair_spearman_pl|Lanceros de Umbar
-trp_i4_corsair_raider|Incursor Corsario
-trp_i4_corsair_raider_pl|Incursores Corsarios
-trp_i5_corsair_night_raider|Incursor Nocturno Corsario
-trp_i5_corsair_night_raider_pl|Incursores Nocturnos Corsarios
-trp_a2_corsair_marine|Infante de Marina de Umbar
-trp_a2_corsair_marine_pl|Infantes de Marina de Umbar
+trp_i4_corsair_raider|Incursor corsario
+trp_i4_corsair_raider_pl|Incursores corsarios
+trp_i5_corsair_night_raider|Incursor nocturno corsario
+trp_i5_corsair_night_raider_pl|Incursores nocturnos corsarios
+trp_a2_corsair_marine|Infante de marina de Umbar
+trp_a2_corsair_marine_pl|Infantes de marina de Umbar
 trp_a3_corsair_marksman|Tirador de Umbar
 trp_a3_corsair_marksman_pl|Tiradores de Umbar
-trp_a4_corsair_veteran_marksman|Tirador Veterano de Umbar
-trp_a4_corsair_veteran_marksman_pl|Tiradores Veteranos de Umbar
-trp_a5_corsair_master_marksman|Maestro Tirador Corsario
-trp_a5_corsair_master_marksman_pl|Maestros Tiradores Corsarios
+trp_a4_corsair_veteran_marksman|Tirador veterano de Umbar
+trp_a4_corsair_veteran_marksman_pl|Tiradores veteranos de Umbar
+trp_a5_corsair_master_marksman|Maestro tirador corsario
+trp_a5_corsair_master_marksman_pl|Maestros tiradores corsarios
 trp_i3_corsair_swordsman|Espadachín de Umbar
 trp_i3_corsair_swordsman_pl|Espadachines de Umbar
-trp_i4_corsair_veteran_swordsman|Espadachín Veterano de Umbar
-trp_i4_corsair_veteran_swordsman_pl|Espadachines Veteranos de Umbar
-trp_i5_corsair_master_swordsman|Maestro Espadachín Corsario
-trp_i5_corsair_master_swordsman_pl|Maestros Espadachines Corsarios
-trp_a4_corsair_assassin|Asesino Corsario
-trp_a4_corsair_assassin_pl| Asesinos Corsarios
-trp_a5_corsair_master_assassin|Asesino Corsario
-trp_a5_corsair_master_assassin_pl| Asesinos Corsarios
-trp_i4_corsair_veteran_spearman|Lancero Veterano de Umbar
-trp_i4_corsair_veteran_spearman_pl|Lanceros Veteranos de Umbar
-trp_i5_corsair_master_spearman|Maestro Lancero de Umbar
-trp_i5_corsair_master_spearman_pl|Maestros Lanceros de Umbar
-trp_i5_corsair_master_pikeman|Maestro Piquero de Umbar
-trp_i5_corsair_master_pikeman_pl|Maestros Piqueros de Umbar
-trp_i1_isen_orc_snaga|Orco Snaga de Isengard
-trp_i1_isen_orc_snaga_pl|Orcos Snagae de Isengard
+trp_i4_corsair_veteran_swordsman|Espadachín veterano de Umbar
+trp_i4_corsair_veteran_swordsman_pl|Espadachines veteranos de Umbar
+trp_i5_corsair_master_swordsman|Maestro espadachín corsario
+trp_i5_corsair_master_swordsman_pl|Maestros espadachines corsarios
+trp_a4_corsair_assassin|Asesino corsario
+trp_a4_corsair_assassin_pl| Asesinos corsarios
+trp_a5_corsair_master_assassin|Asesino corsario
+trp_a5_corsair_master_assassin_pl| Asesinos corsarios
+trp_i4_corsair_veteran_spearman|Lancero veterano de Umbar
+trp_i4_corsair_veteran_spearman_pl|Lanceros veteranos de Umbar
+trp_i5_corsair_master_spearman|Maestro lancero de Umbar
+trp_i5_corsair_master_spearman_pl|Maestros lanceros de Umbar
+trp_i5_corsair_master_pikeman|Maestro piquero de Umbar
+trp_i5_corsair_master_pikeman_pl|Maestros piqueros de Umbar
+trp_i1_isen_orc_snaga|Orco snaga de Isengard
+trp_i1_isen_orc_snaga_pl|Orcos snagas de Isengard
 trp_i2_isen_orc|Orco de Isengard
 trp_i2_isen_orc_pl|Orcos de Isengard
-trp_i3_isen_large_orc|Gran Orco de Isengard
-trp_i3_isen_large_orc_pl|Orcos Grandes de Isengard
-trp_i4_isen_fell_orc|Orco Feroz de Isengard
-trp_i4_isen_fell_orc_pl|Orcos Feroces de Isengard
-trp_i3_isen_large_orc_despoiler|Gran Orco Saqueador
-trp_i3_isen_large_orc_despoiler_pl|Orcos Grandes Saqueadores
-trp_i4_isen_fell_orc_despoiler|Orco Feroz Saqueador
-trp_i4_isen_fell_orc_despoiler_pl|Orcos Feroces Saqueadores
-trp_ac2_isen_wolf_rider|Jinete de Lobo de Isengard
-trp_ac2_isen_wolf_rider_pl|Jinetes de Lobo de Isengard
-trp_ac3_isen_warg_rider|Jinete de Huargo de Isengard
-trp_ac3_isen_warg_rider_pl|Jinetes de Huargo de Isengard
+trp_i3_isen_large_orc|Gran orco de Isengard
+trp_i3_isen_large_orc_pl|Orcos grandes de Isengard
+trp_i4_isen_fell_orc|Orco feroz de Isengard
+trp_i4_isen_fell_orc_pl|Orcos feroces de Isengard
+trp_i3_isen_large_orc_despoiler|Gran orco saqueador
+trp_i3_isen_large_orc_despoiler_pl|Orcos grandes saqueadores
+trp_i4_isen_fell_orc_despoiler|Orco feroz saqueador
+trp_i4_isen_fell_orc_despoiler_pl|Orcos feroces saqueadores
+trp_ac2_isen_wolf_rider|Jinete de lobo de Isengard
+trp_ac2_isen_wolf_rider_pl|Jinetes de lobo de Isengard
+trp_ac3_isen_warg_rider|Jinete de huargo de Isengard
+trp_ac3_isen_warg_rider_pl|Jinetes de huargo de Isengard
 trp_ac4_isen_white_hand_rider|Jinete de la Mano Blanca
 trp_ac4_isen_white_hand_rider_pl|Jinetes de la Mano Blanca
 trp_warg_ghost_1b|Huargo
@@ -616,10 +616,10 @@ trp_warg_ghost_1d|Huargo
 trp_warg_ghost_1d_pl|Huargos
 trp_warg_ghost_a1b|Huargo
 trp_warg_ghost_a1b_pl|Huargos
-trp_warg_ghost_a1c|Huargo de Guerra
-trp_warg_ghost_a1c_pl|Huargos de Guerra
-trp_warg_ghost_a2b|Huargo de Guerra
-trp_warg_ghost_a2b_pl|Huargos de Guerra
+trp_warg_ghost_a1c|Huargo de guerra
+trp_warg_ghost_a1c_pl|Huargos de guerra
+trp_warg_ghost_a2b|Huargo de guerra
+trp_warg_ghost_a2b_pl|Huargos de guerra
 trp_warg_ghost_a2c|Huargo de Guerra
 trp_warg_ghost_a2c_pl|Huargos de Guerra
 trp_warg_ghost_a3a|Huargo de Guerra
@@ -628,14 +628,14 @@ trp_warg_ghost_h|Huargo Gigante
 trp_warg_ghost_h_pl|Huargos Gigantes
 trp_a2_isen_uruk_tracker|Rastreador Uruk-hai
 trp_a2_isen_uruk_tracker_pl|Rastreadores Uruk-hai
-trp_a3_isen_large_uruk_tracker|Gran Rastreador Uruk-hai
-trp_a3_isen_large_uruk_tracker_pl|Grandes Rastreadores Uruk-hai
-trp_a4_isen_fighting_uruk_tracker|Guerrero Rastreador Uruk-hai
-trp_a4_isen_fighting_uruk_tracker_pl|Guerreros Rastreadores Uruk-hai
+trp_a3_isen_large_uruk_tracker|Gran rastreador Uruk-hai
+trp_a3_isen_large_uruk_tracker_pl|Grandes rastreadores Uruk-hai
+trp_a4_isen_fighting_uruk_tracker|Guerrero rastreador Uruk-hai
+trp_a4_isen_fighting_uruk_tracker_pl|Guerreros rastreadores Uruk-hai
 trp_i6_isen_uruk_berserker|Berserker Uruk-hai
 trp_i6_isen_uruk_berserker_pl|Berserkers Uruk-hai
-trp_i1_isen_uruk_snaga|Uruk-hai Neonato
-trp_i1_isen_uruk_snaga_pl|Uruk-hai Neonatos
+trp_i1_isen_uruk_snaga|Uruk-hai neonato
+trp_i1_isen_uruk_snaga_pl|Uruk-hai neonatos
 trp_i2_isen_uruk|Uruk-hai de Isengard
 trp_i2_isen_uruk_pl|Uruk-hai de Isengard
 trp_i3_isen_large_uruk|Gran Uruk-hai de Isengard
@@ -646,24 +646,24 @@ trp_i5_isen_fighting_uruk_champion|Campeón Uruk-hai
 trp_i5_isen_fighting_uruk_champion_pl|Campeones Uruk-hai
 trp_i3_isen_uruk_pikeman|Piquero Uruk-hai
 trp_i3_isen_uruk_pikeman_pl|Piqueros Uruk-hai
-trp_i4_isen_fighting_uruk_pikeman|Piquero de Combate Uruk-hai
-trp_i4_isen_fighting_uruk_pikeman_pl|Piqueros de Combate Uruk-hai
+trp_i4_isen_fighting_uruk_pikeman|Piquero de combate Uruk-hai
+trp_i4_isen_fighting_uruk_pikeman_pl|Piqueros de combate Uruk-hai
 trp_i5_isen_uruk_standard_bearer|Portaestandarte Uruk-hai
 trp_i5_isen_uruk_standard_bearer_pl|Portaestandartes Uruk-hai
-trp_i1_mordor_uruk_snaga|Uruk Snaga de Mordor
-trp_i1_mordor_uruk_snaga_pl|Uruks Snagae de Mordor
+trp_i1_mordor_uruk_snaga|Uruk snaga de Mordor
+trp_i1_mordor_uruk_snaga_pl|Uruks snagas de Mordor
 trp_i2_mordor_uruk|Uruk de Mordor
 trp_i2_mordor_uruk_pl|Uruks de Mordor
-trp_i3_mordor_large_uruk|Gran Uruk de Mordor
-trp_i3_mordor_large_uruk_pl|Uruks Grandes de Mordor
-trp_i4_mordor_fell_uruk|Uruk Feroz de Mordor
-trp_i4_mordor_fell_uruk_pl|Uruks Feroces de Mordor
-trp_i3_mordor_uruk_slayer|Uruk Asesino de Mordor
-trp_i3_mordor_uruk_slayer_pl|Uruks Asesinos de Mordor
-trp_i4_mordor_fell_uruk_slayer|Uruk Asesino Feroz de Mordor
-trp_i4_mordor_fell_uruk_slayer_pl|Uruks Asesinos Feroces de Mordor
-trp_i5_mordor_black_uruk|Uruk Negro de Barad Dûr
-trp_i5_mordor_black_uruk_pl|Uruks Negros de Barad Dûr
+trp_i3_mordor_large_uruk|Gran uruk de Mordor
+trp_i3_mordor_large_uruk_pl|Uruks grandes de Mordor
+trp_i4_mordor_fell_uruk|Uruk feroz de Mordor
+trp_i4_mordor_fell_uruk_pl|Uruks feroces de Mordor
+trp_i3_mordor_uruk_slayer|Uruk asesino de Mordor
+trp_i3_mordor_uruk_slayer_pl|Uruks asesinos de Mordor
+trp_i4_mordor_fell_uruk_slayer|Uruk asesino feroz de Mordor
+trp_i4_mordor_fell_uruk_slayer_pl|Uruks asesinos feroces de Mordor
+trp_i5_mordor_black_uruk|Uruk negro de Barad Dûr
+trp_i5_mordor_black_uruk_pl|Uruks negros de Barad Dûr
 trp_i5_mordor_uruk_standard_bearer|Portaestandarte de Mordor
 trp_i5_mordor_uruk_standard_bearer_pl|Portaestandartes de Mordor
 trp_troll_of_moria|Troll de las Cavernas
@@ -674,134 +674,134 @@ trp_olog_hai|Olog-hai de Mordor
 trp_olog_hai_pl|Olog-hai de Mordor
 trp_ent_old|Ent
 trp_ent_old_pl|Ents
-trp_i1_guldur_orc_snaga|Orco Snaga de Dol Guldur
-trp_i1_guldur_orc_snaga_pl|Orcos Snaga de Dol Guldur
-trp_a2_guldur_orc_tracker|Rastreador Orco de Dol Guldur
-trp_a2_guldur_orc_tracker_pl|Rastreadores Orcos de Dol Guldur
-trp_i1_mordor_orc_snaga|Orco Snaga de Mordor
-trp_i1_mordor_orc_snaga_pl|Orcos Snagae de Mordor
+trp_i1_guldur_orc_snaga|Orco snaga de Dol Guldur
+trp_i1_guldur_orc_snaga_pl|Orcos snagas de Dol Guldur
+trp_a2_guldur_orc_tracker|Rastreador orco de Dol Guldur
+trp_a2_guldur_orc_tracker_pl|Rastreadores orcos de Dol Guldur
+trp_i1_mordor_orc_snaga|Orco snaga de Mordor
+trp_i1_mordor_orc_snaga_pl|Orcos snagas de Mordor
 trp_i2_mordor_orc|Orco de Mordor
 trp_i2_mordor_orc_pl|Orcos de Mordor
-trp_i3_mordor_large_orc|Gran Orco de Mordor
-trp_i3_mordor_large_orc_pl|Orcos Grandes de Mordor
-trp_i4_mordor_fell_orc|Orco Feroz de Mordor
-trp_i4_mordor_fell_orc_pl|Orcos Feroces de Mordor
-trp_c3_mordor_warg_rider|Jinete de Huargo de Gorgoroth
-trp_c3_mordor_warg_rider_pl|Jinetes de Huargo de Gorgoroth
-trp_c4_mordor_great_warg_rider|Gran Jinete de Huargo de Udûn
-trp_c4_mordor_great_warg_rider_pl|Grandes Jinetes de Huargos de Udûn
+trp_i3_mordor_large_orc|Gran orco de Mordor
+trp_i3_mordor_large_orc_pl|Orcos grandes de Mordor
+trp_i4_mordor_fell_orc|Orco feroz de Mordor
+trp_i4_mordor_fell_orc_pl|Orcos feroces de Mordor
+trp_c3_mordor_warg_rider|Jinete de huargo de Gorgoroth
+trp_c3_mordor_warg_rider_pl|Jinetes de huargo de Gorgoroth
+trp_c4_mordor_great_warg_rider|Gran jinete de huargo de Udûn
+trp_c4_mordor_great_warg_rider_pl|Grandes jinetes de huargo de Udûn
 trp_i2_mordor_morgul_orc|Orco de Minas Morgul
 trp_i2_mordor_morgul_orc_pl|Orcos de Minas Morgul
-trp_i4_mordor_fell_morgul_orc|Orco Feroz de Minas Morgul
-trp_i4_mordor_fell_morgul_orc_pl|Orcos Feroces de Minas Morgul
-trp_a3_guldur_large_orc_tracker|Gran Rastreador Orco de Dol Guldur
-trp_a3_guldur_large_orc_tracker_pl|Grandes Rastreadores Orcos de Dol Guldur
-trp_a4_guldur_fell_orc_tracker|Rastreador Orco Feroz de Dol Guldur
-trp_a4_guldur_fell_orc_tracker_pl|Rastreadores Orcos Feroces de Dol Guldur
-trp_a2_mordor_orc_archer|Arquero Orco de Mordor
-trp_a2_mordor_orc_archer_pl|Arqueros Orcos de Mordor
-trp_a3_mordor_large_orc_archer|Gran Arquero Orco de Mordor
-trp_a3_mordor_large_orc_archer_pl|Grandes Arqueros Orcos de Mordor
-trp_a4_mordor_fell_orc_archer|Arquero Orco Feroz de Mordor
-trp_a4_mordor_fell_orc_archer_pl|Arqueros Orcos Feroces de Mordor
-trp_c3_moria_wolf_rider|Jinete de Lobo de Moria
-trp_c3_moria_wolf_rider_pl|Jinetes de Lobo de Moria
-trp_c4_moria_warg_rider|Jinete de Huargo de Moria
-trp_c4_moria_warg_rider_pl|Jinetes de Huargo de Moria
-trp_c5_moria_clan_rider|Jinete del Clan Bolgo
-trp_c5_moria_clan_rider_pl|Jinetes del Clan Bolgo
-trp_i1_moria_snaga|Trasgo Snaga de Moria
-trp_i1_moria_snaga_pl|Trasgos Snagae de Moria
+trp_i4_mordor_fell_morgul_orc|Orco feroz de Minas Morgul
+trp_i4_mordor_fell_morgul_orc_pl|Orcos feroces de Minas Morgul
+trp_a3_guldur_large_orc_tracker|Gran rastreador orco de Dol Guldur
+trp_a3_guldur_large_orc_tracker_pl|Grandes rastreadores orcos de Dol Guldur
+trp_a4_guldur_fell_orc_tracker|Rastreador orco feroz de Dol Guldur
+trp_a4_guldur_fell_orc_tracker_pl|Rastreadores orcos feroces de Dol Guldur
+trp_a2_mordor_orc_archer|Arquero orco de Mordor
+trp_a2_mordor_orc_archer_pl|Arqueros orcos de Mordor
+trp_a3_mordor_large_orc_archer|Gran arquero orco de Mordor
+trp_a3_mordor_large_orc_archer_pl|Grandes arqueros orcos de Mordor
+trp_a4_mordor_fell_orc_archer|Arquero orco feroz de Mordor
+trp_a4_mordor_fell_orc_archer_pl|Arqueros orcos feroces de Mordor
+trp_c3_moria_wolf_rider|Jinete de lobo de Moria
+trp_c3_moria_wolf_rider_pl|Jinetes de lobo de Moria
+trp_c4_moria_warg_rider|Jinete de huargo de Moria
+trp_c4_moria_warg_rider_pl|Jinetes de huargo de Moria
+trp_c5_moria_clan_rider|Jinete del clan Bolgo
+trp_c5_moria_clan_rider_pl|Jinetes del clan Bolgo
+trp_i1_moria_snaga|Trasgo snaga de Moria
+trp_i1_moria_snaga_pl|Trasgos snagas de Moria
 trp_i2_moria_goblin|Trasgo de Moria
 trp_i2_moria_goblin_pl|Trasgos de Moria
-trp_i3_moria_large_goblin|Gran Trasgo de Moria
-trp_i3_moria_large_goblin_pl|Trasgos Grandes de Moria
-trp_i4_moria_fell_goblin|Trasgo Feroz de Moria
-trp_i4_moria_fell_goblin_pl|Trasgo Feroz de Moria
-trp_a2_moria_goblin_archer|Trasgo Arquero de Moria
-trp_a2_moria_goblin_archer_pl|Trasgos Arqueros de Moria
-trp_a3_moria_large_goblin_archer|Gran Trasgo Arquero de Moria
-trp_a3_moria_large_goblin_archer_pl|Grandes Trasgos Arqueros de Moria
-trp_a4_moria_fell_goblin_archer|Trasgo Arquero Feroz de Moria
-trp_a4_moria_fell_goblin_archer_pl|Trasgos Arqueros Feroces de Moria
+trp_i3_moria_large_goblin|Gran trasgo de Moria
+trp_i3_moria_large_goblin_pl|Trasgos grandes de Moria
+trp_i4_moria_fell_goblin|Trasgo feroz de Moria
+trp_i4_moria_fell_goblin_pl|Trasgo feroz de Moria
+trp_a2_moria_goblin_archer|Trasgo arquero de Moria
+trp_a2_moria_goblin_archer_pl|Trasgos arqueros de Moria
+trp_a3_moria_large_goblin_archer|Gran trasgo arquero de Moria
+trp_a3_moria_large_goblin_archer_pl|Grandes trasgos arqueros de Moria
+trp_a4_moria_fell_goblin_archer|Trasgo arquero feroz de Moria
+trp_a4_moria_fell_goblin_archer_pl|Trasgos arqueros feroces de Moria
 trp_i1_gunda_goblin|Trasgo de Gundabad
 trp_i1_gunda_goblin_pl|Trasgos de Gundabad
 trp_i2_gunda_orc|Orco de Gundabad
 trp_i2_gunda_orc_pl|Orcos de Gundabad
-trp_i3_gunda_orc_fighter|Luchador Orco de Gundabad
-trp_i3_gunda_orc_fighter_pl|Luchadores Orcos de Gundabad
-trp_i4_gunda_orc_warrior|Guerrero Orco de Gundabad
-trp_i4_gunda_orc_warrior_pl|Guerreros Orcos de Gundabad
-trp_i4_gunda_orc_berserker|Berserker Orco de Gundabad
-trp_i4_gunda_orc_berserker_pl|Berserkers Orcos de Gundabad
+trp_i3_gunda_orc_fighter|Luchador orco de Gundabad
+trp_i3_gunda_orc_fighter_pl|Luchadores orcos de Gundabad
+trp_i4_gunda_orc_warrior|Guerrero orco de Gundabad
+trp_i4_gunda_orc_warrior_pl|Guerreros orcos de Gundabad
+trp_i4_gunda_orc_berserker|Berserker orco de Gundabad
+trp_i4_gunda_orc_berserker_pl|Berserkers orcos de Gundabad
 trp_ca4_gunda_skirmisher|Escaramuzador de Gundabad
 trp_ca4_gunda_skirmisher_pl|Escaramuzadores de Gundabad
-trp_ca5_gunda_clan_skirmisher|Escaramuzador Trasgo del Clan del Norte
-trp_ca5_gunda_clan_skirmisher_pl|Escaramuzadores Trasgos del Clan del Norte
-trp_c3_gunda_goblin_rider|Jinete Trasgo de Gundabad
-trp_c3_gunda_goblin_rider_pl|Jinetes Trasgos de Gundabad
-trp_c4_gunda_warg_rider|Jinete de Huargo de Gundabad
-trp_c4_gunda_warg_rider_pl|Jinetes de Huargo de Gundabad
-trp_c5_gunda_clan_rider|Jinete Trasgo del Clan del Norte
-trp_c5_gunda_clan_rider_pl|Jinetes Trasgos del Clan del Norte
-trp_i5_gunda_orc_champion|Campeón Orco de Gundabad
-trp_i5_gunda_orc_champion_pl|Campeones Orcos de Gundabad
-trp_mountain_goblin2|Trasgo de Montaña
-trp_mountain_goblin2_pl|Trasgos de Montaña
-trp_tribal_orc2|Orco Tribal
-trp_tribal_orc2_pl|Orcos Tribales
-trp_i5_gunda_orc_champion2|Campeón Orco de Gundabad
-trp_i5_gunda_orc_champion2_pl|Campeones Orcos de Gundabad
-trp_i2_mordor_num_renegade|Númenóreano Negro Renegado
-trp_i2_mordor_num_renegade_pl|Númenóreanos Negros Renegados
-trp_i3_mordor_num_warrior|Númenóreano Negro Guerrero
-trp_i3_mordor_num_warrior_pl|Númenóreanos Negros Guerreros
-trp_i4_mordor_num_vet_warrior|Númenóreano Negro Guerrero Veterano
-trp_i4_mordor_num_vet_warrior_pl|Númenóreanos Negros Guerreros Veteranos
-trp_i5_mordor_num_champion|Númenóreano Negro Campeón
-trp_i5_mordor_num_champion_pl|Númenóreanos Negros Campeones
-trp_i5_mordor_num_assassin|Númenóreano Negro Asesino
-trp_i5_mordor_num_assassin_pl|Númenóreanos Negros Asesinos
-trp_c4_mordor_num_horseman|Númenóreano Negro Jinete
-trp_c4_mordor_num_horseman_pl|Númenóreanos Negros Jinetes
-trp_c5_mordor_num_knight|Númenóreano Negro a caballo
-trp_c5_mordor_num_knight_pl|Númenóreanos Negros a caballo
-trp_noldorin_commander|Capitán Noldorin
-trp_noldorin_commander_pl|Capitán Noldorin
-trp_elf_captain_of_lothlorien|Capitán Elfo de Lórien
-trp_elf_captain_of_lothlorien_pl|Capitanes Elfos de Lórien
+trp_ca5_gunda_clan_skirmisher|Escaramuzador trasgo del clan del Norte
+trp_ca5_gunda_clan_skirmisher_pl|Escaramuzadores trasgos del clan del Norte
+trp_c3_gunda_goblin_rider|Jinete trasgo de Gundabad
+trp_c3_gunda_goblin_rider_pl|Jinetes trasgos de Gundabad
+trp_c4_gunda_warg_rider|Jinete de huargo de Gundabad
+trp_c4_gunda_warg_rider_pl|Jinetes de huargo de Gundabad
+trp_c5_gunda_clan_rider|Jinete trasgo del clan del Norte
+trp_c5_gunda_clan_rider_pl|Jinetes trasgos del clan del Norte
+trp_i5_gunda_orc_champion|Campeón orco de Gundabad
+trp_i5_gunda_orc_champion_pl|Campeones orcos de Gundabad
+trp_mountain_goblin2|Trasgo de montaña
+trp_mountain_goblin2_pl|Trasgos de montaña
+trp_tribal_orc2|Orco tribal
+trp_tribal_orc2_pl|Orcos tribales
+trp_i5_gunda_orc_champion2|Campeón orco de Gundabad
+trp_i5_gunda_orc_champion2_pl|Campeones orcos de Gundabad
+trp_i2_mordor_num_renegade|Renegado Númenóreano Negro
+trp_i2_mordor_num_renegade_pl|Renegadso Númenóreanos Negros
+trp_i3_mordor_num_warrior|Guerrero Númenóreano Negro
+trp_i3_mordor_num_warrior_pl|Guerreros Númenóreanos Negros
+trp_i4_mordor_num_vet_warrior|Guerrero veterano Númenóreano Negro
+trp_i4_mordor_num_vet_warrior_pl|Guerreros veteranos Númenóreanos Negros
+trp_i5_mordor_num_champion|Campeón Númenóreano Negro
+trp_i5_mordor_num_champion_pl|Campeones Númenóreanos Negros
+trp_i5_mordor_num_assassin|Asesino Númenóreano Negro
+trp_i5_mordor_num_assassin_pl|Asesinos Númenóreanos Negros
+trp_c4_mordor_num_horseman|Jinete Númenóreano Negro
+trp_c4_mordor_num_horseman_pl|Jinetes Númenóreanos Negros
+trp_c5_mordor_num_knight|Jinete experto Númenóreano Negro
+trp_c5_mordor_num_knight_pl|Jinetes expertos Númenóreanos Negros
+trp_noldorin_commander|Comandante Noldorin
+trp_noldorin_commander_pl|Comandantes Noldorin
+trp_elf_captain_of_lothlorien|Capitán elfo de Lórien
+trp_elf_captain_of_lothlorien_pl|Capitanes elfos de Lórien
 trp_lothlorien_lieutenant|Teniente de Lórien
 trp_lothlorien_lieutenant_pl|Tenientes de Lórien
-trp_elf_captain_of_mirkwood|Capitán Elfo del Bosque Verde
-trp_elf_captain_of_mirkwood_pl|Capitanes Elfos del Bosque Verde
+trp_elf_captain_of_mirkwood|Capitán elfo del Bosque Verde
+trp_elf_captain_of_mirkwood_pl|Capitanes elfos del Bosque Verde
 trp_mirkwood_lieutenant|Teniente del Bosque Verde
 trp_mirkwood_lieutenant_pl|Tenientes del Bosque Verde
-trp_elf_captain_of_rivendell|Capitán Elfo de Rivendel
-trp_elf_captain_of_rivendell_pl|Capitanes Elfos de Rivendel
+trp_elf_captain_of_rivendell|Capitán elfo de Rivendel
+trp_elf_captain_of_rivendell_pl|Capitanes elfos de Rivendel
 trp_rivendell_lieutenant|Teniente de Rivendel
 trp_rivendell_lieutenant_pl|Tenientes de Rivendel
 trp_lieutenant_of_rohan|Teniente de Rohan
 trp_lieutenant_of_rohan_pl|Tenientes de Rohan
 trp_captain_of_rohan|Capitán de Rohan
 trp_captain_of_rohan_pl|Capitanes de Rohan
-trp_high_captain_of_rohan|Alto Capitán de Rohan
-trp_high_captain_of_rohan_pl|Altos Capitanes de Rohan
+trp_high_captain_of_rohan|Alto capitán de Rohan
+trp_high_captain_of_rohan_pl|Altos capitanes de Rohan
 trp_lieutenant_of_isengard|Teniente de Isengard
 trp_lieutenant_of_isengard_pl|Tenientes de Isengard
 trp_captain_of_isengard|Capitán de Isengard
 trp_captain_of_isengard_pl|Capitán de Isengard
-trp_high_captain_of_isengard|Gran Capitán de Isengard
-trp_high_captain_of_isengard_pl|Grandes Capitanes de Isengard
+trp_high_captain_of_isengard|Gran capitán de Isengard
+trp_high_captain_of_isengard_pl|Grandes capitanes de Isengard
 trp_lieutenant_of_mordor|Teniente de Mordor
 trp_lieutenant_of_mordor_pl|Tenientes de Mordor
 trp_captain_of_mordor|Capitán de Mordor
 trp_captain_of_mordor_pl|Capitanes de Mordor
-trp_high_captain_of_mordor|Gran Capitán de Mordor
-trp_high_captain_of_mordor_pl|Gran Capitán de Mordor
-trp_easterling_chieftain|Cacique Variag
-trp_easterling_chieftain_pl|Caciques Variag
-trp_easterling_lieutenant|Sacerdote de Guerra Variag
-trp_easterling_lieutenant_pl|Sacerdotes de Guerra Variag
+trp_high_captain_of_mordor|Gran capitán de Mordor
+trp_high_captain_of_mordor_pl|Grandes capitanes de Mordor
+trp_easterling_chieftain|Caudillo Variag
+trp_easterling_chieftain_pl|Caudillo Variag
+trp_easterling_lieutenant|Sacerdote guerrero Variag
+trp_easterling_lieutenant_pl|Sacerdotes guerreros Variag
 trp_harad_chieftain|Cacique Haradrim
 trp_harad_chieftain_pl|Caciques Haradrim
 trp_harad_lieutenant|Teniente Haradrim
@@ -810,12 +810,12 @@ trp_black_numenorean_captain|Capitán Númenóreano Negro
 trp_black_numenorean_captain_pl|Capitanes Númenóreanos Negros
 trp_black_numenorean_lieutenant|Teniente Númenóreano Negro
 trp_black_numenorean_lieutenant_pl|Tenientes Númenóreanos Negros
-trp_a5_dun_night_wolf|Lobo Nocturno Dunlendino
-trp_a5_dun_night_wolf_pl|Lobos Nocturnos Dunlendinos
-trp_dunnish_lieutenant|Lugarteniente Dunlendino
-trp_dunnish_lieutenant_pl|Lugarteniente Dunlendinos
-trp_goblin_chieftain|Cacique Trasgo
-trp_goblin_chieftain_pl|Caciques Trasgos
+trp_a5_dun_night_wolf|Lobo Nocturno dunlendino
+trp_a5_dun_night_wolf_pl|Lobos Nocturnos dunlendinos
+trp_dunnish_lieutenant|Caudillo dunlendino
+trp_dunnish_lieutenant_pl|Caudillo dunlendinos
+trp_goblin_chieftain|Cacique trasgo
+trp_goblin_chieftain_pl|Caciques trasgos
 trp_captain_of_gondor|Capitán de Gondor
 trp_captain_of_gondor_pl|Capitanes de Gondor
 trp_nobleman|Noble
@@ -834,26 +834,26 @@ trp_bandit|Bandido
 trp_bandit_pl|Bandidos
 trp_brigand|Bandolero
 trp_brigand_pl|Bandoleros
-trp_mountain_bandit|Bandido de la Montaña
-trp_mountain_bandit_pl|Bandidos de la Montaña
-trp_forest_bandit|Bandido del Bosque
-trp_forest_bandit_pl|Bandidos del Bosque
+trp_mountain_bandit|Bandido de la montaña
+trp_mountain_bandit_pl|Bandidos de la montaña
+trp_forest_bandit|Bandido del bosque
+trp_forest_bandit_pl|Bandidos del bosque
 trp_sea_raider|Pirata
 trp_sea_raider_pl|Piratas
-trp_steppe_bandit|Bandido de la Estepa
+trp_steppe_bandit|Bandido de la estepa
 trp_steppe_bandit_pl|Bandidos de la Estepa
-trp_manhunter|Cazarecompensas
-trp_manhunter_pl|Cazarecompensas
-trp_kidnapped_girl|Muchacha Secuestrada
-trp_kidnapped_girl_pl|Muchachas Secuestradas
+trp_manhunter|Cazarrecompensas
+trp_manhunter_pl|Cazarrecompensas
+trp_kidnapped_girl|Muchacha secuestrada
+trp_kidnapped_girl_pl|Muchachas secuestradas
 trp_refugee|Refugiado
 trp_refugee_pl|Refugiados
 trp_peasant_woman|Campesina
 trp_peasant_woman_pl|Campesinas
-trp_caravan_master|Capataz de Caravana
-trp_caravan_master_pl|Capataces de Caravana
-trp_caravan_guard|Guardia de Caravana
-trp_caravan_guard_pl|Guardias de Caravana
+trp_caravan_master|Caravanero
+trp_caravan_master_pl|Caravaneros
+trp_caravan_guard|Guardia de caravana
+trp_caravan_guard_pl|Guardias de caravana
 trp_messenger_man|Mensajero
 trp_messenger_man_pl|Mensajeros
 trp_messenger_elf|Mensajero
@@ -907,16 +907,16 @@ trp_trainer_khand|Entrenador
 trp_trainer_rhun|Entrenador
 trp_trainer_harad|Entrenador
 trp_trainer_umbar|Entrenador
-trp_ransom_broker_1|Comisionista de Rescates
-trp_ransom_broker_2|Comisionista de Rescates
-trp_ransom_broker_3|Comisionista de Rescates
-trp_ransom_broker_4|Comisionista de Rescates
-trp_ransom_broker_5|Comisionista de Rescates
-trp_ransom_broker_6|Comisionista de Rescates
-trp_ransom_broker_7|Comisionista de Rescates
-trp_ransom_broker_8|Comisionista de Rescates
-trp_ransom_broker_9|Comisionista de Rescates
-trp_ransom_broker_10|Comisionista de Rescates
+trp_ransom_broker_1|Comisionista de rescates
+trp_ransom_broker_2|Comisionista de rescates
+trp_ransom_broker_3|Comisionista de rescates
+trp_ransom_broker_4|Comisionista de rescates
+trp_ransom_broker_5|Comisionista de rescates
+trp_ransom_broker_6|Comisionista de rescates
+trp_ransom_broker_7|Comisionista de rescates
+trp_ransom_broker_8|Comisionista de rescates
+trp_ransom_broker_9|Comisionista de rescates
+trp_ransom_broker_10|Comisionista de rescates
 trp_tavern_traveler_1|Viajero
 trp_tavern_traveler_2|Viajero
 trp_tavern_traveler_3|Viajero
@@ -963,7 +963,7 @@ trp_khand_lord_pl|Shibh
 trp_umbar_lord|Almirante Tulmir
 trp_umbar_lord_pl|Almirante
 trp_lorien_lord|Dama Galadriel
-trp_lorien_lord_pl|Señora
+trp_lorien_lord_pl|Dama
 trp_imladris_lord|Señor Elrond
 trp_imladris_lord_pl|Señor
 trp_woodelf_lord|Rey Thranduil
@@ -980,7 +980,7 @@ trp_dwarf_lord|Rey Dain II Pie de Hierro
 trp_dwarf_lord_pl|Rey
 trp_dunland_lord|Jefe Daeglaf el Negro
 trp_dunland_lord_pl|Jefe
-trp_beorn_lord|Jefe Grimbeorn El Viejo
+trp_beorn_lord|Jefe Grimbeorn el Viejo
 trp_beorn_lord_pl|Jefe
 trp_lorien_marshall|Celeborn
 trp_knight_1_1|Angbor el Intrépido
@@ -988,9 +988,9 @@ trp_knight_1_2|Húrin de las Llaves
 trp_knight_1_3|Príncipe Imrahil
 trp_knight_1_4|Orthalion
 trp_knight_1_5|Duinhir
-trp_knight_1_6|Hirluin El Hermoso
+trp_knight_1_6|Hirluin el Hermoso
 trp_knight_1_7|Faramir
-trp_knight_1_8|Forlong El Gordo
+trp_knight_1_8|Forlong el Gordo
 trp_knight_1_9|Grimbold
 trp_knight_1_10|Erkenbrand
 trp_knight_1_11|Elfhelm
@@ -999,14 +999,14 @@ trp_knight_1_13|Gamelin
 trp_knight_1_14|Éomer
 trp_knight_1_15|Ugluk
 trp_knight_1_16|Mauhur
-trp_knight_1_17|Mog El Siete-Dedos
+trp_knight_1_17|Mog el Siete-Dedos
 trp_knight_1_18|Hushnak Patas Largas
-trp_knight_1_19|Gridash El Muerde-Árboles
+trp_knight_1_19|Gridash el Muerde-Árboles
 trp_knight_1_20|Gronk el Come-Hombres
 trp_knight_2_1|Capitán Mortakh
 trp_knight_2_2|Berúthiel
 trp_knight_2_3|Skang
-trp_knight_2_4|Pharakhâd El Bastardo
+trp_knight_2_4|Pharakhâd el Bastardo
 trp_knight_2_5|Grishnakh
 trp_knight_2_51|Gothmog
 trp_knight_2_51_pl|Lugarteniente
@@ -1069,7 +1069,7 @@ trp_smith_wosgiliath|Gardil
 trp_smith_wosgiliath_pl|herrero improvisado
 trp_smith_calembel|Agronom
 trp_smith_calembel_pl|herrero
-trp_smith_hannun|Fal el Herrero Montaraz
+trp_smith_hannun|Fal el herrero Montaraz
 trp_smith_hannun_pl|alijo de equipamiento montaraz
 trp_smith_candros|Kalimdor
 trp_smith_candros_pl|herrero
@@ -1125,7 +1125,7 @@ trp_smith_esgaroth|Kelegarn Tallador de Arcos
 trp_smith_esgaroth_pl|herrero
 trp_smith_erebor|Thror el Martillador
 trp_smith_erebor_pl|a los reputados herreros enanos
-trp_smith_dunland|Dorrowuld Puntaferro
+trp_smith_dunland|Dorrowuld Pica de Hierro
 trp_smith_dunland_pl|herrero
 trp_smith_harad|Har Doblador de Acero
 trp_smith_harad_pl|herrero
@@ -1142,7 +1142,7 @@ trp_smith_north_rhun_pl|herrero improvisado
 trp_smith_gundabad|Blurg Vende-Nieve
 trp_smith_gundabad_pl|herrero
 trp_smith_ironhill|Herrero de las Colinas de Hierro
-trp_smith_ironhill_pl|herreros del campamento Enano
+trp_smith_ironhill_pl|herreros del campamento enano
 trp_town_50_weaponsmith|Shruklug Afilador de Cuchillos
 trp_town_50_weaponsmith_pl|herrero
 trp_smith_gondor_ac|Bor el Armero
@@ -1158,7 +1158,7 @@ trp_smith_lorien_ac_pl|armeros élficos
 trp_smith_woodelf_ac|Dhoelath
 trp_smith_woodelf_ac_pl|herrero
 trp_smith_dwarf_ac|Herrero de las Colinas de Hierro
-trp_smith_dwarf_ac_pl|herreros del campamento Enano
+trp_smith_dwarf_ac_pl|herreros del campamento enano
 trp_smith_gundabad_ac|Blurg Vende-Nieve
 trp_smith_gundabad_ac_pl|herrero
 trp_smith_rhun_ac|Branimir Bronnik
@@ -1204,172 +1204,172 @@ trp_smith_gundabad_s_pl|herrero
 trp_smith_gundabad_m|Blurg Vende-Nieve
 trp_smith_gundabad_m_pl|herrero
 trp_barman_eastemnet|Tabernero
-trp_barman_eastemnet_pl|l Castillo
+trp_barman_eastemnet_pl|l castillo
 trp_barman_westfold|Tabernero
-trp_barman_westfold_pl|l Castillo
+trp_barman_westfold_pl|l castillo
 trp_barman_westemnet|Tabernero
-trp_barman_westemnet_pl|l Castillo
+trp_barman_westemnet_pl|l castillo
 trp_barman_eastfold|Tabernero
-trp_barman_eastfold_pl|l Castillo
+trp_barman_eastfold_pl|l castillo
 trp_barman_baraddur|Tabernero
-trp_barman_baraddur_pl|l Castillo
+trp_barman_baraddur_pl|l castillo
 trp_barman_morannon|Tabernero
-trp_barman_morannon_pl| la Cueva del Cabecilla
+trp_barman_morannon_pl| la cueva del cabecilla
 trp_barman_mmorgul|Tabernero
 trp_barman_mmorgul_pl| la Torre
-trp_merchant_main_rhun|Jefe de Suministros
-trp_merchant_main_rhun_pl|alijo del campamento
-trp_merchant_dg_outpost|Jefe de Suministros
+trp_merchant_main_rhun|Encargado de suministros
+trp_merchant_main_rhun_pl|almacén del campamento
+trp_merchant_dg_outpost|Encargado de suministros
 trp_merchant_dg_outpost_pl|establo y almacén
-trp_merchant_woodelf_west_camp|Jefe de Suministros
-trp_merchant_woodelf_west_camp_pl|suministros elfos
-trp_merchant_gundabad_m|Jefe de Suministros
-trp_merchant_gundabad_m_pl|alijo del campamento
-trp_merchant_gundabad_s|Jefe de Suministros
-trp_merchant_gundabad_s_pl|alijo del campamento
-trp_merchant_gundabad_nw|Jefe de Suministros
-trp_merchant_gundabad_nw_pl|alijo del campamento
-trp_merchant_gundabad_ne|Jefe de Suministros
-trp_merchant_gundabad_ne_pl|alijo del campamento
-trp_merchant_troll_cave|Jefe de Suministros
+trp_merchant_woodelf_west_camp|Encargado de suministros
+trp_merchant_woodelf_west_camp_pl|suministros élficos
+trp_merchant_gundabad_m|Encargado de suministros
+trp_merchant_gundabad_m_pl|almacén del campamento
+trp_merchant_gundabad_s|Encargado de suministros
+trp_merchant_gundabad_s_pl|almacén del campamento
+trp_merchant_gundabad_nw|Encargado de suministros
+trp_merchant_gundabad_nw_pl|almacén del campamento
+trp_merchant_gundabad_ne|Encargado de suministros
+trp_merchant_gundabad_ne_pl|almacén del campamento
+trp_merchant_troll_cave|Encargado de suministros
 trp_merchant_troll_cave_pl|foso de huargos y suministros
-trp_merchant_beorn_v|Jefe de Suministros
+trp_merchant_beorn_v|Encargado de suministros
 trp_merchant_beorn_v_pl|establo y almacén
-trp_merchant_orc_sentry|Jefe de Suministros
-trp_merchant_orc_sentry_pl|alijo del campamento
-trp_merchant_candros|Jefe de Suministros
+trp_merchant_orc_sentry|Encargado de suministros
+trp_merchant_orc_sentry_pl|almacén del campamento
+trp_merchant_candros|Encargado de suministros
 trp_merchant_candros_pl|establo y almacén
-trp_merchant_hannun|Jefe de Suministros
+trp_merchant_hannun|Encargado de suministros
 trp_merchant_hannun_pl|suministros de los montaraces
-trp_merchant_mtirith|Jefe de Suministros
+trp_merchant_mtirith|Encargado de suministros
 trp_merchant_mtirith_pl|establo y almacén
-trp_merchant_pelargir|Jefe de Suministros
+trp_merchant_pelargir|Encargado de suministros
 trp_merchant_pelargir_pl|establo y almacén
-trp_merchant_linhir|Jefe de Suministros
+trp_merchant_linhir|Encargado de suministros
 trp_merchant_linhir_pl|establo y almacén
-trp_merchant_dolamroth|Jefe de Suministros
+trp_merchant_dolamroth|Encargado de suministros
 trp_merchant_dolamroth_pl|establo y almacén
-trp_merchant_edhellond|Jefe de Suministros
+trp_merchant_edhellond|Encargado de suministros
 trp_merchant_edhellond_pl|establo y almacén
-trp_merchant_lossarnach|Jefe de Suministros
+trp_merchant_lossarnach|Encargado de suministros
 trp_merchant_lossarnach_pl|establo y almacén
-trp_merchant_tarnost|Jefe de Suministros
+trp_merchant_tarnost|Encargado de suministros
 trp_merchant_tarnost_pl|establo y almacén
-trp_merchant_erech|Jefe de Suministros
+trp_merchant_erech|Encargado de suministros
 trp_merchant_erech_pl|establo y almacén
-trp_merchant_pinnath|Jefe de Suministros
+trp_merchant_pinnath|Encargado de suministros
 trp_merchant_pinnath_pl|establo y almacén
-trp_merchant_eosgiliath|Jefe de Suministros
+trp_merchant_eosgiliath|Encargado de suministros
 trp_merchant_eosgiliath_pl|establo y almacén
-trp_merchant_wosgiliath|Jefe de Suministros
+trp_merchant_wosgiliath|Encargado de suministros
 trp_merchant_wosgiliath_pl|establo y almacén
-trp_town_12_horse_merchant|Jefe de Suministros
+trp_town_12_horse_merchant|Encargado de suministros
 trp_town_12_horse_merchant_pl|establo y almacén
-trp_town_13_horse_merchant|Jefe de Suministros
+trp_town_13_horse_merchant|Encargado de suministros
 trp_town_13_horse_merchant_pl|establo y almacén
-trp_merchant_edoras|Jefa de Provisiones
+trp_merchant_edoras|Encargads de suministros
 trp_merchant_edoras_pl|establo y almacén
-trp_merchant_aldburg|Jefe de Suministros
+trp_merchant_aldburg|Encargado de suministros
 trp_merchant_aldburg_pl|establo real y almacén
-trp_merchant_hornburg|Jefe de Suministros
+trp_merchant_hornburg|Encargado de suministros
 trp_merchant_hornburg_pl|establo y almacén
-trp_merchant_eastemnet|Jefe de Suministros
+trp_merchant_eastemnet|Encargado de suministros
 trp_merchant_eastemnet_pl|establo y almacén
-trp_merchant_westfold|Jefa de Provisiones
+trp_merchant_westfold|Encargads de suministros
 trp_merchant_westfold_pl|establo y almacén
-trp_merchant_westemnet|Jefa de Provisiones
+trp_merchant_westemnet|Encargads de suministros
 trp_merchant_westemnet_pl|establo y almacén
-trp_merchant_eastfold|Jefa de Provisiones
+trp_merchant_eastfold|Encargads de suministros
 trp_merchant_eastfold_pl|establo y almacén
-trp_town_21_horse_merchant|Jefe de Suministros
+trp_town_21_horse_merchant|Encargado de suministros
 trp_town_21_horse_merchant_pl|foso y almacén
-trp_merchant_morannon|Jefe de Suministros
+trp_merchant_morannon|Encargado de suministros
 trp_merchant_morannon_pl|foso y almacén
-trp_merchant_mmorgul|Jefe de Suministros
+trp_merchant_mmorgul|Encargado de suministros
 trp_merchant_mmorgul_pl|foso y almacén
-trp_town_24_horse_merchant|Jefe de Suministros
+trp_town_24_horse_merchant|Encargado de suministros
 trp_town_24_horse_merchant_pl|foso y almacén
-trp_merchant_orc_patrol|Jefe de Suministros
-trp_merchant_orc_patrol_pl|alijo del campamento
-trp_merchant_isengard|Jefe de Suministros
-trp_merchant_isengard_pl|alijo del campamento
-trp_town_27_horse_merchant|Jefe de Suministros
+trp_merchant_orc_patrol|Encargado de suministros
+trp_merchant_orc_patrol_pl|almacén del campamento
+trp_merchant_isengard|Encargado de suministros
+trp_merchant_isengard_pl|almacén del campamento
+trp_town_27_horse_merchant|Encargado de suministros
 trp_town_27_horse_merchant_pl|foso de huargos y suministros
-trp_merchant_uoutpost|Jefe de Suministros
+trp_merchant_uoutpost|Encargado de suministros
 trp_merchant_uoutpost_pl|foso de huargos y suministros
-trp_merchant_uhcamp|Jefe de Suministros
+trp_merchant_uhcamp|Encargado de suministros
 trp_merchant_uhcamp_pl|foso de huargos y suministros
-trp_merchant_urcamp|Jefe de Suministros
+trp_merchant_urcamp|Encargado de suministros
 trp_merchant_urcamp_pl|foso de huargos y suministros
-trp_merchant_cgaladhon|Jefe de Suministros
-trp_merchant_cgaladhon_pl|suministros elfos
-trp_merchant_cdolen|Jefe de Suministros
-trp_merchant_cdolen_pl|suministros elfos
-trp_merchant_camroth|Jefe de Suministros
-trp_merchant_camroth_pl|suministros elfos
-trp_merchant_thranduils_halls|Jefe de Suministros
-trp_merchant_thranduils_halls_pl|suministros elfos
-trp_merchant_woodelf_camp|Jefe de Suministros
-trp_merchant_woodelf_camp_pl|suministros elfos
-trp_merchant_woodmen|Jefe de Suministros
+trp_merchant_cgaladhon|Encargado de suministros
+trp_merchant_cgaladhon_pl|suministros élficos
+trp_merchant_cdolen|Encargado de suministros
+trp_merchant_cdolen_pl|suministros élficos
+trp_merchant_camroth|Encargado de suministros
+trp_merchant_camroth_pl|suministros élficos
+trp_merchant_thranduils_halls|Encargado de suministros
+trp_merchant_thranduils_halls_pl|suministros élficos
+trp_merchant_woodelf_camp|Encargado de suministros
+trp_merchant_woodelf_camp_pl|suministros élficos
+trp_merchant_woodmen|Encargado de suministros
 trp_merchant_woodmen_pl|establo y almacén
-trp_merchant_beorn|Jefe de Suministros
+trp_merchant_beorn|Encargado de suministros
 trp_merchant_beorn_pl|establo y almacén
-trp_merchant_moria|Jefe de Suministros
+trp_merchant_moria|Encargado de suministros
 trp_merchant_moria_pl|foso de huargos y suministros
-trp_merchant_dale|Jefe de Suministros
+trp_merchant_dale|Encargado de suministros
 trp_merchant_dale_pl|establo y almacén
-trp_merchant_esgaroth|Jefe de Suministros
+trp_merchant_esgaroth|Encargado de suministros
 trp_merchant_esgaroth_pl|establo y almacén
-trp_merchant_erebor|Jefe de Suministros
-trp_merchant_erebor_pl|suministros Enanos
-trp_merchant_dunland|Contrabandista Dunlendino
-trp_merchant_dunland_pl|alijo del campamento
-trp_merchant_harad|Intendente de Provisioones Haradrim
-trp_merchant_harad_pl|alijo del campamento
-trp_merchant_khand|Intendente de Provisiones de Khand
-trp_merchant_khand_pl|alijo del campamento
-trp_merchant_umbar|Jefe de Suministros
-trp_merchant_umbar_pl|alijo del campamento
-trp_merchant_imladris|Jefe de Suministros
+trp_merchant_erebor|Encargado de suministros
+trp_merchant_erebor_pl|suministros enanos
+trp_merchant_dunland|Contrabandista dunlendino
+trp_merchant_dunland_pl|almacén del campamento
+trp_merchant_harad|Intendente de provisioones Haradrim
+trp_merchant_harad_pl|almacén del campamento
+trp_merchant_khand|Intendente de provisiones de Khand
+trp_merchant_khand_pl|almacén del campamento
+trp_merchant_umbar|Encargado de suministros
+trp_merchant_umbar_pl|almacén del campamento
+trp_merchant_imladris|Encargado de suministros
 trp_merchant_imladris_pl|suministros del campamento
-trp_merchant_dolguldur|Jefe de Suministros
+trp_merchant_dolguldur|Encargado de suministros
 trp_merchant_dolguldur_pl|establo y almacén
-trp_merchant_north_rhun|Jefe de Suministros
-trp_merchant_north_rhun_pl|alijo del campamento
-trp_merchant_south_rhun|Jefe de Suministros
-trp_merchant_south_rhun_pl|alijo del campamento
-trp_merchant_gundabad|Jefe de Suministros
-trp_merchant_gundabad_pl|alijo del campamento
-trp_merchant_ironhill|Jefe de Suministros
-trp_merchant_ironhill_pl|suministros Enanos
+trp_merchant_north_rhun|Encargado de suministros
+trp_merchant_north_rhun_pl|almacén del campamento
+trp_merchant_south_rhun|Encargado de suministros
+trp_merchant_south_rhun_pl|almacén del campamento
+trp_merchant_gundabad|Encargado de suministros
+trp_merchant_gundabad_pl|almacén del campamento
+trp_merchant_ironhill|Encargado de suministros
+trp_merchant_ironhill_pl|suministros enanos
 trp_town_50_horse_merchant|Gobrip Diente Amarillo
 trp_town_50_horse_merchant_pl|foso de huargos y suministros
-trp_merchant_calembel|Jefe de Suministros
+trp_merchant_calembel|Encargado de suministros
 trp_merchant_calembel_pl|establo y almacén
-trp_elder_mtirith|Portavoz Gremial de Tirith
+trp_elder_mtirith|Portavoz gremial de Tirith
 trp_elder_mtirith_pl| la Ciudad Blanca
-trp_elder_pelargir|Portavoz de los Marineros
+trp_elder_pelargir|Portavoz de los marineros
 trp_elder_pelargir_pl| la ciudad
-trp_elder_linhir|Portavoz Gremial de Linhir
+trp_elder_linhir|Portavoz gremial de Linhir
 trp_elder_linhir_pl| la ciudad
-trp_elder_dolamroth|Portavoz Gremial de Dol Amroth
+trp_elder_dolamroth|Portavoz gremial de Dol Amroth
 trp_elder_dolamroth_pl| la ciudad
-trp_elder_edhellond|Portavoz Gremial de Edhellond
+trp_elder_edhellond|Portavoz gremial de Edhellond
 trp_elder_edhellond_pl| la ciudad
-trp_elder_lossarnach|Portavoz Gremial de Lossarnach
+trp_elder_lossarnach|Portavoz gremial de Lossarnach
 trp_elder_lossarnach_pl| la ciudad
-trp_elder_tarnost|Portavoz Gremial de Tarnost
+trp_elder_tarnost|Portavoz gremial de Tarnost
 trp_elder_tarnost_pl| la ciudad
-trp_elder_erech|Portavoz Gremial de Erech
+trp_elder_erech|Portavoz gremial de Erech
 trp_elder_erech_pl| la ciudad
-trp_elder_pinnath|Anciano de la Tribu de Pinnath
+trp_elder_pinnath|Anciano de la tribu de Pinnath
 trp_elder_pinnath_pl| la ciudad
-trp_elder_ethring|Portavoz Gremial de Calembel
+trp_elder_ethring|Portavoz gremial de Calembel
 trp_elder_ethring_pl| la ciudad
 trp_elder_henneth|Portavoz de los Montaraces
 trp_elder_henneth_pl| la guarida
-trp_elder_cairandros|Portavoz Gremial de Cair Andros
+trp_elder_cairandros|Portavoz gremial de Cair Andros
 trp_elder_cairandros_pl| la isla fortificada
 trp_elder_edoras|Thain de Édoras
 trp_elder_edoras_pl| la ciudad
@@ -1385,35 +1385,35 @@ trp_elder_westemnet|Thain de Oestemnet
 trp_elder_westemnet_pl| la ciudad
 trp_elder_eastfold|Thain del Folde Este
 trp_elder_eastfold_pl| la ciudad
-trp_elder_morannon|Jefe de la Puerta Negra
-trp_elder_morannon_pl| las cuevas cuyas bocas miran a la Gran Puerta
+trp_elder_morannon|Capataz de la Puerta Negra
+trp_elder_morannon_pl| las cuevas que dan a la Gran Puerta
 trp_elder_mmorgul|Jefe de Morgul
 trp_elder_mmorgul_pl| la ciudad siniestra
-trp_elder_cungol|Jefe del Campamento
+trp_elder_cungol|Jefe del campamento
 trp_elder_cungol_pl|l campamento
 trp_elder_isengard|Grima Lengua de Serpiente
 trp_elder_isengard_pl| la ciudad
 trp_elder_cgaladhon|Sabio de Lórien
-trp_elder_cgaladhon_pl| la fortaleza del bosque élfico
+trp_elder_cgaladhon_pl| la fortaleza élfica del bosque
 trp_elder_cdolen|Sabio de Lórien
 trp_elder_cdolen_pl|l campamento
 trp_elder_camroth|Sabio de Lórien
 trp_elder_camroth_pl|l campamento
 trp_elder_thalls|Anciano del Bosque Negro
 trp_elder_thalls_pl| las cuevas de los elfos
-trp_elder_imladris|Intendente del Campamento de Rivendel
+trp_elder_imladris|Intendente del campamento de Rivendel
 trp_elder_imladris_pl|l campamento
-trp_elder_wvillage|Pierre el Bosqueño
+trp_elder_wvillage|Vicent del Bosque
 trp_elder_wvillage_pl|l pueblo
 trp_elder_beorn|Anciano Beórnida
 trp_elder_beorn_pl| la aldea
-trp_elder_harad|Jefe del Campamento Haradrim
+trp_elder_harad|Jefe del campamento Haradrim
 trp_elder_harad_pl|l campamento
 trp_elder_rhun|Sumo sacerdote de Rhun
 trp_elder_rhun_pl|l campamento
-trp_elder_khand|Jefe del Campamento de Khand
+trp_elder_khand|Jefe del campamento de Khand
 trp_elder_khand_pl|l campamento
-trp_elder_dunland|Jefe del Campamento Dunlendino
+trp_elder_dunland|Jefe del campamento dunlendino
 trp_elder_dunland_pl|l campamento
 trp_elder_umbar|Intendente de Umbar
 trp_elder_umbar_pl|l campamento fortificado
@@ -1424,22 +1424,22 @@ trp_elder_gunda_pl| las cuevas
 trp_elder_dale|Intendente de Valle
 trp_elder_dale_pl| la ciudad
 trp_elder_esgaroth|Intendente de Esgaroth
-trp_elder_esgaroth_pl| la ciudad del lago
-trp_elder_erebor|Portavoz del Gremio de Erebor
+trp_elder_esgaroth_pl| la Ciudad del Lago
+trp_elder_erebor|Portavoz gremial de Erebor
 trp_elder_erebor_pl| los Salones
 trp_elder_dolguldur|Jefe de Dol Guldur
 trp_elder_dolguldur_pl|l castillo negro
-trp_elder_wosgiliath|Jefe del Campamento
+trp_elder_wosgiliath|Jefe del campamento
 trp_elder_wosgiliath_pl|l campamento
-trp_elder_oscamp|Jefe del Campamento
+trp_elder_oscamp|Jefe del campamento
 trp_elder_oscamp_pl|l campamento
-trp_elder_eosgiliath|Jefe del Campamento
+trp_elder_eosgiliath|Jefe del campamento
 trp_elder_eosgiliath_pl|l campamento
-trp_elder_uoutpost|Jefe del Campamento
+trp_elder_uoutpost|Jefe del campamento
 trp_elder_uoutpost_pl|l campamento
-trp_elder_uhcamp|Jefe del Campamento
+trp_elder_uhcamp|Jefe del campamento
 trp_elder_uhcamp_pl|l campamento
-trp_elder_urcamp|Jefe del Campamento
+trp_elder_urcamp|Jefe del campamento
 trp_elder_urcamp_pl|l campamento
 trp_elder_woodelf_camp|Anciano
 trp_elder_woodelf_camp_pl|l campamento
@@ -1447,56 +1447,56 @@ trp_elder_woodelf_west_camp|Anciano
 trp_elder_woodelf_west_camp_pl|l campamento
 trp_elder_beorn_v|Anciano Beórnida
 trp_elder_beorn_v_pl|l pueblo
-trp_elder_troll_cave|Jefe de la Cueva
+trp_elder_troll_cave|Jefe de la cueva
 trp_elder_troll_cave_pl| las cuevas
-trp_elder_dg_outpost|Jefe del Campamento
+trp_elder_dg_outpost|Jefe del campamento
 trp_elder_dg_outpost_pl|l campamento
-trp_elder_rhun_sc|Jefe del Campamento de Rhûn
+trp_elder_rhun_sc|Jefe del campamento de Rhûn
 trp_elder_rhun_sc_pl|l campamento
-trp_elder_rhun_nc|Jefe del Campamento de Rhûn
+trp_elder_rhun_nc|Jefe del campamento de Rhûn
 trp_elder_rhun_nc_pl|l campamento
-trp_elder_gunda_ne|Anciano Orco
+trp_elder_gunda_ne|Anciano orco
 trp_elder_gunda_ne_pl|l campamento
-trp_elder_gunda_nw|Anciano Orco
+trp_elder_gunda_nw|Anciano orco
 trp_elder_gunda_nw_pl|l campamento
-trp_elder_gunda_s|Anciano Orco
+trp_elder_gunda_s|Anciano orco
 trp_elder_gunda_s_pl|l campamento
-trp_elder_gunda_m|Anciano Orco
+trp_elder_gunda_m|Anciano orco
 trp_elder_gunda_m_pl|l campamento
-trp_elder_ironhill|Jefe del Campamento
+trp_elder_ironhill|Jefe del campamento
 trp_elder_ironhill_pl|l campamento
 trp_village_1_elder|Señor del Látigo
 trp_village_1_elder_pl| las cuevas
-trp_tutorial_chest_1|Cofre de Armas Cuerpo a cuerpo
-trp_tutorial_chest_2|Cofre de Armas a Distancia
-trp_bonus_chest_1|Cofre de Bonificación
-trp_bonus_chest_2|Cofre de Bonificación
-trp_bonus_chest_3|Cofre de Bonificación
-trp_camp_chest_faction|Cofre de Facción
+trp_tutorial_chest_1|Cofre de armas cuerpo a cuerpo
+trp_tutorial_chest_2|Cofre de armas a distancia
+trp_bonus_chest_1|Cofre de bonificación
+trp_bonus_chest_2|Cofre de bonificación
+trp_bonus_chest_3|Cofre de bonificación
+trp_camp_chest_faction|Cofre de facción
 trp_camp_chest_none|Cofre sin dueño
 trp_player_chest|Mi Cofre
-trp_local_merchant|Mercaderes Locales
-trp_local_merchant_pl|Mercaderes del lugar
-trp_tax_rebel|Campesino Rebelde
-trp_tax_rebel_pl|Campesinos Rebeldes
+trp_local_merchant|Mercaderes locales
+trp_local_merchant_pl|Mercaderes locales
+trp_tax_rebel|Campesino rebelde
+trp_tax_rebel_pl|Campesinos rebeldes
 trp_trainee_peasant|Campesino
 trp_trainee_peasant_pl|Campesinos
-trp_fugitive_man|Hombre Sospechoso
-trp_fugitive_man_pl|Hombres Sospechosos
-trp_fugitive_elf|Elfo Sospechoso
+trp_fugitive_man|Hombre sospechoso
+trp_fugitive_man_pl|Hombres sospechosos
+trp_fugitive_elf|Elfo sospechoso
 trp_fugitive_elf_pl|Elfos sospechosos
-trp_fugitive_dwarf|Enano Sospechoso
-trp_fugitive_dwarf_pl|Enanos Sospechosos
-trp_fugitive_orc|Orco Sospechoso
-trp_fugitive_orc_pl|Orcos Sospechosos
-trp_spy|Corsario inquieto
-trp_spy_pl|Corsarios inquietos
-trp_spy_evil|Sureño inquieto
-trp_spy_evil_pl|Sureños inquietos
-trp_spy_partner|Contacto del Espía
-trp_spy_partner_pl|Contactos de espías
-trp_spy_partner_evil|Contacto del Espía
-trp_spy_partner_evil_pl|Contactos de los Espías
+trp_fugitive_dwarf|Enano sospechoso
+trp_fugitive_dwarf_pl|Enanos sospechosos
+trp_fugitive_orc|Orco sospechoso
+trp_fugitive_orc_pl|Orcos sospechosos
+trp_spy|Corsario taimado
+trp_spy_pl|Corsarios taimados
+trp_spy_evil|Sureño taimado
+trp_spy_evil_pl|Sureños taimados
+trp_spy_partner|Contacto del espía
+trp_spy_partner_pl|Contactos del espía
+trp_spy_partner_evil|Contacto del espía
+trp_spy_partner_evil_pl|Contactos del espía
 trp_easter_egg_troll|El Troll
 trp_treebeard|Bárbol
 trp_ent_1|Ramaviva
@@ -1509,8 +1509,8 @@ trp_nazgul_pl|Nazgûl domesticado
 trp_radagast|Radagast
 trp_barman|Camarero
 trp_elder|Anciano del lugar
-trp_gear_merchant|Mercader de Equipapiento
-trp_goods_merchant|Mercader de Bienes
+trp_gear_merchant|Mercader de equipapiento
+trp_goods_merchant|Mercader de bienes
 trp_start_quest_caravaneer|Torbal el Caravanero
 trp_dorwinion_bandit|Bandido de Dorwinion
 trp_dorwinion_bandit_pl|Bandidos de Dorwinion
@@ -1518,7 +1518,7 @@ trp_dorwinion_raider|Incursor de Dorwinion
 trp_dorwinion_raider_pl|Invasores de Dorwinion
 trp_city_guard|Guardia de la Ciudad
 trp_city_guard_pl|guardia de la ciudad
-trp_orc_sentry|Centinela Orco
+trp_orc_sentry|Centinela orco
 trp_orc_sentry_pl|centinela orco
 trp_uruk_hai_sentry|Centinela Uruk-hâi
 trp_uruk_hai_sentry_pl|centinela uruk-hâi
@@ -1526,13 +1526,13 @@ trp_black_numenorean_sorcerer|Hechicero negro de Númenor
 trp_black_numenorean_sorcerer_pl|Hechiceros negros de Númenor
 trp_evil_priest|Sacerdote malvado
 trp_evil_priest_pl|Sacerdotes malvados
-trp_wolf_rider_of_mirkwood|Jinete de Lobo del Bosque Negro
-trp_wolf_rider_of_mirkwood_pl|Jinetes de Lobo del Bosque Negro
-trp_warg_rider_of_mirkwood|Jinete de Huargo del Bosque Negro
-trp_warg_rider_of_mirkwood_pl|Jinetes de Huargo del Bosque Negro
-trp_gate_aggravator|Defensa de la Puerta
-trp_orc_pretender|Aspirante a cabecilla Orco
-trp_human_prisoner|Prisionero Humano
+trp_wolf_rider_of_mirkwood|Jinete de lobo del Bosque Negro
+trp_wolf_rider_of_mirkwood_pl|Jinetes de lobo del Bosque Negro
+trp_warg_rider_of_mirkwood|Jinete de huargo del Bosque Negro
+trp_warg_rider_of_mirkwood_pl|Jinetes de huargo del Bosque Negro
+trp_gate_aggravator|Defensa de la puerta
+trp_orc_pretender|Aspirante a cabecilla orco
+trp_human_prisoner|Prisionero humano
 trp_spider|Araña del Bosque Negro 
 trp_spider_pl|Arañas del Bosque Negro 
 trp_bear|Oso
@@ -1550,11 +1550,11 @@ trp_ring_hunter_three|Caza-anillos
 trp_ring_hunter_three_pl|Caza-anillos
 trp_ring_hunter_four|Caza-anillos
 trp_ring_hunter_four_pl|Caza-anillos
-trp_start_quest_uruk|Capitán Uruk de Mordor
-trp_start_quest_orc|Teniente Orco de Mordor
-trp_start_quest_orc_pl|Orcos Grandes de Mordor
-trp_start_quest_woodelf|Tirador Real Galadhrim
-trp_start_quest_woodelf_pl|Tiradores Reales Galadhrim
+trp_start_quest_uruk|Capitán uruk de Mordor
+trp_start_quest_orc|Teniente orco de Mordor
+trp_start_quest_orc_pl|Orcos grandes de Mordor
+trp_start_quest_woodelf|Tirador real Galadhrim
+trp_start_quest_woodelf_pl|Tiradores reales Galadhrim
 trp_start_quest_mordor_scout|Guía de Mordor
 trp_start_quest_mordor_scout_pl|Guías de Mordor
 trp_start_quest_beorning|Berserker Beórnida de Carroca 
@@ -1567,16 +1567,16 @@ trp_edoras_healer|Freya la Sanadora
 trp_isengard_healer|Nurgal el Zurcidor
 trp_guldur_healer|Mornagar el Hechicero
 trp_gundabad_healer|Lurgakh Tercer Ojo
-trp_mirkwood_healer|Corwiel el Blando
-trp_hungry_uruk|Uruk Hambriento
-trp_hungry_orc|Orco Hambriento
-trp_longing_lorien|Elfo Melancólico
-trp_longing_woodelf|Elfo Melancólico
-trp_longing_imladris|Elfo Melancólico
-trp_i5_moria_deep_dweller|Morador de las Profundidades de Moria
-trp_i5_moria_deep_dweller_pl|Moradores de las Profundidades de Moria
-trp_i5_moria_orc_chieftain|Cacique Orco de Moria
-trp_i5_moria_orc_chieftain_pl|Caciques Orcos de Moria
+trp_mirkwood_healer|Corwiel Manos Suaves
+trp_hungry_uruk|Uruk hambriento
+trp_hungry_orc|Orco hambriento
+trp_longing_lorien|Elfo melancólico
+trp_longing_woodelf|Elfo melancólico
+trp_longing_imladris|Elfo melancólico
+trp_i5_moria_deep_dweller|Morador de las profundidades de Moria
+trp_i5_moria_deep_dweller_pl|Moradores de las profundidades de Moria
+trp_i5_moria_orc_chieftain|Cacique orco de Moria
+trp_i5_moria_orc_chieftain_pl|Caciques orcos de Moria
 trp_c5_rhovanion_noble|Noble de Rhovanion
 trp_c5_rhovanion_noble_pl|Nobles de Rhovanion
 trp_npc18|Turmbathu
@@ -1584,62 +1584,62 @@ trp_npc19|Heidrek
 trp_npc20|Zigûrphel
 trp_werewolf|Licántropo
 trp_werewolf_pl|Licántropos
-trp_moria_troll|Troll de las Cavernas
-trp_moria_troll_pl|Trolls de las Cavernas
-trp_moria_vet_troll|Troll de las Cavernas Domado
-trp_moria_vet_troll_pl|Trolls de las Cavernas Domados
-trp_moria_armored_troll|Troll de las Cavernas con Armadura
-trp_moria_armored_troll_pl|Trolls de las Cavernas con Armadura
-trp_gunda_troll|Troll de las Montañas
-trp_gunda_troll_pl|Trolls de las Montañas
-trp_gunda_vet_troll|Troll de las Montañas Domado
-trp_gunda_vet_troll_pl|Troll de las Montañas Domados
-trp_gunda_placeholder|Troll de las Montañas Domado
-trp_gunda_placeholder_pl|Troll de las Montañas Domados
+trp_moria_troll|Troll de las cavernas
+trp_moria_troll_pl|Trolls de las cavernas
+trp_moria_vet_troll|Troll de las cavernas entrenado
+trp_moria_vet_troll_pl|Trolls de las cavernas entrenados
+trp_moria_armored_troll|Troll de las cavernas con armadura
+trp_moria_armored_troll_pl|Trolls de las cavernas con armadura
+trp_gunda_troll|Troll de las montañas
+trp_gunda_troll_pl|Trolls de las montañas
+trp_gunda_vet_troll|Troll de las montañas Entrenado
+trp_gunda_vet_troll_pl|Troll de las montañas Entrenados
+trp_gunda_placeholder|Troll de las montañas Entrenado
+trp_gunda_placeholder_pl|Troll de las montañas Entrenados
 trp_isen_troll|Troll de Isengard
 trp_isen_troll_pl|Trolls de Isengard
-trp_isen_vet_troll|Troll Domado de Isengard
-trp_isen_vet_troll_pl|Trolls Domados de Isengard
-trp_isen_armored_troll|Troll de Isengard con Armadura
-trp_isen_armored_troll_pl|Trolls de Isengard con Armadura
+trp_isen_vet_troll|Troll Entrenado de Isengard
+trp_isen_vet_troll_pl|Trolls Entrenados de Isengard
+trp_isen_armored_troll|Troll de Isengard con armadura
+trp_isen_armored_troll_pl|Trolls de Isengard con armadura
 trp_mordor_troll|Troll de Mordor
 trp_mordor_troll_pl|Trolls de Mordor
-trp_mordor_vet_troll|Troll de Mordor Domado
-trp_mordor_vet_troll_pl|Trolls de Mordor Domados
+trp_mordor_vet_troll|Troll de Mordor Entrenado
+trp_mordor_vet_troll_pl|Trolls de Mordor Entrenados
 trp_mordor_olog_hai|Olog-hai de Mordor
 trp_mordor_olog_hai_pl|Olog-hai de Mordor
-trp_troll_placeholder_1|Troll de las Cavernas
-trp_troll_placeholder_1_pl|Trolls de las Cavernas
-trp_troll_placeholder_2|Troll de las Cavernas
-trp_troll_placeholder_2_pl|Trolls de las Cavernas
-trp_troll_placeholder_3|Troll de las Cavernas
-trp_troll_placeholder_3_pl|Trolls de las Cavernas
-trp_troll_placeholder_4|Troll de las Cavernas
-trp_troll_placeholder_4_pl|Trolls de las Cavernas
-trp_troll_placeholder_5|Troll de las Cavernas
-trp_troll_placeholder_5_pl|Trolls de las Cavernas
-trp_troll_placeholder_6|Troll de las Cavernas
-trp_troll_placeholder_6_pl|Trolls de las Cavernas
-trp_wild_troll|Troll Salvaje de las Cavernas
-trp_wild_troll_pl|Trolls Salvajes de las Cavernas
+trp_troll_placeholder_1|Troll de las cavernas
+trp_troll_placeholder_1_pl|Trolls de las cavernas
+trp_troll_placeholder_2|Troll de las cavernas
+trp_troll_placeholder_2_pl|Trolls de las cavernas
+trp_troll_placeholder_3|Troll de las cavernas
+trp_troll_placeholder_3_pl|Trolls de las cavernas
+trp_troll_placeholder_4|Troll de las cavernas
+trp_troll_placeholder_4_pl|Trolls de las cavernas
+trp_troll_placeholder_5|Troll de las cavernas
+trp_troll_placeholder_5_pl|Trolls de las cavernas
+trp_troll_placeholder_6|Troll de las cavernas
+trp_troll_placeholder_6_pl|Trolls de las cavernas
+trp_wild_troll|Troll salvaje de las cavernas
+trp_wild_troll_pl|Trolls salvajes de las cavernas
 trp_ent|Ent
 trp_ent_pl|Ents
-trp_mountain_goblin|Trasgo de Montaña
-trp_mountain_goblin_pl|Trasgos de Montaña
-trp_tribal_orc|Orco Tribal
-trp_tribal_orc_pl|Orcos Tribales
-trp_tribal_orc_warrior|Guerrero Tribal Orco
-trp_tribal_orc_warrior_pl|Guerreros Tribales Orcos
-trp_tribal_orc_chief|Jefe Tribal Orco
-trp_tribal_orc_chief_pl|Jefes Tribales Orcos
+trp_mountain_goblin|Trasgo de montaña
+trp_mountain_goblin_pl|Trasgos de montaña
+trp_tribal_orc|Orco tribal
+trp_tribal_orc_pl|Orcos tribales
+trp_tribal_orc_warrior|Guerrero tribal orco
+trp_tribal_orc_warrior_pl|Guerreros tribales orcos
+trp_tribal_orc_chief|Jefe tribal orco
+trp_tribal_orc_chief_pl|Jefes tribales orcos
 trp_a3_dism_skirmisher_of_rohan|Escaramuzador de Rohan
 trp_a3_dism_skirmisher_of_rohan_pl|Escaramuzadores de Rohan
-trp_a4_dism_veteran_skirmisher_of_rohan|Escaramuzador Veterano de Rohan
-trp_a4_dism_veteran_skirmisher_of_rohan_pl|Escaramuzadores Veteranos de Rohan
-trp_a5_dism_elite_skirmisher_of_rohan|Escaramuzador de Élite de Rohan
-trp_a5_dism_elite_skirmisher_of_rohan_pl|Escaramuzadores de Élite de Rohan
-trp_ac5_camel_rider|Jinete a camello Haradrim
-trp_ac5_camel_rider_pl|Jinetes a camello Haradrim
+trp_a4_dism_veteran_skirmisher_of_rohan|Escaramuzador veterano de Rohan
+trp_a4_dism_veteran_skirmisher_of_rohan_pl|Escaramuzadores veteranos de Rohan
+trp_a5_dism_elite_skirmisher_of_rohan|Escaramuzador de élite de Rohan
+trp_a5_dism_elite_skirmisher_of_rohan_pl|Escaramuzadores de élite de Rohan
+trp_ac5_camel_rider|Jinete de camello Haradrim
+trp_ac5_camel_rider_pl|Jinetes de camello Haradrim
 trp_aragorn|Aragorn
 trp_legolas|Legolas
 trp_gimli|Gimli

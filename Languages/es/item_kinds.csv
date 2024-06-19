@@ -288,12 +288,12 @@ itm_orc_tribal_b|Piel sin curtir
 itm_orc_tribal_c|Piel sin curtir
 itm_evil_gauntlets_a|Guantes negros
 itm_evil_gauntlets_b|Guanteletes negros
-itm_isen_orc_light_a|Arnés ligero de Orco de Isengard
-itm_isen_orc_light_b|Arnés Ligero de Orco de Isengard
-itm_isen_orc_pad_a|Armadura segmentada ligera de Orco de Isengard
-itm_isen_orc_pad_b|Armadura segmentada media de Orco de Isengard
-itm_isen_orc_mail_a|Malla de Orco de Isengard
-itm_isen_orc_mail_b|Armadura segmentada pesada de Orco de Isengard
+itm_isen_orc_light_a|Arnés ligero de orco de Isengard
+itm_isen_orc_light_b|Arnés Ligero de orco de Isengard
+itm_isen_orc_pad_a|Armadura segmentada ligera de orco de Isengard
+itm_isen_orc_pad_b|Armadura segmentada media de orco de Isengard
+itm_isen_orc_mail_a|Malla de orco de Isengard
+itm_isen_orc_mail_b|Armadura segmentada pesada de orco de Isengard
 itm_isen_uruk_light_a|Arnés ligero Uruk-hai
 itm_isen_uruk_light_b|Arnés de guerrero Uruk-hai
 itm_isen_uruk_light_c|Arnés de Berserker Uruk-hai
@@ -305,15 +305,15 @@ itm_isen_uruk_heavy_c|Armadura segmentada completa Uruk-hai
 itm_isen_uruk_heavy_d|Armadura de cuero de rastreador Uruk-hai
 itm_isen_uruk_heavy_e|Armadura de cuero de rastreador Uruk-hai
 itm_uruk_tracker_boots|Botas de rastreador Uruk-hai
-itm_uruk_greaves|Grebas de Uruk
-itm_uruk_chain_greaves|Grebas de malla de Uruk
-itm_uruk_ragwrap|Harapos de Uruk
+itm_uruk_greaves|Grebas de uruk
+itm_uruk_chain_greaves|Grebas de malla de uruk
+itm_uruk_ragwrap|Harapos de uruk
 itm_isen_orc_helm_a|Yelmo orco de Isengard
 itm_isen_uruk_helm_a|Yelmo Uruk-hai
 itm_isen_uruk_helm_d|Yelmo de Capitán Uruk-hai
 itm_isen_uruk_helm_e|Yelmo de rastreador Uruk-hai
 itm_uruk_pike_b|Pica de Mordor
-itm_uruk_falchion_a|Alfanje de Uruk
+itm_uruk_falchion_a|Alfanje de uruk
 itm_uruk_falchion_b|Gran cimitarra orca
 itm_isengard_sword|Espada de Isengard
 itm_isengard_axe|Hacha de Isengard
@@ -326,7 +326,7 @@ itm_isengard_spear|Lanza de Isengard
 itm_isengard_pike|Pica de Isengard
 itm_isen_orc_shield_a|Escudo orco de Isengard
 itm_isen_orc_shield_b|Escudo orco de Isengard
-itm_isen_uruk_shield_b|Escudo de Uruk de Isengard
+itm_isen_uruk_shield_b|Escudo de uruk de Isengard
 itm_wood_club|Garrote de madera
 itm_twohand_wood_club|Garrote grande de madera
 itm_bone_cudgel|Porra de hueso
@@ -351,14 +351,14 @@ itm_orc_bow|Arco orco
 itm_orc_shield_a|Escudo sencillo
 itm_orc_shield_b|Escudo de piel
 itm_orc_shield_c|Pavés de piel
-itm_mordor_orc_shield_a|Escudo de Orco de Mordor
-itm_mordor_orc_shield_b|Escudo de Orco de Mordor
-itm_mordor_orc_shield_c|Escudo de Orco de Mordor
-itm_mordor_orc_shield_d|Escudo de Orco de Mordor
-itm_mordor_orc_shield_e|Escudo de Orco de Mordor
-itm_mordor_uruk_shield_a|Escudo de Uruk de Mordor
-itm_mordor_uruk_shield_b|Escudo de Uruk de Mordor
-itm_mordor_uruk_shield_c|Escudo de Uruk de Mordor
+itm_mordor_orc_shield_a|Escudo de orco de Mordor
+itm_mordor_orc_shield_b|Escudo de orco de Mordor
+itm_mordor_orc_shield_c|Escudo de orco de Mordor
+itm_mordor_orc_shield_d|Escudo de orco de Mordor
+itm_mordor_orc_shield_e|Escudo de orco de Mordor
+itm_mordor_uruk_shield_a|Escudo de uruk de Mordor
+itm_mordor_uruk_shield_b|Escudo de uruk de Mordor
+itm_mordor_uruk_shield_c|Escudo de uruk de Mordor
 itm_mordor_man_shield_a|Escudo de Hombre de Mordor
 itm_mordor_man_shield_b|Escudo de Hombre de Mordor
 itm_angmar_shield|Escudo de Angmar
@@ -369,17 +369,17 @@ itm_orc_morion|Morrión orco
 itm_orc_beakhelm|Yelmo orco con pico
 itm_orc_bughelm|Yelmo de sabandija orco
 itm_orc_visorhelm|Yelmo orco con visor
-itm_m_orc_light_a|Armadura ligera de Orco de Mordor
-itm_m_orc_light_b|Armadura ligera de Orco de Mordor
-itm_m_orc_light_c|Armadura ligera de Orco de Mordor
-itm_m_orc_light_d|Armadura ligera de Orco de Mordor
-itm_m_orc_light_e|Armadura ligera de Orco de Mordor
-itm_m_orc_heavy_a|Armadura pesada de Orco de Mordor
-itm_m_orc_heavy_b|Armadura pesada de Orco de Mordor
-itm_m_orc_heavy_c|Armadura pesada de Orco de Mordor
-itm_m_orc_heavy_d|Armadura pesada de Orco de Mordor
-itm_m_orc_heavy_e|Armadura pesada de Orco de Mordor
-itm_m_uruk_light_a|Arnés de Uruk
+itm_m_orc_light_a|Armadura ligera de orco de Mordor
+itm_m_orc_light_b|Armadura ligera de orco de Mordor
+itm_m_orc_light_c|Armadura ligera de orco de Mordor
+itm_m_orc_light_d|Armadura ligera de orco de Mordor
+itm_m_orc_light_e|Armadura ligera de orco de Mordor
+itm_m_orc_heavy_a|Armadura pesada de orco de Mordor
+itm_m_orc_heavy_b|Armadura pesada de orco de Mordor
+itm_m_orc_heavy_c|Armadura pesada de orco de Mordor
+itm_m_orc_heavy_d|Armadura pesada de orco de Mordor
+itm_m_orc_heavy_e|Armadura pesada de orco de Mordor
+itm_m_uruk_light_a|Arnés de uruk
 itm_m_uruk_light_b|Armadura de cuero uruk
 itm_m_uruk_light_c|Cota de malla ligera uruk
 itm_m_uruk_med_a|Armadura pesada de cuero uruk
@@ -408,15 +408,15 @@ itm_moria_armor_a|Arnés pectoral de Moria
 itm_moria_armor_b|Peto y hombreras de Moria
 itm_moria_armor_c|Malla orca de Moria
 itm_moria_armor_d|Cuero remendado de Moria
-itm_moria_armor_e|Malla pesada de Orco de Moria
+itm_moria_armor_e|Malla pesada de orco de Moria
 itm_moria_orc_shield_a|Gran escudo de Moria
 itm_moria_orc_shield_b|Escudo orco de Moria
 itm_moria_orc_shield_c|Escudo orco de Moria
-itm_gundabad_armor_a|Harapos de Orco de Gundabad
-itm_gundabad_armor_b|Pieles de Orco de Gundabad
-itm_gundabad_armor_c|Armadura de Orco de Gundabad
-itm_gundabad_armor_d|Armadura de Orco de Gundabad
-itm_gundabad_armor_e|Armadura pesada de Orco de Gundabad
+itm_gundabad_armor_a|Harapos de orco de Gundabad
+itm_gundabad_armor_b|Pieles de orco de Gundabad
+itm_gundabad_armor_c|Armadura de orco de Gundabad
+itm_gundabad_armor_d|Armadura de orco de Gundabad
+itm_gundabad_armor_e|Armadura pesada de orco de Gundabad
 itm_gundabad_helm_a|Gorro de cuero
 itm_gundabad_helm_b|Casco de cuero
 itm_gundabad_helm_c|Yelmo de Gundabad
@@ -634,7 +634,7 @@ itm_umb_armor_f|Armadura de noble corsario
 itm_umb_helm_a|Yelmo caracola de corsario
 itm_umb_helm_b|Yelmo alto corsario
 itm_umb_helm_c|Yelmo de miliciano corsario
-itm_umb_helm_d|Yelmo de saqueador corsario
+itm_umb_helm_d|Yelmo de incursor corsario
 itm_umb_helm_reward|Karma antiguo de Númenor
 itm_corsair_trident|Tridente de la Furia Marina
 itm_corsair_boots|Botas de corsario
@@ -687,7 +687,7 @@ itm_dwarf_spear_c|Hacha larga enana
 itm_dwarf_helm_coif|Cofia enana
 itm_dwarf_nasal_b|Yelmo con nasal enano
 itm_north_skullcap|Capacete norteño
-itm_dwarf_helm_kettle|Capelina Enana
+itm_dwarf_helm_kettle|Capelina enana
 itm_dwarf_helm_fris|Yelmo frigio enano
 itm_north_leather_skullcap|Capacete ligero norteño
 itm_dwarf_hood|Capucha enana

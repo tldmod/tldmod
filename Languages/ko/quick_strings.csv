@@ -117,7 +117,11 @@ qstr_Brighter_Nights:__|밝은 야간 시야:
 qstr_Done|종료
 qstr_Gameplay_Tweaks|게임플레이 수정
 qstr_Beta_Formations_Twea|실험용 진형 설정
+; qstr_Set_to_Native_if_you|Set to Native if you encounter any types of AI problems during battle.
+; qstr_Disable_cutscenes_if|Disable cutscenes if you encounter any crashes at the start of the war.
+; qstr_Campaign_Difficulty_a|Campaign Difficulty affects abundance of volunteers, lord party size, and strength income for allied factions.
 qstr_War_Will_Start_at_Le|전쟁이 다음 레벨에 시작됩니다: {s0}
+; qstr_Be_aware_that_many_q|Be aware that many quests and campaign mechanics scale with player level. Increasing this setting will give you more time to prepare, but will make the war unfold quicker.
 qstr_Troop_Tree|병종 관계도
 qstr__Click_on_a_unit_for|(유닛을 눌러 세부사항 확인)
 qstr_Weapons|무기
@@ -765,6 +769,7 @@ qstr_Fixed_Camera___Right|개선된 설정 카메라 - 오른쪽 어깨
 qstr_Fixed_Camera___Left_|개선된 설정 카메라 - 왼쪽 어깨
 qstr_Fixed_Camera___Cente|카메라 중점 조정
 qstr_Shield_is_too_big_to|활과 쓰기에 방패가 너무 크다.
+; qstr_{s7}_waves_at_you.|{s7} waves at you.
 ; qstr_You_happen_upon_an_O|You happen upon an Old Guesthouse. As you inspect the weathered stone building, you notice a group of boys playing among the pillars, the only children you have seen in Minas Tirith.  One of them greets you and you wave back. Your heart is gladdened and you forget, for a brief moment, the sorrow of war.
 qstr_You_look_through_Hen|당신은 "해지는 창" 헨네스 안눈을 통해 보고 있다. 아름다운 광경이 당신의 서부와 그 너머의 힘에 대한 믿음을 회복시켜준다.
 ; qstr_As_you_follow_the_st|As you follow the straight stairs, cut into the rock of the mountain, and then a second set of stairs, winding as it clings to the cliff-face, you realize that you should not pursue this path any further if you value your own life.

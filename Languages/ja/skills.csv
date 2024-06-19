@@ -21,7 +21,7 @@ skl_spotting_desc|1レベル毎に、 マップ画面上での視界が 10%%広�
 skl_pathfinding|経路探索
 skl_pathfinding_desc|マップ画面上でのパーティの速度が 1レベル毎に3%%速くなります。 (パーティスキル)
 skl_tactics|戦略
-; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|追跡術
 skl_tracking_desc|レベルが高い程マップ画面上での 情報量が増えます。 (パーティスキル)
 skl_trainer|訓練

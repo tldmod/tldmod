@@ -726,7 +726,7 @@ dlga_healers_meet:healer_who|何ができるのか？
 ; dlga_healers_meet:healers_ask|I need your help.
 ; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
 dlga_healers_ask:healer_injured_ask|私と私の部下たちは負傷しているのだが、傷が治るまで待っている時間がないのだ。治療できないだろうか？
-dlga_healers_ask:close_window|何でもない。
+dlga_healers_meet:close_window|何でもない。
 dlga_healers_injured_check:healers_injured_heal|手当をしてもらいたい。
 dlga_healers_wound_check:healers_wound_heal|手当をしてもらいたい。
 dlga_healers_wound_check:close_window|また後にしよう。

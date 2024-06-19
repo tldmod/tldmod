@@ -21,7 +21,7 @@ skl_spotting_desc|Die Sichtweite der Truppe wird um 10%% pro Fertigkeitsstufe er
 skl_pathfinding|Wegfindung
 skl_pathfinding_desc|Die Kartengeschwindigkeit der Truppe wird um 3%% pro Fertigkeitsstufe erhöht. (Truppen-Fähigkeit)
 skl_tactics|Taktik
-; skl_tactics_desc|Increases battle advantage. Increases battle join distance for enemy parties and decreased battle join distance for friendly parties by 3% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3% per level. (Leader skill)
 skl_tracking|Spurensuche
 skl_tracking_desc|Spuren werden informativer. (Truppen-Fähigkeit)
 skl_trainer|Ausbilder

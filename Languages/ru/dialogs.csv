@@ -726,7 +726,7 @@ dlga_healers_meet:healer_who|Что ты делаешь?
 ; dlga_healers_meet:healers_ask|I need your help.
 ; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
 dlga_healers_ask:healer_injured_ask|Я и мои люди были ранены в недавней битве, и у нас нет времени на долгий отдых. Сможете что-нибудь сделать?
-dlga_healers_ask:close_window|Ничего
+dlga_healers_meet:close_window|Ничего
 dlga_healers_injured_check:healers_injured_heal|Да, пройдёмте с нами.
 dlga_healers_wound_check:healers_wound_heal|Да, пройдёмте с нами.
 dlga_healers_wound_check:close_window|Не сейчас.

@@ -726,7 +726,7 @@ dlga_kill_scout_8:close_window|Zoals je wenst, zoals je wenst. Deze weg!
 ; dlga_healers_meet:healers_ask|I need your help.
 ; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
 dlga_healers_ask:healer_injured_ask|Mijn mannen en Ik zijn gewond, en we hebben geen tijd om te wachten voor ze genezen. Kan jij ons helpen?
-dlga_healers_ask:close_window|Niets.
+dlga_healers_meet:close_window|Niets.
 dlga_healers_injured_check:healers_injured_heal|Ja, zorg voor ons.
 dlga_healers_wound_check:healers_wound_heal|Ja, zorg voor ons.
 dlga_healers_wound_check:close_window|Niet op dit moment.
