@@ -451,12 +451,14 @@ mno_racedown|[Next Race]
 mno_three|[Regulars or Heroes]
 menu_camp_cheat|Other Cheats Menu (for development use):^^This menu is intended for development use while we are working on improving this mod. If you enable this option then additonal CHEAT menu's will also appear in other game menu's. Please do not report any bugs with this functionality since it is for testing only.
 mno_cheat_disabable|Disable cheat/modding options.
+mno_cheat_original_version|Display original savegame version.
 mno_camp_cheat_find_item|Find an item...
-mno_crossdressing|Crossdressing: {reg6?Enabled:Disabled}
 mno_impose_quest|Impose a quest...
 mno_impose_battle_field|Impose a battlefield...
 mno_relocate_party|Move to town...
 mno_add_troops|Add troops to player party.
+mno_crossdressing|Crossdressing: {reg6?Enabled:Disabled}
+mno_cheat_options_town_menu|Town NPCs always accessible from Menus:  {s7}
 mno_cheat_add_prisoners|Add 10 prisoners
 mno_cheat_add_xp|Add 1000 experience to player.
 mno_camp_mod_2|Raise player's attributes, skills, and proficiencies.
@@ -610,6 +612,7 @@ mno_town_ask|Ask around for persons of import...
 mno_castle_wait|{s1}.
 mno_player_initiate_siege|Attack the {reg6?town:castle}...
 mno_castle_cheat_town_exterior|CHEAT: Exterior.
+mno_castle_cheat_dungeon|CHEAT: Prison.
 mno_cheat_town_start_siege|CHEAT: Besiege the {reg6?town:castle}...
 mno_isengard_underground|Go to the underground caverns.
 mno_isengard_underground_door|Go to the underground caverns

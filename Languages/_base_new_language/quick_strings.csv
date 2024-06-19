@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
 qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
 qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
-qstr__rev_?_wb__dev_^_Bui| rev ¿? wb | dev ^ Built 2024-05-31 14:28   
+qstr__rev_?_wb__dev_^_Bui| rev ¿? wb | dev ^ Built 2024-06-16 07:46   
 qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
 qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
 qstr_Attributes|Attributes
@@ -106,11 +106,11 @@ qstr_12|12
 qstr_10|10
 qstr_8|8
 qstr_6|6
-qstr_Restrict_Player_Equi|Restrict Player Equipment:  
 qstr_Battle_Formations_an|Battle Formations and AI:  
 qstr_Native|Native
 qstr_TLD_FormAI__Original|TLD FormAI (Original)
 qstr_TLD_New_FormAI|TLD New FormAI
+qstr_Beta_Formations_Twea|Beta Formations Tweaks
 qstr_Siege_AI:__|Siege AI:  
 qstr_Basic__better_perfor|Basic (better performance)
 qstr_Advanced|Advanced
@@ -136,8 +136,11 @@ qstr_Prevent_AI_from_taki|Prevent AI from taking defensive:
 qstr_Brighter_Nights:__|Brighter Nights:  
 qstr_Done|Done
 qstr_Gameplay_Tweaks|Gameplay Tweaks
-qstr_Beta_Formations_Twea|Beta Formations Tweaks
+qstr_Set_to_Native_if_you|Set to Native if you encounter any types of AI problems during battle.
+qstr_Disable_cutscenes_if|Disable cutscenes if you encounter any crashes at the start of the war.
+qstr_Campaign_Difficulty_a|Campaign Difficulty affects abundance of volunteers, lord party size, and strength income for allied factions.
 qstr_War_Will_Start_at_Le|War Will Start at Level {reg0}
+qstr_Be_aware_that_many_q|Be aware that many quests and campaign mechanics scale with player level. Increasing this setting will give you more time to prepare, but will make the war unfold quicker.
 qstr_Troop_Tree|Troop Tree
 qstr__Click_on_a_unit_for|(Click on a unit for details)
 qstr_*|*
@@ -744,17 +747,6 @@ qstr_loses_Faction_Strengt|loses Faction Strength due to the destruction of thei
 qstr_gains_Faction_Streng|gains Faction Strength as news of your victory spreads.
 qstr_{s11}_{s10}|{s11} {s10}
 qstr_{s13}_{s14}|{s13} {s14}
-qstr_Mountain_Goblin|Mountain Goblin
-qstr_Tribal_Orc|Tribal Orc
-qstr_Tribal_Orc_Warrior|Tribal Orc Warrior
-qstr_Tribal_Orc_Chief|Tribal Orc Chief
-qstr_Mountain_Goblins|Mountain Goblins
-qstr_Tribal_Orcs|Tribal Orcs
-qstr_Tribal_Orc_Warriors|Tribal Orc Warriors
-qstr_Tribal_Orc_Chiefs|Tribal Orc Chiefs
-qstr_A_quest_was_cancelle|A quest was cancelled for update compatibility. No need to worry.
-qstr_Campaign_difficulty_|Campaign difficulty set to default due to new features. Re-adjust in Game Options.
-qstr_Savegame_compatibili|Savegame compatibility: Campaign Difficulty set to default. Adjust in TLD options.
 qstr_Notice:_Isengard_Las|Notice: Isengard Last Stand quest cancelled for savegame compatibility reasons. Isengard can now be sieged like a regular city.
 qstr_Hobbit_quest_aborted|Hobbit quest aborted for compatibility reasons. Hobbits will now only appear after certain conditions are met.
 qstr_Something_wrong_not_|Something wrong, not enough troops to remove
@@ -873,6 +865,7 @@ qstr_Fixed_Camera___Left_|Fixed Camera - Left Shoulder
 qstr_Fixed_Camera___Cente|Fixed Camera - Center
 qstr_key_clicked|key clicked
 qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
+qstr_{s7}_waves_at_you.|{s7} waves at you.
 qstr_You_happen_upon_an_O|You happen upon an Old Guesthouse. As you inspect the weathered stone building, you notice a group of boys playing among the pillars, the only children you have seen in Minas Tirith.  One of them greets you and you wave back. Your heart is gladdened and you forget, for a brief moment, the sorrow of war.
 qstr_You_look_through_Hen|You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.
 qstr_As_you_follow_the_st|As you follow the straight stairs, cut into the rock of the mountain, and then a second set of stairs, winding as it clings to the cliff-face, you realize that you should not pursue this path any further if you value your own life.
