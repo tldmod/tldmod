@@ -23595,7 +23595,7 @@ scripts = [
     (troop_get_slot, ":party", ":mission_troop", slot_troop_leaded_party),
     (assign, ":party_missing_bug", 0),
     (try_begin),
-      (gt, ":party", 0),
+      (this_or_next|le, ":party", 0),
       (neg|party_is_active, ":party"),
       (assign, ":party_missing_bug", 1),
     (try_end),
