@@ -1,4 +1,4 @@
-2008
+2013
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -7,6 +7,9 @@ qstr_Secret_place_discove Secret_place_discovered!
 qstr_{!}_debug:_sound_emi {!}_debug:_sound_emitter:_var1_x_10_+_var2_is_sound_no;_first_two_digits_after_comma_in_scale_x_is_range_in_metres
 qstr_{!}_debug:_scale_pro {!}_debug:_scale_prop_to_disable_this_message
 qstr_{!}_debug:_ambient_s {!}_debug:_ambient_sound_emitter:_stops_all_looping_sounds,_sets_a_new_ambient_sound_while_in_range
+qstr_{!}_sound_emitter:_v {!}_sound_emitter:_var1_x_10_+_var2_is_sound_no;_scale_x_is_chance_per_3_seconds
+qstr_{!}_suggestions:_247 {!}_suggestions:_247_=_moria_ambiance;_207_=_horror_scream_man;_13_=_sword_clash_1
+qstr_{!}_scale_prop_to_di {!}_scale_prop_to_disable_this_message
 qstr_hit! hit!
 qstr_Next_Page Next_Page
 qstr_Action Action
@@ -88,7 +91,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-06-15_12:32___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-06-29_12:29___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -875,6 +878,8 @@ qstr_Fixed_Camera___Cente Fixed_Camera_-_Center
 qstr_key_clicked key_clicked
 qstr_Shield_is_too_big_to Shield_is_too_big_to_be_used_with_a_bow.
 qstr_{s7}_waves_at_you. {s7}_waves_at_you.
+qstr_chance:_{reg78} chance:_{reg78}
+qstr_play_sound_{reg78} play_sound_{reg78}
 qstr_You_happen_upon_an_O You_happen_upon_an_Old_Guesthouse._As_you_inspect_the_weathered_stone_building,_you_notice_a_group_of_boys_playing_among_the_pillars,_the_only_children_you_have_seen_in_Minas_Tirith.__One_of_them_greets_you_and_you_wave_back._Your_heart_is_gladdened_and_you_forget,_for_a_brief_moment,_the_sorrow_of_war.
 qstr_You_look_through_Hen You_look_through_Henneth_Annun,_the_Window_of_the_Sunset._The_beautiful_sight_restores_your_faith_in_the_West_and_the_Powers_beyond.
 qstr_As_you_follow_the_st As_you_follow_the_straight_stairs,_cut_into_the_rock_of_the_mountain,_and_then_a_second_set_of_stairs,_winding_as_it_clings_to_the_cliff-face,_you_realize_that_you_should_not_pursue_this_path_any_further_if_you_value_your_own_life.

@@ -219,10 +219,10 @@ soundsfile version 2
  man_victory_71.wav 2640
  CWE_fx_fire_large_01_lp.ogg 6
  CWE_fx_fire_embers_02b_lp.ogg 550
- d_dog1.wav 2177
- d_dog2.wav 2177
- d_dog3.wav 2177
- d_dog7.wav 2177
+ d_dog1.wav 2176
+ d_dog2.wav 2176
+ d_dog3.wav 2176
+ d_dog7.wav 2176
  d_owl2.wav 2433
  d_owl3.wav 2433
  d_owl4.wav 2433
@@ -794,7 +794,7 @@ snd_torch_loop 550 1 218
 snd_dummy_hit 144 2 126 128 
 snd_dummy_destroyed 144 1 133 
 snd_gourd_destroyed 144 1 133 
-snd_distant_dog_bark 2177 4 219 220 221 222 
+snd_distant_dog_bark 2176 4 219 220 221 222 
 snd_distant_owl 2433 3 223 224 225 
 snd_distant_chicken 2177 2 226 227 
 snd_distant_carpenter 897 2 228 229 

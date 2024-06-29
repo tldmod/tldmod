@@ -4990,6 +4990,19 @@ scene_props = [
     (display_message, "@{!} debug: scale prop to disable this message"),
   ])]),
 
+# var1 x 100 + var2 is sound_no;
+# works for single sounds, but only checks every 3 seconds (=fastest interval)
+("sound_emitter_occasional_var1x10_plus_var2_scalable" ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[												 
+    (store_trigger_param_1, ":instance_no"),
+    (set_fixed_point_multiplier, 10000),
+    (prop_instance_get_scale, pos2, ":instance_no"),
+    (position_get_scale_x, ":scale_x", pos2),
+    (eq, ":scale_x", 10000), #only show tutorial message if scale is unchanged
+    (display_message, "@{!} sound emitter: var1 x 10 + var2 is sound_no; scale x is chance per 3 seconds"),
+    (display_message, "@{!} suggestions: 247 = moria_ambiance; 207 = horror_scream_man; 13 = sword_clash_1"),
+    (display_message, "@{!} scale prop to disable this message"),
+  ])]),
+
 #("sound_fire_big_scalable" ,sokf_invisible,"collision_cube","0", []),
 ("sound_fire_big"       ,sokf_invisible,"collision_cube","0", [(ti_on_init_scene_prop,[(set_position_delta,0,0,0),(play_sound, "snd_fire_loop", 0)])]),
 
@@ -5030,7 +5043,13 @@ scene_props = [
 
 ("animal_dog",sokf_invisible,"wolf","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-	(spawn_horse,"itm_animal_small", imod_chipped),])]),
+	(spawn_horse,"itm_animal_small", imod_chipped),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),
+    ] + (is_a_wb_sceneprop==1 and [ 
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (scene_prop_set_slot, ":instance_no", slot_prop_sound, "snd_distant_dog_bark"),
+    ] or []) + [          
+    ])]),
             
 ] + (is_a_wb_sceneprop==1 and [ 
   ("fellbeast", sokf_moveable|sokf_dynamic_physics, "Fellbeast_Flap_1", "bo_Fellbeast_Flap_1", [

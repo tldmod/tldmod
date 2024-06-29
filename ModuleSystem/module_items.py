@@ -356,7 +356,7 @@ items =[
 #first non WARG item: itm_warg_reward+1
 
 ["animal_big","Big_Animal", [("bry_cow_a",0),("bry_cow_b",imodbit_cracked),("bry_cow_c",imodbit_rusty),("bry_cow_d",imodbit_bent),("CWE_cow_mod_a",imodbit_chipped),("bry_wild_donkey",imodbit_rotten),("spak_yak1",imodbit_smelling),("spak_yak2",imodbit_large_bag)],itp_disable_agent_sounds, 0, 10,abundance(10)|hit_points(25)|body_armor(0)|difficulty(10)|horse_speed(5)|horse_maneuver(5)|horse_charge(0)|horse_scale(90),imodbits_horse_basic],
-["animal_small","Small_Animal", [("bry_goat",0),("bry_goat_c",imodbit_cracked),("CWE_sheep_mod_a",imodbit_rusty),("CWE_sheep_mod_b",imodbit_bent),("wolf",imodbit_chipped)],		itp_disable_agent_sounds, 0, 10,abundance(10)|hit_points(25)|body_armor(0)|difficulty(10)|horse_speed(5)|horse_maneuver(5)|horse_charge(0)|horse_scale(60),imodbits_horse_basic],
+["animal_small","Small_Animal", [("bry_goat",0),("bry_goat_c",imodbit_cracked),("CWE_sheep_mod_a",imodbit_rusty),("CWE_sheep_mod_b",imodbit_bent),("wolf_dog",imodbit_chipped)],		itp_disable_agent_sounds, 0, 10,abundance(10)|hit_points(25)|body_armor(0)|difficulty(10)|horse_speed(5)|horse_maneuver(5)|horse_charge(0)|horse_scale(60),imodbits_horse_basic],
 
 #Troll weapons
 ["troll_weapon_long","Giant_Halberd",[("isengard_halberd_troll",0),],																																		itp_no_pick_up_from_ground|itp_type_polearm|itp_no_blur|itp_two_handed|itp_primary|itp_crush_through|itp_bonus_against_shield|itp_can_penetrate_shield,itcf_overswing_polearm|0,1,													weight(250)|difficulty(0)|spd_rtng(70)|weapon_length(200)|swing_damage(30,blunt)|thrust_damage(30,blunt)|horse_speed(70),0,[]],

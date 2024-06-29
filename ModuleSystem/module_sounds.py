@@ -169,7 +169,7 @@ sounds = [
 ("gourd_destroyed",sf_priority_9, ["shield_broken.wav"]),#TODO
 #("cow_moo", sf_2d|sf_priority_9|sf_vol_8, ["cow_moo_1.ogg"]),
 #("cow_slaughter", sf_2d|sf_priority_9|sf_vol_8, ["cow_slaughter.ogg"]),
-("distant_dog_bark", sf_2d|sf_priority_8|sf_vol_8, ["d_dog1.wav","d_dog2.wav","d_dog3.wav","d_dog7.wav"]),
+("distant_dog_bark", sf_priority_8|sf_vol_8, ["d_dog1.wav","d_dog2.wav","d_dog3.wav","d_dog7.wav"]),
 ("distant_owl", sf_2d|sf_priority_8|sf_vol_9, ["d_owl2.wav","d_owl3.wav","d_owl4.wav"]),
 ("distant_chicken", sf_2d|sf_priority_8|sf_vol_8, ["d_chicken1.wav","d_chicken2.wav"]),
 ("distant_carpenter", sf_2d|sf_priority_8|sf_vol_3, ["d_carpenter1.wav","d_saw_short3.wav"]),

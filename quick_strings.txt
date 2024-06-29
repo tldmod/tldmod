@@ -1,10 +1,13 @@
-1751
+1754
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
 qstr_{!}_debug:_sound_emi {!}_debug:_sound_emitter:_var1_x_10_+_var2_is_sound_no;_first_two_digits_after_comma_in_scale_x_is_range_in_metres
 qstr_{!}_debug:_scale_pro {!}_debug:_scale_prop_to_disable_this_message
 qstr_{!}_debug:_ambient_s {!}_debug:_ambient_sound_emitter:_stops_all_looping_sounds,_sets_a_new_ambient_sound_while_in_range
+qstr_{!}_sound_emitter:_v {!}_sound_emitter:_var1_x_10_+_var2_is_sound_no;_scale_x_is_chance_per_3_seconds
+qstr_{!}_suggestions:_247 {!}_suggestions:_247_=_moria_ambiance;_207_=_horror_scream_man;_13_=_sword_clash_1
+qstr_{!}_scale_prop_to_di {!}_scale_prop_to_disable_this_message
 qstr_Next_Page Next_Page
 qstr_Action Action
 qstr_Mount Mount
