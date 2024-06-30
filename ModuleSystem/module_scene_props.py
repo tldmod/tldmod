@@ -4885,7 +4885,9 @@ scene_props = [
             (agent_unequip_item, reg0, ":item", ":weapon_slot"),
         (try_end),  
         (agent_set_no_dynamics, reg0, 1),  
-        (agent_set_look_target_position, reg0, pos1),
+        (agent_set_position, reg0, pos1),
+        (agent_set_scripted_destination, reg0, pos1), #so they turn back
+        #(agent_set_look_target_position, reg0, pos1),
         ] or []) + [          ]),
         ]),
 
@@ -4910,6 +4912,8 @@ scene_props = [
             (agent_unequip_item, reg0, ":item", ":weapon_slot"),
         (try_end),  
         (agent_set_no_dynamics, reg0, 1),  
+        #(agent_set_position, reg0, pos2),
+        (agent_set_scripted_destination, reg0, pos2), #so they turn back
         (agent_set_look_target_position, reg0, pos1),
         ] or []) + [          ]),
         ]),

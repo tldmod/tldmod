@@ -31394,7 +31394,7 @@ if is_a_wb_script==1:
         (try_end),
         (agent_set_animation, ":nearby", ":hit_anim"),
         (str_store_agent_name, s2, ":nearby"),
-        (display_message, "@{s2} attacked"),
+        #(display_message, "@{s2} attacked"),
         (agent_deliver_damage_to_agent, ":nearby", ":nearby", ":damage", "itm_troll_aoe"),
     (try_end),
     (store_random_in_range,":random_timings",10,50),

@@ -4628,8 +4628,11 @@ tld_animated_town_agents = [
     (try_for_range, ":count", 0, ":num_props"),
         (scene_prop_get_instance, ":instance_no", "spr_troop_work_stand", ":count"),
         (prop_instance_get_position, pos2, ":instance_no"),
+        (position_move_y, pos2, 50),
+        (position_move_z, pos2, 150), #calculate look position
         (scene_prop_get_slot, ":agent", ":instance_no", slot_prop_agent_1),
         (agent_set_scripted_destination, ":agent", pos2),
+        (agent_set_look_target_position, ":agent", pos2),
         (store_random_in_range, ":chance", 0, 100),
         (le, ":chance", 45),
         (agent_set_animation, ":agent", "anim_defend_up_staff_keep"),
