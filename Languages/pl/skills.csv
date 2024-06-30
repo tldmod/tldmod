@@ -1,9 +1,9 @@
 skl_trade|Targowanie
-skl_trade_desc|Sprawia że kowale i mistrzowie dostawy lepiej współpracują i oferują lepszy ekwipunek. (Umiejętność oddziału)
+skl_trade_desc|Sprawia że kowale i zaopatrzeniowcy lepiej współpracują i oferują lepszy ekwipunek. (Umiejętność oddziału)
 skl_leadership|Przywództwo
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
+skl_leadership_desc|Każdy punkt zwiększa maksymalną liczbę żołnierzy w oddziale o 5 (3 dla towarzyszy). zwiększa morale drużyny i spójność w bitwie. Sprawia że coraz silniejsi ochotnicy chcą do Ciebie dołączyć. (Umiejętność osobista)
 skl_prisoner_management|Zarządzanie więźniami
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
+skl_prisoner_management_desc|Każdy punkt zwiększa maksymalną liczbę więźniów o %d. Zwiększa szanse na schwytanie i przetrzymanie więźniów. (Umiejętność dowódcy) 
 skl_persuasion|Wildcraft
 skl_persuasion_desc|Zdolność do przetrwania w dziczy i naginania jej do Twojej woli. Ta umiejętność wpływa na zdolność ukrywania się oddziału przed wrogiem, a także na jego prędkość w zalesionym terenie. (Umiejętność oddziału)
 skl_engineer|-----
@@ -15,13 +15,13 @@ skl_surgery_desc|Każdy punkt w tej umiejętności daje 4%% szansy na to, że ś
 skl_wound_treatment|Leczenie ran
 skl_wound_treatment_desc|Szybkość leczenia oddziału wzrasta o 20%% na każdy poziom tej umiejętności. (Umiejętność oddziału)
 skl_inventory_management|Zarządzanie ekwipunkiem
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+skl_inventory_management_desc|Zwiększa pojemność ekwipunku o +6 za każdy poziom. Zmniejsza spożycie żywności. (Umiejętność dowódcy) 
 skl_spotting|Spostrzegawczość
 skl_spotting_desc|Zasięg wzroku oddziału zwiększa się o 10%% na poziom umiejętności. (Umiejętność oddziału)
 skl_pathfinding|Szukanie ścieżek
 skl_pathfinding_desc|Szybkość oddziału podczas poruszania się po mapie zwiększa się o 3%% na poziom umiejętności. (Umiejętność oddziału)
 skl_tactics|Taktyka
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3% per level. (Leader skill)
+skl_tactics_desc|Zwiększa przewagę w bitwie. Zwiększa odległość dołączenia do bitwy dla wrogich stron i zmniejsza odległość dołączenia do bitwy dla sojuszników o 3% na poziom. (Umiejętność dowódcy)
 skl_tracking|Tropienie
 skl_tracking_desc|Ślady dają więcej  informacji. (Umiejętność oddziału)
 skl_trainer|Szkolenie

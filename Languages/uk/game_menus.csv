@@ -176,7 +176,7 @@ menu_fangorn_danger|^^^^^^Дивні, звуки лякають оточують
 mno_be_quiet_elf|Слід поважати гнів дерев. Рухайтеся якомога тихіше.
 mno_be_quiet|Опустіть зброю і замовкніть! А тепер - геть звідси!
 mno_be_bold|Вперед! Я не боюся бур'янів зі старих казок!
-; mno_fight_back|Let's find out! Search the area! Burn down a tree or two! (Camp)
+mno_fight_back|Негайно зясувати! Обшукати округу! Спалити кілька дерев!(табір) 
 menu_fangorn_search_fails|^^^^^^Ви обстежуєте темний, густий ліс, але не можете нічого знайти.^ Однак вам все більше відчувається, що за вами спостерігають і вам загрожує небезпека.
 menu_fangorn_killed_player_only|^^^^^^Ви обстежуєте темний, густий ліс.^ Раптово ви отримуєте удар! Може бути, важка гілка впала вам на голову?^ Ви на короткий час втрачаєте свідомість. Ви серйозно поранені, але можете продовжувати рух.
 mno_ow_get_out|Ай! Пора забиратися з цього проклятого місця!
@@ -291,7 +291,7 @@ menu_town_brawl_won|^^^^^Ви перемогли всіх супротивник
 menu_close|Нічого.
 menu_town|Перед вами {s60}.{S12}{s13}
 mno_town_menu_0|Пройти далі.
-; mno_town_menu_0_door|Inspect...
+mno_town_menu_0_door|Оглянути.....
 mno_town_approach|Увійти в {s1}...
 mno_town_castle|Увійти в {s1}.
 mno_town_castle_door|Увійти в замок.
@@ -300,23 +300,23 @@ mno_town_center_door|Вийти на головну площу.
 mno_aw_chamber_door|Відкрити двері.
 mno_trade_with_arms_merchant|Відвідати {s40}.
 mno_trade_with_horse_merchant|Відвідати {s41}.
-; mno_town_prison_door|To the Training Grounds
-; mno_talk_to_healer|Speak with {s40}.
+mno_town_prison_door|На тренувальний майданчик
+mno_talk_to_healer|Поговори з {s40}.
 mno_talk_to_castle_commander|Увійти в казарми фракції {s61}.
 mno_speak_with_elder|Увійти в казарми Фракції {s6}.
-; mno_town_ask|Ask around for persons of import...
+mno_town_ask|Питайте навколо про важливих людей...
 mno_isengard_underground|Увійти в підземелля.
 mno_isengard_underground_door|Перейти до підземних печер
 mno_tirith_toplevel|Зійти на верхній рівень.
 mno_tirith_toplevel_door|Ідіть до Цитаделі
 mno_erebor_gates|Відвідати Великі Врата.
-; mno_erebor_gates_door|Go to the Great Gates
-; mno_glittering_caves|Go to the Glittering Caves.
-; mno_glittering_caves_door|Go to the Glittering Caves
+mno_erebor_gates_door|Прямуйте до Великих Воріт
+mno_glittering_caves|Прямуйте до Блискучих Печер
+mno_glittering_caves_door|Прямуйте до Блискучих Печер
 mno_town_leave|Продовжити...
 mno_town_leave_door|Залишити територію
 mno_town_find_NPCs_cont|Виготовити штурмові драбини.
-; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
+menu_town_find_NPCs_end|"Розмовляючи з жителями {s2}, {reg3?ти зясував:{s3} зясувала} місця розташування місцевих стайнь і складу, кузні, {s4} ^^{s6}
 menu_player_initiated_siege_result|Ви напали на гарнізон під прапорами {s2}.
 menu_disembark|Ви хочете висадитися?
 mno_disembark_yes|Так.
@@ -442,8 +442,8 @@ menu_death|Вас вбили. Війна триває, але вже без ва
 menu_animal_ambush|Заблукавши, ви трохи відстали від своїх, як раптом...
 menu_animal_ambush_success|{s2} {reg0?впали:впав} перед вами, як пшениця для коси! Незабаром всі ваші нападники лежать на підлозі, поранені або мертві. {S3}
 menu_animal_ambush_fail|Тварини мучать кусають вас {reg0?,: ви та ваш соратник {reg2?s,:,}} але вам вдається відірватися від ворога. Ви сподіваєтеся, що вас не стануть переслідувати.
-; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
-; mno_isengard_continue|Continue
+menu_isengard_flooding|Ти оточений мертвими ворогами і тріумфуючими союзниками, включаючи ентів; вони ревуть, гудуть і сурмлять, доки камені не тріскаються і не падають навколо Вежі Ортханк. Вони як завиваючий ураган, що ламає колони, скидає лавини валунів у шахти, підкидає величезні плити каменю в повітря, як листя... Це не схоже на те, що ти коли-небудь бачив.^^ Брегалад, або Швидкий Паросток, як ти його знаєш, проходить повз і зупиняється лише для того, щоб сказати: '{playername}! Стережися! Тримайся подалі від Вежі — ми незабаром зламаємо дамбу і направимо Ісен у цю долину на деякий час. Думаю, тобі буде дуже важко стояти тут!' Ти швидко слухаєш його поради і поспішаєш відійти від Ортханка.^^ Близько півночі Ісенгард починає заповнюватися чорними повзучими потоками і калюжами. Ти не можеш не здригнутися, коли бачиш, як дим і пар піднімаються великими стовпами, а велика завивка пари піднімається і звивається навколо Вежі, доки вона не нагадує високий пік хмари, освітлений знизу полум'ям і місячним світлом зверху. Гнів ентів повільний, але володіє непереборною силою...
+mno_isengard_continue|Продовжити
 menu_build_your_scene|Ви можете створити свою власну бойову сцену, використовуючи один із наведених нижче слотів та режим редагування гри (вам потрібно спочатку ввімкнути режим редагування на екрані запуску M&B, а потім натиснути Ctrl+E у межах сцени, щоб отримати доступ до режиму редагування). Ви можете потім представити вашу створену локацію (а саме, файли sco з папки TLD/SceneObj) команді TLD, і, якщо ваша локація вдалася, вона може з'явитися в наступних випусках як одна з випадкових полів битв! ^^Спробуйте визначити, на якій області карти повинна з'являтися ваша локація.^ Пара підказок: уникайте глибокої води, крутих гір і інших непрохідних місць, якщо тільки ви не досвідчений творець локацій і знаєте, як перешкодити переміщенню солдат ІІ в непотрібні місця і направити їх в потрібні.^ (Вхід #0-1 для атакуючих, #4 для захисників, не чіпати #5-8
 mno_scene1|Велика рівнина (file scn custom 1.sco)
 mno_scene2|Середня рівнина (file scn custom 2.sco)

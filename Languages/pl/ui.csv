@@ -74,10 +74,10 @@ ui_you_have_improved_your_proficiency_in_value_to_number|Twoja sprawność w %s 
 ui_your_proficiency_in_value_has_improved_by_number_to_number|Twoja biegłość w %s została poprawiona o +%d do %d.
 ui_value_killed_by_value|%szabity przez %s.
 ui_value_knocked_unconscious_by_value|%s został ogłuszony przez %s.
-ui_you_got_number_experience|Dostałeś %d doświadczenia.
+ui_you_got_number_experience|Zdobyłeś %d doświadczenia.
 ui_you_have_advanced_to_level_number|Awansowałeś do poziomu %d.
 ui_quest_succeeded_value|Misja zakończona pomyślnie: %s.
-ui_number_of_companions_exceeds_leadership_limit|Liczba towarzyszy przekracza limit dowodzenia 
+ui_number_of_companions_exceeds_leadership_limit|Liczba towarzyszy przekracza limit dowodzenia. 
 ui_number_of_prisoners_exceeds_prisoner_management_limit|Liczba jeńców przekracza limit zarządzania jeńcami.
 ui_shared_number_experience_within_party|Rozdysponowano %d doświadczenia wewnątrz oddziału.
 ui_your_relations_with_value_has_improved_from_number_to_number|Twoja relacja z %s została zwiększona z  %d do %d.
@@ -99,16 +99,16 @@ ui_order_5|Wybierz rozkaz 5
 ui_order_6|Wybierz rozkaz 6
 ui_order_button_hold_this_position|Utrzymać pozycję
 ui_order_button_follow_me|Za mną
-ui_order_button_charge|Szarża
-ui_order_button_stand_ground|Stój
+ui_order_button_charge|Do ataku
+ui_order_button_stand_ground|Utrzymać pozycję
 ui_order_button_retreat|Odwrót!
 ui_order_button_advance|Do przodu o 10 kroków
 ui_order_button_fall_back|Cofnąć się o 10 kroków
 ui_order_button_spread_out|Rozproszyć się
 ui_order_button_stand_closer|Zgrupować się.
-ui_order_button_mount_horses|Dosiądź
-ui_order_button_dismount|Zsiądź
-ui_order_button_hold_fire|Wstrzymać Ogień
+ui_order_button_mount_horses|Dosiąść wierzchowców
+ui_order_button_dismount|Zsiąść z wierzchowców
+ui_order_button_hold_fire|Wstrzymać ogień
 ui_order_button_fire_at_will|Strzelać bez rozkazu
 ui_order_button_use_blunt_weapons|Używać broni obuchowej
 ui_order_button_use_any_weapon|Używać broni według uznania
@@ -133,7 +133,7 @@ ui_hold_this_position_e_|%s, Utrzymać pozycję!
 ui_infantry|Piechota
 ui_archers|Łucznicy
 ui_cavalry|Kawaleria
-ui_companions|Oddziały
+ui_companions|Towarzysze
 ui_everyone_hear_me|Wszyscy, słuchajcie mnie!
 ui_everyone|Wszyscy
 ui_everyone_around_me|Pobliscy żołnierze
@@ -141,7 +141,7 @@ ui_str_hear_me|%s, słuchajcie mnie!
 
 ui_return|Powrót
 ui_factions|Frakcje
-ui_troop_upgrades|Szczegóły oddziału
+ui_troop_upgrades|Ulepszenia żołnierzy
 ui_hdr_mode|Tryb HDR
 ui_autoexpore|Autoekspozycja (zalecane Włączone, gdy HDR jest aktywny)
 ui_saving_policy_realistic|Wymagane zapisanie gry przed wyjściem (Niezalecane)

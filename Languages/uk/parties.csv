@@ -51,13 +51,13 @@ p_town_rhun_main_camp|Головний табір Руну
 p_town_rhun_south_camp|Південна застава Руну
 p_town_rhun_north_camp|Північна застава Руну
 p_town_gundabad|Гундабад
-; p_town_gundabad_ne_outpost|Ruined Dwarf Hold
-; p_town_gundabad_nw_outpost|Goblin Hideout
+p_town_gundabad_ne_outpost|Зруйнована Фортеця Гномів
+p_town_gundabad_nw_outpost|Схованка Гоблінів
 p_town_goblin_north_outpost|Гоблінабад
 p_town_goblin_south_outpost|Південний аванпост гоблінів
 p_town_gundabad_m_outpost|Гундабадський аванпост в Темноліссі
 p_town_erebor|Еребор
-; p_town_ironhill_camp|Grey Mountains Gateway
+p_town_ironhill_camp|Ворота Сірих Гір
 p_advcamp_gondor|Гондорський передовий табір
 p_advcamp_rohan|Роганський передовий табір
 p_advcamp_isengard|Ізенгардський передовий табір

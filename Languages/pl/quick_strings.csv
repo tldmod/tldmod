@@ -1,4 +1,4 @@
-qstr_Received_{reg0}_dama|Otrzymano {reg0} obrażeń
+qstr_Received_{reg0}_dama|Otrzymano {reg0} obrażeń.
 qstr_Gate_is_breached!|Brama wyłamana!
 qstr_Gate_opens..._You_ha|Brama otwarta... Dotarł{eś/aś} do najświętszego miejsca Śródziemia!
 qstr_Secret_place_discove|Sekretna lokacja odkryta!
@@ -8,13 +8,13 @@ qstr_Mount|Dosiądź
 qstr_Attack_Type|Typ ataku
 qstr_Hold_This_Position|Utrzymać pozycję
 qstr_Follow_Me|Za mną
-qstr_Charge|Szarża
+qstr_Charge|Do ataku
 qstr_Advance|Podejść
 qstr_Fall_Back|Cofnąć się
 qstr_Stand_Closer|Zgrupować się
 qstr_Spread_Out|Rozproszyć się
 qstr_Stand_Ground|Utrzymać pozycję
-qstr_Dismount|Zsiądź
+qstr_Dismount|Zsiąść z wierzchowców
 qstr_Use_Any_Weapon|Używać dowolnych broni
 qstr_Use_Blunt_Weapons|Używać broni obuchowych
 qstr_Hold_Your_Fire|Wstrzymać ogień
@@ -26,15 +26,15 @@ qstr_Ready|Gotowy
 qstr_Wounded|Ranny
 qstr_Dead|Martwy
 qstr_Routed|Uciekł
-qstr_Number_of_men_knocke|Liczba ludzi ogłuszonych: {reg1}
+qstr_Number_of_men_knocke|Liczba ogłuszonych ludzi: {reg1}
 qstr_Number_of_men_left:_|Pozostało ludzi: {reg1}
-qstr_Opponents_Beaten:_{r|Przeciwnicy pokonani: {reg1}
+qstr_Opponents_Beaten:_{r|Pokonani przeciwnicy: {reg1}
 qstr_Opponents_Remaining:|Przeciwnicy do pokonania: {reg1}
 qstr_Gauntlet_wave:_1|Fala Próby: 1
 qstr_Gauntlet_wave:_{reg1|Fala Próby: {reg1}
 qstr_Remain_in_retirement|Pozostań w stanie spoczynku.
 qstr_Go_back_to_the_adven|Wróć do podróżowania.
-qstr_A_peaceful_village_n|Niedaleko Westfold znajduje się spokojna wioska...
+qstr_A_peaceful_village_n|Spokojna wioska niedaleko Zachodniej Bruzdy...
 qstr_The_War_is_upon_Roha|Wojna wkroczyła do Rohanu!
 qstr_Minas_Tirith___The_W|Minas Tirith - Białe Miasto
 qstr_The_White_Tree_stand|Białe Drzewo zdaje się martwe odkąd wygasła Królewska linia
@@ -61,7 +61,7 @@ qstr_What_do_you_fight_fo|O co walczysz?
 qstr_Go_Back...|Wróć...
 qstr_Learn_about_the_diff|Dowiedz się o różnych frakcjach Śródziemia
 qstr_The_DAWN_of_a_New_Er|Świt Nowej Ery
-qstr_The_TWILIGHT_of_Man|Zmierzch Człowieka
+qstr_The_TWILIGHT_of_Man|Zmierzch ery człowieka
 qstr_Select_your_Race?|Wybierz swoją rasę?
 qstr_Man|Człowiek
 qstr_Elf|Elf
@@ -104,24 +104,24 @@ qstr_Permanent_death_for_|Trwała śmierć dla lordów i towarzyszy:
 qstr_Permanent_death_for_p|Permanentna śmierć dla gracza (to TY!): 
 qstr_Battle_morale_system|System morale bojowego: 
 qstr_Animal_ambushes:__|Zwierzęce zasadzki: 
-qstr_Fallen_rider_damage_|Obrażenia polegające na upadku jeźdźca: 
+qstr_Fallen_rider_damage_|Wiadomości o obrażeniach po upadku z wierzchowca: 
 qstr_No_Messages|Brak wiadomości
 qstr_Player_damage_only|Tylko obrażenia gracza
 qstr_All_Messages|Wszystkie wiadomości
 qstr_Preferred_Camera_Mod|Preferowany tryb kamery:
 qstr_Default_Camera|Kamera domyślna
 qstr_Free_Mode_Custom_Cam|Dowolna Kamera Użytkownika
-qstr_Fixed_Over_The_Shoul|Naprawiono kamerę na ramieniu
+qstr_Fixed_Over_The_Shoul|Nieruchoma kamera znad ramienia
 qstr_Prevent_AI_from_taki|Zapobiegaj AI przed obroną:
 qstr_Brighter_Nights:__|Jaśniejsze noce: 
 qstr_Done|Zrobione
 qstr_Gameplay_Tweaks|Rozgrywka
 qstr_Beta_Formations_Twea|Beta dopracowanie formacjii
 ; qstr_Set_to_Native_if_you|Set to Native if you encounter any types of AI problems during battle.
-; qstr_Disable_cutscenes_if|Disable cutscenes if you encounter any crashes at the start of the war.
-; qstr_Campaign_Difficulty_a|Campaign Difficulty affects abundance of volunteers, lord party size, and strength income for allied factions.
+qstr_Disable_cutscenes_if|Wyłącz przerywniki filmowe jeśli na początku wojny napotkasz jakiekolwiek problemy.
+qstr_Campaign_Difficulty_a|Poziom trudności kampanii wpływa na liczebność ochotników, wielkość drużyny lordów i dochód siły sojuszniczych frakcji.
 qstr_War_Will_Start_at_Le|Wojna rozpocznie się na poziomie {reg0}
-; qstr_Be_aware_that_many_q|Be aware that many quests and campaign mechanics scale with player level. Increasing this setting will give you more time to prepare, but will make the war unfold quicker.
+qstr_Be_aware_that_many_q|Należy pamiętać, że wiele zadań i mechanik kampanii skaluje się wraz z poziomem gracza. Zwiększenie tego ustawienia da ci więcej czasu na przygotowanie, ale sprawi, że wojna rozwinie się szybciej.
 qstr_Troop_Tree|Drzewo jednostki
 qstr__Click_on_a_unit_for|(Kliknij jednostkę, aby uzyskać szczegółowe informacje)
 qstr_Weapons|Bronie
@@ -137,7 +137,7 @@ qstr_F7___Square|F7 - Kwadrat
 qstr_F8___No_Formation|F8 - Bez formacji
 qstr_Extended_Formations_|Rozszerzone formacje i opcje AI
 qstr_Put_player_in_divisi|Umieść gracza w dziale:
-qstr_None|None
+qstr_None|Brak
 qstr_Army_rotates_to_face|Armia obraca się, by zmierzyć się z przeciwnikiem:
 qstr_Prevent_AI_from_takin|Zapobiegaj AI przed obroną:
 qstr_AI_Controls_Troops_W|AI kontroluje oddziały, gdy gracz jest nieprzytomny:
@@ -206,13 +206,13 @@ qstr_+1_to_Leadership|+1 do Dowodzenia
 qstr_+1_to_Wildcraft|+1 do Wildcraft
 qstr_+1_to_Tracking|+1 do śledztwa
 qstr_+1_to_Athletics|+1 do Atletyki
-qstr_when_equipped|gdy wyekwipowany
+qstr_when_equipped|gdy jest wyposażony
 qstr_+1_to_Power_Draw|+1 do Potężnego Rzutu
 qstr_The_record_of_Balin_|Zapis z zagubionej ekspedycji Balina.
 qstr_Who_might_be_interes|Kto mógłby być tym zainteresowany?
-qstr_Bonus_to_Shield_Skil|bonus do używania tarczy
+qstr_Bonus_to_Shield_Skil|Bonus do używania tarczy
 qstr_Turns_nature_to_your|Skierowuje naturę na twoją stronę
-qstr_when_equipped.__Effe|Kiedy założony. (Efekt kumuluje się Wildcraft)
+qstr_when_equipped.__Effe|kiedy założony. (Efekt kumuluje się Wildcraft)
 qstr_Bonus_to_Power_Strik|Premia do Potężnego Ciosu
 qstr_+1_to_Trainer|+1 do Szkolenia
 qstr_Recruits_Tribal_Orcs|Rekruci Plemiennych Orków
@@ -220,7 +220,7 @@ qstr_rally|rajd
 qstr_rallies|rajdy
 qstr_+{reg1}_{s3}_in_batt|+{reg1}{s3} w bitwie
 qstr_+1_to_Charisma|+1 do Charyzmy
-qstr_Call_Reinforcements|Wezwać Posiłki
+qstr_Call_Reinforcements|Wezwać wzmocnienia
 qstr__Effect_scales_with_|(Efekt Kumuluje się z Siłą i Charyzmą)
 qstr_+1_to_First_Aid|+1 do Pierwszej Pomocy
 qstr_+1_to_Surgery|+1 do Chirurgii
@@ -229,7 +229,7 @@ qstr_+2_to_Surgery|+2 do Operacji
 qstr_+1_to_Riding|+1 do Jazdy Konnej
 qstr_+1_to_Mounted_Archer|+1 do Łucznictwa Konnego
 qstr_Bonus_to_Riding|Premia do Jeździectwa
-qstr_when_equipped.__Effec|Kiedy założony (Efekt kumuluje się Siłą)
+qstr_when_equipped.__Effec|kiedy założony (Efekt kumuluje się Siłą)
 qstr_Orcs:_+1_Riding_Requ|Orkowie: +1 Wymagane Jeździectwo
 qstr_+1_to_Prisoner_Mgmt|+1 do Zarządzania Więźniami
 qstr_+2_to_Tactics|+2 do taktyki
@@ -250,7 +250,7 @@ qstr_Less_Wargs_upkeep|Mniejsze utrzymanie Wargów
 qstr_Light_Armor|Lekki pancerz
 qstr_Bonus_to_Strength__P|Bonus do Siły (Tylko dla gracza)
 qstr_Lead_more_Orcs|Poprowadź więcej Orków
-; qstr_Can_scare_horses|Can scare horses
+qstr_Can_scare_horses|Potrafi przestraszyć konie
 qstr_+{reg1}_to_Party_Mor|+{reg1} do morale drużyny
 qstr_Range:_{reg55}|Zasięg: {reg55}
 qstr_Dwarves|Krasnoludy
@@ -269,10 +269,10 @@ qstr_Good|Dobre
 qstr_Med|Średnie
 qstr_Bad|Słabe
 qstr_You_gained_{reg84}_e|Zdobyłeś {reg84} doświadczenia dzięki swojej inteligencji.
-qstr_You_gained_{reg84}_w|Zdobyłeś {reg84} punktów biegłości dzięki swojej zręczności.
-qstr_{reg4}_killed_{reg5}|{reg4} nie żyje, {reg5} odnosi rany
+qstr_You_gained_{reg84}_w|Zdobyłeś {reg84} punktów biegłości w broni dzięki swojej zręczności.
+qstr_{reg4}_killed_{reg5}|{reg4} nie żyje, {reg5} odnosi rany, {reg6} zbiegł
 qstr_{reg4}_killed_{reg5}_|{reg4} zabity, {reg5} zraniony
-qstr_{reg4}_killed_{reg5}_r|{reg4} zabito, {reg5} zbiegło
+qstr_{reg4}_killed_{reg5}_r|{reg4} zabity, {reg5} zbiegł
 qstr_{reg4}_wounded_{reg5|{reg4} raniono, {reg5} zbiegło
 qstr_killed|nie żyje
 qstr_routed|zbiegli
@@ -284,13 +284,13 @@ qstr_near_what_is_left_of|przy pozostałościach starej leśnej drogi, starożyt
 qstr_close_to_the_Hand_sh|blisko znaku wyglądającego jak Reką znaku Sarumana, wskazująca w strone wieży Orthanc
 qstr_in_sight_of_the_maje|w zasięgu wzroku wspalniałych Murów Miasta Minas Tirith, białe Miasto
 qstr_in_sight_of_Edoras_t|w pobliżu Edoras, stolicy Rohanu
-qstr_in_sight_of_the_Horn|w pobliżu Hornburga, wielkiej twierdzy Rohanu
-qstr_in_sight_of_Dol_Amro|w oczach Dol Amroth, siedziby książąt Belfalas
-qstr_in_sight_of_the_Mora|w oczach Morannona, Czarnej Bramy Mordoru
-qstr_in_sight_of_Dol_Guld|w kierunku Dol Guldur, północnej fortecy Saurona
-qstr_on_the_green_pasture|na zielonych pastwiskach i kwitnących łąkach otaczających Dom Beornów
+qstr_in_sight_of_the_Horn|w pobliżu Helmowego Jaru, wielkiej twierdzy Rohanu
+qstr_in_sight_of_Dol_Amro|w pobliżu Dol Amroth, siedziby książąt Belfalas
+qstr_in_sight_of_the_Mora|w pobliżu Morannona, Czarnej Bramy Mordoru
+qstr_in_sight_of_Dol_Guld|w pobliżu Dol Guldur, północnej fortecy Saurona
+qstr_on_the_green_pasture|na zielonych pastwiskach i kwitnących łąkach otaczających Dom Beorna
 qstr_on_the_shores_of_Lak|nad brzegiem jeziora Mirrormere, w pobliżu wschodniej bramy Morii
-qstr_on_the_shores_of_the|nad brzegami Długiego Jeziora, w oczach Esgaroth, Laketown
+qstr_on_the_shores_of_the|nad brzegiem Długiego Jeziora, w pobliżu Esgaroth, Miasta Na Jeziorze
 qstr_near_the_coast_of_Go|w pobliżu wybrzeża Gondoru. Słychać odległe odgłosy fal i okrzyki mew.
 qstr_in_the_outskirts_of_|na obrzeżach Osgiliath, dawnej stolicy Gondoru
 qstr_in_sight_of_the_entr|w zasięgu wzroku wejścia do Erebor, krasnolódzkiego królestwa
@@ -372,7 +372,7 @@ qstr_{playername}_and_{hi|{playername} i {jego/jej} hołota z {s18} jest niedale
 qstr_ORCS!_ORCS!|ORKOWIE! ORKOWIE!
 qstr_ORCS!_ORCS!_Fight_fo|ORKOWIE! ORKOWIE! Walczcie o życie!
 qstr_Elven_ghosts!|Elfickie upiory!
-qstr_Here_they_come!_Hold|Niechaj przyjdą! Utrzymać pozycję!
+qstr_Here_they_come!_Hold|Nadchodzą! Trzymać szereg!
 qstr_We_are_under_attack!|Jesteśmy atakowani!
 qstr_Horse_people!_The_ho|Ludzie koni! Ludzie koni są niedaleko!
 qstr_Men_from_the_White_C|Ludzie z Białego Miasta? Niech przyjdą, po własną śmierć!

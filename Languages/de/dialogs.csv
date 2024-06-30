@@ -57,7 +57,7 @@ dlga_start:treebeard_isengard_3|Hallo nochmal. Es ist schön, dich sicher und tr
 dlga_treebeard_isengard_3:close_window|Ho, hmm, Ich schulde dir großen Dank. Ich hatte keine Hilfe von anderen erwartet und es ist gut zu wissen, dass unser letzter Marsch doch nicht so schlecht enden wird! Da der Baummörder erledigt ist, sollten wir jetzt in der Lage sein, Rohans nördliche Marschlande für eine Weile sicher zu halten.
 dlga_treebeard_isengard_3:close_window.1|Hmm? Ho, hmm… ah. So, du bist also aus Rohan gekommen, nicht wahr? Hmm. Ich habe einige Neuigkeiten aus dem Süden gehört, ja. Gute Nachrichten, Nachrichten, die alle Herzen erfreuen. Ich habe gute Absichten gegenüber König Theoden und bin froh, dass er von Leuten wie dir in seiner Stunde der Gefahr unterstützt wurde, hmm! Wir haben das hier gut genug geregelt und jetzt werden wir Ents dafür sorgen, dass Saruman ohne unsere Erlaubnis keinen Fuß mehr außerhalb von Isengart setzt.  Die Isen fließt wieder gut und ich hoffe, dass das Wasser bald wieder trinkbar sein wird. Ha, hm, ich spüre, dass ein Lied in mir aufsteigt. Ein Lied von den alten Zeiten... den alten Bäumen, die ich kannte...
 dlga_start:ent_encounter|Hrooom! Was willst Du?
-; dlga_ent_encounter:close_window|Hail, tree shepherd! Thank you for keeping these marches safe. I will not stand in your way.
+dlga_ent_encounter:close_window|Heil, Baumhirte! Danke, dass Ihr diese Marschen sicher haltet. Ich werde Euch nicht im Wege stehen.
 dlga_start:treebeard_introduce_1|(Du blickst auf ein äußerst außergewöhnliches Wesen. Es ist sehr hoch und steifgliedrig, mit borkengleicher Haut und blättrigem Haar. Moos bedeckt Teile seines Körpers. Doch fürs Erste achtest du auf wenig anderes als auf die Augen. Diese tiefgründigen Augen erforschen dich, langsam und bedächtig, aber sehr eindringlich. Dir scheinen sie braun, mit einem grünen Licht durchwirkt, als läge ein tiefer Brunnen hinter ihnen, voller Erinnerungen aus ewigen Zeiten und voller langer, geruhsamer und stetiger Gedanken. Aber die Oberfläche funkelt vor Geistesgegenwart... wie die Sonne auf den äußeren Blättern eines dicht belaubten Baumes oder auf den Wellen eines sehr tiefen Sees.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(Du willst etwas sagen, aber ein fremdartiges, erstickendes Gefühl überkommt dich, als wäre die Luft zu dünn oder zu knapp zum Atmen... mit einem beinahe verzweifelten Atemzug schüttelst du das Gefühl ab und das enorme, baumartige Geschöpf mindert ein wenig die Eindringlichkeit seines Blicks. Das Wesen sieht dich weiterhin an und du bemerkst, dass dich die anderen gewaltigen Baumwesen ebenfalls anblicken, als erwarteten sie, dass du etwas sagst...)
 dlga_treebeard_introduce_2:treebeard_introduce_3|Verzeiht mein Eindringen... Ich bin nur ein müder Reisender, der vor den Geschehnissen der letzten Zeit Zuflucht sucht... ich heiße {playername}. Dürfte ich fragen, wer Ihr seid?
@@ -723,8 +723,8 @@ dlga_woodelf_help_1:woodelf_help_2.1|Ich habe noch nie einen so großen Ork gese
 dlga_woodelf_help_2:woodelf_help_3.1|Ihr seid ein Soldat? Aber natürlich! Ich habe gesehen, dass Ihr ein tüchtiger Krieger seid. ^^Ich habe großes Glück gehabt, also will ich dieses rasch nutzen und in mein Dorf eilen, um mein Volk vor diesen abscheulichen Kreaturen zu warnen.
 dlga_woodelf_help_3:close_window|Gute Reise Euch, Torbal. Ich bin mir sicher, dass wir uns wiedersehen werden.
 dlga_healers_meet:healer_who|Was tut ihr?
-; dlga_healers_meet:healers_ask|I need your help.
-; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
+dlga_healers_meet:healers_ask|Ich brauche Eure Hilfe.
+dlga_healers_ask:healer_wound_ask|Meine Gefährten und ich haben schwere Wunden, die die Zeit allein nicht zu heilen vermag. Könnt ihr unsere Wunden heilen?
 dlga_healers_ask:healer_injured_ask|Meine Männer und ich sind verwundet, doch es bleibt keine Zeit zur Rast. Könnt ihr unsere Wunden versorgen?
 dlga_healers_meet:close_window|Nichts.
 dlga_healers_injured_check:healers_injured_heal|Ja, versorgt uns.
@@ -1001,7 +1001,7 @@ dlga_player_upgrade_troll_not_enough:close_window|Du verschwendest meine Zeit...
 dlga_player_upgrade_troll_buy_done:close_window|Braver Bursche! Komm her, du großer Trottel...
 dlga_trade_requested_weapons:merchant_trade|Ah, natürlich, Hauptmann. Diese Waren sind die besten weit und breit.
 dlga_trade_requested_horse:merchant_trade|Grimmige Tiere, fürs Reiten und Töten, und auch Fleisch um sie damit zu füttern. Du wirst keine besseren Viecher als diese finden.
-; dlga_trade_requested_horse:merchant_trade.1|You have a fine eye for horses, {sir/madam}. You won't find better beasts than these anywhere else.
+dlga_trade_requested_horse:merchant_trade.1|Ihr habt ein gutes Auge für Pferde, {Herr/Herrin}. Ihr werdet nirgendwo bessere Tiere finden.
 dlga_merchant_trade:town_merchant_talk|Sonst noch etwas?
 dlga_town_merchant_talk:merchant_gossip|Erzählt mir, worüber reden die Leute zur Zeit?
 dlga_town_merchant_talk:close_window|Lebt wohl.
@@ -1072,8 +1072,8 @@ dlga_party_reinforce_check_1:party_reinforce_end.1|Wir können diese Truppen hie
 dlga_start:close_window.33|Euretwegen bin ich spät! Ein Zauberer kommt nie zu spät!
 dlga_start:close_window.34|Er... ruuuuft...
 dlga_start:secret_guardian_let_through|Halt!
-; dlga_secret_guardian_let_through:secret_guardian_let_through1|I am {playername}, {s24}. Let me through!
-; dlga_secret_guardian_let_through1:close_window|Yes commander, you may pass.
+dlga_secret_guardian_let_through:secret_guardian_let_through1|Ich bin {playername}, {s24}. Lasst mich durch!
+dlga_secret_guardian_let_through1:close_window|Ja, Ihr dürft passieren.
 dlga_start:close_window.36|Du da! Du hast überlebt? Gut! Du kannst hier nicht mit einem Knüppel rumlaufen. Nimm das!
 dlga_start:ori_choose_1|Du kämpfst gut, Vetter! Ich weiß nicht, wie du bis hierher überlebt hast. Ich erinnere mich, dass du dich uns erst kürzlich angeschlossen hast, bevor all dies hier begann... bevor Balin fiel... Woher kommst du?
 dlga_ori_choose_1:ori_choose_finish|Ich war ein Späher, ausgesandt in die Wälder der Beorninger. Ich hörte von Balins Unternehmen und schloss mich euch an.

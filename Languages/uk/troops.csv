@@ -887,12 +887,12 @@ trp_walker_woman_rohan_d|Роганська дівчина
 trp_walker_woman_gondor_b|Ґондорська жінка
 trp_walker_woman_gondor_bw|Ґондорська жінка
 trp_walker_woman_gondor_w|Знатний Ґондорець
-; trp_mirkwood_walker_1|Greenwood Elf
-; trp_mirkwood_walker_2|Greenwood Elf
-; trp_lorien_walker_1|Lothlorien Elf
-; trp_lorien_walker_2|Lothlorien Elf
+trp_mirkwood_walker_1|Ельф Зеленолісся
+trp_mirkwood_walker_2|Ельф Зеленолісся
+trp_lorien_walker_1|Ельф Лотлоріена
+trp_lorien_walker_2|Ельф Лотлоріена
 trp_dwarf_walker|Гном
-; trp_beorn_walker|Peasant Man
+trp_beorn_walker|Селянин
 trp_beorn_walker_fem|Селянка
 trp_trainer_4|Тренер
 trp_trainer_gondor|Тренер
@@ -1409,7 +1409,7 @@ trp_elder_beorn|Беорнінгський старійшина
 trp_elder_beorn_pl|село
 trp_elder_harad|Харадський Управитель табору
 trp_elder_harad_pl|табір
-; trp_elder_rhun|Rhun High Priest
+trp_elder_rhun|Верховний жрець Рун
 trp_elder_rhun_pl|табір
 trp_elder_khand|Кхандський Управитель табору
 trp_elder_khand_pl|табір
@@ -1506,7 +1506,7 @@ trp_gandalf|Гендальф
 trp_gandalf_pl|Доморощені Гендальфи
 trp_nazgul|Назгул
 trp_nazgul_pl|Одомашнений Назгул
-; trp_radagast|Radagast
+trp_radagast|Радагаст
 trp_barman|Бармен
 trp_elder|Старійшина
 trp_gear_merchant|Торговець спорядженням
@@ -1524,8 +1524,8 @@ trp_uruk_hai_sentry|Урук-Хай Часовий
 trp_uruk_hai_sentry_pl|Урук-Хайї Часові
 trp_black_numenorean_sorcerer|Чорний нуменорець-Чаклун
 trp_black_numenorean_sorcerer_pl|Чорні нуменорці-Чаклуни
-; trp_evil_priest|Evil Priest
-; trp_evil_priest_pl|Evil Priests
+trp_evil_priest|Служитель зла
+trp_evil_priest_pl|Служитель зла
 trp_wolf_rider_of_mirkwood|Вовчий вершник Темнолісся
 trp_wolf_rider_of_mirkwood_pl|Вовчі вершники Темнолісся
 trp_warg_rider_of_mirkwood|Темнолісський вершник на Варзі

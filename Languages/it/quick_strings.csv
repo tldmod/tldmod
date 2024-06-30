@@ -117,11 +117,11 @@ qstr_Brighter_Nights:__|Notti più luminose:
 qstr_Done|Fatto
 qstr_Gameplay_Tweaks|Modifiche al Gameplay
 qstr_Beta_Formations_Twea|Modifica Formazioni Beta
-; qstr_Set_to_Native_if_you|Set to Native if you encounter any types of AI problems during battle.
-; qstr_Disable_cutscenes_if|Disable cutscenes if you encounter any crashes at the start of the war.
-; qstr_Campaign_Difficulty_a|Campaign Difficulty affects abundance of volunteers, lord party size, and strength income for allied factions.
+qstr_Set_to_Native_if_you|Imposta su Nativo se riscontri qualsiasi tipo di problema con la IA durante la battaglia.
+qstr_Disable_cutscenes_if|Disattiva le scene d'intermezzo se riscontri arresti anomali all'inizio della guerra.
+qstr_Campaign_Difficulty_a|La difficoltà della campagna influisce sulla disponibilità di volontari, sulla dimensione del gruppo dei lord e sul reddito in termini di forza per le fazioni alleate.
 qstr_War_Will_Start_at_Le|La Guerra inizierà al livello {reg0}
-; qstr_Be_aware_that_many_q|Be aware that many quests and campaign mechanics scale with player level. Increasing this setting will give you more time to prepare, but will make the war unfold quicker.
+qstr_Be_aware_that_many_q|Tieni presente che molte missioni e meccaniche nella campagna si adattano al livello del giocatore. Aumentare questa impostazione ti darà più tempo per prepararti, ma la guerra avrà uno svolgimento più rapido.
 qstr_Troop_Tree|Organigramma Truppe
 qstr__Click_on_a_unit_for|(Clicca su un'unità per i dettagli)
 qstr_Weapons|Armi
@@ -769,7 +769,7 @@ qstr_Fixed_Camera___Right|Inquadratura Fissa - Spalla Destra
 qstr_Fixed_Camera___Left_|Inquadratura Fissa - Spalla Sinistra
 qstr_Fixed_Camera___Cente|Inquadratura Fissa - Centrata
 qstr_Shield_is_too_big_to|Lo scudo è troppo grande per essere usato con un arco.
-; qstr_{s7}_waves_at_you.|{s7} waves at you.
+qstr_{s7}_waves_at_you.|{s7} ti saluta.
 qstr_You_happen_upon_an_O|Ti imbatti in una Vecchia Locanda. Mentre ispezioni l'edificio in pietra corroso dalle intemperie, noti un gruppo di ragazzi che giocano tra i pilastri, gli unici bambini che hai visto a Minas Tirith. Uno di loro ti saluta e tu ricambi il saluto. Il tuo cuore si rallegra e dimentichi, per un breve momento, il dolore della guerra.
 qstr_You_look_through_Hen|Guardi verso Henneth Annun, la Finestra del Tramonto. La splendida vista ripristina la tua fede nell'Ovest e nelle forze al di là dell'orizzonte.
 qstr_As_you_follow_the_st|Mentre prosegui sulle diritte scale, scavate nella roccia della montagna, e successivamente su una seconda rampa tortuosa che aderisce alla parete rocciosa, ti rendi conto che non dovresti insistere oltre su questo percorso, se tieni alla tua vita. .

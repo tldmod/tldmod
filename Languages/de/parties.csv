@@ -51,13 +51,13 @@ p_town_rhun_main_camp|Hauptlager von Rhûn
 p_town_rhun_south_camp|Südlager von Rhûn
 p_town_rhun_north_camp|Nordlager von Rhûn
 p_town_gundabad|Gundabad
-; p_town_gundabad_ne_outpost|Ruined Dwarf Hold
-; p_town_gundabad_nw_outpost|Goblin Hideout
+p_town_gundabad_ne_outpost|Zerstörte Zwergenfeste
+p_town_gundabad_nw_outpost|Bergork-Unterschlupf
 p_town_goblin_north_outpost|Orkstadt
 p_town_goblin_south_outpost|Südlicher Orkposten
 p_town_gundabad_m_outpost|Waldlager von Gundabad
 p_town_erebor|Erebor
-; p_town_ironhill_camp|Grey Mountains Gateway
+p_town_ironhill_camp|Tor zu den Grauen Bergen
 p_advcamp_gondor|Vorstoßlager von Gondor
 p_advcamp_rohan|Vorstoßlager von Rohan
 p_advcamp_isengard|Vorstoßlager von Isengart

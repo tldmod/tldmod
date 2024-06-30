@@ -301,22 +301,22 @@ mno_aw_chamber_door|Öffne die Tür.
 mno_trade_with_arms_merchant|Besuche {s40}.
 mno_trade_with_horse_merchant|Besuche {s41}.
 mno_town_prison_door|Zum Übungsplatz
-; mno_talk_to_healer|Speak with {s40}.
+mno_talk_to_healer|Sprich mit {s40}.
 mno_talk_to_castle_commander|Besuche die Kasernen von {s61}
 mno_speak_with_elder|Sprich mit dem {s6}.
-; mno_town_ask|Ask around for persons of import...
+mno_town_ask|Erkundige dich nach den wichtigsten Leuten...
 mno_isengard_underground|Gehe zu den unterirdischen Höhlen.
 mno_isengard_underground_door|Gehe hinab in die Gruben
 mno_tirith_toplevel|Klettere auf die höchste Ebene.
 mno_tirith_toplevel_door|Gehe zur Zitadelle
 mno_erebor_gates|Suche das Haupttor auf.
 mno_erebor_gates_door|Gehe zum Haupttor
-; mno_glittering_caves|Go to the Glittering Caves.
-; mno_glittering_caves_door|Go to the Glittering Caves
+mno_glittering_caves|Besuche die Glitzernden Grotten.
+mno_glittering_caves_door|Besuche die Glitzernden Grotten
 mno_town_leave|Verlassen...
 mno_town_leave_door|Verlasse die Gegend
 mno_town_find_NPCs_cont|Mach es.
-; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
+menu_town_find_NPCs_end|Im Gespräch mit den Bewohnern von {s2} {reg3?erfährst du:erfährt{s3}} die Lage der örtlichen Stallungen und Lagerhäuser, der Schmiede, {s4}^^{s6}
 menu_player_initiated_siege_result|Du greifst den Ort unter dem Banner von {s2} an.
 menu_disembark|Möchtest du an Land gehen?
 mno_disembark_yes|Ja.

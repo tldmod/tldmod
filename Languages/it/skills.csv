@@ -21,7 +21,7 @@ skl_spotting_desc|Per ogni punto in questa abilità la capacità visiva della Co
 skl_pathfinding|Orientamento
 skl_pathfinding_desc|Per ogni punto in questa abilità la velocità della Compagnia sulla mappa aumenta del 3%%. (Abilità di Gruppo)
 skl_tactics|Tattica
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3% per level. (Leader skill)
+skl_tactics_desc|Migliora il vantaggio in battaglia. Aumenta la distanza di congiungimento in battaglia per i gruppi nemici e diminuisce la distanza di congiungimento in battaglia per i gruppi alleati del 3% per livello. (Abilità del Comandante)
 skl_tracking|Seguire Tracce
 skl_tracking_desc|Le orme sul terreno forniscono più informazioni. (Abilità di Gruppo)
 skl_trainer|Addestramento

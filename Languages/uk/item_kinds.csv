@@ -348,9 +348,9 @@ itm_orc_axe|Оркська сокира
 itm_orc_two_handed_axe|Велика Оркська сокира
 itm_orc_throwing_axes|Оркські метальні сокири
 itm_orc_bow|Оркський лук
-; itm_orc_shield_a|Simple Shield
-; itm_orc_shield_b|Fur Shield
-; itm_orc_shield_c|Fur Tower Shield
+itm_orc_shield_a|Звичайний щит
+itm_orc_shield_b|Щит обшитий шерстю
+itm_orc_shield_c|Фортечний щит обшитий шерстю 
 itm_mordor_orc_shield_a|Мордорський орочий щит
 itm_mordor_orc_shield_b|Мордорський орочий щит
 itm_mordor_orc_shield_c|Мордорський орочий щит
@@ -435,8 +435,8 @@ itm_dun_helm_b|Дунландська хутряна шапка
 itm_dun_helm_c|Дунландський високий шолом
 itm_dun_helm_d|Дунландський високий шолом
 itm_dun_helm_e|Дунландський Оленячий Шолом
-; itm_dun_shield_a|Dunnish Roundshield
-; itm_dun_shield_b|Dunnish Oval Shield
+itm_dun_shield_a|Дунландський круглий щит
+itm_dun_shield_b|Дунландський овальний щит
 itm_dun_berserker|Меч дунландського вождя
 itm_dunnish_antler_axe|Дунландська сокира з оленячого рогу
 itm_dunnish_war_axe|Дунландська бойова сокира
@@ -495,11 +495,11 @@ itm_mirkwood_helm_d|Королівський шолом темнолісся
 itm_woodelf_leather_boots|Шкіряні черевики лісових ельфів
 itm_mirkwood_boots|Черевики темнолісся
 itm_harad_tunic|Харадськия одяг
-; itm_harad_padded|Harad Padded Jerkin
-; itm_harad_lamellar|Harad Scale Vest
-; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_padded|Харадська покращена броня
+itm_harad_lamellar|Харадська міцна броня
+itm_harad_heavy_lamellar|Харадська покращена міцна броня
 itm_harad_heavy|Броня-Харасьяла
-; itm_harad_pectoral|Harad Breastplate
+itm_harad_pectoral|Харадський нагрудник
 itm_black_snake_armor|Броня-Маранка
 itm_harad_champion|Далекохарадський одяг
 itm_harad_scale|Харадська луската броня
@@ -515,11 +515,11 @@ itm_harad_eaglehelm|Шолом Орлиної гвардії
 itm_lion_helm|Шолом Левиної гвардії
 itm_harad_pantherhelm|Шолом Гвардії пантери
 itm_harad_khopesh|Харадський хопеш
-; itm_black_snake_sword|Harad Cobra Sword
-; itm_harad_heavy_sword|Harad Dragon Sword
+itm_black_snake_sword|Харадський меч "Кобра"
+itm_harad_heavy_sword|Харадський меч "Дракон"
 itm_horandor_a|Харадський ятаган
 itm_skirmisher_sword|Харадський меч застрільника
-; itm_harad_sabre|Harad Salamander Sword
+itm_harad_sabre|Харадський меч "Саламандра"
 itm_harad_mace|Далекохарадськая булава
 itm_far_harad_2h_mace|Далекохарадська дворучна булава
 itm_harad_dagger|Харадський кинджал
@@ -553,7 +553,7 @@ itm_khand_light_lam|Кхандський легкий обладунок лак�
 itm_khand_foot_lam|Кхандський важкий лакейський обладунок
 itm_khand_med_lam|Кхандський середній пластинчастий обладунок
 itm_khand_heavy_lam|Кхандський важкий пластинчастий обладунок
-; itm_khand_mail|Khand Mail
+itm_khand_mail|Ханд Почта
 itm_khand_noble_lam|Кхандська броня знатного воїна
 itm_khand_axe_great|Кхандська велика сокира
 itm_khand_axe_winged|Кхандська крилата сокира
