@@ -21,7 +21,7 @@ skl_spotting_desc|每點增加隊伍偵察範圍10%%。 (隊伍技能)
 skl_pathfinding|尋路
 skl_pathfinding_desc|每點增加隊伍地圖移動速度3%%。 (隊伍技能) 
 skl_tactics|戰術
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)
 skl_tracking|跟踪
 skl_tracking_desc|從足跡中能發現更多的信息。 (隊伍技能) 
 skl_trainer|教練

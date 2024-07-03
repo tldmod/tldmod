@@ -21,7 +21,7 @@ skl_spotting_desc|1 포인트가 오를 때 마다 부대의 시야범위가 10%
 skl_pathfinding|길 찾기
 skl_pathfinding_desc|1 포인트가 오를 때 마다 맵에서의 부대 이동속도가 3%% 오릅니다.(부대 기술)
 skl_tactics|전술
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)
 skl_tracking|추적
 skl_tracking_desc|추적이 더 정확해 집니다(부대 기술)
 skl_trainer|훈련교관
