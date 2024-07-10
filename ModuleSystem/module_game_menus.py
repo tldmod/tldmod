@@ -9150,7 +9150,7 @@ game_menus = [
 	   	  (eq,"$entry_to_town_forbidden",0), 
           (party_get_slot, ":healer", "$current_town", slot_town_healer),
           (gt, ":healer", 1),
-          (troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 1),
+          (troop_slot_eq, ":healer", slot_troop_met_previously, 1),
           (str_store_troop_name, s40, ":healer"),
        ],"Speak with {s40}.",[
              (set_jump_mission,"mt_conversation_encounter"),
@@ -9532,7 +9532,7 @@ game_menus = [
             (party_get_slot, ":healer", "$current_town", slot_town_healer),
             (gt, ":healer", 1),
             (val_add, ":check_count", 1),
-            (troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 1), #no town slot for healer met
+            (troop_slot_eq, ":healer", slot_troop_met_previously, 1), #no town slot for healer met
             (val_add, ":count", 1),
         (try_end),  
         (eq, ":count", ":check_count"),

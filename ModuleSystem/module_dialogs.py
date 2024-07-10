@@ -9778,7 +9778,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 [anyone|plyr,"healers_meet", [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 1),], 
     "I need your help.", "healers_ask",[]],
 
-[anyone|plyr,"healers_ask", [
+[anyone,"healers_ask", [], 
+    "What can I do for you, friend?", "healers_ask_2",[]],
+
+[anyone|plyr,"healers_ask_2", [
   (eq, "$tld_option_injuries", 1),
   (troop_get_slot, ":wound_mask", "trp_player", slot_troop_wound_mask),
   (assign, ":wounds", 0), 
@@ -9829,7 +9832,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   ], 
     "My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?", "healer_wound_ask",[]],
 
-[anyone|plyr,"healers_ask", [
+[anyone|plyr,"healers_ask_2", [
   (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
   (assign, ":yes",0),
   (try_for_range, ":stack", 0, ":num_stacks"),
@@ -9840,6 +9843,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   (eq, ":yes", 1)], 
     "My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?", "healer_injured_ask",[]],
+
+[anyone|plyr,"healers_ask_2", [], 
+    "Nothing.", "close_window",[(call_script, "script_stand_back")]],
 
 [anyone|plyr,"healers_meet", [], 
     "Nothing.", "close_window",[(call_script, "script_stand_back")]],
