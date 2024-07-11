@@ -4765,21 +4765,26 @@ tld_animated_town_agents = [
         (neq, ":troop_no", trp_npc18), #Turmbathu
         (agent_get_position, pos5, ":agent"),
         (get_distance_between_positions, ":dist", pos4, pos5),
-        (is_between, ":dist", 300, 1500),
+        (is_between, ":dist", 300, 1500), #so it doesn't trigger during dialog
         (store_random_in_range, ":chance", 0, 100),
         (gt, ":chance", 70),
         (agent_set_look_target_agent, ":agent", ":player_agent"),
         (gt, ":chance", 90),
         (try_begin),
-            (gt, ":chance", 95),
+            (gt, ":chance", 96),
             (neg|faction_slot_eq, "$ambient_faction", slot_faction_side, faction_side_good),
             (agent_set_animation, ":agent", "anim_troll_roar"),
             (agent_set_animation_progress, ":agent", 20), #skip a part of the animation
         (else_try),
             (agent_set_animation, ":agent", "anim_greet_simple"),
         (try_end),
+        (gt, ":chance", 93),
+        (store_mission_timer_a, ":timer"),
+        (neg|agent_slot_ge, ":agent", slot_agent_knocked_down, ":timer"), #reused for tracking if recently waved.
         (str_store_agent_name, s7, ":agent"),
-        (display_message, "@{s7} waves at you."),       
+        (display_message, "@{s7} waves at you."),        
+        (val_add, ":timer", 20),
+        (agent_set_slot, ":agent", slot_agent_knocked_down, ":timer"),
     (try_end),
       ]),        
 ]
