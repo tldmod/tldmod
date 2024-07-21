@@ -1,5 +1,5 @@
 itemsfile version 2
-966
+974
  itm_no_item INVALID_ITEM INVALID_ITEM 1  invalid_item 0  11 0 3 0 1.5 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -207,10 +207,10 @@ itemsfile version 2
  itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_huge 0  1 0 3000 16106389504 0 100 0 45 0 5 180 62 35 100 0 62 0
 0
 
- itm_animal_big Big_Animal Big_Animal 8  bry_cow_a 0  bry_cow_b 2  bry_cow_c 4  bry_cow_d 8  CWE_cow_mod_a 16  bry_wild_donkey 2199023255552  spak_yak1 1099511627776  spak_yak2 4398046511104  18014398509481984 0 10 16106389504 0 10 0 0 0 10 25 5 5 90 0 0 0
+ itm_animal_big Big_Animal Big_Animal 8  bry_cow_a 0  bry_cow_b 2  bry_cow_c 4  bry_cow_d 8  CWE_cow_mod_a 16  bry_wild_donkey 2199023255552  spak_yak1 1099511627776  spak_yak2 4398046511104  18014398509482003 0 10 0 0 10 0 0 0 10 25 5 5 90 0 0 0
 0
 
- itm_animal_small Small_Animal Small_Animal 5  bry_goat 0  bry_goat_c 2  CWE_sheep_mod_a 4  CWE_sheep_mod_b 8  wolf_dog 16  18014398509481984 0 10 16106389504 0 10 0 0 0 10 25 5 5 60 0 0 0
+ itm_animal_small Small_Animal Small_Animal 6  bry_goat 0  bry_goat_c 2  CWE_sheep_mod_a 4  CWE_sheep_mod_b 8  wolf_dog 16  pk_pig 32  18014398509482003 0 10 0 0 10 0 0 0 10 25 5 5 50 0 0 0
 0
 
  itm_troll_weapon_long Giant_Halberd Giant_Halberd 1  isengard_halberd_troll 0  2251941637783556 512 1 0 58 100 0 0 0 0 30720 70 70 200 0 542 542
@@ -2903,15 +2903,39 @@ itemsfile version 2
  itm_civilian_carry_wood2 Wood Wood 1  ado_wood_carry 0  4194307 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
 0
 
- itm_animal_spider Spider Spider 1  spider 0  18014398509486080 0 1200 0 0 100 0 30 0 3 60 75 50 0 0 25 0
+ itm_animal_spider Spider Spider 1  spider 0  18014398509482003 0 1200 0 0 100 0 0 0 10 60 75 9 35 0 0 0
 0
 
- itm_animal_bear Bear Bear 1  bear_2 0  4096 0 1200 0 0 100 0 48 0 10 130 48 50 120 0 25 0
+ itm_animal_bear Bear Bear 1  bear_2 0  18014398509482003 0 1200 0 0 100 0 0 0 10 130 48 5 120 0 0 0
 0
 
- itm_animal_wolf Wolf Wolf 1  wolf 0  4096 0 1200 0 0 100 0 25 0 10 50 50 50 85 0 25 0
+ itm_animal_wolf Wolf Wolf 1  wolf 0  18014398509482003 0 1200 0 0 100 0 0 0 0 50 50 5 85 0 0 0
 0
 
- itm_animal_werewolf Werewolf Werewolf 1  mm_warg_a 0  4096 0 1200 0 0 100 0 35 0 10 130 60 60 100 0 35 0
+ itm_animal_werewolf Werewolf Werewolf 1  mm_warg_a 0  18014398509482003 0 1200 0 0 100 0 0 0 10 130 60 6 100 0 0 0
+0
+
+ itm_animal_dog Dog Dog 1  wolf_dog 0  18014398509482003 0 1200 0 0 100 0 0 0 0 50 50 13 55 0 25 0
+0
+
+ itm_animal_horse Horse Horse 3  CWE_horse_light_a 2  CWE_horse_light_b 4  CWE_horse_light_c 8  19 0 70 0 0 100 0 0 0 0 40 33 9 95 0 5 0
+0
+
+ itm_animal_pony Pony Pony 3  CWE_horse_light_a 2  CWE_horse_light_b 4  CWE_horse_light_c 8  19 0 70 0 0 100 0 0 0 0 40 33 9 80 0 5 0
+0
+
+ itm_animal_deer Deer Deer 1  scla_reddeer 0  19 0 70 0 0 100 0 0 0 0 40 33 9 70 0 5 0
+0
+
+ itm_animal_camel camel camel 1  giles_evil_camel_brown 0  18014398509482003 0 70 0 0 100 0 0 0 0 40 33 8 110 0 5 0
+0
+
+ itm_animal_boar boar boar 1  boar 0  18014398509482003 0 1200 0 0 100 0 0 0 0 50 50 5 85 0 0 0
+0
+
+ itm_animal_boar_big boar boar 1  boar_black 0  18014398509482003 0 1200 0 0 100 0 0 0 0 50 50 5 105 0 0 0
+0
+
+ itm_animal_rat rat rat 1  szczur_animowany_rig_relocate 0  18014398509482003 0 1200 0 0 100 0 0 0 10 60 75 8 20 0 0 0
 0
 

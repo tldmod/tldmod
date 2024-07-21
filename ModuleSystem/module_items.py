@@ -355,8 +355,13 @@ items =[
 ["warg_reward","Huge_Warg",[("wargArmored_huge",0)],itp_type_horse,0,3000,hit_points(180)|body_armor(45)|difficulty(5)|horse_speed(35)|horse_maneuver(62)|horse_charge(62)|horse_scale(100)|abundance(100),imodbits_horse_basic,[]],
 #first non WARG item: itm_warg_reward+1
 
-["animal_big","Big_Animal", [("bry_cow_a",0),("bry_cow_b",imodbit_cracked),("bry_cow_c",imodbit_rusty),("bry_cow_d",imodbit_bent),("CWE_cow_mod_a",imodbit_chipped),("bry_wild_donkey",imodbit_rotten),("spak_yak1",imodbit_smelling),("spak_yak2",imodbit_large_bag)],itp_disable_agent_sounds, 0, 10,abundance(10)|hit_points(25)|body_armor(0)|difficulty(10)|horse_speed(5)|horse_maneuver(5)|horse_charge(0)|horse_scale(90),imodbits_horse_basic],
-["animal_small","Small_Animal", [("bry_goat",0),("bry_goat_c",imodbit_cracked),("CWE_sheep_mod_a",imodbit_rusty),("CWE_sheep_mod_b",imodbit_bent),("wolf_dog",imodbit_chipped)],		itp_disable_agent_sounds, 0, 10,abundance(10)|hit_points(25)|body_armor(0)|difficulty(10)|horse_speed(5)|horse_maneuver(5)|horse_charge(0)|horse_scale(60),imodbits_horse_basic],
+["animal_big","Big_Animal", [
+    ("bry_cow_a",0),("bry_cow_b",imodbit_cracked),("bry_cow_c",imodbit_rusty),("bry_cow_d",imodbit_bent),("CWE_cow_mod_a",imodbit_chipped),
+    ("bry_wild_donkey",imodbit_rotten),("spak_yak1",imodbit_smelling),("spak_yak2",imodbit_large_bag)],
+    itp_type_animal|itp_disable_agent_sounds, 0, 10,abundance(10)|hit_points(25)|body_armor(0)|difficulty(10)|horse_speed(5)|horse_maneuver(5)|horse_charge(0)|horse_scale(90),0],
+["animal_small","Small_Animal", [(
+    "bry_goat",0),("bry_goat_c",imodbit_cracked),("CWE_sheep_mod_a",imodbit_rusty),("CWE_sheep_mod_b",imodbit_bent),("wolf_dog",imodbit_chipped),("pk_pig",imodbit_battered)],
+    itp_type_animal|itp_disable_agent_sounds, 0, 10,abundance(10)|hit_points(25)|body_armor(0)|difficulty(10)|horse_speed(5)|horse_maneuver(5)|horse_charge(0)|horse_scale(50),0],
 
 #Troll weapons
 ["troll_weapon_long","Giant_Halberd",[("isengard_halberd_troll",0),],																																		itp_no_pick_up_from_ground|itp_type_polearm|itp_no_blur|itp_two_handed|itp_primary|itp_crush_through|itp_bonus_against_shield|itp_can_penetrate_shield,itcf_overswing_polearm|0,1,													weight(250)|difficulty(0)|spd_rtng(70)|weapon_length(200)|swing_damage(30,blunt)|thrust_damage(30,blunt)|horse_speed(70),0,[]],
@@ -1562,10 +1567,19 @@ items =[
 
 
 #non-ridable animals
-["animal_spider","Spider",[("spider",0)], itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(50)|horse_maneuver(75)|horse_charge(25),imodbits_none,[]],
-["animal_bear","Bear",    [("bear_2",0)],   itp_unique, 0, 1200, hit_points(130)|body_armor(48)|horse_speed(50)|horse_maneuver(48)|horse_charge(25)|horse_scale(120)|difficulty(10),imodbits_none,[]],
-["animal_wolf","Wolf",    [("wolf",0)],   itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(50)|horse_maneuver(50)|horse_charge(25)|horse_scale(85)|difficulty(10),imodbits_none,[]],
-["animal_werewolf","Werewolf",    [("mm_warg_a",0)],   itp_unique, 0, 1200, hit_points(130)|body_armor(35)|horse_speed(60)|horse_maneuver(60)|horse_charge(35)|horse_scale(100)|difficulty(10),imodbits_none,[]],
+["animal_spider","Spider",[("spider",0)], itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(9)|horse_maneuver(75)|horse_scale(35)|difficulty(10),imodbits_none,[]],
+["animal_bear","Bear",    [("bear_2",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(130)|horse_speed(5)|horse_maneuver(48)|horse_scale(120)|difficulty(10),imodbits_none,[]],
+["animal_wolf","Wolf",    [("wolf",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(85),imodbits_none,[]],
+["animal_werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(130)|horse_speed(6)|horse_maneuver(60)|horse_scale(100)|difficulty(10),imodbits_none,[]],
+["animal_dog","Dog",    [("wolf_dog",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(13)|horse_maneuver(50)|horse_charge(25)|horse_scale(55),imodbits_none,[]],
+["animal_horse","Horse",[("CWE_horse_light_a",imodbit_cracked),("CWE_horse_light_b",imodbit_rusty),("CWE_horse_light_c",imodbit_bent)],itp_type_animal,0,70,hit_points(40)|horse_speed(9)|horse_maneuver(33)|horse_charge(5)|horse_scale(95),0,[]],
+["animal_pony","Pony",[("CWE_horse_light_a",imodbit_cracked),("CWE_horse_light_b",imodbit_rusty),("CWE_horse_light_c",imodbit_bent)],itp_type_animal,0,70,hit_points(40)|horse_speed(9)|horse_maneuver(33)|horse_charge(5)|horse_scale(80),0,[]],
+["animal_deer","Deer",[("scla_reddeer",0),],itp_type_animal,0,70,hit_points(40)|horse_speed(9)|horse_maneuver(33)|horse_charge(5)|horse_scale(70),0,[]],
+["animal_camel","camel",[("giles_evil_camel_brown",0)],itp_type_animal|itp_disable_agent_sounds,0,70,hit_points(40)|horse_speed(8)|horse_maneuver(33)|horse_charge(5)|horse_scale(110),0,[]],
+["animal_boar","boar",    [("boar",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(85),imodbits_none,[]],
+["animal_boar_big","boar",[("boar_black",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(105),imodbits_none,[]],
+["animal_rat","rat",[("szczur_animowany_rig_relocate",0)], itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(8)|horse_maneuver(75)|horse_scale(20)|difficulty(10),imodbits_none,[]],
+
 ] or []) + [ 
 
 ]

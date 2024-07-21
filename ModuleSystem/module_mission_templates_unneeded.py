@@ -319,7 +319,7 @@ tournament_triggers = [
   (0, 0, ti_once, [],
    [
      (eq, "$g_mt_mode", abm_tournament),
-     (play_sound, "snd_arena_ambiance", sf_looping),
+     #(play_sound, "snd_arena_ambiance", sf_looping),
      (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
      ]),
 

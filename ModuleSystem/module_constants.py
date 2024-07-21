@@ -678,7 +678,7 @@ slot_prop_agent_2                      = 2 #stores agent_no of secondary agent i
 slot_prop_playing_sound                   = 3 #0 or 1, may also store sound channel
 slot_prop_sound                           = 4 #stores sound_ID to play, or sound channel
 slot_prop_temp_hp_1                        = 5 #useful for hidden HP calculations
-slot_prop_temp_hp_2                        = 5 #useful for hidden HP calculations
+slot_prop_temp_hp_2                        = 6 #useful for hidden HP calculations
 
 ########################################################
 ##  TROOP SLOTS            #############################

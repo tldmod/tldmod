@@ -12772,8 +12772,8 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone,"enemy_defeated", [], "Arggh! I hate this.", "close_window",[(call_script,"script_stand_back"),]],
 [anyone,"party_relieved", [], "Thank you for helping us against those bastards.", "close_window",[(call_script,"script_stand_back"),]],
 
-[anyone,"start", [(eq,"$talk_context", tc_party_encounter),(store_encountered_party, reg(5)),(party_get_template_id,reg(7),reg(5)),(eq,reg(7),"pt_sea_raiders")],
-"I will drink from your skull!", "battle_reason_stated",[(play_sound,"snd_encounter_sea_raiders")]],
+# [anyone,"start", [(eq,"$talk_context", tc_party_encounter),(store_encountered_party, reg(5)),(party_get_template_id,reg(7),reg(5)),(eq,reg(7),"pt_sea_raiders")],
+# "I will drink from your skull!", "battle_reason_stated",[(play_sound,"snd_encounter_sea_raiders")]],
   
 ######################################
 # GENERIC MEMBER CHAT
@@ -13734,7 +13734,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "You have no chance against us. Surrender now or we will kill you all...", "party_encounter_hostile_attacker",
    [(try_begin),
       (eq,"$g_encountered_party_template","pt_steppe_bandits"),
-      (play_sound, "snd_encounter_steppe_bandits"),
+      #(play_sound, "snd_encounter_steppe_bandits"),
     (try_end)]],
   
 [anyone|plyr,"party_encounter_hostile_attacker", [],"Don't attack! We surrender.", "close_window", [(call_script,"script_stand_back"),(assign,"$g_player_surrenders",1)]],

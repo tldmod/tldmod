@@ -614,7 +614,6 @@ hall_guard_talk
 hall_guard_duty
 hall_guard_arrest
 hall_guard_arrest_2
-battle_reason_stated
 regular_member_talk
 view_regular_char_requested
 do_regular_member_view_char
@@ -640,6 +639,7 @@ secret_guardian_let_through1
 party_encounter_hostile_attacker
 party_encounter_hostile_defender
 party_encounter_hostile_ultimatum_surrender
+battle_reason_stated
 free
 view_char_requested
 threaten_1

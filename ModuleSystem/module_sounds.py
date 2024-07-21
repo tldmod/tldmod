@@ -166,15 +166,19 @@ sounds = [
 ("torch_loop",sf_priority_2|sf_vol_2|sf_looping|sf_start_at_random_pos, ["CWE_fx_fire_embers_02b_lp.ogg"]),
 ("dummy_hit",sf_priority_9, ["shield_hit_cut_3.wav","shield_hit_cut_5.wav"]),
 ("dummy_destroyed",sf_priority_9, ["shield_broken.wav"]),
-("gourd_destroyed",sf_priority_9, ["shield_broken.wav"]),#TODO
-#("cow_moo", sf_2d|sf_priority_9|sf_vol_8, ["cow_moo_1.ogg"]),
+#("gourd_destroyed",sf_priority_9, ["shield_broken.wav"]),#TODO
+("cow_moo", sf_priority_9|sf_vol_8, ["cow_moo_1.ogg", "silence.wav"]),
 #("cow_slaughter", sf_2d|sf_priority_9|sf_vol_8, ["cow_slaughter.ogg"]),
 ("distant_dog_bark", sf_priority_8|sf_vol_8, ["d_dog1.wav","d_dog2.wav","d_dog3.wav","d_dog7.wav"]),
-("distant_owl", sf_2d|sf_priority_8|sf_vol_9, ["d_owl2.wav","d_owl3.wav","d_owl4.wav"]),
-("distant_chicken", sf_2d|sf_priority_8|sf_vol_8, ["d_chicken1.wav","d_chicken2.wav"]),
-("distant_carpenter", sf_2d|sf_priority_8|sf_vol_3, ["d_carpenter1.wav","d_saw_short3.wav"]),
-("distant_blacksmith", sf_2d|sf_priority_8|sf_vol_4, ["d_blacksmith2.wav"]),
-("arena_ambiance", sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["arena_loop11.ogg"]),
+("donkey", sf_priority_8|sf_vol_5, ["cwe_osiol.ogg", "silence.wav", "silence.wav"]),
+#("distant_chicken", sf_priority_8|sf_vol_8, ["d_chicken1.wav","d_chicken2.wav"]),
+#from sclavinia mod
+("kura",sf_priority_2|sf_vol_4, ["scla_chicken-idle1.wav","scla_chicken-idle2.wav","scla_chicken-idle3.wav","scla_chicken-idle4.wav","scla_chicken-idle5.wav","scla_chicken-idle6.wav","scla_chicken-idle7.wav", "silence.wav", "silence.wav"]),
+("pig", sf_priority_4|sf_vol_3, ["scla_cerdo.wav","scla_boar.wav","pk_pig_sound.ogg", "silence.wav"]),
+("sheep", sf_priority_4|sf_vol_3, ["sheep_1.wav","sheep_2.wav","sheep_3.wav", "silence.wav"]),
+("goat", sf_priority_4|sf_vol_3, ["goat_1.wav","goat_2.wav","goat_3.wav", "silence.wav"]),
+# ("distant_blacksmith", sf_2d|sf_priority_8|sf_vol_4, ["d_blacksmith2.wav"]),
+# ("arena_ambiance", sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["arena_loop11.ogg"]),
 ("town_ambiance", sf_2d|sf_priority_8|sf_vol_3|sf_looping, ["town_loop_3.ogg"]),
 
 #TLD start

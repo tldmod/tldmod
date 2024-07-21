@@ -1304,7 +1304,7 @@ scene_props = [
         (particle_system_burst, "psys_gourd_piece_1", pos1, 1),
         (particle_system_burst, "psys_gourd_piece_2", pos1, 5),
         (prop_instance_animate_to_position, ":instance_no", pos2, 1),
-        (play_sound, "snd_gourd_destroyed"),
+        (play_sound, "snd_dummy_destroyed"),
   ])]),
 
 ("gourd_spike",0,"gourd_spike","bo_gourd_spike",[]),
@@ -3453,81 +3453,173 @@ scene_props = [
 
 ("animal_goat",sokf_invisible,"bry_goat","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-	(store_random_in_range, ":animal_var", 1, 3),														 
-	        (try_begin),
-	        	(eq, ":animal_var",1),
-				(spawn_horse,"itm_animal_small", 0),
-	        (else_try),
-	        	(spawn_horse,"itm_animal_small", imod_cracked),
-			(try_end),])]),
+
+    ] + (is_a_wb_sceneprop==1 and [ 
+	(store_random_in_range, ":animal_var", 0, imod_cracked+1),														 
+	(spawn_horse,"itm_animal_small", ":animal_var"),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, snd_goat), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, snd_goat), #sound 2
+    ] or []) + [          
+    ])]),
+
 ("animal_cow",sokf_invisible,"bry_cow_a","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-	(store_random_in_range, ":animal_var", 1, 5),														 
-	        (try_begin),
-	        	(eq, ":animal_var",1),
-				(spawn_horse,"itm_animal_big", 0),
-	        (else_try),
-	        	(eq, ":animal_var",2),
-				(spawn_horse,"itm_animal_big", imod_cracked),
-	        (else_try),
-	        	(eq, ":animal_var",3),
-				(spawn_horse,"itm_animal_big", imod_rusty),
-	        (else_try),
-	        	(eq, ":animal_var",4),
-				(spawn_horse,"itm_animal_big", imod_bent),
-			(try_end),
-			(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+
+    ] + (is_a_wb_sceneprop==1 and [ 
+	(store_random_in_range, ":animal_var", imod_cracked, imod_bent+1),														 
+	(spawn_horse,"itm_animal_big", ":animal_var"),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, snd_cow_moo), #sound 2
+    ] or []) + [          
+    ])]),
+
 ("animal_cow_b",sokf_invisible,"CWE_cow_mod_a","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-  (spawn_horse,"itm_animal_big", imod_chipped),])]),
+
+    ] + (is_a_wb_sceneprop==1 and [ 													 
+	(spawn_horse,"itm_animal_big", imod_chipped),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, snd_cow_moo), #sound 2
+    ] or []) + [          
+    ])]),  
+
 ("animal_donkey",sokf_invisible,"bry_wild_donkey","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-  (spawn_horse,"itm_animal_big", imod_rotten),])]),
+
+    ] + (is_a_wb_sceneprop==1 and [ 													 
+	(spawn_horse,"itm_animal_big", imod_rotten),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, snd_horse_breath), #sound 1 
+    (agent_set_slot, reg0, slot_agent_mount_side, snd_donkey), #sound 2
+    ] or []) + [          
+    ])]),
+    
 ("animal_aurochs",sokf_invisible,"spak_yak1","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-	(store_random_in_range, ":animal_var", 1, 3),														 
-	        (try_begin),
-	        	(eq, ":animal_var",1),
-				(spawn_horse,"itm_animal_big", imod_smelling),
-	        (else_try),
-	        	(spawn_horse,"itm_animal_big", imod_large_bag),
-			(try_end),])]),
 
-] + (is_a_wb_sceneprop==1 and [
-("animal_wolf",sokf_invisible,"wolf","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_animal_wolf", 0),])]),
-("animal_bear",sokf_invisible,"bear","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_animal_bear", 0),])]),
-("animal_spider",sokf_invisible,"spider","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_animal_spider", 0),])]),
-("animal_werewolf",sokf_invisible,"mm_warg_a","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_animal_werewolf", 0),])]),
- 
-    ] or [	
-    ("animal_wolf",sokf_invisible,"wolf","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_wolf", 0),])]),
-    ("animal_bear",sokf_invisible,"bear","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_bear", 0),])]),
-    ("animal_spider",sokf_invisible,"spider","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_spider", 0),])]),
-    ("animal_werewolf",sokf_invisible,"mm_warg_a","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),(spawn_horse,"itm_werewolf", 0),])]),
-	]) + [
+    ] + (is_a_wb_sceneprop==1 and [ 
+	(store_random_in_range, ":animal_var", 1, 4),														 
+    (try_begin),
+        (eq, ":animal_var",1),
+        (spawn_horse,"itm_animal_big", imod_smelling),
+    (else_try),
+        (spawn_horse,"itm_animal_big", imod_large_bag),
+    (try_end),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
+    ] or []) + [          
+    ])]),
+
+("animal_wolf",sokf_invisible,"wolf","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    ] + (is_a_wb_sceneprop==1 and [ 
+	(spawn_horse,"itm_animal_dog", 0),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, "snd_warg_lone_woof"), #sound 2
+    ] or []) + [          
+    ])]),
+
+("animal_bear",sokf_invisible,"bear","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    ] + (is_a_wb_sceneprop==1 and [ 
+	(spawn_horse,"itm_animal_bear", 0),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, "anim_bear_slam"), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, snd_bear_strike), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, snd_bear_strike), #sound 2
+    ] or []) + [          
+    ])]),
+    
+("animal_spider",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    ] + (is_a_wb_sceneprop==1 and [ 
+	(spawn_horse,"itm_animal_spider", 0),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
+    ] or []) + [          
+    ])]),
+
+("animal_werewolf",sokf_invisible,"mm_warg_a","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    ] + (is_a_wb_sceneprop==1 and [ 
+	(spawn_horse,"itm_animal_werewolf", 0),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, "anim_bear_slam"), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_bear_slam"), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, "snd_warg_lone_woof"), #sound 2
+    ] or []) + [          
+    ])]),
  
 ("animal_sheep",sokf_invisible,"CWE_sheep_mod_a","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-	(store_random_in_range, ":animal_var", 1, 3),														 
-	        (try_begin),
-	        	(eq, ":animal_var",1),
-				(spawn_horse,"itm_animal_small", imod_rusty),
-	        (else_try),
-	        	(spawn_horse,"itm_animal_small", imod_bent),
-			(try_end),])]),
+    ] + (is_a_wb_sceneprop==1 and [ 
+	(store_random_in_range, ":animal_var", imod_rusty, imod_bent+1),														 
+	(spawn_horse,"itm_animal_small", ":animal_var"),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, snd_sheep), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, snd_sheep), #sound 2
+    ] or []) + [          
+    ])]),
+
 ("animal_horse",sokf_invisible,"CWE_horse_light_a","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-	(store_random_in_range, ":animal_var", 1, 4),														 
-	        (try_begin),
-	        	(eq, ":animal_var",1),
-				(spawn_horse,"itm_sumpter_horse", imod_cracked),
-	        (else_try),
-	        	(eq, ":animal_var",2),
-				(spawn_horse,"itm_sumpter_horse", imod_rusty),
-	        (else_try),
-				(spawn_horse,"itm_sumpter_horse", imod_bent),
-			(try_end),
-			(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
+
+    ] + (is_a_wb_sceneprop==1 and [ 
+	(store_random_in_range, ":animal_var", imod_cracked, imod_bent+1),														 
+	(spawn_horse,"itm_animal_horse", ":animal_var"),
+    #(agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, snd_horse_breath), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, snd_horse_low_whinny1), #sound 2
+    ] or []) + [          
+    ])]),
 
 ("rock_cliff_k_bb",0,"beefbacon_cliff_01","bo_terrain_cliff_01",[]),
 ("rock_cliff_l_bb",0,"beefbacon_cliff_02","bo_terrain_cliff_02",[]),
@@ -5045,14 +5137,140 @@ scene_props = [
 ("basket_earth",0,"basket_earth","bo_apple_basket",[]),
 ("basket_cloth",0,"basket_cloth","bo_apple_basket",[]),
 
-("animal_dog",sokf_invisible,"wolf","0", [(ti_on_init_scene_prop,[
+("animal_dog",sokf_invisible,"wolf_dog","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-	(spawn_horse,"itm_animal_small", imod_chipped),
-    (agent_set_stand_animation, reg0, "anim_horse_stand"),
     ] + (is_a_wb_sceneprop==1 and [ 
+	(spawn_horse,"itm_animal_dog", imod_chipped),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-    (scene_prop_set_slot, ":instance_no", slot_prop_sound, "snd_distant_dog_bark"),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, "anim_horse_rear"), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, "snd_distant_dog_bark"), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, "snd_warg_lone_woof"), #sound 2
     ] or []) + [          
+    ])]),
+
+("animal_pig",sokf_invisible,"pk_pig","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+
+    ] + (is_a_wb_sceneprop==1 and [ 												 
+	(spawn_horse,"itm_animal_small", imod_battered),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, snd_pig), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
+    ] or []) + [          
+    ])]),
+
+("animal_boar",sokf_invisible,"boar","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+
+    ] + (is_a_wb_sceneprop==1 and [ 												 
+	(spawn_horse,"itm_animal_boar", imod_battered),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, snd_pig), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
+    ] or []) + [
+    ])]),
+
+("animal_boar_big",sokf_invisible,"boar","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+
+    ] + (is_a_wb_sceneprop==1 and [ 												 
+	(spawn_horse,"itm_animal_boar_big", imod_battered),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, snd_bear_strike), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, snd_troll_grunt), #sound 2
+    ] or []) + [
+    ])]),
+
+#from sclavinia mod
+ ("animal_chicken",0,"scla_kura_combine",0,   [
+    ] + (is_a_wb_sceneprop==1 and [   
+   (ti_on_scene_prop_init,
+    [(store_trigger_param_1, ":instance_no"),
+    (store_random_in_range, ":random", 0, 220),  
+    (prop_instance_deform_to_time, ":instance_no", ":random"),
+    (store_random_in_range, ":random", 4000, 8000),
+    (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 220, ":random"),
+    ])
+    ] or []) + [    
+    ]),
+
+
+("animal_pony",sokf_invisible,"CWE_horse_light_a","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+
+    ] + (is_a_wb_sceneprop==1 and [ 
+	(store_random_in_range, ":animal_var", imod_cracked, imod_bent+1),														 
+	(spawn_horse,"itm_animal_pony", ":animal_var"),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, snd_horse_breath), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, snd_neigh1), #sound 2
+    ] or []) + [
+    ])]),
+
+("animal_deer",sokf_invisible,"CWE_horse_light_a","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+
+    ] + (is_a_wb_sceneprop==1 and [ 
+	(store_random_in_range, ":animal_var", imod_cracked, imod_bent+1),														 
+	(spawn_horse,"itm_animal_pony", ":animal_var"),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, "anim_wolf_snap"), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, snd_horse_breath), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
+    ] or []) + [
+    ])]),
+
+("animal_camel",sokf_invisible,"giles_evil_camel_brown","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+
+    ] + (is_a_wb_sceneprop==1 and [ 													 
+	(spawn_horse,"itm_animal_camel", imod_rotten),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, snd_camel_sounds), #sound 2
+    ] or []) + [
+    ])]),
+
+("animal_rat",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+
+    ] + (is_a_wb_sceneprop==1 and [ 													 
+	(spawn_horse,"itm_animal_rat", imod_rotten),
+    #(agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
+    (agent_set_slot, reg0, slot_agent_mount_dead, 80), #move chance per 1 second
+    ] or []) + [
     ])]),
             
 ] + (is_a_wb_sceneprop==1 and [ 
@@ -5096,6 +5314,10 @@ scene_props = [
     ])    
     ]),
        ] or [("fellbeast", 0, "beest", "0", []),]) + [  
+
+("fallen_king_base",0,"FK_Base_combined","bo_apple_basket",[]),
+("fallen_king_head",0,"FK_Head","bo_apple_basket",[]),
+("fallen_king_evil_head",0,"EyeHead_Final_2k_tris","bo_apple_basket",[]),
 
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),

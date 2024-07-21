@@ -3913,7 +3913,7 @@ HD_ladders_rise = (0,25,ti_once, [],[(scene_prop_get_instance,":ladder", "spr_si
 			 (prop_instance_get_position,pos1,":ladder"),
 			 (position_rotate_x,pos1,-120),
 			 (prop_instance_animate_to_position,":ladder",pos1,900),
-			 (play_sound,"snd_distant_carpenter"),
+			 #(play_sound,"snd_distant_carpenter"),
 
 			 (scene_prop_get_instance,":ladder", "spr_siege_ladder_14m", 1),
 			 (prop_instance_get_position,pos1,":ladder"),

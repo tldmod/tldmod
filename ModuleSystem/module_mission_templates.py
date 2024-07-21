@@ -5572,7 +5572,7 @@ mission_templates = [ # not used in game
 		(assign, "$recover_after_death_menu", "mnu_recover_after_death_town_alone"),
 		(jump_to_menu,"mnu_tld_player_defeated"),(finish_mission,0)]),
 
-	(1, 0, ti_once, [],[(play_sound,"snd_sneak_town_halt"),(call_script, "script_music_set_situation_with_culture", mtf_sit_fight)]),
+	#(1, 0, ti_once, [],[(play_sound,"snd_sneak_town_halt"),(call_script, "script_music_set_situation_with_culture", mtf_sit_fight)]),
 	(0, 3, 0, [(main_hero_fallen,0)],[(assign, "$recover_after_death_menu", "mnu_recover_after_death_town_alone"),(jump_to_menu,"mnu_tld_player_defeated"),(finish_mission,0)]),
 	(5, 1, ti_once, [(num_active_teams_le,1),(neg|main_hero_fallen)],[(assign,"$auto_menu",-1),(jump_to_menu,"mnu_sneak_into_town_caught_dispersed_guards"),(finish_mission,1)]),
 	(ti_on_leave_area, 0, ti_once, [],[(assign,"$auto_menu",-1),(jump_to_menu,"mnu_sneak_into_town_caught_ran_away"),(finish_mission,0)]),
