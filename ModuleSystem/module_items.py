@@ -1567,7 +1567,7 @@ items =[
 
 
 #non-ridable animals
-["animal_spider","Spider",[("spider",0)], itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(9)|horse_maneuver(75)|horse_scale(35)|difficulty(10),imodbits_none,[]],
+["animal_spider","Spider",[("spider_black",0)], itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(3)|horse_maneuver(75)|horse_scale(4)|difficulty(10),imodbits_none,[]],
 ["animal_bear","Bear",    [("bear_2",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(130)|horse_speed(5)|horse_maneuver(48)|horse_scale(120)|difficulty(10),imodbits_none,[]],
 ["animal_wolf","Wolf",    [("wolf",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(85),imodbits_none,[]],
 ["animal_werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(130)|horse_speed(6)|horse_maneuver(60)|horse_scale(100)|difficulty(10),imodbits_none,[]],
@@ -1578,7 +1578,7 @@ items =[
 ["animal_camel","camel",[("giles_evil_camel_brown",0)],itp_type_animal|itp_disable_agent_sounds,0,70,hit_points(40)|horse_speed(8)|horse_maneuver(33)|horse_charge(5)|horse_scale(110),0,[]],
 ["animal_boar","boar",    [("boar",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(85),imodbits_none,[]],
 ["animal_boar_big","boar",[("boar_black",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(105),imodbits_none,[]],
-["animal_rat","rat",[("szczur_animowany_rig_relocate",0)], itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(8)|horse_maneuver(75)|horse_scale(20)|difficulty(10),imodbits_none,[]],
+["animal_rat","rat",[("szczur_animowany_rig_new_relocate",0)], itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(3)|horse_maneuver(75)|horse_scale(7)|difficulty(10),imodbits_none,[]],
 
 ] or []) + [ 
 

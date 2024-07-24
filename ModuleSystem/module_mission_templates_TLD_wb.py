@@ -4711,6 +4711,7 @@ tld_animated_town_agents = [
         (item_get_type, ":type", ":item_no"),
         (eq, ":type", itp_type_animal),
         (str_store_item_name, s12, ":item_no"),
+        (item_get_horse_scale, ":scale", ":item_no"),        
 
         (agent_get_slot, ":agent_prop", ":agent", slot_agent_assigned_prop),
         (prop_instance_get_position, pos3, ":agent_prop"), #base position
@@ -4739,7 +4740,9 @@ tld_animated_town_agents = [
             (le, ":chance", ":move_chance"),
             (get_distance_between_positions, ":dist", pos2, pos3),
             (ge, ":dist", 1000),
-            (agent_set_scripted_destination, ":agent", pos3),
+            #(agent_set_scripted_destination, ":agent", pos3),
+            (agent_stop_running_away, ":agent"),
+            (agent_start_running_away, ":agent", pos3),
         (else_try), #move around a bit
             (le, ":chance", ":move_chance"),
             (store_random_in_range, ":x", 400, 1000),
@@ -4753,10 +4756,19 @@ tld_animated_town_agents = [
                 (le, ":chance", 11),
                 (val_mul, ":y", -1),
             (try_end),
+            (try_begin),
+                (le, ":scale", 35),
+                (val_mul, ":x", 10),
+                (val_mul, ":y", 10),
+                (assign, reg78, ":scale"),
+                #(display_message, "@{s12} scale {reg78}"),
+            (try_end),
             (agent_get_position, pos2, ":agent"),
             (position_move_x, pos2, ":x"),
             (position_move_y, pos2, ":y"),
-            (agent_set_scripted_destination, ":agent", pos2),
+            #(agent_set_scripted_destination, ":agent", pos2),
+            (agent_stop_running_away, ":agent"),
+            (agent_start_running_away, ":agent", pos2),
             #(display_message, "@{s12} moves away"),
         (try_end),
         (try_begin),
@@ -4767,6 +4779,67 @@ tld_animated_town_agents = [
             (gt, ":anim", 0),
             (agent_set_animation, ":agent", ":anim"),
         (try_end),
+
+        (le, ":scale", 35),
+        (agent_get_position, pos2, ":agent"),
+        (agent_get_position, pos4, ":player_agent"),
+        (get_distance_between_positions, ":dist_2", pos2, pos4),
+        # (assign, reg78, ":dist_2"),
+        # (display_message, "@dist: {reg78}"),
+        (try_begin),
+            # (le, ":dist_2", 900),
+            # (agent_slot_eq, ":agent", slot_agent_time_counter, 0), #visibility
+            # (agent_set_visibility, ":agent", 1),
+            # (agent_set_slot, ":agent", slot_agent_time_counter, 1),
+            # #(display_message, "@{s12} reappears"),
+        # (else_try),
+            # (agent_slot_eq, ":agent", slot_agent_time_counter, 1), #visibility
+            (gt, ":dist_2", 800),
+            #(display_message, "@{s12} disappears"),
+            (agent_fade_out, ":agent"),
+            #(agent_set_visibility, ":agent", 0),
+            (agent_get_slot, ":instance_no", ":agent", slot_agent_assigned_prop),
+            (scene_prop_get_slot, ":num_agents", ":instance_no", slot_prop_agent_2), #number of spawned animals
+            (val_sub, ":num_agents", 1),
+            (scene_prop_set_slot, ":instance_no", slot_prop_agent_2, ":num_agents"),
+            # (agent_set_slot, ":agent", slot_agent_time_counter, 0), 
+        (try_end),    
+    (try_end),
+
+    #critters (rats, spiders) spawn when player is nearby, run in a random direction, and fade out if player moves away (avoid shadow bug)
+    (try_for_prop_instances, ":instance_no"),
+        (prop_instance_get_scene_prop_kind, ":prop_type", ":instance_no"),
+        (this_or_next|eq, ":prop_type", "spr_animal_spider"),
+        (eq, ":prop_type", "spr_animal_rat"),
+        (prop_instance_get_position, pos5, ":instance_no"),
+        (get_distance_between_positions, ":dist", pos4, pos5),
+        (le, ":dist", 900),
+        (scene_prop_get_slot, ":num_agents", ":instance_no", slot_prop_agent_2), #number of spawned animals
+        
+        (store_random_in_range, reg78, 0, 100),
+        (this_or_next|le, reg78, 10),
+        (eq, ":num_agents", 0),
+        (lt, ":num_agents", 4),
+            
+        (set_spawn_position, pos5),
+        (scene_prop_get_slot, ":animal", ":instance_no",  slot_prop_playing_sound),
+        (spawn_horse,":animal", 0),
+        (agent_set_stand_animation, reg0, "anim_horse_stand"),
+        (val_add, ":num_agents", 1),
+        (scene_prop_set_slot, ":instance_no", slot_prop_agent_2, ":num_agents"), 
+        (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+        (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+        (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
+        (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+        (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
+        (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
+        (agent_set_slot, reg0, slot_agent_mount_dead, 40), #move chance per 1 second
+        (agent_set_speed_modifier, reg0, 1),
+        (agent_set_speed_limit, reg0, 1),
+        (store_random_in_range, ":direction", 0, 360),
+        (position_rotate_z, pos5, ":direction"),
+        (position_move_y, pos5, 800),
+        (agent_start_running_away, reg0, pos5),
     (try_end),
  
     #chicken sounds

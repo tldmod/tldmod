@@ -3562,18 +3562,11 @@ scene_props = [
     ] or []) + [          
     ])]),
     
-("animal_spider",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[(store_trigger_param_1, ":instance_no"),
-    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-    ] + (is_a_wb_sceneprop==1 and [ 
-	(spawn_horse,"itm_animal_spider", 0),
-    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
-    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
-    (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
-    (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
-    ] or []) + [          
+("animal_spider",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+    ] + (is_a_wb_sceneprop==1 and [
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_playing_sound, "itm_animal_spider"),
+    ] or []) + [
     ])]),
 
 ("animal_werewolf",sokf_invisible,"mm_warg_a","0", [(ti_on_init_scene_prop,[
@@ -5246,7 +5239,7 @@ scene_props = [
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 
     ] + (is_a_wb_sceneprop==1 and [ 													 
-	(spawn_horse,"itm_animal_camel", imod_rotten),
+	(spawn_horse,"itm_animal_camel", 0),
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
@@ -5258,20 +5251,20 @@ scene_props = [
     ])]),
 
 ("animal_rat",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
-    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
-
-    ] + (is_a_wb_sceneprop==1 and [ 													 
-	(spawn_horse,"itm_animal_rat", imod_rotten),
-    #(agent_set_stand_animation, reg0, "anim_horse_stand"),    
-    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
-    (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
-    (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
-    (agent_set_slot, reg0, slot_agent_mount_dead, 80), #move chance per 1 second
+    ] + (is_a_wb_sceneprop==1 and [
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_playing_sound, itm_animal_rat),
     ] or []) + [
     ])]),
+
+# ("animal_rat_static",sokf_moveable|sokf_dynamic_physics,"szczur_animowany_anim_horse_rescale",0, [
+    # # ] + (is_a_wb_sceneprop==1 and [   
+   # # (ti_on_scene_prop_init,
+    # # [(store_trigger_param_1, ":instance_no"),
+    # # (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 29, 500),
+    # # ])
+    # # ] or []) + [    
+    # ]),
             
 ] + (is_a_wb_sceneprop==1 and [ 
   ("fellbeast", sokf_moveable|sokf_dynamic_physics, "Fellbeast_Flap_1", "bo_Fellbeast_Flap_1", [
