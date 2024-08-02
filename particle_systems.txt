@@ -448,7 +448,7 @@ psys_water_foam 9218 prt_foam_a_TLD  1 1.7 1 0 0 0
 0 4   1 4.5
 1 1 0   0 1 0   0 
 0 0.5 
-psys_water_run 8194 prtcl_water_run  12 0.7 -0.1 0 1 0 
+psys_water_run 8194 prt_mesh_water_wave_1  12 0.7 -0.1 0 1 0 
 0.3 0.5   1 0.1
 1 1   1 1
 1 1   1 1

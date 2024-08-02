@@ -1024,13 +1024,13 @@ fauna_kinds = [
    
  ('CWE_ivy',
   0,
-  [['cwe_ivy_1_new', '0'],
-  ['cwe_ivy_2_new', '0'],
+  [['cwe_ivy_1_recolor', '0'],
+  ['cwe_ivy_2_recolor', '0'],
    ]), 
 
  ('CWE_ivy_wall',
   0,
-  [['cwe_ivy_wall_new', '0'],
+  [['cwe_ivy_wall_recolor', '0'],
    ]), 
 
  ('Jaakko_new_tree_a',

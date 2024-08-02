@@ -935,7 +935,7 @@ particle_systems = [
      0.5                        #rotation damping
     ),
     
-    ("water_run", psf_randomize_size|psf_always_emit , "prtcl_water_run",
+    ("water_run", psf_randomize_size|psf_always_emit , "prt_mesh_water_wave_1",
      12, 0.7, -0.1, 0.0, 1.0, 0.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
      (0.3, 0.5), (1, 0.1),        #alpha keys
      (1.0, 1.0), (1, 1.0),      #red keys

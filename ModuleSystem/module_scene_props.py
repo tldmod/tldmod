@@ -1354,8 +1354,8 @@ scene_props = [
   ("gon_upper_apt_E",0,"gon_upper_apt_a","0", []),
 
 ##GONDOR RUINS###
-("gon_ruined_wall",0,"ruined_wall","bo_ruined_wall", []),
-  ("gon_ruined_wall_E",0,"ruined_wall","0", []),
+("gon_ruined_wall_a",0,"ruined_wall","bo_ruined_wall", []),
+("gon_ruined_castle_b",0,"gon_destroy_castle_b","bo_destroy_castle_b", []),
 ("gon_ruined_arch",0,"ruined_arch","bo_ruined_arch", []),
   ("gon_ruined_arch_E",0,"ruined_arch","0", []),
 ("gon_ruined_stone",0,"ruined_stone","bo_ruined_stone", []),
@@ -1375,19 +1375,19 @@ scene_props = [
 ("gon_ruined_pillar",0,"ruined_pillar","bo_ruined_pillar", []),
   ("gon_ruined_pillar_E",0,"ruined_pillar","0", []),
 ("gon_ruined_arches",0,"ruined_arches","bo_ruined_arches", []),
-  ("gon_ruined_arches_E",0,"ruined_arches","0", []),
+("gon_ruined_castle_d",0,"gon_destroy_castle_d","bo_destroy_castle_d", []),
 ("gon_ruined_house_a",0,"ruined_house_a","bo_ruined_house_a", []),
-  ("gon_ruined_house_a_E",0,"ruined_house_a","0", []),
+("gon_ruined_house_a_E",0,"gon_destroy_house_a","bo_destroy_house_a", []),
 ("gon_ruined_house_b",0,"ruined_house_b","bo_ruined_house_b", []),
-  ("gon_ruined_house_b_E",0,"ruined_house_b","0", []),
+("gon_ruined_house_b_E",0,"gon_destroy_house_b","bo_destroy_house_b", []),
 ("gon_ruined_house_c",0,"ruined_house_c","bo_ruined_house_c", []),
-  ("gon_ruined_house_c_E",0,"ruined_house_c","0", []),
+("gon_ruined_house_c_E",0,"ruined_house_c","0", []),
 ("gon_ruined_battlement",0,"ruined_battlement","bo_ruined_battlement", []),
-  ("gon_ruined_battlement_E",0,"ruined_battlement","0", []),
+("gon_ruined_castle_battlement",0,"gon_castle_e_battlement_a_destroyed","bo_castle_e_battlement_a_destroyed", []),
 ("gon_ruined_tower",0,"ruined_tower","bo_ruined_tower", []),
-  ("gon_ruined_tower_E",0,"ruined_tower","0", []),
+("gon_ruined_castle_c",0,"gon_destroy_castle_c","bo_destroy_castle_c", []),
 ("gon_ruined_wallgate",0,"ruined_wallgate","bo_ruined_wallgate", []),
-  ("gon_ruined_wallgate_E",0,"ruined_wallgate","0", []),
+("gon_ruined_castle_a",0,"gon_destroy_castle_a","bo_destroy_castle_a", []),
 ("gon_ruined_bridge_a",0,"ruined_bridge_a","bo_ruined_bridge_a", []),
   ("gon_ruined_bridge_a_E",0,"ruined_bridge_a","0", []),
 ("gon_ruined_bridge_b",0,"ruined_bridge_b","bo_ruined_bridge_b", []),
@@ -1796,9 +1796,9 @@ scene_props = [
   #(entry_point_get_position,pos1,39),
   #(agent_set_position, "$gate_aggravator_agent", pos1), # place gate aggravator agent to proper position
     ]),
-], 3000),
+], 4000),
 
-("HD_gate_destructible",sokf_destructible,"HD_gate_closed_repositioned","bo_HD_gate_closed_repositioned",   [ 
+("HD_gate_destructible",sokf_destructible|sokf_moveable,"HD_gate_closed_repositioned","bo_HD_gate_closed_repositioned",   [ 
    (ti_on_scene_prop_init, [
    (store_trigger_param_1, ":gate_no"),
    
@@ -3010,7 +3010,7 @@ scene_props = [
   #(entry_point_get_position,pos1,39),
   #(agent_set_position, "$gate_aggravator_agent", pos1), # place gate aggravator agent to proper position
     ]),
-], 1500), 
+], 2500), 
 
 ("rope_bridge",0,"rope_bridge_new","bo_rope_bridge_new", []),
 ("arena_awning",0,"arena_block_j_awning","bo_arena_block_j_awning", []),
@@ -3785,7 +3785,7 @@ scene_props = [
 ("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),
 
 # retreat gates open at mission start and close when the assigned rally point in var_id_2 is lost. Place closed.
-("gate_destructible_retreat",sokf_destructible,"gate_tld_displaced","bo_gate_tld_displaced",   [ 
+("gate_destructible_retreat",sokf_destructible|sokf_moveable,"gate_tld_displaced","bo_gate_tld_displaced",   [ 
    
    (ti_on_scene_prop_destroy, [
     (store_trigger_param_1, ":gate_no"),
@@ -3851,7 +3851,7 @@ scene_props = [
       (particle_system_burst, "psys_dummy_smoke", pos1, 3),
       (particle_system_burst, "psys_dummy_straw", pos1, 10),
     ]),
-], 1500),
+], 2500),
 
 ("spike_group_a_destructible",sokf_destructible,"spike_group_a","bo_spike_group_a_big",   [ 
    (ti_on_scene_prop_init, [
