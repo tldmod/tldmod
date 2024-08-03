@@ -238,8 +238,8 @@ party_templates = [
 
 ("gondor_reinf_d"    ,"_",0,0,fac_commoners,0,[(trp_c6_gon_tower_knight,1,2), (trp_a6_gon_tower_archer,2,4), (trp_i6_gon_tower_swordsman,1,2), (trp_i6_gon_tower_spearman,1,2),]), #MT garrison only
 
-("gondor_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_i2_gon_watchman,3,6),(trp_i1_gon_levy,1,3),(trp_i3_gon_footman,1,2)]), #InVain: less commoners, less archers
-("gondor_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_a3_gon_bowman,3,5),(trp_i3_gon_footman,2,4),(trp_i2_gon_watchman,2,4),(trp_c1_gon_nobleman,1,2),(trp_a4_gon_archer, 1,2)]), #T1 cav because it has a separate tree, InVain: More archers+ t4 archers (due to changed garrison reinforcements)
+("gondor_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_i2_gon_watchman,2,4),(trp_i1_gon_levy,1,3),(trp_i3_gon_footman,2,4)]), #InVain: less commoners, less archers
+("gondor_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_a3_gon_bowman,2,4),(trp_i3_gon_footman,3,5),(trp_i2_gon_watchman,1,3),(trp_c1_gon_nobleman,1,2),(trp_a4_gon_archer, 1,2)]), #T1 cav because it has a separate tree, InVain: More archers+ t4 archers (due to changed garrison reinforcements)
 ("gondor_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_i4_gon_spearman,2,3),(trp_i4_gon_swordsman,2,3),(trp_c3_gon_vet_squire,1,2),]), #InVain: Removed archers, hosts are more infantry-heavy
 ("pelargir_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i1_pel_watchman,6,12),]), #no T1
 ("pelargir_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a2_pel_marine,1,2),(trp_i2_pel_infantry,1,2),(trp_i1_pel_watchman,3,6),]), #no T3

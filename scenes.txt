@@ -184,10 +184,10 @@ scn_henneth_annun_center henneth_annun_center 256 none none 0 0 100 100 -100 0x0
   0 
   0 
  outer_mountains2south 
-scn_cair_andros_center cair_andros_center 256 none none 0 0 100 100 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
+scn_cair_andros_center cair_andros_center 256 none none 0 0 100 100 -100 0x0000000330000500000d23480000059a00007fc80000617e 
   0 
   0 
- outer_terrain_osgiliath_9 
+ New_outer_terrain_osgiliath_9 
 scn_edoras_center edoras_center 256 none none 0 0 200 200 -100 0x00000003200005000009c5a200000f5200005bd50000739d 
   0 
   0 
@@ -656,10 +656,10 @@ scn_fangorn fangorn 4352 none none 0 0 100 100 -100 0x00000000bc62c90d0002308c00
   0 
   0 
  outer_terrain_forest 
-scn_cair_andros_siege cair_andros_siege 256 none none 0 0 100 100 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
+scn_cair_andros_siege cair_andros_siege 256 none none 0 0 100 100 -100 0x0000000330000500000d23480000059a00007fc80000617e 
   0 
   0 
- outer_terrain_osgiliath_9 
+ New_outer_terrain_osgiliath_9 
 scn_dale_siege dale_siege 256 none none 0 0 100 100 -100 0x00000003200005000007a9ea000006810000219700002120 
   0 
   0 

@@ -133,8 +133,8 @@ pt_mordor_p_train Mordor_Prisoner_Train 562949957615745 0 6 14 360 6 8 0 368 6 1
 pt_isengard_p_train Isengard_Prisoner_Train 562949957615744 0 7 14 321 4 6 0 316 10 14 0 315 24 36 0 314 40 60 0 -1 -1 
 pt_kingdom_hero_party War_Party 4259913 0 1 238 -1 -1 -1 -1 -1 -1 
 pt_gondor_reinf_d _ 0 0 1 0 115 1 2 0 119 2 4 0 109 1 2 0 106 1 2 0 -1 -1 
-pt_gondor_reinf_a _ 0 0 1 0 102 3 6 0 101 1 3 0 103 1 2 0 -1 -1 -1 
-pt_gondor_reinf_b _ 0 0 1 0 116 3 5 0 103 2 4 0 102 2 4 0 110 1 2 0 117 1 2 0 -1 
+pt_gondor_reinf_a _ 0 0 1 0 102 2 4 0 101 1 3 0 103 2 4 0 -1 -1 -1 
+pt_gondor_reinf_b _ 0 0 1 0 116 2 4 0 103 3 5 0 102 1 3 0 110 1 2 0 117 1 2 0 -1 
 pt_gondor_reinf_c _ 0 0 1 0 104 2 3 0 107 2 3 0 112 1 2 0 -1 -1 -1 
 pt_pelargir_reinf_a _ 0 0 1 0 131 6 12 0 -1 -1 -1 -1 -1 
 pt_pelargir_reinf_b _ 0 0 1 0 132 1 2 0 134 1 2 0 131 3 6 0 -1 -1 -1 

@@ -1824,6 +1824,8 @@ scripts = [
 	(party_set_slot, "p_town_eastfold", slot_party_subfaction      , subfac_eastfold),
 	(party_set_slot, "p_town_westfold", slot_party_subfaction      , subfac_westfold),
 
+    (party_set_slot, "p_town_cair_andros", slot_town_reinforcements_a, "pt_ithilien_reinf_a"), #cair andros exception
+    (party_set_slot, "p_town_cair_andros", slot_town_archer_troop   , "trp_a4_ithilien_ranger"),
 	(party_set_slot, "p_town_minas_tirith", slot_town_castle_guard_troop, "trp_steward_guard"), # minas tirith exception
 	(party_set_slot, "p_town_woodsmen_village", slot_town_castle_guard_troop, "trp_i5_woodmen_night_guard"), # woodmen exception
 
@@ -20654,7 +20656,7 @@ scripts = [
             (assign, ":track", "track_TLD_Henneth_Annun"),
           (else_try),
           	(eq, "$g_encountered_party", "p_town_cair_andros"),
-            (assign, ":track", "track_infiltration_evil"),
+            (assign, ":track", "track_TLD_Henneth_Annun"),
           (else_try),
             (assign, ":track", "track_TLD_Gondor_Cities"),
           (try_end),
