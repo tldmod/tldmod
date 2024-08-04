@@ -2231,13 +2231,13 @@ spr_gon_ruined_castle_b 0 0 gon_destroy_castle_b bo_destroy_castle_b 0
 spr_gon_ruined_arch 0 0 ruined_arch bo_ruined_arch 0
 
 
-spr_gon_ruined_arch_E 0 0 ruined_arch 0 0
+spr_gon_ruined_small_wall_c 0 0 gon_small_wall_c bo_small_wall_c 0
 
 
 spr_gon_ruined_stone 0 0 ruined_stone bo_ruined_stone 0
 
 
-spr_gon_ruined_stone_E 0 0 ruined_stone 0 0
+spr_gon_ruined_stone_heap 0 0 gon_stone_heap bo_stone_heap 0
 
 
 spr_gon_ruined_debris_a 0 0 ruined_debris_a bo_ruined_debris_a 0
@@ -2261,13 +2261,13 @@ spr_gon_ruined_debris_c_E 0 0 ruined_debris_c 0 0
 spr_gon_ruined_door 0 0 ruined_door bo_ruined_door 0
 
 
-spr_gon_ruined_door_E 0 0 ruined_door 0 0
+spr_gon_ruined_stone_step_b 0 0 gon_stone_step_b 0 0
 
 
 spr_gon_ruined_stairs_a 0 0 ruined_stairs_a bo_ruined_stairs_a 0
 
 
-spr_gon_ruined_stairs_a_E 0 0 ruined_stairs_a 0 0
+spr_gon_ruined_small_wall_destroy 0 0 gon_small_wall_c_destroy bo_small_wall_c_destroy 0
 
 
 spr_gon_ruined_stairs_b 0 0 ruined_stairs_b bo_ruined_stairs_b 0
@@ -6377,7 +6377,7 @@ spr_fallen_king_base 0 0 FK_Base_combined bo_apple_basket 0
 spr_fallen_king_head 0 0 FK_Head bo_apple_basket 0
 
 
-spr_fallen_king_evil_head 0 0 EyeHead_Final_2k_tris bo_apple_basket 0
+spr_fallen_king_evil_head 0 0 FK_evil_head bo_apple_basket 0
 
 
 spr_save_compartibility4 0 0 0 0 0
