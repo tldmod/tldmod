@@ -109,14 +109,14 @@ quests = [
   "{s9} asked you to find the lost spears dwarves once made for king Bladorthin. You have to ask the dwarves permission to search for the spears in the depths of the Lonely Mountain."
   ),
 
- ("defend_village", "Defend Village", 0,
+ ("defend_village", "Defend Village", qf_random_quest,
   "{!}None"
 ),
-  ("raid_village", "Raid Village", 0,
+  ("raid_village", "Raid Village", qf_random_quest,
   "{!}None"
 ),
 
-  ("destroy_scout_camp", "Destroy Scout Camp", 0,
+  ("destroy_scout_camp", "Destroy Scout Camp", qf_random_quest,
   "{!}None"
 ),
   
