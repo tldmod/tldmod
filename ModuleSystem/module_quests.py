@@ -267,94 +267,94 @@ quests = [
 ##Placeholder Quests Start
 
 # Defend Refugees
-("blank_quest_01", "Defend Refugees", 0,
+("blank_quest_01", "Defend Refugees", qf_random_quest,
   "{!}None"
 ),
 
 # Hunt Down Refugees
-("blank_quest_02", "Hunt Down Refugees", 0,
+("blank_quest_02", "Hunt Down Refugees", qf_random_quest,
   "{!}None"
 ),
 
-("blank_quest_03", "Sea Battle", 0,
+("blank_quest_03", "Sea Battle", qf_random_quest,
   "{!}None"
 ),
 
 # Kill Quest Targeted
-("blank_quest_04", "Kill {s35} {s6} {s7}", 0,
+("blank_quest_04", "Kill {s35} {s6} {s7}", qf_random_quest,
   "{!}Placeholder"
 ),
 
 # Kill Quest Faction
-("blank_quest_05", "Kill {s35} {s36} troops.", 0,
+("blank_quest_05", "Kill {s35} {s36} troops.", qf_random_quest,
   "{!}Placeholder"
 ),
 
 # Defeat Target Lord
-("blank_quest_06", "Defeat {s35} in battle.", 0,
+("blank_quest_06", "Defeat {s35} in battle.", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_07", "Placeholder", 0,
+("blank_quest_07", "Placeholder", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_08", "Placeholder", 0,
+("blank_quest_08", "Placeholder", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_09", "Placeholder", 0,
+("blank_quest_09", "Placeholder", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_10", "Placeholder", 0,
+("blank_quest_10", "Placeholder", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_11", "Placeholder", 0,
+("blank_quest_11", "Placeholder", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_12", "Placeholder", 0,
+("blank_quest_12", "Placeholder", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_13", "Placeholder", 0,
+("blank_quest_13", "Placeholder", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_14", "Placeholder", 0,
+("blank_quest_14", "Placeholder", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_15", "Placeholder", 0,
+("blank_quest_15", "Placeholder", qf_random_quest,
   "{!}Placeholder"
 ),
 
 # Lets put mayor quests here
 
 
-("blank_quest_16", "Reinforce Center", 0,
+("blank_quest_16", "Reinforce Center", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_17", "Slay {reg22} {s6} in battles", 0,
+("blank_quest_17", "Slay {reg22} {s6} in battles", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_18", "Placeholder", 0,
+("blank_quest_18", "Placeholder", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_19", "Placeholder", 0,
+("blank_quest_19", "Placeholder", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_20", "Placeholder", 0,
+("blank_quest_20", "Placeholder", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_21", "Placeholder", 0,
+("blank_quest_21", "Placeholder", qf_random_quest,
   "{!}Placeholder"
 ),
 
@@ -430,10 +430,10 @@ quests = [
   # ),
 # ### TLD end traits
 
-("guardian_party_quest", "Isengard Unleashed", 0,
+("guardian_party_quest", "Isengard Unleashed", qf_random_quest,
   "{!}Placeholder"
 ),
 
-  ("quests_end", "Quests End", 0, "."),
+  ("quests_end", "Quests End", qf_random_quest, "."),
 ]
 

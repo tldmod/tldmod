@@ -3065,8 +3065,9 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 #### Kham Defend / Raid Village Quests Completion Start ####
 
 [anyone,"lord_start", [
-    (check_quest_active, "qst_defend_village"),
-    (check_quest_succeeded, "qst_defend_village"),
+    (neg|check_quest_finished, "qst_defend_village"), # swy: (check_quest_finished) is needed for one-off permanent quests without the qf_random_quest that stay active after finishing, this quest was previously missing the flag by mistake, this avoids entering the condition for existing saves
+    (check_quest_active,       "qst_defend_village"),
+    (check_quest_succeeded,    "qst_defend_village"),
     (quest_slot_eq, "qst_defend_village", slot_quest_giver_troop,"$g_talk_troop"),
     (quest_get_slot, ":quest_target_center", "qst_defend_village", slot_quest_object_center),
     (str_store_party_name,12,":quest_target_center")],
@@ -3075,8 +3076,9 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     ]],
 
 [anyone,"lord_start", [
-    (check_quest_active, "qst_defend_village"),
-    (check_quest_failed, "qst_defend_village"),
+    (neg|check_quest_finished, "qst_defend_village"), # swy: (check_quest_finished) is needed for one-off permanent quests without the qf_random_quest that stay active after finishing, this quest was previously missing the flag by mistake, this avoids entering the condition for existing saves
+    (check_quest_active,       "qst_defend_village"),
+    (check_quest_failed,       "qst_defend_village"),
     (quest_slot_eq, "qst_defend_village", slot_quest_giver_troop,"$g_talk_troop"),
     (quest_get_slot, ":quest_target_center", "qst_defend_village", slot_quest_object_center),
     (str_store_party_name,12,":quest_target_center")],
