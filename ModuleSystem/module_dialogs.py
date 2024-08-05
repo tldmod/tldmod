@@ -490,12 +490,14 @@ dialogs = [
 ##Kham - Hobbit Deliver Start
 
 [anyone|plyr, "hobbit_merry_talk_met", [
+  (neg|check_quest_finished, "qst_deliver_message_hobbit"), # swy: (check_quest_finished) is needed for one-off permanent quests without the qf_random_quest that stay active after finishing
   (check_quest_active, "qst_deliver_message_hobbit"),
   (quest_slot_eq, "qst_deliver_message_hobbit", slot_quest_target_troop, "trp_merry_notmet"),], 
     "Hello, messer Merry. I have a message here from your cousin, Pippin, in Minas Tirith.","hobbit_deliver_message",[]
 ],
 
 [anyone|plyr, "hobbit_pippin_talk_met", [
+  (neg|check_quest_finished, "qst_deliver_message_hobbit"), # swy: (check_quest_finished) is needed for one-off permanent quests without the qf_random_quest that stay active after finishing
   (check_quest_active, "qst_deliver_message_hobbit"),
   (quest_slot_eq, "qst_deliver_message_hobbit", slot_quest_target_troop, "trp_pippin_notmet"),], 
     "Hello, messer Pippin. I have a message here from your cousin, Merry, in Edoras.","hobbit_deliver_message",[]
@@ -3093,8 +3095,9 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 
 [anyone,"lord_start", [
-    (check_quest_active, "qst_raid_village"),    
-    (check_quest_succeeded, "qst_raid_village"),
+    (neg|check_quest_finished, "qst_raid_village"), # swy: (check_quest_finished) is needed for one-off permanent quests without the qf_random_quest that stay active after finishing, this quest was previously missing the flag by mistake, this avoids entering the condition for existing saves
+    (check_quest_active,       "qst_raid_village"),    
+    (check_quest_succeeded,    "qst_raid_village"),
     (quest_get_slot, ":giver_troop", "qst_raid_village", slot_quest_giver_troop),
     (eq, "$g_talk_troop", ":giver_troop"),
     (quest_get_slot, ":quest_target_center", "qst_raid_village", slot_quest_object_center),
@@ -3104,8 +3107,9 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     ]],
 
 [anyone,"lord_start", [
-    (check_quest_active, "qst_raid_village"),
-    (check_quest_failed, "qst_raid_village"),
+    (neg|check_quest_finished, "qst_raid_village"), # swy: (check_quest_finished) is needed for one-off permanent quests without the qf_random_quest that stay active after finishing, this quest was previously missing the flag by mistake, this avoids entering the condition for existing saves
+    (check_quest_active,       "qst_raid_village"),
+    (check_quest_failed,       "qst_raid_village"),
     (quest_get_slot, ":giver_troop", "qst_raid_village", slot_quest_giver_troop),
     (eq, "$g_talk_troop", ":giver_troop"),
     (quest_get_slot, ":quest_target_center", "qst_raid_village", slot_quest_object_center),
@@ -4964,7 +4968,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone|plyr,"lord_talk",[    ### Ring Hunter Quest Completion - Party Defeated.
  (this_or_next|eq, "$g_talk_troop","trp_dwarf_lord"),
  (eq, "$g_talk_troop","trp_imladris_lord"), 
- (check_quest_active,"qst_ring_hunters2"),
+ (neg|check_quest_finished, "qst_ring_hunters2"),  # swy: (check_quest_finished) is needed for one-off permanent quests without the qf_random_quest that stay active after finishing
+ (check_quest_active,       "qst_ring_hunters2"),
  (quest_slot_eq, "qst_ring_hunters2", slot_quest_current_state, 10)],
   "My lord, I come bearing ill news... Though I have defeated the Ring Hunters terrorizing the villages, their leaders were not there. They may have found what they were looking for", "ring_hunter_party_defeated",
  []],
@@ -5000,7 +5005,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone|plyr,"lord_talk",[    ### Ring Hunter Quest Completion - Lair Defeated.
  (this_or_next|eq, "$g_talk_troop","trp_dwarf_lord"),
  (eq, "$g_talk_troop","trp_imladris_lord"), 
- (check_quest_active,"qst_ring_hunters2"),
+ (neg|check_quest_finished, "qst_ring_hunters2"), # swy: (check_quest_finished) is needed for one-off permanent quests without the qf_random_quest that stay active after finishing
+ (check_quest_active,       "qst_ring_hunters2"),
  (quest_slot_eq, "qst_ring_hunters2", slot_quest_current_state, 20)],
   "My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able to defeat their leaders in their lair. They had this in their possession.", "ring_hunter_lair_defeated_elf",
  []],
@@ -5043,7 +5049,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 ##Ring Hunter Party Combat
 [anyone,"start",
-  [(check_quest_active, "qst_ring_hunters"),
+  [(neg|check_quest_finished,"qst_ring_hunters"), # swy: (check_quest_finished) is needed for one-off permanent quests without the qf_random_quest that stay active after finishing
+   (check_quest_active,      "qst_ring_hunters"),
    (eq,"$g_encountered_party","$qst_ring_hunter_party"),
   ],
     "Look here, men. More lambs to the slaughter.","ring_hunters_party_attack",

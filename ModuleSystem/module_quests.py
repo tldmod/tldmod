@@ -251,9 +251,9 @@ quests = [
 
   ####Ring Hunters ######
 
- ("ring_hunters", "Ring Hunters", 0,
-  "{!}None"
-),
+ ("ring_hunters", "Ring Hunters", 0, # swy: careful about the lack of qf_random_quest for these one-off/permanent quests, not having this flag keeps them
+  "{!}None"                          #      active after completion, so some checks and guards may not work as intended; use (neq|check_quest_finished)
+),                                   #      instead of just a plain (check_quest_active) that would always return true for these.
 
 ("ring_hunters2", "Ring Hunters - Completed", 0,
   "{!}None"
