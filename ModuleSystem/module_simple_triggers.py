@@ -3917,11 +3917,16 @@ simple_triggers = [
         (try_begin), #Isengard Last Stand
             (eq, "$lore_mode", 1),
             (eq, ":faction_no", fac_isengard),
-            (le, ":fac_strength", fac_str_guardian),
+            (store_sub, ":capital_siegable_str", "$g_fac_str_siegable", fac_str_weak-fac_str_very_weak),
+            (le, ":fac_strength", ":capital_siegable_str"),
+            (party_slot_eq, "p_town_isengard", slot_center_destroyed, 0), #double check
+            (party_slot_eq, "p_town_isengard", slot_center_is_besieged_by, -1), #triple check
             (neg|check_quest_active, qst_guardian_party_quest),
             (neg|check_quest_finished, qst_guardian_party_quest),
             (eq, ":player_side", faction_side_good),
-            (faction_slot_ge, fac_rohan, fac_str_ok), #Rohan still okay?
+            (faction_slot_ge, fac_rohan, fac_str_guardian), #Rohan still okay?
+            (party_slot_eq, "p_town_edoras", slot_center_destroyed, 0), #double check            
+            (party_slot_eq, "p_town_edoras", slot_center_is_besieged_by, -1), #triple check
             (call_script, "script_find_theater", "p_main_party"),
             (eq, reg0, theater_SW), #player in Rohan?
             (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_rohan_quest_start),
