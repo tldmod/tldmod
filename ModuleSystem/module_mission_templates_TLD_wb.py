@@ -4599,28 +4599,28 @@ tld_animated_town_agents = [
         (scene_prop_get_instance, ":instance_no", "spr_troop_civ_cheer", ":count"),
         (prop_instance_get_position, pos2, ":instance_no"),
         (scene_prop_get_slot, ":agent", ":instance_no", slot_prop_agent_1),
-        (prop_instance_get_position, pos3,":instance_no"),
-        (get_distance_between_positions, ":distance", pos3, pos4),
-        (is_between, ":distance", 350, 3000), #only if player isn't too close, but also not too far either (avoid too many sounds)
+        # (prop_instance_get_position, pos3,":instance_no"),
+        # (get_distance_between_positions, ":distance", pos3, pos4),
+        # (is_between, ":distance", 350, 3000), #only if player isn't too close, but also not too far either (avoid too many sounds)
         (agent_set_scripted_destination, ":agent", pos2),
         (store_random_in_range, ":chance", 0, 100),
         (le, ":chance", 25),
         (agent_set_animation, ":agent", "anim_cheer"),
-        (le, ":chance", 4),
-        (agent_get_troop_id,":troop", ":agent"),
-        (troop_get_type,reg1,":troop"),
-        (try_begin),
-            (is_between, reg1, tf_urukhai, tf_orc_end),
-            (agent_play_sound, ":agent", "snd_meeting_uruk"),
-        (else_try),
-            (eq, reg1, tf_orc),
-            (agent_play_sound, ":agent", "snd_meeting_orc"),
-        (else_try),
-            (is_between, reg1, tf_elf_begin, tf_elf_end),
-            (agent_play_sound, ":agent", "snd_meeting_elf"),
-        (else_try),				
-            (agent_play_sound, ":agent", "snd_meeting_man"),
-        (try_end),
+        # (le, ":chance", 4),
+        # (agent_get_troop_id,":troop", ":agent"),
+        # (troop_get_type,reg1,":troop"),
+        # (try_begin),
+            # (is_between, reg1, tf_urukhai, tf_orc_end),
+            # (agent_play_sound, ":agent", "snd_meeting_uruk"),
+        # (else_try),
+            # (eq, reg1, tf_orc),
+            # (agent_play_sound, ":agent", "snd_meeting_orc"),
+        # (else_try),
+            # (is_between, reg1, tf_elf_begin, tf_elf_end),
+            # (agent_play_sound, ":agent", "snd_meeting_elf"),
+        # (else_try),				
+            # (agent_play_sound, ":agent", "snd_meeting_man"),
+        # (try_end),
     (try_end),
 
     #worker stand
@@ -4714,6 +4714,8 @@ tld_animated_town_agents = [
         (item_get_horse_scale, ":scale", ":item_no"),        
 
         (agent_get_slot, ":agent_prop", ":agent", slot_agent_assigned_prop),
+        (prop_instance_get_variation_id, ":var", ":agent_prop"),
+        (eq, ":var", 0), #so we can disable moving around if necessary
         (prop_instance_get_position, pos3, ":agent_prop"), #base position
         (agent_get_position, pos2, ":agent"),
         
@@ -4722,7 +4724,7 @@ tld_animated_town_agents = [
         (agent_get_slot, ":sound_1", ":agent", slot_agent_last_hp), #sound 1
         (agent_get_slot, ":sound_2", ":agent",  slot_agent_mount_side), #sound 2
         (agent_get_slot, ":move_chance", ":agent",  slot_agent_mount_dead), #chance to move per second
-        (val_max, ":move_chance", 10),
+        (val_max, ":move_chance", 5),
         
         (store_random_in_range, ":chance", 0, 100),
         (assign, ":sound", 0),

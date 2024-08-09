@@ -972,3 +972,4 @@ itm_animal_camel = 970
 itm_animal_boar = 971
 itm_animal_boar_big = 972
 itm_animal_rat = 973
+itm_animal_warg = 974

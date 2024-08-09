@@ -1579,6 +1579,7 @@ items =[
 ["animal_boar","boar",    [("boar",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(85),imodbits_none,[]],
 ["animal_boar_big","boar",[("boar_black",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(105),imodbits_none,[]],
 ["animal_rat","rat",[("szczur_animowany_rig_new_relocate",0)], itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(3)|horse_maneuver(75)|horse_scale(7)|difficulty(10),imodbits_none,[]],
+["animal_warg","Warg",[("warg_1B",imodbit_cracked),("animal_warg_1C",imodbit_rusty),("animal_warg_1D",imodbit_bent)],itp_type_animal|itp_disable_agent_sounds,0,600,hit_points(50)|horse_speed(15)|horse_maneuver(50)|horse_scale(95),imodbits_none,[]],
 
 ] or []) + [ 
 

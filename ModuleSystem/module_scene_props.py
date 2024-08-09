@@ -353,6 +353,7 @@ scene_props = [
 ("archery_butt_a",0,"archery_butt","bo_archery_butt", [
    (ti_on_scene_prop_hit,
     [   (store_trigger_param_1, ":instance_no"),
+        (ge, "$tutorial_1_state", 1), #only in tutorial mission
         (prop_instance_get_position, pos2, ":instance_no"),
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos3, ":player_agent"),
@@ -379,6 +380,7 @@ scene_props = [
 ("archery_target_with_hit_a",0,"arena_archery_target_a","bo_arena_archery_target_a", [
    (ti_on_scene_prop_hit,
     [   (store_trigger_param_1, ":instance_no"),
+        (ge, "$tutorial_1_state", 1), #only in tutorial mission
         (prop_instance_get_position, pos2, ":instance_no"),
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, pos3, ":player_agent"),
@@ -406,6 +408,7 @@ scene_props = [
 ("dummy_a",sokf_destructible|sokf_moveable,"arena_archery_target_b","bo_arena_archery_target_b",   [
    (ti_on_scene_prop_destroy,
     [   (store_trigger_param_1, ":instance_no"),
+        (ge, "$tutorial_1_state", 1), #only in tutorial mission
         (prop_instance_get_starting_position, pos1, ":instance_no"),
         (get_player_agent_no, ":player_agent"),
         (agent_get_position, 2, ":player_agent"),
@@ -1025,7 +1028,7 @@ scene_props = [
 ("village_hut_a",0,"village_hut_a","bo_village_hut_a", []),
   ("village_hut_a_E",0,"village_hut_a","0", []),
 ("crude_fence",0,"fence","bo_fence", []),
-  ("crude_fence_E",0,"fence","0", []),
+("crude_fence_curved",0,"fence_curved","bo_fence_curved", []),
 ("crude_fence_small",0,"crude_fence_small","bo_crude_fence_small", []),
   ("crude_fence_small_E",0,"crude_fence_small","0", []),
 ("crude_fence_small_b",0,"crude_fence_small_b","bo_crude_fence_small_b", []),
@@ -3464,6 +3467,7 @@ scene_props = [
     (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, snd_goat), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, snd_goat), #sound 2
+    (agent_set_slot, reg0, slot_agent_mount_dead, 10), #chance to move per second, minimum 5%
     ] or []) + [          
     ])]),
 
@@ -3537,7 +3541,7 @@ scene_props = [
 ("animal_wolf",sokf_invisible,"wolf","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     ] + (is_a_wb_sceneprop==1 and [ 
-	(spawn_horse,"itm_animal_dog", 0),
+	(spawn_horse,"itm_animal_wolf", 0),
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
@@ -3545,6 +3549,7 @@ scene_props = [
     (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, "snd_warg_lone_woof"), #sound 2
+    (agent_set_slot, reg0, slot_agent_mount_dead, 15), #chance to move per second, minimum 5%
     ] or []) + [          
     ])]),
 
@@ -3559,6 +3564,7 @@ scene_props = [
     (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, snd_bear_strike), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, snd_bear_strike), #sound 2
+    (agent_set_slot, reg0, slot_agent_mount_dead, 15), #chance to move per second, minimum 5%
     ] or []) + [          
     ])]),
     
@@ -3580,6 +3586,7 @@ scene_props = [
     (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_bear_slam"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, "snd_warg_lone_woof"), #sound 2
+    (agent_set_slot, reg0, slot_agent_mount_dead, 15), #chance to move per second, minimum 5%
     ] or []) + [          
     ])]),
  
@@ -3611,6 +3618,7 @@ scene_props = [
     (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, snd_horse_breath), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, snd_horse_low_whinny1), #sound 2
+    (agent_set_slot, reg0, slot_agent_mount_dead, 5), #chance to move per second, minimum 5%
     ] or []) + [          
     ])]),
 
@@ -5097,7 +5105,10 @@ scene_props = [
 
 ("ai_melee_on_off_var1",sokf_invisible,"sphere_1m","0", []), #var 1 sets agent_ai_set_always_attack_in_melee
 
-("secret_point_of_interest",sokf_invisible,"sphere_1m","0", []),
+("secret_point_of_interest",sokf_invisible,"sphere_1m","0", [(ti_on_scene_prop_init,
+    [(particle_system_add_new, "psys_moon_beam_1"),
+    #(particle_system_add_new, "psys_moon_beam_paricle_1") #separate prop now
+    ])]),
 ("secret_guardian",sokf_invisible,"arrow_helper_blue","0", [
     (ti_on_init_scene_prop,[
     ] + (is_a_wb_sceneprop==1 and [     
@@ -5219,12 +5230,11 @@ scene_props = [
     ] or []) + [
     ])]),
 
-("animal_deer",sokf_invisible,"CWE_horse_light_a","0", [(ti_on_init_scene_prop,[
+("animal_deer",sokf_invisible,"scla_reddeer","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 
-    ] + (is_a_wb_sceneprop==1 and [ 
-	(store_random_in_range, ":animal_var", imod_cracked, imod_bent+1),														 
-	(spawn_horse,"itm_animal_pony", ":animal_var"),
+    ] + (is_a_wb_sceneprop==1 and [ 													 
+	(spawn_horse,"itm_animal_deer", 0),
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
@@ -5246,25 +5256,33 @@ scene_props = [
     (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
     (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
+    (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, snd_camel_sounds), #sound 2
     ] or []) + [
     ])]),
 
-("animal_rat",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+("animal_rat",0,"earth_heap","0", [(ti_on_init_scene_prop,[
     ] + (is_a_wb_sceneprop==1 and [
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),    
     (scene_prop_set_slot, ":instance_no", slot_prop_playing_sound, itm_animal_rat),
     ] or []) + [
     ])]),
 
-# ("animal_rat_static",sokf_moveable|sokf_dynamic_physics,"szczur_animowany_anim_horse_rescale",0, [
-    # # ] + (is_a_wb_sceneprop==1 and [   
-   # # (ti_on_scene_prop_init,
-    # # [(store_trigger_param_1, ":instance_no"),
-    # # (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 29, 500),
-    # # ])
-    # # ] or []) + [    
-    # ]),
+("animal_warg",sokf_invisible,"warg_1B","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    ] + (is_a_wb_sceneprop==1 and [ 
+	(store_random_in_range, ":animal_var", imod_cracked, imod_bent+1),														 
+	(spawn_horse,"itm_animal_warg", ":animal_var"),
+    (agent_set_stand_animation, reg0, "anim_horse_stand"),    
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
+    (agent_set_slot, reg0, slot_agent_troll_swing_status, "anim_bear_slam"), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_last_hp, "snd_warg_lone_woof"), #sound 1
+    (agent_set_slot, reg0, slot_agent_mount_side, "snd_warg_lone_woof"), #sound 2
+    (agent_set_slot, reg0, slot_agent_mount_dead, 15), #chance to move per second, minimum 5%
+    ] or []) + [          
+    ])]),
             
 ] + (is_a_wb_sceneprop==1 and [ 
   ("fellbeast", sokf_moveable|sokf_dynamic_physics, "Fellbeast_Flap_1", "bo_Fellbeast_Flap_1", [

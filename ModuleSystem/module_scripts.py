@@ -2075,6 +2075,7 @@ scripts = [
     (assign, "$rescue_convo_troop", 3),
     (assign, "$tld_options_overlay_14", 2),
     (assign, "$g_display_agent_labels", 2),
+    (assign, "$tutorial_1_state", 0),
 
     (val_mul, "$hold_f1", "$cheatmode_used"),
     (val_mul, "$hold_f1", "$original_savegame_version"),

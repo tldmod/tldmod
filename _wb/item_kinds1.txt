@@ -1,5 +1,5 @@
 itemsfile version 2
-974
+975
  itm_no_item INVALID_ITEM INVALID_ITEM 1  invalid_item 0  11 0 3 0 1.5 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -2937,5 +2937,8 @@ itemsfile version 2
 0
 
  itm_animal_rat rat rat 1  szczur_animowany_rig_new_relocate 0  18014398509482003 0 1200 0 0 100 0 0 0 10 60 75 3 7 0 0 0
+0
+
+ itm_animal_warg Warg Warg 3  warg_1B 2  animal_warg_1C 4  animal_warg_1D 8  18014398509482003 0 600 0 0 100 0 0 0 0 50 50 15 95 0 0 0
 0
 
