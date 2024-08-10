@@ -4463,29 +4463,36 @@ scene_props = [
     ] or []) + [  
   ])]),
 
-("troop_archer_fight_single",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+("troop_archer_fight_single",sokf_invisible,"arrow_helper_blue","bo_man_body_lie_lower", [(ti_on_init_scene_prop,[
   ] + (is_a_wb_sceneprop==1 and [  
     (store_trigger_param_1, ":instance_no"),
     (set_fixed_point_multiplier, 100),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), 
     (set_spawn_position, pos1),
-    (party_get_slot, ":troop", "$current_town", slot_town_archer_troop),
-    (spawn_agent, "trp_gate_aggravator"),
-    (scene_prop_set_slot, ":instance_no", slot_prop_agent_2, reg0),
-    (agent_set_team, reg0, 0), 
-    (assign, reg1, reg0),
-    (agent_set_no_dynamics, reg0, 1), 
-    (agent_ai_set_interact_with_player, reg0, 0),
-    (agent_set_is_alarmed, reg0, 0),
-    (agent_set_no_death_knock_down_only, reg0, 1),
-    (agent_set_visibility, reg0, 0),
+    (position_move_z, pos1, -160),
+    (spawn_agent, "trp_i1_isen_orc_snaga"), #get a small troop
+    (assign, ":target", reg0),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_2, ":target"),
+    (agent_set_team, ":target", 0),     
+    (agent_set_no_dynamics, ":target", 1), 
+    (agent_set_position, ":target", pos1),
+    (agent_ai_set_interact_with_player, ":target", 0),
+    (agent_set_is_alarmed, ":target", 0),
+    (agent_set_no_death_knock_down_only, ":target", 1),
+    (agent_set_visibility, ":target", 0),
+    (agent_set_animation, ":target", "anim_fall_face_hold"),(agent_set_animation_progress, ":target", 100),
+    #(agent_set_stand_animation, ":target", "anim_sit_on_throne"),
+    # (agent_ai_set_can_crouch, ":target", 1),
+    # (agent_set_crouch_mode, ":target", 1),
     
+    (prop_instance_get_position, pos1, ":instance_no"),
     (position_move_y, pos1, -1000,0),(set_spawn_position, pos1),
+    (party_get_slot, ":troop", "$current_town", slot_town_archer_troop),    
     (spawn_agent, ":troop"),(agent_set_team, reg0, 0),
     #(agent_set_no_dynamics, reg0, 1),
     (agent_set_scripted_destination, reg0, pos1), 
-    (agent_add_relation_with_agent, reg0, reg1, -1),(agent_ai_set_interact_with_player, reg0, 0),(agent_set_is_alarmed, reg0, 1),(agent_set_no_death_knock_down_only, reg0, 1),
+    (agent_add_relation_with_agent, reg0, ":target", -1),(agent_ai_set_interact_with_player, reg0, 0),(agent_set_is_alarmed, reg0, 1),(agent_set_no_death_knock_down_only, reg0, 1),
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     
     (assign, ":bow_found", 0),    
@@ -4878,7 +4885,7 @@ scene_props = [
         (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"), 
         (copy_position, pos2, pos1),
-        (position_move_y, pos2, -80,0),(set_spawn_position, pos2),
+        (position_move_y, pos2, -120,0),(set_spawn_position, pos2),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
         (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),

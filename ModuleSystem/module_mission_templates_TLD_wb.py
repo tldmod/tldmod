@@ -4895,6 +4895,7 @@ tld_animated_town_agents = [
             (lt, ":dist", 3000),
             (agent_add_relation_with_agent, ":fighter_1", ":fighter_2", -1),
             (ge, ":fighter_2", 1),
+            (neq, ":prop_type", "spr_troop_archer_fight_single"), #archer target should stay neutral
             (agent_add_relation_with_agent, ":fighter_2", ":fighter_1", -1),
             #(display_message, "@start fight"),
         (try_end),
