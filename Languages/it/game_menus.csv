@@ -288,7 +288,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^ Un duro colpo da parte del fuggit
 menu_town_bandits_succeeded|^^^^^ I goblin cadono davanti a te come il grano sotto la falce ! Presto scopri di essere l'unico rimasto in piedi, mentre la maggior parte dei tuoi nemici si trova privo di sensi, morto o moribondo. Certamente le genti del posto ti saranno molto grate per averle salvate da questa minaccia.
 menu_town_brawl_lost|^^^^^^Sei stato colpito a tradimento. Coloro che ti hanno attaccato si affrettano a frugarti in cerca di cose di valore, prima di darsi alla fuga.
 menu_town_brawl_won|^^^^^Hai battuto tutti gli avversari e le guardie hanno riportato l'ordine. Velocemente cerchi oggetti di valore per poi sparire finchè non si calmano le acque.^Magari la prossima volta mostreranno più rispetto e faranno marcia indietro.
-menu_close|Niente.
+menu_close|Nulla.
 menu_town|Sei arrivato a: {s60}.{s12}{s13}
 mno_town_menu_0|Vai da qualche parte.
 mno_town_menu_0_door|Ispeziona....
@@ -383,8 +383,8 @@ mno_vs_orcs_field_ai|Gli arcieri hanno una mira migliore contro gli orchi (non t
 mno_battlefield_animals|Non-Warg / Compagni cavalcabili generati in battaglia: {s7}
 mno_slow_when_wounded|Rallentamento se feriti:  {s7}
 mno_battle_encounter_effects|Effetti Speciali della Fazione influenzano il campo di battaglia (es. tempeste, nebbie):  {s7}
-menu_hungry_orc|niente
-menu_leaving_elf|niente
+menu_hungry_orc|nessuno
+menu_leaving_elf|nessuno
 mno_defend_refugees|Tieni gli occhi aperti per i razziatori...
 mno_attack_refugees|Attacca la carovana di profughi...
 mno_leave_refugees|Lasciamoli, per il momento...
@@ -437,7 +437,7 @@ mno_leave_pyre|Abbandona la pira.
 menu_town_ruins|Quando ti avvicini, vedi che {s1} è {s2}
 mno_ruin_menu_0|Esplora il luogo.
 mno_ruin_leave|Vattene...
-menu_premutiny|niente
+menu_premutiny|nessuno
 menu_death|Hai subito un colpo mortale. Anche se la guerra continua ad infuriare, tu non potrai più farne parte.
 menu_animal_ambush|Tu e i tuoi compagni vi trovate separati dal resto della compagnia, quando improvvisamente...
 menu_animal_ambush_success|I {s2} {reg0?cadono:cadono} davanti a te come spighe di grano sotto la falce ! In poco tempo tutti i tuoi nemici giacciono sul terreno, morti o feriti. {s3}

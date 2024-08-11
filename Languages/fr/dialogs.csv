@@ -57,7 +57,7 @@ dlga_start:treebeard_isengard_3|Re-bonjour ! Je suis heureux de vous voir sain{/
 dlga_treebeard_isengard_3:close_window|Oh, heu... je vous dois de grands remerciements. Je ne m'attendais pas à recevoir de l'aide des autres, et il est bon d'apprendre que notre Dernière Marche ne se terminera peut-être pas si mal, après tout ! Puisque le tueur d'arbres a été éliminé, nous devrions être en mesure de protéger les marches septentrionales du Rohan pendant un certain temps.
 dlga_treebeard_isengard_3:close_window.1|Hein ? Oh, heu... ah. Alors, vous avez fait tout ce chemin depuis Rohan, n'est-ce pas ? Hmm. J'ai eu des nouvelles du sud, oui. De bonnes nouvelles, des nouvelles qui réjouissent tous les coeurs. J'aime bien le roi Théoden et je suis heureux qu'il ait été aidé par des gens comme vous en ces temps périlleux. Nous nous sommes bien débrouillés ici, et maintenant nous, les Ents, veillerons à ce que Saruman ne mette pas les pieds au-delà d'Isengard, sans notre permission. L'Isen coule à nouveau et bientôt, je l'espère, l'eau sera à nouveau bonne à boire. Ha, hum, je sens venir une chanson. Une chanson du temps jadis... des vieux arbres que j'ai connus...
 dlga_start:ent_encounter|Ouiiii... Que voulez-vous ?
-; dlga_ent_encounter:close_window|Hail, tree shepherd! Thank you for keeping these marches safe. I will not stand in your way.
+dlga_ent_encounter:close_window|Salut, berger des arbres ! Merci de veiller à la sécurité de ces marais. Je ne me mettrai pas en travers de votre chemin.
 dlga_start:treebeard_introduce_1|(Vous vous dites que vous êtes en face d'une créature extraordinaire. Il est très grand, avec des membres raides, une peau d'écorce et des cheveux feuillus. De la mousse recouvre de grandes parties de son corps. À ce moment vous notez ses yeux profonds qui vous regardent, des yeux lents et solennels mais forts et pénétrants. Vous pensez qu'ils sont bruns et émettent une lumière verte, comme s'il y avait une très grande bienveillance derrière, remplie par des âges de mémoire et une longue et constante réflexion. Mais en surface, ses yeux pétillent de l'instant présent... comme le soleil miroitant sur les feuilles d'un grand arbre, ou les ondulations d'un lac très profond.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(Vous êtes sur le point de dire quelque chose, mais un étrange sentiment d'étouffement vous envahit, comme si l'air était trop mince pour que vous le respiriez... avec une inspiration presque désespérée vous avalez un peu d'air pour vous débarrasser de ce sentiment, et les yeux de la créature en forme d'arbre diminuent un peu en intensité. Elle continue toutefois à vous regarder et vous vous apercevez que d'autres êtres semblables à des arbres vous regardent aussi, comme s'ils attendaient que vous parliez...)
 dlga_treebeard_introduce_2:treebeard_introduce_3|Pardonnez mon intrusion... Je suis un voyageur fatigué qui cherche refuge en ces temps sombres. Mon nom est {playername}. Puis-je vous demander qui vous êtes ?
@@ -723,8 +723,8 @@ dlga_woodelf_help_1:woodelf_help_2.1|Je n'avais jamais vu d'orques aussi massifs
 dlga_woodelf_help_2:woodelf_help_3.1|Vous l'êtes ? Mais bien-sûr que vous l'êtes ! J'ai vu que vous étiez un guerrier fort capable. Je suis vraiment chanceux aujourd'hui, alors je vais prendre avantage de cette bonne fortune et me hâter vers mon village pour avertir ceux qui me sont chers de l'existence des ces vilaines créatures.
 dlga_woodelf_help_3:close_window|Bonne journée à toi, Torbal. Nos chemins se croiseront à nouveau, j'en suis sûr{/e}.
 dlga_healers_meet:healer_who|Que faites vous ?
-; dlga_healers_meet:healers_ask|I need your help.
-; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
+dlga_healers_meet:healers_ask|J'ai besoin de votre aide.
+dlga_healers_ask:healer_wound_ask|Mes compagnons et moi-même avons de graves blessures qui nécessitent plus que du temps pour guérir. Pouvez-vous guérir nos blessures ?
 dlga_healers_ask:healer_injured_ask|Mes hommes et moi sommes blessés et nous n'avons pas le temps de guérir naturellement. Pouvez-vous nous apporter votre aide ?
 dlga_healers_meet:close_window|Rien.
 dlga_healers_injured_check:healers_injured_heal|Oui, soignez nous.
@@ -1001,7 +1001,7 @@ dlga_player_upgrade_troll_not_enough:close_window|Je perd mon temps...
 dlga_player_upgrade_troll_buy_done:close_window|Oui... oui ! Viens ici, gros tas, espèce de...
 dlga_trade_requested_weapons:merchant_trade|Ah, oui commandant. Ces marchandises sont les meilleures que vous trouverez.
 dlga_trade_requested_horse:merchant_trade|De fiers montures pour chevaucher et tuer, ainsi que la nourriture pour les nourrir ! Vous ne trouverez pas de meilleures bêtes ailleurs.
-; dlga_trade_requested_horse:merchant_trade.1|You have a fine eye for horses, {sir/madam}. You won't find better beasts than these anywhere else.
+dlga_trade_requested_horse:merchant_trade.1|Vous avez l'oeil pour les chevaux, {monsieur/madame}. Vous ne trouverez nulle part ailleurs de meilleures bêtes que celles-ci.
 dlga_merchant_trade:town_merchant_talk|Autre chose ?
 dlga_town_merchant_talk:merchant_gossip|Dites-moi, de quoi parlent les gens ces jours-ci ?
 dlga_town_merchant_talk:close_window|Au revoir. 
@@ -1072,8 +1072,8 @@ dlga_party_reinforce_check_1:party_reinforce_end.1|Ces soldats ne nous sont d'au
 dlga_start:close_window.33|Vous me retardez ! Les magiciens ne sont jamais en retard !
 dlga_start:close_window.34|Il... m'appeeeeelle...
 dlga_start:secret_guardian_let_through|Halte !
-; dlga_secret_guardian_let_through:secret_guardian_let_through1|I am {playername}, {s24}. Let me through!
-; dlga_secret_guardian_let_through1:close_window|Yes commander, you may pass.
+dlga_secret_guardian_let_through:secret_guardian_let_through1|Je suis {playername}, {s24}. Laissez-moi passer !
+dlga_secret_guardian_let_through1:close_window|Oui, commandant, vous pouvez passer.
 dlga_start:close_window.36|Vous là ! Vous avez survécu ? Bien ! Vous ne pouvez pas agiter un bâton de la sorte ! Prenez ça !
 dlga_start:ori_choose_1|Vous vous battez bien, frère ! Je ne sais pas comment vous avez survécu jusqu'à présent. Je me souviens de votre arrivée récente, avant tout cela ... avant la chute de Balin ... D'où venez-vous ?
 dlga_ori_choose_1:ori_choose_finish|J'étais un pisteur envoyé dans les bois près du peuple Ours. J'ai récemment entendu parler de la compagnie de Balin et je l'ai rejoint.

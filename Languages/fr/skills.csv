@@ -1,7 +1,7 @@
 skl_trade|Commerce
 skl_trade_desc|Les forgerons et les maîtres d'approvisionnement sont plus coopératifs et offrent de meilleurs équipements. (Compétence de groupe)
 skl_leadership|Commandement
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
+skl_leadership_desc|Chaque point augmente de 5 le nombre maximum de soldats que vous pouvez commander (3 pour les compagnons), augmente le moral de votre groupe et la cohésion durant les batailles. Des volontaires plus nombreux et plus forts voudront vous suivre. (Compétence personnelle)
 skl_prisoner_management|Gestion des prisonniers
 skl_prisoner_management_desc|Chaque niveau de cette compétence augmente le nombre maximum de prisonniers de %d. Augmente les chances de capturer et conserver des prisonniers. (Compétence de commandant)
 skl_persuasion|Vie Sauvage
@@ -21,7 +21,7 @@ skl_spotting_desc|La distance de vision du groupe est augmentée de 10 %% par ni
 skl_pathfinding|Marche forcée
 skl_pathfinding_desc|La vitesse de voyage sur la carte est augmentée de 3 %% par niveau de compétence. (Compétence de groupe)
 skl_tactics|Tactique
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)
+skl_tactics_desc|Améliore l'avantage au combat. Augmente la distance de combat pour les parties ennemies et diminue la distance de combat pour les parties amies de 3 %% par niveau. (Compétence de commandant)
 skl_tracking|Pistage
 skl_tracking_desc|Les empreintes révèlent plus d'informations. (Compétence de groupe)
 skl_trainer|Mentor

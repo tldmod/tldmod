@@ -17,7 +17,7 @@ skl_wound_treatment_desc|A velocidade de cura do grupo é aumentada a 20%% por n
 skl_inventory_management|Gestão de inventário
 ; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 skl_spotting|Avistamento
-skl_spotting_desc|A visão do grupo é aumento a 10% a cada nível de habilidade (Habilidade do grupo)
+skl_spotting_desc|A visão do grupo é aumento a 10%% a cada nível de habilidade (Habilidade do grupo)
 skl_pathfinding|Encontrando o caminho.
 skl_pathfinding_desc|velocidade do grupo no mapa é aumentado a 3 %% por nível de habilidade. (Habilidade do grupo)
 skl_tactics|Táticas
@@ -41,7 +41,7 @@ skl_weapon_master_desc|Facilita o aprendizado da proficiência de armas e aument
 skl_power_draw|Potência de alongamento de arcos
 skl_power_draw_desc|permite que personagem use arcos mais poderosos. Cada ponto a esta habilidade (até quatro pontos a mais do requisito de potência do arco) aumenta o dano de arcos a 14 %%. (Habilidade pessoal)
 skl_power_throw|Potência de armas de arremesso
-skl_power_throw_desc|Cada ponto desta habilidade aumenta o dano de armas de arremesso para 10% (Habilidade Pessoal)
+skl_power_throw_desc|Cada ponto desta habilidade aumenta o dano de armas de arremesso para 10%% (Habilidade Pessoal)
 skl_power_strike|Potência de ataque
 skl_power_strike_desc|Cada ponto desta habilidade aumenta o dano de armas brancas a 8%%. (Habilidade Pessoal)
 skl_ironflesh|Vigor
