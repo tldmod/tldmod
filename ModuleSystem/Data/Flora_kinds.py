@@ -1251,7 +1251,7 @@ fauna_kinds = [
    ['oil', '0'],
    ['amphora_slim', '0'],
    ['wine', '0'],
-   ['bowl_wood', '0'],
+   ['basket_cloth', 'bo_apple_basket'],
    ['butter_pot', '0'],
    ['honey_pot', '0'],]),
 
@@ -1281,7 +1281,9 @@ fauna_kinds = [
    ['winery_huge_barrel', 'bo_winery_huge_barrel'],
    ['winery_middle_barrel', 'bo_winery_middle_barrel'],
    ['basket_a', 'bo_basket_a'],
-   ['korzina_1', 'bo_korzina_1'],]),
+   ['korzina_1', 'bo_korzina_1'],
+   ['basket_grain', 'bo_apple_basket'],
+   ['basket_cloth', 'bo_apple_basket'],]),
 
  ('misc_crates',
   0,

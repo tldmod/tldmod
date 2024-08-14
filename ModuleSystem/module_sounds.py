@@ -164,7 +164,7 @@ sounds = [
 ("man_victory",sf_priority_5|sf_vol_10, ["man_victory_3.wav","man_victory_4.wav","man_victory_5.wav","man_victory_8.wav","man_victory_15.wav","man_victory_49.wav","man_victory_52.wav","man_victory_54.wav","man_victory_57.wav","man_victory_71.wav"]),
 ("fire_loop",sf_looping|sf_start_at_random_pos, ["CWE_fx_fire_large_01_lp.ogg"]), #"Fire_Torch_Loop3.ogg"
 ("torch_loop",sf_priority_2|sf_vol_2|sf_looping|sf_start_at_random_pos, ["CWE_fx_fire_embers_02b_lp.ogg"]),
-("dummy_hit",sf_priority_9, ["shield_hit_cut_3.wav","shield_hit_cut_5.wav"]),
+("dummy_hit",sf_priority_9|sf_vol_1, ["shield_hit_cut_3.wav","shield_hit_cut_5.wav"]),
 ("dummy_destroyed",sf_priority_9, ["shield_broken.wav"]),
 #("gourd_destroyed",sf_priority_9, ["shield_broken.wav"]),#TODO
 ("cow_moo", sf_priority_9|sf_vol_8, ["cow_moo_1.ogg", "silence.wav"]),
@@ -337,9 +337,9 @@ sounds = [
 ("waterfall" ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["CWE_amb_waterfall_medium_01_2d_lp.ogg"]),
 ("orc_cheer", sf_priority_5|sf_vol_10,                                  ["orc_yell_1.wav","orc_yell_2.wav","orc_grunt_long_1.wav", "orc_victory_1.wav","orc_victory_2.wav","orc_victory_3.wav","orc_victory_4.wav","orc_victory_5.wav","orc_victory_6.wav"]), 
 # directional sounds for props
-("water_wavesplash_source",sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["water_wavesplash_loop.wav"]),
-("water_waves_source"     ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["water_waves_loop.wav"]),
-("water_splash_source"    ,sf_priority_9|sf_vol_9|sf_looping|sf_start_at_random_pos, ["water_splash_loop.ogg"]),
+("water_wavesplash_source",sf_priority_9|sf_vol_6|sf_looping|sf_start_at_random_pos, ["water_wavesplash_loop.wav"]),
+("water_waves_source"     ,sf_priority_9|sf_vol_6|sf_looping|sf_start_at_random_pos, ["water_waves_loop.wav"]),
+("water_splash_source"    ,sf_priority_9|sf_vol_12|sf_looping|sf_start_at_random_pos, ["water_splash_loop.ogg"]),
 #("fire_loop"             ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]), #"Fire_Torch_Loop3.ogg"
 #("torch_loop"            ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]),
 

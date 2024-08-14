@@ -4214,7 +4214,7 @@ scripts = [
       (else_try),
 		(eq,":item_no","itm_miruvor_reward"),
         (try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Strengthens all Heroes"),(set_trigger_result, color_item_text_bonus),(try_end),
-		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+2 to First Aid (Party)"),(set_trigger_result, color_item_text_bonus),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+4 to First Aid (Party)"),(set_trigger_result, color_item_text_bonus),(try_end),
         (try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@Use from Camp Menu"),(set_trigger_result, color_item_text_bonus),(try_end),
       (else_try),
 	  (eq,":item_no","itm_isen_uruk_heavy_reward"),

@@ -819,7 +819,7 @@ misc_containers 0 24
  oil  0
  amphora_slim  0
  wine  0
- bowl_wood  0
+basket_cloth  bo_apple_basket
  butter_pot  0
  honey_pot  0
 misc_chairs_nocol 0 16
@@ -839,13 +839,15 @@ misc_chairs_nocol 0 16
  bench_tavern_b  0
  ado_wood_bench_fine  0
  ado_wood_bench_plain  0
-misc_barrels_baskets 0 6
+misc_barrels_baskets 0 8
  barrel  bobarrel
  barrel_new  bobarrel
  winery_huge_barrel  bo_winery_huge_barrel
  winery_middle_barrel  bo_winery_middle_barrel
  basket_a  bo_basket_a
  korzina_1  bo_korzina_1
+ basket_grain  bo_apple_basket
+ basket_cloth  bo_apple_basket
 misc_crates 0 6
  box_new  bo_box_a
  ado_wood_crate_1  bo_ado_wood_crate_1
