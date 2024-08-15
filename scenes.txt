@@ -140,10 +140,10 @@ scn_pelargir_center pelargir_center 256 none none 0 0 200 200 -100 0x00000006300
   0 
   0 
  outer_terrain_seaside_1 
-scn_linhir_center linhir_center 256 none none 0 0 200 200 -100 0x000000042005591e00040506000059a100002cd500005052 
+scn_linhir_center linhir_center 256 none none 0 0 200 200 -100 0x000000002005591e00040506000059a100002cd500005052 
   0 
   0 
- outer_terrain_steppe 
+ New_outer_terrain_river_middle 
 scn_dol_amroth_center dol_amroth_center 256 none none 0 0 200 200 -100 0x0000000130000500000d234800000f5200005bd50000739d 
   0 
   0 
@@ -152,10 +152,10 @@ scn_edhellond_center edhellond_center 256 none none 0 0 200 200 -100 0x000000003
   0 
   0 
  New_outer_terrain_seaside_north_1 
-scn_lossarnach_center lossarnach_center 256 none none 0 0 200 200 -100 0x00000007300005000006ada4000051a90000386b00003791 
+scn_lossarnach_center lossarnach_center 256 none none 0 0 200 200 -100 0x00000003300005000006ada4000051a90000386b00003791 
   0 
   0 
- outer_mountains2west 
+ outer_terrain_isen_low_far 
 scn_tarnost_center tarnost_center 256 none none 0 0 200 200 -100 0x30050d0d0002d4b300000e2f000027d200005f66 
   0 
   0 
@@ -163,12 +163,12 @@ scn_tarnost_center tarnost_center 256 none none 0 0 200 200 -100 0x30050d0d0002d
 scn_erech_center erech_center 256 none none 0 0 200 200 -100 0x3000148000025896000074e600006c260000125a 
   0 
   0 
- outer_mountains2north 
+ outer_terrain_dimrill 
 scn_pinnath_gelin_center pinnath_gelin_center 256 none none 0 0 200 200 -100 0x300416a600035cd600007ee80000012100003fbc 
   0 
   0 
  outer_terrain_plain 
-scn_ethring_center ethring_center 256 none none 0 0 200 200 -100 0x000000042005591e00040506000059a100002cd500005052 
+scn_ethring_center ethring_center 256 none none 0 0 200 200 -100 0x000000002005591e00040506000059a100002cd500005052 
   0 
   0 
  outer_terrain_steppe 
@@ -192,7 +192,7 @@ scn_edoras_center edoras_center 256 none none 0 0 200 200 -100 0x000000032000050
   0 
   0 
  outer_terrain_rohan 
-scn_aldburg_center aldburg_center 256 none none 0 0 100 100 -100 0x000000072007956000025896000037e800000e860000674b 
+scn_aldburg_center aldburg_center 256 none none 0 0 100 100 -100 0x000000032007956000025896000037e800000e860000674b 
   0 
   0 
  outer_mountains2south 
@@ -204,7 +204,7 @@ scn_east_emnet_center east_emnet_center 256 none none 0 0 100 100 -100 0x0000000
   0 
   0 
  outer_terrain_rohan 
-scn_westfold_center westfold_center 256 none none 0 0 100 100 -100 0x0000000620049cbd00025896000048e90000164400002b3f 
+scn_westfold_center westfold_center 256 none none 0 0 100 100 -100 0x0000000220049cbd00025896000048e90000164400002b3f 
   0 
   0 
  outer_terrain_rohan 
@@ -676,10 +676,10 @@ scn_pelargir_siege pelargir_siege 256 none none 0 0 200 200 -100 0x0000000630000
   0 
   0 
  outer_terrain_seaside_1 
-scn_linhir_siege linhir_siege 256 none none 0 0 200 200 -100 0x000000042005591e00040506000059a100002cd500005052 
+scn_linhir_siege linhir_siege 256 none none 0 0 200 200 -100 0x000000002005591e00040506000059a100002cd500005052 
   0 
   0 
- outer_terrain_steppe 
+ New_outer_terrain_anduin 
 scn_dol_amroth_siege dol_amroth_siege 256 none none 0 0 200 200 -100 0x0000000130000500000d234800000f5200005bd50000739d 
   0 
   0 
@@ -691,7 +691,7 @@ scn_edhellond_siege edhellond_siege 256 none none 0 0 200 200 -100 0x00000000300
 scn_lossarnach_siege lossarnach_siege 256 none none 0 0 200 200 -100 0x00000007300005000006ada4000051a90000386b00003791 
   0 
   0 
- outer_mountains2west 
+ outer_terrain_isen_low_far 
 scn_tarnost_siege tarnost_siege 256 none none 0 0 200 200 -100 0x30050d0d0002d4b300000e2f000027d200005f66 
   0 
   0 
@@ -699,7 +699,7 @@ scn_tarnost_siege tarnost_siege 256 none none 0 0 200 200 -100 0x30050d0d0002d4b
 scn_erech_siege erech_siege 256 none none 0 0 200 200 -100 0x3000148000025896000074e600006c260000125a 
   0 
   0 
- outer_mountains2north 
+ outer_terrain_dimrill 
 scn_pinnath_gelin_siege pinnath_gelin_siege 256 none none 0 0 200 200 -100 0x300416a600035cd600007ee80000012100003fbc 
   0 
   0 
@@ -748,10 +748,10 @@ scn_custom_1 custom_1 256 none none 0 0 200 200 -0.5 0x0000000230000500000691a40
   0 
   0 
  outer_terrain_plain 
-scn_custom_2 custom_2 256 none none 0 0 200 200 -0.5 0x0000000130000500000691a4000009e100004b34000070b7 
+scn_custom_2 custom_2 256 none none 0 0 200 200 -0.5 0x0000000130010daa000691a40000482b00004b34000070b7 
   0 
   0 
- outer_terrain_plain 
+ New_outer_mountains2east_ithilien 
 scn_custom_3 custom_3 256 none none 0 0 200 200 -0.5 0x00000001300005000003d8f600003efe00004b34000059be 
   0 
   0 

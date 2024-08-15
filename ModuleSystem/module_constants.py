@@ -1955,6 +1955,7 @@ center_sounds=[#center      slot_center_ambient_sound_day , slot_center_ambient_
     (p_town_dol_amroth   ,snd_gondor_ambiance ,snd_water_waves_ambiance     ,snd_seaside_occasional),
     (p_town_pelargir     ,snd_gondor_ambiance ,snd_water_wavesplash_ambiance,snd_seaside_occasional),
     (p_town_edhellond    ,snd_gondor_ambiance ,snd_water_waves_ambiance     ,snd_seaside_occasional),
+    (p_town_linhir       ,snd_gondor_ambiance ,0                            ,snd_seaside_occasional),
     (p_town_cair_andros  ,0                   ,snd_goodforest_ambiance      ,snd_elves_occasional),
     (p_town_henneth_annun,0                   ,snd_henneth_ambiance         ,snd_elves_occasional),
     (p_town_isengard     ,snd_orcs_ambiance   ,snd_isengard_ambiance        ,snd_isengard_occasional),
