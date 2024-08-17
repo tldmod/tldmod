@@ -1,4 +1,4 @@
-2010
+2011
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -91,7 +91,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-08-14_19:56___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-08-17_15:40___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -323,6 +323,7 @@ qstr_{s0}^TOTAL:_{reg3}__ {s0}^TOTAL:_{reg3}_({s2})
 qstr_^None ^None
 qstr_near_the_Great_East_ near_the_Great_East_Road,_the_abandoned_old_road
 qstr_near_what_is_left_of near_what_is_left_of_the_Old_Forest_Road,_the_ancient_dwarven_path_that_used_to_cross_the_thick_forest
+qstr_near_the_old_cross_r near_the_old_cross-roads,_where_the_Ithilien_road_meets_the_road_to_Osgiliath
 qstr_close_to_the_Hand_sh close_to_the_Hand-shaped_sign_of_Saruman,_pointing_toward_the_tower_of_Orthanc
 qstr_in_sight_of_the_maje in_sight_of_the_majestic_City_Walls_of_Minas_Tirith,_the_White_City
 qstr_in_sight_of_Edoras_t in_sight_of_Edoras,_the_capital_of_Rohan

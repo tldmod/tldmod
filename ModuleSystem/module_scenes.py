@@ -697,6 +697,8 @@ scenes = [
 ("forest_ithilien5" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013887184400058d6600000fa2000005a200007078",[],[],"New_outer_mountains2east_ithilien"),	#steppe med
 ("forest_ithilien6" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013887124480058d6600000fa280000ec300007078",[],[],"New_outer_mountains2east_ithilien"),	#steppe small
 
+("forest_ithilien_crossroads" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000130010daa000691a40000482b00004b34000070b7",[],[],"New_outer_mountains2east_ithilien"),
+
 # Non-campaign scenes (these can savely be kept at the end of the file and moved with each extension, whereas campaign scenes are stored within savegame files, for whatever reason)
 # Tutorial Scenes
 ("tutorial_1",sf_indoors,"tutorial_1_scene", "bo_tutorial_1_scene", (-100,-100),(100,100),-100,"0",

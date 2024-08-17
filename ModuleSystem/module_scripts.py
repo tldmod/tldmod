@@ -9328,6 +9328,7 @@ scripts = [
 	  (else_try), (eq, reg0,  "p_town_umbar_camp"), (assign, ":sight_range", 8), #InVain
 	  (else_try), (eq, reg0,  "p_town_linhir"), (assign, ":sight_range", 8), #InVain
 	  (else_try), (eq, reg0,  "p_town_tarnost"), (assign, ":sight_range", 8), #InVain
+      (else_try), (eq, reg0,  "p_town_minas_morgul"), (assign, ":sight_range", 0), #InVain, unused landmark, so it doesn't overwrite crossroads
 	  (else_try), 
 			(this_or_next|eq, reg0,  "p_town_west_osgiliath"), 
 			(eq, reg0,  "p_town_east_osgiliath"),
@@ -9343,11 +9344,17 @@ scripts = [
 		(set_fixed_point_multiplier,100.0),
 		(party_get_position, pos10, ":party_no"),
 	    (position_get_x,":x",pos10),(position_get_y,":y",pos10),
-		(is_between, ":y", -19130, -18800),
-		(try_begin), (gt, ":x", -2072),
-			(assign, reg0, landmark_great_east_road ),
+		(try_begin),
+            (is_between, ":y", -19130, -18800),
+            (gt, ":x", -2072),
+            (assign, reg0, landmark_great_east_road ),
 		(else_try),
+            (is_between, ":y", -19130, -18800),
 			(assign, reg0, landmark_old_forest_road  ),
+        (else_try),
+            (is_between, ":y", 2040, 2450),
+            (is_between, ":x", -7100, -6668),
+            (assign, reg0, landmark_ithilien_crossroads  ),
 		(try_end),
 	  (try_end),
 ]),
@@ -9366,6 +9373,9 @@ scripts = [
 	(else_try),
 		(eq, ":landmark", landmark_old_forest_road ),
 		(str_store_string, s17, "@near what is left of the Old Forest Road, the ancient dwarven path that used to cross the thick forest"),
+	(else_try),
+		(eq, ":landmark", landmark_ithilien_crossroads ),
+		(str_store_string, s17, "@near the old cross-roads, where the Ithilien road meets the road to Osgiliath"),
 	(else_try),
 		(str_store_party_name, s15, ":landmark"),
 		(eq,":landmark","p_hand_isen"),	
@@ -12344,6 +12354,11 @@ scripts = [
 	        (else_try),
 	        	(assign,":scene_to_use","scn_osgiliath_outskirts_4"),
 			(try_end),
+    (else_try),
+        (eq,":landmark",landmark_ithilien_crossroads),
+        (assign,":scene_to_use","scn_forest_ithilien_crossroads"),
+        (assign, "$bs_day_sound", "snd_neutralforest_ambiance"), 
+        (assign, "$bs_night_sound", "snd_night_ambiance"), 
 	(else_try), #coastal scenes
 		(this_or_next|eq,":landmark","p_town_linhir"), #InVain: Keep this BEFORE region_lebennin and the other Gondor regions
 		(this_or_next|eq,":landmark","p_town_tarnost"),
@@ -14933,7 +14948,11 @@ scripts = [
 			# (neq, "$current_town", "p_town_west_osgiliath"), # guys run in osgiliaths
 			# (neq, "$current_town", "p_town_east_osgiliath"),
 #			(neq, "$g_defending_against_siege", 0), # guys run when siege
-			(try_begin),
+			(try_begin), #rich walkers don't run
+                (this_or_next|party_slot_eq, "$current_town", slot_center_walker_2_troop, ":troop_no"),
+                (party_slot_eq, "$current_town", slot_center_walker_3_troop, ":troop_no"),
+                (store_random_in_range,reg10,1,6),
+            (else_try),
 				(this_or_next|eq,":try_limit",tf_orc),
 				(eq,":try_limit",tf_dwarf),
                 (neq, ":is_guard", 1),

@@ -1,5 +1,5 @@
 scenesfile version 1
- 460
+ 461
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -1809,6 +1809,10 @@ scn_forest_ithilien5 forest_ithilien5 256 none none 0 0 200 200 -0.5 0x000000013
   0 
  New_outer_mountains2east_ithilien 
 scn_forest_ithilien6 forest_ithilien6 256 none none 0 0 200 200 -0.5 0x000000013887124480058d6600000fa280000ec300007078 
+  0 
+  0 
+ New_outer_mountains2east_ithilien 
+scn_forest_ithilien_crossroads forest_ithilien_crossroads 256 none none 0 0 200 200 -0.5 0x0000000130010daa000691a40000482b00004b34000070b7 
   0 
   0 
  New_outer_mountains2east_ithilien 

@@ -1066,7 +1066,7 @@ walkert_default            = 0
 walkert_needs_money        = 1
 walkert_needs_money_helped = 2
 walkert_spy                = 3
-num_town_walkers           = 8
+num_town_walkers           = 10
 town_walker_entries_start  = 32
 
 reinforcement_cost            = 400
@@ -1154,6 +1154,7 @@ centers_end = p_centers_end
 # special landmark ID(unlike all ather landmarks ID, they are not ID of parties  on the map)
 landmark_great_east_road = 1001;
 landmark_old_forest_road  = 1002;  # where it crosses mirkwook
+landmark_ithilien_crossroads  = 1003;
 
 # fords are landmarks
 fords_begin = p_ford_cair_andros1 
@@ -1589,13 +1590,13 @@ center_list = [
 	[trp_captain_of_gondor, trp_smith_mtirith, trp_merchant_mtirith, trp_elder_mtirith, pt_gondor_cap_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_man_gondor_blue,trp_walker_man_gondor_white,trp_walker_woman_gondor_bw], 
 	[icon_mfc_gondor],[700],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1, tld_siegable_capital),
 (p_town_pelargir, [scn_pelargir_center, scn_gondor_castle_a, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_pelargir_siege,mesh_town_pelargir],
-	[trp_i6_pel_leader, trp_smith_pelargir, trp_merchant_pelargir, trp_elder_pelargir, pt_pelargir_recruits, trp_knight_1_4, trp_walker_man_gondor_black,trp_walker_woman_gondor_bw,trp_walker_man_gondor_white,trp_walker_woman_gondor_b], 
+	[trp_i6_pel_leader, trp_smith_pelargir, trp_merchant_pelargir, trp_elder_pelargir, pt_pelargir_recruits, trp_knight_1_4, trp_walker_man_gondor_black,trp_walker_man_gondor_blue,trp_walker_woman_gondor_bw,trp_walker_man_gondor_white], 
 	[icon_mfc_pelargir],[500],[4,4,4,6,4,8], str_income_med, garrison_limit_med, 0, tld_siegable_always),
 (p_town_linhir, [scn_linhir_center, scn_gondor_castle_b, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_linhir_siege, mesh_ui_default_menu_window],
-	[trp_captain_of_gondor, trp_smith_linhir, trp_merchant_linhir, trp_elder_linhir, pt_gondor_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_woman_gondor_bw,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
+	[trp_captain_of_gondor, trp_smith_linhir, trp_merchant_linhir, trp_elder_linhir, pt_gondor_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_bw,trp_walker_woman_gondor_b], 
 	[icon_mfc_gondor],[500],[2,8,2,8,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_always),
 (p_town_dol_amroth, [scn_dol_amroth_center, scn_dol_amroth_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_dol_amroth_siege,mesh_town_dol_amroth],
-	[trp_c6_amroth_leader, trp_smith_dolamroth, trp_merchant_dolamroth, trp_elder_dolamroth, pt_dol_amroth_recruits, trp_knight_1_3, trp_walker_man_gondor_blue,trp_walker_woman_gondor_b,trp_walker_man_gondor_white,trp_walker_woman_gondor_bw], 
+	[trp_c6_amroth_leader, trp_smith_dolamroth, trp_merchant_dolamroth, trp_elder_dolamroth, pt_dol_amroth_recruits, trp_knight_1_3, trp_walker_man_gondor_blue,trp_walker_man_gondor_black,trp_walker_man_gondor_white,trp_walker_woman_gondor_b], 
 	[icon_mfc_dol_amroth],[500],[2,8,3,8,2,5], str_income_med, garrison_limit_high, 1, tld_siegable_normal),
 (p_town_edhellond, [scn_edhellond_center, scn_gondor_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_edhellond_siege, mesh_town_edhellond],
 	[trp_captain_of_gondor, trp_smith_edhellond, trp_merchant_edhellond, trp_elder_edhellond, pt_gondor_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_bw,trp_walker_woman_gondor_b], 
@@ -1632,7 +1633,7 @@ center_list = [
 	[trp_captain_of_rohan, trp_smith_aldburg, trp_merchant_aldburg, trp_elder_aldburg, pt_rohan_recruits, trp_knight_1_11, trp_walker_man_rohan_t, trp_walker_man_rohan_d,trp_walker_woman_rohan_d,  trp_walker_woman_rohan_t], 
 	[icon_mfc_rohan],[500],[2,3,2,5,2,8], str_income_med, garrison_limit_med, 1, tld_siegable_normal),
 (p_town_hornburg, [scn_hornburg_center, -1, scn_rohan_prison,scn_rohan_tavern, -1, scn_hornburg_siege,mesh_town_hornburg],
-	[trp_captain_of_rohan, trp_smith_hornburg, trp_merchant_hornburg, trp_elder_hornburg, pt_rohan_recruits, trp_rohan_lord, trp_walker_man_rohan_t, trp_i2_guardsman_of_rohan, trp_i1_rohan_youth,  trp_i3_footman_of_rohan], 
+	[trp_captain_of_rohan, trp_smith_hornburg, trp_merchant_hornburg, trp_elder_hornburg, pt_rohan_recruits, trp_rohan_lord, trp_walker_man_rohan_t, trp_i2_guardsman_of_rohan, trp_walker_woman_rohan_d,  trp_i3_footman_of_rohan], 
 	[icon_mfc_rohan],[500],[3,8,4,6,4,5], str_income_high, garrison_limit_high, 1, tld_siegable_capital),
 (p_town_east_emnet, [scn_east_emnet_center, scn_rohan_castle_a, scn_rohan_prison,scn_rohan_tavern,scn_rohan_arena, scn_east_emnet_siege, mesh_ui_default_menu_window],
 	[trp_captain_of_rohan, trp_smith_eastemnet, trp_merchant_eastemnet, trp_elder_eastemnet, pt_rohan_recruits, trp_knight_1_14, trp_walker_man_rohan_t, trp_walker_man_rohan_d,trp_walker_woman_rohan_d,  trp_walker_woman_rohan_t], 
