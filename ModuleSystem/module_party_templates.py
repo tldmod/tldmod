@@ -239,11 +239,11 @@ party_templates = [
 ("gondor_reinf_d"    ,"_",0,0,fac_commoners,0,[(trp_c6_gon_tower_knight,1,2), (trp_a6_gon_tower_archer,2,4), (trp_i6_gon_tower_swordsman,1,2), (trp_i6_gon_tower_spearman,1,2),]), #MT garrison only
 
 ("gondor_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_i2_gon_watchman,2,4),(trp_i1_gon_levy,1,3),(trp_i3_gon_footman,2,4)]), #InVain: less commoners, less archers
-("gondor_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_a3_gon_bowman,2,4),(trp_i3_gon_footman,3,5),(trp_i2_gon_watchman,1,3),(trp_c1_gon_nobleman,1,2),(trp_a4_gon_archer, 1,2)]), #T1 cav because it has a separate tree, InVain: More archers+ t4 archers (due to changed garrison reinforcements)
+("gondor_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_a3_gon_bowman,1,3),(trp_i3_gon_footman,4,6),(trp_i2_gon_watchman,1,2),(trp_c1_gon_nobleman,1,2),(trp_a4_gon_archer, 1,2)]), #T1 cav because it has a separate tree, InVain: More archers+ t4 archers (due to changed garrison reinforcements)
 ("gondor_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_i4_gon_spearman,2,3),(trp_i4_gon_swordsman,2,3),(trp_c3_gon_vet_squire,1,2),]), #InVain: Removed archers, hosts are more infantry-heavy
 ("pelargir_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i1_pel_watchman,6,12),]), #no T1
-("pelargir_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a2_pel_marine,1,2),(trp_i2_pel_infantry,1,2),(trp_i1_pel_watchman,3,6),]), #no T3
-("pelargir_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_a2_pel_marine,2,5),(trp_i2_pel_infantry,2,3),]),
+("pelargir_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a2_pel_marine,1,2),(trp_i2_pel_infantry,2,4),(trp_i1_pel_watchman,2,4),]), #no T3
+("pelargir_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_a2_pel_marine,1,2),(trp_i2_pel_infantry,2,5),]),
 ("dol_amroth_reinf_a","_",0,0,fac_commoners,0,[(trp_c2_amroth_squire,2,4),(trp_i1_amroth_recruit,5,10),]),
 ("dol_amroth_reinf_b","_",0,0,fac_commoners,0,[(trp_c3_amroth_vet_squire,3,6),(trp_c2_amroth_squire,2,4),]),
 ("dol_amroth_reinf_c","_",0,0,fac_commoners,0,[(trp_c4_amroth_knight,4,8),]),
@@ -254,14 +254,14 @@ party_templates = [
 ("lossarnach_reinf_b","_",0,0,fac_commoners,0,[(trp_i3_loss_vet_axeman,4,8),(trp_i2_loss_axeman,1,2),]),
 ("lossarnach_reinf_c","_",0,0,fac_commoners,0,[(trp_i4_loss_heavy_axeman,4,8),]),
 ("pinnath_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i1_pinnath_plainsman,6,12),]), #no T1
-("pinnath_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a2_pinnath_bowman,1,2),(trp_c2_pinnath_rider,1,2),(trp_i1_pinnath_plainsman,3,6)]), #no T3
-("pinnath_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c2_pinnath_rider,2,4),(trp_a2_pinnath_bowman,2,4)]),
+("pinnath_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a2_pinnath_bowman,1,2),(trp_c2_pinnath_rider,2,4),(trp_i1_pinnath_plainsman,1,3)]), #no T3
+("pinnath_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c2_pinnath_rider,3,6),(trp_a2_pinnath_bowman,1,2)]),
 ("ithilien_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_a4_ithilien_ranger,4,7),]), #since they begin at T4, halve them
 ("ithilien_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a5_ithilien_vet_ranger,3,5),]),
 ("ithilien_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_a6_ithilien_master_ranger,2,4),]),
 ("blackroot_reinf_a" ,"_",0,0,fac_commoners,0,[(trp_a1_blackroot_hunter,6,12)]), #no T1
-("blackroot_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_i2_blackroot_footman,1,2),(trp_a2_blackroot_bowman,1,2),(trp_a1_blackroot_hunter,3,6),]), #no T3
-("blackroot_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_a2_blackroot_bowman,2,4),(trp_i2_blackroot_footman,2,4),]),
+("blackroot_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_i2_blackroot_footman,3,6),(trp_a2_blackroot_bowman,1,2),(trp_a1_blackroot_hunter,2,3),]), #no T3
+("blackroot_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_a2_blackroot_bowman,1,3),(trp_i2_blackroot_footman,3,6),]),
 #rohan	
 ("rohan_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_c2_squire_of_rohan,2,4),(trp_i2_guardsman_of_rohan,1,2),(trp_i1_rohan_youth,3,6),]),
 ("rohan_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_c3_rider_of_rohan,2,4),(trp_ac3_skirmisher_of_rohan,1,2),(trp_i3_footman_of_rohan,3,5),(trp_ac4_veteran_skirmisher_of_rohan,1,2),]),

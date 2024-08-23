@@ -134,11 +134,11 @@ pt_isengard_p_train Isengard_Prisoner_Train 562949957615744 0 7 14 321 4 6 0 316
 pt_kingdom_hero_party War_Party 4259913 0 1 238 -1 -1 -1 -1 -1 -1 
 pt_gondor_reinf_d _ 0 0 1 0 115 1 2 0 119 2 4 0 109 1 2 0 106 1 2 0 -1 -1 
 pt_gondor_reinf_a _ 0 0 1 0 102 2 4 0 101 1 3 0 103 2 4 0 -1 -1 -1 
-pt_gondor_reinf_b _ 0 0 1 0 116 2 4 0 103 3 5 0 102 1 3 0 110 1 2 0 117 1 2 0 -1 
+pt_gondor_reinf_b _ 0 0 1 0 116 1 3 0 103 4 6 0 102 1 2 0 110 1 2 0 117 1 2 0 -1 
 pt_gondor_reinf_c _ 0 0 1 0 104 2 3 0 107 2 3 0 112 1 2 0 -1 -1 -1 
 pt_pelargir_reinf_a _ 0 0 1 0 131 6 12 0 -1 -1 -1 -1 -1 
-pt_pelargir_reinf_b _ 0 0 1 0 132 1 2 0 134 1 2 0 131 3 6 0 -1 -1 -1 
-pt_pelargir_reinf_c _ 0 0 1 0 132 2 5 0 134 2 3 0 -1 -1 -1 -1 
+pt_pelargir_reinf_b _ 0 0 1 0 132 1 2 0 134 2 4 0 131 2 4 0 -1 -1 -1 
+pt_pelargir_reinf_c _ 0 0 1 0 132 1 2 0 134 2 5 0 -1 -1 -1 -1 
 pt_dol_amroth_reinf_a _ 0 0 1 0 158 2 4 0 157 5 10 0 -1 -1 -1 -1 
 pt_dol_amroth_reinf_b _ 0 0 1 0 159 3 6 0 158 2 4 0 -1 -1 -1 -1 
 pt_dol_amroth_reinf_c _ 0 0 1 0 160 4 8 0 -1 -1 -1 -1 -1 
@@ -149,14 +149,14 @@ pt_lossarnach_reinf_a _ 0 0 1 0 126 2 4 0 125 5 10 0 -1 -1 -1 -1
 pt_lossarnach_reinf_b _ 0 0 1 0 127 4 8 0 126 1 2 0 -1 -1 -1 -1 
 pt_lossarnach_reinf_c _ 0 0 1 0 128 4 8 0 -1 -1 -1 -1 -1 
 pt_pinnath_reinf_a _ 0 0 1 0 145 6 12 0 -1 -1 -1 -1 -1 
-pt_pinnath_reinf_b _ 0 0 1 0 148 1 2 0 146 1 2 0 145 3 6 0 -1 -1 -1 
-pt_pinnath_reinf_c _ 0 0 1 0 146 2 4 0 148 2 4 0 -1 -1 -1 -1 
+pt_pinnath_reinf_b _ 0 0 1 0 148 1 2 0 146 2 4 0 145 1 3 0 -1 -1 -1 
+pt_pinnath_reinf_c _ 0 0 1 0 146 3 6 0 148 1 2 0 -1 -1 -1 -1 
 pt_ithilien_reinf_a _ 0 0 1 0 121 4 7 0 -1 -1 -1 -1 -1 
 pt_ithilien_reinf_b _ 0 0 1 0 122 3 5 0 -1 -1 -1 -1 -1 
 pt_ithilien_reinf_c _ 0 0 1 0 123 2 4 0 -1 -1 -1 -1 -1 
 pt_blackroot_reinf_a _ 0 0 1 0 151 6 12 0 -1 -1 -1 -1 -1 
-pt_blackroot_reinf_b _ 0 0 1 0 154 1 2 0 152 1 2 0 151 3 6 0 -1 -1 -1 
-pt_blackroot_reinf_c _ 0 0 1 0 152 2 4 0 154 2 4 0 -1 -1 -1 -1 
+pt_blackroot_reinf_b _ 0 0 1 0 154 3 6 0 152 1 2 0 151 2 3 0 -1 -1 -1 
+pt_blackroot_reinf_c _ 0 0 1 0 152 1 3 0 154 3 6 0 -1 -1 -1 -1 
 pt_rohan_reinf_a _ 0 0 1 0 238 2 4 0 222 1 2 0 221 3 6 0 -1 -1 -1 
 pt_rohan_reinf_b _ 0 0 1 0 239 2 4 0 230 1 2 0 223 3 5 0 231 1 2 0 -1 -1 
 pt_rohan_reinf_c _ 0 0 1 0 240 2 3 0 234 1 2 0 224 1 2 0 -1 -1 -1 
