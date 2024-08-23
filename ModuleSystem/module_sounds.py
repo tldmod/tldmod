@@ -334,11 +334,11 @@ sounds = [
 ("horse_low_whinny1",          sf_vol_9, ["horse_whinny-1.wav","horse_whinny-2.wav"]),
 ("mount_death",                sf_vol_9, ["horse_snort_4.wav","horse_snort_5.wav"]),
 
-("waterfall" ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["CWE_amb_waterfall_medium_01_2d_lp.ogg"]),
+("waterfall" ,sf_priority_9|sf_vol_9|sf_looping|sf_start_at_random_pos, ["CWE_amb_waterfall_medium_01_2d_lp.ogg"]),
 ("orc_cheer", sf_priority_5|sf_vol_10,                                  ["orc_yell_1.wav","orc_yell_2.wav","orc_grunt_long_1.wav", "orc_victory_1.wav","orc_victory_2.wav","orc_victory_3.wav","orc_victory_4.wav","orc_victory_5.wav","orc_victory_6.wav"]), 
 # directional sounds for props
 ("water_wavesplash_source",sf_priority_9|sf_vol_6|sf_looping|sf_start_at_random_pos, ["water_wavesplash_loop.wav"]),
-("water_waves_source"     ,sf_priority_9|sf_vol_6|sf_looping|sf_start_at_random_pos, ["water_waves_loop.wav"]),
+("water_waves_source"     ,sf_priority_9|sf_vol_15|sf_looping|sf_start_at_random_pos, ["water_waves_loop.wav"]), #very loud, so use sparingly
 ("water_splash_source"    ,sf_priority_9|sf_vol_12|sf_looping|sf_start_at_random_pos, ["water_splash_loop.ogg"]),
 #("fire_loop"             ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]), #"Fire_Torch_Loop3.ogg"
 #("torch_loop"            ,sf_priority_9|sf_vol_4|sf_looping|sf_start_at_random_pos, ["Fire_Torch_Loop3.wav"]),

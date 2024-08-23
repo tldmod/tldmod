@@ -2291,13 +2291,13 @@ spr_gon_ruined_castle_d 0 0 gon_destroy_castle_d bo_destroy_castle_d 0
 spr_gon_ruined_house_a 0 0 ruined_house_a bo_ruined_house_a 0
 
 
-spr_gon_ruined_house_a_E 0 0 gon_destroy_house_a bo_destroy_house_a 0
+spr_gon_ruined_house_d 0 0 gon_destroy_house_a bo_destroy_house_a 0
 
 
 spr_gon_ruined_house_b 0 0 ruined_house_b bo_ruined_house_b 0
 
 
-spr_gon_ruined_house_b_E 0 0 gon_destroy_house_b bo_destroy_house_b 0
+spr_gon_ruined_house_e 0 0 gon_destroy_house_b bo_destroy_house_b 0
 
 
 spr_gon_ruined_house_c 0 0 ruined_house_c bo_ruined_house_c 0
@@ -2886,7 +2886,7 @@ spr_osgiliath_ruins_set_one 0 0 osgiliath_ruins_set_one bo_osgiliath_ruins_set_o
 spr_osgiliath_ruins_set_one_E 0 0 osgiliath_ruins_set_one 0 0
 
 
-spr_osgiliath_ruins_seven 0 0 osgiliath_ruins_seven bo_osgiliath_ruins_seven 0
+spr_osgiliath_ruins_seven 0 0 osgiliath_ruins_seven bo_osgiliath_ruins_seven_new 0
 
 
 spr_osgiliath_ruins_seven_E 0 0 osgiliath_ruins_seven 0 0
@@ -4886,7 +4886,7 @@ spr_distant_mountain_snow_1 69632 0 distant_mountain_snow_1 0 0
 spr_distant_mountain_snow_2 69632 0 distant_mountain_snow_2 0 0
 
 
-spr_osgiliath_far_f 0 0 osgiliath_far 0 0
+spr_osgiliath_far_f 0 0 osgiliath_far bo_apple_basket 0
 
 
 spr_hill 0 0 hill_steppe bo_hill 0

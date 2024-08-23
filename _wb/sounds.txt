@@ -639,7 +639,7 @@ soundsfile version 2
  horse_whinny.wav 0
  horse_whinny-1.wav 2304
  horse_whinny-2.wav 2304
- CWE_amb_waterfall_medium_01_2d_lp.ogg 1174
+ CWE_amb_waterfall_medium_01_2d_lp.ogg 2454
  water_splash_loop.ogg 3222
  lord_dies.wav 1937
  enemy_lord_dies.wav 1937
@@ -928,10 +928,10 @@ snd_neigh1 0 6 631 632 633 634 635 636
 snd_horse_snort1 1872 5 564 565 566 567 568 
 snd_horse_low_whinny1 2304 2 637 638 
 snd_mount_death 2304 2 567 568 
-snd_waterfall 1174 1 639 
+snd_waterfall 2454 1 639 
 snd_orc_cheer 2640 9 409 410 408 411 412 413 414 415 416 
 snd_water_wavesplash_source 1686 1 577 
-snd_water_waves_source 1686 1 575 
+snd_water_waves_source 3990 1 575 
 snd_water_splash_source 3222 1 640 
 snd_lord_dies 1937 1 641 
 snd_enemy_lord_dies 1937 1 642 
