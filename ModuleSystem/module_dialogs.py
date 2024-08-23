@@ -1025,12 +1025,19 @@ dialogs = [
             (eq, "$g_talk_troop", "trp_npc21"), #also Berta
                         ],
 "I'm sorry, my equipment is my own.", "do_member_trade",[]], #Glorfindel and others being pricks
-[anyone,"member_trade", [], "Very well, it's all here...", "do_member_trade",[(change_screen_equip_other)]],
+[anyone,"member_trade", [], "Very well, it's all here...", "do_member_trade",[(set_player_troop, "trp_player"),(change_screen_equip_other)]], #RamonNZ: set back to trp_player before open equipment or you get two screens of the NPCs equipment.
 
 #[anyone,"do_member_trade", [], "Anything else?", "member_talk",[]],
 
 [anyone|plyr,"member_talk", [], "What can you tell me about your skills?", "view_member_char_requested",[]],
-[anyone,"view_member_char_requested", [], "All right, let me tell you...", "do_member_view_char",[(change_screen_view_character)]],
+[anyone,"view_member_char_requested", [], "All right, let me tell you...", "do_member_view_char", [
+    (try_begin),
+        (this_or_next|le, "$original_savegame_version", 4029),
+        (eq, "$cheat_mode", 1),
+        (set_player_troop,"$g_talk_troop"),
+    (try_end),
+    [change_screen_view_character]
+    ]], #RamonNZ: Export NPC
 
 [anyone|plyr,"member_talk", [], "We need to separate for a while.", "member_separate",[
             # (call_script, "script_npc_morale", "$g_talk_troop"),
@@ -1111,7 +1118,8 @@ dialogs = [
         (remove_member_from_party, "$g_talk_troop")]],
 
 [anyone|plyr,"member_talk", [], "I'd like to ask you something.", "member_question",[]],
-[anyone|plyr,"member_talk", [], "Never mind.", "close_window",[(call_script,"script_stand_back"),]],
+#[anyone|plyr,"member_talk", [], "Never mind.", "close_window",[(call_script,"script_stand_back"),]],
+[anyone|plyr,"member_talk", [], "Never mind.", "close_window",[(set_player_troop, "trp_player"), (call_script,"script_stand_back")]], #RamonNZ: set back to trp_player at the end or you'll become the troop.
 [anyone,"member_question", [], "Very well. What did you want to ask?", "member_question_2",[]],
 
 #MV: disabled - useless info, companions don't leave if their morale drops

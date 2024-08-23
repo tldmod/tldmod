@@ -39,14 +39,14 @@ from header_skills import *
 # If you want to add a new skill, use the reserved skills or use non-hardcoded skills.
 
 skills = [
-  ("trade","Bargainer",sf_base_att_cha|sf_effects_party,10,"Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)"),
+  ("trade","Bargainer",sf_base_att_int|sf_effects_party,10,"Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)"),
   ("leadership","Leadership",sf_base_att_cha,10,"Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)"),
   ("prisoner_management", "Prisoner Management",sf_base_att_cha,10,"Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)"), 
   ("reserved_1","Reserved Skill 1",sf_base_att_cha|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_2","Reserved Skill 2",sf_base_att_cha|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_3","Reserved Skill 3",sf_base_att_cha|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_4","Reserved Skill 4",sf_base_att_cha|sf_inactive,10,"This is a reserved skill."), 
-  ("persuasion","Wildcraft", sf_base_att_cha|sf_effects_party,10, "The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)"),
+  ("persuasion","Wildcraft", sf_base_att_int|sf_effects_party,10, "The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)"),
   ("engineer","-----",sf_base_att_int|sf_effects_party,0,"-----"),
   ("first_aid", "First Aid",sf_base_att_int|sf_effects_party,10,"Heroes regain 5%% per skill level of hit-points lost during mission. (Party skill)"), 
   ("surgery","Surgery",sf_base_att_int|sf_effects_party,10,"Each point to this skill gives a 4%% chance that a mortally struck party member will be wounded rather than killed. (Party skill)"), 
@@ -56,7 +56,7 @@ skills = [
   ("pathfinding","Path-finding",sf_base_att_int|sf_effects_party,10,"Party map speed is increased by 3%% per skill level. (Party skill)"), 
   ("tactics","Tactics",sf_base_att_int,10,"Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)"),
   ("tracking","Tracking",sf_base_att_int|sf_effects_party,10,"Tracks become more informative. (Party skill)"),
-  ("trainer","Trainer",sf_base_att_int,10,"Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Personal skill)"),
+  ("trainer","Trainer",sf_base_att_cha,10,"Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Personal skill)"),
   ("reserved_5","Reserved Skill 5",sf_base_att_int|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_6","Reserved Skill 6",sf_base_att_int|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_7","Reserved Skill 7",sf_base_att_int|sf_inactive,10,"This is a reserved skill."), 

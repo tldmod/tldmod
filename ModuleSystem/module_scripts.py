@@ -2104,7 +2104,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 4028),  #Rafa: Savegame version
+    (assign,"$savegame_version", 4029),  #Rafa: Savegame version
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -25524,6 +25524,13 @@ command_cursor_scripts = [
     (try_begin), #change so it stores nightly patch number from now on (approximate)
         (le, "$savegame_version", 40),
         (assign, "$savegame_version", 4028),
+    (try_end),
+    
+    (try_begin), #Change skill assignments; inform player about NPC respec
+        (le, "$savegame_version", 4028),
+        (assign, "$savegame_version", 4029),
+        (tutorial_box, "@This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu."),
+        (display_message, "@This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu."),
     (try_end),
 ]),
 

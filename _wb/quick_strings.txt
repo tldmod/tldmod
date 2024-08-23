@@ -1,4 +1,4 @@
-2011
+2012
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -91,7 +91,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-08-17_15:40___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-08-23_22:42___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -760,6 +760,7 @@ qstr_{s11}_{s10} {s11}_{s10}
 qstr_{s13}_{s14} {s13}_{s14}
 qstr_Notice:_Isengard_Las Notice:_Isengard_Last_Stand_quest_cancelled_for_savegame_compatibility_reasons._Isengard_can_now_be_sieged_like_a_regular_city.
 qstr_Hobbit_quest_aborted Hobbit_quest_aborted_for_compatibility_reasons._Hobbits_will_now_only_appear_after_certain_conditions_are_met.
+qstr_This_update_has_chan This_update_has_changed_the_assignment_of_some_skills_to_their_attributes._If_you_would_like_to_review_your_companions'_skills,_you_can_now_import/export_them_if_you_ask_them_about_their_skills_from_the_party_menu.
 qstr_Something_wrong_not_ Something_wrong,_not_enough_troops_to_remove
 qstr_Troop:_{s6}___Level: Troop:_{s6}_-_Level:_{reg1}
 qstr_{reg6}_Centers_Left_ {reg6}_Centers_Left_for_{s2}
