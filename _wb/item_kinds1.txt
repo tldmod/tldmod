@@ -1,5 +1,5 @@
 itemsfile version 2
-975
+978
  itm_no_item INVALID_ITEM INVALID_ITEM 1  invalid_item 0  11 0 3 0 1.5 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -2888,16 +2888,25 @@ itemsfile version 2
  itm_nazgul_robe_wb Nazgul_robe Nazgul_robe 1  old_nazgulrobe 0  553648141 0 500 123731968 3 100 0 10 10 0 0 0 0 0 0 0 0
 0
 
+ itm_civilian_carry_wood_heap Fire_Wood Fire_Wood 1  wood_heap_b_carry 0  4194306 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
+0
+
+ itm_civilian_carry_wood Wood Wood 1  ado_wood_carry 0  4194306 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
+0
+
  itm_civilian_carry_amphora Amphora Amphora 1  amphora_carry 0  4194306 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
 0
 
  itm_civilian_carry_sack Sack Sack 1  sack_carry 0  4194306 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
 0
 
- itm_civilian_carry_wood_heap Fire_Wood Fire_Wood 1  wood_heap_b_carry 0  4194306 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
+ itm_civilian_carry_basket Wood Wood 1  basket_cloth_carry 0  4194307 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
 0
 
- itm_civilian_carry_wood Wood Wood 1  ado_wood_carry 0  4194306 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
+ itm_civilian_carry_honey Wood Wood 1  honey_pot_new_carry 0  4194307 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
+0
+
+ itm_civilian_carry_oil Wood Wood 1  oil_new_carry 0  4194307 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
 0
 
  itm_civilian_carry_wood2 Wood Wood 1  ado_wood_carry 0  4194307 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
