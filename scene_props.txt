@@ -132,7 +132,7 @@ spr_fireplace_c 0 0 fireplace_c bo_fireplace_c 0
 spr_sofa_b 0 0 sofa_b bo_sofa 0
 
 
-spr_ewer_a 0 0 ewer_a bo_ewer_a 0
+spr_ewer_a 0 0 ewer_a_new bo_ewer_a 0
 
 
 spr_end_table_a 0 0 end_table_a bo_end_table_a 0
@@ -309,7 +309,7 @@ spr_village_snowy_house_e 0 0 village_snowy_house_e bo_village_snowy_house_e 0
 spr_village_snowy_house_f 0 0 village_snowy_house_f bo_village_snowy_house_f 0
 
 
-spr_carpet_f 0 0 carpet_f 0 0
+spr_carpet_f 0 0 carpet_f_new bo_carpet_f_new 0
 
 
 spr_awning_b 0 0 awning_b bo_awning 0
@@ -915,10 +915,10 @@ spr_chest_c 0 0 chest_c bo_chest_c 0
 spr_counter_tavern 0 0 counter_tavern bocounter_tavern 0
 
 
-spr_cup 0 0 cup 0 0
+spr_cup 0 0 cup_new 0 0
 
 
-spr_dish_metal 0 0 dish_metal 0 0
+spr_dish_metal 0 0 dish_metal_new 0 0
 
 
 spr_gothic_chair 0 0 gothic_chair 0 0
@@ -927,13 +927,13 @@ spr_gothic_chair 0 0 gothic_chair 0 0
 spr_gothic_stool 0 0 gothic_stool 0 0
 
 
-spr_grate 0 0 grate bograte 0
+spr_grate 0 0 grate_new bograte 0
 
 
-spr_jug 0 0 jug 0 0
+spr_jug 0 0 jug_new 0 0
 
 
-spr_potlamp 0 0 potlamp 0 0
+spr_potlamp 0 0 potlamp_new 0 0
 
 
 spr_weapon_rack 0 0 weapon_rack boweapon_rack 0
@@ -990,10 +990,10 @@ spr_straw_b 0 0 straw_b 0 0
 spr_straw_c 0 0 straw_c 0 0
 
 
-spr_cloth_a 0 0 cloth_a_new 0 0
+spr_cloth_a 0 0 cloth_a_new_animated 0 0
 
 
-spr_cloth_b 0 0 cloth_b_new 0 0
+spr_cloth_b 0 0 cloth_b_new_animated 0 0
 
 
 spr_mat_a 0 0 mat_a 0 0
@@ -1872,7 +1872,7 @@ spr_stone_heap_b 0 0 stone_heap_b bo_stone_heap 0
 spr_smoke_stain 0 0 soot_a 0 0
 
 
-spr_brazier_with_fire 0 0 brazier bo_brazier 1
+spr_brazier_with_fire 0 0 brazier_new bo_brazier 1
 -40  6 1955 3 0 0 85 1965 1 22 1965 1 20 1955 3 0 0 100 1965 1 13 1968 2 13 9000000 
 
 
@@ -2062,11 +2062,11 @@ spr_candle_c 0 0 candle_c 0 1
 -40  2 1955 3 0 0 10 1965 1 27 
 
 
-spr_lamp_a 0 0 lamp_a 0 1
+spr_lamp_a 0 0 lamp_a_new 0 1
 -40  2 1955 3 66 0 2 1965 1 26 
 
 
-spr_lamp_b 0 0 lamp_b 0 1
+spr_lamp_b 0 0 lamp_b_new 0 1
 -40  5 1955 3 65 0 -7 1965 1 28 1955 3 70 0 -5 1965 1 13 1968 2 13 9000000 
 
 
@@ -4963,22 +4963,22 @@ spr_distant_place_Dolguldur 0 0 prop_dolguldur 0 1
 -40  10 4 0 2273 0 31 2 144115188075856558 1 1798 2 550 1071422 5 0 2273 0 1798 2 450 469277 5 0 1798 2 700 7846834 3 0 
 
 
-spr_honey_pot 0 0 honey_pot 0 0
+spr_honey_pot 0 0 honey_pot_new 0 0
 
 
-spr_butter_pot 0 0 butter_pot 0 0
+spr_butter_pot 0 0 butter_pot_new 0 0
 
 
-spr_apple_basket 0 0 apple_basket bo_apple_basket 0
+spr_apple_basket 0 0 apple_basket_new bo_apple_basket 0
 
 
 spr_sausages 0 0 sausages 0 0
 
 
-spr_wine 0 0 amphora_slim 0 0
+spr_wine 0 0 amphora_slim_new 0 0
 
 
-spr_oil 0 0 oil 0 0
+spr_oil 0 0 oil_new 0 0
 
 
 spr_boat_sail_on 0 0 new_boat_sail_on bo_new_boat_sail_on 0
