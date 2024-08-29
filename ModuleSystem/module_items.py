@@ -302,7 +302,7 @@ items =[
 ###Horses: sumpter horse/ pack horse, saddle horse, steppe horse, warm blood, geldling, stallion,   war mount, charger, 
 ###Carthorse, hunter, heavy hunter, hackney, palfrey, courser, destrier.
 # scraps_end in constants points here
-["oliphant","Oliphaunt",[("oliphant",0)],itp_type_horse,0,1,hit_points(255)|body_armor(255)|difficulty(255)|horse_speed(1)|horse_maneuver(1)|horse_charge(500),imodbits_horse_basic|0],
+["oliphant","Oliphaunt",[("oliphant_base",0)],itp_type_horse,0,1,hit_points(255)|body_armor(255)|difficulty(255)|horse_speed(1)|horse_maneuver(1)|horse_charge(500),imodbits_horse_basic|0],
 
 ["sumpter_horse","Sumpter_Horse",[("sumpter_horse",0),("CWE_horse_light_a",imodbit_cracked),("CWE_horse_light_b",imodbit_rusty),("CWE_horse_light_c",imodbit_bent)],itp_type_horse|itp_shop,0,70,hit_points(40)|body_armor(1)|difficulty(1)|horse_speed(28)|horse_maneuver(33)|horse_charge(5)|horse_scale(95)|abundance(90),imodbits_horse_basic|imodbits_horse_basic,[]],
 ["saddle_horse","Saddle_Horse",[("sumpter_horse",0)],itp_type_horse|itp_shop,0,150,hit_points(60)|body_armor(7)|difficulty(1)|horse_speed(39)|horse_maneuver(34)|horse_charge(8)|horse_scale(100)|abundance(90),imodbits_horse_basic|imodbits_horse_basic,[]],

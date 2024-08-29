@@ -896,7 +896,7 @@ scene_props = [
 #("fake_house_far_snowy_d",0,"fake_house_far_snowy_d","0", []),
 
 ("earth_wall_a",0,"earth_wall_a","bo_earth_wall_a", []),
-  ("earth_wall_a_E",0,"earth_wall_a","0", []),
+("earth_wall_b",0,"earth_wall_b","bo_earth_wall_b", []),
 #("earth_wall_a2",0,"earth_wall_a2","bo_earth_wall_a2", []),
 #("earth_wall_b",0,"earth_wall_b","bo_earth_wall_b", []),
 #("earth_wall_b2",0,"earth_wall_b2","bo_earth_wall_b2", []),
@@ -1448,7 +1448,7 @@ scene_props = [
 ("gon_ruined_wallgate",0,"ruined_wallgate","bo_ruined_wallgate", []),
 ("gon_ruined_castle_a",0,"gon_destroy_castle_a","bo_destroy_castle_a", []),
 ("gon_ruined_bridge_a",0,"ruined_bridge_a","bo_ruined_bridge_a", []),
-  ("gon_ruined_bridge_a_E",0,"ruined_bridge_a","0", []),
+("gon_ruined_tower_b",0,"gon_ruins_tower","bo_ruins_tower", []),
 ("gon_ruined_bridge_b",0,"ruined_bridge_b","bo_ruined_bridge_b", []),
   ("gon_ruined_bridge_b_E",0,"ruined_bridge_b","0", []),
 ("gon_ruined_fem",0,"statue_female_ruined","bo_statue_female_marble", []),
@@ -2433,8 +2433,8 @@ scene_props = [
 ("khand_tent_a", 0, "khandTent_a", "bo_khandTent_a", []),
 ("khand_tent_b", 0, "khandTent_b", "bo_khandTent_a", []),
 ("harad_tent_tusks", 0, "haradTentTusks", "bo_haradTentTusks", []),
-("harad_tent_a", 0, "haradTent_a", "bo_haradTent_a", []),
-("harad_tent_b", 0, "haradTent_b", "bo_haradTent_a", []),
+("harad_tent_a", 0, "haradTent_a_new", "bo_khandTent_a", []),
+("harad_tent_b", 0, "haradTent_b_new", "bo_khandTent_a", []),
 
 # Romainoir Rohan buildings
 ("rohan_birdhouse",0,"rohan_birdhouse","bo_birdhouse",[]),
@@ -2688,7 +2688,7 @@ scene_props = [
 ("horse_pony",sokf_invisible,"pony","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
   (spawn_horse,"itm_pony", 0),(agent_set_stand_animation, reg0, "anim_horse_stand"),])]),
-("harad_oliphant",sokf_invisible,"oliphant","bo_oliphant", [(ti_on_init_scene_prop,[
+("harad_oliphant",sokf_invisible,"oliphant_base","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
   (spawn_horse,"itm_oliphant", 0),
   (agent_set_speed_limit, reg0, 0),

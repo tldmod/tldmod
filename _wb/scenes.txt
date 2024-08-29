@@ -296,10 +296,10 @@ scn_dunland_camp_center dunland_camp_center 4352 none none 0 0 100 100 -100 0x00
   0 
   1  833 
  outer_terrain_rohan 
-scn_harad_camp_center harad_camp_center 4352 none none 0 0 100 100 -100 0x000000072005591e00040506000059a100002cd500005052 
+scn_harad_camp_center harad_camp_center 4352 none none 0 0 100 100 -100 0x0000000020040de3000699aa00005234000048ba000004b5 
   0 
   1  833 
- outer_terrain_steppe 
+ New_outer_mountains2east_ithilien 
 scn_khand_camp_center khand_camp_center 4352 none none 0 0 100 100 -100 0x0000000020040de3000699aa00005234000048ba000004b5 
   0 
   1  833 
@@ -1188,10 +1188,10 @@ scn_dunland_camp_siege dunland_camp_siege 4352 none none 0 0 100 100 -100 0x0000
   0 
   1  833 
  outer_terrain_rohan 
-scn_harad_camp_siege harad_camp_siege 4352 none none 0 0 100 100 -100 0x000000072005591e00040506000059a100002cd500005052 
+scn_harad_camp_siege harad_camp_siege 4352 none none 0 0 100 100 -100 0x0000000020040de3000699aa00005234000048ba000004b5 
   0 
   1  833 
- outer_terrain_steppe 
+ New_outer_mountains2east_ithilien 
 scn_khand_camp_siege khand_camp_siege 4352 none none 0 0 100 100 -100 0x0000000020040de3000699aa00005234000048ba000004b5 
   0 
   1  833 

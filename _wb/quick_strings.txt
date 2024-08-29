@@ -1,4 +1,4 @@
-2012
+2009
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -91,7 +91,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-08-23_22:42___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-08-29_19:26___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -914,9 +914,6 @@ qstr_Delivered_{reg60}_da Delivered_{reg60}_damage.
 qstr_DEBUG__Health_Regen_ DEBUG_(Health_Regen):_{s1}_regains_{reg0}%_health.__=_+{reg1}%_STR
 qstr_Your_bear_form_has_{ Your_bear_form_has_{reg2}/{reg1}_HP!
 qstr_DEBUG:_Ti_on_item_wi DEBUG:_Ti_on_item_wielded
-qstr_Three_Nazgul_are_cir Three_Nazgul_are_circling_in_the_sky_above_the_battlefield!
-qstr_Two_Nazgul_are_circl Two_Nazgul_are_circling_in_the_sky_above_the_battlefield!
-qstr_A_Nazgul_is_circling A_Nazgul_is_circling_in_the_sky_above_the_battlefield!
 qstr_Some_of_your_human_t Some_of_your_human_troops_are_not_daunted_by_the_darkness.(Night_Troops_are_not_affected_by_night_time_penalties)
 qstr_You_are_filled_with_ You_are_filled_with_just_rage_as_you_set_your_eyes_upon_the_enemy_(Berserk_active).
 qstr_Your_mount_is_scared Your_mount_is_scared_by_the_{s5}!
