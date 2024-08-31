@@ -3548,8 +3548,8 @@ simple_triggers = [
         (call_script, "script_defend_center", "trp_knight_1_6", "p_town_minas_tirith"),
         (call_script, "script_defend_center", "trp_knight_1_7", "p_town_minas_tirith"),
         (call_script, "script_defend_center", "trp_knight_1_8", "p_town_minas_tirith"),
-        (call_script, "script_defend_center", "trp_knight_6_1", "p_town_minas_tirith"),
-        (call_script, "script_defend_center", "trp_knight_6_2", "p_town_minas_tirith"),
+        # (call_script, "script_defend_center", "trp_knight_6_1", "p_town_minas_tirith"),
+        # (call_script, "script_defend_center", "trp_knight_6_2", "p_town_minas_tirith"),
       (try_end),
       
       (try_begin),
@@ -3588,8 +3588,8 @@ simple_triggers = [
         (call_script, "script_accompany_marshall", "trp_knight_1_6", "trp_knight_1_3"),
         (call_script, "script_accompany_marshall", "trp_knight_1_7", "trp_knight_1_3"),
         (call_script, "script_accompany_marshall", "trp_knight_1_8", "trp_knight_1_3"),
-        (call_script, "script_accompany_marshall", "trp_knight_6_1", "trp_knight_1_3"),
-        (call_script, "script_accompany_marshall", "trp_knight_6_2", "trp_knight_1_3"),
+        # (call_script, "script_accompany_marshall", "trp_knight_6_1", "trp_knight_1_3"),
+        # (call_script, "script_accompany_marshall", "trp_knight_6_2", "trp_knight_1_3"),
       (try_end),
       
       (try_begin),

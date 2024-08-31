@@ -48,6 +48,21 @@ mission_templates_cutscenes = [
         (replace_scene_props, "spr_troop_archer", "spr_empty"),
         (replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
         (replace_scene_props, "spr_troop_guard", "spr_empty"),
+		(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"),
+		(replace_scene_props, "spr_troop_human_prisoner", "spr_empty"),
+		(replace_scene_props, "spr_troop_troll", "spr_empty"),	
+		(replace_scene_props, "spr_troop_civilian", "spr_empty"),
+		(replace_scene_props, "spr_troop_civ_sitting_ground", "spr_empty"),
+		(replace_scene_props, "spr_troop_civ_sitting_chair", "spr_empty"),	
+        (replace_scene_props, "spr_troop_rider", "spr_empty"),	
+        (replace_scene_props, "spr_troop_civ_walker", "spr_empty"),
+        (replace_scene_props, "spr_troop_messenger", "spr_empty"),
+        (try_for_range, ":prop", spr_troop_civ_lying, spr_troop_priest+1), #remove town agents
+            (replace_scene_props, ":prop", "spr_empty"),
+        (try_end), 
+        (try_for_range, ":prop", spr_animal_dog, spr_animal_warg+1), #remove town agents
+            (replace_scene_props, ":prop", "spr_empty"),
+        (try_end),         
         
         (assign, "$g_tld_intro_state", 0),
         # all friends with player
@@ -115,40 +130,17 @@ mission_templates_cutscenes = [
            (agent_set_animation, ":horse_agent", "anim_horse_stand"),
          (try_end),
          
-         # peasants run!
-         (init_position, pos1),
-         (position_set_x, pos1, 4500),
-         (position_set_y, pos1, 5500),
-         (try_begin),
-           (ge, "$g_tld_intro_state", 4),
-           (try_for_agents, ":agent_no"), 
-             (agent_get_team, ":team", ":agent_no"),
-             (eq, ":team", 0),
-             (agent_set_scripted_destination, ":agent_no", pos1, 1),
-           (try_end),
-         (try_end),
-         
          (try_begin),
            (eq, "$g_tld_intro_state", 1), #look at the sky
            #(ge, ":cur_time", 1), #replaced by detection of player camera init
            (mission_cam_set_mode, 1),
-           (init_position, pos1),
-           (position_rotate_z, pos1, 90),
-           (position_rotate_x, pos1, 45),
-           (position_set_x, pos1, 5000),
-           (position_set_y, pos1, 4000),
-           (position_set_z, pos1,  800),
+           (entry_point_get_position, pos1, 41),
            (mission_cam_set_position, pos1),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 2), #pan to farmers
            (ge, ":cur_time", 4),
-           (init_position, pos1),
-           (position_rotate_z, pos1, 90),
-           (position_rotate_x, pos1, -15),
-           (position_set_x, pos1, 5000),
-           (position_set_y, pos1, 4000),
-           (position_set_z, pos1,  800),
+           (entry_point_get_position, pos1, 42),
            (mission_cam_animate_to_position, pos1, 3000, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
@@ -178,16 +170,30 @@ mission_templates_cutscenes = [
                (agent_play_sound, ":agent_no", "snd_horror_scream_man"),
              (try_end),
            (try_end),
+         # peasants run!
+         (entry_point_get_position, pos1, 43),
+           (try_for_agents, ":agent_no"), 
+             (agent_get_team, ":team", ":agent_no"),
+             (eq, ":team", 0),
+             ]+(is_a_wb_cutscene==1 and 
+              [(agent_start_running_away, ":agent_no", pos1),]
+                or
+              [(agent_set_scripted_destination, ":agent_no", pos1, 1),]
+             )+[             
+           (try_end),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 4), #pan to battle
            (ge, ":cur_time", 10),
-           (init_position, pos1),
-           (position_rotate_z, pos1, 180),
-           (position_rotate_x, pos1, -15),
-           (position_set_x, pos1, 4500),
-           (position_set_y, pos1, 5700),
-           (position_set_z, pos1, 1200),
+             ]+(is_a_wb_cutscene==1 and [
+            (try_for_range, ":entry", 44, 46),
+               (entry_point_get_position, pos1, ":entry"),
+               (set_spawn_position, pos1),
+               (spawn_scene_prop, "spr_village_fire_big"),
+               (spawn_scene_prop, "spr_sound_fire_big"),
+            (try_end),
+              ] or [] )+[            
+           (entry_point_get_position, pos1, 43),
            (mission_cam_animate_to_position, pos1, 5000, 0),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
@@ -208,12 +214,12 @@ mission_templates_cutscenes = [
            (position_set_x, pos1, 4500),
            (position_set_y, pos1,  100),
            (position_set_z, pos1, 2200),
-           (mission_cam_animate_to_position, pos1, 4000, 0),
+           (mission_cam_animate_to_position, pos1, 7000, 0),
            (reset_mission_timer_b),
            (val_add, "$g_tld_intro_state", 1),
          (else_try),
            (eq, "$g_tld_intro_state", 6), #finish
-           (ge, ":cur_time_b", 4),
+           (ge, ":cur_time_b", 6),
            (finish_mission, 0),
            (val_add, "$g_tld_intro_state", 1),
            #chain to next intro mission
@@ -361,6 +367,8 @@ mission_templates_cutscenes = [
         (music_set_situation, 0), (music_set_culture, 0),
         (play_track, "track_mount_and_blade_title_screen", 2),
         (music_set_situation, mtf_sit_fight),
+        (replace_scene_props, "spr_troop_archer_fight_single", "spr_empty"),
+        (replace_scene_props, "spr_troop_guard_fight_single", "spr_empty"),
       ]),
       
       (0, 0, ti_once,
