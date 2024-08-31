@@ -211,7 +211,7 @@ dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle.1|Non sapremmo come
 dlga_player_hire_troop_nextcycle:player_hire_troop|Qualcos'altro ?
 dlga_start:player_siege_castle_commander_1|Che cosa vuoi ?
 dlga_player_siege_castle_commander_1:player_siege_ask_surrender|Arrenditi ! La tua condizione è priva di speranze!
-dlga_player_siege_castle_commander_1:close_window|Niente. Ti lascerò andare ora.
+dlga_player_siege_castle_commander_1:close_window|Niente. Non ti trattengo oltre.
 dlga_player_siege_ask_surrender:player_siege_ask_surrender_treatment|Forse... Ho la tua parola d'onore che sarò trattato dignitosamente ?
 dlga_player_siege_ask_surrender:player_siege_ask_leave_unmolested|Siamo pronti a lasciare il castello nelle tue mani e ad allontanarci se mi darai la tua parola d'onore che che lascerai partire indisturbati.
 dlga_player_siege_ask_surrender:close_window|Arrenderci ? Hah ! Possiamo tenere queste mura fino a morire tutti di vecchiaia.
@@ -726,7 +726,7 @@ dlga_healers_meet:healer_who|Cosa stai facendo ?
 dlga_healers_meet:healers_ask|Ho bisogno del vostro aiuto.
 dlga_healers_ask:healer_wound_ask|Io e i miei compagni abbiamo ferite gravi che richiedono ben più del semplice tempo per guarire. Puoi sanare le nostre ferite ?
 dlga_healers_ask:healer_injured_ask|Sia io che i miei uomini abbiamo riportato ferite, e non abbiamo il tempo di attendere che guariscano. Puoi darci aiuto?
-dlga_healers_meet:close_window|Niente.
+dlga_healers_meet:close_window|Grazie, non ti trattengo oltre.
 dlga_healers_injured_check:healers_injured_heal|Sì, prenditi cura di noi.
 dlga_healers_wound_check:healers_wound_heal|Sì, prenditi cura di noi.
 dlga_healers_wound_check:close_window|Non ora.

@@ -1912,14 +1912,20 @@ itm_civilian_shovel|Shovel
 itm_civilian_shovel_pl|Shovel
 itm_nazgul_robe_wb|Nazgul robe
 itm_nazgul_robe_wb_pl|Nazgul robe
-itm_civilian_carry_amphora|Amphora
-itm_civilian_carry_amphora_pl|Amphora
-itm_civilian_carry_sack|Sack
-itm_civilian_carry_sack_pl|Sack
 itm_civilian_carry_wood_heap|Fire Wood
 itm_civilian_carry_wood_heap_pl|Fire Wood
 itm_civilian_carry_wood|Wood
 itm_civilian_carry_wood_pl|Wood
+itm_civilian_carry_amphora|Amphora
+itm_civilian_carry_amphora_pl|Amphora
+itm_civilian_carry_sack|Sack
+itm_civilian_carry_sack_pl|Sack
+itm_civilian_carry_basket|Wood
+itm_civilian_carry_basket_pl|Wood
+itm_civilian_carry_honey|Wood
+itm_civilian_carry_honey_pl|Wood
+itm_civilian_carry_oil|Wood
+itm_civilian_carry_oil_pl|Wood
 itm_civilian_carry_wood2|Wood
 itm_civilian_carry_wood2_pl|Wood
 itm_animal_spider|Spider
@@ -1930,3 +1936,21 @@ itm_animal_wolf|Wolf
 itm_animal_wolf_pl|Wolf
 itm_animal_werewolf|Werewolf
 itm_animal_werewolf_pl|Werewolf
+itm_animal_dog|Dog
+itm_animal_dog_pl|Dog
+itm_animal_horse|Horse
+itm_animal_horse_pl|Horse
+itm_animal_pony|Pony
+itm_animal_pony_pl|Pony
+itm_animal_deer|Deer
+itm_animal_deer_pl|Deer
+itm_animal_camel|camel
+itm_animal_camel_pl|camel
+itm_animal_boar|boar
+itm_animal_boar_pl|boar
+itm_animal_boar_big|boar
+itm_animal_boar_big_pl|boar
+itm_animal_rat|rat
+itm_animal_rat_pl|rat
+itm_animal_warg|Warg
+itm_animal_warg_pl|Warg

@@ -641,8 +641,8 @@ ui_buying_price|Costo: =%d P.R.
 ui_notification_riding_skill_not_enough|Non hai abbastanza abilità per cavalcarlo.
 ui_notification_payment_value|Spesa: %s
 ui_notification_payment_receive_value|Guadagni %s
-ui_weekly_cost_value|Mantenere: %s
-ui_sell|Dài
+ui_weekly_cost_value|Paghe: %s
+ui_sell|Consegna
 ui_hire|Arruola
 ui_notification_cant_hire|(non abbastanza P.R. per arruolare)
 ui_joining_cost_weekly_wage|Arruola: %d P.R. -- Mantieni: %d P.R.

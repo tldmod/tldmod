@@ -84,7 +84,7 @@ qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
 qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
 qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
-qstr__rev_?_wb__dev_^_Bui| rev ¿? wb | dev ^ Built 2024-06-16 07:46   
+qstr__rev_?_wb__dev_^_Bui| rev ¿? wb | dev ^ Built 2024-08-31 16:40   
 qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
 qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
 qstr_Attributes|Attributes
@@ -265,7 +265,7 @@ qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
 qstr__Scales_with_Wildcra|(Scales with Wildcraft)
 qstr_Strengthens_all_Hero|Strengthens all Heroes
-qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
+qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
 qstr_lead_more_Uruks|lead more Uruks
 qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
@@ -316,6 +316,7 @@ qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
 qstr_^None|^None
 qstr_near_the_Great_East_|near the Great East Road, the abandoned old road
 qstr_near_what_is_left_of|near what is left of the Old Forest Road, the ancient dwarven path that used to cross the thick forest
+qstr_near_the_old_cross_r|near the old cross-roads, where the Ithilien road meets the road to Osgiliath
 qstr_close_to_the_Hand_sh|close to the Hand-shaped sign of Saruman, pointing toward the tower of Orthanc
 qstr_in_sight_of_the_maje|in sight of the majestic City Walls of Minas Tirith, the White City
 qstr_in_sight_of_Edoras_t|in sight of Edoras, the capital of Rohan
@@ -749,6 +750,7 @@ qstr_{s11}_{s10}|{s11} {s10}
 qstr_{s13}_{s14}|{s13} {s14}
 qstr_Notice:_Isengard_Las|Notice: Isengard Last Stand quest cancelled for savegame compatibility reasons. Isengard can now be sieged like a regular city.
 qstr_Hobbit_quest_aborted|Hobbit quest aborted for compatibility reasons. Hobbits will now only appear after certain conditions are met.
+qstr_This_update_has_chan|This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu.
 qstr_Something_wrong_not_|Something wrong, not enough troops to remove
 qstr_Troop:_{s6}___Level:|Troop: {s6} - Level: {reg1}
 qstr_{reg6}_Centers_Left_|{reg6} Centers Left for {s2}
@@ -843,7 +845,6 @@ qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlef
 qstr_A_poisonous_fog_from_|A poisonous fog from Dol Guldur lingers on the battlefield. You do not feel any different, but you hear your enemies suffer and you can smell their fear.
 qstr_swy_ui_evil|swy ui evil
 qstr_swy_river_tinting_co|swy river tinting color
-qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|You shapeshift into a bear!
 qstr_You_got_{reg1}_exper|You got {reg1} experience in bear form.
 qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
@@ -901,9 +902,6 @@ qstr_Delivered_{reg60}_da|Delivered {reg60} damage.
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
 qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
 qstr_DEBUG:_Ti_on_item_wi|DEBUG: Ti on item wielded
-qstr_Three_Nazgul_are_cir|Three Nazgul are circling in the sky above the battlefield!
-qstr_Two_Nazgul_are_circl|Two Nazgul are circling in the sky above the battlefield!
-qstr_A_Nazgul_is_circling|A Nazgul is circling in the sky above the battlefield!
 qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
 qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
 qstr_Your_mount_is_scared|Your mount is scared by the {s5}!
@@ -1149,15 +1147,6 @@ qstr_{s1}^Difference:_{re|{s1}^Difference: {reg1}
 qstr_Daily_strength_incom|Daily strength income and garrisons for {s4}
 qstr_{s1}^{s7}:_{reg1}__G|{s1}^{s7}: {reg1}  Garrison: {reg3}/{reg2}{reg4?: Capturable}
 qstr_{s1}^^Total:_{reg1}|{s1}^^Total: {reg1}
-qstr_Gothmog_besieges_Wes|Gothmog besieges West Osgiliath!
-qstr_Gothmog_besieges_Ere|Gothmog besieges Erech!
-qstr_Gothmog_besieges_Pin|Gothmog besieges Pinnath Gelin!
-qstr_Gothmog_besieges_Edh|Gothmog besieges Edhellond!
-qstr_Gothmog_besieges_Edo|Gothmog besieges Edoras!
-qstr_Gothmog_besieges_Cai|Gothmog besieges Cair Andros!
-qstr_Gothmog_besieges_Pel|Gothmog besieges Pelargir!
-qstr_Saruman_besieges_Edo|Saruman besieges Edoras!
-qstr_Partitava_besieges_D|Partitava besieges Dale!
 qstr_{s10}_besieged!|{s10} besieged!
 qstr_SW_advance_camps_spa|SW advance camps spawned around a point northwest of East Emnet!
 qstr_SE_advance_camps_spa|SE advance camps spawned around a point west of West Osgiliath!

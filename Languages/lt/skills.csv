@@ -15,19 +15,19 @@ skl_surgery|Operacija
 skl_wound_treatment|Žaizdų gydymas
 ; skl_wound_treatment_desc|Party healing speed is increased by 20%% per level of this skill. (Party skill)
 skl_inventory_management|Inventoriaus tvarkymas
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. (Leader skill)
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
 ; skl_spotting|Spotting
 ; skl_spotting_desc|Party seeing range is increased by 10%% per skill level. (Party skill)
 ; skl_pathfinding|Path-finding
 ; skl_pathfinding_desc|Party map speed is increased by 3%% per skill level. (Party skill)
 skl_tactics|Taktikos
-; skl_tactics_desc|Every two levels of this skill increases starting battle advantage by 1. (Party skill)
+; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)
 skl_tracking|Sekimas
 skl_tracking_desc|Iš pėdsakų sužinai daugiau. (Grupės įgūdis)
 skl_trainer|Treniravimas
 ; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Personal skill)
 skl_looting|Plėšikavimas
-; skl_looting_desc|This skill increases the amount of loot obtained by 10%% per skill level. (Party skill)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
 ; skl_horse_archery|Mounted Archery
 ; skl_horse_archery_desc|Reduces damage and accuracy penalties for archery and throwing when mounted. (Personal skill)
 skl_riding|Jodinėjimas
@@ -35,7 +35,7 @@ skl_riding|Jodinėjimas
 skl_athletics|Atletika
 ; skl_athletics_desc|improves your running speed. (Personal skill)
 skl_shield|Skydas
-; skl_shield_desc|reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
 skl_weapon_master|Ginklų meistras
 ; skl_weapon_master_desc|makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)
 ; skl_power_draw|Power Draw

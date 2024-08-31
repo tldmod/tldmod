@@ -86,7 +86,6 @@ qstr_1H_Weapons^2H_Weapon|1H Weapons^2H Weapons^Polearms^Archery^Crossbows^Throw
 qstr_Equipment|Equipment
 qstr_The_Last_Days_Mod_Op|The Last Days Mod Options
 qstr_War_Starts_at_Level:|War Starts at Level: 
-qstr_Restrict_Player_Equi|Restrict Player Equipment:  
 qstr_Battle_Formations_an|Battle Formations and AI:  
 qstr_Native|Native
 qstr_TLD_FormAI__Original|TLD FormAI (Original)
@@ -237,7 +236,7 @@ qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|+{reg1} to Spotting
 qstr__Scales_with_Wildcra|(Scales with Wildcraft)
 qstr_Strengthens_all_Hero|Strengthens all Heroes
-qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
+qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
 qstr_lead_more_Uruks|lead more Uruks
 qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
@@ -748,7 +747,6 @@ qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the
 qstr_A_thunderstorm_from_t|A thunderstorm from the Misty Mountains rages over the battlefield. Archers have difficulty in this weather.
 qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield. You and your troops feel weakened. There is fear amongst the men.
 qstr_A_poisonous_fog_from_|A poisonous fog from Dol Guldur lingers on the battlefield. You do not feel any different, but you hear your enemies suffer and you can smell their fear.
-qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|You shapeshift into a bear!
 qstr_You_got_{reg1}_exper|You got {reg1} experience in bear form.
 qstr_Your_ability_to_chan|Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.
@@ -804,9 +802,6 @@ qstr_Division_{reg1}_{s2}_fo|Division {reg1} {s2} forms {reg0} lines (memorized)
 qstr_Delivered_{reg60}_da|Delivered {reg60} damage.
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
 qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
-qstr_Three_Nazgul_are_cir|Three Nazgul are circling in the sky above the battlefield!
-qstr_Two_Nazgul_are_circl|Two Nazgul are circling in the sky above the battlefield!
-qstr_A_Nazgul_is_circling|A Nazgul is circling in the sky above the battlefield!
 qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
 qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
 qstr_Your_mount_is_scared|Your mount is scared by the {s5}!
@@ -1138,7 +1133,6 @@ qstr_^^^^^^^You_come_upon|^^^^^^^You come upon the refugees leaving {s2} and on 
 qstr_^^^^^^^You_come_upon_|^^^^^^^You come upon the refugees you have been tracking since {s2}. They seem to be on their way to {s3}, and are mostly the old and the infirmed. ^^ There are few guards, but not enough to stop you and your men from killing all of them.
 qstr_^^At_last_the_Master|^^At last, the Master is making His move! The torches burn bright. The sharp weapons gleam. You and your stout lads will receive marching orders soon. Ai, there'll be fighting, lots of it, and glory enough to go around!^^You have the honour of being summoned to audience with the Master in His tower. Likely enough your first orders will be snaga's work - raid a village here, waylay a caravan there. But you'll prove yourself soon enough. Who's to say you won't play as large a role as any commander of {s2} in {s3}?^^The War has begun; the fall of Man and their allies begins!
 qstr_^^Your_head_suddenly|^^Your head suddenly fills with a vision - the flaming Eye. All around you, your warriors stop in their tracks. Somehow, you know at that moment that all of you are hearing the same summons, seeing the same vision. Great is the art of the Lidless Eye - great is the power of Barad-dûr!.^^The knowledge, unspoken, seeps into your very bones. The time has come. The Dark Lord commands - you shall all march upon your enemies in open war. Orders from {s2} in {s3} will come. Your part at first will not be great, but you'll prove yourself soon enough.^^ The War has begun; the fall of the West begins!
-qstr_{s13}_asked_you_to_j|{s13} asked you to join him with at least {reg13} troops and meet Isengard's Last Stand.
 qstr_You_defeated_{reg5}_|You defeated {reg5} enemies and have impressed your commander.
 qstr_You_defeated_{reg5}_e|You defeated {reg5} enemies.
 qstr_You_failed_to_defeat|You failed to defeat any enemy.
@@ -1193,9 +1187,6 @@ qstr_The_War_of_the_Two_T|The War of the Two Towers has started!
 qstr_The_forces_of_{s22}_|The forces of {s22} have rallied! {s22} is now {s23}.
 qstr_The_might_of_{s22}_h|The might of {s22} has diminished! {s22} is now {s23}.
 qstr_In_a_desperate_attem|In a desperate attempt to defend against his enemies, Sauron sends out his legions of Mordor!
-qstr_Guardians_of_{s6}|Guardians of {s6}
-qstr_Guard_Legion_of_{s6}|Guard Legion of {s6}
-qstr_Scouts_report_that_{|Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
 qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|The hosts of {s2} march back to defend their homes!
 qstr_{playername}_s_Reser|{playername}'s Reserves
@@ -1378,15 +1369,6 @@ qstr_This_is_evil_news_yo|This is evil news you bring. The black sails grow ever
 qstr_This_is_evil_news_you|This is evil news you bring. The Easterlings grow ever bolder, and Esgaroth burns. I will not blame you overmuch, {playername}, for your failure, but we have been struck a sore blow indeed, a sore blow. Go now. Hope dwindles for our kingdom, and we must fight to keep what remains of it alive.
 qstr_Pah!_It_seems_you_we|Pah! It seems you weren't able to find your sea-legs, {playername}. Now they sit, these men of Gondor, high in their towers, vain as kings, laughing as the black sails burn! Perhaps a stint at the oars of a galley would be fitting punishment for your troops; a pity they are under your command, and not mine. The Eye will not be pleased. Leave me now. 
 qstr_Have_you_nothing_bet|Have you nothing better than weak excuses to offer for your failure, {playername}? Perhaps you are not as strong as we had believed. Serve our cause better in future, {playername}. There will be no mercy for the weak!
-qstr_{playername}_we_have|{playername}, we have Isengard on their knees. They have launched their last stand and is protecting Saruman in his tower. Ride with me and meet them!
-qstr_Are_you_ready_to_mee|Are you ready to meet Isengard's last stand?
-qstr_I_am_ready_to_ride_w|I am ready to ride with you against Isengard.
-qstr_I_am_ready_to_ride_wi|I am ready to ride with you and meet them. Let us end this now.
-qstr_I_am_not_ready_to_ri|I am not ready to ride with you yet. I need some more time.
-qstr_You_do_not_have_enou|You do not have enough troops to help in this battle. Raise at least 30 men and join me soon!
-qstr_Stay_close_we_will_t|Stay close, we will take position near the enemy. When we have all gathered, we will strike.
-qstr_You_have_taken_too_l|You have taken too long... We shall ride now, with or without you. We will gather near the enemy, and in 3 days time, we will strike.
-qstr_Make_haste_{playerna|Make haste, {playername}. We do not want them to recover.
 qstr_Your_mission_is_comp|Your mission is complete, {s9} wants you to resume following his army until further notice.
 qstr_{s13}_asked_you_to_g|{s13} asked you to gather {reg3} units of {s4} and deliver them back to him.
 qstr_Moreover_should_you_|Moreover, should you become {s24}, you will be welcomed to my War Council, where you can make decisions that will affect the course of our campaign. For the moment, as a {s25}, just follow us and stay close. We'll be moving soon.
