@@ -23510,12 +23510,12 @@ scripts = [
       (try_begin),
           (quest_slot_ge, "qst_guardian_party_quest", slot_quest_current_state, 1), #Isengard
           (str_store_string, s50, "@Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope."),
-          (str_store_string, s51, "@Missing String"),
+          (str_store_string, s51, "@I did what I could."),
           (str_store_string, s52, "@Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!"),
           (assign, "$g_tld_convo_lines", 3),
       (else_try), #Helm's Deep
            (str_store_string, s50, "@Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!"),
-          (str_store_string, s51, "@Missing String"),
+          (str_store_string, s51, "@@I did what I could."),
           (str_store_string, s52, "@Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!"),
           (assign, "$g_tld_convo_lines", 3),
       (try_end),
@@ -23531,7 +23531,7 @@ scripts = [
     (else_try),
       (eq, ":convo_code", tld_cc_gandalf_rohan_quest_fail),     
       (str_store_string, s50, "@{Playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back."),
-      (str_store_string, s51, "@Missing String"),      
+      (str_store_string, s51, "@I..."),      
       (str_store_string, s52, "@You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not."),
       (assign, "$g_tld_convo_lines", 3),
       (call_script, "script_end_quest", "qst_guardian_party_quest"),

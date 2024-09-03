@@ -591,15 +591,15 @@ dialogs = [
     #(call_script, "script_finish_quest", "qst_guardian_party_quest", 100),
     ]],
 
-[anyone,"start", [(eq, "$g_talk_troop", "trp_aragorn"),(eq, "$talk_context", tc_court_talk),(eq, "$current_town", p_town_hornburg)],
+[anyone,"start", [(eq, "$g_talk_troop", "trp_aragorn"),(eq, "$talk_context", tc_town_talk),(eq, "$current_town", p_town_hornburg)],
 "In a little while I take the road again, {playername}, a hard road untrodden by many for uncounted years. I hope your path is easier than mine, friend. In the meantime, perhaps you may wish to go into the deep Caverns of Helm's Deep, of which my companion Gimli the Dwarf has spoken much.", "close_window",
    []],
    
-[anyone,"start", [(eq, "$g_talk_troop", "trp_gimli"),(eq, "$talk_context", tc_court_talk),(eq, "$current_town", p_town_hornburg)],
+[anyone,"start", [(eq, "$g_talk_troop", "trp_gimli"),(eq, "$talk_context", tc_town_talk),(eq, "$current_town", p_town_hornburg)],
 "Have you yet been to the caves in the back? The Glittering Caves of Aglarond, {playername}! Happy is the chance that has led your footsteps here!", "close_window",
    []],
    
-[anyone,"start", [(eq, "$g_talk_troop", "trp_legolas"),(eq, "$talk_context", tc_court_talk),(eq, "$current_town", p_town_hornburg)],
+[anyone,"start", [(eq, "$g_talk_troop", "trp_legolas"),(eq, "$talk_context", tc_town_talk),(eq, "$current_town", p_town_hornburg)],
 "I have pledged to my friend Gimli Gloin's son that when the war is over, I shall return here with him and see the Glittering Caves of Aglarond for myself. If you have the time, {playername}, you could do this before you go on your way again. A brief respite from all the fighting!", "close_window",
    []],   
 
@@ -13413,6 +13413,13 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                   (eq, "$g_encountered_party_template", "pt_gandalf"),
                   (eq, "$g_tld_gandalf_state", 0),], #not willing to talk
 "You are making me late! Wizards are never late!", "close_window", [(assign, "$g_leave_encounter", 1), (call_script, "script_send_from_conversation_mission", "$g_talk_troop"),]],
+
+#just a safeguard incase you meat Gandalf in a town
+[anyone,"start", [(this_or_next|eq, "$talk_context", tc_town_talk),
+                  (eq, "$talk_context", tc_court_talk),
+                  (this_or_next|eq, "$g_talk_troop", "trp_radagast"),
+                  (eq, "$g_talk_troop", "trp_gandalf"),], #not willing to talk
+"You are making me late! Wizards are never late!", "close_window", []],
 
 [anyone,"start", [(eq, "$talk_context", tc_party_encounter),
                   (eq, "$g_encountered_party_template", "pt_nazgul"),
