@@ -7301,12 +7301,11 @@ game_menus = [
 
 ( "moria_must_escape",city_menu_color, # dungeon crawl: way out of moria
  "^^The book seems to give the account of the last attempt of dwarves to resettle in Moria.\
- Attempt which apparently ended with gruesome death for all involved. Perusing the book, \
- you stumble on the words 'true silver'! Studying the pages you suddenly understand \
- that those are the descriptions of dwarven stashes somewhere on the lower levels. Hah! \
- Would not it be cool to uncover the long lost dwarven mithril!? \
- ^You eagerly follow the directions, into a narrow winding tunnel and down... \
- ^...^After a couple of hours of fruitless search you understand that you are lost deep in Moria and need to find a way out.",
+ Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate, \
+ you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^ \
+ Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction, \
+ into a narrow winding tunnel and down... \
+ ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.",
     "none",[(set_background_mesh, "mesh_town_moria"),],[
 	  ("moria_exit_scene",[], "Find your way out!",[
 			(modify_visitors_at_site,"scn_moria_deep_mines"),
@@ -7552,7 +7551,7 @@ game_menus = [
 	  ("moria_enter",[
 				(eq, "$current_town", "p_town_moria"),
 				(this_or_next|eq, "$found_moria_entrance", 1),(eq,"$cheat_mode",1), (eq, "$moria_book_given",0),
-	        ], "Return into main hall of Moria trough the secret entrance",[
+	        ], "Return into main hall of Moria through the secret entrance",[
 			(modify_visitors_at_site,"scn_moria_center",),
 			(reset_visitors),
             (set_visitor,1,"trp_player"),

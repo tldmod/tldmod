@@ -4918,9 +4918,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone, "ring_hunters_1",
   [],
-  "Excellent. The North has recently been plagued by a marauding band of outlaws, who raid villages and ambush travellers searching for rings of any kind\
-   You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.\
-   The first is returning with their loot to their encampment on the eaves of Mirkwood. The other, advances towards Beorn's House in great numbers, and I fear what may happen if they are left unimpeded.","ring_hunters_2",
+  "Excellent. The North has recently been plagued by a marauding band of outlaws who raid villages and ambush travellers, searching for rings of any kind.^^\
+   You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.^^\
+   The first is returning with loot to their encampment on the eaves of Mirkwood. The other advances towards Beorn's House in great numbers and I fear what may happen if they are left unimpeded.","ring_hunters_2",
   []],
 
 [anyone|plyr,"ring_hunters_2",
@@ -7591,12 +7591,13 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #TLD mission: nowy quest (Kolba) -- begin
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_deliver_message")],
 "I need to send a letter to {s13} who should be currently at {s4}.\
- If you will be heading towards there, would you deliver it to him?\
- The letter needs to be in his hands in 30 days.", "lord_mission_deliver_message",
+ If you will be heading towards there, would you deliver it to {reg11?her:him}?\
+ The letter needs to be in {reg11?her:his} hands in 30 days.", "lord_mission_deliver_message",
    [ (quest_get_slot, ":quest_target_troop", "$random_quest_no", slot_quest_target_troop),
      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
      (str_store_troop_name_link,s9,"$g_talk_troop"),
      (str_store_troop_name_link,s13,":quest_target_troop"),
+     (troop_get_type, reg11, ":quest_target_troop"),(try_begin),(gt, reg11, 1), (assign, reg11, 0), (try_end),
      (str_store_party_name_link,s4,":quest_target_center"),
      (setup_quest_text,"$random_quest_no"),
 ##     (try_begin),
@@ -7612,9 +7613,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #[anyone|plyr,"lord_mission_deliver_message", [], "I am no errand boy, sir. Hire a courier for your trivialities.", "lord_mission_deliver_message_rejected_rudely",[]],
 
 [anyone,"lord_mission_deliver_message_accepted", [], 
-"I appreciate it, {playername}. Here's the letter. Give my regards to {s13} when you see him.", "close_window",
+"I appreciate it, {playername}. Here's the letter. Give my regards to {s13} when you see {reg11?her:him}.", "close_window",
    [(call_script,"script_stand_back"),
     (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+    (quest_get_slot, ":quest_target_troop", "$random_quest_no", slot_quest_target_troop),
+    (str_store_troop_name_link,s13,":quest_target_troop"),
+    (troop_get_type, reg11, ":quest_target_troop"),(try_begin),(gt, reg11, 1), (assign, reg11, 0), (try_end),
     #(call_script, "script_troop_add_gold", "trp_player", 20),
     (call_script, "script_add_faction_rps", "$g_talk_troop_faction", 20),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",3),
@@ -7639,12 +7643,13 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_deliver_message_to_enemy_lord")],
 "I need to deliver a letter to {s13} of {s15}, who must be at {s4} currently.\
- If you are going towards there, would you deliver my letter to him? The letter needs to reach him in 40 days.", "lord_mission_deliver_message", [
+ If you are going towards there, would you deliver my letter to  {reg11?her:him}? The letter needs to reach  {reg11?her:him} in 40 days.", "lord_mission_deliver_message", [
      (quest_get_slot, ":quest_target_troop", "$random_quest_no", slot_quest_target_troop),
      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
      (str_store_troop_name_link,s9,"$g_talk_troop"),
 ##     (str_store_party_name,2,"$g_encountered_party"),
      (str_store_troop_name_link,s13,":quest_target_troop"),
+     (troop_get_type, reg11, ":quest_target_troop"),(try_begin),(gt, reg11, 1), (assign, reg11, 0), (try_end),
      (str_store_party_name_link,s4,":quest_target_center"),
      (store_troop_faction, ":target_faction", ":quest_target_troop"),
      (str_store_faction_name_link,s15,":target_faction"),
