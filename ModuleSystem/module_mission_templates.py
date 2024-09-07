@@ -6,7 +6,7 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 from module_mission_templates_TLD import *
-from module_mission_templates_unneeded import *
+#from module_mission_templates_unneeded import *
 from module_mission_templates_cutscenes import *
 from module_mission_templates_morale import *
 
@@ -41,6 +41,39 @@ af_castle_lord    = af_override_horse | af_override_weapons | af_require_civilia
 af_castle_warlord = af_override_horse | af_override_weapons | af_override_head | af_override_gloves
 af_prisoner       = af_override_horse | af_override_weapons | af_override_head | af_override_gloves | af_override_gloves | af_override_foot
 
+common_siege_refill_ammo = (60, 0, 0, [],
+  [#refill ammo of defenders every minute
+    (get_player_agent_no, ":player_agent"),
+    (try_for_agents, ":cur_agent"),
+      (agent_is_alive,":cur_agent"),
+      (neq, ":cur_agent", ":player_agent"),
+      (agent_get_team, ":agent_team", ":cur_agent"),
+      (this_or_next|eq, ":agent_team", "$defender_team"),
+      (this_or_next|eq, ":agent_team", "$defender_team_2"),
+      (eq, ":agent_team", "$defender_team_3"),
+      (agent_refill_ammo, ":cur_agent"),
+    (try_end),
+    ])
+
+common_siege_check_defeat_condition = (1, 4, ti_once, [ (main_hero_fallen)],
+  [ (assign, "$pin_player_fallen", 1),
+    (display_message, "str_player_down"), #MV
+    # (get_player_agent_no, ":player_agent"),
+    # (agent_get_team, ":agent_team", ":player_agent"),
+    # (try_begin),
+      # (neq, "$attacker_team", ":agent_team"),
+      # (neq, "$attacker_team_2", ":agent_team"),
+      # (str_store_string, s5, "str_siege_continues"),
+      # (call_script, "script_simulate_retreat", 8, 15),
+    # (else_try),
+      # (str_store_string, s5, "str_retreat"),
+      # (call_script, "script_simulate_retreat", 5, 20),
+    # (try_end),
+    # (assign, "$g_battle_result", -1),
+    # (set_mission_result,-1),
+    # (call_script, "script_count_mission_casualties_from_agents"),
+    # (finish_mission,0),
+    ])
 ## Reset Fog 
 reset_fog = (ti_before_mission_start,  0, ti_once, [], 
             [(set_fog_distance,100000,0x999999)])
@@ -1074,7 +1107,7 @@ or [] ) + [
  	custom_tld_spawn_troop, custom_tld_init_battle,
 	custom_tld_horses_hate_trolls, #custom_troll_hitting,
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
-	nazgul_sweeps,
+	#nazgul_sweeps,
 	custom_warg_sounds, custom_lone_wargs_are_aggressive, #custom_lone_wargs_special_attack, # WIP, needs more work (mtarini); Improved, but still WIP. (CppCoder)
 	tld_player_cant_ride,
 	custom_track_companion_casualties,
@@ -5836,8 +5869,9 @@ mission_templates = [ # not used in game
       (56, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_tab_shield_small_round_b, itm_black_tunic]),
       (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_tab_shield_small_round_b, itm_black_tunic]),
     ],
-    tld_common_wb_muddy_water+
-    tournament_triggers
+    tld_common_wb_muddy_water
+    #+
+    #tournament_triggers
 ),
 ( "arena_challenge_fight",mtf_team_fight, -1, # used for orc mutiny
   "You enter a melee fight.",
@@ -5970,18 +6004,18 @@ mission_templates = [ # not used in game
 	common_custom_battle_tab_press,
 	common_custom_battle_question_answered,
 	common_inventory_not_available,
-	common_custom_siege_init,
+	#common_custom_siege_init,
 	common_music_situation_update,
 	custom_battle_check_victory_condition,
 	common_battle_victory_display,
 	custom_battle_check_defeat_condition,
-	common_siege_attacker_do_not_stall,
+	#common_siege_attacker_do_not_stall,
 	common_siege_refill_ammo,
-	common_siege_init_ai_and_belfry,
-	common_siege_move_belfry,
-	common_siege_rotate_belfry,
-	common_siege_assign_men_to_belfry,
-	common_siege_ai_trigger_init_2,
+	#common_siege_init_ai_and_belfry,
+	#common_siege_move_belfry,
+	#common_siege_rotate_belfry,
+	#common_siege_assign_men_to_belfry,
+	#common_siege_ai_trigger_init_2,
 ]),
 
 ( "custom_battle_form_test",mtf_battle_mode,-1,
@@ -6089,20 +6123,20 @@ mission_templates = [ # not used in game
     tld_common_battle_scripts+[
 	common_custom_battle_tab_press,
 	common_custom_battle_question_answered,
-	common_custom_siege_init,
+	#common_custom_siege_init,
 	common_inventory_not_available,
 	common_music_situation_update,
 	custom_battle_check_victory_condition,
 	common_battle_victory_display,
 	custom_battle_check_defeat_condition,
 	(0, 0, ti_once,[(assign, "$defender_team", 1),(assign, "$attacker_team", 0),(assign, "$defender_team_2", 3),(assign, "$attacker_team_2", 2)], []),
-	common_siege_ai_trigger_init_2,
-	common_siege_attacker_do_not_stall,
+	#common_siege_ai_trigger_init_2,
+	#common_siege_attacker_do_not_stall,
 	common_siege_refill_ammo,
-	common_siege_init_ai_and_belfry,
-	common_siege_move_belfry,
-	common_siege_rotate_belfry,
-	common_siege_assign_men_to_belfry,
+	#common_siege_init_ai_and_belfry,
+	#common_siege_move_belfry,
+	#common_siege_rotate_belfry,
+	#common_siege_assign_men_to_belfry,
 ]),
 ( "custom_battle_HD",mtf_battle_mode,-1,
   "You wait on the walls for the incoming horde.",
@@ -6128,7 +6162,7 @@ mission_templates = [ # not used in game
     tld_siege_battle_scripts +[
     common_custom_battle_tab_press,
     common_custom_battle_question_answered,
-    common_custom_siege_init,
+    #common_custom_siege_init,
     common_inventory_not_available,
     common_music_situation_update,
     custom_battle_check_victory_condition,
@@ -6141,8 +6175,8 @@ mission_templates = [ # not used in game
 		(assign, "$defender_team_2", 3),
 		(assign, "$attacker_team_2", 2),
 		(set_fog_distance, 80, 0x010101)]),
-	common_siege_ai_trigger_init_2,
-	common_siege_attacker_do_not_stall,
+	#common_siege_ai_trigger_init_2,
+	#common_siege_attacker_do_not_stall,
 	common_siege_refill_ammo,
 	ballista_init,ballista_operate,ballista_disengage,ballista_shoot,ballista_reload_pause,ballista_reload,ballista_fly_missile,ballista_toggle_fire_arrow,
 	ballista_missile_illumination,ballista_camera_alignment,ballista_turn_up,ballista_turn_down,ballista_turn_left,ballista_turn_right,ballista_aim,
@@ -6189,7 +6223,7 @@ mission_templates = [ # not used in game
 	horse_whistle_init,
 	horse_whistle,
 	######################################## tree selection and 
-	scene_init_fog,scene_set_fog,
+	#scene_init_fog,scene_set_fog,
 	scene_set_flora_init,scene_set_flora_army_spawn,
 ]),
 ( "custom_battle_parade",mtf_battle_mode,-1,

@@ -1,4 +1,4 @@
-2002
+1994
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -91,7 +91,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-09-06_13:46___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-09-07_08:15___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -920,13 +920,6 @@ qstr_Some_of_your_human_t Some_of_your_human_troops_are_not_daunted_by_the_darkn
 qstr_You_are_filled_with_ You_are_filled_with_just_rage_as_you_set_your_eyes_upon_the_enemy_(Berserk_active).
 qstr_Your_mount_is_scared Your_mount_is_scared_by_the_{s5}!
 qstr_Your_mount_is_scared_ Your_mount_is_scared_by_the_{s5},_but_you_can_master_it!
-qstr_Nazgul_sweep! Nazgul_sweep!
-qstr_You_and_your_horse_p You_and_your_horse_panic,_the_Nazgul_cries_are_unbearable!
-qstr_Your_horse_panics_th Your_horse_panics,_the_Nazgul_cries_are_unbearable!
-qstr_You_cower_in_terror_ You_cower_in_terror,_the_Nazgul_cries_are_unbearable!
-qstr_knocked_unconscious knocked_unconscious
-qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
-qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
 qstr_Received_{reg66}_dam Received_{reg66}_damage.
 qstr_You_yell_for_your_ho You_yell_for_your_horse.
 qstr_You_do_not_need_to_r You_do_not_need_to_rally_your_troops_yet.
@@ -982,7 +975,6 @@ qstr_Ballista:_out_of_amm Ballista:_out_of_ammo!
 qstr_Ballista:_turn_CURSO Ballista:_turn_CURSOR,_aim_LSHIFT,_shoot_SPACE,_set_fire_T,_exit_F
 qstr_Ballista:_out_of_ammo Ballista:_out_of_ammo
 qstr_The_ladders_on_Deepi The_ladders_on_Deeping_Wall!_Watch_out!
-qstr_FOG:R_{reg0}_G_{reg1 FOG:R_{reg0}_G_{reg1}_B{reg2}_dist_{reg3}
 qstr_max_X_{reg0}_max_Y_{ max_X_{reg0}_max_Y_{reg1}
 qstr_Press_F3_to_start_th Press_F3_to_start_the_battle.
 qstr_THREE.._TWO..._ONE.. THREE.._TWO..._ONE...._FIGHT!

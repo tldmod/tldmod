@@ -8,6 +8,20 @@ from module_constants import *
 
 ## cpp: Currently you can move outside of the boundries. TODO: Fix it. :)
 
+common_siege_refill_ammo = (60, 0, 0, [],
+  [#refill ammo of defenders every minute
+    (get_player_agent_no, ":player_agent"),
+    (try_for_agents, ":cur_agent"),
+      (agent_is_alive,":cur_agent"),
+      (neq, ":cur_agent", ":player_agent"),
+      (agent_get_team, ":agent_team", ":cur_agent"),
+      (this_or_next|eq, ":agent_team", "$defender_team"),
+      (this_or_next|eq, ":agent_team", "$defender_team_2"),
+      (eq, ":agent_team", "$defender_team_3"),
+      (agent_refill_ammo, ":cur_agent"),
+    (try_end),
+    ])
+
 common_init_deathcam_wb = (0, 0, ti_once, [],
 [
   (assign, "$tld_camera_on", 0),
@@ -1963,18 +1977,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
   (store_trigger_param_1, ":agent"),
 
   (agent_slot_eq, ":agent", slot_agent_hp_shield_active, 1),
-
-  (assign, ":continue", 0),
-  (try_begin),
-    (gt, "$nazgul_in_battle", 1), #There are nazguls
-    (agent_is_active, "$temp2"),
-    (assign, ":continue", 1),
-  (else_try),
-    (agent_is_human, ":agent"),
-    (assign, ":continue", 1),
-  (try_end),
-
-  (eq, ":continue", 1),],
+  ],
   
   [  
     (store_trigger_param_1, ":agent"),
@@ -2222,100 +2225,7 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
   ])
 
 
-nazgul_attack = (20, 0, ti_once, [
-      (gt, "$nazgul_in_battle", 1), #Has to be 2 nazgul
 
-      (store_mission_timer_a, ":mission_time_a"),
-      (store_random_in_range, ":ran_time", 45, 60),
-      (ge, ":mission_time_a", ":ran_time"), #Random time between 45 - 60 secs
-
-      (store_random_in_range, ":random", 0, 100),
-      (store_faction_of_party, ":faction", "p_main_party"),
-      (faction_get_slot, ":side", ":faction", slot_faction_side),
-
-      (le, ":random", 40), #40% Chance every 20 seconds
-
-      (try_begin),
-        (eq, ":side", faction_side_good),
-        (assign, ":color", color_bad_news),
-      (else_try),
-        (eq, "$tld_war_began", 2),
-        (eq, ":side", faction_side_hand),
-        (assign, ":color", color_bad_news),
-      (else_try),
-        (assign, ":color", color_good_news),
-      (try_end),
-
-
-      (display_message, "@A Nazgul has joined the battle!", ":color"),
-      (str_store_string, s30, "@Feeeeel.....ourrr.....wraaaath!"),
-      (call_script, "script_troop_talk_presentation", "trp_nazgul", 7, 0),
-
-      (get_player_agent_no, ":player"),
-      (call_script, "script_find_exit_position_at_pos4", ":player"),
-      (set_spawn_position, pos4), 
-
-      (spawn_agent, "trp_nazgul"),
-      (assign, "$temp2", reg0), #Save the nazgul agent
-      (agent_set_team, "$temp2", 2),
-      (agent_get_horse, ":nazgul_horse", "$temp2"),
-      (agent_set_slot, ":nazgul_horse", slot_agent_hp_shield_active, 1),
-      (agent_set_slot, ":nazgul_horse", slot_agent_hp_shield, 100000),
-      (team_set_relation, 2, "$nazgul_team", 1),
-      (agent_get_team, ":player_team", ":player"),
-      (team_set_relation, ":player_team", 2, -1),
-      (set_show_messages, 0),
-      (team_give_order, 2, grc_everyone, mordr_charge),
-      (set_show_messages, 1),
-
-      ],
-
-      [ (store_mission_timer_a, ":mission_time_a"),
-        (agent_set_slot, "$temp2", slot_nazgul_timer, ":mission_time_a"),
-        (set_show_messages, 0),
-        (team_give_order, 2, grc_everyone, mordr_charge),
-        (set_show_messages, 1),
-    ])
-
-nazgul_run_away = (20, 0, ti_once,
-    [ 
-      (gt, "$nazgul_in_battle", 1), #Has to be 2 nazgul
-      
-      (agent_is_active, "$temp2"),
-
-      (store_mission_timer_a, ":mission_time_a"),
-      (agent_get_slot, ":time_active", "$temp2", slot_nazgul_timer),
-      (val_add, ":time_active", 60),
-      (agent_get_kill_count, ":kills", "$temp2"),
-      (this_or_next|ge, ":mission_time_a", ":time_active"),
-      (ge, ":kills", 10),
-    ],
-
-    [
-      (call_script, "script_find_exit_position_at_pos4", "$temp2"),
-      (agent_start_running_away, "$temp2", pos4),
-      (agent_set_scripted_destination_no_attack, "$temp2", pos4),
-
-      (store_faction_of_party, ":faction", "p_main_party"),
-      (faction_get_slot, ":side", ":faction", slot_faction_side),
-
-      (try_begin),
-        (eq, ":side", faction_side_good),
-        (assign, ":color", color_bad_news),
-      (else_try),
-        (eq, "$tld_war_began", 2),
-        (eq, ":side", faction_side_hand),
-        (assign, ":color", color_bad_news),
-      (else_try),
-        (assign, ":color", color_good_news),
-      (try_end),
-
-
-      (display_message, "@The Nazgul is leaving the battle.", ":color"),
-      (str_store_string, s30, "@It......Beckonsssss....."),
-      (call_script, "script_troop_talk_presentation", "trp_nazgul", 7, 0),
-
-    ])
 
 tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
     (this_or_next|check_quest_active, "qst_blank_quest_04"),
@@ -3809,6 +3719,57 @@ battle_encounters_effects = [
   (0.5,0.1, 5,[(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (eq,"$lightning_cycle",2),(set_fog_distance, 620, 0x555555),],
         [(set_fog_distance, 500, 0x010101),(assign,"$lightning_cycle",0),]),
 
+
+# check for Fellbeast chance at battle start
+(ti_after_mission_start, 0, 120, [
+
+    #check involved factions (not player party)
+    (assign, ":encountered_party_2_faction", -1),
+    (try_begin),
+        (gt, "$g_encountered_party_2", 0),
+        (store_faction_of_party, ":encountered_party_2_faction","$g_encountered_party_2"),
+    (try_end),
+    (this_or_next|eq, "$g_encountered_party_faction", fac_mordor),
+    (eq, ":encountered_party_2_faction", fac_mordor),
+    
+    #no fellbeast assigned yet
+    (neg|party_slot_eq, "$g_encountered_party", slot_party_battle_encounter_effect, FELLBEAST),
+    (neg|party_slot_eq, "$g_encountered_party_2", slot_party_battle_encounter_effect, FELLBEAST),
+
+    (gt, "$g_starting_strength_enemy_party", 1000),
+    (this_or_next|gt, "$g_starting_strength_friends", 1000),
+    (gt, "$g_starting_strength_main_party", 1000),
+    
+    (store_add, ":battle_importance", "$g_starting_strength_enemy_party", "$g_starting_strength_main_party"),
+    (val_add, ":battle_importance",  "$g_starting_strength_friends"), #this counts player strength double, but it doesn't need to be exact
+    (store_random_in_range, ":chance", 0, 20000),
+    (gt, ":battle_importance", ":chance"),
+        
+  ],[
+
+    #here, set nazgul_in_battle and nazgul_team
+    (try_begin),
+        (eq, "$g_encountered_party_faction", fac_mordor),
+        (assign, ":nazgul_party", "$g_encountered_party"),
+    (else_try),
+        (gt, "$g_encountered_party_2", 0),
+        (store_faction_of_party, ":encountered_party_2_faction","$g_encountered_party_2"),
+        (eq, ":encountered_party_2_faction", fac_mordor),
+        (assign, ":nazgul_party", ":encountered_party_2_faction"),
+    (try_end),
+    (party_set_slot, ":nazgul_party", slot_party_battle_encounter_effect, FELLBEAST),
+	(try_begin),
+		(eq, "$nazgul_team", -1), 
+		(try_for_agents,":agent"),
+			(eq, "$nazgul_team", -1),
+			(agent_get_party_id, ":party_id", ":agent"),
+            (eq, ":party_id", ":nazgul_party"),
+			(agent_get_team, "$nazgul_team",":agent"),
+		(try_end),
+	(try_end),
+    
+    #to do: place nazgul prop here on in a separate trigger
+]),
 
 ]
 
@@ -5415,5 +5376,7 @@ tld_points_of_interest = [
         # (spawn_scene_prop, "spr_barrier_8m"),
         # (agent_set_slot, ":agent", slot_agent_assigned_prop, reg0),
     # (try_end), 
-      # ]),    
+      # ]), 
+    
+    
 ]

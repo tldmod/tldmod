@@ -241,39 +241,6 @@ common_siege_attacker_do_not_stall = (5, 0, 0, [],
     (try_end),
     ])
 
-common_siege_refill_ammo = (60, 0, 0, [],
-  [#refill ammo of defenders every minute
-    (get_player_agent_no, ":player_agent"),
-    (try_for_agents, ":cur_agent"),
-      (agent_is_alive,":cur_agent"),
-      (neq, ":cur_agent", ":player_agent"),
-      (agent_get_team, ":agent_team", ":cur_agent"),
-      (this_or_next|eq, ":agent_team", "$defender_team"),
-      (this_or_next|eq, ":agent_team", "$defender_team_2"),
-      (eq, ":agent_team", "$defender_team_3"),
-      (agent_refill_ammo, ":cur_agent"),
-    (try_end),
-    ])
-
-common_siege_check_defeat_condition = (1, 4, ti_once, [ (main_hero_fallen)],
-  [ (assign, "$pin_player_fallen", 1),
-    (display_message, "str_player_down"), #MV
-    # (get_player_agent_no, ":player_agent"),
-    # (agent_get_team, ":agent_team", ":player_agent"),
-    # (try_begin),
-      # (neq, "$attacker_team", ":agent_team"),
-      # (neq, "$attacker_team_2", ":agent_team"),
-      # (str_store_string, s5, "str_siege_continues"),
-      # (call_script, "script_simulate_retreat", 8, 15),
-    # (else_try),
-      # (str_store_string, s5, "str_retreat"),
-      # (call_script, "script_simulate_retreat", 5, 20),
-    # (try_end),
-    # (assign, "$g_battle_result", -1),
-    # (set_mission_result,-1),
-    # (call_script, "script_count_mission_casualties_from_agents"),
-    # (finish_mission,0),
-    ])
 
 common_siege_init_ai_and_belfry   = (0, 0, ti_once,[(call_script, "script_siege_init_ai_and_belfry")],[])
 common_siege_move_belfry          = (0, 0, ti_once,[(call_script, "script_cf_siege_move_belfry")], [])
@@ -462,7 +429,298 @@ tournament_triggers = [
        (try_end),
        ]),
   ]
-  
+
+
+# mtarini nazgul sweeps. improved by cppcoder.
+nazgul_sweeps = (4,1.2,5,[
+	#(this_or_next|key_is_down, key_n),
+	(gt,"$nazgul_in_battle",0),
+	(store_random_in_range,reg0,0,100),
+	#(this_or_next|key_is_down, key_n),
+	#(le,reg0,"$nazgul_in_battle"), 
+	(store_mul, reg1, "$nazgul_in_battle", 5), # 5% chance every 2 seconds, for each nazgul present
+	(le,reg0,reg1),	
+	(display_log_message, "@Nazgul sweep!"),
+	# if nazgul team is not computed, compute it
+	(try_begin),
+		(eq, "$nazgul_team", -1), 
+		(try_for_agents,":agent"),
+			(eq, "$nazgul_team", -1),
+			(agent_get_party_id, ":party_id", ":agent"),
+			(ge, ":party_id", 0),
+			(party_get_template_id, ":party_template", ":party_id"),
+			(eq, ":party_template", "pt_mordor_war_party"),
+			(agent_get_team, "$nazgul_team",":agent"),
+		(try_end),
+	(try_end),
+	#(assign, reg0, "$nazgul_team"),
+	#(display_message, "@Nazgul Team = {reg0}"),
+	(store_random_in_range, ":long_skretch", 0,2),
+	# play sound
+	(get_player_agent_no, ":player_agent"), #for messages and sound origin
+	(try_begin),
+		(ge,":long_skretch",1),
+		(agent_play_sound, ":player_agent", "snd_nazgul_skreech_long" ),
+		#(display_log_message, "@Debug: LONG sweep!"),
+	(else_try),
+		(agent_play_sound, ":player_agent", "snd_nazgul_skreech_short"),
+		#(display_log_message, "@Debug: SHORT sweep!"),
+	(try_end), 
+
+	(try_for_agents,":victim"), # psycological effect:
+		(agent_is_alive,":victim"),
+		(agent_get_team, reg1, ":victim"),
+		(this_or_next|eq, "$nazgul_team", -1),
+		(teams_are_enemies, reg1, "$nazgul_team"),
+		(agent_is_human,":victim"),
+		(try_begin), # long skretch can make the horse rage twice (but only 66% of times)
+			(assign, ":horse_rage_twice",":long_skretch"),
+			(store_random_in_range,":die_roll",1,4),
+			(eq,":die_roll",1),		
+		(try_end), 
+
+		(agent_get_troop_id, ":trp_victim", ":victim"),
+		(agent_get_horse,":horse",":victim"),
+		(store_attribute_level, ":int", ":trp_victim", ca_intelligence),
+		(store_skill_level, ":riding", "skl_riding", ":trp_victim"),
+		(store_random_in_range,":die_roll_int",1,26),
+
+		(try_begin), 		# the horses could rear
+			(ge,":horse",0), # there's an horse being riden
+                        # Arsakes: exclude animals (which have hidden riders so their "mounts" don't escape)
+                        (neg|is_between, ":trp_victim", warg_ghost_begin, warg_ghost_end),
+                        (neg|is_between, ":trp_victim", "trp_spider", "trp_dorwinion_sack"),
+                        (neq, ":trp_victim", "trp_multiplayer_profile_troop_male"), (neq, ":trp_victim", "trp_werewolf"),
+
+			(try_begin), 
+				# if rider failed intelligece test: both horse and rider panic
+				(ge, ":die_roll_int" , ":int"), 
+				(try_begin),
+					(ge,":horse_rage_twice",1),
+					(agent_set_animation, ":horse", "anim_horse_rear_twice"), 
+				(else_try), 
+					(agent_set_animation, ":horse", "anim_horse_rear_fast_blend"), 
+				(try_end),
+        
+				(try_begin), #always let the player know what affects him
+					(eq, ":player_agent", ":victim"),
+					(display_log_message, "@You and your horse panic, the Nazgul cries are unbearable!"),
+				(try_end), 
+			(else_try), 
+				# if rider success on intelligence test: he won't panic, horse could
+				(store_random_in_range,":die_roll_riding",1,13),
+				(ge, ":die_roll_riding" , ":riding"), # riding test: horse is a victim if 1d12 rolls over riding skill
+				(agent_set_animation, ":horse", "anim_horse_rear"),
+				#(agent_play_sound,":horse","snd_neigh"),
+        
+				(try_begin), #always let the player know what affects him
+					(eq, ":player_agent", ":victim"),
+					(display_log_message, "@Your horse panics, the Nazgul cries are unbearable!"),
+				(try_end), 
+			# (else_try), 
+				# (assign, ":horse_resisted", 1),
+			(try_end), 
+		(try_end), 
+		
+		(try_begin), # the guys can go nuts
+			(ge, ":die_roll_int" , ":int"), # it is a victim if 1d25 rolled under intelligence	  
+			(try_begin), 
+				# mounted characters panic
+				(ge,":horse",0), 
+				(try_begin),
+					(ge,":horse_rage_twice",1),
+					(agent_set_animation, ":victim", "anim_nazgul_noooo_mounted_long"), 
+				(else_try), 
+					(agent_set_animation, ":victim", "anim_nazgul_noooo_mounted_short"),
+				(try_end), 
+			(else_try), 
+				# unmounted characters panic
+				(try_begin),
+					(ge,":long_skretch",1),
+					(agent_set_animation, ":victim", "anim_nazgul_noooo_long"),
+				(else_try), 
+					(agent_set_animation, ":victim", "anim_nazgul_noooo_short"),
+				(try_end), 
+			(try_end),
+      
+			(try_begin), #always let the player know what affects him
+				(eq, ":player_agent", ":victim"),
+				(display_log_message, "@You cower in terror, the Nazgul cries are unbearable!"),
+			(try_end),
+      
+		(try_end), 
+		# show message?
+        # MV: commented out - resistance not important, it's the other way around, effects are important
+		# (get_player_agent_no, ":player_agent"),
+		# (eq,":player_agent", ":victim"),
+		# (eq,":human_resisted", 1),
+		# (display_log_message,"@Panic resisted!"),
+		# (eq,":horse_resisted", 1),
+		# (display_log_message,"@Horse panic avoided!"),
+    (try_end),
+	(store_random_in_range,":die_roll",1,4),
+	(ge,":die_roll",2), # twice in 2 there is will an attack!
+  ],[ # physical attack on random agent
+	(assign,":random_agent",-1), # he will suffer a physical attack!
+	(assign,":random_agent_score",99999),
+	(mission_cam_get_position, 2),
+	(get_player_agent_no, ":player_agent"),
+	(try_for_agents,":victim"),
+		(agent_is_alive,":victim"),
+		(agent_is_human,":victim"),
+		(agent_get_team, reg1, ":victim"),
+		(neg|eq, ":victim",":player_agent"),
+		
+		(this_or_next|eq, "$nazgul_team", -1),
+		(teams_are_enemies, reg1, "$nazgul_team"),
+			
+		(agent_get_position, 1,":victim"),
+		(position_is_behind_position, 1,2), # a troop never suffers an attack if visible on the screen
+		
+		# this one is eligible for physical effect,
+		(store_random_in_range,":die_roll",1,10000),
+		(ge, ":random_agent_score",":die_roll"),
+		(assign, ":random_agent_score", ":die_roll"),
+		(assign, ":random_agent", ":victim"),
+    (try_end),
+
+	(gt, ":random_agent", -1),
+	(agent_get_troop_id, reg1, ":random_agent"),
+	(troop_get_type, reg2, reg1),
+	# make it scream like a pig
+	(try_begin),
+		(this_or_next|eq, reg2, tf_troll ),
+		(is_between, reg2, tf_orc_begin , tf_orc_end ),
+		(agent_play_sound,":random_agent","snd_horror_scream_orc"),
+	(else_try),
+		(eq, reg1, tf_female ),
+		(agent_play_sound,":random_agent","snd_horror_scream_woman"),
+	(else_try),
+		(agent_play_sound,":random_agent","snd_horror_scream_man"),
+	(try_end),
+	# get it killed...  (trick! self kill with hidden message... is there a better way?) NO, THERE IS NOT. GA
+	(agent_set_hit_points,":random_agent",0,1), # this still doesn't kill it
+	(set_show_messages,0),
+	#--
+	(agent_get_kill_count, ":killed", ":random_agent"),
+	(agent_deliver_damage_to_agent,":random_agent",":random_agent"), 
+	(agent_get_kill_count, ":killed_1", ":random_agent"),
+	#--
+	(set_show_messages,1),
+	
+	# display kill in a log message of appropriate color
+	# changed 0xFFAAFFAA to color_good_news -CC
+	(assign, ":text_color", color_good_news),
+	(try_begin),
+		(agent_is_ally, ":random_agent"),
+		# changed 0xFFFFAAAA to color_bad_news -CC
+		(assign, ":text_color", color_bad_news),
+	(try_end),
+	(str_store_string, s10, "@knocked unconscious"),	
+	(try_begin),
+		(gt, ":killed_1", ":killed"),
+		(str_store_string, s10, "@killed"),
+	(try_end),
+	(str_store_agent_name, s11, ":random_agent"),
+	(display_log_message, "@Nazgul diving attack on {s11}!"),
+	(display_log_message, "@{s11} is {s10} in the Nazgul attack!",":text_color"),
+])  
+
+#Kham: Actual Nazgul troop fighting
+nazgul_attack = (20, 0, ti_once, [
+      (gt, "$nazgul_in_battle", 1), #Has to be 2 nazgul
+
+      (store_mission_timer_a, ":mission_time_a"),
+      (store_random_in_range, ":ran_time", 45, 60),
+      (ge, ":mission_time_a", ":ran_time"), #Random time between 45 - 60 secs
+
+      (store_random_in_range, ":random", 0, 100),
+      (store_faction_of_party, ":faction", "p_main_party"),
+      (faction_get_slot, ":side", ":faction", slot_faction_side),
+
+      (le, ":random", 40), #40% Chance every 20 seconds
+
+      (try_begin),
+        (eq, ":side", faction_side_good),
+        (assign, ":color", color_bad_news),
+      (else_try),
+        (eq, "$tld_war_began", 2),
+        (eq, ":side", faction_side_hand),
+        (assign, ":color", color_bad_news),
+      (else_try),
+        (assign, ":color", color_good_news),
+      (try_end),
+
+
+      (display_message, "@A Nazgul has joined the battle!", ":color"),
+      (str_store_string, s30, "@Feeeeel.....ourrr.....wraaaath!"),
+      (call_script, "script_troop_talk_presentation", "trp_nazgul", 7, 0),
+
+      (get_player_agent_no, ":player"),
+      (call_script, "script_find_exit_position_at_pos4", ":player"),
+      (set_spawn_position, pos4), 
+
+      (spawn_agent, "trp_nazgul"),
+      (assign, "$temp2", reg0), #Save the nazgul agent
+      (agent_set_team, "$temp2", 2),
+      (agent_get_horse, ":nazgul_horse", "$temp2"),
+      (agent_set_slot, ":nazgul_horse", slot_agent_hp_shield_active, 1),
+      (agent_set_slot, ":nazgul_horse", slot_agent_hp_shield, 100000),
+      (team_set_relation, 2, "$nazgul_team", 1),
+      (agent_get_team, ":player_team", ":player"),
+      (team_set_relation, ":player_team", 2, -1),
+      (set_show_messages, 0),
+      (team_give_order, 2, grc_everyone, mordr_charge),
+      (set_show_messages, 1),
+
+      ],
+
+      [ (store_mission_timer_a, ":mission_time_a"),
+        (agent_set_slot, "$temp2", slot_nazgul_timer, ":mission_time_a"),
+        (set_show_messages, 0),
+        (team_give_order, 2, grc_everyone, mordr_charge),
+        (set_show_messages, 1),
+    ])
+
+nazgul_run_away = (20, 0, ti_once,
+    [ 
+      (gt, "$nazgul_in_battle", 1), #Has to be 2 nazgul
+      
+      (agent_is_active, "$temp2"),
+
+      (store_mission_timer_a, ":mission_time_a"),
+      (agent_get_slot, ":time_active", "$temp2", slot_nazgul_timer),
+      (val_add, ":time_active", 60),
+      (agent_get_kill_count, ":kills", "$temp2"),
+      (this_or_next|ge, ":mission_time_a", ":time_active"),
+      (ge, ":kills", 10),
+    ],
+
+    [
+      (call_script, "script_find_exit_position_at_pos4", "$temp2"),
+      (agent_start_running_away, "$temp2", pos4),
+      (agent_set_scripted_destination_no_attack, "$temp2", pos4),
+
+      (store_faction_of_party, ":faction", "p_main_party"),
+      (faction_get_slot, ":side", ":faction", slot_faction_side),
+
+      (try_begin),
+        (eq, ":side", faction_side_good),
+        (assign, ":color", color_bad_news),
+      (else_try),
+        (eq, "$tld_war_began", 2),
+        (eq, ":side", faction_side_hand),
+        (assign, ":color", color_bad_news),
+      (else_try),
+        (assign, ":color", color_good_news),
+      (try_end),
+
+
+      (display_message, "@The Nazgul is leaving the battle.", ":color"),
+      (str_store_string, s30, "@It......Beckonsssss....."),
+      (call_script, "script_troop_talk_presentation", "trp_nazgul", 7, 0),
+
+    ])
 ################################################################################
 
   #mission_templates_unneeded = [  ]

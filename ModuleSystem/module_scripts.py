@@ -2086,8 +2086,14 @@ scripts = [
     (val_mul, "$attacker_archer_melee", "$attacker_team_3"),
     (val_mul, "$attacker_archer_melee", "$rescue_convo_troop"),   
     (val_mul, "$attacker_archer_melee", "$tld_options_overlay_14"),   
-    (val_mul, "$attacker_archer_melee", "$g_display_agent_labels"),  
+    (val_mul, "$attacker_archer_melee", "$g_display_agent_labels"), 
     (val_mul, "$attacker_archer_melee", "$allies_leadership"),     
+    (val_mul, "$attacker_archer_melee", "$g_arena_training_num_agents_spawned"),
+    (val_mul, "$attacker_archer_melee", "$fog_red"),  
+    (val_mul, "$attacker_archer_melee", "$fog_green"),  
+    (val_mul, "$attacker_archer_melee", "$fog_blue"),  
+    (val_mul, "$attacker_archer_melee", "$fog_dist"),
+    (val_mul, "$attacker_archer_melee", "$fog_color"),
 
 	#Kham - Squelch compiler warnings END
 	
