@@ -86,7 +86,6 @@ qstr_1H_Weapons^2H_Weapon|1H Armi^2H Armi^Armi Lunghe^Tiro con l'Arco^Balestre^L
 qstr_Equipment|Equipaggiamento
 qstr_The_Last_Days_Mod_Op|Opzioni Mod The Last Days
 qstr_War_Starts_at_Level:|La Guerra Inizierà al livello:
-qstr_Restrict_Player_Equi|Limita Equipaggiamento Giocatore:
 qstr_Battle_Formations_an|Formazioni da Battaglia e IA:
 qstr_Native|Native
 qstr_TLD_FormAI__Original|FormIA TLD (Originale)
@@ -237,7 +236,7 @@ qstr_+1_Intelligence|+1 in Intelligenza
 qstr_+{reg1}_to_Spotting|+{reg1} in Avvistamento
 qstr__Scales_with_Wildcra|(Scaglie Mimetiche)
 qstr_Strengthens_all_Hero|Rafforza tutti gli Eroi
-qstr_+2_to_First_Aid__Par|+2 in Primo Soccorso (Compagnia)
+qstr_+4_to_First_Aid__Par|+4 in Primo Soccorso (Compagnia)
 qstr_lead_more_Uruks|Comanda più Uruk
 qstr_+1_to_Power_Throw|+1 in Potenza di Lancio
 qstr_Recruit_Black_Numeno|Recluta Numenoreani Neri da vari luoghi
@@ -748,7 +747,6 @@ qstr_A_thunderstorm_from_|Un temporale dalle Montagne Nebbiose infuria sul campo
 qstr_A_thunderstorm_from_t|Una tempesta dalle Montagne Nebbiose imperversa sul campo di battaglia. Gli arcieri incontrano difficoltà in un clima simle.
 qstr_A_poisonous_fog_from|Una nebbia venefica da Dol Guldur indugia sul campo di battaglia. Tu e i tuoi soldati vi sentite indeboliti. C'è spavento fra gli uomini.
 qstr_A_poisonous_fog_from_|Una venefica nebbia da Dol Guldur indugia sul campo di battaglia. Tu non percepisci alcuna differenza, ma senti i tuoi nemici soffrire e percepisci l'odore della loro paura.
-qstr_{s2}_attacked|{s2} ha attaccato
 qstr_You_shapeshift_into_|Ti trasformi in un orso !
 qstr_You_got_{reg1}_exper|Hai guadagnato {reg1}  esperienza in forma d'orso.
 qstr_Your_ability_to_chan|La tua abilità di mutaforma si è manifestata, da ora in poi potrai percorrere sentieri selvaggi sia in forma d'uomo che di orso.
@@ -804,9 +802,6 @@ qstr_Division_{reg1}_{s2}_fo|Reparto {reg1} {s2} forma {reg0} linee (memorizzato
 qstr_Delivered_{reg60}_da|Inflitti {reg60} danni.
 qstr_DEBUG__Health_Regen_|DEBUG (Rigenerazione Salute: {s1} riprende {reg0}% salute. = +{reg1}% FOR
 qstr_Your_bear_form_has_{|La tua forma d'orso ha {reg2}/{reg1} HP !
-qstr_Three_Nazgul_are_cir|Tre Nazgul stanno volando in circolo sul campo di battaglia !
-qstr_Two_Nazgul_are_circl|Due Nazgul volano in circolo sopra al campo di battaglia !
-qstr_A_Nazgul_is_circling|Un Nazgul vola circolarmente nei cieli sul campo di battaglia.
 qstr_Some_of_your_human_t|Alcune delle tue truppe umane non sono scoraggiate dall'oscurità. (I Combattenti Notturni non sono influenzati dai rigori della notte)
 qstr_You_are_filled_with_|La rabbia ti pervade mentre fissi il nemico (Berserk attivo).
 qstr_Your_mount_is_scared|La tua cavalcatura è spaventata dal {s5} !
@@ -1138,7 +1133,6 @@ qstr_^^^^^^^You_come_upon|^^^^^^^Arrivi presso i profughi che stanno lasciando {
 qstr_^^^^^^^You_come_upon_|^^^^^^^T'imbatti sui rifugiati sulle cui tracce eri sin da {s2}. Sembra che siano diretti verso {s3}, e si tratta per lo più di vecchi e infermi. ^^ Ci sono alcune guardie, ma non a sufficienza per impedire a te e a tuoi di ucciderli tutti.
 qstr_^^At_last_the_Master|^^Infine, il Padrone sta facendo la sua mossa ! Le torce bruciano luminose. Le armi affilate brillano. Tu e i tuoi coraggiosi compagni riceverete ben presto l'ordine di marciare. Ah, ci sarà da combattere, molto, e gloria per tutti !^^Ha ricevuto l'onore di essere convocato in udienza dal Padrone nella sua torre. Probabilmente i tuoi primi ordini riguarderanno lavori di snaga - razzia un villaggio qui, preda una carovana là.. Ma dari prova di te molto presto. Chi osa dire che non potrai avere un ruolo di comandante di {s2} a {s3} ?^^La Guerra è iniziata; la caduta dell'Uomo e dei loro alleati ha inizio !
 qstr_^^Your_head_suddenly|^^Nella tua mente si materializza una visione - l'Occhio fiammeggiante. Intorno a te i tuoi guerrieri si fermano. In qualche modo, sai che in quel momento tutti voi udite la stessa chiamata, avete la stessa visione. Grande è la magia dell'Occhio senza Palpebra - grande è il potere di Barad-dûr !.^^ Il sapere, pur senza parola, ti penetra fin nelle ossa. Il tempo è giunto. Il Signore Oscuro comanda - dovrai marciare sui tuoi nemici in guerra aperta. Giungeranno ordini da {s2} a {s3}. La tua parte all'inizio non sarà importante, ma darai prova di te ben presto.^^ La Guerra è iniziata; la caduta dell'Ovest è prossima ! 
-qstr_{s13}_asked_you_to_j|{s13} ti ha chiesto di unirti al suo esercito con almeno {reg13} soldati e raggiungere l'ultima difesa di Isengard.
 qstr_You_defeated_{reg5}_|Hai abbattuto {reg5} avversari e hai colpito il tuo comandante.
 qstr_You_defeated_{reg5}_e|Hai sconfitto {reg5} nemici.
 qstr_You_failed_to_defeat|Hai fallito nello sconfiggere il nemico.
@@ -1193,9 +1187,6 @@ qstr_The_War_of_the_Two_T|La guerra delle Due Torri è cominciata !
 qstr_The_forces_of_{s22}_|L'armata di {s22} si è radunata ! {s22} ora è: {s23} 
 qstr_The_might_of_{s22}_h|Il livello di forza di {s22} è diminuito. Livello attuale di {s22} : {s23}. 
 qstr_In_a_desperate_attem|In un disperato tentativo di difendersi contro i suoi nemici, Sauron invia le sue legioni di Mordor !
-qstr_Guardians_of_{s6}|Guardiani di {s6}
-qstr_Guard_Legion_of_{s6}|Legione guardiana di {s6}
-qstr_Scouts_report_that_{|Gli esploratori riportano che {s6} si è riunito in una grande armata in prossimità di {s7}, in ultimo disperato tentativo di difendere la capitale.
 qstr_The_forces_of_{s2}_e|Le forze di {s2} hanno stabilito un avamposto presso {s15} !
 qstr_The_hosts_of_{s2}_ma|I proprietari terrieri di {s2} rientrano per difendere le loro case !
 qstr_{playername}_s_Reser|Riserve di {playername}
@@ -1378,15 +1369,6 @@ qstr_This_is_evil_news_yo|Sono davvero cattive notizie quelle che porti. Le vele
 qstr_This_is_evil_news_you|Porti amare notizie. Gli Easterling si fanno sempre più audaci, mentre Esgaroth brucia. Non ti rimprovererò più di tanto, {playername}, per il tuo fallimento, ma abbiamo subito davvero un duro colpo. Va ora. Le speranze si affievoliscono per il nostro regno, e dobbiamo combattere per tenere in vita ciò che ne è rimasto.
 qstr_Pah!_It_seems_you_we|Bah ! Sembra che tu abbia perso il tuo piede marino, {playername}. Ora se ne stanno comodi, questi uomini di Gondor, nell'alto delle loro torri, vanitosi come re, ridendo di noi mentre le vele nere bruciano ! Forse una costrizione ai remi di una galera sarebbe la punizione giusta per i tuoi uomini; peccatto che siano sotto il tuo comando e non al mio. L'occhio non ne sarà compiaciuto. Vattene ora.
 qstr_Have_you_nothing_bet|Non hai niente di meglio che deboli scuse per giustificare il tuo fallimento, {playername} ? Forse non sei così forte come pensavo. Servi la nostra causa meglio di così in futuro, {playername}. Non ci srà pietà per i deboli !
-qstr_{playername}_we_have|{playername}, abbiamo messo Isengard in ginocchio. Hanno allestito la loro ultima difesa e stanno proteggendo Saruman nella sua torre. Calvalca con me per incontrarli !
-qstr_Are_you_ready_to_mee|Sei in grado di affrontare l'ultima difesa di Isengard?
-qstr_I_am_ready_to_ride_w|Posso cavalcare con te contro Isengard.
-qstr_I_am_ready_to_ride_wi|Siamo pronti a cavalcare con te per incontrarli. Poniamo fine a tutto questo.
-qstr_I_am_not_ready_to_ri|Non posso ancora cavalcare al tuo fianco. Ho bisogno di un po' di tempo.
-qstr_You_do_not_have_enou|Non hai truppe a sufficienza per dare aiuto in questa battaglia. Raccogli almeno 30 soldati e unisciti presto a me !
-qstr_Stay_close_we_will_t|Restate vicini, prenderemo posizione vicino al nemico. Quando ci saremo radunati, attaccheremo.
-qstr_You_have_taken_too_l|Hai impiegato troppo tempo... Adesso dobbiamo andare, con te o senza di te. Ci raduneremo nei pressi del nemico ed entro tre giorni, colpiremo.
-qstr_Make_haste_{playerna|Fa in fretta, {playername}. Non vogliamo che si riprendano.
 qstr_Your_mission_is_comp|La tua missione è completa, {s9} vuole che riprendi a seguire la sua armata fino a nuovo avviso.
 qstr_{s13}_asked_you_to_g|{s13} ti ha chiesto di raccogliere {reg3} unità di {s4} e riportarglieli.
 qstr_Moreover_should_you_|Inoltre, se dovessi diventare {s24}, avrai accesso al mio Consiglio di Guerra, dove potrai prendere decisioni che influenzeranno il corso della nostra campagna. Per il momento, come {s25}, seguici e resta in zona. Ci sposteremo presto.
@@ -1523,7 +1505,7 @@ qstr_I_want_you_and_your_|Voglio che tu e i tuoi uomini uccidiate
 qstr_{playername}_you_nee|{playername}, dovrai guadagnarti il mio rispetto e quello degli tuoi uomini. {s6} {reg22} {s7} truppe !
 qstr_{s9}_wants_you_to_per|{s9} desidera che tu abbatta di persona {reg22} {s6} nemici.
 qstr_{s9}_wants_you_and_y|{s9} desidera che tu e i tuoi uomini uccidiate {reg22} {s6} avversari.
-qstr_{playername}_we_have|{playername}, abbiamo messo Isengard in ginocchio. Hanno allestito la loro ultima difesa e stanno proteggendo Saruman nella sua torre. Calvalca con me per incontrarli !
+qstr_{playername}_we_have|{playername}, abbiamo ricevuto tremende notizie. i Corsari di Umbar si sono fatti sempre più audaci, e proprio mentre parliamo, una flotta si sta radunando non lontano da {s6}. Sono già nei pressi della costa e fra non molto raggiungeranno la città stessa.^^ Dobbiamo intercettare la loro flotta prima che raggiunga la città. Affrettati a raggiungere {s6} e parla con le autorità locali.
 qstr_{playername}_we_have_|{playername}, abbiamo ricevuto spaventose notizie. I selvaggi di Rhûn sono dotati di più audacia e astuzia di quanto pensassimo - non visti dai nostri esploratori, hanno costruito barche e zattere a sufficienza per fargli attraversare Lago Lungo e portare l'attacco direttamente ad Esgaroth !^^ Dobbiamo intercettare la loro flotta prima che arrivi alla città. Guida le tue truppe laggiù più in fretta possibile, e respingi quei barbari al di là delle acque !
 qstr_If_you_seek_pillage_|Se cerchi ricchezze e saccheggio, ecco un'opportunità senza pari, {playername}.^^ Una flotta Corsara sta per salpare dal porto di {s7}, e farà rotta verso {s6}, che è come una gallina pronta da spennare ! Unisciti al loro assalto e dividi le spoglie !
 qstr_The_soft_weaklings_o|Gli smidollati e deboli di Esgaroth non possono competere con i nostri veloci cavalieri e i nostri feroci guerrieri, {playername}. Questo è risaputo. Gli Uomini del Lago credono di essere al sicuro, con le acque che ci separano, ma ben presto gli dimostreremo il contrario !^^ Abbiamo fabbricato navi, e zattere, buone abbastanza da trasportare i nostri guerrieri attraverso il lago. Loro non se l'aspetteranno ! ^^Vai al nostro campo principale, e parla con il comandante se vuoi unirti all'assalto.

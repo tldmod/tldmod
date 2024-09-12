@@ -724,8 +724,8 @@ dlga_kill_scout_6:kill_scout_7|{NÉPI RANGFOKOZATOK OKTATÁSA) ^^Rangpontokon ke
 ; dlga_woodelf_help_3:close_window|Safe journey to you, Torbal. I'm sure we will meet again.
 ; dlga_healers_meet:healer_who|What do you do?.
 ; dlga_healers_meet:healers_ask|I need your help.
-; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
-dlga_healers_ask:healer_injured_ask|Az embereim és én megsérültünk, és nincs időnk megvárni hogy maguktól begyógyuljanak. Tudsz nekünk segélyt nyújtani?
+; dlga_healers_ask_2:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
+dlga_healers_ask_2:healer_injured_ask|Az embereim és én megsérültünk, és nincs időnk megvárni hogy maguktól begyógyuljanak. Tudsz nekünk segélyt nyújtani?
 dlga_healers_meet:close_window|Semmi.
 dlga_healers_injured_check:healers_injured_heal|Igen, láss el minket.
 dlga_healers_wound_check:healers_wound_heal|Igen, láss el minket.
@@ -1094,7 +1094,7 @@ dlga_start:party_encounter_hostile_defender|Mit szeretnél?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Add meg magad vagy véged!
 dlga_party_encounter_hostile_defender:close_window|Semmi. Békén is hagyunk.
 dlga_start:close_window.45|* szavak nélkül rádmered *
-dlga_start:battle_reason_stated.1|Add meg magad vagy meghalsz. Válassz.
+dlga_start:battle_reason_stated|A koponyádból fogok inni!
 dlga_battle_reason_stated:close_window|Nem félek tőled. Harcolni fogok.
 dlga_start:free|Hello. Mit tehetek érted?
 dlga_free:view_char_requested|Mesélj magadról

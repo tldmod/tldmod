@@ -86,7 +86,6 @@ qstr_1H_Weapons^2H_Weapon|Einhandwaffen^Zweihandwaffen^Stangenwaffen^Bogenschie�
 qstr_Equipment|Ausrüstung
 qstr_The_Last_Days_Mod_Op|The Last Days Mod Optionen
 qstr_War_Starts_at_Level:|Krieg beginnt bei Spielerlevel:
-qstr_Restrict_Player_Equi|Eingeschränkte Spielerausrüstung:
 qstr_Battle_Formations_an|Kampfformationen und AI:
 qstr_Native|Nativ
 qstr_TLD_FormAI__Original|TLD FormAI (Original)
@@ -237,7 +236,7 @@ qstr_+1_Intelligence|+1 Intelligenz
 qstr_+{reg1}_to_Spotting|+{reg1} Aufklärung
 qstr__Scales_with_Wildcra|(Verstärkt durch Wildkunde)
 qstr_Strengthens_all_Hero|Verstärkt alle Helden
-qstr_+2_to_First_Aid__Par|+2 Erste Hilfe (Trupp)
+; qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
 qstr_lead_more_Uruks|Führe mehr Uruks an
 qstr_+1_to_Power_Throw|+1 Wurfkraft
 qstr_Recruit_Black_Numeno|Rekrutiere Schwarze Numenorer an verschiedenen Orten
@@ -748,7 +747,6 @@ qstr_A_thunderstorm_from_|Ein Sturm aus dem Nebelgebirge wütet über dem Schlac
 qstr_A_thunderstorm_from_t|Ein Sturm aus dem Nebelgebirge wütet über dem Schlachtfeld. Schützen schießen schlecht bei diesem Wetter.
 qstr_A_poisonous_fog_from|Ein giftiger Dampf aus Dol Guldur legt sich über das Schlachtfeld. Er schwächt dich und deine Truppen und Furcht macht sich breit.
 qstr_A_poisonous_fog_from_|Ein giftiger Dampf aus Dol Guldur legt sich über das Schlachtfeld. Du fühlst keine Beeinträchtigung, aber deine Feinde leiden und du kannst ihre Angst riechen.
-; qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|Du nimmst Bärengestalt an!
 qstr_You_got_{reg1}_exper|Du hast als Bär {reg1} Erfahrung erhalten.
 qstr_Your_ability_to_chan|Du hast deine Fähigkeit als pelzwechsler entdeckt. Von nun an kannst du die Wildnis als Mensch oder als Bär durchstreifen.
@@ -804,9 +802,6 @@ qstr_Division_{reg1}_{s2}_fo|Abteilung {reg1} {s2} bildet {reg0} Linien (erinner
 qstr_Delivered_{reg60}_da|{reg60} Schaden zugefügt.
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
 qstr_Your_bear_form_has_{|Deine Bärengestalt hat {reg2}/{reg1} Gesundheit!
-qstr_Three_Nazgul_are_cir|Drei Nazgul kreisen über dem Schlachtfeld!
-qstr_Two_Nazgul_are_circl|Zwei Nazgul kreisen über dem Schlachtfeld!
-qstr_A_Nazgul_is_circling|Ein Nazgul kreist über dem Schlachtfeld!
 qstr_Some_of_your_human_t|Einige deiner menschlichen Truppen fürchten die Dunkelheit nicht. (Nachttruppen büßen nachts keine Waffenfertigkeiten ein.)
 qstr_You_are_filled_with_|Der Anblick der Feinde erfüllt dich durch und durch mit gerechtem Zorn (Berserkermodus aktiv).
 qstr_Your_mount_is_scared|Dein Reittier fürchtet sich vor dem {s5}!
@@ -1138,7 +1133,6 @@ qstr_^^^^^^^You_come_upon|^^^^^^^Du triffst auf die Flüchtlinge aus {s2} auf ih
 qstr_^^^^^^^You_come_upon_|^^^^^^^Du triffst endlich auf die Flüchtlinge, die du seit {s2} verfolgst. Ihr Ziel scheint zu sein {s3} und es sind viele Alte und Kranke darunter. ^^Es gibt einige Wachen, aber nicht genug, um dich und deine Männer daran zu hindern, sie alle abzuschlachten.
 qstr_^^At_last_the_Master|^^Endlich, der Meister macht den ersten Zug! Die Fackeln leuchten hell, die scharfen Schwerter glänzen. Du und deine Jungs werdet bald eure Marschbefehle erhalten. Ei, es wird genug Kampf für alle geben, und Ruhm ebenso!^^Dir wird die Ehre zugesprochen, dem Meister im gezackten Turm deine Aufwartung machen zu dürfen. Wahrscheinlich werden deine ersten Aufgaben Snaga-Arbeit sein. Hier ein Dorf niederbrennen, dort einem Versorgungstrupp auflauern. Aber du wirst dich schon noch beweisen können. Wer sagt denn, dass du nicht bald ebenso wichtig bist wie {s2} und sein Gefolge in {s3}?
 qstr_^^Your_head_suddenly|^^Plötzlich siehst du ein Bild vor Augen - das flammende Auge. Alle deine Gefährten halten inne. Du erkennst, ihr alle gerade dasselbe Bild seht, den selben Ruf vernehmt. Gewaltig ist die Kunst des Lidlosen Auges - gewaltig ist die Macht von Barad-dûr!^^Du hörst die ungesprochenen Worte und verstehst, ohne zu hören. Die Zeit ist gekommen, der Dunkle Herrscher befiehlt - ihr alle werdet eure Feinde mit offenem Krieg überziehen. Befehle werden kommen von {s2} in {s3}. Deine ersten Aufgaben werden gering sein, aber du wirst dich noch früh genug beweisen können.^^Der Krieg hat begonnen, der Untergang des Westens ist nahe!
-qstr_{s13}_asked_you_to_j|{s13} bat dich, dich mit mindestens {reg13} Truppen bei ihm zu melden, um Isengarts letzte Verteidigungslinie anzugreifen.
 qstr_You_defeated_{reg5}_|Du hast {reg5} Feinde besiegt und deinen Befehlshaber beeindruckt.
 qstr_You_defeated_{reg5}_e|Du hast {reg5} Feinde besiegt.
 qstr_You_failed_to_defeat|Du hast nicht einen Feind besiegt.
@@ -1193,9 +1187,6 @@ qstr_The_War_of_the_Two_T|Der Krieg der Zwei Türme hat begonnen!
 qstr_The_forces_of_{s22}_|Die Truppen von {s22} haben sich erholt! {s22} ist nun {s23}.
 qstr_The_might_of_{s22}_h|Die Macht von {s22} hat abgenommen! {s22} ist nun {s23}.
 qstr_In_a_desperate_attem|In einem verzweifelten Versuch, sich gegen seine Feinde zu verteidigen, entsendet Sauron seine Legionen von Mordor!
-qstr_Guardians_of_{s6}|Hüter von {s6}
-qstr_Guard_Legion_of_{s6}|Legion von {s6}
-qstr_Scouts_report_that_{|Späher berichten, dass {s6} eine große Armee in der Nähe von {s7} sammelt, um in einem letzten Versuch die Hauptstadt zu verteidigen.
 qstr_The_forces_of_{s2}_e|Die Truppen von {s2} haben ein Vorstoßlager in {s15} errichtet!
 qstr_The_hosts_of_{s2}_ma|Die Heere von {s2} marschieren zurück, um ihre Heimat zu verteidigen!
 qstr_{playername}_s_Reser|{playername}s Reserven
@@ -1378,15 +1369,6 @@ qstr_This_is_evil_news_yo|Ihr bringt schlimme Neuigkeiten. Die schwarzen Segel w
 qstr_This_is_evil_news_you|Ihr bringt schlimme Neuigkeiten. Die schwarzen Segel werden immer kühner und niemand in Belfalas ist mehr vor ihnen sicher. Ich kann Euch nicht die alleinige Schuld an Eurem Scheitern geben, {playername}, aber uns wurde wahrlich ein harter Schlag versetzt. Geht nun. Die Hoffnung für Thal schwindet und wir müssen kämpfen, um das, was noch übrig ist, am Leben zu halten.
 qstr_Pah!_It_seems_you_we|Pah! Es sieht so aus, als wärst du eine Landratte, {playername}. Jetzt sitzen sie in ihren hohen Türmen, die Herren von Gondor, eitel und fett wie Könige, und lachen über die schwarzen Segel. Vielleicht wären deine Truppen an den Rudern einer Kriegsgaleere besser aufgehoben. Eine Schande, dass sie unter deinem Befehl stehen, nicht unter meinem. Das Auge wird nicht zufrieden sein, oh nein. Geh nun!
 qstr_Have_you_nothing_bet|Hast du nichts anderes anzubieten als die Ausreden eines Schwächlings, {playername}? Vielleicht bist du doch nicht so stark, wie wir dachten. Diene uns in Zukunft besser, {playername}, denn die Schwachen werden keine Gnade erfahren
-qstr_{playername}_we_have|{playername}, die Macht Isengarts ist beinahe gebrochen. Saruman hat sein letztes Aufgebot entsandt, um sich und seinen Turm zu schützen. Reitet mit mir!
-qstr_Are_you_ready_to_mee|Seid Ihr bereit, um Isengarts letztem Aufgebot zu begegnen?
-qstr_I_am_ready_to_ride_w|Ich bin bereit, mich Euch gegen Isengart zu reiten!
-qstr_I_am_ready_to_ride_wi|Ich bin bereit, mich Euch gegen Isengart zu reiten! Lasst es uns jetzt zu Ende bringen!
-qstr_I_am_not_ready_to_ri|Ich bin noch nicht bereit. Ich brauche noch etwas Zeit, um mich vorzubereiten.
-qstr_You_do_not_have_enou|Ihr habt nicht genügend Truppen, um in dieser Schlacht von Nutzen zu sein. Hebt noch mindestens 30 Männer aus und sucht mich danach rasch wieder auf!
-qstr_Stay_close_we_will_t|Bleibt in der Nähe. Wir werden uns nahe der Stellung des Feindes versammeln. SObald wir genügend Truppen haben, greifen wir an.
-qstr_You_have_taken_too_l|Ihr braucht zu lange... Wir werden nun ausreiten, mit oder ohne Euch. Wir werden uns nahe der Stellung des Feindes sammeln und in 3 Tagen angreifen.
-qstr_Make_haste_{playerna|Eilt Euch, {playername}. Wir dürfen ihnen nicht genügend Zeit geben, sich zu erholen.
 qstr_Your_mission_is_comp|Deine Mission ist erfüllt, {s9} will, dass du bis auf Weiteres seiner Armee folgst.
 qstr_{s13}_asked_you_to_g|{s13} bat dich, {reg3} Einheiten {s4} aufzutreiben und ihm zu überbringen.
 qstr_Moreover_should_you_|Außerdem werde ich Euch in meinem Kriegsrat willkommen heißen, sobald Ihr {s24} werdet. Dort könnt Ihr über unsere Feldzüge entscheiden. Im Moment, als {s25}, folgt uns einfach und bleibt in der Nähe. Wir werden bald ausziehen.
@@ -1523,7 +1505,7 @@ qstr_I_want_you_and_your_|Ihr und Eure Männer, ich will dass Ihr
 qstr_{playername}_you_nee|{playername}, Ihr müsst Euch meinen Respekt erst noch verdienen. {s6} {reg22} Krieger von {s7} erschlagt
 qstr_{s9}_wants_you_to_per|{s9} will, dass du mit eigener Hand {reg22} Truppen von {s6} tötest.
 qstr_{s9}_wants_you_and_y|{s9} will, dass du und deine Männer {reg22} Truppen von {s6} tötest.
-qstr_{playername}_we_have|{playername}, die Macht Isengarts ist beinahe gebrochen. Saruman hat sein letztes Aufgebot entsandt, um sich und seinen Turm zu schützen. Reitet mit mir!
+qstr_{playername}_we_have|{playername}, wir haben schlechte Kunde erhalten. Die Korsaren von Umbar werden immer kühner und während wir hier sprechen, sammelt sich eine ihrer Flotten nicht fern von {s6}. Bereits jetzt verhehren sie die die Küsten - und bald werden sie die Stadt selbst angreifen.^^ Wir müssen ihre Flotte abfangen, ehe sie die Stadt erreicht. Eilt nach {s6} und sprecht mit der örtlichen Amtsgewalt.
 qstr_{playername}_we_have_|{playername}, wir haben schlachte Kunde erhalten. Die Wilden aus Rhûn sind gewitzter und kühner, als wir dachten. Vor unseren Augen verborgen haben sie eine kleine Flotte aus Booten und Flößen gebaut, die sie über den Langen See tragen wird. Und sie beabsichtigen, Esgaroth zu stürmen!^^ Wir müssen ihre Flotte abfangen, ehe sie die Stadt erreicht. Eilt nach Esgaroth und sprecht mit der örtlichen Amtsgewalt!
 qstr_If_you_seek_pillage_|Wenn du auf Raub und Beute aus bist, dann bietet sich dir hier eine einmalige Gelegenheit, {playername}.^^Eine Korsarenflotte wird vom {s7} aus aufbrechen und direkten Kurs auf {s6} setzen, eine reife Frucht, die nur darauf wartet, von uns gepflückt zu werden! Schließe dich ihnen an und du erhältst einen Anteil an der Beute!
 qstr_The_soft_weaklings_o|Die weichen Schwächlinge von Esgaroth haben unseren schnellen Reitern und wilden Kriegern nichts entgegenzusetzen, {playername}, das ist bekannt. Die Menschen vom See glauben jedoch, sie wären jenseits des Wassers vor uns sicher, jedoch werden wir ihnen bald das Gegenteil beweisen!^^ Wir haben Boote und Flöße vorbereitet, stark genug, um unsere Krieger über den See zu tragen. Die Seemenschen werden uns nicht erwarten!^^Gehe zum Hauptlager und sprich mit dem Lageraufseher, wenn du dich dem Unternehmen anschließen willst.

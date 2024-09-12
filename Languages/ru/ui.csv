@@ -55,9 +55,10 @@ ui_crouch|Присесть
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Вы уверены, что хотите импортировать этого персонажа?
-ui_explanation_strength|Сила: Каждое очко добавляет +1 очко к здоровью. Следующие навыки не могут быть развиты выше 1/3 от Силы: Железная кожа, Сильный бросок, Сильный удар, Сильный выстрел.
-ui_explanation_intelligence|Интеллект: Каждое очко Интеллекта немедленно дает дополнительное очко навыков и немного увеличивает прирост опыта от некоторых действий. Следующие навыки не могут быть развиты выше 1/3 от интеллекта: Обучение, Слежение, Тактика,Поиск следов, Обнаружение, Управление инвентарем, Перевязка ран, Хирургия и Первая помощь.
-; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
+; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: Ironflesh, Power Strike, Power Throw, Power Draw.
+ui_explanation_agility|Ловкость: каждое очко дает пять очков владения оружием и увеличивает скорость атаки на 0,5%. Следующие навыки не могут быть развиты выше 1/3 ловкости: Владение оружием, Владение щитом, Атлетика, Верховая езда, Верховая стрельба, Сбор трофеев.
+; ui_explanation_intelligence|Intelligence: (Wisdom) The deep understanding of nature and crafts. Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Bargainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, First Aid, and Wildcraft.
+; ui_explanation_charisma|Charisma: (Will) The power to inspire or dominate. Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Trainer, Leadership.
 ui_delivered_number_damage|Нанесено %d урона 
 ui_mission_losses_killed|убито :
 ui_party_losses|%s : %d ранено --- %d убито из %d

@@ -86,7 +86,6 @@ qstr_1H_Weapons^2H_Weapon|單手武器^雙手武器^長柄武器^弓箭^十字�
 qstr_Equipment|裝備
 qstr_The_Last_Days_Mod_Op|最後之日模組設定
 qstr_War_Starts_at_Level:|戰爭始於等級：
-qstr_Restrict_Player_Equi|限制玩家裝備：
 qstr_Battle_Formations_an|戰鬥陣型和AI：
 qstr_Native|原版
 qstr_TLD_FormAI__Original|TLD陣型AI(初版)
@@ -237,7 +236,7 @@ qstr_+1_Intelligence|智力+1
 qstr_+{reg1}_to_Spotting|偵察+{reg1}
 qstr__Scales_with_Wildcra|(依野外求生的等級而定)
 qstr_Strengthens_all_Hero|強化所有英雄
-qstr_+2_to_First_Aid__Par|(隊伍)急救+2
+; qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
 qstr_lead_more_Uruks|領導更多強獸人
 qstr_+1_to_Power_Throw|強擲+1
 qstr_Recruit_Black_Numeno|從各地招募黑努曼諾爾人。
@@ -748,7 +747,6 @@ qstr_A_thunderstorm_from_|來自迷霧山脈的雷雨在戰場上肆虐。你的
 qstr_A_thunderstorm_from_t|來自迷霧山脈的雷雨在戰場上肆虐。弓兵在這種天氣下作戰有困難。
 qstr_A_poisonous_fog_from|來自多爾哥多的毒霧在戰場上徘徊。你和你的部隊感到虛弱。人們都很害怕。
 qstr_A_poisonous_fog_from_|來自多爾哥多的毒霧在戰場上徘徊。你沒有感到任何不適，但你能聽到敵方痛苦的聲音也能聞到他們的恐懼。
-; qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|你變形成一頭熊！
 qstr_You_got_{reg1}_exper|你在熊型態下獲得{reg1}經驗值。
 qstr_Your_ability_to_chan|你變身的能力已經覺醒了，現在起你可以用人或熊的型態繼續旅途。
@@ -804,9 +802,6 @@ qstr_Division_{reg1}_{s2}_fo|第{reg1}分隊{s2}排成{reg0}行(已記憶)。
 qstr_Delivered_{reg60}_da|給予{reg60}傷害。
 qstr_DEBUG__Health_Regen_|DEBUG(生命回復)：{s1}恢復{reg0}%生命值。=+{reg1}%力量
 qstr_Your_bear_form_has_{|你的熊型態有{reg2}/{reg1}生命值！
-qstr_Three_Nazgul_are_cir|三隻戒靈正在戰場上空盤旋！
-qstr_Two_Nazgul_are_circl|兩隻戒靈正在戰場上空盤旋！
-qstr_A_Nazgul_is_circling|一隻戒靈正在戰場上空盤旋！
 qstr_Some_of_your_human_t|你部分的人類部隊並不畏懼黑暗。(夜間部隊不受夜間減益的影響)
 qstr_You_are_filled_with_|你注視了敵人後充滿了憤怒(發動狂暴化)。
 qstr_Your_mount_is_scared|你的座騎被{s5}嚇到了！
@@ -1138,7 +1133,6 @@ qstr_^^^^^^^You_come_upon|^^^^^^^你遇了一群正從{s2}前住{s3}的難民。
 qstr_^^^^^^^You_come_upon_|^^^^^^^你遇到了你從{s2}就一直在追蹤的難民。他們似乎正在前往{s3}，並且大部分都是老人和傷者。^^雖然也有護衛，但不夠阻止你和你的人馬殺死所有人。
 qstr_^^At_last_the_Master|^^終於，主人開始行動了！火把燎亮。鋒利的武器閃閃發光。你和你粗壯的小夥子們很快就會接到邁進的命令。啊，會有戰鬥的，很多很多的，還有足夠分給所有人的榮耀！^^你有幸被傳喚到主人的塔內覲見它。可能你的第一個命令會是是奴隸的工作-在這掠奪一個村莊、在那劫持一個商隊之類的。但你很快就能證明自己了。誰能說你不會像任何一個{s3}的{s2}旗下指揮官那樣扮演重要的角色呢？^^戰爭已經開始了；人類和其盟友的殞落要開始了！
 qstr_^^Your_head_suddenly|^^你的腦海突然出現了一個景象-燃燒的眼睛。在你周圍，你的戰士們都僵在原地不動。不知為何，你知道在那一刻所有人都聽到了同樣的召喚，看到了同樣的景象。邪眼的法術真偉大-黑邪塔的力量真偉大！^^知識，不言而喻，滲到你的骨頭裡。時刻到了。黑暗之主已下令-你們都將在公開的戰爭中向敵方邁進。來自{s3}的{s2}其命令將至。起初你扮演的角色並不偉大，但你很快就能證明自己了。^^戰爭已經開始了；人類和其盟友的殞落要開始了！
-qstr_{s13}_asked_you_to_j|{s13}要你帶著至少{reg13}名部下加入他一起面對艾辛格的最後一博。
 qstr_You_defeated_{reg5}_|你擊敗了{reg5}名敵人並給你的指揮官留下了深刻的印象。
 qstr_You_defeated_{reg5}_e|你擊敗了{reg5}個敵人。
 qstr_You_failed_to_defeat|你未能擊敗任何敵人。
@@ -1193,9 +1187,6 @@ qstr_The_War_of_the_Two_T|雙塔之戰已經開始了！
 qstr_The_forces_of_{s22}_|{s22}的勢力團結起來了！{s22}現在是{s23}的。
 qstr_The_might_of_{s22}_h|{s22}的力量已經被削弱了！{s22}現在是{s23}的。
 qstr_In_a_desperate_attem|為了防禦他的敵人，索倫孤注一擲的派出了他的魔多軍團！
-qstr_Guardians_of_{s6}|{s6}的守護者
-qstr_Guard_Legion_of_{s6}|{s6}的守衛軍團
-qstr_Scouts_report_that_{|斥候報告顯示{s6}在{s7}周圍聚集了龐大的軍隊，準備做最後一搏來保衛首都。
 qstr_The_forces_of_{s2}_e|{s2}的軍隊在{s15}建立了前線營地！
 qstr_The_hosts_of_{s2}_ma|{s2}的大軍回去保衛他們的家園了！
 qstr_{playername}_s_Reser|{playername}的預備役
@@ -1378,15 +1369,6 @@ qstr_This_is_evil_news_yo|你帶來了的真是壞消息。黑帆越來越大膽
 qstr_This_is_evil_news_you|你帶來了的真是壞消息。東方人越來越大膽，而長湖鎮則在燃燒。我不會，因為你的失敗而責怪你，{playername}，但我們的確遭受了一次沉重的打擊，真的很沉重。走吧。我們王國的希望越來越渺茫，我們必須努力讓剩下的繼續存活下去。
 qstr_Pah!_It_seems_you_we|呸！看來你不是能在海上混的料，{playername}。現在剛鐸人，坐著，高高在上，虛榮如王，笑著黑帆燃燒！也許在船上負責划槳對你的部下是適當的懲罰；他們被你指揮而不是我，還真是可憐。邪眼是不會高興的。滾吧。
 qstr_Have_you_nothing_bet|你沒有什麼比為你的失敗找爛藉口更好說的嗎，{playername}？也許你沒有我們所認為的那麼強大。未來好好服從我們的計畫吧，{playername}。我們對弱者是沒有慈悲的！
-qstr_{playername}_we_have|{playername}，我們幾乎打倒了艾辛格。他們發起了最後一搏來保護在塔裡的薩魯曼。跟我一起去會會他們吧！
-qstr_Are_you_ready_to_mee|你準備好面對艾辛格的最後一搏了嗎？
-qstr_I_am_ready_to_ride_w|我準備好和你一起去對付艾辛格了。
-qstr_I_am_ready_to_ride_wi|我準備好和你一起去和會會他們了。讓我們了結這一切吧。
-qstr_I_am_not_ready_to_ri|我還沒準備好和你一起走。我還需要一些時間。
-qstr_You_do_not_have_enou|你沒有足夠的部下來支援這場戰鬥。快去徵招至少30人再來加入我！
-qstr_Stay_close_we_will_t|別離太遠，我們將在敵人附近就位。當所有人就定位時，我們就會發起攻勢。
-qstr_You_have_taken_too_l|你花太多時間了...無論你跟不跟，我們現在就要出發了。我們將在敵人附近就位，3天內，我們就會發起攻勢。
-qstr_Make_haste_{playerna|動作快，{playername}。我們不想給他們喘息的機會。
 qstr_Your_mission_is_comp|你已經完成了任務，{s9}想要你在接到進一步的通知前繼續跟隨他的軍隊。
 qstr_{s13}_asked_you_to_g|{s13}要你去收集{reg3}單位的{s4}並將它們帶回給他。
 qstr_Moreover_should_you_|此外，如果你成為{s24}，我將歡迎你加入我的戰爭議會，在那你可以做出影響我們戰役的決定。目前，作為{s25}，你只需跟著我們別離太遠。我們很快就會動身了。
@@ -1523,7 +1505,7 @@ qstr_I_want_you_and_your_|我要你和你的人馬去殺
 qstr_{playername}_you_nee|{playername}，你需要贏得我和你手下的敬重。{s6}{reg22}名來自{s7}的部隊！
 qstr_{s9}_wants_you_to_per|{s9}要你親自去殺{reg22}名{s6}的部隊。
 qstr_{s9}_wants_you_and_y|{s9}要你和你的手下去殺{reg22}名{s6}的部隊。
-qstr_{playername}_we_have|{playername}，我們幾乎打倒了艾辛格。他們發起了最後一搏來保護在塔裡的薩魯曼。跟我一起去會會他們吧！
+qstr_{playername}_we_have|{playername}，我們收到了嚴峻的消息。昂巴的海盜變得越來越大膽，在我們說話的同時，一支艦隊正在離{s6}不遠處聚集。他們沿著海岸線打劫，很快就會到達城市本身了。我們必須在艦隊抵達城市前攔截它。快點前往{s6}，剩下的則跟地方官談吧。
 qstr_{playername}_we_have_|{playername}，我們收到了嚴峻的消息。盧恩的蠻族比我們想像的更加狡猾和大膽-躲過我們斥候的偵測，他們建造了足夠的船隻和木筏來穿越長湖，並會直接對長湖鎮發起攻勢！我們必須在艦隊抵達城市前攔截它。帶領你的部隊盡可能迅速的到那裡，把野蠻人趕回湖泊的另一邊吧！
 qstr_If_you_seek_pillage_|如果你想要燒殺擄掠，這會是個錯過就沒了的好機會喔，{playername}。一支海盜的艦隊正從{s7}的港口出發，並將一路航向{s6}，其本身充滿著甜美的果實等著摘採！加入他們的進攻，好好享用戰利品吧！
 qstr_The_soft_weaklings_o|{playername}，長湖鎮的弱者們無法匹敵我們迅速的騎兵和勇猛的戰士。這是眾所皆知的。躲在湖泊的對面，長湖鎮的人以為自己很安全，但我們很快就會給他們一個驚喜！^^我們造了足夠的船隻，和木筏，來穿越大湖。他們絕對料想不到的！^^如果你想加入襲擊，那就前往主營地並跟營地指揮官談吧。

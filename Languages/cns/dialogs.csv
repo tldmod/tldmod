@@ -724,8 +724,8 @@ dlga_woodelf_help_2:woodelf_help_3.1|你是一名士兵？毫无疑问！你精�
 dlga_woodelf_help_3:close_window|祝你一路平安，托巴尔。我想我们会再见面的。
 dlga_healers_meet:healer_who|你想要做什么？
 ; dlga_healers_meet:healers_ask|I need your help.
-; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
-dlga_healers_ask:healer_injured_ask|我和我的人受伤了，而且我们没有时间来等伤口自己好。你能帮我们吗？
+; dlga_healers_ask_2:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
+dlga_healers_ask_2:healer_injured_ask|我和我的人受伤了，而且我们没有时间来等伤口自己好。你能帮我们吗？
 ; dlga_healers_meet:close_window|Nothing.
 dlga_healers_injured_check:healers_injured_heal|来，加入我们。
 dlga_healers_wound_check:healers_wound_heal|来，加入我们。
@@ -1094,7 +1094,7 @@ dlga_start:party_encounter_hostile_defender|你想要做什么？
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|投降或是去死！
 dlga_party_encounter_hostile_defender:close_window|没什么，我现在就安静的离开。
 ; dlga_start:close_window.45|* stares at you silently *
-dlga_start:battle_reason_stated.1|投降或是去死。做出你的选择！
+dlga_start:battle_reason_stated|我会把你的头骨当碗使的！
 dlga_battle_reason_stated:close_window|我才不怕你呢，先问问我手里的兵刃答应不答应。
 dlga_start:free|你好。有什么我可以效劳的吗？
 dlga_free:view_char_requested|给我说说你都会什么。

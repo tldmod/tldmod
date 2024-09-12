@@ -55,9 +55,10 @@ ui_crouch|しゃがむ
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|本当にそのキャラクタをインポートしますか？
-ui_explanation_strength|体力: 1ポイント毎に 1ヒットポイントを得ます。 以下のスキルは体力の1/3を越えて 上昇させることは出来ません: 鋼の肉体、 強打、 豪投、 弓術
-ui_explanation_intelligence|知性: 1ポイント毎に 1スキルポイントを得ます。 また、獲得する経験値が増える事があります。 以下のスキルは知性の1/3を越えて 成長することは出来ません: 訓練、 追跡術、 戦略、 経路探索、 観測術、 荷物管理、 治療、 手術、 応急手当て
-; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
+; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: Ironflesh, Power Strike, Power Throw, Power Draw.
+ui_explanation_agility|敏捷性: 1ポイント毎に 5武器ポイントを得ます。 武器を操るのが0.5%速くなります。 以下のスキルは敏捷性の1/3を越えて 上昇させることは出来ません: 盾防御、 アスレチック、 武器熟練、 乗馬、 馬上弓術、 略奪
+; ui_explanation_intelligence|Intelligence: (Wisdom) The deep understanding of nature and crafts. Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Bargainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, First Aid, and Wildcraft.
+; ui_explanation_charisma|Charisma: (Will) The power to inspire or dominate. Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Trainer, Leadership.
 ui_delivered_number_damage|%dダメージ与えました。
 ui_mission_losses_killed|死者:
 ui_party_losses|%s:負傷%d名---死亡%d/%d名。

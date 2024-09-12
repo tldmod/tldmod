@@ -55,9 +55,10 @@ ui_crouch|Kucanie
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Jesteś pewny, że chcesz zaimportować tę postać?
-ui_explanation_strength|Siła: Każdy punkt dodaje +1 do punktów życia. Następujące umiejętności nie mogą przekroczyć 1/3 siły: Żelazna Skóra, Potężny Cios, Potężny rzut, Siła naciągu.
-ui_explanation_intelligence|Inteligencja: Każdy punkt dodaje +1 do punktów umiejętności, oraz nieco zwiększa ilość otrzymywanego doświadczenia. Następujące umiejętności nie mogą przekroczyć 1/3 Inteligencji: Szkolenie, Tropienie, Taktyka, Znajomość Ścieżek, Spostrzeganie, Zarządzanie Ekwipunkiem, Leczenie Ran, Chirurgia, Pierwsza Pomoc.
-; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
+; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: Ironflesh, Power Strike, Power Throw, Power Draw.
+ui_explanation_agility|Zręczność: Każdy punkt daje 5 punktów broni i zwiększa szybkość ataku o 0,5%. Następujących umiejętności nie można rozwinąć powyżej 1/3 Zręczności: Tarcza, Atletyka, Władanie Bronią, Jazda Konna, Strzelanie z Siodła, Zdobywanie Łupów
+; ui_explanation_intelligence|Intelligence: (Wisdom) The deep understanding of nature and crafts. Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Bargainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, First Aid, and Wildcraft.
+; ui_explanation_charisma|Charisma: (Will) The power to inspire or dominate. Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Trainer, Leadership.
 ui_delivered_number_damage|Zadano %d punktów obrazżeń.
 ui_mission_losses_killed|zabito:
 ui_party_losses|%s  : %d ogłuszonych --- %d zabitych z %d.

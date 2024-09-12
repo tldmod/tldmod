@@ -86,7 +86,6 @@ qstr_1H_Weapons^2H_Weapon|单手武器^双手武器^长杆武器^弓箭^弩^投�
 qstr_Equipment|装备
 qstr_The_Last_Days_Mod_Op|最后之日Mod选项
 qstr_War_Starts_at_Level:|战争始于等级：
-qstr_Restrict_Player_Equi|不能装备
 qstr_Battle_Formations_an|战斗阵型和AI：
 qstr_Native|本地
 qstr_TLD_FormAI__Original|TLD AI（原始）
@@ -237,7 +236,7 @@ qstr_+1_Intelligence|智力属性+1
 qstr_+{reg1}_to_Spotting|侦查技能等级+{reg1}
 qstr__Scales_with_Wildcra|（规模与荒野求生技能等级相关）
 qstr_Strengthens_all_Hero|对队中全体英雄有效
-qstr_+2_to_First_Aid__Par|急救+2
+; qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
 qstr_lead_more_Uruks|能够统御更多强兽人
 qstr_+1_to_Power_Throw|+1 to Power Throw
 qstr_Recruit_Black_Numeno|可从各地招募黑暗努曼诺尔人
@@ -748,7 +747,6 @@ qstr_A_thunderstorm_from_|从迷雾山脉刮来的雷雨在战场上肆虐。你
 qstr_A_thunderstorm_from_t|从迷雾山脉刮来的雷雨在战场上肆虐。弓箭手很难在这样恶劣的天气下发挥全力。
 qstr_A_poisonous_fog_from|从多尔哥多飘来的毒雾在战场上肆虐。你和你的部队感到全身虚弱。人们都很害怕。
 qstr_A_poisonous_fog_from_|从多尔哥多飘来的毒雾在战场上肆虐。你没有感到任何不同，但你却听到了敌人遭受痛苦的声音并且你能闻到他们的恐惧。
-; qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|你变形成了一头熊！
 qstr_You_got_{reg1}_exper|你在熊形态下获得了{reg1}点经验。
 qstr_Your_ability_to_chan|你换皮的能力已经显现。从现在起，你可以保持人形或是换皮为熊。
@@ -804,9 +802,6 @@ qstr_Division_{reg1}_{s2}_fo|{reg1}分队{s2}排成{reg0}排(已记录)。
 qstr_Delivered_{reg60}_da|造成了{reg60} 点伤害。
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
 qstr_Your_bear_form_has_{|你的熊形态有{reg2}/{reg1}HP！
-qstr_Three_Nazgul_are_cir|三个戒灵正在战场的上空盘旋！
-qstr_Two_Nazgul_are_circl|两个戒灵正在战场的上空盘旋！
-qstr_A_Nazgul_is_circling|一个戒灵正在战场的上空盘旋！
 qstr_Some_of_your_human_t|你的一些人类部队并不畏惧黑夜。（夜间部队不受夜间惩罚的影响）
 qstr_You_are_filled_with_|当你盯着敌人时，你充满愤怒（狂战士能力激活）。
 qstr_Your_mount_is_scared|你的坐骑被{s5}吓坏了！
@@ -1138,7 +1133,6 @@ qstr_^^^^^^^You_come_upon|^^^^^^^你遇到了逃离{s2}并正在前往{s3}的难
 qstr_^^^^^^^You_come_upon_|^^^^^^^你遇到了从{s2}开始就在跟踪的难民。他们看上去在去{s3}的路上，而且大多数都是年老或刚康复的。^^他们有一些守卫，但不足以阻止你和你的手下杀光他们。
 qstr_^^At_last_the_Master|^^终于，主人开始行动了！火炬燎亮。兵刃锐闪。你和你强壮的伙伴们很快就会接到行军的命令。唉，接下来将会有很多场战斗等着你，但是你的名字也会随之传遍四方。^^你应该因被召唤去觐见塔上的主人而感到光荣。一般来说给你的第一个命令将会像下仆和奴隶那样—去这里劫掠一个村庄，去那里拦截一队商队。但你很快就能展现自己真正的价值。谁能说你不能成为{s3}{s2}麾下一位伟大的指挥官呢？^^战争已经开始了；人类及其盟友的黄昏来临了！
 qstr_^^Your_head_suddenly|^^你的脑中突然被一个幻象充斥—燃烧着的巨眼。在你身边，所有的士兵都停下了他们地脚步。不知怎么地，你知道那一刻你们所有人都听到了相同的召唤，看见了同样的异象。拥有伟大工艺的无睑巨眼—无法匹敌的邪黑塔的力量！^^知识，无声无息地渗入你的骨头里。时机已到。黑暗魔君下令—你们将要在全面战争开始时倾尽全力向你的敌人进军。{s3}的{s2}将会发出具体的军令。你的任务刚开始时并不会太顺利，但是你很快就证明自己。^^战争已经开始了；西方的黄昏来临了！
-qstr_{s13}_asked_you_to_j|{s13}要你带着至少{reg13}名士兵加入他，并且与艾辛格的最后守卫军团会面。
 qstr_You_defeated_{reg5}_|你击败了{reg5}名敌人，使你的指挥官印象深刻。
 qstr_You_defeated_{reg5}_e|你击败了{reg5}个敌人。
 qstr_You_failed_to_defeat|你未能打败任何敌人。
@@ -1193,9 +1187,6 @@ qstr_The_War_of_the_Two_T|双塔之间的战争打响了！
 qstr_The_forces_of_{s22}_|{s22}的力量已经恢复了！{s22}现在是{s23}。
 qstr_The_might_of_{s22}_h|{s22}的力量已经削弱了！{s22}现在是{s23}。
 qstr_In_a_desperate_attem|为了击败他的敌人，索隆在绝望中派出了他的魔多军团！
-qstr_Guardians_of_{s6}|{s6}的守护者
-qstr_Guard_Legion_of_{s6}|{s6}的守卫军团
-qstr_Scouts_report_that_{|根据报告显示：{s6}在{s7}周围聚集了庞大的军队，他们在做最后的挣扎，企图保卫他们的首都。
 qstr_The_forces_of_{s2}_e|{s2}的军队在{s15}建立了前线营地！
 qstr_The_hosts_of_{s2}_ma|{s2}的军队前来保卫他们的家园！
 qstr_{playername}_s_Reser|{playername}的预备队
@@ -1378,15 +1369,6 @@ qstr_This_is_evil_news_yo|这是你带来的坏消息。邪恶水手变得大胆
 qstr_This_is_evil_news_you|这是你带来的坏消息。这些东方人变得大胆了，长湖镇被烧了。我不会过分责备你的失败，{playername}，但是我们确实受了沉重的打击。现在出发吧。我们的王国的希望越来越渺茫了，但我们仍要为它剩下的生命奋战。
 qstr_Pah!_It_seems_you_we|呸！看来你们不是在海上混的料子，{playername}。那群刚铎人，现在就安安稳稳地坐在那儿，在他们那高高的塔上，像那些虚伪的王族，看着燃烧的黑帆哄堂大笑！你的手下应该去舰队甲板下面划上几天桨，好好惩罚惩罚；可惜他们是你的人，不是我的。魔眼不会高兴的。现在给我滚吧。
 qstr_Have_you_nothing_bet|你难道为你的失败找不到比这站不住脚的辩解更好的借口了吗，{playername}？也许你并不像我们想象中那么强。好好为我们的未来计划工作吧，{playername}。弱者终将不被怜悯！
-qstr_{playername}_we_have|{playername}，我们狠狠地教训了艾辛格。他们已经召集他们最后的军团来保护在他那塔里的萨鲁曼了。与我并骑，去会会他们！
-qstr_Are_you_ready_to_mee|你准备好面对艾辛格的最后的军团吗？
-qstr_I_am_ready_to_ride_w|我准备好与你并骑对抗艾辛格。
-qstr_I_am_ready_to_ride_wi|我已经准备好同你并骑去会会他们了。现在，让我们结束这一切吧。
-qstr_I_am_not_ready_to_ri|我还没有准备好和你出发。我还需要一些时间。
-qstr_You_do_not_have_enou|为支援这场战斗，你至少需要带30名战士来加入我，快去吧！
-qstr_Stay_close_we_will_t|保持距离，我们要靠近敌人。当一切都准备就绪，我们就发起进攻。
-qstr_You_have_taken_too_l|你花太长时间了……我们现在就要上马出发，不管有没有你。我们将在靠近敌人的地方集结，3天后，我们就发起进攻。
-qstr_Make_haste_{playerna|抓紧时间，{playername}。我们不希望他们能有喘息之机。
 qstr_Your_mission_is_comp|你的任务完成了，{s9}希望你能够在接到进一步的指令以前继续跟着他的部队前进。
 qstr_{s13}_asked_you_to_g|{s13}希望你能收集{reg3}单位的{s4}并带给他。
 qstr_Moreover_should_you_|另外，如果你成为了{s24}，你将得到我的战事议会的欢迎，在那儿你可以提出影响我们战役进程的建议。但目前，你只是一名{s25}，只要跟随我们并保持联络就好了。我们很快就要行动了。
@@ -1523,7 +1505,7 @@ qstr_I_want_you_and_your_|我要你和你的士兵去杀
 qstr_{playername}_you_nee|{playername}，你需要赢得我和你手下的尊重。{s6}{reg22}{s7}士兵！
 qstr_{s9}_wants_you_to_per|{s9}想要你亲自杀死{reg22}{s6}士兵。
 qstr_{s9}_wants_you_and_y|{s9}想要你和你的手下杀死{reg22}{s6}士兵。
-qstr_{playername}_we_have|{playername}，我们狠狠地教训了艾辛格。他们已经召集他们最后的军团来保护在他那塔里的萨鲁曼了。与我并骑，去会会他们！
+qstr_{playername}_we_have|{playername}，我们面临着十分紧急的事态。昂巴的海盗变得从所未有地大胆，甚至在我们说话的时候，一支舰队正在徘徊于{s6}。他们已经沿着海岸线顺流而下，并且很快就要兵临城下了。^^ 请赶紧前往{s6}，与当地有威望的人士交谈，协助当地驻军对抗即将到来的入侵。^（建议在25级之前做该任务，否则敌人人数异常）
 qstr_{playername}_we_have_|{playername}，我们面临着十分紧急的事态。卢恩的野蛮人比我们想象中更加狡猾和大胆— 我们的侦察员并没有发觉，他们已经建造好了许多的船和木筏足以让他们穿过长湖，直攻长湖镇！^^ 我们必须要加强我们在这里的防御，要尽快。赶快带领你的人前往那里，逼退那群野蛮人！^（建议在25级之前做该任务，否则敌人人数异常）
 qstr_If_you_seek_pillage_|如果你想着烧杀掳掠的事情的话，这里可有个错过就没有了的机会，{playername}。^^ 一支正打算启航的海贼舰队正在{s7}，并且将会计划到达{s6}，现在正是时机成熟之际！加入他们的劫掠计划，然后痛快地享用分到的战利品吧！^（建议在25级之前做该任务，否则敌人人数异常）
 qstr_The_soft_weaklings_o|长湖镇软弱的懦夫可比不上我们迅捷的骑手和凶猛的战士，{playername}。这是众所周知的。那些长湖镇的人们相信他们自己很安全，因为我们之间隔着水流，但我们很快就要给他们一个惊喜！^^ 我已经造了许多船只，和木筏，足够结实到让我们的战士直穿过湖泊。他们不会预料到我们的！^^去主营，如果你想要加入这次袭击的话就跟营长说话。^（建议在25级之前做该任务，否则敌人人数异常）

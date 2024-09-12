@@ -86,7 +86,6 @@ qstr_1H_Weapons^2H_Weapon|1 elli silahlar^2 elli silahlar^Gönderliler^Okçuluk^
 qstr_Equipment|Ekipman
 qstr_The_Last_Days_Mod_Op|The Last Days Mod Ayarları
 qstr_War_Starts_at_Level:|Savaş şu seviyeye ulaşıldıgında başlayacak:
-qstr_Restrict_Player_Equi|Oyuncu ekipmanını kısıtla:
 qstr_Battle_Formations_an|Savaş Formasyonları ve YZ:
 qstr_Native|Yerli
 qstr_TLD_FormAI__Original|TLD FormAI (Orjinal)
@@ -237,7 +236,7 @@ qstr_+1_Intelligence|Zekaya +1
 qstr_+{reg1}_to_Spotting|Gözlemcilik +{reg1} 
 qstr__Scales_with_Wildcra|(Yaban-Ustalıgı ile degişir)
 qstr_Strengthens_all_Hero|Bütün Kahramanları güçlendirir
-qstr_+2_to_First_Aid__Par|İlk Yardıma +2 (Grup)
+; qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
 qstr_lead_more_Uruks|Daha fazla uruk yönet
 qstr_+1_to_Power_Throw|Güçlü Fırlatmaya +1
 qstr_Recruit_Black_Numeno|Çeşitli yerlerden Kara Numenoreyalıları işe al.
@@ -748,7 +747,6 @@ qstr_A_thunderstorm_from_|Dumanlı Daglar'dan gelen bir fırtına, savaş meydan
 qstr_A_thunderstorm_from_t|Dumanlı Daglar'dan gelen bir fırtına, savaş meydanında daha şiddetli bir hale geliyor. Okçular bu havada zorlanacak gibi görünüyor.
 qstr_A_poisonous_fog_from|Dol Guldur'dan zehirli bir sis, savaş alanını kaplıyor. Sen ve adamların zayıflamış hissediyorsunuz. Adamlarınız arasında korku dolaşıyor.
 qstr_A_poisonous_fog_from_|Dol Guldur'dan zehirli bir sis, savaş alanını kaplıyor. Sen pek bir fark hissetmiyorsun, ama düşmanlarının acısını duyuyor ve korkunun kokusunu alabiliyorsun.
-; qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|Bir ayıya dönüştün!
 qstr_You_got_{reg1}_exper|Ayı şeklindeyken {reg1} kadar tecrübe kazandın
 qstr_Your_ability_to_chan|Şekil degiştirme yetenegin tezahür etti, bundan böyle yabani yollarda hem insan hem de ayı olarak gezebilirsin.
@@ -804,9 +802,6 @@ qstr_Division_{reg1}_{s2}_fo|{reg1}. Kuvvetleri {s2} {reg0} Tane Çizgi oluştur
 qstr_Delivered_{reg60}_da|{reg60} hasar verdiniz.
 qstr_DEBUG__Health_Regen_|DEBUG (Can Yenileme): {s1}  {reg0}% can kazandı.  = +{reg1}% STR
 qstr_Your_bear_form_has_{|Ayı şeklin {reg2}/{reg1} Canı kaldı!
-qstr_Three_Nazgul_are_cir|Üç Nazgul savaş alanının üstündeki gökyüzünde dolaşıyor!
-qstr_Two_Nazgul_are_circl|İki Nazgul savaş alanının üstündeki gökyüzünde dolaşıyor!
-qstr_A_Nazgul_is_circling|Bir tane Nazgul  savaş alanının yukarısında daire çiziyor.
 qstr_Some_of_your_human_t|İnsan birliklerinin bir kısmı karanlıgın gölgesinde degiller. (Gece Askerleri gece cezalarından etkilenmez).
 qstr_You_are_filled_with_|Gözlerini düşmana dogru intikamla doldurdun (Çılgınlık Aktif)
 qstr_Your_mount_is_scared|Binegin {s5} Tarafından korkutuldu!
@@ -1138,7 +1133,6 @@ qstr_^^^^^^^You_come_upon|^^^^^^^{s3} civarına giden ve {s2} tarafında gelen m
 qstr_^^^^^^^You_come_upon_|^^^^^^^{s2} Civarlarından bu yana izini sürdügün mültecilere rastladın.{s3} tarafına dogru gidiyor gibi görünüyorlar, ve çogunlukla yaşlı ve çocuk var. ^^ Çok az sayıda gardiyan var, ancak sizin ve adamlarınızın hepsini öldürmesini engellemek için yeterli degil..
 qstr_^^At_last_the_Master|^^Sonunda, Efendi kendi hamlesini yapıyor! Meşaleler parlıyor. Keskin silahlar parıldıyor. Siz ve hantal adamlarınız yakında yürüyüş emri alacaksınız. Ahh, savaşılacak, bir sürü şey olacak ve etrafta rahatça gezebilecek kadar şan olacak! ^^ Sen Efendinin kulesine kabul edilme onuruna sahipsin. Muhtemelen ilk emirlerin snaga işi olacak - buraya bir köy baskın yap, orada bir Kervana pusu kur. Ama yakında kendini kanıtlayacaksın. {S3} 'daki {s2} komutanı kadar büyük bir rol oynayamayacagınızı kim söylüyor?^^ Savaş başladı; İnsan ve müttefiklerinin yıkılışı başlıyor!
 qstr_^^Your_head_suddenly|^^ Kafan aniden bir hayal ile doluyor - yanan Göz. Etrafında, savaşçıların izleri duruyor. Her nasılsa, o anda biliyorsunuz, hepiniz aynı çagrıyı duyuyorsunuz, aynı görüyü görüyorsunuz. Kapaksız Göz'ün büyük sanatı - Barad-dûr'un büyük gücü Harikadır!^^Konuşulmamış olan bilgi, kemiklerinize sızıyor. Zaman geldi. Karanlık Lord emrediyor - hepiniz savaşta düşmanlarınızın üzerine yürüyeceksiniz. {S3} içindeki {s2} emirleri gelecek. İlk baştaki rolün çok iyi olmayacak, ama yakında kendini ispatlayacaksın^^Savaş başladı; Batı'nın yıkılışı başlıyor!
-qstr_{s13}_asked_you_to_j|{s13} senden en az {reg13} asker ile birlikte ona katılmanı ve onunla Isengard'ın son duruşunda ona katılmanı istedi.
 qstr_You_defeated_{reg5}_|{reg5} Düşmanını yendiniz ve komutanınızı etkilediniz.
 qstr_You_defeated_{reg5}_e|{reg5} Düşmanını yenilgiye ugrattın.
 qstr_You_failed_to_defeat|Herhangi bir düşmanı yenemedin.
@@ -1193,9 +1187,6 @@ qstr_The_War_of_the_Two_T|İki Kulenin savaşı başladı!
 qstr_The_forces_of_{s22}_|{s22} Tarafının kuvveti arttı! {s22} Şu an {s23}.
 qstr_The_might_of_{s22}_h|{s22} Tarafının gücü Zayıfladı! {s22} Şu an {s23}.
 qstr_In_a_desperate_attem|Düşmanlarına karşı kendisini savunmak için umutsuz bir girişimde bulunan Sauron, Mordor lejyonlarını gönderiyor!
-qstr_Guardians_of_{s6}|{s6}'nın Muhafızları
-qstr_Guard_Legion_of_{s6}|{s6}'ın Muhafız Lejyonu
-qstr_Scouts_report_that_{|İzciler {s6}'nın başkenti savunmak için kazılan son hendekte {s7} civarında büyük bir ordu topladıgını bildirdi.
 qstr_The_forces_of_{s2}_e|{s2} bir İleri Kampı {s15}'de kurdu!
 qstr_The_hosts_of_{s2}_ma|{s2}'nin sahipleri evlerini savunmak için geri çekildiler!
 qstr_{playername}_s_Reser|{playername}'in Rezervleri
@@ -1378,15 +1369,6 @@ qstr_This_is_evil_news_yo|Bu, getirdigin kötü haber. Kara yelkenler gittikçe 
 qstr_This_is_evil_news_you|Bu getirdigin kötü haber. Dogulular daha cüretkâr oluyor ve Esgaroth yanıyor. {playername}, Başarısızlıgınız için sizi suçlamıyorum, ama bogazdan bir darbe aldık, acıyan bir darbe. Git şimdi.  Umut Krallıgımız için azalmazdır, ve hayatta kalanları canlı tutmak için savaşmalıyız.
 qstr_Pah!_It_seems_you_we|Hah! Görünüşe göre yüzgeçlerini kaybettin {playername}. Şimdi bu Gondorlular, yüksek kulelerinde, krallar gibi dertsiz oturuyorlar, gülüyorlar kara yelkenler yanarken! Belki de bir kadırganın küreklerindeki bir ipucu, birlikleriniz için uygun bir ceza olurdu.; ne yazık ki onlar senin emrindeler, benim degil. Göz'ün hoşuna gitmeyecek. Beni yalnız bırak.
 qstr_Have_you_nothing_bet|Başarısızlıgınız için önereceginiz zayıf mazeretlerden daha iyi bir şeyiniz yok mu {playername}? Belki de inandıgımız kadar güçlü degilsindir. Gelecekte amacımıza daha iyi hizmet et, {playername}. Zayıflar için merhamet olmayacak!
-qstr_{playername}_we_have|{playername}, Isengard hemen ayaklarımızın ucunda yer alıyor. Son savunma hatlarını kurdular ve Saruman'ı kulesinde koruyorlar. Benimle gel ve yüzleşelim!
-qstr_Are_you_ready_to_mee|Isengard'ın son savunması ile tanışmaya hazır mısın?
-qstr_I_am_ready_to_ride_w|Seninle Isengard'a karşı birlikte at sürmeye hazırım.
-qstr_I_am_ready_to_ride_wi|Seninle at sürmeye ve dostlarınla tanışmaya hazırım. Şimdi bunu bitirelim.
-qstr_I_am_not_ready_to_ri|Ben seninle at sürmeye henüz hazır degilim. Biraz daha zamana ihtiyacım var.
-qstr_You_do_not_have_enou|Bu savaşta yardımcı olacak kadar birliginiz yok. En az 30 kişi toplayın ve yakında bana katılın!
-qstr_Stay_close_we_will_t|Yakında kal, düşmanın yanına yakın pozisyon alacagız. Hepimiz toplanınca saldırıya başlayacagız.
-qstr_You_have_taken_too_l|Çok uzun sürdün... Şimdi, senle veya sensiz gidecegiz. Düşmanın yakınında toplanacagız ve 3 gün içinde saldıracagız.
-qstr_Make_haste_{playerna|Acele edin, {playername}. Onların kurtulmasını istemiyoruz.
 qstr_Your_mission_is_comp|Görevin tamamlandı, {s9} senden bir sonraki emirlerine kadar onu takip etmeni istiyor.
 qstr_{s13}_asked_you_to_g|{s13}, {reg3} tane {s4}toplamanı ve ona ona teslim etmeni istedi.
 qstr_Moreover_should_you_|Eger, {s24} olursan Savaş Konseyine katılma hakkı kazanacaksın. Burada savaşın kaderini degiştirebilecek kararlar verebilirsin. Şu anda, bir {s25} olarak, sadece emirleri takip et ve yakınlarda kal. Yakında harekete geçecegiz.
@@ -1523,7 +1505,7 @@ qstr_I_want_you_and_your_|Seni ve adamlarını öldürme görevi için istiyorum
 qstr_{playername}_you_nee|{playername}, saygımı ve adamlarının saygısını kazanmalısın. {s6} {reg22} {s7} birlikleri!
 qstr_{s9}_wants_you_to_per|{s9} senden bizzat {reg22} {s6} kadar birligi öldürmeni istiyor.
 qstr_{s9}_wants_you_and_y|{s9} sen ve adamlarından {reg22} {s6} kadar birligi öldürmeni istiyor.
-qstr_{playername}_we_have|{playername}, Isengard hemen ayaklarımızın ucunda yer alıyor. Son savunma hatlarını kurdular ve Saruman'ı kulesinde koruyorlar. Benimle gel ve yüzleşelim!
+qstr_{playername}_we_have|{playername}, acımasız haberler aldık. Umbar Korsanları gittikçe daha cesurlaşıyor ve biz konuşurken bile {s6} yakınlarında bir filo toplanıyor. Zaten kıyı şeridi boyunca ilerliyorlar ve yakında şehrede ineceklerdir.^^ Filoya şehre ulaşmadan müdahale etmeliyiz. {s6} tarafına dogru acele edin ve yerel yetkililerle konuşun.
 qstr_{playername}_we_have_|{playername}, acımasız haberler aldık. Rhûn'un vahşileri düşündügümüzden daha kurnaz ve cesur çıktı - İzcilerimize görülmeden, Uzun Göl boyunca onları taşımak için yeterli sayıda tekne ve sal inşa ettiler ve dogrudan Esgaroth'ta saldırıyorlar!^^ Filoya şehre ulaşmadan müdahale etmeliyiz. Birliklerini olabildigince çabuk sür ve barbarları su boyunca kovala!
 qstr_If_you_seek_pillage_|Eger talan ve yagma arıyorsan, işte eşsiz bir fırsat, {playername}.^^  {s7} limanından bir Korsan filosu kalkıyor, ve dogrudan {s6} için bir rota belirleyecek, ki yolmak için pek olgunlaşmış bir yer! Saldırılarında onlara katıl ve ganimetlerden pay kap!
 qstr_The_soft_weaklings_o|Esgaroth'un yumuşak karınlıları hızlı atlılarımız ve vahşi savaşçılarımız karşısında bir hiç, {playername}. Bu baya bilinen bişey. Göl insanları kendilerini güvende sanıyorlar, bizden uzak suyun karşısında,ama yakında onlara öyle olmadıgını gösterecegiz!^^ Savaşçılarımızı direk göl üzerinden taşıyacak kadar iyi tekneler ve sallar yaptık. Bizi orda beklemeyecekler! ^^Ana Kampa git ve saldırıya katılmak istiyorsan kamp komutanıyla konuş.

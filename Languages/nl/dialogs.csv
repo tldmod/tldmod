@@ -724,8 +724,8 @@ dlga_kill_scout_8:close_window|Zoals je wenst, zoals je wenst. Deze weg!
 ; dlga_woodelf_help_3:close_window|Safe journey to you, Torbal. I'm sure we will meet again.
 ; dlga_healers_meet:healer_who|What do you do?.
 ; dlga_healers_meet:healers_ask|I need your help.
-; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
-dlga_healers_ask:healer_injured_ask|Mijn mannen en Ik zijn gewond, en we hebben geen tijd om te wachten voor ze genezen. Kan jij ons helpen?
+; dlga_healers_ask_2:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
+dlga_healers_ask_2:healer_injured_ask|Mijn mannen en Ik zijn gewond, en we hebben geen tijd om te wachten voor ze genezen. Kan jij ons helpen?
 dlga_healers_meet:close_window|Niets.
 dlga_healers_injured_check:healers_injured_heal|Ja, zorg voor ons.
 dlga_healers_wound_check:healers_wound_heal|Ja, zorg voor ons.
@@ -1094,7 +1094,7 @@ dlga_start:party_encounter_hostile_defender|Wat wil je?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Geef je over of sterf!
 dlga_party_encounter_hostile_defender:close_window|Niks, We zullen jou verlaten in vrede.
 dlga_start:close_window.45|*staart in stilte naar je*
-dlga_start:battle_reason_stated.1|Geef je over of sterf. Maak jouw keuze.
+dlga_start:battle_reason_stated|Ik zal drinken uit jou schedel!
 dlga_battle_reason_stated:close_window|Ik heb geen schrik van jou. Ik zal vechten.
 dlga_start:free|Hallo. What kan ik voor je doen?
 dlga_free:view_char_requested|Vertel me over jezelf

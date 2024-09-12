@@ -55,9 +55,10 @@ ui_crouch|çömelmek
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Karakteri içe aktarmak istediginizden emin misiniz?
-ui_explanation_strength|Güç: Her puan Cana +1 ekler. Bu yetenekler Gücün 1/3'ünü geçemez; Demirbeden, Güçlü Vurma, Güçlü Fırlatma, Güçlü Çekme.
-ui_explanation_intelligence|Zeka: Her zeka puanı anında bir ekstra beceri puanı verir ve bazı durumlarda XP kazancını biraz artırır. Aşagıdaki beceriler Zekanın 1 / 3'ünün ötesinde geliştirilemez: Talimci, İz Bulma, Taktik, Yön bulma, Tespit etme, Envanter Yönetimi, Yara Bakımı, Cerrahlık ve İlk Yardım.
-; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
+; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: Ironflesh, Power Strike, Power Throw, Power Draw.
+ui_explanation_agility|Çeviklik: Her puan beş silah puanı verir ve silah hızını% 0,5 artırır. Aşagıdaki beceriler Çevikligin 1 / 3'ünün ötesinde geliştirilemez: Silah Ustası, Kalkan, Atletizm, Binicilik, Atlı Okçuluk, Yagma.
+; ui_explanation_intelligence|Intelligence: (Wisdom) The deep understanding of nature and crafts. Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Bargainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, First Aid, and Wildcraft.
+; ui_explanation_charisma|Charisma: (Will) The power to inspire or dominate. Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Trainer, Leadership.
 ui_delivered_number_damage|%d hasar verildi.
 ui_mission_losses_killed|Öldürüldü
 ui_party_losses|%s :%d yaralandı --- %d öldürüldü %d

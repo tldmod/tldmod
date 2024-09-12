@@ -86,7 +86,6 @@ qstr_1H_Weapons^2H_Weapon|Armas de 1 mão^Armas de 2 mãos^Armas de Haste^Arcos^
 qstr_Equipment|Equipamento
 qstr_The_Last_Days_Mod_Op|Opções do Mod The Last Days
 qstr_War_Starts_at_Level:|Guerra começa no nível:
-qstr_Restrict_Player_Equi|Restringir Equipamento de Jogador:
 qstr_Battle_Formations_an|Formações de Batalha e IA:
 qstr_Native|Nativo
 qstr_TLD_FormAI__Original|TLD Formato de IA (Original)
@@ -237,7 +236,7 @@ qstr_+1_Intelligence|+1 Inteligência
 qstr_+{reg1}_to_Spotting|+{reg1} para Observação
 qstr__Scales_with_Wildcra|(Escalas com Sobrevivência na Natureza)
 ; qstr_Strengthens_all_Hero|Strengthens all Heroes
-; qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
+; qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
 ; qstr_lead_more_Uruks|lead more Uruks
 qstr_+1_to_Power_Throw|+1 em Poder de Arremesso
 ; qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
@@ -748,7 +747,6 @@ qstr_A_thunderstorm_from_|Uma tempestade vinda das Montanhas Nebulosas encobre o
 qstr_A_thunderstorm_from_t|Uma tempestade vinda das Montanhas Nebulosas encobre o campo de batalha. Arqueiros têm dificuldade neste tempo.
 qstr_A_poisonous_fog_from|Uma névoa venenosa vinda de Dol Guldur invade o campo de batalha. Você e seus soldados se sentem enfraquecidos. Existe medo entre os seus homens.
 qstr_A_poisonous_fog_from_|Uma névoa venenosa vinda de Dol Guldur invade o campo de batalha. Você não sente nenhuma mudança, mas você pode ouvir seus inimigos sofrendo e pode sentir o medo deles.
-; qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|Você se transforma em um urso!
 qstr_You_got_{reg1}_exper|Você ganhou {reg1} de experiência na forma de urso.
 qstr_Your_ability_to_chan|Sua habilidade de se transformar foi manifestada, de agora em diante você consegue andar por lugares selvagens tanto como homem quanto como urso.
@@ -804,9 +802,6 @@ qstr_Division_{reg1}_{s2}_fo|Divisão {reg1} {s2} forma {reg0} linhas (memorizad
 qstr_Delivered_{reg60}_da|Causou {reg60} de dano
 qstr_DEBUG__Health_Regen_|DEBUG (Regen. de Saúde): {s1} recupera {reg0}% de vida. = + {reg1}% FOR
 qstr_Your_bear_form_has_{|Sua forma urso tem {reg2}/{reg1} de vida!
-qstr_Three_Nazgul_are_cir|Três Nazgul estão circulando no céu acima do campo de batalha!
-qstr_Two_Nazgul_are_circl|Dois Nazgul estão circulando no céu acima do campo de batalha!
-qstr_A_Nazgul_is_circling|Um Nazgul está circulando os céus acima do campo de batalha!
 qstr_Some_of_your_human_t|Algumas de suas tropas humanas não se assustam com a escuridão. (Tropas noturnas não são afetadas por penalidades noturnas)
 qstr_You_are_filled_with_|Você se enfurece ao pôr seus olhos no inimigo (Berserk ativo).
 qstr_Your_mount_is_scared|Sua montaria está assustada pelo {s5}!
@@ -1138,7 +1133,6 @@ qstr_^^^^^^^You_come_upon|^^^^^^^Você se depara com os refugiados saindo de {s2
 qstr_^^^^^^^You_come_upon_|^^^^^^^Você se depara com os refugiados que acompanha desde {s2}. Eles parecem estar a caminho de {s3}, e são principalmente os velhos e os enfermos. ^^ Existem alguns guardas, mas não o suficiente para impedir você e seus homens de matar todos eles.
 qstr_^^At_last_the_Master|^^Finalmente, o Mestre está agindo! As tochas brilham intensamente. As armas afiadas brilham. Você e seus robustos rapazes receberão ordens de marcha em breve. Ai, vai ter luta, muita luta e glória o suficiente!^^Você tem a honra de ser convocado para uma audiência com o Mestre em sua torre. Provavelmente, suas primeiras ordens serão trabalho de snaga - ataque uma aldeia aqui, ataque uma caravana lá. Mas você vai provar a si mesmo em breve. Quem disse que você não desempenhará um papel tão importante quanto qualquer comandante de {s2} em {s3}?^^A guerra começou; começa a queda do Homem e de seus aliados!
 qstr_^^Your_head_suddenly|^^Sua cabeça de repente se enche de uma visão - o Olho em chamas. Ao seu redor, seus guerreiros param em seu caminho. De alguma forma, você sabe naquele momento que todos vocês estão ouvindo a mesma convocação, tendo a mesma visão. Grande é a arte do Olho Sem Pálpebras - grande é o poder de Barad-dûr!.^^O conhecimento, não falado, penetra em seus próprios ossos. A hora chegou. O Senhor do Escuro comanda - todos vocês devem marchar sobre seus inimigos em uma guerra aberta. Pedidos de {s2} em {s3} chegarão. A sua parte no início não será grande, mas você se provará logo.^^A guerra começou; a queda do Oeste começa!
-qstr_{s13}_asked_you_to_j|{s13} pediu a você para se juntar a ele com pelo menos {reg13} tropas e encontrar a Última Resistência de Isengard.
 qstr_You_defeated_{reg5}_|Você derrotou {reg5} inimigos e impressionou seu comandante.
 qstr_You_defeated_{reg5}_e|Você derrotou {reg5} inimigos.
 qstr_You_failed_to_defeat|Você não conseguiu derrotar nenhum inimigo.
@@ -1193,9 +1187,6 @@ qstr_The_War_of_the_Two_T|A Guerra das Duas Torres foi iniciada
 qstr_The_forces_of_{s22}_|As forças de {s22} se reuniram! {s22} agora é {s23}.
 qstr_The_might_of_{s22}_h|O poder de {s22} diminuiu! {s22} agora é {s23}.
 qstr_In_a_desperate_attem|Em uma tentativa desesperada de se defender de seus inimigos, Sauron envia suas legiões de Mordor!
-qstr_Guardians_of_{s6}|Guardiões de {s6}
-qstr_Guard_Legion_of_{s6}|Legião da Guarda de {s6}
-qstr_Scouts_report_that_{|Batedores relatam que {s6} reuniu um grande exército nas proximidades de {s7}, em uma última tentativa de defender a capital.
 ; qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|As hostes de {s2} marcham de volta para defender suas casas!
 qstr_{playername}_s_Reser|Reservas de {playername}
@@ -1378,15 +1369,6 @@ qstr_This_is_evil_news_yo|Essas são más notícias que você traz. As velas neg
 qstr_This_is_evil_news_you|Essas são más notícias que você traz. Os Orientais ficam cada vez mais ousados ​​e Esgaroth arde. Não vou culpar tanto você, {playername}, por seu fracasso, mas recebemos um golpe doloroso, de fato, um golpe doloroso. Vá agora. A esperança diminui para o nosso reino, e devemos lutar para manter vivo o que resta dele.
 qstr_Pah!_It_seems_you_we|Pah! Parece que você não conseguiu encontrar suas pernas do mar, {playername}. Agora eles estão sentados, estes homens de Gondor, no alto de suas torres, vaidosos como reis, rindo enquanto as velas negras queimam! Talvez uma restrição aos remos de uma galera fosse uma punição adequada para suas tropas; É uma pena que estejam sob o seu comando, e não meu. O Olho não ficará satisfeito. Agora deixa-me.
 qstr_Have_you_nothing_bet|Você não tem nada melhor do que desculpas esfarrapadas para oferecer por seu fracasso, {playername}? Talvez você não seja tão forte quanto pensávamos. Sirva melhor nossa causa no futuro, {playername}. Não haverá misericórdia para os fracos!
-qstr_{playername}_we_have|{playername}, temos Isengard de joelhos. Eles lançaram sua última resistência e estão protegendo Saruman em sua torre. Cavalgue comigo e enfrentremo-os!
-qstr_Are_you_ready_to_mee|Você está pronto para enfrentar a última resistência de Isengard?
-qstr_I_am_ready_to_ride_w|Estou pronto para cavalgar com você contra Isengard.
-qstr_I_am_ready_to_ride_wi|Estou pronto para cavalgar com você e enfrentá-los. Vamos pôr um fim nisso agora.
-qstr_I_am_not_ready_to_ri|Ainda não estou pronto para cavalgar com você. Eu preciso de mais algum tempo.
-qstr_You_do_not_have_enou|Você não tem tropas suficientes para ajudar nesta batalha. Levante pelo menos 30 homens e junte-se a mim em breve!
-qstr_Stay_close_we_will_t|Fique perto, vamos nos posicionar perto do inimigo. Quando estivermos todos reunidos, iremos atacar.
-qstr_You_have_taken_too_l|Você demorou demais... Vamos cavalgar agora, com ou sem você. Vamos nos reunir perto do inimigo e em 3 dias, vamos atacar.
-qstr_Make_haste_{playerna|Apresse-se, {playername}. Não queremos que eles se recuperem.
 qstr_Your_mission_is_comp|Sua missão está completa, {s9} quer que você continue a seguir o exército dele até novo aviso.
 qstr_{s13}_asked_you_to_g|{s13} pediu que você reunisse {reg3} unidades de {s4} e as entregasse de volta a ele.
 qstr_Moreover_should_you_|Além disso, se você se tornar {s24}, será bem-vindo ao meu Conselho de Guerra, onde poderá tomar decisões que afetarão o curso de nossa campanha. Por enquanto, como {s25}, siga-nos e fique por perto. Estaremos nos movendo em breve.
@@ -1523,7 +1505,7 @@ qstr_I_want_you_and_your_|Eu quero que você e seus homens matem
 qstr_{playername}_you_nee|{playername}, você precisa ganhar meu respeito e o de seus homens. {s6} {reg22} {s7} tropas!
 qstr_{s9}_wants_you_to_per|{s9} quer que você mate pessoalmente {reg22} {s6} tropas.
 qstr_{s9}_wants_you_and_y|{s9} quer que você e seus homens matem {reg22} {s6} tropas.
-qstr_{playername}_we_have|{playername}, temos Isengard de joelhos. Eles lançaram sua última resistência e estão protegendo Saruman em sua torre. Cavalgue comigo e enfrentremo-os!
+qstr_{playername}_we_have|{playername}, recebemos notícias sombrias. Os Corsários de Umbar ficam cada vez mais ousados ​​e, enquanto falamos, uma frota se concentra não muito longe de {s6}. Eles já atacam ao longo da costa e logo estarão sobre a própria cidade.^^ Devemos interceptar a frota antes que ela alcance a cidade. Corra para {s6} e fale com as autoridades locais.
 qstr_{playername}_we_have_|{playername}, recebemos notícias sombrias. Os selvagens de Rhûn têm mais astúcia e ousadia do que pensávamos - sem serem vistos por nossos batedores, eles construíram uma quantidade suficiente de barcos e jangadas para transportá-los através do Lago Longo e estão atacando diretamente em Esgaroth!^^ Devemos interceptar a frota antes de chegar à cidade. Lidere suas tropas o mais rápido que puder e leve os bárbaros de volta ao mar!
 qstr_If_you_seek_pillage_|Se você busca pilhagem e saque, aqui está uma oportunidade incomparável, {playername}.^^ Uma frota dos Corsáros está saindo do porto em {s7} e seguirá em linha reta para {s6}, que está pronta para ser esbulhada! Junte-se a eles em seu ataque e compartilhe os despojos!
 qstr_The_soft_weaklings_o|Os fracos macios de Esgaroth não são páreos para nossos velozes e ferozes cavaleiros e guerreiros, {playername}. Isso é conhecido. Os Homens do Lago acreditam estar seguros, do outro lado da água, longe de nós, mas logo mostraremos o contrário!^^ Fizemos barcos e jangadas, bons o suficiente para carregar nossos guerreiros direto para o outro lado do lago. Eles não estarão nos esperando!^^ Vá para o Acampamento Principal e fale com o comandante do acampamento se desejar se juntar ao ataque.

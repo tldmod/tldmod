@@ -86,7 +86,6 @@ qstr_1H_Weapons^2H_Weapon|1R Zbrane^2R Zbrane^Týčové zbrane^Lukostreľba^Kuš
 qstr_Equipment|Vybavenie
 qstr_The_Last_Days_Mod_Op|Možnosti The Last Days Módu
 qstr_War_Starts_at_Level:|Vojna začína na úrovni:
-qstr_Restrict_Player_Equi|Obmedziť vybavenie hráča:
 qstr_Battle_Formations_an|Bojové formácie a AI:
 qstr_Native|Pôvodný
 qstr_TLD_FormAI__Original|TLD FormAI (originál)
@@ -237,7 +236,7 @@ qstr_+1_Intelligence|+1 k Inteligencii
 qstr_+{reg1}_to_Spotting|+{reg1} k Ostražitosti
 qstr__Scales_with_Wildcra|(zvyšuje sa spolu s Lesníctvom)
 ; qstr_Strengthens_all_Hero|Strengthens all Heroes
-; qstr_+2_to_First_Aid__Par|+2 to First Aid (Party)
+; qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
 ; qstr_lead_more_Uruks|lead more Uruks
 qstr_+1_to_Power_Throw|+1 k Mocnému vrhu
 ; qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
@@ -748,7 +747,6 @@ qstr_A_thunderstorm_from_|Na bojové pole sa zniesla blýskavica a hromobitie z 
 qstr_A_thunderstorm_from_t|Na bojové pole sa zniesla blýskavica a hromobitie z Hmlistých hôr. Lukostrelci majú kvôli počasiu ťažkosti.
 qstr_A_poisonous_fog_from|Jedovaté výpary Dol Gulduru sa lenivo vznášajú nad bojovým poľom. Spolu so svojimi mužmi sa cítiš oslabený. Medzi mužmi vyvstáva strach.
 qstr_A_poisonous_fog_from_|Jedovaté výpary Dol Gulduru sa lenivo vznášajú nad bojovým poľom. Necítiš žiadnu, ale tvoji trpiaci nepriatelia páchnu strachom.
-; qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|Získal si podobu medveďa!
 qstr_You_got_{reg1}_exper|Získal {reg1} skúsenosti v medvedej podobe.
 qstr_Your_ability_to_chan|Prejavila sa tvoja schopnosť vziať na seba medvediu podobu, odteraz môžeš kráčať po cestách ako človek alebo medveď.
@@ -804,9 +802,6 @@ qstr_Division_{reg1}_{s2}_fo|Divízia {reg1} {s2} formuje {reg0} línií (zapam�
 qstr_Delivered_{reg60}_da|Spôsobené {reg60} zranenia
 qstr_DEBUG__Health_Regen_|DEBUG (Regenerácia života): {s1}ovi sa obnovilo {reg0}% života. = +{reg1}% SIL
 qstr_Your_bear_form_has_{|Tvoja medvedia podoba ma {reg2}/{reg1} bodov života!
-qstr_Three_Nazgul_are_cir|Trojica Nazgúlov krúži na nebi nad bojovým poľom.
-qstr_Two_Nazgul_are_circl|Dvojica Nazgúlov krúži na nebi and bojovým poľom!
-qstr_A_Nazgul_is_circling|Jeden Nazgúl krúži na oblohe nad bojiskom!
 qstr_Some_of_your_human_t|Niektoré ľudské jednotky nie sú zastrašené temnotou.(Nočné Jednotky nie sú postihnuté nočnými nevýhodami)
 qstr_You_are_filled_with_|Ovládne ťa nespútaný hnev už len pri pohľade na tvojho soka (Berserk aktívny)
 qstr_Your_mount_is_scared|Tvoje jazdecké zviera je splašené hrúzou z {s5}!
@@ -1138,7 +1133,6 @@ qstr_^^^^^^^You_come_upon|^^^^^^^Narazil si na utečencov opúšťajúcich {s2} 
 qstr_^^^^^^^You_come_upon_|^^^^^^^Narazil si na utečencov, ktorých si stopoval od {s2}u. Vyzerá to, že mieria do {s3}u. Väčšina z nich je zoslabnutá a stará. ^^ Je medzi nimi pár stráži, ale nie dosť na to aby teba a tvojich mužov zastavili pred tým, aby ste ich zmasakrovali.
 qstr_^^At_last_the_Master|^^Konečne, náš Pán vydal rozkazy! Tisíce fakieľ sa rozhorelo, ich oheň sa odráža na lesku smrtiacich zbraní. Ty a tvoji statní chlapci už onedlho dostanete rozkazy. Aj, bude sa bojovať, a veľa, a sláva nikoho neminie!^^Máš tu česť byť povolaný na audienciu s Pánom v Jeho Veži. Najprv zrejme dostaneš podradné úlohy vhodné tak pre zmokov - vypľundruj dedinu tu, prepadni konvoj tam. Ale čoskoro sa preukáže tvoja cena. Kto môže tvrdiť, že vo vojne nezohraješ rovnako veľkú úlohu, ako akýkoľvek veliteľ {s2}a z {s3}u?^^Vojnové ohne zbĺkli, pád Ľudí a ich spojencov započal!
 qstr_^^Your_head_suddenly|^^Odrazu tvoje vedomie a zmysli pohltí vidina - ohnivé Oko. Všetci vôkol teba v úžase strnú. Niečo ti hovorí, že vidia rovnaký výjav a čujú to isté volanie. Veľká je sila Oka bez viečka - veľká je moc Bard-dûru!.^^V samotných kostiach údoch tvojho tela pocítiš poznanie. Čas nadišiel. Temný Pán vydal svoj rozkaz - budeš pochodovať v ústrety svojim nepriateľom v otvorenej vojne. Čakaj rozkazy od {s2}a v {s3}u. Spočiatku tvoj údel v tomto boji nebude veľký, ale krst ohňom vojny onedlho preverí každého schopnosti a vlohy.^^ Vojna započala a s ňou aj pád Západu!
-qstr_{s13}_asked_you_to_j|{s13} ti prikazuje, aby si sa k nemu pridal s najmenej {13} jednotkami a účastnil sa Posledného Vzdoru Isengardu.
 qstr_You_defeated_{reg5}_|Pobil si {reg5} nepriateľov a urobil si na svojho veliteľa dojem.
 qstr_You_defeated_{reg5}_e|Pobil si {reg5} protivníkov.
 qstr_You_failed_to_defeat|Nepodarilo sa ti poraziť jediného nepriateľa.
@@ -1193,9 +1187,6 @@ qstr_The_War_of_the_Two_T|Vojna Dvoch Veží započala!
 qstr_The_forces_of_{s22}_|Vojská {s22}u boli posilnené! {s22} sa stal {s23}.
 qstr_The_might_of_{s22}_h|Ríša {s22} bola oslabená! {s22} sa stal {s23}.
 qstr_In_a_desperate_attem|V zúfalej obrane vysiela Sauron von svoje Mordorské légie.
-qstr_Guardians_of_{s6}|Strážci {s6}
-qstr_Guard_Legion_of_{s6}|Légia ochrancov {s6}
-qstr_Scouts_report_that_{|Prieskumníci hlásia, že {s6} shromáždil veľkú armádu neďaleko {s7} v poslednom nádeji ochrániť hlavné mesto.
 ; qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|Páni {s2}u vyrážajú späť brániť domovinu!
 qstr_{playername}_s_Reser|{playername}ove zálohy.
@@ -1378,15 +1369,6 @@ qstr_This_is_evil_news_yo|Neblahé správy prinášaš. Tí, čo sa plavia pod �
 qstr_This_is_evil_news_you|Neblahé správy prinášaš. Východniari nabrali druhý dych a Esgaroth je v plameňoch. Nebudem ťa kárať za tvoje zlyhanie, {playername}, ale utrpeli sme drtivý zásah, veru drtivý. Nádej nášho kráľovstva stojí na vážkach a my za ňu musíme bojovať.
 qstr_Pah!_It_seems_you_we|Phe! Vyzerá to, že ti plavba nebola bárs po chuti, {playername}. A teraz sedia tí muži gondorskí vysoko vo svojich vežiach samoľúbo jak králi, rehocú sa na úkor čiernych plachiet v plameňoch! Možno lopota u vesiel na galére by bola hodiacim sa trestom pre tvojich mužov; škoda, že podliehajú tvojim povelom. Oko nebude potešené. Teraz odíď.
 qstr_Have_you_nothing_bet|Nemáš nič iné než len chabé výhovorky na omluvu tvojho zlyhania, {playername}? Možno nie si tak silný, jak sme si mysleli. Nabudúce nám poslúž lepšie, {playername}. Pre slabých niet zľutovania!
-qstr_{playername}_we_have|{playername}, Isengard melie z posledného. Posledný krát sa nám postavili na odpor, aby ochránili Sarumana v jeho veži. Vpadnime do ich šíkov spoločne!
-qstr_Are_you_ready_to_mee|Pripravený čeliť poslednému odporu Sarumana?
-qstr_I_am_ready_to_ride_w|Som pripravený vyjsť im v ústrety Isengardu po tvojom boku.
-qstr_I_am_ready_to_ride_wi|Som pripravený na ľúty boj po tvojom boku. Skoncujme to s nimi.
-qstr_I_am_not_ready_to_ri|Ešte nie som úplne pripravený. Potrebujem trochu viac času.
-qstr_You_do_not_have_enou|Nemáš dostatok jednotiek, aby si mi pomohol. Naverbuj ich aspoň 30 a čo najrýchlejšie spojme naše sily!
-qstr_Stay_close_we_will_t|Zostaň nablízku, utáboríme sa neďaleko nepriateľa. Keď zhromaždíme všetky naše sily, udrieme.
-qstr_You_have_taken_too_l|Trvalo ti to príliš dlho... Stretneme sa s nimi na bojovom poli, a to či s tebou alebo bez teba. Utáboríme sa neďaleko nepriateľa a v tomto čase za 3 dni zatrúbime na bojové rohy.
-qstr_Make_haste_{playerna|Ponáhľaj sa, {playername}. Nemôžeme ich nechať obnoviť svoje sily.
 qstr_Your_mission_is_comp|Tvoja úloha je splnená, {s9} požaduje, aby si neodkladne následoval jeho armádu.
 qstr_{s13}_asked_you_to_g|{s13} ťa požiadal, aby si shromáždil {reg3} jednotiek {s4} a odviesť ich k nemu.
 qstr_Moreover_should_you_|Naviac sa stávaš {s24}. Budeš mať miesto v mojej Vojnovej rade, kde môžeš konať rozhodnutia, ktoré ovplyvnia postup nášho ťaženia. Nateraz, ako {s25}, nás následuj a drž sa nablízku. Onedlho vyrazíme.
@@ -1523,7 +1505,7 @@ qstr_I_want_you_and_your_|Chcem, aby si so svojimi mužmi zabil
 qstr_{playername}_you_nee|{playername}, získaj si u mňa i svojej družiny vážnosť. {s6} {reg22} {s7} jednotiek!
 qstr_{s9}_wants_you_to_per|{s9} chce, aby si osobne zabil {reg22} {s6} jednotiek.
 qstr_{s9}_wants_you_and_y|{s9} chce, aby si so svojimi mužmi zabil {reg22} {s6} jednotiek.
-qstr_{playername}_we_have|{playername}, Isengard melie z posledného. Posledný krát sa nám postavili na odpor, aby ochránili Sarumana v jeho veži. Vpadnime do ich šíkov spoločne!
+qstr_{playername}_we_have|{playername}, doniesli sa k nám temné zvesti. Korzári z Umbaru nadobudli síly a ako hovoríme, ich flotila sa zhromaďžuje v bezprostrednej blízkosti {s6}. Už pľundrujú pobrežie a onedlho sa napadnú i samotné mesto.^^ Musíme zadržať flotilu než sa dostane k mestu. Poponáhľaj sa do {s6} a prehovor s miestnymi predákmi.
 qstr_{playername}_we_have_|{playername}, doniesli sa k nám temné zvesti. Divosi z Rhûnu sú odvážni a prefíkaní viac, než sme pripúšťali - nevidení našimi zvedmi si postavili dostatok lodiek a pltí a preplávali cez Dlhé Jazero, aby udreli na Esgaroth!^^ Musíme zastaviť ich flotilu než dosiahnú mesto. Veď svojich mužov tak rýchlo, ako sa len bude dať a vyžeň divochov späť za vodu!
 qstr_If_you_seek_pillage_|Pokiaľ vyhšadávaš drancovačku a plienenie, máš nespočet príležitosť, {playername}.^^ Flotila Korzárov vyráža z prístavu o {s7} a bude sa plaviť rovno do {s6}, sen každého nájazdníka! Bojuj po ich boku a oni sa s tebou rozdelia o korisť!
 qstr_The_soft_weaklings_o|Krehký ľud Esgarothský pre našich živelných jazdcov a nebojácných bojovník nie je žiadna výzva, {playername}. To sa vie. Riečny ľud verí, že ho od nás ochráni veľaká voda, ale to sa pekne prerátali!^^ Postavili sme lode a vori dosť dobré na to, aby našich bojovníkov previezli cez jazero. To určite nebudú čakať! ^^Choď do Hlavného tábora Rhûnov a porozprávaj sa s veliteľom, ak sa chceš k útoku pridať.

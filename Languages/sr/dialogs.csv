@@ -724,8 +724,8 @@ dlga_woodelf_help_2:woodelf_help_3.1|You are? Of course you are! I have seen tha
 dlga_woodelf_help_3:close_window|Safe journey to you, Torbal. I'm sure we will meet again.
 dlga_healers_meet:healer_who|What do you do?.
 ; dlga_healers_meet:healers_ask|I need your help.
-; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
-dlga_healers_ask:healer_injured_ask|My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?
+; dlga_healers_ask_2:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
+dlga_healers_ask_2:healer_injured_ask|My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?
 dlga_healers_meet:close_window|Nothing.
 dlga_healers_injured_check:healers_injured_heal|Yes, attend to us.
 dlga_healers_wound_check:healers_wound_heal|Yes, attend to us.
@@ -1094,7 +1094,7 @@ dlga_start:party_encounter_hostile_defender|What do you want?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Surrender or die!
 dlga_party_encounter_hostile_defender:close_window|Nothing. We'll leave you in peace.
 dlga_start:close_window.45|* stares at you silently *
-dlga_start:battle_reason_stated.1|Surrender or die. Make your choice.
+dlga_start:battle_reason_stated|I will drink from your skull!
 dlga_battle_reason_stated:close_window|I am not afraid of you. I will fight.
 dlga_start:free|Hello. What can I do for you?
 dlga_free:view_char_requested|Tell me about yourself

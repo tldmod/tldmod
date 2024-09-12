@@ -55,9 +55,10 @@ ui_crouch|Crouch
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Apakah Anda yakin ingin mengimpor karakter tersebut?
-ui_explanation_strength|Kekuatan: Setiap poin menambah +1 pada poin hit. Keterampilan berikut tidak dapat dikembangkan melebihi 1/3 Kekuatan: ironflesh, Kekuatan-serangan, Kekuatan-lemparan, Kekuatan-tarikan.
-ui_explanation_intelligence|Intelijen: Setiap poin intelijen segera memberikan satu poin keterampilan tambahan, dan sedikit meningkatkan perolehan XP pada beberapa kesempatan. Keterampilan berikut tidak dapat dikembangkan melebihi 1/3 dari Kecerdasan: Pelatih, Pelacakan, Taktik, Pencarian Jalan, Penelusuran, Manajemen Inventaris, Perawatan Luka, Pembedahan, dan Pertolongan Pertama.
-; ui_explanation_charisma|Charisma: Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Wildcraft, Leadership, Trade.
+; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: Ironflesh, Power Strike, Power Throw, Power Draw.
+ui_explanation_agility|Agility: Setiap poin memberikan lima poin senjata dan meningkatkan kecepatan senjata sebesar 0,5%. Keterampilan berikut tidak dapat dikembangkan melebihi 1/3 dari Agility: Master Senjata, Tameng, Athletics, Berkendara, Penunggang Pemanah, Penjarahan.
+; ui_explanation_intelligence|Intelligence: (Wisdom) The deep understanding of nature and crafts. Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Bargainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, First Aid, and Wildcraft.
+; ui_explanation_charisma|Charisma: (Will) The power to inspire or dominate. Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Trainer, Leadership.
 ; ui_delivered_number_damage|Delivered %d damage.
 ui_mission_losses_killed|terbunuh:
 ; ui_party_losses|%s  : %d wounded --- %d killed of %d.

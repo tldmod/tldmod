@@ -724,8 +724,8 @@ dlga_woodelf_help_2:woodelf_help_3.1|本当かい？やっぱりそうなのか�
 dlga_woodelf_help_3:close_window|旅の無事を祈るよ。きっとまた会えるだろう。
 dlga_healers_meet:healer_who|何ができるのか？
 ; dlga_healers_meet:healers_ask|I need your help.
-; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
-dlga_healers_ask:healer_injured_ask|私と私の部下たちは負傷しているのだが、傷が治るまで待っている時間がないのだ。治療できないだろうか？
+; dlga_healers_ask_2:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
+dlga_healers_ask_2:healer_injured_ask|私と私の部下たちは負傷しているのだが、傷が治るまで待っている時間がないのだ。治療できないだろうか？
 dlga_healers_meet:close_window|何でもない。
 dlga_healers_injured_check:healers_injured_heal|手当をしてもらいたい。
 dlga_healers_wound_check:healers_wound_heal|手当をしてもらいたい。
@@ -1094,7 +1094,7 @@ dlga_start:party_encounter_hostile_defender|何か用か？
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|降伏せよ。さもなくば死だ！
 dlga_party_encounter_hostile_defender:close_window|なんでもない。揉め事はごめん{だ/よ}。
 dlga_start:close_window.45|* 黙ってあなたをにらみつけている *
-dlga_start:battle_reason_stated.1|降伏か死か。好きなほうを選べ。
+dlga_start:battle_reason_stated|おまえの頭蓋骨は酒杯にしてやるわ！
 dlga_battle_reason_stated:close_window|おまえなど怖れるものか。私は戦うぞ。
 dlga_start:free|ごきげんよう。私に何かできることはあるか？
 dlga_free:view_char_requested|君について知りたい

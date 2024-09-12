@@ -86,7 +86,6 @@ qstr_1H_Weapons^2H_Weapon|1H - 한손 무기^2H - 양손 무기^장병기^활^�
 qstr_Equipment|장비
 qstr_The_Last_Days_Mod_Op|TLD 모드 옵션
 qstr_War_Starts_at_Level:|전쟁이 다음 레벨에 시작됩니다: 
-qstr_Restrict_Player_Equi|플레이어 장비 제한: 
 qstr_Battle_Formations_an|진형과 인공지능: 
 qstr_Native|Native
 qstr_TLD_FormAI__Original|TLD 맞춤 AI (기본)
@@ -237,7 +236,7 @@ qstr_+1_Intelligence|+1 Intelligence
 qstr_+{reg1}_to_Spotting|탐지 +{reg1}
 qstr__Scales_with_Wildcra|(서바이벌에 따라 조정)
 qstr_Strengthens_all_Hero|모든 영웅 강화하기
-qstr_+2_to_First_Aid__Par|응급치료에 +2 (부대)
+; qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
 ; qstr_lead_more_Uruks|lead more Uruks
 qstr_+1_to_Power_Throw|던지는 힘에 +1
 ; qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
@@ -748,7 +747,6 @@ qstr_A_thunderstorm_from_|안개 산맥에서 온 뇌우가 전장을 무섭게 
 qstr_A_thunderstorm_from_t|안개 산맥에서 온 뇌우가 전장을 무섭게 휩쓴다. 이런 날씨라면 궁수들은 어려움을 겪는다.
 qstr_A_poisonous_fog_from|돌 굴두르에서 뿜어져나오는 독 안개가 전쟁터에 남아있다. 당신과 당신의 병력들이 약해지는 것을 느낀다. 병사들 사이에 공포가 도사리고 있다.
 qstr_A_poisonous_fog_from_|돌 굴두르에서 뿜어져나오는 독 안개가 전쟁터에 남아있다. 당신은 전혀 차이를 못 느끼지만, 적들이 고통받는 소리가 들리며 적들이 느끼는 공포를 맡을 수 있다.
-; qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|곰으로 변신했다!
 qstr_You_got_{reg1}_exper|당신은 곰 형태에서 {reg1}만큼의 경험치를 얻었다.
 qstr_Your_ability_to_chan|당신은 모습을 변화시킬 수 있게 되었습니다. 이제부터 사람과 곰 모습을 통해 야생의 길을 걸을 수 있습니다.
@@ -804,9 +802,6 @@ qstr_Division_{reg1}_{s2}_fo|Division {reg1} {s2} forms {reg0} lines (memorized)
 qstr_Delivered_{reg60}_da|{reg60} 만큼의 피해를 입혔습니다.
 qstr_DEBUG__Health_Regen_|디버그 (체력 재생): {s1} 회복 {reg0}% 체력.  = +{reg1}% STR
 qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
-qstr_Three_Nazgul_are_cir|세 마리의 나즈굴이 전장의 상공을 돌고 있다!
-qstr_Two_Nazgul_are_circl|두 마리의 나즈굴이 전장의 상공을 돌고 있다!
-qstr_A_Nazgul_is_circling|나즈굴이 전장의 하늘을 돌고 있다!
 qstr_Some_of_your_human_t|당신 부대의 인간 중 일부는 어둠에 전혀 굴하지 않는다. (밤 병종은 밤 시간의 패널티를 받지 않습니다)
 qstr_You_are_filled_with_|적들에게 향하는 당신의 눈에 분노만이 가득하다. (광전사 행동).
 qstr_Your_mount_is_scared|당신의 탈것이 {s5}에게 겁을 먹었다!
@@ -1138,7 +1133,6 @@ qstr_^^^^^^^You_come_upon|^^^^^^^당신은 {s2}를 떠나 {s3}로 가던 난민 
 qstr_^^^^^^^You_come_upon_|^^^^^^^당신은 {s2}를 떠나 {s3}로 가던 난민 행렬에 가까이 가고 있다.^^대부분 노인과 병자들이며, 여성과 아이도 포함되어있다.^^ 경비원들도 있긴 하지만, 당신과 당신 병사들이 그들을 모두 죽이는 것을 막아설 정도는 아니다.
 qstr_^^At_last_the_Master|^^마침내, 주인께서 움직이신다! 횃불이 밝게 타오른다. 날카로운 무기들이 반짝거리며 빛난다. 당신과 건장한 녀석들은 곧 진군 명령을 받게 될 것이다. 물론, 전투가 있을 것이다. 아주 많은 전투가. 그리고 영광이 온 사방에 펼쳐질 것이다!^^당신은 그의 탑에 계신 주인의 소환을 받는 영예를 누리게 되었다. 당신에게 주어질 첫 명령은 아마 스나가의 일이 될 것이다 - 여기 있는 마을을 약탈하고, 저기 있는 보급 수레를 털고. 하지만 곧 당신을 증명할 기회가 올 것이다. 당신이 {s3}의 {s2} 사령관과 같은 거대한 역할을 맡지 못할 것이라 누가 장담할 수 있나?^^전쟁이 시작되었다, 인간과 그 동맹의 멸망이 시작되었다!
 qstr_^^Your_head_suddenly|^^당신의 머리가 환상으로 가득찼다 - 불타는 눈동자다. 당신 주변의 모두, 당신의 전사들은 걸음을 멈췄다. 어떻게 됐는지는 몰라도, 그 순간 당신들 모두가 같은 환상을 보면서 같은 부름을 받고 있다는 것을 당신 모두가 깨달았다. 눈꺼풀 없는 눈께서는 위대하시다 - 바랏 두르의 힘은 위대하다!^^말로 전달하지 않았음에도 그 지식이 곧장 당신의 뼈 속으로 스며든다. 때가 왔다. 어둠의 군주가 명한다. 당신들은 개전과 함께 적들을 향해 진군해야한다. {s3}의 {s2}의 부름이 있을 것이다. 처음 당신이 수행할 명령은 대단하지 않은 것이겠지만, 곧 자신을 증명할 기회가 올 것이다.^^전쟁이 시작되었다. 서부의 종말이 도래했다!
-qstr_{s13}_asked_you_to_j|{s13}은 당신에게 최소 {reg13} 명의 병력을 데리고 합류해 아이센가드 최후의 항전에 맞설 것을 요청했다.
 qstr_You_defeated_{reg5}_|당신은 {reg5} 명의 적들을 격파했고 사령관에게 강한 인상을 남겼다.
 qstr_You_defeated_{reg5}_e|당신은 {reg5} 적을 패배시켰다.
 qstr_You_failed_to_defeat|당신은 어떤 적도 패배시키는데 실패했다.
@@ -1193,9 +1187,6 @@ qstr_The_War_of_the_Two_T|두 개의 탑의 전쟁이 시작되었다!
 qstr_The_forces_of_{s22}_|{s22}의 군대가 집결 중이다! {s22}는 이제 {s23}
 qstr_The_might_of_{s22}_h|{s22}의 힘이 줄어든다! {s22}는 이제 {s23}
 qstr_In_a_desperate_attem|그의 적을 막아내기 위한 최후의 시도로, 사우론은 모르도르 군단을 내보내고 있다!
-qstr_Guardians_of_{s6}|{s6}의 수호자들
-qstr_Guard_Legion_of_{s6}|{s6}의 경비대
-qstr_Scouts_report_that_{|전령이 {s6}이 수도를 방어하기 위한 최후의 시도로 거대한 군세를 {s7}에 집결시키고 있다 보고했습니다.
 ; qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|{s2}의 집결자가 그들의 고향을 지키기 위해 회군 중이다!
 qstr_{playername}_s_Reser|{playername}'s의 예비군
@@ -1378,15 +1369,6 @@ qstr_This_is_evil_news_yo|이것은 당신이 가져온 나쁜 소식이다. 검
 qstr_This_is_evil_news_you|이것은 당신이 가져온 나쁜 소식이다. 동부인들은 더욱 대담해지고 에스가로스는 불타고 있다. 이 이상 자네를 탓하진 않겠다, {playername}. 하지만 당신의 실패로 우리는 돌이킬 수 없는 타격을 받았다. 이제 가보게. 희망은 점점 줄어들고, 우리는 남은 희망을 지키기 위해 싸워야하니.
 qstr_Pah!_It_seems_you_we|파! 네 sea-legs를 찾지 못했나보군. {playername}.이제 그 곤도르 병사들은 그들의 높은 탑에 왕처럼 행세하며 앉은 채, 검은 돛이 불타는 것을 비웃을 것이다! 갤리선의 노를 젓는 것이 너희 부대에 대한 적절한 처벌일 지도 모르겠다. 그들은 너희 지휘 하에 있고, 내 것이 아니라는 것이 유감스러울 뿐이다. 위대한 눈이 기뻐하지 않을 것이다. 이제 떠나라.
 qstr_Have_you_nothing_bet|{playername}, 실패에 대한 나약한 변명을 늘어놓는 것보다 더 나은 일을 할 수는 없나? 아마도 너는 우리가 믿었던 것만큼 강하지 않은 것 같다. {playername}, 앞으로 더 나은 서비스를 제공하십시오. 약한 자에게는 자비가 없을 것이다!
-qstr_{playername}_we_have|{playername}, 우리는 아이센가드를 무릎꿇게 했다. 그들은 최후의 항전을 시작했으며, 그의 탑에서 사루만을 보호하고 있다. 나와 함께 달려 그들을 맞아주자!
-qstr_Are_you_ready_to_mee|아이센가드 최후의 항전과 마주할 준비가 되었나?
-qstr_I_am_ready_to_ride_w|아이센가드에 맞서 당신과 함께 말을 몰 준비가 되었다.
-qstr_I_am_ready_to_ride_wi|나는 당신과 함께 달려 그들을 만날 준비가 되었다. 함께 끝장을 보자.
-qstr_I_am_not_ready_to_ri|나는 당신과 함께 달릴 준비가 되지 않았다. 시간이 더 필요하다.
-qstr_You_do_not_have_enou|당신은 이 전투를 돕기 위한 충분한 병력이 없다. 최소 30 명의 병사를 데리고 참전해야한다!
-qstr_Stay_close_we_will_t|바짝 붙으시오, 우리는 적들 근처에 가까이 있소. 우리 병력들이 모이기만 하면, 바로 공격할 것이오.
-qstr_You_have_taken_too_l|너무 오래 걸렸어... 네가 있든 없든 우리는 지금 말을 달릴 것이다. 적 근처에 집결하여 3일 후에 공격할 것이다.
-qstr_Make_haste_{playerna|서두르게, {playername}. 우리는 놈들이 수복할 시간을 주고 싶지 않네.
 qstr_Your_mission_is_comp|당신은 임무를 완수했다, {s9}은 당신이 자신에게 따로 언질을 줄때까지 따라오기를 원한다.
 qstr_{s13}_asked_you_to_g|{s13}이 {reg3}개의 {s4}를 수집하여 그에게 돌아오라고 요청했다.
 qstr_Moreover_should_you_|게다가, 만약 당신이 {s24}이 된다면, 당신은 우리 전략에 중대한 영향을 미칠 결정을 내리는 나의 전쟁 회의에 환영받을 것이다. 당분간은 {s25}로서, 그냥 우리를 따라와 가까이 있어라. 우리는 곧 이동할 것이다.
@@ -1523,7 +1505,7 @@ qstr_I_want_you_and_your_|너와 네 부하들이 죽였으면 좋겠다
 qstr_{playername}_you_nee|{playername}, 당신은 당신 부하들과 내 신뢰를 얻어야한다. {s6} {reg22} {s7} troops!
 qstr_{s9}_wants_you_to_per|{s9}는 {reg22} 명의 {s6} 병력을 개인적으로 죽이기를 원한다.
 qstr_{s9}_wants_you_and_y|{s9}는 {reg22} 명의 {s6} 병력을 죽이기를 원한다.
-qstr_{playername}_we_have|{playername}, 우리는 아이센가드를 무릎꿇게 했다. 그들은 최후의 항전을 시작했으며, 그의 탑에서 사루만을 보호하고 있다. 나와 함께 달려 그들을 맞아주자!
+qstr_{playername}_we_have|{playername}, 우리는 암울한 소식을 받았다. 움바르의 해적들은 우리가 생각했던 것보다 더 교활하고 대담했고, {s6} 근처에 함대가 집결하고 있다. 우리의 정찰병들의 시선을 피해 그들은 해안선을 따라 빼앗았고, 그들은 곧 이 도시에 들이닥칠 것이다.^^ 함대가 도시에 도착하기 전에 요격해야 한다. {s6}으로 서둘러 가서, 그곳의 지역 authority와 대화하라.
 qstr_{playername}_we_have_|{playername}, 우리는 암울한 소식을 받았다. 룬의 야만인들은 우리가 생각했던 것보다 더 교활하고 대담하다 - 우리의 정찰병들에게 보이지 않고, 그들은 긴 호수를 가로질러 그들을 실어 나르기 위해 충분한 보트와 뗏목을 만들었고, 그들은 에스가로스를 직접 공격하고 있다!^^ 함대가 도시에 도착하기 전에 요격해야 한다. 가능한 한 빨리 군대를 이끌고 야만인들을 물 건너로 몰아내라!
 qstr_If_you_seek_pillage_|약탈과 약탈품을 찾고 있다면, 여기 견줄 수 없을 만한 기회가 있다, {playername}.^^ 해적 함대가 {s7}의 항구를 떠났다, 그리고 수확하기에 무르익은 {s6}까지 곧장 가는 항로를 잡았지. 그들의 공격에 가담하고, 약탈품을 나눠가져라!
 qstr_The_soft_weaklings_o|에스가로스의 나약한 약골들은 우리의 빠른 기병들과 흉포한 전사들의 상대가 되지 않는다, {playername}. 모두가 알고 있다. 호수 사람들은 자신들이 물 건너의 우리들로부터 안전하다 믿을 지 몰라도, 우리는 곧 그들에게 전혀 다르다는 것을 보여줄 것이다!^^우리는 보트와 뗏목을 만들었는데, 우리 전사들을 호수를 가로질러 운반하기에 충분하다. 그들은 우리를 예상하지 못할 것이다!^^공격에 합류하고 싶으면 본진으로 가서 캠프 지휘관과 대화하라.

@@ -724,8 +724,8 @@ dlga_castle_gate_open:close_window.4|Meu senhor {s2} não quero você aqui . Beg
 ; dlga_woodelf_help_3:close_window|Safe journey to you, Torbal. I'm sure we will meet again.
 ; dlga_healers_meet:healer_who|What do you do?.
 ; dlga_healers_meet:healers_ask|I need your help.
-; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
-; dlga_healers_ask:healer_injured_ask|My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?
+; dlga_healers_ask_2:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
+; dlga_healers_ask_2:healer_injured_ask|My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?
 ; dlga_healers_meet:close_window|Nothing.
 ; dlga_healers_injured_check:healers_injured_heal|Yes, attend to us.
 ; dlga_healers_wound_check:healers_wound_heal|Yes, attend to us.
@@ -1094,7 +1094,7 @@ dlga_start:party_encounter_hostile_defender|O que você quer?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Renda-se ou morra!
 dlga_party_encounter_hostile_defender:close_window|Nenhuma coisa. Nós vamos deixar você em paz .
 dlga_start:close_window.45|* Olha para você em silêncio *
-dlga_start:battle_reason_stated.1|Renda-se ou morrer. Faça a sua escolha.
+dlga_start:battle_reason_stated|Vou beber de seu crânio!
 dlga_battle_reason_stated:close_window|Eu não tenho medo de você. Eu vou lutar.
 dlga_start:free|Olá. O que posso fazer para você?
 dlga_free:view_char_requested|Fale-me sobre você

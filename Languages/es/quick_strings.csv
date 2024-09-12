@@ -86,7 +86,6 @@ qstr_1H_Weapons^2H_Weapon|Armas 1m^Armas 2m^Enastadas^Arquería^Ballesta^Arrojad
 qstr_Equipment|Equipamiento
 qstr_The_Last_Days_Mod_Op|Opciones del mod The Last Days
 qstr_War_Starts_at_Level:|La Guerra empieza al nivel: 
-qstr_Restrict_Player_Equi|Restringir equipamiento del jugador:  
 qstr_Battle_Formations_an|Formaciones e IA de batalla:  
 qstr_Native|Native
 qstr_TLD_FormAI__Original|IA de formaciones TLD (Original)
@@ -237,7 +236,7 @@ qstr_+1_Intelligence|+1 a Inteligencia
 qstr_+{reg1}_to_Spotting|+{reg1} en Avistar
 qstr__Scales_with_Wildcra|(Mejora con Dominio de las tierras salvajes)
 qstr_Strengthens_all_Hero|Fortalece a todos los héroes
-qstr_+2_to_First_Aid__Par|+2 a Primeros auxilios (Grupo)
+; qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
 qstr_lead_more_Uruks|liderar a más uruks
 qstr_+1_to_Power_Throw|+1 a Lanzamiento
 qstr_Recruit_Black_Numeno|Recluta Númenóreanos Negros en varios ligares
@@ -748,7 +747,6 @@ qstr_A_thunderstorm_from_|Una tormenta procedente de las Montañas Nubladas se d
 qstr_A_thunderstorm_from_t|Una tormenta procedente de las Montañas Nubladas se desata sobre el campo de batalla. Los arqueros encuentran difícil disparar con este mal tiempo.
 qstr_A_poisonous_fog_from|Una niebla venenosa procedente de Dol Guldur flota en el campo de batalla. Tus tropas y tú os sentís debilitados. Hay miedo entre los soldados.
 qstr_A_poisonous_fog_from_|Una niebla venenosa procedente de Dol Guldur flota en el campo de batalla.  Tú no notas ninguna diferencia, pero puedes oír el sufrimiento de tus enemigos y oler su miedo.
-qstr_{s2}_attacked|{s2} ha atacado
 qstr_You_shapeshift_into_|¡Te has convertido en oso!
 qstr_You_got_{reg1}_exper|Ganas %d puntos de experiencia al convertirte en oso.
 qstr_Your_ability_to_chan|Has conseguido despertar tu habilidad innata como cambiapieles, a partir de ahora podrás recorrer los caminos salvajes como hombre y como oso.
@@ -804,9 +802,6 @@ qstr_Division_{reg1}_{s2}_fo|División {reg1} {s2} forma {reg0} líneas (memoriz
 qstr_Delivered_{reg60}_da|Haces {reg60} puntos de daño.
 qstr_DEBUG__Health_Regen_|DEBUG (Regen. Salud): {s1} recupera {reg0}% de salud.  = +{reg1}% FUE
 qstr_Your_bear_form_has_{|¡Al convertirte en oso tienes {reg2}/{reg1} puntos de salud!
-qstr_Three_Nazgul_are_cir|¡Tres Nazgûl vuelan en círculos sobre el campo de batalla!
-qstr_Two_Nazgul_are_circl|¡Dos Nazgûl vuelan en círculos sobre el campo de batalla!
-qstr_A_Nazgul_is_circling|¡Un Nazgûl vuela en círculos sobre el campo de batalla!
 qstr_Some_of_your_human_t|A algunas de tus tropas no les amilana la oscuridad. (Las Tropas Nocturnas no sufren penalizaciones por luchar de noche)
 qstr_You_are_filled_with_|Una furia desbordante te inunda cuando pones tus ojos sobre el enemigo (virtud Berserk activada).
 qstr_Your_mount_is_scared|¡Tu montura esta asustada del {s5}!
@@ -1138,7 +1133,6 @@ qstr_^^^^^^^You_come_upon|^^^^^^^Te encuentras con los refugiados abandonando {s
 qstr_^^^^^^^You_come_upon_|^^^^^^^Encuentras a los refugiados cuyo rastro vienes siguiendo desde {s2}. Parece que se dirigen a {s3}, y son en su mayoría viejos y enfermos. ^^ Hay unos pocos guardias, pero no son suficientes para evitar que tú y los tuyos los matéis a todos.
 qstr_^^At_last_the_Master|^^¡Por fin, el Amo ha puesto en marcha Sus planes! Las antorchas arden con fuerza. Las armas afiladas relucen. Tú y tus muchachos pronto recibiréis órdenes para marchar. ¡Sí, habrá pelea, mucha pelea, y gloria suficiente para repartir!^^Tienes el honor de haber sido {convocado/convocada} a una audiencia con el Amo en Su torre. Lo más probable es que tus primeras órdenes sean trabajos más propios de un snaga: asaltar una aldea por aquí, emboscar una caravana por allá. Pero pronto probarás lo que vales. ¿Quién sabe si no jugarás un papel tan importante como cualquiera de los capitanes de {s2} en {s3}?^^¡La Guerra ha comenzado, y con ella comienza la caída de los Hombres y sus aliados!
 qstr_^^Your_head_suddenly|^^En tu mente se abre paso una visión repentina: el Ojo llameante. A  tu alredeor, tus guerreros se detienen en seco. De alguna forma, sabes al momento que todos vosotros habéis recibido la misma llamada, visto la misma visión. ¡Grandes son las artes del Ojo Sin Párpado, grande es el poder de Barad-dûr!.^^La idea, sin necesidad de palabras, cala hasta tus mismos huesos. Ha llegado la hora. El Señor Oscuro ha dado la orden: marcharéis contra vuestros enemigos en una guerra abierta. Pronto llegarán las órdenes de {s2} en {s3}. La parte que te toque no será al principio de gran importancia, pero no tardarás en probar lo que vales.^^ ¡La Guerra ha comenzado, y con ella comienza la caída del Oeste!
-qstr_{s13}_asked_you_to_j|{s13} te ha pedido que te unas a sus fuerzas con al menos {reg13} tropas para hacer frente a la Última Defensa de Isengard.
 qstr_You_defeated_{reg5}_|Has derrotado a {reg5} enemigos y has impresionado a tu comandante.
 qstr_You_defeated_{reg5}_e|Has derrotado a {reg5} enemigos.
 qstr_You_failed_to_defeat|No has conseguido derrotar a ningún enemigo
@@ -1193,9 +1187,6 @@ qstr_The_War_of_the_Two_T|¡La Guerra de las Dos Torres ha comenzado!
 qstr_The_forces_of_{s22}_|¡Las fuerzas de {s22} se han reagrupado! Ahora las huestes de {s22} están {s23}.
 qstr_The_might_of_{s22}_h|¡El poder de {s22} se ha visto reducido! Ahora las huestes de {s22} están {s23}.
 qstr_In_a_desperate_attem|¡En un intento desesperado por defenderse de sus enemigos, Sauron envía a sus legiones de Mordor!
-qstr_Guardians_of_{s6}|Guardianes de {s6}
-qstr_Guard_Legion_of_{s6}|Legión de Guardianes de {s6}
-qstr_Scouts_report_that_{|Los exploradores informa de que {s6} ha congregado un gran ejercito en las proximidades de {s7}, en un último y desesperado intento de defender la capital.
 qstr_The_forces_of_{s2}_e|¡Las fuerzas de {s2} han establecido un campamento de avanzada en {s15}!
 qstr_The_hosts_of_{s2}_ma|¡Las huestes de {s2} regresan a defender sus hogares!
 qstr_{playername}_s_Reser|Reservas de {playername}
@@ -1378,15 +1369,6 @@ qstr_This_is_evil_news_yo|Malas noticias son esas que traes. Las velas negras se
 qstr_This_is_evil_news_you|Malas noticias son esas que traes. Los Hombres del Este se vuelven cada día más osados, y Esgaroth arde. No te culparé en demasía, {playername}, por este fracaso, pero hemos recibido un duro golpe, muy duro en verdad. Ahora vete. La esperanza de nuestro reino mengua, y debemos luchar para mantener viva lo que queda de ella.
 qstr_Pah!_It_seems_you_we|¡Bah! Parece que no estás {hecho/hecha} para la vida marinera, {playername}. ¡Ahora mismo esos hombres de Gondor se sientan en lo alto de sus torres, orgullosos como reyes, riéndose mientras las velas negras arden! Tal vez a tus tropas no les vendría mal una temporada a los remos de una galera como castigo; una pena que estén bajo tu mando y no el mío. Al Ojo no le hará gracia lo que ha pasado. Ahora, déjame. 
 qstr_Have_you_nothing_bet|¿No tienes nada más que ofrecer por tu fracaso que débiles excusas, {playername}? Puede que no seas tan fuerte como creíamos. Será mejor que de ahora en adelante sirvas mejor a nuestra causa, {playername}. ¡No habrá piedad con los débiles!
-qstr_{playername}_we_have|{playername}, tenemos casi doblegada a Isengard. Han organizado una última defensa, un ejército que protege a Saruman en su torre. ¡Cabalga conmigo para hacerles frente!
-qstr_Are_you_ready_to_mee|¿Estás {preparado/preparada} para enfrentarte a la última defensa de Isengard?
-qstr_I_am_ready_to_ride_w|Estoy {preparado/preparada} para cabalgar contigo y marchar contra Isengard.
-qstr_I_am_ready_to_ride_wi|Estoy {preparado/preparada} para cabalgar contigo y hacerles frente. Acabemos con esto de una vez.
-qstr_I_am_not_ready_to_ri|No estoy {preparado/preparada} para cabalgar contigo aún. Necesito algo más de tiempo.
-qstr_You_do_not_have_enou|No tienes tropas suficientes para ayudar en esta batalla. ¡Reúne al menos 30 hombres y únete a mí pronto!
-qstr_Stay_close_we_will_t|Mantente cerca, tomaremos posicione scerca del enemigo. Cuando todos nos hayamos reunido, atacaremos.
-qstr_You_have_taken_too_l|Has tardado demasiado... Marcharemos ahora, contigo o sin ti. Reuniremos a nuestras tropas cerca del enmigo, y antes de 3 días, atacaremos.
-qstr_Make_haste_{playerna|Apresúrate, {playername}. No queremos darles tiempo para que se recuperen.
 qstr_Your_mission_is_comp|Has completado la misión, {s9} quiere que continúes siguiendo a su ejército hasta nuevo aviso.
 qstr_{s13}_asked_you_to_g|{s13} te ha pedido que reúnas {reg3} unidades de {s4} y se las lleves.
 qstr_Moreover_should_you_|Además, si acanzas el rango de {s24}, podrás tomar parte en mi Concilio de Guerra, donde podrás proponer decisiones que afecten al curso de nuestra camapaña. De momento, como {s25}, limítate a seguirnos y mantente cerca. Pronto nos pondremos en marcha.
@@ -1523,7 +1505,7 @@ qstr_I_want_you_and_your_|¡Quiero que tú y tus tropas matéis a
 qstr_{playername}_you_nee|{playername}, tienes que ganarte mi respeto y el de tus tropas. {s6} {reg22} tropas de {s7}!
 qstr_{s9}_wants_you_to_per|{s9} quiere que mates personalmente a {reg22} {s6}.
 qstr_{s9}_wants_you_and_y|{s9} quiere que tú y tus tropas matéis a {reg22} {s6}.
-qstr_{playername}_we_have|{playername}, tenemos casi doblegada a Isengard. Han organizado una última defensa, un ejército que protege a Saruman en su torre. ¡Cabalga conmigo para hacerles frente!
+qstr_{playername}_we_have|{playername}, hemos recibido noticias sombrías. Los Corsarios de Umbar se vuelven cada vez más osados, e incluso ahora mientras hablamos, una flota se está reuniendo cerca de {s6}. Ya se entregan al pillaje a lo largo de toda la costa, y pronto caerán sobre la propia ciudad.^^ Debemos interceptar su flota antes de que llegue a la ciudad. Apresúrate en llegar a {s6}, y habla con las autoridades locales.
 qstr_{playername}_we_have_|{playername}, hemos recibido terribles noticias. Los salvajes de Rhûn son más astutos y atrevidos de lo que creíamos. ¡Sin ser vistos por nuestros exploradores, han construido suficientes barcazas y balsas para cruzar el Lago Largo, y atacar Esgaroth directamente!^^ Debemos interceptar su flota antes de que llegue a la ciudad. ¡Lleva a tus tropas allí tan rápido como puedas, habla con las autoridades locales, y expulsa a esos bárbaros al otro lado del agua!
 qstr_If_you_seek_pillage_|Si te interesan el saqueo y el pillaje, ésta es una oportunidad dorada, {playername}.^^ Una flota Corsaria se está preparando para zarpar del puerto de {s7}, y pondrá rumbo directo a {s6}, ¡la ciudad está esperando a ser desplumada! Únete al asalto y podrás tomar parte en el reparto del botín.
 qstr_The_soft_weaklings_o|Esos débiles blandengues de Esgaroth no son rivales para nuestros veloces jinetes y nuestros feroces guerreros, {playername}. Es bien sabido. Los Hombres del Lago se creen seguros al otro lado del agua, ¡pero pronto les demostraremos lo contrario!^^ Hemos construido barcazas y balsas, que servirán para transportar a nuestros guerreros al otro lado del lago. ¡No saben lo que les espera! ^^Ve al Campamento Principal y habla con el jefe del campamento si quieres participar en el asalto.

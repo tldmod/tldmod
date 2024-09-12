@@ -724,8 +724,8 @@ dlga_woodelf_help_2:woodelf_help_3.1|Ти? Звичайно ти! Я бачив,
 dlga_woodelf_help_3:close_window|Доброго шляху тобі, Торбал. Гадаю, що ми ще зустрінемося.
 dlga_healers_meet:healer_who|Що ти робиш?
 dlga_healers_meet:healers_ask|Мені потрібна твоя допомога.
-dlga_healers_ask:healer_wound_ask|У мене та моїх компаньйонів серйозні рани, на лікування яких просто часу не достатньо. Чи можеш ти зцілити наші рани?
-dlga_healers_ask:healer_injured_ask|Я та мої люди були поранені в недавній битві, і у нас немає часу на довгий відпочинок. Чи зможете ви, що-небудь зробити?
+dlga_healers_ask_2:healer_wound_ask|У мене та моїх компаньйонів серйозні рани, на лікування яких просто часу не достатньо. Чи можеш ти зцілити наші рани?
+dlga_healers_ask_2:healer_injured_ask|Я та мої люди були поранені в недавній битві, і у нас немає часу на довгий відпочинок. Чи зможете ви, що-небудь зробити?
 dlga_healers_meet:close_window|Нічого.
 dlga_healers_injured_check:healers_injured_heal|Так, ходімо з нами.
 dlga_healers_wound_check:healers_wound_heal|Так, ходімо з нами.
@@ -1094,7 +1094,7 @@ dlga_start:party_encounter_hostile_defender|Що ви хочете?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Здайся або помри!
 dlga_party_encounter_hostile_defender:close_window|Нічого. Ми залишимо вас у спокої.
 dlga_start:close_window.45|* Мовчки дивиться на вас *
-dlga_start:battle_reason_stated.1|Здайся або помри. Обирай!
+dlga_start:battle_reason_stated|Я зроблю кубок з твого черепа!
 dlga_battle_reason_stated:close_window|Я тебе не боюся. Я буду боротися.
 dlga_start:free|Вітаю. Що я можу зробити для тебе?
 dlga_free:view_char_requested|Розкажи мені про себе.

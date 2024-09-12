@@ -724,8 +724,8 @@ dlga_woodelf_help_2:woodelf_help_3.1|Vous l'êtes ? Mais bien-sûr que vous l'ê
 dlga_woodelf_help_3:close_window|Bonne journée à toi, Torbal. Nos chemins se croiseront à nouveau, j'en suis sûr{/e}.
 dlga_healers_meet:healer_who|Que faites vous ?
 dlga_healers_meet:healers_ask|J'ai besoin de votre aide.
-dlga_healers_ask:healer_wound_ask|Mes compagnons et moi-même avons de graves blessures qui nécessitent plus que du temps pour guérir. Pouvez-vous guérir nos blessures ?
-dlga_healers_ask:healer_injured_ask|Mes hommes et moi sommes blessés et nous n'avons pas le temps de guérir naturellement. Pouvez-vous nous apporter votre aide ?
+dlga_healers_ask_2:healer_wound_ask|Mes compagnons et moi-même avons de graves blessures qui nécessitent plus que du temps pour guérir. Pouvez-vous guérir nos blessures ?
+dlga_healers_ask_2:healer_injured_ask|Mes hommes et moi sommes blessés et nous n'avons pas le temps de guérir naturellement. Pouvez-vous nous apporter votre aide ?
 dlga_healers_meet:close_window|Rien.
 dlga_healers_injured_check:healers_injured_heal|Oui, soignez nous.
 dlga_healers_wound_check:healers_wound_heal|Oui, soignez nous.
@@ -1094,7 +1094,7 @@ dlga_start:party_encounter_hostile_defender|Que voulez-vous ?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Rendez-vous ou vous mourrez !
 dlga_party_encounter_hostile_defender:close_window|Rien, nous vous laissons en paix.
 dlga_start:close_window.45|*vous dévisage silencieusement*
-dlga_start:battle_reason_stated.1|Rendez-vous ou mourrez. Faites votre choix.
+dlga_start:battle_reason_stated|Votre crâne me servira de coupe !
 dlga_battle_reason_stated:close_window|Je n'ai pas peur de vous. Je vais me battre.
 dlga_start:free|Salut. Que puis-je faire pour vous ?
 dlga_free:view_char_requested|Parlez-moi de vous.

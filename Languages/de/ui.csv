@@ -55,9 +55,10 @@ ui_crouch|Ducken
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Bist du sicher, dass du diesen Charakter importieren möchtest?
-ui_explanation_strength|Stärke: Jeder Punkt fügt +1 Trefferpunkte hinzu. Die folgenden Fertigkeiten können nicht über 1/3 des Stärkewerts entwickelt werden: Eisenhaut, Schlagkraft, Wurfkraft, Bogenzugkraft.
-ui_explanation_intelligence|Intelligenz: Jeder zusätzliche Intelligenzpunkt gewährt sofort einen zusätzlichen Fertigkeitspunkt. Die folgenden Fertigkeiten können nicht über 1/3 des Intelligenzswerts entwickelt werden: Ausbilder, Spurensuche, Taktik, Wegfindung, Aufklärung. Inventarverwaltung, Wundheilung, Chirurgie, Erste Hilfe.
-ui_explanation_charisma|Charisma: Verbessert dein Ansehen bei Personen und Fraktionen. Jeder Punkt erhöht die maximale Truppengröße um +1 (0.5 für Gefährten). Die folgenden Fertigkeiten können nicht über 1/3 des Charismawerts entwickelt werden: Wildkunde, Gefangenaufsicht, Führerschaft, Handel.
+; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: Ironflesh, Power Strike, Power Throw, Power Draw.
+ui_explanation_agility|Wendigkeit: Jeder Punkt verleiht fünf Waffenpunkte und erhöht die Waffengeschwindigkeit um 0,5%. Die folgenden Fähigkeiten können nicht über 1/3 des Wendigkeitswerts hinaus entwickelt werden: Waffenmeister, Schild, Athletik, Reiten, Berittenes Bogenschießen, Plündern.
+; ui_explanation_intelligence|Intelligence: (Wisdom) The deep understanding of nature and crafts. Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Bargainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, First Aid, and Wildcraft.
+; ui_explanation_charisma|Charisma: (Will) The power to inspire or dominate. Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Trainer, Leadership.
 ui_delivered_number_damage|%d Schaden zugefügt.
 ui_mission_losses_killed|getötet : 
 ui_party_losses|%s  : %d verwundet--- %d getötet von %d.

@@ -724,8 +724,8 @@ dlga_woodelf_help_2:woodelf_help_3.1|Lo sei ? Certo che lo sei ! Ho visto che se
 dlga_woodelf_help_3:close_window|Che tu possa fare viaggi sereni, Torbal. Sono certo che c'incontreremo ancora.
 dlga_healers_meet:healer_who|Cosa stai facendo ?
 dlga_healers_meet:healers_ask|Ho bisogno del vostro aiuto.
-dlga_healers_ask:healer_wound_ask|Io e i miei compagni abbiamo ferite gravi che richiedono ben più del semplice tempo per guarire. Puoi sanare le nostre ferite ?
-dlga_healers_ask:healer_injured_ask|Sia io che i miei uomini abbiamo riportato ferite, e non abbiamo il tempo di attendere che guariscano. Puoi darci aiuto?
+dlga_healers_ask_2:healer_wound_ask|Io e i miei compagni abbiamo ferite gravi che richiedono ben più del semplice tempo per guarire. Puoi sanare le nostre ferite ?
+dlga_healers_ask_2:healer_injured_ask|Sia io che i miei uomini abbiamo riportato ferite, e non abbiamo il tempo di attendere che guariscano. Puoi darci aiuto?
 dlga_healers_meet:close_window|Grazie, non ti trattengo oltre.
 dlga_healers_injured_check:healers_injured_heal|Sì, prenditi cura di noi.
 dlga_healers_wound_check:healers_wound_heal|Sì, prenditi cura di noi.
@@ -1094,7 +1094,7 @@ dlga_start:party_encounter_hostile_defender|Che cosa vuoi ?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Arrendetevi o morirete !
 dlga_party_encounter_hostile_defender:close_window|Niente. Non vi daremo fastidio.
 dlga_start:close_window.45|* ti fissa in silenzio *
-dlga_start:battle_reason_stated.1|Arrendersi o morire. A te la scelta.
+dlga_start:battle_reason_stated|Berrò dal tuo teschio !
 dlga_battle_reason_stated:close_window|Non ho paura. Combatterò.
 dlga_start:free|Salve. Cosa posso fare per te ?
 dlga_free:view_char_requested|Raccontatemi di voi

@@ -86,7 +86,6 @@ qstr_1H_Weapons^2H_Weapon|片手武器^両手武器^長柄武器^弓^クロス�
 qstr_Equipment|装備
 qstr_The_Last_Days_Mod_Op|The Last Days Modオプション
 qstr_War_Starts_at_Level:|戦争の始まるレベル:
-qstr_Restrict_Player_Equi|プレイヤーの装備制限:
 qstr_Battle_Formations_an|戦闘陣形とAI:
 qstr_Native|Native
 qstr_TLD_FormAI__Original|TLD FormAI(オリジナル)
@@ -237,7 +236,7 @@ qstr_+1_Intelligence|知性+1
 qstr_+{reg1}_to_Spotting|観測術+{reg1}
 qstr__Scales_with_Wildcra|(効果はワイルドクラフトのスキルに比例)
 qstr_Strengthens_all_Hero|プレーヤーとすべてのコンパニオンを強化
-qstr_+2_to_First_Aid__Par|応急手当てスキル+2(パーティスキル)
+; qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
 qstr_lead_more_Uruks|より多くのウルクを指揮可能
 qstr_+1_to_Power_Throw|豪投+1
 ; qstr_Recruit_Black_Numeno|Recruit Black Numenoreans from various places
@@ -748,7 +747,6 @@ qstr_A_thunderstorm_from_|霧ふり山から降り注ぐ激しい雷雨が戦場
 qstr_A_thunderstorm_from_t|霧ふり山から降り注ぐ激しい雷雨が戦場を覆っています。 弓兵は思うように働く事ができません。
 qstr_A_poisonous_fog_from|ドル・グルドゥアから流れてきた不快な濃霧が戦場に漂っています。 あなたとあなたの兵たちは体調が悪くなりました。兵たちは恐怖を感じています。
 qstr_A_poisonous_fog_from_|ドル・グルドゥアから流れてきた不快な濃霧が戦場に漂っています。 あなたはこれといった影響は感じませんが、敵勢の苦しむ声が聞こえてきます。敵は恐怖しているようです。
-; qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|あなたは熊に姿を変えました！
 qstr_You_got_{reg1}_exper|あなたは熊の姿で{reg1}の経験値を獲得しました。
 qstr_Your_ability_to_chan|あなたが姿を変える能力を持つ事は明らかになりました。 これよりあなたは自然において、 人間であると同時に熊としても認識されます。
@@ -804,9 +802,6 @@ qstr_Division_{reg1}_{s2}_fo|{s2}第{reg1}分隊は、横隊を{reg0}列組み�
 qstr_Delivered_{reg60}_da|{reg60}のダメージを与えました。
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
 qstr_Your_bear_form_has_{|熊の姿でのHPは{reg2}/{reg1}です！
-qstr_Three_Nazgul_are_cir|戦場の上空で3体のナズグールが旋回しています！
-qstr_Two_Nazgul_are_circl|戦場の上空で2体のナズグールが旋回しています！
-qstr_A_Nazgul_is_circling|戦場の上空でナズグールが旋回しています！
 qstr_Some_of_your_human_t|あなたの兵のうち、いくらかは人間にもかかわらず闇の力にひるんでいません(ナイト系の兵は夜間のペナルティを受けません)。
 qstr_You_are_filled_with_|敵の姿を目にしたあなたは、怒りで満たされました(狂戦士が発動しました)。
 qstr_Your_mount_is_scared|あなたの馬は{s5}に怯えています！
@@ -1138,7 +1133,6 @@ qstr_^^^^^^^You_come_upon|^^^^^^^あなたは{s2}を出発して{s3}へ向かう
 qstr_^^^^^^^You_come_upon_|^^^^^^^{s2}から後を追ってきた難民に迫りました。 彼らは{s3}を目指しているようですが、 ほとんどは弱々しい老人です。^^護衛が数名ついていますが、 あなたたちの襲撃から全員を守ることは できないでしょう。
 qstr_^^At_last_the_Master|^^ついにご主人様が腰を上げた！たいまつが燃え盛る。 磨かれた武器がきらめく。間もなく、 あなたとあなたの屈強な同僚たちに進軍の命令が下されるだろう。 そうとも、数多くの戦いが待っている。手柄をたてる機会は山ほどあるぞ！^^あなたはご主人様との面会のため、彼の塔へ召喚される栄誉を得た。 初めの指令はおそらく、この村を襲え、あの隊商を襲撃せよ、 といったスナガ仕事になるだろう。 だがあなたはすぐに自らの価値を証明するだろう。ひょっとすると、 {s3}の{s2}の指揮官たちのような、 大きな存在にまで出世するかも知れない。^^戦争は始まったのだ。人間とその同盟者どもの終焉が始まったのだ！
 qstr_^^Your_head_suddenly|^^突然、あなたの頭の中は幻影で満たされた。燃え盛る、御目だ。 あなたのまわりにいる者たちも皆、足を止めている。どういうわけか、 今この瞬間、すべての者が同じ幻影を見、同じ声を聴いているのだろう。 偉大なる瞼のない御目の術よ、偉大なるバラド＝ドゥーアの力よ！^^知識が、語られる事なくあなたの中にしみ渡っていく。時は来たのだ。 冥王からの指令が下される。あなたたちすべてが、 予断を許さぬ戦争の中を、敵に向かって進軍するのだ。 {s3}の{s2}からの命が、 間もなく届くだろう。最初のうちはあなたが重用されることはないだろうが、 あなたはすぐに自らの価値を証明するだろう。^^戦争は始まったのだ。西方の終焉が始まったのだ！
-qstr_{s13}_asked_you_to_j|{s13}より、アイゼンガルドの最後の抵抗と会戦するため、 少なくとも{reg13}名の兵を率いて 彼に合流するよう求められました。
 qstr_You_defeated_{reg5}_|{reg5}名の敵を倒したあなたに、あなたの指揮官は感銘を受けました。
 qstr_You_defeated_{reg5}_e|あなたは{reg5}名の敵を倒しました。
 qstr_You_failed_to_defeat|あなたは敵をひとりも倒せませんでした。
@@ -1193,9 +1187,6 @@ qstr_The_War_of_the_Two_T|ふたつの塔の戦いが始まりました！
 qstr_The_forces_of_{s22}_|{s22}の軍勢の勢いが増しています！{s22}は現在、{s23}です。
 qstr_The_might_of_{s22}_h|{s22}の軍勢の勢いが弱まりました！{s22}は現在、{s23}です。
 qstr_In_a_desperate_attem|敵に対してなりふり構わぬ必死の対抗をするため、 サウロンはモルドールの大軍団を送り込みました！
-qstr_Guardians_of_{s6}|{s6}防衛軍
-qstr_Guard_Legion_of_{s6}|{s6}防衛軍団
-qstr_Scouts_report_that_{|偵察隊より、 {s6}が{s7}周辺に、 本拠地防衛のための大規模な軍勢を 集結させているとの報告が入りました。
 ; qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|{s2}の軍勢が、彼らの本拠地を守るために退却しています！
 qstr_{playername}_s_Reser|{playername}の予備兵
@@ -1378,15 +1369,6 @@ qstr_This_is_evil_news_yo|それは暗い報せだ。黒の艦隊の存在感は
 qstr_This_is_evil_news_you|それは暗い報せだ。東夷の存在感は以前にも増し、 エスガロスは炎上している。{playername}よ、 私はおぬしの任務失敗を過分に責めるつもりはないが、これは痛手だ。 非常に痛い。さあ行け。我が王国の希望はだんだんと小さくなっているが、 我々は今残されているものを、何としても守らねばならぬ。
 qstr_Pah!_It_seems_you_we|フン！{playername}よ、おぬしは海上では、 とんだ役立たずのようだな。ゴンドールのやつらが連中の塔の上で、 まるで王のようにふんぞり返りながら黒の艦隊が炎上するのを 笑っておるではないか！おぬしの部下どもには罰として、 しばらくガレー船の漕ぎ手をやらせたいくらいだ。 この度は御目のご機嫌を損ねたであろう。去れ。
 qstr_Have_you_nothing_bet|{playername}よ、おぬしには任務失敗に対する 苦しい申し開き以外に、能はないのか？我々はどうやら、 おぬしを買いかぶっておったようだ。我々の足を引っ張らぬよう、 今後は精々励むがよい、{playername}。 弱い者にかけられる情けなど、ないぞ！
-qstr_{playername}_we_have|{playername}よ、 いよいよアイゼンガルドを追い詰めたぞ。 やつらは塔にこもるサルマンを守るため、 最後の抵抗を始めた。さあ共に戦おう！
-qstr_Are_you_ready_to_mee|アイゼンガルドの最後の抵抗と戦う準備はできたか？
-qstr_I_am_ready_to_ride_w|共にアイゼンガルドと戦う準備はできています。
-qstr_I_am_ready_to_ride_wi|共にやつらと戦う準備はできています。 いまこそ決着をつけましょう。
-qstr_I_am_not_ready_to_ri|まだ戦う準備ができていません。 もうしばらく時間を頂きたい。
-qstr_You_do_not_have_enou|この戦いに臨むには、おぬしのその兵の数では足りない。 一刻も早く、少なくとも30名の兵を揃えてくるがよい！
-qstr_Stay_close_we_will_t|私についてきてくれ。敵勢に接近する。 全軍が配置についたら、攻撃を開始するぞ。
-qstr_You_have_taken_too_l|まだかかるのか・・・これではおぬし抜きで戦いを始めなければならない。 我が軍は敵勢の近くに陣取る。3日経ったら攻撃を開始するぞ。
-qstr_Make_haste_{playerna|{playername}よ、急ぐのだ。 敵に態勢を整え直す時間を与えてはならない。
 qstr_Your_mission_is_comp|今回の任務は完了しました。 {s9}より、 新たな指示のあるまで再び我が軍に同行せよ、 との命令を受け取りました。
 qstr_{s13}_asked_you_to_g|{s13}より、 {s4}を{reg3}個集めてくるよう、 命令を受けました。
 qstr_Moreover_should_you_|さらに、もしおぬしが{s24}となれば、 我々の軍事遠征の行方を決める作戦会議への参加を許可しよう。 とりあえずのところは、 {s25}であるおぬしは 我々から離されぬようについて来るがよい。 我々は間もなく進軍を開始する。
@@ -1523,7 +1505,7 @@ qstr_I_want_you_and_your_|おぬしとおぬしの部下の手で
 qstr_{playername}_you_nee|{playername}よ、 おぬしは私やまわりの者たちに、自らの価値を証明しなければならん。 {s6}{s7}の兵を{reg22}名、殺してくれ！
 qstr_{s9}_wants_you_to_per|{s9}の要請により、 {reg22}名の{s6}の兵を、 みずからの手で殺す事となった。
 qstr_{s9}_wants_you_and_y|{s9}の要請により、 {reg22}名の{s6}の兵を、 自分と部下たちの手で殺す事となった。
-qstr_{playername}_we_have|{playername}よ、 いよいよアイゼンガルドを追い詰めたぞ。 やつらは塔にこもるサルマンを守るため、 最後の抵抗を始めた。さあ共に戦おう！
+qstr_{playername}_we_have|{playername}よ、 恐ろしい報せを受け取った。 日を追うごとに大胆さを増すウンバールの海賊どもが、 いま我々がこうして話しているあいだにも、 {s6}から遠くない位置に艦隊を集結させておるらしい。 すでにやつらは沿岸部一帯を略奪したが、 いよいよ市街地を襲撃しに来るのだ。^^やつらが市街地に到着するまえに、 やつらの艦を捕捉しなければならない。 急いで{s6}へ行って、 現地の責任者に会ってくれ。
 qstr_{playername}_we_have_|{playername}よ、 恐ろしい報せを受け取った。 リューンの蛮人どもは、 我々が考えていたよりも悪知恵が働くらしい。 やつらは、たての湖を渡って直接エスガロスに上陸するため、 我々の斥候の目をかいぐぐって小舟やいかだを建造していたらしい！^^市街地に上陸されるまえに、やつらの船を捕捉しなければならない。 兵を率いてできるだけ急いで現地へ行き、 あの野蛮人どもを湖の反対側へ追い払ってくれ！
 qstr_If_you_seek_pillage_|{playername}よ、 もし略奪して荒らしまわる機会を探しているのなら、 これはまたとない好機であろう。^^これより海賊船が{s7}より出航する。 目的地は、熟して摘み取られるのを待っている{s6}だ！ 作戦に参加して、戦利品にありつくがよい！
 qstr_The_soft_weaklings_o|{playername}よ、 ひ弱なエスガロスの連中など、 我々の機敏な騎兵と獰猛な戦士の相手ではない。 これはやつらも自覚しておるだろう。 あの湖の民は我々との間に湖があるため、 自分たちは安全であると考えておる。 だが、間もなくその考えは間違っていたと思い知るであろう！^^我々は戦士たちを乗せて湖を渡るのにじゅうぶんな、 小舟といかだを用意した。これは予想できまい！^^もしこの襲撃作戦におぬしも加わろうと考えるなら、 我々の野営本陣へ行き、野営の責任者にその旨を伝えるがよい。

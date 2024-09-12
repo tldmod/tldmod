@@ -86,7 +86,6 @@ qstr_1H_Weapons^2H_Weapon|Bronie 1-ręczne^Bronie 2-ręczne^Bronie Drzewcowe^Łu
 qstr_Equipment|Wyposażenie
 qstr_The_Last_Days_Mod_Op|Opcje The Last Days
 qstr_War_Starts_at_Level:|Wojna zaczyna się na poziomie:
-qstr_Restrict_Player_Equi|Ogranicz wyposażenie gracza: 
 qstr_Battle_Formations_an|Formacje bitewne i sztuczna inteligencja: 
 qstr_Native|Ojczysty
 qstr_TLD_FormAI__Original|TLD FormAI (oryginalny)
@@ -237,7 +236,7 @@ qstr_+1_Intelligence|+1 do Inteligencji
 qstr_+{reg1}_to_Spotting|+{reg1} do Spostrzegania
 qstr__Scales_with_Wildcra|(Kumuluje się z Wildcraft)
 qstr_Strengthens_all_Hero|Wzmacnia wszystkich Bohaterów
-qstr_+2_to_First_Aid__Par|+2 do Pierwszej Pomocy (Drużyna)
+; qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
 qstr_lead_more_Uruks|Poprowadź więcej Uruków
 qstr_+1_to_Power_Throw|+1 do Potężnego Rzutu
 qstr_Recruit_Black_Numeno|Zwerbuj Czarnych Numenorejczyków z różnych miejsc
@@ -748,7 +747,6 @@ qstr_A_thunderstorm_from_|Burza z Gór Mglistych dotarła nad pole walki. Twoi �
 qstr_A_thunderstorm_from_t|Burza z Gór Mglistych dotarła nad pole walki. Łucznicy nie radzą sobie najlepiej w taką pogodę.
 qstr_A_poisonous_fog_from|Trująca mgła z Dol Guldur spowija pole bitwy. Ty i twoi ludzie czujecie się słabo. Wśród twojej kompanii szerzy się strach.
 qstr_A_poisonous_fog_from_|Trująca mgła z Dol Guldur spowija pole bitwy. Nie robi ona na tobie wrażenia, ale wyczuwasz cierpienie i strach swego przeciwnika.
-; qstr_{s2}_attacked|{s2} attacked
 qstr_You_shapeshift_into_|Zmieniasz się w niedźwiedzia!
 qstr_You_got_{reg1}_exper|Zdobyłeś {reg1} doświadczenia w formie niedźwiedzia.
 qstr_Your_ability_to_chan|Twoja umiejętność zmieniania formy się ujawniła, od teraz możesz przemierzać swe ścieżki zarówno jako człowiek jak i niedźwiedź.
@@ -804,9 +802,6 @@ qstr_Division_{reg1}_{s2}_fo|Podział {reg1} {s2} tworzy linie {reg0} (zapamięt
 qstr_Delivered_{reg60}_da|Zadajesz {reg60} obrażeń.
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} odzyskuje {reg0}% zdrowia. = + {reg1}% STR
 qstr_Your_bear_form_has_{|Twoja niedźwiedzia forma ma {reg2}/{reg1} HP!
-qstr_Three_Nazgul_are_cir|Trzy Nazgul krążą po niebie nad polem bitwy!
-qstr_Two_Nazgul_are_circl|Dwa Nazgul krążą po niebie nad polem bitwy!
-qstr_A_Nazgul_is_circling|Nagul krąży nad polem bitwy!
 qstr_Some_of_your_human_t|Niektóre z twoich ludzkich żołnierzy nie są przestraszone przez ciemność. (Nocne oddziały nie podlegają karom nocnym)
 qstr_You_are_filled_with_|Jesteś wypełniony po prostu wściekłością, gdy patrzysz na wroga (aktywny Berserk).
 qstr_Your_mount_is_scared|Twój wierzchowiec jest przestraszony przez {s5}!
@@ -1138,7 +1133,6 @@ qstr_^^^^^^^You_come_upon|^^^^^^^ Natrafiasz na uchodźców opuszczających {s2}
 qstr_^^^^^^^You_come_upon_|^^^^^^^ Natrafiasz na uchodźców, których śledziłeś od {s2}. Wygląda na to, że są w drodze do {s3} i są w większości starsi i zarażeni. ^ ^ Jest niewielu strażników, ale nie na tyle, aby powstrzymać ciebie i twoich ludzi przed zabiciem ich wszystkich.
 qstr_^^At_last_the_Master|Wreszcie Mistrz wykonuje swój ruch! Pochodnie płoną jasno. Ostra broń błyszczy. Ty i twoi krzepcy chłopcy wkrótce otrzymacie rozkazy marszowe. Zapowiada się walka, dużo walki, a chwały wystarczy dla wszystkich! ^^ Masz zaszczyt zostać wezwany na audiencję do Mistrza w Jego wieży. Prawdopodobnie twoje pierwsze rozkazy będą polegały na pracy snaga - tu napad na wioskę, tam na karawanę. Ale wkrótce udowodnisz swoją wartość. Kto powie, że nie odegrasz tak wielkiej roli, jak każdy dowódca {s2} w {s3}? ^^ Wojna się rozpoczęła; zaczyna się upadek ludzi i ich sojuszników!
 qstr_^^Your_head_suddenly|^^ Twoją głowę nagle wypełnia wizja - płonące Oko. Wokół ciebie twoi wojownicy zatrzymują się w miejscu. W jakiś sposób wiesz, że wszyscy słyszą to samo wezwanie i widzą tę samą wizję. Wielka jest sztuka Bezzamkniętego Oka - wielka jest potęga Barad-dûr! ^^ Niewypowiedziana wiedza przesiąka do twoich kości. Nadszedł czas. Mroczny Pan rozkazuje - wszyscy macie wyruszyć na swoich wrogów w otwartej wojnie. Rozkazy od {s2} w {s3} nadejdą. Wasza rola na początku nie będzie wielka, ale wkrótce się sprawdzicie ^^ Wojna się rozpoczęła, upadek Zachodu rozpoczęty!
-qstr_{s13}_asked_you_to_j|{s13} poprosił cię o dołączenie do niego z co najmniej {reg13} żołnierzami i spotkanie z Ostatnim Standem Isengard.
 qstr_You_defeated_{reg5}_|Pokonałeś {reg5} wrogów i zachwyciłeś swojego dowódcę.
 qstr_You_defeated_{reg5}_e|Pokonałeś wrogów {reg5}.
 qstr_You_failed_to_defeat|Nie udało Ci się pokonać żadnego wroga.
@@ -1193,9 +1187,6 @@ qstr_The_War_of_the_Two_T|Wojna Dwóch Wież się rozpoczęła!
 qstr_The_forces_of_{s22}_|Siły {s22} wzrosła! {s22} jest teraz {s23}.
 qstr_The_might_of_{s22}_h|Potęga {s22} została złamana! {s22} jest teraz {s23}.
 qstr_In_a_desperate_attem|W desperackiej próbie obrony przed wrogami, Sauron wysyła swój legion z Mordoru!
-qstr_Guardians_of_{s6}|Obrońcy {s6}
-qstr_Guard_Legion_of_{s6}|Strzeż Legion {s6}
-qstr_Scouts_report_that_{|Zwiadowcy meldują, że {s6} pozyskał wielką armię w pobliżu {s7}, w ostatniej próbie obrony swej stolicy.
 qstr_The_forces_of_{s2}_e|Siły {s2} założyły obóz w {s15}!
 qstr_The_hosts_of_{s2}_ma|Zastępy {s2} wracają by bronić własnych domów!
 qstr_{playername}_s_Reser|Rezerwy {playername}
@@ -1378,15 +1369,6 @@ qstr_This_is_evil_news_yo|To przynosi złe wieści. Czarne żagle stają się co
 qstr_This_is_evil_news_you|To przynosi złe wieści. Easterlingowie stają się coraz śmielsi, a Esgaroth płonie. Nie będę cię za to zbytnio winić, {playername}, za twoją porażkę, ale w istocie uderzył nas dotkliwy, ciężki cios. Idź już. Nadzieja wyczerpuje się dla naszego królestwa i musimy walczyć, aby utrzymać to, co pozostało z tego żywe.
 qstr_Pah!_It_seems_you_we|Ba! Wygląda na to, że nie jesteś w stanie znaleźć swoich nóg, {playername}. Teraz siedzą, ci ludzie z Gondoru, wysoko w wieżach, próżni jak królowie, śmiejąc się, gdy płoną czarne żagle! Być może czas spędzony na wiosłach w kambuzie byłby odpowiednią karą dla twoich żołnierzy; szkoda, że ​​są pod twoim dowództwem, a nie moim. Oko nie będzie zadowolone. Zostaw mnie teraz.
 qstr_Have_you_nothing_bet|Nie masz nic lepszego do zaoferowania niż słabe wymówki na swoją porażkę, {playername}? Być może nie jesteś tak silny, jak sądziliśmy. W przyszłości lepiej przysłuż się naszej sprawie, {playername}. Nie będzie litości dla słabych!
-qstr_{playername}_we_have|{playername}, mamy Isengard na kolanach. Podjęli ostatnią walkę i chronią Sarumana w jego wieży. Jedź ze mną i spotkaj się z nimi!
-qstr_Are_you_ready_to_mee|Jesteś gotowy, by się zmierzyć z ostatnim bastionem Isengardu?
-qstr_I_am_ready_to_ride_w|Jestem gotów jechać z tobą na Isengard.
-qstr_I_am_ready_to_ride_wi|Jestem gotów jeździć z tobą i je spełniać. Zakończmy to teraz.
-qstr_I_am_not_ready_to_ri|Nie jestem jeszcze gotów jeździć z tobą. Potrzebuję więcej czasu.
-qstr_You_do_not_have_enou|Masz zbyt mały oddział, żeby pomóc w tej walce. Zwiększ liczebność oddziału do 30 ludzi i dołącz do mnie.
-qstr_Stay_close_we_will_t|Trzymajcie się blisko, zajmujemy pozycję blisko wroga. Kiedy wszyscy się zgromadzimy, uderzymy.
-qstr_You_have_taken_too_l|Zajęło Ci to zbyt długo... Pojedziemy teraz, z Tobą lub bez Ciebie. Zbierzemy się nieopodal wroga i za 3 dni uderzymy.
-qstr_Make_haste_{playerna|Spiesz się, {playername}. Nie chcemy ich odzyskać.
 qstr_Your_mission_is_comp|Twoja misja została zakończona, {s9} chce abyś dalej podążał{/a} za jego armią, aż do następnych wskazówek.
 qstr_{s13}_asked_you_to_g|{s13} poprosił cię o przyprowadzenie mu stada złożonego z {reg3} sztuk {s4} 
 qstr_Moreover_should_you_|Ponadto, jeśli zostaniesz {s24}, zostaniesz przyjęty na moją Radę Wojenną, gdzie będziesz mógł podejmować decyzje, które wpłyną na przebieg naszej kampanii. W tej chwili, jako {s25}, po prostu podążaj za nami i trzymaj się blisko. Niedługo ruszymy.
@@ -1523,7 +1505,7 @@ qstr_I_want_you_and_your_|Chcę, abyś ty i twoi ludzie zabili
 qstr_{playername}_you_nee|{playername}, musisz zdobyć mój szacunek i twoich ludzi. {s6} {reg22} {s7} żołnierze!
 qstr_{s9}_wants_you_to_per|{s9} chce, abyś osobiście zabił oddziały {reg22} {s6}.
 qstr_{s9}_wants_you_and_y|{s9} chce, abyś ty i twoi ludzie zabili oddziały {reg22} {s6}.
-qstr_{playername}_we_have|{playername}, mamy Isengard na kolanach. Podjęli ostatnią walkę i chronią Sarumana w jego wieży. Jedź ze mną i spotkaj się z nimi!
+qstr_{playername}_we_have|{playername}, otrzymaliśmy ponure wieści. Korsarze z Umbar stają się coraz śmielsi, a nawet jak mówimy, flota gromadzi się niedaleko {s6}. Już żeglują wzdłuż wybrzeża, a wkrótce znajdą się nad samym miastem. ^^ Musimy przechwycić flotę, zanim dotrze ona do miasta. Pośpiesz się {s6} i porozmawiaj z lokalnymi władzami.
 qstr_{playername}_we_have_|{playername}, otrzymaliśmy ponure wieści. Dzicy Rhön mają więcej przebiegłości i odwagi, niż sądziliśmy - niewidoczni przez naszych zwiadowców, zbudowali wystarczającą liczbę łodzi i tratw, aby przewieźć ich przez Długie Jezioro, i uderzają bezpośrednio w Esgaroth! ^^ Musimy przechwycić flotę zanim dotrze do miasta. Poprowadź swoje oddziały tak szybko, jak tylko możesz, i poprowadź barbarzyńców z powrotem przez wodę!
 qstr_If_you_seek_pillage_|Jeśli szukasz grabieży i grabieży, oto niezrównana okazja, {playername}. ^^ Flota Korsarzy wystartuje z portu na {s7} i wyznaczy kurs na {s6}, który jest gotowy na wyrywanie! Dołącz do ich ataku i podziel się łupem!
 qstr_The_soft_weaklings_o|Miękkie słabeuszki Esgaroth nie pasują do naszych szybkich jeźdźców i dzikich wojowników, {playername}. Jest to znane. Ludzie z Jeziora uważają się za bezpiecznych, po drugiej stronie wody od nas, ale wkrótce pokażemy im inaczej! ^^ Stworzyliśmy łodzie i tratwy, wystarczająco dobre, aby nieść naszych wojowników prosto przez jezioro. Nie będą nas oczekiwać! ^ ^ Udaj się do Obozu Głównego i porozmawiaj z komendantem obozu, jeśli chcesz dołączyć do ataku.

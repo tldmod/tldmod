@@ -724,8 +724,8 @@ dlga_woodelf_help_2:woodelf_help_3.1|你是？你果然是！我已經見識到�
 dlga_woodelf_help_3:close_window|祝你一路平安，托爾巴。我想我們會再見的。
 dlga_healers_meet:healer_who|你是做什麼的？
 ; dlga_healers_meet:healers_ask|I need your help.
-; dlga_healers_ask:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
-dlga_healers_ask:healer_injured_ask|我和我的人馬受傷了，而我們沒有時間等傷口癒合。你能提供援助嗎？
+; dlga_healers_ask_2:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
+dlga_healers_ask_2:healer_injured_ask|我和我的人馬受傷了，而我們沒有時間等傷口癒合。你能提供援助嗎？
 dlga_healers_meet:close_window|沒什麼。
 dlga_healers_injured_check:healers_injured_heal|好，幫我們處理吧。
 dlga_healers_wound_check:healers_wound_heal|好，幫我們處理吧。
@@ -1094,7 +1094,7 @@ dlga_start:party_encounter_hostile_defender|你想要什麼？
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|投降或死亡！
 dlga_party_encounter_hostile_defender:close_window|沒什麼。我們會安靜離開的。
 dlga_start:close_window.45|*靜靜地盯著你*
-dlga_start:battle_reason_stated.1|投降或死亡。選擇吧。
+dlga_start:battle_reason_stated|我會用你的頭顱當酒杯的！
 dlga_battle_reason_stated:close_window|我不怕你。我會跟你打的。
 dlga_start:free|你好。我能為你做什麼嗎？
 dlga_free:view_char_requested|告訴我關於你的事吧
