@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 2086
+ 2090
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -1086,7 +1086,7 @@ spr_wheel 0 0 wheel bowheel 0
 spr_ladder 0 0 ladder boladder 0
 
 
-spr_cart 0 0 cart bocart 0
+spr_cart 0 0 cart bo_cart_new 0
 
 
 spr_village_stand 0 0 village_stand bovillage_stand 0
@@ -6383,6 +6383,18 @@ spr_fallen_king_head 0 0 FK_Head bo_apple_basket 0
 
 
 spr_fallen_king_evil_head 0 0 FK_evil_head bo_apple_basket 0
+
+
+spr_water_stream_a 0 0 water_stream_a bo_water_stream_a 0
+
+
+spr_water_stream_b 0 0 water_stream_b bo_water_stream_b 0
+
+
+spr_water_way 0 0 water_way bo_isen_forge 0
+
+
+spr_barrel_water 0 0 barrel_water bo_barrel_a_repositioned 0
 
 
 spr_save_compartibility4 0 0 0 0 0

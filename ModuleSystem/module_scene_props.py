@@ -748,7 +748,7 @@ scene_props = [
 
 ("wheel",0,"wheel","bowheel", []),
 ("ladder",0,"ladder","boladder", []),
-("cart",0,"cart","bocart", []),
+("cart",0,"cart","bo_cart_new", []),
 ("village_stand",0,"village_stand","bovillage_stand", []),
 ("wooden_stand",0,"wooden_stand","bowooden_stand", []),
 ("table_small",0,"table_small","botable_small", []),
@@ -4841,7 +4841,7 @@ scene_props = [
         (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"),
         (copy_position, pos2, pos1),
-        (position_move_y, pos2, -80,0),(set_spawn_position, pos2),
+        (position_move_y, pos2, -90,0),(set_spawn_position, pos2),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
         (val_add, ":walker_type", slot_center_walker_0_troop),
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
@@ -5393,6 +5393,11 @@ scene_props = [
 ("fallen_king_base",0,"FK_Base_combined","bo_apple_basket",[]),
 ("fallen_king_head",0,"FK_Head","bo_apple_basket",[]),
 ("fallen_king_evil_head",0,"FK_evil_head","bo_apple_basket",[]),
+
+("water_stream_a",0,"water_stream_a","bo_water_stream_a", []),
+("water_stream_b",0,"water_stream_b","bo_water_stream_b", []),
+("water_way",0,"water_way","bo_isen_forge", []),
+("barrel_water",0,"barrel_water","bo_barrel_a_repositioned", []),
 
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),
