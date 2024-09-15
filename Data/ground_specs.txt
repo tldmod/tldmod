@@ -6,6 +6,6 @@
  earth 3 ground_earth 1.300000 none
  desert 3 ground_desert 6.300000 ground_forest_under_desert
  forest 1 ground_forest 2.300000 ground_earth_under_grass
- pebbles 1 pebbles 4.100000 none
- village 1 ground_village 10.000000 none
+ pebbles 1 pebbles 8.100000 none
+ village 1 ground_village 16.000000 none
  path 3 ground_path 6.000000 none

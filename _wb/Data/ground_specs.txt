@@ -6,6 +6,6 @@
  earth 7 ground_earth 4.500000 none 0.200000 0.200000 0.200000
  desert 7 ground_desert 2.500000 ground_forest_under_desert 0.200000 0.200000 0.200000
  forest 5 ground_forest 4.200000 ground_earth_under_grass 0.400000 0.400000 0.400000
- pebbles 5 pebbles 4.100000 none 0.700000 0.700000 0.700000
- village 5 ground_village 11.000000 none 0.700000 0.700000 0.700000
+ pebbles 5 pebbles 8.100000 ground_pebbles_under_path 0.700000 0.700000 0.700000
+ village 5 ground_village 16.000000 ground_village_under_path 0.700000 0.700000 0.700000
  path 7 ground_path 6.000000 none 0.300000 0.300000 0.300000
