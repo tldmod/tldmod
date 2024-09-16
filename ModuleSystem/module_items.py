@@ -1568,6 +1568,11 @@ items =[
 ["civilian_carry_oil","Wood",[("oil_new_carry",0)],itp_type_two_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
 ["civilian_carry_wood2","Wood",[("ado_wood_carry",0)],itp_type_two_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
 
+#inspired by VC
+["work_basket", "Basket", [("work_basket",0)], itp_type_one_handed_wpn|itp_primary | itp_attach_armature , itcf_carry_axe_back, 41 , weight(5)|difficulty(0)|weapon_length(53), 0],
+["work_basket_2", "Basket", [("work_basket_2",0)], itp_type_one_handed_wpn|itp_primary | itp_attach_armature , itcf_carry_axe_back, 41 , weight(5)|difficulty(0)|weapon_length(53), 0],
+
+
 #non-ridable animals
 ["animal_spider","Spider",[("spider_black",0)], itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(3)|horse_maneuver(75)|horse_scale(4)|difficulty(10),imodbits_none,[]],
 ["animal_bear","Bear",    [("bear_2",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(130)|horse_speed(5)|horse_maneuver(48)|horse_scale(120)|difficulty(10),imodbits_none,[]],

@@ -1,5 +1,5 @@
 itemsfile version 2
-978
+980
  itm_no_item INVALID_ITEM INVALID_ITEM 1  invalid_item 0  11 0 3 0 1.5 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -2910,6 +2910,12 @@ itemsfile version 2
 0
 
  itm_civilian_carry_wood2 Wood Wood 1  ado_wood_carry 0  4194307 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
+0
+
+ itm_work_basket Basket Basket 1  work_basket 0  4198146 4294967296 41 0 5 100 0 0 0 0 0 0 0 53 0 0 0
+0
+
+ itm_work_basket_2 Basket Basket 1  work_basket_2 0  4198146 4294967296 41 0 5 100 0 0 0 0 0 0 0 53 0 0 0
 0
 
  itm_animal_spider Spider Spider 1  spider_black 0  18014398509482003 0 1200 0 0 100 0 0 0 10 60 75 3 4 0 0 0

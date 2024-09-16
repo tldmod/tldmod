@@ -14744,17 +14744,8 @@ scripts = [
        (agent_get_troop_id, ":walker_troop", ":cur_agent"),
        (troop_get_type, ":type", ":walker_troop"),
        (store_random_in_range, ":chance", 0, 100),
-       (lt, ":chance", 60),
-       (assign, ":item_to_use", 0),
-       (try_begin),       
-           (this_or_next|party_slot_eq, "$current_town", slot_center_walker_0_troop, ":walker_troop"), #walker troops 0 and 1 are "workers"
-           (party_slot_eq, "$current_town", slot_center_walker_1_troop, ":walker_troop"),
-           (neq, ":type", tf_female),         
-           (store_random_in_range, ":item_to_use", "itm_civilian_carry_wood_heap", "itm_civilian_carry_honey"),
-       (else_try),
-           (eq, ":type", tf_female),         
-           (store_random_in_range, ":item_to_use", "itm_civilian_carry_amphora", "itm_civilian_carry_wood2"),
-       (try_end),
+       (lt, ":chance", 80),
+       
         #remove weapons and helms     
         (try_for_range, ":weapon_slot", 0, 4), 
             (agent_get_item_slot, ":item", ":cur_agent", ":weapon_slot"),
@@ -14767,10 +14758,34 @@ scripts = [
             (neg|item_has_property, ":helm", itp_civilian),
             (agent_unequip_item, ":cur_agent", ":helm", ek_head),
         (try_end),
-       (gt, ":item_to_use", 0),
-       (agent_equip_item, ":cur_agent", ":item_to_use", 1),
-       (agent_set_wielded_item, ":cur_agent", ":item_to_use"),
-       (agent_set_attack_action, ":cur_agent", 3, 1),
+        
+       (try_begin), #carry in hand
+           (is_between, ":chance", 0, 60),
+           (assign, ":item_to_use", 0),
+           (try_begin),       
+               (this_or_next|party_slot_eq, "$current_town", slot_center_walker_0_troop, ":walker_troop"), #walker troops 0 and 1 are "workers"
+               (party_slot_eq, "$current_town", slot_center_walker_1_troop, ":walker_troop"),
+               (neq, ":type", tf_female),         
+               (store_random_in_range, ":item_to_use", "itm_civilian_carry_wood_heap", "itm_civilian_carry_honey"),
+           (else_try),
+               (eq, ":type", tf_female),         
+               (store_random_in_range, ":item_to_use", "itm_civilian_carry_amphora", "itm_civilian_carry_wood2"),
+           (try_end),
+           (gt, ":item_to_use", 0),
+           (agent_equip_item, ":cur_agent", ":item_to_use", 1),
+           (agent_set_wielded_item, ":cur_agent", ":item_to_use"),
+           (agent_set_attack_action, ":cur_agent", 3, 1),
+        (try_end), 
+        
+        (try_begin), #carry on back
+            (is_between, ":chance", 40, 80),
+            (assign, ":item_to_use", 0),
+            (this_or_next|party_slot_eq, "$current_town", slot_center_walker_0_troop, ":walker_troop"), #walker troops 0 and 1 are "workers"
+            (party_slot_eq, "$current_town", slot_center_walker_1_troop, ":walker_troop"),
+            (store_random_in_range, ":item_to_use", "itm_work_basket", itm_work_basket_2+1),
+            (gt, ":item_to_use", 0),
+            (agent_equip_item, ":cur_agent", ":item_to_use", 2),
+        (try_end),
        (agent_set_speed_limit, ":cur_agent", 5), #make sure they don't run   
          ] or []) + [     
      (try_end), 
