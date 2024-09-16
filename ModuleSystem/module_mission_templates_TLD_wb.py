@@ -3767,8 +3767,31 @@ battle_encounters_effects = [
 			(agent_get_team, "$nazgul_team",":agent"),
 		(try_end),
 	(try_end),
-    
-    #to do: place nazgul prop here on in a separate trigger
+]),
+
+# check for Fellbeast chance at battle start
+(8, 0, ti_once, [
+    (assign, ":continue", 0),
+    (try_begin),
+        (party_slot_eq, "$g_encountered_party", slot_party_battle_encounter_effect, FELLBEAST),
+        (assign, ":continue", 1),
+    (else_try),
+        (gt, "$g_encountered_party_2", 1),
+        (party_slot_eq, "$g_encountered_party_2", slot_party_battle_encounter_effect, FELLBEAST),
+        (assign, ":continue", 1),
+    (try_end),
+    (eq, ":continue", 1),
+  ],[
+    (set_fixed_point_multiplier, 100),
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_position, pos1, ":player_agent"),
+    (position_move_y, pos1, 10000),
+    (position_move_z, pos1, 10000),
+    (set_spawn_position, pos1),
+    (spawn_scene_prop, "spr_fellbeast"),
+    (assign, "$nazgul_in_battle", reg0), #store fellbeast prop in global
+    (display_message, "@fellbeast spawned"),
+    (prop_instance_play_sound, "$nazgul_in_battle", snd_nazgul_skreech_long),
 ]),
 
 ]

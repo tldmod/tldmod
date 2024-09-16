@@ -4569,32 +4569,55 @@ nazgul_flying = ((is_a_wb_mt==1) and [
     # slot 42: target agent
     (4, 0, 0, 
     [(key_is_down, key_n),
+    (ge, "$nazgul_in_battle", 1),
     (display_message, "@key clicked"),
+    (scene_prop_slot_eq, "$nazgul_in_battle", 41, 0), #in circling mode?
+    (mission_cam_get_position, pos2),
+    (prop_instance_get_position, pos1, "$nazgul_in_battle"),
+    (position_is_behind_position, pos1, pos2), #make sure that they don't "turn" when in camera
+    (display_message, "@attack!"),
     ],
-    [(get_player_agent_no, ":player_agent"),
+    [(set_fixed_point_multiplier, 100),
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_position, pos5, ":player_agent"),
+    (assign, ":target_agent", 0),
+    (try_for_agents, ":agent_no"),
+        (eq, ":target_agent", 0),
+        (agent_is_alive, ":agent_no"),
+        (agent_is_human, ":agent_no"),
+        (neq, ":agent_no", ":player_agent"),
+        (agent_get_position, pos6, ":agent_no"),
+        (get_distance_between_positions, ":dist", pos5, pos6),
+        (lt, ":dist", 5000),
+        (neg|scene_prop_slot_eq, "$nazgul_in_battle", 42, ":agent_no"), #not previous target agent
+        #(agent_get_team, ":agent_team", ":agent_no"),
+        #(teams_are_enemies, ":agent_team", "$nazgul_team"),
+        (assign, ":target_agent", ":agent_no"),
+    (try_end),
+    (gt, ":target_agent", 0),
     (scene_prop_get_num_instances, ":num_instances", "spr_fellbeast"),
     (ge, ":num_instances", 1),
     (scene_prop_get_instance, ":instance_no", "spr_fellbeast", 0), #assume there's always only one
     (prop_instance_is_valid, ":instance_no"),
-    (scene_prop_slot_eq, ":instance_no", 41, 0),
-    (scene_prop_set_slot, ":instance_no", 41, 2), #attack
-    (scene_prop_set_slot, ":instance_no", 42, ":player_agent"), #target
+    (scene_prop_slot_eq, ":instance_no", 41, 0), #in circling mode?
+    (scene_prop_set_slot, ":instance_no", 41, 2), #set attack mode
+    (scene_prop_set_slot, ":instance_no", 42, ":target_agent"), #store target
     (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_1, 50), #reset temp hp before attack
     
-    (agent_get_position, pos3, ":player_agent"),
+    (agent_get_position, pos3, ":target_agent"),
     (prop_instance_get_position, pos2, ":instance_no"),
     (get_distance_between_positions, ":speed", pos2, pos3),
-    (val_div, ":speed", 40), #speed is dist/9
+    (val_div, ":speed", 60), #speed is dist/40
     (prop_instance_animate_to_position, ":instance_no", pos3, ":speed"),
+    (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_short" ),
 	]),
 
-    #Nazgul attack abort
+    #Nazgul attack update and abort
     (0.5, 0, 0, 
     [
     ],
     [
     (set_fixed_point_multiplier, 100),
-    #(get_player_agent_no, ":player_agent"),
     (scene_prop_get_num_instances, ":num_instances", "spr_fellbeast"),
     (ge, ":num_instances", 1),
     (scene_prop_get_instance, ":instance_no", "spr_fellbeast", 0),
@@ -4616,14 +4639,27 @@ nazgul_flying = ((is_a_wb_mt==1) and [
         (val_add, ":height", 200),
         (position_set_z, pos3, ":height"),      
         (get_distance_between_positions, ":dist", pos2, pos3),
-        (store_div, ":speed", ":dist", 30), #speed is dist/9
+        (store_div, ":speed", ":dist", 45), #speed is dist/45
         (prop_instance_animate_to_position, ":instance_no", pos3, ":speed"), 
+
+        (le, ":dist", 3000), #slow down a bit when closing in
+        (store_div, ":speed", ":dist", 30), #speed is dist/30
+        (prop_instance_animate_to_position, ":instance_no", pos3, ":speed"),         
         
-        (le, ":dist", 1200),   #closed in? attack!
+        (le, ":dist", 800),   #closed in? attack!
         (agent_get_position, pos3, ":target_agent"), #reset roation
         (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_short" ),
+        (agent_play_sound, ":target_agent", "snd_blunt_hit"),
         (copy_position, pos69, pos3), #needed for script
         (call_script, "script_aoe_pushback", 50, 400), #50 damage, 4m radius
+        
+        (try_for_agents, ":agent", pos69, 2000), #morale effect
+            (agent_get_team, ":agent_team", ":agent"),
+            (teams_are_enemies, ":agent_team", "$nazgul_team"),
+            (agent_get_slot, ":morale_bonus", ":agent", slot_agent_morale_modifier),
+            (val_sub, ":morale_bonus", 25),
+            (agent_set_slot, ":agent", slot_agent_morale_modifier, ":morale_bonus"),
+        (try_end),
         
         (scene_prop_set_slot, ":instance_no", 41, 3), #retreat
         # (init_position, pos2), #set new target pos

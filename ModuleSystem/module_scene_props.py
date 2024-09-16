@@ -5360,7 +5360,7 @@ scene_props = [
       (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 29, 1500),
       (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_1, 50),
       (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_2, 500),
-      (assign, "$nazgul_in_battle", 1),
+      (assign, "$nazgul_in_battle", ":instance_no"),
     ]),
     (ti_on_scene_prop_hit,
     [   (store_trigger_param_1, ":instance_no"),
@@ -5369,13 +5369,15 @@ scene_props = [
         (scene_prop_get_slot, ":health", ":instance_no", slot_prop_temp_hp_1),
         (val_sub, ":health", ":damage"),
         (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_1, ":health"),
-        (scene_prop_get_slot, ":health", ":instance_no", slot_prop_temp_hp_2),
-        (val_sub, ":health", ":damage"),
-        (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_2, ":health"),        
+        (scene_prop_get_slot, ":health2", ":instance_no", slot_prop_temp_hp_2),
+        (val_sub, ":health2", ":damage"),
+        (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_2, ":health2"),        
         (particle_system_burst, "psys_dummy_smoke", pos1, 3),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
+        
+        (lt, ":health", 1),
         (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_long" ),
-        (display_message, "@hit!"),
+        #(display_message, "@hit!"),
         (scene_prop_set_slot, ":instance_no", 41, 3), #retreat
         (prop_instance_get_position, pos2, ":instance_no"),
         (position_get_rotation_around_x, ":tilt", pos2), #reset x rotation

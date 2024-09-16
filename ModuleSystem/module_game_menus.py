@@ -3616,7 +3616,7 @@ game_menus = [
     	]),
     ("player_control_allies",[],"Battlesize set to {reg66}", [(options_set_battle_size, reg66),]),
      ] or []) + [
-    ("spawn_orc_horde",[],"Spawn Orc Horde", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_mordor_war_party"),(display_message, "@Orc Horde Spawned!"),]),
+    ("spawn_orc_horde",[],"Spawn Orc Horde with Nazgul", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_mordor_war_party"),(display_message, "@Orc Horde Spawned!"),(party_set_slot, reg0, slot_party_battle_encounter_effect, FELLBEAST),]),
     ("spawn_ent_party",[],"Spawn Ent Party", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_ents"),]),    
     ("spawn_vet_archer",[],"Spawn Vet Archer", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_vet_archer"),(display_message, "@Vet Archer Spawned!"),(assign, ":party", reg0),(call_script, "script_party_wound_all_members", ":party"),]),
     ("melee_ai_test",[],"Melee AI Test", [
@@ -4816,7 +4816,13 @@ game_menus = [
 	    ],"Town NPCs always accessible from Menus:  {s7}",[
 	    (store_sub,"$tld_option_town_menu_hidden",1,"$tld_option_town_menu_hidden"),(val_clamp,"$tld_option_town_menu_hidden",0,2),(jump_to_menu, "mnu_camp_cheat"),(val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@Cheats used: {reg78}")]),     
      
-    ("cheat_add_prisoners", [], "Add 10 prisoners",  [(party_add_prisoners, p_main_party, trp_a1_arnor_scout, 10),(display_message, "@Added 10 prisoners."), ]),
+    ("cheat_add_prisoners", [], "Add 10 random prisoners",  
+    [(try_for_range, ":unused", 0, 6),
+        (store_random_in_range, ":troop", trp_i1_woodmen_man, regular_troops_end),
+        (neg|troop_is_hero, ":troop"),
+        (party_add_prisoners, p_main_party, ":troop", 2),
+      (try_end),
+      (display_message, "@Added 10 prisoners."), ]),
 	#("cheat_get_item", [], "Gain a free magic item", [(jump_to_menu, "mnu_cheat_free_magic_item")]),
 	("cheat_add_xp", [], "Add 1000 experience to player.", [(add_xp_to_troop, 1000, "trp_player"), (display_message, "@Added 1000 experience to player."), ]),	  	
     ("camp_mod_2",    [],
