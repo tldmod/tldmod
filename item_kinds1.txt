@@ -1553,19 +1553,19 @@ itemsfile version 2
  itm_rohan_2h_sword Rohan_War_Sword Rohan_War_Sword 1  rohan_sword_a_2h 0  138477571 9223635924234010879 700 287892 3 93 0 0 0 13 39936 104 0 103 0 287 39
 0
 
- itm_rohan_recruit Rohan_Padded_Jerkin Rohan_Padded_Jerkin 4  rohan_padded_1 134  rohan_lamellar 1  rohan_padded_2 0  rohan_padded_3 33554432  16842765 0 50 123731968 4 100 0 8 2 0 0 0 0 0 0 0 0
+ itm_rohan_recruit Rohan_Padded_Jerkin Rohan_Padded_Jerkin 4  rohan_padded_1 134  rohan_lamellar 1  rohan_padded_2 0  rohan_padded_3 33554432  16842765 0 50 123731968 4 90 0 8 2 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_leather Rohan_Leather_Vest Rohan_Leather_Vest 5  rohan_lamellar_poor 134  rohan_lamellar 1  rohan_lamellar 0  rohan_lamellar_cape 268435456  rohan_lamellar_reinforced 167772160  16842765 0 300 436207750 9 100 0 13 9 0 0 0 0 0 0 0 0
+ itm_rohan_leather Rohan_Leather_Vest Rohan_Leather_Vest 5  rohan_lamellar_poor 134  rohan_lamellar 1  rohan_lamellar 0  rohan_lamellar_cape 268435456  rohan_lamellar_reinforced 167772160  16842765 0 300 436207750 9 90 0 13 9 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_mail Rohan_Hauberk Rohan_Hauberk 6  rohan_mail_poor 134  rohan_mail 1  rohan_mail 0  rohan_mail_cape 268435456  rohan_mail_reinforced 33554432  rohan_mail_reinforced_cape 671088640  16842765 0 1225 973078662 24 91 0 24 11 10 0 0 0 0 0 0 0
+ itm_rohan_mail Rohan_Hauberk Rohan_Hauberk 6  rohan_mail_poor 134  rohan_mail 1  rohan_mail 0  rohan_mail_cape 268435456  rohan_mail_reinforced 33554432  rohan_mail_reinforced_cape 671088640  16842765 0 1225 973078662 24 91 0 25 11 10 0 0 0 0 0 0 0
 0
 
- itm_rohan_rider Rohan_Rider_Armor Rohan_Rider_Armor 6  rohan_rider_poor 134  rohan_rider 1  rohan_rider 0  rohan_rider_cape 268435456  rohan_rider_reinforced 33554432  rohan_rider_reinforced_cape 671088640  16842765 0 1600 973078662 27 91 0 27 13 12 0 0 0 0 0 0 0
+ itm_rohan_rider Rohan_Rider_Armor Rohan_Rider_Armor 6  rohan_rider_poor 134  rohan_rider 1  rohan_rider 0  rohan_rider_cape 268435456  rohan_rider_reinforced 33554432  rohan_rider_reinforced_cape 671088640  16842765 0 1750 973078662 27 91 0 29 13 12 0 0 0 0 0 0 0
 0
 
- itm_rohan_scale Rohan_Scale_Armor Rohan_Scale_Armor 6  rohan_scale_poor 134  rohan_scale 1  rohan_scale 0  rohan_scale_cape 268435456  rohan_scale_reinforced 33554432  rohan_scale_reinforced_cape 671088640  16842765 0 2000 973078662 30 92 0 30 15 16 0 0 0 0 0 0 0
+ itm_rohan_scale Rohan_Scale_Armor Rohan_Scale_Armor 6  rohan_scale_poor 134  rohan_scale 1  rohan_scale 0  rohan_scale_cape 268435456  rohan_scale_reinforced 33554432  rohan_scale_reinforced_cape 671088640  16842765 0 2200 973078662 30 92 0 32 15 16 0 0 0 0 0 0 0
 0
 
  itm_rohan_surcoat Rohan_Surcoat Rohan_Surcoat 6  rohan_tabard_poor 134  rohan_tabard 1  rohan_tabard 0  rohan_tabard_cape 268435456  rohan_tabard_reinforced 33554432  rohan_tabard_reinforced_cape 671088640  16842765 0 2600 973078662 34 94 0 36 15 18 0 0 0 0 0 0 0
@@ -2462,7 +2462,7 @@ itemsfile version 2
  itm_dwarf_armor_a Erebor_Surcoat_over_Mail Erebor_Surcoat_over_Mail 2  dwarven_tunic_over_mail_2 0  dwarven_tunic_over_mail_1 704643206  16842765 0 1508 704643206 13 92 0 29 13 12 0 0 0 0 0 0 0
 0
 
- itm_leather_dwarf_armor Dwarven_Padded_Coat Dwarven_Padded_Coat 1  dwarven_paddedlongcoat 1  16842765 0 1208 704643206 16 92 0 30 8 11 0 0 0 0 0 0 0
+ itm_leather_dwarf_armor Erebor_Padded_Coat Erebor_Padded_Coat 1  dwarven_paddedlongcoat 1  16842765 0 2208 704643206 16 94 0 38 17 17 0 0 0 0 0 0 0
 0
 
  itm_dwarf_armor_b Erebor_Tunic_over_Mail Erebor_Tunic_over_Mail 2  dwarf_tunicmail 0  dwarf_tunicmail_scale 704643206  16842765 0 1808 704643206 16 93 0 34 11 14 0 0 0 0 0 0 0
