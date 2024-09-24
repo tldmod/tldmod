@@ -11208,10 +11208,16 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                               (assign, reg9, ":quest_target_amount"),
                               (str_store_item_name, s4, ":quest_target_item")],
 "I've brought more metal, {reg8} units of {s4}, when you requested {reg9}.", "mayor_deliver_iron",[
-        #reset quest amount and rank reward
+        #reset quest amount and scale gold and rank reward
+        (quest_get_slot, ":quest_target_amount", "qst_deliver_iron", slot_quest_target_amount),
+        (quest_get_slot, ":quest_gold_reward", "qst_deliver_iron", slot_quest_gold_reward),
+        (val_mul, ":quest_gold_reward", "$temp"),
+        (val_div, ":quest_gold_reward", ":quest_target_amount"),
+        (quest_set_slot, "qst_deliver_iron", slot_quest_gold_reward, ":quest_gold_reward"),         
         (quest_set_slot, "qst_deliver_iron", slot_quest_target_amount, "$temp"),
+        
         (store_div, ":quest_rank_reward", "$temp", 2),
-        (quest_set_slot, "qst_deliver_iron", slot_quest_rank_reward, ":quest_rank_reward"), #only increase rank reward, leave gold/xp the same (too much trouble)
+        (quest_set_slot, "qst_deliver_iron", slot_quest_rank_reward, ":quest_rank_reward"),
         ]],
 
    
