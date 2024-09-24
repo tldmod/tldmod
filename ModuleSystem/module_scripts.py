@@ -17802,11 +17802,12 @@ scripts = [
       (try_begin), # just got it
         (item_slot_eq, ":item", ":slot", 0),
         (troop_raise_attribute, "trp_player", ":attr", ":attr_bonus"),
-        (item_set_slot, ":item", ":slot", 1),
+        (item_set_slot, ":item", ":slot", ":attr_bonus"),
         (display_message, "@You've gained {s6} from gaining {s7}", color_good_news),
       (try_end),
     (else_try), #lost or unequipped it
-      (item_slot_eq, ":item", ":slot", 1),
+      (item_slot_ge, ":item", ":slot", 1),
+      (item_get_slot, ":attr_bonus", ":item", ":slot"),
       (val_mul, ":attr_bonus", -1),
       (troop_raise_attribute, "trp_player", ":attr", ":attr_bonus"),
       (item_set_slot, ":item", ":slot", 0),
