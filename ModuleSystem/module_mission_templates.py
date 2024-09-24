@@ -4720,6 +4720,7 @@ mission_templates = [ # not used in game
   (0, 0, 10,[(lt,"$attacker_reinforcement_stage",20),(store_mission_timer_a,":mission_time"),(ge, ":mission_time", 20)],[ #Less than defenders. Attackers don't go all in. Also makes it easier to defend against sieges.
 	(assign,":atkteam","$attacker_team"),
     (assign,":entry",11), #iterate through 8 9 10 - changed to 12,13,14
+    (set_fixed_point_multiplier, 100),
     (store_normalized_team_count,":num_attackers",":atkteam"),
     (lt,":num_attackers",15),
 
@@ -5035,7 +5036,7 @@ mission_templates = [ # not used in game
    ## This block calls the script to move archers to archer positions. 
    ## In TLD, attacker archers are asked to hold ground in entry point 60, 61, and 62 if the right,left, center flanks have NOT been taken by the attackers
 
-  (5, 0, 0,[(gt, "$defender_reinforcement_stage", 0)],[(call_script, "script_siege_move_archers_to_archer_positions")]),
+  (5, 0, 0,[(is_between, "$defender_reinforcement_stage", 0, 15)],[(call_script, "script_siege_move_archers_to_archer_positions")]),
 
   common_battle_check_friendly_kills,
   common_battle_check_victory_condition,

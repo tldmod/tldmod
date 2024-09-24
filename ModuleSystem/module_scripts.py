@@ -15388,8 +15388,11 @@ scripts = [
 			(try_begin),
 				(agent_slot_eq, ":agent_no", slot_agent_target_entry_point, 0),
 				(agent_get_team, ":team", ":agent_no"), #0, 2, 4
-                (store_div, ":team_slot", ":team", 2),  #0, 1, 2
-                (neg|troop_slot_eq,"trp_no_troop",":team_slot",-1), #choke point not taken
+                (this_or_next|troop_slot_ge,"trp_no_troop",0,1), #move as long as any choke point not taken
+                (this_or_next|troop_slot_ge,"trp_no_troop",1,1),
+                (troop_slot_ge,"trp_no_troop",2,1),
+                #(store_div, ":team_slot", ":team", 2),  #0, 1, 2
+                #(neg|troop_slot_eq,"trp_no_troop",":team_slot",-1), #choke point not taken
 				(try_begin),(eq,":team",0),(store_random_in_range, ":random_entry_point", 50, 56), (ge, ":random_entry_point", 53), (assign, ":random_entry_point", 42), #left
 				 (else_try),(eq,":team",2),(store_random_in_range, ":random_entry_point", 54, 57), (ge, ":random_entry_point", 55), (assign, ":random_entry_point", 41), #center
 				 (else_try),               (store_random_in_range, ":random_entry_point", 56, 62), (ge, ":random_entry_point", 59), (assign, ":random_entry_point", 43), #right
