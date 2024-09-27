@@ -15384,6 +15384,7 @@ scripts = [
 
 		(try_begin),
 			(agent_is_defender, ":agent_no"), # defending archers go to their respective points
+            (is_between, "$defender_reinforcement_stage", 0, 15),
             (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
 			(try_begin),
 				(agent_slot_eq, ":agent_no", slot_agent_target_entry_point, 0),

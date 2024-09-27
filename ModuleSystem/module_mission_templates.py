@@ -4468,15 +4468,19 @@ mission_templates = [ # not used in game
 
     ## Kham - Distributed Teams using the mtef_team_X flag. 0, 2, 4 are defenders; 1, 3, 5 are attackers. 6 is for the gate. This allows for the attacker_team / defender_team globals to work.
     
-    # Attacker initial spawn point (was 0) - Split this into 3 and distribute teams    
-     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,3,[]),
-     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,3,[]),
-     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,3,[]),
+    # Player initial spawn point, player teleports to 48 after spawn, this is to avoid a bug where all agents spawning at 48 would be shown as belonging to the player team
+     (1,mtef_attackers|0x00007000,af_override_horse,aif_start_alarmed,1,[]),
      
-     # Initial defender spawn point (was 11)  - Split this into 3 and distribute teams   																								  
-     (40,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
-     (40,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
-     (40,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
+     #unused
+     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,0,[]),
+     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,0,[]),
+     
+     # Initial defender spawn point  																								  
+     (40,mtef_defenders|0x00007000|mtef_use_exact_number,af_override_horse,aif_start_alarmed,1,[]),
+     
+     # unused
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]),
 
      # Defender choke points (was 10)
      (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]), # team left flank
@@ -4519,10 +4523,9 @@ mission_templates = [ # not used in game
     (call_script, "script_remove_siege_objects"),
     (assign, "$gate_aggravator_agent", 1),]),
 
-  # Siege Tutorial
-
+# Siege Tutorial
   (6, 0 , ti_once, [
-      (eq, "$formations_tutorial", 3)],
+      (eq, "$formations_tutorial", 3), (neq, "$cheat_mode", 1)],
       [
       ] + (is_a_wb_mt==1 and [
       (tutorial_message_set_background, 1), 
@@ -4549,8 +4552,9 @@ mission_templates = [ # not used in game
     (assign, "$defender_team_3", 4),(assign, "$attacker_team_3", 5),
 	(try_for_range, ":chokepoint_slot", 0, 7), #reset all slots
 		(troop_set_slot,"trp_no_troop",":chokepoint_slot",0),
-	(try_end),		   
+	(try_end),
     ]), 
+    
     common_battle_tab_press,
   (ti_question_answered, 0, 0, [],[
     (store_trigger_param_1,":answer"),
@@ -4569,9 +4573,99 @@ mission_templates = [ # not used in game
       (finish_mission,0),
     ]),
 
+#assign initial teams
+   (3, 0, ti_once, [], 
+   [(try_for_agents, ":agent_no"),
+	(get_player_agent_no, ":player_agent"),
+	(agent_get_party_id, ":party_no", ":agent_no"),
+	(agent_get_troop_id, ":troop_id", ":agent_no"),
+    (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
+	(str_store_troop_name,s1, ":troop_id"),
+	(agent_get_entry_no, ":entry", 	":agent_no"), # spawn records, not actual entry number
+        (try_begin), #teleport player spawn agents to correct entry point
+              (eq, ":entry", 0),
+              (neq, ":agent_no", ":player_agent"), #player is teleported earlier
+              (entry_point_get_position, pos10, 48),
+              (agent_set_position, ":agent_no", pos10),
+              (agent_set_team, ":agent_no", 3), #they will be reassigned later
+        (try_end),
+        (try_begin),
+            (neg|agent_is_defender,":agent_no"),
+            (store_sub, ":team", ":entry", 12), #0, 1, 2
+            (val_mul, ":team", 2), # 0, 2, 4
+            (val_add, ":team", 1), # 1, 3, 5
+            (agent_set_team, ":agent_no", ":team"), #might not be needed anymore since attacker teams now charge, keep for archers
+            ] + (is_a_wb_mt==1 and [
+            (try_begin),
+                (neq, ":party_no", "p_main_party"),
+                (agent_get_class, ":class", ":agent_no"),
+                (eq, ":class", grc_archers),
+                (agent_get_wielded_item, ":weapon", ":agent_no", 0),
+                (gt, ":weapon", 0),
+                (item_get_type, ":type", ":weapon"),
+                (eq, ":type", itp_type_thrown),
+                (agent_set_division, ":agent_no", grc_infantry),
+            (try_end),  
+            ] or []) + [	            
+            (neg|agent_is_defender,":player_agent"),
+            (eq, ":party_no", "p_main_party"),
+            (team_set_relation, 6, 1, 1),(team_set_relation, 6, 3, 1),(team_set_relation, 6, 5, 1), # player team
+            (team_set_relation, 6, 0, -1),(team_set_relation, 6, 2, -1),(team_set_relation, 6, 4, -1),(team_set_relation, 6, 7, -1), # player team (seems to need manual settings)
+            (agent_set_team, ":agent_no", 6), 
+            (entry_point_get_position, pos10, 48),
+            (agent_set_position, ":agent_no", pos10),            
+        (else_try),
+            (agent_is_defender,":agent_no"),
+            (is_between, ":entry", 6, 9),
+            (store_sub, ":team", ":entry", 6), #0, 1, 2
+            (val_mul, ":team", 2), # 0, 2, 4
+            (agent_set_team, ":agent_no", ":team"),
+        (else_try),
+            (agent_is_defender,":player_agent"),
+            (is_between, ":entry", 3, 6), #entry 40 (spawn around player)
+            (eq, ":party_no", "p_main_party"),
+            (team_set_relation, 6, 1, -1),(team_set_relation, 6, 3, -1),(team_set_relation, 6, 5, -1), # player team
+            (team_set_relation, 6, 0, 1),(team_set_relation, 6, 2, 1),(team_set_relation, 6, 4, 1), # player team (seems to need manual settings)
+            (agent_set_team, ":agent_no", 6),
+        (try_end),
+         
+    (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 1),
+	(try_end),
+	]),
 
+#on spawn triggers
+  ] + (is_a_wb_mt==1 and [
+
+  (ti_on_agent_spawn, 0, 0, [], 
+    [
+    (store_trigger_param_1, ":agent_no"),
+    (set_fixed_point_multiplier, 100),    
+    (get_player_agent_no, ":player_agent"),
+    (try_begin),
+        # (agent_get_troop_id, ":troop_id", ":agent_no"),
+        # (eq, ":troop_id", "trp_player"),
+        # (display_message, "@player found"),
+        (eq, ":agent_no", ":player_agent"),
+        (neg|agent_is_defender,":agent_no"),
+        (entry_point_get_position, pos10, 48),
+        (position_move_z, pos10, 200),
+        (agent_set_position, ":agent_no", pos10),
+    (try_end),
+    
+    (try_begin), # reassign horse archers
+      (neq, ":agent_no", ":player_agent"),
+      (agent_get_troop_id, ":troop_id", ":agent_no"),
+      (troop_is_guarantee_horse, ":troop_id"),
+      (troop_is_guarantee_ranged, ":troop_id"),
+      (agent_set_division, ":agent_no", grc_archers),
+    (try_end),
+  
+    ]),
+  ] or []) + [
+
+
+#find and open retreat gates
    ] + (is_a_wb_mt==1 and [    
-  #find and open retreat gates
   (1, 0, ti_once, [],[
             (scene_prop_get_num_instances,":max_gates","spr_gate_destructible_retreat"), 
             (try_begin), #gates start
@@ -4611,74 +4705,6 @@ mission_templates = [ # not used in game
 
         ] or []) + [
 
-  ## WB Only - When a horse archer spawns, we set them to Archers, instead of Cavalry.
-
-  ] + (is_a_wb_mt==1 and [
-
-  (ti_on_agent_spawn, 0, 0, [], 
-    [
-      (store_trigger_param_1, ":is_horse_archer_agent"),
-      (get_player_agent_no, ":player_agent"),
-      (neq, ":is_horse_archer_agent", ":player_agent"),
-      (agent_get_troop_id, ":troop_id", ":is_horse_archer_agent"),
-      (troop_is_guarantee_horse, ":troop_id"),
-      (troop_is_guarantee_ranged, ":troop_id"),
-      (agent_set_division, ":is_horse_archer_agent", grc_archers),
-    ]),
-
-  ] or []) + [
-
-  ## End Horse Archer to Cavalry division
-
-   (4, 0, ti_once, [], #assign initial teams
-   [(try_for_agents, ":agent_no"),
-	(get_player_agent_no, ":player_agent"),
-	(agent_get_party_id, ":party_no", ":agent_no"),
-	(agent_get_troop_id, ":troop_id", ":agent_no"),
-    (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
-	(str_store_troop_name,s1, ":troop_id"),
-	(agent_get_entry_no, ":entry", 	":agent_no"), # spawn records, not actual entry number
-        (try_begin),
-            (neg|agent_is_defender,":agent_no"),
-            (store_sub, ":team", ":entry", 12), #0, 1, 2
-            (val_mul, ":team", 2), # 0, 2, 4
-            (val_add, ":team", 1), # 1, 3, 5
-            (agent_set_team, ":agent_no", ":team"), #might not be needed anymore since attacker teams now charge, keep for archers
-  ] + (is_a_wb_mt==1 and [
-            (try_begin),
-                (neq, ":party_no", "p_main_party"),
-                (agent_get_class, ":class", ":agent_no"),
-                (eq, ":class", grc_archers),
-                (agent_get_wielded_item, ":weapon", ":agent_no", 0),
-                (gt, ":weapon", 0),
-                (item_get_type, ":type", ":weapon"),
-                (eq, ":type", itp_type_thrown),
-                (agent_set_division, ":agent_no", grc_infantry),
-            (try_end),  
-     ] or []) + [	            
-            (neg|agent_is_defender,":player_agent"),
-            (eq, ":party_no", "p_main_party"),
-            (team_set_relation, 6, 1, 1),(team_set_relation, 6, 3, 1),(team_set_relation, 6, 5, 1), # player team
-            (team_set_relation, 6, 0, -1),(team_set_relation, 6, 2, -1),(team_set_relation, 6, 4, -1),(team_set_relation, 6, 7, -1), # player team (seems to need manual settings)
-            (agent_set_team, ":agent_no", 6), 
-        (else_try),
-            (agent_is_defender,":agent_no"),
-            (is_between, ":entry", 6, 9),
-            (store_sub, ":team", ":entry", 6), #0, 1, 2
-            (val_mul, ":team", 2), # 0, 2, 4
-            (agent_set_team, ":agent_no", ":team"),
-        (else_try),
-            (agent_is_defender,":player_agent"),
-            (is_between, ":entry", 3, 6), #entry 40 (spawn around player)
-            (eq, ":party_no", "p_main_party"),
-            (team_set_relation, 6, 1, -1),(team_set_relation, 6, 3, -1),(team_set_relation, 6, 5, -1), # player team
-            (team_set_relation, 6, 0, 1),(team_set_relation, 6, 2, 1),(team_set_relation, 6, 4, 1), # player team (seems to need manual settings)
-            (agent_set_team, ":agent_no", 6),
-        (try_end),
-    (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 1),
-	(try_end),
-	]),
-
   ## This block starts the commands of both attackers and defenders at the beginning of battle. (trigger_initial_commands)
   ## Both Attackers & Defenders are asked to move towards Entry Point 41, 42, 43
   ## Attacker Archers are asked to HOLD at entry point 60,61,62.
@@ -4708,6 +4734,7 @@ mission_templates = [ # not used in game
       (val_add,":atkteam",2),
       (val_add,":entry2",1),
     (try_end),
+    (team_give_order, 6, grc_everyone, mordr_follow), #player team
     (set_show_messages, 1),]),
   ## End of Starting Orders Block ##
 
@@ -5036,7 +5063,7 @@ mission_templates = [ # not used in game
    ## This block calls the script to move archers to archer positions. 
    ## In TLD, attacker archers are asked to hold ground in entry point 60, 61, and 62 if the right,left, center flanks have NOT been taken by the attackers
 
-  (5, 0, 0,[(is_between, "$defender_reinforcement_stage", 0, 15)],[(call_script, "script_siege_move_archers_to_archer_positions")]),
+  (5, 0, 0,[(gt, "$defender_reinforcement_stage", 0)],[(call_script, "script_siege_move_archers_to_archer_positions")]),
 
   common_battle_check_friendly_kills,
   common_battle_check_victory_condition,
@@ -5203,10 +5230,10 @@ mission_templates = [ # not used in game
   (try_end),
 						 
   (set_show_messages, 1),
-  (display_message, "@Attackers: {reg1}/{reg3}/{reg5}/{reg7} Defenders: {reg0}/{reg2}/{reg4}/{reg6}"),
+  #(display_message, "@Attackers: {reg1}/{reg3}/{reg5}/{reg7} Defenders: {reg0}/{reg2}/{reg4}/{reg6}"),
   (get_player_agent_no, ":player_agent_no"),
   (agent_get_team, reg7, ":player_agent_no"),
-  (display_message, "@player_team: {reg7}"),
+  #(display_message, "@player_team: {reg7}"),
   ]),
   
 ]),

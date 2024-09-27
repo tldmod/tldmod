@@ -1,4 +1,4 @@
-1995
+1993
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -90,7 +90,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-09-16_19:40___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-09-27_16:14___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -969,8 +969,6 @@ qstr_Last_attacker_wave._ Last_attacker_wave._Do_you_want_to_retreat?
 qstr_Attackers_almost_def Attackers_almost_defeated._Do_you_want_to_retreat?
 qstr_The_remaining_attack The_remaining_attackers_disperse!
 qstr_The_remaining_defend The_remaining_defenders_escape_from_the_siege!
-qstr_Attackers:_{reg1}/{r Attackers:_{reg1}/{reg3}/{reg5}/{reg7}_Defenders:_{reg0}/{reg2}/{reg4}/{reg6}
-qstr_player_team:_{reg7} player_team:_{reg7}
 qstr_Reached_Gauntlet_wav Reached_Gauntlet_wave_{reg1}!
 qstr_Ballista:_out_of_amm Ballista:_out_of_ammo!
 qstr_Ballista:_turn_CURSO Ballista:_turn_CURSOR,_aim_LSHIFT,_shoot_SPACE,_set_fire_T,_exit_F
