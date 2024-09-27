@@ -1373,13 +1373,13 @@ tld_ai_is_kicked = (0.2, 0, 0, [(eq,"$field_ai_lord",1)],
 #Attack/Block start
 tld_melee_ai = (0, 0, 0, [(eq,"$field_ai_lord",1),
 
-    (try_for_agents,":agent1"),
-       #TLD Check
-      (agent_get_troop_id, ":lord", ":agent1"),
-      (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
-      (this_or_next|eq, ":lord", "trp_nazgul"),
-      (eq, ":lord", "trp_black_numenorean_sorcerer"),
-    (try_end),
+    # (try_for_agents,":agent1"),
+       # #TLD Check
+      # (agent_get_troop_id, ":lord", ":agent1"),
+      # (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      # (this_or_next|eq, ":lord", "trp_nazgul"),
+      # (eq, ":lord", "trp_black_numenorean_sorcerer"),
+    # (try_end),
   ],
   [
     (store_mission_timer_a_msec, ":batch_time"),
