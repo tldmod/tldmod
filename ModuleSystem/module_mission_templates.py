@@ -4469,11 +4469,11 @@ mission_templates = [ # not used in game
     ## Kham - Distributed Teams using the mtef_team_X flag. 0, 2, 4 are defenders; 1, 3, 5 are attackers. 6 is for the gate. This allows for the attacker_team / defender_team globals to work.
     
     # Player initial spawn point, player teleports to 48 after spawn, this is to avoid a bug where all agents spawning at 48 would be shown as belonging to the player team
-     (1,mtef_attackers|0x00007000,af_override_horse,aif_start_alarmed,1,[]),
+     (1,mtef_attackers|0x00007000|mtef_use_exact_number,af_override_horse,aif_start_alarmed,1,[]),
      
-     #unused
-     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,0,[]),
-     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,0,[]),
+     #attacker initial archer spawn
+     (47,mtef_attackers|mtef_team_3|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
+     (49,mtef_attackers|mtef_team_3|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
      
      # Initial defender spawn point  																								  
      (40,mtef_defenders|0x00007000|mtef_use_exact_number,af_override_horse,aif_start_alarmed,1,[]),
@@ -4493,17 +4493,17 @@ mission_templates = [ # not used in game
      (46,mtef_defenders|mtef_team_4,af_override_horse,aif_start_alarmed,0,[]),
 
      # Attacker reinforcements (was 0)
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,7,[]), #entry 8 for add_reinforcements_to_entry - 12, Kham
-     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,7,[]),
-     (49,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,7,[]),
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,10,[]), #entry 8 for add_reinforcements_to_entry - 12, Kham
+     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,10,[]),
+     (49,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,10,[]),
 
      # defender archer target positions (was 40-43)
      (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team left flank
      (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
      (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
    (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-   (54,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team center
-     (55,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+   (54,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team center
+     (55,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
      (56,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team right flank
    (57,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
      (58,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
@@ -4582,20 +4582,24 @@ mission_templates = [ # not used in game
     (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
 	(str_store_troop_name,s1, ":troop_id"),
 	(agent_get_entry_no, ":entry", 	":agent_no"), # spawn records, not actual entry number
-        (try_begin), #teleport player spawn agents to correct entry point
+        
+        (try_begin), #teleport rogue player spawn agents to correct entry point
               (eq, ":entry", 0),
               (neq, ":agent_no", ":player_agent"), #player is teleported earlier
               (entry_point_get_position, pos10, 48),
               (agent_set_position, ":agent_no", pos10),
               (agent_set_team, ":agent_no", 3), #they will be reassigned later
         (try_end),
+        
         (try_begin),
             (neg|agent_is_defender,":agent_no"),
+            (neq, ":agent_no", ":player_agent"), #shouldn't be the case, but anyway
+            (is_between, ":entry", 12, 15),
             (store_sub, ":team", ":entry", 12), #0, 1, 2
             (val_mul, ":team", 2), # 0, 2, 4
             (val_add, ":team", 1), # 1, 3, 5
             (agent_set_team, ":agent_no", ":team"), #might not be needed anymore since attacker teams now charge, keep for archers
-            ] + (is_a_wb_mt==1 and [
+                ] + (is_a_wb_mt==1 and [
             (try_begin),
                 (neq, ":party_no", "p_main_party"),
                 (agent_get_class, ":class", ":agent_no"),
@@ -4606,7 +4610,7 @@ mission_templates = [ # not used in game
                 (eq, ":type", itp_type_thrown),
                 (agent_set_division, ":agent_no", grc_infantry),
             (try_end),  
-            ] or []) + [	            
+                ] or []) + [	            
             (neg|agent_is_defender,":player_agent"),
             (eq, ":party_no", "p_main_party"),
             (team_set_relation, 6, 1, 1),(team_set_relation, 6, 3, 1),(team_set_relation, 6, 5, 1), # player team
@@ -4622,7 +4626,7 @@ mission_templates = [ # not used in game
             (agent_set_team, ":agent_no", ":team"),
         (else_try),
             (agent_is_defender,":player_agent"),
-            (is_between, ":entry", 3, 6), #entry 40 (spawn around player)
+            (is_between, ":entry", 3, 6), #entry 40 (spawn around player) - currently disabled, except for player
             (eq, ":party_no", "p_main_party"),
             (team_set_relation, 6, 1, -1),(team_set_relation, 6, 3, -1),(team_set_relation, 6, 5, -1), # player team
             (team_set_relation, 6, 0, 1),(team_set_relation, 6, 2, 1),(team_set_relation, 6, 4, 1), # player team (seems to need manual settings)
@@ -4644,12 +4648,12 @@ mission_templates = [ # not used in game
     (try_begin),
         # (agent_get_troop_id, ":troop_id", ":agent_no"),
         # (eq, ":troop_id", "trp_player"),
-        # (display_message, "@player found"),
         (eq, ":agent_no", ":player_agent"),
         (neg|agent_is_defender,":agent_no"),
         (entry_point_get_position, pos10, 48),
-        (position_move_z, pos10, 200),
+        (position_move_y, pos10, 400),
         (agent_set_position, ":agent_no", pos10),
+        #(display_message, "@player repositioned"),
     (try_end),
     
     (try_begin), # reassign horse archers
