@@ -1796,9 +1796,9 @@ scene_props = [
    (ti_on_scene_prop_destroy, [
     (store_trigger_param_1, ":gate_no"),
     (prop_instance_get_starting_position, pos1, ":gate_no"),
-    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
-    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
-    (particle_system_burst,"psys_pistol_smoke",pos1,200),
+    (particle_system_burst,"psys_game_hoof_dust",pos1,40),
+    (particle_system_burst,"psys_dummy_smoke",pos1,30),
+    #(particle_system_burst,"psys_pistol_smoke",pos1,200),
     (position_rotate_x, pos1, 85),
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
@@ -1888,9 +1888,9 @@ scene_props = [
    (ti_on_scene_prop_destroy, [
     (store_trigger_param_1, ":gate_no"),
     (prop_instance_get_starting_position, pos1, ":gate_no"),
-    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
-    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
-    (particle_system_burst,"psys_pistol_smoke",pos1,200),
+    (particle_system_burst,"psys_game_hoof_dust",pos1,40),
+    (particle_system_burst,"psys_dummy_smoke",pos1,30),
+    #(particle_system_burst,"psys_pistol_smoke",pos1,200),
     (position_rotate_x, pos1, 95),
     (position_move_z, pos1, -100,1),
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
@@ -3011,9 +3011,9 @@ scene_props = [
    (ti_on_scene_prop_destroy, [
     (store_trigger_param_1, ":gate_no"),
     (prop_instance_get_starting_position, pos1, ":gate_no"),
-    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
-    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
-    (particle_system_burst,"psys_pistol_smoke",pos1,200),
+    (particle_system_burst,"psys_game_hoof_dust",pos1,40),
+    (particle_system_burst,"psys_dummy_smoke",pos1,30),
+    #(particle_system_burst,"psys_pistol_smoke",pos1,200),
     (position_rotate_x, pos1, 85),
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
@@ -3858,9 +3858,9 @@ scene_props = [
     (scene_prop_set_slot, ":gate_no", scene_prop_open_or_close_slot, 2),
     ] or []) + [
     (prop_instance_get_starting_position, pos1, ":gate_no"),
-    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
-    (particle_system_burst,"psys_village_fire_smoke_big",pos1,200),
-    (particle_system_burst,"psys_pistol_smoke",pos1,200),
+    (particle_system_burst,"psys_game_hoof_dust",pos1,40),
+    (particle_system_burst,"psys_dummy_smoke",pos1,30),
+    #(particle_system_burst,"psys_pistol_smoke",pos1,200),
     (position_rotate_x, pos1, -180),
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
@@ -3940,7 +3940,7 @@ scene_props = [
    (ti_on_scene_prop_destroy, [
     (store_trigger_param_1, ":gate_no"),
     (prop_instance_get_starting_position, pos1, ":gate_no"),
-    (particle_system_burst,"psys_village_fire_smoke_big",pos1,10),
+    (particle_system_burst,"psys_dummy_smoke",pos1,10),
     (position_rotate_x, pos1, -80),
     (position_move_z, pos1, -200,1),
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
@@ -4023,7 +4023,7 @@ scene_props = [
    (ti_on_scene_prop_destroy, [
     (store_trigger_param_1, ":gate_no"),
     (prop_instance_get_starting_position, pos1, ":gate_no"),
-    (particle_system_burst,"psys_village_fire_smoke_big",pos1,10),
+    (particle_system_burst,"psys_dummy_smoke",pos1,10),
     (position_rotate_x, pos1, -80),
     (position_move_z, pos1, -200,1),
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
@@ -5349,7 +5349,7 @@ scene_props = [
     ])]),
             
 ] + (is_a_wb_sceneprop==1 and [ 
-  ("fellbeast", sokf_moveable|sokf_dynamic_physics, "Fellbeast_Flap_1", "bo_Fellbeast_Flap_1", [
+  ("fellbeast", sokf_moveable|sokf_dynamic_physics, "Fellbeast_FlyAnim", "bo_woron_flight", [
     (ti_on_scene_prop_init,[
       (store_trigger_param_1, ":instance_no"),
       (store_random_in_range, ":var3", 0, 16),
@@ -5357,7 +5357,7 @@ scene_props = [
       (val_mul, ":var3", 200),
       (scene_prop_set_slot, ":instance_no", 39, ":var3"), #height offset
       (scene_prop_set_slot, ":instance_no", 43, 11), #dead frame
-      (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 29, 1500),
+      (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 35, 1500),
       (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_1, 50),
       (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_2, 500),
       (assign, "$nazgul_in_battle", ":instance_no"),
@@ -5400,6 +5400,7 @@ scene_props = [
 ("water_stream_b",0,"water_stream_b","bo_water_stream_b", []),
 ("water_way",0,"water_way","bo_isen_forge", []),
 ("barrel_water",0,"barrel_water","bo_barrel_a_repositioned", []),
+("bridge_b",0,"bridge_b","bo_bridge_b", []),
 
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),
