@@ -1,4 +1,4 @@
-1738
+1736
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -756,8 +756,6 @@ qstr_Last_attacker_wave._ Last_attacker_wave._Do_you_want_to_retreat?
 qstr_Attackers_almost_def Attackers_almost_defeated._Do_you_want_to_retreat?
 qstr_The_remaining_attack The_remaining_attackers_disperse!
 qstr_The_remaining_defend The_remaining_defenders_escape_from_the_siege!
-qstr_Attackers:_{reg1}/{r Attackers:_{reg1}/{reg3}/{reg5}/{reg7}_Defenders:_{reg0}/{reg2}/{reg4}/{reg6}
-qstr_player_team:_{reg7} player_team:_{reg7}
 qstr_Reached_Gauntlet_wav Reached_Gauntlet_wave_{reg1}!
 qstr_Ballista:_out_of_amm Ballista:_out_of_ammo!
 qstr_Ballista:_turn_CURSO Ballista:_turn_CURSOR,_aim_LSHIFT,_shoot_SPACE,_set_fire_T,_exit_F

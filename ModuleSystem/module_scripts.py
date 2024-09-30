@@ -15448,11 +15448,13 @@ scripts = [
 		(else_try), # when archer is an attacker
             (neg|agent_is_defender, ":agent_no"),
 			(agent_get_ammo,":ammo",":agent_no"),
+            (agent_get_team, ":team", ":agent_no"),
+            (neq, ":team", 6), #don't auto-reassign player team archers              
 			(try_begin),
-				(lt,":ammo",2),               
+				(lt,":ammo",2),
 				(agent_clear_scripted_mode, ":agent_no"),
 				(agent_ai_set_always_attack_in_melee, ":agent_no", 1),
-                ] + (is_a_wb_script==1 and [
+                ] + (is_a_wb_script==1 and [              
                 (agent_set_division, ":agent_no", grc_infantry),
 			    (agent_force_rethink, ":agent_no"),
 			    ] or []) + [
@@ -15463,9 +15465,6 @@ scripts = [
                 (agent_clear_scripted_mode, ":agent_no"),
 				(agent_ai_set_always_attack_in_melee, ":agent_no", 1),
                 ] + (is_a_wb_script==1 and [
-                (agent_force_rethink, ":agent_no"),
-                (agent_get_team, ":team", ":agent_no"),
-                (neq, ":team", 6), #don't auto-reassign player team archers
                 (agent_set_division, ":agent_no", grc_infantry),
 			    (agent_force_rethink, ":agent_no"),
 			    ] or []) + [
