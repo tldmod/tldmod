@@ -435,6 +435,7 @@ tournament_triggers = [
 nazgul_sweeps = (4,1.2,5,[
 	#(this_or_next|key_is_down, key_n),
 	(gt,"$nazgul_in_battle",0),
+    (eq, 0, 1), #disabled
 	(store_random_in_range,reg0,0,100),
 	#(this_or_next|key_is_down, key_n),
 	#(le,reg0,"$nazgul_in_battle"), 

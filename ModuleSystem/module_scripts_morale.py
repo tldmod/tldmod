@@ -1359,7 +1359,7 @@ morale_scripts = [
 	# Nazgul penalty
 	(try_begin),
 		(gt, "$nazgul_in_battle", 0),
-		(store_mul, ":nazgul_penalty", "$nazgul_in_battle", 15),
+		(assign, ":nazgul_penalty", 15),
 		(get_player_agent_no, ":player"),
 		(agent_get_team, ":player_team", ":player"),
 		(try_begin),

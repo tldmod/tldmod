@@ -2112,6 +2112,7 @@ mission_templates = [ # not used in game
 	(ti_before_mission_start, 0, 0, [],[(team_set_relation, 0, 2, 1),(team_set_relation, 1, 3, 1),(call_script, "script_place_player_banner_near_inventory_bms")]),
 	(0,0,ti_once,[],[
 			(assign,"$battle_won",0),
+            (assign, "$nazgul_in_battle", 0),
 			(assign,"$defender_reinforcement_stage",0),
 			(assign,"$attacker_reinforcement_stage",0),
 			(assign,"$g_presentation_battle_active", 0),
@@ -4889,6 +4890,7 @@ mission_templates = [ # not used in game
         #don't spawn defenders if attacking player is nearby, also check for spawn point taken
         (try_begin),
             #block spawn point
+            (neg|troop_slot_eq,"trp_no_troop",":slot",-2),
             (neg|agent_is_defender,":player_agent"),
             (entry_point_get_position, pos10, ":entry_number"),
             (agent_get_position, pos0, ":player_agent"),
@@ -4899,7 +4901,6 @@ mission_templates = [ # not used in game
 
             #check for team defeated
             (troop_slot_eq,"trp_no_troop",":slot",-1), #only if choke point is taken
-            (neg|troop_slot_eq,"trp_no_troop",":slot",-2),
             (assign, ":enemies_left", 0),
             (try_for_agents, ":enemies", pos10, 1500),
                 (agent_is_alive, ":enemies"),
