@@ -4554,6 +4554,16 @@ mission_templates = [ # not used in game
 	(try_for_range, ":chokepoint_slot", 0, 7), #reset all slots
 		(troop_set_slot,"trp_no_troop",":chokepoint_slot",0),
 	(try_end),
+    ] + (is_a_wb_mt==1 and [
+	(try_for_range, ":defender_spawn", 44, 47),
+		(entry_point_get_position, pos10, ":defender_spawn"),
+        (position_set_z_to_ground_level, pos10),
+        (position_move_z, pos10, 300),
+        (set_spawn_position, pos10),
+        (spawn_scene_prop, "spr_banner_stand_auto"),
+        (scene_prop_set_slot, reg0, slot_prop_sound, ":defender_spawn"),
+	(try_end),
+    ] or []) + [
     
     #initialize player team
     (get_player_agent_no, ":player_agent"),
@@ -4628,13 +4638,14 @@ mission_templates = [ # not used in game
                 (eq, ":type", itp_type_thrown),
                 (agent_set_division, ":agent_no", grc_infantry),
             (try_end),  
-                ] or []) + [	            
+                ] or []) + [
             (neg|agent_is_defender,":player_agent"),
             (eq, ":party_no", "p_main_party"),
             (entry_point_get_position, pos10, 48),
             (store_random_in_range, ":rand", 0, 10),
             (gt, ":rand", 4),
-            (agent_set_team, ":agent_no", 6),             
+            (agent_set_team, ":agent_no", 6),
+            (position_move_y, pos10, -100),
             (agent_set_position, ":agent_no", pos10),
         (else_try),
             (agent_is_defender,":agent_no"),
@@ -4646,8 +4657,9 @@ mission_templates = [ # not used in game
             (store_random_in_range, ":rand", 0, 10),
             (gt, ":rand", 5),            
             (agent_set_team, ":agent_no", 6),
-            (entry_point_get_position, pos10, 40),            
-            (agent_set_position, ":agent_no", pos10),            
+            (entry_point_get_position, pos10, 40),
+            (position_move_y, pos10, -100),
+            (agent_set_position, ":agent_no", pos10),
         (else_try),
             (agent_is_defender,":player_agent"),
             (is_between, ":entry", 3, 6), #entry 40 (spawn around player) - currently disabled, except for player
@@ -4676,7 +4688,7 @@ mission_templates = [ # not used in game
         (agent_set_team, ":agent_no", 6),
         (neg|agent_is_defender,":agent_no"),
         (entry_point_get_position, pos10, 48),
-        (position_move_y, pos10, 400),
+        #(position_move_y, pos10, 200),
         (agent_set_position, ":agent_no", pos10),
         #(display_message, "@player repositioned"),
     (try_end),
@@ -4901,6 +4913,7 @@ mission_templates = [ # not used in game
 
             #check for team defeated
             (troop_slot_eq,"trp_no_troop",":slot",-1), #only if choke point is taken
+            #(ge,"$defender_reinforcement_stage", 6),
             (assign, ":enemies_left", 0),
             (try_for_agents, ":enemies", pos10, 1500),
                 (agent_is_alive, ":enemies"),
@@ -4925,6 +4938,20 @@ mission_templates = [ # not used in game
                 (eq, ":agent_cs", 0),
                 (agent_set_look_target_position, ":friends", pos0),
                 (agent_set_animation, ":friends", "anim_cheer_player"),
+            (try_end),
+            #BURN THE BANNER!
+            (try_for_prop_instances, ":banner_stand", "spr_banner_stand_auto"),
+                (scene_prop_slot_eq, ":banner_stand", slot_prop_sound, ":entry_number"),
+                (prop_instance_get_position, pos10, ":banner_stand"),
+                (position_move_z, pos10, -50),
+                (set_spawn_position, pos10),
+                (spawn_scene_prop, "spr_fire_big"),
+                
+                (spawn_scene_prop, "spr_flue_smoke_tall"),
+                (position_move_z, pos10, -50),
+                (set_spawn_position, pos10),
+                (spawn_scene_prop, "spr_fire_big"),
+                (prop_instance_play_sound, reg0, "snd_fire_loop", 0),
             (try_end),
         (try_end), 
         ] or []) + [
@@ -4993,7 +5020,7 @@ mission_templates = [ # not used in game
         (assign,":defteam","$defender_team"), #0, 2, 4
         (assign,":entry_number", 44), # 44,45,46 --> actual entry point
         (get_player_agent_no, ":player_agent"),
-        (try_for_range,":team",0,3), #cycle through defender teams, check if depleted and reinforce
+        (try_for_range,":team",0,3),
             (troop_slot_eq,"trp_no_troop",":team",-1),
             (entry_point_get_position, pos10, ":entry_number"),
             (team_give_order, ":defteam", grc_infantry, mordr_hold), 

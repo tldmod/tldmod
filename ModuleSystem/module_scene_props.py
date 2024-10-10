@@ -1136,8 +1136,8 @@ scene_props = [
 #("church_a",0,"church_a","bo_church_a", []),
 #("church_tower_a",0,"church_tower_a","bo_church_tower_a", []),
 ("stone_step_a",0,"floor_stone_a","bo_floor_stone_a", []),
-("stone_step_b",0,"stone_step_b","0", []),
-("stone_step_c",0,"stone_step_c","0", []),
+("stone_step_b",0,"stone_step_b_new","0", []),
+("stone_step_c",0,"stone_step_c_new","0", []),
 ("stone_heap",0,"stone_heap","bo_stone_heap", []),
 ("stone_heap_b",0,"stone_heap_b","bo_stone_heap", []),
 
@@ -5401,6 +5401,17 @@ scene_props = [
 ("water_way",0,"water_way","bo_isen_forge", []),
 ("barrel_water",0,"barrel_water","bo_barrel_a_repositioned", []),
 ("bridge_b",0,"bridge_b","bo_bridge_b", []),
+
+("banner_stand_auto",0,"battle_banner_stand_a_auto","0", [(ti_on_init_scene_prop,[
+    (party_get_slot, ":cur_leader", "$current_town", slot_town_lord),
+    (troop_get_slot, ":troop_banner_object", ":cur_leader", slot_troop_banner_scene_prop),
+    (gt, ":troop_banner_object", 0),
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+    ] + (is_a_wb_sceneprop==1 and [ 
+    (spawn_scene_prop, ":troop_banner_object"),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    ] or []) + [
+    ])]),
 
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),

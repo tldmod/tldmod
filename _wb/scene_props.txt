@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 2091
+ 2092
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -1859,10 +1859,10 @@ spr_bridge_modular_b_E 0 0 bridge_modular_b 0 0
 spr_stone_step_a 0 0 floor_stone_a bo_floor_stone_a 0
 
 
-spr_stone_step_b 0 0 stone_step_b 0 0
+spr_stone_step_b 0 0 stone_step_b_new 0 0
 
 
-spr_stone_step_c 0 0 stone_step_c 0 0
+spr_stone_step_c 0 0 stone_step_c_new 0 0
 
 
 spr_stone_heap 0 0 stone_heap bo_stone_heap 0
@@ -6429,6 +6429,10 @@ spr_barrel_water 0 0 barrel_water bo_barrel_a_repositioned 0
 
 
 spr_bridge_b 0 0 bridge_b bo_bridge_b 0
+
+
+spr_banner_stand_auto 0 0 battle_banner_stand_a_auto 0 1
+-40  8 521 3 1224979098644774912 144115188075856029 7 520 3 1224979098644774913 1224979098644774912 13 32 2 1224979098644774913 0 2071 1 1224979098644774914 1850 2 1 1224979098644774914 1970 1 1 1974 1 1224979098644774913 510 3 1224979098644774914 1 72057594037927936 
 
 
 spr_save_compartibility4 0 0 0 0 0
