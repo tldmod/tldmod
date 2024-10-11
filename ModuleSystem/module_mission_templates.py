@@ -4700,7 +4700,19 @@ mission_templates = [ # not used in game
       (troop_is_guarantee_ranged, ":troop_id"),
       (agent_set_division, ":agent_no", grc_archers),
     (try_end),
-  
+ 
+    (try_begin), # directly assign some player troops to player, but only if choke point is taken
+        (neq, ":agent_no", ":player_agent"),
+        (neg|agent_is_defender,":agent_no"),
+        (neg|agent_is_defender,":player_agent"),
+        (agent_get_party_id, ":party_no", ":agent_no"),
+        (agent_get_team, ":team", ":agent_no"), #1, 3, 5
+        (store_div,":slot",":team",2), #0, 1, 2
+        (troop_slot_eq,"trp_no_troop",":slot",-1),
+        (eq, ":party_no", "p_main_party"),
+        (agent_set_team, ":agent_no", 6),
+    (try_end),
+ 
     ]),
   ] or []) + [
 
