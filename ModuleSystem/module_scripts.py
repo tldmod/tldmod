@@ -1963,6 +1963,11 @@ scripts = [
       (call_script, "script_get_player_party_morale_values"),
       (party_set_morale, "p_main_party", reg0),
 
+      #Piggyback for item score
+      ] + (is_a_wb_script==1 and [
+        (call_script, "script_init_item_score"),
+        ] or []) + [
+
 # assigning game global variables
 	(assign, "$g_fangorn_rope_pulled", 0),
 	#(assign, "$g_ent_seen", 0),

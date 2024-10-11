@@ -1436,12 +1436,7 @@ simple_triggers = [
   
   # (37) Updating player icon in every frame
   (0,[
-      
-      #Piggyback for item score
-      ] + (is_a_wb_trigger==1 and [
-        (call_script, "script_init_item_score"),
-        ] or []) + [
-      
+  
       (troop_get_inventory_slot, ":cur_horse", "trp_player", ek_horse), #horse slot
       # determine if archer or not
       
