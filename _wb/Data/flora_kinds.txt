@@ -1141,7 +1141,7 @@ wheat_group 0 5
  wheat_group_c  0
  wheat_group_d  0
  wheat_group_e  0
-misc_farm 0 8
+misc_farm 0 9
  straw_a  0
  straw_b  0
  straw_c  0
@@ -1150,6 +1150,7 @@ misc_farm 0 8
  Gutek_straw_c  0
  wheelbarrow  bo_wheelbarrow
  ado_wood_wheelbarrow  bo_ado_wood_wheelbarrow
+ basket_earth  bo_apple_basket
 misc_pottery 0 5
  jug_new_repositioned  0
  honey_pot_new_repositioned  0
@@ -1192,19 +1193,18 @@ misc_vegetables 0 6
  marrow_b  0
  gourd_new  0
  cabbage  0
-containers_food 0 6
+misc_containers_food 0 6
  apple_basket_new  bo_apple_basket
  basket_grain  bo_apple_basket
  CWE_kitchen_herbs_a  0
  CWE_kitchen_herbs_b  0
  CWE_kitchen_herbs_c  0
  CWE_kitchen_herbs_d  0
-misc_baskets 0 5
+misc_baskets 0 4
  basket_a  bo_basket_a
  korzina_1  bo_korzina_1
  basket_cloth  bo_apple_basket
  basket_grain  bo_apple_basket
- basket_earth  bo_apple_basket
 misc_barrels 0 5
  barrel_a_repositioned  bo_barrel_a_repositioned
  barrel_b_repositioned  bo_barrel_a_repositioned

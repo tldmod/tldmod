@@ -1349,7 +1349,8 @@ fauna_kinds = [
    ['Gutek_straw_b', '0'],
    ['Gutek_straw_c', '0'],
    ['wheelbarrow', 'bo_wheelbarrow'], 
-   ['ado_wood_wheelbarrow', 'bo_ado_wood_wheelbarrow'], 
+   ['ado_wood_wheelbarrow', 'bo_ado_wood_wheelbarrow'],   
+   ['basket_earth', 'bo_apple_basket'],
    ]),
 
  ('misc_pottery',
@@ -1407,7 +1408,7 @@ fauna_kinds = [
    ['cabbage', '0'],
    ]), 
    
- ('containers_food',
+ ('misc_containers_food',
   0,
   [['apple_basket_new', 'bo_apple_basket'],
    ['basket_grain', 'bo_apple_basket'],
@@ -1422,8 +1423,7 @@ fauna_kinds = [
   [['basket_a', 'bo_basket_a'],
    ['korzina_1', 'bo_korzina_1'],
    ['basket_cloth', 'bo_apple_basket'],
-   ['basket_grain', 'bo_apple_basket'],
-   ['basket_earth', 'bo_apple_basket'],]),
+   ['basket_grain', 'bo_apple_basket'],]),
    
  ('misc_barrels',
   0,

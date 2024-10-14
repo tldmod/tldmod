@@ -1752,7 +1752,7 @@ scene_props = [
   ("rohan_wall_stair_E",0,"rohan_wall_stair","0", []),
 ("rohan_long_stair",0,"rohan_long_stair","bo_rohan_long_stair", []),
   ("rohan_long_stair_E",0,"rohan_long_stair","0", []),
-("rohan_wall"      ,0,"rohan_wall"      ,"bo_rohan_wall"      , []),
+("rohan_wall"      ,0,"rohan_wall_curved"      ,"bo_rohan_wall_curved"      , []),
   ("rohan_wall_E"      ,0,"rohan_wall"      ,"0"      , []),
 
 #Helms Deep
@@ -3324,7 +3324,7 @@ scene_props = [
 ( "Gutek_straw_a"                              ,0,"Gutek_straw_a","0",[]),
 ( "Gutek_straw_b"                              ,0,"Gutek_straw_b","0",[]),
 ( "Gutek_straw_c"                              ,0,"Gutek_straw_c","0",[]),
-( "Gutek_cart"                                 ,0,"Gutek_cart","bocart",[]),
+( "Gutek_cart"                                 ,0,"Gutek_cart","bo_cart_new",[]),
 ( "Gutek_awning_d"                             ,0,"Gutek_awning_d","bo_awning_d",[]),
 ( "Gutek_stand_cloth"                          ,0,"Gutek_stand_cloth","bo_stand_cloth",[]),
 ( "Gutek_stand_thatched"                       ,0,"Gutek_stand_thatched","bo_stand_thatched",[]),

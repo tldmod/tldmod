@@ -3110,7 +3110,7 @@ spr_rohan_long_stair 0 0 rohan_long_stair bo_rohan_long_stair 0
 spr_rohan_long_stair_E 0 0 rohan_long_stair 0 0
 
 
-spr_rohan_wall 0 0 rohan_wall bo_rohan_wall 0
+spr_rohan_wall 0 0 rohan_wall_curved bo_rohan_wall_curved 0
 
 
 spr_rohan_wall_E 0 0 rohan_wall 0 0
@@ -5329,7 +5329,7 @@ spr_Gutek_straw_b 0 0 Gutek_straw_b 0 0
 spr_Gutek_straw_c 0 0 Gutek_straw_c 0 0
 
 
-spr_Gutek_cart 0 0 Gutek_cart bocart 0
+spr_Gutek_cart 0 0 Gutek_cart bo_cart_new 0
 
 
 spr_Gutek_awning_d 0 0 Gutek_awning_d bo_awning_d 0
