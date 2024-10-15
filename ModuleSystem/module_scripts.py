@@ -24833,6 +24833,7 @@ command_cursor_scripts = [
 		(try_end),
 	(else_try),
 		(neq, ":party_id", "p_main_party"),
+        (party_set_extra_text, ":party_id", "str_empty_string"), #just to be sure any extra text doesn't reappear if party ID is reused
 		(remove_party, ":party_id"),
 		(try_begin),
 			(eq, "$cheat_mode",1),
