@@ -97,7 +97,7 @@ scenes = [
   ("west_osgiliath_center"  ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000003300005000009c5a200000f5200005bd50000739d",[],[],"New_outer_terrain_osgiliath_9"),
   ("henneth_annun_center"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000002b4ac00002ccd800026dc00000c1d",[],[],"outer_mountains2south"),
   ("cair_andros_center"     ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000330000500000d23480000059a00007fc80000617e",[],[],"New_outer_terrain_osgiliath_9"),
-  ("edoras_center"          ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000003200005000009c5a200000f5200005bd50000739d",[],[],"outer_terrain_rohan"),
+  ("edoras_center"          ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x0000000120000500800d234800000f520000324600001132",[],[],"outer_terrain_rohan"), 
   ("aldburg_center"         ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000032007956000025896000037e800000e860000674b",[],[],"outer_mountains2south"),
   ("hornburg_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,        "0x0000000330000500000d234800006228000053bf00004eb9",[],[],"outer_terrain_helms_deep"),
   #("hornburg_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,        "0x00001d63c005114300006228000053bf00004eb9",[],[],"outer_mountains2south"),
@@ -305,7 +305,7 @@ scenes = [
 ("pinnath_gelin_siege" ,sf_generate,"none","none",(0,0),(200,200),-100,        "0x300416a600035cd600007ee80000012100003fbc",[],[],"outer_terrain_plain"),
 ("ethring_siege"       ,sf_generate,"none","none",(0,0),(200,200),-100,"0x000000042005591e00040506000059a100002cd500005052",[],[],"outer_terrain_steppe"),
 ("west_osgiliath_siege",sf_generate,"none","none",(0,0),(200,200),-100,"0x00000003300005000009c5a200000f5200005bd50000739d",[],[],"New_outer_terrain_osgiliath_9"), #0x00000003300005000009c65e00000f5200005bd50000739d
-("edoras_siege"        ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007200005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_rohan"),
+("edoras_siege"        ,sf_generate,"none","none",(0,0),(200,200),-100,"0x0000000120000500800d234800000f520000324600001132",[],[],"outer_terrain_rohan"),
 ("aldburg_siege"       ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000072007956000025896000037e800000e860000674b",[],[],"outer_mountains2south"),
 ("hornburg_siege"      ,sf_generate,"none","none",(0,0),(100,100),-100,        "0x0000000330000500000d234800006228000053bf00004eb9",[],[],"outer_terrain_helms_deep"),
 #("hornburg_siege"      ,sf_generate,"none","none",(0,0),(100,100),-100,        "0x00001d63c005114300006228000053bf00004eb9",[],[],"outer_mountains2south"),
