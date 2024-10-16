@@ -13453,6 +13453,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                 (position_move_z, pos4, 50), #just to make sure we aren't put underground
                 (get_player_agent_no, ":player_agent"),
                 (agent_set_position, ":player_agent", pos4),
+                (assign, "$talk_context", 0),
                 (call_script,"script_stand_back"),
                 ]],
 
@@ -13480,6 +13481,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                 [] + (is_a_wb_dialog and [
                 (set_conversation_speaker_agent, "$temp"),
                 ] or []) + [ 
+                (assign, "$talk_context", 0),
                 (call_script,"script_stand_back"),]],
 
 ] + (is_a_wb_dialog and [
