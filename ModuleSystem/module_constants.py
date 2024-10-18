@@ -2323,7 +2323,7 @@ tld_party_count_option_med_crash	= 950
 
 # Hero parties smaller than this will not siege...
 
-tld_siege_min_party_size		= 100
+tld_siege_min_party_size		= 50
 
 # Constants for defiled item meshes...
 

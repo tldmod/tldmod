@@ -3010,6 +3010,19 @@ scripts = [
 					(try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
 						(party_slot_ge, ":root_defeated_party", slot_center_destroy_on_capture, 1),
 						(call_script, "script_destroy_center", ":root_defeated_party"),
+                        
+                        (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end), #InVain: Maybe this helps avoid parties continuing to attack destroyed centers
+                            (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
+                            #(troop_slot_eq, ":troop_no", slot_troop_is_prisoner, 0),
+                            (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
+                            (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
+                            (gt, ":party_no", 0),
+                            (party_slot_eq, ":party_no", slot_party_ai_state, spai_besieging_center),
+                            (party_slot_eq, ":party_no", slot_party_ai_object, ":root_defeated_party"),
+                            #(party_slot_eq, ":party_no", slot_party_ai_substate, 1),
+                            (call_script, "script_party_set_ai_state", ":party_no", spai_undefined, -1),
+                        (try_end),
+                        
 					(else_try),
 						(call_script, "script_give_center_to_faction", ":root_defeated_party", ":winner_faction"),
 						(call_script, "script_order_best_besieger_party_to_guard_center", ":root_defeated_party", ":winner_faction"),
