@@ -1686,11 +1686,28 @@ ai_scripts = [
             (try_end),
             (this_or_next|eq, ":other_besieger_party", -1),
             (eq, ":besieger_own_faction", 1),
+            
             (call_script, "script_get_center_faction_relation_including_player", ":enemy_walled_center", ":faction_no"),
             (assign, ":reln", reg0),
             (lt, ":reln", 0),
             (val_mul, ":reln", -1),
             (val_add, ":reln", 50),
+            
+            #check for siegeability flag //InVain
+            (faction_get_slot, ":center_faction_strength", ":enemy_walled_center_faction", slot_faction_strength),
+            (party_get_slot, ":siegable", ":enemy_walled_center", slot_center_siegability),
+            
+            (neq, ":siegable", tld_siegable_never),
+            (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
+            (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
+            (lt, ":center_faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
+            #MV: if it's a faction capital, the enemy needs to be very weak
+            (store_sub, ":capital_siegable_str", "$g_fac_str_siegable", fac_str_weak-fac_str_very_weak), #-1000
+            (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
+            (this_or_next|lt, ":center_faction_strength", ":capital_siegable_str"),
+            (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
+            (neq, ":siegable", tld_siegable_capital), #if a capital, needs also fac_str_very_weak
+            
             #(store_distance_to_party_from_party, ":dist", ":enemy_walled_center", ":party_no"),
             (call_script, "script_get_tld_distance", ":enemy_walled_center", ":party_no"),
             (assign, ":dist", reg0),

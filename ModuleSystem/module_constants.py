@@ -1562,7 +1562,7 @@ garrison_limit_evil_low  = garrison_limit_low*120/100 #not used
 garrison_limit_evil_med  = garrison_limit_med #*120/100
 garrison_limit_evil_high = garrison_limit_high #*150/100
 
-# Siegability flag values
+# Siegability flag values (slot_center_siegability)
 tld_siegable_always  = 1  # siege if attstr>fac_str_ok
 tld_siegable_normal  = 2  # siege if attstr>fac_str_ok and defstr<fac_str_weak
 tld_siegable_capital = 3  # capital, siege if attstr>fac_str_ok and defstr<fac_str_very_weak; may be redundant, but gives some flexibility
