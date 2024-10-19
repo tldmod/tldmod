@@ -271,9 +271,9 @@ soundsfile version 2
  man_death_46.wav 160
  man_death_48.wav 160
  man_death_64.wav 160
- man_excercise_1.wav 1120
- man_excercise_2.wav 1120
- man_excercise_4.wav 1120
+ man_excercise_1.wav 608
+ man_excercise_2.wav 608
+ man_excercise_4.wav 608
  man_ugh_1.wav 2096
  man_ugh_2.wav 2096
  man_ugh_4.wav 2096
@@ -281,12 +281,12 @@ soundsfile version 2
  man_ugh_12.wav 2096
  man_ugh_13.wav 2096
  man_ugh_17.wav 2096
- man_grunt_1.wav 2128
- man_grunt_2.wav 2128
- man_grunt_3.wav 2128
- man_grunt_5.wav 2128
- man_grunt_13.wav 2128
- man_grunt_14.wav 2128
+ man_grunt_1.wav 1104
+ man_grunt_2.wav 1104
+ man_grunt_3.wav 1104
+ man_grunt_5.wav 1104
+ man_grunt_13.wav 1104
+ man_grunt_14.wav 1104
  man_yell_4.wav 2144
  man_yell_4_2.wav 2144
  man_yell_7.wav 2144
@@ -407,8 +407,8 @@ soundsfile version 2
  orc_hit_7.wav 2672
  orc_hit_9.wav 2672
  orc_hit_10.wav 2672
- orc_grunt_1.wav 1120
- orc_grunt_long_1.wav 2128
+ orc_grunt_1.wav 608
+ orc_grunt_long_1.wav 1104
  orc_yell_1.wav 2144
  orc_yell_2.wav 2144
  orc_victory_1.wav 2640
@@ -432,13 +432,13 @@ soundsfile version 2
  uruk_hit_07.wav 2672
  uruk_hit_08.wav 2672
  uruk_hit_09.wav 2672
- uruk_shortyell_01.wav 2128
- uruk_shortyell_02.wav 2128
- uruk_shortyell_03.wav 2128
- uruk_shortyell_04.wav 2128
- uruk_shortyell_05.wav 2128
- uruk_shortyell_06.wav 2128
- uruk_shortyell_07.wav 2128
+ uruk_shortyell_01.wav 1104
+ uruk_shortyell_02.wav 1104
+ uruk_shortyell_03.wav 1104
+ uruk_shortyell_04.wav 1104
+ uruk_shortyell_05.wav 1104
+ uruk_shortyell_06.wav 1104
+ uruk_shortyell_07.wav 1104
  uruk_yell_01.wav 2144
  uruk_yell_02.wav 2144
  uruk_yell_03.wav 2144
@@ -570,27 +570,27 @@ soundsfile version 2
  horse_snort_4.wav 1872
  horse_snort_5.wav 1872
  spear_trap.wav 2416
- elf_elfsong.wav 1921
- moria_loop.wav 903
- henneth_loop.wav 903
- good_forest_loop.wav 903
- evil_forest_loop.wav 903
- water_waves_loop.wav 903
- water_splash_loop.wav 903
- water_wavesplash_loop.wav 903
- wind_loop.wav 903
- isen_loop.wav 903
- evil_men_loop.wav 1159
- beast_loop.wav 903
- morgul_loop.wav 903
- gondor_people_loop.wav 903
- rohan_people_loop.wav 903
- dwarf_men_loop.wav 903
- harad_loop.wav 1159
- evil_flies_loop.wav 903
- night_loop.wav 903
- neutral_forest_loop.wav 903
- fangorn_loop.wav 903
+ elf_elfsong.wav 1920
+ moria_loop.wav 902
+ henneth_loop.wav 902
+ good_forest_loop.wav 902
+ evil_forest_loop.wav 902
+ water_waves_loop.wav 902
+ water_splash_loop.wav 902
+ water_wavesplash_loop.wav 902
+ wind_loop.wav 902
+ isen_loop.wav 902
+ evil_men_loop.wav 1158
+ beast_loop.wav 902
+ morgul_loop.wav 902
+ gondor_people_loop.wav 902
+ rohan_people_loop.wav 902
+ dwarf_men_loop.wav 902
+ harad_loop.wav 1158
+ evil_flies_loop.wav 902
+ night_loop.wav 902
+ neutral_forest_loop.wav 902
+ fangorn_loop.wav 902
  good_eagle01.wav 1152
  d_blacksmith2.wav 1152
  good_workshop.wav 1152
@@ -630,7 +630,6 @@ soundsfile version 2
  morgul02.wav 1152
  osgiliath01.wav 1152
  osgiliath03.wav 1152
- gondor_army.wav 1152
  horse_exterior_whinny_01.wav 0
  horse_exterior_whinny_02.wav 0
  horse_exterior_whinny_03.wav 0
@@ -639,8 +638,8 @@ soundsfile version 2
  horse_whinny.wav 0
  horse_whinny-1.wav 2304
  horse_whinny-2.wav 2304
- CWE_amb_waterfall_medium_01_2d_lp.ogg 2454
- water_splash_loop.ogg 3222
+ CWE_amb_waterfall_medium_01_2d_lp.ogg 1782
+ water_splash_loop.ogg 3990
  lord_dies.wav 1937
  enemy_lord_dies.wav 1937
  level_up.wav 1937
@@ -662,7 +661,8 @@ soundsfile version 2
  camelDeath01.wav 1872
  camelDeath02.wav 1872
  camelDeath03.wav 1872
-286
+ gondor_army.wav 2384
+288
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -816,9 +816,9 @@ snd_goat 832 4 238 239 240 136
 snd_town_ambiance 899 1 241 
 snd_man_hit 2672 20 242 243 244 245 246 247 248 249 202 250 251 252 253 254 255 203 204 205 206 256 
 snd_man_die 160 14 257 258 259 260 261 262 263 264 265 266 267 268 269 270 
-snd_man_grunt 1120 3 271 272 273 
+snd_man_grunt 608 3 271 272 273 
 snd_man_breath_hard 2096 7 274 275 276 277 278 279 280 
-snd_man_grunt_long 2128 6 281 282 283 284 285 286 
+snd_man_grunt_long 1104 6 281 282 283 284 285 286 
 snd_man_yell 2144 22 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 
 snd_man_warcry 96 7 309 310 311 312 313 314 315 
 snd_woman_hit 112 10 316 317 318 319 320 321 322 323 324 325 
@@ -832,14 +832,14 @@ snd_dunlender_yell 2144 24 358 359 360 361 362 363 364 365 366 367 368 369 370 3
 snd_dunlender_victory 2640 9 382 383 384 385 386 387 388 389 390 
 snd_orc_die 160 8 391 392 393 394 395 396 397 398 
 snd_orc_hit 2672 8 399 400 401 402 403 404 405 406 
-snd_orc_grunt 1120 1 407 
-snd_orc_grunt_long 2128 1 408 
+snd_orc_grunt 608 1 407 
+snd_orc_grunt_long 1104 1 408 
 snd_orc_yell 2144 2 409 410 
 snd_orc_victory 2640 6 411 412 413 414 415 416 
 snd_uruk_die 160 6 417 418 419 420 421 422 
 snd_uruk_hit 2672 9 423 424 425 426 427 428 429 430 431 
-snd_uruk_grunt 1120 1 407 
-snd_uruk_grunt_long 2128 7 432 433 434 435 436 437 438 
+snd_uruk_grunt 608 1 407 
+snd_uruk_grunt_long 1104 7 432 433 434 435 436 437 438 
 snd_uruk_yell 2144 12 439 440 441 442 443 444 445 446 447 448 449 450 
 snd_uruk_victory 2640 17 451 452 453 454 455 456 457 458 459 460 461 462 463 464 465 466 467 
 snd_haradrim_yell 2144 10 468 469 470 471 472 473 474 475 476 477 
@@ -876,27 +876,27 @@ snd_horror_scream_orc 2720 1 556
 snd_warg_lone_woof 2656 7 557 558 559 560 561 562 563 
 snd_horse_snort_again 1872 5 564 565 566 567 568 
 snd_spear_trap 2416 1 569 
-snd_elf_song 1921 1 570 
-snd_moria_ambiance 903 1 571 
-snd_henneth_ambiance 903 1 572 
-snd_goodforest_ambiance 903 1 573 
-snd_evilforest_ambiance 903 1 574 
-snd_water_waves_ambiance 903 1 575 
-snd_water_splash_ambiance 903 1 576 
-snd_water_wavesplash_ambiance 903 1 577 
-snd_wind_ambiance 903 1 578 
-snd_isengard_ambiance 903 1 579 
-snd_evilmen_ambiance 1159 1 580 
-snd_orcs_ambiance 903 1 581 
-snd_morgul_ambiance 903 1 582 
-snd_gondor_ambiance 903 1 583 
-snd_rohan_ambiance 903 1 584 
-snd_dwarf_ambiance 903 1 585 
-snd_harad_ambiance 1159 1 586 
-snd_deadmarshes_ambiance 903 1 587 
-snd_night_ambiance 903 1 588 
-snd_neutralforest_ambiance 903 1 589 
-snd_fangorn_ambiance 903 1 590 
+snd_elf_song 1920 1 570 
+snd_moria_ambiance 902 1 571 
+snd_henneth_ambiance 902 1 572 
+snd_goodforest_ambiance 902 1 573 
+snd_evilforest_ambiance 902 1 574 
+snd_water_waves_ambiance 902 1 575 
+snd_water_splash_ambiance 902 1 576 
+snd_water_wavesplash_ambiance 902 1 577 
+snd_wind_ambiance 902 1 578 
+snd_isengard_ambiance 902 1 579 
+snd_evilmen_ambiance 1158 1 580 
+snd_orcs_ambiance 902 1 581 
+snd_morgul_ambiance 902 1 582 
+snd_gondor_ambiance 902 1 583 
+snd_rohan_ambiance 902 1 584 
+snd_dwarf_ambiance 902 1 585 
+snd_harad_ambiance 1158 1 586 
+snd_deadmarshes_ambiance 902 1 587 
+snd_night_ambiance 902 1 588 
+snd_neutralforest_ambiance 902 1 589 
+snd_fangorn_ambiance 902 1 590 
 snd_gondor_occasional 1152 6 136 136 591 592 593 223 
 snd_elves_occasional 1152 6 136 136 594 595 596 597 
 snd_lorien_occasional 1152 5 570 594 595 596 597 
@@ -917,35 +917,37 @@ snd_seaside_occasional 1152 6 594 595 596 617 618 592
 snd_morgul_occasional 1152 9 136 136 136 136 136 136 136 626 627 
 snd_eosgi_occasional 1152 8 620 621 622 628 608 629 625 607 
 snd_wosgi_occasional 1152 7 136 136 628 608 629 625 607 
-snd_tirith_occasional 1152 10 136 591 630 592 136 136 609 610 611 612 
+snd_tirith_occasional 1152 9 136 591 592 136 136 609 610 611 612 
 snd_morannon_occasional 1152 1 136 
 snd_tirith_top_occasional 1152 6 136 591 136 136 136 136 
 snd_meeting_elf 1056 12 539 540 524 525 526 527 528 529 530 531 532 533 
 snd_meeting_uruk 1056 7 432 433 434 435 436 437 438 
 snd_meeting_man 1056 7 299 298 297 307 294 288 292 
 snd_meeting_orc 1056 4 407 408 409 410 
-snd_neigh1 0 6 631 632 633 634 635 636 
+snd_neigh1 0 6 630 631 632 633 634 635 
 snd_horse_snort1 1872 5 564 565 566 567 568 
-snd_horse_low_whinny1 2304 2 637 638 
+snd_horse_low_whinny1 2304 2 636 637 
 snd_mount_death 2304 2 567 568 
-snd_waterfall 2454 1 639 
+snd_waterfall 1782 1 638 
 snd_orc_cheer 2640 9 409 410 408 411 412 413 414 415 416 
 snd_water_wavesplash_source 1686 1 577 
 snd_water_waves_source 3990 1 575 
-snd_water_splash_source 3222 1 640 
-snd_lord_dies 1937 1 641 
-snd_enemy_lord_dies 1937 1 642 
-snd_level_up 1937 1 643 
-snd_spider 0 2 644 645 
-snd_spider_die 2656 1 646 
-snd_new_rank_evil 1793 1 647 
-snd_new_rank_good 1793 1 648 
-snd_woman_yell 2592 2 649 650 
-snd_ghost_ambient_long 499 1 651 
+snd_water_splash_source 3990 1 639 
+snd_lord_dies 1937 1 640 
+snd_enemy_lord_dies 1937 1 641 
+snd_level_up 1937 1 642 
+snd_spider 0 2 643 644 
+snd_spider_die 2656 1 645 
+snd_new_rank_evil 1793 1 646 
+snd_new_rank_good 1793 1 647 
+snd_woman_yell 2592 2 648 649 
+snd_ghost_ambient_long 499 1 650 
 snd_bear_strike 2656 3 562 563 505 
-snd_spider_strike 2656 2 644 652 
-snd_wolf_strike 2656 2 560 652 
-snd_bees_people_ambiance 1155 1 653 
-snd_bees_birds_ambiance 1411 1 654 
-snd_camel_sounds 0 4 655 656 657 658 
-snd_camel_death 1872 3 659 660 661 
+snd_spider_strike 2656 2 643 651 
+snd_wolf_strike 2656 2 560 651 
+snd_bees_people_ambiance 1155 1 652 
+snd_bees_birds_ambiance 1411 1 653 
+snd_camel_sounds 0 4 654 655 656 657 
+snd_camel_death 1872 3 658 659 660 
+snd_army_good 2384 1 661 
+snd_bell 1872 4 609 610 611 612 

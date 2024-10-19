@@ -284,5 +284,7 @@ snd_bees_people_ambiance = 282
 snd_bees_birds_ambiance = 283
 snd_camel_sounds = 284
 snd_camel_death = 285
+snd_army_good = 286
+snd_bell = 287
 
 

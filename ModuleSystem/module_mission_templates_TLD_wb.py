@@ -5026,7 +5026,7 @@ tld_positional_sound_props = [
             (party_get_slot, ":a","$current_town",slot_center_ambient_sound_always),
             (try_begin),(gt,":a",0),(play_sound, ":a", sf_looping),(try_end),
         (else_try),
-            (play_sound, "$bs_day_sound", sf_looping),
+            (play_sound, "$bs_day_sound", sf_looping|sf_2d),
         (try_end),
         (neg|is_currently_night),
         (try_begin),
@@ -5034,7 +5034,7 @@ tld_positional_sound_props = [
             (party_get_slot, ":a","$current_town",slot_center_ambient_sound_day),
             (try_begin),(gt,":a",0),(play_sound, ":a", sf_looping),(try_end),
         (else_try),
-            (play_sound, "$bs_night_sound", sf_looping),
+            (play_sound, "$bs_night_sound", sf_looping|sf_2d),
         (try_end),
 
     (try_end),

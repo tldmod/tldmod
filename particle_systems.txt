@@ -134,7 +134,7 @@ psys_flue_smoke_short 12818 prtcl_dust_a  15 1.5 0.1 -0 10 12
 0 0.2   1 0.09
 0 0.2   1 0.08
 0 1.5   1 7
-0 0 0   0 0 1.5   0.1 
+0.2 0.2 0.2   0 0 1.5   0.1 
 150 0.8 
 psys_flue_smoke_tall 12818 prtcl_dust_a  15 3 0.5 -0 15 12 
 0 0.35   1 0
@@ -142,7 +142,7 @@ psys_flue_smoke_tall 12818 prtcl_dust_a  15 3 0.5 -0 15 12
 0 0.3   1 0.1
 0 0.3   1 0.1
 0 2   1 7
-0 0 0   0 0 1.5   0.1 
+0.2 0.2 0.2   0 0 1.5   0.1 
 150 0.5 
 psys_war_smoke_tall 12818 prt_mesh_smoke_1  5 12 0 0 7 7 
 0 0.25   1 0
@@ -150,7 +150,7 @@ psys_war_smoke_tall 12818 prt_mesh_smoke_1  5 12 0 0 7 7
 0 1   1 0.8
 0 1   1 0.8
 0 2.2   1 15
-0 0 0   0 0 2.2   0.1 
+0.5 0.5 0.5   0 0 2.2   0.1 
 100 0.2 
 psys_torch_fire_sparks 8722 prt_sparks_mesh_1  10 0.7 0.2 0 10 0.02 
 0.66 1   1 0

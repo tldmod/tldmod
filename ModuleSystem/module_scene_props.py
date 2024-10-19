@@ -4477,7 +4477,7 @@ scene_props = [
         #(agent_equip_item, reg0, ":item", 1),
         (agent_set_wielded_item, reg0, ":item"),
         (item_get_weapon_length, ":length", ":item"), #polearm users need more space
-        (val_add, ":length", 30),
+        (val_add, ":length", 50),
         (val_mul, ":length", -1),
         # (assign, reg78, ":length"),
         # (display_message, "@length {reg78}"),
@@ -4527,7 +4527,8 @@ scene_props = [
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), 
     (set_spawn_position, pos1),
-    (position_move_z, pos1, -160),
+    #(position_set_z_to_ground_level, pos1),
+    (position_move_z, pos1, -150),
     (spawn_agent, "trp_i1_isen_orc_snaga"), #get a small troop
     (assign, ":target", reg0),
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_2, ":target"),

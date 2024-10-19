@@ -291,7 +291,7 @@ particle_systems = [
      (0.0, 0.2),(1, 0.09),      #green keys
      (0.0, 0.2), (1, 0.08),     #blue keys
      (0, 1.5),   (1, 7),          #scale keys
-     (0, 0, 0),           #emit box size
+     (0.2, 0.2, 0.2),           #emit box size
      (0, 0, 1.5),               #emit velocity
      0.1,                        #emit dir randomness
      150,
@@ -304,7 +304,7 @@ particle_systems = [
      (0.0, 0.3),(1, 0.1),       #green keys
      (0.0, 0.3), (1, 0.1),      #blue keys
      (0, 2),   (1, 7),        #scale keys
-     (0, 0, 0),                 #emit box size
+     (0.2, 0.2, 0.2),                 #emit box size
      (0, 0, 1.5),               #emit velocity
      0.1,                       #emit dir randomness
      150,
@@ -317,7 +317,7 @@ particle_systems = [
      (0.0, 1),(1, 0.8),      #green keys
      (0.0, 1), (1, 0.8),     #blue keys
      (0, 2.2),   (1, 15),        #scale keys
-     (0, 0, 0),                 #emit box size
+     (0.5, 0.5, 0.5),           #emit box size
      (0, 0, 2.2),               #emit velocity
      0.1,                        #emit dir randomness
      100,
