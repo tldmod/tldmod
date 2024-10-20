@@ -5026,6 +5026,10 @@ game_menus = [
           (assign, "$encountered_party_hostile", 0),
           (assign, "$encountered_party_friendly", 0),
           
+          #InVain: In order to get correct numbers we need to count them twice if it's a new encounter
+          (call_script, "script_encounter_calculate_fit"),
+          (assign, reg22, reg10),
+          
           #MV: Quest exceptions
           (assign, ":is_quest_party", 0),
           (try_begin),
@@ -5608,20 +5612,54 @@ game_menus = [
 		(troop_set_slot, ":troop_no", slot_troop_routed_enemies, 0),
 	(try_end),
 	
-		(call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
-		(assign, ":player_party_strength", reg0),
-		(val_div, ":player_party_strength", 5),
-		(call_script, "script_party_calculate_strength", "p_collective_enemy", 0),
-		(assign, ":enemy_party_strength", reg0),
-		(val_div, ":enemy_party_strength", 5),
-		#(call_script,"script_inflict_casualties_to_party", "p_main_party", ":enemy_party_strength"),
-		(inflict_casualties_to_party_group, "p_main_party", ":enemy_party_strength", "p_temp_casualties"),
-		(call_script, "script_print_casualties_to_s0", "p_temp_casualties", 0),
-		(str_store_string_reg, s8, s0),
-		#(call_script,"script_inflict_casualties_to_party", "$g_encountered_party", ":player_party_strength"),
-		(inflict_casualties_to_party_group, "$g_encountered_party", ":player_party_strength", "p_temp_casualties"),
-		(call_script, "script_print_casualties_to_s0", "p_temp_casualties", 0),
-		(str_store_string_reg, s9, s0),
+		# (call_script, "script_party_calculate_strength", "p_main_party", 1), #skip player
+		# (assign, ":player_party_strength", reg0),
+		# (val_div, ":player_party_strength", 5),
+
+		(try_begin), (encountered_party_is_attacker),
+            (party_collect_attachments_to_party, "p_main_party", "p_collective_ally"),
+            (call_script, "script_party_calculate_strength", "p_collective_ally", 1), #exclude player
+            (assign, ":total_player_and_followers_strength", reg0),
+            (val_div, ":total_player_and_followers_strength", 10),
+
+            (party_collect_attachments_to_party, "$g_encountered_party", "p_collective_enemy"),
+            (call_script, "script_party_calculate_strength", "p_collective_enemy", 0),
+            (assign, ":enemy_party_strength", reg0),
+            (val_div, ":enemy_party_strength", 10), 
+
+            #(call_script,"script_inflict_casualties_to_party", "$g_encountered_party", ":player_party_strength"),
+            (inflict_casualties_to_party_group, "$g_encountered_party", ":total_player_and_followers_strength", "p_temp_casualties"),
+            (call_script, "script_print_casualties_to_s0", "p_temp_casualties", 0),
+            (str_store_string_reg, s9, s0),   
+                    
+            #(call_script,"script_inflict_casualties_to_party", "p_main_party", ":enemy_party_strength"),
+            (inflict_casualties_to_party_group, "p_main_party", ":enemy_party_strength", "p_temp_casualties"),
+            (call_script, "script_print_casualties_to_s0", "p_temp_casualties", 0),
+            (str_store_string_reg, s8, s0),
+		(else_try), #if player side is aggressive, give them a boost in autocalc
+            (party_collect_attachments_to_party, "p_main_party", "p_collective_ally"),
+            (call_script, "script_party_calculate_strength", "p_collective_ally", 1), #exclude player
+            (assign, ":total_player_and_followers_strength", reg0),
+            (val_div, ":total_player_and_followers_strength", 10),
+
+            #(call_script,"script_inflict_casualties_to_party", "$g_encountered_party", ":player_party_strength"),
+            (inflict_casualties_to_party_group, "$g_encountered_party", ":total_player_and_followers_strength", "p_temp_casualties"),
+            (call_script, "script_print_casualties_to_s0", "p_temp_casualties", 0),
+            (str_store_string_reg, s9, s0),
+            
+            (party_collect_attachments_to_party, "$g_encountered_party", "p_collective_enemy"),
+            (call_script, "script_party_calculate_strength", "p_collective_enemy", 0),
+            (assign, ":enemy_party_strength", reg0),
+            (val_div, ":enemy_party_strength", 10),        
+                    
+            #(call_script,"script_inflict_casualties_to_party", "p_main_party", ":enemy_party_strength"),
+            (inflict_casualties_to_party_group, "p_main_party", ":enemy_party_strength", "p_temp_casualties"),
+            (call_script, "script_print_casualties_to_s0", "p_temp_casualties", 0),
+            (str_store_string_reg, s8, s0),
+		(try_end),
+
+
+        
 		(party_collect_attachments_to_party, "$g_encountered_party", "p_collective_enemy"),
 		#(assign, "$cant_leave_encounter", 0),
 		(assign, "$no_soldiers_left", 0),
