@@ -1,4 +1,4 @@
-1995
+2000
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -90,7 +90,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-09-30_12:07___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-10-20_12:33___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1935,6 +1935,11 @@ qstr__Guards_slaughter_hi _Guards,_slaughter_him!
 qstr_Slaughter_him_for_fr Slaughter_him_for_fresh_human_meat!
 qstr_This_is_{s5}_Command This_is_{s5},_Commander.
 qstr_{s6}_This_place_and_ {s6}_This_place_and_the_surrounding_lands_belong_to_{s7}_of_{s8}.
+qstr_the_{s3} the_{s3}
+qstr_the_local_authority the_local_authority
+qstr_the_Lord_s_hall the_Lord's_hall
+qstr_your_commanders your_commanders
+qstr_the_captain_of_the_ga the_captain_of_the_garrison
 qstr_Hey_scum!_I_can_fix_ Hey_scum!_I_can_fix_that_jaw_of_yours.
 qstr_Watch_where_you_re_g Watch_where_you're_going,_maggot!
 qstr_I_don_t_like_your_fa I_don't_like_your_face!_I_think_it_needs_some_fixing.
