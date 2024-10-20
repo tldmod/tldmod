@@ -12716,6 +12716,63 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone,"town_dweller_ask_rumor", [(call_script, "script_tld_get_rumor_to_s61", "$g_talk_troop", "$current_town", "$g_talk_agent")],"{s61}" , "town_dweller_talk",[]],
 
   #[anyone,"town_dweller_ask_rumor", [], "I haven't heard anything interesting lately.", "town_dweller_talk",[]],
+
+#town walker showing the way by Madsci
+[anyone|plyr,"town_dweller_talk", [(party_slot_eq, "$current_town", slot_party_type, spt_town),], 
+"Can you help me find a place?", "town_dweller_ask_directions",[]],
+
+[anyone,"town_dweller_ask_directions", [],
+ "What are you looking for?", "town_dweller_ask_directions2",[]],
+
+[anyone|plyr|repeat_for_100, "town_dweller_ask_directions2", [
+    (store_repeat_object, ":entry"), #change here für entry points and assign strings according to that, instead of using the names
+    (this_or_next|eq, ":entry", 10),
+    (this_or_next|eq, ":entry", 11),
+    (this_or_next|eq, ":entry", 12),
+    (this_or_next|eq, ":entry", 23),
+    (eq, ":entry", 24),
+    (try_begin),
+        (eq, ":entry", 10),
+        (party_get_slot, ":troop", "$current_town", slot_town_weaponsmith),
+        (str_store_troop_name_plural, s3, ":troop"),
+        (str_store_string, s4, "@the {s3}"),
+    (else_try),
+        (eq, ":entry", 11),
+        (str_store_string, s4, "@the local authority"),
+    (else_try),
+        (eq, ":entry", 12),
+        (party_get_slot, ":troop", "$current_town", slot_town_merchant),
+        (str_store_troop_name_plural, s3, ":troop"),
+        (str_store_string, s4, "@the {s3}"),
+    (else_try),
+        (eq, ":entry", 23),
+        (neq, "$current_town", "p_town_minas_tirith"),
+        (str_store_string, s4, "@the Lord's hall"),
+        (neg|party_slot_ge, "$current_town", slot_town_castle, 1),
+        (str_store_string, s4, "@your commanders"),
+    (else_try),
+        (eq, ":entry", 24),
+        (str_store_string, s4, "@the captain of the garrison"),
+    (try_end)], 
+"{s4}.", "town_dweller_ask_directions3",[
+    (store_repeat_object, "$temp"),]],
+
+[anyone|plyr,"town_dweller_ask_directions2", [], "Never mind.", "close_window",[]],
+
+[anyone,"town_dweller_ask_directions3", [], 
+"I know where that is. Follow me.", "close_window",[
+    #(agent_get_position, pos1, "$temp"),
+    #(agent_get_entry_no, ":target_entry_point", "$temp"),
+    (entry_point_get_position, pos1, "$temp"),
+    (position_move_y, pos1, 150),
+    (agent_set_slot, "$g_talk_agent", slot_agent_walker_type, 1),
+    (agent_set_slot, "$g_talk_agent", slot_agent_target_entry_point, "$temp"),
+    (agent_set_slot, "$g_talk_agent", slot_agent_is_running_away, 0),
+    (agent_clear_scripted_mode, "$g_talk_agent"),
+    (agent_set_scripted_destination, "$g_talk_agent", pos1, 0),
+    (agent_set_speed_limit, "$g_talk_agent", 20),
+    ] + (is_a_wb_dialog and [(agent_set_speed_modifier, "$g_talk_agent", 120),] or []) 
+    ],
   
   # Brawls for evil sides
 [anyone|plyr,"town_dweller_talk", [
