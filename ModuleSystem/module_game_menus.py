@@ -191,6 +191,11 @@ game_menus = [
 								 (else_try),(str_store_string, s7, "@by day"),(display_message, "@can only be set at game start; see options to adjust day"),(try_end),
 	    ],"War Starts:  {s7}",[
 	    (store_sub,"$tld_start_war_by_day_or_level",1,"$tld_start_war_by_day_or_level"),(val_clamp,"$tld_start_war_by_day_or_level",0,2),(jump_to_menu, "mnu_start_phase_2"),]), 
+
+	("toggle_tutorial",[(try_begin),(eq, "$tld_show_tutorials", 0),(str_store_string, s7, "@ON"), 
+								 (else_try),(str_store_string, s7, "@OFF"),(display_message, "@If you are new to TLD, tutorial messages are recommended"),(try_end),
+	    ],"Pop-Up Tutorials:  {s7}",[
+	    (store_sub,"$tld_show_tutorials",1,"$tld_show_tutorials"),(val_clamp,"$tld_show_tutorials",0,2),(jump_to_menu, "mnu_start_phase_2"),]), 
 	  
 	   ] + (is_a_wb_menu==1 and [
 	  ("change_tld_options",[],"Change TLD options.",[(start_presentation, "prsnt_tld_mod_options")]),

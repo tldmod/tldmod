@@ -1,4 +1,4 @@
-1996
+1997
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -90,7 +90,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-10-23_18:45___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-10-23_19:57___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1031,6 +1031,9 @@ qstr_by_level by_level
 qstr_can_only_be_set_at_g can_only_be_set_at_game_start;_see_options_to_adjust_level
 qstr_by_day by_day
 qstr_can_only_be_set_at_ga can_only_be_set_at_game_start;_see_options_to_adjust_day
+qstr_ON ON
+qstr_OFF OFF
+qstr_If_you_are_new_to_TL If_you_are_new_to_TLD,_tutorial_messages_are_recommended
 qstr_{s24}__{reg13}____{r {s24}_({reg13})_-_{reg20}_until_next_promotion^
 qstr_Influence:^_{reg11}_ Influence:^_{reg11}_(with_{s16})^
 qstr_Resource_Points:^_{r Resource_Points:^_{reg12}_(in_{s16})^
@@ -1171,9 +1174,7 @@ qstr_Killer_WItcher_Spawn Killer_WItcher_Spawned,_Badass_King_Theo_added!
 qstr_Player_Siege_Enabled Player_Siege_Enabled
 qstr_You_are_not_in_the_r You_are_not_in_the_right_region_to_spawn_animal_ambushes._Please_go_to_N_Mirkwood,_S_Mirkwood,_Grey_Mountains,_or_Misty_Mountains
 qstr_{reg1} {reg1}
-qstr_ON ON
 qstr_OFF__cheat_ OFF_(cheat)
-qstr_OFF OFF
 qstr_All_messages All_messages
 qstr_{reg0}__will_most_li {reg0}_(will_most_likely_cause_save_crashes)
 qstr_{reg0}__could_possib {reg0}_(could_possibly_cause_save_crashes)

@@ -10,3 +10,4 @@ _wb/map.txt
 _wb/languages
 *.pdn
 *.xcf
+/ModuleSystem/module_mission_templates_unneeded.py

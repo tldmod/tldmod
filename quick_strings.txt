@@ -1,4 +1,4 @@
-1745
+1746
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -806,6 +806,9 @@ qstr_by_level by_level
 qstr_can_only_be_set_at_g can_only_be_set_at_game_start;_see_options_to_adjust_level
 qstr_by_day by_day
 qstr_can_only_be_set_at_ga can_only_be_set_at_game_start;_see_options_to_adjust_day
+qstr_ON ON
+qstr_OFF OFF
+qstr_If_you_are_new_to_TL If_you_are_new_to_TLD,_tutorial_messages_are_recommended
 qstr_{s24}__{reg13}____{r {s24}_({reg13})_-_{reg20}_until_next_promotion^
 qstr_Influence:^_{reg11}_ Influence:^_{reg11}_(with_{s16})^
 qstr_Resource_Points:^_{r Resource_Points:^_{reg12}_(in_{s16})^
@@ -945,9 +948,7 @@ qstr_Killer_WItcher_Spawn Killer_WItcher_Spawned,_Badass_King_Theo_added!
 qstr_Player_Siege_Enabled Player_Siege_Enabled
 qstr_You_are_not_in_the_r You_are_not_in_the_right_region_to_spawn_animal_ambushes._Please_go_to_N_Mirkwood,_S_Mirkwood,_Grey_Mountains,_or_Misty_Mountains
 qstr_{reg1} {reg1}
-qstr_ON ON
 qstr_OFF__cheat_ OFF_(cheat)
-qstr_OFF OFF
 qstr_Basic__better_perfor Basic_(better_performance)
 qstr_All_messages All_messages
 qstr_Player_damage_only Player_damage_only

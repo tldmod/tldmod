@@ -2076,10 +2076,10 @@ scripts = [
 	(assign, "$dormant_spawn_radius", 0),  
     (assign, "$mouse_coordinates", 0), #wb only
     (assign, "$attacker_archer_melee",0),
-    (assign, "$attacker_team_3", 5),
+    (assign, "$attacker_team_3", 0),
     (assign, "$tld_start_war_by_day_or_level", 0), #0= by level (old setting), 1=by day (new setting)
-    (assign, "$tld_options_overlay_14", 2),
-    (assign, "$g_display_agent_labels", 2),
+    (assign, "$tld_options_overlay_14", 0),
+    (assign, "$g_display_agent_labels", 0),
     (assign, "$tutorial_1_state", 0),
 
     (val_mul, "$hold_f1", "$cheatmode_used"),
@@ -2092,7 +2092,7 @@ scripts = [
     (val_mul, "$attacker_archer_melee", "$tld_options_overlay_14"),   
     (val_mul, "$attacker_archer_melee", "$g_display_agent_labels"), 
     (val_mul, "$attacker_archer_melee", "$allies_leadership"),     
-    (val_mul, "$attacker_archer_melee", "$g_arena_training_num_agents_spawned"),
+    (val_mul, "$attacker_archer_melee", "$tld_show_tutorials"),
     (val_mul, "$attacker_archer_melee", "$fog_red"),  
     (val_mul, "$attacker_archer_melee", "$fog_green"),  
     (val_mul, "$attacker_archer_melee", "$fog_blue"),  
