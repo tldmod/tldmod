@@ -1052,7 +1052,7 @@ dialogs = [
 
 [anyone,"ziggy_ask_more", [(party_get_num_prisoners, ":num_prisoners", "p_main_party"), (lt, ":num_prisoners", 1),], 
   "You have no life to offer, Commander.", "close_window",
-  [(change_screen_map)]],
+  [(change_screen_map),(set_player_troop, "trp_player"),]],
 
 
 [anyone,"ziggy_ask_more", [(store_current_hours, ":cur_hours"), (troop_get_slot, ":ziggy_rested", "trp_npc20", slot_troop_trainer_met), (lt, ":cur_hours", ":ziggy_rested")], 
@@ -1074,7 +1074,7 @@ dialogs = [
   (ge, ":num_werewolves", ":ziggy_wolves"),
   ],
   "I can only control so much. I'll need to become more powerful...", "close_window",
-  [(change_screen_map)]],
+  [(change_screen_map),(set_player_troop, "trp_player")]],
 
 [anyone,"ziggy_ask_more", [
   (party_get_num_prisoners, ":num_prisoners", "p_main_party"), (ge, ":num_prisoners", 1),
@@ -1094,7 +1094,7 @@ dialogs = [
 
 [anyone|plyr,"ziggy_not_rested", [], 
   "Rest quick then, I need more of these.", "close_window",
-  [(change_screen_map)]],
+  [(change_screen_map),(set_player_troop, "trp_player")]],
 
 
 
@@ -1115,7 +1115,7 @@ dialogs = [
     (call_script,"script_stand_back"),
     (troop_set_slot, "$g_talk_troop", slot_troop_occupation, 0),
         (troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_dismissed),
-        (remove_member_from_party, "$g_talk_troop")]],
+        (remove_member_from_party, "$g_talk_troop"),(set_player_troop, "trp_player")]],
 
 [anyone|plyr,"member_talk", [], "I'd like to ask you something.", "member_question",[]],
 #[anyone|plyr,"member_talk", [], "Never mind.", "close_window",[(call_script,"script_stand_back"),]],
@@ -1580,10 +1580,10 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
   "Not at this time, Zigûrphel. Go back to your post.", "ziggy_no", []],
 
 [anyone, "ziggy_no", [(troop_slot_eq, "trp_npc20", slot_troop_wealth, 0)],
-  "Very well, Commander, but you would be a fool to forego my gift.", "close_window", [(troop_set_slot, "trp_npc20", slot_troop_wealth, 1),(change_screen_map)]],
+  "Very well, Commander, but you would be a fool to forego my gift.", "close_window", [(troop_set_slot, "trp_npc20", slot_troop_wealth, 1),(change_screen_map),(set_player_troop, "trp_player")]],
 
 [anyone, "ziggy_no", [(troop_slot_ge, "trp_npc20", slot_troop_wealth, 1)],
-  "Very well, Commander.", "close_window", [(change_screen_map)]],
+  "Very well, Commander.", "close_window", [(change_screen_map),(set_player_troop, "trp_player")]],
 
 [anyone, "ziggy_yes", [],
   "Excellent. Which of these specimens would you give?", "ziggy_choose_prisoners", []],
@@ -1680,7 +1680,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
   [(store_current_hours, ":cur_hours"),
    (val_add, ":cur_hours", 24), #add one day
    (troop_set_slot, "trp_npc20", slot_troop_trainer_met, ":cur_hours"), #use this slot to check if Ziggy can provide more wolves
-   (change_screen_map)]],
+   (change_screen_map),(set_player_troop, "trp_player")]],
 
 
 #Morality objections
