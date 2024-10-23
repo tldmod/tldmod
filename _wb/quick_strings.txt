@@ -1,4 +1,4 @@
-2000
+1996
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -90,7 +90,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-10-20_12:33___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-10-23_18:45___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -103,15 +103,9 @@ qstr_Proficiencies Proficiencies
 qstr_1H_Weapons^2H_Weapon 1H_Weapons^2H_Weapons^Polearms^Archery^Crossbows^Throwing
 qstr_Equipment Equipment
 qstr_The_Last_Days_Mod_Op The_Last_Days_Mod_Options
+qstr_War_Starts_after_Day War_Starts_after_Day:_
 qstr_War_Starts_at_Level: War_Starts_at_Level:_
-qstr_20 20
-qstr_18 18
-qstr_16 16
-qstr_14 14
-qstr_12 12
-qstr_10 10
-qstr_8 8
-qstr_6 6
+qstr_{reg0} {reg0}
 qstr_Battle_Formations_an Battle_Formations_and_AI:__
 qstr_Native Native
 qstr_TLD_FormAI__Original TLD_FormAI_(Original)
@@ -145,7 +139,6 @@ qstr_Gameplay_Tweaks Gameplay_Tweaks
 qstr_Set_to_Native_if_you Set_to_Native_if_you_encounter_any_types_of_AI_problems_during_battle.
 qstr_Disable_cutscenes_if Disable_cutscenes_if_you_encounter_any_crashes_at_the_start_of_the_war.
 qstr_Campaign_Difficulty_a Campaign_Difficulty_affects_abundance_of_volunteers,_lord_party_size,_and_strength_income_for_allied_factions.
-qstr_War_Will_Start_at_Le War_Will_Start_at_Level_{reg0}
 qstr_Be_aware_that_many_q Be_aware_that_many_quests_and_campaign_mechanics_scale_with_player_level._Increasing_this_setting_will_give_you_more_time_to_prepare,_but_will_make_the_war_unfold_quicker.
 qstr_Troop_Tree Troop_Tree
 qstr__Click_on_a_unit_for (Click_on_a_unit_for_details)
@@ -795,7 +788,6 @@ qstr_{s3}{s1}{s0} {s3}{s1}{s0}
 qstr_{s3}{s2}{s0} {s3}{s2}{s0}
 qstr_{s1}_{s0} {s1},_{s0}
 qstr_{s1}_and_{s0} {s1}_and_{s0}
-qstr_{reg0} {reg0}
 qstr_No_Troops_Left. No_Troops_Left.
 qstr_avoid_melee avoid_melee
 qstr_stand_and_fight stand_and_fight
@@ -1035,6 +1027,10 @@ qstr_Look_at_my_over_the_ Look_at_my_over-the-shoulder_shot,_{playername}!_I'm_s
 qstr_You_wish_old_man_my_ You_wish,_old_man,_my_over-the-shoulder_view_is_much_prettier!
 qstr_You_should_really_se You_should_really_see_Steward_Denetor's_Facebook_photos,_he's_amazing!
 qstr_Press_Space_to_conti Press_Space_to_continue...
+qstr_by_level by_level
+qstr_can_only_be_set_at_g can_only_be_set_at_game_start;_see_options_to_adjust_level
+qstr_by_day by_day
+qstr_can_only_be_set_at_ga can_only_be_set_at_game_start;_see_options_to_adjust_day
 qstr_{s24}__{reg13}____{r {s24}_({reg13})_-_{reg20}_until_next_promotion^
 qstr_Influence:^_{reg11}_ Influence:^_{reg11}_(with_{s16})^
 qstr_Resource_Points:^_{r Resource_Points:^_{reg12}_(in_{s16})^

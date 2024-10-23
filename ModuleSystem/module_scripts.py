@@ -2020,7 +2020,7 @@ scripts = [
 	(assign, "$wall_missile_troop3", 0),
 	(assign, "$wall_missile_troop4", 0),
 	(assign, "$wall_missile_troop5", 0),  
-	(assign, "$rescue_convo_troop", 0),  	
+	(assign, "$tld_start_war_by_day_or_level", 0),  	
 
    #initialize game option defaults (see camp menu)
 	(assign, "$tld_option_crossdressing", 0), # item restrictions ON by default
@@ -2077,7 +2077,7 @@ scripts = [
     (assign, "$mouse_coordinates", 0), #wb only
     (assign, "$attacker_archer_melee",0),
     (assign, "$attacker_team_3", 5),
-    (assign, "$rescue_convo_troop", 3),
+    (assign, "$tld_start_war_by_day_or_level", 0), #0= by level (old setting), 1=by day (new setting)
     (assign, "$tld_options_overlay_14", 2),
     (assign, "$g_display_agent_labels", 2),
     (assign, "$tutorial_1_state", 0),
@@ -2088,8 +2088,7 @@ scripts = [
     (val_mul, "$hold_f1", "$mouse_coordinates"),
     (val_mul, "$hold_f1", "$attacker_archer_melee"),
     (val_mul, "$attacker_archer_melee", "$hold_f1"),
-    (val_mul, "$attacker_archer_melee", "$attacker_team_3"),
-    (val_mul, "$attacker_archer_melee", "$rescue_convo_troop"),   
+    (val_mul, "$attacker_archer_melee", "$attacker_team_3"), 
     (val_mul, "$attacker_archer_melee", "$tld_options_overlay_14"),   
     (val_mul, "$attacker_archer_melee", "$g_display_agent_labels"), 
     (val_mul, "$attacker_archer_melee", "$allies_leadership"),     
@@ -2115,7 +2114,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 4029),  #Rafa: Savegame version
+    (assign,"$savegame_version", 4110),  #Rafa: Savegame version
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -2848,7 +2847,7 @@ scripts = [
 						(store_random_in_range,":rnd",0,100),
 						(try_begin),
 							(store_character_level, ":player_level", "trp_player"), #InVain: Scale lord death chance with player level
-							(val_sub, ":player_level", 10),
+							(val_sub, ":player_level", 12),
 							(val_div, ":player_level", 2),
 							(lt,":rnd", ":player_level"),
 							(is_between, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
@@ -25588,6 +25587,12 @@ command_cursor_scripts = [
         (tutorial_box, "@This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu."),
         (display_message, "@This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu."),
     (try_end),
+    
+    (try_begin), #reset war start global
+        (lt, "$savegame_version", 4110),
+        (assign, "$savegame_version", 4110),
+        (assign, "$tld_start_war_by_day_or_level", 0),
+    (try_end),    
 ]),
 
 #Kham
@@ -26606,8 +26611,8 @@ command_cursor_scripts = [
 ("cf_init_kill_quest_faction", [
 
 	(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), # Evil Only
+    (ge, "$tld_war_began", 1),
 	(store_character_level, ":player_level", "trp_player"),
-	(ge, ":player_level", "$tld_player_level_to_begin_war"),
 	
 	(call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party",),
 	(assign, ":target_center", reg0),

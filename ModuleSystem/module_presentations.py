@@ -4753,19 +4753,33 @@ if wb_compile_switch==1:
     
         
     #War Level
-        (create_text_overlay, reg1, "@War Starts at Level: ", tf_right_align, tf_double_space),
+        (try_begin),
+            (eq, "$tld_start_war_by_day_or_level", 1),
+            (create_text_overlay, reg1, "@War Starts after Day: ", tf_right_align, tf_double_space),
+        (else_try),
+            (create_text_overlay, reg1, "@War Starts at Level: ", tf_right_align, tf_double_space),
+        (try_end),
         (position_set_y, pos0, ":y_pos"),
         (overlay_set_position, reg1, pos0),
         
         (create_combo_button_overlay, "$tld_options_overlay_0"),
-        (overlay_add_item, "$tld_options_overlay_0", "@20"), # swy: index 0, inserted first, appears last/at the bottom of the list
-        (overlay_add_item, "$tld_options_overlay_0", "@18"),
-        (overlay_add_item, "$tld_options_overlay_0", "@16"),
-        (overlay_add_item, "$tld_options_overlay_0", "@14"), # swy: index 3
-        (overlay_add_item, "$tld_options_overlay_0", "@12"),
-        (overlay_add_item, "$tld_options_overlay_0", "@10"),
-        (overlay_add_item, "$tld_options_overlay_0",  "@8"),
-        (overlay_add_item, "$tld_options_overlay_0",  "@6"), # swy: index 7, inserted last, appears first/highest on the combolist
+        # (overlay_add_item, "$tld_options_overlay_0", "@20"), # swy: index 0, inserted first, appears last/at the bottom of the list
+        # (overlay_add_item, "$tld_options_overlay_0", "@18"),
+        (assign, ":level", 16),
+        (try_for_range, ":unused", 0,6),
+            (assign, reg0, ":level"),
+            (try_begin),
+                (eq, "$tld_start_war_by_day_or_level", 1),
+                (val_mul, reg0, 5),
+            (try_end),            
+            (overlay_add_item, "$tld_options_overlay_0", "@{reg0}"),
+            (val_sub, ":level", 2),
+        (try_end),
+        # (overlay_add_item, "$tld_options_overlay_0", "@14"), # swy: index 3
+        # (overlay_add_item, "$tld_options_overlay_0", "@12"),
+        # (overlay_add_item, "$tld_options_overlay_0", "@10"),
+        # (overlay_add_item, "$tld_options_overlay_0",  "@8"),
+        # (overlay_add_item, "$tld_options_overlay_0",  "@6"), # swy: index 7, inserted last, appears first/highest on the combolist
 
         (copy_position, pos1, pos0),
         (store_add, reg2, ":y_pos", 0),
@@ -4774,7 +4788,7 @@ if wb_compile_switch==1:
         (val_add, ":x_pos", 130),
         (position_set_x, pos1, ":x_pos"),
         (overlay_set_position, "$tld_options_overlay_0", pos1),
-        (store_sub, ":level", 20, "$tld_player_level_to_begin_war"), # swy: map the actual levels to the proper combobox indices, whose order is also reversed
+        (store_sub, ":level", 16, "$tld_player_level_to_begin_war"), # swy: map the actual levels to the proper combobox indices, whose order is also reversed
         (val_div, ":level", 2),                                      #      i.e. for level 16 it does ((20 - 16) / 2) = 2, set to index 2 at initialization.
         (overlay_set_val, "$tld_options_overlay_0", ":level"),
         (val_sub, ":y_pos", Screen_Text_Height),
@@ -5090,11 +5104,11 @@ if wb_compile_switch==1:
         (else_try),
           (eq, ":object", "$tld_options_overlay_0"),   
           (val_mul, ":value", 2),                # swy: map the combobox indices to actual levels, whose order is also reversed
-          (store_sub, ":level_2", 20, ":value"), #      i.e. player selects element with index 3; we do (20 - (3 * 2)) = lvl 14.
+          (store_sub, ":level_2", 16, ":value"), #      i.e. player selects element with index 3; we do (20 - (3 * 2)) = lvl 14.
           (assign, "$tld_player_level_to_begin_war", ":level_2"),
           (assign, reg0, "$tld_player_level_to_begin_war"),
-          (display_message, "@War Will Start at Level {reg0}", 0x289128),
-          (gt, ":level_2", 14),
+          #(display_message, "@War Will Start at Level {reg0}", 0x289128),
+          (ge, ":level_2", 12),
           (display_message, "@Be aware that many quests and campaign mechanics scale with player level. Increasing this setting will give you more time to prepare, but will make the war unfold quicker."),
         (else_try),
           (eq, ":object", "$tld_options_overlay_11"),

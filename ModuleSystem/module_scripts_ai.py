@@ -253,7 +253,7 @@ ai_scripts = [
        (try_begin),
          (this_or_next|neq, "$tld_option_siege_reqs", 0), # Disabled normal attacking siege reqs
          (ge, ":faction_strength", fac_str_ok), #TLD
-         (store_character_level, ":player_level", "trp_player"), #InVain: Delay sieges by two levels
+         (store_character_level, ":player_level", "trp_player"), #InVain: Delay sieges by player level
          (val_sub, ":player_level", "$tld_player_level_to_begin_war"),
          (ge, ":player_level", 2),
          (neq, ":old_faction_ai_state", sfai_default),

@@ -1230,10 +1230,24 @@ triggers = [
   # TLD War beginning condition (player level >= 8 at the moment), GA
   (1, 0, 0,[
       (eq,"$tld_war_began",0),
-      (store_character_level,":level","trp_player"),
-      # Completely Replace constant with Global Var, so that we reduce likelihood of misfire.
-      # Had the dual system here for savegame compat, but by this time, it should be safe. See Github for the old code.
-      (ge, ":level", "$tld_player_level_to_begin_war"),
+      (neg|is_currently_night), #make it happen at day
+      (assign, ":continue", 0),
+      (try_begin),
+          (eq, "$tld_start_war_by_day_or_level", 0),
+          (store_character_level,":level","trp_player"),
+          (ge, ":level", "$tld_player_level_to_begin_war"),
+          (assign, ":continue", 1),
+       (else_try),
+          (eq, "$tld_start_war_by_day_or_level", 1),
+          (store_current_day, ":cur_day"),
+          (store_mul, ":war_time", "$tld_player_level_to_begin_war", 5),
+          (gt, ":cur_day", ":war_time"),
+          (store_random_in_range, ":chance", 0, 50),
+          (val_sub, ":cur_day", ":war_time"),
+          (gt, ":cur_day", ":chance"),
+          (assign, ":continue", 1),
+        (try_end),
+        (eq, ":continue", 1),
       
       ],[
       (assign, "$tld_war_began",1),

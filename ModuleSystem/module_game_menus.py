@@ -186,6 +186,11 @@ game_menus = [
         (try_end),
        ]),
 	  ("spacer",[],"_",[]),
+
+	("change_war_start_mode",[(try_begin),(eq, "$tld_start_war_by_day_or_level", 0),(str_store_string, s7, "@by level"), (display_message, "@can only be set at game start; see options to adjust level"),
+								 (else_try),(str_store_string, s7, "@by day"),(display_message, "@can only be set at game start; see options to adjust day"),(try_end),
+	    ],"War Starts:  {s7}",[
+	    (store_sub,"$tld_start_war_by_day_or_level",1,"$tld_start_war_by_day_or_level"),(val_clamp,"$tld_start_war_by_day_or_level",0,2),(jump_to_menu, "mnu_start_phase_2"),]), 
 	  
 	   ] + (is_a_wb_menu==1 and [
 	  ("change_tld_options",[],"Change TLD options.",[(start_presentation, "prsnt_tld_mod_options")]),
@@ -1651,7 +1656,7 @@ game_menus = [
 	],
 	    
     [
-     ("quick_default"     ,[(eq, cheat_switch, 1),],"[dev: quick start]",[(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (jump_to_menu,"mnu_start_phase_2" ),]),
+     ("quick_default"     ,[(eq, cheat_switch, 1),],"[dev: quick start]",[(call_script, "script_start_as_one", "$player_current_troop_type"),(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (jump_to_menu,"mnu_start_phase_2" ),]),
 	 ("start_default",[], "Become a {s23} (Default)", [(troop_add_proficiency_points, "trp_player", 10),(jump_to_menu, "mnu_choose_skill")]),
      ("start_up1", [(gt,reg0,0)], "Become a {s21} (Easy)", [(assign,"$player_current_troop_type", reg0),(troop_add_proficiency_points, "trp_player", 15), (try_begin), (eq, reg55, 1), (call_script, "script_player_join_faction", "fac_guldur"), (try_end), (jump_to_menu, "mnu_choose_skill")]),
      ("start_up2", [(gt,reg1,0)], "Become a {s22} (Easy)", [(assign,"$player_current_troop_type", reg1),(troop_add_proficiency_points, "trp_player", 15), (try_begin), (eq, reg55, 1), (call_script, "script_player_join_faction", "fac_guldur"), (try_end), (jump_to_menu, "mnu_choose_skill")]),
