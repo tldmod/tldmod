@@ -12731,6 +12731,14 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (this_or_next|eq, ":entry", 12),
     (this_or_next|eq, ":entry", 23),
     (eq, ":entry", 24),
+    (assign, ":continue", 1),
+    (try_begin),
+        (eq, ":entry", 23),
+        (eq, "$current_town", "p_town_minas_tirith"),
+        (assign, ":continue", 0),
+    (try_end),
+    (eq, ":continue", 1),
+    
     (try_begin),
         (eq, ":entry", 10),
         (party_get_slot, ":troop", "$current_town", slot_town_weaponsmith),
@@ -12745,8 +12753,8 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
         (str_store_troop_name_plural, s3, ":troop"),
         (str_store_string, s4, "@the {s3}"),
     (else_try),
-        (eq, ":entry", 23),
         (neq, "$current_town", "p_town_minas_tirith"),
+        (eq, ":entry", 23),
         (str_store_string, s4, "@the Lord's hall"),
         (neg|party_slot_ge, "$current_town", slot_town_castle, 1),
         (str_store_string, s4, "@your commanders"),
@@ -12771,6 +12779,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (agent_clear_scripted_mode, "$g_talk_agent"),
     (agent_set_scripted_destination, "$g_talk_agent", pos1, 0),
     (agent_set_speed_limit, "$g_talk_agent", 20),
+    (call_script,"script_stand_back")
     ] + (is_a_wb_dialog and [(agent_set_speed_modifier, "$g_talk_agent", 120),] or []) 
     ],
   
