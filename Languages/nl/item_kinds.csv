@@ -780,7 +780,7 @@ itm_feet_chains_dwarf|Voetketenen
 itm_spider|Spin
 itm_bear|Beer
 itm_wolf|Wolf
-; itm_werewolf|Werewolf
+itm_werewolf|Weerwolf
 ; itm_thrush_reward|Thrush
 ; itm_gauntlets_reward|Iron Fists
 ; itm_stones_siege|Siege Stones
@@ -788,4 +788,4 @@ itm_wolf|Wolf
 itm_animal_spider|Spin
 itm_animal_bear|Beer
 itm_animal_wolf|Wolf
-; itm_animal_werewolf|Werewolf
+itm_animal_werewolf|Weerwolf

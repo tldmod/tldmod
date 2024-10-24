@@ -1,7 +1,7 @@
 skl_trade|Onderhandelaar
 skl_trade_desc|Zorgt ervoor dat smeden en voorraad meesters beter meewerken en betere uitrusting aanbieden. (Groep vaardigheid)
 skl_leadership|Leiderschap
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
+skl_leadership_desc|Elk punt vermeerdert het maximaal aantal troepen die je kan commanderen met 5 (3 voor compagnons), verbetert het groepsmoraal en samenhang tijdens de strijd. Zorgt ervoor dat er sterkere en meer vrijwilligers er voor kiezen om je te volgen. (Persoonlijke vaardigheid)
 skl_prisoner_management|Gevangenen Beheer
 ; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
 skl_persuasion|Planten Vaardigheid
@@ -35,7 +35,7 @@ skl_riding_desc|Laat je paarden (of andere dieren) van een hoger moeilijkheidsle
 skl_athletics|Atletiek
 skl_athletics_desc|Versnelt je rensnelheid. (persoonlijke vaardigheid)
 skl_shield|Schild
-; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
+skl_shield_desc|reduceert schade aan schilden (met 8%% per vaardigheids niveau), verbeterd schild snelheid en dekking, reduceert de schild penalty wanneer het samen word gebruikt met bogen. (Persoonlijke vaardigheid)
 skl_weapon_master|Wapenmeester
 skl_weapon_master_desc|Maakt het makkelijker om te leren een wapen te beheersen en verhoogt de limieten in beheersing van wapens. limieten gaan als volgt: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (persoonlijke vaardigheid)
 skl_power_draw|Trekkracht
@@ -45,4 +45,4 @@ skl_power_throw_desc|Elk punt voor deze vaardigheid verbetert de schade gedaan m
 skl_power_strike|Slagkracht
 skl_power_strike_desc|Elk punt voor deze vaardigheid verbetert de schade gedaan door slag- en steekwapens met 8%% (persoonlijke vaardigheid)
 skl_ironflesh|Stevige huid
-; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)
+skl_ironflesh_desc|Elk punt voor deze vaardigheid vermeerdert je gezondheidspunten met +2, en stelt je in staat wat schade te vorduren zonder gewond te raken. (Persoonlijke vaardigheid)

@@ -116,11 +116,11 @@ qstr_Brighter_Nights:__|Noches luminosas:
 qstr_Done|Hecho
 qstr_Gameplay_Tweaks|Retoques de juego
 qstr_Beta_Formations_Twea|Retoques a las formaciopnes Beta
-; qstr_Set_to_Native_if_you|Set to Native if you encounter any types of AI problems during battle.
-; qstr_Disable_cutscenes_if|Disable cutscenes if you encounter any crashes at the start of the war.
-; qstr_Campaign_Difficulty_a|Campaign Difficulty affects abundance of volunteers, lord party size, and strength income for allied factions.
+qstr_Set_to_Native_if_you|Seleccionar Native si encuentras algún problema con la IA durante las batallas.
+qstr_Disable_cutscenes_if|Desactiva las cinemáticas si se produce una caída al escritorio al empezar la guerra.
+qstr_Campaign_Difficulty_a|La dificultad de campaña afecta a la cantidad de voluntarios, el tamaño de los ejércitos, y la fuerza que ganan las facciones aliadas.
 qstr_War_Will_Start_at_Le|La Guerra empezará al nivel {reg0}
-; qstr_Be_aware_that_many_q|Be aware that many quests and campaign mechanics scale with player level. Increasing this setting will give you more time to prepare, but will make the war unfold quicker.
+qstr_Be_aware_that_many_q|Ten en cuenta que muchas misiones y mecánicas de juego escalan con el nivel del jugador. Incrementar esta opción te dará más tiempo para prepararte, pero hará que la guerra se desarrolle más rápido.
 qstr_Troop_Tree|Árbol de tropas
 qstr__Click_on_a_unit_for|(Haz clic en una unidad para ver detalles)
 qstr_Weapons|Armas
@@ -236,7 +236,7 @@ qstr_+1_Intelligence|+1 a Inteligencia
 qstr_+{reg1}_to_Spotting|+{reg1} en Avistar
 qstr__Scales_with_Wildcra|(Mejora con Dominio de las tierras salvajes)
 qstr_Strengthens_all_Hero|Fortalece a todos los héroes
-; qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
+qstr_+4_to_First_Aid__Par|+4 a Primeros auxilios (Grupo)
 qstr_lead_more_Uruks|liderar a más uruks
 qstr_+1_to_Power_Throw|+1 a Lanzamiento
 qstr_Recruit_Black_Numeno|Recluta Númenóreanos Negros en varios ligares
@@ -767,7 +767,7 @@ qstr_Fixed_Camera___Right|Cámara: hombro derecho
 qstr_Fixed_Camera___Left_|Cámara fija: hombro izquierdo
 qstr_Fixed_Camera___Cente|Cámara fija - Centrada
 qstr_Shield_is_too_big_to|El escudo es demasiado grande como para usarlo con un arco.
-; qstr_{s7}_waves_at_you.|{s7} waves at you.
+qstr_{s7}_waves_at_you.|{s7} te hace señales con la mano.
 qstr_You_happen_upon_an_O|Te encuentras ante una vieja hostería. Mientras inspeccionas el desgastado edificio de piedra, reparas en un grupo de muchachos jugando entre las columnas, los únicos niños que has visto en  Minas Tirith.  Uno de ellos te saluda y tú le devuelves el gesto. Tu corazón se llena de alegría y olvidas, por un breve instante, los pesares de la guerra.
 qstr_You_look_through_Hen|Miras a través de la cortina de agua de Henneth Annûn, la Ventana del Sol Poniente. La hermosa vista restaura tu fe en el Oeste y enlos Poderes de más allá.
 qstr_As_you_follow_the_st|A medida que subes por la recta escalera tallada en la roca de la montaña, y después por otra, más sinuosa, que se aferra a la pared del acantilado, te das cuenta de que no deberías seguir adelante por este camino, si es que aprecias tu vida.

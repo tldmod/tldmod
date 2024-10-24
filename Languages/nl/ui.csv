@@ -1,53 +1,149 @@
 ui_at_learning_limit|(op het leerlimiet voor dit ras)
 ui_not_enough_skill_points_to_learn|(niet genoeg vaardigheidspunten om te leren)
 ui_not_enough_attributetype_to_learn_this_skill|(niet genoeg %s om deze vaardigheid te leren)
-; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: weapon-master, Shield, Athletics, Riding, Mounted archery, Looting.
+ui_explanation_agility|Wendbaarheid: Elk punt geeft fijv wapenpunten en vergroot de wapensnelheid met 0.5%. De volgende vaardigheden kunnen niet verder dan 1/3e van Wendbaarheid worden ontwikkeld: Wapenmeester, Schild, Atletiek, Rijvaardigheid, Bereden Boogschutterij, Looting en Plunderen.
 ui_retreated_battle|%s is ge routeerd
-; ui_riding_skill_not_adequate_to_mount|(Riding skill too low)
+ui_riding_skill_not_adequate_to_mount|(Rijvaardigheid te laag)
 ui_camp|Acties
-; ui_tutorial_inventory|In The Last Days, you need Resource Points to obtain equipment. Resource Points are a measure of how willing a faction is to keep you supplied, and of how much of the faction resources you are entitled to use.
-; ui_you_dont_have_value|Don't have: %s
-; ui_merchant_cant_afford_value|%s: You are giving us more than we need! Maybe keep something more for you (you are giving goods for %s, we can use only %s).
+ui_tutorial_inventory|In 'The Last Day's, heb je Bronpunten (Resource Points) nodig om uitrusting te verkrijgen. zijn een manier om te meten hoe bereid een factie is om jou bevoorraad te houden, en op hoeveel van een factie's middelen jij het recht hebt om te gebruiken.
+ui_you_dont_have_value|Niet in bezit: %s
+ui_merchant_cant_afford_value|%s: Je geeft ons meer dan dat we nodig hebben! Misschien moet je wat meer voor jezelf houden (je geeft goederen voor %s, en wiuj kunnen alleen maar %s gebruiken).
 ui_merchant_pay_whatever|Nee, ik heb daar niks van nodig, houdt het.
-; ui_horse|Mount
-; ui_reclaim_your_sold_goods|Reclaim the goods you gave before giving that!
-; ui_return_your_bought_goods|Return the goods you have taken before giving that!
+ui_horse|Rij Paard
+ui_reclaim_your_sold_goods|Neem eerst de goederen die je eerst gaf, voor je dat nu geeft!
+ui_return_your_bought_goods|Geef de goederen die je eerst nam terug, voor je dat nu geeft!
 ui_return_price|Indien teruggebracht: +%d Res.P.
 ui_sell_price|Indien gegeven: +%d Res.P.
-; ui_reclaim_price|to reclaim: -%d Res.P.
-; ui_buying_price|to claim: -%d Res.P.
-; ui_notification_riding_skill_not_enough|Your riding skill is not high enough to mount this.
-; ui_notification_payment_value|Consuming %s
-; ui_notification_payment_receive_value|Gaining %s
-; ui_weekly_cost_value|Upkeep: %s
+ui_reclaim_price|om terug te winnen: -%dRes.P. 
+ui_buying_price|om aanspraak te maken: -%d Res.P.
+ui_notification_riding_skill_not_enough|Jouw behendigheid in het paardrijden is nog niet hoog genoeg om dit paard te bestijgen.
+ui_notification_payment_value|Consumeren %s
+ui_notification_payment_receive_value|Aanwinst %s
+ui_weekly_cost_value|Onderhoud: %s
 ui_sell|Geef
 ui_hire|Aanwerven
-; ui_notification_cant_hire|(not enough R.P. to enlist)
-; ui_joining_cost_weekly_wage|Enlist: %d Res.Pts.  --  Upkeep: %d Res.Pts.
-; ui_weekly_wage|Upkeep: %d Res.P.
+ui_notification_cant_hire|(niet genoeg R.P. om in dienst te treden)
+ui_joining_cost_weekly_wage|Werf: %d Res.Pts. -- Onderhoud: %d Res.Pts.
+ui_weekly_wage|Onderhoud: %dRes.P. 
 ui_price|Waarde: %d Res.P.
 ui_cant_reload_this_weapon_on_horseback|Dit wapen kan niet rijdend herladen worden.
-; ui_delivered_number_damage_to_horse|Delivered %d damage to mount.
-; ui_horse_charged_for_number_damage|Mount charged for %d damage.
-; ui_horse_received_number_damage|Mount received %d damage.
-; ui_horse_fell_dead|Mount fell dead...
-; ui_horse_crippled|Mount crippled...
-; ui_you_got_value|%s earned.
-; ui_has_deserted_the_party| has left the party.
-; ui_have_deserted_the_party| have left the party.
-; ui_loading_textures|Loading Textures (be patient)...
-; ui_order_hold_fire_toggle|Don't shoot/Shoot at Will (Toggle)
-; ui_order_dismount_toggle|Order Dismount/Mount (Toggle)
-; ui_mount_horses_e_|%s, Mount!
+ui_delivered_number_damage_to_horse|%dschade toegediend aan het dier.
+ui_horse_charged_for_number_damage|Het dier heeft voor %d shade een charge uitgevoerd.
+ui_horse_received_number_damage|Jouw dier heeft %d schade opgelopen.
+ui_horse_fell_dead|Uw dier viel dood neer...
+ui_horse_crippled|Uw dier is verkreupeld...
+ui_you_got_value|%sverdiend.
+ui_has_deserted_the_party|heeft het gevolg verlaten.
+ui_have_deserted_the_party|hebben het gevolg verlaten.
+ui_loading_textures|Inladen van Texturen (even geduld alstublieft)...
+ui_order_hold_fire_toggle|Niet schieten/Schiet op Wens (Schakeling)
+ui_order_dismount_toggle|Beveel Afstijgen/Opstijgen (Schakeling)
+ui_mount_horses_e_|%s, Stijg Op!
 ui_hold_fire_e_|%s, Niet schieten!
-; ui_fire_at_will_e_|%s, Shoot at Will!
-; ui_recent_messages|Last Msgs
-; ui_value_denars|%d Resource Pts.
-; ui_cannot_be_used_on_horseback|Cannot be used while mounted
+ui_fire_at_will_e_|%s, Schiet naar Gelieve!
+ui_recent_messages|Laatste bericht
+ui_value_denars|%dBronpunten
+ui_cannot_be_used_on_horseback|Kan niet worden gebruikt terwijl u in het zadel zit!
 ui_upgrade_to_value|Upgraden naar %s
-; ui_notification_cant_upgrade|(Can't upgrade while giving troops)
-; ui_lance_control|Lance Control:
-; ui_manual_easy|Manual (Easy)
-; ui_manual_hard|Manual (Hard)
-; ui_campaign_ai|Campaign AI (Unused):
-; ui_crouch|Crouch (Unused)
+ui_notification_cant_upgrade|(Kan niet opwaarderen tijdens het geven van troepen)
+ui_lance_control|Lans Controle:
+ui_manual_easy|Handmatig (Makkelijk)
+ui_manual_hard|Handmatig (Moeilijk)
+ui_campaign_ai|Campagne AI (Ongebruikt in TLD)
+ui_crouch|Hurk
+
+# swy: added from this spreadsheet, as requested by our translators:
+#      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
+ui_are_you_sure_you_want_to_import_the_character|Weet u zeker dat u dit karakter wilt importeren?
+ui_explanation_strength|Kracht: Elk punt voegt +1 toe aan jouw hit points. De volgende vaardigheden kunnen niet verder dan 1/3e worden ontwikkeld van Kracht: Ijzervlees, Krachtslag, Krachtworp en Krachtspanning
+ui_explanation_agility|Wendbaarheid: Elk punt geeft fijv wapenpunten en vergroot de wapensnelheid met 0.5%. De volgende vaardigheden kunnen niet verder dan 1/3e van Wendbaarheid worden ontwikkeld: Wapenmeester, Schild, Atletiek, Rijvaardigheid, Bereden Boogschutterij, Looting en Plunderen.
+ui_explanation_intelligence|Intelligentie: (Wijsheid) De diepe kennis van de natuur en ambacht. Elk punt naar Intelligentie geeft onmiddelijk een extra vaardigheidspunt, en geeft in sommige gevallen extra XP winst. De volgende vaardigheden kunnen niet verder worden ontwikkeld dan 1/3e van Intelligentie: Onderhandelaar, Sporenzoeker, Taktieken, Padvinderij, Spotten, Voorraadbeheer, Wondenverzorging, Chirurgie, Eerste Hulp en Wildambacht.
+ui_explanation_charisma|Charisma: (Wilskracht) De kracht om te inspireren en te domineren. Bevorderd jouw positie met andere mensen en facties. Elk punt bevorded jouw volgelingen groottelimiet met +1 (0.5 voor compagnons). De volgende vaardigheden kunnen niet verder bevorderd worden dan 1/3e van Charisma: Gevangenenbeheer, Trainer en Leiderschap.
+ui_delivered_number_damage|%dschade toegediend.
+ui_mission_losses_killed|vermoord :
+ui_party_losses|%s : %d verwond --- %d vermoord of %d
+ui_following|Volgen
+ui_accompanying|Vergezellend
+ui_dumping_value_items|%dvoorwerpen die voor altijd verdwijnen, weet je het zeker?
+ui_dumping_value_item|Een voorwerp zal voor altijd verdwijnen, weet je het zeker?
+ui_notification_requirements_not_met|Je hebt nog niet de benodigde vaardigheden of attributen voor dit wapen.
+ui_disband|Ontbind
+ui_you_hit_a_friendly_troop|Je hebt een vriend geraakt!
+ui_you_are_not_carrying_any_arrows|Je draagt geen pijlen.
+ui_received_number_damage|%dschade ontvangen.
+ui_you_have_improved_your_proficiency_in_value_to_number|Je hebt jouw bekwaamheid bevorded in %snaar %d. 
+ui_your_proficiency_in_value_has_improved_by_number_to_number|Jouw bekwaamheid in %s is verbeterd met +%d naar %d.
+ui_value_killed_by_value|%sis vermoord door %s.
+ui_value_knocked_unconscious_by_value|%s is buiten bewustzijn geslagen door %s.
+ui_you_got_number_experience|Je hebt %d ervaring opgedaan.
+ui_you_have_advanced_to_level_number|Je bent bevorderd tot level %d.
+ui_quest_succeeded_value|Queste voltooid: %s.
+ui_number_of_companions_exceeds_leadership_limit|Het aantal compagnons overschrijd het leiderschaps limiet.
+ui_number_of_prisoners_exceeds_prisoner_management_limit|Het aantal gevangenen overschrijd het gevangenenbeheers limiet
+ui_shared_number_experience_within_party|%dervaring verdeeld onder uw gezelschap.
+ui_your_relations_with_value_has_improved_from_number_to_number|Jouw relatie met %s is verbeterd van %d naar %d.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|Jouw relatie met %s is veslechterd van %d naar %d.
+ui_you_lost_value|Je hebt %s verloren.
+ui_change_graphics_settings_explanation|Een aantal veranderingen die je hebt gemaakt zullen in effect gaan wanneer je een nieuw gebied betreed.
+ui_game_log_window|Spel Log Venster
+ui_blunt_short|b
+ui_tracks|Tracks
+ui_need_to_learn_prisoner_management|Om gevangenen te nemen moet je de vaardigheid Gevangenenbeheer leren.
+ui_unbalanced|Ongebalanceerd
+ui_can_crush_through_blocks|Kan door blokken heen gaan
+
+ui_order_1|Selecteer Bevel 1
+ui_order_2|Selecteer Bevel 2
+ui_order_3|Selecteer Bevel 3
+ui_order_4|Selecteer Bevel 4
+ui_order_5|Selecteer Bevel 5
+ui_order_6|Selecteer Bevel 6
+ui_order_button_hold_this_position|Verdedig deze positie
+ui_order_button_follow_me|Volg mij
+ui_order_button_charge|Chargeren
+ui_order_button_stand_ground|Blijf op jullie plaatsen
+ui_order_button_retreat|Trek terug
+ui_order_button_advance|Zet tien stappen voorwaarts
+ui_order_button_fall_back|Val tien stappen terug
+ui_order_button_spread_out|Verspreid
+ui_order_button_stand_closer|Sta dichterbij
+ui_order_button_mount_horses|Rij Paard
+ui_order_button_dismount|Afstijgen
+ui_order_button_hold_fire|Staak het vuren
+ui_order_button_fire_at_will|Vuur naar believen
+ui_order_button_use_blunt_weapons|Gebruik alleen stompe wapens
+ui_order_button_use_any_weapon|Gebruik wapens naar gelieve
+ui_order_button_movement_orders|Manoeuvre bevelen
+ui_order_button_formation_orders|Formatie bevelen
+ui_order_button_fire_orders|Vuur bevelen
+ui_follow_me_e_|%s, volg mij!
+ui_charge_e_|%s, val aan!!!
+ui_stand_ground_e_|%s, blijf staan!
+ui_retreat_e_|%s, val terug!
+ui_mount_horses_e_|%s, Stijg Op!
+ui_dismount_e_|%s, stap af!
+ui_advance_e_|%s, zet tien stappen voorwaarts!
+ui_fall_back_e_|%s, val tien stappen terug!
+ui_stand_closer_e_|%s, sta dichterbij!
+ui_spread_out_e_|%s, verspreid jullie!
+ui_use_blunt_weapons_e_|%s, gebruik alleen stompe wapens!
+ui_use_any_weapon_e_|%s, gebruik wapens naar gelieve!
+ui_hold_fire_e_|%s, Niet schieten!
+ui_fire_at_will_e_|%s, Schiet naar Gelieve!
+ui_hold_this_position_e_|%s, verdedig deze positie!
+ui_infantry|Infanterie
+ui_archers|Boogschutters
+ui_cavalry|Cavalerie
+ui_companions|Compagnon
+ui_everyone_hear_me|Iedereen, hoor mij!
+ui_everyone|Iedereen
+ui_everyone_around_me|Nabije soldaten
+ui_str_hear_me|%s, hoor mij!
+
+ui_return|Terug
+ui_factions|Facties
+ui_troop_upgrades|Troepen Bevorderingen
+ui_hdr_mode|HRD Modus:
+ui_autoexpore|Auto-exposure (het word aangeraden dit op AAN te zetten als HDR ook aan staat)
+ui_saving_policy_realistic|Niet stoppen zonder opslaan! (Wordt niet aangeraden.)
+ui_saving_policy_nonrealistic|Stop zonder op te slaan. (Wordt aangeraden, houd wel meerdere opgeslagen spellen.)

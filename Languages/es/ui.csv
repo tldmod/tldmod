@@ -55,10 +55,10 @@ ui_crouch|Agacharse
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|¿Seguro que quieres importar el personaje?
-; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: Ironflesh, Power Strike, Power Throw, Power Draw.
+ui_explanation_strength|Fuerza: Cada punto añade +1 a los puntos de vida. Las siguientes habilidades no pueden desarrollarse por encima de 1/3 de la Fuerza: Piel curtida, Potencia de Golpe, Lanzamiento, Arquería.
 ui_explanation_agility|Agilidad: Cada punto proporciona cinco puntos de armas e incrementa la velocidad del arma en un 0.5%. Las siguientes habilidades no pueden desarrollarse por encima de 1/3 de la Agilidad: Maestría con armas, Escudo, Atletismo, Cabalgar, Arquería montada, Saqueo.
-; ui_explanation_intelligence|Intelligence: (Wisdom) The deep understanding of nature and crafts. Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Bargainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, First Aid, and Wildcraft.
-; ui_explanation_charisma|Charisma: (Will) The power to inspire or dominate. Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Trainer, Leadership.
+ui_explanation_intelligence|Inteligencia (Sabiduría): El entendimiento de la naturaleza y todo tipo de artes. Cada punto de inteligencia genera inmediatamente otro punto extra de habilidad. Las siguientes habilidades no pueden desarrollarse por encima de 1/3 de la Inteligencia: Comercio, Rastrear, Tácticas, Busca-rutas, Avistamiento, Administrar inventario, Tratamiento de heridas, Cirugía, Primeros auxilios, Dominio de las tierras salvajes.
+ui_explanation_charisma|Carisma (Voluntad): El poder para inspirar o dominar a otros. Mejora tu relación con personas y facciones. Cada punto aumenta el tamaño máximo de tu grupo en +1 (0,5 en el caso de los compañeros). Las siguientes habilidades no pueden desarrollarse mas allá de 1/3 del Carisma: Manejo de prisioneros, Instrucción, Liderazgo.
 ui_delivered_number_damage|Haces %d puntos de daño.
 ui_mission_losses_killed|Muertos :
 ui_party_losses|%s  : %d heridos--- %d muertos de %d.

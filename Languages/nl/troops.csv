@@ -666,14 +666,14 @@ trp_a3_isen_large_uruk_tracker_pl|Grote Uruk Hai Spoorzoekers
 ; trp_i5_mordor_black_uruk_pl|Black Uruks of Barad Dur
 ; trp_i5_mordor_uruk_standard_bearer|Mordor Standard Bearer
 ; trp_i5_mordor_uruk_standard_bearer_pl|Mordor Standard Bearers
-; trp_troll_of_moria|Cave Troll
-; trp_troll_of_moria_pl|Cave Trolls
+trp_troll_of_moria|Grot Trol
+trp_troll_of_moria_pl|Grot Trollen
 ; trp_armoured_troll|Armored Troll
 ; trp_armoured_troll_pl|Armored Trolls
-; trp_olog_hai|Olog Hai of Mordor
-; trp_olog_hai_pl|Olog Hai of Mordor
-; trp_ent_old|Ent
-; trp_ent_old_pl|Ents
+trp_olog_hai|Olog Hai van Mordor
+trp_olog_hai_pl|Olog Hai van Mordor
+trp_ent_old|Ent
+trp_ent_old_pl|Ents
 ; trp_i1_guldur_orc_snaga|Orc Snaga of Dol Guldur
 ; trp_i1_guldur_orc_snaga_pl|Orc Snagas of Dol Guldur
 ; trp_a2_guldur_orc_tracker|Orc Tracker of Dol Guldur
@@ -746,10 +746,10 @@ trp_a3_isen_large_uruk_tracker_pl|Grote Uruk Hai Spoorzoekers
 ; trp_c5_gunda_clan_rider_pl|Goblin North Clan Riders
 ; trp_i5_gunda_orc_champion|Gundabad Orc Champion
 ; trp_i5_gunda_orc_champion_pl|Gundabad Orc Champions
-; trp_mountain_goblin2|Mountain Goblin
-; trp_mountain_goblin2_pl|Mountain Goblins
-; trp_tribal_orc2|Tribal Orc
-trp_tribal_orc2_pl|Stammen Orks
+trp_mountain_goblin2|Bergkobolden
+trp_mountain_goblin2_pl|Bergkobolden
+trp_tribal_orc2|Stamork
+trp_tribal_orc2_pl|Ork Stamleden
 ; trp_i5_gunda_orc_champion2|Gundabad Orc Champion
 ; trp_i5_gunda_orc_champion2_pl|Gundabad Orc Champions
 ; trp_i2_mordor_num_renegade|Black Numenorean Renegade
@@ -1543,13 +1543,13 @@ trp_wolf_pl|Wolven
 ; trp_ring_hunter_captain|Ring Hunter Captain
 ; trp_ring_hunter_lt|Ring Hunter Captain
 ; trp_ring_hunter_one|Ring Hunter
-; trp_ring_hunter_one_pl|Ring Hunters
+trp_ring_hunter_one_pl|Ring Jagers
 ; trp_ring_hunter_two|Ring Hunter
-; trp_ring_hunter_two_pl|Ring Hunters
+trp_ring_hunter_two_pl|Ring Jagers
 ; trp_ring_hunter_three|Ring Hunter
-; trp_ring_hunter_three_pl|Ring Hunters
+trp_ring_hunter_three_pl|Ring Jagers
 ; trp_ring_hunter_four|Ring Hunter
-; trp_ring_hunter_four_pl|Ring Hunters
+trp_ring_hunter_four_pl|Ring Jagers
 ; trp_start_quest_uruk|Mordor Uruk Captain
 ; trp_start_quest_orc|Mordor Orc Lieutenant
 ; trp_start_quest_orc_pl|Large Orcs of Mordor
@@ -1582,68 +1582,68 @@ trp_start_quest_beorning_pl|Beorning Carrock Berserkers
 ; trp_npc18|Turmbathu
 ; trp_npc19|Heidrek
 ; trp_npc20|Zigûrphel
-; trp_werewolf|Werewolf
-; trp_werewolf_pl|Werewolves
-; trp_moria_troll|Cave Troll
-; trp_moria_troll_pl|Cave Trolls
-; trp_moria_vet_troll|Trained Cave Troll
-; trp_moria_vet_troll_pl|Trained Cave Trolls
-; trp_moria_armored_troll|Armored Cave Troll
-; trp_moria_armored_troll_pl|Armored Cave Trolls
-; trp_gunda_troll|Mountain Troll
-; trp_gunda_troll_pl|Mountain Trolls
-; trp_gunda_vet_troll|Trained Mountain Troll
-; trp_gunda_vet_troll_pl|Trained Mountain Trolls
-; trp_gunda_placeholder|Trained Mountain Troll
-; trp_gunda_placeholder_pl|Trained Mountain Trolls
-; trp_isen_troll|Isengard Troll
-; trp_isen_troll_pl|Isengard Trolls
-; trp_isen_vet_troll|Isengard Trained Troll
-; trp_isen_vet_troll_pl|Isengard Trained Trolls
-; trp_isen_armored_troll|Isengard Armored Troll
-; trp_isen_armored_troll_pl|Isengard Armored Trolls
-; trp_mordor_troll|Mordor Troll
-; trp_mordor_troll_pl|Mordor Trolls
-; trp_mordor_vet_troll|Mordor Trained Troll
-; trp_mordor_vet_troll_pl|Mordor Trained Trolls
-; trp_mordor_olog_hai|Olog Hai of Mordor
-; trp_mordor_olog_hai_pl|Olog Hai of Mordor
-; trp_troll_placeholder_1|Cave Troll
-; trp_troll_placeholder_1_pl|Cave Trolls
-; trp_troll_placeholder_2|Cave Troll
-; trp_troll_placeholder_2_pl|Cave Trolls
-; trp_troll_placeholder_3|Cave Troll
-; trp_troll_placeholder_3_pl|Cave Trolls
-; trp_troll_placeholder_4|Cave Troll
-; trp_troll_placeholder_4_pl|Cave Trolls
-; trp_troll_placeholder_5|Cave Troll
-; trp_troll_placeholder_5_pl|Cave Trolls
-; trp_troll_placeholder_6|Cave Troll
-; trp_troll_placeholder_6_pl|Cave Trolls
-; trp_wild_troll|Wild Cave Troll
-; trp_wild_troll_pl|Wild Cave Trolls
-; trp_ent|Ent
-; trp_ent_pl|Ents
-; trp_mountain_goblin|Mountain Goblin
-; trp_mountain_goblin_pl|Mountain Goblins
-; trp_tribal_orc|Tribal Orc
+trp_werewolf|Weerwolf
+trp_werewolf_pl|Weerwolven
+trp_moria_troll|Grot Trol
+trp_moria_troll_pl|Grot Trollen
+trp_moria_vet_troll|Getrainde Grot Trol
+trp_moria_vet_troll_pl|Getrainde Grot Trollen
+trp_moria_armored_troll|Gepantserde Grot Trol
+trp_moria_armored_troll_pl|Gepantserde Grot Trol
+trp_gunda_troll|Bergtrol
+trp_gunda_troll_pl|Bergtrollen
+trp_gunda_vet_troll|Getrainde Bergtrol
+trp_gunda_vet_troll_pl|Getrainde Bergtrollen
+trp_gunda_placeholder|Getrainde Bergtrol
+trp_gunda_placeholder_pl|Getrainde Bergtrollen
+trp_isen_troll|Trol van Isengard
+trp_isen_troll_pl|Trollen van Isengard
+trp_isen_vet_troll|Getrainde Trol van Isengard
+trp_isen_vet_troll_pl|Getrainde Trollen van Isengard
+trp_isen_armored_troll|Gepantserde Trol van Isengard
+trp_isen_armored_troll_pl|Gepantserde Trollen van Isengard
+trp_mordor_troll|Mordor Troll
+trp_mordor_troll_pl|Mordor Trollen
+trp_mordor_vet_troll|Door Mordor Getrainde Troll
+trp_mordor_vet_troll_pl|Door Mordor Getrainde Trollen
+trp_mordor_olog_hai|Olog Hai van Mordor
+trp_mordor_olog_hai_pl|Olog Hai van Mordor
+trp_troll_placeholder_1|Grot Trol
+trp_troll_placeholder_1_pl|Grot Trollen
+trp_troll_placeholder_2|Grot Trol
+trp_troll_placeholder_2_pl|Grot Trollen
+trp_troll_placeholder_3|Grot Trol
+trp_troll_placeholder_3_pl|Grot Trollen
+trp_troll_placeholder_4|Grot Trol
+trp_troll_placeholder_4_pl|Grot Trollen
+trp_troll_placeholder_5|Grot Trol
+trp_troll_placeholder_5_pl|Grot Trollen
+trp_troll_placeholder_6|Grot Trol
+trp_troll_placeholder_6_pl|Grot Trollen
+trp_wild_troll|Wilde Grot Trol
+trp_wild_troll_pl|Wilde Grot Trollen
+trp_ent|Ent
+trp_ent_pl|Ents
+trp_mountain_goblin|Bergkobold
+trp_mountain_goblin_pl|Bergkobolden
+trp_tribal_orc|Stamork
 trp_tribal_orc_pl|Stammen Orks
-; trp_tribal_orc_warrior|Tribal Orc Warrior
-; trp_tribal_orc_warrior_pl|Tribal Orc Warriors
-; trp_tribal_orc_chief|Tribal Orc Chief
-; trp_tribal_orc_chief_pl|Tribal Orc Chiefs
+trp_tribal_orc_warrior|Stam Ork Krijger
+trp_tribal_orc_warrior_pl|Stam Ork Krijgers
+trp_tribal_orc_chief|Stam Ork Opperhoofd
+trp_tribal_orc_chief_pl|Stam Ork Opperhoofden
 trp_a3_dism_skirmisher_of_rohan|Schermutselaar van Rohan
 trp_a3_dism_skirmisher_of_rohan_pl|Schermutselaren van Rohan
 trp_a4_dism_veteran_skirmisher_of_rohan|Ervaren Schermutselaar van Rohan
 trp_a4_dism_veteran_skirmisher_of_rohan_pl|Ervaren Schermutselaren van Rohan
 trp_a5_dism_elite_skirmisher_of_rohan|Elite Schermutselaar van Rohan
 trp_a5_dism_elite_skirmisher_of_rohan_pl|Elite Schermutselaren van Rohan
-; trp_ac5_camel_rider|Harad Camel Rider
-; trp_ac5_camel_rider_pl|Harad Camel Riders
-; trp_aragorn|Aragorn
-; trp_legolas|Legolas
-; trp_gimli|Gimli
-; trp_pippin_notmet|halfling
-; trp_merry_notmet|halfling
-; trp_pippin|Pippin
-; trp_merry|Merry
+trp_ac5_camel_rider|Harad Kamelenruiter
+trp_ac5_camel_rider_pl|Harad Kamelenruiters
+trp_aragorn|Aragorn
+trp_legolas|Legolas
+trp_gimli|Gimli
+trp_pippin_notmet|halfling
+trp_merry_notmet|halfling
+trp_pippin|Pepijn
+trp_merry|Merijn

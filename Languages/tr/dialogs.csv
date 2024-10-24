@@ -723,8 +723,8 @@ dlga_woodelf_help_1:woodelf_help_2.1|Daha önce hiç böyle büyük bir Ork gör
 dlga_woodelf_help_2:woodelf_help_3.1|Sen? Tabi ki öylesin! Yetenekli bir savaşçı oldugunu gördüm. Bugün gerçekten çok şanslıyım, hemen köyüme gidip halkımı bu igrenç canavarlara karşı uyaracagım.
 dlga_woodelf_help_3:close_window|Sana İyi yolculuklar dilerim, Torbal. Eminim ki tekrar karşılaşacagız.
 dlga_healers_meet:healer_who|Ne yapıyorsun?.
-; dlga_healers_meet:healers_ask|I need your help.
-; dlga_healers_ask_2:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
+dlga_healers_meet:healers_ask|Yardımına ihtiyacım var.
+dlga_healers_ask_2:healer_wound_ask|Yoldaşlarımın ve benim iyileşmesi için zamandan daha fazlasına ihtiyaç duyan ciddi yaralarımız var. Yaralarımızı iyileştirebilir misin?
 dlga_healers_ask_2:healer_injured_ask|Ben ve ordum yaralandık ve onların bizi iyileştirmesini beklemek için zamanımız yok. Bize yardım saglayabilir misiniz?
 dlga_healers_meet:close_window|Hiçbir şey.
 dlga_healers_injured_check:healers_injured_heal|Evet, lütfen devam et.
@@ -966,7 +966,7 @@ dlga_troublesome_bandits_intro_1:troublesome_bandits_intro_2|Buralarda sorun ç�
 dlga_troublesome_bandits_intro_2:close_window|Şimdi öldür! Sonra ye!
 dlga_start:fangorn_orcs_intro_1|Oh? Yaşlı adam, eger hizmetkarlarının işlerini bölersen, mutlu olmayacak.
 dlga_fangorn_orcs_intro_1:fangorn_orcs_intro_2|Bu ormana zarar vermeyi kes ve ayrıl, yoksa pişman olursun!
-dlga_fangorn_orcs_intro_2:close_window|Ha-ha! İstedigimiz gibi keser ve yakarız! Seninle işimiz bittikten sonra...
+dlga_fangorn_orcs_intro_2:close_window|Har-har! İstedigimiz gibi keser ve yakarız! Seninle işimiz bittikten sonra...
 dlga_start:disbanded_troop_ask|Bizden seni takip etmemizi ister misin?
 dlga_disbanded_troop_ask:disbanded_troop_join|Evet. Haydi beraber at sürelim.
 dlga_disbanded_troop_ask:close_window|Hayır. Şimdi olmaz.
@@ -1072,8 +1072,8 @@ dlga_party_reinforce_check_1:party_reinforce_end.1|Bu askerlerin bize bir faydas
 dlga_start:close_window.33|Senin yüzünden geç kalacagım! Büyücüler asla geç kalmaz!
 dlga_start:close_window.34|O... çagırıyoooor...
 dlga_start:secret_guardian_let_through|Dur!
-; dlga_secret_guardian_let_through:secret_guardian_let_through1|I am {playername}, {s24}. Let me through!
-; dlga_secret_guardian_let_through1:close_window|Yes commander, you may pass.
+dlga_secret_guardian_let_through:secret_guardian_let_through1|Ben {playername}, {s24}. Geçmeme izin ver!
+dlga_secret_guardian_let_through1:close_window|Evet kumandanım, geçebilirsiniz.
 dlga_start:close_window.36|Ordaki! Hayatta mısın? İyi! Bir sopa sallayamazsın! Bunu al!
 dlga_start:ori_choose_1|İyi savaştın kuzen! Şu ana kadar nasıl hayatta kaldıgını bilmiyorum. Son zamanlarda bize katıldıgını hatırlıyorum, tüm bunlardan önce... Balin düşmeden önce... Nerelisiniz?
 dlga_ori_choose_1:ori_choose_finish|Ben bir izciydim, Ayı halkının yakınındaki ormanlara yollandım. Geçenlerde Balin'in grubunu duydum ve ona katıldım.
@@ -1083,19 +1083,19 @@ dlga_ori_choose_finish:close_window|Bilmek güzel! Bunları buldum, geçmişiniz
 dlga_start:close_window.37|Bu paslı yetenekleri kullanıyor gibisin, ha? İşte, bunun bir kısmını al. Daha iyi hissetmeni saglayacak. Daha fazla ork geliyor!
 dlga_start:close_window.38|Şu tozlu şeyi çıkar ve bunu giy. Seni daha iyi korur. Bu orklar sert ısırıyor!
 dlga_start:close_window.39|Büyük birşey geliyor! Hazır olun!
-dlga_start:close_window.40|Onlardan çok fazla var... ama biz Cüceyiz!
+dlga_start:close_window.40|Onlardan çok fazla var... ancak biz cüceleriz!
 dlga_start:close_window.41|Bu orklar hazinelerle dolu bir magara açtılar. İşte buldugum bazı şeyler, bunları al ve devam et.
 dlga_start:close_window.42|Hayır... Onları duydum... dışarıdalar! Her yerdeler!
 dlga_start:close_window.43|Burada... Lordumuz Balin'in... bunların hepsine degersin...
 dlga_start:party_encounter_hostile_attacker|Bize karşı hiçbir şansın yok. Şimdi teslim ol ya da hepinizi gebertiriz...
 dlga_party_encounter_hostile_attacker:close_window|Saldırmayın! Teslim oluyoruz.
-dlga_party_encounter_hostile_attacker:close_window.1|Seninle sonuna kadar savaşacagız.
+dlga_party_encounter_hostile_attacker:close_window.1|Seninle sonuna kadar savaşacagız!
 dlga_start:party_encounter_hostile_defender|Ne istiyorsun?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Teslim ol yada öl!
 dlga_party_encounter_hostile_defender:close_window|Hiçbir şey. Seni kendi halinde bırakıyorum.
 dlga_start:close_window.45|* sessizce sana bakar *
 dlga_start:battle_reason_stated|İçkimi kafatasından yudumlayacagım!
-dlga_battle_reason_stated:close_window|Senden korkmuyorum.Savaşacagım.
+dlga_battle_reason_stated:close_window|Senden korkmuyorum. Savaşacagım.
 dlga_start:free|Evet, Senin için ne yapabilirim?
 dlga_free:view_char_requested|Bana kendinden bahset.
 dlga_view_char_requested:view_char|Pekala, baksana...
