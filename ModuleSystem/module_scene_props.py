@@ -2064,7 +2064,15 @@ scene_props = [
 ("trees_end", 0, "spike_a", "0", []), 
 ("football_ball",0,"stone_ball","0", []),
 ("dolguldur_copy",0,"dolguldur_copy","0", []),
-("morannon_gate",0,"morannon_gate","bo_morannon_gate", [(ti_on_scene_prop_init,[(neg|is_currently_night),(set_fog_distance,800,0x150101),]),]),
+("morannon_gate",0,"morannon_gate","bo_morannon_gate", [
+     (ti_on_scene_prop_init,[ (set_fixed_point_multiplier, 100), 
+         (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,450,0x150101),
+         (else_try),(is_currently_night),(set_fog_distance,450,0x150101), 
+         ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 25, 25, 25),(set_startup_sun_light, 5, 5, 5),(set_startup_ground_ambient_light, 12, 12, 12), ] or []) + [ 
+         (else_try),(set_fog_distance,800,0x150101),         
+         ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 40, 40, 40),(set_startup_sun_light, 10, 10, 10),(set_startup_ground_ambient_light, 12, 12, 12), ] or []) + [ 
+         (try_end),
+     ])]),
 ("mor_tower_a",0,"mor_tower_a","bo_mor_tower_a", []),
 ("evil_element",0,"evil_element","0", []),
 ("evil_tunnel_a",0,"evil_tunnel_a","bo_evil_tunnel_a", []),
@@ -2751,11 +2759,22 @@ scene_props = [
 
 ("fog_elven_settlement",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[(set_fixed_point_multiplier, 100),
   (try_begin),(is_currently_night),(set_fog_distance,3000,0xeFFF3D),(else_try),(set_fog_distance,3000,0xeFFF3D),] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 95, 95, 75), ] or []) + [  (try_end)])]),
-("fog_darkish_glow",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[
-  (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,1300,0x010101),(else_try),(is_currently_night),(set_fog_distance,1000,0x010101),(else_try),(set_fog_distance,1500,0x010101),(try_end)])]),
-("fog_reddish_glow",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[
-  (try_begin),(is_currently_night),(set_fog_distance,3000,0x911101),(else_try),(set_fog_distance,1500,0x911101),(try_end)])]),
-("fog_greenish_glow",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[
+("fog_darkish_glow",sokf_invisible,"collision_cube", "0", [ #Mordor and Minas Tirith siege
+     (ti_on_scene_prop_init,[ (set_fixed_point_multiplier, 100), 
+         (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,700,0x010101),
+         (else_try),(is_currently_night),(set_fog_distance,600,0x010101), 
+         ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 25, 25, 25),(set_startup_sun_light, 5, 5, 5),(set_startup_ground_ambient_light, 12, 12, 12), ] or []) + [ 
+         (else_try),(set_fog_distance,900,0x010101),         
+         ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 40, 40, 40),(set_startup_sun_light, 10, 10, 10),(set_startup_ground_ambient_light, 12, 12, 12), ] or []) + [ 
+         (try_end),
+     ])]),
+("fog_reddish_glow",sokf_invisible,"collision_cube", "0", [# Goblin town and Isengard underground
+    (ti_on_scene_prop_init,[(set_fixed_point_multiplier, 100),
+        (set_fog_distance,80,0x0F0200),
+        ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 12, 9, 9),(set_startup_sun_light, 75, 75, 75), ] or []) + [
+  ])]),
+("fog_greenish_glow",sokf_invisible,"collision_cube", "0", [ #Mirkwood
+    (ti_on_scene_prop_init,[(set_fixed_point_multiplier, 100),
   (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,300,0x0F190F),(else_try),(is_currently_night),(set_fog_distance,250,0x090F09),(else_try),(set_fog_distance,400,0x172617),(try_end)])]),
   
 ("isen_furnace",0,"isen_furnace","bo_isen_furnace", []),
@@ -3269,10 +3288,15 @@ scene_props = [
 ("morgul_tower_7",0,"morgul_gondor_tower_7_evil","bo_gondor_tower_7", []),
 ("morgul_wall",0,"morgul_mt_wall_evil","bo_morgul_mt_wall_evil", []),
 ("morgul_gate_tower",0,"morgul_mt_gate_tower_evil","bo_mt_tower", []),
-("morgul_gate_house",0,"morgul_mt_gate_house_evil","bo_morgul_mt_gate_house_evil", [(ti_on_scene_prop_init,
-            [(try_begin),(is_currently_night),(set_fog_distance,450,0x07291D),
-			 (else_try),                      (set_fog_distance,1000,0x10261E),
-			 (try_end),])]),
+("morgul_gate_house",0,"morgul_mt_gate_house_evil","bo_morgul_mt_gate_house_evil", [
+     (ti_on_scene_prop_init,[ (set_fixed_point_multiplier, 100), 
+         (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,450,0x07291D),
+         (else_try),(is_currently_night),(set_fog_distance,450,0x07291D), 
+         ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 25, 30, 25),(set_startup_sun_light, 5, 5, 5),(set_startup_ground_ambient_light, 12, 18, 12), ] or []) + [ 
+         (else_try),(set_fog_distance,700,0x10261E),         
+         ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 40, 40, 40),(set_startup_sun_light, 10, 10, 10),(set_startup_ground_ambient_light, 12, 18, 12), ] or []) + [ 
+         (try_end),
+     ])]),
 ("morgul__gate",0,"morgul_gate","bo_morgul_gate", []),
 ("morgul_short_tower",0,"morgul_short_tower","bo_morgul_short_tower", []),	
 ("morgul_tower_b_vp_E",0,"morgul_tower_b_color","0", []),
@@ -4348,6 +4372,7 @@ scene_props = [
     (val_add, ":anim", "anim_fall_face_hold"),
 	(spawn_agent, ":troop"),
     (agent_set_team, reg0, 0),(agent_set_animation, reg0, ":anim"),(agent_set_animation_progress, reg0, 100),
+    (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
     
         #remove weapons and helms
   ] + (is_a_wb_sceneprop==1 and [    
@@ -4399,6 +4424,7 @@ scene_props = [
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
     (spawn_agent, ":troop"), (assign, ":fighter_1", reg0),(agent_set_team, ":fighter_1", 0),(agent_ai_set_interact_with_player, ":fighter_1", 0),(agent_set_is_alarmed, ":fighter_1", 1),(agent_set_no_death_knock_down_only, ":fighter_1", 1),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, ":fighter_1"),
+    (agent_set_slot, ":fighter_1", slot_agent_walker_type, 5), #don't talk
     
     (position_move_y, pos1, 500,0),
     (position_rotate_z, pos1, 180),
@@ -4407,6 +4433,7 @@ scene_props = [
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_2, ":fighter_2"),
     (agent_set_team, ":fighter_2", 0),(agent_ai_set_interact_with_player, ":fighter_2", 0),(agent_set_is_alarmed, ":fighter_2", 1),(agent_set_no_death_knock_down_only, ":fighter_2", 1),
     (agent_add_relation_with_agent, ":fighter_2", ":fighter_1", -1),(agent_add_relation_with_agent, ":fighter_1", ":fighter_2", -1),
+    (agent_set_slot, ":fighter_2", slot_agent_walker_type, 5), #don't talk
 
     (try_begin),
         (faction_slot_eq,"$ambient_faction", slot_faction_side, faction_side_good),
@@ -4449,6 +4476,7 @@ scene_props = [
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_scripted_destination, reg0, pos1), 
     (agent_set_damage_modifier, reg0, 0),
+    (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
 
     (assign, ":weapon_found", 0),
     (try_for_range, ":weapon_slot", 0, 4), #find weapon, non-polearm first
@@ -4555,6 +4583,7 @@ scene_props = [
     (agent_set_scripted_destination, reg0, pos1), 
     (agent_add_relation_with_agent, reg0, ":target", -1),(agent_ai_set_interact_with_player, reg0, 0),(agent_set_is_alarmed, reg0, 1),(agent_set_no_death_knock_down_only, reg0, 1),
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
     
     (assign, ":bow_found", 0),    
     (try_for_range, ":weapon_slot", 0, 4), #check if they have a bow or throwing weapon
@@ -4599,6 +4628,7 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_woodaxe_1h", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_woodaxe_1h"),
         (agent_set_look_target_position, reg0, pos2),
+        (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
         ]),
         
    (ti_on_scene_prop_hit,
@@ -4648,6 +4678,7 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_woodaxe_2h", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_woodaxe_2h"),
         (agent_set_look_target_position, reg0, pos2),
+        (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
         ]),
         
    (ti_on_scene_prop_hit,
@@ -4697,6 +4728,7 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_woodaxe_2h", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_woodaxe_2h"),
         (agent_set_look_target_position, reg0, pos2),
+        (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
         ]),
         
    (ti_on_scene_prop_hit,
@@ -4746,6 +4778,7 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_pickaxe", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_pickaxe"),
         (agent_set_look_target_position, reg0, pos2),
+        (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
         ]), 
     
    (ti_on_scene_prop_hit,
@@ -4782,7 +4815,8 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_hammer", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_hammer"),
         (agent_set_look_target_position, reg0, pos1),
-        (agent_set_scripted_destination, reg0, pos2, 0, 1),           
+        (agent_set_scripted_destination, reg0, pos2, 0, 1),
+        (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
         ]),
         
    (ti_on_scene_prop_hit,
@@ -4834,6 +4868,7 @@ scene_props = [
     (agent_set_no_dynamics, reg0, 1),
     (agent_set_position, reg0, pos3),
     #(agent_set_scripted_destination, reg0, pos3, 0, 1),
+    (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
     ] or []) + [   
     ])]),
 
@@ -4861,6 +4896,7 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_hammer", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_hammer"),
         (agent_set_look_target_position, reg0, pos1),
+        (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
         ]),
         
    (ti_on_scene_prop_hit,
@@ -4912,6 +4948,7 @@ scene_props = [
         (agent_equip_item, reg0, ":item_to_equip", 1),
         (agent_set_wielded_item, reg0, ":item_to_equip"),
         (agent_set_look_target_position, reg0, pos1),
+        (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
         ]),
         
    (ti_on_scene_prop_hit,
@@ -4962,6 +4999,7 @@ scene_props = [
         (agent_equip_item, reg0, "itm_civilian_shovel", 1),
         (agent_set_wielded_item, reg0, "itm_civilian_shovel"),
         (agent_set_look_target_position, reg0, pos1),
+        (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
         ]),
         
    (ti_on_scene_prop_hit,
@@ -5001,6 +5039,7 @@ scene_props = [
         (agent_equip_item, reg0, "itm_orc_axe", 1),
         (agent_set_wielded_item, reg0, "itm_orc_axe"),
         (agent_set_look_target_position, reg0, pos2),
+        (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
          ]),
         
    (ti_on_scene_prop_hit,
@@ -5049,6 +5088,7 @@ scene_props = [
         (agent_set_position, reg0, pos1),
         (agent_set_scripted_destination, reg0, pos1), #so they turn back
         #(agent_set_look_target_position, reg0, pos1),
+        (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
         ] or []) + [          ]),
         ]),
 
@@ -5076,6 +5116,7 @@ scene_props = [
         #(agent_set_position, reg0, pos2),
         (agent_set_scripted_destination, reg0, pos2), #so they turn back
         (agent_set_look_target_position, reg0, pos1),
+        (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
         ] or []) + [          ]),
         ]),
 
@@ -5113,6 +5154,7 @@ scene_props = [
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (spawn_agent, "trp_evil_priest"),(agent_set_team, reg0, 0),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),
+    (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
 
     #remove weapons and helms (for old savegames)
   ] + (is_a_wb_sceneprop==1 and [  
