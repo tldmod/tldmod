@@ -261,7 +261,6 @@ attacker_team
 defender_team_2
 attacker_team_2
 defender_team_3
-attacker_team_3
 tld_show_tutorials
 g_arena_training_max_opponents
 belfry_positioned
@@ -642,7 +641,6 @@ tld_option_siege_relax_rate
 tld_option_regen_rate
 tld_option_regen_limit
 tld_option_morale
-allies_leadership
 allies_coh
 enemies_coh
 base_kills
@@ -736,7 +734,6 @@ g_option_good
 g_option_evil_text
 g_option_evil
 cheat_find_item_range_begin
-mouse_coordinates
 intro_presentation_stage
 g_presentation_obj_item_select_2
 g_presentation_obj_item_select_3
@@ -753,9 +750,8 @@ force_scene
 show_hide_labels
 reinforcements_arrived
 tld_campaign_diffulty
-tld_options_overlay_14
-g_display_agent_labels
 cheatmode_used
 allies_coh_modifier
 enemies_coh_modifier
 tutorial_1_state
+allies_leadership

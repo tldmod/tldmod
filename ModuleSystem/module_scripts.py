@@ -2073,31 +2073,21 @@ scripts = [
 	(assign, "$FormAI_AI_no_defense",0), #Kham - FormAI - don't allow AI Defensive
 	(party_set_slot, "p_main_party", slot_party_number_following_player, 0),
 	(assign, "$lore_mode", 1),# unused      
-    (assign, "$play_ambient_sounds", 1), 
-	#Kham - Squelch compiler warnings
-	(assign, "$original_savegame_version", 0),
-    (assign, "$cheatmode_used", 0),      
-    (assign, "$hold_f1", 0),  
-	(assign, "$dormant_spawn_radius", 0),  
-    (assign, "$mouse_coordinates", 0), #wb only
-    (assign, "$attacker_archer_melee",0),
-    (assign, "$attacker_team_3", 0),
+    (assign, "$play_ambient_sounds", 1),
     (assign, "$tld_start_war_by_day_or_level", 0), #0= by level (old setting), 1=by day (new setting)
-    (assign, "$tld_options_overlay_14", 0),
-    (assign, "$g_display_agent_labels", 0),
+    (assign, "$cheatmode_used", 0),
     (assign, "$tutorial_1_state", 0),
+    
+	#Kham - Squelch compiler warnings
+      
+    (assign, "$hold_f1", 0),  
+	(assign, "$dormant_spawn_radius", 0),
+    (assign, "$attacker_archer_melee",0),
 
-    (val_mul, "$hold_f1", "$cheatmode_used"),
-    (val_mul, "$hold_f1", "$original_savegame_version"),
 	(val_mul, "$hold_f1", "$dormant_spawn_radius"),
-    (val_mul, "$hold_f1", "$mouse_coordinates"),
     (val_mul, "$hold_f1", "$attacker_archer_melee"),
     (val_mul, "$attacker_archer_melee", "$hold_f1"),
-    (val_mul, "$attacker_archer_melee", "$attacker_team_3"), 
-    (val_mul, "$attacker_archer_melee", "$tld_options_overlay_14"),   
-    (val_mul, "$attacker_archer_melee", "$g_display_agent_labels"), 
-    (val_mul, "$attacker_archer_melee", "$allies_leadership"),     
-    (val_mul, "$attacker_archer_melee", "$tld_show_tutorials"),
+    (val_mul, "$attacker_archer_melee", "$allies_leadership"), #wb only
     (val_mul, "$attacker_archer_melee", "$fog_red"),  
     (val_mul, "$attacker_archer_melee", "$fog_green"),  
     (val_mul, "$attacker_archer_melee", "$fog_blue"),  
@@ -2119,7 +2109,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 4110),  #Rafa: Savegame version
+    (assign,"$savegame_version", 4115),  #Rafa: Savegame version
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -2143,7 +2133,10 @@ scripts = [
 	(assign, "$FormAI_AI_Control_Troops", 0), #AI Control Dead Player's Troops (FormV5)
 	(assign, "$slow_when_wounded",1), #Kham - Agents get slower when wounded
 	(assign, "$battle_encounter_effects",1), #Kham - Special Effects on Battlefield
-
+    (assign, "$tld_town_player_speed_multi", 120),
+    (assign, "$mouse_coordinates", 0), #wb only
+    (assign, "$g_display_agent_labels", 0), #disabled
+    
 	#Custom Camera Initialize	
 	(call_script, "script_init_camera"),	
 
@@ -25601,7 +25594,15 @@ command_cursor_scripts = [
         (lt, "$savegame_version", 4110),
         (assign, "$savegame_version", 4110),
         (assign, "$tld_start_war_by_day_or_level", 0),
-    (try_end),    
+    (try_end),
+    
+    (try_begin), #reset war start global
+        (lt, "$savegame_version", 4115),
+        (assign, "$savegame_version", 4115),
+        ] + (is_a_wb_script==1 and [
+        (assign, "$tld_town_player_speed_multi", 120),
+         ] or []) + [ 
+    (try_end),  
 ]),
 
 #Kham

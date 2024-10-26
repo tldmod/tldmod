@@ -90,7 +90,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-10-23_19:57___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-10-26_15:51___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -124,6 +124,8 @@ qstr_Permanent_death_for_ Permanent_death_for_lords_and_companions:__
 qstr_Permanent_death_for_p Permanent_death_for_player_(that_is_YOU!):__
 qstr_Battle_morale_system Battle_morale_system:__
 qstr_Animal_ambushes:__ Animal_ambushes:__
+qstr_Player_speed_buff_in Player_speed_buff_in_towns:__
+qstr_{!}{reg0}% {!}{reg0}%
 qstr_Fallen_rider_damage_ Fallen_rider_damage_messages:__
 qstr_No_Messages No_Messages
 qstr_Player_damage_only Player_damage_only
@@ -140,6 +142,7 @@ qstr_Set_to_Native_if_you Set_to_Native_if_you_encounter_any_types_of_AI_problem
 qstr_Disable_cutscenes_if Disable_cutscenes_if_you_encounter_any_crashes_at_the_start_of_the_war.
 qstr_Campaign_Difficulty_a Campaign_Difficulty_affects_abundance_of_volunteers,_lord_party_size,_and_strength_income_for_allied_factions.
 qstr_Be_aware_that_many_q Be_aware_that_many_quests_and_campaign_mechanics_scale_with_player_level._Increasing_this_setting_will_give_you_more_time_to_prepare,_but_will_make_the_war_unfold_quicker.
+qstr_Requires_TLD_NewForm Requires_TLD_NewFormAI
 qstr_Troop_Tree Troop_Tree
 qstr__Click_on_a_unit_for (Click_on_a_unit_for_details)
 qstr_* *
@@ -1182,9 +1185,6 @@ qstr_Normal Normal
 qstr_Defender_only Defender_only
 qstr_Halved Halved
 qstr_Battles_only Battles_only
-qstr_Doubled Doubled
-qstr_Tripled Tripled
-qstr_Quadrupled Quadrupled
 qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
 qstr_You_used_the_Orc_Bre You_used_the_Orc_Brew.
 qstr_You_and_your_compani You_and_your_companions_drink_a_sip_of_Miruvor._You_feel_refreshed_and_strengthened.

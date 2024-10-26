@@ -1392,7 +1392,9 @@ mission_templates = [ # not used in game
 	(1, 0, ti_once, [],[ # set walkers, music and ambient sounds
 			(get_player_agent_no, "$current_player_agent"),
              ] + ((is_a_wb_mt==1) and [
-            (agent_set_speed_modifier, "$current_player_agent", 120), # speed up player in towns
+            (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi"), # speed up player in towns            
+          # (assign, reg0, "$tld_town_player_speed_multi"),
+          # (display_message, "@Player speed {reg0}%"),   
               ] or []) + [
 			(try_begin),
 				(eq, "$g_mt_mode", tcm_default),
