@@ -3895,49 +3895,25 @@ game_menus = [
 
     #swy-- added these two by per khamukkamu request, they make sense:
     ("strat_tweaks_influence_gain_rate",
-      [
-        (try_begin),
-          (eq, "$tld_option_influence_gain_rate", 0),
-          (str_store_string, s7, "@Normal"),
-        (else_try),
-          (eq, "$tld_option_influence_gain_rate", 1),
-          (str_store_string, s7, "@Doubled"),
-        (else_try),
-          (eq, "$tld_option_influence_gain_rate", 2),
-          (str_store_string, s7, "@Tripled"),
-        (else_try),
-          (eq, "$tld_option_influence_gain_rate", 3),
-          (str_store_string, s7, "@Quadrupled"),
-        (try_end),
+      [ (store_mul, reg0, "$tld_option_influence_gain_rate", 20),
+        (val_add, reg0, 100),
       ],
-      "Influence gain rate: {s7}",
+      "Influence gain rate: {reg0}%",
       [
         (val_add, "$tld_option_influence_gain_rate", 1),
-        (val_mod, "$tld_option_influence_gain_rate", 4),
+        (val_mod, "$tld_option_influence_gain_rate", 6),
         (jump_to_menu, "mnu_auto_strat_tweak"),
       ]
     ), #0,1,2,3
 
     ("strat_tweaks_rank_gain_rate",
-      [
-        (try_begin),
-          (eq, "$tld_option_rank_gain_rate", 0),
-          (str_store_string, s7, "@Normal"),
-        (else_try),
-          (eq, "$tld_option_rank_gain_rate", 1),
-          (str_store_string, s7, "@Doubled"),
-        (else_try),
-          (eq, "$tld_option_rank_gain_rate", 2),
-          (str_store_string, s7, "@Tripled"),
-        (else_try),
-          (eq, "$tld_option_rank_gain_rate", 3),
-          (str_store_string, s7, "@Quadrupled"),
-        (try_end),
+      [(store_mul, reg0, "$tld_option_rank_gain_rate", 20),
+        (val_add, reg0, 100),
       ],
-      "Rank gain rate: {s7}",
+      "Rank gain rate: {reg0}%",
       [
         (val_add, "$tld_option_rank_gain_rate", 1),
-        (val_mod, "$tld_option_rank_gain_rate", 4),
+        (val_mod, "$tld_option_rank_gain_rate", 6),
         (jump_to_menu, "mnu_auto_strat_tweak"),
       ]
     ), #0,1,2,3
