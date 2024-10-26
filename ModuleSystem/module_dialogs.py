@@ -12822,22 +12822,41 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone|plyr,"town_dweller_talk", [], "[Leave]", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone,"start", [(eq, "$talk_context", 0),
-                    (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
-                    (party_slot_eq,"$current_town",slot_town_lord, "trp_player")],
+                  (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 5), 
+                  (troop_get_type, ":race", "$g_talk_troop"),
+                  (is_between, ":race", tf_orc_begin, tf_orc_end),],
+"Get lost!", "close_window",[(call_script,"script_stand_back"),]],
+
+[anyone,"start", [(eq, "$talk_context", 0),
+                  (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 5), 
+                  (troop_get_type, ":race", "$g_talk_troop"),
+                  (neg|is_between, ":race", tf_orc_begin, tf_orc_end),],
+"Leave me alone!", "close_window",[(call_script,"script_stand_back"),]],
+
+[anyone,"start", [(eq, "$talk_context", 0),
+                   (this_or_next|is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
+                    (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 2), #guards
+                    (call_script, "script_get_faction_rank", "$g_encountered_party_faction"),
+                    (ge, reg0, 7),
+                    (eq, "$players_kingdom", "$g_encountered_party_faction"),],
 "Yes, Commander?", "player_castle_guard_talk",[]],
 [anyone|plyr,"player_castle_guard_talk", [], "How goes the watch, soldier?", "player_castle_guard_talk_2",[]],
 [anyone,"player_castle_guard_talk_2", [], "All is quiet Commander. Nothing to report.", "player_castle_guard_talk_3",[]],
 [anyone|plyr,"player_castle_guard_talk_3", [], "Good. Keep your eyes open.", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone,"start", [(eq, "$talk_context", 0),
-                    (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
+                    (this_or_next|is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
+                    (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 2), #guards
                     (is_between,"$g_encountered_party_faction",kingdoms_begin, kingdoms_end),
-                    (eq, "$players_kingdom", "$g_encountered_party_faction"),
+                    (call_script, "script_get_faction_rank", "$g_encountered_party_faction"), 
+                    (ge, reg0, 4),
+                    (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"),
                     (str_store_party_name, s10, "$current_town")],
-"Good day, Commander. It's good having you here in {s10}.", "close_window",[(call_script,"script_stand_back"),]],
+"Good day, {s24}. It's good having you here in {s10}.", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone,"start", [(eq, "$talk_context", 0),
-                    (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
+                  (this_or_next|is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
+                    (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 2), #guards
                     (is_between,"$g_encountered_party_faction",kingdoms_begin, kingdoms_end)],
 "Mind your manners around here and we'll have no trouble.", "close_window",[(call_script,"script_stand_back"),]],
 
