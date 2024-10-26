@@ -1529,25 +1529,39 @@ mission_templates = [ # not used in game
       ]),      
 
     ###walker props    WB only
-  (3, 0, 0, [], [ 
+  (1, 0, 3, [], [ 
     (set_fixed_point_multiplier, 100),
-    (get_player_agent_no, ":player_agent"),
     (scene_prop_get_num_instances, ":num_walker_props", "spr_troop_civ_walker"),
     (try_for_range, ":count", 0, ":num_walker_props"),
         (scene_prop_get_instance, ":instance_no", "spr_troop_civ_walker", ":count"),
-        (prop_instance_get_position, pos1, ":instance_no"),
-            (try_for_agents, ":agent_no", pos1, 200),
-                (neq, ":agent_no", ":player_agent"),
-                (agent_slot_eq, ":agent_no", slot_agent_walker_type, 1),
-                (store_random_in_range, ":chance", 0, 10),
-                (lt, ":chance", 4),
-                (store_random_in_range, ":rand_target", 0, ":num_walker_props"),
-                (scene_prop_get_instance, ":instance_no_target", "spr_troop_civ_walker", ":rand_target"),
-                (prop_instance_get_position, pos2, ":instance_no_target"),
-                (agent_set_scripted_destination, ":agent_no", pos2),
-                (store_random_in_range, ":speed", 2, 6), 
-                (agent_set_speed_limit, ":agent_no", ":speed"),
-            (try_end),
+        (scene_prop_get_slot, ":walker_agent", ":instance_no", slot_prop_agent_1),
+        (prop_instance_get_variation_id, ":var_base", ":instance_no"),
+        (try_begin),
+            #(agent_is_in_special_mode, ":walker_agent"),
+            (agent_get_position, pos1, ":walker_agent"),
+            #(agent_get_scripted_destination, pos2, ":walker_agent"),
+            (agent_get_slot, ":cur_target", ":walker_agent", slot_agent_target_entry_point),
+            (eq, ":cur_target", 0), #send them on their way
+            (store_random_in_range, ":rand_target", 0, ":num_walker_props"),
+            (scene_prop_get_instance, ":instance_no_target", "spr_troop_civ_walker", ":rand_target"),
+            (prop_instance_get_variation_id, ":var_target", ":instance_no_target"),
+            (eq, ":var_target", ":var_base"),
+            (agent_set_slot, ":walker_agent", slot_agent_target_entry_point, ":instance_no_target"),
+            (prop_instance_get_position, pos2, ":instance_no_target"),
+            (agent_set_scripted_destination, ":walker_agent", pos2),
+        (else_try),
+            (gt, ":cur_target", 0),
+            (prop_instance_get_position, pos2, ":cur_target"),
+            (get_distance_between_positions, ":dist", pos1, pos2),
+            (le, ":dist", 200),
+            (store_random_in_range, ":rand_target", 0, ":num_walker_props"),
+            (scene_prop_get_instance, ":instance_no_target", "spr_troop_civ_walker", ":rand_target"),
+            (prop_instance_get_variation_id, ":var_target", ":instance_no_target"),
+            (eq, ":var_target", ":var_base"),
+            (agent_set_slot, ":walker_agent", slot_agent_target_entry_point, ":instance_no_target"),
+            (prop_instance_get_position, pos2, ":instance_no_target"),
+            (agent_set_scripted_destination, ":walker_agent", pos2),
+        (try_end),
     (try_end),
       ]),
 
@@ -1555,7 +1569,7 @@ mission_templates = [ # not used in game
 
   (10, 0, ti_once, [], [ # Kham - Set Tutorial Message RE: Rumours
       (try_begin),
-        (eq, "$first_time_town", 0),(neq, "$cheat_mode", 1),
+        (eq, "$first_time_town", 0),(neq, "$cheat_mode", 1), (eq, "$tld_show_tutorials", 1),
         (tutorial_message, "@While visiting towns, settlements and camps, you can talk to people walking around. Members of different factions have different things to say - some will let you in on their own thoughts, others will share rumours. Both could merely give you a better understanding of the person's culture and faction, or they might hold clues to finding secret locations, or tips and tricks for travelling through the Wilderness and fighting in the War of the Ring.",0,15),
         (assign, "$first_time_town",1),
       (try_end),
@@ -2198,6 +2212,7 @@ mission_templates = [ # not used in game
 
   (6, 0 , ti_once, [
       (eq, "$tld_option_formations", 1),
+      (eq, "$tld_show_tutorials", 1),
       (le, "$formations_tutorial", 2)],
       [
       ] + (is_a_wb_mt==1 and [

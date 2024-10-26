@@ -2749,8 +2749,8 @@ scene_props = [
 ("ai_limiter_gate_breached" ,sokf_invisible|sokf_type_ai_limiter|sokf_moveable,"barrier_8m" ,"bo_barrier_8m" , []), # all instances moved away when gate_destructible is destroyed
 ("barrier_cube" ,sokf_invisible,"collision_cube" ,"bo_collision_cube", []), #a poli-efficient replacement for some colmeshes 
 
-("fog_elven_settlement",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[
-  (try_begin),(is_currently_night),(set_fog_distance,3000,0xeFFF3D),(else_try),(set_fog_distance,1500,0xeFFF3D),(try_end)])]),
+("fog_elven_settlement",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[(set_fixed_point_multiplier, 100),
+  (try_begin),(is_currently_night),(set_fog_distance,3000,0xeFFF3D),(else_try),(set_fog_distance,3000,0xeFFF3D),] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 95, 95, 75), ] or []) + [  (try_end)])]),
 ("fog_darkish_glow",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[
   (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,1300,0x010101),(else_try),(is_currently_night),(set_fog_distance,1000,0x010101),(else_try),(set_fog_distance,1500,0x010101),(try_end)])]),
 ("fog_reddish_glow",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[
@@ -4136,7 +4136,7 @@ scene_props = [
 ("troop_messenger",sokf_invisible,"arrow_helper_blue","0", [
     (ti_on_init_scene_prop,[
     (store_random_in_range, ":chance", 0, 100),
-    (lt, ":chance", 60),
+    (lt, ":chance", 40),
     (store_trigger_param_1, ":instance_no"),
     (store_faction_of_party, ":faction", "$current_town"),
     (faction_get_slot, ":troop", ":faction", slot_faction_rider_troop),
@@ -4188,9 +4188,12 @@ scene_props = [
     (store_random_in_range, reg6, 0, 100),
     (agent_set_animation_progress, reg0, reg6),
     
-    (agent_set_slot, reg0, slot_agent_walker_type, 1), #walker
-    (agent_set_slot, reg0, slot_agent_target_entry_point, ":instance_no"), #store home position
-  
+    (agent_set_slot, reg0, slot_agent_walker_type, 4), #prop walker
+    (store_random_in_range, ":speed", 2, 6), 
+    (agent_set_speed_limit, reg0, ":speed"),
+    ] + (is_a_wb_sceneprop==1 and [     
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+    ] or []) + [    
   ])]),
 
 ("light_white",sokf_invisible,"light_sphere","0",  [

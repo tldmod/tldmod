@@ -183,7 +183,7 @@ slot_agent_secret_guardian       = 8 #1=active, -1=let pass, 0=inactive
 slot_agent_assigned_prop          = 9
 slot_agent_map_overlay_id         = 10
 # slot_agent_target_entry_point     = 11 #duplicate
-slot_agent_walker_type            = 12 # 1= civilians; 2=patrols; 3=messengers
+slot_agent_walker_type            = 12 # 1= civilians; 2=patrols; 3=messengers; 4=prop walkers
 slot_agent_last_knockdown_time    = slot_agent_walker_type #Use for tracking Knockbacks    
 
 # TLD

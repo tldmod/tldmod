@@ -14526,8 +14526,8 @@ scripts = [
       (position_move_y, pos5, ":y"),
       #(neg|is_currently_night),
         
-        (store_random_in_range, ":r", 0, 7),
-        (ge, ":r", 5),
+        (store_random_in_range, ":r", 0, 10),
+        (ge, ":r", 7),
         ] + (is_a_wb_script==1 and [
         (play_sound_at_position, ":sound", pos5),
         ] or [
@@ -21594,6 +21594,10 @@ scripts = [
      #check rumor heard already (once a day), troop slot for merchants/lords/etc, center slots for walkers
 	 (assign, ":no_new_rumor", 0),
      (agent_get_entry_no, ":entry_no", ":agent"),
+     (try_begin), #for prop walkers, assign a random entry
+        (lt, ":entry_no", 1),
+        (store_random_in_range, ":entry_no", town_walker_entries_start, town_walker_entries_start+num_town_walkers),
+     (try_end),
      (try_begin),
 	    (is_between,":entry_no", town_walker_entries_start, town_walker_entries_start+num_town_walkers),
 		(val_add, ":entry_no", slot_center_rumor_check_begin),

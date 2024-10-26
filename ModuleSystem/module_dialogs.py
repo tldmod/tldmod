@@ -12590,8 +12590,10 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "Excuse me?", "town_dweller_talk",[(assign, "$welfare_inquired",0),(assign, "$rumors_inquired",0),(assign, "$info_inquired",0)]],
 
 [anyone,"start", [(eq, "$talk_context", 0),
-                    (agent_get_entry_no, ":entry", "$g_talk_agent"),
-          (is_between,":entry",town_walker_entries_start, 40)], 
+                    #(agent_get_entry_no, ":entry", "$g_talk_agent"),
+          #(this_or_next|is_between,":entry",town_walker_entries_start, 40), #regular walker
+          (this_or_next|agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 1),#regular walker
+          (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 4),], #prop walker
 "Good day, Commander.", "town_dweller_talk",[(assign, "$welfare_inquired", 0),(assign, "$rumors_inquired",0),(assign, "$info_inquired",0)]],
 
 [anyone|plyr,"town_dweller_talk", [(check_quest_active, "qst_hunt_down_fugitive"),
@@ -12850,23 +12852,23 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone|plyr,"hall_guard_easter_egg", [], "No, I don't care for gossip.", "close_window",[(call_script,"script_stand_back"),]],
 [anyone,"hall_guard_easter_egg_scene", [], "Well.. an unusual group of adventurers appeared recently: a man, a dwarf and an elf, and then...", "close_window",[(call_script,"script_stand_back"),(jump_to_menu, "mnu_auto_intro_joke"),(finish_mission)]],
 
-[anyone,"start", [(eq, "$talk_context", tc_court_talk),
-                    (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
-                    (is_between,"$g_encountered_party_faction",kingdoms_begin, kingdoms_end),
-                    (party_slot_eq,"$current_town",slot_town_lord, "trp_player")],
-"Your orders, Commander?", "hall_guard_talk",[]],
+# [anyone,"start", [(eq, "$talk_context", tc_court_talk),
+                    # (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
+                    # (is_between,"$g_encountered_party_faction",kingdoms_begin, kingdoms_end),
+                    # (party_slot_eq,"$current_town",slot_town_lord, "trp_player")],
+# "Your orders, Commander?", "hall_guard_talk",[]],
 
 [anyone,"start", [(eq, "$talk_context", tc_court_talk),
                     (is_between,"$g_talk_troop",regular_troops_begin, regular_troops_end),
                     (is_between,"$g_encountered_party_faction",kingdoms_begin, kingdoms_end)],
 "We are not supposed to talk while on guard, Commander.", "close_window",[(call_script,"script_stand_back"),]],
                      
-[anyone|plyr,"hall_guard_talk", [], "Stay on duty and let me know if anyone comes to see me.", "hall_guard_duty",[]],
-[anyone,"hall_guard_duty", [], "Yes, Commander. As you wish.", "close_window",[(call_script,"script_stand_back"),]],
-[anyone|plyr,"hall_guard_talk", [], "I want you to arrest this man immediately!", "hall_guard_arrest",[]],
-[anyone,"hall_guard_arrest", [], "Who do you want arrested, Commander?", "hall_guard_arrest_2",[]],
-[anyone|plyr,"hall_guard_arrest_2", [], "Ah, never mind my high spirits lads.", "close_window",[(call_script,"script_stand_back"),]],
-[anyone|plyr,"hall_guard_arrest_2", [], "Forget it. I will find another way to deal with this.", "close_window",[(call_script,"script_stand_back"),]],
+# [anyone|plyr,"hall_guard_talk", [], "Stay on duty and let me know if anyone comes to see me.", "hall_guard_duty",[]],
+# [anyone,"hall_guard_duty", [], "Yes, Commander. As you wish.", "close_window",[(call_script,"script_stand_back"),]],
+# [anyone|plyr,"hall_guard_talk", [], "I want you to arrest this man immediately!", "hall_guard_arrest",[]],
+# [anyone,"hall_guard_arrest", [], "Who do you want arrested, Commander?", "hall_guard_arrest_2",[]],
+# [anyone|plyr,"hall_guard_arrest_2", [], "Ah, never mind my high spirits lads.", "close_window",[(call_script,"script_stand_back"),]],
+# [anyone|plyr,"hall_guard_arrest_2", [], "Forget it. I will find another way to deal with this.", "close_window",[(call_script,"script_stand_back"),]],
 [anyone,"enemy_defeated", [], "Arggh! I hate this.", "close_window",[(call_script,"script_stand_back"),]],
 [anyone,"party_relieved", [], "Thank you for helping us against those bastards.", "close_window",[(call_script,"script_stand_back"),]],
 
