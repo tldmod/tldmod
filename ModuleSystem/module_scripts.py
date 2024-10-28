@@ -541,7 +541,7 @@ scripts = [
           (neq, ":difference", 0),
           (call_script, "script_get_faction_rank", ":fac"),
           (assign, ":old_rank", reg0),
-          (faction_get_slot, ":old_rank", ":fac", slot_faction_rank),
+          (faction_get_slot, ":old_rank_points", ":fac", slot_faction_rank),
 		  
 		  (try_begin), #InVain: Home faction bonus
 			(eq, "$players_kingdom", ":fac"),
@@ -551,12 +551,14 @@ scripts = [
 			#(display_message, "@home faction bonus"),
 		  (try_end),
 
-		  #InVain: Charisma bonus
-          (store_attribute_level, ":player_charisma", trp_player, ca_charisma),
-          (val_mul, ":difference", 100),
-          (val_mul, ":difference", ":player_charisma"),
-          (val_div, ":difference", 1200), #starts to scale from 12, reduces below
-          (val_max, ":difference", 1),
+		  (try_begin), #InVain: Charisma bonus
+              (gt, ":difference", 0),
+              (store_attribute_level, ":player_charisma", trp_player, ca_charisma),
+              (val_mul, ":difference", 100),
+              (val_mul, ":difference", ":player_charisma"),
+              (val_div, ":difference", 1200), #starts to scale from 12, reduces below
+              (val_max, ":difference", 1),
+          (try_end),
           
           # gain influence = 1/8 rank points gain (rounded) Was 1/10
           (faction_get_slot, ":old_inf", ":fac", slot_faction_influence),
@@ -583,9 +585,9 @@ scripts = [
           (val_div, ":difference", 100),
           #swy-- 
 
-          (val_add, ":old_rank", ":difference"),
-          (ge,      ":old_rank", 0), #no negative rank points
-          (faction_set_slot, ":fac", slot_faction_rank, ":old_rank"),
+          (val_add, ":old_rank_points", ":difference"),
+          #(ge,      ":old_rank_points", 0), #no negative rank points
+          (faction_set_slot, ":fac", slot_faction_rank, ":old_rank_points"),
           (call_script, "script_get_faction_rank", ":fac"),
           (assign, ":new_rank", reg0),
 
