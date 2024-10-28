@@ -4037,7 +4037,8 @@ scripts = [
     [#(store_script_param_1, ":party_no"),
      #(assign, ":troop_no", "trp_player"),
       (assign, ":limit", 0),
-      (store_skill_level, ":skill", "skl_prisoner_management", "trp_player"),
+      #(store_skill_level, ":skill", "skl_prisoner_management", "trp_player"),
+      (party_get_skill_level, ":skill", "skl_prisoner_management", p_main_party),
       (store_mul, ":limit", ":skill", 5),
       (val_add, ":limit", 5),
       (assign, reg0, ":limit"),
@@ -5883,6 +5884,7 @@ scripts = [
             (party_get_skill_level, ":prs_management", "p_main_party", "skl_prisoner_management"),
             (val_mul, ":prs_management", ":stack_size"),
             (val_div, ":prs_management", 20),
+            (val_add, ":prs_management", 1),
             (val_add, ":stack_size", 1),
             (store_random_in_range, ":stack_size_new", ":prs_management", ":stack_size"),
             (assign, ":stack_size", ":stack_size_new"),
@@ -18632,8 +18634,8 @@ scripts = [
         
         (eq, ":can_capture", 1),   
         (party_get_skill_level, ":prs_management", "p_main_party", "skl_prisoner_management"),
-        (val_mul, ":prs_management", 9),
-        (val_add, ":prs_management", 20), #scaling goes 20, 29, 38, 47, 56, 65, 74, 83, 92, 102, 110
+        (val_mul, ":prs_management", 10),
+        (val_add, ":prs_management", 20), #scaling goes 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120
         
         (store_random_in_range, ":rand", 0, 100),
         (gt, ":prs_management", ":rand"),

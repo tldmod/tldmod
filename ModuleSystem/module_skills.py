@@ -41,7 +41,7 @@ from header_skills import *
 skills = [
   ("trade","Bargainer",sf_base_att_int|sf_effects_party,10,"Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)"),
   ("leadership","Leadership",sf_base_att_cha,10,"Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)"),
-  ("prisoner_management", "Prisoner Management",sf_base_att_cha,10,"Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)"), 
+  ("prisoner_management", "Prisoner Management",sf_base_att_cha|sf_effects_party,10,"Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)"), 
   ("reserved_1","Reserved Skill 1",sf_base_att_cha|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_2","Reserved Skill 2",sf_base_att_cha|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_3","Reserved Skill 3",sf_base_att_cha|sf_inactive,10,"This is a reserved skill."), 

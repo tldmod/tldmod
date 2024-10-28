@@ -4477,6 +4477,7 @@ tld_calculate_wounded = (ti_on_agent_killed_or_wounded, 0, 0, [], [
     (try_end),
     (val_add, ":chance", ":surgery"),
     #(val_div, ":chance", 100),
+    (val_add, ":chance", 10),
     (val_min, ":chance", 90),
     
     (assign, reg77, ":chance"),
@@ -4487,13 +4488,13 @@ tld_calculate_wounded = (ti_on_agent_killed_or_wounded, 0, 0, [], [
         (le, ":rnd", ":chance"),
         (set_trigger_result, 2), #wound
         # (try_begin),
-            # (agent_is_ally, ":agent_no"),
+            # (neg|agent_is_ally, ":agent_no"),
             # (display_message, "@{s55} wounded, surgery {reg75}, level {reg76}, chance: {reg77}"),
         # (try_end),
     (else_try),
         (set_trigger_result, 1), #kill
         # (try_begin),
-            # (agent_is_ally, ":agent_no"),
+            # (neg|agent_is_ally, ":agent_no"),
             # (display_message, "@{s55} killed, surgery {reg75}, level {reg76}, chance: {reg77}"),
         # (try_end),
     (try_end),        
