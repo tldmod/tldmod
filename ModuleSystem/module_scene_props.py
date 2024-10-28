@@ -2757,23 +2757,29 @@ scene_props = [
 ("ai_limiter_gate_breached" ,sokf_invisible|sokf_type_ai_limiter|sokf_moveable,"barrier_8m" ,"bo_barrier_8m" , []), # all instances moved away when gate_destructible is destroyed
 ("barrier_cube" ,sokf_invisible,"collision_cube" ,"bo_collision_cube", []), #a poli-efficient replacement for some colmeshes 
 
-("fog_elven_settlement",sokf_invisible,"collision_cube", "0", [(ti_on_scene_prop_init,[(set_fixed_point_multiplier, 100),
+("fog_elven_settlement",sokf_invisible|sokf_place_at_origin,"collision_cube", "0", [(ti_on_scene_prop_init,[(set_fixed_point_multiplier, 100),
   (try_begin),(is_currently_night),(set_fog_distance,3000,0xeFFF3D),(else_try),(set_fog_distance,3000,0xeFFF3D),] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 95, 95, 75), ] or []) + [  (try_end)])]),
-("fog_darkish_glow",sokf_invisible,"collision_cube", "0", [ #Mordor and Minas Tirith siege
-     (ti_on_scene_prop_init,[ (set_fixed_point_multiplier, 100), 
-         (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,700,0x010101),
-         (else_try),(is_currently_night),(set_fog_distance,600,0x010101), 
-         ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 25, 25, 25),(set_startup_sun_light, 5, 5, 5),(set_startup_ground_ambient_light, 12, 12, 12), ] or []) + [ 
-         (else_try),(set_fog_distance,900,0x010101),         
-         ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 40, 40, 40),(set_startup_sun_light, 10, 10, 10),(set_startup_ground_ambient_light, 12, 12, 12), ] or []) + [ 
+("fog_darkish_glow",sokf_invisible|sokf_place_at_origin,"collision_cube", "0", [ #Mordor and Minas Tirith siege, Erebor
+     (ti_on_scene_prop_init,[ (store_trigger_param_1, ":instance_no"),(set_fixed_point_multiplier, 1000), (prop_instance_get_position, pos2, ":instance_no"), (position_move_z, pos2, 2000), (prop_instance_set_position, ":instance_no", pos2),
+     (prop_instance_get_scale, pos1, ":instance_no"), (position_get_scale_x, ":scale", pos1),
+         (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (val_mul, ":scale", 2),(val_div, ":scale", 3),
+         (else_try),(is_currently_night),(set_fog_distance,130,0x010101), (val_div, ":scale", 2),
+         ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 25, 25, 25),(set_startup_sun_light, 5, 5, 5),(set_startup_sun_light, 2, 2, 2),(set_startup_ground_ambient_light, 12, 12, 12), ] or []) + [ 
+         (else_try),
+         (set_fog_distance,200,0x010101), ] + (is_a_wb_sceneprop==1 and [  (set_startup_ambient_light, 40, 40, 40),(set_startup_sun_light, 10, 10, 10),(set_startup_ground_ambient_light, 12, 12, 12), ] or []) + [ 
          (try_end),
+         (set_fog_distance,":scale",0x010101),
+         (eq, ":scale", 1000), #only show tutorial message if scale is unchanged
+          ] + (is_a_wb_sceneprop==1 and [ (is_edit_mode_enabled), ] or []) + [ 
+         (display_message, "@{!} debug: scale up down to increase/decrease fog distance, default is 1000m."),
+        (display_message, "@{!} debug: scale prop to disable this message"),
      ])]),
-("fog_reddish_glow",sokf_invisible,"collision_cube", "0", [# Goblin town and Isengard underground
+("fog_reddish_glow",sokf_invisible|sokf_place_at_origin,"collision_cube", "0", [# Goblin town and Isengard underground
     (ti_on_scene_prop_init,[(set_fixed_point_multiplier, 100),
         (set_fog_distance,80,0x0F0200),
         ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 12, 9, 9),(set_startup_sun_light, 75, 75, 75), ] or []) + [
   ])]),
-("fog_greenish_glow",sokf_invisible,"collision_cube", "0", [ #Mirkwood
+("fog_greenish_glow",sokf_invisible|sokf_place_at_origin,"collision_cube", "0", [ #Mirkwood
     (ti_on_scene_prop_init,[(set_fixed_point_multiplier, 100),
   (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,300,0x0F190F),(else_try),(is_currently_night),(set_fog_distance,250,0x090F09),(else_try),(set_fog_distance,400,0x172617),(try_end)])]),
   
@@ -2907,7 +2913,7 @@ scene_props = [
 ("distant_mountain_snow_1",sokf_place_at_origin|sokf_moveable,"distant_mountain_snow_1","0", []),
 ("distant_mountain_snow_2",sokf_place_at_origin|sokf_moveable,"distant_mountain_snow_2","0", []),
 
-("osgiliath_far_f",0,"osgiliath_far","bo_apple_basket", []),   
+("osgiliath_far_f",0,"osgiliath_far","0", []),   
 ("hill",0,"hill_steppe","bo_hill", []),
 ("water_river",0,"TLD_water_plane","0", []),
 ("water_fall",0,"water_fall","0", []),
