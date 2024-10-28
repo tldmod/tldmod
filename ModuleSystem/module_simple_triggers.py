@@ -3190,8 +3190,8 @@ simple_triggers = [
 					(str_store_party_name, s1, ":capital"),
 					(spawn_around_party, ":capital", "pt_volunteers"),
 					(assign, ":reserve_party_cap", reg0),
-					(party_add_members, ":reserve_party_cap", "trp_looter", 1), #.. or change_screen_exchange_with_party will crash #InVain: dunno if needed in this context too, keeping just in case.
-					(party_remove_members, ":reserve_party_cap", "trp_looter", 1),
+					(party_add_members, ":reserve_party_cap", "trp_mercenaries_end", 1), #.. or change_screen_exchange_with_party will crash #InVain: dunno if needed in this context too, keeping just in case.
+					(party_remove_members, ":reserve_party_cap", "trp_mercenaries_end", 1),
 					(troop_set_slot, "trp_player", slot_troop_player_reserve_party, ":reserve_party_cap"),
 					(party_attach_to_party, ":reserve_party_cap", ":capital"),
 					(party_set_name, ":reserve_party_cap", "@{playername}'s Reserves"),

@@ -667,9 +667,9 @@ game_menus = [
 		(set_visitors, 19, "trp_i5_mordor_num_assassin",			5),
 		(set_visitors, 20, "trp_c4_mordor_num_horseman",	5),
 		(set_visitors, 21, "trp_c5_mordor_num_knight",		5),
-		(set_visitors, 22, "trp_black_numenorean_captain",			5),
-		(set_visitors, 23, "trp_black_numenorean_lieutenant",		4),
-		(set_visitors, 25, "trp_high_captain_of_mordor",			4),
+		(set_visitors, 22, "trp_c5_mordor_num_knight",			5),
+		(set_visitors, 23, "trp_c5_mordor_num_knight",		4),
+		(set_visitors, 25, "trp_i5_mordor_num_champion",			4),
 		(set_visitors, 26, "trp_ac4_harondor_horse_archer",		6),
 		(set_visitors, 27, "trp_ac5_harondor_black_snake",		6),
 		(str_store_string, s16, "str_custom_battle_2"),
@@ -1261,7 +1261,7 @@ game_menus = [
 		(assign,":enemy_n",4),
 		(assign,":ally_entry",1),
 		(assign,":enemy_entry",30),
-		(try_for_range,":troop","trp_mercenaries_end","trp_looter"),
+		(try_for_range,":troop","trp_mercenaries_end","trp_last"),
 		    (neg|troop_is_hero,":troop"),
 			(troop_get_type,":troop_faction",":troop"),
 			(neq,":troop_faction",tf_troll), #GA: no trolls on battlefield
@@ -2145,7 +2145,7 @@ game_menus = [
 				(faction_get_slot,":troop",":faction",slot_faction_tier_2_troop),# get troop from faction, you can set other tier
 				(try_begin),
 					(le,":troop",0),#if there are any problems with troop, it's set to normal bandit
-					(assign,":troop","trp_bandit"),
+					(assign,":troop","trp_mountain_goblin"),
 				(try_end),
 				(set_visitors,1,":troop",5),
                 

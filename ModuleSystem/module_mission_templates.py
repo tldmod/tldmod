@@ -4501,14 +4501,14 @@ mission_templates = [ # not used in game
      (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]),
 
      # Defender choke points (was 10)
-     (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]), # team left flank
-     (42,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]), # team center
-     (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]), # team right flank
+     (41,mtef_defenders|mtef_team_0|mtef_infantry_first|mtef_no_leader,af_override_horse,aif_start_alarmed,8,[]), # team left flank
+     (42,mtef_defenders|mtef_team_2|mtef_infantry_first|mtef_no_leader,af_override_horse,aif_start_alarmed,8,[]), # team center
+     (43,mtef_defenders|mtef_team_4|mtef_infantry_first|mtef_no_leader,af_override_horse,aif_start_alarmed,8,[]), # team right flank
 
      # Defender reinforcements (was 15)
-     (44,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), #entry 5 for add_reinforcements_to_entry - 9, Kham
+     (44,mtef_defenders|mtef_team_0|mtef_reverse_order,af_override_horse,aif_start_alarmed,0,[]), #entry 5 for add_reinforcements_to_entry - 9, Kham
      (45,mtef_defenders|mtef_team_2,af_override_horse,aif_start_alarmed,0,[]),
-     (46,mtef_defenders|mtef_team_4,af_override_horse,aif_start_alarmed,0,[]),
+     (46,mtef_defenders|mtef_team_4|mtef_reverse_order,af_override_horse,aif_start_alarmed,0,[]),
 
      # Attacker reinforcements (was 0)
      (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,10,[]), #entry 8 for add_reinforcements_to_entry - 12, Kham
@@ -4543,7 +4543,7 @@ mission_templates = [ # not used in game
 
 # Siege Tutorial
   (6, 0 , ti_once, [
-      (eq, "$formations_tutorial", 3), (neq, "$cheat_mode", 1)],
+      (eq, "$formations_tutorial", 3), (neq, "$cheat_mode", 1),(eq, "$tld_show_tutorials", 1),],
       [
       ] + (is_a_wb_mt==1 and [
       (tutorial_message_set_background, 1), 
@@ -4563,11 +4563,10 @@ mission_templates = [ # not used in game
     (assign,"$g_presentation_battle_active", 0),
     (assign,"$telling_counter",0),
     (assign, "$reinforcements_arrived", 0),
-    (assign, "$attacker_archer_melee",0),
     (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
     (assign, "$defender_team"  , 0),(assign, "$attacker_team"  , 1),
     (assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3),
-    (assign, "$defender_team_3", 4),(assign, "$attacker_team_3", 5),
+    (assign, "$defender_team_3", 4),
 	(try_for_range, ":chokepoint_slot", 0, 7), #reset all slots
 		(troop_set_slot,"trp_no_troop",":chokepoint_slot",0),
 	(try_end),
@@ -4575,10 +4574,20 @@ mission_templates = [ # not used in game
 	(try_for_range, ":defender_spawn", 44, 47),
 		(entry_point_get_position, pos10, ":defender_spawn"),
         (position_set_z_to_ground_level, pos10),
-        (position_move_z, pos10, 300),
+        (position_move_z, pos10, 400),
         (set_spawn_position, pos10),
         (spawn_scene_prop, "spr_banner_stand_auto"),
         (scene_prop_set_slot, reg0, slot_prop_sound, ":defender_spawn"),
+        # (try_begin), #spawn a captain, just for fun (not in yet, because we need to add more slot states first to keep the captain from spawning everytime this trigger fires
+            # (party_get_slot, ":captain_troop", "$current_town", slot_town_captain),
+            # (gt, ":captain_troop", 0),
+            # (add_visitors_to_current_scene, ":entry_number", ":captain_troop", 1),
+            # (agent_set_team, reg0, ":defteam"),
+            # ] + (is_a_wb_mt==1 and [ 
+            # (agent_set_division, reg0, grc_archers),
+            # ] or []) + [
+            # (agent_set_scripted_destination, reg0, pos10),
+        # (try_end),        
 	(try_end),
     ] or []) + [
     
@@ -5049,15 +5058,15 @@ mission_templates = [ # not used in game
         (assign,":defteam","$defender_team"), #0, 2, 4
         (assign,":entry_number", 44), # 44,45,46 --> actual entry point
         (get_player_agent_no, ":player_agent"),
-        (try_for_range,":team",0,3),
-            (troop_slot_eq,"trp_no_troop",":team",-1),
+        (try_for_range,":slot",0,3),
+            (troop_slot_eq,"trp_no_troop",":slot",-1),
             (entry_point_get_position, pos10, ":entry_number"),
             (team_give_order, ":defteam", grc_infantry, mordr_hold), 
             (team_give_order, ":defteam", grc_cavalry, mordr_hold), 
             (team_give_order, ":defteam", grc_everyone, mordr_stand_closer),
             (team_give_order, ":defteam", grc_archers, mordr_stand_ground), 
             (team_set_order_position, ":defteam", grc_everyone, pos10),
-            (assign, reg78, ":team"),
+            (assign, reg78, ":defteam"),
             (assign, reg77, ":entry_number"),
             #(display_message, "@team {reg78} retreats to entry {reg77}"),
             (val_add,":defteam",2),
@@ -5122,7 +5131,7 @@ mission_templates = [ # not used in game
 
     #update player team
     ] + (is_a_wb_mt==1 and [
-  (7, 0, 0,[],
+  (3, 0, 0,[],
     [(store_mission_timer_a,":mission_time"),
     (get_player_agent_no, ":player_agent"),
     (agent_get_position, pos1, ":player_agent"), 
@@ -5148,8 +5157,10 @@ mission_templates = [ # not used in game
             (agent_is_ally, ":agent_no"),
             (gt, ":mission_time", 45),
             (neg|is_between, ":troop_id", trp_moria_troll, trp_ent+1),
-            (store_random_in_range, ":join_chance", 0, 500),
-            (le, ":join_chance", ":player_cha"),
+            (store_random_in_range, ":random", 0, 500),
+            (store_mul, ":join_chance", "$attacker_reinforcement_stage", 2), #so that progressively more attackers join player team
+            (val_add, ":join_chance", ":player_cha"),
+            (le, ":random", ":join_chance"),
             (agent_set_team, ":agent_no", 6),
             (agent_clear_scripted_mode, ":agent_no"),
             (agent_force_rethink, ":agent_no"),
@@ -5467,7 +5478,7 @@ mission_templates = [ # not used in game
     (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
     (assign, "$defender_team"  , 0),(assign, "$attacker_team"  , 1),
     (assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3),
-    (assign, "$defender_team_3", 4),(assign, "$attacker_team_3", 5),
+    (assign, "$defender_team_3", 4),
 	(try_for_range, ":chokepoint_slot", 0, 7), #reset all slots
 		(troop_set_slot,"trp_no_troop",":chokepoint_slot",0),
 	(try_end),		   
@@ -6652,7 +6663,7 @@ mission_templates = [ # not used in game
     ] + ((is_a_wb_mt==1) and [    
     (1, 0, ti_once, [],[ 
         (get_player_agent_no, "$current_player_agent"),
-        (agent_set_speed_modifier, "$current_player_agent", 120)]),
+        (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi")]),
      ] or []) + [
     
 ]),
@@ -6687,7 +6698,7 @@ mission_templates = [ # not used in game
     ] + ((is_a_wb_mt==1) and [    
     (1, 0, ti_once, [],[ 
         (get_player_agent_no, "$current_player_agent"),
-        (agent_set_speed_modifier, "$current_player_agent", 120)]),
+        (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi")]),
      ] or []) + [
 ]),
 ( "dungeon_crawl_moria_deep",mtf_battle_mode,-1,
@@ -6703,7 +6714,7 @@ mission_templates = [ # not used in game
     ] + ((is_a_wb_mt==1) and [    
     (1, 0, ti_once, [],[ 
         (get_player_agent_no, "$current_player_agent"),
-        (agent_set_speed_modifier, "$current_player_agent", 120)]),
+        (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi")]),
      ] or []) + [    
 ]),
 

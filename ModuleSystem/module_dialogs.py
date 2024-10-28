@@ -552,9 +552,9 @@ dialogs = [
 [anyone|auto_proceed,"HD_defense_01", [], "Now, let us rest for a while. The enemy will be here by nightfall.", "close_window",
    [(call_script, "script_send_legion", "p_town_isengard", "$current_town", 70),
     (assign, ":guardian_party", reg0),
-    (party_add_leader, ":guardian_party", "trp_high_captain_of_isengard", 4),
+    (party_add_leader, ":guardian_party", "trp_isen_captain", 4),
     (party_add_template, ":guardian_party", "pt_dunland_war_party"), #add a few Dunlendings
-    (troop_raise_skill, "trp_high_captain_of_isengard", skl_tactics, 10),    
+    (troop_raise_skill, "trp_isen_captain", skl_tactics, 10),    
     (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_party, ":guardian_party"),
     (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, -2),
     (quest_set_slot, "qst_guardian_party_quest", slot_quest_expiration_days, 5), #add a few days
@@ -2056,8 +2056,8 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (eq, ":reserve_party", 0), #first time or depleted
         (spawn_around_party, "$g_encountered_party", "pt_volunteers"),
         (assign, ":reserve_party", reg0),
-        (party_add_members, ":reserve_party", "trp_looter", 1), #.. or change_screen_exchange_with_party will crash
-        (party_remove_members, ":reserve_party", "trp_looter", 1),
+        (party_add_members, ":reserve_party", "trp_last", 1), #.. or change_screen_exchange_with_party will crash
+        (party_remove_members, ":reserve_party", "trp_last", 1),
         
         (try_begin),
           (is_between, "$g_encountered_party", "p_advcamp_gondor", "p_centers_end"),

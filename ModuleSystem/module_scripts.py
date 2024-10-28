@@ -2225,6 +2225,11 @@ scripts = [
 		(troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 200),
         (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
 	(try_end),
+
+	(try_for_range, ":has_hp_shield", trp_greenwood_captain, trp_end_leaders),
+		(troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 100),
+        (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
+	(try_end),
     
 	(troop_set_slot, "trp_nazgul", slot_troop_hp_shield, 1000000),
 
@@ -25605,6 +25610,38 @@ command_cursor_scripts = [
         (assign, "$tld_town_player_speed_multi", 120),
          ] or []) + [ 
     (try_end),  
+    
+    (try_begin), #update troop flags and captain slots
+        (lt, "$savegame_version", 4121),
+        (assign, "$savegame_version", 4121),
+        (troop_set_faction, "trp_a5_dun_night_wolf", fac_dunland),
+        (troop_set_type, "trp_a5_dun_night_wolf", tf_dunland),
+        (troop_set_type, "trp_dwarf_captain", tf_dwarf),
+        (troop_set_type, "trp_woodmen_captain", tf_male),
+        (troop_set_type, "trp_umbar_captain", tf_male),
+        (troop_set_type, "trp_mordor_uruk_captain", tf_uruk),
+        (troop_set_type, "trp_moria_captain", tf_uruk),
+        
+        (assign, ":subfac", 0), #assign gondor subfacs
+        (try_for_range, ":troop", trp_pel_captain, trp_end_leaders),
+            (val_add, ":subfac", 1),
+            (troop_set_slot, ":troop", slot_troop_subfaction, ":subfac"),
+        (try_end),
+        
+        (try_for_range_backwards, ":troop", trp_greenwood_captain, trp_end_leaders),
+            (store_troop_faction, ":fac", ":troop"),
+            (try_for_range, ":town", centers_begin, centers_end), #includes advance camps
+                (store_faction_of_party, ":town_faction", ":town"),
+                (eq, ":fac", ":town_faction"),
+                # (party_set_slot, ":town", slot_town_captain, ":troop"),
+                # (eq, ":town_faction", fac_gondor),
+                (troop_get_slot, ":troop_subfac", ":troop", slot_troop_subfaction),
+                (neq, ":troop_subfac", subfac_pelargir), #bugged because of troop overwrite
+                (party_slot_eq, ":town", slot_party_subfaction, ":troop_subfac"),
+                (party_set_slot, ":town", slot_town_captain, ":troop"),
+            (try_end),
+        (try_end),
+    (try_end),      
 ]),
 
 #Kham
