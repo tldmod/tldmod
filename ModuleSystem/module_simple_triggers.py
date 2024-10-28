@@ -3099,19 +3099,23 @@ simple_triggers = [
         (neg|faction_slot_eq, ":faction", slot_faction_home_theater, ":active_theater"), #not in home theater
         
         (faction_get_slot, ":strength", ":faction", slot_faction_strength),
-        (gt, ":strength", 1500), #Kham- don't create adv camps when lower than 1500
+        (gt, ":strength", 3000), #Kham- don't create adv camps when lower than 1500 #InVain -- fac_str_weak = 3000
         
         (faction_get_slot, ":adv_camp", ":faction", slot_faction_advance_camp),
         (neg|party_is_active, ":adv_camp"), #not already established
         
         (faction_get_slot, ":camp_requested_hours", ":faction", slot_faction_advcamp_timer),
-        (val_add, ":camp_requested_hours", 5*24), # 3 days after faction changes theater or previous camp destroyed - Changed to 5 Days (kham)
+        (val_add, ":camp_requested_hours", 7*24), # 3 days after faction changes theater or previous camp destroyed - Changed to 5 Days (kham) - changed to 7 days (InVain)
         (ge, ":cur_hours", ":camp_requested_hours"),
         
-        (store_random_in_range, ":rand", 0, 20000),
-		(lt, ":rand", ":strength"), #faction strength /200 is spawn chance
+        (store_sub, ":time_bonus", ":cur_hours", ":camp_requested_hours"),
+        (val_mul, ":time_bonus", 13), #adds up to ~300 fac str equivalent per day, which increases chances by 10% per day
+        
+        (store_random_in_range, ":rand", 0, 30000),
+        (val_sub, ":rand", ":time_bonus"),
+		(lt, ":rand", ":strength"), #faction strength /300 is spawn chance
         #(lt, ":rand", 30), # 30% chance every 6 hours
-        (val_sub, ":strength", 500),
+        (val_sub, ":strength", 1000),
         (faction_set_slot, ":faction", slot_faction_strength, ":strength"), #simulate effort of establishing an advance camp (hopefully slows down steamrolling)
         
         # set up the advance camp
