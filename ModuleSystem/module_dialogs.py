@@ -128,11 +128,12 @@ dialogs = [
                     (str_store_string_reg,s67,s66), #bug fix
                     # put orc/uruk heads out of the way
           (get_player_agent_no, "$current_player_agent"),
+          (agent_get_position, pos1, "$current_player_agent"),
           (troop_get_type, ":race", "$player_current_troop_type"),
           (try_begin),
             (is_between, ":race", tf_orc_begin, tf_orc_end),
             (agent_get_horse,reg1,"$current_player_agent"),
-            (try_begin),(eq, reg1, -1),(agent_set_animation, "$current_player_agent", "anim_lean_from_camera"),
+            (try_begin),(eq, reg1, -1),(agent_set_animation, "$current_player_agent", "anim_lean_from_camera"), (position_move_y, pos1, -50), (agent_set_position, "$current_player_agent", pos1),
              (else_try),               (agent_set_animation, "$current_player_agent", "anim_lean_from_camera_mounted"),
             (try_end),
           (try_end),
@@ -12776,6 +12777,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (entry_point_get_position, pos1, "$temp"),
     (try_begin),
         (neg|party_slot_ge, "$current_town", slot_town_castle, 1),
+        (eq, "$temp", 23),
         (entry_point_get_position, pos1, 16),
     (try_end),
     (position_move_y, pos1, 150),
@@ -12784,7 +12786,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (agent_set_slot, "$g_talk_agent", slot_agent_is_running_away, 0),
     (agent_clear_scripted_mode, "$g_talk_agent"),
     (agent_set_scripted_destination, "$g_talk_agent", pos1, 0),
-    (agent_set_speed_limit, "$g_talk_agent", 20),
+    (agent_set_speed_limit, "$g_talk_agent", 12),
     (call_script,"script_stand_back")
     ] + (is_a_wb_dialog and [(agent_set_speed_modifier, "$g_talk_agent", 120),] or []) 
     ],
