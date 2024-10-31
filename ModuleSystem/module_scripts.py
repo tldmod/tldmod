@@ -14764,14 +14764,45 @@ scripts = [
        (agent_set_slot, ":cur_agent", slot_agent_walker_type, 1),
        (call_script, "script_set_town_walker_destination", ":cur_agent"),      
 
-      ] + (is_a_wb_script==1 and [       
-       #equip carry items
        (agent_get_troop_id, ":walker_troop", ":cur_agent"),
        (troop_get_type, ":type", ":walker_troop"),
+       #set speed
+	   (try_begin),
+			(try_begin), #rich walkers don't run
+                (this_or_next|party_slot_eq, "$current_town", slot_center_walker_2_troop, ":walker_troop"),
+                (party_slot_eq, "$current_town", slot_center_walker_3_troop, ":walker_troop"),
+                (store_random_in_range,reg10,1,6),
+            (else_try),
+				(this_or_next|eq,":type",tf_orc),
+				(eq,":type",tf_dwarf),
+                #(neq, ":is_guard", 1),
+				(store_random_in_range,reg10,1,11),  # orcs and dwarves walk slower
+			(else_try),
+                #(neq, ":is_guard", 1),
+				(store_random_in_range,reg10,2,12),  # humans                
+			(else_try), #guards move slow
+				(store_random_in_range,reg10,1,3),  
+			(try_end), 
+            (try_begin),
+                (this_or_next|eq, "$current_town", "p_town_west_osgiliath"),
+                (eq, "$current_town", "p_town_east_osgiliath"),
+                (val_add, reg10, 4),
+            (try_end),
+            (agent_set_speed_limit, ":cur_agent", reg10),
+            ] + ((is_a_wb_script==1) and [
+            (lt, reg10, 10),
+            (agent_set_speed_modifier, ":cur_agent", 80), # makes walkers more realistic
+            ] or []) + [                 
+	   (try_end),
+
+      ] + (is_a_wb_script==1 and [       
+       #equip carry items
+       (neq, ":type", tf_uruk), #Uruks aren't workers
+       (neq, ":type", tf_urukhai),
        (store_random_in_range, ":chance", 0, 100),
-       (lt, ":chance", 80),
        
-        #remove weapons and helms     
+        #remove weapons and helms 
+        (lt, ":chance", 80),
         (try_for_range, ":weapon_slot", 0, 4), 
             (agent_get_item_slot, ":item", ":cur_agent", ":weapon_slot"),
             (gt, ":item", 1),
@@ -14791,7 +14822,9 @@ scripts = [
                (this_or_next|party_slot_eq, "$current_town", slot_center_walker_0_troop, ":walker_troop"), #walker troops 0 and 1 are "workers"
                (party_slot_eq, "$current_town", slot_center_walker_1_troop, ":walker_troop"),
                (neq, ":type", tf_female),         
-               (store_random_in_range, ":item_to_use", "itm_civilian_carry_wood_heap", "itm_civilian_carry_honey"),
+               (store_random_in_range, ":item_to_use", "itm_civilian_carry_wood_heap", "itm_civilian_carry_wood2"),
+               (is_between, ":type", tf_orc_begin, tf_orc_end), #orcs don't carry on head
+               (store_random_in_range, ":item_to_use", "itm_civilian_carry_wood_heap", "itm_civilian_carry_basket"),
            (else_try),
                (eq, ":type", tf_female),         
                (store_random_in_range, ":item_to_use", "itm_civilian_carry_amphora", "itm_civilian_carry_wood2"),
@@ -14803,7 +14836,8 @@ scripts = [
         (try_end), 
         
         (try_begin), #carry on back
-            (is_between, ":chance", 40, 80),
+            (is_between, ":chance", 40, 60),
+            (neg|is_between, ":type", tf_orc_begin, tf_orc_end), #orcs don't carry baskets
             (assign, ":item_to_use", 0),
             (this_or_next|party_slot_eq, "$current_town", slot_center_walker_0_troop, ":walker_troop"), #walker troops 0 and 1 are "workers"
             (party_slot_eq, "$current_town", slot_center_walker_1_troop, ":walker_troop"),
@@ -14946,7 +14980,7 @@ scripts = [
      #(agent_get_entry_no, ":entry", ":agent_no"),
      #(agent_get_slot, ":walker_type", ":agent_no", slot_agent_walker_type),
      #(agent_slot_eq, ":agent_no", slot_agent_walker_type, 1), #only for civilian walker
-     (assign, ":is_guard", 0),
+     #(assign, ":is_guard", 0),
        
         (try_begin), #walkers
            #(is_between, ":entry",town_walker_entries_start,40),
@@ -14987,49 +15021,17 @@ scripts = [
             (assign, ":target_entry_point", 10),					
         (try_end),
             
-	      (try_begin),
-	        (agent_set_slot, ":agent_no", slot_agent_target_entry_point, ":target_entry_point"),
-            (ge, ":target_entry_point", 0),
-	        (entry_point_get_position, pos1, ":target_entry_point"),
-	        (try_begin),
-	          (init_position, pos2),
-	          (position_set_y, pos2, 250),
-	          (position_transform_position_to_parent, pos1, pos1, pos2),
-	        (try_end),
-	        (agent_set_scripted_destination, ":agent_no", pos1, 0),
-	   (agent_get_troop_id, ":troop_no", ":agent_no"), # orcs and dwarves walk slower
-	   (troop_get_type,":try_limit",":troop_no"),
-	   (try_begin),
-			# (neq, "$current_town", "p_town_west_osgiliath"), # guys run in osgiliaths
-			# (neq, "$current_town", "p_town_east_osgiliath"),
-#			(neq, "$g_defending_against_siege", 0), # guys run when siege
-			(try_begin), #rich walkers don't run
-                (this_or_next|party_slot_eq, "$current_town", slot_center_walker_2_troop, ":troop_no"),
-                (party_slot_eq, "$current_town", slot_center_walker_3_troop, ":troop_no"),
-                (store_random_in_range,reg10,1,6),
-            (else_try),
-				(this_or_next|eq,":try_limit",tf_orc),
-				(eq,":try_limit",tf_dwarf),
-                (neq, ":is_guard", 1),
-				(store_random_in_range,reg10,1,11),  # orc dwarf walk slower
-			(else_try),
-                (neq, ":is_guard", 1),
-				(store_random_in_range,reg10,2,12),  # humans                
-			(else_try), #guards move slow
-				(store_random_in_range,reg10,1,3),  
-			(try_end), 
-            (try_begin),
-                (this_or_next|eq, "$current_town", "p_town_west_osgiliath"),
-                (eq, "$current_town", "p_town_east_osgiliath"),
-                (val_add, reg10, 4),
-            (try_end),
-            (agent_set_speed_limit, ":agent_no", reg10),
-            ] + ((is_a_wb_script==1) and [
-            (lt, reg10, 10),
-            (agent_set_speed_modifier, ":agent_no", 80), # makes walkers more realistic
-            ] or []) + [                 
-	   (try_end),
-     (try_end),
+    (try_begin),
+        (agent_set_slot, ":agent_no", slot_agent_target_entry_point, ":target_entry_point"),
+        (ge, ":target_entry_point", 0),
+        (entry_point_get_position, pos1, ":target_entry_point"),
+        (try_begin),
+          (init_position, pos2),
+          (position_set_y, pos2, 250),
+          (position_transform_position_to_parent, pos1, pos1, pos2),
+        (try_end),
+        (agent_set_scripted_destination, ":agent_no", pos1, 0),
+    (try_end),
 ]),
 
 # script_siege_init_ai_and_belfry

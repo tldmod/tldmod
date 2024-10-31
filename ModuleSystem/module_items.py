@@ -1563,9 +1563,9 @@ items =[
 ["civilian_carry_wood","Wood",[("ado_wood_carry",0)],itp_type_one_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
 ["civilian_carry_amphora","Amphora",[("amphora_carry",0)],itp_type_one_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
 ["civilian_carry_sack","Sack",[("sack_carry",0)],itp_type_one_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
-["civilian_carry_basket","Wood",[("basket_cloth_carry",0)],itp_type_two_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
-["civilian_carry_honey","Wood",[("honey_pot_new_carry",0)],itp_type_two_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
-["civilian_carry_oil","Wood",[("oil_new_carry",0)],itp_type_two_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
+["civilian_carry_basket","Basket",[("basket_cloth_carry",0)],itp_type_two_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
+["civilian_carry_honey","Honey",[("honey_pot_new_carry",0)],itp_type_two_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
+["civilian_carry_oil","Oil",[("oil_new_carry",0)],itp_type_two_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
 ["civilian_carry_wood2","Wood",[("ado_wood_carry",0)],itp_type_two_handed_wpn|itp_primary,itc_scimitar,300,weight(4.5)|spd_rtng(1000)|weapon_length(1)|swing_damage(1,blunt),0],
 
 #inspired by VC

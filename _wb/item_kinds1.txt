@@ -2900,13 +2900,13 @@ itemsfile version 2
  itm_civilian_carry_sack Sack Sack 1  sack_carry 0  4194306 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
 0
 
- itm_civilian_carry_basket Wood Wood 1  basket_cloth_carry 0  4194307 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
+ itm_civilian_carry_basket Basket Basket 1  basket_cloth_carry 0  4194307 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
 0
 
- itm_civilian_carry_honey Wood Wood 1  honey_pot_new_carry 0  4194307 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
+ itm_civilian_carry_honey Honey Honey 1  honey_pot_new_carry 0  4194307 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
 0
 
- itm_civilian_carry_oil Wood Wood 1  oil_new_carry 0  4194307 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
+ itm_civilian_carry_oil Oil Oil 1  oil_new_carry 0  4194307 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
 0
 
  itm_civilian_carry_wood2 Wood Wood 1  ado_wood_carry 0  4194307 9223388529554358286 300 0 4.5 100 0 0 0 0 1024 232 0 1 0 0 513
