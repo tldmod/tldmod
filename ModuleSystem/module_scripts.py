@@ -1833,6 +1833,7 @@ scripts = [
 
     (party_set_slot, "p_town_cair_andros", slot_town_reinforcements_a, "pt_ithilien_reinf_a"), #cair andros exception
     (party_set_slot, "p_town_cair_andros", slot_town_archer_troop   , "trp_a4_ithilien_ranger"),
+    (party_set_slot, "p_town_cair_andros", slot_town_castle_guard_troop , "trp_a6_ithilien_master_ranger"),
 	(party_set_slot, "p_town_minas_tirith", slot_town_castle_guard_troop, "trp_steward_guard"), # minas tirith exception
 	(party_set_slot, "p_town_woodsmen_village", slot_town_castle_guard_troop, "trp_i5_woodmen_night_guard"), # woodmen exception
 
