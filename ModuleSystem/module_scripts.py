@@ -4038,7 +4038,7 @@ scripts = [
      #(assign, ":troop_no", "trp_player"),
       (assign, ":limit", 0),
       #(store_skill_level, ":skill", "skl_prisoner_management", "trp_player"),
-      (party_get_skill_level, ":skill", "skl_prisoner_management", p_main_party),
+      (party_get_skill_level, ":skill", p_main_party, "skl_prisoner_management"),
       (store_mul, ":limit", ":skill", 5),
       (val_add, ":limit", 5),
       (assign, reg0, ":limit"),
