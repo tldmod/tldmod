@@ -3922,8 +3922,9 @@ simple_triggers = [
             (party_slot_eq, "p_town_isengard", slot_center_is_besieged_by, -1), #triple check
             (neg|check_quest_active, qst_guardian_party_quest),
             (neg|check_quest_finished, qst_guardian_party_quest),
+            (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0), #another check: This slot never resets, so it should make sure the quest can only be given once
             (eq, ":player_side", faction_side_good),
-            (faction_slot_ge, fac_rohan, fac_str_guardian), #Rohan still okay?
+            (faction_slot_ge, fac_rohan, slot_faction_strength, fac_str_guardian), #Rohan still okay?
             (party_slot_eq, "p_town_edoras", slot_center_destroyed, 0), #double check            
             (party_slot_eq, "p_town_edoras", slot_center_is_besieged_by, -1), #triple check
             (call_script, "script_find_theater", "p_main_party"),
