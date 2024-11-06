@@ -3723,6 +3723,7 @@ battle_encounters_effects = [
 # check for Fellbeast chance at battle start
 (ti_after_mission_start, 0, 120, [
 
+    (eq, 0, 1), #disabled for now
     #check involved factions (not player party)
     (assign, ":encountered_party_2_faction", -1),
     (try_begin),
@@ -3734,8 +3735,11 @@ battle_encounters_effects = [
     
     #no fellbeast assigned yet
     (neg|party_slot_eq, "$g_encountered_party", slot_party_battle_encounter_effect, FELLBEAST),
-    (neg|party_slot_eq, "$g_encountered_party_2", slot_party_battle_encounter_effect, FELLBEAST),
-
+    (try_begin),
+        (gt, "$g_encountered_party_2", 0),
+        (neg|party_slot_eq, "$g_encountered_party_2", slot_party_battle_encounter_effect, FELLBEAST),
+    (try_end),
+    
     (gt, "$g_starting_strength_enemy_party", 1000),
     (this_or_next|gt, "$g_starting_strength_friends", 1000),
     (gt, "$g_starting_strength_main_party", 1000),
