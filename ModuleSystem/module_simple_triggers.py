@@ -3912,6 +3912,20 @@ simple_triggers = [
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         (faction_get_slot, ":fac_strength", ":faction_no", slot_faction_strength),
         (neg|faction_slot_eq, ":faction_no", slot_faction_state, sfs_defeated),
+
+        (try_begin), #Healing of Theoden
+            (eq, "$lore_mode", 1),
+            (eq, ":faction_no", fac_rohan),
+            (this_or_next|le, ":fac_strength", 3000),
+            (gt, ":fac_strength", 5000),
+            (neg|faction_slot_eq, fac_rohan, slot_faction_marshall, "trp_rohan_lord"),
+            (faction_set_slot, "fac_rohan", slot_faction_marshall, "trp_rohan_lord"), 
+            (display_message, "@Theoden activated"),
+            (le, ":fac_strength", 3000),
+            (faction_get_slot,":fac_strength","fac_rohan",slot_faction_strength_tmp),
+            (val_add, ":fac_strength", 1000),
+            (faction_set_slot,"fac_rohan",slot_faction_strength_tmp,":fac_strength"),       
+        (try_end),
         
         (try_begin), #Isengard Last Stand
             (eq, "$lore_mode", 1),

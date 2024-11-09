@@ -1,5 +1,5 @@
 itemsfile version 2
-980
+981
  itm_no_item INVALID_ITEM INVALID_ITEM 1  invalid_item 0  11 0 3 0 1.5 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -2853,6 +2853,9 @@ itemsfile version 2
 0
 
  itm_rohan_tunic_b_wb Rohan_Tunic Rohan_Tunic 1  L_roh_long_shirt_cape_M4 0  553648141 0 100 123731968 2 100 0 6 4 0 0 0 0 0 0 0 0
+0
+
+ itm_denethor_robe Fine_Outfit Fine_Outfit 1  dno_priest_3_1_dark 0  553648141 0 500 123731968 3 100 0 10 10 0 0 0 0 0 0 0 0
 0
 
  itm_ent_head_helm2 Ent_Head Ent_Head 1  ent_head2 0  4108 0 1 0 58 100 60 0 0 30 0 0 0 0 0 0 0

@@ -1798,6 +1798,17 @@ scripts = [
 	(troop_set_slot, "trp_knight_1_6",  slot_troop_banner_scene_prop, "spr_banner_eg"),  # pinnath gelin
 	(troop_set_slot, "trp_knight_1_8",  slot_troop_banner_scene_prop, "spr_banner_f21"), # lossarnach
 
+
+    #name changes here, so they only affect new games
+	] + (is_a_wb_script==1 and [
+
+    (troop_set_name, trp_knight_1_13, "@Grimbold"),
+    (troop_set_name, trp_knight_1_9, "@Theodred"),
+    (troop_set_name, trp_elder_hornburg, "@Gamling"),
+
+	] or []) + [    
+
+
 # fill center slots	
 	(try_for_range, ":center_no", centers_begin, centers_end),
 		(store_faction_of_party, ":original_faction", ":center_no"),
@@ -12740,7 +12751,13 @@ scripts = [
         (set_visitor, 8, "trp_merry"),
       (try_end),
     (try_end),
-
+    
+    (try_begin),
+        (eq, ":castle_scene", "scn_edoras_castle"),
+        (neg|faction_slot_eq, fac_rohan, slot_faction_marshall, "trp_rohan_lord"),
+        (set_visitor, 9, "trp_grima"),
+    (try_end),
+    
     (assign, ":cur_pos", 16),
     (call_script, "script_get_heroes_attached_to_center", ":center_no", "p_temp_party"),
     
@@ -12770,9 +12787,8 @@ scripts = [
         
         (try_begin),
           #swy-- throne entry point for leader only
-          ( eq, ":castle_scene", "scn_thranduil_hall_room"),
           ( eq, ":cur_pos", 16),
-          (neq, ":stack_troop", "trp_woodelf_lord"),
+          (neg|faction_slot_eq, "$ambient_faction", slot_faction_leader, ":stack_troop"),
           #   --
           (val_max, ":cur_pos", 17),
         (try_end),
@@ -14723,6 +14739,7 @@ scripts = [
         (try_end),
       (else_try),
         (this_or_next|eq, ":troop_no", "trp_gondor_lord"), # mtarini: let sire Denethor sit. GA: as well as Saruman. Them are always in capitals
+        (this_or_next|eq, ":troop_no", "trp_mordor_lord"),
         (             eq, ":troop_no", "trp_isengard_lord"),
         (assign, ":stand_animation", "anim_sit_on_throne"),
       (else_try),
@@ -14733,6 +14750,20 @@ scripts = [
         (eq, ":troop_no", "trp_gundabad_lord"),
         (eq, "$current_town", "p_town_gundabad"),
         (assign, ":stand_animation", "anim_sit_on_throne"), # GA: sitting Burza, but only in his cave
+      (else_try),
+        (eq, ":troop_no", "trp_rohan_lord"),
+        (eq, "$current_town", "p_town_edoras"),
+        (assign, ":stand_animation", "anim_sit_on_throne"), # InVain: sitting Theoden, but only in edoras
+      (else_try),
+        (eq, ":troop_no", "trp_dwarf_lord"),
+        (eq, "$current_town", "p_town_erebor"),
+        (assign, ":stand_animation", "anim_sit_on_throne"), # Dain in Erebor   
+        (agent_get_position, pos1, ":agent_no"),
+        (position_move_z, pos1, 20), #help little Dain to get on his throne
+            ] + ((is_a_wb_script==1) and [        
+        (agent_set_no_dynamics, ":agent_no", 1),
+            ] or []) + [          
+        (agent_set_position, ":agent_no", pos1),
       (else_try),
         (is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
         (assign, ":stand_animation", "anim_stand_lord"),
@@ -14746,6 +14777,11 @@ scripts = [
         (agent_set_animation, ":agent_no", ":stand_animation"),
         (store_random_in_range, ":random_no", 0, 100),
         (agent_set_animation_progress, ":agent_no", ":random_no"),
+            ] + ((is_a_wb_script==1) and [
+        (eq, ":stand_animation", anim_sit_on_throne),
+        (agent_set_no_dynamics, ":agent_no", 1),
+        (agent_ai_set_interact_with_player, ":agent_no", 0),
+            ] or []) + [          
       (try_end),
 ]),
 

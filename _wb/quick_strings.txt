@@ -1,4 +1,4 @@
-1998
+2002
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -91,7 +91,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-10-28_12:32___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-11-09_17:48___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -203,6 +203,9 @@ qstr_Superior_orders_from Superior_orders_from_{s11}_to_reassign_troops:
 qstr_{reg12}_{s10}_left_t {reg12}_{s10}_left_the_party!
 qstr_Fangorn_claimed_{reg Fangorn_claimed_{reg0}_killed_and_{reg1}_wounded_among_your_troops!
 qstr_You_were_wounded_in_ You_were_wounded_in_Fangorn!
+qstr_Grimbold Grimbold
+qstr_Theodred Theodred
+qstr_Gamling Gamling
 qstr_{s1}_of_{s3}_was_def {s1}_of_{s3}_was_defeated_in_battle.
 qstr_{s2}_have_razed_{s1} {s2}_have_razed_{s1}!
 qstr_DEBUG:_{s1}_no_longe DEBUG:_{s1}_no_longer_leads_a_party.
@@ -1169,6 +1172,7 @@ qstr_C_advance_camps_spawn C_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_N_advance_camps_spawn N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_Gandalf_would_like_t Gandalf_would_like_to_have_a_little_chat!
 qstr_Kham_Cheat_Mode_ON! Kham_Cheat_Mode_ON!
+qstr_Theoden_activated Theoden_activated
 qstr_1_troll_added! 1_troll_added!
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
 qstr_theater:_{reg0} theater:_{reg0}

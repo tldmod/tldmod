@@ -2119,7 +2119,7 @@ troops = [
       attr_tier_7,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_5|knows_surgery_9,0x0000000efe00400726c34cb9d447d0cc00000000001cb4580000000000000000],
 ["rohan_lord","King_Theoden","King",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_mearas_reward,itm_rohan_armor_th,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_archer_helmet_c_lordly,itm_eorl_cavalry_sword,itm_rohan_shield_g, itm_rohan_lance],
-      attr_tier_7,wp_tier_6,knight_skills_4|knows_riding_4|knows_riding_5|knows_trainer_4|knows_surgery_9,0x0000000fff00130347934c399386b8a300000000001db6d90000000000000000],
+      attr_tier_7,wp_tier_6,knight_skills_5|knows_riding_4|knows_riding_5|knows_trainer_4|knows_surgery_9,0x0000000fff00130347934c399386b8a300000000001db6d90000000000000000],
 ["isengard_lord","Saruman","Master",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_isengard,
    [itm_courser,itm_whiterobe_saru,itm_leather_boots,],
       attr_tier_7,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_6,0x0000000fff004107121a807fc84b82ff00000000001d1ab00000000000000000],
@@ -2226,8 +2226,8 @@ troops = [
 
 #Rohan
 ["knight_1_9","Grimbold","_",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
-   [itm_thengel_warhorse,itm_rohan_guard_bad,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_inf_helmet_b_lordly,itm_rohirrim_long_hafted_axe,itm_strong_bow,itm_khergit_arrows,itm_rohan_shield_g,],
-      attr_tier_7,wp_tier_6,knight_skills_4|knows_riding_4|knows_surgery_9,0x0000000e7f0002c313da5e3993abcd3400000000001da6f30000000000000000],
+   [itm_thengel_warhorse_heavy,itm_rohan_guard_bad,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_inf_helmet_b_lordly,itm_rohan_sword_c,itm_rohan_shield_g,],
+      attr_tier_7,wp_tier_6,knight_skills_4|knows_riding_4|knows_surgery_9,0x00000002bf003205475dd5c8256e170d0000000000ed991b0000000000000000],
 ["knight_1_10","Erkenbrand","_",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_thengel_warhorse,itm_rohan_guard_good,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_inf_helmet_b_lordly,itm_rohan_cav_sword,itm_rohirrim_throwing_axe,itm_rohan_shield_g],
       attr_tier_7,wp_tier_6,knight_skills_4|knows_riding_4|knows_surgery_9,0x0000000dbf00334521c0723588aacd3700000000001c96db0000000000000000],
@@ -2235,14 +2235,14 @@ troops = [
    [itm_thengel_warhorse_heavy,itm_rohan_guard_cloak,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_archer_helmet_c_good,itm_rohan_cav_sword,itm_rohan_lance_banner_sun,itm_rohan_shield_e],
       attr_tier_7,wp_tier_6,knight_skills_4|knows_riding_4|knows_riding_5|knows_persuasion_3|knows_surgery_9,0x0000000d8e002282211a8ce5aafd4eff00000000001cb45b0000000000000000],
 ["knight_1_12","Hama","_",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
-   [itm_rohan_warhorse,itm_rohan_surcoat_good,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_inf_helmet_b_lordly,itm_rohirrim_long_hafted_axe,itm_rohan_lance_banner_horse,itm_rohan_shield_f],
+   [itm_rohan_warhorse,itm_rohan_guard_good,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_inf_helmet_b_lordly,itm_rohirrim_long_hafted_axe,itm_rohan_lance_banner_horse,itm_rohan_shield_f],
       attr_tier_7,wp_tier_6,knight_skills_2|knows_riding_4|knows_surgery_9,0x0000000aa500124421188e67da1fcf3f00000000001cb4730000000000000000],
 ["knight_1_13","Gamling","_",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
-   [itm_rohan_warhorse,itm_rohan_rider_good_cloak,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_archer_helmet_c_good,itm_rohirrim_long_hafted_axe,itm_rohirrim_throwing_axe,itm_rohan_shield_f],
+   [itm_rohan_warhorse,itm_rohan_guard_bad,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_archer_helmet_c_good,itm_rohirrim_long_hafted_axe,itm_strong_bow,itm_khergit_arrows,itm_rohan_shield_f],
       attr_tier_7,wp_tier_6,knight_skills_3|knows_riding_4|knows_surgery_9,0x0000000fff00034220d88d77ea1fc10000000000001cb4730000000000000000],
 ["knight_1_14","Éomer","_",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_thengel_warhorse_heavy,itm_rohan_surcoat_good_cloak,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_archer_helmet_a_good,itm_rohan_cav_sword,itm_heavy_throwing_spear,itm_heavy_throwing_spear,itm_rohan_shield_d],
-      attr_tier_7,wp_tier_6,knight_skills_4|knows_riding_4|knows_riding_5|knows_surgery_9,0x0000000033001045055d5db565a9c73500000000001db6f90000000000000000],
+      attr_tier_7,wp_tier_6,knight_skills_5|knows_riding_4|knows_riding_5|knows_surgery_9,0x0000000033001045055d5db565a9c73500000000001db6f90000000000000000],
 #Isengard
 ["knight_1_15","Ugluk","_",tf_hero| tf_uruk |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_isengard,
    [itm_isen_uruk_heavy_reward,itm_uruk_chain_greaves,itm_evil_gauntlets_b_good,itm_isen_uruk_helm_d,itm_isengard_sword,itm_isen_uruk_shield_b,],
@@ -2915,8 +2915,8 @@ troops = [
    [itm_rohan_fine_outfit_dale_dress,itm_rohan_shoes,],
       def_attrib|level(2),wp(20),knows_common,0x0000000a2a0002c326c66a695e8e74f300000000001eeb230000000000000000],
 ["elder_hornburg","Hornburg_Thain","the_fortress",tf_hero| tf_rohan,0,0,fac_rohan,
-   [itm_rohan_fine_outfit_dale_dress,itm_rohan_shoes,],
-      def_attrib|level(2),wp(20),knows_common,0x0000000a040021414ce3915792b2ab2200000000001ce7150000000000000000],
+   [itm_rohan_mail_cloak,itm_rohan_shoes,],
+      def_attrib|level(2),wp(20),knows_common,0x0000000fff00034220d88d77ea1fc10000000000001cb4730000000000000000],
 ["elder_eastemnet","East_Emnet_Thain","the_town",tf_hero| tf_rohan,0,0,fac_rohan,
    [itm_rohan_fine_outfit_dale_dress,itm_rohan_shoes,],
       def_attrib|level(2),wp(20),knows_common,0x0000000a10000341472366aae58ed89400000000001caccb0000000000000000],
@@ -2938,7 +2938,7 @@ troops = [
 ["elder_cungol","Camp_Chief","the_camp",tf_hero| tf_randomize_face| tf_uruk,0,0,fac_mordor,
    [itm_m_uruk_light_b,itm_uruk_greaves,],
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-["elder_isengard","Grima_Wormtongue","the_city",tf_hero| tf_evil_man,0,0,fac_isengard,
+["elder_isengard","Isengard_Overseer","the_city",tf_hero| tf_evil_man,0,0,fac_isengard,
    [itm_evil_light_armor,itm_leather_boots_dark_bad,],
       def_attrib|level(2),wp(20),knows_common,0x000000003f0000032038a06b587590c500000000001d3a880000000000000000],
 ["elder_cgaladhon","Lorien Loremaster","the_elven_forest_fortress",tf_hero| tf_randomize_face| tf_lorien,0,0,fac_lorien,
@@ -3550,6 +3550,10 @@ attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,o
    [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_merry_outfit],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 #Add new troops here, right before trp_last!
+
+["grima","Grima_Wormtongue","the_city",tf_hero| tf_evil_man,0,0,fac_isengard,
+   [(itm_rohan_armor_th, imod_old),itm_leather_boots_dark_bad,],
+      def_attrib|level(2),wp(20),knows_common,0x000000003f0000032038a06b587590c500000000001d3a880000000000000000],
 
 ["last","BUG","BUG",0,0,0,fac_commoners,[],0,0,0,0],    #the last troop must stay a stub, so that range calls for all troops include the last but one troop.
 # For future troop additions, always make sure to fix trp_last overwrite in script_update_savegame

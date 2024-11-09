@@ -992,4 +992,5 @@ trp_pippin_notmet = 990
 trp_merry_notmet = 991
 trp_pippin = 992
 trp_merry = 993
-trp_last = 994
+trp_grima = 994
+trp_last = 995

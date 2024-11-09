@@ -3610,7 +3610,10 @@ game_menus = [
     ("enable_kham_cheat",[],"Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@Kham Cheat Mode ON!")]),
     ] + (is_a_wb_menu==1 and [
     ("action_view_all_items",[],"View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
-    ("give_custom_armor",[],"Give Custom Armor", [(troop_add_item, "trp_player", "itm_gondor_custom")]),
+    ("rohan_set_marshall",[],"Activate Theoden", [
+        (faction_set_slot,"fac_rohan",slot_faction_strength_tmp, 5500),
+        (display_message, "@Theoden activated"),
+        ]),
     ] or []) + [
     ("spawn_orc_horde_troll",[],"Spawn Orc Horde with Trolls",[
         (jump_to_menu, "mnu_orc_horde_troll")]),
