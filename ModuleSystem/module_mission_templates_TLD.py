@@ -4424,7 +4424,7 @@ nazgul_flying = ((is_a_wb_mt==1) and [
     #slot 38 = rotation 
     #slot 39 = ideal height
     #pos1 = destination
-    [(ge, "$nazgul_in_battle", 1)],
+    [(ge, "$nazgul_in_battle", 1), (prop_instance_is_valid, "$nazgul_in_battle"),(scene_prop_slot_eq, "$nazgul_in_battle", 41, 0),],
     [
     (store_mission_timer_b_msec, ":cur_time"),
 	(gt, ":cur_time", 500), #1/2 second grace period 
@@ -4567,7 +4567,7 @@ nazgul_flying = ((is_a_wb_mt==1) and [
     #Nazgul attack
     # slot 41: fellbeast mode: circle, attack, retreat
     # slot 42: target agent
-    (4, 0, 0, 
+    (2, 0, 0, 
     [(key_is_down, key_n),
     (ge, "$nazgul_in_battle", 1),
     (display_message, "@key clicked"),
@@ -4575,7 +4575,6 @@ nazgul_flying = ((is_a_wb_mt==1) and [
     (mission_cam_get_position, pos2),
     (prop_instance_get_position, pos1, "$nazgul_in_battle"),
     (position_is_behind_position, pos1, pos2), #make sure that they don't "turn" when in camera
-    (display_message, "@attack!"),
     ],
     [(set_fixed_point_multiplier, 100),
     (get_player_agent_no, ":player_agent"),
@@ -4586,15 +4585,18 @@ nazgul_flying = ((is_a_wb_mt==1) and [
         (agent_is_alive, ":agent_no"),
         (agent_is_human, ":agent_no"),
         (neq, ":agent_no", ":player_agent"),
+        (store_random_in_range, ":rand", 0, 100),
+        (lt, ":rand", 10),
         (agent_get_position, pos6, ":agent_no"),
-        (get_distance_between_positions, ":dist", pos5, pos6),
-        (lt, ":dist", 5000),
+        # (get_distance_between_positions, ":dist", pos5, pos6),
+        # (lt, ":dist", 5000),
         (neg|scene_prop_slot_eq, "$nazgul_in_battle", 42, ":agent_no"), #not previous target agent
-        #(agent_get_team, ":agent_team", ":agent_no"),
-        #(teams_are_enemies, ":agent_team", "$nazgul_team"),
+        (agent_get_team, ":agent_team", ":agent_no"),
+        (teams_are_enemies, ":agent_team", "$nazgul_team"),
         (assign, ":target_agent", ":agent_no"),
     (try_end),
     (gt, ":target_agent", 0),
+    #(assign, ":target_agent", ":player_agent"),
     (scene_prop_get_num_instances, ":num_instances", "spr_fellbeast"),
     (ge, ":num_instances", 1),
     (scene_prop_get_instance, ":instance_no", "spr_fellbeast", 0), #assume there's always only one
@@ -4602,55 +4604,119 @@ nazgul_flying = ((is_a_wb_mt==1) and [
     (scene_prop_slot_eq, ":instance_no", 41, 0), #in circling mode?
     (scene_prop_set_slot, ":instance_no", 41, 2), #set attack mode
     (scene_prop_set_slot, ":instance_no", 42, ":target_agent"), #store target
-    (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_1, 50), #reset temp hp before attack
+    (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_1, 4), #reset temp hp before attack
     
-    (agent_get_position, pos3, ":target_agent"),
+    (agent_get_position, pos30, ":target_agent"),
     (prop_instance_get_position, pos2, ":instance_no"),
-    (get_distance_between_positions, ":speed", pos2, pos3),
+    (get_distance_between_positions, ":speed", pos2, pos30),
     (val_div, ":speed", 60), #speed is dist/40
-    (prop_instance_animate_to_position, ":instance_no", pos3, ":speed"),
+    (prop_instance_animate_to_position, ":instance_no", pos30, ":speed"),
     (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_short" ),
+    # (display_message, "@agent found! Nazgul attacks"),
+    # (assign, reg78, ":target_agent"),
+    # (display_message, "@target: {reg78}"),
+    # (set_spawn_position, pos30), 
+    # (spawn_scene_prop, spr_banner_stand_a),        
+    # (set_spawn_position, pos2), 
+    # (spawn_scene_prop, spr_banner_stand_b),
 	]),
 
     #Nazgul attack update and abort
-    (0.5, 0, 0, 
-    [
+    (0.2, 0, 0, 
+    [(prop_instance_is_valid, "$nazgul_in_battle"),
+    (neg|scene_prop_slot_eq, "$nazgul_in_battle", 41, 0), #not patrolling    
+    (neg|scene_prop_slot_eq, "$nazgul_in_battle", 41, 6), #not fled
     ],
     [
     (set_fixed_point_multiplier, 100),
     (scene_prop_get_num_instances, ":num_instances", "spr_fellbeast"),
     (ge, ":num_instances", 1),
-    (scene_prop_get_instance, ":instance_no", "spr_fellbeast", 0),
+    #(scene_prop_get_instance, ":instance_no", "spr_fellbeast", 0),
+    (assign, ":instance_no", "$nazgul_in_battle"),
     (prop_instance_is_valid, ":instance_no"),
     (neg|scene_prop_slot_eq, ":instance_no", 41, 0), #not patrolling
+    (prop_instance_get_position, pos20, ":instance_no"),
+    (scene_prop_get_slot, ":target_agent", ":instance_no", 42),  
     
     (try_begin), #attack direction and trigger retreat
         (scene_prop_slot_eq, ":instance_no", 41, 2), #attacking
-        (scene_prop_get_slot, ":target_agent", ":instance_no", 42),  
         
-        #pos2: beast; pos3: target
-        (agent_get_position, pos3, ":target_agent"), #readjust if target is moving
-        (prop_instance_get_position, pos2, ":instance_no"),   
-        (call_script, "script_lookat", pos2, pos3), #make fellbeast always look at (y axis) the target, overwrites pos1
-        (prop_instance_stop_animating, ":instance_no"), #this is necessary in order to adjust the rotation
-        (prop_instance_set_position, ":instance_no", pos2),
-        (position_copy_rotation, pos3, pos2), #so it doesn't take into account the target's rotation
-        (position_get_z, ":height", pos3),
-        (val_add, ":height", 200),
-        (position_set_z, pos3, ":height"),      
-        (get_distance_between_positions, ":dist", pos2, pos3),
-        (store_div, ":speed", ":dist", 45), #speed is dist/45
-        (prop_instance_animate_to_position, ":instance_no", pos3, ":speed"), 
+        #pos20: beast; pos30: target; pos40: next waypoint
+        # (set_spawn_position, pos20), 
+        # (spawn_scene_prop, spr_banner_stand_orc), #red arrow  
+        
+        #compute target direction
+        (agent_get_position, pos30, ":target_agent"), #readjust if target is moving
+        (position_get_z, ":height", pos30),
+        (val_add, ":height", 400),
+        (position_set_z, pos30, ":height"),
+        
+            #debug, for tracking
+            # (set_spawn_position, pos30), 
+            # (spawn_scene_prop, spr_banner_stand_a),    #blue arrow
 
-        (le, ":dist", 3000), #slow down a bit when closing in
-        (store_div, ":speed", ":dist", 30), #speed is dist/30
-        (prop_instance_animate_to_position, ":instance_no", pos3, ":speed"),         
+        #compute next waypoint
+        (copy_position, pos40, pos20),
+        (call_script, "script_lookat", pos40, pos30), #make fellbeast always look at (y axis) the target, overwrites pos1
+        (position_copy_origin, pos40, pos20), #just to make sure
+        (position_move_y, pos40, 2000),
+        #(position_get_z, ":height", pos40),
+        (position_get_distance_to_ground_level, ":height", pos40),
+                    (assign, reg78, ":height"),
+            #(display_message, "@height: {reg78}!"),
+        (try_begin), #make it approach at a slightly flatter curve
+            (gt, ":height", 2500),
+            (store_sub, ":height_adjustment", ":height", 1000),
+            (val_mul, ":height_adjustment", 20),
+            (val_div, ":height_adjustment", 100),
+            (val_sub, ":height", ":height_adjustment"),
+            (position_set_z_to_ground_level, pos40),
+            (position_move_z, pos40, ":height"),
+            (assign, reg78, ":height"),
+            #(display_message, "@height adjusted: {reg78}!"),
+        (try_end),
+
+        (get_distance_between_positions, ":dist", pos20, pos30),
+
+        (try_begin),
+            (gt, ":dist", 7000),
+
+                #debug, for tracking
+                # (set_spawn_position, pos40), 
+                # (spawn_scene_prop, spr_banner_stand_b),        #yellow arrow
         
-        (le, ":dist", 800),   #closed in? attack!
-        (agent_get_position, pos3, ":target_agent"), #reset roation
+            (prop_instance_animate_to_position, ":instance_no", pos40, 85), #fly towards waypoint
+        (else_try),
+            (le, ":dist", 7000), #slow down a bit when closing in
+            (store_div, ":speed", ":dist", 25), #speed is dist/30; at 4000 dist, it's 1.5 seconds
+            (position_copy_rotation, pos30, pos40), #so it doesn't take into account the target's rotation
+            (position_rotate_x, pos30, 20),
+            (prop_instance_animate_to_position, ":instance_no", pos30, ":speed"), #fly towards target
+            #(display_message, "@short distance!"),
+        (try_end),
+
+
+        (le, ":dist", 6000), #about 1 second left? Play grab animation! ##possibly need another slot status to make sure this fires only once
+        (prop_instance_get_current_deform_frame, ":start_frame", ":instance_no"),
+        (prop_instance_deform_in_range, ":instance_no", ":start_frame", 72, 2500), #play it in 2 seconds
         (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_short" ),
+        #(display_message, "@grab!"),
+        (scene_prop_set_slot, ":instance_no", 41, 3), #grabbing
+
+    (else_try),
+        (scene_prop_slot_eq, ":instance_no", 41, 3), #grabbing
+        #(prop_instance_get_animation_target_position, pos30, ":instance_no"),
+        (agent_get_position, pos30, ":target_agent"),
+        (position_get_z, ":height", pos30),
+        (val_add, ":height", 400),
+        (position_set_z, pos30, ":height"),
+        (get_distance_between_positions, ":dist", pos20, pos30),
+        # (assign, reg78, ":dist"),
+        # (display_message, "@distance: {reg78}!"),
+        (le, ":dist", 600),   #closed in? attack!
+        (agent_get_position, pos30, ":target_agent"),
         (agent_play_sound, ":target_agent", "snd_blunt_hit"),
-        (copy_position, pos69, pos3), #needed for script
+        (copy_position, pos69, pos30), #needed for script
         (call_script, "script_aoe_pushback", 50, 400), #50 damage, 4m radius
         
         (try_for_agents, ":agent", pos69, 2000), #morale effect
@@ -4661,35 +4727,74 @@ nazgul_flying = ((is_a_wb_mt==1) and [
             (agent_set_slot, ":agent", slot_agent_morale_modifier, ":morale_bonus"),
         (try_end),
         
-        (scene_prop_set_slot, ":instance_no", 41, 3), #retreat
-        # (init_position, pos2), #set new target pos
-        # (init_position, pos4), #set directions
-        # (position_set_z, pos4, 4000),
-        # (position_set_y, pos4, 2000),
-        #(position_rotate_x, pos4, -30),
-        #(position_transform_position_to_parent, pos2, pos3, pos4),
-        (prop_instance_get_position, pos2, ":instance_no"),
-        #(copy_position, pos2, pos3),
-        (position_get_rotation_around_x, ":tilt", pos2), #reset x rotation
+        (scene_prop_set_slot, ":instance_no", 41, 4), #retreat
+        # (init_position, pos20), #set new target pos
+        # (init_position, pos40), #set directions
+        # (position_set_z, pos40, 4000),
+        # (position_set_y, pos40, 2000),
+        #(position_rotate_x, pos40, -30),
+        #(position_transform_position_to_parent, pos20, pos30, pos40),
+        (prop_instance_get_position, pos20, ":instance_no"),
+        #(copy_position, pos20, pos3),
+        (position_get_rotation_around_x, ":tilt", pos20), #reset x rotation
         (val_mul, ":tilt", -1),
-        (position_rotate_x, pos2, ":tilt"),
-        (position_move_y, pos2, 7000),
-        (position_set_z_to_ground_level, pos2),
-        (position_move_z, pos2, 5000, 1),
-        (position_rotate_x, pos2, 45),
-        #(position_rotate_z, pos2, 180),
-        (prop_instance_animate_to_position, ":instance_no", pos2, 300), 
+        (position_rotate_x, pos20, ":tilt"),
+        (position_move_y, pos20, 7000),
+        (position_set_z_to_ground_level, pos20),
+        (position_move_z, pos20, 5000, 1),
+        (position_rotate_x, pos20, 45),
+        #(position_rotate_z, pos20, 180),
+        (prop_instance_animate_to_position, ":instance_no", pos20, 300), 
         #debug, for tracking
-        # (set_spawn_position, pos2), 
+        # (set_spawn_position, pos20), 
         # (spawn_scene_prop, spr_banner_stand_b),
     
     (else_try), #back to patrolling
-        (scene_prop_slot_eq, ":instance_no", 41, 3), #retreating
-        (prop_instance_get_animation_target_position, pos2, ":instance_no"),
-        (prop_instance_get_position, pos3, ":instance_no"),
-        (get_distance_between_positions, ":dist", pos2, pos3),
+        (scene_prop_slot_eq, ":instance_no", 41, 4), #retreating
+        (try_begin), #finished grabbing? Back to flapping loop
+            (prop_instance_get_current_deform_progress, ":progress", ":instance_no"),
+            (ge, ":progress", 95),
+            (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 35, 2000),
+        (try_end),
+        (prop_instance_get_animation_target_position, pos20, ":instance_no"),
+        (prop_instance_get_position, pos30, ":instance_no"),
+        (get_distance_between_positions, ":dist", pos20, pos30),
         (le, ":dist", 1200),        
         (scene_prop_set_slot, ":instance_no", 41, 0), #patrol
+        
+        (scene_prop_get_slot, ":health2", ":instance_no", slot_prop_temp_hp_2),
+        (lt, ":health2", 1),
+        (scene_prop_set_slot, ":instance_no", 41, 5), #flee
+        (position_get_rotation_around_x, ":tilt", pos30), #reset x rotation
+        (val_mul, ":tilt", -1),
+        (position_rotate_x, pos30, ":tilt"),
+        (position_get_rotation_around_y, ":tilt", pos30), #reset y rotation
+        (val_mul, ":tilt", -1),
+        (position_rotate_y, pos30, ":tilt"),
+        (position_move_y, pos30, 90000),
+        (position_move_z, pos30, 30000, 1),
+        (prop_instance_animate_to_position, ":instance_no", pos30, 2000),
+        (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_long" ),
+        (display_message, "@The Nazgul retreats!"),
+        (try_begin),
+            (get_player_agent_no, ":player_agent"),
+            (agent_get_team, ":player_team", ":player_agent"),
+            (teams_are_enemies, ":player_team", "$nazgul_team"),
+            (val_add, "$allies_coh_modifier", 20),
+            (val_sub, "$enemies_coh_modifier", 10),
+        (else_try), #right now, it's impossible for AI to defeat the Nazgul, but keep this just in case
+            (val_sub, "$allies_coh_modifier", 10),
+            (val_add, "$enemies_coh_modifier", 20),
+        (try_end),
+    (else_try), #fleeing
+        (scene_prop_slot_eq, ":instance_no", 41, 5), #fleeing
+        (prop_instance_get_animation_target_position, pos20, ":instance_no"),
+        (prop_instance_get_position, pos30, ":instance_no"),
+        (get_distance_between_positions, ":dist", pos20, pos30),
+        (le, ":dist", 10000),
+        (scene_prop_fade_out, ":instance_no", 100),
+        (scene_prop_set_slot, ":instance_no", 41, 6), #gone
+        # add morale consequences here!
     (try_end),
 	]),
     

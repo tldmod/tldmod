@@ -5401,7 +5401,7 @@ scene_props = [
     ])]),
             
 ] + (is_a_wb_sceneprop==1 and [ 
-  ("fellbeast", sokf_moveable|sokf_dynamic_physics, "Fellbeast_FlyAnim", "bo_woron_flight", [
+  ("fellbeast", sokf_moveable|sokf_destructible, "Fellbeast_Full", "bo_Fellbeast_Full", [
     (ti_on_scene_prop_init,[
       (store_trigger_param_1, ":instance_no"),
       (store_random_in_range, ":var3", 0, 16),
@@ -5409,15 +5409,23 @@ scene_props = [
       (val_mul, ":var3", 200),
       (scene_prop_set_slot, ":instance_no", 39, ":var3"), #height offset
       (scene_prop_set_slot, ":instance_no", 43, 11), #dead frame
-      (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 35, 1500),
-      (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_1, 50),
-      (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_2, 500),
+      (scene_prop_set_slot, ":instance_no", 41, 0), #circling mode
+      (scene_prop_set_slot, ":instance_no", 42, -1), #target agent
+      (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 35, 2000),
+      (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_1, 4),
+      (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_2, 3),
       (assign, "$nazgul_in_battle", ":instance_no"),
     ]),
     (ti_on_scene_prop_hit,
     [   (store_trigger_param_1, ":instance_no"),
         (store_trigger_param_2, ":damage"),
-        (scene_prop_slot_eq, ":instance_no", 41, 2), #in attack mode?
+        (store_trigger_param, ":dealer", 3),
+        (store_trigger_param, ":weapon", 4),
+        (get_player_agent_no, ":player_agent"),
+        
+        # (assign, reg78, ":damage"),
+        # (display_message, "@damage: {reg78}!"),
+        #(scene_prop_slot_eq, ":instance_no", 41, 2), #in attack mode?
         (scene_prop_get_slot, ":health", ":instance_no", slot_prop_temp_hp_1),
         (val_sub, ":health", ":damage"),
         (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_1, ":health"),
@@ -5427,10 +5435,14 @@ scene_props = [
         (particle_system_burst, "psys_dummy_smoke", pos1, 3),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
         
+        # (assign, reg78, ":health"),
+        # (display_message, "@health: {reg78}!"),
+        # (assign, reg78, ":health2"),
+        # (display_message, "@health2: {reg78}!"),
         (lt, ":health", 1),
         (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_long" ),
         #(display_message, "@hit!"),
-        (scene_prop_set_slot, ":instance_no", 41, 3), #retreat
+        (scene_prop_set_slot, ":instance_no", 41, 4), #retreat
         (prop_instance_get_position, pos2, ":instance_no"),
         (position_get_rotation_around_x, ":tilt", pos2), #reset x rotation
         (val_mul, ":tilt", -1),
@@ -5439,9 +5451,30 @@ scene_props = [
         (position_set_z_to_ground_level, pos2),
         (position_move_z, pos2, 5000, 1),
         (position_rotate_x, pos2, 45),
-        (prop_instance_animate_to_position, ":instance_no", pos2, 300),         
+        (prop_instance_animate_to_position, ":instance_no", pos2, 300),
+        (agent_get_position, pos69, ":dealer"),
+        (try_for_agents, ":agent", pos69, 2000), #morale effect
+            (agent_get_team, ":agent_team", ":agent"),
+            (teams_are_enemies, ":agent_team", "$nazgul_team"),
+            (agent_get_slot, ":morale_bonus", ":agent", slot_agent_morale_modifier),
+            (val_add, ":morale_bonus", 25),
+            (agent_set_slot, ":agent", slot_agent_morale_modifier, ":morale_bonus"),
+        (try_end),
+        (try_begin),
+            (eq, ":dealer", ":player_agent"),
+            (add_xp_as_reward, 200),
+            (item_get_type, ":item_type", ":weapon"),
+            (try_begin),
+                (eq, ":item_type", itp_type_bow),
+                (troop_raise_proficiency_linear, trp_player, wpt_archery, 10),
+            (else_try),
+                (eq, ":item_type", itp_type_thrown),
+                (troop_raise_proficiency_linear, trp_player, wpt_throwing, 10),
+            (try_end),
+        (try_end),
+        #TODO: Add notifier, XP and proficiency bonus, temporary morale consequences
     ])    
-    ]),
+    ], 10000),
        ] or [("fellbeast", 0, "beest", "0", []),]) + [  
 
 ("fallen_king_base",0,"FK_Base_combined","bo_apple_basket",[]),
