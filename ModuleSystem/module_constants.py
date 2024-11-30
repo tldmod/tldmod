@@ -214,6 +214,7 @@ slot_agent_is_running_away		= 25
 
 #InVain
 slot_agent_base_accuracy		= 26 #used for resetting accuracy after unquipping shields
+slot_agent_walker_joined        = 27 #1= accepted; 2= denied
 
 ########################################################
 ##  FACTION SLOTS          #############################
@@ -590,6 +591,19 @@ slot_center_occasional_sound3_day = 275
 slot_center_occasional_sound1_night = 276
 slot_center_occasional_sound2_night = 277
 slot_center_occasional_sound3_night = 278
+
+slot_center_walker_soldiers_found = 299
+
+#Legendary Places Slots (party slot)
+slot_legendary_visited = 300
+slot_legendary_explored = 301
+
+#Exploration Points Party Slots
+slot_exploration_point_1 = 302
+slot_exploration_point_2 = 303
+slot_exploration_point_3 = 304
+slot_exploration_point_4 = 305
+
 
 #slot_party_type values
 #spt_ruined_center      = 1 # TLD
@@ -2426,10 +2440,6 @@ end       = 0
 
 ##Kham PBOD Additions END
 
-#Legendary Places Slots (party slot)
-slot_legendary_visited = 300
-slot_legendary_explored = 301
-
 #Aiming slots (agent slot)
 agent_aim_overridden = 302
 
@@ -2457,11 +2467,6 @@ slot_troop_player_reserve_adv_camp = 309
 low_party_morale = 30
 high_party_morale = 70
 
-#Exploration Points Party Slots
-slot_exploration_point_1 = 302
-slot_exploration_point_2 = 303
-slot_exploration_point_3 = 304
-slot_exploration_point_4 = 305
 
 
 # VC Presentantion Constants

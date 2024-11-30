@@ -604,6 +604,9 @@ town_dweller_talk
 town_dweller_ask_fugitive
 town_dweller_ask_info
 town_dweller_ask_rumor
+town_dweller_ask_join
+town_dweller_ask_join_yes
+town_dweller_ask_join_no
 town_dweller_ask_directions
 town_dweller_ask_directions2
 town_dweller_ask_directions3

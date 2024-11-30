@@ -1,4 +1,4 @@
-1745
+1750
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1701,6 +1701,11 @@ qstr__Guards_slaughter_hi _Guards,_slaughter_him!
 qstr_Slaughter_him_for_fr Slaughter_him_for_fresh_human_meat!
 qstr_This_is_{s5}_Command This_is_{s5},_Commander.
 qstr_{s6}_This_place_and_ {s6}_This_place_and_the_surrounding_lands_belong_to_{s7}_of_{s8}.
+qstr_Hear_now_commander._ Hear_now,_commander._I_am_currently_out_of_assignment,_yet_I_would_rather_meet_our_enemies_in_the_field_than_wait_for_them_to_come_here._I_hear_you're_a_capable_leader._Would_you_have_me?
+qstr_My_party_was_wiped_o My_party_was_wiped_out_in_the_last_battle_and_I_don't_want_to_be_assigned_to_the_next_best_fool._I_hear_you're_a_capable_leader._Could_you_use_another_warrior?
+qstr_{s9}_joined_your_par {s9}_joined_your_party
+qstr_A_pity!_I_sure_would A_pity!_I_sure_would_have_liked_to_fight_in_your_party-
+qstr_Too_bad_you_will_reg Too_bad,_you_will_regret_not_taking_me_with_you.
 qstr_the_{s3} the_{s3}
 qstr_the_local_authority the_local_authority
 qstr_the_Lord_s_hall the_Lord's_hall

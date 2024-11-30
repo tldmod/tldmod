@@ -12612,7 +12612,8 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                     #(agent_get_entry_no, ":entry", "$g_talk_agent"),
           #(this_or_next|is_between,":entry",town_walker_entries_start, 40), #regular walker
           (this_or_next|agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 1),#regular walker
-          (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 4),], #prop walker
+          (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 4), #prop walker
+          (neg|agent_slot_eq, "$g_talk_agent", slot_agent_walker_joined, 2),], 
 "Good day, Commander.", "town_dweller_talk",[(assign, "$welfare_inquired", 0),(assign, "$rumors_inquired",0),(assign, "$info_inquired",0)]],
 
 [anyone|plyr,"town_dweller_talk", [(check_quest_active, "qst_hunt_down_fugitive"),
@@ -12727,7 +12728,47 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone|plyr,"town_dweller_talk", [(eq, "$rumors_inquired", 0)], "What is the latest rumor around here?", "town_dweller_ask_rumor",[(assign, "$rumors_inquired", 1)]],
 [anyone,"town_dweller_ask_rumor", [(neg|party_slot_ge, "$current_town", slot_center_player_relation, -5)], "I don't know anything that would be of interest to you.", "town_dweller_talk",[]],
-  
+
+#TODO: Set slot_center_rumor_check_begin, set an agent slot to define dialog afterwards, set another center slot if successful
+[anyone,"town_dweller_ask_rumor", [
+    (is_between, "$g_talk_troop", soldiers_begin, soldiers_end),
+    (faction_get_slot, ":rank", "$ambient_faction", slot_faction_rank),
+    (party_get_slot, ":rel", "$current_town", slot_center_player_relation),
+    (val_mul, ":rank", 10),
+    (val_add, ":rank", ":rel"),
+    (gt, ":rank", 20),
+    (store_character_level, ":troop_level", "$g_talk_troop"),
+    (store_random_in_range, ":rand", 0, 30),
+    (gt, ":rand", 24),
+    (gt, ":rand", ":troop_level"),
+    (neg|party_slot_ge, "$current_town", slot_center_walker_soldiers_found, 4),
+    (agent_slot_eq, "$g_talk_agent", slot_agent_walker_joined, 0),
+    (try_begin),
+        (faction_slot_eq, "$ambient_faction", slot_faction_side, faction_side_good),
+        (str_store_string, s60, "@Hear now, commander. I am currently out of assignment, yet I would rather meet our enemies in the field than wait for them to come here. I hear you're a capable leader. Would you have me?"),
+    (else_try),
+        (str_store_string, s60, "@My party was wiped out in the last battle and I don't want to be assigned to the next best fool. I hear you're a capable leader. Could you use another warrior?"),
+    (try_end),
+    ], 
+    "{s60}", 
+    "town_dweller_ask_join",
+    [(party_get_slot, ":slot", "$current_town", slot_center_walker_soldiers_found), 
+    (val_add, ":slot", 1),
+    (party_set_slot, "$current_town", slot_center_walker_soldiers_found, ":slot"),]],
+    
+[anyone|plyr,"town_dweller_ask_join", [(troops_can_join, 1),], "Yes, I could indeed use another hand. Get ready to leave!", "town_dweller_ask_join_yes",[]],
+[anyone|plyr,"town_dweller_ask_join", [], "No, I have no use for you.", "town_dweller_ask_join_no",[]],
+[anyone,"town_dweller_ask_join_yes", [], "Very well, I will gather my things and join your party.", "close_window",[(party_add_members, p_main_party, "$g_talk_troop", 1),(agent_set_slot, "$g_talk_agent", slot_agent_walker_joined, 1), (str_store_troop_name, s9, "$g_talk_troop"), (display_message, "@{s9} joined your party"), (call_script,"script_stand_back")]],
+[anyone,"town_dweller_ask_join_no", [
+    (try_begin),
+        (faction_slot_eq, "$ambient_faction", slot_faction_side, faction_side_good),
+        (str_store_string, s60, "@A pity! I sure would have liked to fight in your party-"),
+    (else_try),
+        (str_store_string, s60, "@Too bad, you will regret not taking me with you."),
+    (try_end),], 
+    "{s60}", "close_window",
+    [(agent_set_slot, "$g_talk_agent", slot_agent_walker_joined, 2),
+    (call_script,"script_stand_back")]],
   #[anyone,"town_dweller_ask_rumor", [(store_mul, ":rumor_id", "$current_town", 197),
                                      # (val_add,  ":rumor_id", "$g_talk_agent"),
                                      # (call_script, "script_get_rumor_to_s61", ":rumor_id"),
@@ -12786,7 +12827,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "{s4}.", "town_dweller_ask_directions3",[
     (store_repeat_object, "$temp"),]],
 
-[anyone|plyr,"town_dweller_ask_directions2", [], "Never mind.", "close_window",[]],
+[anyone|plyr,"town_dweller_ask_directions2", [], "Never mind.", "close_window",[(call_script,"script_stand_back")]],
 
 [anyone,"town_dweller_ask_directions3", [], 
 "I know where that is. Follow me.", "close_window",[
@@ -12842,14 +12883,16 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone|plyr,"town_dweller_talk", [], "[Leave]", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone,"start", [(eq, "$talk_context", 0),
-                  (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 5), 
+                  (this_or_next|agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 5), 
+                  (agent_slot_eq, "$g_talk_agent", slot_agent_walker_joined, 2), 
                   (troop_get_type, ":race", "$g_talk_troop"),
                   (is_between, ":race", tf_orc_begin, tf_orc_end),],
 "Get lost!", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone,"start", [(eq, "$talk_context", 0),
-                  (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 5), 
                   (troop_get_type, ":race", "$g_talk_troop"),
+                  (this_or_next|agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 5), 
+                  (agent_slot_eq, "$g_talk_agent", slot_agent_walker_joined, 2), 
                   (neg|is_between, ":race", tf_orc_begin, tf_orc_end),],
 "Leave me alone!", "close_window",[(call_script,"script_stand_back"),]],
 

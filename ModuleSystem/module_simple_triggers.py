@@ -136,6 +136,7 @@ simple_triggers = [
           (store_add, ":slot", slot_center_rumor_check_begin,":walker"),
           (party_set_slot, ":center_no", ":slot", 0),
         (try_end),
+        (party_set_slot, ":center_no", slot_center_walker_soldiers_found, 0),
       (try_end),
       (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),  # TLD clear rumors in lords
         (troop_set_slot, ":troop_no", slot_troop_rumor_check, 0),
