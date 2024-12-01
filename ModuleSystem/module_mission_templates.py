@@ -4944,6 +4944,7 @@ mission_templates = [ # not used in game
             #block spawn point
             (neg|troop_slot_eq,"trp_no_troop",":slot",-2),
             (neg|agent_is_defender,":player_agent"),
+            (agent_is_alive, ":player_agent"),
             (entry_point_get_position, pos10, ":entry_number"),
             (agent_get_position, pos0, ":player_agent"),
             (get_distance_between_positions, ":dist", pos0, pos10),
