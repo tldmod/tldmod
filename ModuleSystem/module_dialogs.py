@@ -12362,20 +12362,13 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 ]],
 
 [anyone,"prisoner_slaughter", [], "One day you will pay.... Aaa-ghgllr!...", "close_window",[
-  (mission_cam_set_mode, 1, 1, 0),
-  (play_sound,"snd_man_die"),
-  (get_player_agent_no, reg1),
-  (try_for_agents, ":agent"), # make a prisoner die in conversation window
-    (neq, ":agent", reg1),
-    (agent_is_human, ":agent"),
-    (agent_get_troop_id, "$g_talk_troop", ":agent"), #apparently prisoner talk defines $g_talk_troop incorrectly. MB bug
-    (neg|troop_is_hero, "$g_talk_troop"),
-    (agent_set_animation, ":agent", "anim_fall_body_back"), 
-    #(agent_set_hit_points,":agent",0,0),
-    
-    #(agent_deliver_damage_to_agent, reg1, ":agent"),
-  (try_end),
-  (party_remove_prisoners, "p_main_party", "$g_talk_troop", 1),
+    (mission_cam_set_mode, 1, 1, 0),
+    (play_sound,"snd_man_die"),
+    (get_player_agent_no, reg1),
+    (store_conversation_troop, "$g_talk_troop"),
+    (store_conversation_agent, "$g_talk_agent"),
+    (agent_set_animation, "$g_talk_agent", "anim_fall_body_back"), 
+    (party_remove_prisoners, "p_main_party", "$g_talk_troop", 1),
 
     (try_begin),
       (val_add, "$butcher_trait_kills", 1),
