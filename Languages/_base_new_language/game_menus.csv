@@ -8,6 +8,8 @@ mno_quick|[dev: quick start Gondor]
 mno_quick2|[dev: quick start Mordor]
 menu_start_phase_2|^^^^^              Middle Earth. A shadow is growing in the East, ^              and dark things come forth that have long been hidden. ^              The free peoples prepare for war, the like of which has not been seen for an age. ^              Men, Elves, Dwarves and Orcs; all will play their part. ^^              What part, however, remains to be seen... 
 mno_go_forth|          Go forth upon your chosen path...
+mno_change_war_start_mode|War Starts:  {s7}
+mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|Change TLD options.
 mno_see_info_pages|TLD game concepts.
 mno_cheat00|CHEAT: become a {s21}
@@ -281,14 +283,14 @@ mno_partytest|Create a Gandalf party following you.
 menu_camp_khamtest|^^^^^Click on an option to toggle.^^^Tweaks Gondor to have more troops in a party, gives them more hosts, gives them hosts more frequently, and lets Gondor lords wait longer to gather.^^Have to wait for the trigger to occur
 mno_enable_kham_cheat|Enable Kham Cheat Mode
 mno_action_view_all_items|View all items.
-mno_give_custom_armor|Give Custom Armor
+mno_rohan_set_marshall|Activate Theoden
 mno_spawn_orc_horde_troll|Spawn Orc Horde with Trolls
 mno_add_trolls|Add 1 Troll to your party (spam for more!)
 mno_enable_raftmen|Enable Raft Men Party
 mno_what_theater|Which Theater Am I in?
 mno_what_region|Add 1000000 XP to Party
 mno_player_control_allies|Battlesize set to {reg66}
-mno_spawn_orc_horde|Spawn Orc Horde
+mno_spawn_orc_horde|Spawn Orc Horde with Nazgul
 mno_spawn_ent_party|Spawn Ent Party
 mno_spawn_vet_archer|Spawn Vet Archer
 mno_melee_ai_test|Melee AI Test
@@ -331,8 +333,8 @@ mno_strat_tweaks_siege_reqs|Siege strength requirements: {s7}
 mno_strat_tweaks_siege_relax_rate|Siege str. req. relaxation rate: {reg1}
 mno_strat_tweaks_regen_rate|Strength regen rate: {s7}
 mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
-mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
-mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
+mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
+mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
 mno_strat_tweaks_back|Back to tweaks menu.
 menu_auto_strat_tweak|This menu automatically returns to caller.
 menu_auto_compat_tweak|This menu automatically returns to caller.
@@ -450,7 +452,7 @@ mno_relocate_party|Move to town...
 mno_add_troops|Add troops to player party.
 mno_crossdressing|Crossdressing: {reg6?Enabled:Disabled}
 mno_cheat_options_town_menu|Town NPCs always accessible from Menus:  {s7}
-mno_cheat_add_prisoners|Add 10 prisoners
+mno_cheat_add_prisoners|Add 10 random prisoners
 mno_cheat_add_xp|Add 1000 experience to player.
 mno_camp_mod_2|Raise player's attributes, skills, and proficiencies.
 mno_camp_mod_3|Add gear and gold to player.
@@ -537,12 +539,12 @@ menu_besiegers_camp_with_allies|{s1} remains under siege. The banners of {s2} fl
 mno_talk_to_siege_commander| Request a meeting with the commander.
 mno_join_siege_with_allies|Join the next assault.
 mno_join_siege_stay_back|Order your soldiers to join the next assault without you.
-menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. Perusing the book,  you stumble on the words 'true silver'! Studying the pages you suddenly understand  that those are the descriptions of dwarven stashes somewhere on the lower levels. Hah!  Would not it be cool to uncover the long lost dwarven mithril!?  ^You eagerly follow the directions, into a narrow winding tunnel and down...  ^...^After a couple of hours of fruitless search you understand that you are lost deep in Moria and need to find a way out.
+menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Find your way out!
 menu_castle_outside|You are outside {s2}.{s11} {s3} {s4}
 mno_cheat_steal_book|CHEAT: steal book now
 mno_cheat_steal_book_door|Get the book
-mno_moria_enter|Return into main hall of Moria trough the secret entrance
+mno_moria_enter|Return into main hall of Moria through the secret entrance
 mno_moria_enter_door|Enter Moria.
 mno_moria_secret|{s12}
 mno_player_castle_initiate_siege|Attack the {reg6?town:castle}...

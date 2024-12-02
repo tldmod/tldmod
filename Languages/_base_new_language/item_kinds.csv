@@ -1630,8 +1630,8 @@ itm_dwarf_armor_d|Iron Hills Coat of Scales
 itm_dwarf_armor_d_pl|Iron Hills Coat of Scales
 itm_dwarf_armor_a|Erebor Surcoat over Mail
 itm_dwarf_armor_a_pl|Erebor Surcoat over Mail
-itm_leather_dwarf_armor|Dwarven Padded Coat
-itm_leather_dwarf_armor_pl|Dwarven Padded Coat
+itm_leather_dwarf_armor|Erebor Padded Coat
+itm_leather_dwarf_armor_pl|Erebor Padded Coat
 itm_dwarf_armor_b|Erebor Tunic over Mail
 itm_dwarf_armor_b_pl|Erebor Tunic over Mail
 itm_leather_dwarf_armor_b|Dwarven Padded Jerkin
@@ -1890,6 +1890,8 @@ itm_rohan_tunic_a_wb|Rohan Tunic
 itm_rohan_tunic_a_wb_pl|Rohan Tunic
 itm_rohan_tunic_b_wb|Rohan Tunic
 itm_rohan_tunic_b_wb_pl|Rohan Tunic
+itm_denethor_robe|Fine Outfit
+itm_denethor_robe_pl|Fine Outfit
 itm_ent_head_helm2|Ent Head
 itm_ent_head_helm2_pl|Ent Head
 itm_ent_head_helm3|Ent Head
@@ -1920,14 +1922,18 @@ itm_civilian_carry_amphora|Amphora
 itm_civilian_carry_amphora_pl|Amphora
 itm_civilian_carry_sack|Sack
 itm_civilian_carry_sack_pl|Sack
-itm_civilian_carry_basket|Wood
-itm_civilian_carry_basket_pl|Wood
-itm_civilian_carry_honey|Wood
-itm_civilian_carry_honey_pl|Wood
-itm_civilian_carry_oil|Wood
-itm_civilian_carry_oil_pl|Wood
+itm_civilian_carry_basket|Basket
+itm_civilian_carry_basket_pl|Basket
+itm_civilian_carry_honey|Honey
+itm_civilian_carry_honey_pl|Honey
+itm_civilian_carry_oil|Oil
+itm_civilian_carry_oil_pl|Oil
 itm_civilian_carry_wood2|Wood
 itm_civilian_carry_wood2_pl|Wood
+itm_work_basket|Basket
+itm_work_basket_pl|Basket
+itm_work_basket_2|Basket
+itm_work_basket_2_pl|Basket
 itm_animal_spider|Spider
 itm_animal_spider_pl|Spider
 itm_animal_bear|Bear

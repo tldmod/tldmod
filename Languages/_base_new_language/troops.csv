@@ -806,72 +806,72 @@ trp_c5_mordor_num_knight|Black Numenorean Horsemaster
 trp_c5_mordor_num_knight_pl|Black Numenorean Horsemasters
 trp_noldorin_commander|Noldorin Commander
 trp_noldorin_commander_pl|Noldorin Commanders
-trp_elf_captain_of_lothlorien|Elf Captain of Lothlorien
-trp_elf_captain_of_lothlorien_pl|Elf Captains of Lothlorien
-trp_lothlorien_lieutenant|Lothlorien Lieutenant
-trp_lothlorien_lieutenant_pl|Lothlorien Lieutenants
-trp_elf_captain_of_mirkwood|Elf Captain of Greenwood
-trp_elf_captain_of_mirkwood_pl|Elf Captains of Greenwood
-trp_mirkwood_lieutenant|Greenwood Lieutenant
-trp_mirkwood_lieutenant_pl|Greenwood Lieutenants
-trp_elf_captain_of_rivendell|Elf Captain of Rivendell
-trp_elf_captain_of_rivendell_pl|Elf Captains of Rivendell
-trp_rivendell_lieutenant|Rivendell Lieutenant
-trp_rivendell_lieutenant_pl|Rivendell Lieutenants
-trp_lieutenant_of_rohan|Lieutenant of Rohan
-trp_lieutenant_of_rohan_pl|Lieutenants of Rohan
-trp_captain_of_rohan|Captain of Rohan
-trp_captain_of_rohan_pl|Captains of Rohan
-trp_high_captain_of_rohan|High Captain of Rohan
-trp_high_captain_of_rohan_pl|High Captains of Rohan
-trp_lieutenant_of_isengard|Lieutenant of Isengard
-trp_lieutenant_of_isengard_pl|Lieutenants of Isengard
-trp_captain_of_isengard|Captain of Isengard
-trp_captain_of_isengard_pl|Captains of Isengard
-trp_high_captain_of_isengard|High Captain of Isengard
-trp_high_captain_of_isengard_pl|High Captains of Isengard
-trp_lieutenant_of_mordor|Lieutenant of Mordor
-trp_lieutenant_of_mordor_pl|Lieutenants of Mordor
-trp_captain_of_mordor|Captain of Mordor
-trp_captain_of_mordor_pl|Captains of Mordor
-trp_high_captain_of_mordor|High Captain of Mordor
-trp_high_captain_of_mordor_pl|High Captains of Mordor
-trp_easterling_chieftain|Variag Chieftain
-trp_easterling_chieftain_pl|Variag Chieftains
-trp_easterling_lieutenant|Variag War Priest
-trp_easterling_lieutenant_pl|Variag War Priests
-trp_harad_chieftain|Harad Chieftain
-trp_harad_chieftain_pl|Harad Chieftains
-trp_harad_lieutenant|Harad Lieutenant
-trp_harad_lieutenant_pl|Harad Lieutenants
-trp_black_numenorean_captain|Black Numenorean Captain
-trp_black_numenorean_captain_pl|Black Numenorean Captains
-trp_black_numenorean_lieutenant|Black Numenorean Lieutenant
-trp_black_numenorean_lieutenant_pl|Black Numenorean Lieutenants
-trp_a5_dun_night_wolf|Dunnish Night Wolf
-trp_a5_dun_night_wolf_pl|Dunnish Night Wolfs
-trp_dunnish_lieutenant|Dunnish Hetman
-trp_dunnish_lieutenant_pl|Dunnish Hetmen
-trp_goblin_chieftain|Goblin Chieftain
-trp_goblin_chieftain_pl|Goblin Chieftains
-trp_captain_of_gondor|Captain of Gondor
-trp_captain_of_gondor_pl|Captains of Gondor
+trp_lorien_captain2|lorien captain
+trp_lorien_captain2_pl|Elf Captains of Lothlorien
+trp_lothlorien_lieutenant|lorien captain
+trp_lothlorien_lieutenant_pl|Elf Captains of Lothlorien
+trp_greenwood_captain|Greenwood Captain
+trp_greenwood_captain_pl|Greenwood Captains
+trp_lorien_captain|Lothlorien Captain
+trp_lorien_captain_pl|Lothlorien Captains
+trp_riv_captain|Rivendell Elf Lord
+trp_riv_captain_pl|Rivendell Elf Lords
+trp_arnor_captain|Captain of Arnor
+trp_arnor_captain_pl|Captains of Arnor
+trp_arnor_ranger_captain|Ranger Captain of Arnor
+trp_arnor_ranger_captain_pl|Ranger Captains of Arnor
+trp_rohan_captain|Captain of Rohan
+trp_rohan_captain_pl|Captains of Rohan
+trp_beorning_captain|Beorning Chieftain
+trp_beorning_captain_pl|Beorning Chieftains
+trp_woodmen_captain|Woodmen Chieftain
+trp_woodmen_captain_pl|Woodmen Chieftains
+trp_isen_captain|Captain of Isengard
+trp_isen_captain_pl|Captains of Isengard
+trp_isen_tracker_captain|Isengard Tracker Captain
+trp_isen_tracker_captain_pl|Isengard Tracker Captains
+trp_mordor_uruk_captain|Mordor Uruk Captain
+trp_mordor_uruk_captain_pl|Mordor Uruk Captains
+trp_mordor_captain|Captain of Mordor
+trp_mordor_captain_pl|Captains of Mordor
+trp_umbar_captain|Captain of Umbar
+trp_umbar_captain_pl|Captains of Umbar
+trp_khand_captain|Variag War Chief
+trp_khand_captain_pl|Variag War Chiefs
+trp_rhun_captain|Rhun Chieftain
+trp_rhun_captain_pl|Rhun Chieftains
+trp_moria_captain|Uruk Chieftain of Moria
+trp_moria_captain_pl|Uruk Chieftains of Moria
+trp_dwarf_captain|Dwarf Captain
+trp_dwarf_captain_pl|Dwarf Captains
+trp_dale_captain|Captain of Dale
+trp_dale_captain_pl|Captains of Dale
+trp_harad_captain|Haradrim Noble
+trp_harad_captain_pl|Haradrim Nobles
+trp_a5_dun_night_wolf2|Dunnish Night Wolf
+trp_a5_dun_night_wolf2_pl|Dunnish Night Wolf
+trp_dun_captain|Dunnish Hetman
+trp_dun_captain_pl|Dunnish Hetmen
+trp_gunda_captain|Gundabad Chieftain
+trp_gunda_captain_pl|Gundabad Chieftains
+trp_gondor_captain|Captain of Gondor
+trp_gondor_captain_pl|Captains of Gondor
+trp_pel_captain|Captain of Pelargir
+trp_pel_captain_pl|Captains of Pelargir
+trp_amroth_captain|Knight Captain of Dol Amroth
+trp_amroth_captain_pl|Knights Captain of Dol Amroth
+trp_lam_captain|Captain of Lamedon
+trp_lam_captain_pl|Captains of Lamedon
+trp_loss_captain|Captain of Lossarnach
+trp_loss_captain_pl|Captains of Lossarnach
+trp_pinnath_captain|Captain of Pinnath Gelin
+trp_pinnath_captain_pl|Captains of Pinnath Gelin
+trp_blackroot_captain|Captain of Blackroot Vale
+trp_blackroot_captain_pl|Captains of Blackroot Vale
+trp_ithilien_captain|Captain of Ithilien Rangers
+trp_ithilien_captain_pl|Captains of Ithilien Rangers
 trp_end_leaders|bug
 trp_end_leaders_pl|bug
-trp_nobleman|Nobleman
-trp_nobleman_pl|Noblemen
-trp_gondor_agent|Gondor Agent
-trp_gondor_agent_pl|Gondor Agents
-trp_rohan_agent|Rohan Agent
-trp_rohan_agent_pl|Rohan Agents
-trp_mordor_agent|Mordor Agent
-trp_mordor_agent_pl|Mordor Agents
-trp_isengard_agent|Isengard Agent
-trp_isengard_agent_pl|Isengard Agents
-trp_looter|Looter
-trp_looter_pl|Looters
-trp_bandit|Bandit
-trp_bandit_pl|Bandits
 trp_brigand|Brigand
 trp_brigand_pl|Brigands
 trp_mountain_bandit|Mountain Bandit
@@ -1118,7 +1118,7 @@ trp_knight_1_7|Faramir
 trp_knight_1_7_pl| 
 trp_knight_1_8|Forlong the Fat
 trp_knight_1_8_pl| 
-trp_knight_1_9|Grimbold
+trp_knight_1_9|Theodred
 trp_knight_1_9_pl| 
 trp_knight_1_10|Erkenbrand
 trp_knight_1_10_pl| 
@@ -1126,7 +1126,7 @@ trp_knight_1_11|Elfhelm
 trp_knight_1_11_pl| 
 trp_knight_1_12|Hama
 trp_knight_1_12_pl| 
-trp_knight_1_13|Gamling
+trp_knight_1_13|Grimbold
 trp_knight_1_13_pl| 
 trp_knight_1_14|Éomer
 trp_knight_1_14_pl| 
@@ -1554,7 +1554,7 @@ trp_elder_edoras|Edoras Thain
 trp_elder_edoras_pl|the city
 trp_elder_aldburg|Aldburg Thain
 trp_elder_aldburg_pl|the town
-trp_elder_hornburg|Hornburg Thain
+trp_elder_hornburg|Gamling
 trp_elder_hornburg_pl|the fortress
 trp_elder_eastemnet|East Emnet Thain
 trp_elder_eastemnet_pl|the town
@@ -1570,7 +1570,7 @@ trp_elder_mmorgul|Morgul Chief
 trp_elder_mmorgul_pl|the sinister city
 trp_elder_cungol|Camp Chief
 trp_elder_cungol_pl|the camp
-trp_elder_isengard|Grima Wormtongue
+trp_elder_isengard|Isengard Overseer
 trp_elder_isengard_pl|the city
 trp_elder_cgaladhon|Lorien Loremaster
 trp_elder_cgaladhon_pl|the elven forest fortress
@@ -1828,8 +1828,8 @@ trp_dummy_troop_b|bug
 trp_dummy_troop_b_pl| 
 trp_i6_beorning_bear_warrior|Bear Warrior
 trp_i6_beorning_bear_warrior_pl|Bear Warriors
-trp_test_vet_archer|Test Vet Archer
-trp_test_vet_archer_pl|Test Vet Archer
+trp_a5_dun_night_wolf|Dunnish Night Wolf
+trp_a5_dun_night_wolf_pl|Dunnish Night Wolfs
 trp_volunteers|--- Reserves ---:
 trp_volunteers_pl| 
 trp_dormant|Dormant
@@ -1984,5 +1984,7 @@ trp_pippin|Pippin
 trp_pippin_pl| 
 trp_merry|Merry
 trp_merry_pl| 
+trp_grima|Grima Wormtongue
+trp_grima_pl|the city
 trp_last|BUG
 trp_last_pl|BUG

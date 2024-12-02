@@ -292,6 +292,8 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|Don't attack! We surre
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|We will fight you to the end!
 dlga_party_encounter_offer_dont_fight:close_window|I owe you a favor, don't I. Well... all right then. I will let you go just this once.
 dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha. But I want to fight with you.
+dlga_start:grima_interrupt|Mmmh...
+dlga_grima_interrupt:close_window|The lord is in deep thought and must not be disturbed!
 dlga_start:close_window.13|Away with you, vile beggar.
 dlga_start:lord_start|If it isn't my brave champion, {playername}...
 dlga_start:lord_start.1|Good to see you again {playername}...
@@ -458,7 +460,7 @@ dlga_ring_hunters_start:ring_hunters_check|{playername}, you have done great dee
 dlga_ring_hunters_check:ring_hunters_1|Yes, my lord. I have a group of well-trained, battlehardened men. We are ready for anything.
 dlga_ring_hunters_check:ring_hunters_check_failed|I am afraid not, my lord.
 dlga_ring_hunters_check_failed:lord_pretalk|Then you are not ready for this task yet,{playername}. Go and gather more troops.
-dlga_ring_hunters_1:ring_hunters_2|Excellent. The North has recently been plagued by a marauding band of outlaws, who raid villages and ambush travellers searching for rings of any kind   You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.   The first is returning with their loot to their encampment on the eaves of Mirkwood. The other, advances towards Beorn's House in great numbers, and I fear what may happen if they are left unimpeded.
+dlga_ring_hunters_1:ring_hunters_2|Excellent. The North has recently been plagued by a marauding band of outlaws who raid villages and ambush travellers, searching for rings of any kind.^^   You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.^^   The first is returning with loot to their encampment on the eaves of Mirkwood. The other advances towards Beorn's House in great numbers and I fear what may happen if they are left unimpeded.
 dlga_ring_hunters_2:ring_hunters_what|My lord, what could they be searching for?
 dlga_ring_hunters_2:ring_hunters_accept|My lord, I will do what is necessary to stop these... 'Ring Hunters'
 dlga_ring_hunters_2:ring_hunters_reject|I am not ready for such a task just yet.
@@ -692,12 +694,12 @@ dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Search fo
 dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|As you command, my Lady. I will try my best to eliminate this evil.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Forgive me, my Lady. I have some pressing matters to attend before I can help your people with this endevour.
 dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|I understand, {playername}. But do not tally for too long, for the effort of resisting his magic is wearying me.
-dlga_lord_tell_mission:lord_mission_deliver_message|I need to send a letter to {s13} who should be currently at {s4}. If you will be heading towards there, would you deliver it to him? The letter needs to be in his hands in 30 days.
+dlga_lord_tell_mission:lord_mission_deliver_message|I need to send a letter to {s13} who should be currently at {s4}. If you will be heading towards there, would you deliver it to {reg11?her:him}? The letter needs to be in {reg11?her:his} hands in 30 days.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Certainly, I intend to pass by {s4} and it would be no trouble.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|I doubt I'll be seeing {s13} anytime soon, {s65}. You'd best send it with someone else.
-dlga_lord_mission_deliver_message_accepted:close_window|I appreciate it, {playername}. Here's the letter. Give my regards to {s13} when you see him.
+dlga_lord_mission_deliver_message_accepted:close_window|I appreciate it, {playername}. Here's the letter. Give my regards to {s13} when you see {reg11?her:him}.
 dlga_lord_mission_deliver_message_rejected:lord_pretalk|Ah, all right then. Well, I am sure I will find someone else.
-dlga_lord_tell_mission:lord_mission_deliver_message.1|I need to deliver a letter to {s13} of {s15}, who must be at {s4} currently. If you are going towards there, would you deliver my letter to him? The letter needs to reach him in 40 days.
+dlga_lord_tell_mission:lord_mission_deliver_message.1|I need to deliver a letter to {s13} of {s15}, who must be at {s4} currently. If you are going towards there, would you deliver my letter to  {reg11?her:him}? The letter needs to reach  {reg11?her:him} in 40 days.
 dlga_lord_tell_mission:lord_mission_told|There is an urgent matter... My messenger is due to report on our battle plans to commanders in {s14}. His trip has been postponed several times already with all the trouble on the roads, but this time he must get through. So, I want to at least make sure he's well-guarded. I trust you well, {playername} so I would be very grateful if you could escort him to {s14} and make sure he arrives safe and sound.
 dlga_lord_tell_mission:lord_mission_told.1|I have a friend here, an old warrior, who is very sick. Pestilence has infected an old battle wound,and unless he is seen to by a surgeon soon, he will surely die. This man is dear to me, {playername},but he's also stubborn as a hog and refuses to have anyone look at his injury because he doesn't trust the physicians here.I have heard that you've a capable surgeon with you. If you would let your surgeon come here and have a look,{reg3?she:he} may be able to convince him to give his consent to an operation.Please, I will be deeply indebted to you if you grant me this request.
 dlga_lord_tell_mission:lord_tell_mission_raise_troops|{s4}
@@ -1186,30 +1188,35 @@ dlga_town_dweller_ask_info:town_dweller_talk|{s10}
 dlga_town_dweller_talk:town_dweller_talk|How is life here?
 dlga_town_dweller_talk:town_dweller_ask_rumor|What is the latest rumor around here?
 dlga_town_dweller_ask_rumor:town_dweller_talk|I don't know anything that would be of interest to you.
+dlga_town_dweller_ask_rumor:town_dweller_ask_join|{s60}
+dlga_town_dweller_ask_join:town_dweller_ask_join_yes|Yes, I could indeed use another hand. Get ready to leave!
+dlga_town_dweller_ask_join:town_dweller_ask_join_no|No, I have no use for you.
+dlga_town_dweller_ask_join_yes:close_window|Very well, I will gather my things and join your party.
+dlga_town_dweller_ask_join_no:close_window|{s60}
 dlga_town_dweller_ask_rumor:town_dweller_talk.1|{s61}
+dlga_town_dweller_talk:town_dweller_ask_directions|Can you help me find a place?
+dlga_town_dweller_ask_directions:town_dweller_ask_directions2|What are you looking for?
+dlga_town_dweller_ask_directions2:town_dweller_ask_directions3|{s4}.
+dlga_town_dweller_ask_directions2:close_window|Never mind.
+dlga_town_dweller_ask_directions3:close_window|I know where that is. Follow me.
 dlga_town_dweller_talk:town_dweller_brawl|{s4}
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|Are you threatening me? The guards hardly wait for your type to show up.
 dlga_town_dweller_brawl_confirm:close_window|Oh really? Let's see what you've got.
 dlga_town_dweller_brawl_confirm:close_window.1|No, I thought you were someone else.
 dlga_town_dweller_talk:close_window|[Leave]
+dlga_start:close_window.30|Get lost!
+dlga_start:close_window.31|Leave me alone!
 dlga_start:player_castle_guard_talk|Yes, Commander?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|How goes the watch, soldier?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|All is quiet Commander. Nothing to report.
 dlga_player_castle_guard_talk_3:close_window|Good. Keep your eyes open.
-dlga_start:close_window.30|Good day, Commander. It's good having you here in {s10}.
-dlga_start:close_window.31|Mind your manners around here and we'll have no trouble.
+dlga_start:close_window.32|Good day, {s24}. It's good having you here in {s10}.
+dlga_start:close_window.33|Mind your manners around here and we'll have no trouble.
 dlga_start:hall_guard_easter_egg|Ah, just past midnight. You know, an unusual incident happened recently - do you want to hear about it?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Yes, please go on.
 dlga_hall_guard_easter_egg:close_window|No, I don't care for gossip.
 dlga_hall_guard_easter_egg_scene:close_window|Well.. an unusual group of adventurers appeared recently: a man, a dwarf and an elf, and then...
-dlga_start:hall_guard_talk|Your orders, Commander?
-dlga_start:close_window.32|We are not supposed to talk while on guard, Commander.
-dlga_hall_guard_talk:hall_guard_duty|Stay on duty and let me know if anyone comes to see me.
-dlga_hall_guard_duty:close_window|Yes, Commander. As you wish.
-dlga_hall_guard_talk:hall_guard_arrest|I want you to arrest this man immediately!
-dlga_hall_guard_arrest:hall_guard_arrest_2|Who do you want arrested, Commander?
-dlga_hall_guard_arrest_2:close_window|Ah, never mind my high spirits lads.
-dlga_hall_guard_arrest_2:close_window.1|Forget it. I will find another way to deal with this.
+dlga_start:close_window.34|We are not supposed to talk while on guard, Commander.
 dlga_enemy_defeated:close_window|Arggh! I hate this.
 dlga_party_relieved:close_window|Thank you for helping us against those bastards.
 dlga_member_chat_00:close_window.1|^^GROWL!^^
@@ -1260,26 +1267,27 @@ dlga_party_reinforce_check_1:party_reinforce_end.1|Those soldiers are of no use 
 dlga_party_reinforce_check_1:party_reinforce_check_2|{s4}
 dlga_party_reinforce_check_2:party_reinforce_end|{s31}
 dlga_party_reinforce_end:close_window|{s4}
-dlga_start:close_window.33|You are making me late! Wizards are never late!
-dlga_start:close_window.34|It... beckonsssssss...
-dlga_start:close_window.35|{s1}
+dlga_start:close_window.35|You are making me late! Wizards are never late!
+dlga_start:close_window.36|You are making me late! Wizards are never late!
+dlga_start:close_window.37|It... beckonsssssss...
+dlga_start:close_window.38|{s1}
 dlga_start:secret_guardian_let_through|Halt!
 dlga_secret_guardian_let_through:secret_guardian_let_through1|I am {playername}, {s24}. Let me through!
 dlga_secret_guardian_let_through1:close_window|Yes commander, you may pass.
-dlga_start:close_window.36|You there! You survived? Good! You can't be waving a stick about! Take this!
+dlga_start:close_window.39|You there! You survived? Good! You can't be waving a stick about! Take this!
 dlga_start:ori_choose_1|You fight well, kinsman! I don't know how you've been surviving so far. I remember you joining us recently, before all this... before Balin fell... Where are you from?
 dlga_ori_choose_1:ori_choose_finish|I was a tracker, sent to the woods near the Bear people. I recently heard about Balin's company and joined.
 dlga_ori_choose_1:ori_choose_finish.1|I am a distant cousin, a veteran bodyguard from a mine far away. Then I heard of Balin and joined.
 dlga_ori_choose_1:ori_choose_finish.2|I am from the Iron Hills, a veteran of the wars, and a miner during peace. I heard of Balin and joined, wanting more kill orcs.
 dlga_ori_choose_finish:close_window|Good to know! I found these, fit for your background. We shall make our stand here and take as many of them with us!
-dlga_start:close_window.37|It looks like you are shaking off those rusty skills, eh? Here, take a swig of this. It will make you feel better. More orcs are coming!
-dlga_start:close_window.38|Take that dusty thing off you and wear this. Should protect you better. These orcs bite hard!
-dlga_start:close_window.39|Something big is coming! Get ready!
-dlga_start:close_window.40|There are too many of them... but we are dwarves!
-dlga_start:close_window.41|Those orcs opened up a cavern filled with treasures. Here are some that I found, go ahead and take them.
-dlga_start:close_window.42|No.... I hear them... they are outside! They are everywhere!
-dlga_start:close_window.43|Here... Our Lord Balin's... you are worthy of these...
-dlga_start:close_window.44|{s5}
+dlga_start:close_window.40|It looks like you are shaking off those rusty skills, eh? Here, take a swig of this. It will make you feel better. More orcs are coming!
+dlga_start:close_window.41|Take that dusty thing off you and wear this. Should protect you better. These orcs bite hard!
+dlga_start:close_window.42|Something big is coming! Get ready!
+dlga_start:close_window.43|There are too many of them... but we are dwarves!
+dlga_start:close_window.44|Those orcs opened up a cavern filled with treasures. Here are some that I found, go ahead and take them.
+dlga_start:close_window.45|No.... I hear them... they are outside! They are everywhere!
+dlga_start:close_window.46|Here... Our Lord Balin's... you are worthy of these...
+dlga_start:close_window.47|{s5}
 dlga_start:party_encounter_hostile_attacker|You have no chance against us. Surrender now or we will kill you all...
 dlga_party_encounter_hostile_attacker:close_window|Don't attack! We surrender.
 dlga_party_encounter_hostile_attacker:close_window.1|We will fight you to the end!
@@ -1288,7 +1296,7 @@ dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrende
 dlga_party_encounter_hostile_ultimatum_surrender:close_window|{s43}
 dlga_start:companion_rehire.3|{s5}
 dlga_party_encounter_hostile_defender:close_window|Nothing. We'll leave you in peace.
-dlga_start:close_window.45|* stares at you silently *
+dlga_start:close_window.48|* stares at you silently *
 dlga_start:battle_reason_stated|Surrender or die. Make your choice.
 dlga_battle_reason_stated:close_window|I am not afraid of you. I will fight.
 dlga_start:free|Hello. What can I do for you?
@@ -1301,4 +1309,4 @@ dlga_threaten_1:end|We will fight you first
 dlga_free:close_window| Good-bye.
 dlga_free:close_window.1| [Leave]
 dlga_free:close_window.2|NO MATCHING SENTENCE!
-dlga_start:close_window.46|NO MATCHING SENTENCE!
+dlga_start:close_window.49|NO MATCHING SENTENCE!
