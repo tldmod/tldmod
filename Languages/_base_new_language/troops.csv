@@ -52,8 +52,6 @@ trp_townsman|Townsman
 trp_townsman_pl|Townsmen
 trp_watchman|Townswoman
 trp_watchman_pl|Townswomen
-trp_mercenaries_end|bug
-trp_mercenaries_end_pl|bug
 trp_i1_woodmen_man|Woodmen Settler
 trp_i1_woodmen_man_pl|Woodmen Settlers
 trp_i2_woodmen_forester|Woodmen Forester
@@ -88,8 +86,6 @@ trp_i4_beorning_carrock_fighter|Beorning Carrock Fighter
 trp_i4_beorning_carrock_fighter_pl|Beorning Carrock Fighters
 trp_i5_beorning_carrock_berserker|Beorning Carrock Berserker
 trp_i5_beorning_carrock_berserker_pl|Beorning Carrock Berserkers
-trp_northmen_items|BUG
-trp_northmen_items_pl| 
 trp_i1_dale_militia|Dale Militiaman
 trp_i1_dale_militia_pl|Dale Militia
 trp_i2_dale_man_at_arms|Dale Man-at-Arms
@@ -122,8 +118,6 @@ trp_c4_rhovanion_rider|Rhovanion Rider
 trp_c4_rhovanion_rider_pl|Rhovanion Riders
 trp_ac5_rhovanion_marchwarden|Rhovanion Marchwarden
 trp_ac5_rhovanion_marchwarden_pl|Rhovanion Marchwardens
-trp_dale_items|BUG
-trp_dale_items_pl|BUG
 trp_i1_rhun_tribesman|Rhun Tribesman
 trp_i1_rhun_tribesman_pl|Rhun Tribesmen
 trp_ac2_rhun_horse_scout|Rhun Horse Scout
@@ -158,8 +152,6 @@ trp_c5_rhun_warrider|Warrider of Rhun
 trp_c5_rhun_warrider_pl|Warriders of Rhun
 trp_c6_rhun_warlord|Warlord of Rhun
 trp_c6_rhun_warlord_pl|Warlords of Rhun
-trp_rhun_items|BUG
-trp_rhun_items_pl|BUG
 trp_i1_dwarf_apprentice|Apprentice-dwarf
 trp_i1_dwarf_apprentice_pl|Apprentice-dwarves
 trp_i2_dwarf_warrior|Warrior-dwarf
@@ -196,8 +188,6 @@ trp_i5_iron_hills_battle_dwarf|Iron Hills Battle-dwarf
 trp_i5_iron_hills_battle_dwarf_pl|Iron Hills Battle-dwarves
 trp_i6_iron_hills_grors_guard|Gror's Guard
 trp_i6_iron_hills_grors_guard_pl|Gror's Guards
-trp_dwarf_items|BUG
-trp_dwarf_items_pl| 
 trp_i1_gon_levy|Gondor Levy
 trp_i1_gon_levy_pl|Gondor Levies
 trp_i2_gon_watchman|Gondor Watchman
@@ -356,8 +346,6 @@ trp_i5_lorien_gal_royal_inf|Galadhrim Royal Guard
 trp_i5_lorien_gal_royal_inf_pl|Galadhrim Royal Guards
 trp_lothlorien_standard_bearer|Lothlorien Standard Bearer
 trp_lothlorien_standard_bearer_pl|Lothlorien Standard Bearers
-trp_lorien_items|BUG
-trp_lorien_items_pl| 
 trp_a1_greenwood_scout|Greenwood Scout
 trp_a1_greenwood_scout_pl|Greenwood Scouts
 trp_a2_greenwood_veteran_scout|Greenwood Veteran Scout
@@ -388,8 +376,6 @@ trp_i5_greenwood_chosen_spearmaster|Thranduil's Chosen Spear Master
 trp_i5_greenwood_chosen_spearmaster_pl|Thranduil's Chosen Spear Masters
 trp_i5_greenwood_standard_bearer|Greenwood Standard Bearer
 trp_i5_greenwood_standard_bearer_pl|Greenwood Standard Bearers
-trp_woodelf_items|BUG
-trp_woodelf_items_pl| 
 trp_a1_riv_scout|Rivendell Scout
 trp_a1_riv_scout_pl|Rivendell Scouts
 trp_a2_riv_vet_scout|Rivendell Veteran Scout
@@ -436,8 +422,6 @@ trp_a4_arnor_vet_ranger|Dunedain Veteran Ranger
 trp_a4_arnor_vet_ranger_pl|Dunedain Veteran Rangers
 trp_a5_arnor_master_ranger|Master Ranger of Arnor
 trp_a5_arnor_master_ranger_pl|Master Rangers of Arnor
-trp_imladris_items|BUG
-trp_imladris_items_pl|BUG
 trp_i1_rohan_youth|Rohan Youth
 trp_i1_rohan_youth_pl|Rohan Youths
 trp_i2_guardsman_of_rohan|Guardsman of Rohan
@@ -528,8 +512,6 @@ trp_i4_far_harad_champion|Far Harad Champion
 trp_i4_far_harad_champion_pl|Far Harad Champions
 trp_i5_far_harad_panther_guard|Panther Guard
 trp_i5_far_harad_panther_guard_pl|Panther Guards
-trp_harad_items|BUG
-trp_harad_items_pl| 
 trp_i1_dun_wildman|Dunnish Wildman
 trp_i1_dun_wildman_pl|Dunnish Wildmen
 trp_i2_dun_warrior|Dunnish Warrior
@@ -548,8 +530,6 @@ trp_i5_dun_wolf_guard|Dunnish Wolf Guard
 trp_i5_dun_wolf_guard_pl|Dunnish Wolf Guards
 trp_ac5_dun_raven_rider|Dunnish Night Raven
 trp_ac5_dun_raven_rider_pl|Dunnish Night Ravens
-trp_dunland_items|BUG
-trp_dunland_items_pl| 
 trp_i1_khand_bondsman|Khand Bondsman
 trp_i1_khand_bondsman_pl|Khand Bondsmen
 trp_i2_khand_pit_dog|Khand Pit Dog
@@ -586,8 +566,6 @@ trp_ac4_khand_vet_skirmisher|Khand Veteran Skirmisher
 trp_ac4_khand_vet_skirmisher_pl|Khand Veteran Skirmishers
 trp_ac5_khand_heavy_skirmisher|Variag Heavy Skirmisher
 trp_ac5_khand_heavy_skirmisher_pl|Variag Heavy Skirmishers
-trp_khand_items|BUG
-trp_khand_items_pl| 
 trp_i1_corsair_youth|Umbar Sailor
 trp_i1_corsair_youth_pl|Umbar Sailors
 trp_i2_corsair_warrior|Umbar Warrior
@@ -622,8 +600,6 @@ trp_i5_corsair_master_spearman|Spearmaster of Umbar
 trp_i5_corsair_master_spearman_pl|Spearmasters of Umbar
 trp_i5_corsair_master_pikeman|Pikemaster of Umbar
 trp_i5_corsair_master_pikeman_pl|Pikemasters of Umbar
-trp_umbar_items|BUG
-trp_umbar_items_pl| 
 trp_i1_isen_orc_snaga|Orc Snaga of Isengard
 trp_i1_isen_orc_snaga_pl|Orc Snagas of Isengard
 trp_i2_isen_orc|Orc of Isengard
@@ -758,8 +734,6 @@ trp_a3_moria_large_goblin_archer|Large Goblin Archer of Moria
 trp_a3_moria_large_goblin_archer_pl|Large Goblin Archers of Moria
 trp_a4_moria_fell_goblin_archer|Fell Goblin Archer of Moria
 trp_a4_moria_fell_goblin_archer_pl|Fell Goblin Archers of Moria
-trp_moria_items|BUG
-trp_moria_items_pl|BUG
 trp_i1_gunda_goblin|Gundabad Goblin
 trp_i1_gunda_goblin_pl|Gundabad Goblins
 trp_i2_gunda_orc|Gundabad Orc
@@ -780,8 +754,6 @@ trp_c4_gunda_warg_rider|Gundabad Warg Rider
 trp_c4_gunda_warg_rider_pl|Gundabad Warg Riders
 trp_c5_gunda_clan_rider|Goblin North Clan Rider
 trp_c5_gunda_clan_rider_pl|Goblin North Clan Riders
-trp_gundabad_items|BUG
-trp_gundabad_items_pl| 
 trp_i5_gunda_orc_champion|Gundabad Orc Champion
 trp_i5_gunda_orc_champion_pl|Gundabad Orc Champions
 trp_mountain_goblin2|Mountain Goblin
@@ -804,12 +776,6 @@ trp_c4_mordor_num_horseman|Black Numenorean Horseman
 trp_c4_mordor_num_horseman_pl|Black Numenorean Horsemen
 trp_c5_mordor_num_knight|Black Numenorean Horsemaster
 trp_c5_mordor_num_knight_pl|Black Numenorean Horsemasters
-trp_noldorin_commander|Noldorin Commander
-trp_noldorin_commander_pl|Noldorin Commanders
-trp_lorien_captain2|lorien captain
-trp_lorien_captain2_pl|Elf Captains of Lothlorien
-trp_lothlorien_lieutenant|lorien captain
-trp_lothlorien_lieutenant_pl|Elf Captains of Lothlorien
 trp_greenwood_captain|Greenwood Captain
 trp_greenwood_captain_pl|Greenwood Captains
 trp_lorien_captain|Lothlorien Captain
@@ -870,8 +836,6 @@ trp_blackroot_captain|Captain of Blackroot Vale
 trp_blackroot_captain_pl|Captains of Blackroot Vale
 trp_ithilien_captain|Captain of Ithilien Rangers
 trp_ithilien_captain_pl|Captains of Ithilien Rangers
-trp_end_leaders|bug
-trp_end_leaders_pl|bug
 trp_brigand|Brigand
 trp_brigand_pl|Brigands
 trp_mountain_bandit|Mountain Bandit
@@ -917,27 +881,16 @@ trp_spy_walker_1_pl|Townsmen
 trp_spy_walker_2|Townswoman
 trp_spy_walker_2_pl|Townswomen
 trp_walker_man_gondor_black|Townsman
-trp_walker_man_gondor_black_pl| 
 trp_walker_man_gondor_white|Townsman
-trp_walker_man_gondor_white_pl| 
 trp_walker_man_gondor_blue|Townsman
-trp_walker_man_gondor_blue_pl| 
 trp_walker_man_gondor_green|Townsman
-trp_walker_man_gondor_green_pl| 
 trp_walker_man_rohan_t|Rohan Townsman
-trp_walker_man_rohan_t_pl| 
 trp_walker_man_rohan_d|Rohan Townsman
-trp_walker_man_rohan_d_pl| 
 trp_walker_woman_rohan_t|Rohan Maiden
-trp_walker_woman_rohan_t_pl| 
 trp_walker_woman_rohan_d|Rohan Maiden
-trp_walker_woman_rohan_d_pl| 
 trp_walker_woman_gondor_b|Gondor Woman
-trp_walker_woman_gondor_b_pl| 
 trp_walker_woman_gondor_bw|Gondor Woman
-trp_walker_woman_gondor_bw_pl| 
 trp_walker_woman_gondor_w|Gondor Noble
-trp_walker_woman_gondor_w_pl| 
 trp_mirkwood_walker_1|Greenwood Elf
 trp_mirkwood_walker_1_pl|Greenwood Elves
 trp_mirkwood_walker_2|Greenwood Elf
@@ -953,109 +906,57 @@ trp_beorn_walker_pl|Peasant Men
 trp_beorn_walker_fem|Peasant Woman
 trp_beorn_walker_fem_pl|Peasant Women
 trp_trainer_4|Trainer
-trp_trainer_4_pl| 
 trp_trainer_gondor|Trainer
-trp_trainer_gondor_pl| 
 trp_trainer_rohan|Trainer
-trp_trainer_rohan_pl| 
 trp_trainer_dale|Trainer
-trp_trainer_dale_pl| 
 trp_trainer_elf|Trainer
-trp_trainer_elf_pl| 
 trp_trainer_beorn|Trainer
-trp_trainer_beorn_pl| 
 trp_trainer_dwarf|Trainer
-trp_trainer_dwarf_pl| 
 trp_trainer_mordor|Trainer
-trp_trainer_mordor_pl| 
 trp_trainer_isengard|Trainer
-trp_trainer_isengard_pl| 
 trp_trainer_khand|Trainer
-trp_trainer_khand_pl| 
 trp_trainer_rhun|Trainer
-trp_trainer_rhun_pl| 
 trp_trainer_harad|Trainer
-trp_trainer_harad_pl| 
 trp_trainer_umbar|Trainer
-trp_trainer_umbar_pl| 
 trp_ransom_broker_1|Ransom Broker
-trp_ransom_broker_1_pl| 
 trp_ransom_broker_2|Ransom Broker
-trp_ransom_broker_2_pl| 
 trp_ransom_broker_3|Ransom Broker
-trp_ransom_broker_3_pl| 
 trp_ransom_broker_4|Ransom Broker
-trp_ransom_broker_4_pl| 
 trp_ransom_broker_5|Ransom Broker
-trp_ransom_broker_5_pl| 
 trp_ransom_broker_6|Ransom Broker
-trp_ransom_broker_6_pl| 
 trp_ransom_broker_7|Ransom Broker
-trp_ransom_broker_7_pl| 
 trp_ransom_broker_8|Ransom Broker
-trp_ransom_broker_8_pl| 
 trp_ransom_broker_9|Ransom Broker
-trp_ransom_broker_9_pl| 
 trp_ransom_broker_10|Ransom Broker
-trp_ransom_broker_10_pl| 
 trp_tavern_traveler_1|Traveller
-trp_tavern_traveler_1_pl| 
 trp_tavern_traveler_2|Traveller
-trp_tavern_traveler_2_pl| 
 trp_tavern_traveler_3|Traveller
-trp_tavern_traveler_3_pl| 
 trp_tavern_traveler_4|Traveller
-trp_tavern_traveler_4_pl| 
 trp_tavern_traveler_5|Traveller
-trp_tavern_traveler_5_pl| 
 trp_tavern_traveler_6|Traveller
-trp_tavern_traveler_6_pl| 
 trp_tavern_traveler_7|Traveller
-trp_tavern_traveler_7_pl| 
 trp_tavern_traveler_8|Traveller
-trp_tavern_traveler_8_pl| 
 trp_tavern_traveler_9|Traveller
-trp_tavern_traveler_9_pl| 
 trp_tavern_traveler_10|Traveller
-trp_tavern_traveler_10_pl| 
 trp_tavern_minstrel_1|Minstrel
-trp_tavern_minstrel_1_pl| 
 trp_npc1|Mablung
-trp_npc1_pl| 
 trp_npc2|Cirdil
-trp_npc2_pl| 
 trp_npc3|Ulfas
-trp_npc3_pl| 
 trp_npc4|Galmyne
-trp_npc4_pl| 
 trp_npc5|Glorfindel
-trp_npc5_pl| 
 trp_npc6|Luevanna
-trp_npc6_pl| 
 trp_npc7|Kili Goldfinger
-trp_npc7_pl| 
 trp_npc8|Faniul
-trp_npc8_pl| 
 trp_npc9|Gulm
-trp_npc9_pl| 
 trp_npc10|Durgash
-trp_npc10_pl| 
 trp_npc11|Ufthak
-trp_npc11_pl| 
 trp_npc12|Gorbag
-trp_npc12_pl| 
 trp_npc13|Lykyada
-trp_npc13_pl| 
 trp_npc14|Fuldimir
-trp_npc14_pl| 
 trp_npc15|Bolzog
-trp_npc15_pl| 
 trp_npc16|Varfang
-trp_npc16_pl| 
 trp_npc17|Dimborn
-trp_npc17_pl| 
 trp_knight_6_2|Golasgil
-trp_knight_6_2_pl| 
 trp_gondor_lord|Steward Denethor
 trp_gondor_lord_pl|Steward
 trp_rohan_lord|King Theoden
@@ -1093,137 +994,72 @@ trp_dunland_lord_pl|Chief
 trp_beorn_lord|Chief Grimbeorn the Old
 trp_beorn_lord_pl|Chief
 trp_lorien_marshall|Celeborn
-trp_lorien_marshall_pl| 
 trp_pippin_notmet_old|halfling old
-trp_pippin_notmet_old_pl| 
 trp_merry_notmet_old|halfling old
-trp_merry_notmet_old_pl| 
 trp_pippin_old|Pippin old
-trp_pippin_old_pl| 
 trp_merry_old|Merry old
-trp_merry_old_pl| 
 trp_knight_1_1|Angbor the Fearless
-trp_knight_1_1_pl| 
 trp_knight_1_2|Húrin of the Keys
-trp_knight_1_2_pl| 
 trp_knight_1_3|Prince Imrahil
-trp_knight_1_3_pl| 
 trp_knight_1_4|Orthalion
-trp_knight_1_4_pl| 
 trp_knight_1_5|Duinhir
-trp_knight_1_5_pl| 
 trp_knight_1_6|Hirluin the Fair
-trp_knight_1_6_pl| 
 trp_knight_1_7|Faramir
-trp_knight_1_7_pl| 
 trp_knight_1_8|Forlong the Fat
-trp_knight_1_8_pl| 
 trp_knight_1_9|Theodred
-trp_knight_1_9_pl| 
 trp_knight_1_10|Erkenbrand
-trp_knight_1_10_pl| 
 trp_knight_1_11|Elfhelm
-trp_knight_1_11_pl| 
 trp_knight_1_12|Hama
-trp_knight_1_12_pl| 
 trp_knight_1_13|Grimbold
-trp_knight_1_13_pl| 
 trp_knight_1_14|Éomer
-trp_knight_1_14_pl| 
 trp_knight_1_15|Ugluk
-trp_knight_1_15_pl| 
 trp_knight_1_16|Mauhur
-trp_knight_1_16_pl| 
 trp_knight_1_17|Mog the Seven-fingered
-trp_knight_1_17_pl| 
 trp_knight_1_18|Hushnak Longshanks
-trp_knight_1_18_pl| 
 trp_knight_1_19|Gridash the Tree-biter
-trp_knight_1_19_pl| 
 trp_knight_1_20|Gronk the Man-eater
-trp_knight_1_20_pl| 
 trp_knight_2_1|Captain Mortakh
-trp_knight_2_1_pl| 
 trp_knight_2_2|Berúthiel
-trp_knight_2_2_pl| 
 trp_knight_2_3|Skang
-trp_knight_2_3_pl| 
 trp_knight_2_4|Pharakhâd The Bastard
-trp_knight_2_4_pl| 
 trp_knight_2_5|Grishnakh
-trp_knight_2_5_pl| 
 trp_knight_2_51|Gothmog
 trp_knight_2_51_pl|Lieutenant
 trp_knight_2_6|Chieftain Karna the Lion
-trp_knight_2_6_pl| 
 trp_knight_2_7|Chieftain Na’man
-trp_knight_2_7_pl| 
 trp_knight_2_8|Chieftain Haarith
-trp_knight_2_8_pl| 
 trp_knight_2_11|Kusulak
-trp_knight_2_11_pl| 
 trp_knight_2_12|Ulwarth the Balchoth
-trp_knight_2_12_pl| 
 trp_knight_2_13|Brodda
-trp_knight_2_13_pl| 
 trp_knight_2_16|Torask
-trp_knight_2_16_pl| 
 trp_knight_2_17|Lurmsakun
-trp_knight_2_17_pl| 
 trp_knight_3_1|Captain Morbir
-trp_knight_3_1_pl| 
 trp_knight_3_2|Captain Angamaitë
-trp_knight_3_2_pl| 
 trp_knight_3_3|Captain Sangahyando
-trp_knight_3_3_pl| 
 trp_knight_3_6|Haldir
-trp_knight_3_6_pl| 
 trp_knight_3_7|Orophin
-trp_knight_3_7_pl| 
 trp_knight_3_11|Elladan
-trp_knight_3_11_pl| 
 trp_knight_3_12|Elrohir
-trp_knight_3_12_pl| 
 trp_knight_3_13|Halbarad
-trp_knight_3_13_pl| 
 trp_knight_3_16|Miriel
-trp_knight_3_16_pl| 
 trp_knight_3_17|Gladvaethor
-trp_knight_3_17_pl| 
 trp_knight_4_1|Whip Snog
-trp_knight_4_1_pl| 
 trp_knight_4_2|Whip Snotgor
-trp_knight_4_2_pl| 
 trp_knight_4_6|General Tuskim
-trp_knight_4_6_pl| 
 trp_knight_4_7|General Mugslag
-trp_knight_4_7_pl| 
 trp_knight_4_11|Ruel
-trp_knight_4_11_pl| 
 trp_knight_4_12|Beranor Blackfur
-trp_knight_4_12_pl| 
 trp_knight_4_16|Whip Brolgukhsh
-trp_knight_4_16_pl| 
 trp_knight_4_17|Whip Grumrunt
-trp_knight_4_17_pl| 
 trp_knight_4_18|Whip Grimsob
-trp_knight_4_18_pl| 
 trp_knight_5_1|Lord Halward
-trp_knight_5_1_pl| 
 trp_knight_5_2|Lord Bard
-trp_knight_5_2_pl| 
 trp_knight_5_3|Lord Esgarain
-trp_knight_5_3_pl| 
 trp_knight_5_6|Fulgni Longbeard
-trp_knight_5_6_pl| 
 trp_knight_5_7|Thorin Stonehelm
-trp_knight_5_7_pl| 
 trp_knight_5_11|Chief Fudreim
-trp_knight_5_11_pl| 
 trp_knight_5_12|Chief Wulf
-trp_knight_5_12_pl| 
 trp_knight_6_1|Dervorin
-trp_knight_6_1_pl| 
 trp_smith_mtirith|Berethor the Smith
 trp_smith_mtirith_pl|Steward's smiths
 trp_smith_pelargir|Hallatan Metalmaster
@@ -1646,42 +1482,14 @@ trp_elder_ironhill|Camp Chief
 trp_elder_ironhill_pl|the camp
 trp_village_1_elder|Lord of the Lash
 trp_village_1_elder_pl|the caves
-trp_merchants_end|bug
-trp_merchants_end_pl|bug
 trp_tutorial_chest_1|Melee Weapons Chest
-trp_tutorial_chest_1_pl|bug
 trp_tutorial_chest_2|Ranged Weapons Chest
-trp_tutorial_chest_2_pl|bug
 trp_bonus_chest_1|Bonus Chest
-trp_bonus_chest_1_pl|bug
 trp_bonus_chest_2|Bonus Chest
-trp_bonus_chest_2_pl|bug
 trp_bonus_chest_3|Bonus Chest
-trp_bonus_chest_3_pl|bug
 trp_camp_chest_faction|Faction Chest
-trp_camp_chest_faction_pl|bug
 trp_camp_chest_none|Chest for nones
-trp_camp_chest_none_pl|bug
 trp_player_chest|Your Chest
-trp_player_chest_pl|bug
-trp_temp_array_a|bug
-trp_temp_array_a_pl|bug
-trp_temp_array_b|bug
-trp_temp_array_b_pl|bug
-trp_temp_array_c|bug
-trp_temp_array_c_pl|bug
-trp_stack_selection_amounts|bug
-trp_stack_selection_amounts_pl|bug
-trp_stack_selection_ids|bug
-trp_stack_selection_ids_pl|bug
-trp_notification_menu_types|bug
-trp_notification_menu_types_pl|bug
-trp_notification_menu_var1|bug
-trp_notification_menu_var1_pl|bug
-trp_notification_menu_var2|bug
-trp_notification_menu_var2_pl|bug
-trp_banner_background_color_array|bug
-trp_banner_background_color_array_pl|bug
 trp_local_merchant|Local Merchant
 trp_local_merchant_pl|Local Merchants
 trp_tax_rebel|Peasant Rebel
@@ -1705,15 +1513,10 @@ trp_spy_partner_pl|Spy Handlers
 trp_spy_partner_evil|Spy Handler
 trp_spy_partner_evil_pl|Spy Handlers
 trp_easter_egg_troll|The Troll
-trp_easter_egg_troll_pl| 
 trp_treebeard|Treebeard
-trp_treebeard_pl| 
 trp_ent_1|Bregalad
-trp_ent_1_pl| 
 trp_ent_2|Finglas
-trp_ent_2_pl| 
 trp_ent_3|Fladrif
-trp_ent_3_pl| 
 trp_gandalf|Gandalf
 trp_gandalf_pl|Home-grown Gandalves
 trp_nazgul|Nazgul
@@ -1721,45 +1524,15 @@ trp_nazgul_pl|Domesticated Nazgul
 trp_radagast|Radagast
 trp_radagast_pl|Home-grown Gandalves
 trp_barman|Barman
-trp_barman_pl| 
 trp_elder|Center Elder
-trp_elder_pl| 
 trp_gear_merchant|Gear Merchant
-trp_gear_merchant_pl| 
 trp_goods_merchant|Goods Merchant
-trp_goods_merchant_pl| 
 trp_start_quest_caravaneer|Torbal the Caravaneer
-trp_start_quest_caravaneer_pl| 
 trp_dorwinion_bandit|Dorwinion Bandit
 trp_dorwinion_bandit_pl|Dorwinion Bandits
 trp_dorwinion_raider|Dorwinion Raider
 trp_dorwinion_raider_pl|Dorwinion Raiders
-trp_troops_end|troops end
-trp_troops_end_pl|troops end
-trp_no_troop| 
 trp_no_troop_pl|the place
-trp_skill2item_type| 
-trp_skill2item_type_pl| 
-trp_traits| 
-trp_traits_pl| 
-trp_log_array_entry_type| 
-trp_log_array_entry_type_pl| 
-trp_log_array_entry_time| 
-trp_log_array_entry_time_pl| 
-trp_log_array_actor| 
-trp_log_array_actor_pl| 
-trp_log_array_center_object| 
-trp_log_array_center_object_pl| 
-trp_log_array_center_object_lord| 
-trp_log_array_center_object_lord_pl| 
-trp_log_array_center_object_faction| 
-trp_log_array_center_object_faction_pl| 
-trp_log_array_troop_object| 
-trp_log_array_troop_object_pl| 
-trp_log_array_troop_object_faction| 
-trp_log_array_troop_object_faction_pl| 
-trp_log_array_faction_object| 
-trp_log_array_faction_object_pl| 
 trp_city_guard|City Guard
 trp_city_guard_pl|city guard
 trp_orc_sentry|Orc Sentry
@@ -1775,11 +1548,8 @@ trp_wolf_rider_of_mirkwood_pl|Wolf Riders of Mirkwood
 trp_warg_rider_of_mirkwood|Warg Rider of Mirkwood
 trp_warg_rider_of_mirkwood_pl|Warg Riders of Mirkwood
 trp_gate_aggravator|Gate Defence
-trp_gate_aggravator_pl| 
 trp_orc_pretender|Orc Pretender
-trp_orc_pretender_pl| 
 trp_human_prisoner|Human Prisoner
-trp_human_prisoner_pl| 
 trp_spider|Mirkwood Spider
 trp_spider_pl|Mirkwood Spiders
 trp_bear|Bear
@@ -1787,11 +1557,8 @@ trp_bear_pl|Bears
 trp_wolf|Wolf
 trp_wolf_pl|Wolves
 trp_dorwinion_sack|Dorwinion Sack
-trp_dorwinion_sack_pl|bug
 trp_ring_hunter_captain|Ring Hunter Captain
-trp_ring_hunter_captain_pl|bug
 trp_ring_hunter_lt|Ring Hunter Captain
-trp_ring_hunter_lt_pl|bug
 trp_ring_hunter_one|Ring Hunter
 trp_ring_hunter_one_pl|Ring Hunters
 trp_ring_hunter_two|Ring Hunter
@@ -1801,7 +1568,6 @@ trp_ring_hunter_three_pl|Ring Hunters
 trp_ring_hunter_four|Ring Hunter
 trp_ring_hunter_four_pl|Ring Hunters
 trp_start_quest_uruk|Mordor Uruk Captain
-trp_start_quest_uruk_pl|bug
 trp_start_quest_orc|Mordor Orc Lieutenant
 trp_start_quest_orc_pl|Large Orcs of Mordor
 trp_start_quest_woodelf|Galadhrim Royal Marksman
@@ -1819,41 +1585,25 @@ trp_black_shield_scout_pl|Amath Dollen's Scouts
 trp_black_shield_guard|Amath Dollen's Guard
 trp_black_shield_guard_pl|Amath Dollen's Guards
 trp_dorwinion_spirit_leader|Spirit
-trp_dorwinion_spirit_leader_pl| 
 trp_dorwinion_spirit|Lesser Spirit
-trp_dorwinion_spirit_pl| 
-trp_dummy_troop|bug
-trp_dummy_troop_pl| 
-trp_dummy_troop_b|bug
-trp_dummy_troop_b_pl| 
 trp_i6_beorning_bear_warrior|Bear Warrior
 trp_i6_beorning_bear_warrior_pl|Bear Warriors
 trp_a5_dun_night_wolf|Dunnish Night Wolf
 trp_a5_dun_night_wolf_pl|Dunnish Night Wolfs
 trp_volunteers|--- Reserves ---:
-trp_volunteers_pl| 
 trp_dormant|Dormant
-trp_dormant_pl| 
 trp_badass_theo|Badass King Theo
 trp_badass_theo_pl|King
 trp_killer_witcher|Ugly Mogly
 trp_killer_witcher_pl|Lieutenant
 trp_morannon_healer|Okstuk the Healer
-trp_morannon_healer_pl| 
 trp_minas_tirith_healer|Ioreth
-trp_minas_tirith_healer_pl| 
 trp_edoras_healer|Freya the Healer
-trp_edoras_healer_pl| 
 trp_isengard_healer|Nurgal the Patcher
-trp_isengard_healer_pl| 
 trp_guldur_healer|Mornagar the Gramaryer
-trp_guldur_healer_pl| 
 trp_gundabad_healer|Lurgakh Third Eye
-trp_gundabad_healer_pl| 
 trp_mirkwood_healer|Corwiel the Soft-Handed
-trp_mirkwood_healer_pl| 
 trp_hungry_uruk|Hungry Uruk
-trp_hungry_uruk_pl|bug
 trp_hungry_orc|Hungry Orc
 trp_hungry_orc_pl|Large Orcs of Mordor
 trp_longing_lorien|Longing Elf
@@ -1877,25 +1627,15 @@ trp_generic_hero_knight_pl|generic hero knight
 trp_generic_hero_mounted_archer|generic hero mounted archer
 trp_generic_hero_mounted_archer_pl|generic hero mounted archer
 trp_npc18|Turmbathu
-trp_npc18_pl| 
 trp_npc19|Heidrek
-trp_npc19_pl| 
 trp_npc20|Zigûrphel
-trp_npc20_pl| 
 trp_npc21|Berta
-trp_npc21_pl| 
 trp_npc22|Zigûrphel
-trp_npc22_pl| 
 trp_npc23|Zigûrphel
-trp_npc23_pl| 
 trp_npc24|Zigûrphel
-trp_npc24_pl| 
 trp_npc25|Zigûrphel
-trp_npc25_pl| 
 trp_npc26|Zigûrphel
-trp_npc26_pl| 
 trp_npc27|Zigûrphel
-trp_npc27_pl| 
 trp_werewolf|Werewolf
 trp_werewolf_pl|Werewolves
 trp_moria_troll|Cave Troll
@@ -1969,22 +1709,11 @@ trp_a5_dism_elite_skirmisher_of_rohan_pl|Elite Skirmishers of Rohan
 trp_ac5_camel_rider|Harad Camel Rider
 trp_ac5_camel_rider_pl|Harad Camel Riders
 trp_aragorn|Aragorn
-trp_aragorn_pl| 
 trp_legolas|Legolas
-trp_legolas_pl| 
 trp_gimli|Gimli
-trp_gimli_pl| 
-trp_stub1|BUG
-trp_stub1_pl|BUG
 trp_pippin_notmet|halfling
-trp_pippin_notmet_pl| 
 trp_merry_notmet|halfling
-trp_merry_notmet_pl| 
 trp_pippin|Pippin
-trp_pippin_pl| 
 trp_merry|Merry
-trp_merry_pl| 
 trp_grima|Grima Wormtongue
 trp_grima_pl|the city
-trp_last|BUG
-trp_last_pl|BUG
