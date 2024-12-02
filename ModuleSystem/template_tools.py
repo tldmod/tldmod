@@ -22,12 +22,12 @@ class Game_Menu_Template(object):
     """See the documentation of module_game_menus"""
     self.id = id
     self.flags = flags
-    self.text = text
+    self.text = text.replace('{!}', '[[!]]')
     self.mesh = mesh
     self.opers = opers
     self.optn_id = optn_id
     self.optn_cond = optn_cond
-    self.optn_text = optn_text
+    self.optn_text = optn_text.replace('{!}', '[[!]]')
     self.optn_consq = optn_consq
   
   def generate_menus(self, input_list, pagelen=13):
@@ -58,7 +58,7 @@ class Game_Menu_Template(object):
       }
       
       if type(str_or_obj) == str:
-        return str_or_obj.format(**format_fields)
+        return str_or_obj.format(**format_fields).replace('[[!]]', '{!}')
       else:
         formatted_obj = []
         try:

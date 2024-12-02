@@ -69,7 +69,7 @@ save_tag_uses(export_dir, tag_uses)
 save_quick_strings(export_dir,quick_strings)
 #duplicate-ids thingie
 if conflicting_ids:
-  print "[!] Conflicting gamemenu item ids,\n    see the log for details!"
+  print "[!] Conflicting gamemenu item ids,\n    see conflicting_mno.log for details!"
   debugfile = open("conflicting_mno.log","w")
   debugfile.write(conflicting_mno)
   debugfile.close()
