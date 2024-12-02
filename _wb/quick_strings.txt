@@ -1,4 +1,4 @@
-2015
+2014
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -91,7 +91,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_4144_wb__dev_^_ _rev_4144_wb_|_dev_^_Built_2024-12-02_09:27___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-12-02_18:27___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1242,9 +1242,9 @@ qstr_{!}OFF {!}OFF
 qstr_{!}Added_10_prisoner {!}Added_10_prisoners.
 qstr_Added_1000_experienc Added_1000_experience_to_player.
 qstr_Attributes_skills_an Attributes,_skills_and_proficiencies_raised.
-qstr_Items_added_to_playe Items_added_to_player_inventory.
-qstr_Looter_party_was_spa Looter_party_was_spawned_nearby.
-qstr_Ironman_turned_off Ironman_turned_off
+qstr_{!}Items_added_to_pl {!}Items_added_to_player_inventory.
+qstr_{!}Looter_party_was_ {!}Looter_party_was_spawned_nearby.
+qstr_{!}Ironman_turned_of {!}Ironman_turned_off
 qstr_HP_lost_from_poisoni HP_lost_from_poisoning.
 qstr__{s17}. ,_{s17}.
 qstr_A_group_of_{s1}_is_{ A_group_of_{s1}_is_{s10}_toward_you.
@@ -1434,7 +1434,6 @@ qstr_{s5}_has_stopped_fol {s5}_has_stopped_following_you.
 qstr_You_have_{reg69}_all You_have_{reg69}_ally_party_following_you
 qstr_You_have_{reg69}_ally You_have_{reg69}_ally_parties_following_you
 qstr_The_forces_of_{s2}_h The_forces_of_{s2}_have_regrouped_and_march_on_to_{s15}!
-qstr_Theoden_activated Theoden_activated
 qstr_Your_scouts_report_s Your_scouts_report_signs_of_a_{s2}_nearby.
 qstr_{s1}_from_{s2} {s1}_from_{s2}
 qstr_When_dealing_with_lo When_dealing_with_locals_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.^^(the_Resource_Points_which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)

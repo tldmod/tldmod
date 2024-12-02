@@ -2517,21 +2517,13 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
   #[anyone|plyr ,"lord_invite_3", [],  "Yes, {s65}.", "lord_give_oath_2",  []],
   #[anyone|plyr ,"lord_invite_3", [],  "No, {s65}. I cannot serve you right now.", "lord_enter_service_reject",  []],
   
-[anyone ,"start", [ (eq,"$g_talk_troop",trp_rohan_lord),
-                    (neg|faction_slot_eq, fac_rohan, slot_faction_marshall, "$g_talk_troop"),
-                     (assign, "$g_talk_troop_met", 0),],
-"Mmmh...", "grima_interrupt", []],
+[trp_rohan_lord ,"start", [ (neg|faction_slot_eq, fac_rohan, slot_faction_marshall, "$g_talk_troop"),
+                     (assign, "$g_talk_troop_met", 0),(start_mission_conversation, trp_grima),],
+"Mmmh...", "close_window", []],
 
-[anyone,"grima_interrupt", [], #for later use, need to place grima first
+[trp_grima,"start", [], #for later use, need to place grima first
 "The lord is in deep thought and must not be disturbed!", "close_window",
-                [] + (is_a_wb_dialog and [
-                (try_for_agents, ":agent_no"),
-                    (agent_get_troop_id, ":troop", ":agent_no"),
-                    (eq, ":troop", "trp_grima"),
-                    (set_conversation_speaker_agent, ":agent_no"),
-                    (set_conversation_speaker_troop, ":troop"),
-                (try_end),
-                ] or []) + [ 
+                [
                 (call_script,"script_stand_back"),
                 ]],
 
