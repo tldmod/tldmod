@@ -1,6 +1,6 @@
 partytemplatesfile version 1
 261
-pt_none none 74 0 1 7 -1 -1 -1 -1 -1 -1 
+pt_none {!}none 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_hero_party Hero_Party 74 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -132,114 +132,114 @@ pt_dwarf_p_train Dwarven_Prisoner_Train 4194444 0 4 14 84 2 4 0 92 4 6 0 83 4 6 
 pt_mordor_p_train Mordor_Prisoner_Train 562949957615745 0 6 14 360 6 8 0 368 6 10 0 359 16 24 0 368 16 24 0 358 40 60 0 -1 
 pt_isengard_p_train Isengard_Prisoner_Train 562949957615744 0 7 14 321 4 6 0 316 10 14 0 315 24 36 0 314 40 60 0 -1 -1 
 pt_kingdom_hero_party War_Party 4259913 0 1 238 -1 -1 -1 -1 -1 -1 
-pt_gondor_reinf_d _ 0 0 1 0 115 1 2 0 119 2 4 0 109 1 2 0 106 1 2 0 -1 -1 
-pt_gondor_reinf_a _ 0 0 1 0 102 2 4 0 101 1 3 0 103 2 4 0 -1 -1 -1 
-pt_gondor_reinf_b _ 0 0 1 0 116 1 3 0 103 4 6 0 102 1 2 0 110 1 2 0 117 1 2 0 -1 
-pt_gondor_reinf_c _ 0 0 1 0 104 2 3 0 107 2 3 0 112 1 2 0 -1 -1 -1 
-pt_pelargir_reinf_a _ 0 0 1 0 131 6 12 0 -1 -1 -1 -1 -1 
-pt_pelargir_reinf_b _ 0 0 1 0 132 1 2 0 134 2 4 0 131 2 4 0 -1 -1 -1 
-pt_pelargir_reinf_c _ 0 0 1 0 132 1 2 0 134 2 5 0 -1 -1 -1 -1 
-pt_dol_amroth_reinf_a _ 0 0 1 0 158 2 4 0 157 5 10 0 -1 -1 -1 -1 
-pt_dol_amroth_reinf_b _ 0 0 1 0 159 3 6 0 158 2 4 0 -1 -1 -1 -1 
-pt_dol_amroth_reinf_c _ 0 0 1 0 160 4 8 0 -1 -1 -1 -1 -1 
-pt_lamedon_reinf_a _ 0 0 1 0 139 2 4 0 138 5 10 0 -1 -1 -1 -1 
-pt_lamedon_reinf_b _ 0 0 1 0 140 4 8 0 139 1 2 0 -1 -1 -1 -1 
-pt_lamedon_reinf_c _ 0 0 1 0 141 4 8 0 -1 -1 -1 -1 -1 
-pt_lossarnach_reinf_a _ 0 0 1 0 126 2 4 0 125 5 10 0 -1 -1 -1 -1 
-pt_lossarnach_reinf_b _ 0 0 1 0 127 4 8 0 126 1 2 0 -1 -1 -1 -1 
-pt_lossarnach_reinf_c _ 0 0 1 0 128 4 8 0 -1 -1 -1 -1 -1 
-pt_pinnath_reinf_a _ 0 0 1 0 145 6 12 0 -1 -1 -1 -1 -1 
-pt_pinnath_reinf_b _ 0 0 1 0 148 1 2 0 146 2 4 0 145 1 3 0 -1 -1 -1 
-pt_pinnath_reinf_c _ 0 0 1 0 146 3 6 0 148 1 2 0 -1 -1 -1 -1 
-pt_ithilien_reinf_a _ 0 0 1 0 121 4 7 0 -1 -1 -1 -1 -1 
-pt_ithilien_reinf_b _ 0 0 1 0 122 3 5 0 -1 -1 -1 -1 -1 
-pt_ithilien_reinf_c _ 0 0 1 0 123 2 4 0 -1 -1 -1 -1 -1 
-pt_blackroot_reinf_a _ 0 0 1 0 151 6 12 0 -1 -1 -1 -1 -1 
-pt_blackroot_reinf_b _ 0 0 1 0 154 3 6 0 152 1 2 0 151 2 3 0 -1 -1 -1 
-pt_blackroot_reinf_c _ 0 0 1 0 152 1 3 0 154 3 6 0 -1 -1 -1 -1 
-pt_rohan_reinf_a _ 0 0 1 0 238 2 4 0 222 1 2 0 221 3 6 0 -1 -1 -1 
-pt_rohan_reinf_b _ 0 0 1 0 239 2 4 0 230 1 2 0 223 3 5 0 231 1 2 0 -1 -1 
-pt_rohan_reinf_c _ 0 0 1 0 240 2 3 0 234 1 2 0 224 1 2 0 -1 -1 -1 
-pt_isengard_reinf_a _ 0 0 1 0 336 1 2 0 314 2 5 0 332 1 2 0 337 1 2 0 315 2 4 0 -1 
-pt_isengard_reinf_b _ 0 0 1 0 320 2 3 0 332 1 2 0 337 2 4 0 315 2 4 0 333 1 3 0 316 1 2 0 
-pt_isengard_reinf_c _ 0 0 1 0 321 1 2 0 338 1 2 0 341 1 2 0 316 1 2 0 318 1 2 0 -1 
-pt_mordor_reinf_a _ 0 0 1 0 344 1 3 0 358 2 5 0 345 1 2 0 359 2 4 0 -1 -1 
-pt_mordor_reinf_b _ 0 0 1 0 368 2 4 0 369 2 4 0 345 2 3 0 359 3 6 0 360 1 2 0 370 1 2 0 
-pt_mordor_reinf_c _ 0 0 1 0 362 1 2 0 346 1 1 0 348 0 1 0 361 1 2 0 365 1 2 0 -1 
-pt_harad_reinf_a _ 0 0 1 0 256 1 2 0 263 1 2 0 247 4 8 0 248 1 2 0 -1 -1 
-pt_harad_reinf_b _ 0 0 1 0 260 0 2 0 253 0 2 0 248 2 4 0 263 1 2 0 -1 -1 
-pt_harad_reinf_c _ 0 0 1 0 261 1 2 0 258 1 2 0 264 1 2 0 251 1 1 0 249 0 2 0 985 1 2 0 
-pt_rhun_reinf_a _ 0 0 1 0 76 1 2 0 65 2 3 0 64 5 10 0 -1 -1 -1 
-pt_rhun_reinf_b _ 0 0 1 0 66 2 4 0 77 1 2 0 73 3 5 0 -1 -1 -1 
-pt_rhun_reinf_c _ 0 0 1 0 78 2 4 0 70 2 3 0 67 1 3 0 -1 -1 -1 
-pt_khand_reinf_a _ 0 0 1 0 282 1 2 0 278 2 4 0 277 4 8 0 -1 -1 -1 
-pt_khand_reinf_b _ 0 0 1 0 292 2 4 0 283 0 1 0 279 2 3 0 289 1 2 0 -1 -1 
-pt_khand_reinf_c _ 0 0 1 0 284 2 4 0 293 1 2 0 290 1 2 0 -1 -1 -1 
-pt_umbar_reinf_a _ 0 0 1 0 301 1 2 0 297 2 4 0 296 4 8 0 -1 -1 -1 
-pt_umbar_reinf_b _ 0 0 1 0 397 1 2 0 305 1 2 0 298 1 2 0 302 2 4 0 -1 -1 
-pt_umbar_reinf_c _ 0 0 1 0 398 1 2 0 306 1 2 0 310 1 2 0 303 1 2 0 -1 -1 
-pt_lorien_reinf_a _ 0 0 1 0 176 2 4 0 165 2 4 0 164 2 4 0 172 1 2 0 -1 -1 
-pt_lorien_reinf_b _ 0 0 1 0 166 1 2 0 173 1 2 0 176 2 4 0 -1 -1 -1 
-pt_lorien_reinf_c _ 0 0 1 0 167 1 2 0 174 1 2 0 177 3 6 0 -1 -1 -1 
-pt_imladris_reinf_a _ 0 0 1 0 203 1 3 0 211 0 1 0 197 1 2 0 210 2 4 0 -1 -1 
-pt_imladris_reinf_b _ 0 0 1 0 199 2 4 0 217 1 2 0 204 1 2 0 212 0 1 0 -1 -1 
-pt_imladris_reinf_c _ 0 0 1 0 207 2 4 0 215 1 1 0 205 1 2 0 218 0 1 0 -1 -1 
-pt_woodelf_reinf_a _ 0 0 1 0 182 1 2 0 190 1 3 0 181 4 7 0 -1 -1 -1 
-pt_woodelf_reinf_b _ 0 0 1 0 183 1 2 0 187 1 2 0 191 2 4 0 -1 -1 -1 
-pt_woodelf_reinf_c _ 0 0 1 0 184 1 2 0 188 1 2 0 192 2 4 0 -1 -1 -1 
-pt_moria_reinf_a _ 0 0 1 0 374 4 8 0 375 2 4 0 -1 -1 -1 -1 
-pt_moria_reinf_b _ 0 0 1 0 379 4 7 0 375 1 2 0 376 2 4 0 377 1 2 0 -1 -1 
-pt_moria_reinf_c _ 0 0 1 0 371 2 4 0 376 1 2 0 -1 -1 -1 -1 
-pt_guldur_reinf_a _ 0 0 1 0 356 4 10 0 359 3 5 0 -1 -1 -1 -1 
-pt_guldur_reinf_b _ 0 0 1 0 366 2 5 0 359 1 2 0 360 3 5 0 -1 -1 -1 
-pt_guldur_reinf_c _ 0 0 1 0 362 1 2 0 367 1 2 0 361 2 4 0 -1 -1 -1 
-pt_beorn_reinf_a _ 0 0 1 0 39 2 4 0 38 2 4 0 29 3 6 0 -1 -1 -1 
-pt_beorn_reinf_b _ 0 0 1 0 35 2 4 0 31 1 2 0 40 1 2 0 43 1 2 0 -1 -1 
-pt_beorn_reinf_c _ 0 0 1 0 41 1 3 0 44 2 3 0 32 1 2 0 -1 -1 -1 
-pt_gundabad_reinf_a _ 0 0 1 0 382 6 12 0 383 5 8 0 -1 -1 -1 -1 
-pt_gundabad_reinf_b _ 0 0 1 0 387 1 3 0 383 3 5 0 384 2 3 0 -1 -1 -1 
-pt_gundabad_reinf_c _ 0 0 1 0 389 1 2 0 384 2 3 0 -1 -1 -1 -1 
-pt_dale_reinf_a _ 0 0 1 0 59 2 4 0 48 1 2 0 49 1 2 0 47 5 10 0 -1 -1 
-pt_dale_reinf_b _ 0 0 1 0 59 0 2 0 50 3 5 0 56 1 2 0 53 1 2 0 -1 -1 
-pt_dale_reinf_c _ 0 0 1 0 61 3 6 0 57 1 2 0 54 1 2 0 -1 -1 -1 
-pt_dwarf_reinf_a _ 0 0 1 0 83 2 3 0 96 1 2 0 82 4 8 0 -1 -1 -1 
-pt_dwarf_reinf_b _ 0 0 1 0 92 2 4 0 93 1 2 0 84 2 4 0 96 0 1 0 -1 -1 
-pt_dwarf_reinf_c _ 0 0 1 0 88 2 4 0 85 2 4 0 97 1 2 0 -1 -1 -1 
-pt_dunland_reinf_a _ 0 0 1 0 268 3 6 0 267 4 8 0 -1 -1 -1 -1 
-pt_dunland_reinf_b _ 0 0 1 0 272 3 6 0 269 2 4 0 -1 -1 -1 -1 
-pt_dunland_reinf_c _ 0 0 1 0 271 1 3 0 273 2 4 0 270 1 3 0 -1 -1 -1 
-pt_gondor_cap_recruits _ 0 0 1 0 101 2 5 0 110 1 1 0 -1 -1 -1 -1 
-pt_gondor_recruits _ 0 0 1 0 101 1 4 0 110 0 1 0 -1 -1 -1 -1 
-pt_pelargir_recruits _ 0 0 1 0 131 1 4 0 -1 -1 -1 -1 -1 
-pt_dol_amroth_recruits _ 0 0 1 0 157 2 4 0 -1 -1 -1 -1 -1 
-pt_lamedon_recruits _ 0 0 1 0 138 2 5 0 -1 -1 -1 -1 -1 
-pt_lossarnach_recruits _ 0 0 1 0 125 2 5 0 -1 -1 -1 -1 -1 
-pt_pinnath_recruits _ 0 0 1 0 145 1 4 0 -1 -1 -1 -1 -1 
-pt_ithilien_recruits _ 0 0 1 0 121 1 2 0 -1 -1 -1 -1 -1 
-pt_blackroot_recruits _ 0 0 1 0 151 1 4 0 -1 -1 -1 -1 -1 
-pt_rohan_recruits _ 0 0 1 0 221 2 4 0 -1 -1 -1 -1 -1 
-pt_rohan_cap_recruits _ 0 0 1 0 221 2 6 0 -1 -1 -1 -1 -1 
-pt_isengard_recruits _ 0 0 1 0 336 2 3 0 314 2 4 0 -1 -1 -1 -1 
-pt_morannon_recruits _ 0 0 1 0 344 1 2 0 358 3 5 0 397 1 1 0 -1 -1 -1 
-pt_mordor_recruits _ 0 0 1 0 344 1 2 0 358 3 5 0 -1 -1 -1 -1 
-pt_morgul_recruits _ 0 0 1 0 344 2 3 0 364 1 2 0 -1 -1 -1 -1 
-pt_harad_recruits _ 0 0 1 0 247 1 3 0 256 0 2 0 263 1 2 0 -1 -1 -1 
-pt_rhun_recruits _ 0 0 1 0 64 1 4 0 76 1 1 0 -1 -1 -1 -1 
-pt_khand_recruits _ 0 0 1 0 277 2 5 0 -1 -1 -1 -1 -1 
-pt_umbar_recruits _ 0 0 1 0 296 3 6 0 -1 -1 -1 -1 -1 
-pt_lorien_recruits _ 0 0 1 0 164 1 3 0 172 1 1 0 -1 -1 -1 -1 
-pt_imladris_recruits _ 0 0 1 0 197 0 2 0 210 2 3 0 -1 -1 -1 -1 
-pt_woodelf_recruits _ 0 0 1 0 181 1 4 0 -1 -1 -1 -1 -1 
-pt_moria_recruits _ 0 0 1 0 374 5 10 0 -1 -1 -1 -1 -1 
-pt_guldur_recruits _ 0 0 1 0 356 5 10 0 -1 -1 -1 -1 -1 
-pt_beorn_recruits _ 0 0 1 0 38 2 3 0 29 1 2 0 -1 -1 -1 -1 
-pt_woodman_recruits _ 0 0 1 0 29 2 3 0 38 1 2 0 -1 -1 -1 -1 
-pt_gundabad_recruits _ 0 0 1 0 382 3 6 0 -1 -1 -1 -1 -1 
-pt_gundabad_cap_recruits _ 0 0 1 0 382 3 7 0 -1 -1 -1 -1 -1 
-pt_dale_recruits _ 0 0 1 0 47 1 4 0 59 1 2 0 -1 -1 -1 -1 
-pt_dwarf_recruits _ 0 0 1 0 82 2 3 0 96 0 2 0 -1 -1 -1 -1 
-pt_dwarf_iron_recruits _ 0 0 1 0 96 1 2 0 82 1 2 0 -1 -1 -1 -1 
-pt_dunland_recruits _ 0 0 1 0 267 3 7 0 -1 -1 -1 -1 -1 
+pt_gondor_reinf_d {!} 0 0 1 0 115 1 2 0 119 2 4 0 109 1 2 0 106 1 2 0 -1 -1 
+pt_gondor_reinf_a {!} 0 0 1 0 102 2 4 0 101 1 3 0 103 2 4 0 -1 -1 -1 
+pt_gondor_reinf_b {!} 0 0 1 0 116 1 3 0 103 4 6 0 102 1 2 0 110 1 2 0 117 1 2 0 -1 
+pt_gondor_reinf_c {!} 0 0 1 0 104 2 3 0 107 2 3 0 112 1 2 0 -1 -1 -1 
+pt_pelargir_reinf_a {!} 0 0 1 0 131 6 12 0 -1 -1 -1 -1 -1 
+pt_pelargir_reinf_b {!} 0 0 1 0 132 1 2 0 134 2 4 0 131 2 4 0 -1 -1 -1 
+pt_pelargir_reinf_c {!} 0 0 1 0 132 1 2 0 134 2 5 0 -1 -1 -1 -1 
+pt_dol_amroth_reinf_a {!} 0 0 1 0 158 2 4 0 157 5 10 0 -1 -1 -1 -1 
+pt_dol_amroth_reinf_b {!} 0 0 1 0 159 3 6 0 158 2 4 0 -1 -1 -1 -1 
+pt_dol_amroth_reinf_c {!} 0 0 1 0 160 4 8 0 -1 -1 -1 -1 -1 
+pt_lamedon_reinf_a {!} 0 0 1 0 139 2 4 0 138 5 10 0 -1 -1 -1 -1 
+pt_lamedon_reinf_b {!} 0 0 1 0 140 4 8 0 139 1 2 0 -1 -1 -1 -1 
+pt_lamedon_reinf_c {!} 0 0 1 0 141 4 8 0 -1 -1 -1 -1 -1 
+pt_lossarnach_reinf_a {!} 0 0 1 0 126 2 4 0 125 5 10 0 -1 -1 -1 -1 
+pt_lossarnach_reinf_b {!} 0 0 1 0 127 4 8 0 126 1 2 0 -1 -1 -1 -1 
+pt_lossarnach_reinf_c {!} 0 0 1 0 128 4 8 0 -1 -1 -1 -1 -1 
+pt_pinnath_reinf_a {!} 0 0 1 0 145 6 12 0 -1 -1 -1 -1 -1 
+pt_pinnath_reinf_b {!} 0 0 1 0 148 1 2 0 146 2 4 0 145 1 3 0 -1 -1 -1 
+pt_pinnath_reinf_c {!} 0 0 1 0 146 3 6 0 148 1 2 0 -1 -1 -1 -1 
+pt_ithilien_reinf_a {!} 0 0 1 0 121 4 7 0 -1 -1 -1 -1 -1 
+pt_ithilien_reinf_b {!} 0 0 1 0 122 3 5 0 -1 -1 -1 -1 -1 
+pt_ithilien_reinf_c {!} 0 0 1 0 123 2 4 0 -1 -1 -1 -1 -1 
+pt_blackroot_reinf_a {!} 0 0 1 0 151 6 12 0 -1 -1 -1 -1 -1 
+pt_blackroot_reinf_b {!} 0 0 1 0 154 3 6 0 152 1 2 0 151 2 3 0 -1 -1 -1 
+pt_blackroot_reinf_c {!} 0 0 1 0 152 1 3 0 154 3 6 0 -1 -1 -1 -1 
+pt_rohan_reinf_a {!} 0 0 1 0 238 2 4 0 222 1 2 0 221 3 6 0 -1 -1 -1 
+pt_rohan_reinf_b {!} 0 0 1 0 239 2 4 0 230 1 2 0 223 3 5 0 231 1 2 0 -1 -1 
+pt_rohan_reinf_c {!} 0 0 1 0 240 2 3 0 234 1 2 0 224 1 2 0 -1 -1 -1 
+pt_isengard_reinf_a {!} 0 0 1 0 336 1 2 0 314 2 5 0 332 1 2 0 337 1 2 0 315 2 4 0 -1 
+pt_isengard_reinf_b {!} 0 0 1 0 320 2 3 0 332 1 2 0 337 2 4 0 315 2 4 0 333 1 3 0 316 1 2 0 
+pt_isengard_reinf_c {!} 0 0 1 0 321 1 2 0 338 1 2 0 341 1 2 0 316 1 2 0 318 1 2 0 -1 
+pt_mordor_reinf_a {!} 0 0 1 0 344 1 3 0 358 2 5 0 345 1 2 0 359 2 4 0 -1 -1 
+pt_mordor_reinf_b {!} 0 0 1 0 368 2 4 0 369 2 4 0 345 2 3 0 359 3 6 0 360 1 2 0 370 1 2 0 
+pt_mordor_reinf_c {!} 0 0 1 0 362 1 2 0 346 1 1 0 348 0 1 0 361 1 2 0 365 1 2 0 -1 
+pt_harad_reinf_a {!} 0 0 1 0 256 1 2 0 263 1 2 0 247 4 8 0 248 1 2 0 -1 -1 
+pt_harad_reinf_b {!} 0 0 1 0 260 0 2 0 253 0 2 0 248 2 4 0 263 1 2 0 -1 -1 
+pt_harad_reinf_c {!} 0 0 1 0 261 1 2 0 258 1 2 0 264 1 2 0 251 1 1 0 249 0 2 0 985 1 2 0 
+pt_rhun_reinf_a {!} 0 0 1 0 76 1 2 0 65 2 3 0 64 5 10 0 -1 -1 -1 
+pt_rhun_reinf_b {!} 0 0 1 0 66 2 4 0 77 1 2 0 73 3 5 0 -1 -1 -1 
+pt_rhun_reinf_c {!} 0 0 1 0 78 2 4 0 70 2 3 0 67 1 3 0 -1 -1 -1 
+pt_khand_reinf_a {!} 0 0 1 0 282 1 2 0 278 2 4 0 277 4 8 0 -1 -1 -1 
+pt_khand_reinf_b {!} 0 0 1 0 292 2 4 0 283 0 1 0 279 2 3 0 289 1 2 0 -1 -1 
+pt_khand_reinf_c {!} 0 0 1 0 284 2 4 0 293 1 2 0 290 1 2 0 -1 -1 -1 
+pt_umbar_reinf_a {!} 0 0 1 0 301 1 2 0 297 2 4 0 296 4 8 0 -1 -1 -1 
+pt_umbar_reinf_b {!} 0 0 1 0 397 1 2 0 305 1 2 0 298 1 2 0 302 2 4 0 -1 -1 
+pt_umbar_reinf_c {!} 0 0 1 0 398 1 2 0 306 1 2 0 310 1 2 0 303 1 2 0 -1 -1 
+pt_lorien_reinf_a {!} 0 0 1 0 176 2 4 0 165 2 4 0 164 2 4 0 172 1 2 0 -1 -1 
+pt_lorien_reinf_b {!} 0 0 1 0 166 1 2 0 173 1 2 0 176 2 4 0 -1 -1 -1 
+pt_lorien_reinf_c {!} 0 0 1 0 167 1 2 0 174 1 2 0 177 3 6 0 -1 -1 -1 
+pt_imladris_reinf_a {!} 0 0 1 0 203 1 3 0 211 0 1 0 197 1 2 0 210 2 4 0 -1 -1 
+pt_imladris_reinf_b {!} 0 0 1 0 199 2 4 0 217 1 2 0 204 1 2 0 212 0 1 0 -1 -1 
+pt_imladris_reinf_c {!} 0 0 1 0 207 2 4 0 215 1 1 0 205 1 2 0 218 0 1 0 -1 -1 
+pt_woodelf_reinf_a {!} 0 0 1 0 182 1 2 0 190 1 3 0 181 4 7 0 -1 -1 -1 
+pt_woodelf_reinf_b {!} 0 0 1 0 183 1 2 0 187 1 2 0 191 2 4 0 -1 -1 -1 
+pt_woodelf_reinf_c {!} 0 0 1 0 184 1 2 0 188 1 2 0 192 2 4 0 -1 -1 -1 
+pt_moria_reinf_a {!} 0 0 1 0 374 4 8 0 375 2 4 0 -1 -1 -1 -1 
+pt_moria_reinf_b {!} 0 0 1 0 379 4 7 0 375 1 2 0 376 2 4 0 377 1 2 0 -1 -1 
+pt_moria_reinf_c {!} 0 0 1 0 371 2 4 0 376 1 2 0 -1 -1 -1 -1 
+pt_guldur_reinf_a {!} 0 0 1 0 356 4 10 0 359 3 5 0 -1 -1 -1 -1 
+pt_guldur_reinf_b {!} 0 0 1 0 366 2 5 0 359 1 2 0 360 3 5 0 -1 -1 -1 
+pt_guldur_reinf_c {!} 0 0 1 0 362 1 2 0 367 1 2 0 361 2 4 0 -1 -1 -1 
+pt_beorn_reinf_a {!} 0 0 1 0 39 2 4 0 38 2 4 0 29 3 6 0 -1 -1 -1 
+pt_beorn_reinf_b {!} 0 0 1 0 35 2 4 0 31 1 2 0 40 1 2 0 43 1 2 0 -1 -1 
+pt_beorn_reinf_c {!} 0 0 1 0 41 1 3 0 44 2 3 0 32 1 2 0 -1 -1 -1 
+pt_gundabad_reinf_a {!} 0 0 1 0 382 6 12 0 383 5 8 0 -1 -1 -1 -1 
+pt_gundabad_reinf_b {!} 0 0 1 0 387 1 3 0 383 3 5 0 384 2 3 0 -1 -1 -1 
+pt_gundabad_reinf_c {!} 0 0 1 0 389 1 2 0 384 2 3 0 -1 -1 -1 -1 
+pt_dale_reinf_a {!} 0 0 1 0 59 2 4 0 48 1 2 0 49 1 2 0 47 5 10 0 -1 -1 
+pt_dale_reinf_b {!} 0 0 1 0 59 0 2 0 50 3 5 0 56 1 2 0 53 1 2 0 -1 -1 
+pt_dale_reinf_c {!} 0 0 1 0 61 3 6 0 57 1 2 0 54 1 2 0 -1 -1 -1 
+pt_dwarf_reinf_a {!} 0 0 1 0 83 2 3 0 96 1 2 0 82 4 8 0 -1 -1 -1 
+pt_dwarf_reinf_b {!} 0 0 1 0 92 2 4 0 93 1 2 0 84 2 4 0 96 0 1 0 -1 -1 
+pt_dwarf_reinf_c {!} 0 0 1 0 88 2 4 0 85 2 4 0 97 1 2 0 -1 -1 -1 
+pt_dunland_reinf_a {!} 0 0 1 0 268 3 6 0 267 4 8 0 -1 -1 -1 -1 
+pt_dunland_reinf_b {!} 0 0 1 0 272 3 6 0 269 2 4 0 -1 -1 -1 -1 
+pt_dunland_reinf_c {!} 0 0 1 0 271 1 3 0 273 2 4 0 270 1 3 0 -1 -1 -1 
+pt_gondor_cap_recruits {!} 0 0 1 0 101 2 5 0 110 1 1 0 -1 -1 -1 -1 
+pt_gondor_recruits {!} 0 0 1 0 101 1 4 0 110 0 1 0 -1 -1 -1 -1 
+pt_pelargir_recruits {!} 0 0 1 0 131 1 4 0 -1 -1 -1 -1 -1 
+pt_dol_amroth_recruits {!} 0 0 1 0 157 2 4 0 -1 -1 -1 -1 -1 
+pt_lamedon_recruits {!} 0 0 1 0 138 2 5 0 -1 -1 -1 -1 -1 
+pt_lossarnach_recruits {!} 0 0 1 0 125 2 5 0 -1 -1 -1 -1 -1 
+pt_pinnath_recruits {!} 0 0 1 0 145 1 4 0 -1 -1 -1 -1 -1 
+pt_ithilien_recruits {!} 0 0 1 0 121 1 2 0 -1 -1 -1 -1 -1 
+pt_blackroot_recruits {!} 0 0 1 0 151 1 4 0 -1 -1 -1 -1 -1 
+pt_rohan_recruits {!} 0 0 1 0 221 2 4 0 -1 -1 -1 -1 -1 
+pt_rohan_cap_recruits {!} 0 0 1 0 221 2 6 0 -1 -1 -1 -1 -1 
+pt_isengard_recruits {!} 0 0 1 0 336 2 3 0 314 2 4 0 -1 -1 -1 -1 
+pt_morannon_recruits {!} 0 0 1 0 344 1 2 0 358 3 5 0 397 1 1 0 -1 -1 -1 
+pt_mordor_recruits {!} 0 0 1 0 344 1 2 0 358 3 5 0 -1 -1 -1 -1 
+pt_morgul_recruits {!} 0 0 1 0 344 2 3 0 364 1 2 0 -1 -1 -1 -1 
+pt_harad_recruits {!} 0 0 1 0 247 1 3 0 256 0 2 0 263 1 2 0 -1 -1 -1 
+pt_rhun_recruits {!} 0 0 1 0 64 1 4 0 76 1 1 0 -1 -1 -1 -1 
+pt_khand_recruits {!} 0 0 1 0 277 2 5 0 -1 -1 -1 -1 -1 
+pt_umbar_recruits {!} 0 0 1 0 296 3 6 0 -1 -1 -1 -1 -1 
+pt_lorien_recruits {!} 0 0 1 0 164 1 3 0 172 1 1 0 -1 -1 -1 -1 
+pt_imladris_recruits {!} 0 0 1 0 197 0 2 0 210 2 3 0 -1 -1 -1 -1 
+pt_woodelf_recruits {!} 0 0 1 0 181 1 4 0 -1 -1 -1 -1 -1 
+pt_moria_recruits {!} 0 0 1 0 374 5 10 0 -1 -1 -1 -1 -1 
+pt_guldur_recruits {!} 0 0 1 0 356 5 10 0 -1 -1 -1 -1 -1 
+pt_beorn_recruits {!} 0 0 1 0 38 2 3 0 29 1 2 0 -1 -1 -1 -1 
+pt_woodman_recruits {!} 0 0 1 0 29 2 3 0 38 1 2 0 -1 -1 -1 -1 
+pt_gundabad_recruits {!} 0 0 1 0 382 3 6 0 -1 -1 -1 -1 -1 
+pt_gundabad_cap_recruits {!} 0 0 1 0 382 3 7 0 -1 -1 -1 -1 -1 
+pt_dale_recruits {!} 0 0 1 0 47 1 4 0 59 1 2 0 -1 -1 -1 -1 
+pt_dwarf_recruits {!} 0 0 1 0 82 2 3 0 96 0 2 0 -1 -1 -1 -1 
+pt_dwarf_iron_recruits {!} 0 0 1 0 96 1 2 0 82 1 2 0 -1 -1 -1 -1 
+pt_dunland_recruits {!} 0 0 1 0 267 3 7 0 -1 -1 -1 -1 -1 
 pt_caravan_survivors Caravan_Survivors 562949953421386 0 26 7 441 5 5 0 -1 -1 -1 -1 -1 
 pt_routed_allies Routed_Allies 844424930132044 0 2 7 -1 -1 -1 -1 -1 -1 
 pt_routed_enemies Routed_Enemies 844424930132044 0 2 7 -1 -1 -1 -1 -1 -1 
@@ -259,5 +259,5 @@ pt_volunteers Reserves 1098 0 1 7 -1 -1 -1 -1 -1 -1
 pt_refugees Refugees 2251799814013068 0 27 7 25 6 7 0 446 3 3 0 -1 -1 -1 -1 
 pt_retreat_troops Cover_Troops 844424930132044 0 2 7 25 1 1 0 -1 -1 -1 -1 -1 
 pt_radagast Lone_Rider 2424906 0 26 7 861 1 1 0 -1 -1 -1 -1 -1 
-pt_warp_array warp_array 525568 0 1 0 -1 -1 -1 -1 -1 -1 
-pt_warp_temp_array warp_temp_array 525568 0 1 0 -1 -1 -1 -1 -1 -1 
+pt_warp_array {!}warp_array 525568 0 1 0 -1 -1 -1 -1 -1 -1 
+pt_warp_temp_array {!}warp_temp_array 525568 0 1 0 -1 -1 -1 -1 -1 -1 
