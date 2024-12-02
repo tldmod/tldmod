@@ -2524,7 +2524,7 @@ scripts = [
             (ge, reg0, 2),
             
             (assign, ":num_numenor_troops", 0),
-            (try_for_range, ":numenor_troop", "trp_i2_mordor_num_renegade", "trp_noldorin_commander"),
+            (try_for_range, ":numenor_troop", "trp_i2_mordor_num_renegade", trp_c5_mordor_num_knight + 1),
                 (party_count_members_of_type, reg1, ":volunteers",":numenor_troop"),
                 (val_add, ":num_numenor_troops", reg1),
             (try_end),
