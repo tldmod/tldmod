@@ -1059,15 +1059,15 @@ itm_sarustaff = (itm_beorn_staff, imod_tattered)
  
 troops = [
 ["player","Player","Player",tf_hero|tf_unmoveable_in_party_window,0,0,fac_player_faction,[],      str_4|agi_4|int_4|cha_4,wp(15),0,0x000000018000004136db6db6db6db6db00000000001db6db0000000000000000],
-["temp_troop","Temp_Troop","Temp_Troop",tf_hero,0,0,fac_commoners,[],0,0,knows_common|knows_inventory_management_10,0],
-["game","Game","Game",tf_hero,0,0,fac_commoners, [],0,0,0,0],
-["unarmed_troop","Unarmed_Troop","Unarmed_Troops",tf_hero,0,0,fac_commoners,[itm_arrows,itm_short_bow],def_attrib|str_14,0,knows_common|knows_power_draw_2,0],
+["temp_troop","{!}Temp_Troop","Temp_Troop",tf_hero,0,0,fac_commoners,[],0,0,knows_common|knows_inventory_management_10,0],
+["game","{!}Game","{!}Game",tf_hero,0,0,fac_commoners, [],0,0,0,0],
+["unarmed_troop","{!}Unarmed_Troop","{!}Unarmed_Troops",tf_hero,0,0,fac_commoners,[itm_arrows,itm_short_bow],def_attrib|str_14,0,knows_common|knows_power_draw_2,0],
 ####################################################################################################################
 # Troops before this point are hardwired into the game and their order should not be changed!
 ####################################################################################################################
-["temp_troop_2","Temp_Troop_2","Temp_Troop_2",tf_hero,0,0,fac_commoners,   [],      0,0,knows_common|knows_inventory_management_10,0],
-["random_town_sequence","Random_Town_Sequence","Random_Town_Sequence",tf_hero,0,0,fac_neutral,[],0,0,0,0],
-["tournament_participants","Tournament_Participants","Tournament_Participants",tf_hero,0,0,fac_commoners,[],0,0,0,0],
+["temp_troop_2","{!}Temp_Troop_2","{!}Temp_Troop_2",tf_hero,0,0,fac_commoners,   [],      0,0,knows_common|knows_inventory_management_10,0],
+["random_town_sequence","{!}Random_Town_Sequence","{!}Random_Town_Sequence",tf_hero,0,0,fac_neutral,[],0,0,0,0],
+["tournament_participants","{!}Tournament_Participants","{!}Tournament_Participants",tf_hero,0,0,fac_commoners,[],0,0,0,0],
  
 ["tutorial_maceman","Maceman","Macemen",tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_leather_boots,itm_wood_club,itm_black_tunic],
@@ -1804,22 +1804,22 @@ troops = [
       attr_tier_1,wp_tier_1,knows_common|knows_riding_2,khand_man1,khand_man2],
 
 #This troop is the troop marked as soldiers_end
-["town_walker_1","Townsman","Townsmen",tf_gondor| tfg_boots| tfg_armor,0,0,fac_commoners,
+["town_walker_1","Townsman","{!}",tf_gondor| tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
-["town_walker_2","Townswoman","Townswomen",tf_female| tfg_boots| tfg_armor,0,0,fac_commoners,
+["town_walker_2","Townswoman","{!}",tf_female| tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
-["village_walker_1","Villager","Villagers",tfg_boots| tfg_armor,0,0,fac_commoners,
+["village_walker_1","Villager","{!}",tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,man_face_younger_1,man_face_older_2],
-["village_walker_2","Villager","Villagers",tf_female| tfg_boots| tfg_armor,0,0,fac_commoners,
+["village_walker_2","Villager","{!}",tf_female| tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
-["spy_walker_1","Townsman","Townsmen",tfg_boots| tfg_armor| tfg_helm,0,0,fac_commoners,
+["spy_walker_1","Townsman","{!}",tfg_boots| tfg_armor| tfg_helm,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,man_face_middle_1,man_face_old_2],
-["spy_walker_2","Townswoman","Townswomen",tf_female| tfg_boots| tfg_armor| tfg_helm,0,0,fac_commoners,
+["spy_walker_2","Townswoman","{!}",tf_female| tfg_boots| tfg_armor| tfg_helm,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
 # Ryan END
@@ -1887,33 +1887,33 @@ troops = [
       attr_tier_1,wp_tier_1,knows_common,woman_face_1,woman_face_2],
 # end TLD walkers
 
-["mirkwood_walker_1","Greenwood_Elf","Greenwood_Elves",tf_woodelf| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
+["mirkwood_walker_1","Greenwood_Elf","{!}",tf_woodelf| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
     [itm_hood_green_bad,itm_hood_grey, 
     itm_mirkwood_leather_bad, itm_mirkwood_pad_bad,
     itm_rohan_shoes,itm_leather_boots_dark_bad,itm_woodelf_leather_boots],
         attr_elf_tier_1,wp_elf_tier_bow_1,knows_common,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["mirkwood_walker_2","Greenwood_Elf","Greenwood_Elves",tf_female| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
+["mirkwood_walker_2","Greenwood_Elf","{!}",tf_female| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
     [itm_hood_green_bad,itm_hood_grey, 
     itm_mirkwood_leather_bad, itm_mirkwood_pad_bad,
     itm_rohan_shoes,itm_leather_boots_dark_bad,itm_woodelf_leather_boots],
         attr_elf_tier_1,wp_elf_tier_bow_1,knows_common,mirkwood_elf_face_1,mirkwood_elf_face_2],
-["lorien_walker_1","Lothlorien_Elf","Lothlorien_Elves",tf_lorien| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
+["lorien_walker_1","Lothlorien_Elf","{!}",tf_lorien| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
     [itm_hood_grey,itm_lorien_archer_cloak,itm_lorien_light_bad,itm_woodelf_leather_boots,],
         attr_elf_tier_1,wp_elf_tier_1,knows_common,lorien_elf_face_1,lorien_elf_face_2],
-["lorien_walker_2","Lothlorien_Elf","Lothlorien_Elves",tf_female| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
+["lorien_walker_2","Lothlorien_Elf","{!}",tf_female| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
     [itm_hood_grey,itm_lorien_archer_cloak,itm_lorien_light_bad,itm_woodelf_leather_boots,],
         attr_elf_tier_1,wp_elf_tier_1,knows_common,lorien_elf_face_1,lorien_elf_face_2],
-["dwarf_walker","Dwarf","Dwarves",tf_dwarf| tfg_armor| tfg_boots,0,0,fac_dwarf,
+["dwarf_walker","Dwarf","{!}",tf_dwarf| tfg_armor| tfg_boots,0,0,fac_dwarf,
     [itm_dwarf_hood, itm_fur_hat_a_new_wb, itm_dwarf_miner,
     itm_dwarf_vest,itm_dwarf_vest_lordly,itm_fur_coat_wb,itm_white_tunic_c_wb,
     itm_dwarf_pad_boots,],
         attr_dwarf_tier_1,wp_dwarf_tier_1,knows_common,dwarf_face_1,dwarf_face_7],
-["beorn_walker","Peasant_Man","Peasant_Men",tfg_boots| tfg_armor,0,0,fac_dale,
+["beorn_walker","Peasant_Man","{!}",tfg_boots| tfg_armor,0,0,fac_dale,
    [itm_leather_boots,itm_leather_boots_dark_bad, itm_rohan_shoes,
    itm_leather_jerkin_wb, itm_black_tunic_wb, itm_peasant_man_a_wb, itm_woodman_tunic_bad, itm_woodman_scout_bad,itm_beorn_tunic_bad,
    itm_hood_black, itm_hood_grey_bad, itm_fur_hat_a_new_wb],
       attr_tier_1,wp_tier_1,knows_common,swadian_face_younger_1,swadian_face_old_2],
-["beorn_walker_fem","Peasant_Woman","Peasant_Women",tf_female| tfg_boots| tfg_armor,0,0,fac_beorn,
+["beorn_walker_fem","Peasant_Woman","{!}",tf_female| tfg_boots| tfg_armor,0,0,fac_beorn,
     [itm_gondor_ranger_hood,
     itm_robe_generic_dress_wb,itm_green_dress_wb, itm_black_dress_wb,itm_woodman_tunic_bad, itm_woodman_scout_bad,itm_beorn_tunic_bad,
     itm_rohan_shoes_bad,itm_furry_boots,itm_leather_boots_bad],
@@ -2181,19 +2181,19 @@ troops = [
 
 ## hobbits: two versions: for when you didn't meet them, and for when you did meet them (I wish there was a way to RENAME a Troop. str_set_troop_name FTW)  mtarini
 
-["pippin_notmet_old","halfling_old","{!}",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+["pippin_notmet_old","{!}halfling_old","{!}",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
    [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_pippin_outfit],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
-["merry_notmet_old","halfling_old","{!}",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+["merry_notmet_old","{!}halfling_old","{!}",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
    [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_merry_outfit],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
-["pippin_old","Pippin_old","{!}",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+["pippin_old","{!}Pippin_old","{!}",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
    [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_pippin_outfit],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
-["merry_old","Merry_old","{!}",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
+["merry_old","{!}Merry_old","{!}",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
    [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_merry_outfit],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
@@ -3088,28 +3088,28 @@ troops = [
 ["trainee_peasant","Peasant","Peasants",tfg_armor,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       def_attrib|level(4),wp(60),knows_common,mercenary_face_1,mercenary_face_2],
-["fugitive_man","Suspicious_Man","Suspicious_Men",tfg_boots| tfg_armor,0,0,fac_commoners,
+["fugitive_man","Suspicious_Man","{!}Suspicious_Men",tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,itm_arnor_sword_f,itm_loss_throwing_axes,],
       attr_tier_4,wp_tier_4,knows_common|knows_athletics_6|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_9,mercenary_face_1,mercenary_face_2],
-["fugitive_elf","Suspicious_Elf","Suspicious_Elves",tf_lorien| tfg_boots| tfg_armor,0,0,fac_commoners,
+["fugitive_elf","Suspicious_Elf","{!}Suspicious_Elves",tf_lorien| tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_lorien_armor_a,itm_lorien_boots,itm_lorien_sword_a,itm_loss_throwing_axes,],
       attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_6|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_9,lorien_elf_face_1,lorien_elf_face_2],
-["fugitive_dwarf","Suspicious_Dwarf","Suspicious_Dwarves",tf_dwarf| tfg_boots| tfg_armor,0,0,fac_commoners,
+["fugitive_dwarf","Suspicious_Dwarf","{!}Suspicious_Dwarves",tf_dwarf| tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_leather_dwarf_armor,itm_dwarf_pad_boots,itm_dwarf_sword_a,itm_dwarf_throwing_axe,],
       attr_dwarf_tier_4,wp_dwarf_tier_4,knows_common_dwarf|knows_athletics_6|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_9,dwarf_face_2,dwarf_face_3],
-["fugitive_orc","Suspicious_Orc","Suspicious_Orcs",tf_orc| tfg_boots| tfg_armor,0,0,fac_commoners,
+["fugitive_orc","Suspicious_Orc","{!}Suspicious_Orcs",tf_orc| tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_moria_armor_a,itm_orc_slasher,itm_orc_throwing_arrow,],
       attr_orc_tier_4,wp_orc_tier_4,knows_common|knows_athletics_6|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_9,mercenary_face_1,mercenary_face_2],
-["spy","Shifty-eyed_Corsair","Shifty-eyed_Corsairs",tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
+["spy","Shifty-eyed_Corsair","{!}Shifty-eyed_Corsairs",tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
    [itm_umb_armor_d,itm_umb_armor_c,itm_corsair_boots,itm_umb_shield_b,itm_umb_shield_d,itm_umbar_cutlass,itm_umbar_rapier,itm_steppe_horse,],
       attr_tier_4,wp_tier_4,knows_common|knows_riding_3|knows_power_strike_3,bandit_face1,bandit_face2],
-["spy_evil","Shifty-eyed_Southerner","Shifty-eyed_Southerners",tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
+["spy_evil","Shifty-eyed_Southerner","{!}Shifty-eyed_Southerners",tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
    [itm_leather_jerkin,itm_leather_gloves,itm_leather_boots,itm_arnor_sword_f,itm_steppe_horse,],
       attr_tier_4,wp_tier_4,knows_common|knows_riding_3|knows_power_strike_3,bandit_face1,bandit_face2],
-["spy_partner","Spy_Handler","Spy_Handlers",tf_gondor| tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
+["spy_partner","Spy_Handler","{!}Spy_Handlers",tf_gondor| tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
    [itm_gon_squire,itm_gondor_med_greaves,itm_gondor_cav_sword,itm_gondor_shield_d,itm_leather_gloves,itm_gondor_knight_helm_bad,itm_gondor_courser,],
       attr_tier_4,wp_tier_4,knows_common|knows_riding_3|knows_athletics_2|knows_power_strike_3|knows_ironflesh_3,gondor_face1,gondor_face2],
-["spy_partner_evil","Spy_Handler","Spy_Handlers",tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
+["spy_partner_evil","Spy_Handler","{!}Spy_Handlers",tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
    [itm_evil_light_armor,itm_leather_boots,itm_mordor_sword,itm_mordor_man_shield_b,itm_mordor_longsword,itm_mordor_warhorse,],
       attr_tier_4,wp_tier_4,knows_common|knows_riding_3|knows_athletics_2|knows_power_strike_3|knows_ironflesh_3,bandit_face1,bandit_face2],
 #MV: Easter Egg Troll in Troll Cave
@@ -3130,14 +3130,14 @@ troops = [
       str_255| agi_3| int_30| cha_30|level(30),wp(200),knows_power_strike_10|knows_ironflesh_10,troll_face1,troll_face2],
 
 # Gandalf and Nazgul for conversations
-["gandalf","Gandalf","Home-grown Gandalves",tf_hero| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
+["gandalf","Gandalf","{!}Home-grown Gandalves",tf_hero| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
    [itm_mearas_reward,itm_whiterobe,itm_leather_boots,itm_riv_bas_sword,itm_gandstaff],
       attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10|knows_shield_10,0x0000000fc000234721419ab9eeafbeff00000000001d89110000000000000000],
-["nazgul","Nazgul","Domesticated Nazgul",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_commoners,
+["nazgul","Nazgul","{!}Domesticated Nazgul",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_commoners,
    [itm_uruk_greaves,itm_evil_gauntlets_a,itm_nazgulrobe,itm_empty_head,itm_nazgul_sword,itm_mordor_warhorse2,],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
-["radagast","Radagast","Home-grown Gandalves",tf_hero| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
+["radagast","Radagast","{!}Crunchy Radagasts",tf_hero| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
    [itm_hunter,itm_woodman_scout_cloak,itm_leather_boots,itm_dale_sword_long,itm_beorn_staff],
       attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10|knows_shield_10,0x0000000e430032832e09910bc353f94a00000000001ee0ce0000000000000000],
 
@@ -3200,16 +3200,16 @@ troops = [
 ["log_array_faction_object","{!}","{!}",0,0,0,fac_commoners,   [],      0,0,0,0],
 ##############################
 #MV: what are these - future quest troops? not used anywhere
-["city_guard","City_Guard","city_guard",tfg_armor| tfg_boots,0,0,fac_gondor,
+["city_guard","City_Guard","{!}city_guard",tfg_armor| tfg_boots,0,0,fac_gondor,
    [itm_leather_jerkin,itm_leather_boots,itm_gon_tab_shield_a,],
       def_attrib|level(9),wp(90),knows_common|knows_athletics_1|knows_power_strike_1,mercenary_face_1,mercenary_face_2],
-["orc_sentry","Orc_Sentry","orc_sentry",tf_orc| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
+["orc_sentry","Orc_Sentry","{!}orc_sentry",tf_orc| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
    [itm_mordor_orc_shield_d,itm_orc_coif,itm_orc_ragwrap,itm_orc_slasher,],
       def_attrib|level(12),wp(90),knows_prisoner_management_1|knows_inventory_management_1|knows_pathfinding_1|knows_athletics_3|knows_power_strike_2|knows_ironflesh_2,orc_face1,orc_face2],
-["uruk_hai_sentry","Uruk-hai_Sentry","uruk_hai_sentry",tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+["uruk_hai_sentry","Uruk-hai_Sentry","{!}uruk_hai_sentry",tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_isen_uruk_light_a,itm_isen_uruk_light_a,itm_isen_orc_shield_a,itm_isen_orc_light_b,itm_isen_uruk_helm_a,],
       def_attrib|level(12),wp(90),knows_prisoner_management_1|knows_inventory_management_1|knows_pathfinding_1|knows_athletics_2|knows_power_strike_2|knows_ironflesh_3,mercenary_face_1,mercenary_face_2],
-["black_numenorean_sorcerer","Black_Numenorean_Sorcerer","Black_numenorean_sorcerer", tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
+["black_numenorean_sorcerer","Black_Numenorean_Sorcerer","{!}Black_numenorean_sorcerer", tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
    [itm_m_cap_armor,itm_mordor_helm,itm_mordor_sword,itm_leather_boots,],
       def_attrib|level(45),wp(400),knows_common|knows_athletics_10|knows_power_strike_6|knows_ironflesh_10,mercenary_face_1,mercenary_face_2],
 ["evil_priest","Evil_Priest","Evil_Priests",tf_evil_man| tfg_armor| tfg_boots,0,0,fac_mordor,
@@ -3347,11 +3347,11 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 
 ## Kham - Test AI
-["badass_theo","Badass_King_Theo","King",tf_hero| tf_rohan| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
+["badass_theo","{!}Badass_King_Theo","{!}King",tf_hero| tf_rohan| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_armor_th,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_inf_helmet_b_lordly,itm_rohirrim_long_hafted_axe, itm_rohan_shield_g],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_4,0x0000000fff00130347934c399386b8a300000000001db6d90000000000000000],
 
-["killer_witcher","Ugly Mogly","Lieutenant",tf_hero| tf_uruk| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
+["killer_witcher","{!}Ugly Mogly","{!}Lieutenant",tf_hero| tf_uruk| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
    [itm_m_uruk_heavy_c,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_uruk_helm_f,itm_mordor_uruk_shield_c,itm_mordor_longsword,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_4,0x000000002c000104003fb3f407b83d0d00000000000000000000000000000000],
 
@@ -3371,19 +3371,19 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
    [itm_uruk_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_b,itm_orc_throwing_arrow,itm_uruk_bow,itm_orc_hook_arrow,itm_m_uruk_heavy_c,itm_m_uruk_heavy_a,itm_uruk_falchion_a,itm_uruk_falchion_b,itm_orc_skull_spear_heavy,itm_mordor_uruk_shield_a,itm_mordor_uruk_shield_b,itm_uruk_helm_b,itm_uruk_helm_c,itm_uruk_helm_d,],
       attr_tier_4,wp_tier_4,knows_athletics_6|knows_power_strike_5|knows_power_draw_4|knows_power_throw_3|knows_ironflesh_4|knows_shield_2,uruk_hai_face1,uruk_hai_face2],
 
-["hungry_orc","Hungry_Orc","Large_Orcs_of_Mordor",tf_orc| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
+["hungry_orc","Hungry_Orc","{!}Large_Orcs_of_Mordor",tf_orc| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
    [itm_orc_greaves,itm_orc_coif, itm_orc_nosehelm_bad, itm_orc_nosehelm, itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_sabre,itm_orc_falchion,itm_orc_two_handed_axe,itm_orc_skull_spear,itm_orc_slasher,itm_orc_bill,itm_orc_axe,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_orc_throwing_axes,itm_mordor_orc_shield_d,],
       attr_orc_tier_3,wp_orc_tier_3,knows_athletics_5|knows_power_strike_3|knows_power_throw_3,orc_face3,orc_face6],
 
-["longing_lorien","Longing_Elf","a1_lorien_scouts",tf_lorien| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
+["longing_lorien","Longing_Elf","{!}a1_lorien_scouts",tf_lorien| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
    [itm_short_bow,itm_elven_arrows,itm_lorien_archer,itm_lorien_boots,itm_lorien_sword_b,],
       attr_elf_tier_1,wp_elf_tier_1,knows_common|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,lorien_elf_face_1,lorien_elf_face_2],
 
-["longing_woodelf","Longing_Elf","a1_greenwood_scouts",tf_woodelf| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
+["longing_woodelf","Longing_Elf","{!}a1_greenwood_scouts",tf_woodelf| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
    [itm_short_bow,itm_woodelf_arrows,itm_mirkwood_leather,itm_mirkwood_boots,itm_mirkwood_knife,],
       attr_elf_tier_1,wp_elf_tier_1,knows_common|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,mirkwood_elf_face_1,mirkwood_elf_face_2],
 
-["longing_imladris","Longing_Elf","a1_riv_scouts",tf_imladris| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,
+["longing_imladris","Longing_Elf","{!}a1_riv_scouts",tf_imladris| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,
    [itm_riv_boots,itm_riv_bow,itm_riv_armor_light,itm_riv_archer_sword,itm_elven_arrows,],
       attr_elf_tier_1,wp_elf_tier_1,knows_common|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,rivendell_elf_face_1,rivendell_elf_face_2],
 
@@ -3394,10 +3394,10 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 # Malleable Hero Troops for Quests / Triggers
 
-["generic_hero_infantry","generic_hero_infantry","generic_hero_infantry",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
-["generic_hero_ranged","generic_hero_ranged","generic_hero_ranged",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,orc_face5,orc_face4],
-["generic_hero_knight","generic_hero_knight","generic_hero_knight",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
-["generic_hero_mounted_archer","generic_hero_mounted_archer","generic_hero_mounted_archer",tf_hero|tf_male|tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["generic_hero_infantry","{!}generic_hero_infantry","generic_hero_infantry",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["generic_hero_ranged","{!}generic_hero_ranged","generic_hero_ranged",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,orc_face5,orc_face4],
+["generic_hero_knight","{!}generic_hero_knight","generic_hero_knight",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["generic_hero_mounted_archer","{!}generic_hero_mounted_archer","generic_hero_mounted_archer",tf_hero|tf_male|tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
 
 # New Companions Begin
 
@@ -3417,27 +3417,27 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
     [itm_gunda_troll_head_a, itm_gunda_troll_body_berta,itm_gunda_troll_hands,itm_gunda_troll_feet,itm_giant_bone_cudgel,],
         str_30| agi_30| int_3| cha_3|level(36),wp(120)|wp_one_handed(120),knows_power_strike_9|knows_ironflesh_13|knows_athletics_8|knows_shield_8,troll_face1],
 
-["npc22","Zigûrphel","{!}",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+["npc22","{!}Zigûrphel","{!}",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
    [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
       str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
 
-["npc23","Zigûrphel","{!}",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+["npc23","{!}Zigûrphel","{!}",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
    [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
       str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
 
-["npc24","Zigûrphel","{!}",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+["npc24","{!}Zigûrphel","{!}",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
    [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
       str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
 
-["npc25","Zigûrphel","{!}",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+["npc25","{!}Zigûrphel","{!}",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
    [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
       str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
 
-["npc26","Zigûrphel","{!}",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+["npc26","{!}Zigûrphel","{!}",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
    [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
       str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
 
-["npc27","Zigûrphel","{!}",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+["npc27","{!}Zigûrphel","{!}",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
    [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
       str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
 
@@ -3477,8 +3477,8 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 ]) + [ 
 
 
-["multiplayer_profile_troop_male","multiplayer_profile_troop_male","multiplayer_profile_troop_male", tf_hero, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
-["multiplayer_profile_troop_female","multiplayer_profile_troop_female","multiplayer_profile_troop_female", tf_hero|tf_female, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["multiplayer_profile_troop_male","{!}multiplayer_profile_troop_male","{!}multiplayer_profile_troop_male", tf_hero, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["multiplayer_profile_troop_female","{!}multiplayer_profile_troop_female","{!}multiplayer_profile_troop_female", tf_hero|tf_female, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
 
 #Tribal orcs moved out of item factionization range, activate around June 2020
 ["mountain_goblin","Mountain_Goblin","Mountain_Goblins",tf_orc| tf_no_capture_alive,0,0,fac_tribal_orcs,

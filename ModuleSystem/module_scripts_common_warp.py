@@ -22,8 +22,8 @@ from module_info import wb_compile_switch as is_a_wb_script
 # Modified: script_warp_array_sort & script_warp_array_sort_range to not require a static party
 
 common_warp_templates = [
-  ("warp_array","warp_array",pf_disabled|pf_no_label|pf_is_static,0,fac_commoners,0,[]),
-  ("warp_temp_array","warp_temp_array",pf_disabled|pf_no_label|pf_is_static,0,fac_commoners,0,[]),
+  ("warp_array","{!}warp_array",pf_disabled|pf_no_label|pf_is_static,0,fac_commoners,0,[]),
+  ("warp_temp_array","{!}warp_temp_array",pf_disabled|pf_no_label|pf_is_static,0,fac_commoners,0,[]),
 ]
 
 common_warp_scripts = [

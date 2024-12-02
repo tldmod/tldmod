@@ -43,14 +43,14 @@ factions = [
   ("dunland",   "Dunland",0,0.5,[("gondor",-0.5),("rohan",-0.5),("lorien",-0.1),("imladris",-0.1),("woodelf",-0.1),("mordor", 0.5),("harad", 0.5),("rhun", 0.5),("khand", 0.5),                 ("umbar", 0.5),("isengard", 0.5),("moria", 0.5),("guldur", 0.5),("gundabad", 0.5),("dale",-0.2),("dwarf",-0.2),("beorn",-0.2),("tribal_orcs",-0.5)                                           ], [], 0xFF4800),
   ("beorn",     "The Vale of Anduin",  0,0.5,[("gondor", 0.2),("rohan", 0.2),("lorien", 0.5),("imladris", 0.5),("woodelf", 0.5),("mordor",-0.2),("harad",-0.5),("rhun",-0.5),("khand",-0.5),("dunland",-0.5),("umbar",-0.5),("isengard",-0.5),("moria",-0.5),("guldur",-0.5),("gundabad",-0.5),("dale", 0.5),("dwarf", 0.5),               ("tribal_orcs",-0.5),("outlaws",-0.05)                         ], [], 0xA5F29B),
   
-  ("kingdoms_end","kingdoms_end",0,0,[],[]),
+  ("kingdoms_end","{!}kingdoms_end",0,0,[],[]),
   ("player_supporters_faction","Player Faction",0, 0.9, [("player_faction",1.00),("outlaws",-0.1),("deserters", -0.02),("mountain_bandits", -0.1),("forest_bandits", -0.05)], []),
   ("player_faction","Player Faction",0, 0.9, [("mordor",-0.6),("gondor",0.1)], []),
   ("brigands",   "Brigands",   0,0.5,[("gondor", 0  ),("rohan", 0  ),("lorien", 0  ),("imladris", 0  ),                 ("mordor", 0  ),("harad", 0  ),("rhun", 0  ),("khand", 0  ),("dunland", 0   ),("umbar", 0 ),("isengard", 0  ),("moria", 0  ),("guldur", 0  ),("gundabad", 0),("dale", 0  ),("tribal_orcs",-0.5)], [], 0xCFCFCF),
   ("tribal_orcs","Tribal Orcs",0,0.5,[("gondor",-0.5),("rohan",-0.5),("lorien",-0.5),("imladris",-0.5),("woodelf",-0.5),("mordor",-0.5),("harad",-0.5),("rhun",-0.5),("khand",-0.5),("dunland",-0.5),("umbar",-0.5),("isengard",-0.5),("moria",-0.5),("guldur",-0.5),                ("dale",-0.5),], [], 0x414141),
 ##TLD FACTIONS END##########
 
-  ("neutral","ruins",ff_always_hide_label, 0.1,[("player_faction",0.0)], [],0x888888),
+  ("neutral","{!}ruins",ff_always_hide_label, 0.1,[("player_faction",0.0)], [],0x888888),
   ("innocents","Innocents", ff_always_hide_label, 0.5,[("outlaws",-0.05)], []),
   ("merchants","Merchants", ff_always_hide_label, 0.5,[("outlaws",-0.5),], []),
 #########################
@@ -63,15 +63,15 @@ factions = [
 
 #  ("noble_refugees","Noble Refugees", 0, 0.5,[], []),
 
-  ("mission_companion_1" ,"_", 0, 0.5,[], []), # mission companion arrays
-  ("mission_companion_2" ,"_", 0, 0.5,[], []),
-  ("mission_companion_3" ,"_", 0, 0.5,[], []),
-  ("mission_companion_4" ,"_", 0, 0.5,[], []),
-  ("mission_companion_5" ,"_", 0, 0.5,[], []),
-  ("mission_companion_6" ,"_", 0, 0.5,[], []),
-  ("mission_companion_7" ,"_", 0, 0.5,[], []),
-  ("mission_companion_8" ,"_", 0, 0.5,[], []),
-  ("mission_companion_9" ,"_", 0, 0.5,[], []),
-  ("mission_companion_10","_", 0, 0.5,[], []),
-  ("mission_companion_11","_", 0, 0.5,[], []),
+  ("mission_companion_1" ,"{!}_", 0, 0.5,[], []), # mission companion arrays
+  ("mission_companion_2" ,"{!}_", 0, 0.5,[], []),
+  ("mission_companion_3" ,"{!}_", 0, 0.5,[], []),
+  ("mission_companion_4" ,"{!}_", 0, 0.5,[], []),
+  ("mission_companion_5" ,"{!}_", 0, 0.5,[], []),
+  ("mission_companion_6" ,"{!}_", 0, 0.5,[], []),
+  ("mission_companion_7" ,"{!}_", 0, 0.5,[], []),
+  ("mission_companion_8" ,"{!}_", 0, 0.5,[], []),
+  ("mission_companion_9" ,"{!}_", 0, 0.5,[], []),
+  ("mission_companion_10","{!}_", 0, 0.5,[], []),
+  ("mission_companion_11","{!}_", 0, 0.5,[], []),
 ]

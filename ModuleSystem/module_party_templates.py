@@ -26,7 +26,7 @@ pmf_is_prisoner = 0x0001
 ####################################################################################################################
 
 party_templates = [
-("none","none",icon_generic_knight,0,fac_commoners,merchant_personality,[]),
+("none","{!}none",icon_generic_knight,0,fac_commoners,merchant_personality,[]),
 ("rescued_prisoners","Rescued Prisoners",icon_generic_knight,0,fac_commoners,merchant_personality,[]),
 ("enemy","Enemy",icon_generic_knight,0,fac_commoners,merchant_personality,[]),
 ("hero_party","Hero Party",icon_generic_knight,0,fac_commoners,merchant_personality,[]),
@@ -236,139 +236,139 @@ party_templates = [
 # - towns get 60% A, 35% B, 5% C (more low level troops and archers); heroes get 50% A, 30% B, 20% C (more cavalry) - see script_cf_reinforce_party InVain: Garrisons now get 30/60/10
 # - sort order: higher tier and mounted troops first
 
-("gondor_reinf_d"    ,"_",0,0,fac_commoners,0,[(trp_c6_gon_tower_knight,1,2), (trp_a6_gon_tower_archer,2,4), (trp_i6_gon_tower_swordsman,1,2), (trp_i6_gon_tower_spearman,1,2),]), #MT garrison only
+("gondor_reinf_d"    ,"{!}",0,0,fac_commoners,0,[(trp_c6_gon_tower_knight,1,2), (trp_a6_gon_tower_archer,2,4), (trp_i6_gon_tower_swordsman,1,2), (trp_i6_gon_tower_spearman,1,2),]), #MT garrison only
 
-("gondor_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_i2_gon_watchman,2,4),(trp_i1_gon_levy,1,3),(trp_i3_gon_footman,2,4)]), #InVain: less commoners, less archers
-("gondor_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_a3_gon_bowman,1,3),(trp_i3_gon_footman,4,6),(trp_i2_gon_watchman,1,2),(trp_c1_gon_nobleman,1,2),(trp_a4_gon_archer, 1,2)]), #T1 cav because it has a separate tree, InVain: More archers+ t4 archers (due to changed garrison reinforcements)
-("gondor_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_i4_gon_spearman,2,3),(trp_i4_gon_swordsman,2,3),(trp_c3_gon_vet_squire,1,2),]), #InVain: Removed archers, hosts are more infantry-heavy
-("pelargir_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i1_pel_watchman,6,12),]), #no T1
-("pelargir_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a2_pel_marine,1,2),(trp_i2_pel_infantry,2,4),(trp_i1_pel_watchman,2,4),]), #no T3
-("pelargir_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_a2_pel_marine,1,2),(trp_i2_pel_infantry,2,5),]),
-("dol_amroth_reinf_a","_",0,0,fac_commoners,0,[(trp_c2_amroth_squire,2,4),(trp_i1_amroth_recruit,5,10),]),
-("dol_amroth_reinf_b","_",0,0,fac_commoners,0,[(trp_c3_amroth_vet_squire,3,6),(trp_c2_amroth_squire,2,4),]),
-("dol_amroth_reinf_c","_",0,0,fac_commoners,0,[(trp_c4_amroth_knight,4,8),]),
-("lamedon_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i2_lam_footman,2,4),(trp_i1_lam_clansman,5,10),]),
-("lamedon_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_i3_lam_veteran,4,8),(trp_i2_lam_footman,1,2),]),
-("lamedon_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_i4_lam_warrior,4,8),]),
-("lossarnach_reinf_a","_",0,0,fac_commoners,0,[(trp_i2_loss_axeman,2,4),(trp_i1_loss_woodsman,5,10),]),
-("lossarnach_reinf_b","_",0,0,fac_commoners,0,[(trp_i3_loss_vet_axeman,4,8),(trp_i2_loss_axeman,1,2),]),
-("lossarnach_reinf_c","_",0,0,fac_commoners,0,[(trp_i4_loss_heavy_axeman,4,8),]),
-("pinnath_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i1_pinnath_plainsman,6,12),]), #no T1
-("pinnath_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a2_pinnath_bowman,1,2),(trp_c2_pinnath_rider,2,4),(trp_i1_pinnath_plainsman,1,3)]), #no T3
-("pinnath_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c2_pinnath_rider,3,6),(trp_a2_pinnath_bowman,1,2)]),
-("ithilien_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_a4_ithilien_ranger,4,7),]), #since they begin at T4, halve them
-("ithilien_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a5_ithilien_vet_ranger,3,5),]),
-("ithilien_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_a6_ithilien_master_ranger,2,4),]),
-("blackroot_reinf_a" ,"_",0,0,fac_commoners,0,[(trp_a1_blackroot_hunter,6,12)]), #no T1
-("blackroot_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_i2_blackroot_footman,3,6),(trp_a2_blackroot_bowman,1,2),(trp_a1_blackroot_hunter,2,3),]), #no T3
-("blackroot_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_a2_blackroot_bowman,1,3),(trp_i2_blackroot_footman,3,6),]),
+("gondor_reinf_a"    ,"{!}",0,0,fac_commoners,0,[(trp_i2_gon_watchman,2,4),(trp_i1_gon_levy,1,3),(trp_i3_gon_footman,2,4)]), #InVain: less commoners, less archers
+("gondor_reinf_b"    ,"{!}",0,0,fac_commoners,0,[(trp_a3_gon_bowman,1,3),(trp_i3_gon_footman,4,6),(trp_i2_gon_watchman,1,2),(trp_c1_gon_nobleman,1,2),(trp_a4_gon_archer, 1,2)]), #T1 cav because it has a separate tree, InVain: More archers+ t4 archers (due to changed garrison reinforcements)
+("gondor_reinf_c"    ,"{!}",0,0,fac_commoners,0,[(trp_i4_gon_spearman,2,3),(trp_i4_gon_swordsman,2,3),(trp_c3_gon_vet_squire,1,2),]), #InVain: Removed archers, hosts are more infantry-heavy
+("pelargir_reinf_a"  ,"{!}",0,0,fac_commoners,0,[(trp_i1_pel_watchman,6,12),]), #no T1
+("pelargir_reinf_b"  ,"{!}",0,0,fac_commoners,0,[(trp_a2_pel_marine,1,2),(trp_i2_pel_infantry,2,4),(trp_i1_pel_watchman,2,4),]), #no T3
+("pelargir_reinf_c"  ,"{!}",0,0,fac_commoners,0,[(trp_a2_pel_marine,1,2),(trp_i2_pel_infantry,2,5),]),
+("dol_amroth_reinf_a","{!}",0,0,fac_commoners,0,[(trp_c2_amroth_squire,2,4),(trp_i1_amroth_recruit,5,10),]),
+("dol_amroth_reinf_b","{!}",0,0,fac_commoners,0,[(trp_c3_amroth_vet_squire,3,6),(trp_c2_amroth_squire,2,4),]),
+("dol_amroth_reinf_c","{!}",0,0,fac_commoners,0,[(trp_c4_amroth_knight,4,8),]),
+("lamedon_reinf_a"   ,"{!}",0,0,fac_commoners,0,[(trp_i2_lam_footman,2,4),(trp_i1_lam_clansman,5,10),]),
+("lamedon_reinf_b"   ,"{!}",0,0,fac_commoners,0,[(trp_i3_lam_veteran,4,8),(trp_i2_lam_footman,1,2),]),
+("lamedon_reinf_c"   ,"{!}",0,0,fac_commoners,0,[(trp_i4_lam_warrior,4,8),]),
+("lossarnach_reinf_a","{!}",0,0,fac_commoners,0,[(trp_i2_loss_axeman,2,4),(trp_i1_loss_woodsman,5,10),]),
+("lossarnach_reinf_b","{!}",0,0,fac_commoners,0,[(trp_i3_loss_vet_axeman,4,8),(trp_i2_loss_axeman,1,2),]),
+("lossarnach_reinf_c","{!}",0,0,fac_commoners,0,[(trp_i4_loss_heavy_axeman,4,8),]),
+("pinnath_reinf_a"   ,"{!}",0,0,fac_commoners,0,[(trp_i1_pinnath_plainsman,6,12),]), #no T1
+("pinnath_reinf_b"   ,"{!}",0,0,fac_commoners,0,[(trp_a2_pinnath_bowman,1,2),(trp_c2_pinnath_rider,2,4),(trp_i1_pinnath_plainsman,1,3)]), #no T3
+("pinnath_reinf_c"   ,"{!}",0,0,fac_commoners,0,[(trp_c2_pinnath_rider,3,6),(trp_a2_pinnath_bowman,1,2)]),
+("ithilien_reinf_a"  ,"{!}",0,0,fac_commoners,0,[(trp_a4_ithilien_ranger,4,7),]), #since they begin at T4, halve them
+("ithilien_reinf_b"  ,"{!}",0,0,fac_commoners,0,[(trp_a5_ithilien_vet_ranger,3,5),]),
+("ithilien_reinf_c"  ,"{!}",0,0,fac_commoners,0,[(trp_a6_ithilien_master_ranger,2,4),]),
+("blackroot_reinf_a" ,"{!}",0,0,fac_commoners,0,[(trp_a1_blackroot_hunter,6,12)]), #no T1
+("blackroot_reinf_b" ,"{!}",0,0,fac_commoners,0,[(trp_i2_blackroot_footman,3,6),(trp_a2_blackroot_bowman,1,2),(trp_a1_blackroot_hunter,2,3),]), #no T3
+("blackroot_reinf_c" ,"{!}",0,0,fac_commoners,0,[(trp_a2_blackroot_bowman,1,3),(trp_i2_blackroot_footman,3,6),]),
 #rohan	
-("rohan_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_c2_squire_of_rohan,2,4),(trp_i2_guardsman_of_rohan,1,2),(trp_i1_rohan_youth,3,6),]),
-("rohan_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_c3_rider_of_rohan,2,4),(trp_ac3_skirmisher_of_rohan,1,2),(trp_i3_footman_of_rohan,3,5),(trp_ac4_veteran_skirmisher_of_rohan,1,2),]),
-("rohan_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c4_veteran_rider_of_rohan,2,3),(trp_c4_lancer_of_rohan,1,2),(trp_i4_veteran_footman_of_rohan,1,2),]),
+("rohan_reinf_a"   ,"{!}",0,0,fac_commoners,0,[(trp_c2_squire_of_rohan,2,4),(trp_i2_guardsman_of_rohan,1,2),(trp_i1_rohan_youth,3,6),]),
+("rohan_reinf_b"   ,"{!}",0,0,fac_commoners,0,[(trp_c3_rider_of_rohan,2,4),(trp_ac3_skirmisher_of_rohan,1,2),(trp_i3_footman_of_rohan,3,5),(trp_ac4_veteran_skirmisher_of_rohan,1,2),]),
+("rohan_reinf_c"   ,"{!}",0,0,fac_commoners,0,[(trp_c4_veteran_rider_of_rohan,2,3),(trp_c4_lancer_of_rohan,1,2),(trp_i4_veteran_footman_of_rohan,1,2),]),
 #Isengard - two short trees (up to T4/T5), easier to upgrade, so lower tier reinforcements; also extra orcs (8-16, 7-13, 5-10)
-("isengard_reinf_a","_",0,0,fac_commoners,0,[(trp_i1_isen_uruk_snaga,1,2),(trp_i1_isen_orc_snaga,2,5),(trp_a2_isen_uruk_tracker,1,2),(trp_i2_isen_uruk,1,2),(trp_i2_isen_orc,2,4),]), #two T1 #InVain: mixed a bit, see Mordor
-("isengard_reinf_b","_",0,0,fac_commoners,0,[(trp_ac2_isen_wolf_rider,2,3),(trp_a2_isen_uruk_tracker,1,2),(trp_i2_isen_uruk,2,4),(trp_i2_isen_orc,2,4),(trp_a3_isen_large_uruk_tracker,1,3),(trp_i3_isen_large_orc,1,2),]), #more T2 troops #InVain: More archers, t3 archers+orcs
-("isengard_reinf_c","_",0,0,fac_commoners,0,[(trp_ac3_isen_warg_rider,1,2),(trp_i3_isen_large_uruk,1,2),(trp_i3_isen_uruk_pikeman,1,2),(trp_i3_isen_large_orc,1,2),(trp_i3_isen_large_orc_despoiler,1,2),]), #more T3 troops
+("isengard_reinf_a","{!}",0,0,fac_commoners,0,[(trp_i1_isen_uruk_snaga,1,2),(trp_i1_isen_orc_snaga,2,5),(trp_a2_isen_uruk_tracker,1,2),(trp_i2_isen_uruk,1,2),(trp_i2_isen_orc,2,4),]), #two T1 #InVain: mixed a bit, see Mordor
+("isengard_reinf_b","{!}",0,0,fac_commoners,0,[(trp_ac2_isen_wolf_rider,2,3),(trp_a2_isen_uruk_tracker,1,2),(trp_i2_isen_uruk,2,4),(trp_i2_isen_orc,2,4),(trp_a3_isen_large_uruk_tracker,1,3),(trp_i3_isen_large_orc,1,2),]), #more T2 troops #InVain: More archers, t3 archers+orcs
+("isengard_reinf_c","{!}",0,0,fac_commoners,0,[(trp_ac3_isen_warg_rider,1,2),(trp_i3_isen_large_uruk,1,2),(trp_i3_isen_uruk_pikeman,1,2),(trp_i3_isen_large_orc,1,2),(trp_i3_isen_large_orc_despoiler,1,2),]), #more T3 troops
 #Mordor - same as Isengard + Numenorean cavalry (8-16, 7-13, 5-10)
-("mordor_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,1,3),(trp_i1_mordor_orc_snaga,2,5),(trp_i2_mordor_uruk,1,2),(trp_i2_mordor_orc,2,4),]), #InVain: less t1, a few t2 = less orc archers for field armies
-("mordor_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a2_mordor_orc_archer,2,4),(trp_a3_mordor_large_orc_archer,2,4),(trp_i2_mordor_uruk,2,3),(trp_i2_mordor_orc,3,6),(trp_i3_mordor_large_orc,1,2),(trp_a4_mordor_fell_orc_archer,1,2)]), #InVain: More archers, t3+t4 archers, t3 orcs
-("mordor_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_i3_mordor_large_uruk,1,1),(trp_i3_mordor_uruk_slayer,0,1),(trp_i4_mordor_fell_orc,1,2),(trp_i4_mordor_fell_morgul_orc,1,2),]), #InVain: Removed t3 archers, add t4 Mordor + Morgul orcs
+("mordor_reinf_a"  ,"{!}",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,1,3),(trp_i1_mordor_orc_snaga,2,5),(trp_i2_mordor_uruk,1,2),(trp_i2_mordor_orc,2,4),]), #InVain: less t1, a few t2 = less orc archers for field armies
+("mordor_reinf_b"  ,"{!}",0,0,fac_commoners,0,[(trp_a2_mordor_orc_archer,2,4),(trp_a3_mordor_large_orc_archer,2,4),(trp_i2_mordor_uruk,2,3),(trp_i2_mordor_orc,3,6),(trp_i3_mordor_large_orc,1,2),(trp_a4_mordor_fell_orc_archer,1,2)]), #InVain: More archers, t3+t4 archers, t3 orcs
+("mordor_reinf_c"  ,"{!}",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_i3_mordor_large_uruk,1,1),(trp_i3_mordor_uruk_slayer,0,1),(trp_i4_mordor_fell_orc,1,2),(trp_i4_mordor_fell_morgul_orc,1,2),]), #InVain: Removed t3 archers, add t4 Mordor + Morgul orcs
 #Harad (7-14, 5-10, 4-8)
-("harad_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_c2_harondor_scout,1,2),(trp_i2_far_harad_tribesman,1,2),(trp_i1_harad_levy,4,8),(trp_i3_harad_infantry,1,2),]),
-("harad_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_ac3_harondor_skirmisher,0,2),(trp_a3_harad_hunter,0,2),(trp_i3_harad_infantry,2,4),(trp_i2_far_harad_tribesman,1,2),]),
-("harad_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_ac4_harondor_horse_archer,1,2),(trp_c4_harondor_light_cavalry,1,2),(trp_i4_far_harad_champion,1,2),(trp_i4_harad_swordsman,1,1),(trp_i4_harad_spearman,0,2),(trp_ac5_camel_rider,1,2)]),
+("harad_reinf_a"   ,"{!}",0,0,fac_commoners,0,[(trp_c2_harondor_scout,1,2),(trp_i2_far_harad_tribesman,1,2),(trp_i1_harad_levy,4,8),(trp_i3_harad_infantry,1,2),]),
+("harad_reinf_b"   ,"{!}",0,0,fac_commoners,0,[(trp_ac3_harondor_skirmisher,0,2),(trp_a3_harad_hunter,0,2),(trp_i3_harad_infantry,2,4),(trp_i2_far_harad_tribesman,1,2),]),
+("harad_reinf_c"   ,"{!}",0,0,fac_commoners,0,[(trp_ac4_harondor_horse_archer,1,2),(trp_c4_harondor_light_cavalry,1,2),(trp_i4_far_harad_champion,1,2),(trp_i4_harad_swordsman,1,1),(trp_i4_harad_spearman,0,2),(trp_ac5_camel_rider,1,2)]),
 #Rhun
-("rhun_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_c2_rhun_horseman,1,2),(trp_ac2_rhun_horse_scout,2,3),(trp_i1_rhun_tribesman,5,10),]),
-("rhun_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_ac3_rhun_horse_archer,2,4),(trp_c3_rhun_outrider,1,2),(trp_i3_rhun_tribal_infantry,3,5),]),
-("rhun_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_c4_rhun_noble_rider,2,4),(trp_c4_rhun_veteran_swift_horseman,2,3),(trp_ac4_rhun_veteran_horse_archer,1,3),]),
+("rhun_reinf_a"    ,"{!}",0,0,fac_commoners,0,[(trp_c2_rhun_horseman,1,2),(trp_ac2_rhun_horse_scout,2,3),(trp_i1_rhun_tribesman,5,10),]),
+("rhun_reinf_b"    ,"{!}",0,0,fac_commoners,0,[(trp_ac3_rhun_horse_archer,2,4),(trp_c3_rhun_outrider,1,2),(trp_i3_rhun_tribal_infantry,3,5),]),
+("rhun_reinf_c"    ,"{!}",0,0,fac_commoners,0,[(trp_c4_rhun_noble_rider,2,4),(trp_c4_rhun_veteran_swift_horseman,2,3),(trp_ac4_rhun_veteran_horse_archer,1,3),]),
 #Khand
-("khand_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_c2_khand_pony_rider,1,2),(trp_i2_khand_pit_dog,2,4),(trp_i1_khand_bondsman,4,8),]),
-("khand_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_ac3_khand_skirmisher,2,4),(trp_c3_khand_horseman,0,1),(trp_i3_khand_warrior,2,3),(trp_i3_khand_pitfighter,1,2),]),
-("khand_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c4_khand_heavy_horseman,2,4),(trp_ac4_khand_vet_skirmisher,1,2),(trp_i4_khand_pit_champion,1,2)]),
+("khand_reinf_a"   ,"{!}",0,0,fac_commoners,0,[(trp_c2_khand_pony_rider,1,2),(trp_i2_khand_pit_dog,2,4),(trp_i1_khand_bondsman,4,8),]),
+("khand_reinf_b"   ,"{!}",0,0,fac_commoners,0,[(trp_ac3_khand_skirmisher,2,4),(trp_c3_khand_horseman,0,1),(trp_i3_khand_warrior,2,3),(trp_i3_khand_pitfighter,1,2),]),
+("khand_reinf_c"   ,"{!}",0,0,fac_commoners,0,[(trp_c4_khand_heavy_horseman,2,4),(trp_ac4_khand_vet_skirmisher,1,2),(trp_i4_khand_pit_champion,1,2)]),
 #Umbar (7-14, 5-10, 4-8)
-("umbar_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_a2_corsair_marine,1,2),(trp_i2_corsair_warrior,2,4),(trp_i1_corsair_youth,4,8),]),
-("umbar_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_i2_mordor_num_renegade,1,2),(trp_i3_corsair_swordsman,1,2),(trp_i3_corsair_spearman,1,2),(trp_a3_corsair_marksman,2,4)]),
-("umbar_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_i3_mordor_num_warrior,1,2),(trp_i4_corsair_veteran_swordsman,1,2),(trp_i4_corsair_veteran_spearman,1,2),(trp_a4_corsair_veteran_marksman,1,2),]),
+("umbar_reinf_a"   ,"{!}",0,0,fac_commoners,0,[(trp_a2_corsair_marine,1,2),(trp_i2_corsair_warrior,2,4),(trp_i1_corsair_youth,4,8),]),
+("umbar_reinf_b"   ,"{!}",0,0,fac_commoners,0,[(trp_i2_mordor_num_renegade,1,2),(trp_i3_corsair_swordsman,1,2),(trp_i3_corsair_spearman,1,2),(trp_a3_corsair_marksman,2,4)]),
+("umbar_reinf_c"   ,"{!}",0,0,fac_commoners,0,[(trp_i3_mordor_num_warrior,1,2),(trp_i4_corsair_veteran_swordsman,1,2),(trp_i4_corsair_veteran_spearman,1,2),(trp_a4_corsair_veteran_marksman,1,2),]),
 #Lothlorien - Elves get slightly less troops (6-12, 4-8, 4-8)
-("lorien_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i3_lorien_inf,2,4),(trp_a2_lorien_warden,2,4),(trp_a1_lorien_scout,2,4),(trp_a2_lorien_archer,1,2),]),
-("lorien_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a3_lorien_vet_warden,1,2),(trp_a3_lorien_vet_archer,1,2),(trp_i3_lorien_inf,2,4),]),
-("lorien_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_a4_lorien_gal_warden,1,2),(trp_a4_lorien_gal_archer,1,2),(trp_i4_lorien_gal_inf,3,6),]),
+("lorien_reinf_a"  ,"{!}",0,0,fac_commoners,0,[(trp_i3_lorien_inf,2,4),(trp_a2_lorien_warden,2,4),(trp_a1_lorien_scout,2,4),(trp_a2_lorien_archer,1,2),]),
+("lorien_reinf_b"  ,"{!}",0,0,fac_commoners,0,[(trp_a3_lorien_vet_warden,1,2),(trp_a3_lorien_vet_archer,1,2),(trp_i3_lorien_inf,2,4),]),
+("lorien_reinf_c"  ,"{!}",0,0,fac_commoners,0,[(trp_a4_lorien_gal_warden,1,2),(trp_a4_lorien_gal_archer,1,2),(trp_i4_lorien_gal_inf,3,6),]),
 #Imladris - two trees, Rivendell favored over Dunedain (6-12, 4-8, 4-8)
-("imladris_reinf_a","_",0,0,fac_commoners,0,[(trp_i3_riv_swordbearer,1,3),(trp_a2_arnor_vet_scout,0,1),(trp_a1_riv_scout,1,2),(trp_a1_arnor_scout,2,4)]), #InVain: Fewer archers, more inf
-("imladris_reinf_b","_",0,0,fac_commoners,0,[(trp_a3_riv_archer,2,4),(trp_a3_arnor_ranger,1,2),(trp_i4_riv_vet_swordbearer,1,2),(trp_i3_arnor_swordsman,0,1),]),
-("imladris_reinf_c","_",0,0,fac_commoners,0,[(trp_ac5_riv_rider,2,4),(trp_c4_arnor_horseman,1,1),(trp_i5_riv_swordmaster,1,2),(trp_a4_arnor_vet_ranger,0,1),]),
+("imladris_reinf_a","{!}",0,0,fac_commoners,0,[(trp_i3_riv_swordbearer,1,3),(trp_a2_arnor_vet_scout,0,1),(trp_a1_riv_scout,1,2),(trp_a1_arnor_scout,2,4)]), #InVain: Fewer archers, more inf
+("imladris_reinf_b","{!}",0,0,fac_commoners,0,[(trp_a3_riv_archer,2,4),(trp_a3_arnor_ranger,1,2),(trp_i4_riv_vet_swordbearer,1,2),(trp_i3_arnor_swordsman,0,1),]),
+("imladris_reinf_c","{!}",0,0,fac_commoners,0,[(trp_ac5_riv_rider,2,4),(trp_c4_arnor_horseman,1,1),(trp_i5_riv_swordmaster,1,2),(trp_a4_arnor_vet_ranger,0,1),]),
 #Woodelves (6-12, 4-8, 4-8)
-("woodelf_reinf_a" ,"_",0,0,fac_commoners,0,[(trp_a2_greenwood_veteran_scout,1,2),(trp_i2_greenwood_infantry,1,3),(trp_a1_greenwood_scout,4,7),]),
-("woodelf_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_a3_greenwood_archer,1,2),(trp_a3_greenwood_sentinel,1,2),(trp_i3_greenwood_vet_infantry,2,4),]),
-("woodelf_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_a4_greenwood_veteran_archer,1,2),(trp_a4_greenwood_vet_sentinel,1,2),(trp_i4_greenwood_elite_infantry,2,4),]),
+("woodelf_reinf_a" ,"{!}",0,0,fac_commoners,0,[(trp_a2_greenwood_veteran_scout,1,2),(trp_i2_greenwood_infantry,1,3),(trp_a1_greenwood_scout,4,7),]),
+("woodelf_reinf_b" ,"{!}",0,0,fac_commoners,0,[(trp_a3_greenwood_archer,1,2),(trp_a3_greenwood_sentinel,1,2),(trp_i3_greenwood_vet_infantry,2,4),]),
+("woodelf_reinf_c" ,"{!}",0,0,fac_commoners,0,[(trp_a4_greenwood_veteran_archer,1,2),(trp_a4_greenwood_vet_sentinel,1,2),(trp_i4_greenwood_elite_infantry,2,4),]),
 #Moria (8-16, 7-13, 5-10)
-("moria_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i1_moria_snaga,4,8),(trp_i2_moria_goblin,2,4),]), #InVain: traded some t1 for t2 = more infantry for hosts
-("moria_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a3_moria_large_goblin_archer,4,7),(trp_i2_moria_goblin,1,2),(trp_i3_moria_large_goblin,2,4),(trp_i4_moria_fell_goblin,1,2)]), #InVain: t3 archers, t3 inf, some t4 inf
-("moria_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c3_moria_wolf_rider,2,4),(trp_i3_moria_large_goblin,1,2),]), #InVain: removed archers, because B has so many, less cav, fewer t3
+("moria_reinf_a"   ,"{!}",0,0,fac_commoners,0,[(trp_i1_moria_snaga,4,8),(trp_i2_moria_goblin,2,4),]), #InVain: traded some t1 for t2 = more infantry for hosts
+("moria_reinf_b"   ,"{!}",0,0,fac_commoners,0,[(trp_a3_moria_large_goblin_archer,4,7),(trp_i2_moria_goblin,1,2),(trp_i3_moria_large_goblin,2,4),(trp_i4_moria_fell_goblin,1,2)]), #InVain: t3 archers, t3 inf, some t4 inf
+("moria_reinf_c"   ,"{!}",0,0,fac_commoners,0,[(trp_c3_moria_wolf_rider,2,4),(trp_i3_moria_large_goblin,1,2),]), #InVain: removed archers, because B has so many, less cav, fewer t3
 #Dol Guldur - same as Mordor without uruks and Numenoreans (8-16, 7-13, 5-10)
-("guldur_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_i1_guldur_orc_snaga,4,10),(trp_i2_mordor_orc,3,5)]),
-("guldur_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_a3_guldur_large_orc_tracker,2,5),(trp_i2_mordor_orc,1,2),(trp_i3_mordor_large_orc,3,5),]), #InVain: t3 archers, t3 inf
-("guldur_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_a4_guldur_fell_orc_tracker,1,2),(trp_i4_mordor_fell_orc,2,4),]),
+("guldur_reinf_a"  ,"{!}",0,0,fac_commoners,0,[(trp_i1_guldur_orc_snaga,4,10),(trp_i2_mordor_orc,3,5)]),
+("guldur_reinf_b"  ,"{!}",0,0,fac_commoners,0,[(trp_a3_guldur_large_orc_tracker,2,5),(trp_i2_mordor_orc,1,2),(trp_i3_mordor_large_orc,3,5),]), #InVain: t3 archers, t3 inf
+("guldur_reinf_c"  ,"{!}",0,0,fac_commoners,0,[(trp_c3_mordor_warg_rider,1,2),(trp_a4_guldur_fell_orc_tracker,1,2),(trp_i4_mordor_fell_orc,2,4),]),
 #Beornings - two trees, Beornings favored over Woodmen (7-14, 5-10, 4-8)
-("beorn_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i2_beorning_warrior,2,4),(trp_i1_beorning_man,2,4),(trp_i1_woodmen_man,3,6)]),
-("beorn_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a3_woodmen_scout,2,4),(trp_i3_woodmen_skilled_forester,1,2),(trp_i3_beorning_tolltacker,1,2),(trp_i3_beorning_carrock_lookout,1,2)]),
-("beorn_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_i4_beorning_sentinel,1,3),(trp_i4_beorning_carrock_fighter,2,3),(trp_i4_woodmen_axemen,1,2),]),
+("beorn_reinf_a"   ,"{!}",0,0,fac_commoners,0,[(trp_i2_beorning_warrior,2,4),(trp_i1_beorning_man,2,4),(trp_i1_woodmen_man,3,6)]),
+("beorn_reinf_b"   ,"{!}",0,0,fac_commoners,0,[(trp_a3_woodmen_scout,2,4),(trp_i3_woodmen_skilled_forester,1,2),(trp_i3_beorning_tolltacker,1,2),(trp_i3_beorning_carrock_lookout,1,2)]),
+("beorn_reinf_c"   ,"{!}",0,0,fac_commoners,0,[(trp_i4_beorning_sentinel,1,3),(trp_i4_beorning_carrock_fighter,2,3),(trp_i4_woodmen_axemen,1,2),]),
 #Mt. Gundabad - see Moria (8-16, 7-13, 5-10)
-("gundabad_reinf_a","_",0,0,fac_commoners,0,[(trp_i1_gunda_goblin,6,12),(trp_i2_gunda_orc,5,8)]), #InVain: traded some t1 for t2 /#InVain: increased number of infantry by 50%, so lords have less space left for warg riders (hope this works)
-("gundabad_reinf_b","_",0,0,fac_commoners,0,[(trp_ca4_gunda_skirmisher,1,3),(trp_i2_gunda_orc,3,5),(trp_i3_gunda_orc_fighter,2,3),]), #InVain t3 orcs, less t2 orcs
-("gundabad_reinf_c","_",0,0,fac_commoners,0,[(trp_c3_gunda_goblin_rider,1,2),(trp_i3_gunda_orc_fighter,2,3),]), 
+("gundabad_reinf_a","{!}",0,0,fac_commoners,0,[(trp_i1_gunda_goblin,6,12),(trp_i2_gunda_orc,5,8)]), #InVain: traded some t1 for t2 /#InVain: increased number of infantry by 50%, so lords have less space left for warg riders (hope this works)
+("gundabad_reinf_b","{!}",0,0,fac_commoners,0,[(trp_ca4_gunda_skirmisher,1,3),(trp_i2_gunda_orc,3,5),(trp_i3_gunda_orc_fighter,2,3),]), #InVain t3 orcs, less t2 orcs
+("gundabad_reinf_c","{!}",0,0,fac_commoners,0,[(trp_c3_gunda_goblin_rider,1,2),(trp_i3_gunda_orc_fighter,2,3),]), 
 #Dale (7-14, 5-10, 4-8)
-("dale_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_c2_rhovanion_retainer,2,4),(trp_i2_dale_man_at_arms,1,2),(trp_a2_dale_scout,1,2),(trp_i1_dale_militia,5,10),]),
-("dale_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_c2_rhovanion_retainer,0,2),(trp_a3_dale_bowman,3,5),(trp_i3_dale_spearman,1,2),(trp_i3_dale_swordsman,1,2),]),
-("dale_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_c4_rhovanion_rider,3,6),(trp_i4_dale_billman,1,2),(trp_i4_dale_sergeant,1,2),]), #InVain: More Cav
+("dale_reinf_a"    ,"{!}",0,0,fac_commoners,0,[(trp_c2_rhovanion_retainer,2,4),(trp_i2_dale_man_at_arms,1,2),(trp_a2_dale_scout,1,2),(trp_i1_dale_militia,5,10),]),
+("dale_reinf_b"    ,"{!}",0,0,fac_commoners,0,[(trp_c2_rhovanion_retainer,0,2),(trp_a3_dale_bowman,3,5),(trp_i3_dale_spearman,1,2),(trp_i3_dale_swordsman,1,2),]),
+("dale_reinf_c"    ,"{!}",0,0,fac_commoners,0,[(trp_c4_rhovanion_rider,3,6),(trp_i4_dale_billman,1,2),(trp_i4_dale_sergeant,1,2),]), #InVain: More Cav
 #Erebor (7-14, 5-10, 4-8)
-("dwarf_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i2_dwarf_warrior,2,3),(trp_i2_iron_hills_miner,1,2),(trp_i1_dwarf_apprentice,4,8),]), #InVain: no archers
-("dwarf_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a3_dwarf_scout,2,4),(trp_a4_dwarf_bowman,1,2),(trp_i3_dwarf_hardened_warrior,2,4),(trp_i2_iron_hills_miner,0,1),]), #InVain: More archers, less infantry
-("dwarf_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_i4_dwarf_axeman,2,4),(trp_i4_dwarf_spearman,2,4),(trp_i4_iron_hills_infantry,1,2),]), #InVain: No archers, more Erebor infantry
+("dwarf_reinf_a"   ,"{!}",0,0,fac_commoners,0,[(trp_i2_dwarf_warrior,2,3),(trp_i2_iron_hills_miner,1,2),(trp_i1_dwarf_apprentice,4,8),]), #InVain: no archers
+("dwarf_reinf_b"   ,"{!}",0,0,fac_commoners,0,[(trp_a3_dwarf_scout,2,4),(trp_a4_dwarf_bowman,1,2),(trp_i3_dwarf_hardened_warrior,2,4),(trp_i2_iron_hills_miner,0,1),]), #InVain: More archers, less infantry
+("dwarf_reinf_c"   ,"{!}",0,0,fac_commoners,0,[(trp_i4_dwarf_axeman,2,4),(trp_i4_dwarf_spearman,2,4),(trp_i4_iron_hills_infantry,1,2),]), #InVain: No archers, more Erebor infantry
 #Dunlenders (7-14, 5-10, 4-8)
-("dunland_reinf_a" ,"_",0,0,fac_commoners,0,[(trp_i2_dun_warrior,3,6),(trp_i1_dun_wildman,4,8),]),
-("dunland_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_i3_dun_vet_warrior,3,6),(trp_i3_dun_pikeman,2,4),]),
-("dunland_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_ac4_dun_crebain_rider,1,3),(trp_i4_dun_wolf_warrior,2,4),(trp_i4_dun_vet_pikeman,1,3),]),
+("dunland_reinf_a" ,"{!}",0,0,fac_commoners,0,[(trp_i2_dun_warrior,3,6),(trp_i1_dun_wildman,4,8),]),
+("dunland_reinf_b" ,"{!}",0,0,fac_commoners,0,[(trp_i3_dun_vet_warrior,3,6),(trp_i3_dun_pikeman,2,4),]),
+("dunland_reinf_c" ,"{!}",0,0,fac_commoners,0,[(trp_ac4_dun_crebain_rider,1,3),(trp_i4_dun_wolf_warrior,2,4),(trp_i4_dun_vet_pikeman,1,3),]),
 
 #Volunteer templates
 #MV guidelines:
 #  - A mix of T1 (tier 1) troops, size 2-5 (if there are no T1, use fewer T2)
 #  - Ideally the starting troops from each faction subtree
 
-("gondor_cap_recruits","_",0,0,fac_commoners,0,[(trp_i1_gon_levy,2,5),(trp_c1_gon_nobleman,1,1)]),
-("gondor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_i1_gon_levy,1,4),(trp_c1_gon_nobleman,0,1)]),
-("pelargir_recruits"  ,"_",0,0,fac_commoners,0,[(trp_i1_pel_watchman,1,4)]), #T2
-("dol_amroth_recruits","_",0,0,fac_commoners,0,[(trp_i1_amroth_recruit,2,4)]), #Cavalry line nerf
-("lamedon_recruits"   ,"_",0,0,fac_commoners,0,[(trp_i1_lam_clansman,2,5)]),
-("lossarnach_recruits","_",0,0,fac_commoners,0,[(trp_i1_loss_woodsman,2,5)]),
-("pinnath_recruits"   ,"_",0,0,fac_commoners,0,[(trp_i1_pinnath_plainsman,1,4)]), #T2
-("ithilien_recruits"  ,"_",0,0,fac_commoners,0,[(trp_a4_ithilien_ranger,1,2)]), #T4! nerf
-("blackroot_recruits" ,"_",0,0,fac_commoners,0,[(trp_a1_blackroot_hunter,1,4)]), #T2
+("gondor_cap_recruits","{!}",0,0,fac_commoners,0,[(trp_i1_gon_levy,2,5),(trp_c1_gon_nobleman,1,1)]),
+("gondor_recruits"    ,"{!}",0,0,fac_commoners,0,[(trp_i1_gon_levy,1,4),(trp_c1_gon_nobleman,0,1)]),
+("pelargir_recruits"  ,"{!}",0,0,fac_commoners,0,[(trp_i1_pel_watchman,1,4)]), #T2
+("dol_amroth_recruits","{!}",0,0,fac_commoners,0,[(trp_i1_amroth_recruit,2,4)]), #Cavalry line nerf
+("lamedon_recruits"   ,"{!}",0,0,fac_commoners,0,[(trp_i1_lam_clansman,2,5)]),
+("lossarnach_recruits","{!}",0,0,fac_commoners,0,[(trp_i1_loss_woodsman,2,5)]),
+("pinnath_recruits"   ,"{!}",0,0,fac_commoners,0,[(trp_i1_pinnath_plainsman,1,4)]), #T2
+("ithilien_recruits"  ,"{!}",0,0,fac_commoners,0,[(trp_a4_ithilien_ranger,1,2)]), #T4! nerf
+("blackroot_recruits" ,"{!}",0,0,fac_commoners,0,[(trp_a1_blackroot_hunter,1,4)]), #T2
 
-("rohan_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_rohan_youth,2,4)]),
-("rohan_cap_recruits" ,"_",0,0,fac_commoners,0,[(trp_i1_rohan_youth,2,6)]),
-("isengard_recruits"  ,"_",0,0,fac_commoners,0,[(trp_i1_isen_uruk_snaga,2,3),(trp_i1_isen_orc_snaga,2,4)]), #two T1
-("morannon_recruits"  ,"_",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,1,2),(trp_i1_mordor_orc_snaga,3,5),(trp_i2_mordor_num_renegade,1,1),]), #two T1 & prize
-("mordor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,1,2),(trp_i1_mordor_orc_snaga,3,5)]), #two T1
-("morgul_recruits"    ,"_",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,2,3),(trp_i2_mordor_morgul_orc,1,2)]), #T1 T2
-("harad_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_harad_levy,1,3),(trp_c2_harondor_scout,0,2),(trp_i2_far_harad_tribesman,1,2)]), #three T1
-("rhun_recruits"      ,"_",0,0,fac_commoners,0,[(trp_i1_rhun_tribesman,1,4),(trp_c2_rhun_horseman,1,1)]), #T1 and T2
-("khand_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_khand_bondsman,2,5)]),
-("umbar_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_corsair_youth,3,6)]),
-("lorien_recruits"    ,"_",0,0,fac_commoners,0,[(trp_a1_lorien_scout,1,3),(trp_a2_lorien_archer,1,1)]), #two T1
-("imladris_recruits"  ,"_",0,0,fac_commoners,0,[(trp_a1_riv_scout,0,2),(trp_a1_arnor_scout,2,3)]), #two T1
-("woodelf_recruits"   ,"_",0,0,fac_commoners,0,[(trp_a1_greenwood_scout,1,4)]),
-("moria_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_moria_snaga,5,10)]),
-("guldur_recruits"    ,"_",0,0,fac_commoners,0,[(trp_i1_guldur_orc_snaga,5,10)]),
-("beorn_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_beorning_man,2,3),(trp_i1_woodmen_man,1,2)]),
-("woodman_recruits"   ,"_",0,0,fac_commoners,0,[(trp_i1_woodmen_man,2,3),(trp_i1_beorning_man,1,2)]),
-("gundabad_recruits"  ,"_",0,0,fac_commoners,0,[(trp_i1_gunda_goblin,3,6)]),
-("gundabad_cap_recruits","_",0,0,fac_commoners,0,[(trp_i1_gunda_goblin,3,7)]),
-("dale_recruits"      ,"_",0,0,fac_commoners,0,[(trp_i1_dale_militia,1,4),(trp_c2_rhovanion_retainer,1,2)]), #T1 and T2
-("dwarf_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_dwarf_apprentice,2,3),(trp_i2_iron_hills_miner,0,2)]), #T1 and T2
-("dwarf_iron_recruits","_",0,0,fac_commoners,0,[(trp_i2_iron_hills_miner,1,2),(trp_i1_dwarf_apprentice,1,2)]), #T1 and T2
-("dunland_recruits"   ,"_",0,0,fac_commoners,0,[(trp_i1_dun_wildman,3,7)]),
+("rohan_recruits"     ,"{!}",0,0,fac_commoners,0,[(trp_i1_rohan_youth,2,4)]),
+("rohan_cap_recruits" ,"{!}",0,0,fac_commoners,0,[(trp_i1_rohan_youth,2,6)]),
+("isengard_recruits"  ,"{!}",0,0,fac_commoners,0,[(trp_i1_isen_uruk_snaga,2,3),(trp_i1_isen_orc_snaga,2,4)]), #two T1
+("morannon_recruits"  ,"{!}",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,1,2),(trp_i1_mordor_orc_snaga,3,5),(trp_i2_mordor_num_renegade,1,1),]), #two T1 & prize
+("mordor_recruits"    ,"{!}",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,1,2),(trp_i1_mordor_orc_snaga,3,5)]), #two T1
+("morgul_recruits"    ,"{!}",0,0,fac_commoners,0,[(trp_i1_mordor_uruk_snaga,2,3),(trp_i2_mordor_morgul_orc,1,2)]), #T1 T2
+("harad_recruits"     ,"{!}",0,0,fac_commoners,0,[(trp_i1_harad_levy,1,3),(trp_c2_harondor_scout,0,2),(trp_i2_far_harad_tribesman,1,2)]), #three T1
+("rhun_recruits"      ,"{!}",0,0,fac_commoners,0,[(trp_i1_rhun_tribesman,1,4),(trp_c2_rhun_horseman,1,1)]), #T1 and T2
+("khand_recruits"     ,"{!}",0,0,fac_commoners,0,[(trp_i1_khand_bondsman,2,5)]),
+("umbar_recruits"     ,"{!}",0,0,fac_commoners,0,[(trp_i1_corsair_youth,3,6)]),
+("lorien_recruits"    ,"{!}",0,0,fac_commoners,0,[(trp_a1_lorien_scout,1,3),(trp_a2_lorien_archer,1,1)]), #two T1
+("imladris_recruits"  ,"{!}",0,0,fac_commoners,0,[(trp_a1_riv_scout,0,2),(trp_a1_arnor_scout,2,3)]), #two T1
+("woodelf_recruits"   ,"{!}",0,0,fac_commoners,0,[(trp_a1_greenwood_scout,1,4)]),
+("moria_recruits"     ,"{!}",0,0,fac_commoners,0,[(trp_i1_moria_snaga,5,10)]),
+("guldur_recruits"    ,"{!}",0,0,fac_commoners,0,[(trp_i1_guldur_orc_snaga,5,10)]),
+("beorn_recruits"     ,"{!}",0,0,fac_commoners,0,[(trp_i1_beorning_man,2,3),(trp_i1_woodmen_man,1,2)]),
+("woodman_recruits"   ,"{!}",0,0,fac_commoners,0,[(trp_i1_woodmen_man,2,3),(trp_i1_beorning_man,1,2)]),
+("gundabad_recruits"  ,"{!}",0,0,fac_commoners,0,[(trp_i1_gunda_goblin,3,6)]),
+("gundabad_cap_recruits","{!}",0,0,fac_commoners,0,[(trp_i1_gunda_goblin,3,7)]),
+("dale_recruits"      ,"{!}",0,0,fac_commoners,0,[(trp_i1_dale_militia,1,4),(trp_c2_rhovanion_retainer,1,2)]), #T1 and T2
+("dwarf_recruits"     ,"{!}",0,0,fac_commoners,0,[(trp_i1_dwarf_apprentice,2,3),(trp_i2_iron_hills_miner,0,2)]), #T1 and T2
+("dwarf_iron_recruits","{!}",0,0,fac_commoners,0,[(trp_i2_iron_hills_miner,1,2),(trp_i1_dwarf_apprentice,1,2)]), #T1 and T2
+("dunland_recruits"   ,"{!}",0,0,fac_commoners,0,[(trp_i1_dun_wildman,3,7)]),
 
 ("caravan_survivors","Caravan Survivors",icon_generic_knight|carries_goods(2),0,fac_neutral,merchant_personality,[(trp_sea_raider,5,5)]),
 

@@ -34,27 +34,27 @@ pf_tld_down  = pf_is_static|pf_always_visible|pf_show_faction|pf_label_large
 
 parties = [
   ("main_party","Main_Party",icon_player|pf_limit_members, no_menu, pt_none,fac_player_faction,0,ai_bhvr_hold,0,(13.6,54.6),[(trp_player,1,0)]),
-  ("temp_party","temp_party",pf_disabled, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0,0),[]),
-  ("camp_bandits","camp_bandits",pf_disabled, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(1,1),[(trp_unarmed_troop,3,0)]),
+  ("temp_party","{!}temp_party",pf_disabled, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0,0),[]),
+  ("camp_bandits","{!}camp_bandits",pf_disabled, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(1,1),[(trp_unarmed_troop,3,0)]),
 #parties before this point are hardwired. Their order should not be changed.
 
-  ("temp_party_2","temp_party_2"   ,pf_disabled, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0,0),[]),
+  ("temp_party_2","{!}temp_party_2"   ,pf_disabled, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0,0),[]),
 #Used for calculating casulties.
-  ("temp_casualties","casualties"  ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-  ("temp_casualties_2","casualties",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-  ("temp_casualties_3","casualties",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-  ("temp_wounded","enemies_wounded",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-  ("temp_killed","enemies_killed"  ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-  ("main_party_backup","_"         ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-  ("encountered_party_backup","_"  ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-  ("collective_friends_backup","_" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-  ("player_casualties","_"         ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-  ("enemy_casualties","_"          ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-  ("ally_casualties","_"           ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("temp_casualties","{!}casualties"  ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("temp_casualties_2","{!}casualties",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("temp_casualties_3","{!}casualties",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("temp_wounded","{!}enemies_wounded",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("temp_killed","{!}enemies_killed"  ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("main_party_backup","{!}"         ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("encountered_party_backup","{!}"  ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("collective_friends_backup","{!}" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("player_casualties","{!}"         ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("enemy_casualties","{!}"          ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("ally_casualties","{!}"           ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
 
-  ("collective_enemy"  ,"collective_enemy",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-  ("collective_ally"   ,"collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
-  ("collective_friends","collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("collective_enemy"  ,"{!}collective_enemy",pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("collective_ally"   ,"{!}collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
+  ("collective_friends","{!}collective_ally" ,pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1,1),[]),
   
   #("zendar","Brigand Fort", icon_castle_c|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-29.9,-28.3),[]),
 
@@ -161,7 +161,7 @@ parties = [
  ("advcamp_beorn"   ,"Beorning Advance Camp",icon_camp     |pf_tld_down|pf_disabled,no_menu,pt_none,fac_beorn   ,0, ai_bhvr_hold,0,(0,0),[],170),
 
 
-("centers_end","_",pf_disabled, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0,0),[]),
+("centers_end","{!}",pf_disabled, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0,0),[]),
 # stuff from native
 # ("castle_1","Ethring",icon_castle_gondor_small|pf_tld_down|pf_disabled, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.2,30.9),[],50),
 
@@ -199,8 +199,8 @@ parties = [
 
   #("salt_mine","Salt_Mine",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(6.004257,-11.482468),[]),
   #("four_ways_inn","Four_Ways_Inn",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24.064327,1.070496),[]),
-  ("test_scene","test_scene",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.077255,-12.735809),[]),
-  ("battlefields","battlefields",pf_disabled|icon_village_a|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.255280,-10.009171),[]),
+  ("test_scene","{!}test_scene",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.077255,-12.735809),[]),
+  ("battlefields","{!}battlefields",pf_disabled|icon_village_a|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.255280,-10.009171),[]),
 
 # Legendary Places
   ("legend_amonhen","Amon Hen",icon_ancient_ruins|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_legendary_place, fac_neutral,0,ai_bhvr_hold,0,(-31.80,-47.71),[],180),
@@ -209,10 +209,10 @@ parties = [
   ("legend_fangorn","Fangorn Entmoot",icon_tree_low|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_legendary_place, fac_neutral,0,ai_bhvr_hold,0,(35.24,-84.19),[],180),
   
 # central positions in theaters used to calculate advance camp positions
-  ("theater_SE_center", "SE Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-53,21),[]), # West of West Osgiliath
-  ("theater_SW_center", "SW Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2,-43),[]), # Nortwest of East Emnet
-  ("theater_C_center", "C Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 5.7,-134.3),[]), # Cerin Amroth
-  ("theater_N_center", "N Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19,-181),[]), # Beorn's House
+  ("theater_SE_center", "{!}SE Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-53,21),[]), # West of West Osgiliath
+  ("theater_SW_center", "{!}SW Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2,-43),[]), # Nortwest of East Emnet
+  ("theater_C_center", "{!}C Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 5.7,-134.3),[]), # Cerin Amroth
+  ("theater_N_center", "{!}N Theater center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19,-181),[]), # Beorn's House
 
 # Fangorn central position used to check if player is in Fangorn
   ("fangorn_center", "Fangorn Center", pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(35.24,-84.19),[]),
@@ -225,37 +225,37 @@ parties = [
 #  ("training_ground_5","Training_Field",  pf_disabled|icon_village_a|pf_hide_defenders|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-16.855721,-30.506454),[],100),
 
 #  bridge_a
-  ("looter_spawn_point"   ,"looter_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(29.273674,79.890099),[(trp_mercenaries_end,15,0)]),
-  ("steppe_bandit_spawn_point"  ,"steppe_bandit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(27.303375,-60.205627),[(trp_mercenaries_end,15,0)]),
-  ("steppe_bandit_spawn_point_2"  ,"steppe_bandit_sp_2",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(28.19,-30.90),[(trp_mercenaries_end,15,0)]),
+  ("looter_spawn_point"   ,"{!}looter_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(29.273674,79.890099),[(trp_mercenaries_end,15,0)]),
+  ("steppe_bandit_spawn_point"  ,"{!}steppe_bandit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(27.303375,-60.205627),[(trp_mercenaries_end,15,0)]),
+  ("steppe_bandit_spawn_point_2"  ,"{!}steppe_bandit_sp_2",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(28.19,-30.90),[(trp_mercenaries_end,15,0)]),
 ##  ("black_khergit_spawn_point"  ,"black_khergit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(47.1, -73.3),[(trp_mercenaries_end,15,0)]),
-  ("forest_bandit_spawn_point"  ,"forest_bandit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-37.252506,6.916382),[(trp_mercenaries_end,15,0)]),
-  ("forest_bandit_spawn_point_2"  ,"forest_bandit_sp_2",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-65.33,43.30),[(trp_mercenaries_end,15,0)]),
-  ("forest_bandit_spawn_point_3"  ,"forest_bandit_sp_3",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-52.10,-28.62),[(trp_mercenaries_end,15,0)]),
-  ("forest_bandit_spawn_point_4"  ,"forest_bandit_sp_4",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-25.94,-117.04),[(trp_mercenaries_end,15,0)]),
-  ("forest_bandit_spawn_point_5"  ,"forest_bandit_sp_5",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-59.65,-173.31),[(trp_mercenaries_end,15,0)]),
-  ("mountain_bandit_spawn_point","mountain_bandit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(39.789207,26.066040),[(trp_mercenaries_end,15,0)]),
-  ("mountain_bandit_spawn_point_2","mountain_bandit_sp_2",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-21.54,34.50),[(trp_mercenaries_end,15,0)]),
-  ("mountain_bandit_spawn_point_3","mountain_bandit_sp_3",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(40.43,-130.92),[(trp_mercenaries_end,15,0)]),
-  ("mountain_bandit_spawn_point_4","mountain_bandit_sp_4",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(17.53,-175.76),[(trp_mercenaries_end,15,0)]),
-  ("mountain_bandit_spawn_point_5","mountain_bandit_sp_5",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-15.06,-237.27),[(trp_mercenaries_end,15,0)]),
-  ("sea_raider_spawn_point_1"   ,"sea_raider_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-3,66.7),[(trp_mercenaries_end,15,0)]),
-  ("sea_raider_spawn_point_2"   ,"sea_raider_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(48.6,48.6),[(trp_mercenaries_end,15,0)]),
+  ("forest_bandit_spawn_point"  ,"{!}forest_bandit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-37.252506,6.916382),[(trp_mercenaries_end,15,0)]),
+  ("forest_bandit_spawn_point_2"  ,"{!}forest_bandit_sp_2",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-65.33,43.30),[(trp_mercenaries_end,15,0)]),
+  ("forest_bandit_spawn_point_3"  ,"{!}forest_bandit_sp_3",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-52.10,-28.62),[(trp_mercenaries_end,15,0)]),
+  ("forest_bandit_spawn_point_4"  ,"{!}forest_bandit_sp_4",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-25.94,-117.04),[(trp_mercenaries_end,15,0)]),
+  ("forest_bandit_spawn_point_5"  ,"{!}forest_bandit_sp_5",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-59.65,-173.31),[(trp_mercenaries_end,15,0)]),
+  ("mountain_bandit_spawn_point","{!}mountain_bandit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(39.789207,26.066040),[(trp_mercenaries_end,15,0)]),
+  ("mountain_bandit_spawn_point_2","{!}mountain_bandit_sp_2",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-21.54,34.50),[(trp_mercenaries_end,15,0)]),
+  ("mountain_bandit_spawn_point_3","{!}mountain_bandit_sp_3",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(40.43,-130.92),[(trp_mercenaries_end,15,0)]),
+  ("mountain_bandit_spawn_point_4","{!}mountain_bandit_sp_4",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(17.53,-175.76),[(trp_mercenaries_end,15,0)]),
+  ("mountain_bandit_spawn_point_5","{!}mountain_bandit_sp_5",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-15.06,-237.27),[(trp_mercenaries_end,15,0)]),
+  ("sea_raider_spawn_point_1"   ,"{!}sea_raider_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-3,66.7),[(trp_mercenaries_end,15,0)]),
+  ("sea_raider_spawn_point_2"   ,"{!}sea_raider_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(48.6,48.6),[(trp_mercenaries_end,15,0)]),
  
  #####TLD PARTIES BEGIN##########
-  ("gondor_test"    ,"gondor_test_sp"    ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.509827,-5.265762),[(trp_mercenaries_end,15,0)]),
-  ("mordor_test"    ,"mordor_test_sp"    ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
-  ("gondor_allies_test","gondor_allies_test_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.500393,-5.082901),[(trp_mercenaries_end,15,0)]),
-  ("isengard_test"  ,"isengard_test_sp"  ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.317505,-5.082901),[(trp_mercenaries_end,15,0)]),
-  ("isen_rohan"     ,"isen_rohan_sp"     ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(34.842987,-27.865891),[(trp_mercenaries_end,15,0)]),
-  ("mordor_gondor"  ,"mordor_gondor_sp"  ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(30.825653,-23.388062),[(trp_mercenaries_end,15,0)]),
-  ("harad_gondor"   ,"harad_gondor_sp"   ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(37.227943,-30.542084),[(trp_mercenaries_end,15,0)]),
-  ("corsair_gondor" ,"corsair_gondor_sp" ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
-  ("rhun_gondor"    ,"rhun_gondor_sp"    ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
-  ("khand_gondor"   ,"khand_gondor_sp"   ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
-  ("lorien_moria"   ,"lorien_moria_sp"   ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
-  ("gunda_woodelves","gunda_woodelves_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
-  ("gunda_dwarves"  ,"gunda_dwarves_sp"  ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
+  ("gondor_test"    ,"{!}gondor_test_sp"    ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.509827,-5.265762),[(trp_mercenaries_end,15,0)]),
+  ("mordor_test"    ,"{!}mordor_test_sp"    ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
+  ("gondor_allies_test","{!}gondor_allies_test_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.500393,-5.082901),[(trp_mercenaries_end,15,0)]),
+  ("isengard_test"  ,"{!}isengard_test_sp"  ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.317505,-5.082901),[(trp_mercenaries_end,15,0)]),
+  ("isen_rohan"     ,"{!}isen_rohan_sp"     ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(34.842987,-27.865891),[(trp_mercenaries_end,15,0)]),
+  ("mordor_gondor"  ,"{!}mordor_gondor_sp"  ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(30.825653,-23.388062),[(trp_mercenaries_end,15,0)]),
+  ("harad_gondor"   ,"{!}harad_gondor_sp"   ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(37.227943,-30.542084),[(trp_mercenaries_end,15,0)]),
+  ("corsair_gondor" ,"{!}corsair_gondor_sp" ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
+  ("rhun_gondor"    ,"{!}rhun_gondor_sp"    ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
+  ("khand_gondor"   ,"{!}khand_gondor_sp"   ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
+  ("lorien_moria"   ,"{!}lorien_moria_sp"   ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
+  ("gunda_woodelves","{!}gunda_woodelves_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
+  ("gunda_dwarves"  ,"{!}gunda_dwarves_sp"  ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_mercenaries_end,15,0)]),
  
 
  ## Ring Hunters Addition - Kham
@@ -277,67 +277,67 @@ parties = [
   ("scout_party","Scout_Party",icon_footman_gondor, no_menu, pt_gondor_scouts,fac_gondor,0,ai_bhvr_hold,0,(13.6,54.6),[(trp_c2_gon_squire,1,0)]),
 
   #Terrain Party
-  ("terrain_party","terrain_party",pf_disabled, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0,0),[]),
+  ("terrain_party","{!}terrain_party",pf_disabled, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(0,0),[]),
   
  # add extra towns before this point 
-  ("spawn_points_end","last_spawn_point",pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(-7.746731,1.880096),[(trp_mercenaries_end,15,0)]),
+  ("spawn_points_end","{!}last_spawn_point",pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(-7.746731,1.880096),[(trp_mercenaries_end,15,0)]),
  # pointers for scripting purposes
-  ("pointer_player"           ,"_",pf_disabled|pf_no_label|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.314220,-10.163879),[]),
-  ("pointer_z_0_begin"        ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]), # rt_water = 0
-  ("pointer_z_0_mountain"     ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]), # rt_mountain = 1
-  ("pointer_z_0_steppe"       ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]), # rt_steppe = 2
-  ("pointer_z_0_plain"        ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,103.3),[]), # rt_plain = 3
-  ("pointer_z_0_snow"         ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 89.5),[]), # rt_swamp = rt_snow = 4  
-  ("pointer_z_0_desert"       ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 74.1),[]), # rt_desert = 5
-  #("pointer_z_0_river"        ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 74.1),[]), # rt_river  = 8
-  ("pointer_z_0_steppe_forest","_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5,112.4),[]), # rt_steppe_forest = 10
-  ("pointer_z_0_plain_forest" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 96.4),[]), # rt_forest = 10
-  ("pointer_z_0_snow_forest"  ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 81.1),[]), # rt_snow_forest = 12
-  ("pointer_z_0_desert_forest","_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 64.9),[]), # rt_desert_forest = 13
+  ("pointer_player"           ,"{!}",pf_disabled|pf_no_label|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.314220,-10.163879),[]),
+  ("pointer_z_0_begin"        ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]), # rt_water = 0
+  ("pointer_z_0_mountain"     ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]), # rt_mountain = 1
+  ("pointer_z_0_steppe"       ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,122.4),[]), # rt_steppe = 2
+  ("pointer_z_0_plain"        ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3,103.3),[]), # rt_plain = 3
+  ("pointer_z_0_snow"         ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 89.5),[]), # rt_swamp = rt_snow = 4  
+  ("pointer_z_0_desert"       ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 74.1),[]), # rt_desert = 5
+  #("pointer_z_0_river"        ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.3, 74.1),[]), # rt_river  = 8
+  ("pointer_z_0_steppe_forest","{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5,112.4),[]), # rt_steppe_forest = 10
+  ("pointer_z_0_plain_forest" ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 96.4),[]), # rt_forest = 10
+  ("pointer_z_0_snow_forest"  ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 81.1),[]), # rt_snow_forest = 12
+  ("pointer_z_0_desert_forest","{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-219.5, 64.9),[]), # rt_desert_forest = 13
 
 
   # advanced camps placements (if not enough, spawn around camplace1)
   # south-from-beorn places
-  ("camplace_N1" ,"camplace_N1",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10,-170),[]),
-  ("camplace_N2" ,"camplace_N2",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24,-176),[]),
-  ("camplace_N3" ,"camplace_N3",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36,-163),[]),
-  ("camplace_N4" ,"camplace_N4",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-14,-185),[]), #south of old forest road
-  ("camplace_N5" ,"camplace_N5",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 7,-188),[]), #old ford
+  ("camplace_N1" ,"{!}camplace_N1",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10,-170),[]),
+  ("camplace_N2" ,"{!}camplace_N2",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24,-176),[]),
+  ("camplace_N3" ,"{!}camplace_N3",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36,-163),[]),
+  ("camplace_N4" ,"{!}camplace_N4",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-14,-185),[]), #south of old forest road
+  ("camplace_N5" ,"{!}camplace_N5",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,( 7,-188),[]), #old ford
   # east-from-fangorn places
-  ("camplace_M1" ,"camplace_M1",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(5.2,-76.1),[]),
-  ("camplace_M2" ,"camplace_M2",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(6.1,-95),[]),
-  ("camplace_M3" ,"camplace_M3",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7,-92),[]),
-  ("camplace_M4" ,"camplace_M4",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.1,-60),[]),
-  ("camplace_M5" ,"camplace_M5",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15.6,-76),[]),
+  ("camplace_M1" ,"{!}camplace_M1",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(5.2,-76.1),[]),
+  ("camplace_M2" ,"{!}camplace_M2",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(6.1,-95),[]),
+  ("camplace_M3" ,"{!}camplace_M3",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7,-92),[]),
+  ("camplace_M4" ,"{!}camplace_M4",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.1,-60),[]),
+  ("camplace_M5" ,"{!}camplace_M5",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15.6,-76),[]),
   # anorien places
-  ("camplace_S1" ,"camplace_S1",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.6,6.5),[]), #Anorien
-  ("camplace_S2" ,"camplace_S2",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36.56,5),[]), #Anorien
-  ("camplace_S3" ,"camplace_S3",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-49,13),[]), #Anorien
-  ("camplace_S4" ,"camplace_S4",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-28.7,-36.2),[]), #near Emyn Muil
-  ("camplace_S5" ,"camplace_S5",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.84,-36.32),[]), #near Emyn Muil
+  ("camplace_S1" ,"{!}camplace_S1",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.6,6.5),[]), #Anorien
+  ("camplace_S2" ,"{!}camplace_S2",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36.56,5),[]), #Anorien
+  ("camplace_S3" ,"{!}camplace_S3",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-49,13),[]), #Anorien
+  ("camplace_S4" ,"{!}camplace_S4",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-28.7,-36.2),[]), #near Emyn Muil
+  ("camplace_S5" ,"{!}camplace_S5",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.84,-36.32),[]), #near Emyn Muil
   ("ancient_ruins","Ancient_Ruins",pf_disabled|icon_ancient_ruins|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_small, no_menu, pt_none,fac_guldur,0,ai_bhvr_hold,0,(-35, -125),[],170),
 # mirkwood forest adornments 
-  ("shrubbery1" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40,-175),[],185),
-  ("shrubbery2" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-51.5,-132.5),[],185),
-  ("shrubbery3" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.6,-128.1),[],185),
-  ("shrubbery4" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-47.54,-136.2),[],185),
-  ("shrubbery5" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-45.75,-141.8),[],185),
-  ("shrubbery6" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-48.4,-149.05),[],135),
-  ("shrubbery7" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-52.14,-154.45),[],195),
-  ("shrubbery8" ,"_" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.52,-159.83),[],195),
+  ("shrubbery1" ,"{!}" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40,-175),[],185),
+  ("shrubbery2" ,"{!}" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-51.5,-132.5),[],185),
+  ("shrubbery3" ,"{!}" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.6,-128.1),[],185),
+  ("shrubbery4" ,"{!}" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-47.54,-136.2),[],185),
+  ("shrubbery5" ,"{!}" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-45.75,-141.8),[],185),
+  ("shrubbery6" ,"{!}" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-48.4,-149.05),[],135),
+  ("shrubbery7" ,"{!}" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-52.14,-154.45),[],195),
+  ("shrubbery8" ,"{!}" ,icon_shrubbery|pf_is_static|pf_always_visible|pf_no_label, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.52,-159.83),[],195),
   
 # these are parties for storing routed troops
-  ("routed_troops" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
-  ("routed_allies" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
-  ("routed_enemies" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
+  ("routed_troops" ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
+  ("routed_allies" ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
+  ("routed_enemies" ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
 
 # These are for tracking which troops to remove from the casualty parties
-  ("save4" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
-  ("save5" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
-  ("save6" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
-  ("save7" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
-  ("save8" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
-  ("save9" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
-  ("save10" ,"_",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
+  ("save4" ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
+  ("save5" ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
+  ("save6" ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
+  ("save7" ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
+  ("save8" ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
+  ("save9" ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
+  ("save10" ,"{!}",pf_disabled|pf_no_label|pf_is_static, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0,0),[]),
   
 ] + parties_scribbler 

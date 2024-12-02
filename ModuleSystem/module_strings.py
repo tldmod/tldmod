@@ -1,19 +1,19 @@
 ﻿from module_constants import *
 
 strings = [
-  ("no_string", "NO STRING!"),
-  ("empty_string", " "),
+  ("no_string", "{!}NO STRING!"),
+  ("empty_string", "{!} "),
   ("yes", "Yes."),
   ("no", "No."),
 # Strings before this point are hardwired.  
-  ("blank_string", " "),
-  ("error_string", "ERROR!!!ERROR!!!!ERROR!!!ERROR!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!!"),
+  ("blank_string", "{!} "),
+  ("error_string", "{!}ERROR!!!ERROR!!!!ERROR!!!ERROR!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!!"),
 ##  ("none", "none"),
   ("noone", "no one"),
 ##  ("nothing", "nothing"),
-  ("s0", "{s0}"),
-  ("blank_s1", " {s1}"),
-  ("reg1", "{reg1}"),
+  ("s0", "{!}{s0}"),
+  ("blank_s1", "{!} {s1}"),
+  ("reg1", "{!}{reg1}"),
   ("s50_comma_s51", "{s50}, {s51}"),
   ("s50_and_s51", "{s50} and {s51}"),
   ("s5_s_party", "_{s5}'s Party"),
@@ -28,24 +28,24 @@ strings = [
   ("tutorial_map1","You are now viewing the overland map. Left-click on the map to move your party to that location, enter the selected town, or pursue the selected party. Time will pause on the overland map if your party is not moving, waiting or resting. To wait anywhere simply press and hold down the space bar."),
 
 
-  ("change_color_1", "Change Color 1"),
-  ("change_color_2", "Change Color 2"),
-  ("change_background", "Change Background Pattern"),
-  ("change_flag_type", "Change Flag Type"),
-  ("change_map_flag_type", "Change Map Flag Type"),
-  ("randomize", "Randomize"),
-  ("sample_banner", "Sample banner:"),
-  ("sample_map_banner", "Sample map banner:"),
-  ("number_of_charges", "Number of charges:"),
-  ("change_charge_1",       "Change Charge 1"),
-  ("change_charge_1_color", "Change Charge 1 Color"),
-  ("change_charge_2",       "Change Charge 2"),
-  ("change_charge_2_color", "Change Charge 2 Color"),
-  ("change_charge_3",       "Change Charge 3"),
-  ("change_charge_3_color", "Change Charge 3 Color"),
-  ("change_charge_4",       "Change Charge 4"),
-  ("change_charge_4_color", "Change Charge 4 Color"),
-  ("change_charge_position", "Change Charge Position"),
+  ("change_color_1", "{!}Change Color 1"),
+  ("change_color_2", "{!}Change Color 2"),
+  ("change_background", "{!}Change Background Pattern"),
+  ("change_flag_type", "{!}Change Flag Type"),
+  ("change_map_flag_type", "{!}Change Map Flag Type"),
+  ("randomize", "{!}Randomize"),
+  ("sample_banner", "{!}Sample banner:"),
+  ("sample_map_banner", "{!}Sample map banner:"),
+  ("number_of_charges", "{!}Number of charges:"),
+  ("change_charge_1",       "{!}Change Charge 1"),
+  ("change_charge_1_color", "{!}{!}Change Charge 1 Color"),
+  ("change_charge_2",       "{!}Change Charge 2"),
+  ("change_charge_2_color", "{!}Change Charge 2 Color"),
+  ("change_charge_3",       "{!}Change Charge 3"),
+  ("change_charge_3_color", "{!}Change Charge 3 Color"),
+  ("change_charge_4",       "{!}Change Charge 4"),
+  ("change_charge_4_color", "{!}Change Charge 4 Color"),
+  ("change_charge_position", "{!}Change Charge Position"),
   ("choose_position", "Choose position:"),
   ("choose_charge", "Choose a charge:"),
   ("choose_background", "Choose background pattern:"),
@@ -53,17 +53,17 @@ strings = [
   ("choose_map_flag_type", "Choose map flag type:"),
   ("choose_color", "Choose color:"),
   ("accept", "Accept"),
-  ("charge_no_1", "Charge #1:"),
-  ("charge_no_2", "Charge #2:"),
-  ("charge_no_3", "Charge #3:"),
-  ("charge_no_4", "Charge #4:"),
-  ("change", "Change"),
-  ("plus", "+"),
-  ("minus", "-"),
-  ("color_no_1", "Color #1:"),
-  ("color_no_2", "Color #2:"),
+  ("charge_no_1", "{!}Charge #1:"),
+  ("charge_no_2", "{!}Charge #2:"),
+  ("charge_no_3", "{!}Charge #3:"),
+  ("charge_no_4", "{!}Charge #4:"),
+  ("change", "{!}Change"),
+  ("plus", "{!}+"),
+  ("minus", "{!}-"),
+  ("color_no_1", "{!}Color #1:"),
+  ("color_no_2", "{!}Color #2:"),
   ("charge", "Charge"),
-  ("color", "Color"),
+  ("color", "{Color"),
   ("flip_horizontal", "Flip Horizontal"),
   ("flip_vertical", "Flip Vertical"),
   ("hold_fire", "Hold Fire"),
@@ -782,7 +782,7 @@ You can press TAB anytime to leave the tutorial."),
   ("surname_40", "{s50} the Bold"),
   ("surname_41", "{s50} the Hot-Head"),
   
-  ("surnames_end", "surnames_end"),
+  ("surnames_end", "{!}surnames_end"),
   
 
   ("number_of_troops_killed_reg1", "Number of troops killed: {reg1}"),
@@ -803,16 +803,16 @@ You can press TAB anytime to leave the tutorial."),
 
 
 # Retirement Texts: s7=village name; s8=castle name; s9=town name #No retirement in TLD
-  ("retirement_text_1", "Unused"),
-  ("retirement_text_2", "Unused"),
-  ("retirement_text_3", "Unused"),
-  ("retirement_text_4", "Unused"),
-  ("retirement_text_5", "Unused"),
-  ("retirement_text_6", "Unused"),
-  ("retirement_text_7", "Unused"),
-  ("retirement_text_8", "Unused"),
-  ("retirement_text_9", "Unused"),
-  ("retirement_text_10", "Unused"),
+  ("retirement_text_1", "{!}Unused"),
+  ("retirement_text_2", "{!}Unused"),
+  ("retirement_text_3", "{!}Unused"),
+  ("retirement_text_4", "{!}Unused"),
+  ("retirement_text_5", "{!}Unused"),
+  ("retirement_text_6", "{!}Unused"),
+  ("retirement_text_7", "{!}Unused"),
+  ("retirement_text_8", "{!}Unused"),
+  ("retirement_text_9", "{!}Unused"),
+  ("retirement_text_10", "{!}Unused"),
 
 
 #NPC companion changes begin
@@ -1178,37 +1178,37 @@ You can press TAB anytime to leave the tutorial."),
   ("npc3_morality_speech", "Commander, we Eorlingas never {s21}. Our horses don't tire easily and, once we regroup, there is no situation a well-timed charge can't decide in our favour. Take heed the next time we battle against the odds."),
   ("npc4_morality_speech", "Take no heed to what the soldiers say, sometimes to {s21} is the wisest course of action. I for one appreciate the lives spared and limbs unbroken, if for nothing else but to fight another day, when fate looks upon us with favor."),
   ("npc5_morality_speech", "You must reconsider your actions, commander. To {s21} makes us no more honourable than the Enemy and diminishes the confidence of our friends."),
-  ("npc6_morality_speech", "[No primary moral code]"),
+  ("npc6_morality_speech", "{!}[No primary moral code]"),
   ("npc7_morality_speech", "I was not pleased that you decided to {s21}. To fall in battle is an honour for any right-thinking dwarf, but to fight in a company led by a coward is a disgrace. What will my cousins say if they learn of this?"),
   ("npc8_morality_speech", "Commander, I must object. To {s21} is harsh on the men and unnecessary. I do what I can to ease their suffering, but please don't make another costly mistake."),
   ("npc9_morality_speech", "The fighting Uruk-hai don't {s21}. If the Master has little guts, he might find himself without them one night. Gulm has spoken."), #run from battle
-  ("npc10_morality_speech", "[No primary moral code]"),
-  ("npc11_morality_speech", "[No primary moral code]"),
-  ("npc12_morality_speech", "[No primary moral code]"),
-  ("npc13_morality_speech", "[No primary moral code]"),
-  ("npc14_morality_speech", "[No primary moral code]"),
+  ("npc10_morality_speech", "{!}[No primary moral code]"),
+  ("npc11_morality_speech", "{!}[No primary moral code]"),
+  ("npc12_morality_speech", "{!}[No primary moral code]"),
+  ("npc13_morality_speech", "{!}[No primary moral code]"),
+  ("npc14_morality_speech", "{!}[No primary moral code]"),
   ("npc15_morality_speech", "You may think that Bolzog the Great can cure all, {playername}, but even I have my limits! If you continue to {s21} even my talent will struggle! You must give me some support! I cannot resurrect the dead, whether they starve or are hacked to pieces!"),
-  ("npc16_morality_speech", "[No primary moral code]"),
-  ("npc17_morality_speech", "[No primary moral code]"),
+  ("npc16_morality_speech", "{!}[No primary moral code]"),
+  ("npc17_morality_speech", "{!}[No primary moral code]"),
 
 
   ("npc1_2ary_morality_speech", "Captain, I have been raised as a Dúnadan, both in valor and honour. I would prefer if we don't {s21}."),
-  ("npc2_2ary_morality_speech", "[No secondary moral code]"),
-  ("npc3_2ary_morality_speech", "[No secondary moral code]"),
+  ("npc2_2ary_morality_speech", "{!}[No secondary moral code]"),
+  ("npc3_2ary_morality_speech", "{!}[No secondary moral code]"),
   ("npc4_2ary_morality_speech", "Your pardon, commander. Women of my station will accept death but not dishonour. To {s21} brings shame to my house and ancestors."),
-  ("npc5_2ary_morality_speech", "[No secondary moral code]"),
-  ("npc6_2ary_morality_speech", "[No secondary moral code]"),
-  ("npc7_2ary_morality_speech", "[No secondary moral code]"),
-  ("npc8_2ary_morality_speech", "[No secondary moral code]"),
-  ("npc9_2ary_morality_speech", "[No secondary moral code]"),
-  ("npc10_2ary_morality_speech", "[No secondary moral code]"),
-  ("npc11_2ary_morality_speech", "[No secondary moral code]"),
-  ("npc12_2ary_morality_speech", "[No secondary moral code]"),
-  ("npc13_2ary_morality_speech", "[No secondary moral code]"),
-  ("npc14_2ary_morality_speech", "[No secondary moral code]"),
+  ("npc5_2ary_morality_speech", "{!}[No secondary moral code]"),
+  ("npc6_2ary_morality_speech", "{!}[No secondary moral code]"),
+  ("npc7_2ary_morality_speech", "{!}[No secondary moral code]"),
+  ("npc8_2ary_morality_speech", "{!}[No secondary moral code]"),
+  ("npc9_2ary_morality_speech", "{!}[No secondary moral code]"),
+  ("npc10_2ary_morality_speech", "{!}[No secondary moral code]"),
+  ("npc11_2ary_morality_speech", "{!}[No secondary moral code]"),
+  ("npc12_2ary_morality_speech", "{!}[No secondary moral code]"),
+  ("npc13_2ary_morality_speech", "{!}[No secondary moral code]"),
+  ("npc14_2ary_morality_speech", "{!}[No secondary moral code]"),
   ("npc15_2ary_morality_speech", "Hi-hi-hi! You are cunning, Oh Lord! You take the gold, and nod, and say 'yes master' but all the time you planned this! Hi-Hi! Only, we must be careful, that The Big One does not see you deceiving him..."),
-  ("npc16_2ary_morality_speech", "[No secondary moral code]"),
-  ("npc17_2ary_morality_speech", "[No secondary moral code]"),
+  ("npc16_2ary_morality_speech", "{!}[No secondary moral code]"),
+  ("npc17_2ary_morality_speech", "{!}[No secondary moral code]"),
 
   ("npc1_personalityclash_speech", "Did I mention I hate {s11}?"),
   ("npc2_personalityclash_speech", "Did I mention I hate {s11}?"),
@@ -1450,7 +1450,7 @@ You can press TAB anytime to leave the tutorial."),
   ("npc16_honorific", "Chieftain"),
   ("npc17_honorific", "Chief"),
 
-  ("companion_strings_end", "INVALID"),
+  ("companion_strings_end", "{!}INVALID"),
 
 
 #NPC companion changes end
@@ -1462,60 +1462,60 @@ You can press TAB anytime to leave the tutorial."),
 
 #Beginning of game comments
 
-("comment_intro_liege_affiliated", "Unused"),
+("comment_intro_liege_affiliated", "{!}Unused"),
 
-("comment_intro_famous_liege", "Unused"),
-("comment_intro_famous_martial", "Unused"),
-("comment_intro_famous_badtempered", "Unused"),
-("comment_intro_famous_pitiless", "Unused"),
-("comment_intro_famous_cunning", "Unused"),
-("comment_intro_famous_sadistic", "Unused"),
-("comment_intro_famous_goodnatured", "Unused"),
-("comment_intro_famous_upstanding", "Unused"),
+("comment_intro_famous_liege", "{!}Unused"),
+("comment_intro_famous_martial", "{!}Unused"),
+("comment_intro_famous_badtempered", "{!}Unused"),
+("comment_intro_famous_pitiless", "{!}Unused"),
+("comment_intro_famous_cunning", "{!}Unused"),
+("comment_intro_famous_sadistic", "{!}Unused"),
+("comment_intro_famous_goodnatured", "{!}Unused"),
+("comment_intro_famous_upstanding", "{!}Unused"),
 
-("comment_intro_noble_liege", "Unused"),
-("comment_intro_noble_martial", "Unused"),
-("comment_intro_noble_badtempered", "Unused"),
-("comment_intro_noble_pitiless", "Unused"),
-("comment_intro_noble_cunning", "Unused"),
-("comment_intro_noble_sadistic", "Unused"),
-("comment_intro_noble_goodnatured", "Unused"),
-("comment_intro_noble_upstanding", "Unused"),
+("comment_intro_noble_liege", "{!}Unused"),
+("comment_intro_noble_martial", "{!}Unused"),
+("comment_intro_noble_badtempered", "{!}Unused"),
+("comment_intro_noble_pitiless", "{!}Unused"),
+("comment_intro_noble_cunning", "{!}Unused"),
+("comment_intro_noble_sadistic", "{!}Unused"),
+("comment_intro_noble_goodnatured", "{!}Unused"),
+("comment_intro_noble_upstanding", "{!}Unused"),
 
-("comment_intro_common_liege", "Unused"),
-("comment_intro_common_martial", "Unused"),
-("comment_intro_common_badtempered", "Unused"),
-("comment_intro_common_pitiless", "Unused"),
-("comment_intro_common_cunning", "Unused"),
-("comment_intro_common_sadistic", "Unused"),
-("comment_intro_common_goodnatured", "Unused"),
-("comment_intro_common_upstanding", "Unused"),
+("comment_intro_common_liege", "{!}Unused"),
+("comment_intro_common_martial", "{!}Unused"),
+("comment_intro_common_badtempered", "{!}Unused"),
+("comment_intro_common_pitiless", "{!}Unused"),
+("comment_intro_common_cunning", "{!}Unused"),
+("comment_intro_common_sadistic", "{!}Unused"),
+("comment_intro_common_goodnatured", "{!}Unused"),
+("comment_intro_common_upstanding", "{!}Unused"),
 
 
 #Actions vis-a-vis civilians
-  ("comment_you_raided_my_village_enemy_benevolent",    "Unused"), 
-  ("comment_you_raided_my_village_enemy_spiteful",      "Unused"), 
-  ("comment_you_raided_my_village_enemy_coldblooded",   "Unused"), 
-  ("comment_you_raided_my_village_enemy",              "Unused"), 
-  ("comment_you_raided_my_village_unfriendly_spiteful", "Unused"), 
-  ("comment_you_raided_my_village_friendly",            "Unused"), 
-  ("comment_you_raided_my_village_default",             "Unused"), 
+  ("comment_you_raided_my_village_enemy_benevolent",    "{!}Unused"), 
+  ("comment_you_raided_my_village_enemy_spiteful",      "{!}Unused"), 
+  ("comment_you_raided_my_village_enemy_coldblooded",   "{!}Unused"), 
+  ("comment_you_raided_my_village_enemy",              "{!}Unused"), 
+  ("comment_you_raided_my_village_unfriendly_spiteful", "{!}Unused"), 
+  ("comment_you_raided_my_village_friendly",            "{!}Unused"), 
+  ("comment_you_raided_my_village_default",             "{!}Unused"), 
 
-  ("comment_you_robbed_my_village_enemy_coldblooded", "Unused"), 
-  ("comment_you_robbed_my_village_enemy",             "Unused"), 
-  ("comment_you_robbed_my_village_friendly_spiteful", "Unused"), 
-  ("comment_you_robbed_my_village_friendly",          "Unused"), 
-  ("comment_you_robbed_my_village_default",          "Unused"), 
+  ("comment_you_robbed_my_village_enemy_coldblooded", "{!}Unused"), 
+  ("comment_you_robbed_my_village_enemy",             "{!}Unused"), 
+  ("comment_you_robbed_my_village_friendly_spiteful", "{!}Unused"), 
+  ("comment_you_robbed_my_village_friendly",          "{!}Unused"), 
+  ("comment_you_robbed_my_village_default",          "{!}Unused"), 
 
-  ("comment_you_accosted_my_caravan_enemy",          "Unused"), 
-  ("comment_you_accosted_my_caravan_default",        "Unused"), 
+  ("comment_you_accosted_my_caravan_enemy",          "{!}Unused"), 
+  ("comment_you_accosted_my_caravan_default",        "{!}Unused"), 
 
-  ("comment_you_helped_villagers_benevolent",                "Unused"), 
-  ("comment_you_helped_villagers_friendly_cruel",            "Unused"), 
-  ("comment_you_helped_villagers_friendly",                  "Unused"), 
-  ("comment_you_helped_villagers_unfriendly_spiteful",       "Unused"), 
-  ("comment_you_helped_villagers_cruel",                     "Unused"), 
-  ("comment_you_helped_villagers_default",                   "Unused"), 
+  ("comment_you_helped_villagers_benevolent",                "{!}Unused"), 
+  ("comment_you_helped_villagers_friendly_cruel",            "{!}Unused"), 
+  ("comment_you_helped_villagers_friendly",                  "{!}Unused"), 
+  ("comment_you_helped_villagers_unfriendly_spiteful",       "{!}Unused"), 
+  ("comment_you_helped_villagers_cruel",                     "{!}Unused"), 
+  ("comment_you_helped_villagers_default",                   "{!}Unused"), 
 
 
 #Combat-related events
@@ -1527,9 +1527,9 @@ You can press TAB anytime to leave the tutorial."),
   ("comment_you_captured_a_castle_allied_unfriendly",          "I heard that you have besieged and taken {s51}. Whatever our differences in the past, I must offer you my congratulations."), 
   ("comment_you_captured_a_castle_allied",                     "I heard that you have besieged and taken {s51}. We have them on the run!"), 
 
-  ("comment_you_captured_my_castle_enemy_spiteful",            "Unused"), 
-  ("comment_you_captured_my_castle_enemy_chivalrous",         "Unused"), 
-  ("comment_you_captured_my_castle_enemy",                     "Unused"), 
+  ("comment_you_captured_my_castle_enemy_spiteful",            "{!}Unused"), 
+  ("comment_you_captured_my_castle_enemy_chivalrous",         "{!}Unused"), 
+  ("comment_you_captured_my_castle_enemy",                     "{!}Unused"), 
 
 ###Add some variation to these
   ("comment_we_defeated_a_lord_unfriendly_spiteful",           "I suppose you will want to drink to the memory of our victory over {s54}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces."), 
@@ -1620,10 +1620,10 @@ You can press TAB anytime to leave the tutorial."),
   ("comment_you_defeated_my_friend_enemy_spiteful",   "Your fame runs before you, {playername}. {s54} may have fallen for your tricks, but if you fight me, you'll find a me a much more slippery foe."), 
   ("comment_you_defeated_my_friend_enemy",            "They say that you have defeated {s54}. But I will be a truer test of your skill at arms."), 
 
-  ("comment_you_captured_a_lord_allied_friendly_spiteful",   "Unused"), 
-  ("comment_you_captured_a_lord_allied_unfriendly_spiteful", "Unused"), 
-  ("comment_you_captured_a_lord_allied_chivalrous",          "Unused"), 
-  ("comment_you_captured_a_lord_allied",                     "Unused"), 
+  ("comment_you_captured_a_lord_allied_friendly_spiteful",   "{!}Unused"), 
+  ("comment_you_captured_a_lord_allied_unfriendly_spiteful", "{!}Unused"), 
+  ("comment_you_captured_a_lord_allied_chivalrous",          "{!}Unused"), 
+  ("comment_you_captured_a_lord_allied",                     "{!}Unused"), 
 
   ("comment_you_let_go_a_lord_allied_chivalrous",            "I heard that you captured {s54}, but then let him go. Such chivalry does a credit to our cause."),
   ("comment_you_let_go_a_lord_allied_upstanding",            "I heard that you captured {s54}, but then let him go. Well, that was an honourable course of action, if possibly also a dangerous one."),
@@ -1640,38 +1640,38 @@ You can press TAB anytime to leave the tutorial."),
 
 
 #Internal faction events
-  ("comment_pledged_allegiance_allied_martial_unfriendly",             "Unused"), 
-  ("comment_pledged_allegiance_allied_martial",                        "Unused"), 
-  ("comment_pledged_allegiance_allied_quarrelsome_unfriendly",         "Unused"), 
-  ("comment_pledged_allegiance_allied_quarrelsome",                    "Unused"), 
-  ("comment_pledged_allegiance_allied_selfrighteous_unfriendly",       "Unused"), 
-  ("comment_pledged_allegiance_allied_selfrighteous",                  "Unused"), 
-  ("comment_pledged_allegiance_allied_cunning_unfriendly",             "Unused"), 
-  ("comment_pledged_allegiance_allied_cunning",                        "Unused"), 
-  ("comment_pledged_allegiance_allied_debauched_unfriendly",           "Unused"), 
-  ("comment_pledged_allegiance_allied_debauched",                      "Unused"), 
-  ("comment_pledged_allegiance_allied_goodnatured_unfriendly",         "Unused"), 
-  ("comment_pledged_allegiance_allied_goodnatured",                    "Unused"), 
-  ("comment_pledged_allegiance_allied_upstanding_unfriendly",          "Unused"), 
-  ("comment_pledged_allegiance_allied_upstanding",                     "Unused"), 
+  ("comment_pledged_allegiance_allied_martial_unfriendly",             "{!}Unused"), 
+  ("comment_pledged_allegiance_allied_martial",                        "{!}Unused"), 
+  ("comment_pledged_allegiance_allied_quarrelsome_unfriendly",         "{!}Unused"), 
+  ("comment_pledged_allegiance_allied_quarrelsome",                    "{!}Unused"), 
+  ("comment_pledged_allegiance_allied_selfrighteous_unfriendly",       "{!}Unused"), 
+  ("comment_pledged_allegiance_allied_selfrighteous",                  "{!}Unused"), 
+  ("comment_pledged_allegiance_allied_cunning_unfriendly",             "{!}Unused"), 
+  ("comment_pledged_allegiance_allied_cunning",                        "{!}Unused"), 
+  ("comment_pledged_allegiance_allied_debauched_unfriendly",           "{!}Unused"), 
+  ("comment_pledged_allegiance_allied_debauched",                      "{!}Unused"), 
+  ("comment_pledged_allegiance_allied_goodnatured_unfriendly",         "{!}Unused"), 
+  ("comment_pledged_allegiance_allied_goodnatured",                    "{!}Unused"), 
+  ("comment_pledged_allegiance_allied_upstanding_unfriendly",          "{!}Unused"), 
+  ("comment_pledged_allegiance_allied_upstanding",                     "{!}Unused"), 
 
 
-  ("comment_our_king_granted_you_a_fief_allied_friendly_cruel",     "Unused"), 
-  ("comment_our_king_granted_you_a_fief_allied_friendly_cynical",   "Unused"), 
+  ("comment_our_king_granted_you_a_fief_allied_friendly_cruel",     "{!}Unused"), 
+  ("comment_our_king_granted_you_a_fief_allied_friendly_cynical",   "{!}Unused"), 
 
-  ("comment_our_king_granted_you_a_fief_allied_friendly",              "Unused"), 
-  ("comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding", "Unused"), 
-  ("comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful",   "Unused"), 
-  ("comment_our_king_granted_you_a_fief_allied_spiteful",             "Unused"), 
+  ("comment_our_king_granted_you_a_fief_allied_friendly",              "{!}Unused"), 
+  ("comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding", "{!}Unused"), 
+  ("comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful",   "{!}Unused"), 
+  ("comment_our_king_granted_you_a_fief_allied_spiteful",             "{!}Unused"), 
 
-  ("comment_our_king_granted_you_a_fief_allied",                       "Unused"), 
+  ("comment_our_king_granted_you_a_fief_allied",                       "{!}Unused"), 
 
-  ("comment_you_renounced_your_alliegance_enemy_friendly",             "Unused"), 
-  ("comment_you_renounced_your_alliegance_friendly",                  "Unused"), 
-  ("comment_you_renounced_your_alliegance_unfriendly_spiteful",        "Unused"), 
-  ("comment_you_renounced_your_alliegance_unfriendly_moralizing",      "Unused"), 
-  ("comment_you_renounced_your_alliegance_enemy",                      "Unused"), 
-  ("comment_you_renounced_your_alliegance_default",                    "Unused"), 
+  ("comment_you_renounced_your_alliegance_enemy_friendly",             "{!}Unused"), 
+  ("comment_you_renounced_your_alliegance_friendly",                  "{!}Unused"), 
+  ("comment_you_renounced_your_alliegance_unfriendly_spiteful",        "{!}Unused"), 
+  ("comment_you_renounced_your_alliegance_unfriendly_moralizing",      "{!}Unused"), 
+  ("comment_you_renounced_your_alliegance_enemy",                      "{!}Unused"), 
+  ("comment_you_renounced_your_alliegance_default",                    "{!}Unused"), 
 
 
   ("personality_archetypes",   "liege"),
@@ -1911,15 +1911,15 @@ You can press TAB anytime to leave the tutorial."),
 
 
 
-  ("credits_1", "Mount&Blade Copyright 2001-2008 Taleworlds Entertainment"),
-  ("credits_2", "Game design:^Armagan Yavuz^Steve Negus^Cem Cimenbicer"),
-  ("credits_3", "Programming:^Armagan Yavuz^Cem Cimenbicer"),
-  ("credits_4", "CG Artists:^Ipek Yavuz^Ozgur Saral^Mustafa Ozturk"),
-  ("credits_8", "Animation:^Pinar Cekic^Umit Singil"),
-  ("credits_5", "Concept Artist:^Ganbat Badamkhand"),
-  ("credits_6", "Writing:^Steve Negus^Ryan A. Span^Armagan Yavuz"),
-  ("credits_9", "Original Music:^Jesse Hopkins"),
-  ("credits_7", "Additional Modeling:^Hilmi Aric^Ahmet Sarisakal^Katie Beedham^^^Additional Writing:^Michael Buhler^Patrick Desjardins^^^Voice Talents:^Tassilo Egloffstein^Jade E Henderson^^^\
+  ("credits_1", "{!}Mount&Blade Copyright 2001-2008 Taleworlds Entertainment"),
+  ("credits_2", "{!}Game design:^Armagan Yavuz^Steve Negus^Cem Cimenbicer"),
+  ("credits_3", "{!}Programming:^Armagan Yavuz^Cem Cimenbicer"),
+  ("credits_4", "{!}CG Artists:^Ipek Yavuz^Ozgur Saral^Mustafa Ozturk"),
+  ("credits_8", "{!}Animation:^Pinar Cekic^Umit Singil"),
+  ("credits_5", "{!}Concept Artist:^Ganbat Badamkhand"),
+  ("credits_6", "{!}Writing:^Steve Negus^Ryan A. Span^Armagan Yavuz"),
+  ("credits_9", "{!}Original Music:^Jesse Hopkins"),
+  ("credits_7", "{!}Additional Modeling:^Hilmi Aric^Ahmet Sarisakal^Katie Beedham^^^Additional Writing:^Michael Buhler^Patrick Desjardins^^^Voice Talents:^Tassilo Egloffstein^Jade E Henderson^^^\
 Original Music Composed by:^Jesse Hopkins^\
 Violin Solos Performed by:^Zoriy Zinger^\
 Main Theme and Scherzo Performed by:^The Russian State Symphony Cinema Orchestra, Conducted by Sergei Skripka^^^\
@@ -2096,17 +2096,17 @@ This list has been compiled by sampling only a few threads in the Taleworlds For
 Unfortunately compiling an exhaustive list is almost impossible.^\
 We apologize sincerely if you contributed your suggestions and feedback but were not listed here, and please know that we are grateful to you all the same...)\
 "),
-  ("credits_10", "Paradox Interactive^^President and CEO:^Theodore Bergqvist^^Executive Vice President:^Fredrik Wester\
+  ("credits_10", "{!}Paradox Interactive^^President and CEO:^Theodore Bergqvist^^Executive Vice President:^Fredrik Wester\
 ^^Chief Financial Officer:^Lena Eriksson^^Finance & Accounting:^Annlouise Larsson^^VP Sales & Marketing US:^Reena M. Miranda\
 ^^VP Sales & Marketing EU:^Martin Sirc^^Distribution Manager Nordic:^Erik Helmfridsson^^Director of PR & Marketing:^Susana Meza\
 ^^PR & Marketing:^Sofia Forsgren^^Product Manager:^Boel Bermann\
 "),
-  ("credits_11", "Logotype:^Jason Brown^^Cover Art:^Piotr Fox Wysocki\
+  ("credits_11", "{!}Logotype:^Jason Brown^^Cover Art:^Piotr Fox Wysocki\
 ^^Layout:^Christian Sabe^Melina Grundel^^Poster:^Piotr Fox Wysocki^^Map & Concept Art:^Ganbat Badamkhand\
 ^^Manual Editing:^Digital Wordsmithing: Ryan Newman, Nick Stewart^^Web:^Martin Ericsson^^Marketing Assets:^2Coats\
 ^^Localization:^S&H Entertainment Localization^^GamersGate:^Ulf Hedblom^Andreas Pousette^Martin Ericson^Christoffer Lindberg\
 "),
-  ("credits_12", "Thanks to all of our partners worldwide, in particular long-term partners:\
+  ("credits_12", "{!}Thanks to all of our partners worldwide, in particular long-term partners:\
 ^Koch Media (Germany & UK)^Blue Label (Italy & France)^Friendware (Spain)^New Era Interactive Media Co. Ltd. (Asia)\
 ^Snowball (Russia)^Pinnacle (UK)^Porto Editora (Portugal)^Hell-Tech (Greece)^CD Projekt (Poland, Czech Republic, Slovakia & Hungary)\
 ^Paradox Scandinavian Distribution (Scandinavia)\
@@ -2123,7 +2123,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
  ("faction_strength_quite strong"      , "quite strong"),
  ("faction_strength_very strong"       , "very strong"),
  ("faction_strength_unmatched"         , "unmatched"),
- ("faction_strength_last"       , "INVALID"),
+ ("faction_strength_last"       , "{!}INVALID"),
 
 # TLD theater names
  ("theater_SE", "Gondor"),
@@ -3026,7 +3026,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 # END Gifts
 
 ("cmenu_follow", "Accompany"),
-("fake_party",   "TLD temp terrain finder, you shouldn't be seeing this in a savegame [!]"),
+("fake_party",   "{!}TLD temp terrain finder, you shouldn't be seeing this in a savegame [!]"),
 
 ("reset_to_default", "Reset to Default"),
 ("done", "Done"),
@@ -3133,7 +3133,7 @@ The Elves huddle in their caves to the north. Most will not come out to protect 
 Your people will fight, as you always have, to keep the Ford and the forest safe. With a stout stick in your hands, you will smash any orcs that dare intrude. And if it should come to greater blows, why, many among your people are more than they seem…^^\
 But if even the grim battle-strength of the Beornings should fail, then the world will know no more the joy of sweet honey, bright flowers, shady forest paths and all things good. All will fall beneath the Shadow."),
 
-("intro_strings_end", "Intro END"),
+("intro_strings_end", "{!}Intro END"),
 
 ("gondor_intro_2","^While travelling to swear service to your liege lord, you chance upon a caravan being attacked by orcs."),
 ("dwarf_intro_2","^On your way to the gates of Erebor, you chance upon a caravan being attacked by orcs."),
@@ -3156,7 +3156,7 @@ As you walk through a wooded vale, a sudden small rustling makes you stop. You h
 ("dunland_intro_2","^On your way to the main battle-camp of your people, you chance upon some orcs raiding a caravan."),
 ("beorn_intro_2", "^On your way to Beorn’s House, you come upon some allies preparing to ambush a company of Orcs."),
 
-("intro_strings_2_end", "Intro 2 END"),
+("intro_strings_2_end", "{!}Intro 2 END"),
 
 ("gondor_faction_intro","^The South Kingdom of Gondor, “land of stone” in Sindarin, is inhabited by descendants of the ancient Númenoreans. Under the rule of Steward Denethor, these proud men stand as the first and perhaps last line of defence against the Enemy.^^\
 Gondor’s military consists of forces coming from all the different fiefdoms. You get the standard army with solid and well-armoured troops overall: Dol Amroth’s heavy cavalry, green-clad archers and spearmen from Pinnath Gelin, bowmen from the Blackroot Vale, axemen of Lossarnach, heavy marines from Pelargir or hardened clansmen of Lamedon."),
@@ -3213,7 +3213,7 @@ Dunland is barren and poor. The Dunlendings wear very little real armour – mos
 As woodsmen, they wield stout sticks and sharp axes, but wear little in the way of armour. Heavier Beorning infantry fight with shields as well. Beorning foresters are skilled bowmen and provide a valuable archer line."),
 
 
-("intro_faction_intro_strings_end", "faction intro END"),
+("intro_faction_intro_strings_end", "{!}faction intro END"),
 
 
 ("gondor_extra_info","Good^^Hard^^Gondor (South-East)^^Prince Imrahil^^Mordor, Umbar, Khand, Harad"),
@@ -3235,7 +3235,7 @@ As woodsmen, they wield stout sticks and sharp axes, but wear little in the way 
 ("dunland_extra_info","Saruman^^Hard^^Rohan (South-West)^^Chief Daeglaf the Black^^Rohan"),
 ("beorn_extra_info", "Good^^Hard^^North Rhovanion (North)^^Chief_Grimbeorn_the_Old^^Rhun, Gundabad"),
 
-("intro_strings_extra_end", "Intro EXTRA END"),
+("intro_strings_extra_end", "{!}Intro EXTRA END"),
 
 ("gundabad_intro", "You have come from the far north, from the lands of long-lost Angmar, after receiving tidings of the war to come. For years beyond count you and your folk have broken many dwarf shields with your axes and spears, crushed many broken bodies of men and elves below the claws of your fierce wargs, skinned the hides of the bear-people to wear as furs. The great halls of Gundabad in the Misty Mountains are now yours once again, as they were in the time of Bolg and Azog.^^\
 Many of you have perished over the years, somemany of them slain in these very halls and tunnels - but many still remain. Great sport you have had with the greedy little diggers and their friends, in the past - and greater sport you will have now, when you march upon them and take everything for yourselves!^^\
@@ -3260,19 +3260,19 @@ Even in the last case, the player can make formations up to four lines by orderi
 
 #Dale Walker Customization strings
 
-("dale_coat", "dale_coat"),
-("dale_coat_2", "dale_coat_2"),
-("dale_coat_3", "dale_coat_3"),
-("tld_wear", "tld_wear"),
-("tld_wear_2", "tld_wear_2"),
-("tld_wear_3", "tld_wear_3"),
-("dale_coat_end", "dale_coat_end"),
+("dale_coat", "{!}dale_coat"),
+("dale_coat_2", "{!}dale_coat_2"),
+("dale_coat_3", "{!}dale_coat_3"),
+("tld_wear", "{!}tld_wear"),
+("tld_wear_2", "{!}tld_wear_2"),
+("tld_wear_3", "{!}tld_wear_3"),
+("dale_coat_end", "{!}dale_coat_end"),
 
 #Female Materials
-("rhunarmortexture_fem", "rhunarmortexture_fem"),
-("female_mats_end", "female_mats_end"),
-("beornings_female", "beornings_female"),
-("khand_light_fem", "khand_light_fem"),
+("rhunarmortexture_fem", "{!}rhunarmortexture_fem"),
+("female_mats_end", "{!}female_mats_end"),
+("beornings_female", "{!}beornings_female"),
+("khand_light_fem", "{!}khand_light_fem"),
 
 
 #New Companion Strings
@@ -3615,7 +3615,7 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("npc26_honorific", "Master"),
 ("npc27_honorific", "Master"),
 
-("new_companion_strings_end", "INVALID"),
+("new_companion_strings_end", "{!}INVALID"),
 
 
 ## Companion Guildmaster Tip Offs Begin
@@ -3772,11 +3772,11 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("fullname_region_n_anduin_vale", "the northern Vale of Anduin, north of the Carrock"),
 ("fullname_region_s_anduin_vale", "the southern Vale of Anduin, between Lorien and the Undeeps"),
 ("fullname_region_cair_andros", "Cair Andros, the great ship-like island of Anduin"),
-("fullname_region_stub_1", "unused"),
-("fullname_region_stub_2", "unused"),
-("fullname_region_stub_3", "unused"),
-("fullname_region_stub_4", "unused"),
-("fullname_region_stub_5", "unused"),
+("fullname_region_stub_1", "{!}unused"),
+("fullname_region_stub_2", "{!}unused"),
+("fullname_region_stub_3", "{!}unused"),
+("fullname_region_stub_4", "{!}unused"),
+("fullname_region_stub_5", "{!}unused"),
 
 ("shortname_region_rhun", "East Rhovanion"),
 ("shortname_region_erebor", "the foothills of Erebor"),
@@ -3787,11 +3787,11 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("shortname_region_n_anduin_vale", "the northern Vale of Anduin"),
 ("shortname_region_s_anduin_vale", "the southern Vale of Anduin"),
 ("shortname_region_cair_andros", "Cair Andros"),
-("shortname_region_stub_1", "unused"),
-("shortname_region_stub_2", "unused"),
-("shortname_region_stub_3", "unused"),
-("shortname_region_stub_4", "unused"),
-("shortname_region_stub_5", "unused"),
+("shortname_region_stub_1", "{!}unused"),
+("shortname_region_stub_2", "{!}unused"),
+("shortname_region_stub_3", "{!}unused"),
+("shortname_region_stub_4", "{!}unused"),
+("shortname_region_stub_5", "{!}unused"),
 
 #More missing guildmaster companion dialog
 ("isengard_hunting_camp_guildmaster_player_found_ok", "If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!"),
