@@ -1059,7 +1059,7 @@ itm_sarustaff = (itm_beorn_staff, imod_tattered)
  
 troops = [
 ["player","Player","Player",tf_hero|tf_unmoveable_in_party_window,0,0,fac_player_faction,[],      str_4|agi_4|int_4|cha_4,wp(15),0,0x000000018000004136db6db6db6db6db00000000001db6db0000000000000000],
-["temp_troop","{!}Temp_Troop","Temp_Troop",tf_hero,0,0,fac_commoners,[],0,0,knows_common|knows_inventory_management_10,0],
+["temp_troop","{!}Temp_Troop","{!}Temp_Troop",tf_hero,0,0,fac_commoners,[],0,0,knows_common|knows_inventory_management_10,0],
 ["game","{!}Game","{!}Game",tf_hero,0,0,fac_commoners, [],0,0,0,0],
 ["unarmed_troop","{!}Unarmed_Troop","{!}Unarmed_Troops",tf_hero,0,0,fac_commoners,[itm_arrows,itm_short_bow],def_attrib|str_14,0,knows_common|knows_power_draw_2,0],
 ####################################################################################################################
@@ -3299,7 +3299,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 ## Kham Amath Dollen's Troops
 
-["black_shield","Amath_Dollen","-",tf_hero| tf_evil_man| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rhun,
+["black_shield","Amath_Dollen","{!}",tf_hero| tf_evil_man| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rhun,
    [itm_corsair_boots,itm_evil_gauntlets_a,itm_m_uruk_heavy_a,itm_rhun_helm_barbed,itm_rhun_sword,itm_mordor_uruk_shield_a,],
       attr_tier_5,wp_tier_6,knows_common|knows_athletics_7|knows_shield_7|knows_power_strike_7|knows_ironflesh_7,0x000000003f00b30d2d2ea72ac902553500000000001d42300000000000000000],
 
@@ -3337,7 +3337,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 ## Kham - Volunteers
 
-["volunteers","--- Reserves ---:","{!}", tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
+["volunteers","{!}--- Reserves ---:","{!}", tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
    [itm_warg_ghost_armour,itm_empty_hands,itm_empty_legs,itm_empty_head],
       str_255|level(80),wp(5),knows_shield_10|knows_ironflesh_10,0,0],
 
@@ -3394,10 +3394,10 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 # Malleable Hero Troops for Quests / Triggers
 
-["generic_hero_infantry","{!}generic_hero_infantry","generic_hero_infantry",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
-["generic_hero_ranged","{!}generic_hero_ranged","generic_hero_ranged",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,orc_face5,orc_face4],
-["generic_hero_knight","{!}generic_hero_knight","generic_hero_knight",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
-["generic_hero_mounted_archer","{!}generic_hero_mounted_archer","generic_hero_mounted_archer",tf_hero|tf_male|tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["generic_hero_infantry","{!}generic_hero_infantry","{!}generic_hero_infantry",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["generic_hero_ranged","{!}generic_hero_ranged","{!}generic_hero_ranged",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,orc_face5,orc_face4],
+["generic_hero_knight","{!}generic_hero_knight","{!}generic_hero_knight",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["generic_hero_mounted_archer","{!}generic_hero_mounted_archer","{!}generic_hero_mounted_archer",tf_hero|tf_male|tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2|knows_riding_4,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
 
 # New Companions Begin
 
@@ -3495,19 +3495,19 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,orc_face2],
 
 #for future bandits
-["future_troop_6","Mountain_Goblin","Mountain_Goblins",tf_orc| tf_no_capture_alive,0,0,fac_tribal_orcs,
+["future_troop_6","{!}Mountain_Goblin","{!}Mountain_Goblins",tf_orc| tf_no_capture_alive,0,0,fac_tribal_orcs,
    [itm_orc_tribal_a,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_orc_shield_a,itm_orc_shield_b,itm_orc_shield_c,itm_orc_ragwrap,itm_bone_cudgel_heavy,itm_twohand_wood_club,itm_bone_cudgel,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_3|knows_power_strike_2,orc_face3,orc_face4],
-["future_troop_7","Tribal_Orc","Tribal_Orcs",tf_orc| tf_no_capture_alive,0,0,fac_tribal_orcs,
+["future_troop_7","{!}Tribal_Orc","{!}Tribal_Orcs",tf_orc| tf_no_capture_alive,0,0,fac_tribal_orcs,
    [itm_orc_tribal_a,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_bone_cudgel_heavy,itm_bone_cudgel,itm_twohand_wood_club,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,],
       attr_orc_tier_1,wp_orc_tier_1,knows_athletics_3,orc_face1,orc_face2],
-["future_troop_8","Tribal_Orc_Warrior","Tribal_Orc_Warriors",tf_orc| tfg_armor| tf_no_capture_alive,0,0,fac_tribal_orcs,
+["future_troop_8","{!}Tribal_Orc_Warrior","{!}Tribal_Orc_Warriors",tf_orc| tfg_armor| tf_no_capture_alive,0,0,fac_tribal_orcs,
    [itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_bone_cudgel_heavy,itm_bone_cudgel,itm_wood_club,itm_twohand_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_4,orc_face7,orc_face6],	
-["future_troop_9","Tribal_Orc_Chief","Tribal_Orc_Chiefs",tf_orc| tfg_armor| tfg_helm| tf_no_capture_alive,0,0,fac_tribal_orcs,
+["future_troop_9","{!}Tribal_Orc_Chief","{!}Tribal_Orc_Chiefs",tf_orc| tfg_armor| tfg_helm| tf_no_capture_alive,0,0,fac_tribal_orcs,
    [itm_orc_coif,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_bone_cudgel_heavy,itm_bone_cudgel,itm_orc_sabre,itm_orc_simple_spear,itm_orc_ragwrap,itm_orc_slasher,],
 attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,orc_face2],
-["future_troop_10","Tribal_Orc_Chief","Tribal_Orc_Chiefs",tf_orc| tfg_armor| tfg_helm| tf_no_capture_alive,0,0,fac_tribal_orcs,
+["future_troop_10","{!}Tribal_Orc_Chief","{!}Tribal_Orc_Chiefs",tf_orc| tfg_armor| tfg_helm| tf_no_capture_alive,0,0,fac_tribal_orcs,
    [itm_orc_coif,itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_bone_cudgel_heavy,itm_bone_cudgel,itm_orc_sabre,itm_orc_simple_spear,itm_orc_ragwrap,itm_orc_slasher,],
 attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,orc_face2],
 

@@ -3921,7 +3921,7 @@ simple_triggers = [
             (gt, ":fac_strength", 5000),
             (neg|faction_slot_eq, fac_rohan, slot_faction_marshall, "trp_rohan_lord"),
             (faction_set_slot, "fac_rohan", slot_faction_marshall, "trp_rohan_lord"), 
-            (display_message, "@Theoden activated"),
+            (display_message, "@{!}Theoden activated"),
             (le, ":fac_strength", 3000),
             (faction_get_slot,":fac_strength","fac_rohan",slot_faction_strength_tmp),
             (val_add, ":fac_strength", 1000),

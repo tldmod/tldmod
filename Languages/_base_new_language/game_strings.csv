@@ -1,13 +1,6 @@
-str_no_string|NO STRING!
-str_empty_string| 
 str_yes|Yes.
 str_no|No.
-str_blank_string| 
-str_error_string|ERROR!!!ERROR!!!!ERROR!!!ERROR!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!ERROR!!!ERROR!!!!!
 str_noone|no one
-str_s0|{s0}
-str_blank_s1| {s1}
-str_reg1|{reg1}
 str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} and {s51}
 str_s5_s_party| {s5}'s Party
@@ -18,24 +11,6 @@ str_s7_raiders|{s7} Raiders
 str_bandits_eliminated_by_another|The troublesome bandits have been eliminated by another party.
 str_msg_battle_won|Battle won! Press tab key to leave...
 str_tutorial_map1|You are now viewing the overland map. Left-click on the map to move your party to that location, enter the selected town, or pursue the selected party. Time will pause on the overland map if your party is not moving, waiting or resting. To wait anywhere simply press and hold down the space bar.
-str_change_color_1|Change Color 1
-str_change_color_2|Change Color 2
-str_change_background|Change Background Pattern
-str_change_flag_type|Change Flag Type
-str_change_map_flag_type|Change Map Flag Type
-str_randomize|Randomize
-str_sample_banner|Sample banner:
-str_sample_map_banner|Sample map banner:
-str_number_of_charges|Number of charges:
-str_change_charge_1|Change Charge 1
-str_change_charge_1_color|Change Charge 1 Color
-str_change_charge_2|Change Charge 2
-str_change_charge_2_color|Change Charge 2 Color
-str_change_charge_3|Change Charge 3
-str_change_charge_3_color|Change Charge 3 Color
-str_change_charge_4|Change Charge 4
-str_change_charge_4_color|Change Charge 4 Color
-str_change_charge_position|Change Charge Position
 str_choose_position|Choose position:
 str_choose_charge|Choose a charge:
 str_choose_background|Choose background pattern:
@@ -43,17 +18,8 @@ str_choose_flag_type|Choose flag type:
 str_choose_map_flag_type|Choose map flag type:
 str_choose_color|Choose color:
 str_accept|Accept
-str_charge_no_1|Charge #1:
-str_charge_no_2|Charge #2:
-str_charge_no_3|Charge #3:
-str_charge_no_4|Charge #4:
-str_change|Change
-str_plus|+
-str_minus|-
-str_color_no_1|Color #1:
-str_color_no_2|Color #2:
 str_charge|Charge
-str_color|Color
+str_color|{Color
 str_flip_horizontal|Flip Horizontal
 str_flip_vertical|Flip Vertical
 str_hold_fire|Hold Fire
@@ -533,7 +499,6 @@ str_surname_38|{s50} the Quick
 str_surname_39|{s50} the Minstrel
 str_surname_40|{s50} the Bold
 str_surname_41|{s50} the Hot-Head
-str_surnames_end|surnames end
 str_number_of_troops_killed_reg1|Number of troops killed: {reg1}
 str_number_of_troops_wounded_reg1|Number of troops wounded: {reg1}
 str_number_of_own_troops_killed_reg1|Number of friendly troops killed: {reg1}
@@ -544,16 +509,6 @@ str_casualty_display|Your casualties: {s10}^Enemy casualties: {s11}{s12}
 str_casualty_display_hp|^You were wounded for {reg1} hit points.
 str_quest_log_updated|Quest log has been updated...
 str_banner_selection_text|You have been awarded the right to carry a banner. Your banner will signify your status and bring you honour. Which banner do you want to choose?
-str_retirement_text_1|Unused
-str_retirement_text_2|Unused
-str_retirement_text_3|Unused
-str_retirement_text_4|Unused
-str_retirement_text_5|Unused
-str_retirement_text_6|Unused
-str_retirement_text_7|Unused
-str_retirement_text_8|Unused
-str_retirement_text_9|Unused
-str_retirement_text_10|Unused
 str_loot_village|attack innocent villagers
 str_steal_from_villagers|steal from poor villagers
 str_rob_caravan|rob a merchant caravan
@@ -846,35 +801,13 @@ str_npc2_morality_speech|I hope you don't mind my saying so, but it's a bit hard
 str_npc3_morality_speech|Commander, we Eorlingas never {s21}. Our horses don't tire easily and, once we regroup, there is no situation a well-timed charge can't decide in our favour. Take heed the next time we battle against the odds.
 str_npc4_morality_speech|Take no heed to what the soldiers say, sometimes to {s21} is the wisest course of action. I for one appreciate the lives spared and limbs unbroken, if for nothing else but to fight another day, when fate looks upon us with favor.
 str_npc5_morality_speech|You must reconsider your actions, commander. To {s21} makes us no more honourable than the Enemy and diminishes the confidence of our friends.
-str_npc6_morality_speech|[No primary moral code]
 str_npc7_morality_speech|I was not pleased that you decided to {s21}. To fall in battle is an honour for any right-thinking dwarf, but to fight in a company led by a coward is a disgrace. What will my cousins say if they learn of this?
 str_npc8_morality_speech|Commander, I must object. To {s21} is harsh on the men and unnecessary. I do what I can to ease their suffering, but please don't make another costly mistake.
 str_npc9_morality_speech|The fighting Uruk-hai don't {s21}. If the Master has little guts, he might find himself without them one night. Gulm has spoken.
-str_npc10_morality_speech|[No primary moral code]
-str_npc11_morality_speech|[No primary moral code]
-str_npc12_morality_speech|[No primary moral code]
-str_npc13_morality_speech|[No primary moral code]
-str_npc14_morality_speech|[No primary moral code]
 str_npc15_morality_speech|You may think that Bolzog the Great can cure all, {playername}, but even I have my limits! If you continue to {s21} even my talent will struggle! You must give me some support! I cannot resurrect the dead, whether they starve or are hacked to pieces!
-str_npc16_morality_speech|[No primary moral code]
-str_npc17_morality_speech|[No primary moral code]
 str_npc1_2ary_morality_speech|Captain, I have been raised as a Dúnadan, both in valor and honour. I would prefer if we don't {s21}.
-str_npc2_2ary_morality_speech|[No secondary moral code]
-str_npc3_2ary_morality_speech|[No secondary moral code]
 str_npc4_2ary_morality_speech|Your pardon, commander. Women of my station will accept death but not dishonour. To {s21} brings shame to my house and ancestors.
-str_npc5_2ary_morality_speech|[No secondary moral code]
-str_npc6_2ary_morality_speech|[No secondary moral code]
-str_npc7_2ary_morality_speech|[No secondary moral code]
-str_npc8_2ary_morality_speech|[No secondary moral code]
-str_npc9_2ary_morality_speech|[No secondary moral code]
-str_npc10_2ary_morality_speech|[No secondary moral code]
-str_npc11_2ary_morality_speech|[No secondary moral code]
-str_npc12_2ary_morality_speech|[No secondary moral code]
-str_npc13_2ary_morality_speech|[No secondary moral code]
-str_npc14_2ary_morality_speech|[No secondary moral code]
 str_npc15_2ary_morality_speech|Hi-hi-hi! You are cunning, Oh Lord! You take the gold, and nod, and say 'yes master' but all the time you planned this! Hi-Hi! Only, we must be careful, that The Big One does not see you deceiving him...
-str_npc16_2ary_morality_speech|[No secondary moral code]
-str_npc17_2ary_morality_speech|[No secondary moral code]
 str_npc1_personalityclash_speech|Did I mention I hate {s11}?
 str_npc2_personalityclash_speech|Did I mention I hate {s11}?
 str_npc3_personalityclash_speech|Commander, how come we ended up with {s11} in our company? He's nimble enough on foot, I reckon, but he talks of ambushes too often for my liking - not unlike the cautious nature of his people.
@@ -1096,60 +1029,11 @@ str_npc14_honorific|Captain
 str_npc15_honorific|Master
 str_npc16_honorific|Chieftain
 str_npc17_honorific|Chief
-str_companion_strings_end|INVALID
-str_comment_intro_liege_affiliated|Unused
-str_comment_intro_famous_liege|Unused
-str_comment_intro_famous_martial|Unused
-str_comment_intro_famous_badtempered|Unused
-str_comment_intro_famous_pitiless|Unused
-str_comment_intro_famous_cunning|Unused
-str_comment_intro_famous_sadistic|Unused
-str_comment_intro_famous_goodnatured|Unused
-str_comment_intro_famous_upstanding|Unused
-str_comment_intro_noble_liege|Unused
-str_comment_intro_noble_martial|Unused
-str_comment_intro_noble_badtempered|Unused
-str_comment_intro_noble_pitiless|Unused
-str_comment_intro_noble_cunning|Unused
-str_comment_intro_noble_sadistic|Unused
-str_comment_intro_noble_goodnatured|Unused
-str_comment_intro_noble_upstanding|Unused
-str_comment_intro_common_liege|Unused
-str_comment_intro_common_martial|Unused
-str_comment_intro_common_badtempered|Unused
-str_comment_intro_common_pitiless|Unused
-str_comment_intro_common_cunning|Unused
-str_comment_intro_common_sadistic|Unused
-str_comment_intro_common_goodnatured|Unused
-str_comment_intro_common_upstanding|Unused
-str_comment_you_raided_my_village_enemy_benevolent|Unused
-str_comment_you_raided_my_village_enemy_spiteful|Unused
-str_comment_you_raided_my_village_enemy_coldblooded|Unused
-str_comment_you_raided_my_village_enemy|Unused
-str_comment_you_raided_my_village_unfriendly_spiteful|Unused
-str_comment_you_raided_my_village_friendly|Unused
-str_comment_you_raided_my_village_default|Unused
-str_comment_you_robbed_my_village_enemy_coldblooded|Unused
-str_comment_you_robbed_my_village_enemy|Unused
-str_comment_you_robbed_my_village_friendly_spiteful|Unused
-str_comment_you_robbed_my_village_friendly|Unused
-str_comment_you_robbed_my_village_default|Unused
-str_comment_you_accosted_my_caravan_enemy|Unused
-str_comment_you_accosted_my_caravan_default|Unused
-str_comment_you_helped_villagers_benevolent|Unused
-str_comment_you_helped_villagers_friendly_cruel|Unused
-str_comment_you_helped_villagers_friendly|Unused
-str_comment_you_helped_villagers_unfriendly_spiteful|Unused
-str_comment_you_helped_villagers_cruel|Unused
-str_comment_you_helped_villagers_default|Unused
 str_comment_you_captured_a_castle_allied_friendly|I heard that you have besieged and taken {s51}. That was a great dead, and I am proud to call you my friend!
 str_comment_you_captured_a_castle_allied_spiteful|I heard that you have besieged and taken {s51}. Good work! Soon, we will have all their fortresses to despoil, their treasuries to ransack, their grieving widows to serve us our wine.
 str_comment_you_captured_a_castle_allied_unfriendly_spiteful|I heard that you have besieged and taken {s51}. Well, every dog has his day, or so they say. Enjoy it while you can, until your betters kick you back out in the cold where you belong.
 str_comment_you_captured_a_castle_allied_unfriendly|I heard that you have besieged and taken {s51}. Whatever our differences in the past, I must offer you my congratulations.
 str_comment_you_captured_a_castle_allied|I heard that you have besieged and taken {s51}. We have them on the run!
-str_comment_you_captured_my_castle_enemy_spiteful|Unused
-str_comment_you_captured_my_castle_enemy_chivalrous|Unused
-str_comment_you_captured_my_castle_enemy|Unused
 str_comment_we_defeated_a_lord_unfriendly_spiteful|I suppose you will want to drink to the memory of our victory over {s54}. Well, save your wine -- it will take more than that to wipe out the stain of your earlier disgraces.
 str_comment_we_defeated_a_lord_unfriendly|I will not forget how we fought together against {s54}, but I can also not forget the other matters that lie between us.
 str_comment_we_defeated_a_lord_cruel|That was a great victory over {s54}, wasn't it? We made of his army a feast for the crows!
@@ -1217,10 +1101,6 @@ str_comment_you_defeated_my_friend_enemy_pragmatic|You may have bested {s54}, bu
 str_comment_you_defeated_my_friend_enemy_chivalrous|I have heard that you defeated {s54}, and ever since have been anxious to cross swords with you.
 str_comment_you_defeated_my_friend_enemy_spiteful|Your fame runs before you, {playername}. {s54} may have fallen for your tricks, but if you fight me, you'll find a me a much more slippery foe.
 str_comment_you_defeated_my_friend_enemy|They say that you have defeated {s54}. But I will be a truer test of your skill at arms.
-str_comment_you_captured_a_lord_allied_friendly_spiteful|Unused
-str_comment_you_captured_a_lord_allied_unfriendly_spiteful|Unused
-str_comment_you_captured_a_lord_allied_chivalrous|Unused
-str_comment_you_captured_a_lord_allied|Unused
 str_comment_you_let_go_a_lord_allied_chivalrous|I heard that you captured {s54}, but then let him go. Such chivalry does a credit to our cause.
 str_comment_you_let_go_a_lord_allied_upstanding|I heard that you captured {s54}, but then let him go. Well, that was an honourable course of action, if possibly also a dangerous one.
 str_comment_you_let_go_a_lord_allied_coldblooded|I heard that you captured {s54}, but then let him go. That was most chivalrous of you, but chivalry does not win wars.
@@ -1231,33 +1111,6 @@ str_comment_you_let_me_go_enemy_chivalrous|When last we met, you had me at your 
 str_comment_you_let_me_go_enemy_coldblooded|When last we met, you had me at your mercy and allowed me to go free. But we are still enemies, and I cannot promise to repay your mercy in kind.
 str_comment_you_let_me_go_enemy|When last we met, you had me at your mercy and allowed me to go free. That was kind of you. But we are still at war.
 str_comment_you_let_me_go_default|When last we met, you had me at your mercy and allowed me to go free. That was kind of you, and I am glad that our kingdoms are no longer at war.
-str_comment_pledged_allegiance_allied_martial_unfriendly|Unused
-str_comment_pledged_allegiance_allied_martial|Unused
-str_comment_pledged_allegiance_allied_quarrelsome_unfriendly|Unused
-str_comment_pledged_allegiance_allied_quarrelsome|Unused
-str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|Unused
-str_comment_pledged_allegiance_allied_selfrighteous|Unused
-str_comment_pledged_allegiance_allied_cunning_unfriendly|Unused
-str_comment_pledged_allegiance_allied_cunning|Unused
-str_comment_pledged_allegiance_allied_debauched_unfriendly|Unused
-str_comment_pledged_allegiance_allied_debauched|Unused
-str_comment_pledged_allegiance_allied_goodnatured_unfriendly|Unused
-str_comment_pledged_allegiance_allied_goodnatured|Unused
-str_comment_pledged_allegiance_allied_upstanding_unfriendly|Unused
-str_comment_pledged_allegiance_allied_upstanding|Unused
-str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|Unused
-str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|Unused
-str_comment_our_king_granted_you_a_fief_allied_friendly|Unused
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|Unused
-str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|Unused
-str_comment_our_king_granted_you_a_fief_allied_spiteful|Unused
-str_comment_our_king_granted_you_a_fief_allied|Unused
-str_comment_you_renounced_your_alliegance_enemy_friendly|Unused
-str_comment_you_renounced_your_alliegance_friendly|Unused
-str_comment_you_renounced_your_alliegance_unfriendly_spiteful|Unused
-str_comment_you_renounced_your_alliegance_unfriendly_moralizing|Unused
-str_comment_you_renounced_your_alliegance_enemy|Unused
-str_comment_you_renounced_your_alliegance_default|Unused
 str_personality_archetypes|liege
 str_martial|martial
 str_quarrelsome|bad-tempered
@@ -1450,18 +1303,6 @@ str_gossip_about_character_sadistic|They say that {s6} likes to torture his enem
 str_gossip_about_character_goodnatured|They say that {s6} is a good man and treats people living in his lands decently. That is more than what can be said for most of the nobles.
 str_gossip_about_character_upstanding|People say that it is good to be in the service of {s6}. He is good to his followers, and rewards them if they work well.
 str_latest_rumor|The latest rumor you heard about {s6} was:
-str_credits_1|Mount&Blade Copyright 2001-2008 Taleworlds Entertainment
-str_credits_2|Game design:^Armagan Yavuz^Steve Negus^Cem Cimenbicer
-str_credits_3|Programming:^Armagan Yavuz^Cem Cimenbicer
-str_credits_4|CG Artists:^Ipek Yavuz^Ozgur Saral^Mustafa Ozturk
-str_credits_8|Animation:^Pinar Cekic^Umit Singil
-str_credits_5|Concept Artist:^Ganbat Badamkhand
-str_credits_6|Writing:^Steve Negus^Ryan A. Span^Armagan Yavuz
-str_credits_9|Original Music:^Jesse Hopkins
-str_credits_7|Additional Modeling:^Hilmi Aric^Ahmet Sarisakal^Katie Beedham^^^Additional Writing:^Michael Buhler^Patrick Desjardins^^^Voice Talents:^Tassilo Egloffstein^Jade E Henderson^^^Original Music Composed by:^Jesse Hopkins^Violin Solos Performed by:^Zoriy Zinger^Main Theme and Scherzo Performed by:^The Russian State Symphony Cinema Orchestra, Conducted by Sergei Skripka^^^Sound Samples:^Audiosparx.com^^^Mount&Blade Map Editor:^Matt Stentiford^^^Taleworlds Forum Programming:^Brett Flannigan www.fenrisoft.com^^^Mount&Blade Tutorial written by:^Edward Spoerl^^^Gameplay Videos:^Jemes Muia^^^Motion Capture System:^NaturalPoint-Optitrack Arena^^^Horse Motion Capture Animation Supplied by:^Richard Widgery & Kinetic Impulse^^^Ragdoll Physics:^Newton Game Dynamics^^^Sound and Music Program Library:^FMOD Sound System by Firelight Technologies^^^Copy Protection:^Themida by Oreans Technologies^^^Skybox Textures:^Jay Weston www.hyperfocaldesign.com^^^Third Party Art Libraries Used:^Texturemonk^Mayang Textures^cgtextures.com^3d.sk^^Unofficial Mount&Blade Editor:^Josh Dahlby^^^Many thanks to Marco Tarini for the Mountain shader idea!^^^Special Thanks to:^Ibrahim Dogan^Nova Language Works^Selim Kurtulus and UPS Turkey^^^Taleworlds.com Forum Administrators and Moderators:^Janus^Archonsod^Narcissus^Nairagorn^Lost Lamb^Deus Ex^Merentha^Volkier^Okin^Instag0^Deniz^ego^Guspav^Hallequin^Invictus^okiN^Raz^rejenorst^Skyrage^ThVaz^^^Spanish Translation^^Translators:^Anabel 'Rhaenys' Diaz^Analia 'Immortality' Dobarro^Anoik^^Medieval Consultant:^Enric 'Palafoxx' Clave^^Language Tester:^Theo de Moree^^^Mount&Blade Community Suggestions and Feedback:^13 Chain Bloody Spider^Aenarion^AgentSword^Ahadhran^Albino^Allegro^allthesedamnnamesare^Amman de Stazia^Ancientwanker^Anrea 'Skree' Giongiani^Aqtai^Art Falmingaid^bryce777^Bugman^Buxton^Calandale^Cartread^Chel^Chilly5^Cirdan^Cleaning agent^Cymro^DaBlade^DaLagga^Damien^danover^Dearahn^Deathblow^Destichado^Dryvus^dunnno^D'Sparil^ealabor^Ealdormann Hussey^EasyCo506^El Duke^Elias Maluco^Eogan^ex ottoyuhr^Fisheye^Fossi^fujiwara^Fuzzpilz^GandalfTheGrey^Gerif^Grocat^Guspav^Halden The Borch shooter^Hallequin^Handel^Hardcode^Haupper^Hellequin^Highelf^Highlander^Ibrahim Turgut^Iesu^Ilex^Ingolifs^Invictus^Itchrelief^Jlgx50^JHermes^Jik^john259^JonathanStrange^jpgray^kamov23^Kayback^Khalid Ibn Walid^KON Air^Lady Tanith^Larry Knight^LavaLampMaster^Leprechaun^Lhorkan^Llew2^Maelstorm^Manitas^Maw^MAXHARDMAN^Merentha^Merlkir^Michael Elijah 'ironpants' Bell-Rao^mihoshi^Mirathei^mkeller^Momaw^Morgoth2005^MrCrotch^mtarini^n00854180t^Naridill^Nicholas AltamanokiN^oksir^Oldtimer^Ollieh^oRGy^Oubliette^Patrick 'nox' Gallaty^Pavlov^Rando^Raz^rejenorst^Rjii^Ron Losey^Rorthic^RR raptor^Scion^Seff^shenzay^Shadowmoses^shikamaru 1993^Silver^silverkatana^Sir Prince^Sirgigor^Skyrage^Smoson^sneakey pete^Stefano^Stella^Stonewall382^Talak^Tankai^TG^thelast^The Phoenix^The Pope^The Yogi^Thingy Master^Thormac^Thus Spake Nosferatu^ThVaz^Toygar Birinci^Tuckles^Tul^Ursca^Vaerraent^Vilhjalmr^Volkier^vuk^Wanderer^WhoCares^Winter^Worbah^Yoshiboy^...and many many other wonderful Mount&Blade players!^^(This is only a small sample of all the players who have contributed to the game by providing suggestions and feedback.^This list has been compiled by sampling only a few threads in the Taleworlds Forums.^Unfortunately compiling an exhaustive list is almost impossible.^We apologize sincerely if you contributed your suggestions and feedback but were not listed here, and please know that we are grateful to you all the same...)
-str_credits_10|Paradox Interactive^^President and CEO:^Theodore Bergqvist^^Executive Vice President:^Fredrik Wester^^Chief Financial Officer:^Lena Eriksson^^Finance & Accounting:^Annlouise Larsson^^VP Sales & Marketing US:^Reena M. Miranda^^VP Sales & Marketing EU:^Martin Sirc^^Distribution Manager Nordic:^Erik Helmfridsson^^Director of PR & Marketing:^Susana Meza^^PR & Marketing:^Sofia Forsgren^^Product Manager:^Boel Bermann
-str_credits_11|Logotype:^Jason Brown^^Cover Art:^Piotr Fox Wysocki^^Layout:^Christian Sabe^Melina Grundel^^Poster:^Piotr Fox Wysocki^^Map & Concept Art:^Ganbat Badamkhand^^Manual Editing:^Digital Wordsmithing: Ryan Newman, Nick Stewart^^Web:^Martin Ericsson^^Marketing Assets:^2Coats^^Localization:^S&H Entertainment Localization^^GamersGate:^Ulf Hedblom^Andreas Pousette^Martin Ericson^Christoffer Lindberg
-str_credits_12|Thanks to all of our partners worldwide, in particular long-term partners:^Koch Media (Germany & UK)^Blue Label (Italy & France)^Friendware (Spain)^New Era Interactive Media Co. Ltd. (Asia)^Snowball (Russia)^Pinnacle (UK)^Porto Editora (Portugal)^Hell-Tech (Greece)^CD Projekt (Poland, Czech Republic, Slovakia & Hungary)^Paradox Scandinavian Distribution (Scandinavia)
 str_faction_strength_crushed|crushed
 str_faction_strength_spent_and_wavering|spent and wavering
 str_faction_strength_weakened|weakened
@@ -1471,7 +1312,6 @@ str_faction_strength_strong|strong
 str_faction_strength_quite_strong|quite strong
 str_faction_strength_very_strong|very strong
 str_faction_strength_unmatched|unmatched
-str_faction_strength_last|INVALID
 str_theater_se|Gondor
 str_theater_sw|Rohan
 str_theater_c|South Rhovanion
@@ -2191,7 +2031,6 @@ str_beorn_gift2|Bee Hives
 str_beorn_gift3|Amber Necklaces
 str_beorn_gift4|Well Trained Ponies
 str_cmenu_follow|Accompany
-str_fake_party|TLD temp terrain finder, you shouldn't be seeing this in a savegame [!]
 str_reset_to_default|Reset to Default
 str_done|Done
 str_gondor1|Gondor1
@@ -2220,7 +2059,6 @@ str_moria_intro|^You have come from the Mines, to avenge your folk, killed by ma
 str_guldur_intro|^The dark power rises again in the East. The Lord of Barad-dûr has sent his servants to Dol Guldur, where his will once more shall hold sway. The forges overflow with weapons and armour, the pens house thousands of ferocious wargs, the barracks are full to the brim with orcs ready to fight and die.^^And high above, in the darkening skies over Mirkwood, fly the winged Nazgûl… the apple of the Great Eye, with power deep beyond the reach of your muddy dreams. No fewer than three has the Dark Lord sent to this place, from which his power will reach, subduing all who resist, until the enemies of Mordor are broken forever.^^You have resolved to rise in the ranks, by any means, and gain the favour of Dol Guldur and Lugbúrz. By wit, hardiness, and ruthless skill in battle you shall crush all who stand in your way. You will earn the favour of the Dark Lord, he who is to rule all after this coming War… or you will die trying.^^The shadow of Dol Guldur shall spread. The light of the West shall be snuffed out. The time of Mordor has come!
 str_dunland_intro|^Your people have known nothing but foul injustice at the hands of the black-hearted Forgoil, the strawhead paleskins of Rohan. From the time of mighty Freca, felled by a cowardly blow from the man-eater beast Helm, he whom the Rohirrim called Hammerhand, you have suffered grievously under their heavy yoke. High-handed are their treacheries, too many to number.^^ But now the wind is changing. Wise Saruman, the cunning old master of Isengard, has made promises of friendship to your people. With his help, surely the claim of noble King Wulf, who in happier days rightfully sat the throne of Meduseld in Edoras, will be upheld.^^No longer will your people scrabble in the rocky soil for a hard living. No longer will babes in arms die in the embrace of their mothers, because the milk flows too weakly. No longer will your people cower in fear of the murdering usurpers of Rohan. Your pikes are long, and your axes cruel and sharp. With the help of Saruman the Wise, you cannot fail. You will take back what is rightfully yours.^^You will fight for Saruman. You will die for Saruman!
 str_beorn_intro|^These woods, these old paths, and the Ford are the only home you have ever known, but old Beorn was one who remembered an older home, far away in the mountains. His son, Chief Grimbeorn the Old, now stands foremost among your people, and like his father, he is apt to sit on the great Carrock at night, setting his sight to the west, deep in his own thoughts.^^For your part, your thoughts are simple. The woods grow dangerous. Foul orcs grow bolder, and walk about even in daylight. The wolves they ride will not listen even to one of your people, so twisted have they become by goblin ways. The air feels and smells different, bad. The further south you go, closer to Dol Guldur, where not so long ago the Sorcerer dwelled and did things unworthy of naming, the worse it gets.^^The Elves huddle in their caves to the north. Most will not come out to protect the woodland, its animals and trees and other things that move and live.^^Your people will fight, as you always have, to keep the Ford and the forest safe. With a stout stick in your hands, you will smash any orcs that dare intrude. And if it should come to greater blows, why, many among your people are more than they seem…^^But if even the grim battle-strength of the Beornings should fail, then the world will know no more the joy of sweet honey, bright flowers, shady forest paths and all things good. All will fall beneath the Shadow.
-str_intro_strings_end|Intro END
 str_gondor_intro_2|^While travelling to swear service to your liege lord, you chance upon a caravan being attacked by orcs.
 str_dwarf_intro_2|^On your way to the gates of Erebor, you chance upon a caravan being attacked by orcs.
 str_rohan_intro_2|^On your way to Edoras, you chance upon a caravan being attacked by orcs.
@@ -2239,7 +2077,6 @@ str_guldur_intro_2|^On your way to Dol Guldur, you chance upon some orcs raiding
 str_gundabad_intro_2|^On your way to Mt. Gundabad, you chance upon some orcs raiding a caravan.
 str_dunland_intro_2|^On your way to the main battle-camp of your people, you chance upon some orcs raiding a caravan.
 str_beorn_intro_2|^On your way to Beorn’s House, you come upon some allies preparing to ambush a company of Orcs.
-str_intro_strings_2_end|Intro 2 END
 str_gondor_faction_intro|^The South Kingdom of Gondor, “land of stone” in Sindarin, is inhabited by descendants of the ancient Númenoreans. Under the rule of Steward Denethor, these proud men stand as the first and perhaps last line of defence against the Enemy.^^Gondor’s military consists of forces coming from all the different fiefdoms. You get the standard army with solid and well-armoured troops overall: Dol Amroth’s heavy cavalry, green-clad archers and spearmen from Pinnath Gelin, bowmen from the Blackroot Vale, axemen of Lossarnach, heavy marines from Pelargir or hardened clansmen of Lamedon.
 str_dwarf_faction_intro|^Dwarves, also known as Durin’s Folk, are short, tough and doughty warriors. They are renowned for the craftsmanship of their weaponry and armour, though they say with regret that they cannot match the lost arts of their ancestors. In these latter days, they come from the Lonely Mountain and the Iron Hills.^^Their army consists of an infantry line, a scout/archer line and an Iron Hills line (their heaviest hard-hitting infantry).
 str_rohan_faction_intro|^Rohirrim are the horse lords of the Mark of Rohan, led by king Théoden.^^Rohirrim have very good cavalry, ranging from heavy lancers to agile horse archers. They have an infantry line as well, branching into shieldwall-forming troops and heavy swordsmen bearing longswords.
@@ -2258,7 +2095,6 @@ str_guldur_faction_intro|^Dol Guldur is an old fortress of Sauron in Mirkwood �
 str_gundabad_faction_intro|^Gundabad was a place sacred to the Dwarves, but in these days it has become a massive Orc stronghold in the northern mountains.^^The Gundabad orcs, though more savage than their fellows from other places, fight much like any other orcs, with a similar army lineup (infantry, archers, skirmishers, warg riders). Their equipment is primitive and their fighting style barbaric. Their warg riders are unrivalled in toughness and ferocity. Some among the orcs of Gundabad can even whip themselves into a battle-frenzy.
 str_dunland_faction_intro|^The Dunlendings are the “wild men of Dunland”, enemies of the Rohirrim who drove them from their homeland.^^Dunland is barren and poor. The Dunlendings wear very little real armour – mostly furs and cured leather, with some metal signifying status. For weaponry, they wield long pikes and antler axes, with rare swords serving as emblems of prestige. Their horses are thin and weak, certainly no match for the steeds of Rohan, though occasionally the Dunlendings will ride them into battle as skirmishers. In battle, the pikemen advance en masse, presenting a crude but formidable wall of sharp polearms. Some Dunlendings have also cultivated affinity with creatures of the wild, and may unleash packs of savage wolves against their foes.
 str_beorn_faction_intro|^Beornings, the descendants of Beorn, are a people of the upper Vales of Anduin, between Mirkwood and the Misty Mountains. They dwell mostly in the forests, though they keep the Old Ford clear for trade, exacting a toll on merchant caravans for their service.^^As woodsmen, they wield stout sticks and sharp axes, but wear little in the way of armour. Heavier Beorning infantry fight with shields as well. Beorning foresters are skilled bowmen and provide a valuable archer line.
-str_intro_faction_intro_strings_end|faction intro END
 str_gondor_extra_info|Good^^Hard^^Gondor (South-East)^^Prince Imrahil^^Mordor, Umbar, Khand, Harad
 str_dwarf_extra_info|Good^^Easy^^North Rhovanion (North)^^King Dain II Ironfoot^^Rhun, Gundabad
 str_rohan_extra_info|Good^^Average^^Rohan (South-West)^^King Theoden^^Isengard, Dunland
@@ -2277,23 +2113,11 @@ str_guldur_extra_info|Sauron^^Very Hard^^South Rhovanion (Center)^^Master Fuinur
 str_gundabad_extra_info|Saruman^^Very Hard^^North Rhovanion (North)^^Master Burza Krual^^Dale, Dwarves, Mirkwood, Beornings
 str_dunland_extra_info|Saruman^^Hard^^Rohan (South-West)^^Chief Daeglaf the Black^^Rohan
 str_beorn_extra_info|Good^^Hard^^North Rhovanion (North)^^Chief Grimbeorn the Old^^Rhun, Gundabad
-str_intro_strings_extra_end|Intro EXTRA END
 str_gundabad_intro|You have come from the far north, from the lands of long-lost Angmar, after receiving tidings of the war to come. For years beyond count you and your folk have broken many dwarf shields with your axes and spears, crushed many broken bodies of men and elves below the claws of your fierce wargs, skinned the hides of the bear-people to wear as furs. The great halls of Gundabad in the Misty Mountains are now yours once again, as they were in the time of Bolg and Azog.^^Many of you have perished over the years, somemany of them slain in these very halls and tunnels - but many still remain. Great sport you have had with the greedy little diggers and their friends, in the past - and greater sport you will have now, when you march upon them and take everything for yourselves!^^Vengeance for Bolg, for Azog, for the Great Goblin - vengeance for the goblins of Gundabad!
 str_show_keybinds|Special Key Bindings: ^^ Formation Keys:^ Ranks - J ^ Shieldwall - K ^ Wedge - L ^ Square - ; ^ Clear Formations - U ^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
 str_tactical_controls|Use the keyboard NUMBERS to select a division. Press 0 to select your entire force.^^Use F1-F4 to order selected divisions. Keep the F1 key down to place selected divisions. One may target an enemy division through this mechanism.^^Pressing the ENTER key often initiates an overhead Strategy Camera.^^Pressing the BACKSPACE key often initiates a Battle Command Display with 'radar.'
 str_division_placement|When ONE division is selected, the center of its front rank is placed at the spot indicated.^^When MANY divisions are selected, they are separated and spread out as if the player were standing at the spot indicated.^^One may memorize the placement of selected divisions relative to the player by pressing F2, F7. Default is infantry to the left, cavalry right, and ranged forward.
 str_formations|The Complex Formations on the Battle Menu are:^^- RANKS with best troops up front^- SHIELD WALL, ranks with shields in front and longer weapons in back^- WEDGE with best troops up front^- SQUARE in no particular order^- NO FORMATION^^Even in the last case, the player can make formations up to four lines by ordering Stand Closer enough times.
-str_dale_coat|dale coat
-str_dale_coat_2|dale coat 2
-str_dale_coat_3|dale coat 3
-str_tld_wear|tld wear
-str_tld_wear_2|tld wear 2
-str_tld_wear_3|tld wear 3
-str_dale_coat_end|dale coat end
-str_rhunarmortexture_fem|rhunarmortexture fem
-str_female_mats_end|female mats end
-str_beornings_female|beornings female
-str_khand_light_fem|khand light fem
 str_npc18_intro|Great One, hold a moment! I would speak with you!
 str_npc19_intro|Hold a moment, Commander. I would have words with you. No, no, you need not kneel, even though you speak to one of royal blood.
 str_npc20_intro|Wait. You. I've seen you. I know your face. A dream I had, of you - but why would it be you? Now that I see you with mine own eyes, you are little more than a lowly snaga!
@@ -2594,7 +2418,6 @@ str_npc24_honorific|captain
 str_npc25_honorific|commander
 str_npc26_honorific|Master
 str_npc27_honorific|Master
-str_new_companion_strings_end|INVALID
 str_gondor_guildmaster_companion_player_ask|By leave of the Lord of Gondor, I seek valiant confederates. Are there such in this place?
 str_gondor_guildmaster_companion_none|Nay, Commander. What valour we have is needed to defend our own walls. You may go to the barracks and find soldiers of courage and experience -- maybe more the former than the latter, I fear. Ever have we been traders, crafters and farmers. The finest of our soldiers go to the capital to enlist - perhaps you should try the White City.
 str_gondor_guildmaster_companion_player_none_ok|Very well. I thank you for your counsel.
@@ -2698,11 +2521,6 @@ str_fullname_region_s_misty_mountains|the foothills of the southern Misty Mounta
 str_fullname_region_n_anduin_vale|the northern Vale of Anduin, north of the Carrock
 str_fullname_region_s_anduin_vale|the southern Vale of Anduin, between Lorien and the Undeeps
 str_fullname_region_cair_andros|Cair Andros, the great ship-like island of Anduin
-str_fullname_region_stub_1|unused
-str_fullname_region_stub_2|unused
-str_fullname_region_stub_3|unused
-str_fullname_region_stub_4|unused
-str_fullname_region_stub_5|unused
 str_shortname_region_rhun|East Rhovanion
 str_shortname_region_erebor|the foothills of Erebor
 str_shortname_region_celebrant|the Field of Celebrant
@@ -2712,9 +2530,4 @@ str_shortname_region_s_misty_mountains|the foothills of the Southern Misty Mount
 str_shortname_region_n_anduin_vale|the northern Vale of Anduin
 str_shortname_region_s_anduin_vale|the southern Vale of Anduin
 str_shortname_region_cair_andros|Cair Andros
-str_shortname_region_stub_1|unused
-str_shortname_region_stub_2|unused
-str_shortname_region_stub_3|unused
-str_shortname_region_stub_4|unused
-str_shortname_region_stub_5|unused
 str_isengard_hunting_camp_guildmaster_player_found_ok|If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!

@@ -1,15 +1,3 @@
-trp_temp_troop|Temp Troop
-trp_temp_troop_pl|Temp Troop
-trp_game|Game
-trp_game_pl|Game
-trp_unarmed_troop|Unarmed Troop
-trp_unarmed_troop_pl|Unarmed Troops
-trp_temp_troop_2|Temp Troop 2
-trp_temp_troop_2_pl|Temp Troop 2
-trp_random_town_sequence|Random Town Sequence
-trp_random_town_sequence_pl|Random Town Sequence
-trp_tournament_participants|Tournament Participants
-trp_tournament_participants_pl|Tournament Participants
 trp_tutorial_maceman|Maceman
 trp_tutorial_maceman_pl|Macemen
 trp_tutorial_archer|Archer
@@ -869,17 +857,11 @@ trp_messenger_orc_pl|Messengers
 trp_messenger_evil_man|Messenger
 trp_messenger_evil_man_pl|Messengers
 trp_town_walker_1|Townsman
-trp_town_walker_1_pl|Townsmen
 trp_town_walker_2|Townswoman
-trp_town_walker_2_pl|Townswomen
 trp_village_walker_1|Villager
-trp_village_walker_1_pl|Villagers
 trp_village_walker_2|Villager
-trp_village_walker_2_pl|Villagers
 trp_spy_walker_1|Townsman
-trp_spy_walker_1_pl|Townsmen
 trp_spy_walker_2|Townswoman
-trp_spy_walker_2_pl|Townswomen
 trp_walker_man_gondor_black|Townsman
 trp_walker_man_gondor_white|Townsman
 trp_walker_man_gondor_blue|Townsman
@@ -892,19 +874,12 @@ trp_walker_woman_gondor_b|Gondor Woman
 trp_walker_woman_gondor_bw|Gondor Woman
 trp_walker_woman_gondor_w|Gondor Noble
 trp_mirkwood_walker_1|Greenwood Elf
-trp_mirkwood_walker_1_pl|Greenwood Elves
 trp_mirkwood_walker_2|Greenwood Elf
-trp_mirkwood_walker_2_pl|Greenwood Elves
 trp_lorien_walker_1|Lothlorien Elf
-trp_lorien_walker_1_pl|Lothlorien Elves
 trp_lorien_walker_2|Lothlorien Elf
-trp_lorien_walker_2_pl|Lothlorien Elves
 trp_dwarf_walker|Dwarf
-trp_dwarf_walker_pl|Dwarves
 trp_beorn_walker|Peasant Man
-trp_beorn_walker_pl|Peasant Men
 trp_beorn_walker_fem|Peasant Woman
-trp_beorn_walker_fem_pl|Peasant Women
 trp_trainer_4|Trainer
 trp_trainer_gondor|Trainer
 trp_trainer_rohan|Trainer
@@ -994,10 +969,6 @@ trp_dunland_lord_pl|Chief
 trp_beorn_lord|Chief Grimbeorn the Old
 trp_beorn_lord_pl|Chief
 trp_lorien_marshall|Celeborn
-trp_pippin_notmet_old|halfling old
-trp_merry_notmet_old|halfling old
-trp_pippin_old|Pippin old
-trp_merry_old|Merry old
 trp_knight_1_1|Angbor the Fearless
 trp_knight_1_2|Húrin of the Keys
 trp_knight_1_3|Prince Imrahil
@@ -1497,32 +1468,21 @@ trp_tax_rebel_pl|Peasant Rebels
 trp_trainee_peasant|Peasant
 trp_trainee_peasant_pl|Peasants
 trp_fugitive_man|Suspicious Man
-trp_fugitive_man_pl|Suspicious Men
 trp_fugitive_elf|Suspicious Elf
-trp_fugitive_elf_pl|Suspicious Elves
 trp_fugitive_dwarf|Suspicious Dwarf
-trp_fugitive_dwarf_pl|Suspicious Dwarves
 trp_fugitive_orc|Suspicious Orc
-trp_fugitive_orc_pl|Suspicious Orcs
 trp_spy|Shifty-eyed Corsair
-trp_spy_pl|Shifty-eyed Corsairs
 trp_spy_evil|Shifty-eyed Southerner
-trp_spy_evil_pl|Shifty-eyed Southerners
 trp_spy_partner|Spy Handler
-trp_spy_partner_pl|Spy Handlers
 trp_spy_partner_evil|Spy Handler
-trp_spy_partner_evil_pl|Spy Handlers
 trp_easter_egg_troll|The Troll
 trp_treebeard|Treebeard
 trp_ent_1|Bregalad
 trp_ent_2|Finglas
 trp_ent_3|Fladrif
 trp_gandalf|Gandalf
-trp_gandalf_pl|Home-grown Gandalves
 trp_nazgul|Nazgul
-trp_nazgul_pl|Domesticated Nazgul
 trp_radagast|Radagast
-trp_radagast_pl|Home-grown Gandalves
 trp_barman|Barman
 trp_elder|Center Elder
 trp_gear_merchant|Gear Merchant
@@ -1534,13 +1494,9 @@ trp_dorwinion_raider|Dorwinion Raider
 trp_dorwinion_raider_pl|Dorwinion Raiders
 trp_no_troop_pl|the place
 trp_city_guard|City Guard
-trp_city_guard_pl|city guard
 trp_orc_sentry|Orc Sentry
-trp_orc_sentry_pl|orc sentry
 trp_uruk_hai_sentry|Uruk-hai Sentry
-trp_uruk_hai_sentry_pl|uruk hai sentry
 trp_black_numenorean_sorcerer|Black Numenorean Sorcerer
-trp_black_numenorean_sorcerer_pl|Black numenorean sorcerer
 trp_evil_priest|Evil Priest
 trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|Wolf Rider of Mirkwood
@@ -1577,7 +1533,6 @@ trp_start_quest_mordor_scout_pl|Mordor Guides
 trp_start_quest_beorning|Beorning Carrock Berserker
 trp_start_quest_beorning_pl|Beorning Carrock Berserkers
 trp_black_shield|Amath Dollen
-trp_black_shield_pl|-
 trp_black_shield_bandit|Amath Dollen's Bandit
 trp_black_shield_bandit_pl|Amath Dollen's Bandits
 trp_black_shield_scout|Amath Dollen's Scout
@@ -1590,12 +1545,7 @@ trp_i6_beorning_bear_warrior|Bear Warrior
 trp_i6_beorning_bear_warrior_pl|Bear Warriors
 trp_a5_dun_night_wolf|Dunnish Night Wolf
 trp_a5_dun_night_wolf_pl|Dunnish Night Wolfs
-trp_volunteers|--- Reserves ---:
 trp_dormant|Dormant
-trp_badass_theo|Badass King Theo
-trp_badass_theo_pl|King
-trp_killer_witcher|Ugly Mogly
-trp_killer_witcher_pl|Lieutenant
 trp_morannon_healer|Okstuk the Healer
 trp_minas_tirith_healer|Ioreth
 trp_edoras_healer|Freya the Healer
@@ -1605,37 +1555,19 @@ trp_gundabad_healer|Lurgakh Third Eye
 trp_mirkwood_healer|Corwiel the Soft-Handed
 trp_hungry_uruk|Hungry Uruk
 trp_hungry_orc|Hungry Orc
-trp_hungry_orc_pl|Large Orcs of Mordor
 trp_longing_lorien|Longing Elf
-trp_longing_lorien_pl|a1 lorien scouts
 trp_longing_woodelf|Longing Elf
-trp_longing_woodelf_pl|a1 greenwood scouts
 trp_longing_imladris|Longing Elf
-trp_longing_imladris_pl|a1 riv scouts
 trp_i5_moria_deep_dweller|Deep-Dweller of Moria
 trp_i5_moria_deep_dweller_pl|Deep-Dwellers of Moria
 trp_i5_moria_orc_chieftain|Orc Chieftain of Moria
 trp_i5_moria_orc_chieftain_pl|Orc Chieftains of Moria
 trp_c5_rhovanion_noble|Rhovanion Noble
 trp_c5_rhovanion_noble_pl|Rhovanion Noblemen
-trp_generic_hero_infantry|generic hero infantry
-trp_generic_hero_infantry_pl|generic hero infantry
-trp_generic_hero_ranged|generic hero ranged
-trp_generic_hero_ranged_pl|generic hero ranged
-trp_generic_hero_knight|generic hero knight
-trp_generic_hero_knight_pl|generic hero knight
-trp_generic_hero_mounted_archer|generic hero mounted archer
-trp_generic_hero_mounted_archer_pl|generic hero mounted archer
 trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel
 trp_npc21|Berta
-trp_npc22|Zigûrphel
-trp_npc23|Zigûrphel
-trp_npc24|Zigûrphel
-trp_npc25|Zigûrphel
-trp_npc26|Zigûrphel
-trp_npc27|Zigûrphel
 trp_werewolf|Werewolf
 trp_werewolf_pl|Werewolves
 trp_moria_troll|Cave Troll
@@ -1678,10 +1610,6 @@ trp_wild_troll|Wild Cave Troll
 trp_wild_troll_pl|Wild Cave Trolls
 trp_ent|Ent
 trp_ent_pl|Ents
-trp_multiplayer_profile_troop_male|multiplayer profile troop male
-trp_multiplayer_profile_troop_male_pl|multiplayer profile troop male
-trp_multiplayer_profile_troop_female|multiplayer profile troop female
-trp_multiplayer_profile_troop_female_pl|multiplayer profile troop female
 trp_mountain_goblin|Mountain Goblin
 trp_mountain_goblin_pl|Mountain Goblins
 trp_tribal_orc|Tribal Orc
@@ -1690,16 +1618,6 @@ trp_tribal_orc_warrior|Tribal Orc Warrior
 trp_tribal_orc_warrior_pl|Tribal Orc Warriors
 trp_tribal_orc_chief|Tribal Orc Chief
 trp_tribal_orc_chief_pl|Tribal Orc Chiefs
-trp_future_troop_6|Mountain Goblin
-trp_future_troop_6_pl|Mountain Goblins
-trp_future_troop_7|Tribal Orc
-trp_future_troop_7_pl|Tribal Orcs
-trp_future_troop_8|Tribal Orc Warrior
-trp_future_troop_8_pl|Tribal Orc Warriors
-trp_future_troop_9|Tribal Orc Chief
-trp_future_troop_9_pl|Tribal Orc Chiefs
-trp_future_troop_10|Tribal Orc Chief
-trp_future_troop_10_pl|Tribal Orc Chiefs
 trp_a3_dism_skirmisher_of_rohan|Skirmisher of Rohan
 trp_a3_dism_skirmisher_of_rohan_pl|Skirmishers of Rohan
 trp_a4_dism_veteran_skirmisher_of_rohan|Veteran Skirmisher of Rohan

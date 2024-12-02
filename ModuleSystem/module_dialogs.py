@@ -1277,7 +1277,7 @@ dialogs = [
 # rank 0 needed - don't mention it at all
 [anyone|auto_proceed, "companion_recruit_rank", [
       (troop_slot_eq, "$g_talk_troop", slot_troop_rank_request, 0)],
-".", "companion_recruit_payment", []],
+"{!}.", "companion_recruit_payment", []],
    
 # rank not ok
 [anyone, "companion_recruit_rank", [ 
@@ -1299,7 +1299,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
    
 [anyone|auto_proceed, "companion_recruit_payment", [
       (troop_slot_eq, "$g_talk_troop", slot_troop_payment_request, 0)],
-".", "companion_recruit_signup_confirm", []],
+"{!}.", "companion_recruit_signup_confirm", []],
   
 [anyone, "companion_recruit_payment", [
         (this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end),
@@ -2569,7 +2569,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                      (eq, "$g_talk_troop_met", 0),
                      (ge, "$g_talk_troop_faction_relation", 0),
                      (le,"$talk_context",tc_siege_commander)],
-"INVALID", "lord_intro", []],
+"{!}INVALID", "lord_intro", []],
    
 [anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
                      (eq, "$g_talk_troop_met", 0),
@@ -4081,9 +4081,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #[anyone,"hero_pretalk", [], "Anything else?", "lord_talk",[]],
 
 ##### TODO: QUESTS COMMENT OUT BEGIN
-[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Increase Relation", "lord_pretalk",[(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),]],
+[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "{!}Increase Relation", "lord_pretalk",[(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),]],
 #Friendship Rewards Begin
-[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "Force Friendship Reward", "lord_pretalk",[
+[anyone|plyr,"lord_talk", [(eq, "$cheat_mode", 1)], "{!}Force Friendship Reward", "lord_pretalk",[
     (call_script, "script_lord_friendship_reward_progress", "$g_talk_troop", 100),]],
 #Friendship Rewards End
 [anyone|plyr,"lord_talk",[#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
@@ -6200,7 +6200,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (troop_set_slot, "$g_talk_troop", slot_troop_player_order_object, -1)]],
 
 [anyone|auto_proceed,"lord_give_order_answer",[],
-".", "lord_give_order_answer_2", [
+"{!}.", "lord_give_order_answer_2", [
      (try_begin),
        (eq, "$temp", spai_raiding_around_center),
        (assign, "$temp", spai_patrolling_around_center), # simply patrol around enemy town.. does this work?
@@ -6560,7 +6560,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (str_store_string, s6, "@Mercy, I crave! To face {s7} in open battle is sheer folly! I cannot do this thing!"),
 (try_end),
 ],
-"{s6}.", "lord_mission_rejected",[]],
+"{!}{s6}.", "lord_mission_rejected",[]],
 
 
 ## Kham Kill Quest INIT START
@@ -9899,7 +9899,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   (else_try),
     (str_store_string, s2, "@I am a healer. Come to me when you or your companions are seriously wounded, and I will mend your injuries to the best of my ability."),
   (try_end)], 
-    "{s2}.", "healers_meet",
+    "{!}{s2}.", "healers_meet",
     [(troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),
     (display_message, "@You have found the local healer"),
     (call_script, "script_increase_rank", "$ambient_faction", 3),
@@ -10265,7 +10265,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     #(assign, reg3, ":leadership"),
     #(display_message, "@{reg1} random number - {reg2} chance - {reg3} leadership")
 
-    ],"{s2}.", "close_window", 
+    ],"{!}{s2}.", "close_window", 
 
   [
    (try_begin),
@@ -11016,7 +11016,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (else_try),
         (str_store_string, s4, "@Well... better here than in combat, eh?"),
       (try_end)],
-"{s4}.", "trainer_pretalk",[(troop_set_slot, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 0)]],
+"{!}{s4}.", "trainer_pretalk",[(troop_set_slot, "$g_talk_troop", slot_troop_trainer_waiting_for_result, 0)]],
 
 
 [anyone,"start", [(is_between, "$g_talk_troop", training_ground_trainers_begin, training_ground_trainers_end)],
@@ -11696,7 +11696,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ], 
 "{!}{s55}", "mayor_talk",[]],
 
-[anyone|plyr,"mayor_talk", [(eq, "$cheat_mode", 1)], "Increase Relation", "mayor_friendly_pretalk",[(call_script, "script_change_player_relation_with_center", "$current_town", 5),]],
+[anyone|plyr,"mayor_talk", [(eq, "$cheat_mode", 1)], "{!}Increase Relation", "mayor_friendly_pretalk",[(call_script, "script_change_player_relation_with_center", "$current_town", 5),]],
 
 [anyone|plyr,"mayor_talk", [], "[Leave]", "close_window",[(call_script,"script_stand_back"),]],
 
@@ -12233,7 +12233,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 #MV: remove when quest dialogs are done, or bugs are fixed . No, DON'T REMOVE, ever (MT). MV: ok.
 [anyone,"merchant_quest_brief", [(str_store_quest_name,s4,"$random_merchant_quest_no")],
-"DEBUG: It seems some coder abused his arcane powers, and forgot to put a dialog here. The quest is {s4}.", "mayor_pretalk",[]],
+"{!}DEBUG: It seems some coder abused his arcane powers, and forgot to put a dialog here. The quest is {s4}.", "mayor_pretalk",[]],
   
 [anyone|plyr,"move_cattle_herd_quest_brief", [], 
 "Aye, I can take them to {s13}.","move_cattle_herd_quest_taken",[
@@ -12824,7 +12824,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
         (eq, ":entry", 24),
         (str_store_string, s4, "@Lead me to the captain of the garrison"),
     (try_end)], 
-"{s4}.", "town_dweller_ask_directions3",[
+"{!}{s4}.", "town_dweller_ask_directions3",[
     (store_repeat_object, "$temp"),]],
 
 [anyone|plyr,"town_dweller_ask_directions2", [], "Never mind.", "close_window",[(call_script,"script_stand_back")]],

@@ -83,7 +83,7 @@ qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
 qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
 qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
-qstr__rev_4141_wb__dev_^_| rev 4141 wb | dev ^ Built 2024-12-02 06:41   
+qstr__rev_4144_wb__dev_^_| rev 4144 wb | dev ^ Built 2024-12-02 09:27   
 qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
 qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
 qstr_Attributes|Attributes
@@ -1035,8 +1035,6 @@ qstr_{s13}_{reg11}__with_|{s13} {reg11} (with {s16})^
 qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (in {s16})^
 qstr__={s10}=_^{s11}^^^{s|-={s10}=-^{s11}^^^{s13}^^^{s15}.
 qstr_{s1}___{s15}|{s1} - {s15}
-qstr_{s1}___{reg1}|{s1} - {reg1}
-qstr_{s4}:_M{reg3}_2M{reg|{s4}: M{reg3}, 2M{reg4}, PC{reg5}, 2PC{reg6}, PM{reg7}
 qstr_Dressing_Room|Dressing Room
 qstr_Formations_Test|Formations Test
 qstr_Four_years_after_bri|Four years after bringing a group of Dwarves from Erebor to attempt to resettle the once-Dwarven city of Khazad-dûm, Balin was killed by an Orc arrow while peering into Lake Mirrormere, and his people became immediately engaged with many Orcs coming up the Silverlode River. After a continuous retreat from the East-gate and First Hall, then the Bridge of Khazad-dûm and Second Hall, the remaining Longbeards were forced all the way back into the Twenty-first Hall. After an unsuccessful attempt to escape through the Doors of Durin that saw the death of Óin, the Chamber of Mazarbul became the last hold-out of the Colony after losing the Twenty-first Hall just outside the chamber. Barring the gates, Ori and the few survivors set up a final defense.
@@ -1090,36 +1088,15 @@ qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|Traits gained:^{s2}
 qstr_^^You_are_{s17}.|^^You are {s17}.
 qstr_Assassins_in_the_cam|Assassins in the camp, defend yourself!
-qstr_Cheats_used:_{reg78}|Cheats used: {reg78}
 qstr_Ally_party_size:_{re|Ally party size: {reg1}
 qstr_Enemy_party_size:_{r|Enemy party size: {reg1}
 qstr_Spawned_routed_parti|Spawned routed parties!
-qstr_Party_count:_{reg0}|Party count: {reg0}
 qstr_Party_position__{reg|Party position ({reg2},{reg3}).
 qstr_XP_added|XP added
-qstr_You_have_been_pimped|You have been pimped up!
 qstr_9000_XP_added___now_|9000 XP added - now wait for the War...(assumes war starts at level 8)
-qstr_Good_factions_defeat|Good factions defeated! Now wait for it...
 qstr_{s1}_rank_points_inc|{s1} rank points increased to {reg0}, influence to {reg1}!
-qstr_Party_size_increased|Party size increased from {reg0} to {reg1}!
-qstr_All_four_legendary_p|All four legendary places enabled!
 qstr_{s10}_crushed!_Lords|{s10} crushed! Lords will go to their capitals...
-qstr_{s10}_defeated!_Now_|{s10} defeated! Now wait for it...
 qstr_{s2}^{s4}:_{reg1}__{|{s2}^{s4}: {reg1} ({s23}) Diff: {reg2}
-qstr_Faction_strengths_re|Faction strengths report:^{s2}
-qstr_Attacking_enemy_part|Attacking enemy party {s11}
-qstr_Unknown_{reg3}_|Unknown({reg3})
-qstr_SE|SE
-qstr_SW|SW
-qstr_C|C
-qstr_N|N
-qstr_INVALID|INVALID
-qstr_{s2}^{s4}:_Th:_{s9}_|{s2}^{s4}: Th: {s9}-{s10} Str: {reg1} Hosts: {reg2} {s11}
-qstr_Faction_AI_report:^{|Faction AI report:^{s2}
-qstr_Detailed_faction_AI_|Detailed faction AI report for {s4}:^Theater:{s9}-{s10} Str:{reg1} Hosts:{reg2} {s11}
-qstr_Faction_defeated!^{s|Faction defeated!^{s1}
-qstr_{s1}^{s6}_leads_{s7}|{s1}^{s6} leads {s7}, 
-qstr_{s1}_no_host__|{s1}(no host), 
 qstr_{s1}doing_nothing|{s1}doing nothing
 qstr_{s1}escorting_{s7}|{s1}escorting {s7}
 qstr_{s1}besieging_{s7}|{s1}besieging {s7}
@@ -1130,44 +1107,14 @@ qstr_{s1}raiding_around_{|{s1}raiding around {s7} - INVALID
 qstr_{s1}engaging_{s7}|{s1}engaging {s7}
 qstr_{s1}retreating_to_{s|{s1}retreating to {s7}
 qstr_{s1}unknown_{reg3}_|{s1}unknown({reg3})
-qstr_Faction_defeated!_No|Faction defeated! Now wait for it...
-qstr_Faction_almost_defea|Faction almost defeated! Wait for the guardians to spawn...
-qstr_Faction_almost_defeat|Faction almost defeated! The AI can go for the capital now...
-qstr_{s4}_spawn_losses_af|{s4} spawn losses after {reg1} days^
-qstr_{s1}^Scouts_lost:_{r|{s1}^Scouts lost: {reg1} Str loss: {reg2} Active: {reg3}
-qstr_{s1}^Raiders_lost:_{|{s1}^Raiders lost: {reg1} Str loss: {reg2} Active: {reg3}
-qstr_{s1}^Patrols_lost:_{|{s1}^Patrols lost: {reg1} Str loss: {reg2} Active: {reg3}
-qstr_{s1}^Caravans_lost:_|{s1}^Caravans lost: {reg1} Str loss: {reg2} Active: {reg3}
-qstr_{s1}^P._trains_lost_|{s1}^P. trains lost-arrived: {reg1} Strength loss: 0{reg2?-{reg2}:} Active: {reg3}
-qstr_{s1}^^Total_strength|{s1}^^Total strength gain: {reg1}
-qstr_{s1}^Total_strength_|{s1}^Total strength loss: {reg2}
-qstr_{s1}^_Strength_loss_|{s1}^(Strength loss from spawns: {reg3})
-qstr_{s1}^Difference:_{re|{s1}^Difference: {reg1}
-qstr_Daily_strength_incom|Daily strength income and garrisons for {s4}
-qstr_{s1}^{s7}:_{reg1}__G|{s1}^{s7}: {reg1}  Garrison: {reg3}/{reg2}{reg4?: Capturable}
-qstr_{s1}^^Total:_{reg1}|{s1}^^Total: {reg1}
 qstr_{s10}_besieged!|{s10} besieged!
-qstr_SW_advance_camps_spa|SW advance camps spawned around a point northwest of East Emnet!
-qstr_SE_advance_camps_spa|SE advance camps spawned around a point west of West Osgiliath!
-qstr_C_advance_camps_spaw|C advance camps spawned around Cerin Amroth!
-qstr_N_advance_camps_spaw|N advance camps spawned around Beorn's House!
-qstr_Advance_camps_disabl|Advance camps disabled, theaters restored!
-qstr_SW_advance_camps_spaw|SW advance camps spawned around {reg2},{reg3}!
-qstr_SE_advance_camps_spaw|SE advance camps spawned around {reg2},{reg3}!
-qstr_C_advance_camps_spawn|C advance camps spawned around {reg2},{reg3}!
-qstr_N_advance_camps_spawn|N advance camps spawned around {reg2},{reg3}!
 qstr_Gandalf_would_like_t|Gandalf would like to have a little chat!
 qstr_Kham_Cheat_Mode_ON!|Kham Cheat Mode ON!
-qstr_Theoden_activated|Theoden activated
-qstr_1_troll_added!|1 troll added!
 qstr_Raft_Men_party_enabl|Raft Men party enabled. They are down River Running
 qstr_theater:_{reg0}|theater: {reg0}
 qstr_Orc_Horde_Spawned!|Orc Horde Spawned!
 qstr_Vet_Archer_Spawned!|Vet Archer Spawned!
-qstr_Killer_WItcher_Spawn|Killer WItcher Spawned, Badass King Theo added!
 qstr_Player_Siege_Enabled|Player Siege Enabled
-qstr_You_are_not_in_the_r|You are not in the right region to spawn animal ambushes. Please go to N Mirkwood, S Mirkwood, Grey Mountains, or Misty Mountains
-qstr_{reg1}|{reg1}
 qstr_OFF__cheat_|OFF (cheat)
 qstr_All_messages|All messages
 qstr_{reg0}__will_most_li|{reg0} (will most likely cause save crashes)
@@ -1197,8 +1144,6 @@ qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Al
 qstr_Troll_caged_in_wheel|Troll caged in wheeled cage.
 qstr_A_second_troll_is_ca|A second troll is caged in wheeled cage.
 qstr_Here_you_are.|Here you are.
-qstr_Player_was_moved_to_|Player was moved to {s10}.
-qstr_neutral_whereabouts|neutral whereabouts
 qstr_any|any
 qstr_woman|woman
 qstr_gondor|gondor
@@ -1217,7 +1162,6 @@ qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
 qstr_Regular_troops_only|Regular troops only
 qstr_Heroes_only|Heroes only
 qstr_Regulars_and_Heroes|Regulars and Heroes
-qstr_Added_10_prisoners.|Added 10 prisoners.
 qstr_Added_1000_experienc|Added 1000 experience to player.
 qstr_Attributes_skills_an|Attributes, skills and proficiencies raised.
 qstr_Items_added_to_playe|Items added to player inventory.

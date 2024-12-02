@@ -13,7 +13,6 @@ skinkey_nose_width|Nose Width
 skinkey_nose_size|Nose Size
 skinkey_nose_shape|Nose Shape
 skinkey_nose_bridge|Nose Bridge
-							   
 skinkey_eye_width|Eye Width
 skinkey_eye_to_eye_dist|Eye to Eye Dist
 skinkey_eye_shape|Eye Shape
@@ -22,7 +21,6 @@ skinkey_eyelids|Eyelids
 skinkey_cheeks|Cheeks
 skinkey_cheek_bones|Cheek Bones
 skinkey_eyebrow_height|Eyebrow Height
-								   
 skinkey_eyebrow_shape|Eyebrow Shape
 skinkey_temple_width|Temple Width
 skinkey_face_depth|Face Depth
@@ -44,3 +42,5 @@ skinkey_frawn|Frawn
 skinkey_mouth_vert_pos|Mouth Vert Pos
 skinkey_mouth_to_nose_dist|Mouth to Nose Dist
 skinkey_chin_width|Chin Width
+skinkey_ear_pointiness|Ear Pointiness
+skinkey_ear_length|Ear Length
