@@ -2294,7 +2294,7 @@ presentations = [
         (position_set_y, pos1, 610),
         (overlay_set_position, reg1, pos1),
         (assign, reg0, ":enemy_centers_effect"),
-        #(create_text_overlay, reg1, "@{reg0}", tf_center_justify),
+        #(create_text_overlay, reg1, "@{!}{reg0}", tf_center_justify),
         (position_set_x, pos1, 750),
         (position_set_y, pos1, 750),
         (overlay_set_size, reg1, pos1),
@@ -2336,7 +2336,7 @@ presentations = [
         (position_set_y, pos1, 570),
         (overlay_set_position, reg1, pos1),
         (assign, reg0, ":num_enemies_effect"),
-        #(create_text_overlay, reg1, "@{reg0}", tf_center_justify),
+        #(create_text_overlay, reg1, "@{!}{reg0}", tf_center_justify),
         (position_set_x, pos1, 750),
         (position_set_y, pos1, 750),
         (overlay_set_size, reg1, pos1),
@@ -2378,7 +2378,7 @@ presentations = [
         (position_set_y, pos1, 530),
         (overlay_set_position, reg1, pos1),
         (assign, reg0, ":total_defeats_effect"),
-        #(create_text_overlay, reg1, "@{reg0}", tf_center_justify),
+        #(create_text_overlay, reg1, "@{!}{reg0}", tf_center_justify),
         (position_set_x, pos1, 750),
         (position_set_y, pos1, 750),
         (overlay_set_size, reg1, pos1),
@@ -2441,7 +2441,7 @@ presentations = [
         (position_set_y, pos1, 470),
         (overlay_set_position, reg1, pos1),
         (assign, reg0, ":num_companions_departed_effect"),
-        #(create_text_overlay, reg1, "@{reg0}", tf_center_justify),
+        #(create_text_overlay, reg1, "@{!}{reg0}", tf_center_justify),
         (position_set_x, pos1, 750),
         (position_set_y, pos1, 750),
         (overlay_set_size, reg1, pos1),
@@ -2546,7 +2546,7 @@ presentations = [
         (position_set_y, pos1, 370),
         (overlay_set_position, reg1, pos1),
         (assign, reg0, ":cur_day_effect"),
-        #(create_text_overlay, reg1, "@{reg0}", tf_center_justify),
+        #(create_text_overlay, reg1, "@{!}{reg0}", tf_center_justify),
         (position_set_x, pos1, 750),
         (position_set_y, pos1, 750),
         (overlay_set_size, reg1, pos1),
@@ -2749,7 +2749,7 @@ presentations = [
         (get_player_agent_no, ":player_agent"),
         (agent_set_hit_points, ":player_agent", 0, 1), #restored automatically at the end of mission
         
-        (str_store_string, s1, "@______"),
+        (str_store_string, s1, "@{!}______"),
         (create_text_overlay, "$g_presentation_obj_1", s1, tf_center_justify),
         (overlay_set_color, "$g_presentation_obj_1", 0xFFFFFF),
         (position_set_x, pos1, 500),
@@ -2761,7 +2761,7 @@ presentations = [
         ]),
       (ti_on_presentation_run,
        [
-        (str_store_string, s1, "@______"),
+        (str_store_string, s1, "@{!}______"),
         (try_begin),
           (this_or_next|eq, "$g_tld_intro_state", 1),
           (eq, "$g_tld_intro_state", 2),
@@ -2927,7 +2927,7 @@ presentations = [
 				(store_sub, "$g_defiled_armor_rotation", "$g_defiled_armor_rotation", 360),
 			(try_end),
 			(assign, reg0, "$g_defiled_armor_rotation"),
-			(display_message, "@Rotation={reg0}"),
+			(display_message, "@{!}Rotation={reg0}"),
           		(start_presentation, "prsnt_customize_defilement"), # Restart
 		(try_end),
 	]),
@@ -2957,7 +2957,7 @@ presentations = [
       (try_begin),
 
       #Text
-        (create_text_overlay, reg1, "@{s30}", tf_left_align),
+        (create_text_overlay, reg1, "@{!}{s30}", tf_left_align),
         (position_set_x, pos1, 180),#200
         (position_set_y, pos1, 550),#700
         (overlay_set_position, reg1, pos1),
@@ -2974,7 +2974,7 @@ presentations = [
 
         #name
         (str_store_troop_name, s1, "$troop_talk_hero"),
-        (create_text_overlay, reg1, "@{s1}", tf_center_justify),
+        (create_text_overlay, reg1, "@{!}{s1}", tf_center_justify),
         (position_set_x, pos1, 100),#100
         (position_set_y, pos1, 480),#480
         (overlay_set_position, reg1, pos1),
@@ -3025,7 +3025,7 @@ presentations = [
       (try_begin),
 
         #Text 
-        (create_text_overlay, reg1, "@{s30}", tf_right_align),
+        (create_text_overlay, reg1, "@{!}{s30}", tf_right_align),
         (position_set_x, pos1, 700),#25
         (position_set_y, pos1, 85),#65
         (overlay_set_position, reg1, pos1),
@@ -3042,7 +3042,7 @@ presentations = [
 
         #name
         (str_store_troop_name, s1, "$troop_talk_enemy"),
-        (create_text_overlay, reg1, "@{s1}", tf_center_justify),
+        (create_text_overlay, reg1, "@{!}{s1}", tf_center_justify),
         (position_set_x, pos1, 835),#835
         (position_set_y, pos1, 25),#13
         (overlay_set_position, reg1, pos1),
@@ -3133,7 +3133,7 @@ presentations = [
           
           (store_add, ":text_string", intro_strings_begin, "$g_selected_page"),
           (str_store_string, s1, ":text_string"),
-          (create_text_overlay, reg65, "@{s1}", tf_center_justify|tf_scrollable),
+          (create_text_overlay, reg65, "@{!}{s1}", tf_center_justify|tf_scrollable),
           (position_set_x, pos1, 50),
           (position_set_y, pos1, 350),
           (overlay_set_position, reg65, pos1),
@@ -3168,7 +3168,7 @@ presentations = [
           
           (store_add, ":text_string_2", "str_gondor_extra_info", "$g_selected_page"),
           (str_store_string, s2, ":text_string_2"),
-          (create_text_overlay, reg67, "@{s2}", tf_right_align|tf_scrollable),
+          (create_text_overlay, reg67, "@{!}{s2}", tf_right_align|tf_scrollable),
           (overlay_set_color, reg67, 0xFFFFFF),
           (position_set_x, pos1, 55),
           (position_set_y, pos1, 15),
@@ -3264,7 +3264,7 @@ presentations = [
         (val_sub, ":max_rallies", ":times_rallied"),
 
         (assign, reg75, ":max_rallies"),
-        (str_store_string,s12,"@{reg75}"),
+        (str_store_string,s12,"@{!}{reg75}"),
        
 
         (create_text_overlay, reg1, s12, tf_center_justify),
@@ -4262,7 +4262,7 @@ if wb_compile_switch==1:
     tld_tags.append("dev")
 
   tld_version_string = str(
-    "@"            + \
+    "@{!}"         + \
     " rev %s %s ^" + \
     " Built %s   ") % (tld_revision, " | ".join(tld_tags), tld_now.strftime("%Y-%m-%d %H:%M")
   )
@@ -4520,10 +4520,10 @@ if wb_compile_switch==1:
             (try_begin),
               (eq, ":attrib_id", 0),
               (store_attribute_level, reg2, "$g_selected_troop", ":attrib_id"),
-              (str_store_string, s1, "@{reg2}"),
+              (str_store_string, s1, "@{!}{reg2}"),
             (else_try),
               (store_attribute_level, reg2, "$g_selected_troop", ":attrib_id"),
-              (str_store_string, s1, "@{s1}^{reg2}"),
+              (str_store_string, s1, "@{!}{s1}^{reg2}"),
             (try_end),
           (try_end),
           (create_text_overlay, reg1, s1, tf_right_align),
@@ -4548,7 +4548,7 @@ if wb_compile_switch==1:
             (try_begin),
               (eq, ":skill_id", "skl_ironflesh"),
               (store_skill_level, reg2, ":skill_id", "$g_selected_troop"),
-              (str_store_string, s1, "@{reg2}"),
+              (str_store_string, s1, "@{!}{reg2}"),
             (else_try),
               (this_or_next|eq, ":skill_id", "skl_power_strike"),
               (this_or_next|eq, ":skill_id", "skl_power_throw"),
@@ -4558,7 +4558,7 @@ if wb_compile_switch==1:
               (this_or_next|eq, ":skill_id", "skl_riding"),
               (eq, ":skill_id", "skl_horse_archery"),
               (store_skill_level, reg2, ":skill_id", "$g_selected_troop"),
-              (str_store_string, s1, "@{s1}^{reg2}"),
+              (str_store_string, s1, "@{!}{s1}^{reg2}"),
             (try_end),
           (try_end),
           (create_text_overlay, reg1, s1, tf_right_align),
@@ -4583,11 +4583,11 @@ if wb_compile_switch==1:
             (try_begin),
               (eq, ":wp_id", wpt_one_handed_weapon),
               (store_proficiency_level, reg2, "$g_selected_troop", ":wp_id"),
-              (str_store_string, s1, "@{reg2}"),
+              (str_store_string, s1, "@{!}{reg2}"),
             (else_try),
               (is_between, ":wp_id", wpt_two_handed_weapon, wpt_firearm),
               (store_proficiency_level, reg2, "$g_selected_troop", ":wp_id"),
-              (str_store_string, s1, "@{s1}^{reg2}"),
+              (str_store_string, s1, "@{!}{s1}^{reg2}"),
             (try_end),
           (try_end),
           (create_text_overlay, reg1, s1, tf_right_align),
@@ -4772,7 +4772,7 @@ if wb_compile_switch==1:
                 (eq, "$tld_start_war_by_day_or_level", 1),
                 (val_mul, reg0, 5),
             (try_end),            
-            (overlay_add_item, "$tld_options_overlay_0", "@{reg0}"),
+            (overlay_add_item, "$tld_options_overlay_0", "@{!}{reg0}"),
             (val_sub, ":level", 2),
         (try_end),
         # (overlay_add_item, "$tld_options_overlay_0", "@14"), # swy: index 3
@@ -5600,11 +5600,11 @@ if wb_compile_switch==1:
               (try_end),
               (try_begin),
                 (eq, "$g_display_agent_labels", 1),
-                (str_store_string, s2, "@{s2}"),
+                (str_store_string, s2, "@{!}{s2}"),
                 (faction_get_color, ":color", ":troop_faction"),
               (else_try),
                 (eq, "$g_display_agent_labels", 2),
-                (str_store_string, s2, "@*"),
+                (str_store_string, s2, "@{!}*"),
                 (faction_get_color, ":color", ":troop_faction"),
               (else_try),
                 (try_begin),
@@ -5614,7 +5614,7 @@ if wb_compile_switch==1:
                 (else_try),
                   (assign, ":color", 0xFFFFFF), #White instead of green - colourblind friendly
                 (try_end),
-                (str_store_string, s2, "@*"),
+                (str_store_string, s2, "@{!}*"),
               (try_end),
             (try_end),
             (overlay_set_text, ":overlay_id", s2),
@@ -6027,7 +6027,7 @@ if wb_compile_switch==1:
       (store_sub, reg1, ":sub_mesh_total", 1),
       (val_max, reg1, 1),
       (str_store_item_name, s1, "$g_current_opened_item_details"),
-      (create_text_overlay, reg0, "@{s1} has {reg1} component meshes", tf_center_justify|tf_single_line|tf_with_outline),
+      (create_text_overlay, reg0, "@{!}{s1} has {reg1} component meshes", tf_center_justify|tf_single_line|tf_with_outline),
       (position_set_x, pos1, 500),
       (position_set_y, pos1, 700),
       (overlay_set_position, reg0, pos1),
@@ -6423,7 +6423,7 @@ if wb_compile_switch==1:
         (else_try),
           (str_store_class_name, s1, reg2),
         (try_end),
-        (create_text_overlay, reg1, "@{s1}", tf_left_align),
+        (create_text_overlay, reg1, "@{!}{s1}", tf_left_align),
         (copy_position, pos1, pos0),
         (store_add, reg2, Screen_Width/2, Screen_Numberbox_Width+5),
         (position_set_x, pos1, reg2),

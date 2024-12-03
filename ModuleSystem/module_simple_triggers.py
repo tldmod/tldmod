@@ -437,7 +437,7 @@ simple_triggers = [
               (try_begin),
                 (eq, "$cheat_mode", 1),
                 (str_store_party_name, s1, ":cur_party"),
-                (display_message, "@DEBUG: {s1} was stuck, repositioning somewhere else!", color_good_news),
+                (display_message, "@{!}DEBUG: {s1} was stuck, repositioning somewhere else!", color_good_news),
               (try_end),
               
               ] or [
@@ -1255,7 +1255,7 @@ simple_triggers = [
         (assign, "$player_control_allies",0),
         (try_begin),
           (eq, "$cheat_mode",1),
-          (display_message, "@DEBUG: Player Control Allies RESET"),
+          (display_message, "@{!}DEBUG: Player Control Allies RESET"),
         (try_end),
       (try_end),
   ]),
@@ -1941,7 +1941,7 @@ simple_triggers = [
           (try_begin),
             (eq, "$cheat_mode",1),
             (assign, reg0, ":current_defeated"),
-            (display_message, "@DEBUG: Eliminate Parties - Current: {reg0}, New: {reg1}"),
+            (display_message, "@{!}DEBUG: Eliminate Parties - Current: {reg0}, New: {reg1}"),
           (try_end),
           #Kham - Eliminate Patrols Refactor END
           (str_store_string, s2, "@{s1} parties defeated: {reg1} out of {reg2}"),

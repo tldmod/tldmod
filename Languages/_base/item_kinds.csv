@@ -65,7 +65,12 @@ itm_wargarmored_2b|Armored Warg
 itm_wargarmored_2c|Armored Warg
 itm_wargarmored_3a|Armored Warg
 itm_warg_reward|Huge Warg
+itm_animal_big|Big Animal
+itm_animal_small|Small Animal
+itm_troll_weapon_long|Giant Halberd
+itm_troll_weapon_dmg|Giant Mace
 itm_tree_trunk_club_a|Tree Trunk
+itm_troll_aoe|troll aoe
 itm_giant_mace|Giant Mace
 itm_troll_shield_a|Troll Shield
 itm_arrows|Arrows
@@ -130,6 +135,8 @@ itm_harad_javelin|Harad Javelin
 itm_gondor_javelin|Gondor Javelin
 itm_rohirrim_throwing_axe|Northmen Throwing Axes
 itm_loss_throwing_axes|Lossarnach Throwing Axes
+itm_free_dunedain_helm_a|Arnor Light Helm
+itm_free_dunedain_helm_b|Arnor Helm
 itm_arnor_helm_c|Arnor Decorated Helm
 itm_arnor_helm_b|Arnor Helm
 itm_arnor_helm_a|Arnor Light Helm
@@ -433,8 +440,6 @@ itm_dunland_chieftain|Dunnish Chief Armor
 itm_dun_helm_a|Dunnish Wolf Cap
 itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|Dunnish Tall Helm
-itm_dun_helm_d|Dunnish Tall Helm
-itm_dun_helm_e|Dunnish Antler Helm
 itm_dun_shield_a|Dunnish Roundshield
 itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|Dunland Chieftain Sword
@@ -539,6 +544,7 @@ itm_desert_boots|Desert Boots
 itm_harad_leather_greaves|Harad Leather Greaves
 itm_harad_scale_greaves|Harad Greaves
 itm_harad_lamellar_greaves|Harad Splinted Greaves
+itm_camel|Harad Camel
 itm_khand_inf_helm_a|Khand Helm
 itm_khand_inf_helm_b|Khand Helm
 itm_khand_inf_helm_c1|Khand Bowl Helm
@@ -590,6 +596,7 @@ itm_rhun_helm_chieftain|Rhun Chieftain Helm
 itm_rhun_helm_pot|Rhun Pot Helm
 itm_rhun_helm_barbed|Rhun Barbed Helm
 itm_rhun_helm_round|Rhun Round Helm
+itm_rhun_helm_horde|Rhun Horde Helm
 itm_rhun_helm_leather|Rhun Leather Helm
 itm_rhun_warpick|Rhun War Pick
 itm_rhun_greataxe|Rhun Great Axe
@@ -700,7 +707,7 @@ itm_dwarf_helm_round|Dwarf Round Helm
 itm_dwarf_helm_sallet|Dwarf Sallet
 itm_dwarf_armor_d|Iron Hills Coat of Scales
 itm_dwarf_armor_a|Erebor Surcoat over Mail
-itm_leather_dwarf_armor|Dwarven Padded Coat
+itm_leather_dwarf_armor|Erebor Padded Coat
 itm_dwarf_armor_b|Erebor Tunic over Mail
 itm_leather_dwarf_armor_b|Dwarven Padded Jerkin
 itm_dwarf_armor_c|Erebor Scale Mail
@@ -719,7 +726,6 @@ itm_gondor_lance_banner|Gondor Lance With Banner
 itm_amroth_lance_banner|Dol Amroth Lance With Banner
 itm_rohan_lance_banner_sun|Rohan Lance With Sun Banner
 itm_rohan_lance_banner_horse|Rohan Lance With Horse Banner
-itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Strange Bowl of Water
 itm_map|Maps of Middle Earth
 itm_athelas_reward|Dried Athelas Leaves
@@ -783,9 +789,56 @@ itm_wolf|Wolf
 itm_werewolf|Werewolf
 itm_thrush_reward|Thrush
 itm_gauntlets_reward|Iron Fists
+itm_gondor_custom|Custom Gondor
 itm_stones_siege|Siege Stones
 itm_beorn_axe_no_attack|Beorning Axe
-itm_animal_spider|Spider
-itm_animal_bear|Bear
-itm_animal_wolf|Wolf
-itm_animal_werewolf|Werewolf
+itm_tabard_b_wb|Tabard
+itm_nobleman_outfit_b_new_wb|Nobleman Outfit
+itm_peasant_man_a_wb|Peasant Outfit
+itm_leather_jerkin_wb|Leather Jerkin
+itm_white_tunic_c_wb|Tunic Jacket
+itm_white_tunic_a_wb|White Tunic
+itm_red_tunic_wb|Red Tunic
+itm_fur_coat_wb|Dale Coat
+itm_fur_hat_a_new_wb|Fur Hat
+itm_noel_hat_a_wb|Fur Hat
+itm_peasant_dress_b_new_wb|Blue Dress
+itm_sarranid_lady_dress_wb|Blue Dress
+itm_sar_robe_b_wb|Robe
+itm_black_dress_wb|Black Dress
+itm_blackwhite_dress_wb|Lady Dress
+itm_white_tunic_b_wb|Simple Tunic
+itm_blue_tunic_wb|Blue Tunic
+itm_black_tunic_wb|Black Tunic
+itm_green_tunic_wb|Green Tunic
+itm_green_dress_wb|Green Dress
+itm_gondor_fine_outfit_dress_wb|Fine Outfit
+itm_rohan_fine_outfit_dale_dress_wb|Fine Outfit
+itm_robe_generic_dress_wb|Robe
+itm_wimple_a_wb|Wimple
+itm_wimple_with_veil_wb|Wimple
+itm_fine_hat_wb|Fine Hat
+itm_rohan_tunic_a_wb|Rohan Tunic
+itm_rohan_tunic_b_wb|Rohan Tunic
+itm_denethor_robe|Fine Outfit
+itm_ent_head_helm2|Ent Head
+itm_ent_head_helm3|Ent Head
+itm_civilian_hammer|Hammer
+itm_civilian_woodaxe_1h|Axe
+itm_civilian_woodaxe_2h|Heavy Axe
+itm_civilian_war_mattock|Mattock
+itm_civilian_great_mattock|Mattock
+itm_civilian_adz|Mattock
+itm_civilian_pickaxe|Mattock
+itm_civilian_shovel|Shovel
+itm_nazgul_robe_wb|Nazgul robe
+itm_civilian_carry_wood_heap|Fire Wood
+itm_civilian_carry_wood|Wood
+itm_civilian_carry_amphora|Amphora
+itm_civilian_carry_sack|Sack
+itm_civilian_carry_basket|Basket
+itm_civilian_carry_honey|Honey
+itm_civilian_carry_oil|Oil
+itm_civilian_carry_wood2|Wood
+itm_work_basket|Basket
+itm_work_basket_2|Basket

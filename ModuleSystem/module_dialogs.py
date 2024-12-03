@@ -4699,7 +4699,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (try_begin),(store_and,":x",":wound_mask",wound_arm  ),(neq,":x",0),(val_add,":wounds",1),(try_end),
     (try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(try_end),
     (troop_set_slot, "trp_player", slot_troop_needs_healing, 1), #Set the slot
-    #(display_message, "@DEBUG: Player is wounded"),
+    #(display_message, "@{!}DEBUG: Player is wounded"),
 
   (else_try),
   # Check If any companions are wounded before continuing with dialogue
@@ -6541,7 +6541,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       (str_store_troop_name_link, s9, "$g_talk_troop"),
       (str_store_string, s10, "@{s9} wants you to defeat {s35} of {s36} in battle."),
       (setup_quest_text,"$random_quest_no"),
-      (str_store_string, s2, "@{s10}")]],
+      (str_store_string, s2, "@{!}{s10}")]],
 
 [anyone|plyr,"lord_mission_told_target_lord", [
 (eq,"$random_quest_no","qst_blank_quest_06"),
@@ -6598,9 +6598,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       (str_store_faction_name, s7, ":quest_target_faction"),
       (str_store_string, s8, "@{s9} wants you to personally defeat {reg22} {s6} {s7}."),
       #(str_store_troop_name_plural, s36, ":quest_target_troop"),
-      (str_store_string, s35, "@{reg22}"),
+      (str_store_string, s35, "@{!}{reg22}"),
       (setup_quest_text,"$random_quest_no"),
-      (str_store_string, s2, "@{s8}")]],
+      (str_store_string, s2, "@{!}{s8}")]],
 
 [anyone,"lord_tell_mission", [
   (eq,"$random_quest_no","qst_blank_quest_05"),
@@ -6633,9 +6633,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
         (str_store_string, s7, "@{s9} wants you and your men to kill {reg22} {s6} troops."),
       (try_end),
       (str_store_faction_name, s36, ":quest_target_faction"),
-      (str_store_string, s35, "@{reg22}"),
+      (str_store_string, s35, "@{!}{reg22}"),
       (setup_quest_text,"$random_quest_no"),
-      (str_store_string, s2, "@{s7}")]],
+      (str_store_string, s2, "@{!}{s7}")]],
 
 
 [anyone|plyr,"lord_mission_told_kill_quest_targeted", [
@@ -6695,7 +6695,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       (try_end),
     (try_end),
     (setup_quest_text,"$random_quest_no"),
-    (str_store_string, s2, "@{s7}")]],
+    (str_store_string, s2, "@{!}{s7}")]],
 
 [anyone|plyr,"lord_mission_told_sea_battle", [
 (eq,"$random_quest_no","qst_blank_quest_03"),
@@ -9828,7 +9828,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (try_begin),(store_and,":x",":wound_mask",wound_arm  ),(neq,":x",0),(val_add,":wounds",1),(try_end),
     (try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(try_end),
     (troop_set_slot, "trp_player", slot_troop_needs_healing, 1), #Set the slot
-    #(display_message, "@DEBUG: Player is wounded"),
+    #(display_message, "@{!}DEBUG: Player is wounded"),
 
   (else_try),
   # Check If any companions are wounded before continuing with dialogue
@@ -12804,7 +12804,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
         (eq, ":entry", 23),
         (str_store_string, s4, "@Lead me to the Lord's hall"),
         (neg|party_slot_ge, "$current_town", slot_town_castle, 1),
-        (str_store_string, s4, "@your commanders"),
+        (str_store_string, s4, "@Lead me to your commanders"),
     (else_try),
         (eq, ":entry", 24),
         (str_store_string, s4, "@Lead me to the captain of the garrison"),
@@ -13894,7 +13894,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                         (str_store_string, s6, "@For Balin..."),
                       (try_end),],
   "{!}{s5}", "close_window", 
-  [ (assign, "$ally_reinforcement_stage", 8), (display_message, "@{s6}", color_neutral_news)]],
+  [ (assign, "$ally_reinforcement_stage", 8), (display_message, "@{!}{s6}", color_neutral_news)]],
 
 ] or []) + [ 
 

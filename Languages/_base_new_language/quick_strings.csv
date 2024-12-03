@@ -1,5 +1,5 @@
 qstr_Received_{reg0}_dama|Received {reg0} damage.
-qstr_Siege_Weapon_damaged|Siege Weapon damaged {reg10} agents
+qstr_Siege_weapon_damaged|Siege weapon damaged {reg10} agents
 qstr_Gate_is_breached!|Gate is breached!
 qstr_Gate_opens..._You_ha|Gate opens... You have reached the most sacred place in Middle Earth!
 qstr_Secret_place_discove|Secret place discovered!
@@ -36,7 +36,6 @@ qstr_Gauntlet_wave:_{reg1|Gauntlet wave: {reg1}
 qstr_Remain_in_retirement|Remain in retirement.
 qstr_Go_back_to_the_adven|Go back to the adventuring.
 qstr_swy_ui_opacity|swy ui opacity
-qstr_______|      
 qstr_A_peaceful_village_n|A peaceful village not far from Westfold...
 qstr_The_War_is_upon_Roha|The War is upon Rohan!
 qstr_Minas_Tirith___The_W|Minas Tirith - The White City
@@ -55,16 +54,11 @@ qstr_Arms|Arms
 qstr_Thighs|Thighs
 qstr_Legs|Legs
 qstr_Rotate|Rotate
-qstr_Rotation={reg0}|Rotation={reg0}
-qstr_{s30}|{s30}
-qstr_{s1}|{s1}
 qstr_Close|Close
 qstr_Faction_Side:^^Campa|Faction Side:^^Campaign Difficulty*:^^Home Theater:^^Marshall:^^Enemies:^^
 qstr_Campaign_Difficulty_|Campaign Difficulty is based on starting faction strength, theater enemies,^ and faction troop tree & troop equipment.
-qstr_{s2}|{s2}
 qstr_Rallies:|Rallies:
 qstr_View_Keybinds__Press|View Keybinds (Press Insert)
-qstr_{reg75}|{reg75}
 qstr_What_do_you_fight_fo|What do you fight for?
 qstr_Go_Back...|Go Back...
 qstr_Learn_about_the_diff|Learn about the different factions of Middle-Earth
@@ -83,13 +77,10 @@ qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
 qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
 qstr_one_of_the_URUK_HAI^|one of the URUK-HAI,^ bred in Isengard
 qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
-qstr__rev_4144_wb__dev_^_| rev 4144 wb | dev ^ Built 2024-12-02 09:27   
 qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
 qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
 qstr_Attributes|Attributes
 qstr_STR^AGI^INT^CHA|STR^AGI^INT^CHA
-qstr_{reg2}|{reg2}
-qstr_{s1}^{reg2}|{s1}^{reg2}
 qstr_Skills|Skills
 qstr_Ironflesh^Power_Stri|Ironflesh^Power Strike^Power Throw^Power Draw^Shield^Athletics^Riding^Horse Archery
 qstr_Proficiencies|Proficiencies
@@ -98,7 +89,6 @@ qstr_Equipment|Equipment
 qstr_The_Last_Days_Mod_Op|The Last Days Mod Options
 qstr_War_Starts_after_Day|War Starts after Day: 
 qstr_War_Starts_at_Level:|War Starts at Level: 
-qstr_{reg0}|{reg0}
 qstr_Battle_Formations_an|Battle Formations and AI:  
 qstr_Native|Native
 qstr_TLD_FormAI__Original|TLD FormAI (Original)
@@ -137,11 +127,9 @@ qstr_Be_aware_that_many_q|Be aware that many quests and campaign mechanics scale
 qstr_Requires_TLD_NewForm|Requires TLD NewFormAI
 qstr_Troop_Tree|Troop Tree
 qstr__Click_on_a_unit_for|(Click on a unit for details)
-qstr_*|*
 qstr_Weapons|Weapons
 qstr_Armors|Armors
 qstr_Others|Others
-qstr_{s1}_has_{reg1}_comp|{s1} has {reg1} component meshes
 qstr_F4___Complex_formati|F4 - Complex formations
 qstr_F7___Memorize_div._p|F7 - Memorize div. placement
 qstr_F8___Default_divisio|F8 - Default division placement
@@ -184,7 +172,6 @@ qstr_You_spent_{reg10}_of|You spent {reg10} of your influence with {s1}, with {r
 qstr_Troop_upkeep:|Troop upkeep:
 qstr_{s11}_and_{s10}|{s11} and {s10}
 qstr_their|their
-qstr_{s11}|{s11}
 qstr_its|its
 qstr_[no_upkeep_costs]|[no upkeep costs]
 qstr_Short_of_Resource_Po|Short of Resource Points!!
@@ -199,10 +186,6 @@ qstr_Theodred|Theodred
 qstr_Gamling|Gamling
 qstr_{s1}_of_{s3}_was_def|{s1} of {s3} was defeated in battle.
 qstr_{s2}_have_razed_{s1}|{s2} have razed {s1}!
-qstr_DEBUG:_{s1}_no_longe|DEBUG: {s1} no longer leads a party.
-qstr_DEBUG:_{s1}_is_no_lo|DEBUG: {s1} is no longer a prisoner.
-qstr_DEBUG:_{s1}_is_now_a|DEBUG: {s1} is now a prisoner of player.
-qstr_DEBUG:_{s1}_is_now_a_|DEBUG: {s1} is now a prisoner of {s2}.
 qstr_{s1}_Scouts|{s1} Scouts
 qstr_Left_for_dead_but_mi|Left for dead but miraculously survived: {reg1?{reg1} time{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_|1 Res.Pt ({s2})
@@ -288,10 +271,6 @@ qstr_This_item_can_be_use|This item can be used by {s2}
 qstr_Do_you_want_to_disem|Do you want to disembark?
 qstr_Move_here|Move here
 qstr_View_notes|View notes
-qstr_Debug_str:_{reg0}|Debug str: {reg0}
-qstr_DEBUG:_Trolls_for_Tr|DEBUG: Trolls for Troll quest are sped down.
-qstr__{s61}| {s61}
-qstr_ERROR:_More_than_15_|ERROR: More than 15 trade routes are given for {s1}.
 qstr_Looted_your_items|Looted your items
 qstr_nothing|nothing
 qstr_Good|Good
@@ -306,9 +285,6 @@ qstr_{reg4}_wounded_{reg5|{reg4} wounded, {reg5} routed
 qstr_killed|killed
 qstr_routed|routed
 qstr_wounded|wounded
-qstr_{reg3?{reg3}:}_{s1}_|{reg3?{reg3}:} {s1} ({s2})
-qstr_{s0}_{reg3?{reg3}:}_|{s0}, {reg3?{reg3}:} {s1} ({s2})
-qstr_{s0}^{reg3?{reg3}:}_|{s0}^{reg3?{reg3}:} {s1} ({s2})
 qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
 qstr_^None|^None
 qstr_near_the_Great_East_|near the Great East Road, the abandoned old road
@@ -399,7 +375,6 @@ qstr_Ha!_Soon_there_will_|Ha! Soon there will be spoils for everybody.
 qstr_Yes._Unless_you_get_|Yes. Unless you get killed first.
 qstr_You_don_t_get_any_sp|You don't get any spoils if YOU get killed, scum of {s21}.
 qstr_Is_that_a_threat?_Be|Is that a threat? Be thankful that we have enemies around to slaughter before it is your turn.
-qstr_{s15}_|{s15} 
 qstr_The_enemy_is_upon_us|The enemy is upon us! ^
 qstr_They_are_upon_us!_^|They are upon us! ^
 qstr_{playername}_and_{hi|{playername} and {his/her} rabble from {s18} is upon us! ^
@@ -450,9 +425,6 @@ qstr_Death_to_the_trespas|Death to the trespassers of the lands of {s16}!
 qstr_CHARGE!_Let_s_clear_|CHARGE! Let's clear the {s18} {s19}scum from {s17}!
 qstr_{s14}Now_that_{s19}s|{s14}Now that {s19}scum will taste the fury of the bear people!
 qstr_Attack!|Attack!
-qstr_TLD_ERROR!_could_not|TLD ERROR! could not spawn the party on the same side of the white mountains
-qstr_Cheat:_Impose_a_batt|Cheat: Impose a battlefield
-qstr_debug:_using_scene_I|debug: using scene ID N. {reg10}
 qstr_You_are_attacked_by_|You are attacked by a group of bandits!
 qstr_Holding|Holding
 qstr_Following|Following
@@ -469,15 +441,6 @@ qstr_Blunt_Weapons|Blunt Weapons
 qstr_Infantry__{reg1}_|Infantry ({reg1})
 qstr_Archers__{reg2}_|Archers ({reg2})
 qstr_Cavalry__{reg3}_|Cavalry ({reg3})
-qstr_{reg4}|{reg4}
-qstr_{reg5}|{reg5}
-qstr_{reg6}|{reg6}
-qstr_{reg7}|{reg7}
-qstr_{reg8}|{reg8}
-qstr_{reg9}|{reg9}
-qstr_{reg10}|{reg10}
-qstr_{reg11}|{reg11}
-qstr_{reg12}|{reg12}
 qstr_Given_by:_{s62}|Given by: {s62}
 qstr_Given_on:_{s60}|Given on: {s60}
 qstr_You_have_{reg0}_days|You have {reg0} days to finish this quest.
@@ -500,12 +463,10 @@ qstr_no_holdings|no holdings
 qstr_{s57}_and_{s58}|{s57} and {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?She:He}
-qstr_^{s59}|^{s59}
 qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}{reg10?^{reg3?She:He} died on the battlefield!:}
 qstr_The_last_time_you_sa|The last time you saw {reg1?her:him}, {s1}
 qstr_The_last_time_you_he|The last time you heard about {reg1?her:him}, {s1}
 qstr_The_{s50}|The {s50}
-qstr_{s50}|{s50}
 qstr_{s50}_belongs_to_{s1|{s50} belongs to {s1} of {s2}.^
 qstr_Current_garrison_con|Current garrison consists of {reg5} men.^Has food stock for {reg6} days.
 qstr_Very_Poor|Very Poor
@@ -522,8 +483,6 @@ qstr_You_ve_lost_{s6}_fro|You've lost {s6} from losing {s7}
 qstr_{s50}_Caves|{s50} Caves
 qstr_{s50}_Mines|{s50} Mines
 qstr_{s50}_Woods|{s50} Woods
-qstr_ERROR:_Companion_str|ERROR: Companion strings actual/needed: {reg1}/{reg2}
-qstr_ERROR:_Companion_stri|ERROR: Companion strings actual/needed: {reg11}/{reg22}
 qstr_{s4}_looks_upset.|{s4} looks upset.
 qstr_your_party|your party
 qstr_{reg0?One_of_your_pr|{reg0?One of your prisoners, :}{s1} of {s3} has escaped from captivity!
@@ -646,7 +605,6 @@ qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate
 qstr_I_did_what_I_could.|I did what I could.
 qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
 qstr_Hail_{playername}!_I_|Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!
-qstr_@I_did_what_I_could.|@I did what I could.
 qstr_Your_deed_has_greatl|Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!
 qstr_{playername}_I_will_|{playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
 qstr_I...|I...
@@ -666,14 +624,12 @@ qstr_The_strength_of_the_|The strength of the remaining allied factions of the {
 qstr_{s30}_reinforced_by_|{s30} reinforced by {reg65} fac str
 qstr_{s1}_has_been_besieg|{s1} has been besieged by {s2} of {s3}.
 qstr_The_forces_of_{s2}_m|The forces of {s2} march to {s15}!
-qstr_ERROR|ERROR
 qstr_Rohan_capital_moved_|Rohan capital moved from Edoras to Hornburg!
 qstr_Dale_capital_moved_f|Dale capital moved from Dale to Esgaroth!
 qstr_Gundabad_capital_mov|Gundabad capital moved from Gundabad to Goblin Town!
 qstr_You_have_breached_th|You have breached the Ring of Isengard with the help of the Tree Men. During the battle, Isengard was flooded, but Orthanc still stands unscathed in midst of the havoc. You should investigate the aftermath.
 qstr_The_hosts_of_{s2}_re|The hosts of {s2} retreat back to their homes!
 qstr____Ruins_of_{s1}___|   Ruins of {s1}   
-qstr_{s1}_siege_attack!|{s1} siege attack!
 qstr_{s1}_has_joined_the_|{s1} has joined the Hand
 qstr_{s1}_has_joined_the_E|{s1} has joined the Eye
 qstr_ranks|ranks
@@ -725,62 +681,30 @@ qstr_Your_troops_flee_in_|Your troops flee in terror!
 qstr_Many_of_your_troops_|Many of your troops are fleeing from battle.
 qstr_Some_of_your_troops_|Some of your troops are fleeing from battle.
 qstr_A_few_of_your_troops|A few of your troops are fleeing from battle.
-qstr_lord_{reg1}:_{s1}_is|lord {reg1}: {s1} is defending {s2}
-qstr_lord_{reg1}:_{s1}_NO|lord {reg1}: {s1} NOT defending {s2}
-qstr_lord_{reg1}:_{s1}_is_|lord {reg1}: {s1} is patrolling around {s2}
-qstr_lord_{reg1}:_{s1}_NOT|lord {reg1}: {s1} NOT patrolling around {s2}
-qstr_lord_{reg1}:_{s1}_is_a|lord {reg1}: {s1} is accompanying {s2}
-qstr_lord_{reg1}:_{s1}_NOT_|lord {reg1}: {s1} NOT accompanying {s2}
 qstr_Gained_permanent_+1_to_P|Gained permanent +1 to Pathfinding.
 qstr_Gained_permanent_+1_to_S|Gained permanent +1 to Spotting.
-qstr_INVALID_PARTY_BEING_|INVALID PARTY BEING REMOVED ({s1})! DISABLED INSTEAD. PLEASE LET THE DEVS KNOW. THIS IS A TEST AGAINST SAVE GAME CORRUPTION.
-qstr_DEBUG:_{s1}_made_dor|DEBUG: {s1} made dormant.
-qstr_DEBUG:_Dormant_{s1}_|DEBUG: Dormant {s1} spawned around {s2}
-qstr_DEBUG:_No_Dormant_{s|DEBUG: No Dormant {s1} found. Creating one near {s2}
 qstr_{s11}_recovered_from|{s11} recovered from a serious wound.
 qstr_Volunteers|Volunteers
 qstr_Reserves|Reserves
-qstr_{s4}|{s4}
 qstr_have_taken_measure_o|have taken measure of your faction's current strength and has grown bolder.
 qstr_loses_Faction_Streng|loses Faction Strength as supply lines were disrupted.
 qstr_loses_Faction_Strengt|loses Faction Strength due to the destruction of their camp.
 qstr_gains_Faction_Streng|gains Faction Strength as news of your victory spreads.
-qstr_{s11}_{s10}|{s11} {s10}
-qstr_{s13}_{s14}|{s13} {s14}
 qstr_Notice:_Isengard_Las|Notice: Isengard Last Stand quest cancelled for savegame compatibility reasons. Isengard can now be sieged like a regular city.
 qstr_Hobbit_quest_aborted|Hobbit quest aborted for compatibility reasons. Hobbits will now only appear after certain conditions are met.
 qstr_This_update_has_chan|This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu.
 qstr_Something_wrong_not_|Something wrong, not enough troops to remove
 qstr_Troop:_{s6}___Level:|Troop: {s6} - Level: {reg1}
 qstr_{reg6}_Centers_Left_|{reg6} Centers Left for {s2}
-qstr_DEBUG:_{reg0}_troop_|DEBUG: {reg0} troop stacks of {s1} found
-qstr_DEBUG:_8_Hours_to_hi|DEBUG: 8 Hours to hide
-qstr_DEBUG:_7_Hours_to_hi|DEBUG: 7 Hours to hide
-qstr_DEBUG:_6_Hours_to_hi|DEBUG: 6 Hours to hide
-qstr_DEBUG:_5_Hours_to_hi|DEBUG: 5 Hours to hide
 qstr_Raiders|Raiders
 qstr_have_won_the_sea_bat|have won the sea battle, demoralizing your troops. The enemy may take advantage of this defeat and attack more frequently.
 qstr_loses_Faction_Strength|loses Faction Strength due to the destructive raid.
 qstr_loses_Faction_Strength_|loses Faction Strength due to the your success at the sea.
 qstr_You_spent_{reg67}_of|You spent {reg67} of your influence with {s1}, with {reg66} remaining.
-qstr_{s15}_VS_{s16}|{s15} VS {s16}
-qstr_Pre_div:_{reg71}___A|Pre-div: {reg71} - A: {reg67}
-qstr_Pre_Division:_A:{reg|Pre-Division: A:{reg71} -- B:{reg68} -- C:{reg70} --  D:{reg61} -- E:{reg63}
-qstr_Formula:_[_A:{reg67}|Formula: [(A:{reg67} + B:{reg69} - C:{reg64})
-qstr_Formula:_[_A:{reg67}_|Formula: [(A:{reg67} + B:{reg69} - C:{reg64}) * D: {reg61}]/20000
-qstr_Formula:_[_A:{reg67}_+|Formula: [(A:{reg67} + B:{reg69} - C:{reg64}) * D: {reg61}]/100 + E: {reg63}
-qstr_Total:_{reg62}|Total: {reg62}
-qstr_lord_{reg1}:_{s1}_is_at|lord {reg1}: {s1} is attacking {s2}
-qstr_lord_{reg1}:_{s1}_NOT_a|lord {reg1}: {s1} NOT attacking {s2}
 qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?was:is around {s5}.
 qstr_Army_of_{s6}|Army of {s6}
 qstr_Host_of_{s6}|Host of {s6}
 qstr_The_host_of_Isengard|The host of Isengard has razed {s2}!
-qstr_warp_array_created_a|warp array created at {reg1}
-qstr_warp_temp_array_crea|warp temp array created at {reg1}
-qstr_{s0}|{s0}
-qstr_{s3}{s1}{s0}|{s3}{s1}{s0}
-qstr_{s3}{s2}{s0}|{s3}{s2}{s0}
 qstr_{s1}_{s0}|{s1}, {s0}
 qstr_{s1}_and_{s0}|{s1} and {s0}
 qstr_No_Troops_Left.|No Troops Left.
@@ -797,23 +721,16 @@ qstr_Inventory|Inventory
 qstr_Show_stats|Show stats
 qstr_Show_item_details__|Show item details  
 qstr_Troop_detail|Troop detail
-qstr_{s1}^|{s1}^
 qstr_{s1}Level:_{reg1}^|{s1}Level: {reg1}^
 qstr_{s1}Hit_Points:_{reg|{s1}Hit Points: {reg1}
 qstr_{s1}Atributes:_^___S|{s1}Atributes: ^   Strength:^
-qstr_{s2}^{reg1}^|{s2}^{reg1}^
 qstr_{s1}___Agility:|{s1}   Agility:
-qstr_{s2}{reg1}|{s2}{reg1}
 qstr_{s1}Main_skills:_^|{s1}Main skills: ^
 qstr_{s1}___Power_Strike:|{s1}   Power Strike:^
-qstr_{s2}{reg1}^|{s2}{reg1}^
 qstr_{s1}___Athletics:^|{s1}   Athletics:^
 qstr_{s1}___Riding:^|{s1}   Riding:^
-qstr_{s2}_^|{s2}-^
 qstr_{s1}___Power_Throw:^|{s1}   Power Throw:^
 qstr_{s1}___Power_Draw:^^|{s1}   Power Draw:^^
-qstr_{s2}{reg1}^^|{s2}{reg1}^^
-qstr_{s2}_^^|{s2}-^^
 qstr_{s1}Weapons:^|{s1}Weapons:^
 qstr_{s1}___One_Handed:^|{s1}   One Handed:^
 qstr_{s1}___Two_Handed:^|{s1}   Two Handed:^
@@ -822,7 +739,6 @@ qstr_{s1}___Archery:^|{s1}   Archery:^
 qstr_{s1}___Crossbow:^|{s1}   Crossbow:^
 qstr_{s1}___Throwing:^|{s1}   Throwing:^
 qstr_{s1}___Slings:|{s1}   Slings:
-qstr_{s2}_|{s2}-
 qstr__Click_on_the_troop_|(Click on the troop to rotate it)^^Click on pieces of gear ^(helmet, armor, gloves and boots)^ to display them.
 qstr_ready_bows_and_missi|ready bows and missiles
 qstr_ready_side_arms|ready side arms
@@ -831,8 +747,6 @@ qstr_ready_polearms|ready polearms
 qstr_shields_up|shields up
 qstr_doff_shields|doff shields
 qstr_Distance___{reg70}__|Distance - {reg70} - {s11} Party - {s12} Troop
-qstr_{s70}_target_found|{s70} target found
-qstr_Mordor_Cloud_Spawned|Mordor Cloud Spawned
 qstr_A_golden_mist_from_L|A golden mist from Lórien covers the battlefield. Your troops feel encouraged by the presence of the Lady.
 qstr_A_golden_mist_from_Lr|A golden mist from Lórien covers the battlefield. The witch is near, sending shivers down you and your troops' spine.
 qstr_Dark_clouds_from_Mor|Dark clouds from Mordor cover the battlefield. Your archers have trouble seeing the enemy, and the presence of evil terrifies your men.
@@ -862,7 +776,6 @@ qstr_Press_Ctrl_and_Up/Do|Press Ctrl and Up/Down arrow keys to tilt up/down
 qstr_Fixed_Camera___Right|Fixed Camera - Right Shoulder
 qstr_Fixed_Camera___Left_|Fixed Camera - Left Shoulder
 qstr_Fixed_Camera___Cente|Fixed Camera - Center
-qstr_key_clicked|key clicked
 qstr_The_Nazgul_retreats!|The Nazgul retreats!
 qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
 qstr_{s7}_waves_at_you.|{s7} waves at you.
@@ -897,11 +810,9 @@ qstr_Formations_turned_OF|Formations turned OFF in options menu
 qstr_Division_{reg1}_{s2}_g|Division {reg1} {s2} goes to its memorized position...
 qstr_Division_{reg1}_{s2}_f|Division {reg1} {s2} forms line (memorized).
 qstr_Division_{reg1}_{s2}_fo|Division {reg1} {s2} forms {reg0} lines (memorized).
-qstr_fellbeast_spawned|fellbeast spawned
 qstr_Delivered_{reg60}_da|Delivered {reg60} damage.
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
 qstr_Your_bear_form_has_{|Your bear form has {reg2}/{reg1} HP!
-qstr_DEBUG:_Ti_on_item_wi|DEBUG: Ti on item wielded
 qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
 qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
 qstr_Your_mount_is_scared|Your mount is scared by the {s5}!
@@ -925,8 +836,6 @@ qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custo
 qstr_Battlefield_is_too_s|Battlefield is too small for complex AI formations.
 qstr_You_have_a_clear_per|You have a clear perception of great imminent danger, from all around you!
 qstr_New_ent_reached_batt|New ent reached battle scene...
-qstr_battle_won_triggered|battle won triggered - Good
-qstr_battle_won_triggered_|battle won triggered - Evil
 qstr_You_receive_word_tha|You receive word that Beorning villages were attacked. Beornings lose faction strength.
 qstr_You_receive_word_that|You receive word that the Ring Hunter Leaders were seen travelling towards Mordor, a chest in tow. Mordor gains faction strength.
 qstr_Enemy_reinforcements|Enemy reinforcements have arrived
@@ -961,8 +870,6 @@ qstr_Ballista:_out_of_amm|Ballista: out of ammo!
 qstr_Ballista:_turn_CURSO|Ballista: turn CURSOR, aim LSHIFT, shoot SPACE, set fire T, exit F
 qstr_Ballista:_out_of_ammo|Ballista: out of ammo
 qstr_The_ladders_on_Deepi|The ladders on Deeping Wall! Watch out!
-qstr_max_X_{reg0}_max_Y_{|max X {reg0} max Y {reg1}
-qstr_Press_F3_to_start_th|Press F3 to start the battle.
 qstr_THREE.._TWO..._ONE..|THREE.. TWO... ONE.... FIGHT!
 qstr_You_have_come_upon_t|You have come upon the ruins of Amon Hen, the Hill of Sight, a Gondorian watch-tower atop which rests the Seat of Seeing^^You sense that this place was once great but has long been forgotten
 qstr_You_have_come_upon_th|You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^The marshlands have swallowed up what was once a grassy plain, and now the only green is the scum of livid weed on the dark greasy surfaces of the sullen waters^^Dead grasses and rotting reeds loom up in the mists like ragged shadows of long forgotten summers, and bodies of men, elves, and orcs float in the murky depths^^The air feels cold and clammy, and you can't help but shiver as you see candle-lights flickering in the eyes of an elf corpse just beneath the water's surface
@@ -1033,33 +940,8 @@ qstr_Resource_Points:^_{r|Resource Points:^ {reg12} (in {s16})^
 qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} until next promotion^
 qstr_{s13}_{reg11}__with_|{s13} {reg11} (with {s16})^
 qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (in {s16})^
-qstr__={s10}=_^{s11}^^^{s|-={s10}=-^{s11}^^^{s13}^^^{s15}.
-qstr_{s1}___{s15}|{s1} - {s15}
-qstr_Dressing_Room|Dressing Room
-qstr_Formations_Test|Formations Test
 qstr_Four_years_after_bri|Four years after bringing a group of Dwarves from Erebor to attempt to resettle the once-Dwarven city of Khazad-dûm, Balin was killed by an Orc arrow while peering into Lake Mirrormere, and his people became immediately engaged with many Orcs coming up the Silverlode River. After a continuous retreat from the East-gate and First Hall, then the Bridge of Khazad-dûm and Second Hall, the remaining Longbeards were forced all the way back into the Twenty-first Hall. After an unsuccessful attempt to escape through the Doors of Durin that saw the death of Óin, the Chamber of Mazarbul became the last hold-out of the Colony after losing the Twenty-first Hall just outside the chamber. Barring the gates, Ori and the few survivors set up a final defense.
 qstr_You_chase_an_orc_sco|You chase an orc scout party into the forest...
-qstr_TEST:_troll_VS_infan|TEST: troll VS infantry
-qstr_TEST:_troll_VS_Weak_|TEST: troll VS Weak infantry
-qstr_TEST:_troll_VS_Elves|TEST: troll VS Elves
-qstr_TEST:_troll_VS_arche|TEST: troll VS archers
-qstr_TEST:_troll_VS_chava|TEST: troll VS chavalry
-qstr_TEST:_troll_VS_lance|TEST: troll VS lancers
-qstr_TEST:_Troll_vs_Troll|TEST: Troll vs Troll
-qstr_TEST:_Troll_by_playe|TEST: Troll by player
-qstr_TROLL_TEST|TROLL TEST
-qstr_TEST:_warg_test_1_VS|TEST: warg test 1 VS 1
-qstr_TEST:_warg_test_2_VS|TEST: warg test 2 VS 3
-qstr_TEST:_warg_test_many|TEST: warg test many VS many
-qstr_TEST:_play_warg_test|TEST: play warg, test 1 VS 1
-qstr_TEST:_play_wargs_tes|TEST: play wargs, test 2 VS 3
-qstr_TEST:_play_wargs_man|TEST: play wargs, many VS many
-qstr_TEST_BATTLE:_{reg10}|TEST BATTLE: {reg10} {s10} vs {reg11} {s11}
-qstr_TEST_SCENE|TEST SCENE
-qstr_FACTION_SHOWOFF|FACTION SHOWOFF
-qstr___| -
-qstr__| 
-qstr__+| +
 qstr_^No_food:___{reg7}|^No food:  -{reg7}
 qstr_Current_party_morale|Current party morale is {reg5}.^Current party morale modifiers are:^^Base morale:  +50^Party size: {s2}{reg1}^Leadership: {s3}{reg2}^Food variety: {s4}{reg3}{s5}^Special items: {s6}{reg6}^Recent events: {s7}{reg4}^TOTAL:  {reg5}
 qstr_Defending|Defending
@@ -1084,37 +966,9 @@ qstr_{s2}^_________{s4}:_|{s2}^         {s4}: {reg1} ({s23})
 qstr__________Faction_str|         Faction strengths report:^{s2}
 qstr_{s1}^^Factions_are_n|{s1}^^Factions are normally sieged when below {reg1} strength.
 qstr_Savagery|Savagery
-qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|Traits gained:^{s2}
 qstr_^^You_are_{s17}.|^^You are {s17}.
 qstr_Assassins_in_the_cam|Assassins in the camp, defend yourself!
-qstr_Ally_party_size:_{re|Ally party size: {reg1}
-qstr_Enemy_party_size:_{r|Enemy party size: {reg1}
-qstr_Spawned_routed_parti|Spawned routed parties!
-qstr_Party_position__{reg|Party position ({reg2},{reg3}).
-qstr_XP_added|XP added
-qstr_9000_XP_added___now_|9000 XP added - now wait for the War...(assumes war starts at level 8)
-qstr_{s1}_rank_points_inc|{s1} rank points increased to {reg0}, influence to {reg1}!
-qstr_{s10}_crushed!_Lords|{s10} crushed! Lords will go to their capitals...
-qstr_{s2}^{s4}:_{reg1}__{|{s2}^{s4}: {reg1} ({s23}) Diff: {reg2}
-qstr_{s1}doing_nothing|{s1}doing nothing
-qstr_{s1}escorting_{s7}|{s1}escorting {s7}
-qstr_{s1}besieging_{s7}|{s1}besieging {s7}
-qstr_{s1}defending_{s7}|{s1}defending {s7}
-qstr_{s1}patrolling_aroun|{s1}patrolling around {s7}
-qstr_{s1}recruiting_in_{s|{s1}recruiting in {s7} - INVALID
-qstr_{s1}raiding_around_{|{s1}raiding around {s7} - INVALID
-qstr_{s1}engaging_{s7}|{s1}engaging {s7}
-qstr_{s1}retreating_to_{s|{s1}retreating to {s7}
-qstr_{s1}unknown_{reg3}_|{s1}unknown({reg3})
-qstr_{s10}_besieged!|{s10} besieged!
-qstr_Gandalf_would_like_t|Gandalf would like to have a little chat!
-qstr_Kham_Cheat_Mode_ON!|Kham Cheat Mode ON!
-qstr_Raft_Men_party_enabl|Raft Men party enabled. They are down River Running
-qstr_theater:_{reg0}|theater: {reg0}
-qstr_Orc_Horde_Spawned!|Orc Horde Spawned!
-qstr_Vet_Archer_Spawned!|Vet Archer Spawned!
-qstr_Player_Siege_Enabled|Player Siege Enabled
 qstr_OFF__cheat_|OFF (cheat)
 qstr_All_messages|All messages
 qstr_{reg0}__will_most_li|{reg0} (will most likely cause save crashes)
@@ -1162,17 +1016,11 @@ qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
 qstr_Regular_troops_only|Regular troops only
 qstr_Heroes_only|Heroes only
 qstr_Regulars_and_Heroes|Regulars and Heroes
-qstr_Added_1000_experienc|Added 1000 experience to player.
-qstr_Attributes_skills_an|Attributes, skills and proficiencies raised.
-qstr_Items_added_to_playe|Items added to player inventory.
-qstr_Looter_party_was_spa|Looter party was spawned nearby.
-qstr_Ironman_turned_off|Ironman turned off
 qstr_HP_lost_from_poisoni|HP lost from poisoning.
 qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|A group of {s1} is {s10} toward you.
 qstr_You_are_attacking_a_|You are attacking a group of {s1}.
 qstr_The_battle_against_t|The battle against the group of {s1} continues.
-qstr_CHEAT:_healed!!!|CHEAT: healed!!!
 qstr_There_are_{reg39}_al|There are {reg39} allied commanders in this battle. You can command them and their troops for {reg40}/{reg41} influence.
 qstr_There_are_{reg39}_all|There are {reg39} allied commanders in this battle. You don't have enough influence to assume command.
 qstr_Having_a_small_party|Having a small party has its benefits...You and your troops hide from the enemy for a few hours to be sure that you are not seen.
@@ -1189,14 +1037,10 @@ qstr_^^Ally_Casualties:{s|^^Ally Casualties:{s0}
 qstr_You_and_{s3}_celebra|You and {s3} celebrate your victory against {s4}.
 qstr_News_of_your_victory|News of your victory against {s4} reach {s3}.
 qstr_{s3}_witnesses_your_|{s3} witnesses your victory against {s4}.
-qstr_Debug:_giving_{reg62|Debug: giving {reg62} rank points for impressed faction.
 qstr_Even_though_there_we|Even though there were no allies to witness your victory, your troops nevertheless celebrate your triumph.
 qstr_{s1}_of_{s3}_managed|{s1} of {s3} managed to escape.
-qstr_{s17}|{s17}
 qstr_Prisoners_rescued_so|Prisoners rescued so far: {reg1}
 qstr_{reg1}_kills_of_{s1}|{reg1} kills of {s1} faction troops counted towards Oath. TOTAL Kills: {reg0}
-qstr_DEBUG:_Target_Party_|DEBUG: Target Party - YES
-qstr_DEBUG:_Target_Party__|DEBUG: Target Party - NO
 qstr_Perhaps_I_m_getting_|Perhaps I'm getting unlucky...
 qstr_Retirement_is_starti|Retirement is starting to sound better and better.
 qstr_No_matter!_I_will_pe|No matter! I will persevere!
@@ -1232,7 +1076,6 @@ qstr_The_assasins_beat_yo|The assasins beat you down and leave you for dead. .
 qstr_You_have_fallen._The|You have fallen. The bandits quickly search your body for valuables they can find, then vanish into the night. They have left you alive, if only barely.
 qstr_Luckily_some_of_your|Luckily some of your companions came to search for you when you did not return, and find you lying in the ditch. They carried you to safety and dressed your wounds.
 qstr_Luckily_some_passing|Luckily some passing locals found you lying in the ditch, and recognised you as someone other than a simple beggar. They carried you to safety and dressed your wounds.
-qstr_{s29}|{s29}
 qstr_{s13}^^You_have_succ|{s13}^^You have successfully sneaked in.
 qstr_The_tomb_is_destroye|The tomb is destroyed. A fierce fight took place here.
 qstr_Nothing_of_interest|Nothing of interest
@@ -1318,10 +1161,8 @@ qstr_{s1}_has_escaped_fro|{s1} has escaped from your party.
 qstr_You_have_left_{s1}.|You have left {s1}.
 qstr_You_are_entering_{s1|You are entering {s1} ({s2}).
 qstr_You_are_entering_{s1}|You are entering {s1}.
-qstr_DEBUG:_{s1}_was_stuc|DEBUG: {s1} was stuck, repositioning somewhere else!
 qstr_The_war_expands_comm|The war expands, commanders are getting bolder! (siege requirements reduced)
 qstr_Your_party_is_spotte|Your party is spotted by {s1}.
-qstr_DEBUG:_Player_Contro|DEBUG: Player Control Allies RESET
 qstr_The_effects_of_the_O|The effects of the Orc Brew have dissipated.
 qstr_The_effects_of_the_M|The effects of the Miruvor have dissipated.
 qstr_Athelas_used_up.|Athelas used up.
@@ -1332,7 +1173,6 @@ qstr_{s1}_was_killed_on_t|{s1} was killed on the battlefield. Mission canceled.
 qstr_{s1}_has_been_defeat|{s1} has been defeated. Mission canceled.
 qstr_You_must_follow_{s1}|You must follow {s1}!
 qstr_You_must_follow_{s1}!|You must follow {s1}! This is your last warning!
-qstr_DEBUG:_Eliminate_Par|DEBUG: Eliminate Parties - Current: {reg0}, New: {reg1}
 qstr_{s1}_parties_defeate|{s1} parties defeated: {reg1} out of {reg2}
 qstr_{reg65}_Moria_and/or|{reg65} Moria and/or Gundabad troops killed. (Counter refreshes every hour)
 qstr_{reg65}_{s3}_troops_|{reg65} {s3} troops killed. (Counter refreshes every hour)
@@ -1391,7 +1231,6 @@ qstr_Reinforcements|Reinforcements
 qstr_Refugees_Escaped:_{r|Refugees Escaped: {reg10} --- Refugees Killed: {reg11}
 qstr_Raider_Parties_Kille|Raider Parties Killed: {reg12}
 qstr_One_of_the_target_ce|One of the target centers by the refugee trains have been destroyed. The refugees have scattered, and are nowhere to be found.
-qstr_quest_concluded|quest concluded
 qstr_As_an_Orc_or_a_Dwarf|As an Orc or a Dwarf, you can take advantage of the Custom Camera we have implemented in order to improve your experience with TLD's shorter races. See Game Concepts for more information about how to use this.
 qstr_Custom_Camera|Custom Camera
 qstr_{reg65?my_Lady:my_Lo|{reg65?my Lady:my Lord}
@@ -1651,7 +1490,6 @@ qstr_Do_you_mark_how_our_|Do you mark how our bravest fighters falter at the mer
 qstr_This_is_a_chance_for|This is a chance for me to show my quality. I shall defeat {s7} in the sight of enemy and ally alike.
 qstr_Accursed_be_those_wh|Accursed be those who follow {s7} this day, for I shall strike them down for all to see!.
 qstr_{s9}_wants_you_to_de|{s9} wants you to defeat {s35} of {s36} in battle.
-qstr_{s10}|{s10}
 qstr_I_humbly_ask_that_yo|I humbly ask that you find another for this task. I do not think I could best {s7} in battle.
 qstr_Mercy_I_crave!_To_fa|Mercy, I crave! To face {s7} in open battle is sheer folly! I cannot do this thing!
 qstr_strong_warriors_from|strong warriors from {s7}
@@ -1662,14 +1500,11 @@ qstr_I_will_do_what_you_a|I will do what you asked, and the men will witness.
 qstr_high_level_troops_fr|high level troops from
 qstr_elite_level_troops_f|elite level troops from
 qstr_{s9}_wants_you_to_pe|{s9} wants you to personally defeat {reg22} {s6} {s7}.
-qstr_{reg22}|{reg22}
-qstr_{s8}|{s8}
 qstr_I_want_you_to_person|I want you to personally slay
 qstr_I_want_you_and_your_|I want you and your men to kill
 qstr_{playername}_you_nee|{playername}, you need to earn my respect and that of your men. {s6} {reg22} {s7} troops!
 qstr_{s9}_wants_you_to_per|{s9} wants you to personally kill {reg22} {s6} troops.
 qstr_{s9}_wants_you_and_y|{s9} wants you and your men to kill {reg22} {s6} troops.
-qstr_{s7}|{s7}
 qstr_{playername}_we_have|{playername}, we have received grim tidings. The Corsairs of Umbar grow ever bolder, and even as we speak, a fleet gathers not far from {s6}. Already they reave along the coastline, and soon they shall be upon the city itself.^^ We must intercept the fleet before it reaches the city. Hasten to {s6}, and speak to the local authorities.
 qstr_{playername}_we_have_|{playername}, we have received grim tidings. The savages of Rhûn have more cunning and boldness than we thought - unseen by our scouts, they have built a sufficiency of boats and rafts to carry them across the Long Lake, and they are striking directly at Esgaroth!^^ We must intercept the fleet before it reaches the city. Lead your troops there as swiftly as you can, and drive the barbarians back across the water!
 qstr_If_you_seek_pillage_|If you seek pillage and plunder, here is a matchless opportunity, {playername}.^^ A Corsair fleet is launching from the port at {s7}, and will set a course straight for {s6}, which is ripe for the plucking! Join them in their assault, and share in the spoils!
@@ -1874,7 +1709,7 @@ qstr_Too_bad_you_will_reg|Too bad, you will regret not taking me with you.
 qstr_Lead_me_to_the_{s3}|Lead me to the {s3}
 qstr_Lead_me_to_the_local|Lead me to the local authority
 qstr_Lead_me_to_the_Lord_|Lead me to the Lord's hall
-qstr_your_commanders|your commanders
+qstr_Lead_me_to_your_comm|Lead me to your commanders
 qstr_Lead_me_to_the_capta|Lead me to the captain of the garrison
 qstr_Hey_scum!_I_can_fix_|Hey scum! I can fix that jaw of yours.
 qstr_Watch_where_you_re_g|Watch where you're going, maggot!
@@ -1934,4 +1769,3 @@ qstr_...............|...............
 qstr_Sleep_sounds_good...|Sleep sounds good...
 qstr_For_Balin!!|For Balin!!
 qstr_For_Balin...|For Balin...
-qstr_{s6}|{s6}

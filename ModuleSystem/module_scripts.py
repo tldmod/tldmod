@@ -361,7 +361,7 @@ scripts = [
 		(try_end),
 	(try_end),
 	#(str_store_faction_name,s3,"$players_kingdom"),(store_troop_gold, reg3, "$g_player_troop"),
-	#(display_message, "@debug: player has faction '{s3}' and {reg3} gold"),
+	#(display_message, "@{!}debug: player has faction '{s3}' and {reg3} gold"),
 	#]+concatenate_scripts([
 	#	(store_set_slot, faction_init[y][0], slot_faction_influence, 0),
 	#	(store_set_slot, faction_init[y][0], slot_faction_rank, 0),
@@ -1107,7 +1107,7 @@ scripts = [
 				(str_store_string, s10, "@{s11} and {s10}"), 
 				(str_store_string, s12, "@their"), 
 			(else_try),
-				(str_store_string, s10, "@{s11}"),
+				(str_store_string, s10, "@{!}{s11}"),
 				(str_store_string, s12, "@its"), 
 			(try_end),
 			(assign, ":n_unpaid_troops", ":stack_size" ), # for this faction
@@ -1347,7 +1347,7 @@ scripts = [
          (party_stack_get_size, ":stack_size",":party",":i_stack"),
 
          (assign, reg0, ":stack_size"),
-          #(display_message,"@DEBUG: processing a stack of {reg0} troops"),
+          #(display_message,"@{!}DEBUG: processing a stack of {reg0} troops"),
 
          (try_for_range, ":i",0,":stack_size"),
           (store_random_in_range, reg0,0,5), (eq, reg0, 2),  # kill 1 in 5
@@ -2326,22 +2326,22 @@ scripts = [
  		(ge, ":rel", 0),
 
  		(assign,reg0,":town"),
-		#(display_message,"@Beginning the reinforcement phase for {reg0}"),
+		#(display_message,"@{!}Beginning the reinforcement phase for {reg0}"),
 
 		(try_begin),  # Rafa: Invalid volunteer party number correction, needed for legacy support
 			(gt, ":volunteers", 0),
 			(call_script,"script_cf_neg_1p","script_cf_party_exists",":volunteers"), # doesn't exists
 			#(neg|party_is_active,":volunteers"),
 			(assign, ":volunteers", 0),
-			#(display_message,"@Found an invalid party at {reg0}, fixing"),
+			#(display_message,"@{!}Found an invalid party at {reg0}, fixing"),
 		(try_end),
 	
 		(try_begin), # If a volunteer party still doesn't exists, create one
 			(eq, ":volunteers", 0),
-			#(display_message,"@Creating a party on {reg0}"),
+			#(display_message,"@{!}Creating a party on {reg0}"),
 			(call_script, "script_create_volunteers_party",":town",0),
 			(assign,":volunteers",reg0),
-			#(display_message,"@Volunteers party id:{reg0}"),
+			#(display_message,"@{!}Volunteers party id:{reg0}"),
 			#(party_is_active, ":town"),
 			#(spawn_around_party, ":town", "pt_volunteers"), #Kham - use actual party template instead of 'none'
 			#(assign, ":volunteers", reg0),
@@ -2353,13 +2353,13 @@ scripts = [
 			#(store_faction_of_party, ":town_fac", ":town"),
 			#(try_begin),
 			#	(faction_slot_eq, ":town_fac", slot_faction_side, faction_side_good),
-			#	(str_store_string, s4, "@Volunteers"),
-			#	(str_store_string, s3, "@--- Volunteers ---"),
+			#	(str_store_string, s4, "@{!}Volunteers"),
+			#	(str_store_string, s3, "@{!}--- Volunteers ---"),
 			#(else_try),
-			#	(str_store_string, s4, "@Reserves"),
-			#	(str_store_string, s3, "@--- Reserves ---"),
+			#	(str_store_string, s4, "@{!}Reserves"),
+			#	(str_store_string, s3, "@{!}--- Reserves ---"),
 			#(try_end),
-			#(party_set_name, ":volunteers", "@{s4}"),
+			#(party_set_name, ":volunteers", "@{!}{s4}"),
 			#(troop_set_name,  "trp_volunteers", s3),
 		(try_end),
   		
@@ -3173,7 +3173,7 @@ scripts = [
 			(try_begin),
 				(eq, "$cheat_mode", 1),
 				(str_store_troop_name, s1, ":cur_troop"),
-				(display_message, "@DEBUG: {s1} no longer leads a party."),
+				(display_message, "@{!}DEBUG: {s1} no longer leads a party."),
 			(try_end),
 			(troop_set_slot, ":cur_troop", slot_troop_leaded_party, -1),
 		(try_end),
@@ -3192,7 +3192,7 @@ scripts = [
 			(try_begin),
 				(eq, "$cheat_mode", 1),
 				(str_store_troop_name, s1, ":cur_troop"),
-				(display_message, "@DEBUG: {s1} is no longer a prisoner."),
+				(display_message, "@{!}DEBUG: {s1} is no longer a prisoner."),
 			(try_end),
 			(call_script, "script_remove_troop_from_prison", ":cur_troop"),
 		#searching player
@@ -3204,7 +3204,7 @@ scripts = [
 				(try_begin),
 					(eq, "$cheat_mode", 1),
 					(str_store_troop_name, s1, ":cur_troop"),
-					(display_message, "@DEBUG: {s1} is now a prisoner of player."),
+					(display_message, "@{!}DEBUG: {s1} is now a prisoner of player."),
 				(try_end),
 			(try_end),
 			(eq, ":continue", 1),
@@ -3221,7 +3221,7 @@ scripts = [
 					(eq, "$cheat_mode", 1),
 					(str_store_troop_name, s1, ":cur_troop"),
 					(str_store_party_name, s2, ":cur_prisoner_of_party_2"),
-					(display_message, "@DEBUG: {s1} is now a prisoner of {s2}."),
+					(display_message, "@{!}DEBUG: {s1} is now a prisoner of {s2}."),
 				(try_end),
 			(try_end),
 		#searching walled centers
@@ -3236,7 +3236,7 @@ scripts = [
 					(eq, "$cheat_mode", 1),
 					(str_store_troop_name, s1, ":cur_troop"),
 					(str_store_party_name, s2, ":cur_prisoner_of_party_2"),
-					(display_message, "@DEBUG: {s1} is now a prisoner of {s2}."),
+					(display_message, "@{!}DEBUG: {s1} is now a prisoner of {s2}."),
 				(try_end),
 			(try_end),
 		(try_end),
@@ -4474,7 +4474,7 @@ scripts = [
     (try_begin),
       (eq, cheat_switch, 1),
       (call_script, "script_party_calculate_strength", ":party_no", 0),
-      (context_menu_add_item, "@Debug str: {reg0}", 3),
+      (context_menu_add_item, "@{!}Debug str: {reg0}", 3),
     (try_end),
     
     ] + (is_a_wb_script==1 and [
@@ -4950,7 +4950,7 @@ scripts = [
 		(set_trigger_result, 45),
 			(try_begin),
 				(eq, "$cheat_mode",1),
-				(display_message, "@DEBUG: Trolls for Troll quest are sped down."),
+				(display_message, "@{!}DEBUG: Trolls for Troll quest are sped down."),
 			(try_end),
 	(else_try),
 		(eq, ":template_no", "pt_refugees"),
@@ -5008,7 +5008,7 @@ scripts = [
         (str_store_troop_name, s61, "$g_talk_troop"),
       (try_end),
       (talk_info_set_relation_bar, ":relation"),
-      (str_store_string, s61, "@ {s61}"),
+      (str_store_string, s61, "@{!} {s61}"),
       (assign, reg1, ":relation"),
       (str_store_string, s62, "str_relation_reg1"),
       (talk_info_set_line, 0, s61),
@@ -5023,7 +5023,7 @@ scripts = [
       (assign, ":troop_morale", reg0),
       (talk_info_set_relation_bar, ":troop_morale"),
       (str_store_troop_name, s61, "$g_talk_troop"),
-      (str_store_string, s61, "@ {s61}"),
+      (str_store_string, s61, "@{!} {s61}"),
       (assign, reg1, ":troop_morale"),
       (str_store_string, s62, "str_morale_reg1"),
       (talk_info_set_line, 0, s61),
@@ -5066,12 +5066,12 @@ scripts = [
      (try_begin),
        (eq, ":center_1_added", 0),
        (str_store_party_name, s1, ":center_no_1"),
-       (display_message, "@ERROR: More than 15 trade routes are given for {s1}."),
+       (display_message, "@{!}ERROR: More than 15 trade routes are given for {s1}."),
      (try_end),
      (try_begin),
        (eq, ":center_2_added", 0),
        (str_store_party_name, s1, ":center_no_2"),
-       (display_message, "@ERROR: More than 15 trade routes are given for {s1}."),
+       (display_message, "@{!}ERROR: More than 15 trade routes are given for {s1}."),
      (try_end),
 ]),
 
@@ -5422,12 +5422,12 @@ scripts = [
 	    (troop_clear_inventory,"trp_temp_troop"),
 		(troop_get_inventory_capacity, ":inv_cap", "trp_temp_troop_2"),
 		
-		#(assign, reg10, ":inv_cap"), (display_message,"@debug: starting scrapization over {reg10} objects..."),
+		#(assign, reg10, ":inv_cap"), (display_message,"@{!}debug: starting scrapization over {reg10} objects..."),
 		
 		(try_for_range, ":i_slot", 0, ":inv_cap"),
 			(troop_get_inventory_slot, ":item_id", "trp_temp_troop_2", ":i_slot"),
 			(ge, ":item_id", 0),
-			#(display_message,"@debug: non zero obj..."),
+			#(display_message,"@{!}debug: non zero obj..."),
 			(try_begin),
 				(item_get_type, ":it", ":item_id"),
 				(eq, ":it", itp_type_horse),
@@ -5487,7 +5487,7 @@ scripts = [
 				(else_try), (ge,":val",scrap_medium_value), (troop_add_item, "trp_temp_troop", "itm_metal_scraps_medium"),(str_store_string,s22,"@Med"),
 				(else_try), (ge,":val",scrap_bad_value/2),    (troop_add_item, "trp_temp_troop", "itm_metal_scraps_bad"),   (str_store_string,s22,"@Bad"),
 				(try_end),
-				#(display_message,"@debug: turned a {s20} {reg20} (+{reg21}) into {reg22}..."),
+				#(display_message,"@{!}debug: turned a {s20} {reg20} (+{reg21}) into {reg22}..."),
 			(try_end),	  
 		(try_end),	  
       (try_end),	  
@@ -6059,9 +6059,9 @@ scripts = [
 				        (str_store_faction_name,s2,":str_share"),
 			            (try_begin),
 			              (is_between, ":str_share", kingdoms_begin, kingdoms_end),
-				          #(display_message,"@DEBUG: {s1} strength -{reg60} to {reg61}, {s2} strength +{reg62} to {reg63}."), #mvdebug
+				          #(display_message,"@{!}DEBUG: {s1} strength -{reg60} to {reg61}, {s2} strength +{reg62} to {reg63}."), #mvdebug
 			            (else_try),
-				          #(display_message,"@DEBUG: {s1} strength -{reg60} to {reg61}, defeat by {s2}."), #mvdebug
+				          #(display_message,"@{!}DEBUG: {s1} strength -{reg60} to {reg61}, defeat by {s2}."), #mvdebug
 			            (try_end),
 		         	(try_end),
 
@@ -6094,9 +6094,9 @@ scripts = [
 	        (str_store_faction_name,s2,":winner_faction"),
             (try_begin),
               (is_between, ":winner_faction", kingdoms_begin, kingdoms_end),
-	          #(display_message,"@DEBUG: {s1} strength -{reg0} to {reg1}, {s2} strength +{reg2} to {reg3}."), #mvdebug
+	          #(display_message,"@{!}DEBUG: {s1} strength -{reg0} to {reg1}, {s2} strength +{reg2} to {reg3}."), #mvdebug
             (else_try),
-	          #(display_message,"@DEBUG: {s1} strength -{reg0} to {reg1}, defeat by {s2}."), #mvdebug
+	          #(display_message,"@{!}DEBUG: {s1} strength -{reg0} to {reg1}, defeat by {s2}."), #mvdebug
             (try_end),
           (try_end),
 	    (try_end),
@@ -6242,12 +6242,12 @@ scripts = [
            (eq, ":use_comma", 1),
            (try_begin),
              (eq, ":total_reported", 0),
-             (str_store_string, s0, "@{reg3?{reg3}:} {s1} ({s2})"),
+             (str_store_string, s0, "@{!}{reg3?{reg3}:} {s1} ({s2})"),
            (else_try),
-             (str_store_string, s0, "@{s0}, {reg3?{reg3}:} {s1} ({s2})"),
+             (str_store_string, s0, "@{!}{s0}, {reg3?{reg3}:} {s1} ({s2})"),
            (try_end),
          (else_try),
-           (str_store_string, s0, "@{s0}^{reg3?{reg3}:} {s1} ({s2})"),
+           (str_store_string, s0, "@{!}{s0}^{reg3?{reg3}:} {s1} ({s2})"),
          (try_end),
          (val_add, ":total_reported", 1),
        (try_end),
@@ -10046,7 +10046,7 @@ scripts = [
         # (str_store_faction_name,s1,":old_faction"),
         # (str_store_faction_name,s2,":faction_no"),
         # (str_store_party_name,s3,":center_no"),
-        # (display_message,"@DEBUG: {s3} captured: {s1} strength -{reg0} to {reg1}, {s2} strength +{reg2} to {reg3}."),
+        # (display_message,"@{!}DEBUG: {s3} captured: {s1} strength -{reg0} to {reg1}, {s2} strength +{reg2} to {reg3}."),
       # (try_end),
 
       (call_script, "script_update_faction_notes", ":old_faction"),
@@ -10417,7 +10417,7 @@ scripts = [
 
       (call_script, "script_party_get_ideal_size", ":party_no"),
       (assign, ":ideal_size", reg0),
-#      (display_message, "@DEBUG: Host ideal size: {reg0}", debug_color),
+#      (display_message, "@{!}DEBUG: Host ideal size: {reg0}", debug_color),
       (store_mul, ":ideal_top_size", ":ideal_size", 3),
       (val_div, ":ideal_top_size", 2),
     
@@ -10478,7 +10478,7 @@ scripts = [
   # (assign, reg2, ":ideal_size"),
   # (str_store_troop_name, s1, ":troop_no"),
   # (party_get_num_companions, reg3, ":party_no"),
-  # (display_message, "@DEBUG: {s1} reinforces, current:{reg1} ideal:{reg2} new:{reg3}.", 0x30FFC8),
+  # (display_message, "@{!}DEBUG: {s1} reinforces, current:{reg1} ideal:{reg2} new:{reg3}.", 0x30FFC8),
   # (try_end),
   #MV test code end
   
@@ -11577,7 +11577,7 @@ scripts = [
 	(str_clear, s14),(str_clear, s15),(str_clear, s16),(str_clear, s17),(str_clear, s18),(str_clear, s19),
 	(str_store_faction_name, s16, ":factionA"),
 	(call_script, "script_str_store_race_adj", s15, ":raceB"),
-	(try_begin), (eq, ":raceB", tf_male), (str_store_string, s19, "@{s15} "), (try_end),
+	(try_begin), (eq, ":raceB", tf_male), (str_store_string, s19, "@{!}{s15} "), (try_end),
 	(str_store_faction_name, s18, ":factionB"),
 
 	# s14: possible incipit for when speaker is attacked
@@ -11859,7 +11859,7 @@ scripts = [
 	(assign, reg46,":raceA"),
 	(assign, reg47,":raceB"),
 	(assign, reg48,":region"),
-#	(display_message, "@DEBUG: def:{reg40} Fac:({reg41},{reg42},{reg43}). Sid:({reg44},{reg45}). Rac:({reg46},{reg47}). Region:{reg48}"),
+#	(display_message, "@{!}DEBUG: def:{reg40} Fac:({reg41},{reg42},{reg43}). Sid:({reg44},{reg45}). Rac:({reg46},{reg47}). Region:{reg48}"),
   # default battle cries, if no good one found
 	(try_begin),(eq, ":done", 0),
 		(try_begin),
@@ -12237,7 +12237,7 @@ scripts = [
 		(assign, ":i", 20), # break
 		(try_begin), 
 			(ge,":i",39), 
-			(display_message, "@TLD ERROR! could not spawn the party on the same side of the white mountains"),
+			(display_message, "@{!}TLD ERROR! could not spawn the party on the same side of the white mountains"),
 		(try_end),
 	(try_end),
 ]),
@@ -12637,7 +12637,7 @@ scripts = [
 		(store_add, reg10, "p_pointer_z_0_begin", ":native_terrain_to_use"),
 		(party_relocate_near_party,"p_main_party",reg10,":radius"), # teleport to requested region
 		
-		#(display_message,"@debug: teleporitng to party ID N. {reg10}"),
+		#(display_message,"@{!}debug: teleporitng to party ID N. {reg10}"),
 		
 		(try_begin),(eq,":scene_to_use",-1),
 			# no scene_to_use defined: use the dafault one for the selected native terrain terrain
@@ -12656,11 +12656,11 @@ scripts = [
 	(try_begin),
 		(ge, "$force_scene", 1),
         (assign, ":scene_to_use", "$force_scene"),
-		(display_message,"@Cheat: Impose a battlefield"),
+		(display_message,"@{!}Cheat: Impose a battlefield"),
 	(try_end),    
 	(try_begin),
 		(eq, "$cheat_mode", 1),
-		(assign, reg10,":scene_to_use"), (display_message,"@debug: using scene ID N. {reg10}"),
+		(assign, reg10,":scene_to_use"), (display_message,"@{!}debug: using scene ID N. {reg10}"),
 	(try_end),
 	(jump_to_scene,":scene_to_use"),
 
@@ -16077,24 +16077,24 @@ scripts = [
     (overlay_set_text, "$g_presentation_obj_7", "@Infantry ({reg1})"),
     (overlay_set_text, "$g_presentation_obj_8", "@Archers ({reg2})"),
     (overlay_set_text, "$g_presentation_obj_9", "@Cavalry ({reg3})"),
-    (overlay_set_text, "$g_battle_us_ready", "@{reg4}"),
-    (overlay_set_text, "$g_battle_us_wounded", "@{reg5}"),
-    (overlay_set_text, "$g_battle_us_dead", "@{reg6}"),
-    (overlay_set_text, "$g_battle_allies_ready", "@{reg7}"),
-    (overlay_set_text, "$g_battle_allies_wounded", "@{reg8}"),
-    (overlay_set_text, "$g_battle_allies_dead", "@{reg9}"),
-    (overlay_set_text, "$g_battle_enemies_ready", "@{reg10}"),
-    (overlay_set_text, "$g_battle_enemies_wounded", "@{reg11}"),
-    (overlay_set_text, "$g_battle_enemies_dead", "@{reg12}"),
+    (overlay_set_text, "$g_battle_us_ready", "@{!}{reg4}"),
+    (overlay_set_text, "$g_battle_us_wounded", "@{!}{reg5}"),
+    (overlay_set_text, "$g_battle_us_dead", "@{!}{reg6}"),
+    (overlay_set_text, "$g_battle_allies_ready", "@{!}{reg7}"),
+    (overlay_set_text, "$g_battle_allies_wounded", "@{!}{reg8}"),
+    (overlay_set_text, "$g_battle_allies_dead", "@{!}{reg9}"),
+    (overlay_set_text, "$g_battle_enemies_ready", "@{!}{reg10}"),
+    (overlay_set_text, "$g_battle_enemies_wounded", "@{!}{reg11}"),
+    (overlay_set_text, "$g_battle_enemies_dead", "@{!}{reg12}"),
 
     (try_begin),
 	(eq, "$tld_option_morale", 1),
     	(assign, reg12, ":num_us_routed_men"),
-    	(overlay_set_text, "$g_presentation_obj_31", "@{reg12}"),
+    	(overlay_set_text, "$g_presentation_obj_31", "@{!}{reg12}"),
     	(assign, reg12, ":num_allies_routed_men"),
-    	(overlay_set_text, "$g_presentation_obj_32", "@{reg12}"),
+    	(overlay_set_text, "$g_presentation_obj_32", "@{!}{reg12}"),
     	(assign, reg12, ":num_enemies_routed_men"),
-    	(overlay_set_text, "$g_presentation_obj_33", "@{reg12}"),
+    	(overlay_set_text, "$g_presentation_obj_33", "@{!}{reg12}"),
     (try_end),
 
     (assign, ":stat_position_x", 100),
@@ -16906,7 +16906,7 @@ scripts = [
          (neq, ":str_id", "str_relation_plus_0_ns"),
          (str_store_string, s60, "@{reg3?She:He}"),
          (str_store_string, s59, ":str_id"),
-         (str_store_string, s59, "@^{s59}"),
+         (str_store_string, s59, "@{!}^{s59}"),
        (try_end),
        (assign, reg9, ":num_centers"),
        (assign, reg10, 0), #alive
@@ -16984,7 +16984,7 @@ scripts = [
          # (str_store_party_name_link, s52, ":bound_center"),
          # (str_store_string, s51, "@The village of {s50} near {s52}"),
        (else_try),
-         (str_store_string, s51, "@{s50}"),
+         (str_store_string, s51, "@{!}{s50}"),
        (try_end),
        (str_store_string, s2, "@{s50} belongs to {s1} of {s2}.^"), #TLD: was s51
        ] + (is_a_wb_script==1 and [
@@ -17010,7 +17010,7 @@ scripts = [
 
        ] or []) + [
      (try_end),
-     (add_party_note_from_sreg, ":center_no", 0, "@{s2}", 0), #TLD: no prosperity
+     (add_party_note_from_sreg, ":center_no", 0, "@{!}{s2}", 0), #TLD: no prosperity
      #(add_party_note_from_sreg, ":center_no", 0, "@{s2}Its prosperity is: {s50}", 0),
      (add_party_note_tableau_mesh, ":center_no", "tableau_center_note_mesh"),
 ]),
@@ -18283,7 +18283,7 @@ scripts = [
           (store_sub, reg1, "str_companion_strings_end", "str_npc1_intro"), #total actual strings
           (store_mul, reg2, "$number_of_npc_slots", ":total_companions"), #total strings needed
           (neq, reg1, reg2),
-          (display_message, "@ERROR: Companion strings actual/needed: {reg1}/{reg2}", 0xFFFF2222),
+          (display_message, "@{!}ERROR: Companion strings actual/needed: {reg1}/{reg2}", 0xFFFF2222),
         (try_end),
         
         (try_for_range, ":npc", companions_begin, companions_end),
@@ -18305,7 +18305,7 @@ scripts = [
           (store_sub, reg11, "str_new_companion_strings_end", "str_npc18_intro"), #total actual strings
           (store_mul, reg22, "$number_of_npc_slots", ":total_companions_new"), #total strings needed
           (neq, reg11, reg22),
-          (display_message, "@ERROR: Companion strings actual/needed: {reg11}/{reg22}", color_good_news),
+          (display_message, "@{!}ERROR: Companion strings actual/needed: {reg11}/{reg22}", color_good_news),
         (try_end),
         
         (try_for_range, ":npc_new", new_companions_begin, new_companions_end),
@@ -20738,7 +20738,7 @@ scripts = [
 
 # (assign, reg0, ":situation"),
 # (assign, reg1, ":culture"),
-# (display_message,"@DEBUG: music_set_situation_with_culture: situation {reg0}, culture {reg1}"),
+# (display_message,"@{!}DEBUG: music_set_situation_with_culture: situation {reg0}, culture {reg1}"),
       
       #MV: Custom TLD music for towns, because we have too many cultures and town-specific tracks
       (try_begin),
@@ -20882,7 +20882,7 @@ scripts = [
         # now ":faction" is one of the major factions
 # (assign, reg0, ":faction"),
 # (str_store_faction_name, s4, ":faction"),
-# (display_message,"@DEBUG: choosing battle music for faction {reg0} ({s4})"),
+# (display_message,"@{!}DEBUG: choosing battle music for faction {reg0} ({s4})"),
         (try_begin),
           (eq, ":faction", "fac_gondor"),
 	  (store_random_in_range, ":random", 0, 100),
@@ -20963,7 +20963,7 @@ scripts = [
         (try_end),
 # (assign, reg0, ":faction"),
 # (str_store_faction_name, s4, ":faction"),
-# (display_message,"@DEBUG: choosing travel music for faction {reg0} ({s4})"),
+# (display_message,"@{!}DEBUG: choosing travel music for faction {reg0} ({s4})"),
         
         (assign, ":no_tracks", 0), #available tracks per faction, used to pick one at random
         (try_begin),
@@ -23611,7 +23611,7 @@ scripts = [
           (assign, "$g_tld_convo_lines", 3),
       (else_try), #Helm's Deep
            (str_store_string, s50, "@Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!"),
-          (str_store_string, s51, "@@I did what I could."),
+          (str_store_string, s51, "@I did what I could."),
           (str_store_string, s52, "@Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!"),
           (assign, "$g_tld_convo_lines", 3),
       (try_end),
@@ -23962,7 +23962,7 @@ scripts = [
 		#(val_add, ":debug_count", 1), # for debug
 	(try_end),
 
-	#(assign, reg51, ":debug_count"), (display_message, "@debug: copyed {reg51} items"),
+	#(assign, reg51, ":debug_count"), (display_message, "@{!}debug: copyed {reg51} items"),
 ]),
 
  # another useful self explainatory script... (mtarini)
@@ -24334,9 +24334,9 @@ command_cursor_scripts = [
 
         (try_begin),
           (eq, ":OK", 1),          
-          (display_message, "@lord {reg1}: {s1} is defending {s2}", color_good_news),            
+          (display_message, "@{!}lord {reg1}: {s1} is defending {s2}", color_good_news),            
         (else_try),
-          (display_message, "@lord {reg1}: {s1} NOT defending {s2}", color_bad_news),            
+          (display_message, "@{!}lord {reg1}: {s1} NOT defending {s2}", color_bad_news),            
         (try_end),
         
     (try_end),
@@ -24400,9 +24400,9 @@ command_cursor_scripts = [
 
         (try_begin),
           (eq, ":OK", 1),          
-          (display_message, "@lord {reg1}: {s1} is patrolling around {s2}", color_good_news),            
+          (display_message, "@{!}lord {reg1}: {s1} is patrolling around {s2}", color_good_news),            
         (else_try),
-          (display_message, "@lord {reg1}: {s1} NOT patrolling around {s2}", color_bad_news),            
+          (display_message, "@{!}lord {reg1}: {s1} NOT patrolling around {s2}", color_bad_news),            
         (try_end),
         
     (try_end),
@@ -24466,9 +24466,9 @@ command_cursor_scripts = [
 
         (try_begin),
           (eq, ":OK", 1),          
-          (display_message, "@lord {reg1}: {s1} is accompanying {s2}", color_good_news),            
+          (display_message, "@{!}lord {reg1}: {s1} is accompanying {s2}", color_good_news),            
         (else_try),
-          (display_message, "@lord {reg1}: {s1} NOT accompanying {s2}", color_bad_news),            
+          (display_message, "@{!}lord {reg1}: {s1} NOT accompanying {s2}", color_bad_news),            
         (try_end),
         
     (try_end),
@@ -24521,21 +24521,21 @@ command_cursor_scripts = [
     (try_end),     
 	(party_get_slot, reg0, ":closest_center", slot_center_theater),
     # (str_store_party_name, s8, ":closest_center"),
-    # (display_message, "@found center {s8}"),
+    # (display_message, "@{!}found center {s8}"),
     # (try_begin),
         # (eq, reg0, theater_SE),
-        # (display_message, "@Debug: Theater_SE"),
+        # (display_message, "@{!}Debug: Theater_SE"),
     # (else_try),
         # (eq, reg0,theater_SW),
-        # (display_message, "@Debug: Theater_SW"),
+        # (display_message, "@{!}Debug: Theater_SW"),
     # (else_try),
         # (eq, reg0,theater_C),
-        # (display_message, "@Debug: Theater_C"),
+        # (display_message, "@{!}Debug: Theater_C"),
     # (else_try),
         # (eq, reg0,theater_N),
-        # (display_message, "@Debug: Theater_N"),
+        # (display_message, "@{!}Debug: Theater_N"),
     # (else_try),
-        # (display_message, "@Debug: Can't Find"),
+        # (display_message, "@{!}Debug: Can't Find"),
     # (try_end),
 ]),
 
@@ -24882,14 +24882,14 @@ command_cursor_scripts = [
   	(try_begin),
   		(eq, "$cheat_mode",1),
   		(neg|party_is_active, ":party_id"),
-  		#(display_message, "@DEBUG: Removing INVALID party {s1}"),
+  		#(display_message, "@{!}DEBUG: Removing INVALID party {s1}"),
   	(try_end),
 
   	(try_begin),
   		(is_between, ":party_id","p_main_party", "p_scribble_242"),
   		(neq, ":party_id", "p_main_party"),
   		(disable_party, ":party_id"),
-  		(tutorial_box, "@INVALID PARTY BEING REMOVED ({s1})! DISABLED INSTEAD. PLEASE LET THE DEVS KNOW. THIS IS A TEST AGAINST SAVE GAME CORRUPTION."),
+  		(tutorial_box, "@{!}INVALID PARTY BEING REMOVED ({s1})! DISABLED INSTEAD. PLEASE LET THE DEVS KNOW. THIS IS A TEST AGAINST SAVE GAME CORRUPTION."),
 		(try_begin),
 			(eq, "$cheat_mode",1),
 			#(display_message, "@{s1} disabled"),
@@ -24927,7 +24927,7 @@ command_cursor_scripts = [
     (try_begin),
     	(eq, "$cheat_mode", 1),
     	(str_store_party_name, s1, ":party"),
-    	(display_message, "@DEBUG: {s1} made dormant."),
+    	(display_message, "@{!}DEBUG: {s1} made dormant."),
     (try_end),
 ]),
 
@@ -24960,7 +24960,7 @@ command_cursor_scripts = [
         	(eq, "$cheat_mode", 1),
         	(str_store_party_name, s1, reg0),
         	(str_store_party_name, s2, ":around"),
-        	(display_message, "@DEBUG: Dormant {s1} spawned around {s2}"),
+        	(display_message, "@{!}DEBUG: Dormant {s1} spawned around {s2}"),
         (try_end),
 
     (else_try),
@@ -24972,7 +24972,7 @@ command_cursor_scripts = [
         	(eq, "$cheat_mode", 1),
         	(str_store_party_name, s1, reg0),
         	(str_store_party_name, s2, ":around"),
-        	(display_message, "@DEBUG: No Dormant {s1} found. Creating one near {s2}"),
+        	(display_message, "@{!}DEBUG: No Dormant {s1} found. Creating one near {s2}"),
         (try_end),
     (try_end),
 ]),
@@ -25186,7 +25186,7 @@ command_cursor_scripts = [
 		(else_try),
 			(str_store_string, s4, "@Reserves"),
 		(try_end),
-		(party_set_name, ":volunteers", "@{s4}"),
+		(party_set_name, ":volunteers", "@{!}{s4}"),
 	(try_end),
 	(assign,reg0,":volunteers"), #just in case it was dirtied someplace
 ]),
@@ -25308,8 +25308,8 @@ command_cursor_scripts = [
 
     (str_store_faction_name, s11, ":scout_camp_faction"),    
     (str_store_faction_name, s13, ":quest_giver_faction"),
-    (display_message,"@{s11} {s10}",":news_color"),
-    (display_message,"@{s13} {s14}",":news_color"),
+    (display_message,"@{!}{s11} {s10}",":news_color"),
+    (display_message,"@{!}{s13} {s14}",":news_color"),
 
     (faction_get_slot,":enemy_strength",":scout_camp_faction",slot_faction_strength_tmp), 
     (faction_get_slot,":giver_strength",":quest_giver_faction",slot_faction_strength_tmp),
@@ -25759,7 +25759,7 @@ command_cursor_scripts = [
 		(try_end),
 
 		(assign, reg0, ":num_orcs"),
-		#(display_message, "@DEBUG: {reg0} orc stacks in party"),
+		#(display_message, "@{!}DEBUG: {reg0} orc stacks in party"),
 	]),
 
 #Kham - Check if there are elves in Party
@@ -25782,7 +25782,7 @@ command_cursor_scripts = [
 		(try_end),
 
 		(assign, reg0, ":num_elf"),
-		#(display_message, "@DEBUG: {reg0} elf stacks in party"),
+		#(display_message, "@{!}DEBUG: {reg0} elf stacks in party"),
 	]),
 
 #Kham - Look for lowest level troop & Remove them
@@ -25950,7 +25950,7 @@ command_cursor_scripts = [
 		(assign, reg0, ":num_troops"),
 		(str_store_faction_name, s1, ":faction"),
 		
-		(display_message, "@DEBUG: {reg0} troop stacks of {s1} found"),
+		(display_message, "@{!}DEBUG: {reg0} troop stacks of {s1} found"),
 	]),
 
 
@@ -25998,19 +25998,19 @@ command_cursor_scripts = [
 		(try_begin),
 			(gt, ":hours", 7),
 			(rest_for_hours, 8,3,0),
-			(display_message, "@DEBUG: 8 Hours to hide"),
+			(display_message, "@{!}DEBUG: 8 Hours to hide"),
 		(else_try),
 			(is_between, ":hours", 6,8),
 			(rest_for_hours, 7, 3, 0),
-			(display_message, "@DEBUG: 7 Hours to hide"),
+			(display_message, "@{!}DEBUG: 7 Hours to hide"),
 		(else_try),
 			(is_between, ":hours", 4,6),
 			(rest_for_hours, 6,3,0),
-			(display_message, "@DEBUG: 6 Hours to hide"),
+			(display_message, "@{!}DEBUG: 6 Hours to hide"),
 		(else_try),
 			(lt, ":hours", 4),
 			(rest_for_hours, 5,3,0),
-			(display_message, "@DEBUG: 5 Hours to hide"),
+			(display_message, "@{!}DEBUG: 5 Hours to hide"),
 		(try_end),
 	(try_end),
 ]),
@@ -26602,8 +26602,8 @@ command_cursor_scripts = [
     (try_end),
     (str_store_faction_name, s11, ":enemy_faction"),    
     (str_store_faction_name, s13, ":quest_giver_faction"),
-    (display_message,"@{s11} {s10}",":news_color"),
-    (display_message,"@{s13} {s14}",":news_color"),
+    (display_message,"@{!}{s11} {s10}",":news_color"),
+    (display_message,"@{!}{s13} {s14}",":news_color"),
 
     (faction_get_slot,":enemy_strength",":enemy_faction",slot_faction_strength_tmp), 
     (faction_get_slot,":giver_strength",":quest_giver_faction",slot_faction_strength_tmp),
@@ -26913,7 +26913,7 @@ command_cursor_scripts = [
 			(troop_slot_eq, "trp_player", slot_troop_home, 22), #kham test mode
 			(str_store_party_name, s15, ":cur_party"),
 			(str_store_party_name, s16, ":opponent"),
-			(display_message, "@{s15} VS {s16}", color_good_news),
+			(display_message, "@{!}{s15} VS {s16}", color_good_news),
 		(try_end),
 		
 	(try_end),
@@ -26926,7 +26926,7 @@ command_cursor_scripts = [
 
 	(try_begin),
 		(troop_slot_eq, "trp_player", slot_troop_home, 22), #kham test mode
-		(display_message, "@Pre-div: {reg71} - A: {reg67}", color_good_news),
+		(display_message, "@{!}Pre-div: {reg71} - A: {reg67}", color_good_news),
 	(try_end),
 
 	
@@ -27027,7 +27027,7 @@ command_cursor_scripts = [
 
 	(try_begin), #Debug
 		(troop_slot_eq, "trp_player", slot_troop_home, 22),
-		(display_message, "@Pre-Division: A:{reg71} -- B:{reg68} -- C:{reg70} --  D:{reg61} -- E:{reg63}", color_bad_news),
+		(display_message, "@{!}Pre-Division: A:{reg71} -- B:{reg68} -- C:{reg70} --  D:{reg61} -- E:{reg63}", color_bad_news),
 	(try_end),
 
 	(try_begin),
@@ -27061,15 +27061,15 @@ command_cursor_scripts = [
 		(troop_slot_eq, "trp_player", slot_troop_home, 22),
 		(try_begin),
 			(eq, ":debug", 1),
-			(display_message, "@Formula: [(A:{reg67} + B:{reg69} - C:{reg64})", color_bad_news),
+			(display_message, "@{!}Formula: [(A:{reg67} + B:{reg69} - C:{reg64})", color_bad_news),
 		(else_try),
 			(eq, ":debug", 2),
-			(display_message, "@Formula: [(A:{reg67} + B:{reg69} - C:{reg64}) * D: {reg61}]/20000", color_bad_news),
+			(display_message, "@{!}Formula: [(A:{reg67} + B:{reg69} - C:{reg64}) * D: {reg61}]/20000", color_bad_news),
 		(else_try),
 			(eq, ":debug", 3),
-			(display_message, "@Formula: [(A:{reg67} + B:{reg69} - C:{reg64}) * D: {reg61}]/100 + E: {reg63}", color_bad_news),
+			(display_message, "@{!}Formula: [(A:{reg67} + B:{reg69} - C:{reg64}) * D: {reg61}]/100 + E: {reg63}", color_bad_news),
 		(try_end),
-		(display_message, "@Total: {reg62}", color_good_news),
+		(display_message, "@{!}Total: {reg62}", color_good_news),
 	(try_end),
 
 	(assign, "$new_rank_formula_calculated", 1),
@@ -27108,9 +27108,9 @@ command_cursor_scripts = [
 
         (try_begin),
           (eq, ":OK", 1),          
-          (display_message, "@lord {reg1}: {s1} is attacking {s2}", color_good_news),            
+          (display_message, "@{!}lord {reg1}: {s1} is attacking {s2}", color_good_news),            
         (else_try),
-          (display_message, "@lord {reg1}: {s1} NOT attacking {s2}", color_bad_news),            
+          (display_message, "@{!}lord {reg1}: {s1} NOT attacking {s2}", color_bad_news),            
         (try_end),
         
     (try_end),
@@ -27194,9 +27194,9 @@ command_cursor_scripts = [
 
         (try_begin),
           (eq, ":OK", 1),          
-          (display_message, "@lord {reg1}: {s1} is defending {s2}", color_good_news),            
+          (display_message, "@{!}lord {reg1}: {s1} is defending {s2}", color_good_news),            
         (else_try),
-          (display_message, "@lord {reg1}: {s1} NOT defending {s2}", color_bad_news),            
+          (display_message, "@{!}lord {reg1}: {s1} NOT defending {s2}", color_bad_news),            
         (try_end),
     (try_end),
   ]),
@@ -28385,7 +28385,7 @@ if is_a_wb_script==1:
       
       # troop name
       (str_store_troop_name, s1, ":troop_no"),
-      (create_text_overlay, reg1, "@{s1}", tf_center_justify|tf_vertical_align_center|tf_double_space|tf_scrollable),
+      (create_text_overlay, reg1, "@{!}{s1}", tf_center_justify|tf_vertical_align_center|tf_double_space|tf_scrollable),
       (store_sub, ":name_x", ":cur_x", 57),
       (store_sub, ":name_y", reg0, 120),
       (position_set_x, pos1, ":name_x"),
@@ -29441,7 +29441,7 @@ if is_a_wb_script==1:
       # doesn't help
       
       (str_store_troop_name, s0, ":troop"),
-      (create_text_overlay, reg1, "@{s0}", tf_center_justify),
+      (create_text_overlay, reg1, "@{!}{s0}", tf_center_justify),
       (position_set_x, pos1, ":x_pos"),
       (position_set_y, pos1, ":y_pos"),
       (overlay_set_position, reg1, pos1),
@@ -29757,11 +29757,11 @@ if is_a_wb_script==1:
       (store_troop_health, ":troop_hp", ":troop_id", 1),
       (store_character_level, ":troop_level", ":troop_id"),
       
-      (str_store_string, s1, "@{s1}^"),
+      (str_store_string, s1, "@{!}{s1}^"),
       (assign, reg1, ":troop_level"),
-      (str_store_string, s1, "@{s1}Level: {reg1}^"),
+      (str_store_string, s1,    "@{s1}Level: {reg1}^"),
       (assign, reg1, ":troop_hp"),
-      (str_store_string, s1, "@{s1}Hit Points: {reg1}"),
+      (str_store_string, s1,    "@{s1}Hit Points: {reg1}"),
       
       (create_text_overlay, reg1, s1, tf_left_align | tf_double_space),
       (position_set_x, pos1, 465),(position_set_y, pos1, 530),
@@ -29771,11 +29771,11 @@ if is_a_wb_script==1:
       
       (str_clear, s1),(str_clear, s2),
       (assign, reg1, ":troop_str"),
-      (str_store_string, s1, "@{s1}Atributes: ^   Strength:^"),
-      (str_store_string, s2, "@{s2}^{reg1}^"),
+      (str_store_string, s1,    "@{s1}Atributes: ^   Strength:^"),
+      (str_store_string, s2, "@{!}{s2}^{reg1}^"),
       (assign, reg1, ":troop_agi"),
-      (str_store_string, s1,   "@{s1}   Agility:"),
-      (str_store_string, s2, "@{s2}{reg1}"),
+      (str_store_string, s1,    "@{s1}   Agility:"),
+      (str_store_string, s2, "@{!}{s2}{reg1}"),
       
       (create_text_overlay, reg1, s1, tf_left_align | tf_double_space),
       (position_set_x, pos1, 465),(position_set_y, pos1, 405),
@@ -29791,20 +29791,20 @@ if is_a_wb_script==1:
       
       (str_clear, s1),(str_clear, s2),
       (assign, reg1, ":troop_powerstrike"),
-      (str_store_string, s1, "@{s1}Main skills: ^"),
-      (str_store_string, s1, "@{s1}   Power Strike:^"),
-      (str_store_string, s2, "@{s2}{reg1}^"),
+      (str_store_string, s1,    "@{s1}Main skills: ^"),
+      (str_store_string, s1,    "@{s1}   Power Strike:^"),
+      (str_store_string, s2, "@{!}{s2}{reg1}^"),
       (assign, reg1, ":troop_athletics"),
-      (str_store_string, s1, "@{s1}   Athletics:^"),
-      (str_store_string, s2, "@{s2}{reg1}^"),
+      (str_store_string, s1,    "@{s1}   Athletics:^"),
+      (str_store_string, s2, "@{!}{s2}{reg1}^"),
       (assign, reg1, ":troop_riding"),
-      (str_store_string, s1, "@{s1}   Riding:^"),
+      (str_store_string, s1,    "@{s1}   Riding:^"),
       
       (try_begin),
         (troop_is_mounted, ":troop_id"),
-        (str_store_string, s2, "@{s2}{reg1}^"),
+        (str_store_string, s2, "@{!}{s2}{reg1}^"),
       (else_try),
-        (str_store_string, s2, "@{s2}-^"),
+        (str_store_string, s2, "@{!}{s2}-^"),
       (try_end),
       
       (assign, reg1, ":troop_powerthrow"),
@@ -29812,9 +29812,9 @@ if is_a_wb_script==1:
       
       (try_begin),
         (eq, ":has_throw", 1),
-        (str_store_string, s2, "@{s2}{reg1}^"),
+        (str_store_string, s2, "@{!}{s2}{reg1}^"),
       (else_try),
-        (str_store_string, s2, "@{s2}-^"),
+        (str_store_string, s2, "@{!}{s2}-^"),
       (try_end),
       
       (assign, reg1, ":troop_powerdraw"),
@@ -29822,9 +29822,9 @@ if is_a_wb_script==1:
       
       (try_begin),
         (eq, ":has_archery", 1),
-        (str_store_string, s2, "@{s2}{reg1}^^"),
+        (str_store_string, s2, "@{!}{s2}{reg1}^^"),
       (else_try),
-        (str_store_string, s2, "@{s2}-^^"),
+        (str_store_string, s2, "@{!}{s2}-^^"),
       (try_end),
       
       (create_text_overlay, reg1, s1, tf_left_align | tf_double_space),
@@ -29846,9 +29846,9 @@ if is_a_wb_script==1:
       
       (try_begin),
         (eq, ":has_onehand", 1),
-        (str_store_string, s2, "@{s2}{reg1}^"),
+        (str_store_string, s2, "@{!}{s2}{reg1}^"),
       (else_try),
-        (str_store_string, s2, "@{s2}-^"),
+        (str_store_string, s2, "@{!}{s2}-^"),
       (try_end),
       
       (assign, reg1, ":troop_twohanded"),
@@ -29856,9 +29856,9 @@ if is_a_wb_script==1:
       
       (try_begin),
         (eq, ":has_twohand", 1),
-        (str_store_string, s2, "@{s2}{reg1}^"),
+        (str_store_string, s2, "@{!}{s2}{reg1}^"),
       (else_try),
-        (str_store_string, s2, "@{s2}-^"),
+        (str_store_string, s2, "@{!}{s2}-^"),
       (try_end),
       
       (assign, reg1, ":troop_polearm"),
@@ -29866,9 +29866,9 @@ if is_a_wb_script==1:
       
       (try_begin),
         (eq, ":has_polearm", 1),
-        (str_store_string, s2, "@{s2}{reg1}^"),
+        (str_store_string, s2, "@{!}{s2}{reg1}^"),
       (else_try),
-        (str_store_string, s2, "@{s2}-^"),
+        (str_store_string, s2, "@{!}{s2}-^"),
       (try_end),
       
       (assign, reg1, ":troop_archery"),
@@ -29876,9 +29876,9 @@ if is_a_wb_script==1:
       
       (try_begin),
         (eq, ":has_archery", 1),
-        (str_store_string, s2, "@{s2}{reg1}^"),
+        (str_store_string, s2, "@{!}{s2}{reg1}^"),
       (else_try),
-        (str_store_string, s2, "@{s2}-^"),
+        (str_store_string, s2, "@{!}{s2}-^"),
       (try_end),
       
       (assign, reg1, ":troop_crossbow"),
@@ -29886,9 +29886,9 @@ if is_a_wb_script==1:
       
       (try_begin),
         (eq, ":has_crossbow", 1),
-        (str_store_string, s2, "@{s2}{reg1}^"),
+        (str_store_string, s2, "@{!}{s2}{reg1}^"),
       (else_try),
-        (str_store_string, s2, "@{s2}-^"),
+        (str_store_string, s2, "@{!}{s2}-^"),
       (try_end),
       
       (assign, reg1, ":troop_throwing"),
@@ -29896,9 +29896,9 @@ if is_a_wb_script==1:
       
       (try_begin),
         (eq, ":has_throw", 1),
-        (str_store_string, s2, "@{s2}{reg1}^"),
+        (str_store_string, s2, "@{!}{s2}{reg1}^"),
       (else_try),
-        (str_store_string, s2, "@{s2}-^"),
+        (str_store_string, s2, "@{!}{s2}-^"),
       (try_end),
       
       (assign, reg1, ":troop_slings"),
@@ -29906,9 +29906,9 @@ if is_a_wb_script==1:
       
       (try_begin),
         (eq, ":has_sling", 1),
-        (str_store_string, s2, "@{s2}{reg1}"),
+        (str_store_string, s2, "@{!}{s2}{reg1}"),
       (else_try),
-        (str_store_string, s2, "@{s2}-"),
+        (str_store_string, s2, "@{!}{s2}-"),
       (try_end),
       
       (create_text_overlay, reg1, s1, tf_left_align | tf_double_space),
@@ -30948,7 +30948,7 @@ if is_a_wb_script==1:
 		(assign, ":lord_found", 1),
 		# Debug
 		(str_store_troop_name, s70, ":lords"),
-		(display_message, "@{s70} target found"),
+		(display_message, "@{!}{s70} target found"),
 		(assign, reg0, ":lords"),
 	(try_end),
 
@@ -31074,7 +31074,7 @@ if is_a_wb_script==1:
 	(assign, ":mordor_clouds", reg0),
 	(set_fixed_point_multiplier, 10),
 	(prop_instance_set_scale, ":mordor_clouds", 500,500,500),
-	(display_message, "@Mordor Cloud Spawned"),]),
+	(display_message, "@{!}Mordor Cloud Spawned"),]),
 
 ("lorien_mist_effect", [
 

@@ -1359,16 +1359,16 @@ items =[
 ["free_pippin_outfit","{!}hobbit_outfit",[("pippin",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(1)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
 
 #Trolls and Ents
-["ent_body","Ent_Body",[("ent_body",0),("olog_body",imodbit_rusty),("olog_body_b",imodbit_tattered),("isen_olog_body",imodbit_old),("isen_olog_body_b",imodbit_cheap),],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(55)|leg_armor(0)|difficulty(25),0,],
-["ent_head_helm","Ent_Head",[("ent_head1",0),("olog_head",imodbit_hardened),("olog_head_b",imodbit_reinforced),("olog_head_c",imodbit_lordly),("ent_head1",imodbit_smelling),("ent_head2",imodbit_rotten),("ent_head3",imodbit_day_old),("isen_olog_head",imodbit_bent),("isen_olog_head_b",imodbit_old),("isen_olog_head_c",imodbit_cheap)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(30),0],
-["troll_head","troll_head",[("ent_head2",0),("troll_head",imodbit_rotten),("troll_head_b",imodbit_two_day_old),("troll_head_c",imodbit_day_old),("gunda_troll_head",imodbit_smelling),("gunda_troll_head_b",imodbit_fresh),("gunda_troll_head_c",imodbit_large_bag),("mordor_troll_head",imodbit_thick),("mordor_troll_head_b",imodbit_hardened)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(30),0],
-["troll_body","troll_body",[("troll_body",0),("gunda_troll_body",imodbit_thick),("mordor_troll_body",imodbit_hardened),("troll_body",imodbit_day_old),("gunda_troll_body_berta",imodbit_rotten),],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,10,weight(250)|head_armor(0)|body_armor(40)|leg_armor(0)|difficulty(25),0,],
-["ent_feet_boots","Ent_Feet",[("ent_foot",0),("troll_feet",imodbit_cracked),("gunda_troll_feet",imodbit_rusty),("mordor_troll_feet",imodbit_bent),("olog_feet",imodbit_hardened),("olog_feet",imodbit_thick)],itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(0)|leg_armor(60)|difficulty(30),0],
-["ent_hands","Ent_Hands",[("ent_hand_L",0),("olog_hand_L",imodbit_large_bag),("isen_olog_hand_L",imodbit_rotten),("troll_handL",imodbit_cracked),("gunda_troll_handL",imodbit_rusty),("mordor_troll_handL",imodbit_bent)],itp_type_hand_armor|itp_unique,0,1,weight(250)|body_armor(1)|difficulty(30),0],
-["fur_gloves_reward","Hunter_Gloves",[("narf_demi_gauntlets_fur_L",0)],itp_type_hand_armor|itp_unique,0,2000,weight(0.2)|body_armor(3)|difficulty(0),imodbits_none,[]],
-["empty_hands","empty_hands",[("dummy_mesh",0)],itp_type_hand_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|body_armor(1)|difficulty(0),0],
-["empty_legs","empty_legs",[("dummy_mesh_skinned",0)],itp_type_foot_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|leg_armor(1)|difficulty(0),0],
-["empty_head","empty head",[("dummy_mesh",0),("chieftainhelm",imodbit_old), ("pointedhelmet", imodbit_poor)],itp_type_head_armor|itp_unique|itp_covers_beard|itp_covers_head|itp_no_pick_up_from_ground,0,1,weight(250)|head_armor(50)|difficulty(0),0],
+["ent_body","{!}Ent_Body",[("ent_body",0),("olog_body",imodbit_rusty),("olog_body_b",imodbit_tattered),("isen_olog_body",imodbit_old),("isen_olog_body_b",imodbit_cheap),],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(55)|leg_armor(0)|difficulty(25),0,],
+["ent_head_helm","{!}Ent_Head",[("ent_head1",0),("olog_head",imodbit_hardened),("olog_head_b",imodbit_reinforced),("olog_head_c",imodbit_lordly),("ent_head1",imodbit_smelling),("ent_head2",imodbit_rotten),("ent_head3",imodbit_day_old),("isen_olog_head",imodbit_bent),("isen_olog_head_b",imodbit_old),("isen_olog_head_c",imodbit_cheap)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(30),0],
+["troll_head","{!}troll_head",[("ent_head2",0),("troll_head",imodbit_rotten),("troll_head_b",imodbit_two_day_old),("troll_head_c",imodbit_day_old),("gunda_troll_head",imodbit_smelling),("gunda_troll_head_b",imodbit_fresh),("gunda_troll_head_c",imodbit_large_bag),("mordor_troll_head",imodbit_thick),("mordor_troll_head_b",imodbit_hardened)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(30),0],
+["troll_body","{!}troll_body",[("troll_body",0),("gunda_troll_body",imodbit_thick),("mordor_troll_body",imodbit_hardened),("troll_body",imodbit_day_old),("gunda_troll_body_berta",imodbit_rotten),],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,10,weight(250)|head_armor(0)|body_armor(40)|leg_armor(0)|difficulty(25),0,],
+["ent_feet_boots","{!}Ent_Feet",[("ent_foot",0),("troll_feet",imodbit_cracked),("gunda_troll_feet",imodbit_rusty),("mordor_troll_feet",imodbit_bent),("olog_feet",imodbit_hardened),("olog_feet",imodbit_thick)],itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(0)|leg_armor(60)|difficulty(30),0],
+["ent_hands","{!}Ent_Hands",[("ent_hand_L",0),("olog_hand_L",imodbit_large_bag),("isen_olog_hand_L",imodbit_rotten),("troll_handL",imodbit_cracked),("gunda_troll_handL",imodbit_rusty),("mordor_troll_handL",imodbit_bent)],itp_type_hand_armor|itp_unique,0,1,weight(250)|body_armor(1)|difficulty(30),0],
+["fur_gloves_reward","{!}Hunter_Gloves",[("narf_demi_gauntlets_fur_L",0)],itp_type_hand_armor|itp_unique,0,2000,weight(0.2)|body_armor(3)|difficulty(0),imodbits_none,[]],
+["empty_hands","{!}empty_hands",[("dummy_mesh",0)],itp_type_hand_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|body_armor(1)|difficulty(0),0],
+["empty_legs","{!}empty_legs",[("dummy_mesh_skinned",0)],itp_type_foot_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|leg_armor(1)|difficulty(0),0],
+["empty_head","{!}empty head",[("dummy_mesh",0),("chieftainhelm",imodbit_old), ("pointedhelmet", imodbit_poor)],itp_type_head_armor|itp_unique|itp_covers_beard|itp_covers_head|itp_no_pick_up_from_ground,0,1,weight(250)|head_armor(50)|difficulty(0),0],
 
 #### TLD REWARD ITEMS BEGIN
 # magic items begin
@@ -1502,7 +1502,7 @@ items =[
 	      (val_add, reg10, 1), #count number agents got hit
 	      (play_sound,"snd_shield_broken"),
       	(try_end),
-		(display_message, "@Siege Weapon damaged {reg10} agents", color_bad_news),
+		(display_message, "@Siege weapon damaged {reg10} agents", color_bad_news), # swy: FIXME: agents? is this a debug string?
 		(assign, reg10, 0),
 	(try_end),
 	]),
@@ -1575,19 +1575,19 @@ items =[
 
 
 #non-ridable animals
-["animal_spider","Spider",[("spider_black",0)], itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(3)|horse_maneuver(75)|horse_scale(4)|difficulty(10),imodbits_none,[]],
-["animal_bear","Bear",    [("bear_2",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(130)|horse_speed(5)|horse_maneuver(48)|horse_scale(120)|difficulty(10),imodbits_none,[]],
-["animal_wolf","Wolf",    [("wolf",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(85),imodbits_none,[]],
-["animal_werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(130)|horse_speed(6)|horse_maneuver(60)|horse_scale(100)|difficulty(10),imodbits_none,[]],
-["animal_dog","Dog",    [("wolf_dog",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(13)|horse_maneuver(50)|horse_charge(25)|horse_scale(55),imodbits_none,[]],
-["animal_horse","Horse",[("CWE_horse_light_a",imodbit_cracked),("CWE_horse_light_b",imodbit_rusty),("CWE_horse_light_c",imodbit_bent)],itp_type_animal,0,70,hit_points(40)|horse_speed(9)|horse_maneuver(33)|horse_charge(5)|horse_scale(95),0,[]],
-["animal_pony","Pony",[("CWE_horse_light_a",imodbit_cracked),("CWE_horse_light_b",imodbit_rusty),("CWE_horse_light_c",imodbit_bent)],itp_type_animal,0,70,hit_points(40)|horse_speed(9)|horse_maneuver(33)|horse_charge(5)|horse_scale(80),0,[]],
-["animal_deer","Deer",[("scla_reddeer",0),],itp_type_animal,0,70,hit_points(40)|horse_speed(9)|horse_maneuver(33)|horse_charge(5)|horse_scale(70),0,[]],
+["animal_spider","{!}Spider",[("spider_black",0)], itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(3)|horse_maneuver(75)|horse_scale(4)|difficulty(10),imodbits_none,[]],
+["animal_bear","{!}Bear",    [("bear_2",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(130)|horse_speed(5)|horse_maneuver(48)|horse_scale(120)|difficulty(10),imodbits_none,[]],
+["animal_wolf","{!}Wolf",    [("wolf",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(85),imodbits_none,[]],
+["animal_werewolf","{!}Werewolf",    [("mm_warg_a",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(130)|horse_speed(6)|horse_maneuver(60)|horse_scale(100)|difficulty(10),imodbits_none,[]],
+["animal_dog","{!}Dog",    [("wolf_dog",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(13)|horse_maneuver(50)|horse_charge(25)|horse_scale(55),imodbits_none,[]],
+["animal_horse","{!}Horse",[("CWE_horse_light_a",imodbit_cracked),("CWE_horse_light_b",imodbit_rusty),("CWE_horse_light_c",imodbit_bent)],itp_type_animal,0,70,hit_points(40)|horse_speed(9)|horse_maneuver(33)|horse_charge(5)|horse_scale(95),0,[]],
+["animal_pony","{!}Pony",[("CWE_horse_light_a",imodbit_cracked),("CWE_horse_light_b",imodbit_rusty),("CWE_horse_light_c",imodbit_bent)],itp_type_animal,0,70,hit_points(40)|horse_speed(9)|horse_maneuver(33)|horse_charge(5)|horse_scale(80),0,[]],
+["animal_deer","{!}Deer",[("scla_reddeer",0),],itp_type_animal,0,70,hit_points(40)|horse_speed(9)|horse_maneuver(33)|horse_charge(5)|horse_scale(70),0,[]],
 ["animal_camel","{!}camel",[("giles_evil_camel_brown",0)],itp_type_animal|itp_disable_agent_sounds,0,70,hit_points(40)|horse_speed(8)|horse_maneuver(33)|horse_charge(5)|horse_scale(110),0,[]],
 ["animal_boar","{!}boar",    [("boar",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(85),imodbits_none,[]],
 ["animal_boar_big","{!}boar",[("boar_black",0)],   itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(105),imodbits_none,[]],
 ["animal_rat","{!}rat",[("szczur_animowany_rig_new_relocate",0)], itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(3)|horse_maneuver(75)|horse_scale(7)|difficulty(10),imodbits_none,[]],
-["animal_warg","Warg",[("warg_1B",imodbit_cracked),("animal_warg_1C",imodbit_rusty),("animal_warg_1D",imodbit_bent)],itp_type_animal|itp_disable_agent_sounds,0,600,hit_points(50)|horse_speed(15)|horse_maneuver(50)|horse_scale(95),imodbits_none,[]],
+["animal_warg","{!}Warg",[("warg_1B",imodbit_cracked),("animal_warg_1C",imodbit_rusty),("animal_warg_1D",imodbit_bent)],itp_type_animal|itp_disable_agent_sounds,0,600,hit_points(50)|horse_speed(15)|horse_maneuver(50)|horse_scale(95),imodbits_none,[]],
 
 ] or []) + [ 
 

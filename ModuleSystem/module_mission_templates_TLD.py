@@ -137,7 +137,7 @@ common_order_move_to_pos43 = (
       (try_begin),
 		(try_begin),
 			(le, ":num_listening", 1),
-			(str_store_string, s10, "@{s1}"),
+			(str_store_string, s10, "@{!}{s1}"),
 		(else_try),
 			(eq, ":num_listening", 2),
 			(str_store_string, s10, "@{s1} and {s2}"),
@@ -4125,7 +4125,7 @@ scene_set_flora_army_spawn = (0, 0, ti_once, [], [
 	(try_end),
 	(assign,reg0,"$battlemap_max_x"),
 	(assign,reg1,"$battlemap_max_y"),	 
-	(display_message,"@max X {reg0} max Y {reg1}"),
+	(display_message,"@{!}max X {reg0} max Y {reg1}"),
 ])
  
 
@@ -4835,7 +4835,7 @@ nazgul_flying = ((is_a_wb_mt==1) and [
 
     # (0, 0, ti_once,
        # [ (assign, "$defender_team", 0),
-         # (assign, "$attacker_team", 1), # (display_message,"@DEBUG: mission template football"),
+         # (assign, "$attacker_team", 1), # (display_message,"@{!}DEBUG: mission template football"),
 #         (assign, "$defender_team_2", 3),
 #         (assign, "$attacker_team_2", 2),
        # ], []),

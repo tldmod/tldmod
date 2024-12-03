@@ -11,17 +11,7 @@ str_s7_raiders|{s7} Raiders
 str_bandits_eliminated_by_another|The troublesome bandits have been eliminated by another party.
 str_msg_battle_won|Battle won! Press tab key to leave...
 str_tutorial_map1|You are now viewing the overland map. Left-click on the map to move your party to that location, enter the selected town, or pursue the selected party. Time will pause on the overland map if your party is not moving, waiting or resting. To wait anywhere simply press and hold down the space bar.
-str_choose_position|Choose position:
-str_choose_charge|Choose a charge:
-str_choose_background|Choose background pattern:
-str_choose_flag_type|Choose flag type:
-str_choose_map_flag_type|Choose map flag type:
-str_choose_color|Choose color:
 str_accept|Accept
-str_charge|Charge
-str_color|{Color
-str_flip_horizontal|Flip Horizontal
-str_flip_vertical|Flip Vertical
 str_hold_fire|Hold Fire
 str_blunt_hold_fire|Blunt / Hold Fire
 str_tutorial_ammo_refilled|Ammo refilled.

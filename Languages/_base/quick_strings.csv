@@ -1,4 +1,5 @@
 qstr_Received_{reg0}_dama|Received {reg0} damage.
+qstr_Siege_weapon_damaged|Siege weapon damaged {reg10} agents
 qstr_Gate_is_breached!|Gate is breached!
 qstr_Gate_opens..._You_ha|Gate opens... You have reached the most sacred place in Middle Earth!
 qstr_Secret_place_discove|Secret place discovered!
@@ -85,11 +86,13 @@ qstr_Proficiencies|Proficiencies
 qstr_1H_Weapons^2H_Weapon|1H Weapons^2H Weapons^Polearms^Archery^Crossbows^Throwing
 qstr_Equipment|Equipment
 qstr_The_Last_Days_Mod_Op|The Last Days Mod Options
+qstr_War_Starts_after_Day|War Starts after Day: 
 qstr_War_Starts_at_Level:|War Starts at Level: 
 qstr_Battle_Formations_an|Battle Formations and AI:  
 qstr_Native|Native
 qstr_TLD_FormAI__Original|TLD FormAI (Original)
 qstr_TLD_New_FormAI|TLD New FormAI
+qstr_Beta_Formations_Twea|Beta Formations Tweaks
 qstr_Siege_AI:__|Siege AI:  
 qstr_Basic__better_perfor|Basic (better performance)
 qstr_Advanced|Advanced
@@ -103,6 +106,7 @@ qstr_Permanent_death_for_|Permanent death for lords and companions:
 qstr_Permanent_death_for_p|Permanent death for player (that is YOU!):  
 qstr_Battle_morale_system|Battle morale system:  
 qstr_Animal_ambushes:__|Animal ambushes:  
+qstr_Player_speed_buff_in|Player speed buff in towns:  
 qstr_Fallen_rider_damage_|Fallen rider damage messages:  
 qstr_No_Messages|No Messages
 qstr_Player_damage_only|Player damage only
@@ -115,12 +119,11 @@ qstr_Prevent_AI_from_taki|Prevent AI from taking defensive:
 qstr_Brighter_Nights:__|Brighter Nights:  
 qstr_Done|Done
 qstr_Gameplay_Tweaks|Gameplay Tweaks
-qstr_Beta_Formations_Twea|Beta Formations Tweaks
 qstr_Set_to_Native_if_you|Set to Native if you encounter any types of AI problems during battle.
 qstr_Disable_cutscenes_if|Disable cutscenes if you encounter any crashes at the start of the war.
 qstr_Campaign_Difficulty_a|Campaign Difficulty affects abundance of volunteers, lord party size, and strength income for allied factions.
-qstr_War_Will_Start_at_Le|War Will Start at Level {reg0}
 qstr_Be_aware_that_many_q|Be aware that many quests and campaign mechanics scale with player level. Increasing this setting will give you more time to prepare, but will make the war unfold quicker.
+qstr_Requires_TLD_NewForm|Requires TLD NewFormAI
 qstr_Troop_Tree|Troop Tree
 qstr__Click_on_a_unit_for|(Click on a unit for details)
 qstr_Weapons|Weapons
@@ -172,12 +175,17 @@ qstr_its|its
 qstr_[no_upkeep_costs]|[no upkeep costs]
 qstr_Short_of_Resource_Po|Short of Resource Points!!
 qstr_{s10}_will_soon_reas|{s10} will soon reassign some of {s12} troops away from your party!
+qstr_{s10}_has_reassigned|{s10} has reassigned troops from your reserves.
 qstr_Superior_orders_from|Superior orders from {s11} to reassign troops:
 qstr_{reg12}_{s10}_left_t|{reg12} {s10} left the party!
 qstr_Fangorn_claimed_{reg|Fangorn claimed {reg0} killed and {reg1} wounded among your troops!
 qstr_You_were_wounded_in_|You were wounded in Fangorn!
+qstr_Grimbold|Grimbold
+qstr_Theodred|Theodred
+qstr_Gamling|Gamling
 qstr_{s1}_of_{s3}_was_def|{s1} of {s3} was defeated in battle.
 qstr_{s2}_have_razed_{s1}|{s2} have razed {s1}!
+qstr_{s1}_Scouts|{s1} Scouts
 qstr_Left_for_dead_but_mi|Left for dead but miraculously survived: {reg1?{reg1} time{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_|1 Res.Pt ({s2})
 qstr_{reg1}_Res.Pts__{s2}|{reg1} Res.Pts ({s2})
@@ -280,6 +288,7 @@ qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
 qstr_^None|^None
 qstr_near_the_Great_East_|near the Great East Road, the abandoned old road
 qstr_near_what_is_left_of|near what is left of the Old Forest Road, the ancient dwarven path that used to cross the thick forest
+qstr_near_the_old_cross_r|near the old cross-roads, where the Ithilien road meets the road to Osgiliath
 qstr_close_to_the_Hand_sh|close to the Hand-shaped sign of Saruman, pointing toward the tower of Orthanc
 qstr_in_sight_of_the_maje|in sight of the majestic City Walls of Minas Tirith, the White City
 qstr_in_sight_of_Edoras_t|in sight of Edoras, the capital of Rohan
@@ -592,11 +601,12 @@ qstr_Either_would_be_a_gr|Either would be a great boon to me. You must decide yo
 qstr_Gandalf_asked_you_to|Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard.
 qstr_Ents|Ents
 qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope.
-qstr_Missing_String|Missing String
+qstr_I_did_what_I_could.|I did what I could.
 qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
 qstr_Hail_{playername}!_I_|Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!
 qstr_Your_deed_has_greatl|Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!
-qstr_{Playername}_I_will_|{Playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
+qstr_{playername}_I_will_|{playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
+qstr_I...|I...
 qstr_You_have_failed_me_{|You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not.
 qstr_Bagginsssss..._Ssssh|Bagginsssss... Sssshhhire...
 qstr_I..._don_t_know!|I... don't know!
@@ -679,7 +689,12 @@ qstr_have_taken_measure_o|have taken measure of your faction's current strength 
 qstr_loses_Faction_Streng|loses Faction Strength as supply lines were disrupted.
 qstr_loses_Faction_Strengt|loses Faction Strength due to the destruction of their camp.
 qstr_gains_Faction_Streng|gains Faction Strength as news of your victory spreads.
+qstr_Notice:_Isengard_Las|Notice: Isengard Last Stand quest cancelled for savegame compatibility reasons. Isengard can now be sieged like a regular city.
+qstr_Hobbit_quest_aborted|Hobbit quest aborted for compatibility reasons. Hobbits will now only appear after certain conditions are met.
+qstr_This_update_has_chan|This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu.
 qstr_Something_wrong_not_|Something wrong, not enough troops to remove
+qstr_Troop:_{s6}___Level:|Troop: {s6} - Level: {reg1}
+qstr_{reg6}_Centers_Left_|{reg6} Centers Left for {s2}
 qstr_Raiders|Raiders
 qstr_have_won_the_sea_bat|have won the sea battle, demoralizing your troops. The enemy may take advantage of this defeat and attack more frequently.
 qstr_loses_Faction_Strength|loses Faction Strength due to the destructive raid.
@@ -705,23 +720,16 @@ qstr_Inventory|Inventory
 qstr_Show_stats|Show stats
 qstr_Show_item_details__|Show item details  
 qstr_Troop_detail|Troop detail
-qstr_{s1}^|{s1}^
 qstr_{s1}Level:_{reg1}^|{s1}Level: {reg1}^
 qstr_{s1}Hit_Points:_{reg|{s1}Hit Points: {reg1}
 qstr_{s1}Atributes:_^___S|{s1}Atributes: ^   Strength:^
-qstr_{s2}^{reg1}^|{s2}^{reg1}^
 qstr_{s1}___Agility:|{s1}   Agility:
-qstr_{s2}{reg1}|{s2}{reg1}
 qstr_{s1}Main_skills:_^|{s1}Main skills: ^
 qstr_{s1}___Power_Strike:|{s1}   Power Strike:^
-qstr_{s2}{reg1}^|{s2}{reg1}^
 qstr_{s1}___Athletics:^|{s1}   Athletics:^
 qstr_{s1}___Riding:^|{s1}   Riding:^
-qstr_{s2}_^|{s2}-^
 qstr_{s1}___Power_Throw:^|{s1}   Power Throw:^
 qstr_{s1}___Power_Draw:^^|{s1}   Power Draw:^^
-qstr_{s2}{reg1}^^|{s2}{reg1}^^
-qstr_{s2}_^^|{s2}-^^
 qstr_{s1}Weapons:^|{s1}Weapons:^
 qstr_{s1}___One_Handed:^|{s1}   One Handed:^
 qstr_{s1}___Two_Handed:^|{s1}   Two Handed:^
@@ -730,7 +738,6 @@ qstr_{s1}___Archery:^|{s1}   Archery:^
 qstr_{s1}___Crossbow:^|{s1}   Crossbow:^
 qstr_{s1}___Throwing:^|{s1}   Throwing:^
 qstr_{s1}___Slings:|{s1}   Slings:
-qstr_{s2}_|{s2}-
 qstr__Click_on_the_troop_|(Click on the troop to rotate it)^^Click on pieces of gear ^(helmet, armor, gloves and boots)^ to display them.
 qstr_ready_bows_and_missi|ready bows and missiles
 qstr_ready_side_arms|ready side arms
@@ -766,6 +773,7 @@ qstr_Press_Ctrl_and_Up/Do|Press Ctrl and Up/Down arrow keys to tilt up/down
 qstr_Fixed_Camera___Right|Fixed Camera - Right Shoulder
 qstr_Fixed_Camera___Left_|Fixed Camera - Left Shoulder
 qstr_Fixed_Camera___Cente|Fixed Camera - Center
+qstr_The_Nazgul_retreats!|The Nazgul retreats!
 qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
 qstr_{s7}_waves_at_you.|{s7} waves at you.
 qstr_You_happen_upon_an_O|You happen upon an Old Guesthouse. As you inspect the weathered stone building, you notice a group of boys playing among the pillars, the only children you have seen in Minas Tirith.  One of them greets you and you wave back. Your heart is gladdened and you forget, for a brief moment, the sorrow of war.
@@ -806,13 +814,6 @@ qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkn
 qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
 qstr_Your_mount_is_scared|Your mount is scared by the {s5}!
 qstr_Your_mount_is_scared_|Your mount is scared by the {s5}, but you can master it!
-qstr_Nazgul_sweep!|Nazgul sweep!
-qstr_You_and_your_horse_p|You and your horse panic, the Nazgul cries are unbearable!
-qstr_Your_horse_panics_th|Your horse panics, the Nazgul cries are unbearable!
-qstr_You_cower_in_terror_|You cower in terror, the Nazgul cries are unbearable!
-qstr_knocked_unconscious|knocked unconscious
-qstr_Nazgul_diving_attack|Nazgul diving attack on {s11}!
-qstr_{s11}_is_{s10}_in_th|{s11} is {s10} in the Nazgul attack!
 qstr_Received_{reg66}_dam|Received {reg66} damage.
 qstr_You_yell_for_your_ho|You yell for your horse.
 qstr_You_do_not_need_to_r|You do not need to rally your troops yet.
@@ -854,6 +855,8 @@ qstr_on_the_right_flank|on the right flank
 qstr_through_the_center|through the center
 qstr_Attackers_charge_{s2|Attackers charge {s2}
 qstr_Attackers_charge_{s1|Attackers charge {s1}
+qstr_Hold_this_area_to_st|Hold this area to stop defender reinforcements from here!
+qstr_Defender_reinforceme|Defender reinforcement point taken!
 qstr_{s1}_rallied_to_your|{s1} rallied to your side due to your Charisma.
 qstr_Last_attacker_wave._|Last attacker wave. Do you want to retreat?
 qstr_Attackers_almost_def|Attackers almost defeated. Do you want to retreat?
@@ -921,6 +924,13 @@ qstr_Look_at_my_over_the_|Look at my over-the-shoulder shot, {playername}! I'm s
 qstr_You_wish_old_man_my_|You wish, old man, my over-the-shoulder view is much prettier!
 qstr_You_should_really_se|You should really see Steward Denetor's Facebook photos, he's amazing!
 qstr_Press_Space_to_conti|Press Space to continue...
+qstr_by_level|by level
+qstr_can_only_be_set_at_g|can only be set at game start; see options to adjust level
+qstr_by_day|by day
+qstr_can_only_be_set_at_ga|can only be set at game start; see options to adjust day
+qstr_ON|ON
+qstr_OFF|OFF
+qstr_If_you_are_new_to_TL|If you are new to TLD, tutorial messages are recommended
 qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} until next promotion^
 qstr_Influence:^_{reg11}_|Influence:^ {reg11} (with {s16})^
 qstr_Resource_Points:^_{r|Resource Points:^ {reg12} (in {s16})^
@@ -953,21 +963,10 @@ qstr_{s2}^_________{s4}:_|{s2}^         {s4}: {reg1} ({s23})
 qstr__________Faction_str|         Faction strengths report:^{s2}
 qstr_{s1}^^Factions_are_n|{s1}^^Factions are normally sieged when below {reg1} strength.
 qstr_Savagery|Savagery
-qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|Traits gained:^{s2}
 qstr_^^You_are_{s17}.|^^You are {s17}.
 qstr_Assassins_in_the_cam|Assassins in the camp, defend yourself!
-qstr_Ally_party_size:_{re|Ally party size: {reg1}
-qstr_Enemy_party_size:_{r|Enemy party size: {reg1}
-qstr_Party_count:_{reg0}|Party count: {reg0}
-qstr_Party_position__{reg|Party position ({reg2},{reg3}).
-qstr_Party_size_increased|Party size increased from {reg0} to {reg1}!
-qstr_Faction_strengths_re|Faction strengths report:^{s2}
-qstr_Attacking_enemy_part|Attacking enemy party {s11}
-qstr_Unknown_{reg3}_|Unknown({reg3})
-qstr_ON|ON
 qstr_OFF__cheat_|OFF (cheat)
-qstr_OFF|OFF
 qstr_All_messages|All messages
 qstr_{reg0}__will_most_li|{reg0} (will most likely cause save crashes)
 qstr_{reg0}__could_possib|{reg0} (could possibly cause save crashes)
@@ -975,9 +974,6 @@ qstr_Normal|Normal
 qstr_Defender_only|Defender only
 qstr_Halved|Halved
 qstr_Battles_only|Battles only
-qstr_Doubled|Doubled
-qstr_Tripled|Tripled
-qstr_Quadrupled|Quadrupled
 qstr_You_drank_the_Ent_Wa|You drank the Ent Water...
 qstr_You_used_the_Orc_Bre|You used the Orc Brew.
 qstr_You_and_your_compani|You and your companions drink a sip of Miruvor. You feel refreshed and strengthened.
@@ -999,8 +995,6 @@ qstr_^^^Defeated...^^^Sca|^^^Defeated...^^^Scattered in the Fangorn Forest... Al
 qstr_Troll_caged_in_wheel|Troll caged in wheeled cage.
 qstr_A_second_troll_is_ca|A second troll is caged in wheeled cage.
 qstr_Here_you_are.|Here you are.
-qstr_Player_was_moved_to_|Player was moved to {s10}.
-qstr_neutral_whereabouts|neutral whereabouts
 qstr_any|any
 qstr_woman|woman
 qstr_gondor|gondor
@@ -1059,9 +1053,9 @@ qstr__This_castle_seems_t| This castle seems to belong to no one.
 qstr__Your_own_banner_flie| Your own banner flies over the town gates.
 qstr__You_see_the_banner_o| You see the banner of {s7} over the town gates.
 qstr__The_townsfolk_here_| The townsfolk here have declared their independence.
+qstr_Get_book.|Get book.
 qstr_Go_to_the_secret_ent|Go to the secret entrance to Moria
 qstr_Search_for_a_secret_|Search for a secret entrance to Moria
-qstr_Get_book.|Get book.
 qstr_The_{reg6?town_s:cas|The {reg6?town's:castle's} food stores should last for {reg3} more days.
 qstr_The_{reg6?town_s:cast|The {reg6?town's:castle's} food stores have run out and the defenders are starving.
 qstr_You_re_preparing_to_|You're preparing to attack the walls, the work should finish in {reg9} hours.
@@ -1159,6 +1153,8 @@ qstr_Breaking_camp...|Breaking camp...
 qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
 qstr_Desertion|Desertion
 qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
+qstr_You_don_t_have_enoug|You don't have enough troops to guard all your prisoners. Their chance of escaping is increased.
+qstr_{s1}_has_escaped_fro|{s1} has escaped from your party.
 qstr_You_have_left_{s1}.|You have left {s1}.
 qstr_You_are_entering_{s1|You are entering {s1} ({s2}).
 qstr_You_are_entering_{s1}|You are entering {s1}.
@@ -1190,6 +1186,7 @@ qstr_In_a_desperate_attem|In a desperate attempt to defend against his enemies, 
 qstr_The_forces_of_{s2}_e|The forces of {s2} established an Advance Camp in {s15}!
 qstr_The_hosts_of_{s2}_ma|The hosts of {s2} march back to defend their homes!
 qstr_{playername}_s_Reser|{playername}'s Reserves
+qstr_{reg70}___Last_Stand|{reg70} - Last Stand
 qstr_Gondor_has_called_fo|Gondor has called for aide!
 qstr_Gondor_is_accompanyi|Gondor is accompanying the marshall!
 qstr_{s5}_has_stopped_fol|{s5} has stopped following you.
@@ -1701,6 +1698,16 @@ qstr__Guards_slaughter_hi| Guards, slaughter him!
 qstr_Slaughter_him_for_fr|Slaughter him for fresh human meat!
 qstr_This_is_{s5}_Command|This is {s5}, Commander.
 qstr_{s6}_This_place_and_|{s6} This place and the surrounding lands belong to {s7} of {s8}.
+qstr_Hear_now_commander._|Hear now, commander. I am currently out of assignment, yet I would rather meet our enemies in the field than wait for them to come here. I hear you're a capable leader. Would you have me?
+qstr_My_party_was_wiped_o|My party was wiped out in the last battle and I don't want to be assigned to the next best fool. I hear you're a capable leader. Could you use another warrior?
+qstr_{s9}_joined_your_par|{s9} joined your party
+qstr_A_pity!_I_sure_would|A pity! I sure would have liked to fight in your party-
+qstr_Too_bad_you_will_reg|Too bad, you will regret not taking me with you.
+qstr_Lead_me_to_the_{s3}|Lead me to the {s3}
+qstr_Lead_me_to_the_local|Lead me to the local authority
+qstr_Lead_me_to_the_Lord_|Lead me to the Lord's hall
+qstr_Lead_me_to_your_comm|Lead me to your commanders
+qstr_Lead_me_to_the_capta|Lead me to the captain of the garrison
 qstr_Hey_scum!_I_can_fix_|Hey scum! I can fix that jaw of yours.
 qstr_Watch_where_you_re_g|Watch where you're going, maggot!
 qstr_I_don_t_like_your_fa|I don't like your face! I think it needs some fixing.

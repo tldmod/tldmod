@@ -749,7 +749,7 @@ tld_archer_hold_fire = (1, 0, ti_once, [(eq,"$field_ai_archer_aim",1)],
           (eq, "$cheat_mode",1),
           (eq,":counter",0),
           (assign, reg1, ":distance"),
-         # (display_message, "@DEBUG: Distance: {reg1}"),
+         # (display_message, "@{!}DEBUG: Distance: {reg1}"),
         (end_try),
 
         (ge, ":distance", 7000),
@@ -866,7 +866,7 @@ tld_archer_aim_fix = (0, 0, 0, [(eq,"$field_ai_archer_aim",1)],
        #     (assign, reg10, ":counter"),
        #     (assign, reg11, ":bone"),
             #(assign, reg12, ":continue"),
-            #(display_message, "@DEBUG: OVERRRIDING AIM x{reg10}!. TARGETTING {reg11}."),
+            #(display_message, "@{!}DEBUG: OVERRRIDING AIM x{reg10}!. TARGETTING {reg11}."),
       #  (try_end),
     ])
 
@@ -985,7 +985,7 @@ tld_troll_aim_fix = (0, 0, 0, [(gt,"$trolls_in_battle",0)],
        #     (assign, reg10, ":counter"),
        #     (assign, reg11, ":bone"),
             #(assign, reg12, ":continue"),
-            #(display_message, "@DEBUG: OVERRRIDING AIM x{reg10}!. TARGETTING {reg11}."),
+            #(display_message, "@{!}DEBUG: OVERRRIDING AIM x{reg10}!. TARGETTING {reg11}."),
       #  (try_end),
     ])
 
@@ -1122,7 +1122,7 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
     # (assign, reg34, ":skill_riding"),     ### DIAGNOSTIC ### - Riding Skill
     # (assign, reg35, ":riding_reduction"), ### DIAGNOSTIC ### - Damage Reduction %
     # (assign, reg36, ":damage"),           ### DIAGNOSTIC ### - Raw Reduced Damage
-    # (display_message, "@DEBUG: {reg36} Damage: {reg30} + {reg31}x{reg32}/125 * (1 - {reg34}*8/100) = {reg30} + {reg33} - {reg35}", color_bad_news),
+    # (display_message, "@{!}DEBUG: {reg36} Damage: {reg30} + {reg31}x{reg32}/125 * (1 - {reg34}*8/100) = {reg30} + {reg33} - {reg35}", color_bad_news),
 
     (set_show_messages, 0),
     (store_agent_hit_points, ":health", ":agent_rider", 1),
@@ -2531,7 +2531,7 @@ AI_triggers_moto = [
   (0, .3, 0, [(eq, "$tld_option_formations", 2),(game_key_clicked, gk_order_1)], [
     (game_key_is_down, gk_order_1), #player is holding down key?
     (assign, "$temp_action_cost", 1),
-    #(display_message, "@DEBUG: F1 Held"),
+    #(display_message, "@{!}DEBUG: F1 Held"),
     (get_player_agent_no, ":player"), 
     (try_begin),
       (agent_slot_eq, ":player", slot_agent_tournament_point, 0),
@@ -2543,7 +2543,7 @@ AI_triggers_moto = [
 
 (.5, 0, 0, [(eq, "$tld_option_formations", 2),(eq, "$temp_action_cost", 1),(neg|game_key_is_down, gk_order_1)], [   
     (assign, "$temp_action_cost", 0),
-    #(display_message, "@DEBUG: F1 Let Go"),
+    #(display_message, "@{!}DEBUG: F1 Let Go"),
     (get_player_agent_no, ":player"),
     (try_begin),
       (agent_slot_eq, ":player", slot_agent_tournament_point, 1),
@@ -3683,14 +3683,14 @@ battle_encounters_effects = [
     (eq, ":encounter_effect", LORIEN_MIST),
     #(set_rain, 2,500), #yellow thingies in elven places
     (set_fog_distance,":fog_str",0xFFF09D),
-    #(display_message, "@DEBUG: LORIEN_MIST"),
+    #(display_message, "@{!}DEBUG: LORIEN_MIST"),
     (call_script, "script_lorien_mist_effect"), 
   (else_try),
     (eq, ":encounter_effect", SAURON_DARKNESS),
     (set_fog_distance,":fog_str",0x212020),
     (store_random_in_range, ":cloud_amount", 65, 90),
     (set_global_cloud_amount, ":cloud_amount"),
-    #(display_message, "@DEBUG: SAURON_DARKNESS"),
+    #(display_message, "@{!}DEBUG: SAURON_DARKNESS"),
     (call_script, "script_sauron_darkness_effect"), 
   (else_try),
     (eq, ":encounter_effect", SARUMAN_STORM),
@@ -3698,12 +3698,12 @@ battle_encounters_effects = [
     (set_fog_distance, 500, 0x010101),
     (store_random_in_range, ":cloud_amount", 65, 90),
     (set_global_cloud_amount, ":cloud_amount"),
-    #(display_message, "@DEBUG: SARUMAN_STORM"),
+    #(display_message, "@{!}DEBUG: SARUMAN_STORM"),
     (call_script, "script_saruman_storm_effect"), 
   (else_try),
     (eq, ":encounter_effect", GULDUR_FOG),
     (set_fog_distance,":fog_str",0x4B6047),
-    #(display_message, "@DEBUG: GULDUR_FOG"),
+    #(display_message, "@{!}DEBUG: GULDUR_FOG"),
     (call_script, "script_guldur_fog_effect"), 
   (try_end),
 
@@ -3723,6 +3723,7 @@ battle_encounters_effects = [
 # check for Fellbeast chance at battle start
 (ti_after_mission_start, 0, 120, [
 
+    (eq, 0, 1), #disabled for now
     #check involved factions (not player party)
     (assign, ":encountered_party_2_faction", -1),
     (try_begin),
@@ -4031,17 +4032,17 @@ beorning_shapeshift = [
         (agent_is_active, ":horse"), (agent_is_alive, ":horse"),
         (agent_get_item_id, ":horse_item", ":horse"), (eq, ":horse_item", "itm_bear"),
     ],[
-        (display_log_message, "@DEBUG: Ti on item wielded"),
+        (display_log_message, "@{!}DEBUG: Ti on item wielded"),
         (store_trigger_param_1,":agent"),
         (store_trigger_param_2,":item"),
         (try_begin),
             (ge, ":item", 0),
             (agent_unequip_item, ":agent", ":item"),
-            # (display_log_message, "@DEBUG: Unequip"),
+            # (display_log_message, "@{!}DEBUG: Unequip"),
         (end_try),
         (agent_equip_item, ":agent", "itm_warg_ghost_lance", 1),
         (agent_set_wielded_item, ":agent", "itm_warg_ghost_lance"),
-        #(display_log_message, "@DEBUG: Item equipped"),
+        #(display_log_message, "@{!}DEBUG: Item equipped"),
     ]),
 
     # Periodic weapon re-wield (2sec)

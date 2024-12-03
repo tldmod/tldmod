@@ -1329,11 +1329,11 @@ arena_grand_prize = 250
 #####################################
 # TLD constants begin (foxyman)
 #
-debug_point_0 = (1106, "@DEBUG: Routine 0", 0xffff00ff)
-debug_point_1 = (1106, "@DEBUG: Routine 1", 0xffff00ff)
-debug_point_2 = (1106, "@DEBUG: Routine 2", 0xffff00ff)
-debug_point_3 = (1106, "@DEBUG: Routine 3", 0xffff00ff)
-debug_point_4 = (1106, "@DEBUG: Routine 4", 0xffff00ff)
+debug_point_0 = (1106, "@{!}DEBUG: Routine 0", 0xffff00ff)
+debug_point_1 = (1106, "@{!}DEBUG: Routine 1", 0xffff00ff)
+debug_point_2 = (1106, "@{!}DEBUG: Routine 2", 0xffff00ff)
+debug_point_3 = (1106, "@{!}DEBUG: Routine 3", 0xffff00ff)
+debug_point_4 = (1106, "@{!}DEBUG: Routine 4", 0xffff00ff)
 
 debug_color = 0xff00ff
 

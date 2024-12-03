@@ -3345,7 +3345,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 ## Kham - Dormant Troop
 
-["dormant","Dormant","{!}", tf_hero|tf_is_merchant,no_scene,reserved,fac_commoners,[],def_attrib,0,knows_common|knows_inventory_management_10,0], #Used for Cheat Item Picker
+["dormant","{!}Dormant","{!}", tf_hero|tf_is_merchant,no_scene,reserved,fac_commoners,[],def_attrib,0,knows_common|knows_inventory_management_10,0], #Used for Cheat Item Picker
 
 
 ## Kham - Test AI

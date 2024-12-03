@@ -131,10 +131,8 @@ dlga_do_member_view_char:member_talk|Anything else?
 dlga_start:close_window.11|Let's leave whenever you are ready.
 dlga_start:close_window.12|Please do not waste any more of my time today. Perhaps we shall meet again.
 dlga_companion_recruit_signup_response:close_window|Unfortunately, I can't take on any more hands in my party right now.
-dlga_companion_recruit_rank:companion_recruit_payment|.
 dlga_companion_recruit_rank:close_window|It seems that you are not esteemed enough by my people, {playername}. You are a {s29} and you need to be a {s24} for me to join [{reg3} more rank points needed].^Let's speak again when you are more accomplished.
 dlga_companion_recruit_rank:companion_recruit_payment.1|I'm glad to see you have become {s29}, and I'm looking forward to joining you.
-dlga_companion_recruit_payment:companion_recruit_signup_confirm|.
 dlga_companion_recruit_payment_response:close_window|Well, there's little I can do then.
 dlga_start:companion_recruit_meet_again|We meet again.
 dlga_companion_recruit_meet_again:companion_recruit_backstory_delayed|So... What have you been doing since our last encounter?
@@ -240,7 +238,6 @@ dlga_start:close_window.13|Away with you, vile beggar.
 dlga_start:lord_start|If it isn't my brave champion, {playername}...
 dlga_start:lord_start.1|Good to see you again {playername}...
 dlga_start:lord_start.2|We meet again, {playername}...
-dlga_start:lord_intro|INVALID
 dlga_start:lord_meet_neutral|Do I know you?
 dlga_lord_meet_neutral:lord_intro|I am {playername}.
 dlga_lord_meet_neutral:lord_intro.1|My name is {playername}. At your service.
@@ -334,8 +331,6 @@ dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate siege
 dlga_lord_start:lord_pretalk|Ah, welcome, {s24}.^You should already know that {s12}. Your duty is to help in our struggle, {playername}. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to that chest over there, for you to store your personal belongings.
 dlga_lord_start:lord_talk|What is it?
 dlga_lord_pretalk:lord_talk|Anything else?
-dlga_lord_talk:lord_pretalk|Increase Relation
-dlga_lord_talk:lord_pretalk.1|Force Friendship Reward
 dlga_lord_talk:lord_lend_companion_end|I should like {s14} returned to me, {s65}, if you no longer require {reg3?her:his} services.
 dlga_lord_lend_companion_end:lord_pretalk|You've too many men in your company already, {playername}. You could not lead any more at the moment.
 dlga_lord_lend_companion_end:lord_pretalk.1|Certainly, {playername}. {reg3?She:He} is a bright {reg3?girl:fellow}, you're a lucky commander to have such worthy companions.
@@ -457,7 +452,6 @@ dlga_lord_give_order_details_ask:lord_give_order_details|Where?
 dlga_lord_give_order_details:lord_pretalk|Never mind.
 dlga_lord_give_order_stop:lord_pretalk|All right. I will do that.
 dlga_lord_give_order_answer:lord_pretalk|I am sorry. I am needed somewhere else at the moment.
-dlga_lord_give_order_answer:lord_give_order_answer_2|.
 dlga_lord_give_order_answer_2:close_window|I will do that.
 dlga_lord_give_order_answer_2:lord_pretalk|I am sorry, it is not possible for me to do that.
 dlga_lord_talk:lord_talk_ask_something|I wish to ask you something.
@@ -485,7 +479,6 @@ dlga_lord_tell_objective:lord_pretalk.9|We are fighting against {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.10|We are accompanying {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.11|We are reconsidering our next objective.
 dlga_lord_tell_objective:lord_pretalk.12|I don't know: {reg1} {s1}
-dlga_lord_mission_told_target_lord:lord_mission_rejected|{s6}.
 dlga_lord_mission_told_kill_quest_targeted:lord_mission_rejected|I cannot do this now.
 dlga_lord_mission_told_kill_quest_faction:lord_mission_rejected|I cannot do this now.
 dlga_lord_tell_mission:lord_mission_destroy_scout_camp_a|{playername}, we have received word that {s3} has a scout camp nearby, Make sure you are not seen and destroy it before they learn about our plans.
@@ -732,7 +725,6 @@ dlga_healers_ask_2:healer_wound_ask|My companions and I have serious wounds that
 dlga_healers_ask_2:healer_injured_ask|My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?
 dlga_healers_ask_2:close_window|Nothing.
 dlga_healers_meet:close_window|Nothing.
-dlga_healer_who:healers_meet|{s2}.
 dlga_healers_injured_check:healers_injured_heal|Yes, attend to us.
 dlga_healers_wound_check:healers_wound_heal|Yes, attend to us.
 dlga_healers_wound_check:close_window|Not right now.
@@ -747,7 +739,6 @@ dlga_sad_elf_2:sad_elf_choice|Ah, tales from the sea. And from beyond. My {lord/
 dlga_sad_elf_choice:sad_elf_leave|I feel your pain. You have done your share in this war. You may leave.
 dlga_sad_elf_choice:sad_elf_no|The Elves must not abandon Middle-earth to the shadow. This war we fight not for ourselves and each of us will have to play their role. I cannot give you leave. [Leadership Check]
 dlga_sad_elf_leave:close_window|Thank you, my {lord/lady}!^^To the Sea, to the Sea! The white gulls are crying,^The wind is blowing, and the white foam is flying.^West, west away, the round sun is falling.
-dlga_sad_elf_no:close_window|{s2}.
 dlga_start:close_window.15|You have come just in time. Let us join our forces now and teach our enemy a lesson.
 dlga_start:close_window.16|You are making a big mistake by fighting against us.
 dlga_start:ally_thanks_meet|I don't think we have met properly my friend. You just saved my life out there, and I still don't know your name...
@@ -808,7 +799,6 @@ dlga_mayor_talk:mayor_deliver_wine_incomplete|I was on a mission to deliver you 
 dlga_mayor_deliver_wine_incomplete:mayor_pretalk|They will pay for this! Well, at least we have some {s4}. Thank you anyway.^^[earned {reg14} Resource Points of {s14}]
 dlga_start:trainer_pretalk|You have survived up to Gauntlet wave {reg2}. {s4}
 dlga_start:trainer_pretalk.1|Very good, you've eliminated all the opponents.
-dlga_start:trainer_pretalk.2|{s4}.
 dlga_start:trainer_talk|Good day. Ready for some training today?
 dlga_trainer_pretalk:trainer_talk|Are you ready for some training?
 dlga_trainer_talk:trainer_combat_begin|First, tell me something about combat...
@@ -895,7 +885,6 @@ dlga_mayor_talk:merchant_quest_requested|How can I serve our cause?
 dlga_mayor_talk:merchant_quest_last_offered_job|About that task you needed me to do...
 dlga_mayor_talk:merchant_quest_about_job|About the task you gave me...
 dlga_mayor_talk:mayor_talk_ask_location|I want to know the location of someone.
-dlga_mayor_talk:mayor_friendly_pretalk|Increase Relation
 dlga_mayor_talk:close_window|[Leave]
 dlga_mayor_info_begin:mayor_info_talk|I am the local authority here in {s9}. You can say I am in charge of everyday tasks. There is always something to do, so if you want to help let me know.
 dlga_mayor_info_talk:mayor_info_lord|Who rules this town?
@@ -962,7 +951,6 @@ dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|No, I'm not int
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|That takes a weight off my shoulders, {playername}. You can expect a fine reward if you come back successful. Just don't get yourself killed, eh?
 dlga_merchant_quest_requested:merchant_quest_brief.9|The garrison commander here is looking for a resourceful warrior to take a group of {s12} to {s13}.
 dlga_merchant_quest_brief:move_cattle_herd_quest_brief|The group must arrive at {s13} within {reg6} days. Sooner is better, much better,  but it must be absolutely no later than {reg6} days.  Can you do that?^^[you will earn {reg14} Resource Points of {s14}]
-dlga_merchant_quest_brief:mayor_pretalk|DEBUG: It seems some coder abused his arcane powers, and forgot to put a dialog here. The quest is {s4}.
 dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Aye, I can take them to {s13}.
 dlga_move_cattle_herd_quest_brief:merchant_quest_stall|I am sorry, but no.
 dlga_move_cattle_herd_quest_taken:mayor_pretalk|Splendid. You can find them right outside the town. After you take them to {s13}, return back to me and I will give you your pay.
@@ -1029,7 +1017,6 @@ dlga_town_dweller_ask_join:town_dweller_ask_join_no|No, I have no use for you.
 dlga_town_dweller_ask_join_yes:close_window|Very well, I will gather my things and join your party.
 dlga_town_dweller_talk:town_dweller_ask_directions|Can you help me find a place?
 dlga_town_dweller_ask_directions:town_dweller_ask_directions2|What are you looking for?
-dlga_town_dweller_ask_directions2:town_dweller_ask_directions3|{s4}.
 dlga_town_dweller_ask_directions2:close_window|Never mind.
 dlga_town_dweller_ask_directions3:close_window|I know where that is. Follow me.
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|Are you threatening me? The guards hardly wait for your type to show up.

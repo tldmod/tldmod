@@ -2893,7 +2893,7 @@ ai_scripts = [
 # Output: s15
 ("theater_name_to_s15",[
      (store_script_param, ":theater", 1),
-     (str_store_string, s15, "@ERROR"),
+     (str_store_string, s15, "@{!}ERROR"),
      (try_begin),(eq, ":theater", theater_SE),(str_store_string, s15, "str_theater_SE"),
       (else_try),(eq, ":theater", theater_SW),(str_store_string, s15, "str_theater_SW"),
       (else_try),(eq, ":theater", theater_C ),(str_store_string, s15, "str_theater_C"),
@@ -3285,7 +3285,7 @@ ai_scripts = [
 	  (try_begin),
 		(eq, cheat_switch, 1),
 		(str_store_party_name, s1 , ":center_no"),
-		(display_message, "@{s1} siege attack!"),
+		(display_message, "@{!}{s1} siege attack!"),
 	  (try_end),
 	  
   ]),

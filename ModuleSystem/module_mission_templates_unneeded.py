@@ -13,7 +13,7 @@ from module_info import wb_compile_switch as is_a_wb_mt
     # (eq, "$cheat_mode",1),(key_is_down, key_h),(this_or_next|key_is_down, key_left_control),(key_is_down, key_right_control),
     # (get_player_agent_no, ":player_agent"),
 	# (agent_set_hit_points , ":player_agent",100,0),
-	# (display_message, "@CHEAT: healed!!! (ctrl+h)"),
+	# (display_message, "@{!}CHEAT: healed!!! (ctrl+h)"),
   # ], [ ]
 # )
 
@@ -462,10 +462,10 @@ nazgul_sweeps = (4,1.2,5,[
 	(try_begin),
 		(ge,":long_skretch",1),
 		(agent_play_sound, ":player_agent", "snd_nazgul_skreech_long" ),
-		#(display_log_message, "@Debug: LONG sweep!"),
+		#(display_log_message, "@{!}Debug: LONG sweep!"),
 	(else_try),
 		(agent_play_sound, ":player_agent", "snd_nazgul_skreech_short"),
-		#(display_log_message, "@Debug: SHORT sweep!"),
+		#(display_log_message, "@{!}Debug: SHORT sweep!"),
 	(try_end), 
 
 	(try_for_agents,":victim"), # psycological effect:

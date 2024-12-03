@@ -2633,12 +2633,12 @@ mission_templates = [ # not used in game
       (eq, "$battle_won", 1),
       (faction_slot_eq,"$players_kingdom",slot_faction_side,faction_side_good),
       (jump_to_menu, "mnu_starting_quest_victory_good"),
-      (display_message, "@battle won triggered - Good"),
+      (display_message, "@{!}battle won triggered - Good"),
       (finish_mission),
     (else_try),
       (eq, "$battle_won", 1),
       (jump_to_menu, "mnu_starting_quest_victory_evil"),
-      (display_message, "@battle won triggered - Evil"),
+      (display_message, "@{!}battle won triggered - Evil"),
       (finish_mission),
     (else_try), 
       (main_hero_fallen),
@@ -2700,7 +2700,7 @@ mission_templates = [ # not used in game
       (eq, "$battle_won", 1),
       (faction_slot_eq,"$players_kingdom",slot_faction_side,faction_side_good),
       (jump_to_menu, "mnu_starting_quest_victory_elves"),
-      (display_message, "@battle won triggered - Good"),
+      (display_message, "@{!}battle won triggered - Good"),
       (finish_mission),
     (else_try), 
       (main_hero_fallen),
@@ -2760,7 +2760,7 @@ mission_templates = [ # not used in game
       (this_or_next|eq,"$players_kingdom", fac_harad),
       (             eq,"$players_kingdom", fac_khand),
       (jump_to_menu, "mnu_starting_quest_victory_easterlings"),
-     # (display_message, "@battle won triggered - Easterlings"),
+     # (display_message, "@{!}battle won triggered - Easterlings"),
       (finish_mission),
     (else_try), 
       (main_hero_fallen),
@@ -2877,8 +2877,8 @@ mission_templates = [ # not used in game
   (0, 0, ti_once, 
   [
     #(str_store_troop_name, s1, reg20),
-    #(display_message, "@DEBUG: Enemy to spawn: {s1}"),
-    #(display_message, "@DEBUG: Enemies to spawn: {reg21}"),
+    #(display_message, "@{!}DEBUG: Enemy to spawn: {s1}"),
+    #(display_message, "@{!}DEBUG: Enemies to spawn: {reg21}"),
 
     # Make enemies charge...
     (set_show_messages, 0),
@@ -6470,7 +6470,7 @@ mission_templates = [ # not used in game
 	common_custom_battle_question_answered,
 	common_inventory_not_available,
   (5, 0, ti_once, [], [
-    (tutorial_message, "@Press F3 to start the battle.",0,8)]),
+    (tutorial_message, "@{!}Press F3 to start the battle.",0,8)]),
 	(0, 0, ti_once, [],[
 		(assign, "$g_battle_result", 0),
 		(assign, "$defender_team", 0),
