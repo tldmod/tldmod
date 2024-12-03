@@ -5401,7 +5401,7 @@ scene_props = [
     ])]),
             
 ] + (is_a_wb_sceneprop==1 and [ 
-  ("fellbeast", sokf_moveable|sokf_destructible, "Fellbeast_Full", "bo_Fellbeast_Full", [
+  ("fellbeast", sokf_moveable|sokf_destructible, "fellbeast_anim", "bo_Fellbeast_Full", [
     (ti_on_scene_prop_init,[
       (store_trigger_param_1, ":instance_no"),
       (store_random_in_range, ":var3", 0, 16),
@@ -5411,7 +5411,7 @@ scene_props = [
       (scene_prop_set_slot, ":instance_no", 43, 11), #dead frame
       (scene_prop_set_slot, ":instance_no", 41, 0), #circling mode
       (scene_prop_set_slot, ":instance_no", 42, -1), #target agent
-      (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 35, 2000),
+      (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 49, 2000),
       (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_1, 4),
       (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_2, 3),
       (assign, "$nazgul_in_battle", ":instance_no"),

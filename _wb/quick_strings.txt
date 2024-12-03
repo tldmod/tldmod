@@ -91,7 +91,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-12-02_18:27___
+qstr__rev_?_wb__dev_^_Bui _rev_¿?_wb_|_dev_^_Built_2024-12-03_18:36___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -876,7 +876,6 @@ qstr_Press_Ctrl_and_Up/Do Press_Ctrl_and_Up/Down_arrow_keys_to_tilt_up/down
 qstr_Fixed_Camera___Right Fixed_Camera_-_Right_Shoulder
 qstr_Fixed_Camera___Left_ Fixed_Camera_-_Left_Shoulder
 qstr_Fixed_Camera___Cente Fixed_Camera_-_Center
-qstr_key_clicked key_clicked
 qstr_The_Nazgul_retreats! The_Nazgul_retreats!
 qstr_Shield_is_too_big_to Shield_is_too_big_to_be_used_with_a_bow.
 qstr_{s7}_waves_at_you. {s7}_waves_at_you.
@@ -911,7 +910,7 @@ qstr_Formations_turned_OF Formations_turned_OFF_in_options_menu
 qstr_Division_{reg1}_{s2}_g Division_{reg1}_{s2}_goes_to_its_memorized_position...
 qstr_Division_{reg1}_{s2}_f Division_{reg1}_{s2}_forms_line_(memorized).
 qstr_Division_{reg1}_{s2}_fo Division_{reg1}_{s2}_forms_{reg0}_lines_(memorized).
-qstr_fellbeast_spawned fellbeast_spawned
+qstr_A_Nazgul_on_a_winged A_Nazgul_on_a_winged_steed_circles_over_the_battle_field!
 qstr_Delivered_{reg60}_da Delivered_{reg60}_damage.
 qstr_DEBUG__Health_Regen_ DEBUG_(Health_Regen):_{s1}_regains_{reg0}%_health.__=_+{reg1}%_STR
 qstr_Your_bear_form_has_{ Your_bear_form_has_{reg2}/{reg1}_HP!

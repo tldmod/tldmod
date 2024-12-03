@@ -4469,9 +4469,9 @@ nazgul_flying = ((is_a_wb_mt==1) and [
                 (eq, ":is_close", 1),
                 (store_random_in_range, ":chance", 0, 100), #make it screech from time to time
                 (try_begin),
-                    (ge, ":chance", 95),
-                    (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_long" ),
-                (else_try),
+                    # (ge, ":chance", 95), #only use short screech, as a long screech denotes attack mode
+                    # (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_long" ),
+                # (else_try),
                     (ge, ":chance", 90),
                     (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_short" ),
                 (try_end),
@@ -4567,14 +4567,15 @@ nazgul_flying = ((is_a_wb_mt==1) and [
     #Nazgul attack
     # slot 41: fellbeast mode: circle, attack, retreat
     # slot 42: target agent
-    (2, 0, 0, 
-    [(key_is_down, key_n),
+    (6, 0, 0, 
+    [
     (ge, "$nazgul_in_battle", 1),
-    (display_message, "@key clicked"),
     (scene_prop_slot_eq, "$nazgul_in_battle", 41, 0), #in circling mode?
     (mission_cam_get_position, pos2),
     (prop_instance_get_position, pos1, "$nazgul_in_battle"),
     (position_is_behind_position, pos1, pos2), #make sure that they don't "turn" when in camera
+    (store_random_in_range, ":rand", 0, 100),
+    (lt, ":rand", 10),
     ],
     [(set_fixed_point_multiplier, 100),
     (get_player_agent_no, ":player_agent"),
@@ -4648,7 +4649,7 @@ nazgul_flying = ((is_a_wb_mt==1) and [
         #compute target direction
         (agent_get_position, pos30, ":target_agent"), #readjust if target is moving
         (position_get_z, ":height", pos30),
-        (val_add, ":height", 400),
+        (val_add, ":height", 250),
         (position_set_z, pos30, ":height"),
         
             #debug, for tracking
@@ -4717,7 +4718,10 @@ nazgul_flying = ((is_a_wb_mt==1) and [
         (agent_get_position, pos30, ":target_agent"),
         (agent_play_sound, ":target_agent", "snd_blunt_hit"),
         (copy_position, pos69, pos30), #needed for script
+        (set_show_messages, 0),
         (call_script, "script_aoe_pushback", 50, 400), #50 damage, 4m radius
+        (agent_deliver_damage_to_agent, ":target_agent", ":target_agent", 50, itm_troll_aoe),
+        (set_show_messages, 1),
         
         (try_for_agents, ":agent", pos69, 2000), #morale effect
             (agent_get_team, ":agent_team", ":agent"),
@@ -4754,7 +4758,7 @@ nazgul_flying = ((is_a_wb_mt==1) and [
         (try_begin), #finished grabbing? Back to flapping loop
             (prop_instance_get_current_deform_progress, ":progress", ":instance_no"),
             (ge, ":progress", 95),
-            (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 35, 2000),
+            (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 49, 2000),
         (try_end),
         (prop_instance_get_animation_target_position, pos20, ":instance_no"),
         (prop_instance_get_position, pos30, ":instance_no"),

@@ -3723,7 +3723,6 @@ battle_encounters_effects = [
 # check for Fellbeast chance at battle start
 (ti_after_mission_start, 0, 120, [
 
-    (eq, 0, 1), #disabled for now
     #check involved factions (not player party)
     (assign, ":encountered_party_2_faction", -1),
     (try_begin),
@@ -3744,9 +3743,8 @@ battle_encounters_effects = [
     (this_or_next|gt, "$g_starting_strength_friends", 1000),
     (gt, "$g_starting_strength_main_party", 1000),
     
-    (store_add, ":battle_importance", "$g_starting_strength_enemy_party", "$g_starting_strength_main_party"),
-    (val_add, ":battle_importance",  "$g_starting_strength_friends"), #this counts player strength double, but it doesn't need to be exact
-    (store_random_in_range, ":chance", 0, 20000),
+    (store_add, ":battle_importance", "$g_starting_strength_enemy_party", "$g_starting_strength_friends"),
+    (store_random_in_range, ":chance", 0, 6000),
     (gt, ":battle_importance", ":chance"),
         
   ],[
@@ -3806,11 +3804,13 @@ battle_encounters_effects = [
     (agent_get_team, reg77,":player_agent"),
     (position_move_y, pos1, 10000),
     (position_move_z, pos1, 10000),
+    (store_random_in_range, ":rotation", 0, 360),
+    (position_rotate_z, pos1, ":rotation", 1),
     (set_spawn_position, pos1),
     (spawn_scene_prop, "spr_fellbeast"),
     (assign, "$nazgul_in_battle", reg0), #store fellbeast prop in global
-    (display_message, "@fellbeast spawned"),
     (prop_instance_play_sound, "$nazgul_in_battle", snd_nazgul_skreech_long),
+    (display_message, "@A Nazgul on a winged steed circles over the battle field!")
 ]),
 
 ]
