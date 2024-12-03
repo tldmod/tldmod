@@ -192,10 +192,10 @@ scn_edoras_center edoras_center 256 none none 0 0 200 200 -100 0x000000012000050
   0 
   0 
  outer_terrain_rohan 
-scn_aldburg_center aldburg_center 256 none none 0 0 100 100 -100 0x0000000130000500000d234800002fba00004fd900006cf1 
+scn_aldburg_center aldburg_center 256 none none 0 0 100 100 -100 0x000000032007956000025896000037e800000e860000674b 
   0 
   0 
- outer_mountains2east 
+ outer_mountains2south 
 scn_hornburg_center hornburg_center 256 none none 0 0 100 100 -100 0x0000000330000500000d234800006228000053bf00004eb9 
   0 
   0 
