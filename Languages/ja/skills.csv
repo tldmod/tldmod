@@ -3,7 +3,7 @@ skl_trade_desc|鍛冶屋と補給係が より協力的になり、 より良い
 skl_leadership|統率力
 ; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|囚人管理
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Leader skill)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
 skl_persuasion|ワイルドクラフト
 skl_persuasion_desc|自然を操り、自然の中を生き延びる 能力です。木々の生い茂る地形に おいて、パーティの移動速度と、 敵から姿を隠す能力に影響を与えます。 (パーティスキル)
 skl_engineer|-----

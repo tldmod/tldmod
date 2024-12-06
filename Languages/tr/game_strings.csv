@@ -1,4 +1,3 @@
-
 str_yes|Evet.
 str_no|Hayır.
 str_noone|hiç kimse
@@ -13,10 +12,6 @@ str_bandits_eliminated_by_another|Belalı eşkıyalar başka bir grup tarafında
 str_msg_battle_won|Savaş kazanıldı! Ayrılmak için Tab'a basın...
 str_tutorial_map1|Şu anda harita modundasınız. Seyahat etmek, kasabalara girmek ve başka grupları takip etmek için harita üzerinde bir yere farenin sol tuşuyla tıklayın. Normalde, grubunuz hareket etmedikçe zaman ilerlemez. Bir noktada beklemek istiyorsanız, boşluk tuşuna basılı tutun.
 str_accept|Kabul et
-str_charge|Hücum
-str_color|Renk
-str_flip_horizontal|Yatay döndür
-str_flip_vertical|Dikey döndür
 str_hold_fire|Ateşi Kes
 str_blunt_hold_fire|Bayıltıcı silahlar / Ateşi Kes
 str_tutorial_ammo_refilled|Cephane yenilendi
@@ -1307,7 +1302,6 @@ str_faction_strength_strong|güçlü
 str_faction_strength_quite_strong|oldukça güçlü
 str_faction_strength_very_strong|Çok güçlü
 str_faction_strength_unmatched|Eşsiz
-str_faction_strength_last|GEÇERSİZ
 str_theater_se|Gondor
 str_theater_sw|Rohan
 str_theater_c|Güney Rhovanion
@@ -2055,7 +2049,6 @@ str_moria_intro|^Madenlerin intikamını almak, madenleri, kazıcıları ve elf 
 str_guldur_intro|^Karanlık güç Dogu'da tekrar yükseliyor. Barad-dûr Lordu hizmetkarlarını Dol Guldur'a gönderdi, burada iradesi bir kez daha dalgalanacak. Ocaklar silahlar ve zırhlarla dolu, Kafesler binlerce yırtıcı warg, kışlalar savaşmaya ve ölmeye hazır orklarla doludur.^^Yukarıda yükseklerde Kuyutorman'ın siyah gökyüzünde kanatlı Nazgûl… Büyük Göz'ün elması, güç ile çamurlu hayallerinizin ulaşamayacagı derinliklerde bulunuyor. Karanlık lord en az üç tanesini gücünün ulaşacagı direnen herkesi bastırarak, Mordor'un düşmanları sonsuza dek kırılana kadar ugraşmaları için bu yere gönderdi.^^Herhangi bir yolla saflarda yükselmeye karar verdin. Dol Guldur ve Lugbúrz'un lütfunu kazan. Zekâ, sertlik ve savaştaki acımasız becerilerin ile yolunda duran herkesi ezeceksin. Mordor'un Karanlık Lordu'nun iyiligini kazanacaksın, o gelecek Savaştan sonra hepsine hükmedecek… ya da bunun olması ugrunda öleceksin.^^Dol Guldur yayılacak. Batı'nın ışıgı sönecek. Mordor'un zamanı geldi!
 str_dunland_intro|^İnsanlarınız, Rohan'ın hasır kafalı palyaçoları olan kara yürekli Forgoil'in elinde haksızlıktan başka bir şey bilmiyorlar. Rohirrim'in Hammerhand adını verdigi insan yiyen canavar Helm'den korkak bir darbe ile kudretli Freca zamanından, agır boyundurugu altında büyük bir acı çektiniz. Yüksek elli ihanetleri, sayılamayacak kadar çok.^^ Ama şimdi bu düzen degişiyor. Isengard'ın kurnaz yaşlı efendisi Bilge Saruman, halkınıza arkadaşlık vaat etti. Onun yardımı ile, şüphesiz mutlu günlerde Edoras'ta Meduseld tahtını haklı olarak bir zamanlar oturan asil Kral Wulf'un davası desteklenecek.^^İnsanlarınız artık zor bir yaşam için kayalık topraklarda kazınmayacak. Sütü çok az akıyor diye artık bebekler annelerinin kucagında ölmeyecek. Artık halkınız Rohan'ın katil gaspçılarından korkmayacak. Mızraklarınız uzun ve baltalarınız gaddar ve keskin. Bilge Saruman'ın yardımıyla başarısız olamazsın. Size ait olanı haklı olarak geri alacaksınız.^^Saruman için savaşacaksın. Saruman için öleceksin!
 str_beorn_intro|^Bu ormanlar, bu eski yollar ve Ford, şimdiye kadar bildiginiz tek yuvadır, ancak yaşlı Beorn, daglarda, daha eski bir evi hatırlayan biriydi. Oglu Şef Yaşlı Grimbeorn, şimdi en önde halkınız arasında duruyor ve babası gibi o da geceleri büyük Carrock'ta oturup, gözünü batıya çevirip, derin düşüncelerde.^^Sen ise daha basit düşüncelerdesin. Orman giderek daha da tehlikeli oluyor. Pis orklar daha cüretkar oldular ve gün ışıgında bile ortalıkta dolaşır oldular. Goblin üslupuyla o kadar bozulmuşlar ki bindikleri kurtlar senin kabilenden birini bile dinlemez olmuşlar. Hava farklı, kötü kokuyor. Çok uzun zaman önce Büyücünün yaşadıgı ve isimlendirmeye degmeyen şeyler yaptıgı Dol Guldur'a ne kadar yaklaşırsanız, o kadar kötüleşiyor.^^Elfler kuzeye dogru magaralarında toplanırlar. Çogu ormanı, hayvanlarını, agaçlarını ve hareket eden ve yaşayan diger şeyleri korumak için dışarı çıkmayacak.^^Ford'u ve ormanı güvende tutmak için her zaman oldugu gibi halkınız savaşacak. Elinizde saglam bir sopayla, araya girmeye cesaret eden tüm orkları parçalayacaksınız. Ve eger daha büyük darbeler gelirse, insanlarınızın çogu göründügünden daha fazla…^^Ama eger Beornings'in acımasız savaş gücü bile başarısız olursa, o zaman dünya artık tatlı balın, parlak çiçeklerin, gölgeli orman yollarının ve iyi olan her şeyin neşesini unutacaklar. Hepsi Karanlıgın altında kalacak.
-str_intro_strings_end|Intro biter
 str_gondor_intro_2|^Yüce lordunuza hizmet etmek için seyahat ederken bazı Orkların bir kervana baskın yapmak üzere oldugunu görüyorsun.
 str_dwarf_intro_2|^Erebor kapılarına olan yol üzerinde giderken bazı Orkların bir kervana baskın yapmak üzere oldugunu görüyorsun.
 str_rohan_intro_2|Edoras yolundayken, orkların saldırısına ugrayan bir karavan gördün
@@ -2074,7 +2067,6 @@ str_guldur_intro_2|^Dol Guldur'a olan yol üzerinde giderken bazı Orkların bir
 str_gundabad_intro_2|^Gundabad Dagı'na olan yol üzerinde giderken bazı Orkların bir kervana baskın yaptıgını görüyorsun.
 str_dunland_intro_2|^Halkının ana savaş kampına giderken, bazı orkların bir kervana baskın yapmaya hazırlandıgını görüyorsun.
 str_beorn_intro_2|^Beorn’un Evine giderken, bir takım Orkları pusuya düşürmeye hazırlanan bazı müttefiklerle karşılaşıyorsunuz.
-str_intro_strings_2_end|2.İntro sonu
 str_gondor_faction_intro|^ Sindarin dilindeki “taş diyarı” olan Gondor Güney Krallıgı, eski Númenorluların soyundan geliyor. Vekilharç Denethor yönetiminde bu gururlu adamlar, düşmana karşı ilk ve belki de son savunma hattı olarak dururlar. ^^ Gondor’un ordusu, bütün farklı savaşlardan gelen güçlerden oluşur. Genel olarak saglam ve iyi zırhlı birlikleri olan standart orduyu elde edersiniz: Dol Amroth’un agır süvarileri, Pinnath Gelin’in yeşil kaplı okçuları ve mızrakçıları, Blackroot Vale’nin Yaylıları, Lossarnach’ın baltaları, Pelargir’li agır denizciler veya Lamedon’un sertleştirilmiş klanları.
 str_dwarf_faction_intro|^Durin’in Halkı olarak da bilinen cüceler kısa, saglam ve kuvvetli savaşçılardır. Silahlarının ve zırhlarının ustalıgıyla tanınırlar, ancak yaptıkları zırhların ve silahların atalarının kayıp sanatlarıyla yarışamayacaklarını üzülerek söylerler. Bu son günlerde, Yalnız Dag ve Demir Tepeleri'nden geliyorlar.^^Onların ordusunu genellikle bir piyade hattı, bir izci/okçu hattı ve bir Demir Tepeler hattı (en agır sert vuruşlu piyade) oluşuyor.
 str_rohan_faction_intro|^Rohirrim, kral Théoden liderligindeki Rohan'ın at beyleridir. ^^Rohirrim, agır hançerlerden çevik at okçularına kadar çok iyi süvarilere sahiptir. Kalkan duvarı oluşturucu birlikler ve uzun kılıç taşıyan agır kılıç ustalarına kadar uzanan piyade hatları da vardır.
@@ -2093,7 +2085,6 @@ str_guldur_faction_intro|^Dol Guldur, Kuyutorman'daki Sauron'un eski bir kalesid
 str_gundabad_faction_intro|^Gundabad, Cüceler için kutsal bir yerdi, ancak bu günlerde kuzey daglarında devasa bir Ork kalesi haline geldi.^^Gundabad orkları, diger yerlerdeki arkadaşlarından daha vahşi olsalar da, benzer bir ordu kadrosuyla (piyade, okçu, avcı, savaşçı) diger tüm orklar gibi savaşırlar. Ekipmanları ilkel ve dövüş tarzları barbarca. Kurt binicileri, sertlik ve gaddarlıkta rakipsizdir. Gundabad'ın orklarından bazıları kendilerini bir savaş çılgınlıgına bile sokabilir.
 str_dunland_faction_intro|^ Dunlendliler, onları vatanlarından süren Rohirrim'in düşmanları olan “Dunland'in vahşi adamları”. ^^ Dunland çorak ve fakirdir. Dunland halkı, çok az gerçek zırh giyer - çogunlukla kürkler ve sertleşmiş deriden oluşan zırhların yanında bazı metaller ise statüyü işaret eder. Silahlar için, uzun kılıçlar ve boynuz baltaları kullanırlar, nadir kılıçları prestij amblemi olarak kullanırlar. Atları ince ve zayıftır, Rohan'ın atları ile kesinlikle eşleşmez, ancak Dunlend halkı onları avcılar olarak savaşa götürür. Savaşta, mızraklıları toplu olarak ilerler ve kaba ama zorlayıcı bir keskin zırh duvarı sunar. Bazı Dunlendliler ayrıca vahşi yaratıklarla ilişkilerini de geliştirdi ve vahşi kurt sürülerini düşmanlarına karşı salıverebilirler.
 str_beorn_faction_intro|^Beorn soyundan gelen Beornlar, KuyutOrman ile Sisli Daglar arasında Anduin'in üst Vadisindeki halkdır. Eski Ford'u ticaret için açık tutsalar da, ticaret için kervanlardan bir ücret talep ediyorlardı.^^ Ormancı olarak, palamut çubukları ve keskin baltalar kullanıyor olsalar da, zırh konusunda çok zayıflar. Agır Beorn piyadeleri kalkanlarla savaşır, Beorn ormancıları da yetenekli okçular olarak degerli bir okçu hattı sunarlar.
-str_intro_faction_intro_strings_end|faction intro SON
 str_gondor_extra_info|İyi^^Zor^^Gondor (Güney-Dogu)^^Prens Imrahil^^Mordor, Umbar, Khand, Harad
 str_dwarf_extra_info|İyi^^Kolay^^Kuzey Rhovanion (Kuzey)^^Kral Dain II Demirayak^^Rhun, Gundabad
 str_rohan_extra_info|İyi^^Ortalama^^Rohan (Güney-Batı)^^Kral Theoden^^Isengard, Dunland
@@ -2112,7 +2103,6 @@ str_guldur_extra_info|Sauron^^Çok Zor^^Güney Rhovanion (Merkez)^^Usta Fuinur^^
 str_gundabad_extra_info|Saruman^^Çok Zor^^Kuzey Rhovanion (Kuzey)^^Usta Burza Krual^^Dale, Cüceler, Kuyutorman, Beornlar
 str_dunland_extra_info|Saruman^^Zor^^Rohan (Güney-Batı)^^Şef kara Daeglaf^^Rohan
 str_beorn_extra_info|İyi^^Zor^^Kuzey Rhovanion (Kuzey)^^Yaşlı Şef Grimbeorn^^Rhun, Gundabad
-str_intro_strings_extra_end|Intro EXTRA SON
 str_gundabad_intro|Savaşın haberlerini aldıktan sonra, uzak kuzeyden uzun zamandır kayıp olan Angmar topraklarından geldiniz. Yıllar geçtikçe siz ve halkınız, baltalarınız ve mızraklarınızla birçok cüce kalkanı kırdınız, şiddetli savaşlarınızın pençelerinin altında bulunan çok sayıda İnsan ve Elfin vücutlarını parçaladınız ve Ayı-İnsanların kürklerini kıyafet olarak giydiniz. Sisli Daglardaki Gundabad'ın Salonları tekrar sizin elinizde, Bolg ve Azog zamanlarında oldugu gibi. ^^Birçogunuz yıllar içinde, bu salonlarda ve tünellerde ölenleri gördü, ama hala hayatta olanlar var. Geçmişte açgözlü kazıcılar ve arkadaşları ile geçirmiş oldugunuz büyük mücadele - ve şimdi daha fazla mücadele edeceksiniz, onlara karşı hareket etmeye ve ellerindeki her şeyi kendiniz için almaya başladıgınızda!^^ Bolg için, Azog için, Büyük Goblin için intikam - Gundabad goblinleri için İntikam!
 str_show_keybinds|Özel Tuşlar: ^^ Formasyon Tuşları: ^ Sıralar - J ^ Kalkan duvarı - K ^ Kama - L ^ Kare -; ^ Açık Formasyonlar - U ^^ Silah Kullanımını degiştirme - O ^^ Kamera Türünü degiştirme - CTRL + END ^^ Geri çekilme - V ^^ Atı çagırma - M ^^ emirleri görüntüle / Minimap - Backspace
 str_tactical_controls|Bir bölük seçmek için klavye NUMARALARI'nı kullanın. Tüm gücünüzü seçmek için 0'a basın.^^Seçilen bölümleri sıralamak için F1-F4 kullanın. Seçilen bölümleri yerleştirmek için F1 tuşunu basılı tutun. Bu mekanizma ile bir düşman tümeni hedef alınabilir.^^ENTER tuşuna basmak genellikle bir tepegöz Strateji Kamerası başlatır.^^GERİ AL tuşuna basmak genellikle 'radar' ile bir Savaş Komutu Ekranı başlatır.

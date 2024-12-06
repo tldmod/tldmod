@@ -3,7 +3,7 @@ skl_trade_desc|Торговці стають більш поступливими
 skl_leadership|Лідерство
 skl_leadership_desc|Кожне очко збільшує максимальну кількість військ, якими ви можете керувати, на 5 (3 для компаньйонів), підвищує моральний дух вашої групи та злагодженість у бою. Змушує більше і сильніших добровольців йти за вами. (Особиста майстерність)
 skl_prisoner_management|Утримання полонених
-skl_prisoner_management_desc|Кожен рівень цього вміння збільшує максимальну кількість полонених на %d. Покращує шанси захоплення та утримання полонених (вміння лідера).
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
 skl_persuasion|Виживання
 skl_persuasion_desc|Здатність вижити в дикій природі та підкорити її своїй волі. Ця навичка впливає на здатність загону сховатися від ворога та швидкість загону у лісистій місцевості. (групове уміння)
 skl_engineer|-----

@@ -5,7 +5,10 @@ mno_faction_intros|Μάθε για τις διάφορες φατρίες της
 mno_go_bback|Πίσω
 menu_start_phase_2|^^^^^ Μέση Γη. Μία σκιά μεγαλώνει στην Ανατολή,^ και σκοτεινά πράγματα επιστρέφουν που ήταν καιρό κρυμμένα.^ Οι ελεύθεροι άνθρωποι ετοιμάζονται για πόλεμο, παρόμοιο του οποίου δεν έχει γίνει εδώ και μια εποχή.^ Άνθρωποι, Ξωτικά, Νάνοι και Ορκ: όλοι θα παίξουν το κομμάτι τους.^^ Πιο κομμάτι, ωστόσο, μένει να φανεί...
 mno_go_forth|Προχώρα στον δρόμο πού διάλεξες...
+; mno_change_war_start_mode|War Starts:  {s7}
+; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|Άλλαξε τις επιλογές TLD.
+; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^^Διαλέξτε το σενάριο σας:
 mno_custom_battle_scenario_1|Μάχη, Γκόντορ ενάντια Χαράντ
 mno_custom_battle_scenario_12|Επιλέξτε φατριές για την μάχη
@@ -35,7 +38,6 @@ mno_view_upkeep_costs|Δες το κόστος συντήρησης.
 mno_view_character_report|Δες αναφορά χαρακτήρα.
 mno_view_party_size_report|Δες την αναφορά του μεγέθους της ομάδας σου.
 mno_view_morale_report|Δες αναφορά ηθικού της ομάδας.
-mno_view_character_report_02|Έλεγχος κατάστασης NPC.
 mno_view_faction_strengths_report|Δες αναφορά της δύναμης της φατρίας.
 mno_view_traits_report|Δες χαρακτηριστικά.
 mno_resume_travelling|Συνέχισε το ταξίδι.
@@ -47,7 +49,6 @@ mno_continue_dot|Συνέχεια
 menu_custom_battle_durin_end|Ήταν αξιοθαύμαστη η τελική μάχη, αλλά στο τέλος καταδικασμένη. Εσύ και οι σύντροφοι σου σκοτώσατε {reg5} εχθρούς. Εσύ σκότωσες {reg7} εχθρούς ενώ πολεμούσες.
 mno_replay_cbd|Ξαναπαίξτε αυτή τη μάχη
 mno_continue_dot_cbd|Συνέχεια 
-mno_dot_go_back|Πίσω
 menu_start_good|Επέλεξε το είδος σου:
 mno_start_ma|ΑΝΘΡΩΠΟΣ
 mno_start_el|ΞΩΤΙΚΟ
@@ -110,10 +111,8 @@ mno_start_2_far|Ιθαγενής του Φαρ Χαράντ
 menu_start_numenorean|Είσαι Μαύρος Νουμενοριανός, πιστός στο Σκότος και στον Μόργκοθ. Επέλεξε που υπηρετείς το Μάτι
 mno_start_1_bn|Επόμενος στο Στόμα του Σάουρον, στην ΜΟΡΑΝΝΟΝ
 mno_start_2_bn|Στο Φρούριο του Νεκρομάντη, ΝΤΟΛ ΓΚΟΥΛΝΤΟΥΡ
-menu_choose_gender|Το φύλο σου;
 mno_start_male|Άνδρας
 mno_start_female|Γυναίκα
-mno_proc|Συνέχισε κανονικά
 menu_start_as_one|Τι είδος στρατιώτης είσαι;
 mno_start_default|Γίνε {s23} (Κανονικό)
 mno_start_up1|Γίνε {s21} (Εύκολο)
@@ -127,8 +126,8 @@ mno_camp_action|Χρησιμοποίησε ένα αντικείμενο.
 mno_camp_wait_here|Κατασκήνωσε εδώ για λίγο.
 mno_camp_options|Άλλαξε ρυθμίσεις TLD.
 mno_Dev_Menu|Μενού Προγραμματιστή
-menu_dev_menu|Αυτές είναι οι Ρυθμίσεις Προγραμματιστή, σου δίνουν να παίξεις με πολλά cheats/εργαλεία. Έχει όμως σαν συνέπεια μερικά WIP συμβάν, triggers, και αλλαγές στην καμπάνια που μπορεί να χαλάσουν το παιχνίδι. Χρησιμοποίησε τις προσεκτικά! Επίσης, όταν αναφέρεις bugs, πες μας πότε χρησιμοποιείς το Μενού Προγραμματιστή.
-mno_Cheat_enable|Χρησιμοποίησε ρυθμίσεις cheat/modding.
+; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_cheat_enable|Χρησιμοποίησε ρυθμίσεις cheat/modding.
 menu_game_options|Επέλεξε μία ρύθμιση για να την αλλάξεις:
 mno_game_options_war_level_start|Ο Πόλεμος Αρχίζει στο Επίπεδο: {s1}
 mno_game_options_restrict_items|Περιορισμένος εξοπλισμός παίκτη: {s7}
@@ -160,8 +159,8 @@ mno_strat_tweaks_siege_reqs|Απαιτήσεις δύναμης για πολι�
 mno_strat_tweaks_siege_relax_rate|Χαλάρωση βαθμού απαίτησης δύναμης για πολιορκία: {reg1}
 mno_strat_tweaks_regen_rate|Βαθμός επαναφόρτισης δύναμης: {s7}
 mno_strat_tweaks_siege_regen_limit|Η δύναμη της φατρίας επαναφορτίζει πιο αργά σε βαθμό: {reg1}
-mno_strat_tweaks_influence_gain_rate|Βαθμός απόκτησης επιρροής: {s7}
-mno_strat_tweaks_rank_gain_rate|Βαθμός απόκτησης κατάταξης: {s7}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
 mno_strat_tweaks_back|Πίσω στο μενού αλλαγών.
 menu_camp_action|Ποιο αντικείμενο;
 mno_camp_drink_water|Πιες το Νερό των Εντς!
@@ -255,12 +254,12 @@ mno_player_control_allies_join_menu|Διέταξε τους και όρμησέ 
 ; mno_talk_to_siege_commander| Request a meeting with the commander.
 ; mno_join_siege_with_allies|Join the next assault.
 ; mno_join_siege_stay_back|Order your soldiers to join the next assault without you.
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. Perusing the book,  you stumble on the words 'true silver'! Studying the pages you suddenly understand  that those are the descriptions of dwarven stashes somewhere on the lower levels. Hah!  Would not it be cool to uncover the long lost dwarven mithril!?  ^You eagerly follow the directions, into a narrow winding tunnel and down...  ^...^After a couple of hours of fruitless search you understand that you are lost deep in Moria and need to find a way out.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 ; mno_moria_exit_scene|Find your way out!
 ; menu_castle_outside|You are outside {s2}.{s11} {s3} {s4}
-; mno_moria_enter|Return into main hall of Moria trough the secret entrance
-; mno_moria_enter_door|Enter Moria.
 ; mno_cheat_steal_book_door|Get the book
+; mno_moria_enter|Return into main hall of Moria through the secret entrance
+; mno_moria_enter_door|Enter Moria.
 ; mno_castle_start_siege|Besiege the {reg6?town:castle}.
 mno_castle_leave|Φύγε.
 ; menu_castle_besiege|You are laying siege to {s1}. {s2} {s3}
@@ -305,6 +304,7 @@ mno_siege_defender_do_not_join_battle|Μην συμμετέχεις.
 ; mno_talk_to_castle_commander|Visit the {s61} Barracks.
 ; mno_speak_with_elder|Speak with the {s6}.
 ; mno_town_ask|Ask around for persons of import...
+; mno_player_initiate_siege|Attack the {reg6?town:castle}...
 ; mno_isengard_underground|Go to the underground caverns.
 ; mno_isengard_underground_door|Go to the underground caverns
 ; mno_tirith_toplevel|Climb up to the top level.
@@ -349,6 +349,16 @@ mno_town_leave|Φύγε...
 ; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
 ; mno_attack_lair|Attack them now
 ; mno_leave_bandit_lair|Leave for now.
+; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
+; mno_go_with_the_raftmen|Take the raft to Dorwinion
+; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
+; mno_ride_to_dorwinion_next|Next...
+; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
+; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
+; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
+; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
+; mno_bandit_fortress_spirits|Go talk with the spirits.
+; mno_leave_amath_dollen_fortress|Leave for now.
 ; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
 ; mno_gondor_reinforcement_event_close|Close
 ; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
@@ -362,6 +372,7 @@ mno_gondor_beacons_close|Φύγε...
 ; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
 ; mno_center_besieged_event_close|Close
 ; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
+; mno_guardian_party_spawned_close|Close
 mno_intro_next|Συνέχισε...
 ; mno_start_defend_caravan|Defend the Caravan!
 ; mno_start_raid_caravan|Raid the Caravan!
@@ -391,7 +402,6 @@ mno_intro_next|Συνέχισε...
 mno_evil_war_tut_continue|Συνέχισε...
 ; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
 ; mno_training_continue|Begin training...
-; menu_alternate_training_conclusion|{s5}
 ; mno_alternate_training_retry|Try again...
 ; mno_alternate_training_finish|Leave the arena...
 ; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:
@@ -415,7 +425,7 @@ mno_cb_mordor2|Ντούνλαντ
 ; mno_cb_mordor4|Easterlings
 mno_cb_mordor5|Μόρια
 mno_cb_mordor6|Γκούνταμπαντ
-mno_cb_mordor7|Ρουν
+; mno_cb_mordor7|Rhûn
 ; mno_cb_mordor8|Corsairs
 ; mno_rescue_mission|Sneak into the sorcerer's lair under the night's cover.
 ; mno_next_rescue_scene_door|Continue onward!
@@ -437,7 +447,6 @@ mno_cb_mordor7|Ρουν
 ; menu_town_ruins|When you approach, you see that {s1} is {s2}
 mno_ruin_menu_0|Εξερεύνησε
 mno_ruin_leave|Φύγε...
-; menu_premutiny|none
 ; menu_death|You have been killed. Though the war still rages on, you will no longer be part of it.
 ; menu_animal_ambush|You and your companions find yourselves separated from the rest of your party, when suddenly...
 ; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
@@ -457,3 +466,4 @@ mno_ruin_leave|Φύγε...
 mno_back_3dot|Πίσω...
 mno_back|Πίσω
 ; mno_next|Next...
+; mno_previous|Previous...

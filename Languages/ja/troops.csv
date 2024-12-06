@@ -1,5 +1,3 @@
-trp_unarmed_troop|非武装の兵士
-trp_unarmed_troop_pl|非武装の兵士
 trp_tutorial_maceman|メイス使い
 trp_tutorial_maceman_pl|メイス使い
 trp_tutorial_archer|弓兵
@@ -766,72 +764,66 @@ trp_c4_mordor_num_horseman|黒きヌーメノール 騎兵
 trp_c4_mordor_num_horseman_pl|黒きヌーメノール 騎兵
 trp_c5_mordor_num_knight|黒きヌーメノール 精鋭騎兵
 trp_c5_mordor_num_knight_pl|黒きヌーメノール 精鋭騎兵
-trp_noldorin_commander|ノルドール指揮官
-trp_noldorin_commander_pl|ノルドール指揮官
-trp_elf_captain_of_lothlorien|ロスローリエンの隊長
-trp_elf_captain_of_lothlorien_pl|ロスローリエンの隊長
-trp_lothlorien_lieutenant|ロスローリエンの副隊長
-trp_lothlorien_lieutenant_pl|ロスローリエンの副隊長
-trp_elf_captain_of_mirkwood|緑森エルフの隊長
-trp_elf_captain_of_mirkwood_pl|緑森エルフの隊長
-trp_mirkwood_lieutenant|緑森の副隊長
-trp_mirkwood_lieutenant_pl|緑森の副隊長
-trp_elf_captain_of_rivendell|裂け谷の隊長
-trp_elf_captain_of_rivendell_pl|裂け谷の隊長
-trp_rivendell_lieutenant|裂け谷の副隊長
-trp_rivendell_lieutenant_pl|裂け谷の副隊長
-trp_lieutenant_of_rohan|ローハンの副隊長
-trp_lieutenant_of_rohan_pl|ローハンの副隊長
-trp_captain_of_rohan|ローハンの隊長
-trp_captain_of_rohan_pl|ローハンの隊長
-trp_high_captain_of_rohan|ローハンの上級隊長
-trp_high_captain_of_rohan_pl|ローハンの上級隊長
-trp_lieutenant_of_isengard|アイゼンガルドの副隊長
-trp_lieutenant_of_isengard_pl|アイゼンガルドの副隊長
-trp_captain_of_isengard|アイゼンガルドの隊長
-trp_captain_of_isengard_pl|アイゼンガルドの隊長
-trp_high_captain_of_isengard|アイゼンガルドの上級隊長
-trp_high_captain_of_isengard_pl|アイゼンガルドの上級隊長
-trp_lieutenant_of_mordor|モルドールの副隊長
-trp_lieutenant_of_mordor_pl|モルドールの副隊長
-trp_captain_of_mordor|モルドールの隊長
-trp_captain_of_mordor_pl|モルドールの隊長
-trp_high_captain_of_mordor|モルドールの上級隊長
-trp_high_captain_of_mordor_pl|モルドールの上級隊長
-trp_easterling_chieftain|ヴァリアグ酋長
-trp_easterling_chieftain_pl|ヴァリアグ酋長
-trp_easterling_lieutenant|ヴァリアグ軍僧
-trp_easterling_lieutenant_pl|ヴァリアグ軍僧
-trp_harad_chieftain|ハラド酋長
-trp_harad_chieftain_pl|ハラド酋長
-trp_harad_lieutenant|ハラド副酋長
-trp_harad_lieutenant_pl|ハラド副酋長
-trp_black_numenorean_captain|黒きヌーメノールの隊長
-trp_black_numenorean_captain_pl|黒きヌーメノールの隊長
-trp_black_numenorean_lieutenant|黒きヌーメノールの副隊長
-trp_black_numenorean_lieutenant_pl|黒きヌーメノールの副隊長
-trp_a5_dun_night_wolf|褐色人 ナイトウルフ
-trp_a5_dun_night_wolf_pl|褐色人 ナイトウルフ
-trp_dunnish_lieutenant|褐色人副司令官
-trp_dunnish_lieutenant_pl|褐色人副司令官
-trp_goblin_chieftain|ゴブリンの酋長
-trp_goblin_chieftain_pl|ゴブリンの酋長
-trp_captain_of_gondor|ゴンドールの隊長
-trp_captain_of_gondor_pl|ゴンドールの隊長
-trp_nobleman|貴族
-trp_nobleman_pl|貴族
-trp_gondor_agent|ゴンドールの連絡係
-trp_gondor_agent_pl|ゴンドールの連絡係
-trp_rohan_agent|ローハンの連絡係
-trp_rohan_agent_pl|ローハンの連絡係
-trp_mordor_agent|モルドールの連絡係
-trp_mordor_agent_pl|モルドールの連絡係
-trp_isengard_agent|アイゼンガルドの連絡係
-trp_isengard_agent_pl|アイゼンガルドの連絡係
-trp_looter|追いはぎ
-trp_looter_pl|追いはぎ
-trp_bandit|野盗
-trp_bandit_pl|野盗
+; trp_greenwood_captain|Greenwood Captain
+; trp_greenwood_captain_pl|Greenwood Captains
+; trp_lorien_captain|Lothlorien Captain
+; trp_lorien_captain_pl|Lothlorien Captains
+; trp_riv_captain|Rivendell Elf Lord
+; trp_riv_captain_pl|Rivendell Elf Lords
+; trp_arnor_captain|Captain of Arnor
+; trp_arnor_captain_pl|Captains of Arnor
+; trp_arnor_ranger_captain|Ranger Captain of Arnor
+; trp_arnor_ranger_captain_pl|Ranger Captains of Arnor
+trp_rohan_captain|ローハンの隊長
+trp_rohan_captain_pl|ローハンの隊長
+; trp_beorning_captain|Beorning Chieftain
+; trp_beorning_captain_pl|Beorning Chieftains
+; trp_woodmen_captain|Woodmen Chieftain
+; trp_woodmen_captain_pl|Woodmen Chieftains
+trp_isen_captain|アイゼンガルドの隊長
+trp_isen_captain_pl|アイゼンガルドの隊長
+; trp_isen_tracker_captain|Isengard Tracker Captain
+; trp_isen_tracker_captain_pl|Isengard Tracker Captains
+trp_mordor_uruk_captain|モルドールウルクの隊長
+; trp_mordor_uruk_captain_pl|Mordor Uruk Captains
+trp_mordor_captain|モルドールの隊長
+trp_mordor_captain_pl|モルドールの隊長
+trp_umbar_captain|ウンバールの船長
+; trp_umbar_captain_pl|Captains of Umbar
+; trp_khand_captain|Variag War Chief
+; trp_khand_captain_pl|Variag War Chiefs
+; trp_rhun_captain|Rhun Chieftain
+; trp_rhun_captain_pl|Rhun Chieftains
+; trp_moria_captain|Uruk Chieftain of Moria
+; trp_moria_captain_pl|Uruk Chieftains of Moria
+; trp_dwarf_captain|Dwarf Captain
+; trp_dwarf_captain_pl|Dwarf Captains
+trp_dale_captain|谷間の国の指揮官
+; trp_dale_captain_pl|Captains of Dale
+; trp_harad_captain|Haradrim Noble
+; trp_harad_captain_pl|Haradrim Nobles
+trp_a5_dun_night_wolf2|褐色人 ナイトウルフ
+trp_a5_dun_night_wolf2_pl|褐色人 ナイトウルフ
+trp_dun_captain|褐色人副司令官
+trp_dun_captain_pl|褐色人副司令官
+; trp_gunda_captain|Gundabad Chieftain
+; trp_gunda_captain_pl|Gundabad Chieftains
+trp_gondor_captain|ゴンドールの指揮官
+trp_gondor_captain_pl|ゴンドールの隊長
+trp_pel_captain|ペラルギア 隊長
+trp_pel_captain_pl|ペラルギア 隊長
+; trp_amroth_captain|Knight Captain of Dol Amroth
+; trp_amroth_captain_pl|Knights Captain of Dol Amroth
+trp_lam_captain|ラメドン 隊長
+trp_lam_captain_pl|ラメドン 隊長
+trp_loss_captain|ロスサールナッハ 隊長
+trp_loss_captain_pl|ロスサールナッハ 隊長
+trp_pinnath_captain|ピンナス・ゲリン 隊長
+trp_pinnath_captain_pl|ピンナス・ゲリン 隊長
+; trp_blackroot_captain|Captain of Blackroot Vale
+; trp_blackroot_captain_pl|Captains of Blackroot Vale
+trp_ithilien_captain|イシリアンの野伏 隊長
+trp_ithilien_captain_pl|イシリアンの野伏 隊長
 trp_brigand|山賊
 trp_brigand_pl|山賊
 trp_mountain_bandit|山賊
@@ -865,17 +857,11 @@ trp_messenger_orc_pl|伝令
 trp_messenger_evil_man|伝令
 trp_messenger_evil_man_pl|伝令
 trp_town_walker_1|市民
-trp_town_walker_1_pl|市民
 trp_town_walker_2|市民
-trp_town_walker_2_pl|市民
 trp_village_walker_1|村人
-trp_village_walker_1_pl|村人
 trp_village_walker_2|村人
-trp_village_walker_2_pl|村人
 trp_spy_walker_1|市民
-trp_spy_walker_1_pl|市民
 trp_spy_walker_2|市民
-trp_spy_walker_2_pl|市民
 trp_walker_man_gondor_black|市民
 trp_walker_man_gondor_white|市民
 trp_walker_man_gondor_blue|市民
@@ -991,11 +977,11 @@ trp_knight_1_5|ドゥインヒア
 trp_knight_1_6|公正なるヒアルイン
 trp_knight_1_7|ファラミア
 trp_knight_1_8|ふとっちょフォルロング
-trp_knight_1_9|グリムボルド
+; trp_knight_1_9|Theodred
 trp_knight_1_10|エルケンブランド
 trp_knight_1_11|エルフヘルム
 trp_knight_1_12|ハマ
-trp_knight_1_13|ギャムリング
+trp_knight_1_13|グリムボルド
 trp_knight_1_14|エオメル
 trp_knight_1_15|ウグルク
 trp_knight_1_16|モウフール
@@ -1375,7 +1361,7 @@ trp_elder_edoras|エドラスのセイン
 trp_elder_edoras_pl|町
 trp_elder_aldburg|アルドブルグのセイン
 trp_elder_aldburg_pl|集落
-trp_elder_hornburg|角笛城のセイン
+trp_elder_hornburg|ギャムリング
 trp_elder_hornburg_pl|要塞
 trp_elder_eastemnet|イーストエムネトのセイン
 trp_elder_eastemnet_pl|集落
@@ -1391,7 +1377,7 @@ trp_elder_mmorgul|モルグルの長老
 trp_elder_mmorgul_pl|不吉の町
 trp_elder_cungol|野営の長老
 trp_elder_cungol_pl|野営
-trp_elder_isengard|蛇の舌グリマ
+; trp_elder_isengard|Isengard Overseer
 trp_elder_isengard_pl|町
 trp_elder_cgaladhon|ローリエンの賢者
 trp_elder_cgaladhon_pl|エルフの森の要塞
@@ -1482,30 +1468,20 @@ trp_tax_rebel_pl|反乱した農民
 trp_trainee_peasant|農民
 trp_trainee_peasant_pl|農民
 trp_fugitive_man|あやしげな男
-trp_fugitive_man_pl|あやしげな男
 trp_fugitive_elf|あやしげなエルフ
-trp_fugitive_elf_pl|あやしげなエルフ
 trp_fugitive_dwarf|あやしげなドワーフ
-trp_fugitive_dwarf_pl|あやしげなドワーフ
 trp_fugitive_orc|あやしげなオーク
-trp_fugitive_orc_pl|あやしげなオーク
 trp_spy|落ち着きのない海賊
-trp_spy_pl|落ち着きのない海賊
 trp_spy_evil|落ち着きのない南方人
-trp_spy_evil_pl|落ち着きのない南方人
 trp_spy_partner|間者連絡係
-trp_spy_partner_pl|間者連絡係
 trp_spy_partner_evil|間者連絡係
-trp_spy_partner_evil_pl|間者連絡係
 trp_easter_egg_troll|トロルさん
 trp_treebeard|木の鬚
 trp_ent_1|せっかち
 trp_ent_2|木の葉髪
 trp_ent_3|木の皮肌
 trp_gandalf|ガンダルフ
-trp_gandalf_pl|地元で育ったガンダルフ
 trp_nazgul|ナズグール
-trp_nazgul_pl|家畜化されたナズグール
 ; trp_radagast|Radagast
 trp_barman|バーテン
 trp_elder|長老
@@ -1516,14 +1492,11 @@ trp_dorwinion_bandit|ドルウィニオンの賊
 trp_dorwinion_bandit_pl|ドルウィニオンの賊
 trp_dorwinion_raider|ドルウィニオンの馬乗り
 trp_dorwinion_raider_pl|ドルウィニオンの馬乗り
+trp_no_troop_pl|この拠点
 trp_city_guard|衛兵
-trp_city_guard_pl|衛兵
 trp_orc_sentry|オークの衛兵
-trp_orc_sentry_pl|オークの衛兵
 trp_uruk_hai_sentry|ウルク＝ハイの衛兵
-trp_uruk_hai_sentry_pl|ウルク＝ハイの衛兵
 trp_black_numenorean_sorcerer|黒きヌーメノール人の妖術師
-trp_black_numenorean_sorcerer_pl|黒きヌーメノール人の妖術師
 ; trp_evil_priest|Evil Priest
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|闇の森の狼騎兵
@@ -1559,8 +1532,19 @@ trp_start_quest_mordor_scout|モルドールの道案内
 trp_start_quest_mordor_scout_pl|モルドールの道案内
 trp_start_quest_beorning|ビヨルン カーロック狂戦士
 trp_start_quest_beorning_pl|ビヨルン カーロック狂戦士
+; trp_black_shield|Amath Dollen
+; trp_black_shield_bandit|Amath Dollen's Bandit
+; trp_black_shield_bandit_pl|Amath Dollen's Bandits
+; trp_black_shield_scout|Amath Dollen's Scout
+; trp_black_shield_scout_pl|Amath Dollen's Scouts
+; trp_black_shield_guard|Amath Dollen's Guard
+; trp_black_shield_guard_pl|Amath Dollen's Guards
+; trp_dorwinion_spirit_leader|Spirit
+; trp_dorwinion_spirit|Lesser Spirit
 trp_i6_beorning_bear_warrior|熊戦士
 trp_i6_beorning_bear_warrior_pl|熊戦士
+trp_a5_dun_night_wolf|褐色人 ナイトウルフ
+trp_a5_dun_night_wolf_pl|褐色人 ナイトウルフ
 trp_morannon_healer|治療師オクストゥク
 trp_minas_tirith_healer|ヨーレス
 trp_edoras_healer|治療師フレイア
@@ -1582,6 +1566,7 @@ trp_c5_rhovanion_noble_pl|ロヴァニオン 上級騎兵
 trp_npc18|テュルムバシュ
 trp_npc19|ヘイズレク
 trp_npc20|ジグールフェル
+; trp_npc21|Berta
 trp_werewolf|巨狼
 trp_werewolf_pl|巨狼
 trp_moria_troll|岩穴トロル
@@ -1647,3 +1632,5 @@ trp_pippin_notmet|ホビット
 trp_merry_notmet|ホビット
 trp_pippin|ピピン
 trp_merry|メリー
+trp_grima|蛇の舌グリマ
+trp_grima_pl|町

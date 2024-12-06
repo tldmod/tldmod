@@ -5,7 +5,10 @@ mno_faction_intros|Scopri le diverse fazioni della Terra di Mezzo
 mno_go_bback|Torna Indietro
 menu_start_phase_2|Terra di Mezzo. Un'ombra cresce a oriente, ^ oscure entità da lungo tempo nascoste, emergono  nuovamente. ^ I popoli liberi si preparano alla guerra, di una portata tale come non se n'era vista da un'era. ^ Uomini, Elfi, Nani e Orchi; tutti ne saranno parte. ^^ Cosa avverrà, comunque, è tutto da vedere... 
 mno_go_forth|Prosegui per il sentiero che hai scelto...
+mno_change_war_start_mode|Inizio della Guerra: {s7}
+mno_toggle_tutorial|Pop-Up Guide:  {s7}
 mno_change_tld_options|Cambia le opzioni di TLD.
+mno_see_info_pages|Concetti di gioco di TLD.
 menu_start_game_3|^^^^^^^^Scegli il tuo scenario:
 mno_custom_battle_scenario_1|Schermaglia, Fazioni di Gondor vs Harad
 mno_custom_battle_scenario_12|Scegli le fazioni per la battaglia
@@ -35,7 +38,6 @@ mno_view_upkeep_costs|Controlla i costi di mantenimento
 mno_view_character_report|Consulta il rapporto sul personaggio
 mno_view_party_size_report|Consulta il rapporto sulle dimensioni della compagnia
 mno_view_morale_report|Consulta il rapporto sul morale della compagnia
-mno_view_character_report_02|Controlla stato dei PNG
 mno_view_faction_strengths_report|Consulta il resoconto sulla potenza delle fazioni
 mno_view_traits_report|Consulta i tratti personali.
 mno_resume_travelling|Riprendi il viaggio
@@ -47,7 +49,6 @@ mno_continue_dot|Continua
 menu_custom_battle_durin_end|^^^^^^È stata una mirabile ultima resistenza, ma infine era destinata a cadere.^^ Tu e i tuoi avete ucciso {reg5} nemici.^Tu personalmente hai abbattuto {reg7} avversari in combattimento.
 mno_replay_cbd|Combatti nuovamente questa battaglia
 mno_continue_dot_cbd|Continua
-mno_dot_go_back|Torna Indietro
 menu_start_good|^^^^^^^^^^Seleziona la tua razza:
 mno_start_ma|UOMO
 mno_start_el|ELFO
@@ -110,10 +111,8 @@ mno_start_2_far|Uomo delle Tribù del Lontano Harad
 menu_start_numenorean|^^^^^^^Sei un Numenoreano Nero,^Fedele all'Oscurità e a Morgoth.^Scegli dove servire l'Occhio
 mno_start_1_bn|Vicino alla Bocca di Sauron, a MORANNON
 mno_start_2_bn|Nella fortezza del Negromante, DOL GULDUR
-menu_choose_gender|^^^^^^^^^^Il tuo sesso ?
 mno_start_male|Uomo
 mno_start_female|Donna
-mno_proc|Prosegui
 menu_start_as_one|^^^^^^^^^^Che genere di combattente sei?
 mno_start_default|Diventa {s23} (Predefinito)
 mno_start_up1|Diventa {s21} (Facile)
@@ -128,7 +127,7 @@ mno_camp_wait_here|Accampati qui per qualche tempo.
 mno_camp_options|Cambia le opzioni di TLD.
 mno_Dev_Menu|Menu Sviluppatore
 menu_dev_menu|Queste sono Opzioni di Sviluppo che ti forniscono parecchi trucchi/strumenti che potrai usare.^^ Tuttavia, ciò determinerà cambiamenti negli eventi in corso, interruttori, modifiche alla campagna, che potrebbero mandare in crash il gioco.^^ Fanne uso a tuo rischio ! ^^ Inoltre, nel segnalare bugs, ti preghiamo di specificare che hai fatto uso del Menu Sviluppatore.
-mno_Cheat_enable|Abilita opzioni cheat/modding.
+mno_cheat_enable|Abilita opzioni cheat/modding.
 menu_game_options|^^^^^^^^Clicca su un'opzione per attivarla:
 mno_game_options_war_level_start|La guerra inizierà a livello: {s1}
 mno_game_options_restrict_items|Equipaggiamento del giocatore limitato: {s7}
@@ -160,8 +159,8 @@ mno_strat_tweaks_siege_reqs|Forza richiesta per assedi: {s7}
 mno_strat_tweaks_siege_relax_rate|Relazione della richiesta di forza per assediare: {reg1}
 mno_strat_tweaks_regen_rate|Tasso di rigenerazione della forza: {s7}
 mno_strat_tweaks_siege_regen_limit|La potenza della fazione si rigenera più lentamente a: {reg1}
-mno_strat_tweaks_influence_gain_rate|Tasso d'influenza guadagnata: {s7}
-mno_strat_tweaks_rank_gain_rate|Tasso di Rango guadagnato: {s7}
+mno_strat_tweaks_influence_gain_rate|Tasso d'influenza guadagnata: {reg0}%
+mno_strat_tweaks_rank_gain_rate|Tasso di Rango guadagnato: {reg0}%
 mno_strat_tweaks_back|Ritorna al menu delle modifiche.
 menu_camp_action|^^^^^^^^^ Quale oggetto ?
 mno_camp_drink_water|Bevi l'acqua Ent !
@@ -255,12 +254,12 @@ menu_besiegers_camp_with_allies|{s1} rimane sotto assedio. Gli stendardi di {s2}
 mno_talk_to_siege_commander|Richiedi un incontro con il comandante.
 mno_join_siege_with_allies|Unisciti al prossimo assalto.
 mno_join_siege_stay_back|Ordina ai tuoi soldati di unirsi al prossimo assalto senza di te.
-menu_moria_must_escape|^^Il libro sembra essere un resoconto dell'ultimo tentativo dei nani di ristabilirsi a Moria. Tentativo che pare si sia concluso con la morte terribile per chi vi era coinvolto. Sfogliando le pagine, t'imbatti nelle parole 'vero argento' ! Studiando il libro improvvisamente comprendi che si tratta della descrizione delle scorte segrete naniche e che queste dovrebbero trovarsi nei livelli inferiori. Hah ! Non sarebbe fantastico riportare alla luce il Mithril nanico da tempo perduto !? ^Con entusiasmo cerchi di seguire la strada, scendendo in uno stretto e tortuoso tunnel... ^...^Dopo un paio d'ore d'infruttuosa ricerca ti rendi conto di aver perso la strada nelle profondità di Moria e che ora devi cercare una via per uscirne.
+menu_moria_must_escape|^^Il libro sembra raccontare l'ultimo tentativo dei nani di insediarsi a Moria. Tentativo che apparentemente si è concluso con una morte orribile per tutti i coinvolti. Mentre rifletti sul loro oscuro destino, all'improvviso senti aspre grida e l'affrettato scalpiccio di molti passi.^ Stanno Arrivando !^  Uscendo rapidamente dalla stanza, noti che i suoni provengono dal salone. Non hai altra scelta che fuggire nella direzione opposta, in uno stretto tunnel tortuoso e giù... ^...^Dopo un paio d'ore comprendi d'esserti perso nel profondo di Moria e di dover trovare una via d'uscita.
 mno_moria_exit_scene|Trova la via d'uscita !
 menu_castle_outside|Sei fuori da: {s2}. {s11} {s3} {s4}
+mno_cheat_steal_book_door|Prendi il libro.
 mno_moria_enter|Ritorna nel salone principale di Moria attraverso l'entrata segreta
 mno_moria_enter_door|Entra a Moria.
-mno_cheat_steal_book_door|Prendi il libro.
 mno_castle_start_siege|Assedia {reg6?}.
 mno_castle_leave|Vattene.
 menu_castle_besiege|Stai assediando {s1}. {s2} {s3}
@@ -305,6 +304,7 @@ mno_talk_to_healer|Parla con {s40}.
 mno_talk_to_castle_commander|Visita le caserme di {s61}.
 mno_speak_with_elder|Parla con il {s6}.
 mno_town_ask|Chiedi in giro se vi sono persone importanti...
+mno_player_initiate_siege|Attacca {reg6?la città:il castello}...
 mno_isengard_underground|Dirigiti verso le caverne sotterranee 
 mno_isengard_underground_door|Dirigiti verso le caverne sotterranee
 mno_tirith_toplevel|Raggiungi il livello più alto
@@ -349,6 +349,16 @@ mno_explore|Esplora questo luogo.
 menu_ring_hunter_lair|^^^^Hai seguito il sentiero dei Cacciatori dell'Anello attraverso Bosco Atro e sei giunto a {s1}. Li vedi mentre stanno lasciando una cassa.
 mno_attack_lair|Attaccali adesso
 mno_leave_bandit_lair|Vattene per ora.
+menu_raftmen|^^^^Segui il fiume che scorre verso sud-est in direzione di Rhûn, sperando di trovare la vecchia strada mercantile.^^ Dopo qualche tempo, giungi nei pressi di un piccolo villaggio incastonato lungo la riva del fiume.^^Chiedi agli abitanti del villaggio come raggiungere la strada e ti indirizzano verso una coppia di uomini che navigano il fiume su una zattera.^^si rende necessaria una negoziazione, ma riesci a farti portare dagli uomini lungo il fiume.
+mno_go_with_the_raftmen|Prendi la zattera per Dorwinion
+menu_ride_to_dorwinion|^^^^Ti rilassi godendoti la bella giornata mentre gli uomini guidano la zattera lungo il corso d'acqua. Il fiume che scorre, freddo e limpido tra le cascate e le rapide dell Montagna Solitaria, qui è tiepido, dolce e terroso.^^ Nel sole del pomeriggio, osservi le pianure ondulate e i boschi verdeggianti che scivolano via mentre la zattera galleggia lungo i tortuosi meandri. La regione è scarsamente punteggiata da piccole fattorie e vigneti con bassi muri in pietra e transiti di tanto in tanto vicino cottage su palafitte nascosti tra i canneti.^^Il movimento pacifico della zattera concilia il tuo sonno...
+mno_ride_to_dorwinion_next|Successivamente...
+menu_amath_dollen_fortress|^^^^Ti svegli dal tuo pisolino nel tardo pomeriggio e raggiungi subito un molo dove gli uomini attraccano con la zattera. Ti indirizzano verso uno stretto sentiero che scompare nell'erba della palude e allestiscono un accampamento per attendere il tuo ritorno.^^Segui il sentiero, che sale rapidamente dalle zone umide verso una pianura erbosa, e cammina finché non incontra la vecchia strada mercantile.^^Dopo un po', vedi una fortezza infestata da banditi.
+mno_bandit_fortress_with_companions|Avvicinati alla Fortezza dei Banditi solo con i tuoi compagni e prova a parlare con il loro capo.
+mno_bandit_fortress_with_army|Attacca la fortezza dei banditi con tutti i tuoi uomini.
+mno_bandit_fortress_against_easterlings|Difendi la Fortezza dall'Assedio
+mno_bandit_fortress_spirits|Vai a parlare con gli spiriti.
+mno_leave_amath_dollen_fortress|Vattene per ora.
 menu_gondor_reinforcement_event|^^^^^ le Torri-Faro di Gondor sono accese, Minas Tirith chiede aiuto ! ^^ I signori dei feudi meridionali marceranno ora verso nord per difendere la Città Bianca contro l'oscurità incombente.
 mno_gondor_reinforcement_event_close|Chiudi
 menu_gondor_beacons|Alzi lo sguardo verso {s1}, uno dei fari di segnalazione di Gondor, usato per diffondere l'allarme nel nord e nel sud di Gondor stessa.
@@ -362,6 +372,7 @@ mno_player_added_to_allow_follow_close|Chiudi
 menu_center_besieged_event|^^^^^Giunge un messaggero informando che {s1} è sotto assedio da parte di {s2} di {s3}.
 mno_center_besieged_event_close|Chiudi
 menu_guardian_party_spawned|^^^^^Gli esploratori riferiscono che {s6} ha radunato un grande esercito nei pressi di {s7}, in un ultimo disperato tentativo di difendere la capitale.
+mno_guardian_party_spawned_close|Chiudi
 mno_intro_next|Continua...
 mno_start_defend_caravan|Difendi la Carovana !
 mno_start_raid_caravan|Saccheggia la Carovana !
@@ -391,7 +402,6 @@ mno_leave_refugees|Lasciamoli, per il momento...
 mno_evil_war_tut_continue|Continua...
 menu_alternate_training_fight|Affronterai {reg5} avversari. Iniziamo?
 mno_training_continue|Inizio addestramento...
-menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Prova ancora...
 mno_alternate_training_finish|Lascia l'arena...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Scegli il tuo lato e il vantaggio:
@@ -437,7 +447,6 @@ mno_leave_pyre|Abbandona la pira.
 menu_town_ruins|Quando ti avvicini, vedi che {s1} è {s2}
 mno_ruin_menu_0|Esplora il luogo.
 mno_ruin_leave|Vattene...
-menu_premutiny|nessuno
 menu_death|Hai subito un colpo mortale. Anche se la guerra continua ad infuriare, tu non potrai più farne parte.
 menu_animal_ambush|Tu e i tuoi compagni vi trovate separati dal resto della compagnia, quando improvvisamente...
 menu_animal_ambush_success|I {s2} {reg0?cadono:cadono} davanti a te come spighe di grano sotto la falce ! In poco tempo tutti i tuoi nemici giacciono sul terreno, morti o feriti. {s3}
@@ -457,3 +466,4 @@ mno_scene9|Foresta Piccola (file scn custom 9.sco)
 mno_back_3dot|Indietro...
 mno_back|Torna Indietro
 mno_next|Successivamente...
+mno_previous|Precedente...

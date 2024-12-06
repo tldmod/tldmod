@@ -13,7 +13,6 @@ skinkey_nose_width|鼻の広さ
 skinkey_nose_size|鼻の大きさ
 skinkey_nose_shape|鼻の形
 skinkey_nose_bridge|鼻梁
-
 skinkey_eye_width|目の幅
 skinkey_eye_to_eye_dist|両目の距離
 skinkey_eye_shape|目の形
@@ -22,7 +21,6 @@ skinkey_eyelids|まぶた
 skinkey_cheeks|ほお
 skinkey_cheek_bones|ほお骨
 skinkey_eyebrow_height|眉の位置
-
 skinkey_eyebrow_shape|眉の形
 skinkey_temple_width|こめかみの大きさ
 skinkey_face_depth|顔の厚み
@@ -44,3 +42,5 @@ skinkey_frawn|しかめ面
 skinkey_mouth_vert_pos|口の位置
 skinkey_mouth_to_nose_dist|鼻と口の距離
 skinkey_chin_width|あごの広さ
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

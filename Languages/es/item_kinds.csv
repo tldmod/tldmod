@@ -65,6 +65,10 @@ itm_wargarmored_2b|Huargo de Guerra
 itm_wargarmored_2c|Huargo de Guerra
 itm_wargarmored_3a|Huargo de Guerra
 itm_warg_reward|Huargo enorme
+itm_animal_big|Animal grande
+itm_animal_small|Animal pequeño
+itm_troll_weapon_long|Alabarda gigante
+itm_troll_weapon_dmg|Maza gigante
 itm_tree_trunk_club_a|Tronco de árbol
 itm_giant_mace|Maza gigante
 itm_troll_shield_a|Escudo de Troll
@@ -130,6 +134,8 @@ itm_harad_javelin|Jabalina Haradrim
 itm_gondor_javelin|Jabalina de Gondor
 itm_rohirrim_throwing_axe|Hachas arrojadizas norteñas
 itm_loss_throwing_axes|Hachas arrojadizas de Lossarnach
+itm_free_dunedain_helm_a|Yelmo ligero de Arnor
+itm_free_dunedain_helm_b|Casco de Arnor
 itm_arnor_helm_c|Casco decorado de Arnor
 itm_arnor_helm_b|Casco de Arnor
 itm_arnor_helm_a|Yelmo ligero de Arnor
@@ -433,8 +439,6 @@ itm_dunland_chieftain|Armadura de caudillo dunlendino
 itm_dun_helm_a|Gorro de lobo dunlendino
 itm_dun_helm_b|Gorro de pieles dunlendino
 itm_dun_helm_c|Yelmo alto dunlendino
-itm_dun_helm_d|Yelmo alto dunlendino
-itm_dun_helm_e|Yelmo astado dunlendino
 itm_dun_shield_a|Escudo redondo dunlendino
 itm_dun_shield_b|Escudo oval dunlendino
 itm_dun_berserker|Espada de caudillo dunlendino
@@ -539,6 +543,7 @@ itm_desert_boots|Botas del desierto
 itm_harad_leather_greaves|Grebas de cuero de Harad
 itm_harad_scale_greaves|Grebas de Harad
 itm_harad_lamellar_greaves|Grebas de láminas de Harad
+itm_camel|Camello de Harad
 itm_khand_inf_helm_a|Yelmo de Khand
 itm_khand_inf_helm_b|Yelmo de Khand
 itm_khand_inf_helm_c1|Yelmo de tazón de Khand
@@ -590,6 +595,7 @@ itm_rhun_helm_chieftain|Yelmo de caudillo de Rhûn
 itm_rhun_helm_pot|Yelmo plano de Rhûn
 itm_rhun_helm_barbed|Yelmo de púas de Rhûn
 itm_rhun_helm_round|Yelmo redondo de Rhûn
+itm_rhun_helm_horde|Yelmo de la Horda de Rhûn
 itm_rhun_helm_leather|Casco de cuero de Rhûn
 itm_rhun_warpick|Pico de guerra de Rhûn
 itm_rhun_greataxe|Gran hacha de Rhûn
@@ -700,7 +706,7 @@ itm_dwarf_helm_round|Yelmo redondo enano
 itm_dwarf_helm_sallet|Celada enana
 itm_dwarf_armor_d|Cota de escamas de las Colinas de Hierro
 itm_dwarf_armor_a|Cota de malla con sobrevesta de Erebor
-itm_leather_dwarf_armor|Gambesón sobre malla enano
+itm_leather_dwarf_armor|Armadura acolchada de Erebor
 itm_dwarf_armor_b|Túnica sobre malla de Erebor
 itm_leather_dwarf_armor_b|Jubón acolchado enano
 itm_dwarf_armor_c|Armadura de escamas sobre malla de Erebor
@@ -719,7 +725,6 @@ itm_gondor_lance_banner|Lanza con pendón de Gondor
 itm_amroth_lance_banner|Lanza con pendón de Dol Amroth
 itm_rohan_lance_banner_sun|Lanza con pendón del Sol de Rohan
 itm_rohan_lance_banner_horse|Lanza con pendón del Corcel de Rohan
-itm_fur_gloves_reward|Guantes de caza
 itm_ent_water|Recipiente extraño con agua
 itm_map|Mapas de la Tierra Media
 itm_athelas_reward|Hojas secas de athelas
@@ -783,9 +788,55 @@ itm_wolf|Lobo
 itm_werewolf|Licántropo
 itm_thrush_reward|Zorzal
 itm_gauntlets_reward|Puños de hierro
+itm_gondor_custom|Custom Gondor
 itm_stones_siege|Piedras de asedio
 itm_beorn_axe_no_attack|Hacha Beórnida
-itm_animal_spider|Araña
-itm_animal_bear|Oso
-itm_animal_wolf|Lobo
-itm_animal_werewolf|Licántropo
+itm_tabard_b_wb|Tabardo
+itm_nobleman_outfit_b_new_wb|Atuendo de noble
+itm_peasant_man_a_wb|Atuendo de campesino
+itm_leather_jerkin_wb|Justillo de Cuero
+itm_white_tunic_c_wb|Túnica con chaqueta
+itm_white_tunic_a_wb|Túnica blanca
+itm_red_tunic_wb|Túnica Roja
+itm_fur_coat_wb|Abrigo de Valle
+itm_fur_hat_a_new_wb|Gorro de piel
+itm_noel_hat_a_wb|Gorro de piel
+itm_peasant_dress_b_new_wb|Vestido azul
+itm_sarranid_lady_dress_wb|Vestido azul
+itm_sar_robe_b_wb|Toga
+itm_black_dress_wb|Vestido Negro
+itm_blackwhite_dress_wb|Vestido de Dama
+itm_white_tunic_b_wb|Túnica Sencilla
+itm_blue_tunic_wb|Túnica Azul
+itm_black_tunic_wb|Túnica negra
+itm_green_tunic_wb|Túnica Verde
+itm_green_dress_wb|Vestido Verde
+itm_gondor_fine_outfit_dress_wb|Buena ropa
+itm_rohan_fine_outfit_dale_dress_wb|Buena ropa
+itm_robe_generic_dress_wb|Toga
+itm_wimple_a_wb|Toca
+itm_wimple_with_veil_wb|Toca
+itm_fine_hat_wb|Sombrero Bueno
+itm_rohan_tunic_a_wb|Túnica de Rohan
+itm_rohan_tunic_b_wb|Túnica de Rohan
+itm_denethor_robe|Buena ropa
+itm_ent_head_helm2|Cabeza de Ent
+itm_ent_head_helm3|Cabeza de Ent
+itm_civilian_hammer|Martillo
+itm_civilian_woodaxe_1h|Hacha
+itm_civilian_woodaxe_2h|Hacha pesada
+itm_civilian_war_mattock|Azadón
+itm_civilian_great_mattock|Azadón
+itm_civilian_adz|Azadón
+itm_civilian_pickaxe|Azadón
+itm_civilian_shovel|Pala
+itm_civilian_carry_wood_heap|Leña
+itm_civilian_carry_wood|Madera
+itm_civilian_carry_amphora|Ánfora
+itm_civilian_carry_sack|Saco
+itm_civilian_carry_basket|Cesta
+itm_civilian_carry_honey|Miel
+itm_civilian_carry_oil|Aceite
+itm_civilian_carry_wood2|Madera
+itm_work_basket|Cesta
+itm_work_basket_2|Cesta

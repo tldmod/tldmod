@@ -5,7 +5,10 @@ mno_faction_intros|了解中土的不同派系
 mno_go_bback|返回
 menu_start_phase_2|^^^^^中土世界。 黑暗的阴影正在东方蔓延，^潜伏了近一个纪元的邪恶势力重现世间。 ^中土世界的自由之民能否再一次战胜黑暗。 ^人类，精灵，矮人和半兽人，各种势力在这里继续角逐^^这场战争的走向如何？让我们拭目以待…
 mno_go_forth|向着你选择的道路前进
+; mno_change_war_start_mode|War Starts:  {s7}
+; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|更改最后之日选项。
+; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^^选择情景：
 mno_custom_battle_scenario_1|小规模冲突，刚铎vs哈拉德
 mno_custom_battle_scenario_12|选择出战派系
@@ -35,7 +38,6 @@ mno_view_upkeep_costs|查看维护费用
 mno_view_character_report|查看人物报告
 mno_view_party_size_report|查看部队规模
 mno_view_morale_report|查看部队士气
-mno_view_character_report_02|查看NPC状态
 mno_view_faction_strengths_report|查看派系力量
 mno_view_traits_report|查看人物称号
 mno_resume_travelling|继续旅程
@@ -47,7 +49,6 @@ mno_continue_dot|继续
 menu_custom_battle_durin_end|^^^^^^虽然这场战斗注定失败，但你们的精神却令人敬佩。^^你和你的族人杀死了{reg5}个敌人。^你在战斗中亲手杀死了{reg7}个敌人。
 mno_replay_cbd|重新开始这场战斗。
 mno_continue_dot_cbd|继续
-mno_dot_go_back|返回
 menu_start_good|^^^^^^^^^^选择你的种族：
 mno_start_ma|人类
 mno_start_el|精灵
@@ -110,10 +111,8 @@ mno_start_2_far|远哈拉德部落民
 menu_start_numenorean|^^^^^^^你是一个黑暗努曼诺尔人，^忠于阴影和魔苟斯。^选择你服务魔眼的位置
 mno_start_1_bn|在摩拉南（黑门），索伦之口的身旁
 mno_start_2_bn|在多尔哥多，死灵法师的堡垒里
-menu_choose_gender|^^^^^^^^^^你的性别？
 mno_start_male|男性
 mno_start_female|女性
-mno_proc|正常进行
 menu_start_as_one|^^^^^^^^^^你是何种士兵?
 mno_start_default|成为{s23}（默认）
 mno_start_up1|成为{s21}（简单）
@@ -127,8 +126,8 @@ mno_camp_action|做些事情。
 mno_camp_wait_here|在这里待一会儿。
 mno_camp_options|更改最后之日选项。
 mno_Dev_Menu|开发者菜单
-menu_dev_menu|这些开发者菜单提供许多测试工具。^^然而，对进行中的事件、触发器、战争的调整可能会导致坏档。^^后果自负！^^同样的，当你报告BUG时请告诉我们你是否使用了开发者菜单。
-mno_Cheat_enable|启用作弊/模组选项。
+; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+; mno_cheat_enable|Enable cheat/modding options.
 menu_game_options|^^^^^^^^点击以更换选项：
 mno_game_options_war_level_start|战斗难度:
 mno_game_options_restrict_items|战利品缴获限制: {s7}
@@ -160,8 +159,8 @@ mno_strat_tweaks_siege_reqs|围攻派系力量要求: {s7}
 mno_strat_tweaks_siege_relax_rate|围攻派系力量放松程度比：{reg1}
 mno_strat_tweaks_regen_rate|派系力量再生速度: {s7}
 mno_strat_tweaks_siege_regen_limit|势力力量低于多少将不再回复：{reg1}
-mno_strat_tweaks_influence_gain_rate|影响力提升速度：{s7}
-mno_strat_tweaks_rank_gain_rate|军衔提升速度：{s7}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
 mno_strat_tweaks_back|返回调整菜单.
 menu_camp_action|^^^^^^^^^ 你要做何事?
 mno_camp_drink_water|喝树人水
@@ -255,12 +254,12 @@ menu_besiegers_camp_with_allies|{s1}正在遭到围攻。{s2}的旗帜飘扬在�
 mno_talk_to_siege_commander|要求与指挥官见面
 mno_join_siege_with_allies|加入下一轮冲锋
 mno_join_siege_stay_back|坐镇指挥，让你的部队加入下一轮冲锋。
-menu_moria_must_escape|^^这本书似乎是矮人最后一次尝试在摩瑞亚重新定居的记录，这次尝试显然以所有参与者的死亡而告终。在看书的时候，“真银”一词忽然吸引了你的视线。仔细研读书页后你突然明白，这些都是在叙述位于摩瑞亚下层某地矮人藏匿点的信息。 如果能找到早已遗失的矮人秘银，那不是很赞？^你急切地按照指示，进入一个狭窄蜿蜒的向下隧道…^…^然而数小时之后你才发现，你在摩瑞亚深处迷路了。你需要找到一条出去的路。
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|找到一条出去的路！
 menu_castle_outside|你在{s2}的外面。{s11} {s3} {s4}
-mno_moria_enter|利用秘密入口重新进入摩瑞亚大厅
-mno_moria_enter_door|进入摩瑞亚
 mno_cheat_steal_book_door|获得《马萨布尔之书》
+; mno_moria_enter|Return into main hall of Moria through the secret entrance
+mno_moria_enter_door|进入摩瑞亚
 mno_castle_start_siege|围攻{reg6?城镇:城堡}。
 mno_castle_leave|离开
 menu_castle_besiege|你正在围攻{s1}。 {s2} {s3}
@@ -305,6 +304,7 @@ mno_trade_with_horse_merchant|访问{s41}。
 mno_talk_to_castle_commander|访问{s61}兵营。
 mno_speak_with_elder|和{s6}谈谈。
 ; mno_town_ask|Ask around for persons of import...
+; mno_player_initiate_siege|Attack the {reg6?town:castle}...
 mno_isengard_underground|前往地下洞穴。
 mno_isengard_underground_door|前往地下洞穴
 mno_tirith_toplevel|爬上顶层。
@@ -349,6 +349,16 @@ mno_explore|探索这个地方。
 menu_ring_hunter_lair|^^^^你跟随魔戒猎手们的足迹横穿幽暗密林并到达了{s1}。你看到他们正准备留下一个箱子。
 mno_attack_lair|马上攻击他们
 mno_leave_bandit_lair|立即离开
+; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
+; mno_go_with_the_raftmen|Take the raft to Dorwinion
+; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
+; mno_ride_to_dorwinion_next|Next...
+; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
+; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
+; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
+; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
+; mno_bandit_fortress_spirits|Go talk with the spirits.
+mno_leave_amath_dollen_fortress|立即离开
 menu_gondor_reinforcement_event|^^^^^刚铎的烽火台是亮着的，米那斯提力斯在呼救！^^南方封地的领主们将立即向北集结，对抗即将到来的黑暗保卫白城。
 mno_gondor_reinforcement_event_close|关闭
 menu_gondor_beacons|你抬起头看着{s1}—用于在北刚铎和南刚铎发出警告刚铎警戒烽火台中的一个。
@@ -362,6 +372,7 @@ mno_player_added_to_allow_follow_close|关闭
 menu_center_besieged_event|^^^^^一个信使到达并报告{s1}已经被{s3}的{s2}围攻。
 mno_center_besieged_event_close|关闭
 menu_guardian_party_spawned|斥候来报：{s6}在{s7}周围聚集了庞大的军队，他们在做最后的挣扎，企图保卫他们的首都。
+mno_guardian_party_spawned_close|关闭
 mno_intro_next|继续...
 mno_start_defend_caravan|保护这支商队！
 mno_start_raid_caravan|掠夺这支商队!
@@ -391,7 +402,6 @@ mno_leave_refugees|暂时离开他们……
 mno_evil_war_tut_continue|继续...
 menu_alternate_training_fight|你的对手将会是{reg5}。准备好了吗？
 mno_training_continue|开始训练……
-menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|再试一次…
 mno_alternate_training_finish|离开竞技场…
 menu_custom_battle_choose_faction1|^^^^^^^^^^选择你的阵营和优势：
@@ -415,7 +425,7 @@ mno_cb_mordor3|哈拉德
 mno_cb_mordor4|东方人
 mno_cb_mordor5|摩瑞亚
 mno_cb_mordor6|刚达巴
-mno_cb_mordor7|卢恩
+; mno_cb_mordor7|Rhûn
 mno_cb_mordor8|海盗
 mno_rescue_mission|借着夜色的掩护，你悄悄潜入巫师的藏身处。
 mno_next_rescue_scene_door|继续向前！
@@ -437,7 +447,6 @@ mno_leave_pyre|离开火葬堆
 menu_town_ruins|当你靠近，你看到{s1}实际上是{s2}
 mno_ruin_menu_0|探索这个地方。
 mno_ruin_leave|离开…
-menu_premutiny|无
 menu_death|你被杀害了。 尽管战争仍旧如火如荼，但这已经不是你要关心的事儿了。
 menu_animal_ambush|你和你的同伴在休息的时候，突然分开了…
 menu_animal_ambush_success|你面前的{s2}{reg0?堕落者：堕落者}如小麦般被你收割。很快，所有的攻击者都躺倒在地，重伤或死亡。 {s3}
@@ -457,3 +466,4 @@ mno_scene9|小型森林（file scn custom 9.sco）
 mno_back_3dot|返回…
 mno_back|返回
 mno_next|接下来…
+; mno_previous|Previous...

@@ -5,7 +5,10 @@ mno_faction_intros|Aprende más sobre las diferentes facciones de la Tierra Medi
 mno_go_bback|Volver atrás
 menu_start_phase_2|^^^^^La Tierra Media: una sombra crece en el Este, ^y criaturas oscuras que llevaban mucho tiempo ocultas salen de sus escondites. ^Los pueblos libres se preparan para la guerra, una guerra como no se ha visto desde la última Edad. ^Hombres, Elfos, Enanos y Orcos; todos jugarán su papel. ^^Qué papel, sin embargo, todavía está por ver... 
 mno_go_forth|Sigue adelante por el camino elegido...
+mno_change_war_start_mode|La Guerra empieza:  {s7}
+mno_toggle_tutorial|Ver mensajes de ayuda:  {s7}
 mno_change_tld_options|Cambiar opciones de TLD.
+mno_see_info_pages|Aprender a jugar a TLD
 menu_start_game_3|^^^^^^^^Elige tu escenario:
 mno_custom_battle_scenario_1|Escaramuza, Facciones de Gondor contra Harad
 mno_custom_battle_scenario_12|Elegir facciones para la batalla
@@ -35,7 +38,6 @@ mno_view_upkeep_costs|Ver costes de mantenimiento.
 mno_view_character_report|Ver informe del personaje.
 mno_view_party_size_report|Ver informe del tamaño del grupo.
 mno_view_morale_report|Ver informe de la moral del grupo.
-mno_view_character_report_02|Comprobar estado de los PNJ.
 mno_view_faction_strengths_report|Ver informe de fuerza de facción.
 mno_view_traits_report|Ver virtudes conseguidas.
 mno_resume_travelling|Reanudar Viaje.
@@ -47,7 +49,6 @@ mno_continue_dot|Continuar.
 menu_custom_battle_durin_end|^^^^^^Fue una defensa desesperada y admirable, pero la derrota era inevitable.^^ Tú y tus parientes matasteis a {reg5} enemigos.^Tú abatiste personalmente a {reg7} oponentes en el combate.
 mno_replay_cbd|Volver a jugar la batalla.
 mno_continue_dot_cbd|Continuar.
-mno_dot_go_back|.                 Volver atrás
 menu_start_good|^^^^^^^^^^Elige tu raza:
 mno_start_ma|HOMBRE
 mno_start_el|ELFO
@@ -110,10 +111,8 @@ mno_start_2_far|Miembro de las tribus de la Lejana Harad
 menu_start_numenorean|^^^^^^^Eres uno de los Númenóreanos Negros,^ leal a la Oscuridad y a Morgoth.^Selecciona dónde sirves al Ojo
 mno_start_1_bn|Junto a la Boca de Sauron, en MORANNON
 mno_start_2_bn|En la fortaleza del Nigromante, DOL GULDUR
-menu_choose_gender|^^^^^^^^^^¿Cuál es tu sexo?
 mno_start_male|Hombre
 mno_start_female|Mujer
-mno_proc|Seguir sin más
 menu_start_as_one|^^^^^^^^^^¿Qué clase de soldado eres?
 mno_start_default|Empezar como {s23} (Por defecto)
 mno_start_up1|Empezar como {s21} (Fácil)
@@ -127,8 +126,8 @@ mno_camp_action|Usar un objeto.
 mno_camp_wait_here|Acampar aquí durante algún tiempo.
 mno_camp_options|Cambiar opciones de TLD.
 mno_Dev_Menu|Menú de Desarrollo
-menu_dev_menu|Éstas son opciones de desarrollo que te proporcionarán muchos trucos y herramientas con las que jugar.^^ Sin embargo, ocasionarán que aparezcan eventos, funciones y cambios en la campaña que todavía están en desarrollo, y que podrían fastidiar tu partida.^^ ¡No nos hacemos responsables de lo que pueda pasar! ^^ Además te pedimos que nos comuniques si estabas usando el Menú de Desarrollo al informar de problemas o bugs.
-mno_Cheat_enable|Activar las opciones de trucos/modding.
+menu_dev_menu|Éstas son opciones de desarrollo que te proporcionarán muchos trucos y herramientas con las que jugar.^^ Sin embargo, ocasionarán que aparezcan eventos, funciones y cambios en la campaña que todavía están en desarrollo, y que podrían fastidiar tu partida.^^ ¡No nos hacemos responsables de lo que pueda pasar! ^^ Además te pedimos que nos comuniques si estabas usando el Menú de Desarrollo al informar de problemas o fallos.
+mno_cheat_enable|Activar las opciones de trucos/modding.
 menu_game_options|^^^^^^^^Haz click sobre una opción para cambiarla:
 mno_game_options_war_level_start|La guerra empieza al alcanzar el nivel: {s1}  
 mno_game_options_restrict_items|Restringir el equipamiento del jugador: {s7}
@@ -160,8 +159,8 @@ mno_strat_tweaks_siege_reqs|Requisitos de fuerza para asedio: {s7}
 mno_strat_tweaks_siege_relax_rate|Req. de fuer. para asedio: Velocidad de mitigación: {reg1}
 mno_strat_tweaks_regen_rate|Velocidad de regeneración de fuerza: {s7}
 mno_strat_tweaks_siege_regen_limit|Fuerza de facción se regenera más despacio al llegar a: {reg1}
-mno_strat_tweaks_influence_gain_rate|Velocidad de obtención de influencia: {s7}
-mno_strat_tweaks_rank_gain_rate|Velocidad de obtención de rango: {s7}
+mno_strat_tweaks_influence_gain_rate|Velocidad de obtención de influencia: {reg0}%
+mno_strat_tweaks_rank_gain_rate|Velocidad de obtención de rango: {reg0}%
 mno_strat_tweaks_back|Volver al menú de ajustes.
 menu_camp_action|^^^^^^^^^     ¿Qué objeto?
 mno_camp_drink_water|¡Beber el Agua de los Ents!
@@ -204,7 +203,7 @@ mno_control_allies_menu|Usar Influencia para dar órdenes a tus aliados en el ca
 mno_encounter_hide|Esconderse del enemigo...
 mno_special_whip|Acercarse rápidamente hacia ellos restallando el {s4}.
 mno_encounter_attack_bearform|{reg21?Lanzarte a la batalla en forma de oso:Cambia de piel y enfréntate al enemigo}.
-mno_encounter_leave|Separarse.
+mno_encounter_leave|Replegarse.
 mno_encounter_retreat|Huir, dejando a algún soldado detrás para cubrir tu retirada.
 mno_player_control_allies_simple|Ponerlos bajo tus órdenes y enfrentarse al enemigo.
 mno_player_control_allies_back|Atrás...
@@ -255,12 +254,12 @@ menu_besiegers_camp_with_allies|{s1} permanece bajo asedio. Los estandartes de {
 mno_talk_to_siege_commander|Pedir una audiencia con el comandante.
 mno_join_siege_with_allies|Unirse al siguiente asalto.
 mno_join_siege_stay_back|Ordenar a tus tropas que se unan al próximo asalto sin tu ayuda.
-menu_moria_must_escape|^^El libro parece dar cuenta del último intento de los enanos por volver a establecerse en Moria. Un intento que al parecer terminó con la cruenta muerte de todos los involucrados. Hojeando el libro, te topas con las palabras «plata auténtica». Estudiando las páginas con detenimiento de repente entiendes que son las descripciones de un alijo de cofres enanos en algún punto de los niveles inferiores. Vaya, no estaría mal descubrir el mithril enano perdido. ^Comienzas a seguir las indicaciones con entusiasmo, internándote en un estrecho y tortuoso túnel descendente...^...^Tras un par de horas de búsqueda infructuosa comprendes que te has perdido en las profundidades de Moria y necesitas encontrar una salida a la superficie como sea.
+menu_moria_must_escape|^^El libro parece dar cuenta del último intento de los enanos por volver a establecerse en Moria. Un intento que al parecer terminó con la cruenta muerte de todos los involucrados. Mientras ponderas su oscuro destino, oyes repentinamente unos gritos ásperos y el rumor de muchos pies a la carrera.^ ¡Ya vienen!^  Saliendo apresuradamente de la cámara, te das cuenta de que los sonidos vienen del salón. No te queda otro remedio que huir en la dirección opuesta, internándote en un estrecho y tortuoso túnel descendente...^...^Un par de horas después, comprendes que te has perdido en las profundidades de Moria y tienes que encontrar una salida.
 mno_moria_exit_scene|¡Encuentra un camino de salida!
 menu_castle_outside|Te encuentras en las afueras de {s2}.{s11} {s3} {s4}
-mno_moria_enter|Volver al salón principal de Moria a través de la entrada secreta
-mno_moria_enter_door|Entrar en Moria.
 mno_cheat_steal_book_door|Hacerse con el libro
+mno_moria_enter|Volver al salón principal de Moria por la entrada secreta
+mno_moria_enter_door|Entrar en Moria.
 mno_castle_start_siege|Asediar {reg6?la ciudad:el castillo}.
 mno_castle_leave|Irse.
 menu_castle_besiege|Estás asediando {s1}. {s2} {s3}
@@ -305,6 +304,7 @@ mno_talk_to_healer|Hablar con  {s40}.
 mno_talk_to_castle_commander|Visitar el cuartel de {s61}.
 mno_speak_with_elder|Hablar con el {s6}.
 mno_town_ask|Preguntar por gente importante...
+mno_player_initiate_siege|Asediar {reg6?la ciudad:el castillo}.
 mno_isengard_underground|Ir a las cavernas subterráneas.
 mno_isengard_underground_door|Ir a las cavernas subterráneas.
 mno_tirith_toplevel|Ir al nivel superior.
@@ -349,6 +349,16 @@ mno_explore|Explorar el lugar.
 menu_ring_hunter_lair|^^^^Has seguido el rastro de los Caza-anillos por el Bosque Negro y llegado a {s1}. Ves que se disponen a huir con un cofre.
 mno_attack_lair|Empieza el ataque
 mno_leave_bandit_lair|Dejarlo por el momento.
+menu_raftmen|^^^^Sigues el Río Rápido hacia el sureste en dirección a Rhûn, esperando encontrar el viejo camino de mercaderes.^^ Un tiempo después, llegas a una pequeña aldea situada a las orillas del río.^^Preguntas a los aldeanos cómo llegar al camino y ellos te dirigen a un par de hombres que se dedican a recorrer el río en balsa.^^Después de negociar con ellos, llegas a un acuerdo para que esos hombres te lleven río abajo.
+mno_go_with_the_raftmen|Viajar en balsa a Dorwinion
+menu_ride_to_dorwinion|^^^^Te relajas y disfrutas del buen tiempo mientras los hombres dirigen la balsa río abajo. El Río Rápido, que entre las cascadas y los rápidos de la Montaña Solitaria, es de aguas frías y claras, es aquí templado, tranquilo y de aguas turbias.^^ Al sol de la tarde, ves pasar llanuras extensas y bosques verdes a medida que la balsa se desliza por los sinuosos meandros. La región está dispersamente poblada por pequeñas granjas y viñedos rodeados por tapias de piedra, y ocasionalmente dejas atrás alguna cabaña edificada sobre pilotes y escondida entre los juncos.^^El sosegado movimiento de la balsa te ayuda a caer en un profundo sueño...
+mno_ride_to_dorwinion_next|Siguiente...
+menu_amath_dollen_fortress|^^^^Despiertas de tu siesta cuando declina la tarde y poco después llegas a un embarcadero donde los hombres amarran la balsa. Te indican un sendero estrecho que desaparece entre la maleza del pantano y montan el campamento para esperar tu regreso.^^Sigues el sendero, que asciende rápidamente desde los humedales a una planicie cubierta de hierba, y continúas caminando hasta que se une con el viejo camino de mercaderes.^^Un tiempo después, ves ante ti una fortaleza de bandidos.
+mno_bandit_fortress_with_companions|Acercarte a la fortaleza de los bandidos solo con tus compañeros e intentar hablar con su líder.
+mno_bandit_fortress_with_army|Atacar la fortaleza de los bandidos con todas tus tropas.
+mno_bandit_fortress_against_easterlings|Defender la fortaleza contra el asedio.
+mno_bandit_fortress_spirits|Hablar con los espíritus
+mno_leave_amath_dollen_fortress|Dejarlo por el momento.
 menu_gondor_reinforcement_event|^^^^^¡Las almenaras de Gondor arden, Minas Tirith pide ayuda!^^Los señores de los feudos sureños marcharán hacia el norte a defender la Ciudad Blanca de la oscuridad que se cierne sobre ella.
 mno_gondor_reinforcement_event_close|Cerrar
 menu_gondor_beacons|Levantas la vista hacia {s1}, una de las almenaras de Gondor, usadas para dar la alarma en el norte y el sur de Gondor.
@@ -362,6 +372,7 @@ mno_player_added_to_allow_follow_close|Cerrar
 menu_center_besieged_event|^^^^^Ha llegado un mensajero a informarte de que {s2} of {s3} ha puesto {s1} bajo asedio.
 mno_center_besieged_event_close|Cerrar
 menu_guardian_party_spawned|^^^^^Los exploradores informan de que {s6} ha reunido un gran ejeército en las cercanías de {s7}, en un último y desesperado intento por defender la capital.
+mno_guardian_party_spawned_close|Cerrar
 mno_intro_next|Continuar...
 mno_start_defend_caravan|¡Defiende la caravana!
 mno_start_raid_caravan|¡Asalta la caravana!
@@ -391,7 +402,6 @@ mno_leave_refugees|Dejarlos en paz por ahora...
 mno_evil_war_tut_continue|Continuar...
 menu_alternate_training_fight|Te enfrentarás a {reg5} oponentes. ¿Quieres empezar?
 mno_training_continue|Empezar el entrenamiento...
-menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Intentarlo de nuevo...
 mno_alternate_training_finish|Dejar la arena...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Elige en qué lado combatirás y qué ventajas activarás:
@@ -437,12 +447,11 @@ mno_leave_pyre|Dejar la pira.
 menu_town_ruins|Cuando te acercas ves que {s1} está {s2}
 mno_ruin_menu_0|Explorar el lugar.
 mno_ruin_leave|Irse...
-menu_premutiny|ninguno
 menu_death|Te han matado. Aunque la guerra sigue su sangriento curso tú ya no formarás parte de ella nunca más.
 menu_animal_ambush|Tú y tus compañeros os encontráis separados del resto del grupo cuando de repente...
 menu_animal_ambush_success|{reg0?El:Los} {s2} {reg0?cae:caen} ante ti como el trigo seco bajo la guadaña. Poco después todos tus atacantes yacen en el suelo, muertos o heridos. {s3}
 menu_animal_ambush_fail|Los animales {reg0?te muerden y desgarran,:os muerden y desgarran a ti y a tu{reg2?s : }compañero{reg2?s,:,}} pero por suerte consigues mantenerlos a raya y ahuyentarlos. Con un poco de suerte no te atacarán de nuevo.
-menu_isengard_flooding|^^^^^@Te rodean enemigos muertos y aliados triunfantes, incluyendo a los Ents; rugen y braman y aúllan de tal modo que las piedras se resquebrajan y caen en torno a la torre de Orthanc. Son como una tempestad, despedazando las columnas, arrojando avalanchas de piedras a los fosos, lanzando al aire enormes bloques de roca como si fuesen hojas... No se parece a nada que hayas visto antes.^^ Bregalad -- o Ramaviva, como tú lo conoces -- se acerca a grandes zancadas y se detiene solo para decir: '¡{playername}! ¡Cuidado! Mantente lejos de la Torre; pronto romperemos el dique y traeremos el Isen al valle durante un tiempo. ¡Creo que encontrarás muy difícil quedarte aquí!' Te apresuras a seguir su consejo y te apartas de Orthanc.^^ Cerca de medianoche, Isengard empieza a llenarse de charcos y arroyos de aguas negras. No puedes evitar un estremecimiento al ver grandes columnas de humo y vapor elevándose y enroscándose alrededor de la Torre, hasta que parece un elevado pico envuelto en nubes, incandescente por abajo y arriba iluminado por la luna. La cólera de los Ents es lenta, pero posee una fuerza irresistible...
+menu_isengard_flooding|^^^^^Te rodean enemigos muertos y aliados triunfantes, incluyendo a los Ents; rugen y braman y aúllan de tal modo que las piedras se resquebrajan y caen en torno a la torre de Orthanc. Son como una tempestad, despedazando las columnas, arrojando avalanchas de piedras a los fosos, lanzando al aire enormes bloques de roca como si fuesen hojas... No se parece a nada que hayas visto antes.^^ Bregalad -- o Ramaviva, como tú lo conoces -- se acerca a grandes zancadas y se detiene solo para decir: '¡{playername}! ¡Cuidado! Mantente lejos de la Torre; pronto romperemos el dique y traeremos el Isen al valle durante un tiempo. ¡Creo que encontrarás muy difícil quedarte aquí!' Te apresuras a seguir su consejo y te apartas de Orthanc.^^ Cerca de medianoche, Isengard empieza a llenarse de charcos y arroyos de aguas negras. No puedes evitar un estremecimiento al ver grandes columnas de humo y vapor elevándose y enroscándose alrededor de la Torre, hasta que parece un elevado pico envuelto en nubes, incandescente por abajo y arriba iluminado por la luna. La cólera de los Ents es lenta, pero posee una fuerza irresistible...
 mno_isengard_continue|Continuar
 menu_build_your_scene|Puedes crear tu propio escenario de batalla, utilizando una de las ranuras disponibles abajo y activando el modo de edición (primero tienes que activar el modo de edición en las opciones del lanzador al iniciar el juego, entrar en un escenario de batalla y pulsar Ctrl+E para acceder al editor). Puedes enviarnos los escenarios que hayas creado (los archivos sco de la carpeta TLD/SceneObj) y si tu creación es lo bastante buena, podría aparecer en versiones posteriores como uno de los mapas de batalla aleatorios.^^ Intenta especificar en qué región del mapa quieres que aparezca.^ Un par de consejos: evita las aguas profundas, las montañas empinadas y otros obstáculos infranqueables, a no ser que tengas experiencia creando mapas y sepas usar las barreras y las «AI Mesh» para hacer que la IA de las tropas vaya donde tú quieras que vaya y no se meta donde no debe.^ (Los puntos de entrada del 0 al 1 son para atacantes, el 4 para los defensores, ni se te ocurra tocar los que van del 5 al 8)
 mno_scene1|Llanura grande (archivo: scn custom 1.sco)
@@ -457,3 +466,4 @@ mno_scene9|Bosque pequeño (archivo: scn custom 9.sco)
 mno_back_3dot|Atrás...
 mno_back|Volver atrás.
 mno_next|Siguiente...
+mno_previous|Anterior...

@@ -5,7 +5,10 @@ mno_faction_intros|Dowiedz się więcej o frakcjach Śródziemia
 mno_go_bback|Wróć
 menu_start_phase_2|^^^^^Śródziemie. Cień rośnie na Wschodzie, a mroczne stwory, dawno ukryte, pojawiają się ponownie. ^Wolni ludzie szykują się do wojny, wojny której nie widziano od wieków. ^Ludzie, Ely, Krasnoludy i Orkowie; wszyscy odegrają swoją rolę.^^Jaką, to się okaże... 
 mno_go_forth|Podążaj naprzód obraną przez Ciebie ścieżką...
+; mno_change_war_start_mode|War Starts:  {s7}
+; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|Zmień opcje TLD.
+; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^^Wybierz scenariusz:
 mno_custom_battle_scenario_1|            Potyczka, Gondor vs Harad
 mno_custom_battle_scenario_12|Wybierz frakcje do bitwy
@@ -35,7 +38,6 @@ mno_view_upkeep_costs|Zobacz koszt utrzymania
 mno_view_character_report|Zobacz raport postaci
 mno_view_party_size_report|Obejrzyj raport rozmiaru oddziału.
 mno_view_morale_report|Obejrzyj raport morale oddziału.
-mno_view_character_report_02|Sprawdź status NPC.
 mno_view_faction_strengths_report|Obejrzyj raport siły frakcji.
 mno_view_traits_report|Zobacz Cechy.
 mno_resume_travelling|Wróć.
@@ -47,7 +49,6 @@ mno_continue_dot|Dalej.
 menu_custom_battle_durin_end|^^^^^^To było godna podziwu walka, ale ostatecznie okazała się być klęską.^^ Ty i twoi żołdacy zabiliście {reg5} wrogów.^Sam osobiście zabiłeś {reg7} przeciwników w walce.
 mno_replay_cbd|Rozegraj bitwę ponownie
 mno_continue_dot_cbd|Dalej.
-mno_dot_go_back|Powrót
 menu_start_good|^^^^^^^^^^Wybierz rasę:
 mno_start_ma|CZŁOWIEK
 mno_start_el|ELF
@@ -110,10 +111,8 @@ mno_start_2_far|Dalekiego Haradu, jesteś plemieńcem
 menu_start_numenorean|Jesteś Czarnym Númenorejczykiem,^ wiernym Ciemności i Morgothowi.^Wybierz gdzie będziesz służyć Oku.
 mno_start_1_bn|Obok Paszczy Saurona, w MORANNON
 mno_start_2_bn|W fortecy nekromanty, DOL GULDUR
-menu_choose_gender|^^^^^^^^^^Twoja płeć?
 mno_start_male|Mężczyzna
 mno_start_female|Kobieta
-mno_proc|Postępować normalnie.
 menu_start_as_one|^^^^^^^^^^Jakim jesteś typem Żołnierza?
 mno_start_default|Stań się {s23}. (Domyślnie)
 mno_start_up1|Stań się {s21}. (Łatwy)
@@ -127,8 +126,8 @@ mno_camp_action|Użyj obiektu
 mno_camp_wait_here|Odpocząć przez jakiś czas.
 mno_camp_options|Zmień opcje TLD.
 mno_Dev_Menu|Menu Developerskie
-menu_dev_menu|To są Developerskie Opcje pozwalające Ci na użycie wielu narzędzi/oszustw.^^ Korzystanie z nich może spowodować pewne błędy lub zmiany w kampanii które popsują grę.^^ Używaj na własne ryzyko! ^^ Kiedy będziesz zgłaszał błędy, daj nam znać czy używałeś tego menu.
-mno_Cheat_enable|Włącz oszustwa/tryb moderski
+; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_cheat_enable|Włącz oszustwa/tryb moderski
 menu_game_options|^^^^^^^^Naciśnij opcję aby ją zmienić:
 mno_game_options_war_level_start|Wojna rozpoczyna się na poziomie: {s1}
 mno_game_options_restrict_items|Restrykcje przedmiotów: {s7}
@@ -160,8 +159,8 @@ mno_strat_tweaks_siege_reqs|Siła wymagana do oblężenia: {s7}
 mno_strat_tweaks_siege_relax_rate|Prędkość odnawiania siły oblężenia: {reg1}
 mno_strat_tweaks_regen_rate|Szybkość regeneracji siły: {s7}
 mno_strat_tweaks_siege_regen_limit|Siła frakcji regeneruje się wolniej przy {reg1} 
-mno_strat_tweaks_influence_gain_rate|Szybkość zdobywania wpływów : {s7} Normal-Normalna Doubled-Podwójna Tripled-Potrójna Quadrupled-Poczwórna
-mno_strat_tweaks_rank_gain_rate|Szybkość zdobywania rangi : {s7} Normal-Normalna Doubled-Podwójna Tripled-Potrójna Quadrupled-Poczwórna
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
 mno_strat_tweaks_back|Wróć do menu ulepszeń.
 menu_camp_action|^^^^^^^^^     Co chcesz zrobić?
 mno_camp_drink_water|Wypić Wodę Entów!
@@ -255,12 +254,12 @@ menu_besiegers_camp_with_allies|{s1} jest pod oblężeniem wojsk, którymi dowod
 mno_talk_to_siege_commander| Zażądaj spotkania z dowódcą.
 mno_join_siege_with_allies|Przyłącz się do następnego ataku na mury.
 mno_join_siege_stay_back|Rozkaż swoim żołnierzom, by bez ciebie przyłączyli się do następnego ataku.
-menu_moria_must_escape|^^Książka zdaje się przedstawiać rezultat ostatniej próby skolonizowania Morii przez krasnoludów. Próby która ewidentnie skończyła się śmiercią wszystkich w nią zaangażowanych. Przeglądając książkę natrafiasz na słowa "prawdziwe srebro"! Studiując ją dowiadujesz się że jest to część opisu krasnoludzkich skrzyń znajdujących się gdzieś na niższych poziomach Morii. Hah! Nie byłoby cudownie odnaleźć dawno zaginiony krasnoludzki mithril?  ^Pospiesznie podążasz za instrukcjami, najpierw krętym tunelem a potem w dół...  ^...^Po kilku godzinach bezowocnego poszukiwania spostrzegasz, że jesteś zagubiony w głębinach Morii i musisz odnaleźć wyjście.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Znajdź drogę powrotną!
 menu_castle_outside|W pobliżu znajduje się {s2}.{s11} {s3} {s4}
-mno_moria_enter|Wróć do głównej sali Morii przez sekretne wejście.
-mno_moria_enter_door|Wejdź do Morii.
 mno_cheat_steal_book_door|Zabierz księgę.
+; mno_moria_enter|Return into main hall of Moria through the secret entrance
+mno_moria_enter_door|Wejdź do Morii.
 mno_castle_start_siege|Oblegaj {reg6?miasto:zamek}.
 mno_castle_leave|Odejdź.
 menu_castle_besiege|Oblegasz {s1}. {s2} {s3}
@@ -305,6 +304,7 @@ mno_town_prison_door|Do obozu treningowego.
 mno_talk_to_castle_commander|Odwiedź baraki.
 mno_speak_with_elder|Rozmawiaj z miejscowymi władzami.
 ; mno_town_ask|Ask around for persons of import...
+; mno_player_initiate_siege|Attack the {reg6?town:castle}...
 mno_isengard_underground|Udaj się do podziemnych jaskini.
 mno_isengard_underground_door|Wejdź do podziemnych jaskiń
 mno_tirith_toplevel|Wspinaj się na wyższy poziom.
@@ -349,6 +349,16 @@ mno_explore|Zbadaj to miejsce.
 menu_ring_hunter_lair|^^^^Podążałeś za Łowcami Pierścienia przez las Mirkwood i dotarłeś do {s1}. Widzisz ich przygotowujących się do opuszczenia z skrzynią.
 mno_attack_lair|Zaatakuj teraz.
 mno_leave_bandit_lair|Odejdź.
+; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
+; mno_go_with_the_raftmen|Take the raft to Dorwinion
+; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
+mno_ride_to_dorwinion_next|Następnie...
+; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
+; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
+; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
+; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
+; mno_bandit_fortress_spirits|Go talk with the spirits.
+mno_leave_amath_dollen_fortress|Odejdź.
 menu_gondor_reinforcement_event|^^^^^Płomienie na wzgórzach, Minas Tirith potrzebuje pomocy!^^^Władcy  południowych lenn przemaszerują na północ, aby bronić Białego Miasta przed nadchodzącymi ciemnościami.
 mno_gondor_reinforcement_event_close|Zamknij
 menu_gondor_beacons|Spoglądasz na {s1}, jeden z sygnałów ostrzegawczych Gondora, używany do podniesienia alarmu w północnym i południowym Gondorze.
@@ -362,6 +372,7 @@ mno_player_added_to_allow_follow_close|Zamknij
 menu_center_besieged_event|^^^^Wiadomość informująca, że {s1} było oblężone przez {s2} z {s3}.
 mno_center_besieged_event_close|Zamknij
 menu_guardian_party_spawned|^^^^^Zwiadowcy donoszą, że frakcja {s6} zmobilizowała wielką armię w pobliżu miejsca {s7} w desperackiej próbie obrony stolicy.
+mno_guardian_party_spawned_close|Zamknij
 mno_intro_next|Dalej...
 mno_start_defend_caravan|Broń karawany!
 mno_start_raid_caravan|Napadnij na karawanę!
@@ -391,7 +402,6 @@ mno_leave_refugees|Zostaw ich na razie. . .
 mno_evil_war_tut_continue|Dalej...
 menu_alternate_training_fight|Będziesz miał do czynienia z {reg5} przeciwnikami. Jesteś gotowy?
 mno_training_continue|Rozpocząć szkolenie. . .
-menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Spróbuj ponownie. . .
 mno_alternate_training_finish|Wyjdź z areny. . .
 menu_custom_battle_choose_faction1|^^^^^^^^^^Wybierz swoją frakcję:
@@ -415,7 +425,7 @@ mno_cb_mordor3|Haradrim
 mno_cb_mordor4|Easterlingowie
 mno_cb_mordor5|Moria
 mno_cb_mordor6|Gundabad
-mno_cb_mordor7|Rhun
+; mno_cb_mordor7|Rhûn
 mno_cb_mordor8|Korsarze
 mno_rescue_mission|Zakradnij się do kryjówki czarnoksiężnika pod osłoną nocą.
 mno_next_rescue_scene_door|Kontynuuj dalej!
@@ -437,7 +447,6 @@ mno_leave_pyre|Odejdź od stosu.
 menu_town_ruins|W momencie gdy się zbliżasz, zauważasz, że {s1} to {s2}
 mno_ruin_menu_0|Zbadaj to miejsce.
 mno_ruin_leave|Wyjdz...
-menu_premutiny|Żaden
 menu_death|Powinieneś być martwy. Chociaż wojna wciąż trwa, ty nie jesteś już jej częścią.
 menu_animal_ambush|Ty i twoi kompani oddzieliliście się od reszty drużyny, kiedy nagle...
 menu_animal_ambush_success|{s2} {reg0?fall:falls} przed wami jak zboże skoszone sierpem! Wkrótce wszyscy przeciwnicy leżą na ziemi - ranni, lub martwi. {s3}
@@ -457,3 +466,4 @@ mno_scene9|Las Mały (file scn custom 9.sco)
 mno_back_3dot|Wróć...
 mno_back|Wróć.
 mno_next|Następnie...
+; mno_previous|Previous...

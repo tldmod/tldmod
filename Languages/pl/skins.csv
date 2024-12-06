@@ -13,7 +13,6 @@ skinkey_nose_width|Szerokość nosa
 skinkey_nose_size|Rozmiar nosa
 skinkey_nose_shape|Kształt nosa
 skinkey_nose_bridge|Nasada nosa
-
 skinkey_eye_width|Wielkość oczu
 skinkey_eye_to_eye_dist|Odstęp między oczami
 skinkey_eye_shape|Kształt oczu
@@ -22,7 +21,6 @@ skinkey_eyelids|Powieki
 skinkey_cheeks|Policzki
 skinkey_cheek_bones|Kości policzkowe
 skinkey_eyebrow_height|Wysokość brwi
-
 skinkey_eyebrow_shape|Kształt brwi
 skinkey_temple_width|Szerokość skroni
 skinkey_face_depth|Głębia twarzy
@@ -44,3 +42,5 @@ skinkey_frawn|Zmarszczenie
 skinkey_mouth_vert_pos|Pozycja ust
 skinkey_mouth_to_nose_dist|Odstęp między ustami i nosem
 skinkey_chin_width|Szerokość podbródka
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

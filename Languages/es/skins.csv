@@ -13,7 +13,6 @@ skinkey_nose_width|Ancho nariz
 skinkey_nose_size|Tamaño nariz
 skinkey_nose_shape|Forma nariz
 skinkey_nose_bridge|Puente nariz
-
 skinkey_eye_width|Ancho ojos
 skinkey_eye_to_eye_dist|Dist. entre ojos
 skinkey_eye_shape|Forma Ojos
@@ -22,7 +21,6 @@ skinkey_eyelids|Párpados
 skinkey_cheeks|Mejillas
 skinkey_cheek_bones|Pómulos
 skinkey_eyebrow_height|Altura cejas
-
 skinkey_eyebrow_shape|Forma cejas
 skinkey_temple_width|Ancho sien
 skinkey_face_depth|Profundidad cara
@@ -44,3 +42,5 @@ skinkey_frawn|Entrecejo
 skinkey_mouth_vert_pos|Posición boca
 skinkey_mouth_to_nose_dist|Dist. boca-nariz
 skinkey_chin_width|Ancho mentón
+skinkey_ear_pointiness|Punta de orejas
+skinkey_ear_length|Longitud de orejas

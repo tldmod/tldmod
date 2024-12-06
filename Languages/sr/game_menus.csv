@@ -5,7 +5,10 @@ mno_start_evil|Sumrak covecanstva
 mno_go_bback|Idi nazad
 menu_start_phase_2|^^^^^ Srednja Zemlja. Senka se nadzire na istoku, ^ i mracne stvari izlaze na povrsinu koje nisu vidjene dosta vremena. ^ Slobodni ljudo se spemaju za rat,rat koji nisu mogucni ni zamisliti. ^ Ljudi, Vilenjaci, Patuljci i Orkovi; svi ce ucestvvati. ^^ Kako? To cemo tek videti...
 mno_go_forth|Idi napred ka tvom izabranom putu...
+; mno_change_war_start_mode|War Starts:  {s7}
+; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|Promeni TLD opcije.
+; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^^Izaberite vas scenario:
 mno_custom_battle_scenario_1|Sukob, Gondor protiv Harada
 mno_custom_battle_scenario_12|Izaberite frakcije za bitku
@@ -35,7 +38,6 @@ mno_view_upkeep_costs|Pogledaj cenu.
 mno_view_character_report|Pogledaj raport.
 mno_view_party_size_report|Pogledaj velicinu vojske.
 mno_view_morale_report|Pogledaj moral vojske.
-mno_view_character_report_02|NPS status.
 mno_view_faction_strengths_report|Pogledaj snagu fakcija.
 mno_view_traits_report|Pogledaj osobine
 mno_resume_travelling|Nastavi putovanje.
@@ -47,7 +49,6 @@ mno_continue_dot|Nastavi.
 ; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
 mno_replay_cbd|Igraj ovu bitku ponovo.
 mno_continue_dot_cbd|Nastavi.
-mno_dot_go_back|. Povuci se
 menu_start_good|^^^^^^^^^^Izaberi tvoju rasu:
 mno_start_ma|Covek
 mno_start_el|Vilenjak
@@ -110,10 +111,8 @@ mno_start_2_far|Clan plemena
 ; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
 ; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
 ; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
-menu_choose_gender|^^^^^^^^^^Musko ili Zensko?
 mno_start_male|Musko
 mno_start_female|Zensko
-mno_proc|Nastavi prema normalnom
 ; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
 ; mno_start_default|Become a {s23} (Default)
 ; mno_start_up1|Become a {s21} (Easy)
@@ -127,8 +126,8 @@ mno_camp_action|Koristi "objekat".
 mno_camp_wait_here|Ulogori se ovde za neko vreme.
 mno_camp_options|Promeni TLD opcije.
 ; mno_Dev_Menu|Developer Menu
-; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
-mno_Cheat_enable|Dozvoli cheat/moding opcije.
+; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_cheat_enable|Dozvoli cheat/moding opcije.
 menu_game_options|^^^^^^^^Izaberi opciju da bi je aktivirao:
 ; mno_game_options_war_level_start|War Starts at Level: {s1}
 mno_game_options_restrict_items|Stroga oprema: {s7}
@@ -160,8 +159,8 @@ mno_strat_tweaks_siege_reqs|Zahtevi za opsadu: {s7}
 mno_strat_tweaks_siege_relax_rate|Odmaranje vezano za opsadu: {reg1}
 mno_strat_tweaks_regen_rate|Regeneracija snage: {s7}
 ; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
-mno_strat_tweaks_influence_gain_rate|Brzina dobijanja uticaja: {s7}
-mno_strat_tweaks_rank_gain_rate|Brzina dobijanja cina: {s7}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
 mno_strat_tweaks_back|Vrati se nazad.
 menu_camp_action|^^^^^^^^^ Koji objekat?
 mno_camp_drink_water|Popij malo Ent vode!
@@ -255,12 +254,12 @@ menu_besiegers_camp_with_allies|{s1} ostaje pod opsadom. Zastave {s2} se vijore 
 mno_talk_to_siege_commander|Zatraži sastanak sa komandantom.
 mno_join_siege_with_allies|Pridruži se sledećem napadu.
 mno_join_siege_stay_back|Naredi svojim vojnicima da se pridruže sledećem napadu bez tebe.
-menu_moria_must_escape|^^Čini se da knjiga opisuje poslednji pokušaj patuljaka da se ponovo nastane u Moriji. Pokušaj koji je očigledno završen jezivom smrću svih umešanih. Pregledavanjem knjige, naleteo si na reči 'pravo srebro'! Proučavajući stranice odjednom shvataš da su to opisi zaliha patuljaka koji su negde na donjim nivoima. Hah! Zar ne bi bilo kul da otkriješ davno izgubljeni mitril patuljaka? ^Željno pratiš uputsva, u uzan krivudav tunel i dole...^...^Nakon nekoliko sati neplodne pretrage shvataš da si izgubljen duboko u Moriji i da moraš da nađeš izlaz.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Pronađi izlaz!
 menu_castle_outside|Ispred si {s2}.{s11} {s3} {s4}
-mno_moria_enter|Vrati se u glavnu dvoranu Morije kroz skriveni ulaz
-mno_moria_enter_door|Uđi u Moriju.
 ; mno_cheat_steal_book_door|Get the book
+; mno_moria_enter|Return into main hall of Moria through the secret entrance
+mno_moria_enter_door|Uđi u Moriju.
 mno_castle_start_siege|Izvrši opsadu {reg6?town:castle}.
 mno_castle_leave|Odlazi.
 menu_castle_besiege|Vršiš opsadu {s1.} {s2} {s3}
@@ -305,6 +304,7 @@ mno_trade_with_horse_merchant|Poseti {s41}.
 mno_talk_to_castle_commander|Poseti {s61} kasarnu.
 mno_speak_with_elder|Razgovaraj sa {s6}.
 ; mno_town_ask|Ask around for persons of import...
+; mno_player_initiate_siege|Attack the {reg6?town:castle}...
 mno_isengard_underground|Idi u podzemne pecine.
 ; mno_isengard_underground_door|Go to the underground caverns
 mno_tirith_toplevel|Popenji se na vrh.
@@ -349,6 +349,16 @@ mno_explore|Istrazi lokaciju.
 menu_ring_hunter_lair|^^^^Pratio si trag Lovaca na Prsten kroz Mirkwood Sumu i stigao si do {s1}. Vidis ih kako se spremaju da odu sa kovcegom.
 mno_attack_lair|Napadnite ih sada 
 mno_leave_bandit_lair|Idi za sada.
+; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
+; mno_go_with_the_raftmen|Take the raft to Dorwinion
+; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
+mno_ride_to_dorwinion_next|Sledece....
+; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
+; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
+; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
+; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
+; mno_bandit_fortress_spirits|Go talk with the spirits.
+mno_leave_amath_dollen_fortress|Idi za sada.
 ; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
 ; mno_gondor_reinforcement_event_close|Close
 ; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
@@ -362,6 +372,7 @@ mno_gondor_beacons_close|Napusti...
 ; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
 ; mno_center_besieged_event_close|Close
 ; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
+; mno_guardian_party_spawned_close|Close
 mno_intro_next|Nastavi...
 mno_start_defend_caravan|Odbranite karavan!
 mno_start_raid_caravan|Napadni karavan!
@@ -391,7 +402,6 @@ mno_raid_villagers|Napdni selo!
 mno_evil_war_tut_continue|Nastavi...
 ; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
 ; mno_training_continue|Begin training...
-; menu_alternate_training_conclusion|{s5}
 ; mno_alternate_training_retry|Try again...
 ; mno_alternate_training_finish|Leave the arena...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Izaberi svoju stranu i prednost:
@@ -415,7 +425,7 @@ mno_cb_mordor3|Haradi
 mno_cb_mordor4|Easterlingsi
 mno_cb_mordor5|Moria
 mno_cb_mordor6|Gundabad
-mno_cb_mordor7|Rhun
+; mno_cb_mordor7|Rhûn
 mno_cb_mordor8|Gusari
 mno_rescue_mission|Provuci se nekako pored carobnjakove zastite po noci.
 mno_next_rescue_scene_door|Nastavi napred!
@@ -437,7 +447,6 @@ mno_leave_pyre|Napusti lomacu.
 menu_town_ruins|Kada si prisao, video si da je {s1} {s2}
 mno_ruin_menu_0|Istrazi lokaciju...
 mno_ruin_leave|Napusti...
-; menu_premutiny|none
 menu_death|Ubijen si. Iako rat idalje besni, ti u njemu vise neces ucestvovati.
 menu_animal_ambush|Ti i tvoji saborci bivate odvojeni od ostatka grupa, kada odjednom...
 menu_animal_ambush_success|{s2} {reg0?fall:falls} je pred tebe kao zito sto pada od kose! Uskoro, svi tvoji napadaci leze na zemlji, mrtvi ili ranjeni. {s3}
@@ -457,3 +466,4 @@ menu_animal_ambush_fail|Zivotinje te grizu i vuku te{reg0?,: i tvog saborca{reg2
 mno_back_3dot|Nazad...
 mno_back|Nazad
 mno_next|Sledece....
+; mno_previous|Previous...

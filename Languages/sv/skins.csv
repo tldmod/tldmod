@@ -13,7 +13,6 @@ skinkey_nose_width|näsans bredd
 skinkey_nose_size|näsans storlek
 skinkey_nose_shape|näsans form
 skinkey_nose_bridge|näsbron
-
 skinkey_eye_width|ögonens bredd
 skinkey_eye_to_eye_dist|ögonens distans 
 skinkey_eye_shape|ögonens form
@@ -22,7 +21,6 @@ skinkey_eyelids|ögonlocken
 skinkey_cheeks|kinder
 skinkey_cheek_bones|kindbenen
 skinkey_eyebrow_height|ögonbrynas höjd
-
 skinkey_eyebrow_shape|ögonbrynas form
 skinkey_temple_width|tempel bredd
 skinkey_face_depth|ansiktets djup
@@ -44,3 +42,5 @@ skinkey_frawn|fräshhet
 skinkey_mouth_vert_pos|onskefult leende
 skinkey_mouth_to_nose_dist|distans från munnen till näsan
 skinkey_chin_width|hakans bredd
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

@@ -3,7 +3,7 @@ skl_trade_desc|Sprawia że kowale i zaopatrzeniowcy lepiej współpracują i ofe
 skl_leadership|Przywództwo
 skl_leadership_desc|Każdy punkt zwiększa maksymalną liczbę żołnierzy w oddziale o 5 (3 dla towarzyszy). zwiększa morale drużyny i spójność w bitwie. Sprawia że coraz silniejsi ochotnicy chcą do Ciebie dołączyć. (Umiejętność osobista)
 skl_prisoner_management|Zarządzanie więźniami
-skl_prisoner_management_desc|Każdy punkt zwiększa maksymalną liczbę więźniów o %d. Zwiększa szanse na schwytanie i przetrzymanie więźniów. (Umiejętność dowódcy) 
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
 skl_persuasion|Wildcraft
 skl_persuasion_desc|Zdolność do przetrwania w dziczy i naginania jej do Twojej woli. Ta umiejętność wpływa na zdolność ukrywania się oddziału przed wrogiem, a także na jego prędkość w zalesionym terenie. (Umiejętność oddziału)
 skl_engineer|-----

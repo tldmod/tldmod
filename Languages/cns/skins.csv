@@ -13,7 +13,6 @@ skinkey_nose_width|鼻子宽度
 skinkey_nose_size|鼻子高度
 skinkey_nose_shape|鼻子形状
 skinkey_nose_bridge|鼻梁高低
-
 skinkey_eye_width|眼睛宽度
 skinkey_eye_to_eye_dist|两眼间距
 skinkey_eye_shape|眼睛外形
@@ -22,7 +21,6 @@ skinkey_eyelids|眼皮
 skinkey_cheeks|脸颊
 skinkey_cheek_bones|颧骨
 skinkey_eyebrow_height|眉毛高度
-
 skinkey_eyebrow_shape|眉毛形状
 skinkey_temple_width|太阳穴宽度
 skinkey_face_depth|面部深度
@@ -44,3 +42,5 @@ skinkey_frawn|眉弓
 skinkey_mouth_vert_pos|嘴巴高度
 skinkey_mouth_to_nose_dist|人中长度
 skinkey_chin_width|下巴宽度
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

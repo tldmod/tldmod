@@ -5,7 +5,10 @@ mno_faction_intros|Узнать о фракциях средиземья
 mno_go_bback|Назад
 menu_start_phase_2|^^^^^              Средиземье. Тень сгущается на Востоке, ^             И зло, что было скрыто, расползается вокруг. ^              Свободные народы готовятся к войне, какой не видели целую Эпоху. ^             Люди, эльфы, гномы, орки - всем суждено сыграть свою роль. ^^              Но какую именно - ещё предстоит узнать... 
 mno_go_forth| Вступить на выбранную вами стезю...
+; mno_change_war_start_mode|War Starts:  {s7}
+; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|Изменить настройки TLD.
+; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^^Выберите сценарий боя:
 mno_custom_battle_scenario_1| Стычка: гондорские фракции против Харада.
 mno_custom_battle_scenario_12|Выбери фракцию для сражения
@@ -35,7 +38,6 @@ mno_view_upkeep_costs|Отчёт о содержании отряда.
 mno_view_character_report|Отчёт о вашем персонаже.
 mno_view_party_size_report|Отчёт о размере отряда.
 mno_view_morale_report|Отчёт о боевом духе отряда.
-mno_view_character_report_02|Отчёт о соратниках.
 mno_view_faction_strengths_report|Отчёт о силе фракций.
 mno_view_traits_report|Отчёт о полученных трейтах.
 mno_resume_travelling|Продолжить странствия.
@@ -47,7 +49,6 @@ mno_continue_dot|Далее.
 menu_custom_battle_durin_end|^^^^^^Это был восхитительный, но все же безнадежный бой.^^ Вы и ваши соратники убили {reg5} врагов.^Вы лично сразили {reg7} противников в сражении.
 mno_replay_cbd|Снова сразиться в этой битве.
 mno_continue_dot_cbd|Далее.
-mno_dot_go_back|. Назад
 menu_start_good|^^^^^^^^^^Выберите вашу расу:
 mno_start_ma|ЧЕЛОВЕК
 mno_start_el|ЭЛЬФ
@@ -110,10 +111,8 @@ mno_start_2_far|Выходец из племён Дальнего Харада
 menu_start_numenorean|^^^^^^^Вы Черный Нуменорец,^верный Тьме и Морготу.^Выберете где вы служите Оку
 mno_start_1_bn|Рядом с Устами Саурона, в МОРАННОНЕ
 mno_start_2_bn|В крепости некроманта, ДОЛ-ГУЛДУРЕ
-menu_choose_gender|^^^^^^^^^^Ваш пол?
 mno_start_male|Мужской
 mno_start_female|Женский
-mno_proc|Продолжайте в том же духе.
 menu_start_as_one|^^^^^^^^^^Выберите тип солдата.
 mno_start_default|Стать {s23} (По умолчанию)
 mno_start_up1|Стать {s21} (Легко)
@@ -127,8 +126,8 @@ mno_camp_action|Воспользоваться предметом.
 mno_camp_wait_here|Устроить стоянку.
 mno_camp_options|Изменить настройки TLD.
 mno_Dev_Menu|Меню разработчика
-menu_dev_menu|Это опции разработчиков которые могут позволить вам использовать некоторые читы и инструменты для игры.^^ Однако это приведет к некоторым событиям, триггерам и изменениям кампании которые могут сломать игру.^^ Используйте на свой страх и риск! ^^ Также, если вы сообщаете о багах, пожалуйста, скажите нам если вы использовали эти опции.
-mno_Cheat_enable|Включить опции читов/модификации.
+; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_cheat_enable|Включить опции читов/модификации.
 menu_game_options|^^^^^^^^Нажмите на опцию, чтобы изменить её:
 mno_game_options_war_level_start|Война начинается на уровне: {s1}
 mno_game_options_restrict_items|Ограничения в вооружении игрока: {s7}
@@ -160,8 +159,8 @@ mno_strat_tweaks_siege_reqs|Порог рейтинга силы для нача
 mno_strat_tweaks_siege_relax_rate|Темп возрастания порога, при котором начинаются осады: {reg1} 
 mno_strat_tweaks_regen_rate|Темп восстановления рейтинга силы: {s7} 
 mno_strat_tweaks_siege_regen_limit|Фракция восстанавливается медленнее если ниже: {reg1}
-mno_strat_tweaks_influence_gain_rate|Прирост очков влияния: {s7}
-mno_strat_tweaks_rank_gain_rate|Прирост очков ранга: {s7}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
 mno_strat_tweaks_back|Вернуться в меню опций. 
 menu_camp_action|^^^^^^^^^ Какой предмет?
 mno_camp_drink_water|Выпить энтийскую воду!
@@ -255,12 +254,12 @@ menu_besiegers_camp_with_allies|Подъехав к лагерю осаждаю�
 mno_talk_to_siege_commander|Потребовать встречи с командующим.
 mno_join_siege_with_allies|Присоединиться к следующему штурму.
 mno_join_siege_stay_back|Приказать воинам присоединиться к следующему штурму без вашего участия.
-menu_moria_must_escape|^^В книге, похоже, описывается последняя попытка гномов вернуться в Морию. Попытка, которая завершилась трагической смертью всех участников похода. Листая книгу, вы натыкаетесь на слова "истинное серебро". Внимательно изучив повреждённые страницы, вы понимаете речь здесь идёт о гномьих тайниках, расположенных где-то на нижних уровнях. Ха! Найти давным-давно утерянный мифрил гномов - разве это не потрясающе?!^Вы точно следуете всем указаниям, входите в узкий туннель, идёте вниз...^...^После пары часов бесплодных поисков вы понимаете, что заблудились в глубинах Мории и теперь вам нужно искать путь наружу.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Искать путь наружу!
 menu_castle_outside|Перед вами {s2}.{s11} {s3} {s4}
-mno_moria_enter|Вернуться в главный зал Мории через потайной ход
-mno_moria_enter_door|Войти в Морию.
 mno_cheat_steal_book_door|Взять книгу
+; mno_moria_enter|Return into main hall of Moria through the secret entrance
+mno_moria_enter_door|Войти в Морию.
 mno_castle_start_siege|Нет.
 mno_castle_leave|Продолжить
 menu_castle_besiege|Вы осаждаете {s1}. {s2} {s3}
@@ -305,6 +304,7 @@ mno_town_prison_door|В тренировочный лагерь
 mno_talk_to_castle_commander|Войти в казармы фракции {s61}.
 mno_speak_with_elder|Поговорить с местным управителем.
 ; mno_town_ask|Ask around for persons of import...
+; mno_player_initiate_siege|Attack the {reg6?town:castle}...
 mno_isengard_underground|Войти в подземелье.
 mno_isengard_underground_door|Войти в подземелье
 mno_tirith_toplevel|Взойти на верхний уровень.
@@ -349,6 +349,16 @@ mno_explore|Обследовать местность.
 menu_ring_hunter_lair|^^^^Пройдя по следу Охотников за Кольцом через Лихолесье, вы прибыли в {s1}. Вы видите их, готовых сбежать вместе с сундуком.
 mno_attack_lair|Атаковать их сейчас
 mno_leave_bandit_lair|Уйти.
+; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
+; mno_go_with_the_raftmen|Take the raft to Dorwinion
+; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
+mno_ride_to_dorwinion_next|Далее...
+; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
+; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
+; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
+; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
+; mno_bandit_fortress_spirits|Go talk with the spirits.
+mno_leave_amath_dollen_fortress|Уйти.
 menu_gondor_reinforcement_event|^^^^^Сигнальные костры Гондора зажглись, Минас Тирит просит о помощи!^^Лорды из южных владений теперь выступят на север, чтобы защищать Белый Город от надвигающейся тьмы.
 mno_gondor_reinforcement_event_close|Закрыть
 menu_gondor_beacons|Вы видите {s1}, один из сигнальных маяков Гондора, с помощью которого объявляли о начале войны всему королевству.
@@ -362,6 +372,7 @@ mno_player_added_to_allow_follow_close|Закрыть
 menu_center_besieged_event|^^^^^Прибыл посыльный, сообщивший, что {s1} в настоящее время находится под осадой {s2} из {s3}.
 mno_center_besieged_event_close|Закрыть
 menu_guardian_party_spawned|^^^^^Разведчики сообщают, что {s6} собрал большую армию в окрестностях {s7}, в последней отчаянной попытке защитить столицу.
+mno_guardian_party_spawned_close|Закрыть
 mno_intro_next|Продолжить...
 mno_start_defend_caravan|Защитить караван!
 mno_start_raid_caravan|Ограбить караван!
@@ -391,7 +402,6 @@ mno_leave_refugees|Оставим их... пока что...
 mno_evil_war_tut_continue|Продолжить...
 menu_alternate_training_fight|Вы будете сражаться против {reg5} противников. Вы готовы?
 mno_training_continue|Начать тренировку...
-menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Попытаться снова...
 mno_alternate_training_finish|Покинуть арену...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Выберите свою сторону и преимущество:
@@ -415,7 +425,7 @@ mno_cb_mordor3|Харадрим
 mno_cb_mordor4|Истерлинги
 mno_cb_mordor5|Мория
 mno_cb_mordor6|Гундабад
-mno_cb_mordor7|Рун
+; mno_cb_mordor7|Rhûn
 mno_cb_mordor8|Корсары
 mno_rescue_mission|Прокрасться в логово колдуна под покровом ночи.
 mno_next_rescue_scene_door|Далее!
@@ -437,7 +447,6 @@ mno_leave_pyre|Покинуть пепелище.
 menu_town_ruins|По прибытии в поселение вы обнаружили, что оно разрушено.
 mno_ruin_menu_0|Осмотреть местность.
 mno_ruin_leave|Продолжить...
-menu_premutiny|Ничего
 menu_death|Вас убили. Война продолжается, но уже без вашего участия.
 menu_animal_ambush|Заплутав, вы немного отстали от своих, как вдруг...
 menu_animal_ambush_success|{s2} {reg0?пали:пал} как колосья под серпом! {reg0?Враги:Враг} {reg0?убиты:убит} или {reg0?истекают:истекает} кровью. {s3}
@@ -457,3 +466,4 @@ mno_scene9|Маленький лес (file scn custom 9.sco)
 mno_back_3dot|Назад...
 mno_back|Назад.
 mno_next|Далее...
+; mno_previous|Previous...

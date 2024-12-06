@@ -3,7 +3,7 @@ skl_trade_desc|Торговцы становятся сговорчивее и �
 skl_leadership|Лидерство
 ; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|Содержание пленных
-skl_prisoner_management_desc|С каждым новым уровнем этого навыка максимальное число пленных увеличивается на %d. Увеличивает вероятность захвата в плен и хранения заключенных. (умение лидера).
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
 skl_persuasion|Единение с природой
 skl_persuasion_desc|Способность выживать в дикой природе и подчинять её своей воле. Этот навык влияет на способность отряда скрываться от врагов, а также на скорость движения отряда по лесной местности. (умение отряда)
 skl_engineer|-----

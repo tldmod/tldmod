@@ -65,6 +65,10 @@ itm_wargarmored_2b|披甲座狼
 itm_wargarmored_2c|披甲座狼
 itm_wargarmored_3a|披甲座狼
 itm_warg_reward|巨型座狼
+; itm_animal_big|Big Animal
+; itm_animal_small|Small Animal
+; itm_troll_weapon_long|Giant Halberd
+itm_troll_weapon_dmg|巨型钉头锤
 itm_tree_trunk_club_a|树干
 itm_giant_mace|巨型钉头锤
 itm_troll_shield_a|食人妖盾
@@ -130,6 +134,8 @@ itm_harad_javelin|哈拉德标枪
 itm_gondor_javelin|刚铎标枪
 itm_rohirrim_throwing_axe|飞斧
 itm_loss_throwing_axes|罗萨那奇掷斧
+; itm_free_dunedain_helm_a|Arnor Light Helm
+itm_free_dunedain_helm_b|亚尔诺头盔
 itm_arnor_helm_c|亚尔诺饰纹盔
 itm_arnor_helm_b|亚尔诺头盔
 ; itm_arnor_helm_a|Arnor Light Helm
@@ -433,8 +439,6 @@ itm_dunland_mail_2|丹尼斯锁子甲
 itm_dun_helm_a|丹尼斯狼皮帽
 ; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|丹尼斯高盔
-itm_dun_helm_d|丹尼斯高盔
-itm_dun_helm_e|丹尼斯鹿角盔
 ; itm_dun_shield_a|Dunnish Roundshield
 ; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|登兰德酋长剑
@@ -539,6 +543,7 @@ itm_desert_boots|沙漠靴
 itm_harad_leather_greaves|哈拉德皮胫甲
 itm_harad_scale_greaves|哈拉德胫甲
 itm_harad_lamellar_greaves|哈拉德夹板胫甲
+; itm_camel|Harad Camel
 itm_khand_inf_helm_a|侃德盔
 itm_khand_inf_helm_b|侃德盔
 itm_khand_inf_helm_c1|侃德钵盔
@@ -590,6 +595,7 @@ itm_rhun_helm_chieftain|卢恩酋长盔
 itm_rhun_helm_pot|卢恩锅盔
 itm_rhun_helm_barbed|卢恩倒刺盔
 itm_rhun_helm_round|卢恩圆盔
+itm_rhun_helm_horde|卢恩部落盔
 itm_rhun_helm_leather|卢恩皮盔
 itm_rhun_warpick|卢恩战镐
 itm_rhun_greataxe|卢恩巨斧
@@ -700,7 +706,7 @@ itm_dwarf_helm_round|矮人圆盔
 itm_dwarf_helm_sallet|矮人头盔
 itm_dwarf_armor_d|铁丘陵鳞甲外套
 itm_dwarf_armor_a|孤山罩锁甲束腰长衣
-itm_leather_dwarf_armor|矮人加厚外套
+; itm_leather_dwarf_armor|Erebor Padded Coat
 itm_dwarf_armor_b|孤山罩锁甲束腰外衣
 itm_leather_dwarf_armor_b|矮人加厚短上衣
 itm_dwarf_armor_c|孤山鳞锁甲
@@ -719,7 +725,6 @@ itm_gondor_lance_banner|刚铎带旗骑枪
 itm_amroth_lance_banner|多尔安罗斯带旗骑枪
 itm_rohan_lance_banner_sun|洛汗烈日旗骑枪
 itm_rohan_lance_banner_horse|洛汗骠骑旗骑枪
-itm_fur_gloves_reward|猎手手套
 itm_ent_water|一碗奇怪的水
 itm_map|中土世界地图
 itm_athelas_reward|干阿西拉斯草
@@ -783,9 +788,55 @@ itm_wolf|狼
 itm_werewolf|狼人
 itm_thrush_reward|画眉鸟
 itm_gauntlets_reward|铁拳
+; itm_gondor_custom|Custom Gondor
 itm_stones_siege|围城石块
 itm_beorn_axe_no_attack|波宁斧
-itm_animal_spider|蜘蛛
-itm_animal_bear|熊
-itm_animal_wolf|狼
-itm_animal_werewolf|妖狼
+; itm_tabard_b_wb|Tabard
+; itm_nobleman_outfit_b_new_wb|Nobleman Outfit
+; itm_peasant_man_a_wb|Peasant Outfit
+itm_leather_jerkin_wb|皮短上衣
+itm_white_tunic_c_wb|束腰夹克
+; itm_white_tunic_a_wb|White Tunic
+itm_red_tunic_wb|红色束腰外衣
+itm_fur_coat_wb|河谷镇外套
+; itm_fur_hat_a_new_wb|Fur Hat
+; itm_noel_hat_a_wb|Fur Hat
+; itm_peasant_dress_b_new_wb|Blue Dress
+; itm_sarranid_lady_dress_wb|Blue Dress
+itm_sar_robe_b_wb|长袍
+itm_black_dress_wb|黑色长裙
+itm_blackwhite_dress_wb|女士长裙
+itm_white_tunic_b_wb|束腰外衣
+itm_blue_tunic_wb|蓝色束腰外衣
+itm_black_tunic_wb|黑色束腰外衣
+itm_green_tunic_wb|绿色束腰外衣
+itm_green_dress_wb|绿色裙子
+itm_gondor_fine_outfit_dress_wb|精美服装
+itm_rohan_fine_outfit_dale_dress_wb|精美服装
+itm_robe_generic_dress_wb|长袍
+itm_wimple_a_wb|包头巾
+itm_wimple_with_veil_wb|包头巾
+itm_fine_hat_wb|精美帽子
+; itm_rohan_tunic_a_wb|Rohan Tunic
+; itm_rohan_tunic_b_wb|Rohan Tunic
+itm_denethor_robe|精美服装
+itm_ent_head_helm2|树人头颅
+itm_ent_head_helm3|树人头颅
+; itm_civilian_hammer|Hammer
+; itm_civilian_woodaxe_1h|Axe
+; itm_civilian_woodaxe_2h|Heavy Axe
+; itm_civilian_war_mattock|Mattock
+; itm_civilian_great_mattock|Mattock
+; itm_civilian_adz|Mattock
+; itm_civilian_pickaxe|Mattock
+; itm_civilian_shovel|Shovel
+; itm_civilian_carry_wood_heap|Fire Wood
+; itm_civilian_carry_wood|Wood
+; itm_civilian_carry_amphora|Amphora
+; itm_civilian_carry_sack|Sack
+; itm_civilian_carry_basket|Basket
+; itm_civilian_carry_honey|Honey
+; itm_civilian_carry_oil|Oil
+; itm_civilian_carry_wood2|Wood
+; itm_work_basket|Basket
+; itm_work_basket_2|Basket

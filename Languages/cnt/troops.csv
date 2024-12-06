@@ -1,5 +1,3 @@
-trp_unarmed_troop|未武裝部隊
-trp_unarmed_troop_pl|未武裝部隊
 trp_tutorial_maceman|戰錘兵
 trp_tutorial_maceman_pl|戰錘兵
 trp_tutorial_archer|弓兵
@@ -766,72 +764,66 @@ trp_c4_mordor_num_horseman|黑努美諾爾騎兵
 trp_c4_mordor_num_horseman_pl|黑努美諾爾騎兵
 trp_c5_mordor_num_knight|黑努美諾爾騎術大師
 trp_c5_mordor_num_knight_pl|黑努美諾爾騎術大師
-trp_noldorin_commander|諾多指揮官
-trp_noldorin_commander_pl|諾多指揮官
-trp_elf_captain_of_lothlorien|羅斯洛立安精靈隊長
-trp_elf_captain_of_lothlorien_pl|羅斯洛立安精靈隊長
-trp_lothlorien_lieutenant|羅斯洛立安代官
-trp_lothlorien_lieutenant_pl|羅斯洛立安代官
-trp_elf_captain_of_mirkwood|綠森精靈隊長
-trp_elf_captain_of_mirkwood_pl|綠森精靈隊長
-trp_mirkwood_lieutenant|綠森代官
-trp_mirkwood_lieutenant_pl|綠森代官
-trp_elf_captain_of_rivendell|瑞文戴爾精靈隊長
-trp_elf_captain_of_rivendell_pl|瑞文戴爾精靈隊長
-trp_rivendell_lieutenant|瑞文戴爾代官
-trp_rivendell_lieutenant_pl|瑞文戴爾代官
-trp_lieutenant_of_rohan|洛汗代官
-trp_lieutenant_of_rohan_pl|洛汗代官
-trp_captain_of_rohan|洛汗隊長
-trp_captain_of_rohan_pl|洛汗隊長
-trp_high_captain_of_rohan|洛汗大隊長
-trp_high_captain_of_rohan_pl|洛汗大隊長
-trp_lieutenant_of_isengard|艾辛格代官
-trp_lieutenant_of_isengard_pl|艾辛格代官
-trp_captain_of_isengard|艾辛格隊長
-trp_captain_of_isengard_pl|艾辛格隊長
-trp_high_captain_of_isengard|艾辛格大隊長
-trp_high_captain_of_isengard_pl|艾辛格大隊長
-trp_lieutenant_of_mordor|魔多代官
-trp_lieutenant_of_mordor_pl|魔多代官
-trp_captain_of_mordor|魔多隊長
-trp_captain_of_mordor_pl|魔多隊長
-trp_high_captain_of_mordor|魔多大隊長
-trp_high_captain_of_mordor_pl|魔多大隊長
-trp_easterling_chieftain|維瑞亞酋長
-trp_easterling_chieftain_pl|維瑞亞酋長
-trp_easterling_lieutenant|维瑞亞戰爭牧師
-trp_easterling_lieutenant_pl|维瑞亞戰爭牧師
-trp_harad_chieftain|哈拉德酋長
-trp_harad_chieftain_pl|哈拉德酋長
-trp_harad_lieutenant|哈拉德代官
-trp_harad_lieutenant_pl|哈拉德代官
-trp_black_numenorean_captain|黑努美諾爾隊長
-trp_black_numenorean_captain_pl|黑努美諾爾隊長
-trp_black_numenorean_lieutenant|黑努美諾爾代官
-trp_black_numenorean_lieutenant_pl|黑努美諾爾代官
-trp_a5_dun_night_wolf|登蘭德夜狼
-trp_a5_dun_night_wolf_pl|登蘭德夜狼
-trp_dunnish_lieutenant|登蘭德司令
-trp_dunnish_lieutenant_pl|登蘭德司令
-trp_goblin_chieftain|哥布林酋長
-trp_goblin_chieftain_pl|哥布林酋長
-trp_captain_of_gondor|剛鐸隊長
-trp_captain_of_gondor_pl|剛鐸隊長
-trp_nobleman|貴族
-trp_nobleman_pl|貴族
-trp_gondor_agent|剛鐸探員
-trp_gondor_agent_pl|剛鐸探員
-trp_rohan_agent|洛汗探員
-trp_rohan_agent_pl|洛汗探員
-trp_mordor_agent|魔多探員
-trp_mordor_agent_pl|魔多探員
-trp_isengard_agent|艾辛格探員
-trp_isengard_agent_pl|艾辛格探員
-trp_looter|搶匪
-trp_looter_pl|搶匪
-trp_bandit|強盜
-trp_bandit_pl|強盜
+; trp_greenwood_captain|Greenwood Captain
+; trp_greenwood_captain_pl|Greenwood Captains
+; trp_lorien_captain|Lothlorien Captain
+; trp_lorien_captain_pl|Lothlorien Captains
+; trp_riv_captain|Rivendell Elf Lord
+; trp_riv_captain_pl|Rivendell Elf Lords
+; trp_arnor_captain|Captain of Arnor
+; trp_arnor_captain_pl|Captains of Arnor
+; trp_arnor_ranger_captain|Ranger Captain of Arnor
+; trp_arnor_ranger_captain_pl|Ranger Captains of Arnor
+trp_rohan_captain|洛汗隊長
+trp_rohan_captain_pl|洛汗隊長
+; trp_beorning_captain|Beorning Chieftain
+; trp_beorning_captain_pl|Beorning Chieftains
+; trp_woodmen_captain|Woodmen Chieftain
+; trp_woodmen_captain_pl|Woodmen Chieftains
+trp_isen_captain|艾辛格隊長
+trp_isen_captain_pl|艾辛格隊長
+; trp_isen_tracker_captain|Isengard Tracker Captain
+; trp_isen_tracker_captain_pl|Isengard Tracker Captains
+trp_mordor_uruk_captain|魔多半獸人隊長
+; trp_mordor_uruk_captain_pl|Mordor Uruk Captains
+trp_mordor_captain|魔多隊長
+trp_mordor_captain_pl|魔多隊長
+trp_umbar_captain|昂巴的船長
+; trp_umbar_captain_pl|Captains of Umbar
+; trp_khand_captain|Variag War Chief
+; trp_khand_captain_pl|Variag War Chiefs
+; trp_rhun_captain|Rhun Chieftain
+; trp_rhun_captain_pl|Rhun Chieftains
+; trp_moria_captain|Uruk Chieftain of Moria
+; trp_moria_captain_pl|Uruk Chieftains of Moria
+; trp_dwarf_captain|Dwarf Captain
+; trp_dwarf_captain_pl|Dwarf Captains
+trp_dale_captain|河谷鎮的隊長
+; trp_dale_captain_pl|Captains of Dale
+; trp_harad_captain|Haradrim Noble
+; trp_harad_captain_pl|Haradrim Nobles
+trp_a5_dun_night_wolf2|登蘭德夜狼
+trp_a5_dun_night_wolf2_pl|登蘭德夜狼
+trp_dun_captain|登蘭德司令
+trp_dun_captain_pl|登蘭德司令
+; trp_gunda_captain|Gundabad Chieftain
+; trp_gunda_captain_pl|Gundabad Chieftains
+trp_gondor_captain|剛鐸的隊長
+trp_gondor_captain_pl|剛鐸隊長
+trp_pel_captain|佩拉吉爾隊長
+trp_pel_captain_pl|佩拉吉爾隊長
+; trp_amroth_captain|Knight Captain of Dol Amroth
+; trp_amroth_captain_pl|Knights Captain of Dol Amroth
+trp_lam_captain|拉密頓隊長
+trp_lam_captain_pl|拉密頓隊長
+trp_loss_captain|羅薩納奇隊長
+trp_loss_captain_pl|羅薩納奇隊長
+trp_pinnath_captain|皮那斯傑林隊長
+trp_pinnath_captain_pl|皮那斯傑林隊長
+; trp_blackroot_captain|Captain of Blackroot Vale
+; trp_blackroot_captain_pl|Captains of Blackroot Vale
+trp_ithilien_captain|伊錫利恩遊俠隊長
+trp_ithilien_captain_pl|伊錫利恩遊俠隊長
 trp_brigand|土匪
 trp_brigand_pl|土匪
 trp_mountain_bandit|山賊
@@ -865,17 +857,11 @@ trp_messenger_orc_pl|信使
 trp_messenger_evil_man|信使
 trp_messenger_evil_man_pl|信使
 trp_town_walker_1|鎮民
-trp_town_walker_1_pl|鎮民
 trp_town_walker_2|女鎮民
-trp_town_walker_2_pl|女鎮民
 trp_village_walker_1|村民
-trp_village_walker_1_pl|村民
 trp_village_walker_2|村民
-trp_village_walker_2_pl|村民
 trp_spy_walker_1|鎮民
-trp_spy_walker_1_pl|鎮民
 trp_spy_walker_2|女鎮民
-trp_spy_walker_2_pl|女鎮民
 trp_walker_man_gondor_black|鎮民
 trp_walker_man_gondor_white|鎮民
 trp_walker_man_gondor_blue|鎮民
@@ -991,11 +977,11 @@ trp_knight_1_5|杜因希爾
 trp_knight_1_6|公正的希爾路因
 trp_knight_1_7|法拉墨
 trp_knight_1_8|胖子佛朗
-trp_knight_1_9|葛林伯
+; trp_knight_1_9|Theodred
 trp_knight_1_10|鄂肯布蘭德
 trp_knight_1_11|艾海姆
 trp_knight_1_12|哈瑪
-trp_knight_1_13|加姆林
+trp_knight_1_13|葛林伯
 trp_knight_1_14|伊歐墨
 trp_knight_1_15|烏骨陸
 trp_knight_1_16|瑪胡
@@ -1375,7 +1361,7 @@ trp_elder_edoras|伊多拉斯鄉紳
 trp_elder_edoras_pl|城市
 trp_elder_aldburg|奧德堡鄉紳
 trp_elder_aldburg_pl|城镇
-trp_elder_hornburg|號角堡鄉紳
+trp_elder_hornburg|加姆林
 trp_elder_hornburg_pl|要塞
 trp_elder_eastemnet|東埃姆內特鄉紳
 trp_elder_eastemnet_pl|城镇
@@ -1391,7 +1377,7 @@ trp_elder_mmorgul|魔窟首領
 trp_elder_mmorgul_pl|邪惡之城
 trp_elder_cungol|營長
 trp_elder_cungol_pl|營地
-trp_elder_isengard|葛力馬巧言
+; trp_elder_isengard|Isengard Overseer
 trp_elder_isengard_pl|城市
 trp_elder_cgaladhon|羅瑞安博學者
 trp_elder_cgaladhon_pl|精靈樹林要塞
@@ -1482,30 +1468,20 @@ trp_tax_rebel_pl|農民叛軍
 trp_trainee_peasant|農民
 trp_trainee_peasant_pl|農民
 trp_fugitive_man|可疑的人類
-trp_fugitive_man_pl|可疑的人類
 trp_fugitive_elf|可疑的精靈
-trp_fugitive_elf_pl|可疑的精靈
 trp_fugitive_dwarf|可疑的矮人
-trp_fugitive_dwarf_pl|可疑的矮人
 trp_fugitive_orc|可疑的半獸人
-trp_fugitive_orc_pl|可疑的半獸人
 trp_spy|眼神飄忽的海盜
-trp_spy_pl|眼神飘忽的海盜
 trp_spy_evil|眼神飄忽的南方人
-trp_spy_evil_pl|眼神飄忽的南方人
 trp_spy_partner|間諜接應
-trp_spy_partner_pl|間諜接應
 trp_spy_partner_evil|間諜接應
-trp_spy_partner_evil_pl|間諜接應
 trp_easter_egg_troll|食人妖
 trp_treebeard|樹鬍
 trp_ent_1|快枝
 trp_ent_2|葉叢
 trp_ent_3|樹皮
 trp_gandalf|甘道夫
-trp_gandalf_pl|自產的甘道夫
 trp_nazgul|戒靈
-trp_nazgul_pl|被馴服的戒靈
 ; trp_radagast|Radagast
 trp_barman|酒保
 trp_elder|據點長者
@@ -1516,14 +1492,11 @@ trp_dorwinion_bandit|多溫尼安強盜
 trp_dorwinion_bandit_pl|多溫尼安強盜
 trp_dorwinion_raider|多溫尼安掠奪者
 trp_dorwinion_raider_pl|多溫尼安掠奪者
+trp_no_troop_pl|當地
 trp_city_guard|城市守衛
-trp_city_guard_pl|城市守衛
 trp_orc_sentry|半獸人哨兵
-trp_orc_sentry_pl|半獸人哨兵
 trp_uruk_hai_sentry|強獸人哨兵
-trp_uruk_hai_sentry_pl|強獸人哨兵
 trp_black_numenorean_sorcerer|黑努美諾爾巫師
-trp_black_numenorean_sorcerer_pl|黑努美諾爾巫師
 ; trp_evil_priest|Evil Priest
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|幽暗密林狼騎手
@@ -1559,8 +1532,19 @@ trp_start_quest_mordor_scout|魔多嚮導
 trp_start_quest_mordor_scout_pl|魔多嚮導
 trp_start_quest_beorning|比翁卡爾岩狂戰士
 trp_start_quest_beorning_pl|比翁卡爾岩狂戰士
+; trp_black_shield|Amath Dollen
+; trp_black_shield_bandit|Amath Dollen's Bandit
+; trp_black_shield_bandit_pl|Amath Dollen's Bandits
+; trp_black_shield_scout|Amath Dollen's Scout
+; trp_black_shield_scout_pl|Amath Dollen's Scouts
+; trp_black_shield_guard|Amath Dollen's Guard
+; trp_black_shield_guard_pl|Amath Dollen's Guards
+; trp_dorwinion_spirit_leader|Spirit
+; trp_dorwinion_spirit|Lesser Spirit
 trp_i6_beorning_bear_warrior|熊戰士
 trp_i6_beorning_bear_warrior_pl|熊戰士
+trp_a5_dun_night_wolf|登蘭德夜狼
+trp_a5_dun_night_wolf_pl|登蘭德夜狼
 trp_morannon_healer|治療師歐克斯圖克
 trp_minas_tirith_healer|伊奧瑞絲
 trp_edoras_healer|治療師芙蕾雅
@@ -1582,6 +1566,7 @@ trp_c5_rhovanion_noble_pl|羅馬尼安貴族
 trp_npc18|圖巴蘇
 trp_npc19|海德克
 trp_npc20|齊格爾菲爾
+; trp_npc21|Berta
 trp_werewolf|狼人
 trp_werewolf_pl|狼人
 trp_moria_troll|洞穴食人妖
@@ -1647,3 +1632,5 @@ trp_pippin_notmet|半身人
 trp_merry_notmet|半身人
 trp_pippin|皮聘
 trp_merry|梅里
+trp_grima|葛力馬巧言
+trp_grima_pl|城市

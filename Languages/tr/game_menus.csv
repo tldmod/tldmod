@@ -5,7 +5,10 @@ mno_faction_intros|Orta Dünya'nın farklı tarafları hakkında bilgi edinin
 mno_go_bback|Geri Dön
 menu_start_phase_2|^^^^^ Orta Dünya. Doguda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çagdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
 mno_go_forth|Seçtigin yolda ilerle...
+; mno_change_war_start_mode|War Starts:  {s7}
+; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|TLD ayarlarını degiştir.
+; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^^Senaryonu seç:
 mno_custom_battle_scenario_1|Çatışma, Gondor, Harad'a karşı
 mno_custom_battle_scenario_12|Savaş için tarafları seç
@@ -35,7 +38,6 @@ mno_view_upkeep_costs|Bakım ücretini gör.
 mno_view_character_report|Karakter raporunu gör.
 mno_view_party_size_report|Grup boyutu raporunu görüntüle.
 mno_view_morale_report|Grup moral raporuna görüntüle.
-mno_view_character_report_02|NPC durum kontrolü.
 mno_view_faction_strengths_report|Taraf kuvvetlerinin raporunu görüntüle.
 mno_view_traits_report|Özellikleri görüntüle.
 mno_resume_travelling|Yolculuga devam et.
@@ -47,7 +49,6 @@ mno_continue_dot|Devam et.
 menu_custom_battle_durin_end|^^^^^^Bu takdire şayan bir savunmaydı lakin kaybetmeye mahkumdu.^^ Sen ve adamların {reg5} düşman öldürdünüz.^Sen tek başına {reg7} rakibini katlettin.
 mno_replay_cbd|Savaşı tekrar oyna.
 mno_continue_dot_cbd|Devam et.
-mno_dot_go_back|Geri dön.
 menu_start_good|^^^^^^^^^^Irkını seç
 mno_start_ma|İNSAN
 mno_start_el|ELF
@@ -110,10 +111,8 @@ mno_start_2_far|Far Harad Kabile Üyesi
 menu_start_numenorean|^^^^^^^Sen bir Kara Numenorlusun,^Karanlıga ve Morgoth'a sadıksın.^Göze hizmet edecegin yeri seç
 mno_start_1_bn|Sauron'un Agzı'nın yanında, MORANNON'da
 mno_start_2_bn|Ölü Çagıran'ın kalesinde, DOL GULDUR'da
-menu_choose_gender|^^^^^^^^^^Cinsiyetin?
 mno_start_male|Erkek
 mno_start_female|Kadın
-mno_proc|Normal olarak devam et
 menu_start_as_one|^^^^^^^^^^Sen ne tür bir askersin?
 mno_start_default|{s23} Ol (Varsayılan)
 mno_start_up1|{s21} Ol (Kolay)
@@ -127,8 +126,8 @@ mno_camp_action|Bir nesne kullan.
 mno_camp_wait_here|Burada bir süreligine kamp kur.
 mno_camp_options|TLD ayarını degiştir
 mno_Dev_Menu|Geliştirici Menüsü
-menu_dev_menu|Bunlar size oynamak için bir sürü hile ve araç veren geliştirici seçenekleri.^^ Bununla birlikte, bu bazı WIP olaylarına, tetikleyicilere, oyun kırıcı olabilecek kampanya degişikliklerine neden olacaktır.^^ Risk sizindir. ^^ Ayrıca, hataları rapor ederken, lütfen bize Geliştirici Menüsü kullandıgınızı söyleyin.
-mno_Cheat_enable|Hile/modlama ayarlarını etkinleştir.
+; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_cheat_enable|Hile/modlama ayarlarını etkinleştir.
 menu_game_options|^^^^^^^^Degiştirmek için bir ayara tıklayın:
 mno_game_options_war_level_start|Savaşın Başlayacagı Seviye: {s1}
 mno_game_options_restrict_items|Kısıtlı oyuncu ekipmanı: {s7}
@@ -160,8 +159,8 @@ mno_strat_tweaks_siege_reqs|Kuşatma gücü gereklilikleri: {s7}
 mno_strat_tweaks_siege_relax_rate|Kuşatma gücü gerekliliginin gevşeme oranı: {reg1}
 mno_strat_tweaks_regen_rate|Güç Yenilenme oranı: {s7}
 mno_strat_tweaks_siege_regen_limit|Taraf güç yenilenmesi {reg1} civarında yavaşlıyor.
-mno_strat_tweaks_influence_gain_rate|Nüfuz kazanım oranı: {s7}
-mno_strat_tweaks_rank_gain_rate|Rütbe kazanım oranı: {s7}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
 mno_strat_tweaks_back|Ayarlar menüsüne dön.
 menu_camp_action|^^^^^^^^ Hangi Eşya?
 mno_camp_drink_water|Ent Suyundan İç !
@@ -255,12 +254,12 @@ menu_besiegers_camp_with_allies|{s1} kuşatma altında. Kuşatmacıların kampı
 mno_talk_to_siege_commander|Komutan ile görüşme talep et.
 mno_join_siege_with_allies|Sıradaki saldırıya katıl
 mno_join_siege_stay_back|Askerlerine sonraki mücadelede sensiz savaşmalarını emret.
-menu_moria_must_escape|Kitap cücelerin Moriaya yerleşmek için yaptıgı son denemeyi anlatıyor gibi.Olaya karışan herkesin ölümüne sebep olan deneme... Kitabı incelerken 'Gerçek Gümüş' sözlerine rastlıyorsun.Sayfalara biraz daha göz gezdirerek aniden yazılanların aşagı seviyelerdeki bir cüce hazinesinin haritası oldugunu anlıyorsun.Hah!Uzun süredir kayıp olan cüce mithrillini bulmak hoş olmaz mıydı!? ^Hızlı bir şekilde talimatları izliyor ve dar bir tünele giriyorsun... ^...^Birkaç saatlik arayışın ardından arayışların sonuç vermeyince Moria'nın en dip yerlerinde kayboldugunu ve dışarı çıkmanın bir yolunu bulman gerektigini anlıyorsun.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Çıkış yolunu bul!
 menu_castle_outside|Dışarıdasın {s2}.{s11} {s3} {s4}
-mno_moria_enter|Gizli girişten Moria'nın ana salonuna dön.
-mno_moria_enter_door|Moria'ya gir
 mno_cheat_steal_book_door|Kitabı al
+; mno_moria_enter|Return into main hall of Moria through the secret entrance
+mno_moria_enter_door|Moria'ya gir
 mno_castle_start_siege|{reg6?kasaba:kale}.'yi kuşat.
 mno_castle_leave|Ayrıl.
 menu_castle_besiege|{s1}. {s2} {s3} 'leri kuşatıyorsun.
@@ -305,6 +304,7 @@ mno_town_prison_door|Egitim Alanları'na gider
 mno_talk_to_castle_commander|{s61} kışlasını ziyaret et.
 mno_speak_with_elder| {s6} ile konuş
 ; mno_town_ask|Ask around for persons of import...
+; mno_player_initiate_siege|Attack the {reg6?town:castle}...
 mno_isengard_underground|Yeraltı magaralarına git.
 mno_isengard_underground_door|Yeraltı magaralarına git
 mno_tirith_toplevel|Zirveye tırman.
@@ -349,6 +349,16 @@ mno_explore|Etrafı keşfet
 menu_ring_hunter_lair|^^^^Yüzük avcılarının izini Kuyutormanı'nın içinden takip ettin ve {s1}'e vardın. Bir sandıkla gitmeye hazırlandıklarını görüyorsun.
 mno_attack_lair|Onlara şimdi saldır
 mno_leave_bandit_lair|Şimdilik ayrıl
+; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
+; mno_go_with_the_raftmen|Take the raft to Dorwinion
+; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
+mno_ride_to_dorwinion_next|Sonraki...
+; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
+; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
+; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
+; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
+; mno_bandit_fortress_spirits|Go talk with the spirits.
+mno_leave_amath_dollen_fortress|Şimdilik ayrıl
 menu_gondor_reinforcement_event|^^^^^Gondor işaret ateşleri hazır, Minas Tirith yardım çagrısı yapıyor!^^Güney topraklarının lordları gelecek olan karanlıga karşı Ak Şehri savunmak için kuzeye ilerliyor.
 mno_gondor_reinforcement_event_close|Kapat
 menu_gondor_beacons|Bir zamanlar kuzeyden güney Gondor'a tehlike sinyali veren Gondor işaret kulelerinden biri {s1} bakıyorsun.
@@ -362,6 +372,7 @@ mno_player_added_to_allow_follow_close|Kapat
 menu_center_besieged_event|^^^^^{s1}'in {s3}'ten {s2} tarafından kuşatıldıgını bildiren bir ulak geldi.
 mno_center_besieged_event_close|Kapat
 menu_guardian_party_spawned|^^^^^Gözcüler {s6} 'in  {s7} yakınlarında başkenti son bir kere savunmak amacıyla büyük bir ordu topladıgını rapor ediyor.
+mno_guardian_party_spawned_close|Kapat
 mno_intro_next|Devam et...
 mno_start_defend_caravan|Karavanı Savun!
 mno_start_raid_caravan|Karavanı Yagmala!
@@ -391,7 +402,6 @@ mno_leave_refugees|Onları şimdilik bırakın...
 mno_evil_war_tut_continue|Devam et...
 menu_alternate_training_fight|{reg5} Düşmanla yüzleşeceksin. Hazır mısın?
 mno_training_continue|Egitime başla...
-menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Tekrar dene...
 mno_alternate_training_finish|Arenadan ayrıl...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Tarafını ve avantajını seç:
@@ -415,7 +425,7 @@ mno_cb_mordor3|Haradrim
 mno_cb_mordor4|Dogulular
 mno_cb_mordor5|Moria
 mno_cb_mordor6|Gundabad
-mno_cb_mordor7| Rhun
+; mno_cb_mordor7|Rhûn
 mno_cb_mordor8|Korsanlar
 mno_rescue_mission|Gecenin yardımıyla büyücünün sıgınagına sız.
 mno_next_rescue_scene_door|İleri marş!
@@ -437,7 +447,6 @@ mno_leave_pyre|Kremasyon alanını terket.
 menu_town_ruins|{s1} 'in {s2} oldupunu görmek için yaklaştıgında..
 mno_ruin_menu_0|Etrafı keşfet.
 mno_ruin_leave|Ayrıl...
-menu_premutiny|hiçbirşey
 menu_death|Öldürüldün. Savaş devam etse bile artık onun bir parçası degilsin.
 menu_animal_ambush|Yoldaşlarınla birlikte kendinizi grubunuzdan izole edilmiş olarak buluyorsunuz ve aniden...
 menu_animal_ambush_success|Tıpkı ekinlerin oraga boyun egdigi gibi, {s2}'de sana {reg0?egiliyor:egiliyorlar}! Çok geçmeden tüm saldırganlar yerde yatıyor, yaralı ya da ölü. {s3}
@@ -457,3 +466,4 @@ mno_scene9|Küçük orman (file scn custom 9.sco)
 mno_back_3dot|Geri...
 mno_back|Geri dön
 mno_next|Sonraki...
+; mno_previous|Previous...

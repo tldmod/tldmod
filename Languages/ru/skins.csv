@@ -13,7 +13,6 @@ skinkey_nose_width|Ширина носа
 skinkey_nose_size|Размер носа
 skinkey_nose_shape|Форма носа
 skinkey_nose_bridge|Переносица 
-
 skinkey_eye_width|Ширина глаз
 skinkey_eye_to_eye_dist|Расстояние между глазами 
 skinkey_eye_shape|Форма глаз 
@@ -22,7 +21,6 @@ skinkey_eyelids|Веки
 skinkey_cheeks|Щёки
 skinkey_cheek_bones|Скулы
 skinkey_eyebrow_height|Высота бровей 
-
 skinkey_eyebrow_shape|Форма бровей 
 skinkey_temple_width|Форма головы
 skinkey_face_depth|Рельеф лица 
@@ -44,3 +42,5 @@ skinkey_frawn|Угрюмость
 skinkey_mouth_vert_pos|Расположение рта 
 skinkey_mouth_to_nose_dist|Расстояние от рта до носа
 skinkey_chin_width|Ширина подбородка
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

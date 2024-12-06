@@ -13,7 +13,6 @@ skinkey_nose_width|ความกว้างของจมูก
 skinkey_nose_size|ขนาดของจมูก
 skinkey_nose_shape|รูปร่างของจมูก
 skinkey_nose_bridge|ปีกจมูก
-
 skinkey_eye_width|ความกว้างตา
 skinkey_eye_to_eye_dist|ระยะห่างของตา
 skinkey_eye_shape|รูปร่างตา
@@ -22,7 +21,6 @@ skinkey_eyelids|เปลือกตา
 skinkey_cheeks|แก้ม
 skinkey_cheek_bones|กระดูกส่วนแก้ม
 skinkey_eyebrow_height|ความสูงคิ้ว
-
 skinkey_eyebrow_shape|รูปร่างคิ้ว
 skinkey_temple_width|ความกว้าหน้าผาก
 skinkey_face_depth|ความลึกของใบหน้า
@@ -44,3 +42,5 @@ skinkey_frawn|รูปร่างหน้าผาก
 skinkey_mouth_vert_pos|ตำแหน่งของปากตามแนวตั้ง
 skinkey_mouth_to_nose_dist|ระยะห่างระหว่างจมูกและปาก
 skinkey_chin_width|ความกว้างคาง
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

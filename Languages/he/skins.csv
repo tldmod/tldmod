@@ -13,7 +13,6 @@ skinkey_nose_width|רוחב האף
 skinkey_nose_size|גודל האף
 skinkey_nose_shape|צורת האף 
 skinkey_nose_bridge|גשר האף
-
 skinkey_eye_width|רוחב העניים
 skinkey_eye_to_eye_dist|המרחק בין העניים
 skinkey_eye_shape|צורת העין
@@ -22,7 +21,6 @@ skinkey_eyelids|עפעפיים
 skinkey_cheeks|לחיים 
 skinkey_cheek_bones|עצמות הלחיים 
 skinkey_eyebrow_height|גובהם של הגבות 
-
 skinkey_eyebrow_shape|צורת הגבות 
 skinkey_temple_width|רוחב הרקה 
 skinkey_face_depth|עומק הפנים
@@ -44,3 +42,5 @@ skinkey_eye_slant|אלכסון העין
 ; skinkey_mouth_vert_pos|Mouth Vert Pos
 ; skinkey_mouth_to_nose_dist|Mouth to Nose Dist
 skinkey_chin_width|רוחב הסנטר 
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

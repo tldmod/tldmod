@@ -13,7 +13,6 @@ skinkey_nose_width|Orr szélessége
 skinkey_nose_size|Orr mérete
 skinkey_nose_shape|Orr formája
 skinkey_nose_bridge|Orr nyerge
-
 skinkey_eye_width|Szem magassága
 skinkey_eye_to_eye_dist|Szemek közti távolság
 skinkey_eye_shape|Szem formája
@@ -22,7 +21,6 @@ skinkey_eyelids|Szemhéjak
 skinkey_cheeks|Arcok
 skinkey_cheek_bones|Arccsontok
 skinkey_eyebrow_height|Szemöldökök magassága
-
 skinkey_eyebrow_shape|Szemöldökök formája
 skinkey_temple_width|Halánték szélessége
 skinkey_face_depth|Arc mélysége
@@ -44,3 +42,5 @@ skinkey_frawn|Ráncosság
 skinkey_mouth_vert_pos|Száj függőleges görbülete
 skinkey_mouth_to_nose_dist|Száj és orr közti távolság
 skinkey_chin_width|Áll magassága
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

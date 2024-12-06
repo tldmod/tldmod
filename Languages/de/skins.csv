@@ -13,7 +13,6 @@ skinkey_nose_width|Nasenbreite
 skinkey_nose_size|Nasengröße
 skinkey_nose_shape|Nasenform
 skinkey_nose_bridge|Nasenrücken
-
 skinkey_eye_width|Augenbreite
 skinkey_eye_to_eye_dist|Augenabstand
 skinkey_eye_shape|Augenform
@@ -22,7 +21,6 @@ skinkey_eyelids|Augenlider
 skinkey_cheeks|Wangen
 skinkey_cheek_bones|Wangenknochen
 skinkey_eyebrow_height|Augenbrauenhöhe
-
 skinkey_eyebrow_shape|Augenbrauenform
 skinkey_temple_width|Schläfenbreite
 skinkey_face_depth|Gesichtstiefe
@@ -44,3 +42,5 @@ skinkey_frawn|Stirn
 skinkey_mouth_vert_pos|vertikale Mundposition
 skinkey_mouth_to_nose_dist|Abstand Mund-Nase
 skinkey_chin_width|Kinnbreite
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

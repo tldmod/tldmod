@@ -5,7 +5,10 @@ mno_faction_intros|Leer over de verschillende facties van Midden Aarde.
 mno_go_bback|Ga Terug
 menu_start_phase_2|^^^^^             Midden Aarde. Een schaduw is groeiende in het Oosten,^              en donkere zaken komen naar voren die lang zijn verborgen.^            De vrije mensheid bereidt zich voor op oorlog, wat lange tijd niet is gezien. ^           Mensen, Elven, Dwergen en Orks; allen zullen zij hun eigen rol spelen.^^        Welke rol, blijft echter nog te bezien...
 mno_go_forth|Ga heen op jouw gekozen pad...
+; mno_change_war_start_mode|War Starts:  {s7}
+; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|Verander TLD opties.
+; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^^Kies je scenario:
 mno_custom_battle_scenario_1|Schermutseling, Gondor facties vs Harad
 mno_custom_battle_scenario_12|Kies facties voor gevecht
@@ -35,7 +38,6 @@ mno_view_upkeep_costs|Bekijk onderhoudskosten.
 mno_view_character_report|Bekijk karakter verslag.
 mno_view_party_size_report|Bekijk partij grootte verslag.
 mno_view_morale_report|Bekijk partij moraal verslag.
-mno_view_character_report_02|NPC statuscontrole
 mno_view_faction_strengths_report|Bekijk factie sterkte verslag.
 mno_view_traits_report|Bekijk eigenschappen.
 mno_resume_travelling|Hervat reizen.
@@ -47,7 +49,6 @@ mno_continue_dot|Vervolgen.
 menu_custom_battle_durin_end|^^^^^^Het was aan admirable laatste stand maar toch verdoemd.^^ Jij en je manschappen doodde {reg5} vijanden.^Persoonlijk heb jij {reg7} vijanden gedood.
 mno_replay_cbd|Speel dit gevecht opnieuw.
 mno_continue_dot_cbd|Vervolgen
-mno_dot_go_back|. Ga terug
 menu_start_good|^^^^^^^^^^Kies jouw ras:
 mno_start_ma|MENS
 mno_start_el|ELF
@@ -110,10 +111,8 @@ mno_start_2_far|Verre Harad Stamlid
 menu_start_numenorean|^^^^^^^Jij ben een Zwarte Numenoreaan, ^gezworen de duisternis en Morgoth te helpen.^Selecteer waar jij het Oog dient
 mno_start_1_bn|Naast de Mond van Sauron, in MORANNON
 mno_start_2_bn|In het Kasteel van Dodenbezweerder, DOL GULDUR 
-menu_choose_gender|^^^^^^^^^^Jouw geslacht?
 mno_start_male|Man
 mno_start_female|Vrouw
-mno_proc|Ga door zoals gewoonlijk
 menu_start_as_one|^^^^^^^^^Wat voor soort Soldaat ben je?
 mno_start_default|Wordt een{s23} (Standaard)
 mno_start_up1|Wordt een {s21} (Makkelijk)
@@ -127,8 +126,8 @@ mno_camp_action|Gebruik een object.
 mno_camp_wait_here|Wacht hier voor enige tijd.
 mno_camp_options|Verander TLD opties.
 mno_Dev_Menu|Ontwikkelaars Menu
-menu_dev_menu|Er zijn Ontwikkelaars Opties die jou toegang geven tot een selectie aan opties die de werking van het spel veranderen.^^Pas wel op, dit kan leidden naar gebeurtenissen, 'triggers', en veranderingen aan jouw huidige campagne die mogelijk spel-brekend zijn.^^ Gebruik het op eigen risico! ^^Wanneer je fouten in het spel tegenkomt en dit meld, zeg er dan bij dat je gebruik maakt van het Ontwikkelaars Menu.
-mno_Cheat_enable|Activeer cheat/modding opties.
+; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_cheat_enable|Activeer cheat/modding opties.
 menu_game_options|^^^^^^^^Klik op een optie om te schakelen:
 mno_game_options_war_level_start|Oorlog start bij Level: {s1} 
 mno_game_options_restrict_items|Beperkte speler uitrusting: {s7}
@@ -160,8 +159,8 @@ mno_strat_tweaks_siege_reqs|Belegering sterkte-eisen: {s7}
 mno_strat_tweaks_siege_relax_rate|Belegering strk. eis. ontspanning snelheid: {reg1}
 mno_strat_tweaks_regen_rate|Kracht regeneratie snelheid: {s7}
 mno_strat_tweaks_siege_regen_limit|Factie kracht regenereed langzamer bij: {reg1}
-mno_strat_tweaks_influence_gain_rate|Influentie steigings snelheid {s7}
-mno_strat_tweaks_rank_gain_rate|Stand steigings snelheid: {s7}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
 mno_strat_tweaks_back|Terug naar het aanpassings menu.
 menu_camp_action|^^^^^^^^^      Welk object?
 mno_camp_drink_water|Drink het Ent Water!
@@ -255,12 +254,12 @@ menu_besiegers_camp_with_allies|{s1} wordt nog altijd belegerd. De banieren van 
 mno_talk_to_siege_commander|Dien verzoek in voor een gesprek met de commandant.
 mno_join_siege_with_allies|Sluit aan bij de volgende aanval.
 mno_join_siege_stay_back|Beveel je soldaten om zich aan te sluiten bij de volgende aanval zonder jou
-menu_moria_must_escape|^^Het boek lijkt een verslag te zijn over de laatste poging van de dwerven om zich terug in Moria te vesten. Een poging die blijkelijk eindigde in een gruwelijke dood voor allen die betrokken waren. Door het boek te lezen, ontdek je bij toeval de woorden 'puur zilver'! Door de bladzijdes aandachtig te bestuderen realiseer je dat het omschrijvingen zijn van de schatten toebehorend aan de dwergen, dieper de veste in. Hah! Zou het niet geweldig zijn, om de lang verloren schatten van de dwergen, terug te vinden? ^Gierig volg je de aanwijzingen op, je loopt een nauwe, smalle kronkelige tunnel in, die alsmaar dieper en dieper naar beneden gaat... ^...^Na een paar uur van zoeken zonder enig resultaat, kom je tot het besef dat je nu verdwaald bent in de dieptes van Moria, en haastig op zoek moet naar een weg uit.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Vind jouw weg naar buiten!
 menu_castle_outside|Je bevind je buiten {s2}.{s11} {s3} {s4}
-mno_moria_enter|Keer terug naar de Hoofdhal van Moria via de geheime ingang
-mno_moria_enter_door|Treed Moria binnen.
 mno_cheat_steal_book_door|Verkrijg het boek
+; mno_moria_enter|Return into main hall of Moria through the secret entrance
+mno_moria_enter_door|Treed Moria binnen.
 mno_castle_start_siege|Begin met het belegeren van {reg6?town:castle}.
 mno_castle_leave|Ga weg.
 menu_castle_besiege|Je bent {s1} aan het belegeren. {s2} {s3}
@@ -305,6 +304,7 @@ mno_talk_to_healer|Praat met {s40}.
 mno_talk_to_castle_commander|Bezoek de barakken van {s61}.
 mno_speak_with_elder|Spreek met de {s6}.
 mno_town_ask|Vraag naar personen die belanger...
+; mno_player_initiate_siege|Attack the {reg6?town:castle}...
 mno_isengard_underground|Ga naar de ondergrondse grotten.
 mno_isengard_underground_door|Ga naar de ondergrondse grotten
 mno_tirith_toplevel|Klim naar het hoogste niveau.
@@ -349,6 +349,16 @@ mno_explore|Verken deze plaats.
 menu_ring_hunter_lair|^^^^Je hebt het spoor van de Ringjagers door Demsterwold gevolgd en je bent aan de {s1} gekomen. Je ziet hen zich voorbereiden om te vertrekken met een kist.
 mno_attack_lair|Val hen nu aan.
 mno_leave_bandit_lair|Vertrek momenteel.
+; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
+; mno_go_with_the_raftmen|Take the raft to Dorwinion
+; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
+mno_ride_to_dorwinion_next|Volgende...
+; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
+; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
+; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
+; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
+; mno_bandit_fortress_spirits|Go talk with the spirits.
+mno_leave_amath_dollen_fortress|Vertrek momenteel.
 menu_gondor_reinforcement_event|^^^^^^De Bakens van Gondor zijn aangestoken, Minas Tirith vraagt om hulp!^^De Heren van de zuide leengoeden zullen nu naar het noorden marcheren om de Grote Witte Stad te verdedigen tegen de Duisternis.
 mno_gondor_reinforcement_event_close|Sluiten
 menu_gondor_beacons|Je kijkt op naar {s1}, een van de waarschuwings bakens van Gondor, gebruikt om alarm te slaan in Noord en Zuid Gondor
@@ -362,6 +372,7 @@ mno_player_added_to_allow_follow_close|Sluiten
 menu_center_besieged_event|^^^^^Een boodschapper is geariveerd en verteld dat {s1} is belegerd door {s2} en {s3}
 mno_center_besieged_event_close|Sluiten
 menu_guardian_party_spawned|^^^^^Verkenners rapporteren dat {s6} een groote leger in de buurt van {s7} hebben gezien, in een laatste poging om hun hoofdstad te verdedigen.
+mno_guardian_party_spawned_close|Sluiten
 mno_intro_next|Vervolgen...
 mno_start_defend_caravan|Verdedig de Karavaan!
 mno_start_raid_caravan|Plunder de Karavaan!
@@ -391,7 +402,6 @@ mno_leave_refugees|Laat hun voor nu...
 mno_evil_war_tut_continue|Vervolgen...
 menu_alternate_training_fight|Je zal {reg5} aanvallen. Ben je voorbereid?
 mno_training_continue|Begin training...
-menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Probeer opnieuw...
 mno_alternate_training_finish|Verlaat de arena...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Kies een kant en voordeel:
@@ -415,7 +425,7 @@ mno_cb_mordor3|Haradrim
 mno_cb_mordor4|Oosterlingen
 mno_cb_mordor5|Moria
 mno_cb_mordor6|Gundabad
-mno_cb_mordor7|Rhun
+; mno_cb_mordor7|Rhûn
 mno_cb_mordor8|Piraten
 mno_rescue_mission|Ga stiekem in het hol van de tovenaar onder dekking van de nacht.
 mno_next_rescue_scene_door|Verder doorgaan!
@@ -437,7 +447,6 @@ mno_leave_pyre|Verlaat de brandstapel.
 menu_town_ruins|Wanneer je nadert, zie je dat {s1} is {s2}
 mno_ruin_menu_0|Verken de plaats.
 mno_ruin_leave|Ga weg...
-menu_premutiny|Geen
 menu_death|Je bent gedood, Hoewel de oorlog nog steeds woedt, zal je er niet langer een deel van uitmaken.
 menu_animal_ambush|U en uw gezelschap zijn gescheiden van de rest van uw partij, wanneer plotseling...
 menu_animal_ambush_success|De {s2} {reg0?fall:falls} Valt voor je als een tarwe aan ene zeis! Al snel liggen al uw aanvallers op de vloer, dood of gewond. {s3}
@@ -457,3 +466,4 @@ mno_scene9|Bos Klein (file scn custom 9.sco)
 mno_back_3dot|Terug...
 mno_back|Ga terug.
 mno_next|Volgende...
+; mno_previous|Previous...

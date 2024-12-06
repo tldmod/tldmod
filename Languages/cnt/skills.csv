@@ -3,7 +3,7 @@ skl_trade_desc|能夠更好地與鐵匠和補給官合作，使他們提供更�
 skl_leadership|統御
 ; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|俘虜管理
-skl_prisoner_management_desc|每點增加俘虜上限%d。(領袖技能)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
 skl_persuasion|綠野仙蹤
 skl_persuasion_desc|在荒野中生存並將其轉為助力的能力。這個技能影響隊伍在樹林中躲避敵人的能力和移動速度。 (隊伍技能)
 skl_engineer|-----

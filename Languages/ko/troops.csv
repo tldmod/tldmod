@@ -1,5 +1,3 @@
-trp_unarmed_troop|비무장 부대
-trp_unarmed_troop_pl|비무장 부대
 trp_tutorial_maceman|철퇴병
 trp_tutorial_maceman_pl|철퇴병
 trp_tutorial_archer|궁수
@@ -766,72 +764,66 @@ trp_c4_mordor_num_horseman|검은 누메노르 기병
 trp_c4_mordor_num_horseman_pl|검은 누메노르 기병
 trp_c5_mordor_num_knight|검은 누메노르 정예 기병
 trp_c5_mordor_num_knight_pl|검은 누메노르 정예 기병
-trp_noldorin_commander|놀도르 지휘관
-trp_noldorin_commander_pl|놀도르 지휘관
-trp_elf_captain_of_lothlorien|로스로리엔 요정 대장
-trp_elf_captain_of_lothlorien_pl|로스로리엔 요정 대장
-trp_lothlorien_lieutenant|로스로리엔 부관
-trp_lothlorien_lieutenant_pl|로스로리엔 부관
-trp_elf_captain_of_mirkwood|초록숲 요정 대장
-trp_elf_captain_of_mirkwood_pl|초록숲 요정 대장
-trp_mirkwood_lieutenant|초록숲 부관
-trp_mirkwood_lieutenant_pl|초록숲 부관
-trp_elf_captain_of_rivendell|리븐델 요정 대장
-trp_elf_captain_of_rivendell_pl|리븐델 요정 대장
-trp_rivendell_lieutenant|리븐델 부관
-trp_rivendell_lieutenant_pl|리븐델 부관
-trp_lieutenant_of_rohan|로한 부관
-trp_lieutenant_of_rohan_pl|로한 부관
-trp_captain_of_rohan|로한 대장
-trp_captain_of_rohan_pl|로한 대장
-trp_high_captain_of_rohan|로한 고위 대장
-trp_high_captain_of_rohan_pl|로한 고위 대장
-trp_lieutenant_of_isengard|아이센가드 부관
-trp_lieutenant_of_isengard_pl|아이센가드 부관
-trp_captain_of_isengard|아이센가드 대장
-trp_captain_of_isengard_pl|아이센가드 대장
-trp_high_captain_of_isengard|아이센가드 고위 대장
-trp_high_captain_of_isengard_pl|아이센가드 고위 대장
-trp_lieutenant_of_mordor|모르도르 부관
-trp_lieutenant_of_mordor_pl|모르도르 부관
-trp_captain_of_mordor|모르도르 대장
-trp_captain_of_mordor_pl|모르도르 대장
-trp_high_captain_of_mordor|모르도르 고위 대장
-trp_high_captain_of_mordor_pl|모르도르 고위 대장
-trp_easterling_chieftain|바리아그 족장
-trp_easterling_chieftain_pl|바리아그 족장
-trp_easterling_lieutenant|바리아그 전쟁 사제
-trp_easterling_lieutenant_pl|바리아그 전쟁 사제
-trp_harad_chieftain|하라드 부족장
-trp_harad_chieftain_pl|하라드 부족장
-trp_harad_lieutenant|하라드 부관
-trp_harad_lieutenant_pl|하라드 부관
-trp_black_numenorean_captain|검은 누메노르 대장
-trp_black_numenorean_captain_pl|검은 누메노르 대장
-trp_black_numenorean_lieutenant|검은 누메노르 부관
-trp_black_numenorean_lieutenant_pl|검은 누메노르 대장
-trp_a5_dun_night_wolf|던랜드 밤늑대
-trp_a5_dun_night_wolf_pl|던랜드 밤늑대
-trp_dunnish_lieutenant|던랜드 단장
-trp_dunnish_lieutenant_pl|던랜드 단장
-trp_goblin_chieftain|고블린 부족장
-trp_goblin_chieftain_pl|고블린 부족장
-trp_captain_of_gondor|곤도르 대장
-trp_captain_of_gondor_pl|곤도르 대장
-trp_nobleman|귀족
-trp_nobleman_pl|귀족
-trp_gondor_agent|곤도르 요원
-trp_gondor_agent_pl|곤도르 요원
-trp_rohan_agent|로한 요원
-trp_rohan_agent_pl|로한 요원
-trp_mordor_agent|모르도르 요원
-trp_mordor_agent_pl|모르도르 요원
-trp_isengard_agent|아이센가드 요원
-trp_isengard_agent_pl|아이센가드 요원
-trp_looter|약탈자
-trp_looter_pl|약탈자
-trp_bandit|도적
-trp_bandit_pl|도적
+; trp_greenwood_captain|Greenwood Captain
+; trp_greenwood_captain_pl|Greenwood Captains
+; trp_lorien_captain|Lothlorien Captain
+; trp_lorien_captain_pl|Lothlorien Captains
+; trp_riv_captain|Rivendell Elf Lord
+; trp_riv_captain_pl|Rivendell Elf Lords
+; trp_arnor_captain|Captain of Arnor
+; trp_arnor_captain_pl|Captains of Arnor
+; trp_arnor_ranger_captain|Ranger Captain of Arnor
+; trp_arnor_ranger_captain_pl|Ranger Captains of Arnor
+trp_rohan_captain|로한 대장
+trp_rohan_captain_pl|로한 대장
+; trp_beorning_captain|Beorning Chieftain
+; trp_beorning_captain_pl|Beorning Chieftains
+; trp_woodmen_captain|Woodmen Chieftain
+; trp_woodmen_captain_pl|Woodmen Chieftains
+trp_isen_captain|아이센가드 대장
+trp_isen_captain_pl|아이센가드 대장
+; trp_isen_tracker_captain|Isengard Tracker Captain
+; trp_isen_tracker_captain_pl|Isengard Tracker Captains
+trp_mordor_uruk_captain|모르도르 우루크 대장
+; trp_mordor_uruk_captain_pl|Mordor Uruk Captains
+trp_mordor_captain|모르도르 대장
+trp_mordor_captain_pl|모르도르 대장
+trp_umbar_captain|움바르의 대장
+; trp_umbar_captain_pl|Captains of Umbar
+; trp_khand_captain|Variag War Chief
+; trp_khand_captain_pl|Variag War Chiefs
+; trp_rhun_captain|Rhun Chieftain
+; trp_rhun_captain_pl|Rhun Chieftains
+; trp_moria_captain|Uruk Chieftain of Moria
+; trp_moria_captain_pl|Uruk Chieftains of Moria
+; trp_dwarf_captain|Dwarf Captain
+; trp_dwarf_captain_pl|Dwarf Captains
+trp_dale_captain|너른골 대장
+; trp_dale_captain_pl|Captains of Dale
+; trp_harad_captain|Haradrim Noble
+; trp_harad_captain_pl|Haradrim Nobles
+trp_a5_dun_night_wolf2|던랜드 밤늑대
+trp_a5_dun_night_wolf2_pl|던랜드 밤늑대
+trp_dun_captain|던랜드 단장
+trp_dun_captain_pl|던랜드 단장
+; trp_gunda_captain|Gundabad Chieftain
+; trp_gunda_captain_pl|Gundabad Chieftains
+trp_gondor_captain|곤도르 대장
+trp_gondor_captain_pl|곤도르 대장
+trp_pel_captain|펠라르기르 대장
+trp_pel_captain_pl|펠라르기르 대장
+; trp_amroth_captain|Knight Captain of Dol Amroth
+; trp_amroth_captain_pl|Knights Captain of Dol Amroth
+trp_lam_captain|라메돈 대장
+trp_lam_captain_pl|라메돈 대장
+trp_loss_captain|롯사르나흐 대장
+trp_loss_captain_pl|롯사르나흐 대장
+trp_pinnath_captain|피나스 겔린 대장
+trp_pinnath_captain_pl|피나스 겔린 전사
+; trp_blackroot_captain|Captain of Blackroot Vale
+; trp_blackroot_captain_pl|Captains of Blackroot Vale
+trp_ithilien_captain|이실리엔 순찰자 대장
+trp_ithilien_captain_pl|이실리엔 순찰자 대장
 trp_brigand|노상강도
 trp_brigand_pl|노상강도
 trp_mountain_bandit|산적
@@ -865,17 +857,11 @@ trp_messenger_orc_pl|전령
 trp_messenger_evil_man|전령
 trp_messenger_evil_man_pl|전령
 trp_town_walker_1|마을 남자
-trp_town_walker_1_pl|마을 남자들
 trp_town_walker_2|마을 여자
-trp_town_walker_2_pl|마을 여자들
 trp_village_walker_1|마을 사람
-trp_village_walker_1_pl|마을 사람들
 trp_village_walker_2|마을 사람
-trp_village_walker_2_pl|마을 사람들
 trp_spy_walker_1|마을 남자
-trp_spy_walker_1_pl|마을 남자들
 trp_spy_walker_2|마을 여자
-trp_spy_walker_2_pl|마을 여자들
 trp_walker_man_gondor_black|마을 남자
 trp_walker_man_gondor_white|마을 남자
 trp_walker_man_gondor_blue|마을 남자
@@ -991,11 +977,11 @@ trp_knight_1_5|두이니르
 trp_knight_1_6|"공정한" 힐루인
 trp_knight_1_7|파라미르
 trp_knight_1_8|"뚱뚱한" 포를롱
-trp_knight_1_9|그림볼드
+; trp_knight_1_9|Theodred
 trp_knight_1_10|에르켄브란드
 trp_knight_1_11|엘프헬름
 trp_knight_1_12|하마
-trp_knight_1_13|감링
+trp_knight_1_13|그림볼드
 trp_knight_1_14|에오메르
 trp_knight_1_15|우글룩
 trp_knight_1_16|마후르
@@ -1375,7 +1361,7 @@ trp_elder_edoras|에도라스 관리자
 trp_elder_edoras_pl|도시
 trp_elder_aldburg|알드버그 관리자
 trp_elder_aldburg_pl|마을
-trp_elder_hornburg|혼버그 관리자
+trp_elder_hornburg|감링
 trp_elder_hornburg_pl|요새
 trp_elder_eastemnet|동 엠넷 관리자
 trp_elder_eastemnet_pl|마을
@@ -1391,7 +1377,7 @@ trp_elder_mmorgul|모르굴 족장
 trp_elder_mmorgul_pl|불길한 도시
 trp_elder_cungol|야영지 대장
 trp_elder_cungol_pl|야영지
-trp_elder_isengard|뱀혓바닥 그리마
+; trp_elder_isengard|Isengard Overseer
 trp_elder_isengard_pl|도시
 trp_elder_cgaladhon|현자 로리엔
 trp_elder_cgaladhon_pl|요정족 숲속 요새
@@ -1482,30 +1468,20 @@ trp_tax_rebel_pl|농민 반란군
 trp_trainee_peasant|농민
 trp_trainee_peasant_pl|농민
 trp_fugitive_man|수상한 인간
-trp_fugitive_man_pl|수상한 인간
 trp_fugitive_elf|수상한 요정
-trp_fugitive_elf_pl|수상한 요정들
 trp_fugitive_dwarf|수상한 난쟁이
-trp_fugitive_dwarf_pl|수상한 난쟁이족들
 trp_fugitive_orc|수상한 오르크
-trp_fugitive_orc_pl|수상한 오르크
 trp_spy|교활한 눈매의 해적
-trp_spy_pl|교활한 눈매의 해적
 trp_spy_evil|교활한 눈매의 남부인
-trp_spy_evil_pl|교활한 눈매의 남부인
 trp_spy_partner|첩보 담당자
-trp_spy_partner_pl|첩보 담당자
 trp_spy_partner_evil|첩보 담당자
-trp_spy_partner_evil_pl|첩보 담당자
 trp_easter_egg_troll|트롤
 trp_treebeard|나무수염
 trp_ent_1|브레갈라드
 trp_ent_2|핑글라스
 trp_ent_3|플라드리프
 trp_gandalf|간달프
-trp_gandalf_pl|집에서 자란 간달프
 trp_nazgul|나즈굴
-trp_nazgul_pl|길들여진 나즈굴
 ; trp_radagast|Radagast
 trp_barman|술집 주인
 trp_elder|중앙 장로
@@ -1516,14 +1492,11 @@ trp_dorwinion_bandit|도르위니온 도적
 trp_dorwinion_bandit_pl|도르위니온 도적
 trp_dorwinion_raider|도르위니온 약탈자
 trp_dorwinion_raider_pl|도르위니온 약탈자
+trp_no_troop_pl|그 장소에
 trp_city_guard|도시 경비병
-trp_city_guard_pl|도시 경비병
 trp_orc_sentry|오르크 경비병
-trp_orc_sentry_pl|오르크 경비병
 trp_uruk_hai_sentry|우르크-하이 경비병
-trp_uruk_hai_sentry_pl|우르크-하이 경비병
 trp_black_numenorean_sorcerer|검은 누메노르 주술사
-trp_black_numenorean_sorcerer_pl|검은 누메노르 주술사
 ; trp_evil_priest|Evil Priest
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|어둠숲 늑대기수
@@ -1559,8 +1532,19 @@ trp_start_quest_mordor_scout|모르도르 안내인
 trp_start_quest_mordor_scout_pl|모르도르 안내인
 trp_start_quest_beorning|베오른 망루 광전사
 trp_start_quest_beorning_pl|베오른 망루 광전사
+; trp_black_shield|Amath Dollen
+; trp_black_shield_bandit|Amath Dollen's Bandit
+; trp_black_shield_bandit_pl|Amath Dollen's Bandits
+; trp_black_shield_scout|Amath Dollen's Scout
+; trp_black_shield_scout_pl|Amath Dollen's Scouts
+; trp_black_shield_guard|Amath Dollen's Guard
+; trp_black_shield_guard_pl|Amath Dollen's Guards
+; trp_dorwinion_spirit_leader|Spirit
+; trp_dorwinion_spirit|Lesser Spirit
 trp_i6_beorning_bear_warrior|곰 전사
 trp_i6_beorning_bear_warrior_pl|곰 전사
+trp_a5_dun_night_wolf|던랜드 밤늑대
+trp_a5_dun_night_wolf_pl|던랜드 밤늑대
 trp_morannon_healer|"치유자" 오크스툭
 trp_minas_tirith_healer|이오레스
 trp_edoras_healer|"치유자" 프레야
@@ -1582,6 +1566,7 @@ trp_c5_rhovanion_noble_pl|로바니온 귀족
 trp_npc18|텀바투
 trp_npc19|하이드렉
 trp_npc20|지구르펠
+; trp_npc21|Berta
 trp_werewolf|웨어울프
 trp_werewolf_pl|웨어울프
 trp_moria_troll|동굴 트롤
@@ -1647,3 +1632,5 @@ trp_pippin_notmet|하플링
 trp_merry_notmet|하플링
 trp_pippin|피핀
 trp_merry|메리
+trp_grima|뱀혓바닥 그리마
+trp_grima_pl|도시

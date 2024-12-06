@@ -65,6 +65,10 @@ itm_wargarmored_2b|Obrněný vrk
 itm_wargarmored_2c|Obrněný vrk
 itm_wargarmored_3a|Obrněný vrk
 itm_warg_reward|Obrovský vrk
+; itm_animal_big|Big Animal
+; itm_animal_small|Small Animal
+; itm_troll_weapon_long|Giant Halberd
+itm_troll_weapon_dmg|Velký palcat
 itm_tree_trunk_club_a|Kmen stromu
 itm_giant_mace|Velký palcat
 itm_troll_shield_a|Trolí štít
@@ -130,6 +134,8 @@ itm_harad_javelin|Haradský oštěp
 itm_gondor_javelin|Gondorské kopí
 itm_rohirrim_throwing_axe|Severské vrhací sekery
 itm_loss_throwing_axes|Lossarnašské vrhací sekery
+itm_free_dunedain_helm_a|Arnorská lehká helma
+itm_free_dunedain_helm_b|Arnorská helma
 itm_arnor_helm_c|Arnorská zdobená helma
 itm_arnor_helm_b|Arnorská helma
 itm_arnor_helm_a|Arnorská lehká helma
@@ -433,8 +439,6 @@ itm_dunland_mail_2|Dunlandské brnění
 itm_dun_helm_a|Dunlandská vlčí čapka
 ; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|Dunlandská vysoká čapka
-itm_dun_helm_d|Dunlandská vysoká čapka
-itm_dun_helm_e|Dunlandská helma s parohy
 ; itm_dun_shield_a|Dunnish Roundshield
 ; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|Dunlandský velitelský meč
@@ -539,6 +543,7 @@ itm_desert_boots|Pouštní boty
 ; itm_harad_leather_greaves|Harad Leather Greaves
 itm_harad_scale_greaves|Haradské naholeníky
 ; itm_harad_lamellar_greaves|Harad Splinted Greaves
+; itm_camel|Harad Camel
 itm_khand_inf_helm_a|Khandská Helma
 itm_khand_inf_helm_b|Khandská Helma
 itm_khand_inf_helm_c1|Khandská helma
@@ -590,6 +595,7 @@ itm_rhun_helm_chieftain|Rhůnská náčelnická helma
 itm_rhun_helm_pot|Rhůnská kulatá helma
 itm_rhun_helm_barbed|Rhunská helma
 itm_rhun_helm_round|Rhunská kulatá helma
+itm_rhun_helm_horde|Rhůnská klanová helma
 itm_rhun_helm_leather|Rhunská kožená helma
 itm_rhun_warpick|Rhunský válečný krumpáč
 itm_rhun_greataxe|Rhůnská velká sekera
@@ -700,7 +706,7 @@ itm_dwarf_helm_round|Trpasličí oválná helma
 itm_dwarf_helm_sallet|Trpasličí šalíř
 itm_dwarf_armor_d|Těžký kabát Železných hor
 itm_dwarf_armor_a|Ereborský plášť přes zbroj
-itm_leather_dwarf_armor|Trpasličí vycpávaný kabát
+; itm_leather_dwarf_armor|Erebor Padded Coat
 itm_dwarf_armor_b|Ereborská tunika přes zbroj
 itm_leather_dwarf_armor_b|Trpasličí vycpávaná kožený kabát
 itm_dwarf_armor_c|Ereborská šupinová zbroj
@@ -719,7 +725,6 @@ itm_gondor_lance_banner|Gondorské kopí s praporem
 itm_amroth_lance_banner|Dol Armothské kopí s praporem
 itm_rohan_lance_banner_sun|Rohanské kopí se slunečním praporem
 itm_rohan_lance_banner_horse|Rohanské kopí se koňským praporem
-; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Divná miska s vodou
 itm_map|Mapy Středozemě
 itm_athelas_reward|Sušené lístky Athelasu
@@ -783,9 +788,55 @@ itm_wolf|Vlk
 itm_werewolf|Vlkodlak
 itm_thrush_reward|Drozd
 itm_gauntlets_reward|Železné pěsti
+; itm_gondor_custom|Custom Gondor
 itm_stones_siege|Obléhací kameny
 itm_beorn_axe_no_attack|Meddědovská sekera
-itm_animal_spider|Pavouk
-itm_animal_bear|Medvěd
-itm_animal_wolf|Vlk
-itm_animal_werewolf|Vlkodlak
+; itm_tabard_b_wb|Tabard
+; itm_nobleman_outfit_b_new_wb|Nobleman Outfit
+; itm_peasant_man_a_wb|Peasant Outfit
+itm_leather_jerkin_wb|Krátký kožený kabát
+itm_white_tunic_c_wb|Plášť z tuniky
+; itm_white_tunic_a_wb|White Tunic
+itm_red_tunic_wb|Červená tunika
+itm_fur_coat_wb|Dolský kabát
+; itm_fur_hat_a_new_wb|Fur Hat
+; itm_noel_hat_a_wb|Fur Hat
+; itm_peasant_dress_b_new_wb|Blue Dress
+; itm_sarranid_lady_dress_wb|Blue Dress
+itm_sar_robe_b_wb|Róba
+itm_black_dress_wb|Černé šaty
+itm_blackwhite_dress_wb|Dámské šaty
+itm_white_tunic_b_wb|Jednoduchá tunika
+itm_blue_tunic_wb|Modrá tunika
+itm_black_tunic_wb|Černá tunika
+itm_green_tunic_wb|Zelená tunika
+itm_green_dress_wb|Zelené šaty
+itm_gondor_fine_outfit_dress_wb|Dobrá výstroj
+itm_rohan_fine_outfit_dale_dress_wb|Dobrá výstroj
+itm_robe_generic_dress_wb|Róba
+itm_wimple_a_wb|Rouška
+itm_wimple_with_veil_wb|Rouška
+itm_fine_hat_wb|Dobrá čepice
+; itm_rohan_tunic_a_wb|Rohan Tunic
+; itm_rohan_tunic_b_wb|Rohan Tunic
+itm_denethor_robe|Dobrá výstroj
+; itm_ent_head_helm2|Ent Head
+; itm_ent_head_helm3|Ent Head
+; itm_civilian_hammer|Hammer
+; itm_civilian_woodaxe_1h|Axe
+; itm_civilian_woodaxe_2h|Heavy Axe
+; itm_civilian_war_mattock|Mattock
+; itm_civilian_great_mattock|Mattock
+; itm_civilian_adz|Mattock
+; itm_civilian_pickaxe|Mattock
+; itm_civilian_shovel|Shovel
+; itm_civilian_carry_wood_heap|Fire Wood
+; itm_civilian_carry_wood|Wood
+; itm_civilian_carry_amphora|Amphora
+; itm_civilian_carry_sack|Sack
+; itm_civilian_carry_basket|Basket
+; itm_civilian_carry_honey|Honey
+; itm_civilian_carry_oil|Oil
+; itm_civilian_carry_wood2|Wood
+; itm_work_basket|Basket
+; itm_work_basket_2|Basket

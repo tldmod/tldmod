@@ -65,6 +65,10 @@ itm_wargarmored_2b|Zırhlı Kurt
 itm_wargarmored_2c|Zırhlı Kurt
 itm_wargarmored_3a|Zırhlı Kurt
 itm_warg_reward|Dev Kurt
+; itm_animal_big|Big Animal
+; itm_animal_small|Small Animal
+; itm_troll_weapon_long|Giant Halberd
+itm_troll_weapon_dmg|Devasa Topuz
 itm_tree_trunk_club_a|Agaç Gövdesi
 itm_giant_mace|Devasa Topuz
 itm_troll_shield_a|Troll Kalkanı
@@ -130,6 +134,8 @@ itm_harad_javelin|Harad Ciriti
 itm_gondor_javelin|Gondor Ciriti
 itm_rohirrim_throwing_axe|Kuzeyli Fırlatma Baltaları
 itm_loss_throwing_axes|Lossarnach Fırlatma Baltaları
+; itm_free_dunedain_helm_a|Arnor Light Helm
+itm_free_dunedain_helm_b|Arnor Kasketi
 itm_arnor_helm_c|Arnor Süslenmiş Kasket
 itm_arnor_helm_b|Arnor Kasketi
 ; itm_arnor_helm_a|Arnor Light Helm
@@ -433,8 +439,6 @@ itm_dunland_mail_2|Dunnish Zırh Yelegi
 itm_dun_helm_a|Dunnish Kurt Kepi
 ; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|Dunnish Uzun Migfer
-itm_dun_helm_d|Dunnish Uzun Migfer
-itm_dun_helm_e|Dun Boynuz Migferi
 ; itm_dun_shield_a|Dunnish Roundshield
 ; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|Dunland Kabile Reisi Kılıcı
@@ -539,6 +543,7 @@ itm_desert_boots|Çöl botu
 itm_harad_leather_greaves|Harad Deri Çizmeler
 itm_harad_scale_greaves|Harad Baldır Zırhı
 itm_harad_lamellar_greaves|Harad Çizmesi
+; itm_camel|Harad Camel
 itm_khand_inf_helm_a|Khand Migferi
 itm_khand_inf_helm_b|Khand Migferi
 itm_khand_inf_helm_c1|Khand Kase Migfer
@@ -590,6 +595,7 @@ itm_rhun_helm_chieftain|Rhun Kabile Reisi Migferi
 itm_rhun_helm_pot|Rhun Çanak Migfer
 itm_rhun_helm_barbed|Rhun Dikenli Migferi 
 itm_rhun_helm_round|Rhun Yuvarlak Migferi
+itm_rhun_helm_horde|Rhun Ordu Migferi
 itm_rhun_helm_leather|Rhun Deri Migferi
 itm_rhun_warpick|Rhun Savaş Kazması
 itm_rhun_greataxe|Rhun Büyük Balta
@@ -700,7 +706,7 @@ itm_dwarf_helm_round|Cüce Yuvarlak Migfer
 itm_dwarf_helm_sallet|Cüce Hafif Kask
 itm_dwarf_armor_d|Demir Tepeler Pullu Ceket
 itm_dwarf_armor_a|Erebor Cübbeli Zırh
-itm_leather_dwarf_armor|Cüce Doldurulmuş Ceket
+; itm_leather_dwarf_armor|Erebor Padded Coat
 itm_dwarf_armor_b|Erebor Zırhlı Tunik
 itm_leather_dwarf_armor_b|Cüce Doldurulmuş Deri Yelek
 itm_dwarf_armor_c|Erebor Pullu Zırh
@@ -719,7 +725,6 @@ itm_gondor_lance_banner|Gondor Sancak Mızragı
 itm_amroth_lance_banner|Dol Amroth Sancak Mızragı
 itm_rohan_lance_banner_sun|Rohan Güneş Sancak Mızragı
 itm_rohan_lance_banner_horse|Rohan At Sancak Mızragı
-itm_fur_gloves_reward|Avcı Eldivenleri
 itm_ent_water|Tuhaf Su Kabı
 itm_map|Orta Dünya'nınHaritaları
 itm_athelas_reward|Kurutulmuş Athelas Yaprakları
@@ -783,9 +788,55 @@ itm_wolf|Kurt
 itm_werewolf|Kurtadam
 itm_thrush_reward|Mantar
 itm_gauntlets_reward|Demir Yumruk
+; itm_gondor_custom|Custom Gondor
 itm_stones_siege|Kuşatma Taşları
 itm_beorn_axe_no_attack|Beorning Baltası
-itm_animal_spider|Örümcek
-itm_animal_bear|Ayı
-itm_animal_wolf|Kurt
-itm_animal_werewolf|Kurtadam
+; itm_tabard_b_wb|Tabard
+; itm_nobleman_outfit_b_new_wb|Nobleman Outfit
+; itm_peasant_man_a_wb|Peasant Outfit
+itm_leather_jerkin_wb|Deri Yelek
+itm_white_tunic_c_wb|Tunik Ceket
+; itm_white_tunic_a_wb|White Tunic
+itm_red_tunic_wb|Kırmızı Tunik
+itm_fur_coat_wb|Bol Ceket
+; itm_fur_hat_a_new_wb|Fur Hat
+; itm_noel_hat_a_wb|Fur Hat
+; itm_peasant_dress_b_new_wb|Blue Dress
+; itm_sarranid_lady_dress_wb|Blue Dress
+itm_sar_robe_b_wb|Cübbe
+itm_black_dress_wb|Siyah Elbise
+itm_blackwhite_dress_wb|Kadın Elbisesi
+itm_white_tunic_b_wb|Basic Tunik
+itm_blue_tunic_wb|Mavi Tunik
+itm_black_tunic_wb|Siyah Tunik
+itm_green_tunic_wb|Yeşil Tunik
+itm_green_dress_wb|Yeşil Elbise
+itm_gondor_fine_outfit_dress_wb|Güzel Kıfayet
+itm_rohan_fine_outfit_dale_dress_wb|Güzel Kıfayet
+itm_robe_generic_dress_wb|Cübbe
+itm_wimple_a_wb|Atkı
+itm_wimple_with_veil_wb|Atkı
+itm_fine_hat_wb|Güzel Şapka
+; itm_rohan_tunic_a_wb|Rohan Tunic
+; itm_rohan_tunic_b_wb|Rohan Tunic
+itm_denethor_robe|Güzel Kıfayet
+itm_ent_head_helm2|Ent Kafası
+itm_ent_head_helm3|Ent Kafası
+; itm_civilian_hammer|Hammer
+; itm_civilian_woodaxe_1h|Axe
+; itm_civilian_woodaxe_2h|Heavy Axe
+; itm_civilian_war_mattock|Mattock
+; itm_civilian_great_mattock|Mattock
+; itm_civilian_adz|Mattock
+; itm_civilian_pickaxe|Mattock
+; itm_civilian_shovel|Shovel
+; itm_civilian_carry_wood_heap|Fire Wood
+; itm_civilian_carry_wood|Wood
+; itm_civilian_carry_amphora|Amphora
+; itm_civilian_carry_sack|Sack
+; itm_civilian_carry_basket|Basket
+; itm_civilian_carry_honey|Honey
+; itm_civilian_carry_oil|Oil
+; itm_civilian_carry_wood2|Wood
+; itm_work_basket|Basket
+; itm_work_basket_2|Basket

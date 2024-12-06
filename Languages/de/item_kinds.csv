@@ -65,6 +65,10 @@ itm_wargarmored_2b|Gepanzerter Warg
 itm_wargarmored_2c|Gepanzerter Warg
 itm_wargarmored_3a|Gepanzerter Warg
 itm_warg_reward|Gewaltiger Warg
+; itm_animal_big|Big Animal
+; itm_animal_small|Small Animal
+; itm_troll_weapon_long|Giant Halberd
+itm_troll_weapon_dmg|Gewaltiger Streitkolben
 itm_tree_trunk_club_a|Baumstamm
 itm_giant_mace|Gewaltiger Streitkolben
 itm_troll_shield_a|Trollschild
@@ -130,6 +134,8 @@ itm_harad_javelin|Wurfspeer aus Harad
 itm_gondor_javelin|Wurfspeer aus Gondor
 itm_rohirrim_throwing_axe|Nordmann-Wurfäxte
 itm_loss_throwing_axes|Wurfaxt aus Lossarnach
+itm_free_dunedain_helm_a|Leichter Helm aus Arnor
+itm_free_dunedain_helm_b|Helm aus Arnor
 itm_arnor_helm_c|Verzierter Helm aus Arnor
 itm_arnor_helm_b|Helm aus Arnor
 itm_arnor_helm_a|Leichter Helm aus Arnor
@@ -433,8 +439,6 @@ itm_dunland_chieftain|Häuptlingsrüstung aus Dunland
 itm_dun_helm_a|Wolfskappe aus Dunland
 itm_dun_helm_b|Fellkappe aus Dunland
 itm_dun_helm_c|Hoher Helm aus Dunland
-itm_dun_helm_d|Hoher Helm aus Dunland
-itm_dun_helm_e|Geweihhelm aus Dunland
 itm_dun_shield_a|Rundschild aus Dunland
 itm_dun_shield_b|Ovaler Schild aus Dunland
 itm_dun_berserker|Häuptlingsschwert aus Dunland
@@ -539,6 +543,7 @@ itm_desert_boots|Wüstenstiefel
 itm_harad_leather_greaves|Lederbeinschienen aus Harad
 itm_harad_scale_greaves|Beinschienen aus Harad
 itm_harad_lamellar_greaves|Beinschienen aus Harad
+; itm_camel|Harad Camel
 itm_khand_inf_helm_a|Helm aus Khand
 itm_khand_inf_helm_b|Helm aus Khand
 itm_khand_inf_helm_c1|Rundhelm aus Khand
@@ -590,6 +595,7 @@ itm_rhun_helm_chieftain|Häuptlingshelm aus Rhun
 itm_rhun_helm_pot|Topfhelm aus Rhun
 itm_rhun_helm_barbed|Zackenhelm aus Rhun
 itm_rhun_helm_round|Runder Helm aus Rhun
+itm_rhun_helm_horde|Hordenhelm aus Rhun
 itm_rhun_helm_leather|Lederhelm aus Rhun
 itm_rhun_warpick|Kriegshacke aus Rhun
 itm_rhun_greataxe|Große Axt aus Rhun
@@ -700,7 +706,7 @@ itm_dwarf_helm_round|Zwergische Eisenhaube
 itm_dwarf_helm_sallet|Zwergischer Schaller
 itm_dwarf_armor_d|Schuppenrock aus den Eisenbergen
 itm_dwarf_armor_a|Waffenrock vom Erebor
-itm_leather_dwarf_armor|Zwergischer Polsterrock
+; itm_leather_dwarf_armor|Erebor Padded Coat
 itm_dwarf_armor_b|Ringwams vom Erebor
 itm_leather_dwarf_armor_b|Zwergisches Polsterwams
 itm_dwarf_armor_c|Schuppenrock vom Erebor
@@ -719,7 +725,6 @@ itm_gondor_lance_banner|Lanze mit Banner von Gondor
 itm_amroth_lance_banner|Lanze mit Banner von Dol Amroth
 itm_rohan_lance_banner_sun|Lanze mit Sonnenbanner von Rohan
 itm_rohan_lance_banner_horse|Lanze mit Pferdebanner von Rohan
-itm_fur_gloves_reward|Jagdhandschuhe
 itm_ent_water|Fremdartige Schüssel voll Wasser
 itm_map|Karten von Mittelerde
 itm_athelas_reward|Getrocknete Athelas-Blätter
@@ -783,9 +788,55 @@ itm_wolf|Wolf
 itm_werewolf|Werwolf
 itm_thrush_reward|Drossel
 itm_gauntlets_reward|Eisenfaust
+; itm_gondor_custom|Custom Gondor
 itm_stones_siege|Wurfsteine
 itm_beorn_axe_no_attack|Axt der Beorninger
-itm_animal_spider|Spinne
-itm_animal_bear|Bär
-itm_animal_wolf|Wolf
-itm_animal_werewolf|Werwolf
+; itm_tabard_b_wb|Tabard
+; itm_nobleman_outfit_b_new_wb|Nobleman Outfit
+; itm_peasant_man_a_wb|Peasant Outfit
+itm_leather_jerkin_wb|Lederwams
+itm_white_tunic_c_wb|Tunika mit Weste
+; itm_white_tunic_a_wb|White Tunic
+itm_red_tunic_wb|Rote Tunika
+itm_fur_coat_wb|Gewand aus Thal
+; itm_fur_hat_a_new_wb|Fur Hat
+; itm_noel_hat_a_wb|Fur Hat
+; itm_peasant_dress_b_new_wb|Blue Dress
+; itm_sarranid_lady_dress_wb|Blue Dress
+itm_sar_robe_b_wb|Robe
+itm_black_dress_wb|Schwarzes Kleid
+itm_blackwhite_dress_wb|Damenkleid
+itm_white_tunic_b_wb|Einfache Tunika
+itm_blue_tunic_wb|Blaue Tunika
+itm_black_tunic_wb|Schwarze Tunika
+itm_green_tunic_wb|Grüne Tunika
+itm_green_dress_wb|Grünes Kleid
+itm_gondor_fine_outfit_dress_wb|Vornehme Kleidung
+itm_rohan_fine_outfit_dale_dress_wb|Vornehme Kleidung
+itm_robe_generic_dress_wb|Robe
+itm_wimple_a_wb|Wimpel
+itm_wimple_with_veil_wb|Wimpel
+itm_fine_hat_wb|Vornehmer Hut
+; itm_rohan_tunic_a_wb|Rohan Tunic
+; itm_rohan_tunic_b_wb|Rohan Tunic
+itm_denethor_robe|Vornehme Kleidung
+itm_ent_head_helm2|Entkopf
+itm_ent_head_helm3|Entkopf
+; itm_civilian_hammer|Hammer
+; itm_civilian_woodaxe_1h|Axe
+; itm_civilian_woodaxe_2h|Heavy Axe
+; itm_civilian_war_mattock|Mattock
+; itm_civilian_great_mattock|Mattock
+; itm_civilian_adz|Mattock
+; itm_civilian_pickaxe|Mattock
+; itm_civilian_shovel|Shovel
+; itm_civilian_carry_wood_heap|Fire Wood
+; itm_civilian_carry_wood|Wood
+; itm_civilian_carry_amphora|Amphora
+; itm_civilian_carry_sack|Sack
+; itm_civilian_carry_basket|Basket
+; itm_civilian_carry_honey|Honey
+; itm_civilian_carry_oil|Oil
+; itm_civilian_carry_wood2|Wood
+; itm_work_basket|Basket
+; itm_work_basket_2|Basket

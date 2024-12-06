@@ -65,6 +65,10 @@ itm_wargarmored_2b|Warg Blindado
 itm_wargarmored_2c|Warg Blindado
 itm_wargarmored_3a|Warg Blindado
 itm_warg_reward|Warg Enorme
+; itm_animal_big|Big Animal
+; itm_animal_small|Small Animal
+; itm_troll_weapon_long|Giant Halberd
+itm_troll_weapon_dmg|Maça Gigante
 itm_tree_trunk_club_a|Tronco de Árvore
 itm_giant_mace|Maça Gigante
 itm_troll_shield_a|Escudo de Troll
@@ -130,6 +134,8 @@ itm_harad_javelin|Dardo de Harad
 itm_gondor_javelin|Dardo de Gondor
 itm_rohirrim_throwing_axe|Machados de Arremesso do Norte
 itm_loss_throwing_axes|Machados de Arremesso de Lossarnach
+; itm_free_dunedain_helm_a|Arnor Light Helm
+itm_free_dunedain_helm_b|Elmo de Arnor 
 itm_arnor_helm_c|Elmo Decorado de Arnor
 itm_arnor_helm_b|Elmo de Arnor 
 ; itm_arnor_helm_a|Arnor Light Helm
@@ -433,8 +439,6 @@ itm_dunland_mail_2|Cota de Malha Terra-pardense
 itm_dun_helm_a|Touca de Lobo Terra-pardense
 ; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|Elmo Alto Terra-pardense
-itm_dun_helm_d|Elmo Alto Terra-pardense
-itm_dun_helm_e|Elmo de Chifres Terra-pardense
 ; itm_dun_shield_a|Dunnish Roundshield
 ; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|Espada de Chefe das Terras Pardas
@@ -539,6 +543,7 @@ itm_desert_boots|Botas de Deserto
 ; itm_harad_leather_greaves|Harad Leather Greaves
 itm_harad_scale_greaves|Perneiras de Harad
 ; itm_harad_lamellar_greaves|Harad Splinted Greaves
+; itm_camel|Harad Camel
 itm_khand_inf_helm_a|Elmo de Khand
 itm_khand_inf_helm_b|Elmo de Khand
 itm_khand_inf_helm_c1|Elmo Tigela de Khand
@@ -590,6 +595,7 @@ itm_rhun_helm_chieftain|Elmo de Chefe de Rhun
 itm_rhun_helm_pot|Elmo de Pote Rhun
 itm_rhun_helm_barbed|Elmo Farpado de Rhun
 itm_rhun_helm_round|Elmo Redondo de Rhun
+itm_rhun_helm_horde|Elmo de Horda de Rhun
 itm_rhun_helm_leather|Elmo de Couro de Rhun
 itm_rhun_warpick|PIco de Guerra Rhun
 itm_rhun_greataxe|Machado Grande de Rhun
@@ -700,7 +706,7 @@ itm_dwarf_helm_round|Elmo Redondo Anão
 itm_dwarf_helm_sallet|Elmo Leve Anão
 itm_dwarf_armor_d|Casaco de Cotas das Colinas de Ferro
 itm_dwarf_armor_a|Sobrecapa de Malha de Erebor
-itm_leather_dwarf_armor|Cota Acolchoada de Anão
+; itm_leather_dwarf_armor|Erebor Padded Coat
 itm_dwarf_armor_b|Túnica sobre Malha de Erebor
 itm_leather_dwarf_armor_b|Jaqueta Acolchoada Anão
 itm_dwarf_armor_c|Cota de Malha de Erebor
@@ -719,7 +725,6 @@ itm_gondor_lance_banner|Lança com Estandarte de Gondor
 itm_amroth_lance_banner|Lança com Estandarte de Dol Amroth
 itm_rohan_lance_banner_sun|Lança com Estandarte de Sol de Rohan
 itm_rohan_lance_banner_horse|Lança com Estandarte de Cavalo de Rohan
-; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Estranha Tigela de Água
 itm_map|Mapas da Terra Média
 itm_athelas_reward|Folhas secas do rei.
@@ -783,9 +788,55 @@ itm_wolf|Lobo
 itm_werewolf|Lobisomem
 itm_thrush_reward|Tordo
 itm_gauntlets_reward|Luvas de Aço
+; itm_gondor_custom|Custom Gondor
 itm_stones_siege|Pedras de Cerco
 itm_beorn_axe_no_attack|Machado Beorning
-itm_animal_spider|Aranha
-itm_animal_bear|Urso
-itm_animal_wolf|Lobo
-itm_animal_werewolf|Lobisomem
+; itm_tabard_b_wb|Tabard
+; itm_nobleman_outfit_b_new_wb|Nobleman Outfit
+; itm_peasant_man_a_wb|Peasant Outfit
+itm_leather_jerkin_wb|Colete de couro
+itm_white_tunic_c_wb|Túnica de pele
+; itm_white_tunic_a_wb|White Tunic
+itm_red_tunic_wb|Túnica vermelha
+itm_fur_coat_wb|Casaco de Dale
+; itm_fur_hat_a_new_wb|Fur Hat
+; itm_noel_hat_a_wb|Fur Hat
+; itm_peasant_dress_b_new_wb|Blue Dress
+; itm_sarranid_lady_dress_wb|Blue Dress
+itm_sar_robe_b_wb|Robe
+itm_black_dress_wb|Vestido negro
+itm_blackwhite_dress_wb|Vestido de dama
+itm_white_tunic_b_wb|Túnica simples
+itm_blue_tunic_wb|Túnica Azul
+itm_black_tunic_wb|Túnica Escura
+itm_green_tunic_wb|Túnica verde
+itm_green_dress_wb|Vestido verde
+itm_gondor_fine_outfit_dress_wb|Roupas finas 
+itm_rohan_fine_outfit_dale_dress_wb|Roupas finas 
+itm_robe_generic_dress_wb|Robe
+itm_wimple_a_wb|Véu 
+itm_wimple_with_veil_wb|Véu 
+itm_fine_hat_wb|Chapéu fino
+; itm_rohan_tunic_a_wb|Rohan Tunic
+; itm_rohan_tunic_b_wb|Rohan Tunic
+itm_denethor_robe|Roupas finas 
+itm_ent_head_helm2|Cabeça de Ent
+itm_ent_head_helm3|Cabeça de Ent
+; itm_civilian_hammer|Hammer
+; itm_civilian_woodaxe_1h|Axe
+; itm_civilian_woodaxe_2h|Heavy Axe
+; itm_civilian_war_mattock|Mattock
+; itm_civilian_great_mattock|Mattock
+; itm_civilian_adz|Mattock
+; itm_civilian_pickaxe|Mattock
+; itm_civilian_shovel|Shovel
+; itm_civilian_carry_wood_heap|Fire Wood
+; itm_civilian_carry_wood|Wood
+; itm_civilian_carry_amphora|Amphora
+; itm_civilian_carry_sack|Sack
+; itm_civilian_carry_basket|Basket
+; itm_civilian_carry_honey|Honey
+; itm_civilian_carry_oil|Oil
+; itm_civilian_carry_wood2|Wood
+; itm_work_basket|Basket
+; itm_work_basket_2|Basket

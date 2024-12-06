@@ -13,7 +13,6 @@ skinkey_nose_width|عرض الانف
 skinkey_nose_size|حجم الانف
 skinkey_nose_shape|شكل الانف
 skinkey_nose_bridge|الفرق للانف
-
 skinkey_eye_width|عرض العينين
 skinkey_eye_to_eye_dist|المسافة بين العينين
 skinkey_eye_shape|شكل العين
@@ -22,7 +21,6 @@ skinkey_eyelids|الجفون
 skinkey_cheeks|الخدين
 skinkey_cheek_bones|عظام الخدين
 skinkey_eyebrow_height|ارتفاع الحاجب
-
 skinkey_eyebrow_shape|شكل الحاجب
 skinkey_temple_width|عرض المعبد
 skinkey_face_depth|عمق الوجه
@@ -44,3 +42,5 @@ skinkey_frawn|الشعر
 skinkey_mouth_vert_pos|مكان الفم الأفقى
 skinkey_mouth_to_nose_dist|المسافة من الفم للأنف
 skinkey_chin_width|عرض الذقن
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

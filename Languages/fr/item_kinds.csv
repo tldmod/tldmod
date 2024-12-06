@@ -65,6 +65,10 @@ itm_wargarmored_2b|Warg en armure
 itm_wargarmored_2c|Warg en armure
 itm_wargarmored_3a|Warg en armure
 itm_warg_reward|Warg gigantesque
+itm_animal_big|Grand animal
+itm_animal_small|Petit animal
+itm_troll_weapon_long|Hallebarde géante
+itm_troll_weapon_dmg|Masse d'arme géante
 itm_tree_trunk_club_a|Tronc d'arbre
 itm_giant_mace|Masse d'arme géante
 itm_troll_shield_a|Bouclier de troll
@@ -130,6 +134,8 @@ itm_harad_javelin|Javelot du Harad
 itm_gondor_javelin|Javelot du Gondor
 itm_rohirrim_throwing_axe|Haches à lancer d'homme du Nord
 itm_loss_throwing_axes|Haches de lancer du Lossarnach
+itm_free_dunedain_helm_a|Casque léger arnorien
+itm_free_dunedain_helm_b|Heaume arnorien
 itm_arnor_helm_c|Heaume décoré arnorien
 itm_arnor_helm_b|Heaume arnorien
 itm_arnor_helm_a|Casque léger arnorien
@@ -433,8 +439,6 @@ itm_dunland_chieftain|Armure de chef dunlandais
 itm_dun_helm_a|Capuchon de loup dunlandais
 itm_dun_helm_b|Capuchon en fourrure dunlandais
 itm_dun_helm_c|Grand casque dunlandais
-itm_dun_helm_d|Grand casque dunlandais
-itm_dun_helm_e|Casque à Ramures dunlandais
 itm_dun_shield_a|Rondache dunlandaise
 itm_dun_shield_b|Bouclier ovale dunlandais
 itm_dun_berserker|Épée de chef dunlandais
@@ -539,6 +543,7 @@ itm_desert_boots|Bottes du désert
 itm_harad_leather_greaves|Jambières en cuir du Harad
 itm_harad_scale_greaves|Jambières du Harad
 itm_harad_lamellar_greaves|Jambières renforcées du Harad
+itm_camel|Dromadaire du Harad
 itm_khand_inf_helm_a|Casque de Khand
 itm_khand_inf_helm_b|Casque de Khand
 itm_khand_inf_helm_c1|Casque boule de Khand
@@ -590,6 +595,7 @@ itm_rhun_helm_chieftain|Casque de chef de Rhûn
 itm_rhun_helm_pot|Heaume de Rhûn
 itm_rhun_helm_barbed|Casque acéré de Rhûn
 itm_rhun_helm_round|Casque rond de Rhûn
+itm_rhun_helm_horde|Casque tribal de Rhûn
 itm_rhun_helm_leather|Casque en cuir de Rhûn
 itm_rhun_warpick|Piquier de guerre de Rhûn
 itm_rhun_greataxe|Grande hache de Rhûn
@@ -700,7 +706,7 @@ itm_dwarf_helm_round|Casque rond nain
 itm_dwarf_helm_sallet|Casque salade nain
 itm_dwarf_armor_d|Armure d'écailles des Collines de Fer
 itm_dwarf_armor_a|Surcot sur mailles d'Erebor
-itm_leather_dwarf_armor|Manteau rembourré nain
+itm_leather_dwarf_armor|Manteau rembourré d'Erebor
 itm_dwarf_armor_b|Tunique sur mailles d'Erebor
 itm_leather_dwarf_armor_b|Justaucorps rembourré nain
 itm_dwarf_armor_c|Écailles sur mailles d'Erebor 
@@ -719,7 +725,6 @@ itm_gondor_lance_banner|Lance du Gondor avec bannière
 itm_amroth_lance_banner|Lance de Dol Amroth avec bannière
 itm_rohan_lance_banner_sun|Lance rohirrim avec bannière du Soleil
 itm_rohan_lance_banner_horse|Lance rohirrim avec bannière du Cheval
-itm_fur_gloves_reward|Gants de chasseur
 itm_ent_water|Étrange bol d'eau
 itm_map|Cartes de la Terre du Milieu
 itm_athelas_reward|Feuilles d'athelas séchées
@@ -783,9 +788,55 @@ itm_wolf|Loup
 itm_werewolf|Loup-garou
 itm_thrush_reward|Grive
 itm_gauntlets_reward|Poings de fer
+itm_gondor_custom|Gondor personnalisé
 itm_stones_siege|Pierres de siège
 itm_beorn_axe_no_attack|Hache béorniennne
-itm_animal_spider|Araignée
-itm_animal_bear|Ours
-itm_animal_wolf|Loup
-itm_animal_werewolf|Loup-garou
+itm_tabard_b_wb|Tabard
+itm_nobleman_outfit_b_new_wb|Tenue de noble
+itm_peasant_man_a_wb|Tenue de paysan
+itm_leather_jerkin_wb|Blouson en cuir
+itm_white_tunic_c_wb|Veste de tunique
+itm_white_tunic_a_wb|Tunique blanche
+itm_red_tunic_wb|Tunique rouge
+itm_fur_coat_wb|Manteau de Dale
+itm_fur_hat_a_new_wb|Chapeau de fourrure
+itm_noel_hat_a_wb|Chapeau de fourrure
+itm_peasant_dress_b_new_wb|Robe bleue
+itm_sarranid_lady_dress_wb|Robe bleue
+itm_sar_robe_b_wb|Robe
+itm_black_dress_wb|Robe noire
+itm_blackwhite_dress_wb|Robe de dame
+itm_white_tunic_b_wb|Tunique simple
+itm_blue_tunic_wb|Tunique bleue
+itm_black_tunic_wb|Tunique noire
+itm_green_tunic_wb|Tunique verte
+itm_green_dress_wb|Robe verte
+itm_gondor_fine_outfit_dress_wb|Belle tenue
+itm_rohan_fine_outfit_dale_dress_wb|Belle tenue
+itm_robe_generic_dress_wb|Robe
+itm_wimple_a_wb|Coiffe
+itm_wimple_with_veil_wb|Coiffe
+itm_fine_hat_wb|Joli chapeau
+itm_rohan_tunic_a_wb|Tunique du Rohan
+itm_rohan_tunic_b_wb|Tunique du Rohan
+itm_denethor_robe|Belle tenue
+itm_ent_head_helm2|Tête d'Ent
+itm_ent_head_helm3|Tête d'Ent
+itm_civilian_hammer|Marteau
+itm_civilian_woodaxe_1h|Hache
+itm_civilian_woodaxe_2h|Hache lourde
+itm_civilian_war_mattock|Pioche
+itm_civilian_great_mattock|Pioche
+itm_civilian_adz|Pioche
+itm_civilian_pickaxe|Pioche
+itm_civilian_shovel|Pelle
+itm_civilian_carry_wood_heap|Bois à brûler
+itm_civilian_carry_wood|Bois
+itm_civilian_carry_amphora|Amphore
+itm_civilian_carry_sack|Sac
+itm_civilian_carry_basket|Panier
+itm_civilian_carry_honey|Miel
+itm_civilian_carry_oil|Huile
+itm_civilian_carry_wood2|Bois
+itm_work_basket|Panier
+itm_work_basket_2|Panier

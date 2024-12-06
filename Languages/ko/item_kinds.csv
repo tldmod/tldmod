@@ -65,6 +65,10 @@ itm_wargarmored_2b|무장 와르그
 itm_wargarmored_2c|무장 와르그
 itm_wargarmored_3a|무장 와르그
 itm_warg_reward|거대 와르그
+; itm_animal_big|Big Animal
+; itm_animal_small|Small Animal
+; itm_troll_weapon_long|Giant Halberd
+itm_troll_weapon_dmg|거대한 철퇴
 itm_tree_trunk_club_a|나무 줄기
 itm_giant_mace|거대한 철퇴
 itm_troll_shield_a|트롤 방패
@@ -130,6 +134,8 @@ itm_harad_javelin|하라드 투창
 itm_gondor_javelin|곤도르 투창
 itm_rohirrim_throwing_axe|북부인 투척 도끼
 itm_loss_throwing_axes|롯사르나흐 투척 도끼
+; itm_free_dunedain_helm_a|Arnor Light Helm
+itm_free_dunedain_helm_b|아르노르 투구
 itm_arnor_helm_c|아르노르 장식된 투구
 itm_arnor_helm_b|아르노르 투구
 ; itm_arnor_helm_a|Arnor Light Helm
@@ -433,8 +439,6 @@ itm_dunland_mail_2|던랜드인 사슬갑옷
 itm_dun_helm_a|던랜드인 늑대 모자
 ; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|던랜드인 높은 투구
-itm_dun_helm_d|던랜드인 높은 투구
-itm_dun_helm_e|던랜드인 뿔 투구
 ; itm_dun_shield_a|Dunnish Roundshield
 ; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|던랜드 부족장 검
@@ -539,6 +543,7 @@ itm_desert_boots|사막 부츠
 ; itm_harad_leather_greaves|Harad Leather Greaves
 itm_harad_scale_greaves|하라드 정강이 보호대
 ; itm_harad_lamellar_greaves|Harad Splinted Greaves
+; itm_camel|Harad Camel
 itm_khand_inf_helm_a|칸드 투구
 itm_khand_inf_helm_b|칸드 투구
 itm_khand_inf_helm_c1|칸드 둥근 투구
@@ -590,6 +595,7 @@ itm_rhun_helm_chieftain|룬 족장 투구
 itm_rhun_helm_pot|룬 냄비투구
 itm_rhun_helm_barbed|룬 가시돋친 투구
 itm_rhun_helm_round|룬 둥근 투구
+itm_rhun_helm_horde|룬 부족 투구
 itm_rhun_helm_leather|룬 가죽 투구
 itm_rhun_warpick|룬 전쟁곡괭이
 itm_rhun_greataxe|룬 거대한 도끼
@@ -700,7 +706,7 @@ itm_dwarf_helm_round|난쟁이 둥근 투구
 itm_dwarf_helm_sallet|난쟁이 철모
 itm_dwarf_armor_d|철산 미늘갑옷과 외투
 itm_dwarf_armor_a|에레보르 사슬갑옷과 외투
-itm_leather_dwarf_armor|난쟁이족 패드를 덧댄 외투
+; itm_leather_dwarf_armor|Erebor Padded Coat
 itm_dwarf_armor_b|에레보르 사슬갑옷과 튜닉
 itm_leather_dwarf_armor_b|난쟁이족 패드를 덧댄 조끼
 itm_dwarf_armor_c|에레보르 미늘 사슬갑옷
@@ -719,7 +725,6 @@ itm_gondor_lance_banner|곤도르 창과 깃발
 itm_amroth_lance_banner|돌 암로스 창과 깃발
 itm_rohan_lance_banner_sun|로한 창과 태양 깃발
 itm_rohan_lance_banner_horse|로한 창과 기마대 깃발
-; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|수상한 액체가 담긴 그릇
 itm_map|중간계 지도
 itm_athelas_reward|말린 임금님풀
@@ -783,9 +788,55 @@ itm_wolf|늑대
 itm_werewolf|웨어울프
 itm_thrush_reward|개똥지빠귀
 itm_gauntlets_reward|강철 주먹
+; itm_gondor_custom|Custom Gondor
 itm_stones_siege|공성용 돌
 itm_beorn_axe_no_attack|베오른족 도끼
-itm_animal_spider|거미
-itm_animal_bear|곰
-itm_animal_wolf|늑대
-itm_animal_werewolf|웨어울프
+; itm_tabard_b_wb|Tabard
+; itm_nobleman_outfit_b_new_wb|Nobleman Outfit
+; itm_peasant_man_a_wb|Peasant Outfit
+itm_leather_jerkin_wb|가죽 조끼
+itm_white_tunic_c_wb|튜닉 자켓
+; itm_white_tunic_a_wb|White Tunic
+itm_red_tunic_wb|붉은색 튜닉
+itm_fur_coat_wb|너른골산 코트
+; itm_fur_hat_a_new_wb|Fur Hat
+; itm_noel_hat_a_wb|Fur Hat
+; itm_peasant_dress_b_new_wb|Blue Dress
+; itm_sarranid_lady_dress_wb|Blue Dress
+itm_sar_robe_b_wb|로브
+itm_black_dress_wb|검은 드레스
+itm_blackwhite_dress_wb|숙녀용 드레스
+itm_white_tunic_b_wb|단순한 튜닉
+itm_blue_tunic_wb|파란색 튜닉
+itm_black_tunic_wb|검은색 튜닉
+itm_green_tunic_wb|녹색 튜닉
+itm_green_dress_wb|녹색 드레스
+itm_gondor_fine_outfit_dress_wb|고급 의상
+itm_rohan_fine_outfit_dale_dress_wb|고급 의상
+itm_robe_generic_dress_wb|로브
+itm_wimple_a_wb|베일
+itm_wimple_with_veil_wb|베일
+itm_fine_hat_wb|잘 만든 모자
+; itm_rohan_tunic_a_wb|Rohan Tunic
+; itm_rohan_tunic_b_wb|Rohan Tunic
+itm_denethor_robe|고급 의상
+; itm_ent_head_helm2|Ent Head
+; itm_ent_head_helm3|Ent Head
+; itm_civilian_hammer|Hammer
+; itm_civilian_woodaxe_1h|Axe
+; itm_civilian_woodaxe_2h|Heavy Axe
+; itm_civilian_war_mattock|Mattock
+; itm_civilian_great_mattock|Mattock
+; itm_civilian_adz|Mattock
+; itm_civilian_pickaxe|Mattock
+; itm_civilian_shovel|Shovel
+; itm_civilian_carry_wood_heap|Fire Wood
+; itm_civilian_carry_wood|Wood
+; itm_civilian_carry_amphora|Amphora
+; itm_civilian_carry_sack|Sack
+; itm_civilian_carry_basket|Basket
+; itm_civilian_carry_honey|Honey
+; itm_civilian_carry_oil|Oil
+; itm_civilian_carry_wood2|Wood
+; itm_work_basket|Basket
+; itm_work_basket_2|Basket

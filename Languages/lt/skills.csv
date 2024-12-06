@@ -3,7 +3,7 @@ skl_trade_desc|Šio įgūdžio lygiai leidžia gauti daugiau įrangos už mažes
 skl_leadership|Lyderystė
 skl_leadership_desc|Kiekvienas taškas padidina: maximalų turimų karių skaičių 5-iais, būrio moralę ir sumažina karių mokestį 5-iais %%. (Vadovo įgūdis)
 skl_prisoner_management|Belaisvių valdymas
-skl_prisoner_management_desc|Kiekvienas šio įgūdžio lygis padidina maksimalų belaisvių skaičių%d. (Leader skill)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
 ; skl_persuasion|Wildcraft
 skl_persuasion_desc|Sugebėjimas išgyventi laukuose ir palenkti juos savo valiai. Šis įgūdis paveikia grupės įgūdį pasislėpti nuo priešo, bei jūsų grupės greitį bekeliaujamt miškiniu reljefu. (Grupės įgūdis)
 ; skl_engineer|-----

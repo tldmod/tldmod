@@ -65,6 +65,10 @@ itm_wargarmored_2b|重装ワーグ
 itm_wargarmored_2c|重装ワーグ
 itm_wargarmored_3a|重装ワーグ
 itm_warg_reward|巨大ワーグ
+; itm_animal_big|Big Animal
+; itm_animal_small|Small Animal
+; itm_troll_weapon_long|Giant Halberd
+itm_troll_weapon_dmg|巨大メイス
 itm_tree_trunk_club_a|木の幹
 itm_giant_mace|巨大メイス
 itm_troll_shield_a|トロルの盾
@@ -130,6 +134,8 @@ itm_harad_javelin|ハラドの投げ槍
 itm_gondor_javelin|ゴンドールの投げ槍
 itm_rohirrim_throwing_axe|北国人の投げ斧
 itm_loss_throwing_axes|ロスサールナッハの投げ斧
+; itm_free_dunedain_helm_a|Arnor Light Helm
+itm_free_dunedain_helm_b|アルノールの兜
 itm_arnor_helm_c|アルノールの細工入り兜
 itm_arnor_helm_b|アルノールの兜
 ; itm_arnor_helm_a|Arnor Light Helm
@@ -433,8 +439,6 @@ itm_dunland_mail_2|褐色人のホバーク
 itm_dun_helm_a|褐色人の狼の被り物
 ; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|褐色人の山高兜
-itm_dun_helm_d|褐色人の山高兜
-itm_dun_helm_e|褐色人の鹿の角の兜
 ; itm_dun_shield_a|Dunnish Roundshield
 ; itm_dun_shield_b|Dunnish Oval Shield
 itm_dun_berserker|褐色人族長の剣
@@ -539,6 +543,7 @@ itm_desert_boots|砂漠のブーツ
 itm_harad_leather_greaves|ハラドの革のすね当て
 itm_harad_scale_greaves|ハラドのすね当て
 itm_harad_lamellar_greaves|ハラドの鉄板を張ったすね当て
+; itm_camel|Harad Camel
 itm_khand_inf_helm_a|ハンドの兜
 itm_khand_inf_helm_b|ハンドの兜
 itm_khand_inf_helm_c1|ハンドの笠形兜
@@ -590,6 +595,7 @@ itm_rhun_helm_chieftain|リューン族長の兜
 itm_rhun_helm_pot|リューンのポット兜
 itm_rhun_helm_barbed|リューンのかぎ兜
 itm_rhun_helm_round|リューンの丸兜
+itm_rhun_helm_horde|リューンのホード兜
 itm_rhun_helm_leather|リューンの革兜
 itm_rhun_warpick|リューンのつるはし
 itm_rhun_greataxe|リューンの大斧
@@ -700,7 +706,7 @@ itm_dwarf_helm_round|ドワーフの丸兜
 itm_dwarf_helm_sallet|ドワーフのサレット
 itm_dwarf_armor_d|くろがね連山のスケイルマント
 itm_dwarf_armor_a|エレボールの鎖かたびらとシュールコー
-itm_leather_dwarf_armor|ドワーフの当て物の入ったマント
+; itm_leather_dwarf_armor|Erebor Padded Coat
 itm_dwarf_armor_b|エレボールのチュニックと鎖かたびら
 itm_leather_dwarf_armor_b|ドワーフの当て物の入った胴着
 itm_dwarf_armor_c|エレボールのスケイルメイル
@@ -719,7 +725,6 @@ itm_gondor_lance_banner|ゴンドールの戦旗つきランス
 itm_amroth_lance_banner|ドル・アムロスの戦旗つきランス
 itm_rohan_lance_banner_sun|ローハンの太陽の戦旗つきランス
 itm_rohan_lance_banner_horse|ローハンの馬の戦旗つきランス
-; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|おわんに入った奇妙な水
 itm_map|中つ国の地図
 itm_athelas_reward|乾燥させたアセラスの葉
@@ -783,9 +788,55 @@ itm_wolf|狼
 itm_werewolf|巨狼
 itm_thrush_reward|ツグミ
 itm_gauntlets_reward|鉄拳
+; itm_gondor_custom|Custom Gondor
 itm_stones_siege|攻城石
 itm_beorn_axe_no_attack|ビヨルン一党の斧
-itm_animal_spider|大蜘蛛
-itm_animal_bear|熊
-itm_animal_wolf|狼
-itm_animal_werewolf|巨狼
+; itm_tabard_b_wb|Tabard
+; itm_nobleman_outfit_b_new_wb|Nobleman Outfit
+; itm_peasant_man_a_wb|Peasant Outfit
+itm_leather_jerkin_wb|革の胴着
+itm_white_tunic_c_wb|チュニック上着
+; itm_white_tunic_a_wb|White Tunic
+itm_red_tunic_wb|赤のチュニック
+itm_fur_coat_wb|谷間の国のコート
+; itm_fur_hat_a_new_wb|Fur Hat
+; itm_noel_hat_a_wb|Fur Hat
+; itm_peasant_dress_b_new_wb|Blue Dress
+; itm_sarranid_lady_dress_wb|Blue Dress
+itm_sar_robe_b_wb|ローブ
+itm_black_dress_wb|黒のドレス
+itm_blackwhite_dress_wb|夫人のドレス
+itm_white_tunic_b_wb|簡素なチュニック
+itm_blue_tunic_wb|青のチュニック
+itm_black_tunic_wb|黒のチュニック
+itm_green_tunic_wb|緑のチュニック
+itm_green_dress_wb|緑のドレス
+itm_gondor_fine_outfit_dress_wb|上等な衣装
+itm_rohan_fine_outfit_dale_dress_wb|上等な衣装
+itm_robe_generic_dress_wb|ローブ
+itm_wimple_a_wb|ベール
+itm_wimple_with_veil_wb|ベール
+itm_fine_hat_wb|洒落た帽子
+; itm_rohan_tunic_a_wb|Rohan Tunic
+; itm_rohan_tunic_b_wb|Rohan Tunic
+itm_denethor_robe|上等な衣装
+itm_ent_head_helm2|エントの頭部
+itm_ent_head_helm3|エントの頭部
+; itm_civilian_hammer|Hammer
+; itm_civilian_woodaxe_1h|Axe
+; itm_civilian_woodaxe_2h|Heavy Axe
+; itm_civilian_war_mattock|Mattock
+; itm_civilian_great_mattock|Mattock
+; itm_civilian_adz|Mattock
+; itm_civilian_pickaxe|Mattock
+; itm_civilian_shovel|Shovel
+; itm_civilian_carry_wood_heap|Fire Wood
+; itm_civilian_carry_wood|Wood
+; itm_civilian_carry_amphora|Amphora
+; itm_civilian_carry_sack|Sack
+; itm_civilian_carry_basket|Basket
+; itm_civilian_carry_honey|Honey
+; itm_civilian_carry_oil|Oil
+; itm_civilian_carry_wood2|Wood
+; itm_work_basket|Basket
+; itm_work_basket_2|Basket

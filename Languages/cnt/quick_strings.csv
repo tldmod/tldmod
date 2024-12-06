@@ -1,4 +1,5 @@
 qstr_Received_{reg0}_dama|受到{reg0}傷害。
+; qstr_Siege_weapon_damaged|Siege weapon damaged {reg10} agents
 qstr_Gate_is_breached!|大門被攻破了！
 qstr_Gate_opens..._You_ha|大門緩緩打開...你來到中土世界最神聖的地方了！
 qstr_Secret_place_discove|發現秘密之地！
@@ -85,11 +86,13 @@ qstr_Proficiencies|熟練度
 qstr_1H_Weapons^2H_Weapon|單手武器^雙手武器^長柄武器^弓箭^十字弓^投擲
 qstr_Equipment|裝備
 qstr_The_Last_Days_Mod_Op|最後之日模組設定
+; qstr_War_Starts_after_Day|War Starts after Day: 
 qstr_War_Starts_at_Level:|戰爭始於等級：
 qstr_Battle_Formations_an|戰鬥陣型和AI：
 qstr_Native|原版
 qstr_TLD_FormAI__Original|TLD陣型AI(初版)
 qstr_TLD_New_FormAI|TLD新陣型AI
+qstr_Beta_Formations_Twea|Beta陣型調整
 qstr_Siege_AI:__|攻城AI：
 qstr_Basic__better_perfor|基本(效能更好)
 qstr_Advanced|進階
@@ -103,6 +106,7 @@ qstr_Permanent_death_for_|領主和同伴會永久死亡：
 qstr_Permanent_death_for_p|玩家會永久死亡(就是你！)：
 qstr_Battle_morale_system|戰鬥士氣系統：
 qstr_Animal_ambushes:__|動物伏擊：
+; qstr_Player_speed_buff_in|Player speed buff in towns:  
 qstr_Fallen_rider_damage_|落馬傷害訊息：
 qstr_No_Messages|不顯示訊息
 qstr_Player_damage_only|只顯示玩家傷害
@@ -115,12 +119,11 @@ qstr_Prevent_AI_from_taki|防止AI採取守勢：
 qstr_Brighter_Nights:__|較明亮的夜晚：
 qstr_Done|完成
 qstr_Gameplay_Tweaks|遊戲調整
-qstr_Beta_Formations_Twea|Beta陣型調整
 ; qstr_Set_to_Native_if_you|Set to Native if you encounter any types of AI problems during battle.
 ; qstr_Disable_cutscenes_if|Disable cutscenes if you encounter any crashes at the start of the war.
 ; qstr_Campaign_Difficulty_a|Campaign Difficulty affects abundance of volunteers, lord party size, and strength income for allied factions.
-qstr_War_Will_Start_at_Le|戰爭將始於等級{reg0}
 ; qstr_Be_aware_that_many_q|Be aware that many quests and campaign mechanics scale with player level. Increasing this setting will give you more time to prepare, but will make the war unfold quicker.
+; qstr_Requires_TLD_NewForm|Requires TLD NewFormAI
 qstr_Troop_Tree|兵種樹狀圖
 qstr__Click_on_a_unit_for|(點擊單位以獲得詳細資訊)
 qstr_Weapons|武器
@@ -172,12 +175,17 @@ qstr_its|它的
 qstr_[no_upkeep_costs]|[無工資費]
 qstr_Short_of_Resource_Po|缺少資源點！！
 qstr_{s10}_will_soon_reas|{s10}很快就會從你的隊伍中調走{s12}名部下！
+; qstr_{s10}_has_reassigned|{s10} has reassigned troops from your reserves.
 qstr_Superior_orders_from|來自{s11}的上級命令重新分配部隊：
 qstr_{reg12}_{s10}_left_t|{reg12}名{s10}離開了隊伍！
 qstr_Fangorn_claimed_{reg|法貢森林奪走了你部隊中{reg0}人的命和重傷了{reg1}人！
 qstr_You_were_wounded_in_|你在法貢森林中受傷了！
+qstr_Grimbold|葛林伯
+; qstr_Theodred|Theodred
+qstr_Gamling|加姆林
 qstr_{s1}_of_{s3}_was_def|{s3}的{s1}在戰鬥中被擊敗了。
 qstr_{s2}_have_razed_{s1}|{s2}把{s1}夷為平地了！
+; qstr_{s1}_Scouts|{s1} Scouts
 qstr_Left_for_dead_but_mi|被丟著等死卻奇蹟似生還的次數：{reg1?{reg1}次{reg2?:}:從來沒有過}
 qstr_1_Res.Pt__{s2}_|1資源點({s2})
 qstr_{reg1}_Res.Pts__{s2}|{reg1}資源點({s2})
@@ -280,6 +288,7 @@ qstr_{s0}^TOTAL:_{reg3}__|{s0}^總計：{reg3}({s2})
 qstr_^None|^無
 qstr_near_the_Great_East_|靠近被遺棄的老舊道路，東方大道
 qstr_near_what_is_left_of|靠近古老的矮人森林小徑，森林古路的遺跡
+; qstr_near_the_old_cross_r|near the old cross-roads, where the Ithilien road meets the road to Osgiliath
 qstr_close_to_the_Hand_sh|在薩魯曼的白掌符號附近，指著奧桑克塔的方向
 qstr_in_sight_of_the_maje|在白之城，米那斯提力斯雄偉的城牆視野範圍內
 qstr_in_sight_of_Edoras_t|在伊多拉斯，洛汗的首都視野範圍內
@@ -592,11 +601,12 @@ qstr_There_is_much_to_reg|我們有著許多的遺憾和悲傷，而未來還有
 ; qstr_Gandalf_asked_you_to|Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard.
 qstr_Ents|樹人
 ; qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope.
-; qstr_Missing_String|Missing String
+; qstr_I_did_what_I_could.|I did what I could.
 ; qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
 ; qstr_Hail_{playername}!_I_|Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!
 ; qstr_Your_deed_has_greatl|Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!
-; qstr_{Playername}_I_will_|{Playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
+; qstr_{playername}_I_will_|{playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
+; qstr_I...|I...
 ; qstr_You_have_failed_me_{|You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not.
 qstr_Bagginsssss..._Ssssh|巴金斯… 夏爾…
 qstr_I..._don_t_know!|我...不知道！
@@ -679,7 +689,12 @@ qstr_have_taken_measure_o|對你陣營目前的力量採取行動後變得更加
 qstr_loses_Faction_Streng|由於補給線被干擾而失去了陣營力量。
 qstr_loses_Faction_Strengt|由於營地被毀而失去了陣營力量。
 qstr_gains_Faction_Streng|由於你勝利的消息廣傳而獲得陣營力量。
+; qstr_Notice:_Isengard_Las|Notice: Isengard Last Stand quest cancelled for savegame compatibility reasons. Isengard can now be sieged like a regular city.
+; qstr_Hobbit_quest_aborted|Hobbit quest aborted for compatibility reasons. Hobbits will now only appear after certain conditions are met.
+; qstr_This_update_has_chan|This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu.
 qstr_Something_wrong_not_|有點問題，沒有足夠的部隊去排除
+; qstr_Troop:_{s6}___Level:|Troop: {s6} - Level: {reg1}
+; qstr_{reg6}_Centers_Left_|{reg6} Centers Left for {s2}
 qstr_Raiders|掠奪者
 qstr_have_won_the_sea_bat|贏了海戰，使你的部隊士氣低落。敵人可能會利用這種失敗展開更頻繁地的攻擊。
 qstr_loses_Faction_Strength|由於遭到毀滅性的襲擊而失去了陣營力量。
@@ -705,23 +720,16 @@ qstr_Inventory|物品欄
 qstr_Show_stats|顯示數據
 qstr_Show_item_details__|顯示物品詳細資訊
 qstr_Troop_detail|兵種詳細資訊
-qstr_{s1}^|{s1}^
 qstr_{s1}Level:_{reg1}^|{s1}等級：{reg1}^
 qstr_{s1}Hit_Points:_{reg|{s1}生命值：{reg1}
 qstr_{s1}Atributes:_^___S|{s1}屬性：^力量：^
-qstr_{s2}^{reg1}^|{s2}^{reg1}^
 qstr_{s1}___Agility:|{s1}   敏捷：
-qstr_{s2}{reg1}|{s2}{reg1}
 qstr_{s1}Main_skills:_^|{s1}主要技能：^
 qstr_{s1}___Power_Strike:|{s1}   強擊技能：^
-qstr_{s2}{reg1}^|{s2}{reg1}^
 qstr_{s1}___Athletics:^|{s1}   運動技能：^
 qstr_{s1}___Riding:^|{s1}   騎術技能：^
-qstr_{s2}_^|{s2}-^
 qstr_{s1}___Power_Throw:^|{s1}   強擲技能：^
 qstr_{s1}___Power_Draw:^^|{s1}   強弓技能：^^
-qstr_{s2}{reg1}^^|{s2} {reg1}^^
-qstr_{s2}_^^|{s2} -^^
 qstr_{s1}Weapons:^|{s1}武器：^
 qstr_{s1}___One_Handed:^|{s1}   單手武器：^
 qstr_{s1}___Two_Handed:^|{s1}   雙手武器：^
@@ -730,7 +738,6 @@ qstr_{s1}___Archery:^|{s1}   弓術：^
 qstr_{s1}___Crossbow:^|{s1}   十字弓：^
 qstr_{s1}___Throwing:^|{s1}   投擲武器：^
 qstr_{s1}___Slings:|{s1}   投石索：
-qstr_{s2}_|{s2}-
 qstr__Click_on_the_troop_|(點擊部隊來旋轉它)^^點擊裝備^(頭盔、鎧甲、手套和靴子)^來顯示它們。
 qstr_ready_bows_and_missi|準備好弓和遠程武器
 qstr_ready_side_arms|準備好副武器
@@ -766,6 +773,7 @@ qstr_Press_Ctrl_and_Up/Do|按下Ctrl加上 上/下 方向鍵來 前傾/後傾
 qstr_Fixed_Camera___Right|固定鏡頭-右肩
 qstr_Fixed_Camera___Left_|固定鏡頭-左肩
 qstr_Fixed_Camera___Cente|固定鏡頭-置中
+; qstr_The_Nazgul_retreats!|The Nazgul retreats!
 qstr_Shield_is_too_big_to|盾太大不能跟弓一起使用。
 ; qstr_{s7}_waves_at_you.|{s7} waves at you.
 ; qstr_You_happen_upon_an_O|You happen upon an Old Guesthouse. As you inspect the weathered stone building, you notice a group of boys playing among the pillars, the only children you have seen in Minas Tirith.  One of them greets you and you wave back. Your heart is gladdened and you forget, for a brief moment, the sorrow of war.
@@ -799,6 +807,7 @@ qstr_Formations_turned_OF|設定選單中關掉了陣型
 qstr_Division_{reg1}_{s2}_g|第{reg1}分隊{s2}進入其記憶的位置...
 qstr_Division_{reg1}_{s2}_f|第{reg1}分隊{s2}排成行(已記憶)。
 qstr_Division_{reg1}_{s2}_fo|第{reg1}分隊{s2}排成{reg0}行(已記憶)。
+; qstr_A_Nazgul_on_a_winged|A Nazgul on a winged steed circles over the battle field!
 qstr_Delivered_{reg60}_da|給予{reg60}傷害。
 qstr_DEBUG__Health_Regen_|DEBUG(生命回復)：{s1}恢復{reg0}%生命值。=+{reg1}%力量
 qstr_Your_bear_form_has_{|你的熊型態有{reg2}/{reg1}生命值！
@@ -806,13 +815,6 @@ qstr_Some_of_your_human_t|你部分的人類部隊並不畏懼黑暗。(夜間�
 qstr_You_are_filled_with_|你注視了敵人後充滿了憤怒(發動狂暴化)。
 qstr_Your_mount_is_scared|你的座騎被{s5}嚇到了！
 qstr_Your_mount_is_scared_|你的座騎被{s5}嚇到了，但你還能駕馭牠！
-qstr_Nazgul_sweep!|戒靈掃過！
-qstr_You_and_your_horse_p|戒靈的叫聲難以忍受，你和你的馬陷入恐慌！
-qstr_Your_horse_panics_th|戒靈的叫聲難以忍受，你的馬陷入恐慌！
-qstr_You_cower_in_terror_|戒靈的叫聲難以忍受，你陷入畏懼！
-qstr_knocked_unconscious|被打昏了
-qstr_Nazgul_diving_attack|戒靈正在俯衝攻擊{s11}！
-qstr_{s11}_is_{s10}_in_th|{s11}在戒靈的攻擊下{s10}！
 qstr_Received_{reg66}_dam|受到{reg66}傷害。
 qstr_You_yell_for_your_ho|你呼喚了你的馬。
 qstr_You_do_not_need_to_r|你還不需要鼓舞你的部隊。
@@ -854,6 +856,8 @@ qstr_on_the_right_flank|在右翼
 qstr_through_the_center|從中間
 qstr_Attackers_charge_{s2|攻方向{s2}衝鋒
 qstr_Attackers_charge_{s1|攻方向{s1}衝鋒
+; qstr_Hold_this_area_to_st|Hold this area to stop defender reinforcements from here!
+; qstr_Defender_reinforceme|Defender reinforcement point taken!
 qstr_{s1}_rallied_to_your|{s1}受你的魅力鼓舞加入了你。
 qstr_Last_attacker_wave._|攻方只剩最後一波了。你要撤退嗎？
 qstr_Attackers_almost_def|攻方快被擊敗了。你要撤退嗎？
@@ -921,6 +925,13 @@ qstr_Look_at_my_over_the_|{playername}，看看我的過肩鏡頭！我從遠距
 qstr_You_wish_old_man_my_|別做夢了，老頭，我的過肩鏡頭看起來才更美！
 qstr_You_should_really_se|你真該看看攝政王迪耐瑟二世的臉書照片，他有夠讚！
 qstr_Press_Space_to_conti|按空白鍵繼續...
+; qstr_by_level|by level
+; qstr_can_only_be_set_at_g|can only be set at game start; see options to adjust level
+; qstr_by_day|by day
+; qstr_can_only_be_set_at_ga|can only be set at game start; see options to adjust day
+qstr_ON|開
+qstr_OFF|關
+; qstr_If_you_are_new_to_TL|If you are new to TLD, tutorial messages are recommended
 qstr_{s24}__{reg13}____{r|{s24}({reg13})-還需{reg20}到下次晉升^
 qstr_Influence:^_{reg11}_|影響力：^{reg11}(對{s16}的)^
 qstr_Resource_Points:^_{r|資源點：^{reg12}(在{s16}的)^
@@ -953,21 +964,10 @@ qstr_{s2}^_________{s4}:_|{s2}^         {s4}：{reg1}({s23})
 qstr__________Faction_str|         陣營力量報告：^{s2}
 qstr_{s1}^^Factions_are_n|{s1}^^陣營一般將在力量低於{reg1}被圍攻。
 qstr_Savagery|兇猛
-qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|獲得特質：^{s2}
 qstr_^^You_are_{s17}.|^^你是{s17}。
 qstr_Assassins_in_the_cam|營地裡有刺客，保護自己！
-qstr_Ally_party_size:_{re|友方隊伍大小：{reg1}
-qstr_Enemy_party_size:_{r|敵方隊伍大小：{reg1}
-qstr_Party_count:_{reg0}|隊伍數量：{reg0}
-qstr_Party_position__{reg|隊伍位置({reg2}，{reg3})。
-qstr_Party_size_increased|隊伍大小從{reg0}增加至{reg1}！
-qstr_Faction_strengths_re|陣營力量報​告：^{s2}
-qstr_Attacking_enemy_part|正在攻擊{s11}的敵方隊伍
-qstr_Unknown_{reg3}_|未知({reg3})
-qstr_ON|開
 qstr_OFF__cheat_|關(作弊)
-qstr_OFF|關
 qstr_All_messages|所有訊息
 qstr_{reg0}__will_most_li|{reg0}(極大機率導致存檔崩潰)
 qstr_{reg0}__could_possib|{reg0}(有機率導致存檔崩潰)
@@ -975,9 +975,6 @@ qstr_Normal|正常
 qstr_Defender_only|僅限守方
 qstr_Halved|減半
 qstr_Battles_only|僅限戰鬥
-qstr_Doubled|雙倍
-qstr_Tripled|三倍
-qstr_Quadrupled|四倍
 qstr_You_drank_the_Ent_Wa|你喝了樹人之水...
 qstr_You_used_the_Orc_Bre|你使用了半獸人酒。
 qstr_You_and_your_compani|你和你的同伴們各喝了一口米盧沃酒。你感到神清氣爽和充滿力量。
@@ -999,8 +996,6 @@ qstr_^^^Defeated...^^^Sca|^^^被擊敗了...^^^在法貢森林裡走散了...獨
 qstr_Troll_caged_in_wheel|食人妖被關在有輪的籠子裡。
 qstr_A_second_troll_is_ca|第二隻食人妖被關在有輪的籠子裡。
 qstr_Here_you_are.|給你。
-qstr_Player_was_moved_to_|玩家被移動到{s10}。
-qstr_neutral_whereabouts|中立的下落
 qstr_any|任何
 qstr_woman|女人
 qstr_gondor|剛鐸
@@ -1059,9 +1054,9 @@ qstr__This_castle_seems_t|這個城堡似乎不屬於任何人。
 qstr__Your_own_banner_flie|你自己的旗幟飄揚在城鎮大門上。
 qstr__You_see_the_banner_o|你看到{s7}的旗幟飄揚在城鎮大門上。
 qstr__The_townsfolk_here_|這裡的鎮民宣佈了獨立。
+qstr_Get_book.|拿書。
 qstr_Go_to_the_secret_ent|前往摩瑞亞的秘密入口
 qstr_Search_for_a_secret_|尋找一個進入摩瑞亞的秘密入口
-qstr_Get_book.|拿書。
 qstr_The_{reg6?town_s:cas|{reg6?城鎮裡:城堡裡}的食物庫存應該還能堅持{reg3}天。
 qstr_The_{reg6?town_s:cast|{reg6?城鎮裡:城堡裡}的食物庫存已經沒了而守軍正在挨餓。
 qstr_You_re_preparing_to_|你正在準備攻擊城牆，準備還需要{reg9}個小時。
@@ -1159,6 +1154,8 @@ qstr_Breaking_camp...|拔營...
 qstr_Party_morale_is_low.|部隊士氣過低，士兵離開了你的部隊。
 qstr_Desertion|逃兵
 qstr_{s1}_has_deserted_fr|{s1} 離開了你的隊伍。
+qstr_You_don_t_have_enoug|隊伍人數不足以看管俘虜，逃跑的機率增加。
+; qstr_{s1}_has_escaped_fro|{s1} has escaped from your party.
 qstr_You_have_left_{s1}.|你離開了{s1}。
 qstr_You_are_entering_{s1|你進入了{s1}({s2})。
 qstr_You_are_entering_{s1}|你進入了{s1}。
@@ -1190,6 +1187,7 @@ qstr_In_a_desperate_attem|為了防禦他的敵人，索倫孤注一擲的派出
 qstr_The_forces_of_{s2}_e|{s2}的軍隊在{s15}建立了前線營地！
 qstr_The_hosts_of_{s2}_ma|{s2}的大軍回去保衛他們的家園了！
 qstr_{playername}_s_Reser|{playername}的預備役
+; qstr_{reg70}___Last_Stand|{reg70} - Last Stand
 qstr_Gondor_has_called_fo|剛鐸已呼叫援助了！
 qstr_Gondor_is_accompanyi|剛鐸正跟隨著元帥！
 qstr_{s5}_has_stopped_fol|{s5}停止跟隨著你。
@@ -1701,6 +1699,16 @@ qstr__Guards_slaughter_hi|守衛，宰了他！
 qstr_Slaughter_him_for_fr|宰掉他來當新鮮的人肉！
 qstr_This_is_{s5}_Command|這裡是{s5}，指揮官。
 qstr_{s6}_This_place_and_|{s6}這裡和它的週遭都屬於{s8}的{s7}。
+; qstr_Hear_now_commander._|Hear now, commander. I am currently out of assignment, yet I would rather meet our enemies in the field than wait for them to come here. I hear you're a capable leader. Would you have me?
+; qstr_My_party_was_wiped_o|My party was wiped out in the last battle and I don't want to be assigned to the next best fool. I hear you're a capable leader. Could you use another warrior?
+; qstr_{s9}_joined_your_par|{s9} joined your party
+; qstr_A_pity!_I_sure_would|A pity! I sure would have liked to fight in your party-
+; qstr_Too_bad_you_will_reg|Too bad, you will regret not taking me with you.
+; qstr_Lead_me_to_the_{s3}|Lead me to the {s3}
+; qstr_Lead_me_to_the_local|Lead me to the local authority
+; qstr_Lead_me_to_the_Lord_|Lead me to the Lord's hall
+; qstr_Lead_me_to_your_comm|Lead me to your commanders
+; qstr_Lead_me_to_the_capta|Lead me to the captain of the garrison
 qstr_Hey_scum!_I_can_fix_|嘿渣滓！看來你的下巴欠修理喔。
 qstr_Watch_where_you_re_g|看路，蛆蟲！
 qstr_I_don_t_like_your_fa|我不喜歡你的長相！我認為你需要整型。

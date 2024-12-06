@@ -1,5 +1,3 @@
-trp_unarmed_troop|Fegyvertelen katona
-trp_unarmed_troop_pl|Fegyvertelen katonák
 trp_tutorial_maceman|Buzogányos
 trp_tutorial_maceman_pl|Buzogányosok
 trp_tutorial_archer|Íjász
@@ -766,72 +764,66 @@ trp_c4_mordor_num_horseman|Fekete númenori lovas
 trp_c4_mordor_num_horseman_pl|Fekete númenori lovasság
 trp_c5_mordor_num_knight|Fekete númenori lómester
 trp_c5_mordor_num_knight_pl|Fekete númenori lómesterek
-trp_noldorin_commander|Ñolda parancsnok
-trp_noldorin_commander_pl|Ñolda parancsnokok
-trp_elf_captain_of_lothlorien|Lothlórien tünde kapitánya
-trp_elf_captain_of_lothlorien_pl|Lothlórien tünde kapitányai
-trp_lothlorien_lieutenant|Lothlórieni hadnagy
-trp_lothlorien_lieutenant_pl|Lothlórieni hadnagyok
-trp_elf_captain_of_mirkwood|Zölderdő tünde kapitánya
-trp_elf_captain_of_mirkwood_pl|Zölderdő tünde kapitányai
-trp_mirkwood_lieutenant|Zölderdei hadnagy
-trp_mirkwood_lieutenant_pl|Zölderdei hadnagyok
-trp_elf_captain_of_rivendell|Völgyzugoly tünde kapitánya
-trp_elf_captain_of_rivendell_pl|Völgyzugoly tünde kapitányai
-trp_rivendell_lieutenant|Völgyzugolyi hadnagy
-trp_rivendell_lieutenant_pl|Völgyzugolyi hadnagyok
-trp_lieutenant_of_rohan|Rohan hadnagya
-trp_lieutenant_of_rohan_pl|Rohan hadnagyai
-trp_captain_of_rohan|Rohan kapitánya
-trp_captain_of_rohan_pl|Rohan kapitányai
-trp_high_captain_of_rohan|Rohan főkapitánya
-trp_high_captain_of_rohan_pl|Rohan főkapitányai
-trp_lieutenant_of_isengard|Vasudvard hadnagya
-trp_lieutenant_of_isengard_pl|Vasudvard hadnagyai
-trp_captain_of_isengard|Vasudvard kapitánya
-trp_captain_of_isengard_pl|Vasudvard kapitányai
-trp_high_captain_of_isengard|Vasudvard főkapitánya
-trp_high_captain_of_isengard_pl|Vasudvard főkapitányai
-trp_lieutenant_of_mordor|Mordor hadnagya
-trp_lieutenant_of_mordor_pl|Mordor hadnagyai
-trp_captain_of_mordor|Mordor kapitánya
-trp_captain_of_mordor_pl|Mordor kapitányai
-trp_high_captain_of_mordor|Mordor főkapitánya
-trp_high_captain_of_mordor_pl|Mordor főkapitányai
-trp_easterling_chieftain|Variag törzsfőnök
-trp_easterling_chieftain_pl|Variag törzsfőnökök 
-trp_easterling_lieutenant|Variag csatapap
-trp_easterling_lieutenant_pl|Variag csatapapok
-trp_harad_chieftain|Haradi törzsfőnök
-trp_harad_chieftain_pl|Haradi törzsfőnökök
-trp_harad_lieutenant|Haradi hadnagy
-trp_harad_lieutenant_pl|Haradi hadnagyok
-trp_black_numenorean_captain|Fekete númenori kapitány
-trp_black_numenorean_captain_pl|Fekete númenori kapitányok
-trp_black_numenorean_lieutenant|Fekete númenori hadnagy
-trp_black_numenorean_lieutenant_pl|Fekete númenori hadnagyok
-trp_a5_dun_night_wolf|Dún éjfarkas
-trp_a5_dun_night_wolf_pl|Dún éjfarkasok
-trp_dunnish_lieutenant|Dún hetman
-trp_dunnish_lieutenant_pl|Dún hetmanok
-trp_goblin_chieftain|Kobold törzsfőnök
-trp_goblin_chieftain_pl|Kobold törzsfőnökök
-trp_captain_of_gondor|Gondor kapitánya
-trp_captain_of_gondor_pl|Gondor kapitányai
-trp_nobleman|Nemes
-trp_nobleman_pl|Nemesek
-trp_gondor_agent|Gondori ügynök
-trp_gondor_agent_pl|Gondori ügynökök
-trp_rohan_agent|Rohani ügynök
-trp_rohan_agent_pl|Rohani ügynökök
-trp_mordor_agent|Mordori ügynök
-trp_mordor_agent_pl|Mordori ügynökök
-trp_isengard_agent|Vasudardi ügynök
-trp_isengard_agent_pl|Vasudvardi ügynökök
-trp_looter|Fosztogató
-trp_looter_pl|Fosztogatók
-trp_bandit|Bandita
-trp_bandit_pl|Banditák
+; trp_greenwood_captain|Greenwood Captain
+; trp_greenwood_captain_pl|Greenwood Captains
+; trp_lorien_captain|Lothlorien Captain
+; trp_lorien_captain_pl|Lothlorien Captains
+; trp_riv_captain|Rivendell Elf Lord
+; trp_riv_captain_pl|Rivendell Elf Lords
+; trp_arnor_captain|Captain of Arnor
+; trp_arnor_captain_pl|Captains of Arnor
+; trp_arnor_ranger_captain|Ranger Captain of Arnor
+; trp_arnor_ranger_captain_pl|Ranger Captains of Arnor
+trp_rohan_captain|Rohan kapitánya
+trp_rohan_captain_pl|Rohan kapitányai
+; trp_beorning_captain|Beorning Chieftain
+; trp_beorning_captain_pl|Beorning Chieftains
+; trp_woodmen_captain|Woodmen Chieftain
+; trp_woodmen_captain_pl|Woodmen Chieftains
+trp_isen_captain|Vasudvard kapitánya
+trp_isen_captain_pl|Vasudvard kapitányai
+; trp_isen_tracker_captain|Isengard Tracker Captain
+; trp_isen_tracker_captain_pl|Isengard Tracker Captains
+trp_mordor_uruk_captain|Mordor uruk kapitánya
+; trp_mordor_uruk_captain_pl|Mordor Uruk Captains
+trp_mordor_captain|Mordor kapitánya
+trp_mordor_captain_pl|Mordor kapitányai
+trp_umbar_captain|Umbar kapitánya
+; trp_umbar_captain_pl|Captains of Umbar
+; trp_khand_captain|Variag War Chief
+; trp_khand_captain_pl|Variag War Chiefs
+; trp_rhun_captain|Rhun Chieftain
+; trp_rhun_captain_pl|Rhun Chieftains
+; trp_moria_captain|Uruk Chieftain of Moria
+; trp_moria_captain_pl|Uruk Chieftains of Moria
+; trp_dwarf_captain|Dwarf Captain
+; trp_dwarf_captain_pl|Dwarf Captains
+trp_dale_captain|Suhatag kapitánya
+; trp_dale_captain_pl|Captains of Dale
+; trp_harad_captain|Haradrim Noble
+; trp_harad_captain_pl|Haradrim Nobles
+trp_a5_dun_night_wolf2|Dún éjfarkas
+trp_a5_dun_night_wolf2_pl|Dún éjfarkas
+trp_dun_captain|Dún hetman
+trp_dun_captain_pl|Dún hetmanok
+; trp_gunda_captain|Gundabad Chieftain
+; trp_gunda_captain_pl|Gundabad Chieftains
+trp_gondor_captain|Gondor kapitánya
+trp_gondor_captain_pl|Gondor kapitányai
+trp_pel_captain|Pelargiri kapitány
+trp_pel_captain_pl|Pelargiri kapitányok
+; trp_amroth_captain|Knight Captain of Dol Amroth
+; trp_amroth_captain_pl|Knights Captain of Dol Amroth
+trp_lam_captain|Lamedoni kapitány
+trp_lam_captain_pl|Lamedoni kapitányok
+trp_loss_captain|Lossarnachi kapitány
+trp_loss_captain_pl|Lossarnachi kapitányok
+trp_pinnath_captain|Pinnath Gelini kapitány
+trp_pinnath_captain_pl|Pinnath Gelini kapitányok
+; trp_blackroot_captain|Captain of Blackroot Vale
+; trp_blackroot_captain_pl|Captains of Blackroot Vale
+trp_ithilien_captain|Ithilieni kósza kapitány
+trp_ithilien_captain_pl|Ithilieni kósza kapitányok
 trp_brigand|Briganti
 trp_brigand_pl|Brigantik
 trp_mountain_bandit|Hegyi bandita
@@ -865,17 +857,11 @@ trp_messenger_orc_pl|Hírnökök
 trp_messenger_evil_man|Hírnök
 trp_messenger_evil_man_pl|Hírnökök
 trp_town_walker_1|Városi
-trp_town_walker_1_pl|Városiak
 trp_town_walker_2|Városi asszony
-trp_town_walker_2_pl|Városi asszonyok
 trp_village_walker_1|Falusi
-trp_village_walker_1_pl|Falusiak
 trp_village_walker_2|Falusi
-trp_village_walker_2_pl|Falusiak
 trp_spy_walker_1|Városi
-trp_spy_walker_1_pl|Városiak
 trp_spy_walker_2|Városi asszony
-trp_spy_walker_2_pl|Városi asszonyok
 trp_walker_man_gondor_black|Városi
 trp_walker_man_gondor_white|Városi
 trp_walker_man_gondor_blue|Városi
@@ -991,11 +977,11 @@ trp_knight_1_5|Duinhir
 trp_knight_1_6|Szép Hirluin
 trp_knight_1_7|Faramir
 trp_knight_1_8|Hájas Forlong
-trp_knight_1_9|Grimbold
+; trp_knight_1_9|Theodred
 trp_knight_1_10|Erkenbrand
 trp_knight_1_11|Elfhelm
 trp_knight_1_12|Háma
-trp_knight_1_13|Gamling
+trp_knight_1_13|Grimbold
 trp_knight_1_14|Éomer
 trp_knight_1_15|Uglúk
 trp_knight_1_16|Mauhúr
@@ -1375,7 +1361,7 @@ trp_elder_edoras|Edoras thainje
 trp_elder_edoras_pl|a város
 trp_elder_aldburg|Öregvár thainje
 trp_elder_aldburg_pl|a kisváros
-trp_elder_hornburg|Kürtvár thainje
+trp_elder_hornburg|Gamling
 trp_elder_hornburg_pl|az erőd
 trp_elder_eastemnet|Keletelve thainje
 trp_elder_eastemnet_pl|a kisváros
@@ -1391,7 +1377,7 @@ trp_elder_mmorgul|Morgul törzsfője
 trp_elder_mmorgul_pl|a baljóslatú város
 trp_elder_cungol|Tábori törzsfő
 trp_elder_cungol_pl|a tábor
-trp_elder_isengard|Kígyónyelvű Gríma
+; trp_elder_isengard|Isengard Overseer
 trp_elder_isengard_pl|a város
 trp_elder_cgaladhon|Lórieni Mítoszmester
 trp_elder_cgaladhon_pl|a tünde erdei erőd
@@ -1482,30 +1468,20 @@ trp_tax_rebel_pl|Zsellér lázadók
 trp_trainee_peasant|Zsellér
 trp_trainee_peasant_pl|Zsellérek
 trp_fugitive_man|Gyanús férfi
-trp_fugitive_man_pl|Gyanús férfiak
 trp_fugitive_elf|Gyanús tünde
-trp_fugitive_elf_pl|Gyanús tündék
 trp_fugitive_dwarf|Gyanús törp
-trp_fugitive_dwarf_pl|Gyanús törpök
 trp_fugitive_orc|Gyanús ork
-trp_fugitive_orc_pl|Gyanús orkok
 trp_spy|Ravasz-tekintetű kalóz
-trp_spy_pl|Ravasz-tekintetű kalózok
 trp_spy_evil|Ravasz-tekintetű keletlakó
-trp_spy_evil_pl|Ravasz-tekintetű keletlakók
 trp_spy_partner|Kém összeköttető
-trp_spy_partner_pl|Kém összeköttetők
 trp_spy_partner_evil|Kém összeköttető
-trp_spy_partner_evil_pl|Kém összeköttető
 trp_easter_egg_troll|A Troll
 trp_treebeard|Szilszakáll
 trp_ent_1|Hamariberkenye
 trp_ent_2|Lombfürt
 trp_ent_3|Kéregirha
 trp_gandalf|Gandalf
-trp_gandalf_pl|Otthon-nevelt Gandalfok
 trp_nazgul|Nazgûl
-trp_nazgul_pl|Szelídített nazgûl
 ; trp_radagast|Radagast
 trp_barman|Csapos
 trp_elder|Központi elöljáró
@@ -1516,14 +1492,11 @@ trp_dorwinion_bandit|Dorwinioni bandita
 trp_dorwinion_bandit_pl|Dorwinioni banditák
 trp_dorwinion_raider|Dorwinioni rabló
 trp_dorwinion_raider_pl|Dorwinioni rablók
+; trp_no_troop_pl|the place
 trp_city_guard|Városőr
-trp_city_guard_pl|városőr
 trp_orc_sentry|Ork őrszem
-trp_orc_sentry_pl|ork őrszem
 trp_uruk_hai_sentry|Uruk-hai őrszem
-trp_uruk_hai_sentry_pl|uruk-hai őrszem
 trp_black_numenorean_sorcerer|Fekete númenori varázsló
-trp_black_numenorean_sorcerer_pl|fekete númenori varázsló
 ; trp_evil_priest|Evil Priest
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|Bakacsinerdei farkaslovas
@@ -1559,8 +1532,19 @@ trp_start_quest_mordor_scout|Mordori felderítő
 trp_start_quest_mordor_scout_pl|Mordori felderítők
 trp_start_quest_beorning|Beornfi szirtfői berzerker
 trp_start_quest_beorning_pl|Beornfi szirtfői berzerkerek
+; trp_black_shield|Amath Dollen
+; trp_black_shield_bandit|Amath Dollen's Bandit
+; trp_black_shield_bandit_pl|Amath Dollen's Bandits
+; trp_black_shield_scout|Amath Dollen's Scout
+; trp_black_shield_scout_pl|Amath Dollen's Scouts
+; trp_black_shield_guard|Amath Dollen's Guard
+; trp_black_shield_guard_pl|Amath Dollen's Guards
+; trp_dorwinion_spirit_leader|Spirit
+; trp_dorwinion_spirit|Lesser Spirit
 trp_i6_beorning_bear_warrior|Medveharcos
 trp_i6_beorning_bear_warrior_pl|Medveharcosok
+trp_a5_dun_night_wolf|Dún éjfarkas
+trp_a5_dun_night_wolf_pl|Dún éjfarkasok
 trp_morannon_healer|Okstuk a Gyógyító
 trp_minas_tirith_healer|Ioreth
 trp_edoras_healer|Freya a Gyógyító
@@ -1582,6 +1566,7 @@ trp_c5_rhovanion_noble_pl|Rhovanioni nemesek
 trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigurphel
+; trp_npc21|Berta
 trp_werewolf|Vérfarkas
 trp_werewolf_pl|Farkasember
 trp_moria_troll|Barlangi troll
@@ -1647,3 +1632,5 @@ trp_pippin_notmet|félszerzet
 trp_merry_notmet|félszerzet
 trp_pippin|Pippin
 trp_merry|Trufa
+trp_grima|Kígyónyelvű Gríma
+trp_grima_pl|a város

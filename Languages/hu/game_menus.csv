@@ -5,7 +5,10 @@ mno_faction_intros|Tanulj Középfölde különböző népeiről
 mno_go_bback|Vissza
 menu_start_phase_2|^^^^^ Középfölde. Egy árnyék növekszik Keleten, ^ és sötét dolgok bújnak elő, melyek sokáig rejtőztek. ^ A szabad népek felkészülnek a háborúra, egy olyanra melyet évszázadok óta nem látott a világ. ^ Emberek, Tündék, Törpék, Orkok; mindannyian kiveszik belőle a részüket. ^^ Hogy milyen részt, azt még nem tudni,..
 mno_go_forth|Haladj előre a választott utadon...
+; mno_change_war_start_mode|War Starts:  {s7}
+; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|Az Utolsó Napok beállításainak megváltoztatása.
+; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^^Válaszd ki a körülményeket:
 mno_custom_battle_scenario_1|Portyázás, Gondor népei Harad ellen
 mno_custom_battle_scenario_12|Válaszd ki a népeket a csatára
@@ -35,7 +38,6 @@ mno_view_upkeep_costs|Fenntartási költségek megtekintése.
 mno_view_character_report|Karakterbeszámoló megtekintése.
 mno_view_party_size_report|Csapatméret beszámolójának megtekintése.
 mno_view_morale_report|Csapatmorál beszámolójának megtekintése.
-mno_view_character_report_02|NJK állapotának ellenőrzése.
 mno_view_faction_strengths_report|Néperő beszámolójának megtekintése.
 mno_view_traits_report|Jellemvonások megtekintése.
 mno_resume_travelling|Utazás folytatása.
@@ -47,7 +49,6 @@ mno_continue_dot|Folytatás.
 menu_custom_battle_durin_end|^^^^^^Ez egy csodálatra méltó végső helytállás volt, de végérvényesen bukásra ítéltetett.^^ Te és a rokonaid {reg5} ellenséget öltetek meg.^Te személyesen {reg7} ellenfelet kaszaboltál le a harc alatt.
 mno_replay_cbd|Csata újrajátszása.
 mno_continue_dot_cbd|Folytatás.
-mno_dot_go_back|. Vissza
 menu_start_good|^^^^^^^^^^Válassz fajt:
 mno_start_ma|EMBER
 mno_start_el|TÜNDE
@@ -110,10 +111,8 @@ mno_start_2_far|Messze-haradi törzstag
 menu_start_numenorean|^^^^^^^Te egy fekete númenori vagy,^hűséges a Sötétséghez és Morgoth-hoz.^Válaszd ki hol is szolgálod a Szemet
 mno_start_1_bn|Szauron Szája mellett, MORANNON-ban
 mno_start_2_bn|A Nekromanta Erődjében, DOL GULDUR-ban
-menu_choose_gender|^^^^^^^^^Nemed?
 mno_start_male|Férfi
 mno_start_female|Nő
-mno_proc|Folytasd a megszokott módon
 menu_start_as_one|^^^^^^^^^^Milyen típusú katona vagy?
 mno_start_default|Légy {s23} (Alapvető)
 mno_start_up1|Légy {s21} (Könnyű)
@@ -127,8 +126,8 @@ mno_camp_action|Tárgy használata.
 mno_camp_wait_here|Letáborozás.
 mno_camp_options|Az Utolsó Napok beállításainak megváltoztatása.
 mno_Dev_Menu|Fejlesztői Menü
-menu_dev_menu|Ezek a Fejlesztői Lehetőségek rengeteg csalást/eszközt adnak a kezedbe.^^ Habár, ezek WIP (Work in progess/Kidolgozás alatt álló) történéseket hozhatnak elő vagy megváltoztathatják a kampányt amik így akár tönkre is tehetik a játékot.^^ A saját felelősségedre használd őket! ^^ Emellett, amikor játékhibákat jelentesz be, kérlek említsd meg nekünk hogyha használtad a Fejlesztői Menüt.
-mno_Cheat_enable|Csalás/modding lehetőségek engedélyezése.
+; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_cheat_enable|Csalás/modding lehetőségek engedélyezése.
 menu_game_options|^^^^^^^^Kattints egy beállításra a következő lehetőségek bekapcsolásához:
 mno_game_options_war_level_start|A háború elkezdődéséhez kellő játékosszint: {s1}
 mno_game_options_restrict_items|Korlátozott játékos felszerelés: {s7}
@@ -160,8 +159,8 @@ mno_strat_tweaks_siege_reqs|Ostrom erő követelményei: {s7}
 mno_strat_tweaks_siege_relax_rate|Ostrom erős előfelt. gyengítési értéke: {reg1}
 mno_strat_tweaks_regen_rate|Erő regenerálódási érték: {s7}
 mno_strat_tweaks_siege_regen_limit|A népek ereje lassabban áll helyre a következők alatt: {reg1}
-mno_strat_tweaks_influence_gain_rate|Befolyás szerezésének üteme: {s7}
-mno_strat_tweaks_rank_gain_rate|Rang szerzésének üteme: {s7}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
 mno_strat_tweaks_back|Vissza a finomítások menübe.
 menu_camp_action|^^^^^^^^^     Melyik tárgy?
 mno_camp_drink_water|Idd meg az Entvizet!
@@ -255,12 +254,12 @@ menu_besiegers_camp_with_allies|{s1} ostrom alatt marad. {s2} zászlói az ostro
 mno_talk_to_siege_commander|Kérj találkozót a parancsnokkal.
 mno_join_siege_with_allies|Csatlakozz a következő támadáshoz.
 mno_join_siege_stay_back|Parancsold meg katonáidnak, hogy csatlakozzanak nélküled a következő támadáshoz.
-menu_moria_must_escape|^^A könyv a Móriába visszatelepülni kívánó törpök utolsó kísérletét próbálja bemutatni. Egy kísérletet, mely minden résztvevő számára szörnyű halállal végződött. Átolvasva a könyvet, a következő szavakba botlasz: "ezüstacél"! Áttanulmányozva az oldalakat hirtelen ráeszmélsz, hogy a leírások az alsóbb szinteken eldugott törp kincsekről szólnak. Háháá! Hát nem lenne csodás felfedezni a rég elvesztett törp mithrillt? ^Kíváncsian követed az iránymutatást egy szűk, kanyargós járaton lefelé... ^...^Néhány óra eredménytelen keresés után rájössz, hogy elvesztél Mória mélységeiben, és találnod kell egy kiutat.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Találd meg a kifelé vezető utat!
 menu_castle_outside|Kint vagy {s2}.{s11} {s3} {s4}
-mno_moria_enter|Visszatérés Mória főcsarnokába a titkos bejáraton keresztül.
-mno_moria_enter_door|Belépés Móriába.
 mno_cheat_steal_book_door|Szerezd meg a könyvet
+; mno_moria_enter|Return into main hall of Moria through the secret entrance
+mno_moria_enter_door|Belépés Móriába.
 mno_castle_start_siege|{reg6?város:kastély} megostromlása.
 mno_castle_leave|Távozás.
 menu_castle_besiege|Ostrom alá veszed {s1}. {s2} {s3}
@@ -305,6 +304,7 @@ mno_trade_with_horse_merchant|Meglátogatod a {s41}t.
 mno_talk_to_castle_commander|Látogasd meg a/az {s61} barakkokat.
 mno_speak_with_elder|Beszélj {s6} parancsnokhoz.
 ; mno_town_ask|Ask around for persons of import...
+; mno_player_initiate_siege|Attack the {reg6?town:castle}...
 mno_isengard_underground|Menj a földalatti barlangokba.
 mno_isengard_underground_door|Menj a földalatti barlangokba
 mno_tirith_toplevel|Mássz fel a legfelső szintre.
@@ -349,6 +349,16 @@ mno_explore|Fedezd fel a helyszínt.
 menu_ring_hunter_lair|^^^^Követted a Gyűrű Vadászok nyomát a Bakacsinerdőn keresztül, és megérkeztél {s1}-hoz/höz. Látod ahogy készen állnak távozni egy ládával.
 mno_attack_lair|Támadd meg őket azonnal
 mno_leave_bandit_lair|Hagyd békén őket
+; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
+; mno_go_with_the_raftmen|Take the raft to Dorwinion
+; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
+mno_ride_to_dorwinion_next|Következő...
+; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
+; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
+; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
+; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
+; mno_bandit_fortress_spirits|Go talk with the spirits.
+mno_leave_amath_dollen_fortress|Hagyd békén őket
 menu_gondor_reinforcement_event|^^^^^Gondor őrtüzei kigyulladtak, Minas Tirith segítséget kér!^^A déli hűbérbirtokok urai északnak menetelnek hogy megvédjék a Fehér Várost az eljövendő sötétségtől.
 mno_gondor_reinforcement_event_close|Bezár
 menu_gondor_beacons|Felnézel {s1}re, Gondor egyik őrtűzére, amit arra szoktak használni hogy riadóztassák Gondor északi és déli részeit.
@@ -362,6 +372,7 @@ mno_player_added_to_allow_follow_close|Bezár
 menu_center_besieged_event|^^^^^Egy hírnök érkezett azt jelentve hogy {s1} ostrom alá lett véve a {s3}ból/ből érkező {s2} által.
 mno_center_besieged_event_close|Bezár
 menu_guardian_party_spawned|^^^^^Felderítők jelentik hogy {s6} összemustrált egy hatalmas sereget {s7} környékén, egy utolsó elkeseredett próbálkozásként hogy megvédhesse a fővárost.
+mno_guardian_party_spawned_close|Bezár
 mno_intro_next|Folytatás...
 mno_start_defend_caravan|Védd meg a Karavánt!
 mno_start_raid_caravan|Foszd ki a Karavánt!
@@ -391,7 +402,6 @@ mno_leave_refugees|Hagyd békén őket egyelőre...
 mno_evil_war_tut_continue|Folytatás...
 menu_alternate_training_fight|Te {reg5} ellenféllel fogsz szembenézni. Készen állsz?
 mno_training_continue|Edzés elkezdése...
-menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Próbáld újra...
 mno_alternate_training_finish|Hagyd el az arénát...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Válaszd ki az oldalad és küzdj rajta:
@@ -415,7 +425,7 @@ mno_cb_mordor3|Haradrim
 mno_cb_mordor4|Keletlakók
 mno_cb_mordor5|Mória
 mno_cb_mordor6|Gundabad
-mno_cb_mordor7|Rhûn
+; mno_cb_mordor7|Rhûn
 mno_cb_mordor8|Kalózok
 mno_rescue_mission|Osonj be a mágus fészkébe az éjszaka leple alatt.
 mno_next_rescue_scene_door|Haladj tovább!
@@ -437,7 +447,6 @@ mno_leave_pyre|Hagyd ott a halotti máglyát.
 menu_town_ruins|Amikor megközelíted, látod hogy {s1} már {s2}
 mno_ruin_menu_0|Fedezd fel a helyszínt.
 mno_ruin_leave|Távozás...
-menu_premutiny|semmi
 menu_death|Megöltek. Bár a háború továbbfolyik, te nem leszel többé részese.
 menu_animal_ambush|Te és a társaid elszakadva találjátok magatokat a csapatotok többi tagjától, amikor hirtelen...
 menu_animal_ambush_success|A {s2} {reg0?elhull:elhullanak} előtted mint búza a kasza előtt! Hamarosan az összes támadód a földön fetreng, sebesülten vagy holtan. {s3}
@@ -457,3 +466,4 @@ mno_scene9|Erdő Kicsi (file scn custom 9.sco)
 mno_back_3dot|Vissza...
 mno_back|Vissza.
 mno_next|Következő...
+; mno_previous|Previous...

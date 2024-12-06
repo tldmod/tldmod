@@ -3,7 +3,7 @@ skl_trade_desc|Κάνει του σιδηρουργούς και τους έμπ
 skl_leadership|Ηγεσία
 ; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
 skl_prisoner_management|Διαχείριση Κρατουμένων
-skl_prisoner_management_desc|Κάθε επίπεδο αυτής της ικανότητας αυξάνει μέγιστη χωρητικότητα κρατούμενων κατά %d. Βελτιώνει τις πιθανότητες αιχμαλώτησης και κράτησης των κρατουμένων. (Ικανότητα Ηγέτη)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
 skl_persuasion|Τέχνης της Φύσης
 skl_persuasion_desc|Η ικανότητα να επιβιώνεις στην άγρια φύση και να την κάμπτεις υπό τη θέληση σου. Αυτή η ικανότητα επηρεάζει τη δυνατότητα της ομάδας να κρύβεται από τον εχθρό και τη ταχύτητα της ομάδας σε δασώδες έδαφος. (Ικανότητα Ομάδας)
 skl_engineer|-----

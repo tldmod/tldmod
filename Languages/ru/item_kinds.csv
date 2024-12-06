@@ -65,6 +65,10 @@ itm_wargarmored_2b|Бронированный варг
 itm_wargarmored_2c|Бронированный варг
 itm_wargarmored_3a|Бронированный варг
 itm_warg_reward|Огромный варг
+; itm_animal_big|Big Animal
+; itm_animal_small|Small Animal
+; itm_troll_weapon_long|Giant Halberd
+itm_troll_weapon_dmg|Огромная булава
 itm_tree_trunk_club_a|Ствол дерева
 itm_giant_mace|Огромная булава
 itm_troll_shield_a|Щит тролля
@@ -130,6 +134,8 @@ itm_harad_javelin|Харадский дротик
 itm_gondor_javelin|Гондорский дротик
 itm_rohirrim_throwing_axe|Метательные топоры северян
 itm_loss_throwing_axes|Лоссарнахские метательные топоры
+itm_free_dunedain_helm_a|Лёгкий шлем Арнора
+itm_free_dunedain_helm_b|Арнорский шлем
 itm_arnor_helm_c|Арнорский украшенный шлем
 itm_arnor_helm_b|Арнорский шлем
 itm_arnor_helm_a|Лёгкий шлем Арнора
@@ -433,8 +439,6 @@ itm_dunland_chieftain|Дунландская броня вождя
 itm_dun_helm_a|Дунландский волчий шлем
 itm_dun_helm_b|Дунландская меховая шапка
 itm_dun_helm_c|Дунландский высокий шлем
-itm_dun_helm_d|Дунландский высокий шлем
-itm_dun_helm_e|Дунландский Олений Шлем
 itm_dun_shield_a|Дунландский круглый щит 
 itm_dun_shield_b|Дунландский овальный щит
 itm_dun_berserker|Меч дунландского вождя
@@ -539,6 +543,7 @@ itm_desert_boots|Пустынные сапоги
 itm_harad_leather_greaves|Харадские кожаные поножи
 itm_harad_scale_greaves|Харадские поножи
 itm_harad_lamellar_greaves|Харадские кольчатые поножи
+; itm_camel|Harad Camel
 itm_khand_inf_helm_a|Хандский шлем
 itm_khand_inf_helm_b|Хандский шлем
 itm_khand_inf_helm_c1|Хандский шлем-чаша
@@ -590,6 +595,7 @@ itm_rhun_helm_chieftain|Рунийский шлем вождя
 itm_rhun_helm_pot|Рунийский шлем-котелок
 itm_rhun_helm_barbed|Рунийский шлем с шипами
 itm_rhun_helm_round|Рунийский круглый шлем
+itm_rhun_helm_horde|Рунийский шлем орды
 itm_rhun_helm_leather|Рунийский кожаный шлем
 itm_rhun_warpick|Рунийская боевая кирка
 itm_rhun_greataxe|Рунийский большой топор
@@ -700,7 +706,7 @@ itm_dwarf_helm_round|Гномий закруглённый шлем
 itm_dwarf_helm_sallet|Гномий саллет
 itm_dwarf_armor_d|Чешуйчатая куртка Железных Холмов
 itm_dwarf_armor_a|Эреборская куртка поверх кольчуги
-itm_leather_dwarf_armor|Гномья подбитая куртка
+; itm_leather_dwarf_armor|Erebor Padded Coat
 itm_dwarf_armor_b|Эреборская рубаха поверх кольчуги
 itm_leather_dwarf_armor_b|Гномья подбитая кожанка
 itm_dwarf_armor_c|Эреборская чешуйчатая кольчуга
@@ -719,7 +725,6 @@ itm_gondor_lance_banner|Гондорское копьё с флажком
 itm_amroth_lance_banner|Дол-амротское копьё с флажком
 itm_rohan_lance_banner_sun|Роханское копьё со знаменем солнца
 itm_rohan_lance_banner_horse|Роханское копьё со знаменем коня
-itm_fur_gloves_reward|Перчатки Охотника
 itm_ent_water|Странная чаша с водой
 itm_map|Карты Средиземья
 itm_athelas_reward|Сушеные листья Ателаса
@@ -783,9 +788,55 @@ itm_wolf|Волк
 itm_werewolf|Оборотень
 itm_thrush_reward|Дрозд
 itm_gauntlets_reward|Железные Персты
+; itm_gondor_custom|Custom Gondor
 itm_stones_siege|Осадные Камни
 itm_beorn_axe_no_attack|Беорнингская Секира
-itm_animal_spider|Паук
-itm_animal_bear|Медведь
-itm_animal_wolf|Волк
-itm_animal_werewolf|Оборотень
+; itm_tabard_b_wb|Tabard
+; itm_nobleman_outfit_b_new_wb|Nobleman Outfit
+; itm_peasant_man_a_wb|Peasant Outfit
+itm_leather_jerkin_wb|Кожаная куртка
+itm_white_tunic_c_wb|Куртка
+; itm_white_tunic_a_wb|White Tunic
+itm_red_tunic_wb|Красная одежда
+itm_fur_coat_wb|Дейльская одежда
+; itm_fur_hat_a_new_wb|Fur Hat
+; itm_noel_hat_a_wb|Fur Hat
+; itm_peasant_dress_b_new_wb|Blue Dress
+; itm_sarranid_lady_dress_wb|Blue Dress
+itm_sar_robe_b_wb|Мантия
+itm_black_dress_wb|Чёрное платье
+itm_blackwhite_dress_wb|Богатое платье
+itm_white_tunic_b_wb|Простая одежда
+itm_blue_tunic_wb|Синяя одежда
+itm_black_tunic_wb|Чёрная одежда
+itm_green_tunic_wb|Зелёная одежда
+itm_green_dress_wb|Зелёное платье
+itm_gondor_fine_outfit_dress_wb|Красивая одежда
+itm_rohan_fine_outfit_dale_dress_wb|Красивая одежда
+itm_robe_generic_dress_wb|Мантия
+itm_wimple_a_wb|Чепец
+itm_wimple_with_veil_wb|Чепец
+itm_fine_hat_wb|Красивая шляпа
+; itm_rohan_tunic_a_wb|Rohan Tunic
+; itm_rohan_tunic_b_wb|Rohan Tunic
+itm_denethor_robe|Красивая одежда
+itm_ent_head_helm2|Энтийская голова
+itm_ent_head_helm3|Энтийская голова
+; itm_civilian_hammer|Hammer
+; itm_civilian_woodaxe_1h|Axe
+; itm_civilian_woodaxe_2h|Heavy Axe
+; itm_civilian_war_mattock|Mattock
+; itm_civilian_great_mattock|Mattock
+; itm_civilian_adz|Mattock
+; itm_civilian_pickaxe|Mattock
+; itm_civilian_shovel|Shovel
+; itm_civilian_carry_wood_heap|Fire Wood
+; itm_civilian_carry_wood|Wood
+; itm_civilian_carry_amphora|Amphora
+; itm_civilian_carry_sack|Sack
+; itm_civilian_carry_basket|Basket
+; itm_civilian_carry_honey|Honey
+; itm_civilian_carry_oil|Oil
+; itm_civilian_carry_wood2|Wood
+; itm_work_basket|Basket
+; itm_work_basket_2|Basket

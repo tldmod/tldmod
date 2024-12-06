@@ -13,7 +13,6 @@ skinkey_nose_width|Φάρδος Μύτης
 skinkey_nose_size|Μέγεθος Μύτης
 skinkey_nose_shape|Σχήμα Μύτης
 skinkey_nose_bridge|Γέφυρα Μύτης
-
 skinkey_eye_width|Φάρδος Ματιών
 skinkey_eye_to_eye_dist|Απόσταση μεταξύ των Ματιών
 skinkey_eye_shape|Σχήμα Ματιών
@@ -22,7 +21,6 @@ skinkey_eyelids|Βλέφαρα
 skinkey_cheeks|Μάγουλα
 skinkey_cheek_bones|Ζυγωματικά
 skinkey_eyebrow_height|Ύψος Φρυδιών
-
 skinkey_eyebrow_shape|Σχήμα Φρυδιών
 skinkey_temple_width|Φάρδος Κρόταφου
 skinkey_face_depth|Βάθος Προσώπου
@@ -44,3 +42,5 @@ skinkey_frawn|Συνοφρύωμα
 skinkey_mouth_vert_pos|Κάθετη Θέση Στόματος
 skinkey_mouth_to_nose_dist|Απόσταση Στόματος και Μύτης
 skinkey_chin_width|Φάρδος Πιγουνιού
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

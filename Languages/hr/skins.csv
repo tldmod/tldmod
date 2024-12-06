@@ -13,7 +13,6 @@ skinkey_nose_width|Širina nosa
 skinkey_nose_size|Veličina nosa
 skinkey_nose_shape|Oblik nosa
 skinkey_nose_bridge|Most nosa
-
 skinkey_eye_width|Širina Očiju
 skinkey_eye_to_eye_dist|Udaljenost između očiju
 skinkey_eye_shape|Oblik oka
@@ -22,7 +21,6 @@ skinkey_eyelids|Kapci
 skinkey_cheeks|Obrazi
 skinkey_cheek_bones|kosti obraza
 skinkey_eyebrow_height|Visina obrve
-
 skinkey_eyebrow_shape|Oblik obrva
 skinkey_temple_width|Širina sljepoočnica
 skinkey_face_depth|dubina lica
@@ -44,3 +42,5 @@ skinkey_frawn|Mrštenje
 skinkey_mouth_vert_pos|Usta vertikalna pozicija
 skinkey_mouth_to_nose_dist|Udaljenost između usta i nosa
 skinkey_chin_width|Širina  brade
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

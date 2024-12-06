@@ -13,7 +13,6 @@ skinkey_nose_width|Nenän leveys
 skinkey_nose_size|Nenän koko
 skinkey_nose_shape|Nenän muoto
 skinkey_nose_bridge|Nenäsilta
-
 skinkey_eye_width|Silmän leveys
 skinkey_eye_to_eye_dist|Silmien kaukaisuus toisistaan
 skinkey_eye_shape|Silmien muoto
@@ -22,7 +21,6 @@ skinkey_eyelids|Silmäluomet
 skinkey_cheeks|Posket
 skinkey_cheek_bones|Poskiluut
 skinkey_eyebrow_height|Kulmakarvojen korkeus
-
 skinkey_eyebrow_shape|Kulmakarvojen muoto
 skinkey_temple_width|Ohimon leveys
 skinkey_face_depth|Naaman syvyys
@@ -44,3 +42,5 @@ skinkey_frawn|Kulmien rypistys
 skinkey_mouth_vert_pos|Suun korkeussijainti
 skinkey_mouth_to_nose_dist|Suun ja nenän välinen matka
 skinkey_chin_width|Alaleuan leveys
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

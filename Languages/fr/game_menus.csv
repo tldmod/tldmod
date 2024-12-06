@@ -5,7 +5,10 @@ mno_faction_intros|En apprendre plus à propos des différentes factions de la T
 mno_go_bback|Retour
 menu_start_phase_2|^^^^^La Terre du Milieu.^Une Ombre grandit à l'est et d'obscures créatures surgissent de l'ombre où elles furent tapies jadis.^Les peuples libres se préparent à la guerre, une guerre comme nul n'en a vue depuis l'Âge précédent.^Les hommes, les elfes, les nains et les orques, tous joueront leur rôle.^^Lequel, cependant ? Le temps nous le dira...
 mno_go_forth|Continuer sur la voie que vous avez choisie...
+mno_change_war_start_mode|La guerre commence : {s7}
+mno_toggle_tutorial|Infobulles de tutoriel : {s7}
 mno_change_tld_options|Changer les options de TLD.
+mno_see_info_pages|Concepts du jeu TLD.
 menu_start_game_3|^^^^^^^^Choisissez votre scénario :
 mno_custom_battle_scenario_1|Embuscade, Gondor contre Harad
 mno_custom_battle_scenario_12|Choisissez les factions pour la bataille
@@ -35,7 +38,6 @@ mno_view_upkeep_costs|Voir les coûts d'entretien.
 mno_view_character_report|Voir les détails du personnage.
 mno_view_party_size_report|Voir le rapport sur la taille du groupe.
 mno_view_morale_report|Voir le rapport sur le moral des troupes.
-mno_view_character_report_02|Voir le statut des compagnons.
 mno_view_faction_strengths_report|Voir le rapport de force des factions.
 mno_view_traits_report|Voir les traits de caractère.
 mno_resume_travelling|Reprendre le voyage.
@@ -47,7 +49,6 @@ mno_continue_dot|Continuer.
 menu_custom_battle_durin_end|^^^^^^C'était un dernier combat admirable, mais finalement voué à l'échec.^^ Vous et vos compagnons avez défait {reg5} ennemis.^Vous avez personnellement vaincu {reg7} adversaires au combat.
 mno_replay_cbd|Jouer à nouveau cette bataille.
 mno_continue_dot_cbd|Continuer.
-mno_dot_go_back|. Retour
 menu_start_good|^^^^^^^^^^Choisissez votre race :
 mno_start_ma|HOMME
 mno_start_el|ELFE
@@ -110,10 +111,8 @@ mno_start_2_far|Guerrier tribal du Harad Lointain
 menu_start_numenorean|^^^^^^^Vous êtes un Númenóréen Noir, loyal à l'obscurité et à Morgoth.^Choisissez où vous servez l’oeil...
 mno_start_1_bn|Aux cotés de la Bouche de Sauron, à la MORANNON
 mno_start_2_bn|Au coeur de la forteresse du Nécromancien, DOL GULDUR
-menu_choose_gender|^^^^^^^^^^Quel genre choisissez-vous de représenter ?
 mno_start_male|Homme
 mno_start_female|Femme
-mno_proc|Procéder normalement
 menu_start_as_one|^^^^^^^^^^Quel type de combattant êtes-vous ?
 mno_start_default|{s23} (Normal)
 mno_start_up1|{s21} (Facile)
@@ -127,8 +126,8 @@ mno_camp_action|Utiliser un objet.
 mno_camp_wait_here|Camper ici pour quelque temps.
 mno_camp_options|Changer les options de TLD.
 mno_Dev_Menu|Menu Développeur
-menu_dev_menu|Ce sont les Options Développeurs avec plusieurs outils de triche.^^Cependant, cela peut déclencher des événements, déclencheurs ou changement de campagne en cours de création qui peuvent faire crasher votre partie.^^Utilisez à vos risques et périls !^^Aussi, si vous reportez des bugs, merci de préciser que vous utilisez le Menu de Dev.
-mno_Cheat_enable|Activer la triche/les options de modding.
+menu_dev_menu|Ce sont des options de développement qui amènent des outils de triche avec lesquels vous pouvez jouer.^^Cependant, cela peut provoquer des événements, des déclencheurs ou des changements de campagne qui peuvent casser le jeu.^^Utilisez à vos risques et périls !^^Aussi, si vous reportez des bugs, merci de préciser que vous utilisez le Menu de Dev.
+mno_cheat_enable|Activer la triche/les options de modding.
 menu_game_options|^^^^^^^^Cliquez sur une option pour basculer :
 mno_game_options_war_level_start|La Guerre commence au Niveau : {s1}
 mno_game_options_restrict_items|Équipement du joueur restreint : {s7}
@@ -160,8 +159,8 @@ mno_strat_tweaks_siege_reqs|Force requise pour les sièges : {s7}
 mno_strat_tweaks_siege_relax_rate|Taux de baisse de la force requise pour sièges : {reg1}
 mno_strat_tweaks_regen_rate|Taux de régénération de force : {s7}
 mno_strat_tweaks_siege_regen_limit|La force de faction se régénère plus lentement à : {reg1}
-mno_strat_tweaks_influence_gain_rate|Taux de gain d'influence : {s7}
-mno_strat_tweaks_rank_gain_rate|Taux de gain de points de rang : {s7}
+mno_strat_tweaks_influence_gain_rate|Taux de gain d'influence : {reg0} %
+mno_strat_tweaks_rank_gain_rate|Taux de gain de points de rang : {reg0} %
 mno_strat_tweaks_back|Retour au menu des options.
 menu_camp_action|^^^^^^^^^ Quel objet ?
 mno_camp_drink_water|Boire de l'eau des Ents !
@@ -255,12 +254,12 @@ menu_besiegers_camp_with_allies|{s1} est assiégé. Les bannières de {s2} flott
 mno_talk_to_siege_commander|Demander une audience avec le commandant.
 mno_join_siege_with_allies|Participer au prochain assaut.
 mno_join_siege_stay_back|Ordonner à vos soldats de participer au prochain assaut sans vous.
-menu_moria_must_escape|^^Le livre semble rendre compte de la dernière tentative des nains de se réinstaller dans la Moria. Tentative qui s'est apparemment terminée par une mort horrible pour tous les participants. Parcourant les pages, vous tombez sur les mots « vrai-argent » ! Étudiant les pages avec attention, vous réalisez soudain que ce sont les descriptions de caches naines quelque part dans les niveaux inférieurs. Ha ! Cela ne sera-t-il pas formidable de retrouver le mithril nain, perdu depuis si longtemps ?^Vous suivez avec impatience la direction indiquée, suivant un étroit et sinueux tunnel qui s'enfonce dans les profondeurs... ^...^Après quelques heures de recherches infructueuses vous comprenez que vous êtes perdu{/e} au plus profond de la Moria, et que vous devez trouver un moyen de sortir.
+menu_moria_must_escape|^^Le livre semble rendre compte de la dernière tentative des nains de se réinstaller dans la Moria. Tentative qui s'est apparemment terminée par une mort horrible pour tous les participants. Alors que vous réfléchissez à leur sombre destin, vous entendez soudain des cris aigus et le bruit précipité de nombreux pieds.^Ils arrivent !^Quittant rapidement la pièce, vous remarquez que les bruits viennent du couloir. Vous n'avez d'autre choix que de fuir dans l'autre direction, suivant un étroit et sinueux tunnel qui s'enfonce dans les profondeurs... ^...^Au bout de quelques heures, vous comprenez que vous avez perdu votre chemin au plus profond de la Moria et que vous devez trouver un moyen de sortir.
 mno_moria_exit_scene|Trouver la sortie
 menu_castle_outside|Vous êtes à l'extérieur de {s2}. {s11} {s3} {s4}
+mno_cheat_steal_book_door|Prendre le livre
 mno_moria_enter|Retourner au hall principal de la Moria par l'entrée secrète.
 mno_moria_enter_door|Entrer dans la Moria.
-mno_cheat_steal_book_door|Prendre le livre
 mno_castle_start_siege|Assiéger {reg6?la ville:le château}.
 mno_castle_leave|Partir.
 menu_castle_besiege|Vous assiégez {s1}. {s2} {s3}
@@ -305,6 +304,7 @@ mno_talk_to_healer|Parler avec {s40}.
 mno_talk_to_castle_commander|Se rendre à la caserne de {s61}.
 mno_speak_with_elder|Parler avec le {s6}.
 mno_town_ask|Demander à parler à des responsables de l'import...
+mno_player_initiate_siege|Attaquer {reg6?la ville:le château}...
 mno_isengard_underground|Aller vers les cavernes souterraines.
 mno_isengard_underground_door|Aller dans les grottes souterraines
 mno_tirith_toplevel|Grimper au dernier niveau.
@@ -349,6 +349,16 @@ mno_explore|Explorer ce lieu.
 menu_ring_hunter_lair|^^^^Vous avez suivi le sentier des Chasseurs d'Anneaux à travers la forêt de Grand'Peur et vous êtes arrivé{/e} au {s1}. Vous les voyez se préparer à partir avec un coffre.
 mno_attack_lair|Les attaquer maintenant
 mno_leave_bandit_lair|Partir pour l'instant.
+menu_raftmen|^^^^Vous suivez la Rivière Courante qui coule vers le sud-est en direction de Rhûn, espérant trouver l'ancienne route marchande.^^Au bout d'un certain temps, vous arrivez à un petit village niché au bord de la rivière.^^Vous demandez aux villageois comment vous pourriez rejoindre la route et on vous oriente vers deux hommes qui naviguent sur la rivière en radeau.^^Il faut négocier, mais vous obtenez d'eux qu'ils vous amènent en aval de la rivière.
+mno_go_with_the_raftmen|Prendre le radeau vers le Dorwinion
+menu_ride_to_dorwinion|^^^^Vous vous détendez et profitez du beau temps pendant que les hommes dirigent le radeau vers l'aval. La Rivière Courante, froide et limpide au milieu des chutes et des rapides de la Montagne Solitaire, est ici tiède, douce et boueuse.^^Sous le soleil de l'après-midi, vous observez les plaines ondulantes et les forêts verdoyantes qui défilent tandis que le radeau flotte le long des méandres sinueux. La région est parsemée de petites fermes et de vignobles aux murets de pierre, et vous croisez de temps à autre une maison sur pilotis nichée dans les roseaux.^^Le mouvement paisible du radeau vous aide à vous endormir...
+mno_ride_to_dorwinion_next|Suivante...
+menu_amath_dollen_fortress|^^^^Vous vous réveillez de votre sieste en fin d'après-midi et atteignez rapidement une jetée où les hommes amarrent le radeau. Ils vous dirigent vers un chemin étroit qui disparaît dans l'herbe des marais et installent un camp en attendant votre retour.^^Vous suivez le chemin, qui monte rapidement des marais vers une plaine herbeuse, et marchez jusqu'à ce qu'il rejoigne l'ancienne route marchande.^^Au bout d'un certain temps, vous apercevez une forteresse de bandits.
+mno_bandit_fortress_with_companions|Approcher de la forteresse des bandits avec uniquement vos compagnons et tenter de parler à leur chef.
+mno_bandit_fortress_with_army|Attaquer le forteresse des bandits avec tous vos hommes.
+mno_bandit_fortress_against_easterlings|Défendre la forteresse contre le siège
+mno_bandit_fortress_spirits|Aller parler aux esprits.
+mno_leave_amath_dollen_fortress|Partir pour l'instant.
 menu_gondor_reinforcement_event|^^^^^Les feux d'alarmes du Gondor sont allumés, Minas Tirith appelle à l'aide !^^Les seigneurs des cités du sud vont marcher sur le nord pour défendre la Cité Blanche contre les ténèbres à venir.
 mno_gondor_reinforcement_event_close|Fermer
 menu_gondor_beacons|Vous regardez {s1}, un des feux d'alarme du Gondor utilisé pour sonner l'alarme au sud et au nord du Gondor.
@@ -362,6 +372,7 @@ mno_player_added_to_allow_follow_close|Fermer
 menu_center_besieged_event|^^^^^Un messager arrive et vous informe que {s2} de {s3} assiège {s1}.
 mno_center_besieged_event_close|Fermer
 menu_guardian_party_spawned|^^^^Nos éclaireurs nous informent que {s6} regroupe une grande armée aux alentours de {s7}, dans une dernière tentative de défendre la capitale.
+mno_guardian_party_spawned_close|Fermer
 mno_intro_next|Continuer...
 mno_start_defend_caravan|Défendre la caravane !
 mno_start_raid_caravan|Piller la caravane !
@@ -391,7 +402,6 @@ mno_leave_refugees|Les laisser pour l'instant...
 mno_evil_war_tut_continue|Continuer...
 menu_alternate_training_fight|Vous allez combattre {reg5} ennemis. Êtes vous prêt{/e} ?
 mno_training_continue|Commencer l’entraînement... 
-menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Réessayer...
 mno_alternate_training_finish|Quitter l'arène...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Choisissez votre camp et votre avantage :
@@ -415,7 +425,7 @@ mno_cb_mordor3|des Haradrim
 mno_cb_mordor4|des Orientaux
 mno_cb_mordor5|de la Moria
 mno_cb_mordor6|de Gundabad
-mno_cb_mordor7|de Rhûn
+mno_cb_mordor7|Rhûn
 mno_cb_mordor8|des Corsaires
 mno_rescue_mission|Se faufiler dans l'antre du sorcier sous la couverture de la nuit.
 mno_next_rescue_scene_door|Continuer à avancer !
@@ -437,7 +447,6 @@ mno_leave_pyre|Quitter le bûcher.
 menu_town_ruins|En approchant, vous voyez que {s1} est {s2}
 mno_ruin_menu_0|Explorer la zone.
 mno_ruin_leave|Partir...
-menu_premutiny|Aucun
 menu_death|Vous avez été tué{/e}. Bien que la guerre se poursuive, vous n'en ferez plus partie.
 menu_animal_ambush|Vous et vos compagnons ont été séparés du reste de votre groupe, lorsque soudain...
 menu_animal_ambush_success|Les {s2} {reg0?tombe:tombent} devant vous comme le blé devant la faux ! Bientôt, tous vos assaillants gisent sur le sol, blessés ou morts. {s3}
@@ -457,3 +466,4 @@ mno_scene9|Petite forêt (fichier scène custom 9.sco)
 mno_back_3dot|Retour...
 mno_back|Retour.
 mno_next|Suivante...
+mno_previous|Précédent...

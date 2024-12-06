@@ -13,7 +13,6 @@ skinkey_nose_width|Lebar Hidung
 skinkey_nose_size|Ukuran Hidung
 skinkey_nose_shape|Bentuk Hidung
 ; skinkey_nose_bridge|Nose Bridge
-
 skinkey_eye_width|Lebar Mata
 skinkey_eye_to_eye_dist|Jarak Antar Mata
 skinkey_eye_shape|Bentuk Mata
@@ -22,7 +21,6 @@ skinkey_eye_shape|Bentuk Mata
 skinkey_cheeks|Pipi
 skinkey_cheek_bones|Tulang Pipi
 skinkey_eyebrow_height|Panjang Alis
-
 skinkey_eyebrow_shape|Bentuk Alis
 ; skinkey_temple_width|Temple Width
 ; skinkey_face_depth|Face Depth
@@ -44,3 +42,5 @@ skinkey_eye_size|Ukuran Mata
 ; skinkey_mouth_vert_pos|Mouth Vert Pos
 skinkey_mouth_to_nose_dist|Jarak Antar Mulut ke Hidung
 skinkey_chin_width|Lebar Dagu
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

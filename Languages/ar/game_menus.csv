@@ -5,7 +5,10 @@ mno_faction_intros|تعرف على الفصائل المختلفة للأرض ا
 mno_go_bback|إرجع
 menu_start_phase_2|^^^^^في منتصف الارض.الظلام ينتشر الى الشرق,^  
 mno_go_forth|انطلق لصراطك المختار
+; mno_change_war_start_mode|War Starts:  {s7}
+; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|تغيير خيارات TLD.
+; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|اختر السنايرو
 mno_custom_battle_scenario_1|مناوشة, قاندور vs هاراد
 mno_custom_battle_scenario_12|اختر الطائفة للمعركة
@@ -35,7 +38,6 @@ mno_view_upkeep_costs|عرض قيمة الاجور
 mno_view_character_report|عرض تقرير الشخصية
 mno_view_party_size_report|عرض تقرير حجم الجيش
 mno_view_morale_report|عرض تقرير الروح المعنوية للجيش
-mno_view_character_report_02|التحقق من حالة ال NPC 
 mno_view_faction_strengths_report|عرض التقرير عن قوة الطائفة
 mno_view_traits_report|عرض الخواص الشخصية
 mno_resume_travelling|اكمل التنقل 
@@ -47,7 +49,6 @@ mno_continue_dot|اكمل
 menu_custom_battle_durin_end|^ ^ ^ ^ ^ ^ لقد كان موقفًا أخيرًا مثيرًا للإعجاب ، لكنه محكوم عليه بالفشل في النهاية. ^^ لقد قتلت أنت وأقاربك {reg5} من الأعداء. ^ لقد قتلت شخصيًا {reg7} من المعارضين في القتال.
 mno_replay_cbd|العب هذه المعركة مجددا
 mno_continue_dot_cbd|اكمل 
-mno_dot_go_back|عد 
 menu_start_good|اختر عرقك
 mno_start_ma|البشر
 mno_start_el|الايلفز
@@ -110,10 +111,8 @@ mno_start_2_far|من قبيلة ال فار هاراد
 menu_start_numenorean|^ ^ ^ ^ ^ ^ ^ ^ أنت اسم أسود ، ^ مخلص للظلام ومورجوث. ^ حدد المكان الذي تخدم فيه العين
 mno_start_1_bn|بجانب فم سورون ، في مورانون
 mno_start_2_bn|في قلعة مستحضر الأرواح ، دول غولدور
-menu_choose_gender|ماهوا جنسك؟
 mno_start_male|ذكر 
 mno_start_female|انثى 
-mno_proc|اكمل طبيعيًا
 menu_start_as_one|مانوعك من الجنود
 mno_start_default|كن (Default) {s23}
 mno_start_up1|كن (Easy) {s21}
@@ -127,8 +126,8 @@ mno_camp_action|استعمل الغرض
 mno_camp_wait_here|خيم هنا لبعض الوقت
 mno_camp_options|تغيير خيارات TLD.
 mno_Dev_Menu|قائمة المطور
-menu_dev_menu|هذه هي خيارات التطوير التي تمنحك الكثير من الغش / الأدوات لتلعب بها. ^ ^ ومع ذلك ، سينتج عن ذلك بعض أحداث العمل قيد التقدم ، والمشغلات ، وتغييرات الحملة التي قد تؤدي إلى كسر اللعبة. ^^ استخدمها على مسؤوليتك الخاصة! ^^ أيضًا ، عند الإبلاغ عن الأخطاء ، يرجى إخبارنا أنك تستخدم قائمة المطورين.
-mno_Cheat_enable|تفعيل خيارات الغش / التعديل.
+; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_cheat_enable|تفعيل خيارات الغش / التعديل.
 menu_game_options|^ ^ ^ ^ ^ ^ ^ ^ انقر على خيار للتبديل:
 mno_game_options_war_level_start|تبدأ الحرب على المستوى: {s1}
 mno_game_options_restrict_items|معدات اللاعب المقيدة: {s7}
@@ -160,8 +159,8 @@ mno_strat_tweaks_siege_reqs|متطلبات قوة الحصار: {s7}
 mno_strat_tweaks_siege_relax_rate|شارع الحصار. مطلوب. معدل الاسترخاء: {reg1}
 mno_strat_tweaks_regen_rate|معدل استعادة القوة: {s7}
 mno_strat_tweaks_siege_regen_limit|تتجدد قوة الفصيل بشكل أبطأ عند: {reg1}
-mno_strat_tweaks_influence_gain_rate|معدل كسب التأثير: {s7}
-mno_strat_tweaks_rank_gain_rate|معدل كسب الترتيب: {s7}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
 mno_strat_tweaks_back|العودة إلى قائمة المهام.
 menu_camp_action|^ ^ ^ ^ ^ ^ ^ ^ ^ اى موضوع؟
 mno_camp_drink_water|اشرب ماء اينت!
@@ -255,12 +254,12 @@ menu_besiegers_camp_with_allies|{s1} لا يزال تحت الحصار. رايا
 mno_talk_to_siege_commander|طلب لقاء مع القائد.
 mno_join_siege_with_allies|انضم إلى الهجوم التالي.
 mno_join_siege_stay_back|اطلب من جنودك الانضمام إلى الهجوم التالي بدونك.
-menu_moria_must_escape|^ ^ يبدو أن الكتاب يسرد قصة المحاولة الأخيرة للأقزام للاستقرار في موريا. محاولة انتهت على ما يبدو بموت رهيب لجميع المتورطين. عند قراءة الكتاب ، تتعثر في عبارة "الفضة الحقيقية"! عند دراسة الصفحات التي تدركها فجأة أن هذه هي أوصاف مخابئ أقزام في مكان ما في المستويات الدنيا. ههه! ألن يكون من الرائع الكشف عن قزم ميثريل المفقود منذ زمن طويل !؟ ^ أنت تتبع الاتجاهات بشغف ، في نفق متعرج ضيق وأسفل ... ^ ... ^ بعد بضع ساعات من البحث غير المثمر ، تدرك أنك تائه في أعماق موريا وتحتاج إلى إيجاد مخرج.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|ابحث عن طريقك للخروج!
 menu_castle_outside|أنت خارج {s2}. {s11} {s3} {s4}
-mno_moria_enter|العودة إلى قاعة موريا الرئيسية من خلال المدخل السري
-mno_moria_enter_door|أدخل موريا.
 mno_cheat_steal_book_door|احصل على الكتاب
+; mno_moria_enter|Return into main hall of Moria through the secret entrance
+mno_moria_enter_door|أدخل موريا.
 mno_castle_start_siege|حاصر {reg6؟ town: castle}.
 mno_castle_leave|ارحل.
 menu_castle_besiege|أنت تفرض حصارًا على {s1}. {s2} {s3}
@@ -305,6 +304,7 @@ mno_trade_with_horse_merchant|قم بزيارة {s41}.
 mno_talk_to_castle_commander|قم بزيارة {s61} Barracks.
 mno_speak_with_elder|تحدث مع {s6}.
 ; mno_town_ask|Ask around for persons of import...
+; mno_player_initiate_siege|Attack the {reg6?town:castle}...
 mno_isengard_underground|اذهب إلى الكهوف تحت الأرض.
 mno_isengard_underground_door|اذهب إلى الكهوف تحت الأرض
 mno_tirith_toplevel|يصعد إلى المستوى الأعلى.
@@ -349,6 +349,16 @@ mno_explore|اسكتشف هاذا المكان.
 menu_ring_hunter_lair|^ ^ ^ ^ لقد اتبعت درب Ring Hunters عبر غابة ميركوود ووصلت إلى {s1}. تراهم يستعدون للمغادرة بصدر.
 mno_attack_lair|هاجمهم الآن
 mno_leave_bandit_lair|غادر الآن.
+; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
+; mno_go_with_the_raftmen|Take the raft to Dorwinion
+; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
+; mno_ride_to_dorwinion_next|Next...
+; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
+; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
+; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
+; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
+; mno_bandit_fortress_spirits|Go talk with the spirits.
+mno_leave_amath_dollen_fortress|غادر الآن.
 menu_gondor_reinforcement_event|^ ^ ^ ^ ^ مضاءة منارات جوندور ، ويدعو ميناس تيريث للمساعدة! سوف يسير أمراء الإقطاعيات الجنوبية الآن شمالًا للدفاع عن المدينة البيضاء ضد الظلام القادم.
 mno_gondor_reinforcement_event_close|القريب
 menu_gondor_beacons|تنظر إلى {s1} ، أحد منارات التحذير في جوندور ، والتي تُستخدم في دق ناقوس الخطر في شمال وجنوب جوندور.
@@ -362,6 +372,7 @@ mno_player_added_to_allow_follow_close|القريب
 ; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
 mno_center_besieged_event_close|القريب
 ; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
+mno_guardian_party_spawned_close|القريب
 mno_intro_next|اكمل....
 ; mno_start_defend_caravan|Defend the Caravan!
 ; mno_start_raid_caravan|Raid the Caravan!
@@ -391,7 +402,6 @@ mno_intro_next|اكمل....
 mno_evil_war_tut_continue|اكمل....
 ; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
 ; mno_training_continue|Begin training...
-; menu_alternate_training_conclusion|{s5}
 ; mno_alternate_training_retry|Try again...
 ; mno_alternate_training_finish|Leave the arena...
 ; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:
@@ -415,7 +425,7 @@ mno_cb_mordor2|دنلاند
 ; mno_cb_mordor4|Easterlings
 mno_cb_mordor5|موريا
 ; mno_cb_mordor6|Gundabad
-mno_cb_mordor7|روهن
+; mno_cb_mordor7|Rhûn
 ; mno_cb_mordor8|Corsairs
 ; mno_rescue_mission|Sneak into the sorcerer's lair under the night's cover.
 ; mno_next_rescue_scene_door|Continue onward!
@@ -437,7 +447,6 @@ mno_cb_mordor7|روهن
 ; menu_town_ruins|When you approach, you see that {s1} is {s2}
 ; mno_ruin_menu_0|Explore the place.
 mno_ruin_leave|ارحل...
-; menu_premutiny|none
 ; menu_death|You have been killed. Though the war still rages on, you will no longer be part of it.
 ; menu_animal_ambush|You and your companions find yourselves separated from the rest of your party, when suddenly...
 ; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
@@ -457,3 +466,4 @@ mno_ruin_leave|ارحل...
 ; mno_back_3dot|Back...
 mno_back|عد للخلف 
 ; mno_next|Next...
+; mno_previous|Previous...

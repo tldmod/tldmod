@@ -1,4 +1,5 @@
 qstr_Received_{reg0}_dama|受到{reg0}点伤害。
+; qstr_Siege_weapon_damaged|Siege weapon damaged {reg10} agents
 qstr_Gate_is_breached!|大门已被攻破！
 qstr_Gate_opens..._You_ha|大门缓缓打开…你已经站在了中土最神圣的土地上！
 qstr_Secret_place_discove|发现密地
@@ -85,11 +86,13 @@ qstr_Proficiencies|熟练度
 qstr_1H_Weapons^2H_Weapon|单手武器^双手武器^长杆武器^弓箭^弩^投掷
 qstr_Equipment|装备
 qstr_The_Last_Days_Mod_Op|最后之日Mod选项
+; qstr_War_Starts_after_Day|War Starts after Day: 
 qstr_War_Starts_at_Level:|战争始于等级：
 qstr_Battle_Formations_an|战斗阵型和AI：
 qstr_Native|本地
 qstr_TLD_FormAI__Original|TLD AI（原始）
 qstr_TLD_New_FormAI|TLD新AI
+qstr_Beta_Formations_Twea|Beta 阵型调整
 qstr_Siege_AI:__|攻城AI：
 qstr_Basic__better_perfor|基础（电脑性能更好）
 qstr_Advanced|高级
@@ -103,6 +106,7 @@ qstr_Permanent_death_for_|领主和同伴永久死亡：
 qstr_Permanent_death_for_p|玩家（就是你！）永久死亡：
 qstr_Battle_morale_system|士气系统：
 qstr_Animal_ambushes:__|动物伏击: 
+; qstr_Player_speed_buff_in|Player speed buff in towns:  
 qstr_Fallen_rider_damage_|掉落伤害显示:
 qstr_No_Messages|无消息
 qstr_Player_damage_only|只受到玩家伤害
@@ -115,12 +119,11 @@ qstr_Prevent_AI_from_taki|防止电脑采取防御措施
 qstr_Brighter_Nights:__|夜晚更亮：
 qstr_Done|完成
 qstr_Gameplay_Tweaks|游戏调整…
-qstr_Beta_Formations_Twea|Beta 阵型调整
 ; qstr_Set_to_Native_if_you|Set to Native if you encounter any types of AI problems during battle.
 ; qstr_Disable_cutscenes_if|Disable cutscenes if you encounter any crashes at the start of the war.
 ; qstr_Campaign_Difficulty_a|Campaign Difficulty affects abundance of volunteers, lord party size, and strength income for allied factions.
-qstr_War_Will_Start_at_Le|战争始于等级：{reg0}
 ; qstr_Be_aware_that_many_q|Be aware that many quests and campaign mechanics scale with player level. Increasing this setting will give you more time to prepare, but will make the war unfold quicker.
+; qstr_Requires_TLD_NewForm|Requires TLD NewFormAI
 qstr_Troop_Tree|兵种树
 qstr__Click_on_a_unit_for|（点击一个士兵来查看具体信息）
 qstr_Weapons|武器
@@ -172,12 +175,17 @@ qstr_its|它的
 qstr_[no_upkeep_costs]|[无维护费]
 qstr_Short_of_Resource_Po|资源点不足！
 qstr_{s10}_will_soon_reas|{s10}很快就会从你的部队中调走一些{s12}！
+; qstr_{s10}_has_reassigned|{s10} has reassigned troops from your reserves.
 qstr_Superior_orders_from|来自{s11}的上级命令要求重新分配士兵：
 qstr_{reg12}_{s10}_left_t|{reg12}{s10}离开了队伍！
 qstr_Fangorn_claimed_{reg|你的部队于法贡森林中死亡{reg0}人、受伤{reg1}人!
 qstr_You_were_wounded_in_|你在法贡森林受伤
+qstr_Grimbold|葛林伯
+; qstr_Theodred|Theodred
+qstr_Gamling|加姆林
 qstr_{s1}_of_{s3}_was_def|{s3}的{s1}在战场上被击败了
 qstr_{s2}_have_razed_{s1}|{s1}已经被{s2}夷为平地！
+; qstr_{s1}_Scouts|{s1} Scouts
 qstr_Left_for_dead_but_mi|被扔下等死却奇迹般的生还：{reg1?{reg1}次{reg2?:}:从来没有过}
 qstr_1_Res.Pt__{s2}_|1资源点({s2})
 qstr_{reg1}_Res.Pts__{s2}|{reg1}资源点({s2})
@@ -280,6 +288,7 @@ qstr_{s0}^TOTAL:_{reg3}__|{s0}^总计: {reg3} ({s2})
 qstr_^None|^无
 qstr_near_the_Great_East_|东方大道（远古矮人横穿伊利雅德所建的道路）的不远处
 qstr_near_what_is_left_of|旧林路（远古矮人横穿幽暗密林所建的道路）遗迹的不远处
+; qstr_near_the_old_cross_r|near the old cross-roads, where the Ithilien road meets the road to Osgiliath
 qstr_close_to_the_Hand_sh|萨鲁曼白手标记的附近，指着奥桑克塔的方向
 qstr_in_sight_of_the_maje|能看到米那斯提力斯白色崇峻城墙的地方
 qstr_in_sight_of_Edoras_t|在看得到伊多拉斯—洛汗首都的地方
@@ -592,11 +601,12 @@ qstr_There_is_much_to_reg|我们有着许多的遗憾和悲哀，还有更多的
 ; qstr_Gandalf_asked_you_to|Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard.
 qstr_Ents|树人
 ; qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope.
-; qstr_Missing_String|Missing String
+; qstr_I_did_what_I_could.|I did what I could.
 ; qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
 ; qstr_Hail_{playername}!_I_|Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!
 ; qstr_Your_deed_has_greatl|Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!
-; qstr_{Playername}_I_will_|{Playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
+; qstr_{playername}_I_will_|{playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
+; qstr_I...|I...
 ; qstr_You_have_failed_me_{|You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not.
 qstr_Bagginsssss..._Ssssh|巴金斯…斯…夏…夏…尔…
 qstr_I..._don_t_know!|我…我不知道！
@@ -679,7 +689,12 @@ qstr_have_taken_measure_o|已增加所属派系当前势力值。
 qstr_loses_Faction_Streng|当补给线被打断会失去势力值。
 qstr_loses_Faction_Strengt|当势力营地被摧毁会失去势力值。
 qstr_gains_Faction_Streng|当你的胜利消息传播开来时会获得势力值。
+; qstr_Notice:_Isengard_Las|Notice: Isengard Last Stand quest cancelled for savegame compatibility reasons. Isengard can now be sieged like a regular city.
+; qstr_Hobbit_quest_aborted|Hobbit quest aborted for compatibility reasons. Hobbits will now only appear after certain conditions are met.
+; qstr_This_update_has_chan|This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu.
 qstr_Something_wrong_not_|事情有些不太对劲，我们没有足够的士兵来移除。
+; qstr_Troop:_{s6}___Level:|Troop: {s6} - Level: {reg1}
+; qstr_{reg6}_Centers_Left_|{reg6} Centers Left for {s2}
 qstr_Raiders|突袭者
 qstr_have_won_the_sea_bat|敌人赢得了海战的胜利，这打击了你的士兵们的士气。这些敌人将利用这次击败更加频繁地进攻。
 qstr_loses_Faction_Strength|受到破坏性的突袭会失去势力值
@@ -705,23 +720,16 @@ qstr_Inventory|物品
 qstr_Show_stats|显示状况
 qstr_Show_item_details__|显示物品详情
 qstr_Troop_detail|兵种详情
-qstr_{s1}^|{s1}^
 qstr_{s1}Level:_{reg1}^|{s1}等级：{reg1}^
 qstr_{s1}Hit_Points:_{reg|{s1}生命值:{reg1}
 qstr_{s1}Atributes:_^___S|{s1}属性：^力量：^
-qstr_{s2}^{reg1}^|{s2}^{reg1}^
 qstr_{s1}___Agility:|{s1}   敏:
-qstr_{s2}{reg1}|{s2}{reg1}
 qstr_{s1}Main_skills:_^|{s1}主要技能：^
 qstr_{s1}___Power_Strike:|{s1}强击：^
-qstr_{s2}{reg1}^|{s2}{reg1}^
 qstr_{s1}___Athletics:^|{s1}跑动：^
 qstr_{s1}___Riding:^|{s1}骑术：^
-qstr_{s2}_^|{s2}-^
 qstr_{s1}___Power_Throw:^|{s1}强掷：^
 qstr_{s1}___Power_Draw:^^|{s1}强弓：^
-qstr_{s2}{reg1}^^|{s2}{reg1}^^
-qstr_{s2}_^^|{s2}-^^
 qstr_{s1}Weapons:^|{s1}武器:^
 qstr_{s1}___One_Handed:^|{s1}单手武器：^
 qstr_{s1}___Two_Handed:^|{s1}双手武器：^
@@ -730,7 +738,6 @@ qstr_{s1}___Archery:^|{s1}弓：^
 qstr_{s1}___Crossbow:^|{s1}弩：^
 qstr_{s1}___Throwing:^|{s1}投掷武器：^
 qstr_{s1}___Slings:|{s1}投石索：
-qstr_{s2}_|{s2}-
 qstr__Click_on_the_troop_|（点击旋转士兵）^^点击一栏^（头盔，铠甲，手套和鞋子）^来查看他们
 qstr_ready_bows_and_missi|准备弓和箭
 qstr_ready_side_arms|准备单手武器
@@ -766,6 +773,7 @@ qstr_Press_Ctrl_and_Up/Do|使用Ctrl和上/下箭头键以前倾/后倾
 qstr_Fixed_Camera___Right|固定相机—右肩
 qstr_Fixed_Camera___Left_|固定相机—左肩
 qstr_Fixed_Camera___Cente|固定视角 - 正中
+; qstr_The_Nazgul_retreats!|The Nazgul retreats!
 qstr_Shield_is_too_big_to|Shield is too big to be used with a bow.
 ; qstr_{s7}_waves_at_you.|{s7} waves at you.
 ; qstr_You_happen_upon_an_O|You happen upon an Old Guesthouse. As you inspect the weathered stone building, you notice a group of boys playing among the pillars, the only children you have seen in Minas Tirith.  One of them greets you and you wave back. Your heart is gladdened and you forget, for a brief moment, the sorrow of war.
@@ -799,6 +807,7 @@ qstr_Formations_turned_OF|阵型可在选项菜单中关闭。
 qstr_Division_{reg1}_{s2}_g|{reg1}分队{s2}前往已记录的位置……
 qstr_Division_{reg1}_{s2}_f|{reg1}分队{s2}排成线阵(已记录)。
 qstr_Division_{reg1}_{s2}_fo|{reg1}分队{s2}排成{reg0}排(已记录)。
+; qstr_A_Nazgul_on_a_winged|A Nazgul on a winged steed circles over the battle field!
 qstr_Delivered_{reg60}_da|造成了{reg60} 点伤害。
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
 qstr_Your_bear_form_has_{|你的熊形态有{reg2}/{reg1}HP！
@@ -806,13 +815,6 @@ qstr_Some_of_your_human_t|你的一些人类部队并不畏惧黑夜。（夜间
 qstr_You_are_filled_with_|当你盯着敌人时，你充满愤怒（狂战士能力激活）。
 qstr_Your_mount_is_scared|你的坐骑被{s5}吓坏了！
 qstr_Your_mount_is_scared_|虽然你的坐骑被{s5}吓到了，但你冷静地化险为夷！
-qstr_Nazgul_sweep!|戒灵来了！
-qstr_You_and_your_horse_p|戒灵的啼声是你和你的马无法承受的恐惧！
-qstr_Your_horse_panics_th|戒灵的啼声是你的马无法承受的恐惧！
-qstr_You_cower_in_terror_|你在戒灵恐怖的啼声中退缩！
-qstr_knocked_unconscious|被击昏
-qstr_Nazgul_diving_attack|戒灵正在攻击{s11}！
-qstr_{s11}_is_{s10}_in_th|{s11}在戒灵的攻击中{s10}！
 qstr_Received_{reg66}_dam|受到{reg66}点伤害。
 qstr_You_yell_for_your_ho|你呼唤你的马。
 qstr_You_do_not_need_to_r|你暂时不需要集结你的部队。
@@ -854,6 +856,8 @@ qstr_on_the_right_flank|右翼
 qstr_through_the_center|中央
 qstr_Attackers_charge_{s2|进攻方攻击{s2}
 qstr_Attackers_charge_{s1|进攻方攻击{s1}
+; qstr_Hold_this_area_to_st|Hold this area to stop defender reinforcements from here!
+; qstr_Defender_reinforceme|Defender reinforcement point taken!
 qstr_{s1}_rallied_to_your|因你的魅力属性值{s1}加入了你方。
 qstr_Last_attacker_wave._|最后一波进攻者了。你想撤退吗？
 qstr_Attackers_almost_def|进攻方基本失败了。你想撤退吗？
@@ -921,6 +925,13 @@ qstr_Look_at_my_over_the_|看看我的头像，{playername}！我真漂亮！
 qstr_You_wish_old_man_my_|如您所愿，老人家，我的头像其实更好！
 qstr_You_should_really_se|你真应该看看摄政王迪耐瑟二世的书脸，他的照片赞极了！
 qstr_Press_Space_to_conti|请按空格键继续...
+; qstr_by_level|by level
+; qstr_can_only_be_set_at_g|can only be set at game start; see options to adjust level
+; qstr_by_day|by day
+; qstr_can_only_be_set_at_ga|can only be set at game start; see options to adjust day
+qstr_ON|开
+qstr_OFF|关
+; qstr_If_you_are_new_to_TL|If you are new to TLD, tutorial messages are recommended
 qstr_{s24}__{reg13}____{r|{s24}({reg13})-{reg20}直到下一次晋升^
 qstr_Influence:^_{reg11}_|影响力：^{reg11}(对于{s16})
 qstr_Resource_Points:^_{r|资源点：^{reg12}(在{s16})
@@ -953,21 +964,10 @@ qstr_{s2}^_________{s4}:_|{s2}^{s4}：{reg1}({s23})
 qstr__________Faction_str|派系力量报告：^{s2}
 qstr_{s1}^^Factions_are_n|{s1}^^派系力量低于{reg1}是将经常被围攻。
 qstr_Savagery|野蛮人
-qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|特性获得：^{s2}
 qstr_^^You_are_{s17}.|^^你是{s17}。
 qstr_Assassins_in_the_cam|营地里发现刺客，保护好你自己!
-qstr_Ally_party_size:_{re|盟友部队规模：{reg1}
-qstr_Enemy_party_size:_{r|敌人部队规模：{reg1}
-qstr_Party_count:_{reg0}|部队数量：{reg0}
-qstr_Party_position__{reg|部队位置({reg2}，{reg3})。
-qstr_Party_size_increased|部队规模从{reg0}增长至{reg1}！
-qstr_Faction_strengths_re|派系力量报告：^{s2}
-qstr_Attacking_enemy_part|攻击敌军{s11}
-qstr_Unknown_{reg3}_|未知({reg3})
-qstr_ON|开
 qstr_OFF__cheat_|关(作弊)
-qstr_OFF|关
 qstr_All_messages|所有信息
 qstr_{reg0}__will_most_li|{reg0}(极大概率导致存档崩溃)
 qstr_{reg0}__could_possib|{reg0}(有概率导致存档崩溃)
@@ -975,9 +975,6 @@ qstr_Normal|正常
 qstr_Defender_only|仅守方
 qstr_Halved|减半
 qstr_Battles_only|仅战斗
-qstr_Doubled|双倍
-qstr_Tripled|三倍
-qstr_Quadrupled|四倍
 qstr_You_drank_the_Ent_Wa|你喝了树人水...
 qstr_You_used_the_Orc_Bre|你使用了半兽人酒。
 qstr_You_and_your_compani|你和同伴们酌饮一口米卢沃尔（精灵甜酒）。你感到神清气爽，精力充沛。
@@ -999,8 +996,6 @@ qstr_^^^Defeated...^^^Sca|^^^战败了……^^^在法贡森林里走散了……
 qstr_Troll_caged_in_wheel|食人妖被关在笼车里。
 qstr_A_second_troll_is_ca|第二头食人妖被关在笼车里。
 qstr_Here_you_are.|给。
-qstr_Player_was_moved_to_|玩家被移动到{s10}。
-qstr_neutral_whereabouts|中立国下落
 qstr_any|任何
 qstr_woman|女子
 qstr_gondor|刚铎人
@@ -1059,9 +1054,9 @@ qstr__This_castle_seems_t|这个城堡似乎不属于任何人。
 qstr__Your_own_banner_flie|你自己的旗帜飘扬在城镇大门上。
 qstr__You_see_the_banner_o|你看到{s7}的旗帜飘扬在城镇大门上。
 qstr__The_townsfolk_here_|这些镇民公开宣布独立。
+qstr_Get_book.|拿书。
 qstr_Go_to_the_secret_ent|前往摩瑞亚的秘密入口
 qstr_Search_for_a_secret_|寻找一个进入摩瑞亚的秘密入口
-qstr_Get_book.|拿书。
 qstr_The_{reg6?town_s:cas|{reg6?城镇里:城堡里}的食物库存应该还能坚持{reg3}天。
 qstr_The_{reg6?town_s:cast|{reg6?城镇里:城堡里}的食物库存已经用完，守军正在挨饿。
 qstr_You_re_preparing_to_|你正准备攻击围墙，需要{reg9}小时的准备时间。
@@ -1159,6 +1154,8 @@ qstr_Breaking_camp...|停止露营...
 ; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
 ; qstr_Desertion|Desertion
 ; qstr_{s1}_has_deserted_fr|{s1} has deserted from your party.
+; qstr_You_don_t_have_enoug|You don't have enough troops to guard all your prisoners. Their chance of escaping is increased.
+; qstr_{s1}_has_escaped_fro|{s1} has escaped from your party.
 qstr_You_have_left_{s1}.|你离开了{s1}。
 qstr_You_are_entering_{s1|你进入了{s1}({s2})。
 qstr_You_are_entering_{s1}|你进入了{s1}。
@@ -1190,6 +1187,7 @@ qstr_In_a_desperate_attem|为了击败他的敌人，索隆在绝望中派出了
 qstr_The_forces_of_{s2}_e|{s2}的军队在{s15}建立了前线营地！
 qstr_The_hosts_of_{s2}_ma|{s2}的军队前来保卫他们的家园！
 qstr_{playername}_s_Reser|{playername}的预备队
+; qstr_{reg70}___Last_Stand|{reg70} - Last Stand
 qstr_Gondor_has_called_fo|刚铎已呼叫援助！
 qstr_Gondor_is_accompanyi|刚铎正在听从元帅的号令！
 qstr_{s5}_has_stopped_fol|{s5}不再跟随你。
@@ -1701,6 +1699,16 @@ qstr__Guards_slaughter_hi|守卫，解决掉他！
 qstr_Slaughter_him_for_fr|宰了他吃肉！
 qstr_This_is_{s5}_Command|这里是{s5}，指挥官。
 qstr_{s6}_This_place_and_|{s6}这里和它的周边都属于{s8}的{s7}
+; qstr_Hear_now_commander._|Hear now, commander. I am currently out of assignment, yet I would rather meet our enemies in the field than wait for them to come here. I hear you're a capable leader. Would you have me?
+; qstr_My_party_was_wiped_o|My party was wiped out in the last battle and I don't want to be assigned to the next best fool. I hear you're a capable leader. Could you use another warrior?
+; qstr_{s9}_joined_your_par|{s9} joined your party
+; qstr_A_pity!_I_sure_would|A pity! I sure would have liked to fight in your party-
+; qstr_Too_bad_you_will_reg|Too bad, you will regret not taking me with you.
+; qstr_Lead_me_to_the_{s3}|Lead me to the {s3}
+; qstr_Lead_me_to_the_local|Lead me to the local authority
+; qstr_Lead_me_to_the_Lord_|Lead me to the Lord's hall
+; qstr_Lead_me_to_your_comm|Lead me to your commanders
+; qstr_Lead_me_to_the_capta|Lead me to the captain of the garrison
 qstr_Hey_scum!_I_can_fix_|嘿渣滓！看来你的下巴要修理修理了！
 qstr_Watch_where_you_re_g|看看你正朝哪个方向跑，渣滓！
 qstr_I_don_t_like_your_fa|我不喜欢你的长相，我认为该给你做个整容手术了。

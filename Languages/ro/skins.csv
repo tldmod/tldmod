@@ -13,7 +13,6 @@ skinkey_nose_width|Latimea Nasului
 skinkey_nose_size|Dimensiunea Nasului
 skinkey_nose_shape|Forma Nasului
 skinkey_nose_bridge|Podul Nasului
-
 skinkey_eye_width|Latimea Ochiilor
 skinkey_eye_to_eye_dist|Latimea dintre ochi
 skinkey_eye_shape|Forma Ochiilor
@@ -22,7 +21,6 @@ skinkey_eyelids|Pleoape
 skinkey_cheeks|Obrajii
 skinkey_cheek_bones|Pometii
 skinkey_eyebrow_height|Inaltimea Sprancenelor
-
 skinkey_eyebrow_shape|Forma Sprancenelor
 skinkey_temple_width|Latimea Tamplei
 skinkey_face_depth|Adancimea Fetei
@@ -44,3 +42,5 @@ skinkey_frawn|Trist
 skinkey_mouth_vert_pos|Pozitia Verticala a Gurii
 skinkey_mouth_to_nose_dist|Distanta de la Nas la Gura
 skinkey_chin_width|Latimea Barbiei
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

@@ -5,7 +5,10 @@ mno_faction_intros|Nauč se o různých frakcích Středozemě
 mno_go_bback|Zpět
 menu_start_phase_2|^^^^^ Středozem. Na Východě se zvedá Stín, ^ přichází odtamtud dlouho skryté a  temné věci. ^ Svobodné národy se připravují na válku. Válku jakou nezažily po celý věk. ^ Lidé, elfové, trpaslíci a skřeti - všichni budou hrát svou roli. ^^ Jakou roli, to se teprve ukáže...
 mno_go_forth|Vydej se po své zvolené cestě...
+; mno_change_war_start_mode|War Starts:  {s7}
+; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|Změnit NASTAVENÍ TLD.
+; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^^Zvol si scénář:
 mno_custom_battle_scenario_1|Šarvátka, Gondor proti Haradu
 mno_custom_battle_scenario_12|Vyber frakce pro bitvu
@@ -35,7 +38,6 @@ mno_view_upkeep_costs|Zobrazit náklady družiny.
 mno_view_character_report|Zobrazit přehled postavy.
 mno_view_party_size_report|Přehled velikosti družiny.
 mno_view_morale_report|Přehled morálky družiny.
-mno_view_character_report_02|Kontrola stavu NPC.
 mno_view_faction_strengths_report|Zobrazit přehled síly frakcí.
 mno_view_traits_report|Zobrazit rysy.
 mno_resume_travelling|Pokračovat v cestě.
@@ -47,7 +49,6 @@ mno_continue_dot|Pokračovat.
 menu_custom_battle_durin_end|^^^^^^Byl to obdivuhodný poslední vzdor, ale nakonec neúspěšný^^ Ty a tvoji příbuzní jste zabili {reg5} nepřátel.^Ty osobně si zabil {reg7} nepřátel v boji.
 mno_replay_cbd|Znovu hrát tuto bitvu.
 mno_continue_dot_cbd|Pokračovat.
-mno_dot_go_back|. Jdi zpět
 menu_start_good|^^^^^^^^^^Zvol si rasu:
 mno_start_ma|ČLOVĚK
 mno_start_el|ELF
@@ -110,10 +111,8 @@ mno_start_2_far|Divoch z pralesu Dálného Haradu
 menu_start_numenorean|^^^^^^^Ty jsi černý Dúnadán,^Věrný Temnotě a Morgothovi^Vyber si, kde budeš sloužit Oku
 mno_start_1_bn|Hned za Ústy Saurona, v MORANNONU
 mno_start_2_bn|V pevnosti nekromancera, DOL GUDUR
-menu_choose_gender|^^^^^^^^^^Tvé pohlaví?
 mno_start_male|Muž
 mno_start_female|Žena
-mno_proc|Pokračuj
 menu_start_as_one|^^^^^^^^^^Jaký typ Vojáka jsi?
 mno_start_default|Staň se {s23} (Default)
 mno_start_up1|Staň se {s21} (Easy)
@@ -127,8 +126,8 @@ mno_camp_action|Použít předmět.
 mno_camp_wait_here|Nějakou dobu tady tábořit.
 mno_camp_options|Změnit NASTAVENÍ TLD.
 mno_Dev_Menu|Menu pro vývojáře
-menu_dev_menu|Tohle je Vývojářské nastavení, které vám zpřístupní hodně cheatů/nástrojů se kterými můžete hrát.^^ Nicméně, to povede k některým WIP událostem, spoštěčům a změnám v kampani, které můžou způsobit pády hry^^ Používej je na vlastní nebezpečí! ^^ Také, když nahlašujete bugy, řekněte nám prosím, jestli používáte Vývojářské menu.
-mno_Cheat_enable|Zapnout cheaty/modderské nastavení.
+; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_cheat_enable|Zapnout cheaty/modderské nastavení.
 menu_game_options|^^^^^^^^Klikni na možnost pro přepnutí:
 mno_game_options_war_level_start|Válka začíná na úrovni: {s1}
 mno_game_options_restrict_items|Omezené hráčovo vybavení: {s7}
@@ -160,8 +159,8 @@ mno_strat_tweaks_siege_reqs|Požadovaná síla k dobývání: {s7}
 mno_strat_tweaks_siege_relax_rate|Rychlost snižování požadavku na sílu pro dobývání: {reg1}
 mno_strat_tweaks_regen_rate|Rychlost obnovy síly frakce: {s7}
 mno_strat_tweaks_siege_regen_limit|Síla frakce se regeneruje pomaleji v: {reg1}
-mno_strat_tweaks_influence_gain_rate|Nárůst vlivu: {s7}
-mno_strat_tweaks_rank_gain_rate|Nárůst úrovně: {s7}
+; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
+; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
 mno_strat_tweaks_back|Zpět do menu úprav.
 menu_camp_action|^^^^^^^^^ Který předmět?
 mno_camp_drink_water|Vypij Entí vodu!
@@ -255,12 +254,12 @@ menu_besiegers_camp_with_allies|{s1} zůstává v obležení. Zástavy {s2} vlaj
 mno_talk_to_siege_commander|Požádej o schůzku s velitelem.
 mno_join_siege_with_allies|Připoj se k dalšímu útoku.
 mno_join_siege_stay_back|Nařiď tvým vojákům, aby se přidali k dalšímu útoku bez tebe.
-menu_moria_must_escape|^^Zdá se, že kniha pojednává o posledním pokusu trpaslíků o znovu osídlení Morie. Pokus, který zjevně skončil děsivou smrtí všech zúčastněných. Během pročítání knihy narazíš na slova 'pravostříbro'! Během studování stránek ti najednou dochází, že jde o popis trpasličích slují někde v nižších patrech. Hah!  Nebylo by to skvělé odkrýt dlouho ztracený trpasličí mithril!?  ^Dychtivě následuješ popsaný směr, skrz úzké, klikatící se tunely a dal...  ^...^Po několika hodinách neplodného pátrání chápeš, ze jsi ztracen v Morii a potřebuješ najít cestu ven.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Najdi cestu ven!
 menu_castle_outside| Před tebou je {s2}. {s11} {s3} {s4}
-mno_moria_enter|Vrať se do hlavní síně Morie skrze tajný vstup
-mno_moria_enter_door|Vejdi do Morie.
 mno_cheat_steal_book_door|Získat knihu
+; mno_moria_enter|Return into main hall of Moria through the secret entrance
+mno_moria_enter_door|Vejdi do Morie.
 mno_castle_start_siege|Obléhat {reg6?město:hrad}.
 mno_castle_leave|Odejít
 menu_castle_besiege|Začínáš obléhat {s1}. {s2} {s3}
@@ -305,6 +304,7 @@ mno_trade_with_horse_merchant|Navštiv {s41}.
 mno_talk_to_castle_commander|Navštívit kasárnu.
 mno_speak_with_elder|Promluv si s {s6}.
 ; mno_town_ask|Ask around for persons of import...
+; mno_player_initiate_siege|Attack the {reg6?town:castle}...
 mno_isengard_underground|Jdi do podzemních jeskyní.
 mno_isengard_underground_door|Jdi do podzemních jeskyní
 mno_tirith_toplevel|Vyšplhej na horní patro.
@@ -349,6 +349,16 @@ mno_explore|Prozkoumej toto místo.
 menu_ring_hunter_lair|^^^^Sledoval jsi stopy Lovců Prstenu skrz Temný hvozd a došel jsi k {s1}. Vidíš je, jak se chystají odejít s truhlou.
 mno_attack_lair|Zaútoč na ně hned
 mno_leave_bandit_lair|Prozatím odejít.
+; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
+; mno_go_with_the_raftmen|Take the raft to Dorwinion
+; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
+mno_ride_to_dorwinion_next|další...
+; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
+; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
+; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
+; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
+; mno_bandit_fortress_spirits|Go talk with the spirits.
+mno_leave_amath_dollen_fortress|Prozatím odejít.
 menu_gondor_reinforcement_event|^^^^^Svítí majáky Gondoru, Minas Tirith žádá o pomoc! ^^ Pánové jižních knížectví nyní pochodují na sever, aby bránili Bílé město před přicházející temnotou.
 mno_gondor_reinforcement_event_close|Zavřít
 menu_gondor_beacons|Podíváš se nahoru na {s1}, jeden z výstražných majáků Gondoru, který se používal ke spuštění poplachu v severním a jižním Gondoru.
@@ -362,6 +372,7 @@ mno_player_added_to_allow_follow_close|Zavřít
 menu_center_besieged_event|^^^^^Dorazil k tobě posel a řekl ti, že {s2} z {s3} obléhá {s1}.
 mno_center_besieged_event_close|Zavřít
 menu_guardian_party_spawned|^^^^^Zvědové hlásí že {s6} shromáždil velkou armádu v blízkosti {s7}, jako poslední naději jak zabránit postupu na hlavní město.
+mno_guardian_party_spawned_close|Zavřít
 mno_intro_next|Pokračuj...
 mno_start_defend_caravan|Braň karavanu!
 mno_start_raid_caravan|Přepadni karavanu!
@@ -391,7 +402,6 @@ mno_leave_refugees|Nech je, prozatím...
 mno_evil_war_tut_continue|Pokračuj...
 menu_alternate_training_fight|Budeš čelit {reg5} nepřátelům. Jsi připravený?
 mno_training_continue|Začít s výcvikem...
-menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Zkusit znova...
 mno_alternate_training_finish|Opustit arénu...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Vyber si svoji stranu a výhodu:
@@ -415,7 +425,7 @@ mno_cb_mordor3|Harad
 mno_cb_mordor4|Východňané
 mno_cb_mordor5|Morie
 mno_cb_mordor6|Gundabad
-mno_cb_mordor7|Rhun
+; mno_cb_mordor7|Rhûn
 mno_cb_mordor8|Korzáři
 mno_rescue_mission|Proplížit se do doupěte kouzelníka, pod úkrytem noci.
 mno_next_rescue_scene_door|Pokračuj vpřed!
@@ -437,7 +447,6 @@ mno_leave_pyre|Odejít od vatry.
 menu_town_ruins|Když se přiblížíš, vidíš že {s1} je {s2}
 mno_ruin_menu_0|Prozkoumat to místo.
 mno_ruin_leave|Odejít...
-menu_premutiny|žádný
 menu_death|Byl jsi zabit. Válka pokračuje, ale bez tebe.
 menu_animal_ambush|Ty a tví společníci jste se ocitli odděleni od zbytku vaši skupiny, když najednou...
 menu_animal_ambush_success|{s2} před tebou {reg0?padli:padli} jako obilí před kosou! Zanedlouho všichni útočníci leží na zemi, zranění nebo mrtví. {s3}
@@ -457,3 +466,4 @@ mno_scene9|Malý les (file scn custom 9.sco)
 mno_back_3dot|Zpět...
 mno_back|Jdi zpět.
 mno_next|další...
+; mno_previous|Previous...

@@ -1,5 +1,3 @@
-trp_unarmed_troop|Tropa desarmada
-trp_unarmed_troop_pl|Tropas desarmadas
 trp_tutorial_maceman|Soldado com Maça
 trp_tutorial_maceman_pl|Soldados com Maça
 trp_tutorial_archer|Arqueiro
@@ -766,72 +764,66 @@ trp_c4_mordor_num_horseman|Numenoriano Negro Cavalariço
 trp_c4_mordor_num_horseman_pl|Numenorianos Negros Cavalariços
 trp_c5_mordor_num_knight|Numenoriano Negro Cavalariço Mestre
 trp_c5_mordor_num_knight_pl|Numenorianos Negros Cavalariço Mestre
-trp_noldorin_commander|Noldorin Comandante
-trp_noldorin_commander_pl|Noldorin Comandantes
-trp_elf_captain_of_lothlorien|Elfo Capitão de Lothlorien
-trp_elf_captain_of_lothlorien_pl|Elfos Capitães de Lothlorien
-trp_lothlorien_lieutenant|Tenente de Lothlorien
-trp_lothlorien_lieutenant_pl|Tenentes de Lothlorien
-trp_elf_captain_of_mirkwood|Elfo Capitão da Floresta Verde
-trp_elf_captain_of_mirkwood_pl|Elfos Capitães da Floresta Verde
-trp_mirkwood_lieutenant|Tenente da Floresta Verde
-trp_mirkwood_lieutenant_pl|Tenentes da Floresta Verde
-trp_elf_captain_of_rivendell|Capitão Elfo de Valfenda
-trp_elf_captain_of_rivendell_pl|Capitães Elfos de Valfenda
-trp_rivendell_lieutenant|Tenente de Valfenda
-trp_rivendell_lieutenant_pl|Tenentes de Valfenda
-trp_lieutenant_of_rohan|Tenente de Rohan
-trp_lieutenant_of_rohan_pl|Tenentes de Rohan
-trp_captain_of_rohan|Capitão de Rohan
-trp_captain_of_rohan_pl|Capitães de Rohan
-trp_high_captain_of_rohan|Alto Capitão de Rohan
-trp_high_captain_of_rohan_pl|Altos Capitães de Rohan
-trp_lieutenant_of_isengard|Tenente de Isengard
-trp_lieutenant_of_isengard_pl|Tenentes de Isengard
-trp_captain_of_isengard|Capitão de Isengard
-trp_captain_of_isengard_pl|Capitães de Isengard
-trp_high_captain_of_isengard|Alto Capitão de Isengard
-trp_high_captain_of_isengard_pl|Altos Capitães de Isengard
-trp_lieutenant_of_mordor|Tenente de Mordor
-trp_lieutenant_of_mordor_pl|Tenentes de Mordor
-trp_captain_of_mordor|Capitão de Mordor
-trp_captain_of_mordor_pl|Capitães de Mordor
-trp_high_captain_of_mordor|Alto Capitão de Mordor
-trp_high_captain_of_mordor_pl|Altos Capitães de Mordor
-trp_easterling_chieftain|Chefe Variag
-trp_easterling_chieftain_pl|Chefes Variags
-trp_easterling_lieutenant|Padre de Guerra Variag
-trp_easterling_lieutenant_pl|Padres de Guerra Variag
-trp_harad_chieftain|Chefe de Harad
-trp_harad_chieftain_pl|Chefes de Harad
-trp_harad_lieutenant|Tenente de Harad
-trp_harad_lieutenant_pl|Tenentes de Harad
-trp_black_numenorean_captain|Numenoriano Negro Capitão
-trp_black_numenorean_captain_pl|Numenorianos Negros Capitães
-trp_black_numenorean_lieutenant|Numenoriano Negro Tenente
-trp_black_numenorean_lieutenant_pl|Numenorianos Negros Tenentes
-trp_a5_dun_night_wolf|Lobo da Noite Terra-pardense
-trp_a5_dun_night_wolf_pl|Lobos da Noite Terra-pardenses
-trp_dunnish_lieutenant|Hetman Terra-pardense
-trp_dunnish_lieutenant_pl|Hetman Terra-pardense
-trp_goblin_chieftain|Goblin Chefe
-trp_goblin_chieftain_pl|Goblins Chefes
-trp_captain_of_gondor|Capitão de Gondor
-trp_captain_of_gondor_pl|Capitães de Gondor
-trp_nobleman|Nobre
-trp_nobleman_pl|Nobres
-trp_gondor_agent|Agente de Gondor
-trp_gondor_agent_pl|Agentes de Gondor
-trp_rohan_agent|Agente de Rohan
-trp_rohan_agent_pl|Agentes de Rohan
-trp_mordor_agent|Agente de Mordor
-trp_mordor_agent_pl|Agentes de Mordor
-trp_isengard_agent|Agente de Isengard
-trp_isengard_agent_pl|Agentes de Isengard
-trp_looter|Saqueador
-trp_looter_pl|Saqueadores
-trp_bandit|Bandido
-trp_bandit_pl|Bandidos
+; trp_greenwood_captain|Greenwood Captain
+; trp_greenwood_captain_pl|Greenwood Captains
+; trp_lorien_captain|Lothlorien Captain
+; trp_lorien_captain_pl|Lothlorien Captains
+; trp_riv_captain|Rivendell Elf Lord
+; trp_riv_captain_pl|Rivendell Elf Lords
+; trp_arnor_captain|Captain of Arnor
+; trp_arnor_captain_pl|Captains of Arnor
+; trp_arnor_ranger_captain|Ranger Captain of Arnor
+; trp_arnor_ranger_captain_pl|Ranger Captains of Arnor
+trp_rohan_captain|Capitão de Rohan
+trp_rohan_captain_pl|Capitães de Rohan
+; trp_beorning_captain|Beorning Chieftain
+; trp_beorning_captain_pl|Beorning Chieftains
+; trp_woodmen_captain|Woodmen Chieftain
+; trp_woodmen_captain_pl|Woodmen Chieftains
+trp_isen_captain|Capitão de Isengard
+trp_isen_captain_pl|Capitães de Isengard
+; trp_isen_tracker_captain|Isengard Tracker Captain
+; trp_isen_tracker_captain_pl|Isengard Tracker Captains
+trp_mordor_uruk_captain|Uruk Capitão de Mordor
+; trp_mordor_uruk_captain_pl|Mordor Uruk Captains
+trp_mordor_captain|Capitão de Mordor
+trp_mordor_captain_pl|Capitães de Mordor
+trp_umbar_captain|Capitão de Umbar
+; trp_umbar_captain_pl|Captains of Umbar
+; trp_khand_captain|Variag War Chief
+; trp_khand_captain_pl|Variag War Chiefs
+; trp_rhun_captain|Rhun Chieftain
+; trp_rhun_captain_pl|Rhun Chieftains
+; trp_moria_captain|Uruk Chieftain of Moria
+; trp_moria_captain_pl|Uruk Chieftains of Moria
+; trp_dwarf_captain|Dwarf Captain
+; trp_dwarf_captain_pl|Dwarf Captains
+trp_dale_captain|Capitão de Valle
+; trp_dale_captain_pl|Captains of Dale
+; trp_harad_captain|Haradrim Noble
+; trp_harad_captain_pl|Haradrim Nobles
+trp_a5_dun_night_wolf2|Lobo da Noite Terra-pardense
+trp_a5_dun_night_wolf2_pl|Lobo da Noite Terra-pardense
+trp_dun_captain|Hetman Terra-pardense
+trp_dun_captain_pl|Hetman Terra-pardense
+; trp_gunda_captain|Gundabad Chieftain
+; trp_gunda_captain_pl|Gundabad Chieftains
+trp_gondor_captain|Capitão de Gondor
+trp_gondor_captain_pl|Capitães de Gondor
+trp_pel_captain|Capitão de Pelargir
+trp_pel_captain_pl|Capitães de Pelargir
+; trp_amroth_captain|Knight Captain of Dol Amroth
+; trp_amroth_captain_pl|Knights Captain of Dol Amroth
+trp_lam_captain|Capitão de Lamedon
+trp_lam_captain_pl|Capitães de Lamedon
+trp_loss_captain|Capitão de Lossarnach
+trp_loss_captain_pl|Capitães de Lossarnach
+trp_pinnath_captain|Capitão de Pinnath Gelin
+trp_pinnath_captain_pl|Capitães de Pinnath Gelin
+; trp_blackroot_captain|Captain of Blackroot Vale
+; trp_blackroot_captain_pl|Captains of Blackroot Vale
+trp_ithilien_captain|Capitão dos Guardiões de Ithilien
+trp_ithilien_captain_pl|Capitães dos Guardiões de Ithilien
 trp_brigand|Salteador
 trp_brigand_pl|Salteadores
 trp_mountain_bandit|Bandido da Montanha
@@ -865,17 +857,11 @@ trp_messenger_orc_pl|Mensageiros
 trp_messenger_evil_man|Mensageiro
 trp_messenger_evil_man_pl|Mensageiros
 trp_town_walker_1|Cidadão
-trp_town_walker_1_pl|Cidadãos
 trp_town_walker_2|Cidadã
-trp_town_walker_2_pl|Cidadãs
 trp_village_walker_1|Aldeão
-trp_village_walker_1_pl|Aldeões
 trp_village_walker_2|Aldeão
-trp_village_walker_2_pl|Aldeões
 trp_spy_walker_1|Cidadão
-trp_spy_walker_1_pl|Cidadãos
 trp_spy_walker_2|Cidadã
-trp_spy_walker_2_pl|Cidadãs
 trp_walker_man_gondor_black|Cidadão de Gondor
 trp_walker_man_gondor_white|Cidadão de Gondor
 trp_walker_man_gondor_blue|Cidadão de Gondor
@@ -991,11 +977,11 @@ trp_knight_1_5|Duinhir
 trp_knight_1_6|Hirluin o Justo
 trp_knight_1_7|Faramir
 trp_knight_1_8|Forlong o Gordo
-trp_knight_1_9|Grimbold
+; trp_knight_1_9|Theodred
 trp_knight_1_10|Erkenbrand
 trp_knight_1_11|Elfhelm
 trp_knight_1_12|Hama
-trp_knight_1_13|Gamling
+trp_knight_1_13|Grimbold
 trp_knight_1_14|Éomer
 trp_knight_1_15|Ugluk
 trp_knight_1_16|Mauhur
@@ -1375,7 +1361,7 @@ trp_elder_edoras|Conde de Edoras
 trp_elder_edoras_pl|a cidade
 trp_elder_aldburg|Conde de Aldburg
 trp_elder_aldburg_pl|a cidade
-trp_elder_hornburg|Conde de Hornburg
+trp_elder_hornburg|Gamling
 trp_elder_hornburg_pl|the fortress
 trp_elder_eastemnet|Conde de Emnet Leste
 trp_elder_eastemnet_pl|a cidade
@@ -1391,7 +1377,7 @@ trp_elder_mmorgul|Chefe de Morgul
 trp_elder_mmorgul_pl|A Cidade Sinistra
 trp_elder_cungol|Acampamento do Chefe
 trp_elder_cungol_pl|O Acampamento
-trp_elder_isengard|Grima Língua de Cobra
+; trp_elder_isengard|Isengard Overseer
 trp_elder_isengard_pl|a cidade
 trp_elder_cgaladhon|Historiador de Lorien
 trp_elder_cgaladhon_pl|A Fortaleza da Floresta Élfica
@@ -1482,30 +1468,20 @@ trp_tax_rebel_pl|Camponeses Rebeldes
 trp_trainee_peasant|Camponês
 trp_trainee_peasant_pl|Camponeses
 trp_fugitive_man|Homem Suspeito
-trp_fugitive_man_pl|Homens Suspeitos
 trp_fugitive_elf|Elfo Suspeito
-trp_fugitive_elf_pl|Elfos Suspeitos
 trp_fugitive_dwarf|Anão Suspeito
-trp_fugitive_dwarf_pl|Anões Suspeitos
 trp_fugitive_orc|Orc Suspeito
-trp_fugitive_orc_pl|Orcs Suspeitos
 trp_spy|Corsário de Olhos Furtivos
-trp_spy_pl|Corsários de Olhos Furtivos
 trp_spy_evil|Sulista de Olhos Furtivos
-trp_spy_evil_pl|Sulistas de Olhos Furtivos
 trp_spy_partner|Manipulador de Espião
-trp_spy_partner_pl|Manipuladores de Espiões
 trp_spy_partner_evil|Manipulador de Espião
-trp_spy_partner_evil_pl|Manipuladores de Espiões
 trp_easter_egg_troll|O Troll
 trp_treebeard|Barbárvore
 trp_ent_1|Bregalad
 trp_ent_2|Finglas
 trp_ent_3|Fladrif
 trp_gandalf|Gandalf
-trp_gandalf_pl|Gandalves Cultivados em casa
 trp_nazgul|Nazgul
-trp_nazgul_pl|Nazgul Domesticado
 ; trp_radagast|Radagast
 trp_barman|Barman
 trp_elder|Ancião Central
@@ -1516,14 +1492,11 @@ trp_dorwinion_bandit|Bandido de Dorwinion
 trp_dorwinion_bandit_pl|Bandidos de Dorwinion
 trp_dorwinion_raider|Saqueador de Dorwinion
 trp_dorwinion_raider_pl|Saqueadores de Dorwinion
+trp_no_troop_pl|o lugar
 trp_city_guard|Guarda da Cidade
-trp_city_guard_pl|Guardas da Cidade
 trp_orc_sentry|Orc Sentinela
-trp_orc_sentry_pl|Orcs Sentinelas
 trp_uruk_hai_sentry|Uruk-Hai Sentinela
-trp_uruk_hai_sentry_pl|Uruk Hai Sentinelas
 trp_black_numenorean_sorcerer|Numenoriano Negro Feiticeiro
-trp_black_numenorean_sorcerer_pl|Numenorianos Negros Feiticeiros
 ; trp_evil_priest|Evil Priest
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|Montador de Lobo da Floresta das Trevas
@@ -1559,8 +1532,19 @@ trp_start_quest_mordor_scout|Guia de Mordor
 trp_start_quest_mordor_scout_pl|Guias de Mordor
 trp_start_quest_beorning|Berserker de Carrock Beorning
 trp_start_quest_beorning_pl|Berserkers de Carrock Beorning
+; trp_black_shield|Amath Dollen
+; trp_black_shield_bandit|Amath Dollen's Bandit
+; trp_black_shield_bandit_pl|Amath Dollen's Bandits
+; trp_black_shield_scout|Amath Dollen's Scout
+; trp_black_shield_scout_pl|Amath Dollen's Scouts
+; trp_black_shield_guard|Amath Dollen's Guard
+; trp_black_shield_guard_pl|Amath Dollen's Guards
+; trp_dorwinion_spirit_leader|Spirit
+; trp_dorwinion_spirit|Lesser Spirit
 trp_i6_beorning_bear_warrior|Guerreiro Urso
 trp_i6_beorning_bear_warrior_pl|Guerreiros Ursos
+trp_a5_dun_night_wolf|Lobo da Noite Terra-pardense
+trp_a5_dun_night_wolf_pl|Lobos da Noite Terra-pardenses
 trp_morannon_healer|Okstuk, o Curandeiro
 trp_minas_tirith_healer|Ioreth
 trp_edoras_healer|Freya, a Curandeira
@@ -1582,6 +1566,7 @@ trp_c5_rhovanion_noble_pl|Nobres Rhovanion
 trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel
+; trp_npc21|Berta
 trp_werewolf|Lobisomem
 trp_werewolf_pl|Lobisomens
 trp_moria_troll|Troll da Caverna
@@ -1647,3 +1632,5 @@ trp_pippin_notmet|Pequenino
 trp_merry_notmet|Pequenino
 trp_pippin|Pippin
 trp_merry|Merry
+trp_grima|Grima Língua de Cobra
+; trp_grima_pl|the city

@@ -65,6 +65,10 @@ itm_wargarmored_2b|Warg corazzato
 itm_wargarmored_2c|Warg corazzato
 itm_wargarmored_3a|Warg corazzato
 itm_warg_reward|Gigantesco Warg
+itm_animal_big|Grossa Bestia
+itm_animal_small|Piccola Bestia
+itm_troll_weapon_long|Alabarda Gigante
+itm_troll_weapon_dmg|Mazza gigante
 itm_tree_trunk_club_a|Tronco d'albero
 itm_giant_mace|Mazza gigante
 itm_troll_shield_a|Scudo di Troll
@@ -130,6 +134,8 @@ itm_harad_javelin|Giavellotto dell'Harad
 itm_gondor_javelin|Giavellotto di Gondor
 itm_rohirrim_throwing_axe|Asce da Lancio degli Uomini del Nord
 itm_loss_throwing_axes|Asce da lancio del Lossarnach
+itm_free_dunedain_helm_a|Elmo Arnoriano Leggero
+itm_free_dunedain_helm_b|Elmo di Arnor
 itm_arnor_helm_c|Elmo Decorato di Arnor
 itm_arnor_helm_b|Elmo di Arnor
 itm_arnor_helm_a|Elmo Arnoriano Leggero
@@ -433,8 +439,6 @@ itm_dunland_chieftain|Armatura da Capo Dunlandiano
 itm_dun_helm_a|Copricapo Lupo Dunlandiano
 itm_dun_helm_b|Cappuccio in Pelliccia Dunlandiano
 itm_dun_helm_c|Elmo Alto Dunlandiano
-itm_dun_helm_d|Elmo Alto Dunlandiano
-itm_dun_helm_e|Elmo Ramificato Dunlandiano
 itm_dun_shield_a|Scudo Tondo Dunlandiano
 itm_dun_shield_b|Scudo Ovale Dunlandiano
 itm_dun_berserker|Spada da Capoclan Dunlandiano
@@ -539,6 +543,7 @@ itm_desert_boots|Stivali da Deserto
 itm_harad_leather_greaves|Stinchiere in Pelle di Harad
 itm_harad_scale_greaves|Gambali Haradrim
 itm_harad_lamellar_greaves|Stinchiere Steccate di Harad
+itm_camel|Cammello di Harad
 itm_khand_inf_helm_a|Elmo del Khand
 itm_khand_inf_helm_b|Elmo del Khand
 itm_khand_inf_helm_c1|Elmo a Scodella di Khand
@@ -590,6 +595,7 @@ itm_rhun_helm_chieftain|Elmo del Capoclan di Rhûn
 itm_rhun_helm_pot|Elmo a Pentola di Rhûn
 itm_rhun_helm_barbed|Elmo Spinato di Rhûn
 itm_rhun_helm_round|Elmo Rotondo di Rhûn
+itm_rhun_helm_horde|Elmo dell'Orda di Rhûn
 itm_rhun_helm_leather|Elmo in Cuoio di Rhûn
 itm_rhun_warpick|Picca da Guerra di Rhûn
 itm_rhun_greataxe|Ascia a Due Mani di Rhûn
@@ -700,7 +706,7 @@ itm_dwarf_helm_round|Elmo Tondo Nanico
 itm_dwarf_helm_sallet|Celata Nanica
 itm_dwarf_armor_d|Casacca a Strati delle Colline Ferrose
 itm_dwarf_armor_a|Sopravveste in maglia di Erebor
-itm_leather_dwarf_armor|Gambesone Imbottito Nanico
+itm_leather_dwarf_armor|Mantello Imbottito di Erebor
 itm_dwarf_armor_b|Tunica in maglia di Erebor
 itm_leather_dwarf_armor_b|Giustacuore Imbottito Nanico
 itm_dwarf_armor_c|Maglia a Scaglie di Erebor
@@ -719,7 +725,6 @@ itm_gondor_lance_banner|Lancia con Stendardo di Gondor
 itm_amroth_lance_banner|Lancia con Stendardo di Dol Amroth
 itm_rohan_lance_banner_sun|Lancia di con Insegne del Sole di Rohan
 itm_rohan_lance_banner_horse|Lancia con Insegne del Cavallo di Rohan
-itm_fur_gloves_reward|Guanti da Caccia
 itm_ent_water|Strana Ciotola d'Acqua
 itm_map|Mappe della Terra di Mezzo
 itm_athelas_reward|Foglie Essiccate di Athelas
@@ -783,9 +788,55 @@ itm_wolf|Lupo
 itm_werewolf|Mannaro
 itm_thrush_reward|Tordo
 itm_gauntlets_reward|Manopole di Ferro
+itm_gondor_custom|Personalizzazione Gondor
 itm_stones_siege|Pietre d'Assedio
 itm_beorn_axe_no_attack|Ascia di Beorn
-itm_animal_spider|Ragno
-itm_animal_bear|Orso
-itm_animal_wolf|Lupo
-itm_animal_werewolf|Mannaro
+itm_tabard_b_wb|Tabarro
+itm_nobleman_outfit_b_new_wb|Abito da Nobile
+itm_peasant_man_a_wb|Abito da Contadino
+itm_leather_jerkin_wb|Gilet di Cuoio
+itm_white_tunic_c_wb|Giacca a Tunica
+itm_white_tunic_a_wb|Tunica Bianca
+itm_red_tunic_wb|Tunica Rossa
+itm_fur_coat_wb|Manto di Dale
+itm_fur_hat_a_new_wb|Copricapo in Pelliccia
+itm_noel_hat_a_wb|Copricapo in Pelliccia
+itm_peasant_dress_b_new_wb|Abito Blu
+itm_sarranid_lady_dress_wb|Abito Blu
+itm_sar_robe_b_wb|Tunica
+itm_black_dress_wb|Abito Nero
+itm_blackwhite_dress_wb|Abito da Donna
+itm_white_tunic_b_wb|Tunica Semplice
+itm_blue_tunic_wb|Tunica Blu
+itm_black_tunic_wb|Tunica Nera
+itm_green_tunic_wb|Tunica Verde
+itm_green_dress_wb|Abito Verde
+itm_gondor_fine_outfit_dress_wb|Abito Raffinato
+itm_rohan_fine_outfit_dale_dress_wb|Abito Raffinato
+itm_robe_generic_dress_wb|Toga
+itm_wimple_a_wb|Soggolo
+itm_wimple_with_veil_wb|Soggolo
+itm_fine_hat_wb|Cappello Elegante
+itm_rohan_tunic_a_wb|Tunica di Rohan
+itm_rohan_tunic_b_wb|Tunica di Rohan
+itm_denethor_robe|Abito Raffinato
+itm_ent_head_helm2|Testa di Ent
+itm_ent_head_helm3|Testa di Ent
+itm_civilian_hammer|Martello
+itm_civilian_woodaxe_1h|Ascia
+itm_civilian_woodaxe_2h|Ascia Pesante
+itm_civilian_war_mattock|Zappa
+itm_civilian_great_mattock|Zappa
+itm_civilian_adz|Zappa
+itm_civilian_pickaxe|Zappa
+itm_civilian_shovel|Pala
+itm_civilian_carry_wood_heap|Legna da Ardere
+itm_civilian_carry_wood|Legna
+itm_civilian_carry_amphora|Anfora
+itm_civilian_carry_sack|Sacco
+itm_civilian_carry_basket|Cesta
+itm_civilian_carry_honey|Miele
+itm_civilian_carry_oil|Olio
+itm_civilian_carry_wood2|Legna
+itm_work_basket|Cesta
+itm_work_basket_2|Cesta

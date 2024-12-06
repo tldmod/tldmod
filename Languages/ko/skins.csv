@@ -13,7 +13,6 @@ skinkey_nose_width|코 넓이
 skinkey_nose_size|코 크기
 skinkey_nose_shape|코 형태
 skinkey_nose_bridge|콧날
-
 skinkey_eye_width|눈 넓이
 skinkey_eye_to_eye_dist|눈 사이 거리
 skinkey_eye_shape|눈 모양
@@ -22,7 +21,6 @@ skinkey_eyelids|눈꺼풀
 skinkey_cheeks|광대
 skinkey_cheek_bones|광대뼈
 skinkey_eyebrow_height|눈썹 높이
-
 skinkey_eyebrow_shape|눈썹 모양
 skinkey_temple_width|관자놀이 넓이
 skinkey_face_depth|얼굴 깊이
@@ -44,3 +42,5 @@ skinkey_frawn|찡그림
 skinkey_mouth_vert_pos|입 수직 위치
 skinkey_mouth_to_nose_dist|입과 코의 거리
 skinkey_chin_width|턱 넓이
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

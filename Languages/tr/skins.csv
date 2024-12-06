@@ -13,7 +13,6 @@ skinkey_nose_width|Burun Genişligi
 skinkey_nose_size|Burun Boyutu
 skinkey_nose_shape|Burun Şekli
 skinkey_nose_bridge|Burun Köprüsü
-
 skinkey_eye_width|Gözlerin Genişigi
 skinkey_eye_to_eye_dist|Gözler Arası Mesafe
 skinkey_eye_shape|Göz Şekli
@@ -22,7 +21,6 @@ skinkey_eyelids|Göz Kapakları
 skinkey_cheeks|Yanaklar
 skinkey_cheek_bones|Elmacık Kemikleri
 skinkey_eyebrow_height|Kaş Uzunlugu
-
 skinkey_eyebrow_shape|Kaş Şekli
 skinkey_temple_width|Şakak Genişligi
 skinkey_face_depth|Yüz Derinligi
@@ -44,3 +42,5 @@ skinkey_frawn|Kaş Şekli
 skinkey_mouth_vert_pos|Agzın Dikey Pozisyonu
 skinkey_mouth_to_nose_dist|Agızdan Buruna Olan Uzaklık
 skinkey_chin_width|Çene Genişligi
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length

@@ -65,6 +65,10 @@ itm_wargarmored_2b|Gepantererde Warg
 itm_wargarmored_2c|Gepantererde Warg
 itm_wargarmored_3a|Gepantererde Warg
 itm_warg_reward|Grote Warg
+; itm_animal_big|Big Animal
+; itm_animal_small|Small Animal
+; itm_troll_weapon_long|Giant Halberd
+itm_troll_weapon_dmg|Gigantische Strijdknots
 itm_tree_trunk_club_a|Boomstam
 itm_giant_mace|Gigantische Strijdknots
 itm_troll_shield_a|Trol Schild
@@ -130,6 +134,8 @@ itm_harad_javelin|Harad Werpspeer
 itm_gondor_javelin|Gondor Werpspeer
 itm_rohirrim_throwing_axe|Nordman Gewerpte Bijlen
 itm_loss_throwing_axes|Lossarnach Werpbijlen
+; itm_free_dunedain_helm_a|Arnor Light Helm
+itm_free_dunedain_helm_b|Arnor Helm
 itm_arnor_helm_c|Arnor Versierde Helm
 itm_arnor_helm_b|Arnor Helm
 ; itm_arnor_helm_a|Arnor Light Helm
@@ -433,8 +439,6 @@ itm_dunland_wolfboots|Dunland Wolvenlaarzen
 itm_dun_helm_a|Dunnish Wolven Pet
 ; itm_dun_helm_b|Dunnish Fur Cap
 itm_dun_helm_c|Dunnish Lang Helm
-itm_dun_helm_d|Dunnish Lang Helm
-; itm_dun_helm_e|Dunnish Antler Helm
 ; itm_dun_shield_a|Dunnish Roundshield
 ; itm_dun_shield_b|Dunnish Oval Shield
 ; itm_dun_berserker|Dunland Chieftain Sword
@@ -539,6 +543,7 @@ itm_desert_boots|Woestijnlaarzen
 ; itm_harad_leather_greaves|Harad Leather Greaves
 ; itm_harad_scale_greaves|Harad Greaves
 ; itm_harad_lamellar_greaves|Harad Splinted Greaves
+; itm_camel|Harad Camel
 itm_khand_inf_helm_a|Khand Helm
 itm_khand_inf_helm_b|Khand Helm
 ; itm_khand_inf_helm_c1|Khand Bowl Helm
@@ -590,6 +595,7 @@ itm_rhun_helm_chieftain|Rhun
 ; itm_rhun_helm_pot|Rhun Pot Helm
 ; itm_rhun_helm_barbed|Rhun Barbed Helm
 ; itm_rhun_helm_round|Rhun Round Helm
+; itm_rhun_helm_horde|Rhun Horde Helm
 itm_rhun_helm_leather|Rhun Leren Helm
 ; itm_rhun_warpick|Rhun War Pick
 ; itm_rhun_greataxe|Rhun Great Axe
@@ -700,7 +706,7 @@ itm_dwarf_spear|Dwergen Speer
 ; itm_dwarf_helm_sallet|Dwarf Sallet
 ; itm_dwarf_armor_d|Iron Hills Coat of Scales
 ; itm_dwarf_armor_a|Erebor Surcoat over Mail
-; itm_leather_dwarf_armor|Dwarven Padded Coat
+; itm_leather_dwarf_armor|Erebor Padded Coat
 ; itm_dwarf_armor_b|Erebor Tunic over Mail
 ; itm_leather_dwarf_armor_b|Dwarven Padded Jerkin
 ; itm_dwarf_armor_c|Erebor Scale Mail
@@ -719,7 +725,6 @@ itm_dwarf_spear|Dwergen Speer
 ; itm_amroth_lance_banner|Dol Amroth Lance With Banner
 ; itm_rohan_lance_banner_sun|Rohan Lance With Sun Banner
 ; itm_rohan_lance_banner_horse|Rohan Lance With Horse Banner
-; itm_fur_gloves_reward|Hunter Gloves
 ; itm_ent_water|Strange Bowl of Water
 itm_map|Kaart van Midden-Aarde
 ; itm_athelas_reward|Dried Athelas Leaves
@@ -783,9 +788,55 @@ itm_wolf|Wolf
 itm_werewolf|Weerwolf
 ; itm_thrush_reward|Thrush
 ; itm_gauntlets_reward|Iron Fists
+; itm_gondor_custom|Custom Gondor
 ; itm_stones_siege|Siege Stones
 ; itm_beorn_axe_no_attack|Beorning Axe
-itm_animal_spider|Spin
-itm_animal_bear|Beer
-itm_animal_wolf|Wolf
-itm_animal_werewolf|Weerwolf
+; itm_tabard_b_wb|Tabard
+; itm_nobleman_outfit_b_new_wb|Nobleman Outfit
+; itm_peasant_man_a_wb|Peasant Outfit
+itm_leather_jerkin_wb|Leren Wambuis
+itm_white_tunic_c_wb|Tuniek Jas
+; itm_white_tunic_a_wb|White Tunic
+itm_red_tunic_wb|Rode Tuniek
+itm_fur_coat_wb|Dale Jas
+; itm_fur_hat_a_new_wb|Fur Hat
+; itm_noel_hat_a_wb|Fur Hat
+; itm_peasant_dress_b_new_wb|Blue Dress
+; itm_sarranid_lady_dress_wb|Blue Dress
+itm_sar_robe_b_wb|Gewaad
+itm_black_dress_wb|Zwarte Jurk
+itm_blackwhite_dress_wb|Vrouwelijke Jurk
+itm_white_tunic_b_wb|Simpele Tuniek
+itm_blue_tunic_wb|Blauwe Tuniek
+itm_black_tunic_wb|Zwarte Tuniek
+itm_green_tunic_wb|Groene Tuniek
+itm_green_dress_wb|Groene Jurk
+itm_gondor_fine_outfit_dress_wb|Fijne Outfit
+itm_rohan_fine_outfit_dale_dress_wb|Fijne Outfit
+itm_robe_generic_dress_wb|Gewaad
+itm_wimple_a_wb|Kap
+itm_wimple_with_veil_wb|Kap
+itm_fine_hat_wb|Mooie Hoed
+; itm_rohan_tunic_a_wb|Rohan Tunic
+; itm_rohan_tunic_b_wb|Rohan Tunic
+itm_denethor_robe|Fijne Outfit
+; itm_ent_head_helm2|Ent Head
+; itm_ent_head_helm3|Ent Head
+; itm_civilian_hammer|Hammer
+; itm_civilian_woodaxe_1h|Axe
+; itm_civilian_woodaxe_2h|Heavy Axe
+; itm_civilian_war_mattock|Mattock
+; itm_civilian_great_mattock|Mattock
+; itm_civilian_adz|Mattock
+; itm_civilian_pickaxe|Mattock
+; itm_civilian_shovel|Shovel
+; itm_civilian_carry_wood_heap|Fire Wood
+; itm_civilian_carry_wood|Wood
+; itm_civilian_carry_amphora|Amphora
+; itm_civilian_carry_sack|Sack
+; itm_civilian_carry_basket|Basket
+; itm_civilian_carry_honey|Honey
+; itm_civilian_carry_oil|Oil
+; itm_civilian_carry_wood2|Wood
+; itm_work_basket|Basket
+; itm_work_basket_2|Basket

@@ -1,5 +1,3 @@
-trp_unarmed_troop|Беззбройний Воїн
-trp_unarmed_troop_pl|Беззброїні Воїни
 trp_tutorial_maceman|Воїн з булавою
 trp_tutorial_maceman_pl|Воїни з булавою
 trp_tutorial_archer|Лучник
@@ -766,72 +764,66 @@ trp_c4_mordor_num_horseman|Чорний нуменорець-вершник
 trp_c4_mordor_num_horseman_pl|Чорні нуменорці-вершники
 trp_c5_mordor_num_knight|Добірний Чорний нуменорець-вершник
 trp_c5_mordor_num_knight_pl|Добірні Чорні нуменорці-вершники
-trp_noldorin_commander|Нолдорський командир
-trp_noldorin_commander_pl|Нолдорські командири
-trp_elf_captain_of_lothlorien|Командир загону Лотлоріену
-trp_elf_captain_of_lothlorien_pl|Командири загону Лотлоріену
-trp_lothlorien_lieutenant|Лоріенський сотник
-trp_lothlorien_lieutenant_pl|Лоріенські сотники
-trp_elf_captain_of_mirkwood|Полководець Темнолісся
-trp_elf_captain_of_mirkwood_pl|Полководці Темнолісся
-trp_mirkwood_lieutenant|Темноліський сотник
-trp_mirkwood_lieutenant_pl|Темноліські сотники
-trp_elf_captain_of_rivendell|Полководець Рівенделлу
-trp_elf_captain_of_rivendell_pl|Полководці Рівенделлу
-trp_rivendell_lieutenant|Рівендельський сотник
-trp_rivendell_lieutenant_pl|Рівендельські сотники
-trp_lieutenant_of_rohan|Сотник Рогану
-trp_lieutenant_of_rohan_pl|Сотники Рогану
-trp_captain_of_rohan|Полководець Рогану
-trp_captain_of_rohan_pl|Полководці Рогану
-trp_high_captain_of_rohan|Воєвода Рогану
-trp_high_captain_of_rohan_pl|Воєводи Рогану
-trp_lieutenant_of_isengard|Сотник Ізенгарду
-trp_lieutenant_of_isengard_pl|Сотники Ізенгарду
-trp_captain_of_isengard|Полководець Ізенгарду
-trp_captain_of_isengard_pl|Полководці Ізенгарду
-trp_high_captain_of_isengard|Воєвода Ізенгарду
-trp_high_captain_of_isengard_pl|Воєводи Ізенгарду
-trp_lieutenant_of_mordor|Сотник Мордору
-trp_lieutenant_of_mordor_pl|Сотники Мордору
-trp_captain_of_mordor|Полководець Мордору
-trp_captain_of_mordor_pl|Полководці Мордору
-trp_high_captain_of_mordor|Воєвода Мордору
-trp_high_captain_of_mordor_pl|Воєводи Мордору
-trp_easterling_chieftain|Варьягський Вождь
-trp_easterling_chieftain_pl|Варьягські Вожді
-trp_easterling_lieutenant|Варьягський жрець війни
-trp_easterling_lieutenant_pl|Варьягські жерці війни
-trp_harad_chieftain|Харадський Вождь
-trp_harad_chieftain_pl|Харадські Вожді
-trp_harad_lieutenant|Харадський Сотник
-trp_harad_lieutenant_pl|Харадські Сотники
-trp_black_numenorean_captain|Чорний нуменорець-Полководець
-trp_black_numenorean_captain_pl|Чорні нуменорці-Полководці
-trp_black_numenorean_lieutenant|Чорний нуменорець-Сотник
-trp_black_numenorean_lieutenant_pl|Чорні нуменорці-Сотники
-trp_a5_dun_night_wolf|Дунландський нічний вовк
-trp_a5_dun_night_wolf_pl|Дунландські нічні вовки
-trp_dunnish_lieutenant|Дунландський Гетьман
-trp_dunnish_lieutenant_pl|Дунландські Гетьмани
-trp_goblin_chieftain|Гоблінський Вождь
-trp_goblin_chieftain_pl|Гоблінські Вожді
-trp_captain_of_gondor|Полководець Ґондору
-trp_captain_of_gondor_pl|Полководці Ґондору
-trp_nobleman|Знатний чоловік
-trp_nobleman_pl|Знатні люди
-trp_gondor_agent|Ґондорський шпигун
-trp_gondor_agent_pl|Ґондорські шпигуни
-trp_rohan_agent|Роганський шпигун
-trp_rohan_agent_pl|Роганські шпигуни
-trp_mordor_agent|Мордорський шпигун
-trp_mordor_agent_pl|Мордорські шпигуни
-trp_isengard_agent|Ізенгардський Шпигун
-trp_isengard_agent_pl|Ізенградські шпигуни
-trp_looter|Грабіжник
-trp_looter_pl|Грабіжники
-trp_bandit|Бандит
-trp_bandit_pl|Бандити
+; trp_greenwood_captain|Greenwood Captain
+; trp_greenwood_captain_pl|Greenwood Captains
+; trp_lorien_captain|Lothlorien Captain
+; trp_lorien_captain_pl|Lothlorien Captains
+; trp_riv_captain|Rivendell Elf Lord
+; trp_riv_captain_pl|Rivendell Elf Lords
+; trp_arnor_captain|Captain of Arnor
+; trp_arnor_captain_pl|Captains of Arnor
+; trp_arnor_ranger_captain|Ranger Captain of Arnor
+; trp_arnor_ranger_captain_pl|Ranger Captains of Arnor
+trp_rohan_captain|Полководець Рогану
+trp_rohan_captain_pl|Полководці Рогану
+; trp_beorning_captain|Beorning Chieftain
+; trp_beorning_captain_pl|Beorning Chieftains
+; trp_woodmen_captain|Woodmen Chieftain
+; trp_woodmen_captain_pl|Woodmen Chieftains
+trp_isen_captain|Полководець Ізенгарду
+trp_isen_captain_pl|Полководці Ізенгарду
+; trp_isen_tracker_captain|Isengard Tracker Captain
+; trp_isen_tracker_captain_pl|Isengard Tracker Captains
+trp_mordor_uruk_captain|Мордорський Урук-Капітан
+; trp_mordor_uruk_captain_pl|Mordor Uruk Captains
+trp_mordor_captain|Полководець Мордору
+trp_mordor_captain_pl|Полководці Мордору
+; trp_umbar_captain|Captain of Umbar
+; trp_umbar_captain_pl|Captains of Umbar
+; trp_khand_captain|Variag War Chief
+; trp_khand_captain_pl|Variag War Chiefs
+; trp_rhun_captain|Rhun Chieftain
+; trp_rhun_captain_pl|Rhun Chieftains
+; trp_moria_captain|Uruk Chieftain of Moria
+; trp_moria_captain_pl|Uruk Chieftains of Moria
+; trp_dwarf_captain|Dwarf Captain
+; trp_dwarf_captain_pl|Dwarf Captains
+; trp_dale_captain|Captain of Dale
+; trp_dale_captain_pl|Captains of Dale
+; trp_harad_captain|Haradrim Noble
+; trp_harad_captain_pl|Haradrim Nobles
+trp_a5_dun_night_wolf2|Дунландський нічний вовк
+trp_a5_dun_night_wolf2_pl|Дунландський нічний вовк
+trp_dun_captain|Дунландський Гетьман
+trp_dun_captain_pl|Дунландські Гетьмани
+; trp_gunda_captain|Gundabad Chieftain
+; trp_gunda_captain_pl|Gundabad Chieftains
+trp_gondor_captain|Гондорський полководець
+trp_gondor_captain_pl|Полководці Ґондору
+trp_pel_captain|Командир пеларгірського загону
+trp_pel_captain_pl|Командири пеларгірських загонів
+; trp_amroth_captain|Knight Captain of Dol Amroth
+; trp_amroth_captain_pl|Knights Captain of Dol Amroth
+trp_lam_captain|Командир ламедонського загону
+trp_lam_captain_pl|Командири ламедонських загонів
+trp_loss_captain|Командир лоссарнахського загону
+trp_loss_captain_pl|Командири лоссарнахського загону
+trp_pinnath_captain|Командир піннат-гелінського загону
+trp_pinnath_captain_pl|Командири піннат-гелінського загону
+; trp_blackroot_captain|Captain of Blackroot Vale
+; trp_blackroot_captain_pl|Captains of Blackroot Vale
+trp_ithilien_captain|Командир загону Ітіліенських рейнджерів
+trp_ithilien_captain_pl|Командири загонів Ітіліенських рейнджерів
 trp_brigand|Найманець
 trp_brigand_pl|Найманці
 trp_mountain_bandit|Гірський розбійник
@@ -865,17 +857,11 @@ trp_messenger_orc_pl|Гінці
 trp_messenger_evil_man|Гонець
 trp_messenger_evil_man_pl|Гінці
 trp_town_walker_1|Городянин
-trp_town_walker_1_pl|Городяни
 trp_town_walker_2|Городянка
-trp_town_walker_2_pl|Городяни
 trp_village_walker_1|Селянин
-trp_village_walker_1_pl|Селяни
 trp_village_walker_2|Селянин
-trp_village_walker_2_pl|Селяни
 trp_spy_walker_1|Городянин
-trp_spy_walker_1_pl|Городяни
 trp_spy_walker_2|Горожанка
-trp_spy_walker_2_pl|Городяни
 trp_walker_man_gondor_black|Городянин
 trp_walker_man_gondor_white|Городянин
 trp_walker_man_gondor_blue|Городянин
@@ -991,11 +977,11 @@ trp_knight_1_5|Дуінхір
 trp_knight_1_6|Хірлуін Прекрасний
 trp_knight_1_7|Фарамир
 trp_knight_1_8|Форлонг Товстий
-trp_knight_1_9|Грімболд
+; trp_knight_1_9|Theodred
 trp_knight_1_10|Еркенбранд
 trp_knight_1_11|Ельфхельм
 trp_knight_1_12|Хама
-trp_knight_1_13|Гамлінг
+trp_knight_1_13|Грімболд
 trp_knight_1_14|Еомер
 trp_knight_1_15|Углук
 trp_knight_1_16|Маухур
@@ -1375,7 +1361,7 @@ trp_elder_edoras|Тан Едорасу
 trp_elder_edoras_pl|місто
 trp_elder_aldburg|Тан Альдбургу
 trp_elder_aldburg_pl|поселення
-trp_elder_hornburg|Тан Хорнбургу
+trp_elder_hornburg|Гамлінг
 trp_elder_hornburg_pl|фортеця
 trp_elder_eastemnet|Тан Вестемнета
 trp_elder_eastemnet_pl|поселення
@@ -1391,7 +1377,7 @@ trp_elder_mmorgul|Моргульський Управитель
 trp_elder_mmorgul_pl|зловісне місто
 trp_elder_cungol|Табірний Управитель
 trp_elder_cungol_pl|табір
-trp_elder_isengard|Ґріма Гадючий Язик
+; trp_elder_isengard|Isengard Overseer
 trp_elder_isengard_pl|місто
 trp_elder_cgaladhon|Лоріенський хранитель звичаїв
 trp_elder_cgaladhon_pl|лісову фортецю ельфів
@@ -1482,30 +1468,20 @@ trp_tax_rebel_pl|Селяни-Бунтарі
 trp_trainee_peasant|Селянин
 trp_trainee_peasant_pl|Селяни
 trp_fugitive_man|Підозрілий чоловік
-trp_fugitive_man_pl|Підозрілі люди
 trp_fugitive_elf|Підозрілий ельф
-trp_fugitive_elf_pl|Підозрілі ельфи
 trp_fugitive_dwarf|Підозрілий гном
-trp_fugitive_dwarf_pl|Підозрілі гноми
 trp_fugitive_orc|Підозрілий орк
-trp_fugitive_orc_pl|Підозрілі орки
 trp_spy|Лукавий корсар
-trp_spy_pl|Лукаві корсари
 trp_spy_evil|Лукавий Південник
-trp_spy_evil_pl|Лукаві Південці
 trp_spy_partner|Спільник шпигуна
-trp_spy_partner_pl|Спільники шпигунів
 trp_spy_partner_evil|Спільник шпигуна
-trp_spy_partner_evil_pl|Спільники шпигунів
 trp_easter_egg_troll|Троль
 trp_treebeard|Древлен
 trp_ent_1|Скородум
 trp_ent_2|Фінглас
 trp_ent_3|Фладриф
 trp_gandalf|Гендальф
-trp_gandalf_pl|Доморощені Гендальфи
 trp_nazgul|Назгул
-trp_nazgul_pl|Одомашнений Назгул
 trp_radagast|Радагаст
 trp_barman|Бармен
 trp_elder|Старійшина
@@ -1516,14 +1492,11 @@ trp_dorwinion_bandit|Дорвініонський Розбійник
 trp_dorwinion_bandit_pl|Дорвініонські Розбійники
 trp_dorwinion_raider|Дорвініонський Грабіжник
 trp_dorwinion_raider_pl|Дорвініонські Грабіжники
+; trp_no_troop_pl|the place
 trp_city_guard|Міський стражник
-trp_city_guard_pl|Міські стражники
 trp_orc_sentry|Орк-Часовий
-trp_orc_sentry_pl|Орки-Часові
 trp_uruk_hai_sentry|Урук-Хай Часовий
-trp_uruk_hai_sentry_pl|Урук-Хайї Часові
 trp_black_numenorean_sorcerer|Чорний нуменорець-Чаклун
-trp_black_numenorean_sorcerer_pl|Чорні нуменорці-Чаклуни
 trp_evil_priest|Служитель зла
 trp_evil_priest_pl|Служитель зла
 trp_wolf_rider_of_mirkwood|Вовчий вершник Темнолісся
@@ -1559,8 +1532,19 @@ trp_start_quest_mordor_scout|Мордорський Провідник
 trp_start_quest_mordor_scout_pl|Мордорські Провідники
 trp_start_quest_beorning|Беорнінгський Берсерк Каррока
 trp_start_quest_beorning_pl|Беорнінгські Берсерки Каррока
+; trp_black_shield|Amath Dollen
+; trp_black_shield_bandit|Amath Dollen's Bandit
+; trp_black_shield_bandit_pl|Amath Dollen's Bandits
+; trp_black_shield_scout|Amath Dollen's Scout
+; trp_black_shield_scout_pl|Amath Dollen's Scouts
+; trp_black_shield_guard|Amath Dollen's Guard
+; trp_black_shield_guard_pl|Amath Dollen's Guards
+; trp_dorwinion_spirit_leader|Spirit
+; trp_dorwinion_spirit|Lesser Spirit
 trp_i6_beorning_bear_warrior|Воїн-ведмідь
 trp_i6_beorning_bear_warrior_pl|Воїни-ведмеді
+trp_a5_dun_night_wolf|Дунландський нічний вовк
+trp_a5_dun_night_wolf_pl|Дунландські нічні вовки
 trp_morannon_healer|Окстук Лікар
 trp_minas_tirith_healer|Лорет
 trp_edoras_healer|Фрея Цілителька
@@ -1582,6 +1566,7 @@ trp_c5_rhovanion_noble_pl|Знатна кіннота Рованіона
 trp_npc18|Турмбату
 trp_npc19|Хейдрек
 trp_npc20|Зігурфель
+; trp_npc21|Berta
 trp_werewolf|Перевертень
 trp_werewolf_pl|Перевертні
 trp_moria_troll|Печерний Троль
@@ -1647,3 +1632,5 @@ trp_pippin_notmet|Гобіти
 trp_merry_notmet|Гобіти
 trp_pippin|Піпін
 trp_merry|Меррі
+trp_grima|Ґріма Гадючий Язик
+trp_grima_pl|місто

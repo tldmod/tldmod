@@ -13,7 +13,6 @@ skinkey_nose_width|Largura do nariz
 skinkey_nose_size|Tamanho do nariz
 skinkey_nose_shape|Forma do nariz
 skinkey_nose_bridge|Ponte do nariz
-
 skinkey_eye_width|Largura do olho
 skinkey_eye_to_eye_dist|Distância entre os olhos
 skinkey_eye_shape|Forma do olho
@@ -22,7 +21,6 @@ skinkey_eyelids|Pálpebras
 skinkey_cheeks|Bochechas
 skinkey_cheek_bones|Ossos da bocheca
 skinkey_eyebrow_height|Altura da sobrancelha
-
 skinkey_eyebrow_shape|Forma da sobrancelha
 skinkey_temple_width|Largura da têmpora
 skinkey_face_depth|Profundidade da face
@@ -44,3 +42,5 @@ skinkey_frawn|Frawn
 skinkey_mouth_vert_pos|Posição vertical da boca
 skinkey_mouth_to_nose_dist|Distância entre a boca e o nariz
 skinkey_chin_width|Largura do queixo
+; skinkey_ear_pointiness|Ear Pointiness
+; skinkey_ear_length|Ear Length
