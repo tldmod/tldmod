@@ -25654,8 +25654,8 @@ command_cursor_scripts = [
     (try_end),  
     
     (try_begin), #update troop flags and captain slots
-        (lt, "$savegame_version", 4121),
-        (assign, "$savegame_version", 4121),
+        (lt, "$savegame_version", 4157),
+        (assign, "$savegame_version", 4157),
         (troop_set_faction, "trp_a5_dun_night_wolf", fac_dunland),
         (troop_set_type, "trp_a5_dun_night_wolf", tf_dunland),
         (troop_set_type, "trp_dwarf_captain", tf_dwarf),
@@ -25683,7 +25683,9 @@ command_cursor_scripts = [
                 (party_set_slot, ":town", slot_town_captain, ":troop"),
             (try_end),
         (try_end),
-    (try_end),      
+        (party_set_slot, "p_town_henneth_annun", slot_town_captain, "trp_a6_ithilien_leader"), #bugged because of troop overwrite
+    (try_end),    
+
 ]),
 
 #Kham
@@ -30974,7 +30976,7 @@ if is_a_wb_script==1:
 
 ]),
 
-
+#script_clone_troop
 ("clone_troop", [
     (store_script_param_1, ":troop_to_clone"),
     (store_script_param_2, ":troop_clone"),

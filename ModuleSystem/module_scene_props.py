@@ -3881,6 +3881,17 @@ scene_props = [
 # retreat gates open at mission start and close when the assigned rally point in var_id_2 is lost. Place closed.
 ("gate_destructible_retreat",sokf_destructible|sokf_moveable,"gate_tld_displaced","bo_gate_tld_displaced",   [ 
    
+   (ti_on_scene_prop_init,
+    [(store_trigger_param_1, ":instance_no"),
+    ] + (is_a_wb_sceneprop==1 and [ (is_edit_mode_enabled), ] or []) + [ 
+    (set_fixed_point_multiplier, 10000),
+    (prop_instance_get_scale, pos2, ":instance_no"),
+    (position_get_scale_x, ":scale_x", pos2),
+    (eq, ":scale_x", 10000), #only show tutorial message if scale is unchanged
+    (display_message, "@{!} debug: retreat gates open at mission start and close when the assigned rally point in var_id_2 is lost. Place closed. var_id 1 checks AI limiters."),
+    (display_message, "@{!} debug: scale prop to disable this message"),
+    ]),
+   
    (ti_on_scene_prop_destroy, [
     (store_trigger_param_1, ":gate_no"),
     (set_fixed_point_multiplier, 100),

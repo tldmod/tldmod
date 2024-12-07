@@ -1,4 +1,4 @@
-2011
+2012
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_weapon_damaged Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -6,6 +6,7 @@ qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_i
 qstr_Secret_place_discove Secret_place_discovered!
 qstr_{!}_debug:_scale_up_ {!}_debug:_scale_up_down_to_increase/decrease_fog_distance,_default_is_1000m.
 qstr_{!}_debug:_scale_pro {!}_debug:_scale_prop_to_disable_this_message
+qstr_{!}_debug:_retreat_g {!}_debug:_retreat_gates_open_at_mission_start_and_close_when_the_assigned_rally_point_in_var_id_2_is_lost._Place_closed._var_id_1_checks_AI_limiters.
 qstr_{!}_debug:_sound_emi {!}_debug:_sound_emitter:_var1_x_10_+_var2_is_sound_no;_first_two_digits_after_comma_in_scale_x_is_range_in_metres
 qstr_{!}_debug:_ambient_s {!}_debug:_ambient_sound_emitter:_stops_all_looping_sounds,_sets_a_new_ambient_sound_while_in_range
 qstr_{!}_sound_emitter:_v {!}_sound_emitter:_var1_x_10_+_var2_is_sound_no;_scale_x_is_chance_per_3_seconds
@@ -91,7 +92,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr_{!}_rev_4154_wb__dev {!}_rev_4154_wb_|_dev_^_Built_2024-12-03_21:26___
+qstr_{!}_rev_?_wb__dev_^_ {!}_rev_¿?_wb_|_dev_^_Built_2024-12-07_12:46___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes

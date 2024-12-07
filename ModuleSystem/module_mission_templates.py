@@ -4974,6 +4974,7 @@ mission_templates = [ # not used in game
             (try_for_agents, ":friends", pos0, 1500),
                 (agent_is_alive, ":friends"),
                 (agent_is_human, ":friends"),
+                (neq, ":friends", ":player_agent"),
                 (neg|agent_is_defender, ":friends"),
                 (agent_get_combat_state, ":agent_cs", ":friends"),
                 (eq, ":agent_cs", 0),
