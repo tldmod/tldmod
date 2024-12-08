@@ -56,7 +56,7 @@ menu_start_haradrim 18374686479671624192 ^^^^^^^You_are_one_of_the_Haradrim,^a_M
  mno_start_1_des  0  Desert_Man  2 2133 2 144115188075856341 247 2060 1 28  .  mno_start_2_far  0  Far_Harad_Tribesman  2 2133 2 144115188075856341 263 2060 1 28  .  mno_spacer  0  {!}_  0  .  mno_go_back  0  Go_back  1 2060 1 21  . 
 menu_start_numenorean 18374686479671624192 ^^^^^^^You_are_a_Black_Numenorean,^faithful_to_the_Darkness_and_Morgoth.^Select_where_you_serve_the_Eye none 1 2133 2 144115188075855974 27 4
  mno_start_1_bn  0  Next_to_the_Mouth_of_Sauron,_in_MORANNON  1 2060 1 28  .  mno_start_2_bn  0  In_the_Fortress_of_the_Necromancer,_DOL_GULDUR  2 1 2 253 17 2060 1 28  .  mno_spacer  0  {!}_  0  .  mno_go_back  0  Go_back  1 2060 1 21  . 
-menu_choose_gender 18374686479671624192 {!}^^^^^^^^^^Your_gender? none 0 4
+menu_choose_gender 18374686479671624192 ^^^^^^^^^^Your_gender? none 0 4
  mno_start_male  0  Male  1 2060 1 30  .  mno_start_female  0  Female  2 1505 2 0 1 2060 1 30  .  mno_spacer  0  {!}_  0  .  mno_go_back  0  Go_back  7 1532 1 0 4 0 31 2 144115188075856763 33 900 1 26 5 0 2060 1 144115188075855974 3 0  . 
 menu_choose_skill 18374687574888284672 {!}^^^^^^^^FOR_DEVS:^*normally*,_at_this_point^you_would_go_to_edit_skills^and_then_face... none 5 1 2 252 144115188075856341 4 0 31 2 1 0 2060 1 31 3 0 2
  mno_skip  0  {!}SKIP_THAT:_let_me_playtest_now  6 2133 2 144115188075855982 1 2133 2 144115188075855989 0 2133 2 144115188075855988 0 2133 2 144115188075856565 4 2133 2 144115188075856564 1 2060 1 1  .  mno_proc  0  {!}Proceed_as_normal  1 2060 1 31  . 

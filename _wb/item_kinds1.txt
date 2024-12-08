@@ -2553,7 +2553,7 @@ itemsfile version 2
  itm_ent_hands {!}Ent_Hands {!}Ent_Hands 6  ent_hand_L 0  olog_hand_L 4398046511104  isen_olog_hand_L 2199023255552  troll_handL 2  gunda_troll_handL 4  mordor_troll_handL 8  4111 0 1 0 58 100 0 1 0 30 0 0 0 0 0 0 0
 0
 
- itm_fur_gloves_reward {!}Hunter_Gloves {!}Hunter_Gloves 1  narf_demi_gauntlets_fur_L 0  4111 0 2000 0 0 100 0 3 0 0 0 0 0 0 0 0 0
+ itm_fur_gloves_reward Hunter_Gloves Hunter_Gloves 1  narf_demi_gauntlets_fur_L 0  4111 0 2000 0 0 100 0 3 0 0 0 0 0 0 0 0 0
 0
 
  itm_empty_hands {!}empty_hands {!}empty_hands 1  dummy_mesh 0  137438957583 0 130 0 33 100 0 1 0 0 0 0 0 0 0 0 0
@@ -2858,10 +2858,10 @@ itemsfile version 2
  itm_denethor_robe Fine_Outfit Fine_Outfit 1  dno_priest_3_1_dark 0  553648141 0 500 123731968 3 100 0 10 10 0 0 0 0 0 0 0 0
 0
 
- itm_ent_head_helm2 Ent_Head Ent_Head 1  ent_head2 0  4108 0 1 0 58 100 60 0 0 30 0 0 0 0 0 0 0
+ itm_ent_head_helm2 {!}Ent_Head {!}Ent_Head 1  ent_head2 0  4108 0 1 0 58 100 60 0 0 30 0 0 0 0 0 0 0
 0
 
- itm_ent_head_helm3 Ent_Head Ent_Head 1  ent_head3 0  4108 0 1 0 58 100 60 0 0 30 0 0 0 0 0 0 0
+ itm_ent_head_helm3 {!}Ent_Head {!}Ent_Head 1  ent_head3 0  4108 0 1 0 58 100 60 0 0 30 0 0 0 0 0 0 0
 0
 
  itm_civilian_hammer Hammer Hammer 1  civilian_hammer_khazad 0  4194306 9223388532775583758 300 0 4.5 100 0 0 0 0 1024 75 0 120 0 0 513

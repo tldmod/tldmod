@@ -2553,7 +2553,7 @@ itemsfile version 2
  itm_ent_hands {!}Ent_Hands {!}Ent_Hands 6  ent_hand_L 0  olog_hand_L 4398046511104  isen_olog_hand_L 2199023255552  troll_handL 2  gunda_troll_handL 4  mordor_troll_handL 8  4111 0 1 0 58 100 0 1 0 30 0 0 0 0 0 0 0
 0
 
- itm_fur_gloves_reward {!}Hunter_Gloves {!}Hunter_Gloves 1  narf_demi_gauntlets_fur_L 0  4111 0 2000 0 0 100 0 3 0 0 0 0 0 0 0 0 0
+ itm_fur_gloves_reward Hunter_Gloves Hunter_Gloves 1  narf_demi_gauntlets_fur_L 0  4111 0 2000 0 0 100 0 3 0 0 0 0 0 0 0 0 0
 0
 
  itm_empty_hands {!}empty_hands {!}empty_hands 1  dummy_mesh 0  137438957583 0 130 0 33 100 0 1 0 0 0 0 0 0 0 0 0
