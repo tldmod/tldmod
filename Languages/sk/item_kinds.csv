@@ -725,6 +725,7 @@ itm_gondor_lance_banner|Gondorská žrď so zástavou
 itm_amroth_lance_banner|Dol Amrothská žrď so zástavou
 itm_rohan_lance_banner_sun|Rohanská žrď so zástavou slnka
 itm_rohan_lance_banner_horse|Rohanská žrď so zástavou koňa
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Zvláštna miska vody
 itm_map|Mapy Stredozeme
 ; itm_athelas_reward|Dried Athelas Leaves
@@ -820,8 +821,6 @@ itm_fine_hat_wb|Dobrá čapica
 ; itm_rohan_tunic_a_wb|Rohan Tunic
 ; itm_rohan_tunic_b_wb|Rohan Tunic
 itm_denethor_robe|Dobrá výstroj
-itm_ent_head_helm2|Entská hlava
-itm_ent_head_helm3|Entská hlava
 ; itm_civilian_hammer|Hammer
 ; itm_civilian_woodaxe_1h|Axe
 ; itm_civilian_woodaxe_2h|Heavy Axe

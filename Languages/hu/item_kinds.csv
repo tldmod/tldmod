@@ -725,6 +725,7 @@ itm_gondor_lance_banner|Gondori lobogós kopja
 itm_amroth_lance_banner|Dol Amrothi lobogós kopja
 itm_rohan_lance_banner_sun|Rohani lobogós kopja
 itm_rohan_lance_banner_horse|Rohani ló lobogós kopja
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Furcsa edényi víz
 itm_map|Középfölde térképei
 ; itm_athelas_reward|Dried Athelas Leaves
@@ -820,8 +821,6 @@ itm_fine_hat_wb|Szép kalap
 ; itm_rohan_tunic_a_wb|Rohan Tunic
 ; itm_rohan_tunic_b_wb|Rohan Tunic
 itm_denethor_robe|Szép öltözet
-itm_ent_head_helm2|Ent fej
-itm_ent_head_helm3|Ent fej
 ; itm_civilian_hammer|Hammer
 ; itm_civilian_woodaxe_1h|Axe
 ; itm_civilian_woodaxe_2h|Heavy Axe

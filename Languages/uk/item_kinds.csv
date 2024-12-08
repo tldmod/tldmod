@@ -725,6 +725,7 @@ itm_gondor_lance_banner|Ґондорський спис з прапорцем
 itm_amroth_lance_banner|Дол-Амротський спис з прапорцем
 itm_rohan_lance_banner_sun|Роганський спис з прапором сонця
 itm_rohan_lance_banner_horse|Роганський спис з прапором коня
+itm_fur_gloves_reward|Мисливські рукавички
 itm_ent_water|Дивна чаша води
 itm_map|Карти Середзем'я
 itm_athelas_reward|Сушене листя Ателаса
@@ -820,8 +821,6 @@ itm_black_tunic_wb|Чорний одяг
 ; itm_rohan_tunic_a_wb|Rohan Tunic
 ; itm_rohan_tunic_b_wb|Rohan Tunic
 ; itm_denethor_robe|Fine Outfit
-; itm_ent_head_helm2|Ent Head
-; itm_ent_head_helm3|Ent Head
 ; itm_civilian_hammer|Hammer
 ; itm_civilian_woodaxe_1h|Axe
 ; itm_civilian_woodaxe_2h|Heavy Axe

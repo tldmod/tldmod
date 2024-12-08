@@ -725,6 +725,7 @@ itm_gondor_lance_banner|Gondorské kopí s praporem
 itm_amroth_lance_banner|Dol Armothské kopí s praporem
 itm_rohan_lance_banner_sun|Rohanské kopí se slunečním praporem
 itm_rohan_lance_banner_horse|Rohanské kopí se koňským praporem
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|Divná miska s vodou
 itm_map|Mapy Středozemě
 itm_athelas_reward|Sušené lístky Athelasu
@@ -820,8 +821,6 @@ itm_fine_hat_wb|Dobrá čepice
 ; itm_rohan_tunic_a_wb|Rohan Tunic
 ; itm_rohan_tunic_b_wb|Rohan Tunic
 itm_denethor_robe|Dobrá výstroj
-; itm_ent_head_helm2|Ent Head
-; itm_ent_head_helm3|Ent Head
 ; itm_civilian_hammer|Hammer
 ; itm_civilian_woodaxe_1h|Axe
 ; itm_civilian_woodaxe_2h|Heavy Axe

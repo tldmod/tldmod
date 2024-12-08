@@ -725,6 +725,7 @@ itm_gondor_lance_banner|Lanca z Chorągwią Gondoru
 itm_amroth_lance_banner|Lanca z Chorągwią Dol Amroth
 itm_rohan_lance_banner_sun|Lanca z Chorągwią Rohanu
 itm_rohan_lance_banner_horse|Lanca z Chorągwią Rohanu
+itm_fur_gloves_reward|Rękawice Łowcy
 itm_ent_water|Dziwna Misa z Wodą
 itm_map|Mapy Śródziemia
 itm_athelas_reward|Wysuszone Liści Athelasu
@@ -820,8 +821,6 @@ itm_fine_hat_wb|Porządny Kapelusz
 ; itm_rohan_tunic_a_wb|Rohan Tunic
 ; itm_rohan_tunic_b_wb|Rohan Tunic
 itm_denethor_robe|Porządne Ubranie
-itm_ent_head_helm2|Korona Enta
-itm_ent_head_helm3|Korona Enta
 ; itm_civilian_hammer|Hammer
 ; itm_civilian_woodaxe_1h|Axe
 ; itm_civilian_woodaxe_2h|Heavy Axe

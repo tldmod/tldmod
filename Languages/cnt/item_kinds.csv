@@ -725,6 +725,7 @@ itm_gondor_lance_banner|剛鐸騎槍加旗幟
 itm_amroth_lance_banner|多爾安姆羅斯騎槍加旗幟
 itm_rohan_lance_banner_sun|洛汗騎槍加太陽旗
 itm_rohan_lance_banner_horse|洛汗騎槍加馬旗
+itm_fur_gloves_reward|獵人手套
 itm_ent_water|一碗奇怪的水
 itm_map|中土世界地圖
 itm_athelas_reward|乾燥阿系拉斯葉
@@ -820,8 +821,6 @@ itm_black_tunic_wb|黑色束腰外衣
 ; itm_rohan_tunic_a_wb|Rohan Tunic
 ; itm_rohan_tunic_b_wb|Rohan Tunic
 ; itm_denethor_robe|Fine Outfit
-; itm_ent_head_helm2|Ent Head
-; itm_ent_head_helm3|Ent Head
 ; itm_civilian_hammer|Hammer
 ; itm_civilian_woodaxe_1h|Axe
 ; itm_civilian_woodaxe_2h|Heavy Axe

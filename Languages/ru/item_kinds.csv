@@ -725,6 +725,7 @@ itm_gondor_lance_banner|Гондорское копьё с флажком
 itm_amroth_lance_banner|Дол-амротское копьё с флажком
 itm_rohan_lance_banner_sun|Роханское копьё со знаменем солнца
 itm_rohan_lance_banner_horse|Роханское копьё со знаменем коня
+itm_fur_gloves_reward|Перчатки Охотника
 itm_ent_water|Странная чаша с водой
 itm_map|Карты Средиземья
 itm_athelas_reward|Сушеные листья Ателаса
@@ -820,8 +821,6 @@ itm_fine_hat_wb|Красивая шляпа
 ; itm_rohan_tunic_a_wb|Rohan Tunic
 ; itm_rohan_tunic_b_wb|Rohan Tunic
 itm_denethor_robe|Красивая одежда
-itm_ent_head_helm2|Энтийская голова
-itm_ent_head_helm3|Энтийская голова
 ; itm_civilian_hammer|Hammer
 ; itm_civilian_woodaxe_1h|Axe
 ; itm_civilian_woodaxe_2h|Heavy Axe

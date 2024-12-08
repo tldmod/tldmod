@@ -725,6 +725,7 @@ itm_gondor_lance_banner|곤도르 창과 깃발
 itm_amroth_lance_banner|돌 암로스 창과 깃발
 itm_rohan_lance_banner_sun|로한 창과 태양 깃발
 itm_rohan_lance_banner_horse|로한 창과 기마대 깃발
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|수상한 액체가 담긴 그릇
 itm_map|중간계 지도
 itm_athelas_reward|말린 임금님풀
@@ -820,8 +821,6 @@ itm_fine_hat_wb|잘 만든 모자
 ; itm_rohan_tunic_a_wb|Rohan Tunic
 ; itm_rohan_tunic_b_wb|Rohan Tunic
 itm_denethor_robe|고급 의상
-; itm_ent_head_helm2|Ent Head
-; itm_ent_head_helm3|Ent Head
 ; itm_civilian_hammer|Hammer
 ; itm_civilian_woodaxe_1h|Axe
 ; itm_civilian_woodaxe_2h|Heavy Axe
