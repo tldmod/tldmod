@@ -159,7 +159,7 @@ mno_strat_tweaks_siege_reqs|Forza richiesta per assedi: {s7}
 mno_strat_tweaks_siege_relax_rate|Relazione della richiesta di forza per assediare: {reg1}
 mno_strat_tweaks_regen_rate|Tasso di rigenerazione della forza: {s7}
 mno_strat_tweaks_siege_regen_limit|La potenza della fazione si rigenera più lentamente a: {reg1}
-mno_strat_tweaks_influence_gain_rate|Tasso d'influenza guadagnata: {reg0}%
+mno_strat_tweaks_influence_gain_rate|Tasso d'influenza guadagnato: {reg0}%
 mno_strat_tweaks_rank_gain_rate|Tasso di Rango guadagnato: {reg0}%
 mno_strat_tweaks_back|Ritorna al menu delle modifiche.
 menu_camp_action|^^^^^^^^^ Quale oggetto ?
@@ -254,7 +254,7 @@ menu_besiegers_camp_with_allies|{s1} rimane sotto assedio. Gli stendardi di {s2}
 mno_talk_to_siege_commander|Richiedi un incontro con il comandante.
 mno_join_siege_with_allies|Unisciti al prossimo assalto.
 mno_join_siege_stay_back|Ordina ai tuoi soldati di unirsi al prossimo assalto senza di te.
-menu_moria_must_escape|^^Il libro sembra raccontare l'ultimo tentativo dei nani di insediarsi a Moria. Tentativo che apparentemente si è concluso con una morte orribile per tutti i coinvolti. Mentre rifletti sul loro oscuro destino, all'improvviso senti aspre grida e l'affrettato scalpiccio di molti passi.^ Stanno Arrivando !^  Uscendo rapidamente dalla stanza, noti che i suoni provengono dal salone. Non hai altra scelta che fuggire nella direzione opposta, in uno stretto tunnel tortuoso e giù... ^...^Dopo un paio d'ore comprendi d'esserti perso nel profondo di Moria e di dover trovare una via d'uscita.
+menu_moria_must_escape|^^Il libro sembra raccontare l'ultimo tentativo dei nani di insediarsi a Moria. Tentativo che apparentemente si è concluso con una morte orribile per tutti i coinvolti. Mentre rifletti sul loro oscuro destino, all'improvviso senti aspre grida e l'affrettato scalpiccìo di molti passi.^ Stanno Arrivando !^  Uscendo rapidamente dalla stanza, noti che i suoni provengono dal salone. Non hai altra scelta che fuggire nella direzione opposta, in uno stretto tunnel tortuoso e giù... ^...^Dopo un paio d'ore comprendi d'esserti perso nel profondo di Moria e di dover trovare una via d'uscita.
 mno_moria_exit_scene|Trova la via d'uscita !
 menu_castle_outside|Sei fuori da: {s2}. {s11} {s3} {s4}
 mno_cheat_steal_book_door|Prendi il libro.
@@ -351,12 +351,12 @@ mno_attack_lair|Attaccali adesso
 mno_leave_bandit_lair|Vattene per ora.
 menu_raftmen|^^^^Segui il fiume che scorre verso sud-est in direzione di Rhûn, sperando di trovare la vecchia strada mercantile.^^ Dopo qualche tempo, giungi nei pressi di un piccolo villaggio incastonato lungo la riva del fiume.^^Chiedi agli abitanti del villaggio come raggiungere la strada e ti indirizzano verso una coppia di uomini che navigano il fiume su una zattera.^^si rende necessaria una negoziazione, ma riesci a farti portare dagli uomini lungo il fiume.
 mno_go_with_the_raftmen|Prendi la zattera per Dorwinion
-menu_ride_to_dorwinion|^^^^Ti rilassi godendoti la bella giornata mentre gli uomini guidano la zattera lungo il corso d'acqua. Il fiume che scorre, freddo e limpido tra le cascate e le rapide dell Montagna Solitaria, qui è tiepido, dolce e terroso.^^ Nel sole del pomeriggio, osservi le pianure ondulate e i boschi verdeggianti che scivolano via mentre la zattera galleggia lungo i tortuosi meandri. La regione è scarsamente punteggiata da piccole fattorie e vigneti con bassi muri in pietra e transiti di tanto in tanto vicino cottage su palafitte nascosti tra i canneti.^^Il movimento pacifico della zattera concilia il tuo sonno...
+menu_ride_to_dorwinion|^^^^Ti rilassi godendoti la bella giornata mentre gli uomini guidano la zattera lungo il corso d'acqua. Il fiume che scorre, freddo e limpido tra le cascate e le rapide della Montagna Solitaria, qui è tiepido, dolce e terroso.^^ Nel sole del pomeriggio, osservi le pianure ondulate e i boschi verdeggianti che scivolano via mentre la zattera galleggia lungo i tortuosi meandri. La regione è scarsamente punteggiata da piccole fattorie e vigneti con bassi muri in pietra e transiti di tanto in tanto vicino cottage su palafitte nascosti tra i canneti.^^Il movimento pacifico della zattera concilia il tuo sonno...
 mno_ride_to_dorwinion_next|Successivamente...
-menu_amath_dollen_fortress|^^^^Ti svegli dal tuo pisolino nel tardo pomeriggio e raggiungi subito un molo dove gli uomini attraccano con la zattera. Ti indirizzano verso uno stretto sentiero che scompare nell'erba della palude e allestiscono un accampamento per attendere il tuo ritorno.^^Segui il sentiero, che sale rapidamente dalle zone umide verso una pianura erbosa, e cammina finché non incontra la vecchia strada mercantile.^^Dopo un po', vedi una fortezza infestata da banditi.
+menu_amath_dollen_fortress|^^^^Ti svegli dal tuo sonno nel tardo pomeriggio e raggiungi subito un molo dove gli uomini attraccano con la zattera. Ti indirizzano verso uno stretto sentiero che scompare nell'erba della palude e allestiscono un accampamento per attendere il tuo ritorno.^^Segui il sentiero, che sale rapidamente dalle zone umide verso una pianura erbosa, camminando finché non incontri la vecchia strada mercantile.^^Dopo un po', vedi una fortezza infestata da banditi.
 mno_bandit_fortress_with_companions|Avvicinati alla Fortezza dei Banditi solo con i tuoi compagni e prova a parlare con il loro capo.
 mno_bandit_fortress_with_army|Attacca la fortezza dei banditi con tutti i tuoi uomini.
-mno_bandit_fortress_against_easterlings|Difendi la Fortezza dall'Assedio
+mno_bandit_fortress_against_easterlings|Difendi la Fortezza dall'Assedio.
 mno_bandit_fortress_spirits|Vai a parlare con gli spiriti.
 mno_leave_amath_dollen_fortress|Vattene per ora.
 menu_gondor_reinforcement_event|^^^^^ le Torri-Faro di Gondor sono accese, Minas Tirith chiede aiuto ! ^^ I signori dei feudi meridionali marceranno ora verso nord per difendere la Città Bianca contro l'oscurità incombente.

@@ -57,7 +57,7 @@ qstr_Close|Cerrar
 qstr_Faction_Side:^^Campa|Bando de la facción:^^Dificultad de campaña*:^^Frente inicial:^^Mariscal:^^Enemigos:^^
 qstr_Campaign_Difficulty_|La dificultad de la campaña está basada en la fuerza inicial de la facción, los enemigos en su frente,^ y el árbol de tropas de la facción y su equipamiento.
 qstr_Rallies:|Arengas:
-qstr_View_Keybinds__Press|Ver configuración de teclas (pulsa Insert)
+qstr_View_Keybinds__Press|Ver lista de teclas (pulsa Insert)
 qstr_What_do_you_fight_fo|¿Por qué luchas?
 qstr_Go_Back...|Atrás...
 qstr_Learn_about_the_diff|Aprende más sobre las diferentes facciones de la Tierra Media
@@ -92,10 +92,10 @@ qstr_Battle_Formations_an|Formaciones e IA de batalla:
 qstr_Native|Native
 qstr_TLD_FormAI__Original|IA de formaciones TLD (Original)
 qstr_TLD_New_FormAI|Nueva IA de formaciones TLD
-qstr_Beta_Formations_Twea|Retoques a las formaciopnes Beta
+qstr_Beta_Formations_Twea|Ajustes de Formaciones Beta
 qstr_Siege_AI:__|IA de asedio:  
 qstr_Basic__better_perfor|Básica (mejor rendimiento)
-qstr_Advanced|Avanzado
+qstr_Advanced|Avanzada
 qstr_Campaign_difficulty:|Dificultad de la campaña:
 qstr_Hard|Difícil
 qstr_Default|Por defecto
@@ -118,12 +118,12 @@ qstr_Fixed_Over_The_Shoul|Cámara fija sobre el hombro
 qstr_Prevent_AI_from_taki|Evitar que la IA use formacione defensivas:  
 qstr_Brighter_Nights:__|Noches luminosas:
 qstr_Done|Hecho
-qstr_Gameplay_Tweaks|Retoques de juego
+qstr_Gameplay_Tweaks|Ajustes de partida
 qstr_Set_to_Native_if_you|Seleccionar Native si encuentras algún problema con la IA durante las batallas.
 qstr_Disable_cutscenes_if|Desactiva las cinemáticas si se produce una caída al escritorio al empezar la guerra.
 qstr_Campaign_Difficulty_a|La dificultad de campaña afecta a la cantidad de voluntarios, el tamaño de los ejércitos, y la fuerza que ganan las facciones aliadas.
 qstr_Be_aware_that_many_q|Ten en cuenta que muchas misiones y mecánicas de juego escalan con el nivel del jugador. Incrementar esta opción te dará más tiempo para prepararte, pero hará que la guerra se desarrolle más rápido.
-qstr_Requires_TLD_NewForm|Requiere TLD NewFormAI
+qstr_Requires_TLD_NewForm|Es necesario utilizar la «IA de formaciones nuevas» de TLD
 qstr_Troop_Tree|Árbol de tropas
 qstr__Click_on_a_unit_for|(Haz clic en una unidad para ver detalles)
 qstr_Weapons|Armas
@@ -140,7 +140,7 @@ qstr_F8___No_Formation|F8 - Sin formación
 qstr_Extended_Formations_|Opciones extendidas de formaciones e IA
 qstr_Put_player_in_divisi|Poner jugador en división: 
 qstr_None|Nada
-qstr_Army_rotates_to_face|El ejército rota para estar enfrente del centro enemigor: 
+qstr_Army_rotates_to_face|El ejército mira al centro enemigo: 
 qstr_Prevent_AI_from_takin|Evitar que la IA use formacione defensivas:  
 qstr_AI_Controls_Troops_W|La IA controla a las tropas cuando el jugador está KO: 
 qstr_You_gained_{reg0}_Re|Has conseguido {reg0} Puntos de Recursos de {s0}.
@@ -869,7 +869,7 @@ qstr_Ballista:_turn_CURSO|Balista: Girar con CURSOR, Apuntar con MAYÚS, Dispara
 qstr_Ballista:_out_of_ammo|Balista: ¡Sin munición!
 qstr_The_ladders_on_Deepi|¡Escalas en el Muro del Bajo! ¡Cuidado!
 qstr_THREE.._TWO..._ONE..|TRES... DOS... UNO... ¡LUCHAD!
-qstr_You_have_come_upon_t|Has llegado a las ruinas del Amon Hen, la Colina de la Vista, una antigua torre de vigilancia de Gondor, en cuya cime s ehaya el Sitial de la Vista.^^Tienes la sensación de que este lugar estuvo una vez lleno de grandeza, pero fue olvidado hace mucho tiempo.
+qstr_You_have_come_upon_t|Has llegado a las ruinas del Amon Hen, la Colina de la Vista, una antigua torre de vigilancia de Gondor, en cuya cima se haya el Sitial de la Vista.^^Tienes la sensación de que este lugar estuvo una vez lleno de grandeza, pero fue olvidado hace mucho tiempo.
 qstr_You_have_come_upon_th|Has llegado a las Ciénagas de los Muertos, el escenario de la batalla de Dagorlad durante la Guerra de la Última Alianza.^^Las tierras pantanosas han engullido lo que una vez fue una llanura cubierta de hierba, y ahora el único verdor es el de la espuma lívida de las algas en la superficie oscura y viscosa del agua sombría.^^Hierbas muertas y cañas putrefactas asoman entre las neblinas como las sombras andrajosas de unos estíos olvidados, y entre los fuegos fatuos, yacen los rostros muertos de Hombres, elfos y orcos, en lo más profundo de las aguas turbias.^^El aire es frío y húmedo, y no puedes evitar un escalofrío al ver las luces que brillan en los ojos de un elfo muerto justo bajo la superficie del agua.
 qstr_You_have_entered_the|Has entrado en la espesura del sur del Bosque Negro, que una vez fue conocido como el Gran Bosque Verde.^^La fortaleza de Dol Guldur está cerca y proyecta una sombra tenebrosa sobre el bosque. Los árboles de esta zona parecen enfermos y podridos. Los viejos robles están cubiertos de moho y hongos, y grandes telarañas enredadas se extienden entre los troncos.^^ El aire parece eternamente inmóvil, sofocante y sombrío, y te da la sensación de que te estás asfixiando lentamente.
 qstr_You_have_found_the_D|Has encontrado el Almacén Enano donde podrían estar las Lanzas Legendarias. Informa de tus pesquisas a {s3}
@@ -983,14 +983,14 @@ qstr_Not_enough_party_spa|No tienes suficiente espacio en tu grupo.
 qstr_elites|tropas de élite
 qstr_regulars|tropas regulares
 qstr_recruits|reclutas
-qstr_wild|salvajes
+qstr_wild|asilvestrado pelaje
 qstr_goblins|trasgos
-qstr_lordless|de baja estofa
+qstr_lordless|baja estofa
 qstr_orc_stragglers|orcos rezagados
-qstr_You_camp_and_beat_th|Acampas y haces sonar los Tambores de las Profundidades. Su ensordecedor sonido atrae a un grupo de {s2} de {s1}.
-qstr_You_camp_and_beat_the|Acampas y haces sonar los Tambores de las Profundidades; su potente sonido atrae a un grupo de {s1} {s2}.
-qstr_You_camp_and_beat_the_|Acampas y haces sonar los Tambores de las Profundidades; su débil sonido atrae a un grupo de {s1} {s2}.
-qstr_You_camp_and_try_to_|Acampas e intentas hacer sonar los Tambores de las Profundidades, pero nadie responde a tu patética llamada.
+qstr_You_camp_and_beat_th|Acampas y haces sonar los tambores en lo profundo. Su ensordecedor sonido atrae a un grupo de {s2} de {s1}.
+qstr_You_camp_and_beat_the|Acampas y haces sonar los tambores en lo profundo; su potente sonido atrae a un grupo de {s2} de {s1}.
+qstr_You_camp_and_beat_the_|Acampas y haces sonar los tambores en lo profundo; su débil sonido atrae a un grupo de {s2} de {s1}.
+qstr_You_camp_and_try_to_|Acampas e intentas hacer sonar los tambores en lo profundo, pero nadie responde a tu patética llamada.
 qstr_^^^A_great_victory!^|^^^¡Una gran victoria!^^^Así que que es ésto a lo que se referían los viejos mitos sobre Fangorn...
 qstr_^^^Defeated...^^^Sca|^^^{Derrotado/Derrotada}...^^^Tu compañía deshecha y dispersa en el Bosque de Fangorn... Estás {solo/sola}...
 qstr_Troll_caged_in_wheel|Troll enjaulado en jaula con ruedas.
@@ -1026,12 +1026,12 @@ qstr_Your_ability_to_mast|Tu capacidad para desenvolverte en tu entorno te ha pe
 qstr_{reg4}_will_be_lost.|{reg4} soldados se perderán.
 qstr_{s13}_asked_you_to_r|{s13} te ha pedido que te presentes ante él con al menos {reg13} tropas.
 qstr_{s13}_ordered_you_to|{s13} te ha ordenado unirte al asalto contra {s14}.
-qstr_You_were_victorious!|¡Nuestra es la Victoria!
+qstr_You_were_victorious!|¡Nuestra es la victoria!
 qstr_The_battle_was_lost.|Has perdido la batalla. Tus fuerzas han sido completamente aplastadas.
 qstr_Your_companions_carr|Tus compañeros te llevan lejos de la lucha.
 qstr_You_have_defeated_th|Has derrotado al enemigo.
 qstr_You_have_retreated_f|Te has retirado de la lucha.
-qstr_^^Ally_Casualties:{s|^^Bajas Aliadas:{s0}
+qstr_^^Ally_Casualties:{s|^^Bajas aliadas:{s0}
 qstr_You_and_{s3}_celebra|{s3} y tú celebráis vuestra victoria sobre {s4}.
 qstr_News_of_your_victory|Las noticias sobre tu victoria sobre {s4} llegan a {s3}.
 qstr_{s3}_witnesses_your_|{s3} son testigos de tu victoria sobre {s4}.
@@ -1704,7 +1704,7 @@ qstr_My_party_was_wiped_o|Mi compañía fue exterminada en el último ataque y n
 qstr_{s9}_joined_your_par|{s9} se ha unido a tu grupo
 qstr_A_pity!_I_sure_would|¡Lástima! Me habría gustado luchar en tu compañía...
 qstr_Too_bad_you_will_reg|Peor para ti, te arrepentirás de no haberme llevado contigo.
-qstr_Lead_me_to_the_{s3}|Llévame hasta {s3}
+qstr_Lead_me_to_the_{s3}|Quiero ver {s3}, llévame
 qstr_Lead_me_to_the_local|Llévame hasta la autoridad local
 qstr_Lead_me_to_the_Lord_|Llévame al salón del Señor
 qstr_Lead_me_to_your_comm|Llévame hasta tus comandantes

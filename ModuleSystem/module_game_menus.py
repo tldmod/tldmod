@@ -1598,7 +1598,7 @@ game_menus = [
 
 
 ( "choose_gender",menu_text_color(0xFF000000)|mnf_disable_all_keys,
- "{!}^^^^^^^^^^Your gender?", "none",[],
+ "^^^^^^^^^^Your gender?", "none",[],
  [("start_male"  ,[],"Male"   ,[#(assign,"$character_gender",tf_male  ),
     (jump_to_menu,"mnu_start_as_one"),]),
   ("start_female",[],"Female" ,[

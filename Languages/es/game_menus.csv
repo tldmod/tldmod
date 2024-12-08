@@ -3,7 +3,7 @@ mno_start_good|Por el AMANECER de una nueva Era
 mno_start_evil|Por el OCASO del Hombre
 mno_faction_intros|Aprende más sobre las diferentes facciones de la Tierra Media
 mno_go_bback|Volver atrás
-menu_start_phase_2|^^^^^La Tierra Media: una sombra crece en el Este, ^y criaturas oscuras que llevaban mucho tiempo ocultas salen de sus escondites. ^Los pueblos libres se preparan para la guerra, una guerra como no se ha visto desde la última Edad. ^Hombres, Elfos, Enanos y Orcos; todos jugarán su papel. ^^Qué papel, sin embargo, todavía está por ver... 
+menu_start_phase_2|^^^^^En la Tierra Media una sombra crece en el Este, ^ criaturas oscuras que llevaban mucho tiempo ocultas salen de sus escondites. ^Los pueblos libres se preparan para la guerra, una guerra como no se ha visto desde la última Edad. ^Hombres, Elfos, Enanos y Orcos; todos jugarán su papel. ^^Qué papel, sin embargo, todavía está por ver... 
 mno_go_forth|Sigue adelante por el camino elegido...
 mno_change_war_start_mode|La Guerra empieza:  {s7}
 mno_toggle_tutorial|Ver mensajes de ayuda:  {s7}
@@ -167,7 +167,7 @@ mno_camp_drink_water|¡Beber el Agua de los Ents!
 mno_camp_drink_orc_brew|¡Repartir el brebaje orco entre tus tropas!
 mno_camp_drink_miruvor|¡Repartir el Miruvor!
 mno_camp_use_athelas|Usar Athelas para tratar heridas.
-mno_camp_use_drums|Hacer sonar los Tambores de las Profundidades  
+mno_camp_use_drums|Hacer sonar los tambores en lo profundo.
 mno_camp_action_4|Atrás.
 menu_assasins_attack_player_won|Has derrotado los asesinos de {s2}, enviados por {s3}.
 menu_assasins_attack_player_retreat|¡Has escapado con vida!
@@ -291,7 +291,7 @@ menu_close|Nada.
 menu_town|Has llegado a {s60}.{s12}{s13}
 mno_town_menu_0|Ir a algún sitio.
 mno_town_menu_0_door|Inspeccionar...
-mno_town_approach|Acercarse a {s1}...
+mno_town_approach|Acercarse a{s1}...
 mno_town_castle|Ir a{s1}.
 mno_town_castle_door|Puerta al castillo.
 mno_town_center|Ir al centro de la ciudad...

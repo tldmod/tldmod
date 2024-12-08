@@ -573,7 +573,7 @@ dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Cercalo n
 dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Come desidera, mia signora. Faro del mio meglio per eliminare questo male
 dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Mi perdoni, mia Signora. Ho delle questioni urgenti da sbrigare prima che io possa aiutare la vostra gente con questo .
 dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Comprendo, {playername}. Ma non aspettare troppo a lungo, perché lo sforzo di resistere alla sua magia mi sta stancando.
-dlga_lord_tell_mission:lord_mission_deliver_message|Devo spedire una lettera a {s13}, dovrebbe trovarsi attualmente a {s4}. Se dovessi recarti da quelle parti, potresti {reg11?consegnargliela :consegnargliela} ? La lettera dev'essere {reg11?dev'esserle:dev'essergli}recapitata entro 30 giorni.
+dlga_lord_tell_mission:lord_mission_deliver_message|Devo spedire una lettera a {s13}, dovrebbe trovarsi attualmente a {s4}. Se dovessi recarti da quelle parti, potresti {reg11?consegnargliela:consegnargliela} ? La lettera {reg11?dev'esserle:dev'essergli} recapitata entro 30 giorni.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Certamente, intendo passare per {s4}, non ci sono problemi.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|Dubito che incontrerò {s13} a breve, {s65}. È meglio che la facciate consegnare da qualcun altro.
 dlga_lord_mission_deliver_message_accepted:close_window|Lo apprezzo, {playername}. Ecco la lettera. Porgi i miei saluti a {s13}, quando {reg11?la incontrerai:lo incontrerai}.

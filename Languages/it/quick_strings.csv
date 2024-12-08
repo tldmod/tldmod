@@ -92,7 +92,7 @@ qstr_Battle_Formations_an|Formazioni da Battaglia e IA:
 qstr_Native|Native
 qstr_TLD_FormAI__Original|FormIA TLD (Originale)
 qstr_TLD_New_FormAI|Nuova FormIA TLD
-qstr_Beta_Formations_Twea|Modifica Formazioni Beta
+qstr_Beta_Formations_Twea|Modifica Formazioni (Beta)
 qstr_Siege_AI:__|IA Assedio:
 qstr_Basic__better_perfor|Base (migliori prestazioni)
 qstr_Advanced|Avanzato
@@ -106,7 +106,7 @@ qstr_Permanent_death_for_|Morte per i lords e i loro compagni:
 qstr_Permanent_death_for_p|Morte del giocatore (Sei TU!):
 qstr_Battle_morale_system|Sistema del morale in battaglia:
 qstr_Animal_ambushes:__|Agguati da animali:
-qstr_Player_speed_buff_in|Velocità del personaggio in città:
+qstr_Player_speed_buff_in|Potenziamento andatura in città:
 qstr_Fallen_rider_damage_|Messaggi di danno dal fantino caduto:
 qstr_No_Messages|Nessun messaggio
 qstr_Player_damage_only|Solo danni al giocatore
@@ -572,7 +572,7 @@ qstr_Ah_what_a_coincidenc|Ah, che strana coincidenza, imbattermi proprio in te {
 qstr_Who_are_you?|Chi sei ?
 qstr_A_friend_of_{s3}_and|Un amico di {s3} e del popolo di {s2}. Ora fa presto ! Mordor ha oscuri disegni e il Potere Oscuro sta impiegando appieno la sua volontà per radunare tutto ciò che è malvagio. Il tempo sta per scadere per ciò che di buono rimane in questo mondo, se non facciamo valere ogni nostra azione per opporci !
 qstr_What_should_I_do?|Cosa dovrei fare ?
-qstr_Find_{s3}_s_whereabo|Scopri immediatamente dove si trova {s3} e parla con {reg3?lei:lui} . Buona Fortuna !
+qstr_Find_{s3}_s_whereabo|Scopri immediatamente dove si trova {s3} e parla con {reg3?lei:lui}. Buona Fortuna !
 qstr_Good_to_see_the_Shad|È un sollievo vedere che l'Ombra non è ancora riuscita a piegarti, {playername}.
 qstr_You_are_the_one_they|Tu sei quello che chiamano Gandalf o Mithrandir.
 qstr_You_are_the_one_they_|Tu sei colui che chiamano Radagast.
@@ -689,7 +689,7 @@ qstr_have_taken_measure_o|hanno soppesato la forza attuale della tua fazione e s
 qstr_loses_Faction_Streng|perde Forza Fazione quando le sue linee di rifornimento vengono interrotte.
 qstr_loses_Faction_Strengt|perde Forza Fazione a causa della distruzione del proprio campo.
 qstr_gains_Faction_Streng|ottiene Forza Fazione appena le notizie sulla tua vittoria si diffondono.
-qstr_Notice:_Isengard_Las|Avviso: missione Isengard Last Stand è stata annullata per motivi di compatibilità del salvataggio. Isengard ora può essere assediata come una normale città.
+qstr_Notice:_Isengard_Las|Avviso: missione Isengard Last Stand è stata annullata per motivi di compatibilità nel salvataggio. Isengard ora può essere assediata come una normale città.
 qstr_Hobbit_quest_aborted|La missione Hobbit interrotta per motivi di compatibilità. Gli Hobbit ora appariranno solo dopo che saranno soddisfatte determinate condizioni.
 qstr_This_update_has_chan|Questo aggiornamento ha modificato l'assegnazione di alcune abilità sui loro attributi. Se desideri rivedere le abilità dei tuoi compagni, ora puoi importarli/esportarli chiedendo loro quali sono le loro abilità dal menu della compagnia.
 qstr_Something_wrong_not_|Qualcosa non va, non hai abbastanza truppe da rimuovere
@@ -857,7 +857,7 @@ qstr_through_the_center|attraverso il centro
 qstr_Attackers_charge_{s2|Gli Assalitori Caricano {s2}
 qstr_Attackers_charge_{s1|Gli aggressori caricano  {s1}
 qstr_Hold_this_area_to_st|Difendi quest'area per fermare i rinforzi del difensore da questa posizione !
-qstr_Defender_reinforceme|Posizione di rinforzo del difensore catturato !
+qstr_Defender_reinforceme|Posizione di rinforzo del difensore catturata !
 qstr_{s1}_rallied_to_your|{s1} si è schierato dalla tua parte grazie al tuo carisma.
 qstr_Last_attacker_wave._|Ultima ondata di assalitori. Vuoi ritirarti ?
 qstr_Attackers_almost_def|Attaccanti quasi sconfitti. Vuoi ritirarti ?
@@ -926,9 +926,9 @@ qstr_You_wish_old_man_my_|Te lo sogni, vecchio, la mia vista in terza persona è
 qstr_You_should_really_se|Dovresti vedere le foto di Steward Denetor su facebook, è fantastico !
 qstr_Press_Space_to_conti|Premi spazio per continuare
 qstr_by_level|per livello
-qstr_can_only_be_set_at_g|può essere impostato solo all'inizio del gioco; controllare le opzioni per impostare il livello
+qstr_can_only_be_set_at_g|può essere impostato solo all'inizio del gioco; controllare le opzioni per regolare il livello
 qstr_by_day|per giorno
-qstr_can_only_be_set_at_ga|può essere impostato solo all'inizio del gioco; controllare le opzioni per impostare il giorno
+qstr_can_only_be_set_at_ga|può essere impostato solo all'inizio del gioco; controllare le opzioni per regolare il giorno
 qstr_ON|SI
 qstr_OFF|NO
 qstr_If_you_are_new_to_TL|Se sei nuovo in TLD, ti raccomandiamo di leggere i testi della guida
@@ -1699,7 +1699,7 @@ qstr__Guards_slaughter_hi|Guardie, squartatelo !
 qstr_Slaughter_him_for_fr|Squartatelo per avere fresca carne umana !
 qstr_This_is_{s5}_Command|Questo è {s5}, Comandante.
 qstr_{s6}_This_place_and_|{s6} Questo luogo e le terre circostanti appartengono a {s7} di {s8}.
-qstr_Hear_now_commander._|Ascolta adesso, comandante. Al momento non ho incarichi, ma preferirei incontrare i nostri nemici sul campo piuttosto che aspettare che arrivino qui. Ho sentito che sei un leader capace. Mi vorresti ?
+qstr_Hear_now_commander._|Ascolta adesso, comandante. Al momento non ho incarichi, ma preferirei incontrare i nostri nemici sul campo piuttosto che aspettare che arrivino qui. Ho sentito che sei un leader capace. Mi vorresti fra i tuoi ?
 qstr_My_party_was_wiped_o|Il mio gruppo è stato annientato nell'ultima battaglia e non voglio essere assegnato al prossimo idiota. Ho sentito che sei un leader capace. Potrebbe servirti un altro guerriero ?
 qstr_{s9}_joined_your_par|{s9} è ora nella tua compagnia
 qstr_A_pity!_I_sure_would|Che peccato ! Di certo mi sarebbe piaciuto combattere nella tua compagnia...
