@@ -1083,7 +1083,7 @@ spr_chair_trestle 0 0 chair_trestle 0 0
 spr_wheel 0 0 wheel bowheel 0
 
 
-spr_ladder 0 0 ladder boladder 0
+spr_ladder 0 0 ladder boladder_new 0
 
 
 spr_cart 0 0 cart bo_cart_new 0
@@ -3109,7 +3109,7 @@ spr_rohan_long_stair_E 0 0 rohan_long_stair 0 0
 spr_rohan_wall 0 0 rohan_wall_curved bo_rohan_wall_curved 0
 
 
-spr_rohan_wall_E 0 0 rohan_wall 0 0
+spr_rohan_wall_straight 0 0 rohan_wall bo_rohan_wall 0
 
 
 spr_HD 0 0 helms_deep bo_helms_deep 0

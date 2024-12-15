@@ -4575,6 +4575,7 @@ nazgul_flying = ((is_a_wb_mt==1) and [
     (prop_instance_get_position, pos1, "$nazgul_in_battle"),
     (position_is_behind_position, pos1, pos2), #make sure that they don't "turn" when in camera
     (store_random_in_range, ":rand", 0, 100),
+    (this_or_next|key_is_down, key_n),
     (lt, ":rand", 10),
     ],
     [(set_fixed_point_multiplier, 100),

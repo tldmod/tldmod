@@ -747,7 +747,7 @@ scene_props = [
 ("chair_trestle",0,"chair_trestle","0", []),
 
 ("wheel",0,"wheel","bowheel", []),
-("ladder",0,"ladder","boladder", []),
+("ladder",0,"ladder","boladder_new", []),
 ("cart",0,"cart","bo_cart_new", []),
 ("village_stand",0,"village_stand","bovillage_stand", []),
 ("wooden_stand",0,"wooden_stand","bowooden_stand", []),
@@ -1753,7 +1753,7 @@ scene_props = [
 ("rohan_long_stair",0,"rohan_long_stair","bo_rohan_long_stair", []),
   ("rohan_long_stair_E",0,"rohan_long_stair","0", []),
 ("rohan_wall"      ,0,"rohan_wall_curved"      ,"bo_rohan_wall_curved"      , []),
-  ("rohan_wall_E"      ,0,"rohan_wall"      ,"0"      , []),
+  ("rohan_wall_straight"      ,0,"rohan_wall"      ,"bo_rohan_wall"      , []),
 
 #Helms Deep
 ("HD",0,"helms_deep","bo_helms_deep", []),
