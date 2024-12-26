@@ -5183,10 +5183,10 @@ mission_templates = [ # not used in game
     (try_end),
   ]),
 
-     ] or []) + [
+
 
     #After-reinforcement check: Any side almost depleted? Ask player to retreat or clean up remainders.
-   (3, 0, 0, [(ge, "$reinforcements_arrived",1),],
+   (3, 0, 0, [(store_mission_timer_a,":mission_time"),(gt, ":mission_time", 120),],
      [(store_normalized_team_count,":num_defenders",0),
      (store_normalized_team_count,":num_attackers",1),
      (get_player_agent_no, ":player_agent"),
@@ -5199,21 +5199,20 @@ mission_templates = [ # not used in game
     (else_try),  
         (lt, ":num_attackers", 7),
         (try_begin),
-            (eq, "$reinforcements_arrived", 1), #if attacker reinforcement
+            (this_or_next|eq, "$reinforcements_arrived", 1), #if attacker reinforcement
+            (ge,"$attacker_reinforcement_stage",19),
             (neg|agent_is_defender, ":player_agent"), 
             (agent_is_alive, ":player_agent"),
             #(display_message, "@attackers almost defeated!"),
             (question_box,"@Attackers almost defeated. Do you want to retreat?"),
         (else_try),
+            (agent_is_defender, ":player_agent"), 
             (try_for_agents, ":agent_no"),
                 (agent_is_alive, ":agent_no"),
                 (neg|agent_is_defender, ":agent_no"),
                 (neq, ":agent_no", ":player_agent"),
-            ] + (is_a_wb_mt==1 and [
-                (agent_fade_out, ":agent_no"),
-            ] or [
+                (agent_fade_out, ":agent_no"), #fade them out first, kill them afterwards
                 (agent_deliver_damage_to_agent, ":agent_no", ":agent_no", 1000),
-            ]) + [
             (try_end),
             (display_message, "@The remaining attackers disperse!"),
         (try_end),
@@ -5225,17 +5224,15 @@ mission_templates = [ # not used in game
         (try_for_agents, ":agent_no"),
             (agent_is_alive, ":agent_no"),
             (agent_is_defender, ":agent_no"),
-        ] + (is_a_wb_mt==1 and [
-            (agent_fade_out, ":agent_no"),
-        ] or [
+            (agent_fade_out, ":agent_no"), #fade them out first, kill them afterwards
             (agent_deliver_damage_to_agent, ":agent_no", ":agent_no", 1000),
-        ]) + [
         (try_end),
     (try_end),
     (assign, "$reinforcements_arrived",0),
    ]),
 
-
+     ] or []) + [
+     
    ## This block calls the script to move archers to archer positions. 
    ## In TLD, attacker archers are asked to hold ground in entry point 60, 61, and 62 if the right,left, center flanks have NOT been taken by the attackers
 
