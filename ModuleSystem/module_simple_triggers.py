@@ -1921,7 +1921,7 @@ simple_triggers = [
           (quest_slot_eq, "qst_eliminate_patrols", slot_quest_target_troop, ":quest_target_party_template"), #Check if last enemy party attacked was target (set in mnu_total_victory)
           (quest_get_slot,":current_defeated", "qst_eliminate_patrols", slot_quest_current_state), #Check how many player has defeated
           (store_add, ":total_defeated",":current_defeated",1), #Add one
-          (try_begin),
+          (try_begin), #this is only to get the relevant party template name back to s1 and into the quest description
             (quest_slot_eq, "qst_eliminate_patrols", slot_quest_target_troop, ":quest_target_party_template"),
             (gt, ":quest_target_party_template", 0),
             (set_spawn_radius,1),
@@ -1946,6 +1946,9 @@ simple_triggers = [
           #Kham - Eliminate Patrols Refactor END
           (str_store_string, s2, "@{s1} parties defeated: {reg1} out of {reg2}"),
           (add_quest_note_from_sreg, "qst_eliminate_patrols", 3, s2, 0),
+          (ge, reg1, reg2),
+          (call_script, "script_succeed_quest", "qst_eliminate_patrols"),
+          (quest_set_slot, "qst_eliminate_patrols", slot_quest_expiration_days, -1),
         (try_end),
       (try_end),
       

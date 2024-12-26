@@ -4598,7 +4598,7 @@ game_menus = [
   ],[
 	("just_back",[],"{!}Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"{!}None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
-	("qst_deliver_iron",[],"{!}qst_deliver_iron",[(assign,"$cheat_imposed_quest","qst_deliver_iron")]),
+	("scout_enemy_town",[],"{!}scout_enemy_town",[(assign,"$cheat_imposed_quest","qst_scout_enemy_town")]),
 	("cheat_kill_faction_quest",[],"{!}Kill GuildMaster Bandit Quest",[(assign,"$cheat_imposed_quest","qst_blank_quest_17")]),
 	("cheat_raise_troops",[],"{!}Raise Troops",[(assign,"$cheat_imposed_quest","qst_raise_troops")]),
 	("cheat_defend_refugees",[],"{!}Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
@@ -4608,7 +4608,7 @@ game_menus = [
 	("scout_camp", [], "{!}Destroy Scout Camp", [(assign, "$cheat_imposed_quest", "qst_destroy_scout_camp")]),
 	("defend_village", [], "{!}Investigate Fangorn", [(assign, "$cheat_imposed_quest", "qst_investigate_fangorn")]),
 	("raid_village", [], "{!}Raid Village", [(assign, "$cheat_imposed_quest", "qst_raid_village")]),
-    ("eliminate_patrols", [], "{!}Defeat Target Lord", [(assign, "$cheat_imposed_quest", "qst_blank_quest_06")]),
+    ("eliminate_patrols", [], "{!}qst_eliminate_patrols", [(assign, "$cheat_imposed_quest", "qst_eliminate_patrols")]),
     ("eliminate_troll", [], "{!}Dispatch Troll", [
     	(try_begin),
     		(store_faction_of_party, ":fac", "p_main_party"),

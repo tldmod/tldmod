@@ -3720,7 +3720,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 [anyone, "lord_start",
    [ (check_quest_active, "qst_follow_army"),
-     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_marshall, "$g_talk_troop"),
+     (faction_slot_eq, "$players_kingdom", slot_faction_marshall, "$g_talk_troop"),
      (eq, "$g_random_army_quest", "qst_deliver_cattle_to_army"),
      (quest_get_slot, ":quest_target_item", "$g_random_army_quest", slot_quest_target_item),
      (quest_get_slot, ":quest_target_amount", "$g_random_army_quest", slot_quest_target_amount),
@@ -3805,7 +3805,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 [anyone, "lord_start",
    [ (check_quest_active, "qst_follow_army"),
-     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_marshall, "$g_talk_troop"),
+     (faction_slot_eq, "$players_kingdom", slot_faction_marshall, "$g_talk_troop"),
      (eq, "$g_random_army_quest", "qst_scout_waypoints"),
      (str_store_party_name, s13, "$qst_scout_waypoints_wp_1"),
      (str_store_party_name, s14, "$qst_scout_waypoints_wp_2"),
@@ -7148,15 +7148,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone|plyr,"lord_active_mission_2",[
   (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),                           
   (check_quest_active, "qst_eliminate_patrols"),
-  (quest_slot_eq, "qst_eliminate_patrols", slot_quest_giver_troop, "$g_talk_troop"),
-  #Kham - Eliminate Patrols Refactor START
-  #(quest_get_slot, ":quest_target_party_template", "qst_eliminate_patrols", slot_quest_target_party_template),
-  #(store_num_parties_destroyed_by_player, ":num_destroyed", ":quest_target_party_template"),
-  #(party_template_get_slot, ":previous_num_destroyed", ":quest_target_party_template", slot_party_template_num_killed),
-  #(val_sub, ":num_destroyed", ":previous_num_destroyed"),
-  (quest_get_slot, ":to_destroy", "qst_eliminate_patrols", slot_quest_target_amount),
-  (quest_get_slot, ":num_destroyed","qst_eliminate_patrols",slot_quest_current_state),
-  (le, ":to_destroy", ":num_destroyed")],
+  (check_quest_succeeded, "qst_eliminate_patrols"),
+  # (quest_slot_eq, "qst_eliminate_patrols", slot_quest_giver_troop, "$g_talk_troop"),
+  # (quest_get_slot, ":to_destroy", "qst_eliminate_patrols", slot_quest_target_amount),
+  # (quest_get_slot, ":num_destroyed","qst_eliminate_patrols",slot_quest_current_state),
+  # (le, ":to_destroy", ":num_destroyed")
+  ],
 "Indeed. I have defeated enough enemy parties.", "lord_generic_mission_thank", [(call_script, "script_finish_quest", "qst_eliminate_patrols", 100)]],
 
 [anyone|plyr,"lord_active_mission_2",
