@@ -1799,12 +1799,17 @@ scripts = [
 	(troop_set_slot, "trp_knight_1_8",  slot_troop_banner_scene_prop, "spr_banner_f21"), # lossarnach
 
 
-    #name changes here, so they only affect new games
+    #lord changes here first, so they only affect new games --> will be transferred into module_troops at a later point
 	] + (is_a_wb_script==1 and [
 
+    #name changes for implementing Theodred
     (troop_set_name, trp_knight_1_13, "@Grimbold"),
     (troop_set_name, trp_knight_1_9, "@Theodred"),
     (troop_set_name, trp_elder_hornburg, "@Gamling"),
+    
+    #Angbor and Orthalion - will later be added back as "local" leaders and backup lords
+    (troop_set_faction, trp_knight_1_4, fac_commoners),
+    (troop_set_faction, trp_knight_1_1, fac_commoners),
 
 	] or []) + [    
 
@@ -22563,8 +22568,9 @@ scripts = [
         (val_max, reg1, 1),
         (val_mul, reg1, 2),
         (try_begin),
-            (call_script, "script_cf_is_a_night_troop", ":troop"),
             (val_add, reg1, 2),
+            (call_script, "script_cf_is_a_night_troop", ":troop"), #fails if it's a night troop
+            (val_sub, reg1, 2),
         (try_end),
         (try_begin),
             (troop_is_hero, ":troop"),

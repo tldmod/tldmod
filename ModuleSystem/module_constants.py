@@ -1604,7 +1604,7 @@ center_list = [
 	[trp_gondor_captain, trp_smith_mtirith, trp_merchant_mtirith, trp_elder_mtirith, pt_gondor_cap_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_man_gondor_blue,trp_walker_man_gondor_white,trp_walker_woman_gondor_bw], 
 	[icon_mfc_gondor],[700],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1, tld_siegable_capital),
 (p_town_pelargir, [scn_pelargir_center, scn_gondor_castle_a, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_pelargir_siege,mesh_town_pelargir],
-	[trp_pel_captain, trp_smith_pelargir, trp_merchant_pelargir, trp_elder_pelargir, pt_pelargir_recruits, trp_knight_1_4, trp_walker_man_gondor_black,trp_walker_man_gondor_blue,trp_walker_woman_gondor_bw,trp_walker_man_gondor_white], 
+	[trp_pel_captain, trp_smith_pelargir, trp_merchant_pelargir, trp_elder_pelargir, pt_pelargir_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_man_gondor_blue,trp_walker_woman_gondor_bw,trp_walker_man_gondor_white], 
 	[icon_mfc_pelargir],[500],[4,4,4,6,4,8], str_income_med, garrison_limit_med, 0, tld_siegable_always),
 (p_town_linhir, [scn_linhir_center, scn_gondor_castle_b, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_linhir_siege, mesh_ui_default_menu_window],
 	[trp_gondor_captain, trp_smith_linhir, trp_merchant_linhir, trp_elder_linhir, pt_gondor_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_bw,trp_walker_woman_gondor_b], 
@@ -1637,7 +1637,7 @@ center_list = [
 	[trp_ithilien_captain, trp_smith_candros, trp_merchant_candros, trp_elder_cairandros, pt_gondor_recruits, trp_gondor_lord, trp_i1_gon_levy,trp_i2_gon_watchman,trp_a4_ithilien_ranger,trp_i3_gon_footman], 
 	[icon_mfc_gondor],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 0, tld_siegable_always),
 (p_town_calembel, [scn_ethring_center, scn_gondor_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena, scn_ethring_siege, mesh_town_calembel],
-	[trp_lam_captain, trp_smith_calembel, trp_merchant_calembel, trp_elder_ethring, pt_lamedon_recruits, trp_knight_1_1, trp_i1_gon_levy,trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
+	[trp_lam_captain, trp_smith_calembel, trp_merchant_calembel, trp_elder_ethring, pt_lamedon_recruits, trp_knight_6_1, trp_i1_gon_levy,trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
 	[icon_mfc_ethring],[500],[2,2,2,5,2,8], str_income_low, garrison_limit_low, 1, tld_siegable_normal),
 # Rohan centers
 (p_town_edoras, [scn_edoras_center, scn_edoras_castle, scn_rohan_prison,scn_rohan_tavern,scn_rohan_arena, scn_edoras_siege,mesh_town_edoras],
@@ -1907,10 +1907,11 @@ routes_list = [
  (p_town_beorn_house,	   p_town_woodsmen_village, p_town_beorning_village),
 ]
 
-lords_spawn = [ (trp_knight_1_1, p_town_calembel),
+lords_spawn = [ 
+                #(trp_knight_1_1, p_town_calembel),
 				(trp_knight_1_2, p_town_minas_tirith),
                 (trp_knight_1_3, p_town_dol_amroth),
-                (trp_knight_1_4, p_town_pelargir),
+                #(trp_knight_1_4, p_town_pelargir),
                 (trp_knight_1_5, p_town_erech),
                 (trp_knight_1_6, p_town_pinnath_gelin),
                 (trp_knight_1_7, p_town_west_osgiliath),

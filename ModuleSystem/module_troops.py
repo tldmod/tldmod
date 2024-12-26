@@ -2199,7 +2199,8 @@ troops = [
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
      #Swadian civilian clothes: itm_courtly_outfit itm_gambeson itm_blue_gambeson itm_red_gambeson itm_nobleman_outfit itm_rich_outfit itm_short_tunic itm_tabard
-#Gondor Angbor 
+#Gondor 
+# Angbor is currently disabled in script_start_game
 ["knight_1_1","Angbor_the_Fearless","{!}",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_lam_horse,itm_lamedon_leader_surcoat_cloak,itm_gondor_heavy_greaves,itm_mail_mittens,itm_gondor_lamedon_leader_helm,itm_gondor_citadel_sword,itm_gon_tab_shield_a,itm_gondor_javelin,itm_gondor_javelin],
       attr_tier_7,wp_tier_6,gondor_skills_5|knows_riding_4|knows_trainer_4|knows_persuasion_3|knows_horse_archery_5|knows_power_throw_7|knows_surgery_7,0x00000008bf00524435d36db7536db6db00000000001db6dd0000000000000000],
@@ -2209,6 +2210,7 @@ troops = [
 ["knight_1_3","Prince_Imrahil","{!}",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_dol_amroth_warhorse,itm_dol_very_heavy_mail,itm_gondor_heavy_greaves,itm_mail_mittens,itm_swan_knight_helm,itm_amroth_lance_banner,itm_amroth_bastard,itm_gon_tab_shield_c],
       attr_tier_7,wp_tier_6,gondor_skills_5|knows_riding_6|knows_trainer_7|knows_surgery_9,0x0000000e7f00259419da9135148e24e500000000001db9110000000000000000],
+# Orthalion is currently disabled in script_start_game
 ["knight_1_4","Orthalion","{!}",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_pel_leader,itm_pelargir_greaves,itm_mail_mittens,itm_pelargir_helmet_heavy,itm_pelargir_sword,itm_gon_tab_shield_b,itm_gondor_javelin,itm_gondor_javelin],
       attr_tier_7,wp_tier_6,gondor_skills_3|knows_trainer_7|knows_power_throw_5|knows_surgery_9,0x0000000fff0035d218946ec91266652b00000000001cc6f90000000000000000],
