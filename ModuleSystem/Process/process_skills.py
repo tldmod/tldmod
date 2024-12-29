@@ -16,8 +16,8 @@ def save_skills():
   ofile.write("%d\n"%(len(skills)))
   for i_skill in xrange(len(skills)):
     skill = skills[i_skill]
-    ofile.write("skl_%s %s "%(skill[0], replace_spaces(skill[1])))
-    ofile.write("%d %d %s\n"%(skill[skill_attribute_pos],skill[skill_max_level_pos],(string.replace(skill[skill_desc_pos]," ","_"))))
+    ofile.write("skl_%s %s "%(skill[0], remove_exclamation_marker_on_mb1011(replace_spaces(skill[1]))))
+    ofile.write("%d %d %s\n"%(skill[skill_attribute_pos],skill[skill_max_level_pos],remove_exclamation_marker_on_mb1011(replace_spaces(skill[skill_desc_pos]))))
   ofile.close()
 
 def save_python_header():

@@ -34,7 +34,7 @@ def write_items(variable_list,variable_uses,tag_uses,quick_strings):
     if (item[3] & itp_shop) > 0:
       id_no = find_object(items,convert_to_identifier(item[0]))
       add_tag_use(tag_uses,tag_item,id_no)
-    ofile.write(" itm_%s %s %s %d "%(convert_to_identifier(item[0]),replace_spaces(item[1]),replace_spaces(item[1]),len(item[2])))
+    ofile.write(" itm_%s %s %s %d "%(convert_to_identifier(item[0]),remove_exclamation_marker_on_mb1011(replace_spaces(item[1])),remove_exclamation_marker_on_mb1011(replace_spaces(item[1])),len(item[2])))
     item_variations = item[2]
     for item_variation in item_variations:
       #swy-- different dummy mesh for warband, for invisible objects, fixes galadriel's appearance, meshes have to have more than two characters to work.

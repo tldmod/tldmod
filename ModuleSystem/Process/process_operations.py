@@ -149,7 +149,7 @@ def save_quick_strings(export_dir, quick_strings):
   file = open(export_dir + "quick_strings.txt", "w")
   file.write("%d\n"%len(quick_strings))
   for i in xrange(len(quick_strings)):
-    file.write("%s %s\n"%(quick_strings[i][0],replace_spaces(quick_strings[i][1])))
+    file.write("%s %s\n"%(remove_exclamation_marker_on_mb1011(quick_strings[i][0]),remove_exclamation_marker_on_mb1011(replace_spaces(quick_strings[i][1]))))
   file.close()
 
 def load_variables(export_dir,variable_uses):

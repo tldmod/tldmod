@@ -20,7 +20,7 @@ def save_parties(parties):
 
     file.write(" 1 %d %d "%(i_party, i_party))
 #    file.write(" 1 %d "%(i_party))
-    file.write("p_%s %s %d "%(convert_to_identifier(party[0]),replace_spaces(party[1]),party[2]))
+    file.write("p_%s %s %d "%(convert_to_identifier(party[0]),remove_exclamation_marker_on_mb1011(replace_spaces(party[1])),party[2]))
     menu_no = 0
     menu_param = party[3]
     if (type(menu_param) == types.StringType):

@@ -176,7 +176,7 @@ def save_sentences(variable_list,variable_uses,sentences,tag_uses,quick_strings,
       file.write("%s %d %d "%(dialog_id,sentence[speaker_pos],input_states[i]))
       save_statement_block(file, 0, 1, sentence[sentence_conditions_pos], variable_list,variable_uses,tag_uses,quick_strings,dialog_id+" condition block")
 
-      file.write("%s "%(string.replace(sentence[text_pos]," ","_")))
+      file.write("%s "%(remove_exclamation_marker_on_mb1011(replace_spaces(sentence[text_pos]))))
       if (len(sentence[text_pos]) == 0):
         file.write("NO_TEXT ")
       file.write(" %d "%(output_states[i]))

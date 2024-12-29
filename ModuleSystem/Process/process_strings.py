@@ -11,7 +11,7 @@ def save_strings(strings):
   ofile.write("%d\n"%len(strings))
   for i_string in xrange(len(strings)):
     str = strings[i_string]
-    ofile.write("str_%s %s\n"%(convert_to_identifier(str[0]),replace_spaces(str[1])))
+    ofile.write("str_%s %s\n"%(convert_to_identifier(str[0]),remove_exclamation_marker_on_mb1011(replace_spaces(str[1]))))
   ofile.close()
 
 def save_python_header():

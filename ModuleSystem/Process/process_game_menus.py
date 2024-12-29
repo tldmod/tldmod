@@ -20,12 +20,12 @@ def save_game_menu_item(ofile,variable_list,variable_uses,menu_item,tag_uses,qui
   #duplicate-ids end
   ofile.write(" mno_%s "%(menu_item[0]))
   save_statement_block(ofile,0, 1, menu_item[1], variable_list, variable_uses,tag_uses,quick_strings, "mno_"+menu_item[0]+" condition block")
-  ofile.write(" %s "%(string.replace(menu_item[2]," ","_")))
+  ofile.write(" %s "%(remove_exclamation_marker_on_mb1011(replace_spaces(menu_item[2]))))
   save_statement_block(ofile,0, 1, menu_item[3], variable_list, variable_uses,tag_uses,quick_strings, "mno_"+menu_item[0]+" consequence block")
   door_name = "."
   if (len(menu_item) > 4):
     door_name = menu_item[4]
-  ofile.write(" %s "%(string.replace(door_name," ","_")))
+  ofile.write(" %s "%(remove_exclamation_marker_on_mb1011(replace_spaces(door_name))))
     
 
 def save_game_menus(variable_list,variable_uses,tag_uses,quick_strings):
@@ -33,7 +33,7 @@ def save_game_menus(variable_list,variable_uses,tag_uses,quick_strings):
   ofile.write("menusfile version 1\n")
   ofile.write(" %d\n"%(len(game_menus)))
   for game_menu in game_menus:
-    ofile.write("menu_%s %d %s %s"%(game_menu[0],game_menu[1],string.replace(game_menu[2]," ","_"),game_menu[3]))
+    ofile.write("menu_%s %d %s %s"%(game_menu[0],game_menu[1],remove_exclamation_marker_on_mb1011(replace_spaces(game_menu[2])),game_menu[3]))
     save_statement_block(ofile,0,1, game_menu[4]  , variable_list, variable_uses,tag_uses,quick_strings, "menu_"+game_menu[0])
     menu_items = game_menu[5]
     ofile.write("%d\n"%(len(menu_items)))

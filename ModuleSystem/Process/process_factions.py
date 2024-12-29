@@ -39,7 +39,7 @@ def save_factions(relations):
     fac_color = 0xAAAAAA
     if len(faction) == 7:
       fac_color = faction[6]
-    file.write("fac_%s %s %d %d \n"%(convert_to_identifier(faction[0]), replace_spaces(faction[1]), faction[2], fac_color))
+    file.write("fac_%s %s %d %d \n"%(convert_to_identifier(faction[0]), remove_exclamation_marker_on_mb1011(replace_spaces(faction[1])), faction[2], fac_color))
     for reln in relations[i_faction]:
       file.write(" %s "%sf(reln))
     file.write("\n")

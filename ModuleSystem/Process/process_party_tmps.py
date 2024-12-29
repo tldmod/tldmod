@@ -22,7 +22,7 @@ def save_party_templates():
   file.write("%d\n"%(len(party_templates)))
   for party_template in party_templates:
 #    add_tag_use(tag_uses,tag_faction,party_template[4])
-    file.write("pt_%s %s %d %d %d %d "%(convert_to_identifier(party_template[0]),replace_spaces(party_template[1]),party_template[2],party_template[3], party_template[4], party_template[5]))
+    file.write("pt_%s %s %d %d %d %d "%(convert_to_identifier(party_template[0]),remove_exclamation_marker_on_mb1011(replace_spaces(party_template[1])),party_template[2],party_template[3], party_template[4], party_template[5]))
     members = party_template[6]
     if (len(members) > 6):
       print "Error! NUMBER OF TEMPLATE MEMBERS EXCEEDS 6 " + party_template[0]

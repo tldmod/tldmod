@@ -1,6 +1,8 @@
 import string
 import types
 
+from module_info import wb_compile_switch as is_wb
+
 def convert_to_identifier(s0):
   s1 = string.replace(s0," ","_")
   s2 = string.replace(s1,"'","_")
@@ -46,3 +48,11 @@ def sf(input):
      input="0"
     #print("befor:"+input)
     return input
+
+# swy: InVain noticed that the {!} string prefix to ignore translations was added on Warband, and on M&B 1.011 it shows an "Unrecognized token"
+#      entry, so turn it into the supported {***} untranslated string marker to make sure it gets ignored.
+def remove_exclamation_marker_on_mb1011(input):
+    if not is_wb:
+        return input.replace("{!}", "{***}")
+    else:
+        return input

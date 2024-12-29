@@ -11,8 +11,8 @@ def save_quests():
   ofile.write("%d\n"%(len(quests)))
   for i_quest in xrange(len(quests)):
     quest = quests[i_quest]
-    ofile.write("qst_%s %s %d "%(quest[0],(string.replace(quest[1]," ","_")),quest[2]))
-    ofile.write("%s "%(string.replace(quest[3]," ","_")))
+    ofile.write("qst_%s %s %d "%(quest[0],remove_exclamation_marker_on_mb1011(replace_spaces(quest[1])),quest[2]))
+    ofile.write("%s "%remove_exclamation_marker_on_mb1011(replace_spaces(quest[3])))
     ofile.write("\n")
   ofile.close()
 
