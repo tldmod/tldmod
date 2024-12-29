@@ -5372,11 +5372,11 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      # and give it away
      (troop_add_item, "trp_player", ":item", ":modifier"),
      (try_begin),
+        ] + (is_a_wb_dialog and [
+        (this_or_next|neg|item_has_property, ":item", itp_unique),
+        ] or []) + [ 
         (this_or_next|eq, ":item", "itm_lembas"),
-        (this_or_next|eq, ":item", "itm_orc_brew"),
-         ] + (is_a_wb_dialog and [
-         (neg|item_has_property, ":item", itp_unique),
-         ] or []) + [ 
+        (             eq, ":item", "itm_orc_brew"),
         (item_set_slot, ":item", slot_item_given_as_reward, 0), # can't give more then one, except for those listed above - Kham
       (else_try),
         (item_set_slot, ":item", slot_item_given_as_reward, 1),
