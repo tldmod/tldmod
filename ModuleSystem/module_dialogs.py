@@ -1627,7 +1627,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
    (try_end)]],
 
 [anyone, "ziggy_chosen_prisoner", [(troop_slot_eq, "trp_npc20", slot_troop_wealth, 2)],
-  " What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!", "ziggy_ritual", 
+  "What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!", "ziggy_ritual", 
   [(store_character_level, ":ziggy_level", "trp_npc20"),
    (store_character_level, ":prisoner_level", "$temp"),
    (store_mul, ":chance", ":ziggy_level", 2),
