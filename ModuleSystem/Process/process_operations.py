@@ -106,7 +106,7 @@ def get_id_value(tag, identifier, tag_uses):
   return (tag_type, id_no)
   
 def get_identifier_value(str, tag_uses):
-  underscore_pos = string.find(str, "_")
+  underscore_pos = str.find("_")
   result = -1
   if (underscore_pos > 0):
     tag_str = str[0:underscore_pos]
@@ -114,7 +114,7 @@ def get_identifier_value(str, tag_uses):
     (tag_type, id_no) = get_id_value(tag_str,id_str,tag_uses)
     if (tag_type > 0):
       if (id_no < 0):
-        print "Error: Unable to find object:" + str
+        print("Error: Unable to find object:" + str)
       else:
         #@swy-antireveng#
         #> The game only needs type tags for registers, local variables, global variables, strings, quick strings
@@ -124,74 +124,74 @@ def get_identifier_value(str, tag_uses):
         else:
           result = id_no
     else:
-      print "Error: Unrecognized tag:" +tag_str + "in object:" + str
+      print("Error: Unrecognized tag:" +tag_str + "in object:" + str)
   else:
-    print "Error: Invalid object:" +str + ".Variables should start with $ sign and references should start with a tag"
+    print("Error: Invalid object:" +str + ".Variables should start with $ sign and references should start with a tag")
   return result
 
 def load_quick_strings(export_dir):
   quick_strings = []
   try:
-    file = open(export_dir + "quick_strings.txt", "r")
+    file = open(export_dir + "quick_strings.txt", "r", encoding='utf-8')
     str_list = file.readlines()
     file.close()
     for s in str_list:
-      s = string.strip(s)
+      s = s.strip()
       if s:
         ssplit = s.split(' ')
         if len(ssplit) == 2:
           quick_strings.append(ssplit)
-  except:
-    print "Creating new quick_strings.txt file..."
+  except FileNotFoundError:
+    print("Creating new quick_strings.txt file...")
   return quick_strings
 
 def save_quick_strings(export_dir, quick_strings):
-  file = open(export_dir + "quick_strings.txt", "w")
+  file = open(export_dir + "quick_strings.txt", "w", encoding='utf-8')
   file.write("%d\n"%len(quick_strings))
-  for i in xrange(len(quick_strings)):
+  for i in range(len(quick_strings)):
     file.write("%s %s\n"%(remove_exclamation_marker_on_mb1011(quick_strings[i][0]),remove_exclamation_marker_on_mb1011(replace_spaces(quick_strings[i][1]))))
   file.close()
 
 def load_variables(export_dir,variable_uses):
   variables = []
   try:
-    file = open(export_dir + "variables.txt","r")
+    file = open(export_dir + "variables.txt","r", encoding='utf-8')
     var_list = file.readlines()
     file.close()
     for v in var_list:
-      vv = string.strip(v)
+      vv = v.strip()
       if vv:
         variables.append(vv)
-  except:
-    print "variables.txt not found. Creating new variables.txt file"
+  except FileNotFoundError:
+    print("variables.txt not found. Creating new variables.txt file")
 
   try:
-    file = open(export_dir + "variable_uses.txt","r")
+    file = open(export_dir + "variable_uses.txt","r", encoding='utf-8')
     var_list = file.readlines()
     file.close()
     for v in  var_list:
-      vv = string.strip(v)
+      vv = v.strip()
       if vv:
         variable_uses.append(int(vv))
-  except:
-    print "variable_uses.txt not found. Creating new variable_uses.txt file"
+  except FileNotFoundError:
+    print("variable_uses.txt not found. Creating new variable_uses.txt file")
 
   return variables
 
 def save_variables(export_dir,variables_list,variable_uses,):
-  file = open(export_dir + "variables.txt","w")
-  for i in xrange(len(variables_list)):
+  file = open(export_dir + "variables.txt","w", encoding='utf-8')
+  for i in range(len(variables_list)):
     file.write("%s\n"%variables_list[i])
   file.close()
-  file = open(export_dir + "variable_uses.txt","w")
-  for i in xrange(len(variables_list)):
+  file = open(export_dir + "variable_uses.txt","w", encoding='utf-8')
+  for i in range(len(variables_list)):
     file.write("%d\n"%variable_uses[i])
   file.close()
 
 def ensure_tag_use(tag_uses, tag_no, object_no):
   if len(tag_uses[tag_no]) <= object_no:
     num_to_add = object_no + 1 - len(tag_uses[tag_no])
-    for j in xrange(num_to_add):
+    for j in range(num_to_add):
       tag_uses[tag_no].append(0)
 
 def add_tag_use(tag_uses, tag_no, object_no):
@@ -202,30 +202,30 @@ def add_tag_use(tag_uses, tag_no, object_no):
     
 def load_tag_uses(export_dir):
   tag_uses = []
-  for i in xrange(tags_end):
+  for i in range(tags_end):
     sub_tag_uses = []
     tag_uses.append(sub_tag_uses)
     
   try:
-    file = open(export_dir + "tag_uses.txt","r")
+    file = open(export_dir + "tag_uses.txt","r", encoding='utf-8')
     var_list = file.readlines()
     file.close()
     for v in  var_list:
-      vv = string.strip(v).split(';')
+      vv = v.strip(v).split(';')
       if vv:
         for v2 in vv:
           vvv = v2.split(' ')
           if len(vvv) >= 3:
             ensure_tag_use(tag_uses,int(vvv[0]),int(vvv[1]))
             tag_uses[int(vvv[0])][int(vvv[1])] = int(vvv[2])
-  except:
-    print "Creating new tag_uses.txt file..."
+  except FileNotFoundError:
+    print("Creating new tag_uses.txt file...")
   return tag_uses
 
 def save_tag_uses(export_dir,tag_uses):
-  file = open(export_dir + "tag_uses.txt","w")
-  for i in xrange(len(tag_uses)):
-    for j in xrange(len(tag_uses[i])):
+  file = open(export_dir + "tag_uses.txt","w", encoding='utf-8')
+  for i in range(len(tag_uses)):
+    for j in range(len(tag_uses[i])):
       file.write("%d %d %d;" % (i, j, tag_uses[i][j]))
     file.write("\n")
   file.close()
@@ -233,7 +233,7 @@ def save_tag_uses(export_dir,tag_uses):
 def add_cookie(cookies_list,cookie_string):
   found = 0
   result = -1
-  for i_t in xrange(len(cookies_list)):
+  for i_t in range(len(cookies_list)):
     if cookie_string == cookies_list[i_t]:
       found = 1
       result = i_t
@@ -246,28 +246,28 @@ def add_cookie(cookies_list,cookie_string):
 def get_cookie(cookies_list,cookie_string):
   found = 0
   result = -1
-  for i_t in xrange(len(cookies_list)):
+  for i_t in range(len(cookies_list)):
     if cookie_string == cookies_list[i_t]:
       found = 1
       result = i_t
       break
   if not found:
-    print "ERROR: input token not found:" + cookie_string
+    print("ERROR: input token not found:" + cookie_string)
     cookies_list.append(cookie_string)
     result = len(cookies_list) - 1
   return result
 
 
 def check_varible_not_defined(variable_string,variables_list):
-  for i_t in xrange(len(variables_list)):
+  for i_t in range(len(variables_list)):
     if variable_string == variables_list[i_t]:
-      print "WARNING: Variable name used for both local and global contexts:" + variable_string
+      print("WARNING: Variable name used for both local and global contexts:" + variable_string)
       break
 
 #def add_get_variable(variable_string,variables_list):
 #  found = 0
 #  result = -1
-#  for i_t in xrange(len(variables_list)):
+#  for i_t in range(len(variables_list)):
 #    if variable_string == variables_list[i_t]:
 #      found = 1
 #      result = i_t
@@ -279,7 +279,7 @@ def check_varible_not_defined(variable_string,variables_list):
     
 def add_variable(variable_string,variables_list,variable_uses):
   found = 0
-  for i_t in xrange(len(variables_list)):
+  for i_t in range(len(variables_list)):
     if variable_string == variables_list[i_t]:
       found = 1
       variable_uses[i_t] = variable_uses[i_t] - 1
@@ -292,7 +292,7 @@ def get_variable(variable_string,variables_list,variable_uses, calling_script):
   found = 0
   result = -1
   var_string = variable_string[1:]
-  for i_t in xrange(len(variables_list)):
+  for i_t in range(len(variables_list)):
     if var_string == variables_list[i_t]:
       found = 1
       result = i_t
@@ -303,9 +303,9 @@ def get_variable(variable_string,variables_list,variable_uses, calling_script):
       variables_list.append(variable_string)
       variable_uses.append(0)
       result = len(variables_list) - 1
-      print "WARNING: Usage of unassigned global variable: " + variable_string + " in script '" + calling_script + "'"
+      print("WARNING: Usage of unassigned global variable: " + variable_string + " in script '" + calling_script + "'")
     else:
-      print "ERROR: Usage of unassigned local variable: " + variable_string + " in script '" + calling_script + "'"
+      print("ERROR: Usage of unassigned local variable: " + variable_string + " in script '" + calling_script + "'")
   return result
 
 def is_lhs_operation(op_code):
@@ -330,7 +330,7 @@ def is_can_fail_operation(op_code):
 
 def search_quick_string_keys(key, quick_strings):
   index = -1
-  for i in xrange(len(quick_strings)):
+  for i in range(len(quick_strings)):
     if quick_strings[i][0] == key:
       index = i
   return index
@@ -341,7 +341,7 @@ def insert_quick_string_with_auto_id(sentence,quick_strings):
   
   #swy-- strip non ANSI codepoints to avoid encoding problems. e.g: Lórien -> Lrien
   #   -- qstr_A_golden_mist_from_L0xC3 -> qstr_A_golden_mist_from_Lr
-  text = text.decode("utf-8").encode("ascii", "ignore")
+  text = str(text.encode("ascii", "ignore").decode("utf-8", "ignore"))
 
   sentence = replace_spaces(sentence)
   done = 0
@@ -369,7 +369,7 @@ def insert_quick_string_with_auto_id(sentence,quick_strings):
   if not done:
     number = 1
     new_auto_id = auto_id + str(number)
-    while quick_strings.has_key(new_auto_id):
+    while new_auto_id in quick_strings:
       number += 1
       new_auto_id = auto_id + str(number)
     auto_id = new_auto_id
@@ -380,7 +380,7 @@ def insert_quick_string_with_auto_id(sentence,quick_strings):
 
 def process_param(param,global_vars_list,global_var_uses, local_vars_list, local_var_uses, tag_uses, quick_strings, calling_script):
   result = 0
-  if (type(param) == types.StringType):
+  if (type(param) == str):
     if (param[0] == '$'):
       check_varible_not_defined(param[1:], local_vars_list)
       result = get_variable(param, global_vars_list,global_var_uses, calling_script)
@@ -395,7 +395,7 @@ def process_param(param,global_vars_list,global_var_uses, local_vars_list, local
     else:
       result = get_identifier_value(param.lower(), tag_uses)
       if (result < 0):
-        print "ERROR: Illegal Identifier:" + param
+        print("ERROR: Illegal Identifier:" + param)
   else:
     result = param
   return result
@@ -406,26 +406,26 @@ def save_statement(ofile,opcode,no_variables,statement,variable_list,variable_us
     if (is_lhs_operation(opcode) == 1):
       if (lenstatement > 0):
         param = statement[1]
-        if (type(param) == types.StringType):
+        if (type(param) == str):
           if (param[0] == ':'):
             add_variable(param[1:], local_vars_list, local_var_uses)
   else:
     lenstatement = 0
   ofile.write("%d %d "%(opcode, lenstatement))
-  for i in xrange(lenstatement):
+  for i in range(lenstatement):
     operand = process_param(statement[i + 1],variable_list,variable_uses,local_vars_list,local_var_uses,tag_uses,quick_strings, calling_script)
     ofile.write("%d "%operand)
 
 def compile_global_vars_in_statement(statement,variable_list, variable_uses):
   opcode = 0
-  if ((type(statement) != types.ListType) and (type(statement) != types.TupleType)):
+  if not hasattr(statement, '__len__'):
     opcode = statement
   else:
     opcode = statement[0]
     if (is_lhs_operation_for_global_vars(opcode) == 1):
       if (len(statement) > 1):
         param = statement[1]
-        if (type(param) == types.StringType):
+        if (type(param) == str):
           if (statement[1][0] == '$'):
             add_variable(statement[1][1:], variable_list, variable_uses)
 
@@ -437,9 +437,9 @@ def save_statement_block(ofile,statement_name,can_fail_statement,statement_block
   store_script_param_2_uses = 0
   current_depth = 0
   can_fail = 0
-  for i in xrange(len(statement_block)):
+  for i in range(len(statement_block)):
     statement = statement_block[i]
-    if ((type(statement) != types.ListType) and (type(statement) != types.TupleType)):
+    if not hasattr(statement, '__len__'):
       opcode = statement
       no_variables = 1
     else:
@@ -466,7 +466,7 @@ def save_statement_block(ofile,statement_name,can_fail_statement,statement_block
           #swy-- we don't care about these ones, a bad practice, i know!
           and (statement_name!="rout_check" and statement_name!="coherence")):
       
-      print "WARNING: Script can fail at operation #" + str(i) + ". Use cf_ at the beginning of its name: " + statement_name
+      print("WARNING: Script can fail at operation #" + str(i) + ". Use cf_ at the beginning of its name: " + statement_name)
 
     # swy: enhancement to track down buggy chained condition blocks, suggested by @Aro
     next_opcode = 0
@@ -480,16 +480,16 @@ def save_statement_block(ofile,statement_name,can_fail_statement,statement_block
     save_statement(ofile,opcode,no_variables,statement,variable_list,variable_uses,local_vars, local_var_uses,tag_uses,quick_strings, calling_script)
 
   if (store_script_param_1_uses > 1):
-    print "WARNING: store_script_param_1 is used more than once:" + statement_name
+    print("WARNING: store_script_param_1 is used more than once:" + statement_name)
   if (store_script_param_2_uses > 1):
-    print "WARNING: store_script_param_2 is used more than once:" + statement_name
+    print("WARNING: store_script_param_2 is used more than once:" + statement_name)
   i = 0
   while (i < len(local_vars)):
     if (local_var_uses[i] == 0 and not(local_vars[i].startswith("unused"))):
-      print "WARNING: Local variable never used: " + local_vars[i]+ ", at: " + str(statement_name) + " in script '" + calling_script + "'"
+      print("WARNING: Local variable never used: " + local_vars[i]+ ", at: " + str(statement_name) + " in script '" + calling_script + "'")
     i = i + 1
   if (len(local_vars) > 128):
-   print "WARNING: Script uses more than 128 local wariables: " + str(statement_name) + "variables count:" + str(len(local_vars))
+   print("WARNING: Script uses more than 128 local wariables: " + str(statement_name) + "variables count:" + str(len(local_vars)))
   
   # Indentation Enhancement By Vorne
   # http://forums.taleworlds.com/index.php/topic,189368.0.html
@@ -504,7 +504,7 @@ def save_statement_block(ofile,statement_name,can_fail_statement,statement_block
     if statement_name == 0:
       statement_name = calling_script
       
-    print "WARNING: " + `current_depth` + missing + " try_end: " + str(statement_name)
+    print("WARNING: " + current_depth + missing + " try_end: " + str(statement_name))
   
   #>
 

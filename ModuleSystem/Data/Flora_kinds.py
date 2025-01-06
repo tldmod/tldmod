@@ -1437,7 +1437,7 @@ fauna_kinds = [
 ]
 
 def save_fauna_kinds():
-  file = open("../"+export_dir+"/data/flora_kinds.txt","w")
+  file = open("../"+export_dir+"/data/flora_kinds.txt","w", encoding='utf-8')
   file.write("%d\n"%len(fauna_kinds))
   for fauna_kind in fauna_kinds:
     meshes_list = fauna_kind[2]
@@ -1460,15 +1460,15 @@ def save_fauna_kinds():
 
 def two_to_pow(x):
   result = 1
-  for i in xrange(x):
+  for i in range(x):
     result = result * 2
   return result
 
 fauna_mask = 0x80000000000000000000000000000000
 low_fauna_mask =             0x8000000000000000
 def save_python_header():
-  file = open("./fauna_codes.py","w")
-  for i_fauna_kind in xrange(len(fauna_kinds)):
+  file = open("./fauna_codes.py","w", encoding='utf-8')
+  for i_fauna_kind in range(len(fauna_kinds)):
     file.write("%s_1 = 0x"%(fauna_kinds[i_fauna_kind][0]))
     file.write("%x\n"%(fauna_mask | two_to_pow(i_fauna_kind)))
     file.write("%s_2 = 0x"%(fauna_kinds[i_fauna_kind][0]))
@@ -1477,5 +1477,5 @@ def save_python_header():
     file.write("%x\n"%(fauna_mask | ((low_fauna_mask|two_to_pow(i_fauna_kind)) << 64) | two_to_pow(i_fauna_kind)))
   file.close()
 
-print "Exporting flora data..."
+print("Exporting flora data...")
 save_fauna_kinds()

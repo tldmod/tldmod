@@ -7,7 +7,7 @@ from process_common import *
 from process_operations import *
 
 def save_scene_props(variable_list,variable_uses,tag_uses,quick_strings):
-  ofile = open(export_dir + "scene_props.txt","w")
+  ofile = open(export_dir + "scene_props.txt","w", encoding='utf-8')
   ofile.write("scene_propsfile version 1\n")
   ofile.write(" %d\n"%(len(scene_props)))
   for scene_prop in scene_props:
@@ -34,14 +34,14 @@ def save_scene_props(variable_list,variable_uses,tag_uses,quick_strings):
 def save_python_header():
   from module_info import wb_compile_switch as is_wb
   if (is_wb):
-    file = open("./ID/ID_scene_props_wb.py","w")
+    file = open("./ID/ID_scene_props_wb.py","w", encoding='utf-8')
   else:
-    file = open("./ID/ID_scene_props_mb.py","w")
-  for i_scene_prop in xrange(len(scene_props)):
+    file = open("./ID/ID_scene_props_mb.py","w", encoding='utf-8')
+  for i_scene_prop in range(len(scene_props)):
     file.write("spr_%s = %d\n"%(scene_props[i_scene_prop][0],i_scene_prop))
   file.close()
 
-print "Exporting scene props..."
+print("Exporting scene props...")
 save_python_header()
 variable_uses = []
 variables = load_variables(export_dir,variable_uses)

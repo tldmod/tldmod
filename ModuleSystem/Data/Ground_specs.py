@@ -37,7 +37,7 @@ def save_ground_specs():
   file.close()
 
 def save_c_header():
-  file = open("./ground_spec_codes.h","w")
+  file = open("./ground_spec_codes.h","w", encoding='utf-8')
   file.write("#ifndef _GROUND_SPEC_CODES_H\n")
   file.write("#define _GROUND_SPEC_CODES_H\n\n")
   file.write("typedef enum {\n")
@@ -50,16 +50,16 @@ def save_c_header():
   file.close()
   
 def save_python_header():
-  file = open("../header/header_ground_types.py","w")
-  for ig in xrange(len(ground_specs)):
+  file = open("../header/header_ground_types.py","w", encoding='utf-8')
+  for ig in range(len(ground_specs)):
     ground_spec = ground_specs[ig]
     file.write("ground_%s = %d\n"%(ground_spec[0], ig))
   file.write("\n\n")
   file.close()
 
-print "Exporting ground_spec data..."
+print("Exporting ground_spec data...")
 save_ground_specs()
 #save_c_header()
 save_python_header()
-#print "Finished."
+#print("Finished.")
   

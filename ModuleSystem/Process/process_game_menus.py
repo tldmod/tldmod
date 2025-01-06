@@ -29,7 +29,7 @@ def save_game_menu_item(ofile,variable_list,variable_uses,menu_item,tag_uses,qui
     
 
 def save_game_menus(variable_list,variable_uses,tag_uses,quick_strings):
-  ofile = open(export_dir + "menus.txt","w")
+  ofile = open(export_dir + "menus.txt","w", encoding='utf-8')
   ofile.write("menusfile version 1\n")
   ofile.write(" %d\n"%(len(game_menus)))
   for game_menu in game_menus:
@@ -45,14 +45,14 @@ def save_game_menus(variable_list,variable_uses,tag_uses,quick_strings):
 def save_python_header():
   from module_info import wb_compile_switch as is_wb
   if (is_wb):
-    ofile = open("./ID/ID_menus_wb.py","w")
+    ofile = open("./ID/ID_menus_wb.py","w", encoding='utf-8')
   else:
-    ofile = open("./ID/ID_menus_mb.py","w")
-  for i_game_menu in xrange(len(game_menus)):
+    ofile = open("./ID/ID_menus_mb.py","w", encoding='utf-8')
+  for i_game_menu in range(len(game_menus)):
     ofile.write("menu_%s = %d\n"%(game_menus[i_game_menu][0],i_game_menu))
   ofile.close()
 
-print "Exporting game menus data..."
+print("Exporting game menus data...")
 save_python_header()
 variable_uses = []
 #duplicate-ids thingie
@@ -69,8 +69,8 @@ save_tag_uses(export_dir, tag_uses)
 save_quick_strings(export_dir,quick_strings)
 #duplicate-ids thingie
 if conflicting_ids:
-  print "[!] Conflicting gamemenu item ids,\n    see conflicting_mno.log for details!"
-  debugfile = open("conflicting_mno.log","w")
+  print("[!] Conflicting gamemenu item ids,\n    see conflicting_mno.log for details!")
+  debugfile = open("conflicting_mno.log","w", encoding='utf-8')
   debugfile.write(conflicting_mno)
   debugfile.close()
 #duplicate-ids end

@@ -12,21 +12,21 @@ skill_desc_pos = 4
 
 
 def save_skills():
-  ofile = open(export_dir + "skills.txt","w")
+  ofile = open(export_dir + "skills.txt","w", encoding='utf-8')
   ofile.write("%d\n"%(len(skills)))
-  for i_skill in xrange(len(skills)):
+  for i_skill in range(len(skills)):
     skill = skills[i_skill]
     ofile.write("skl_%s %s "%(skill[0], remove_exclamation_marker_on_mb1011(replace_spaces(skill[1]))))
     ofile.write("%d %d %s\n"%(skill[skill_attribute_pos],skill[skill_max_level_pos],remove_exclamation_marker_on_mb1011(replace_spaces(skill[skill_desc_pos]))))
   ofile.close()
 
 def save_python_header():
-  ofile = open("./ID/ID_skills.py","w")
-  for i_skill in xrange(len(skills)):
+  ofile = open("./ID/ID_skills.py","w", encoding='utf-8')
+  for i_skill in range(len(skills)):
     ofile.write("skl_%s = %d\n"%(skills[i_skill][0],i_skill))
   ofile.write("\n\n")
   ofile.close()
 
-print "Exporting skills..."
+print("Exporting skills...")
 save_python_header()
 save_skills()

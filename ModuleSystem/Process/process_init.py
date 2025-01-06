@@ -1,7 +1,7 @@
 from module_info import *
 import os
 
-print "Initializing..."
+print("Initializing...")
 
 try:
   os.remove(export_dir + 'tag_uses.txt')

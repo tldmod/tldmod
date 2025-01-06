@@ -81,7 +81,7 @@ def find_object(objects,object_id):
     i_object += 1
   return result
 
-for index in xrange(128):
+for index in range(128):
     globals()['s%d' % index] = index
     globals()['pos%d' % index] = index
     globals()['reg%d' % index] = opmask_register | index

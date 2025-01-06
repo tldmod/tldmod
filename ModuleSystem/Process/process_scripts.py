@@ -14,7 +14,7 @@ def save_scripts(variable_list,variable_uses,scripts,tag_uses,quick_strings):
   temp_list = []
   list_type = type(temp_list)
   s_num = 0
-  for i_script in xrange(len(scripts)):
+  for i_script in range(len(scripts)):
     func = scripts[i_script]
     script_name = convert_to_identifier(func[0])
     #MV: removed script name obfuscation.. made impossible helping players
@@ -35,16 +35,16 @@ def save_scripts(variable_list,variable_uses,scripts,tag_uses,quick_strings):
 
 def save_python_header():
   if (is_wb):
-    file = open("./ID/ID_scripts_wb.py","w")
+    file = open("./ID/ID_scripts_wb.py","w", encoding='utf-8')
   else:
-    file = open("./ID/ID_scripts_mb.py","w")
-  for i_script in xrange(len(scripts)):
+    file = open("./ID/ID_scripts_mb.py","w", encoding='utf-8')
+  for i_script in range(len(scripts)):
     file.write("script_%s = %d\n"%(convert_to_identifier(scripts[i_script][0]),i_script))
   file.write("\n\n")
   file.close()
 
 
-print "Exporting scripts..."
+print("Exporting scripts...")
 save_python_header()
 variable_uses = []
 variables = load_variables(export_dir, variable_uses)

@@ -65,7 +65,7 @@ skyboxes = [
 
 
 def save_skyboxes():
-  file = open("../"+export_dir+"/data/skyboxes.txt","w+")
+  file = open("../"+export_dir+"/data/skyboxes.txt","w+", encoding='utf-8')
   file.write("%d\n"%len(skyboxes))
   for skybox in  skyboxes:
     file.write("%s %d %f %f %f %s\n"%(skybox[0],skybox[1],skybox[2],skybox[3],skybox[4],skybox[5]))
@@ -75,7 +75,7 @@ def save_skyboxes():
     file.write(" %f %d\n"%skybox[9])
   file.close()
 
-print "Exporting skyboxes..."
+print("Exporting skyboxes...")
 save_skyboxes()
-print "Finished."
+print("Finished.")
   

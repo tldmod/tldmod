@@ -5,10 +5,10 @@ from process_common import *
 from process_operations import *
 
 def save_simple_triggers(variable_list,variable_uses,triggers,tag_uses,quick_strings):
-  file = open(export_dir + "simple_triggers.txt","w")
+  file = open(export_dir + "simple_triggers.txt","w", encoding='utf-8')
   file.write("simple_triggers_file version 1\n")
   file.write("%d\n"%len(simple_triggers))
-  for i in xrange(len(simple_triggers)):
+  for i in range(len(simple_triggers)):
     simple_trigger = simple_triggers[i]
     file.write("%s "%sf(simple_trigger[0]))
     save_statement_block(file,0, 1, simple_trigger[1]  , variable_list,variable_uses,tag_uses,quick_strings, "simple trigger "+str(i))
@@ -16,7 +16,7 @@ def save_simple_triggers(variable_list,variable_uses,triggers,tag_uses,quick_str
   file.close()
 
 
-print "exporting simple triggers..."
+print("exporting simple triggers...")
 variable_uses = []
 variables = load_variables(export_dir,variable_uses)
 tag_uses = load_tag_uses(export_dir)

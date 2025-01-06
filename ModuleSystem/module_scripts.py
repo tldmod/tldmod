@@ -48,17 +48,17 @@ def curr_count():
 ### TLD item factionization, with subfactions (mtarini, GA)                                               # swy: note: start_game_1 calls script_set_item_faction, which embeds the thousands operations generated here at build-time, so this runs whenever we click on the new game button
 def set_item_faction():
   command_list = []
-  for i_troop in xrange(trp_i1_woodmen_man, trp_end_leaders): #regular troops here                        # swy: (1) iterate from i1_woodmen_man (29th troop in the list, count starts at zero) to end_leaders (430), for each of these troops...
+  for i_troop in range(trp_i1_woodmen_man, trp_end_leaders): #regular troops here                         # swy: (1) iterate from i1_woodmen_man (29th troop in the list, count starts at zero) to end_leaders (430), for each of these troops...
     # mtarini: store all flags in a slot, for later use
     command_list.append((troop_set_slot, i_troop, slot_troop_flags, troops[i_troop][3]))                  # swy:    \-> mirror each troop's flags into an accessible slot, so that we can retrieve them during the game, only for the range of regular soldier troops above, not heroes or special stuff
-  for i_troop in xrange(trp_i1_woodmen_man, trp_elder_ironhill): #all troops                              # swy: (2) iterate from i1_woodmen_man (29th) to trp_elder_ironhill (823th), originally probably trp_merchants_end
+  for i_troop in range(trp_i1_woodmen_man, trp_elder_ironhill): #all troops                               # swy: (2) iterate from i1_woodmen_man (29th) to trp_elder_ironhill (823th), originally probably trp_merchants_end
     #GA assign troops to proper subfactions acc to troops[i_troop][5]
     troopsub = troops[i_troop][5]                                                                         # swy:    \-> the 5th element of each troop is normally reserved, on TLD it may store the subfac_ number which also gets mirrored by setting a troop slot here, otherwise is zero, and no slot_troop_subfaction is set
     if troopsub > 0: command_list.append((troop_set_slot, i_troop, slot_troop_subfaction, troopsub))
-  for i_item in xrange(itm_sumpter_horse, itm_free_far_harad_shield_paint): #regular items here           # swy: (3) iterate from itm_sumpter_horse (23th) to itm_free_far_harad_shield_paint (826th), for each of these items...
+  for i_item in range(itm_sumpter_horse, itm_free_far_harad_shield_paint): #regular items here            # swy: (3) iterate from itm_sumpter_horse (23th) to itm_free_far_harad_shield_paint (826th), for each of these items...
     faction  = 0
     sfaction = 0
-    for i_troop in xrange(trp_i1_woodmen_man, trp_end_leaders): # search items inside troop inventory     # swy:    \-> iterate from i1_woodmen_man (29th) to to end_leaders (430), for each of those troops...
+    for i_troop in range(trp_i1_woodmen_man, trp_end_leaders): # search items inside troop inventory      # swy:    \-> iterate from i1_woodmen_man (29th) to to end_leaders (430), for each of those troops...
       if i_item in troops[i_troop][7]:                                                                    # swy:          if a regular troop has the current item in their inventory...
         faction = faction | (1 << troops[i_troop][6])                                                     # swy:            a) convert the faction number into flag toggles, storing/appending all the possible factions where a normal troop uses this item in their inventory, all together in the same bitfield
         troopsub = troops[i_troop][5]                                                                     # swy:            b) grab the current troops sub-faction field (the 5th/reserved one above)
@@ -71,7 +71,7 @@ companionPriceMult = 100 # this is used to multiply old hiring praces for compan
 
 def set_item_score():
   item_score = []
-  for i_item in xrange(len(items)):
+  for i_item in range(len(items)):
     # ## weight
     # item_score.append((item_set_slot, i_item, slot_item_weight, get_hrd_weight(items[i_item][6])))
     

@@ -9,10 +9,10 @@ from process_common import *
 
 
 def save_parties(parties):
-  file = open(export_dir + "parties.txt","w")
+  file = open(export_dir + "parties.txt","w", encoding='utf-8')
   file.write("partiesfile version 1\n")
   file.write("%d %d\n"%(len(parties), len(parties)))
-  for i_party in xrange(len(parties)):
+  for i_party in range(len(parties)):
     party = parties[i_party]
     #print[party[0]]
     if (party[5] >= 0):
@@ -23,10 +23,10 @@ def save_parties(parties):
     file.write("p_%s %s %d "%(convert_to_identifier(party[0]),remove_exclamation_marker_on_mb1011(replace_spaces(party[1])),party[2]))
     menu_no = 0
     menu_param = party[3]
-    if (type(menu_param) == types.StringType):
+    if (type(menu_param) == str):
       menu_no = find_object(game_menus,menu_param)
       if (menu_no < 0):
-        print "Error: Unable to find menu-id :" + menu_param
+        print("Error: Unable to find menu-id :" + menu_param)
     else:
       menu_no = menu_param
     file.write("%d "%(menu_no))
@@ -34,10 +34,10 @@ def save_parties(parties):
     file.write("%d %d %d %d %d "%(party[4], party[5], party[6], party[6],party[7]))
     ai_behavior_object = 0
     ai_param = party[8]
-    if (type(ai_param) == types.StringType):
+    if (type(ai_param) == str):
       ai_behavior_object = find_object(parties,ai_param)
       if (ai_behavior_object < 0):
-        print "Error: Unable to find party-id :" + ai_param
+        print("Error: Unable to find party-id :" + ai_param)
     else:
       ai_behavior_object = ai_param
     file.write("%d %d "%(ai_behavior_object,ai_behavior_object))
@@ -59,20 +59,20 @@ def save_parties(parties):
 
 def save_python_header(parties):
   if (wb_compile_switch):
-    file = open("./ID/ID_parties_wb.py","w")
+    file = open("./ID/ID_parties_wb.py","w", encoding='utf-8')
   else:
-    file = open("./ID/ID_parties_mb.py","w")
-  for i_party in xrange(len(parties)):
+    file = open("./ID/ID_parties_mb.py","w", encoding='utf-8')
+  for i_party in range(len(parties)):
     file.write("p_%s = %d\n"%(convert_to_identifier(parties[i_party][0]),i_party))
   file.close()
 
 
-print "Exporting parties"
+print("Exporting parties")
 tag_uses = load_tag_uses(export_dir)
 save_python_header(parties)
 save_parties(parties)
 save_tag_uses(export_dir, tag_uses)
-#print "Generating C header..."
+#print("Generating C header...")
 #save_c_header()
 #print "Generating Python header..."
-#print "Finished."
+#print("Finished.")

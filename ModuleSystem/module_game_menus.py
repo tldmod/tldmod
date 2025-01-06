@@ -46,7 +46,7 @@ tmp_menu_max_fac = 21
 tmp_menu_max_tier = 4
 tmp_max_troop = 858 # troop_end
 
-magic_items = [itm_lembas] + [itm_pony] +  [itm_warg_reward] + range(itm_ent_water, itm_witchking_helmet)  # first non magic item
+magic_items = [itm_lembas] + [itm_pony] +  [itm_warg_reward] + list(range(itm_ent_water, itm_witchking_helmet))  # first non magic item
 
 city_menu_color = menu_text_color(0xFF010101)  # city menu text color: black
 
@@ -9898,7 +9898,7 @@ game_menus = [
 ###########################
 # player death scenario in TLD: no capture, only injury
 ( "tld_player_defeated",0,
-     "^^^^^Suddenly a shattering pain explodes in the back of your head! \ You shiver, as all the world goes black around you...^Is this your end?",
+     "^^^^^Suddenly a shattering pain explodes in the back of your head! \\ You shiver, as all the world goes black around you...^Is this your end?",
      "none",[
 	 (store_add, reg10, "$player_looks_like_an_orc", "mesh_draw_defeat_human"), (set_background_mesh, reg10),
 	 (val_add, "$number_of_player_deaths", 1),
@@ -12995,7 +12995,7 @@ from template_tools import *
 from module_scenes import scenes
 
 sorted_scenes = sorted(scenes)
-for i in xrange(len(sorted_scenes)):
+for i in range(len(sorted_scenes)):
   current_scene = list(sorted_scenes[i])
   current_scene[1] = get_flags_from_bitmap(header_scenes, "sf_", current_scene[1])
   sorted_scenes[i] = tuple(current_scene)

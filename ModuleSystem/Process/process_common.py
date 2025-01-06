@@ -4,37 +4,43 @@ import types
 from module_info import wb_compile_switch as is_wb
 
 def convert_to_identifier(s0):
-  s1 = string.replace(s0," ","_")
-  s2 = string.replace(s1,"'","_")
-  s3 = string.replace(s2,"`","_")
-  s4 = string.replace(s3,"(","_")
-  s5 = string.replace(s4,")","_")
-  s6 = string.replace(s5,"-","_")
-  s7 = string.replace(s6,",","")
-  s8 = string.replace(s7,"|","")
-  s9 = string.lower(s8)
+  s1 = s0.replace(" ","_")
+  s2 = s1.replace("'","_")
+  s3 = s2.replace("`","_")
+  s4 = s3.replace("(","_")
+  s5 = s4.replace(")","_")
+  s6 = s5.replace("-","_")
+  s7 = s6.replace(",","")
+  s8 = s7.replace("|","")
+  s9 = s8.lower()
   return s9
 
 def convert_to_identifier_with_no_lowercase(s0):
-  s1 = string.replace(s0," ","_")
-  s2 = string.replace(s1,"'","_")
-  s3 = string.replace(s2,"`","_")
-  s4 = string.replace(s3,"(","_")
-  s5 = string.replace(s4,")","_")
-  s6 = string.replace(s5,"-","_")
-  s7 = string.replace(s6,",","")
-  s8 = string.replace(s7,"|","")
+  s1 = s0.replace(" ","_")
+  s2 = s1.replace("'","_")
+  s3 = s2.replace("`","_")
+  s4 = s3.replace("(","_")
+  s5 = s4.replace(")","_")
+  s6 = s5.replace("-","_")
+  s7 = s6.replace(",","")
+  s8 = s7.replace("|","")
   return s8
 
 def replace_spaces(s0):
-  return string.replace(s0," ","_")
+  return s0.replace(" ","_")
 
+   
 def sf(input):
+    try:
+        int(float(input))
+    except ValueError:
+        return input
+    
     """
     --swyter. build msys with short floats
     """
     #print("after:"+str(input))
-    input=str(input)
+    input=str("%.11f" % input)
     
     '''
     fixes a bug in scenes.txt, otherwise it munches the non-decimal zeroes,

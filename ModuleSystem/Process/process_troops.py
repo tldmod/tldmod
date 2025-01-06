@@ -13,7 +13,7 @@ wb_compile_switch = 0
 num_face_numeric_keys = 4
 
 def save_troops():
-  file = open(export_dir + "troops.txt","w")
+  file = open(export_dir + "troops.txt","w", encoding='utf-8')
   file.write("troopsfile version 1\n")
   file.write("%d "%len(troops))
   for troop in troops:
@@ -52,11 +52,11 @@ def save_troops():
 #    inventory_list.append(itm_corsair_arrows)
     for inventory_item in inventory_list:
 #      add_tag_use(tag_uses,tag_item,inventory_item)
-      if(type(inventory_item) == types.ListType) or (type(inventory_item) == types.TupleType):
+      if(type(inventory_item) == list) or (type(inventory_item) == tuple):
         file.write("%d %d "%(inventory_item[0], inventory_item[1]<<24))
       else:
         file.write("%d 0 "%inventory_item)
-    for i in xrange(max_inventory_items - len(inventory_list)):
+    for i in range(max_inventory_items - len(inventory_list)):
       file.write("-1 0 ")
     file.write("\n ")
     attrib = troop[8]
@@ -69,14 +69,14 @@ def save_troops():
     
     file.write(" %d %d %d %d %d\n"%(strength,agility,intelligence,charisma,starting_level))
     wp_word = troop[9]
-    for wp in xrange(num_weapon_proficiencies):
+    for wp in range(num_weapon_proficiencies):
       wp_level = wp_word & 0x3FF
       file.write(" %d"%wp_level)
       wp_word = wp_word >> 10
     file.write("\n")
       
     skill_array = troop[10]
-    for i in xrange(num_skill_words):
+    for i in range(num_skill_words):
       file.write("%d "%((skill_array >> (i * 32)) & 0xffffffff))
     file.write("\n  ")
 
@@ -84,9 +84,9 @@ def save_troops():
     
     for fckey in (face_keys):
       word_keys = []
-      for word_no in xrange(num_face_numeric_keys):
+      for word_no in range(num_face_numeric_keys):
         word_keys.append((fckey >> (64 * word_no)) & 0xFFFFFFFFFFFFFFFF)
-      for word_no in xrange(num_face_numeric_keys):
+      for word_no in range(num_face_numeric_keys):
         file.write("%d "%(word_keys[(num_face_numeric_keys -1) - word_no]))
 
     file.write("\n")
@@ -101,7 +101,7 @@ def save_troops():
 #    face_keys = troop[10]
 #    for fckey in (face_keys):
 #      file.write("%d "%(fckey))
-#    for i in xrange(4 - len(face_keys)):
+#    for i in range(4 - len(face_keys)):
 #      file.write("0 ")
       
     
@@ -109,17 +109,17 @@ def save_troops():
 
 def two_to_pow(x):
   result = 1
-  for i in xrange(x):
+  for i in range(x):
     result = result * 2
   return result
 
 def save_python_header():
-  file = open("./ID/ID_troops.py","w")
-  for i_troop in xrange(len(troops)):
+  file = open("./ID/ID_troops.py","w", encoding='utf-8')
+  for i_troop in range(len(troops)):
     file.write("trp_%s = %d\n"%(convert_to_identifier(troops[i_troop][0]),i_troop))
   file.close()
 
-print "Exporting troops data"
+print("Exporting troops data")
 #tag_uses = load_tag_uses(export_dir)
 save_python_header()
 save_troops()

@@ -11,10 +11,10 @@ PYTHONPATH="$PWD:$PWD/Data:$PWD/Header:$PWD/ID:$PWD/Process"; export PYTHONPATH
 
 clear
 
-python()
-{
-    test -e /usr/bin/python2 && python2 "$@" || python "$@"
-}
+#python()
+#{
+#    test -e /usr/bin/python2 && python2 "$@" || python "$@"
+#}
 
 #swy-- make it fast by calling the python2 interpreter only once
 #      goes from 31.4s to 8.2s, a huge improvement in my book.

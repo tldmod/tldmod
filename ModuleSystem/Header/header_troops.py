@@ -298,9 +298,9 @@ def upgrade(troops,troop1_id,troop2_id):
   troop1_no = find_troop(troops,troop1_id)
   troop2_no = find_troop(troops,troop2_id)
   if (troop1_no == -1):
-    print "Error with upgrade def: Unable to find troop1-id: " + troop1_id
+    print("Error with upgrade def: Unable to find troop1-id: " + troop1_id)
   elif (troop2_no == -1):
-    print "Error with upgrade def: Unable to find troop2-id: " + troop2_id
+    print("Error with upgrade def: Unable to find troop2-id: " + troop2_id)
   else:
     cur_troop = troops[troop1_no]
     cur_troop_length = len(cur_troop)
@@ -326,11 +326,11 @@ def upgrade2(troops,troop1_id,troop2_id,troop3_id):
   troop2_no = find_troop(troops,troop2_id)
   troop3_no = find_troop(troops,troop3_id)
   if (troop1_no == -1):
-    print "Error with upgrade2 def: Unable to find troop1-id: " + troop1_id
+    print("Error with upgrade2 def: Unable to find troop1-id: " + troop1_id)
   elif (troop2_no == -1):
-    print "Error with upgrade2 def: Unable to find troop2-id: " + troop2_id
+    print("Error with upgrade2 def: Unable to find troop2-id: " + troop2_id)
   elif (troop3_no == -1):
-    print "Error with upgrade2 def: Unable to find troop3-id: " + troop3_id
+    print("Error with upgrade2 def: Unable to find troop3-id: " + troop3_id)
   else:
     cur_troop = troops[troop1_no]
     cur_troop_length = len(cur_troop)
