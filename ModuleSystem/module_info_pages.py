@@ -157,8 +157,8 @@ info_pages = [
 The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Players command some of their own troops. Use them wisely to help out where needed most.
   '''),
   
-("division_placement", "{!}_", "{!}_"), 
-("formations", "{!}_", "{!}_"),  
+("division_placement", "_", "_"), # swy: don't use {!} formatting markers here, the game seemingly doesn't parse them in the game concepts screen, for some reason
+("formations", "_", "_"),  
 
 ]
 
