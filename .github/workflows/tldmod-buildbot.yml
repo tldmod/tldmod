@@ -28,7 +28,7 @@ jobs:
                          sed         \
                          grep        \
                          lib32gcc-s1 \
-                         python2     \
+                         python3     \
                          jq
 
     - name: Find if we're a normal nightly run or a Workshop build
