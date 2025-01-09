@@ -682,17 +682,37 @@ pis_ship                        = 2
 ########################################################
 slot_scene_visited              = 0
 slot_scene_belfry_props_begin   = 10
+slot_scene_loot_1               = 21
+slot_scene_loot_2               = 22
+slot_scene_loot_3               = 23
+slot_scene_loot_4               = 24
+slot_scene_loot_5               = 25
 
 ########################################################
 ##  SCENE PROP SLOTS            #############################
 ########################################################
 scene_prop_open_or_close_slot             = 0 #0= closed, 1=open, 2=destroyed
+slot_prop_active                         = 0 #for general use
 slot_prop_agent_1                      = 1 #stores agent_no of assigned gate aggravator
 slot_prop_agent_2                      = 2 #stores agent_no of secondary agent if needed
 slot_prop_playing_sound                   = 3 #0 or 1, may also store sound channel
 slot_prop_sound                           = 4 #stores sound_ID to play, or sound channel
 slot_prop_temp_hp_1                        = 5 #useful for hidden HP calculations
 slot_prop_temp_hp_2                        = 6 #useful for hidden HP calculations
+
+
+#Viking Conquest patch 1.167 parameters for try_for_prop_instances
+somt_object = 1
+somt_entry = 2
+somt_item = 3
+somt_baggage = 4
+somt_flora = 5
+somt_passage = 6
+somt_spawned_item = 7
+somt_spawned_single_ammo_item = 8
+somt_spawned_unsheathed_item = 9
+somt_shield = 10
+somt_temporary_object = 11
 
 ########################################################
 ##  TROOP SLOTS            #############################

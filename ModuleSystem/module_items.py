@@ -277,9 +277,9 @@ items =[
 #
 #foods (first one is smoked_fish)
 ["human_meat","Human_Flesh",[("human_flesh",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(50)|food_quality(80)|max_ammo(30),imodbits_none],
-["maggoty_bread","Maggoty_Bread",[("maggoty_bread",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,32,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
-["cram","Cram_Ration",[("cram",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,44,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
-["lembas","Lembas",[("lembas",0)],itp_type_goods|itp_consumable,0,200,weight(1.3)|abundance(10)|food_quality(80)|max_ammo(100),imodbits_none],
+["maggoty_bread","Maggoty_Bread",[("khazad_dwarf_cram",0),("maggoty_bread",ixmesh_inventory)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,32,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
+["cram","Cram_Ration",[("khazad_dwarf_cram",0),("cram",ixmesh_inventory)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,44,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
+["lembas","Lembas",[("khazad_dwarf_cram",0),("lembas",0)],itp_type_goods|itp_consumable,0,200,weight(1.3)|abundance(10)|food_quality(80)|max_ammo(100),imodbits_none],
 ["smoked_fish","Smoked_Fish",[("smoked_fish",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,59,weight(15)|abundance(110)|food_quality(50)|max_ammo(50),imodbits_none],
 ["dried_meat","Dried_Meat",[("smoked_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,72,weight(15)|abundance(100)|food_quality(60)|max_ammo(50),imodbits_none],
 ["cattle_meat","Beef",[("raw_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(100)|food_quality(70)|max_ammo(70),imodbits_none],
@@ -295,9 +295,9 @@ items =[
 ["quest_wine","Wine",[("amphora_slim",0)],itp_type_goods,0,46,weight(40)|abundance(60)|max_ammo(50),imodbits_none],
 ["quest_ale","Ale",[("ale_barrel",0)],itp_type_goods,0,31,weight(40)|abundance(70)|max_ammo(50),imodbits_none],
 
-["metal_scraps_bad","Low_grade_metal_scraps",[("weapon_scraps_a",0)],itp_type_goods,0,scrap_bad_value,weight(40)|abundance(0)|0,imodbits_none],
-["metal_scraps_medium","Usable_metal_scraps",[("weapon_scraps_b",0)],itp_type_goods,0,scrap_medium_value/2,weight(40)|abundance(0)|0,imodbits_none],
-["metal_scraps_good","Good_quality_metal_scraps",[("weapon_scraps_c",0)],itp_type_goods,0,scrap_good_value/2,weight(40)|abundance(0)|0,imodbits_none],
+["metal_scraps_bad","Low_grade_metal_scraps",[("weapon_scraps_prop",0),("weapon_scraps_a",ixmesh_inventory)],itp_type_goods,0,scrap_bad_value,weight(40)|abundance(0)|0,imodbits_none],
+["metal_scraps_medium","Usable_metal_scraps",[("weapon_scraps_prop",0),("weapon_scraps_b",ixmesh_inventory)],itp_type_goods,0,scrap_medium_value/2,weight(40)|abundance(0)|0,imodbits_none],
+["metal_scraps_good","Good_quality_metal_scraps",[("weapon_scraps_prop",0),("weapon_scraps_c",ixmesh_inventory)],itp_type_goods,0,scrap_good_value/2,weight(40)|abundance(0)|0,imodbits_none],
 # 
 ###Horses: sumpter horse/ pack horse, saddle horse, steppe horse, warm blood, geldling, stallion,   war mount, charger, 
 ###Carthorse, hunter, heavy hunter, hackney, palfrey, courser, destrier.

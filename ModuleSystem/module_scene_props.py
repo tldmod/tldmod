@@ -5509,6 +5509,101 @@ scene_props = [
     ] or []) + [
     ])]),
 
+("secret_loot_prop",sokf_invisible|sokf_moveable|spr_use_time(2),"sphere_30cm","bo_sphere_30cm", [ 
+    
+    (ti_on_scene_prop_init,[ 
+        (store_trigger_param_1, ":scene_prop"),
+        (set_fixed_point_multiplier, 10000),
+        (prop_instance_get_scale, pos1, ":scene_prop"), 
+        (position_get_scale_z, ":item_type", pos1),
+        (try_begin),
+            ] + (is_a_wb_sceneprop==1 and [ (is_edit_mode_enabled), ] or []) + [ 
+            (eq, ":item_type", 10000), #only show tutorial message if scale is unchanged
+            (display_message, "@{!} debug: closest nearby scene item is given as reward; set var1 as item modifier"),
+            (display_message, "@{!} debug: scale prop to disable this message"),
+        (try_end),
+
+        ] + (is_a_wb_sceneprop==1 and [
+        (store_current_scene, ":cur_scene"),
+        (prop_instance_get_position, pos2, ":scene_prop"),
+        (try_for_range, ":count", 0, 4), #check which prop instance number, compare to slot number. 4 slots allow up to 4 secrets
+            (scene_prop_get_instance, ":instance_no", "spr_secret_loot_prop", ":count"), 
+            (eq, ":scene_prop", ":instance_no",),
+            (store_add, ":loot_slot", slot_scene_loot_1, ":count"),
+            (scene_slot_eq, ":cur_scene", ":loot_slot", 0),
+            (scene_prop_set_slot, ":scene_prop", slot_prop_active, 1),
+        (try_end),
+        
+        (assign, ":min_dist", 60),
+        (try_for_prop_instances, ":scene_item", -1, somt_item),
+            (prop_instance_get_position, pos1, ":scene_item"),
+            (get_distance_between_positions, ":dist", pos1, pos2),
+            (le, ":dist", ":min_dist"),
+            (assign, ":min_dist", ":dist"),
+            (prop_instance_get_scene_prop_kind, ":item_type", ":scene_item"),
+            (scene_prop_set_slot, ":scene_prop", slot_prop_agent_1, ":item_type"),
+            (scene_prop_set_slot, ":scene_prop", slot_prop_agent_2, ":scene_item"),
+        (try_end),
+        
+        (try_begin),
+            (is_edit_mode_enabled), 
+            (is_between, ":item_type", 0, 980),
+            (str_store_item_name, s9, ":item_type"),
+            (display_message, "@{!} debug: secret item: {s9}"),
+        (try_end),
+        
+        (store_random_in_range, ":timer", 70, 110),
+        (prop_instance_animate_to_position, ":scene_prop", pos2, ":timer"), #using Dalion's animation workaround for better particle control
+        ] or []) + [
+         ]),   
+         
+    ] + (is_a_wb_sceneprop==1 and [
+    (ti_on_scene_prop_animation_finished,[  #using Dalion's animation workaround for better particle control
+        (store_trigger_param_1, ":scene_prop"),
+        (scene_prop_slot_eq, ":scene_prop", slot_prop_active, 1),
+        (prop_instance_get_position, pos2, ":scene_prop"),
+        (particle_system_burst, "psys_fire_glow_1_white", pos2, 4),
+        (store_random_in_range, ":timer", 70, 110),
+        (prop_instance_animate_to_position, ":scene_prop", pos2, ":timer"),
+         ]),         
+    
+    (ti_on_scene_prop_use,[
+          (store_trigger_param_2, ":scene_prop"),
+          (prop_instance_get_scale, pos1, ":scene_prop"), 
+          (set_fixed_point_multiplier, 10000), #need high multi to avoid rounding errors
+          (scene_prop_enable_after_time, ":scene_prop", 99999),
+          (store_current_scene, ":cur_scene"),
+          (try_for_range, ":count", 0, 4), #check which prop instance number, compare to slot number. 4 slots allow up to 4 secrets
+            (scene_prop_get_instance, ":instance_no", "spr_secret_loot_prop", ":count"), 
+            (eq, ":scene_prop", ":instance_no",),
+            (store_add, ":loot_slot", slot_scene_loot_1, ":count"),
+            (scene_get_slot, ":loot", ":cur_scene", ":loot_slot"),
+          (try_end),
+          (try_begin),
+            (eq, ":loot", 0), #it's zero by default
+            (scene_prop_get_slot, ":item_type", ":scene_prop", slot_prop_agent_1),
+            (prop_instance_get_variation_id, ":modifier", ":scene_prop"),
+            (gt, ":item_type", 1),
+            (troop_add_item, trp_player, ":item_type", ":modifier"),
+            (scene_prop_get_slot, ":scene_item", ":scene_prop", slot_prop_agent_2),
+            (gt, ":scene_item", 0),
+            (scene_prop_fade_out, ":scene_item", 10000),
+          (else_try),
+            (eq, ":loot", 0),
+            (eq, ":item_type", 0), #backup for unscaled props
+            (troop_add_item, trp_player, "itm_metal_scraps_bad", 0),
+          (else_try),
+            (eq, ":loot", -1), 
+            (display_message, "@Nothing of interest..."),
+          (try_end),
+          (scene_set_slot, ":cur_scene", ":loot_slot", -1),
+          (scene_prop_set_slot, ":scene_prop", slot_prop_active, 0),
+          ])
+    ] or []) + [            
+          ]),
+
+
+
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),
 ("save_compartibility4",0,"0","0", []),

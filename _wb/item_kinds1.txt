@@ -24,13 +24,13 @@ itemsfile version 2
  itm_human_meat Human_Flesh Human_Flesh 1  human_flesh 0  34144267 0 103 0 20 50 80 0 0 0 0 0 0 0 30 0 0
 0
 
- itm_maggoty_bread Maggoty_Bread Maggoty_Bread 1  maggoty_bread 0  34144267 0 32 0 10 100 50 0 0 0 0 0 0 0 50 0 0
+ itm_maggoty_bread Maggoty_Bread Maggoty_Bread 2  khazad_dwarf_cram 0  maggoty_bread 1152921504606846976  34144267 0 32 0 10 100 50 0 0 0 0 0 0 0 50 0 0
 0
 
- itm_cram Cram_Ration Cram_Ration 1  cram 0  34144267 0 44 0 10 100 50 0 0 0 0 0 0 0 50 0 0
+ itm_cram Cram_Ration Cram_Ration 2  khazad_dwarf_cram 0  cram 1152921504606846976  34144267 0 44 0 10 100 50 0 0 0 0 0 0 0 50 0 0
 0
 
- itm_lembas Lembas Lembas 1  lembas 0  33554443 0 200 0 1.25 10 80 0 0 0 0 0 0 0 100 0 0
+ itm_lembas Lembas Lembas 2  khazad_dwarf_cram 0  lembas 0  33554443 0 200 0 1.25 10 80 0 0 0 0 0 0 0 100 0 0
 0
 
  itm_smoked_fish Smoked_Fish Smoked_Fish 1  smoked_fish 0  34144267 0 59 0 15 110 50 0 0 0 0 0 0 0 50 0 0
@@ -57,13 +57,13 @@ itemsfile version 2
  itm_quest_ale Ale Ale 1  ale_barrel 0  11 0 31 0 40 70 0 0 0 0 0 0 0 0 50 0 0
 0
 
- itm_metal_scraps_bad Low_grade_metal_scraps Low_grade_metal_scraps 1  weapon_scraps_a 0  11 0 50 0 40 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_metal_scraps_bad Low_grade_metal_scraps Low_grade_metal_scraps 2  weapon_scraps_prop 0  weapon_scraps_a 1152921504606846976  11 0 50 0 40 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_metal_scraps_medium Usable_metal_scraps Usable_metal_scraps 1  weapon_scraps_b 0  11 0 150 0 40 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_metal_scraps_medium Usable_metal_scraps Usable_metal_scraps 2  weapon_scraps_prop 0  weapon_scraps_b 1152921504606846976  11 0 150 0 40 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_metal_scraps_good Good_quality_metal_scraps Good_quality_metal_scraps 1  weapon_scraps_c 0  11 0 500 0 40 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_metal_scraps_good Good_quality_metal_scraps Good_quality_metal_scraps 2  weapon_scraps_prop 0  weapon_scraps_c 1152921504606846976  11 0 500 0 40 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_oliphant Oliphaunt Oliphaunt 1  oliphant_base 0  1 0 1 16106389504 0 100 0 255 0 255 255 1 1 0 0 244 0

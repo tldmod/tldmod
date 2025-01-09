@@ -1,4 +1,4 @@
-2012
+2016
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_weapon_damaged Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -12,6 +12,9 @@ qstr_{!}_debug:_ambient_s {!}_debug:_ambient_sound_emitter:_stops_all_looping_so
 qstr_{!}_sound_emitter:_v {!}_sound_emitter:_var1_x_10_+_var2_is_sound_no;_scale_x_is_chance_per_3_seconds
 qstr_{!}_suggestions:_247 {!}_suggestions:_247_=_moria_ambiance;_207_=_horror_scream_man;_13_=_sword_clash_1
 qstr_{!}_scale_prop_to_di {!}_scale_prop_to_disable_this_message
+qstr_{!}_debug:_closest_n {!}_debug:_closest_nearby_scene_item_is_given_as_reward;_set_var1_as_item_modifier
+qstr_{!}_debug:_secret_it {!}_debug:_secret_item:_{s9}
+qstr_Nothing_of_interest. Nothing_of_interest...
 qstr_Next_Page Next_Page
 qstr_Action Action
 qstr_Mount Mount
@@ -92,7 +95,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr_{!}_rev_4172_wb__dev {!}_rev_4172_wb_|_dev_^_Built_2025-01-06_22:07___
+qstr_{!}_rev_306_wb__dev_ {!}_rev_306_wb_|_dev_^_Built_2025-01-09_17:29___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -862,6 +865,7 @@ qstr_You_got_{reg1}_exper You_got_{reg1}_experience_in_bear_form.
 qstr_Your_ability_to_chan Your_ability_to_change_skin_has_manifested,_from_now_on_you_can_walk_wild_paths_both_as_man_and_a_bear.
 qstr_You_change_back_to_h You_change_back_to_human_form...
 qstr_Refill_Ammunition Refill_Ammunition
+qstr_Take_a_closer_look.. Take_a_closer_look...
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
