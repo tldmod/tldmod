@@ -4565,6 +4565,7 @@ mission_templates = [ # not used in game
     (assign,"$g_presentation_battle_active", 0),
     (assign,"$telling_counter",0),
     (assign, "$reinforcements_arrived", 0),
+    (assign, "$att_reinforcements_needed", 0),
     (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
     (assign, "$defender_team"  , 0),(assign, "$attacker_team"  , 1),
     (assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3),
@@ -5201,10 +5202,12 @@ mission_templates = [ # not used in game
         (try_begin),
             (this_or_next|eq, "$reinforcements_arrived", 1), #if attacker reinforcement
             (ge,"$attacker_reinforcement_stage",19),
+            (eq, "$att_reinforcements_needed", 0), #this global is otherwise unused in sieges, so let's just use it here
             (neg|agent_is_defender, ":player_agent"), 
             (agent_is_alive, ":player_agent"),
             #(display_message, "@attackers almost defeated!"),
             (question_box,"@Attackers almost defeated. Do you want to retreat?"),
+            (assign, "$att_reinforcements_needed", 1),
         (else_try),
             (agent_is_defender, ":player_agent"), 
             (try_for_agents, ":agent_no"),
