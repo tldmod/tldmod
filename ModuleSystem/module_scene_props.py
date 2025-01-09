@@ -5568,36 +5568,64 @@ scene_props = [
          ]),         
     
     (ti_on_scene_prop_use,[
-          (store_trigger_param_2, ":scene_prop"),
-          (prop_instance_get_scale, pos1, ":scene_prop"), 
-          (set_fixed_point_multiplier, 10000), #need high multi to avoid rounding errors
-          (scene_prop_enable_after_time, ":scene_prop", 99999),
-          (store_current_scene, ":cur_scene"),
-          (try_for_range, ":count", 0, 4), #check which prop instance number, compare to slot number. 4 slots allow up to 4 secrets
+        (store_trigger_param_2, ":scene_prop"),
+        (prop_instance_get_scale, pos1, ":scene_prop"), 
+        (set_fixed_point_multiplier, 10000), #need high multi to avoid rounding errors
+        (scene_prop_enable_after_time, ":scene_prop", 99999),
+        (store_current_scene, ":cur_scene"),
+        (try_for_range, ":count", 0, 4), #check which prop instance number, compare to slot number. 4 slots allow up to 4 secrets
             (scene_prop_get_instance, ":instance_no", "spr_secret_loot_prop", ":count"), 
             (eq, ":scene_prop", ":instance_no",),
             (store_add, ":loot_slot", slot_scene_loot_1, ":count"),
             (scene_get_slot, ":loot", ":cur_scene", ":loot_slot"),
-          (try_end),
-          (try_begin),
-            (eq, ":loot", 0), #it's zero by default
-            (scene_prop_get_slot, ":item_type", ":scene_prop", slot_prop_agent_1),
-            (prop_instance_get_variation_id, ":modifier", ":scene_prop"),
-            (gt, ":item_type", 1),
+        (try_end),
+        (try_begin), #looted already or slot disabled?
+            (eq, ":loot", -1), 
+            (str_store_string, s9, "@Nothing of interest..."),
+        (try_end),
+
+        (eq, ":loot", 0), #loot available? 
+        #get item
+        (scene_prop_get_slot, ":item_type", ":scene_prop", slot_prop_agent_1),
+        (prop_instance_get_variation_id, ":modifier", ":scene_prop"),
+        (try_begin), #backup
+            (lt, ":item_type", 1),
+            (assign, ":item_type", "itm_metal_scraps_bad"),
+            (assign, ":modifier", 0),
+        (try_end),
+        
+        #check conditions
+        (party_get_slot, ":center_relation", "$current_town", slot_center_player_relation),
+        (val_div, ":center_relation", 8),
+        (call_script, "script_get_faction_rank", "$ambient_faction"), 
+        (val_add, ":center_relation", reg0),
+        (item_get_abundance, ":rank_req", ":item_type"), #usually 90 to 100, but 100 equals 0
+        (val_sub, ":rank_req", 100), #-10 to 0
+        (val_mul, ":rank_req", -1), # 0 to 10
+        (val_max, ":rank_req", 1), #1 to 10
+        # (assign, reg78, ":rank_req"),
+        # (display_message, "@rank req: {reg78}"),
+        # (assign, reg78, ":center_relation"),
+        # (display_message, "@center_relation: {reg78}"),
+        
+        (try_begin),
+            (le, ":center_relation", ":rank_req"), 
+            (str_store_string, s9,"@We don't know you enough to give you this..."),
+        (else_try),
+            (ge, ":center_relation", ":rank_req"),  
             (troop_add_item, trp_player, ":item_type", ":modifier"),
+            (try_begin),
+                (faction_slot_eq, "$ambient_faction", slot_faction_side, faction_side_good),
+                (str_store_string, s9,"@Take it, friend, it's yours."),
+            (else_try),
+                (str_store_string, s9,"@Take it, we don't need it anyway."),
+            (try_end),
             (scene_prop_get_slot, ":scene_item", ":scene_prop", slot_prop_agent_2),
             (gt, ":scene_item", 0),
             (scene_prop_fade_out, ":scene_item", 10000),
-          (else_try),
-            (eq, ":loot", 0),
-            (eq, ":item_type", 0), #backup for unscaled props
-            (troop_add_item, trp_player, "itm_metal_scraps_bad", 0),
-          (else_try),
-            (eq, ":loot", -1), 
-            (display_message, "@Nothing of interest..."),
-          (try_end),
-          (scene_set_slot, ":cur_scene", ":loot_slot", -1),
-          (scene_prop_set_slot, ":scene_prop", slot_prop_active, 0),
+        (try_end),
+        (display_message, "@{!}{s9}"),
+        (scene_prop_set_slot, ":scene_prop", slot_prop_active, 0),
           ])
     ] or []) + [            
           ]),

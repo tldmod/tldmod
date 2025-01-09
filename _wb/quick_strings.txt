@@ -1,4 +1,4 @@
-2016
+2020
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_weapon_damaged Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -15,6 +15,10 @@ qstr_{!}_scale_prop_to_di {!}_scale_prop_to_disable_this_message
 qstr_{!}_debug:_closest_n {!}_debug:_closest_nearby_scene_item_is_given_as_reward;_set_var1_as_item_modifier
 qstr_{!}_debug:_secret_it {!}_debug:_secret_item:_{s9}
 qstr_Nothing_of_interest. Nothing_of_interest...
+qstr_We_don_t_know_you_en We_don't_know_you_enough_to_give_you_this...
+qstr_Take_it_friend_it_s_ Take_it,_friend,_it's_yours.
+qstr_Take_it_we_don_t_nee Take_it,_we_don't_need_it_anyway.
+qstr_{!}{s9} {!}{s9}
 qstr_Next_Page Next_Page
 qstr_Action Action
 qstr_Mount Mount
@@ -95,7 +99,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr_{!}_rev_306_wb__dev_ {!}_rev_306_wb_|_dev_^_Built_2025-01-09_17:29___
+qstr_{!}_rev_307_wb__dev_ {!}_rev_307_wb_|_dev_^_Built_2025-01-09_19:34___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
