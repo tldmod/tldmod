@@ -5555,7 +5555,7 @@ scene_props = [
         (store_random_in_range, ":timer", 70, 110),
         (prop_instance_animate_to_position, ":scene_prop", pos2, ":timer"), #using Dalion's animation workaround for better particle control
         ] or []) + [
-         ]),   
+    ]),   
          
     ] + (is_a_wb_sceneprop==1 and [
     (ti_on_scene_prop_animation_finished,[  #using Dalion's animation workaround for better particle control
@@ -5565,12 +5565,12 @@ scene_props = [
         (particle_system_burst, "psys_fire_glow_1_white", pos2, 4),
         (store_random_in_range, ":timer", 70, 110),
         (prop_instance_animate_to_position, ":scene_prop", pos2, ":timer"),
-         ]),         
+    ]),         
     
     (ti_on_scene_prop_use,[
         (store_trigger_param_2, ":scene_prop"),
         (prop_instance_get_scale, pos1, ":scene_prop"), 
-        (set_fixed_point_multiplier, 10000), #need high multi to avoid rounding errors
+        (set_fixed_point_multiplier, 100),
         (scene_prop_enable_after_time, ":scene_prop", 99999),
         (store_current_scene, ":cur_scene"),
         (try_for_range, ":count", 0, 4), #check which prop instance number, compare to slot number. 4 slots allow up to 4 secrets
@@ -5608,7 +5608,16 @@ scene_props = [
         # (assign, reg78, ":center_relation"),
         # (display_message, "@center_relation: {reg78}"),
         
-        (try_begin),
+        (try_begin), #not a town visit? Just take it
+            (store_relation, ":reln", "$g_encountered_party_faction", "fac_player_supporters_faction"),
+            (this_or_next|lt, ":reln", 0),
+            (neg|is_between, "$g_encountered_party", centers_begin, centers_end),
+            (troop_add_item, trp_player, ":item_type", ":modifier"),
+            (str_store_string, s9,"str_empty_string"),
+            (scene_prop_get_slot, ":scene_item", ":scene_prop", slot_prop_agent_2),
+            (gt, ":scene_item", 0),
+            (scene_prop_fade_out, ":scene_item", 100),
+        (else_try),
             (le, ":center_relation", ":rank_req"), 
             (str_store_string, s9,"@We don't know you enough to give you this..."),
         (else_try),
@@ -5622,14 +5631,13 @@ scene_props = [
             (try_end),
             (scene_prop_get_slot, ":scene_item", ":scene_prop", slot_prop_agent_2),
             (gt, ":scene_item", 0),
-            (scene_prop_fade_out, ":scene_item", 10000),
+            (scene_prop_fade_out, ":scene_item", 100),
         (try_end),
         (display_message, "@{!}{s9}"),
         (scene_prop_set_slot, ":scene_prop", slot_prop_active, 0),
-          ])
+    ])
     ] or []) + [            
           ]),
-
 
 
 #("save_compartibility2",0,"0","0", []),

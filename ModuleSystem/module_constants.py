@@ -687,6 +687,10 @@ slot_scene_loot_2               = 22
 slot_scene_loot_3               = 23
 slot_scene_loot_4               = 24
 slot_scene_loot_5               = 25
+slot_scene_loot_6               = 26
+slot_scene_loot_7               = 27
+slot_scene_loot_8               = 28
+slot_scene_loot_9               = 29
 
 ########################################################
 ##  SCENE PROP SLOTS            #############################
