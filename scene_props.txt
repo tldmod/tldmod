@@ -5817,19 +5817,19 @@ spr_Dale_Bell 0 0 Dale_bell 0 0
 spr_village_wall 0 0 village_wall bo_village_wall 0
 
 
-spr_well_shaft 0 0 well_shaft bo_well_shaft 0
+spr_well_shaft 0 0 well_shaft_new bo_well_shaft 0
 
 
-spr_small_wall_f 0 0 small_wall_f bo_small_wall_f 0
+spr_small_wall_f 0 0 small_wall_f_new bo_small_wall_f 0
 
 
-spr_small_wall_f2 0 0 small_wall_f2 bo_small_wall_f2 0
+spr_small_wall_f2 0 0 small_wall_f2_new bo_small_wall_f2 0
 
 
 spr_gon_small_wall_a_1 0 0 arabian_wall_a bo_arabian_wall_a 0
 
 
-spr_stairs_a 0 0 stairs_a bo_stairs_a 0
+spr_stairs_a 0 0 stairs_a_new bo_stairs_a 0
 
 
 spr_animal_goat 16384 0 bry_goat 0 1
@@ -6023,7 +6023,7 @@ spr_gon_well_d_cwe 0 0 damask_kolodec_d bo_damask_kolodec_d 0
 spr_gon_well_e_cwe 0 0 df bo_df 0
 
 
-spr_gon_well_f 0 0 fountain bo_fountain 0
+spr_gon_well_f 0 0 fountain_gon bo_fountain 0
 
 
 spr_gondor_palace_cwe 0 0 cwe_royal_Palace_a bo_cwe_royal_Palace_a 0

@@ -3533,11 +3533,11 @@ scene_props = [
 ("Dale_Bell",0,"Dale_bell","0", []),
 
 ( "village_wall"                               ,0,"village_wall","bo_village_wall",[]), #some more native WB props (replace in MB)
-( "well_shaft"                                 ,0,"well_shaft","bo_well_shaft",[]),
-( "small_wall_f"                               ,0,"small_wall_f","bo_small_wall_f",[]),
-( "small_wall_f2"                              ,0,"small_wall_f2","bo_small_wall_f2",[]),
+( "well_shaft"                                 ,0,"well_shaft_new","bo_well_shaft",[]),
+( "small_wall_f"                               ,0,"small_wall_f_new","bo_small_wall_f",[]),
+( "small_wall_f2"                              ,0,"small_wall_f2_new","bo_small_wall_f2",[]),
 ( "gon_small_wall_a_1"                           ,0,"arabian_wall_a","bo_arabian_wall_a",[]),
-( "stairs_a"                                   ,0,"stairs_a","bo_stairs_a",[]),
+( "stairs_a"                                   ,0,"stairs_a_new","bo_stairs_a",[]),
 
 
 ("animal_goat",sokf_invisible,"bry_goat","0", [(ti_on_init_scene_prop,[
@@ -3805,7 +3805,7 @@ scene_props = [
 ( "gon_well_c_cwe"                          ,0,"damask_kolodec_c","bo_damask_kolodec_c",[]),
 ( "gon_well_d_cwe"                               ,0,"damask_kolodec_d","bo_damask_kolodec_d",[]),
 ( "gon_well_e_cwe"                       ,0,"df","bo_df",[]),
-( "gon_well_f"                           ,0,"fountain","bo_fountain",[]),
+( "gon_well_f"                           ,0,"fountain_gon","bo_fountain",[]),
 
 ( "gondor_palace_cwe"                       ,0,"cwe_royal_Palace_a","bo_cwe_royal_Palace_a",[]),
 ( "gondor_tower_8_cwe"                      ,0,"damask_watch_tower_a","bo_damask_watch_tower_a",[]),
