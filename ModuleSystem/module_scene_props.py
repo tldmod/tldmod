@@ -164,7 +164,7 @@ scene_props = [
 ("ai_limiter_4m" ,sokf_invisible|sokf_type_ai_limiter,"barrier_4m" ,"bo_barrier_4m" , []),
 ("ai_limiter_8m" ,sokf_invisible|sokf_type_ai_limiter,"barrier_8m" ,"bo_barrier_8m" , []),
 ("ai_limiter_16m",sokf_invisible|sokf_type_ai_limiter,"barrier_16m","bo_barrier_16m", []),
-("Shield",sokf_dynamic,"0","boshield", []),
+("barrier_player_8m",sokf_invisible|sokf_type_player_limiter,"barrier_8m","bo_barrier_8m", []),
 ("shelves",0,"shelves","boshelves", []),
 ("table_tavern",0,"table_tavern","botable_tavern", []),
 ("table_castle_a",0,"table_castle_a","bo_table_castle_a", []),
@@ -5236,6 +5236,7 @@ scene_props = [
     [(particle_system_add_new, "psys_moon_beam_1"),
     #(particle_system_add_new, "psys_moon_beam_paricle_1") #separate prop now
     ])]),
+    
 ("secret_guardian",sokf_invisible,"arrow_helper_blue","0", [
     (ti_on_init_scene_prop,[
     ] + (is_a_wb_sceneprop==1 and [     
@@ -5249,15 +5250,29 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", slot_town_castle_guard_troop),
     (try_end),
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
-    (assign, ":agent", reg0),    
+    (assign, ":agent", reg0),
+    (try_begin), #remove horse
+        (agent_get_horse, ":horse", reg0),
+        (gt, ":horse", 0),
+        (remove_agent, ":horse"),
+        (agent_set_visibility, ":horse", 0),
+    (try_end),
+    
     (agent_set_team, ":agent", 0),(agent_set_stand_animation, ":agent", "anim_stand"),
     (store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, ":agent", reg6),
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, ":agent"),
     (agent_set_slot, ":agent", slot_agent_secret_guardian, 1),
-    # (position_rotate_z, pos1, 180),
-    # (set_spawn_position, pos1),
-    # (spawn_scene_prop, "spr_barrier_8m"),
-    # (agent_set_slot, ":agent", slot_agent_assigned_prop, reg0),
+
+    #tutorial
+    (set_fixed_point_multiplier, 10000),
+    (prop_instance_get_scale, pos1, ":instance_no"), 
+    (position_get_scale_z, ":scale", pos1),
+    (try_begin),
+        (eq, ":scale", 10000), #only show tutorial message if scale is unchanged
+        (is_edit_mode_enabled),
+        (display_message, "@{!} debug: var1 = check number for script; var2 = rank requirement"),
+        (display_message, "@{!} debug: scale prop to disable this message"),
+    (try_end),
     ] or []) + [  
  
   ])]),
@@ -5573,7 +5588,7 @@ scene_props = [
         (set_fixed_point_multiplier, 100),
         (scene_prop_enable_after_time, ":scene_prop", 99999),
         (store_current_scene, ":cur_scene"),
-        (try_for_range, ":count", 0, 4), #check which prop instance number, compare to slot number. 4 slots allow up to 4 secrets
+        (try_for_range, ":count", 0, 9), #check which prop instance number, compare to slot number. 9 slots allow up to 9 secrets
             (scene_prop_get_instance, ":instance_no", "spr_secret_loot_prop", ":count"), 
             (eq, ":scene_prop", ":instance_no",),
             (store_add, ":loot_slot", slot_scene_loot_1, ":count"),
@@ -5582,6 +5597,12 @@ scene_props = [
         (try_begin), #looted already or slot disabled?
             (eq, ":loot", -1), 
             (str_store_string, s9, "@Nothing of interest..."),
+        (try_end),
+        (try_begin), #free inventory capacity?
+            (store_free_inventory_capacity, ":inventory", trp_player),
+            (lt, ":inventory", 1),
+            (assign, ":loot", -1), 
+            (str_store_string, s9, "@No inventory space..."),
         (try_end),
 
         (eq, ":loot", 0), #loot available? 

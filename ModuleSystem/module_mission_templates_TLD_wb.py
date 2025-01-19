@@ -5337,6 +5337,7 @@ tld_points_of_interest = [
 
     (try_for_prop_instances, ":instance_no", "spr_secret_guardian"), #guardians, can also be used for persons of interest, very nice!
         (prop_instance_get_variation_id, ":var1", ":instance_no"),
+        (prop_instance_get_variation_id, ":var2", ":instance_no"),
         (prop_instance_get_position, pos5, ":instance_no"),
         (get_distance_between_positions, ":dist", pos4, pos5),
         (assign, ":speak_dist", 0),
@@ -5363,6 +5364,22 @@ tld_points_of_interest = [
             (assign, ":rank_req", 40),
             (assign, ":speak_dist", 500),
             (str_store_string, s1, "@Halt! You are not allowed to enter here without the Lady's leave!"),
+        (else_try),
+            (eq, ":scene", scn_umbar_camp_center),
+            (eq, ":var1", 1),
+            (party_slot_eq, "$current_town", slot_exploration_point_1, 0),
+            (assign, ":rank_req", 2),
+            (assign, ":speak_dist", 500),
+        (else_try),
+            (eq, ":scene", scn_harad_camp_center),
+            (eq, ":var1", 1),
+            (party_slot_eq, "$current_town", slot_exploration_point_1, 0),
+            (assign, ":rank_req", 2),
+            (assign, ":speak_dist", 500),
+        (else_try), #fallback
+            (party_slot_eq, "$current_town", slot_exploration_point_1, 0),
+            (assign, ":rank_req", ":var2"),
+            (assign, ":speak_dist", 500),            
         (try_end), 
 
         (scene_prop_get_slot, ":agent", ":instance_no", slot_prop_agent_1),
@@ -5372,7 +5389,7 @@ tld_points_of_interest = [
             (agent_slot_eq, ":agent", slot_agent_assigned_prop, 0),
             (position_rotate_z, pos5, 180),
             (set_spawn_position, pos5),
-            (spawn_scene_prop, "spr_barrier_8m"),
+            (spawn_scene_prop, "spr_barrier_player_8m"),
             (agent_set_slot, ":agent", slot_agent_assigned_prop, reg0),
         (try_end),
 

@@ -7334,8 +7334,8 @@ game_menus = [
 
 
 ( "moria_must_escape",city_menu_color, # dungeon crawl: way out of moria
- "^^The book seems to give the account of the last attempt of dwarves to resettle in Moria.\
- Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate, \
+ "^^The book seems to give the account of the last attempt of dwarves to resettle in Moria,\
+ which apparently ended with gruesome death for all involved. As you ponder their dark fate, \
  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^ \
  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction, \
  into a narrow winding tunnel and down... \
