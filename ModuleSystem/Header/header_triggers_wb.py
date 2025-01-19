@@ -69,6 +69,9 @@ ti_on_scene_prop_cancel_use = -48.0 #can only be used in module_scene_props trig
  # Trigger Param 1: user agent id
  # Trigger Param 2: prop instance number
 
+ti_scene_prop_deformation_finished  = -76.0 # Deformation sequence has been completed for a scene prop.
+    # trigger param 1 = prop instance_id reference
+
 ti_on_init_item          = -50.0 #can only be used in module_items triggers
 ti_on_weapon_attack      = -51.0 #can only be used in module_items triggers
  # Trigger Param 1: attacker agent id

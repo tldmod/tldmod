@@ -5639,6 +5639,104 @@ scene_props = [
     ] or []) + [            
           ]),
 
+] + (is_a_wb_sceneprop==1 and [ 
+  ("secret_viewpoint", sokf_invisible|sokf_moveable|spr_use_time(1), "arrow_helper_blue", "bo_spike_a", [
+    (ti_on_scene_prop_init,[
+        (store_trigger_param_1, ":instance_no"),
+        (prop_instance_deform_in_range, ":instance_no", 0, 100, 1000), #workaround for particle effect
+        (set_fixed_point_multiplier, 10000),
+        (prop_instance_get_scale, pos1, ":instance_no"), 
+        (position_get_scale_z, ":scale", pos1),
+        (try_begin),
+            (eq, ":scale", 10000), #only show tutorial message if scale is unchanged
+            (is_edit_mode_enabled),
+            (display_message, "@{!} debug: scale y = radius // scale z = elevation"),
+            (display_message, "@{!} debug: scale prop to disable this message"),
+        (try_end),
+    ]),
+
+    (ti_scene_prop_deformation_finished,[ #workaround for particle effect
+        (store_trigger_param_1, ":instance_no"),
+        (scene_prop_slot_eq, ":instance_no", slot_prop_active, 0),
+        (prop_instance_get_position, pos2, ":instance_no"),
+        (particle_system_burst, "psys_moon_beam_1", pos2, 4),
+        (store_random_in_range, ":timer", 700, 1100),    
+        (prop_instance_deform_in_range, ":instance_no", 0, 100, ":timer"), #workaround for particle effect
+    ]),
+    
+    (ti_on_scene_prop_use,[
+      (store_trigger_param_2, ":instance_no"),
+      #(scene_prop_set_visibility, ":instance_no", 0),
+      (set_fixed_point_multiplier, 100),
+      (scene_prop_enable_after_time, ":instance_no", 10),
+      (prop_instance_get_position, pos1, ":instance_no"),
+      (prop_instance_get_scale, pos2, ":instance_no"),
+      (position_get_scale_y, ":radius", pos2),
+      (val_mul, ":radius", 10),
+      (position_get_scale_z, ":elevation", pos2),
+      (val_mul, ":elevation", 10),
+      (val_sub, ":elevation", 1000),
+      (store_div, ":tilt", ":elevation", -100), #camera tilts against elevation
+      (position_rotate_z, pos1, 45), #starting rotation offset
+      (position_move_y, pos1, ":radius"), #radius
+      (position_move_z, pos1, ":elevation"),
+      (position_rotate_z, pos1, 180), #look back
+      (position_rotate_x, pos1, ":tilt"),
+      (prop_instance_animate_to_position, ":instance_no", pos1, 160),
+      (scene_prop_set_slot, ":instance_no", slot_prop_active, -1), #starting rotation
+      (mission_cam_set_mode, 1, 0, 0),
+      (agent_set_speed_modifier, "$current_player_agent", 0),
+      (set_camera_in_first_person, 0), 
+      (mission_cam_animate_to_position, pos1, 1700, 0),
+    ]),
+    
+    (ti_on_scene_prop_animation_finished,[
+      (store_trigger_param_1, ":instance_no"),
+      (set_fixed_point_multiplier, 100),
+      (prop_instance_get_starting_position, pos1, ":instance_no"),
+      (prop_instance_get_scale, pos2, ":instance_no"),
+      (position_get_scale_y, ":radius", pos2),
+      (val_mul, ":radius", 10),
+      (position_get_scale_z, ":elevation", pos2),
+      (val_mul, ":elevation", 10),
+      (val_sub, ":elevation", 1000),
+      # (assign, reg78, ":elevation"),
+      # (display_message, "@elevation: {reg78}"),      
+      (store_div, ":tilt", ":elevation", -100),  #camera tilts against elevation
+      # (assign, reg78, ":tilt"),
+      # (display_message, "@tilt: {reg78}"),
+      (scene_prop_get_slot, ":rotation", ":instance_no", slot_prop_active),
+      (try_begin),
+        (gt, ":rotation", -10),
+        (call_script, "script_scene_viewpoint_effect"),
+      (try_end),
+      (le, ":rotation", -1),
+      (val_sub, ":rotation", 10), #counter-clockwise
+      (position_rotate_z, pos1, 45), #starting rotation offset
+      (position_rotate_z, pos1, ":rotation"),
+      (position_move_y, pos1, ":radius"), #radius
+      (position_move_z, pos1, ":elevation"),
+      (position_rotate_z, pos1, 180), #look back
+      (position_rotate_x, pos1, ":tilt"),
+      (prop_instance_animate_to_position, ":instance_no", pos1, 50),
+      # (position_get_z, reg78, pos1),
+      # (display_message, "@camera height: {reg78}"),
+      (mission_cam_animate_to_position, pos1, 600, 0),
+      # (assign, reg78, ":rotation"),
+      # (display_message, "@rotation: {reg78}"),
+      (scene_prop_set_slot, ":instance_no", slot_prop_active, ":rotation"),
+      (lt, ":rotation", -225), #don't go a full circle
+      (scene_prop_set_slot, ":instance_no", slot_prop_active, 0),
+      (prop_instance_get_starting_position, pos1, ":instance_no"),
+      (prop_instance_stop_animating, ":instance_no"),
+      (prop_instance_set_position, ":instance_no", pos1),
+      (mission_cam_set_mode, 0, 1600, 0),
+      (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi"), #assuming we're not in battle
+      (prop_instance_deform_in_range, ":instance_no", 0, 100, 100),
+    ]),
+    ]),
+       ] or [("secret_viewpoint", sokf_invisible|sokf_moveable, "arrow_helper_blue", "bo_sphere_30cm", []),]) + [  
+
 
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),

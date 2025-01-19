@@ -682,6 +682,7 @@ pis_ship                        = 2
 ########################################################
 slot_scene_visited              = 0
 slot_scene_belfry_props_begin   = 10
+slot_scene_viewpoint            = 20
 slot_scene_loot_1               = 21
 slot_scene_loot_2               = 22
 slot_scene_loot_3               = 23

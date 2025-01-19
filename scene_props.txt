@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 2093
+ 2094
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -6407,6 +6407,9 @@ spr_banner_stand_auto 0 0 battle_banner_stand_a_auto 0 1
 
 spr_secret_loot_prop 536952832 512 sphere_30cm bo_sphere_30cm 1
 -40  9 2071 1 1224979098644774912 2124 1 10000 1852 2 1 1224979098644774912 737 2 1224979098644774913 1 4 0 31 2 1224979098644774913 10000 1106 1 1585267068834414603 1106 1 1585267068834414596 3 0 
+
+
+spr_secret_viewpoint 81920 0 arrow_helper_blue bo_sphere_30cm 0
 
 
 spr_save_compartibility4 0 0 0 0 0

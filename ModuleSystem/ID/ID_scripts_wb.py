@@ -764,5 +764,6 @@ script_reset_battle_size = 762
 script_game_get_use_string = 763
 script_lookat = 764
 script_animate_town_agents = 765
+script_scene_viewpoint_effect = 766
 
 
