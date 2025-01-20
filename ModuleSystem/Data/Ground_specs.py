@@ -20,7 +20,7 @@ ground_specs = [
     ("desert",gtf_overlay|gtf_dusty|gtf_has_color,"ground_desert", 2.5,"ground_forest_under_desert",(0.2,0.2,0.2)), #(1.4,1.2,0.4)
     ("forest",gtf_overlay|gtf_has_color,"ground_forest",4.2,"ground_earth_under_grass",(0.4,0.4,0.4)), #(0.6,0.42,0.28)
     ("pebbles",gtf_overlay|gtf_has_color,"pebbles",8.1,"ground_pebbles_under_path",(0.7,0.7,0.7)),
-    ("village",gtf_overlay|gtf_has_color,"ground_village",16.0,"ground_village_under_path",(0.7,0.7,0.7)), #(1.0,0.9,0.59)
+    ("village",gtf_overlay|gtf_has_color,"ground_village",24.0,"ground_village_under_path",(0.7,0.7,0.7)), #(1.0,0.9,0.59)
     ("path",gtf_overlay|gtf_dusty|gtf_has_color,"ground_path",6.0,"none",(0.3,0.3,0.3)), #(0.93,0.68,0.34)
 ]
 
