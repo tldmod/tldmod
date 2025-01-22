@@ -12713,7 +12713,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 #TODO: Set slot_center_rumor_check_begin, set an agent slot to define dialog afterwards, set another center slot if successful
 [anyone,"town_dweller_ask_rumor", [
-    (is_between, "$g_talk_troop", soldiers_begin, soldiers_end),
+    (is_between, "$g_talk_troop", trp_i1_woodmen_man, trp_c5_mordor_num_knight), #this range doesn't catch _all_ troops but should work fine for this feature. 
     (faction_get_slot, ":rank", "$ambient_faction", slot_faction_rank),
     (party_get_slot, ":rel", "$current_town", slot_center_player_relation),
     (val_mul, ":rank", 10),
