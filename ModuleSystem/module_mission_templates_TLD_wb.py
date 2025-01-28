@@ -3656,11 +3656,18 @@ battle_encounters_effects = [
 
 (ti_before_mission_start, 0, ti_once, [
 
-    (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
+    (party_slot_ge, "p_main_party", slot_party_battle_encounter_effect, 1),
 
   ],[
 
-  (set_rain, 1, 500),
+    (try_begin),
+        (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
+        (set_rain, 1, 300),
+        (set_skybox, 10, 11),
+    (else_try),
+        (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SAURON_DARKNESS),
+        (set_skybox, 10, 11),
+    (try_end),
 
 ]),
 
@@ -3670,7 +3677,7 @@ battle_encounters_effects = [
   (neq, ":encounter_effect", NO_EFFECT_PRESENT),
 
   ],[
-
+  (set_fixed_point_multiplier, 1000),
   (party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
   (assign, ":fog_str", 500), #default
 
@@ -3681,27 +3688,31 @@ battle_encounters_effects = [
 
   (try_begin),
     (eq, ":encounter_effect", LORIEN_MIST),
-    #(set_rain, 2,500), #yellow thingies in elven places
+    (set_startup_ambient_light, 45, 45, 30),
     (set_fog_distance,":fog_str",0xFFF09D),
     #(display_message, "@{!}DEBUG: LORIEN_MIST"),
     (call_script, "script_lorien_mist_effect"), 
   (else_try),
     (eq, ":encounter_effect", SAURON_DARKNESS),
+    (set_startup_sun_light, 10, 10, 10),(set_startup_ambient_light, 30, 30, 30),
     (set_fog_distance,":fog_str",0x212020),
-    (store_random_in_range, ":cloud_amount", 65, 90),
-    (set_global_cloud_amount, ":cloud_amount"),
     #(display_message, "@{!}DEBUG: SAURON_DARKNESS"),
     (call_script, "script_sauron_darkness_effect"), 
   (else_try),
     (eq, ":encounter_effect", SARUMAN_STORM),
-    #(set_rain, 1,300), 
-    (set_fog_distance, 500, 0x010101),
-    (store_random_in_range, ":cloud_amount", 65, 90),
-    (set_global_cloud_amount, ":cloud_amount"),
+    (set_startup_sun_light, 10, 10, 10),(set_startup_ambient_light, 30, 30, 30),
+    (try_begin),
+        (is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,900,0x777777),
+     (else_try),
+        (is_currently_night),(set_fog_distance,700,0x777777),
+     (else_try),
+        (set_fog_distance,1200,0x999999),
+    (try_end),
     #(display_message, "@{!}DEBUG: SARUMAN_STORM"),
     (call_script, "script_saruman_storm_effect"), 
   (else_try),
     (eq, ":encounter_effect", GULDUR_FOG),
+    (set_startup_sun_light, 15, 25, 15),(set_startup_ambient_light, 30, 45, 30),
     (set_fog_distance,":fog_str",0x4B6047),
     #(display_message, "@{!}DEBUG: GULDUR_FOG"),
     (call_script, "script_guldur_fog_effect"), 
@@ -3712,12 +3723,12 @@ battle_encounters_effects = [
 
 # Thunder storms
   
-  (3, 0.2, 5, [(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (store_random_in_range,":rnd",1,4),(eq,":rnd",1),(set_fog_distance, 200, 0xaaaaaa),],
+  (3, 0.2, 5, [(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (set_fixed_point_multiplier, 100),(store_random_in_range,":rnd",1,8),(eq,":rnd",1),(set_fog_distance, 150, 0xFFFFFF),],
         [(set_fog_distance, 500, 0x010101),(get_player_agent_no,":plyr"),(agent_play_sound, ":plyr", "snd_thunder"),(assign, "$lightning_cycle",1),]),
-  (0.4,0.1, 5,[(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (eq,"$lightning_cycle",1),(set_fog_distance, 650, 0x777777),],   ###### Lightning afterflashes 
+  (0.4,0.1, 5,[(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (eq,"$lightning_cycle",1),(set_fixed_point_multiplier, 100),(set_fog_distance, 650, 0x777777),],   ###### Lightning afterflashes 
         [(set_fog_distance, 500, 0x010101),(assign,"$lightning_cycle",2),]),
-  (0.5,0.1, 5,[(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (eq,"$lightning_cycle",2),(set_fog_distance, 620, 0x555555),],
-        [(set_fog_distance, 500, 0x010101),(assign,"$lightning_cycle",0),]),
+  (0.5,0.1, 5,[(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (eq,"$lightning_cycle",2),(set_fixed_point_multiplier, 100),(set_fog_distance, 620, 0x555555),],
+        [(set_fog_distance,100000,0x999999),(assign,"$lightning_cycle",0),]),
 
 
 # check for Fellbeast chance at battle start

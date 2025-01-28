@@ -95,7 +95,7 @@ bright_nights= ((is_a_wb_mt==1) and [
   (ti_after_mission_start, 0, 2,
     [ (eq, "$bright_nights", 1),
       (is_currently_night),
-      (neg|party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), # Make it dark during Saruman Storm
+      #(neg|party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), # Make it dark during Saruman Storm
       ],[
       (set_fixed_point_multiplier, 1000),
       (set_startup_ambient_light,44,92,134), #27,46,67 
@@ -6204,8 +6204,13 @@ mission_templates = [ # not used in game
      ],
     tld_common_wb_muddy_water+
     tld_common_battle_scripts+[
-	common_battle_mission_start,
+    (ti_before_mission_start, 0, 0, [],[
+        (team_set_relation, 0, 2, 1),
+        (team_set_relation, 1, 3, 1),
+        (call_script, "script_change_banners_and_chest"),
+	]),
 	(0, 0, ti_once,[ (assign, "$defender_team", 0),(assign, "$attacker_team", 1),(assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3)], []),
+    
 	common_custom_battle_tab_press,
 	common_custom_battle_question_answered,
 	common_inventory_not_available,

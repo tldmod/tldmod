@@ -605,26 +605,6 @@ tld_fix_viewpoint = (0,0,0,[],[
   (try_end),
 ])
 
-common_battle_mission_start = (ti_before_mission_start, 0, 0, [],[
-	(team_set_relation, 0, 2, 1),
-	(team_set_relation, 1, 3, 1),
-	(call_script, "script_change_banners_and_chest"),
-	#(set_rain, 0,100), # switch off ingame weather
-	] + ((is_a_wb_mt==1) and [
-	(party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
-	(try_begin),
-		(eq, ":encounter_effect", LORIEN_MIST),
-		(set_rain, 2,500), #yellow thingies in elven places
-	(else_try),
-		(eq, ":encounter_effect", SARUMAN_STORM),
-		(set_rain, 1,300),
-	(else_try),
-		(set_rain, 0, 100),
-	(try_end),
-	
-	] or [(set_rain, 0, 100)]) + [
-	])
-
 common_battle_tab_press = (ti_tab_pressed, 0, 0, [],[
 	(try_begin),
 		(eq, "$battle_won", 1),

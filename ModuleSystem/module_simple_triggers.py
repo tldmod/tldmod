@@ -3958,47 +3958,34 @@ simple_triggers = [
   (5, [
 
 ] + (is_a_wb_trigger==1 and [
-    (assign, ":continue", 0),
     (ge, "$tld_war_began", 1), #Only happens during war
-
     (eq, "$battle_encounter_effects", 1), #Toggle
+    (set_fixed_point_multiplier, 100),
 
-    (try_begin),
-      (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, NO_EFFECT_PRESENT),
-      (store_random_in_range, ":rand_prob", 0, 100),
-      (le, ":rand_prob", 65), #65% base chance of happening. 
-      (assign, ":continue", 1),
-    (else_try),
-      (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, NO_EFFECT_PRESENT),
-      (set_global_cloud_amount, 0), # Clear Cloudiness
-      #(display_message, "@EFFECTS CLEARED", color_bad_news),
+    # (call_script, "script_get_region_of_party", "p_main_party"),
+    # (assign, ":region", reg1),
+    (party_get_position, pos5, "p_main_party"),    
+    
+    #slowly reduce cloudiness and haze
+    (try_for_range_backwards, ":limit", 95, 70),
+        (get_global_haze_amount, ":haze"),
+        (ge, ":haze", ":limit"),
+        (val_sub, ":haze", 10), #reduce in steps
+        (set_global_haze_amount, ":haze"),
+        (assign, ":limit", 60), #break loop
     (try_end),
-
-    (eq, ":continue", 1),
-
-
-    (call_script, "script_get_region_of_party", "p_main_party"),
-    (assign, ":region", reg1),
-
-    (faction_get_slot, ":mordor_strength", "fac_mordor", slot_faction_strength),
-    (store_div, ":chance_darkness", ":mordor_strength", 200),
-
-    (faction_get_slot, ":isengard_strength", "fac_isengard", slot_faction_strength),
-    (store_div, ":chance_storm", ":isengard_strength", 200),
-
-    (faction_get_slot, ":guldur_strength", "fac_guldur", slot_faction_strength),
-    (store_div, ":chance_fog", ":guldur_strength", 200),
-
-    (faction_get_slot, ":lorien_strength", "fac_lorien", slot_faction_strength),
-    (store_div, ":chance_mist", ":lorien_strength", 200),
 
     (store_random_in_range, ":random_chance", 0, 100),
 
-    (party_get_position, pos5, "p_main_party"),
-
-    
     (try_begin), # LORIEN MIST
       (faction_slot_eq, "fac_lorien", slot_faction_state, sfs_active),
+      (faction_get_slot, ":lorien_strength", "fac_lorien", slot_faction_strength),
+      (store_div, ":chance_mist", ":lorien_strength", 300),
+      (try_begin), #if effect is active
+        (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, LORIEN_MIST),
+        (assign, ":chance_mist", 80),
+      (try_end),
+      (lt, ":random_chance", ":chance_mist"),
       (party_get_position, pos6, "p_town_caras_galadhon"),
       (party_get_position, pos7, "p_town_cerin_dolen"),
       (party_get_position, pos8, "p_town_cerin_amroth"),
@@ -4017,21 +4004,49 @@ simple_triggers = [
         (assign, ":continue_lorien", 1),
       (try_end),
       (eq, ":continue_lorien", 1),
-      (lt, ":random_chance", ":chance_mist"),
       (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, LORIEN_MIST),
+      (set_global_haze_amount, 80),
       #(display_message, "@LORIEN_MIST", color_good_news),
-
     
     (else_try), #SAURON DARKNESS
       (faction_slot_eq, "fac_mordor", slot_faction_state, sfs_active),
-      (this_or_next|eq, ":region", region_dagorlad),
-      (is_between, ":region", region_n_ithilien, region_druadan_forest),
+      (faction_get_slot, ":mordor_strength", "fac_mordor", slot_faction_strength),
+      (store_div, ":chance_darkness", ":mordor_strength", 300),
+      (try_begin),
+        (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SAURON_DARKNESS),
+        (assign, ":chance_darkness", 80),
+      (try_end),
+      (party_get_position, pos6, "p_town_morannon"),
+      (party_get_position, pos7, "p_town_minas_morgul"),
+      (assign, ":continue_mordor", 0),
+      (try_begin),
+        (get_distance_between_positions_in_meters, ":distance_mordor", pos5, pos6),
+        (le, ":distance_mordor", 60),
+        (assign, ":continue_mordor", 1),
+      (else_try),
+        (get_distance_between_positions_in_meters, ":distance_mordor", pos5, pos7),
+        (le, ":distance_mordor", 60),
+        (assign, ":continue_mordor", 1),
+      (try_end),
+      # (assign, reg78, ":distance_mordor"),
+      # (display_message, "@distance mordor: {reg78}"),
+      (eq, ":continue_mordor", 1),
+      # (assign, reg78, ":chance_darkness"),
+      # (display_message, "@chance_darkness : {reg78}"),      
       (lt, ":random_chance", ":chance_darkness"),
       (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, SAURON_DARKNESS),
+      (set_global_haze_amount, 60),
+      (set_global_cloud_amount, 95),
       #(display_message, "@SAURON_DARKNESS", color_good_news),
 
     (else_try), #SARUMAN STORM
       (faction_slot_eq, "fac_isengard", slot_faction_state, sfs_active),
+      (faction_get_slot, ":isengard_strength", "fac_isengard", slot_faction_strength),
+      (store_div, ":chance_storm", ":isengard_strength", 300),
+      (try_begin),
+        (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
+        (assign, ":chance_storm", 80),
+      (try_end),
       (party_get_position, pos6, "p_town_isengard"),
       (party_get_position, pos7, "p_town_troll_cave"),
       (party_get_position, pos8, "p_town_moria"),
@@ -4039,29 +4054,36 @@ simple_triggers = [
       (assign, ":continue_saruman", 0),
       (try_begin),
         (get_distance_between_positions_in_meters, ":distance_saruman", pos5, pos6),
-        (le, ":distance_saruman", 200),
+        (le, ":distance_saruman", 60),
         (assign, ":continue_saruman", 1),
       (else_try),
         (get_distance_between_positions_in_meters, ":distance_saruman", pos5, pos7),
-        (le, ":distance_saruman", 200),
+        (le, ":distance_saruman", 60),
         (assign, ":continue_saruman", 1),
       (else_try),
         (get_distance_between_positions_in_meters, ":distance_saruman", pos5, pos8),
-        (le, ":distance_saruman", 200),
+        (le, ":distance_saruman", 60),
         (assign, ":continue_saruman", 1),
       (else_try),
         (get_distance_between_positions_in_meters, ":distance_saruman", pos5, pos9),
-        (le, ":distance_saruman", 200),
+        (le, ":distance_saruman", 60),
         (assign, ":continue_saruman", 1),
       (try_end),
       (eq, ":continue_saruman", 1),
       (lt, ":random_chance", ":chance_storm"),
       (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
-      (set_rain, 1, 500),
+      (set_global_haze_amount, 80),
+      (set_global_cloud_amount, 80),
       #(display_message, "@DEBUG: SARUMAN_STORM", color_good_news),
 
     (else_try), #GULDUR FOG
       (faction_slot_eq, "fac_guldur", slot_faction_state, sfs_active),
+      (faction_get_slot, ":guldur_strength", "fac_guldur", slot_faction_strength),
+      (store_div, ":chance_fog", ":guldur_strength", 300),
+      (try_begin),
+        (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, GULDUR_FOG),
+        (assign, ":chance_fog", 80),
+      (try_end),
       (party_get_position, pos6, "p_town_dol_guldur"),
       (party_get_position, pos7, "p_town_dol_guldur_north_outpost"),
       (assign, ":continue_guldur", 0),
@@ -4077,7 +4099,13 @@ simple_triggers = [
       (eq, ":continue_guldur", 1),
       (lt, ":random_chance", ":chance_fog"),
       (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, GULDUR_FOG),
+      (set_global_haze_amount, 80),
+      (set_global_cloud_amount, 80),
       #(display_message, "@DEBUG: GULDUR_FOG", color_good_news),
+      
+    (else_try),  #NO EFFECT
+        (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, NO_EFFECT_PRESENT),
+        #(display_message, "@DEBUG: NO EFFECT", color_good_news),
     
     (try_end),
   ] or [ ]) + [
