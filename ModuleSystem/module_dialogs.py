@@ -3574,10 +3574,22 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
                          (eq,":lords_quest","qst_bring_back_runaway_serfs"),
-                         (check_quest_succeeded, "qst_bring_back_runaway_serfs")],
+                         (check_quest_succeeded, "qst_bring_back_runaway_serfs"),
+                         (quest_slot_eq, "qst_bring_back_runaway_serfs", slot_quest_current_state, 0),],
 "Damn me, but you've done it, {playername}. All the slaves are back and they're busy preparing for the harvest.\
  You certainly earned your reward. Here, take it, with my compliments.", "lord_generic_mission_completed",
    [(call_script, "script_finish_quest", "qst_bring_back_runaway_serfs", 100),
+    (call_script, "script_objectionable_action", tmt_humanitarian, "str_round_up_serfs")]],
+
+[anyone,"lord_start", [(store_partner_quest,":lords_quest"),
+                         (eq,":lords_quest","qst_bring_back_runaway_serfs"),
+                         (check_quest_succeeded, "qst_bring_back_runaway_serfs")],
+"Well done, but you've done it, {playername}. The slaves are back and they're busy preparing for the harvest.\
+ I guess you had to kill some of them in order to make the others obey. Can't be helped, but I'll only reward you for those that have returned, not the ones you left rotting in the wilderness.", "lord_generic_mission_completed",
+   [(quest_get_slot, ":state", "qst_bring_back_runaway_serfs", slot_quest_current_state),
+    (val_mul, ":state", 10),
+    (store_sub, ":completion", 100, ":state"),
+    (call_script, "script_finish_quest", "qst_bring_back_runaway_serfs", ":completion"),
     (call_script, "script_objectionable_action", tmt_humanitarian, "str_round_up_serfs")]],
 
 [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
@@ -8528,7 +8540,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (party_set_ai_behavior,"$qst_bring_back_runaway_serfs_party_3",ai_bhvr_travel_to_party),
       (party_set_ai_object,"$qst_bring_back_runaway_serfs_party_3",":quest_target_center"),
       (party_set_flags, "$qst_bring_back_runaway_serfs_party_3", pf_default_behavior, 0),
-      (rest_for_hours, 2, 4), #TLD was 1,4
+      (rest_for_hours, 3, 6), #Invain: slaves are slower now, so we can give them more of a headstart
     (else_try),
       (eq, "$random_quest_no", "qst_blank_quest_01"), #Defend Refugees
       (call_script, "script_cf_quest_defend_refugees_party_creation"),
@@ -10626,22 +10638,30 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 "Good day master.", "runaway_serf_intro_1", [(party_set_slot, "$g_encountered_party", slot_town_center, 1)]],
   
 [anyone|plyr,"runaway_serf_intro_1", [(quest_get_slot, ":lord", "qst_bring_back_runaway_serfs", slot_quest_giver_troop),
-                                        (str_store_troop_name, s4, ":lord")],
-"I have been sent by your {s4} whom you are running from. He will not punish you if you return now.", "runaway_serf_intro_2",[]],
+                                        (str_store_troop_name, s4, ":lord"),
+                                        (troop_get_type, reg11, ":lord"),
+                                        (try_begin),
+                                          (gt, reg11, 1), #MV: non-humans are male
+                                          (assign, reg11, 0),
+                                        (try_end)],
+"I have been sent by {s4} whom you are running from. {reg11?She:He} will hold back {reg11?her:his} wrath and spare your lifes if you return now.", "runaway_serf_intro_2",[]],
+ 
    
-[anyone,"runaway_serf_intro_2", [(quest_get_slot, ":target_center", "qst_bring_back_runaway_serfs", slot_quest_target_center),
-                                   (str_store_party_name, s6, ":target_center"),
-                                   (quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
-                                   (str_store_party_name, s1, ":quest_object_center")],
-"My good master. Our lives at {s1} was unbearable. We worked all day long and still went to bed hungry.\
- We are going to {s6} to start a new life, where we will be treated like humans.", "runaway_serf_intro_3",[]],
+[anyone,"runaway_serf_intro_2", [(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
+                                (str_store_party_name, s1, ":quest_object_center"),
+                                (quest_get_slot, ":lord", "qst_bring_back_runaway_serfs", slot_quest_giver_troop),
+                                (str_store_troop_name, s4, ":lord"),],
+"Have mercy! Going back to {s1} means certain death.\
+{s4} will make us toil until we die of exhaustion, or he will put us to the stake immediately.", "runaway_serf_intro_3",[]],
 
 [anyone|plyr,"runaway_serf_intro_3", [(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
                                         (str_store_party_name, s1, ":quest_object_center"),],
-"You have gone against our laws by running from slavery. You will go back to {s1} now!", "runaway_serf_go_back",
+"And this will be all that you maggots deserve. You will go back to {s1}, or I have you slaughtered here and now!", "runaway_serf_go_back",
    [#(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
     #(call_script, "script_change_player_relation_with_center", ":quest_object_center", -1)
     ]],
+
+[anyone|plyr,"runaway_serf_intro_3", [], "I see. I think I will have to teach you lot a lesson in order to make you obey. Slaughter him!", "runaway_serf_slaughter",[]],
 
   #[anyone|plyr,"runaway_serf_intro_3", [], "Well, maybe you are right. All right then. If anyone asks, I haven't seen you.", "runaway_serf_let_go",
    # [(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
@@ -10649,8 +10669,13 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     # ]],
 
 [party_tpl|pt_runaway_serfs,"runaway_serf_go_back", [(quest_get_slot, ":home_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
-                                                       (str_store_party_name, s5, ":home_center")],
-"All right master. As you wish. We'll head back to {s5} now.", "close_window",
+                                                       (str_store_party_name, s5, ":home_center"),
+                                                       (troop_get_type, reg11, "trp_player"),
+                                                        (try_begin),
+                                                          (gt, reg11, 1), #MV: non-humans are male
+                                                          (assign, reg11, 0),
+                                                        (try_end)],
+"All right {reg11?mistress:master}. As you wish. We'll head back to {s5} now.", "close_window",
    [(call_script,"script_stand_back"),
     (quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
     (party_set_ai_object, "$g_encountered_party", ":quest_object_center"),
@@ -10674,12 +10699,35 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   
   
 [party_tpl|pt_runaway_serfs,"start", [(party_slot_eq, "$g_encountered_party", slot_town_castle, 0),
-                                        (get_party_ai_object, ":cur_ai_object"),
+                                        (get_party_ai_object, ":cur_ai_object", "$g_encountered_party"),
                                         (quest_get_slot, ":home_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
-                                        (neq, ":home_center", ":cur_ai_object")],
-"Good day master. We were heading back to {s5}, but I am afraid we lost our way.", "runaway_serf_talk_caught",[]],
+                                        (neq, ":home_center", ":cur_ai_object"),
+                                        (troop_get_type, reg11, "trp_player"),
+                                        (try_begin),
+                                          (gt, reg11, 1), #MV: non-humans are male
+                                          (assign, reg11, 0),
+                                        (try_end)],
+"Good day {reg11?mistress:master}. We were heading back to {s5}, but I am afraid we lost our way.", "runaway_serf_talk_caught",[]],
 
-[anyone|plyr,"runaway_serf_talk_caught", [], "Do not test my patience. You are going back now!", "runaway_serf_go_back",[]],
+[anyone|plyr,"runaway_serf_talk_caught", [], "Do not test my patience. You are going back now! (Charisma)", "runaway_serf_go_back",[]],
+
+[anyone|plyr,"runaway_serf_talk_caught", [], "I see. I think I will have to teach you lot a lesson not to lose your way again. Slaughter him!", "runaway_serf_slaughter",[]],
+
+[anyone,"runaway_serf_slaughter", [], "One day you will pay.... Aaa-ghgllr!...", "close_window",[
+    (mission_cam_set_mode, 1, 1, 0),
+    (play_sound,"snd_man_die"),
+    (get_player_agent_no, reg1),
+    (store_conversation_troop, "$g_talk_troop"),
+    (store_conversation_agent, "$g_talk_agent"),
+    (agent_set_animation, "$g_talk_agent", "anim_fall_body_back"),
+    (party_set_slot, "$g_encountered_party", slot_town_castle, 1),
+    (quest_get_slot, ":state", "qst_bring_back_runaway_serfs", slot_quest_current_state),
+    (val_add, ":state", 1),
+    (quest_set_slot, "qst_bring_back_runaway_serfs", slot_quest_current_state, ":state"),
+    (quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
+    (party_set_ai_object, "$g_encountered_party", ":quest_object_center"),
+    (assign, "$g_leave_encounter",1)]],
+
   #[anyone|plyr,"runaway_serf_talk_caught", [], "Well, if you are that eager to go, then go.", "runaway_serf_let_go",
    # [(quest_get_slot, ":quest_object_center", "qst_bring_back_runaway_serfs", slot_quest_object_center),
     # (call_script, "script_change_player_relation_with_center", ":quest_object_center", 1)]],
@@ -10690,7 +10738,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   
 [anyone|plyr,"runaway_serf_talk_again_return", [], "Make haste now. The sooner you return the better.", "runaway_serf_talk_again_return_2",[]],
 [anyone|plyr,"runaway_serf_talk_again_return", [], "Good. Keep going.", "runaway_serf_talk_again_return_2",[]],
-[anyone|plyr,"runaway_serf_talk_again_return_2", [], "Yes master. As you wish.", "close_window",[
+[anyone,"runaway_serf_talk_again_return_2", [], "Yes master. As you wish.", "close_window",[
   (call_script,"script_stand_back"),
   (assign, "$g_leave_encounter",1)]],
   

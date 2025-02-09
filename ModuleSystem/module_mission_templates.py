@@ -7053,7 +7053,7 @@ mission_templates = [ # not used in game
 	(finish_mission),
 	]),
 
-    #reinforcements
+    #reinforcements if sorcerer is fleeing
 	(5,0, ti_once, [
 		  (try_for_agents, ":agent"),
 			(agent_is_ally|neg, ":agent"),
@@ -7062,7 +7062,7 @@ mission_templates = [ # not used in game
 			(eq, ":troop", "trp_black_numenorean_sorcerer"),
 			(agent_get_slot, ":slot1", ":agent", 1),
 		  (try_end),
-		  (ge, ":slot1", 3),
+		  (ge, ":slot1", 3), #if fleeing
 		],[
 		 (try_begin),
 			(ge, "$meta_alarm", 9),
@@ -7076,7 +7076,7 @@ mission_templates = [ # not used in game
 		 (try_end),
 		 (reset_mission_timer_a)]),
 
-	(5,0,0, [],  [
+	(5,0,0, [],  [ 
 		(try_for_agents, ":agent"),
 			(agent_is_ally|neg, ":agent"),
 			(agent_is_alive, ":agent"),

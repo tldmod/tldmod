@@ -4598,7 +4598,7 @@ game_menus = [
   ],[
 	("just_back",[],"{!}Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"{!}None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
-	("scout_enemy_town",[],"{!}scout_enemy_town",[(assign,"$cheat_imposed_quest","qst_scout_enemy_town")]),
+	("bring_back_runaway_serfs",[],"{!}bring_back_runaway_serfs",[(assign,"$cheat_imposed_quest","qst_bring_back_runaway_serfs")]),
 	("cheat_kill_faction_quest",[],"{!}Kill GuildMaster Bandit Quest",[(assign,"$cheat_imposed_quest","qst_blank_quest_17")]),
 	("cheat_raise_troops",[],"{!}Raise Troops",[(assign,"$cheat_imposed_quest","qst_raise_troops")]),
 	("cheat_defend_refugees",[],"{!}Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
