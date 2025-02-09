@@ -219,7 +219,7 @@ spr_destroy_bridge_b 0 0 destroy_bridge_b bo_destroy_bridge_b 0
 spr_destroy_bridge_b_E 0 0 destroy_bridge_b 0 0
 
 
-spr_Catapult 0 0 catapult bo_catapult 0
+spr_Catapult 0 0 Catapult bo_Catapult 0
 
 
 spr_broom 0 0 broom 0 0
@@ -246,49 +246,49 @@ spr_grave_a 0 0 grave_a bo_grave_a 0
 spr_village_house_e 0 0 village_house_e bo_village_house_e 0
 
 
-spr_village_house_e_E 0 0 village_house_e 0 0
+spr_arabian_house_a2 0 0 arabian_house_a2 bo_arabian_house_a2 0
 
 
 spr_village_house_f 0 0 village_house_f bo_village_house_f 0
 
 
-spr_village_house_f_E 0 0 village_house_f 0 0
+spr_arabian_village_house_a 0 0 arabian_village_house_a bo_arabian_village_house_a 0
 
 
 spr_village_house_g 0 0 village_house_g bo_village_house_g 0
 
 
-spr_village_house_g_E 0 0 village_house_g 0 0
+spr_arabian_village_house_b 0 0 arabian_village_house_b bo_arabian_village_house_b 0
 
 
 spr_village_house_h 0 0 village_house_h bo_village_house_h 0
 
 
-spr_village_house_h_E 0 0 village_house_h 0 0
+spr_arabian_village_house_c 0 0 arabian_village_house_c bo_arabian_village_house_c 0
 
 
 spr_village_house_i 0 0 village_house_i bo_village_house_i 0
 
 
-spr_village_house_i_E 0 0 village_house_i 0 0
+spr_arabian_village_house_d 0 0 arabian_village_house_d bo_arabian_village_house_d 0
 
 
 spr_village_house_j 0 0 village_house_j bo_village_house_j 0
 
 
-spr_village_house_j_E 0 0 village_house_j 0 0
+spr_arabian_village_stable 0 0 arabian_village_stable bo_arabian_village_stable 0
 
 
 spr_village_wall_a 0 0 village_wall_a bo_village_wall_a 0
 
 
-spr_village_wall_a_E 0 0 village_wall_a 0 0
+spr_arabian_village_hut 0 0 arabian_village_hut bo_arabian_village_hut 0
 
 
 spr_village_wall_b 0 0 village_wall_b bo_village_wall_b 0
 
 
-spr_village_wall_b_E 0 0 village_wall_b 0 0
+spr_arabian_village_stairs 11 0 arabian_village_stairs bo_arabian_village_stairs 0
 
 
 spr_village_snowy_house_a 0 0 village_snowy_house_a bo_village_snowy_house_a 0
@@ -333,25 +333,25 @@ spr_village_snowy_stable_a 0 0 village_snowy_stable_a bo_village_snowy_stable_a 
 spr_village_straw_house_a 0 0 village_straw_house_a bo_village_straw_house_a 0
 
 
-spr_village_straw_house_a_E 0 0 village_straw_house_a 0 0
+spr_awning_long_b 0 0 awning_long_b bo_awning_long 0
 
 
 spr_village_stable_a 0 0 village_stable_a bo_village_stable_a 0
 
 
-spr_village_stable_a_E 0 0 village_stable_a 0 0
+spr_awning_long 0 0 awning_long bo_awning_long 0
 
 
 spr_village_shed_a 0 0 village_shed_a bo_village_shed_a 0
 
 
-spr_village_shed_a_E 0 0 village_shed_a 0 0
+spr_awning_a 0 0 awning_a bo_awning 0
 
 
 spr_village_shed_b 0 0 village_shed_b bo_village_shed_b 0
 
 
-spr_village_shed_b_E 0 0 village_shed_b 0 0
+spr_awning_c 0 0 awning_c bo_awning 0
 
 
 spr_dungeon_door_cell_a 0 0 dungeon_door_cell_a bo_dungeon_door_cell_a 0
@@ -520,85 +520,85 @@ spr_arena_sign 0 0 arena_arms 0 0
 spr_castle_h_battlement_a 0 0 castle_h_battlement_a bo_castle_h_battlement_a 0
 
 
-spr_castle_h_battlement_a_E 0 0 castle_h_battlement_a 0 0
+spr_castle_h_battlement_c 0 0 castle_h_battlement_c bo_castle_h_battlement_c 0
 
 
 spr_castle_h_battlement_b 0 0 castle_h_battlement_b bo_castle_h_battlement_b 0
 
 
-spr_castle_h_battlement_b_E 0 0 castle_h_battlement_b 0 0
+spr_castle_h_corner_c 0 0 castle_h_corner_c bo_castle_h_corner_c 0
 
 
 spr_castle_h_battlement_a2 0 0 castle_h_battlement_a2 bo_castle_h_battlement_a2 0
 
 
-spr_castle_h_battlement_a2_E 0 0 castle_h_battlement_a2 0 0
+spr_snowy_castle_battlement_b 0 0 snowy_castle_battlement_b bo_snowy_castle_battlement_b 0
 
 
 spr_castle_h_battlement_b2 0 0 castle_h_battlement_b2 bo_castle_h_battlement_b2 0
 
 
-spr_castle_h_battlement_b2_E 0 0 castle_h_battlement_b2 0 0
+spr_snowy_castle_battlement_corner_a 0 0 snowy_castle_battlement_corner_a bo_snowy_castle_battlement_corner_a 0
 
 
 spr_castle_h_corner_a 0 0 castle_h_corner_a bo_castle_h_corner_a 0
 
 
-spr_castle_h_corner_a_E 0 0 castle_h_corner_a 0 0
+spr_snowy_castle_battlement_corner_b 0 0 snowy_castle_battlement_corner_b bo_snowy_castle_battlement_corner_b 0
 
 
 spr_castle_h_stairs_a 0 0 castle_h_stairs_a bo_castle_h_stairs_a 0
 
 
-spr_castle_h_stairs_a_E 0 0 castle_h_stairs_a 0 0
+spr_snowy_castle_battlement_corner_c 0 0 snowy_castle_battlement_corner_c bo_snowy_castle_battlement_corner_c 0
 
 
 spr_castle_h_stairs_b 0 0 castle_h_stairs_b bo_castle_h_stairs_b 0
 
 
-spr_castle_h_stairs_b_E 0 0 castle_h_stairs_b 0 0
+spr_snowy_castle_battlement_stairs_a 0 0 snowy_castle_battlement_stairs_a bo_snowy_castle_battlement_stairs_a 0
 
 
 spr_castle_h_gatehouse_a 0 0 castle_h_gatehouse_a bo_castle_h_gatehouse_a 0
 
 
-spr_castle_h_gatehouse_a_E 0 0 castle_h_gatehouse_a 0 0
+spr_snowy_castle_battlement_stairs_b 0 0 snowy_castle_battlement_stairs_b bo_snowy_castle_battlement_stairs_b 0
 
 
 spr_castle_h_keep_a 0 0 castle_h_keep_a bo_castle_h_keep_a 0
 
 
-spr_castle_h_keep_a_E 0 0 castle_h_keep_a 0 0
+spr_snowy_castle_gate_house_a 0 0 snowy_castle_gate_house_a bo_snowy_castle_gate_house_a 0
 
 
 spr_castle_h_keep_b 0 0 castle_h_keep_b bo_castle_h_keep_b 0
 
 
-spr_castle_h_keep_b_E 0 0 castle_h_keep_b 0 0
+spr_snowy_castle_round_tower_a 0 0 snowy_castle_round_tower_a bo_snowy_castle_round_tower_a 0
 
 
 spr_castle_h_house_a 0 0 castle_h_house_a bo_castle_h_house_a 0
 
 
-spr_castle_h_house_a_E 0 0 castle_h_house_a 0 0
+spr_snowy_castle_square_keep_a 0 0 snowy_castle_square_keep_a bo_snowy_castle_square_keep_a 0
 
 
 spr_castle_h_house_b 0 0 castle_h_house_b bo_castle_h_house_b 0
 
 
-spr_castle_h_house_b_E 0 0 castle_h_house_b 0 0
+spr_snowy_castle_stairs_a 11 0 snowy_castle_stairs_a bo_snowy_castle_stairs_a 0
 
 
 spr_castle_h_house_c 0 0 castle_h_house_c bo_castle_h_house_b 0
 
 
-spr_castle_h_house_c_E 0 0 castle_h_house_c 0 0
+spr_church_a 0 0 church_a bo_church_a 0
 
 
 spr_castle_h_battlement_barrier 0 0 castle_h_battlement_barrier bo_castle_h_battlement_barrier 0
 
 
-spr_castle_h_battlement_barrier_E 0 0 castle_h_battlement_barrier 0 0
+spr_church_tower_a 0 0 church_tower_a bo_church_tower_a 0
 
 
 spr_castle_f_keep_a 0 0 castle_f_keep_a bo_castle_f_keep_a 0
@@ -610,90 +610,88 @@ spr_full_keep_b 0 0 castle_f_keep_a 0 0
 spr_castle_f_battlement_a 0 0 castle_f_battlement_a bo_castle_f_battlement_a 0
 
 
-spr_castle_f_battlement_a_E 0 0 castle_f_battlement_a 0 0
+spr_castle_f_battlement_c 0 0 castle_f_battlement_c bo_castle_f_battlement_c 0
 
 
 spr_castle_f_battlement_a_destroyed 0 0 castle_f_battlement_a_destroyed bo_castle_f_battlement_a_destroyed 0
 
 
-spr_castle_f_battlement_a_destroyed_E 0 0 castle_f_battlement_a_destroyed 0 0
+spr_castle_f_battlement_d 0 0 castle_f_battlement_d bo_castle_f_battlement_d 0
 
 
 spr_castle_f_battlement_b 0 0 castle_f_battlement_b bo_castle_f_battlement_b 0
 
 
-spr_castle_f_battlement_b_E 0 0 castle_f_battlement_b 0 0
+spr_castle_f_battlement_e 0 0 castle_f_battlement_e bo_castle_f_battlement_e 0
 
 
 spr_castle_f_battlement_corner_a 0 0 castle_f_battlement_corner_a bo_castle_f_battlement_corner_a 0
 
 
-spr_castle_f_battlement_corner_a_E 0 0 castle_f_battlement_corner_a 0 0
+spr_castle_f_battlement_corner_c 0 0 castle_f_battlement_corner_c bo_castle_f_battlement_corner_c 0
 
 
 spr_castle_f_battlement_corner_b 0 0 castle_f_battlement_corner_b bo_castle_f_battlement_corner_b 0
 
 
-spr_castle_f_battlement_corner_b_E 0 0 castle_f_battlement_corner_b 0 0
+spr_castle_f_battlement_d 0 0 castle_f_battlement_d bo_castle_f_battlement_d 0
 
 
 spr_castle_f_stairs_a 0 0 castle_f_stairs_a bo_castle_f_stairs_a 0
 
 
-spr_castle_f_stairs_a_E 0 0 castle_f_stairs_a 0 0
+spr_castle_f_sally_port_elevation 0 0 castle_f_sally_port_elevation bo_castle_f_sally_port_elevation 0
 
 
 spr_castle_f_tower_a 0 0 castle_f_tower_a bo_castle_f_tower_a 0
 
 
-spr_castle_f_tower_a_E 0 0 castle_f_tower_a 0 0
+spr_castle_f_door_a 0 0 castle_f_tower_a bo_castle_f_door_a 0
 
 
 spr_castle_f_wall_stairs_a 0 0 castle_f_wall_stairs_a bo_castle_f_wall_stairs_a 0
 
 
-spr_castle_f_wall_stairs_a_E 0 0 castle_f_wall_stairs_a 0 0
+spr_castle_f_sally_door_a 0 0 castle_f_sally_door_a bo_castle_f_sally_door_a 0
 
 
 spr_castle_f_wall_stairs_b 0 0 castle_f_wall_stairs_b bo_castle_f_wall_stairs_b 0
 
 
-spr_castle_f_wall_stairs_b_E 0 0 castle_f_wall_stairs_b 0 0
+spr_castle_f_doors_top_a 0 0 castle_f_doors_top_a bo_castle_f_doors_top_a 0
 
 
 spr_castle_f_wall_way_a 0 0 castle_f_wall_way_a bo_castle_f_wall_way_a 0
 
 
-spr_castle_f_wall_way_a_E 0 0 castle_f_wall_way_a 0 0
+spr_mosque_a 0 0 mosque_a bo_mosque_a 0
 
 
 spr_castle_f_wall_way_b 0 0 castle_f_wall_way_b bo_castle_f_wall_way_b 0
 
 
-spr_castle_f_wall_way_b_E 0 0 castle_f_wall_way_b 0 0
+spr_square_keep_b 0 0 square_keep_b bo_square_keep_b 0
 
 
 spr_castle_f_gatehouse_a 0 0 castle_f_gatehouse_a bo_castle_f_gatehouse_a 0
 
 
-spr_castle_f_gatehouse_a_E 0 0 castle_f_gatehouse_a 0 0
+spr_square_keep_c 0 0 square_keep_c bo_square_keep_c 0
 
 
 spr_stone_minaret_a 0 0 stone_minaret_a bo_stone_minaret_a 0
 
 
-spr_stone_minaret_a_E 0 0 stone_minaret_a 0 0
+spr_square_keep_d 0 0 square_keep_d bo_square_keep_d 0
 
 
 spr_banner_pole 0 0 banner_pole bo_banner_pole 0
 
 
-spr_custom_banner_01 0 0 custom_banner_01 0 1
--40  6 521 3 1224979098644774912 144115188075855998 7 4 0 30 2 1224979098644774912 0 520 3 1224979098644774913 1224979098644774912 13 1982 2 31 1224979098644774913 3 0 
+spr_square_keep_e 0 0 square_keep_e bo_square_keep_e 0
 
 
-spr_custom_banner_02 0 0 custom_banner_02 0 1
--40  6 521 3 1224979098644774912 144115188075855998 7 4 0 30 2 1224979098644774912 0 520 3 1224979098644774913 1224979098644774912 13 1982 2 31 1224979098644774913 3 0 
+spr_square_keep_f 0 0 square_keep_f bo_square_keep_f 0
 
 
 spr_banner_a 0 0 b_arms_gondor 0 0
@@ -1110,49 +1108,49 @@ spr_railing_a 0 0 railing_a bo_railing_a 0
 spr_battlement_a 0 0 battlement_a bo_battlement_a 0
 
 
-spr_battlement_a_E 0 0 battlement_a 0 0
+spr_castle_battlement_c 0 0 castle_battlement_c bo_castle_battlement_c 0
 
 
 spr_battlement_a_destroyed 0 0 battlement_a_destroyed bo_battlement_a_destroyed 0
 
 
-spr_battlement_a_destroyed_E 0 0 battlement_a_destroyed 0 0
+spr_castle_battlement_corner_c 0 0 castle_battlement_corner_c bo_castle_battlement_corner_c 0
 
 
 spr_round_tower_a 0 0 round_tower_a bo_round_tower_a 0
 
 
-spr_round_tower_a_E 0 0 round_tower_a 0 0
+spr_castle_battlement_c 0 0 castle_battlement_c bo_castle_battlement_c 0
 
 
 spr_small_round_tower_a 0 0 small_round_tower_a bo_small_round_tower_a 0
 
 
-spr_small_round_tower_a_E 0 0 small_round_tower_a 0 0
+spr_small_round_tower_roof_a 0 0 small_round_tower_roof_a bo_small_round_tower_roof_a 0
 
 
 spr_square_keep_a 0 0 square_keep_a bo_square_keep_a 0
 
 
-spr_square_keep_a_E 0 0 square_keep_a 0 0
+spr_square_tower_roof_a 0 0 square_tower_roof_a 0 0
 
 
 spr_gate_house_a 0 0 gate_house_a bo_gate_house_a 0
 
 
-spr_gate_house_a_E 0 0 gate_house_a 0 0
+spr_castle_battlement_corner_c 0 0 castle_battlement_corner_c bo_castle_battlement_corner_c 0
 
 
 spr_gate_house_b 0 0 gate_house_b bo_gate_house_b 0
 
 
-spr_gate_house_b_E 0 0 gate_house_b 0 0
+spr_arena_wall_a 0 0 arena_wall_a bo_arena_wall_ab 0
 
 
 spr_small_wall_a 0 0 small_wall_a bo_small_wall_a 0
 
 
-spr_small_wall_a_E 0 0 small_wall_a 0 0
+spr_small_wall_b 0 0 small_wall_b bo_small_wall_b 0
 
 
 spr_small_wall_c 0 0 small_wall_c bo_small_wall_c 0
@@ -1170,133 +1168,133 @@ spr_small_wall_c_destroy_E 0 0 small_wall_c_destroy 0 0
 spr_small_wall_d 0 0 small_wall_d bo_small_wall_d 0
 
 
-spr_small_wall_d_E 0 0 small_wall_d 0 0
+spr_small_wall_connect_a 0 0 small_wall_connect_a bo_small_wall_connect_a 0
 
 
 spr_small_wall_e 0 0 small_wall_e bo_small_wall_d 0
 
 
-spr_small_wall_e_E 0 0 small_wall_e 0 0
+spr_castle_courtyard_house_extension_a 0 0 castle_courtyard_house_extension_a bo_castle_courtyard_house_extension_a 0
 
 
 spr_town_house_a 0 0 town_house_a bo_town_house_a 0
 
 
-spr_town_house_a_E 0 0 town_house_a 0 0
+spr_castle_courtyard_house_extension_b 0 0 castle_courtyard_house_extension_b bo_castle_courtyard_house_extension_b 0
 
 
 spr_town_house_b 0 0 town_house_b bo_town_house_b 0
 
 
-spr_town_house_b_E 0 0 town_house_b 0 0
+spr_castle_f_door_a 100352 0 castle_f_door_a bo_castle_f_door_a 0
 
 
 spr_town_house_c 0 0 town_house_c bo_town_house_c 0
 
 
-spr_town_house_c_E 0 0 town_house_c 0 0
+spr_castle_e_sally_door_a 100352 0 castle_e_sally_door_a bo_castle_e_sally_door_a 0
 
 
 spr_town_house_d 0 0 town_house_d bo_town_house_d 0
 
 
-spr_town_house_d_E 0 0 town_house_d 0 0
+spr_arabian_house_a 0 0 arabian_house_a bo_arabian_house_a 0
 
 
 spr_town_house_e 0 0 town_house_e bo_town_house_e 0
 
 
-spr_town_house_e_E 0 0 town_house_e 0 0
+spr_arabian_house_b 0 0 arabian_house_b bo_arabian_house_b 0
 
 
 spr_town_house_f 0 0 town_house_f bo_town_house_f 0
 
 
-spr_town_house_f_E 0 0 town_house_f 0 0
+spr_arabian_house_c 0 0 arabian_house_c bo_arabian_house_c 0
 
 
 spr_town_house_g 0 0 town_house_g bo_town_house_g 0
 
 
-spr_town_house_g_E 0 0 town_house_g 0 0
+spr_arabian_house_d 0 0 arabian_house_d bo_arabian_house_d 0
 
 
 spr_town_house_h 0 0 town_house_h bo_town_house_h 0
 
 
-spr_town_house_h_E 0 0 town_house_h 0 0
+spr_arabian_house_e 0 0 arabian_house_e bo_arabian_house_e 0
 
 
 spr_town_house_i 0 0 town_house_i bo_town_house_i 0
 
 
-spr_town_house_i_E 0 0 town_house_i 0 0
+spr_arabian_house_f 0 0 arabian_house_f bo_arabian_house_f 0
 
 
 spr_town_house_j 0 0 town_house_j bo_town_house_j 0
 
 
-spr_town_house_j_E 0 0 town_house_j 0 0
+spr_arabian_house_g 0 0 arabian_house_g bo_arabian_house_g 0
 
 
 spr_town_house_l 0 0 town_house_l bo_town_house_l 0
 
 
-spr_town_house_l_E 0 0 town_house_l 0 0
+spr_arabian_house_h 0 0 arabian_house_h bo_arabian_house_h 0
 
 
 spr_town_house_m 0 0 town_house_m bo_town_house_m 0
 
 
-spr_town_house_m_E 0 0 town_house_m 0 0
+spr_arabian_house_i 0 0 arabian_house_i bo_arabian_house_i 0
 
 
 spr_town_house_n 0 0 town_house_n bo_town_house_n 0
 
 
-spr_town_house_n_E 0 0 town_house_n 0 0
+spr_instrument_lyre 0 0 lyre 0 0
 
 
 spr_town_house_o 0 0 town_house_o bo_town_house_o 0
 
 
-spr_town_house_o_E 0 0 town_house_o 0 0
+spr_instrument_lute 0 0 lute 0 0
 
 
 spr_town_house_p 0 0 town_house_p bo_town_house_p 0
 
 
-spr_town_house_p_E 0 0 town_house_p 0 0
+spr_stone_house_a 0 0 stone_house_a bo_stone_house_a 0
 
 
 spr_town_house_q 0 0 town_house_q bo_town_house_q 0
 
 
-spr_town_house_q_E 0 0 town_house_q 0 0
+spr_stone_house_b 0 0 stone_house_b bo_stone_house_b 0
 
 
 spr_passage_house_b 0 0 passage_house_b bo_passage_house_b 0
 
 
-spr_passage_house_b_E 0 0 passage_house_b 0 0
+spr_stone_house_c 0 0 stone_house_c bo_stone_house_c 0
 
 
 spr_passage_house_c 0 0 passage_house_c bo_passage_house_c 0
 
 
-spr_passage_house_c_E 0 0 passage_house_c 0 0
+spr_stone_house_d 0 0 stone_house_d bo_stone_house_d 0
 
 
 spr_passage_house_c_door 0 0 passage_house_c_door bo_passage_house_c_door 0
 
 
-spr_passage_house_c_door_E 0 0 passage_house_c_door 0 0
+spr_stone_house_e 0 0 stone_house_e bo_stone_house_e 0
 
 
 spr_house_extension_c 0 0 house_extension_c bo_house_extension_a 0
 
 
-spr_house_extension_c_E 0 0 house_extension_c 0 0
+spr_stone_house_f 0 0 stone_house_f bo_stone_house_f 0
 
 
 spr_house_roof_door 0 0 house_roof_door bo_house_roof_door 0
@@ -1308,61 +1306,61 @@ spr_door_extension_a 0 0 door_extension_a bo_door_extension_a 0
 spr_stairs_arch_a 0 0 stairs_arch_a bo_stairs_arch_a 0
 
 
-spr_stairs_arch_a_E 0 0 stairs_arch_a 0 0
+spr_arena_circle_a 0 0 arena_circle_a bo_arena_circle_a 0
 
 
 spr_town_house_r 0 0 town_house_r bo_town_house_r 0
 
 
-spr_town_house_r_E 0 0 town_house_r 0 0
+spr_house_extension_e 0 0 house_extension_e bo_house_extension_e 0
 
 
 spr_town_house_s 0 0 town_house_s bo_town_house_s 0
 
 
-spr_town_house_s_E 0 0 town_house_s 0 0
+spr_house_extension_f 0 0 house_extension_f bo_house_extension_f 0
 
 
 spr_town_house_t 0 0 town_house_t bo_town_house_t 0
 
 
-spr_town_house_t_E 0 0 town_house_t 0 0
+spr_house_extension_g 0 0 house_extension_g bo_house_extension_g 0
 
 
 spr_town_house_u 0 0 town_house_u bo_town_house_u 0
 
 
-spr_town_house_u_E 0 0 town_house_u 0 0
+spr_house_extension_h 0 0 house_extension_h bo_house_extension_h 0
 
 
 spr_town_house_v 0 0 town_house_v bo_town_house_v 0
 
 
-spr_town_house_v_E 0 0 town_house_v 0 0
+spr_house_extension_i 0 0 house_extension_i bo_house_extension_i 0
 
 
 spr_town_house_w 0 0 town_house_w bo_town_house_w 0
 
 
-spr_town_house_w_E 0 0 town_house_w 0 0
+spr_passage_house_d 0 0 passage_house_d bo_passage_house_d 0
 
 
 spr_town_house_y 0 0 town_house_y bo_town_house_y 0
 
 
-spr_town_house_y_E 0 0 town_house_y 0 0
+spr_brewery_pool 0 0 brewery_pool bo_brewery_pool 0
 
 
 spr_town_house_z 0 0 town_house_z bo_town_house_z 0
 
 
-spr_town_house_z_E 0 0 town_house_z 0 0
+spr_weavery_loom_a 0 0 weavery_loom_a bo_weavery_loom_a 0
 
 
 spr_windmill 0 0 windmill bo_windmill 0
 
 
-spr_windmill_E 0 0 windmill 0 0
+spr_weavery_spinning_wheel 0 0 weavery_spinning_wheel bo_weavery_spinning_wheel 0
 
 
 spr_windmill_fan_turning 65536 0 windmill_fan_turning bo_windmill_fan_turning 0
@@ -1371,7 +1369,7 @@ spr_windmill_fan_turning 65536 0 windmill_fan_turning bo_windmill_fan_turning 0
 spr_windmill_fan 0 0 windmill_fan bo_windmill_fan 0
 
 
-spr_windmill_fan_E 0 0 windmill_fan 0 0
+spr_winery_barrel_shelf 0 0 winery_barrel_shelf bo_winery_barrel_shelf 0
 
 
 spr_earth_wall_a 0 0 earth_wall_a bo_earth_wall_a 0
@@ -1383,61 +1381,61 @@ spr_earth_wall_b 0 0 earth_wall_b bo_earth_wall_b 0
 spr_earth_stairs_b 0 0 earth_stairs_b bo_earth_stairs_b 0
 
 
-spr_earth_stairs_b_E 0 0 earth_stairs_b 0 0
+spr_earth_stairs_a 0 0 earth_stairs_a bo_earth_stairs_a 0
+
+
+spr_earth_tower_small_b 0 0 earth_tower_small_b bo_earth_tower_small_b 0
 
 
 spr_earth_tower_small_a 0 0 earth_tower_small_a bo_earth_tower_small_a 0
 
 
-spr_earth_tower_small_a_E 0 0 earth_tower_small_a 0 0
-
-
 spr_earth_gate_house_a 0 0 earth_gate_house_a bo_earth_gate_house_a 0
 
 
-spr_earth_gate_house_a_E 0 0 earth_gate_house_a 0 0
+spr_earth_gate_house_b 0 0 earth_gate_house_b bo_earth_gate_house_b 0
 
 
 spr_earth_gate_a 0 0 earth_gate_a bo_earth_gate_a 0
 
 
-spr_earth_gate_a_E 0 0 earth_gate_a 0 0
+spr_earth_tower_a 0 0 earth_tower_a bo_earth_tower_a 0
 
 
 spr_earth_square_keep_a 0 0 earth_square_keep_a bo_earth_square_keep_a 0
 
 
-spr_earth_square_keep_a_E 0 0 earth_square_keep_a 0 0
+spr_earth_stairs_c 0 0 earth_stairs_c bo_earth_stairs_c 0
 
 
 spr_earth_house_a 0 0 earth_house_a bo_earth_house_a 0
 
 
-spr_earth_house_a_E 0 0 earth_house_a 0 0
+spr_earth_sally_gate_right 0 0 earth_sally_gate_right bo_earth_sally_gate_right 0
 
 
 spr_earth_house_b 0 0 earth_house_b bo_earth_house_b 0
 
 
-spr_earth_house_b_E 0 0 earth_house_b 0 0
+spr_siege_wall_a 0 0 siege_wall_a bo_siege_wall_a 0
 
 
 spr_earth_house_c 0 0 earth_house_c bo_earth_house_c 0
 
 
-spr_earth_house_c_E 0 0 earth_house_c 0 0
+spr_earth_wall_a2 0 0 earth_wall_a2 bo_earth_wall_a2 0
 
 
 spr_earth_house_d 0 0 earth_house_d bo_earth_house_d 0
 
 
-spr_earth_house_d_E 0 0 earth_house_d 0 0
+spr_earth_wall_b2 0 0 earth_wall_b2 bo_earth_wall_b2 0
 
 
 spr_town_house_aa 0 0 town_house_aa bo_town_house_aa 0
 
 
-spr_town_house_aa_E 0 0 town_house_aa 0 0
+spr_siege_large_shield_a 0 0 siege_large_shield_a bo_siege_large_shield_a 0
 
 
 spr_snowy_house_a 0 0 snowy_house_a bo_snowy_house_a 0
@@ -1479,49 +1477,49 @@ spr_snowy_trunks_a 0 0 snowy_trunks_a bo_snowy_trunks_a 0
 spr_square_stairs_a 0 0 square_stairs_a bo_square_stairs_a 0
 
 
-spr_square_stairs_a_E 0 0 square_stairs_a 0 0
+spr_square_extension_a 0 0 square_extension_a bo_square_extension_a 0
 
 
 spr_castle_courtyard_house_a 0 0 castle_courtyard_house_a bo_castle_courtyard_house_a 0
 
 
-spr_castle_courtyard_house_a_E 0 0 castle_courtyard_house_a 0 0
+spr_courtyard_gate_a 0 0 courtyard_entry_a bo_courtyard_entry_a 0
 
 
 spr_castle_courtyard_house_b 0 0 castle_courtyard_house_b bo_castle_courtyard_house_b 0
 
 
-spr_castle_courtyard_house_b_E 0 0 castle_courtyard_house_b 0 0
+spr_courtyard_gate_b 0 0 courtyard_entry_b bo_courtyard_entry_b 0
 
 
 spr_castle_courtyard_house_c 0 0 castle_courtyard_house_c bo_castle_courtyard_house_c 0
 
 
-spr_castle_courtyard_house_c_E 0 0 castle_courtyard_house_c 0 0
+spr_courtyard_gate_c 0 0 courtyard_entry_c bo_courtyard_entry_c 0
 
 
 spr_castle_courtyard_a 0 0 castle_courtyard_a bo_castle_courtyard_a 0
 
 
-spr_castle_courtyard_a_E 0 0 castle_courtyard_a 0 0
+spr_courtyard_gate_snowy 0 0 courtyard_entry_snowy bo_courtyard_entry_a 0
 
 
 spr_gatehouse_b 0 0 gatehouse_b bo_gatehouse_b 0
 
 
-spr_gatehouse_b_E 0 0 gatehouse_b 0 0
+spr_castle_e_battlement_a 0 0 castle_e_battlement_a bo_castle_e_battlement_a 0
 
 
 spr_castle_gaillard 0 0 castle_gaillard bo_castle_gaillard 0
 
 
-spr_castle_gaillard_E 0 0 castle_gaillard 0 0
+spr_castle_e_battlement_c 0 0 castle_e_battlement_c bo_castle_e_battlement_c 0
 
 
 spr_castle_e_tower 0 0 castle_e_tower bo_castle_e_tower 0
 
 
-spr_castle_e_tower_E 0 0 castle_e_tower 0 0
+spr_castle_e_battlement_a_destroyed 0 0 castle_e_battlement_a_destroyed bo_castle_e_battlement_a_destroyed 0
 
 
 spr_stand_thatched 0 0 stand_thatched bo_stand_thatched 0
@@ -1530,43 +1528,43 @@ spr_stand_thatched 0 0 stand_thatched bo_stand_thatched 0
 spr_arena_block_c 0 0 arena_block_c bo_arena_block_c 0
 
 
-spr_arena_block_c_E 0 0 arena_block_c 0 0
+spr_castle_e_corner 0 0 castle_e_corner bo_castle_e_corner 0
 
 
 spr_arena_block_f 0 0 arena_block_f bo_arena_block_def 0
 
 
-spr_arena_block_f_E 0 0 arena_block_f 0 0
+spr_castle_e_corner_b 0 0 castle_e_corner_b bo_castle_e_corner_b 0
 
 
 spr_arena_block_i 0 0 arena_block_i bo_arena_block_ghi 0
 
 
-spr_arena_block_i_E 0 0 arena_block_i 0 0
+spr_castle_e_corner_c 0 0 castle_e_corner_c bo_castle_e_corner_c 0
 
 
 spr_arena_palisade_a 0 0 arena_palisade_a_new bo_arena_palisade_a_new 0
 
 
-spr_arena_palisade_a_E 0 0 arena_palisade_a 0 0
+spr_castle_e_gate_house_a 0 0 castle_e_gate_house_a bo_castle_e_gate_house_a 0
 
 
 spr_arena_barrier_a 0 0 arena_barrier_a_new bo_arena_barrier_a_new 0
 
 
-spr_arena_barrier_a_E 0 0 arena_barrier_a_new 0 0
+spr_castle_e_keep_a 0 0 castle_e_keep_a bo_castle_e_keep_a 0
 
 
 spr_arena_barrier_b 0 0 arena_barrier_b_new bo_arena_barrier_bc_new 0
 
 
-spr_arena_barrier_b_E 0 0 arena_barrier_b_new 0 0
+spr_castle_e_house_a 0 0 castle_e_house_a bo_castle_e_house_a 0
 
 
 spr_arena_tower_c 0 0 arena_tower_c bo_arena_tower_abc 0
 
 
-spr_arena_tower_c_E 0 0 arena_tower_c 0 0
+spr_castle_e_house_b 0 0 castle_e_house_b bo_castle_e_house_b 0
 
 
 spr_arena_spectator_a 0 0 arena_spectator_a 0 0
@@ -1665,61 +1663,61 @@ spr_stone_ball 0 0 stone_ball 0 0
 spr_village_house_a 0 0 village_house_a bo_village_house_a 0
 
 
-spr_village_house_a_E 0 0 village_house_a 0 0
+spr_village_wall_manger 0 0 wall_manger_a bo_wall_manger_a 0
 
 
 spr_village_house_b 0 0 village_house_b bo_village_house_b 0
 
 
-spr_village_house_b_E 0 0 village_house_b 0 0
+spr_granary_a 0 0 granary_a bo_granary_a 0
 
 
 spr_village_house_c 0 0 village_house_c bo_village_house_c 0
 
 
-spr_village_house_c_E 0 0 village_house_c 0 0
+spr_full_stable_a 0 0 full_stable_a bo_full_stable_a 0
 
 
 spr_village_house_d 0 0 village_house_d bo_village_house_d 0
 
 
-spr_village_house_d_E 0 0 village_house_d 0 0
+spr_full_stable_b 0 0 full_stable_b bo_full_stable_b 0
 
 
 spr_farm_house_a 0 0 farm_house_a bo_farm_house_a 0
 
 
-spr_farm_house_a_E 0 0 farm_house_a 0 0
+spr_full_stable_c 0 0 full_stable_c bo_full_stable_c 0
 
 
 spr_farm_house_b 0 0 farm_house_b bo_farm_house_b 0
 
 
-spr_farm_house_b_E 0 0 farm_house_b 0 0
+spr_full_stable_d 0 0 full_stable_d bo_full_stable_d 0
 
 
 spr_farm_house_c 0 0 farm_house_c bo_farm_house_c 0
 
 
-spr_farm_house_c_E 0 0 farm_house_c 0 0
+spr_village_steppe_a 0 0 village_steppe_a bo_village_steppe_a 0
 
 
 spr_mountain_house_a 0 0 mountain_house_a bo_mountain_house_a 0
 
 
-spr_mountain_house_a_E 0 0 mountain_house_a 0 0
+spr_village_steppe_b 0 0 village_steppe_b bo_village_steppe_b 0
 
 
 spr_mountain_house_b 0 0 mountain_house_b bo_mountain_house_b 0
 
 
-spr_mountain_house_b_E 0 0 mountain_house_b 0 0
+spr_village_steppe_c 0 0 village_steppe_c bo_village_steppe_c 0
 
 
 spr_village_hut_a 0 0 village_hut_a bo_village_hut_a 0
 
 
-spr_village_hut_a_E 0 0 village_hut_a 0 0
+spr_village_steppe_d 0 0 village_steppe_d bo_village_steppe_d 0
 
 
 spr_crude_fence 0 0 fence bo_fence 0
@@ -1755,7 +1753,7 @@ spr_siege_ladder_14m 0 0 siege_ladder_evil_14m bo_siege_leadder_14m 0
 spr_portcullis 0 0 portcullis_a bo_portcullis_a 0
 
 
-spr_portcullis_E 0 0 portcullis_a 0 0
+spr_portcullis_new 0 0 portculis_new bo_portcullis_a 0
 
 
 spr_bed_a 0 0 bed_a bo_bed_a 0
@@ -1845,13 +1843,13 @@ spr_chain_10m 0 0 chain_10m 0 0
 spr_bridge_modular_a 0 0 bridge_modular_a bo_bridge_modular_a 0
 
 
-spr_bridge_modular_a_E 0 0 bridge_modular_a 0 0
+spr_village_steppe_e 0 0 village_steppe_e bo_village_steppe_e 0
 
 
 spr_bridge_modular_b 0 0 bridge_modular_b bo_bridge_modular_b 0
 
 
-spr_bridge_modular_b_E 0 0 bridge_modular_b 0 0
+spr_village_steppe_f 0 0 village_steppe_f bo_village_steppe_f 0
 
 
 spr_stone_step_a 0 0 floor_stone_a bo_floor_stone_a 0
@@ -2123,79 +2121,79 @@ spr_invisible_pillar 0 0 invisible_pillar bo_invisible_pillar 0
 spr_gon_castle_h_battlement_a 0 0 gon_castle_h_battlement_a bo_castle_h_battlement_a_tld 0
 
 
-spr_gon_castle_h_battlement_a_E 0 0 gon_castle_h_battlement_a 0 0
+spr_arabian_castle_battlement_a 0 0 arabian_castle_battlement_a bo_arabian_castle_battlement_a 0
 
 
 spr_gon_castle_h_battlement_b 0 0 gon_castle_h_battlement_b bo_castle_h_battlement_b 0
 
 
-spr_gon_castle_h_battlement_b_E 0 0 gon_castle_h_battlement_b 0 0
+spr_arabian_castle_battlement_b_destroyed 0 0 arabian_castle_battlement_b_destroyed bo_arabian_castle_battlement_b_destroyed 0
 
 
 spr_gon_castle_h_battlement_a2 0 0 gon_castle_h_battlement_a2 bo_castle_h_battlement_a_tld 0
 
 
-spr_gon_castle_h_battlement_a2_E 0 0 gon_castle_h_battlement_a2 0 0
+spr_arabian_castle_battlement_c 0 0 arabian_castle_battlement_c bo_arabian_castle_battlement_c 0
 
 
 spr_gon_castle_h_battlement_b2 0 0 gon_castle_h_battlement_b2 bo_castle_h_battlement_b2 0
 
 
-spr_gon_castle_h_battlement_b2_E 0 0 gon_castle_h_battlement_b2 0 0
+spr_arabian_castle_battlement_d 0 0 arabian_castle_battlement_d bo_arabian_castle_battlement_d 0
 
 
 spr_gon_castle_h_corner_a 0 0 gon_castle_h_corner_a bo_castle_h_corner_a 0
 
 
-spr_gon_castle_h_corner_a_E 0 0 gon_castle_h_corner_a 0 0
+spr_arabian_castle_corner_a 0 0 arabian_castle_corner_a bo_arabian_castle_corner_a 0
 
 
 spr_gon_castle_h_stairs_a 0 0 gon_castle_h_stairs_a bo_castle_h_stairs_a_tld 0
 
 
-spr_gon_castle_h_stairs_a_E 0 0 gon_castle_h_stairs_a 0 0
+spr_arabian_castle_stairs 11 0 arabian_castle_stairs bo_arabian_castle_stairs 0
 
 
 spr_gon_castle_h_stairs_b 0 0 gon_castle_h_stairs_b bo_castle_h_stairs_b 0
 
 
-spr_gon_castle_h_stairs_b_E 0 0 gon_castle_h_stairs_b 0 0
+spr_arabian_castle_stairs_b 11 0 arabian_castle_stairs_b bo_arabian_castle_stairs_b 0
 
 
 spr_gon_castle_h_gatehouse_a 0 0 gon_castle_h_gatehouse_a bo_castle_h_gatehouse_a_tld 0
 
 
-spr_gon_castle_h_gatehouse_a_E 0 0 gon_castle_h_gatehouse_a 0 0
+spr_arabian_castle_stairs_c 11 0 arabian_castle_stairs_c bo_arabian_castle_stairs_c 0
 
 
 spr_gon_castle_h_keep_a 0 0 gon_castle_h_keep_a bo_castle_h_keep_a 0
 
 
-spr_gon_castle_h_keep_a_E 0 0 gon_castle_h_keep_a 0 0
+spr_arabian_castle_battlement_section_a 0 0 arabian_castle_battlement_section_a bo_arabian_castle_battlement_section_a 0
 
 
 spr_gon_castle_h_keep_b 0 0 gon_castle_h_keep_b bo_castle_h_keep_b 0
 
 
-spr_gon_castle_h_keep_b_E 0 0 gon_castle_h_keep_b 0 0
+spr_arabian_castle_gate_house_a 0 0 arabian_castle_gate_house_a bo_arabian_castle_gate_house_a 0
 
 
 spr_gon_castle_h_house_a 0 0 gon_castle_h_house_a bo_castle_h_house_a 0
 
 
-spr_gon_castle_h_house_a_E 0 0 gon_castle_h_house_a 0 0
+spr_arabian_castle_house_a 0 0 arabian_castle_house_a bo_arabian_castle_house_a 0
 
 
 spr_gon_castle_h_house_b 0 0 gon_castle_h_house_b bo_castle_h_house_b 0
 
 
-spr_gon_castle_h_house_b_E 0 0 gon_castle_h_house_b 0 0
+spr_arabian_castle_house_b 0 0 arabian_castle_house_b bo_arabian_castle_house_b 0
 
 
 spr_gon_castle_h_house_c 0 0 gon_castle_h_house_c bo_castle_h_house_b 0
 
 
-spr_gon_castle_h_house_c_E 0 0 gon_castle_h_house_c 0 0
+spr_arabian_castle_keep_a 0 0 arabian_castle_keep_a bo_arabian_castle_keep_a 0
 
 
 spr_gon_castle_h_battlement_barrier 0 0 gon_castle_h_battlement_barrier bo_castle_h_battlement_barrier 0
@@ -2754,55 +2752,55 @@ spr_gondor_mt_stairs_arch_a_E 0 0 mt_stairs_arch_a 0 0
 spr_gondor_mt_town_house_a 0 0 mt_town_house_a bo_town_house_a 0
 
 
-spr_gondor_mt_town_house_a_E 0 0 mt_town_house_a 0 0
+spr_town_house_steppe_a 0 0 town_house_steppe_a bo_town_house_steppe_a 0
 
 
 spr_gondor_mt_town_house_b 0 0 mt_town_house_b bo_town_house_b 0
 
 
-spr_gondor_mt_town_house_b_E 0 0 mt_town_house_b 0 0
+spr_town_house_steppe_b 0 0 town_house_steppe_b bo_town_house_steppe_b 0
 
 
 spr_gondor_mt_town_house_c 0 0 mt_town_house_c bo_town_house_c 0
 
 
-spr_gondor_mt_town_house_c_E 0 0 mt_town_house_c 0 0
+spr_town_house_steppe_c 0 0 town_house_steppe_c bo_town_house_steppe_c 0
 
 
 spr_gondor_mt_town_house_d 0 0 mt_town_house_d bo_town_house_d 0
 
 
-spr_gondor_mt_town_house_d_E 0 0 mt_town_house_d 0 0
+spr_town_house_steppe_d 0 0 town_house_steppe_d bo_town_house_steppe_d 0
 
 
 spr_gondor_mt_town_house_f 0 0 mt_town_house_f bo_town_house_f 0
 
 
-spr_gondor_mt_town_house_f_E 0 0 mt_town_house_f 0 0
+spr_town_house_steppe_e 0 0 town_house_steppe_e bo_town_house_steppe_e 0
 
 
 spr_gondor_mt_town_house_h 0 0 mt_town_house_h bo_town_house_h 0
 
 
-spr_gondor_mt_town_house_h_E 0 0 mt_town_house_h 0 0
+spr_town_house_steppe_f 0 0 town_house_steppe_f bo_town_house_steppe_f 0
 
 
 spr_gondor_mt_town_house_i 0 0 mt_town_house_i bo_town_house_i 0
 
 
-spr_gondor_mt_town_house_i_E 0 0 mt_town_house_i 0 0
+spr_town_house_steppe_g 0 0 town_house_steppe_g bo_town_house_steppe_g 0
 
 
 spr_gondor_mt_town_house_j 0 0 mt_town_house_j bo_town_house_j 0
 
 
-spr_gondor_mt_town_house_j_E 0 0 mt_town_house_j 0 0
+spr_town_house_steppe_h 0 0 town_house_steppe_h bo_town_house_steppe_h 0
 
 
 spr_gondor_mt_town_house_l 0 0 mt_town_house_l bo_town_house_l 0
 
 
-spr_gondor_mt_town_house_l_E 0 0 mt_town_house_l 0 0
+spr_town_house_steppe_i 0 0 town_house_steppe_i bo_town_house_steppe_i 0
 
 
 spr_gondor_mt_wall 0 0 mt_wall bo_mt_wall 0
@@ -2970,13 +2968,13 @@ spr_pel_lighthouse 0 0 pel_lighthouse 0 0
 spr_gondor_tower_b_vp 0 0 gondor_tower_b_color bo_gondor_tower_b 0
 
 
-spr_gondor_tower_b_vp_E 0 0 gondor_tower_b_color 0 0
+spr_arabian_ramp_a 0 0 arabian_ramp_a bo_arabian_ramp_a 0
 
 
 spr_gondor_ship_vp 0 0 gondor_ship_color bo_gondor_ship 0
 
 
-spr_gondor_ship_vp_E 0 0 gondor_ship_color 0 0
+spr_arabian_ramp_b 0 0 arabian_ramp_b bo_arabian_ramp_b 0
 
 
 spr_gondor_ship_oars 0 0 gondor_ship_oars 0 0
@@ -3448,16 +3446,16 @@ spr_tree1_beech_d 0 0 beech_d bo_beech_d 0
 spr_tree1_beech_e 0 0 beech_e bo_beech_e 0
 
 
-spr_tree1_tree_12_a 0 0 tree_12_a bo_tree_12_a 0
-
-
-spr_tree1_tree_12_b 0 0 tree_12_b bo_tree_12_b 0
-
-
-spr_tree1_tree_12_c 0 0 tree_12_c bo_tree_12_c 0
-
-
 spr_trees_end 0 0 spike_a 0 0
+
+
+spr_fireplace_d_interior 0 0 fireplace_d bo_fireplace_d 0
+
+
+spr_harbour_a 0 0 harbour_a bo_harbour_a 0
+
+
+spr_ramp_small_a 0 0 ramp_small_a bo_ramp_small_a 0
 
 
 spr_football_ball 0 0 stone_ball 0 0
@@ -4179,7 +4177,7 @@ spr_elf_treehouse 0 0 elf_treehouse bo_elf_treehouse 0
 spr_rohan_woodstairs 0 0 rohan_woodstairs bo_rohan_woodstairs 0
 
 
-spr_rohan_woodstairs_E 0 0 rohan_woodstairs 0 0
+spr_arabian_lighthouse_a 0 0 arabian_lighthouse_a bo_arabian_lighthouse_a 0
 
 
 spr_thranduil_hall_entrance 0 0 thranduil_hall_entrance bo_thranduil_hall_entrance 0
@@ -5826,7 +5824,7 @@ spr_small_wall_f 0 0 small_wall_f_new bo_small_wall_f 0
 spr_small_wall_f2 0 0 small_wall_f2_new bo_small_wall_f2 0
 
 
-spr_gon_small_wall_a_1 0 0 arabian_wall_a bo_arabian_wall_a 0
+spr_gon_small_wall_a_1 0 0 arabian_wall_a_gon bo_arabian_wall_a 0
 
 
 spr_stairs_a 0 0 stairs_a_new bo_stairs_a 0

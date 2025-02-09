@@ -1279,8 +1279,8 @@ custom_banner_flag_types_end = custom_banner_backgrounds_begin
 custom_banner_flag_map_types_begin = mesh_custom_map_banner_01
 custom_banner_flag_map_types_end = custom_banner_flag_types_begin
 
-custom_banner_flag_scene_props_begin = spr_custom_banner_01
-custom_banner_flag_scene_props_end = spr_banner_a
+custom_banner_flag_scene_props_begin = 0
+custom_banner_flag_scene_props_end = 0
 
 custom_banner_map_icons_begin = icon_custom_banner_01
 custom_banner_map_icons_end = icon_banner_126
