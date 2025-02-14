@@ -172,6 +172,7 @@ slot_item_horse_charge	= slot_item_swing_damage
 
 slot_agent_target_entry_point     = 0 #for town walkers and siege archer reinforcements
 slot_agent_target_x_pos           = 1
+slot_agent_status                 = 1
 slot_agent_target_y_pos           = 2
 slot_agent_is_alive_before_retreat= 3
 slot_agent_is_in_scripted_mode    = 4

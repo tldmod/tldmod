@@ -6775,21 +6775,21 @@ mission_templates = [ # not used in game
 			(eq, ":hp", 100), # healthy agents can patrol
 			(agent_set_speed_limit,":enemy",4),
 			(agent_get_position, pos32, ":enemy"),
-			(try_for_range, "$positions", 1, 21),
-				(get_distance_between_positions, "$position_distance", "$positions", pos32),
+			(try_for_range, "$positions", 1, 21), #Invain: Why do we need a global for this?
+				(get_distance_between_positions, "$position_distance", "$positions", pos32), #Invain: Why do we need a global for this?
 				(neg|gt, "$position_distance", 400),
-				(agent_get_slot, "$last_agent_position", ":enemy", 10),
+				(agent_get_slot, "$last_agent_position", ":enemy", 10), #Invain: Why do we need a global for this? Also use a named slot for better clarity.
 				(store_current_scene, reg45),
-				(try_begin),
-					(eq, reg45, "$rescue_stealth_scene_1"),
-					(neg|eq, "$active_rescue", 4),
-					(call_script, "script_mt_sneak_1", ":enemy"),
+				(try_begin), #are these unused? Sorcerer mission sets  "$active_rescue" = 5
+					(eq, reg45, "$rescue_stealth_scene_1"), #Invain: Why do we need a global for this?
+					(neg|eq, "$active_rescue", 4), #Invain: Why do we need a global for this?
+					(call_script, "script_mt_sneak_1", ":enemy"), #this is used for sorcerer
 				(else_try),
-					(eq, reg45, "$rescue_stealth_scene_2"),
+					(eq, reg45, "$rescue_stealth_scene_2"), #unused
 					(neg|eq, "$active_rescue", 4),
 					(call_script, "script_mt_sneak_2", ":enemy"),
 				(else_try),
-					(eq, "$active_rescue", 4),
+					(eq, "$active_rescue", 4), #unused
 					(call_script, "script_isen_sneak_1", ":enemy"),
 				(try_end),
 				(try_begin),
@@ -7034,14 +7034,22 @@ mission_templates = [ # not used in game
 	(22 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]),(23 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]), 
 	(24 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]),(25 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]), 
 	(26 ,mtef_visitor_source|mtef_team_2 ,af_override_horse, aif_start_alarmed, 1,[]) 
-	],tld_common_wb_muddy_water+tld_common_battle_scripts+[ 	
-	(0,0,ti_once,[],[ (call_script, "script_infiltration_mission_synch_agents_and_troops"),
-						  (call_script, "script_infiltration_mission_set_hit_points"),
-						  (call_script, "script_wounded_hero_cap_mission_health")]),
-	(2,0,0, [], [(call_script, "script_infiltration_mission_update_companion_casualties")]),
-	(1,4,ti_once,[(main_hero_fallen)],
-	[
-	(try_begin),
+	],tld_common_wb_muddy_water+tld_siege_battle_scripts+[ 	
+	
+    (0,0,ti_once,[],[   
+        (call_script, "script_infiltration_mission_synch_agents_and_troops"),
+        (call_script, "script_infiltration_mission_set_hit_points"),
+        (call_script, "script_wounded_hero_cap_mission_health"),
+        (team_set_relation, 1, 2, 0),
+        (team_set_relation, 2, 1, 0),
+        (team_give_order, 1, 0, mordr_follow),
+    ]),
+
+    (2,0,ti_once, [], [(tutorial_box, "@You have evaded the patrols and crept close to the ruins. Find and kill the sorcerer! Do not let the guards stop you.", "@Kill the Sorcerer!"),]),	
+    (2,0,0, [], [(call_script, "script_infiltration_mission_update_companion_casualties")]),
+	
+    (1,4,ti_once,[(main_hero_fallen)],
+	[(try_begin),
 		(neg|check_quest_succeeded, "qst_mirkwood_sorcerer"),
 		(display_message, "@The_sorcerer_has_fled!", 4294901760),
 		(display_message, "@Report_this_ill_news_to_the_Lady_at_once.", 4294901760),
@@ -7053,109 +7061,186 @@ mission_templates = [ # not used in game
 	(finish_mission),
 	]),
 
-    #reinforcements if sorcerer is fleeing
-	(5,0, ti_once, [
-		  (try_for_agents, ":agent"),
-			(agent_is_ally|neg, ":agent"),
-			(agent_is_alive, ":agent"),
-			(agent_get_troop_id, ":troop", ":agent"),
-			(eq, ":troop", "trp_black_numenorean_sorcerer"),
-			(agent_get_slot, ":slot1", ":agent", 1),
-		  (try_end),
-		  (ge, ":slot1", 3), #if fleeing
-		],[
-		 (try_begin),
-			(ge, "$meta_alarm", 9),
-			(set_visitor, 21, "$guard_troop8", 0),(set_visitor, 22, "$guard_troop8", 0),(set_visitor, 23, "$guard_troop8", 0),(set_visitor, 24, "$guard_troop8", 0),(set_visitor, 25, "$guard_troop8", 0),
-		 (else_try),
-			(is_between, "$meta_alarm", 6, 9),
-			(set_visitor, 21, "$guard_troop3", 0),(set_visitor, 22, "$guard_troop3", 0),(set_visitor, 23, "$guard_troop3", 0),(set_visitor, 24, "$guard_troop3", 0),(set_visitor, 25, "$guard_troop3", 0),
-		 (else_try),
-			(is_between, "$meta_alarm", 5, 7),
-			(set_visitor, 21, "$guard_troop2", 0),(set_visitor, 22, "$guard_troop2", 0),(set_visitor, 23, "$guard_troop2", 0),(set_visitor, 24, "$guard_troop2", 0),(set_visitor, 25, "$guard_troop2", 0),
-		 (try_end),
-		 (reset_mission_timer_a)]),
+    #activate teams when approaching sorcerer position
+    (1,0,ti_once,[
+        (set_fixed_point_multiplier, 100),
+        (entry_point_get_position, pos5, 30),
+        (get_player_agent_no, ":player_agent"),
+        (agent_get_position, pos6, ":player_agent"),
+        # (get_distance_between_positions, reg78, pos6, pos5),
+        # (display_message, "@distance: {reg78}"),
+        (assign, ":activate_teams", 0),
+        (try_for_agents, ":agent_no", pos5, 3500),
+			(agent_is_alive, ":agent_no"), 
+			(agent_is_ally, ":agent_no"),
+            ] + (is_a_wb_mt==1 and [
+            (agent_is_in_line_of_sight, ":agent_no", pos5),
+            ] or []) + [
+            (assign, ":activate_teams", 1),
+        (try_end),
+        (eq, ":activate_teams", 1),
+        ],
+    [
+    (display_message, "@You have been spotted! Fight!"),
+    (team_set_relation, 1, 2, -1),
+    (team_set_relation, 2, 1, -1),
+    (get_player_agent_no, ":player_agent"),
+    (agent_play_sound, ":player_agent", "snd_evil_horn"),
+    ]),
 
-	(5,0,0, [],  [ 
-		(try_for_agents, ":agent"),
+	(1,0,0, [(store_mission_timer_a, ":time"), (gt, ":time", 6),],  [ 
+		
+        (get_player_agent_no, ":player_agent"),
+        (set_fixed_point_multiplier, 100),
+        
+        (try_for_agents, ":agent"),
 			(agent_is_ally|neg, ":agent"),
 			(agent_is_alive, ":agent"),
 			(agent_get_troop_id, ":troop", ":agent"),
 			(eq, ":troop", "trp_black_numenorean_sorcerer"),
-			(agent_get_slot, ":slot1", ":agent", 1),
-			
+			(agent_get_slot, ":slot1", ":agent", slot_agent_status), #0=base; 1=chanting; 2=activated; 3=fleeing; 4=fighting
+			(agent_get_position, pos4, ":agent"),
+            
+            (assign, ":numenemies", 0), #check for nearby guards
+            (assign, ":player_near", 0),
+            (try_for_agents, ":enemies"),
+                (agent_is_alive, ":enemies"),
+                (agent_is_ally|neg, ":enemies"),
+                (agent_get_position, pos5, ":enemies"),
+                (get_distance_between_positions, ":dist", pos4, pos5),
+                (le, ":dist", 2000),
+                (val_add, ":numenemies", 1),
+            (else_try),
+                (eq, ":enemies", ":player_agent"),
+                (agent_get_position, pos5, ":enemies"),
+                (get_distance_between_positions, ":distance_player", pos4, pos5),
+                (le, ":distance_player", 1000),
+                (assign, ":player_near", 1),
+            (try_end),
+            
+            # simplify this bit:
+            # 1 number of guards depends on stealth_results or meta_alarm
+            # 2 sorcerer always joins the fight when player is nearby or number of allies lower
+            # 3 sorcerer flees when hp shield is low and numer of allies low (set status), set slot_agent_target_entry_point
+            # 4 check for sorcerery reaching slot_agent_target_entry_point, make him stop and fight when nearby, spawn guards, reset hp shield, go back to 3
+            
             (try_begin),
 				(eq, ":slot1", 0),
-				(entry_point_get_position, pos5, 30),
+				(entry_point_get_position, pos5, 10),
 				(agent_set_scripted_destination, ":agent", pos5),
+                (entry_point_get_position, pos5, 30),
+                ] + (is_a_wb_mt==1 and [
+                (agent_set_look_target_position, ":agent", pos5),
+                ] or []) + [
                 (agent_play_sound, ":agent", "snd_ghost_ambient_long"),
-				(agent_set_slot, ":agent", 1, 1),
-			(else_try),
+				(agent_set_slot, ":agent", slot_agent_status, 1),
+                (agent_set_slot, ":agent", slot_agent_target_entry_point, 16), #for fleeing
+                #(agent_set_slot, ":agent", slot_agent_hp_shield, 300),
+                (display_message, "@The ritual has begun! You must hasten to disturb it!", color_bad_news),	
+			(else_try), #fighting
+				(eq, ":slot1", 1),
+                (this_or_next|lt, ":numenemies", 2),
+                (this_or_next|neg|agent_slot_ge, ":agent", slot_agent_hp_shield, 450),
+                (eq, ":player_near", 1),
+                (agent_set_slot, ":agent", slot_agent_status, 2), #activate sorcerer
+                (agent_clear_scripted_mode, ":agent"),
+                (agent_set_animation, ":agent", "anim_cancel_ani_stand"),
+                (display_message, "@The_sorcerer_has_joined_the_fight!_Kill_him!", color_bad_news),	
+                (stop_all_sounds, 0),
+			(else_try), #chanting
 				(eq, ":slot1", 1),
 				(agent_set_animation, ":agent", "anim_cheer_player"),
-                (particle_system_burst, "psys_scene_fog_black", pos5, 100),
-		        	#(play_sound, snd_ghost_ambient_long, 0), #spooky
-				(assign, ":numenemies", 0),
-				(try_for_agents, ":enemies"),
-					(agent_is_alive, ":enemies"),
-					(agent_is_ally|neg, ":enemies"),
-					(val_add, ":numenemies", 1),
-				(try_end),
-				(try_begin),
-                    (val_div, ":numenemies", "$stealth_results"), #normalize enemy count
-					(neg|gt, ":numenemies", 10), 
-					(agent_set_slot, ":agent", 1, 2), #activate sorcerer
-				(else_try),
-                    (get_player_agent_no, ":player_agent"),
-                    (agent_get_position, pos7, ":player_agent"),
-                    (get_distance_between_positions, ":dist", pos5, pos7),
-                    (le, ":dist", 500),
-                    (agent_set_slot, ":agent", 1, 2), #activate sorcerer
-                    #(display_message, "@player is close"),
-				(try_end),
-			(else_try),
+                (entry_point_get_position, pos5, 30),
+                (particle_system_burst, "psys_scene_fog_black", pos5, 100),                
+			(else_try), #fleeing
 				(eq, ":slot1", 2),
-				(store_random, ":rnd", 4),
-				(try_begin),
-					(neg|ge, ":rnd", 2),
-					(entry_point_get_position, pos6, 31),
-                       ] + (is_a_wb_mt==1 and [
-                       (agent_start_running_away, ":agent", pos6),
-                       ] or [(agent_set_scripted_destination, ":agent", pos6),]) + [
-                    (agent_set_speed_limit, ":agent", 5),
-					(display_message, "@The_sorcerer_is_fleeing!_Kill_him!", 4294967040),
-					(agent_set_slot, ":agent", 1, 3),
-                    (agent_set_slot, ":agent", slot_agent_hp_shield, 0),
-                    (stop_all_sounds, 0),
-				(else_try),
-					(ge, ":rnd", 2),
-					(agent_clear_scripted_mode, ":agent"),
-                    (display_message, "@The_sorcerer_has_joined_the_fight!_Kill_him!", 4294967040),			  
-					(agent_set_slot, ":agent", 1, 4),
-                    (agent_set_slot, ":agent", slot_agent_hp_shield, 50),
-                    (stop_all_sounds, 0),
-				(try_end),
-			(else_try),
+                (this_or_next|lt, ":numenemies", 2), #sorcerer can flee if hurt OR if only one ally nearby OR of player is too far away
+                (this_or_next|neg|agent_slot_ge, ":agent", slot_agent_hp_shield, 30),
+                (neq, ":player_near", 1),
+                (store_mul, ":score", ":numenemies", 10),
+                (store_agent_hit_points, ":health", ":agent", 0),
+                (val_add, ":score", ":health"),
+                (store_random_in_range, ":chance_flee", 0, 130),
+                (gt, ":chance_flee", ":score"),
+                (agent_get_slot, ":target_entry", ":agent", slot_agent_target_entry_point),
+                (entry_point_get_position, pos6, ":target_entry"),
+                   ] + (is_a_wb_mt==1 and [
+                   (agent_start_running_away, ":agent", pos6),
+                   ] or [(agent_set_scripted_destination, ":agent", pos6),]) + [
+                (agent_set_speed_limit, ":agent", 7), #make him slow for 1 second so it's easier to land a hit
+                (display_message, "@The_sorcerer_is_fleeing!_Kill_him!", color_bad_news),
+                #(agent_play_sound, ":agent", "snd_horror_scream_man"),
+                (agent_set_slot, ":agent", slot_agent_status, 3),
+                (agent_set_slot, ":agent", slot_agent_hp_shield, 0),
+                
+                #spawn reinforcements
+                (store_random_in_range, ":rand", 0, 3),
+                (try_begin),
+                    (ge, ":rand", 0), (assign, ":base_troop", trp_i2_mordor_orc),            
+                    (ge, ":rand", 1), (assign, ":base_troop", trp_i2_mordor_num_renegade),
+                    (ge, ":rand", 2), (assign, ":base_troop", trp_a2_guldur_orc_tracker),
+                (try_end),
+                (store_character_level, ":player_level", "trp_player"),        
+                #(val_sub, ":player_level", 15), #mininum level for this mission
+                (val_div, ":player_level", 4),
+                (assign, reg77, ":base_troop"),
+                (try_for_range, ":unused", 0, ":player_level"),
+                    (troop_get_upgrade_troop, ":upgrade_troop", ":base_troop", 0),
+                    (gt, ":upgrade_troop", 0),
+                    (assign, ":base_troop", ":upgrade_troop"),
+                (try_end),
+                (assign, reg78, ":base_troop"),
+                (display_message, "@base troop: {reg77}, upgrade: {reg78}"),
+                #number of enemies depends on meta_alarm
+                (store_div, ":num_reinforces", "$meta_alarm", 3),
+                (val_add, ":num_reinforces", 1),
+                (set_visitors, ":target_entry", ":base_troop", ":num_reinforces"),
+                
+                (team_set_order_position, 2, grc_everyone, pos6),
+                (team_give_order, 2, grc_everyone, mordr_stand_ground),
+			(else_try), #checkpoint
 				(eq, ":slot1", 3),
-				(agent_get_position, pos7, ":agent"),
-				(get_distance_between_positions, ":dist", pos6, pos7),
-				(neg|ge, ":dist", 500),
-				(display_message, "@The_sorcerer_has_fled!", 4294901760),
-				(display_message, "@Report_this_ill_news_to_the_Lady_at_once.", 4294901760),
+                (agent_set_speed_limit, ":agent", 12),
+                (store_agent_hit_points, ":health", ":agent", 0),
+                (val_add, ":health", 10),
+                (val_clamp, ":health", 60, 100),
+                 ] + (is_a_wb_mt==1 and [
+                (agent_set_speed_modifier, ":agent", ":health"),
+                ] or []) + [ 
+                (agent_get_slot, ":target_entry", ":agent", slot_agent_target_entry_point),
+                (entry_point_get_position, pos6, ":target_entry"),
+				(get_distance_between_positions, ":dist", pos6, pos4),
+				(lt, ":dist", 300),
+                (agent_set_slot, ":agent", slot_agent_status, 2),
+                (agent_set_slot, ":agent", slot_agent_hp_shield, 31),
+                (val_add, ":target_entry", 1),
+                (agent_set_slot, ":agent", slot_agent_target_entry_point, ":target_entry"),
+                (lt, ":target_entry", 20), #not reached the final entry                
+                (eq, ":player_near", 1),
+                   ] + (is_a_wb_mt==1 and [
+                   (agent_stop_running_away, ":agent"),
+                   ] or [(agent_clear_scripted_mode, ":agent"),]) + [                
+                (team_give_order, 2, grc_everyone, mordr_charge),
+            (else_try),
+                (eq, ":slot1", 3),
+                (assign, ":flee", 0),
+                (try_begin),
+                    (ge, ":target_entry", 20), #reached final entry?
+                    (lt, ":dist", 300),
+                    (neq, ":player_near", 1),
+                    (assign, ":flee", 1),
+                (else_try),
+                    (ge, ":distance_player", 10000),
+                    (assign, ":flee", 1),
+                (try_end),
+                (eq, ":flee", 1),
+				(display_message, "@The_sorcerer_has_fled!", color_bad_news),
+				(display_message, "@Report_this_ill_news_to_the_Lady_at_once.", color_bad_news),
 				(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,3),
 				(call_script, "script_fail_quest","qst_mirkwood_sorcerer"),
-				(agent_set_slot, ":agent", 1, 4),
+				(agent_set_slot, ":agent", slot_agent_status, 4),
 				(set_mission_result, -1),
 				(finish_mission),
-            ] + (is_a_wb_mt==1 and [
-            (else_try),
-                (get_player_agent_no, ":player_agent"),
-                (agent_get_position, pos7, ":player_agent"),
-                (agent_get_position, pos5, ":agent"),
-                (get_distance_between_positions, ":dist", pos5, pos7),
-                (le, ":dist", 500),
-                (agent_stop_running_away, ":agent"),
-            ] or []) + [
 			(try_end),
 		(try_end)]),
 
@@ -7167,7 +7252,7 @@ mission_templates = [ # not used in game
 			(agent_get_troop_id, ":troop", ":deadenemy"),
 			(eq, ":troop", "trp_black_numenorean_sorcerer"),
 			(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,2),
-			(display_message, "@The_sorcerer_is_dead!", 4294967040),
+			(display_message, "@The_sorcerer_is_dead!", color_good_news),
 			(call_script, "script_succeed_quest","qst_mirkwood_sorcerer"),
             (finish_mission,5), #InVain So you don't have to search for the remaining enemies once the sorcerer's dead																	   
 			(eq,"$rescue_stage",1), #dummy usage of global var
@@ -7188,7 +7273,7 @@ mission_templates = [ # not used in game
 		(assign, "$battle_won", 1),
 		(set_mission_result, 1),
 		(display_message, "@The battle is won!"),
-        (display_message, "@Venture deeper into the forest and find a way onward."),
+        #(display_message, "@Venture deeper into the forest and find a way onward."),
 		(call_script, "script_infiltration_mission_update_companion_casualties"),
 		],[
 		(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,2),

@@ -22373,19 +22373,20 @@ scripts = [
 	(set_visitor, 10, "trp_black_numenorean_sorcerer", 0),
 #InVain: defining sorcerer's bodyguard by player level instead of randomly. Did not touch guard_troops above in case they're used anywhere else.
 	(store_character_level, ":player_level", "trp_player"),
-    (assign, ":spawn_number", "$stealth_results"), #1-4
-    (val_min, ":spawn_number", 3),
+    (assign, ":spawn_number", "$meta_alarm"), #1-9
+    (val_div, ":spawn_number", 3),
+    (val_max, ":spawn_number", 1),
 
 	(try_begin),
 		(lt, ":player_level", 20),
 			
             #InVain: First 5 entry points are around the sorcerer
-			(set_visitors, 11, "trp_i2_mordor_orc", ":spawn_number"),(set_visitors, 12, "trp_a2_mordor_orc_archer", ":spawn_number"),(set_visitors, 13, "trp_i2_mordor_num_renegade", ":spawn_number"),
-            (ge, "$meta_alarm", 2),(set_visitors, 14, "trp_i3_mordor_num_warrior", ":spawn_number"),(set_visitors, 15, "trp_i4_mordor_num_vet_warrior", 1),
+			(set_visitors, 11, "trp_i3_mordor_num_warrior", ":spawn_number"),(set_visitors, 12, "trp_i4_mordor_num_vet_warrior", 1),(set_visitors, 13, "trp_i2_mordor_num_renegade", ":spawn_number"),
+            (ge, "$meta_alarm", 2),(set_visitors, 14, "trp_a2_mordor_orc_archer", ":spawn_number"),(set_visitors, 15, "trp_i3_mordor_large_orc", 1),
 			
             #InVain: Last 5 entry points are further away, troops will arrive later. If he flees, you will encounter them on the way.
-			(ge, "$meta_alarm", 5),(set_visitors, 16, "trp_i3_mordor_large_orc", 2),(set_visitors, 17, "trp_i4_mordor_fell_orc", 2),
-            (ge, "$meta_alarm", 7),(set_visitors, 18, "trp_a2_mordor_orc_archer", 2),(set_visitors, 19, "trp_i3_mordor_large_orc", 2),(set_visitors, 20, "trp_i4_mordor_num_vet_warrior", 1),
+			(ge, "$meta_alarm", 5),(set_visitors, 16, "trp_i3_mordor_large_orc", 1),(set_visitors, 17, "trp_i4_mordor_fell_orc", 1),
+            (ge, "$meta_alarm", 7),(set_visitors, 18, "trp_a2_mordor_orc_archer", 1),(set_visitors, 19, "trp_i3_mordor_large_orc", 1),(set_visitors, 20, "trp_i4_mordor_num_vet_warrior", 1),
 	(else_try),
 		(ge, ":player_level", 20), #Don't change numbers, only troop types. Sorcerer's behavior (flee or join the fight) is conditioned by number of remaining troops.
 			
@@ -22394,8 +22395,8 @@ scripts = [
             (ge, "$meta_alarm", 2),(set_visitors, 14, "trp_i4_mordor_num_vet_warrior", ":spawn_number"),(set_visitors, 15, "trp_i5_mordor_num_champion", 1),
 			
             #InVain: Last 5 entry points are further away, troops will arrive later. If he flees, you will encounter them on the way.
-			(ge, "$meta_alarm", 5),(set_visitors, 16, "trp_i4_mordor_fell_orc", 2),(set_visitors, 17, "trp_i4_mordor_fell_uruk", 2),
-            (ge, "$meta_alarm", 7),(set_visitors, 18, "trp_a4_mordor_fell_orc_archer", 2),(set_visitors, 19, "trp_i4_mordor_fell_orc", 2),(set_visitors, 20, "trp_i5_mordor_num_champion", 1),
+			(ge, "$meta_alarm", 5),(set_visitors, 16, "trp_i4_mordor_fell_orc", 1),(set_visitors, 17, "trp_i4_mordor_fell_uruk", 1),
+            (ge, "$meta_alarm", 7),(set_visitors, 18, "trp_a4_mordor_fell_orc_archer", 1),(set_visitors, 19, "trp_i4_mordor_fell_orc", 1),(set_visitors, 20, "trp_i5_mordor_num_champion", 1),
 	(try_end),
 	
 #	(try_begin),
@@ -22919,7 +22920,7 @@ scripts = [
 	 (else_try),(assign, reg20, "$positions"),(val_add, reg20, 1),(agent_set_scripted_destination, ":enemy_agent", reg20),
 	(try_end),
 ]), 
-#script_mt_sneak_2
+#script_mt_sneak_2 #unused
 ("mt_sneak_2",[
 	(store_script_param_1, ":enemy_agent"),
 	(try_begin),(eq, "$positions", 4),(agent_set_scripted_destination, ":enemy_agent", 1),
@@ -22935,7 +22936,7 @@ scripts = [
 	 (else_try),(assign, reg20, "$positions"),(val_add, reg20, 1),(agent_set_scripted_destination, ":enemy_agent", reg20),
 	(try_end),
 ]), 
-#script_isen_sneak_1
+#script_isen_sneak_1 #unused
 ("isen_sneak_1",[
 	(store_script_param_1, ":enemy_agent"),
 	(try_begin),(eq, "$positions", 1),(agent_set_scripted_destination, ":enemy_agent", 2),
