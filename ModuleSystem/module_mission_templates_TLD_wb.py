@@ -3734,7 +3734,6 @@ battle_encounters_effects = [
 # check for Fellbeast chance at battle start
 (ti_after_mission_start, 0, 120, [
 
-    (eq, 0, 1), #disabled for now
     #check involved factions (not player party)
     (assign, ":encountered_party_2_faction", -1),
     (try_begin),
