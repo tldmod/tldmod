@@ -16330,8 +16330,11 @@ scripts = [
     (store_script_param, ":troop", 1),
 	(assign, "$player_current_troop_type", ":troop"),
 	# copy faction
-    (store_troop_faction, ":fac", ":troop"),
-	(call_script, "script_player_join_faction", ":fac"),
+    (try_begin),
+        (eq, "$players_kingdom", 0), #if not assigned prior
+        (store_troop_faction, ":fac", ":troop"),
+        (call_script, "script_player_join_faction", ":fac"),
+    (try_end),
     (troop_get_slot, "$players_subkingdom",":troop", slot_troop_subfaction), # subfaction
 	# copy race
 	(troop_get_type,":race",":troop"),

@@ -4895,6 +4895,7 @@ mission_templates = [ # not used in game
   (0, 0, 10, [  (assign, ":continue", 1), 
                 (store_mission_timer_a,":mission_time"),
                 (ge,":mission_time",20),
+                (lt,"$defender_reinforcement_stage", 100), #needed for control
                 (try_begin), #limit defender reinforcements if player is attacker, so sieges don't drag on
                     (get_player_agent_no, ":player"),
                     (neg|agent_is_defender, ":player"),
@@ -5136,7 +5137,7 @@ mission_templates = [ # not used in game
 
     #update player team
     ] + (is_a_wb_mt==1 and [
-  (3, 0, 0,[],
+  (3, 0, 0,[(eq,"$battle_won",0),],
     [(store_mission_timer_a,":mission_time"),
     (get_player_agent_no, ":player_agent"),
     (agent_get_position, pos1, ":player_agent"), 
@@ -5210,6 +5211,7 @@ mission_templates = [ # not used in game
             (assign, "$att_reinforcements_needed", 1),
         (else_try),
             (agent_is_defender, ":player_agent"), 
+            (set_show_messages, 0),
             (try_for_agents, ":agent_no"),
                 (agent_is_alive, ":agent_no"),
                 (neg|agent_is_defender, ":agent_no"),
@@ -5217,6 +5219,7 @@ mission_templates = [ # not used in game
                 (agent_fade_out, ":agent_no"), #fade them out first, kill them afterwards
                 (agent_deliver_damage_to_agent, ":agent_no", ":agent_no", 1000),
             (try_end),
+            (set_show_messages, 1),
             (display_message, "@The remaining attackers disperse!"),
         (try_end),
     (else_try),     
@@ -5224,12 +5227,15 @@ mission_templates = [ # not used in game
         (this_or_next|neg|agent_is_defender, ":player_agent"),
         (main_hero_fallen),
         (display_message, "@The remaining defenders escape from the siege!"),
+        (assign,"$defender_reinforcement_stage",100),
+        (set_show_messages, 0),
         (try_for_agents, ":agent_no"),
             (agent_is_alive, ":agent_no"),
             (agent_is_defender, ":agent_no"),
             (agent_fade_out, ":agent_no"), #fade them out first, kill them afterwards
             (agent_deliver_damage_to_agent, ":agent_no", ":agent_no", 1000),
         (try_end),
+        (set_show_messages, 1),
     (try_end),
     (assign, "$reinforcements_arrived",0),
    ]),
