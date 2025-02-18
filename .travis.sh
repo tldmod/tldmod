@@ -217,4 +217,8 @@ _fold_start_ '[Archiving packages in the Wayback Machine]'
     curl -L -I "https://web.archive.org/save/https://bitbucket.org$bbpage/$bbfilewb"
     curl -L -I "https://web.archive.org/save/https://bitbucket.org$bbpage/"
 
+    curl -L -I "https://web.archive.org/save/https://github.com/tldmod/tldmod-downloads/releases/download/nightlies/$bbfile"
+    curl -L -I "https://web.archive.org/save/https://github.com/tldmod/tldmod-downloads/releases/download/nightlies/$bbfilewb"
+    curl -L -I "https://web.archive.org/save/https://github.com/tldmod/tldmod-downloads/releases/tag/nightlies"
+
 _fold_final_
