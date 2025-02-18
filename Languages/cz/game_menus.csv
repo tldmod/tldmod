@@ -5,10 +5,10 @@ mno_faction_intros|Nauč se o různých frakcích Středozemě
 mno_go_bback|Zpět
 menu_start_phase_2|^^^^^ Středozem. Na Východě se zvedá Stín, ^ přichází odtamtud dlouho skryté a  temné věci. ^ Svobodné národy se připravují na válku. Válku jakou nezažily po celý věk. ^ Lidé, elfové, trpaslíci a skřeti - všichni budou hrát svou roli. ^^ Jakou roli, to se teprve ukáže...
 mno_go_forth|Vydej se po své zvolené cestě...
-; mno_change_war_start_mode|War Starts:  {s7}
-; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
+mno_change_war_start_mode|Válka začíná:  {s7}
+mno_toggle_tutorial|Vyskakovací výuka:  {s7}
 mno_change_tld_options|Změnit NASTAVENÍ TLD.
-; mno_see_info_pages|TLD game concepts.
+mno_see_info_pages|Herní koncepty TLD.
 menu_start_game_3|^^^^^^^^Zvol si scénář:
 mno_custom_battle_scenario_1|Šarvátka, Gondor proti Haradu
 mno_custom_battle_scenario_12|Vyber frakce pro bitvu
@@ -127,7 +127,7 @@ mno_camp_action|Použít předmět.
 mno_camp_wait_here|Nějakou dobu tady tábořit.
 mno_camp_options|Změnit NASTAVENÍ TLD.
 mno_Dev_Menu|Menu pro vývojáře
-; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+menu_dev_menu|Tohle je Vývojářské nastavení, které vám zpřístupní hodně cheatů/nástrojů se kterými můžete hrát.^^ Nicméně, to povede k některým WIP událostem, spoštěčům a změnám v kampani, které můžou způsobit pády hry^^ Používej je na vlastní nebezpečí! ^^ Také, když nahlašujete bugy, řekněte nám prosím, jestli používáte Vývojářské menu.
 mno_cheat_enable|Zapnout cheaty/modderské nastavení.
 menu_game_options|^^^^^^^^Klikni na možnost pro přepnutí:
 mno_game_options_war_level_start|Válka začíná na úrovni: {s1}
@@ -160,8 +160,8 @@ mno_strat_tweaks_siege_reqs|Požadovaná síla k dobývání: {s7}
 mno_strat_tweaks_siege_relax_rate|Rychlost snižování požadavku na sílu pro dobývání: {reg1}
 mno_strat_tweaks_regen_rate|Rychlost obnovy síly frakce: {s7}
 mno_strat_tweaks_siege_regen_limit|Síla frakce se regeneruje pomaleji v: {reg1}
-; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
-; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
+mno_strat_tweaks_influence_gain_rate|Míra zisku vlivu: {reg0}%
+mno_strat_tweaks_rank_gain_rate|Míra zisku hodnosti: {reg0}%
 mno_strat_tweaks_back|Zpět do menu úprav.
 menu_camp_action|^^^^^^^^^ Který předmět?
 mno_camp_drink_water|Vypij Entí vodu!
@@ -255,11 +255,11 @@ menu_besiegers_camp_with_allies|{s1} zůstává v obležení. Zástavy {s2} vlaj
 mno_talk_to_siege_commander|Požádej o schůzku s velitelem.
 mno_join_siege_with_allies|Připoj se k dalšímu útoku.
 mno_join_siege_stay_back|Nařiď tvým vojákům, aby se přidali k dalšímu útoku bez tebe.
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+menu_moria_must_escape|^^Zdá se, že kniha pojednává o posledním pokusu trpaslíků o znovuosídlení Morie. Pokus, který zjevně skončil děsivou smrtí všech zúčastněných. Když přemýšlíte o jejich temném osudu, najednou uslyšíte drsné výkřiky a spěchající zvuk mnoha nohou.^ Přicházejí!^  Když rychle opustíte místnost, všimnete si, že zvuky vycházejí ze síně. Nezbývá vám nic jiného, ​​než utéct druhým směrem, do úzkého točitého tunelu a dolů... ^...^Po několika hodinách pochopíte, že jste ztraceni hluboko v Morii a potřebujete najít cestu ven.
 mno_moria_exit_scene|Najdi cestu ven!
 menu_castle_outside| Před tebou je {s2}. {s11} {s3} {s4}
 mno_cheat_steal_book_door|Získat knihu
-; mno_moria_enter|Return into main hall of Moria through the secret entrance
+mno_moria_enter|Vrať se do hlavní síně Morie skrze tajný vstup
 mno_moria_enter_door|Vejdi do Morie.
 mno_castle_start_siege|Obléhat {reg6?město:hrad}.
 mno_castle_leave|Odejít
@@ -291,7 +291,7 @@ menu_town_brawl_won|^^^^^Porazil si všechny nepřátele a stráže, které byly
 menu_close|Nic.
 menu_town|Dorazil jsi do místa {s60}. {s12}{s13}
 mno_town_menu_0|Jdi na nějaké místo.
-; mno_town_menu_0_door|Inspect...
+mno_town_menu_0_door|Kontrolovat...
 mno_town_approach|Navštívit {s1}...
 mno_town_castle|Jdi do {s1}.
 mno_town_castle_door|Dveře do hradu.
@@ -300,24 +300,24 @@ mno_town_center_door|Dveře do centra města.
 mno_aw_chamber_door|Otevřít dveře.
 mno_trade_with_arms_merchant|Navštiv {s40}.
 mno_trade_with_horse_merchant|Navštiv {s41}.
-; mno_town_prison_door|To the Training Grounds
-; mno_talk_to_healer|Speak with {s40}.
+mno_town_prison_door|Na cvičiště
+mno_talk_to_healer|Promluv si s {s40}.
 mno_talk_to_castle_commander|Navštívit kasárnu.
 mno_speak_with_elder|Promluv si s {s6}.
-; mno_town_ask|Ask around for persons of import...
-; mno_player_initiate_siege|Attack the {reg6?town:castle}...
+mno_town_ask|Poptat se okolo osob na nejdůležitější místa.
+mno_player_initiate_siege|Zaútoč na {reg6?town:castle}...
 mno_isengard_underground|Jdi do podzemních jeskyní.
 mno_isengard_underground_door|Jdi do podzemních jeskyní
 mno_tirith_toplevel|Vyšplhej na horní patro.
 mno_tirith_toplevel_door|Jít do Citadely!
 mno_erebor_gates|Navštiv Velké Brány.
-; mno_erebor_gates_door|Go to the Great Gates
-; mno_glittering_caves|Go to the Glittering Caves.
-; mno_glittering_caves_door|Go to the Glittering Caves
+mno_erebor_gates_door|Jdi k Velkým Bránám.
+mno_glittering_caves|Jdi do Třpytivých Jeskyních.
+mno_glittering_caves_door|Jdi do Třpytivých Jeskyních.
 mno_town_leave|Odejít...
 mno_town_leave_door|Opustit oblast
 mno_town_find_NPCs_cont|Udělej to.
-; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
+menu_town_find_NPCs_end|Když mluvíš s lidmi z {s2},  {reg3?našel jsi:{s3} byl nalezen} mimo lokací místních stájí a skladiště, kovárny, {s4} ^^{s6}
 menu_player_initiated_siege_result|Zaútočil jsi na centrum pod vlajkou {s2}.
 menu_disembark|Přeješ si vystoupit?
 mno_disembark_yes|Ano.
@@ -350,15 +350,15 @@ mno_explore|Prozkoumej toto místo.
 menu_ring_hunter_lair|^^^^Sledoval jsi stopy Lovců Prstenu skrz Temný hvozd a došel jsi k {s1}. Vidíš je, jak se chystají odejít s truhlou.
 mno_attack_lair|Zaútoč na ně hned
 mno_leave_bandit_lair|Prozatím odejít.
-; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
-; mno_go_with_the_raftmen|Take the raft to Dorwinion
-; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
-mno_ride_to_dorwinion_next|další...
-; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
-; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
-; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
-; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
-; mno_bandit_fortress_spirits|Go talk with the spirits.
+menu_raftmen|^^^^Následuješ řeku tekoucí na jihovýchod k Rhûnu, doufajíc že najdeš starou obchodní cestu.^^ Po nějaké době, dorazíš do malé vesnice která je postavení podél břehu řeky.^^Ptáš se vesničanů jak bys mohl dojít k cestě a jsi naveden k dvojici mužů kteří splavují řeku na voru.^^Chce to trochu vyjednávání ale zařídíš aby tě muži převezly po proudu řeky.
+mno_go_with_the_raftmen|Vezmi si vor do Dorwinionu
+menu_ride_to_dorwinion|^^^^Odpočíváš a užíváš si příjemné počasí zatímco muži ovládají vor po proudu řeky. Bystrá řeka, ledová a čistá uprostřed vodopádů a peřejí Osamělé Hory, zde je vlažná, klidná a blátivá.^^ V odpoledním slunci sleduješ kolem proplouvající zvlněné pláně a zelené lesy, zatímco vor pluje podél klikatých záhybů. Oblast je řídce posetá malými usedlostmi a vinicemi s nízkými kamennými hradbam a občas míjíš kůlovou chatu schovanou v rákosí.^^Klidný pohyb raftu ti pomůže usnout...
+mno_ride_to_dorwinion_next|Další...
+menu_amath_dollen_fortress|^^^^Z tvého zdřímání se vzbudíš pozdě odpoledne a zakrátko dorazíš k molu, kde muži kotví vor. Nasměrují vás na úzkou stezku, která zmizí v bažinaté trávě, a postaví tábor, během čekání na váš návrat.^^Jdeš po stezce, která rychle stoupá z mokřadů na travnatou pláň, a jdeš, dokud se nenapojí na starou obchodní cestu.^^Po nějaké době vidíš pevnost banditů.
+mno_bandit_fortress_with_companions|Přibliž se k Pevnosti Banditů pouze s tvým společníkem a pokuste se si promluvit s jejich vůdcem.
+mno_bandit_fortress_with_army|Zaútoč na pevnost banditů se všemi tvými muži.
+mno_bandit_fortress_against_easterlings|Braň pevnost proti obléhání
+mno_bandit_fortress_spirits|Jdi si promluvit s duchy.
 mno_leave_amath_dollen_fortress|Prozatím odejít.
 menu_gondor_reinforcement_event|^^^^^Svítí majáky Gondoru, Minas Tirith žádá o pomoc! ^^ Pánové jižních knížectví nyní pochodují na sever, aby bránili Bílé město před přicházející temnotou.
 mno_gondor_reinforcement_event_close|Zavřít
@@ -426,12 +426,12 @@ mno_cb_mordor3|Harad
 mno_cb_mordor4|Východňané
 mno_cb_mordor5|Morie
 mno_cb_mordor6|Gundabad
-; mno_cb_mordor7|Rhûn
+mno_cb_mordor7|Rhûn
 mno_cb_mordor8|Korzáři
 mno_rescue_mission|Proplížit se do doupěte kouzelníka, pod úkrytem noci.
 mno_next_rescue_scene_door|Pokračuj vpřed!
 mno_pick_troops1|Vyber společníky pro tento úkol, {reg0} vybráno
-; menu_pick_troops|Whom would you take with you into the stealth mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg65?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg0} companions.
+menu_pick_troops|Koho by sis sebou vzal na tajnou misi?    ^Jen ty nejvíc hbitý jednotky a společníci se budou moct k tobě přidat.     ^Podle člena skupiny s nejvíší dovednosti zálesáctví, {reg65?{s1} advises:you decide} si můžeš vzít sebou {reg11} jednotek.     ^^V současné době sis vybral {reg0} společníků.
 mno_go_forward|Ukončit výběr společníků a pokračovat.
 menu_burial_mound|Blížíš se k zakopané hromadě {s1} z {s2}, poražených v bitvě s jednotkami {s28}. Zbraně padlých jsou poházeny okolo.
 mno_pay_respects|Poklekněte a projevte úctu.
@@ -452,8 +452,8 @@ menu_death|Byl jsi zabit. Válka pokračuje, ale bez tebe.
 menu_animal_ambush|Ty a tví společníci jste se ocitli odděleni od zbytku vaši skupiny, když najednou...
 menu_animal_ambush_success|{s2} před tebou {reg0?padli:padli} jako obilí před kosou! Zanedlouho všichni útočníci leží na zemi, zranění nebo mrtví. {s3}
 menu_animal_ambush_fail|Zvířata vás koušou a trhají {reg0?,: a tvého společníka{reg2?s,:,}} ale naštěstí se ti podařilo je odrazit. Doufejme že na tebe znova nezaútočí .
-; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
-; mno_isengard_continue|Continue
+menu_isengard_flooding|^^^^^@Jsi obklopen mrtvými nepřáteli a vítěznými spojenci, včetně Entů; řvou, duní a troubí, až kameny praskají a padají všude kolem Orthancké věže. Jsou jako vyjící vichřice, lámou sloupy, vrhají laviny balvanů dolů šachtami, vyhazují do vzduchu obrovské kamenné desky jako listí... Nic takového jsi ještě nikdy neviděl.^^Bregalad -- nebo Quickbeam, jak ho znáš -- projde kolem a zastaví se, aby řekl, '{playername}! Opatrně! Drž se dál od věže -- brzy strhneme přehradu a přivedeme Isen do tohoto údolí, na krátkou dobu. Zjistíš že bude pro tebe těžké zde stát, myslím! Rychle, vzal sis jeho radu srdci a spěcháš pryč od Orthancu.^^ Kolem půlnoci se Železný Pas začíná plnit černými vkrádajícími se potoky a tůněmi. Nemůžeš si pomoci, ale chvěješ se, když vidíš kouř a páru stoupající ve velkých sloupech a velkou spirálu páry stoupající a klikatící se kolem věže, až to připomíná vysoký vrchol mraku, vespod ohnivý a nahoře osvícený měsícem. Hněv entů je pomalý, ale má zdrcující sílu...
+mno_isengard_continue|Pokračovat
 menu_build_your_scene|Zde si můžeš vytvořit vlastní bitevní scénář, použitím jednoho ze slotů níže a Editačního módu (musíš nejdříve přepnout editační mód na ZAPNOUT v M&B spouštěcí obrazovce v Nastavení). Poté můžeš odeslat scénář, který jsi vytvořil (jmenovitě, sco soubory ze složky TLD/SceneObj)  developerskému týmu TLD, a pokud bude dobrý, může se objevit v pozdějším vydání jako jeden z náhodných bojovišť!^^ Zkus specifikovat ve kterém regionu na mapě chceš aby se scénář odehrával.^ Pár rad: vyhni se hluboké vodě, strmým horám  a dalším nedosažitelným místům pokud nejsi zkušený vývojář a nevíš jak zabránit AI jednotkám aby chodily tam kde nechceš, a vytvoř AI síť na jiném místě.^ (Vložení #0-1 je pro útočníky, #4 pro obránce, nedotýkej se #5-8
 mno_scene1|Velká pláň (file scn custom 1.sco)
 mno_scene2|Střední pláň (file scn custom 2.sco)
@@ -467,4 +467,4 @@ mno_scene9|Malý les (file scn custom 9.sco)
 mno_back_3dot|Zpět...
 mno_back|Jdi zpět.
 mno_next|další...
-; mno_previous|Previous...
+mno_previous|Předchozí...

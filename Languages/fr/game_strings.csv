@@ -1423,7 +1423,7 @@ str_mordor_rumor_14|Gu kibum kelkum-ishi, burzum-ishi. Akha-gum-ishi ashi gurum.
 str_mordor_rumor_15|Isengard uruk-hai u bagronk sha pushdug Saruman-glob bubhosh skai !
 str_mordor_rumor_16|Si ça vous insulte, tuez-le. Si ça vous combat, tuez-le. Si ça vous regarde, tuez-le. Si c'est mort, mangez-le.
 str_mordor_rumor_17|Les Uruk-hai de Saruman disent que le soleil ne les dérange pas. Bûbhosh skai !
-str_mordor_rumor_18|Tous morts, tous pourris. Elfes, hommes et orques. Dans les Marais des Morts !
+str_mordor_rumor_18|Tous morts, tous pourris. Elfes, hommes et orques. Dans les Marais Morts !
 str_mordor_rumor_19|Ne te mets pas entre un Nazgûl et sa proie !
 str_mordor_rumor_20|Ceux de l'Isengard ? Des raclures de fumier d'un sale petit magicien ! Ils mangent de la chair d'orque, je le garantis.
 str_mordor_rumor_21|La forêt de Grand'Peur est déjà entre nos mains, mais les elfes ne le savent pas encore.
@@ -1588,13 +1588,13 @@ str_good_rumor_begin|Des cendres un feu sera rallumé, De l'ombre la lumière ja
 str_good_rumor_2|Les orques combattent mieux la nuit et sont plus faibles le jour.
 str_good_rumor_3|Les Uruk-hai sont une différente race d’orque qui ne craint pas la lumière du soleil !
 str_good_rumor_4|Après chaque défaite et sursis, l’Ombre prend une nouvelle forme et croît de nouveau.
-str_good_rumor_5|Les Marais des Morts… une terre souillée, malade au-delà de toute guérison.
+str_good_rumor_5|Les Marais Morts… Une terre souillée, malade au-delà de toute guérison.
 str_good_rumor_6|L’Ombre qui s’est levée peut seulement imiter, et non créer d'elle-mêmes. Je ne pense pas qu’elle ait donné vie aux orques, mais plutôt qu’elle les a pervertis et ruinés.
 str_good_rumor_7|Elle était appelée Vertbois et elle était peuplée d'elfes. La plus grande des forêts du Nord. Maintenant elle est devenue la forêt de Grand'Peur, grouillante de toutes sortes de créatures maléfiques.
 str_good_rumor_8|L’Argonath, les Piliers des rois, grands gardiens de l'ancienne frontière nord du Gondor.
 str_good_rumor_9|Amon Hen est le plus occidental des trois sommets à l’extrémité sud du Lac Nen Hithoel.
 str_neutral_rumor_begin|Demain, tout peut changer.
-str_neutral_rumor_2|Les Marais des Morts… une terre souillée et malade.
+str_neutral_rumor_2|Les Marais Morts… Une terre souillée et malade.
 str_neutral_rumor_3|Autrefois, cette terre était bien différente.
 str_neutral_rumor_4|Les hommes se battent plus faiblement la nuit. Mais il y en a certains qui sont capables de voir dans l'obscurité.
 str_evil_rumor_begin|Les orques combattent mieux la nuit, les hommes combattent mieux le jour.
@@ -1602,7 +1602,7 @@ str_evil_rumor_2|Combattez le cavalier avec la lance, le fantassin avec la flèc
 str_evil_rumor_3|Les grandes statues des faibles, aux abords de la grande rivière, ne resteront pas debout beaucoup plus longtemps.
 str_legendary_rumor_begin|La légende dit que les arbres se rencontrent pour parler dans Fangorn.
 str_legendary_rumor_amonhen|On dit qu’il y a un lieu spécial sur l’Anduin, quelque part où de grandes statues s’élèvent.
-str_legendary_rumor_deadmarshes|Une rumeur dit que tous les morts semblent vivants au milieu des Marais des Morts.
+str_legendary_rumor_deadmarshes|Une rumeur dit que tous les morts semblent vivants au milieu des Marais Morts.
 str_legendary_rumor_mirkwood|Des créatures autres que des orques rôdent près de la forêt de Grand'Peur.
 str_legendary_rumor_fangorn|Fangorn est une forêt qu’il vaut mieux éviter. Des choses étranges s’y déroulent.
 str_last_rumor|Je n’ai rien entendu d’intéressant dernièrement.
@@ -1816,7 +1816,7 @@ str_fullname_region_the_wold|le Wold, la région nord-est du Riddermark du Rohan
 str_fullname_region_gap_of_rohan|la Brèche du Rohan, frontière occidentale du Rohan, une région contestée entre les Rohirrim et les Dunlandais.
 str_fullname_region_entwash|les Bouches de l'Entalluve, où l'Entalluve se jette dans l'Anduin
 str_fullname_region_wetwang|le Nindalf, les marais du Wetwang
-str_fullname_region_dead_marshes|les Marais des Morts, emplacement de la grande bataille de Dagor Dagorlad, maintenant un lieu maudit
+str_fullname_region_dead_marshes|les Marais Morts, emplacement de la grande Bataille de Dagorlad, maintenant un lieu maudit
 str_fullname_region_isengard|Nan Curunir, la vallée d'Isengard
 str_fullname_region_fangorn|la Forêt de Fangorn, où on dit que les arbres parlent.
 str_fullname_region_brown_lands|les Terres Brunes, recouvrant la région entre l'Emyn Muil et la forêt de Grand'Peur

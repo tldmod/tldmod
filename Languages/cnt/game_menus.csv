@@ -291,7 +291,7 @@ menu_town_brawl_won|^^^^^你擊敗了所有對手和前來鎮壓的守衛。你�
 menu_close|沒什麼。
 menu_town|你抵達了{s60}。{s12}{s13}
 mno_town_menu_0|前往某處。
-; mno_town_menu_0_door|Inspect...
+mno_town_menu_0_door|檢查...
 mno_town_approach|接近{s1}...
 mno_town_castle|前往{s1}。
 mno_town_castle_door|進入城堡的門。
@@ -452,8 +452,8 @@ menu_death|你已經被殺害了。雖然戰爭仍舊如火如荼，但你將不
 menu_animal_ambush|你和你的同伴發現跟隊伍的其他人走散了，忽然間...
 menu_animal_ambush_success|{s2}在你面前如同收割麥子一般地{reg0?倒下:倒下}！很快地所有攻擊者都躺在地上，受傷或已死亡。{s3}
 menu_animal_ambush_fail|動物撕咬你{reg0?,:和你的同伴{reg2?,:,}}但幸運的是你設法打退了牠們。希望牠們不會再次攻擊你。
-; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
-; mno_isengard_continue|Continue
+menu_isengard_flooding|^^^^^@你被死去的敵人和勝利的盟友包圍，包括樹人；他們咆哮、轟鳴、吹號，直到石頭在奧桑克塔周圍裂開並掉落。他們就像呼嘯的狂風，打破柱子，把巨石的雪崩扔下井道，將巨大的石板像葉子一樣拋向空中……這是你前所未見的場景。布雷戈拉德——或者你所知道的迅速樹梁——大步走過來，僅停下來說：「{playername}！小心！離塔遠點——我們很快就會打破大壩，將艾辛河帶入這個山谷，雖然只是一小會兒。我想你會發現很難一直站在這裡！」你迅速接受他的建議，匆匆離開奧桑克塔。午夜時分，艾辛格開始被黑色的潛流和水池填滿。當你看到煙霧和蒸汽在空中冒出巨大的柱子，並且一股巨大的蒸汽捲繞著塔，直到它看起來像一座高聳的雲峰，底下燃燒著，頂上被月光照亮時，你不禁顫抖。樹人的憤怒來得緩慢，但擁有不可抵擋的力量……
+mno_isengard_continue|繼續
 menu_build_your_scene|你可以打造自己的戰場場景。首先在遊戲設定中打開編輯模式，然後選擇底下任意一個存位(你需要先在M&B啟動螢幕設定中將編輯模式切換為ON，然後進入場景中按Ctrl+E打開編輯模式)。  你可以將你創造的場景提交給TLD製作組(TLD/SceneObj資料夾中的sco檔)，做得好的話，它將會作為隨機戰場之一出現在以後的版本中！^^ 記得說明你想要自己作的場景出現在地圖上的哪個地方。^ 附加提示：避免製作深水、陡峭或其他難以通行的地形，除非你是經驗豐富的場景製作者並且知道如何利用AI網格讓AI部隊避開指定區域。^ (#0-1 用於攻擊方，#4用於防守方，別碰#5-8
 mno_scene1|大型平原(file scn custom 1.sco)
 mno_scene2|中型平原(file scn custom 2.sco)

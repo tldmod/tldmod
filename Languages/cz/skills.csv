@@ -1,9 +1,9 @@
 skl_trade|Obchod
-skl_trade_desc|Učiní kováře a zásobovací mistry více kooperativními a budou nabízet lepší vybavení. (Skupinová schopnost)
+skl_trade_desc|Učiní kováře a zásobovací mistry více kooperativními a budou nabízet lepší vybavení. (Schopnost družiny)
 skl_leadership|Vůdcovství
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
+skl_leadership_desc|Každý bod zvýší maximální počet vězňů o 5 (3 u společníků), zvyšuje morálku družiny a soudržnost v bitvě. Umožňuje rekrutovat více a víc silné dobrovolníky ochotných vás následovat. (Osobní dovednost)
 skl_prisoner_management|Vězeňský management
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
+skl_prisoner_management_desc|Každá úroveň této dovednosti zvýší maximální počet věžňů o%d. Zvyšuje šanci zajmout a udržet vězně. (Schopnost skupiny)
 skl_persuasion|Zálesáctví
 skl_persuasion_desc|Schopnost přežít v divoké přírodě a přizpůsobit si ji k obrazu svému. Tato dovednost zvyšuje schopnost družiny schovat se před nepřítelem, a rychlost tvé družiny v lese. (Dovednost skupiny)
 skl_engineer|-----
@@ -15,19 +15,19 @@ skl_surgery_desc|Kazdy bod teto dovednosti dá 4%% šanci ze smrtelně zraněný
 skl_wound_treatment|Léčba zranění
 skl_wound_treatment_desc|Léčeni skupiny je o 20%% rychlejší za každou úroveň dovednosti. (Dovednost skupiny)
 skl_inventory_management|Organizace inventáře
-skl_inventory_management_desc|Zvyšuje kapacitu inventáře o +6 za každou úroveň dovedonsti. Snižuje konzumaci jídla. (Vůdcova dovednost)
+skl_inventory_management_desc|Zvyšuje kapacitu inventáře o +6 za každou úroveň dovedonsti. Snižuje konzumaci jídla. (Dovednost velitele)
 skl_spotting|Pozorování
 skl_spotting_desc|Skupina vidí o 10%% dál každou úroveň dovednosti. (Dovednost skupiny)
 skl_pathfinding|Hledání cest
 skl_pathfinding_desc|Rychlost na mapě je o 3%% vetší každou novou úroveň dovednosti. (Dovednost skupiny)
 skl_tactics|Taktika
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)
+skl_tactics_desc|Zvyšuje výhodu při bitvě. Zvyšuje vzdálenost pro připojení se do bitvy pro nepřátelské družiny a snižuje vzdálenost pro připojení se do bitvy pro přátelské družiny o 3 %% za každou úroveň. (Dovednost velitele)
 skl_tracking|Stopování
-skl_tracking_desc|Stopy poskytnou více informací. (Dovednost skupiny)
+skl_tracking_desc|Stopy poskytnou více informací. (Dovednost družiny)
 skl_trainer|Trenér
 skl_trainer_desc|Každý den, každý hrdina s touto dovedností přidá nějaké zkušenosti ostatním členům skupiny jejichž úroveň je nižší než jeho/její. Zkušenosti se dostávají po:{0,4,10,16,23,30,38,46,55,65,80}. (Osobní dovednost)
 skl_looting|Rabování
-skl_looting_desc|Zvyšuje počet a kvalitu kořist získané po bitvě. (Schopnost skupiny)
+skl_looting_desc|Zvyšuje počet a kvalitu kořisti získané po bitvě. (Schopnost skupiny)
 skl_horse_archery|Střelba z koně
 skl_horse_archery_desc|Snižuje sankce poškození a přesnosti při střelbě nebo házení na koni. (Osobní dovednost)
 skl_riding|Jezdectví

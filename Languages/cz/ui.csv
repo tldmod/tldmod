@@ -10,22 +10,22 @@ ui_you_dont_have_value|Nemáš: %s
 ui_merchant_cant_afford_value|%s: Dáváš nám více než potřebujeme! Možná si toho nech více pro sebe ( dáváš nám zboží za %s, máme jen %s).
 ui_merchant_pay_whatever|Ne, nic z toho nepotřebuji, nechte si to.
 ui_horse|Osedlat
-ui_reclaim_your_sold_goods|Než to uděláte,vraťte zboží které jste si vzali 
-ui_return_your_bought_goods|Než to uděláte,vraťte zboží které jste si vzali 
-ui_return_price|při vrácení: +%d Res.P.
-ui_sell_price|prodej: +%d Res.P.
-ui_reclaim_price|získat zpět: - %d Res.P.
-ui_buying_price|cena: - %d Res.P.
+ui_reclaim_your_sold_goods|Získej zpět zboží které jsi věnoval předtím než to dáš!
+ui_return_your_bought_goods|Vraťt zpět zboží které jsi vzal předtím než to dáš!
+ui_return_price|při vrácení: +%d Prostředků
+ui_sell_price|prodej: +%d Prostředků
+ui_reclaim_price|získat zpět: - %d Prostředků
+ui_buying_price|cena: - %d Prostředků
 ui_notification_riding_skill_not_enough|Tvé jezdectví není dostatečné pro toto zvíře.
 ui_notification_payment_value|Spotřebuje %s
 ui_notification_payment_receive_value|Získá %s
 ui_weekly_cost_value|Údržba: %s
 ui_sell|Prodat
 ui_hire|Naverbovat
-ui_notification_cant_hire|(nedostatek Res.P. pro naverbování)
-ui_joining_cost_weekly_wage|Odvod: %d Res.P.  --  Údržba: %d Res.P.
-ui_weekly_wage|Údržba: %d Res.P.
-ui_price|Cena: %d Res.P.
+ui_notification_cant_hire|(nedostatek prostředků pro naverbování)
+ui_joining_cost_weekly_wage|Odvod: %d Prostředků  --  Údržba: %d Prostředků
+ui_weekly_wage|Údržba: %d Prostředků
+ui_price|Cena: %d Prostředků
 ui_cant_reload_this_weapon_on_horseback|Tato zbraň nejde nabít na koni.
 ui_delivered_number_damage_to_horse|Zasazeno %d poškození koni/vrku.
 ui_horse_charged_for_number_damage|Kůň zaútočíl za %d poškození.
@@ -33,8 +33,8 @@ ui_horse_received_number_damage|Kůň obdržel %d poškození .
 ui_horse_fell_dead|Jezdecké zvíře padlo...
 ui_horse_crippled|Jezdecké zvíře je chromé...
 ui_you_got_value|%s obdrženo.
-ui_has_deserted_the_party|opustil skupinu.
-ui_have_deserted_the_party|opustili skupinu.
+ui_has_deserted_the_party|opustil družinu.
+ui_have_deserted_the_party|opustil družinu.
 ui_loading_textures|Načítám textury (buď trpělivý)...
 ui_order_hold_fire_toggle|Nestřílet/Střílet dle libosti (přepnout)
 ui_order_dismount_toggle|Přikázat Sesednout z/Nasednout na (přepnout)
@@ -42,33 +42,33 @@ ui_mount_horses_e_|%s, Nasednout na koně!
 ui_hold_fire_e_|%s, Nestřílet!
 ui_fire_at_will_e_|%s, Střílet dle libosti!
 ui_recent_messages|Poslední zprávy
-ui_value_denars|%d Resource Pts.
+ui_value_denars|%d Prostředky
 ui_cannot_be_used_on_horseback|Nelze použít na koni
 ui_upgrade_to_value| Povýšit na %s
 ui_notification_cant_upgrade|(Nelze povýšit jednotky v jiné skupině)
 ui_lance_control|Ovládání Kopí:
 ui_manual_easy|Manuál (Jednoduchý)
 ui_manual_hard|Manuál (těžký)
-; ui_campaign_ai|Campaign AI (Unused in TLD):
+ui_campaign_ai|Kampaňové AI (Nepoužité v TLD)
 ui_crouch|Skrčit
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Jste si jistý že chcete Importovat postavu?
-; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: Ironflesh, Power Strike, Power Throw, Power Draw.
+ui_explanation_strength|Síla: Každý bod přidává +1 bod zdraví. Nad 1/3 síly se nelze naučit tyto schopnosti: Odolnost, Síla úderu, Síla vrhu, Síla napnutí.
 ui_explanation_agility|Pohyblivost: Za každý bod dostaneš pět zbraňových bodů a zvyšuje se rychlost zacházení se zbraněmi o 0.5%. Nad 1/3 pohyblivosti se nelze naučit tyto schopnosti: Mistr zbraní, Štít, Kondice, Jezdectví, Střelba z koně a Rabování.
-; ui_explanation_intelligence|Intelligence: (Wisdom) The deep understanding of nature and crafts. Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Bargainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, First Aid, and Wildcraft.
-; ui_explanation_charisma|Charisma: (Will) The power to inspire or dominate. Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Trainer, Leadership.
+ui_explanation_intelligence|Inteligence: (Moudrost) Každý bod inteligence ihned přidá jeden bod schopností navíc a při některých příležitostech mírně zvyšuje zisk XP. Nad 1/3 inteligence se nelze naučit tyto schopnosti: Trenér, Stopování, Taktika, Hledání cest, Pozorování, Organizace inventáře, Léčba zranění, Chirurgie a První pomoc.
+ui_explanation_charisma|Charisma: (Vůle) Každý bod zvyšuje maximální velikost tvé družiny o +1. (0.5 pro společníky). Nad 1/3 charisma se nelze naučit tyto schopnosti: Zálesáctví, Vězeňský management, Vůdcovství a Obchod.
 ui_delivered_number_damage|Zasazeno %d poškození.
-ui_mission_losses_killed|Zabil :
+ui_mission_losses_killed|zabit :
 ui_party_losses|%s : %d Zraněno -- %d zabito z %d
 ui_following|Sleduje
 ui_accompanying|Doprovází
 ui_dumping_value_items|%d předmětů bude navždy ztraceno, jste si jist?
 ui_dumping_value_item|Jeden předmět bude ztracen na vždy, jste si jist?
-ui_notification_requirements_not_met|Nemáte dostatečnou dovednost nebo Atribut pro tuto zbraň.
+ui_notification_requirements_not_met|Nemáte dostatečnou dovednost nebo vlastnosti pro tuto zbraň.
 ui_disband|Propustit
-ui_you_hit_a_friendly_troop|Zasáhl jsi spřátelenou Jednotku!
+ui_you_hit_a_friendly_troop|Zasáhl jsi spřátelenou jednotku!
 ui_you_are_not_carrying_any_arrows|Nemáš u sebe žádné šípy.
 ui_received_number_damage|Obdrženo %d poškození.
 ui_you_have_improved_your_proficiency_in_value_to_number|Zvýšil jsi svou dovednost v %s na %d.
