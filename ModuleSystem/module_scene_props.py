@@ -5719,7 +5719,7 @@ scene_props = [
       (scene_prop_get_slot, ":rotation", ":instance_no", slot_prop_active),
       (try_begin),
         (gt, ":rotation", -10),
-        (call_script, "script_scene_viewpoint_effect"),
+        (call_script, "script_scene_viewpoint_effect", ":instance_no"),
       (try_end),
       (le, ":rotation", -1),
       (val_sub, ":rotation", 10), #counter-clockwise

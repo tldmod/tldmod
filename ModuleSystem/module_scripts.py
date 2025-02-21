@@ -4481,6 +4481,10 @@ scripts = [
       (eq, cheat_switch, 1),
       (call_script, "script_party_calculate_strength", ":party_no", 0),
       (context_menu_add_item, "@{!}Debug str: {reg0}", 3),
+       ] + (is_a_wb_script==1 and [
+      (party_get_ai_initiative, reg2, ":party_no"),
+      (context_menu_add_item, "@{!}initiative: {reg2}", 4),
+       ] or []) + [
     (try_end),
     
     ] + (is_a_wb_script==1 and [
@@ -32422,7 +32426,8 @@ if is_a_wb_script==1:
 
   #scene_viewpoint_effect
   ("scene_viewpoint_effect",
-   [(store_current_scene, ":cur_scene"),
+   [(store_script_param_1, ":instance_no"),
+   (store_current_scene, ":cur_scene"),
     (assign, ":int_missing", 0),
     (assign, ":relation_missing", 0),
     (set_fixed_point_multiplier, 100),
@@ -32517,6 +32522,32 @@ if is_a_wb_script==1:
         (scene_slot_eq, ":cur_scene", slot_scene_viewpoint, 0),
         (scene_set_slot, ":cur_scene", slot_scene_viewpoint, 1),
         (add_xp_as_reward, 600),
+     (else_try),
+        (eq, ":cur_scene", "scn_erebor_gate"),
+        (assign, ":int_missing", 1),
+        (store_attribute_level, ":int", "trp_player", ca_intelligence),
+        (gt, ":int", 11),
+        (assign, ":int_missing", 0),
+        (tutorial_message, "@A flock of ravens circles around you. You do not understand what they say, what news they bring from distant lands. Yet you feel comforted, knowing that these wise animals are of old friends to the King under the Mountain.",0, 15),
+        (try_for_prop_instances, ":ravens", spr_birds_crebain, somt_object),
+            (scene_prop_fade_out, ":ravens", 5),
+        (try_end),
+        (try_for_range, ":unused", 0, 5),
+            (prop_instance_get_position, pos10, ":instance_no"),
+            (position_rotate_z, pos10, -90),
+            (store_random_in_range, ":dist", 100, 300),
+            (position_move_y, pos10, ":dist"),
+            (store_random_in_range, ":displace", 100, 200),
+            (position_move_x, pos10, ":displace"),
+            (position_move_z, pos10, -600),
+            (position_rotate_z, pos10, 180),
+            (set_spawn_position, pos10),
+            (spawn_scene_prop, spr_birds_crebain),
+        (try_end),
+        (play_sound, "snd_raven", sf_2d|sf_vol_10),
+        (scene_slot_eq, ":cur_scene", slot_scene_viewpoint, 0),
+        (scene_set_slot, ":cur_scene", slot_scene_viewpoint, 1),
+        (add_xp_as_reward, 300),        
      (else_try), #failure
         (eq, ":int_missing", 1),
         (display_message, "@Looking around, you do not understand the significance of this place.",0, 10),

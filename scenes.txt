@@ -564,10 +564,10 @@ scn_mordor_castle_b mordor_castle_b 1 interior_castle_morgul bo_interior_castle_
   0 
   1  833 
  0 
-scn_rhun_south_camp_center rhun_south_camp_center 4352 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
+scn_rhun_south_camp_center rhun_south_camp_center 4352 none none 0 0 100 100 -100 0x00000003a0001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
- outer_terrain_flat 
+ outer_terrain_rohan 
 scn_rhun_north_camp_center rhun_north_camp_center 4352 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
@@ -1200,10 +1200,10 @@ scn_north_rhun_camp_siege north_rhun_camp_siege 4352 none none 0 0 100 100 -100 
   0 
   1  833 
  outer_terrain_rohan 
-scn_rhun_south_camp_siege rhun_south_camp_siege 4352 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
+scn_rhun_south_camp_siege rhun_south_camp_siege 4352 none none 0 0 100 100 -100 0x00000003a0001d9300031ccb0000156f000048ba0000361c 
   0 
   0 
- outer_terrain_flat 
+ outer_terrain_rohan 
 scn_rhun_north_camp_siege rhun_north_camp_siege 4352 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
   0 
   0 

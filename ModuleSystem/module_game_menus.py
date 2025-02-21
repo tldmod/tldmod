@@ -3607,6 +3607,7 @@ game_menus = [
 ( "camp_khamtest",0,
 	"{!}^^^^^Click on an option to toggle.^^^Tweaks Gondor to have more troops in a party, gives them more hosts, gives them hosts more frequently, and lets Gondor lords wait longer to gather.^^Have to wait for the trigger to occur","none",[],
     [
+    ("camp_khamtest_back",[],"{!}Back",[(jump_to_menu, "mnu_dev_menu")]),
     ("enable_kham_cheat",[],"{!}Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@{!}Kham Cheat Mode ON!")]),
     ] + (is_a_wb_menu==1 and [
     ("action_view_all_items",[],"{!}View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
@@ -4895,6 +4896,11 @@ game_menus = [
         (allow_ironman, 0),
         ] or []) + [
          (display_message, "@{!}Ironman turned off"),
+      ]),
+
+      ("camp_mod_6",   [],
+      "{!}Reset weather (for scening)",
+      [  (set_global_haze_amount, 0), (set_global_cloud_amount, 0), (set_rain, 0, 0),
       ]),
 
 	 #("test1",[],"Test: pay upkeep now", [(call_script,"script_make_player_pay_upkeep")]),
@@ -9473,6 +9479,9 @@ game_menus = [
 						[
                         (call_script, "script_initialize_center_scene", "scn_erebor_gate"),
                          #(set_jump_mission, "mt_town_center"),
+                         (assign,"$dungeons_in_scene",1),
+                         (assign, "$bs_night_sound", "snd_wind_ambiance"),
+                         (assign, "$bs_day_sound", "snd_wind_ambiance"),
 						 (jump_to_scene, "scn_erebor_gate"),
 						 (change_screen_mission)],"Go to the Great Gates"),
 
@@ -10148,7 +10157,7 @@ game_menus = [
           (eq, "$g_encountered_party", "p_legend_deadmarshes"),
           (assign, ":lp_scene", "scn_deadmarshes"),
 		  (assign, "$bs_day_sound", "snd_deadmarshes_ambiance"),
-		  (assign, "$bs_night_sound", "snd_deadmarshes_ambiance"),
+		  (assign, "$bs_night_sound", "snd_wind_ambiance"),
         (else_try),
           (eq, "$g_encountered_party", "p_legend_mirkwood"),
           (assign, ":lp_scene", "scn_mirkwood"),

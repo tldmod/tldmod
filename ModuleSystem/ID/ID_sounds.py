@@ -286,5 +286,6 @@ snd_camel_sounds = 284
 snd_camel_death = 285
 snd_army_good = 286
 snd_bell = 287
+snd_raven = 288
 
 

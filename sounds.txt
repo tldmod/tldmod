@@ -662,7 +662,7 @@ soundsfile version 2
  camelDeath02.wav 1872
  camelDeath03.wav 1872
  gondor_army.wav 2384
-288
+289
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -951,3 +951,4 @@ snd_camel_sounds 0 4 654 655 656 657
 snd_camel_death 1872 3 658 659 660 
 snd_army_good 2384 1 661 
 snd_bell 1872 4 609 610 611 612 
+snd_raven 1872 1 613 
