@@ -640,11 +640,11 @@ scn_morannon_castle morannon_castle 256 none none 0 0 100 100 -100 0x00000007300
   0 
   1  833 
  outer_mountains2west_mordor 
-scn_amon_hen amon_hen 256 none none 0 0 100 100 -100 0x0000000630000500000c2304000003ce000047ca0000794b 
+scn_amon_hen amon_hen 256 none none 0 0 100 100 -100 0x00000002a0000500400c2304000003ce800047ca0000794b 
   0 
   0 
  outer_terrain_osgiliath_9 
-scn_deadmarshes deadmarshes 5376 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+scn_deadmarshes deadmarshes 4352 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
   0 
   0 
  outer_terrain_flat 

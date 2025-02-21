@@ -17,6 +17,38 @@ import string
 #  5) Triggers: Simple triggers that are associated with the scene prop
 ####################################################################################################################
 
+dead_marches_effect = [
+ ] + (is_a_wb_sceneprop==1 and [ 
+    (ti_on_init_scene_prop, [(store_trigger_param_1, ":instance_no"),
+        #(neg|is_edit_mode_enabled),
+        (scene_prop_set_visibility, ":instance_no", 0)
+        ]),
+    (ti_on_scene_prop_is_animating,[(store_trigger_param_1, ":instance_no"),
+        (scene_prop_slot_eq, ":instance_no", slot_prop_active, 0), 
+        (prop_instance_get_position, pos6, ":instance_no"), 
+        (position_move_z, pos6, 200, 1), 
+        (position_get_z, ":height", pos6), 
+        (gt, ":height", 0), 
+        (particle_system_burst, "psys_candle_light_small", pos6, 3),
+    ]),
+    
+    (ti_on_scene_prop_animation_finished,[
+        (store_trigger_param_1, ":instance_no"),
+        (try_begin),
+            (scene_prop_slot_eq, ":instance_no", slot_prop_active, 0),
+            (scene_prop_set_slot, ":instance_no", slot_prop_active, 1),
+            (particle_system_burst, "psys_candle_light_small", pos6, 60),
+            (set_fixed_point_multiplier, 100),
+            (prop_instance_get_position, pos6, ":instance_no"), 
+            (position_move_z, pos6, -100), 
+            (prop_instance_animate_to_position, ":instance_no", pos6, 700),
+        (else_try),
+            (scene_prop_set_visibility, ":instance_no", 0),
+        (try_end),
+    ])
+ ] or []) + [      
+    ]
+
 scene_props = [
 ("invalid_object",0,"question_mark","0", []),
 ("inventory",sokf_type_container|sokf_place_at_origin,"package","bobaggage", []),
@@ -1528,7 +1560,9 @@ scene_props = [
 ("evil_gondor_wall",0,"mt_wall_evil", "bo_mt_wall_evil", []), #InVain: New collision mesh
 ("evil_gondor_gate_tower",0,"mt_gate_tower_evil", "bo_mt_tower", []),
 ("evil_gondor_gate_house",0,"mt_gate_house_evil", "bo_mt_gate_house_evil", [(ti_on_scene_prop_init,
-            [(try_begin),(is_currently_night),(set_fog_distance,450,0x07291D),
+            [(try_begin),(is_currently_night), (eq, "$bright_nights", 1), (set_fog_distance,450,0x07291D),
+            (else_try), (is_currently_night), (set_fog_distance,200,0x07291D), 
+             ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 40, 40, 50),(set_startup_sun_light, 5, 5, 10),(set_startup_ground_ambient_light, 25, 25, 25), ] or []) + [ 
        (else_try),                      (set_fog_distance,700,0x4DB08D), 
        (try_end),])]), #InVain: New collision mesh
   
@@ -2338,12 +2372,21 @@ scene_props = [
 ("isen_good_ring_10", 0, "isen_good_ring_10", "bo_isen_good_ring_10", []),
   
 ("isen_isengard_throne", 0, "isengard_throne", "bo_isengard_throne", []),
-  
+ 
+ ] + (is_a_wb_sceneprop==1 and [ 
+("dead_marshes_a",sokf_moveable,"deadmarshes_1","0",dead_marches_effect),
+("dead_marshes_b",sokf_moveable,"deadmarshes_2","0",dead_marches_effect),
+("dead_marshes_c",sokf_moveable,"deadmarshes_3","0",dead_marches_effect),
+("dead_marshes_d",sokf_moveable,"deadmarshes_4","0",dead_marches_effect),
+("dead_marshes_e",sokf_moveable,"deadmarshes_5","0",dead_marches_effect),
+ ] or [
 ("dead_marshes_a",0,"dead_a","0",[(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new,"psys_candle_light_small")])]),
 ("dead_marshes_b",0,"dead_b","0",[(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new,"psys_candle_light_small")])]),
 ("dead_marshes_c",0,"dead_c","0",[(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new,"psys_candle_light_small")])]),
 ("dead_marshes_d",0,"dead_d","0",[(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new,"psys_candle_light_small")])]),
 ("dead_marshes_e",0,"dead_e","0",[(ti_on_init_scene_prop,[(set_position_delta,0,0,47),(particle_system_add_new,"psys_candle_light_small")])]),
+ ]) + [  
+
 
 ("isen_wood_construction_b", 0, "isen_wood_construction_b", "bo_isen_wood_construction_b", []),
 ("prop_cage_rusty", 0, "prop_cage_rusty", "0", []),
@@ -5637,7 +5680,7 @@ scene_props = [
       #(scene_prop_set_visibility, ":instance_no", 0),
       (set_fixed_point_multiplier, 100),
       (scene_prop_enable_after_time, ":instance_no", 10),
-      (prop_instance_get_position, pos1, ":instance_no"),
+      (prop_instance_get_position, pos5, ":instance_no"),
       (prop_instance_get_scale, pos2, ":instance_no"),
       (position_get_scale_y, ":radius", pos2),
       (val_mul, ":radius", 10),
@@ -5645,23 +5688,23 @@ scene_props = [
       (val_mul, ":elevation", 10),
       (val_sub, ":elevation", 1000),
       (store_div, ":tilt", ":elevation", -100), #camera tilts against elevation
-      (position_rotate_z, pos1, 45), #starting rotation offset
-      (position_move_y, pos1, ":radius"), #radius
-      (position_move_z, pos1, ":elevation"),
-      (position_rotate_z, pos1, 180), #look back
-      (position_rotate_x, pos1, ":tilt"),
-      (prop_instance_animate_to_position, ":instance_no", pos1, 160),
+      (position_rotate_z, pos5, 45), #starting rotation offset
+      (position_move_y, pos5, ":radius"), #radius
+      (position_move_z, pos5, ":elevation"),
+      (position_rotate_z, pos5, 180), #look back
+      (position_rotate_x, pos5, ":tilt"),
+      (prop_instance_animate_to_position, ":instance_no", pos5, 160),
       (scene_prop_set_slot, ":instance_no", slot_prop_active, -1), #starting rotation
       (mission_cam_set_mode, 1, 0, 0),
       (agent_set_speed_modifier, "$current_player_agent", 0),
       (set_camera_in_first_person, 0), 
-      (mission_cam_animate_to_position, pos1, 1700, 0),
+      (mission_cam_animate_to_position, pos5, 1700, 0),
     ]),
     
     (ti_on_scene_prop_animation_finished,[
       (store_trigger_param_1, ":instance_no"),
       (set_fixed_point_multiplier, 100),
-      (prop_instance_get_starting_position, pos1, ":instance_no"),
+      (prop_instance_get_starting_position, pos5, ":instance_no"),
       (prop_instance_get_scale, pos2, ":instance_no"),
       (position_get_scale_y, ":radius", pos2),
       (val_mul, ":radius", 10),
@@ -5680,24 +5723,24 @@ scene_props = [
       (try_end),
       (le, ":rotation", -1),
       (val_sub, ":rotation", 10), #counter-clockwise
-      (position_rotate_z, pos1, 45), #starting rotation offset
-      (position_rotate_z, pos1, ":rotation"),
-      (position_move_y, pos1, ":radius"), #radius
-      (position_move_z, pos1, ":elevation"),
-      (position_rotate_z, pos1, 180), #look back
-      (position_rotate_x, pos1, ":tilt"),
-      (prop_instance_animate_to_position, ":instance_no", pos1, 50),
-      # (position_get_z, reg78, pos1),
+      (position_rotate_z, pos5, 45), #starting rotation offset
+      (position_rotate_z, pos5, ":rotation"),
+      (position_move_y, pos5, ":radius"), #radius
+      (position_move_z, pos5, ":elevation"),
+      (position_rotate_z, pos5, 180), #look back
+      (position_rotate_x, pos5, ":tilt"),
+      (prop_instance_animate_to_position, ":instance_no", pos5, 50),
+      # (position_get_z, reg78, pos5),
       # (display_message, "@camera height: {reg78}"),
-      (mission_cam_animate_to_position, pos1, 600, 0),
+      (mission_cam_animate_to_position, pos5, 600, 0),
       # (assign, reg78, ":rotation"),
       # (display_message, "@rotation: {reg78}"),
       (scene_prop_set_slot, ":instance_no", slot_prop_active, ":rotation"),
       (lt, ":rotation", -225), #don't go a full circle
       (scene_prop_set_slot, ":instance_no", slot_prop_active, 0),
-      (prop_instance_get_starting_position, pos1, ":instance_no"),
+      (prop_instance_get_starting_position, pos5, ":instance_no"),
       (prop_instance_stop_animating, ":instance_no"),
-      (prop_instance_set_position, ":instance_no", pos1),
+      (prop_instance_set_position, ":instance_no", pos5),
       (mission_cam_set_mode, 0, 1600, 0),
       (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi"), #assuming we're not in battle
       (prop_instance_deform_in_range, ":instance_no", 0, 100, 100),

@@ -1,4 +1,4 @@
-1763
+1758
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -768,9 +768,6 @@ qstr_The_ladders_on_Deepi The_ladders_on_Deeping_Wall!_Watch_out!
 qstr_{***}max_X_{reg0}_max_ {***}max_X_{reg0}_max_Y_{reg1}
 qstr_{***}Press_F3_to_start {***}Press_F3_to_start_the_battle.
 qstr_THREE.._TWO..._ONE.. THREE.._TWO..._ONE...._FIGHT!
-qstr_You_have_come_upon_t You_have_come_upon_the_ruins_of_Amon_Hen,_the_Hill_of_Sight,_a_Gondorian_watch-tower_atop_which_rests_the_Seat_of_Seeing^^You_sense_that_this_place_was_once_great_but_has_long_been_forgotten
-qstr_You_have_come_upon_th You_have_come_upon_the_Dead_Marshes,_site_of_the_battle_of_Dagorlad_during_the_War_of_the_Last_Alliance^^The_marshlands_have_swallowed_up_what_was_once_a_grassy_plain,_and_now_the_only_green_is_the_scum_of_livid_weed_on_the_dark_greasy_surfaces_of_the_sullen_waters^^Dead_grasses_and_rotting_reeds_loom_up_in_the_mists_like_ragged_shadows_of_long_forgotten_summers,_and_bodies_of_men,_elves,_and_orcs_float_in_the_murky_depths^^The_air_feels_cold_and_clammy,_and_you_can't_help_but_shiver_as_you_see_candle-lights_flickering_in_the_eyes_of_an_elf_corpse_just_beneath_the_water's_surface
-qstr_You_have_entered_the You_have_entered_the_woods_of_Southern_Mirkwood,_once_known_as_Greenwood_the_Great^^The_fortress_of_Dol_Guldur_is_nearby_and_it_casts_a_dark_shadow_over_the_forest._The_woods_here_feel_sickly_and_full_of_decay._Ancient_oak_trees_are_overrun_with_rot_and_fungus_and_great_tangling_webs_stretch_from_trunk_to_trunk^^_The_air_is_everlastingly_still_and_dark_and_stuffy,_and_it_feels_like_you_are_slowly_being_suffocated
 qstr_You_have_found_the_D You_have_found_the_Dwarven_Warehouse_where_the_Legendary_Spears_could_be._Report_what_you_find_to_{s3}
 qstr_Leave_the_Warehouse? Leave_the_Warehouse?
 qstr_Leave_the_place_in_s Leave_the_place_in_silence?
@@ -1018,9 +1015,7 @@ qstr_{***}_debug:_Original_ {***}_debug:_Original_savegame_version:_{reg78}
 qstr_{***}ON {***}ON
 qstr_{***}OFF {***}OFF
 qstr_{***}Added_10_prisoner {***}Added_10_prisoners.
-qstr_{***}Added_1000_experi {***}Added_1000_experience_to_player.
 qstr_{***}Attributes_skills {***}Attributes,_skills_and_proficiencies_raised.
-qstr_{***}Items_added_to_pl {***}Items_added_to_player_inventory.
 qstr_{***}Looter_party_was_ {***}Looter_party_was_spawned_nearby.
 qstr_{***}Ironman_turned_of {***}Ironman_turned_off
 qstr_HP_lost_from_poisoni HP_lost_from_poisoning.

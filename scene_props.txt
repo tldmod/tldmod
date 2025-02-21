@@ -2686,7 +2686,7 @@ spr_evil_gondor_gate_tower 0 0 mt_gate_tower_evil bo_mt_tower 0
 
 
 spr_evil_gondor_gate_house 0 0 mt_gate_house_evil bo_mt_gate_house_evil 1
--40  6 4 0 2273 0 1798 2 450 469277 5 0 1798 2 700 5091469 3 0 
+-40  10 4 0 2273 0 31 2 144115188075856557 1 1798 2 450 469277 5 0 2273 0 1798 2 200 469277 5 0 1798 2 700 5091469 3 0 
 
 
 spr_gondor_mt_bridge_modular_a 0 0 mt_bridge_modular_a bo_bridge_modular_a 0

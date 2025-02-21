@@ -1,4 +1,4 @@
-2033
+2037
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_weapon_damaged Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -102,7 +102,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr_{!}_rev_326_wb__dev_ {!}_rev_326_wb_|_dev_^_Built_2025-02-16_09:38___
+qstr_{!}_rev_327_wb__dev_ {!}_rev_327_wb_|_dev_^_Built_2025-02-21_21:10___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -308,6 +308,7 @@ qstr_Do_you_want_to_disem Do_you_want_to_disembark?
 qstr_Move_here Move_here
 qstr_View_notes View_notes
 qstr_{!}Debug_str:_{reg0} {!}Debug_str:_{reg0}
+qstr_{!}initiative:_{reg2 {!}initiative:_{reg2}
 qstr_{!}DEBUG:_Trolls_for {!}DEBUG:_Trolls_for_Troll_quest_are_sped_down.
 qstr_{!}_{s61} {!}_{s61}
 qstr_{!}ERROR:_More_than_ {!}ERROR:_More_than_15_trade_routes_are_given_for_{s1}.
@@ -881,6 +882,8 @@ qstr_You_kneel_to_pay_you You_kneel_to_pay_your_respects_to_the_fallen_rulers_of
 qstr_You_wonder_about_the You_wonder_about_the_two_rows_of_burial_mounds_in_front_of_the_gates,_yet_as_a_mere_{s24},_you_do_not_understand_their_significance.
 qstr_Alkarondas_Castle_of Alkarondas,_Castle_of_the_Sea._Named_after_the_famed_flagship_of_Ar-Pharazôn,_this_great_black_ship_is_the_pride_of_the_corsair_fleet_-_and_the_terror_of_Gondor's_coasts.
 qstr_The_Mmakil_greatest_ The_Mûmakil,_greatest_beasts_of_this_age!_Terrible_in_warfare,_bearing_towers_and_archers_into_battle._Their_trunks_calling_like_trumpets_of_war_will_make_the_Men_of_Gondor_tremble_with_fear.
+qstr_Amon_Hen_the_Hill_of Amon_Hen,_the_Hill_of_Seeing,_grants_a_commanding_view_over_the_surrounding_lands._However,_if_you_sought_the_ancient_high_seat_in_hope_of_gaining_directions_on_your_own_course,_you_now_realize_that_this_on_you_to_decide.
+qstr_As_the_lights_begin_ As_the_lights_begin_to_flicker_and_dance,_you_see_them:_grim_faces_and_evil,_and_noble_faces_and_sad._Many_faces_proud_and_fair,_and_weeds_in_their_silver_hair._But_all_foul,_all_rotting,_all_dead.
 qstr_Looking_around_you_d Looking_around,_you_do_not_understand_the_significance_of_this_place.
 qstr_Looking_around_you_f Looking_around,_you_feel_that_you_do_not_know_this_people_well_enough_to_understand_the_significance_of_this_place.
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
@@ -996,8 +999,9 @@ qstr_The_ladders_on_Deepi The_ladders_on_Deeping_Wall!_Watch_out!
 qstr_{!}max_X_{reg0}_max_ {!}max_X_{reg0}_max_Y_{reg1}
 qstr_{!}Press_F3_to_start {!}Press_F3_to_start_the_battle.
 qstr_THREE.._TWO..._ONE.. THREE.._TWO..._ONE...._FIGHT!
-qstr_You_have_come_upon_t You_have_come_upon_the_ruins_of_Amon_Hen,_the_Hill_of_Sight,_a_Gondorian_watch-tower_atop_which_rests_the_Seat_of_Seeing^^You_sense_that_this_place_was_once_great_but_has_long_been_forgotten
-qstr_You_have_come_upon_th You_have_come_upon_the_Dead_Marshes,_site_of_the_battle_of_Dagorlad_during_the_War_of_the_Last_Alliance^^The_marshlands_have_swallowed_up_what_was_once_a_grassy_plain,_and_now_the_only_green_is_the_scum_of_livid_weed_on_the_dark_greasy_surfaces_of_the_sullen_waters^^Dead_grasses_and_rotting_reeds_loom_up_in_the_mists_like_ragged_shadows_of_long_forgotten_summers,_and_bodies_of_men,_elves,_and_orcs_float_in_the_murky_depths^^The_air_feels_cold_and_clammy,_and_you_can't_help_but_shiver_as_you_see_candle-lights_flickering_in_the_eyes_of_an_elf_corpse_just_beneath_the_water's_surface
+qstr_You_have_come_upon_t You_have_come_upon_the_ruins_of_Amon_Hen,_the_Hill_of_Sight,_a_Gondorian_watch-tower_atop_which_rests_the_Seat_of_Seeing.^^You_feel_that_you_should_seek_the_high-seat_and_maybe_gain_a_glimpse_of_far-sight_that_may_counsel_you_on_your_further_course.
+qstr_You_have_come_upon_th You_have_come_upon_the_Dead_Marshes,_site_of_the_battle_of_Dagorlad_during_the_War_of_the_Last_Alliance^^_In_the_darkness_of_night,_you_see_lights_like_misty_flames_flickering_slowly_above_unseen_candles._Oddly_compelled,_you_follow_them_deeper_into_the_maze_of_puddles_and_streams.
+qstr_You_have_come_upon_the You_have_come_upon_the_Dead_Marshes,_site_of_the_battle_of_Dagorlad_during_the_War_of_the_Last_Alliance^^The_marshlands_have_swallowed_up_what_was_once_a_grassy_plain,_and_now_the_only_green_is_the_scum_of_livid_weed_on_the_dark_greasy_surfaces_of_the_sullen_waters._^^In_the_grey_light_of_day,_you_don't_see_anything_that_catches_your_interest.
 qstr_You_have_entered_the You_have_entered_the_woods_of_Southern_Mirkwood,_once_known_as_Greenwood_the_Great^^The_fortress_of_Dol_Guldur_is_nearby_and_it_casts_a_dark_shadow_over_the_forest._The_woods_here_feel_sickly_and_full_of_decay._Ancient_oak_trees_are_overrun_with_rot_and_fungus_and_great_tangling_webs_stretch_from_trunk_to_trunk^^_The_air_is_everlastingly_still_and_dark_and_stuffy,_and_it_feels_like_you_are_slowly_being_suffocated
 qstr_You_have_found_the_D You_have_found_the_Dwarven_Warehouse_where_the_Legendary_Spears_could_be._Report_what_you_find_to_{s3}
 qstr_Leave_the_Warehouse? Leave_the_Warehouse?
@@ -1199,7 +1203,8 @@ qstr_{!}C_advance_camps_sp {!}C_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_{!}N_advance_camps_sp {!}N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_{!}Gandalf_would_lik {!}Gandalf_would_like_to_have_a_little_chat!
 qstr_{!}Kham_Cheat_Mode_O {!}Kham_Cheat_Mode_ON!
-qstr_{!}Theoden_activated {!}Theoden_activated
+qstr_set_global_aggressiv set_global_aggressiveness_to_{reg78}
+qstr_set_global_initiativ set_global_initiative_to_{reg77}
 qstr_{!}1_troll_added! {!}1_troll_added!
 qstr_{!}Raft_Men_party_en {!}Raft_Men_party_enabled._They_are_down_River_Running
 qstr_{!}theater:_{reg0} {!}theater:_{reg0}
@@ -1262,9 +1267,7 @@ qstr_{!}_debug:_Original_ {!}_debug:_Original_savegame_version:_{reg78}
 qstr_{!}ON {!}ON
 qstr_{!}OFF {!}OFF
 qstr_{!}Added_10_prisoner {!}Added_10_prisoners.
-qstr_{!}Added_1000_experi {!}Added_1000_experience_to_player.
 qstr_{!}Attributes_skills {!}Attributes,_skills_and_proficiencies_raised.
-qstr_{!}Items_added_to_pl {!}Items_added_to_player_inventory.
 qstr_{!}Looter_party_was_ {!}Looter_party_was_spawned_nearby.
 qstr_{!}Ironman_turned_of {!}Ironman_turned_off
 qstr_HP_lost_from_poisoni HP_lost_from_poisoning.
@@ -1453,6 +1456,7 @@ qstr_{s5}_has_stopped_fol {s5}_has_stopped_following_you.
 qstr_You_have_{reg69}_all You_have_{reg69}_ally_party_following_you
 qstr_You_have_{reg69}_ally You_have_{reg69}_ally_parties_following_you
 qstr_The_forces_of_{s2}_h The_forces_of_{s2}_have_regrouped_and_march_on_to_{s15}!
+qstr_{!}Theoden_activated {!}Theoden_activated
 qstr_Your_scouts_report_s Your_scouts_report_signs_of_a_{s2}_nearby.
 qstr_{s1}_from_{s2} {s1}_from_{s2}
 qstr_When_dealing_with_lo When_dealing_with_locals_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.^^(the_Resource_Points_which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
