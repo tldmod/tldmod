@@ -1,5 +1,5 @@
 itemsfile version 2
-981
+982
  itm_no_item {!}INVALID_ITEM {!}INVALID_ITEM 1  invalid_item 0  11 0 3 0 1.5 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -2959,4 +2959,8 @@ itemsfile version 2
 
  itm_animal_warg {!}Warg {!}Warg 3  warg_1B 2  animal_warg_1C 4  animal_warg_1D 8  18014398509482003 0 600 0 0 100 0 0 0 0 50 50 15 95 0 0 0
 0
+
+ itm_torch Torch Torch 1  orc_club_a 0  6356995 9223635919737716976 11 0 2.5 100 0 0 0 0 11264 95 0 95 0 256 523
+1
+-50  3 1955 3 0 60 0 1965 1 12 1965 1 15 
 

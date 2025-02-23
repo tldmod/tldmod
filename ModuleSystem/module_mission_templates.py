@@ -6532,7 +6532,7 @@ mission_templates = [ # not used in game
 ]),
 ("legendary_place_visit",0,-1,
  "You visit a legendary place.",
-    [(0,mtef_scene_source|mtef_team_0,0,0,1,[]),(1,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),(16,mtef_scene_source|mtef_team_0,0,0,1,[]),
+    [(0,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),(1,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),(16,mtef_scene_source|mtef_team_0,0,0,1,[]),
      (17,mtef_scene_source|mtef_team_0,0,0,1,[]),(18,mtef_scene_source|mtef_team_0,0,0,1,[]),(19,mtef_scene_source|mtef_team_0,0,0,1,[]),
      ],tld_common_wb_muddy_water+fade+tld_common_peacetime_scripts+[
     
@@ -6540,13 +6540,13 @@ mission_templates = [ # not used in game
     (0,0,ti_once,[],[(music_set_situation, 0),]), #no music
     (2, 0, 0, [(call_script, "script_center_ambiance_sounds")], []),
 	  
-    (1,0,ti_once,[],
-      [(try_begin),
-        (is_currently_night),
-        (play_sound, "$bs_night_sound"),
-			 (else_try),
-         (play_sound, "$bs_day_sound"),
-			 (try_end),
+    (1,0,ti_once,[], [
+        (try_begin),
+          (is_currently_night),
+          (play_sound, "$bs_night_sound", sf_looping|sf_2d),
+        (else_try),
+          (play_sound, "$bs_day_sound", sf_looping|sf_2d),
+        (try_end),
         (assign, "$temp_2", 0), #for spawn control on scene props, particle effects etc.    
         ]),
         
@@ -6577,16 +6577,28 @@ mission_templates = [ # not used in game
             (tutorial_message, "@You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^The marshlands have swallowed up what was once a grassy plain, and now the only green is the scum of livid weed on the dark greasy surfaces of the sullen waters. ^^In the grey light of day, you don't see anything that catches your interest.",0,12),
           (try_end),
         (else_try),
-          (eq, "$g_encountered_party", "p_legend_mirkwood"),
-          (tutorial_message, "@You have entered the woods of Southern Mirkwood, once known as Greenwood the Great^^The fortress of Dol Guldur is nearby and it casts a dark shadow over the forest. The woods here feel sickly and full of decay. Ancient oak trees are overrun with rot and fungus and great tangling webs stretch from trunk to trunk^^ The air is everlastingly still and dark and stuffy, and it feels like you are slowly being suffocated",0,12),
-          (party_slot_eq, "p_legend_mirkwood", slot_legendary_visited, 0),
-          (add_xp_as_reward, 250),
-          (party_set_slot, "p_legend_mirkwood", slot_legendary_visited, 1),
+            (eq, "$g_encountered_party", "p_legend_mirkwood"),
+            (tutorial_message, "@You have entered the woods of Southern Mirkwood, once known as Greenwood the Great^^The woods feel sickly and full of decay. The place is crawling with spiders. There must be a nest around here somewhere...",0,12),
+            (party_slot_eq, "p_legend_mirkwood", slot_legendary_visited, 0),
+            (add_xp_as_reward, 250),
+            (party_set_slot, "p_legend_mirkwood", slot_legendary_visited, 1),
+        (else_try),
+            (eq, "$g_encountered_party", "p_town_hornburg"),
+            (tutorial_message, "@You have found the Glittering Caves, one of the marvels of the Northern World.", 0, 10),
+            (agent_get_item_slot, ":item", "$current_player_agent", 1),
+            (agent_unequip_item, "$current_player_agent", ":item"),
+            (agent_equip_item, "$current_player_agent", itm_torch, 1),
+            (agent_set_wielded_item, "$current_player_agent", itm_torch),
+            (scene_slot_eq, "scn_hornburg_castle", slot_scene_visited, 0),
+            (add_xp_as_reward, 200),
+            (call_script, "script_change_player_relation_with_center", "$current_town", 3),                       
+            (scene_set_slot, "scn_hornburg_castle", slot_scene_visited, 1),
         (try_end)]),
     
     #custom effects    
     (1,0,0,[],[
     (set_fixed_point_multiplier, 100),
+    (get_player_agent_no, "$current_player_agent"),
     (try_begin),
         (eq, "$g_encountered_party", "p_legend_deadmarshes"),
         (is_currently_night),
@@ -6600,6 +6612,16 @@ mission_templates = [ # not used in game
             (position_set_z, pos6, ":height"),
             (particle_system_burst, "psys_candle_light_small", pos6, 30),
         (try_end),
+    (else_try), 
+        (store_random_in_range, ":rand", 0, 100),
+        (lt, ":rand", 3),
+        (eq, "$g_encountered_party", "p_legend_mirkwood"),
+        (agent_get_position, pos6, "$current_player_agent"),
+        (store_random_in_range, ":x", -1000, 1000),
+        (store_random_in_range, ":y", -1000, -500), #behind the player
+        (position_move_x, pos6, ":x"),
+        (position_move_y, pos6, ":y"),
+        (play_sound_at_position, "snd_spider_die", pos6),
     (try_end),
     ]),
 

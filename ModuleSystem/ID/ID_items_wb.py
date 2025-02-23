@@ -979,3 +979,4 @@ itm_animal_boar = 977
 itm_animal_boar_big = 978
 itm_animal_rat = 979
 itm_animal_warg = 980
+itm_torch = 981

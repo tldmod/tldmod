@@ -1,4 +1,4 @@
-1758
+1759
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1015,7 +1015,9 @@ qstr_{***}_debug:_Original_ {***}_debug:_Original_savegame_version:_{reg78}
 qstr_{***}ON {***}ON
 qstr_{***}OFF {***}OFF
 qstr_{***}Added_10_prisoner {***}Added_10_prisoners.
+qstr_{***}Added_1000_experi {***}Added_1000_experience_to_player.
 qstr_{***}Attributes_skills {***}Attributes,_skills_and_proficiencies_raised.
+qstr_{***}Items_added_to_pl {***}Items_added_to_player_inventory.
 qstr_{***}Looter_party_was_ {***}Looter_party_was_spawned_nearby.
 qstr_{***}Ironman_turned_of {***}Ironman_turned_off
 qstr_HP_lost_from_poisoni HP_lost_from_poisoning.
@@ -1101,8 +1103,7 @@ qstr_the_Hall the_Hall
 qstr_the_Great_Chamber_of the_Great_Chamber_of_Thrór
 qstr_Stay_indoors_for_som Stay_indoors_for_some_time_({reg1}_Resource_points_per_night)
 qstr_Camp_outside_for_som Camp_outside_for_some_time_(free)
-qstr_As_you_enter_the_vas As_you_enter_the_vast_caverns_underneath_the_Ring_of_Isengard,_where_thousands_of_orcs_work_to_supply_the_growing_armies_of_the_White_Hand,_you_gain_confidence_in_the_rise_of_a_new_power_and_the_demise_of_the_old_world.
-qstr_You_have_found_the_G You_have_found_the_Glittering_Caves,_one_of_the_marvels_of_the_Northern_World.
+qstr_You_are_not_allowed_ You_are_not_allowed_to_enter.
 qstr_As_the_party_member_ As_the_party_member_with_the_highest_Bargainer_skill_({reg2}),_{reg3?you_estimate:{s3}_estimates}_that_it_will_take_{reg4}_hours_to_find_the_most_notable_persons_in_town._[Costs_{reg5}/{reg6}_influence]
 qstr_You_have_already_fou You_have_already_found_all_persons_of_interest.
 qstr_the_captain_of_the_g the_captain_of_the_garrison,_and_the_civil_authority.

@@ -587,11 +587,11 @@ slot_center_spawn_caravan         = 268
 slot_center_ambient_sound_day    = 270
 slot_center_ambient_sound_always = 271
 slot_center_occasional_sound1_day = 273
-slot_center_occasional_sound2_day = 274
-slot_center_occasional_sound3_day = 275
-slot_center_occasional_sound1_night = 276
-slot_center_occasional_sound2_night = 277
-slot_center_occasional_sound3_night = 278
+slot_center_occasional_sound2_day = 274 #unused
+slot_center_occasional_sound3_day = 275 #unused
+slot_center_occasional_sound1_night = 276 #unused
+slot_center_occasional_sound2_night = 277 #unused
+slot_center_occasional_sound3_night = 278 #unused
 
 slot_center_walker_soldiers_found = 299
 

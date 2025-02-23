@@ -2691,7 +2691,7 @@ scene_props = [
   (spawn_horse,"itm_oliphant", 0),
   (agent_set_speed_limit, reg0, 0),
   (agent_set_stand_animation, reg0, "anim_oliphant_stand"),(agent_set_animation, reg0, "anim_oliphant_stand")])]),
-("spiderweb",0,"0","0", []),
+("spiderweb",0,"0","0", []), #unused
 ("tunnel_dirt",0,"dirt","0", []),
 ("tunnel_liana",0,"liana","0", []),
 ("tunnel_liana2",0,"liana2","0", []),
@@ -5669,6 +5669,7 @@ scene_props = [
     (ti_scene_prop_deformation_finished,[ #workaround for particle effect
         (store_trigger_param_1, ":instance_no"),
         (scene_prop_slot_eq, ":instance_no", slot_prop_active, 0),
+        (scene_prop_slot_eq, ":instance_no", slot_prop_playing_sound, 0),
         (prop_instance_get_position, pos2, ":instance_no"),
         (particle_system_burst, "psys_moon_beam_1", pos2, 4),
         (store_random_in_range, ":timer", 700, 1100),    
@@ -5677,6 +5678,7 @@ scene_props = [
     
     (ti_on_scene_prop_use,[
       (store_trigger_param_2, ":instance_no"),
+      (get_player_agent_no, "$current_player_agent"),
       #(scene_prop_set_visibility, ":instance_no", 0),
       (set_fixed_point_multiplier, 100),
       (scene_prop_enable_after_time, ":instance_no", 10),
@@ -5699,6 +5701,8 @@ scene_props = [
       (agent_set_speed_modifier, "$current_player_agent", 0),
       (set_camera_in_first_person, 0), 
       (mission_cam_animate_to_position, pos5, 1700, 0),
+      # (set_spawn_position, pos5),
+      # (spawn_scene_prop, "spr_arrow_helper_blue"),
     ]),
     
     (ti_on_scene_prop_animation_finished,[
@@ -5729,7 +5733,9 @@ scene_props = [
       (position_move_z, pos5, ":elevation"),
       (position_rotate_z, pos5, 180), #look back
       (position_rotate_x, pos5, ":tilt"),
-      (prop_instance_animate_to_position, ":instance_no", pos5, 50),
+      (prop_instance_animate_to_position, ":instance_no", pos5, 50),      
+      # (set_spawn_position, pos5),
+      # (spawn_scene_prop, "spr_arrow_helper_blue"),
       # (position_get_z, reg78, pos5),
       # (display_message, "@camera height: {reg78}"),
       (mission_cam_animate_to_position, pos5, 600, 0),
@@ -5748,9 +5754,7 @@ scene_props = [
     ]),
        ] or [("secret_viewpoint", sokf_invisible|sokf_moveable, "arrow_helper_blue", "bo_sphere_30cm", []),]) + [  
 
-
-#("save_compartibility2",0,"0","0", []),
-#("save_compartibility3",0,"0","0", []),
+("arrow_helper_blue",0,"arrow_helper_blue","0", []),
 ("save_compartibility4",0,"0","0", []),
 ("save_compartibility5",0,"0","0", []),
 ("save_compartibility6",0,"0","0", []),

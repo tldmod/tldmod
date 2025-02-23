@@ -9449,19 +9449,24 @@ game_menus = [
  ] for ct in range(1-cheat_switch)])+[
 
 #menu no. 19
-	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_isengard"),(eq,"$entry_to_town_forbidden",0), (scene_slot_eq, "scn_isengard_underground", slot_scene_visited, 1),
+	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_isengard"),(eq,"$entry_to_town_forbidden",0), (this_or_next|scene_slot_eq, "scn_isengard_underground", slot_scene_visited, 1), (eq, "$cheat_mode", 1),
 						], "Go to the underground caverns.",
 						[
-						(call_script, "script_initialize_center_scene", "scn_isengard_underground"),
-						#(set_jump_mission, "mt_town_center"),
-						(jump_to_scene, "scn_isengard_underground"),
-						(change_screen_mission),
-                        (scene_slot_eq, "scn_isengard_underground", slot_scene_visited, 0),
-                        (display_message, "@As you enter the vast caverns underneath the Ring of Isengard, where thousands of orcs work to supply the growing armies of the White Hand, you gain confidence in the rise of a new power and the demise of the old world."),
-                        (add_xp_as_reward, 100),
-                        (call_script, "script_change_player_relation_with_center", "$current_town", 3),
-                        (call_script, "script_increase_rank", "$ambient_faction", 3),                        
-                        (scene_set_slot, "scn_isengard_underground", slot_scene_visited, 1),], "Go to the underground caverns"),
+                        (try_begin),
+                            (call_script, "script_get_faction_rank", "$ambient_faction"),
+                            (lt, reg0, 2),
+                            (display_message, "@You are not allowed to enter."),
+                        (else_try),
+                            (call_script, "script_initialize_center_scene", "scn_isengard_underground"),
+                            #(set_jump_mission, "mt_town_center"),
+                            (jump_to_scene, "scn_isengard_underground"),
+                            (change_screen_mission),
+                            (scene_slot_eq, "scn_isengard_underground", slot_scene_visited, 0),
+                            (scene_set_slot, "scn_isengard_underground", slot_scene_visited, 1),
+                        (try_end), 
+                        ], 
+                        "Go to the underground caverns"),
+                        
 
 #menu no. 20
 	  ("tirith_toplevel",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_minas_tirith"),(eq,"$entry_to_town_forbidden",0)
@@ -9486,7 +9491,7 @@ game_menus = [
 						 (change_screen_mission)],"Go to the Great Gates"),
 
 #menu no. 22						 
-  	  ("glittering_caves",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_hornburg"),(eq,"$entry_to_town_forbidden",0), (scene_slot_eq, "scn_hornburg_castle", slot_scene_visited, 1),
+  	  ("glittering_caves",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_hornburg"),(eq,"$entry_to_town_forbidden",0), (this_or_next|scene_slot_eq, "scn_hornburg_castle", slot_scene_visited, 1), (eq, "$cheat_mode", 1),
 						], "Go to the Glittering Caves.",
 						[
                          (set_jump_mission, "mt_legendary_place_visit"),
@@ -9496,11 +9501,7 @@ game_menus = [
                          (assign,"$dungeons_in_scene",1),
                          (assign, "$bs_night_sound", "snd_moria_ambiance"),
                          (assign, "$bs_day_sound", "snd_moria_ambiance"),
-                        (scene_slot_eq, "scn_hornburg_castle", slot_scene_visited, 0),
-                        (display_message, "@You have found the Glittering Caves, one of the marvels of the Northern World."),
-                        (add_xp_as_reward, 100),
-                        (call_script, "script_change_player_relation_with_center", "$current_town", 3),                       
-                        (scene_set_slot, "scn_hornburg_castle", slot_scene_visited, 1),
+                         (assign, "$play_ambient_sounds", 0),
                          ],"Go to the Glittering Caves"),
 						
       ("town_leave",[],"Leave...",[
@@ -10153,6 +10154,7 @@ game_menus = [
           (assign, ":lp_scene", "scn_amon_hen"),
 		  (assign, "$bs_day_sound", "snd_wind_ambiance"),
 		  (assign, "$bs_night_sound", "snd_night_ambiance"),
+          (assign, "$play_ambient_sounds", "snd_elves_occasional"),
         (else_try),
           (eq, "$g_encountered_party", "p_legend_deadmarshes"),
           (assign, ":lp_scene", "scn_deadmarshes"),
@@ -10162,7 +10164,7 @@ game_menus = [
           (eq, "$g_encountered_party", "p_legend_mirkwood"),
           (assign, ":lp_scene", "scn_mirkwood"),
 		  (assign, "$bs_day_sound", "snd_evilforest_ambiance"),
-		  (assign, "$bs_night_sound", "snd_night_ambiance"),
+		  (assign, "$bs_night_sound", "snd_evilforest_ambiance"),
         (else_try),
           #(eq, "$g_encountered_party", "p_legend_fangorn"),
           (assign, ":lp_scene", "scn_fangorn"),
@@ -12790,6 +12792,7 @@ game_menus = [
 	(assign, ":ambush_count", 1), 
 	(try_begin),
 		(eq|this_or_next, "$current_player_region", region_n_mirkwood),
+        (eq|this_or_next, "$current_player_region", region_c_mirkwood),
 		(eq, "$current_player_region", region_s_mirkwood),
 		(assign, ":ambush_troop", "trp_spider"),
 		(assign, ":ambush_scene", "scn_mirkwood_ambush"),

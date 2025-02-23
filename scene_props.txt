@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 2094
+ 2095
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -6408,6 +6408,9 @@ spr_secret_loot_prop 536952832 512 sphere_30cm bo_sphere_30cm 1
 
 
 spr_secret_viewpoint 81920 0 arrow_helper_blue bo_sphere_30cm 0
+
+
+spr_arrow_helper_blue 0 0 arrow_helper_blue 0 0
 
 
 spr_save_compartibility4 0 0 0 0 0

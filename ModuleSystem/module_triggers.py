@@ -1905,8 +1905,17 @@ triggers = [
         (eq|this_or_next, "$current_player_region", region_misty_mountains),
         (eq|this_or_next, "$current_player_region", region_grey_mountains),
         (eq|this_or_next, "$current_player_region", region_n_mirkwood),
+        (eq|this_or_next, "$current_player_region", region_c_mirkwood),
         (eq,              "$current_player_region", region_s_mirkwood),
         (assign, ":continue", 1),
+        
+        (try_begin), #if spider nest destroyed
+            (eq|this_or_next, "$current_player_region", region_n_mirkwood),
+            (eq|this_or_next, "$current_player_region", region_c_mirkwood),
+            (eq,              "$current_player_region", region_s_mirkwood),
+            (scene_slot_eq, scn_mirkwood, slot_scene_viewpoint, 1), 
+            (assign, ":continue", 0),
+        (try_end),
         (try_for_range, ":party_id", centers_begin, centers_end), # Don't allow ambushes if player is close to a center.
           (eq, ":continue", 1),
           (party_is_active, ":party_id"), # Skip non-existant adv. camps.
@@ -1915,6 +1924,7 @@ triggers = [
           (lt, ":dist", 8),
           (assign, ":continue", 0),
         (try_end),
+        
         (eq, ":continue", 1),
         (assign, ":ambush_chance", 90), # 90% chance by default
         (party_get_num_companions, reg1, "p_main_party"),

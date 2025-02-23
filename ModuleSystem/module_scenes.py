@@ -275,7 +275,7 @@ scenes = [
 # Legendary places
 ("amon_hen"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000002a0000500400c2304000003ce800047ca0000794b",[],[],"outer_terrain_osgiliath_9"),
 ("deadmarshes",sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_flat"),
-("mirkwood"   ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
+("mirkwood"   ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x000000004002c90d0002308c00006cac0000786900001ef5",[],[],"outer_terrain_forest"),
 ("fangorn"    ,sf_generate|sf_muddy_water,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 
 # Siege scenes
