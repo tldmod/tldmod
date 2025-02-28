@@ -1671,8 +1671,14 @@ triggers = [
         (gt, ":check", 15),
         (store_random_in_range, ":rnd", 0, 100),
         (neg|ge, ":rnd", ":check"),
-        (call_script, "script_cf_gain_trait_battle_scarred"),
-        (call_script, "script_cf_gain_trait_fell_beast"), #MV: let the scripts sort out if it's an orc or not :)
+        (troop_get_type, ":race", "trp_player"),
+        (try_begin),
+              (neg|is_between, ":race", tf_orc_begin, tf_orc_end),
+              (call_script, "script_cf_gain_trait_battle_scarred"),
+        (else_try),
+              (is_between, ":race", tf_orc_begin, tf_orc_end),
+              (call_script, "script_cf_gain_trait_fell_beast"),
+        (try_end),
       (try_end),
       (try_begin),
         (eq, 0, 1), #disabled
