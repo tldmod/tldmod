@@ -623,10 +623,8 @@ simple_triggers = [
                 (try_begin), #campaign AI (difficulty setting)
                     (store_relation, ":player_relation", ":faction_no", "fac_player_supporters_faction"),
                     (gt, ":player_relation", 0),
-                    (assign, ":campaign_ai", "$tld_campaign_diffulty"),
-                    (val_add, ":campaign_ai", 4),
-                    (val_mul, ":strength_income", ":campaign_ai"),
-                    (val_div, ":strength_income", 5), 
+                    (val_mul, ":strength_income", "$tld_ally_str_income_multi"),
+                    (val_div, ":strength_income", 100), 
                 (try_end),
                 #] or []) + [
          

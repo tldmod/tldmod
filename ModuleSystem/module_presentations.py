@@ -4843,6 +4843,7 @@ if wb_compile_switch==1:
         (overlay_set_position, reg1, pos0),
 
         (create_combo_button_overlay, "$tld_options_overlay_16"),
+        (overlay_add_item, "$tld_options_overlay_16", "@Brutal"),
         (overlay_add_item, "$tld_options_overlay_16", "@Hard"),
         (overlay_add_item, "$tld_options_overlay_16", "@Default"),
         (overlay_add_item, "$tld_options_overlay_16", "@Easy"),
@@ -5129,7 +5130,20 @@ if wb_compile_switch==1:
         (else_try),
           (eq, ":object", "$tld_options_overlay_16"),
           (assign, "$tld_campaign_diffulty", ":value"),
-          (display_message, "@Campaign Difficulty affects abundance of volunteers, lord party size, and strength income for allied factions."),
+          # (assign, reg78, "$tld_campaign_diffulty"),
+          # (display_message, "@difficulty: {reg78}"),
+          (display_message, "@Campaign Difficulty affects abundance of volunteers, lord party size, initial player faction strength, basic strength income for allied factions, and strength income from player victories."),
+          (display_message, "@Please be aware that the game is balanced for default difficulty. The other difficulty settings are not tested."),
+          
+          (try_begin), #assign difficulty values
+            (eq, "$tld_campaign_diffulty", 3),  (assign, "$tld_volunteers_multi", 125), (assign, "$tld_host_size_multi", 75), (assign, "$tld_ally_str_income_multi", 120), (assign, "$tld_victory_str_multi", 100),  (assign, "$tld_player_fac_init_strength_multi", 110), 
+          (else_try),
+            (eq, "$tld_campaign_diffulty", 2),  (assign, "$tld_volunteers_multi", 100), (assign, "$tld_host_size_multi", 100), (assign, "$tld_ally_str_income_multi", 100), (assign, "$tld_victory_str_multi", 75),  (assign, "$tld_player_fac_init_strength_multi", 90), 
+          (else_try),
+            (eq, "$tld_campaign_diffulty", 1),  (assign, "$tld_volunteers_multi", 75), (assign, "$tld_host_size_multi", 150), (assign, "$tld_ally_str_income_multi", 90), (assign, "$tld_victory_str_multi", 50),  (assign, "$tld_player_fac_init_strength_multi", 70),
+          (else_try),
+            (eq, "$tld_campaign_diffulty", 0),  (assign, "$tld_volunteers_multi", 60), (assign, "$tld_host_size_multi", 200), (assign, "$tld_ally_str_income_multi", 80), (assign, "$tld_victory_str_multi", 50), (assign, "$tld_player_fac_init_strength_multi", 60),
+          (try_end),
         (else_try),
           (eq, ":object", "$tld_options_overlay_0"),   
           (val_mul, ":value", 2),                # swy: map the combobox indices to actual levels, whose order is also reversed

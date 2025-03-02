@@ -280,11 +280,11 @@ stone_rotation_y
 stone_rotation_z
 stone_picked_instance
 player_horse
-fog_red
-fog_green
-fog_blue
-fog_dist
-fog_color
+tld_volunteers_multi
+tld_host_size_multi
+tld_ally_str_income_multi
+tld_victory_str_multi
+tld_player_fac_init_strength_multi
 battlemap_min_x
 battlemap_min_y
 battlemap_max_x

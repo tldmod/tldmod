@@ -1,4 +1,4 @@
-1759
+1758
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -808,10 +808,9 @@ qstr_Look_at_my_over_the_ Look_at_my_over-the-shoulder_shot,_{playername}!_I'm_s
 qstr_You_wish_old_man_my_ You_wish,_old_man,_my_over-the-shoulder_view_is_much_prettier!
 qstr_You_should_really_se You_should_really_see_Steward_Denetor's_Facebook_photos,_he's_amazing!
 qstr_Press_Space_to_conti Press_Space_to_continue...
-qstr_by_level by_level
-qstr_can_only_be_set_at_g can_only_be_set_at_game_start;_see_options_to_adjust_level
-qstr_by_day by_day
-qstr_can_only_be_set_at_ga can_only_be_set_at_game_start;_see_options_to_adjust_day
+qstr_BY_LEVEL_/_by_day BY_LEVEL_/_by_day
+qstr_by_level_/_BY_DAY by_level_/_BY_DAY
+qstr_War_start_mode_can_o War_start_mode_can_only_be_set_at_game_start;_see_options_to_adjust_level_or_date.
 qstr_ON ON
 qstr_OFF OFF
 qstr_If_you_are_new_to_TL If_you_are_new_to_TLD,_tutorial_messages_are_recommended

@@ -178,6 +178,15 @@ game_menus = [
         (troop_sort_inventory, "trp_player"),
 		#(set_show_messages, 1),
         #(change_screen_map), #(change_screen_return),
+        (try_begin), #assign difficulty values
+            (eq, "$tld_campaign_diffulty", 3),  (assign, "$tld_volunteers_multi", 125), (assign, "$tld_host_size_multi", 75), (assign, "$tld_ally_str_income_multi", 120), (assign, "$tld_victory_str_multi", 100),  (assign, "$tld_player_fac_init_strength_multi", 110), 
+          (else_try),
+            (eq, "$tld_campaign_diffulty", 2),  (assign, "$tld_volunteers_multi", 100), (assign, "$tld_host_size_multi", 100), (assign, "$tld_ally_str_income_multi", 100), (assign, "$tld_victory_str_multi", 75),  (assign, "$tld_player_fac_init_strength_multi", 90), 
+          (else_try),
+            (eq, "$tld_campaign_diffulty", 1),  (assign, "$tld_volunteers_multi", 75), (assign, "$tld_host_size_multi", 150), (assign, "$tld_ally_str_income_multi", 90), (assign, "$tld_victory_str_multi", 50),  (assign, "$tld_player_fac_init_strength_multi", 70),
+          (else_try),
+            (eq, "$tld_campaign_diffulty", 0),  (assign, "$tld_volunteers_multi", 60), (assign, "$tld_host_size_multi", 200), (assign, "$tld_ally_str_income_multi", 80), (assign, "$tld_victory_str_multi", 50), (assign, "$tld_player_fac_init_strength_multi", 60),
+        (try_end),
         (try_begin),
             (eq, "$cheat_mode", 1),
             (change_screen_map),
@@ -187,10 +196,10 @@ game_menus = [
        ]),
 	  ("spacer",[],"{!}_",[]),
 
-	("change_war_start_mode",[(try_begin),(eq, "$tld_start_war_by_day_or_level", 0),(str_store_string, s7, "@by level"), (display_message, "@can only be set at game start; see options to adjust level"),
-								 (else_try),(str_store_string, s7, "@by day"),(display_message, "@can only be set at game start; see options to adjust day"),(try_end),
+	("change_war_start_mode",[(try_begin),(eq, "$tld_start_war_by_day_or_level", 0),(str_store_string, s7, "@BY LEVEL / by day"), 
+								 (else_try),(str_store_string, s7, "@by level / BY DAY"),(try_end),
 	    ],"War Starts:  {s7}",[
-	    (store_sub,"$tld_start_war_by_day_or_level",1,"$tld_start_war_by_day_or_level"),(val_clamp,"$tld_start_war_by_day_or_level",0,2),(jump_to_menu, "mnu_start_phase_2"),]), 
+	    (store_sub,"$tld_start_war_by_day_or_level",1,"$tld_start_war_by_day_or_level"),(val_clamp,"$tld_start_war_by_day_or_level",0,2),(jump_to_menu, "mnu_start_phase_2"),(display_message, "@War start mode can only be set at game start; see options to adjust level or date."),]), 
 
 	("toggle_tutorial",[(try_begin),(eq, "$tld_show_tutorials", 0),(str_store_string, s7, "@ON"), 
 								 (else_try),(str_store_string, s7, "@OFF"),(display_message, "@If you are new to TLD, tutorial messages are recommended"),(try_end),
@@ -10766,6 +10775,12 @@ game_menus = [
 ("faction_intro_menu",0,
 	"{!}{s5}",
 	"none", [
+    #piggyback player faction initial strength malus
+    (faction_get_slot, ":strength", "$players_kingdom", slot_faction_strength),
+    (val_mul, ":strength", "$tld_player_fac_init_strength_multi"),
+    (val_div, ":strength", 100),
+    (faction_set_slot, "$players_kingdom", slot_faction_strength, ":strength"),
+    
 	(call_script, "script_get_intro_text", "$players_kingdom"),
 	(faction_get_slot, ":capital", "$players_kingdom", slot_faction_capital),
 	(party_get_slot,":mesh",":capital",slot_town_menu_background),

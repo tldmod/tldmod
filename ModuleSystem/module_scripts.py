@@ -2055,7 +2055,12 @@ scripts = [
 	(assign, "$tld_option_death_npc", 1), #permanent death for npcs ON by default
 	(assign, "$tld_option_death_player", 0), #permanent death for player OFF by default
 	(assign, "$tld_option_cutscenes", 1),# ON by default
-    (assign, "$tld_campaign_diffulty", 1),# default difficulty
+    (assign, "$tld_campaign_diffulty", 2),# default difficulty
+    (assign, "$tld_volunteers_multi", 100), #for easier diffculty tweaking
+    (assign, "$tld_host_size_multi", 100), #for easier diffculty tweaking
+    (assign, "$tld_ally_str_income_multi", 100), #for easier diffculty tweaking
+    (assign, "$tld_victory_str_multi", 100), #for easier diffculty tweaking
+    (assign, "$tld_player_fac_init_strength_multi", 100), #for easier diffculty tweaking
 	(assign, "$g_fast_mode", 0),# OFF by default
 	(assign, "$tld_option_morale", 1), # Battle morale ON by default
 	(assign, "$tld_option_animal_ambushes", 1), # Ambushes ON by default
@@ -2108,11 +2113,6 @@ scripts = [
     (val_mul, "$hold_f1", "$attacker_archer_melee"),
     (val_mul, "$attacker_archer_melee", "$hold_f1"),
     (val_mul, "$attacker_archer_melee", "$allies_leadership"), #wb only
-    (val_mul, "$attacker_archer_melee", "$fog_red"),  
-    (val_mul, "$attacker_archer_melee", "$fog_green"),  
-    (val_mul, "$attacker_archer_melee", "$fog_blue"),  
-    (val_mul, "$attacker_archer_melee", "$fog_dist"),
-    (val_mul, "$attacker_archer_melee", "$fog_color"),
 
 	#Kham - Squelch compiler warnings END
 	
@@ -2410,10 +2410,8 @@ scripts = [
         
         #] + (is_a_wb_script==1 and [
         (try_begin), #campaign AI (difficulty setting)
-            (assign, ":campaign_ai", "$tld_campaign_diffulty"),
-            (val_add, ":campaign_ai", 3),
-            (val_mul, ":to_add", ":campaign_ai"),
-            (val_div, ":to_add", 4), 
+            (val_mul, ":to_add", "$tld_volunteers_multi"),
+            (val_div, ":to_add", 100), 
         (try_end),
         #] or []) + [
 	    
@@ -3976,12 +3974,8 @@ scripts = [
       #] + (is_a_wb_script==1 and [
     (try_begin),
         (is_between, ":faction_id", kingdoms_begin, kingdoms_end),
-        #(store_relation, ":player_relation", ":faction_id", "$players_kingdom"),
-        #(lt, ":player_relation", 0),
-        (assign, ":campaign_ai", "$tld_campaign_diffulty"),
-        (val_add, ":campaign_ai", 2),
-        (val_mul, ":limit", 3), 
-      	(val_div, ":limit", ":campaign_ai"),
+        (val_mul, ":limit", "$tld_host_size_multi"), 
+      	(val_div, ":limit", 100),
     (try_end),
        # ] or []) + [
         
@@ -6042,7 +6036,12 @@ scripts = [
             		(assign, ":num_allied_factions_in_theater", 2),
             	(try_end), 
 
-            	(store_div, ":win_value", ":party_value", ":num_allied_factions_in_theater"), 
+            	(store_div, ":win_value", ":party_value", ":num_allied_factions_in_theater"),
+               
+                (try_begin),
+                    (val_mul, ":win_value", "$tld_victory_str_multi"), 
+                    (val_div, ":win_value", 100),
+                (try_end),
             	
             	(try_for_range, ":str_share", kingdoms_begin, kingdoms_end),
       				(faction_slot_eq, ":str_share", slot_faction_state, sfs_active),
