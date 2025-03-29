@@ -4,7 +4,7 @@ qst_deliver_message Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_
 qst_deliver_message_to_enemy_lord Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}_of_{s15}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_raise_troops Raise_{reg1}_{s14} 2 {s9}_asked_you_to_raise_{reg1}_{s14}_and_bring_them_to_{him/her}. 
 qst_escort_messenger Escort_the_messenger_to_{s14} 2 None 
-qst_hunt_down_fugitive Hunt_down_{s4} 2 {s9}_asked_you_to_hunt_down_the_fugitive_named_{s4}._He_is_currently_believed_to_be_at_{s3}. 
+qst_hunt_down_fugitive Hunt_down_{s4} 2 {s9}_asked_you_to_hunt_down_the_traitor_named_{s4}._He_is_currently_believed_to_be_at_{s3}. 
 qst_bring_back_runaway_serfs Bring_Back_Runaway_Slaves 2 {s9}_asked_you_to_bring_back_the_three_groups_of_runaway_slaves_back_to_{s2}._He_said_all_three_groups_must_be_running_away_in_the_direction_of_{s3}. 
 qst_follow_spy Follow_the_Spy_to_Meeting 2 {s11}_asked_you_to_follow_the_spy_that_will_leave_{s12}._You_must_be_careful_not_to_be_seen_by_the_spy_during_his_travel,_or_else_he_may_get_suspicious_and_turn_back._Once_the_spy_meets_with_his_accomplice,_you_are_to_ambush_and_capture_them_and_bring_them_both_back_to_{s11}. 
 qst_capture_enemy_hero Capture_an_enemy_commander 2 {s11}_asked_you_to_capture_an_enemy_commander. 

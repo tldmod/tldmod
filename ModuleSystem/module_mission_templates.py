@@ -1150,6 +1150,14 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
 tld_common_peacetime_scripts = [
 	#tld_fix_viewpoint,
 	tld_player_cant_ride,
+     ] + (is_a_wb_mt==1 and [
+    tld_move_ai,
+    tld_ai_kicking,
+    tld_ai_is_kicked,
+    tld_melee_ai,
+    hp_shield_init,
+    hp_shield_trigger,
+    ] or []) + [ 
 	dungeon_darkness_effect,
   reset_fog,
 ] + custom_tld_bow_to_kings + bright_nights + fade + reward_birds_wb + khams_custom_player_camera + nazgul_flying +((is_a_wb_mt==1) and tld_bow_shield + tld_animated_town_agents + tld_positional_sound_props + tld_points_of_interest or [] )#Custom Cam triggers
@@ -1637,7 +1645,7 @@ mission_templates = [ # not used in game
                (check_quest_active, "qst_hunt_down_fugitive"),
                (neg|check_quest_succeeded, "qst_hunt_down_fugitive"),
                (neg|check_quest_failed, "qst_hunt_down_fugitive"),
-               (quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_current_state, 1),
+               (neg|quest_slot_ge, "qst_hunt_down_fugitive", slot_quest_current_state, 9),
                (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
                (try_begin),
                  (call_script, "script_cf_troop_agent_is_alive", ":quest_object_troop"),
@@ -1654,11 +1662,67 @@ mission_templates = [ # not used in game
 	(ti_on_leave_area, 0, 0,[(try_begin),(eq, "$g_defending_against_siege", 0),(assign,"$g_leave_town",1),(try_end)],[]),
 	(3, 0, 0, [(call_script, "script_tick_town_walkers")], []),
 	(2, 0, 0, [(call_script, "script_center_ambiance_sounds")], []),
-	(1, 0, ti_once, [
+
+    ##### FUGITIVE
+    #move fugitive to location of smith, trader or mayor, this needs to be in a timed trigger, or otherwise the randomization does not work
+    (1, 0, ti_once, [(check_quest_active, "qst_hunt_down_fugitive"),(quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),],[
+        (try_for_agents, ":agent_no"),
+            (agent_get_troop_id, ":troop_no", ":agent_no"),
+            (is_between, ":troop_no", trp_fugitive_man, trp_spy), 
+            (store_random_in_range, ":entry", 10, 13),
+            # (assign, reg78, ":entry"),
+            # (display_message, "@entry: {reg78}"),
+            (quest_set_slot, qst_hunt_down_fugitive, slot_quest_current_state, ":entry"),
+            (quest_set_slot, qst_hunt_down_fugitive, slot_quest_target_troop, ":agent_no"), #use this slot to store the agent
+            (entry_point_get_position, pos4, ":entry"),
+            (copy_position, pos5, pos4),
+            (position_move_y, pos5, 500),
+            (position_move_x, pos5, 200),
+            ] + ((is_a_wb_mt==1) and [
+            (call_script, "script_lookat", pos5, pos4),
+             ] or []) + [
+            (agent_set_position, ":agent_no", pos5),
+        (try_end),
+        ]),
+
+    ] + ((is_a_wb_mt==1) and [
+    #fugitive behavior
+    (3, 0, 1, [(check_quest_active, "qst_hunt_down_fugitive"),(quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),], 
+    [(quest_get_slot, ":quest_agent", "qst_hunt_down_fugitive", slot_quest_target_troop), #use this slot to store the agent
+    (quest_get_slot, ":quest_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
+    (troop_get_slot, ":base_hp_shield", ":quest_troop", slot_troop_hp_shield),
+    (try_begin),
+        (quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_current_state, 1), #fighting
+        (agent_get_slot, ":cur_hp_shield", ":quest_agent", slot_agent_hp_shield),
+        (lt, ":cur_hp_shield", ":base_hp_shield"),
+        (store_random_in_range, ":chance", 0, ":base_hp_shield"),
+        (lt, ":cur_hp_shield", ":chance"),
+        (entry_point_get_position, pos5, 9),
+        (agent_set_speed_modifier, ":quest_agent", 120),
+        (agent_set_speed_modifier, "$current_player_agent", 100),
+        #(agent_set_scripted_destination, ":quest_agent", pos5),
+        (agent_start_running_away, ":quest_agent", pos5),
+        (quest_set_slot, "qst_hunt_down_fugitive", slot_quest_current_state, 2), #fleeing
+    (else_try),
+        (quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_current_state, 2), #fleeing
+        (entry_point_get_position, pos5, 9),
+        (agent_get_position, pos6, ":quest_agent"),
+        (get_distance_between_positions, ":dist", pos5, pos6),
+        (le, ":dist", 200),
+        (team_set_relation, 2, 3, 0),
+        (team_set_relation, 2, 0, 0),
+        (team_set_relation, 3, 0, 0),
+        (agent_set_speed_modifier, ":quest_agent", 100),
+    (try_end),  
+    ]),
+     ] or []) + [
+             
+    #fugitive kill check
+    (1, 0, ti_once, [
 			(check_quest_active, "qst_hunt_down_fugitive"),
 			(neg|check_quest_succeeded, "qst_hunt_down_fugitive"),
 			(neg|check_quest_failed, "qst_hunt_down_fugitive"),
-			(quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_current_state, 1),
+			(neg|quest_slot_ge, "qst_hunt_down_fugitive", slot_quest_current_state, 9),
 			(quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
 			(assign, ":not_alive", 0),
 			(try_begin),

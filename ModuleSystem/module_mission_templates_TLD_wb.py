@@ -1387,6 +1387,7 @@ tld_melee_ai = (0, 0, 0, [(eq,"$field_ai_lord",1),
     (try_for_agents,":agent1"),
       (agent_is_human, ":agent1"),
       (agent_is_active, ":agent1"),
+      (agent_is_alarmed, ":agent1"), #this check is needed in town mission, so agents don't draw their weapon on their own.
       (agent_get_slot, ":check_time", ":agent1", slot_agent_tick_check_time),
       (try_begin), #Batching Start
         (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible

@@ -547,7 +547,7 @@ dialogs = [
                     (quest_slot_eq, "qst_guardian_party_quest", slot_quest_target_center, "$g_encountered_party"),
                     (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, -1),
                     (eq, "$g_talk_troop", "trp_gimli")],
-"Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazaˆd! Khazaˆd ai-meˆnu!", "HD_defense_01",
+"Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazâd! Khazâd ai-mênu!", "HD_defense_01",
    [ ]],   
 
 [anyone|auto_proceed,"HD_defense_01", [], "Now, let us rest for a while. The enemy will be here by nightfall.", "close_window",
@@ -7983,9 +7983,10 @@ Please, I will be deeply indebted to you if you grant me this request.", "lord_m
 
 #Hunt down fugitive
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_hunt_down_fugitive")],
-"I have something you could help with, an issue with the lawless villain known as {s4}. \
- He murdered one of my bodyguards and has been on the run from his judgment ever since.\
- There has been news recently that the fugitive has been seen at {s3}.\
+"I have something you could help with, an issue with the traitor known as {s4}. \
+ He moves from place to place, spreading the insidious poison of doubt. He sows fear and undermines the resolve of our warriors. \
+ He acts on behalf of our enemies, that much is certain. Yet so far he has always been able to slip from my grasp. \
+ There has been news recently that he has been seen at {s3}. \
  You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.", "lord_mission_hunt_down_fugitive_told", [
      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
      (quest_get_slot, ":quest_target_dna", "$random_quest_no", slot_quest_target_dna),
@@ -7995,7 +7996,7 @@ Please, I will be deeply indebted to you if you grant me this request.", "lord_m
      (call_script, "script_get_name_from_dna_to_s50", ":quest_target_dna", ":quest_object_troop"),
      (str_store_string, s4, s50),
      (setup_quest_text, "$random_quest_no"),
-     (str_store_string, s2, "@{s9} asked you to hunt down a fugitive named {s4}. He is currently believed to be at {s3}.")]],
+     (str_store_string, s2, "@{s9} asked you to hunt down a traitor named {s4}. He is currently believed to be at {s3}.")]],
 
 [anyone|plyr,"lord_mission_hunt_down_fugitive_told", [], "Then I will hunt him down and execute the law.", "lord_mission_hunt_down_fugitive_accepted",[]],
 [anyone|plyr,"lord_mission_hunt_down_fugitive_told", [], "I am too busy to go after him at the moment.", "lord_mission_hunt_down_fugitive_rejected",[]],
@@ -10497,43 +10498,124 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 [anyone,"start",[(check_quest_active, "qst_hunt_down_fugitive"),
         (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
-        (eq, "$g_talk_troop", ":quest_object_troop")], 
+        (eq, "$g_talk_troop", ":quest_object_troop"),
+        (quest_slot_ge, "qst_hunt_down_fugitive", slot_quest_current_state, 10)], 
 "Yes, what do you want?", "fugitive_1",[]],
 
 [anyone|plyr,"fugitive_1", [
      (quest_get_slot, ":quest_target_dna", "qst_hunt_down_fugitive", slot_quest_target_dna),
      (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
      (call_script, "script_get_name_from_dna_to_s50", ":quest_target_dna", ":quest_object_troop"),
-     (str_store_string, s4, s50)], 
-"I am looking for a fugitive by the name of {s4}. You fit his description.", "fugitive_2",[]],
+     (str_store_string, s4, s50),
+     (troop_get_type, ":race", ":quest_object_troop"),
+     (try_begin),
+        (eq, ":race", tf_orc),
+        (str_store_string, s3, "@orc"),
+     (else_try),
+        (eq, ":race", tf_dwarf),
+        (str_store_string, s3, "@dwarf"),
+     (else_try), 
+        (str_store_string, s3, "@man"),
+     (try_end),
+     ], 
+"I am looking for a {s3} by the name of {s4}. You fit his description.", "fugitive_2",[]],
 
 [anyone|plyr,"fugitive_1", [], "Nothing. Sorry to trouble you.", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone,"fugitive_2", [], "I do not know what you are talking about.\
- You must have confused me with someone else.", "fugitive_3",[(call_script, "script_encounter_agent_draw_weapon"),]],
+ You must have confused me with someone else.", "fugitive_3",[
+    (call_script, "script_encounter_agent_draw_weapon"),
+    ]],
 
 [anyone|plyr,"fugitive_3", [], "Then drop your sword. If you are innocent, you have nothing to fear.\
- We'll go now and talk to the guard captain to see who is confused.", "fugitive_4",[]],
-
-[anyone,"fugitive_4", [], "Damn you! You will not be going anywhere!", "close_window",
-   [(call_script,"script_stand_back"),
+ We'll go now and talk to the guard captain to see who is confused.", "fugitive_4",
+    [
+    #make them enemies
     (set_party_battle_mode),
-    (get_player_agent_no, ":player_agent"),
-    (try_for_agents, ":cur_agent"),
-      (agent_get_troop_id, ":cur_agent_troop", ":cur_agent"),
-      (try_begin),
-        (eq, ":cur_agent_troop", "$g_talk_troop"),
-        (agent_set_team, ":cur_agent", 3),
-      (else_try),
-        (eq, ":cur_agent", ":player_agent"),
-        (agent_set_team, ":cur_agent", 2),
-      (try_end),
-    (try_end),
+    (agent_set_team, "$g_talk_agent", 3),
+    (agent_set_team, "$current_player_agent", 2),
     (team_set_relation, 2, 3, -1),
     (team_set_relation, 2, 0, 0),
     (team_set_relation, 3, 0, 0),
-    (quest_set_slot, "qst_hunt_down_fugitive", slot_quest_current_state, 1)]],
+    
+    #set them apart
+    (agent_get_position, pos4, "$current_player_agent"),
+    (position_move_y, pos4, -300),
+    (agent_set_position, "$current_player_agent", pos4),
+    (quest_get_slot, ":entry", "qst_hunt_down_fugitive", slot_quest_current_state),
+    (entry_point_get_position, pos3, ":entry"),
+    (position_move_y, pos3, 200),
+    (agent_set_position, "$g_talk_agent", pos3),
+    
+    # make him flee
+    # (entry_point_get_position, pos5, 9),
+    # (agent_set_speed_modifier, "$g_talk_agent", 130),
+    # (agent_set_scripted_destination, "$g_talk_agent", pos5),
+    # (agent_start_running_away, "$g_talk_agent", pos5),
+    # (quest_set_slot, "qst_hunt_down_fugitive", slot_quest_current_state, 2),
+    ]],
 
+[anyone,"fugitive_4", [], 
+"Damn you! You will not be going anywhere!", "close_window",
+   [(call_script,"script_stand_back"),
+    (quest_set_slot, "qst_hunt_down_fugitive", slot_quest_current_state, 1),
+    #push player
+    (agent_set_animation, "$current_player_agent", "anim_strike_fly_back_near_rise"),
+    (agent_play_sound, "$current_player_agent", "snd_wooden_hit_high_armor_low_damage"),
+    ] + (is_a_wb_dialog and [ (agent_ai_set_aggressiveness, "$g_talk_agent", 1000),] or [])  + [ 
+    (agent_set_animation, "$g_talk_agent", "anim_cancel_ani_stand"),
+    (agent_deliver_damage_to_agent, "$current_player_agent", "$g_talk_agent", 1),]],
+
+# [anyone,"fugitive_4", [(quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_current_state, 2),], 
+# "Damn you! You will not get me!", "close_window",
+   # [(agent_set_animation, "$current_player_agent", "anim_strike_fly_back_near_rise"),
+   # (agent_play_sound, "$current_player_agent", "snd_wooden_hit_high_armor_low_damage"),
+   # ]],
+
+[anyone|plyr,"start",[(check_quest_active, "qst_hunt_down_fugitive"),
+        (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
+        (eq, "$g_talk_troop", ":quest_object_troop"),
+        (quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_current_state, 2),
+        (quest_set_slot, "qst_hunt_down_fugitive", slot_quest_current_state, 3),
+    ] + (is_a_wb_dialog and [ (agent_stop_running_away, "$g_talk_agent"),] or [])  + [ 
+        (agent_set_animation, "$g_talk_agent", "anim_cancel_ani_stand"),], 
+"So, I caught you at last!", "fugitive_5",[]],
+
+[anyone,"fugitive_5", [], 
+"You are mistaken. We caught you!", "close_window",
+   [(call_script,"script_stand_back"),
+   (set_party_battle_mode),
+    (agent_set_team, "$g_talk_agent", 3),
+    (agent_set_team, "$current_player_agent", 2),    
+    (team_set_relation, 2, 3, -1),
+    (team_set_relation, 3, 2, -1),
+    (team_set_relation, 2, 0, 0),
+    (team_set_relation, 3, 0, 0),
+    
+    #spawn partners
+    (store_character_level, ":player_level", trp_player),
+    (val_div, ":player_level", 10),
+    (val_add, ":player_level", 1),
+    (agent_get_position, pos5, "$current_player_agent"),
+    (position_move_y, pos5, -500),
+    (set_spawn_position, pos5),
+    (try_begin),
+        (faction_slot_eq, "$ambient_faction", slot_faction_side, faction_side_good),
+        (assign, ":troop", trp_i2_mordor_num_renegade),
+    (else_try),
+        (faction_get_slot, ":troop", "$ambient_faction", slot_faction_tier_2_troop),
+    (try_end),
+    (try_for_range, ":unused", 0, ":player_level"),
+        (spawn_agent, ":troop"),
+        (agent_set_team, reg0, 3),
+        #(str_store_agent_name, s5, reg0),
+        #(display_message, "@spawn agent: {s5}"),
+        (troop_get_upgrade_troop, ":new_troop", ":troop", 0),
+        (gt, ":new_troop", 1),
+        (assign, ":troop", ":new_troop"),
+    (try_end),
+    (agent_deliver_damage_to_agent, "$current_player_agent", "$g_talk_agent", 1),
+]],
 
   #[anyone,"member_chat", [(check_quest_active, "qst_incriminate_loyal_commander"),
                           # (quest_slot_eq, "qst_incriminate_loyal_commander", slot_quest_current_state, 0),
@@ -12654,9 +12736,22 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                                       (call_script, "script_get_name_from_dna_to_s50", ":quest_target_dna", ":quest_object_troop"),
                                       (str_store_string, s4, s50),
                                       ],
-"I am looking for a fugitive by the name of {s4}. I was told he may be hiding here.", "town_dweller_ask_fugitive",[]],
+"I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?", "town_dweller_ask_fugitive",[]],
 
-[anyone ,"town_dweller_ask_fugitive", [],"Strangers come and go to our town. If he is hiding here, you will surely find him if you look around.", "close_window",[(call_script,"script_stand_back"),]],
+[anyone ,"town_dweller_ask_fugitive", [
+    (quest_get_slot, ":entry", qst_hunt_down_fugitive, slot_quest_current_state),
+    (try_begin),
+        (eq, ":entry", 10),
+        (str_store_string, s5, "@near the smithy"),
+    (else_try),
+        (eq, ":entry", 11),
+        (str_store_string, s5, "@near the local authority"),
+    (else_try),
+        (eq, ":entry", 12),
+        (str_store_string, s5, "@near the warehouse"),
+    (try_end),
+],
+"Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.", "close_window",[(call_script,"script_stand_back"),]],
 
 
 [anyone|plyr,"town_dweller_talk", [(party_slot_eq, "$current_town", slot_party_type, spt_village),

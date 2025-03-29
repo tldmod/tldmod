@@ -8442,6 +8442,9 @@ scripts = [
           # (try_end),
         (else_try),
           (eq, ":quest_no", "qst_hunt_down_fugitive"),
+          (neq, "$g_talk_troop_faction", "fac_lorien"), #no elves
+          (neq, "$g_talk_troop_faction", "fac_imladris"),
+          (neq, "$g_talk_troop_faction", "fac_woodelf"),
           (try_begin),
             (ge, "$g_talk_troop_faction_relation", 0),
             #(call_script, "script_cf_select_random_village_with_faction", ":giver_faction_no"),
@@ -8457,22 +8460,24 @@ scripts = [
             (else_try),
               (eq, "$g_talk_troop_faction", "fac_dwarf"),
               (assign, ":cur_object_troop", "trp_fugitive_dwarf"),
-            (else_try),
-              (this_or_next|eq, "$g_talk_troop_faction", "fac_lorien"),
-              (this_or_next|eq, "$g_talk_troop_faction", "fac_imladris"),
-              (eq, "$g_talk_troop_faction", "fac_woodelf"),
-              (assign, ":cur_object_troop", "trp_fugitive_elf"),
+            # (else_try),
+              # (this_or_next|eq, "$g_talk_troop_faction", "fac_lorien"),
+              # (this_or_next|eq, "$g_talk_troop_faction", "fac_imladris"),
+              # (eq, "$g_talk_troop_faction", "fac_woodelf"),
+              # (assign, ":cur_object_troop", "trp_fugitive_elf"),
             (else_try),
               (assign, ":cur_object_troop", "trp_fugitive_man"),
             (try_end),
             (assign, ":quest_object_troop", ":cur_object_troop"),
             
-            (call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
+            #(call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
+            (call_script, "script_cf_select_random_town_with_faction", ":giver_faction_no"),#Can fail
             (assign, ":quest_target_center", reg0),
             #(assign, ":quest_target_dist", reg1),
             (neq, ":quest_target_center", ":giver_center_no"),
 			(store_faction_of_party,":quest_target_faction",":quest_target_center"),
 			(assign,":quest_object_faction",":giver_faction_no"),
+            (troop_set_slot, ":quest_object_troop", slot_troop_hp_shield, 100),
             
             (assign, ":quest_importance", 4),
             (assign, ":quest_gold_reward", 300),
@@ -23151,6 +23156,10 @@ scripts = [
             (neg|check_quest_failed, "qst_hunt_down_fugitive"),
             (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
             (set_visitor, 9, ":quest_object_troop"), #spawn in place of any NPC companion, so sceners won't make a fuss 
+            (store_character_level, ":player_level", trp_player),
+            (val_mul, ":player_level", 10),
+            (troop_set_slot, ":quest_object_troop", slot_troop_hp_shield, ":player_level"),
+            (troop_set_slot, ":quest_object_troop", slot_troop_has_combat_ai, 1), 
         (try_end),
 
         (call_script, "script_init_town_walkers"),

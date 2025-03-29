@@ -4610,7 +4610,7 @@ game_menus = [
 	("none",[],"{!}None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
 	("bring_back_runaway_serfs",[],"{!}bring_back_runaway_serfs",[(assign,"$cheat_imposed_quest","qst_bring_back_runaway_serfs")]),
 	("mirkwood_sorcerer",[],"{!}mirkwood_sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
-	("cheat_raise_troops",[],"{!}Raise Troops",[(assign,"$cheat_imposed_quest","qst_raise_troops")]),
+	("qst_hunt_down_fugitive",[],"{!}qst_hunt_down_fugitive",[(assign,"$cheat_imposed_quest","qst_hunt_down_fugitive")]),
 	("cheat_defend_refugees",[],"{!}Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
 	("cheat_attack_refugees",[],"{!}Hunt Down Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_02")]),
 	("night_bandits",[],"{!}Night Bandits",[(assign,"$cheat_imposed_quest","qst_deal_with_night_bandits")]),

@@ -46,7 +46,7 @@ quests = [
 #  "{s9} asked you to collect taxes from {s3}. He offered to leave you one-fifth of all the money you collect there."
 #  ),
 ("hunt_down_fugitive", "Hunt down {s4}", qf_random_quest,
-  "{s9} asked you to hunt down the fugitive named {s4}. He is currently believed to be at {s3}."
+  "{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}."
   ),
 #( "capture_messenger", "Capture {s3}", qf_random_quest,
 #  "{s1} asked you to capture a {s3} and bring him back."

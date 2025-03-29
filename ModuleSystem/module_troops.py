@@ -3094,8 +3094,9 @@ troops = [
    [itm_leather_jerkin,itm_leather_boots,],
       def_attrib|level(4),wp(60),knows_common,mercenary_face_1,mercenary_face_2],
 ["fugitive_man","Suspicious_Man","{!}Suspicious_Men",tfg_boots| tfg_armor,0,0,fac_commoners,
-   [itm_leather_jerkin,itm_leather_boots,itm_arnor_sword_f,itm_loss_throwing_axes,],
+   [itm_leather_jerkin,itm_leather_boots,itm_rhun_shortsword,itm_corsair_throwing_dagger,],
       attr_tier_4,wp_tier_4,knows_common|knows_athletics_6|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_9,mercenary_face_1,mercenary_face_2],
+#unused: Elves don't give this quest anymore
 ["fugitive_elf","Suspicious_Elf","{!}Suspicious_Elves",tf_lorien| tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_lorien_armor_a,itm_lorien_boots,itm_lorien_sword_a,itm_loss_throwing_axes,],
       attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_6|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_9,lorien_elf_face_1,lorien_elf_face_2],
@@ -3105,6 +3106,7 @@ troops = [
 ["fugitive_orc","Suspicious_Orc","{!}Suspicious_Orcs",tf_orc| tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_moria_armor_a,itm_orc_slasher,itm_orc_throwing_arrow,],
       attr_orc_tier_4,wp_orc_tier_4,knows_common|knows_athletics_6|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_9,mercenary_face_1,mercenary_face_2],
+#these are unused, quest has been disabled
 ["spy","Shifty-eyed_Corsair","{!}Shifty-eyed_Corsairs",tf_mounted| tfg_boots| tfg_armor| tfg_gloves| tfg_horse,0,0,fac_neutral,
    [itm_umb_armor_d,itm_umb_armor_c,itm_corsair_boots,itm_umb_shield_b,itm_umb_shield_d,itm_umbar_cutlass,itm_umbar_rapier,itm_steppe_horse,],
       attr_tier_4,wp_tier_4,knows_common|knows_riding_3|knows_power_strike_3,bandit_face1,bandit_face2],
