@@ -2215,7 +2215,7 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
       (str_store_troop_name, s1, ":troop_killer"),
       (assign, reg0, ":health_regeneration"),
       (assign, reg1, ":strength"),   
-      (display_message, "@DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR"),
+      (display_message, "@{!}DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR"),
     (try_end),
     
     # Regenerates the given health amount.

@@ -41,7 +41,7 @@ dlga_hobbit_merry_talk_met:close_window|Hello, messer Merry.
 dlga_hobbit_pippin_talk_met:close_window|Hello, messer Pippin.
 dlga_start:hd_defense_01|It is well that you are here, {playername}. My name is Aragorn, son of Arathorn, and I am the Heir of Isildur – see, here is Anduril, the Flame of the West, which I bear in battle. The Blade that was Broken shines again! It will not be long before Saruman’s forces reach these walls. I ask you now to lend me your aid and defend the Rohirrim, for the honour of the Lord of the Mark. Let this be the hour when we draw swords together!
 dlga_start:hd_defense_01.1|Mae lovannen! Things here look ill, {playername}, but less ill now that you are here with us! Gellon len covad. I am Legolas of Mirkwood, and though I do not much like this place I like the approaching hordes of Saruman even less. What would I give for a hundred more of my kin here! There are too few of us, too few. We shall need your aid, Commander, though we may be but a few leaves in the forest. Come, let me show you where our bows will be of the most use…
-dlga_start:hd_defense_01.2|Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazaˆd! Khazaˆd ai-meˆnu!
+dlga_start:hd_defense_01.2|Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazâd! Khazâd ai-mênu!
 dlga_hd_defense_01:close_window|Now, let us rest for a while. The enemy will be here by nightfall.
 dlga_start:aragorn_thanks_hd|{playername}, I am glad to see you live still. The men are weary with battle, but thanks to you they see the dawn of a new day. The hillmen have given themselves up, and they shall be put to work to repair the evil which they have joined, after which I hope they will return to their own lands. They were easily deceived by Saruman, for much was taken from them, and much remains to be given back; we shall have to see what can be done for them later.
 dlga_aragorn_thanks_hd:close_window|I hope our paths may cross again, {playername}. I bid you farewell now, for I ride on an errand most urgent. With the first light of morning we must go, my friends and I, and take a dark road out of this valley. {playername}, the times are evil, but your valour gladdens the hearts of all free peoples everywhere, from the North to the South. Fight well, and we may meet again beyond the shadows!
@@ -294,6 +294,7 @@ dlga_lord_start:lord_hunt_refugees_failed|{playername}, our spies tell us that y
 dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|They were slippery, master. I was unable to track them down.
 dlga_lord_hunt_refugees_failed_1:lord_pretalk|Maybe you are not good enough to command the armies that will bring this world to its heels if you cannot even defeat the wounded and the sick!^^ Begone, and pray I give you a second chance.
 dlga_lord_start:lord_generic_mission_completed.9|Damn me, but you've done it, {playername}. All the slaves are back and they're busy preparing for the harvest. You certainly earned your reward. Here, take it, with my compliments.
+dlga_lord_start:lord_generic_mission_completed.10|Well done, but you've done it, {playername}. The slaves are back and they're busy preparing for the harvest. I guess you had to kill some of them in order to make the others obey. Can't be helped, but I'll only reward you for those that have returned, not the ones you left rotting in the wilderness.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. I have been waiting patiently for my slaves, yet none have returned. Have you an explanation? Were you outwitted by simple animals, or are you merely incompetent?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Forgive me, {s65}, those slaves were slippery as eels.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, that is hardly an excuse for failure, {playername}. Now if you will excuse me, I need to capture new men to work these fields before we all starve.
@@ -590,7 +591,7 @@ dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|I am too 
 dlga_lord_mission_raise_troops_accepted:close_window|You've taken a weight off my shoulders, {playername}. I shall tell my sergeants to send you the recruits and attach them to your command. Also, I'll advance you some money to help with expenses. Here, this purse should do it. Thank you for your help.
 dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the training field. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, of course. I had expected as much. Well, good luck to you then.
-dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the lawless villain known as {s4}.  He murdered one of my bodyguards and has been on the run from his judgment ever since. There has been news recently that the fugitive has been seen at {s3}. You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
+dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the traitor known as {s4}.  He moves from place to place, spreading the insidious poison of doubt. He sows fear and undermines the resolve of our warriors.  He acts on behalf of our enemies, that much is certain. Yet so far he has always been able to slip from my grasp.  There has been news recently that he has been seen at {s3}.  You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Then I will hunt him down and execute the law.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|I am too busy to go after him at the moment.
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|That's excellent, {playername}.  I will be grateful, and of course your prowess wil be duly noted.  Well, good hunting to you.
@@ -769,11 +770,13 @@ dlga_defeat_hero_answer_1:close_window|Damn you. You will regret this.
 dlga_defeat_hero_answer:defeat_hero_answer_2|You're free to go this time, but don't cross my path again.
 dlga_defeat_hero_answer_2:close_window|We will meet again.
 dlga_start:fugitive_1|Yes, what do you want?
-dlga_fugitive_1:fugitive_2|I am looking for a fugitive by the name of {s4}. You fit his description.
+dlga_fugitive_1:fugitive_2|I am looking for a {s3} by the name of {s4}. You fit his description.
 dlga_fugitive_1:close_window|Nothing. Sorry to trouble you.
 dlga_fugitive_2:fugitive_3|I do not know what you are talking about. You must have confused me with someone else.
 dlga_fugitive_3:fugitive_4|Then drop your sword. If you are innocent, you have nothing to fear. We'll go now and talk to the guard captain to see who is confused.
 dlga_fugitive_4:close_window|Damn you! You will not be going anywhere!
+dlga_start:fugitive_5|So, I caught you at last!
+dlga_fugitive_5:close_window|You are mistaken. We caught you!
 dlga_start:follow_spy_talk|Good day. Such fine weather don't you think? If you'll excuse me now I must go on my way.
 dlga_follow_spy_talk:follow_spy_talk_2|In the name of {s1}, you are under arrest!
 dlga_follow_spy_talk_2:close_window|You won't get me alive!
@@ -783,12 +786,15 @@ dlga_spy_partners_talk:spy_partners_talk_2|In the name of {s1} You are under arr
 dlga_spy_partners_talk_2:close_window|You will have to fight us first!
 dlga_spy_partners_talk:close_window|Never mind me. I was just passing by.
 dlga_start:runaway_serf_intro_1|Good day master.
-dlga_runaway_serf_intro_1:runaway_serf_intro_2|I have been sent by your {s4} whom you are running from. He will not punish you if you return now.
-dlga_runaway_serf_intro_2:runaway_serf_intro_3|My good master. Our lives at {s1} was unbearable. We worked all day long and still went to bed hungry. We are going to {s6} to start a new life, where we will be treated like humans.
-dlga_runaway_serf_intro_3:runaway_serf_go_back|You have gone against our laws by running from slavery. You will go back to {s1} now!
-dlga_runaway_serf_go_back:close_window|All right master. As you wish. We'll head back to {s5} now.
-dlga_start:runaway_serf_talk_caught|Good day master. We were heading back to {s5}, but I am afraid we lost our way.
-dlga_runaway_serf_talk_caught:runaway_serf_go_back|Do not test my patience. You are going back now!
+dlga_runaway_serf_intro_1:runaway_serf_intro_2|I have been sent by {s4} whom you are running from. {reg11?She:He} will hold back {reg11?her:his} wrath and spare your lifes if you return now.
+dlga_runaway_serf_intro_2:runaway_serf_intro_3|Have mercy! Going back to {s1} means certain death.{s4} will make us toil until we die of exhaustion, or he will put us to the stake immediately.
+dlga_runaway_serf_intro_3:runaway_serf_go_back|And this will be all that you maggots deserve. You will go back to {s1}, or I have you slaughtered here and now!
+dlga_runaway_serf_intro_3:runaway_serf_slaughter|I see. I think I will have to teach you lot a lesson in order to make you obey. Slaughter him!
+dlga_runaway_serf_go_back:close_window|All right {reg11?mistress:master}. As you wish. We'll head back to {s5} now.
+dlga_start:runaway_serf_talk_caught|Good day {reg11?mistress:master}. We were heading back to {s5}, but I am afraid we lost our way.
+dlga_runaway_serf_talk_caught:runaway_serf_go_back|Do not test my patience. You are going back now! (Charisma)
+dlga_runaway_serf_talk_caught:runaway_serf_slaughter|I see. I think I will have to teach you lot a lesson not to lose your way again. Slaughter him!
+dlga_runaway_serf_slaughter:close_window|One day you will pay.... Aaa-ghgllr!...
 dlga_start:runaway_serf_talk_again_return|We are on our way back to {s5} master.
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|Make haste now. The sooner you return the better.
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|Good. Keep going.
@@ -1005,8 +1011,8 @@ dlga_town_merchant_talk:merchant_gossip|Tell me. What are people talking about t
 dlga_town_merchant_talk:close_window|Good-bye.
 dlga_start:town_dweller_talk|Excuse me?
 dlga_start:town_dweller_talk.1|Good day, Commander.
-dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a fugitive by the name of {s4}. I was told he may be hiding here.
-dlga_town_dweller_ask_fugitive:close_window|Strangers come and go to our town. If he is hiding here, you will surely find him if you look around.
+dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?
+dlga_town_dweller_ask_fugitive:close_window|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
 dlga_town_dweller_talk:town_dweller_ask_info|What can you tell me about this village?
 dlga_town_dweller_talk:town_dweller_ask_info.1|What can you tell me about this place?
 dlga_town_dweller_talk:town_dweller_talk|How is life here?

@@ -3256,7 +3256,7 @@ simple_triggers = [
         (eq, "$cheat_mode", 1),
         (assign, reg70, ":last_stand_counter"),
         (gt, reg70, 0),
-        (display_message, "@{reg70} - Last Stand", color_bad_news),
+        (display_message, "@{!}{reg70} - Last Stand", color_bad_news),
       (try_end),
       (gt, ":last_stand_counter", 0),
       (call_script, "script_last_faction_stand", ":faction"),

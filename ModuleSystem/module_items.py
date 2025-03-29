@@ -1502,7 +1502,7 @@ items =[
 	      (val_add, reg10, 1), #count number agents got hit
 	      (play_sound,"snd_shield_broken"),
       	(try_end),
-		(display_message, "@Siege weapon damaged {reg10} agents", color_bad_news), # swy: FIXME: agents? is this a debug string?
+		(display_message, "@{!}Siege weapon damaged {reg10} agents", color_bad_news), # swy: FIXME: agents? is this a debug string?
 		(assign, reg10, 0),
 	(try_end),
 	]),

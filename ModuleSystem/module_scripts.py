@@ -25550,7 +25550,7 @@ command_cursor_scripts = [
             (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
         (try_end),
         (call_script, "script_cancel_quest", "qst_guardian_party_quest"),
-        (display_message, "@Notice: Isengard Last Stand quest cancelled for savegame compatibility reasons. Isengard can now be sieged like a regular city."),
+        (display_message, "@{!}Notice: Isengard Last Stand quest cancelled for savegame compatibility reasons. Isengard can now be sieged like a regular city."),
         (assign, "$savegame_version", 33),
         (party_set_slot, "p_town_isengard", slot_center_siegability, tld_siegable_capital),        
 	(try_end),	  
@@ -25603,7 +25603,7 @@ command_cursor_scripts = [
         # (call_script, "script_clone_troop", "trp_pippin_notmet_old", "trp_pippin_notmet"),
         (check_quest_active, "qst_deliver_message_hobbit"),
         (call_script, "script_cancel_quest", "qst_deliver_message_hobbit"),
-        (display_message, "@Hobbit quest aborted for compatibility reasons. Hobbits will now only appear after certain conditions are met."),
+        (display_message, "@{!}Hobbit quest aborted for compatibility reasons. Hobbits will now only appear after certain conditions are met."),
 	(try_end),	
     
     (try_begin), #Update Radagast for old savegames
@@ -25659,8 +25659,8 @@ command_cursor_scripts = [
     (try_begin), #Change skill assignments; inform player about NPC respec
         (le, "$savegame_version", 4028),
         (assign, "$savegame_version", 4029),
-        (tutorial_box, "@This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu."),
-        (display_message, "@This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu."),
+        (tutorial_box, "@{!}This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu."),
+        (display_message, "@{!}This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu."),
     (try_end),
     
     (try_begin), #reset war start global
@@ -25873,7 +25873,7 @@ command_cursor_scripts = [
 	        (party_remove_members, ":party_no", ":mintroop", ":n"),
 	        (val_sub,":troops_to_fill",":n"),
 		(else_try), 
-			(display_message,"@Something wrong, not enough troops to remove"),
+			(display_message,"@{!}Something wrong, not enough troops to remove"),
 	  	(try_end),
 
 	  	(str_store_troop_name, s6, ":mintroop"),
@@ -25888,7 +25888,7 @@ command_cursor_scripts = [
 			(else_try),
 				(assign, reg1, ":maxlevel"),
 			(try_end),
-			(display_message, "@Troop: {s6} - Level: {reg1}"),
+			(display_message, "@{!}Troop: {s6} - Level: {reg1}"),
 		(try_end),
 
     (try_end),
@@ -25944,7 +25944,7 @@ command_cursor_scripts = [
 		(eq, "$cheat_mode",1),
 		(assign, reg6, ":centers_left"),
 		(str_store_faction_name, s2, ":faction_encountered"), 
-		(display_message, "@{reg6} Centers Left for {s2}", color_good_news),
+		(display_message, "@{!}{reg6} Centers Left for {s2}", color_good_news),
 	(try_end),
 
 	(le, ":centers_left", 1), #Fail if capital is not the only one left.

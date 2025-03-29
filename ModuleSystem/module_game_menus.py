@@ -4888,12 +4888,12 @@ game_menus = [
        ),	  
 	  	   
 
-      ("camp_mod_4",   [],
-      "{!}Spawn a looter party nearby.",
-      [  (spawn_around_party, "p_main_party", "pt_looters"),
-         (display_message, "@{!}Looter party was spawned nearby."),
-         (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")
-      ]),
+      # ("camp_mod_4",   [],
+      # "{!}Spawn a looter party nearby.",
+      # [  (spawn_around_party, "p_main_party", "pt_looters"),
+         # (display_message, "@{!}Looter party was spawned nearby."),
+         # (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")
+      # ]),
 	  
       # ("camp_mod_5",   [],
       # "Fill merchants with faction stuff",
@@ -10221,7 +10221,7 @@ game_menus = [
         (jump_to_scene,":lp_scene"),
         (change_screen_mission),
        ]),
-     ("leave_bandit_lair",[],"Leave for now.",[(change_screen_return)]),
+     ("leave_bandit_lair",[],"{!}Leave for now.",[(change_screen_return)]),
 	]
 ),
 
@@ -10237,23 +10237,23 @@ game_menus = [
 ## Kham - Spears of Bladorthin - Raft Men - Start
 
 ("raftmen",0,
-    "^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.",
+    "{!}^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.",
     "none",
     [(set_background_mesh, "mesh_town_goodcamp"), 
     ],
-    [("go_with_the_raftmen",[],"Take the raft to Dorwinion",
+    [("go_with_the_raftmen",[],"{!}Take the raft to Dorwinion",
        [(jump_to_menu, "mnu_ride_to_dorwinion"),
        ]),
-     ("leave_bandit_lair",[],"Leave for now.",[(change_screen_return)]),
+     ("leave_bandit_lair",[],"{!}Leave for now.",[(change_screen_return)]),
 	]
 ),
 
 ("ride_to_dorwinion",0,
-    "^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...",
+    "{!}^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...",
     "none",
     [(set_background_mesh, "mesh_town_goodcamp"), 
     ],
-    [("ride_to_dorwinion_next",[],"Next...",
+    [("ride_to_dorwinion_next",[],"{!}Next...",
        [(jump_to_menu, "mnu_amath_dollen_fortress"),
        ]),
 	]
@@ -10267,11 +10267,11 @@ game_menus = [
 ### 24-28 walkers
 
 ("amath_dollen_fortress",0,
-    "^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.",
+    "{!}^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.",
     "none",
     [(set_background_mesh, "mesh_town_evilcamp"), 
     ],
-    [("bandit_fortress_with_companions",[],"Approach the Bandit Fortress with only your companions and attempt to talk with their leader.",
+    [("bandit_fortress_with_companions",[],"{!}Approach the Bandit Fortress with only your companions and attempt to talk with their leader.",
        [(set_jump_mission, "mt_amath_dollen_peace"),
 				(eq, "$g_encountered_party", "p_raft"),
 				(assign, ":lp_scene", "scn_black_shield_fortress"),
@@ -10306,7 +10306,7 @@ game_menus = [
 # 16-18 team_1 infantry
 # 19-31 team_1 archers (best 2 each)
  
-     ("bandit_fortress_with_army",[],"Attack the bandit fortress with all your men.",
+     ("bandit_fortress_with_army",[],"{!}Attack the bandit fortress with all your men.",
        [(eq, "$g_encountered_party", "p_raft"),
 			(assign, ":lp_scene", "scn_black_shield_fortress_siege_player"),
 			#(assign, "$bs_day_sound", "snd_"),
@@ -10350,7 +10350,7 @@ game_menus = [
 # 3-15 team_0 archers (1 or 2 each)
 # 16-31 team_1 infantry
 
-      ("bandit_fortress_against_easterlings",[],"Defend the Fortress against the Siege",
+      ("bandit_fortress_against_easterlings",[],"{!}Defend the Fortress against the Siege",
        [(eq, "$g_encountered_party", "p_raft"),
 		(assign, ":lp_scene", "scn_black_shield_fortress_siege_easterlings"),
 		#(assign, "$bs_day_sound", "snd_"),
@@ -10393,7 +10393,7 @@ game_menus = [
         (change_screen_mission),
        ]),
 
-		("bandit_fortress_spirits",[(is_currently_night)],"Go talk with the spirits.",
+		("bandit_fortress_spirits",[(is_currently_night)],"{!}Go talk with the spirits.",
        [(set_jump_mission, "mt_amath_dollen_spirit"),
 				(eq, "$g_encountered_party", "p_raft"),
 				(assign, ":lp_scene", "scn_black_shield_fortress"),
@@ -10422,7 +10422,7 @@ game_menus = [
 	 ("formations_test" ,[],"{!}Formations Test",
 		[(assign, "$g_custom_battle_scenario", 98),(jump_to_menu, "mnu_custom_battle_2"),]),
 
-     ("leave_amath_dollen_fortress",[],"Leave for now.",[(change_screen_return)]),
+     ("leave_amath_dollen_fortress",[],"{!}Leave for now.",[(change_screen_return)]),
 	]
 ),
 	
@@ -12979,15 +12979,15 @@ game_menus = [
  (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8",
  "none",
    [(set_background_mesh, "mesh_ui_default_menu_window")],[
-   ("scene1",[],"Plain Big (file scn_custom_1.sco)",	[(1261,"scn_custom_1"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_1"),(2048)]),
-   ("scene2",[],"Plain Med (file scn_custom_2.sco)",	[(1261,"scn_custom_2"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_2"),(2048)]),
-   ("scene3",[],"Plain Small (file scn_custom_3.sco)",	[(1261,"scn_custom_3"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_3"),(2048)]),
-   ("scene4",[],"Steppe Big (file scn_custom_4.sco)",	[(1261,"scn_custom_4"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_4"),(2048)]),
-   ("scene5",[],"Steppe Med (file scn_custom_5.sco)",	[(1261,"scn_custom_5"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_5"),(2048)]),
-   ("scene6",[],"Steppe Small (file scn_custom_6.sco)",	[(1261,"scn_custom_6"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_6"),(2048)]),
-   ("scene7",[],"Forest Big (file scn_custom_7.sco)",	[(1261,"scn_custom_7"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_7"),(2048)]),
-   ("scene8",[],"Forest Med (file scn_custom_8.sco)",	[(1261,"scn_custom_8"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_8"),(2048)]),
-   ("scene9",[],"Forest Small (file scn_custom_9.sco)",	[(1261,"scn_custom_9"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_9"),(2048)]),
+   ("scene1",[],"{!}Plain Big (file scn_custom_1.sco)",	[(1261,"scn_custom_1"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_1"),(2048)]),
+   ("scene2",[],"{!}Plain Med (file scn_custom_2.sco)",	[(1261,"scn_custom_2"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_2"),(2048)]),
+   ("scene3",[],"{!}Plain Small (file scn_custom_3.sco)",	[(1261,"scn_custom_3"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_3"),(2048)]),
+   ("scene4",[],"{!}Steppe Big (file scn_custom_4.sco)",	[(1261,"scn_custom_4"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_4"),(2048)]),
+   ("scene5",[],"{!}Steppe Med (file scn_custom_5.sco)",	[(1261,"scn_custom_5"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_5"),(2048)]),
+   ("scene6",[],"{!}Steppe Small (file scn_custom_6.sco)",	[(1261,"scn_custom_6"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_6"),(2048)]),
+   ("scene7",[],"{!}Forest Big (file scn_custom_7.sco)",	[(1261,"scn_custom_7"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_7"),(2048)]),
+   ("scene8",[],"{!}Forest Med (file scn_custom_8.sco)",	[(1261,"scn_custom_8"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_8"),(2048)]),
+   ("scene9",[],"{!}Forest Small (file scn_custom_9.sco)",	[(1261,"scn_custom_9"),(1262,0),(1263,0,0),(1911,"mt_scene_chooser"),(1910, "scn_custom_9"),(2048)]),
    ("back_3dot" ,[],"Back...",[(change_screen_quit)])],
  ),
 

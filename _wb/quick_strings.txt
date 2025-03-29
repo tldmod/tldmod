@@ -1,6 +1,6 @@
-2043
+2045
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
-qstr_Siege_weapon_damaged Siege_weapon_damaged_{reg10}_agents
+qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -102,7 +102,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr_{!}_rev_333_wb__dev_ {!}_rev_333_wb_|_dev_^_Built_2025-03-02_14:47___
+qstr_{!}_rev_337_wb__dev_ {!}_rev_337_wb_|_dev_^_Built_2025-03-29_20:33___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -771,12 +771,12 @@ qstr_loses_Faction_Strengt loses_Faction_Strength_due_to_the_destruction_of_thei
 qstr_gains_Faction_Streng gains_Faction_Strength_as_news_of_your_victory_spreads.
 qstr_{!}{s11}_{s10} {!}{s11}_{s10}
 qstr_{!}{s13}_{s14} {!}{s13}_{s14}
-qstr_Notice:_Isengard_Las Notice:_Isengard_Last_Stand_quest_cancelled_for_savegame_compatibility_reasons._Isengard_can_now_be_sieged_like_a_regular_city.
-qstr_Hobbit_quest_aborted Hobbit_quest_aborted_for_compatibility_reasons._Hobbits_will_now_only_appear_after_certain_conditions_are_met.
-qstr_This_update_has_chan This_update_has_changed_the_assignment_of_some_skills_to_their_attributes._If_you_would_like_to_review_your_companions'_skills,_you_can_now_import/export_them_if_you_ask_them_about_their_skills_from_the_party_menu.
-qstr_Something_wrong_not_ Something_wrong,_not_enough_troops_to_remove
-qstr_Troop:_{s6}___Level: Troop:_{s6}_-_Level:_{reg1}
-qstr_{reg6}_Centers_Left_ {reg6}_Centers_Left_for_{s2}
+qstr_{!}Notice:_Isengard_ {!}Notice:_Isengard_Last_Stand_quest_cancelled_for_savegame_compatibility_reasons._Isengard_can_now_be_sieged_like_a_regular_city.
+qstr_{!}Hobbit_quest_abor {!}Hobbit_quest_aborted_for_compatibility_reasons._Hobbits_will_now_only_appear_after_certain_conditions_are_met.
+qstr_{!}This_update_has_c {!}This_update_has_changed_the_assignment_of_some_skills_to_their_attributes._If_you_would_like_to_review_your_companions'_skills,_you_can_now_import/export_them_if_you_ask_them_about_their_skills_from_the_party_menu.
+qstr_{!}Something_wrong_n {!}Something_wrong,_not_enough_troops_to_remove
+qstr_{!}Troop:_{s6}___Lev {!}Troop:_{s6}_-_Level:_{reg1}
+qstr_{!}{reg6}_Centers_Le {!}{reg6}_Centers_Left_for_{s2}
 qstr_{!}DEBUG:_{reg0}_tro {!}DEBUG:_{reg0}_troop_stacks_of_{s1}_found
 qstr_{!}DEBUG:_8_Hours_to {!}DEBUG:_8_Hours_to_hide
 qstr_{!}DEBUG:_7_Hours_to {!}DEBUG:_7_Hours_to_hide
@@ -897,6 +897,7 @@ qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
 qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!
+qstr_Delivered_{reg60}_da Delivered_{reg60}_damage.
 qstr_Cannot_Change_Camera Cannot_Change_Camera_Mode_while_in_First_Person.
 qstr_Switch_Back_to_3rd_P Switch_Back_to_3rd_Person_View_to_Cycle_Camera.
 qstr_Fixed_Custom_Camera Fixed_Custom_Camera
@@ -940,8 +941,7 @@ qstr_Division_{reg1}_{s2}_g Division_{reg1}_{s2}_goes_to_its_memorized_position.
 qstr_Division_{reg1}_{s2}_f Division_{reg1}_{s2}_forms_line_(memorized).
 qstr_Division_{reg1}_{s2}_fo Division_{reg1}_{s2}_forms_{reg0}_lines_(memorized).
 qstr_A_Nazgul_on_a_winged A_Nazgul_on_a_winged_steed_circles_over_the_battle_field!
-qstr_Delivered_{reg60}_da Delivered_{reg60}_damage.
-qstr_DEBUG__Health_Regen_ DEBUG_(Health_Regen):_{s1}_regains_{reg0}%_health.__=_+{reg1}%_STR
+qstr_{!}DEBUG__Health_Reg {!}DEBUG_(Health_Regen):_{s1}_regains_{reg0}%_health.__=_+{reg1}%_STR
 qstr_Your_bear_form_has_{ Your_bear_form_has_{reg2}/{reg1}_HP!
 qstr_{!}DEBUG:_Ti_on_item {!}DEBUG:_Ti_on_item_wielded
 qstr_Some_of_your_human_t Some_of_your_human_troops_are_not_daunted_by_the_darkness.(Night_Troops_are_not_affected_by_night_time_penalties)
@@ -1276,7 +1276,6 @@ qstr_{!}Added_10_prisoner {!}Added_10_prisoners.
 qstr_{!}Added_1000_experi {!}Added_1000_experience_to_player.
 qstr_{!}Attributes_skills {!}Attributes,_skills_and_proficiencies_raised.
 qstr_{!}Items_added_to_pl {!}Items_added_to_player_inventory.
-qstr_{!}Looter_party_was_ {!}Looter_party_was_spawned_nearby.
 qstr_{!}Ironman_turned_of {!}Ironman_turned_off
 qstr_HP_lost_from_poisoni HP_lost_from_poisoning.
 qstr__{s17}. ,_{s17}.
@@ -1456,7 +1455,7 @@ qstr_In_a_desperate_attem In_a_desperate_attempt_to_defend_against_his_enemies,_
 qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_Advance_Camp_in_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_{playername}_s_Reser {playername}'s_Reserves
-qstr_{reg70}___Last_Stand {reg70}_-_Last_Stand
+qstr_{!}{reg70}___Last_St {!}{reg70}_-_Last_Stand
 qstr_Gondor_has_called_fo Gondor_has_called_for_aide!
 qstr_Gondor_is_accompanyi Gondor_is_accompanying_the_marshall!
 qstr_{s5}_has_stopped_fol {s5}_has_stopped_following_you.
@@ -1560,7 +1559,7 @@ qstr_You_gained_250_exper You_gained_250_experience.
 qstr_Hrooom..._Hmmm...Who Hrooom..._Hmmm...Who_are_you?
 qstr_Hrooom..._Hmmm...Oh_ Hrooom..._Hmmm...Oh,_it's_you_again,_{playername}.
 qstr_Treebeard_wants_you_ Treebeard_wants_you_find_and_defeat_the_orcs_cutting_down_trees_in_Fangorn.
-qstr_Something_wrong_not_e Something_wrong,_not_enough_troops_for_scout_party
+qstr_Something_wrong_not_ Something_wrong,_not_enough_troops_for_scout_party
 qstr_my_home_town my_home_town
 qstr_I_am_in_perfect_heal I_am_in_perfect_health.
 qstr_I_am_suffering_from_ I_am_suffering_from_{s1}.
@@ -1971,6 +1970,9 @@ qstr_{s1}_Slaves {s1}_Slaves
 qstr_The_{s11}_of_{s10}_a The_{s11}_of_{s10}_asked_you_to_escort_some_{s12}_to_{s13}.
 qstr__Guards_slaughter_hi _Guards,_slaughter_him!
 qstr_Slaughter_him_for_fr Slaughter_him_for_fresh_human_meat!
+qstr_near_the_smithy near_the_smithy
+qstr_near_the_local_autho near_the_local_authority
+qstr_near_the_warehouse near_the_warehouse
 qstr_This_is_{s5}_Command This_is_{s5},_Commander.
 qstr_{s6}_This_place_and_ {s6}_This_place_and_the_surrounding_lands_belong_to_{s7}_of_{s8}.
 qstr_Hear_now_commander._ Hear_now,_commander._I_am_currently_out_of_assignment,_yet_I_would_rather_meet_our_enemies_in_the_field_than_wait_for_them_to_come_here._I_hear_you're_a_capable_leader._Would_you_have_me?
