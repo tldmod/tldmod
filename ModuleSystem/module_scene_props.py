@@ -1780,7 +1780,7 @@ scene_props = [
     (particle_system_burst,"psys_game_hoof_dust",pos1,40),
     (particle_system_burst,"psys_dummy_smoke",pos1,30),
     #(particle_system_burst,"psys_pistol_smoke",pos1,200),
-    (position_rotate_x, pos1, 85),
+    (position_rotate_x, pos1, -90),
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
     (display_message,"@Gate is breached!"),
@@ -5519,28 +5519,28 @@ scene_props = [
     (ti_on_scene_prop_init,[ 
         (store_trigger_param_1, ":scene_prop"),
         (set_fixed_point_multiplier, 10000),
-        (prop_instance_get_scale, pos1, ":scene_prop"), 
-        (position_get_scale_z, ":item_type", pos1),
+        (prop_instance_get_scale, pos1, ":scene_prop"),
+        (store_mission_timer_a, ":time"),
         (try_begin),
             ] + (is_a_wb_sceneprop==1 and [ (is_edit_mode_enabled), ] or []) + [ 
-            (eq, ":item_type", 10000), #only show tutorial message if scale is unchanged
+            (gt, ":time", 5),
             (display_message, "@{!} debug: closest nearby scene item is given as reward; set var1 as item modifier"),
-            (display_message, "@{!} debug: scale prop to disable this message"),
         (try_end),
 
         ] + (is_a_wb_sceneprop==1 and [
         (store_current_scene, ":cur_scene"),
         (prop_instance_get_position, pos2, ":scene_prop"),
-        (try_for_range, ":count", 0, 4), #check which prop instance number, compare to slot number. 4 slots allow up to 4 secrets
+        (try_for_range, ":count", 0, 10), #check which prop instance number, compare to slot number. 9 slots allow up to 9 secrets
             (scene_prop_get_instance, ":instance_no", "spr_secret_loot_prop", ":count"), 
             (eq, ":scene_prop", ":instance_no",),
             (store_add, ":loot_slot", slot_scene_loot_1, ":count"),
-            (scene_slot_eq, ":cur_scene", ":loot_slot", 0),
+            (scene_slot_eq, ":cur_scene", ":loot_slot", 0), #0 = not looted; -1 = looted
             (scene_prop_set_slot, ":scene_prop", slot_prop_active, 1),
         (try_end),
         
         (assign, ":min_dist", 60),
         (try_for_prop_instances, ":scene_item", -1, somt_item),
+            (scene_prop_slot_eq, ":scene_prop", slot_prop_active, 1),
             (prop_instance_get_position, pos1, ":scene_item"),
             (get_distance_between_positions, ":dist", pos1, pos2),
             (le, ":dist", ":min_dist"),
@@ -5586,13 +5586,12 @@ scene_props = [
         (try_end),
         (try_begin), #looted already or slot disabled?
             (eq, ":loot", -1), 
-            (str_store_string, s9, "@Nothing of interest..."),
-        (try_end),
-        (try_begin), #free inventory capacity?
+            (display_message, "@Nothing of interest..."),
+        (else_try), #free inventory capacity?
             (store_free_inventory_capacity, ":inventory", trp_player),
             (lt, ":inventory", 1),
             (assign, ":loot", -1), 
-            (str_store_string, s9, "@No inventory space..."),
+            (display_message, "@No inventory space..."),
         (try_end),
 
         (eq, ":loot", 0), #loot available? 
@@ -5607,13 +5606,16 @@ scene_props = [
         
         #check conditions
         (party_get_slot, ":center_relation", "$current_town", slot_center_player_relation),
-        (val_div, ":center_relation", 8),
+        (val_div, ":center_relation", 5), #center relation /5 adds one rank 
         (call_script, "script_get_faction_rank", "$ambient_faction"), 
         (val_add, ":center_relation", reg0),
         (item_get_abundance, ":rank_req", ":item_type"), #usually 90 to 100, but 100 equals 0
-        (val_sub, ":rank_req", 100), #-10 to 0
-        (val_mul, ":rank_req", -1), # 0 to 10
-        (val_max, ":rank_req", 1), #1 to 10
+        (try_begin),
+            (eq, ":rank_req", 100),
+            (assign, ":rank_req", 90),
+        (try_end),        
+        (val_sub, ":rank_req", 91), #-1 to 9, with one rank discount
+        (val_max, ":rank_req", 1), #1 to 9
         # (assign, reg78, ":rank_req"),
         # (display_message, "@rank req: {reg78}"),
         # (assign, reg78, ":center_relation"),
@@ -5629,7 +5631,7 @@ scene_props = [
             (gt, ":scene_item", 0),
             (scene_prop_fade_out, ":scene_item", 100),
         (else_try),
-            (le, ":center_relation", ":rank_req"), 
+            (lt, ":center_relation", ":rank_req"), 
             (str_store_string, s9,"@We don't know you enough to give you this..."),
         (else_try),
             (ge, ":center_relation", ":rank_req"),  
@@ -5646,6 +5648,7 @@ scene_props = [
         (try_end),
         (display_message, "@{!}{s9}"),
         (scene_prop_set_slot, ":scene_prop", slot_prop_active, 0),
+        (scene_set_slot, ":cur_scene", ":loot_slot", -1),
     ])
     ] or []) + [            
           ]),
