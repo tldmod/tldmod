@@ -1264,7 +1264,7 @@ triggers = [
       
       ],[
       (assign, "$tld_war_began",1),
-      (dialog_box,"@The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard agains Rohan in the West, Dol Guldur against the Elves... Even in the far North there is a war of its own.","@The War has started!"),
+      (dialog_box,"@The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard against Rohan in the West, Dol Guldur against the Elves... Even in the far North there is a war of its own.","@The War has started!"),
       (play_sound,"snd_evil_horn"),
       # move Dun camp across Isen
       #	(party_get_position, pos1, "p_town_dunland_camp"),

@@ -12868,6 +12868,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (gt, ":rand", ":troop_level"),
     (neg|party_slot_ge, "$current_town", slot_center_walker_soldiers_found, 4),
     (agent_slot_eq, "$g_talk_agent", slot_agent_walker_joined, 0),
+    (agent_set_slot, "$g_talk_agent", slot_agent_walker_joined, 1), #this check helps so you can't ask multiple times
     (try_begin),
         (faction_slot_eq, "$ambient_faction", slot_faction_side, faction_side_good),
         (str_store_string, s60, "@Hear now, commander. I am currently out of assignment, yet I would rather meet our enemies in the field than wait for them to come here. I hear you're a capable leader. Would you have me?"),

@@ -4550,6 +4550,7 @@ nazgul_flying = ((is_a_wb_mt==1) and [
     (6, 0, 0, 
     [
     (ge, "$nazgul_in_battle", 1),
+    (prop_instance_is_valid, "$nazgul_in_battle"),
     (scene_prop_slot_eq, "$nazgul_in_battle", 41, 0), #in circling mode?
     (mission_cam_get_position, pos2),
     (prop_instance_get_position, pos1, "$nazgul_in_battle"),
