@@ -2361,6 +2361,10 @@ mission_templates = [ # not used in game
         (replace_scene_props, "spr_troop_rider", "spr_empty"),	
         (replace_scene_props, "spr_troop_civ_walker", "spr_empty"),
         (replace_scene_props, "spr_troop_messenger", "spr_empty"),
+        (replace_scene_props, "spr_secret_guardian", "spr_empty"),
+        (replace_scene_props, "spr_secret_viewpoint", "spr_empty"),
+        (replace_scene_props, "spr_secret_point_of_interest", "spr_empty"),
+        (replace_scene_props, "spr_secret_loot_prop", "spr_empty"),
         (try_for_range, ":prop", spr_troop_civ_lying, spr_troop_priest+1), #remove town agents
             (replace_scene_props, ":prop", "spr_empty"),
         (try_end),        
