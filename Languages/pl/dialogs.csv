@@ -39,25 +39,25 @@ dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Witaj, Panie Pippin. Mam tu p
 dlga_hobbit_deliver_message:close_window|Dziękuję, {playername}. Dobrze się stało, że mi to uświadomiłeś.
 dlga_hobbit_merry_talk_met:close_window|Witam, panie Merry.
 dlga_hobbit_pippin_talk_met:close_window|Witam, panie Pippin.
-; dlga_start:hd_defense_01|It is well that you are here, {playername}. My name is Aragorn, son of Arathorn, and I am the Heir of Isildur – see, here is Anduril, the Flame of the West, which I bear in battle. The Blade that was Broken shines again! It will not be long before Saruman’s forces reach these walls. I ask you now to lend me your aid and defend the Rohirrim, for the honour of the Lord of the Mark. Let this be the hour when we draw swords together!
-; dlga_start:hd_defense_01.1|Mae lovannen! Things here look ill, {playername}, but less ill now that you are here with us! Gellon len covad. I am Legolas of Mirkwood, and though I do not much like this place I like the approaching hordes of Saruman even less. What would I give for a hundred more of my kin here! There are too few of us, too few. We shall need your aid, Commander, though we may be but a few leaves in the forest. Come, let me show you where our bows will be of the most use…
-; dlga_start:hd_defense_01.2|Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazaˆd! Khazaˆd ai-meˆnu!
-; dlga_hd_defense_01:close_window|Now, let us rest for a while. The enemy will be here by nightfall.
-; dlga_start:aragorn_thanks_hd|{playername}, I am glad to see you live still. The men are weary with battle, but thanks to you they see the dawn of a new day. The hillmen have given themselves up, and they shall be put to work to repair the evil which they have joined, after which I hope they will return to their own lands. They were easily deceived by Saruman, for much was taken from them, and much remains to be given back; we shall have to see what can be done for them later.
-; dlga_aragorn_thanks_hd:close_window|I hope our paths may cross again, {playername}. I bid you farewell now, for I ride on an errand most urgent. With the first light of morning we must go, my friends and I, and take a dark road out of this valley. {playername}, the times are evil, but your valour gladdens the hearts of all free peoples everywhere, from the North to the South. Fight well, and we may meet again beyond the shadows!
-; dlga_start:close_window.1|In a little while I take the road again, {playername}, a hard road untrodden by many for uncounted years. I hope your path is easier than mine, friend. In the meantime, perhaps you may wish to go into the deep Caverns of Helm's Deep, of which my companion Gimli the Dwarf has spoken much.
-; dlga_start:close_window.2|Have you yet been to the caves in the back? The Glittering Caves of Aglarond, {playername}! Happy is the chance that has led your footsteps here!
-; dlga_start:close_window.3|I have pledged to my friend Gimli Gloin's son that when the war is over, I shall return here with him and see the Glittering Caves of Aglarond for myself. If you have the time, {playername}, you could do this before you go on your way again. A brief respite from all the fighting!
-; dlga_start:treebeard_isengard_1|{s2} Ha, hmmm! Welcome, friends! Your arrival is timely. I have a Wizard to manage here, but first, we must nail him down in his tower. This will be a nasty business. Rock, axe and fire await us inside. Will you help us?
-; dlga_treebeard_isengard_1:treebeard_isengard_2|Yes, Gandalf sent me. Let us storm the Ring of Isengard!
-; dlga_treebeard_isengard_2:close_window|Very well, follow me then. We have already breached the Ring. Now, let us clean up inside! Hoom, hom! Hoom, hom! To Isengard with doom we come! With doom we come, with doom we come!
-; dlga_start:close_window.4|Hoom, hom! Hoom, hom! To Isengard with doom we come! With doom we come, with doom we come!
-; dlga_start:close_window.5|Thank you for your help. I must say it was quite satisfying to manage those Orcs. You were of great help to us. But now, hm, we have work to do that you cannot help with. You should maybe find a safe spot outside Isengard and wait until we are finished.
-; dlga_start:treebeard_isengard_3|Hello again. It is good to see you safe and dry. I must say it will take a long while to flush all of Saruman's filth away. But we’ve done quite well, hmm, yes. He will do no more harm.
-; dlga_treebeard_isengard_3:close_window|Ho, hmm, I owe you great thanks. I had not expected any help from others, and it is good to learn that our Last March may not end quite so badly, after all! Since the tree-killer is dealt with, we should now be able to keep Rohan's northern marches safe, for a while.
-; dlga_treebeard_isengard_3:close_window.1|Hmm? Ho, hmm… ah. So, you have come all the way from Rohan, have you? Hmm. I have heard some news from the south, yes. Good news, news to gladden all hearts. I have good will to Theoden King, and I am glad he was aided by the likes of you in his hour of peril, hmm! We have managed here well enough, and now we Ents will see to it that Saruman does not set foot beyond Isengard, without our leave. The Isen flows well again, and soon I hope the water will once more be fit to drink. Ha, hm, I feel a song coming on. A song of the old days… the old trees I knew…
-; dlga_start:ent_encounter|Hrooom! What do you want?
-; dlga_ent_encounter:close_window|Hail, tree shepherd! Thank you for keeping these marches safe. I will not stand in your way.
+dlga_start:hd_defense_01|Dobrze, że tu jesteś, {playername}. Nazywam się Aragorn, syn Arathorna i jestem dziedzicem Isildura - oto Anduril, Płomień Zachodu, który niosę w bitwie. Złamane Ostrze znów lśni! Nie minie wiele czasu, nim siły Sarumana dotrą do tych murów. Proszę was teraz o pomoc i obronę Rohirrimów w imię honoru Władcy Znaku. Niech to będzie godzina, w której wspólnie dobyjemy mieczy!
+dlga_start:hd_defense_01.1|Mae lovannen! Sprawy tutaj wyglądają źle, {playername}, ale mniej źle teraz, gdy jesteś tu z nami! Gellon len covad. Jestem Legolas z Mirkwood i choć nie przepadam za tym miejscem, jeszcze mniej podobają mi się zbliżające się hordy Sarumana. Co ja bym dał za setkę moich pobratymców tutaj! Jest nas zbyt mało, zbyt mało. Będziemy potrzebować twej pomocy, Dowódco, choć możemy być zaledwie kilkoma liśćmi w lesie. Pokażę ci, gdzie nasze łuki przydadzą się najbardziej...
+dlga_start:hd_defense_01.2|Cieszę się, że cię widzę, krewniaku! Jestem Gimli, syn Gloina. To wielki zastęp, który nadciąga teraz przeciwko nam, ale mój topór jest niespokojny w mojej dłoni i wiem, że czujesz to samo! Daj nam rząd orkowych karków do ociosania i miejsce do wymachiwania, a razem nauczymy ich znaczenia strachu. Tęgie stopy i twarde topory, oto co nas przeprowadzi przez noc! Ai oi! Wystarczy dla nas obu. Baruk Khazaˆd! Khazaˆd ai-meˆnu!
+dlga_hd_defense_01:close_window|Teraz odpocznijmy przez chwilę. Wróg będzie tu przed zmrokiem.
+dlga_start:aragorn_thanks_hd|{playername}, cieszę się, że wciąż żyjesz. Ludzie są zmęczeni bitwą, ale dzięki tobie widzą świt nowego dnia. Ludzie wzgórz poddali się i będą pracować, aby naprawić zło, do którego się przyłączyli, po czym mam nadzieję, że powrócą do swoich ziem. Zostali łatwo oszukani przez Sarumana, ponieważ wiele im odebrano i wiele pozostaje do oddania; będziemy musieli zobaczyć, co można dla nich zrobić później.
+dlga_aragorn_thanks_hd:close_window|Mam nadzieję, że nasze drogi znów się skrzyżują, {playername}. Żegnam cię teraz, gdyż wyruszam w pilnej sprawie. Z pierwszym brzaskiem poranka musimy wyruszyć, moi przyjaciele i ja, i wyruszyć ciemną drogą z tej doliny. {playername}, czasy są złe, ale twoje męstwo raduje serca wszystkich wolnych ludów na całym świecie, od Północy po Południe. Walcz dobrze, a być może znów spotkamy się poza mrokiem!
+dlga_start:close_window.1|Za chwilę znów wyruszę w drogę, {playername}, trudną drogę niewydeptaną przez wielu od niezliczonych lat. Mam nadzieję, że twoja ścieżka jest łatwiejsza niż moja, przyjacielu. W międzyczasie może zechcesz udać się do głębokich jaskiń Helmowej Głębi, o których wiele mówił mój towarzysz, krasnolud Gimli.
+dlga_start:close_window.2|Czy byłeś już w jaskiniach na tyłach? Błyszczące jaskinie Aglarond, {nazwa gracza}! Szczęśliwy jest przypadek, który doprowadził cię tutaj!
+dlga_start:close_window.3|Przyrzekłem synowi mego przyjaciela Gimlego Gloina, że gdy wojna się skończy, wrócę tu z nim i zobaczę na własne oczy Błyszczące Jaskinie Aglarond. Jeśli masz czas, {playername}, możesz to zrobić, zanim znów wyruszysz w drogę. Krótkie wytchnienie od walk!
+dlga_start:treebeard_isengard_1|{s2} Ha, hmmm! Witajcie, przyjaciele! Przybyliście w samą porę. Mam tu Czarodzieja do załatwienia, ale najpierw musimy go przygwoździć do jego wieży. To będzie paskudna sprawa. Kamień, topór i ogień czekają na nas w środku. Pomożecie nam?
+dlga_treebeard_isengard_1:treebeard_isengard_2|Tak, przysłał mnie Gandalf. Przypuśćmy szturm na Pierścień Isengardu!
+dlga_treebeard_isengard_2:close_window|Dobrze więc, chodź za mną. Przedarliśmy się już przez Pierścień. Teraz posprzątajmy w środku! Hoom, hom! Hoom, hom! Do Isengardu ze zgubą przybywamy! Ze zgubą przybywamy, ze zgubą przybywamy!
+dlga_start:close_window.4|Hoom, hom! Hoom, hom! Do Isengardu ze zgubą przybywamy! Ze zgubą przybywamy, ze zgubą przybywamy!
+dlga_start:close_window.5|Dziękuję za pomoc. Muszę przyznać, że poradzenie sobie z tymi orkami było całkiem satysfakcjonujące. Bardzo nam pomogłeś. Ale teraz, hm, mamy pracę do wykonania, w której nie możesz pomóc. Może powinieneś znaleźć bezpieczne miejsce poza Isengardem i poczekać, aż skończymy.
+dlga_start:treebeard_isengard_3|Witam ponownie. Dobrze widzieć cię bezpiecznego i suchego. Muszę przyznać, że spłukanie całego plugastwa Sarumana zajmie sporo czasu. Ale poszło nam całkiem nieźle, hmm, tak. Nie wyrządzi już więcej krzywdy.
+dlga_treebeard_isengard_3:close_window|Jestem ci winien wielkie podziękowania. Nie spodziewałem się pomocy od innych i dobrze jest dowiedzieć się, że nasz Ostatni Marsz może jednak nie skończyć się tak źle! Odkąd uporaliśmy się z drzewobójcą, przez jakiś czas powinniśmy być w stanie zapewnić bezpieczeństwo północnym marchiom Rohanu.
+dlga_treebeard_isengard_3:close_window.1|Hmm? Ho, hmm... ah. Więc przybyłeś aż z Rohanu, prawda? Hmm. Słyszałem wieści z południa, tak. Dobre wieści, wieści, które ucieszą wszystkie serca. Mam dobrą wolę dla króla Theodena i cieszę się, że w godzinie niebezpieczeństwa pomogli mu tacy jak ty, hmm! Poradziliśmy sobie tutaj wystarczająco dobrze, a teraz my, Entowie, dopilnujemy, by Saruman nie postawił stopy poza Isengardem bez naszej zgody. Isen znów dobrze płynie i mam nadzieję, że wkrótce woda znów będzie zdatna do picia. Czuję, że nadchodzi pieśń. Pieśń dawnych dni... starych drzew, które znałem...
+dlga_start:ent_encounter|Hrooom! Czego chcesz?
+dlga_ent_encounter:close_window|Niech żyje pasterz drzew! Dziękuję za zapewnienie bezpieczeństwa tym marszom. Nie stanę ci na drodze.
 dlga_start:treebeard_introduce_1|(Dociera do ciebie, że tak niezwykłego stworzenia jeszcze nigdy nie spotkał{e/a}ś. Jest bardzo wysokie, o kończynach pokrytych korą, niby skórą i liściastymi włosami. Część ciała pokrywa mech. Ale w tym momencie zauważasz oczy. Ich głębia przeraża cię, bije od nich powaga, jednocześnie są niezwykle przenikliwe. Wyglądają na brązowe, połączone zielonym światłem, jakby za nimi rozciągała się studnia, wypełniona wiekami pamięci oraz myśli. Ale na powierzchni tych oczu błyszczy teraźnieszość... niczym słońce połyskujące na liściach ogromnego drzewa, albo falach bardzo głębokiego jeziora.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(Pragniesz coś powiedzieć ale nagły przypływ duszności nie pozwala na choćby słowo... z niemal desperacją zaczerpujesz powietrza, czując przy tym na sobie świdrujący wzrok wielkiego drzewopodobnego stwora. Inne wielkie drzewo stwory również ci się przyglądają, jakby spodziewając twych słów...)
 dlga_treebeard_introduce_2:treebeard_introduce_3|Przepraszam za najście... Jestem strudzonym wędrowcem szukającym schronienia... moje imię brzmi {playername}. Mogę zapytać kim jesteś?
@@ -232,8 +232,8 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|Nie atakujcie! Poddaje
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|Będziemy walczyć do końca!
 dlga_party_encounter_offer_dont_fight:close_window|Jestem ci winien przysługę, czyż nie? Cóż... w porządku. Pozwolę ci odejść ten jeden jedyny raz.
 dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha. Ale ja chcę z wami walczyć.
-; dlga_start:close_window.13|Mmmh...
-; dlga_start:close_window.14|The lord is in deep thought and must not be disturbed!
+dlga_start:close_window.13|Mmmh...
+dlga_start:close_window.14|Pan jest pogrążony w myślach i nie wolno mu przeszkadzać!
 dlga_start:close_window.15|Spadaj, zanim stracę cierpliwość, ty ohydny żebraku!
 dlga_start:lord_start|Czyż to nie m{ój dzielny mistrz/oja dzielna mistrzyni}, {playername}...
 dlga_start:lord_start.1|{playername}, dobrze znów cię widzieć...
@@ -374,7 +374,7 @@ dlga_ring_hunters_start:ring_hunters_check|{playername}, zrobiłeś wspaniałe u
 dlga_ring_hunters_check:ring_hunters_1|Tak, mój Panie. Posiadam grupę dobrze wyszkolonych w boju wojaków. Jesteśmy gotowi na wszystko.
 dlga_ring_hunters_check:ring_hunters_check_failed|Obawiam się, że nie mój Panie
 dlga_ring_hunters_check_failed:lord_pretalk|Nie jesteś jeszcze gotowy do tego zadania, {playername}. Idź zebrać więcej żołnierzy.
-; dlga_ring_hunters_1:ring_hunters_2|Excellent. The North has recently been plagued by a marauding band of outlaws who raid villages and ambush travellers, searching for rings of any kind.^^   You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.^^   The first is returning with loot to their encampment on the eaves of Mirkwood. The other advances towards Beorn's House in great numbers and I fear what may happen if they are left unimpeded.
+dlga_ring_hunters_1:ring_hunters_2|Doskonale. Północ jest ostatnio nękana przez grasującą bandę banitów, którzy napadają na wioski i zasadzają się na podróżnych, szukając wszelkiego rodzaju pierścieni.^^ Masz wytropić tych bandytów i położyć kres ich poszukiwaniom. Ci, którzy przeżyli ich ostatnie grabieże, donoszą o dwóch grupach.^^ Pierwsza z nich wraca z łupami do swojego obozowiska na obrzeżach Mirkwood. Druga zbliża się do Domu Beorna w wielkiej liczbie i obawiam się, co może się stać, jeśli pozostawi się ich bez przeszkód.
 dlga_ring_hunters_2:ring_hunters_what|Mój Panie, czego oni mogliby szukać?
 dlga_ring_hunters_2:ring_hunters_accept|Panie, będę robić to, co jest konieczne, aby zatrzymać tych ... "Łowców Pierścieni''
 dlga_ring_hunters_2:ring_hunters_reject|Nie jestem jeszcze gotów na to zadanie.
@@ -573,12 +573,12 @@ dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Szukaj go
 dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Jak sobie życzysz, Pani. Postaram się by wyeliminować to zło.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Wybacz mi, Pani. Mam na głowie niezwykle ważne sprawy i w tej chwili nie podołam zając się waszymi potrzebami.
 dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Rozumiem, {playername}. Ale nie zwlekaj zbyt długo, bo stawianie oporu jego magii mnie męczy.
-; dlga_lord_tell_mission:lord_mission_deliver_message|I need to send a letter to {s13} who should be currently at {s4}. If you will be heading towards there, would you deliver it to {reg11?her:him}? The letter needs to be in {reg11?her:his} hands in 30 days.
+dlga_lord_tell_mission:lord_mission_deliver_message|Muszę wysłać list do {s13}, który powinien być obecnie w {s4}. Jeśli będziesz tam jechał, czy mógłbyś dostarczyć go dla {reg11?niej:niego?} List musi trafić w ręce {reg11?jej:jego} w ciągu 30 dni.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Mam zamiar odwiedzić {s4} jeszcze w tym miesiącu. Nie będzie to dla mnie żadnym problemem.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|Prawdę mówiąc nie sądzę, bym w najbliższym czasie go spotkał{/a}, {s65}. Lepiej wyślij kogoś innego.
-; dlga_lord_mission_deliver_message_accepted:close_window|I appreciate it, {playername}. Here's the letter. Give my regards to {s13} when you see {reg11?her:him}.
+dlga_lord_mission_deliver_message_accepted:close_window|Doceniam to, {playername}. Oto list. Pozdrów {s13}, gdy zobaczysz {reg11?nią:go}.
 dlga_lord_mission_deliver_message_rejected:lord_pretalk|Ach, w porządku zatem. Cóż, z pewnością znajdę sobie kogoś innego.
-; dlga_lord_tell_mission:lord_mission_deliver_message.1|I need to deliver a letter to {s13} of {s15}, who must be at {s4} currently. If you are going towards there, would you deliver my letter to  {reg11?her:him}? The letter needs to reach  {reg11?her:him} in 40 days.
+dlga_lord_tell_mission:lord_mission_deliver_message.1|Muszę dostarczyć list do {s13} z {s15}, który musi być obecnie w {s4}. Jeśli się tam wybierasz, czy mógłbyś dostarczyć mój list dla {reg11?niej:niego}? List musi dotrzeć do {reg11?niej:niego} w ciągu 40 dni.
 dlga_lord_tell_mission:lord_mission_told|Jest jedna mała rzecz... Mój posłaniec ma złożyć raport dowództwu w {s14}. Wizytę przekładano już kilkukrotnie z powodu niebezpiecznych dróg, lecz tym razem wiadomość musi dotrzeć. Chcę się więc upewnić, że przynajmniej będzie miała solidną ochronę. Ufam ci, {playername}, więc będę wdzięczny, gdybyś m{ógł/ogła} eskortować go do {s14} i upewnić się, by dotarł tam cały i zdrowy.
 dlga_lord_tell_mission:lord_mission_told.1|Mam tu przyjaciela, starego wojaka, który jest chory. Jeśli w najbliższym czasie nie dostanie się pod chirurgiczny nóż, to pewnikiem wyzionie ducha. Jest mi bardzo drogi, ale jest też upartym głupcem i odmawia operacji mówiąc, że nie ufa naszym medykom. Słyszałem, że masz w swoich szeregach utalentowan{reg3?ą felczerkę:ego felczera}. Gdybyś pozwolił{/a} {reg3?swej felczerce:swemu felczerowi} pojechać do miasta i rzucić okiem na mego przyjaciela, to może udałoby się {reg3?jej:mu} przekonać tego starucha do operacji. Gdybyś m{ógł/ogła} to zrobić, byłbym twoim dłużnikiem.
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Ilu ludzi potrzebujesz?
@@ -719,9 +719,9 @@ dlga_woodelf_help_1:woodelf_help_2.1|Nigdy wcześniej nie widziałem tak dużego
 dlga_woodelf_help_2:woodelf_help_3.1|Naprawdę? Oczywiście, że jesteś! Widziałem na własnie oczy, że jesteś zdolnym wojownikiem. Mam dzisiaj szczęście, więc powinienem z tego skorzystać i udać się do mojej wioski aby ostrzec moich ludzi przed tymi plugawymi bestiami.
 dlga_woodelf_help_3:close_window|Bezpiecznej podróży Torbal. Jestem pewny, że jeszcze się spotkamy.
 dlga_healers_meet:healer_who|Co robisz?. .
-; dlga_healers_meet:healers_ask|I need your help.
-; dlga_healers_ask:healers_ask_2|What can I do for you, friend?
-; dlga_healers_ask_2:healer_wound_ask|My companions and I have serious wounds that require more than just time to heal. Can you heal our wounds?
+dlga_healers_meet:healers_ask|Potrzebuję twojej pomocy.
+dlga_healers_ask:healers_ask_2|Co mogę dla ciebie zrobić, przyjacielu?
+dlga_healers_ask_2:healer_wound_ask|Moi towarzysze i ja mamy poważne rany, których wyleczenie wymaga czegoś więcej niż tylko czasu. Czy możesz wyleczyć nasze rany?
 dlga_healers_ask_2:healer_injured_ask|Moi wojownicy i ja jesteśmy ranni i nie mamy czasu, aby czekać na ich uzdrowienie. Czy możesz udzielić pomocy?
 dlga_healers_ask_2:close_window|Zamknij.
 dlga_healers_meet:close_window|Zamknij.
@@ -999,7 +999,7 @@ dlga_player_upgrade_troll_not_enough:close_window|Marnujesz mój czas.
 dlga_player_upgrade_troll_buy_done:close_window|Tak, tak, chodź tu. Tak, ty...
 dlga_trade_requested_weapons:merchant_trade|Ach, tak, Pani{e/}. Lepszego ekwipunku nie znajdziesz nigdzie indziej.
 dlga_trade_requested_horse:merchant_trade|Ostry uchwyt do jazdy i zabijania oraz mięso, którym można je karmić! Nie znajdziesz lepszych bestii niż te nigdzie indziej.
-; dlga_trade_requested_horse:merchant_trade.1|You have a fine eye for horses, {sir/madam}. You won't find better beasts than these anywhere else.
+dlga_trade_requested_horse:merchant_trade.1|Masz doskonałe oko do koni, {Panie/Pani}. Nigdzie indziej nie znajdziesz lepszych okazów niż te.
 dlga_merchant_trade:town_merchant_talk|Coś jeszcze?
 dlga_town_merchant_talk:merchant_gossip|Powiedz, o czym ludzie ostatnio mówią?
 dlga_town_merchant_talk:close_window|Do widzenia.
@@ -1012,24 +1012,24 @@ dlga_town_dweller_talk:town_dweller_ask_info.1|Co możesz mi powiedzieć o tym m
 dlga_town_dweller_talk:town_dweller_talk|Jak się tu żyje?
 dlga_town_dweller_talk:town_dweller_ask_rumor|Jakieś nowe plotki w okolicy?
 dlga_town_dweller_ask_rumor:town_dweller_talk|Nie wiem o niczym, co mogło by cię zainteresować.
-; dlga_town_dweller_ask_join:town_dweller_ask_join_yes|Yes, I could indeed use another hand. Get ready to leave!
-; dlga_town_dweller_ask_join:town_dweller_ask_join_no|No, I have no use for you.
-; dlga_town_dweller_ask_join_yes:close_window|Very well, I will gather my things and join your party.
-; dlga_town_dweller_talk:town_dweller_ask_directions|Can you help me find a place?
-; dlga_town_dweller_ask_directions:town_dweller_ask_directions2|What are you looking for?
+dlga_town_dweller_ask_join:town_dweller_ask_join_yes|Tak, rzeczywiście przydałaby mi się pomoc. Przygotuj się do wyjścia!
+dlga_town_dweller_ask_join:town_dweller_ask_join_no|Nie, nie mam z ciebie żadnego pożytku.
+dlga_town_dweller_ask_join_yes:close_window|Dobrze, zbiorę swoje rzeczy i dołączę do waszej grupy.
+dlga_town_dweller_talk:town_dweller_ask_directions|Czy możesz mi pomóc znaleźć miejsce?
+dlga_town_dweller_ask_directions:town_dweller_ask_directions2|Czego szukasz?
 dlga_town_dweller_ask_directions2:close_window|Nieważne.
-; dlga_town_dweller_ask_directions3:close_window|I know where that is. Follow me.
+dlga_town_dweller_ask_directions3:close_window|Wiem, gdzie to jest. Podążaj za mną.
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|Grozisz mi? Straż tylko czeka na takich jak ty.
 dlga_town_dweller_brawl_confirm:close_window|Naprawdę? Zaraz zobaczymy na co ich stać.
 dlga_town_dweller_brawl_confirm:close_window.1|Nie, chyba cię z kimś pomylił{e/a}m.
 dlga_town_dweller_talk:close_window|[Odejdź]
-; dlga_start:close_window.32|Get lost!
-; dlga_start:close_window.33|Leave me alone!
+dlga_start:close_window.32|Spadaj!
+dlga_start:close_window.33|Zostaw mnie w spokoju!
 dlga_start:player_castle_guard_talk|Tak, Pani{e/}?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|Jak tam warta, żołnierzu?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Spokojnie, Pani{e/}. Na razie nic godnego uwagi.
 dlga_player_castle_guard_talk_3:close_window|Dobrze. Miej oczy szeroko otwarte.
-; dlga_start:close_window.34|Good day, {s24}. It's good having you here in {s10}.
+dlga_start:close_window.34|Dzień dobry, {s24}. Dobrze mieć cię tutaj w {s10}.
 dlga_start:close_window.35|Nie wolno nam rozmawiać, gdy jesteśmy na straży, {Panie/Pani}.
 dlga_start:hall_guard_easter_egg|Ach, dopiero minęła północ. Ostatnio zdarzyło się co dziwnego - chcesz o tym usłyszeć?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Tak, mów dalej proszę.
@@ -1072,8 +1072,8 @@ dlga_start:close_window.37|Przez ciebie się spóźnię. Czarodzieje nigdy się 
 dlga_start:close_window.38|Przez ciebie się spóźnię. Czarodzieje nigdy się nie spóźniają!
 dlga_start:close_window.39|To... przyzywaaaaaaaaa...
 dlga_start:secret_guardian_let_through|Stać!
-; dlga_secret_guardian_let_through:secret_guardian_let_through1|I am {playername}, {s24}. Let me through!
-; dlga_secret_guardian_let_through1:close_window|Yes commander, you may pass.
+dlga_secret_guardian_let_through:secret_guardian_let_through1|Jestem {playername}, {s24}. Przepuść mnie!
+dlga_secret_guardian_let_through1:close_window|Tak Dowódco, możesz przejść.
 dlga_start:close_window.41|Hej, ty. Jesteś twardszy niż sądziłem. To dobrze, ale nie możesz odpierać ataków tym badylem. Weź to.
 dlga_start:ori_choose_1|Nieźle walczysz, przyjacielu. Nie wiem, jak Ci się udało przetrwać tak długo. Pamiętam, że dołączyłeś do nas całkiem niedawno... zanim... Balin upadł... Skąd pochodzisz?
 dlga_ori_choose_1:ori_choose_finish|Byłem poganiaczem bydła wysłanym w okolice Niedźwiedziego Ludu. Słyszałem o oddziale Balina i postanowiłem dołączyć.

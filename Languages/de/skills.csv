@@ -3,13 +3,13 @@ skl_trade_desc|Dank dieser Fähigkeiten wird dir in Städten bessere Ausrüstung
 skl_leadership|Führerschaft
 skl_leadership_desc|Jeder Punkt erhöht die maximale Anzahl der Truppen, die du befehligen kannst, um 5 (3 für Gefährten), erhöht die Truppenmoral und den Zusammenhalt in der Schlacht. Bringt mehr und stärkere Freiwillige dazu, dir zu folgen. (Persönliche Fähigkeit)
 skl_prisoner_management|Gefangenenaufsicht
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
+skl_prisoner_management_desc|Jede Stufe dieser Fähigkeit erhöht die Maximalzahl der Gefangenen um %d. Erhöht die Chancen, Gefange zu machen und an der Flucht zu hindern. (Gruppenfähigkeit)
 skl_persuasion|Wildkunde
 skl_persuasion_desc|Die Fähigkeit, in der Wildnis zu überleben und die Mächte der Natur deinem Willen zu unterwerfen. Verbessert die Fähigkeit, sich vor Feinden zu verstecken, sowie die Reisegeschwindigkeit in bewaldetem Gebiet. (Truppen-Fähigkeit)
 skl_engineer|-----
 skl_engineer_desc|-----
 skl_first_aid|Erste Hilfe
-skl_first_aid_desc|Helden erhalten pro Fertigkeitsstufe 5%% von bei Missionen verlorenen Trefferpunkten wieder. (Truppen-Fähigkeit)
+skl_first_aid_desc|Helden erhalten pro Fertigkeitsstufe 5%% von bei Missionen verlorenen Lebenspunkten wieder. (Truppen-Fähigkeit)
 skl_surgery|Chirurgie
 skl_surgery_desc|Jeder Punkt dieser Fähigkeit ermöglicht eine 4%% Chance, dass ein tödlich verwundetes Truppenmitglied nur verwundet statt getötet wird. (Truppen-Fähigkeit)
 skl_wound_treatment|Wundheilung

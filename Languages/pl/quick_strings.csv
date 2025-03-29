@@ -1,5 +1,5 @@
 qstr_Received_{reg0}_dama|Otrzymano {reg0} obrażeń.
-; qstr_Siege_weapon_damaged|Siege weapon damaged {reg10} agents
+qstr_Siege_weapon_damaged|Uszkodzona broń oblężnicza {reg10} przeciwników
 qstr_Gate_is_breached!|Brama wyłamana!
 qstr_Gate_opens..._You_ha|Brama otwarta... Dotarł{eś/aś} do najświętszego miejsca Śródziemia!
 qstr_Secret_place_discove|Sekretna lokacja odkryta!
@@ -86,7 +86,7 @@ qstr_Proficiencies|Biegłości
 qstr_1H_Weapons^2H_Weapon|Bronie 1-ręczne^Bronie 2-ręczne^Bronie Drzewcowe^Łucznictwo^Kusznictwo^Miotanie
 qstr_Equipment|Wyposażenie
 qstr_The_Last_Days_Mod_Op|Opcje The Last Days
-; qstr_War_Starts_after_Day|War Starts after Day: 
+qstr_War_Starts_after_Day|Wojna zaczyna się po dniu:
 qstr_War_Starts_at_Level:|Wojna zaczyna się na poziomie:
 qstr_Battle_Formations_an|Formacje bitewne i sztuczna inteligencja: 
 qstr_Native|Ojczysty
@@ -106,7 +106,7 @@ qstr_Permanent_death_for_|Trwała śmierć dla lordów i towarzyszy:
 qstr_Permanent_death_for_p|Permanentna śmierć dla gracza (to TY!): 
 qstr_Battle_morale_system|System morale bojowego: 
 qstr_Animal_ambushes:__|Zwierzęce zasadzki: 
-; qstr_Player_speed_buff_in|Player speed buff in towns:  
+qstr_Player_speed_buff_in|Wzmocnienie prędkości gracza w miastach: 
 qstr_Fallen_rider_damage_|Wiadomości o obrażeniach po upadku z wierzchowca: 
 qstr_No_Messages|Brak wiadomości
 qstr_Player_damage_only|Tylko obrażenia gracza
@@ -119,11 +119,11 @@ qstr_Prevent_AI_from_taki|Zapobiegaj AI przed obroną:
 qstr_Brighter_Nights:__|Jaśniejsze noce: 
 qstr_Done|Zrobione
 qstr_Gameplay_Tweaks|Rozgrywka
-; qstr_Set_to_Native_if_you|Set to Native if you encounter any types of AI problems during battle.
+qstr_Set_to_Native_if_you|Ustaw wartość Natywna, jeśli napotkasz jakiekolwiek problemy z SI podczas bitwy.
 qstr_Disable_cutscenes_if|Wyłącz przerywniki filmowe jeśli na początku wojny napotkasz jakiekolwiek problemy.
 qstr_Campaign_Difficulty_a|Poziom trudności kampanii wpływa na liczebność ochotników, wielkość drużyny lordów i dochód siły sojuszniczych frakcji.
 qstr_Be_aware_that_many_q|Należy pamiętać, że wiele zadań i mechanik kampanii skaluje się wraz z poziomem gracza. Zwiększenie tego ustawienia da ci więcej czasu na przygotowanie, ale sprawi, że wojna rozwinie się szybciej.
-; qstr_Requires_TLD_NewForm|Requires TLD NewFormAI
+qstr_Requires_TLD_NewForm|Wymaga TLD NewFormAI
 qstr_Troop_Tree|Drzewo jednostki
 qstr__Click_on_a_unit_for|(Kliknij jednostkę, aby uzyskać szczegółowe informacje)
 qstr_Weapons|Bronie
@@ -175,17 +175,17 @@ qstr_its|jego
 qstr_[no_upkeep_costs]|[brak kosztów utrzymania]
 qstr_Short_of_Resource_Po|Nie posiadasz wystarczająco Punktów Prestiżu!!
 qstr_{s10}_will_soon_reas|{s10} wkrótce część {s12} odejdzie z twego oddziału!
-; qstr_{s10}_has_reassigned|{s10} has reassigned troops from your reserves.
+qstr_{s10}_has_reassigned|{s10} przydzielił oddziały z twoich rezerw.
 qstr_Superior_orders_from|Rozkazy od {s11} dla zniechęconych jednostek:
 qstr_{reg12}_{s10}_left_t|{reg12} {s10} opuszcza oddział!
 qstr_Fangorn_claimed_{reg|Fangorn upomniał się o {reg0} zabitych i {reg1} rannych pośród twoich oddziałów!
 qstr_You_were_wounded_in_|Został{e/a}ś poranion{y/a} w lesie Fangorn!
 qstr_Grimbold|Grimbold
-; qstr_Theodred|Theodred
+qstr_Theodred|Theodred
 qstr_Gamling|Gamling
 qstr_{s1}_of_{s3}_was_def|{s1} ({s3}) został pokonany w bitwie, ale udało mu się uciec.
 qstr_{s2}_have_razed_{s1}|{s1} został pokonany w bitwie przez {s2}!
-; qstr_{s1}_Scouts|{s1} Scouts
+qstr_{s1}_Scouts|{s1} Zwiadowcy
 qstr_Left_for_dead_but_mi|Zostawion{y/a} na śmierć, ale cudownie przeży{ł/ła}: {reg1?{reg1} time{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_|1 Pkt.Prestiżu ({s2})
 qstr_{reg1}_Res.Pts__{s2}|{reg1} Pkt.Prestiżu ({s2})
@@ -244,7 +244,7 @@ qstr_+1_Intelligence|+1 do Inteligencji
 qstr_+{reg1}_to_Spotting|+{reg1} do Spostrzegania
 qstr__Scales_with_Wildcra|(Kumuluje się z Wildcraft)
 qstr_Strengthens_all_Hero|Wzmacnia wszystkich Bohaterów
-; qstr_+4_to_First_Aid__Par|+4 to First Aid (Party)
+qstr_+4_to_First_Aid__Par|+4 do Pierwszej Pomocy (Drużyna)
 qstr_lead_more_Uruks|Poprowadź więcej Uruków
 qstr_+1_to_Power_Throw|+1 do Potężnego Rzutu
 qstr_Recruit_Black_Numeno|Zwerbuj Czarnych Numenorejczyków z różnych miejsc
@@ -288,7 +288,7 @@ qstr_{s0}^TOTAL:_{reg3}__|{s0}^RAZEM: {reg3} ({s2})
 qstr_^None|^Brak
 qstr_near_the_Great_East_|przy Wspaniałej wschodniej ścieżce, stara opuszczona droga
 qstr_near_what_is_left_of|przy pozostałościach starej leśnej drogi, starożytna krasnolódzka droga która była wykorzystywana żeby przedostać się przez gęsty las
-; qstr_near_the_old_cross_r|near the old cross-roads, where the Ithilien road meets the road to Osgiliath
+qstr_near_the_old_cross_r|near the old cross-roads, where the Ithilien road meets the road to Osgiliath
 qstr_close_to_the_Hand_sh|blisko znaku wyglądającego jak Reką znaku Sarumana, wskazująca w strone wieży Orthanc
 qstr_in_sight_of_the_maje|w zasięgu wzroku wspalniałych Murów Miasta Minas Tirith, białe Miasto
 qstr_in_sight_of_Edoras_t|w pobliżu Edoras, stolicy Rohanu
@@ -424,7 +424,7 @@ qstr_Death_to_the_trespas|Śmierć najeźdźcom!
 qstr_CHARGE!_Let_s_clear_|Atak! Oczyśćmy {s18} {s19}szumowiny z {s17}!
 qstr_{s14}Now_that_{s19}s|{s14}Teraz {s19}szumowiny odczują smak furii ludzi niedźwiedzi!
 qstr_Attack!|Do ataku!
-; qstr_You_are_attacked_by_|You are attacked by a group of bandits!
+qstr_You_are_attacked_by_|Zaatakowała Cię grupa bandytów!
 qstr_Holding|Utrz. pozycję
 qstr_Following|Za tobą
 qstr_Charging|Atakują
@@ -575,7 +575,7 @@ qstr_What_should_I_do?|Co powin{ienem/nam} zrobić?
 qstr_Find_{s3}_s_whereabo|Dowiedz się gdzie przebywa {s3} i porozmawiaj z {reg3?her:him} . Powodzenia!
 qstr_Good_to_see_the_Shad|Dobrze widzieć, że Cień cię jeszcze nie pokonał, {playername}.
 qstr_You_are_the_one_they|Nazywają cię Gandalf albo Mithrandir.
-; qstr_You_are_the_one_they_|You are the one they call Radagast.
+qstr_You_are_the_one_they_|To ciebie nazywają Radagastem.
 qstr_That_is_what_some_ca|Rzeczywiście tak niektórzy mnie zwą. W moich czasach byłem znany pod innymi imionami, ale jeśli Ciemność nie zostanie zatrzymana, niedługo niezostanie nikt kto będzie mnie znał pod jakimkolwiek mianem.
 qstr_What_do_you_mean?|Co masz na myśli?
 qstr_In_spite_of_their_va|Mimo mężnego oporu, {s3} został pokonany przez siły zła. Ludzie zostali rozproszenia, a dobro przestało istnieć.
@@ -587,27 +587,27 @@ qstr_What_do_you_want_of_|Czego ode mnie chcesz, stary?
 qstr_Just_know_that_a_Daw|Wiedz tylko, że Świt nadchodzi. To nieuniknione. I powi{nieneś/nnaś} pozostać przy życiu by to ujrzeć.
 qstr_Well_met_{playername|Witaj {playername}, {s24}. Nie myliłem się pokładając w tobie moje nadzieje. Potęga Ciemności została złamana, a Twoje czyny odegrały w tym nie małą role!
 qstr_Thank_you_Mithrandir|Dziękuję, Mithrandirze!
-; qstr_Thank_you_Radagast!|Thank you, Radagast!
+qstr_Thank_you_Radagast!|Dziękuję, Radagast!
 qstr_The_wizard_Saruman_i|Czarodziej Saruman odszedł, a Barad Dur rozbite w pył wraz z Mrocznym Lordem! Wszystkie ludy Śródziemia zostały uwolnione od niemal pożarło wszystko co dobre i czyste w tym świecie. Wróg został wygnany a Król powrócił!
 qstr_It_was_a_long_and_bl|To była długa i krwawa wojna i wielu twych bliskich przyjaciół nie ma już wśród nas.
 qstr_There_is_much_to_reg|Jest wiele do opłakiwania, i nawet więcej do odbudowy i uleczenia w najbliższych dniach. Ale teraz cieszmy się i świętujmy z tym przyjaciółmi, którzy są wśród nas, w Ostatnich Dniach Trzeciej Ery.
-; qstr_Orcs_are_marching_ag|Orcs are marching against Helm's Deep.
-; qstr_Orcs_are_marching_aga|Orcs are marching against Edoras.
-; qstr_Ah_{playername}_happ|Ah, {playername}, happy chance that we come on each other in this fashion! Grim tidings I bring from Western Rohan, and haste is sore needed.
-; qstr_What_tidings_do_you_|What tidings do you bring, Mithrandir? What can I do?
-; qstr_Saruman_has_loosed_I|Saruman has loosed Isengard upon Rohan. {s1} For the success of my designs, the valiant Rohirrim must not fall, {playername}! The danger to them is very great, yet also the emptying of Isengard has left it vulnerable, for Saruman has despatched his full strength against Theoden King. This may be the time to move into Nan Curunir. A choice is now laid before you, Commander, a choice you must make, for neither you nor I may be everywhere at once!
-; qstr_Do_you_want_me_to_he|Do you want me to help King Theoden defend {s3}, or hasten to Isengard and see what I can do?
-; qstr_Either_would_be_a_gr|Either would be a great boon to me. You must decide your course on your own, {playername}, as shall I. Shadowfax shall bear me now on a swift errand. You must act quickly as well! Hasten now!
-; qstr_Gandalf_asked_you_to|Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard.
+qstr_Orcs_are_marching_ag|Orkowie maszerują w kierunku Rogatego Grodu.
+qstr_Orcs_are_marching_aga|Orkowie maszerują w kierunku Edoras.
+qstr_Ah_{playername}_happ|Ah, {playername}, happy chance that we come on each other in this fashion! Grim tidings I bring from Western Rohan, and haste is sore needed.
+qstr_What_tidings_do_you_|Jakie wieści przynosisz, Mithrandirze? Co mogę uczynić?
+qstr_Saruman_has_loosed_I|Saruman spuścił Isengard na rzecz Rohanu. {s1} Aby moje plany się powiodły, dzielni Rohirrimowie nie mogą upaść, {playername}! Niebezpieczeństwo dla nich jest bardzo duże, ale pozostawienie Isengardu pozostawiło go bezbronnym, ponieważ Saruman wysłał wszystkie swoje siły przeciwko Królowi Theodenowi. Być może nadszedł czas, by wkroczyć do Nan Curunir. Przed tobą, dowódco, stoi teraz wybór, którego musisz dokonać, ponieważ ani ty, ani ja nie możemy być wszędzie naraz!
+qstr_Do_you_want_me_to_he|Mam pomóc królowi Theodenowi w obronie {s3}, czy pospieszyć do Isengardu i zobaczyć, co da się zrobić?
+qstr_Either_would_be_a_gr|Jedno i drugie byłoby dla mnie wielkim dobrodziejstwem. Musisz sam zdecydować o swoim losie, {playername}, podobnie jak ja. Shadowfax zabierze mnie teraz na szybką misję. Ty również musisz działać szybko! Pospiesz się!
+qstr_Gandalf_asked_you_to|Gandalf poprosił cię, byś pomógł Theodenowi w obronie {s3} lub dowiedział się, co dzieje się w Isengardzie.
 qstr_Ents|Entów
-; qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope.
-; qstr_I_did_what_I_could.|I did what I could.
-; qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
-; qstr_Hail_{playername}!_I_|Hail, {playername}! I hope you are unhurt? At any rate, you seem to have lain your blade to the right foe. No enemy has yet taken the Hornburg, and likely none ever shall – not while the likes of you defend Helm’s Gate, I’ll warrant!
-; qstr_Your_deed_has_greatl|Your deed has greatly helped my design, better even than I could have hoped or planned. Farewell, {playername}, and thank you. We may meet again, ere the waning of the moon!
-; qstr_{playername}_I_will_|{playername}, I will ask you a thing now. You are accounted an able captain, and a dutiful one; were you overmastered by great foes? Did you tarry overlong, for caution or even fear? Behold, we are now come into a greater peril than I could have foreseen. The strength of Rohan is broken, her people scattered and shieldless: Helm’s Deep has fallen. The trees are withered untimely, and night lies over the forge-fires of Isengard: the Ents of Fangorn Forest are dead or driven back.
-; qstr_I...|I...
-; qstr_You_have_failed_me_{|You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not.
+qstr_Hail_{playername}!_I|Witaj, {nazwa gracza}! Mam nadzieję, że nic ci się nie stało? W każdym razie cieszę się, że pomogłeś mojemu przyjacielowi Fangornowi, którego możesz znać jako Drzewca. Pasterze drzew są bardzo potężni, ale prawdopodobnie maszerowali na swoją zgubę. Być może uratowałeś ich przed wielkim niebezpieczeństwem, dowódco, i cieszę się z tego. Nie chciałbym widzieć, jak najstarsze ze wszystkich żywych istot odchodzą ze świata, nie, jeszcze nie teraz... nie, mam nadzieję, że nie przed ponownym ujrzeniem Entowych Żon.
+qstr_I_did_what_I_could.|Zrobiłem, co mogłem.
+qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
+qstr_Hail_{playername}!_I_|Witaj, {nazwa gracza}! Mam nadzieję, że nic ci się nie stało? W każdym razie wygląda na to, że trafiłeś we właściwego wroga. Żaden wróg nie zdobył jeszcze Hornburga i prawdopodobnie nigdy tego nie zrobi - nie dopóki tacy jak ty bronią Bramy Helma, gwarantuję!
+qstr_Your_deed_has_greatl|Twój czyn bardzo pomógł mojemu przedsięwzięciu, nawet lepiej niż mogłem mieć nadzieję lub planować. Żegnaj, {nazwa gracza}, i dziękuję. Być może spotkamy się ponownie, zanim księżyc zgaśnie!
+qstr_{playername}_I_will_|{playername}, zapytam cię teraz o pewną rzecz. Jesteś uważany za zdolnego i obowiązkowego kapitana; czy dałeś się pokonać wielkim wrogom? Czy nie zwlekałeś zbyt długo z powodu ostrożności lub nawet strachu? Oto znaleźliśmy się w niebezpieczeństwie większym, niż mogłem przewidzieć. Siła Rohanu jest złamana, jego lud rozproszony i pozbawiony tarcz: Rogaty Gród upadł. Drzewa przedwcześnie uschły, a nad kuźniami Isengardu zapadła noc: Entowie z Lasu Fangorn zginęli lub zostali wyparci.
+qstr_I...|Ja...
+qstr_You_have_failed_me_{|Zawiodłeś mnie, {playername} - a może to ja zawiodłem ciebie. Być może w moim planie była jakaś wada, jakiś poważny błąd, którego nie rozpoznałem... Nadchodzi groza Mordoru. Zostaw mnie teraz, {playername}. Może jeszcze się spotkamy... a może nie.
 qstr_Bagginsssss..._Ssssh|Bagginsssss... Sssshhhire...
 qstr_I..._don_t_know!|Ja... nie wiem!
 qstr_It..._beckonsssssss.|* wpatruje się w ciebie bez słowa *
@@ -626,11 +626,11 @@ qstr_The_forces_of_{s2}_m|{s2} maszeruje na {s15}!
 qstr_Rohan_capital_moved_|Stolica Rohanu została przeniesiona z Edoras do Rogatego Grodu!
 qstr_Dale_capital_moved_f|Stolica Dale przeniosła się z Dale do Esgaroth!
 qstr_Gundabad_capital_mov|Stolica Gundabad przeniesiona z Gundabad do Goblin Town!
-; qstr_You_have_breached_th|You have breached the Ring of Isengard with the help of the Tree Men. During the battle, Isengard was flooded, but Orthanc still stands unscathed in midst of the havoc. You should investigate the aftermath.
+qstr_You_have_breached_th|Przedarłeś się przez Pierścień Isengardu z pomocą Ludzi Drzew. Podczas bitwy Isengard został zalany, ale Ortank nadal stoi nietknięty pośród spustoszenia. Powinieneś zbadać następstwa.
 qstr_The_hosts_of_{s2}_re|Gospodarze {s2} wycofują się z powrotem do swoich domów!
 qstr____Ruins_of_{s1}___|   Ruiny {s1}   
-; qstr_{s1}_has_joined_the_|{s1} has joined the Hand
-; qstr_{s1}_has_joined_the_E|{s1} has joined the Eye
+qstr_{s1}_has_joined_the_|{s1} dołączył do Ręki
+qstr_{s1}_has_joined_the_E|{s1} dołączył do Oka
 qstr_ranks|szeregi
 qstr_shield_wall|mur tarcz
 qstr_wedge|klin
@@ -689,21 +689,21 @@ qstr_have_taken_measure_o|zmierzyli obecną siłę twojej frakcji i stali się o
 qstr_loses_Faction_Streng|traci Siłę Frakcji, ponieważ linie zaopatrzenia zostały przerwane.
 qstr_loses_Faction_Strengt|traci Siłę Frakcji z powodu zniszczenia obozu.
 qstr_gains_Faction_Streng|zyskuje Siłę Frakcji jako wieść o twoich zwycięstwach.
-; qstr_Notice:_Isengard_Las|Notice: Isengard Last Stand quest cancelled for savegame compatibility reasons. Isengard can now be sieged like a regular city.
-; qstr_Hobbit_quest_aborted|Hobbit quest aborted for compatibility reasons. Hobbits will now only appear after certain conditions are met.
-; qstr_This_update_has_chan|This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu.
+qstr_Notice:_Isengard_Las|Ogłoszenie: Zadanie Isengard Ostatni Bastion zostało anulowane ze względu na kompatybilność zapisu gry. Isengard można teraz oblegać jak zwykłe miasto.
+qstr_Hobbit_quest_aborted|Zadanie hobbita zostało przerwane ze względu na kompatybilność. Hobbici będą teraz pojawiać się dopiero po spełnieniu określonych warunków.
+qstr_This_update_has_chan|Ta aktualizacja zmieniła przypisanie niektórych umiejętności do ich atrybutów. Jeśli chcesz przejrzeć umiejętności swoich towarzyszy, możesz je teraz importować/eksportować, jeśli zapytasz ich o umiejętności z menu drużyny.
 qstr_Something_wrong_not_|Coś nie tak, zbyt mało żołnierzy do usunięcia
-; qstr_Troop:_{s6}___Level:|Troop: {s6} - Level: {reg1}
-; qstr_{reg6}_Centers_Left_|{reg6} Centers Left for {s2}
+qstr_Troop:_{s6}___Level:|Jednostka: {s6} - Poziom: {reg1}
+qstr_{reg6}_Centers_Left_|{reg6} Wyśrodkowanie w lewo dla {s2}
 qstr_Raiders|Jeźdźcy
 qstr_have_won_the_sea_bat|wygrał bitwę morską, demoralizując twoje wojska. Wróg może wykorzystać tę porażkę i atakować częściej.
 qstr_loses_Faction_Strength|traci Siłę Frakcji z powodu niszczycielskiego rajdu.
 qstr_loses_Faction_Strength_|traci Siłę Frakcji dzięki sukcesom na morzu.
 qstr_You_spent_{reg67}_of|Wydałeś {reg67} swojego wpływu na {s1}, pozostając {reg66}.
 qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?był:jest w pobliżu {s5}.
-; qstr_Army_of_{s6}|Army of {s6}
-; qstr_Host_of_{s6}|Host of {s6}
-; qstr_The_host_of_Isengard|The host of Isengard has razed {s2}!
+qstr_Army_of_{s6}|Armia {s6}
+qstr_Host_of_{s6}|Gospodarz {s6}
+qstr_The_host_of_Isengard|Zastępy Isengardu zrównały z ziemią {s2}!
 qstr_{s1}_{s0}|{s1}, {s0}
 qstr_{s1}_and_{s0}|{s1} oraz {s0}
 qstr_No_Troops_Left.|Brak jednostek
@@ -758,7 +758,7 @@ qstr_You_shapeshift_into_|Zmieniasz się w niedźwiedzia!
 qstr_You_got_{reg1}_exper|Zdobyłeś {reg1} doświadczenia w formie niedźwiedzia.
 qstr_Your_ability_to_chan|Twoja umiejętność zmieniania formy się ujawniła, od teraz możesz przemierzać swe ścieżki zarówno jako człowiek jak i niedźwiedź.
 qstr_You_change_back_to_h|Powracasz do ludzkiej postaci... 
-; qstr_Refill_Ammunition|Refill Ammunition
+qstr_Refill_Ammunition|Uzupełnianie amunicji
 qstr_Your_mount_stumbles!|Twój wierzchowiec okulał!
 qstr_Bitten_by_your_own_w|Ugryzion{y/a} przez własnego warga!
 qstr_You_weigh_too_much_f|Masz zbyt dużą masę na kuca!
@@ -773,24 +773,24 @@ qstr_Press_Ctrl_and_Up/Do|Naciśnij klawisz Ctrl i klawisze strzałek w górę/w
 qstr_Fixed_Camera___Right|Poprawiona kamera - prawe ramię
 qstr_Fixed_Camera___Left_|Poprawiona kamera - lewę ramię
 qstr_Fixed_Camera___Cente|Kamera naprawiona - wycentrowano
-; qstr_The_Nazgul_retreats!|The Nazgul retreats!
+qstr_The_Nazgul_retreats!|Nazgul wycofuje się!
 qstr_Shield_is_too_big_to|Tarcza jest zbyt duża do używania wraz z łukiem.
-; qstr_{s7}_waves_at_you.|{s7} waves at you.
-; qstr_You_happen_upon_an_O|You happen upon an Old Guesthouse. As you inspect the weathered stone building, you notice a group of boys playing among the pillars, the only children you have seen in Minas Tirith.  One of them greets you and you wave back. Your heart is gladdened and you forget, for a brief moment, the sorrow of war.
+qstr_{s7}_waves_at_you.|{s7} macha do ciebie.
+qstr_You_happen_upon_an_O|Natrafiasz na stary dom gościnny. Gdy przyglądasz się zwietrzałemu kamiennemu budynkowi, zauważasz grupę chłopców bawiących się między filarami, jedyne dzieci, jakie widziałeś w Minas Tirith. Jeden z nich pozdrawia cię, a ty odwzajemniasz pozdrowienie. Twoje serce się raduje i na krótką chwilę zapominasz o smutku wojny.
 qstr_You_look_through_Hen|Spoglądasz przez Henneth Annun, Okno Zachodzącego Słońca. Piękny widok odnawia twoją wiarę w Zachód i moce kryjące się za nim.
-; qstr_As_you_follow_the_st|As you follow the straight stairs, cut into the rock of the mountain, and then a second set of stairs, winding as it clings to the cliff-face, you realize that you should not pursue this path any further if you value your own life.
-; qstr_You_are_unable_to_en|You are unable to endure the horrors of the Dead City.
-; qstr_You_endure_the_horro|You endure the horrors of the Dead City and explore its innermost circles. The Silent Watchers recognise your boldness and don't oppose you. (You gained 1 Charisma.)
-; qstr_You_are_unable_to_end|You are unable to endure the horrors of the temple.
-; qstr_You_endure_the_horror|You endure the horrors of the unspeakable rituals in this sacred place. The cruel people of Rhun recognise the strength you have shown and some of their mightiest decide to join your party.
-; qstr_You_find_yourself_in|You find yourself in a deep cavern. Your hackles rise as you look around you, and you begin to feel a strange sense of danger. This is no place for one such as you. Snarling, you make your retreat. When the Shadow has covered the world above, perhaps then, you may return here without fear...
-; qstr_You_find_yourself_in_|You find yourself in a deep cavern. Your hackles rise as you look around you, and you begin to feel a strange sense of danger. Raising your weapon high, you snarl your defiance at the unseen foe in this place. This may have been a place of wonder once... but now, with the true power you have gained, you realize you have nothing to fear from the forgotten past of a broken world.
-; qstr_With_trepidation_you|With trepidation, you look within the silver basin. The water shows you visions of horror; blood and terror and grief. You recoil... but then, the visions vanish and you see instead a clear night sky, with what seems to be a silver boat floating across the expanse. A sense of calm washes over you. Hope is not wholly gone.
-; qstr_The_Lady_s_garden_li|The Lady's garden lies peacefully in the bright daylight. You sense nothing out of the ordinary...
-; qstr_You_kneel_to_pay_you|You kneel to pay your respects to the fallen rulers of this fair realm. Beside you, a shield-maiden of Rohan raises her voice in song. Ne sceal hearpan sweg wigend weccean; ne winfaet gylden guma sceal healdan! Your heart aches to hear her words.
-; qstr_You_wonder_about_the|You wonder about the two rows of burial mounds in front of the gates, yet as a mere {s24}, you do not understand their significance.
-; qstr_Halt!_You_are_not_al|Halt! You are not allowed to enter here!
-; qstr_Halt!_You_are_not_all|Halt! You are not allowed to enter here without the Lady's leave!
+qstr_As_you_follow_the_st|Podążając prostymi schodami, wyciętymi w skale góry, a następnie drugim zestawem schodów, krętych, przylegających do klifu, zdajesz sobie sprawę, że nie powinieneś podążać tą ścieżką dalej, jeśli cenisz własne życie.
+qstr_You_are_unable_to_en|Nie jesteś w stanie znieść okropności Martwego Miasta.
+qstr_You_endure_the_horro|Znosisz okropności Martwego Miasta i odkrywasz jego najskrytsze kręgi. Milczący Strażnicy doceniają twoją odwagę i nie sprzeciwiają ci się. (Zyskałeś 1 Charyzmy.)
+qstr_You_are_unable_to_end|Nie jesteś w stanie znieść okropności świątyni.
+qstr_You_endure_the_horror|Znosisz okropności niewypowiedzianych rytuałów w tym świętym miejscu. Okrutni mieszkańcy Rhun doceniają twoją siłę i niektórzy z ich najpotężniejszych postanawiają dołączyć do twojej drużyny.
+qstr_You_find_yourself_in|Znajdujesz się w głębokiej jaskini. Rozglądając się dookoła, czujesz dziwne poczucie zagrożenia. To nie jest miejsce dla kogoś takiego jak ty. Warcząc, wycofujesz się. Kiedy Cień pokryje świat powyżej, być może wtedy będziesz mógł tu wrócić bez strachu...
+qstr_You_find_yourself_in_|Znajdujesz się w głębokiej jaskini. Rozglądając się dookoła, czujesz dziwne poczucie zagrożenia. Podnosząc wysoko broń, warczysz na niewidzialnego wroga w tym miejscu. Być może kiedyś było to miejsce cudów... ale teraz, z prawdziwą mocą, którą zdobyłeś, zdajesz sobie sprawę, że nie masz się czego obawiać ze strony zapomnianej przeszłości zepsutego świata.
+qstr_With_trepidation_you|Z niepokojem zaglądasz do srebrnej misy. Woda ukazuje ci wizje horroru; krew, przerażenie i smutek. Odchylasz się... ale potem wizje znikają i zamiast tego widzisz czyste nocne niebo, z czymś, co wydaje się być srebrną łodzią unoszącą się na przestrzeni. Ogarnia cię poczucie spokoju. Nadzieja nie zniknęła całkowicie.
+qstr_The_Lady_s_garden_li|Pani ogrodu leży spokojnie w jasnym świetle dnia. Nie wyczuwasz nic niezwykłego...
+qstr_You_kneel_to_pay_you|Klękasz, by oddać hołd poległym władcom tego pięknego królestwa. Obok ciebie tarczowniczka Rohanu wznosi swój głos w pieśni. Ne sceal hearpan sweg wigend weccean; ne winfaet gylden guma sceal healdan! Serce cię boli, gdy słyszysz jej słowa.
+qstr_You_wonder_about_the|Zastanawiasz się nad dwoma rzędami kopców grobowych przed bramą, ale jako zwykły {s24} nie rozumiesz ich znaczenia.
+qstr_Halt!_You_are_not_al|Stać! Nie wolno tu wchodzić!
+qstr_Halt!_You_are_not_all|Stój! Nie wolno ci tu wchodzić bez pozwolenia Pani!
 qstr_While_visiting_towns|Odwiedzając miasta, osady i obozy, możesz porozmawiać z ludźmi, którzy chodzą po okolicy. Członkowie różnych frakcji mają różne rzeczy do powiedzenia - niektórzy pozwolą ci na własne myśli, inni podzielą się plotkami. Obydwaj mogą jedynie lepiej zrozumieć kulturę i frakcję danej osoby, albo mogą znaleźć wskazówki, jak znaleźć tajne miejsca lub porady i wskazówki dotyczące podróżowania przez Pustkowie i walki w Wojnie o Pierścień.
 qstr_Cannot_leave_now.|Nie można teraz opuścić lokacji.
 qstr_You_have_found_the_l|Znalazłeś lokalnego kowala.
@@ -807,7 +807,7 @@ qstr_Formations_turned_OF|Formacje wyłączone w menu opcji
 qstr_Division_{reg1}_{s2}_g|Podział {reg1} {s2} przechodzi do zapamiętanej pozycji ...
 qstr_Division_{reg1}_{s2}_f|Podział {reg1} {s2} tworzy linię (zapamiętaną).
 qstr_Division_{reg1}_{s2}_fo|Podział {reg1} {s2} tworzy linie {reg0} (zapamiętane).
-; qstr_A_Nazgul_on_a_winged|A Nazgul on a winged steed circles over the battle field!
+qstr_A_Nazgul_on_a_winged|Nazgul na skrzydlatym wierzchowcu krąży nad polem bitwy!
 qstr_Delivered_{reg60}_da|Zadajesz {reg60} obrażeń.
 qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} odzyskuje {reg0}% zdrowia. = + {reg1}% STR
 qstr_Your_bear_form_has_{|Twoja niedźwiedzia forma ma {reg2}/{reg1} HP!
@@ -856,8 +856,8 @@ qstr_on_the_right_flank|na prawej flance
 qstr_through_the_center|Poprzez Środek
 qstr_Attackers_charge_{s2|Atakujący szarżują {s2}
 qstr_Attackers_charge_{s1|Atakujący szarżują {s1}
-; qstr_Hold_this_area_to_st|Hold this area to stop defender reinforcements from here!
-; qstr_Defender_reinforceme|Defender reinforcement point taken!
+qstr_Hold_this_area_to_st|Utrzymaj ten obszar, aby powstrzymać posiłki obrońców.
+qstr_Defender_reinforceme|Punkt zbrony obrońców przejęty!
 qstr_{s1}_rallied_to_your|{s1} dzięki twojej charyzmie przeszedł na twoją stronę.
 qstr_Last_attacker_wave._|Ostatnia fala atakujących. Chcesz się wycofać?
 qstr_Attackers_almost_def|Atakujący prawie pokonani. Chcesz się wycofać?
@@ -925,13 +925,13 @@ qstr_Look_at_my_over_the_|Spójrz na mnie, {playername}! Jestem taki wspaniały 
 qstr_You_wish_old_man_my_|Jak chcesz, stary, ale mój widok jest znacznie lepszy!
 qstr_You_should_really_se|Naprawdę powinieneś zobaczyć zdjęcia Namiestnika Denetora na Facebooku, jest niesamowity!
 qstr_Press_Space_to_conti|Naciśnij 'spację' by kontynuować...
-; qstr_by_level|by level
-; qstr_can_only_be_set_at_g|can only be set at game start; see options to adjust level
-; qstr_by_day|by day
-; qstr_can_only_be_set_at_ga|can only be set at game start; see options to adjust day
+qstr_by_level|według poziomu
+qstr_can_only_be_set_at_g|można ustawić tylko przy starcie gry; zobacz opcje dostosowania poziomu
+qstr_by_day|w ciągu dnia
+qstr_can_only_be_set_at_ga|można ustawić tylko na początku gry; zobacz opcje, aby dostosować dzień
 qstr_ON|WŁ
 qstr_OFF|WYŁ
-; qstr_If_you_are_new_to_TL|If you are new to TLD, tutorial messages are recommended
+qstr_If_you_are_new_to_TL|Jeśli jesteś początkujący w TLD, zalecane są wiadomości samouczka
 qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} do następnego awansu^
 qstr_Influence:^_{reg11}_|Wpływy:^ {reg11} (z {s16})^
 qstr_Resource_Points:^_{r|Punkty zasobów:^ {reg12} (w {s16})^
@@ -955,8 +955,8 @@ qstr_You_are_suffering_fr|Cierpisz od {s1}.
 qstr_You_are_suffering_fro|Cierpisz od {s1} i {s2}.
 qstr_You_are_suffering_from|Cierpisz od {s1}, {s2}, i {s3}.
 qstr_You_are_suffering_from_|Cierpisz od {s1}, {s2}, {s3} i {s4}.
-; qstr_Troop_upkeep__paid_e|Troop upkeep (paid every four days):^
-; qstr_{s12}^^__{s4}:_{reg8|{s12}^^  {s4}: {reg8}/{reg5} Resource Points ^Party: {reg4}^Reserves: {reg7}
+qstr_Troop_upkeep__paid_e|Utrzymanie oddziału (płatne co cztery dni):^
+qstr_{s12}^^__{s4}:_{reg8|{s12}^^ {s4}: {reg8}/{reg5} Punkty zasobów ^Drużyna: {reg4}^ Rezerwy: {reg7}
 qstr_No_upkeep_costs|Brak kosztów utrzymania
 qstr_Orc_hiring_bonus:_+2|Orkowy bonus najmu +2/3 za każdego orka^
 qstr_Current_party_size_l|Aktualny limit oddziału: {reg5}.^Na wielkość oddziału wpływają obecnie:^^Podstawowa wielkość:  +10^Przywództwo: {s2}{reg1}^Charyzma: {s3}{reg2}^Reputacja: {s4}{reg3}^RAZEM:  {reg5}
@@ -1075,8 +1075,8 @@ qstr_You_have_fallen._The|Pokonano cię. Bandyci szybko przeszukują twe ciało 
 qstr_Luckily_some_of_your|Na szczęście niektórzy z twoich towarzyszy się zaniepokoili i poszli cię szukać, gdy przez pewien czas nie wracał{e/a}ś, by znaleźć cię leżąc{ego/ą} bezwładnie przy drodze. Szybko zanoszą cię w bezpieczne miejsce i opatrują twe rany.
 qstr_Luckily_some_passing|Na szczęście jacyś miejscowi znajdują cię leżąc{ego/ą} bezwładnie przy drodze i poznają, że jesteś kimś więcej, niźli tylko zwykłym żebrakiem. Zanoszą cię do pobliskiej gospody i opatrują twe rany.
 qstr_{s13}^^You_have_succ|{s13}^^Udało ci się przekraść niepostrzeżenie.
-; qstr_The_tomb_is_destroye|The tomb is destroyed. A fierce fight took place here.
-; qstr_Nothing_of_interest|Nothing of interest
+qstr_The_tomb_is_destroye|Grobowiec został zniszczony. Toczyła się tu zacięta walka
+qstr_Nothing_of_interest|Nic interesującego
 qstr_the_place|miejsce
 qstr_the_castle|zamek
 qstr_the_Throne_Room|Sala Tronowa 
@@ -1091,13 +1091,13 @@ qstr_the_Hall|Hala
 qstr_the_Great_Chamber_of|Wielka Hala Thróra
 qstr_Stay_indoors_for_som|Odpocznij tu przez jakiś czas ({reg1} Pkt Prestiżu za noc)
 qstr_Camp_outside_for_som|Rozbij obóz na zewnątrz (za darmo)
-; qstr_As_you_enter_the_vas|As you enter the vast caverns underneath the Ring of Isengard, where thousands of orcs work to supply the growing armies of the White Hand, you gain confidence in the rise of a new power and the demise of the old world.
-; qstr_You_have_found_the_G|You have found the Glittering Caves, one of the marvels of the Northern World.
-; qstr_As_the_party_member_|As the party member with the highest Bargainer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to find the most notable persons in town. [Costs {reg5}/{reg6} influence]
-; qstr_You_have_already_fou|You have already found all persons of interest.
-; qstr_the_captain_of_the_g|the captain of the garrison, and the civil authority.
-; qstr_and_the_captain_of_t|and the captain of the garrison. As this place was recently captured, it has not civil authority.
-; qstr_You_also_heard_of_a_|You also heard of a healer, but you will have to find them on your own.
+qstr_As_you_enter_the_vas|Wchodząc do rozległych jaskiń pod Pierścieniem Isengardu, gdzie tysiące orków pracują, aby zaopatrzyć rosnące armie Białej Ręki, zyskujesz pewność co do powstania nowej potęgi i upadku starego świata.
+qstr_You_have_found_the_G|Znalazłeś Lśniące Jaskinie, jeden z cudów północnego świata.
+qstr_As_the_party_member_|Jako członek drużyny z najwyższą umiejętnością targowania się ({reg2}), {reg3?szacujesz:{s3} szacuje}, że znalezienie najbardziej znaczących osób w mieście zajmie {reg4} godzin. [Kosztuje {reg5}/{reg6} wpływów]
+qstr_You_have_already_fou|Znaleziono już wszystkie interesujące osoby.
+qstr_the_captain_of_the_g|kapitan garnizonu i przedstawiciel władz.
+qstr_and_the_captain_of_t|i kapitan garnizonu. Ponieważ miejsce to zostało niedawno zdobyte, nie ma ono władzy cywilnej.
+qstr_You_also_heard_of_a_|Słyszałeś również o uzdrowicielu, ale będziesz musiał znaleźć go na własną rękę.
 qstr_{s4}_s_scouts_have_s|Zwiadowcy {s4} widzieli i zgłosili twoją porażkę. Przyniosłeś wstyd {s4}, a odpowiedzialność za tę porażkę spoczywa wyłącznie na Tobie.
 qstr_{s1}_s_Ship|Statek
 qstr_Time_passes...|Po pewnym czasie...
@@ -1152,10 +1152,10 @@ qstr_^^^You_have_slain_th|^^^Zabijasz szczura, reszta wraca szybko do szeregu. ^
 qstr_You_cover_up_your_tr|Ukryłeś ślady i ruszyłeś do przodu.
 qstr_Breaking_camp...|Zwijasz obóz...
 qstr_Party_morale_is_low.|Morale oddziału są niskie. Jednostki opuszczają twój odział.
-; qstr_Desertion|Desertion
+qstr_Desertion|Dezercja
 qstr_{s1}_has_deserted_fr|{s1} opuścił twój oddział.
 qstr_You_don_t_have_enoug|Nie masz dość jednostek żeby strzec wszystkich więźniów. Ich szanse na ucieczkę rosną
-; qstr_{s1}_has_escaped_fro|{s1} has escaped from your party.
+qstr_{s1}_has_escaped_fro|{s1} uciekł z twojej drużyny.
 qstr_You_have_left_{s1}.|Opuściłeś {s1}.
 qstr_You_are_entering_{s1|Wkraczasz {s1} ({s2}).
 qstr_You_are_entering_{s1}|Wkraczasz {s1}.
@@ -1187,7 +1187,7 @@ qstr_In_a_desperate_attem|W desperackiej próbie obrony przed wrogami, Sauron wy
 qstr_The_forces_of_{s2}_e|Siły {s2} założyły obóz w {s15}!
 qstr_The_hosts_of_{s2}_ma|Zastępy {s2} wracają by bronić własnych domów!
 qstr_{playername}_s_Reser|Rezerwy {playername}
-; qstr_{reg70}___Last_Stand|{reg70} - Last Stand
+qstr_{reg70}___Last_Stand|{reg70} - Ostatni bastion
 qstr_Gondor_has_called_fo|Gondor wezwał pomocnika!
 qstr_Gondor_is_accompanyi|Gondor towarzyszy marszałkowi!
 qstr_{s5}_has_stopped_fol|{s5} przestał Cię obserwować.
@@ -1287,8 +1287,8 @@ qstr_Ask_him_if_he_has_an|Zapytaj go, czy nie ma już chwastów!
 qstr_Tell_him_I_ll_be_the|Powiedz mu, że będę wysoki, kiedy znów się zobaczymy!
 qstr_Ask_if_he_s_seen_Gan|Zapytaj, czy widział Gandalfa!
 qstr_You_gained_250_exper|Zdobyłeś 250 punktów doświadczenia.
-; qstr_Hrooom..._Hmmm...Who|Hrooom... Hmmm...Who are you?
-; qstr_Hrooom..._Hmmm...Oh_|Hrooom... Hmmm...Oh, it's you again, {playername}.
+qstr_Hrooom..._Hmmm...Who|Hrooom... Hmmm... Kim jesteś?
+qstr_Hrooom..._Hmmm...Oh_|Hrooom... Hmmm... Och, to znowu ty, {playername}.
 qstr_Treebeard_wants_you_|Drzewiec pragnie byś odnalazł{/a} i pokonała orków karczujących las Fangorn.
 qstr_Something_wrong_not_e|Coś nie tak, dość żołnierzy na imprezę zwiadowczą
 qstr_my_home_town|moje rodzinne miasto
@@ -1630,11 +1630,11 @@ qstr_I_shall_keep_that_in|Zapamiętam to sobie.^^ Hantanyel, áva márië!
 qstr_That_may_be_so_some_|Może tak być, niektóre części świata są oszukańcze. ^^ Boe i 'waen!
 qstr_I_seldom_wander_far_|Rzadko kiedy oddalam się od domu. Odjedź z stąd jak najszybciej.Tutaj wciąż mogą grasować gobliny.
 qstr_What_do_you_want?|Czego chcesz?
-; qstr_Greetings._What_can_|Greetings. What can I do for you?
+qstr_Greetings._What_can_|Pozdrowienia. Co mogę dla ciebie zrobić?
 qstr_Who_are_you?_A_mere_|Kim jesteś? Tylko {s25}? Nie mam czasu dla takich jak ty! Zostaw mnie! {s2}
 qstr_What?_You_come_to_me|Co? Przychodzisz do mnie i nie wiesz, co robię? Rozejrzyj się wokół. ^^ Widzisz krew? Czy słyszysz płacz? Czy czujesz ich ból? To właśnie robię! Rozbijam rzeczy, żeby znów były lepsze! Jeśli przyjdziesz do mnie, złamany i dotknięty bólem, będę mógł cię ulepszyć!
 qstr_I_am_a_healer._Come_|Jestem uzdrowicielem. Przyjdź do mnie, gdy ty lub twoi towarzysze jesteście poważnie ranni, a ja zrekompensuję twoje obrażenia najlepiej jak potrafię.
-; qstr_You_have_found_the_loca|You have found the local healer
+qstr_You_have_found_the_loca|Znalazłeś miejscowego uzdrowiciela
 qstr__Costs_500_Resource_|(Koszt 500 zasobów, 5 wpływów)
 qstr_Ha!_I_can_see_that!_|Ha! Rozumiem! Mogę to zrobić, tak ... Oprócz twojej krwi to nie jest za darmo! {s2}
 qstr_Yes_I_see_that._We_c|Tak widzę to. Możemy zrobić to tak, ale muszę wysłać kilka składników. {s2}
@@ -1699,16 +1699,16 @@ qstr__Guards_slaughter_hi|Straże, ubijcie go!
 qstr_Slaughter_him_for_fr|Ubijcie go dla świeżego ludzkiego mięsa!
 qstr_This_is_{s5}_Command|To {s5}, Dowódco.
 qstr_{s6}_This_place_and_|{s6} To miejsce i okoliczne ziemie należą do {s7} z {s8}.
-; qstr_Hear_now_commander._|Hear now, commander. I am currently out of assignment, yet I would rather meet our enemies in the field than wait for them to come here. I hear you're a capable leader. Would you have me?
-; qstr_My_party_was_wiped_o|My party was wiped out in the last battle and I don't want to be assigned to the next best fool. I hear you're a capable leader. Could you use another warrior?
-; qstr_{s9}_joined_your_par|{s9} joined your party
-; qstr_A_pity!_I_sure_would|A pity! I sure would have liked to fight in your party-
-; qstr_Too_bad_you_will_reg|Too bad, you will regret not taking me with you.
-; qstr_Lead_me_to_the_{s3}|Lead me to the {s3}
-; qstr_Lead_me_to_the_local|Lead me to the local authority
-; qstr_Lead_me_to_the_Lord_|Lead me to the Lord's hall
-; qstr_Lead_me_to_your_comm|Lead me to your commanders
-; qstr_Lead_me_to_the_capta|Lead me to the captain of the garrison
+qstr_Hear_now_commander._|Niech pan posłucha, komandorze. Obecnie nie mam przydziału, ale wolę spotkać się z naszymi wrogami w terenie, niż czekać, aż przyjdą tutaj. Słyszałem, że jesteś zdolnym dowódcą. Chcesz mnie?
+qstr_My_party_was_wiped_o|Moja drużyna została zniszczona w ostatniej bitwie i nie chcę być przydzielony do kolejnego najlepszego głupca. Słyszałem, że jesteś zdolnym przywódcą. Przydałby się jeszcze jeden wojownik?
+qstr_{s9}_joined_your_par|{s9} dołączył do twojej drużyny
+qstr_A_pity!_I_sure_would|Szkoda! Z pewnością chciałbym walczyć w twojej drużynie.
+qstr_Too_bad_you_will_reg|Szkoda, będziesz żałował, że nie zabrałeś mnie ze sobą.
+qstr_Lead_me_to_the_{s3}|Zaprowadź mnie do {s3}
+qstr_Lead_me_to_the_local|Zaprowadź mnie do władz lokalnych
+qstr_Lead_me_to_the_Lord_|Zaprowadź mnie do sali Lorda
+qstr_Lead_me_to_your_comm|Zaprowadź mnie do swoich dowódców
+qstr_Lead_me_to_the_capta|Zaprowadź mnie do kapitana garnizonu
 qstr_Hey_scum!_I_can_fix_|Hej szumowino! Mogę naprawić twoją szczękę.
 qstr_Watch_where_you_re_g|Patrz gdzie leziesz, robalu!
 qstr_I_don_t_like_your_fa|Nie podoba mi się twoja twarz! Myślę, że wymaga drobnych poprawek.

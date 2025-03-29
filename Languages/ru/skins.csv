@@ -2,7 +2,7 @@ skinkey_chin_size|Размер подбородка
 skinkey_chin_shape|Форма подбородка
 skinkey_chin_forward|Выпуклость подбородка 
 skinkey_jaw_width|Ширина челюсти 
-; skinkey_jaw_definition|Jaw Definition
+skinkey_jaw_definition|Положение челюсти
 skinkey_lower_lip|Нижняя губа
 skinkey_upper_lip|Верхняя губа
 skinkey_mouth_nose_distance|Расстояние от рта до носа
@@ -42,5 +42,5 @@ skinkey_frawn|Угрюмость
 skinkey_mouth_vert_pos|Расположение рта 
 skinkey_mouth_to_nose_dist|Расстояние от рта до носа
 skinkey_chin_width|Ширина подбородка
-; skinkey_ear_pointiness|Ear Pointiness
-; skinkey_ear_length|Ear Length
+skinkey_ear_pointiness|Заострённость ушей
+skinkey_ear_length|Длина ушей

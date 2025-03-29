@@ -55,10 +55,10 @@ ui_crouch|Ducken
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Bist du sicher, dass du diesen Charakter importieren möchtest?
-; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: Ironflesh, Power Strike, Power Throw, Power Draw.
+ui_explanation_strength|Stärke: Jeder Punkt erhöht die Lebenspunkte um +1. Die folgenden Fähigkeiten können nicht über 1/3 der Stärke hinaus entwickelt werden: Eisenhaut, Schlagkraft, Wurfkraft, Bogenzugkraft.
 ui_explanation_agility|Wendigkeit: Jeder Punkt verleiht fünf Waffenpunkte und erhöht die Waffengeschwindigkeit um 0,5%. Die folgenden Fähigkeiten können nicht über 1/3 des Wendigkeitswerts hinaus entwickelt werden: Waffenmeister, Schild, Athletik, Reiten, Berittenes Bogenschießen, Plündern.
-; ui_explanation_intelligence|Intelligence: (Wisdom) The deep understanding of nature and crafts. Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Bargainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, First Aid, and Wildcraft.
-; ui_explanation_charisma|Charisma: (Will) The power to inspire or dominate. Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Trainer, Leadership.
+ui_explanation_intelligence|Intelligenz: (Weisheit) Das tiefe Verständnis von Natur und Handwerk. Jeder zusätzliche Intelligenzpunkt gewährt sofort einen zusätzlichen Fertigkeitspunkt. Die folgenden Fertigkeiten können nicht über 1/3 des Intelligenzswerts entwickelt werden: Feilschen, Spurensuche, Taktik, Wegfindung, Aufklärung. Inventarverwaltung, Wundheilung, Chirurgie, Erste Hilfe und Wildkunde.
+ui_explanation_charisma|Charisma: (Wille) Die Macht, zu inspirieren oder zu dominieren. Verbessert dein Ansehen bei Personen und Fraktionen. Jeder Punkt erhöht die maximale Truppengröße um +1 (0.5 für Gefährten). Die folgenden Fertigkeiten können nicht über 1/3 des Charismawerts entwickelt werden: Gefangenaufsicht, Ausbilder. Führerschaft.
 ui_delivered_number_damage|%d Schaden zugefügt.
 ui_mission_losses_killed|getötet : 
 ui_party_losses|%s  : %d verwundet--- %d getötet von %d.
@@ -68,7 +68,7 @@ ui_dumping_value_items|%d Gegenstände werden für immer verloren sein. Bist du 
 ui_dumping_value_item|Ein Gegenstand wird für immer verloren sein. Bist du dir sicher?
 ui_notification_requirements_not_met|Du hast nicht die benötigten Fertigkeiten oder Eigenschaften für diese Waffe.
 ui_disband|Entlassen
-ui_you_hit_a_friendly_troop|Du hast eine Freund getroffen!
+ui_you_hit_a_friendly_troop|Du hast eine freundliche Einheit getroffen!
 ui_you_are_not_carrying_any_arrows|Du hast keine Pfeile bei dir.
 ui_received_number_damage|%d Schaden erlitten.
 ui_you_have_improved_your_proficiency_in_value_to_number|Du hast deine Fähigkeiten in %s auf %d gesteigert.

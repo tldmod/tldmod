@@ -5,10 +5,10 @@ mno_faction_intros|Lerne mehr über die Völker von Mittelerde
 mno_go_bback|Zurück
 menu_start_phase_2|^^^^^ Mittelerde. Ein Schatten regt sich im Osten, ^ und dunkle Geheimnisse, die lange verborgen lagen, offenbaren sich. ^ Die freien Völker bereiten sich auf einen Krieg vor. Einen Krieg, wie ihn die Welt seit einem Zeitalter nicht gesehen hat. ^ Menschen, Elben, Zwerge und Orks; sie alle werden ihre Rolle spielen. ^^ Welche dies jedoch sein wird, kann nur die Zukunft zeigen...
 mno_go_forth|Betritt nun den Pfad deines Schicksals...
-; mno_change_war_start_mode|War Starts:  {s7}
-; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
+mno_change_war_start_mode|Kriegsbeginn:  {s7}
+mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|TLD-Optionen ändern.
-; mno_see_info_pages|TLD game concepts.
+mno_see_info_pages|TLD Spielkonzepte
 menu_start_game_3|^^^^^^^^Wähle ein Szenario:
 mno_custom_battle_scenario_1|Gefecht; Reiche von Gondor vs. Harad
 mno_custom_battle_scenario_12|Wähle die Fraktionen für das Gefecht
@@ -127,7 +127,7 @@ mno_camp_action|Einen Gegenstand verwenden.
 mno_camp_wait_here|Für einige Zeit Rast machen.
 mno_camp_options|TLD-Optionen ändern.
 mno_Dev_Menu|Entwickler-Cheats
-; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+menu_dev_menu|Dies sind Entwickleroptionen, die dir eine Menge Cheats/Tools zum Spielen geben.^^ Allerdings wird dies zu einigen WIP-Ereignissen, Auslösern und Kampagnenänderungen führen, die das Spiel zerstören könnten.^^ Benutzung auf eigene Gefahr! ^^ Wenn du Bugs meldest, sagt uns bitte, falls du das Dev-Menü benutzt hast.
 mno_cheat_enable|Cheat/Modding-Optionen aktivieren.
 menu_game_options|^^^^^^^^Wähle ein Option um umzuschalten:
 mno_game_options_war_level_start|Krieg beginnt bei Spielerlevel: {s1}
@@ -160,8 +160,8 @@ mno_strat_tweaks_siege_reqs|Stärkevoraussetzungen für Belagerungen: {s7}
 mno_strat_tweaks_siege_relax_rate|Lockerungsrate für Stärkevoraussetzungen für Belagerungen: {reg1}
 mno_strat_tweaks_regen_rate|Stärke-Regenerationsrate: {s7}
 mno_strat_tweaks_siege_regen_limit|Fraktionen erholen sich langsamer, wenn unter: {reg1}
-; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
-; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
+mno_strat_tweaks_influence_gain_rate|Einfluss-Steigerungsrate: {reg0}%
+mno_strat_tweaks_rank_gain_rate|Rang-Steigerungsrate: {reg0}%
 mno_strat_tweaks_back|Zurück zum Optimierungs-Menü.
 menu_camp_action|^^^^^^^^^ Welchen Gegenstand?
 mno_camp_drink_water|Trink das Entwasser!
@@ -255,11 +255,11 @@ menu_besiegers_camp_with_allies|{s1} bleibt belagert. Die Banner von {s2} wehen 
 mno_talk_to_siege_commander|Bitte darum, den Befehlshaber zu treffen.
 mno_join_siege_with_allies|Schließe dich dem nächsten Angriff an.
 mno_join_siege_stay_back|Befiehl deinen Truppen, sich dem nächsten Angriff ohne dich anzuschließen.
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+menu_moria_must_escape|^^Das Buch scheint über den letzten Versuch der Zwerge zu berichten, sich in Moria niederzulassen. Ein Versuch, der offenbar mit einem grausamen Tod für alle Beteiligten endete. Während du über ihr düsteres Schicksal nachdenkst, hörst du plötzlich schrille Schreie und das eilige Geräusch vieler Füße.^^ Sie kommen!^ Schnell verlässt du die Kammer und bemerkst, dass die Geräusche aus der Halle kommen. Du hast keine andere Wahl, als in die andere Richtung zu fliehen, in einen engen, gewundenen Tunnel und hinunter... ^...^ Nach ein paar Stunden wird dir klar, dass du dich tief in Moria verirrt hast und einen Ausweg finden musst.
 mno_moria_exit_scene|Finde einen Weg hinaus!
 menu_castle_outside|Du befindest dich außerhalb von {s2}.{s11} {s3} {s4}
 mno_cheat_steal_book_door|Nimm das Buch
-; mno_moria_enter|Return into main hall of Moria through the secret entrance
+mno_moria_enter|Kehre durch den geheimen Eingang in die Haupthalle Morias zurück
 mno_moria_enter_door|Betrete Moria.
 mno_castle_start_siege|Belagere die {reg6?Stadt:Feste}.
 mno_castle_leave|Verlassen
@@ -305,7 +305,7 @@ mno_talk_to_healer|Sprich mit {s40}.
 mno_talk_to_castle_commander|Besuche die Kasernen von {s61}
 mno_speak_with_elder|Sprich mit dem {s6}.
 mno_town_ask|Erkundige dich nach den wichtigsten Leuten...
-; mno_player_initiate_siege|Attack the {reg6?town:castle}...
+mno_player_initiate_siege|Greife {reg6?town:castle} an...
 mno_isengard_underground|Gehe zu den unterirdischen Höhlen.
 mno_isengard_underground_door|Gehe hinab in die Gruben
 mno_tirith_toplevel|Klettere auf die höchste Ebene.
@@ -350,15 +350,15 @@ mno_explore|Erkunde diesen Ort.
 menu_ring_hunter_lair|^^^^Du bist der Spur durch den Düsterwald gefolgt und hast den {s1} gefunden. Sie bereiten sich gerade vor, mit einer Truhe aufzubrechen.
 mno_attack_lair|Jetzt angreifen!
 mno_leave_bandit_lair|Vorerst zurückziehen.
-; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
-; mno_go_with_the_raftmen|Take the raft to Dorwinion
-; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
+menu_raftmen|^^^^Du folgst dem Flusslauf in südöstlicher Richtung nach Rhûn, in der Hoffnung, die alte Handelsstraße zu finden.^^ Nach einiger Zeit erreichst du ein kleines Dorf am Flussufer.^^Du fragst die Dorfbewohner, wie du die Straße erreichen könntest, und wirst zu einem Paar Männer geführt, die den Fluss mit einem Floß befahren.^^Es braucht einige Verhandlungen, aber du vereinbarst, dass die Männer dich flussabwärts bringen.
+mno_go_with_the_raftmen|Nimm das Floß nach Dorwinion
+menu_ride_to_dorwinion|^^^^Du entspannst dich und genießt das schöne Wetter, während die Männer das Floß flussabwärts steuern. Der Fluss zwischen den Wasserfällen und Stromschnellen des Einsamen Berges, der sonst kalt und klar ist, ist hier lau, sanft und schlammig.^^ Im Nachmittagslicht siehst du, wie weite Ebenen und grüne Wälder an dir vorbeiziehen, während das Floß entlang der gewundenen Mäander treibt. Die Gegend ist mit kleinen Bauernhöfen und Weinbergen dünn besiedelt, die von niedrigen Steinmauern umgeben sind, und du passierst ab und zu ein Stelzenhaus, das in den Schilfen verborgen liegt.^^Die sanfte Bewegung des Floßes hilft dir, in den Schlaf zu gleiten...
 mno_ride_to_dorwinion_next|Weiter...
-; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
-; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
-; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
-; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
-; mno_bandit_fortress_spirits|Go talk with the spirits.
+menu_amath_dollen_fortress|^^^^Du erwachst am späten Nachmittag aus deinem Nickerchen und erreichst bald einen Steg, an dem die Männer das Floß festmachen. Sie weisen dir den Weg zu einem schmalen Pfad, der im Sumpfgras verschwindet, und schlagen dort ein Lager auf, um auf deine Rückkehr zu warten.^^Du folgst dem Pfad, der vom Sumpfgebiet schnell zu einer grasbewachsenen Ebene ansteigt, und gehst, bis er auf die alte Handelsstraße trifft.^^Nach einiger Zeit siehst du eine Banditenfestung.
+mno_bandit_fortress_with_companions|Nähere dich der Banditenfestung nur mit deinen Begleitern und versuche, mit ihrem Anführer zu sprechen. 
+mno_bandit_fortress_with_army|Greife die Banditenfestung mit all deinen Männern an.
+mno_bandit_fortress_against_easterlings|Verteidige die Festung gegen die Belagerung
+mno_bandit_fortress_spirits|Geh und rede mit den Geistern.
 mno_leave_amath_dollen_fortress|Vorerst zurückziehen.
 menu_gondor_reinforcement_event|^^^^^Die Leuchtfeuer von Gondor brennen, Minas Tirith ruft nach Hilfe!^^Die Herren der südlichen Lehen werden nun nach Norden marschieren und die Weiße Stadt gegen die einbrechende Finsternis verteidigen.
 mno_gondor_reinforcement_event_close|Schließen
@@ -426,12 +426,12 @@ mno_cb_mordor3|Haradrim
 mno_cb_mordor4|Ostlinge
 mno_cb_mordor5|Moria
 mno_cb_mordor6|Gundabad
-; mno_cb_mordor7|Rhûn
+mno_cb_mordor7|Rhûn
 mno_cb_mordor8|Korsaren
 mno_rescue_mission|Schleiche im Schutz der Nacht in das Lager des Zauberers.
 mno_next_rescue_scene_door|Weitergehen!
 mno_pick_troops1|Wähle Gefährten für die Mission, {reg0} ausgewählt
-menu_pick_troops|Wen willst du auf die Schleichmission mitnehmen? ^Nur deine flinkesten Truppen und Gefährten können dich hier begleiten. ^Als das Truppmitglied mit der besten Wildkunde-Fähigkeit, { reg65?rät {s1}:entscheidest du}, dass du bis zu {reg11} Begleiter mitnehmen kannst. ^^Du hast {reg0} Begleiter ausgewählt.
+menu_pick_troops|Wen willst du auf die Schleichmission mitnehmen? ^Nur deine flinksten Truppen und Gefährten können dich hier begleiten. ^Als das Truppmitglied mit der besten Wildkunde-Fähigkeit, {reg65?rät {s1}:entscheidest du}, dass du bis zu {reg11} Begleiter mitnehmen kannst. ^^Du hast {reg0} Begleiter ausgewählt.
 mno_go_forward|Beende die Gefährtenauswahl und fahre fort.
 menu_burial_mound|Du näherst dich dem Grabhügel von {s1} von {s2}, getötet im Kampf gegen {s28}. Er wurde mit den schartigen Waffen seiner gefallenen Feinde überhäuft.
 mno_pay_respects|Knie nieder und zoll deinen Respekt.
@@ -454,7 +454,7 @@ menu_animal_ambush_success|Die {s2} {reg0?fallen:fällt} vor dir wie die Fliegen
 menu_animal_ambush_fail|Die Tiere beißen und reißen an dir{reg0?,: und deine{reg2?n,:m,} Gefährten}, aber zum Glück konnten sie abgewehrt werden. Hoffentlich greifen sie nicht erneut an.
 menu_isengard_flooding|^^^^^@Du bist von toten Feinden und triumphierenden Verbündeten umgeben, einschließlich der Ents; sie brüllen, dröhnen und trompeten, bis Steine knacken und um den Turm von Orthanc umherfallen. Sie sind wie ein heulender Sturm, der Säulen bricht, Lawinen von Felsbrocken in die Schächte wirft und riesige Steinplatten wie Blätter in die Luft wirft... So etwas hast Du noch nie gesehen. Bregalad - oder Quickbeam, wie er auch genannt wird - kommt vorbei und bleibt nur stehen, um zu sagen: "{playername}! Vorsicht! Halte dich fern vom Turm - wir werden bald den Damm brechen und den Isen für kurze Zeit in dieses Tal bringen. Ich denke, es wird schwer für dich, hierzubleiben" Schnell befolgst du seinen Rat und eilst weg vom Orthanc.^^ Gegen Mitternacht füllt sich Isengart mit schwarzen kriechenden Strömen und Pfützen. Du kannst nicht anders, als zu zittern, als du Rauch und Dampf in großen Säulen aufsteigen siehst. Eine große Spirale aus Dampf um den Turm herum steigt auf und schlängelt sich, bis sie einem hohen Gipfel aus Wolken ähnelt, unten feurig und oben im Mondlicht. Der Zorn der Ents ist langsam, aber besitzt eine unwiderstehliche Kraft...
 mno_isengard_continue|Fortsetzen
-menu_build_your_scene|Du kannst hier dein eigenes Schlachtfeld erstellen, indem du eine der Optionen unten und den Editiermodus verwendest: Schalte ihn zunächst im M&B-Launcher ein, betritt eine der Scenen unten und drücke Strg+E. Du kannst fertige eigene Szenen (also die sco-Dateien im Ordner TLD/SceneObj) an das TLD-Entwicklerteam einreichen und vielleicht tauchen sie in späteren Versionen als Zufallsschlachtfelder auf!^^ Gib möglichst genau an, in welcher Gegend auf der Karte deine Szene auftauchen soll.^ Hinweise: Vermeide tiefes Wasser, steile Berge und andere unpassierbare Orte, es sei denn, du weißt, wie du die AI daran hinderst, diese zu betreten. Erstelle auch ein AI-Mesh.^ (Die Eintrittspunkte "Entry #0-1" sind für die Angreifer, #4 für die Verteidiger, lass #5-8 unverändert.)
+menu_build_your_scene|Du kannst hier dein eigenes Schlachtfeld erstellen, indem du eine der Optionen unten und den Editiermodus verwendest: Schalte ihn zunächst im M&B-Launcher ein, betritt eine der Szenen unten und drücke Strg+E. Du kannst fertige eigene Szenen (also die sco-Dateien im Ordner TLD/SceneObj) an das TLD-Entwicklerteam einreichen und vielleicht tauchen sie in späteren Versionen als Zufallsschlachtfelder auf!^^ Gib möglichst genau an, in welcher Gegend auf der Karte deine Szene auftauchen soll.^ Hinweise: Vermeide tiefes Wasser, steile Berge und andere unpassierbare Orte, es sei denn, du weißt, wie du die AI daran hinderst, diese zu betreten. Erstelle auch ein AI-Mesh.^ (Die Eintrittspunkte "Entry #0-1" sind für die Angreifer, #4 für die Verteidiger, lass #5-8 unverändert.)
 mno_scene1|Ebene groß (Datei scn_custom_1.sco)
 mno_scene2|Ebene Mittel (Datei scn_custom_2.sco)
 mno_scene3|Ebene klein (Datei scn_custom_3.sco)
@@ -463,8 +463,8 @@ mno_scene5|Steppe mittel (Datei scn_custom_5.sco)
 mno_scene6|Steppe klein (Datei scn_custom_6.sco)
 mno_scene7|Wald groß (Datei scn_custom_7.sco)
 mno_scene8|Wald mittel (Datei scn_custom_8.sco)
-mno_scene9|Wald klein ((Datei scn_custom_9.sco)
+mno_scene9|Wald klein (Datei scn_custom_9.sco)
 mno_back_3dot|Zurück...
 mno_back|Zurück.
 mno_next|Weiter...
-; mno_previous|Previous...
+mno_previous|Vorherige...

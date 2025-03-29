@@ -297,7 +297,7 @@ trp_c3_amroth_vet_squire_pl|Опытные оруженосцы Дол-Амро�
 trp_c4_amroth_knight|Рыцарь Дол-Амрота
 trp_c4_amroth_knight_pl|Рыцари Дол-Амрота
 trp_c5_amroth_vet_knight|Опытный рыцарь Дол-Амрота
-trp_c5_amroth_vet_knight_pl|Опытный рыцари Дол-Амрота
+trp_c5_amroth_vet_knight_pl|Опытные рыцари Дол-Амрота
 trp_c6_amroth_swan_knight|Лебединый рыцарь Дол-Амрота
 trp_c6_amroth_swan_knight_pl|Лебединые рыцари Дол-Амрота
 trp_c6_amroth_leader|Командир дол-амротского отряда
@@ -326,7 +326,7 @@ trp_a4_lorien_gal_archer|Галадримский лучник
 trp_a4_lorien_gal_archer_pl|Галадримские лучники
 trp_a5_lorien_gal_royal_archer|Меткий стрелок галадрим
 trp_a5_lorien_gal_royal_archer_pl|Меткие стрелки галадрим
-trp_i3_lorien_inf|Лориэнские пешие воины
+trp_i3_lorien_inf|Лориэнский пеший воин
 trp_i3_lorien_inf_pl|Лориэнские пешие воины
 trp_i4_lorien_gal_inf|Галадримский пехотинец
 trp_i4_lorien_gal_inf_pl|Галадримская пехота
@@ -764,64 +764,64 @@ trp_c4_mordor_num_horseman|Чёрный нуменорец-всадник
 trp_c4_mordor_num_horseman_pl|Чёрные нуменорцы-всадники
 trp_c5_mordor_num_knight|Элитный чёрный нуменорец-всадник
 trp_c5_mordor_num_knight_pl|Элитные чёрные нуменорцы-всадники
-; trp_greenwood_captain|Greenwood Captain
-; trp_greenwood_captain_pl|Greenwood Captains
-; trp_lorien_captain|Lothlorien Captain
-; trp_lorien_captain_pl|Lothlorien Captains
-; trp_riv_captain|Rivendell Elf Lord
-; trp_riv_captain_pl|Rivendell Elf Lords
-; trp_arnor_captain|Captain of Arnor
-; trp_arnor_captain_pl|Captains of Arnor
-; trp_arnor_ranger_captain|Ranger Captain of Arnor
-; trp_arnor_ranger_captain_pl|Ranger Captains of Arnor
+trp_greenwood_captain|Капитан Зеленолесья
+trp_greenwood_captain_pl|Капитаны Зеленолесья
+trp_lorien_captain|Лотлориэнский капитан
+trp_lorien_captain_pl|Лотлориэнские капитаны
+trp_riv_captain|Эльфийский лорд Ривенделла
+trp_riv_captain_pl|Эльфийские лорды Ривенделла
+trp_arnor_captain|Капитан Арнора
+trp_arnor_captain_pl|Капитаны Арнора
+trp_arnor_ranger_captain|Капитан арнорских рейнджеров
+trp_arnor_ranger_captain_pl|Капитаны арнорских рейнджеров
 trp_rohan_captain|Полководец Рохана
 trp_rohan_captain_pl|Полководцы Рохана
-; trp_beorning_captain|Beorning Chieftain
-; trp_beorning_captain_pl|Beorning Chieftains
-; trp_woodmen_captain|Woodmen Chieftain
-; trp_woodmen_captain_pl|Woodmen Chieftains
+trp_beorning_captain|Вождь Беорнингов
+trp_beorning_captain_pl|Вожди Беорнингов
+trp_woodmen_captain|Вождь лесовиков
+trp_woodmen_captain_pl|Вожди лесовиков
 trp_isen_captain|Полководец Изенгарда
 trp_isen_captain_pl|Полководцы Изенгарда
-; trp_isen_tracker_captain|Isengard Tracker Captain
-; trp_isen_tracker_captain_pl|Isengard Tracker Captains
+trp_isen_tracker_captain|Капитан следопытов Изенгарда
+trp_isen_tracker_captain_pl|Капитаны следопытов Изенгарда
 trp_mordor_uruk_captain|Мордорский урук-капитан
-; trp_mordor_uruk_captain_pl|Mordor Uruk Captains
+trp_mordor_uruk_captain_pl|Мордорские уруки-капитаны
 trp_mordor_captain|Полководец Мордора
 trp_mordor_captain_pl|Полководцы Мордора
 trp_umbar_captain|Умбарский капитан
-; trp_umbar_captain_pl|Captains of Umbar
-; trp_khand_captain|Variag War Chief
-; trp_khand_captain_pl|Variag War Chiefs
-; trp_rhun_captain|Rhun Chieftain
-; trp_rhun_captain_pl|Rhun Chieftains
-; trp_moria_captain|Uruk Chieftain of Moria
-; trp_moria_captain_pl|Uruk Chieftains of Moria
-; trp_dwarf_captain|Dwarf Captain
-; trp_dwarf_captain_pl|Dwarf Captains
+trp_umbar_captain_pl|Умбарские капитаны
+trp_khand_captain|Варягский Военный Вождь
+trp_khand_captain_pl|Варягские Военные Вожди
+trp_rhun_captain|Вождь Рун
+trp_rhun_captain_pl|Вожди Рун
+trp_moria_captain|Морийский урук-вождь
+trp_moria_captain_pl|Морийские уруки-вожди
+trp_dwarf_captain|Капитан Гномов
+trp_dwarf_captain_pl|Капитаны Гномов
 trp_dale_captain|Полководец Дэйла
-; trp_dale_captain_pl|Captains of Dale
-; trp_harad_captain|Haradrim Noble
-; trp_harad_captain_pl|Haradrim Nobles
+trp_dale_captain_pl|Полководцы Дэйла
+trp_harad_captain|Знатный Харадрим
+trp_harad_captain_pl|Знатные Харадримы
 trp_a5_dun_night_wolf2|Дунландский ночной волк
 trp_a5_dun_night_wolf2_pl|Дунландский ночной волк
 trp_dun_captain|Дунландский верховный вождь
 trp_dun_captain_pl|Дунландские верховные вожди
-; trp_gunda_captain|Gundabad Chieftain
-; trp_gunda_captain_pl|Gundabad Chieftains
+trp_gunda_captain|Гундабадский вождь
+trp_gunda_captain_pl|Гундабадские вожди
 trp_gondor_captain|Полководец Гондора
 trp_gondor_captain_pl|Гондорские полководцы
 trp_pel_captain|Командир пеларгирского отряда
 trp_pel_captain_pl|Командиры пеларгирских отрядов
-; trp_amroth_captain|Knight Captain of Dol Amroth
-; trp_amroth_captain_pl|Knights Captain of Dol Amroth
+trp_amroth_captain|Капитан Рыцарей Дол-Амрота
+trp_amroth_captain_pl|Капитаны Рыцарей Дол-Амрота
 trp_lam_captain|Командир ламедонского отряда
 trp_lam_captain_pl|Командиры ламедонских отрядов
 trp_loss_captain|Командир лоссарнахского отряда
 trp_loss_captain_pl|Командиры лоссарнахских отряда
 trp_pinnath_captain|Командир пиннат-гелинского отряда
 trp_pinnath_captain_pl|Командиры пиннат-гелинских отрядов
-; trp_blackroot_captain|Captain of Blackroot Vale
-; trp_blackroot_captain_pl|Captains of Blackroot Vale
+trp_blackroot_captain|Капитан Долины Чёрного Корня
+trp_blackroot_captain_pl|Капитаны Долины Чёрного Корня
 trp_ithilien_captain|Командир отряда итилиэнских рейнджеров
 trp_ithilien_captain_pl|Командиры отрядов итилиэнских рейнджеров
 trp_brigand|Разбойник
@@ -977,11 +977,11 @@ trp_knight_1_5|Дуинхир
 trp_knight_1_6|Хирлуин Прекрасный
 trp_knight_1_7|Фарамир
 trp_knight_1_8|Форлонг Толстый
-; trp_knight_1_9|Theodred
+trp_knight_1_9|Теодред
 trp_knight_1_10|Эркенбранд
 trp_knight_1_11|Эльфхельм
 trp_knight_1_12|Хама
-; trp_knight_1_13|Grimbold
+trp_knight_1_13|Гримбольд
 trp_knight_1_14|Эомер
 trp_knight_1_15|Углук
 trp_knight_1_16|Маухур
@@ -1377,7 +1377,7 @@ trp_elder_mmorgul|Моргульский управитель
 trp_elder_mmorgul_pl|зловещий город
 trp_elder_cungol|Лагерный управитель
 trp_elder_cungol_pl|лагерь
-; trp_elder_isengard|Isengard Overseer
+trp_elder_isengard|Смотритель Изенгарда
 trp_elder_isengard_pl|город
 trp_elder_cgaladhon|Лориэнский хранитель обычаев
 trp_elder_cgaladhon_pl|лесную крепость эльфов
@@ -1395,7 +1395,7 @@ trp_elder_beorn|Старейшина Асбеорн
 trp_elder_beorn_pl|деревню
 trp_elder_harad|Харадский управитель лагеря
 trp_elder_harad_pl|лагерь
-; trp_elder_rhun|Rhun High Priest
+trp_elder_rhun|Верховный жрец Руна
 trp_elder_rhun_pl|лагерь
 trp_elder_khand|Хандский управитель лагеря
 trp_elder_khand_pl|лагерь
@@ -1532,15 +1532,15 @@ trp_start_quest_mordor_scout|Мордорский проводник
 trp_start_quest_mordor_scout_pl|Мордорские проводники
 trp_start_quest_beorning|Беорнингский Берсерк Каррока
 trp_start_quest_beorning_pl|Беорнингские Берсерки Каррока
-; trp_black_shield|Amath Dollen
-; trp_black_shield_bandit|Amath Dollen's Bandit
-; trp_black_shield_bandit_pl|Amath Dollen's Bandits
-; trp_black_shield_scout|Amath Dollen's Scout
-; trp_black_shield_scout_pl|Amath Dollen's Scouts
-; trp_black_shield_guard|Amath Dollen's Guard
-; trp_black_shield_guard_pl|Amath Dollen's Guards
-; trp_dorwinion_spirit_leader|Spirit
-; trp_dorwinion_spirit|Lesser Spirit
+trp_black_shield|Амат Доллен
+trp_black_shield_bandit|Бандит Амат Доллен
+trp_black_shield_bandit_pl|Бандиты Амат Доллен
+trp_black_shield_scout|Разведчик Амат Доллен
+trp_black_shield_scout_pl|Разведчики Амат Доллен
+trp_black_shield_guard|Охранник Амат Доллен
+trp_black_shield_guard_pl|Охранники Амат Доллен
+trp_dorwinion_spirit_leader|Дух
+trp_dorwinion_spirit|Меньший дух
 trp_i6_beorning_bear_warrior|Воин-Медведь
 trp_i6_beorning_bear_warrior_pl|Воины-Медведи
 trp_a5_dun_night_wolf|Дунландский ночной волк
@@ -1566,7 +1566,7 @@ trp_c5_rhovanion_noble_pl|Знатная конница Рованиона
 trp_npc18|Турмбату
 trp_npc19|Хейдрек
 trp_npc20|Зигурфель
-; trp_npc21|Berta
+trp_npc21|Берта
 trp_werewolf|Оборотень
 trp_werewolf_pl|Оборотни
 trp_moria_troll|Пещерный Тролль

@@ -61,8 +61,8 @@ qst_troublesome_bandits|ตามล่า Goblins เจ้าปัญหา
 qst_troublesome_bandits_text|{s9} จาก {s4} ขอให้คุณตามล่า Goblins เจ้าปัญหาในบริเวณใกล้เคียงเมือง
 qst_deal_with_looters|จัดการกับเผ่า Orcs
 qst_deal_with_looters_text|ผู้อาวุโสของ {s4} ขอให้คุณจัดการกับชนเผ่า Orc บริเวณรอบๆนี้ {s4}
-; qst_deal_with_night_bandits|Deal with Night Bandits
-; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
+qst_deal_with_night_bandits|จัดการกับพวก Night Bandits
+qst_deal_with_night_bandits_text|ผู้อาวุโสแห่ง {s14} ได้ร้องขอให้เจ้าจัดการกับพวก Night Bandits ที่ {s14}.
 qst_deliver_food|จัดหา {s3} ด้วย {reg5} หน่วยของอาหาร
 qst_deliver_food_text|{s9} จาก {s3} ขอให้คุณนำอาหาร {reg5} หน่วยมาให้เขาใน 10 วัน
 qst_deliver_iron|จัดหา {s3} ด้วย {reg5} หน่วยของ {s6}
@@ -77,5 +77,5 @@ qst_deliver_gift|ส่ง {s4} จาก {s1} จาก {s2} ถึง {s3}
 qst_deliver_gift_text|คุณได้ร้องขอให้ส่ง {s4} จาก {s1} ถึง {s3} จาก {s2}
 qst_ring_hunters|นักล่าแหวน
 qst_ring_hunters2|นักล่าแหวน - เสร็จสมบูรณ์
-qst_deliver_message_hobbit|ว่าด้วยเรื่องฮอบบิท
+qst_deliver_message_hobbit|ว่าด้วยเรื่อง Hobbits
 qst_quests_end_text|.

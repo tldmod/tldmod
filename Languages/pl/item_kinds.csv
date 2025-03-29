@@ -65,9 +65,9 @@ itm_wargarmored_2b|Opancerzony Warg
 itm_wargarmored_2c|Opancerzony Warg
 itm_wargarmored_3a|Opancerzony Warg
 itm_warg_reward|Olbrzymi Warg
-; itm_animal_big|Big Animal
-; itm_animal_small|Small Animal
-; itm_troll_weapon_long|Giant Halberd
+itm_animal_big|Duże Zwierzę
+itm_animal_small|Małe Zwierzę
+itm_troll_weapon_long|Ogromna halabarda
 itm_troll_weapon_dmg|Wielka Maczuga
 itm_tree_trunk_club_a|Pień
 itm_giant_mace|Wielka Maczuga
@@ -139,8 +139,8 @@ itm_free_dunedain_helm_b|Arnorski Hełm
 itm_arnor_helm_c|Arnorski Zdobiony Hełm
 itm_arnor_helm_b|Arnorski Hełm
 itm_arnor_helm_a|Lekki hełm Arnoru
-; itm_arnor_light_a|Dunedain Ranger Jerkin
-; itm_arnor_light_b|Dunedain Ranger Mail
+itm_arnor_light_a|Dunedański Kaftan Strażnika
+itm_arnor_light_b|Dunedańska Kolczuga Strażnika
 itm_arnor_med_a|Płaszcz Strażnika Dunedainów
 itm_arnor_med_b|Kolczuga z Dunedainów
 itm_arnor_heavy|Arnorska Wspaniała Zbroja
@@ -354,9 +354,9 @@ itm_orc_axe|Orkowy Topór
 itm_orc_two_handed_axe|Orkowski Wielki Topór
 itm_orc_throwing_axes|Orkowe Toporki do Rzucania
 itm_orc_bow|Orkowy Łuk
-; itm_orc_shield_a|Simple Shield
-; itm_orc_shield_b|Fur Shield
-; itm_orc_shield_c|Fur Tower Shield
+itm_orc_shield_a|Prosta Tarcza
+itm_orc_shield_b|Skórzana Tarcza
+itm_orc_shield_c|Skórzana Tarcza Wieży
 itm_mordor_orc_shield_a|Mordorska Orkowa Tarcza
 itm_mordor_orc_shield_b|Mordorska Orkowa Tarcza
 itm_mordor_orc_shield_c|Mordorska Orkowa Tarcza
@@ -439,8 +439,8 @@ itm_dunland_chieftain|Zbroja Dunlandzkiego Wodza
 itm_dun_helm_a|Dunlandzka Wilcza Czapa
 itm_dun_helm_b|Dunladzka Futrzana Czapa
 itm_dun_helm_c|Dunlandzki Wspaniały Hełm
-; itm_dun_shield_a|Dunnish Roundshield
-; itm_dun_shield_b|Dunnish Oval Shield
+itm_dun_shield_a|Dunlandzka Okrągła Tarcza
+itm_dun_shield_b|Dunlandzka Owalna Tarcza
 itm_dun_berserker|Dunlandzki Miecz Herszta
 itm_dunnish_antler_axe|Dunlandzki Topór z Poroża
 itm_dunnish_war_axe|Dunlandzki Topór Bojowy
@@ -499,9 +499,9 @@ itm_mirkwood_helm_d|Królewski Hełm Leśnych Elfów
 itm_woodelf_leather_boots|Skórzane buty Leśnych Elfów
 itm_mirkwood_boots|Buty z Mrocznej Puszczy
 itm_harad_tunic|Haradzka Szata
-; itm_harad_padded|Harad Padded Jerkin
-; itm_harad_lamellar|Harad Scale Vest
-; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
+itm_harad_padded|Pikowany Kaftan Haradu
+itm_harad_lamellar|Pancerz Lamelkowy Haradu
+itm_harad_heavy_lamellar|Ciężki Pancerz Lamelkowy Haradu
 itm_harad_heavy|Pancerz Harasjala
 itm_harad_pectoral|Napierśnik Harada
 itm_black_snake_armor|Pancerz Maranka
@@ -543,7 +543,7 @@ itm_desert_boots|Pustynne Buty
 itm_harad_leather_greaves|Skórzane Nagolenniki Haradu
 itm_harad_scale_greaves|Haradzkie Nagolenniki
 itm_harad_lamellar_greaves|Usztywniające Nagolenniki Haradu
-; itm_camel|Harad Camel
+itm_camel|Wielbłąd Haradu
 itm_khand_inf_helm_a|Hełm z Khandu
 itm_khand_inf_helm_b|Hełm z Khandu
 itm_khand_inf_helm_c1|Kulisty Hełm z Khandu
@@ -706,7 +706,7 @@ itm_dwarf_helm_round|Krasnoludzki Okrągły Hełm
 itm_dwarf_helm_sallet|Krasnoludzki Sallet
 itm_dwarf_armor_d|Zbroja Lamelkowa Żelaznych Wzgórz
 itm_dwarf_armor_a|Ereborska Kolczuga z Płaszczem
-; itm_leather_dwarf_armor|Erebor Padded Coat
+itm_leather_dwarf_armor|Podszywana Przeszywanica Ereboru
 itm_dwarf_armor_b|Ereborska Kolczuga z Tuniką
 itm_leather_dwarf_armor_b|Krasnoludzki Podszywany Kaftan
 itm_dwarf_armor_c|Zbroja Łuskowa z Ereboru
@@ -789,21 +789,21 @@ itm_wolf|Wilk
 itm_werewolf|Wilkołak
 itm_thrush_reward|Drozd
 itm_gauntlets_reward|Żelazne Pięści
-; itm_gondor_custom|Custom Gondor
+itm_gondor_custom|Niestandardowy Gondoru
 itm_stones_siege|Kamienie Oblężnicze
 itm_beorn_axe_no_attack|Topór Beorningów
-; itm_tabard_b_wb|Tabard
-; itm_nobleman_outfit_b_new_wb|Nobleman Outfit
-; itm_peasant_man_a_wb|Peasant Outfit
+itm_tabard_b_wb|Tabard
+itm_nobleman_outfit_b_new_wb|Strój Szlachcica
+itm_peasant_man_a_wb|Strój Chłopa
 itm_leather_jerkin_wb|Leather Jerkin
 itm_white_tunic_c_wb|Kurtka
-; itm_white_tunic_a_wb|White Tunic
+itm_white_tunic_a_wb|Biała Tunika
 itm_red_tunic_wb|Czerwona Tunika
 itm_fur_coat_wb|Płaszcz z Dale
-; itm_fur_hat_a_new_wb|Fur Hat
-; itm_noel_hat_a_wb|Fur Hat
-; itm_peasant_dress_b_new_wb|Blue Dress
-; itm_sarranid_lady_dress_wb|Blue Dress
+itm_fur_hat_a_new_wb|Skórzany Kapelusz
+itm_noel_hat_a_wb|Skórzany Kapelusz
+itm_peasant_dress_b_new_wb|Niebieska Sukienka
+itm_sarranid_lady_dress_wb|Niebieska Sukienka
 itm_sar_robe_b_wb|Toga
 itm_black_dress_wb|Czarna Suknia
 itm_blackwhite_dress_wb|Suknia Damy
@@ -818,24 +818,24 @@ itm_robe_generic_dress_wb|Toga
 itm_wimple_a_wb|Czepek
 itm_wimple_with_veil_wb|Czepek
 itm_fine_hat_wb|Porządny Kapelusz
-; itm_rohan_tunic_a_wb|Rohan Tunic
-; itm_rohan_tunic_b_wb|Rohan Tunic
+itm_rohan_tunic_a_wb|Tunika Rohanu
+itm_rohan_tunic_b_wb|Tunika Rohanu
 itm_denethor_robe|Porządne Ubranie
-; itm_civilian_hammer|Hammer
-; itm_civilian_woodaxe_1h|Axe
-; itm_civilian_woodaxe_2h|Heavy Axe
-; itm_civilian_war_mattock|Mattock
-; itm_civilian_great_mattock|Mattock
-; itm_civilian_adz|Mattock
-; itm_civilian_pickaxe|Mattock
-; itm_civilian_shovel|Shovel
-; itm_civilian_carry_wood_heap|Fire Wood
-; itm_civilian_carry_wood|Wood
-; itm_civilian_carry_amphora|Amphora
-; itm_civilian_carry_sack|Sack
-; itm_civilian_carry_basket|Basket
-; itm_civilian_carry_honey|Honey
-; itm_civilian_carry_oil|Oil
-; itm_civilian_carry_wood2|Wood
-; itm_work_basket|Basket
-; itm_work_basket_2|Basket
+itm_civilian_hammer|Młot
+itm_civilian_woodaxe_1h|Topór
+itm_civilian_woodaxe_2h|Ciężki Topór
+itm_civilian_war_mattock|Oskard
+itm_civilian_great_mattock|Oskard
+itm_civilian_adz|Oskard
+itm_civilian_pickaxe|Oskard
+itm_civilian_shovel|Łopata
+itm_civilian_carry_wood_heap|Drewno opałowe
+itm_civilian_carry_wood|Drewno
+itm_civilian_carry_amphora|Amfora
+itm_civilian_carry_sack|Worek
+itm_civilian_carry_basket|Kosz
+itm_civilian_carry_honey|Miód
+itm_civilian_carry_oil|Olej
+itm_civilian_carry_wood2|Drewno
+itm_work_basket|Kosz
+itm_work_basket_2|Kosz

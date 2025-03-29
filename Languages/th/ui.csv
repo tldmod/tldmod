@@ -55,13 +55,13 @@ ui_crouch|หมอบ
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|คุณแน่ใจหรือไม่ว่าต้องการนำเข้าตัวละคร?
-; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: Ironflesh, Power Strike, Power Throw, Power Draw.
+ui_explanation_strength|ความแข็งแกร่ง: ทุกแต้มที่เพิ่มขึ้นจะให้ +1 แต้มพลังชีวิต นอกจากนี้ สกิลต่อไปนี้จะไม่สามารถพัฒนาเกิน 1/3 ของค่าความแข็งแกร่งได้: Ironflesh, Power Strike, Power Throw, Power Draw.
 ui_explanation_agility|Agility : แต่ละจุดให้คะแนนอาวุธห้าคะแนนและเพิ่มความเร็วอาวุธ 0.5% ทักษะต่อไปนี้ไม่สามารถพัฒนาเกิน 1/3 ของ Agility: Weapon Master, Shield, Athletics, Riding, Mounted Archery, Looting
-; ui_explanation_intelligence|Intelligence: (Wisdom) The deep understanding of nature and crafts. Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Bargainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, First Aid, and Wildcraft.
+ui_explanation_intelligence|สติปัญญา Wisdom : ความเข้าใจลึกซึ้งในธรรมชาติและศาสตร์แห่งงานฝีมือ ทุกแต้มที่เพิ่มขึ้นจะให้แต้มสกิลพิเศษทันที 1 แต้ม และ ช่วยเพิ่มค่าประสบการณ์ (XP) เล็กน้อยในบางสถานการณ์ สกิลต่อไปนี้จะไม่สามารถพัฒนาเกิน 1/3 ของค่าความฉลาดได้: Bargainer, Tracking, Tactics, Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, First Aid, และ Wildcraft.
 ; ui_explanation_charisma|Charisma: (Will) The power to inspire or dominate. Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Trainer, Leadership.
 ui_delivered_number_damage|ได้รับความเสียหาย%d
 ui_mission_losses_killed|ฆ่า :
-; ui_party_losses|%s  : %d wounded --- %d killed of %d.
+ui_party_losses|%s  : %d บาดเจ็บ ---  %d เสียชีวิต จากทั้งหมด %d.
 ui_following|กำลังติดตาม
 ui_accompanying|ที่มาพร้อมกับ
 ui_dumping_value_items|%d จะหายไปตลอดกาล คุณแน่ใจหรือไม่?

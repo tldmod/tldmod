@@ -65,9 +65,9 @@ itm_wargarmored_2b|Gepanzerter Warg
 itm_wargarmored_2c|Gepanzerter Warg
 itm_wargarmored_3a|Gepanzerter Warg
 itm_warg_reward|Gewaltiger Warg
-; itm_animal_big|Big Animal
-; itm_animal_small|Small Animal
-; itm_troll_weapon_long|Giant Halberd
+itm_animal_big|Großtier
+itm_animal_small|Kleintier
+itm_troll_weapon_long|Riesige Hellebarde
 itm_troll_weapon_dmg|Gewaltiger Streitkolben
 itm_tree_trunk_club_a|Baumstamm
 itm_giant_mace|Gewaltiger Streitkolben
@@ -543,7 +543,7 @@ itm_desert_boots|Wüstenstiefel
 itm_harad_leather_greaves|Lederbeinschienen aus Harad
 itm_harad_scale_greaves|Beinschienen aus Harad
 itm_harad_lamellar_greaves|Beinschienen aus Harad
-; itm_camel|Harad Camel
+itm_camel|Kamel aus Harad
 itm_khand_inf_helm_a|Helm aus Khand
 itm_khand_inf_helm_b|Helm aus Khand
 itm_khand_inf_helm_c1|Rundhelm aus Khand
@@ -706,7 +706,7 @@ itm_dwarf_helm_round|Zwergische Eisenhaube
 itm_dwarf_helm_sallet|Zwergischer Schaller
 itm_dwarf_armor_d|Schuppenrock aus den Eisenbergen
 itm_dwarf_armor_a|Waffenrock vom Erebor
-; itm_leather_dwarf_armor|Erebor Padded Coat
+itm_leather_dwarf_armor|Zwergischer Polsterrock
 itm_dwarf_armor_b|Ringwams vom Erebor
 itm_leather_dwarf_armor_b|Zwergisches Polsterwams
 itm_dwarf_armor_c|Schuppenrock vom Erebor
@@ -789,21 +789,21 @@ itm_wolf|Wolf
 itm_werewolf|Werwolf
 itm_thrush_reward|Drossel
 itm_gauntlets_reward|Eisenfaust
-; itm_gondor_custom|Custom Gondor
+itm_gondor_custom|Custom Gondor
 itm_stones_siege|Wurfsteine
 itm_beorn_axe_no_attack|Axt der Beorninger
-; itm_tabard_b_wb|Tabard
-; itm_nobleman_outfit_b_new_wb|Nobleman Outfit
-; itm_peasant_man_a_wb|Peasant Outfit
+itm_tabard_b_wb|Tappert
+itm_nobleman_outfit_b_new_wb|Kleidung eines Edelmanns
+itm_peasant_man_a_wb|Bauernkleidung
 itm_leather_jerkin_wb|Lederwams
 itm_white_tunic_c_wb|Tunika mit Weste
-; itm_white_tunic_a_wb|White Tunic
+itm_white_tunic_a_wb|Weiße Tunika
 itm_red_tunic_wb|Rote Tunika
 itm_fur_coat_wb|Gewand aus Thal
-; itm_fur_hat_a_new_wb|Fur Hat
-; itm_noel_hat_a_wb|Fur Hat
-; itm_peasant_dress_b_new_wb|Blue Dress
-; itm_sarranid_lady_dress_wb|Blue Dress
+itm_fur_hat_a_new_wb|Pelzmütze
+itm_noel_hat_a_wb|Pelzmütze
+itm_peasant_dress_b_new_wb|Blaues Kleid
+itm_sarranid_lady_dress_wb|Blaues Kleid
 itm_sar_robe_b_wb|Robe
 itm_black_dress_wb|Schwarzes Kleid
 itm_blackwhite_dress_wb|Damenkleid
@@ -818,24 +818,24 @@ itm_robe_generic_dress_wb|Robe
 itm_wimple_a_wb|Wimpel
 itm_wimple_with_veil_wb|Wimpel
 itm_fine_hat_wb|Vornehmer Hut
-; itm_rohan_tunic_a_wb|Rohan Tunic
-; itm_rohan_tunic_b_wb|Rohan Tunic
+itm_rohan_tunic_a_wb|Tunika Rohans
+itm_rohan_tunic_b_wb|Tunika Rohans
 itm_denethor_robe|Vornehme Kleidung
-; itm_civilian_hammer|Hammer
-; itm_civilian_woodaxe_1h|Axe
-; itm_civilian_woodaxe_2h|Heavy Axe
-; itm_civilian_war_mattock|Mattock
-; itm_civilian_great_mattock|Mattock
-; itm_civilian_adz|Mattock
-; itm_civilian_pickaxe|Mattock
-; itm_civilian_shovel|Shovel
-; itm_civilian_carry_wood_heap|Fire Wood
-; itm_civilian_carry_wood|Wood
-; itm_civilian_carry_amphora|Amphora
-; itm_civilian_carry_sack|Sack
-; itm_civilian_carry_basket|Basket
-; itm_civilian_carry_honey|Honey
-; itm_civilian_carry_oil|Oil
-; itm_civilian_carry_wood2|Wood
-; itm_work_basket|Basket
-; itm_work_basket_2|Basket
+itm_civilian_hammer|Hammer
+itm_civilian_woodaxe_1h|Axt
+itm_civilian_woodaxe_2h|Schwere Axt
+itm_civilian_war_mattock|Hacke
+itm_civilian_great_mattock|Hacke
+itm_civilian_adz|Hacke
+itm_civilian_pickaxe|Hacke
+itm_civilian_shovel|Schaufel
+itm_civilian_carry_wood_heap|Feuerholz
+itm_civilian_carry_wood|Holz
+itm_civilian_carry_amphora|Amphore
+itm_civilian_carry_sack|Sack
+itm_civilian_carry_basket|Korb
+itm_civilian_carry_honey|Honig
+itm_civilian_carry_oil|Öl
+itm_civilian_carry_wood2|Holz
+itm_work_basket|Korb
+itm_work_basket_2|Korb

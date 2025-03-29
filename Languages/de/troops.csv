@@ -764,64 +764,64 @@ trp_c4_mordor_num_horseman|Reiter der Schwarzen Numenorer
 trp_c4_mordor_num_horseman_pl|Reiter der Schwarzen Numenorer
 trp_c5_mordor_num_knight|Pferdeherr der Schwarzen Numenorer
 trp_c5_mordor_num_knight_pl|Pferdeherren der Schwarzen Numenorer
-; trp_greenwood_captain|Greenwood Captain
-; trp_greenwood_captain_pl|Greenwood Captains
-; trp_lorien_captain|Lothlorien Captain
-; trp_lorien_captain_pl|Lothlorien Captains
-; trp_riv_captain|Rivendell Elf Lord
-; trp_riv_captain_pl|Rivendell Elf Lords
-; trp_arnor_captain|Captain of Arnor
-; trp_arnor_captain_pl|Captains of Arnor
-; trp_arnor_ranger_captain|Ranger Captain of Arnor
-; trp_arnor_ranger_captain_pl|Ranger Captains of Arnor
+trp_greenwood_captain|Hauptmann aus dem Grünwald
+trp_greenwood_captain_pl|Hauptmänner aus dem Grünwald
+trp_lorien_captain|Hauptmann von Lothlorien
+trp_lorien_captain_pl|Hauptmänner von Lothlorien
+trp_riv_captain|Elbenfürst aus Bruchtal
+trp_riv_captain_pl|Elbenfürsten aus Bruchtal
+trp_arnor_captain|Hauptmann von Arnor
+trp_arnor_captain_pl|Hauptmänner von Arnor
+trp_arnor_ranger_captain|Hauptmann der Waldläufer von Arnor
+trp_arnor_ranger_captain_pl|Hauptmänner der Waldläufer von Arnor
 trp_rohan_captain|Heerführer von Rohan
 trp_rohan_captain_pl|Heerführer von Rohan
-; trp_beorning_captain|Beorning Chieftain
-; trp_beorning_captain_pl|Beorning Chieftains
-; trp_woodmen_captain|Woodmen Chieftain
-; trp_woodmen_captain_pl|Woodmen Chieftains
+trp_beorning_captain|Kriegshäuptling der Beorninger
+trp_beorning_captain_pl|Kriegshäuptlinge der Beorninger
+trp_woodmen_captain|Häuptling der Waldmenschen
+trp_woodmen_captain_pl|Häuptlinge der Waldmenschen
 trp_isen_captain|Heerführer von Isengart
 trp_isen_captain_pl|Heerführer von Isengart
-; trp_isen_tracker_captain|Isengard Tracker Captain
-; trp_isen_tracker_captain_pl|Isengard Tracker Captains
+trp_isen_tracker_captain|Späherhauptmann von Isengart
+trp_isen_tracker_captain_pl|Späherhauptmänner von Isengart
 trp_mordor_uruk_captain|Urukhauptmann aus Mordor
-; trp_mordor_uruk_captain_pl|Mordor Uruk Captains
+trp_mordor_uruk_captain_pl|Urukhauptmänner aus Mordor
 trp_mordor_captain|Heerführer von Mordor
 trp_mordor_captain_pl|Heerführer von Mordor
 trp_umbar_captain|Kapitän von Umbar
-; trp_umbar_captain_pl|Captains of Umbar
-; trp_khand_captain|Variag War Chief
-; trp_khand_captain_pl|Variag War Chiefs
-; trp_rhun_captain|Rhun Chieftain
-; trp_rhun_captain_pl|Rhun Chieftains
-; trp_moria_captain|Uruk Chieftain of Moria
-; trp_moria_captain_pl|Uruk Chieftains of Moria
-; trp_dwarf_captain|Dwarf Captain
-; trp_dwarf_captain_pl|Dwarf Captains
+trp_umbar_captain_pl|Kapitäne von Umbar
+trp_khand_captain|Variag-Kriegshäuptling
+trp_khand_captain_pl|Variag-Kriegshäuptlinge
+trp_rhun_captain|Häuptling aus Rhun
+trp_rhun_captain_pl|Häuptlinge aus Rhun
+trp_moria_captain|Uruk-Häuptling von Moria
+trp_moria_captain_pl|Uruk-Häuptlinge von Moria
+trp_dwarf_captain|Hauptmann der Zwerge
+trp_dwarf_captain_pl|Hauptmänner der Zwerge
 trp_dale_captain|Hauptmann von Thal
-; trp_dale_captain_pl|Captains of Dale
-; trp_harad_captain|Haradrim Noble
-; trp_harad_captain_pl|Haradrim Nobles
+trp_dale_captain_pl|Hauptmänner von Thal
+trp_harad_captain|Hauptmann der Haradrim
+trp_harad_captain_pl|Hauptmänner der Haradrim
 trp_a5_dun_night_wolf2|Nachtwolf aus Dunland
 trp_a5_dun_night_wolf2_pl|Nachtwolf aus Dunland
 trp_dun_captain|Hetmann der Dunländer
 trp_dun_captain_pl|Hetmänner der Dunländer
-; trp_gunda_captain|Gundabad Chieftain
-; trp_gunda_captain_pl|Gundabad Chieftains
-trp_gondor_captain|Heermeister von Gondor
+trp_gunda_captain|Kriegshäuptling von Gundabad
+trp_gunda_captain_pl|Kriegshäuptlinge von Gundabad
+trp_gondor_captain|Hauptmann von Gondor
 trp_gondor_captain_pl|Hauptmänner von Gondor
 trp_pel_captain|Hauptmann von Pelargir
 trp_pel_captain_pl|Hauptmänner von Pelargir
-; trp_amroth_captain|Knight Captain of Dol Amroth
-; trp_amroth_captain_pl|Knights Captain of Dol Amroth
+trp_amroth_captain|Ritterhauptmann von Dol Amroth
+trp_amroth_captain_pl|Ritterhauptmänner von Dol Amroth
 trp_lam_captain|Hauptmann von Lamedon
 trp_lam_captain_pl|Hauptmänner von Lamedon
 trp_loss_captain|Hauptmann von Lossarnach
 trp_loss_captain_pl|Hauptmänner von Lossarnach
 trp_pinnath_captain|Hauptmann der Pinnath Gelin
 trp_pinnath_captain_pl|Hauptmänner der Pinnath Gelin
-; trp_blackroot_captain|Captain of Blackroot Vale
-; trp_blackroot_captain_pl|Captains of Blackroot Vale
+trp_blackroot_captain|Hauptmann aus dem Schwarzgrundtal
+trp_blackroot_captain_pl|Hauptmänner aus dem Schwarzgrundtal
 trp_ithilien_captain|Hauptmann der Waldläufer
 trp_ithilien_captain_pl|Hauptmänner der Waldläufer
 trp_brigand|Brigant
@@ -977,7 +977,7 @@ trp_knight_1_5|Duinhir
 trp_knight_1_6|Hirluin der Schöne
 trp_knight_1_7|Faramir
 trp_knight_1_8|Forlong der Dicke
-; trp_knight_1_9|Theodred
+trp_knight_1_9|Theodred
 trp_knight_1_10|Erkenbrand
 trp_knight_1_11|Elfhelm
 trp_knight_1_12|Hama
@@ -1377,7 +1377,7 @@ trp_elder_mmorgul|Aufseher von Minas Morgul
 trp_elder_mmorgul_pl|der düsteren Stadt
 trp_elder_cungol|Lageraufseher
 trp_elder_cungol_pl|dem Lager
-; trp_elder_isengard|Isengard Overseer
+trp_elder_isengard|Aufseher von Isengard
 trp_elder_isengard_pl|der Stadt
 trp_elder_cgaladhon|Weiser von Lorien
 trp_elder_cgaladhon_pl|der Waldfestung der Elben
@@ -1532,15 +1532,15 @@ trp_start_quest_mordor_scout|Führer aus Mordor
 trp_start_quest_mordor_scout_pl|Führer aus Mordor
 trp_start_quest_beorning|Berserker vom Carrock
 trp_start_quest_beorning_pl|Berserker vom Carrock
-; trp_black_shield|Amath Dollen
-; trp_black_shield_bandit|Amath Dollen's Bandit
-; trp_black_shield_bandit_pl|Amath Dollen's Bandits
-; trp_black_shield_scout|Amath Dollen's Scout
-; trp_black_shield_scout_pl|Amath Dollen's Scouts
-; trp_black_shield_guard|Amath Dollen's Guard
-; trp_black_shield_guard_pl|Amath Dollen's Guards
-; trp_dorwinion_spirit_leader|Spirit
-; trp_dorwinion_spirit|Lesser Spirit
+trp_black_shield|Amath Dollen
+trp_black_shield_bandit|Räuber aus Amath Dollen
+trp_black_shield_bandit_pl|Räuber aus Amath Dollen
+trp_black_shield_scout|Späher aus Amath Dollen
+trp_black_shield_scout_pl|Späher aus Amath Dollen
+trp_black_shield_guard|Wache aus Amath Dollen
+trp_black_shield_guard_pl|Wachen aus Amath Dollen
+trp_dorwinion_spirit_leader|Geist
+trp_dorwinion_spirit|Niederer Geist
 trp_i6_beorning_bear_warrior|Bärenkrieger
 trp_i6_beorning_bear_warrior_pl|Bärenkrieger
 trp_a5_dun_night_wolf|Nachtwolf aus Dunland
@@ -1566,7 +1566,7 @@ trp_c5_rhovanion_noble_pl|Edelmänner aus Rhovanion
 trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel
-; trp_npc21|Berta
+trp_npc21|Berta
 trp_werewolf|Werwolf
 trp_werewolf_pl|Werwölfe
 trp_moria_troll|Höhlentroll
