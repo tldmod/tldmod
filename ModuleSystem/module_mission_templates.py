@@ -2868,7 +2868,7 @@ mission_templates = [ # not used in game
     (try_end)]),
       
   (ti_before_mission_start, 0, 0, [],[(team_set_relation, 0, 1, -1),(team_set_relation, 0, 2, 0),(team_set_relation, 1, 2, 0)]),
-  (0, 0, ti_once, [],[(call_script, "script_music_set_situation_with_culture", mtf_sit_arena)]),
+  (0, 0, ti_once, [],[(call_script, "script_music_set_situation_with_culture", mtf_sit_fight)]),
 
     (0.3, 0, 0, [], [ # spectators cheer
     (try_for_agents,":agent"),
@@ -5929,7 +5929,7 @@ mission_templates = [ # not used in game
     ],tld_common_wb_muddy_water+[
 	(0, 0, ti_once, [], [(eq, "$g_tld_training_mode", abm_gauntlet),(start_presentation, "prsnt_gauntlet")]),
 	(0, 0, ti_once, [], [#(play_sound, "snd_arena_ambiance", sf_looping),
-							(call_script, "script_music_set_situation_with_culture", mtf_sit_arena)]),
+							(call_script, "script_music_set_situation_with_culture", mtf_sit_fight)]),
 	# terrible workaround for the buggy? add_visitors_to_current_scene
 	(0.2, 0, 0, [(eq, "$g_tld_training_mode", abm_gauntlet)],
 		[(store_add, ":enemies", "$g_tld_training_wave", 2),
@@ -6192,7 +6192,7 @@ mission_templates = [ # not used in game
 		(try_end)]),
 			
 	(ti_before_mission_start, 0, 0, [],[(team_set_relation, 0, 1, -1),(team_set_relation, 0, 2, 0),(team_set_relation, 1, 2, 0)]),
-	(0, 0, ti_once, [],[(call_script, "script_music_set_situation_with_culture", mtf_sit_arena)]),
+	(0, 0, ti_once, [],[(call_script, "script_music_set_situation_with_culture", mtf_sit_fight)]),
     (0.3, 0, 0, [], [ # spectators cheer
 		(try_for_agents,":agent"),
 			(agent_get_entry_no,reg1,":agent"),(neq,reg1,0),(neq,reg1,1), # main guys do not cheer
@@ -9349,7 +9349,7 @@ tld_remove_riderless_animals,
       
       (0, 0, ti_once, [],
         [
-          (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
+          (call_script, "script_music_set_situation_with_culture", mtf_sit_fight),
       ]),
       
       (1, 4, ti_once, [
