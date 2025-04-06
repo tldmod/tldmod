@@ -1645,7 +1645,8 @@ mission_templates = [ # not used in game
                (check_quest_active, "qst_hunt_down_fugitive"),
                (neg|check_quest_succeeded, "qst_hunt_down_fugitive"),
                (neg|check_quest_failed, "qst_hunt_down_fugitive"),
-               (neg|quest_slot_ge, "qst_hunt_down_fugitive", slot_quest_current_state, 9),
+               (quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),
+               (neg|quest_slot_ge, "qst_hunt_down_fugitive", slot_quest_current_state, 9), #this is to make sure that the player has talked to the fugitive first
                (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
                (try_begin),
                  (call_script, "script_cf_troop_agent_is_alive", ":quest_object_troop"),
@@ -1722,6 +1723,7 @@ mission_templates = [ # not used in game
 			(check_quest_active, "qst_hunt_down_fugitive"),
 			(neg|check_quest_succeeded, "qst_hunt_down_fugitive"),
 			(neg|check_quest_failed, "qst_hunt_down_fugitive"),
+            (quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),
 			(neg|quest_slot_ge, "qst_hunt_down_fugitive", slot_quest_current_state, 9),
 			(quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
 			(assign, ":not_alive", 0),
