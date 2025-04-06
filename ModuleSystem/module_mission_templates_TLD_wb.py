@@ -1243,6 +1243,7 @@ tld_ai_kicking = (1, 0, 0, [(eq,"$field_ai_lord",1)],
        #TLD Check
       (agent_get_troop_id, ":lord", ":agent1"),
       (troop_slot_eq, ":lord", slot_troop_has_combat_ai, 1), 
+      (agent_is_alarmed, ":agent1"),
 
       #(this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
       #(this_or_next|eq, ":lord", "trp_nazgul"),
