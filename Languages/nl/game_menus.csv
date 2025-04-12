@@ -255,7 +255,7 @@ menu_besiegers_camp_with_allies|{s1} wordt nog altijd belegerd. De banieren van 
 mno_talk_to_siege_commander|Dien verzoek in voor een gesprek met de commandant.
 mno_join_siege_with_allies|Sluit aan bij de volgende aanval.
 mno_join_siege_stay_back|Beveel je soldaten om zich aan te sluiten bij de volgende aanval zonder jou
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Vind jouw weg naar buiten!
 menu_castle_outside|Je bevind je buiten {s2}.{s11} {s3} {s4}
 mno_cheat_steal_book_door|Verkrijg het boek
@@ -349,17 +349,6 @@ menu_legendary_place|^^^^Je hebt de geruchten gevolgd en vond {s1}. Je kunt de p
 mno_explore|Verken deze plaats.
 menu_ring_hunter_lair|^^^^Je hebt het spoor van de Ringjagers door Demsterwold gevolgd en je bent aan de {s1} gekomen. Je ziet hen zich voorbereiden om te vertrekken met een kist.
 mno_attack_lair|Val hen nu aan.
-mno_leave_bandit_lair|Vertrek momenteel.
-; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
-; mno_go_with_the_raftmen|Take the raft to Dorwinion
-; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
-mno_ride_to_dorwinion_next|Volgende...
-; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
-; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
-; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
-; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
-; mno_bandit_fortress_spirits|Go talk with the spirits.
-mno_leave_amath_dollen_fortress|Vertrek momenteel.
 menu_gondor_reinforcement_event|^^^^^^De Bakens van Gondor zijn aangestoken, Minas Tirith vraagt om hulp!^^De Heren van de zuide leengoeden zullen nu naar het noorden marcheren om de Grote Witte Stad te verdedigen tegen de Duisternis.
 mno_gondor_reinforcement_event_close|Sluiten
 menu_gondor_beacons|Je kijkt op naar {s1}, een van de waarschuwings bakens van Gondor, gebruikt om alarm te slaan in Noord en Zuid Gondor
@@ -455,15 +444,6 @@ menu_animal_ambush_fail|De dieren bijten en verscheuren je{reg0?,: and your comp
 menu_isengard_flooding|^^^^^@Je bent omringt door dode vijanden en zegevierende bondegenoten, inclusief de Ents; ze brullen, en knallen, en trompetteren, totdat de stenen breken en naar beneden vallen rondom de Toren van Orthanc. Ze zijn zoals een woeste gierende storm, ze breken pilaren af, gooien lawines aan rotsen door de schachten, werpen grote plakken steen in de lucht zoals alsof het bladeren zijn die door de wind worden meegenomen... Het is niets zoals je ooit eerder hebt gezien.^^ Bregalad -- of Vlugstroom, zoals je hem kende, loopt langs je heen, en stopt alleen om te zeggen, '{playername}! Pas op! Blij uit de buurt van de Toren -- spoedig zullen wij de dam breken, en zullen wij de Isen door deze vallei laten stromen, althans voor even. Het zal lastig voor je lastig worden om te blijven staan waar je nu staat, denk ik dan.' Haastig volg je zijn advies en maak je jezelf uit de voeten weg van Orthanc.^^ Ergens rond middernacht begint Isengard zich te vullen met stromen en plassen. Je kan niets anders doen behalve huiveren terwijl je ziet hoe rook opstijgt in de vorm van grote pilaren, en een grote kronkel aan stoom als een slang rondom de Toren naar boven rijst, tot het zich vormt tot een grote piek van wolken, vurig van onder, en beschenen door het maanlicht van boven. De wraak van de Ents is misschien langzaam, maar betreft wel een onweerstaanbare kracht...
 mno_isengard_continue|Ga verder
 menu_build_your_scene|U kunt uw eigen battlescene hier te bouwen, met behulp van een van de sleuven hieronder en game Edit mode (je nodig hebt om edit mode Schakel eerst in M & B lauching scherm Opties). Vervolgens kunt u indienen scènes u geconstrueerd (namelijk SCO bestanden van TLD / SceneObj map) naar het dev team van TLD, en als uw scène is goed, het kan in latere releases als een van willekeurige slagvelden! ^^ Probeer aan te geven welke regio op de kaart u wilt dat uw scene te verschijnen ^ Paar tips:. vermijd diep water, steile bergen en andere onbegaanbare plaatsen, tenzij je ervaren scene-maker en weten hoe AI troepen bar van het lopen, waar je ze niet wilt, en maken AI maas in andere plaatsen. ^ (Inzendingen # 0-1 zijn voor aanvallers, # 4 voor verdedigers, niet aanraken # 5-8
-mno_scene1|Vlakte Groot (file scn custom 1.sco)
-mno_scene2|Vlakte Medium (file scn custom 2.sco)
-mno_scene3|Vlakte Klein (file scn custom 3.sco)
-mno_scene4|Steppe Groot (file scn custom 4.sco)
-mno_scene5|Steppe Medium (file scn custom 5.sco)
-mno_scene6|Steppe Klein (file scn custom 6.sco)
-mno_scene7|Bos Groot (file scn custom 7.sco)
-mno_scene8|Bos Medium (file scn custom 8.sco)
-mno_scene9|Bos Klein (file scn custom 9.sco)
 mno_back_3dot|Terug...
 mno_back|Ga terug.
 mno_next|Volgende...

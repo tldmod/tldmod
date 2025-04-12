@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} poprosił cię o wytrenowanie {reg1} {s14} i przekaza
 qst_escort_messenger|Odeskortuj posłańca do {s14}
 qst_escort_messenger_text|Odeskortuj posłańca do {s14}.
 qst_hunt_down_fugitive|- Schwytaj {s4}
-qst_hunt_down_fugitive_text|{s9} poprosił cię, byś dopadł{/a} i ukarał{/a} mordercę zwanego {s4}. Podobno ukrywa się gdzieś w {s3}.
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 qst_bring_back_runaway_serfs|- Uciekający niewolnicy
 qst_bring_back_runaway_serfs_text|{s9} poprosił cię, byś sprowadził{/a} trzy grupy niewolników z powrotem do {s2}. Powiedział, że wszystkie trzy grupy zapewne kierują się w stronę {s3}.
 qst_follow_spy|- Śladem szpiega

@@ -7,7 +7,7 @@ qst_raise_troops_text|{reg1}名の{s14}を育て上げて {彼/彼女}に引き�
 qst_escort_messenger|{s14}まで 伝令を護衛せよ
 qst_escort_messenger_text|None
 qst_hunt_down_fugitive|{s4}を追え
-qst_hunt_down_fugitive_text|{s9}より、{s4}という名前のおたずね者を 捕まえるよう頼まれた。 おたずね者は現在、 {s3}に潜んでいるとされている。
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 qst_bring_back_runaway_serfs|脱走した奴隷を連れ戻せ
 qst_bring_back_runaway_serfs_text|三手に分かれて逃走中の奴隷を {s2}に連れ戻すよう、 {s9}より依頼された。 すべての群れは {s3}の方角へ逃げているらしい。
 qst_follow_spy|密会現場まで間者を追跡せよ

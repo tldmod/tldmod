@@ -7,7 +7,7 @@ qst_deliver_message_to_enemy_lord_text|{s9} Занеси това съобщен
 qst_escort_messenger|Пратете писмото до {s14}
 qst_escort_messenger_text|Никой.
 qst_hunt_down_fugitive|Убии {s4}
-; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the fugitive named {s4}. He is currently believed to be at {s3}.
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 ; qst_bring_back_runaway_serfs|Bring Back Runaway Slaves
 ; qst_bring_back_runaway_serfs_text|{s9} asked you to bring back the three groups of runaway slaves back to {s2}. He said all three groups must be running away in the direction of {s3}.
 qst_follow_spy|Следвай шпионина до срещата.

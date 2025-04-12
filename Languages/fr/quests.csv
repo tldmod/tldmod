@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} vous a demandé de former {reg1} {s14} et de les lui 
 qst_escort_messenger|Escorter le messager à {s14}
 qst_escort_messenger_text|Aucun
 qst_hunt_down_fugitive|Traquer {s4}
-qst_hunt_down_fugitive_text|{s9} vous a demandé de traquer le fugitif nommé {s4}. Il est actuellement à {s3}.
+qst_hunt_down_fugitive_text|{s9} vous a demandé de traquer le traitre nommé {s4}. On pense qu'il se trouverait actuellement à {s3}.
 qst_bring_back_runaway_serfs|Ramener des esclaves en fuite.
 qst_bring_back_runaway_serfs_text|{s9} vous a demandé de ramener les trois groupes d'esclaves en fuite à {s2}. Il a dit que les trois groupes devaient avoir fui dans la direction de {s3}.
 qst_follow_spy|Suivre l'espion jusqu'à son lieu de rendez-vous

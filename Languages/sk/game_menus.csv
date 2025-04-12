@@ -255,7 +255,7 @@ menu_besiegers_camp_with_allies|{s1} zostáva v obliehaní. Zástavy {s2} vlajú
 mno_talk_to_siege_commander|Požiadať o stretnutie s veliteľom.
 mno_join_siege_with_allies|Pridať sa k ďalšiemu útoku.
 mno_join_siege_stay_back|Prikázať tvojím vojakom, aby sa pridali k ďalšiemu útoku bez teba.
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Najdi cestu von!
 menu_castle_outside|Si vonku {s2}.{s11} {s3} {s4}
 mno_cheat_steal_book_door|Získať knihu
@@ -349,17 +349,6 @@ menu_legendary_place|^^^^Veril si povestiam a našiel si {s1}. Teraz môžeš t
 mno_explore|Preskúmať toto miesto.
 menu_ring_hunter_lair|^^^^Následoval si stopy Lovcov Prsteňa skrz Temnohvozd a dorazil si k {s1}. Vidíš ich, ako sa pripravujú na odchod s truhlicou.
 mno_attack_lair|Zaútočiť na nich teraz.
-mno_leave_bandit_lair|Zatiaľ ich nechať.
-; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
-; mno_go_with_the_raftmen|Take the raft to Dorwinion
-; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
-mno_ride_to_dorwinion_next|Pokračovať...
-; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
-; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
-; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
-; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
-; mno_bandit_fortress_spirits|Go talk with the spirits.
-mno_leave_amath_dollen_fortress|Zatiaľ ich nechať.
 menu_gondor_reinforcement_event|^^^^^Majáky Gondoru vzbĺkli, Minas TIrith volá o pomoc!^^Lordi z panstiev na juhu vypochodujú na sever, aby ubránili Biele Mesto pred blížiacou sa temnotou.
 mno_gondor_reinforcement_event_close|Zavrieť
 menu_gondor_beacons|Pozrieš sa hore na {s1}, jeden z výstražných majákov Gondoru, ktoré hlásali ohňom poplach v severnom i južnom Gondore. 
@@ -455,15 +444,6 @@ menu_animal_ambush_fail|Zvieratá ťa kušu a drápu po tebe {reg0?,: a tvoj spo
 ; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 ; mno_isengard_continue|Continue
 menu_build_your_scene|Tu si môžeš vybudovať svoje vlastné bojové pole, použitím jedného z voľných slotov, ktoré sú k dispozícií nižšie a v hracom Edit móde (budeš musieť najprv prepnúť Edit mód ON na úvodnej obrazovke M&B v možnosti Nastavenia). Potom môžeš zaslať scény, ktoré si vybudoval (podľa mena, sco súbory z TLD/SceneObj priečinku) týmu vývojárov z TLD, a keď je tvoja scéna dobrá, môže sa objaviť v ďalšom vydaní ako náhodná bojová scéna!^^ Skús špecifikovať v ktorom regióne na mape sveta chceš, aby sa tvoja scéna objavovala.^ Niekoľko rád: vyhni sa hlbokej vode, vysokým horám a iným neprejazdným miestam, pokiaľ nie si skúsený programátor scén a vieš, ako zakázať jednotkám umelej inteligencie, aby šli tam kde ich nechceš, a aby si vytvoril trasy pre umelú inteligenciu v iných miestach.^ (Vstupy #0-1 sú pre útočníkov, #4 pre obrancov, nerob nič s #5-8
-mno_scene1|Pole Veľké (súbor scn custom 1.sco)
-mno_scene2|Pole Stredné (súbor scn custom 2.sco)
-mno_scene3|Pole Malé (súbor scn custom 3.sco)
-mno_scene4|Step Veľká (súbor scn custom 4.sco)
-mno_scene5|Step Stredná (súbor scn custom 5.sco)
-mno_scene6|Mála pláň (súbor scn custom 6.sco)
-mno_scene7|Veľký les (súbor scn custom 7.sco)
-mno_scene8|Stredný les (súbor scn custom 8.sco)
-mno_scene9|Malý les (súbor scn custom 9.sco)
 mno_back_3dot|Späť...
 mno_back|Späť
 mno_next|Pokračovať...

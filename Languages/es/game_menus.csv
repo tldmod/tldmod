@@ -255,7 +255,7 @@ menu_besiegers_camp_with_allies|{s1} permanece bajo asedio. Los estandartes de {
 mno_talk_to_siege_commander|Pedir una audiencia con el comandante.
 mno_join_siege_with_allies|Unirse al siguiente asalto.
 mno_join_siege_stay_back|Ordenar a tus tropas que se unan al próximo asalto sin tu ayuda.
-menu_moria_must_escape|^^El libro parece dar cuenta del último intento de los enanos por volver a establecerse en Moria. Un intento que al parecer terminó con la cruenta muerte de todos los involucrados. Mientras ponderas su oscuro destino, oyes repentinamente unos gritos ásperos y el rumor de muchos pies a la carrera.^ ¡Ya vienen!^  Saliendo apresuradamente de la cámara, te das cuenta de que los sonidos vienen del salón. No te queda otro remedio que huir en la dirección opuesta, internándote en un estrecho y tortuoso túnel descendente...^...^Un par de horas después, comprendes que te has perdido en las profundidades de Moria y tienes que encontrar una salida.
+menu_moria_must_escape|^^El libro parece dar cuenta del último intento de los enanos para volver a establecerse en Moria. Un intento que al parecer terminó con la cruenta muerte de todos los involucrados. Mientras ponderas su oscuro destino, oyes de repente unos gritos ásperos y el rumor de muchos pies a la carrera.^ ¡Ya vienen!^  Saliendo apresuradamente de la cámara, te das cuenta de que los sonidos vienen del salón. No te queda otro remedio que huir en la dirección opuesta, internándote en un estrecho y tortuoso túnel descendente...^...^Un par de horas después, comprendes que te has perdido en las profundidades de Moria y tienes que encontrar una salida.
 mno_moria_exit_scene|¡Encuentra un camino de salida!
 menu_castle_outside|Te encuentras en las afueras de {s2}.{s11} {s3} {s4}
 mno_cheat_steal_book_door|Hacerse con el libro
@@ -349,17 +349,6 @@ menu_legendary_place|^^^^Has seguido los rumores y encontrado {s1}. A partir de 
 mno_explore|Explorar el lugar.
 menu_ring_hunter_lair|^^^^Has seguido el rastro de los Caza-anillos por el Bosque Negro y llegado a {s1}. Ves que se disponen a huir con un cofre.
 mno_attack_lair|Empieza el ataque
-mno_leave_bandit_lair|Dejarlo por el momento.
-menu_raftmen|^^^^Sigues el Río Rápido hacia el sureste en dirección a Rhûn, esperando encontrar el viejo camino de mercaderes.^^ Un tiempo después, llegas a una pequeña aldea situada a las orillas del río.^^Preguntas a los aldeanos cómo llegar al camino y ellos te dirigen a un par de hombres que se dedican a recorrer el río en balsa.^^Después de negociar con ellos, llegas a un acuerdo para que esos hombres te lleven río abajo.
-mno_go_with_the_raftmen|Viajar en balsa a Dorwinion
-menu_ride_to_dorwinion|^^^^Te relajas y disfrutas del buen tiempo mientras los hombres dirigen la balsa río abajo. El Río Rápido, que entre las cascadas y los rápidos de la Montaña Solitaria, es de aguas frías y claras, es aquí templado, tranquilo y de aguas turbias.^^ Al sol de la tarde, ves pasar llanuras extensas y bosques verdes a medida que la balsa se desliza por los sinuosos meandros. La región está dispersamente poblada por pequeñas granjas y viñedos rodeados por tapias de piedra, y ocasionalmente dejas atrás alguna cabaña edificada sobre pilotes y escondida entre los juncos.^^El sosegado movimiento de la balsa te ayuda a caer en un profundo sueño...
-mno_ride_to_dorwinion_next|Siguiente...
-menu_amath_dollen_fortress|^^^^Despiertas de tu siesta cuando declina la tarde y poco después llegas a un embarcadero donde los hombres amarran la balsa. Te indican un sendero estrecho que desaparece entre la maleza del pantano y montan el campamento para esperar tu regreso.^^Sigues el sendero, que asciende rápidamente desde los humedales a una planicie cubierta de hierba, y continúas caminando hasta que se une con el viejo camino de mercaderes.^^Un tiempo después, ves ante ti una fortaleza de bandidos.
-mno_bandit_fortress_with_companions|Acercarte a la fortaleza de los bandidos solo con tus compañeros e intentar hablar con su líder.
-mno_bandit_fortress_with_army|Atacar la fortaleza de los bandidos con todas tus tropas.
-mno_bandit_fortress_against_easterlings|Defender la fortaleza contra el asedio.
-mno_bandit_fortress_spirits|Hablar con los espíritus
-mno_leave_amath_dollen_fortress|Dejarlo por el momento.
 menu_gondor_reinforcement_event|^^^^^¡Las almenaras de Gondor arden, Minas Tirith pide ayuda!^^Los señores de los feudos sureños marcharán hacia el norte a defender la Ciudad Blanca de la oscuridad que se cierne sobre ella.
 mno_gondor_reinforcement_event_close|Cerrar
 menu_gondor_beacons|Levantas la vista hacia {s1}, una de las almenaras de Gondor, usadas para dar la alarma en el norte y el sur de Gondor.
@@ -455,15 +444,6 @@ menu_animal_ambush_fail|Los animales {reg0?te muerden y desgarran,:os muerden y 
 menu_isengard_flooding|^^^^^Te rodean enemigos muertos y aliados triunfantes, incluyendo a los Ents; rugen y braman y aúllan de tal modo que las piedras se resquebrajan y caen en torno a la torre de Orthanc. Son como una tempestad, despedazando las columnas, arrojando avalanchas de piedras a los fosos, lanzando al aire enormes bloques de roca como si fuesen hojas... No se parece a nada que hayas visto antes.^^ Bregalad -- o Ramaviva, como tú lo conoces -- se acerca a grandes zancadas y se detiene solo para decir: '¡{playername}! ¡Cuidado! Mantente lejos de la Torre; pronto romperemos el dique y traeremos el Isen al valle durante un tiempo. ¡Creo que encontrarás muy difícil quedarte aquí!' Te apresuras a seguir su consejo y te apartas de Orthanc.^^ Cerca de medianoche, Isengard empieza a llenarse de charcos y arroyos de aguas negras. No puedes evitar un estremecimiento al ver grandes columnas de humo y vapor elevándose y enroscándose alrededor de la Torre, hasta que parece un elevado pico envuelto en nubes, incandescente por abajo y arriba iluminado por la luna. La cólera de los Ents es lenta, pero posee una fuerza irresistible...
 mno_isengard_continue|Continuar
 menu_build_your_scene|Puedes crear tu propio escenario de batalla, utilizando una de las ranuras disponibles abajo y activando el modo de edición (primero tienes que activar el modo de edición en las opciones del lanzador al iniciar el juego, entrar en un escenario de batalla y pulsar Ctrl+E para acceder al editor). Puedes enviarnos los escenarios que hayas creado (los archivos sco de la carpeta TLD/SceneObj) y si tu creación es lo bastante buena, podría aparecer en versiones posteriores como uno de los mapas de batalla aleatorios.^^ Intenta especificar en qué región del mapa quieres que aparezca.^ Un par de consejos: evita las aguas profundas, las montañas empinadas y otros obstáculos infranqueables, a no ser que tengas experiencia creando mapas y sepas usar las barreras y las «AI Mesh» para hacer que la IA de las tropas vaya donde tú quieras que vaya y no se meta donde no debe.^ (Los puntos de entrada del 0 al 1 son para atacantes, el 4 para los defensores, ni se te ocurra tocar los que van del 5 al 8)
-mno_scene1|Llanura grande (archivo: scn custom 1.sco)
-mno_scene2|Llanura mediana (archivo: scn custom 2.sco)
-mno_scene3|Llanura pequeña (archivo: scn custom 3.sco)
-mno_scene4|Estepa grande (archivo: scn custom 4.sco)
-mno_scene5|Estepa mediana (archivo: scn custom 5.sco)
-mno_scene6|Estepa pequeña (archivo: scn custom 6.sco)
-mno_scene7|Bosque grande (archivo: scn custom 7.sco)
-mno_scene8|Bosque mediano (archivo: scn custom 8.sco)
-mno_scene9|Bosque pequeño (archivo: scn custom 9.sco)
 mno_back_3dot|Atrás...
 mno_back|Volver atrás.
 mno_next|Siguiente...

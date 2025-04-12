@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} vraagt aan jou om de troepen van {reg1} {s14} bijeen 
 qst_escort_messenger|Escorteer Bode naar {s14}
 qst_escort_messenger_text|Geen
 qst_hunt_down_fugitive|Jaag op {s4}
-qst_hunt_down_fugitive_text|{s9} verzoekt jou om op klopjacht te gaan. Het draait hierbij om de voortvluchtige genaamd {s4}. Er word geloofd dat hij zich bevind in {s3}.
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 qst_bring_back_runaway_serfs|Breng Vluchtende Slaven Terug
 qst_bring_back_runaway_serfs_text|{s9} verzocht jou om hem de drie groepen van ontsnapte slaven terug te brenge naar {s2}. Hij vertelde dat alle drie te groepen waren weggerend in de richting van {s3}.
 qst_follow_spy|Volg de spion naar de samenkomst

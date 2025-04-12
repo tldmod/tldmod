@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} megkért hogy képezz ki {reg1} {s14}t és vidd el {n
 qst_escort_messenger|Kísérd el a hírnököt {s14} városába
 qst_escort_messenger_text|Semmi
 qst_hunt_down_fugitive|Vadászd le {s4}t
-qst_hunt_down_fugitive_text|{s9} megkért hogy vadászd le a {s4} nevű szökevényt. Úgy tudják jelenleg {s3} városában található.
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 qst_bring_back_runaway_serfs|Vidd vissza a szökött parasztokat
 qst_bring_back_runaway_serfs_text|{s9} megkért hogy rángass vissza három csoportnyi menekülő rabszolgát {s2} városába. Azt mondta mind a három {s3} irányába szaladt.
 qst_follow_spy|Kövesd a kémet a találkozóra

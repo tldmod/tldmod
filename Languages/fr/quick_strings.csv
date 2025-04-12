@@ -1,8 +1,12 @@
 qstr_Received_{reg0}_dama|{reg0} dégâts reçus.
-qstr_Siege_weapon_damaged|Les armes de siège ont fait des dégâts à {reg10} agents.
 qstr_Gate_is_breached!|La porte a cédé !
 qstr_Gate_opens..._You_ha|La porte est ouverte... Vous avez atteint le lieu le plus sacré de la Terre du Milieu !
 qstr_Secret_place_discove|Endroit secret découvert !
+qstr_Nothing_of_interest.|Rien d'intéressant...
+qstr_No_inventory_space..|Pas de place dans l'inventaire...
+qstr_We_don_t_know_you_en|Nous ne vous connaissons pas suffisamment pour vous donner cela...
+qstr_Take_it_friend_it_s_|Tenez, mon ami{reg11?e:}, c'est à vous...
+qstr_Take_it_we_don_t_nee|Prenez donc, de toute façon nous n'en avons pas besoin.
 qstr_Next_Page|Page suivante
 qstr_Action|Action
 qstr_Mount|En selle
@@ -97,6 +101,7 @@ qstr_Siege_AI:__|IA de siège :
 qstr_Basic__better_perfor|Basique (meilleure performance)
 qstr_Advanced|Avancée
 qstr_Campaign_difficulty:|Difficulté de la campagne :
+qstr_Brutal|Brutal
 qstr_Hard|Difficile
 qstr_Default|Par défaut
 qstr_Easy|Facile
@@ -115,13 +120,13 @@ qstr_Preferred_Camera_Mod|Mode de caméra préféré :
 qstr_Default_Camera|Caméra par défaut 
 qstr_Free_Mode_Custom_Cam|Caméra personnalisée en mode libre
 qstr_Fixed_Over_The_Shoul|Caméra fixe au dessus de l'épaule
-qstr_Prevent_AI_from_taki|Empêcher l'IA de rester en défense :
 qstr_Brighter_Nights:__|Nuits plus lumineuses :
 qstr_Done|Fait
 qstr_Gameplay_Tweaks|Modifications de gameplay
 qstr_Set_to_Native_if_you|Mettez sur Native si vous rencontrez des problèmes d'IA durant les batailles.
 qstr_Disable_cutscenes_if|Désactiver les scènes de transition si vous rencontrez des crashs au début de la guerre.
-qstr_Campaign_Difficulty_a|La difficulté de campagne affecte l'abondance des volontaires, la taille du groupe des seigneurs, et le renfort pour les factions alliées.
+qstr_Campaign_Difficulty_a|La difficulté de campagne affecte l'abondance des volontaires, la taille des groupes des seigneurs, la force initiale du groupe du joueur, la force ajoutée par toutes les factions alliées et la force récoltée par les victoires du joueur.
+qstr_Please_be_aware_that|Veuillez noter que le jeu est équilibré pour la difficulté par défaut. Les autres niveaux de difficulté n'ont pas été testés.
 qstr_Be_aware_that_many_q|Soyez conscients que beaucoup de quêtes et de mécaniques de campagne sont relatives au niveau du joueur. Augmenter cette valeur vous donnera plus de temps pour vous préparer, mais déclenchera la guerre plus rapidement.
 qstr_Requires_TLD_NewForm|Nécessite l'IA NewForm de TLD
 qstr_Troop_Tree|Arbre des troupes
@@ -141,7 +146,7 @@ qstr_Extended_Formations_|Formations étendues et options de l'IA
 qstr_Put_player_in_divisi|Mettre le joueur dans la division :
 qstr_None|Aucun
 qstr_Army_rotates_to_face|L'armée pivote pour faire face au centre des ennemis :
-qstr_Prevent_AI_from_takin|Empêcher l'IA de rester en défense :
+qstr_Prevent_AI_from_taki|Empêcher l'IA de rester en défense :
 qstr_AI_Controls_Troops_W|L'IA contrôle les unités quand le joueur est KO :
 qstr_You_gained_{reg0}_Re|Vous avez gagné {reg0} points de ressources de {s0}.
 qstr_You_lost_{reg0}_Reso|Vous avez perdu {reg0} points de ressources de {s0}.
@@ -689,12 +694,6 @@ qstr_have_taken_measure_o|a pris connaissance de la force actuelle de votre fact
 qstr_loses_Faction_Streng|perd de la Force de faction suite à la rupture de leur lignes de ravitaillements.
 qstr_loses_Faction_Strengt|perd de la Force de faction à cause de la destruction de leur camp.
 qstr_gains_Faction_Streng|gagne de la Force de faction suite aux nouvelles de votre victoire.
-qstr_Notice:_Isengard_Las|La quête Le dernier combat d'Isengard (Isengard Last Stand) a été supprimée pour des raisons de compatibilité de sauvegardes. Il est maintenant possible d’assiéger Isengard comme n'importe quelle ville.
-qstr_Hobbit_quest_aborted|Il a été mis fin à la quête des hobbits pour des raisons de compatibilité. Les hobbits n'apparaitront plus que quand certaines conditions seront remplies.
-qstr_This_update_has_chan|Cette mise à jour a modifié l'attribution de certaines compétences à leurs attributs. Si vous souhaitez revoir les compétences de vos compagnons, vous pouvez désormais les importer/exporter si vous les interrogez sur leurs compétences dans le menu du groupe.
-qstr_Something_wrong_not_|Quelque chose ne va pas, pas assez de troupes à enlever
-qstr_Troop:_{s6}___Level:|Troupes : {s6} - Niveau : {reg1}
-qstr_{reg6}_Centers_Left_|Il reste {reg6} centres pour {s2}
 qstr_Raiders|Pillards
 qstr_have_won_the_sea_bat|à gagné la bataille navale, démoralisant vos troupes. L'ennemi pourrait profiter de cette défaite et attaquer plus souvent. 
 qstr_loses_Faction_Strength|perd de la Force de faction suite au raid destructeur.
@@ -759,10 +758,30 @@ qstr_You_got_{reg1}_exper|Vous avez obtenu {reg1} XP sous votre forme d'ours
 qstr_Your_ability_to_chan|Votre aptitude à changer de peau s'est manifestée, à partir de maintenant vous pourrez parcourir la nature comme un homme ou comme un ours.
 qstr_You_change_back_to_h|Vous reprenez forme humaine...
 qstr_Refill_Ammunition|Recharger les munitions
+qstr_Take_a_closer_look..|Regardez de plus près...
+qstr_Look_around...|Regardez aux alentours...
+qstr_You_see_the_Pelennor|Vous voyez le Pelennor s'étendre devant vous. Derrière, vaguement, les ruines d'Osgiliath, autrefois capitale du Gondor, dont Minas Tirith n'était qu'une forteresse. Puis, se profilant à l'horizon, les bords déchiquetés des montagnes du Mordor et, au-delà, une obscurité encore plus profonde. Les hommes de la Cité Blanche ont toujours vécu en vue de cette ombre.
+qstr_As_you_look_from_the|En regardant de la proue de l'île jusqu'à l'endroit où l'Anduin, le grand fleuve, se divise en deux bras, on comprend pourquoi Cair Andros signifie "Navire aux longues écumes".
+qstr_This_place_was_once_|Cet endroit était autrefois un havre elfique, mais aujourd'hui seules des ruines témoignent de son héritage. Rares sont ceux qui en connaissent la véritable signification.
+qstr_Tirith_Aear_the_Sea_|Tirith Aear, Garde de la mer - Sa cloche lente guide les marins depuis des siècles.
+qstr_You_kneel_to_pay_you|Vous vous agenouillez pour rendre hommage aux souverains déchus de ce beau royaume. À vos côtés, une demoiselle au bouclier du Rohan élève la voix en chantant. Ne sceal hearpan sweg wigend weccean ; ne winfaet gylden guma sceal healdan ! Votre coeur se serre à l'écoute de ses paroles.
+qstr_You_wonder_about_the|Vous vous interrogez sur les deux rangées de tumulus devant les portes, mais en tant que simple {s24}, vous n'en comprenez pas la signification.
+qstr_Alkarondas_Castle_of|Alkarondas, le Château de la mer. Nommé d'après le célèbre vaisseau amiral d'Ar-Pharazôn, ce grand navire noir est la fierté de la flotte corsaire et la terreur des côtes du Gondor.
+qstr_The_Mmakil_greatest_|Les Mûmakil, les plus grandes bêtes de cet âge ! Terribles dans la guerre, ils portent les tours et les archers au combat. Leurs trompes de guerre font trembler les hommes du Gondor.
+qstr_A_new_Power_is_risin|Une nouvelle puissance se lève. Face à elle, les anciennes alliances et politiques ne tiendront pas. Sa victoire est proche et ceux qui l'ont aidée seront largement récompensés.
+qstr_As_you_explore_the_c|En pénétrant dans les vastes cavernes situées sous l'Anneau d'Isengard, où des milliers d'orques travaillent pour approvisionner les armées grandissantes de la Main Blanche, vous vous persuadez de la montée d'une nouvelle puissance et de la disparition de l'ancien monde.
+qstr_The_Ring_of_Isengard|L'Anneau d'Isengard est inondé, ses murs rocheux sont en ruine. Il faudra un certain temps avant que toute la saleté de Saroumane ne soit lavée et que l'Isen puisse couler à nouveau. Qui sait, peut-être cet endroit redeviendra-t-il un jardin rempli de vergers, d'arbres et d'eau pure.
+qstr_Amon_Hen_the_Hill_of|Amon Hen, la Colline de la Vue, offre une vue imprenable sur les terres environnantes. Cependant, si vous avez cherché l'ancien haut lieu dans l'espoir d'obtenir des indications sur votre propre parcours, vous vous rendez compte que c'est à vous d'en décider.
+qstr_As_the_lights_begin_|Alors que les lumières commencent à vaciller et à danser, vous les voyez : des visages sinistres et mauvais, et des visages nobles et tristes. Beaucoup de visages fiers et beaux, et des herbes dans leurs cheveux d'argent. Mais tous sales, tous pourris, tous morts.
+qstr_This_must_be_the_spi|Ce doit être le nid d'araignées. Sans hésiter, vous allumez une torche et brûlez les toiles.
+qstr_A_flock_of_ravens_ci|Une bande de corbeaux tourne autour de vous. Vous ne comprenez pas ce qu'ils disent, ni les nouvelles qu'ils apportent des pays lointains. Pourtant, cela vous apporte du réconfort car vous savez que ces animaux sages sont de vieux amis du Roi sous la Montagne.
+qstr_Looking_around_you_d|En regardant autour de vous, vous ne comprenez pas la signification de ce lieu.
+qstr_Looking_around_you_f|En regardant autour de vous, vous sentez ne pas connaître ces gens suffisamment bien pour comprendre la signification de ce lieu.
 qstr_Your_mount_stumbles!|Votre monture trébuche ! Elle semble boiter.
 qstr_Bitten_by_your_own_w|Mordu par votre propre warg !
 qstr_You_weigh_too_much_f|Vous êtes trop lourd pour un poney !
 qstr_Your_mount_rears_ref|Votre monture se cabre, elle refuse d'obéir à vos ordres !
+qstr_Delivered_{reg60}_da|Vous avez causé {reg60} dégâts.
 qstr_Cannot_Change_Camera|Impossible de changer le mode de caméra quand on est en vue première personne.
 qstr_Switch_Back_to_3rd_P|Revenir en vue à la troisième personne pour changer la caméra.
 qstr_Fixed_Custom_Camera|Caméra personnalisée fixe
@@ -787,8 +806,6 @@ qstr_You_find_yourself_in|Vous vous retrouvez dans une profonde caverne. Vos poi
 qstr_You_find_yourself_in_|Vous vous retrouvez dans une profonde caverne. Vos poils se hérissent pendant que vous regardez autour de vous, et vous commencez à ressentir un étrange sentiment de danger. Levant votre arme bien haut, vous lancez un cri de défi à l'ennemi invisible de cet endroit. Cet endroit a peut-être été un lieu d'émerveillement par le passé... mais aujourd'hui, grâce au véritable pouvoir que vous avez acquis, vous réalisez que vous n'avez rien à craindre du passé oublié d'un monde brisé.
 qstr_With_trepidation_you|Avec inquiétude, vous regardez dans le bassin d'argent. L'eau vous montre des visions d'horreur, de sang, de terreur et de chagrin. Vous reculez... mais les visions disparaissent et vous voyez à la place un ciel nocturne clair, avec ce qui semble être un bateau argenté flottant sur l'étendue. Un sentiment de calme vous envahit. L'espoir n'a pas totalement disparu.
 qstr_The_Lady_s_garden_li|Le jardin de la dame s'étend paisiblement dans la lumière du jour. Vous ne sentez rien d'anormal...
-qstr_You_kneel_to_pay_you|Vous vous agenouillez pour rendre hommage aux souverains déchus de ce beau royaume. À vos côtés, une demoiselle au bouclier du Rohan élève la voix en chantant. Ne sceal hearpan sweg wigend weccean ; ne winfaet gylden guma sceal healdan ! Votre coeur se serre à l'écoute de ses paroles.
-qstr_You_wonder_about_the|Vous vous interrogez sur les deux rangées de tumulus devant les portes, mais en tant que simple {s24}, vous n'en comprenez pas la signification.
 qstr_Halt!_You_are_not_al|Halte ! Vous n'avez pas l'autorisation d'entrer ici !
 qstr_Halt!_You_are_not_all|Halte ! Vous n'avez pas l'autorisation d'entrer ici sans la permission de la dame !
 qstr_While_visiting_towns|Pendant que vous visitez les villes, forteresses et camps, vous pouvez parler aux gens alentour. Les membres des différentes factions ont des choses différentes à raconter, certains vous donneront leur avis, d'autres les rumeurs. Toutes ces informations peuvent vous donner une meilleure compréhension de la culture et la faction de votre interlocuteur, ou elle peuvent contenir des indices pour trouver des lieux secrets ou des astuces pour traverser les régions sauvages et combattre dans la Guerre de l'Anneau.
@@ -808,8 +825,6 @@ qstr_Division_{reg1}_{s2}_g|La division {reg1} {s2} rejoint la position mémoris
 qstr_Division_{reg1}_{s2}_f|La division {reg1} {s2} forme une ligne (mémorisé).
 qstr_Division_{reg1}_{s2}_fo|La division {reg1} {s2} forme {reg0} lignes (mémorisé).
 qstr_A_Nazgul_on_a_winged|Un Nazgûl sur un destrier ailé tourne en rond au-dessus du champ de bataille !
-qstr_Delivered_{reg60}_da|Vous avez causé {reg60} dégâts.
-qstr_DEBUG__Health_Regen_|DEBUG (Régénération de Santé) : {s1} régénère {reg0} % de santé.  = +{reg1} % STR
 qstr_Your_bear_form_has_{|Vous avez {reg2} / {reg1} PV sous votre forme d'ours !
 qstr_Some_of_your_human_t|Certains de vos soldats humains ne sont pas intimidés par les ténèbres (les troupes nocturnes ne sont pas affectées par les pénalités de combat la nuit).
 qstr_You_are_filled_with_|Vous êtes rempli de rage en posant vos yeux sur l'ennemi (Berserker actif).
@@ -869,9 +884,11 @@ qstr_Ballista:_turn_CURSO|Baliste : tourner avec le CURSEUR, appuyer sur MAJ Gau
 qstr_Ballista:_out_of_ammo|Baliste : à court de munition
 qstr_The_ladders_on_Deepi|Les échelles sur la Muraille de la Gorge ! Attention !
 qstr_THREE.._TWO..._ONE..|TROIS.. DEUX... UN.... BATTEZ VOUS !
-qstr_You_have_come_upon_t|Vous êtes sur les ruines d'Amon Hen, la Colline de la Vue. Une ancienne tour de guet du Gondor au sommet duquel se trouve le Siège de la Vue.^^Vous sentez que cette endroit fut autrefois grandiose mais est depuis longtemps oublié.  
-qstr_You_have_come_upon_th|Vous vous trouvez dans les Marais Morts, site de la bataille de Dagorlad durant la guerre de la Dernière Alliance^^Les marais ont englouti ce qui était alors une plaine herbeuse, et aujourd'hui le seul vert qu'il reste est celui des mauvaises herbes sur la surface sombre des eaux moroses^^Les plantes mortes en train de pourrir apparaissent dans la brume comme des les ombres en lambeaux des étés depuis longtemps perdus, et les corps des hommes, elfes et orques flottent dans les sombres profondeurs^^L'air est sec et humide, et vous ne pouvez vous empêcher de frissonner en voyant les lumières de bougies trembler dans les yeux du corps d'un elfe sous la surface de l'eau. 
-qstr_You_have_entered_the|Vous pénétrez dans les bois du sud de la forêt de Grand'Peur, autrefois connue sous le nom de VertBois-le-Grand^^La forteresse de Dol Goldur est proche et diffuse une ombre noire sur la forêt. Les bois semblent malades et emplis de décadence. Les anciens chênes sont couverts de pourritures et de champignons, de grandes toiles d’araignée sont tissées entre les troncs^^L'air est noir et étouffant et vous ressentez l'impression de suffoquer lentement.
+qstr_You_have_come_upon_t|Vous avez trouvé les ruines de l'Amon Hen, la Colline de l'Oeil, une tour de guet gondorienne au sommet de laquelle se trouve le Siège de la Vue.^^ Vous pensez que vous devriez chercher le siège et peut-être obtenir un aperçu de la vue lointaine qui pourrait vous conseiller sur la suite de votre parcours.
+qstr_You_have_come_upon_th|Vous voici devant les Marais Morts, site de la bataille de Dagorlad pendant la Guerre de la Dernière Alliance^^ Dans l'obscurité de la nuit, vous voyez des lumières comme des flammes brumeuses qui vacillent lentement au-dessus de bougies invisibles. Suivant une étrange attirance, vous les suivez plus profondément dans le labyrinthe de flaques et de ruisseaux.
+qstr_You_have_come_upon_the|Vous débouchez dans les Marais Morts, site de la bataille de Dagorlad pendant la Guerre de la Dernière Alliance^^Les marais ont englouti ce qui était autrefois une plaine herbeuse, et maintenant le seul vert est l'écume des mauvaises herbes livides sur les surfaces grasses et sombres des eaux maussades.^^Dans la lumière grise du jour, vous ne voyez rien qui vous intéresse.
+qstr_You_have_entered_the|Vous avez pénétré dans la partie méridionale de la forêt de Grand'Peur, autrefois connue sous le nom de Vert-Bois le Grand.^^Les bois semblent malades et pleins de pourriture. L'endroit grouille d'araignées. Il doit y avoir un nid quelque part par ici...
+qstr_You_have_found_the_G|Vous avez trouvé les Cavernes Scintillantes, l'une des merveilles du monde nordique.
 qstr_You_have_found_the_D|Vous avez trouvé l'entrepôt nain où devaient se trouver les légendaires lances. Faites votre rapport sur ce que vous avez trouvé à {s3}.
 qstr_Leave_the_Warehouse?|Sortir de l’entrepôt  ?
 qstr_Leave_the_place_in_s|Quitter l'endroit en silence ?
@@ -889,10 +906,15 @@ qstr_The_guards_have_spott|Les gardes vous ont repéré !
 qstr_Alarm_Level_is_now_at_|Le niveau de l'alarme est maintenant à 2 !
 qstr_Enemy_reinforcements_|Les renforts ennemis sont arrivés.
 qstr_Venture_deeper_into_|Aventurez-vous plus profondément dans la forêt et trouvez un chemin pour continuer.
+qstr_You_have_evaded_the_|Vous avez échappé aux patrouilles et êtes désormais proche des ruines. Trouvez et tuez le sorcier ! Ne vous laissez pas arrêter par les gardes.
+qstr_Kill_the_Sorcerer!|Tuez le sorcier !
 qstr_The_sorcerer_has_fle|Le sorcier s'est échappé !
 qstr_Report_this_ill_news|Rapportez ces mauvaises nouvelles à la Dame.
-qstr_The_sorcerer_is_flee|Le sorcier est en train de s'échapper ! Tuez-le !
+qstr_You_have_been_spotte|Vous avez été repéré{reg11?e:} ! Combat !
+qstr_The_ritual_has_begun|Le rituel a commencé, vous devez vous dépêcher pour le perturber !
 qstr_The_sorcerer_has_joi|Le sorcier à rejoint le combat ! Tuez le !
+qstr_The_sorcerer_is_flee|Le sorcier est en train de s'échapper ! Tuez-le !
+qstr_base_troop:_{reg77}_|soldat de base : {reg77}, amélioré : {reg78}
 qstr_The_sorcerer_is_dead|Le sorcier est mort !
 qstr_The_battle_is_won!|La bataille est gagnée !
 qstr_A_band_of_tribal_orc|Un groupe d'orques tribaux est apparu !
@@ -925,10 +947,9 @@ qstr_Look_at_my_over_the_|Regardez ma vue au-dessus de l'épaule, {playername} !
 qstr_You_wish_old_man_my_|Vous aimeriez bien, vieil homme, ma vue au-dessus de l'épaule est bien plus jolie !
 qstr_You_should_really_se|Vous devriez vraiment voir les photos de l'Intendant Denethor sur Facebook, il est incroyable !
 qstr_Press_Space_to_conti|Appuyez sur Espace pour continuer...
-qstr_by_level|par niveau
-qstr_can_only_be_set_at_g|ne peut être défini qu'au début du jeu ; voir les options pour ajuster le niveau
-qstr_by_day|par jour
-qstr_can_only_be_set_at_ga|ne peut être défini qu'au début du jeu ; voir les options pour ajuster le jour
+qstr_BY_LEVEL_/_by_day|PAR NIVEAU / par jour
+qstr_by_level_/_BY_DAY|par niveau / PAR JOUR
+qstr_War_start_mode_can_o|Le mode de départ en guerre ne peut être défini qu'au début de la partie ; voir les options pour ajuster le niveau ou la date.
 qstr_ON|ACTIVÉ
 qstr_OFF|DÉSACTIVÉ
 qstr_If_you_are_new_to_TL|Si TLD est un mod nouveau pour vous, les messages de tutoriel sont recommandés.
@@ -1091,8 +1112,7 @@ qstr_the_Hall|la grand-salle
 qstr_the_Great_Chamber_of|la grand-salle de Thrór
 qstr_Stay_indoors_for_som|Rester à l'intérieur pour quelques temps ({reg1} points de ressources par nuit)
 qstr_Camp_outside_for_som|Camper dans la nature pour quelques temps (gratuit)
-qstr_As_you_enter_the_vas|En pénétrant dans les vastes cavernes situées sous l'Anneau d'Isengard, où des milliers d'orques travaillent pour approvisionner les armées grandissantes de la Main Blanche, vous vous persuadez de la montée d'une nouvelle puissance et de la disparition de l'ancien monde.
-qstr_You_have_found_the_G|Vous avez trouvé les Cavernes Scintillantes, l'une des merveilles du monde nordique.
+qstr_You_are_not_allowed_|Vous n'avez pas l'autorisation d'entrer.
 qstr_As_the_party_member_|En tant que membre du groupe ayant la compétence de marchandage la plus élevée ({reg2}), {reg3?vous estimez:{s3} estime} qu'il vous faudra {reg4} heures pour trouver les personnes les plus importantes de la ville. [Coûte {reg5}/{reg6} d'influence]
 qstr_You_have_already_fou|Vous avez déjà trouvé toutes les personnes intéressantes.
 qstr_the_captain_of_the_g|le capitaine de la garnison et l'autorité civile.
@@ -1133,17 +1153,14 @@ qstr_You_defeated_{reg5}_e|Vous avez vaincu {reg5} ennemis.
 qstr_You_failed_to_defeat|Vous n'avez pas vaincu le moindre ennemi.
 qstr_The_sorcerer_slain_y|Le sorcier tué, vous et vos compagnons bandez rapidement vos plaies et vous glissez dans la nuit. Des voix fétides hurlent derrière vous et vous pouvez sentir des yeux brûlants qui vous scrutent dans l'ombre. Rapidement la colère cède place au désappointement et les bruits de vos poursuivants s'atténuent, remplacés par le lourd silence de la forêt de Grand'Peur. Vous vous êtes échappé{/e}.  
 qstr_The_sorcerer_slipped|Le sorcier s'échappe de vos mains et se faufile dans les ténèbres de son domaine. Le coeur lourd de votre échec, vous et vos compagnons pansez rapidement vos plaies et vous vous repliez dans la nuit. Des voix moqueuses hurlent dans votre dos et vous pouvez sentir Des yeux brûlants qui scrutent les ombres. Les rires et insultes sont rapidement étouffés, remplacés par le lourd silence de la forêt de Grand'Peur. Vous vous êtes échappé{/e}. 
-qstr_You_approach_a_heavi|Vous approchez d'une région fortement gardée de la forêt... ^^Vous devez décider si vous vous aventurez seul ou si vous emmenez quelques soldats avec vous.
+qstr_You_approach_a_heavi|Vous approchez d'une région très surveillée de la forêt...^^Vous devez décider si vous vous aventurez en solitaire ou si vous emmenez quelques soldats avec vous. Choisissez vos actions avec soin, car plus vous attirerez l'attention, mieux le sorcier sera gardé.^La vitesse sera plus importante qu'une armure lourde.
 qstr_You_have_a_good_chan|Vous avez de bonnes chances d'éviter les gardes et de passer inaperçu{/e}.
 qstr_You_may_have_a_chanc|Vous avez peut-être une chance d'éviter les gardes.
 qstr_You_will_probably_ha|Il vous faudra probablement combattre les gardes.
 qstr_You_wait_for_darknes|Vous attendez que l'obscurité tombe...
 qstr_You_are_quickly_disc|Vous êtes rapidement découverts par l'ennemi.
 qstr_You_advance_stealthi|Vous avancement furtivement au plus profond de la forêt.
-qstr_You_have_evaded_the_|Vous avez échappé aux patrouilles et vous êtes glissé{/e} à proximité des ruines !
-qstr_You_have_found_the_s|Vous avez trouvé le sorcier !
 qstr_You_cannot_leave_unt|Vous ne pouvez partir avant que les gardes ne vous perdent !
-qstr_Kill_him_quickly_bef|Tuez-le rapidement avant qu'il ne s'échappe !
 qstr_Enraged_by_the_death|Enragé par la mort de {s4}, vous avez prêté serment de vengeance sur les forces de {s3}. Vous devez maintenant détruire autant d'armées de {s3} que possible dans les jours qui viennent. Vous êtes bien conscient{/e} que vos partisans sont témoins de ce serment et vous ne souhaitez pas être considéré{/e} comme parjure. Un bain de sang doit commencer maintenant !
 qstr_flooded._Somebody_or|inondé. Quelqu'un ou quelque chose doit avoir détruit les barrages de l'Isen.
 qstr_destroyed._Only_smol|détruit. Seules restent quelques ruines fumantes.
@@ -1187,7 +1204,6 @@ qstr_In_a_desperate_attem|Dans un effort désespéré de se défendre contre ses
 qstr_The_forces_of_{s2}_e|Les forces de {s2} ont établi un camp avancé dans {s15} !
 qstr_The_hosts_of_{s2}_ma|Les hôtes de {s2} repartent en arrière pour défendre leurs terres !
 qstr_{playername}_s_Reser|Les réserves de {playername}.
-qstr_{reg70}___Last_Stand|{reg70} - Dernier combat
 qstr_Gondor_has_called_fo|Le Gondor réclame votre aide !
 qstr_Gondor_is_accompanyi|Le Gondor accompagne le maréchal !
 qstr_{s5}_has_stopped_fol|{s5} à arrêté de vous suivre.
@@ -1538,7 +1554,7 @@ qstr_Lend_your_experience|Accorder à {s1} l'aide de {s3}, votre chirurgien exp�
 qstr_No_commander_should_|Aucun commandant ne devrait avoir à l'admettre, {playername}, mais j’ai passé mes hommes en revue l’autre jour, et il y a en certains qui ne savent pas par quel bout tenir une épée. Ils ont besoin de quelqu'un qui puisse leur montrer ce qu’est le courage. Vous êtes {un guerrier/une guerrière} de renom, {playername}. Pourriez-vous entraîner une partie de mes troupes pour moi ? Je vous en serai reconnaissant.
 qstr_No_commander_should_h|Aucun commandant de devrait avoir à l'admettre, {playername}, mais j’ai passé mes hommes en revue l’autre jour j'ai dû en exécuter quelques-uns pour incompétence. Ils ont besoin de quelqu'un de dur comme l’acier pour leur infliger un peu de courage, ou les tuer en essayant. Vous êtes {un guerrier/une guerrière} de renom, {playername}. Pourriez-vous entraîner quelques soldats pour moi ? Je peux faire en sorte que ça en vaille la peine pour vous.
 qstr_{s9}_asked_you_to_rai|{s9} vous a demandé de former {reg1} {s14} et de les lui amener.
-qstr_{s9}_asked_you_to_hu|{s9} vous a demandé de traquer un fugitif du nom de {s4}. On raconte qu'il serait actuellement à {s3}.
+qstr_{s9}_asked_you_to_hu|{s9} vous a demandé de traquer un traitre nommé {s4}. On pense qu'il se trouverait actuellement à {s3}.
 qstr_{s9}_asked_you_to_defe|{s9} vous a demandé de défendre 3 groupes de réfugiés en route pour {s3}.
 qstr_{s9}_asked_you_to_hun|{s9} vous a demandé de traquer 3 groupes de réfugiés en route pour {s3}.
 qstr_{s9}_asked_you_to_ca|{s9} vous a demandé de capturer les trois groupes d’esclaves en fuite et de les ramener à {s4}, en vie et en bonne santé. Il dit que les trois groupes se dirigent vers {s3}.
@@ -1697,6 +1713,9 @@ qstr_{s1}_Slaves|Esclaves {s1}
 qstr_The_{s11}_of_{s10}_a|Le {s11} de {s10} vous a demandé d'escorter quelques {s12} à {s13}.
 qstr__Guards_slaughter_hi| Gardes, abattez-le !
 qstr_Slaughter_him_for_fr|Abattez-le, pour de la chair fraîche humaine !
+qstr_near_the_smithy|près du forgeron
+qstr_near_the_local_autho|près des autorités locales
+qstr_near_the_warehouse|près de l'entrepôt
 qstr_This_is_{s5}_Command|C'est {s5}, Commandant.
 qstr_{s6}_This_place_and_|{s6} Cet endroit et les terres environnantes appartiennent à {s7} de {s8}.
 qstr_Hear_now_commander._|Écoutez, commandant. Je suis actuellement sans mission, mais je préfère rencontrer nos ennemis sur le terrain plutôt que d'attendre qu'ils viennent ici. J'ai entendu dire que vous étiez un chef compétent. Voulez-vous bien de moi ?

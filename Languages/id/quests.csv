@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} meminta Anda untuk menaikkan {reg1} {s14} dan membawa
 qst_escort_messenger|Kawal pesan ini ke {s14}
 qst_escort_messenger_text|Tidak ada
 qst_hunt_down_fugitive|Berburu {s4}
-qst_hunt_down_fugitive_text|{s9} memintamu untuk memburu buronan bernama {s4}. Dia saat ini diyakini berada di {s3}.
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 qst_bring_back_runaway_serfs|Ambil budak yang lari
 qst_bring_back_runaway_serfs_text|{s9} meminta kamu mengembalikan tiga grup budak yang lari dan kembalikan ke {2}. Dia bilang tiga grup lari ke arah {s3}.
 qst_follow_spy|Ikuti mata-mata ke tempat rapat

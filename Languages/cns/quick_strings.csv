@@ -1,8 +1,12 @@
 qstr_Received_{reg0}_dama|受到{reg0}点伤害。
-; qstr_Siege_weapon_damaged|Siege weapon damaged {reg10} agents
 qstr_Gate_is_breached!|大门已被攻破！
 qstr_Gate_opens..._You_ha|大门缓缓打开…你已经站在了中土最神圣的土地上！
 qstr_Secret_place_discove|发现密地
+; qstr_Nothing_of_interest.|Nothing of interest...
+; qstr_No_inventory_space..|No inventory space...
+; qstr_We_don_t_know_you_en|We don't know you enough to give you this...
+; qstr_Take_it_friend_it_s_|Take it, friend, it's yours.
+; qstr_Take_it_we_don_t_nee|Take it, we don't need it anyway.
 qstr_Next_Page|下一页
 qstr_Action|互动
 qstr_Mount|骑乘
@@ -97,6 +101,7 @@ qstr_Siege_AI:__|攻城AI：
 qstr_Basic__better_perfor|基础（电脑性能更好）
 qstr_Advanced|高级
 qstr_Campaign_difficulty:|战役难度：
+; qstr_Brutal|Brutal
 qstr_Hard|困难
 qstr_Default|默认
 qstr_Easy|简单
@@ -115,13 +120,13 @@ qstr_Preferred_Camera_Mod|首选相机模式：
 qstr_Default_Camera|默认相机
 qstr_Free_Mode_Custom_Cam|自由模式自定义相机
 qstr_Fixed_Over_The_Shoul|固定相机—肩膀
-qstr_Prevent_AI_from_taki|防止电脑采取防御措施
 qstr_Brighter_Nights:__|夜晚更亮：
 qstr_Done|完成
 qstr_Gameplay_Tweaks|游戏调整…
 ; qstr_Set_to_Native_if_you|Set to Native if you encounter any types of AI problems during battle.
 ; qstr_Disable_cutscenes_if|Disable cutscenes if you encounter any crashes at the start of the war.
-; qstr_Campaign_Difficulty_a|Campaign Difficulty affects abundance of volunteers, lord party size, and strength income for allied factions.
+; qstr_Campaign_Difficulty_a|Campaign Difficulty affects abundance of volunteers, lord party size, initial player faction strength, basic strength income for allied factions, and strength income from player victories.
+; qstr_Please_be_aware_that|Please be aware that the game is balanced for default difficulty. The other difficulty settings are not tested.
 ; qstr_Be_aware_that_many_q|Be aware that many quests and campaign mechanics scale with player level. Increasing this setting will give you more time to prepare, but will make the war unfold quicker.
 ; qstr_Requires_TLD_NewForm|Requires TLD NewFormAI
 qstr_Troop_Tree|兵种树
@@ -141,7 +146,7 @@ qstr_Extended_Formations_|扩展阵型和AI选项
 qstr_Put_player_in_divisi|把玩家放入分队：
 qstr_None|无
 qstr_Army_rotates_to_face|部队调整到面向敌军中央
-qstr_Prevent_AI_from_takin|防止电脑采取防御措施
+qstr_Prevent_AI_from_taki|防止电脑采取防御措施
 qstr_AI_Controls_Troops_W|当玩家倒下的时候AI控制部队：
 qstr_You_gained_{reg0}_Re|你获得了{s0}的{reg0}资源点
 qstr_You_lost_{reg0}_Reso|你失去了{s0}的{reg0}资源点
@@ -689,12 +694,6 @@ qstr_have_taken_measure_o|已增加所属派系当前势力值。
 qstr_loses_Faction_Streng|当补给线被打断会失去势力值。
 qstr_loses_Faction_Strengt|当势力营地被摧毁会失去势力值。
 qstr_gains_Faction_Streng|当你的胜利消息传播开来时会获得势力值。
-; qstr_Notice:_Isengard_Las|Notice: Isengard Last Stand quest cancelled for savegame compatibility reasons. Isengard can now be sieged like a regular city.
-; qstr_Hobbit_quest_aborted|Hobbit quest aborted for compatibility reasons. Hobbits will now only appear after certain conditions are met.
-; qstr_This_update_has_chan|This update has changed the assignment of some skills to their attributes. If you would like to review your companions' skills, you can now import/export them if you ask them about their skills from the party menu.
-qstr_Something_wrong_not_|事情有些不太对劲，我们没有足够的士兵来移除。
-; qstr_Troop:_{s6}___Level:|Troop: {s6} - Level: {reg1}
-; qstr_{reg6}_Centers_Left_|{reg6} Centers Left for {s2}
 qstr_Raiders|突袭者
 qstr_have_won_the_sea_bat|敌人赢得了海战的胜利，这打击了你的士兵们的士气。这些敌人将利用这次击败更加频繁地进攻。
 qstr_loses_Faction_Strength|受到破坏性的突袭会失去势力值
@@ -759,10 +758,30 @@ qstr_You_got_{reg1}_exper|你在熊形态下获得了{reg1}点经验。
 qstr_Your_ability_to_chan|你换皮的能力已经显现。从现在起，你可以保持人形或是换皮为熊。
 qstr_You_change_back_to_h|你变回人形……
 ; qstr_Refill_Ammunition|Refill Ammunition
+; qstr_Take_a_closer_look..|Take a closer look...
+; qstr_Look_around...|Look around...
+; qstr_You_see_the_Pelennor|You see the Pelennor laid out before you. Behind that, faintly, the ruin of Osgiliath, once the capital of Gondor, of which Minas Tirith was only a fortress. And then, looming on the verge of sight, the jagged edges of the Mountains of Mordor, and beyond that, again a yet deeper gloom. Ever have the Men of the White City dwelt in sight of that shadow.
+; qstr_As_you_look_from_the|As you look from the Island’s high prow down to where Anduin, the Great River, splits into two arms, you understand why Cair Andros means 'Ship of Long Foam'.
+; qstr_This_place_was_once_|This place was once an elven haven, but today only ruins tell of its inheritance. Few still know their true meaning.
+; qstr_Tirith_Aear_the_Sea_|Tirith Aear, the Sea-ward Tower - Its slow bell has been guiding sailors for many centuries.
+; qstr_You_kneel_to_pay_you|You kneel to pay your respects to the fallen rulers of this fair realm. Beside you, a shield-maiden of Rohan raises her voice in song. Ne sceal hearpan sweg wigend weccean; ne winfaet gylden guma sceal healdan! Your heart aches to hear her words.
+; qstr_You_wonder_about_the|You wonder about the two rows of burial mounds in front of the gates, yet as a mere {s24}, you do not understand their significance.
+; qstr_Alkarondas_Castle_of|Alkarondas, Castle of the Sea. Named after the famed flagship of Ar-Pharazôn, this great black ship is the pride of the corsair fleet - and the terror of Gondor's coasts.
+; qstr_The_Mmakil_greatest_|The Mûmakil, greatest beasts of this age! Terrible in warfare, bearing towers and archers into battle. Their trunks calling like trumpets of war will make the Men of Gondor tremble with fear.
+; qstr_A_new_Power_is_risin|A new Power is rising. Against it the old alliances and policies will not stand. Its victory is at hand; and there will be rich reward for those that aided it.
+; qstr_As_you_explore_the_c|As you explore the caverns underneath the Ring of Isengard, where thousands of orcs work to supply the growing armies of the White Hand, you gain confidence in the rise of a new power and the demise of the old world.
+; qstr_The_Ring_of_Isengard|The Ring of Isengard is flooded, its rocky walls lay in ruin. It will take a while until all the filth of Saruman is washed away and the Isen may run clean again. Who knows, maybe this place will yet become again a garden filled with orchards and trees and clean water.
+; qstr_Amon_Hen_the_Hill_of|Amon Hen, the Hill of Seeing, grants a commanding view over the surrounding lands. However, if you sought the ancient high seat in hope of gaining directions on your own course, you now realize that this on you to decide.
+; qstr_As_the_lights_begin_|As the lights begin to flicker and dance, you see them: grim faces and evil, and noble faces and sad. Many faces proud and fair, and weeds in their silver hair. But all foul, all rotting, all dead.
+; qstr_This_must_be_the_spi|This must be the spider nest. Without hesitation, you light a torch and burn down the webs.
+; qstr_A_flock_of_ravens_ci|A flock of ravens circles around you. You do not understand what they say, what news they bring from distant lands. Yet you feel comforted, knowing that these wise animals are of old friends to the King under the Mountain.
+; qstr_Looking_around_you_d|Looking around, you do not understand the significance of this place.
+; qstr_Looking_around_you_f|Looking around, you feel that you do not know this people well enough to understand the significance of this place.
 qstr_Your_mount_stumbles!|你的坐骑走路磕磕绊绊！看起来是瘸腿了。
 qstr_Bitten_by_your_own_w|你被自己的座狼咬了!
 qstr_You_weigh_too_much_f|你的身板矮种马经受不起！
 qstr_Your_mount_rears_ref|你的坐骑受到惊吓！拒绝服从你的命令！
+qstr_Delivered_{reg60}_da|造成了{reg60} 点伤害。
 qstr_Cannot_Change_Camera|无法在第一人称下调整视角模式。
 qstr_Switch_Back_to_3rd_P|切换回第三人称以便调整视角模式。
 qstr_Fixed_Custom_Camera|固定自定义相机
@@ -787,8 +806,6 @@ qstr_You_look_through_Hen|你端详汉那斯安南，也就是落日之窗。美
 ; qstr_You_find_yourself_in_|You find yourself in a deep cavern. Your hackles rise as you look around you, and you begin to feel a strange sense of danger. Raising your weapon high, you snarl your defiance at the unseen foe in this place. This may have been a place of wonder once... but now, with the true power you have gained, you realize you have nothing to fear from the forgotten past of a broken world.
 ; qstr_With_trepidation_you|With trepidation, you look within the silver basin. The water shows you visions of horror; blood and terror and grief. You recoil... but then, the visions vanish and you see instead a clear night sky, with what seems to be a silver boat floating across the expanse. A sense of calm washes over you. Hope is not wholly gone.
 ; qstr_The_Lady_s_garden_li|The Lady's garden lies peacefully in the bright daylight. You sense nothing out of the ordinary...
-; qstr_You_kneel_to_pay_you|You kneel to pay your respects to the fallen rulers of this fair realm. Beside you, a shield-maiden of Rohan raises her voice in song. Ne sceal hearpan sweg wigend weccean; ne winfaet gylden guma sceal healdan! Your heart aches to hear her words.
-; qstr_You_wonder_about_the|You wonder about the two rows of burial mounds in front of the gates, yet as a mere {s24}, you do not understand their significance.
 ; qstr_Halt!_You_are_not_al|Halt! You are not allowed to enter here!
 ; qstr_Halt!_You_are_not_all|Halt! You are not allowed to enter here without the Lady's leave!
 qstr_While_visiting_towns|当访问城镇、据点和营地时，你可以与四处走动的人们谈话。不同派系的人有不同的事可说—一些能够让你理解他们的想法，其它的会分享他们的传闻。他们都能够让你更加了解他们的文化和派系，有时他们可能知道找到神秘地点的线索，或是在野外生存和在魔戒圣战中战斗的技巧和窍门。
@@ -808,8 +825,6 @@ qstr_Division_{reg1}_{s2}_g|{reg1}分队{s2}前往已记录的位置……
 qstr_Division_{reg1}_{s2}_f|{reg1}分队{s2}排成线阵(已记录)。
 qstr_Division_{reg1}_{s2}_fo|{reg1}分队{s2}排成{reg0}排(已记录)。
 ; qstr_A_Nazgul_on_a_winged|A Nazgul on a winged steed circles over the battle field!
-qstr_Delivered_{reg60}_da|造成了{reg60} 点伤害。
-qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
 qstr_Your_bear_form_has_{|你的熊形态有{reg2}/{reg1}HP！
 qstr_Some_of_your_human_t|你的一些人类部队并不畏惧黑夜。（夜间部队不受夜间惩罚的影响）
 qstr_You_are_filled_with_|当你盯着敌人时，你充满愤怒（狂战士能力激活）。
@@ -869,9 +884,11 @@ qstr_Ballista:_turn_CURSO|弩炮：转向：移动光标，瞄准：左SHIFT，�
 qstr_Ballista:_out_of_ammo|弩炮：弹药用尽！
 qstr_The_ladders_on_Deepi|有梯子搭在城墙上了！小心！
 qstr_THREE.._TWO..._ONE..|三！二！一！冲！
-qstr_You_have_come_upon_t|你来到了阿蒙汉山，观望山上的一处废墟，一个坐落在观察点的刚铎瞭望塔。你感觉得到这个地方一度十分伟大，但已被遗忘很久。
-qstr_You_have_come_upon_th|你来到了死亡沼泽，在最后联盟大战中达哥拉（战争平原）的战场所在^^这片沼泽地吞噬了曾经长满草的平原，现在，唯一的绿色就是阴暗水面暗色油腻表面上的青灰色浮渣^^死掉的杂草还有腐烂的芦苇在薄雾里忽闪忽现，像是被遗忘许久的夏日的残破阴影，还有人类、精灵和半兽人的尸体阴暗的深处漂浮^^这里的空气令人感觉寒冷并潮呼呼的，而且你经不住颤抖，因为你看见水面下的精灵眼中闪烁着烛光。
-qstr_You_have_entered_the|你已经进入了一度被称为巨绿林的幽暗密林的南部森林^^多尔哥多堡垒就在附近，它在森林里投下了一道黑影。这里的森林让人感觉虚弱而且充满腐烂。古老的橡树表面都腐烂且被真菌覆盖，巨大的缠结的蜘蛛网从树干延伸到树干^^这里的空气总是既不畅又黑暗而且闷热，感觉起来就好像你在慢慢地窒息
+; qstr_You_have_come_upon_t|You have come upon the ruins of Amon Hen, the Hill of Sight, a Gondorian watch-tower atop which rests the Seat of Seeing.^^You feel that you should seek the high-seat and maybe gain a glimpse of far-sight that may counsel you on your further course.
+; qstr_You_have_come_upon_th|You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^ In the darkness of night, you see lights like misty flames flickering slowly above unseen candles. Oddly compelled, you follow them deeper into the maze of puddles and streams.
+; qstr_You_have_come_upon_the|You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^The marshlands have swallowed up what was once a grassy plain, and now the only green is the scum of livid weed on the dark greasy surfaces of the sullen waters. ^^In the grey light of day, you don't see anything that catches your interest.
+; qstr_You_have_entered_the|You have entered the woods of Southern Mirkwood, once known as Greenwood the Great^^The woods feel sickly and full of decay. The place is crawling with spiders. There must be a nest around here somewhere...
+; qstr_You_have_found_the_G|You have found the Glittering Caves, one of the marvels of the Northern World.
 qstr_You_have_found_the_D|你发现了传说中存放长矛的矮人仓库，把你的发现向{s3}报告
 qstr_Leave_the_Warehouse?|离开仓库？
 qstr_Leave_the_place_in_s|悄悄地离开此地？
@@ -889,10 +906,15 @@ qstr_The_guards_have_spott|警卫看到了你！
 qstr_Alarm_Level_is_now_at_|警报级别：2！
 qstr_Enemy_reinforcements_|敌人增援到达。
 qstr_Venture_deeper_into_|深入林中，找到前进的道路。
+; qstr_You_have_evaded_the_|You have evaded the patrols and crept close to the ruins. Find and kill the sorcerer! Do not let the guards stop you.
+; qstr_Kill_the_Sorcerer!|Kill the Sorcerer!
 qstr_The_sorcerer_has_fle|巫师已经逃跑了!
 qstr_Report_this_ill_news|马上向凯兰崔尔女士报告这个坏消息。
-qstr_The_sorcerer_is_flee|巫师正在逃跑！干掉他！
+; qstr_You_have_been_spotte|You have been spotted! Fight!
+; qstr_The_ritual_has_begun|The ritual has begun! You must hasten to disturb it!
 qstr_The_sorcerer_has_joi|巫师加入了战斗！杀了他！
+qstr_The_sorcerer_is_flee|巫师正在逃跑！干掉他！
+; qstr_base_troop:_{reg77}_|base troop: {reg77}, upgrade: {reg78}
 qstr_The_sorcerer_is_dead|巫师已死！
 qstr_The_battle_is_won!|战斗胜利！
 qstr_A_band_of_tribal_orc|一队部落半兽人出现了！
@@ -925,10 +947,9 @@ qstr_Look_at_my_over_the_|看看我的头像，{playername}！我真漂亮！
 qstr_You_wish_old_man_my_|如您所愿，老人家，我的头像其实更好！
 qstr_You_should_really_se|你真应该看看摄政王迪耐瑟二世的书脸，他的照片赞极了！
 qstr_Press_Space_to_conti|请按空格键继续...
-; qstr_by_level|by level
-; qstr_can_only_be_set_at_g|can only be set at game start; see options to adjust level
-; qstr_by_day|by day
-; qstr_can_only_be_set_at_ga|can only be set at game start; see options to adjust day
+; qstr_BY_LEVEL_/_by_day|BY LEVEL / by day
+; qstr_by_level_/_BY_DAY|by level / BY DAY
+; qstr_War_start_mode_can_o|War start mode can only be set at game start; see options to adjust level or date.
 qstr_ON|开
 qstr_OFF|关
 ; qstr_If_you_are_new_to_TL|If you are new to TLD, tutorial messages are recommended
@@ -1091,8 +1112,7 @@ qstr_the_Hall|大厅
 qstr_the_Great_Chamber_of|瑟瑞尔大殿
 qstr_Stay_indoors_for_som|驻扎一段时间(每晚{reg1}资源点)
 qstr_Camp_outside_for_som|露营一段时间(无额外费用)
-; qstr_As_you_enter_the_vas|As you enter the vast caverns underneath the Ring of Isengard, where thousands of orcs work to supply the growing armies of the White Hand, you gain confidence in the rise of a new power and the demise of the old world.
-; qstr_You_have_found_the_G|You have found the Glittering Caves, one of the marvels of the Northern World.
+; qstr_You_are_not_allowed_|You are not allowed to enter.
 ; qstr_As_the_party_member_|As the party member with the highest Bargainer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to find the most notable persons in town. [Costs {reg5}/{reg6} influence]
 ; qstr_You_have_already_fou|You have already found all persons of interest.
 ; qstr_the_captain_of_the_g|the captain of the garrison, and the civil authority.
@@ -1133,17 +1153,14 @@ qstr_You_defeated_{reg5}_e|你击败了{reg5}个敌人。
 qstr_You_failed_to_defeat|你未能打败任何敌人。
 qstr_The_sorcerer_slain_y|巫师被杀掉了，你和你的同伴匆匆地包扎了伤口然后趁着夜色撤退了。嘶哑的声音在你身后呐喊并且你感到在阴影中许多灼热的目光愤怒地搜寻着你们的身影。很快愤怒变成了沮丧追赶的声音也渐渐远去，取而代之的是幽暗密林平时沉重的寂静。你成功地逃脱了。
 qstr_The_sorcerer_slipped|师从你的手上逃脱并且溜进属于他们的黑暗领域。心中承受着失败的重担，你和你的同伴快速地处理了伤口并撤入夜色当中。嘲笑的声音在你身后尖锐地响起而且你感受到许多燃烧的眼睛快要穿透夜晚的阴影似的紧盯着你们。嘲笑和侮辱很快就幸运地消散了，取而代之的是幽暗密林平时沉重的寂静。你成功地逃脱了。
-qstr_You_approach_a_heavi|你来到了密林中一个戒备森严的地方……^^现在你得决定是独自冒险探索，还是带上几名士兵一起。
+; qstr_You_approach_a_heavi|You approach a heavily guarded region of the forest... ^^ You have to decide whether you venture forward on your own, or take some troops with you. ^Choose your actions carefully, because the more attention you attract, the better the sorcerer will be guarded.^Speed will be more important than heavy armor.
 qstr_You_have_a_good_chan|你现在很有机会避开警卫，悄无声息地溜过去。
 qstr_You_may_have_a_chanc|你有机会避开警卫。
 qstr_You_will_probably_ha|你可能得与警卫血战。
 qstr_You_wait_for_darknes|你等待黑暗的降临……
 qstr_You_are_quickly_disc|你很快就会被敌人发现了。
 qstr_You_advance_stealthi|你提前悄悄地进入森林.
-qstr_You_have_evaded_the_|你躲过了巡逻队,并且悄悄地接近废墟！
-qstr_You_have_found_the_s|你已经找到了巫师！
 qstr_You_cannot_leave_unt|直到警卫失去你的踪迹前你不能离开！
-qstr_Kill_him_quickly_bef|在他逃脱前迅速杀了他！
 qstr_Enraged_by_the_death|{s4}的死亡彻底激怒了你，你赌咒发誓：要向{s3}复仇，在未来的日子里你将尽可能多地消灭{s3}的军队。你很清楚你的跟随者是你复仇誓言的见证者，而且你不想成为破誓者。一个血腥复仇已经开始了！
 qstr_flooded._Somebody_or|已经被淹没了。一定有人破坏了艾辛河水坝。
 qstr_destroyed._Only_smol|已经被摧毁了。只留有冒着浓烟的废墟。
@@ -1187,7 +1204,6 @@ qstr_In_a_desperate_attem|为了击败他的敌人，索隆在绝望中派出了
 qstr_The_forces_of_{s2}_e|{s2}的军队在{s15}建立了前线营地！
 qstr_The_hosts_of_{s2}_ma|{s2}的军队前来保卫他们的家园！
 qstr_{playername}_s_Reser|{playername}的预备队
-; qstr_{reg70}___Last_Stand|{reg70} - Last Stand
 qstr_Gondor_has_called_fo|刚铎已呼叫援助！
 qstr_Gondor_is_accompanyi|刚铎正在听从元帅的号令！
 qstr_{s5}_has_stopped_fol|{s5}不再跟随你。
@@ -1538,7 +1554,7 @@ qstr_Lend_your_experience|将你部队中经验丰富的外科医生{s3}借给{s
 qstr_No_commander_should_|{playername}，这件事儿对于一名指挥官来说真是难以启齿。我前些天竟然发现我的一些士兵分不清剑的首尾。我希望有人能向他们展示何为勇气何为技艺。你是一位声名远扬的战士，{playername}。我能请求你能帮我训练一些士兵么？我将由衷的感激你。
 qstr_No_commander_should_h|{playername}，这件事儿对于一名指挥官来说真是难以启齿。我前些天才发现我的部分士兵特别的散漫。我希望有人能够重塑他们的风骨，或是及时终止他们无谓的努力。你是一位声名远扬的战士，{playername}。我能请求你能帮我训练一些士兵么？我会支付你高额回报的。
 qstr_{s9}_asked_you_to_rai|{s9}希望你在{s14}为{reg1}征税并带给他。
-qstr_{s9}_asked_you_to_hu|{s9}希望你去追捕名为{s4}的逃犯。根据报告他目前位于{s3}。
+; qstr_{s9}_asked_you_to_hu|{s9} asked you to hunt down a traitor named {s4}. He is currently believed to be at {s3}.
 qstr_{s9}_asked_you_to_defe|{s9}希望你能够保护3队去往{s3}的难民。
 qstr_{s9}_asked_you_to_hun|{s9}希望你能够猎杀3队去往{s3}的难民。
 qstr_{s9}_asked_you_to_ca|{s9}希望你把三队逃跑的奴隶带回{s4}。他说这三队人全都逃向{s3}。
@@ -1697,6 +1713,9 @@ qstr_{s1}_Slaves|{s1}奴隶
 qstr_The_{s11}_of_{s10}_a|{s10}的{s11}希望你能护送一些{s12}到{s13}。
 qstr__Guards_slaughter_hi|守卫，解决掉他！
 qstr_Slaughter_him_for_fr|宰了他吃肉！
+; qstr_near_the_smithy|near the smithy
+; qstr_near_the_local_autho|near the local authority
+; qstr_near_the_warehouse|near the warehouse
 qstr_This_is_{s5}_Command|这里是{s5}，指挥官。
 qstr_{s6}_This_place_and_|{s6}这里和它的周边都属于{s8}的{s7}
 ; qstr_Hear_now_commander._|Hear now, commander. I am currently out of assignment, yet I would rather meet our enemies in the field than wait for them to come here. I hear you're a capable leader. Would you have me?

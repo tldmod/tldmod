@@ -255,7 +255,7 @@ menu_besiegers_camp_with_allies|{s1} zůstává v obležení. Zástavy {s2} vlaj
 mno_talk_to_siege_commander|Požádej o schůzku s velitelem.
 mno_join_siege_with_allies|Připoj se k dalšímu útoku.
 mno_join_siege_stay_back|Nařiď tvým vojákům, aby se přidali k dalšímu útoku bez tebe.
-menu_moria_must_escape|^^Zdá se, že kniha pojednává o posledním pokusu trpaslíků o znovuosídlení Morie. Pokus, který zjevně skončil děsivou smrtí všech zúčastněných. Když přemýšlíte o jejich temném osudu, najednou uslyšíte drsné výkřiky a spěchající zvuk mnoha nohou.^ Přicházejí!^  Když rychle opustíte místnost, všimnete si, že zvuky vycházejí ze síně. Nezbývá vám nic jiného, ​​než utéct druhým směrem, do úzkého točitého tunelu a dolů... ^...^Po několika hodinách pochopíte, že jste ztraceni hluboko v Morii a potřebujete najít cestu ven.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Najdi cestu ven!
 menu_castle_outside| Před tebou je {s2}. {s11} {s3} {s4}
 mno_cheat_steal_book_door|Získat knihu
@@ -349,17 +349,6 @@ menu_legendary_place|^^^^Následoval jsi zvěsti a našel {s1}. Nyní můžeš p
 mno_explore|Prozkoumej toto místo.
 menu_ring_hunter_lair|^^^^Sledoval jsi stopy Lovců Prstenu skrz Temný hvozd a došel jsi k {s1}. Vidíš je, jak se chystají odejít s truhlou.
 mno_attack_lair|Zaútoč na ně hned
-mno_leave_bandit_lair|Prozatím odejít.
-menu_raftmen|^^^^Následuješ řeku tekoucí na jihovýchod k Rhûnu, doufajíc že najdeš starou obchodní cestu.^^ Po nějaké době, dorazíš do malé vesnice která je postavení podél břehu řeky.^^Ptáš se vesničanů jak bys mohl dojít k cestě a jsi naveden k dvojici mužů kteří splavují řeku na voru.^^Chce to trochu vyjednávání ale zařídíš aby tě muži převezly po proudu řeky.
-mno_go_with_the_raftmen|Vezmi si vor do Dorwinionu
-menu_ride_to_dorwinion|^^^^Odpočíváš a užíváš si příjemné počasí zatímco muži ovládají vor po proudu řeky. Bystrá řeka, ledová a čistá uprostřed vodopádů a peřejí Osamělé Hory, zde je vlažná, klidná a blátivá.^^ V odpoledním slunci sleduješ kolem proplouvající zvlněné pláně a zelené lesy, zatímco vor pluje podél klikatých záhybů. Oblast je řídce posetá malými usedlostmi a vinicemi s nízkými kamennými hradbam a občas míjíš kůlovou chatu schovanou v rákosí.^^Klidný pohyb raftu ti pomůže usnout...
-mno_ride_to_dorwinion_next|Další...
-menu_amath_dollen_fortress|^^^^Z tvého zdřímání se vzbudíš pozdě odpoledne a zakrátko dorazíš k molu, kde muži kotví vor. Nasměrují vás na úzkou stezku, která zmizí v bažinaté trávě, a postaví tábor, během čekání na váš návrat.^^Jdeš po stezce, která rychle stoupá z mokřadů na travnatou pláň, a jdeš, dokud se nenapojí na starou obchodní cestu.^^Po nějaké době vidíš pevnost banditů.
-mno_bandit_fortress_with_companions|Přibliž se k Pevnosti Banditů pouze s tvým společníkem a pokuste se si promluvit s jejich vůdcem.
-mno_bandit_fortress_with_army|Zaútoč na pevnost banditů se všemi tvými muži.
-mno_bandit_fortress_against_easterlings|Braň pevnost proti obléhání
-mno_bandit_fortress_spirits|Jdi si promluvit s duchy.
-mno_leave_amath_dollen_fortress|Prozatím odejít.
 menu_gondor_reinforcement_event|^^^^^Svítí majáky Gondoru, Minas Tirith žádá o pomoc! ^^ Pánové jižních knížectví nyní pochodují na sever, aby bránili Bílé město před přicházející temnotou.
 mno_gondor_reinforcement_event_close|Zavřít
 menu_gondor_beacons|Podíváš se nahoru na {s1}, jeden z výstražných majáků Gondoru, který se používal ke spuštění poplachu v severním a jižním Gondoru.
@@ -455,15 +444,6 @@ menu_animal_ambush_fail|Zvířata vás koušou a trhají {reg0?,: a tvého spole
 menu_isengard_flooding|^^^^^@Jsi obklopen mrtvými nepřáteli a vítěznými spojenci, včetně Entů; řvou, duní a troubí, až kameny praskají a padají všude kolem Orthancké věže. Jsou jako vyjící vichřice, lámou sloupy, vrhají laviny balvanů dolů šachtami, vyhazují do vzduchu obrovské kamenné desky jako listí... Nic takového jsi ještě nikdy neviděl.^^Bregalad -- nebo Quickbeam, jak ho znáš -- projde kolem a zastaví se, aby řekl, '{playername}! Opatrně! Drž se dál od věže -- brzy strhneme přehradu a přivedeme Isen do tohoto údolí, na krátkou dobu. Zjistíš že bude pro tebe těžké zde stát, myslím! Rychle, vzal sis jeho radu srdci a spěcháš pryč od Orthancu.^^ Kolem půlnoci se Železný Pas začíná plnit černými vkrádajícími se potoky a tůněmi. Nemůžeš si pomoci, ale chvěješ se, když vidíš kouř a páru stoupající ve velkých sloupech a velkou spirálu páry stoupající a klikatící se kolem věže, až to připomíná vysoký vrchol mraku, vespod ohnivý a nahoře osvícený měsícem. Hněv entů je pomalý, ale má zdrcující sílu...
 mno_isengard_continue|Pokračovat
 menu_build_your_scene|Zde si můžeš vytvořit vlastní bitevní scénář, použitím jednoho ze slotů níže a Editačního módu (musíš nejdříve přepnout editační mód na ZAPNOUT v M&B spouštěcí obrazovce v Nastavení). Poté můžeš odeslat scénář, který jsi vytvořil (jmenovitě, sco soubory ze složky TLD/SceneObj)  developerskému týmu TLD, a pokud bude dobrý, může se objevit v pozdějším vydání jako jeden z náhodných bojovišť!^^ Zkus specifikovat ve kterém regionu na mapě chceš aby se scénář odehrával.^ Pár rad: vyhni se hluboké vodě, strmým horám  a dalším nedosažitelným místům pokud nejsi zkušený vývojář a nevíš jak zabránit AI jednotkám aby chodily tam kde nechceš, a vytvoř AI síť na jiném místě.^ (Vložení #0-1 je pro útočníky, #4 pro obránce, nedotýkej se #5-8
-mno_scene1|Velká pláň (file scn custom 1.sco)
-mno_scene2|Střední pláň (file scn custom 2.sco)
-mno_scene3|Malá pláň (file scn custom 3.sco)
-mno_scene4|Velká step (file scn custom 4.sco)
-mno_scene5|Střední step (file scn custom 5.sco)
-mno_scene6|Malá step (file scn custom 6.sco)
-mno_scene7|Velký les (file scn custom 7.sco)
-mno_scene8|Střední les (file scn custom 8.sco)
-mno_scene9|Malý les (file scn custom 9.sco)
 mno_back_3dot|Zpět...
 mno_back|Jdi zpět.
 mno_next|další...

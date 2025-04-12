@@ -255,7 +255,7 @@ menu_besiegers_camp_with_allies|{s1} kuşatma altında. Kuşatmacıların kampı
 mno_talk_to_siege_commander|Komutan ile görüşme talep et.
 mno_join_siege_with_allies|Sıradaki saldırıya katıl
 mno_join_siege_stay_back|Askerlerine sonraki mücadelede sensiz savaşmalarını emret.
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Çıkış yolunu bul!
 menu_castle_outside|Dışarıdasın {s2}.{s11} {s3} {s4}
 mno_cheat_steal_book_door|Kitabı al
@@ -349,17 +349,6 @@ menu_legendary_place|^^^^Söylentileri takip ettin ve {s1}'i buldun. Şimdi bura
 mno_explore|Etrafı keşfet
 menu_ring_hunter_lair|^^^^Yüzük avcılarının izini Kuyutormanı'nın içinden takip ettin ve {s1}'e vardın. Bir sandıkla gitmeye hazırlandıklarını görüyorsun.
 mno_attack_lair|Onlara şimdi saldır
-mno_leave_bandit_lair|Şimdilik ayrıl
-; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
-; mno_go_with_the_raftmen|Take the raft to Dorwinion
-; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
-mno_ride_to_dorwinion_next|Sonraki...
-; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
-; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
-; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
-; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
-; mno_bandit_fortress_spirits|Go talk with the spirits.
-mno_leave_amath_dollen_fortress|Şimdilik ayrıl
 menu_gondor_reinforcement_event|^^^^^Gondor işaret ateşleri hazır, Minas Tirith yardım çagrısı yapıyor!^^Güney topraklarının lordları gelecek olan karanlıga karşı Ak Şehri savunmak için kuzeye ilerliyor.
 mno_gondor_reinforcement_event_close|Kapat
 menu_gondor_beacons|Bir zamanlar kuzeyden güney Gondor'a tehlike sinyali veren Gondor işaret kulelerinden biri {s1} bakıyorsun.
@@ -455,15 +444,6 @@ menu_animal_ambush_fail|Hayvanlar sana {reg0?,: ve yoldaşına{reg2?s,:,}} dogru
 menu_isengard_flooding|^^^^^@Ölü düşmanlar ve zafer kazanmış müttefikler tarafından çevrili durumdasın, Ent'ler dahil; kükreyerek, gürleyerek ve trompet çalarak, taşların çatladıgı ve Orthanc Kulesi etrafında düştügü bir ses dalgası yaratıyorlar. Adeta uguldayan bir fırtına gibi, sütunları kırıyor, taşların lavinelerini şaftlara dogru savuruyor, büyük taş levhalarını yapraklar gibi havaya fırlatıyorlar... Daha önce hiç görmedigin bir manzara gibi.^^ Bregalad - ya da onu tanıdıgın gibi Quickbeam - yanından geçiyor ve sadece şunu söyleyip duruyor, '{playername}! Dikkat! Kuleden uzak dur -- yakında barajı kıracagız ve Isen'i bu vadiye getirecegiz, kısa bir süreligine. Burada durmak oldukça zor olacaktır, diye düşünüyorum!' Hızlıca, onun tavsiyesini dinleyip Orthanc'tan uzaklaşıyorsun.^^ Yaklaşık gece yarısında, Isengard sürünen kara akıntılar ve göletlerle dolmaya başlıyor. Büyük sütunlar halinde yükselen duman ve buharı görünce ürpermekten kendini alamıyorsun ve bu buharın Kulenin etrafında yükselip büyük bir sarmal oluşturdugunu görüyorsun, adeta alttan alevli, üstten ay ışıgı vuran bulanık bir zirve... Ent'lerin öfkesi yavaş, ancak kararlı bir güce sahip...
 mno_isengard_continue|Devam et
 menu_build_your_scene|Aşagıda verilen yuvalardan birini ve oyun düzenleme modunu kullanarak kendi savaş sahnenizi oluşturabilirsiniz (önce M&B Başlangıç ekranı Seçeneklerinde düzenleme modunu AÇIK duruma getirmeniz, ardından düzenleme moduna erişmek için bir sahnede Ctrl + E tuşlarına basmanız gerekir). Daha sonra oluşturdugunuz sahneleri (yani, TLD / SceneObj klasöründen sco dosyaları) TLD'nin geliştirici ekibine gönderebilirsiniz ve sahneniz iyiyse, sonraki sürümlerde rastgele savaş alanlarından biri olarak görünebilir!^^ Sahnenizin görünmesini istediginiz haritada hangi bölgeyi belirlemeye çalışın.^ Birkaç ipucu: deneyimli bir sahne yapımcısı degilseniz ve yapay zeka birliklerinin istemediginiz yerde yürümesini nasıl engelleyeceginizi ve diger yerlerde yapay zeka örgüsü oluşturmayı bilmiyorsanız derin sulardan, sarp daglardan ve diger geçilmez yerlerden kaçının.^ (Girişler # 0-1 saldırganlar içindir, # 4 savunanlar içindir, # 5-8'e dokunmayın)
-mno_scene1|Büyük düzlük (file scn custom 1.sco)
-mno_scene2|Orta düzlük (file scn custom 2.sco)
-mno_scene3|Küçük düzlük (file scn custom 3.sco)
-mno_scene4|Büyük kırsal (file scn custom 4.sco)
-mno_scene5|Orta Kırsal (file scn custom 5.sco)
-mno_scene6|Küçük kırsal (file scn custom 6.sco)
-mno_scene7|Büyük orman (file scn custom 7.sco)
-mno_scene8|Orta orman (file scn custom 8.sco)
-mno_scene9|Küçük orman (file scn custom 9.sco)
 mno_back_3dot|Geri...
 mno_back|Geri dön
 mno_next|Sonraki...

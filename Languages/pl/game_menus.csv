@@ -255,7 +255,7 @@ menu_besiegers_camp_with_allies|{s1} jest pod oblężeniem wojsk, którymi dowod
 mno_talk_to_siege_commander| Zażądaj spotkania z dowódcą.
 mno_join_siege_with_allies|Przyłącz się do następnego ataku na mury.
 mno_join_siege_stay_back|Rozkaż swoim żołnierzom, by bez ciebie przyłączyli się do następnego ataku.
-menu_moria_must_escape|^^ Książka zdaje się opisywać ostatnią próbę krasnoludów przesiedlenia się do Morii. Próby, która najwyraźniej zakończyła się makabryczną śmiercią wszystkich zaangażowanych. Gdy zastanawiasz się nad ich mrocznym losem, nagle słyszysz ostre krzyki i odgłos wielu stóp. ^ Nadchodzą! ^ Szybko opuszczając komnatę, zauważasz, że dźwięki dochodzą z korytarza. Nie masz innego wyboru, jak tylko uciekać w przeciwnym kierunku, do wąskiego, krętego tunelu i w dół...^...^ Po kilku godzinach rozumiesz, że zgubiłeś się głęboko w Morii i musisz znaleźć wyjście.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Znajdź drogę powrotną!
 menu_castle_outside|W pobliżu znajduje się {s2}.{s11} {s3} {s4}
 mno_cheat_steal_book_door|Zabierz księgę.
@@ -349,17 +349,6 @@ menu_legendary_place|^^^^Ty postępowałeś zgodnie z pogłoskami i znalazłeś 
 mno_explore|Zbadaj to miejsce.
 menu_ring_hunter_lair|^^^^Podążałeś za Łowcami Pierścienia przez las Mirkwood i dotarłeś do {s1}. Widzisz ich przygotowujących się do opuszczenia z skrzynią.
 mno_attack_lair|Zaatakuj teraz.
-mno_leave_bandit_lair|Odejdź.
-menu_raftmen|^^^^ Podążasz rzeką Running na południowy wschód w kierunku Rhûn, mając nadzieję na odnalezienie starej drogi kupieckiej.^^ Po pewnym czasie docierasz do małej wioski położonej wzdłuż brzegu rzeki. Pytasz mieszkańców wioski, jak możesz dotrzeć do drogi i zostajesz skierowany do pary mężczyzn, którzy pływają po rzece tratwą.^^ Negocjacje trochę trwają, ale udaje ci się załatwić, aby mężczyźni sprowadzili cię w dół rzeki.
-mno_go_with_the_raftmen|Weź Tratwę do Dorwinion
-menu_ride_to_dorwinion|^^^^ Relaksujesz się i cieszysz piękną pogodą, gdy mężczyźni kierują tratwą w dół rzeki. Rzeka Running, zimna i czysta pośród wodospadów i bystrzy Samotnej Góry, tutaj jest chłodna, łagodna i błotnista.^^ W popołudniowym słońcu obserwujesz falujące równiny i zielone lasy dryfujące obok, gdy tratwa unosi się wzdłuż krętych meandrów. Region jest rzadko usiany małymi gospodarstwami rolnymi i winnicami z niskimi kamiennymi ścianami, a od czasu do czasu mijasz chatę na palach ukrytą w trzcinach.^^ Spokojny ruch tratwy pomaga ci zasnąć...
-mno_ride_to_dorwinion_next|Następnie...
-menu_amath_dollen_fortress|^^^^ Budzisz się z drzemki późnym popołudniem i wkrótce docierasz do nabrzeża, gdzie mężczyźni cumują tratwę. Kierują cię na wąską ścieżkę, która znika w trawie bagiennej i rozbijają obóz, by czekać na twój powrót.^^ Podążasz ścieżką, która szybko wznosi się z mokradeł na trawiastą równinę i idziesz, aż spotka się ze starą drogą kupiecką.^^ Po pewnym czasie widzisz fortecę bandytów.
-mno_bandit_fortress_with_companions|Podejdź do twierdzy bandytów tylko z towarzyszami i spróbuj porozmawiać z ich przywódcą.
-mno_bandit_fortress_with_army|Zaatakuj fortecę bandytów wszystkimi swoimi ludźmi.
-mno_bandit_fortress_against_easterlings|Obrona twierzy przed oblężeniem
-mno_bandit_fortress_spirits|Idź porozmawiać z duchami.
-mno_leave_amath_dollen_fortress|Odejdź.
 menu_gondor_reinforcement_event|^^^^^Płomienie na wzgórzach, Minas Tirith potrzebuje pomocy!^^^Władcy  południowych lenn przemaszerują na północ, aby bronić Białego Miasta przed nadchodzącymi ciemnościami.
 mno_gondor_reinforcement_event_close|Zamknij
 menu_gondor_beacons|Spoglądasz na {s1}, jeden z sygnałów ostrzegawczych Gondora, używany do podniesienia alarmu w północnym i południowym Gondorze.
@@ -455,15 +444,6 @@ menu_animal_ambush_fail|Zwierzęta zaatakowały ciebie {reg0?,: i twojego kompan
 menu_isengard_flooding|^^^^^@Jesteś otoczony przez martwych wrogów i triumfujących sojuszników, w tym Entów; ryczą, huczą i trąbią, aż kamienie pękają i spadają wokół Wieży Orthanc. Są jak wyjąca wichura, łamiąca filary, ciskająca lawiny głazów w dół szybów, wyrzucająca w powietrze ogromne płyty kamienne jak liście... Bregalad - lub Quickbeam, jak go znacie - przechodzi obok i zatrzymuje się tylko po to, by powiedzieć: „{playername}! Uwaga! Trzymaj się z dala od Wieży - wkrótce przerwiemy tamę i sprowadzimy Isen do tej doliny na jakiś czas. Myślę, że bardzo trudno będzie ci tu wytrzymać!”. Szybko słuchasz jego rady i oddalasz się od Orthanku. ^^ Około północy Isengard zaczyna wypełniać się czarnymi, pełzającymi strumieniami i kałużami. Nie możesz powstrzymać dreszczy, gdy widzisz dym i parę unoszące się w wielkich słupach, a wielki zwój pary unosi się i wije wokół Wieży, aż przypomina wysoki szczyt chmury, ognisty pod spodem i oświetlony księżycem powyżej. Gniew Entów jest powolny, ale ma nieodpartą siłę...
 mno_isengard_continue|Kontynuuj
 menu_build_your_scene|Możesz zrobić swoją własną scenę bitwy, używając jednego ze slotów udzielonych poniżej oraz trybu edycji gry (musisz włączyć tryb edycji w oknie włączania gry. Najpierw przejdź do opcji, potem wciśnij Ctrl+E wewnątrz sceny żeby mieć dostęp do trybu edycji). Możesz oddawać sceny które stworzyłeś (mianowicie, pliki sco z folderu TLD/SceneObj) do teamu deweloperskiego moda TLD, a jeśli twoja scena jest dobra, może pojawić się w przyszłych update'ach jako jedna w battlegroundsach^^ Spróbuj sprecyzować na którym regionie mapy chciałbyś aby twoja scena się pojawiła.^ Kilka podpowiedzi: unikaj głębokiej wody, stromych gór i innych nieprzekraczalnych miejsc, chyba że jesteś doświadczonym twórcą scenek i wiesz jak powstrzymać jednostki kontrolowane przez AI od pójścia tam gdzie ich nie chcesz, i stworzyć poprawkę do AI w innych miejscach.^\n(Wejścia #0-1 są dla atakujących, #4 dla broniących, nie używaj #5-8
-mno_scene1|Równina Duża (file scn custom 1.sco)
-mno_scene2|Równina Średnia (file scn custom 2.sco)
-mno_scene3|Równina Mała (file scn custom 3.sco)
-mno_scene4|Step Duży (file scn custom 4.sco)
-mno_scene5|Step Średni (file scn custom 5.sco)
-mno_scene6|Step Mały (file scn custom 6.sco)
-mno_scene7|Las Duży (file scn custom 7.sco)
-mno_scene8|Las Średni (file scn custom 8.sco)
-mno_scene9|Las Mały (file scn custom 9.sco)
 mno_back_3dot|Wróć...
 mno_back|Wróć.
 mno_next|Następnie...

@@ -41,7 +41,7 @@ dlga_hobbit_merry_talk_met:close_window|Hallo, Meister Merry.
 dlga_hobbit_pippin_talk_met:close_window|Hallo, Meister Pippin.
 dlga_start:hd_defense_01|Gut, dass Ihr hier seid, {playername}. Ich bin Aragorn, Arathorns Sohn, und ich bin Isildurs Erbe - seht, hier ist Anduril, die Flamme des Westens, die ich in den Kampf trage. Die Klinge, die zerbrochen war, erstrahlt wieder! Es wird nicht mehr lange dauern, bis Sarumans Streitkräfte diese Mauern erreichen. Ich bitte Euch nun, mir zu helfen und die Rohirrim zu verteidigen, für die Ehre des Herrn der Mark. Dies soll die Stunde sein, in der wir gemeinsam die Schwerter ziehen!
 dlga_start:hd_defense_01.1|Mae lovannen! Die Dinge hier sehen schlecht aus, {playername}, aber weniger schlecht, jetzt, wo Ihr hier bei uns seid! Gellon len covad. Ich bin Legolas vom Dunkelwald und obwohl ich diesen Ort nicht besonders mag, mag ich die herannahenden Horden Sarumans noch weniger. Was würde ich dafür geben, wenn noch hundert meiner Sippe hier wären! Wir sind zu wenige, einfach zu wenige. Wir werden Eure Hilfe brauchen, auch wenn wir nur ein paar Blätter im Wald sind. Kommt, ich zeige Euch, wo unsere Bögen am nützlichsten sein werden...
-dlga_start:hd_defense_01.2|Ich bin sehr froh, dich zu sehen, Vetter! Ich bin Gimli, Gloins Sohn. Es ist ein großes Heer, das sich uns jetzt entgegenstellt, aber meine Axt ist unruhig in meiner Hand und ich weiß, dass du dasselbe fühlst! Gebt uns eine Reihe von Orkhälsen zum Hacken und Platz zum Schwingen und gemeinsam werden wir sie das Fürchten lehren. Starke Füße und harte Äxte, das ist es, was uns durch die Nacht tragen wird! Ai oi! Es ist genug für uns beide da. Baruk Khazad! Khazad ai-menu!
+; dlga_start:hd_defense_01.2|Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazâd! Khazâd ai-mênu!
 dlga_hd_defense_01:close_window|Jetzt lasst uns eine Weile ruhen. Der Feind wird bei Einbruch der Nacht hier sein.
 dlga_start:aragorn_thanks_hd|{playername}, ich bin froh, dass Ihr noch lebt. Die Männer sind müde vom Kampf, aber dank Euch sehen sie den Anbruch eines neuen Tages. Die Dunländer haben sich ergeben. Man wird sie an die Arbeit schicken, um das Übel zu beheben, das sie verursacht haben, und danach, so hoffe ich, werden sie in ihre eigenen Länder zurückkehren. Sie wurden von Saruman getäuscht, denn es wurde ihnen viel genommen, und vieles muss noch zurückgegeben werden; wir werden sehen, was später für sie getan werden kann.
 dlga_aragorn_thanks_hd:close_window|Ich hoffe, dass sich unsere Wege wieder treffen mögen, {playername}.Ich verabschiede mich jetzt, denn ich muss in einer äußerst dringenden Angelegenheit aufbrechen. Mit dem ersten Licht des Morgens müssen wir, meine Freunde und ich, einen dunklen Weg aus diesem Tal nehmen. {playername}, die Zeiten sind böse, aber Euer Mut erfreut die Herzen aller freien Völker überall, vom Norden bis zum Süden. Kämpft tapfer und wir mögen uns jenseits der Schatten wiedersehen!
@@ -55,9 +55,9 @@ dlga_start:close_window.4|Hoom, hom! Hooom, hooom! Nach Isengart! Am Tor geschar
 dlga_start:close_window.5|Vielen Dank für Eure Hilfe. Ich muss sagen, dass es recht befriedigend war, mit diesen Orks abzurechnen. Ihr wart uns eine große Hilfe. Aber jetzt, hm, haben wir Arbeit zu erledigen, bei der Ihr nicht helfen könnt. Ihr solltet Euch vielleicht einen sicheren Fleck außerhalb Isengarts suchen und warten, bis wir fertig sind.
 dlga_start:treebeard_isengard_3|Hallo nochmal. Es ist schön, Euch sicher und trocken zu sehen. Ich muss sagen, es wird eine Weile dauern, um all den Schmutz Sarumans wegzuspülen. Aber wir haben uns ziemlich gut geschlagen, hmm, ja. Er wird keinen weiteren Schaden anrichten.
 dlga_treebeard_isengard_3:close_window|Ho, hmm, ich schulde Euch großen Dank. Ich hatte keine Hilfe von anderen erwartet und es ist gut zu wissen, dass unser letzter Marsch doch nicht so schlecht enden wird! Da der Baummörder erledigt ist, sollten wir jetzt in der Lage sein, Rohans nördliche Marken für eine Weile sicher zu halten.
-dlga_treebeard_isengard_3:close_window.1|Hmm? Ho, hmm… ah. Ihr seid also den ganzen Weg aus Rohan gekommen? Hm. Ich habe Neuigkeiten aus dem Süden gehört, ja. Gute Nachrichten, Nachrichten, die alle Herzen erfreuen. Ich bin König Théoden wohlgesonnen, und ich bin froh, dass er in seiner schweren Stunde Hilfe von jemandem wie Euch erhalten hat. Wir sind hier gut zurechtgekommen, und nun werden wir Ents dafür sorgen, dass Saruman ohne unsere Erlaubnis keinen Fuß aus Isengart hinaus setzt. Der Isen fließt wieder ruhig, und ich hoffe, dass das Wasser bald wieder trinkbar sein wird. Ha, hm, ich spüre ein Lied aufkommen. Ein Lied über die alten Tage... die alten Bäume, die ich kannte...
+dlga_treebeard_isengard_3:close_window.1|Hmm? Ho, hmm… ah. Ihr seid also den ganzen Weg aus Rohan gekommen? Hm. Ich habe Neuigkeiten aus dem Süden gehört, ja. Gute Nachrichten, Nachrichten, die alle Herzen erfreuen. Ich bin König Théoden wohlgesonnen, und ich bin froh, dass er in seiner schweren Stunde Hilfe von jemandem wie Euch erhalten hat. Wir sind hier gut zurechtgekommen, und nun werden wir Ents dafür sorgen, dass Saruman ohne unsere Erlaubnis keinen Fuß aus Isengart heraus setzt. Der Isen fließt wieder ruhig, und ich hoffe, dass das Wasser bald wieder trinkbar sein wird. Ha, hm, ich spüre ein Lied aufkommen. Ein Lied über die alten Tage... die alten Bäume, die ich kannte...
 dlga_start:ent_encounter|Hrooom! Was wollt Ihr?
-dlga_ent_encounter:close_window|Heil, Baumhirte! Danke, dass Ihr diese Marschen sicher haltet. Ich werde Euch nicht im Wege stehen.
+dlga_ent_encounter:close_window|Heil, Baumhirte! Danke, dass Ihr diese Marken sicher haltet. Ich werde Euch nicht im Wege stehen.
 dlga_start:treebeard_introduce_1|(Du blickst auf ein äußerst außergewöhnliches Wesen. Es ist sehr hoch und steifgliedrig, mit borkengleicher Haut und blättrigem Haar. Moos bedeckt Teile seines Körpers. Doch fürs Erste achtest du auf wenig anderes als auf die Augen. Diese tiefgründigen Augen erforschen dich, langsam und bedächtig, aber sehr eindringlich. Dir scheinen sie braun, mit einem grünen Licht durchwirkt, als läge ein tiefer Brunnen hinter ihnen, voller Erinnerungen aus ewigen Zeiten und voller langer, geruhsamer und stetiger Gedanken. Aber die Oberfläche funkelt vor Geistesgegenwart... wie die Sonne auf den äußeren Blättern eines dicht belaubten Baumes oder auf den Wellen eines sehr tiefen Sees.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(Du willst etwas sagen, aber ein fremdartiges, erstickendes Gefühl überkommt dich, als wäre die Luft zu dünn oder zu knapp zum Atmen... mit einem beinahe verzweifelten Atemzug schüttelst du das Gefühl ab und das enorme, baumartige Geschöpf mindert ein wenig die Eindringlichkeit seines Blicks. Das Wesen sieht dich weiterhin an und du bemerkst, dass dich die anderen gewaltigen Baumwesen ebenfalls anblicken, als erwarteten sie, dass du etwas sagst...)
 dlga_treebeard_introduce_2:treebeard_introduce_3|Verzeiht mein Eindringen... Ich bin nur ein müder Reisender, der vor den Geschehnissen der letzten Zeit Zuflucht sucht... ich heiße {playername}. Dürfte ich fragen, wer Ihr seid?
@@ -159,7 +159,7 @@ dlga_ziggy_no:close_window.1|Wie Ihr wünscht, {Kriegsherr/Kriegsherrin}.
 dlga_ziggy_yes:ziggy_choose_prisoners|Sehr gut. Welchen von denen würdet Ihr mir überlassen?
 dlga_ziggy_choose_prisoners:ziggy_no|Ich habe keinen, den ich dir anbieten kann.
 dlga_ziggy_chosen_prisoner:ziggy_ritual|Ich danke Euch, {Kriegsherr/Kriegsherrin}. Einen Moment... oh ja, dieser sollte sich gut eignen... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-dlga_ziggy_chosen_prisoner:ziggy_ritual.1|Wen haben wir denn da? Stolz, widerspenstig? Voller Angst, wie du es auch sein solltest? Denn nun hast du wahrlich einen guten Grund zu verzweifeln! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+; dlga_ziggy_chosen_prisoner:ziggy_ritual.1|What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
 dlga_ziggy_ritual:ziggy_ritual_succeed|Oh ja... ja! Sehet, {Kriegsherr/Kriegsherrin}! Erblicket, was ich, Zigûprhel, erschaffen habe! Wisst ihr von den Wölfen von Angband? Von Draugluin oder von dem mächtigen Carcharoth, der Huan, den Hund von Valinor, erschlug? Ganz wie der Dunkle Herrscher eine gefangenen Seele unterjochen und in eine neue Hülle sperren konnte, so habe auch ich einen niederen Geist gebunden und uns als ein großartiges Schattenwesen unterworfen! Dieses hier ist nicht so großartig wie die Brut Draugluins, sicher, aber es wird uns guten Dienst leisten.
 dlga_ziggy_ritual:ziggy_ritual_succeed.1|Es ist mir immer eine große Freude, einen Feind so endgültig zu bezwingen.
 dlga_ziggy_ritual:ziggy_choose_prisoners|Weh! Dieser hier war zu schwach! Wertlos! Gebt mir einen stärkeren, {Kriegsherr/Kriegsherrin}, einen, der nicht versagen wird!
@@ -294,6 +294,7 @@ dlga_lord_start:lord_hunt_refugees_failed|{playername}, unsere Spione berichten,
 dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|Sie waren schlüpfrig, Gebieter. Ich konnte ihrer nicht habhaft werden.
 dlga_lord_hunt_refugees_failed_1:lord_pretalk|Vielleicht bist du nicht gut genug, um unsere Armeen zu führen, die diese Welt in die Knie zwingen werden, wenn du nicht einmal die Wunden und Siechen besiegen kannst!^^ Fort mit dir und bitte auf den Knien darum, dass dir eine zweite Chance gewährt wird.   
 dlga_lord_start:lord_generic_mission_completed.9|Verdammt, du hast es geschafft, {playername}. Alle Sklaven sind zurück und bereiten fleißig die Ernte vor. Du hast deine Belohnung verdient. Hier, nimm dies, mit meiner Empfehlung.
+; dlga_lord_start:lord_generic_mission_completed.10|Well done, but you've done it, {playername}. The slaves are back and they're busy preparing for the harvest. I guess you had to kill some of them in order to make the others obey. Can't be helped, but I'll only reward you for those that have returned, not the ones you left rotting in the wilderness.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. Ich habe geduldig auf meine Sklaven gewartet, aber sie sind nicht zurückgekehrt. Hast du eine Erklärung? Wurdest du von schlichten Tieren überlistet, oder bist du einfach unfähig?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Vergebt mir, {s65}, diese Sklaven waren schlüpfrig wie Aale.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hrmph, das ist kaum eine Entschuldigung für dein Versagen, {playername}. Nun, wenn du mich entschuldigt, ich muss neue Männer fangen, um die Felder zu bebauen, bevor wir alle hungern.
@@ -590,7 +591,7 @@ dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Ich bin z
 dlga_lord_mission_raise_troops_accepted:close_window|Ihr nehmt eine Last von meinen Schultern, {playername}. Ich werde meine Befehlshaber anweisen, Euch die Rekruten zu überlassen. Ich übergebe Euch außerdem etwas Geld als Unkostenbeitrag. Hier, dieser Beutel sollte reichen. Danke für Eure Hilfe.
 dlga_lord_mission_raise_troops_alternate:close_window|Ein interessanter Vorschlag, {playername}. Ich werde meine Hauptleute anweisen, die Rekruten auf den Ausbildungsplatz zu schicken. Bringt sie in Form, ich werde zusehen. Danke für Eure Hilfe.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, sicher. Ich hatte das erwartet. Nun, viel Glück dann.
-dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Ich habe da eine Sache, bei der Ihr mir helfen könntet: Ein gesetzloser Schurke namens {s4} bereitet mir Schwierigkeiten. Er hat einen meiner Männer ermordet und ist seitdem auf der Flucht vor seiner Bestrafung. Es gibt Neuigkeiten, dass er in {s3} Zuflucht gesucht hat. Ihr könntet ihm dort nachspüren und ihn einer schnellen Strafe zuführen und ich belohne Euch dafür.
+; dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the traitor known as {s4}.  He moves from place to place, spreading the insidious poison of doubt. He sows fear and undermines the resolve of our warriors.  He acts on behalf of our enemies, that much is certain. Yet so far he has always been able to slip from my grasp.  There has been news recently that he has been seen at {s3}.  You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Dann werde ich ihn aufspüren und das Gesetz ausführen.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Ich bin zur Zeit zu beschäftigt, um ihn zu jagen.
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Sehr gut, {playername}. Ich werde mich dankbar zeigen und natürlich wird Eure Bereitschaft vermerkt. Nun, gute Jagd.
@@ -769,11 +770,13 @@ dlga_defeat_hero_answer_1:close_window|Seid verdammt. Ihr werdet das bereuen.
 dlga_defeat_hero_answer:defeat_hero_answer_2|Diesmal lasse ich Euch ziehen. Aber kommt mir nicht erneut in die Quere.
 dlga_defeat_hero_answer_2:close_window|Wir werden uns wiedersehen.
 dlga_start:fugitive_1|Ja, was wollt Ihr?
-dlga_fugitive_1:fugitive_2|Ich suche einen Flüchtigen namens {s4}. Ihr entsprecht der Beschreibung.
+; dlga_fugitive_1:fugitive_2|I am looking for a {s3} by the name of {s4}. You fit his description.
 dlga_fugitive_1:close_window|Nichts, verzeiht die Störung.
 dlga_fugitive_2:fugitive_3|Ich weiß nicht, wovon Ihr redet. Ihr müsst mich mit jemandem verwechseln.
 dlga_fugitive_3:fugitive_4|Dann gebt Euer Schwert ab. Wenn Ihr unschuldig seid, habt Ihr nichts zu befürchten. Wir gehen nun und reden mit dem Hauptmann der Wache, um zu sehen, wer hier was verwechselt.
 dlga_fugitive_4:close_window|Sei verflucht! Wir gehen nirgendwo hin!
+; dlga_start:fugitive_5|So, I caught you at last!
+; dlga_fugitive_5:close_window|You are mistaken. We caught you!
 dlga_start:follow_spy_talk|Guten Tag. Schönes Wetter, nicht wahr? Wenn Ihr mich nun entschuldigt, ich muss weiter.
 dlga_follow_spy_talk:follow_spy_talk_2|Im Auftrag von {s1}, Ihr seid festgenommen!
 dlga_follow_spy_talk_2:close_window|Du kriegst mich nicht lebend!
@@ -783,12 +786,15 @@ dlga_spy_partners_talk:spy_partners_talk_2|Im Namen {s1}s. Ihr seid festgenommen
 dlga_spy_partners_talk_2:close_window|Du wirst erst gegen uns kämpfen müssen!
 dlga_spy_partners_talk:close_window|Lasst Euch nicht aufhalten. Ich bin nur zufällig vorbeigekommen.
 dlga_start:runaway_serf_intro_1|Guten Tag, Meister.
-dlga_runaway_serf_intro_1:runaway_serf_intro_2|Ich wurde von eurem Herrn {s4} geschickt, vor dem ihr flieht. Er wird euch nicht bestrafen, wenn ihr jetzt umkehrt.
-dlga_runaway_serf_intro_2:runaway_serf_intro_3|Mein Herr. Unser Leben in {s1} war unerträglich. Wir mussten den ganzen Tag arbeiten und gingen hungrig zu Bett. Wir ziehen nach {s6}, um ein neues Leben zu beginnen, in dem wir wie Menschen behandelt werden.
-dlga_runaway_serf_intro_3:runaway_serf_go_back|Ihr verstoßt gegen unsere Gesetze, wenn ihr der Knechtschaft entflieht. Ihr kehrt auf der Stelle nach {s1} um!
-dlga_runaway_serf_go_back:close_window|Gut, Herr. Wie Ihr wünscht. Wir ziehen zurück nach {s5}.
-dlga_start:runaway_serf_talk_caught|Guten Tag, Herr. Wir wollen zurück nach {s5}, aber ich fürchte, wir haben uns verlaufen.
-dlga_runaway_serf_talk_caught:runaway_serf_go_back|Stellt meine Geduld nicht auf die Probe. Kehrt sofort um!
+; dlga_runaway_serf_intro_1:runaway_serf_intro_2|I have been sent by {s4} whom you are running from. {reg11?She:He} will hold back {reg11?her:his} wrath and spare your lifes if you return now.
+; dlga_runaway_serf_intro_2:runaway_serf_intro_3|Have mercy! Going back to {s1} means certain death.{s4} will make us toil until we die of exhaustion, or he will put us to the stake immediately.
+; dlga_runaway_serf_intro_3:runaway_serf_go_back|And this will be all that you maggots deserve. You will go back to {s1}, or I have you slaughtered here and now!
+; dlga_runaway_serf_intro_3:runaway_serf_slaughter|I see. I think I will have to teach you lot a lesson in order to make you obey. Slaughter him!
+; dlga_runaway_serf_go_back:close_window|All right {reg11?mistress:master}. As you wish. We'll head back to {s5} now.
+; dlga_start:runaway_serf_talk_caught|Good day {reg11?mistress:master}. We were heading back to {s5}, but I am afraid we lost our way.
+; dlga_runaway_serf_talk_caught:runaway_serf_go_back|Do not test my patience. You are going back now! (Charisma)
+; dlga_runaway_serf_talk_caught:runaway_serf_slaughter|I see. I think I will have to teach you lot a lesson not to lose your way again. Slaughter him!
+dlga_runaway_serf_slaughter:close_window|Eines Tages werdet ihr bezahlen.... Aaa-ghgllr!...
 dlga_start:runaway_serf_talk_again_return|Wir sind auf dem Weg zurück nach {s5}, Herr.
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|Beeilt euch. Je eher ihr zurück seid, desto besser.
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|Gut. Zieht weiter.
@@ -1005,8 +1011,8 @@ dlga_town_merchant_talk:merchant_gossip|Erzählt mir, worüber reden die Leute z
 dlga_town_merchant_talk:close_window|Lebt wohl.
 dlga_start:town_dweller_talk|Verzeiht?
 dlga_start:town_dweller_talk.1|Guten Tag, Hauptmann.
-dlga_town_dweller_talk:town_dweller_ask_fugitive|Ich suche einen Flüchtigen namens {s4}. Man sagte mir, er verberge sich hier.
-dlga_town_dweller_ask_fugitive:close_window|Fremde kommen und gehen in diesem Ort. Wenn er hier ist, findet Ihr ihn sicher, wenn Ihr Euch umschaut.
+; dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?
+; dlga_town_dweller_ask_fugitive:close_window|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
 dlga_town_dweller_talk:town_dweller_ask_info|Was könnt Ihr mir über dieses Dorf erzählen?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Was könnt Ihr mir über diesen Ort erzählen?
 dlga_town_dweller_talk:town_dweller_talk|Wie ist das Leben hier?

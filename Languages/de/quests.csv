@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} bat dich, {reg1} {s14} auszubilden und {ihm/ihr} zu �
 qst_escort_messenger|Eskortiere den Boten nach {s14}
 qst_escort_messenger_text|Nichts
 qst_hunt_down_fugitive|Jage {s4}
-qst_hunt_down_fugitive_text|{s9} bat dich, den Flüchtigen names {s4} zu jagen. Er soll sich im Moment in {s3} aufhalten.
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 qst_bring_back_runaway_serfs|Bring die entflohenen Sklaven zurück
 qst_bring_back_runaway_serfs_text|{s9} bat dich, die drei Gruppen entflohener Sklaven nach {s2} zurückzubringen. Er sagte, dass alle drei Gruppen in Richtung {s3} fliehen müssten.
 qst_follow_spy|Folge dem Spion zum Treffen

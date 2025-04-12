@@ -255,7 +255,7 @@ menu_besiegers_camp_with_allies|{s1}은 포위된 상태입니다. {s2}의 깃�
 mno_talk_to_siege_commander|사령관과 면담 요청
 mno_join_siege_with_allies|다음 공격에 참가
 mno_join_siege_stay_back|당신 없이 다음 전투에 참전하라고 명령
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|나갈 길을 찾는다!
 menu_castle_outside|당신은 {s2}의 야외에 있습니다.{s11} {s3} {s4}
 mno_cheat_steal_book_door|책을 읽는다.
@@ -349,17 +349,6 @@ menu_legendary_place|^^^^당신은 소문을 따라 {s1}을 찾아냈다. 당신
 mno_explore|이 장소 탐험하기
 menu_ring_hunter_lair|^^^^당신은 어둠숲 속 반지 추적자들의 흔적을 따라갔고 {s1}에 도착했고 그들이 상자를 들고 떠나려는 것을 목격했습니다.
 mno_attack_lair|지금 그들을 공격하자
-mno_leave_bandit_lair|지금은 떠나자
-; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
-; mno_go_with_the_raftmen|Take the raft to Dorwinion
-; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
-mno_ride_to_dorwinion_next|다음으로...
-; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
-; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
-; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
-; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
-; mno_bandit_fortress_spirits|Go talk with the spirits.
-mno_leave_amath_dollen_fortress|지금은 떠나자
 menu_gondor_reinforcement_event|^^^^^곤도르의 봉화대에 불이 지펴졌군요,  미나스 티리스에 도움이 필요합니다!^^ 남쪽 영지의 군주들은 백색도시에 다가오는 어둠의 무리로부터 미나스 티리스를 구원하기 위해 북쪽을 향할것입니다.
 mno_gondor_reinforcement_event_close|닫기
 menu_gondor_beacons|당신은 곤도르의 봉화중 하나이자, 북부와 남부 곤도르에 신호를 보내기 위해 사용돼었던 {s1}을 방문했습니다.
@@ -455,15 +444,6 @@ menu_animal_ambush_fail|짐승들이 당신{reg0?,: 그리고 당신 동료{reg2
 ; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 ; mno_isengard_continue|Continue
 menu_build_your_scene|아래에 제공된 슬롯 중 하나와 게임 편집 모드를 사용하여 자신만의 전투 장면을 만들 수 있습니다(먼저 M&B 화면 옵션에서 편집 모드를 ON으로 전환한 다음 장면 내에서 Ctrl+E를 눌러 편집 모드에 액세스해야 합니다). 그런 다음 작성한 장면(예: TLD/SceneObj 폴더의 sco 파일)을 TLD의 개발 팀에 제출할 수 있으며, 장면이 좋으면 이후 릴리스에서 랜덤 배틀그라운드 중 하나로 나타날 수 있습니다!^^ 지도에서 장면을 표시할 영역을 지정합니다.^ 몇 가지 힌트: 여러분이 장면 제작자가 아니어서 AI 부대가 원하지 않는 곳을 걷지 못하게 하는 방법을 알지 못한다면 깊은 물, 가파른 산 및 기타 통행할 수 없는 장소를 피하고 AI 메쉬를 다른 장소에 만들 수 있습니다.^ (0-1번 항목은 공격자, 4번 항목은 수비수, 5-8번 항목은 터치하지 마십시오.
-mno_scene1|Plain Big (file scn custom 1.sco)
-mno_scene2|Plain Med (file scn custom 2.sco)
-mno_scene3|Plain Small (file scn custom 3.sco)
-mno_scene4|Steppe Big (file scn custom 4.sco)
-mno_scene5|Steppe Med (file scn custom 5.sco)
-mno_scene6|Steppe Small (file scn custom 6.sco)
-mno_scene7|Forest Big (file scn custom 7.sco)
-mno_scene8|Forest Med (file scn custom 8.sco)
-mno_scene9|Forest Small (file scn custom 9.sco)
 mno_back_3dot|돌아가기...
 mno_back|돌아간다.
 mno_next|다음으로...

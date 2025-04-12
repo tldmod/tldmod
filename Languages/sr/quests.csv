@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} te je pitao da podigneš {reg1} {s14} i da ih odvede�
 qst_escort_messenger|Odvedi glasnika u {s14}
 qst_escort_messenger_text|Ništa
 qst_hunt_down_fugitive|Ulovi i ubij {s4}
-qst_hunt_down_fugitive_text|{s9} te je pitao da ulovis lika po imenu {s4}. Veruje se da je u {s3}.
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 qst_bring_back_runaway_serfs|Vrati pobegle Robove
 qst_bring_back_runaway_serfs_text|{s9} te je pitao da mu vratis tri grupe sa odbeglim robovina nazad u {s2}. Rekao je da sve tri grupe beze u {s3}.
 qst_follow_spy|Prati Spijuna do Sastanka

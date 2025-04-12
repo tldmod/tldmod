@@ -255,7 +255,7 @@ menu_besiegers_camp_with_allies|{s1}依然遭到圍困，攻城營地中飛揚�
 mno_talk_to_siege_commander|要求和指揮官會面。
 mno_join_siege_with_allies|加入下一輪的進攻。
 mno_join_siege_stay_back|命令你的士兵加入下一輪的進攻而不親自參與。
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|尋找你的出路！
 menu_castle_outside|你在{s2}的外面。{s11}{s3}{s4}
 mno_cheat_steal_book_door|拿起書
@@ -349,17 +349,6 @@ menu_legendary_place|^^^^你遵循傳聞而發現了{s1}。你現在可以探索
 mno_explore|探索這個地方。
 menu_ring_hunter_lair|^^^^你跟著戒指獵人的蹤跡穿過幽暗密林並抵達{s1}。你看見他們準備帶著一個箱子離開。
 mno_attack_lair|馬上攻擊他們
-mno_leave_bandit_lair|暫時離開。
-; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
-; mno_go_with_the_raftmen|Take the raft to Dorwinion
-; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
-mno_ride_to_dorwinion_next|下一個...
-; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
-; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
-; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
-; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
-; mno_bandit_fortress_spirits|Go talk with the spirits.
-mno_leave_amath_dollen_fortress|暫時離開。
 menu_gondor_reinforcement_event|^^^^^剛鐸的烽火被點燃了，米那斯提力斯在呼救！^^南方的領主們將立刻邁向北方去從即將降臨的黑暗中保衛白之城。
 mno_gondor_reinforcement_event_close|關閉
 menu_gondor_beacons|你抬頭望向{s1}，其中一座剛鐸的烽火台，用來對北方和南方剛鐸發出警報。
@@ -455,15 +444,6 @@ menu_animal_ambush_fail|動物撕咬你{reg0?,:和你的同伴{reg2?,:,}}但幸�
 menu_isengard_flooding|^^^^^@你被死去的敵人和勝利的盟友包圍，包括樹人；他們咆哮、轟鳴、吹號，直到石頭在奧桑克塔周圍裂開並掉落。他們就像呼嘯的狂風，打破柱子，把巨石的雪崩扔下井道，將巨大的石板像葉子一樣拋向空中……這是你前所未見的場景。布雷戈拉德——或者你所知道的迅速樹梁——大步走過來，僅停下來說：「{playername}！小心！離塔遠點——我們很快就會打破大壩，將艾辛河帶入這個山谷，雖然只是一小會兒。我想你會發現很難一直站在這裡！」你迅速接受他的建議，匆匆離開奧桑克塔。午夜時分，艾辛格開始被黑色的潛流和水池填滿。當你看到煙霧和蒸汽在空中冒出巨大的柱子，並且一股巨大的蒸汽捲繞著塔，直到它看起來像一座高聳的雲峰，底下燃燒著，頂上被月光照亮時，你不禁顫抖。樹人的憤怒來得緩慢，但擁有不可抵擋的力量……
 mno_isengard_continue|繼續
 menu_build_your_scene|你可以打造自己的戰場場景。首先在遊戲設定中打開編輯模式，然後選擇底下任意一個存位(你需要先在M&B啟動螢幕設定中將編輯模式切換為ON，然後進入場景中按Ctrl+E打開編輯模式)。  你可以將你創造的場景提交給TLD製作組(TLD/SceneObj資料夾中的sco檔)，做得好的話，它將會作為隨機戰場之一出現在以後的版本中！^^ 記得說明你想要自己作的場景出現在地圖上的哪個地方。^ 附加提示：避免製作深水、陡峭或其他難以通行的地形，除非你是經驗豐富的場景製作者並且知道如何利用AI網格讓AI部隊避開指定區域。^ (#0-1 用於攻擊方，#4用於防守方，別碰#5-8
-mno_scene1|大型平原(file scn custom 1.sco)
-mno_scene2|中型平原(file scn custom 2.sco)
-mno_scene3|小型平原(file scn custom 3.sco)
-mno_scene4|大型草原(file scn custom 4.sco)
-mno_scene5|中型草原(file scn custom 5.sco)
-mno_scene6|小型草原(file scn custom 6.sco)
-mno_scene7|大型森林(file scn custom 7.sco)
-mno_scene8|中型森林(file scn custom 8.sco)
-mno_scene9|小型森林(file scn custom 9.sco)
 mno_back_3dot|返回...
 mno_back|返回。
 mno_next|下一個...

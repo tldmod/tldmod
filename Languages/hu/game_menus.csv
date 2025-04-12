@@ -255,7 +255,7 @@ menu_besiegers_camp_with_allies|{s1} ostrom alatt marad. {s2} zászlói az ostro
 mno_talk_to_siege_commander|Kérj találkozót a parancsnokkal.
 mno_join_siege_with_allies|Csatlakozz a következő támadáshoz.
 mno_join_siege_stay_back|Parancsold meg katonáidnak, hogy csatlakozzanak nélküled a következő támadáshoz.
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Találd meg a kifelé vezető utat!
 menu_castle_outside|Kint vagy {s2}.{s11} {s3} {s4}
 mno_cheat_steal_book_door|Szerezd meg a könyvet
@@ -349,17 +349,6 @@ menu_legendary_place|^^^^A szóbeszédeket követve megtaláltad {s1} erdejét. 
 mno_explore|Fedezd fel a helyszínt.
 menu_ring_hunter_lair|^^^^Követted a Gyűrű Vadászok nyomát a Bakacsinerdőn keresztül, és megérkeztél {s1}-hoz/höz. Látod ahogy készen állnak távozni egy ládával.
 mno_attack_lair|Támadd meg őket azonnal
-mno_leave_bandit_lair|Hagyd békén őket
-; menu_raftmen|^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.
-; mno_go_with_the_raftmen|Take the raft to Dorwinion
-; menu_ride_to_dorwinion|^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...
-mno_ride_to_dorwinion_next|Következő...
-; menu_amath_dollen_fortress|^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.
-; mno_bandit_fortress_with_companions|Approach the Bandit Fortress with only your companions and attempt to talk with their leader.
-; mno_bandit_fortress_with_army|Attack the bandit fortress with all your men.
-; mno_bandit_fortress_against_easterlings|Defend the Fortress against the Siege
-; mno_bandit_fortress_spirits|Go talk with the spirits.
-mno_leave_amath_dollen_fortress|Hagyd békén őket
 menu_gondor_reinforcement_event|^^^^^Gondor őrtüzei kigyulladtak, Minas Tirith segítséget kér!^^A déli hűbérbirtokok urai északnak menetelnek hogy megvédjék a Fehér Várost az eljövendő sötétségtől.
 mno_gondor_reinforcement_event_close|Bezár
 menu_gondor_beacons|Felnézel {s1}re, Gondor egyik őrtűzére, amit arra szoktak használni hogy riadóztassák Gondor északi és déli részeit.
@@ -455,15 +444,6 @@ menu_animal_ambush_fail|Az állatok megharapnak és megtépnek{reg0?,: és a tá
 ; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 ; mno_isengard_continue|Continue
 menu_build_your_scene|Itt tudod elkészíteni a saját csatajeleneteidet, az egyik alul biztosított férőhelyen és a játék Szerkesztő módjában  (először BE kell kapcsolnod a szerkesztő módot a M&B nyitólapján található Beállításokban).  Aztán beküldheted a jeleneteidet (név szerint, a .sco fájlt a TLD/SceneObj mappából) a TLD fejlesztő csapatának, és ha a jelenetedet jó, akkor egy későbbi kiadásban megjelenhet mint az egyik véletlenszerűen kiválasztott csatatér!^^ Próbáld meg pontosítani hogy a térkép melyik területén szeretnéd a jelenetedet megjeleníttetni.^ Néhány tanács: kerüld a mély vizet, a meredek hegyeket és már átjárhatatlan területeket,  kivéve ha te egy tapasztalt jelenet-készítő vagy és tudod hogy oldd meg, hogy az MI ne menjen olyan helyre, amelyre te nem akarod őket, és hogy ne akadjanak be.u.^ (Bejegyzések; #0-1 a támadóknak, #4 a védekezőknek, ne nyúlj a #5-8-hoz/höz
-mno_scene1|Mező Nagy (file scn custom 1.sco)
-mno_scene2|Mező Közepes (file scn custom 2.sco)
-mno_scene3|Mező Kicsi (file scn custom 3.sco)
-mno_scene4|Sztyeppe Nagy (file scn custom 4.sco)
-mno_scene5|Sztyeppe Közepes (file scn custom 5.sco)
-mno_scene6|Sztyeppe Kicsi (file scn custom 6.sco)
-mno_scene7|Erdő Nagy (file scn custom 7.sco)
-mno_scene8|Erdő Közepes (file scn custom 8.sco)
-mno_scene9|Erdő Kicsi (file scn custom 9.sco)
 mno_back_3dot|Vissza...
 mno_back|Vissza.
 mno_next|Következő...

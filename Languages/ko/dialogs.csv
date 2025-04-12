@@ -41,7 +41,7 @@ dlga_hobbit_merry_talk_met:close_window|안녕하시오, 메리 귀하.
 dlga_hobbit_pippin_talk_met:close_window|안녕하시오, 피핀 귀하.
 ; dlga_start:hd_defense_01|It is well that you are here, {playername}. My name is Aragorn, son of Arathorn, and I am the Heir of Isildur – see, here is Anduril, the Flame of the West, which I bear in battle. The Blade that was Broken shines again! It will not be long before Saruman’s forces reach these walls. I ask you now to lend me your aid and defend the Rohirrim, for the honour of the Lord of the Mark. Let this be the hour when we draw swords together!
 ; dlga_start:hd_defense_01.1|Mae lovannen! Things here look ill, {playername}, but less ill now that you are here with us! Gellon len covad. I am Legolas of Mirkwood, and though I do not much like this place I like the approaching hordes of Saruman even less. What would I give for a hundred more of my kin here! There are too few of us, too few. We shall need your aid, Commander, though we may be but a few leaves in the forest. Come, let me show you where our bows will be of the most use…
-; dlga_start:hd_defense_01.2|Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazaˆd! Khazaˆd ai-meˆnu!
+; dlga_start:hd_defense_01.2|Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazâd! Khazâd ai-mênu!
 ; dlga_hd_defense_01:close_window|Now, let us rest for a while. The enemy will be here by nightfall.
 ; dlga_start:aragorn_thanks_hd|{playername}, I am glad to see you live still. The men are weary with battle, but thanks to you they see the dawn of a new day. The hillmen have given themselves up, and they shall be put to work to repair the evil which they have joined, after which I hope they will return to their own lands. They were easily deceived by Saruman, for much was taken from them, and much remains to be given back; we shall have to see what can be done for them later.
 ; dlga_aragorn_thanks_hd:close_window|I hope our paths may cross again, {playername}. I bid you farewell now, for I ride on an errand most urgent. With the first light of morning we must go, my friends and I, and take a dark road out of this valley. {playername}, the times are evil, but your valour gladdens the hearts of all free peoples everywhere, from the North to the South. Fight well, and we may meet again beyond the shadows!
@@ -159,7 +159,7 @@ dlga_ziggy_no:close_window.1|아주 좋습니다, 사령관님.
 dlga_ziggy_yes:ziggy_choose_prisoners|완벽합니다. 이 견본들 중에 무엇을 주실 건가요?
 dlga_ziggy_choose_prisoners:ziggy_no|주고 싶은 게 없어.
 dlga_ziggy_chosen_prisoner:ziggy_ritual|감사드립니다. 사령관님! 잠시 기다려주시길.. 아, 됐습니다. 이 녀석이 좋겠군요...  Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-dlga_ziggy_chosen_prisoner:ziggy_ritual.1|어떤가? 오만한 마음이 드는가? 반항심이 드는가? 아니면 두렵지 않은가? 그렇다면 내가 이제 두려워 할 이유를 좀 만들어 주지! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+; dlga_ziggy_chosen_prisoner:ziggy_ritual.1|What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
 dlga_ziggy_ritual:ziggy_ritual_succeed|아, 그래.. 그거야! 보십시오, 사령관님! 나 Zigûrphel이 이뤄낸 것을 보십시오! 앙그반드의 늑대에 대해 아십니까? 드라우글루인이나, 발리노르의 사냥개 후안을 물어죽인 위대한 카르카로스에 대해 아십니까? 어둠의 군주께서도 포로의 영혼을 그 뜻에 맞게 뒤틀고 사로잡을 수 있듯이, 나 역시 미약한 영혼을 다루어 우리가 쓸 그림자 짐승으로 만들 수 있습니다! 드라우글루인의 새끼만큼 위대하진 않지만, 어느정도 쓸만할 겁니다.
 dlga_ziggy_ritual:ziggy_ritual_succeed.1|적을 궁지에 몰아넣는 순간은 언제나 즐겁지.
 dlga_ziggy_ritual:ziggy_choose_prisoners|젠장! 이 놈은 너무 약합니다! 쓸모없기는! 더 강한 놈을 주십시오, 사령관님. 실패하지 않을 놈으로요!
@@ -294,6 +294,7 @@ dlga_lord_start:lord_hunt_refugees_failed|{playername}, 우리 스파이들이 �
 dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|그들은 재빨랐습니다, 주인님. 그들을 쫓을 수 없었습니다.
 dlga_lord_hunt_refugees_failed_1:lord_pretalk|아마 네가 부상자나 아픈 사람들조차 이길 수 없다면 이 세계를 제 발뒤꿈치로 몰고 갈 군대를 지휘하기에 충분하지 않을 것 같군.^^ ^ 내가 너에게 두 번째 기회를 주길 기도해라.
 dlga_lord_start:lord_generic_mission_completed.9|내가 틀렸군, 당신이 해냈소, {playername}. 모든 노예들은 돌아와 추수를 준비하고 있소. 당신의 몫을 확실히 얻어냈으니 여기, 나의 존경과 함께 받아가시오. 
+; dlga_lord_start:lord_generic_mission_completed.10|Well done, but you've done it, {playername}. The slaves are back and they're busy preparing for the harvest. I guess you had to kill some of them in order to make the others obey. Can't be helped, but I'll only reward you for those that have returned, not the ones you left rotting in the wilderness.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. 나는 이제까지 인내심을 가지고 내 노예들이 돌아오길 기다렸으나 단 하나도 돌아오지 않았소. 어찌 된 이유요? 들개에게 당하거나 그저 중간에 나가떨어지기라도 한 것인가?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|죄송합니다, {s65}. 그 노예들이 도망치기로는 마치 미꾸라지 같았습니다.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|흠, 그게 실패한 변명이라 듣기 힘들군, {playername}. 이제 좀 실례하겠네. 우리 모두가 굶주리기 전에 여기서 일할 새 사람을 찾아야하니까.
@@ -590,7 +591,7 @@ dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|누구를
 dlga_lord_mission_raise_troops_accepted:close_window|내 어깨의 짐을 덜어주는군, {playername}. 내 부하들에게 신병을 좀 붙여서 자네에게 보내도록 하지. 그리고 비용도 좀 지원해주겠네. 여기, 이 돈주머니 정도면 될걸세. 도와주어서 고맙네.
 dlga_lord_mission_raise_troops_alternate:close_window|흥미로운 제안이군, {playername}. 내 부하들에게 말해 신병들을 투기장에 배치하라 하겠네. 그들을 따라가서 각이 잡힐때까지 훈련시키도록. 내가 지켜보고 있을테니. 도와주어서 고맙네.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|아, 물론이네. 너무 많은 것을 기대했나보군. 그럼, 행운을 비네.
-dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|{s4}라 알려진 무법자의 문제에 대해 자네가 도와줄 수 있겠군. 그는 내 경호원 중 한 명을 살해했고, 그후 줄곧 자의로 도망쳐왔네. 최근 그 놈이 {s3}에서 목격되었다는 소식이 전해졌네. 놈을 쫓아서 신속하게 정의의 심판을 내려줄 수 있다면, 내 후히 보답하지.
+; dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the traitor known as {s4}.  He moves from place to place, spreading the insidious poison of doubt. He sows fear and undermines the resolve of our warriors.  He acts on behalf of our enemies, that much is certain. Yet so far he has always been able to slip from my grasp.  There has been news recently that he has been seen at {s3}.  You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|그럼 그 놈을 추격해 정의의 심판을 내리겠습니다.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|그런 놈을 쫓아다니기에는 저는 너무 바쁩니다.
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|훌륭하군, {playername}. 정말 고맙군. 당연히 그대의 역량은 마음 속에 새겨두도록 하지. 그럼, 추적에 행운이 따르길 빌겠네.
@@ -769,11 +770,13 @@ dlga_defeat_hero_answer_1:close_window|제기랄. 후회할 것이다.
 dlga_defeat_hero_answer:defeat_hero_answer_2|이번에는 자유로이 떠나도 좋네, 하지만 다신 내 길을 막지 말게.
 dlga_defeat_hero_answer_2:close_window|우린 다시 만날거야.
 dlga_start:fugitive_1|흠, 무슨 일이지?
-dlga_fugitive_1:fugitive_2|나는 {s4}라는 이름의 도망자를 찾고 있는데. 인상착의와 닮은 것 같군.
+; dlga_fugitive_1:fugitive_2|I am looking for a {s3} by the name of {s4}. You fit his description.
 dlga_fugitive_1:close_window|아무것도 아니네. 방해해서 미안하군.
 dlga_fugitive_2:fugitive_3|무슨 말을 하는 지 모르겠는데. 다른 사람과 착각한 것은 아닌지.
 dlga_fugitive_3:fugitive_4|그럼 무기를 버리게. 만약 무고하다면, 두려워할 것이 없네. 지금 가서 헷갈려하는 사람이 누구인지 경비대장에게 물어보자고.
 dlga_fugitive_4:close_window|제기랄! 넌 아무데도 못 가!
+; dlga_start:fugitive_5|So, I caught you at last!
+; dlga_fugitive_5:close_window|You are mistaken. We caught you!
 dlga_start:follow_spy_talk|좋은 날이군. 날씨가 참 좋지 않나? 허락해준다면 내 갈 길을 가고 싶은데.
 dlga_follow_spy_talk:follow_spy_talk_2|{s1}의 이름으로, 널 체포한다!
 dlga_follow_spy_talk_2:close_window|날 살아서 데려가진 못할거다!
@@ -783,12 +786,15 @@ dlga_spy_partners_talk:spy_partners_talk_2|{s1}의 이름으로, 널 체포한�
 dlga_spy_partners_talk_2:close_window|먼저 우리와 싸워야할거다!
 dlga_spy_partners_talk:close_window|신경쓰지 말게. 지나가던 중이었으니.
 dlga_start:runaway_serf_intro_1|좋은 하루입니다.
-dlga_runaway_serf_intro_1:runaway_serf_intro_2|네가 도망쳐온 {s4}에서 나를 보냈다. 지금 순순히 돌아가면 처벌하지 않겠다더군.
-dlga_runaway_serf_intro_2:runaway_serf_intro_3|좋은 주인이시여. {s1}에서의 삶은 견딜 수 없었습니다. 하루 종일 일하고 배고픈 채 잠이 들었죠. {s6}에서 새 삶을 찾고 나면, 우리를 인간답게 대접해줄겁니다.
-dlga_runaway_serf_intro_3:runaway_serf_go_back|법을 어기고 노예 신분에서 도망친 주제에. {s1}으로 지금 당장 돌아가라!
-dlga_runaway_serf_go_back:close_window|알겠습니다 주인님. 그대 뜻대로. {s5}로 돌아가겠습니다.
-dlga_start:runaway_serf_talk_caught|좋은 하루 되시길, 주인님. 우리는 {s5}로 돌아가는 중인데, 길을 잃을까 두렵군요.
-dlga_runaway_serf_talk_caught:runaway_serf_go_back|내 인내심을 시험하지 마라. 당장 돌아가!
+; dlga_runaway_serf_intro_1:runaway_serf_intro_2|I have been sent by {s4} whom you are running from. {reg11?She:He} will hold back {reg11?her:his} wrath and spare your lifes if you return now.
+; dlga_runaway_serf_intro_2:runaway_serf_intro_3|Have mercy! Going back to {s1} means certain death.{s4} will make us toil until we die of exhaustion, or he will put us to the stake immediately.
+; dlga_runaway_serf_intro_3:runaway_serf_go_back|And this will be all that you maggots deserve. You will go back to {s1}, or I have you slaughtered here and now!
+; dlga_runaway_serf_intro_3:runaway_serf_slaughter|I see. I think I will have to teach you lot a lesson in order to make you obey. Slaughter him!
+; dlga_runaway_serf_go_back:close_window|All right {reg11?mistress:master}. As you wish. We'll head back to {s5} now.
+; dlga_start:runaway_serf_talk_caught|Good day {reg11?mistress:master}. We were heading back to {s5}, but I am afraid we lost our way.
+; dlga_runaway_serf_talk_caught:runaway_serf_go_back|Do not test my patience. You are going back now! (Charisma)
+; dlga_runaway_serf_talk_caught:runaway_serf_slaughter|I see. I think I will have to teach you lot a lesson not to lose your way again. Slaughter him!
+dlga_runaway_serf_slaughter:close_window|언젠가 반드시 되갚아주마... 아으아악!...
 dlga_start:runaway_serf_talk_again_return|{s5}로 돌아가는 중입니다. 주인님.
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|서두르는게 좋을거다. 빨리 돌아갈수록 신상에 좋을테니.
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|좋아. 계속 가라.
@@ -1005,8 +1011,8 @@ dlga_town_merchant_talk:merchant_gossip|이 근방에 떠도는 소문들에 대
 dlga_town_merchant_talk:close_window|잘 가게.
 dlga_start:town_dweller_talk|실례합니다?
 dlga_start:town_dweller_talk.1|좋은 하루로군요, 사령관님.
-dlga_town_dweller_talk:town_dweller_ask_fugitive|나는 {s4}의 이름으로 도망자를 찾고 있다. 그의 말로는 여기 숨어있다고 하던데.
-dlga_town_dweller_ask_fugitive:close_window|이방인들이 마을에 왔다가 사라지곤 합니다. 만약 그가 이곳에서 뭔가를 하고 있다면, 둘러보는 것으로 금방 찾을 수 있을겁니다.
+; dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?
+; dlga_town_dweller_ask_fugitive:close_window|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
 dlga_town_dweller_talk:town_dweller_ask_info|이 마을에 대해 설명해주겠나?
 dlga_town_dweller_talk:town_dweller_ask_info.1|이 장소에 대해 설명해주겠나?
 dlga_town_dweller_talk:town_dweller_talk|여기 생활은 좀 어떤가?

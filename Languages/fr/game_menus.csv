@@ -108,7 +108,7 @@ mno_start_2_hib|Noble
 menu_start_haradrim|^^^^^^^Vous êtes un Haradrim,^un homme du désert.^Sélectionnez votre lignée :
 mno_start_1_des|Homme du désert
 mno_start_2_far|Guerrier tribal du Harad Lointain
-menu_start_numenorean|^^^^^^^Vous êtes un Númenóréen Noir, loyal à l'obscurité et à Morgoth.^Choisissez où vous servez l’oeil...
+menu_start_numenorean|^^^^^^^Vous êtes un Númenóréen Noir, loyal à l'obscurité et à Morgoth.^Choisissez où vous servez l’Oeil...
 mno_start_1_bn|Aux cotés de la Bouche de Sauron, à la MORANNON
 mno_start_2_bn|Au coeur de la forteresse du Nécromancien, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^Quel genre choisissez-vous de représenter ?
@@ -122,7 +122,7 @@ mno_continue|Continuer...
 menu_character_report|^^^^^Moral du groupe : {reg8}^Limite du groupe : {reg7}^
 menu_camp|^^^^Vous êtes dans {s1}.{s2}^^Que voulez-vous faire ?
 mno_camp_scene|Vous promener.
-mno_camp_troop|Passer en revue {reg10? troupes:}{reg12?et:}{reg11? prisonniers:}.
+mno_camp_troop|Passer en revue {reg10? les troupes:}{reg12? et:}{reg11? les prisonniers:}.
 mno_camp_action|Utiliser un objet.
 mno_camp_wait_here|Camper ici pour quelque temps.
 mno_camp_options|Changer les options de TLD.
@@ -130,7 +130,7 @@ mno_Dev_Menu|Menu Développeur
 menu_dev_menu|Ce sont des options de développement qui amènent des outils de triche avec lesquels vous pouvez jouer.^^Cependant, cela peut provoquer des événements, des déclencheurs ou des changements de campagne qui peuvent casser le jeu.^^Utilisez à vos risques et périls !^^Aussi, si vous reportez des bugs, merci de préciser que vous utilisez le Menu de Dev.
 mno_cheat_enable|Activer la triche/les options de modding.
 menu_game_options|^^^^^^^^Cliquez sur une option pour basculer :
-mno_game_options_war_level_start|La Guerre commence au Niveau : {s1}
+mno_game_options_war_level_start|La Guerre commence au niveau : {s1}
 mno_game_options_restrict_items|Équipement du joueur restreint : {s7}
 mno_game_options_formations|Formations de bataille et IA : {s7}
 mno_game_options_siege_ai|IA de siège avancée : {s7}
@@ -255,7 +255,7 @@ menu_besiegers_camp_with_allies|{s1} est assiégé. Les bannières de {s2} flott
 mno_talk_to_siege_commander|Demander une audience avec le commandant.
 mno_join_siege_with_allies|Participer au prochain assaut.
 mno_join_siege_stay_back|Ordonner à vos soldats de participer au prochain assaut sans vous.
-menu_moria_must_escape|^^Le livre semble rendre compte de la dernière tentative des nains de se réinstaller dans la Moria. Tentative qui s'est apparemment terminée par une mort horrible pour tous les participants. Alors que vous réfléchissez à leur sombre destin, vous entendez soudain des cris aigus et le bruit précipité de nombreux pieds.^Ils arrivent !^Quittant rapidement la pièce, vous remarquez que les bruits viennent du couloir. Vous n'avez d'autre choix que de fuir dans l'autre direction, suivant un étroit et sinueux tunnel qui s'enfonce dans les profondeurs... ^...^Au bout de quelques heures, vous comprenez que vous avez perdu votre chemin au plus profond de la Moria et que vous devez trouver un moyen de sortir.
+menu_moria_must_escape|^^Le livre semble rendre compte de la dernière tentative des nains de se réinstaller dans la Moria, tentative qui s'est apparemment terminée par une mort horrible pour tous les participants. Alors que vous réfléchissez à leur sombre destin, vous entendez soudain des cris aigus et le bruit précipité de nombreux pieds.^Ils arrivent !^Quittant rapidement la pièce, vous remarquez que les bruits viennent du couloir. Vous n'avez d'autre choix que de fuir dans l'autre direction, suivant un étroit et sinueux tunnel qui s'enfonce dans les profondeurs...^...^Au bout de quelques heures, vous comprenez que vous avez perdu votre chemin au plus profond de la Moria et que vous devez trouver un moyen de sortir.
 mno_moria_exit_scene|Trouver la sortie
 menu_castle_outside|Vous êtes à l'extérieur de {s2}. {s11} {s3} {s4}
 mno_cheat_steal_book_door|Prendre le livre
@@ -279,12 +279,12 @@ menu_castle_taken_by_friends|Il n'y a rien à voir ici.
 menu_castle_taken|{s3} est tombé aux mains de vos troupes, et vous avez maintenant le contrôle total {reg2?de la ville:du château}. {reg1? Il semble que rien ne vous empêche de le garder pour vous-même...:}
 menu_castle_taken_2|{s3} est tombé sous l'attaque de vos hommes et vous avez à présent le contrôle total du château. Il est temps d'envoyer un message à {s9} pour l'informer de votre victoire. {s5}
 mno_castle_taken_no_claim|Ne demander aucune récompense.
-menu_siege_started_defender|{s1} lance un assaut contre les murs de {s2}. Vous avez {reg22} troupes prêtes au combat contre les {reg11} de l'ennemi. Vous décidez de...
+menu_siege_started_defender|{s1} lance un assaut contre les murs de {s2}. Vous avez {reg22} soldats prêts au combat contre les {reg11} de l'ennemi. Vous décidez de...
 mno_siege_defender_join_battle|Rejoindre la bataille.
 mno_siege_defender_troops_join_battle|Ordonner à vos hommes de se battre sans vous.
 mno_siege_defender_do_not_join_battle|Ne pas vous en mêler.
 menu_siege_join_defense|{s4}^^Vos pertes : {s8}^^Pertes alliées : {s9}^^Pertes ennemies : {s10}
-menu_village_hunt_down_fugitive_defeated|^^^^^Le coup de massue du fuyard vous jette à terre, votre vision se brouille et un voile noir tombe sur vos yeux. Le temps passe. Lorsque vous rouvrez vos yeux, vous vous découvrez blessé{/e} et sanglant{/e}, mais par chance aucune de vos blessures ne semble mortelle.
+menu_village_hunt_down_fugitive_defeated|^^^^^Le coup de massue du fuyard vous jette à terre, votre vision se brouille et un voile noir tombe sur vos yeux. Le temps passe. Lorsque vous rouvrez vos yeux, vous vous découvrez blessé{/e} et ensanglanté{/e}, mais par chance aucune de vos blessures ne semble mortelle.
 menu_town_bandits_succeeded|^^^^^Les Gobelins tombent devant vous comme le blé sous la faux ! Bientôt vous vous tenez seul{/e}, tous vos attaquants gisant inconscients, morts ou mourants. Les locaux vous seront vraisemblablement très reconnaissants de les avoir sauvés de cette menace.
 menu_town_brawl_lost|^^^^^^Vous avez été assommé{/e}. Les gens que vous avez attaqué vous fouillent rapidement, à la recherche de marchandises de valeur, avant de reprendre leur activité journalière.
 menu_town_brawl_won|^^^^^Vous avez battu tous les adversaires et les gardes envoyés pour réprimer les troubles. Vous les détroussez rapidement, avant de vous éclipser jusqu'à ce que les choses se tassent. ^La prochaine fois, ils vous montreront peut-être plus de respect et reculeront.
@@ -349,17 +349,6 @@ menu_legendary_place|^^^^Vous avez suivi les rumeurs et trouvé {s1}. Vous pouve
 mno_explore|Explorer ce lieu.
 menu_ring_hunter_lair|^^^^Vous avez suivi le sentier des Chasseurs d'Anneaux à travers la forêt de Grand'Peur et vous êtes arrivé{/e} au {s1}. Vous les voyez se préparer à partir avec un coffre.
 mno_attack_lair|Les attaquer maintenant
-mno_leave_bandit_lair|Partir pour l'instant.
-menu_raftmen|^^^^Vous suivez la Rivière Courante qui coule vers le sud-est en direction de Rhûn, espérant trouver l'ancienne route marchande.^^Au bout d'un certain temps, vous arrivez à un petit village niché au bord de la rivière.^^Vous demandez aux villageois comment vous pourriez rejoindre la route et on vous oriente vers deux hommes qui naviguent sur la rivière en radeau.^^Il faut négocier, mais vous obtenez d'eux qu'ils vous amènent en aval de la rivière.
-mno_go_with_the_raftmen|Prendre le radeau vers le Dorwinion
-menu_ride_to_dorwinion|^^^^Vous vous détendez et profitez du beau temps pendant que les hommes dirigent le radeau vers l'aval. La Rivière Courante, froide et limpide au milieu des chutes et des rapides de la Montagne Solitaire, est ici tiède, douce et boueuse.^^Sous le soleil de l'après-midi, vous observez les plaines ondulantes et les forêts verdoyantes qui défilent tandis que le radeau flotte le long des méandres sinueux. La région est parsemée de petites fermes et de vignobles aux murets de pierre, et vous croisez de temps à autre une maison sur pilotis nichée dans les roseaux.^^Le mouvement paisible du radeau vous aide à vous endormir...
-mno_ride_to_dorwinion_next|Suivante...
-menu_amath_dollen_fortress|^^^^Vous vous réveillez de votre sieste en fin d'après-midi et atteignez rapidement une jetée où les hommes amarrent le radeau. Ils vous dirigent vers un chemin étroit qui disparaît dans l'herbe des marais et installent un camp en attendant votre retour.^^Vous suivez le chemin, qui monte rapidement des marais vers une plaine herbeuse, et marchez jusqu'à ce qu'il rejoigne l'ancienne route marchande.^^Au bout d'un certain temps, vous apercevez une forteresse de bandits.
-mno_bandit_fortress_with_companions|Approcher de la forteresse des bandits avec uniquement vos compagnons et tenter de parler à leur chef.
-mno_bandit_fortress_with_army|Attaquer le forteresse des bandits avec tous vos hommes.
-mno_bandit_fortress_against_easterlings|Défendre la forteresse contre le siège
-mno_bandit_fortress_spirits|Aller parler aux esprits.
-mno_leave_amath_dollen_fortress|Partir pour l'instant.
 menu_gondor_reinforcement_event|^^^^^Les feux d'alarmes du Gondor sont allumés, Minas Tirith appelle à l'aide !^^Les seigneurs des cités du sud vont marcher sur le nord pour défendre la Cité Blanche contre les ténèbres à venir.
 mno_gondor_reinforcement_event_close|Fermer
 menu_gondor_beacons|Vous regardez {s1}, un des feux d'alarme du Gondor utilisé pour sonner l'alarme au sud et au nord du Gondor.
@@ -455,15 +444,6 @@ menu_animal_ambush_fail|Les animaux mordent et déchirent vos vêtements {reg0?,
 menu_isengard_flooding|^^^^^@Vous êtes entourés d'ennemis morts et d'alliés triomphants, y compris les Ents ; ils rugissent, font du bruit et trompent jusqu'à ce que des pierres se fendent et tombent tout autour de la tour Orthanc. Ils sont comme une tempête hurlante, brisant les piliers, lançant des avalanches de rochers dans les puits, projetant d'énormes dalles de pierre en l'air comme des feuilles... Bregalad (ou Primebranche, comme vous le connaissez) arrive à grands pas et ne s'arrête que pour dire : "{playername} ! Attention, ne vous approchez pas de la tour ! Nous allons bientôt rompre le barrage et amener l'Isen dans cette vallée pendant un petit moment. Je pense que vous aurez du mal à rester debout ici !" Sans attendre, vous suivez son avertissement et vous vous dépêchez de vous éloigner d'Orthanc.^^Vers minuit, Isengard commence à se remplir de ruisseaux et de mares noires. Vous ne pouvez vous empêcher de frissonner en voyant la fumée et la vapeur s'élever en grandes colonnes, et une grande spirale de vapeur s'élever et serpenter autour de la tour, jusqu'à ce qu'elle ressemble à un grand pic de nuages, enflammé en dessous et éclairé par la lune au-dessus. La colère des Ents est lente, mais elle possède une force irrésistible...
 mno_isengard_continue|Continuer
 menu_build_your_scene|Vous pouvez construire votre propre scène de bataille en utilisant l'un des emplacements prévus ci-dessous et le mode d'édition du jeu (vous devez d'abord activer le mode d'édition dans les options de l'écran de lancement de M&B, puis appuyer sur Ctrl+E dans une scène pour accéder au mode d'édition). Vous pourrez ensuite soumettre les scènes que vous avez construites (à savoir, les fichiers sco du dossier TLD/SceneObj) à l'équipe de développement de TLD et, si votre scène est bonne, elle pourra apparaître dans une version ultérieure comme l'un des champs de bataille aléatoires !^^ Essayez de spécifier la région de la carte où vous voulez que votre scène apparaisse.^ Quelques conseils : évitez les eaux profondes, les montagnes escarpées et autres endroits infranchissables, à moins que vous n'ayez l'expérience de la construction de scènes et que vous sachiez comment empêcher les troupes d'IA de marcher là où vous ne voulez pas qu'elles aillent, et faire des maillages d'IA dans d'autres endroits.^ (Les entrées #0-1 sont pour les attaquants, #4 pour les défenseurs, ne touchez pas aux entrées #5-8)
-mno_scene1|Grande plaine (fichier scène custom 1.sco)
-mno_scene2|Plaine moyenne (fichier scène custom 2.sco)
-mno_scene3|Petite plaine (fichier scène custom 3.sco)
-mno_scene4|Grande steppe (fichier scène custom 4.sco)
-mno_scene5|Steppe moyenne (fichier scène custom 5.sco)
-mno_scene6|Petite steppe (fichier scène custom 6.sco)
-mno_scene7|Grande forêt (fichier scène custom 7.sco)
-mno_scene8|Forêt moyenne (fichier scène custom 8.sco)
-mno_scene9|Petite forêt (fichier scène custom 9.sco)
 mno_back_3dot|Retour...
 mno_back|Retour.
 mno_next|Suivante...

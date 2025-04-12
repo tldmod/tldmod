@@ -41,7 +41,7 @@ dlga_hobbit_merry_talk_met:close_window|やあ、メゼル・メリー。
 dlga_hobbit_pippin_talk_met:close_window|やあ、メゼル・ピピン。
 ; dlga_start:hd_defense_01|It is well that you are here, {playername}. My name is Aragorn, son of Arathorn, and I am the Heir of Isildur – see, here is Anduril, the Flame of the West, which I bear in battle. The Blade that was Broken shines again! It will not be long before Saruman’s forces reach these walls. I ask you now to lend me your aid and defend the Rohirrim, for the honour of the Lord of the Mark. Let this be the hour when we draw swords together!
 ; dlga_start:hd_defense_01.1|Mae lovannen! Things here look ill, {playername}, but less ill now that you are here with us! Gellon len covad. I am Legolas of Mirkwood, and though I do not much like this place I like the approaching hordes of Saruman even less. What would I give for a hundred more of my kin here! There are too few of us, too few. We shall need your aid, Commander, though we may be but a few leaves in the forest. Come, let me show you where our bows will be of the most use…
-; dlga_start:hd_defense_01.2|Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazaˆd! Khazaˆd ai-meˆnu!
+; dlga_start:hd_defense_01.2|Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazâd! Khazâd ai-mênu!
 ; dlga_hd_defense_01:close_window|Now, let us rest for a while. The enemy will be here by nightfall.
 ; dlga_start:aragorn_thanks_hd|{playername}, I am glad to see you live still. The men are weary with battle, but thanks to you they see the dawn of a new day. The hillmen have given themselves up, and they shall be put to work to repair the evil which they have joined, after which I hope they will return to their own lands. They were easily deceived by Saruman, for much was taken from them, and much remains to be given back; we shall have to see what can be done for them later.
 ; dlga_aragorn_thanks_hd:close_window|I hope our paths may cross again, {playername}. I bid you farewell now, for I ride on an errand most urgent. With the first light of morning we must go, my friends and I, and take a dark road out of this valley. {playername}, the times are evil, but your valour gladdens the hearts of all free peoples everywhere, from the North to the South. Fight well, and we may meet again beyond the shadows!
@@ -159,7 +159,7 @@ dlga_ziggy_no:close_window.1|指揮官どの、承知した。
 dlga_ziggy_yes:ziggy_choose_prisoners|素晴らしい。どの実験体をくれるのじゃ？
 dlga_ziggy_choose_prisoners:ziggy_no|今そちらへまわす余裕がない。
 dlga_ziggy_chosen_prisoner:ziggy_ritual|指揮官どの、礼を言う！少し待ってもらおう・・・うむ、これならば^うまくいくであろう・・・アガンヌーロ・ブルダン・キヌム！^カドー・ナック、イードー・ウグル＝ダラド・ダーイラ！
-dlga_ziggy_chosen_prisoner:ziggy_ritual.1|どれどれ、見てやろう。尊大で反抗的といったところかの？少しばかり、^怖れを感じておるのか？ではわしがまことの恐怖を与えてやろう！^アガンヌーロ・ブルダン・キヌム！カドー・ナック、^イードー・ウグル＝ダラド・ダーイラ！
+; dlga_ziggy_chosen_prisoner:ziggy_ritual.1|What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
 dlga_ziggy_ritual:ziggy_ritual_succeed|おお・・・これじゃ！指揮官どの、見よ！我、ジグールフェルの^偉業をとくと見るがよい！アングバンドの狼を知っておるか？^ドラウグルインは？または、ヴァリノールの猟犬フアンを殺した、^強大なカルハロスは？冥王がその意に添うように捕らえた者を^ねじ曲げるのと同様、われらも小さな魂を呼び寄せ、^大いなる闇の獣としてつなぎ合わせるのじゃ！もちろん、この者の^持つ力はドラウグルインの子孫には程遠いが、役に立つであろう。
 dlga_ziggy_ritual:ziggy_ritual_succeed.1|追い立てまわされる敵勢を見るのが楽しみじゃのう。
 dlga_ziggy_ritual:ziggy_choose_prisoners|くっ！か弱すぎたか！役立たずめ！指揮官どの、もっと強い、 我が術に耐えられる者が必要じゃ！
@@ -294,6 +294,7 @@ dlga_lord_start:lord_hunt_refugees_failed|{playername}よ。間者からの報�
 dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|ご主人様、やつらはするりと逃げていくのです。 やつらを見失ってしまいました。
 dlga_lord_hunt_refugees_failed_1:lord_pretalk|怪我人と病人を相手にしてこのざまとは、 おぬしには軍の指揮など、 おぼつかないのではないか！^^もう行け。 再び任務を与えられる事を祈るがいい。
 dlga_lord_start:lord_generic_mission_completed.9|何という事だ、よくやってくれたぞ、 {playername}。 奴隷はすべて戻り、 収穫の準備で大忙しだ。 おぬしの仕事ぶりは素晴らしい。 さあ、私の感謝の気持ちだ、 報酬を受け取るがいい。
+; dlga_lord_start:lord_generic_mission_completed.10|Well done, but you've done it, {playername}. The slaves are back and they're busy preparing for the harvest. I guess you had to kill some of them in order to make the others obey. Can't be helped, but I'll only reward you for those that have returned, not the ones you left rotting in the wilderness.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}。 私は辛抱強く奴隷どもが戻るのを待っているのだが、 まだひとりも戻っておらぬ。 おぬしはこれをどう説明するつもりだ？ おぬしはあの教養のない動物どもに 一杯食わされたのか、 それともおぬしは単なる役立たずなのか、 どちらだ？
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|お許しください、{s65}、あの奴隷どもはまるで、 うなぎのようにするりと逃げるので。
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|フン、それでは言い訳にすらならんな、{playername}。 もういい、行け。 我々が飢えるまえに、 農場で働かせるための新しい奴隷を確保しなければならん。
@@ -590,7 +591,7 @@ dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|近頃は
 dlga_lord_mission_raise_troops_accepted:close_window|おぬしのお陰で肩の荷が下りたわ、 {playername}。 我が部隊の兵長に、 新兵をおぬしの指揮下へ送るよう、 伝えておこう。 それから、 経費の足しに、 おぬしにいくらか前金を渡しておこう。 さあ、 これで充分であろう。 感謝する。
 dlga_lord_mission_raise_troops_alternate:close_window|{playername}よ、それはおもしろい考えだ。新兵どもを訓練場に向かわせるよう、兵長に伝えるとしよう。おぬしもそこへ行って、連中をしごき上げてくれ。私も見物するとしよう。おぬしには感謝するぞ。
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|お、そうか。 期待していたのだがな。 まあ仕方あるまい。 ではまたな。
-dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|おぬし向きの仕事がある。{s4}と呼ばれる、 ならず者がおってな。 私の護衛の者をひとり殺害して以来、裁きを受けずに逃げ続けておるのだ。 最近、奴を{s3}で目撃したという情報があった。 奴を捕らえて速やかに裁きを下してくれれば、報酬を出そう。
+; dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the traitor known as {s4}.  He moves from place to place, spreading the insidious poison of doubt. He sows fear and undermines the resolve of our warriors.  He acts on behalf of our enemies, that much is certain. Yet so far he has always been able to slip from my grasp.  There has been news recently that he has been seen at {s3}.  You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|ではその者を探し出し、然るべき裁きを受けさせましょう。
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|私は今、少々忙しいもので。
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|素晴らしい、{playername}。 感謝するのはもちろんだが、 おぬしの腕前も、 とくと拝見するとしよう。 幸運を祈る。
@@ -769,11 +770,13 @@ dlga_defeat_hero_answer_1:close_window|おのれ。後悔する事になるぞ�
 dlga_defeat_hero_answer:defeat_hero_answer_2|どこへなりと行くがいい。二度と私に刃向わぬことだ。
 dlga_defeat_hero_answer_2:close_window|また会おう。
 dlga_start:fugitive_1|何だ、何か用かい？
-dlga_fugitive_1:fugitive_2|{s4}という名のおたずね者を探している。おまえはその者と特徴が一致するのだ。
+; dlga_fugitive_1:fugitive_2|I am looking for a {s3} by the name of {s4}. You fit his description.
 dlga_fugitive_1:close_window|なんでもない。邪魔をしたな。
 dlga_fugitive_2:fugitive_3|何のことだ、俺は知らないぞ。勘違いだろう。
 dlga_fugitive_3:fugitive_4|では武器を地面に落とせ。 身に覚えがないのなら、 恐れる理由はないはずだ。 警備隊長のところまで私に同行してもらおう。 私が勘違いをしているかどうか、 確認を取る。
 dlga_fugitive_4:close_window|くそっ！てめえにはここで死んでもらう！
+; dlga_start:fugitive_5|So, I caught you at last!
+; dlga_fugitive_5:close_window|You are mistaken. We caught you!
 dlga_start:follow_spy_talk|やあ、こんにちは。 今日は本当に良い天気だと思いませんか？ さて、話込むわけにも参りませんので、 私はこれで失礼させていただきます。
 dlga_follow_spy_talk:follow_spy_talk_2|{s1}の名において、おまえを逮捕する！
 dlga_follow_spy_talk_2:close_window|おとなしく捕まると思うなよ！
@@ -783,12 +786,15 @@ dlga_spy_partners_talk:spy_partners_talk_2|{s1}の名において、おまえを
 dlga_spy_partners_talk_2:close_window|やれるものなら、やってみろ！
 dlga_spy_partners_talk:close_window|気にしないで{くれ/ちょうだい}。ただの通りすがり{だ/よ}。
 dlga_start:runaway_serf_intro_1|ごきげんよう、{旦那さま/ご婦人}。
-dlga_runaway_serf_intro_1:runaway_serf_intro_2|私は{s4}の手の者だ。 今すぐ引き返せば、 罰は受けずに済むであろう。
-dlga_runaway_serf_intro_2:runaway_serf_intro_3|{旦那さま/ご婦人}。 {s1}でのわしらの生活は、 つらすぎます。 わしらは一日中働き、 それでも空腹に耐えながら寝るんです。 わしらは{s6}へ行って、 人間らしい、 新しい生活を始めたいんです。
-dlga_runaway_serf_intro_3:runaway_serf_go_back|奴隷の脱走は、 我らの法に逆らう行為だ。 今すぐ{s1}へ引き返せ！
-dlga_runaway_serf_go_back:close_window|わかりました、{旦那さま/ご婦人}。 おっしゃる通り、すぐに{s5}へ戻ります。
-dlga_start:runaway_serf_talk_caught|これは{旦那さま/ご婦人}。 わしらは{s5}へ戻るところなんですが、 どうも道に迷ったようで。
-dlga_runaway_serf_talk_caught:runaway_serf_go_back|私を甘くみるなよ。今すぐ戻れ！
+; dlga_runaway_serf_intro_1:runaway_serf_intro_2|I have been sent by {s4} whom you are running from. {reg11?She:He} will hold back {reg11?her:his} wrath and spare your lifes if you return now.
+; dlga_runaway_serf_intro_2:runaway_serf_intro_3|Have mercy! Going back to {s1} means certain death.{s4} will make us toil until we die of exhaustion, or he will put us to the stake immediately.
+; dlga_runaway_serf_intro_3:runaway_serf_go_back|And this will be all that you maggots deserve. You will go back to {s1}, or I have you slaughtered here and now!
+; dlga_runaway_serf_intro_3:runaway_serf_slaughter|I see. I think I will have to teach you lot a lesson in order to make you obey. Slaughter him!
+; dlga_runaway_serf_go_back:close_window|All right {reg11?mistress:master}. As you wish. We'll head back to {s5} now.
+; dlga_start:runaway_serf_talk_caught|Good day {reg11?mistress:master}. We were heading back to {s5}, but I am afraid we lost our way.
+; dlga_runaway_serf_talk_caught:runaway_serf_go_back|Do not test my patience. You are going back now! (Charisma)
+; dlga_runaway_serf_talk_caught:runaway_serf_slaughter|I see. I think I will have to teach you lot a lesson not to lose your way again. Slaughter him!
+dlga_runaway_serf_slaughter:close_window|いつかこの報いを受けるぞ・・・ ぎゃあああああ！・・・
 dlga_start:runaway_serf_talk_again_return|わしらは{s5}へ戻るところです、{旦那さま/ご婦人}。
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|急げ。
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|よし。その調子だ。
@@ -1005,8 +1011,8 @@ dlga_town_merchant_talk:merchant_gossip|最近の話題は？
 dlga_town_merchant_talk:close_window|ではまた。
 dlga_start:town_dweller_talk|何か？
 dlga_start:town_dweller_talk.1|ごきげんよう、指揮官殿。
-dlga_town_dweller_talk:town_dweller_ask_fugitive|{s4}という名のおたずね者を探している。このあたりに潜んでいると聞いてやって来た。
-dlga_town_dweller_ask_fugitive:close_window|ここはよそ者でも自由に出入りできます。 もしここに隠れているのなら、 探せば必ず見つかると思いますよ。
+; dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?
+; dlga_town_dweller_ask_fugitive:close_window|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
 dlga_town_dweller_talk:town_dweller_ask_info|この村について教えてくれないか{/しら}？
 dlga_town_dweller_talk:town_dweller_ask_info.1|この場所について教えてくれないか{/しら}？
 dlga_town_dweller_talk:town_dweller_talk|ここでの生活はどう{だい/}？

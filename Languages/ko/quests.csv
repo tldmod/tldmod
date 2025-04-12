@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9}가 {reg1}를 {s14}명 훈련 시켜 {그/그녀}에�
 qst_escort_messenger|{s14}까지 전령 호위하기
 qst_escort_messenger_text|없음
 qst_hunt_down_fugitive|{s4}를 추적하여 잡기
-qst_hunt_down_fugitive_text|{s9}은 {s4}이름을 가진 탈주자를 추적하라고 말한다. 그는 지금 {s3}에 있는 걸로 안다.
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 qst_bring_back_runaway_serfs|탈출노예 잡아오기
 qst_bring_back_runaway_serfs_text|{s9}가 세 무리의 도망 노예들을 {s2}로 잡아 오기를 요청했다. 노예들은 {s3} 방향으로 도망칠 것이라 한다.
 qst_follow_spy|스파이를 접선장소까지 미행하시오

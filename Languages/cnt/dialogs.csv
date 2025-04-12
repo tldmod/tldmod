@@ -41,7 +41,7 @@ dlga_hobbit_merry_talk_met:close_window|你好，梅里閣下。
 dlga_hobbit_pippin_talk_met:close_window|你好，皮聘閣下。
 dlga_start:hd_defense_01|很好，你在這裡，{playername}。我的名字是阿拉貢，阿拉索恩之子，我是伊希朵的繼承者——看，這是安都利爾，西方之焰，我在戰鬥中揮舞著它。破碎之刃再次閃耀！不久之後，薩魯曼的軍隊就會抵達這些城牆。我現在請求你幫助我，保護洛汗，為了領主的榮譽。讓這成為我們共同拔劍的時刻！
 dlga_start:hd_defense_01.1|梅·洛凡嫩！這裡的情況糟透了，{playername}，不過因為你和我們在一起，情況稍微好了一些！我在這裡等待的時刻。我是米爾克伍德的萊戈拉斯，雖然我不太喜歡這個地方，但我對薩魯曼即將來襲的軍隊更是厭惡。我願意為再多一百個我的同胞而付出一切！我們的人實在太少了，太少了。我們需要你的幫助，指揮官，儘管我們在這片森林裡不過是幾片樹葉。來吧，我來給你看我們的弓箭最能派上用場的地方……
-dlga_start:hd_defense_01.2|我很高興見到你，親戚！我是金利，格羅因之子。現在大軍來襲，但我的斧頭在手中不安靜，我知道你也有同樣的感受！給我們一排獸人脖子來砍，還有搶劍的空間，讓我們一起教訓他們恐懼的意義。堅韌的腳和牢固的斧頭，這就是帶領我們度過黑夜的力量！啊呀！我們倆都足夠了。巴魯克·卡札德！卡札德必勝！
+; dlga_start:hd_defense_01.2|Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazâd! Khazâd ai-mênu!
 dlga_hd_defense_01:close_window|現在讓我們休息一下。敵人將在夜幕降臨之前抵達。
 dlga_start:aragorn_thanks_hd|{playername}，我很高興看到你仍然活著。男人們在戰鬥中疲憊不堪，但多虧了你，他們看到了新一天的曙光。山民們已經投降，他們將被派去修復他們曾參與的邪惡，之後我希望他們能返回自己的土地。他們被薩魯曼輕易欺騙，因為他們失去了很多，仍有很多需要歸還；我們必須看看之後能為他們做些什麼。
 dlga_aragorn_thanks_hd:close_window|我希望我們能再次相遇，{playername}。我現在向你告別，因為我有急事要處理。隨著晨光初現，我和我的朋友們必須出發，沿著一條黑暗的道路離開這個山谷。{playername}，時局不妙，但你的勇氣讓所有自由民族的心都感到振奮，無論是北方還是南方。好好作戰，或許我們能在陰影之外再次相見！
@@ -159,7 +159,7 @@ dlga_ziggy_no:close_window.1|好的，指揮官。
 dlga_ziggy_yes:ziggy_choose_prisoners|非常好，這些樣本中你想給出哪個呢？
 dlga_ziggy_choose_prisoners:ziggy_no|我沒有任何想給的。
 dlga_ziggy_chosen_prisoner:ziggy_ritual|謝謝你，指揮官！等一下...啊是的，這個很不錯...願黑暗籠罩我們！然後，臣服於魔多之下吧！
-dlga_ziggy_chosen_prisoner:ziggy_ritual.1|看看我們這裡有什麼？驕傲，反抗？又或者是理所當然的，恐懼？現在，我將給你恐懼的理由！願黑暗籠罩我們！然後，臣服於魔多之下吧！
+; dlga_ziggy_chosen_prisoner:ziggy_ritual.1|What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
 dlga_ziggy_ritual:ziggy_ritual_succeed|噢是的...是的！看吧，指揮官！瞻仰我，齊格爾菲爾，的狀舉吧！安格班的狼你知道嗎？卓古路因，或殺掉維林諾之犬胡安強大的卡黑洛斯？如同黑暗之主可以扭曲並將靈魂困在容器中來利用，我也成功將一個卑微的靈魂困住並培養成一頭黑影的野獸！雖然沒有卓古路因的血脈那麼好，當然，比不上，但夠用了。
 dlga_ziggy_ritual:ziggy_ritual_succeed.1|確實的讓對手臣服總是如此的讓人愉悅。
 dlga_ziggy_ritual:ziggy_choose_prisoners|噁！這個太弱了！毫無價值！指揮官，換一個更強壯的給我，一個不會失敗的！
@@ -294,6 +294,7 @@ dlga_lord_start:lord_hunt_refugees_failed|{playername}，我們的間諜告訴�
 dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|他們很狡猾，主人。我跟丟他們了。
 dlga_lord_hunt_refugees_failed_1:lord_pretalk|如果你無法擊敗這些弱者我想你也不夠格指揮將令這個世界臣服的軍隊！^^滾，最好祈禱我會給你第二次機會。
 dlga_lord_start:lord_generic_mission_completed.9|開玩笑的吧，你真的做到了，{playername}。所有的奴隸都回來了而他們也正忙著準備收穫。你無可爭議的贏得了獎賞。來，拿好，再加上我的讚賞。
+; dlga_lord_start:lord_generic_mission_completed.10|Well done, but you've done it, {playername}. The slaves are back and they're busy preparing for the harvest. I guess you had to kill some of them in order to make the others obey. Can't be helped, but I'll only reward you for those that have returned, not the ones you left rotting in the wilderness.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}。我一直在耐心等著我的奴隸，但到現在一個都沒回來。你有什麼解釋嗎？你是被林中的小動物整了，還是說你根本無能？
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|請原諒我，{s65}，那群奴隸像泥鰍一樣狡猾。
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|哼，你失敗的藉口可真夠差勁，{playername}。我要走了，我得在大家挨餓之前抓些人回來種田。
@@ -590,7 +591,7 @@ dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|我這幾
 dlga_lord_mission_raise_troops_accepted:close_window|你真是幫了我卸下了一個重擔，{playername}。我已經跟手下的軍士講好他會帶一些新兵給你指揮的。而且，我會先付一部分的軍費。嗯，這些應該足夠了。再次感謝你的協助。
 dlga_lord_mission_raise_troops_alternate:close_window|真是個有趣的提案啊，{playername}。我會告訴我的軍士將新兵送到訓練場的。在那裡把他們打造成士兵該有的樣子吧。我會看著的。感謝你的協助。
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|哦，當然。我想也是。那，祝你好運吧。
-dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|我有件事你可以幫忙，關於一個被稱為{s4}無法無天的惡棍。他謀殺了我的一名保鏢並從那時起就一直在逃亡。最近有消息稱這個逃犯被人目擊到在{s3}。你或許能夠追捕他並迅速伸張正義，我會回報你的。
+; dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the traitor known as {s4}.  He moves from place to place, spreading the insidious poison of doubt. He sows fear and undermines the resolve of our warriors.  He acts on behalf of our enemies, that much is certain. Yet so far he has always been able to slip from my grasp.  There has been news recently that he has been seen at {s3}.  You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|我馬上就去追捕他並以法之名處決他吧。
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|我現在太忙沒時間抓他。
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|那就太棒了，{playername}。我很感激，你的勇氣也會被記住的。好吧，祝你狩獵順利。
@@ -769,11 +770,13 @@ dlga_defeat_hero_answer_1:close_window|你這該死的。你會後悔的。
 dlga_defeat_hero_answer:defeat_hero_answer_2|這次放你走，但以後別再擋我的路了。
 dlga_defeat_hero_answer_2:close_window|我們會再見的。
 dlga_start:fugitive_1|是，你想要什麼？
-dlga_fugitive_1:fugitive_2|我正在尋找一個名叫{s4}的逃犯。你符合他的特徵。
+; dlga_fugitive_1:fugitive_2|I am looking for a {s3} by the name of {s4}. You fit his description.
 dlga_fugitive_1:close_window|沒什麼。抱歉打擾你了。
 dlga_fugitive_2:fugitive_3|我不知道你在說什麼。你一定是把我跟誰搞混了。
 dlga_fugitive_3:fugitive_4|那就放下你的劍吧。如果你是無辜的，那你就不用害怕。我們現在去跟衛兵長談談就會知道誰搞混了。
 dlga_fugitive_4:close_window|你這該死的！你哪裡都別想去！
+; dlga_start:fugitive_5|So, I caught you at last!
+; dlga_fugitive_5:close_window|You are mistaken. We caught you!
 dlga_start:follow_spy_talk|日安。天氣很不錯是吧？不好意思我還要趕路。
 dlga_follow_spy_talk:follow_spy_talk_2|以{s1}之名，你被逮捕了！
 dlga_follow_spy_talk_2:close_window|你是不會活捉我的！
@@ -783,12 +786,15 @@ dlga_spy_partners_talk:spy_partners_talk_2|以{s1}之名你被逮捕了！
 dlga_spy_partners_talk_2:close_window|你得先打倒我們！
 dlga_spy_partners_talk:close_window|別在意我。我只是路過。
 dlga_start:runaway_serf_intro_1|主人日安。
-dlga_runaway_serf_intro_1:runaway_serf_intro_2|我是你們正努力逃離的{s4}派來的。如果你們現在回去他就不會懲罰你們。
-dlga_runaway_serf_intro_2:runaway_serf_intro_3|我的好主人啊。我們受不了在{s1}的生活了。我們每天工作卻還得餓著肚子睡覺。現在我們要去{s6}開始新生活，至少在那裡我們會被當作人看。
-dlga_runaway_serf_intro_3:runaway_serf_go_back|你們這群逃跑的奴隸已經觸犯了法律。你們要立刻回到{s1}！
-dlga_runaway_serf_go_back:close_window|好吧主人。如你所願。我們會轉頭回去{s5}的。
-dlga_start:runaway_serf_talk_caught|主人日安。我們正在回去{s5}的路上，但我們恐怕迷路了。
-dlga_runaway_serf_talk_caught:runaway_serf_go_back|不要挑戰我的耐心。你們要立刻回去！
+; dlga_runaway_serf_intro_1:runaway_serf_intro_2|I have been sent by {s4} whom you are running from. {reg11?She:He} will hold back {reg11?her:his} wrath and spare your lifes if you return now.
+; dlga_runaway_serf_intro_2:runaway_serf_intro_3|Have mercy! Going back to {s1} means certain death.{s4} will make us toil until we die of exhaustion, or he will put us to the stake immediately.
+; dlga_runaway_serf_intro_3:runaway_serf_go_back|And this will be all that you maggots deserve. You will go back to {s1}, or I have you slaughtered here and now!
+; dlga_runaway_serf_intro_3:runaway_serf_slaughter|I see. I think I will have to teach you lot a lesson in order to make you obey. Slaughter him!
+; dlga_runaway_serf_go_back:close_window|All right {reg11?mistress:master}. As you wish. We'll head back to {s5} now.
+; dlga_start:runaway_serf_talk_caught|Good day {reg11?mistress:master}. We were heading back to {s5}, but I am afraid we lost our way.
+; dlga_runaway_serf_talk_caught:runaway_serf_go_back|Do not test my patience. You are going back now! (Charisma)
+; dlga_runaway_serf_talk_caught:runaway_serf_slaughter|I see. I think I will have to teach you lot a lesson not to lose your way again. Slaughter him!
+dlga_runaway_serf_slaughter:close_window|總有一天你會付出代價的....啊-嘎嘎！...
 dlga_start:runaway_serf_talk_again_return|主人我們正在回去{s5}的路上。
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|快點。你們越早回去越好。
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|很好。繼續吧。
@@ -1005,8 +1011,8 @@ dlga_town_merchant_talk:merchant_gossip|告訴我。最近人們都在聊些什�
 dlga_town_merchant_talk:close_window|再見。
 dlga_start:town_dweller_talk|不好意思？
 dlga_start:town_dweller_talk.1|日安，指揮官。
-dlga_town_dweller_talk:town_dweller_ask_fugitive|我正在找一個名叫{s4}的逃犯。據說他正躲在這裡。
-dlga_town_dweller_ask_fugitive:close_window|這座城鎮有很多陌生人進出。如果他躲在這裡的話，你一定能在附近找到他的。
+; dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?
+; dlga_town_dweller_ask_fugitive:close_window|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
 dlga_town_dweller_talk:town_dweller_ask_info|你能跟我說有關這座村子的事嗎？
 dlga_town_dweller_talk:town_dweller_ask_info.1|你能跟我說有關這個地方的事嗎？
 dlga_town_dweller_talk:town_dweller_talk|這裡的生活如何？

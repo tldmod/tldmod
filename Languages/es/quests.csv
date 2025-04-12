@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} te ha pedido que le lleves {reg1} {s14}.
 qst_escort_messenger|Escolta al mensajero a {s14}
 qst_escort_messenger_text|Nada
 qst_hunt_down_fugitive|Da caza a {s4}
-qst_hunt_down_fugitive_text|{s9} te ha pedido que des caza al fugitivo conocido como {s4}. Se cree que en estos momentos se encuentra en {s3}.
+qst_hunt_down_fugitive_text|{s9} te ha pedido que des caza al traidor conocido como {s4}. Se cree que en estos momentos se encuentra en {s3}.
 qst_bring_back_runaway_serfs|Captura a los esclavos fugitivos.
 qst_bring_back_runaway_serfs_text|{s9} te ha pedido que captures y traigas de vuelta a {s2} a tres grupos de esclavos fugitivos. Dice que los  tres grupos deben de estar huyendo hacia {s3}.
 qst_follow_spy|Sigue al espía hasta la reunión.

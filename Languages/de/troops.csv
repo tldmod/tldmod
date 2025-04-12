@@ -813,7 +813,7 @@ trp_gondor_captain_pl|Hauptmänner von Gondor
 trp_pel_captain|Hauptmann von Pelargir
 trp_pel_captain_pl|Hauptmänner von Pelargir
 trp_amroth_captain|Ritterhauptmann von Dol Amroth
-trp_amroth_captain_pl|Ritterhauptmänner von Dol Amroth
+; trp_amroth_captain_pl|Knight Captains of Dol Amroth
 trp_lam_captain|Hauptmann von Lamedon
 trp_lam_captain_pl|Hauptmänner von Lamedon
 trp_loss_captain|Hauptmann von Lossarnach
@@ -1633,4 +1633,3 @@ trp_merry_notmet|Halbling
 trp_pippin|Pippin
 trp_merry|Merry
 trp_grima|Grima Schlangenzunge
-trp_grima_pl|der Stadt

@@ -41,7 +41,7 @@ dlga_hobbit_merry_talk_met:close_window|Zdravím, pán Chicholm.
 dlga_hobbit_pippin_talk_met:close_window|Zdravím, pán Pipin.
 ; dlga_start:hd_defense_01|It is well that you are here, {playername}. My name is Aragorn, son of Arathorn, and I am the Heir of Isildur – see, here is Anduril, the Flame of the West, which I bear in battle. The Blade that was Broken shines again! It will not be long before Saruman’s forces reach these walls. I ask you now to lend me your aid and defend the Rohirrim, for the honour of the Lord of the Mark. Let this be the hour when we draw swords together!
 ; dlga_start:hd_defense_01.1|Mae lovannen! Things here look ill, {playername}, but less ill now that you are here with us! Gellon len covad. I am Legolas of Mirkwood, and though I do not much like this place I like the approaching hordes of Saruman even less. What would I give for a hundred more of my kin here! There are too few of us, too few. We shall need your aid, Commander, though we may be but a few leaves in the forest. Come, let me show you where our bows will be of the most use…
-; dlga_start:hd_defense_01.2|Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazaˆd! Khazaˆd ai-meˆnu!
+; dlga_start:hd_defense_01.2|Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazâd! Khazâd ai-mênu!
 ; dlga_hd_defense_01:close_window|Now, let us rest for a while. The enemy will be here by nightfall.
 ; dlga_start:aragorn_thanks_hd|{playername}, I am glad to see you live still. The men are weary with battle, but thanks to you they see the dawn of a new day. The hillmen have given themselves up, and they shall be put to work to repair the evil which they have joined, after which I hope they will return to their own lands. They were easily deceived by Saruman, for much was taken from them, and much remains to be given back; we shall have to see what can be done for them later.
 ; dlga_aragorn_thanks_hd:close_window|I hope our paths may cross again, {playername}. I bid you farewell now, for I ride on an errand most urgent. With the first light of morning we must go, my friends and I, and take a dark road out of this valley. {playername}, the times are evil, but your valour gladdens the hearts of all free peoples everywhere, from the North to the South. Fight well, and we may meet again beyond the shadows!
@@ -159,7 +159,7 @@ dlga_ziggy_no:close_window.1|Jak chcete, Veliteľ.
 dlga_ziggy_yes:ziggy_choose_prisoners|Výborne. Ktorý zo specimentov by ste mi odovzdali?
 dlga_ziggy_choose_prisoners:ziggy_no|Nemám žiadného zajatca, ktorého by som ti chcel odovzdať.
 dlga_ziggy_chosen_prisoner:ziggy_ritual|Ďakujem, Veliteľ! Momentíček... ah áno, tento poslúži veľmi dobre... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-dlga_ziggy_chosen_prisoner:ziggy_ritual.1|Tak čo to tu máme? Pyšný, vzdorovitý? Či bojazlivý, aký by sa mal byť práve teraz ty? Však ja ti dám dobrý dôvod sa báť, veru tak! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+; dlga_ziggy_chosen_prisoner:ziggy_ritual.1|What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
 dlga_ziggy_ritual:ziggy_ritual_succeed|Ah áno... áno! Pohliadnite, Veliteľ! Pohliadnite na to, čo som ja, Zigûrphel, dokázala! Počuli ste niekedy o vrokoch z Angbandu? O Draugluinovy alebo o mocnom Carcharothovy, ktorý smrteľne dohrýzol Huana, Valinorského vlkodlava? Presne ako Temný Pán môže meniť a väzniť ducha v schránku vhodnú pre jeho účely, tak som aj ja pokorila nižšieho ducha a pripútala ho k nám ako netvora temnoty! Tento však nie je samozrejme taký silný, ako Draugluinov priamy potomok, nič také, ale poslúži.
 dlga_ziggy_ritual:ziggy_ritual_succeed.1|Vždy je uspokojivé príjmuť nepriateľa doplaziť sa až k pätám.
 dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! Tento je prislabý! Bezcenný! Daj mi nejakého silnejšieho, Veliteľ, niekoho, kto tak ľahko nepodľahne!
@@ -294,6 +294,7 @@ dlga_lord_start:lord_hunt_refugees_failed|{playername}, naši špehúni vravia, 
 dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|Boli úskoční a nesmierne obozretní, pane. Nedokázal som ich vystopovať.
 dlga_lord_hunt_refugees_failed_1:lord_pretalk|Možno si príliš neschopný na to, aby si viedol vojská, aké pre nás majú dobyť svet, ak si nedokážeš podrobiť ani zranených a chorých!^^ Vypadni a modli sa, aby som sa ti rozhodol dať druhú šancu.
 dlga_lord_start:lord_generic_mission_completed.9|Nech sa pod zem prepadnem, ty si to zvládol, {playername}. Všetci otroci sú späť. Nedáme im pokoja, dokiaľ nebudú pripravený na žatvu. Zaslúžiš si svoju odmenu. Tu máš, ber. Vďaka.
+; dlga_lord_start:lord_generic_mission_completed.10|Well done, but you've done it, {playername}. The slaves are back and they're busy preparing for the harvest. I guess you had to kill some of them in order to make the others obey. Can't be helped, but I'll only reward you for those that have returned, not the ones you left rotting in the wilderness.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. trpezlivo som čakal na mojich otrokov, ale žiaden z nich sa nevrátil. Máš pre to vysvetlenie? Boli ste porazený primitívnymi zvieratami, alebo si proste neschopný ?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Ospravedlňujem sa, {s65}, tí otroci boli klzký ako úhory. Nedalo sa ich chytiť.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, to je veľmi zlá výhovorka pre neúspech, {playername}. Teraz, keď dovolíš, musím chytiť nových ľudí, aby mal kto obrábať tieto polia pred tým, než začneme všetci hladovať.
@@ -590,7 +591,7 @@ dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Bohužia�
 dlga_lord_mission_raise_troops_accepted:close_window|Sňal si zo mňa veľké bremeno, {playername}. Určite prikážem svojím veliteľom, aby ti poslali odvedencov a previedli ich pod tvoje velenie. Tiež ti dám nejakú zálohu, aby som ti pomohol vyrovnať náklady. Tu máš, tento mešec by to mal urovnať. Ďakujem za tvoju pomoc.
 dlga_lord_mission_raise_troops_alternate:close_window|Je to zaujímavý návrh, {playername}. Poviem svojim veliteľom, aby poslali odvedencov na cvičiská. Doveď ich doň a daj im ochutnať bič, nech z nich niečo bude. Budem sa pozerať. Ďakujem za tvoju pomoc.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, samozrejme. Očakával som to. Tak veľa šťastia.
-dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Možno že by si mi mohol s niečim pomôcť. Potrebujem dolapiť darebáka známeho ako {s4}. Zavraždil jedného člena mojej osobnej stráže a od vtedy uteká pred spravodlivým rozsudkom. Dostal som správu, že ten utečenec bol videný v {s3}. Postaraj sa o neho a vykonaj na ňom spravodlivosť. Na oplátku dostaneš peknú odmenu. 
+; dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the traitor known as {s4}.  He moves from place to place, spreading the insidious poison of doubt. He sows fear and undermines the resolve of our warriors.  He acts on behalf of our enemies, that much is certain. Yet so far he has always been able to slip from my grasp.  There has been news recently that he has been seen at {s3}.  You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Nájdem ho a vykonám na ňom zákon.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Momentálne nemám čas na to, aby som ho prenásledoval.
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Výborne, {playername}. Bol by som ti veľmi vďačný a samozrejme budú tvoje schopnosti riadne zaznamenané. Tak, šťastný lov. 
@@ -769,11 +770,13 @@ dlga_defeat_hero_answer_1:close_window|Do čerta s tebou. Budeš toho ešte ľut
 dlga_defeat_hero_answer:defeat_hero_answer_2|Tentoraz môžeš slobodne odísť, ale už sa mi nepleť do cesty.
 dlga_defeat_hero_answer_2:close_window|Ešte sa stretneme.
 dlga_start:fugitive_1|Áno? Čo si želáte ?
-dlga_fugitive_1:fugitive_2|Hľadám utečenca menom {s4}. Odpovedáš jeho popisu. 
+; dlga_fugitive_1:fugitive_2|I am looking for a {s3} by the name of {s4}. You fit his description.
 dlga_fugitive_1:close_window|Nič. Prepáčte, že som vás obťažoval.
 dlga_fugitive_2:fugitive_3|Neviem o čom hovoríš. Musel si si ma spliesť s niekým iným.
 dlga_fugitive_3:fugitive_4|V tom prípade odhoď svoj meč. Pokiaľ si nevinný, nemáš sa čoho báť. Teraz pekne pôjdeme a porozprávame sa s kapitánom stráží a uvidíme, kdo si koho splietol. 
 dlga_fugitive_4:close_window|Nech ťa mor skántri! Nikam nepôjdeš!
+; dlga_start:fugitive_5|So, I caught you at last!
+; dlga_fugitive_5:close_window|You are mistaken. We caught you!
 dlga_start:follow_spy_talk|Dobrý deň. Dnes je pekne, že? Ospravedlňte ma, ale teraz sa musím vydať na cestu. 
 dlga_follow_spy_talk:follow_spy_talk_2|V mene {s1}, zatýkam ťa!
 dlga_follow_spy_talk_2:close_window|Nedostaneš ma živého!
@@ -783,12 +786,15 @@ dlga_spy_partners_talk:spy_partners_talk_2|V mene {s1} Zatýkam vás!
 dlga_spy_partners_talk_2:close_window|Ale najprv s nami budeš musieť bojovať!
 dlga_spy_partners_talk:close_window|Nevšímajte si ma. Len prechádzam.
 dlga_start:runaway_serf_intro_1|Dobrý deň majster.
-dlga_runaway_serf_intro_1:runaway_serf_intro_2|Bol som poslaný vaším {s4} od ktorého sa snažíte utiecť. Nepotrestá vás, ak sa hneď vrátite.
-dlga_runaway_serf_intro_2:runaway_serf_intro_3|Môj dobrý pane. Naše životy v {s1} boli neznesiteľné. Pracovali sme celý deň a aj tak sme chodili spávať hladný. Utekáme do {s6} začať nové životy, kde s nami budú jednať ako s ľuďmi.
-dlga_runaway_serf_intro_3:runaway_serf_go_back|Staviate sa proti naším zákonov útekom z otroctva. Hneď teraz sa vrátite do {s1}!
-dlga_runaway_serf_go_back:close_window|Rozumieme, pane. Jak si želáte. Ihneď vyrazíme späť do {s5}.
-dlga_start:runaway_serf_talk_caught|Dobrý deň pane. Vraciame sa späť do {s5}, ale obávam sa, že sme zablúdili.
-dlga_runaway_serf_talk_caught:runaway_serf_go_back|Nepokúšajte moju trpezlivosť. Ihneď sa vráťte!
+; dlga_runaway_serf_intro_1:runaway_serf_intro_2|I have been sent by {s4} whom you are running from. {reg11?She:He} will hold back {reg11?her:his} wrath and spare your lifes if you return now.
+; dlga_runaway_serf_intro_2:runaway_serf_intro_3|Have mercy! Going back to {s1} means certain death.{s4} will make us toil until we die of exhaustion, or he will put us to the stake immediately.
+; dlga_runaway_serf_intro_3:runaway_serf_go_back|And this will be all that you maggots deserve. You will go back to {s1}, or I have you slaughtered here and now!
+; dlga_runaway_serf_intro_3:runaway_serf_slaughter|I see. I think I will have to teach you lot a lesson in order to make you obey. Slaughter him!
+; dlga_runaway_serf_go_back:close_window|All right {reg11?mistress:master}. As you wish. We'll head back to {s5} now.
+; dlga_start:runaway_serf_talk_caught|Good day {reg11?mistress:master}. We were heading back to {s5}, but I am afraid we lost our way.
+; dlga_runaway_serf_talk_caught:runaway_serf_go_back|Do not test my patience. You are going back now! (Charisma)
+; dlga_runaway_serf_talk_caught:runaway_serf_slaughter|I see. I think I will have to teach you lot a lesson not to lose your way again. Slaughter him!
+dlga_runaway_serf_slaughter:close_window|Jedného dňa za to zaplátíš.... Aaa-ghgllr!...
 dlga_start:runaway_serf_talk_again_return|Sme na ceste späť do {s5} pane.
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|Ponáhľajte sa. Čím skôr sa vrátite tým lepšie pre vás.
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|Dobre. Pokračujte.
@@ -1005,8 +1011,8 @@ dlga_town_merchant_talk:merchant_gossip|Kolujú medzi ľuďmi nejaké drby?
 dlga_town_merchant_talk:close_window|Dovidenia.
 dlga_start:town_dweller_talk|Prosím?
 dlga_start:town_dweller_talk.1|Dobrý deň, Veliteľ.
-dlga_town_dweller_talk:town_dweller_ask_fugitive|Hľadám istého utečenca v mene {s4}. Dozvedel som sa, že sa tu schováva.
-dlga_town_dweller_ask_fugitive:close_window|Do nášho mesta chodieva veľa cudzincov. Ak sa tu schováva, určite ho nájdete, len sa dobre porozhliadnite po okolí.
+; dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?
+; dlga_town_dweller_ask_fugitive:close_window|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
 dlga_town_dweller_talk:town_dweller_ask_info|Čo mi môžeš povedať o tejto dedine?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Čo mi môžeš povedať o tomto mieste?
 dlga_town_dweller_talk:town_dweller_talk|Ako sa tu žije?

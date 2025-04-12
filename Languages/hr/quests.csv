@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} traži da treniraš {reg1} {s14} i da joj ih doneseš
 qst_escort_messenger|Isprati glasnika prema {s14}
 qst_escort_messenger_text|Nijedan
 qst_hunt_down_fugitive|Ulovi {s4}
-qst_hunt_down_fugitive_text|{s9} je zatražio da uhvatiš bjegunca koji se zove {s4}. Vjerojatna trenutna lokcija je {s3}.
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 qst_bring_back_runaway_serfs|Dovedi natrag odbjegle robove
 qst_bring_back_runaway_serfs_text|{s9} je  zatražio da dovedeš  tri grupe odbjeglih robova natrag k {s2}. Rekao je kako sve tri grupe bježe  u smjeru {s3}.
 qst_follow_spy|Slijedi  špijuna na sastanak

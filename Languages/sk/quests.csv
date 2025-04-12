@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} ťa požiadal, aby si vycvičil {reg1} {s14}ov a priv
 qst_escort_messenger|Sprevádzaj posla do {s14}u
 qst_escort_messenger_text|Nič
 qst_hunt_down_fugitive|Nájdi a zabi {s4}
-qst_hunt_down_fugitive_text|{s9} chce, aby si našiel a zabil utečenca menom {s4}. Práve by mal byť v {s3}.
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 qst_bring_back_runaway_serfs|Priveď späť otrokov na úteku
 qst_bring_back_runaway_serfs_text|{s9} chce, aby si priviedol tri skupiny otrokov na úteku späť do {s2}. Povedal, že všetky tri skupiny utekajú smerom k {s3}.
 qst_follow_spy|Prenasleduj špióna na stretnutie

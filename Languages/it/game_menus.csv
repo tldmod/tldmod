@@ -349,17 +349,6 @@ menu_legendary_place|^^^^Hai seguito le tracce ed hai trovato {s1}. Puoi esplora
 mno_explore|Esplora questo luogo.
 menu_ring_hunter_lair|^^^^Hai seguito il sentiero dei Cacciatori dell'Anello attraverso Bosco Atro e sei giunto a {s1}. Li vedi mentre stanno lasciando una cassa.
 mno_attack_lair|Attaccali adesso
-mno_leave_bandit_lair|Vattene per ora.
-menu_raftmen|^^^^Segui il fiume che scorre verso sud-est in direzione di Rhûn, sperando di trovare la vecchia strada mercantile.^^ Dopo qualche tempo, giungi nei pressi di un piccolo villaggio incastonato lungo la riva del fiume.^^Chiedi agli abitanti del villaggio come raggiungere la strada e ti indirizzano verso una coppia di uomini che navigano il fiume su una zattera.^^si rende necessaria una negoziazione, ma riesci a farti portare dagli uomini lungo il fiume.
-mno_go_with_the_raftmen|Prendi la zattera per Dorwinion
-menu_ride_to_dorwinion|^^^^Ti rilassi godendoti la bella giornata mentre gli uomini guidano la zattera lungo il corso d'acqua. Il fiume che scorre, freddo e limpido tra le cascate e le rapide della Montagna Solitaria, qui è tiepido, dolce e terroso.^^ Nel sole del pomeriggio, osservi le pianure ondulate e i boschi verdeggianti che scivolano via mentre la zattera galleggia lungo i tortuosi meandri. La regione è scarsamente punteggiata da piccole fattorie e vigneti con bassi muri in pietra e transiti di tanto in tanto vicino cottage su palafitte nascosti tra i canneti.^^Il movimento pacifico della zattera concilia il tuo sonno...
-mno_ride_to_dorwinion_next|Successivamente...
-menu_amath_dollen_fortress|^^^^Ti svegli dal tuo sonno nel tardo pomeriggio e raggiungi subito un molo dove gli uomini attraccano con la zattera. Ti indirizzano verso uno stretto sentiero che scompare nell'erba della palude e allestiscono un accampamento per attendere il tuo ritorno.^^Segui il sentiero, che sale rapidamente dalle zone umide verso una pianura erbosa, camminando finché non incontri la vecchia strada mercantile.^^Dopo un po', vedi una fortezza infestata da banditi.
-mno_bandit_fortress_with_companions|Avvicinati alla Fortezza dei Banditi solo con i tuoi compagni e prova a parlare con il loro capo.
-mno_bandit_fortress_with_army|Attacca la fortezza dei banditi con tutti i tuoi uomini.
-mno_bandit_fortress_against_easterlings|Difendi la Fortezza dall'Assedio.
-mno_bandit_fortress_spirits|Vai a parlare con gli spiriti.
-mno_leave_amath_dollen_fortress|Vattene per ora.
 menu_gondor_reinforcement_event|^^^^^ le Torri-Faro di Gondor sono accese, Minas Tirith chiede aiuto ! ^^ I signori dei feudi meridionali marceranno ora verso nord per difendere la Città Bianca contro l'oscurità incombente.
 mno_gondor_reinforcement_event_close|Chiudi
 menu_gondor_beacons|Alzi lo sguardo verso {s1}, uno dei fari di segnalazione di Gondor, usato per diffondere l'allarme nel nord e nel sud di Gondor stessa.
@@ -455,15 +444,6 @@ menu_animal_ambush_fail|Le bestie mordono e feriscono te {reg0?,: e i tuoi compa
 menu_isengard_flooding|^^^^^@Ti trovi in mezzo ai cadaveri dei nemici e agli alleati trionfanti, inclusi gli Ent; essi ruggiscono, rimbombano facendo risuonare le loro voci, fin quando le pietre della torre di Orthanc non si frantumano cadendo. Risuonano come un'ululante tempesta che rompe pilastri, scaglia valanghe di massi lungo i pozzi, lancia enormi lastre di pietra in aria come fossero foglie... Non assomiglia a nulla che tu abbia visto prima.^^ Bregalad - o Sveltolampo come a te è noto - ti raggiunge a grandi passi e si ferma per avvertirti, '{playername} ! Fa attenzione ! Allontanati dalla Torre - ben presto diroccheremo la diga e faremo irrompere l'Isen in questa vallata, per un certo tempo. Troverai arduo rimanere qui, credo!' Segui rapidamente il suo consiglio e ti allontani da Orthanc.^^ Verso mezzanotte Isengard comincia ad essere invasa dalle acque formando inquietanti pozze nere. Non puoi fare a meno di rabbrividire alla vista dei fumi che formano altissime colonne, mentre una grande spirale di vapore si alza serpeggiando avvolgendo la Torre, fino a quando assume la somiglianza di un elevato strato di nubi, con la parte di sotto infuocata e quella superiore illuminata dalla luna. L'ira degli Ent è lenta, ma dotata di una potenza inesorabile.
 mno_isengard_continue|Continua
 menu_build_your_scene|Qui puoi costruire il tuo scenario di battaglia personalizzato, usando una delle slot qua sotto e l'Editor del gioco (Devi prima togliere il flag dal quadratino "Edit Mode" nelle opzioni del launcher di M&B).^Poi, puoi verificare gli scenari che hai costruito (con estensione .sco dalla cartella TLD/SceneObj) e inviarli al team di sviluppo di TLD e, se la tua scena risultasse valida, potrà essere inclusa nelle prossime versioni della mod come contesto di una battaglia !^^ Prova anche a specificare in quale regione della mappa vuoi che la tua scena appaia.^ Un paio di suggerimenti: Cerca di evitare di inserire acque troppo profonde, montagne troppo grandi o appuntite e altri sentieri in cui non si può passare, eccetto se sei uno sceneggiatore con molta esperienza e sai come cambiare l'AI delle truppe per non andare in un posto dove non vuoi che vadano, e quindi imporre alla IA di prendere altre direzioni.^ (Gruppi #0-1 sono per gli attaccanti, #4 per i difensori, non toccare #5-8).
-mno_scene1|Grande Pianura (file scn custom 1.sco)
-mno_scene2|Pianura Media (file scn custom 2.sco)
-mno_scene3|Piccola Pianura (file scn custom 3.sco)
-mno_scene4|Grande Steppa (file scn custom 4.sco)
-mno_scene5|Steppa Media (file scn custom 5.sco)
-mno_scene6|Piccola Steppa (file scn custom 6.sco)
-mno_scene7|Foresta Grande (file scn custom 7.sco)
-mno_scene8|Foresta Media (file scn custom 8.sco)
-mno_scene9|Foresta Piccola (file scn custom 9.sco)
 mno_back_3dot|Indietro...
 mno_back|Torna Indietro
 mno_next|Successivamente...

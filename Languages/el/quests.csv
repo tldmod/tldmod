@@ -7,7 +7,7 @@ qst_raise_troops_text|Ο/Η {s9} σου ζήτησε να εκπαιδεύσει
 qst_escort_messenger|Συνόδευσε τον αγγελιοφόρο στο {s14}
 qst_escort_messenger_text|Καμία
 qst_hunt_down_fugitive|Κυνήγησε τον/την {s4}
-qst_hunt_down_fugitive_text|{s9} σου ζήτησε να κυνηγήσεις έναν φυγά εν ονόματι {s4}. Νομίζουν πως βρίσκετε στο {s3}.
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 qst_bring_back_runaway_serfs|Φέρε Πίσω Σκλάβους που το Έσκασαν
 qst_bring_back_runaway_serfs_text|Ο/Η {s9} σου ζήτησε να φέρεις πίσω τρεις ομάδες σκλάβων που το έσκασαν πίσω στο {s2}. Είπε πως και οι τρεις ομάδες πρέπει να τρέχουν προς {s3}.
 qst_follow_spy|Ακολούθησε τον Κατάσκοπο στη Συνάντηση

@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} pediu-lhe para capturar {reg1} {s14} e trazer para {e
 qst_escort_messenger|Escolte o mensageiro para {s14}
 qst_escort_messenger_text|Nenhum.
 qst_hunt_down_fugitive|Cace {s4}
-qst_hunt_down_fugitive_text|{s9} pediu-lhe para caçar o fugitivo chamado {s4}. Acredita-se que ele esteja atualmente em {s3}.
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 qst_bring_back_runaway_serfs|Traga de volta os Escravos em fuga
 qst_bring_back_runaway_serfs_text|{s9} pediu-lhe para trazer de volta os três grupos de escravos fugidos de volta para {s2}. Ele disse que todos os três grupos devem estar fugindo na direção de {s3}.
 qst_follow_spy|Siga o Espião até o Encontro

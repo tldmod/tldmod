@@ -41,7 +41,7 @@ dlga_hobbit_merry_talk_met:close_window|Salute, messer Merry.
 dlga_hobbit_pippin_talk_met:close_window|Salute, messer Pipino.
 dlga_start:hd_defense_01|È un bene che tu sia qui, {playername}. Il mio nome è Aragorn, figlio di Arathorn, e sono l'erede di Isildur: vedi, qui c'è Anduril, la Fiamma dell'Ovest, che porto in battaglia. La lama spezzata risplende di nuovo ! Non passerà molto tempo prima che le forze di Saruman raggiungano queste mura. Ti chiedo ora di prestarmi il tuo aiuto e di difendere i Rohirrim, per l'onore del Signore del Mark. Che questa sia l'ora in cui sguaineremo insieme le spade !
 dlga_start:hd_defense_01.1|Mae Lovannen ! Le cose qui sembrano andare male, {playername}, ma fortunatamente sei qui con noi ! Gellon len covad. Io sono Legolas di Bosco Atro, e anche se non mi piace molto questo posto, mi piacciono ancora meno le orde di Saruman che si avvicinano. Cosa darei per avere altri cento miei simili qui ! Siamo troppo pochi, troppo pochi. Avremo bisogno del tuo aiuto, comandante, anche se potremmo essere solo poche foglie nella foresta. Vieni, lascia che ti mostri dove i nostri archi saranno più utili...
-dlga_start:hd_defense_01.2|Sono proprio felice di vederti, mi simile ! Sono Gimli, figlio di Gloin. È un grande esercito quello che viene ora contro di noi, ma la mia ascia è irrequieta nella mano, e so che anche tu provi lo stesso ! Dateci una fila di colli di orco da tagliare e spazio per roteare l'ascia, insieme insegneremo loro il significato della paura. Piedi robusti e asce robuste, questo ci farà passare la notte ! Ai oi ! Ce ne sono abbastanza per entrambi. Baruk Khazad ! Khazaˆd ai-meˆnu !
+dlga_start:hd_defense_01.2|Sono proprio contento di vederti, parente ! Io sono Gimli, figlio di Gloin. È un grande esercito quello che ci viene contro, ma la mia ascia è irrequieta nella mia mano, e so che tu la pensi allo stesso modo ! Dateci una fila di colli di orco da tagliare e spazio per roteare le nostre armi, e insieme insegneremo loro il significato della paura. Piedi robusti e asce dure, ecco cosa ci porterà attraverso la notte ! Ai oi ! Ce ne sono abbastanza per entrambi. Baruk Khazâd! Khazâd ai-mênu !
 dlga_hd_defense_01:close_window|Adesso riposiamoci un po'. Il nemico sarà qui prima del tramonto.
 dlga_start:aragorn_thanks_hd|{playername}, sono felice di vederti ancora in vita. I guerrieri sono stanchi per la battaglia, ma grazie a te vedono l'alba di un nuovo giorno. Gli uomini delle colline si sono arresi e saranno messi al lavoro per riparare il male a cui si sono uniti, dopodiché spero che torneranno alle loro terre. Sono stati facilmente ingannati da Saruman, perché molto è stato loro tolto e molto resta da restituire; dovremo vedere cosa si può fare per loro in futuro.
 dlga_aragorn_thanks_hd:close_window|Spero che le nostre strade possano incrociarsi di nuovo, {playername}. Ti saluto adesso perché sto andando a fare una commissione urgentissima. Con le prime luci del mattino dobbiamo andare, io e i miei amici, e percorrere una buia strada fuori da questa valle. {playername}, i tempi sono malvagi, ma il tuo valore rallegra i cuori di tutti i popoli liberi ovunque, dal Nord al Sud. Combatti bene e potremmo incontrarci di nuovo oltre l'ombra !
@@ -159,7 +159,7 @@ dlga_ziggy_no:close_window.1|Molto bene, Comandante.
 dlga_ziggy_yes:ziggy_choose_prisoners|Eccellente. Quale fra questi campioni vorresti fornire?
 dlga_ziggy_choose_prisoners:ziggy_no|Non ho nessuno da offrire.
 dlga_ziggy_chosen_prisoner:ziggy_ritual|Grazie, Comandante ! Un momento... ah si, questo dovrebbe andare bene... Agannūlo burudan kinum ! Kadō nakh, îdô ugru-dalad dâira !
-dlga_ziggy_chosen_prisoner:ziggy_ritual.1|Cos'abbiamo qui ? Qualcuno che ha orgoglio, ribellione ? Timore, come dovrebbe essere ? Ora ti darò qualcosa per cui provare davvero paura ! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira !
+dlga_ziggy_chosen_prisoner:ziggy_ritual.1|Cos'abbiamo qui ? Degli rgogliosi, dei provocatori ? Oppure dei timorosi, come dovreste essere, in effetti ? Ora vi darò una ragione per avere paura, davvero ! Agannūlo burudan kinum ! Kadō nakh, îdô ugru-dalad dâira !
 dlga_ziggy_ritual:ziggy_ritual_succeed|Oh si... si ! Ecco, Comandante ! Guarda quello che io, Zigûrphel, ho ottenuto ! Conosci i lupi di Angband ? Hai sentito parlare di Draugluin o del potente Carcharoth che uccise Huan, il Segugio di Valinor ? Proprio come il Signore Oscuro può controllare e intrappolare un spirito tenendolo prigioniero su una nave adatta ai suoi scopi, anche io ho soggiogato uno spirito minore e l'ho legato a noi come una grande bestia d'ombra ! Non è grande come la prima figliata di Draugluin, questo no, ma servirà ai nostri scopi.
 dlga_ziggy_ritual:ziggy_ritual_succeed.1|È sempre una gioia mettere in ginocchio il nemico.
 dlga_ziggy_ritual:ziggy_choose_prisoners|Ach ! Questo era troppo debole ! Inutile ! Dammene uno più forte, Comandante, uno che non fallirà !
@@ -294,6 +294,7 @@ dlga_lord_start:lord_hunt_refugees_failed|{playername}, le nostre spie ci riferi
 dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|Erano insidiosi, capo. Non ho potuto rintracciarli.
 dlga_lord_hunt_refugees_failed_1:lord_pretalk|Forse non sei abbastanza capace per comandare in battaglia gli eserciti che metteranno in ginocchio questo mondo, se non sei neanche in grado di sconfiggere i deboli e i ferit i!^^ Vattene, e prega che ti dia una seconda possibilità.
 dlga_lord_start:lord_generic_mission_completed.9|Che io sia dannato, ce l'hai fatta, {playername}. Tutti gli schiavi sono di nuovo al loro posto e occupati a preparare il raccolto. Ti sei meritato certamente la tua ricompensa. Ecco, prendila, con i miei complimenti.
+dlga_lord_start:lord_generic_mission_completed.10|Ben fatto, ce l'hai fatta, {playername}. Gli schiavi sono tornati e sono impegnati a preparare il raccolto. Immagino che tu abbia dovuto ucciderne alcuni per far sì che gli altri obbedissero. Non ci posso fare niente, ma ti ricompenserò solo per quelli che sono tornati, non per quelli che hai lasciato marcire nella natura selvaggia.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}.  Ho aspettato pazientemente per i miei schiavi, ma non ne è tornato ancora nessuno. Hai qualche spiegazione per questo? Ti hanno tratto in inganno dei semplici animali o sei solo una persona incompetente ?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Perdonami, {s65}, quegli schiavi erano scivolosi come anguille.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, questa una scusa debole per il tuo fallimento, {playername}. Ora, se vuoi scusarmi, devo andare a catturare nuovi schiavi per farli lavorare nei campi, prima che tutti noi moriamo di fame. 
@@ -590,7 +591,7 @@ dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Sono trop
 dlga_lord_mission_raise_troops_accepted:close_window|Mi hai tolto un peso dalla schiena, {playername}. Dirò ai miei sergenti di mandarti le reclute e unirle sotto il tuo comando. Inoltre, ti anticiperò del denaro per aiutarti con le spese. Ecco, questa borsa dovrebbe essere sufficiente. Grazie per il tuo aiuto.
 dlga_lord_mission_raise_troops_alternate:close_window|Questa è una proposta interessante, {playername}. Potrei dire ai miei sergenti di mandare le reclute al campo d'addestramento. Va con loro, e frustali per plasmarli. Io osserverò. Grazie per il tuo aiuto.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, certamente. Me lo aspettavo. Beh, buona fortuna allora.
-dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|C'è una cosa in cui potresti essermi d'aiuto, un problema riguardante un criminale senza legge conosciuto come {s4}. Ha assassinato una delle mie guardie personali e sfugge alla giustizia da allora. Recenti notizie c'informano che il fuggitivo sarebbe stato visto a {s3}. Potresti essere in grado di dargli la caccia e provvedere ad una rapida giustizia nei suoi confronti? In cambio ti ricompenserò.
+dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|C'è una cosa in cui potresti essermi d'aiuto, un problema riguardante il traditore noto come {s4}. Si sposta da un luogo all'altro, diffondendo l'insidioso veleno del dubbio. Semina paura e mina la determinazione dei nostri guerrieri. Agisce per conto dei nostri nemici, questo è certo. Eppure finora è sempre riuscito a sfuggire alla mia presa. Di recente ci sono giunte notizie in base a cui è stato visto a {s3}. Potresti dargli la caccia e fare rapidamente giustizia, e io ti ricompenserò a mia volta.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Allora gli darò la caccia e farò rispettare la legge.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Sono troppo impegnato per inseguirlo al momento.
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Eccellente, {playername}. Ti sarò molto grato, e ovviamente la tua prodezza sarà puntualmente resa nota. Bene, ti auguro buona caccia.
@@ -769,11 +770,13 @@ dlga_defeat_hero_answer_1:close_window|Che tu sia dannato. Te ne pentirai..
 dlga_defeat_hero_answer:defeat_hero_answer_2|Sei libero di andare, per questa volta, ma non incrociare ancora il mio cammino.
 dlga_defeat_hero_answer_2:close_window|Ci incontreremo di nuovo.
 dlga_start:fugitive_1|Sì, che cosa vuoi ?
-dlga_fugitive_1:fugitive_2|Sto cercando un fuggitivo di nome {s4}. Tu corrispondi alla sua descrizione.
+dlga_fugitive_1:fugitive_2|Sto cercando un {s3} di nome {s4}. Tu corrispondi alla sua descrizione.
 dlga_fugitive_1:close_window|Non fa niente. Scusa del disturbo.
 dlga_fugitive_2:fugitive_3|Non so so di cosa stai parlando. Devi avermi confuso con qualcun altro.
 dlga_fugitive_3:fugitive_4|Allora molla la spada. Se sei innocente, non hai nulla di cui aver paura. Ora andremo a parlare con il capitano delle guardie e vedremo chi è confuso.
 dlga_fugitive_4:close_window|Maledetto ! Non andrai da nessuna parte !
+dlga_start:fugitive_5|Quindi, finalmente ti ho beccato !
+dlga_fugitive_5:close_window|Ti sbagli. Ti abbiamo preso !
 dlga_start:follow_spy_talk|Buongiorno. Il tempo è molto bello, vero ? Se mi può scusare ora dovrei andare.
 dlga_follow_spy_talk:follow_spy_talk_2|Nel nome di {s1}, sei in arresto!
 dlga_follow_spy_talk_2:close_window|Non mi prenderai vivo!
@@ -783,12 +786,15 @@ dlga_spy_partners_talk:spy_partners_talk_2|Nel nome di {s1}, sei in arresto !
 dlga_spy_partners_talk_2:close_window|Dovrai combatterci prima !
 dlga_spy_partners_talk:close_window|Non vi curate di me. Ero solo di passaggio.
 dlga_start:runaway_serf_intro_1|Buongiorno a te, Padrone.
-dlga_runaway_serf_intro_1:runaway_serf_intro_2|Sono stato inviato da te dal tuo {s4}, da cui stai fuggendo. Non ti punirà se torni adesso.
-dlga_runaway_serf_intro_2:runaway_serf_intro_3|Mio buon Padrone. Le nostre vite a {s1} erano insopportabili. Abbiamo lavorato duramente per tutta la giornata andando sempre a dormire con la fame. Stiamo andando a {s6} per iniziare una nuova vita, dove saremo trattati come esseri umani.
-dlga_runaway_serf_intro_3:runaway_serf_go_back|Siete andati contro le nostre leggi con la vostra fuga dalla schiavitù. Tornerete a {s1} adesso !
-dlga_runaway_serf_go_back:close_window|Va bene, mio Padrone. Come vuoi. Torneremo a {s5} adesso..
-dlga_start:runaway_serf_talk_caught|Salve, mio Padrone. Stiamo tornando a {s5}, ma temo che ci siamo persi.
-dlga_runaway_serf_talk_caught:runaway_serf_go_back|Non mettete alla prova la mia pazienza. Tornate indietro ora !
+dlga_runaway_serf_intro_1:runaway_serf_intro_2|Mi manda {s4}, da cui state fuggendo. {reg11?Egli:Egli} tratterrà la {reg11?sua:sua} ira e risparmierà le vostre vite, se farete subito ritorno.
+dlga_runaway_serf_intro_2:runaway_serf_intro_3|Abbi pietà ! Ritornare a {s1} significa per noi morte certa. {s4} ci farà faticare fino a morire di sfinimento, oppure ci metterà immediatamente sul rogo.
+dlga_runaway_serf_intro_3:runaway_serf_go_back|Se avverrà questo sarà perché è tutto ciò che voi vermi meritate. Tornerete a {s1}, o vi farò massacrare qui e ora !
+dlga_runaway_serf_intro_3:runaway_serf_slaughter|Capisco. Credo che dovrò darvi una lezione per farvi obbedire. Uccidetelo !
+dlga_runaway_serf_go_back:close_window|Va bene {reg11?padrona:padrone}. Come vuoi. Faremo ritorno a   {s5} adesso.
+dlga_start:runaway_serf_talk_caught|Salve {reg11?padrona:padrone}. Stavamo facendo ritorno a {s5}, ma temo che ci siamo persi.
+dlga_runaway_serf_talk_caught:runaway_serf_go_back|Non mettete alla prova la mia pazienza. Tornate indietro, ora ! (Carisma)
+dlga_runaway_serf_talk_caught:runaway_serf_slaughter|Capisco. Penso che sia necessario impartire una lezione, in modo che non perdiate la via un'altra volta. Uccidetelo !
+dlga_runaway_serf_slaughter:close_window|Un giorno la pagherai.... Aaa-ghgllr!...
 dlga_start:runaway_serf_talk_again_return|Siamo sulla strada del ritorno a {s5}, mio Padrone.
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|Fate in fretta. Più velocemente rientrate, meglio sarà.
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|Bene, proseguite.
@@ -1005,8 +1011,8 @@ dlga_town_merchant_talk:merchant_gossip|Dimmi. Di cosa parla la gente in questi 
 dlga_town_merchant_talk:close_window|Arrivederci.
 dlga_start:town_dweller_talk|Scusami ?
 dlga_start:town_dweller_talk.1|Buongiorno, Comandante.
-dlga_town_dweller_talk:town_dweller_ask_fugitive|Sto cercando un fuggitivo di nome {s4}. Mi hanno detto che forse si nasconde qui.
-dlga_town_dweller_ask_fugitive:close_window|Gli stranieri vanno e vengono da queste parti. Se si nasconde qui, lo troverai sicuramente dando un'occhiata in giro.
+dlga_town_dweller_talk:town_dweller_ask_fugitive|Sto cercando un uomo di nome {s4}. Hai visto uno sconosciuto qui che si comporta in modo sospetto e diffonde bugie sulla guerra ?
+dlga_town_dweller_ask_fugitive:close_window|Bene, ho visto uno sconosciuto sospetto a {s5}. Con un po' di fortuna, potresti ancora trovarlo lì.
 dlga_town_dweller_talk:town_dweller_ask_info|Cosa mi puoi dire riguardo a questo villaggio ?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Cosa mi puoi dire riguardo a questo posto ?
 dlga_town_dweller_talk:town_dweller_talk|Com'è la vita qui ?

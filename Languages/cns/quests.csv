@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9}希望你能训练{reg1}名{s14}并带给{他/她}。
 qst_escort_messenger|护送信使到{s14}
 qst_escort_messenger_text|无
 qst_hunt_down_fugitive|追捕{s4}
-qst_hunt_down_fugitive_text|{s9}希望你去追捕名为{s4}的逃犯。根据报告他目前位于{s3}。
+; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
 qst_bring_back_runaway_serfs|追回逃跑的奴隶
 qst_bring_back_runaway_serfs_text|{s9}希望你把三队逃跑的奴隶带回{s2}。他说这三队人全都逃向{s3}。
 qst_follow_spy|跟踪间谍至会面地点
