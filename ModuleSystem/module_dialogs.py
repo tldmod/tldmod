@@ -7161,7 +7161,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),                           
   (check_quest_active, "qst_eliminate_patrols"),
   (check_quest_succeeded, "qst_eliminate_patrols"),
-  # (quest_slot_eq, "qst_eliminate_patrols", slot_quest_giver_troop, "$g_talk_troop"),
+  (quest_slot_eq, "qst_eliminate_patrols", slot_quest_giver_troop, "$g_talk_troop"),
   # (quest_get_slot, ":to_destroy", "qst_eliminate_patrols", slot_quest_target_amount),
   # (quest_get_slot, ":num_destroyed","qst_eliminate_patrols",slot_quest_current_state),
   # (le, ":to_destroy", ":num_destroyed")
