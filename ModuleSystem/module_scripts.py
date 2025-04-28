@@ -25710,6 +25710,20 @@ command_cursor_scripts = [
         (party_set_slot, "p_town_henneth_annun", slot_town_captain, "trp_a6_ithilien_leader"), #bugged because of troop overwrite
     (try_end),    
 
+    (try_begin),
+        (lt, "$savegame_version", 4217),
+        (assign, "$savegame_version", 4217),
+        (try_begin), #assign difficulty values
+            (eq, "$tld_campaign_diffulty", 3),  (assign, "$tld_volunteers_multi", 125), (assign, "$tld_host_size_multi", 75), (assign, "$tld_ally_str_income_multi", 120), (assign, "$tld_victory_str_multi", 100),  (assign, "$tld_player_fac_init_strength_multi", 110), 
+        (else_try),
+            (eq, "$tld_campaign_diffulty", 2),  (assign, "$tld_volunteers_multi", 100), (assign, "$tld_host_size_multi", 100), (assign, "$tld_ally_str_income_multi", 100), (assign, "$tld_victory_str_multi", 75),  (assign, "$tld_player_fac_init_strength_multi", 90), 
+        (else_try),
+            (eq, "$tld_campaign_diffulty", 1),  (assign, "$tld_volunteers_multi", 75), (assign, "$tld_host_size_multi", 150), (assign, "$tld_ally_str_income_multi", 90), (assign, "$tld_victory_str_multi", 50),  (assign, "$tld_player_fac_init_strength_multi", 70),
+        (else_try),
+            (eq, "$tld_campaign_diffulty", 0),  (assign, "$tld_volunteers_multi", 60), (assign, "$tld_host_size_multi", 200), (assign, "$tld_ally_str_income_multi", 80), (assign, "$tld_victory_str_multi", 50), (assign, "$tld_player_fac_init_strength_multi", 60),
+        (try_end),
+    (try_end),
+
 ]),
 
 #Kham
