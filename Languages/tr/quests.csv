@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} senden {reg1} tane {s14} yetiştirmeni ve {ona/ona} g
 qst_escort_messenger|Haberciyi {s14}'e kadar koru
 qst_escort_messenger_text|Hiçbiri
 qst_hunt_down_fugitive| {s4}'ün Peşine düşün
-; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
+; qst_hunt_down_fugitive_text|{s9} senden bir haini yakalamanı istdi, ismi {s4}. şu anda belirtilen noktada {s3}.
 qst_bring_back_runaway_serfs|Kaçak köleleri geri getir.
 qst_bring_back_runaway_serfs_text|{s9} senden üç grup kaçan köleyi {s2} ye geri getirmeni istedi ve sana onların {s3} yönüne dogru kaçmış olmaları gerektigini söyledi.
 qst_follow_spy|Casusu buluşma yerine kadar takip et.
