@@ -1,14 +1,14 @@
 menu_start_game_1|^^^^^^^^^^Ne için savaşıyorsun?
-mno_start_good|Yeni bir çağın ŞAFAGI
-mno_start_evil|İnsanların alacakaranlığı
+mno_start_good|Yeni bir çagın ŞAFAGI
+mno_start_evil|İnsanların alacakaranlıgı
 mno_faction_intros|Orta Dünya'nın farklı tarafları hakkında bilgi edinin
 mno_go_bback|Geri Dön
-menu_start_phase_2|^^^^^ Orta Dünya. Doğuda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çagdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
+menu_start_phase_2|^^^^^ Orta Dünya. Doguda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çagdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
 mno_go_forth|Seçtigin yolda ilerle...
-; mno_change_war_start_mode|Savaş Başlıyor:  {s7}
-; mno_toggle_tutorial|Açılır Pencere Eğitimleri:  {s7}
+; mno_change_war_start_mode|War Starts:  {s7}
+; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|TLD ayarlarını degiştir
-; mno_see_info_pages|TLD konseptleri
+; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^^Senaryonu seç:
 mno_custom_battle_scenario_1|Çatışma, Gondor, Harad'a karşı
 mno_custom_battle_scenario_12|Savaş için tarafları seç
@@ -127,7 +127,7 @@ mno_camp_action|Bir nesne kullan.
 mno_camp_wait_here|Burada bir süreligine kamp kur.
 mno_camp_options|TLD ayarını degiştir
 mno_Dev_Menu|Geliştirici Menüsü
-; menu_dev_menu|Bunlar, oynamak için birçok hile/araç sunan geliştirici seçenekleridir.^^ Ancak, bu, bazı devam eden çalışma (WIP) olayları, tetikleyiciler ve kampanya değişiklikleri nedeniyle oyunun bozulmasına yol açabilir.^^ Kendi sorumluluğunuzda kullanın! ^^ Ayrıca, hata bildirirken lütfen Geliştirici Menüsü'nü kullandığınızı belirtin.
+; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
 mno_cheat_enable|Hile/modlama ayarlarını etkinleştir.
 menu_game_options|^^^^^^^^Degiştirmek için bir ayara tıklayın:
 mno_game_options_war_level_start|Savaşın Başlayacagı Seviye: {s1}
