@@ -12305,7 +12305,7 @@ scripts = [
 # Input: arg1 = region  code
 # Input: arg2 = terrain type
 # Input: arg3 = visible landmark (if any, else -1)  
-# Output: none
+# Output: reg0 = scene to use
 ("jump_to_random_scene", [
 	(store_script_param, ":region",1),
 	(store_script_param, ":terrain",2),
@@ -12678,6 +12678,7 @@ scripts = [
 		(assign, reg10,":scene_to_use"), (display_message,"@{!}debug: using scene ID N. {reg10}"),
 	(try_end),
 	(jump_to_scene,":scene_to_use"),
+    (assign, reg0, ":scene_to_use"), #if needed for modify_visitors_at_site op
 
 ]),
 

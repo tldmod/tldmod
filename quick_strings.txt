@@ -1,4 +1,4 @@
-1760
+1762
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1232,6 +1232,8 @@ qstr_Your_troops_value_yo Your_troops_value_your_effort_to_fulfill_your_oath,_bu
 qstr_{***}_ {***}_
 qstr_{s22}You_have_fulfil {s22}You_have_fulfilled_your_oath_to_avenge_Balin_and_his_company!
 qstr_{s22}You_have_fulfill {s22}You_have_fulfilled_your_oath_of_vengeance_for_{s1}'s_heroic_death!
+qstr_Avoided_animal_ambus Avoided_animal_ambush_via_Spotting.
+qstr_Avoided_animal_ambush Avoided_animal_ambush_via_Wildcraft.
 qstr_Reinforcements Reinforcements
 qstr_Refugees_Escaped:_{r Refugees_Escaped:_{reg10}_---_Refugees_Killed:_{reg11}
 qstr_Raider_Parties_Kille Raider_Parties_Killed:_{reg12}

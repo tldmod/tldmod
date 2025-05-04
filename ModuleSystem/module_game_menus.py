@@ -12804,36 +12804,53 @@ game_menus = [
  "none", 
  [
 	(assign, ":ambush_troop", "trp_wolf"), # (CppCoder) Default, just in case something glitches...
-	(assign, ":ambush_count", 1), 
+    
+    (store_character_level, ":player_level", trp_player),
+    (party_get_num_companions, ":party_size", "p_main_party"),
+    (val_min, ":party_size", 35), #there's also a party size check within the trigger, but need it here for testing
+    (store_add, ":ambush_count", ":player_level", ":party_size"), #ca. 10-60
+    (val_div, ":ambush_count", 9), #1-7
+    #(assign, ":ambush_scene", 0),
+    
+    #todo: make animal count scale with player level and party size (if bigger party, only big packs dare to attack)
+    # but also allow player to bring their whole party to the fight?
 	(try_begin),
 		(eq|this_or_next, "$current_player_region", region_n_mirkwood),
         (eq|this_or_next, "$current_player_region", region_c_mirkwood),
 		(eq, "$current_player_region", region_s_mirkwood),
 		(assign, ":ambush_troop", "trp_spider"),
-		(assign, ":ambush_scene", "scn_mirkwood_ambush"),
-		(store_random_in_range, ":ambush_count", 1, 5), # 1 to 5 spiders...
-	(else_try),
+		#(assign, ":ambush_scene", "scn_mirkwood_ambush"),
+	(else_try), #northern wilderness
 		(eq|this_or_next, "$current_player_region", region_grey_mountains),
-		(eq, "$current_player_region", region_misty_mountains),
-		(assign, ":ambush_scene", "scn_mountain_ambush"),
+        (eq|this_or_next, "$current_player_region", region_misty_mountains),
+        (eq|this_or_next, "$current_player_region", region_s_misty_mountains),
+        (eq, "$current_player_region", region_n_anduin_vale),
+		#(assign, ":ambush_scene", "scn_mountain_ambush"),
 		(store_random_in_range, ":rnd", 0, 100),
 		(try_begin),
-			(eq, "$players_kingdom", "fac_dunland"),
-			(assign, ":ambush_troop", "trp_bear"),
-			(assign, ":ambush_count", 1),			# 1 bear only
-		(else_try),
 			(neq, "$players_kingdom", "fac_beorn"), # If not a beorning there is a 40% chance of a bear ambush
 			(lt, ":rnd", 40),
 			(assign, ":ambush_troop", "trp_bear"),
-			(assign, ":ambush_count", 1),
+			(val_div, ":ambush_count", 2),
 		(else_try),
 			(assign, ":ambush_troop", "trp_wolf"),
-			(store_random_in_range, ":ambush_count", 5, 9), # 5 to 8 wolves
+            (store_random_in_range, ":ambush_extra", -1, 4),
+            (val_add, ":ambush_count", ":ambush_extra"),
 		(try_end),
+    (else_try),
+        (eq|this_or_next, "$current_player_region", region_the_wold),
+        (eq|this_or_next, "$current_player_region", region_n_undeep),
+        (eq|this_or_next, "$current_player_region", region_s_undeep),
+		(eq, "$current_player_region", region_w_emyn_muil),
+        (assign, ":ambush_troop", "trp_wolf"),
+        (store_random_in_range, ":ambush_extra", -1, 4),
+        (val_add, ":ambush_count", ":ambush_extra"),
 	(try_end),
+    
+    (val_clamp, ":ambush_count", 1, 15),
 	(assign, reg20, ":ambush_troop"),
 	(assign, reg21, ":ambush_count"),
-	(assign, reg22, ":ambush_scene"),
+	#(assign, reg22, ":ambush_scene"),
   
   #swy-- set the background mesh depending on what's going to attack us!
   (try_begin),
@@ -12851,37 +12868,30 @@ game_menus = [
 	("continue",[],"Continue...",
 	[
 	(set_jump_mission, "mt_animal_ambush"),
-	(set_jump_entry, 0),
-	(modify_visitors_at_site, reg22),
+    (set_battle_advantage, 0),
+    (assign,"$number_of_combatants",1), #use a small scene
+    (try_begin),
+        #(eq, reg22, 0),
+        (call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"),
+    (try_end),
+	(modify_visitors_at_site, reg0),
 	(reset_visitors),
-
-	(assign, ":cur_entry", 1),
-	(try_for_range, ":npc", companions_begin, companions_end),
-		(main_party_has_troop, ":npc"),
-		(set_visitor, ":cur_entry", ":npc"),
-		(val_add, ":cur_entry", 1),
-	(try_end),
-	(try_for_range, ":npc", new_companions_begin, new_companions_end),
-		(main_party_has_troop, ":npc"),
-		(set_visitor, ":cur_entry", ":npc"),
-		(val_add, ":cur_entry", 1),
-	(try_end),
-
-	(assign, ":cur_entry", 17),
-	(try_for_range, ":unused", 0, reg21),
-		(set_visitor, ":cur_entry", reg20),
-		(val_add, ":cur_entry", 1),
-	(try_end),
-
-	(jump_to_scene, reg22),
-	(change_screen_mission),
+    (val_div, reg21, 2), #only spawn half of them initially
+    (val_max, reg21, 1),
+    (set_visitors, 1, reg20, reg21),
+	(jump_to_scene, reg0),
+    (change_screen_mission),
 	]),
+    
+ ("back_to_kham",[(eq, cheat_switch, 1)],"{!}DEBUG: back...",[(jump_to_menu, "mnu_camp_khamtest"),]),    
  ],
+ 
  ),
 
 ("animal_ambush_success", 0, "The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}", "none", 
 [
-	(assign, reg5, -1), # Reward item id.
+	(call_script,"script_maybe_relocate_player_from_z0"),
+    (assign, reg5, -1), # Reward item id.
 	(try_begin),
 		(gt, reg21, 1),
 		(assign, reg0, 1),
@@ -12921,6 +12931,7 @@ game_menus = [
 
 ("animal_ambush_fail", 0, "The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.", "none", 
 [
+  (call_script,"script_maybe_relocate_player_from_z0"),
   (assign,":ambush_troop", reg20),
 
   #swy-- set the background mesh depending on what's going to attack us!

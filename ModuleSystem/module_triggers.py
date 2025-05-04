@@ -1904,15 +1904,22 @@ triggers = [
   # CC: Ambushes
   (8, 0, 0, [],[
       (eq, "$tld_option_animal_ambushes", 1), # Allows option to be toggled on and off.
-      (neq,"$tld_war_began", 0),
+      (store_character_level, ":player_level", trp_player),
+      (ge,":player_level", 7),
       (try_begin),
         (party_get_attached_to, ":attached_to_party", "p_main_party"),
         (neg|is_between, ":attached_to_party", centers_begin, centers_end),
         (eq|this_or_next, "$current_player_region", region_misty_mountains),
         (eq|this_or_next, "$current_player_region", region_grey_mountains),
+        (eq|this_or_next, "$current_player_region", region_s_misty_mountains),
+        (eq|this_or_next, "$current_player_region", region_n_anduin_vale),
         (eq|this_or_next, "$current_player_region", region_n_mirkwood),
         (eq|this_or_next, "$current_player_region", region_c_mirkwood),
-        (eq,              "$current_player_region", region_s_mirkwood),
+        (eq|this_or_next, "$current_player_region", region_s_mirkwood),        
+        (eq|this_or_next, "$current_player_region", region_the_wold),
+        (eq|this_or_next, "$current_player_region", region_n_undeep),
+        (eq|this_or_next, "$current_player_region", region_s_undeep),
+		(eq, "$current_player_region", region_w_emyn_muil),
         (assign, ":continue", 1),
         
         (try_begin), #if spider nest destroyed
@@ -1932,42 +1939,42 @@ triggers = [
         (try_end),
         
         (eq, ":continue", 1),
-        (assign, ":ambush_chance", 90), # 90% chance by default
-        (party_get_num_companions, reg1, "p_main_party"),
-        (try_begin),
-          (lt, reg1, 8),
-          (val_sub, ":ambush_chance", 50),
-        (else_try),
-          (gt, reg1, 16),
-          (le, reg1, 35),
-          (val_sub, ":ambush_chance", 70),
-        (else_try),
-          (gt, reg1, 35),
-          (val_sub, ":ambush_chance", 200),
-        (try_end),
+        
+        (party_get_num_companions, ":party_size", "p_main_party"),
+        (val_mul, ":party_size", 3),
+        
         (call_script, "script_get_max_skill_of_player_party", "skl_spotting"),
+        (store_mul, ":max_spotting", reg0, 2),
+        (val_add, ":max_spotting", ":party_size"),
+        (assign, ":max_spotting_owner", reg1),       
+        
+        (call_script, "script_get_max_skill_of_player_party", "skl_persuasion"),
+        (store_mul, ":max_wildcraft", reg0, 3),
+        (val_add, ":max_wildcraft", ":max_spotting"),
+        (assign, ":max_wildcraft_owner", reg1),
+
+        
+        (store_random_in_range, ":rnd", 0, 200),
+        (le, ":rnd", 100), # 50% chance by default
+        (gt, ":rnd", ":party_size"),
         (try_begin),
-          (gt, reg0, 4),
-          (store_sub, reg2, reg0, 4),
-          (val_mul, reg2, 10),
-          (val_sub, ":ambush_chance", reg2), # -60% at max
-        (try_end),
-        (try_begin),
-          (store_random_in_range, ":rnd", 1, 101),
-          (assign, reg10, ":rnd"),
-          (assign, reg11, ":ambush_chance"),
-          (lt, ":rnd", ":ambush_chance"),
-          (store_random_in_range, ":rnd", 1, 101),
-          (store_mul, ":ambush_counter", "$creature_ambush_counter", 5),
-          (gt, ":rnd", ":ambush_counter"),
-          (val_add, "$creature_ambush_counter", 1),
-          (jump_to_menu, "mnu_animal_ambush"),
+            (le, ":rnd", ":max_spotting"),
+            (display_message, "@Avoided animal ambush via Spotting."),
+            (add_xp_to_troop, 200, ":max_spotting_owner"),
+        (else_try),
+            (le, ":rnd", ":max_wildcraft"),
+            (display_message, "@Avoided animal ambush via Wildcraft."),
+            (add_xp_to_troop, 200, ":max_wildcraft_owner"),
+        (else_try),
+            (lt, "$creature_ambush_counter", 1),
+            (val_add, "$creature_ambush_counter", 1),
+            (jump_to_menu, "mnu_animal_ambush"),
         (try_end),
       (try_end),
   ]),
   
   # Decrement the ambush counter every 20 hours (CppCoder)
-  (18, 0, 0, [(gt, "$creature_ambush_counter", 0)],[(val_sub, "$creature_ambush_counter", 1)]),
+  (18, 0, 0, [(gt, "$creature_ambush_counter", 0), ],[(store_random_in_range, ":rnd", 0, 100), (le, ":rnd", 40), (val_sub, "$creature_ambush_counter", 1)]),
   
   
   

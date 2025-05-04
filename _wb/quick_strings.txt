@@ -1,4 +1,4 @@
-2045
+2047
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -102,7 +102,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr_{!}_rev_343_wb__dev_ {!}_rev_343_wb_|_dev_^_Built_2025-04-06_18:00___
+qstr_{!}_rev_352_wb__dev_ {!}_rev_352_wb_|_dev_^_Built_2025-05-04_14:41___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1493,6 +1493,8 @@ qstr_You_have_failed_to_fu You_have_failed_to_fulfill_your_oath_of_vengeance_for
 qstr_Your_troops_value_yo Your_troops_value_your_effort_to_fulfill_your_oath,_but_acknowledge_that_events_unfolded_too_quickly._As_a_result,_
 qstr_{s22}You_have_fulfil {s22}You_have_fulfilled_your_oath_to_avenge_Balin_and_his_company!
 qstr_{s22}You_have_fulfill {s22}You_have_fulfilled_your_oath_of_vengeance_for_{s1}'s_heroic_death!
+qstr_Avoided_animal_ambus Avoided_animal_ambush_via_Spotting.
+qstr_Avoided_animal_ambush Avoided_animal_ambush_via_Wildcraft.
 qstr_Reinforcements Reinforcements
 qstr_Refugees_Escaped:_{r Refugees_Escaped:_{reg10}_---_Refugees_Killed:_{reg11}
 qstr_Raider_Parties_Kille Raider_Parties_Killed:_{reg12}
