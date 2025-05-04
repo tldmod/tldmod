@@ -12,6 +12,7 @@ luajit tx.lua convert
 # tx push -s -t -f --skip --no-interactive
 # tx push -t -l sv --skip --no-interactive
 # tx push -t -l zh-Hant --skip --no-interactive
+# tx push --translation --languages tr --force --skip --workers 10
 
 # pull latest translations
 tx pull -a -f --skip --minimum-perc 40 --workers 20 --silent
