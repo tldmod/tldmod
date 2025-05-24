@@ -2725,5 +2725,17 @@ str_shortname_region_stub_3 = 2723
 str_shortname_region_stub_4 = 2724
 str_shortname_region_stub_5 = 2725
 str_isengard_hunting_camp_guildmaster_player_found_ok = 2726
+str_trait_title_animal_fighter = 2727
+str_trait_desc_animal_fighter_ = 2728
+str_trait_title_stub_1 = 2729
+str_trait_desc_stub_1 = 2730
+str_trait_title_stub_2 = 2731
+str_trait_desc_stub_2 = 2732
+str_trait_title_stub_3 = 2733
+str_trait_desc_stub_3 = 2734
+str_trait_title_stub_4 = 2735
+str_trait_desc_stub_4 = 2736
+str_trait_title_stub_5 = 2737
+str_trait_desc_stub_5 = 2738
 
 

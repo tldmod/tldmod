@@ -7539,7 +7539,7 @@ mission_templates = [ # not used in game
 	[(set_fixed_point_multiplier, 100),
     (get_player_agent_no, ":player"),
     (agent_get_position, pos1, ":player"),
-    (position_move_z, pos1, 3000),
+    (position_move_y, pos1, -3000),
     (set_spawn_position, pos1),
     (spawn_agent, reg20),
     (agent_set_team, reg0, 1),

@@ -3796,4 +3796,16 @@ Even in the last case, the player can make formations up to four lines by orderi
 #More missing guildmaster companion dialog
 ("isengard_hunting_camp_guildmaster_player_found_ok", "If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!"),
 
+("trait_title_animal_fighter", "Beast Slayer"),
+("trait_desc_animal_fighter ", "Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals."),
+("trait_title_stub_1", "{!}unused"),
+("trait_desc_stub_1", "{!}unused"),
+("trait_title_stub_2", "{!}unused"),
+("trait_desc_stub_2", "{!}unused"),
+("trait_title_stub_3", "{!}unused"),
+("trait_desc_stub_3", "{!}unused"),
+("trait_title_stub_4", "{!}unused"),
+("trait_desc_stub_4", "{!}unused"),
+("trait_title_stub_5", "{!}unused"),
+("trait_desc_stub_5", "{!}unused"),
 ]

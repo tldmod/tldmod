@@ -2129,7 +2129,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 4115),  #Rafa: Savegame version
+    (assign,"$savegame_version", 4220),  #Rafa: Savegame version
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -21757,9 +21757,19 @@ scripts = [
     (troop_set_slot, "trp_traits", ":trait", 1),
     
     # Title string = First title string + 2*(slot-1)
-    (store_sub, ":title_string", ":trait", 1),
+    (try_begin), #new range
+        (ge, ":trait", slot_trait_animal_fighter),
+        (store_sub, ":title_string",":trait", slot_trait_animal_fighter),
+    (else_try),
+        (store_sub, ":title_string", ":trait", 1),
+    (try_end),
     (val_add, ":title_string", ":title_string"),
-    (val_add, ":title_string", tld_first_trait_string),
+    (try_begin), #new range
+        (ge, ":trait", slot_trait_animal_fighter),
+        (val_add, ":title_string", str_trait_title_animal_fighter),
+    (else_try),
+        (val_add, ":title_string", tld_first_trait_string),
+    (try_end),
     (str_store_string, s5, ":title_string"),
     (display_log_message, "@New trait gained: {s5}.", color_good_news),
     (play_sound, "snd_gong"),
@@ -25723,6 +25733,12 @@ command_cursor_scripts = [
         (else_try),
             (eq, "$tld_campaign_diffulty", 0),  (assign, "$tld_volunteers_multi", 60), (assign, "$tld_host_size_multi", 200), (assign, "$tld_ally_str_income_multi", 80), (assign, "$tld_victory_str_multi", 50), (assign, "$tld_player_fac_init_strength_multi", 60),
         (try_end),
+    (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4220),
+        (assign, "$savegame_version", 4220),
+        (troop_set_slot, "trp_traits", slot_trait_animal_fighter, 0),
     (try_end),
 
 ]),

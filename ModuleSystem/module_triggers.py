@@ -1955,6 +1955,10 @@ triggers = [
 
         
         (store_random_in_range, ":rnd", 0, 200),
+        (try_begin),
+            (troop_slot_eq, trp_traits, slot_trait_animal_fighter, 1),
+            (store_random_in_range, ":rnd", 0, 400),
+        (try_end),
         (le, ":rnd", 100), # 50% chance by default
         (gt, ":rnd", ":party_size"),
         (try_begin),

@@ -2048,9 +2048,19 @@ game_menus = [
       (troop_slot_eq, "trp_traits", ":trait", 1),
       
       # Title string = First title string + 2*(slot-1)
-      (store_sub, ":title_string", ":trait", 1),
-      (val_add, ":title_string", ":title_string"),
-      (val_add, ":title_string", tld_first_trait_string),
+        (try_begin), #new range
+            (ge, ":trait", slot_trait_animal_fighter),
+            (store_sub, ":title_string",":trait", slot_trait_animal_fighter),
+        (else_try),
+            (store_sub, ":title_string", ":trait", 1),
+        (try_end),
+        (val_add, ":title_string", ":title_string"),
+        (try_begin), #new range
+            (ge, ":trait", slot_trait_animal_fighter),
+            (val_add, ":title_string", str_trait_title_animal_fighter),
+        (else_try),
+            (val_add, ":title_string", tld_first_trait_string),
+        (try_end),
       (str_store_string, s5, ":title_string"),
       (try_begin),
       	(eq, ":trait", slot_trait_bravery),
@@ -12819,6 +12829,9 @@ game_menus = [
         (eq|this_or_next, "$current_player_region", region_c_mirkwood),
 		(eq, "$current_player_region", region_s_mirkwood),
 		(assign, ":ambush_troop", "trp_spider"),
+        (store_random_in_range, ":ambush_extra", -1, 2),
+        (val_add, ":ambush_count", ":ambush_extra"),
+        (val_max, ":ambush_count", 2),
 		#(assign, ":ambush_scene", "scn_mirkwood_ambush"),
 	(else_try), #northern wilderness
 		(eq|this_or_next, "$current_player_region", region_grey_mountains),
@@ -12836,6 +12849,7 @@ game_menus = [
 			(assign, ":ambush_troop", "trp_wolf"),
             (store_random_in_range, ":ambush_extra", -1, 4),
             (val_add, ":ambush_count", ":ambush_extra"),
+            (val_max, ":ambush_count", 3),
 		(try_end),
     (else_try),
         (eq|this_or_next, "$current_player_region", region_the_wold),
@@ -12845,6 +12859,7 @@ game_menus = [
         (assign, ":ambush_troop", "trp_wolf"),
         (store_random_in_range, ":ambush_extra", -1, 4),
         (val_add, ":ambush_count", ":ambush_extra"),
+        (val_max, ":ambush_count", 3),
 	(try_end),
     
     (val_clamp, ":ambush_count", 1, 15),
@@ -12870,10 +12885,7 @@ game_menus = [
 	(set_jump_mission, "mt_animal_ambush"),
     (set_battle_advantage, 0),
     (assign,"$number_of_combatants",1), #use a small scene
-    (try_begin),
-        #(eq, reg22, 0),
-        (call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"),
-    (try_end),
+    (call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"),
 	(modify_visitors_at_site, reg0),
 	(reset_visitors),
     (val_div, reg21, 2), #only spawn half of them initially
@@ -12916,6 +12928,24 @@ game_menus = [
   (try_end),
   
 	(str_store_string, s3, "@You cover up your tracks and move onward."), 
+    
+    #animal fighter trait
+    (troop_get_slot, ":counter", "trp_traits", slot_trait_animal_fighter),
+    (neq, ":counter", 1), #counter still active? 1 means trait gained    
+    #(assign, reg78, ":counter"), (display_message, "@counter: {reg78}"),
+    (val_add, ":counter", 2), 
+    (troop_set_slot, "trp_traits", slot_trait_animal_fighter, ":counter"),
+    (ge, ":counter", 6), #at least 3 encounters
+    
+    (store_skill_level, ":wildcraft", skl_persuasion, trp_player),
+    (ge, ":wildcraft", 3),
+    (val_mul, ":counter", ":wildcraft"), #3 wildcraft and 5 wins means 30% chance; 5 wildcraft and 5 wins 50% chance;
+    #(assign, reg78, ":counter"), (display_message, "@counter and wildcraft: {reg78}"),
+    
+    (store_random_in_range, ":rnd", 0, 100),
+    (lt, ":rnd", ":counter"), 
+    (call_script, "script_gain_trait", slot_trait_animal_fighter),
+    (troop_raise_skill, trp_player, skl_persuasion, 1),
 ],
 [
 	("continue",[],"Continue...",[
@@ -12942,27 +12972,9 @@ game_menus = [
     (eq,":ambush_troop", "trp_bear"),
     (set_background_mesh, "mesh_draw_bear"),
   (else_try),
-    (eq,":ambush_troop", "trp_wolf"),
-    (set_background_mesh, "mesh_draw_wolf"), #swy-- we don't have an illustration for wolves yet!
+    #(eq,":ambush_troop", "trp_wolf"),
+    (set_background_mesh, "mesh_draw_wolf"),
   (try_end),
-
-	(assign, reg0, 1),
-	(assign, reg1, 0),
-	(assign, reg2, 0),
-	(try_for_range, ":npc", companions_begin, companions_end),
-		(main_party_has_troop, ":npc"),
-		(assign, reg0, 0),
-		(val_add, reg1, 1),
-	(try_end),
-	(try_for_range, ":npc", new_companions_begin, new_companions_end),
-		(main_party_has_troop, ":npc"),
-		(assign, reg0, 0),
-		(val_add, reg1, 1),
-	(try_end),
-	(try_begin),
-		(gt, reg1, 1),
-		(assign, reg2, 1),
-	(try_end),
 ],
 [
 	("continue",[],"Continue...",[(change_screen_map)]),
