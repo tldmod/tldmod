@@ -8956,8 +8956,7 @@ scripts = [
             (gt, ":tier_3_troop", 0),
             (assign, ":quest_object_troop", ":tier_3_troop"),
 			(store_div, ":quest_target_amount", ":player_level", 2),
-			(val_min, ":quest_target_amount", 3),
-			(val_max, ":quest_target_amount", 15),
+			(val_clamp, ":quest_target_amount", 3, 15),
             
             #rank and fac str reward will receive a bonus per party strength, defined in quest dialog
             (assign, ":quest_importance", 4),

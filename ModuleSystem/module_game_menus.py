@@ -8745,7 +8745,7 @@ game_menus = [
     [("continue",[],"Continue...",[(change_screen_return)]),],
  ),
 ( "town_bandits_succeeded",mnf_disable_all_keys,
-    "^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone\
+    "^^^^^The bandits fall before you as wheat to a scythe! Soon you stand alone\
  while most of your attackers lie unconscious, dead or dying.\
  Surely the locals would be very grateful that you saved them from this menace.",
     "none",
@@ -12959,7 +12959,7 @@ game_menus = [
 	("repeat",[(eq, cheat_switch, 1)],"{!}DEBUG: Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
 ]),
 
-("animal_ambush_fail", 0, "The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.", "none", 
+("animal_ambush_fail", 0, "The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.", "none", 
 [
   (call_script,"script_maybe_relocate_player_from_z0"),
   (assign,":ambush_troop", reg20),
