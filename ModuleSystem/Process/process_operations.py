@@ -477,6 +477,12 @@ def save_statement_block(ofile,statement_name,can_fail_statement,statement_block
       print("WARNING: swy: this_or_next in the last chained condition, probably a mistake: " + str(statement_name)) + " / " + str(calling_script) + " " + str(i)
     # --
 
+    # swy: enhancement to track down mistyped 'neg' operations when the intention was to use 'neq';
+    #      neg|<something> is a modifier that needs to accompany other instructions and not go alone
+    if (opcode == neg):
+      print("WARNING: swy: neg (a modifier) used as operation instead of neq, probably a mistake: " + str(statement_name) + " / " + str(calling_script) + " " + str(i))
+    # --
+
     save_statement(ofile,opcode,no_variables,statement,variable_list,variable_uses,local_vars, local_var_uses,tag_uses,quick_strings, calling_script)
 
   if (store_script_param_1_uses > 1):
