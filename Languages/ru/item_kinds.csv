@@ -78,7 +78,7 @@ itm_orc_javelin|Орочьи тяжёлые дротики
 itm_khergit_arrows|Роханские стрелы
 itm_harad_arrows|Харадские стрелы
 itm_corsair_arrows|Умбарские стрелы
-itm_ithilien_arrows|Итилиэнские стрелы
+itm_ithilien_arrows|Стрелы рейнджера
 itm_woodelf_arrows|Зеленолесские стрелы
 itm_elven_arrows|Эльфийские стрелы
 itm_orc_hook_arrow|Крючковатые орочьи стрелы
@@ -168,7 +168,7 @@ itm_riv_foot_scale|Ривендельская чешуйчатая броня
 itm_riv_surcoat|Ривендельская накидка
 itm_riv_knight|Ривендельский доспех
 itm_riv_armor_h_archer|Ривендельская броня
-itm_riv_boots|Ривендельскые сапоги
+itm_riv_boots|Ривендельские сапоги
 itm_gon_footman|Гондорская кольчуга
 itm_gon_jerkin|Гондорская куртка
 itm_gon_regular|Гондорская тяжёлая кольчуга
@@ -251,7 +251,7 @@ itm_gondor_shield_b|Гондорский каплевидный щит
 itm_gondor_shield_c|Гондорский ростовой щит
 itm_gondor_shield_d|Гондорский каплевидный щит
 itm_gondor_shield_e|Гондорский щит Стража Цитадели
-itm_gon_tab_shield_a|Гондорский круглый щит с гербом
+itm_gon_tab_shield_a|Гондорский круглый щит с умбоном
 itm_gon_tab_shield_b|Гондорский прямоугольный щит с гербом
 itm_gon_tab_shield_c|Гондорский каплевидный щит с гербом
 itm_gon_tab_shield_d|Гондорский ростовой щит с гербом
@@ -269,8 +269,8 @@ itm_gondor_cav_sword|Гондорский кавалерийский меч
 itm_gondor_spear|Гондорское копьё
 itm_gondor_tower_spear|Гондорское копьё Стража Цитадели
 itm_gondor_lance|Гондорское кавалерийское копьё
-itm_loss_axe|Боевой топор Гондора
-itm_loss_war_axe|Гондорский боевой топор
+itm_loss_axe|Гондорский боевой топор
+itm_loss_war_axe|Гондорская секира
 itm_lorien_sword_a|Лориэнский длинный меч
 itm_lorien_sword_b|Лориэнский короткий меч
 itm_lorien_sword_c|Лориэнский боевой меч
@@ -344,7 +344,7 @@ itm_orc_club_d|Зловещая булава
 itm_orc_sledgehammer|Орочья кувалда
 itm_orc_simple_spear|Орочье копьё
 itm_orc_skull_spear|Орочье копьё с черепом
-itm_orc_bill|Орочье древко
+itm_orc_bill|Орочья гизарма
 itm_orc_slasher|Орочий короткий меч
 itm_orc_falchion|Орочий фальшион
 itm_orc_scimitar|Орочий ятаган
@@ -458,7 +458,7 @@ itm_rohan_2h_sword|Роханский боевой меч
 itm_rohan_recruit|Роханская подбитая куртка
 itm_rohan_leather|Роханский кожаный нагрудник
 itm_rohan_mail|Роханский хауберк
-itm_rohan_rider|Роханская броня всданика
+itm_rohan_rider|Роханская броня всадника
 itm_rohan_scale|Роханская чешуйчатая броня
 itm_rohan_surcoat|Роханский сюртук
 itm_rohan_guard|Роханская броня стражника
@@ -627,7 +627,7 @@ itm_dale_sword|Дейльский короткий меч
 itm_dale_sword_long|Дейльский длинный меч
 itm_dale_sword_broad|Дейльский меч пехотинца
 itm_dale_pike|Дейльское копьё
-itm_dale_billhook|Дейльская алебарда
+itm_dale_billhook|Дейльская глефа
 itm_dale_shield_a|Дейльский ростовой щит
 itm_dale_shield_b|Дейльский ростовой щит
 itm_dale_shield_c|Дейлский круглый щит
@@ -689,10 +689,10 @@ itm_dwarf_hand_axe|Гномий топорик
 itm_dwarf_throwing_axe|Метательные топоры гномов
 itm_dwarf_spear|Гномье копьё
 itm_dwarf_spear_b|Гномья пика
-itm_dwarf_spear_c|Гномий длинный топор
+itm_dwarf_spear_c|Гномья секира
 itm_dwarf_helm_coif|Гномий койф
 itm_dwarf_nasal_b|Гномий шлем с наносником
-itm_north_skullcap|Северний черепник
+itm_north_skullcap|Северный черепник
 itm_dwarf_helm_kettle|Гномья шапель
 itm_dwarf_helm_fris|Гномий хохлатый шлем
 itm_north_leather_skullcap|Северный лёгкий черепник
@@ -764,7 +764,7 @@ itm_wheeled_cage|Клетка для Пленных
 itm_orc_throwing_axes_reward|Гундабадские метательные топоры 
 itm_corsair_throwing_dagger_reward|Отравленные метательные кинжалы
 itm_dwarf_shield_reward|Щит Келед-Зарама
-itm_dwarf_great_axe_reward|Острый топор гнома
+itm_dwarf_great_axe_reward|Великий Гномий Топор
 itm_isen_uruk_heavy_reward|Броня воеводы урук-хай
 itm_lorien_bow_reward|Нолдорский лук
 itm_elven_cloak|Эльфийский Плащ

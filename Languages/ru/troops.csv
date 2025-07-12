@@ -64,12 +64,12 @@ trp_i2_beorning_warrior|Беорнингский воин
 trp_i2_beorning_warrior_pl|Беорнингские воины
 trp_i3_beorning_tolltacker|Беорнингский привратник
 trp_i3_beorning_tolltacker_pl|Беорнингские привратники
-trp_i4_beorning_sentinel|Беорнингский воитель
-trp_i4_beorning_sentinel_pl|Беорнингские воители
+trp_i4_beorning_sentinel|Беорнингский страж
+trp_i4_beorning_sentinel_pl|Беорнингские стражи
 trp_i5_beorning_warden_of_the_ford|Беорнингский хранитель Брода
-trp_i5_beorning_warden_of_the_ford_pl|Беорнингские хранители Брода
-trp_i3_beorning_carrock_lookout|Беорнингский дозорный Каррока
-trp_i3_beorning_carrock_lookout_pl|Беорнингские дозорные Каррока
+trp_i5_beorning_warden_of_the_ford_pl|Беорнингские Хранители Брода
+trp_i3_beorning_carrock_lookout|Беорнингский Дозорный Каррока
+trp_i3_beorning_carrock_lookout_pl|Беорнингские Дозорные Каррока
 trp_i4_beorning_carrock_fighter|Беорнингский Боец Каррока
 trp_i4_beorning_carrock_fighter_pl|Беорнингские Бойцы Каррока
 trp_i5_beorning_carrock_berserker|Беорнингский Берсерк Каррока
@@ -154,8 +154,8 @@ trp_i6_dwarf_longpikeman|Длиннобородый Пикинер
 trp_i6_dwarf_longpikeman_pl|Длиннобородые Пикинеры
 trp_i4_dwarf_axeman|Гном-Рубака
 trp_i4_dwarf_axeman_pl|Гномы-Рубаки
-trp_i5_dwarf_expert_axeman|Гном-Воитель
-trp_i5_dwarf_expert_axeman_pl|Гномы-Воители
+trp_i5_dwarf_expert_axeman|Гном-Мастер Топора
+trp_i5_dwarf_expert_axeman_pl|Гномы-Мастера Топора
 trp_i6_dwarf_longbeard_axeman|Длиннобородый Королевский Страж
 trp_i6_dwarf_longbeard_axeman_pl|Длиннобородые Королевские Стражи
 trp_a2_dwarf_lookout|Гном-Дозорный
@@ -226,16 +226,16 @@ trp_a6_ithilien_leader|Командир отряда итилиэнских ре
 trp_a6_ithilien_leader_pl|Командиры отрядов итилиэнских рейнджеров
 trp_i1_loss_woodsman|Лоссарнахский лесоруб
 trp_i1_loss_woodsman_pl|Лоссарнахские лесорубы
-trp_i2_loss_axeman|Лоссарнахский топорщик
-trp_i2_loss_axeman_pl|Лоссарнахские воины с топорами
-trp_i3_loss_vet_axeman|Лоссарнахский топорщик-ветеран
-trp_i3_loss_vet_axeman_pl|Лоссарнахские топорщики-ветераны
-trp_i4_loss_heavy_axeman|Тяжёлый лоссарнахский секирщик
-trp_i4_loss_heavy_axeman_pl|Тяжёлые лоссарнахские секирщики
-trp_i5_loss_axemaster|Лоссарнахский мастер-секирщик
-trp_i5_loss_axemaster_pl|Лоссарнахские мастера-секирщики
+trp_i2_loss_axeman|Лоссарнахский боец с топором
+trp_i2_loss_axeman_pl|Лоссарнахские бойцы с топорами
+trp_i3_loss_vet_axeman|Лоссарнахский ветеран с топором
+trp_i3_loss_vet_axeman_pl|Лоссарнахские ветераны с топорами
+trp_i4_loss_heavy_axeman|Лоссарнахский тяжёлый секирщик
+trp_i4_loss_heavy_axeman_pl|Лоссарнахские тяжёлые секирщики
+trp_i5_loss_axemaster|Лоссарнахский Мастер Секиры
+trp_i5_loss_axemaster_pl|Лоссарнахские Мастера Секиры
 trp_i6_loss_leader|Командир лоссарнахского отряда
-trp_i6_loss_leader_pl|Командиры лоссарнахских отряда
+trp_i6_loss_leader_pl|Командиры лоссарнахских отрядов
 trp_i1_pel_watchman|Пеларгирский стражник
 trp_i1_pel_watchman_pl|Пеларгирские стражники
 trp_a2_pel_marine|Пеларгирский моряк
@@ -250,14 +250,14 @@ trp_i6_pel_leader|Командир пеларгирского отряда
 trp_i6_pel_leader_pl|Командиры пеларгирских отрядов
 trp_a6_pel_marine_leader|Командир отряда пеларгирских моряков
 trp_a6_pel_marine_leader_pl|Командиры отрядов пеларгирских моряков
-trp_i1_lam_clansman|Воин ламедонского клана
-trp_i1_lam_clansman_pl|Воины ламедонских кланов
+trp_i1_lam_clansman|Боец ламедонского клана
+trp_i1_lam_clansman_pl|Бойцы ламедонских кланов
 trp_i2_lam_footman|Пехотинец Ламедона
 trp_i2_lam_footman_pl|Пехотинцы Ламедона
-trp_i3_lam_veteran|Опытный воин Ламедона
-trp_i3_lam_veteran_pl|Опытные воины Ламедона
-trp_i4_lam_warrior|Воин Ламедона
-trp_i4_lam_warrior_pl|Воины Ламедона
+trp_i3_lam_veteran|Ветеран Ламедона
+trp_i3_lam_veteran_pl|Ветераны Ламедона
+trp_i4_lam_warrior|Воитель Ламедона
+trp_i4_lam_warrior_pl|Воители Ламедона
 trp_i5_lam_champion|Прославленный воин Ламедона
 trp_i5_lam_champion_pl|Прославленные воины Ламедона
 trp_c5_lam_knight|Рыцарь Ламедона
@@ -1226,7 +1226,7 @@ trp_merchant_orc_sentry_pl|полевой склад
 trp_merchant_candros|Жирослав Кладовщик
 trp_merchant_candros_pl|конюшню и склад
 trp_merchant_hannun|Жирослав Кладовщик
-trp_merchant_hannun_pl|Поддержка стрелков
+trp_merchant_hannun_pl|склад припасов рейнджеров
 trp_merchant_mtirith|Ведающий запасами
 trp_merchant_mtirith_pl|конюшню и склад
 trp_merchant_pelargir|Ведающий запасами

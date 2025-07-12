@@ -63,7 +63,7 @@ ui_delivered_number_damage|Нанесено %d урона
 ui_mission_losses_killed|убито :
 ui_party_losses|%s : %d ранено --- %d убито из %d
 ui_following|Следование 
-ui_accompanying|Сопровождающий
+ui_accompanying|Сопровождающий 
 ui_dumping_value_items|%d предметы будут навсегда потеряны
 ui_dumping_value_item|Предмет будет навсегда потерян, вы уверены?
 ui_notification_requirements_not_met|Вам не хватает навыков, чтобы использовать это оружие
@@ -75,8 +75,8 @@ ui_you_have_improved_your_proficiency_in_value_to_number|Вы улучшили �
 ui_your_proficiency_in_value_has_improved_by_number_to_number|Ваш навык %s улучшился с +%d до %d
 ui_value_killed_by_value|%s убит %s
 ui_value_knocked_unconscious_by_value|%s оглушён %s
-ui_you_got_number_experience|Вы получили %d опыта.
-ui_you_have_advanced_to_level_number|Вы перешли на %d уровень .
+ui_you_got_number_experience|Ты получаешь %d опыта.
+ui_you_have_advanced_to_level_number|Ты переходишь на %d уровень.
 ui_quest_succeeded_value|Задание выполнено: %s
 ui_number_of_companions_exceeds_leadership_limit|Количество компаньонов превысило доступный лимит 
 ui_number_of_prisoners_exceeds_prisoner_management_limit|Количество заключенных превысило доступный лимит 
@@ -86,7 +86,7 @@ ui_your_relations_with_value_has_deteriorated_from_number_to_number|Ваши о�
 ui_you_lost_value|Вы потеряли %s
 ui_change_graphics_settings_explanation|Некоторые изменения вступят в силу при смене местности.
 ui_game_log_window|Игровой журнал
-ui_blunt_short|дробящее
+ui_blunt_short| дробящее
 ui_tracks|Следы
 ui_need_to_learn_prisoner_management|Вам нужно повысить навык управления пленниками, чтобы взять заключенных.
 ui_unbalanced|Несбалансированный 
