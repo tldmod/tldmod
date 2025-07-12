@@ -204,8 +204,7 @@ _fold_start_ '[Uploading finished TLD packages to GitHub]'
     owner="tldmod"; repo="tldmod-downloads"
     # swy: create a new release to upload our two files; we need to do this after they implemented a 1000-file limit per release in July 2025: https://github.com/orgs/community/discussions/165616#discussioncomment-13740818
     curl --fail --location --request POST --header "Authorization: token $ghauth" \
-                                          --data "{'tag_name': \"r$SVNREV\", 'target_commitish': 'master', 'name': \"r$SVNREV\", 'body': 'Every change the *TLD* developers make should be downloadable as a nightly patch from *https://tldmod.github.io/* after a few minutes, if everything goes well.', \
-                                                   'draft': false, 'prerelease': true, 'generate_release_notes': false}" \
+                                          --data '{"tag_name": "r'$SVNREV'", "target_commitish": "master", "name": "r'$SVNREV'", "body": "Every change the *TLD* developers make should be downloadable as a nightly patch from *https://tldmod.github.io/* after a few minutes, if everything goes well.", "draft": false, "prerelease": true, "generate_release_notes": false}' \
                                           "https://api.github.com/repos/$owner/$repo/releases" | tee output.json
 
                          ghasset="`cat output.json | jq -r '.upload_url'`" # swy: returns something like "https://uploads.github.com/repos/octocat/Hello-World/releases/1/assets{?name,label}" (https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#get-a-release)
