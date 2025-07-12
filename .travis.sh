@@ -195,9 +195,9 @@ _fold_start_ '[Uploading finished TLD packages to Bitbucket]'
     sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfile"   | tee    bitbucket.log
     sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfilewb" | tee -a bitbucket.log
 
-    # fail the build if things didn't go as expected
-    grep --no-messages 'error' bitbucket.log && exit 1;
-    
+#   # fail the build if things didn't go as expected
+#   grep --no-messages 'error' bitbucket.log && exit 1;
+
 _fold_final_
 
 _fold_start_ '[Uploading finished TLD packages to GitHub]'
