@@ -2,7 +2,7 @@ skinkey_chin_size|Μέγεθος Πιγουνιού
 skinkey_chin_shape|Σχήμα Πιγουνιού
 skinkey_chin_forward|Μπροστά Πιγούνι
 skinkey_jaw_width|Φάρδος Σαγονιού
-; skinkey_jaw_definition|Jaw Definition
+skinkey_jaw_definition|Ορισμός Γνάθου
 skinkey_lower_lip|Κάτω Χείλος
 skinkey_upper_lip|Πάνω Χείλος
 skinkey_mouth_nose_distance|Απόσταση Στόματος-Μύτης
@@ -42,5 +42,5 @@ skinkey_frawn|Συνοφρύωμα
 skinkey_mouth_vert_pos|Κάθετη Θέση Στόματος
 skinkey_mouth_to_nose_dist|Απόσταση Στόματος και Μύτης
 skinkey_chin_width|Φάρδος Πιγουνιού
-; skinkey_ear_pointiness|Ear Pointiness
-; skinkey_ear_length|Ear Length
+skinkey_ear_pointiness|Αιχμηρότητα Αυτιών
+skinkey_ear_length|Μήκος Αυτιών

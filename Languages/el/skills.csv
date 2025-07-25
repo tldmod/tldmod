@@ -1,9 +1,9 @@
 skl_trade|Διαπραγματευτής
 skl_trade_desc|Κάνει του σιδηρουργούς και τους έμπορους να είναι πιο συνεργάσιμοι και να προσφέρουν καλύτερα εφόδια. (Ομαδική Ικανότητα)
 skl_leadership|Ηγεσία
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
+skl_leadership_desc|Κάθε πόντος αυξάνει τον μέγιστο αριθμό στρατιωτών που μπορείς να διοικήσεις κατά 5 (3 για τους συντρόφους), αυξάνει το ηθικό και τη συνοχή της ομάδας στη μάχη. Προθυμοποιεί περισσότερους και δυνατότερους εθελοντές να σε ακολουθήσουν. (Προσωπική Ικανότητα)
 skl_prisoner_management|Διαχείριση Κρατουμένων
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
+skl_prisoner_management_desc|Κάθε επίπεδο αυτής της δεξιότητας αυξάνει τη μέγιστη χωρητικότητα κρατούμενων κατά %d. Βελτιώνει τις πιθανότητες αιχμαλώτισης και κράτησης των κρατουμένων. (Ομαδική Ικανότητα)
 skl_persuasion|Τέχνης της Φύσης
 skl_persuasion_desc|Η ικανότητα να επιβιώνεις στην άγρια φύση και να την κάμπτεις υπό τη θέληση σου. Αυτή η ικανότητα επηρεάζει τη δυνατότητα της ομάδας να κρύβεται από τον εχθρό και τη ταχύτητα της ομάδας σε δασώδες έδαφος. (Ικανότητα Ομάδας)
 skl_engineer|-----
@@ -21,7 +21,7 @@ skl_spotting_desc|Το εύρος το οποίο βλέπει η ομάδα α�
 skl_pathfinding|Εύρεση διαδρομής
 skl_pathfinding_desc|Η ταχύτητα της ομάδας αυξάνεται κατά 3%% ανά επίπεδο της ικανότητας. (Ομαδική Ικανότητα) 
 skl_tactics|Τακτική
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)
+skl_tactics_desc|Βελτιώνει το πλεονέκτημα μάχης. Αυξάνει την απόσταση συμπλοκής για τις εχθρικές ομάδες και μειώνει την απόσταση για τις φιλικές ομάδες για 3%% για κάθε επίπεδο. (Ικανότητα Ηγέτη)
 skl_tracking|Ιχνηλασία
 skl_tracking_desc|Τα ίχνη γίνονται πιο λεπτομερειακά. (Ομαδική Ικανότητα)
 skl_trainer|Εκπαιδευτής

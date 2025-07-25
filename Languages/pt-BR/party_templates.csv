@@ -1,6 +1,6 @@
 pt_rescued_prisoners|Prisioneiros Resgatados
 pt_enemy|Inimigo
-pt_hero_party|Grupo do Herói 
+pt_hero_party|Grupo do Herói
 pt_cattle_herd|Rebanho de Gado
 pt_ruins|Ruínas
 pt_legendary_place|Lugar Lendário
@@ -16,8 +16,8 @@ pt_sea_raiders|Corsários Renegados
 pt_deserters|Desertores
 pt_merchant_caravan|Caravana Mercante
 pt_troublesome_bandits|Goblins Problemáticos
-pt_fangorn_orcs|Orcs Corta-Árvores
-pt_village_farmers|Fazendeiros do Vilarejo
+pt_fangorn_orcs|Orcs Cortadores de Árvores
+pt_village_farmers|Fazendeiros da Vila
 pt_spy_partners|Viajantes Suspeitos
 pt_spy_partners_evil|Viajantes Suspeitos
 pt_runaway_serfs|Escravos Fugitivos
@@ -35,10 +35,10 @@ pt_ranger_scouts|Batedores Guardiões
 pt_rohan_scouts|Batedores Rohirrim
 pt_lorien_scouts|Batedores de Lothlorien
 pt_woodelf_scouts|Elfos Batedores da Floresta das Trevas
-pt_imladris_scouts|Batedores de Arnor
+pt_imladris_scouts|Batedores Dunedain
 pt_dale_scouts|Batedores do Valle
 pt_esgaroth_scouts|Batedores de Esgaroth
-pt_dwarf_scouts|Vigias Anões
+pt_dwarf_scouts|Anões Vigias
 pt_beorn_scouts|Batedores Beornings
 pt_woodmen_scouts|Batedores Lenhadores
 pt_mordor_scouts|Batedores de Mordor
@@ -58,32 +58,32 @@ pt_rohan_raiders|Coletores Rohirrim
 pt_imladris_raiders|Coletores de Valfenda
 pt_lorien_raiders|Coletores de Lothlorien
 pt_woodelf_raiders|Coletores da Floresta das Trevas
-pt_dale_raiders|Coletores do Valle
+pt_dale_raiders|Coletores de Valle
 pt_dwarf_raiders|Coletores Anões
-pt_ranger_raiders|Cavaleiros Guardiões
-pt_morgul_raiders|Montadores Morgul
-pt_mordor_raiders|Montadores de Mordor
-pt_isengard_raiders|Montadores de Isengard
-pt_dunland_raiders|Cavaleiros das Terras Pardas
-pt_harad_raiders|Cavaleiros Haradrim
-pt_khand_raiders|Cavaleiros de Khand
-pt_umbar_raiders|Cavaleiros de Umbar
-pt_moria_raiders|Montadores de Moria
-pt_guldur_raiders|Montadores de Dol Guldur
-pt_gundabad_raiders|Montadores de Gundabad
-pt_rhun_raiders|Cavaleiros de Rhun
+pt_ranger_raiders|Invasores Saqueadores
+pt_morgul_raiders|Saqueadores Morgul
+pt_mordor_raiders|Saqueadores Mordor
+pt_isengard_raiders|Saqueadores Isengard
+pt_dunland_raiders|Saqueadores das Terras Pardas
+pt_harad_raiders|Saqueadores Haradrim
+pt_khand_raiders|Saqueadores de Khand
+pt_umbar_raiders|Saqueadores de Umbar
+pt_moria_raiders|Saqueadores de Moria
+pt_guldur_raiders|Saqueadores de Dol Guldur
+pt_gundabad_raiders|Saqueadores de Gundabad
+pt_rhun_raiders|Saqueadores de Rhun
 pt_gondor_patrol|Patrulha de Gondor
 pt_rohan_patrol|Patrulha Rohirrim
-pt_imladris_patrol|Patrulha de Arnor
+pt_imladris_patrol|Patrulha Dunedain
 pt_lorien_patrol|Patrulha de Lothlorien
 pt_woodelf_patrol|Patrulha da Floresta das Trevas
-pt_dale_patrol|Patrulha do Valle
+pt_dale_patrol|Patrulha de Valle
 pt_esgaroth_patrol|Patrulha de Esgaroth
 pt_dwarf_patrol|Patrulha Anã
 pt_ranger_patrol|Patrulha de Guardiões
 pt_amroth_patrol|Patrulha de Dol Amroth
 pt_pelargir_patrol|Patrulha de Pelargir
-pt_lossarnach_patrol|Patrulha de  Lossarnach
+pt_lossarnach_patrol|Patrulha de Lossarnach
 pt_brv_patrol|Patrulha da Raiz-negra
 pt_pinnath_patrol|Patrulha de Pinnath
 pt_lamedon_patrol|Patrulha de Lamedon
@@ -93,28 +93,28 @@ pt_harad_war_party|Exército de Harad
 pt_dunland_war_party|Exército das Terras Pardas
 pt_khand_war_party|Exército de Khand
 pt_moria_war_party|Exército de Moria
-pt_guldur_war_party|Destacamento de Guerra de Dol Guldur
+pt_guldur_war_party|Exército de Dol Guldur
 pt_rhun_war_party|Exército de Rhun
 pt_gondor_company|Patrulha de Minas Tirith
-pt_rohan_company|Comitiva de Rohan
-pt_imladris_company|Comitiva de Valfenda
-pt_lorien_company|Comitiva de Lothlorien
-pt_woodelf_company|Comitiva da Floresta das Trevas
-pt_dale_company|Comitiva do Valle
-pt_dwarf_company|Comitiva dos Anãos
-pt_gondor_elite_company|Comitiva de Elite de Gondor
-pt_rohan_elite_company|Comitiva de Elite de Rohan
-pt_imladris_elite_company|Comitiva de Elite de Valfenda
-pt_lorien_elite_company|Comitiva de Elite de Lothlorien
-pt_woodelf_elite_company|Comitiva de Elite da Floresta das Trevas
-pt_dale_elite_company|Comitiva de Elite do Valle
-pt_dwarf_elite_company|Comitiva de Elite Anão
+pt_rohan_company|Companhia de Rohan
+pt_imladris_company|Companhia de Valfenda
+pt_lorien_company|Companhia de Lothlorien
+pt_woodelf_company|Companhia da Floresta das Trevas
+pt_dale_company|Companhia de Vale
+pt_dwarf_company|Companhia de Anãos
+pt_gondor_elite_company|Companhia de Elite de Gondor
+pt_rohan_elite_company|Companhia de Elite de Rohan
+pt_imladris_elite_company|Companhia de Elite de Valfenda
+pt_lorien_elite_company|Companhia de Elite de Lothlórien
+pt_woodelf_elite_company|Companhia de Elite da Floresta das Trevas
+pt_dale_elite_company|Companhia de Elite de Valle
+pt_dwarf_elite_company|Companhia de Elite de Anãos
 pt_gondor_caravan|Caravana de Gondor
 pt_rohan_caravan|Caravana de Rohan
 pt_imladris_caravan|Caravana de Valfenda
 pt_lorien_caravan|Caravana de Lothlorien
 pt_woodelf_caravan|Caravana da Floresta das Trevas
-pt_dale_caravan|Caravana do Valle
+pt_dale_caravan|Caravana de Valle
 pt_dwarf_caravan|Caravana Anã
 pt_mordor_caravan|Carroça de Suprimentos de Mordor
 pt_isengard_caravan|Carroça de Suprimentos de Isengard
@@ -124,27 +124,27 @@ pt_rohan_p_train|Carroça de Prisioneiros de Rohan
 pt_imladris_p_train|Carroça de Prisioneiros de Valfenda
 pt_lorien_p_train|Carroça de Prisioneiros de Lothlorien
 pt_woodelf_p_train|Caravana de Prisioneiros da Floresta das Trevas
-pt_dale_p_train|Carroça de Prisioneiros do Valle
+pt_dale_p_train|Carroça de Prisioneiros de Valle
 pt_dwarf_p_train|Carroça de Prisioneiros Anã
 pt_mordor_p_train|Carroça de Prisioneiros de Mordor
 pt_isengard_p_train|Carroça de Prisioneiros de Isengard
 pt_kingdom_hero_party|Exército
 pt_caravan_survivors|Sobreviventes de Caravana
-pt_routed_allies|Aliados Afugentados
-pt_routed_enemies|Inimigos Afugentados
+pt_routed_allies|Aliados Derrotados
+pt_routed_enemies|Inimigos Derrotados
 pt_legion_minas_morgul|Legião de Minas Morgul
 pt_legion_udun|Legião de Udun
 pt_legion_gorgoroth|Legião de Gorgoroth
 pt_legion_barad_dur|Legião de Barad-Dur
 pt_beorn_messenger|Mensageiro Beorning
 pt_village|Vilarejo
-pt_ring_hunters|Caçadores de Anéis\n
+pt_ring_hunters|Caçadores do Anel
 pt_scout_camp_small|Acampamento de Batedores
-pt_scout_camp_large|Acampamento Espião Fortificado
-pt_beorn_caravan|Caravana de Madeireiros
+pt_scout_camp_large|Acampamento de Batedores Fortificado
+pt_beorn_caravan|Caravana de Lenhadores
 pt_orc_horde|Horda de Orcs
-; pt_vet_archer|Vet Archer
-pt_volunteers|Reservas 
+pt_vet_archer|Arqueiro Veterano
+pt_volunteers|Reservas
 pt_refugees|Refugiados
 pt_retreat_troops|Tropas de Cobertura
 pt_radagast|Cavaleiro Solitário

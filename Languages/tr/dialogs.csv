@@ -232,7 +232,7 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|Saldırmayın! Teslim 
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|Seninle sonuna kadar savaşacagız.
 dlga_party_encounter_offer_dont_fight:close_window|Sana bir iyilik borçluyum degil mi? Pekala o zaman. Bu seferlik gitmene izin veriyorum
 dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha. Ama ben savaşmak istiyorum.
-; dlga_start:close_window.13|Mmmh...
+dlga_start:close_window.13|Hmmm...
 ; dlga_start:close_window.14|The lord is in deep thought and must not be disturbed!
 dlga_start:close_window.15|Uzak dur, aşşaglık dilenci.
 dlga_start:lord_start|Eger benim cesur şampiyonum degilse, {playername}...
@@ -721,7 +721,7 @@ dlga_woodelf_help_2:woodelf_help_3.1|Sen? Tabi ki öylesin! Yetenekli bir savaş
 dlga_woodelf_help_3:close_window|Sana İyi yolculuklar dilerim, Torbal. Eminim ki tekrar karşılaşacagız.
 dlga_healers_meet:healer_who|Ne yapıyorsun?.
 dlga_healers_meet:healers_ask|Yardımına ihtiyacım var.
-; dlga_healers_ask:healers_ask_2|What can I do for you, friend?
+dlga_healers_ask:healers_ask_2|Senin için ne yapabilirim dostum?
 dlga_healers_ask_2:healer_wound_ask|Yoldaşlarımın ve benim iyileşmesi için zamandan daha fazlasına ihtiyaç duyan ciddi yaralarımız var. Yaralarımızı iyileştirebilir misin?
 dlga_healers_ask_2:healer_injured_ask|Ben ve ordum yaralandık ve onların bizi iyileştirmesini beklemek için zamanımız yok. Bize yardım saglayabilir misiniz?
 dlga_healers_ask_2:close_window|Hiçbir şey.
@@ -770,13 +770,13 @@ dlga_defeat_hero_answer_1:close_window|Seni kahrolası. Buna pişman olacaksın.
 dlga_defeat_hero_answer:defeat_hero_answer_2|Bu seferlik gitmekte özgürsün, fakat bir daha önüme çıkma.
 dlga_defeat_hero_answer_2:close_window|Tekrar görüşecegiz.
 dlga_start:fugitive_1|Evet, ne istiyorsun?
-; dlga_fugitive_1:fugitive_2|I am looking for a {s3} by the name of {s4}. You fit his description.
+dlga_fugitive_1:fugitive_2|{s4} isimli bir {s3} arıyorum. Tarife uyuyorsun.
 dlga_fugitive_1:close_window|Birşey yok. Rahatsız ettigim için üzgünüm.
 dlga_fugitive_2:fugitive_3|Ne hakkında konuştugunu bilmiyorum. Beni başka biriyle karıştırmış olmalısın.
 dlga_fugitive_3:fugitive_4|O zaman kılıcını yere at. Masumsan, korkacak birşeyin olmaması gerek. Şimdi birlikte kaptan muhafızın yanında gidecegiz ve kimin aklı karışmış görecegiz.
 dlga_fugitive_4:close_window|Seni kahrolası. Hiçbir yere gidemezsin!
-; dlga_start:fugitive_5|So, I caught you at last!
-; dlga_fugitive_5:close_window|You are mistaken. We caught you!
+dlga_start:fugitive_5|Nihayet seni yakaladım!
+dlga_fugitive_5:close_window|Yanılıyorsun. Biz seni yakaladık!
 dlga_start:follow_spy_talk|İyi günler. Hava çok güzel degil mi? Şimdi kusuruma bakmazsanız gitmek zorundayım.
 dlga_follow_spy_talk:follow_spy_talk_2|{s1} adına tutuklusunuz!
 dlga_follow_spy_talk_2:close_window|Beni canlı ele geçiremeyeceksin!
@@ -786,7 +786,7 @@ dlga_spy_partners_talk:spy_partners_talk_2|{s1}'in adına, Tutuklusun!
 dlga_spy_partners_talk_2:close_window|Önce bizimle savaşmanız gerekecek!
 dlga_spy_partners_talk:close_window|Boş ver beni. Sadece geçiyordum.
 dlga_start:runaway_serf_intro_1|İyi gunler lordum 
-; dlga_runaway_serf_intro_1:runaway_serf_intro_2|I have been sent by {s4} whom you are running from. {reg11?She:He} will hold back {reg11?her:his} wrath and spare your lifes if you return now.
+dlga_runaway_serf_intro_1:runaway_serf_intro_2|Beni buraya kendisinden kaçtıgın {s4} gönderdi. Derhal geri dönersen gazabına hakim olacak ve hayatınızı bagışlayacak.
 ; dlga_runaway_serf_intro_2:runaway_serf_intro_3|Have mercy! Going back to {s1} means certain death.{s4} will make us toil until we die of exhaustion, or he will put us to the stake immediately.
 ; dlga_runaway_serf_intro_3:runaway_serf_go_back|And this will be all that you maggots deserve. You will go back to {s1}, or I have you slaughtered here and now!
 ; dlga_runaway_serf_intro_3:runaway_serf_slaughter|I see. I think I will have to teach you lot a lesson in order to make you obey. Slaughter him!
@@ -1020,22 +1020,22 @@ dlga_town_dweller_talk:town_dweller_ask_rumor|Buralardaki son söylentiler nedir
 dlga_town_dweller_ask_rumor:town_dweller_talk|Senin ilgini çekecek bir şey var mı bilmiyorum.
 ; dlga_town_dweller_ask_join:town_dweller_ask_join_yes|Yes, I could indeed use another hand. Get ready to leave!
 ; dlga_town_dweller_ask_join:town_dweller_ask_join_no|No, I have no use for you.
-; dlga_town_dweller_ask_join_yes:close_window|Very well, I will gather my things and join your party.
-; dlga_town_dweller_talk:town_dweller_ask_directions|Can you help me find a place?
-; dlga_town_dweller_ask_directions:town_dweller_ask_directions2|What are you looking for?
+dlga_town_dweller_ask_join_yes:close_window|Pekâlâ. Eşyalarımı toplayıp ekibinize katılacagım.
+dlga_town_dweller_talk:town_dweller_ask_directions|Bir yeri arıyorum. Yardım eder misiniz?
+dlga_town_dweller_ask_directions:town_dweller_ask_directions2|Ne arıyorsun?
 dlga_town_dweller_ask_directions2:close_window|Boşver.
-; dlga_town_dweller_ask_directions3:close_window|I know where that is. Follow me.
+dlga_town_dweller_ask_directions3:close_window|Orayı biliyorum. Beni takip et.
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|Beni tehdit mi ediyorsun? Muhafızlar senin gibi tiplerin yüzünü göstermesini sabırsızlıkla bekliyorlar.
 dlga_town_dweller_brawl_confirm:close_window|Ciddi misin? Nelerin varmış bir görelim.
 dlga_town_dweller_brawl_confirm:close_window.1|Hayır, seni başka biri sanmıştım.
 dlga_town_dweller_talk:close_window|[Ayrıl]
-; dlga_start:close_window.32|Get lost!
-; dlga_start:close_window.33|Leave me alone!
+dlga_start:close_window.32|Kaybol!
+dlga_start:close_window.33|Beni rahat bırak!
 dlga_start:player_castle_guard_talk|Evet, Kumandanım?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|Nöbet nasıl gidiyor asker?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Asayiş berkemal kumandanım. Rapor edilecek bir şey yok.
 dlga_player_castle_guard_talk_3:close_window|İyi, gözlerini açık tutmaya devam et.
-; dlga_start:close_window.34|Good day, {s24}. It's good having you here in {s10}.
+dlga_start:close_window.34|İyi günler {s24}. İyi ki burada, {s10}'dasın.
 dlga_start:close_window.35|Buralarda terbiyeni takındıgın sürece bir sıkıntımız olmaz.
 dlga_start:hall_guard_easter_egg|Ah, gece yarısını şimdi geçti. Biliyor musun, pek görülmeyen bir şey oldu bu yakınlarda - duymak ister misin?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Evet, lütfen devam et.

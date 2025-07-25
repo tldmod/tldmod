@@ -226,12 +226,12 @@ mno_send_word|Στείλε μήνυμα ότι θα τον ακολουθήσε�
 ; menu_kingdom_army_quest_join_siege_order|{s8} sends word that you are to join the siege of {s9} in preparation for a full assault.    Your troops are to take {s9} at all costs.
 ; menu_kingdom_army_follow_failed|You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.
 ; menu_battle_debrief|{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}
-mno_inspect_troll|Παρατήρησε τον πεσμένο τρολλ
+mno_inspect_troll|Επιθεώρησε το πεσμένο τρολλ
 ; menu_pre_join|^^^^^You come across a battle between {s2} and {s1}. You decide to...
 ; mno_pre_join_help_attackers|Move in to help the {s2}.
 ; mno_pre_join_help_defenders|Rush to the aid of the {s1}.
 ; mno_pre_join_help_refugees|Rush to the aid of the {s1}.
-mno_pre_join_leave|Μην συμμετέχεις.
+mno_pre_join_leave|Μην συμμετάσχεις.
 ; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.
 mno_join_attack|Όρμησε στον εχθρό.
 ; mno_join_order_attack|Order your troops to attack with your allies while you stay back.
@@ -282,7 +282,7 @@ mno_castle_leave|Φύγε.
 ; menu_siege_started_defender|{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...
 ; mno_siege_defender_join_battle|Join the battle.
 ; mno_siege_defender_troops_join_battle|Order your men to join the battle without you.
-mno_siege_defender_do_not_join_battle|Μην συμμετέχεις.
+mno_siege_defender_do_not_join_battle|Μην συμμετάσχεις.
 ; menu_siege_join_defense|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
 ; menu_village_hunt_down_fugitive_defeated|^^^^^A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark. Time passes. When you open your eyes again you find yourself battered and bloody, but luckily none of the wounds appear to be lethal.
 ; menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
