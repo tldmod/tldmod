@@ -3682,13 +3682,25 @@ presentations = [
   ]
 ),
 
+    #also used for war of the two towers
   ("faction_selection_evil",0,mesh_load_window,[
       (ti_on_presentation_load,
        [
 
         (set_fixed_point_multiplier, 1000),
 
-        (str_store_string, s1, "@Whom Do You Serve?"),
+        (try_begin),
+            (eq, "$tld_war_began", 2), #WoTT uses the regular menu background
+            (init_position, pos1),
+            (create_mesh_overlay, ":unused", "mesh_ui_default_menu_window"),
+        (try_end),
+
+        (try_begin),
+            (neq, "$tld_war_began", 2), #game start
+            (str_store_string, s1, "@Whom Do You Serve?"),
+        (else_try), #wott
+            (str_store_string, s1, "@The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth! Whom will you serve?"),
+        (try_end),
         (create_text_overlay, reg1, s1, tf_center_justify),
         (position_set_x, pos1, 500),
         (position_set_y, pos1, 600),
@@ -3697,15 +3709,18 @@ presentations = [
         (position_set_y, pos1, 1750),
         (overlay_set_size, reg1, pos1),
         (overlay_set_text, reg1, s1),
-        (create_button_overlay, "$g_presentation_obj_1", "@Go Back...", tf_center_justify),
-        (position_set_x, pos1, 450),
-        (position_set_y, pos1, 50),
-        (overlay_set_position, "$g_presentation_obj_1", pos1),
+        (try_begin),
+            (neq, "$tld_war_began", 2),
+            (create_button_overlay, "$g_presentation_obj_1", "@Go Back...", tf_center_justify),
+            (position_set_x, pos1, 450),
+            (position_set_y, pos1, 50),
+            (overlay_set_position, "$g_presentation_obj_1", pos1),
         
-        (create_button_overlay, "$g_presentation_obj_2", "@Learn about the different factions of Middle-Earth", tf_center_justify),
-        (position_set_x, pos1, 450),
-        (position_set_y, pos1, 100),
-        (overlay_set_position, "$g_presentation_obj_2", pos1),
+            (create_button_overlay, "$g_presentation_obj_2", "@Learn about the different factions of Middle-Earth", tf_center_justify),
+            (position_set_x, pos1, 450),
+            (position_set_y, pos1, 100),
+            (overlay_set_position, "$g_presentation_obj_2", pos1),
+        (try_end),
 
     #FACTION SIDE HAND
     #text
@@ -3751,21 +3766,33 @@ presentations = [
        [(store_trigger_param_1, ":object"),
       (try_begin),
         (eq, ":object", "$g_presentation_obj_1"),
+        (neq, "$tld_war_began", 2),
         #(presentation_set_duration, 0),
         (start_presentation, "prsnt_faction_selection"),
       (else_try),
         (eq, ":object", "$g_presentation_obj_2"),
+        (neq, "$tld_war_began", 2),
         #(presentation_set_duration, 0),
         (assign, "$intro_presentation_stage", 22),
         (start_presentation, "prsnt_faction_intro_text"),
       (else_try),
         (eq, ":object", "$g_option_good"),
+        (neq, "$tld_war_began", 2),
         (assign, "$intro_presentation_stage", 3),
         (start_presentation, "prsnt_faction_selection_eye"),
       (else_try),
         (eq, ":object", "$g_option_evil"),
+        (neq, "$tld_war_began", 2),
         (assign, "$intro_presentation_stage", 33),
         (start_presentation, "prsnt_faction_selection_hand"),
+      (else_try), #wott
+        (eq, ":object", "$g_option_good"),
+        (call_script, "script_wott_join_side", faction_side_eye),
+        (presentation_set_duration, 0),
+      (else_try), #wott
+        (eq, ":object", "$g_option_evil"),
+        (call_script, "script_wott_join_side", faction_side_hand),
+        (presentation_set_duration, 0),
       (try_end),
     ]),
 

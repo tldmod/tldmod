@@ -2679,48 +2679,6 @@ simple_triggers = [
                 (call_script, "script_send_on_conversation_mission", tld_cc_nazgul_evil_war),
               (try_end),
 
-              (call_script, "script_wott_reassign_faction_sides"),
-              
-              # make sides hostile
-              (set_show_messages, 0),
-              (try_for_range, ":mordor_ally", kingdoms_begin, kingdoms_end),
-                (faction_slot_eq, ":mordor_ally", slot_faction_side, faction_side_eye),
-                (try_for_range, ":isengard_ally", kingdoms_begin, kingdoms_end),
-                  (faction_slot_eq, ":isengard_ally", slot_faction_side, faction_side_hand),
-                  (set_relation, ":mordor_ally", ":isengard_ally", -50), # works both ways, I hope
-                (try_end),
-              (try_end),
-              
-              # update player relations to mirror his kingdom
-              (try_for_range, ":some_faction", kingdoms_begin, kingdoms_end),
-                (neq, ":some_faction", "fac_player_supporters_faction"),
-                (store_relation, ":rel", "$players_kingdom", ":some_faction"),
-                (call_script, "script_set_player_relation_with_faction", ":some_faction", ":rel"),
-                #unrelated, but let's reset active theaters to home for every kingdom
-                (faction_get_slot, ":home_theater", ":some_faction", slot_faction_home_theater),
-                (faction_set_slot, ":some_faction", slot_faction_active_theater, ":home_theater"),
-                #dismantle any existing advance camps
-                (try_begin),
-                  (faction_get_slot, ":adv_camp", ":some_faction", slot_faction_advance_camp),
-                  (party_is_active, ":adv_camp"),
-                    (try_begin),  # free up campable place
-                        (party_get_slot, ":camp_pointer", ":adv_camp", slot_camp_place_occupied),
-                        (gt, ":camp_pointer", 0),
-                        (party_get_slot, ":occupied", ":camp_pointer", slot_camp_place_occupied),
-                        (val_sub, ":occupied", 1),
-                        (val_max, ":occupied", 0),
-                        (party_set_slot, ":camp_pointer", slot_camp_place_occupied, ":occupied"),
-                        (party_set_slot, ":adv_camp", slot_camp_place_occupied, 0),
-                    (try_end),
-				  (disable_party, ":adv_camp"),
-                (try_end),
-              (try_end),
-              
-              (assign, "$tld_war_began", 2),
-              (set_show_messages, 1),
-
-              (dialog_box,"@The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth!","@The War of the Two Towers has started!"),
-              (play_sound,"snd_evil_horn"),
             (try_end), #start wott
           (try_end), #check wott
           

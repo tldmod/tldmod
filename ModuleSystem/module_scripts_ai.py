@@ -3633,6 +3633,33 @@ ai_scripts+=[
 	(try_end),     # out comes pos1
 ]),
 
+#script_wott_join_side
+("wott_join_side",
+  [
+  (store_script_param_1, ":side_to_join"),
+  (faction_get_slot, ":orig_player_side", "$players_kingdom", slot_faction_side),
+  (assign, "$former_players_kingdom",0), #just in case, will be overwritten
+  (assign, "$new_player_side",":side_to_join"),
+  (try_begin),
+    (eq, "$new_player_side", ":orig_player_side"),
+    (jump_to_menu, "mnu_wott_stay_with_faction"),
+  (else_try),
+    (call_script, "script_get_faction_rank", "$players_kingdom"),
+    (neq, "$players_kingdom", fac_mordor), #these 3 never switch sides
+    (neq, "$players_kingdom", fac_isengard),
+    (neq, "$players_kingdom", fac_guldur),
+    (store_mul, ":faction_score", reg0, 10),
+    (faction_get_slot, ":faction_leader", "$players_kingdom", slot_faction_leader),
+    (troop_get_slot, ":leader_relation", ":faction_leader", slot_troop_player_relation),
+    (val_add, ":faction_score", ":leader_relation"),
+    (store_random_in_range, ":chance", 0, 200),
+    (ge, ":faction_score", ":chance"),
+    (jump_to_menu, "mnu_wott_stay_with_faction"),
+  (else_try),
+    (jump_to_menu, "mnu_wott_expelled_from_faction"),
+  (try_end), 
+  ]),    
+
 #script_wott_reassign_faction_sides
 ("wott_reassign_faction_sides",
     [
@@ -3657,12 +3684,14 @@ ai_scripts+=[
             
         (call_script, "script_get_faction_rank", ":faction_no"), #calculate faction score
         (store_mul, ":rank", reg0, 10),
-        (faction_get_slot, ":capital", ":faction_no", slot_faction_capital),
-        (party_get_slot, ":capital_relation", ":capital", slot_center_player_relation),
+        #(faction_get_slot, ":capital", ":faction_no", slot_faction_capital),
+        #(party_get_slot, ":capital_relation", ":capital", slot_center_player_relation),
         (faction_get_slot, ":faction_leader", ":faction_no", slot_faction_leader),
         (troop_get_slot, ":leader_relation", ":faction_leader", slot_troop_player_relation),
-        (store_add, ":faction_score", ":rank", ":capital_relation"),
-        (val_add, ":faction_score", ":leader_relation"),
+        (val_mul, ":leader_relation", 2),
+        #(store_add, ":faction_score", ":rank", ":capital_relation"),
+        (store_add, ":faction_score", ":rank", ":leader_relation"),
+        #(val_add, ":faction_score", ":leader_relation"),
         (try_begin),
             (faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
             (faction_get_slot, ":faction_side", ":faction_no", slot_faction_side),
@@ -3678,10 +3707,11 @@ ai_scripts+=[
         
         (store_random_in_range, ":join_chance", 0, 500),
         (try_begin),
-            (neq, ":faction_no", "fac_dunland"), #these factions don't switch sides
+            (neq, ":faction_no", "fac_dunland"), #these factions don't switch sides but they should appear in the log
             (neq, ":faction_no", "fac_guldur"),
+            (neq, ":faction_no", "$former_players_kingdom"),
             (le, ":join_chance", ":faction_score"),
-            (le, ":factions_joined", ":factions_joined_max"), #maximum 5 factions join player's side
+            (le, ":factions_joined", ":factions_joined_max"),
             (faction_set_slot, ":faction_no", slot_faction_side, ":player_side"),
             (val_add, ":factions_joined", 1),
         (else_try),
@@ -3705,7 +3735,42 @@ ai_scripts+=[
             (display_message, "@{s1} has joined the Eye"),
         (try_end),
     (try_end),
-               
+
+
+    # make sides hostile
+    (set_show_messages, 0),
+    (try_for_range, ":mordor_ally", kingdoms_begin, kingdoms_end),
+        (faction_slot_eq, ":mordor_ally", slot_faction_side, faction_side_eye),
+        (try_for_range, ":isengard_ally", kingdoms_begin, kingdoms_end),
+              (faction_slot_eq, ":isengard_ally", slot_faction_side, faction_side_hand),
+              (set_relation, ":mordor_ally", ":isengard_ally", -50), # works both ways, I hope
+        (try_end),
+    (try_end),
+
+    # update player relations to mirror his kingdom
+    (try_for_range, ":some_faction", kingdoms_begin, kingdoms_end),
+        (neq, ":some_faction", "fac_player_supporters_faction"),
+        (store_relation, ":rel", "$players_kingdom", ":some_faction"),
+        (call_script, "script_set_player_relation_with_faction", ":some_faction", ":rel"),
+        #unrelated, but let's reset active theaters to home for every kingdom
+        (faction_get_slot, ":home_theater", ":some_faction", slot_faction_home_theater),
+        (faction_set_slot, ":some_faction", slot_faction_active_theater, ":home_theater"),
+        #dismantle any existing advance camps
+        (try_begin),
+          (faction_get_slot, ":adv_camp", ":some_faction", slot_faction_advance_camp),
+          (party_is_active, ":adv_camp"),
+            (try_begin),  # free up campable place
+                (party_get_slot, ":camp_pointer", ":adv_camp", slot_camp_place_occupied),
+                (gt, ":camp_pointer", 0),
+                (party_get_slot, ":occupied", ":camp_pointer", slot_camp_place_occupied),
+                (val_sub, ":occupied", 1),
+                (val_max, ":occupied", 0),
+                (party_set_slot, ":camp_pointer", slot_camp_place_occupied, ":occupied"),
+                (party_set_slot, ":adv_camp", slot_camp_place_occupied, 0),
+            (try_end),
+          (disable_party, ":adv_camp"),
+        (try_end),
+    (try_end),
  ]),
 
 ]

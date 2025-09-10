@@ -1651,6 +1651,7 @@ scripts = [
 	(party_set_slot, center_list[x][0], slot_center_garrison_limit,    center_list[x][7]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_center_destroy_on_capture,center_list[x][8]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_center_siegability,       center_list[x][9]) for x in range(len(center_list)) ]+[
+	#(party_set_slot, center_list[x][0], slot_center_ideal_battle_size, center_list[x][10]) for x in range(len(center_list)) ]+[
 	#item abundancy in center shops
 	(troop_set_slot, center_list[x][2][1], slot_troop_shop_gold    ,center_list[x][4][0]) for x in range(len(center_list)) ]+[
 	(troop_set_slot, center_list[x][2][2], slot_troop_shop_gold    ,center_list[x][4][0]) for x in range(len(center_list)) ]+[
@@ -2107,12 +2108,11 @@ scripts = [
       
     (assign, "$hold_f1", 0),  
 	(assign, "$dormant_spawn_radius", 0),
-    (assign, "$attacker_archer_melee",0),
 
 	(val_mul, "$hold_f1", "$dormant_spawn_radius"),
-    (val_mul, "$hold_f1", "$attacker_archer_melee"),
-    (val_mul, "$attacker_archer_melee", "$hold_f1"),
-    (val_mul, "$attacker_archer_melee", "$allies_leadership"), #wb only
+    (val_mul, "$hold_f1", "$allies_leadership"),
+    (val_mul, "$dormant_spawn_radius", "$hold_f1"),
+    (val_mul, "$dormant_spawn_radius", "$allies_leadership"), #wb only
 
 	#Kham - Squelch compiler warnings END
 	
@@ -23681,7 +23681,8 @@ scripts = [
       (str_store_string, s50, "@Treachery... Unforgiven..."),
       (str_store_string, s51, "@But I..."),
       (str_store_string, s52, "@Noone... oppossssses... Barad Dur... and livessss!"),
-      (assign, "$g_tld_convo_lines", 3),      
+      (assign, "$g_tld_convo_lines", 3),     
+      (assign, "$tld_war_began",3), #placeholder value in order to fire the trigger
       (val_or, "$g_tld_conversations_done", tld_conv_bit_nazgul_evil_war),
     (else_try),
       (eq, ":convo_code", tld_cc_nazgul_victory),

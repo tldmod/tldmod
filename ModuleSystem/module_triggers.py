@@ -5,6 +5,7 @@ from header_items import *
 from header_skills import *
 from header_triggers import *
 from header_troops import *
+from header_sounds import *
 
 from module_constants import *
 from module_info import wb_compile_switch as is_a_wb_trigger
@@ -1241,7 +1242,9 @@ triggers = [
   ]),
   
   # TLD War beginning condition (player level >= 8 at the moment), GA
+  ## InVain: Also used for WOTT
   (1, 0, 0,[
+    (try_begin),
       (eq,"$tld_war_began",0),
       (neg|is_currently_night), #make it happen at day
       (assign, ":continue", 0),
@@ -1260,12 +1263,18 @@ triggers = [
           (gt, ":cur_day", ":chance"),
           (assign, ":continue", 1),
         (try_end),
-        (eq, ":continue", 1),
+    (else_try), #wott
+        (eq,"$tld_war_began",3),
+        (assign, ":continue", 1),
+    (try_end),
+    (eq, ":continue", 1),
       
       ],[
+    (try_begin),
+      (eq,"$tld_war_began",0),
       (assign, "$tld_war_began",1),
       (dialog_box,"@The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard against Rohan in the West, Dol Guldur against the Elves... Even in the far North there is a war of its own.","@The War has started!"),
-      (play_sound,"snd_evil_horn"),
+      (play_sound,"snd_evil_horn", sf_2d),
       # move Dun camp across Isen
       #	(party_get_position, pos1, "p_town_dunland_camp"),
       #	(position_move_x,pos1,-400),
@@ -1330,7 +1339,13 @@ triggers = [
         (eq, ":already_done", 0),
         (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_advice),
       (try_end),
-      
+    
+    ###WOTT
+    (else_try),
+       (assign, "$tld_war_began",2),
+       (start_presentation, "prsnt_faction_selection_evil"),
+       (play_sound,"snd_evil_horn", sf_2d),
+    (try_end), 
   ]),
   
   (0.5, 0, 0, [],[#(gt,"$g_fangorn_rope_pulled",-100)],[

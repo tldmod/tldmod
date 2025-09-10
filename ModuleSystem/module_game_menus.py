@@ -6,6 +6,7 @@ from header_items import *
 from header_mission_templates import *
 from header_music import *
 from header_terrain_types import *
+from header_sounds import *
 
 from module_constants import *
 
@@ -13037,6 +13038,73 @@ game_menus = [
     # [ ("continue",[],"Continue...",[(jump_to_menu, "mnu_start_game_1")]),
       # ("go_back",[],"Go back",[(change_screen_quit)])]
 # ),
+
+("wott_expelled_from_faction",0,
+ "For your betrayal, you were expelled from your faction and {s11} has named you an outlaw and an enemy of the {reg11?Hand:Eye}. As an exile, you are now forced to join {s3}.",
+ "none",
+   [(set_background_mesh, "mesh_ui_default_menu_window"), 
+    (play_sound,"snd_quest_failed", sf_2d),
+    (set_fixed_point_multiplier, 100),
+    (faction_get_slot, ":orig_player_side", "$players_kingdom", slot_faction_side), #1 or 2
+    (store_sub, reg11, ":orig_player_side", 1), #0 or 1, for choosing correct string above
+    (str_clear, s11),
+    (faction_get_slot, ":faction_leader", "$players_kingdom", slot_faction_leader),
+    (str_store_troop_name, s11, ":faction_leader"),
+    
+    (position_set_x, pos0, 65),
+    (position_set_y, pos0, 30),
+    (position_set_z, pos0, 100),
+    (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", ":faction_leader", pos0),
+    
+    #new player kingdom
+    (assign, "$former_players_kingdom", "$players_kingdom"),
+    (assign, "$players_kingdom", fac_mordor),
+    (try_begin),
+        (eq, ":orig_player_side", faction_side_eye),
+        (assign, "$players_kingdom", fac_isengard),
+    (try_end),
+    (str_store_faction_name, s3, "$players_kingdom"),  
+   ],[
+   ("continue",[],"Continue...",[(change_screen_map), (call_script, "script_player_join_faction", "$players_kingdom"),(call_script, "script_wott_reassign_faction_sides"),]),
+   ],
+ ),
+
+("wott_stay_with_faction",0,
+ "{s11} applauds your wise counsel. Your faction follows your example and collectively joins {s12}.",
+ "none",
+   [(set_background_mesh, "mesh_ui_default_menu_window"),
+    (play_sound,"snd_quest_succeeded", sf_2d),
+    (set_fixed_point_multiplier, 100),
+    (str_clear, s11),
+    (str_clear, s12),
+    (try_begin),
+        (eq, "$new_player_side", faction_side_eye),
+        (str_store_string, s12, "@the Eye"),
+    (else_try),
+        (str_store_string, s12, "@the Hand"),
+    (try_end),
+    (faction_get_slot, ":faction_leader", "$players_kingdom", slot_faction_leader),
+    (str_store_troop_name, s11, ":faction_leader"),
+    
+    (position_set_x, pos0, 65),
+    (position_set_y, pos0, 30),
+    (position_set_z, pos0, 100),
+    (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", ":faction_leader", pos0),
+   ],[
+   ("continue",[],"Continue...",[
+   (change_screen_map),
+   (faction_set_slot, "$players_kingdom", slot_faction_side, reg11),
+   (str_store_faction_name, s1, "$players_kingdom"),
+   (display_message, "@{s1} has joined {s12}"),
+    # (try_begin),
+        # (eq, reg11, faction_side_hand),
+        # (display_message, "@{s1} has joined the {s12}"),
+    # (else_try),
+        # (display_message, "@{s1} has joined the {s12}"),
+    # (try_end),
+   (call_script, "script_wott_reassign_faction_sides"),]),
+   ],
+ ),
 ] 
 
 ## quick scene chooser

@@ -1,4 +1,4 @@
-1762
+1764
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -82,6 +82,7 @@ qstr_Man Man
 qstr_Elf Elf
 qstr_Dwarf Dwarf
 qstr_Whom_Do_You_Serve? Whom_Do_You_Serve?
+qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!_Whom_will_you_serve?
 qstr_SAURON_of_Mordor_The SAURON_of_Mordor,_The_Lord_of_the_Rings
 qstr_SARUMAN_of_Isengard_ SARUMAN_of_Isengard,_The_White_Hand
 qstr_an_ORC^_serving_the_ an_ORC,^_serving_the_Lidless_Eye
@@ -1153,6 +1154,9 @@ qstr_destroyed._Only_smol destroyed._Only_smoldering_ruins_remain.
 qstr_^^^You_lost_your_fig ^^^You_lost_your_fight_against_the_mutiny!_^Seems_like_your_orcs_have_a_new_commander_now.
 qstr_^^^You_have_slain_th ^^^You_have_slain_the_offender,_and_other_orcs_quickly_fall_back_in_line._^_For_some_time_the_maggots_will_be_quiet_for_sure.
 qstr_You_cover_up_your_tr You_cover_up_your_tracks_and_move_onward.
+qstr_the_Eye the_Eye
+qstr_the_Hand the_Hand
+qstr_{s1}_has_joined_{s12 {s1}_has_joined_{s12}
 qstr_Breaking_camp... Breaking_camp...
 qstr_Party_morale_is_low. Party_morale_is_low._Troops_desert_from_your_party.
 qstr_Desertion Desertion
@@ -1184,8 +1188,6 @@ qstr_{reg67}_{s7}_{s8}_tr {reg67}_{s7}_{s8}_troops_killed._(Counter_refreshes_ev
 qstr_{s8}_in_{s9}_asked_y {s8}_in_{s9}_asked_you_to_slay_{reg67}_{s10}.^_{reg68}_{s11}_killed._(Counter_refreshes_every_hour)
 qstr_{s1}_is_scouted. {s1}_is_scouted.
 qstr_{s2}_was_defeated! {s2}_was_defeated!
-qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!
-qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!
 qstr_The_forces_of_{s22}_ The_forces_of_{s22}_have_rallied!_{s22}_is_now_{s23}.
 qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.
 qstr_In_a_desperate_attem In_a_desperate_attempt_to_defend_against_his_enemies,_Sauron_sends_out_his_legions_of_Mordor!

@@ -667,7 +667,7 @@ play_ambient_sounds
 gondor_reinforcement_event
 first_time_town
 formations_tutorial
-attacker_archer_melee
+former_players_kingdom
 gondor_reinforcement_event_menu
 oath_kills
 total_kills
@@ -755,3 +755,4 @@ cheatmode_used
 allies_coh_modifier
 enemies_coh_modifier
 tutorial_1_state
+new_player_side
