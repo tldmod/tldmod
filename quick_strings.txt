@@ -1,4 +1,4 @@
-1764
+1766
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1187,6 +1187,8 @@ qstr_{reg66}_{s5}_troops_ {reg66}_{s5}_troops_killed._(Counter_refreshes_every_h
 qstr_{reg67}_{s7}_{s8}_tr {reg67}_{s7}_{s8}_troops_killed._(Counter_refreshes_every_hour)
 qstr_{s8}_in_{s9}_asked_y {s8}_in_{s9}_asked_you_to_slay_{reg67}_{s10}.^_{reg68}_{s11}_killed._(Counter_refreshes_every_hour)
 qstr_{s1}_is_scouted. {s1}_is_scouted.
+qstr_{s1}_managed_to_esca {s1}_managed_to_escape_the_downfall_of_{s2}_and_found_refuge_in_{s3}.
+qstr_{s3}_gained_faction_ {s3}_gained_faction_strength.
 qstr_{s2}_was_defeated! {s2}_was_defeated!
 qstr_The_forces_of_{s22}_ The_forces_of_{s22}_have_rallied!_{s22}_is_now_{s23}.
 qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.

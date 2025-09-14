@@ -759,7 +759,7 @@ slot_troop_cur_center          = 12 # important for royal family members only (n
 
 slot_troop_banner_scene_prop   = 13 # important for kingdom heroes and player only
 
-slot_troop_original_faction    = 14 # for pretenders
+slot_troop_original_faction    = 14 # for exiles
 
 slot_troop_loyalty              = 15
 slot_troop_player_order_state   = 16

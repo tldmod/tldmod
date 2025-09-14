@@ -3971,6 +3971,14 @@ scripts = [
       		(val_div, ":limit", 3),
 	(try_end),
 
+
+    (try_begin), #if leader is an exile, they have a smaller party
+        (is_between, ":party_leader", kingdom_heroes_begin, kingdom_heroes_end),
+        (troop_get_slot, ":original_faction", ":party_leader", slot_troop_original_faction),
+        (neq, ":faction_id", ":original_faction"),
+        (val_mul, ":limit", 2),
+      	(val_div, ":limit", 3),
+    (try_end),
       #] + (is_a_wb_script==1 and [
     (try_begin),
         (is_between, ":faction_id", kingdoms_begin, kingdoms_end),
@@ -10238,6 +10246,13 @@ scripts = [
     [ (store_script_param_1, ":party_no"),
       (store_faction_of_party, ":party_faction", ":party_no"),
       (party_get_slot, ":party_type",":party_no", slot_party_type),
+      
+      (try_begin),
+        (eq, ":party_type", spt_kingdom_hero_party),
+        (party_stack_get_troop_id, ":leader", ":party_no", 0),
+        (troop_get_slot, ":party_faction", ":leader", slot_troop_original_faction),
+      (try_end),
+      
       (try_begin),
         (eq, ":party_no", "p_main_party"), #for testing, but doesn't hurt
         (assign, ":party_type", spt_kingdom_hero_party),
@@ -10372,7 +10387,8 @@ scripts = [
 # Output: none
 ("hire_men_to_kingdom_hero_party",
     [ (store_script_param_1, ":troop_no"),
-      (store_troop_faction, ":troop_faction", ":troop_no"),
+      #(store_troop_faction, ":troop_faction", ":troop_no"),
+      (troop_get_slot, ":troop_faction", ":troop_no", slot_troop_original_faction), #Invain, so it tracks exiles
       (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         # (call_script, "script_find_random_nearby_friendly_town", ":party_no", 0),
         # (assign, ":nearby_center", reg0),

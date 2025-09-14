@@ -2631,11 +2631,86 @@ simple_triggers = [
             #(party_set_faction, ":cur_party", ":home_center_faction"),
           (try_end),
           
-          # dispose of defeated heroes - unneeded?
+          # InVain: Lords have a chance to join a friendly faction
           (try_for_range, ":defeated_lord", kingdom_heroes_begin, kingdom_heroes_end),
             (store_troop_faction, ":defeated_lord_faction", ":defeated_lord"),
             (eq, ":defeated_lord_faction", ":cur_kingdom"),
             (troop_set_slot, ":defeated_lord", slot_troop_occupation, 0),
+            (store_random_in_range, ":chance", 0, 100), #chance to join closest kingdom of the same race, based on faction leader race
+            (le, ":chance", 30),
+            (faction_get_slot, ":cur_kingdom_leader", ":cur_kingdom", slot_faction_leader),
+            (neq, ":cur_kingdom_leader", ":defeated_lord"),
+            (assign, ":closest_ally_dist", 10000),
+            (assign, ":closest_ally", 0),
+            (try_for_range, ":join_kingdom", kingdoms_begin, kingdoms_end),
+                (neg|faction_slot_eq, ":join_kingdom", slot_faction_state, sfs_defeated),
+                (neq, ":join_kingdom", ":cur_kingdom"),
+                (store_relation, ":rel", ":cur_kingdom", ":join_kingdom"),
+                (gt, ":rel", 0),
+                (faction_get_slot, ":join_kingdom_leader", ":join_kingdom", slot_faction_leader),
+                (troop_get_type, ":defeated_lord_race", ":defeated_lord"),
+                #(troop_get_type, ":cur_faction_race", ":cur_kingdom_leader"),
+                (troop_get_type, ":join_faction_race", ":join_kingdom_leader"),
+                
+                #too many different races, need to cluster them to make it work
+                (assign, ":continue", 0),
+                (try_begin), #good factions
+                    (faction_slot_eq, ":cur_kingdom", slot_faction_side, faction_side_good),
+                    (try_begin), #elves and dunedain
+                        (is_between, ":cur_kingdom", fac_lorien, fac_dale),
+                        (is_between, ":join_kingdom", fac_lorien, fac_dale),
+                        (assign, ":continue", 1),
+                    (else_try), #human kingdoms
+                        (neg|is_between, ":cur_kingdom", fac_lorien, fac_dale),
+                        (neg|is_between, ":join_kingdom", fac_lorien, fac_dale),
+                        (neq, ":defeated_lord_race", tf_dwarf),
+                        (assign, ":continue", 1),
+                    (else_try), #dwarves
+                        (eq, ":defeated_lord_race", tf_dwarf),
+                        (eq, ":join_kingdom", fac_dale),
+                        (assign, ":continue", 1),
+                    (try_end),
+                (else_try), #evil factions
+                    (neg|faction_slot_eq, ":cur_kingdom", slot_faction_side, faction_side_good),
+                    (try_begin), #evil humans
+                        (neg|is_between, ":defeated_lord_race", tf_orc_begin, tf_orc_end),
+                        (neg|is_between, ":join_faction_race", tf_orc_begin, tf_orc_end),
+                        (assign, ":continue", 1),
+                    (else_try), #orcs and Uruks
+                        (is_between, ":defeated_lord_race", tf_orc_begin, tf_orc_end),
+                        (is_between, ":join_faction_race", tf_orc_begin, tf_orc_end),
+                        (assign, ":continue", 1),
+                    (else_try), #everyone can join the leader factions
+                        (this_or_next|eq, ":join_kingdom", fac_mordor),
+                        (this_or_next|eq, ":join_kingdom", fac_guldur),
+                        (eq, ":join_kingdom", fac_isengard),
+                        (assign, ":continue", 1),
+                    (try_end),
+                (try_end),
+                
+                (eq, ":continue", 1),
+                (faction_get_slot, ":cur_faction_capital", ":cur_kingdom", slot_faction_capital),
+                (faction_get_slot, ":join_faction_capital", ":join_kingdom", slot_faction_capital),
+                (store_distance_to_party_from_party, ":distance", ":cur_faction_capital", ":join_faction_capital"),
+                (le, ":distance", ":closest_ally_dist"),
+                (assign, ":closest_ally_dist", ":distance"),
+                (assign, ":closest_ally", ":join_kingdom"),
+            (try_end),
+            (ge, ":closest_ally", kingdoms_begin),
+            (troop_set_faction, ":defeated_lord", ":closest_ally"), #original faction (for reinforcements) should be stored in slot_troop_original_faction which is set in script_start_game
+            (troop_set_slot, ":defeated_lord", slot_troop_occupation, slto_kingdom_hero),
+            (troop_set_slot, ":defeated_lord", slot_troop_leaded_party, -1),
+            (store_current_day, ":day_of_defeat"),
+            (troop_set_slot, ":defeated_lord", slot_troop_respawn_timer, ":day_of_defeat"),
+            (call_script, "script_update_troop_notes", ":defeated_lord"),
+            (str_store_troop_name, s1, ":defeated_lord"),
+            (str_store_faction_name, s2, ":cur_kingdom"),
+            (str_store_faction_name, s3, ":closest_ally"),
+            (display_message, "@{s1} managed to escape the downfall of {s2} and found refuge in {s3}."),
+            (display_message, "@{s3} gained faction strength."),
+            (faction_get_slot, ":fac_strength", ":closest_ally", slot_faction_strength_tmp),
+            (val_add, ":fac_strength", 500),
+            (faction_set_slot,":closest_ally",slot_faction_strength_tmp,":fac_strength"),
           (try_end),
 
          #remove any prisoner lords from defeated faction

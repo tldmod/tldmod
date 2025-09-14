@@ -2291,7 +2291,8 @@ ai_scripts = [
 ("create_kingdom_hero_party",
     [ (store_script_param, ":troop_no", 1),
       (store_script_param, ":center_no", 2),
-      (store_troop_faction, ":troop_faction_no", ":troop_no"),
+      #(store_troop_faction, ":troop_faction_no", ":troop_no"),
+      (troop_get_slot, ":troop_faction_no", ":troop_no", slot_troop_original_faction), #Invain, so it tracks exiles
       (assign, "$pout_party", -1),
       (set_spawn_radius,0),
       (spawn_around_party,":center_no", "pt_kingdom_hero_party"),
@@ -2366,6 +2367,10 @@ ai_scripts = [
       (else_try),
         (eq, ":troop_no", "trp_gondor_lord"), #Denethor
         (assign, ":guard", "trp_steward_guard"),
+      (else_try),
+        (troop_get_slot, ":retainer_troop", ":troop_no", slot_troop_retainer_troop),
+        (gt, ":retainer_troop", 0),
+        (assign, ":guard", ":retainer_troop"),
       (try_end),
             
       (store_skill_level, ":tmp", skl_leadership, ":troop_no"),
