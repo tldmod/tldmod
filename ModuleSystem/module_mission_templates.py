@@ -4966,12 +4966,13 @@ mission_templates = [ # not used in game
                 (store_mission_timer_a,":mission_time"),
                 (ge,":mission_time",20),
                 (lt,"$defender_reinforcement_stage", 100), #needed for control
-                (try_begin), #limit defender reinforcements if player is attacker, so sieges don't drag on
-                    (get_player_agent_no, ":player"),
-                    (neg|agent_is_defender, ":player"),
-                    (gt,"$defender_reinforcement_stage", 25),
-                    (assign, ":continue", 0),
-                (try_end),
+                # (try_begin), #limit defender reinforcements if player is attacker, so sieges don't drag on
+                    # (get_player_agent_no, ":player"),
+                    # (neg|agent_is_defender, ":player"),
+                    # (gt,"$defender_reinforcement_stage", 25),
+                    # (assign, ":continue", 0),
+                # (try_end),
+                # InVain: Disabled, not needed anymore because of capture points
                 (eq, ":continue", 1),
                 ],[ 
     
@@ -5014,27 +5015,48 @@ mission_templates = [ # not used in game
         #don't spawn defenders if attacking player is nearby, also check for spawn point taken
         (try_begin),
             #block spawn point
-            (neg|troop_slot_eq,"trp_no_troop",":slot",-2),
-            (neg|agent_is_defender,":player_agent"),
-            (agent_is_alive, ":player_agent"),
+            #(neg|troop_slot_eq,"trp_no_troop",":slot",-2),
             (entry_point_get_position, pos10, ":entry_number"),
             (agent_get_position, pos0, ":player_agent"),
             (get_distance_between_positions, ":dist", pos0, pos10),
+            (neg|agent_is_defender,":player_agent"),
+            (agent_is_alive, ":player_agent"),            
+            (try_begin),
+                (troop_slot_ge,"trp_no_troop",":slot",1),
+                (lt,":dist", 1000),
+                (display_message, "@You must break the first line of defense before you can capture a reinforcement point."),
+            (try_end),             
+            (troop_slot_eq,"trp_no_troop",":slot",-1), #only if choke point is taken
+            (team_give_order, ":defteam", grc_infantry, mordr_hold), #make them hold
+            (team_give_order, ":defteam", grc_cavalry, mordr_hold),
+            (team_give_order, ":defteam", grc_archers, mordr_stand_ground), 
+            (team_set_order_position, ":defteam", grc_everyone, pos10),
             (lt,":dist", 1500),
+            (team_give_order, ":defteam", grc_everyone, mordr_charge), #if player is nearby, make defenders charge
             (assign, ":spawn_point_blocked", 1),
-            (display_message, "@Hold this area to stop defender reinforcements from here!"),
+            (display_message, "@Capture this area with your troops to stop defender reinforcements from here!"),
 
             #check for team defeated
-            (troop_slot_eq,"trp_no_troop",":slot",-1), #only if choke point is taken
             #(ge,"$defender_reinforcement_stage", 6),
             (assign, ":enemies_left", 0),
-            (try_for_agents, ":enemies", pos10, 1500),
-                (agent_is_alive, ":enemies"),
-                (agent_is_human, ":enemies"),
-                (agent_is_defender, ":enemies"),
+            (assign, ":friends_nearby", 0),
+            (try_for_agents, ":nearby", pos10, 1500),
+                (agent_is_alive, ":nearby"),
+                (agent_is_human, ":nearby"),
+                (agent_is_defender, ":nearby"),
                 (val_add, ":enemies_left", 1),
+            (else_try),
+                (agent_is_alive, ":nearby"),
+                (agent_is_human, ":nearby"),
+                (neg|agent_is_defender, ":nearby"),
+                (val_add, ":friends_nearby", 1),                
             (try_end),
             (lt, ":enemies_left", 3),
+            (try_begin),
+                (le, ":friends_nearby", 4),
+                (display_message, "@Not enough allies nearby to capture this reinforcement point!"),
+            (try_end),    
+            (gt, ":friends_nearby", 4), #so players can't solo-sneak
             (troop_set_slot,"trp_no_troop",":slot",-2), #this should disable reinforcements
             #(assign, reg78, ":entry_number"),
             #(display_message, "@Defender reinforcement point {reg78} taken!"),

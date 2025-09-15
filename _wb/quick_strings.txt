@@ -1,4 +1,4 @@
-2051
+2053
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -103,7 +103,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr_{!}_rev_362_wb__dev_ {!}_rev_362_wb_|_dev_^_Built_2025-09-14_13:26___
+qstr_{!}_rev_363_wb__dev_ {!}_rev_363_wb_|_dev_^_Built_2025-09-15_10:08___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -992,7 +992,9 @@ qstr_on_the_right_flank on_the_right_flank
 qstr_through_the_center through_the_center
 qstr_Attackers_charge_{s2 Attackers_charge_{s2}
 qstr_Attackers_charge_{s1 Attackers_charge_{s1}
-qstr_Hold_this_area_to_st Hold_this_area_to_stop_defender_reinforcements_from_here!
+qstr_You_must_break_the_f You_must_break_the_first_line_of_defense_before_you_can_capture_a_reinforcement_point.
+qstr_Capture_this_area_wi Capture_this_area_with_your_troops_to_stop_defender_reinforcements_from_here!
+qstr_Not_enough_allies_ne Not_enough_allies_nearby_to_capture_this_reinforcement_point!
 qstr_Defender_reinforceme Defender_reinforcement_point_taken!
 qstr_{s1}_rallied_to_your {s1}_rallied_to_your_side_due_to_your_Charisma.
 qstr_Last_attacker_wave._ Last_attacker_wave._Do_you_want_to_retreat?
