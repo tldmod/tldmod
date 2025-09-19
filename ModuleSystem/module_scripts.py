@@ -5881,7 +5881,7 @@ scripts = [
         (troop_get_type,":race",":stack_troop"),
         (store_troop_faction, ":faction", ":stack_troop"),
         (neq,":race",tf_troll),
-        (assign, ":can_capture", 1),
+        (assign, ":capture_chance", 100),
         
         (try_begin),            
             (this_or_next|eq,":race",tf_orc),        ## TLD good guys finish all orcs, evil guys finish all elves, GA
@@ -5890,17 +5890,21 @@ scripts = [
             (this_or_next|eq,":race",tf_lorien),
             (this_or_next|eq,":race",tf_imladris),
             (eq,":race",tf_woodelf),
-            (assign, ":can_capture", 0),
+            (assign, ":capture_chance", 0),
             (try_begin),    #except if player party is involved and capture prisoners quest active
+                (neq, ":race", tf_orc), #still no orcs, poor guys
                 (eq, ":source_party", "p_collective_enemy"),
                 (eq, ":player_involved", 1),
                 (check_quest_active, "qst_capture_prisoners"),
+                (quest_get_slot, ":target_amount", slot_quest_target_amount, "qst_capture_prisoners"),
+                (party_get_num_prisoners, ":num_prisoners", "p_main_party"),
+                (gt, ":target_amount", ":num_prisoners"),
                 (is_between, ":faction", kingdoms_begin, kingdoms_end), #only applies to faction troops, no bandits                
-                (assign, ":can_capture", 1),
+                (assign, ":capture_chance", 50), #reduce capture chance
             (try_end),
         (try_end),
         
-        (eq, ":can_capture", 1),
+        (gt, ":capture_chance", 0),
         (party_stack_get_size, ":stack_size",":source_party",":stack_no"),
         
         (try_begin),
@@ -5908,7 +5912,8 @@ scripts = [
             (eq, ":player_involved", 1),
             (party_get_skill_level, ":prs_management", "p_main_party", "skl_prisoner_management"),
             (val_mul, ":prs_management", ":stack_size"),
-            (val_div, ":prs_management", 20),
+            (val_mul, ":prs_management", ":capture_chance"),
+            (val_div, ":prs_management", 200),
             (val_add, ":prs_management", 1),
             (val_add, ":stack_size", 1),
             (store_random_in_range, ":stack_size_new", ":prs_management", ":stack_size"),
@@ -8905,7 +8910,7 @@ scripts = [
             (assign, ":quest_rank_reward", ":quest_target_amount"),
 			(assign, ":quest_object_faction", ":giver_faction_no"),
             (assign, ":result", ":quest_no"),
-            (assign, ":quest_expiration_days", 90),
+            (assign, ":quest_expiration_days", 30),
             (assign, ":quest_dont_give_again_period", 16),
           (try_end),
         (else_try),
