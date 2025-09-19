@@ -1122,7 +1122,7 @@ scene_props = [
 
 #("panel_door_a",0,"house_door_a","bo_house_door_a", []),
 #("panel_door_b",0,"house_door_b","bo_house_door_a", []),
-("smoke_stain",0,"soot_a","0", []),
+("smoke_stain",0,"soot_a_new","0", []),
 ("brazier_with_fire",0,"brazier_new","bo_brazier",    [
   (ti_on_scene_prop_init,
   [   (set_position_delta,0,0,85),
@@ -2693,7 +2693,7 @@ scene_props = [
   (agent_set_stand_animation, reg0, "anim_oliphant_stand"),(agent_set_animation, reg0, "anim_oliphant_stand")])]),
 ("spiderweb",0,"0","0", []), #unused
 ("tunnel_dirt",0,"dirt","0", []),
-("tunnel_liana",0,"liana","0", []),
+("tunnel_liana",0,"liana_new","0", []),
 ("tunnel_liana2",0,"liana2","0", []),
 ("tunnel_mushroom1",0,"mushroom1","0", []),
 ("tunnel_mushroom2",0,"mushroom2","0", []),
@@ -5704,6 +5704,7 @@ scene_props = [
       (agent_set_speed_modifier, "$current_player_agent", 0),
       (set_camera_in_first_person, 0), 
       (mission_cam_animate_to_position, pos5, 1700, 0),
+      (call_script, "script_scene_viewpoint_effect", ":instance_no", 0),
       # (set_spawn_position, pos5),
       # (spawn_scene_prop, "spr_arrow_helper_blue"),
     ]),
@@ -5726,7 +5727,7 @@ scene_props = [
       (scene_prop_get_slot, ":rotation", ":instance_no", slot_prop_active),
       (try_begin),
         (gt, ":rotation", -10),
-        (call_script, "script_scene_viewpoint_effect", ":instance_no"),
+        (call_script, "script_scene_viewpoint_effect", ":instance_no", 1),
       (try_end),
       (le, ":rotation", -1),
       (val_sub, ":rotation", 10), #counter-clockwise
@@ -5753,9 +5754,13 @@ scene_props = [
       (mission_cam_set_mode, 0, 1600, 0),
       (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi"), #assuming we're not in battle
       (prop_instance_deform_in_range, ":instance_no", 0, 100, 100),
+      (call_script, "script_scene_viewpoint_effect", ":instance_no", 2),
     ]),
     ]),
        ] or [("secret_viewpoint", sokf_invisible|sokf_moveable, "arrow_helper_blue", "bo_sphere_30cm", []),]) + [  
+
+("door_metal_a",0,"door_metal_a","bo_door_left", []),
+("door_metal_b",0,"door_metal_b","bo_door_left", []),
 
 ("arrow_helper_blue",0,"arrow_helper_blue","0", []),
 ("save_compartibility4",0,"0","0", []),

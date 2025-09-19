@@ -1159,7 +1159,10 @@ tld_common_peacetime_scripts = [
     hp_shield_trigger,
     ] or []) + [ 
 	dungeon_darkness_effect,
-  reset_fog,
+    reset_fog,
+    tld_animals_init,
+    tld_animal_strikes,
+    tld_remove_riderless_animals,
 ] + custom_tld_bow_to_kings + bright_nights + fade + reward_birds_wb + khams_custom_player_camera + nazgul_flying +((is_a_wb_mt==1) and tld_bow_shield + tld_animated_town_agents + tld_positional_sound_props + tld_points_of_interest or [] )#Custom Cam triggers
 
 
@@ -6639,7 +6642,8 @@ mission_templates = [ # not used in game
         (else_try),
           (play_sound, "$bs_day_sound", sf_looping|sf_2d),
         (try_end),
-        (assign, "$temp_2", 0), #for spawn control on scene props, particle effects etc.    
+        (assign, "$temp_2", 0), #for spawn control on scene props, particle effects etc.
+        (assign, "$meta_alarm", 0), #for counting stuff
         ]),
         
     ] + (is_a_wb_mt==1 and [
@@ -6661,9 +6665,6 @@ mission_templates = [ # not used in game
             (set_spawn_position, pos11),
             (spawn_scene_prop, "spr_secret_viewpoint"),
             (prop_instance_set_scale, reg0, 17000, 17000 , 11000),
-            (party_slot_eq, "p_legend_deadmarshes", slot_legendary_visited, 0),
-            (add_xp_as_reward, 250),
-            (party_set_slot, "p_legend_deadmarshes", slot_legendary_visited, 1),
           (else_try),
             (neg|is_currently_night),
             (tutorial_message, "@You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^The marshlands have swallowed up what was once a grassy plain, and now the only green is the scum of livid weed on the dark greasy surfaces of the sullen waters. ^^In the grey light of day, you don't see anything that catches your interest.",0,12),
@@ -6671,12 +6672,9 @@ mission_templates = [ # not used in game
         (else_try),
             (eq, "$g_encountered_party", "p_legend_mirkwood"),
             (tutorial_message, "@You have entered the woods of Southern Mirkwood, once known as Greenwood the Great^^The woods feel sickly and full of decay. The place is crawling with spiders. There must be a nest around here somewhere...",0,12),
-            (party_slot_eq, "p_legend_mirkwood", slot_legendary_visited, 0),
-            (add_xp_as_reward, 250),
-            (party_set_slot, "p_legend_mirkwood", slot_legendary_visited, 1),
         (else_try),
             (eq, "$g_encountered_party", "p_town_hornburg"),
-            (tutorial_message, "@You have found the Glittering Caves, one of the marvels of the Northern World.", 0, 10),
+            (tutorial_message, "@You enter the Glittering Caves. However, in the encompassing darkness, you cannot see its marvels.", 0, 10),
             (agent_get_item_slot, ":item", "$current_player_agent", 1),
             (agent_unequip_item, "$current_player_agent", ":item"),
             (agent_equip_item, "$current_player_agent", itm_torch, 1),
@@ -6688,8 +6686,9 @@ mission_templates = [ # not used in game
         (try_end)]),
     
     #custom effects    
-    (1,0,0,[],[
+    (2,0,0,[],[
     (set_fixed_point_multiplier, 100),
+    (store_mission_timer_a, ":time"),
     (get_player_agent_no, "$current_player_agent"),
     (try_begin),
         (eq, "$g_encountered_party", "p_legend_deadmarshes"),
@@ -6705,15 +6704,23 @@ mission_templates = [ # not used in game
             (particle_system_burst, "psys_candle_light_small", pos6, 30),
         (try_end),
     (else_try), 
-        (store_random_in_range, ":rand", 0, 100),
-        (lt, ":rand", 3),
         (eq, "$g_encountered_party", "p_legend_mirkwood"),
+        (party_slot_eq, "p_legend_mirkwood", slot_scene_visited, 0), #stop after nest is destroyed
+        (store_random_in_range, ":rand", 0, 1000),
+        (ge, ":time", 5),
+        (lt, ":rand", 200),
         (agent_get_position, pos6, "$current_player_agent"),
         (store_random_in_range, ":x", -1000, 1000),
-        (store_random_in_range, ":y", -1000, -500), #behind the player
+        (store_random_in_range, ":y", -1500, -1000), #behind the player
         (position_move_x, pos6, ":x"),
         (position_move_y, pos6, ":y"),
         (play_sound_at_position, "snd_spider_die", pos6),
+        (lt, ":rand", 120),
+        (eq, "$tld_option_animal_ambushes", 1), #only spawn spiders if animal ambushes are allowed
+        (set_spawn_position, pos6),
+        (spawn_agent, "trp_spider"),
+        (agent_set_team, reg0, 1),
+        (team_set_relation, 0, 1, -1),
     (try_end),
     ]),
 

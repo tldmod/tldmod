@@ -4290,18 +4290,18 @@ reward_birds_wb = ((is_a_wb_mt==1) and [
                   (prop_instance_get_starting_position, pos1, ":instance_no"),
                 # (try_end),
                 
-                (try_begin), #if destination = starting pos, move prop away 
-                  (prop_instance_get_position, pos2, ":instance_no"),
-                  (get_distance_between_positions, ":dist_1", pos2, pos1),
-                  (le, ":dist_1", 200),
-                  (try_begin),
-                    (neg|scene_prop_slot_eq, ":instance_no", 45, 1),
-                    (position_move_z, pos2, 700),
-                  (try_end),
-                  (position_move_x, pos2, 4000),
-                  (prop_instance_set_position, ":instance_no", pos2),
-                  (prop_instance_enable_physics, ":instance_no", 1),
-                (try_end),
+                # (try_begin), #if destination = starting pos, move prop away 
+                  # (prop_instance_get_position, pos2, ":instance_no"),
+                  # (get_distance_between_positions, ":dist_1", pos2, pos1),
+                  # (le, ":dist_1", 200),
+                  # (try_begin),
+                    # (neg|scene_prop_slot_eq, ":instance_no", 45, 1),
+                    # (position_move_z, pos2, 700),
+                  # (try_end),
+                  # (position_move_x, pos2, 4000),
+                  # (prop_instance_set_position, ":instance_no", pos2),
+                  # (prop_instance_enable_physics, ":instance_no", 1),
+                # (try_end),
                 
                 (assign, ":is_close", 1),
                 (try_begin), #check if prop is animating and if close to destination

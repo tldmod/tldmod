@@ -1941,7 +1941,7 @@ triggers = [
             (eq|this_or_next, "$current_player_region", region_n_mirkwood),
             (eq|this_or_next, "$current_player_region", region_c_mirkwood),
             (eq,              "$current_player_region", region_s_mirkwood),
-            (scene_slot_eq, scn_mirkwood, slot_scene_viewpoint, 1), 
+            (party_slot_eq, "p_legend_mirkwood", slot_scene_visited, 1), 
             (assign, ":continue", 0),
         (try_end),
         (try_for_range, ":party_id", centers_begin, centers_end), # Don't allow ambushes if player is close to a center.

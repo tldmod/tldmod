@@ -683,16 +683,13 @@ pis_ship                        = 2
 ########################################################
 slot_scene_visited              = 0
 slot_scene_belfry_props_begin   = 10
-slot_scene_viewpoint            = 20
+slot_scene_viewpoint            = 20 #deprecated
 slot_scene_loot_1               = 21
-slot_scene_loot_2               = 22
-slot_scene_loot_3               = 23
-slot_scene_loot_4               = 24
-slot_scene_loot_5               = 25
-slot_scene_loot_6               = 26
-slot_scene_loot_7               = 27
-slot_scene_loot_8               = 28
-slot_scene_loot_9               = 29
+#reserve slots 21-30
+slot_scene_loot_10              = 30
+slot_scene_viewpoint_1          = 31
+#reserve slots 31-40
+slot_scene_viewpoint_10         = 40
 
 ########################################################
 ##  SCENE PROP SLOTS            #############################

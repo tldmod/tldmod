@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 2095
+ 2097
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -1867,7 +1867,7 @@ spr_stone_heap 0 0 stone_heap bo_stone_heap 0
 spr_stone_heap_b 0 0 stone_heap_b bo_stone_heap 0
 
 
-spr_smoke_stain 0 0 soot_a 0 0
+spr_smoke_stain 0 0 soot_a_new 0 0
 
 
 spr_brazier_with_fire 0 0 brazier_new bo_brazier 1
@@ -4483,7 +4483,7 @@ spr_spiderweb 0 0 0 0 0
 spr_tunnel_dirt 0 0 dirt 0 0
 
 
-spr_tunnel_liana 0 0 liana 0 0
+spr_tunnel_liana 0 0 liana_new 0 0
 
 
 spr_tunnel_liana2 0 0 liana2 0 0
@@ -6408,6 +6408,12 @@ spr_secret_loot_prop 536952832 512 sphere_30cm bo_sphere_30cm 1
 
 
 spr_secret_viewpoint 81920 0 arrow_helper_blue bo_sphere_30cm 0
+
+
+spr_door_metal_a 0 0 door_metal_a bo_door_left 0
+
+
+spr_door_metal_b 0 0 door_metal_b bo_door_left 0
 
 
 spr_arrow_helper_blue 0 0 arrow_helper_blue 0 0

@@ -1436,7 +1436,7 @@ items =[
 ["feet_chains","Feet Chains",[("chains_full",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 ["feet_chains_dwarf","Feet Chains",[("chains_full_dwarf",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 
-["spider","Spider",[("spider",0)], itp_type_horse|itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(50)|horse_maneuver(75)|horse_charge(25),imodbits_none,[]],
+["spider","Spider",[("spider",0)], itp_type_horse|itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(30)|horse_maneuver(75)|horse_charge(12)|horse_scale(60),imodbits_none,[]],
 ["bear","Bear",    [("bear_2",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(48)|horse_speed(50)|horse_maneuver(48)|horse_charge(25)|horse_scale(120)|difficulty(10),imodbits_none,[]],
 ["wolf","Wolf",    [("wolf",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(50)|horse_maneuver(50)|horse_charge(25)|horse_scale(85)|difficulty(10),imodbits_none,[]],
 ["werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(35)|horse_speed(60)|horse_maneuver(60)|horse_charge(35)|horse_scale(100)|difficulty(10),imodbits_none,[]],
@@ -1588,6 +1588,8 @@ items =[
 ["animal_boar_big","{!}boar",     [("boar_black",0)],  itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(105),imodbits_none,[]],
 ["animal_rat",     "{!}rat",      [("szczur_animowany_rig_new_relocate",0)],  itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(3)|horse_maneuver(75)|horse_scale(7)|difficulty(10),imodbits_none,[]],
 ["animal_warg",    "{!}Warg",     [("warg_1B",imodbit_cracked),("animal_warg_1C",imodbit_rusty),("animal_warg_1D",imodbit_bent)],  itp_type_animal|itp_disable_agent_sounds,0,600,hit_points(50)|horse_speed(15)|horse_maneuver(50)|horse_scale(95),imodbits_none,[]],
+
+["spider_mount","Spider",[("spider_black",0)], itp_type_horse|itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(50)|horse_maneuver(75)|horse_charge(25),imodbits_none,[]],
 
 #from VC
 ["torch",         "Torch", [("orc_club_a",0)], itp_type_two_handed_wpn|itp_two_handed|itp_primary|itp_shop, itc_greatsword, 11 , weight(2.5)|difficulty(0)|spd_rtng(95) | weapon_length(95)|swing_damage(11 , blunt) | thrust_damage(0 ,  pierce),imodbits_none,
