@@ -1244,10 +1244,10 @@ triggers = [
   # TLD War beginning condition (player level >= 8 at the moment), GA
   ## InVain: Also used for WOTT
   (1, 0, 0,[
+    (assign, ":continue", 0),
     (try_begin),
       (eq,"$tld_war_began",0),
       (neg|is_currently_night), #make it happen at day
-      (assign, ":continue", 0),
       (try_begin),
           (eq, "$tld_start_war_by_day_or_level", 0),
           (store_character_level,":level","trp_player"),
@@ -1342,6 +1342,7 @@ triggers = [
     
     ###WOTT
     (else_try),
+       (eq,"$tld_war_began",3),
        (assign, "$tld_war_began",2),
        (start_presentation, "prsnt_faction_selection_evil"),
        (play_sound,"snd_evil_horn", sf_2d),
