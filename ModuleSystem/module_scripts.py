@@ -5913,7 +5913,7 @@ scripts = [
             (party_get_skill_level, ":prs_management", "p_main_party", "skl_prisoner_management"),
             (val_mul, ":prs_management", ":stack_size"),
             (val_mul, ":prs_management", ":capture_chance"),
-            (val_div, ":prs_management", 200),
+            (val_div, ":prs_management", 2000),
             (val_add, ":prs_management", 1),
             (val_add, ":stack_size", 1),
             (store_random_in_range, ":stack_size_new", ":prs_management", ":stack_size"),
