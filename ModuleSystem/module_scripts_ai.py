@@ -2298,6 +2298,12 @@ ai_scripts = [
       (spawn_around_party,":center_no", "pt_kingdom_hero_party"),
       (assign, "$pout_party", reg0),
       (party_set_faction, "$pout_party", ":troop_faction_no"),
+      (try_begin),
+        (store_troop_faction, ":current_troop_faction_no", ":troop_no"),
+        (neq, ":current_troop_faction_no", ":troop_faction_no"),
+        (party_set_faction, "$pout_party", ":current_troop_faction_no"),
+      (try_end),
+      
 	  
 	  # make it use the icon of the corresponding host (mtarini)
 	  (store_sub, ":icon", ":troop_faction_no", "fac_gondor"),

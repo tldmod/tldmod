@@ -2060,8 +2060,8 @@ scripts = [
     (assign, "$tld_volunteers_multi", 100), #for easier diffculty tweaking
     (assign, "$tld_host_size_multi", 100), #for easier diffculty tweaking
     (assign, "$tld_ally_str_income_multi", 100), #for easier diffculty tweaking
-    (assign, "$tld_victory_str_multi", 100), #for easier diffculty tweaking
-    (assign, "$tld_player_fac_init_strength_multi", 100), #for easier diffculty tweaking
+    (assign, "$tld_victory_str_multi", 75), #for easier diffculty tweaking
+    (assign, "$tld_player_fac_init_strength_multi", 90), #for easier diffculty tweaking
 	(assign, "$g_fast_mode", 0),# OFF by default
 	(assign, "$tld_option_morale", 1), # Battle morale ON by default
 	(assign, "$tld_option_animal_ambushes", 1), # Ambushes ON by default
@@ -2373,8 +2373,9 @@ scripts = [
 		(gt,":volunteers",0), # Rafa: a very crude handling of the volunteer's party not being created
 
 		# compute ideal number of volunteers #InVain: Adjusted to account for bigger starting garrison sizes, putting more weight on player progress
-		#current formula is =((garrison/10 + rank*5 + leadership*10) * (relation*2+100))/1000 +3
-		(store_party_size_wo_prisoners, ":to_add", ":town"),
+		#current formula is =((garrison/10 + rank*5 + leadership*10) * (relation+100))/1000 +3
+		#(store_party_size_wo_prisoners, ":to_add", ":town"),
+        (party_get_slot, ":to_add", ":town", slot_center_garrison_limit), #get regular size instead of actual garrison size -- less room for exploits
     	(val_div, ":to_add", 10), 
 	    (call_script, "script_get_faction_rank", ":fac"),
 	    (assign, ":rank", reg0),
@@ -2401,19 +2402,18 @@ scripts = [
 	  	(try_end),
 	    # town relations bonus +size*rel/100
 	    (party_get_slot, ":center_relation", ":town", slot_center_player_relation),
-		(val_mul, ":center_relation", 2), #Invain
 	    (val_add, ":center_relation", 100),
 	    (val_mul, ":to_add", ":center_relation"), 
+        
+        #campaign AI (difficulty setting)
+        (val_mul, ":to_add", "$tld_volunteers_multi"),
+        (val_div, ":to_add", 100), 
+        
 		(val_div, ":to_add", 1000),
 		(val_add, ":to_add", 3), #add some extra, so the below code still works (volunteers don't fill up if less than 4)
 		(val_max, ":to_add", 6), #additional saveguard
         
-        #] + (is_a_wb_script==1 and [
-        (try_begin), #campaign AI (difficulty setting)
-            (val_mul, ":to_add", "$tld_volunteers_multi"),
-            (val_div, ":to_add", 100), 
-        (try_end),
-        #] or []) + [
+
 	    
 	    #(assign, ":ideal_size", ":to_add"),
 		(store_party_size, ":vol_total", ":volunteers"),
@@ -2421,9 +2421,13 @@ scripts = [
 		#InVain: before adding new volunteers, we train the old ones, using the same formula as above (without garrison size)
 		(store_add, ":vol_xp", ":rank", ":lead_bonus"),
 		(val_mul, ":vol_xp", ":center_relation"),
-		(party_get_num_companion_stacks, ":vol_stacks", ":volunteers"),
-		(val_mul, ":vol_xp", ":vol_stacks"), #multiply with number of stacks, because xp are distributed among stacks, not troops
-		(val_div, ":vol_xp", 80),
+		(val_mul, ":vol_xp", ":vol_total"), #multiply with number of volunteers, so big reserves don't level slower than small ones
+        (try_begin),
+            (lt, "$tld_volunteers_multi", 100),
+            (val_mul, ":vol_xp", "$tld_volunteers_multi"),
+            (val_div, ":vol_xp", 100), 
+        (try_end),
+		(val_div, ":vol_xp", 100),
 		(party_upgrade_with_xp, ":volunteers", ":vol_xp", 0),
 		
 		
@@ -2463,7 +2467,7 @@ scripts = [
             
 	        #(store_party_size, ":vol_total", ":volunteers"), # recompute for the benefit of puny orcs below
 		(else_try),
-			(lt, ":to_add", 0), # remove volunteers! #MV: kept this code, effect: a trickle of player recruits joins the garrison
+			(lt, ":to_add", 0), # remove volunteers! #MV: kept this code, effect: a trickle of player recruits joins the garrison #InVain: For the record, this code is invalid because we clamp the to_add value above, so it can never be less than 6
 			(val_mul, ":to_add", -1),
 			(try_for_range, ":unused", 0, ":to_add"),
 				(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"), (assign, ":guy", reg0),  # can fail
@@ -2486,7 +2490,7 @@ scripts = [
 		    # (party_add_members, ":volunteers", ":puny_orc", 2),
 		# (try_end),
 
-		#Remove highest level troop every day (counters volunteer training going overboard)
+		#Remove high level troops every day (counters volunteer training going overboard), and replace it with a basic troop
 		(party_get_num_companion_stacks, ":num_stacks", ":volunteers"),
 		(assign, ":highest_level", 0),
 			(try_for_range, ":i_stack", 0, ":num_stacks"),
@@ -2497,7 +2501,7 @@ scripts = [
                     (gt, ":troop_level", 10), (gt, ":stack_size", 2),
                     (party_remove_members_wounded_first, ":volunteers", ":stack_troop", 1),
                     (faction_get_slot, ":t_2_troop", ":fac", slot_faction_tier_2_troop),
-                    (party_add_members, ":town", ":t_2_troop", 1), #we stay fair - add a basic troop to the garrison
+                    (party_add_members, ":volunteers", ":t_2_troop", 1), #we stay fair - add a t2 troop to volunteers
                 (try_end),
 				(gt, ":troop_level", ":highest_level"),
 				(assign, ":highest_level", ":troop_level"),
@@ -2509,8 +2513,8 @@ scripts = [
 		(store_random_in_range, ":random", 0, 100),
 		(le, ":random", ":highest_level"),
 		(party_remove_members_wounded_first, ":volunteers", ":highest_level_troop", 1),
-        (faction_get_slot, ":t_2_troop", ":fac", slot_faction_tier_2_troop),
-        (party_add_members, ":town", ":t_2_troop", 1), #we stay fair - add a basic troop to the garrison
+        (faction_get_slot, ":t_1_troop", ":fac", slot_faction_tier_1_troop),
+        (party_add_members, ":volunteers", ":t_1_troop", 1), #add a basic troop to volunteers
 		#(str_store_party_name, s1, ":town"),
 		#(str_store_troop_name, s2, ":highest_level_troop"),
 		#(display_message, "@{s1}: removed volunteer {s2}"),
@@ -6001,6 +6005,12 @@ scripts = [
 	      (is_between, ":faction", kingdoms_begin, kingdoms_end),
 	      (faction_get_slot,":strength",":faction",slot_faction_strength_tmp),
 	      (party_get_slot,":party_value", ":root_party",slot_party_victory_value),
+          
+          (try_begin),
+            (eq, "$player_won_last_battle", 1),
+            (val_mul, ":party_value", "$tld_victory_str_multi"), 
+            (val_div, ":party_value", 100),
+           (try_end),
 	    #(party_get_slot,":party_type", ":root_party",slot_party_type),
 #	    (try_begin),
 #	      (eq,":party_type",spt_kingdom_hero_party), #hosts dying decrease faction strength unconditionally 
