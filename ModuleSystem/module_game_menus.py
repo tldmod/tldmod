@@ -2248,8 +2248,10 @@ game_menus = [
 
      	("camp_cctest_kill_lord",[],"{!}Kill a Random Lord",
 	[
-		(store_random_in_range, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
-		(call_script, "script_hero_leader_killed_abstractly", ":cur_troop_id","p_main_party"),
+		#(store_random_in_range, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
+        (troop_get_slot, ":party", "trp_knight_2_2", slot_troop_leaded_party),
+		(call_script, "script_hero_leader_killed_abstractly", "trp_knight_1_7",":party"),
+        (troop_set_slot, "trp_knight_1_7", slot_troop_killed_by, "trp_knight_2_2"),
         (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")
 	]),
 
@@ -3628,6 +3630,7 @@ game_menus = [
 	"{!}^^^^^Click on an option to toggle.^^^Tweaks Gondor to have more troops in a party, gives them more hosts, gives them hosts more frequently, and lets Gondor lords wait longer to gather.^^Have to wait for the trigger to occur","none",[],
     [
     ("camp_khamtest_back",[],"{!}Back",[(jump_to_menu, "mnu_dev_menu")]),
+    ("give_party_xp",[],"{!}give_party_xp",[(party_upgrade_with_xp, p_main_party, 2000, 0),]),
     ("enable_kham_cheat",[],"{!}Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@{!}Kham Cheat Mode ON!")]),
     ] + (is_a_wb_menu==1 and [
     ("action_view_all_items",[],"{!}View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
@@ -6499,43 +6502,43 @@ game_menus = [
 			(try_end),
 		(try_end),
 		## Kham - Oath of Vengeance Kills Start
-		(try_begin),
-			(check_quest_active, "qst_oath_of_vengeance"),
-			(quest_get_slot, ":target","qst_oath_of_vengeance", 2),
-			(quest_get_slot, ":moria", "qst_oath_of_vengeance",6),
-			(try_begin),
-				(gt, ":moria",0),
-				(quest_get_slot, ":gundabad", "qst_oath_of_vengeance",7),
-				(this_or_next|eq, ":defeated_faction",  ":target"),
-				(eq, ":defeated_faction", ":gundabad"),
-				(get_player_agent_kill_count, ":temp_kills"),
-				(val_sub, ":temp_kills", "$total_kills"),
-				(val_add, "$oath_kills", ":temp_kills"),
-			(else_try),
-				(eq, ":defeated_faction",  ":target"),
-				(get_player_agent_kill_count, ":temp_kills"),
-				(val_sub, ":temp_kills", "$total_kills"),
+		# (try_begin),
+			# (check_quest_active, "qst_oath_of_vengeance"),
+			# (quest_get_slot, ":target","qst_oath_of_vengeance", 2),
+			# (quest_get_slot, ":moria", "qst_oath_of_vengeance",6),
+			# (try_begin),
+				# (gt, ":moria",0),
+				# (quest_get_slot, ":gundabad", "qst_oath_of_vengeance",7),
+				# (this_or_next|eq, ":defeated_faction",  ":target"),
+				# (eq, ":defeated_faction", ":gundabad"),
+				# (get_player_agent_kill_count, ":temp_kills"),
+				# (val_sub, ":temp_kills", "$total_kills"),
+				# (val_add, "$oath_kills", ":temp_kills"),
+			# (else_try),
+				# (eq, ":defeated_faction",  ":target"),
+				# (get_player_agent_kill_count, ":temp_kills"),
+				# (val_sub, ":temp_kills", "$total_kills"),
 
-				## Dwarves & Elves count twice
-					(try_begin),
-						(this_or_next|eq, ":defeated_faction", fac_imladris),
-						(this_or_next|eq, ":defeated_faction", fac_woodelf),
-						(this_or_next|eq, ":defeated_faction", fac_lorien),
-						(			  eq, ":defeated_faction", fac_dwarf),
-						(val_mul, ":temp_kills", 2), 
-						(val_add, "$oath_kills", ":temp_kills"),
-					(else_try),
-						(val_add, "$oath_kills", ":temp_kills"),
-					(try_end),	
-			(try_end),
-			(try_begin),
-				(eq, "$cheat_mode",1),
-				(assign, reg1, "$oath_kills"),
-				(assign, reg0, "$total_kills"),
-				(str_store_faction_name, s1, ":target"),
-				(display_message, "@{reg1} kills of {s1} faction troops counted towards Oath. TOTAL Kills: {reg0}"),
-			(try_end),
-		(try_end),
+				# ## Dwarves & Elves count twice
+					# (try_begin),
+						# (this_or_next|eq, ":defeated_faction", fac_imladris),
+						# (this_or_next|eq, ":defeated_faction", fac_woodelf),
+						# (this_or_next|eq, ":defeated_faction", fac_lorien),
+						# (			  eq, ":defeated_faction", fac_dwarf),
+						# (val_mul, ":temp_kills", 2), 
+						# (val_add, "$oath_kills", ":temp_kills"),
+					# (else_try),
+						# (val_add, "$oath_kills", ":temp_kills"),
+					# (try_end),	
+			# (try_end),
+			# (try_begin),
+				# (eq, "$cheat_mode",1),
+				# (assign, reg1, "$oath_kills"),
+				# (assign, reg0, "$total_kills"),
+				# (str_store_faction_name, s1, ":target"),
+				# (display_message, "@{reg1} kills of {s1} faction troops counted towards Oath. TOTAL Kills: {reg0}"),
+			# (try_end),
+		# (try_end),
 		(get_player_agent_kill_count, "$total_kills"),
 		## Kham - Oath of Vengeance Kills END
 		## Kham - Eliminate Patrols Assist START
@@ -13291,6 +13294,18 @@ game_menus = [
     ],
     [("continue",[],"Continue...",[(change_screen_map),]),]
  ), 
+ 
+( "oath_quest_fail",0,
+    "You swore a bitter oath and you bitterly failed to keep it. Your enemies laugh at your failure, and all your friends suffer from the shame you have brought upon them. In all the lands of Middle-earth, you shall be known as an oathbreaker.",
+    "none",
+    [
+    (set_fixed_point_multiplier, 100),
+    (position_set_x, pos0, 65),
+    (position_set_y, pos0, 30),
+    (position_set_z, pos0, 100),
+    (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "trp_player", pos0)    ],
+    [("continue",[],"Continue...",[(change_screen_map),]),]
+ ),  
 ] 
 
 ## quick scene chooser

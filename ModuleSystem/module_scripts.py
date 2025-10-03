@@ -563,7 +563,7 @@ scripts = [
           
           # gain influence = 1/8 rank points gain (rounded) Was 1/10
           (faction_get_slot, ":old_inf", ":fac", slot_faction_influence),
-          (store_add, ":inf_dif", ":difference", 8/2),
+          (store_add, ":inf_dif", ":difference", 4), #this is to make sure that we get 1 influence starting at 4 rank points
           (val_div,   ":inf_dif", 8),
 
           #swy-- uninitialized globals default to zero,
@@ -575,6 +575,18 @@ scripts = [
           (val_mul,   ":inf_dif", ":inf_multiplier"),
           (val_div, ":inf_dif", 100),
           #swy--
+
+          (try_begin), #oathkeeper bonus
+            (troop_slot_eq, "trp_traits", slot_trait_oathkeeper, 1),
+            (store_random_in_range, ":rand", 0, 100),
+            (lt, ":rand", 15),
+            (val_add, ":inf_dif", 1),
+          (else_try),
+            (troop_slot_eq, "trp_traits", slot_trait_oathbreaker, 1),
+            (store_random_in_range, ":rand", 0, 100),
+            (lt, ":rand", 15),
+            (val_sub, ":inf_dif", 1),            
+          (try_end),
 
           #swy-- uninitialized globals default to zero,
           #   -- take advantage of this by adding one to get the saved multiplier:
@@ -2089,7 +2101,6 @@ scripts = [
 	(assign, "$gondor_reinforcement_event_menu",0), #kham - Gondor Reinforcement Event
 	(assign, "$first_time_town", 0), #kham - rumour tutorial box
 	(assign, "$formations_tutorial", 0), #Kham - Formations Tutorial.
-	(assign, "$total_kills",0), #Kham - Kill Counter
 	(assign, "$player_allowed_siege",0), #Kham - Player Initiated Sieges
 	(assign, "$butcher_trait_kills", 0), #Kham - Butcher Trait
 	(assign, "$player_control_allies",0), #Kham - Player Control Allies global
@@ -2108,10 +2119,12 @@ scripts = [
       
     (assign, "$hold_f1", 0),  
 	(assign, "$dormant_spawn_radius", 0),
+	(assign, "$total_kills",0),
 
 	(val_mul, "$hold_f1", "$dormant_spawn_radius"),
     (val_mul, "$hold_f1", "$allies_leadership"),
     (val_mul, "$dormant_spawn_radius", "$hold_f1"),
+    (val_mul, "$dormant_spawn_radius", "$total_kills"),
     (val_mul, "$dormant_spawn_radius", "$allies_leadership"), #wb only
 
 	#Kham - Squelch compiler warnings END
@@ -6069,6 +6082,16 @@ scripts = [
             		(eq, ":num_allied_factions_in_theater", 1),
             		(assign, ":num_allied_factions_in_theater", 2),
             	(try_end), 
+
+                (try_begin),
+                    #InVain: piggyback oath of vengeance helper
+                    (check_quest_active, "qst_oath_of_vengeance"), 
+                    (store_faction_of_party, ":party_fac", ":root_party"),
+                    (this_or_next|eq, ":party_fac", "fac_gundabad"),
+                    (eq, ":party_fac", "fac_moria"),
+                    (store_div, ":oath_bonus", ":party_value", 2),
+                    (val_add, "$oath_kills", ":oath_bonus"),
+                (try_end),
 
             	(store_div, ":win_value", ":party_value", ":num_allied_factions_in_theater"),
                

@@ -150,6 +150,8 @@ player_siege_ask_leave_unmolested_reject
 defeat_lord_answer
 defeat_lord_answer_1
 defeat_lord_answer_2
+defeat_lord_answer_vengeance
+defeat_lord_answer_vengeance_1
 party_encounter_lord_hostile_attacker
 party_encounter_lord_hostile_attacker_2
 party_encounter_offer_dont_fight
@@ -158,6 +160,8 @@ lord_intro
 lord_meet_neutral
 lord_meet_enemy
 lord_generic_mission_completed
+lord_oath_of_vengeance_fulfilled
+lord_oath_of_vengeance_fulfilled1
 lord_investigate_fangorn_completed0
 lord_investigate_fangorn_completed1
 lord_capture_troll_completed_two_trolls
@@ -218,7 +222,10 @@ dwarf_lord_book_give_f
 dwarf_lord_book_give_g
 dwarf_lord_book_give_h
 dwarf_lord_book_give_i
-dwarf_lord_avenge
+dwarf_lord_book_give_j
+dwarf_lord_book_give_k
+dwarf_lord_book_give_l
+dwarf_lord_book_give_m
 find_lost_spears_permission
 find_lost_spears_permission_yes
 tell_dorwinion_sack

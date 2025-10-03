@@ -1531,7 +1531,7 @@ ws_party_spawns_list = [
 
 (p_town_umbar_camp      ,pt_umbar_scouts,         pt_umbar_raiders,   -1,                    -1),
 
-(p_town_gundabad                 ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    pt_gunda_caravan),
+(p_town_gundabad                 ,pt_gundabad_scouts,pt_gundabad_raiders,pt_gundabad_war_party, pt_gunda_caravan),
 (p_town_gundabad_ne_outpost      ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    pt_gunda_caravan),
 (p_town_gundabad_nw_outpost      ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    pt_gunda_caravan),
 (p_town_goblin_north_outpost     ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    pt_gunda_caravan),

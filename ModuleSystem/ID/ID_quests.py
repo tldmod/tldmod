@@ -63,7 +63,8 @@ qst_blank_quest_19 = 61
 qst_blank_quest_20 = 62
 qst_blank_quest_21 = 63
 qst_guardian_party_quest = 64
-qst_quests_end = 65
+qst_oath_personal = 65
+qst_quests_end = 66
 qsttag_deliver_message = 504403158265495552
 qsttag_deliver_message_to_enemy_lord = 504403158265495553
 qsttag_raise_troops = 504403158265495554
@@ -129,6 +130,7 @@ qsttag_blank_quest_19 = 504403158265495613
 qsttag_blank_quest_20 = 504403158265495614
 qsttag_blank_quest_21 = 504403158265495615
 qsttag_guardian_party_quest = 504403158265495616
-qsttag_quests_end = 504403158265495617
+qsttag_oath_personal = 504403158265495617
+qsttag_quests_end = 504403158265495618
 
 

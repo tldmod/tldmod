@@ -2256,22 +2256,18 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
 
     (eq, ":agent_team", ":player_team"), #Is part of player's team?
 
-    (try_begin),
-      (check_quest_active, "qst_oath_of_vengeance"), #Oath of Vengeance Quest
+    (try_begin), #Oath of Vengeance Quest, edited and fixed by Invain: now only applies to Moria/Gundabad Oath, but counts all kills
+      (check_quest_active, "qst_oath_of_vengeance"), 
       (neg|check_quest_succeeded, "qst_oath_of_vengeance"),
-      (quest_get_slot, ":target","qst_oath_of_vengeance", 2),
-      (quest_get_slot, ":moria", "qst_oath_of_vengeance",6),
-      (quest_get_slot, ":gundabad", "qst_oath_of_vengeance",7),
-      (this_or_next|eq, ":target", "fac_moria"),
-      (this_or_next|eq, ":target", "fac_gundabad"),
-      (this_or_next|eq, ":target", "fac_mordor"),
-      (this_or_next|eq, ":target", "fac_isengard"),
-      (this_or_next|gt, ":moria", 0),
-      (gt, ":gundabad", 0),
+      (eq, ":killer", ":player"),
+      (agent_get_party_id, ":agent_party", ":killed"),
+      (gt, ":agent_party", 1),
+      (store_faction_of_party, ":agent_faction", ":agent_party"),
+      (this_or_next|eq, ":agent_faction", "fac_gundabad"),
+      (eq, ":agent_faction", "fac_moria"),
+      (val_add, "$oath_kills", 1),
       (eq, ":type", tf_troll),
-      (this_or_next|eq, ":result", 0), #killed
-      (eq, ":result", 1), #or wounded
-      (val_add, "$oath_kills", 3),
+      (val_add, "$oath_kills", 2),
     (try_end),
 
     (try_begin),

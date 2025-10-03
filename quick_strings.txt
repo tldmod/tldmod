@@ -1,4 +1,4 @@
-1763
+1769
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1042,8 +1042,8 @@ qstr_{***}Debug:_giving_{re {***}Debug:_giving_{reg62}_rank_points_for_impressed
 qstr_Even_though_there_we Even_though_there_were_no_allies_to_witness_your_victory,_your_troops_nevertheless_celebrate_your_triumph.
 qstr_{s1}_of_{s3}_managed {s1}_of_{s3}_managed_to_escape.
 qstr_{***}{s17} {***}{s17}
+qstr_{***}{s18} {***}{s18}
 qstr_Prisoners_rescued_so Prisoners_rescued_so_far:_{reg1}
-qstr_{reg1}_kills_of_{s1} {reg1}_kills_of_{s1}_faction_troops_counted_towards_Oath._TOTAL_Kills:_{reg0}
 qstr_{***}DEBUG:_Target_Par {***}DEBUG:_Target_Party_-_YES
 qstr_{***}DEBUG:_Target_Part {***}DEBUG:_Target_Party_-_NO
 qstr_Perhaps_I_m_getting_ Perhaps_I'm_getting_unlucky...
@@ -1145,7 +1145,8 @@ qstr_You_wait_for_darknes You_wait_for_darkness_to_fall...
 qstr_You_are_quickly_disc You_are_quickly_discovered_by_the_enemy.
 qstr_You_advance_stealthi You_advance_stealthily_far_into_the_forest.
 qstr_You_cannot_leave_unt You_cannot_leave_until_the_guards_lose_you!
-qstr_Enraged_by_the_death Enraged_by_the_death_of_{s4},_you_have_sworn_an_oath_of_vengeance_upon_the_forces_of_{s3}._You_must_now_destroy_as_many_of_the_troops_of_{s3}_as_possible_in_the_coming_days._You_are_keenly_aware_that_your_followers_have_witnessed_this_oath_and_you_do_not_wish_to_become_known_as_an_oathbreaker._An_orgy_of_bloodletting_must_now_begin!
+qstr_You_hear_that_{s1}_h You_hear_that_{s1}_has_already_been_avenged_by_the_death_of_{s28}.
+qstr_Enraged_by_the_death Enraged_by_the_death_of_{s4},_you_have_sworn_an_oath_of_vengeance_against_{s3}._You_must_now_seek_out_and_fight_{s3}_and_kill_{reg11?her:him}_if_possible._You_are_keenly_aware_that_your_followers_have_witnessed_this_oath_and_you_do_not_wish_to_become_known_as_an_oathbreaker._An_orgy_of_bloodletting_must_now_begin!
 qstr_flooded._Somebody_or flooded._Somebody_or_something_must_have_ruined_the_Isen_dams.
 qstr_destroyed._Only_smol destroyed._Only_smoldering_ruins_remain.
 qstr_^^^You_lost_your_fig ^^^You_lost_your_fight_against_the_mutiny!_^Seems_like_your_orcs_have_a_new_commander_now.
@@ -1178,8 +1179,15 @@ qstr_You_must_follow_{s1} You_must_follow_{s1}!
 qstr_You_must_follow_{s1}! You_must_follow_{s1}!_This_is_your_last_warning!
 qstr_{***}DEBUG:_Eliminate_ {***}DEBUG:_Eliminate_Parties_-_Current:_{reg0},_New:_{reg1}
 qstr_{s1}_parties_defeate {s1}_parties_defeated:_{reg1}_out_of_{reg2}
-qstr_{reg65}_Moria_and/or {reg65}_Moria_and/or_Gundabad_troops_killed._(Counter_refreshes_every_hour)
-qstr_{reg65}_{s3}_troops_ {reg65}_{s3}_troops_killed._(Counter_refreshes_every_hour)
+qstr_Your_progress_to_ful Your_progress_to_fulfill_your_oath_is_considered_not_very_great._(Progress_less_than_a_third.)
+qstr_You_have_made_some_p You_have_made_some_progress_to_fulfill_your_oath,_but_there_is_still_a_long_way_to_go._(Progress_about_half.)_^^_The_enemies_are_starting_to_look_out_for_you.
+qstr_You_have_won_the_hat You_have_won_the_hatred_of_your_enemies,_press_on_further_and_you_will_fulfill_your_oath!_(Progress_more_than_two_thirds.)_^^_The_enemies_are_starting_to_dispatch_additional_parties_around_their_fortresses_and_camps.
+qstr_You_have_made_yourse You_have_made_yourself_a_name_as_one_of_the_enemy's_worst_foes._Your_oath_is_almost_fulfilled!
+qstr_Your_enemies_tremble Your_enemies_tremble_at_the_mentioning_of_you_name!_Your_oath_is_fulfilled!
+qstr_King_Dain_values_you King_Dain_values_your_effort_to_fulfill_your_oath,_but_acknowledges_that_events_unfolded_too_quickly._As_a_result,_
+qstr_{s22}You_have_fulfil {s22}You_have_fulfilled_your_oath_to_avenge_Balin_and_his_company!
+qstr_{s23}You_are_release {s23}You_are_released_from_your_oath.
+qstr_Oath_Score:_{reg65}_ Oath_Score:_{reg65}_(Counter_refreshes_every_hour)
 qstr_{reg66}_{s5}_troops_ {reg66}_{s5}_troops_killed._(Counter_refreshes_every_hour)
 qstr_{reg67}_{s7}_{s8}_tr {reg67}_{s7}_{s8}_troops_killed._(Counter_refreshes_every_hour)
 qstr_{s8}_in_{s9}_asked_y {s8}_in_{s9}_asked_you_to_slay_{reg67}_{s10}.^_{reg68}_{s11}_killed._(Counter_refreshes_every_hour)
@@ -1202,6 +1210,9 @@ qstr_You_have_{reg69}_ally You_have_{reg69}_ally_parties_following_you
 qstr_The_forces_of_{s2}_h The_forces_of_{s2}_have_regrouped_and_march_on_to_{s15}!
 qstr_{***}Theoden_activated {***}Theoden_activated
 qstr_Your_scouts_report_s Your_scouts_report_signs_of_a_{s2}_nearby.
+qstr_{s5}_sent_out_a_host {s5}_sent_out_a_host_against_you!
+qstr_Your_troops_value_yo Your_troops_value_your_effort_to_fulfill_your_oath,_but_acknowledge_that_events_unfolded_too_quickly._The_general_consensus_is_that_you_are_released_from_your_oath.
+qstr_You_hear_rumors_that You_hear_rumors_that_{s1}
 qstr_{s1}_from_{s2} {s1}_from_{s2}
 qstr_When_dealing_with_lo When_dealing_with_locals_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.^^(the_Resource_Points_which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
 qstr_Info Info
@@ -1227,12 +1238,6 @@ qstr_{s27}:_Influence_wit {s27}:_Influence_with_{s1}_increases_from_{reg2}_to_{r
 qstr_{s27}:_Influence_with {s27}:_Influence_with_{s1}_decreases_from_{reg2}_to_{reg1}.
 qstr_{s27}:_Party_morale_ {s27}:_Party_morale_increased.
 qstr_{s27}:_Party_morale_d {s27}:_Party_morale_decreased.
-qstr_You_have_failed_to_f You_have_failed_to_fulfill_your_oath_to_avenge_Balin_and_his_company!
-qstr_You_have_failed_to_fu You_have_failed_to_fulfill_your_oath_of_vengeance_for_{s1}'s_heroic_death!
-qstr_Your_troops_value_yo Your_troops_value_your_effort_to_fulfill_your_oath,_but_acknowledge_that_events_unfolded_too_quickly._As_a_result,_
-qstr_{***}_ {***}_
-qstr_{s22}You_have_fulfil {s22}You_have_fulfilled_your_oath_to_avenge_Balin_and_his_company!
-qstr_{s22}You_have_fulfill {s22}You_have_fulfilled_your_oath_of_vengeance_for_{s1}'s_heroic_death!
 qstr_Avoided_animal_ambus Avoided_animal_ambush_via_Spotting.
 qstr_Avoided_animal_ambush Avoided_animal_ambush_via_Wildcraft.
 qstr_Reinforcements Reinforcements
@@ -1412,8 +1417,9 @@ qstr_our our
 qstr_your your
 qstr_Moria_and_Gundabad Moria_and_Gundabad
 qstr_Moria Moria
+qstr_Your_enemies_in_{s3} Your_enemies_in_{s3}_hear_of_your_oath_and_rally_their_strength_to_counter_the_threat.
 qstr_Gundabad Gundabad
-qstr_You_swear_an_oath_of You_swear_an_oath_of_vengeance_against_{s3}._You_must_now_kill_as_many_of_the_troops_of_Moria_and_Gundabad_as_possible_in_the_coming_days._You_are_keenly_aware_that_your_followers_have_witnessed_this_oath_and_you_do_not_wish_to_become_known_as_an_oathbreaker._An_orgy_of_bloodletting_must_now_begin!^.
+qstr_You_swear_an_oath_of You_swear_an_oath_of_vengeance_against_{s3}._You_must_now_defeat_as_many_parties_and_personally_kill_as_many_orcs_of_Moria_and_Gundabad_as_possible_in_the_coming_days._You_are_keenly_aware_that_your_followers_have_witnessed_this_oath_and_you_do_not_wish_to_become_known_as_an_oathbreaker._An_orgy_of_bloodletting_must_now_begin!^.
 qstr_The_search_for_the_L The_search_for_the_Lost_Spears_has_led_you_to_Dorwinion,_the_site_of_the_ancient_northern_kingdom_of_King_Bladorthin._TO_BE_CONTINUED
 qstr__You_need_to_be_{s24 (You_need_to_be_{s24}_or_higher).
 qstr_You_are_not_worthy_o You_are_not_worthy_of_my_skills._Prove_yourself_first,_and_rise_above_{s25}._{s2}

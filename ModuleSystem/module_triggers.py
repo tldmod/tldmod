@@ -1759,92 +1759,92 @@ triggers = [
   ] or [])
   ),
   
-  #check progress on oath quest
-  (24, 0, 0, [(check_quest_active, "qst_oath_of_vengeance", 1)],[
+  #check progress on oath quest #UNUSED
+  (24, 0, 0, [(eq, 0, 1)],[ #NEVER
       #(quest_get_slot, ":start_killcount", "qst_oath_of_vengeance", 3),
-      (quest_get_slot, ":target", "qst_oath_of_vengeance", 2),
-      (quest_get_slot, ":start_day", "qst_oath_of_vengeance", 1),
-      (quest_get_slot, ":source_fac", "qst_oath_of_vengeance", 4),
-      (quest_get_slot, ":hero", "qst_oath_of_vengeance", 5),
-      (quest_get_slot, ":moria", "qst_oath_of_vengeance", 6),
-      (store_current_day, ":day"),
-      (val_sub, ":day", 10), #checks start after 5 days under oath - #Kham - changed to 10 days
-      (gt, ":day", ":start_day"),
+      # (quest_get_slot, ":target", "qst_oath_of_vengeance", 2),
+      # (quest_get_slot, ":start_day", "qst_oath_of_vengeance", 1),
+      # (quest_get_slot, ":source_fac", "qst_oath_of_vengeance", 4),
+      # (quest_get_slot, ":hero", "qst_oath_of_vengeance", 5),
+      # (quest_get_slot, ":moria", "qst_oath_of_vengeance", 6),
+      # (store_current_day, ":day"),
+      # (val_sub, ":day", 10), #checks start after 5 days under oath - #Kham - changed to 10 days
+      # (gt, ":day", ":start_day"),
       
-      #Kham - Oath of Vengeance Refactor START
-      #(assign,":count", 0), #count current killcount for target faction
-      #(try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
-      #	(spawn_around_party,"p_main_party",":ptemplate"),
-      #	(store_faction_of_party,":fac", reg0),
-      #	(call_script, "script_safe_remove_party", reg0),
-      #	(eq, ":fac", ":target"),
-      #	(store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
-      #	(val_add,":count",":n"),
-      #(try_end),
-      #(val_sub, ":count", 3), # need to kill at least 3 target faction parties to succeed
+      # #Kham - Oath of Vengeance Refactor START
+      # #(assign,":count", 0), #count current killcount for target faction
+      # #(try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
+      # #	(spawn_around_party,"p_main_party",":ptemplate"),
+      # #	(store_faction_of_party,":fac", reg0),
+      # #	(call_script, "script_safe_remove_party", reg0),
+      # #	(eq, ":fac", ":target"),
+      # #	(store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
+      # #	(val_add,":count",":n"),
+      # #(try_end),
+      # #(val_sub, ":count", 3), # need to kill at least 3 target faction parties to succeed
       
-      (faction_get_slot, ":target_faction_strength", ":target", slot_faction_strength),
+      # (faction_get_slot, ":target_faction_strength", ":target", slot_faction_strength),
       
-      (try_begin),
-        (eq, ":target_faction_strength", fac_str_dying),
-        (store_div, ":tld_oath_kills", tld_oath_kills,2),
-      (else_try),
-        (eq, ":target_faction_strength", fac_str_very_weak),
-        (store_sub, ":tld_oath_kills", tld_oath_kills, 30),
-      (else_try),
-        (assign, ":tld_oath_kills", tld_oath_kills),
-      (try_end),
+      # (try_begin),
+        # (eq, ":target_faction_strength", fac_str_dying),
+        # (store_div, ":tld_oath_kills", tld_oath_kills,2),
+      # (else_try),
+        # (eq, ":target_faction_strength", fac_str_very_weak),
+        # (store_sub, ":tld_oath_kills", tld_oath_kills, 30),
+      # (else_try),
+        # (assign, ":tld_oath_kills", tld_oath_kills),
+      # (try_end),
       
-      (try_begin),
-        (faction_slot_eq, ":target", slot_faction_state, sfs_active), # CC: Faction must be alive to fail quest, otherwise you suceed.
-        #(neg|ge, ":count", ":start_killcount"), - #Kham Refactor Commented Out
-        (neg|ge, "$oath_kills", ":tld_oath_kills"),
-        (call_script, "script_fail_quest", "qst_oath_of_vengeance"),
-        (set_show_messages, 0),
-        (call_script, "script_end_quest", "qst_oath_of_vengeance"),
-        (set_show_messages, 1),
-        #(str_store_faction_name, s1, ":source_fac"),
-        (try_begin),
-          (eq, ":moria",1),
-          (display_message, "@You have failed to fulfill your oath to avenge Balin and his company!", color_bad_news),
-        (else_try),
-          (str_store_troop_name, s1, ":hero"),
-          (display_message, "@You have failed to fulfill your oath of vengeance for {s1}'s heroic death!", color_bad_news),
-        (try_end),
-        (call_script, "script_cf_gain_trait_oathbreaker"),
-      (else_try),
-        #(ge, ":count", ":start_killcount"), #Kham Refactor Commented Out
-        (this_or_next|ge, "$oath_kills", ":tld_oath_kills"),
-        (neg|faction_slot_eq, ":target", slot_faction_state, sfs_active), # CC: If faction is not active, you have completed the quest.
-        (call_script, "script_succeed_quest", "qst_oath_of_vengeance"),
-        (set_show_messages, 0),
-        (call_script, "script_end_quest", "qst_oath_of_vengeance"),
-        (set_show_messages, 1),
-        (call_script, "script_cf_gain_trait_oathkeeper"),
-        #(val_sub, ":start_killcount", 3), #Kham Refactor Commented Out
-        #(val_sub, ":count", ":start_killcount"),
-        #(store_mul, reg1, ":count", 4),
-        #(str_store_faction_name, s1, ":source_fac"),
+      # (try_begin),
+        # (faction_slot_eq, ":target", slot_faction_state, sfs_active), # CC: Faction must be alive to fail quest, otherwise you suceed.
+        # #(neg|ge, ":count", ":start_killcount"), - #Kham Refactor Commented Out
+        # (neg|ge, "$oath_kills", ":tld_oath_kills"),
+        # (call_script, "script_fail_quest", "qst_oath_of_vengeance"),
+        # (set_show_messages, 0),
+        # (call_script, "script_end_quest", "qst_oath_of_vengeance"),
+        # (set_show_messages, 1),
+        # #(str_store_faction_name, s1, ":source_fac"),
+        # (try_begin),
+          # (eq, ":moria",1),
+          # (display_message, "@You have failed to fulfill your oath to avenge Balin and his company!", color_bad_news),
+        # (else_try),
+          # (str_store_troop_name, s1, ":hero"),
+          # (display_message, "@You have failed to fulfill your oath of vengeance for {s1}'s heroic death!", color_bad_news),
+        # (try_end),
+        # (call_script, "script_cf_gain_trait_oathbreaker"),
+      # (else_try),
+        # #(ge, ":count", ":start_killcount"), #Kham Refactor Commented Out
+        # (this_or_next|ge, "$oath_kills", ":tld_oath_kills"),
+        # (neg|faction_slot_eq, ":target", slot_faction_state, sfs_active), # CC: If faction is not active, you have completed the quest.
+        # (call_script, "script_succeed_quest", "qst_oath_of_vengeance"),
+        # (set_show_messages, 0),
+        # (call_script, "script_end_quest", "qst_oath_of_vengeance"),
+        # (set_show_messages, 1),
+        # (call_script, "script_cf_gain_trait_oathkeeper"),
+        # #(val_sub, ":start_killcount", 3), #Kham Refactor Commented Out
+        # #(val_sub, ":count", ":start_killcount"),
+        # #(store_mul, reg1, ":count", 4),
+        # #(str_store_faction_name, s1, ":source_fac"),
         
-        #Kham - Oath of Vengeance Refactor END
+        # #Kham - Oath of Vengeance Refactor END
         
-        (try_begin),
-          (neg|faction_slot_eq, ":target", slot_faction_state, sfs_active),
-          (str_store_string, s22, "@Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, "),
-        (else_try),
-          (faction_slot_eq, ":target", slot_faction_state, sfs_active),
-          (str_store_string, s22, "@{!} "),
-        (try_end),
+        # (try_begin),
+          # (neg|faction_slot_eq, ":target", slot_faction_state, sfs_active),
+          # (str_store_string, s22, "@Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. As a result, "),
+        # (else_try),
+          # (faction_slot_eq, ":target", slot_faction_state, sfs_active),
+          # (str_store_string, s22, "@{!} "),
+        # (try_end),
         
-        (try_begin),
-          (eq, ":moria",1),
-          (display_message, "@{s22}You have fulfilled your oath to avenge Balin and his company!", color_good_news),
-        (else_try),
-          (str_store_troop_name, s1, ":hero"),
-          (display_message, "@{s22}You have fulfilled your oath of vengeance for {s1}'s heroic death!", color_good_news),
-        (try_end),
-        (call_script, "script_increase_rank", ":source_fac", reg1),
-      (try_end),
+        # (try_begin),
+          # (eq, ":moria",1),
+          # (display_message, "@{s22}You have fulfilled your oath to avenge Balin and his company!", color_good_news),
+        # (else_try),
+          # (str_store_troop_name, s1, ":hero"),
+          # (display_message, "@{s22}You have fulfilled your oath of vengeance for {s1}'s heroic death!", color_good_news),
+        # (try_end),
+        # (call_script, "script_increase_rank", ":source_fac", reg1),
+      # (try_end),
   ]),
   
   # check for mutiny when orcs in party

@@ -1095,7 +1095,8 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     tld_place_inventory_backup, 
     tld_ai_fadeout_spheres,
     tld_ai_melee_spheres,
-    tld_calculate_wounded    
+    tld_calculate_wounded,
+    tld_kill_or_wounded_triggers,
 
 ] + beorning_shapeshift   #Chaning into bear
 + tld_bow_shield
@@ -1131,7 +1132,8 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
   hp_shield_trigger,
   tld_ai_fadeout_spheres,
   tld_ai_melee_spheres,
-  tld_calculate_wounded  
+  tld_calculate_wounded,
+  tld_kill_or_wounded_triggers
 
   ] + tld_bow_shield
   or [] ) + [
@@ -6827,7 +6829,7 @@ mission_templates = [ # not used in game
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",0)],[(question_box,"@Leave scene?")]),
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",1)],[(question_box,"@Trace back your steps and go back in the open now?")]),
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission), ]),
-	(ti_before_mission_start, 0, 0, [], [ (assign, "$player_is_inside_dungeon",0),(assign, "$dungeons_in_scene",1)]),
+	(ti_before_mission_start, 0, 0, [], [ (assign, "$player_is_inside_dungeon",0),(assign, "$dungeons_in_scene",1), (set_rain, 0,100),]),
 	dungeon_darkness_effect,
 
     ] + ((is_a_wb_mt==1) and [    
@@ -6844,7 +6846,7 @@ mission_templates = [ # not used in game
     (ti_tab_pressed, 0, 0, [],[(question_box,"@Trace back your steps and go back in the open now?")]),
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission)]),
 	(ti_before_mission_start, 0, 0, [], [
-        (assign, "$dungeons_in_scene",1), 
+        (assign, "$dungeons_in_scene",1), (set_rain, 0,100),
         (play_sound, "snd_moria_ambiance", sf_looping), 
         
         (team_set_relation, 2, 1, -1),
@@ -6878,7 +6880,7 @@ mission_templates = [ # not used in game
     (ti_tab_pressed, 0, 0, [],[(question_box,"@There is no way out! Surrender to orcs?")]),
 	(ti_question_answered, 0, 0, [], [ 
 		(store_trigger_param_1,":answer"), (eq,":answer",0), (troop_remove_item, "trp_player","itm_book_of_moria"), (assign, "$recover_after_death_menu", "mnu_recover_after_death_moria"), (jump_to_menu,"mnu_tld_player_defeated"), (finish_mission)]),
-	(ti_before_mission_start, 0, 0, [], [ (set_fog_distance,18,0x000001),(assign, "$dungeons_in_scene",1),(play_sound, "snd_moria_ambiance", sf_looping),]),
+	(ti_before_mission_start, 0, 0, [], [ (set_fog_distance,18,0x000001),(assign, "$dungeons_in_scene",1),(play_sound, "snd_moria_ambiance", sf_looping), (set_rain, 0,100),]),
     (0,0,ti_once,[],[(entry_point_get_position, pos1, 1), (set_spawn_position, pos1),(spawn_item, "itm_orc_throwing_arrow"),]),
 	dungeon_darkness_effect,
     ] + ((is_a_wb_mt==1) and [    
@@ -6909,10 +6911,6 @@ mission_templates = [ # not used in game
 		#  (team_set_relation, 3, 2, 1),
 		(call_script, "script_infiltration_mission_synch_agents_and_troops"),
 		#  (call_script, "script_infiltration_mission_set_hit_points"),
-		# (CppCoder) WTF?
-		(try_for_range, reg10, 1, 32),
-			(entry_point_get_position, reg10, reg10),
-		(try_end),
 		(get_player_agent_no, "$current_player_agent"),
 		(assign, "$alarm_level", 0)]),
 
@@ -6926,7 +6924,7 @@ mission_templates = [ # not used in game
 		(tutorial_box, "@Stealth mini-game tutorial: There are two alarm levels. Level 1 is set off by the guards seeing a dead body or by them spotting you. Level 2 is set off by the guards spotting you when level 1 is already active. Level two is dangerous because guards will continue to arrive. You can avoid being spotted by staying hidden. To hid simply move behind various bits of cover."),
 		(assign, "$sneak_tut", 1)]),
 
-	(3,0,0,[],[ 
+	(3,0,0,[],[ #check different patrol scenarios and call relevant scripts (currently only one script used)
 	  (try_for_agents, ":enemy"),
 		(agent_is_human, ":enemy"),
 		(agent_is_alive, ":enemy"),
@@ -6964,6 +6962,7 @@ mission_templates = [ # not used in game
 		(try_end),
 	(try_end)]),
 
+    #player hiding, based on distance to positions 21-32, which designate cover
 	(5,0,0,[],[ 
 	  (agent_get_position, pos33, "$current_player_agent"),
 	  (try_for_range, ":entries21_32", 21, 32),
@@ -6991,6 +6990,8 @@ mission_templates = [ # not used in game
 		(assign, "$player_hiding", 0),
 	  (try_end)]),
 
+    #check for dead bodies, assign alarm level
+    #can we make it so that one corpse can only set off alarm once?
 	(3,0,0,[],[ 
 	  (try_for_agents, ":agent"),
 		(agent_is_human, ":agent"),
@@ -7015,6 +7016,7 @@ mission_templates = [ # not used in game
 		(try_end),
 	  (try_end)]),
 
+    #reduce alarm level 25s after alarm, check and increase meta alarm
 	(5,0,0,[(store_mission_timer_a, ":time"),(ge, ":time", 25)],[ 
 	  (try_begin),
         (ge, "$meta_alarm", 10),
@@ -7034,6 +7036,7 @@ mission_templates = [ # not used in game
 		(reset_mission_timer_a),
 	  (try_end)]),
 
+    #spawn reinforcements at alarm level 2
 	(10,0,0,[(eq, "$alarm_level", 2)],[
 	  (try_begin),
 		(eq, "$spawn_cycle", 0),
@@ -7046,6 +7049,7 @@ mission_templates = [ # not used in game
 	   (else_try),(eq, ":rnd", 1),(eq, "$spawn_cycle", 1),(add_reinforcements_to_entry, 20, 1),
 	  (try_end)]),
 
+    #guards detect player
 	(3,0,0,[],[ 
 	  (try_for_agents, ":agent"),
 		(agent_is_human, ":agent"),
