@@ -2518,7 +2518,11 @@ ai_scripts = [
 
             (eq,":hero",":faction_marshall"), # marshall/king will always get a host if their faction strength is over 1000
             (assign,":check_pass",1),
-         (else_try),
+         (else_try), #oath of vengeance target always gets a host
+            (check_quest_active, "qst_oath_personal"),
+            (quest_slot_eq, "qst_oath_personal", slot_quest_target_troop, ":hero"),
+            (assign,":check_pass",1),
+        (else_try),
             (lt, ":hosts", ":strength"), # faction passes strength check 
             (assign,":check_pass",1),
          (else_try),

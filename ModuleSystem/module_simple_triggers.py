@@ -2636,6 +2636,9 @@ simple_triggers = [
             (store_troop_faction, ":defeated_lord_faction", ":defeated_lord"),
             (eq, ":defeated_lord_faction", ":cur_kingdom"),
             (troop_set_slot, ":defeated_lord", slot_troop_occupation, 0),
+            (troop_set_slot, ":defeated_lord", slot_troop_wound_mask, wound_death), #show them as dead in the reports
+            (call_script, "script_update_troop_notes", ":defeated_lord"),
+            
             (store_random_in_range, ":chance", 0, 100), #chance to join closest kingdom of the same race, based on faction leader race
             (le, ":chance", 30),
             (faction_get_slot, ":cur_kingdom_leader", ":cur_kingdom", slot_faction_leader),
@@ -2699,6 +2702,7 @@ simple_triggers = [
             (ge, ":closest_ally", kingdoms_begin),
             (troop_set_faction, ":defeated_lord", ":closest_ally"), #original faction (for reinforcements) should be stored in slot_troop_original_faction which is set in script_start_game
             (troop_set_slot, ":defeated_lord", slot_troop_occupation, slto_kingdom_hero),
+            (troop_set_slot, ":defeated_lord", slot_troop_wound_mask, 0), #revive
             (troop_set_slot, ":defeated_lord", slot_troop_leaded_party, -1),
             (store_current_day, ":day_of_defeat"),
             (troop_set_slot, ":defeated_lord", slot_troop_respawn_timer, ":day_of_defeat"),
@@ -4217,6 +4221,33 @@ simple_triggers = [
 		(store_random_in_range, ":rand", 8, 15),
 		(party_force_add_members, ":spawned", ":target_troop", ":rand"),
 	  (try_end),
+    (try_end),
+
+    (try_begin),
+      (check_quest_active, "qst_oath_personal"),
+      (neg|check_quest_concluded, "qst_oath_personal"),
+      (neg|check_quest_succeeded, "qst_oath_personal"),
+      (quest_get_slot, ":target", "qst_oath_personal", slot_quest_target_troop),
+      (try_begin),
+        (troop_slot_eq, ":target", slot_troop_wound_mask, wound_death),
+        (troop_slot_eq, ":target", slot_troop_occupation, 0),
+        (str_store_string, s22, "@Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. The general consensus is that you are released from your oath."),
+        (call_script, "script_cancel_quest", "qst_oath_personal"),
+        (jump_to_menu, "mnu_oath_quest_helper"),
+      (else_try),
+        (troop_get_slot, ":target_party", ":target", slot_troop_leaded_party),
+        (ge, ":target_party", 1),
+        (neg|party_is_in_any_town, ":target_party"),
+        (call_script, "script_find_theater", "p_main_party"),
+        (assign, ":player_theater", reg0),
+        (call_script, "script_find_theater", ":target_party"),
+        (assign, ":enemy_theater", reg0),
+        (eq, ":enemy_theater", ":player_theater"),
+        (call_script, "script_update_troop_location_notes", ":target", 1),
+        (call_script, "script_get_information_about_troops_position", ":target", 0),
+        (str_store_string, s22, "@You hear rumors that {s1}"),
+        (jump_to_menu, "mnu_oath_quest_helper"),
+      (try_end),
     (try_end),
       
 ]),

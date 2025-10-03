@@ -434,6 +434,10 @@ quests = [
   "{!}Placeholder"
 ),
 
+( "oath_personal", "Oath of Vengeance", qf_random_quest,
+  "{!}Placeholder"
+  ),
+
   ("quests_end", "{!}Quests End", qf_random_quest, "."),
 ]
 

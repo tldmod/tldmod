@@ -2875,6 +2875,9 @@ scripts = [
 							(val_sub, ":player_level", 12),
 							(val_div, ":player_level", 2),
 							(lt,":rnd", ":player_level"),
+                            (gt, ":nonempty_winner_party", 0),
+                            (party_stack_get_troop_id, ":leader_troop_id", ":nonempty_winner_party", 0),
+                            (is_between, ":leader_troop_id", kingdom_heroes_begin, kingdom_heroes_end), #disable non-kingdom parties capturing enemy lords
 							(is_between, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
                             (store_troop_faction, ":cur_troop_faction", ":cur_troop_id"),
                             (neg|faction_slot_eq, ":cur_troop_faction", slot_faction_marshall, ":cur_troop_id"), #make sure it's not a marshall
@@ -2894,7 +2897,7 @@ scripts = [
                             (store_sub, ":last_chance", ":total_lords", 1),
                             (val_mul, ":last_chance", 10),
                             (lt, ":rnd_last_chance", ":last_chance"), # die for real?
-                            (gt, ":nonempty_winner_party", 0),
+                            (troop_set_slot, ":cur_troop_id", slot_troop_killed_by, ":leader_troop_id"),
 							(call_script, "script_hero_leader_killed_abstractly", ":cur_troop_id",":nonempty_winner_party"),
 						(try_end),
 					(try_end),
@@ -3975,8 +3978,16 @@ scripts = [
       		(val_div, ":limit", 3),
 	(try_end),
 
+    (try_begin), #if hero is oath of vengeance target, their party grows
+        (check_quest_active, "qst_oath_personal"),
+        (quest_slot_eq, "qst_oath_personal", slot_quest_target_troop, ":party_leader"),
+        (quest_get_slot, ":progress", "qst_oath_personal", slot_quest_current_state),
+        (val_add, ":progress", 100),
+        (val_mul, ":limit", ":progress"),
+      	(val_div, ":limit", 100), 
+    (try_end),
 
-    (try_begin), #if leader is an exile, they have a smaller party
+    (try_begin), #if hero is an exile, they have a smaller party
         (is_between, ":party_leader", kingdom_heroes_begin, kingdom_heroes_end),
         (troop_get_slot, ":original_faction", ":party_leader", slot_troop_original_faction),
         (neq, ":faction_id", ":original_faction"),
@@ -22148,11 +22159,16 @@ scripts = [
 		(try_begin),
 			(neq,":npc", "trp_player"),
 			(eq, "$tld_option_death_npc", 1),
+            (party_stack_get_troop_id, ":enemy_leader", "p_collective_enemy", 0),
+            (troop_slot_eq, ":enemy_leader", slot_troop_occupation, slto_kingdom_hero),
+            (troop_set_slot, ":npc", slot_troop_killed_by, ":enemy_leader"),
+            (store_troop_faction, ":enemy_faction", ":enemy_leader"),
+            (faction_get_slot, ":place", ":enemy_faction", slot_faction_capital), #workaround to get a stable faction party incase the original killer party is lost
 			(display_message, "@{s1}_has_been_killed.", color_bad_news),
 			(troop_set_slot, ":npc", slot_troop_wound_mask, wound_death),
 			(remove_member_from_party,":npc","p_main_party"),
 			(add_troop_to_site, ":npc", "scn_erebor_castle_2", 0), #Teleport them somewhere else! 
-			(call_script, "script_build_mound_for_dead_hero", ":npc", "p_main_party"),
+			(call_script, "script_build_mound_for_dead_hero", ":npc", ":place"),
 		(else_try),
 			(eq,":npc", "trp_player"),
 			(eq, "$tld_option_death_player", 1),
@@ -22353,7 +22369,7 @@ scripts = [
     (party_set_slot, reg0, slot_mound_state, 1),
     (party_set_slot, reg0, slot_party_commander_party, ":hero"),
     (party_set_slot, reg0, slot_mound_killer_faction, ":place_faction"),        
-    (call_script, "script_move_party_to_hardcoded_locations", reg0), #Checks if party needs to be moved. 
+    (call_script, "script_move_party_to_hardcoded_locations", reg0), #Checks if party needs to be moved.
  ]),
 #script_display_dead_heroes
 ("display_dead_heroes",[
@@ -23259,7 +23275,7 @@ scripts = [
       #(display_message, "@Renown value for this battle is {reg8}.",0xFFFFFFFF),
 ]),
   
-# script_injure_companions
+# script_injure_companions #unused - instead script_injury_routine is called directly
 ("injure_companions",[
  	 (try_begin),
 		(eq, "$tld_option_injuries",1),

@@ -11,6 +11,7 @@ from ID_party_templates import *
 from header_troops import *
 from header_items import * #TLD
 from header_terrain_types import * #TLD
+from header_sounds import * #TLD
 
 from module_constants import *
 from module_info import wb_compile_switch as is_a_wb_dialog
@@ -2440,6 +2441,43 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
   (call_script,"script_stand_back"),
   (call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_prisoner_released_default")]],
 #Troop commentary changes end
+
+#InVain: Oath of Vengeance personal
+[anyone,"start", [(eq,"$talk_context",tc_hero_defeated_vengeance),
+                    (troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero)],
+"{!}{s43}", "defeat_lord_answer_vengeance",
+   [(troop_set_slot, "$g_talk_troop", slot_troop_leaded_party, -1),
+    (call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_surrender_offer_default")]],
+
+[anyone|plyr,"defeat_lord_answer_vengeance", [],
+"{s5}! You killed {s6} and I have sworn to avenge {reg11?her:him}. I hearby fulfill my oath. You will die now!", "defeat_lord_answer_vengeance_1",
+   [ (str_store_troop_name, s5, "$g_talk_troop"),
+     (quest_get_slot, ":troop_no", "qst_oath_personal", slot_quest_object_troop),
+     (str_store_troop_name, s6, ":troop_no"),
+     (troop_get_type, reg11, ":troop_no"),(try_begin),(gt, reg11, 1), (assign, reg11, 0), (try_end),
+     ]],
+
+[anyone,"defeat_lord_answer_vengeance_1", [], "One day you will pay.... Aaa-ghgllr!...", "close_window",[
+    (mission_cam_set_mode, 1, 1, 0),
+    (agent_set_animation, "$g_talk_agent", "anim_fall_body_back"), 
+    (troop_get_type, ":type", "$g_talk_troop"),
+    (try_begin),
+        (eq, ":type", tf_female),
+        (play_sound, "snd_woman_die", sf_vol_10),
+    (else_try),
+        (eq, ":type", tf_orc),
+        (play_sound, "snd_orc_die", sf_vol_10),
+    (else_try),
+        (this_or_next|eq, ":type", tf_uruk),
+        (eq, ":type", tf_urukhai),
+        (play_sound, "snd_uruk_die", sf_vol_10),
+    (else_try),
+        (play_sound, "snd_man_die", sf_vol_10),
+    (try_end),
+	(troop_set_slot, "$g_talk_troop", slot_troop_wound_mask, wound_death),
+    (call_script, "script_update_troop_notes", "$g_talk_troop"),
+    (jump_to_menu, "mnu_fulfilled_oath_personal"),
+    ]],
 
 #Troop commentaries changes begin
 [anyone,"start", [(eq,"$talk_context",tc_party_encounter),

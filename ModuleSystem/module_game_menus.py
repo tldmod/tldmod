@@ -6195,18 +6195,49 @@ game_menus = [
             (store_current_day, ":day_of_defeat"),
             (troop_set_slot, ":stack_troop", slot_troop_respawn_timer, ":day_of_defeat"),
 
-            (try_begin), #InVain: Invert order of this check, now we check if they can be captured, not if they can escape
+            (try_begin), #InVain: new oath of vengeance
+              (str_clear, s18),
+              (check_quest_active, "qst_oath_personal"),
+              (quest_slot_eq, "qst_oath_personal", slot_quest_target_troop, ":stack_troop"),
+              (troop_set_slot, ":stack_troop", slot_troop_respawn_timer, 0), #no respawn delay for hunted heroes
+              (quest_get_slot, ":progress", "qst_oath_personal", slot_quest_current_state),
+              (val_add, ":progress", 20),
+              (quest_set_slot, "qst_oath_personal", slot_quest_current_state, ":progress"),
+              #(gt, ":progress", 20),
+              (assign, ":escape", 1),
+              (try_begin),
+                  (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end), #only kill regular lords for now. Marshalls and Kings have to be defeated by quest progress
+                  # (store_random_in_range, ":rand", 0, 100),
+                  # (lt, ":rand", ":progress"),
+                  (eq, 1, 0),
+                  (assign, "$talk_context", tc_hero_defeated_vengeance),
+                  (try_begin),
+                    (troop_get_inventory_slot, ":horse", ":stack_troop", ek_horse),
+                    (gt, ":horse", 1),
+                    (troop_remove_item, ":stack_troop", ":horse"),
+                  (try_end),
+                  (call_script, "script_setup_troop_meeting",":stack_troop", ":stack_troop_dna"),
+                  (assign, ":escape", 0),
+              (else_try),
+                  #(ge, ":progress", 60),
+                  (jump_to_menu, "mnu_fulfilled_oath_personal_nokill"),
+                  (assign, ":escape", 0),
+              (try_end), 
+              (eq, ":escape", 0),
+              (assign, ":done", 1),                
+            (else_try), #InVain: Invert order of this check, now we check if they can be captured, not if they can escape
               (call_script, "script_cf_check_hero_can_escape_from_player", ":stack_troop"),
               # (troop_set_slot, ":stack_troop", slot_troop_prisoner_of_party, "p_main_party"),
               # (party_force_add_prisoners, "p_main_party", ":stack_troop", 1),#take prisoner
               (assign, "$talk_context", tc_hero_defeated),
               (call_script, "script_setup_troop_meeting",":stack_troop", ":stack_troop_dna"),
-              (assign, ":done", 1),              
+              (assign, ":done", 1),
             (else_try),
               (str_store_troop_name, s1, ":stack_troop"),
               (str_store_faction_name, s3, ":defeated_faction"),
               (str_store_string, s17, "@{s1} of {s3} managed to escape."),
               (display_log_message, "@{!}{s17}"),
+              (display_log_message, "@{!}{s18}"),
               (jump_to_menu, "mnu_enemy_slipped_away"),
               (assign, ":done", 1),
             (try_end),
@@ -6566,7 +6597,7 @@ game_menus = [
     [("continue",[],"Continue...",[(change_screen_return)]),]
  ),
 ( "enemy_slipped_away",0,
-    "{!}^^^^^{s17}",
+    "{!}^^^^^{s17}^^{s18}",
     "none",
     [],
     [("continue",[],"Continue...",[(jump_to_menu,"mnu_total_victory")]),]
@@ -12476,7 +12507,7 @@ game_menus = [
 					(jump_to_menu, "mnu_ancient_ruins")]),  
  ]),  
 ( "burial_mound", 0, 
-  "You_approach_the_burial_mound_of_{s1}_of_{s2}._\
+  "^You_approach_the_burial_mound_of_{s1}_of_{s2}._\
   Defeated in battle by the forces of {s28}.\
   It_is_heaped_with_the_notched_weapons_of_his_fallen_enemies.", "none",
    [	(set_background_mesh, "mesh_draw_mound_visit"),
@@ -12486,7 +12517,14 @@ game_menus = [
 		(str_store_faction_name, s2, reg1),
 		(str_store_troop_name, s1, ":hero"),
 		(party_get_slot, ":killer_faction", ":mound", slot_mound_killer_faction),
-		(str_store_faction_name, s28, ":killer_faction"),], [
+        (troop_get_slot, ":killer", ":hero", slot_troop_killed_by),
+        (try_begin), #backup
+            (lt, ":killer", 1),
+            (faction_get_slot, ":killer", ":killer_faction", slot_faction_marshall),
+            (troop_set_slot, ":hero", slot_troop_killed_by, ":killer"),
+        (try_end),
+        (str_store_troop_name, s28, ":killer"),
+        ], [
   ("pay_respects", [(store_encountered_party, ":mound"),
 					(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 					(store_troop_faction,":faction",":hero"),
@@ -12502,8 +12540,24 @@ game_menus = [
 					(gt, reg1, 0),
 					(party_get_slot, ":state", ":mound", slot_mound_state),
 					(eq, ":state", 1),
-					(check_quest_active|neg, "qst_oath_of_vengeance")],
-   "Swear_an_oath_of_vengeance!",  [(jump_to_menu, "mnu_burial_mound_oath")]),  
+					(check_quest_active|neg, "qst_oath_of_vengeance"),
+                    (store_character_level, ":level", "trp_player"), #mustn't be a nobody in order to swear an oath
+                    (ge, ":level", 15), 
+                    (call_script, "script_troop_get_player_relation", ":hero"),
+                    (ge, reg0, 50), #must've been a friend
+                    ],
+   "Swear_an_oath_of_vengeance!",  [
+                    (try_begin),
+                        (store_encountered_party, ":mound"),
+                        (party_get_slot, ":hero", ":mound", slot_party_commander_party),
+                        (troop_get_slot, ":killer", ":hero", slot_troop_killed_by),
+                        (neg|troop_slot_eq, ":killer", slot_troop_wound_mask, wound_death),
+                        (troop_slot_eq, ":killer", slot_troop_occupation, slto_kingdom_hero), #faction not defeated yet
+                        (jump_to_menu, "mnu_burial_mound_oath"),
+                    (else_try),
+                        (display_message, "@You hear that {s1} has already been avenged by the death of {s28}."),
+                    (try_end),
+                    ]),  
   ("despoil",      [(store_encountered_party, ":mound"),
 					(str_store_party_name, s1, ":mound"),
 					(party_get_slot, ":hero", ":mound", slot_party_commander_party),
@@ -12532,61 +12586,30 @@ game_menus = [
  ]),  
 ( "burial_mound_oath", 0, 
   "You loudly swear an oath of vengeance for the death of {s4}. \
-  You would relentlessly seek out the forces of {s3} and destroy them. \
+  You would relentlessly seek out {s3} and destroy {reg11?her:him}. \
   Your words carry far on the wind and who can say that they were not heard beyond the sea?", "none",
 	[(set_background_mesh, "mesh_draw_mound_oath"),
 	(store_encountered_party, ":mound"),
 	(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 	(str_store_troop_name, s4, ":hero"),
-	(store_troop_faction, ":target", ":hero"),
-	(quest_set_slot, "qst_oath_of_vengeance", 4, ":target"), # remember source ally faction
-	(quest_set_slot, "qst_oath_of_vengeance", 5, ":hero"), # CppCoder: remember source hero
-	(party_get_slot, ":killer_faction", ":mound", slot_mound_killer_faction),
-	(assign,":count",1000000),  # choose nearest enemy capital as target faction
-	(assign,":target", 0),
+	(store_troop_faction, ":faction", ":hero"),
+	(quest_set_slot, "qst_oath_personal", slot_quest_object_faction, ":faction"), # remember source ally faction
+	(quest_set_slot, "qst_oath_personal", slot_quest_object_troop, ":hero"), # CppCoder: remember source hero
+	#(party_get_slot, ":killer_faction", ":mound", slot_mound_killer_faction),
 	
-	(try_begin),
-		(faction_slot_eq, ":killer_faction", slot_faction_state, sfs_active),
-		(assign, ":target", ":killer_faction"),
-	(else_try),
-		(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
-			(store_relation, ":dist", ":fac", "fac_player_faction"),
-			(lt, ":dist", 0), #enemies only
-			(faction_slot_eq,":fac",slot_faction_state, sfs_active), # enemy not dead yet
-			(faction_get_slot, ":capital", ":fac", slot_faction_capital),
-			(store_distance_to_party_from_party,":dist",":mound",":capital"),  # choose nearest enemy capital for vengeance
-			(lt, ":dist", ":count"),
-			(assign,":count",":dist"),
-			(assign,":target", ":fac"),
-		(try_end),
-	(try_end),
-	
-	(str_store_faction_name, s3, ":target"),
-	(store_current_day, ":day"),
-	(quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
-	(quest_set_slot, "qst_oath_of_vengeance", 2, ":target"), # target faction
-    (quest_set_slot, "qst_oath_of_vengeance", 7, 0), # target faction 2
-    (quest_set_slot, "qst_oath_of_vengeance", 6, 0),
-	
-	#Kham - Oath of Vengeance Refactor Start
-	#(assign,":count", 0), # count and store initial killcount of target faction' parties
-	#(try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
-	#	(spawn_around_party,"p_main_party",":ptemplate"),
-	#	(store_faction_of_party,":fac", reg0),
-	#	(call_script, "script_safe_remove_party", reg0),
-	#	(eq, ":fac", ":target"),
-	#	(store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
-	#	(val_add,":count",":n"),
-	#(try_end),
-	#(quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
-	
-	(assign, "$oath_kills",0),
-	#Kham - Oath of Vengeance Refactor END
-
+	(troop_get_slot, ":killer", ":hero", slot_troop_killed_by),
+    (str_store_troop_name, s3, ":killer"),
+    (troop_get_type, reg11, ":killer"),(try_begin),(gt, reg11, 1), (assign, reg11, 0), (try_end),
+    
+	#(store_current_day, ":day"),
+	(quest_set_slot, "qst_oath_personal", slot_quest_expiration_days, 90),
+	(quest_set_slot, "qst_oath_personal", slot_quest_target_troop, ":killer"), # target faction
+    (quest_set_slot, "qst_oath_personal", slot_quest_current_state, 0),
+    
 	(party_set_slot, ":mound", slot_mound_state, 3), # no more oaths from here
-        (setup_quest_text, "qst_oath_of_vengeance"),
-        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the troops of {s3} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
-	(call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player"),
+        (setup_quest_text, "qst_oath_personal"),
+        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance against {s3}. You must now seek out and fight {s3} and kill {reg11?her:him} if possible. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
+	(call_script, "script_start_quest", "qst_oath_personal", "trp_player"),
 	],[
     ("leave_mound", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
  ]),
@@ -12599,51 +12622,26 @@ game_menus = [
 	(store_encountered_party, ":mound"),
 	(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 	(str_store_troop_name, s4, ":hero"),
-	(store_troop_faction, ":target", ":hero"),
-	(quest_set_slot, "qst_oath_of_vengeance", 4, ":target"), # remember source ally faction
-	(quest_set_slot, "qst_oath_of_vengeance", 5, ":hero"), # CppCoder: remember source hero
+	(store_troop_faction, ":faction", ":hero"),
+	(quest_set_slot, "qst_oath_personal", slot_quest_object_faction, ":faction"), # remember source ally faction
+	(quest_set_slot, "qst_oath_personal", slot_quest_object_troop, ":hero"), # CppCoder: remember source hero
+	#(party_get_slot, ":killer_faction", ":mound", slot_mound_killer_faction),
 	
-	(assign,":count",10000000),  # choose nearest enemy capital as target faction
-	(assign,":target", 0),
-	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
-		(store_relation, ":rel", ":fac", "fac_player_faction"),
-		(lt, ":rel", 0), #enemies only
-		(faction_slot_eq,":fac",slot_faction_state, sfs_active), # enemy not dead yet
-		(faction_get_slot, ":capital", ":fac", slot_faction_capital),
-		(store_distance_to_party_from_party,":dist",":mound",":capital"),  # choose nearest enemy capital for vengeance
-		(lt, ":dist", ":count"),
-			(assign,":count",":dist"),
-			(assign,":target", ":fac"),
-	(try_end),
-	
-	(str_store_faction_name, s3, ":target"),
-	(store_current_day, ":day"),
-	(quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
-	(quest_set_slot, "qst_oath_of_vengeance", 2, ":target"), # target faction
-    (quest_set_slot, "qst_oath_of_vengeance", 7, 0), # target faction 2
-    (quest_set_slot, "qst_oath_of_vengeance", 6, 0),
-	
-	#Kham - Oath of Vengeance Refactor Start
-	#(assign,":count", 0), # count and store initial killcount of target faction' parties
-	#(try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
-	#	(spawn_around_party,"p_main_party",":ptemplate"),
-	#	(store_faction_of_party,":fac", reg0),
-	#	(call_script, "script_safe_remove_party", reg0),
-	#	(eq, ":fac", ":target"),
-	#	(store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
-	#	(val_add,":count",":n"),
-	#(try_end),
-	#(quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
-	
-	(assign, "$oath_kills",0),
-	#Kham - Oath of Vengeance Refactor END
-
+	(troop_get_slot, ":killer", ":hero", slot_troop_killed_by),
+    (str_store_troop_name, s3, ":killer"),
+    (troop_get_type, reg11, ":killer"),(try_begin),(gt, reg11, 1), (assign, reg11, 0), (try_end),
+    
+	#(store_current_day, ":day"),
+	(quest_set_slot, "qst_oath_personal", slot_quest_expiration_days, 90),
+	(quest_set_slot, "qst_oath_personal", slot_quest_target_troop, ":killer"), # target faction    
+    (quest_set_slot, "qst_oath_personal", slot_quest_current_state, 0),
+    
 	(party_set_slot, ":mound", slot_mound_state, 3), # no more oaths from here
-        (setup_quest_text, "qst_oath_of_vengeance"),
-        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the troops of {s3} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
-	(call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player"),
+        (setup_quest_text, "qst_oath_personal"),
+        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance against {s3}. You must now seek out and fight {s3} and kill {reg11?her:him} if possible. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
+	(call_script, "script_start_quest", "qst_oath_personal", "trp_player"),
 	],[
-    ("leave_pyre_oath", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]),
+    ("leave_mound", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
  ]),
 
 ( "burial_mound_despoil", 0, 
@@ -12662,7 +12660,7 @@ game_menus = [
  ("leave_mound", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
  ]),
 ( "funeral_pyre", 0, 
-  "You approach the charred remnants of the funeral pyre of {s3} of {s2}. \
+  "^You approach the charred remnants of the funeral pyre of {s3} of {s2}. \
   Defeated in battle by the forces of {s28}.\
   Here, the corpse was ceremoniously burned by his personal bodyguards. \
   Nothing of value remains.", "none", 
@@ -12674,14 +12672,19 @@ game_menus = [
 	(str_store_faction_name, s2, ":faction"),
 	(party_get_slot, ":killer_faction", ":mound", slot_mound_killer_faction),
 	(str_store_faction_name, s28, ":killer_faction"),],[
- ("swear_oath",   [(store_encountered_party, ":mound"),
+  ("swear_oath",   [(store_encountered_party, ":mound"),
 					(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 					(store_troop_faction,":faction",":hero"),
-					(store_relation, ":local2", ":faction", "fac_player_faction"),
-					(gt, ":local2", 0),
+					(store_relation, reg1, ":faction", "fac_player_faction"),
+					(gt, reg1, 0),
 					(party_get_slot, ":state", ":mound", slot_mound_state),
 					(eq, ":state", 1),
-					(check_quest_active|neg, "qst_oath_of_vengeance")],
+					(check_quest_active|neg, "qst_oath_of_vengeance"),
+                    (store_character_level, ":level", "trp_player"), #mustn't be a nobody in order to swear an oath
+                    (ge, ":level", 15), 
+                    (call_script, "script_troop_get_player_relation", ":hero"),
+                    (ge, reg0, 50), #must've been a friend
+                    ],
    "Swear_an_oath_of_vengeance!",  [(jump_to_menu, "mnu_funeral_pyre_oath")]),  
  ("leave_pyre", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]), 
  ]),
@@ -13105,6 +13108,189 @@ game_menus = [
    (call_script, "script_wott_reassign_faction_sides"),]),
    ],
  ),
+ 
+( "fulfilled_oath_personal",0,
+    "^As {s5} lies in the dust before you, a heavy burden is lifted from your shoulders. The death of {s6} has been avenged!",
+    "none",
+    [    
+    (quest_get_slot, ":target", "qst_oath_personal", slot_quest_target_troop),
+    (str_store_troop_name, s10, ":target"),
+    (quest_get_slot, ":troop_no", "qst_oath_personal", slot_quest_object_troop),
+    (str_store_troop_name, s11, ":troop_no"),
+    (call_script, "script_succeed_quest", "qst_oath_personal"),
+    (set_show_messages, 0),
+    (call_script, "script_end_quest", "qst_oath_personal"),
+    (set_show_messages, 1),
+    (call_script, "script_cf_gain_trait_oathkeeper"),
+    (assign, ":winning_side_faction", "$players_kingdom"),
+    (troop_get_type, ":winning_side_race", trp_player),
+    (troop_get_type, ":target_type", ":target"),    
+    
+    (try_begin),
+        # orc VS anything not orc
+        ( eq, ":winning_side_race", tf_orc ),
+        (neq, ":target_type",  tf_orc ),
+        (set_background_mesh, "mesh_draw_victory_orc"),  # specific victory-loss image:  orcs VS humans
+    (else_try),	
+        # orc VS orc
+        ( eq, ":winning_side_race", tf_orc ),
+        (this_or_next| eq, ":target_type",  tf_orc ),
+        (this_or_next| eq, ":target_type",  tf_urukhai ),
+        ( eq, ":target_type", tf_uruk ),
+        (set_background_mesh, "mesh_draw_victory_orc_orc"),  # specific victory-loss image:  orcs VS orcs
+    (else_try),
+        # uurk VS anything
+        (eq, ":winning_side_race", tf_uruk ),
+        (set_background_mesh, "mesh_draw_victory_uruk"),  # specific victory-loss image: dwarves VS anything
+    (else_try),
+        # dwarf VS anything
+        (eq, ":winning_side_race", tf_dwarf ),
+        (set_background_mesh, "mesh_draw_victory_dwarf"),  # specific victory-loss image: dwarves VS anything
+    (else_try),
+        # evil men VS anything
+        (eq, ":winning_side_faction", "fac_mordor" ), #Mordor non-orc
+        (set_background_mesh, "mesh_draw_victory_evilman"),  # specific victory-loss image: evil men VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_gondor" ),
+        (set_background_mesh, "mesh_draw_victory_gondor"), # specific victory-loss image: gondor VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_rohan" ),
+        (set_background_mesh, "mesh_draw_victory_rohan"), # specific victory-loss image: rohan VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_imladris" ),
+        (set_background_mesh, "mesh_draw_victory_rivendell"), # specific victory-loss image: rivendell VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_woodelf" ),
+        (set_background_mesh, "mesh_draw_victory_mirkwood"), # specific victory-loss image: mirkwood VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_dunland" ),
+        (set_background_mesh, "mesh_draw_victory_dunland"), # specific victory-loss image: dunland VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_khand" ),
+        (set_background_mesh, "mesh_draw_victory_khand"), # specific victory-loss image: khand VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_harad" ),
+        (set_background_mesh, "mesh_draw_victory_harad"), # specific victory-loss image: harad VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_rhun" ),
+        (set_background_mesh, "mesh_draw_victory_rhun"), # specific victory-loss image: rhun VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_beorn" ),
+        (set_background_mesh, "mesh_draw_victory_beornings"), # specific victory-loss image: beorn VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_umbar" ),
+        (set_background_mesh, "mesh_draw_victory_corsairs"), # specific victory-loss image: umbar VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_dale" ),
+        (set_background_mesh, "mesh_draw_victory_dale"), # specific victory-loss image: dale VS anything
+    (try_end),
+    
+    ],
+    [("continue",[],"Continue...",[(jump_to_menu,"mnu_total_victory")]),]
+ ),
+ 
+( "fulfilled_oath_personal_nokill",0,
+    "^Your troops recognize that you have defeated {s10} repeatedly and should rightfully be seen as {reg11?her:his} worst foe. Your oath is considered fulfilled. ^^The enemy paid dearly for the killing of {s11}. Still, there is a stale taste to this victory.",
+    "none",
+    [    
+    (quest_get_slot, ":target", "qst_oath_personal", slot_quest_target_troop),
+    (str_store_troop_name, s10, ":target"),
+    (troop_get_type, reg11, ":target"),(try_begin),(gt, reg11, 1), (assign, reg11, 0), (try_end),
+    (quest_get_slot, ":troop_no", "qst_oath_personal", slot_quest_object_troop),
+    (str_store_troop_name, s11, ":troop_no"),
+    (call_script, "script_succeed_quest", "qst_oath_personal"),
+    (set_show_messages, 0),
+    (call_script, "script_end_quest", "qst_oath_personal"),
+    (set_show_messages, 1),
+    (assign, ":winning_side_faction", "$players_kingdom"),
+    (troop_get_type, ":winning_side_race", trp_player),
+    (troop_get_type, ":target_type", ":target"),    
+    
+    (try_begin),
+        # orc VS anything not orc
+        ( eq, ":winning_side_race", tf_orc ),
+        (neq, ":target_type",  tf_orc ),
+        (set_background_mesh, "mesh_draw_victory_orc"),  # specific victory-loss image:  orcs VS humans
+    (else_try),	
+        # orc VS orc
+        ( eq, ":winning_side_race", tf_orc ),
+        (this_or_next| eq, ":target_type",  tf_orc ),
+        (this_or_next| eq, ":target_type",  tf_urukhai ),
+        ( eq, ":target_type", tf_uruk ),
+        (set_background_mesh, "mesh_draw_victory_orc_orc"),  # specific victory-loss image:  orcs VS orcs
+    (else_try),
+        # uurk VS anything
+        (eq, ":winning_side_race", tf_uruk ),
+        (set_background_mesh, "mesh_draw_victory_uruk"),  # specific victory-loss image: dwarves VS anything
+    (else_try),
+        # dwarf VS anything
+        (eq, ":winning_side_race", tf_dwarf ),
+        (set_background_mesh, "mesh_draw_victory_dwarf"),  # specific victory-loss image: dwarves VS anything
+    (else_try),
+        # evil men VS anything
+        (eq, ":winning_side_faction", "fac_mordor" ), #Mordor non-orc
+        (set_background_mesh, "mesh_draw_victory_evilman"),  # specific victory-loss image: evil men VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_gondor" ),
+        (set_background_mesh, "mesh_draw_victory_gondor"), # specific victory-loss image: gondor VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_rohan" ),
+        (set_background_mesh, "mesh_draw_victory_rohan"), # specific victory-loss image: rohan VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_imladris" ),
+        (set_background_mesh, "mesh_draw_victory_rivendell"), # specific victory-loss image: rivendell VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_woodelf" ),
+        (set_background_mesh, "mesh_draw_victory_mirkwood"), # specific victory-loss image: mirkwood VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_dunland" ),
+        (set_background_mesh, "mesh_draw_victory_dunland"), # specific victory-loss image: dunland VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_khand" ),
+        (set_background_mesh, "mesh_draw_victory_khand"), # specific victory-loss image: khand VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_harad" ),
+        (set_background_mesh, "mesh_draw_victory_harad"), # specific victory-loss image: harad VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_rhun" ),
+        (set_background_mesh, "mesh_draw_victory_rhun"), # specific victory-loss image: rhun VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_beorn" ),
+        (set_background_mesh, "mesh_draw_victory_beornings"), # specific victory-loss image: beorn VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_umbar" ),
+        (set_background_mesh, "mesh_draw_victory_corsairs"), # specific victory-loss image: umbar VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_dale" ),
+        (set_background_mesh, "mesh_draw_victory_dale"), # specific victory-loss image: dale VS anything
+    (try_end),
+
+    (set_fixed_point_multiplier, 100),
+    (position_set_x, pos0, 65),
+    (position_set_y, pos0, 30),
+    (position_set_z, pos0, 100),
+    (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", ":target", pos0)
+    
+    ],
+    [("continue",[],"Continue...",[(jump_to_menu,"mnu_total_victory")]),]
+ ), 
+ 
+( "oath_quest_helper",0,
+    "{!}^{s22}",
+    "none",
+    [    
+    (quest_get_slot, ":target", "qst_oath_personal", slot_quest_target_troop),
+    (str_store_troop_name, s10, ":target"),
+
+    (set_fixed_point_multiplier, 100),
+    (position_set_x, pos0, 65),
+    (position_set_y, pos0, 30),
+    (position_set_z, pos0, 100),
+    (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", ":target", pos0)
+    
+    ],
+    [("continue",[],"Continue...",[(change_screen_map),]),]
+ ), 
 ] 
 
 ## quick scene chooser

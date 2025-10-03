@@ -756,9 +756,10 @@ slot_troop_cur_center          = 12 # important for royal family members only (n
 
 slot_troop_banner_scene_prop   = 13 # important for kingdom heroes and player only
 
-slot_troop_original_faction    = 14 # for exiles
+slot_troop_original_faction    = 14 #TLD: for exiles
 
-slot_troop_loyalty              = 15
+#slot_troop_loyalty              = 15
+slot_troop_killed_by             = 15 #TLD
 slot_troop_player_order_state   = 16
 slot_troop_player_order_object  = 17
 slot_troop_rumor_check          = 18 # TLD if 1: troop already told player a rumor this day
@@ -1054,6 +1055,7 @@ tc_make_enemy_join_player     = 18 #TLD
 ###tc_prisoner_talk              = 19 #TLD not used anymore
 tc_troop_review_talk          = 20 #TLD
 tc_improve_equipment	      = 21
+tc_hero_defeated_vengeance    = 22
 
 tld_max_quest_distance = 100 #TLD
 
