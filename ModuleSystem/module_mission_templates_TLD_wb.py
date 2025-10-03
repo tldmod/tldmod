@@ -2233,7 +2233,8 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
     (this_or_next|check_quest_active, "qst_blank_quest_04"),
     (this_or_next|check_quest_active, "qst_blank_quest_05"),
     (this_or_next|check_quest_active, "qst_blank_quest_17"), #Bandit Kill quest
-    (check_quest_active, "qst_oath_of_vengeance"), ],
+    (this_or_next|check_quest_active, "qst_oath_of_vengeance"),
+    (check_quest_active, "qst_oath_personal"),     ],
 
     # trigger param 1 = defeated agent_id
     # trigger param 2 = attacker agent_id
@@ -2268,6 +2269,16 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
       (val_add, "$oath_kills", 1),
       (eq, ":type", tf_troll),
       (val_add, "$oath_kills", 2),
+    (try_end),
+
+    (try_begin), #Personal oath
+        (check_quest_active, "qst_oath_personal"), 
+        (neg|check_quest_succeeded, "qst_oath_personal"),
+        (eq, ":killer", ":player"),
+        (quest_slot_eq, "qst_oath_personal", slot_quest_target_troop, ":killed"),
+        (quest_get_slot, ":progress", "qst_oath_personal", slot_quest_current_state),
+        (val_add, ":progress", 20),
+        (quest_set_slot, "qst_oath_personal", slot_quest_current_state, ":progress"),
     (try_end),
 
     (try_begin),

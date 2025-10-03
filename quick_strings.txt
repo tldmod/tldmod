@@ -1,4 +1,4 @@
-1769
+1770
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1061,9 +1061,10 @@ qstr__This_castle_seems_t _This_castle_seems_to_belong_to_no_one.
 qstr__Your_own_banner_flie _Your_own_banner_flies_over_the_town_gates.
 qstr__You_see_the_banner_o _You_see_the_banner_of_{s7}_over_the_town_gates.
 qstr__The_townsfolk_here_ _The_townsfolk_here_have_declared_their_independence.
-qstr_Get_book. Get_book.
+qstr_A_ruined_tomb._The_i A_ruined_tomb._The_inscription_on_the_lid_is_shattered_and_unreadable.
 qstr_Go_to_the_secret_ent Go_to_the_secret_entrance_to_Moria
 qstr_Search_for_a_secret_ Search_for_a_secret_entrance_to_Moria
+qstr_The_valley_is_too_we The_valley_is_too_well_guarded_to_linger_here.
 qstr_The_{reg6?town_s:cas The_{reg6?town's:castle's}_food_stores_should_last_for_{reg3}_more_days.
 qstr_The_{reg6?town_s:cast The_{reg6?town's:castle's}_food_stores_have_run_out_and_the_defenders_are_starving.
 qstr_You_re_preparing_to_ You're_preparing_to_attack_the_walls,_the_work_should_finish_in_{reg9}_hours.

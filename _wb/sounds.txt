@@ -571,7 +571,7 @@ soundsfile version 2
  horse_snort_5.wav 1872
  spear_trap.wav 2416
  elf_elfsong.wav 1920
- moria_loop.wav 902
+ moria_loop.wav 1414
  henneth_loop.wav 902
  good_forest_loop.wav 902
  evil_forest_loop.wav 902
@@ -623,8 +623,8 @@ soundsfile version 2
  orc_beast01.wav 1152
  orc_beast02.wav 1152
  orc_beast03.wav 1152
- moria01.wav 1152
- moria02.wav 1152
+ moria01.wav 1408
+ moria02.wav 1408
  osgiliath04.wav 1152
  morgul01.wav 1152
  morgul02.wav 1152
@@ -877,7 +877,7 @@ snd_warg_lone_woof 2656 7 557 558 559 560 561 562 563
 snd_horse_snort_again 1872 5 564 565 566 567 568 
 snd_spear_trap 2416 1 569 
 snd_elf_song 1920 1 570 
-snd_moria_ambiance 902 1 571 
+snd_moria_ambiance 1414 1 571 
 snd_henneth_ambiance 902 1 572 
 snd_goodforest_ambiance 902 1 573 
 snd_evilforest_ambiance 902 1 574 
@@ -910,7 +910,7 @@ snd_umbar_occasional 1152 5 136 136 136 617 618
 snd_dunland_occasional 1152 8 136 613 591 220 221 222 223 599 
 snd_orc_occasional 1152 6 136 613 619 620 621 622 
 snd_guldur_occasional 1152 8 136 136 136 136 613 620 621 622 
-snd_moria_occasional 1152 5 136 136 136 623 624 
+snd_moria_occasional 1408 5 136 136 136 623 624 
 snd_isengard_occasional 1152 14 136 136 624 613 620 621 622 598 619 592 605 606 625 599 
 snd_urukhai_occasional 1152 6 613 620 621 622 619 599 
 snd_seaside_occasional 1152 6 594 595 596 617 618 592 

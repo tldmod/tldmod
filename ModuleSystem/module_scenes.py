@@ -332,7 +332,7 @@ scenes = [
 ("tld_sorcerer_forest_b" ,sf_generate|sf_muddy_water,"none","none",(0,0),(200,200),-0.5,"0x00000000b00ed9260002c8b000007af400006f7d00001e9c",[],[],"outer_terrain_forest"),
 ("tld_sorcerer_forest_c" ,sf_generate|sf_muddy_water,"none","none",(0,0),(200,200),-0.5,"0x00000000b00c9c1c0004691300007af400005f5f00007f2f",[],[],"outer_terrain_forest"),
 
-("moria_secret_entry" ,sf_generate|sf_auto_entry_points|sf_muddy_water,"none","none",(0,0),(200,200),-0.5,"0x0000000240004d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
+("moria_secret_entry" ,sf_generate|sf_auto_entry_points|sf_muddy_water,"none","none",(0,0),(200,200),-0.5,"0x00000002a0004d630005c96d0000734a00004b340000734a",[],[],"outer_terrain_dimrill"),
 
 ("moria_deep_mines" ,sf_generate|sf_auto_entry_points|sf_muddy_water,"none","none",(0,0),(200,200),-0.5,"0x0000000640002800000691a400003efe00004b34000059be",[],[]),
 

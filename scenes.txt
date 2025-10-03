@@ -800,10 +800,10 @@ scn_tld_sorcerer_forest_c tld_sorcerer_forest_c 4352 none none 0 0 200 200 -0.5 
   0 
   0 
  outer_terrain_forest 
-scn_moria_secret_entry moria_secret_entry 5376 none none 0 0 200 200 -0.5 0x0000000240004d634005c96d0000734a00004b340000734a 
+scn_moria_secret_entry moria_secret_entry 5376 none none 0 0 200 200 -0.5 0x00000002a0004d630005c96d0000734a00004b340000734a 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_dimrill 
 scn_moria_deep_mines moria_deep_mines 5376 none none 0 0 200 200 -0.5 0x0000000640002800000691a400003efe00004b34000059be 
   0 
   0 

@@ -32808,6 +32808,13 @@ if is_a_wb_script==1:
 
     #Evil centers
      (else_try),
+        (eq, ":cur_scene", "scn_moria_center"),
+        (eq, ":stage", 1),
+        (tutorial_message, "@A fierce fight took happened here. Curiously, among the withered remains of both dwarves and goblins, you see bodies of orcs that were slain not long ago. ^^You should take a closer look at the ruined tomb.",0, 15),
+        (scene_slot_eq, ":cur_scene", ":slot", 0),
+        (scene_set_slot, ":cur_scene", ":slot", 1),
+        (assign, ":xp_reward",  300),
+    (else_try),
         (eq, ":cur_scene", "scn_umbar_camp_center"),
         (eq, ":stage", 1),
         (tutorial_message, "@Alkarondas, Castle of the Sea. Named after the famed flagship of Ar-Pharazôn, this great black ship is the pride of the corsair fleet - and the terror of Gondor's coasts.",0, 15),

@@ -278,7 +278,7 @@ sounds = [
  
 ("elf_song"   ,sf_priority_8|sf_vol_7,["elf_elfsong.wav"]), 
 
-("moria_ambiance"           ,sf_priority_8|sf_vol_3|sf_start_at_random_pos|sf_looping, ["moria_loop.wav"]),
+("moria_ambiance"           ,sf_priority_8|sf_vol_5|sf_start_at_random_pos|sf_looping, ["moria_loop.wav"]),
 ("henneth_ambiance"         ,sf_priority_8|sf_vol_3|sf_start_at_random_pos|sf_looping, ["henneth_loop.wav"]),
 ("goodforest_ambiance"      ,sf_priority_8|sf_vol_3|sf_start_at_random_pos|sf_looping, ["good_forest_loop.wav"]),
 ("evilforest_ambiance"      ,sf_priority_8|sf_vol_3|sf_start_at_random_pos|sf_looping, ["evil_forest_loop.wav"]),
@@ -312,7 +312,7 @@ sounds = [
 ("dunland_occasional",   sf_priority_8|sf_vol_4,["silence.wav","evil_crow.wav", "good_eagle01.wav","d_dog1.wav","d_dog2.wav","d_dog3.wav","d_dog7.wav","d_carpenter1.wav"]),
 ("orc_occasional",       sf_priority_8|sf_vol_4,["silence.wav","evil_crow.wav", "orc_warg.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav"]),
 ("guldur_occasional",    sf_priority_8|sf_vol_4,["silence.wav","silence.wav","silence.wav","silence.wav","evil_crow.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav"]),
-("moria_occasional",     sf_priority_8|sf_vol_4,["silence.wav","silence.wav","silence.wav","moria01.wav","moria02.wav"]),
+("moria_occasional",     sf_priority_8|sf_vol_5,["silence.wav","silence.wav","silence.wav","moria01.wav","moria02.wav"]),
 ("isengard_occasional",  sf_priority_8|sf_vol_4,["silence.wav","silence.wav","moria02.wav", "evil_crow.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav", "d_saw_short3.wav","orc_warg.wav","d_blacksmith2.wav","dwarves01.wav","dwarves02.wav","osgiliath04.wav","d_carpenter1.wav"]),
 ("urukhai_occasional",   sf_priority_8|sf_vol_4,["evil_crow.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav", "orc_warg.wav","d_carpenter1.wav"]),
 ("seaside_occasional",   sf_priority_8|sf_vol_4,["good_bird01.wav","good_bird02.wav","good_bird03.wav","sea_seagulls.wav", "sea_seaside.wav", "d_blacksmith2.wav"]),

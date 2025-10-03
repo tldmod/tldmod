@@ -6821,7 +6821,7 @@ mission_templates = [ # not used in game
 	dungeon_darkness_effect,
 ]),
 
-# daungeon crawl
+# dungeon crawl
 ( "dungeon_crawl_moria_entrance",0,-1,
     "Explore around Moria",
     [(0 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[])
@@ -6829,15 +6829,16 @@ mission_templates = [ # not used in game
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",0)],[(question_box,"@Leave scene?")]),
     (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",1)],[(question_box,"@Trace back your steps and go back in the open now?")]),
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission), ]),
-	(ti_before_mission_start, 0, 0, [], [ (assign, "$player_is_inside_dungeon",0),(assign, "$dungeons_in_scene",1), (set_rain, 0,100),]),
+	(ti_before_mission_start, 0, 0, [], [ (assign, "$player_is_inside_dungeon",0),(assign, "$dungeons_in_scene",1), (set_rain, 0,100),(call_script, "script_music_set_situation_with_culture", 0),]),
 	dungeon_darkness_effect,
 
     ] + ((is_a_wb_mt==1) and [    
     (1, 0, ti_once, [],[ 
         (get_player_agent_no, "$current_player_agent"),
-        (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi")]),
+        (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi"),
+        (play_sound, "snd_moria_ambiance", sf_looping),]),
      ] or []) + [
-    
+    (2, 0, 0, [(call_script, "script_center_ambiance_sounds")], []),    
 ]),
 ( "dungeon_crawl_moria_hall",0,-1,
     "Explore around Moria",
@@ -6847,10 +6848,11 @@ mission_templates = [ # not used in game
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission)]),
 	(ti_before_mission_start, 0, 0, [], [
         (assign, "$dungeons_in_scene",1), (set_rain, 0,100),
-        (play_sound, "snd_moria_ambiance", sf_looping), 
         
         (team_set_relation, 2, 1, -1),
         (team_set_relation, 1, 2, -1),
+        
+        (call_script, "script_music_set_situation_with_culture", mtf_sit_town),
         
         #disable guard props
         (replace_scene_props, "spr_troop_archer", "spr_empty"),
@@ -6870,8 +6872,11 @@ mission_templates = [ # not used in game
     ] + ((is_a_wb_mt==1) and [    
     (1, 0, ti_once, [],[ 
         (get_player_agent_no, "$current_player_agent"),
-        (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi")]),
+        (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi"),
+        (play_sound, "snd_moria_ambiance", sf_looping), ]),
      ] or []) + [
+     
+    (2, 0, 0, [(call_script, "script_center_ambiance_sounds")], []),  
 ]),
 ( "dungeon_crawl_moria_deep",mtf_battle_mode,-1,
     "Lost in Moria! Orcs are everywhere! You must find a way out!",
@@ -6886,8 +6891,9 @@ mission_templates = [ # not used in game
     ] + ((is_a_wb_mt==1) and [    
     (1, 0, ti_once, [],[ 
         (get_player_agent_no, "$current_player_agent"),
-        (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi")]),
-     ] or []) + [    
+        (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi") ]),
+     ] or []) + [
+    (2, 0, 0, [(call_script, "script_center_ambiance_sounds")], []),  
 ]),
 
 ############ 808 stealth & rescue templates

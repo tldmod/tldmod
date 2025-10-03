@@ -1979,8 +1979,8 @@ color_list = [ 0xFF8f4531, 0xFF315458, 0xFF373736, 0xFFa48b28, 0xFF497735, 0xFF8
 cheat_switch = 1
 # TLD faction ranks end
 
-faction_strings =[#shop rumors begin	shop rumors end          loop_ambient_day      loop_ambient_always		occasional_ambient(later to be divided into occasional nature and occasional faction)
- (fac_gondor  ,str_gondor_rumor_begin  ,str_dwarf_rumor_begin   ,snd_gondor_ambiance ,snd_wind_ambiance      ,snd_gondor_occasional),
+faction_strings =[#shop rumors begin	shop rumors end     ,slot_faction_ambient_sound_day, slot_faction_ambient_sound_always, slot_faction_occasional_sound1_day
+ (fac_gondor  ,str_gondor_rumor_begin  ,str_dwarf_rumor_begin   ,snd_gondor_ambiance   ,snd_wind_ambiance      ,snd_gondor_occasional),
  (fac_rohan   ,str_rohan_rumor_begin   ,str_gondor_rumor_begin  ,snd_rohan_ambiance  ,snd_wind_ambiance      ,snd_rohan_occasional),
  (fac_isengard,str_isengard_rumor_begin,str_rhun_rumor_begin    ,snd_orcs_ambiance   ,snd_wind_ambiance      ,snd_urukhai_occasional),
  (fac_mordor  ,str_mordor_rumor_begin  ,str_isengard_rumor_begin,0                   ,snd_wind_ambiance      ,snd_orc_occasional),

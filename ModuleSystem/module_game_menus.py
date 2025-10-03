@@ -6206,13 +6206,12 @@ game_menus = [
               (quest_get_slot, ":progress", "qst_oath_personal", slot_quest_current_state),
               (val_add, ":progress", 20),
               (quest_set_slot, "qst_oath_personal", slot_quest_current_state, ":progress"),
-              #(gt, ":progress", 20),
+              (gt, ":progress", 20),
               (assign, ":escape", 1),
               (try_begin),
                   (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end), #only kill regular lords for now. Marshalls and Kings have to be defeated by quest progress
-                  # (store_random_in_range, ":rand", 0, 100),
-                  # (lt, ":rand", ":progress"),
-                  (eq, 1, 0),
+                  (store_random_in_range, ":rand", 0, 100),
+                  (lt, ":rand", ":progress"),
                   (assign, "$talk_context", tc_hero_defeated_vengeance),
                   (try_begin),
                     (troop_get_inventory_slot, ":horse", ":stack_troop", ek_horse),
@@ -6222,7 +6221,7 @@ game_menus = [
                   (call_script, "script_setup_troop_meeting",":stack_troop", ":stack_troop_dna"),
                   (assign, ":escape", 0),
               (else_try),
-                  #(ge, ":progress", 60),
+                  (ge, ":progress", 60),
                   (jump_to_menu, "mnu_fulfilled_oath_personal_nokill"),
                   (assign, ":escape", 0),
               (try_end), 
@@ -7394,7 +7393,8 @@ game_menus = [
 
 
 ( "moria_must_escape",city_menu_color, # dungeon crawl: way out of moria
- "^^The book seems to give the account of the last attempt of dwarves to resettle in Moria,\
+ "^^Here lies Balin, Lord of Moria. With some trouble, you can decipher these words on the shattered remains of the tomb. \
+ They tell tale of the last attempt of dwarves to resettle in Moria,\
  which apparently ended with gruesome death for all involved. As you ponder their dark fate, \
  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^ \
  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction, \
@@ -7629,17 +7629,17 @@ game_menus = [
 
 	  #menu #0
 	  ("cheat_steal_book",[(eq, "$current_town", "p_town_moria"),(eq,"$cheat_mode",1),], "{!}CHEAT: steal book now",[
-			(troop_add_item, "trp_player","itm_book_of_moria",0),
+			#(troop_add_item, "trp_player","itm_book_of_moria",0), 
+            (assign, "$moria_book_given",1), #use this global instead of the item
 			(try_begin),
 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-				(str_store_string, s12, "@Get book." ),
 				(jump_to_menu,"mnu_moria_must_escape"),
 				(finish_mission),
 			(else_try),
-				(str_store_string, s12, "str_empty_string"),
+				(display_message, "@A ruined tomb. The inscription on the lid is shattered and unreadable."),
 			(try_end),
 	  ]
-	  ,"Get the book"),
+	  ,"Inspect the tomb..."),
 
         #menu #1
 	  ("moria_enter",[
@@ -7670,6 +7670,18 @@ game_menus = [
 		(try_end),
 		
         ],"{!}{s12}",[
+            (assign, ":check", 0),
+            (party_get_num_attached_parties, ":num_attached_parties",  "p_town_moria"),
+            (try_for_range, ":attached_party_rank", 0, ":num_attached_parties"),
+                (party_get_attached_party_with_rank, ":attached_party", "p_town_moria", ":attached_party_rank"),
+                (party_stack_get_troop_id, ":leader", ":attached_party", 0),
+                (is_between, ":leader", kingdom_heroes_begin, kingdom_heroes_end),
+                (gt, "$tld_war_began", 0),
+                (eq, "$found_moria_entrance", 0),
+                (assign, ":check",1),
+                (display_message, "@The valley is too well guarded to linger here."),
+            (try_end),
+            (eq, ":check", 0),
             (modify_visitors_at_site,"scn_moria_secret_entry"),
 			(reset_visitors),
             (set_visitor,0,"trp_player"),
@@ -10022,9 +10034,9 @@ game_menus = [
 		(change_screen_map)])]
  ),
 ( "recover_after_death_moria",city_menu_color,
-    "^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream.",
+    "^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream. Your party was attacked while waiting for your return.",
     "none",[(set_background_mesh, "mesh_town_moria"),],[
-	  ("whatever",[], "Get up!",[ (change_screen_map),(jump_to_menu,"mnu_castle_outside"), ]),
+	  ("whatever",[], "Get up!",[ (change_screen_map),(jump_to_menu,"mnu_castle_outside"), (call_script,"script_injury_routine", "trp_player"), (call_script,"script_injury_routine", "trp_player"),(troop_set_health, "trp_player", 15),(inflict_casualties_to_party_group, "p_main_party", 100, "p_temp_wounded"), ]),
 	]
  ),
 ( "recover_after_death_default",0,
@@ -12566,7 +12578,9 @@ game_menus = [
 					(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 					(store_troop_faction,":faction",":hero"),
 					(store_relation,reg1, ":faction", "fac_player_faction"),
-					(neg|gt, reg1, 0)],
+					(neg|gt, reg1, 0),
+                    (faction_slot_ge, "$players_kingdom", slot_faction_side, faction_side_eye),
+                    ],
    "Desecrate_the_site",  [(jump_to_menu, "mnu_burial_mound_despoil")]),  
   ("leave_mound",        [], "Leave_the_mound.",  [(leave_encounter),(change_screen_return)]),
  ]),  
@@ -12610,8 +12624,8 @@ game_menus = [
     (quest_set_slot, "qst_oath_personal", slot_quest_current_state, 0),
     
 	(party_set_slot, ":mound", slot_mound_state, 3), # no more oaths from here
-        (setup_quest_text, "qst_oath_personal"),
-        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance against {s3}. You must now seek out and fight {s3} and kill {reg11?her:him} if possible. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
+    (setup_quest_text, "qst_oath_personal"),
+    (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance against {s3}. You must now seek out and fight {s3} and kill {reg11?her:him} if possible. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
 	(call_script, "script_start_quest", "qst_oath_personal", "trp_player"),
 	],[
     ("leave_mound", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
@@ -12640,8 +12654,8 @@ game_menus = [
     (quest_set_slot, "qst_oath_personal", slot_quest_current_state, 0),
     
 	(party_set_slot, ":mound", slot_mound_state, 3), # no more oaths from here
-        (setup_quest_text, "qst_oath_personal"),
-        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance against {s3}. You must now seek out and fight {s3} and kill {reg11?her:him} if possible. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
+    (setup_quest_text, "qst_oath_personal"),
+    (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance against {s3}. You must now seek out and fight {s3} and kill {reg11?her:him} if possible. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
 	(call_script, "script_start_quest", "qst_oath_personal", "trp_player"),
 	],[
     ("leave_mound", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
@@ -12659,6 +12673,11 @@ game_menus = [
 	  (call_script, "script_cf_gain_trait_accursed"),
 	 (try_end),
 	 (party_set_slot, ":mound", slot_mound_state, 4),
+     (party_get_skill_level, ":looting", p_main_party, skl_looting),
+     (val_mul, ":looting", 2),
+     (val_add, ":looting", 5),
+     (store_random_in_range, ":loot", 5, ":looting"),
+     (troop_add_items, "trp_player", "itm_metal_scraps_good", ":loot"),
 	 (disable_party, ":mound")],[
  ("leave_mound", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
  ]),
@@ -12688,7 +12707,18 @@ game_menus = [
                     (call_script, "script_troop_get_player_relation", ":hero"),
                     (ge, reg0, 50), #must've been a friend
                     ],
-   "Swear_an_oath_of_vengeance!",  [(jump_to_menu, "mnu_funeral_pyre_oath")]),  
+   "Swear_an_oath_of_vengeance!",  [
+                    (try_begin),
+                        (store_encountered_party, ":mound"),
+                        (party_get_slot, ":hero", ":mound", slot_party_commander_party),
+                        (troop_get_slot, ":killer", ":hero", slot_troop_killed_by),
+                        (neg|troop_slot_eq, ":killer", slot_troop_wound_mask, wound_death),
+                        (troop_slot_eq, ":killer", slot_troop_occupation, slto_kingdom_hero), #faction not defeated yet
+                        (jump_to_menu, "mnu_funeral_pyre_oath"),
+                    (else_try),
+                        (display_message, "@You hear that {s1} has already been avenged by the death of {s28}."),
+                    (try_end),
+                    ]),  
  ("leave_pyre", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]), 
  ]),
 ( "town_ruins",mnf_enable_hot_keys|city_menu_color,
@@ -13298,7 +13328,7 @@ game_menus = [
 ( "oath_quest_fail",0,
     "You swore a bitter oath and you bitterly failed to keep it. Your enemies laugh at your failure, and all your friends suffer from the shame you have brought upon them. In all the lands of Middle-earth, you shall be known as an oathbreaker.",
     "none",
-    [
+    [(call_script, "script_cf_gain_trait_oathbreaker"),
     (set_fixed_point_multiplier, 100),
     (position_set_x, pos0, 65),
     (position_set_y, pos0, 30),

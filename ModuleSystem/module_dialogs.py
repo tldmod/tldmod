@@ -4534,7 +4534,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone|plyr,"lord_talk", 
   [(eq, "$g_talk_troop", "trp_dwarf_lord"),
-   (player_has_item, "itm_book_of_moria"),
+   (eq, "$moria_book_given",1),
+   (assign, "$moria_book_given",2),
    (store_troop_faction, ":faction", "trp_player"),
    (str_clear, s3),
    (try_begin),
@@ -4555,11 +4556,11 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   [], "You speak of my kin as though they are a memory. Is it so?", "dwarf_lord_book_give_b", []],
 
 [anyone|plyr,"dwarf_lord_book_give_b", 
-  [], "I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. I bring only this...", "dwarf_lord_book_give_c", 
-    [(troop_remove_item, "trp_player", "itm_book_of_moria"), (assign, "$moria_book_given",1)]],
+  [], "I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. Yet I found a tomb with Balin's name inscribed on the lid...", "dwarf_lord_book_give_d", 
+    []],
 
-[anyone,"dwarf_lord_book_give_c", 
-  [], "'We cannot get out. We cannot get out...They are coming.'", "dwarf_lord_book_give_d", []],
+# [anyone,"dwarf_lord_book_give_c", #unused, Dain no longer gets the book
+  # [], "'We cannot get out. We cannot get out...They are coming.'", "dwarf_lord_book_give_d", []],
 
 [anyone,"dwarf_lord_book_give_d", 
   [], "So it is as I feared. I had counseled Balin against this expedition but he was resolved. A fool I was for giving him leave to go.", "dwarf_lord_book_give_e", []],
