@@ -462,7 +462,7 @@ spr_dungeon_tower_cell_a 0 0 dungeon_tower_cell_a bo_dungeon_tower_cell_a 0
 spr_tunnel_a 0 0 new_tunnel_a bo_new_tunnel_a 0
 
 
-spr_tunnel_salt 0 0 new_tunnel_salt bo_new_tunnel_salt 0
+spr_tunnel_salt 0 0 new_tunnel_salt2 bo_new_tunnel_salt 0
 
 
 spr_salt_a 0 0 salt_a bo_salt_a 0
@@ -2686,7 +2686,7 @@ spr_evil_gondor_gate_tower 0 0 mt_gate_tower_evil bo_mt_tower 0
 
 
 spr_evil_gondor_gate_house 0 0 mt_gate_house_evil bo_mt_gate_house_evil 1
--40  10 4 0 2273 0 31 2 144115188075856557 1 1798 2 450 469277 5 0 2273 0 1798 2 200 469277 5 0 1798 2 700 5091469 3 0 
+-40  11 2124 1 100 4 0 2273 0 31 2 144115188075856557 1 1798 2 450 469277 5 0 2273 0 1798 2 200 469277 5 0 1798 2 700 5091469 3 0 
 
 
 spr_gondor_mt_bridge_modular_a 0 0 mt_bridge_modular_a bo_bridge_modular_a 0

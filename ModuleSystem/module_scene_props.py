@@ -364,7 +364,7 @@ scene_props = [
 ("dungeon_tower_stairs_a",0,"dungeon_tower_stairs_a","bo_dungeon_tower_stairs_a", []),
 ("dungeon_tower_cell_a",0,"dungeon_tower_cell_a","bo_dungeon_tower_cell_a", []),
 ("tunnel_a",0,"new_tunnel_a","bo_new_tunnel_a", []),
-("tunnel_salt",0,"new_tunnel_salt","bo_new_tunnel_salt", []),
+("tunnel_salt",0,"new_tunnel_salt2","bo_new_tunnel_salt", []),
 ("salt_a",0,"salt_a","bo_salt_a", []),
 
 ("tutorial_door_a",sokf_moveable,"tutorial_door_a","bo_tutorial_door_a", []),
@@ -1560,7 +1560,8 @@ scene_props = [
 ("evil_gondor_wall",0,"mt_wall_evil", "bo_mt_wall_evil", []), #InVain: New collision mesh
 ("evil_gondor_gate_tower",0,"mt_gate_tower_evil", "bo_mt_tower", []),
 ("evil_gondor_gate_house",0,"mt_gate_house_evil", "bo_mt_gate_house_evil", [(ti_on_scene_prop_init,
-            [(try_begin),(is_currently_night), (eq, "$bright_nights", 1), (set_fog_distance,450,0x07291D),
+            [(set_fixed_point_multiplier, 100),
+            (try_begin),(is_currently_night), (eq, "$bright_nights", 1), (set_fog_distance,450,0x07291D),
             (else_try), (is_currently_night), (set_fog_distance,200,0x07291D), 
              ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 40, 40, 50),(set_startup_sun_light, 5, 5, 10),(set_startup_ground_ambient_light, 25, 25, 25), ] or []) + [ 
        (else_try),                      (set_fog_distance,700,0x4DB08D), 
@@ -1714,7 +1715,22 @@ scene_props = [
 ("umbar_smallboatoar",0,"umbar_prop_smallboatoar","0", []),
 # Moria
 ] + (is_a_wb_sceneprop==1 and [
-("moria",0,"moria_hall","bo_moria_hall", [(ti_on_scene_prop_init,[(try_begin), (eq, "$bright_nights", 1), (set_fog_distance,60,0x01D261D),(set_rain, 0,100),(set_startup_sun_light, 0, 0, 0), (else_try), (set_fog_distance,60,0x030403),(set_rain, 0,100),(set_startup_sun_light, 0, 0, 0),(set_startup_ambient_light, 40, 60, 40), (try_end)])]), #WB is brighter by default, so we make the fog darker
+("moria",0,"moria_hall","bo_moria_hall", 
+    [(ti_on_scene_prop_init,
+        [(set_rain, 0,100), (set_fixed_point_multiplier, 10000), (set_skybox, 10, 11),
+        (try_begin), 
+            (eq, "$bright_nights", 1), (set_fog_distance,60,0x01D261D),(set_startup_sun_light, 5, 5, 5), (set_startup_ambient_light, 300, 400, 300), 
+         (else_try), 
+            (get_startup_ambient_light, pos5),
+            (position_get_x, reg5, pos5),
+            (set_fog_distance,60,0x030403),
+            (set_startup_sun_light, 5, 5, 5),
+            (set_startup_ambient_light, 60, 80, 60), 
+            (set_startup_ground_ambient_light, 60, 80, 60),
+            (get_startup_ambient_light, pos5),
+            (position_get_x, reg5, pos5),
+         (try_end)
+    ])]),
     ] or [
 ("moria",0,"moria_hall","bo_moria_hall", [(ti_on_scene_prop_init,[(set_fog_distance,70,0x0B0F0B),(set_rain, 0,100)])]) #new fog, slightly greenish and minimally brighter
 ]) + [
@@ -5645,10 +5661,10 @@ scene_props = [
             (scene_prop_get_slot, ":scene_item", ":scene_prop", slot_prop_agent_2),
             (gt, ":scene_item", 0),
             (scene_prop_fade_out, ":scene_item", 100),
+            (scene_set_slot, ":cur_scene", ":loot_slot", -1),
         (try_end),
         (display_message, "@{!}{s9}"),
         (scene_prop_set_slot, ":scene_prop", slot_prop_active, 0),
-        (scene_set_slot, ":cur_scene", ":loot_slot", -1),
     ])
     ] or []) + [            
           ]),
@@ -5712,6 +5728,13 @@ scene_props = [
     (ti_on_scene_prop_animation_finished,[
       (store_trigger_param_1, ":instance_no"),
       (set_fixed_point_multiplier, 100),
+      (prop_instance_get_variation_id_2, ":time", ":instance_no"), #animation in seconds
+      (try_begin),
+        (eq, ":time", 0),
+        (assign, ":time", 12), #default duration
+      (try_end),
+      (val_mul, ":time", 100),
+      (val_div, ":time", 22), #time per 10° tick, need 23 ticks for full animation
       (prop_instance_get_starting_position, pos5, ":instance_no"),
       (prop_instance_get_scale, pos2, ":instance_no"),
       (position_get_scale_y, ":radius", pos2),
@@ -5737,7 +5760,7 @@ scene_props = [
       (position_move_z, pos5, ":elevation"),
       (position_rotate_z, pos5, 180), #look back
       (position_rotate_x, pos5, ":tilt"),
-      (prop_instance_animate_to_position, ":instance_no", pos5, 50),      
+      (prop_instance_animate_to_position, ":instance_no", pos5, ":time"),      
       # (set_spawn_position, pos5),
       # (spawn_scene_prop, "spr_arrow_helper_blue"),
       # (position_get_z, reg78, pos5),
