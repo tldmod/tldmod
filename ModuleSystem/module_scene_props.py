@@ -5691,6 +5691,7 @@ scene_props = [
         (scene_prop_slot_eq, ":instance_no", slot_prop_playing_sound, 0),
         (prop_instance_get_position, pos2, ":instance_no"),
         (particle_system_burst, "psys_moon_beam_1", pos2, 4),
+        (particle_system_burst, "psys_fire_glow_1_white", pos2, 2),
         (store_random_in_range, ":timer", 700, 1100),    
         (prop_instance_deform_in_range, ":instance_no", 0, 100, ":timer"), #workaround for particle effect
     ]),
@@ -5765,7 +5766,8 @@ scene_props = [
       # (spawn_scene_prop, "spr_arrow_helper_blue"),
       # (position_get_z, reg78, pos5),
       # (display_message, "@camera height: {reg78}"),
-      (mission_cam_animate_to_position, pos5, 600, 0),
+      (val_mul, ":time", 11),
+      (mission_cam_animate_to_position, pos5, ":time", 0),
       # (assign, reg78, ":rotation"),
       # (display_message, "@rotation: {reg78}"),
       (scene_prop_set_slot, ":instance_no", slot_prop_active, ":rotation"),

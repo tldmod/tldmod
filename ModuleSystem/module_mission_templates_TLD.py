@@ -4141,10 +4141,11 @@ horse_whistle = (0,0,3,[(gt,"$player_horse",0),(key_clicked, key_m)],
 
 
 # dynamic fog in dungeons, governed by player triggering scene props (mtarini and GA)
-dungeon_darkness_effect = (1, 0, 0, [(eq,"$dungeons_in_scene",1)], [ 
-	(get_player_agent_no,":player"), 
+dungeon_darkness_effect = (0.3, 0, 0, [(eq,"$dungeons_in_scene",1)], [ 
+	(set_fixed_point_multiplier, 100),
+    (get_player_agent_no,":player"), 
     (agent_get_position,pos25,":player"),
- 	(assign,":min_dist",200), # cycle through fog triggers, find closest one
+ 	(assign,":min_dist",600), # cycle through fog triggers, find closest one
 	(assign,":min_pointer",-1),
     (try_for_range,":pointer","spr_light_fog_black0","spr_moria_rock"),
 		(scene_prop_get_num_instances,":max_instance", ":pointer"),

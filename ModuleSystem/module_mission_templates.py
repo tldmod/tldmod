@@ -1627,8 +1627,6 @@ mission_templates = [ # not used in game
 					(store_current_scene, ":cur_scene"),
 					(is_between,  ":cur_scene", "scn_caras_galadhon_center", "scn_woodsmen_village_center"),
 					(set_rain, 2,100), #yellow thingies in elven places
-				(else_try),
-					(set_rain, 0,100),
 			(try_end),
 			
 			]),

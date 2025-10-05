@@ -557,18 +557,18 @@ soundsfile version 2
  horror_scream_man_4.wav 2720
  horror_scream_woman.wav 2720
  horror_scream_orc.wav 2720
- warg_bark01.wav 2656
- warg_bark02.wav 2656
- warg_bark03.wav 2656
- warg_growl01.wav 2656
- warg_howl01.wav 2656
- warg_howl02.wav 2656
- warg_howl03.wav 2656
- horse_snort_1.wav 1872
- horse_snort_2.wav 1872
- horse_snort_3.wav 1872
- horse_snort_4.wav 1872
- horse_snort_5.wav 1872
+ warg_bark01.wav 1328
+ warg_bark02.wav 1328
+ warg_bark03.wav 1328
+ warg_growl01.wav 1328
+ warg_howl01.wav 1328
+ warg_howl02.wav 1328
+ warg_howl03.wav 1328
+ horse_snort_1.wav 1072
+ horse_snort_2.wav 1072
+ horse_snort_3.wav 1072
+ horse_snort_4.wav 1072
+ horse_snort_5.wav 1072
  spear_trap.wav 2416
  elf_elfsong.wav 1920
  moria_loop.wav 1414
@@ -578,16 +578,16 @@ soundsfile version 2
  water_waves_loop.wav 902
  water_splash_loop.wav 902
  water_wavesplash_loop.wav 902
- wind_loop.wav 902
+ wind_loop.wav 1670
  isen_loop.wav 902
  evil_men_loop.wav 1158
  beast_loop.wav 902
- morgul_loop.wav 902
- gondor_people_loop.wav 902
- rohan_people_loop.wav 902
- dwarf_men_loop.wav 902
+ morgul_loop.wav 1158
+ gondor_people_loop.wav 1158
+ rohan_people_loop.wav 1158
+ dwarf_men_loop.wav 1158
  harad_loop.wav 1158
- evil_flies_loop.wav 902
+ evil_flies_loop.wav 1158
  night_loop.wav 902
  neutral_forest_loop.wav 902
  fangorn_loop.wav 902
@@ -623,22 +623,22 @@ soundsfile version 2
  orc_beast01.wav 1152
  orc_beast02.wav 1152
  orc_beast03.wav 1152
- moria01.wav 1408
- moria02.wav 1408
+ moria01.wav 2176
+ moria02.wav 2176
  osgiliath04.wav 1152
  morgul01.wav 1152
  morgul02.wav 1152
  osgiliath01.wav 1152
  osgiliath03.wav 1152
- horse_exterior_whinny_01.wav 0
- horse_exterior_whinny_02.wav 0
- horse_exterior_whinny_03.wav 0
- horse_exterior_whinny_04.wav 0
- horse_exterior_whinny_05.wav 0
- horse_whinny.wav 0
- horse_whinny-1.wav 2304
- horse_whinny-2.wav 2304
- CWE_amb_waterfall_medium_01_2d_lp.ogg 1782
+ horse_exterior_whinny_01.wav 512
+ horse_exterior_whinny_02.wav 512
+ horse_exterior_whinny_03.wav 512
+ horse_exterior_whinny_04.wav 512
+ horse_exterior_whinny_05.wav 512
+ horse_whinny.wav 512
+ horse_whinny-1.wav 1024
+ horse_whinny-2.wav 1024
+ CWE_amb_waterfall_medium_01_2d_lp.ogg 1014
  water_splash_loop.ogg 3990
  lord_dies.wav 1937
  enemy_lord_dies.wav 1937
@@ -873,8 +873,8 @@ snd_nazgul_skreech_short 4081 1 549
 snd_horror_scream_man 2720 5 550 551 552 553 554 
 snd_horror_scream_woman 2720 1 555 
 snd_horror_scream_orc 2720 1 556 
-snd_warg_lone_woof 2656 7 557 558 559 560 561 562 563 
-snd_horse_snort_again 1872 5 564 565 566 567 568 
+snd_warg_lone_woof 1328 7 557 558 559 560 561 562 563 
+snd_horse_snort_again 1072 5 564 565 566 567 568 
 snd_spear_trap 2416 1 569 
 snd_elf_song 1920 1 570 
 snd_moria_ambiance 1414 1 571 
@@ -884,16 +884,16 @@ snd_evilforest_ambiance 902 1 574
 snd_water_waves_ambiance 902 1 575 
 snd_water_splash_ambiance 902 1 576 
 snd_water_wavesplash_ambiance 902 1 577 
-snd_wind_ambiance 902 1 578 
+snd_wind_ambiance 1670 1 578 
 snd_isengard_ambiance 902 1 579 
 snd_evilmen_ambiance 1158 1 580 
 snd_orcs_ambiance 902 1 581 
-snd_morgul_ambiance 902 1 582 
-snd_gondor_ambiance 902 1 583 
-snd_rohan_ambiance 902 1 584 
-snd_dwarf_ambiance 902 1 585 
+snd_morgul_ambiance 1158 1 582 
+snd_gondor_ambiance 1158 1 583 
+snd_rohan_ambiance 1158 1 584 
+snd_dwarf_ambiance 1158 1 585 
 snd_harad_ambiance 1158 1 586 
-snd_deadmarshes_ambiance 902 1 587 
+snd_deadmarshes_ambiance 1158 1 587 
 snd_night_ambiance 902 1 588 
 snd_neutralforest_ambiance 902 1 589 
 snd_fangorn_ambiance 902 1 590 
@@ -910,7 +910,7 @@ snd_umbar_occasional 1152 5 136 136 136 617 618
 snd_dunland_occasional 1152 8 136 613 591 220 221 222 223 599 
 snd_orc_occasional 1152 6 136 613 619 620 621 622 
 snd_guldur_occasional 1152 8 136 136 136 136 613 620 621 622 
-snd_moria_occasional 1408 5 136 136 136 623 624 
+snd_moria_occasional 2176 5 136 136 136 623 624 
 snd_isengard_occasional 1152 14 136 136 624 613 620 621 622 598 619 592 605 606 625 599 
 snd_urukhai_occasional 1152 6 613 620 621 622 619 599 
 snd_seaside_occasional 1152 6 594 595 596 617 618 592 
@@ -924,11 +924,11 @@ snd_meeting_elf 1056 12 539 540 524 525 526 527 528 529 530 531 532 533
 snd_meeting_uruk 1056 7 432 433 434 435 436 437 438 
 snd_meeting_man 1056 7 299 298 297 307 294 288 292 
 snd_meeting_orc 1056 4 407 408 409 410 
-snd_neigh1 0 6 630 631 632 633 634 635 
-snd_horse_snort1 1872 5 564 565 566 567 568 
-snd_horse_low_whinny1 2304 2 636 637 
-snd_mount_death 2304 2 567 568 
-snd_waterfall 1782 1 638 
+snd_neigh1 512 6 630 631 632 633 634 635 
+snd_horse_snort1 560 5 564 565 566 567 568 
+snd_horse_low_whinny1 1024 2 636 637 
+snd_mount_death 1024 2 567 568 
+snd_waterfall 1014 1 638 
 snd_orc_cheer 2640 9 409 410 408 411 412 413 414 415 416 
 snd_water_wavesplash_source 1686 1 577 
 snd_water_waves_source 3990 1 575 
