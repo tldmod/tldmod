@@ -1371,7 +1371,7 @@ spr_windmill_fan_turning 65536 0 windmill_fan_turning bo_windmill_fan_turning 0
 spr_windmill_fan 0 0 windmill_fan bo_windmill_fan 0
 
 
-spr_winery_barrel_shelf 0 0 winery_barrel_shelf bo_winery_barrel_shelf 0
+spr_winery_barrel_shelf_unused 0 0 winery_barrel_shelf bo_winery_barrel_shelf 0
 
 
 spr_earth_wall_a 0 0 earth_wall_a bo_earth_wall_a 0
@@ -4799,7 +4799,7 @@ spr_Dale_Bell_Tower 0 0 Dale_church_tower_a bo_Dale_church_tower_a 0
 spr_Dale_Minaret 0 0 Dale_stone_minaret_a bo_stone_minaret_a 0
 
 
-spr_Dale_Hall 0 0 novgorod_sofiya bo_novgorod_sofiya 0
+spr_Dale_side_building_2 0 0 dale_side_building_2 bo_gondor_citadel_side_building_2 0
 
 
 spr_Dale_Palace 0 0 sobor bo_sobor 0

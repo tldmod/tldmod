@@ -883,7 +883,7 @@ scene_props = [
 ("weavery_spinning_wheel",0,"weavery_spinning_wheel","bo_weavery_spinning_wheel", []), #wb
 ("windmill_fan_turning",sokf_moveable,"windmill_fan_turning","bo_windmill_fan_turning", []),
 ("windmill_fan",0,"windmill_fan","bo_windmill_fan", []),
-("winery_barrel_shelf",0,"winery_barrel_shelf","bo_winery_barrel_shelf", []), #wb
+("winery_barrel_shelf_unused",0,"winery_barrel_shelf","bo_winery_barrel_shelf", []), #wb
 #("fake_house_a",0,"fake_house_a","bo_fake_house_a", []),
 #("fake_house_b",0,"fake_house_b","bo_fake_house_b", []),
 #("fake_house_c",0,"fake_house_c","bo_fake_house_c", []),
@@ -2880,7 +2880,7 @@ scene_props = [
 ("Dale_castle_High_Tower",0,"Dale_castle_e_tower","bo_castle_e_tower", []),
 ("Dale_Bell_Tower",0,"Dale_church_tower_a","bo_Dale_church_tower_a", []),
 ("Dale_Minaret",0,"Dale_stone_minaret_a","bo_stone_minaret_a", []),
-("Dale_Hall",0,"novgorod_sofiya","bo_novgorod_sofiya", []),
+("Dale_side_building_2",0,"dale_side_building_2","bo_gondor_citadel_side_building_2", []),
 ("Dale_Palace",0,"sobor","bo_sobor", []),
 ("Dale_Market",0,"Dale_castle_courtyard_a","bo_castle_courtyard_a", []),
 ("Dale_castle_Gaillard",0,"Dale_castle_gaillard","bo_castle_gaillard", []),
