@@ -13129,15 +13129,9 @@ game_menus = [
    ],[
    ("continue",[],"Continue...",[
    (change_screen_map),
-   (faction_set_slot, "$players_kingdom", slot_faction_side, reg11),
+   (faction_set_slot, "$players_kingdom", slot_faction_side, "$new_player_side"),
    (str_store_faction_name, s1, "$players_kingdom"),
    (display_message, "@{s1} has joined {s12}"),
-    # (try_begin),
-        # (eq, reg11, faction_side_hand),
-        # (display_message, "@{s1} has joined the {s12}"),
-    # (else_try),
-        # (display_message, "@{s1} has joined the {s12}"),
-    # (try_end),
    (call_script, "script_wott_reassign_faction_sides"),]),
    ],
  ),
