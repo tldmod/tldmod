@@ -4337,32 +4337,36 @@ tld_bow_shield = [
           (agent_get_wielded_item, ":shield", ":agent", 1),
           (gt, ":shield", 0),
           (item_get_weapon_length, ":size",":shield"),
-          (try_begin), #shield too big? Unwield
-            (gt, ":size", 40),
-            (agent_set_wielded_item, ":agent", -1), #this will unequip all items
-            (display_message, "@Shield is too big to be used with a bow."),
-            (assign, "$weapon_unequipped", ":equipped_item"),
-            (val_mul, ":shield", -1),
-            (assign, "$shield_unequipped", ":shield"),
-          (else_try), #shield fits? Assign accuracy debuff
+          (try_begin),
             (agent_slot_eq, ":agent", slot_agent_base_accuracy, 0), #slot not set yet? store original accuracy. We do this because environment effects can affect accuracy at mission start.
             (agent_get_accuracy_modifier, ":accuracy_mod", ":agent"),
             (agent_set_slot, ":agent", slot_agent_base_accuracy, ":accuracy_mod"),
-            (store_skill_level, ":shield_skill", skl_shield, "trp_player"),
-            (val_mul, ":shield_skill", 3),
-            (store_sub, ":penalty", ":size", ":shield_skill"),
-            (val_clamp, ":penalty", 5, 40),
-            (val_sub, ":accuracy_mod", ":penalty"),
-            (agent_set_accuracy_modifier, ":agent", ":accuracy_mod"),
-          (else_try), #slot already set? check original accuracy!
+          (try_end),
+          (try_begin), #shield too big? or option disabled? Unwield
+            (this_or_next|gt, ":size", 40),
+            (le, "$tld_option_bow_shield", 1), #disabled for player and all
+            (agent_set_wielded_item, ":agent", -1), #this will unequip all items
+            (assign, "$weapon_unequipped", ":equipped_item"),
+            (val_mul, ":shield", -1),
+            (assign, "$shield_unequipped", ":shield"),
+            (try_begin),
+                (gt, ":size", 40),
+                (display_message, "@Shield is too big to be used with a bow."),
+            (try_end),
+          (else_try), #shield fits? Apply accuracy debuff
+            (gt, "$tld_option_bow_shield", 1), #enabled for player or for all
             (agent_get_slot,":accuracy_mod",":agent", slot_agent_base_accuracy ),
             (gt, ":accuracy_mod", 0),
             (store_skill_level, ":shield_skill", skl_shield, "trp_player"),
-            (val_mul, ":shield_skill", 3),
-            (store_sub, ":penalty", ":size", ":shield_skill"),
-            (val_clamp, ":penalty", 5, 40),
+            (store_skill_level, ":pd_skill", skl_power_draw, "trp_player"),
+            (store_add, ":skill", ":shield_skill", ":pd_skill"),
+            (val_mul, ":skill", 3),
+            (store_sub, ":penalty", ":size", ":skill"),
+            (val_clamp, ":penalty", 1, 30),
             (val_sub, ":accuracy_mod", ":penalty"),
             (agent_set_accuracy_modifier, ":agent", ":accuracy_mod"),
+            (assign, reg11, ":penalty"),
+            (display_message, "@Shield reduces accuracy by {reg11} percent."),
           (try_end),
       (else_try),
          (neq, ":equipped_type", itp_type_shield),
@@ -4413,33 +4417,36 @@ tld_bow_shield = [
       (agent_get_wielded_item, ":shield", ":agent", 1),
       (gt, ":shield", 0),
       (item_get_weapon_length, ":size",":shield"),
-      (try_begin), #shield too big? Unwield
-        (gt, ":size", 40),
+      (try_begin),
+        (agent_slot_eq, ":agent", slot_agent_base_accuracy, 0), #slot not set yet? store original accuracy. We do this because environment effects can affect accuracy at mission start.
+        (agent_get_accuracy_modifier, ":accuracy_mod", ":agent"),
+        (agent_set_slot, ":agent", slot_agent_base_accuracy, ":accuracy_mod"),
+      (try_end),
+      (try_begin), #shield too big? Unwield    
+        (this_or_next|gt, ":size", 40),
+        (this_or_next|eq, "$tld_option_bow_shield", 2), #disabled for companions
+        (eq, "$tld_option_bow_shield", 0), #disabled for all
         (agent_set_wielded_item, ":agent", -1), #this will unequip all items
         (agent_set_wielded_item, ":agent", ":weapon"), #reequip bow
         (try_begin),
             (eq, ":troop","trp_player"),
+            (gt, ":size", 40),
             (display_message, "@Shield is too big to be used with a bow."),
         (try_end),
-      (else_try), #shield fits? Assign accuracy debuff
-        (agent_slot_eq, ":agent", slot_agent_base_accuracy, 0), #slot not set yet? store original accuracy. We do this because environment effects can affect accuracy at mission start.
-        (agent_get_accuracy_modifier, ":accuracy_mod", ":agent"),
-        (agent_set_slot, ":agent", slot_agent_base_accuracy, ":accuracy_mod"),
-        (store_skill_level, ":shield_skill", skl_shield, ":troop"),
-        (val_mul, ":shield_skill", 3),
-        (store_sub, ":penalty", ":size", ":shield_skill"),
-        (val_clamp, ":penalty", 5, 40),
-        (val_sub, ":accuracy_mod", ":penalty"),
-        (agent_set_accuracy_modifier, ":agent", ":accuracy_mod"),
-      (else_try), #slot already set? check original accuracy for calculating debuff!
-        (agent_slot_ge, ":agent", slot_agent_base_accuracy, 0),
+      (else_try), #shield fits? Apply accuracy debuff
+        (neq, "$tld_option_bow_shield", 2), #not disabled for companions
+        (neq, "$tld_option_bow_shield", 0), #not disabled for all
         (agent_get_slot,":accuracy_mod",":agent", slot_agent_base_accuracy ),
-        (store_skill_level, ":shield_skill", skl_shield, ":troop"),
-        (val_mul, ":shield_skill", 3),
-        (store_sub, ":penalty", ":size", ":shield_skill"),
-        (val_clamp, ":penalty", 5, 40),
+        (gt, ":accuracy_mod", 0),
+        (store_skill_level, ":shield_skill", skl_shield, "trp_player"),
+        (store_skill_level, ":pd_skill", skl_power_draw, "trp_player"),
+        (store_add, ":skill", ":shield_skill", ":pd_skill"),
+        (val_mul, ":skill", 3),
+        (store_sub, ":penalty", ":size", ":skill"),
+        (val_clamp, ":penalty", 1, 30),
         (val_sub, ":accuracy_mod", ":penalty"),
         (agent_set_accuracy_modifier, ":agent", ":accuracy_mod"),
+        (assign, reg11, ":penalty"),
       (try_end),
      (try_end)
     ])

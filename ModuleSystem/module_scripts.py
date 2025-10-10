@@ -2109,6 +2109,7 @@ scripts = [
 	(assign, "$dormant_spawn_radius", 1), #Kham - Dormant Spawn Radius initialize
 	(assign, "$tld_player_level_to_begin_war",8), #Kham - Custom Level to Start the War
 	(assign, "$FormAI_AI_no_defense",0), #Kham - FormAI - don't allow AI Defensive
+	(assign, "$tld_option_bow_shield",3), #InVain: 3 = allow; 2 = player only; 1= NPC only; 0 = none
 	(party_set_slot, "p_main_party", slot_party_number_following_player, 0),
 	(assign, "$lore_mode", 1),# unused      
     (assign, "$play_ambient_sounds", 1),
@@ -2120,12 +2121,11 @@ scripts = [
       
     (assign, "$hold_f1", 0),  
 	(assign, "$dormant_spawn_radius", 0),
-	(assign, "$total_kills",0),
 
 	(val_mul, "$hold_f1", "$dormant_spawn_radius"),
     (val_mul, "$hold_f1", "$allies_leadership"),
     (val_mul, "$dormant_spawn_radius", "$hold_f1"),
-    (val_mul, "$dormant_spawn_radius", "$total_kills"),
+    (val_mul, "$dormant_spawn_radius", "$tld_option_bow_shield"), #wb only
     (val_mul, "$dormant_spawn_radius", "$allies_leadership"), #wb only
 
 	#Kham - Squelch compiler warnings END
@@ -25815,14 +25815,15 @@ command_cursor_scripts = [
         (troop_set_slot, "trp_traits", slot_trait_animal_fighter, 0),
     (try_end),
 
-    # (try_begin),
-        # (lt, "$savegame_version", 4233),
-        # (assign, "$savegame_version", 4233),
-        # (player_has_item, "itm_spider"),
-        # (troop_remove_item, "trp_player", "itm_spider"),
-        # (troop_add_item, "trp_player", "itm_spider_mount"),
-        # (display_message, "@update savegame: swap spider mount"),
-    # (try_end),
+    (try_begin),
+        (lt, "$savegame_version", 4245),
+        (assign, "$savegame_version", 4245),
+        (player_has_item, "itm_spider"),
+        (troop_remove_item, "trp_player", "itm_spider"),
+        (troop_add_item, "trp_player", "itm_spider_mount"),
+        (display_message, "@update savegame: swap spider mount"),
+        (assign, "$tld_option_bow_shield", 3), 
+    (try_end),
     
     ] or []) + [ 
 ]),

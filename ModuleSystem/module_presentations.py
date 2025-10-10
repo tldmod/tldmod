@@ -5071,6 +5071,26 @@ if wb_compile_switch==1:
         (overlay_set_position, "$tld_options_overlay_13", pos1),
         (overlay_set_val, "$tld_options_overlay_13", "$bright_nights"),
         (val_sub, ":y_pos", Screen_Text_Height), 
+
+    #bow and shield usage
+    (create_text_overlay, reg1, "@Allow to use bow with small shields:  ", tf_right_align, tf_double_space),
+        (position_set_y, pos0, ":y_pos"),
+        (overlay_set_position, reg1, pos0),
+
+        (create_combo_button_overlay, "$tld_options_overlay_15"),
+        (overlay_add_item, "$tld_options_overlay_15", "@No (regular troops only)"), #0
+        (overlay_add_item, "$tld_options_overlay_15", "@Companions only"), #1
+        (overlay_add_item, "$tld_options_overlay_15", "@Player only"), #2
+        (overlay_add_item, "$tld_options_overlay_15", "@Yes"), #3
+        (copy_position, pos1, pos0),
+        (store_add, reg2, ":y_pos", 0),
+        (position_set_y, pos1, reg2),
+        (position_get_x, ":x_pos", pos1),
+        (val_add, ":x_pos", 130),
+        (position_set_x, pos1, ":x_pos"),
+        (overlay_set_position, "$tld_options_overlay_15", pos1),
+        (overlay_set_val, "$tld_options_overlay_15", "$tld_option_bow_shield"),
+        (val_sub, ":y_pos", Screen_Text_Height),
         
         # This is for Done button
         (assign, "$tld_options_overlay_exit", 0), # forced initialization
@@ -5151,9 +5171,10 @@ if wb_compile_switch==1:
         (else_try),
           (eq, ":object", "$tld_options_overlay_13"),
           (assign, "$bright_nights", ":value"),
-        (else_try), #disabled
+        (else_try), 
           (eq, ":object", "$tld_options_overlay_15"),
-          (assign, "$FormAI_AI_no_defense", ":value"),
+          (assign, "$tld_option_bow_shield", ":value"),
+          (assign, reg78, "$tld_option_bow_shield"),
         (else_try),
           (eq, ":object", "$tld_options_overlay_16"),
           (assign, "$tld_campaign_diffulty", ":value"),

@@ -1,4 +1,4 @@
-2069
+2076
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -103,7 +103,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr_{!}_rev_374_wb__dev_ {!}_rev_374_wb_|_dev_^_Built_2025-10-05_12:27___
+qstr_{!}_rev_377_wb__dev_ {!}_rev_377_wb_|_dev_^_Built_2025-10-10_16:46___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -149,6 +149,11 @@ qstr_Default_Camera Default_Camera
 qstr_Free_Mode_Custom_Cam Free-Mode_Custom_Camera
 qstr_Fixed_Over_The_Shoul Fixed_Over-The-Shoulder_Camera
 qstr_Brighter_Nights:__ Brighter_Nights:__
+qstr_Allow_to_use_bow_wit Allow_to_use_bow_with_small_shields:__
+qstr_No__regular_troops_o No_(regular_troops_only)
+qstr_Companions_only Companions_only
+qstr_Player_only Player_only
+qstr_Yes Yes
 qstr_Done Done
 qstr_Gameplay_Tweaks Gameplay_Tweaks
 qstr_Set_to_Native_if_you Set_to_Native_if_you_encounter_any_types_of_AI_problems_during_battle.
@@ -775,6 +780,7 @@ qstr_{!}{s13}_{s14} {!}{s13}_{s14}
 qstr_{!}Notice:_Isengard_ {!}Notice:_Isengard_Last_Stand_quest_cancelled_for_savegame_compatibility_reasons._Isengard_can_now_be_sieged_like_a_regular_city.
 qstr_{!}Hobbit_quest_abor {!}Hobbit_quest_aborted_for_compatibility_reasons._Hobbits_will_now_only_appear_after_certain_conditions_are_met.
 qstr_{!}This_update_has_c {!}This_update_has_changed_the_assignment_of_some_skills_to_their_attributes._If_you_would_like_to_review_your_companions'_skills,_you_can_now_import/export_them_if_you_ask_them_about_their_skills_from_the_party_menu.
+qstr_update_savegame:_swa update_savegame:_swap_spider_mount
 qstr_{!}Something_wrong_n {!}Something_wrong,_not_enough_troops_to_remove
 qstr_{!}Troop:_{s6}___Lev {!}Troop:_{s6}_-_Level:_{reg1}
 qstr_{!}{reg6}_Centers_Le {!}{reg6}_Centers_Left_for_{s2}
@@ -928,6 +934,7 @@ qstr_Fixed_Camera___Left_ Fixed_Camera_-_Left_Shoulder
 qstr_Fixed_Camera___Cente Fixed_Camera_-_Center
 qstr_The_Nazgul_retreats! The_Nazgul_retreats!
 qstr_Shield_is_too_big_to Shield_is_too_big_to_be_used_with_a_bow.
+qstr_Shield_reduces_accur Shield_reduces_accuracy_by_{reg11}_percent.
 qstr_{s7}_waves_at_you. {s7}_waves_at_you.
 qstr_You_are_unable_to_en You_are_unable_to_endure_the_horrors_of_the_Dead_City.
 qstr_You_are_unable_to_end You_are_unable_to_endure_the_horrors_of_the_temple.

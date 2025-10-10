@@ -838,7 +838,7 @@ itemsfile version 2
  itm_gondor_shield_c Gondor_Tower_Shield Gondor_Tower_Shield 1  gondor_tower_shield 0  268763143 4831838208 500 251658402 3.5 91 0 14 0 3 320 82 0 70 0 0 0
 0
 
- itm_gondor_shield_d Gondor_Kite_Shield Gondor_Kite_Shield 1  gondorian_kite_shield 0  327687 4831838208 400 251658402 2.5 91 0 17 0 1 290 90 0 40 0 0 0
+ itm_gondor_shield_d Gondor_Kite_Shield Gondor_Kite_Shield 1  gondorian_kite_shield 0  327687 4831838208 400 251658402 2.5 91 0 17 0 1 290 90 0 42 0 0 0
 0
 
  itm_gondor_shield_e Gondor_Citadel_Shield Gondor_Citadel_Shield 1  denethor_shield 0  266247 4831838208 1000 771751936 2.5 100 0 25 0 3 300 90 0 60 0 0 0
@@ -852,7 +852,7 @@ itemsfile version 2
 1
 -50  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 334 12 1224979098644774912 1224979098644774913 
 
- itm_gon_tab_shield_c Heraldic_Gondor_Kite_Shield Heraldic_Gondor_Kite_Shield 1  tableau_shield_kite 0  327687 4831838208 400 251658402 2.5 91 0 16 0 1 270 90 0 40 0 0 0
+ itm_gon_tab_shield_c Heraldic_Gondor_Kite_Shield Heraldic_Gondor_Kite_Shield 1  tableau_shield_kite 0  327687 4831838208 400 251658402 2.5 91 0 16 0 1 270 90 0 42 0 0 0
 1
 -50  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 332 13 1224979098644774912 1224979098644774913 
 
@@ -2345,7 +2345,7 @@ itemsfile version 2
  itm_dwarf_shield_b Dwarven_Tower_Shield Dwarven_Tower_Shield 2  dwarf_tear_shield_a 0  dwarf_tear_shield_b 771751936  327687 4831838208 700 771751936 3.5 95 0 16 0 4 360 82 0 60 0 0 0
 0
 
- itm_dwarf_shield_c Dwarven_Fighting_Shield Dwarven_Fighting_Shield 2  dwarf_fighting_shield_a 0  dwarf_fighting_shield_b 771751936  327687 4831838208 400 771751936 2 94 0 18 0 3 310 88 0 40 0 0 0
+ itm_dwarf_shield_c Dwarven_Fighting_Shield Dwarven_Fighting_Shield 2  dwarf_fighting_shield_a 0  dwarf_fighting_shield_b 771751936  327687 4831838208 400 771751936 2 94 0 18 0 3 310 88 0 42 0 0 0
 0
 
  itm_dwarf_shield_d Dwarven_Round_Shield Dwarven_Round_Shield 2  dwarf_round_shield_n 0  dwarf_round_shield_e 771751936  327687 4831838208 250 771751936 3 90 0 16 0 0 300 90 0 35 0 0 0
