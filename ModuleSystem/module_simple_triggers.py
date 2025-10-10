@@ -147,7 +147,7 @@ simple_triggers = [
                 (assign, ":player_relation", reg0),
                 #Must have at least 20 relation to get friendship reward
                 (ge, ":player_relation", 20),
-                (val_div, ":player_relation", 10),
+                (val_div, ":player_relation", 20),
                 (call_script, "script_lord_friendship_reward_progress", ":troop_no", ":player_relation"),
         (try_end),
         #Friendship Rewards End

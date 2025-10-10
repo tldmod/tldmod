@@ -10965,9 +10965,10 @@ scripts = [
             (gt, ":difference", 0),
             (val_mul, ":difference", 100),
             (val_mul, ":difference", ":player_charisma"),
-            (val_div, ":difference", 1200), #starts to scale from 12, reduces below
+            (val_div, ":difference", 1400), #starts to scale from 14, reduces below
         (else_try),
             (val_mul, ":difference", 100),
+            (val_div, ":difference", ":player_charisma"),
             (val_div, ":difference", 10), #starts to scale from 10
         (try_end),
         
@@ -28016,6 +28017,9 @@ command_cursor_scripts = [
             (troop_set_slot, "trp_gondor_lord", slot_troop_retainer_troop, "trp_steward_guard"), #Steward Guards for Denethor
             (troop_set_slot, "trp_rohan_lord", slot_troop_retainer_troop, "trp_c6_king_s_man_of_rohan"), #King's Guard for Theoden
             (troop_set_slot, "trp_knight_1_7", slot_troop_retainer_troop, "trp_a6_ithilien_master_ranger"), #Rangers for Faramir
+            (troop_set_slot, "trp_knight_4_11", slot_troop_retainer_troop, "trp_a5_woodmen_night_stalker"), #woodmen for Ruel
+            (troop_set_slot, "trp_knight_5_7", slot_troop_retainer_troop, "trp_i6_iron_hills_grors_guard"), #Ironhills for Thorin
+            (troop_set_slot, "trp_dwarf_lord", slot_troop_retainer_troop, "trp_i6_dwarf_longbeard_axeman"), #Longbeards for Dain
             (troop_set_slot, "trp_knight_2_7", slot_troop_retainer_troop, "trp_ac5_camel_rider"), #camel riders for Harad lord
         ]),
     #Retainers End
@@ -28032,7 +28036,7 @@ command_cursor_scripts = [
 
             (troop_get_slot, ":old_progress", ":troop_no", slot_troop_friendship_reward_progress),
             (val_add, ":new_progress", ":old_progress"),
-            (troop_set_slot, ":troop_no", slot_troop_friendship_reward_progress, ":new_progress"),
+            (troop_set_slot, ":troop_no", slot_troop_friendship_reward_progress, ":new_progress"), #this is checked in the relevant dialog. Whenever it reaches 100, a reward is given
             
             #Randomly select a reward
             #Ideally this would be sensitive to player's needs (ie, no troops if party is full, but that's hard to do when pre-rolling)
@@ -28130,7 +28134,7 @@ command_cursor_scripts = [
                     (neq, ":stack_troop", "trp_i5_greenwood_standard_bearer"),
                     (neq, ":stack_troop", "trp_i6_rivendell_standard_bearer"),
                     (neq, ":stack_troop", "trp_i5_mordor_uruk_standard_bearer"),
-                    (neq, ":stack_troop", "trp_i5_mordor_uruk_standard_bearer"),
+                    (neq, ":stack_troop", "trp_i5_isen_uruk_standard_bearer"),
 
                     (assign, ":reward_troop_level", ":troop_level"),
                     (assign, ":reward_troop", ":stack_troop"),
@@ -28158,14 +28162,14 @@ command_cursor_scripts = [
             (call_script, "script_troop_get_player_relation", ":troop_no"),
             (assign, ":player_relation", reg0),
             (assign, ":troop_count", ":player_relation"),
-            (val_div, ":troop_count", 25), #1-4 based on relation
-            (val_max, ":troop_count", 1),
+            (val_div, ":troop_count", 20), 
+            (val_add, ":troop_count", 1), #2-6 troops based on relation
 
             (try_begin),
                 #Give extra orcs
                 (troop_get_type, ":type", ":reward_troop"),
                 (eq, ":type", tf_orc),
-                (val_mul, ":troop_count", 3),
+                (val_mul, ":troop_count", 2), #4-12
             (try_end),
 
             (assign, reg41, ":troop_count"),
@@ -28181,20 +28185,17 @@ command_cursor_scripts = [
 
             #Non-combat rulers don't wear appropriate gear, so if it's one of them we subsitute a high tier faction troop
             (try_begin),
-                (eq, ":troop_no", "trp_lorien_lord"),
-                (assign, ":gear_troop", "trp_a6_lorien_grey_warden"),
-            (else_try),
-                (eq, ":troop_no", "trp_mordor_lord"),
-                (assign, ":gear_troop", "trp_c5_mordor_num_knight"), #Knight so horses can be given
-            (else_try),
-                (eq, ":troop_no", "trp_gondor_lord"),
-                (assign, ":gear_troop", "trp_c6_gon_tower_knight"),
-            (else_try),
-                (eq, ":troop_no", "trp_isengard_lord"),
-                (assign, ":gear_troop", "trp_i6_isen_uruk_berserker"),
-            (else_try),
                 #Combat lords give rewards based on their own gear
+                (neq, ":troop_no", "trp_isengard_lord"),
+                (neq, ":troop_no", "trp_gondor_lord"),
+                (neq, ":troop_no", "trp_mordor_lord"),
+                (neq, ":troop_no", "trp_lorien_lord"),
+                (store_random_in_range, ":chance", 0, 100),
+                (gt, ":chance", 50),
                 (assign, ":gear_troop", ":troop_no"),
+            (else_try), #InVain: chance for more diverse gear by picking any other high level troop in the party
+                (call_script, "script_lord_reward_troops_type", ":troop_no"),
+                (assign, ":gear_troop", reg40),
             (end_try),
 
             (assign, ":eligible_items", 0),
@@ -28209,6 +28210,9 @@ command_cursor_scripts = [
                 (neg|item_has_property, ":item", itp_unique),
                 (item_has_property, ":item", itp_shop),
                 ] or []) + [
+                
+                (store_item_value, ":value", ":item"),
+                (gt, ":value", 250), #make sure it's not some cheap junk
 
                 #If item is eligible store it in the array
                 (troop_set_slot, "trp_temp_array_a", ":eligible_items", ":item"),
@@ -28251,7 +28255,8 @@ command_cursor_scripts = [
                 (assign, ":mod2", imod_balanced),
                 (assign, ":mod3", imod_large_bag),
             (else_try),
-                (is_between, ":item_type", itp_type_head_armor, itp_type_pistol),
+                (this_or_next|is_between, ":item_type", itp_type_head_armor, itp_type_pistol),
+                (eq, ":item_type", itp_type_shield),
                 (assign, ":mod1", imod_thick),
                 (assign, ":mod2", imod_reinforced),
                 (assign, ":mod3", imod_lordly),
