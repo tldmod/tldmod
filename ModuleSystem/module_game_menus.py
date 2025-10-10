@@ -6117,6 +6117,14 @@ game_menus = [
 			  (try_end),
 
               (call_script, "script_increase_rank", "$impressed_faction", ":rank_increase"),
+              
+              (try_begin), #give some rank for player faction if we're in the area. Helps ranking up with minor factions neighboring to big factions.
+                (neq, "$impressed_faction", "$players_kingdom"),
+                (call_script, "script_find_theater", "p_main_party"),
+                (neg|faction_slot_eq, "$players_kingdom", slot_faction_active_theater, reg0),
+                (val_div, ":rank_increase", 2),
+                (call_script, "script_increase_rank", "$impressed_faction", ":rank_increase"),
+              (try_end),
 		  (else_try),
 		  	  (call_script, "script_party_get_dominant_faction", "p_main_party"), #Kham - Check dominant faction in player party and increase the rank from that faction
 		  	  (assign, ":impressed_troop_faction", reg0),
@@ -9555,7 +9563,7 @@ game_menus = [
      (assign, ":max_skill_owner", reg1),
      (assign, reg2, ":max_skill"),
 
-     (store_sub, reg4, 11, ":max_skill"),
+     (store_sub, reg4, 9, ":max_skill"),
      (try_begin), #home faction bonus
         (eq, "$ambient_faction", "$players_kingdom"),
         (val_sub, reg4, 4),
@@ -9629,8 +9637,9 @@ game_menus = [
            (val_sub, reg6, "$tld_action_cost"),
            (faction_set_slot, "$ambient_faction", slot_faction_influence, reg6),
            (call_script, "script_get_max_skill_of_player_party", "skl_trade"),
-           (store_sub, ":hours_takes", 11, reg0),
-           (rest_for_hours_interactive, ":hours_takes", 3, 0),
+           (store_sub, ":hours_takes", 9, reg0),
+           (val_max, ":hours_takes", 1),
+           (rest_for_hours, ":hours_takes", 3, 0),
            (change_screen_return),
            ]),
       ("go_back_dot",[],"Go back.", [(jump_to_menu,"mnu_town")]),],

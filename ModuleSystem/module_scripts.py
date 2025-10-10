@@ -545,6 +545,12 @@ scripts = [
           (assign, ":old_rank", reg0),
           (faction_get_slot, ":old_rank_points", ":fac", slot_faction_rank),
 		  
+          (try_begin), #reduce rank income above rank 3 before the war starts
+            (ge, ":old_rank", 3),
+            (eq, "$tld_war_began", 0),
+            (val_div, ":difference", 2),
+          (try_end),
+          
 		  (try_begin), #InVain: Home faction bonus
 			(eq, "$players_kingdom", ":fac"),
 			(gt, ":difference", 0),
@@ -558,7 +564,7 @@ scripts = [
               (store_attribute_level, ":player_charisma", trp_player, ca_charisma),
               (val_mul, ":difference", 100),
               (val_mul, ":difference", ":player_charisma"),
-              (val_div, ":difference", 1200), #starts to scale from 12, reduces below
+              (val_div, ":difference", 1400), #starts to scale from 14, reduces below
               (val_max, ":difference", 1),
           (try_end),
           
@@ -650,8 +656,8 @@ scripts = [
     
       (faction_get_slot, ":rank_points", ":faction", slot_faction_rank),
     # current formula rank points (rank) = Ax^2 + Bx
-      (assign, ":A", 5),
-      (assign, ":B", 45),
+      (assign, ":A", 10),
+      (assign, ":B", 40),
     # rank = (sqrt(B*B+4*A*rp)-B)/(2*A)
       (store_mul, ":AC4", ":rank_points", 4),
       (val_mul, ":AC4", ":A"),
@@ -674,8 +680,8 @@ scripts = [
 ("get_rank_points_for_rank",
     [ (store_script_param_1, ":rank"),
       # current formula rank points (rank) = Ax^2 + Bx
-      (assign, ":A", 5),
-      (assign, ":B", 45),
+      (assign, ":A", 10),
+      (assign, ":B", 40),
       (store_mul, ":ranksquared", ":rank", ":rank"),
       (store_mul, ":rank_points", ":ranksquared", ":A"),
       (store_mul, ":Bx", ":rank", ":B"),
@@ -2390,6 +2396,7 @@ scripts = [
 		#current formula is =((garrison/10 + rank*5 + leadership*10) * (relation+100))/1000 +3
 		#(store_party_size_wo_prisoners, ":to_add", ":town"),
         (party_get_slot, ":to_add", ":town", slot_center_garrison_limit), #get regular size instead of actual garrison size -- less room for exploits
+
     	(val_div, ":to_add", 10), 
 	    (call_script, "script_get_faction_rank", ":fac"),
 	    (assign, ":rank", reg0),
@@ -2405,7 +2412,11 @@ scripts = [
 		    (this_or_next|eq, ":fac", "fac_isengard"),
 		    (this_or_next|eq, ":fac", "fac_moria"),
 		    (this_or_next|eq, ":fac", "fac_guldur"),
-		    (eq, ":fac", "fac_gundabad"),
+            (this_or_next|eq, ":fac", "fac_gundabad"),
+            (this_or_next|eq, ":fac", "fac_khand"), #InVain: Also give a bonus to one-camp evil factions because they have less options for recruitment (Not Imladris though!)
+            (this_or_next|eq, ":fac", "fac_harad"),
+            (this_or_next|eq, ":fac", "fac_umbar"),
+		    (eq, ":fac", "fac_dunland"),
 		    #(assign, ":is_orc_faction", 1),
 	    	(val_mul, ":to_add", 120), (val_div, ":to_add", 100), #+20% for orc factions #InVain: Not sure if still needed (due to huge orc starting garrisons), but let's keep it for now.
         (else_try),
@@ -10993,6 +11004,7 @@ scripts = [
         #Add relation change to friendship reward progress
         (try_begin),
             (is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+            (val_mul, ":difference", 2),
             (call_script, "script_lord_friendship_reward_progress", ":troop_no", ":difference"),
         (try_end),
         #Friendship Rewards End
