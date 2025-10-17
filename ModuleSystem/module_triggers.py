@@ -1256,7 +1256,7 @@ triggers = [
        (else_try),
           (eq, "$tld_start_war_by_day_or_level", 1),
           (store_current_day, ":cur_day"),
-          (store_mul, ":war_time", "$tld_player_level_to_begin_war", 5),
+          (store_mul, ":war_time", "$tld_player_level_to_begin_war", 4),
           (gt, ":cur_day", ":war_time"),
           (store_random_in_range, ":chance", 0, 50),
           (val_sub, ":cur_day", ":war_time"),

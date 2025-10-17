@@ -1668,16 +1668,16 @@ itemsfile version 2
  itm_free_rohan_2h_sword2 {***}Rohan_War_Sword {***}Rohan_War_Sword 1  rohan_sword_a_2h 0  274792451 9223635924301119728 524 287892 3 100 0 0 0 0 40960 94 0 101 0 287 40
 0
 
- itm_mirkwood_leather Woodelf_Leather_Armor Woodelf_Leather_Armor 3  mirkwood_leather_b 0  mirkwood_leather_a 134  mirkwood_leather_c 167772160  16842765 0 150 704643206 2 100 0 16 2 0 0 0 0 0 0 0 0
+ itm_mirkwood_leather Woodelf_Leather_Armor Woodelf_Leather_Armor 3  mirkwood_leather_b 0  mirkwood_leather_a 134  mirkwood_leather_c 704643072  16842765 0 150 704643206 2 100 0 16 2 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_pad Greenwood_Quilted_Coat Greenwood_Quilted_Coat 3  mirkwood_quiltedsurcoat_01 0  mirkwood_quiltedsurcoat_01 134  mirkwood_quiltedsurcoat_01_b 167772160  16842765 0 800 704643206 6 100 0 20 8 0 0 0 0 0 0 0 0
+ itm_mirkwood_pad Greenwood_Quilted_Coat Greenwood_Quilted_Coat 3  mirkwood_quiltedsurcoat_01 0  mirkwood_quiltedsurcoat_01 134  mirkwood_quiltedsurcoat_01_b 704643072  16842765 0 800 704643206 6 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_mail Greenwood_Mail Greenwood_Mail 3  mirkwood_maillewithsurcoat_01_b 0  mirkwood_maillewithsurcoat_01 134  mirkwood_royal 167772160  16842765 0 1800 704643206 17 94 0 29 14 12 0 0 0 0 0 0 0
+ itm_mirkwood_mail Greenwood_Mail Greenwood_Mail 3  mirkwood_maillewithsurcoat_01_b 0  mirkwood_maillewithsurcoat_01 134  mirkwood_royal 704643072  16842765 0 1800 704643206 17 94 0 29 14 12 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_scale Greenwood_Light_Scale Greenwood_Light_Scale 3  mirkwood_light_scale 0  mirkwood_scalequilted_01 134  mirkwood_scalequilted_01b 167772160  16842765 0 1400 704643206 12 93 0 26 12 11 0 0 0 0 0 0 0
+ itm_mirkwood_scale Greenwood_Light_Scale Greenwood_Light_Scale 3  mirkwood_light_scale 0  mirkwood_scalequilted_01 134  mirkwood_scalequilted_01b 704643072  16842765 0 1400 704643206 12 93 0 26 12 11 0 0 0 0 0 0 0
 0
 
  itm_mirkwood_heavy_scale Greenwood_Leafscale Greenwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 2500 704643206 23 96 0 38 12 15 0 0 0 0 0 0 0
@@ -1713,16 +1713,16 @@ itemsfile version 2
  itm_mirkwood_spear_shield_c Woodelf_Round_Shield Woodelf_Round_Shield 1  mirkwood_royal_round 0  327687 5100273664 700 771751936 2 94 0 18 0 2 300 93 0 40 0 0 0
 0
 
- itm_mirkwood_helm_a Woodelf_Archer_Helm Woodelf_Archer_Helm 4  mirkwood_helm_a 134  mirkwood_helm_b 1  mirkwood_helm_b 0  mirkwood_helm_c 167772160  65548 0 600 167772294 1 92 25 0 0 0 0 0 0 0 0 0 0
+ itm_mirkwood_helm_a Woodelf_Archer_Helm Woodelf_Archer_Helm 4  mirkwood_helm_a 134  mirkwood_helm_b 1  mirkwood_helm_b 0  mirkwood_helm_c 704643072  65548 0 600 167772294 1 92 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_b Greenwood_Helm Greenwood_Helm 4  mirkwoodnormalspearman_a_light 134  mirkwoodnormalspearman_a 1  mirkwoodnormalspearman_a 0  mirkwoodnormalspearman_b 167772160  65548 0 900 167772294 1 93 30 0 0 10 0 0 0 0 0 0 0
+ itm_mirkwood_helm_b Greenwood_Helm Greenwood_Helm 4  mirkwoodnormalspearman_a_light 134  mirkwoodnormalspearman_a 1  mirkwoodnormalspearman_a 0  mirkwoodnormalspearman_b 704643072  65548 0 900 167772294 1 93 30 0 0 10 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_c Greenwood_Heavy_Helm Greenwood_Heavy_Helm 4  mirkwoodroyalspearman_a_light 134  mirkwoodroyalspearman_a 1  mirkwoodroyalspearman_a 0  mirkwoodroyalspearman_b 167772160  65548 0 1200 167772294 2 94 34 0 0 12 0 0 0 0 0 0 0
+ itm_mirkwood_helm_c Greenwood_Heavy_Helm Greenwood_Heavy_Helm 4  mirkwoodroyalspearman_a_light 134  mirkwoodroyalspearman_a 1  mirkwoodroyalspearman_a 0  mirkwoodroyalspearman_b 704643072  65548 0 1200 167772294 2 94 34 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_helm_d Greenwood_Royal_Helm Greenwood_Royal_Helm 3  mirkwoodroyalarcher_a 1  mirkwoodroyalarcher_a 0  mirkwoodroyalarcher_b 167772160  65548 0 1300 704643072 3 95 36 0 0 13 0 0 0 0 0 0 0
+ itm_mirkwood_helm_d Greenwood_Royal_Helm Greenwood_Royal_Helm 3  mirkwoodroyalarcher_a 1  mirkwoodroyalarcher_a 0  mirkwoodroyalarcher_b 704643072  65548 0 1300 704643072 3 95 36 0 0 13 0 0 0 0 0 0 0
 0
 
  itm_woodelf_leather_boots Woodelf_Leather_Boots Woodelf_Leather_Boots 2  TLDO_elf_boots 0  TLDO_mirkwood_boots 167772160  65550 0 550 167772294 1 90 0 0 16 0 0 0 0 0 0 0 0

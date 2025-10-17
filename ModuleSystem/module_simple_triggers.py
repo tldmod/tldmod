@@ -2268,6 +2268,8 @@ simple_triggers = [
           (main_party_has_troop, ":npc"),
           (store_troop_faction, ":npc_faction", ":npc"),
           (faction_slot_eq, ":npc_faction", slot_faction_state, sfs_active),
+          (store_relation, ":rel", ":npc_faction", "$players_kingdom"),
+          (gt, ":rel", 0),
           
           (faction_get_slot, ":npc_faction_strength", ":npc_faction", slot_faction_strength),
           (lt, ":npc_faction_strength", fac_str_very_weak),

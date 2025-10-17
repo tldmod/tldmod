@@ -1758,10 +1758,10 @@ center_list = [
 	[icon_mfc_moria],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
 
 (p_town_dale, [scn_dale_center, scn_dale_castle, scn_rohan_prison,scn_rohan_tavern,scn_dale_arena, scn_dale_siege, mesh_ui_default_menu_window],
-	[trp_dale_captain, trp_smith_dale, trp_merchant_dale, trp_elder_dale, pt_dale_recruits, trp_dale_lord,trp_townsman,trp_i1_dale_militia,trp_watchman,trp_townsman], 
-	[icon_mfc_dale],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 0, tld_siegable_capital),
+	[trp_dale_captain, trp_smith_dale, trp_merchant_dale, trp_elder_dale, pt_dale_recruits, trp_dale_lord,trp_townsman,trp_townsman,trp_watchman,trp_watchman], 
+	[icon_mfc_dale],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_high, 1, tld_siegable_capital),
 (p_town_esgaroth, [scn_esgaroth_center, scn_esgaroth_castle, scn_rohan_prison,scn_rohan_tavern,scn_dale_arena,scn_esgaroth_siege,mesh_town_esgaroth],
-	[trp_dale_captain, trp_smith_esgaroth, trp_merchant_esgaroth, trp_elder_esgaroth, pt_dale_recruits, trp_knight_5_3,trp_townsman,trp_i1_dale_militia,trp_watchman,trp_townsman], 
+	[trp_dale_captain, trp_smith_esgaroth, trp_merchant_esgaroth, trp_elder_esgaroth, pt_dale_recruits, trp_knight_5_3,trp_townsman,trp_townsman,trp_watchman,trp_watchman], 
 	[icon_mfc_dale],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_normal),
 
 (p_town_dunland_camp, [scn_dunland_camp_center, -1, -1,-1,-1,scn_dunland_camp_siege, mesh_town_evilcamp],
@@ -1825,10 +1825,10 @@ center_list = [
 # NPCs are borrowed from other faction locations - this should be changed
 # There is no income, and the garrison strength should be respectable, so they are not easily destroyed
 (p_advcamp_gondor, [scn_advcamp_gondor, -1, -1, -1, -1, scn_advcamp_gondor_siege, mesh_town_goodcamp],
-	[trp_gondor_captain, trp_smith_wosgiliath, trp_merchant_wosgiliath, trp_no_troop, pt_gondor_recruits, trp_gondor_lord, trp_a4_ithilien_ranger,trp_i2_gon_watchman,trp_i4_gon_spearman,trp_i4_gon_swordsman], 
+	[trp_gondor_captain, trp_smith_wosgiliath, trp_merchant_wosgiliath, trp_no_troop, pt_gondor_recruits, trp_gondor_lord, trp_a4_ithilien_ranger,trp_i2_gon_watchman,trp_i3_gon_footman,trp_i4_gon_swordsman], 
 	[icon_mfc_gondor],[900],[2,1,4,1,4,1], 0, garrison_limit_low, 3, tld_siegable_always),
 (p_advcamp_rohan, [scn_advcamp_rohan, -1, -1, -1, -1, scn_advcamp_rohan_siege, mesh_town_goodcamp],
-	[trp_rohan_captain, trp_smith_eastfold, trp_merchant_eastfold, trp_no_troop, pt_rohan_recruits, trp_rohan_lord, trp_ac3_skirmisher_of_rohan, trp_c4_lancer_of_rohan, trp_i2_guardsman_of_rohan, trp_i3_footman_of_rohan], 
+	[trp_rohan_captain, trp_smith_eastfold, trp_merchant_eastfold, trp_no_troop, pt_rohan_recruits, trp_rohan_lord, trp_i2_guardsman_of_rohan, trp_i3_footman_of_rohan, trp_ac3_skirmisher_of_rohan, trp_c4_lancer_of_rohan], 
 	[icon_mfc_rohan],[900],[3,8,4,6,4,5], 0, garrison_limit_low, 3, tld_siegable_always),
 (p_advcamp_isengard, [scn_advcamp_isengard, -1, -1, -1, -1, scn_advcamp_isengard_siege, mesh_town_evilcamp],
 	[trp_isen_captain, trp_smith_urcamp, trp_merchant_urcamp, trp_no_troop, pt_isengard_recruits, trp_isengard_lord, trp_i2_isen_orc,trp_i3_isen_large_orc, trp_a2_isen_uruk_tracker, trp_i2_isen_uruk], 
@@ -1840,7 +1840,7 @@ center_list = [
 	[trp_harad_captain, trp_smith_harad, trp_merchant_harad, trp_no_troop, pt_harad_recruits, trp_harad_lord,trp_i1_harad_levy,trp_i1_harad_levy,trp_i3_harad_infantry,trp_c3_harondor_rider], 
 	[icon_mfc_harad],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_low, 3, tld_siegable_always),
 (p_advcamp_rhun, [scn_advcamp_rhun, -1, -1,-1,-1, scn_advcamp_rhun_siege, mesh_town_rhun_north],
-	[trp_c6_rhun_warlord, trp_smith_north_rhun, trp_merchant_north_rhun, trp_no_troop, pt_rhun_recruits,  trp_rhun_lord, trp_c4_rhun_noble_rider, trp_i4_rhun_vet_infantry, trp_i1_rhun_tribesman, trp_i2_rhun_tribal_warrior, ], 
+	[trp_c6_rhun_warlord, trp_smith_north_rhun, trp_merchant_north_rhun, trp_no_troop, pt_rhun_recruits,  trp_rhun_lord, trp_i1_rhun_tribesman, trp_i2_rhun_tribal_warrior, trp_i3_rhun_tribal_infantry, trp_i4_rhun_vet_infantry,], 
 	[icon_mfc_rhun],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_low, 3, tld_siegable_always),
 (p_advcamp_khand, [scn_advcamp_khand, -1, -1,-1,-1, scn_advcamp_khand_siege, mesh_town_evilcamp],
 	[trp_khand_captain, trp_smith_khand, trp_merchant_khand, trp_no_troop, pt_khand_recruits, trp_khand_lord, trp_i1_khand_bondsman, trp_i3_khand_warrior,trp_i3_khand_pitfighter,trp_i4_khand_pit_champion], 
@@ -1849,10 +1849,10 @@ center_list = [
 	[-1, trp_smith_umbar, trp_merchant_umbar, trp_no_troop, pt_umbar_recruits, trp_umbar_lord, trp_i1_corsair_youth, trp_i2_corsair_warrior, trp_a4_corsair_veteran_marksman,trp_a2_corsair_marine], 
 	[icon_mfc_umbar],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_low, 3, tld_siegable_always),
 (p_advcamp_lorien, [scn_advcamp_lorien, -1, -1, -1, -1, scn_advcamp_lorien_siege, mesh_town_goodcamp],
-	[trp_lorien_captain, trp_smith_camroth, trp_merchant_camroth, trp_no_troop, pt_lorien_recruits,  trp_lorien_lord, trp_a1_lorien_scout, trp_a3_lorien_vet_warden, trp_a2_lorien_archer, trp_i3_lorien_inf], 
+	[trp_lorien_captain, trp_smith_camroth, trp_merchant_camroth, trp_no_troop, pt_lorien_recruits,  trp_lorien_lord, trp_a1_lorien_scout, trp_a2_lorien_archer, trp_a3_lorien_vet_warden, trp_i3_lorien_inf], 
 	[icon_mfc_lorien],[900],[2,1,4,1,4,1], 0, garrison_limit_low, 3, tld_siegable_always),
 (p_advcamp_imladris, [scn_advcamp_imladris, -1, -1,-1,-1, scn_advcamp_imladris_siege, mesh_town_goodcamp],
-	[trp_riv_captain, trp_smith_imladris, trp_merchant_imladris, trp_no_troop, pt_imladris_recruits, trp_imladris_lord, trp_a1_riv_scout,trp_i3_riv_swordbearer, trp_a3_riv_archer,trp_a1_arnor_scout], 
+	[trp_riv_captain, trp_smith_imladris, trp_merchant_imladris, trp_no_troop, pt_imladris_recruits, trp_imladris_lord, trp_a1_riv_scout,trp_a1_arnor_scout,trp_i3_riv_swordbearer, trp_a3_riv_archer], 
 	[icon_mfc_imladris],[900],[2,1,4,1,4,1], 0, garrison_limit_low, 3, tld_siegable_always),
 (p_advcamp_woodelf, [scn_advcamp_mirkwood, -1, -1,-1,-1, scn_advcamp_mirkwood_siege, mesh_town_goodcamp],
 	[trp_greenwood_captain, trp_smith_woodelf_camp, trp_merchant_woodelf_camp, trp_no_troop, pt_woodelf_recruits, trp_woodelf_lord, trp_a3_greenwood_archer, trp_a1_greenwood_scout, trp_a3_greenwood_archer, trp_i2_greenwood_infantry], 
@@ -1867,7 +1867,7 @@ center_list = [
 	[trp_gunda_captain, trp_smith_gundabad, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_i1_gunda_goblin,trp_i2_gunda_orc,trp_i3_gunda_orc_fighter,trp_c4_gunda_warg_rider], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_low, 3, tld_siegable_always),
 (p_advcamp_dale, [scn_advcamp_dale, -1, -1, -1, -1, scn_advcamp_dale_siege, mesh_town_goodcamp],
-	[-1, trp_smith_dale_ac, trp_merchant_esgaroth, trp_no_troop, pt_dale_recruits, trp_dale_lord,trp_i3_dale_swordsman,trp_i4_dale_billman,trp_i5_dale_hearthman,trp_a4_dale_archer], 
+	[-1, trp_smith_dale_ac, trp_merchant_esgaroth, trp_no_troop, pt_dale_recruits, trp_dale_lord, trp_i1_dale_militia, trp_i2_dale_man_at_arms,trp_i4_dale_billman,trp_a4_dale_archer], 
 	[icon_mfc_dale],[900],[2,1,4,1,4,1], 0, garrison_limit_low, 3, tld_siegable_always),
 (p_advcamp_dwarf, [scn_advcamp_erebor, -1, -1,-1,-1, scn_advcamp_erebor_siege, mesh_town_goodcamp],
 	[-1, trp_smith_ironhill, trp_merchant_ironhill, trp_no_troop, pt_dwarf_recruits, trp_dwarf_lord,trp_a2_dwarf_lookout, trp_a4_dwarf_bowman, trp_i4_iron_hills_infantry, trp_i2_iron_hills_miner], 
@@ -2083,7 +2083,7 @@ fac_reward_items_list = [
 #fac_moria
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_wargarmored_3a, imod_reinforced), (6, itm_ring_b_reward, 0), (7, itm_dwarf_great_pick, imod_strong), (8, itm_moria_armor_e, imod_lordly), (9, itm_drums_of_the_deep, 0)],
 #fac_guldur
-[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_orc_club_d, imod_balanced), (5, itm_leather_gloves_reward, imod_crude), (6, itm_herbarium_reward, 0), (7, itm_spider, 0), (8, itm_black_arrows_reward, 0), (9, itm_witchking_helmet, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_orc_club_d, imod_balanced), (5, itm_leather_gloves_reward, imod_crude), (6, itm_herbarium_reward, 0), (7, itm_spider_mount, 0), (8, itm_black_arrows_reward, 0), (9, itm_witchking_helmet, 0)],
 #fac_gundabad
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4, itm_orc_throwing_axes_reward, 0), (5, itm_uruk_falchion_b, imod_balanced), (6, itm_warg_reward, 0), (7, itm_gundabad_helm_e, imod_lordly), (8, itm_gundabad_armor_e, imod_lordly), (9, itm_orc_idol_reward, 0)],
 #fac_dunland

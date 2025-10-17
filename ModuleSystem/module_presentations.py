@@ -4790,23 +4790,16 @@ if wb_compile_switch==1:
         (overlay_set_position, reg1, pos0),
         
         (create_combo_button_overlay, "$tld_options_overlay_0"),
-        # (overlay_add_item, "$tld_options_overlay_0", "@20"), # swy: index 0, inserted first, appears last/at the bottom of the list
-        # (overlay_add_item, "$tld_options_overlay_0", "@18"),
         (assign, ":level", 16),
-        (try_for_range, ":unused", 0,6),
+        (try_for_range, ":unused", 0,7), #level: 4, 6, 8, 10, 12, 14, 16; day: 16; 24; 32; 40; 48; 56; 64
             (assign, reg0, ":level"),
             (try_begin),
                 (eq, "$tld_start_war_by_day_or_level", 1),
-                (val_mul, reg0, 5),
+                (val_mul, reg0, 4),
             (try_end),            
             (overlay_add_item, "$tld_options_overlay_0", "@{!}{reg0}"),
             (val_sub, ":level", 2),
         (try_end),
-        # (overlay_add_item, "$tld_options_overlay_0", "@14"), # swy: index 3
-        # (overlay_add_item, "$tld_options_overlay_0", "@12"),
-        # (overlay_add_item, "$tld_options_overlay_0", "@10"),
-        # (overlay_add_item, "$tld_options_overlay_0",  "@8"),
-        # (overlay_add_item, "$tld_options_overlay_0",  "@6"), # swy: index 7, inserted last, appears first/highest on the combolist
 
         (copy_position, pos1, pos0),
         (store_add, reg2, ":y_pos", 0),

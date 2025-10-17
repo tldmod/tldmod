@@ -2064,8 +2064,7 @@ scripts = [
 	(assign, "$wall_missile_troop2", 0),
 	(assign, "$wall_missile_troop3", 0),
 	(assign, "$wall_missile_troop4", 0),
-	(assign, "$wall_missile_troop5", 0),  
-	(assign, "$tld_start_war_by_day_or_level", 0),  	
+	(assign, "$wall_missile_troop5", 0), 
 
    #initialize game option defaults (see camp menu)
 	(assign, "$tld_option_crossdressing", 0), # item restrictions ON by default
@@ -2119,7 +2118,7 @@ scripts = [
 	(party_set_slot, "p_main_party", slot_party_number_following_player, 0),
 	(assign, "$lore_mode", 1),# unused      
     (assign, "$play_ambient_sounds", 1),
-    (assign, "$tld_start_war_by_day_or_level", 0), #0= by level (old setting), 1=by day (new setting)
+    (assign, "$tld_start_war_by_day_or_level", 1), #0= by level (old setting), 1=by day (new setting)
     (assign, "$cheatmode_used", 0),
     (assign, "$tutorial_1_state", 0),
     
@@ -7700,6 +7699,14 @@ scripts = [
 		    (else_try),
             	(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
             (try_end),
+            
+            (try_begin), #fallback for centers that can switch sides
+                (store_faction_of_party, ":target_fac", reg0),
+                (store_relation, ":rel", ":target_fac", "$players_kingdom"),
+                (ge, ":rel", 0),
+                (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+            (try_end),
+            
             (assign, ":cur_target_center", reg0),
             (assign, ":dist", reg1),
             (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target Village - So that we can set up appropriate guards/troops
@@ -12576,11 +12583,6 @@ scripts = [
 		(eq,":landmark", landmark_old_forest_road ),
 		(assign,":scene_to_use","scn_old_forest_road"),
 	(else_try),
-		(eq,":region",region_dead_marshes),
-		(assign,":scene_to_use","scn_deadmarshes"),
-		(assign, "$bs_day_sound", "snd_deadmarshes_ambiance"),
-		(assign, "$bs_night_sound", "snd_wind_ambiance"),
-	(else_try),
      	(this_or_next|eq,":region",region_firien_wood),
 		(eq,":region",region_druadan_forest),
 		(assign, "$small_scene_used", 1),
@@ -12710,7 +12712,9 @@ scripts = [
         (store_random_in_range, ":scene_to_use", scn_swamp_1, scn_swamp_5),
 	(else_try),		# evil marshes 
         (this_or_next|eq,":region",region_wetwang),
-		(eq,":region",region_dead_marshes), 
+		(eq,":region",region_dead_marshes),
+		(assign, "$bs_day_sound", "snd_deadmarshes_ambiance"),
+		(assign, "$bs_night_sound", "snd_wind_ambiance"),
         (store_random_in_range, ":scene_to_use", scn_swamp_4, scn_swamp_6+1),
 	(else_try),		# anything else
 		(assign, ":native_terrain_to_use", rt_steppe),  
@@ -14647,8 +14651,8 @@ scripts = [
       #play somewhere around the player
       (get_player_agent_no, ":player_agent"),
       (agent_get_position, pos5, ":player_agent"),
-      (store_random_in_range, ":x", -1000, 1000),
-      (store_random_in_range, ":y", -1000, 1000),
+      (store_random_in_range, ":x", -500, 500),
+      (store_random_in_range, ":y", -500, 500),
       (position_move_x, pos5, ":x"),
       (position_move_y, pos5, ":y"),
       #(neg|is_currently_night),
@@ -21048,7 +21052,6 @@ scripts = [
           #(eq, ":faction", "fac_beorn"),
           (assign, ":track", "track_TLD_Battle_Beorn"),
         (try_end),
-        
         (play_track, ":track", 0),
       (try_end),
       
@@ -21773,7 +21776,8 @@ scripts = [
 	    (str_store_string, s61, "str_last_rumor"),
 	 (else_try),
 	   (store_random_in_range,":rumor_type",0,100),
-       (store_troop_faction,":faction","$g_talk_troop"),
+       #(store_troop_faction,":faction","$g_talk_troop"),
+       (store_faction_of_party,":faction","$current_town"),
 		 (try_begin),
          (is_between, ":rumor_type", 0, 80), #faction specific rumors
          (faction_get_slot,":rumors_begin",":faction",slot_faction_rumors_begin),
@@ -24995,6 +24999,14 @@ command_cursor_scripts = [
 	        (try_end),
 		(try_end), 
 	## End Good Side Targets
+    
+    (try_begin), #fallback for centers that can switch sides
+        (store_faction_of_party, ":target_fac", reg0),
+        (store_relation, ":rel", ":target_fac", "$players_kingdom"),
+        (ge, ":rel", 0),
+        (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+    (try_end),
+    
 	(try_end), #end Script
 ]),
 
