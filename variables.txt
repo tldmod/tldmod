@@ -190,7 +190,7 @@ faction_good
 faction_evil
 rescue_stage
 active_rescue
-player_is_inside_dungeon
+current_fog
 agent_king
 player_is_bowing
 dungeons_in_scene
@@ -756,3 +756,5 @@ allies_coh_modifier
 enemies_coh_modifier
 tutorial_1_state
 new_player_side
+target_fog
+base_fog

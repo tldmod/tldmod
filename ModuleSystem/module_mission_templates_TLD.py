@@ -4162,24 +4162,47 @@ dungeon_darkness_effect = (0.3, 0, 0, [(eq,"$dungeons_in_scene",1)], [
     (try_end),
 	(try_begin), # setting fog thickness
 		(neq,":min_pointer",-1),
-		(try_begin),(eq,":min_pointer","spr_light_fog_black0"),(assign,reg11,10000), # 10000
-		 (else_try),(eq,":min_pointer","spr_light_fog_black1"),(assign,reg11,120),# was 500
-		 (else_try),(eq,":min_pointer","spr_light_fog_black2"),(assign,reg11,80), # was 200
-		 (else_try),(eq,":min_pointer","spr_light_fog_black3"),(assign,reg11,40),  # was 120
-		 (else_try),(eq,":min_pointer","spr_light_fog_black4"),(assign,reg11,20), # was 80
-		 (else_try),(eq,":min_pointer","spr_light_fog_black5"),(assign,reg11,14), # was 20
+		(try_begin),(eq,":min_pointer","spr_light_fog_black0"),(assign,"$target_fog","$base_fog"), 
+		 (else_try),(eq,":min_pointer","spr_light_fog_black1"),(assign,"$target_fog",120),# was 500
+		 (else_try),(eq,":min_pointer","spr_light_fog_black2"),(assign,"$target_fog",80),# was 200
+		 (else_try),(eq,":min_pointer","spr_light_fog_black3"),(assign,"$target_fog",40),# was 120
+		 (else_try),(eq,":min_pointer","spr_light_fog_black4"),(assign,"$target_fog",20), # was 80
+		 (else_try),(eq,":min_pointer","spr_light_fog_black5"),(assign,"$target_fog",14), # was 20
 		(try_end),
-        (try_begin),
-            (eq, "$bright_nights", 1),
-            (set_fog_distance,reg11,0x0C0C0C), 
-        (else_try),
-            (set_fog_distance,reg11,0x000001), 
-        (try_end),
-		#(display_message, "@DEBUG: Fog distance: {reg11}"), 	
-		(try_begin),(eq, reg11, 10000),(assign, "$player_is_inside_dungeon",0),
-		 (else_try),				   (assign, "$player_is_inside_dungeon",1),
-		(try_end),
-	(try_end)])
+        # (assign, reg11, "$target_fog"), (display_message, "@target fog: {reg11}"),
+	(try_end),
+    
+    (try_begin), #adjust gradually
+        (gt, "$current_fog", "$target_fog"), #make it darker
+        (store_mul, ":new_darkness", "$current_fog", 4),
+        (val_div, ":new_darkness", 5),
+        (val_clamp, ":new_darkness", "$target_fog", "$current_fog"),
+        (assign, "$current_fog", ":new_darkness"),
+    (else_try),
+        (lt, "$current_fog", "$target_fog"), #make it brighter
+        (store_mul, ":new_darkness", "$current_fog", 5),
+        (val_div, ":new_darkness", 4),
+        (val_clamp, ":new_darkness", "$current_fog", "$target_fog"),
+        (val_min, ":new_darkness", "$base_fog"),
+        (assign, "$current_fog", ":new_darkness"),
+    (try_end),
+
+    (try_begin), #set color
+        (ge, "$target_fog", "$base_fog"), #outside 
+        (val_min, "$current_fog", "$base_fog"),
+        (str_store_troop_name, s11, "trp_fog_color"),
+        (set_fog_distance,"$current_fog",s11), 
+        #(display_message, "@set color to {s11}"),
+    (else_try),
+        (eq, "$bright_nights", 1),
+        (set_fog_distance,"$current_fog",0x0C0C0C), 
+    (else_try),
+        (set_fog_distance,"$current_fog",0x000001), 
+    (try_end),
+    (assign, reg12,"$current_fog"),
+    #(display_message, "@DEBUG: Fog distance: {reg12}"),     
+
+    ])
 	
 common_battle_healing = (0, 0, ti_once, [(key_clicked, key_h)], [(call_script, "script_battle_health_management")])
 

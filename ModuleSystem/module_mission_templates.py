@@ -76,7 +76,7 @@ common_siege_check_defeat_condition = (1, 4, ti_once, [ (main_hero_fallen)],
     ])
 ## Reset Fog 
 reset_fog = (ti_before_mission_start,  0, ti_once, [], 
-            [(set_fog_distance,100000,0x999999)])
+            [(set_fog_distance,100000,0x999999), (assign, "$current_fog", 10000),(assign, "$base_fog", 10000),(assign, "$target_fog", 10000),(troop_set_name, "trp_fog_color", "@{!}0x999999"), ])
 
 ## Fade to Black
 fade =  ((is_a_wb_mt==1) and [
@@ -6816,7 +6816,7 @@ mission_templates = [ # not used in game
         (scene_set_day_time, 12),
        ] or []) + [
     ]),	
-	dungeon_darkness_effect,
+	#dungeon_darkness_effect,
 ]),
 
 # dungeon crawl
@@ -6824,11 +6824,11 @@ mission_templates = [ # not used in game
     "Explore around Moria",
     [(0 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[])
 	],tld_common_wb_muddy_water+[
-    (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",0)],[(question_box,"@Leave scene?")]),
-    (ti_tab_pressed, 0, 0, [(eq, "$player_is_inside_dungeon",1)],[(question_box,"@Trace back your steps and go back in the open now?")]),
+    (ti_tab_pressed, 0, 0, [(gt, "$current_fog", 100)],[(question_box,"@Leave scene?")]),
+    (ti_tab_pressed, 0, 0, [(le, "$current_fog",100)],[(question_box,"@Trace back your steps and go back in the open now?")]),
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission), ]),
-	(ti_before_mission_start, 0, 0, [], [ (assign, "$player_is_inside_dungeon",0),(assign, "$dungeons_in_scene",1), (set_rain, 0,100),(call_script, "script_music_set_situation_with_culture", 0),]),
-	dungeon_darkness_effect,
+	(ti_before_mission_start, 0, 0, [], [(assign, "$dungeons_in_scene",1), (set_rain, 0,100),(call_script, "script_music_set_situation_with_culture", mtf_sit_town),]),
+	dungeon_darkness_effect, reset_fog,
 
     ] + ((is_a_wb_mt==1) and [    
     (1, 0, ti_once, [],[ 
@@ -6836,16 +6836,28 @@ mission_templates = [ # not used in game
         (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi"),
         (play_sound, "snd_moria_ambiance", sf_looping),]),
      ] or []) + [
-    (2, 0, 0, [(call_script, "script_center_ambiance_sounds")], []),    
+    (2, 0, 0, [(le, "$current_fog",120),(call_script, "script_center_ambiance_sounds")], []),
+    
+    (1, 0, ti_once, [
+    (set_fixed_point_multiplier, 100),
+    (entry_point_get_position, pos3, 1),
+    (get_player_agent_no, ":player"),
+    (agent_get_position, pos4, ":player"),
+    (get_distance_between_positions, ":dist", pos3, pos4),
+    (le, ":dist", 500),
+    ], [(music_set_situation, 0), (music_set_culture, 0),(play_cue_track, "track_TLD_Erebor"),]),    
 ]),
 ( "dungeon_crawl_moria_hall",0,-1,
     "Explore around Moria",
     [(0 ,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[])
-	],tld_common_wb_muddy_water+[
+	],tld_common_wb_muddy_water+
+    tld_common_peacetime_scripts+ #for custom camera and ambiance sound
+    [
     (ti_tab_pressed, 0, 0, [],[(question_box,"@Trace back your steps and go back in the open now?")]),
 	(ti_question_answered, 0, 0, [], [ (store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission)]),
 	(ti_before_mission_start, 0, 0, [], [
-        (assign, "$dungeons_in_scene",1), (set_rain, 0,100),
+        #(assign, "$dungeons_in_scene",1), 
+        (set_rain, 0,100),
         
         (team_set_relation, 2, 1, -1),
         (team_set_relation, 1, 2, -1),
@@ -6864,10 +6876,24 @@ mission_templates = [ # not used in game
         (try_for_range, ":prop", spr_troop_civ_lying, spr_troop_priest+1), #remove town agents
             (replace_scene_props, ":prop", "spr_empty"),
         (try_end),
-        ]),
-	dungeon_darkness_effect,
+
+        ] + ((is_a_wb_mt==1) and [          
+        #duplicate Moria prop fog and light settings, because it might be overwritten somewhere
+        # (set_fixed_point_multiplier, 10000),
+        # (try_begin), 
+            # (eq, "$bright_nights", 1), (set_fog_distance,80,0x01D261D),(set_startup_sun_light, 5, 5, 5), (set_startup_ambient_light, 300, 400, 300), 
+            # (troop_set_name, "trp_fog_color", "@{!}0x01D261D"), (assign, "$base_fog", 80),
+         # (else_try), 
+            # (set_fog_distance,60,0x030403),
+            # (set_startup_sun_light, 5, 5, 5),
+            # (set_startup_ambient_light, 60, 80, 60), 
+            # (set_startup_ground_ambient_light, 60, 80, 60),
+            # (troop_set_name, "trp_fog_color", "@{!}0x030403"), (assign, "$base_fog", 60),
+         # (try_end),
+        ] or []) + [ 
+    ]),
     
-    ] + ((is_a_wb_mt==1) and [    
+     ] + ((is_a_wb_mt==1) and [
     (1, 0, ti_once, [],[ 
         (get_player_agent_no, "$current_player_agent"),
         (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi"),
@@ -6879,19 +6905,41 @@ mission_templates = [ # not used in game
 ( "dungeon_crawl_moria_deep",mtf_battle_mode,-1,
     "Lost in Moria! Orcs are everywhere! You must find a way out!",
     [(0 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,af_override_horse,aif_start_alarmed,1,[])
-	],tld_common_wb_muddy_water+[
+	],tld_common_wb_muddy_water+
+    tld_common_peacetime_scripts+ #for custom camera and ambiance sound
+    [
     (ti_tab_pressed, 0, 0, [],[(question_box,"@There is no way out! Surrender to orcs?")]),
+    (ti_on_leave_area , 0, 0, [],[(jump_to_menu, "mnu_moria_escape_sucess")]),
 	(ti_question_answered, 0, 0, [], [ 
 		(store_trigger_param_1,":answer"), (eq,":answer",0), (troop_remove_item, "trp_player","itm_book_of_moria"), (assign, "$recover_after_death_menu", "mnu_recover_after_death_moria"), (jump_to_menu,"mnu_tld_player_defeated"), (finish_mission)]),
-	(ti_before_mission_start, 0, 0, [], [ (set_fog_distance,18,0x000001),(assign, "$dungeons_in_scene",1),(play_sound, "snd_moria_ambiance", sf_looping), (set_rain, 0,100),]),
-    (0,0,ti_once,[],[(entry_point_get_position, pos1, 1), (set_spawn_position, pos1),(spawn_item, "itm_orc_throwing_arrow"),]),
-	dungeon_darkness_effect,
-    ] + ((is_a_wb_mt==1) and [    
+
+    ] + ((is_a_wb_mt==1) and [
+
+	(ti_after_mission_start, 0, 0, [], [ 
+        (set_fixed_point_multiplier, 100),
+        (set_fog_distance,15,0x010101),
+        (assign, "$base_fog", 70),
+        (troop_set_name, "trp_fog_color", "@{!}0x4E0000"),
+        (play_sound, "snd_moria_ambiance", sf_looping),]),
+    (0.1,0,ti_once,[],[(entry_point_get_position, pos1, 1), (set_spawn_position, pos1),(spawn_item, "itm_orc_throwing_arrow"),(play_sound, "snd_moria_ambiance", sf_looping),]),
+	dungeon_darkness_effect, reset_fog,
+
     (1, 0, ti_once, [],[ 
         (get_player_agent_no, "$current_player_agent"),
         (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi") ]),
+
      ] or []) + [
-    (2, 0, 0, [(call_script, "script_center_ambiance_sounds")], []),  
+
+    (2, 0, 0, [(call_script, "script_center_ambiance_sounds")], []),
+
+    (1, 0, ti_once, [
+    (set_fixed_point_multiplier, 100),
+    (entry_point_get_position, pos3, 2),
+    (get_player_agent_no, ":player"),
+    (agent_get_position, pos4, ":player"),
+    (get_distance_between_positions, ":dist", pos3, pos4),
+    (le, ":dist", 500),
+    ], [(music_set_situation, 0), (music_set_culture, 0),(play_cue_track, "track_TLD_Map_Dwarves_C"),]),
 ]),
 
 ############ 808 stealth & rescue templates

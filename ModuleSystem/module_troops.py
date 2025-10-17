@@ -3537,7 +3537,7 @@ attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,o
    [itm_dwarf_vest_b,itm_dwarf_chain_boots,itm_leather_gloves,itm_dwarf_throwing_axe,itm_dwarf_great_axe,itm_rohan_shield_g,itm_dwarf_throwing_axe,],
       attr_dwarf_tier_6,wp_dwarf_tier_6,knows_riding_10|knows_persuasion_3|knight_skills_5|knows_riding_4,0x00000009cc004182254c6a57e6b2656d00000000001f689e0000000000000000],
 
-["stub1","{!}BUG","{!}BUG",0,0,0,fac_commoners,[],0,0,0,0], #need this stub for new troops below to work properly
+["fog_color","{!}BUG","{!}BUG",0,0,0,fac_commoners,[],0,0,0,0], #used for storing fog color string in name
 
 ## hobbits: two versions: for when you didn't meet them, and for when you did meet them (I wish there was a way to RENAME a Troop. str_set_troop_name FTW)  mtarini
 

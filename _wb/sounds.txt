@@ -30,10 +30,10 @@ soundsfile version 2
  footstep_wood_1.wav 784
  footstep_wood_2.wav 784
  footstep_wood_4.wav 784
- water_walk_1.wav 800
- water_walk_2.wav 800
- water_walk_3.wav 800
- water_walk_4.wav 800
+ water_walk_1.wav 288
+ water_walk_2.wav 288
+ water_walk_3.wav 288
+ water_walk_4.wav 288
  s_footstep_horse_2b.wav 48
  s_footstep_horse_3b.wav 48
  s_footstep_horse_4b.wav 48
@@ -625,11 +625,11 @@ soundsfile version 2
  orc_beast03.wav 1152
  moria01.wav 2176
  moria02.wav 2176
- osgiliath04.wav 1152
+ osgiliath03.wav 2176
+ osgiliath04.wav 2176
  morgul01.wav 1152
  morgul02.wav 1152
  osgiliath01.wav 1152
- osgiliath03.wav 1152
  horse_exterior_whinny_01.wav 512
  horse_exterior_whinny_02.wav 512
  horse_exterior_whinny_03.wav 512
@@ -662,7 +662,7 @@ soundsfile version 2
  camelDeath02.wav 1872
  camelDeath03.wav 1872
  gondor_army.wav 2384
-289
+290
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -682,7 +682,7 @@ snd_sword_clash_3 0 1 21
 snd_sword_swing 272 1 22 
 snd_footstep_grass 528 4 23 24 25 26 
 snd_footstep_wood 784 3 27 28 29 
-snd_footstep_water 800 4 30 31 32 33 
+snd_footstep_water 288 4 30 31 32 33 
 snd_footstep_horse 48 4 34 35 36 37 
 snd_footstep_horse_1b 48 4 35 36 37 38 
 snd_footstep_horse_1f 48 4 34 39 35 40 
@@ -910,13 +910,13 @@ snd_umbar_occasional 1152 5 136 136 136 617 618
 snd_dunland_occasional 1152 8 136 613 591 220 221 222 223 599 
 snd_orc_occasional 1152 6 136 613 619 620 621 622 
 snd_guldur_occasional 1152 8 136 136 136 136 613 620 621 622 
-snd_moria_occasional 2176 5 136 136 136 623 624 
-snd_isengard_occasional 1152 14 136 136 624 613 620 621 622 598 619 592 605 606 625 599 
+snd_moria_occasional 2176 9 136 136 136 623 623 624 608 625 626 
+snd_isengard_occasional 1152 14 136 136 624 613 620 621 622 598 619 592 605 606 626 599 
 snd_urukhai_occasional 1152 6 613 620 621 622 619 599 
 snd_seaside_occasional 1152 6 594 595 596 617 618 592 
-snd_morgul_occasional 1152 9 136 136 136 136 136 136 136 626 627 
-snd_eosgi_occasional 1152 8 620 621 622 628 608 629 625 607 
-snd_wosgi_occasional 1152 7 136 136 628 608 629 625 607 
+snd_morgul_occasional 1152 9 136 136 136 136 136 136 136 627 628 
+snd_eosgi_occasional 1152 8 620 621 622 629 608 625 626 607 
+snd_wosgi_occasional 1152 7 136 136 629 608 625 626 607 
 snd_tirith_occasional 1152 9 136 591 592 136 136 609 610 611 612 
 snd_morannon_occasional 1152 1 136 
 snd_tirith_top_occasional 1152 6 136 591 136 136 136 136 
@@ -952,3 +952,4 @@ snd_camel_death 1872 3 658 659 660
 snd_army_good 2384 1 661 
 snd_bell 1872 4 609 610 611 612 
 snd_raven 1872 1 613 
+snd_moria_horror 1872 1 624 

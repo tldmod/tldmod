@@ -7369,7 +7369,7 @@ game_menus = [
  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction, \
  into a narrow winding tunnel and down... \
  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.",
-    "none",[(set_background_mesh, "mesh_town_moria"),],[
+    "none",[(set_background_mesh, "mesh_town_moria"),(call_script, "script_music_set_situation_with_culture", mtf_sit_town),],[
 	  ("moria_exit_scene",[], "Find your way out!",[
 			(modify_visitors_at_site,"scn_moria_deep_mines"),
 			(reset_visitors),
@@ -7377,12 +7377,24 @@ game_menus = [
 			(set_jump_mission,"mt_dungeon_crawl_moria_deep"),
             		(jump_to_scene, "scn_moria_deep_mines"),
 			(jump_to_menu, "mnu_auto_return_to_map"),
+            (play_sound, "snd_moria_horror", sf_2d),
             (change_screen_mission),
 	  ]),
 	  # ("moria_exit_found",[(eq,1,0)], "Exit is here!",[
 			# (jump_to_menu, "mnu_auto_return_to_map"),
             # (change_screen_map),
 	  # ], "Fresh air behind this door!"),
+	]
+ ),
+
+( "moria_escape_sucess",city_menu_color, # dungeon crawl: way out of moria
+ "^^After countless hours in the darkness, you finally find a staircase that leads up. \
+ At first it is barely noticeable, but it steadily gets lighter. Finally — a junction that you remember. After a few more steps, you are out in the open. \
+ Your troops have been waiting anxiously for you and can't wait to leave this valley as quickly as possible.",
+    "none",[(set_background_mesh, "mesh_town_moria"),],[
+	  ("moria_exit_found",[], "Get out of here!",[
+        (change_screen_map),
+	  ]),
 	]
  ),
 
@@ -10005,7 +10017,8 @@ game_menus = [
  ),
 ( "recover_after_death_moria",city_menu_color,
     "^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream. Your party was attacked while waiting for your return.",
-    "none",[(set_background_mesh, "mesh_town_moria"),],[
+    "none",[(set_background_mesh, "mesh_town_moria"),
+            (play_sound, "snd_moria_horror", sf_2d),],[
 	  ("whatever",[], "Get up!",[ (change_screen_map),(jump_to_menu,"mnu_castle_outside"), (call_script,"script_injury_routine", "trp_player"), (call_script,"script_injury_routine", "trp_player"),(troop_set_health, "trp_player", 15),(inflict_casualties_to_party_group, "p_main_party", 100, "p_temp_wounded"), ]),
 	]
  ),

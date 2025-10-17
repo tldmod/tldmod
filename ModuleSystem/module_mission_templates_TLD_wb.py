@@ -4975,7 +4975,7 @@ tld_animated_town_agents = [
 tld_positional_sound_props = [
 
 
-  (3, 0, 0, [], [ # positional sounds
+  (2, 0, 0, [], [ # positional sounds
     (set_fixed_point_multiplier, 100),
     (get_player_agent_no, ":player_agent"),
     (agent_get_position, pos4, ":player_agent"),
