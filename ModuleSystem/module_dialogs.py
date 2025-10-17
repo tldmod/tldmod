@@ -10661,7 +10661,16 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     #push player
     (agent_set_animation, "$current_player_agent", "anim_strike_fly_back_near_rise"),
     (agent_play_sound, "$current_player_agent", "snd_wooden_hit_high_armor_low_damage"),
-    ] + (is_a_wb_dialog and [ (agent_ai_set_aggressiveness, "$g_talk_agent", 1000),] or [])  + [ 
+    
+     ] + (is_a_wb_dialog and [ 
+    (try_begin), #unmount player and make horse run away
+        (agent_get_horse, ":horse", "$current_player_agent"),
+        (ge, ":horse", 0),
+        (agent_start_running_away, ":horse"),
+    (try_end),
+    (agent_ai_set_aggressiveness, "$g_talk_agent", 1000),
+    ] or [])  + [ 
+    
     (agent_set_animation, "$g_talk_agent", "anim_cancel_ani_stand"),
     (agent_deliver_damage_to_agent, "$current_player_agent", "$g_talk_agent", 1),]],
 
@@ -10684,6 +10693,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 "You are mistaken. We caught you!", "close_window",
    [(call_script,"script_stand_back"),
    (set_party_battle_mode),
+   (set_fixed_point_multiplier, 100),
     (agent_set_team, "$g_talk_agent", 3),
     (agent_set_team, "$current_player_agent", 2),    
     (team_set_relation, 2, 3, -1),
@@ -10714,6 +10724,31 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         (assign, ":troop", ":new_troop"),
     (try_end),
     (agent_deliver_damage_to_agent, "$current_player_agent", "$g_talk_agent", 1),
+    
+    #sent nearby town guards to help you
+    (call_script, "script_get_faction_rank", "$ambient_faction"),
+    (store_mul, ":rank", reg0, 10),
+    (party_get_slot, ":center_relation", "$current_town", slot_center_player_relation),
+    (store_add, ":score", ":rank", ":center_relation"),
+    (ge, ":score", 50),
+    (try_for_agents, ":guards", pos5, 5000),
+        (agent_get_team, ":team", ":guards"),
+        (neq, ":team", 3),
+        (this_or_next|agent_slot_eq, ":guards", slot_agent_walker_type, 0), #nothing, guards spawned from entry points
+        (agent_slot_eq, ":guards", slot_agent_walker_type, 3), #guards spawned per prop
+        (agent_get_troop_id, ":troop", ":guards"),
+        (neg|troop_is_hero, ":guards"),
+        (is_between, ":guards", soldiers_begin, soldiers_end),
+        (agent_get_item_slot, ":weapon", ":guards", 0), #only send troops that have a weapon
+        (ge, ":weapon", 1),
+        (store_random_in_range, ":chance", 0, 150),
+        (ge, ":score", ":chance"),
+        (agent_clear_scripted_mode, ":guards"),
+        (agent_set_team, ":guards", 2),
+        ] + (is_a_wb_dialog and [  (agent_set_is_alarmed, ":guards", 1),] or [])  + [ 
+        (str_store_agent_name, s5, ":guards"),
+        (display_message, "@{s5} comes for your aid!"),
+    (try_end),
 ]],
 
   #[anyone,"member_chat", [(check_quest_active, "qst_incriminate_loyal_commander"),
@@ -12838,6 +12873,18 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?", "town_dweller_ask_fugitive",[]],
 
 [anyone ,"town_dweller_ask_fugitive", [
+    (call_script, "script_get_faction_rank", "$ambient_faction"),
+    (store_mul, ":rank", reg0, 10),
+    (party_get_slot, ":center_relation", "$current_town", slot_center_player_relation),
+    (store_add, ":score", ":rank", ":center_relation"),
+    (lt, ":score", 50),
+    ],
+"I don't know you. For all I care, you are that suspicious stranger to me!", "close_window",[(call_script,"script_stand_back"),]],
+
+
+[anyone ,"town_dweller_ask_fugitive", [
+    (store_random_in_range, ":chance", 0, 100),
+    (gt, ":chance", 50),
     (quest_get_slot, ":entry", qst_hunt_down_fugitive, slot_quest_current_state),
     (try_begin),
         (eq, ":entry", 10),
@@ -12852,6 +12899,9 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 ],
 "Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.", "close_window",[(call_script,"script_stand_back"),]],
 
+
+[anyone ,"town_dweller_ask_fugitive", [],
+"No, I haven't seen anyone.", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone|plyr,"town_dweller_talk", [(party_slot_eq, "$current_town", slot_party_type, spt_village),
                                      (eq, "$info_inquired", 0)], "What can you tell me about this village?", "town_dweller_ask_info",[(assign, "$info_inquired", 1)]],

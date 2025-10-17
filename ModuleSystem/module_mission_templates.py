@@ -1687,25 +1687,33 @@ mission_templates = [ # not used in game
              ] or []) + [
             (agent_set_position, ":agent_no", pos5),
         (try_end),
+        (tutorial_message, "@The traitor should be around somewhere. You should look around important places. If you have a good relation to them, you may also ask the local populace for suspicious strangers.", 0, 10),
         ]),
 
     ] + ((is_a_wb_mt==1) and [
     #fugitive behavior
-    (3, 0, 1, [(check_quest_active, "qst_hunt_down_fugitive"),(quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),], 
+    (3, 0, 2, [(check_quest_active, "qst_hunt_down_fugitive"),(quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),], 
     [(quest_get_slot, ":quest_agent", "qst_hunt_down_fugitive", slot_quest_target_troop), #use this slot to store the agent
     (quest_get_slot, ":quest_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
     (troop_get_slot, ":base_hp_shield", ":quest_troop", slot_troop_hp_shield),
     (try_begin),
         (quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_current_state, 1), #fighting
         (agent_get_slot, ":cur_hp_shield", ":quest_agent", slot_agent_hp_shield),
+        (val_div, ":base_hp_shield", 2),
         (lt, ":cur_hp_shield", ":base_hp_shield"),
-        (store_random_in_range, ":chance", 0, ":base_hp_shield"),
+        (store_mul, ":lower_bound", ":base_hp_shield", -1),
+        (val_min, ":lower_bound", -100),
+        (store_random_in_range, ":chance", ":lower_bound", ":base_hp_shield"),
+        # (assign, reg77, ":cur_hp_shield"),
+        # (assign, reg78, ":chance"),
+        # (display_message, "@chance {reg78}/{reg77}"),
         (lt, ":cur_hp_shield", ":chance"),
         (entry_point_get_position, pos5, 9),
-        (agent_set_speed_modifier, ":quest_agent", 120),
+        (agent_set_speed_modifier, ":quest_agent", 110),
         (agent_set_speed_modifier, "$current_player_agent", 100),
         #(agent_set_scripted_destination, ":quest_agent", pos5),
         (agent_start_running_away, ":quest_agent", pos5),
+        (display_message, "@The traitor flees. Catch him!"),
         (quest_set_slot, "qst_hunt_down_fugitive", slot_quest_current_state, 2), #fleeing
     (else_try),
         (quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_current_state, 2), #fleeing
@@ -1716,7 +1724,7 @@ mission_templates = [ # not used in game
         (team_set_relation, 2, 3, 0),
         (team_set_relation, 2, 0, 0),
         (team_set_relation, 3, 0, 0),
-        (agent_set_speed_modifier, ":quest_agent", 100),
+        (agent_set_speed_modifier, ":quest_agent", 90),
     (try_end),  
     ]),
      ] or []) + [

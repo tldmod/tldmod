@@ -1,4 +1,4 @@
-2092
+2094
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_{!}0x07291D {!}0x07291D
@@ -116,7 +116,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr_{!}_rev_380_wb__dev_ {!}_rev_380_wb_|_dev_^_Built_2025-10-17_11:59___
+qstr_{!}_rev_382_wb__dev_ {!}_rev_382_wb_|_dev_^_Built_2025-10-17_20:47___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -957,6 +957,8 @@ qstr_Halt!_You_are_not_al Halt!_You_are_not_allowed_to_enter_here!
 qstr_Halt!_You_are_not_all Halt!_You_are_not_allowed_to_enter_here_without_the_Lady's_leave!
 qstr_While_visiting_towns While_visiting_towns,_settlements_and_camps,_you_can_talk_to_people_walking_around._Members_of_different_factions_have_different_things_to_say_-_some_will_let_you_in_on_their_own_thoughts,_others_will_share_rumours._Both_could_merely_give_you_a_better_understanding_of_the_person's_culture_and_faction,_or_they_might_hold_clues_to_finding_secret_locations,_or_tips_and_tricks_for_travelling_through_the_Wilderness_and_fighting_in_the_War_of_the_Ring.
 qstr_Cannot_leave_now. Cannot_leave_now.
+qstr_The_traitor_should_b The_traitor_should_be_around_somewhere._You_should_look_around_important_places._If_you_have_a_good_relation_to_them,_you_may_also_ask_the_local_populace_for_suspicious_strangers.
+qstr_The_traitor_flees._C The_traitor_flees._Catch_him!
 qstr_You_have_found_the_l You_have_found_the_local_smithy.
 qstr_You_have_found_the_lo You_have_found_the_local_authority.
 qstr_You_have_found_the_loc You_have_found_the_local_warehouse.
@@ -1975,6 +1977,7 @@ qstr_One_{s6}_left_the_pa One_{s6}_left_the_party.
 qstr_I_understand._I_will I_understand._I_will_stay_with_you._For_a_while.
 qstr_I_have_played_my_rol I_have_played_my_role_for_many_long_years,_for_many_lifetimes_of_mortal_men._This_war_is_for_Mankind_to_fight._I_will_leave_for_the_West_and_some_may_decide_to_follow_me.
 qstr_{reg1}_Veteran_Elves {reg1}_Veteran_Elves_decided_to_leave_your_party.
+qstr_{s5}_comes_for_your_ {s5}_comes_for_your_aid!
 qstr_What_an_amazing_feat What_an_amazing_feat_of_arms!
 qstr_Well_done! Well_done!
 qstr_Nice_legwork. Nice_legwork.

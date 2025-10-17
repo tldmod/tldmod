@@ -1,4 +1,4 @@
-1784
+1785
 qstr_{***}0x07291D {***}0x07291D
 qstr_{***}0x4DB08D {***}0x4DB08D
 qstr_Gate_is_breached! Gate_is_breached!
@@ -711,6 +711,7 @@ qstr_{***}0x999999 {***}0x999999
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_While_visiting_towns While_visiting_towns,_settlements_and_camps,_you_can_talk_to_people_walking_around._Members_of_different_factions_have_different_things_to_say_-_some_will_let_you_in_on_their_own_thoughts,_others_will_share_rumours._Both_could_merely_give_you_a_better_understanding_of_the_person's_culture_and_faction,_or_they_might_hold_clues_to_finding_secret_locations,_or_tips_and_tricks_for_travelling_through_the_Wilderness_and_fighting_in_the_War_of_the_Ring.
 qstr_Cannot_leave_now. Cannot_leave_now.
+qstr_The_traitor_should_b The_traitor_should_be_around_somewhere._You_should_look_around_important_places._If_you_have_a_good_relation_to_them,_you_may_also_ask_the_local_populace_for_suspicious_strangers.
 qstr_You_have_found_the_l You_have_found_the_local_smithy.
 qstr_You_have_found_the_lo You_have_found_the_local_authority.
 qstr_You_have_found_the_loc You_have_found_the_local_warehouse.
@@ -1688,6 +1689,7 @@ qstr_One_{s6}_left_the_pa One_{s6}_left_the_party.
 qstr_I_understand._I_will I_understand._I_will_stay_with_you._For_a_while.
 qstr_I_have_played_my_rol I_have_played_my_role_for_many_long_years,_for_many_lifetimes_of_mortal_men._This_war_is_for_Mankind_to_fight._I_will_leave_for_the_West_and_some_may_decide_to_follow_me.
 qstr_{reg1}_Veteran_Elves {reg1}_Veteran_Elves_decided_to_leave_your_party.
+qstr_{s5}_comes_for_your_ {s5}_comes_for_your_aid!
 qstr_What_an_amazing_feat What_an_amazing_feat_of_arms!
 qstr_Well_done! Well_done!
 qstr_Nice_legwork. Nice_legwork.
