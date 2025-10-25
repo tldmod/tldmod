@@ -32442,13 +32442,19 @@ if is_a_wb_script==1:
   # #script_siege_adjust_battle_size
   # # INPUT: none
   # # OUTPUT: none
+  # current battle size range is 90-360, for the operation to work correctly, this needs to be translated to a 0-1000 scale
   ("siege_adjust_battle_size",
     [
+   (party_get_slot, reg4, "$current_town", slot_center_ideal_battle_size),
+   (val_max, reg4, 200), #in case the slot is unassigned
+   (val_sub, reg4, 90), #minimum size
+   (val_mul, reg4, 100), 
+   (val_div, reg4, 27),
    (options_get_battle_size, reg5),
    (try_begin),
-        (gt, reg5, 415),
+        (gt, reg5, reg4),
         (assign, "$player_battlesize", reg5),
-        (options_set_battle_size, 415), #200
+        (options_set_battle_size, reg4),
         (assign, "$player_battlesize_changed", 1),
     (try_end),
      ]),
