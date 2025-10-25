@@ -3630,7 +3630,6 @@ game_menus = [
 	"{!}^^^^^Click on an option to toggle.^^^Tweaks Gondor to have more troops in a party, gives them more hosts, gives them hosts more frequently, and lets Gondor lords wait longer to gather.^^Have to wait for the trigger to occur","none",[],
     [
     ("camp_khamtest_back",[],"{!}Back",[(jump_to_menu, "mnu_dev_menu")]),
-    ("give_party_xp",[],"{!}give_party_xp",[(party_upgrade_with_xp, p_main_party, 2000, 0),]),
     ("enable_kham_cheat",[],"{!}Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@{!}Kham Cheat Mode ON!")]),
     ] + (is_a_wb_menu==1 and [
     ("action_view_all_items",[],"{!}View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),

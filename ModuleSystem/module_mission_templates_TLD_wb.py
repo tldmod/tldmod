@@ -1960,12 +1960,15 @@ hp_shield_init = (ti_on_agent_spawn, 0, 0, [
         (this_or_next|eq, ":troop_id", "trp_player"),
         (this_or_next|is_between, ":troop_id", "trp_npc1", heroes_begin),
         (is_between, ":troop_id", "trp_npc18", "trp_werewolf"),
-        (store_skill_level, ":ironflesh",  skl_ironflesh, ":troop_id",),
-        (val_mul, ":ironflesh", ":ironflesh"),
+        (store_skill_level, ":ironflesh_base",  skl_ironflesh, ":troop_id",),
+        (store_mul, ":ironflesh_sq", ":ironflesh_base", ":ironflesh_base"),
+        (val_mul, ":ironflesh_base", 10),
+        (store_add, ":hp_shield", ":ironflesh_base", ":ironflesh_sq"),
         (store_agent_hit_points, ":health", ":agent"),
-        (val_mul, ":ironflesh", ":health"),
-        (val_div, ":ironflesh", 200),
-        (agent_set_slot, ":agent", slot_agent_hp_shield, ":ironflesh"),
+        (val_mul, ":hp_shield", ":health"),
+        (val_div, ":hp_shield", 100),
+        (agent_set_slot, ":agent", slot_agent_hp_shield, ":hp_shield"),
+        (troop_set_slot, ":troop_id", slot_troop_hp_shield, ":hp_shield"),
     (try_end),
     
     #Debug
@@ -1983,11 +1986,12 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
   
   [  
     (store_trigger_param_1, ":agent"),
-    (store_trigger_param_2, ":dealer"),
+    #(store_trigger_param_2, ":dealer"),
     (store_trigger_param_3, ":damage"),
     
     (assign, ":weapon", reg0),
     (assign, ":deal_damage", 0),
+    (assign, ":new_hp_shield", 0),
     (gt, ":weapon", 0),
 
     (str_store_item_name, s2, ":weapon"),
@@ -1995,33 +1999,43 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
 
     (item_get_type, ":type", ":weapon"),
 
-    (get_player_agent_no, ":player"),
+    #(get_player_agent_no, ":player"),
     (agent_get_troop_id, ":troop_id", ":agent"),
 
     (agent_get_slot, ":current_hp_shield", ":agent", slot_agent_hp_shield),
 
-    ###non-trolls stagger###
     (try_begin),
-        (neg|is_between, ":troop_id", "trp_moria_troll", "trp_multiplayer_profile_troop_male"),
-        (neq, ":troop_id", "trp_npc21"), 
-        (try_begin),
-            (ge, ":damage", 30),
-            (assign, ":deal_damage", 1),
-            (agent_set_animation, ":agent", "anim_strike3_abdomen_front", 1),
-          (else_try),
-            (lt, ":current_hp_shield", 100),
-            (ge, ":damage", 15),
-            (assign, ":deal_damage", 3),
-            (agent_set_animation, ":agent", "anim_strike3_abdomen_front", 1),
-         (try_end),
-     (try_end),
-     ###non-trolls stagger end###
+      (gt, ":current_hp_shield", 0),
+      (store_sub, ":new_hp_shield", ":current_hp_shield", ":damage"),
+      (val_max, ":new_hp_shield", 0),
+      (agent_set_slot, ":agent", slot_agent_hp_shield, ":new_hp_shield"),  
+    (else_try),
+      (agent_set_slot, ":agent", slot_agent_hp_shield_active, 0),
+    (try_end),
+      
+      # #Debug
+      # (str_store_agent_name, s5, ":agent"),
+      # (assign, reg3, ":new_hp_shield"),
+      # (assign, reg4, ":damage"),
+      # (display_message, "@Damage {reg4}; Hp shield: {reg3} left."), 
+
+    (gt, ":current_hp_shield", 0),
+
+    #some damage goes through
+    #module.ini:  damage_interrupt_attack_threshold      = 6.0
+    (try_begin),
+        (gt, ":damage", 5),
+        (assign, ":deal_damage", 1),
+    (else_try),
+        (gt, ":damage", 20),
+        (assign, ":deal_damage", 6), #stagger
+    (try_end),
 
     ### TROLLS ###
     (try_begin),
       (this_or_next|is_between, ":troop_id", "trp_troll_of_moria", "trp_ent_old"), #old troll range
 	  (is_between, ":troop_id", "trp_moria_troll", "trp_multiplayer_profile_troop_male"), #new troll range
-      (gt, ":current_hp_shield", 0),
+      (assign, ":deal_damage", 0),
 
       #(assign, reg55, ":damage"),
       (agent_get_bone_position, pos1, ":agent", 7, 1),
@@ -2030,10 +2044,12 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
 	  #(assign, reg56, ":damage"),
       #(display_message, "@{s2} weapon - {reg55} Before - {reg56} after - {reg57} Dist from Head"),
 
+      # weapon type
       (try_begin),
         (eq, ":type", itp_type_bow),
         (gt, ":dist", 30),
         (val_div, ":damage", 3),
+        (assign, ":deal_damage", 6),
 	  (else_try), #buff spears and throwing spears, note: also affects swing attacks (blunt spears attacks, halberds etc)
 		(this_or_next|item_has_property, ":weapon", itp_type_polearm),
         (item_has_property, ":weapon", itp_type_thrown),
@@ -2041,6 +2057,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
 		(eq, ":thrust_damage_type", 1), #check for spears, also finds halberds, bills etc
 		(val_mul, ":damage", 3),
 		(val_div, ":damage", 2),
+        (assign, ":deal_damage", 2),
 		#(display_message, "@spear found"),
 	  (else_try), #nerf blunt weapons		
 		(item_get_thrust_damage_type, ":thrust_damage_type", ":weapon"),
@@ -2052,30 +2069,35 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
 		#(display_message, "@blunt weapon found"),
       (try_end),
 
+      #couched lances and damage animations
       (try_begin),
         (neg|item_has_property, ":weapon", itp_couchable),
         (ge, ":damage", 100),
         (val_div, ":damage", 2),
         (val_add, ":damage", 10),
-		(agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
-		(play_sound, "snd_troll_hit"),
+        (assign, ":deal_damage", 6),
+		# (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
+		# (play_sound, "snd_troll_hit"),
       (else_try),
         (item_has_property, ":weapon", itp_couchable),
         (ge, ":damage", 100),
 		(troop_get_slot, ":hp_shield", ":troop_id", slot_troop_hp_shield),		
         (store_div, ":couched_damage", ":hp_shield", 3),
         (assign, ":damage", ":couched_damage"),
-        (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
-		(play_sound, "snd_troll_hit"),		
+        (assign, ":deal_damage", 6),
+        # (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
+		# (play_sound, "snd_troll_hit"),		
       (else_try),
         (ge, ":damage", 30),
-        (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
-		(play_sound, "snd_troll_hit"),
+        (assign, ":deal_damage", 6),
+        # (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
+		# (play_sound, "snd_troll_hit"),
 	  (else_try),
 		(lt, ":current_hp_shield", 100),
         (ge, ":damage", 15),
-        (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
-		(play_sound, "snd_troll_hit"),
+        (assign, ":deal_damage", 6),
+        # (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
+		# (play_sound, "snd_troll_hit"),
       (try_end),
     (try_end),
     ### TROLLS END ###

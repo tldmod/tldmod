@@ -8555,8 +8555,6 @@ scripts = [
             (neq, ":quest_target_center", ":giver_center_no"),
 			(store_faction_of_party,":quest_target_faction",":quest_target_center"),
 			(assign,":quest_object_faction",":giver_faction_no"),
-            (store_mul, ":hp_shield", ":player_level", 7),
-            (troop_set_slot, ":quest_object_troop", slot_troop_hp_shield, ":hp_shield"),
             
             (store_mul, ":reward", ":player_level", 50), #difficulty scales with level, so does the reward
             (assign, ":quest_importance", 4),
@@ -23269,9 +23267,10 @@ scripts = [
             (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
             (set_visitor, 9, ":quest_object_troop"), #spawn in place of any NPC companion, so sceners won't make a fuss 
             (store_character_level, ":player_level", trp_player),
-            (val_mul, ":player_level", 5),
-            (troop_set_slot, ":quest_object_troop", slot_troop_hp_shield, ":player_level"),
-            (gt, ":player_level", 50), #combat ai from player level 10
+            (store_mul, ":hp_shield", ":player_level", 7),
+            (troop_set_slot, ":quest_object_troop", slot_troop_hp_shield, ":hp_shield"),
+
+            (gt, ":player_level", 10), #combat ai from player level 10
             (troop_set_slot, ":quest_object_troop", slot_troop_has_combat_ai, 1), 
         (try_end),
 
