@@ -4832,6 +4832,32 @@ mission_templates = [ # not used in game
     ]),
   ] or []) + [
 
+   ] + (is_a_wb_mt==1 and [    
+#troll control, but only for initial spawn wave (for now)
+  (1, 0, ti_once, [],[
+    (try_for_range, ":team", 0, 6),
+        (team_set_slot, ":team", slot_team_troll_count, 0),
+    (try_end),
+    
+    (try_for_agents, ":agent"),
+        (agent_get_troop_id, ":troop_no", ":agent"),
+        (neq, ":troop_no", trp_ent),
+        (neg|is_between, ":troop_no", trp_treebeard, trp_gandalf), #ent heroes
+        (troop_get_type, ":race", ":troop_no"),
+        (eq, ":race", tf_troll),
+        (agent_get_team, ":team", ":agent"),
+        (team_get_slot, ":troll_count", ":team", slot_team_troll_count),
+        (try_begin),
+            (lt, ":troll_count", 2),
+            (val_add, ":troll_count", 1),
+            (team_set_slot, ":team", slot_team_troll_count, ":troll_count"),
+        (else_try),
+            (ge, ":troll_count", 2),
+            (agent_fade_out, ":agent"), #they will count as routed and rejoin their party after the attack
+        (try_end),
+    (try_end),
+    ]), 
+  ] or []) + [
 
 #find and open retreat gates
    ] + (is_a_wb_mt==1 and [    
