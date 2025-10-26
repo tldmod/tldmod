@@ -749,7 +749,7 @@ options_horse_archer_ai
 g_fast_mode
 force_scene
 show_hide_labels
-reinforcements_arrived
+player_team_updated
 tld_campaign_diffulty
 cheatmode_used
 allies_coh_modifier

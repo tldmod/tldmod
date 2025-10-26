@@ -2102,34 +2102,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (try_end),
     ### TROLLS END ###
 
-    (try_begin),
-      (gt, ":current_hp_shield", 0),
-      (val_sub, ":current_hp_shield", ":damage"),
-      (val_max, ":current_hp_shield", 0),
-      (agent_set_slot, ":agent", slot_agent_hp_shield, ":current_hp_shield"),  
-    (else_try),
-      (agent_set_slot, ":agent", slot_agent_hp_shield_active, 0),
-    (try_end),
-      
-      #Debug
-      #(assign, reg3, ":current_hp_shield"),
-      #(display_message, "@Hp shield: {reg3} left."), 
-
-   
-    
-    (try_begin),
-      (eq, ":dealer", ":player"),
-      (assign, reg60, ":damage"),
-      (display_message, "@Delivered {reg60} damage."),
-	  (set_show_messages, 0),
-      (set_trigger_result, ":deal_damage"),
-
-    (else_try),
-		#(eq, ":dealer", ":player"),
-      (set_trigger_result, ":deal_damage"),
-    (try_end),
-	
-	(set_show_messages, 1),
+    (set_trigger_result, ":deal_damage"),
     (assign, reg0, ":weapon"),
 
   ])  

@@ -179,7 +179,7 @@ slot_agent_is_in_scripted_mode    = 4
 slot_agent_is_not_reinforcement   = 5
 slot_agent_tournament_point       = 6
 slot_agent_knocked_down			  = slot_agent_tournament_point # Use for tracking Knockbacks - Kham
-slot_agent_arena_team_set         = 7
+slot_agent_arena_team_set         = 7 #unused
 slot_agent_secret_guardian       = 8 #1=active, -1=let pass, 0=inactive
 slot_agent_assigned_prop          = 9
 slot_agent_map_overlay_id         = 10
@@ -198,8 +198,8 @@ slot_agent_time_counter			= 18
 slot_agent_routed			= 19
 slot_agent_mount			= 20 
 slot_agent_morale_modifier			= 21 # Commanders use this slot to remember they've rallied their troops.
-slot_agent_alive			= 22 
-slot_agent_wounded			= 23 
+slot_agent_alive			= 22 #unused
+slot_agent_wounded			= 23 #unused
 #swy-- keep a reference in the mount of its original rider for the lone_wargs mechanic
 #   -- so that we can check if the rider is unmounted but alive
 #   -- (the player can order it and it bugs out the mechanic due to an unhadled case)
@@ -216,6 +216,7 @@ slot_agent_is_running_away		= 25
 #InVain
 slot_agent_base_accuracy		= 26 #used for resetting accuracy after unquipping shields
 slot_agent_walker_joined        = 27 #1= accepted; 2= denied
+slot_agent_original_team        = 31
 
 ########################################################
 ##  FACTION SLOTS          #############################
@@ -605,6 +606,7 @@ slot_exploration_point_2 = 303
 slot_exploration_point_3 = 304
 slot_exploration_point_4 = 305
 
+slot_center_ideal_battle_size = 306
 
 #slot_party_type values
 #spt_ruined_center      = 1 # TLD

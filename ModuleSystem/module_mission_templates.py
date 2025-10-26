@@ -4645,8 +4645,9 @@ mission_templates = [ # not used in game
     (assign,"$attacker_reinforcement_stage",0),
     (assign,"$g_presentation_battle_active", 0),
     (assign,"$telling_counter",0),
-    (assign, "$reinforcements_arrived", 0),
+    (assign, "$att_reinforcements_arrived", 0),
     (assign, "$att_reinforcements_needed", 0),
+    (assign, "$player_team_updated", 0),
     (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
     (assign, "$defender_team"  , 0),(assign, "$attacker_team"  , 1),
     (assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3),
@@ -4715,18 +4716,19 @@ mission_templates = [ # not used in game
     (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
 	(str_store_troop_name,s1, ":troop_id"),
 	(agent_get_entry_no, ":entry", 	":agent_no"), # spawn records, not actual entry number
+    (agent_get_team, ":team", ":agent_no"),
         
         (try_begin), #teleport rogue player spawn agents to correct entry point
               (eq, ":entry", 0),
               (neq, ":agent_no", ":player_agent"), #player is teleported earlier
               (entry_point_get_position, pos10, 48),
               (agent_set_position, ":agent_no", pos10),
-              (agent_set_team, ":agent_no", 3), #they will be reassigned later
+              (assign, ":team", 3), #they will be reassigned later
         (else_try),
               (neg|agent_is_defender,":player_agent"), #this is for the one rogue troop spawning at entry 0 (defender player spawn) if player is attacker
               (neq, ":agent_no", ":player_agent"),
               (eq, ":entry", 3),
-              (agent_set_team, ":agent_no", 2),
+              (assign, ":team", 2),
         (try_end),
         
         (try_begin),
@@ -4736,7 +4738,7 @@ mission_templates = [ # not used in game
             (store_sub, ":team", ":entry", 12), #0, 1, 2
             (val_mul, ":team", 2), # 0, 2, 4
             (val_add, ":team", 1), # 1, 3, 5
-            (agent_set_team, ":agent_no", ":team"), #might not be needed anymore since attacker teams now charge, keep for archers
+            (assign, ":team", ":team"), #might not be needed anymore since attacker teams now charge, keep for archers
                 ] + (is_a_wb_mt==1 and [
             (try_begin),
                 (neq, ":party_no", "p_main_party"),
@@ -4754,7 +4756,7 @@ mission_templates = [ # not used in game
             (entry_point_get_position, pos10, 48),
             (store_random_in_range, ":rand", 0, 10),
             (gt, ":rand", 4),
-            (agent_set_team, ":agent_no", 6),
+            (assign, ":team", 6),
             (position_move_y, pos10, -100),
             (agent_set_position, ":agent_no", pos10),
         (else_try),
@@ -4762,7 +4764,6 @@ mission_templates = [ # not used in game
             (is_between, ":entry", 6, 9),
             (store_sub, ":team", ":entry", 6), #0, 1, 2
             (val_mul, ":team", 2), # 0, 2, 4
-            (agent_set_team, ":agent_no", ":team"),
             (eq, ":party_no", "p_main_party"),
             (store_random_in_range, ":rand", 0, 10),
             (gt, ":rand", 5),            
@@ -4774,10 +4775,12 @@ mission_templates = [ # not used in game
             (agent_is_defender,":player_agent"),
             (is_between, ":entry", 3, 6), #entry 40 (spawn around player) - currently disabled, except for player
             (eq, ":party_no", "p_main_party"),
-            (agent_set_team, ":agent_no", 6),
+            (assign, ":team", 6),
         (try_end),
          
     (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 1),
+    (agent_set_slot, ":agent_no", slot_agent_original_team, ":team"),
+    (agent_set_team, ":agent_no", ":team"),
   ] + (is_a_wb_mt==1 and [     (agent_force_rethink, ":agent_no"),   ] or []) + [
     
 	(try_end),
@@ -4791,6 +4794,8 @@ mission_templates = [ # not used in game
     (store_trigger_param_1, ":agent_no"),
     (set_fixed_point_multiplier, 100),
     (get_player_agent_no, ":player_agent"),
+    (agent_get_team, ":team", ":agent_no"),
+    (agent_set_slot, ":agent_no", slot_agent_original_team, ":team"),
     
     #assign player to team 6 and teleport to start if attacker
     (try_begin),
@@ -4821,6 +4826,7 @@ mission_templates = [ # not used in game
         (troop_slot_eq,"trp_no_troop",":slot",-1),
         (eq, ":party_no", "p_main_party"),
         (agent_set_team, ":agent_no", 6),
+        (agent_set_slot, ":agent_no", slot_agent_original_team, 6),
     (try_end),
  
     ]),
@@ -4938,7 +4944,7 @@ mission_templates = [ # not used in game
       (add_reinforcements_to_entry, ":entry", ":reinforcements"),
       #(display_message, "@Attackers Reinforced", color_good_news),
       (val_add,"$attacker_reinforcement_stage", 1),
-      (assign, "$reinforcements_arrived", 1),
+      (assign, "$att_reinforcements_arrived", 1),
     (try_end),
     
     (try_begin),
@@ -4992,16 +4998,19 @@ mission_templates = [ # not used in game
       ] or []) + [    
 
     (set_fixed_point_multiplier, 100),
-    (assign,":defteam","$defender_team"), #0, 2, 4
+    (assign,":defteam",-2), #0, 2, 4
     (assign,":entry",8), #Changed to 9,10,11 --> spawn entry
     (assign,":entry_number", 43), # 44,45,46 --> actual entry point
     (assign, ":reinforcements", 0),
-    (assign, ":spawn_point_blocked", 0),
     (get_player_agent_no, ":player_agent"),
 
     #cycle through defender teams, check if depleted and reinforce
     (try_for_range,":slot",0,3), 
         (assign, ":reinforcements", 0),
+        (assign, ":spawn_point_blocked", 0),
+        (val_add,":defteam",2),
+        (val_add,":entry",1),
+        (val_add,":entry_number",1),
         
         (try_begin),
           (neg|troop_slot_eq,"trp_no_troop",":slot",-1), #team 0 slot number, choke point not taken yet
@@ -5018,11 +5027,9 @@ mission_templates = [ # not used in game
           (assign, ":reinforcements", 9), #1.5x attackers, to push them back.
         (try_end),
 
-        (val_add,":defteam",2),
-        (val_add,":entry",1),
-        (val_add,":entry_number",1),
-
         ] + (is_a_wb_mt==1 and [
+        
+        (assign, ":spawn_point_counter", 0),
         #don't spawn defenders if attacking player is nearby, also check for spawn point taken
         (try_begin),
             #block spawn point
@@ -5038,13 +5045,19 @@ mission_templates = [ # not used in game
                 (display_message, "@You must break the first line of defense before you can capture a reinforcement point."),
             (try_end),             
             (troop_slot_eq,"trp_no_troop",":slot",-1), #only if choke point is taken
+            (set_show_messages, 0),
             (team_give_order, ":defteam", grc_infantry, mordr_hold), #make them hold
             (team_give_order, ":defteam", grc_cavalry, mordr_hold),
             (team_give_order, ":defteam", grc_archers, mordr_stand_ground), 
             (team_set_order_position, ":defteam", grc_everyone, pos10),
             (lt,":dist", 1500),
             (team_give_order, ":defteam", grc_everyone, mordr_charge), #if player is nearby, make defenders charge
-            (assign, ":spawn_point_blocked", 1),
+            (set_show_messages, 1),
+            (try_begin),
+                (le, ":spawn_point_counter", 2),
+                (assign, ":spawn_point_blocked", 1),
+                (val_add, ":spawn_point_counter", 1), #this doesn't reset, making sure that max 2 spawn points can be blocked per time (temporary fixes a possible exploit in small scenes)
+            (try_end),
             (display_message, "@Capture this area with your troops to stop defender reinforcements from here!"),
 
             #check for team defeated
@@ -5069,23 +5082,37 @@ mission_templates = [ # not used in game
             (try_end),    
             (gt, ":friends_nearby", 4), #so players can't solo-sneak
             (troop_set_slot,"trp_no_troop",":slot",-2), #this should disable reinforcements
-            #(assign, reg78, ":entry_number"),
-            #(display_message, "@Defender reinforcement point {reg78} taken!"),
+            (assign, reg78, ":entry_number"),
+            (display_message, "@Defender reinforcement point {reg78} taken!"),
             (display_message, "@Defender reinforcement point taken!"),
             # (agent_set_animation, ":player_agent", "anim_cheer_player"),
             (call_script, "script_troop_get_cheer_sound", "trp_player"),
-            (ge, reg1, 0),
             (agent_play_sound, ":player_agent", reg1),
+            (assign, ":counter", 0),
             (try_for_agents, ":friends", pos0, 1500),
                 (agent_is_alive, ":friends"),
                 (agent_is_human, ":friends"),
+                (neg|agent_is_defender, ":friends"),
+                (agent_set_hit_points, ":friends", 100), #heal up
                 (neq, ":friends", ":player_agent"),
                 (neg|agent_is_defender, ":friends"),
                 (agent_get_combat_state, ":agent_cs", ":friends"),
                 (eq, ":agent_cs", 0),
                 (agent_set_look_target_position, ":friends", pos0),
                 (agent_set_animation, ":friends", "anim_cheer_player"),
+                (agent_get_team, ":team", ":friends"),
+                (neq, ":team", 6),
+                (agent_set_team, ":friends", 6),
+                (agent_clear_scripted_mode, ":friends"),
+                (agent_force_rethink, ":friends"),
+                (val_add, ":counter", 1),
             (try_end),
+            (try_begin),
+                (ge, ":counter", 1),
+                (assign, reg5, ":counter"),
+                (store_sub, reg4, ":counter", 1),
+                (display_message, "@{reg5} {reg4?troops:troop} rallied to your side."),
+            (try_end),    
             #BURN THE BANNER!
             (try_for_prop_instances, ":banner_stand", "spr_banner_stand_auto"),
                 (scene_prop_slot_eq, ":banner_stand", slot_prop_sound, ":entry_number"),
@@ -5110,7 +5137,6 @@ mission_templates = [ # not used in game
         (gt, ":reinforcements", 1), #only count "full" reinforcements, not minor ones
         (val_add,"$defender_reinforcement_stage",1),
       (try_end),
-      (assign, "$reinforcements_arrived", 2),
       
       (assign, reg0,":entry_number"),
       (assign, reg1,":reinforcements"),
@@ -5118,6 +5144,7 @@ mission_templates = [ # not used in game
 
         (assign, reg77, "$defender_reinforcement_stage"),
         #(display_message, "@defender reinforcement stage: {reg77}"),
+
     (try_end),
     
     (try_begin), #stop any further reinforcements after player death
@@ -5240,63 +5267,118 @@ mission_templates = [ # not used in game
 
     #update player team
     ] + (is_a_wb_mt==1 and [
-  (3, 0, 0,[(eq,"$battle_won",0),],
-    [(store_mission_timer_a,":mission_time"),
+  (4, 0, 10,[
+    (eq,"$battle_won",0),
+    (assign, ":continue", 0),
+    (try_begin),
+        (eq, "$player_team_updated", 0),
+        (assign, ":continue", 1),
+    (else_try),
+        (assign, "$player_team_updated", 0), #this is so we only recruit agents from other parties every 20s
+    (try_end),
+    (eq, ":continue", 1),
+    ],[
+    (set_fixed_point_multiplier, 100),
+    (store_mission_timer_a,":mission_time"),
     (get_player_agent_no, ":player_agent"),
     (agent_get_position, pos1, ":player_agent"), 
     (store_attribute_level, ":player_cha", "trp_player", ca_charisma),
-    (try_for_agents, ":agent_no", pos1, 1200),
+    (assign, ":counter_1", 0),
+    (assign, ":counter_2", 0),
+    (assign, ":followers", 0),
+    (try_for_agents, ":agent_no"),
         (agent_is_alive, ":agent_no"),
         (agent_is_human, ":agent_no"),
+        (agent_is_ally, ":agent_no"),
         (neq, ":agent_no",":player_agent"),
         (agent_get_team, ":agent_team", ":agent_no"),
-        (neq, ":agent_team", 6),
         (agent_get_party_id, ":party_id", ":agent_no"),
-        (agent_is_in_line_of_sight, ":agent_no", pos1),
-        (agent_get_troop_id, ":troop_id", ":agent_no"),
+        (agent_get_position, pos2, ":agent_no"),
+        (get_distance_between_positions, ":dist", pos1, pos2),
         (try_begin),
-            (eq, ":party_id", "p_main_party"),
-            (agent_set_team, ":agent_no", 6),
-            (agent_clear_scripted_mode, ":agent_no"),
-            (agent_force_rethink, ":agent_no"),
-            (str_store_troop_name, s1, ":troop_id"),
-            # (gt, ":mission_time", 15), #avoid message spam in the first few seconds
-            # (display_message, "@{s1} follows you now."),
-        (else_try),
-            (agent_is_ally, ":agent_no"),
-            (gt, ":mission_time", 45),
-            (neg|is_between, ":troop_id", trp_moria_troll, trp_ent+1),
-            (store_random_in_range, ":random", 0, 500),
-            (store_mul, ":join_chance", "$attacker_reinforcement_stage", 2), #so that progressively more attackers join player team
-            (val_add, ":join_chance", ":player_cha"),
-            (le, ":random", ":join_chance"),
-            (agent_set_team, ":agent_no", 6),
-            (agent_clear_scripted_mode, ":agent_no"),
-            (agent_force_rethink, ":agent_no"),
-            (agent_get_combat_state, ":agent_cs", ":agent_no"),
+            (le, ":dist", 1200), 
+            (neq, ":agent_team", 6),
+            (agent_is_in_line_of_sight, ":agent_no", pos1),
+            (agent_get_troop_id, ":troop_id", ":agent_no"),
             (try_begin),
-                (eq, ":agent_cs", 0),
-                (agent_set_look_target_position, ":agent_no", pos1),
-                (agent_set_animation, ":agent_no", "anim_cheer_player"),
-                (call_script, "script_troop_get_cheer_sound", ":troop_id"),
-				(ge, reg1, 0),
-				(agent_play_sound, ":agent_no", reg1),
-			(try_end),
-            (str_store_troop_name, s1, ":troop_id"),
-            (display_message, "@{s1} rallied to your side due to your Charisma."),
+                (eq, ":party_id", "p_main_party"),
+                (agent_set_team, ":agent_no", 6),
+                (val_add, ":followers", 1),
+                (agent_clear_scripted_mode, ":agent_no"),
+                (agent_force_rethink, ":agent_no"),
+                #(str_store_troop_name, s1, ":troop_id"),
+                # (gt, ":mission_time", 15), #avoid message spam in the first few seconds
+                # (display_message, "@{s1} follows you now."),
+            (else_try),
+                (agent_is_ally, ":agent_no"),
+                (gt, ":mission_time", 45),
+                (neg|is_between, ":troop_id", trp_moria_troll, trp_ent+1),
+                (ge, ":player_cha", 14),
+                (store_random_in_range, ":random", 0, 600),
+                (store_mul, ":join_chance", "$attacker_reinforcement_stage", ":player_cha"), #so that progressively more attackers join player team
+                (le, ":random", ":join_chance"),
+                (val_add, ":counter_1", 1),
+                (agent_set_team, ":agent_no", 6),
+                (val_add, ":followers", 1),
+                (agent_clear_scripted_mode, ":agent_no"),
+                (agent_force_rethink, ":agent_no"),
+                (agent_get_combat_state, ":agent_cs", ":agent_no"),
+                (try_begin),
+                    (eq, ":agent_cs", 0),
+                    (agent_set_look_target_position, ":agent_no", pos1),
+                    (agent_set_animation, ":agent_no", "anim_cheer_player"),
+                    (store_random_in_range, ":chance", 0, 100),
+                    (le, ":chance", 50), #only half of them shout
+                    (call_script, "script_troop_get_cheer_sound", ":troop_id"),
+                    (ge, reg1, 0),
+                    (agent_play_sound, ":agent_no", reg1),
+                (try_end),
+                #(str_store_troop_name, s1, ":troop_id"),
+            (try_end),
+        (else_try), #some go back to their original team, but not player party members
+            (eq, ":agent_team", 6),
+            (val_add, ":followers", 1),
+            (neq, ":party_id", "p_main_party"),
+            (gt, ":dist", 2500),
+            (agent_get_slot, ":original_team", ":agent_no", slot_agent_original_team),
+            (agent_set_team, ":agent_no", ":original_team"),
+            (val_add, ":counter_2", 1),
+            (val_sub, ":followers", 1),
         (try_end),
+    (try_end),
+    
+    #Notifications
+    (try_begin),
+        (ge, ":counter_1", 1),
+        (assign, reg5, ":counter_1"),
+        (store_sub, reg4, ":counter_1", 1),
+        (display_message, "@{reg5} {reg4?troops:troop} rallied to your side due to your Charisma."),
+        (assign, "$player_team_updated", 1),
+    (try_end),
+    (try_begin),
+        (ge, ":counter_2", 1),
+        (assign, reg5, ":counter_2"),
+        (store_sub, reg4, ":counter_2", 1),
+        (display_message, "@{reg5} {reg4?troops:troop} stopped following you (too far away)."),
+    (try_end),
+    (try_begin),
+        (ge, ":followers", 1),
+        (assign, reg5, ":followers"),
+        (store_sub, reg4, ":followers", 1),
+        (display_message, "@{reg5} {reg4?troops:troop} are currently following you."),
     (try_end),
   ]),
 
 
 
-    #After-reinforcement check: Any side almost depleted? Ask player to retreat or clean up remainders.
-   (3, 0, 0, [(store_mission_timer_a,":mission_time"),(gt, ":mission_time", 120),],
-     [(store_normalized_team_count,":num_defenders",0),
+    #After-reinforcement check: attackers almost depleted? Ask player to retreat or clean up remainders.
+   (3, 0, 0, [
+    (this_or_next|eq, "$att_reinforcements_arrived", 1), #if attacker reinforcement
+    (ge,"$attacker_reinforcement_stage",19),
+   ],[
      (store_normalized_team_count,":num_attackers",1),
      (get_player_agent_no, ":player_agent"),
      (try_begin),
-        (eq, "$reinforcements_arrived", 1), #if attacker reinforcement
         (neg|agent_is_defender, ":player_agent"),
         (ge,"$attacker_reinforcement_stage",19),
         #(display_message, "@attackers almost defeated!"),
@@ -5304,8 +5386,6 @@ mission_templates = [ # not used in game
     (else_try),  
         (lt, ":num_attackers", 7),
         (try_begin),
-            (this_or_next|eq, "$reinforcements_arrived", 1), #if attacker reinforcement
-            (ge,"$attacker_reinforcement_stage",19),
             (eq, "$att_reinforcements_needed", 0), #this global is otherwise unused in sieges, so let's just use it here
             (neg|agent_is_defender, ":player_agent"), 
             (agent_is_alive, ":player_agent"),
@@ -5313,20 +5393,65 @@ mission_templates = [ # not used in game
             (question_box,"@Attackers almost defeated. Do you want to retreat?"),
             (assign, "$att_reinforcements_needed", 1),
         (else_try),
+            (eq, "$att_reinforcements_needed", 0),
             (agent_is_defender, ":player_agent"), 
-            (set_show_messages, 0),
+            (entry_point_get_position, pos5, 48), #middle attacker entry
             (try_for_agents, ":agent_no"),
                 (agent_is_alive, ":agent_no"),
                 (neg|agent_is_defender, ":agent_no"),
                 (neq, ":agent_no", ":player_agent"),
-                (agent_fade_out, ":agent_no"), #fade them out first, kill them afterwards
-                (agent_deliver_damage_to_agent, ":agent_no", ":agent_no", 1000),
+                (agent_start_running_away, ":agent_no", pos5),
+                (agent_set_slot, ":agent_no", slot_agent_is_running_away, 1),
+                # (agent_fade_out, ":agent_no"), #fade them out first, kill them afterwards
+                # (agent_deliver_damage_to_agent, ":agent_no", ":agent_no", 1000),
             (try_end),
-            (set_show_messages, 1),
             (display_message, "@The remaining attackers disperse!"),
+            (assign, "$att_reinforcements_needed", 2), #fleeing
+            (assign, "$battle_won", 1),
+            (assign, "$g_battle_result", 1),
         (try_end),
-    (else_try),     
-        (lt, ":num_defenders", 7),
+    (try_end),
+    (assign, "$att_reinforcements_arrived",0),
+   ]),
+
+  #cleanup leftover attackers/defenders
+  (5, 10, 0,[
+    (store_normalized_team_count,":num_defenders",0),
+    (store_normalized_team_count,":num_attackers",1),
+    (this_or_next|le, ":num_defenders", 3),
+    (this_or_next|le, ":num_attackers", 5),
+    (eq, "$att_reinforcements_needed", 2), #attackers fleeing
+  ],[
+    (store_normalized_team_count,":num_defenders",0),
+    (store_normalized_team_count,":num_attackers",1),
+    (get_player_agent_no, ":player_agent"),
+    (try_begin),
+        (le, ":num_attackers", 5),
+        (eq, "$att_reinforcements_needed", 0),
+        (agent_is_defender, ":player_agent"), 
+        (display_message, "@The remaining attackers disperse!"),
+        (assign, "$att_reinforcements_needed", 2), #attackers fleeing
+        (entry_point_get_position, pos5, 48), #middle attacker entry
+        (try_for_agents, ":agent_no"),
+            (agent_is_alive, ":agent_no"),
+            (neg|agent_is_defender, ":agent_no"),
+            (neq, ":agent_no", ":player_agent"),
+            (agent_start_running_away, ":agent_no", pos5),
+            (agent_set_slot, ":agent_no", slot_agent_is_running_away, 1),
+        (try_end),
+    (else_try),
+        (eq, "$att_reinforcements_needed", 2), #attackers fleeing
+        (set_show_messages, 0),
+        (try_for_agents, ":agent_no"),
+            (agent_is_alive, ":agent_no"),
+            (neg|agent_is_defender, ":agent_no"),
+            (agent_slot_eq, ":agent_no", slot_agent_is_running_away, 1),
+            (agent_fade_out, ":agent_no"), #fade them out first, kill them afterwards
+            (agent_deliver_damage_to_agent, ":agent_no", ":agent_no", 1000),
+        (try_end),
+        (set_show_messages, 1),
+    (else_try), 
+        (lt, ":num_defenders", 3),
         (this_or_next|neg|agent_is_defender, ":player_agent"),
         (main_hero_fallen),
         (display_message, "@The remaining defenders escape from the siege!"),
@@ -5335,13 +5460,11 @@ mission_templates = [ # not used in game
         (try_for_agents, ":agent_no"),
             (agent_is_alive, ":agent_no"),
             (agent_is_defender, ":agent_no"),
-            (agent_fade_out, ":agent_no"), #fade them out first, kill them afterwards
-            (agent_deliver_damage_to_agent, ":agent_no", ":agent_no", 1000),
+            (agent_fade_out, ":agent_no"), #fade out is enough, as the center will be cleansed anyway
         (try_end),
         (set_show_messages, 1),
     (try_end),
-    (assign, "$reinforcements_arrived",0),
-   ]),
+  ]),
 
      ] or []) + [
      
@@ -5587,7 +5710,7 @@ mission_templates = [ # not used in game
     (assign,"$attacker_reinforcement_stage",0),
     (assign,"$g_presentation_battle_active", 0),
     (assign,"$telling_counter",0),
-    (assign, "$reinforcements_arrived", 0),
+    (assign, "$att_reinforcements_arrived", 0),
     (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
     (assign, "$defender_team"  , 0),(assign, "$attacker_team"  , 1),
     (assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3),
@@ -5688,7 +5811,7 @@ mission_templates = [ # not used in game
       (add_reinforcements_to_entry, ":entry", ":reinforcements"),
       #(display_message, "@Attackers Reinforced", color_good_news),
       (val_add,"$attacker_reinforcement_stage", 1),
-      (assign, "$reinforcements_arrived", 1),
+      (assign, "$att_reinforcements_arrived", 1),
     (try_end),
     
     (try_begin), #stop any further reinforcements after player death
@@ -5714,7 +5837,6 @@ mission_templates = [ # not used in game
     (val_add,":entry_number",1),
       (add_reinforcements_to_entry, ":entry", ":reinforcements"),
       (val_add,"$defender_reinforcement_stage",1),
-      (assign, "$reinforcements_arrived", 2),
       #(assign, reg0,":entry_number"),
       #(display_message, "@Defenders Reinforced entry #{reg0}", color_good_news),												  																	   
     
@@ -5752,12 +5874,12 @@ mission_templates = [ # not used in game
 
 
     #After-reinforcement check: Any side almost depleted? Ask player to retreat or clean up remainders.
-   (3, 0, 0, [(ge, "$reinforcements_arrived",1),],
+   (3, 0, 0, [(ge, "$att_reinforcements_arrived",1),],
      [(store_normalized_team_count,":num_defenders",0),
      (store_normalized_team_count,":num_attackers",1),
      (get_player_agent_no, ":player_agent"),
      (try_begin),
-        (eq, "$reinforcements_arrived", 1), #if attacker reinforcement
+        (eq, "$att_reinforcements_arrived", 1), #if attacker reinforcement
         (neg|agent_is_defender, ":player_agent"),
         (ge,"$attacker_reinforcement_stage",19),
         #(display_message, "@attackers almost defeated!"),
@@ -5765,7 +5887,7 @@ mission_templates = [ # not used in game
     (else_try),  
         (lt, ":num_attackers", 7),
         (try_begin),
-            (eq, "$reinforcements_arrived", 1), #if attacker reinforcement
+            (eq, "$att_reinforcements_arrived", 1), #if attacker reinforcement
             (neg|agent_is_defender, ":player_agent"), 
             (agent_is_alive, ":player_agent"),
             #(display_message, "@attackers almost defeated!"),           
@@ -5797,7 +5919,7 @@ mission_templates = [ # not used in game
         ]) + [
         (try_end),
     (try_end),
-    (assign, "$reinforcements_arrived",0),
+    (assign, "$att_reinforcements_arrived",0),
    ]),
 
 

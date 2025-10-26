@@ -1670,7 +1670,7 @@ scripts = [
 	(party_set_slot, center_list[x][0], slot_center_garrison_limit,    center_list[x][7]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_center_destroy_on_capture,center_list[x][8]) for x in range(len(center_list)) ]+[
 	(party_set_slot, center_list[x][0], slot_center_siegability,       center_list[x][9]) for x in range(len(center_list)) ]+[
-	#(party_set_slot, center_list[x][0], slot_center_ideal_battle_size, center_list[x][10]) for x in range(len(center_list)) ]+[
+	(party_set_slot, center_list[x][0], slot_center_ideal_battle_size, center_list[x][10]) for x in range(len(center_list)) ]+[
 	#item abundancy in center shops
 	(troop_set_slot, center_list[x][2][1], slot_troop_shop_gold    ,center_list[x][4][0]) for x in range(len(center_list)) ]+[
 	(troop_set_slot, center_list[x][2][2], slot_troop_shop_gold    ,center_list[x][4][0]) for x in range(len(center_list)) ]+[

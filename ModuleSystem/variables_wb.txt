@@ -896,7 +896,7 @@ battle_encounter_effects
 options_horse_archer_ai
 g_fast_mode
 force_scene
-reinforcements_arrived
+player_team_updated
 weapon_unequipped
 shield_unequipped
 tld_options_overlay_16
