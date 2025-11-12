@@ -1951,9 +1951,11 @@ hp_shield_init = (ti_on_agent_spawn, 0, 0, [
 		(troop_get_type, ":race", ":troop_id"),
 		(eq, ":race", tf_troll),
 		(agent_set_max_hit_points, ":agent", 150,1),
-		(store_mission_timer_a_msec, ":spawn_time"),
-		(val_add, ":spawn_time", 30000),
-		(agent_set_slot, ":agent", slot_agent_troll_swing_move, ":spawn_time"), #this slot is overwritten once mission time > spawn time +30 secs and if the troll qualifies for pushback
+        (agent_set_slot, ":agent", slot_agent_hp_shield, 100),
+        (troop_set_slot, ":troop_id", slot_troop_hp_shield, 100),
+		# (store_mission_timer_a_msec, ":spawn_time"),
+		# (val_add, ":spawn_time", 30000),
+		# (agent_set_slot, ":agent", slot_agent_troll_uncontrollable, ":spawn_time"), #this slot is overwritten once mission time > spawn time +30 secs and if the troll qualifies for pushback
 	(try_end),
 		
 	(try_begin), #player and companions
@@ -1994,15 +1996,16 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (assign, ":new_hp_shield", 0),
     (gt, ":weapon", 0),
 
-    (str_store_item_name, s2, ":weapon"),
-
+    #(str_store_item_name, s2, ":weapon"),
 
     (item_get_type, ":type", ":weapon"),
-
-    #(get_player_agent_no, ":player"),
     (agent_get_troop_id, ":troop_id", ":agent"),
 
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_team, ":player_team", ":player_agent"),
+
     (agent_get_slot, ":current_hp_shield", ":agent", slot_agent_hp_shield),
+    #(troop_get_slot, ":max_hp_shield", ":troop_id", slot_troop_hp_shield),
 
     (try_begin),
       (gt, ":current_hp_shield", 0),
@@ -2049,7 +2052,6 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
         (eq, ":type", itp_type_bow),
         (gt, ":dist", 30),
         (val_div, ":damage", 3),
-        (assign, ":deal_damage", 6),
 	  (else_try), #buff spears and throwing spears, note: also affects swing attacks (blunt spears attacks, halberds etc)
 		(this_or_next|item_has_property, ":weapon", itp_type_polearm),
         (item_has_property, ":weapon", itp_type_thrown),
@@ -2057,17 +2059,24 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
 		(eq, ":thrust_damage_type", 1), #check for spears, also finds halberds, bills etc
 		(val_mul, ":damage", 3),
 		(val_div, ":damage", 2),
-        (assign, ":deal_damage", 2),
 		#(display_message, "@spear found"),
 	  (else_try), #nerf blunt weapons		
 		(item_get_thrust_damage_type, ":thrust_damage_type", ":weapon"),
 		(neq, ":thrust_damage_type", 1), #exclude spears
 		(item_get_swing_damage_type, ":swing_damage_type", ":weapon"),
 		(eq, ":swing_damage_type", 2), #maces, hammers, clubs
-		(val_mul, ":damage", 2),
-		(val_div, ":damage", 3),
-		#(display_message, "@blunt weapon found"),
+		#(val_mul, ":damage", 2),
+		(val_div, ":damage", 2),
       (try_end),
+
+      (try_begin), #untrained trolls are easier to stagger
+        (troop_get_upgrade_troop, ":level_up_troop", ":troop_id", 0),
+        (gt, ":level_up_troop", 0), #untrained trolls
+        (val_add, ":damage", 10),
+      (try_end),
+
+        # (assign, reg78, ":damage"),
+        # (display_message, "@damage to troll {reg78}"),
 
       #couched lances and damage animations
       (try_begin),
@@ -2098,6 +2107,63 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
         (assign, ":deal_damage", 6),
         # (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
 		# (play_sound, "snd_troll_hit"),
+      (try_end),
+
+      #pushback attack
+      (try_begin),
+        (this_or_next|eq, ":new_hp_shield", 0),
+        (ge, ":damage", 30),
+        (agent_play_sound, ":agent", "snd_troll_yell"),
+        (agent_slot_eq, ":agent", slot_agent_troll_status, 0),
+        (agent_set_slot,":agent",  slot_agent_troll_status, 1),
+        
+        #uncontrollable
+        (troop_get_upgrade_troop, ":level_up_troop", ":troop_id", 0),
+        (gt, ":level_up_troop", 0), #untrained trolls
+        (store_random_in_range, ":rand", 0, 10),
+        (le, ":rand", 2),
+        (agent_get_slot, ":morale_penalty", ":agent", slot_agent_morale_modifier),
+        (val_sub, ":morale_penalty", 50),
+        (agent_set_slot, ":agent", slot_agent_morale_modifier, ":morale_penalty"),
+        (try_begin),
+            (agent_slot_eq, ":agent", slot_agent_troll_uncontrollable, 0),
+            (agent_set_slot, ":agent", slot_agent_troll_uncontrollable, 1),
+            (agent_get_team, ":team", ":agent"),
+            (try_begin),
+                (eq, ":team", ":player_team"),
+                (str_store_agent_name, s5, ":agent"),
+                (display_message, "@A {s5} has been overcome by fear and rage and is now uncontrollable."),
+            (try_end),
+            (try_begin),
+                (agent_is_defender, ":agent"),
+                (agent_set_team, ":agent", 4),
+                (team_set_relation, 4, 0, 1),
+                (team_set_relation, 4, 2, 1),
+                (team_set_relation, 4, 1, -1),
+                (team_set_relation, 4, 3, -1),
+                (team_set_relation, 4, 5, -1),
+            (else_try),
+                (agent_set_team, ":agent", 5),
+                (team_set_relation, 5, 0, -1),
+                (team_set_relation, 5, 2, -1),
+                (team_set_relation, 5, 1, 1),
+                (team_set_relation, 5, 3, 1),
+                (team_set_relation, 5, 4, 1),
+            (try_end),
+        (else_try), #running amok
+            (agent_slot_eq, ":agent", slot_agent_troll_uncontrollable, 0),
+            (neq, ":player_team", 6), #easy way to avoid sieges, since player team is 6 in sieges
+            (agent_set_team, ":agent", 6),
+            (try_for_range, ":other_team", 0, 6),
+                (team_set_relation, 6, ":other_team", -1),
+            (try_end),
+            (agent_set_animation, ":agent", "anim_troll_charge", 0), #send them away from formation
+        (try_end),
+      (try_end),
+      
+      (try_begin),
+        (agent_slot_eq, ":agent", slot_agent_troll_status, 2), #make immune to damage if in pushback phase
+        (assign, ":deal_damage", 0),
       (try_end),
     (try_end),
     ### TROLLS END ###
@@ -4745,8 +4811,8 @@ tld_animated_town_agents = [
         (prop_instance_get_position, pos3, ":agent_prop"), #base position
         (agent_get_position, pos2, ":agent"),
         
-        (agent_get_slot, ":anim_1", ":agent", slot_agent_troll_swing_status), #animation 1   
-        (agent_get_slot, ":anim_2", ":agent", slot_agent_troll_swing_move), #animation 2
+        (agent_get_slot, ":anim_1", ":agent", slot_agent_troll_status), #animation 1   
+        (agent_get_slot, ":anim_2", ":agent", slot_agent_troll_uncontrollable), #animation 2
         (agent_get_slot, ":sound_1", ":agent", slot_agent_last_hp), #sound 1
         (agent_get_slot, ":sound_2", ":agent",  slot_agent_mount_side), #sound 2
         (agent_get_slot, ":move_chance", ":agent",  slot_agent_mount_dead), #chance to move per second
@@ -4857,8 +4923,8 @@ tld_animated_town_agents = [
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_2, ":num_agents"), 
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
         (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-        (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-        (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+        (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+        (agent_set_slot, reg0, slot_agent_troll_uncontrollable, 0), #animation 2
         (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
         (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
         (agent_set_slot, reg0, slot_agent_mount_dead, 40), #move chance per 1 second

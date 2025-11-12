@@ -3574,8 +3574,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, "anim_wolf_snap"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, snd_goat), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, snd_goat), #sound 2
     (agent_set_slot, reg0, slot_agent_mount_dead, 10), #chance to move per second, minimum 5%
@@ -3591,8 +3591,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, 0), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, snd_cow_moo), #sound 2
     ] or []) + [          
@@ -3606,8 +3606,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, 0), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, snd_cow_moo), #sound 2
     ] or []) + [          
@@ -3621,8 +3621,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, 0), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, snd_horse_breath), #sound 1 
     (agent_set_slot, reg0, slot_agent_mount_side, snd_donkey), #sound 2
     ] or []) + [          
@@ -3642,8 +3642,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, 0), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
     ] or []) + [          
@@ -3656,8 +3656,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, "anim_wolf_snap"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, "snd_warg_lone_woof"), #sound 2
     (agent_set_slot, reg0, slot_agent_mount_dead, 15), #chance to move per second, minimum 5%
@@ -3671,8 +3671,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, "anim_bear_slam"), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, "anim_bear_slam"), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, "anim_wolf_snap"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, snd_bear_strike), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, snd_bear_strike), #sound 2
     (agent_set_slot, reg0, slot_agent_mount_dead, 15), #chance to move per second, minimum 5%
@@ -3693,8 +3693,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, "anim_bear_slam"), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_bear_slam"), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, "anim_bear_slam"), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, "anim_bear_slam"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, "snd_warg_lone_woof"), #sound 2
     (agent_set_slot, reg0, slot_agent_mount_dead, 15), #chance to move per second, minimum 5%
@@ -3709,8 +3709,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, "anim_wolf_snap"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, snd_sheep), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, snd_sheep), #sound 2
     ] or []) + [          
@@ -3725,8 +3725,8 @@ scene_props = [
     #(agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, 0), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, snd_horse_breath), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, snd_horse_low_whinny1), #sound 2
     (agent_set_slot, reg0, slot_agent_mount_dead, 5), #chance to move per second, minimum 5%
@@ -5315,8 +5315,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, "anim_horse_rear"), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, "anim_horse_rear"), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, "anim_wolf_snap"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, "snd_distant_dog_bark"), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, "snd_warg_lone_woof"), #sound 2
     ] or []) + [          
@@ -5330,8 +5330,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, "anim_wolf_snap"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, snd_pig), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
     ] or []) + [          
@@ -5345,8 +5345,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, "anim_wolf_snap"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, snd_pig), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
     ] or []) + [
@@ -5360,8 +5360,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, "anim_wolf_snap"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, snd_bear_strike), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, snd_troll_grunt), #sound 2
     ] or []) + [
@@ -5390,8 +5390,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, 0), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, snd_horse_breath), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, snd_neigh1), #sound 2
     ] or []) + [
@@ -5405,8 +5405,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, "anim_wolf_snap"), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, "anim_wolf_snap"), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, 0), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, snd_horse_breath), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, 0), #sound 2
     ] or []) + [
@@ -5420,8 +5420,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, 0), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, 0), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, 0), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, 0), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
     (agent_set_slot, reg0, slot_agent_last_hp, 0), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, snd_camel_sounds), #sound 2
@@ -5443,8 +5443,8 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_horse_stand"),    
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_assigned_prop, ":instance_no"),
-    (agent_set_slot, reg0, slot_agent_troll_swing_status, "anim_bear_slam"), #animation 1   
-    (agent_set_slot, reg0, slot_agent_troll_swing_move, "anim_wolf_snap"), #animation 2
+    (agent_set_slot, reg0, slot_agent_troll_status, "anim_bear_slam"), #animation 1   
+    (agent_set_slot, reg0, slot_agent_troll_uncontrollable, "anim_wolf_snap"), #animation 2
     (agent_set_slot, reg0, slot_agent_last_hp, "snd_warg_lone_woof"), #sound 1
     (agent_set_slot, reg0, slot_agent_mount_side, "snd_warg_lone_woof"), #sound 2
     (agent_set_slot, reg0, slot_agent_mount_dead, 15), #chance to move per second, minimum 5%

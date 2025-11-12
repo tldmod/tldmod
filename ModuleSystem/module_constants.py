@@ -189,8 +189,8 @@ slot_agent_last_knockdown_time    = slot_agent_walker_type #Use for tracking Kno
 
 # TLD
 
-slot_agent_troll_swing_status     	= 13
-slot_agent_troll_swing_move       	= 14
+slot_agent_troll_status     	= 13 #1= pushback stage 1, 2= pushback stage 2, 3=charge
+slot_agent_troll_uncontrollable       	= 14 #1=uncontrollable but friendly, 2= running amok
 slot_agent_last_hp		        = 15
 slot_agent_mount_side		       	= 16 # a mount has the side as its rider
 slot_agent_mount_dead			= 17
@@ -206,9 +206,9 @@ slot_agent_wounded			= 23 #unused
 slot_agent_mount_orig_rider = 24
 
 # why not use duplicate slots for an agent that will never use it? -CC
-
-slot_agent_warg_pouncing		= slot_agent_troll_swing_status
-slot_agent_warg_pounce_time		= slot_agent_troll_swing_move
+# these two slots are part of an unused trigger anyway -InVain
+slot_agent_warg_pouncing		= slot_agent_troll_status
+slot_agent_warg_pounce_time		= slot_agent_troll_uncontrollable
 
 # Kham 
 slot_agent_is_running_away		= 25
@@ -216,6 +216,9 @@ slot_agent_is_running_away		= 25
 #InVain
 slot_agent_base_accuracy		= 26 #used for resetting accuracy after unquipping shields
 slot_agent_walker_joined        = 27 #1= accepted; 2= denied
+slot_agent_animal_is_striking   = 28 #also stores attack range
+slot_agent_array_troop          = 29
+slot_agent_array_number         = 30
 slot_agent_original_team        = 31
 
 ########################################################
@@ -954,6 +957,30 @@ slot_troop_shop_aval_itp_itp_type_hand_armor     = slot_troop_shop_aval_itp_coun
 #      but the game doesn't update them/read them well inside
 #      hardcoded callback scripts such as <game_get_upgrade_cost>
 slot_troop_forbid_companion_upgrade_mode = 139
+
+# Troll Hiring Constants
+slot_troop_troll_armoured_variant = 164 #Gets the armoured variant of a troll troop.
+
+#Retainers Begin
+
+slot_troop_retainer_troop = 165 #What type of troop (if any) a lord uses as their personal retainers
+
+#Retainers End
+
+#Friendship Rewards Begin
+
+slot_troop_friendship_reward_type = 166 #Type of gift lord wants to give player (troops, gear, etc)
+slot_troop_friendship_reward_progress = 167 #Progress towards next friendship reward
+slot_troop_friendship_reward_id = 168 #ID of the gift the lord plans to give (troop id for troops, item id for gear, etc)
+
+friendship_reward_none = 0
+friendship_reward_troops = 1
+friendship_reward_gear = 2
+friendship_reward_end = 3
+
+#Friendship Rewards End
+
+
 
 # TRAIT SLOTS (=troop slots)
 tld_first_trait_string = "str_trait_title_elf_friend"
@@ -2675,6 +2702,9 @@ slot_team_d0_avg_y                      = 167
 slot_team_d0_avg_zrot                   = 176
 #End Reset Group
 
+#Invain
+slot_team_troll_count                   = 200 #used for sieges only
+
 sdt_infantry   = 0
 sdt_archer     = 1
 sdt_cavalry    = 2
@@ -2826,8 +2856,8 @@ ENCOUNTER_EFFECT_MORALE_DEBUFF = 10
 slot_party_scripted_ai = 309
 
 
-slot_troll_agent_charging = 50
-slot_troll_agent_last_charge = 51
+slot_troll_agent_charging = 50 #unused
+slot_troll_agent_last_charge = 51 #unused
 
 OLOG_ENT_HP_SHIELD = 320
 MORIA_TROLL_HP_SHIELD = 500
@@ -2847,24 +2877,4 @@ slot_party_has_companion = 310
 # Control allies
 player_control_allies_inf = 3
 
-# Troll Hiring Constants
-slot_troop_troll_armoured_variant = 164 #Gets the armoured variant of a troll troop.
 
-#Retainers Begin
-
-slot_troop_retainer_troop = 165 #What type of troop (if any) a lord uses as their personal retainers
-
-#Retainers End
-
-#Friendship Rewards Begin
-
-slot_troop_friendship_reward_type = 166 #Type of gift lord wants to give player (troops, gear, etc)
-slot_troop_friendship_reward_progress = 167 #Progress towards next friendship reward
-slot_troop_friendship_reward_id = 168 #ID of the gift the lord plans to give (troop id for troops, item id for gear, etc)
-
-friendship_reward_none = 0
-friendship_reward_troops = 1
-friendship_reward_gear = 2
-friendship_reward_end = 3
-
-#Friendship Rewards End

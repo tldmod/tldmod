@@ -3556,12 +3556,15 @@ attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,o
 ["merry","Merry","{!}",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_boots,0,0,fac_commoners,
    [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_merry_outfit],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
-#Add new troops here, right before trp_last!
 
 ["grima","Grima_Wormtongue","{!}the_city",tf_hero| tf_evil_man,0,0,fac_isengard,
    [(itm_rohan_armor_th, imod_old),itm_leather_boots_dark_bad,],
       def_attrib|level(2),wp(20),knows_common,0x000000003f0000032038a06b587590c500000000001d3a880000000000000000],
 
+["array_trolls","{!}BUG","{!}BUG",0,0,0,fac_commoners,[],0,0,0,0], #used for storing trolls in an array
+["array_animals","{!}BUG","{!}BUG",0,0,0,fac_commoners,[],0,0,0,0], #used for storing animals in an array
+
+#Add new troops here, right before trp_last!
 ["last","{!}BUG","{!}BUG",0,0,0,fac_commoners,[],0,0,0,0],    #the last troop must stay a stub, so that range calls for all troops include the last but one troop.
 # For future troop additions, always make sure to fix trp_last overwrite in script_update_savegame
 ]

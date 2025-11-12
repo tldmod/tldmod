@@ -2162,7 +2162,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone,"player_hire_troll_buy_done", 
   [], 
-  "Take good care of this big fellow now, and he’ll take good care of you! Ha!", "close_window", 
+  "Take good care of this big fellow now, and he’ll take good care of you! Ha! He has not seen battle yet. Be aware that he may panick and ignore your orders.", "close_window", 
   [
     (faction_get_slot, ":fac_troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
     (call_script, "script_spend_influence_of", reg21, "$g_talk_troop_faction"),
@@ -2795,7 +2795,9 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
 
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_accept",[],
 "Now bring havoc to my enemies with your new gift","lord_pretalk", 
-	[(faction_get_slot, ":troll",  "$g_talk_troop_faction", slot_faction_troll_troop),(party_add_members, "p_main_party", ":troll", 1)]],
+	[(faction_get_slot, ":troll",  "$g_talk_troop_faction", slot_faction_troll_troop),
+    (troop_get_upgrade_troop, ":troll_trained", ":troll", 0), #get a trained troll!
+    (party_add_members, "p_main_party", ":troll_trained", 1)]],
 
 [anyone, "lord_capture_troll_completed_two_trolls_thankyou_refuse",[],
 "As you wish, then. Someone else among of my servants will known how to use this mighty tool of war.","lord_pretalk",[]],

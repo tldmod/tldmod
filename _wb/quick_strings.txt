@@ -1,4 +1,4 @@
-2097
+2100
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_{!}0x07291D {!}0x07291D
@@ -116,7 +116,7 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr_{!}_rev_385_wb__dev_ {!}_rev_385_wb_|_dev_^_Built_2025-10-26_18:30___
+qstr_{!}_rev_387_wb__dev_ {!}_rev_387_wb_|_dev_^_Built_2025-11-12_20:46___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -933,6 +933,7 @@ qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
 qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!
+qstr_A_{s5}_has_been_over A_{s5}_has_been_overcome_by_fear_and_rage_and_is_now_uncontrollable.
 qstr_{!}0x999999 {!}0x999999
 qstr_Received_{reg66}_dam Received_{reg66}_damage.
 qstr_Cannot_Change_Camera Cannot_Change_Camera_Mode_while_in_First_Person.
@@ -986,6 +987,8 @@ qstr_You_rally_{reg10}_tr You_rally_{reg10}_troops!
 qstr_{s5}_rallies_{reg65? {s5}_rallies_{reg65?her:his}_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
 qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
+qstr_troll_charges_{s5}_a troll_charges_{s5}_at_distance_{reg78}
+qstr_troll_charge_end troll_charge_end
 qstr_Your_mount_has_falle Your_mount_has_fallen_to_the_ground_beneath_you!
 qstr_Receive_{reg22}_dama Receive_{reg22}_damage.
 qstr_You_have_been_knocke You_have_been_knocked_unconscious_by_{s22}.

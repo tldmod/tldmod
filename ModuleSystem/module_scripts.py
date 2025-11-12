@@ -1582,6 +1582,12 @@ scripts = [
 	(faction_set_slot, faction_strings[x][0], slot_faction_ambient_sound_always, faction_strings[x][4])    for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_strings[x][0], slot_faction_occasional_sound1_day,faction_strings[x][5])    for x in range(len(faction_init)) ]+[
 
+  (faction_set_slot, fac_mordor, slot_faction_troll_troop, "trp_mordor_troll"),
+  (faction_set_slot, fac_guldur, slot_faction_troll_troop, "trp_mordor_troll"),
+  (faction_set_slot, fac_isengard, slot_faction_troll_troop, "trp_isen_troll"),
+  (faction_set_slot, fac_gundabad, slot_faction_troll_troop, "trp_gunda_troll"),
+  (faction_set_slot, fac_moria, slot_faction_troll_troop, "trp_moria_troll"),
+
   #Armoured Troll Variants
   (troop_set_slot, "trp_moria_vet_troll", slot_troop_troll_armoured_variant, "trp_moria_armored_troll"),
   (troop_set_slot, "trp_isen_vet_troll", slot_troop_troll_armoured_variant, "trp_isen_armored_troll"),
@@ -31591,6 +31597,7 @@ if is_a_wb_script==1:
 	]),
 
 #script_cf_surrounded_pushback
+#not used anymore, troll surround attack has been simplified
 ("cf_surrounded_pushback", [
 	(store_script_param_1, ":agent"),\
 	(store_script_param_2, ":step"),
@@ -31643,7 +31650,7 @@ if is_a_wb_script==1:
 		(agent_set_animation, ":agent", "anim_troll_pushback"),
 		(agent_play_sound, ":agent", "snd_troll_yell"),
 
-		(agent_set_slot, ":agent", slot_agent_troll_swing_status, 1),
+		(agent_set_slot, ":agent", slot_agent_troll_status, 1),
 		(store_mission_timer_a_msec, ":timer"),
 		
 		#Debug:
@@ -31656,14 +31663,14 @@ if is_a_wb_script==1:
 		# (assign, reg78, ":timer"),
 		# (display_message, "@{reg78} - minimal hit Time", color_good_news),
 		
-		(agent_set_slot, ":agent", slot_agent_troll_swing_move, ":timer"),
+		(agent_set_slot, ":agent", slot_agent_troll_uncontrollable, ":timer"),
 	(else_try),
 		(eq, ":step", 2),
 
-		(agent_slot_eq, ":agent", slot_agent_troll_swing_status, 1),
+		(agent_slot_eq, ":agent", slot_agent_troll_status, 1),
 		(store_mission_timer_a_msec, ":timer_2"),
-		#(agent_slot_ge, ":agent", slot_agent_troll_swing_move, ":timer_2"),
-		(agent_get_slot, ":hit_timer", ":agent", slot_agent_troll_swing_move),
+		#(agent_slot_ge, ":agent", slot_agent_troll_uncontrollable, ":timer_2"),
+		(agent_get_slot, ":hit_timer", ":agent", slot_agent_troll_uncontrollable),
 		(ge, ":timer_2", ":hit_timer"),
 		# (assign, reg78, ":timer_2"),
 		# (display_message, "@{reg78} - actual hit Time", color_good_news),
@@ -31715,15 +31722,17 @@ if is_a_wb_script==1:
 				(agent_play_sound, ":agent", "snd_blunt_hit"),
 			  (try_end),  		    
 	    (try_end),
-		(agent_set_slot, ":agent", slot_agent_troll_swing_status, 0),
+		(agent_set_slot, ":agent", slot_agent_troll_status, 0),
 	(try_end),
 ]),
 
 #script_aoe_pushback #copied from troll code
+#important: this also affects friendly troops
 #input: pos69
 ("aoe_pushback", [
-	(store_script_param_1, ":damage"),
+	(store_script_param_1, ":damage"), #if =0 damage will be calculated using attacker's weapon item and stats
 	(store_script_param_2, ":area"),
+    (store_script_param, ":dealer_agent", 3),
 
 	(set_fixed_point_multiplier, 100),
 
@@ -31731,6 +31740,7 @@ if is_a_wb_script==1:
         (agent_is_alive, ":nearby"),
         (agent_is_active, ":nearby"),
         (agent_is_human, ":nearby"),
+        (neq, ":dealer_agent", ":nearby"),
         (gt, ":nearby", 0),
         (agent_get_troop_id, ":enemy_troop_id", ":nearby"),
         (troop_get_type, ":race", ":enemy_troop_id"),
@@ -31738,6 +31748,7 @@ if is_a_wb_script==1:
         (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
         (neg|is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"),
         (neq, ":enemy_troop_id", "trp_werewolf"),
+        (neq, ":enemy_troop_id", "trp_multiplayer_profile_troop_male"), # Arsakes: bear shapeshifter troop
         (agent_get_horse, ":target_horse", ":nearby"),
         (try_begin),
           (lt, ":target_horse", 0),
@@ -31751,13 +31762,20 @@ if is_a_wb_script==1:
         (agent_set_animation, ":nearby", ":hit_anim"),
         (str_store_agent_name, s2, ":nearby"),
         #(display_message, "@{s2} attacked"),
-        (agent_deliver_damage_to_agent, ":nearby", ":nearby", ":damage", "itm_troll_aoe"),
+        (try_begin),
+            (eq, ":dealer_agent", -1), #no dealer agent
+            (agent_deliver_damage_to_agent, ":nearby", ":nearby", ":damage", "itm_troll_aoe"), #we use this weapon to avoid any "on_hit" triggers
+        (else_try),
+            (agent_deliver_damage_to_agent, ":dealer_agent", ":nearby", ":damage", "itm_troll_aoe"),
+        (try_end),
+        (store_random_in_range,":random_timings",10,50),
+        (agent_set_animation_progress, ":nearby", ":random_timings"), # differentiate timings a bit       
+        #(store_random_in_range, ":rand_sound", 0, 3),
+        (store_random_in_range, ":rand_sound", 0, 6),
+        (lt, ":rand_sound", 3), #only the first three sounds are valid, so only half of the agents play a sound
+        (store_add, ":sound", ":rand_sound", "snd_wooden_hit_low_armor_low_damage"),
+        (agent_play_sound, ":nearby", ":sound"),
     (try_end),
-    (store_random_in_range,":random_timings",10,50),
-    (agent_set_animation_progress, ":nearby", ":random_timings"), # differentiate timings a bit       
-    (store_random_in_range, ":rand_sound", 0, 3),
-    (store_add, ":sound", ":rand_sound", "snd_wooden_hit_low_armor_low_damage"),
-    (play_sound_at_position, ":sound", pos69),    
 ]),
 
 #Beornign shapeshifter related mechanics starts here

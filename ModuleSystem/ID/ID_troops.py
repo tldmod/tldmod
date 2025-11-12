@@ -993,4 +993,6 @@ trp_merry_notmet = 991
 trp_pippin = 992
 trp_merry = 993
 trp_grima = 994
-trp_last = 995
+trp_array_trolls = 995
+trp_array_animals = 996
+trp_last = 997

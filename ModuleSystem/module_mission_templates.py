@@ -1133,7 +1133,7 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
   tld_ai_fadeout_spheres,
   tld_ai_melee_spheres,
   tld_calculate_wounded,
-  tld_kill_or_wounded_triggers
+  tld_kill_or_wounded_triggers,
 
   ] + tld_bow_shield
   or [] ) + [
@@ -1142,11 +1142,10 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
 	custom_track_companion_casualties,
 	common_battle_healing,
-	custom_troll_hitting,
   tld_assign_special_troops,
 	#common_battle_kill_underwater,
   reset_fog,
-] + fade + bright_nights + khams_custom_player_camera + bright_nights
+] + fade + bright_nights + khams_custom_player_camera + custom_troll_hitting_new
 
 
 tld_common_peacetime_scripts = [
@@ -2010,7 +2009,7 @@ mission_templates = [ # not used in game
 			(agent_set_position, ":agent_no", pos2),
 			(store_agent_hit_points,":cur_hp",":agent_no",1),
 			(agent_set_slot, ":agent_no", slot_agent_last_hp, ":cur_hp"),
-			(agent_set_slot, ":agent_no", slot_agent_troll_swing_status, 0),
+			(agent_set_slot, ":agent_no", slot_agent_troll_status, 0),
 			(agent_set_animation_progress, ":agent_no", 20),
 			(agent_set_team, ":agent_no", 3),
 		(else_try),
@@ -2113,7 +2112,7 @@ mission_templates = [ # not used in game
 	(try_for_agents,":agent_no"),
 		(this_or_next|agent_has_item_equipped, ":agent_no", itm_feet_chains),
 		(agent_has_item_equipped, ":agent_no", itm_feet_chains_dwarf),
-		(agent_get_slot, reg10,      ":agent_no", slot_agent_troll_swing_status), 
+		(agent_get_slot, reg10,      ":agent_no", slot_agent_troll_status), 
 		(agent_get_slot, ":last_hp", ":agent_no", slot_agent_last_hp), 
 		(store_agent_hit_points,":cur_hp",":agent_no",1),
 		(agent_set_slot, ":agent_no", slot_agent_last_hp, ":cur_hp"),
@@ -2132,7 +2131,7 @@ mission_templates = [ # not used in game
 			(try_end),
 		(try_end),
 		(val_add, reg10, 1),
-		(agent_set_slot, ":agent_no", slot_agent_troll_swing_status, reg10),
+		(agent_set_slot, ":agent_no", slot_agent_troll_status, reg10),
 		(agent_set_slot, ":agent_no", slot_agent_last_hp, ":cur_hp"),
 	(try_end),
 	]),

@@ -1780,17 +1780,17 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
   (agent_get_troop_id, ":agent_trp",       ":agent"),
   (agent_get_item_id,  ":agent_mount_itm", ":agent"),
   
-  (try_begin), # when trolls in battle
-    (troop_get_type, ":agent_trp_type", ":agent_trp"),
-    (eq,             ":agent_trp_type", tf_troll),
-    #--
-    (agent_set_speed_limit, ":agent", 4), # trolls go 4 km/h max <GA>
-    (assign, "$trolls_in_battle", 1),     # condition on future troll triggers
+  # (try_begin), # when trolls in battle #InVain: Moved to troll trigger group
+    # (troop_get_type, ":agent_trp_type", ":agent_trp"),
+    # (eq,             ":agent_trp_type", tf_troll),
+    # #--
+    # (agent_set_speed_limit, ":agent", 4), # trolls go 4 km/h max <GA>
+    # (assign, "$trolls_in_battle", 1),     # condition on future troll triggers
     
-    # a failed test: set custom troll walking/standing animations... why wouldn't this work?
-    #(agent_set_walk_forward_animation,":troll","anim_walk_forward_troll"),
-    #(agent_set_stand_animation,":troll","anim_walk_forward_troll"),
-  (try_end),
+    # # a failed test: set custom troll walking/standing animations... why wouldn't this work?
+    # #(agent_set_walk_forward_animation,":troll","anim_walk_forward_troll"),
+    # #(agent_set_stand_animation,":troll","anim_walk_forward_troll"),
+  # (try_end),
   
   (try_begin), # when wargs in battle
     (is_between, ":agent_mount_itm", item_warg_begin, item_warg_end),
@@ -2028,84 +2028,82 @@ tld_player_cant_ride = (1.90,1.5,0.5,[
 #Kham - Custom Troll MT
 
 custom_troll_hitting_new = ((is_a_wb_mt==1) and [
- (ti_on_agent_spawn, 0, ti_once, [
+ 
+ # #trolls spawn trigger - overwrite speed and aggressiveness, so disable
+ # (ti_on_agent_spawn, 0, ti_once, [
 
-	(store_trigger_param_1, ":troll"),
+	# (store_trigger_param_1, ":troll"),
 
-	(agent_is_active, ":troll"),
-	(agent_is_human, ":troll"),
-	(gt, ":troll", 0),
+	# (agent_is_active, ":troll"),
+	# (agent_is_human, ":troll"),
+	# (gt, ":troll", 0),
 
-	(agent_get_troop_id, ":troop_id", ":troll"),
-	(troop_get_type, ":type", ":troop_id"),
-	(eq, ":type", tf_troll),
+	# (agent_get_troop_id, ":troop_id", ":troll"),
+	# (troop_get_type, ":type", ":troop_id"),
+	# (eq, ":type", tf_troll),
 
-	],[
+	# ],[
 
-	(store_trigger_param_1, ":troll"),
+	# (store_trigger_param_1, ":troll"),
 
-	(agent_is_active, ":troll"),
-	(agent_is_human, ":troll"),
-	(gt, ":troll", 0),
+	# (agent_is_active, ":troll"),
+	# (agent_is_human, ":troll"),
+	# (gt, ":troll", 0),
 
-	(agent_get_troop_id, ":troop_id", ":troll"),
-	(troop_get_type, ":type", ":troop_id"),
-	(eq, ":type", tf_troll),
+	# (agent_get_troop_id, ":troop_id", ":troll"),
+	# (troop_get_type, ":type", ":troop_id"),
+	# (eq, ":type", tf_troll),
 
-	(agent_set_speed_modifier, ":troll", 100),
-	#(agent_set_max_hit_points, ":troll", 35),
-	(agent_ai_set_aggressiveness, ":troll", 500),
+	# (agent_set_speed_modifier, ":troll", 100),
+	# #(agent_set_max_hit_points, ":troll", 35),
+	# (agent_ai_set_aggressiveness, ":troll", 500),
 
- ]),
+ # ]),
 
-(1,0,ti_once, [(gt, "$trolls_in_battle", 0)], [
-	
-	(try_for_agents,":troll"),
-		(agent_is_alive,":troll"),
-		(agent_is_human,":troll"),
-		(agent_is_active, ":troll"),
-		(agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
-		(troop_get_type, ":troll_type", ":troll_troop_id"),
-		(eq, ":troll_type", tf_troll),
+  (ti_before_mission_start, 0, 0, [],
+  [  (try_for_range, ":slot", 0, 1000),
+        (troop_set_slot, "trp_array_trolls", ":slot", -1),
+     (try_end),
+  ]),
+  
+  #troll init
+  (ti_on_agent_spawn, 0, 0, [],
+  [  (store_trigger_param_1, ":agent_no"),
+     (ge, ":agent_no", 0),
+     (agent_is_active, ":agent_no"),
+     (agent_is_alive, ":agent_no"),
+     (agent_is_human, ":agent_no"),
+     (agent_get_troop_id,":troop_id", ":agent_no"),
+     (troop_get_type, ":type", ":troop_id"),
+     (eq, ":type", tf_troll),
+     (agent_set_speed_limit, ":agent_no", 4), # trolls go 4 km/h max <GA>
+     (assign, "$trolls_in_battle", 1),     # condition on future troll triggers
+     (assign, ":upper_range", 1000),
+     (try_for_range, ":slot", 0, ":upper_range"),
+        (troop_slot_eq, "trp_array_trolls", ":slot", -1),
+        (troop_set_slot, "trp_array_trolls", ":slot", ":agent_no"),
+        (agent_set_slot, ":agent_no", slot_agent_array_troop, "trp_array_trolls"),       
+        (agent_set_slot, ":agent_no", slot_agent_array_number, ":slot"),
+        (assign, ":upper_range", 0),
 
-		(agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":troll"),
-        (gt, ":num_nearby_agents", 0),
-        #Trolls charging - begin
-
-        #(agent_get_team, ":troll_team", ":troll"),
-        (agent_get_position, pos67, ":troll"),
-
-        #get the closest noncav enemy
-        (assign, ":min_dist", 1000000),
-        (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
-        	(agent_ai_get_cached_enemy, ":enemy_agent", ":troll", ":nearby_agent_no"),
-            (agent_is_alive, ":enemy_agent"),
-            (agent_is_human, ":enemy_agent"),
-            (agent_is_active, ":enemy_agent"),
-            (agent_get_class, ":enemy_class_no", ":enemy_agent"),
-            (neq, ":enemy_class_no", grc_cavalry),
-            (agent_get_position, pos68, ":enemy_agent"),
-            (get_distance_between_positions, ":dist", pos68, pos67),
-            (gt, ":min_dist", ":dist"),
-            (assign, ":min_dist", ":dist"),
-            (copy_position, pos69, pos68), #pos69 holds the nearest enemy position
-        (try_end),
-    
-      # (assign, reg0, ":min_dist"),
-      # (assign, reg1, ":troll"),
-      # (display_message, "@Debug: Troll {reg1} distance to enemy: {reg0}."),
-        
-        (try_begin),
-          (this_or_next|eq, ":min_dist", 1000000),
-          (lt, ":min_dist", 500),
-          (agent_clear_scripted_mode, ":troll"), # leave the troll on its own if close enough to the enemy
-        (else_try),
-          (agent_set_scripted_destination, ":troll", pos69, 1), # head for the nearest enemy
-        (try_end),
-        #Trolls charging - end
-    (try_end),
+        (assign, reg77, ":slot"),
+        (assign, reg78, ":agent_no"),
+        (str_store_agent_name, s5, ":agent_no"),
+     (try_end),
+     
+     #additional teams for berserking trolls
+     
   ]),
 
+  #deactivate array slot on death
+  (ti_on_agent_killed_or_wounded, 0, 0, [], [
+     (store_trigger_param_1, ":agent_no"),
+     (agent_slot_eq, ":agent_no", slot_agent_array_troop, "trp_array_trolls"),
+     (agent_get_slot, ":array_number", ":agent_no", slot_agent_array_number),
+     (troop_set_slot, "trp_array_trolls", ":array_number", -1),
+  ]),
+
+#troll regular attack
 (ti_on_agent_hit, 0, 0, [
 	
     # trigger param 1 = damage inflicted agent_id
@@ -2118,15 +2116,16 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
     # If (set_trigger_result) is used in the code with operation parameter equal or greater than zero, it will override the inflicted damage.
 
 
- 	(store_trigger_param_2, ":dealer"),
+ 	# (store_trigger_param_2, ":dealer"),
 
- 	(agent_is_active, ":dealer"),
- 	(agent_is_alive, ":dealer"),
- 	(gt, ":dealer", 0),
- 	(agent_get_troop_id, ":troll_dealer", ":dealer"),
- 	(troop_get_type, ":type_dealer", ":troll_dealer"),
- 	(eq, ":type_dealer", tf_troll),
-	(neq, reg0, "itm_troll_aoe"),
+ 	# (agent_is_active, ":dealer"),
+ 	# (agent_is_alive, ":dealer"),
+ 	# (gt, ":dealer", 0),
+ 	# (agent_get_troop_id, ":troll_dealer", ":dealer"),
+ 	# (troop_get_type, ":type_dealer", ":troll_dealer"),
+ 	# (eq, ":type_dealer", tf_troll),
+	# (neq, reg0, "itm_troll_aoe"),
+    (is_between, reg0, "itm_troll_weapon_long", "itm_troll_aoe"),
  	
 	],[
 
@@ -2154,6 +2153,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
     (agent_get_position, pos3, ":receiver"), #throwback + aoe around the receiver, to have it somewhat directional
     (set_fixed_point_multiplier, 100),
 	(item_get_horse_speed, ":aoe", ":weapon"),
+	(val_div, ":damage", 2), #half damage for aoe hits
 
     (try_for_agents, ":aoe_hit", pos3, ":aoe"),
       (agent_is_active, ":aoe_hit"),
@@ -2247,406 +2247,631 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
     (try_end),
 	
 	(get_player_agent_no, ":player"),
-	(eq, ":receiver", ":player"),
+	(eq, ":receiver", ":player"), #only for player: damaged was halfed above
 	#(display_message, "@player {s5} hit"),
-	(val_div, ":damage", 2),
 	(set_trigger_result, ":damage"),
 
 ]),
 
-# Surrounded Pushback - Step 1
-
-(5, 5, 7, [(gt, "$trolls_in_battle", 0)], 
-	[
-	
- 	(try_for_agents, ":troll"),
-		(agent_is_active, ":troll"),
-		(agent_is_alive, ":troll"),
-		(agent_is_human, ":troll"),
-		(gt, ":troll", 0),
-		(agent_get_troop_id, ":troll_troop_id", ":troll"),
-		(troop_get_type, ":troll_type", ":troll_troop_id"),
-		(eq, ":troll_type", tf_troll),
-		(store_mission_timer_a_msec, ":timer"), 
-		(agent_get_slot, ":cooldown", ":troll", slot_agent_troll_swing_move), #pushback cooldown slot set after troll (re-)spawn
-		(ge, ":timer", ":cooldown"),
-		(call_script, "script_cf_surrounded_pushback", ":troll", 1),
-		#(display_message, "@pushback step 1"),
-	(try_end),
-
-	]),
-
-# Surrounded Pushback - Step 2
-
-(0.1, 0, 0.5, [
-	(gt, "$trolls_in_battle", 0),
-	(assign, ":troll_found", 0),
- 	(try_for_agents, ":troll"),
-		(agent_is_active, ":troll"),
-		(agent_is_alive, ":troll"),
-		(agent_is_human, ":troll"),
-		(gt, ":troll", 0),
-		(eq, ":troll_found", 0),
-		(agent_get_troop_id, ":troll_troop_id", ":troll"),
-		(troop_get_type, ":troll_type", ":troll_troop_id"),
-		(eq, ":troll_type", tf_troll),
-		(agent_slot_eq, ":troll", slot_agent_troll_swing_status, 1),
-		(store_mission_timer_a_msec, ":timer_2"),
-		(agent_get_slot, ":hit_timer", ":troll", slot_agent_troll_swing_move),
-		(ge, ":timer_2", ":hit_timer"),
-		(assign, ":troll_found", 1),
-	(try_end),
-
-	(eq, ":troll_found", 1),
+# InVain: Surround pushback new
+  (4, 1.2, 0, [ 
+  (ge, "$trolls_in_battle",1),
+  (set_fixed_point_multiplier, 100),
+  (assign, ":troll_found", 0),
+  (try_for_range, ":slot", 0, 100),
+    (le, ":troll_found", 2), #not more than 2 trolls strike at a time
+    (troop_get_slot, ":troll", "trp_array_trolls", ":slot"),
+    (neq, ":troll", -1),
+    (agent_is_active, ":troll"),
+    (agent_is_alive, ":troll"),
+    (agent_is_human, ":troll"),
+    (agent_get_troop_id, ":troop_no", ":troll"), #bunch of extra checks just to be sure
+    (troop_get_type, ":race", ":troop_no"),
+    (eq, ":race", tf_troll),
+    (agent_slot_eq, ":troll", slot_agent_troll_status, 1),
+    # (assign, reg77, ":slot"),
+    # (assign, reg78, ":troll"),
+    # (str_store_agent_name, s5, ":troll"),
+    (agent_set_slot, ":troll", slot_agent_troll_status, 2),
+    (agent_set_animation, ":troll", "anim_troll_pushback"), #todo: measure animation length and adjust trigger consequence timer
+    (agent_play_sound, ":troll", "snd_troll_yell"),
+    (val_add, ":troll_found", 1),
+  (try_end),
+  (ge, ":troll_found", 1),
 
 	],[
- 	(try_for_agents, ":troll"),
-		(agent_is_active, ":troll"),
-		(agent_is_alive, ":troll"),
-		(agent_is_human, ":troll"),
-		(gt, ":troll", 0),
-		(agent_get_troop_id, ":troll_troop_id", ":troll"),
-		(troop_get_type, ":troll_type", ":troll_troop_id"),
-		(eq, ":troll_type", tf_troll),
-		(agent_slot_eq, ":troll", slot_agent_troll_swing_status, 1),
-		(call_script, "script_cf_surrounded_pushback", ":troll", 2),
-		#(display_message, "@pushback step 2"),
-	(try_end),
+  (try_for_range, ":slot", 0, 100),
+    (troop_get_slot, ":troll", "trp_array_trolls", ":slot"),
+    (agent_is_active, ":troll"),
+    (agent_is_alive, ":troll"),
+    (agent_is_human, ":troll"),
+    (agent_get_troop_id, ":troop_no", ":troll"), #bunch of extra checks just to be sure
+    (troop_get_type, ":race", ":troop_no"),
+    (eq, ":race", tf_troll),
+    (agent_slot_eq, ":troll", slot_agent_troll_status, 2),
+    (agent_set_slot, ":troll", slot_agent_troll_status, 0),
+    
+    (agent_get_position, pos69, ":troll"), #used for script
+    (call_script, "script_aoe_pushback", 30, 400, ":troll"),
+
+    (try_for_agents, ":troll", pos69, 500), #morale effect
+        (agent_get_team, ":agent_team", ":troll"),
+        (teams_are_enemies, ":agent_team", "$nazgul_team"),
+        (agent_get_slot, ":morale_penalty", ":troll", slot_agent_morale_modifier),
+        (val_sub, ":morale_penalty", 10),
+        (agent_set_slot, ":troll", slot_agent_morale_modifier, ":morale_penalty"),
+    (try_end),
+  (try_end),
 
 	]),
 
 # End Surrounded Pushback
 
-# Troll Charge
-(10, 0, 5, [
+#InVain Troll Charge new
+# troll charges only happen if target agent is within charge range. This should mostly be the case when two formations approach each other.
+
+  (5, 2, 0, [ #animation duration is 2.6s, so we fire trigger consequences at that delay
+  (ge, "$trolls_in_battle",1),
+  #(eq, 1, 0),
+  (set_fixed_point_multiplier, 100),
+  (assign, ":troll_found", 0),
+  #(assign, ":target_found", 0),
+  (try_for_range, ":slot", 0, 100),
+    (lt, ":troll_found", 1), #not more than 1 troll charges at a time
+    (troop_get_slot, ":troll", "trp_array_trolls", ":slot"),
+    (neq, ":troll", -1),
+    (agent_is_active, ":troll"),
+    (agent_is_alive, ":troll"),
+    (agent_is_human, ":troll"),
+    (agent_get_troop_id, ":troop_no", ":troll"), #bunch of extra checks just to be sure
+    (troop_get_type, ":race", ":troop_no"),
+    (eq, ":race", tf_troll),
+    (agent_slot_eq, ":troll", slot_agent_troll_status, 0),
+    (agent_get_position, pos5, ":troll"),
+    # (agent_ai_get_num_cached_enemies, ":num_targets", ":troll"),
+    # (try_for_range, ":cached_enemy_no", 0, ":num_targets"),
+        # (eq, ":target_found", 0),
+        # (agent_ai_get_cached_enemy, ":target", ":troll", ":cached_enemy_no"),
+        # (agent_is_active, ":target"),
+        # (agent_is_alive, ":target"),
+        # (agent_get_position, pos6, ":target"),
+        # (get_distance_between_positions, ":dist", pos5, pos6),
+        # (is_between, ":dist", 900, 1200), #animation's charge range is ~10m
+        # (assign, ":target_found", 1),
+    # (try_end),
+    # (eq, ":target_found", 1),
+    (agent_ai_get_move_target, ":target", ":troll"),
+    (agent_is_active, ":target"),
+    (agent_is_alive, ":target"),
+    (agent_get_position, pos6, ":target"),
+    (get_distance_between_positions, ":dist", pos5, pos6),
+    (is_between, ":dist", 800, 1300), #animation's charge range is ~10m
+    (str_store_agent_name, s5, ":target"),
+    (assign, reg78, ":dist"),
+    (agent_set_scripted_destination, ":troll", pos6),
+    (agent_set_animation, ":troll", "anim_troll_charge", 0),
+    (agent_set_slot, ":troll", slot_agent_troll_status, 3),
+    (agent_play_sound, ":troll", "snd_troll_yell"),
+    (val_add, ":troll_found", 1),
+    (display_message, "@troll charges {s5} at distance {reg78}"),
+  (try_end),
+  (ge, ":troll_found", 1),
+
+	],[ 
+  (try_for_range, ":slot", 0, 100),
+    (troop_get_slot, ":troll_agent", "trp_array_trolls", ":slot"),
+    (agent_is_active, ":troll_agent"),
+    (agent_is_alive, ":troll_agent"),
+    (agent_is_human, ":troll_agent"),
+    (agent_get_troop_id, ":troop_no", ":troll_agent"), #bunch of extra checks just to be sure
+    (troop_get_type, ":race", ":troop_no"),
+    (eq, ":race", tf_troll),
+    (agent_slot_eq, ":troll_agent", slot_agent_troll_status, 3),
+    (agent_set_slot, ":troll_agent", slot_agent_troll_status, 0),
+    (agent_clear_scripted_mode, ":troll_agent"),
+    (agent_force_rethink, ":troll_agent"),
+    
+    (agent_get_position, pos69, ":troll_agent"), #used for script
+    (position_move_z, pos69, 100),
+    (call_script, "script_aoe_pushback", 60, 400, ":troll_agent"),
+    
+    (agent_get_team, ":agent_team", ":troll_agent"),
+    (try_for_agents, ":enemy_agent", pos69, 500), #morale effect
+        (agent_get_team, ":enemy_team", ":enemy_agent"),
+        (teams_are_enemies, ":agent_team", ":enemy_team"),
+        (agent_get_slot, ":morale_penalty", ":enemy_agent", slot_agent_morale_modifier),
+        (val_sub, ":morale_penalty", 10),
+        (agent_set_slot, ":enemy_agent", slot_agent_morale_modifier, ":morale_penalty"),
+    (try_end),
+    (display_message, "@troll charge end"),
+  (try_end),
+
+	]),
+
+#Troll Charge new end
+
+#Troll kicking
+
+  (7, 0, 0, [ 
+  (ge, "$trolls_in_battle",1),
+	],[
+  (set_fixed_point_multiplier, 100),
+  (assign, ":troll_found", 0),
+  (try_for_range, ":slot", 0, 100),
+    (lt, ":troll_found", 2), #not more than 2 trolls kick at a time
+    (troop_get_slot, ":troll", "trp_array_trolls", ":slot"),
+    (neq, ":troll", -1),
+    (agent_is_active, ":troll"),
+    (agent_is_alive, ":troll"),
+    (agent_is_human, ":troll"),
+    (agent_get_troop_id, ":troop_no", ":troll"), #bunch of extra checks just to be sure
+    (troop_get_type, ":race", ":troop_no"),
+    (eq, ":race", tf_troll),
+    (agent_slot_eq, ":troll", slot_agent_troll_status, 0),
+    (agent_get_position, pos5, ":troll"),
+    (agent_ai_get_cached_enemy, ":target", ":troll", 0),
+    (agent_is_active, ":target"),
+    (agent_is_alive, ":target"),
+    (agent_get_position, pos6, ":target"),
+    (get_distance_between_positions, ":dist", pos5, pos6),
+    (lt, ":dist", 200),
+    (neg|position_is_behind_position, pos5, pos6),
+    (store_random_in_range, ":chance", 0, 10), #some randomization
+    (le, ":chance", 5),
+    (agent_set_animation, ":troll", "anim_kick_right_leg"),
+    (copy_position, pos69, pos6),
+    (call_script, "script_aoe_pushback", 20, 150, ":troll"),
+    # (str_store_agent_name, s5, ":target"),
+    # (assign, reg78, ":dist"),
+    # (display_message, "@troll kicking {s5} at distance {reg78}"),
+    (val_add, ":troll_found", 1),
+  (try_end),
+	]),
+
+#Troll kicking end
+
+# # Troll Charge
+# (10, 0, 5, [
 	
 
- 	(gt, "$trolls_in_battle", 0),
+ 	# (gt, "$trolls_in_battle", 0),
 
-	],[
+	# ],[
 
-	(assign, ":troll_charging", 0), 
+	# (assign, ":troll_charging", 0), 
 
- 	(try_for_agents, ":troll"), #Find trolls, apply cooldown timers
-		(agent_is_active, ":troll"),
- 		(agent_is_alive, ":troll"),
- 		(agent_is_human, ":troll"),
- 		(gt, ":troll", 0),
- 		(agent_get_troop_id, ":troll_troop_id", ":troll"),
-		(troop_get_type, ":troll_type", ":troll_troop_id"),
-		(eq, ":troll_type", tf_troll),
-		(agent_get_slot, ":last_charge", ":troll", slot_troll_agent_last_charge),
-	 	(store_mission_timer_a, ":time"),
-		(ge, ":time", 45), #Initial cooldown (InVain)
-	 	(try_begin),
-	 		(eq, ":last_charge", 0),
-	 		(assign, ":cooldown", 0), # @kham: Initial cooldown could probably also be applied here? 
-	 	(else_try),
-	 		(assign, ":cooldown", 30),
-	 	(try_end),
+ 	# (try_for_agents, ":troll"), #Find trolls, apply cooldown timers
+		# (agent_is_active, ":troll"),
+ 		# (agent_is_alive, ":troll"),
+ 		# (agent_is_human, ":troll"),
+ 		# (gt, ":troll", 0),
+ 		# (agent_get_troop_id, ":troll_troop_id", ":troll"),
+		# (troop_get_type, ":troll_type", ":troll_troop_id"),
+		# (eq, ":troll_type", tf_troll),
+		# (agent_get_slot, ":last_charge", ":troll", slot_troll_agent_last_charge),
+	 	# (store_mission_timer_a, ":time"),
+		# (ge, ":time", 45), #Initial cooldown (InVain)
+	 	# (try_begin),
+	 		# (eq, ":last_charge", 0),
+	 		# (assign, ":cooldown", 0), # @kham: Initial cooldown could probably also be applied here? 
+	 	# (else_try),
+	 		# (assign, ":cooldown", 30),
+	 	# (try_end),
 
-		(lt, ":troll_charging", 1), #First troll found? Block try_for_agents loop here
-	 	(val_add, ":troll_charging",1),
+		# (lt, ":troll_charging", 1), #First troll found? Block try_for_agents loop here
+	 	# (val_add, ":troll_charging",1),
  		
- 		(agent_slot_eq, ":troll", slot_troll_agent_charging, 0),
-		(val_add, ":last_charge", ":cooldown"),
-		(gt, ":time", ":last_charge"), #check cooldown timer ( @kham: Why is it done _after_ the loop block?)
-		#(display_message, "@troll charge found troll"),
-	 	(agent_set_speed_modifier, ":troll", 500), #make him sprint
-	 	(agent_set_slot, ":troll", slot_troll_agent_charging, 1),
-	 	(store_mission_timer_a, ":time"),
-	 	(agent_set_slot, ":troll", slot_troll_agent_last_charge, ":time"),
+ 		# (agent_slot_eq, ":troll", slot_troll_agent_charging, 0),
+		# (val_add, ":last_charge", ":cooldown"),
+		# (gt, ":time", ":last_charge"), #check cooldown timer ( @kham: Why is it done _after_ the loop block?)
+		# #(display_message, "@troll charge found troll"),
+	 	# (agent_set_speed_modifier, ":troll", 500), #make him sprint
+	 	# (agent_set_slot, ":troll", slot_troll_agent_charging, 1),
+	 	# (store_mission_timer_a, ":time"),
+	 	# (agent_set_slot, ":troll", slot_troll_agent_last_charge, ":time"),
 
-	 	(agent_get_position, pos15, ":troll"),
+	 	# (agent_get_position, pos15, ":troll"),
 
-        (try_for_agents, ":nearby_agent_no", pos15, 450), #Find nearby agents, assign flyback animation and sound, riderless horses run away
-			#(display_message, "@troll charge initial pushback"),
-	 		(agent_is_active, ":nearby_agent_no"),
-	 		(agent_is_alive, ":nearby_agent_no"),
-	 		(agent_is_human, ":nearby_agent_no"),
-	 		(gt, ":nearby_agent_no", 0),
-	 		(neq, ":nearby_agent_no", ":troll"), #don't hit yourself
+        # (try_for_agents, ":nearby_agent_no", pos15, 450), #Find nearby agents, assign flyback animation and sound, riderless horses run away
+			# #(display_message, "@troll charge initial pushback"),
+	 		# (agent_is_active, ":nearby_agent_no"),
+	 		# (agent_is_alive, ":nearby_agent_no"),
+	 		# (agent_is_human, ":nearby_agent_no"),
+	 		# (gt, ":nearby_agent_no", 0),
+	 		# (neq, ":nearby_agent_no", ":troll"), #don't hit yourself
 	 		
-	 		(agent_get_position, pos16,":nearby_agent_no"), # @kham: What's this, why the double check with different distances?
-			(get_distance_between_positions,":dist",pos15,pos16),
-			(le, ":dist", 400),
+	 		# (agent_get_position, pos16,":nearby_agent_no"), # @kham: What's this, why the double check with different distances?
+			# (get_distance_between_positions,":dist",pos15,pos16),
+			# (le, ":dist", 400),
 
-			(agent_get_troop_id, ":victim_troop_id", ":nearby_agent_no"),
-			(troop_get_type, ":victim_type", ":victim_troop_id"),
-			(agent_get_horse, ":victim_horse", ":nearby_agent_no"),
-			(neq, ":victim_type", tf_troll), #no plowthrough for trolls
-                        (neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
-                        (neg|is_between, ":victim_troop_id", "trp_spider", "trp_dorwinion_sack"),
-                        (neq, ":victim_troop_id", "trp_werewolf"),
-                        (neq, ":victim_troop_id", "trp_multiplayer_profile_troop_male"), # Arsakes: bear shapeshifter troop
+			# (agent_get_troop_id, ":victim_troop_id", ":nearby_agent_no"),
+			# (troop_get_type, ":victim_type", ":victim_troop_id"),
+			# (agent_get_horse, ":victim_horse", ":nearby_agent_no"),
+			# (neq, ":victim_type", tf_troll), #no plowthrough for trolls
+                        # (neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
+                        # (neg|is_between, ":victim_troop_id", "trp_spider", "trp_dorwinion_sack"),
+                        # (neq, ":victim_troop_id", "trp_werewolf"),
+                        # (neq, ":victim_troop_id", "trp_multiplayer_profile_troop_male"), # Arsakes: bear shapeshifter troop
 			
-			(agent_get_animation, ":cur_anim", ":nearby_agent_no"),
-			(this_or_next|neq, ":cur_anim", "anim_strike_fall_back_rise"),
-			(neq, ":cur_anim", "anim_strike_fly_back_rise"),
+			# (agent_get_animation, ":cur_anim", ":nearby_agent_no"),
+			# (this_or_next|neq, ":cur_anim", "anim_strike_fall_back_rise"),
+			# (neq, ":cur_anim", "anim_strike_fly_back_rise"),
 
 			
-			(store_random_in_range, ":flyback_anim", 0, 2),
-			# then, set animation
-			# human (non trolls, non horse) victims
-			(try_begin),
-				(eq, ":flyback_anim", 0),
-		# troll is in front of victim
-				(agent_set_animation, ":nearby_agent_no", "anim_strike_fall_back_rise"), # send them flying back
-			(else_try),
-				(agent_set_animation, ":nearby_agent_no", "anim_strike_fly_back_rise"), # send them flying back
-			(try_end),
+			# (store_random_in_range, ":flyback_anim", 0, 2),
+			# # then, set animation
+			# # human (non trolls, non horse) victims
+			# (try_begin),
+				# (eq, ":flyback_anim", 0),
+		# # troll is in front of victim
+				# (agent_set_animation, ":nearby_agent_no", "anim_strike_fall_back_rise"), # send them flying back
+			# (else_try),
+				# (agent_set_animation, ":nearby_agent_no", "anim_strike_fly_back_rise"), # send them flying back
+			# (try_end),
 			
-			(store_random_in_range, ":rand_sound", 0, 150),
-			(try_begin),
-				(is_between, ":rand_sound", 0, 10),
-				(agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_low_armor_low_damage"),
-			(else_try),
-				(is_between, ":rand_sound", 10, 20),
-				(agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_low_armor_high_damage"),
-			(else_try),
-				(is_between, ":rand_sound", 20, 30),
-				(agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_high_armor_low_damage"),
-			(else_try),
-				(is_between, ":rand_sound", 30, 40),
-				(agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_high_armor_low_damage"),
-			(else_try),
-				(is_between, ":rand_sound", 50, 60),
-				(agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_high_armor_high_damage"),
-			(else_try),
-				(is_between, ":rand_sound", 60, 70),
-				(agent_play_sound, ":nearby_agent_no", "snd_blunt_hit"),
-			(try_end),
+			# (store_random_in_range, ":rand_sound", 0, 150),
+			# (try_begin),
+				# (is_between, ":rand_sound", 0, 10),
+				# (agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_low_armor_low_damage"),
+			# (else_try),
+				# (is_between, ":rand_sound", 10, 20),
+				# (agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_low_armor_high_damage"),
+			# (else_try),
+				# (is_between, ":rand_sound", 20, 30),
+				# (agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_high_armor_low_damage"),
+			# (else_try),
+				# (is_between, ":rand_sound", 30, 40),
+				# (agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_high_armor_low_damage"),
+			# (else_try),
+				# (is_between, ":rand_sound", 50, 60),
+				# (agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_high_armor_high_damage"),
+			# (else_try),
+				# (is_between, ":rand_sound", 60, 70),
+				# (agent_play_sound, ":nearby_agent_no", "snd_blunt_hit"),
+			# (try_end),
 
-			(try_begin),
-				(gt, ":victim_horse", 1),
-				(agent_start_running_away, ":victim_horse"),
-				(agent_stop_running_away, ":victim_horse"),
-			(try_end),
-			(set_fixed_point_multiplier, 1),
-			(store_random_in_range,":random_timings",1,5),
-			(agent_set_animation_progress, ":nearby_agent_no", ":random_timings"), # differentiate timings a bit
-		(try_end),
+			# (try_begin),
+				# (gt, ":victim_horse", 1),
+				# (agent_start_running_away, ":victim_horse"),
+				# (agent_stop_running_away, ":victim_horse"),
+			# (try_end),
+			# (set_fixed_point_multiplier, 1),
+			# (store_random_in_range,":random_timings",1,5),
+			# (agent_set_animation_progress, ":nearby_agent_no", ":random_timings"), # differentiate timings a bit
+		# (try_end),
 		
-		(agent_play_sound, ":troll", "snd_troll_grunt_long"),
-	 	(try_begin), 
-			(troop_has_item_equipped,":troll_troop_id","itm_troll_shield_a"),
-	 		(agent_refill_wielded_shield_hit_points, ":troll"),
-	 		# (agent_unequip_item, ":troll", "itm_troll_shield_a"),
-	 		# (agent_equip_item, ":troll", "itm_troll_shield_a"), #Moves shield to back #InVain: let's try another way that preserves item's imod
-			(agent_get_wielded_item, ":troll_weapon", ":troll", 0),
-			(agent_set_wielded_item, ":troll", -1),
-			(agent_set_wielded_item, ":troll", ":troll_weapon"),
-	 	(try_end),
+		# (agent_play_sound, ":troll", "snd_troll_grunt_long"),
+	 	# (try_begin), 
+			# (troop_has_item_equipped,":troll_troop_id","itm_troll_shield_a"),
+	 		# (agent_refill_wielded_shield_hit_points, ":troll"),
+	 		# # (agent_unequip_item, ":troll", "itm_troll_shield_a"),
+	 		# # (agent_equip_item, ":troll", "itm_troll_shield_a"), #Moves shield to back #InVain: let's try another way that preserves item's imod
+			# (agent_get_wielded_item, ":troll_weapon", ":troll", 0),
+			# (agent_set_wielded_item, ":troll", -1),
+			# (agent_set_wielded_item, ":troll", ":troll_weapon"),
+	 	# (try_end),
 		
-		(store_random_in_range, ":rand_charge", 0, 100),
-		(try_begin),
-			(lt, ":rand_charge", 50),
-	 		(agent_set_animation, ":troll", "anim_troll_roar", 0),
-	 	(else_try),
-	 		(agent_set_animation, ":troll", "anim_troll_charge", 0),
-	 	(try_end),
-	 	#(display_message, "@Troll is Charging!"),
-	(try_end),
+		# (store_random_in_range, ":rand_charge", 0, 100),
+		# (try_begin),
+			# (lt, ":rand_charge", 50),
+	 		# (agent_set_animation, ":troll", "anim_troll_roar", 0),
+	 	# (else_try),
+	 		# (agent_set_animation, ":troll", "anim_troll_charge", 0),
+	 	# (try_end),
+	 	# #(display_message, "@Troll is Charging!"),
+	# (try_end),
 
-]),
+# ]),
 
 
-# Troll Charge Deactivate
-(5, 0, 1, [
+# # Troll Charge Deactivate
+# (5, 0, 1, [
 
-	(gt, "$trolls_in_battle"), #  @kham: Missing argument? Apparently it works anyway?
-	],[
+	# (gt, "$trolls_in_battle", 0), 
+	# ],[
 
-	(try_for_agents, ":troll"),
-		(agent_is_alive, ":troll"),
-		(agent_is_active, ":troll"),
-		(agent_is_human, ":troll"),
-		(gt, ":troll", 0),
-		(store_mission_timer_a, ":time"),
-		(agent_get_slot, ":knocked_down", ":troll", slot_agent_knocked_down),
-		(agent_get_slot, ":knocked_down_time", ":troll", slot_agent_last_knockdown_time),
+	# (try_for_agents, ":troll"),
+		# (agent_is_alive, ":troll"),
+		# (agent_is_active, ":troll"),
+		# (agent_is_human, ":troll"),
+		# (gt, ":troll", 0),
+		# (store_mission_timer_a, ":time"),
+		# (agent_get_slot, ":knocked_down", ":troll", slot_agent_knocked_down),
+		# (agent_get_slot, ":knocked_down_time", ":troll", slot_agent_last_knockdown_time),
 
-		(try_begin), # @kham: This is actually not only for troll charge deactivation, right? It clears the slot for all previously knocked down agents?
-			(eq, ":knocked_down", 1),
-			(ge, ":time", ":knocked_down_time"),
-			(agent_set_slot, ":troll", slot_agent_knocked_down, 0),
-		(try_end),
+		# (try_begin), # @kham: This is actually not only for troll charge deactivation, right? It clears the slot for all previously knocked down agents?
+			# (eq, ":knocked_down", 1),
+			# (ge, ":time", ":knocked_down_time"),
+			# (agent_set_slot, ":troll", slot_agent_knocked_down, 0),
+		# (try_end),
 		
-		(agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
-		(troop_get_type, ":troll_type", ":troll_troop_id"),
-		(eq, ":troll_type", tf_troll),
-		(agent_slot_eq, ":troll", slot_troll_agent_charging, 1),
-		#(display_message, "@troll charge deactivate found charging troll"),
-		(agent_get_slot, ":time_last_charge", ":troll", slot_troll_agent_last_charge), # @kham: Check if the charge has lasted for at least 10 seconds?
-		(store_mission_timer_a, ":time"),
-		(val_add, ":time_last_charge", 10),
-		(gt, ":time", ":time_last_charge"),
-		(agent_set_slot, ":troll", slot_troll_agent_charging, 0),
-		(agent_set_speed_modifier, ":troll", 100),
-		(assign, reg65, ":time"),
-		(assign, reg66, ":time_last_charge"),
-		#(display_message, "@Charge turned off -- Time: {reg65}, Last Charge: {reg66}"),
-		(try_begin),
-			(agent_get_troop_id, ":troop_id", ":troll"),
-			(troop_has_item_equipped,":troop_id","itm_troll_shield_a"),
-			# (this_or_next|eq, ":troop_id", "trp_mordor_olog_hai"),
-			# (eq, ":troop_id", "trp_isen_armored_troll"),
- 			(agent_set_wielded_item, ":troll", "itm_troll_shield_a"),
- 			(agent_refill_wielded_shield_hit_points, ":troll"), # @kham: Does this serve any special purpose, or is it just to make troll shields sturdier?
- 		(try_end),
-	(try_end), 
+		# (agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
+		# (troop_get_type, ":troll_type", ":troll_troop_id"),
+		# (eq, ":troll_type", tf_troll),
+		# (agent_slot_eq, ":troll", slot_troll_agent_charging, 1),
+		# #(display_message, "@troll charge deactivate found charging troll"),
+		# (agent_get_slot, ":time_last_charge", ":troll", slot_troll_agent_last_charge), # @kham: Check if the charge has lasted for at least 10 seconds?
+		# (store_mission_timer_a, ":time"),
+		# (val_add, ":time_last_charge", 10),
+		# (gt, ":time", ":time_last_charge"),
+		# (agent_set_slot, ":troll", slot_troll_agent_charging, 0),
+		# (agent_set_speed_modifier, ":troll", 100),
+		# (assign, reg65, ":time"),
+		# (assign, reg66, ":time_last_charge"),
+		# #(display_message, "@Charge turned off -- Time: {reg65}, Last Charge: {reg66}"),
+		# (try_begin),
+			# (agent_get_troop_id, ":troop_id", ":troll"),
+			# (troop_has_item_equipped,":troop_id","itm_troll_shield_a"),
+			# # (this_or_next|eq, ":troop_id", "trp_mordor_olog_hai"),
+			# # (eq, ":troop_id", "trp_isen_armored_troll"),
+ 			# (agent_set_wielded_item, ":troll", "itm_troll_shield_a"),
+ 			# (agent_refill_wielded_shield_hit_points, ":troll"), # @kham: Does this serve any special purpose, or is it just to make troll shields sturdier?
+ 		# (try_end),
+	# (try_end), 
 		
-]),
+# ]),
 
-# Troll Charge Mode Pushbacks
+# # Troll Charge Mode Pushbacks
 
-(0.2,0.5,2, [(gt, "$trolls_in_battle", 0)],[ # @kham: Rearm timing intended? A charge lasts 10 seconds, so there will be at most 4 pushbacks per charge?
+# (0.2,0.5,2, [(gt, "$trolls_in_battle", 0)],[ # @kham: Rearm timing intended? A charge lasts 10 seconds, so there will be at most 4 pushbacks per charge?
 
-	(try_for_agents,":troll"), # @kham: This is actually the old "Troll doesn't listen to orders" code, right?
-		#(display_message, "@troll charge MV"),
-		(agent_is_alive,":troll"),
-		(agent_is_human,":troll"),
-		(agent_is_active, ":troll"),
-		(agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
-		(troop_get_type, ":troll_type", ":troll_troop_id"),
-		(eq, ":troll_type", tf_troll),
+	# (try_for_agents,":troll"), # @kham: This is actually the old "Troll doesn't listen to orders" code, right?
+		# #(display_message, "@troll charge MV"),
+		# (agent_is_alive,":troll"),
+		# (agent_is_human,":troll"),
+		# (agent_is_active, ":troll"),
+		# (agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
+		# (troop_get_type, ":troll_type", ":troll_troop_id"),
+		# (eq, ":troll_type", tf_troll),
 
-		(agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":troll"),
-        (gt, ":num_nearby_agents", 0),
-        #Trolls charging - begin
+		# (agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":troll"),
+        # (gt, ":num_nearby_agents", 0),
+        # #Trolls charging - begin
 
-        #(agent_get_team, ":troll_team", ":troll"),
-        (agent_get_position, pos67, ":troll"),
+        # #(agent_get_team, ":troll_team", ":troll"),
+        # (agent_get_position, pos67, ":troll"),
 
-        #get the closest noncav enemy
-        (assign, ":min_dist", 1000000),
-        (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
-        	(agent_ai_get_cached_enemy, ":enemy_agent", ":troll", ":nearby_agent_no"),
-            (agent_is_alive, ":enemy_agent"),
-            (agent_is_human, ":enemy_agent"),
-            (agent_is_active, ":enemy_agent"),
-            (agent_get_class, ":enemy_class_no", ":enemy_agent"),
-            (neq, ":enemy_class_no", grc_cavalry),
-            (agent_get_position, pos68, ":enemy_agent"),
-            (get_distance_between_positions, ":dist", pos68, pos67),
-            (gt, ":min_dist", ":dist"),
-            (assign, ":min_dist", ":dist"),
-            (copy_position, pos70, pos68), #pos70 holds the nearest enemy position
-        (try_end),
+        # #get the closest noncav enemy
+        # (assign, ":min_dist", 1000000),
+        # (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
+        	# (agent_ai_get_cached_enemy, ":enemy_agent", ":troll", ":nearby_agent_no"),
+            # (agent_is_alive, ":enemy_agent"),
+            # (agent_is_human, ":enemy_agent"),
+            # (agent_is_active, ":enemy_agent"),
+            # (agent_get_class, ":enemy_class_no", ":enemy_agent"),
+            # (neq, ":enemy_class_no", grc_cavalry),
+            # (agent_get_position, pos68, ":enemy_agent"),
+            # (get_distance_between_positions, ":dist", pos68, pos67),
+            # (gt, ":min_dist", ":dist"),
+            # (assign, ":min_dist", ":dist"),
+            # (copy_position, pos70, pos68), #pos70 holds the nearest enemy position
+        # (try_end),
     
-      # (assign, reg0, ":min_dist"),
-      # (assign, reg1, ":troll"),
-      # (display_message, "@Debug: Troll {reg1} distance to enemy: {reg0}."),
+      # # (assign, reg0, ":min_dist"),
+      # # (assign, reg1, ":troll"),
+      # # (display_message, "@Debug: Troll {reg1} distance to enemy: {reg0}."),
         
-        (try_begin),
-          (this_or_next|eq, ":min_dist", 1000000),
-          (lt, ":min_dist", 500),
-          (agent_clear_scripted_mode, ":troll"), # leave the troll on its own if close enough to the enemy
-        (else_try),
-          (agent_set_scripted_destination, ":troll", pos70, 1), # head for the nearest enemy
-        (try_end),
-        #Trolls charging - end
-    (try_end),
+        # (try_begin),
+          # (this_or_next|eq, ":min_dist", 1000000),
+          # (lt, ":min_dist", 500),
+          # (agent_clear_scripted_mode, ":troll"), # leave the troll on its own if close enough to the enemy
+        # (else_try),
+          # (agent_set_scripted_destination, ":troll", pos70, 1), # head for the nearest enemy
+        # (try_end),
+        # #Trolls charging - end
+    # (try_end),
 
 
-	(try_for_agents, ":troll"),
-		(agent_is_active, ":troll"),
- 		(agent_is_alive, ":troll"),
- 		(agent_is_human, ":troll"),
- 		(gt, ":troll", 0),
- 		(agent_get_troop_id, ":troll_troop_id", ":troll"),
-		(troop_get_type, ":troll_type", ":troll_troop_id"),
-		(eq, ":troll_type", tf_troll),
-		(agent_slot_eq, ":troll", slot_troll_agent_charging, 1),
-		#(display_message, "@troll charge pushback found charging troll"),
- 		(agent_get_position, pos19, ":troll"),
+	# (try_for_agents, ":troll"),
+		# (agent_is_active, ":troll"),
+ 		# (agent_is_alive, ":troll"),
+ 		# (agent_is_human, ":troll"),
+ 		# (gt, ":troll", 0),
+ 		# (agent_get_troop_id, ":troll_troop_id", ":troll"),
+		# (troop_get_type, ":troll_type", ":troll_troop_id"),
+		# (eq, ":troll_type", tf_troll),
+		# (agent_slot_eq, ":troll", slot_troll_agent_charging, 1),
+		# #(display_message, "@troll charge pushback found charging troll"),
+ 		# (agent_get_position, pos19, ":troll"),
  		
- 		(agent_ai_get_num_cached_enemies, ":nearby_enemies", ":troll"),
-        (gt, ":nearby_enemies", 0),
+ 		# (agent_ai_get_num_cached_enemies, ":nearby_enemies", ":troll"),
+        # (gt, ":nearby_enemies", 0),
 
-        (try_for_range, ":nearby_agent_no", 0, ":nearby_enemies"), # @kham: Does this actually work without an additional agent_ai_get_cached_enemy check? 
-			#(display_message, "@troll charge pushback find victims"),
-			(agent_is_active, ":nearby_agent_no"),
-	 		(agent_is_alive, ":nearby_agent_no"),
-	 		(agent_is_human, ":nearby_agent_no"),
-	 		(gt, ":nearby_agent_no", 0),
-	 		(neq, ":nearby_agent_no", ":troll"), #don't hit yourself
+        # (try_for_range, ":nearby_agent_no", 0, ":nearby_enemies"), # @kham: Does this actually work without an additional agent_ai_get_cached_enemy check? 
+			# #(display_message, "@troll charge pushback find victims"),
+			# (agent_is_active, ":nearby_agent_no"),
+	 		# (agent_is_alive, ":nearby_agent_no"),
+	 		# (agent_is_human, ":nearby_agent_no"),
+	 		# (gt, ":nearby_agent_no", 0),
+	 		# (neq, ":nearby_agent_no", ":troll"), #don't hit yourself
 	 		
-	 		(agent_get_position, pos9,":nearby_agent_no"),
-			(get_distance_between_positions,":dist",pos19,pos9),
-			(le, ":dist", 400), #only affect agents closer than 4m
+	 		# (agent_get_position, pos9,":nearby_agent_no"),
+			# (get_distance_between_positions,":dist",pos19,pos9),
+			# (le, ":dist", 400), #only affect agents closer than 4m
 
-			(agent_get_troop_id, ":victim_troop_id", ":nearby_agent_no"),
-			(troop_get_type, ":victim_type", ":victim_troop_id"),
-			(agent_get_horse, ":victim_horse", ":nearby_agent_no"),
-			(neq, ":victim_type", tf_troll), #no plowthrough for trolls
-                        (neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
-                        (neg|is_between, ":victim_troop_id", "trp_spider", "trp_dorwinion_sack"),
-                        (neq, ":victim_troop_id", "trp_werewolf"),
-                        (neq, ":victim_troop_id", "trp_multiplayer_profile_troop_male"), # Arsakes: bear shapeshifter troop
+			# (agent_get_troop_id, ":victim_troop_id", ":nearby_agent_no"),
+			# (troop_get_type, ":victim_type", ":victim_troop_id"),
+			# (agent_get_horse, ":victim_horse", ":nearby_agent_no"),
+			# (neq, ":victim_type", tf_troll), #no plowthrough for trolls
+                        # (neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
+                        # (neg|is_between, ":victim_troop_id", "trp_spider", "trp_dorwinion_sack"),
+                        # (neq, ":victim_troop_id", "trp_werewolf"),
+                        # (neq, ":victim_troop_id", "trp_multiplayer_profile_troop_male"), # Arsakes: bear shapeshifter troop
 					
-			(agent_get_animation, ":cur_anim", ":nearby_agent_no"),
-			(this_or_next|neq, ":cur_anim", "anim_strike_fall_back_rise"),
-			(neq, ":cur_anim", "anim_strike_fly_back_rise"),
+			# (agent_get_animation, ":cur_anim", ":nearby_agent_no"),
+			# (this_or_next|neq, ":cur_anim", "anim_strike_fall_back_rise"),
+			# (neq, ":cur_anim", "anim_strike_fly_back_rise"),
 
-			(assign, ":continue_ko", 0),
-			(store_mission_timer_a, ":timer"),
-			(try_begin),
-				(agent_slot_eq, ":nearby_agent_no", slot_agent_knocked_down, 0),
-				(assign, ":continue_ko", 1),
-				(agent_set_slot, ":nearby_agent_no", slot_agent_knocked_down, 1),
-				(val_add, ":timer", 2), #2 seconds after Knock Down
-				(agent_set_slot, ":nearby_agent_no", slot_agent_last_knockdown_time, ":timer"),
-			(try_end),
+			# (assign, ":continue_ko", 0),
+			# (store_mission_timer_a, ":timer"),
+			# (try_begin),
+				# (agent_slot_eq, ":nearby_agent_no", slot_agent_knocked_down, 0),
+				# (assign, ":continue_ko", 1),
+				# (agent_set_slot, ":nearby_agent_no", slot_agent_knocked_down, 1),
+				# (val_add, ":timer", 2), #2 seconds after Knock Down
+				# (agent_set_slot, ":nearby_agent_no", slot_agent_last_knockdown_time, ":timer"),
+			# (try_end),
 
-			(eq, ":continue_ko", 1),
+			# (eq, ":continue_ko", 1),
 			
-			(store_random_in_range, ":flyback_anim", 0, 2),
-			# then, set animation
-			# human (non trolls, non horse) victims
-			(try_begin),
-				(eq, ":flyback_anim", 0),
-		# troll is in front of victim
-				(agent_set_animation, ":nearby_agent_no", "anim_strike_fall_back_rise"), # send them flying back
-			(else_try),
-				(agent_set_animation, ":nearby_agent_no", "anim_strike_fly_back_rise"), # send them flying back
-			(try_end),
+			# (store_random_in_range, ":flyback_anim", 0, 2),
+			# # then, set animation
+			# # human (non trolls, non horse) victims
+			# (try_begin),
+				# (eq, ":flyback_anim", 0),
+		# # troll is in front of victim
+				# (agent_set_animation, ":nearby_agent_no", "anim_strike_fall_back_rise"), # send them flying back
+			# (else_try),
+				# (agent_set_animation, ":nearby_agent_no", "anim_strike_fly_back_rise"), # send them flying back
+			# (try_end),
 
-			(agent_play_sound, ":troll", "snd_troll_yell"),
+			# (agent_play_sound, ":troll", "snd_troll_yell"),
 			
-			(store_random_in_range, ":rand_sound", 0, 150),
-			(try_begin),
-				(is_between, ":rand_sound", 0, 10),
-				(agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_low_armor_low_damage"),
-			(else_try),
-				(is_between, ":rand_sound", 10, 20),
-				(agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_low_armor_high_damage"),
-			(else_try),
-				(is_between, ":rand_sound", 20, 30),
-				(agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_high_armor_low_damage"),
-			(else_try),
-				(is_between, ":rand_sound", 30, 40),
-				(agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_high_armor_low_damage"),
-			(else_try),
-				(is_between, ":rand_sound", 50, 60),
-				(agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_high_armor_high_damage"),
-			(else_try),
-				(is_between, ":rand_sound", 60, 70),
-				(agent_play_sound, ":nearby_agent_no", "snd_blunt_hit"),
-			(try_end),
+			# (store_random_in_range, ":rand_sound", 0, 150),
+			# (try_begin),
+				# (is_between, ":rand_sound", 0, 10),
+				# (agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_low_armor_low_damage"),
+			# (else_try),
+				# (is_between, ":rand_sound", 10, 20),
+				# (agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_low_armor_high_damage"),
+			# (else_try),
+				# (is_between, ":rand_sound", 20, 30),
+				# (agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_high_armor_low_damage"),
+			# (else_try),
+				# (is_between, ":rand_sound", 30, 40),
+				# (agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_high_armor_low_damage"),
+			# (else_try),
+				# (is_between, ":rand_sound", 50, 60),
+				# (agent_play_sound, ":nearby_agent_no", "snd_wooden_hit_high_armor_high_damage"),
+			# (else_try),
+				# (is_between, ":rand_sound", 60, 70),
+				# (agent_play_sound, ":nearby_agent_no", "snd_blunt_hit"),
+			# (try_end),
 
-			(try_begin),
-				(gt, ":victim_horse", 1),
-				(agent_start_running_away, ":victim_horse"),
-				(agent_stop_running_away, ":victim_horse"),
-			(try_end),
-			(set_fixed_point_multiplier, 1),
-			(store_random_in_range,":random_timings",1,5),
-			(agent_set_animation_progress, ":nearby_agent_no", ":random_timings"), # differentiate timings a bit
-		(try_end),
-	(try_end),
+			# (try_begin),
+				# (gt, ":victim_horse", 1),
+				# (agent_start_running_away, ":victim_horse"),
+				# (agent_stop_running_away, ":victim_horse"),
+			# (try_end),
+			# (set_fixed_point_multiplier, 1),
+			# (store_random_in_range,":random_timings",1,5),
+			# (agent_set_animation_progress, ":nearby_agent_no", ":random_timings"), # differentiate timings a bit            
+			# (agent_deliver_damage_to_agent, ":troll", ":nearby_agent_no", -1, "itm_troll_aoe"),
+		# (try_end),
+	# (try_end),
 
-]),
+
+# troll charging - remove this trigger
+# (1,0,ti_once, [(gt, "$trolls_in_battle", 0)], [
+	
+	# (try_for_agents,":troll"),
+		# (agent_is_alive,":troll"),
+		# (agent_is_human,":troll"),
+		# (agent_is_active, ":troll"),
+		# (agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
+		# (troop_get_type, ":troll_type", ":troll_troop_id"),
+		# (eq, ":troll_type", tf_troll),
+
+		# (agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":troll"),
+        # (gt, ":num_nearby_agents", 0),
+        # #Trolls charging - begin
+
+        # #(agent_get_team, ":troll_team", ":troll"),
+        # (agent_get_position, pos67, ":troll"),
+
+        # #get the closest noncav enemy
+        # (assign, ":min_dist", 1000000),
+        # (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
+        	# (agent_ai_get_cached_enemy, ":enemy_agent", ":troll", ":nearby_agent_no"),
+            # (agent_is_alive, ":enemy_agent"),
+            # (agent_is_human, ":enemy_agent"),
+            # (agent_is_active, ":enemy_agent"),
+            # (agent_get_class, ":enemy_class_no", ":enemy_agent"),
+            # (neq, ":enemy_class_no", grc_cavalry),
+            # (agent_get_position, pos68, ":enemy_agent"),
+            # (get_distance_between_positions, ":dist", pos68, pos67),
+            # (gt, ":min_dist", ":dist"),
+            # (assign, ":min_dist", ":dist"),
+            # (copy_position, pos69, pos68), #pos69 holds the nearest enemy position
+        # (try_end),
+    
+      # # (assign, reg0, ":min_dist"),
+      # # (assign, reg1, ":troll"),
+      # # (display_message, "@Debug: Troll {reg1} distance to enemy: {reg0}."),
+        
+        # (try_begin),
+          # (this_or_next|eq, ":min_dist", 1000000),
+          # (lt, ":min_dist", 500),
+          # (agent_clear_scripted_mode, ":troll"), # leave the troll on its own if close enough to the enemy
+        # (else_try),
+          # (agent_set_scripted_destination, ":troll", pos69, 1), # head for the nearest enemy
+        # (try_end),
+        # #Trolls charging - end
+    # (try_end),
+  # ]),
+
+# Surrounded Pushback - Step 1
+
+# (5, 5, 7, [(gt, "$trolls_in_battle", 0)], 
+	# [
+	
+ 	# (try_for_agents, ":troll"),
+		# (agent_is_active, ":troll"),
+		# (agent_is_alive, ":troll"),
+		# (agent_is_human, ":troll"),
+		# (gt, ":troll", 0),
+		# (agent_get_troop_id, ":troll_troop_id", ":troll"),
+		# (troop_get_type, ":troll_type", ":troll_troop_id"),
+		# (eq, ":troll_type", tf_troll),
+		# (store_mission_timer_a_msec, ":timer"), 
+		# (agent_get_slot, ":cooldown", ":troll", slot_agent_troll_uncontrollable), #pushback cooldown slot set after troll (re-)spawn
+		# (ge, ":timer", ":cooldown"),
+		# (call_script, "script_cf_surrounded_pushback", ":troll", 1),
+		# #(display_message, "@pushback step 1"),
+	# (try_end),
+
+	# ]),
+
+# # Surrounded Pushback - Step 2
+
+# (0.1, 0, 0.5, [
+	# (gt, "$trolls_in_battle", 0),
+	# (assign, ":troll_found", 0),
+ 	# (try_for_agents, ":troll"),
+		# (agent_is_active, ":troll"),
+		# (agent_is_alive, ":troll"),
+		# (agent_is_human, ":troll"),
+		# (gt, ":troll", 0),
+		# (eq, ":troll_found", 0),
+		# (agent_get_troop_id, ":troll_troop_id", ":troll"),
+		# (troop_get_type, ":troll_type", ":troll_troop_id"),
+		# (eq, ":troll_type", tf_troll),
+		# (agent_slot_eq, ":troll", slot_agent_troll_status, 1),
+		# (store_mission_timer_a_msec, ":timer_2"),
+		# (agent_get_slot, ":hit_timer", ":troll", slot_agent_troll_uncontrollable),
+		# (ge, ":timer_2", ":hit_timer"),
+		# (assign, ":troll_found", 1),
+	# (try_end),
+
+	# (eq, ":troll_found", 1),
+
+	# ],[
+ 	# (try_for_agents, ":troll"),
+		# (agent_is_active, ":troll"),
+		# (agent_is_alive, ":troll"),
+		# (agent_is_human, ":troll"),
+		# (gt, ":troll", 0),
+		# (agent_get_troop_id, ":troll_troop_id", ":troll"),
+		# (troop_get_type, ":troll_type", ":troll_troop_id"),
+		# (eq, ":troll_type", tf_troll),
+		# (agent_slot_eq, ":troll", slot_agent_troll_status, 1),
+		# (call_script, "script_cf_surrounded_pushback", ":troll", 2),
+		# #(display_message, "@pushback step 2"),
+	# (try_end),
+
+	# ]),
+
+# ]),
 
 ] or [])
 
@@ -2654,538 +2879,538 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
 # mtarini: troll fights by scripts
 #MV: inserted troll "charging" (going ahead not following orders)
-custom_troll_hitting = ((is_a_wb_mt==1) and ( 
+# custom_troll_hitting = ((is_a_wb_mt==1) and ( 
 
-0.3,0,0, [(gt,"$trolls_in_battle",0)],[
-	(try_for_agents,":troll"),
-		(agent_is_alive,":troll"),
-		(agent_is_human,":troll"),
-		(agent_is_active, ":troll"),
-		(agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
-		(troop_get_type, ":troll_type", ":troll_troop_id"),
-		(eq, ":troll_type", tf_troll),
+# 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
+	# (try_for_agents,":troll"),
+		# (agent_is_alive,":troll"),
+		# (agent_is_human,":troll"),
+		# (agent_is_active, ":troll"),
+		# (agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
+		# (troop_get_type, ":troll_type", ":troll_troop_id"),
+		# (eq, ":troll_type", tf_troll),
 
-		(agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":troll"),
-        (gt, ":num_nearby_agents", 0),
-        #Trolls charging - begin
+		# (agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":troll"),
+        # (gt, ":num_nearby_agents", 0),
+        # #Trolls charging - begin
 
-        #(agent_get_team, ":troll_team", ":troll"),
-        (agent_get_position, pos1, ":troll"),
+        # #(agent_get_team, ":troll_team", ":troll"),
+        # (agent_get_position, pos1, ":troll"),
 
-        #get the closest noncav enemy
-        (assign, ":min_dist", 1000000),
-        (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
-        	(agent_ai_get_cached_enemy, ":enemy_agent", ":troll", ":nearby_agent_no"),
-            (agent_is_alive, ":enemy_agent"),
-            (agent_is_human, ":enemy_agent"),
-            (agent_is_active, ":enemy_agent"),
-            (agent_get_class, ":enemy_class_no", ":enemy_agent"),
-            (neq, ":enemy_class_no", grc_cavalry),
-            (agent_get_position, pos9, ":enemy_agent"),
-            (get_distance_between_positions, ":dist", pos9, pos1),
-            (gt, ":min_dist", ":dist"),
-            (assign, ":min_dist", ":dist"),
-            (copy_position, pos2, pos9), #pos2 holds the nearest enemy position
-        (try_end),
+        # #get the closest noncav enemy
+        # (assign, ":min_dist", 1000000),
+        # (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
+        	# (agent_ai_get_cached_enemy, ":enemy_agent", ":troll", ":nearby_agent_no"),
+            # (agent_is_alive, ":enemy_agent"),
+            # (agent_is_human, ":enemy_agent"),
+            # (agent_is_active, ":enemy_agent"),
+            # (agent_get_class, ":enemy_class_no", ":enemy_agent"),
+            # (neq, ":enemy_class_no", grc_cavalry),
+            # (agent_get_position, pos9, ":enemy_agent"),
+            # (get_distance_between_positions, ":dist", pos9, pos1),
+            # (gt, ":min_dist", ":dist"),
+            # (assign, ":min_dist", ":dist"),
+            # (copy_position, pos2, pos9), #pos2 holds the nearest enemy position
+        # (try_end),
     
-      # (assign, reg0, ":min_dist"),
-      # (assign, reg1, ":troll"),
-      # (display_message, "@Debug: Troll {reg1} distance to enemy: {reg0}."),
+      # # (assign, reg0, ":min_dist"),
+      # # (assign, reg1, ":troll"),
+      # # (display_message, "@Debug: Troll {reg1} distance to enemy: {reg0}."),
         
-        (try_begin),
-          (this_or_next|eq, ":min_dist", 1000000),
-          (lt, ":min_dist", 500),
-          (agent_clear_scripted_mode, ":troll"), # leave the troll on its own if close enough to the enemy
-        (else_try),
-          (agent_set_scripted_destination, ":troll", pos2, 1), # head for the nearest enemy
-        (try_end),
-        #Trolls charging - end
+        # (try_begin),
+          # (this_or_next|eq, ":min_dist", 1000000),
+          # (lt, ":min_dist", 500),
+          # (agent_clear_scripted_mode, ":troll"), # leave the troll on its own if close enough to the enemy
+        # (else_try),
+          # (agent_set_scripted_destination, ":troll", pos2, 1), # head for the nearest enemy
+        # (try_end),
+        # #Trolls charging - end
 		
-		# Troll Swing Status Check
-		(agent_get_slot,":status",":troll",slot_agent_troll_swing_status),
-		(try_begin),
-			(neg|eq,":status",0),
-			(store_add,":status",":status",1),
-		(else_try),
-			# status is 0: *can* decide to start a swing
-			(get_player_agent_no, ":player_agent"),
-			(try_begin),
-				(eq, ":player_agent", ":troll"),
-			#	(display_message, "@Debug: Player controlled troll."),
-				# player controlled trolls swing when button pressed
-				(try_begin),
-					(key_is_down, key_left_mouse_button),
-					(assign,":status",1), 
-				#	(display_message, "@Debug: Troll attack key pressed."),
-				(try_end),
-			(else_try),
-				# AI attacks 10% of times, if at least a victim is in range - changed to 20% (kham)
-				(store_random_in_range,":random",1,101),
-				(le,":random",20), 
-				(agent_get_position, pos1,":troll"),
-				(try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
-					(eq,":status",0),
-					(agent_ai_get_cached_enemy, ":victim", ":troll", ":nearby_agent_no"),
-					(agent_is_human,":victim"),
-					(agent_is_alive, ":victim"),
-					(agent_is_active, ":victim"),
-					(agent_get_position,pos2,":victim"),
-					(get_distance_between_positions,":dist",pos1,pos2),
-					(store_random_in_range, ":random_swing", 0,61), 
-					(val_sub, ":dist", ":random_swing"), # swing earlier than in range (sometimes)
-					(lt,":dist",300), # 200+weapon size/2
-					(neg|position_is_behind_position,pos2,pos1),
-					(assign,":status",1),
-				(try_end),
-			(try_end),
-		(try_end),
+		# # Troll Swing Status Check
+		# (agent_get_slot,":status",":troll",slot_agent_troll_status),
+		# (try_begin),
+			# (neg|eq,":status",0),
+			# (store_add,":status",":status",1),
+		# (else_try),
+			# # status is 0: *can* decide to start a swing
+			# (get_player_agent_no, ":player_agent"),
+			# (try_begin),
+				# (eq, ":player_agent", ":troll"),
+			# #	(display_message, "@Debug: Player controlled troll."),
+				# # player controlled trolls swing when button pressed
+				# (try_begin),
+					# (key_is_down, key_left_mouse_button),
+					# (assign,":status",1), 
+				# #	(display_message, "@Debug: Troll attack key pressed."),
+				# (try_end),
+			# (else_try),
+				# # AI attacks 10% of times, if at least a victim is in range - changed to 20% (kham)
+				# (store_random_in_range,":random",1,101),
+				# (le,":random",20), 
+				# (agent_get_position, pos1,":troll"),
+				# (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
+					# (eq,":status",0),
+					# (agent_ai_get_cached_enemy, ":victim", ":troll", ":nearby_agent_no"),
+					# (agent_is_human,":victim"),
+					# (agent_is_alive, ":victim"),
+					# (agent_is_active, ":victim"),
+					# (agent_get_position,pos2,":victim"),
+					# (get_distance_between_positions,":dist",pos1,pos2),
+					# (store_random_in_range, ":random_swing", 0,61), 
+					# (val_sub, ":dist", ":random_swing"), # swing earlier than in range (sometimes)
+					# (lt,":dist",300), # 200+weapon size/2
+					# (neg|position_is_behind_position,pos2,pos1),
+					# (assign,":status",1),
+				# (try_end),
+			# (try_end),
+		# (try_end),
 		
-		(store_agent_hit_points,":cur_hp",":troll",1),
+		# (store_agent_hit_points,":cur_hp",":troll",1),
 		
-		(agent_get_slot,":last_hp", ":troll",slot_agent_last_hp),
+		# (agent_get_slot,":last_hp", ":troll",slot_agent_last_hp),
 		
-		# test for stun
-		(try_begin),
+		# # test for stun
+		# (try_begin),
 		
-			#swy-- i still don't get this logic, but anyway, from now on if there isn't
-			#----- a previous health we'll use the current one, and trolls will get stunned
-			#----- if they have received >= 3 points of damage in this delta/relative difference.
+			# #swy-- i still don't get this logic, but anyway, from now on if there isn't
+			# #----- a previous health we'll use the current one, and trolls will get stunned
+			# #----- if they have received >= 3 points of damage in this delta/relative difference.
 			
-			(try_begin),
-				(lt, ":last_hp", 1),
-				(assign, ":last_hp", ":cur_hp"),
-			(try_end),
+			# (try_begin),
+				# (lt, ":last_hp", 1),
+				# (assign, ":last_hp", ":cur_hp"),
+			# (try_end),
 			
-		#	(val_add,":last_hp",3), #swy-- why this? getting the damage difference between frames and checking against as limit seems easier... i've tested this and works fine, and stun-rate is more of the same.
+		# #	(val_add,":last_hp",3), #swy-- why this? getting the damage difference between frames and checking against as limit seems easier... i've tested this and works fine, and stun-rate is more of the same.
 			
-			(store_sub,":hp_difference", ":last_hp", ":cur_hp"),
+			# (store_sub,":hp_difference", ":last_hp", ":cur_hp"),
 			
-		#	(assign,reg1,":last_hp"),
-		#	(assign,reg2, ":cur_hp"),
-		#	(assign,reg3, ":hp_difference"),
-		#	(display_message,"@DEBUG: last hp:{reg1} cur hp:{reg2} diff:{reg3}"),
+		# #	(assign,reg1,":last_hp"),
+		# #	(assign,reg2, ":cur_hp"),
+		# #	(assign,reg3, ":hp_difference"),
+		# #	(display_message,"@DEBUG: last hp:{reg1} cur hp:{reg2} diff:{reg3}"),
 			
-			# 282 >= 282 ?!!
-			# 285 >= 282
-		#	(ge,":last_hp",":cur_hp"), #swy-- this doesn't make sense, use a more straightforward logic. look under and above this.
+			# # 282 >= 282 ?!!
+			# # 285 >= 282
+		# #	(ge,":last_hp",":cur_hp"), #swy-- this doesn't make sense, use a more straightforward logic. look under and above this.
 			
-			(ge,    ":hp_difference", 55),
-			(assign,":status",       -3), # STUNNED: skip 4 "turns"
-		#	(display_message, "@Debug: Troll STUNNED: skip 4 turns."),
-		(try_end),
+			# (ge,    ":hp_difference", 55),
+			# (assign,":status",       -3), # STUNNED: skip 4 "turns"
+		# #	(display_message, "@Debug: Troll STUNNED: skip 4 turns."),
+		# (try_end),
 		
-		(agent_set_slot, ":troll", slot_agent_troll_swing_status,":status"),
-		(agent_set_slot, ":troll", slot_agent_last_hp,           ":cur_hp"),
+		# (agent_set_slot, ":troll", slot_agent_troll_status,":status"),
+		# (agent_set_slot, ":troll", slot_agent_last_hp,           ":cur_hp"),
 		
-		(try_begin),
-			# status = 1: make troll start the attack!
-			(eq,":status",1),
-		#	(display_message, "@Debug: STATUS 1."),
-			(store_random_in_range,":random_attack",1,4), #1 = left, 2 = right, 3 or more= overhead
-			(try_begin),
-				(eq,":random_attack",1),
-				(agent_set_animation, ":troll", "anim_ready_slashright_troll"),
-			(else_try),
-				(eq,":random_attack",2),
-				(agent_set_animation, ":troll", "anim_ready_slashleft_troll"),
-			(else_try),
-				(assign,":random_attack",3),
-				(agent_set_animation, ":troll", "anim_ready_overswing_troll"),
-			(try_end),
-			(agent_play_sound,":troll","snd_troll_grunt_long"),
-			(agent_set_slot,":troll",slot_agent_troll_swing_move,":random_attack"),
-		(else_try),
-			# status = 3: make troll end the attack!
-			(eq,":status",3),
-			(agent_set_slot,":troll",slot_agent_troll_swing_status,-2), # RECOVER: wait 2 "turns" before next attack
-			(agent_get_slot,":attack",":troll",slot_agent_troll_swing_move),
+		# (try_begin),
+			# # status = 1: make troll start the attack!
+			# (eq,":status",1),
+		# #	(display_message, "@Debug: STATUS 1."),
+			# (store_random_in_range,":random_attack",1,4), #1 = left, 2 = right, 3 or more= overhead
+			# (try_begin),
+				# (eq,":random_attack",1),
+				# (agent_set_animation, ":troll", "anim_ready_slashright_troll"),
+			# (else_try),
+				# (eq,":random_attack",2),
+				# (agent_set_animation, ":troll", "anim_ready_slashleft_troll"),
+			# (else_try),
+				# (assign,":random_attack",3),
+				# (agent_set_animation, ":troll", "anim_ready_overswing_troll"),
+			# (try_end),
+			# (agent_play_sound,":troll","snd_troll_grunt_long"),
+			# (agent_set_slot,":troll",slot_agent_troll_uncontrollable,":random_attack"),
+		# (else_try),
+			# # status = 3: make troll end the attack!
+			# (eq,":status",3),
+			# (agent_set_slot,":troll",slot_agent_troll_status,-2), # RECOVER: wait 2 "turns" before next attack
+			# (agent_get_slot,":attack",":troll",slot_agent_troll_uncontrollable),
 			
-			# make last piece of animation (should be useless, but necessary for when troll misteriously loses attack animation)
-			(try_begin),
-				(eq,":attack",1),
-				(agent_set_animation, ":troll", "anim_ready_and_release_slashright_troll"),
-			(else_try),
-				(eq,":attack",2),
-				(agent_set_animation, ":troll", "anim_ready_and_release_slashleft_troll"),
-			(else_try),
-				(agent_set_animation, ":troll", "anim_ready_and_release_overswing_troll"),
-			(try_end),
+			# # make last piece of animation (should be useless, but necessary for when troll misteriously loses attack animation)
+			# (try_begin),
+				# (eq,":attack",1),
+				# (agent_set_animation, ":troll", "anim_ready_and_release_slashright_troll"),
+			# (else_try),
+				# (eq,":attack",2),
+				# (agent_set_animation, ":troll", "anim_ready_and_release_slashleft_troll"),
+			# (else_try),
+				# (agent_set_animation, ":troll", "anim_ready_and_release_overswing_troll"),
+			# (try_end),
 	  
-			(agent_play_sound,":troll","snd_big_weapon_swing"),
-			(agent_get_position,pos1,":troll"),
+			# (agent_play_sound,":troll","snd_big_weapon_swing"),
+			# (agent_get_position,pos1,":troll"),
 	  		
-			(try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
-				(agent_ai_get_cached_enemy, ":victim", ":troll", ":nearby_agent_no"),
-				(agent_is_alive,":victim"),
-				(agent_is_active, ":victim"),
-				(agent_get_position,pos2,":victim"),
-				(neg|position_is_behind_position,pos2,pos1),
-				(get_distance_between_positions,":dist",pos1,pos2),
-				(lt,":dist",300), # troll disntance
+			# (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
+				# (agent_ai_get_cached_enemy, ":victim", ":troll", ":nearby_agent_no"),
+				# (agent_is_alive,":victim"),
+				# (agent_is_active, ":victim"),
+				# (agent_get_position,pos2,":victim"),
+				# (neg|position_is_behind_position,pos2,pos1),
+				# (get_distance_between_positions,":dist",pos1,pos2),
+				# (lt,":dist",300), # troll disntance
 
-				# decrease hit angle range for owerswing:
-				(assign,":hit",1),
-				(try_begin),
-					(ge,":attack",3), # if overswing: smaller angle - interval 
-					(copy_position,pos3,pos1),
-					(position_rotate_z,pos3,75),
-					(position_is_behind_position,pos2,pos3),
-					(position_rotate_z,pos3,-150),
-					(position_is_behind_position,pos2,pos3),
-					(assign,":hit",0), # misses troops if not in +/- 30 degrees 
-				(try_end),
+				# # decrease hit angle range for owerswing:
+				# (assign,":hit",1),
+				# (try_begin),
+					# (ge,":attack",3), # if overswing: smaller angle - interval 
+					# (copy_position,pos3,pos1),
+					# (position_rotate_z,pos3,75),
+					# (position_is_behind_position,pos2,pos3),
+					# (position_rotate_z,pos3,-150),
+					# (position_is_behind_position,pos2,pos3),
+					# (assign,":hit",0), # misses troops if not in +/- 30 degrees 
+				# (try_end),
 
-				(eq,":hit",1),
+				# (eq,":hit",1),
 			
-				# get victim type
-				(agent_get_troop_id,":victim_troop_id",":victim"),
-				(troop_get_type, ":victim_type", ":victim_troop_id"),
+				# # get victim type
+				# (agent_get_troop_id,":victim_troop_id",":victim"),
+				# (troop_get_type, ":victim_type", ":victim_troop_id"),
 				
 			
-				(try_begin),
-					(agent_is_human,":victim"),
+				# (try_begin),
+					# (agent_is_human,":victim"),
 		
-					(agent_play_sound,":victim","snd_blunt_hit"),			
-					(agent_deliver_damage_to_agent, ":troll", ":victim"),
-					(try_begin),
-						(ge,":attack",3),
-						(agent_deliver_damage_to_agent, ":troll", ":victim"), # double damage with overhead swing
-					(try_end),
+					# (agent_play_sound,":victim","snd_blunt_hit"),			
+					# (agent_deliver_damage_to_agent, ":troll", ":victim"),
+					# (try_begin),
+						# (ge,":attack",3),
+						# (agent_deliver_damage_to_agent, ":troll", ":victim"), # double damage with overhead swing
+					# (try_end),
 
-					# set victim animation:...
+					# # set victim animation:...
 					
-					# first, turn victim position according to swing direction  to better determine possible flight direction if hit
-					(try_begin),
-						(eq,":attack",2), # if swing left
-						(position_rotate_z,pos2,45),
-					(else_try),
-						(eq,":attack",1), # if swing right
-						(position_rotate_z,pos2,-45),
-					(try_end),
+					# # first, turn victim position according to swing direction  to better determine possible flight direction if hit
+					# (try_begin),
+						# (eq,":attack",2), # if swing left
+						# (position_rotate_z,pos2,45),
+					# (else_try),
+						# (eq,":attack",1), # if swing right
+						# (position_rotate_z,pos2,-45),
+					# (try_end),
 					
-					(agent_get_horse, ":victim_horse", ":victim"),
-					# then, set animation
-					(try_begin),
-						(neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
-                                                (neq, ":victim_troop_id", "trp_multiplayer_profile_troop_male"), # Arsakes: bear shapeshifter troop
-						#(agent_is_alive,":victim"), # agent is STILL alive
-						(try_begin),
-							(eq, ":victim_type", tf_troll), # trolls don't send other trolls flying back: they just knowk them back
-							(agent_set_animation, ":victim", "anim_strike_fall_back_rise"),
-						(else_try),
-							# human (non trolls, non horse) victims
-							(try_begin),
-								(position_is_behind_position,pos1,pos2), # troll is on back of victim
-								(agent_set_animation, ":victim", "anim_strike_fly_front_rise"), # send them flying front
-							(else_try),
-								# troll is in front of victim
-								(assign,":from_left",0), # animate as if swing comes from left?
-								(try_begin),
-									(eq,":attack",2), # if left swing, hurl, 
-									(assign,":from_left",1),       # then from left
-								(else_try),
-									(eq,":attack",3), # if overswing, roll
-									(store_random_in_range,":from_left",0,2),  # then 50% from left
-								(try_end),
-								(try_begin),
-									(eq,":from_left",1), # if swing left
-									(agent_set_animation, ":victim", "anim_strike_fly_back_rise_from_left"), # send them flying back
-								(else_try),
-									(agent_set_animation, ":victim", "anim_strike_fly_back_rise"), # send them flying back
-								(try_end),
-							(try_end),
-							(try_begin),
-								(gt, ":victim_horse", 1),
-								(agent_start_running_away, ":victim_horse"),
-								(agent_stop_running_away, ":victim_horse"),
-							(try_end),
-							(store_random_in_range,":random_timings",1,5),
-							(agent_set_animation_progress, ":victim", ":random_timings"), # differentiate timings a bit
-						(try_end),
-					(try_end),
+					# (agent_get_horse, ":victim_horse", ":victim"),
+					# # then, set animation
+					# (try_begin),
+						# (neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
+                                                # (neq, ":victim_troop_id", "trp_multiplayer_profile_troop_male"), # Arsakes: bear shapeshifter troop
+						# #(agent_is_alive,":victim"), # agent is STILL alive
+						# (try_begin),
+							# (eq, ":victim_type", tf_troll), # trolls don't send other trolls flying back: they just knowk them back
+							# (agent_set_animation, ":victim", "anim_strike_fall_back_rise"),
+						# (else_try),
+							# # human (non trolls, non horse) victims
+							# (try_begin),
+								# (position_is_behind_position,pos1,pos2), # troll is on back of victim
+								# (agent_set_animation, ":victim", "anim_strike_fly_front_rise"), # send them flying front
+							# (else_try),
+								# # troll is in front of victim
+								# (assign,":from_left",0), # animate as if swing comes from left?
+								# (try_begin),
+									# (eq,":attack",2), # if left swing, hurl, 
+									# (assign,":from_left",1),       # then from left
+								# (else_try),
+									# (eq,":attack",3), # if overswing, roll
+									# (store_random_in_range,":from_left",0,2),  # then 50% from left
+								# (try_end),
+								# (try_begin),
+									# (eq,":from_left",1), # if swing left
+									# (agent_set_animation, ":victim", "anim_strike_fly_back_rise_from_left"), # send them flying back
+								# (else_try),
+									# (agent_set_animation, ":victim", "anim_strike_fly_back_rise"), # send them flying back
+								# (try_end),
+							# (try_end),
+							# (try_begin),
+								# (gt, ":victim_horse", 1),
+								# (agent_start_running_away, ":victim_horse"),
+								# (agent_stop_running_away, ":victim_horse"),
+							# (try_end),
+							# (store_random_in_range,":random_timings",1,5),
+							# (agent_set_animation_progress, ":victim", ":random_timings"), # differentiate timings a bit
+						# (try_end),
+					# (try_end),
 				
-				(else_try),
-					(agent_set_hit_points,":victim",0), # horses are killed on spot!
-					(agent_deliver_damage_to_agent, ":troll", ":victim"),
-				(try_end),
-			(try_end),
-		(try_end),
-	(try_end),
-])
+				# (else_try),
+					# (agent_set_hit_points,":victim",0), # horses are killed on spot!
+					# (agent_deliver_damage_to_agent, ":troll", ":victim"),
+				# (try_end),
+			# (try_end),
+		# (try_end),
+	# (try_end),
+# ])
 
-or
+# or
 
-( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
-	(try_for_agents,":troll"),
-		(agent_is_alive,":troll"),
-		(agent_is_human,":troll"),
-		(agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
-		(troop_get_type, ":troll_type", ":troll_troop_id"),
-		(eq, ":troll_type", tf_troll),
-        #Trolls charging - begin
-        (agent_get_team, ":troll_team", ":troll"),
-        (agent_get_position, pos1, ":troll"),
+# ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
+	# (try_for_agents,":troll"),
+		# (agent_is_alive,":troll"),
+		# (agent_is_human,":troll"),
+		# (agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
+		# (troop_get_type, ":troll_type", ":troll_troop_id"),
+		# (eq, ":troll_type", tf_troll),
+        # #Trolls charging - begin
+        # (agent_get_team, ":troll_team", ":troll"),
+        # (agent_get_position, pos1, ":troll"),
 
-        #get the closest noncav enemy
-        (assign, ":min_dist", 1000000),
-        (try_for_agents, ":enemy_agent"),
-            (agent_is_alive, ":enemy_agent"),
-            (agent_is_human, ":enemy_agent"),
-            (agent_get_team, ":enemy_team_no", ":enemy_agent"),
-            (teams_are_enemies, ":enemy_team_no", ":troll_team"),
-            (agent_get_class, ":enemy_class_no", ":enemy_agent"),
-            (neq, ":enemy_class_no", grc_cavalry),
+        # #get the closest noncav enemy
+        # (assign, ":min_dist", 1000000),
+        # (try_for_agents, ":enemy_agent"),
+            # (agent_is_alive, ":enemy_agent"),
+            # (agent_is_human, ":enemy_agent"),
+            # (agent_get_team, ":enemy_team_no", ":enemy_agent"),
+            # (teams_are_enemies, ":enemy_team_no", ":troll_team"),
+            # (agent_get_class, ":enemy_class_no", ":enemy_agent"),
+            # (neq, ":enemy_class_no", grc_cavalry),
             
-            (agent_get_position, pos0, ":enemy_agent"),
-            (get_distance_between_positions, ":dist", pos0, pos1),
-            (gt, ":min_dist", ":dist"),
-            (assign, ":min_dist", ":dist"),
-            (copy_position, pos2, pos0), #pos2 holds the nearest enemy position
-        (try_end),
+            # (agent_get_position, pos0, ":enemy_agent"),
+            # (get_distance_between_positions, ":dist", pos0, pos1),
+            # (gt, ":min_dist", ":dist"),
+            # (assign, ":min_dist", ":dist"),
+            # (copy_position, pos2, pos0), #pos2 holds the nearest enemy position
+        # (try_end),
     
-      # (assign, reg0, ":min_dist"),
-      # (assign, reg1, ":troll"),
-      # (display_message, "@Debug: Troll {reg1} distance to enemy: {reg0}."),
+      # # (assign, reg0, ":min_dist"),
+      # # (assign, reg1, ":troll"),
+      # # (display_message, "@Debug: Troll {reg1} distance to enemy: {reg0}."),
 
-        (try_begin),
-          (this_or_next|eq, ":min_dist", 1000000),
-          (lt, ":min_dist", 500),
-          (agent_clear_scripted_mode, ":troll"), # leave the troll on its own if close enough to the enemy
-        (else_try),
-          (agent_set_scripted_destination, ":troll", pos2, 1), # head for the nearest enemy
-        (try_end),
-        #Trolls charging - end
+        # (try_begin),
+          # (this_or_next|eq, ":min_dist", 1000000),
+          # (lt, ":min_dist", 500),
+          # (agent_clear_scripted_mode, ":troll"), # leave the troll on its own if close enough to the enemy
+        # (else_try),
+          # (agent_set_scripted_destination, ":troll", pos2, 1), # head for the nearest enemy
+        # (try_end),
+        # #Trolls charging - end
         
-	#mtarini: for tuning: show current troll HP at random times
-	#swy-- we don't actually need this entire block at all... don't selectively comment out the print leaving the other stuff there!
-	#	(try_begin), 
-	#		(store_random_in_range,":random",1,20),
-	#		(eq,":random",1), # show it once in 20
-	#		(store_agent_hit_points,reg1,":troll"),
-	#		(display_message,"@DEBUG: troll health: {reg1}%!"),
-	#	(try_end),
+	# #mtarini: for tuning: show current troll HP at random times
+	# #swy-- we don't actually need this entire block at all... don't selectively comment out the print leaving the other stuff there!
+	# #	(try_begin), 
+	# #		(store_random_in_range,":random",1,20),
+	# #		(eq,":random",1), # show it once in 20
+	# #		(store_agent_hit_points,reg1,":troll"),
+	# #		(display_message,"@DEBUG: troll health: {reg1}%!"),
+	# #	(try_end),
 		
-		(agent_get_slot,":status",":troll",slot_agent_troll_swing_status),
-		(try_begin),
-			(neg|eq,":status",0),
-			(store_add,":status",":status",1),
-		(else_try),
-			# status is 0: *can* decide to start a swing
-			(get_player_agent_no, ":player_agent"),
-			(try_begin),
-				(eq, ":player_agent", ":troll"),
-			#	(display_message, "@Debug: Player controlled troll."),
-				# player controlled trolls swing when button pressed
-				(try_begin),
-					(key_is_down, key_left_mouse_button),
-					(assign,":status",1), 
-				#	(display_message, "@Debug: Troll attack key pressed."),
-				(try_end),
-			(else_try),
-				# AI attacks 10% of times, if at least a victim is in range - changed to 20% (kham)
-				(store_random_in_range,":random",1,101),
-				(le,":random",20), 
-				(agent_get_position,1,":troll"),
-				(agent_get_team, ":troll_team", ":troll"),
-				(try_for_agents,":victim"),
-					(eq,":status",0),
-					(agent_is_human,":victim"),
-					(agent_is_alive, ":victim"),
-					(agent_get_team, ":victim_team", ":victim"),
-					(teams_are_enemies, ":victim_team", ":troll_team"),
-					(agent_get_position,2,":victim"),
-					(get_distance_between_positions,":dist",1,2),
-					(store_random_in_range, ":random_swing", 0,61), 
-					(val_sub, ":dist", ":random_swing"), # swing earlier than in range (sometimes)
-					(lt,":dist",300), # 200+weapon size/2
+		# (agent_get_slot,":status",":troll",slot_agent_troll_status),
+		# (try_begin),
+			# (neg|eq,":status",0),
+			# (store_add,":status",":status",1),
+		# (else_try),
+			# # status is 0: *can* decide to start a swing
+			# (get_player_agent_no, ":player_agent"),
+			# (try_begin),
+				# (eq, ":player_agent", ":troll"),
+			# #	(display_message, "@Debug: Player controlled troll."),
+				# # player controlled trolls swing when button pressed
+				# (try_begin),
+					# (key_is_down, key_left_mouse_button),
+					# (assign,":status",1), 
+				# #	(display_message, "@Debug: Troll attack key pressed."),
+				# (try_end),
+			# (else_try),
+				# # AI attacks 10% of times, if at least a victim is in range - changed to 20% (kham)
+				# (store_random_in_range,":random",1,101),
+				# (le,":random",20), 
+				# (agent_get_position,1,":troll"),
+				# (agent_get_team, ":troll_team", ":troll"),
+				# (try_for_agents,":victim"),
+					# (eq,":status",0),
+					# (agent_is_human,":victim"),
+					# (agent_is_alive, ":victim"),
+					# (agent_get_team, ":victim_team", ":victim"),
+					# (teams_are_enemies, ":victim_team", ":troll_team"),
+					# (agent_get_position,2,":victim"),
+					# (get_distance_between_positions,":dist",1,2),
+					# (store_random_in_range, ":random_swing", 0,61), 
+					# (val_sub, ":dist", ":random_swing"), # swing earlier than in range (sometimes)
+					# (lt,":dist",300), # 200+weapon size/2
 						
-					(neg|position_is_behind_position,2,1),
-					(assign,":status",1),
-				(try_end),
-			(try_end),
-		(try_end),
+					# (neg|position_is_behind_position,2,1),
+					# (assign,":status",1),
+				# (try_end),
+			# (try_end),
+		# (try_end),
 		
-		(store_agent_hit_points,":cur_hp",":troll",1),
-		(agent_get_slot,":last_hp", ":troll",slot_agent_last_hp),
-		# test for stun
-		(try_begin),
+		# (store_agent_hit_points,":cur_hp",":troll",1),
+		# (agent_get_slot,":last_hp", ":troll",slot_agent_last_hp),
+		# # test for stun
+		# (try_begin),
 		
-			#swy-- i still don't get this logic, but anyway, from now on if there isn't
-			#----- a previous health we'll use the current one, and trolls will get stunned
-			#----- if they have received >= 3 points of damage in this delta/relative difference.
+			# #swy-- i still don't get this logic, but anyway, from now on if there isn't
+			# #----- a previous health we'll use the current one, and trolls will get stunned
+			# #----- if they have received >= 3 points of damage in this delta/relative difference.
 			
-			(try_begin),
-				(lt, ":last_hp", 1),
-				(assign, ":last_hp", ":cur_hp"),
-			(try_end),
+			# (try_begin),
+				# (lt, ":last_hp", 1),
+				# (assign, ":last_hp", ":cur_hp"),
+			# (try_end),
 			
-		#	(val_add,":last_hp",3), #swy-- why this? getting the damage difference between frames and checking against as limit seems easier... i've tested this and works fine, and stun-rate is more of the same.
+		# #	(val_add,":last_hp",3), #swy-- why this? getting the damage difference between frames and checking against as limit seems easier... i've tested this and works fine, and stun-rate is more of the same.
 			
-			(store_sub,":hp_difference", ":last_hp", ":cur_hp"),
+			# (store_sub,":hp_difference", ":last_hp", ":cur_hp"),
 			
-		#	(assign,reg1,":last_hp"),
-		#	(assign,reg2, ":cur_hp"),
-		#	(assign,reg3, ":hp_difference"),
-		#	(display_message,"@DEBUG: last hp:{reg1} cur hp:{reg2} diff:{reg3}"),
+		# #	(assign,reg1,":last_hp"),
+		# #	(assign,reg2, ":cur_hp"),
+		# #	(assign,reg3, ":hp_difference"),
+		# #	(display_message,"@DEBUG: last hp:{reg1} cur hp:{reg2} diff:{reg3}"),
 			
-			# 282 >= 282 ?!!
-			# 285 >= 282
-		#	(ge,":last_hp",":cur_hp"), #swy-- this doesn't make sense, use a more straightforward logic. look under and above this.
+			# # 282 >= 282 ?!!
+			# # 285 >= 282
+		# #	(ge,":last_hp",":cur_hp"), #swy-- this doesn't make sense, use a more straightforward logic. look under and above this.
 			
-			(ge,    ":hp_difference", 55),
-			(assign,":status",       -4), # STUNNED: skip 4 "turns"
-		#	(display_message, "@Debug: Troll STUNNED: skip 4 turns."),
-		(try_end),
+			# (ge,    ":hp_difference", 55),
+			# (assign,":status",       -4), # STUNNED: skip 4 "turns"
+		# #	(display_message, "@Debug: Troll STUNNED: skip 4 turns."),
+		# (try_end),
 		
-		(agent_set_slot, ":troll", slot_agent_troll_swing_status,":status"),
-		(agent_set_slot, ":troll", slot_agent_last_hp,           ":cur_hp"),
+		# (agent_set_slot, ":troll", slot_agent_troll_status,":status"),
+		# (agent_set_slot, ":troll", slot_agent_last_hp,           ":cur_hp"),
 		
-		(try_begin),
-			# status = 1: make troll start the attack!
-			(eq,":status",1),
-		#	(display_message, "@Debug: STATUS 1."),
-			(store_random_in_range,":random_attack",1,4), #1 = left, 2 = right, 3 or more= overhead
-			(try_begin),
-				(eq,":random_attack",1),
-				(agent_set_animation, ":troll", "anim_ready_slashright_troll"),
-			(else_try),
-				(eq,":random_attack",2),
-				(agent_set_animation, ":troll", "anim_ready_slashleft_troll"),
-			(else_try),
-				(assign,":random_attack",3),
-				(agent_set_animation, ":troll", "anim_ready_overswing_troll"),
-			(try_end),
-			(agent_play_sound,":troll","snd_troll_grunt_long"),
-			(agent_set_slot,":troll",slot_agent_troll_swing_move,":random_attack"),
-		(else_try),
-			# status = 3: make troll end the attack!
-			(eq,":status",3),
-			(agent_set_slot,":troll",slot_agent_troll_swing_status,-2), # RECOVER: wait 2 "turns" before next attack
-			(agent_get_slot,":attack",":troll",slot_agent_troll_swing_move),
+		# (try_begin),
+			# # status = 1: make troll start the attack!
+			# (eq,":status",1),
+		# #	(display_message, "@Debug: STATUS 1."),
+			# (store_random_in_range,":random_attack",1,4), #1 = left, 2 = right, 3 or more= overhead
+			# (try_begin),
+				# (eq,":random_attack",1),
+				# (agent_set_animation, ":troll", "anim_ready_slashright_troll"),
+			# (else_try),
+				# (eq,":random_attack",2),
+				# (agent_set_animation, ":troll", "anim_ready_slashleft_troll"),
+			# (else_try),
+				# (assign,":random_attack",3),
+				# (agent_set_animation, ":troll", "anim_ready_overswing_troll"),
+			# (try_end),
+			# (agent_play_sound,":troll","snd_troll_grunt_long"),
+			# (agent_set_slot,":troll",slot_agent_troll_uncontrollable,":random_attack"),
+		# (else_try),
+			# # status = 3: make troll end the attack!
+			# (eq,":status",3),
+			# (agent_set_slot,":troll",slot_agent_troll_status,-2), # RECOVER: wait 2 "turns" before next attack
+			# (agent_get_slot,":attack",":troll",slot_agent_troll_uncontrollable),
 			
-			# make last piece of animation (should be useless, but necessary for when troll misteriously loses attack animation)
-			(try_begin),
-				(eq,":attack",1),
-				(agent_set_animation, ":troll", "anim_ready_and_release_slashright_troll"),
-			(else_try),
-				(eq,":attack",2),
-				(agent_set_animation, ":troll", "anim_ready_and_release_slashleft_troll"),
-			(else_try),
-				(agent_set_animation, ":troll", "anim_ready_and_release_overswing_troll"),
-			(try_end),
-			#(agent_set_animation_progress, ":troll", 66),
+			# # make last piece of animation (should be useless, but necessary for when troll misteriously loses attack animation)
+			# (try_begin),
+				# (eq,":attack",1),
+				# (agent_set_animation, ":troll", "anim_ready_and_release_slashright_troll"),
+			# (else_try),
+				# (eq,":attack",2),
+				# (agent_set_animation, ":troll", "anim_ready_and_release_slashleft_troll"),
+			# (else_try),
+				# (agent_set_animation, ":troll", "anim_ready_and_release_overswing_troll"),
+			# (try_end),
+			# #(agent_set_animation_progress, ":troll", 66),
 	  
-			(agent_play_sound,":troll","snd_big_weapon_swing"),
+			# (agent_play_sound,":troll","snd_big_weapon_swing"),
 	  
-			#(try_begin),
-				#(eq,"$g_troll_chosen_move",3),
-				#(agent_get_look_position,1,":troll"), # because move 3 (overswing) rotates torso!
-			#(else_try),
-			(agent_get_position,1,":troll"),
-			#(try_end),
+			# #(try_begin),
+				# #(eq,"$g_troll_chosen_move",3),
+				# #(agent_get_look_position,1,":troll"), # because move 3 (overswing) rotates torso!
+			# #(else_try),
+			# (agent_get_position,1,":troll"),
+			# #(try_end),
 	  		
-			(try_for_agents,":victim"),
-				(agent_is_alive,":victim"),
-				(neq,":troll",":victim"), # a troll doesn't hit itself
-				(agent_get_position,2,":victim"),
-				(neg|position_is_behind_position,2,1),
-				(get_distance_between_positions,":dist",1,2),
-				(lt,":dist",300), # troll disntance
+			# (try_for_agents,":victim"),
+				# (agent_is_alive,":victim"),
+				# (neq,":troll",":victim"), # a troll doesn't hit itself
+				# (agent_get_position,2,":victim"),
+				# (neg|position_is_behind_position,2,1),
+				# (get_distance_between_positions,":dist",1,2),
+				# (lt,":dist",300), # troll disntance
 			
-				# decrease hit angle range for owerswing:
-				(assign,":hit",1),
-				(try_begin),
-					(ge,":attack",3), # if overswing: smaller angle - interval 
-					(copy_position,3,1),
-					(position_rotate_z,3,75),
-					(position_is_behind_position,2,3),
-					(position_rotate_z,3,-150),
-					(position_is_behind_position,2,3),
-					(assign,":hit",0), # misses troops if not in +/- 30 degrees 
-				(try_end),
-				(eq,":hit",1),
+				# # decrease hit angle range for owerswing:
+				# (assign,":hit",1),
+				# (try_begin),
+					# (ge,":attack",3), # if overswing: smaller angle - interval 
+					# (copy_position,3,1),
+					# (position_rotate_z,3,75),
+					# (position_is_behind_position,2,3),
+					# (position_rotate_z,3,-150),
+					# (position_is_behind_position,2,3),
+					# (assign,":hit",0), # misses troops if not in +/- 30 degrees 
+				# (try_end),
+				# (eq,":hit",1),
 			
-				# test if friendly troll...
-				(agent_get_troop_id,":victim_troop_id",":victim"),
-				(troop_get_type, ":victim_type", ":victim_troop_id"),
-				(agent_get_team, ":victim_team", ":victim"),
-				(agent_get_team, ":troll_team", ":troll"),
-				(neq|this_or_next, ":victim_type", tf_troll), # trolls don't hit trolls!
-				(teams_are_enemies, ":victim_team", ":troll_team"),  # ...unless they are enemy trolls
+				# # test if friendly troll...
+				# (agent_get_troop_id,":victim_troop_id",":victim"),
+				# (troop_get_type, ":victim_type", ":victim_troop_id"),
+				# (agent_get_team, ":victim_team", ":victim"),
+				# (agent_get_team, ":troll_team", ":troll"),
+				# (neq|this_or_next, ":victim_type", tf_troll), # trolls don't hit trolls!
+				# (teams_are_enemies, ":victim_team", ":troll_team"),  # ...unless they are enemy trolls
 			
-				(try_begin),
-					(agent_is_human,":victim"),
+				# (try_begin),
+					# (agent_is_human,":victim"),
 		
-					(agent_play_sound,":victim","snd_blunt_hit"),			
-					(agent_deliver_damage_to_agent, ":troll", ":victim"),
-					(try_begin),
-						(ge,":attack",3),
-						(agent_deliver_damage_to_agent, ":troll", ":victim"), # double damage with overhead swing
-					(try_end),
+					# (agent_play_sound,":victim","snd_blunt_hit"),			
+					# (agent_deliver_damage_to_agent, ":troll", ":victim"),
+					# (try_begin),
+						# (ge,":attack",3),
+						# (agent_deliver_damage_to_agent, ":troll", ":victim"), # double damage with overhead swing
+					# (try_end),
 
-					# set victim animation:...
+					# # set victim animation:...
 					
-					# first, turn victim position according to swing direction  to better determine possible flight direction if hit
-					(try_begin),
-						(eq,":attack",2), # if swing left
-						(position_rotate_z,2,45),
-					(else_try),
-						(eq,":attack",1), # if swing right
-						(position_rotate_z,2,-45),
-					(try_end),
+					# # first, turn victim position according to swing direction  to better determine possible flight direction if hit
+					# (try_begin),
+						# (eq,":attack",2), # if swing left
+						# (position_rotate_z,2,45),
+					# (else_try),
+						# (eq,":attack",1), # if swing right
+						# (position_rotate_z,2,-45),
+					# (try_end),
 					
-					# then, set animation
-					(try_begin),
-						#(agent_is_alive,":victim"), # agent is STILL alive
-						(try_begin),
-							(eq, ":victim_type", tf_troll), # trolls don't send other trolls flying back: they just knowk them back
-							(agent_set_animation, ":victim", "anim_strike_fall_back_rise"),
-						(else_try),
-							# human (non trolls, non horse) victims
-							(try_begin),
-								(position_is_behind_position,1,2), # troll is on back of victim
-								(agent_set_animation, ":victim", "anim_strike_fly_front_rise"), # send them flying front
-							(else_try),
-								# troll is in front of victim
-								(assign,":from_left",0), # animate as if swing comes from left?
-								(try_begin),
-									(eq,":attack",2), # if left swing, hurl, 
-									(assign,":from_left",1),       # then from left
-								(else_try),
-									(eq,":attack",3), # if overswing, roll
-									(store_random_in_range,":from_left",0,2),  # then 50% from left
-								(try_end),
-								(try_begin),
-									(eq,":from_left",1), # if swing left
-									(agent_set_animation, ":victim", "anim_strike_fly_back_rise_from_left"), # send them flying back
-								(else_try),
-									(agent_set_animation, ":victim", "anim_strike_fly_back_rise"), # send them flying back
-								(try_end),
-							(try_end),
-							(store_random_in_range,":random_timings",1,5),
-							(agent_set_animation_progress, ":victim", ":random_timings"), # differentiate timings a bit
-						(try_end),
-					#(else_try),
-						# victim has been killed: won't rise after fall USELESS: game won't listen...
-						#(try_begin),
-						#	(position_is_behind_position,1,2), # troll is on back of victim
-						# 	(agent_set_animation, ":victim", "anim_strike_fly_front"), # send them flying front -- don't rise
-						#(else_try),
-						#  	(agent_set_animation, ":victim", "anim_strike_fly_back"), # send them flying back -- don't rise
-						#(try_end),			
-						#(display_message,"@DEBUG: troll kills!"),
-					(try_end),
+					# # then, set animation
+					# (try_begin),
+						# #(agent_is_alive,":victim"), # agent is STILL alive
+						# (try_begin),
+							# (eq, ":victim_type", tf_troll), # trolls don't send other trolls flying back: they just knowk them back
+							# (agent_set_animation, ":victim", "anim_strike_fall_back_rise"),
+						# (else_try),
+							# # human (non trolls, non horse) victims
+							# (try_begin),
+								# (position_is_behind_position,1,2), # troll is on back of victim
+								# (agent_set_animation, ":victim", "anim_strike_fly_front_rise"), # send them flying front
+							# (else_try),
+								# # troll is in front of victim
+								# (assign,":from_left",0), # animate as if swing comes from left?
+								# (try_begin),
+									# (eq,":attack",2), # if left swing, hurl, 
+									# (assign,":from_left",1),       # then from left
+								# (else_try),
+									# (eq,":attack",3), # if overswing, roll
+									# (store_random_in_range,":from_left",0,2),  # then 50% from left
+								# (try_end),
+								# (try_begin),
+									# (eq,":from_left",1), # if swing left
+									# (agent_set_animation, ":victim", "anim_strike_fly_back_rise_from_left"), # send them flying back
+								# (else_try),
+									# (agent_set_animation, ":victim", "anim_strike_fly_back_rise"), # send them flying back
+								# (try_end),
+							# (try_end),
+							# (store_random_in_range,":random_timings",1,5),
+							# (agent_set_animation_progress, ":victim", ":random_timings"), # differentiate timings a bit
+						# (try_end),
+					# #(else_try),
+						# # victim has been killed: won't rise after fall USELESS: game won't listen...
+						# #(try_begin),
+						# #	(position_is_behind_position,1,2), # troll is on back of victim
+						# # 	(agent_set_animation, ":victim", "anim_strike_fly_front"), # send them flying front -- don't rise
+						# #(else_try),
+						# #  	(agent_set_animation, ":victim", "anim_strike_fly_back"), # send them flying back -- don't rise
+						# #(try_end),			
+						# #(display_message,"@DEBUG: troll kills!"),
+					# (try_end),
 				
-				(else_try),
-					(agent_set_hit_points,":victim",0), # horses are killed on spot!
-					(agent_deliver_damage_to_agent, ":troll", ":victim"),
-				(try_end),
-			(try_end),
-		(try_end),
-	(try_end),
-])
+				# (else_try),
+					# (agent_set_hit_points,":victim",0), # horses are killed on spot!
+					# (agent_deliver_damage_to_agent, ":troll", ":victim"),
+				# (try_end),
+			# (try_end),
+		# (try_end),
+	# (try_end),
+# ])
 
-)
+# )
 
 #InVain: Adjusted for all monsters: Camels, bears etc, also player
 custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
@@ -3405,6 +3630,7 @@ or
 # matrini: warg attacks.... NOT USED YET (still WIP)
 # CppCoder: improved, almost functional. :)
 
+#unused
 custom_lone_wargs_special_attack = (0.1, 0, 0, 
 	[
 		(gt,"$wargs_in_battle",0),
