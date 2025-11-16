@@ -2076,7 +2076,8 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
      (agent_get_troop_id,":troop_id", ":agent_no"),
      (troop_get_type, ":type", ":troop_id"),
      (eq, ":type", tf_troll),
-     (agent_set_speed_limit, ":agent_no", 4), # trolls go 4 km/h max <GA>
+     #(agent_set_speed_limit, ":agent_no", 10), # trolls go 4 km/h max <GA>
+     #(agent_set_speed_modifier, ":agent_no", 70),
      (assign, "$trolls_in_battle", 1),     # condition on future troll triggers
      (assign, ":upper_range", 1000),
      (try_for_range, ":slot", 0, ":upper_range"),
@@ -2351,9 +2352,12 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
     (agent_set_scripted_destination, ":troll", pos6),
     (agent_set_animation, ":troll", "anim_troll_charge", 0),
     (agent_set_slot, ":troll", slot_agent_troll_status, 3),
-    (agent_play_sound, ":troll", "snd_troll_yell"),
+    (agent_play_sound, ":troll", "snd_troll_yell"),    
+    (agent_get_position, pos69, ":troll"), #used for script
+    (position_move_z, pos69, 100),
+    (call_script, "script_aoe_pushback", 5, 400, ":troll"),
     (val_add, ":troll_found", 1),
-    (display_message, "@troll charges {s5} at distance {reg78}"),
+    #(display_message, "@troll charges {s5} at distance {reg78}"),
   (try_end),
   (ge, ":troll_found", 1),
 
@@ -2383,7 +2387,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
         (val_sub, ":morale_penalty", 10),
         (agent_set_slot, ":enemy_agent", slot_agent_morale_modifier, ":morale_penalty"),
     (try_end),
-    (display_message, "@troll charge end"),
+    #(display_message, "@troll charge end"),
   (try_end),
 
 	]),

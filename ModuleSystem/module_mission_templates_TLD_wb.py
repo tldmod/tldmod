@@ -2005,7 +2005,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (agent_get_team, ":player_team", ":player_agent"),
 
     (agent_get_slot, ":current_hp_shield", ":agent", slot_agent_hp_shield),
-    #(troop_get_slot, ":max_hp_shield", ":troop_id", slot_troop_hp_shield),
+    (troop_get_slot, ":max_hp_shield", ":troop_id", slot_troop_hp_shield),
 
     (try_begin),
       (gt, ":current_hp_shield", 0),
@@ -2110,12 +2110,17 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
       (try_end),
 
       #pushback attack
+      (store_div, ":pushback_threshold", ":max_hp_shield", 2),
+      (lt, ":current_hp_shield", ":pushback_threshold"),
+      (store_random_in_range, ":chance", -50, ":pushback_threshold"),
+      (assign, reg78, ":chance"),
+      (assign, reg77, ":current_hp_shield"),
+      (gt, ":chance", ":current_hp_shield"),
       (try_begin),
-        (this_or_next|eq, ":new_hp_shield", 0),
-        (ge, ":damage", 30),
         (agent_play_sound, ":agent", "snd_troll_yell"),
         (agent_slot_eq, ":agent", slot_agent_troll_status, 0),
         (agent_set_slot,":agent",  slot_agent_troll_status, 1),
+      #(display_message, "@chance {reg78}, current hp shield {reg77}"),
         
         #uncontrollable
         (troop_get_upgrade_troop, ":level_up_troop", ":troop_id", 0),
@@ -2132,7 +2137,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
             (try_begin),
                 (eq, ":team", ":player_team"),
                 (str_store_agent_name, s5, ":agent"),
-                (display_message, "@A {s5} has been overcome by fear and rage and is now uncontrollable."),
+                (display_message, "@{s5} has been overcome by fear and rage and is now uncontrollable."),
             (try_end),
             (try_begin),
                 (agent_is_defender, ":agent"),
@@ -2150,14 +2155,25 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
                 (team_set_relation, 5, 3, 1),
                 (team_set_relation, 5, 4, 1),
             (try_end),
+            (agent_force_rethink, ":agent"),
         (else_try), #running amok
-            (agent_slot_eq, ":agent", slot_agent_troll_uncontrollable, 0),
+            (store_random_in_range, ":rand", 0, 10), #additional check
+            (le, ":rand", 4),
+            (agent_slot_eq, ":agent", slot_agent_troll_uncontrollable, 1),
+            (agent_set_slot, ":agent", slot_agent_troll_uncontrollable, 2),
             (neq, ":player_team", 6), #easy way to avoid sieges, since player team is 6 in sieges
             (agent_set_team, ":agent", 6),
             (try_for_range, ":other_team", 0, 6),
                 (team_set_relation, 6, ":other_team", -1),
             (try_end),
             (agent_set_animation, ":agent", "anim_troll_charge", 0), #send them away from formation
+            (str_store_agent_name, s5, ":agent"),
+            (display_message, "@{s5} is running amok, hurting friend and foe alike!"),
+            (agent_set_damage_modifier, ":agent", 130),
+            (val_add, ":current_hp_shield", 50),
+            (agent_set_slot, ":agent", slot_agent_hp_shield, ":current_hp_shield"),
+            (agent_force_rethink, ":agent"),
+            #(agent_set_speed_modifier, ":agent", 130),
         (try_end),
       (try_end),
       
