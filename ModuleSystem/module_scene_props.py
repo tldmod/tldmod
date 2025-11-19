@@ -2283,38 +2283,38 @@ scene_props = [
 # ("ZT_mb_", 0, "mesh", "bo_", []), for vanilla flora
 # ("ZT_pl_", 0, "mesh", "bo_", []), for gutek's flora
 # tree_meshes.brf from vanilla
-("ZT_mb_chestnut", 0, "chestnut", "bosimple_tree", []), 
-("ZT_mb_oak", 0, "oak_a", "bosimple_tree", []), 
-("ZT_mb_oak_wide", 0, "oak_b", "bosimple_tree", []), 
-("ZT_mb_lowpoly1", 0, "plane_tree_a", "0", []),   ("ZT_mb_lowpoly2", 0, "plane_tree_b", "0", []),   ("ZT_mb_lowpoly3", 0, "plane_tree_c", "0", []), 
-("ZT_mb_pine_wide", 0, "pine", "bosimple_tree", []), 
-("ZT_mb_maple", 0, "tree_6_a", "bo_tree_6_a", []), 
+("ZT_mb_chestnut_DONT_USE", 0, "chestnut", "bosimple_tree", []), 
+("ZT_mb_oak_DONT_USE", 0, "oak_a", "bosimple_tree", []), 
+("ZT_mb_oak_wide_DONT_USE", 0, "oak_b", "bosimple_tree", []), 
+("ZT_mb_lowpoly1_DONT_USE", 0, "plane_tree_a", "0", []),   ("ZT_mb_lowpoly2_DONT_USE", 0, "plane_tree_b", "0", []),   ("ZT_mb_lowpoly3_DONT_USE", 0, "plane_tree_c", "0", []), 
+("ZT_mb_pine_wide_DONT_USE", 0, "pine", "bosimple_tree", []), 
+("ZT_mb_maple_DONT_USE", 0, "tree_6_a", "bo_tree_6_a", []), 
 # tree_e_meshes.brf from vanilla
-("ZT_mb_oak1", 0, "tree_e_1", "bo_tree_e_1", []), ("ZT_mb_oak2", 0, "tree_e_2", "bo_tree_e_2", []), ("ZT_mb_oak3", 0, "tree_e_3", "bo_tree_e_3", []), 
-("ZT_mb_poplar1", 0, "tree_f_1", "bo_tree_f_1", []), ("ZT_mb_poplar2", 0, "tree_f_2", "bo_tree_f_1", []), ("ZT_mb_poplar3", 0, "tree_f_3", "bo_tree_f_1", []), 
+("ZT_mb_oak1_DONT_USE", 0, "tree_e_1", "bo_tree_e_1", []), ("ZT_mb_oak2_DONT_USE", 0, "tree_e_2", "bo_tree_e_2", []), ("ZT_mb_oak3_DONT_USE", 0, "tree_e_3", "bo_tree_e_3", []), 
+("ZT_mb_poplar1_DONT_USE", 0, "tree_f_1", "bo_tree_f_1", []), ("ZT_mb_poplar2_DONT_USE", 0, "tree_f_2", "bo_tree_f_1", []), ("ZT_mb_poplar3_DONT_USE", 0, "tree_f_3", "bo_tree_f_1", []), 
 # xtree_meshes.brf from vanilla
-("ZT_mb_chestnut_tall", 0, "tree_2_b", "bo_tree_2_b", []), ("ZT_mb_chestnut_tall2", 0, "tree_2_a", "bo_tree_2_a", []), 
-("ZT_mb_plane4", 0, "plane_d", "bo_plane_d", []), 
-("ZT_mb_plane1", 0, "tree_plane_a", "bo_tree_plane_a", []), ("ZT_mb_plane2", 0, "tree_plane_b", "bo_tree_plane_b", []), ("ZT_mb_plane3", 0, "tree_plane_c", "bo_tree_plane_c", []), 
+("ZT_mb_chestnut_tall_DONT_USE", 0, "tree_2_b", "bo_tree_2_b", []), ("ZT_mb_chestnut_tall2_DONT_USE", 0, "tree_2_a", "bo_tree_2_a", []), 
+("ZT_mb_plane4_DONT_USE", 0, "plane_d", "bo_plane_d", []), 
+("ZT_mb_plane1_DONT_USE", 0, "tree_plane_a", "bo_tree_plane_a", []), ("ZT_mb_plane2", 0, "tree_plane_b", "bo_tree_plane_b", []), ("ZT_mb_plane3", 0, "tree_plane_c", "bo_tree_plane_c", []), 
 
-("ZT_mb_pine", 0, "pine_1_a", "bo_pine_1_a", []), 
-("ZT_mb_pine_blurry", 0, "pine_2_a", "bo_pine_2_a", []), 
-("ZT_mb_pine_uppy", 0, "pine_3_a", "bo_pine_3_a", []), 
-("ZT_mb_pine_wideuppy", 0, "pine_4_a", "bo_pine_4_a", []), 
-("ZT_mb_pine_wideuppy2", 0, "pine_6_a", "bo_pine_6_a", []), 
-("ZT_mb_pine_tall", 0, "pine_1_b", "bo_pine_1_b", []), 
+("ZT_mb_pine_DONT_USE", 0, "pine_1_a", "bo_pine_1_a", []), 
+("ZT_mb_pine_blurry_DONT_USE", 0, "pine_2_a", "bo_pine_2_a", []), 
+("ZT_mb_pine_uppy_DONT_USE", 0, "pine_3_a", "bo_pine_3_a", []), 
+("ZT_mb_pine_wideuppy_DONT_USE", 0, "pine_4_a", "bo_pine_4_a", []), 
+("ZT_mb_pine_wideuppy2_DONT_USE", 0, "pine_6_a", "bo_pine_6_a", []), 
+("ZT_mb_pine_tall_DONT_USE", 0, "pine_1_b", "bo_pine_1_b", []), 
 
-("ZT_mb_acacia1", 0, "tree_5_a", "bo_tree_5_a", []), ("ZT_mb_acacia2", 0, "tree_5_b", "bo_tree_5_b", []), ("ZT_mb_acacia3", 0, "tree_5_c", "bo_tree_5_c", []), ("ZT_mb_acacia4", 0, "tree_5_d", "bo_tree_5_d", []), 
-("ZT_mb_acacia5", 0, "tree_7_a", "bo_tree_7_a", []), ("ZT_mb_acacia6", 0, "tree_7_b", "bo_tree_7_b", []), ("ZT_mb_acacia7", 0, "tree_7_c", "bo_tree_7_c", []), 
+("ZT_mb_acacia1_DONT_USE_THESE_PLANTS", 0, "tree_5_a", "bo_tree_5_a", []), ("ZT_mb_acacia2_USE_REGULAR_PLANT_PROPS_INSTEAD", 0, "tree_5_b", "bo_tree_5_b", []), ("ZT_mb_acacia3_DONT_USE", 0, "tree_5_c", "bo_tree_5_c", []), ("ZT_mb_acacia4", 0, "tree_5_d", "bo_tree_5_d", []), 
+("ZT_mb_acacia5_DONT_USE", 0, "tree_7_a", "bo_tree_7_a", []), ("ZT_mb_acacia6_DONT_USE", 0, "tree_7_b", "bo_tree_7_b", []), ("ZT_mb_acacia7", 0, "tree_7_c", "bo_tree_7_c", []), 
 
-("ZT_mb_maple1", 0, "tree_6_a", "bo_tree_6_a", []), ("ZT_mb_maple2", 0, "tree_6_b", "bo_tree_6_b", []), ("ZT_mb_maple3", 0, "tree_6_c", "bo_tree_6_c", []), ("ZT_mb_maple4", 0, "tree_6_d", "bo_tree_6_d", []), 
+("ZT_mb_maple1_DONT_USE", 0, "tree_6_a", "bo_tree_6_a", []), ("ZT_mb_maple2_DONT_USE", 0, "tree_6_b", "bo_tree_6_b", []), ("ZT_mb_maple3_DONT_USE", 0, "tree_6_c", "bo_tree_6_c", []), ("ZT_mb_maple4_DONT_USE", 0, "tree_6_d", "bo_tree_6_d", []), 
 # xtree_meshes_b.brf from vanilla  
-("ZT_mb_oak_big1", 0, "tree_8_a", "bo_tree_8_a", []), ("ZT_mb_oak_big2", 0, "tree_8_b", "bo_tree_8_b", []), ("ZT_mb_oak_big3", 0, "tree_8_c", "bo_tree_8_c", []), 
-("ZT_mb_ash1", 0, "tree_9_a", "bo_tree_9_a", []), ("ZT_mb_ash2", 0, "tree_9_b", "bo_tree_9_a", []), ("ZT_mb_ash3", 0, "tree_9_c", "bo_tree_9_a", []), 
-("ZT_mb_slim1", 0, "tree_10_a", "bo_tree_10_a", []), ("ZT_mb_slim2", 0, "tree_10_b", "bo_tree_10_a", []), ("ZT_mb_slim3", 0, "tree_10_c", "bo_tree_10_a", []), 
+("ZT_mb_oak_big1_DONT_USE", 0, "tree_8_a", "bo_tree_8_a", []), ("ZT_mb_oak_big2_DONT_USE", 0, "tree_8_b", "bo_tree_8_b", []), ("ZT_mb_oak_big3_DONT_USE", 0, "tree_8_c", "bo_tree_8_c", []), 
+("ZT_mb_ash1_DONT_USE", 0, "tree_9_a", "bo_tree_9_a", []), ("ZT_mb_ash2_DONT_USE", 0, "tree_9_b", "bo_tree_9_a", []), ("ZT_mb_ash3_DONT_USE", 0, "tree_9_c", "bo_tree_9_a", []), 
+("ZT_mb_slim1_DONT_USE", 0, "tree_10_a", "bo_tree_10_a", []), ("ZT_mb_slim2_DONT_USE", 0, "tree_10_b", "bo_tree_10_a", []), ("ZT_mb_slim3_DONT_USE", 0, "tree_10_c", "bo_tree_10_a", []), 
 # xtree_meshes_c.brf from vanilla 
-("ZT_mb_yew1", 0, "tree_17_a", "bo_tree_17_a", []), ("ZT_mb_yew2", 0, "tree_17_b", "bo_tree_17_b", []), ("ZT_mb_yew3", 0, "tree_17_c", "bo_tree_17_c", []), ("ZT_mb_yew4", 0, "tree_17_d", "bo_tree_17_d", []), 
-("ZT_mb_yew_big", 0, "tree_19_a", "bo_tree_19_a", []), 
+("ZT_mb_yew1_DONT_USE", 0, "tree_17_a", "bo_tree_17_a", []), ("ZT_mb_yew2_DONT_USE", 0, "tree_17_b", "bo_tree_17_b", []), ("ZT_mb_yew3_DONT_USE", 0, "tree_17_c", "bo_tree_17_c", []), ("ZT_mb_yew4_DONT_USE", 0, "tree_17_d", "bo_tree_17_d", []), 
+("ZT_mb_yew_big_DONT_USE", 0, "tree_19_a", "bo_tree_19_a", []), 
 # gutek's flora  (does not mix well with vanilla!!)
 
 #MV: removed missing ("ZT_pl_fir4", 0, "PL_fur4", "0", [])
