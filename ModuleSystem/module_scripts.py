@@ -25073,11 +25073,11 @@ command_cursor_scripts = [
   ("safe_remove_party", [
   	(store_script_param_1, ":party_id"),
 
-  	(str_store_party_name, s1, ":party_id"),
 
   	(try_begin),
   		(eq, "$cheat_mode",1),
   		(neg|party_is_active, ":party_id"),
+        (str_store_party_name, s1, ":party_id"),
   		#(display_message, "@{!}DEBUG: Removing INVALID party {s1}"),
   	(try_end),
 
@@ -25085,6 +25085,7 @@ command_cursor_scripts = [
   		(is_between, ":party_id","p_main_party", "p_scribble_242"),
   		(neq, ":party_id", "p_main_party"),
   		(disable_party, ":party_id"),
+        (str_store_party_name, s1, ":party_id"),
   		(tutorial_box, "@{!}INVALID PARTY BEING REMOVED ({s1})! DISABLED INSTEAD. PLEASE LET THE DEVS KNOW. THIS IS A TEST AGAINST SAVE GAME CORRUPTION."),
 		(try_begin),
 			(eq, "$cheat_mode",1),
@@ -25092,10 +25093,12 @@ command_cursor_scripts = [
 		(try_end),
 	(else_try),
 		(neq, ":party_id", "p_main_party"),
+        (party_is_active, ":party_id"), #avoids error messages when somehow trying to remove invalid parties
         (party_set_extra_text, ":party_id", "str_empty_string"), #just to be sure any extra text doesn't reappear if party ID is reused
 		(remove_party, ":party_id"),
 		(try_begin),
 			(eq, "$cheat_mode",1),
+        (str_store_party_name, s1, ":party_id"),
 			#(display_message, "@{s1} removed"),
 		(try_end),
 	(try_end),

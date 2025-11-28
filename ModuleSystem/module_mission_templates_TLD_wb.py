@@ -225,6 +225,10 @@ dplmc_horse_speed = (  #called in field_ai_triggers
     (agent_is_human, ":agent_no"),
     (agent_get_horse, ":horse_agent", ":agent_no"),
     (agent_get_slot, ":speed_factor", ":agent_no", slot_agent_base_horse_speed),
+    (try_begin),
+        (lt, "$prev_day", 3), #old savegames
+        (assign, ":speed_factor", 100),
+    (try_end),
     (val_mul, ":speed_factor", 115),
     (val_div, ":speed_factor", 100),
     (try_begin),
