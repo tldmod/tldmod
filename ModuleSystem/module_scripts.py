@@ -28518,7 +28518,7 @@ command_cursor_scripts = [
     (else_try),
         (this_or_next|eq, "$g_encountered_party", "p_town_gundabad_ne_outpost"),
         (this_or_next|eq, "$g_encountered_party", "p_town_gundabad_nw_outpost"),
-        (this_or_next|eq, "$g_encountered_party", "p_town_goblin_south_outpost"),
+        #(this_or_next|eq, "$g_encountered_party", "p_town_goblin_south_outpost"),
         (this_or_next|eq, "$g_encountered_party", "p_town_troll_cave"),
         (this_or_next|eq, "$g_encountered_party", "p_town_erebor"),
         (eq, "$g_encountered_party", "p_town_ironhill_camp"),

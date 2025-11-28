@@ -132,7 +132,8 @@ parties = [
     ("town_gundabad_ne_outpost" ,"Ruined Dwarf Hold",      icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-25.1,-246.1),[],120),
     ("town_gundabad_nw_outpost" ,"Goblin Hideout",      icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-4.2,-243.6),[],270),
     ("town_goblin_north_outpost","Goblin Town",  			 icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(26.33,-194.48),[],10),
-    ("town_goblin_south_outpost","Goblin_Southern_Outpost",  icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(22.1,-211.2),[],10),				#(18.9,-194.8),[],140),
+    #Moria
+    ("town_goblin_south_outpost","Gladden Fields Outpost",  icon_orctower|pf_tld_down, no_menu, pt_none, fac_moria,0,ai_bhvr_hold,0,(3.1,-166.2),[],10),				#(18.9,-194.8),[],140),
     ("town_gundabad_m_outpost"  ,"Gundabad_Mirkwood_Outpost",icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-13.9,-224.0),[],170),
 # Dwarves towns
     ("town_erebor"       ,"Erebor",          icon_moria |pf_tld_down, no_menu, pt_none, fac_dwarf,0,ai_bhvr_hold,0,(-59.6,-226.4),[],130),
