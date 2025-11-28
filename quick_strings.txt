@@ -1,4 +1,4 @@
-1785
+1794
 qstr_{***}0x07291D {***}0x07291D
 qstr_{***}0x4DB08D {***}0x4DB08D
 qstr_Gate_is_breached! Gate_is_breached!
@@ -656,9 +656,6 @@ qstr_{***}lord_{reg1}:_{s1}_NO {***}lord_{reg1}:_{s1}_NOT_accompanying_{s2}
 qstr_Gained_permanent_+1_to_P Gained_permanent_+1_to_Pathfinding.
 qstr_Gained_permanent_+1_to_S Gained_permanent_+1_to_Spotting.
 qstr_{***}INVALID_PARTY_BEI {***}INVALID_PARTY_BEING_REMOVED_({s1})!_DISABLED_INSTEAD._PLEASE_LET_THE_DEVS_KNOW._THIS_IS_A_TEST_AGAINST_SAVE_GAME_CORRUPTION.
-qstr_{***}DEBUG:_{s1}_made_ {***}DEBUG:_{s1}_made_dormant.
-qstr_{***}DEBUG:_Dormant_{s {***}DEBUG:_Dormant_{s1}_spawned_around_{s2}
-qstr_{***}DEBUG:_No_Dormant {***}DEBUG:_No_Dormant_{s1}_found._Creating_one_near_{s2}
 qstr_{s11}_recovered_from {s11}_recovered_from_a_serious_wound.
 qstr_Volunteers Volunteers
 qstr_Reserves Reserves
@@ -695,6 +692,18 @@ qstr_{s2}_{reg3?was:is_ar {s2}_{reg3?was:is_around_{s5}.
 qstr_Army_of_{s6} Army_of_{s6}
 qstr_Host_of_{s6} Host_of_{s6}
 qstr_The_host_of_Isengard The_host_of_Isengard_has_razed_{s2}!
+qstr_The_battlefield_is_a The_battlefield_is_a_dark_forest.
+qstr_The_battlefield_is_f The_battlefield_is_forested.
+qstr_The_battlefield_is_a_ The_battlefield_is_a_treacherous_marshland.
+qstr_A_golden_mist_from_L A_golden_mist_from_Lórien_covers_the_battlefield.
+qstr_Dark_clouds_from_Mor Dark_clouds_from_Mordor_cover_the_battlefield.
+qstr_A_thunderstorm_from_ A_thunderstorm_from_the_Misty_Mountains_rages_over_the_battlefield.
+qstr_A_poisonous_fog_from A_poisonous_fog_from_Dol_Guldur_lingers_on_the_battlefield.
+qstr_The_defenses_consist The_defenses_consist_of_dark_tunnels_and_underground_halls.
+qstr_The_defenses_lie_in_ The_defenses_lie_in_the_shadow_of_tall_trees,_blocking_out_the_sunlight.
+qstr_The_defenses_lie_in_t The_defenses_lie_in_the_shadow_of_steep_cliffs,_blocking_out_the_sunlight.
+qstr_The_fortress_is_shro The_fortress_is_shrouded_in_darkness.
+qstr_{s17}_^{s18} {s17}_^{s18}
 qstr_{***}warp_array_create {***}warp_array_created_at_{reg1}
 qstr_{***}warp_temp_array_c {***}warp_temp_array_created_at_{reg1}
 qstr_{***}{s0} {***}{s0}

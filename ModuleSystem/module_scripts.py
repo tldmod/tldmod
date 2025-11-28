@@ -2028,7 +2028,7 @@ scripts = [
 	(assign, "$g_player_luck", 200), #no luck in TLD
 	(assign, "$disable_npc_complaints", 0), #MV: back to 0
 	(assign, "$tld_war_began",0),
-	(assign, "$prev_day", 1),
+	(assign, "$prev_day", 3), #InVain: Disabled the original day/night system by setting this to 3
 	(assign, "$dungeons_in_scene", 0), # flag for dungeon presence in a scene
 	(assign, "$found_moria_entrance", 0),
 	(assign, "$current_player_region", -1),
@@ -4714,10 +4714,12 @@ scripts = [
         (end_try),
 
         # Here we check for equipment and wounds
+        #InVain: Also night bonus for orcs, but only skills that affect party movement and seeing: spotting, pathfinding, athletics, riding, wildcraft
         (try_begin),
             (this_or_next|is_between, ":troop_no", companions_begin, companions_end),
             (this_or_next|is_between, ":troop_no", new_companions_begin, new_companions_end),
             (eq, ":troop_no", "trp_player"),
+            (troop_get_type, ":race", ":troop_no"),
             
             (troop_get_slot, ":wound_mask", ":troop_no", slot_troop_wound_mask),
 
@@ -4727,6 +4729,12 @@ scripts = [
                     (store_and, ":check" ,":wound_mask", wound_head), #head injury
                     (neq, ":check", 0),
                     (val_sub, ":modifier_value", 1),
+                (try_end),
+                (try_begin),
+                    (is_currently_night),
+                    (eq, "$prev_day", 3),
+                    (eq, ":race", tf_orc),
+                    (val_add, ":modifier_value", 2),
                 (try_end),
                 (try_begin),
                     (player_has_item, "itm_orc_brew"),
@@ -4767,9 +4775,14 @@ scripts = [
                 (try_end),
                 (try_begin),
                     #dwarf MEANS no riding skills (mtarini) and no mounted archery
-                    (troop_get_type, ":race", ":troop_no"),
                     (eq, ":race", tf_dwarf),
                     (assign, ":modifier_value", -10),
+                (try_end),               
+                (try_begin),
+                    (is_currently_night),
+                    (eq, "$prev_day", 3),
+                    (eq, ":race", tf_orc),
+                    (val_add, ":modifier_value", 1),
                 (try_end),
             (else_try),
                 (eq, ":skill_no", "skl_power_draw"), # Power Draw
@@ -4877,6 +4890,12 @@ scripts = [
                     (neq, ":check", 0),
                     (val_sub, ":modifier_value", 1),
                 (try_end),
+                (try_begin),
+                    (is_currently_night),
+                    (eq, "$prev_day", 3),
+                    (eq, ":race", tf_orc),
+                    (val_add, ":modifier_value", 2),
+                (try_end),
             (else_try),
                 (eq, ":skill_no", "skl_tactics"), # Tactics
                 (try_begin),
@@ -4936,6 +4955,12 @@ scripts = [
                     (neq, ":check", 0),
                     (val_sub, ":modifier_value", 1),
                 (try_end),
+                (try_begin),
+                    (is_currently_night),
+                    (eq, "$prev_day", 3),
+                    (eq, ":race", tf_orc),
+                    (val_add, ":modifier_value", 2),
+                (try_end),
             (else_try),
                 (eq, ":skill_no", "skl_horse_archery"), # Horse archery
                 (try_begin),
@@ -4960,6 +4985,12 @@ scripts = [
                 (eq, ":skill_no", "skl_tracking"), #Wildcraft
                 (try_begin),
                     (troop_has_item_equipped, ":troop_no", "itm_wilderness_cowl"),
+                    (val_add, ":modifier_value", 1),
+                (try_end),                
+                (try_begin),
+                    (is_currently_night),
+                    (eq, "$prev_day", 3),
+                    (eq, ":race", tf_orc),
                     (val_add, ":modifier_value", 1),
                 (try_end),
             (try_end),
@@ -5001,6 +5032,8 @@ scripts = [
 	(store_script_param, ":party_no", 1),
 	(party_get_template_id, ":template_no", ":party_no"), 
 	(party_get_current_terrain, ":terrain", ":party_no"),
+    #(store_faction_of_party, ":faction", ":party_no"),
+    (party_stack_get_troop_id, ":leader", ":party_no", 0),
 	(try_begin), 
 		(this_or_next|eq, ":template_no", "pt_wild_troll"),
 		(eq, ":template_no", "pt_raging_trolls"),
@@ -5010,6 +5043,12 @@ scripts = [
 				(display_message, "@{!}DEBUG: Trolls for Troll quest are sped down."),
 			(try_end),
 	(else_try),
+        (check_quest_active, "qst_deal_with_looters"),
+        (neg|check_quest_concluded, "qst_deal_with_looters"),
+		(eq, ":template_no", "pt_looters"),
+		(set_trigger_result, 65),
+    (else_try),
+		(this_or_next|eq, ":template_no", "pt_looters"),
 		(this_or_next|eq, ":template_no", "pt_refugees"),
 		(			  eq, ":template_no", "pt_runaway_serfs"),
 		(set_trigger_result, 55),
@@ -5048,6 +5087,12 @@ scripts = [
 	  	#	(assign, reg10, ":speed_multiplier"),
 	  	#	(display_message, "@Wildcraft Speed Multiplier - {reg10}", color_good_news),
 	  	#(try_end),
+	(else_try), #orc-led parties are faster at night
+        (is_currently_night),
+        (neq, ":party_no", p_main_party), #player party speed bonus works via pathfinding
+        (troop_get_type, ":leader_race", ":leader"),
+        (eq, ":leader_race", tf_orc),
+		(set_trigger_result, 115),
 	(else_try),                                   
 		(set_trigger_result, 100),
 	(try_end),	
@@ -28400,6 +28445,93 @@ command_cursor_scripts = [
 	(try_end),
 ]),
 
+  # #script_store_terrain_condition_to_s17_s18
+  # # INPUT: none, uses "$current_player_region", "$current_player_landmark", and "$g_encountered_party"
+  # # OUTPUT: none
+  ("store_terrain_condition_to_s17_s18",
+    [
+   (str_clear, s17),
+   (str_clear, s18),
+   (str_clear, s19),
+   #battle terrain
+   (try_begin), #forests
+        (this_or_next|eq, "$current_player_region", region_fangorn),
+        (this_or_next|is_between, "$current_player_region", region_n_mirkwood, region_grey_mountains),
+        (is_between, "$current_player_region", region_druadan_forest, region_anorien),
+        (str_store_string, 18, "@The battlefield is a dark forest."),
+        (assign, "$terrain_condition", tc_dark_forest),
+    (else_try),
+        (this_or_next|eq, "$current_player_region", region_lorien),
+        (is_between, "$current_player_region", region_n_ithilien, region_druadan_forest),
+        (str_store_string, 18, "@The battlefield is forested."),
+        (assign, "$terrain_condition", tc_light_forest),
+    (else_try), #swamps
+        (this_or_next|eq, "$current_player_region", region_gladden_fields),
+        (is_between, "$current_player_region", region_entwash, region_isengard),
+        (str_store_string, 18, "@The battlefield is a treacherous marshland."),
+        (assign, "$terrain_condition", tc_swamp),
+    # (else_try), #hills, not activated because the scenes themselves are still flat
+        # (this_or_next|eq, "$current_player_region", region_lamedon),
+        # (this_or_next|eq, "$current_player_region", region_grey_mountains),
+        # (this_or_next|eq, "$current_player_region", region_dimrill),
+        # (this_or_next|eq, "$current_player_region", region_w_emyn_muil),
+        # (this_or_next|eq, "$current_player_region", region_s_misty_mountains),
+        # (is_between, "$current_player_region", region_emyn_muil, region_lorien),
+        # (str_store_string, 18, "@The battlefield is very rough."),
+        # (assign, "$terrain_condition", tc_hilly),
+    (try_end),
+    
+    #weather
+    (party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
+    (try_begin),
+        (eq, ":encounter_effect", LORIEN_MIST),
+        (str_store_string, 19, "@A golden mist from Lórien covers the battlefield."),
+    (else_try),
+        (eq, ":encounter_effect", SAURON_DARKNESS),
+        (str_store_string, 19, "@Dark clouds from Mordor cover the battlefield."),
+    (else_try),
+        (eq, ":encounter_effect", SARUMAN_STORM),
+        (str_store_string, 19, "@A thunderstorm from the Misty Mountains rages over the battlefield."),
+    (else_try),
+        (eq, ":encounter_effect", GULDUR_FOG),
+        (str_store_string, 19, "@A poisonous fog from Dol Guldur lingers on the battlefield."),
+    (try_end),
+    
+    (try_begin), #sieges
+        (this_or_next|eq, "$g_encountered_party", p_town_moria),
+        (this_or_next|eq, "$g_encountered_party", p_town_gundabad),
+        (eq, "$g_encountered_party", p_town_goblin_north_outpost),
+        (assign, "$terrain_condition", tc_underground),
+        (str_store_string, 18, "@The defenses consist of dark tunnels and underground halls."),
+    (else_try),
+        (this_or_next|eq, "$g_encountered_party", "p_town_gundabad_m_outpost"),
+        (this_or_next|eq, "$g_encountered_party", "p_town_thranduils_halls"),
+        (this_or_next|eq, "$g_encountered_party", "p_town_woodelf_camp"),
+        (this_or_next|eq, "$g_encountered_party", "p_town_woodelf_west_camp"),
+        (this_or_next|eq, "$g_encountered_party", "p_town_woodsmen_village"),
+        (eq, "$g_encountered_party", "p_town_dol_guldur_north_outpost"),
+        (assign, "$terrain_condition", tc_dark_forest),
+        (str_store_string, 18, "@The defenses lie in the shadow of tall trees, blocking out the sunlight."),
+    (else_try),
+        (this_or_next|eq, "$g_encountered_party", "p_town_gundabad_ne_outpost"),
+        (this_or_next|eq, "$g_encountered_party", "p_town_gundabad_nw_outpost"),
+        (this_or_next|eq, "$g_encountered_party", "p_town_goblin_south_outpost"),
+        (this_or_next|eq, "$g_encountered_party", "p_town_troll_cave"),
+        (this_or_next|eq, "$g_encountered_party", "p_town_erebor"),
+        (eq, "$g_encountered_party", "p_town_ironhill_camp"),
+        (assign, "$terrain_condition", tc_mountain),
+        (str_store_string, 18, "@The defenses lie in the shadow of steep cliffs, blocking out the sunlight."),
+    (else_try),
+        (this_or_next|eq, "$g_encountered_party", "p_town_dol_guldur"),
+        (this_or_next|eq, "$g_encountered_party", "p_town_minas_morgul"),
+        (eq, "$g_encountered_party", "p_town_morannon"),
+        (assign, "$terrain_condition", tc_darkness),
+        (str_store_string, 18, "@The fortress is shrouded in darkness."), 
+    (try_end),
+    
+    (str_store_string, 17, "@{s17} ^{s18}"),
+     ]),
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts+ formAI_v5_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts
@@ -31161,6 +31293,7 @@ if is_a_wb_script==1:
 
 ]),
 
+#unused
 ("cf_get_custom_armor_ranges", [
 	(store_script_param_1, ":troop_id"),
 	(store_script_param_2, ":item_id"),
@@ -31181,6 +31314,7 @@ if is_a_wb_script==1:
 	(try_end),
 ]),
 
+#unused
 ("set_mordor_cloud_scene_prop", [
 	(get_player_agent_no, ":player"),
 	(agent_get_position, pos23, ":player"),
@@ -31191,6 +31325,7 @@ if is_a_wb_script==1:
 	(prop_instance_set_scale, ":mordor_clouds", 500,500,500),
 	(display_message, "@{!}Mordor Cloud Spawned"),]),
 
+#unused
 ("lorien_mist_effect", [
 
 	(get_player_agent_no, ":player"),
@@ -31238,7 +31373,7 @@ if is_a_wb_script==1:
 	(try_end),
  ]),
 
-
+#unused
 ("sauron_darkness_effect", [
 
 	(get_player_agent_no, ":player"),
@@ -31286,6 +31421,7 @@ if is_a_wb_script==1:
 	(try_end),
  ]),
 
+#unused
 ("saruman_storm_effect", [
 
 	(get_player_agent_no, ":player"),
@@ -31331,6 +31467,7 @@ if is_a_wb_script==1:
 	(try_end),
  ]),
 
+#unused
 ("guldur_fog_effect", [
 
 	(get_player_agent_no, ":player"),

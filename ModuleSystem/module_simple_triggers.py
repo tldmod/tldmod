@@ -2373,6 +2373,7 @@ simple_triggers = [
         (neg|is_currently_night),
         (assign, "$prev_day", 1),
         (play_sound, "snd_reload_crossbow_continue"), # rooster at dawn
+        ### InVain: Penalties now handled in tld_battlefield_agent_effects
         (try_for_range, ":troop_id", tld_troops_begin, tld_troops_end),
           (call_script, "script_cf_is_a_night_troop", ":troop_id"), #Night Troops Exceptions
           (troop_get_type, ":troop_type", ":troop_id"),
@@ -2414,6 +2415,7 @@ simple_triggers = [
         #debug_point_1,
         (assign, "$prev_day", 0),
         (play_sound, "snd_release_crossbow"), # wolf at dusk
+        ###  InVain: Penalties now handled in tld_battlefield_agent_effects
         (try_for_range, ":troop_id", tld_troops_begin, tld_troops_end),
           
           (call_script, "script_cf_is_a_night_troop", ":troop_id"), #Night Troops Exceptions

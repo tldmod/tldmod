@@ -3,6 +3,8 @@ from header_operations import *
 from header_sounds import *
 from header_mission_templates import *
 from module_constants import *
+from header_terrain_types import *
+
 
 ## MadVader Warband deathcam begin
 
@@ -222,18 +224,22 @@ dplmc_horse_speed = (  #called in field_ai_triggers
     (agent_is_alive, ":agent_no"),
     (agent_is_human, ":agent_no"),
     (agent_get_horse, ":horse_agent", ":agent_no"),
+    (agent_get_slot, ":speed_factor", ":agent_no", slot_agent_base_horse_speed),
+    (val_mul, ":speed_factor", 115),
+    (val_div, ":speed_factor", 100),
     (try_begin),
       (ge, ":horse_agent", 0),
       (store_agent_hit_points, ":horse_hp",":horse_agent"),
       (store_sub, ":lost_hp", 100, ":horse_hp"),
       (try_begin),
-        (le, ":lost_hp", 15),
-        (val_div, ":lost_hp", 2),
-        (store_add, ":speed_factor", 100, ":lost_hp"),
-      (else_try),
-        (val_mul, ":lost_hp", 2),
-        (val_div, ":lost_hp", 3),
-        (store_sub, ":speed_factor", 115, ":lost_hp"),
+        # (le, ":lost_hp", 15),
+        # (val_div, ":lost_hp", 2),
+        # (store_add, ":speed_factor", 100, ":lost_hp"), 
+      # (else_try),
+        (ge, ":lost_hp", 15),
+        (val_mul, ":lost_hp", 3),
+        (val_div, ":lost_hp", 5),
+        (val_sub, ":speed_factor", ":lost_hp"),
       (try_end),
       (agent_get_troop_id, ":agent_troop", ":agent_no"),
       (store_skill_level, ":skl_level", skl_riding, ":agent_troop"),
@@ -241,6 +247,7 @@ dplmc_horse_speed = (  #called in field_ai_triggers
       (val_add, ":speed_multi", 100),
       (val_mul, ":speed_factor", ":speed_multi"),
       (val_div, ":speed_factor", 100),
+      (val_min, ":speed_factor", 100),
       (agent_set_horse_speed_factor, ":agent_no", ":speed_factor"),
     (try_end),
   (try_end),
@@ -3737,7 +3744,7 @@ formations_triggers_moto = [ #4 triggers
 #  ]),
 ]#end formations triggers
 
-
+#InVain: we only use these for fog and weather effects. agent effects are now handled in terrain_conditions
 battle_encounters_effects = [
 
 (ti_before_mission_start, 0, ti_once, [
@@ -3777,13 +3784,13 @@ battle_encounters_effects = [
     (set_startup_ambient_light, 45, 45, 30),
     (set_fog_distance,":fog_str",0xFFF09D),
     #(display_message, "@{!}DEBUG: LORIEN_MIST"),
-    (call_script, "script_lorien_mist_effect"), 
+    #(call_script, "script_lorien_mist_effect"), 
   (else_try),
     (eq, ":encounter_effect", SAURON_DARKNESS),
     (set_startup_sun_light, 10, 10, 10),(set_startup_ambient_light, 30, 30, 30),
     (set_fog_distance,":fog_str",0x212020),
     #(display_message, "@{!}DEBUG: SAURON_DARKNESS"),
-    (call_script, "script_sauron_darkness_effect"), 
+    #(call_script, "script_sauron_darkness_effect"), 
   (else_try),
     (eq, ":encounter_effect", SARUMAN_STORM),
     (set_startup_sun_light, 10, 10, 10),(set_startup_ambient_light, 30, 30, 30),
@@ -3795,13 +3802,13 @@ battle_encounters_effects = [
         (set_fog_distance,1200,0x999999),
     (try_end),
     #(display_message, "@{!}DEBUG: SARUMAN_STORM"),
-    (call_script, "script_saruman_storm_effect"), 
+    #(call_script, "script_saruman_storm_effect"), 
   (else_try),
     (eq, ":encounter_effect", GULDUR_FOG),
     (set_startup_sun_light, 15, 25, 15),(set_startup_ambient_light, 30, 45, 30),
     (set_fog_distance,":fog_str",0x4B6047),
     #(display_message, "@{!}DEBUG: GULDUR_FOG"),
-    (call_script, "script_guldur_fog_effect"), 
+    #(call_script, "script_guldur_fog_effect"), 
   (try_end),
 
  ]),
@@ -5416,4 +5423,255 @@ tld_points_of_interest = [
       # ]), 
     
     
+
+tld_battlefield_agent_effects = [  
+
+(ti_before_mission_start, 0, 0, [(eq, "$prev_day", 3),], #display terrain notification.
+  [
+  (faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+  (try_begin), #underground
+      (eq, "$terrain_condition", tc_underground),
+      (display_message, "@Underground battle: Prepare to fight in the dark."),
+   (else_try), #mountains or evil forests
+      (eq, "$terrain_condition", tc_mountain),
+      (neg|is_currently_night),
+      (display_message, "@Steep mountain sides block out the sunlight."),
+   (else_try), #mountains or evil forests
+      (eq, "$terrain_condition", tc_dark_forest),
+      (neg|is_currently_night),
+      (display_message, "@Big trees block out the sunlight."),
+   (else_try), #evil darkness
+      (eq, "$terrain_condition", tc_darkness),
+      (neg|is_currently_night),
+      (display_message, "@The place is covered in darkness as if it was night."),
+   (try_end),
+   
+   (try_begin),
+      (this_or_next|eq, "$terrain_condition", tc_dark_forest),
+      (this_or_next|eq, "$terrain_condition", tc_light_forest),
+      (eq, "$terrain_condition", tc_swamp),
+      (display_message, "@Rough terrain: Heavy troops are at a disadvantage."),
+    (try_end), 
+    
+    #encounter effect messages
+    (party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
+    (try_begin),
+        (eq, ":encounter_effect", LORIEN_MIST),
+        (eq, ":player_side", faction_side_good),
+		(display_message, "@A golden mist from Lórien covers the battlefield. Your troops feel encouraged by the presence of the Lady.", color_neutral_news),
+    (else_try),
+        (eq, ":encounter_effect", LORIEN_MIST),
+        (neq, ":player_side", faction_side_good),
+        (display_message, "@A golden mist from Lórien covers the battlefield. The witch is near, sending shivers down you and your troops' spine.", color_neutral_news),
+    (else_try),
+        (eq, ":encounter_effect", SAURON_DARKNESS),
+        (eq, ":player_side", faction_side_good),
+		(display_message, "@Dark clouds from Mordor cover the battlefield. Your archers have trouble seeing the enemy, and the presence of evil terrifies your men.", color_neutral_news),
+    (else_try),
+        (eq, ":encounter_effect", SAURON_DARKNESS),
+        (neq, ":player_side", faction_side_good),
+		(display_message, "@Dark clouds from Mordor cover the battlefield. The Dark Lord's presence strengthens you and your men.", color_neutral_news),
+    (else_try),
+        (eq, ":encounter_effect", SARUMAN_STORM),
+        (eq, ":player_side", faction_side_good),
+		(display_message, "@A thunderstorm from the Misty Mountains rages over the battlefield. Your troops are slowed down, and the superstitious amongst the men feel scared.", color_neutral_news),
+    (else_try),
+        (eq, ":encounter_effect", SARUMAN_STORM),
+        (neq, ":player_side", faction_side_good),
+		(display_message, "@A thunderstorm from the Misty Mountains rages over the battlefield. Archers have difficulty in this weather.", color_neutral_news),
+    (else_try),
+        (eq, ":encounter_effect", GULDUR_FOG),
+        (eq, ":player_side", faction_side_good),
+		(display_message, "@A poisonous fog from Dol Guldur lingers on the battlefield. You and your troops feel weakened. There is fear amongst the men.", color_neutral_news),
+    (else_try),
+        (eq, ":encounter_effect", GULDUR_FOG),
+        (neq, ":player_side", faction_side_good),
+		(display_message, "@A poisonous fog from Dol Guldur lingers on the battlefield. You do not feel any different, but you hear your enemies suffer and you can smell their fear.", color_neutral_news),
+    (try_end),
+  ]),
+
+(ti_on_agent_spawn, 0, 0, [(eq, "$prev_day", 3),],
+  [
+    (store_trigger_param_1, ":agent_no"),
+    (agent_is_active, ":agent_no"),
+    (agent_is_human, ":agent_no"),
+    (agent_get_troop_id, ":troop_no", ":agent_no"),
+    (neg|is_between,  ":troop_no", "trp_spider", "trp_dorwinion_sack"),
+    (neq, ":troop_no", "trp_werewolf"),
+    (troop_get_type, ":race", ":troop_no"),
+    (agent_get_party_id, ":agent_party", ":agent_no"),
+    (store_faction_of_party, ":party_faction", ":agent_party"),
+    (faction_get_slot, ":faction_side", ":party_faction", slot_faction_side),   
+    
+    (assign, ":horse_speed_mod", 100),
+    (assign, ":melee_damage_mod", 100),
+    (assign, ":accuracy_mod", 100),
+    (assign, ":speed_mod", 100),
+    (assign, ":reload_speed_mod", 100),
+    (assign, ":ranged_damage_mod", 100),
+
+    #magic effects --> only apply maluses, makes it much easier
+    (party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
+    (try_begin),
+        (eq, ":encounter_effect", LORIEN_MIST),
+        (try_begin),
+            (neq, ":faction_side", faction_side_good),
+            (val_sub, ":horse_speed_mod", 15),
+            (val_sub, ":melee_damage_mod", 5),
+            (val_sub, ":accuracy_mod", 10),
+            (val_sub, ":speed_mod", 10),
+        (try_end), 
+    (else_try),
+        (eq, ":encounter_effect", SAURON_DARKNESS),
+        (try_begin),
+            (eq, ":faction_side", faction_side_good),
+            (val_sub, ":horse_speed_mod", 5),
+            (val_sub, ":melee_damage_mod", 10),
+            (val_sub, ":accuracy_mod", 10),
+            (val_sub, ":speed_mod", 5),
+        (try_end),         
+    (else_try),
+        (eq, ":encounter_effect", SARUMAN_STORM),
+        (try_begin),
+            #(eq, ":faction_side", faction_side_good), #affects everyone
+            (val_sub, ":horse_speed_mod", 10),
+            (val_sub, ":melee_damage_mod", 5),
+            (val_sub, ":accuracy_mod", 20),
+            (val_sub, ":reload_speed_mod", 15),
+            (val_sub, ":speed_mod", 5),
+        (try_end),  
+    (else_try),
+        (eq, ":encounter_effect", GULDUR_FOG),
+        (try_begin),
+            (neq, ":faction_side", faction_side_eye),
+            (val_sub, ":horse_speed_mod", 10),
+            (val_sub, ":melee_damage_mod", 10),
+            (val_sub, ":accuracy_mod", 5),
+            (val_sub, ":reload_speed_mod", 15),
+            (val_sub, ":speed_mod", 5),
+        (try_end),  
+    (try_end),
+    
+    #light troops
+    (store_skill_level, ":athletics", ":troop_no", skl_athletics), #high athletics generally reserved for light troops, also light cavalry
+    (store_attribute_level, ":agility", ":troop_no", ca_agility), #use agility for heroes
+    
+    (try_begin),
+        (troop_is_hero, ":troop_no"),
+        (call_script, "script_ce_get_troop_encumbrance", ":troop_no", -1), #a fully equipped Dol Amroth Knight has ~65; a fully equipped master ranger has ~19
+        (val_sub, reg1, 5), #14-60 9-50
+        (val_max, reg1, 1),
+        (val_div, reg1, 3), #4-20 3-17
+        (val_div, ":agility", 3),
+        (store_sub, ":movement_malus", reg1, ":agility"),
+        (val_max, ":movement_malus", 0),
+        # (str_store_troop_name, s6, ":troop_no"),
+        # (assign, reg78, ":movement_malus"),
+        # (display_message, "@{s6} movement malus: {reg78}"),
+    (else_try),
+        (neg|troop_is_hero, ":troop_no"),
+        (val_mul, ":athletics", 2), # 0-20
+        (val_sub, ":athletics", 6), # 0-14 this somewhat flattens the difference between "light" recruit troops (0-2) and armored elite troops (3-5 athletics)
+        (val_max, ":athletics", 0),
+        (store_sub, ":movement_malus", 15, ":athletics"), #1-15
+    (try_end),
+        
+     #environment effects
+    (try_begin),
+        (this_or_next|eq, "$terrain_condition", tc_dark_forest),
+        (this_or_next|eq, "$terrain_condition", tc_light_forest), #for mountaineous/hilly regions
+        (eq, "$terrain_condition", tc_swamp),
+        (val_sub, ":horse_speed_mod", 10),
+        (val_sub, ":melee_damage_mod", ":movement_malus"),
+        (val_sub, ":accuracy_mod", 5),
+        (val_sub, ":reload_speed_mod", ":movement_malus"),
+        (val_sub, ":speed_mod", ":movement_malus"),
+    (try_end),
+    
+    #night malus/bonus, also underground (disabling night/day)
+    (try_begin), #underground: penaly for everyone except orcs and dwarves...
+        (eq, "$terrain_condition", tc_underground),
+        (neq, ":race", tf_dwarf),
+        (neg|is_between, ":race", tf_orc_begin, tf_orc_end),
+        (neq, ":race", tf_troll),
+        (val_sub, ":melee_damage_mod", 10),
+        (val_sub, ":accuracy_mod", 15),
+        (val_sub, ":reload_speed_mod", 10),
+        (val_sub, ":speed_mod", 10),
+    (else_try), #underground: ... and a small bonus for orcs
+        (this_or_next|is_between, ":race", tf_orc_begin, tf_orc_end),
+        (eq, ":race", tf_troll),
+        (eq, "$terrain_condition", tc_underground),
+        (val_sub, ":melee_damage_mod", -5),
+        (val_sub, ":accuracy_mod", -5),
+        (val_sub, ":reload_speed_mod", -5),
+        (val_sub, ":speed_mod", -5),
+    (else_try), #dense forests at day: orcs get a small bonus
+        (this_or_next|is_between, ":race", tf_orc_begin, tf_orc_end),
+        (eq, ":race", tf_troll),
+        (neg|is_currently_night),
+        (this_or_next|eq, "$terrain_condition", tc_mountain),
+        (eq, "$terrain_condition", tc_dark_forest),
+        (val_sub, ":horse_speed_mod", -5),
+        (val_sub, ":melee_damage_mod", -5),
+        (val_sub, ":accuracy_mod", -5),
+        (val_sub, ":reload_speed_mod", -5),
+        (val_sub, ":speed_mod", -5),
+    (else_try), #night bonus/malus, also magic darkness
+        (this_or_next|is_currently_night),
+        (eq, "$terrain_condition", tc_darkness),
+        (try_begin),
+            (this_or_next|eq, ":race", tf_orc),
+            (eq, ":race", tf_troll),
+            (neq, "$terrain_condition", tc_mountain),
+            (neq, "$terrain_condition", tc_dark_forest),
+            (val_sub, ":horse_speed_mod", -10),
+            (val_sub, ":melee_damage_mod", -10),
+            (val_sub, ":accuracy_mod", -10),
+            (val_sub, ":reload_speed_mod", -10),
+            (val_sub, ":speed_mod", -10),
+        (else_try),
+            (is_between, ":race", tf_urukhai, tf_orc_end),
+            (neq, "$terrain_condition", tc_mountain),
+            (neq, "$terrain_condition", tc_dark_forest),
+            (val_sub, ":horse_speed_mod", -5),
+            (val_sub, ":melee_damage_mod", -5),
+            (val_sub, ":accuracy_mod", -5),
+            (val_sub, ":reload_speed_mod", -5),
+            (val_sub, ":speed_mod", -5),
+        (else_try),
+            (this_or_next|is_between, ":race", tf_elf_begin, tf_elf_end),
+            (eq, ":race", tf_dwarf),
+            (val_sub, ":horse_speed_mod", 5),
+            (val_sub, ":melee_damage_mod", 5),
+            (val_sub, ":accuracy_mod", 5),
+            (val_sub, ":reload_speed_mod", 5),
+            (val_sub, ":speed_mod", 5),
+        (else_try),
+            (call_script, "script_cf_is_a_night_troop", ":troop_no"), #Night Troops Exceptions
+            (val_sub, ":horse_speed_mod", 15),
+            (val_sub, ":melee_damage_mod", 10),
+            (val_sub, ":accuracy_mod", 20),
+            (val_sub, ":reload_speed_mod", 10),
+            (val_sub, ":speed_mod", 10),
+        (try_end),
+    (try_end),
+    
+    (agent_set_horse_speed_factor, ":agent_no", ":horse_speed_mod"), 
+    (agent_set_slot, ":agent_no", slot_agent_base_horse_speed, ":horse_speed_mod"), #transfer to dplmc_horse_speed
+    (agent_set_damage_modifier, ":agent_no", ":melee_damage_mod"),
+    (agent_set_accuracy_modifier, ":agent_no", ":accuracy_mod"), #handled by slot_agent_base_accuracy
+    (agent_set_speed_modifier, ":agent_no", ":speed_mod"),
+    (agent_set_reload_speed_modifier, ":agent_no", ":reload_speed_mod"),
+    (agent_set_ranged_damage_modifier, ":agent_no", ":ranged_damage_mod"),
+    
+    # (try_begin),
+        # (eq, ":troop_no", "trp_player"),
+        # (agent_get_damage_modifier, reg65, ":agent_no"), 
+        # (agent_get_accuracy_modifier, reg66, ":agent_no"),
+        # (agent_get_speed_modifier, reg67, ":agent_no"), 
+        # (agent_get_reload_speed_modifier, reg68, ":agent_no"), 
+        # (display_message, "@modifiers: damage {reg65}; accuracy {reg66}; speed {reg67}; reload {reg68}"),
+    # (try_end),
+  ])
 ]

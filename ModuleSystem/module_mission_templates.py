@@ -1100,6 +1100,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
 
 ] + beorning_shapeshift   #Chaning into bear
 + tld_bow_shield
++ tld_battlefield_agent_effects
 or [] ) + [
 
 	#tld_fix_viewpoint,
@@ -1136,6 +1137,7 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
   tld_kill_or_wounded_triggers,
 
   ] + tld_bow_shield
++ tld_battlefield_agent_effects
   or [] ) + [
 	#tld_fix_viewpoint,
  	custom_tld_spawn_troop, custom_tld_init_battle,

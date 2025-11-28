@@ -4986,7 +4986,7 @@ game_menus = [
   ),
 
 ( "simple_encounter",mnf_enable_hot_keys,
-    "^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.^^Your orders?",
+    "^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.{s17}^^Your orders?",
     "none",
     [	#(set_background_mesh, "mesh_ui_default_menu_window"),
 		(try_begin), 
@@ -5016,6 +5016,7 @@ game_menus = [
 			(call_script, "script_cf_store_landmark_description_in_s17", "$current_player_landmark"),
 			(str_store_string,s4,"@, {s17}."), 
 		(try_end),
+        (call_script, "script_store_terrain_condition_to_s17_s18"),
 
         (assign, "$g_enemy_party", "$g_encountered_party"),
         (assign, "$g_ally_party", -1),
@@ -6797,7 +6798,7 @@ game_menus = [
     ]
  ),
 ( "join_battle",mnf_enable_hot_keys,
-    "^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.",
+    "^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}. {s17}",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window"),
 	
@@ -6818,6 +6819,7 @@ game_menus = [
 			(call_script, "script_cf_store_landmark_description_in_s17", "$current_player_landmark"),
 			(str_store_string,s4,"@, {s17}"), 
 		(try_end),
+        (call_script, "script_store_terrain_condition_to_s17_s18"),
 		
 		(str_store_party_name, 1,"$g_enemy_party"),
         (str_store_party_name, 2,"$g_ally_party"),
@@ -7194,8 +7196,7 @@ game_menus = [
       ]
  ),
 ( "besiegers_camp_with_allies",mnf_enable_hot_keys,
-    "{s1} remains under siege. The banners of {s2} fly above the camp of the besiegers,\
-    where you and your troops are welcomed.",
+    "{s1} is under siege. The banners of {s2} fly above the camp of the besiegers, who are preparing for their next assault. {s17}",
     "none",
     code_to_set_city_background + [
         (str_store_party_name, s1, "$g_encountered_party"),
@@ -7209,6 +7210,8 @@ game_menus = [
           (assign, "$new_encounter", 0),
           (call_script, "script_encounter_init_variables"),
         (try_end),
+        
+        (call_script, "script_store_terrain_condition_to_s17_s18"),
 
         (try_begin),
           (eq, "$g_leave_encounter",1),

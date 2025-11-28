@@ -1174,7 +1174,7 @@ triggers = [
   
   
   # TLD initialization
-  (0, 0, ti_once, [], [
+  (0, 0, ti_once, [(eq, "$prev_day", 4),], [ #InVain: Disabled original day/night system by overwriting this global
       ### TLD troop penalties initialization (foxyman)
       (try_for_range, ":troop_id", tld_troops_begin, tld_troops_end),
         (troop_get_type, ":troop_type", ":troop_id"),

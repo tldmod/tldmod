@@ -220,6 +220,7 @@ slot_agent_animal_is_striking   = 28 #also stores attack range
 slot_agent_array_troop          = 29
 slot_agent_array_number         = 30
 slot_agent_original_team        = 31
+slot_agent_base_horse_speed	    = 32 #needed for keeping horse speed factor between triggers
 
 ########################################################
 ##  FACTION SLOTS          #############################
@@ -2321,6 +2322,7 @@ subfaction_gondor_player_icons = [
 ]
 
 # Daytime/Nighttime penalties system (foxyman), increased and also affecting melee wp (InVain)
+### InVain: Not used anymore, penalties are now handled in tld_battlefield_agent_effects
 Penalties_sys = [
     (tf_male,    [        ], [(wpt_archery, 40),(wpt_throwing, 30),(wpt_one_handed_weapon, 30),(wpt_two_handed_weapon, 30),(wpt_polearm, 30)]),
     (tf_female,  [        ], [(wpt_archery, 40),(wpt_throwing, 30),(wpt_one_handed_weapon, 30),(wpt_two_handed_weapon, 30),(wpt_polearm, 30)]),
@@ -2837,6 +2839,15 @@ SARUMAN_STORM = 5
 GULDUR_FOG = 6
 FELLBEAST = 7
 END_EFFECTS = 8
+
+#terrain conditions $terrain_condition
+tc_underground = 1 #assigns night, only for sieges
+tc_mountain = 2 #offsets orc daylight debuff, only for sieges
+tc_dark_forest = 3 #rough terrain, offsets orc daylight debuff
+tc_light_forest = 4 #rough terrain
+tc_swamp = 5 #rough terrain
+tc_hilly = 5 #rough terrain
+tc_darkness = 7 #assigns night
 
 RANGED_ACCURACY_DEBUFF = 85
 RANGED_ACCURACY_BUFF = 115
