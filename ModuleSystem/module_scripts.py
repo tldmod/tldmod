@@ -31825,10 +31825,11 @@ if is_a_wb_script==1:
         (str_store_agent_name, s2, ":nearby"),
         #(display_message, "@{s2} attacked"),
         (try_begin),
-            (eq, ":dealer_agent", -1), #no dealer agent
-            (agent_deliver_damage_to_agent, ":nearby", ":nearby", ":damage", "itm_troll_aoe"), #we use this weapon to avoid any "on_hit" triggers
-        (else_try),
+            (gt, ":dealer_agent", -1),
+            (agent_is_active, ":dealer_agent"), #hopefully avoid "invalid agent" error"),
             (agent_deliver_damage_to_agent, ":dealer_agent", ":nearby", ":damage", "itm_troll_aoe"),
+        (else_try), #no dealer agent
+            (agent_deliver_damage_to_agent, ":nearby", ":nearby", ":damage", "itm_troll_aoe"), #we use this weapon to avoid any "on_hit" triggers
         (try_end),
         (store_random_in_range,":random_timings",10,50),
         (agent_set_animation_progress, ":nearby", ":random_timings"), # differentiate timings a bit       

@@ -12673,7 +12673,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
    (eq, "$g_talk_troop_faction", "fac_gundabad"),
 
    (try_begin),
-    (eq, "$g_encountered_party", "p_town_dol_guldur"),
+    (eq, "$g_encountered_party_faction", "fac_guldur"), #quick bugfix, instead of replacing g_talk_troop_faction with g_encountered_party_faction everywhere
     (assign, "$g_talk_troop_faction", "fac_guldur"),
    (try_end),
 

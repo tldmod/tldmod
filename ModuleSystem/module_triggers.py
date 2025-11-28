@@ -1667,6 +1667,7 @@ triggers = [
       (try_end),
       (try_begin),
         (troop_slot_eq, "trp_traits", slot_trait_berserker, 0),
+        (eq, 0, 1), #disabled
         (gt, "$trait_check_unarmored_berserker", 0),
         (assign, ":check", "$trait_check_unarmored_berserker"),
         (val_mul, ":check", 5),
