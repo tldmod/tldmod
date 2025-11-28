@@ -1670,7 +1670,7 @@ mission_templates = [ # not used in game
 
     ##### FUGITIVE
     #move fugitive to location of smith, trader or mayor, this needs to be in a timed trigger, or otherwise the randomization does not work
-    (1, 0, ti_once, [(check_quest_active, "qst_hunt_down_fugitive"),(quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),],[
+    (1, 0, ti_once, [(check_quest_active, "qst_hunt_down_fugitive"),(neg|check_quest_concluded, "qst_hunt_down_fugitive"),(quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),],[
         (try_for_agents, ":agent_no"),
             (agent_get_troop_id, ":troop_no", ":agent_no"),
             (is_between, ":troop_no", trp_fugitive_man, trp_spy), 
@@ -1693,10 +1693,11 @@ mission_templates = [ # not used in game
 
     ] + ((is_a_wb_mt==1) and [
     #fugitive behavior
-    (3, 0, 2, [(check_quest_active, "qst_hunt_down_fugitive"),(quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),], 
+    (3, 0, 2, [(check_quest_active, "qst_hunt_down_fugitive"),(neg|check_quest_concluded, "qst_hunt_down_fugitive"),(quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_target_center, "$current_town"),], 
     [(quest_get_slot, ":quest_agent", "qst_hunt_down_fugitive", slot_quest_target_troop), #use this slot to store the agent
     (quest_get_slot, ":quest_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
     (troop_get_slot, ":base_hp_shield", ":quest_troop", slot_troop_hp_shield),
+    (agent_is_active, ":quest_agent"), #just in case
     (try_begin),
         (quest_slot_eq, "qst_hunt_down_fugitive", slot_quest_current_state, 1), #fighting
         (agent_get_slot, ":cur_hp_shield", ":quest_agent", slot_agent_hp_shield),

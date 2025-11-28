@@ -2668,7 +2668,7 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 			(try_begin), 						#sounds for alive horses
 				(agent_is_alive, ":mount"),
 				(store_random_in_range, ":random", 1, 101), 
-				(try_begin),(le, ":random", 3),(agent_play_sound, ":mount", "snd_horse_snort1"),(try_end),
+				(try_begin),(le, ":random", 2),(agent_play_sound, ":mount", "snd_horse_snort1"),(try_end),
 			(else_try), 						#sounds for dying horses
 				(agent_slot_eq, ":mount", slot_agent_mount_dead, 0),
 				(agent_play_sound, ":mount", "snd_neigh1"),
@@ -2684,7 +2684,8 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 				(agent_slot_eq, ":mount", slot_agent_mount_dead, 0),
 				(agent_play_sound, ":mount", "snd_camel_death"),
 				(agent_set_slot,":mount", slot_agent_mount_dead, 1),
-			(try_end),		(else_try),
+			(try_end),		
+        (else_try),
 			(eq, ":item", "itm_spider"),			# CppCoder: Spider sounds
 			(try_begin), 	
 				(agent_is_alive, ":mount"),
@@ -2696,14 +2697,15 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 				(agent_set_slot,":mount", slot_agent_mount_dead, 1),
 			(try_end),
 		(else_try),
+			(is_between, ":item", item_warg_begin ,item_warg_end),
 			(try_begin),						#sounds for alive wargs
 				(agent_is_alive, ":mount"),
-				(is_between, ":item", item_warg_begin ,item_warg_end),
-				(val_add, "$wargs_in_battle", 1), #  wargs_in_battle++
+				#(val_add, "$wargs_in_battle", 1), #  wargs_in_battle++
 				(store_random_in_range, ":random", 1, 101), (le, ":random", 2),  # 2% of time
 				#(display_message,"@warg says: 'woof, woof!'"),
 				(agent_play_sound, ":mount", "snd_warg_lone_woof"),
 			(else_try), 						#sounds for dying wargs
+                (neg|agent_is_alive, ":mount"),
 				(agent_slot_eq, ":mount", slot_agent_mount_dead, 0),
 				(agent_play_sound, ":mount", "snd_troll_die"),
 				(agent_set_slot,":mount", slot_agent_mount_dead, 1),
@@ -3912,7 +3914,7 @@ nazgul_flying = ((is_a_wb_mt==1) and [
         (agent_play_sound, ":target_agent", "snd_blunt_hit"),
         (copy_position, pos69, pos30), #needed for script
         (set_show_messages, 0),
-        (call_script, "script_aoe_pushback", 50, 400), #50 damage, 4m radius
+        (call_script, "script_aoe_pushback", 50, 400, -1), #50 damage, 4m radius, no dealer agent
         (agent_deliver_damage_to_agent, ":target_agent", ":target_agent", 50, itm_troll_aoe),
         (set_show_messages, 1),
         
