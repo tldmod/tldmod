@@ -1433,7 +1433,16 @@ fauna_kinds = [
    ['barrel_open', 'bo_barrel_a_repositioned'],
    ['winery_huge_barrel', 'bo_winery_huge_barrel'],
    ['winery_middle_barrel', 'bo_winery_middle_barrel'],
-   ]),     
+   ]),
+   
+
+ ('wheat_field', 
+  0,
+  [['wheat_field_a', '0'],
+   ['wheat_field_b', '0'],
+   ['wheat_field_c', '0'],
+   ['wheat_field_d', '0'],
+   ['wheat_field_e', '0'],]), 
 ]
 
 def save_fauna_kinds():

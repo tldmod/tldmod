@@ -1,4 +1,4 @@
-214
+215
 grass 6442469687300 6
  PW_grass_yellow_e  0
  PW_grass_a_xx  0
@@ -1211,3 +1211,9 @@ misc_barrels 0 5
  barrel_open  bo_barrel_a_repositioned
  winery_huge_barrel  bo_winery_huge_barrel
  winery_middle_barrel  bo_winery_middle_barrel
+wheat_field 0 5
+ wheat_field_a  0
+ wheat_field_b  0
+ wheat_field_c  0
+ wheat_field_d  0
+ wheat_field_e  0
