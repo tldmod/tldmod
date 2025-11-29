@@ -5492,7 +5492,9 @@ scripts = [
 	  (assign, ":can_steal", 1),  # can steal objects of own faction or , of no faction
 	  (try_begin), (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), (assign, ":can_steal", 0),(try_end), # good guys don't steal
       # Loot the defeated party
-      (store_mul, ":loot_probability", player_loot_share, 2),
+      (store_character_level, ":player_level", trp_player),
+      #(store_mul, ":loot_probability", player_loot_share, 2),
+      (store_mul, ":loot_probability", player_loot_share, ":player_level"),
       (val_mul, ":loot_probability", "$g_strength_contribution_of_player"),
       (party_get_skill_level, ":player_party_looting", "p_main_party", "skl_looting"),
       (val_add, ":player_party_looting", 10),
@@ -5670,17 +5672,24 @@ scripts = [
 #script_calculate_main_party_shares:
 # Returns number of player party shares in reg0
 ("calculate_main_party_shares",
-    [ (assign, ":num_player_party_shares",player_loot_share),
+    [ (assign, ":num_player_party_shares",0),
       # Add shares for player's party
       (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
-      (try_for_range, ":i_stack", 1, ":num_stacks"),
+      (try_for_range, ":i_stack", 0, ":num_stacks"),
         (party_stack_get_troop_id,     ":stack_troop","p_main_party",":i_stack"),
+        (store_character_level, ":stack_level", ":stack_troop"),
         (try_begin),
           (neg|troop_is_hero, ":stack_troop"),
           (party_stack_get_size, ":stack_size","p_main_party",":i_stack"),
+          (val_mul, ":stack_size", ":stack_level"),
           (val_add, ":num_player_party_shares", ":stack_size"),
         (else_try),
-          (val_add, ":num_player_party_shares", hero_loot_share),
+          (eq, ":stack_troop", "trp_player"),
+          (store_mul, ":player_share", player_loot_share, ":stack_level"),
+          (val_add, ":num_player_party_shares", ":player_share"),
+        (else_try),
+          (store_mul, ":hero_share", hero_loot_share, ":stack_level"),
+          (val_add, ":num_player_party_shares", ":hero_share"),
         (try_end),
       (try_end),
       (assign, reg0, ":num_player_party_shares"),
