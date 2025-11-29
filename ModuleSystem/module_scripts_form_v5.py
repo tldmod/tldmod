@@ -4700,7 +4700,7 @@ formAI_v5_scripts = [
       (team_set_slot, ":fteam", ":slot", ":div_type"),
       (assign, reg0, ":div_type"),]),
   
-  # script_store_battlegroup_data_moto_moto by motomataru #EDITED TO SLOTS FOR MANY
+  # script_store_battlegroup_data_moto by motomataru #EDITED TO SLOTS FOR MANY
   # DIVISIONS BY CABA'DRIN
   # Input: none
   # Output: sets positions and globals to track data on ALL groups in a battle
@@ -4761,8 +4761,9 @@ formAI_v5_scripts = [
         (agent_get_class, ":agent_class", ":cur_agent"),
         (agent_get_position, pos1, ":cur_agent"),
         
-        (try_begin),
+        (try_begin), #InVain: this block reassigns agents to a standard division. I've disabled it for the player team.
           (agent_is_non_player, ":cur_agent"),
+          (neq, ":bgteam", "$fplayer_team_no"), #InVain: disabled for player team. This invalidates some of the blocks below, but I don't care.
           
           (store_add, ":slot", slot_team_d0_type, ":bgdivision"),
           (team_get_slot, ":bgtype", ":bgteam", ":slot"),
@@ -4845,7 +4846,8 @@ formAI_v5_scripts = [
           (neg | agent_slot_eq, ":cur_agent", slot_agent_new_division, ":bgdivision"),
           (agent_get_slot, ":bgdivision", ":cur_agent", slot_agent_new_division),
           (agent_set_division, ":cur_agent", ":bgdivision"),
-        (try_end),
+        (try_end), #InVain: Division reasssignment END
+        
         (agent_get_troop_id, ":cur_troop", ":cur_agent"),
         (try_begin),
           #(team_get_leader, ":leader", ":bgteam"),
