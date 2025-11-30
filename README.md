@@ -1,10 +1,10 @@
 # TLD usage terms (*what we ask from you*)
 1. Music is to be used as is, without editing in anyway, shape or form. This includes using parts or the whole to create music, or merge with other copyright works:
-   * Credit must be given to composer *Vladan Zivanovic* with a link to web site. www.DarkRuneCreations.com.au. This is to direct other modders to free music which will be available for use under same terms.
+   * Credit must be given to composer *Vladan Zivanovic* with a link to web site, even when offline. *www.DarkRuneCreations.com.au*. This is to direct other modders to free music which will be available for use under same terms.
    * A link to the mod's page should be sent to the composer, using website contact page would be easiest.
 
 2. Don't use any of the assets for commercial purposes. (Feel free to use them to mod other games, though)
-3. Give us credit if you use our stuff. (if you want to credit specific creators, here's our own credit list: http://mbx.streetofeyes.com/index.php/topic,2465.0.html)
+3. Give us credit if you use our stuff. (if you want to credit specific creators, [*here*](https://github.com/tldmod/tldmod/blob/master/credits.txt)'s our own credit list, based on the [original MBX forum thread](https://web.archive.org/web/2017/http://mbx.streetofeyes.com/index.php/topic,2465.0.html#msg58201))
 4. *Optional*: Tell us about what you're doing with this OSP. Show it off! :)
 
 ## Addendum
@@ -329,3 +329,4 @@ The work can still be reused under the original usage terms, at the user's discr
 
 Regards,
 *TLD team*
+
