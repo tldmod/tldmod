@@ -5122,6 +5122,7 @@ scripts = [
 	(else_try), #orc-led parties are faster at night
         (is_currently_night),
         (neq, ":party_no", p_main_party), #player party speed bonus works via pathfinding
+        (gt, ":leader", 0),
         (troop_get_type, ":leader_race", ":leader"),
         (eq, ":leader_race", tf_orc),
 		(set_trigger_result, 115),
