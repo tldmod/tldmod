@@ -65,7 +65,7 @@ info_pages = [
   
   2. Rallying them. Press "V" to encourage your troops and increase your coherence. You also have a chance to rally troops that are already fleeing. You get only a limited amount of rallies per battle! The amount, strength, and range of your rally is affected by your Charisma and Leadership. Your rally is supported by your companions (if they have the leadership skill) and captains.
 
-  It can be quite the advantage if you manage to defeat the enemy commander, because that robs enemies of their leader, they cannot be rallied.   
+  It can be quite the advantage if you manage to defeat the enemy commander, because that robs enemies of their leader, so they cannot be rallied.   
   '''),
 
  ("economy",
@@ -87,13 +87,13 @@ info_pages = [
  ("war_of_the_ring",
   "War of the Ring",
   '''
-  At the beginning of the game the War between good and evil hasn't started yet. You'll be notified when it does. (This does NOT depend on time spent playing, rather on how ready your character is for the war.) While Middle Earth might look like a pretty empty and quiet place at start, it gets filled with hostile parties very quickly once the War starts. Be prepared and use your few days of peace wisely! You can perform quests for the lords and leaders of all allied factions, raise troops and train yourself in the barracks.
+  At the beginning of the game the War between good and evil hasn't started yet. You'll be notified when it does. (Depending on the setting you chose at the start of the campaign, this may depend on time spend or your character's level.) While Middle Earth might look like a pretty empty and quiet place at start, it gets filled with hostile parties very quickly once the War starts. Be prepared and use your few days of peace wisely! You can perform quests for the lords and leaders of all allied factions, raise troops and train yourself in the barracks.
 
-  The war itself can be won or lost, unlike in the original M&B. Every faction has a strength rating - which changes according to faction successes or failures in battles. With strength dropping low enough, it becomes possible for enemies to siege faction cities/camps. When a faction drops to the lowest status, it is possible to defeat it completely by storming its capital.
+  Every faction has a strength rating - which changes according to faction successes or failures in battles. With strength dropping low enough, it becomes possible for enemies to siege faction cities/camps. When a faction drops to the lowest status, it is possible to defeat it completely by storming its capital.
 
   Note that as the player, you cannot simply initiate sieges yourself. You can only help his faction and allies in siege battles if their leaders decide that it is time to go storm the enemy settlement. If you have a high rank and enough influence with a faction, you may however suggest their leader to attack specific settlements. At the highest rank with your home faction, you can also gain the right to lead an assault on a settlement yourself.
 
-  There are several theatres of war in TLD, defined by geography. When one side eliminates all the enemies in its current theatre, it will send an expeditionary force to help allies on other theatres. Expeditionary force will build an advance camp in the other theatre and operate from there. If the good forces are completely defeated, but Mordor and Isengard still stand strong, the two towers will battle each other over total dominance.
+  There are several theatres of war in TLD, defined by geography. When one side eliminates all the enemies in its current theatre, it will send an expeditionary force to help allies on other theatres. Expeditionary force will build an advance camp in the other theatre and operate from there. If the good forces are completely defeated, but Mordor and Isengard still stand strong, the Two Towers will battle each other over total dominance.
   '''),
 
  ("starting_tips",
@@ -121,7 +121,7 @@ info_pages = [
  ("trolls",
   "Trolls",
   '''
-  Trolls are very powerful. Evil players can only recruit them by spending influence points. They do not listen to orders, so keep your troops far away from their devastating attacks!
+  Trolls are very powerful. Evil players can only recruit them by spending influence points. Untrained trolls can become uncontrollable or even run amok!
 
   If you're looking for trolls as a mission, they can be found roaming around settlements they've been harassing (although friendly parties sometimes drive them further away, or outright deal with them before you do), or they roam the Misty Mountains, mostly nearby to their home caves.
   '''),
@@ -154,11 +154,30 @@ info_pages = [
  ("sieges",
   "Siege AI",
   '''
-The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Players command some of their own troops. Use them wisely to help out where needed most.
+The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Players command some of their own troops. Troops from your party will also join when they're near to the player. Use them wisely to help out where needed most.
+
+In order to win a siege attack, you must conquer all three defender reinforcement points. You can only take a reinforcement point if the defenders have already rallied there.
   '''),
   
-("division_placement", "_", "_"), # swy: don't use {!} formatting markers here, the game seemingly doesn't parse them in the game concepts screen, for some reason
-("formations", "_", "_"),  
+("battle_terrain", "Battle Effects: Terrain and Weather",
+  '''
+Terrain and weather can have a big effect on the outcome of a battle. Difficult terrain like forests or marshland makes it different to move and fight, but light-armored troops (generally indicated by a higher athletics skill) suffer much less.
+
+The player and companion NPCs suffer a terrain penalty based on their equipment weight and agility attribute.
+
+Special "magical" weather effects can apply in certain areas. These can strengthen or weaken your troops.
+  '''),
+
+("night_penalty", "Battle Effects: Day and Night",
+  '''
+Orcs and trolls hate the sun, but love the darkness of the night. In some regions, tall mountains or dim forests block out the sun and make fighting at daylight more bearable for orcs.
+Uruks und Uruk-hai fight and run equally well at night or day. 
+Other races fight worse at night than they do at day, Men more so than Elves or Dwarves. However, some Men are accustomed to fighting in the dark and suffer no penalty.
+
+Underground battles are especially difficult. Orcs, Uruks, trolls and Dwarves don't mind fighting in dark tunnels.
+  '''),
+
+("formations", "_", "_"),   # swy: don't use {!} formatting markers here, the game seemingly doesn't parse them in the game concepts screen, for some reason
 
 ]
 

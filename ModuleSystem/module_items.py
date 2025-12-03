@@ -1591,6 +1591,9 @@ items =[
 
 ["spider_mount","Spider",[("spider_black",0)], itp_type_horse|itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(50)|horse_maneuver(75)|horse_charge(25),imodbits_none,[]],
 
+["marker_night_troop","Trait: Night Troop",[("prtcl_snow",0)],itp_type_goods,0,0,weight(0)|abundance(0)|0,imodbits_none],
+["marker_berserker","Trait: Berserker",[("prt_mesh_blood_3",0)],itp_type_goods,0,0,weight(0)|abundance(0)|0,imodbits_none],
+
 #from VC
 ["torch",         "Torch", [("orc_club_a",0)], itp_type_two_handed_wpn|itp_two_handed|itp_primary|itp_shop, itc_greatsword, 11 , weight(2.5)|difficulty(0)|spd_rtng(95) | weapon_length(95)|swing_damage(11 , blunt) | thrust_damage(0 ,  pierce),imodbits_none,
  [(ti_on_init_item, [(set_position_delta,0,60,0),(particle_system_add_new, "psys_torch_fire"),(particle_system_add_new, "psys_torch_smoke"),

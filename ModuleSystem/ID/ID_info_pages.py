@@ -8,7 +8,8 @@ ip_rumours_and_legendary_places = 6
 ip_trolls = 7
 ip_custom_camera = 8
 ip_sieges = 9
-ip_division_placement = 10
-ip_formations = 11
+ip_battle_terrain = 10
+ip_night_penalty = 11
+ip_formations = 12
 
 

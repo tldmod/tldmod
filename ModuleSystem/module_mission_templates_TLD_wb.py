@@ -2229,11 +2229,7 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
       (assign, ":continue", 1),
    (else_try),  #Berserkers
       (neq, ":agent_killer", ":agent_player"),
-      (this_or_next|eq, ":troop_killer", "trp_npc9"), #Gulm
-      (this_or_next|eq, ":troop_killer", "trp_i5_beorning_carrock_berserker"),
-      (this_or_next|eq, ":troop_killer", "trp_i6_isen_uruk_berserker"),
-      (this_or_next|eq, ":troop_killer", "trp_i4_gunda_orc_berserker"),
-      (             eq, ":troop_killer", "trp_i5_khand_pit_master"),
+      (troop_slot_eq, ":troop_killer", slot_troop_is_berserker, 1),
       (assign, ":continue", 1),
    (try_end),
 
@@ -2268,11 +2264,7 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
       (assign, ":continue", 1),
     (else_try),  #Berserkers
       (neq, ":agent_killer", ":agent_player"),
-      (this_or_next|eq, ":troop_killer", "trp_npc9"), #Gulm
-      (this_or_next|eq, ":troop_killer", "trp_i5_beorning_carrock_berserker"),
-      (this_or_next|eq, ":troop_killer", "trp_i6_isen_uruk_berserker"),
-      (this_or_next|eq, ":troop_killer", "trp_i4_gunda_orc_berserker"),
-      (             eq, ":troop_killer", "trp_i5_khand_pit_master"),
+      (troop_slot_eq, ":troop_killer", slot_troop_is_berserker, 1),
       (assign, ":health_regeneration", wp_hr_berserker_rate),
       (assign, ":continue", 1),
     (try_end),
@@ -5434,6 +5426,7 @@ tld_battlefield_agent_effects = [
 (ti_before_mission_start, 0, 0, [(eq, "$prev_day", 3),], #display terrain notification.
   [
   (faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+  (troop_get_type, ":player_race", trp_player),
   (try_begin), #underground
       (eq, "$terrain_condition", tc_underground),
       (display_message, "@Underground battle: Prepare to fight in the dark."),
@@ -5449,7 +5442,19 @@ tld_battlefield_agent_effects = [
       (eq, "$terrain_condition", tc_darkness),
       (neg|is_currently_night),
       (display_message, "@The place is covered in darkness as if it was night."),
-   (try_end),
+   (else_try), #night/day
+      (neq|is_currently_night),
+      (eq, ":player_race", tf_orc),
+      (display_message, "@It is night. You feel how your strength grows and your eyesight becomes sharper in the  darkness."),
+   (else_try), #night
+      (is_currently_night),
+      (this_or_next|eq, ":player_race", tf_urukhai),
+      (eq, ":player_race", tf_uruk),
+      (display_message, "@It is night. As a trained Uruk, you fight at night or day and don't heed light or darkness."),
+    (else_try),
+      (is_currently_night),
+      (display_message, "@It is night. In the darkness, you have to move and fight more carefully."),
+    (try_end),
    
    (try_begin),
       (this_or_next|eq, "$terrain_condition", tc_dark_forest),
@@ -5505,8 +5510,13 @@ tld_battlefield_agent_effects = [
     (neq, ":troop_no", "trp_werewolf"),
     (troop_get_type, ":race", ":troop_no"),
     (agent_get_party_id, ":agent_party", ":agent_no"),
-    (store_faction_of_party, ":party_faction", ":agent_party"),
-    (faction_get_slot, ":faction_side", ":party_faction", slot_faction_side),   
+    (try_begin),
+        (ge, ":agent_party", 0),
+        (store_faction_of_party, ":party_faction", ":agent_party"),
+        (faction_get_slot, ":faction_side", ":party_faction", slot_faction_side),
+    (else_try),
+        (store_troop_faction, ":party_faction", ":troop_no"),
+    (try_end),
     
     (assign, ":horse_speed_mod", 100),
     (assign, ":melee_damage_mod", 100),
@@ -5647,11 +5657,11 @@ tld_battlefield_agent_effects = [
         (else_try),
             (this_or_next|is_between, ":race", tf_elf_begin, tf_elf_end),
             (eq, ":race", tf_dwarf),
-            (val_sub, ":horse_speed_mod", 5),
+            (val_sub, ":horse_speed_mod", 10),
             (val_sub, ":melee_damage_mod", 5),
-            (val_sub, ":accuracy_mod", 5),
+            (val_sub, ":accuracy_mod", 10),
             (val_sub, ":reload_speed_mod", 5),
-            (val_sub, ":speed_mod", 5),
+            (val_sub, ":speed_mod", 10),
         (else_try),
             (call_script, "script_cf_is_a_night_troop", ":troop_no"), #Night Troops Exceptions
             (val_sub, ":horse_speed_mod", 15),

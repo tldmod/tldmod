@@ -1588,7 +1588,7 @@ mission_templates = [ # not used in game
   (10, 0, ti_once, [], [ # Kham - Set Tutorial Message RE: Rumours
       (try_begin),
         (eq, "$first_time_town", 0),(neq, "$cheat_mode", 1), (eq, "$tld_show_tutorials", 1),
-        (tutorial_message, "@While visiting towns, settlements and camps, you can talk to people walking around. Members of different factions have different things to say - some will let you in on their own thoughts, others will share rumours. Both could merely give you a better understanding of the person's culture and faction, or they might hold clues to finding secret locations, or tips and tricks for travelling through the Wilderness and fighting in the War of the Ring.",0,15),
+        (tutorial_message, "@While visiting towns, settlements and camps, you can talk to people walking around. This will help you gain their trust and offer valuable information about the local culture. If you ask, they will also show you the way to the most important people around.",0,15),
         (assign, "$first_time_town",1),
       (try_end),
       ]),
@@ -4635,7 +4635,7 @@ mission_templates = [ # not used in game
       ] or []) + [
       (try_begin),
         (eq, "$formations_tutorial", 3),
-        (tutorial_message, "@The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Attacking players command some of their own troops.", 0 , 15),
+        (tutorial_message, "@The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Players command some of their own troops. Troops from your party will also join when they're near to the player. Use them wisely to help out where needed most. // In order to win a siege attack, you must conquer all three defender reinforcement points. You can only take a reinforcement point if the defenders have already rallied there.", 0 , 15),
       (try_end),
       (val_add, "$formations_tutorial", 1),
       ]),
@@ -6802,6 +6802,7 @@ mission_templates = [ # not used in game
         (try_end),
         (assign, "$temp_2", 0), #for spawn control on scene props, particle effects etc.
         (assign, "$meta_alarm", 0), #for counting stuff
+        (get_player_agent_no, "$current_player_agent"),
         ]),
         
     ] + (is_a_wb_mt==1 and [
@@ -6834,7 +6835,10 @@ mission_templates = [ # not used in game
             (eq, "$g_encountered_party", "p_town_hornburg"),
             (tutorial_message, "@You enter the Glittering Caves. However, in the encompassing darkness, you cannot see its marvels.", 0, 10),
             (agent_get_item_slot, ":item", "$current_player_agent", 1),
-            (agent_unequip_item, "$current_player_agent", ":item"),
+            (try_begin),
+                (ge, ":item", 1),
+                (agent_unequip_item, "$current_player_agent", ":item"),
+            (try_end),
             (agent_equip_item, "$current_player_agent", itm_torch, 1),
             (agent_set_wielded_item, "$current_player_agent", itm_torch),
             (scene_slot_eq, "scn_hornburg_castle", slot_scene_visited, 0),

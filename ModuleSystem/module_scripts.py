@@ -2154,7 +2154,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 4220),  #Rafa: Savegame version
+    (assign,"$savegame_version", 4273),  #Rafa: Savegame version; InVain: Changed to _roughly_ show the rev number, helps with savegame inspection
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -2279,22 +2279,19 @@ scripts = [
 	(troop_set_slot, "trp_killer_witcher", slot_troop_hp_shield, 200),
 	(troop_set_slot, "trp_badass_theo", slot_troop_hp_shield, 200),
 
-	(call_script, "script_get_hp_shield_value", "trp_moria_troll"),
+	# (call_script, "script_get_hp_shield_value", "trp_moria_troll"),
 
-	(call_script, "script_get_hp_shield_value", "trp_mordor_olog_hai"),
+	# (call_script, "script_get_hp_shield_value", "trp_mordor_olog_hai"),
 
-	(call_script, "script_get_hp_shield_value", "trp_isen_armored_troll"),
+	# (call_script, "script_get_hp_shield_value", "trp_isen_armored_troll"),
 
-	(call_script, "script_get_hp_shield_value", "trp_ent"),
+	# (call_script, "script_get_hp_shield_value", "trp_ent"),
 	
+    #trolls
 	(try_for_range, ":trolls", trp_moria_troll, trp_multiplayer_profile_troop_male),
 		(call_script, "script_get_hp_shield_value", ":trolls"),
 	(try_end),
     
-    (troop_set_slot, "trp_i5_beorning_carrock_berserker", slot_troop_hp_shield, 30),
-    (troop_set_slot, "trp_i6_isen_uruk_berserker", slot_troop_hp_shield, 30),
-    (troop_set_slot, "trp_i4_gunda_orc_berserker", slot_troop_hp_shield, 20),
-    (troop_set_slot, "trp_i5_khand_pit_master", slot_troop_hp_shield, 30),
     (troop_set_slot, "trp_player", slot_troop_hp_shield, 1),
     (troop_set_slot, "trp_black_numenorean_sorcerer", slot_troop_hp_shield, 100),
     (troop_set_slot, "trp_orc_pretender", slot_troop_hp_shield, 50),
@@ -2305,6 +2302,32 @@ scripts = [
     (try_for_range, ":NPC_hp_shield", "trp_npc18", "trp_werewolf"),
 		(troop_set_slot, ":NPC_hp_shield", slot_troop_hp_shield, 1),
 	(try_end),	
+
+    #Night troops 
+	(try_for_range, ":troop_id", soldiers_begin, soldiers_end),
+        (this_or_next|eq, ":troop_id", "trp_a5_dun_night_wolf"),
+        (this_or_next|eq, ":troop_id", "trp_ac5_dun_raven_rider"),
+        (this_or_next|eq, ":troop_id", "trp_i5_woodmen_night_guard"),
+        (this_or_next|eq, ":troop_id", "trp_a5_woodmen_night_stalker"),
+        (this_or_next|eq, ":troop_id", "trp_i5_corsair_night_raider"),
+        (this_or_next|eq, ":troop_id", "trp_a5_corsair_master_assassin"),
+        (this_or_next|eq, ":troop_id", "trp_i5_far_harad_panther_guard"),
+        (this_or_next|eq, ":troop_id", "trp_i6_frealaf_raider"),
+        (			  eq, ":troop_id", "trp_a5_blackroot_shadow_hunter"),
+        (troop_set_slot, ":troop_id", slot_troop_is_night_troop, 1),
+        (troop_add_item, ":troop_id", "itm_marker_night_troop"),
+    #Berserkers
+    (else_try),
+        (this_or_next|eq, ":troop_id", "trp_i5_beorning_carrock_berserker"),
+        (this_or_next|eq, ":troop_id", "trp_i6_isen_uruk_berserker"),
+        (this_or_next|eq, ":troop_id", "trp_i5_gunda_orc_berserker"),
+        (			  eq, ":troop_id", "trp_i5_khand_pit_master"),
+        (troop_set_slot, ":troop_id", slot_troop_is_berserker, 1),
+        (troop_add_item, ":troop_id", "itm_marker_berserker"),
+        (troop_set_slot, ":troop_id", slot_troop_hp_shield, 40),
+        (troop_set_slot, "trp_i5_gunda_orc_berserker", slot_troop_hp_shield, 20), #exception
+        (troop_set_slot, "trp_npc9", slot_troop_is_berserker, 1), #Gulm
+	(try_end),
 
 	#Init Health Regeneration on Kill
 
@@ -4385,7 +4408,7 @@ scripts = [
 	  (else_try),
 		(eq,":item_no","itm_camel"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Can scare horses"),(try_end),
-        (set_trigger_result, color_item_text_bonus),        
+        (set_trigger_result, color_item_text_bonus),
       (else_try),
 		#(store_and,reg20,":itp", itp_food), (neq, reg20,0),
 		#(eq,":itp", itp_food), 
@@ -4408,6 +4431,15 @@ scripts = [
           (set_trigger_result, color_item_text_morale),
         (try_end),
     ] + (is_a_wb_script==1 and [
+      (else_try),
+	  	(eq, ":item_no", "itm_marker_night_troop"),
+        (try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Not affected by nighttime"),(try_end),
+        (set_trigger_result, color_item_text_bonus),
+      (else_try),
+	  	(eq, ":item_no", "itm_marker_berserker"),
+        (try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Increased health and stagger resistance"),(try_end),
+        (try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Can heal on kill"),(try_end),
+        (set_trigger_result, color_item_text_bonus),
 	  (else_try),
 		(this_or_next|eq, ":type", itp_type_bow),
       	(this_or_next|eq, ":type", itp_type_crossbow),
@@ -24287,16 +24319,7 @@ scripts = [
 
 		(assign, ":continue", 1),
 		(try_begin),
-			(this_or_next|eq, ":troop_id", "trp_a5_dun_night_wolf"),
-			(this_or_next|eq, ":troop_id", "trp_ac5_dun_raven_rider"),
-			(this_or_next|eq, ":troop_id", "trp_i5_woodmen_night_guard"),
-			(this_or_next|eq, ":troop_id", "trp_a5_woodmen_night_stalker"),
-			(this_or_next|eq, ":troop_id", "trp_i5_corsair_night_raider"),
-			(this_or_next|eq, ":troop_id", "trp_a5_corsair_master_assassin"),
-			(this_or_next|eq, ":troop_id", "trp_i5_far_harad_panther_guard"),
-			(this_or_next|eq, ":troop_id", "trp_i6_frealaf_raider"),
-			(this_or_next|eq, ":troop_id", "trp_mordor_olog_hai"),
-			(			  eq, ":troop_id", "trp_a5_blackroot_shadow_hunter"),
+            (troop_slot_eq, ":troop_id", slot_troop_is_night_troop, 1),
 			(assign, ":continue", 0),
 		(try_end),
 
@@ -25838,6 +25861,36 @@ command_cursor_scripts = [
         (troop_add_item, "trp_player", "itm_spider_mount"),
         (display_message, "@update savegame: swap spider mount"),
         (assign, "$tld_option_bow_shield", 3), 
+    (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4273),
+        (assign, "$savegame_version", 4273),
+        #Night troops 
+        (try_for_range, ":troop_id", soldiers_begin, soldiers_end),
+            (this_or_next|eq, ":troop_id", "trp_a5_dun_night_wolf"),
+            (this_or_next|eq, ":troop_id", "trp_ac5_dun_raven_rider"),
+            (this_or_next|eq, ":troop_id", "trp_i5_woodmen_night_guard"),
+            (this_or_next|eq, ":troop_id", "trp_a5_woodmen_night_stalker"),
+            (this_or_next|eq, ":troop_id", "trp_i5_corsair_night_raider"),
+            (this_or_next|eq, ":troop_id", "trp_a5_corsair_master_assassin"),
+            (this_or_next|eq, ":troop_id", "trp_i5_far_harad_panther_guard"),
+            (this_or_next|eq, ":troop_id", "trp_i6_frealaf_raider"),
+            (			  eq, ":troop_id", "trp_a5_blackroot_shadow_hunter"),
+            (troop_set_slot, ":troop_id", slot_troop_is_night_troop, 1),
+            (troop_add_item, ":troop_id", "itm_marker_night_troop"),
+        #Berserkers
+        (else_try),
+            (this_or_next|eq, ":troop_id", "trp_i5_beorning_carrock_berserker"),
+            (this_or_next|eq, ":troop_id", "trp_i6_isen_uruk_berserker"),
+            (this_or_next|eq, ":troop_id", "trp_i5_gunda_orc_berserker"),
+            (			  eq, ":troop_id", "trp_i5_khand_pit_master"),
+            (troop_set_slot, ":troop_id", slot_troop_is_berserker, 1),
+            (troop_add_item, ":troop_id", "itm_marker_berserker"),
+            (troop_set_slot, ":troop_id", slot_troop_hp_shield, 40),
+            (troop_set_slot, "trp_i5_gunda_orc_berserker", slot_troop_hp_shield, 20), #exception
+            (troop_set_slot, "trp_npc9", slot_troop_is_berserker, 1), #Gulm
+        (try_end),
     (try_end),
     
     ] or []) + [ 

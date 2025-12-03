@@ -846,7 +846,7 @@ game_menus = [
 
 		(set_visitors, 1, "trp_i3_gunda_orc_fighter",				8),
 		(set_visitors, 2, "trp_i4_gunda_orc_warrior",		6),
-		(set_visitors, 3, "trp_i4_gunda_orc_berserker",			10),
+		(set_visitors, 3, "trp_i5_gunda_orc_berserker",			10),
 		(set_visitors, 4, "trp_i4_moria_fell_goblin",					6),
 		(set_visitors, 5, "trp_c5_moria_clan_rider",						2),
 		(set_visitors, 6, "trp_c4_moria_warg_rider",					4),
@@ -3632,7 +3632,9 @@ game_menus = [
     ("camp_khamtest_back",[],"{!}Back",[(jump_to_menu, "mnu_dev_menu")]),
     ("enable_kham_cheat",[],"{!}Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@{!}Kham Cheat Mode ON!")]),
     ] + (is_a_wb_menu==1 and [
-    ("action_view_all_items",[],"{!}View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
+    #("action_view_all_items",[],"{!}View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
+    ("set_item_modifier",[],"{!}set all wielded items to modifier",[
+        (jump_to_menu, "mnu_set_imod"),(str_store_string, s1, "@{!}none"),(assign, reg5, 0),]),
     ("rohan_set_marshall",[],"{!}Activate Theoden", [
         (faction_set_slot,"fac_rohan",slot_faction_strength_tmp, 5500),
         (display_message, "@{!}Theoden activated"),
@@ -3703,6 +3705,44 @@ game_menus = [
     	]),
 
     ("orc_horde_back",[],"{!}Back to Kham Test menu.",[(jump_to_menu, "mnu_camp_khamtest")]),
+	]
+),
+
+( "set_imod",0,
+	"{!}^^^^^^^^Which modifier? selected {s1}","none",[
+        (gt, reg5, 0),
+        (try_for_range, ":item_slot", 0, 9), #all equippable item slots
+            (troop_set_inventory_slot_modifier, trp_player, ":item_slot", reg5),
+        (try_end),
+        (display_message, "@all equipped items set to {s1}"),],
+	[	
+	("poor", [], "{!}poor", [
+        (assign, reg5, imod_cracked),
+        (jump_to_menu, "mnu_set_imod"),(str_store_string, s1, "@{!}cracked"),
+		]),
+
+	("heavy", [], "{!}heavy", [
+        (assign, reg5, imod_heavy),
+        (jump_to_menu, "mnu_set_imod"),(str_store_string, s1, "@{!}heavy"),
+		]),
+
+	("balanced", [], "{!}balanced", [
+        (assign, reg5, imod_balanced),
+        (jump_to_menu, "mnu_set_imod"),(str_store_string, s1, "@{!}balanced"),
+		]),
+
+	("reinforced", [], "{!}reinforced", [
+        (assign, reg5, imod_reinforced),
+        (jump_to_menu, "mnu_set_imod"),(str_store_string, s1, "@{!}reinforced"),
+		]),
+
+	("lordly_(armour)", [], "{!}lordly", [
+        (assign, reg5, imod_lordly),
+        (jump_to_menu, "mnu_set_imod"),(str_store_string, s1, "@{!}lordly"),
+		]),
+
+    ("imod_back",[],"{!}Back to Kham Test menu.",[(jump_to_menu, "mnu_camp_khamtest")]),
+    ("imod_back_map",[],"{!}Back to map.",[(change_screen_map)]),
 	]
 ),
 ## Kham Test End
@@ -4567,13 +4607,15 @@ game_menus = [
 # Find and grab item cheat
 
 ("cheat_find_item",0,
-"{!}Current item range: {reg5} to {reg6}",
+"{!}Current item range: {reg5} {s5} to {reg6} {s6}",
 "none",
 [ (set_background_mesh, "mesh_ui_default_menu_window"),
   (assign, reg5, "$cheat_find_item_range_begin"),
   (store_add, reg6, "$cheat_find_item_range_begin", max_inventory_items),
   (val_min, reg6, "itm_good_mace"),
   (val_sub, reg6, 1),
+  (str_store_item_name, s5, reg5),
+  (str_store_item_name, s6, reg6),
 ],
 [
   ("cheat_find_item_next_range",[], "{!}Move to next item range.",
@@ -4582,6 +4624,17 @@ game_menus = [
       (try_begin),
         (ge, "$cheat_find_item_range_begin", "itm_good_mace"),
         (assign, "$cheat_find_item_range_begin", 0),
+      (try_end),
+      (jump_to_menu, "mnu_cheat_find_item"),
+    ]
+  ),
+
+  ("cheat_find_item_previous_range",[], "{!}Move to previous item range.",
+    [
+      (val_sub, "$cheat_find_item_range_begin", max_inventory_items),
+      (try_begin),
+        (lt, "$cheat_find_item_range_begin", 0),
+        (assign, "$cheat_find_item_range_begin", itm_good_mace-max_inventory_items),
       (try_end),
       (jump_to_menu, "mnu_cheat_find_item"),
     ]
@@ -10211,16 +10264,19 @@ game_menus = [
           (assign, ":lp_scene", "scn_deadmarshes"),
 		  (assign, "$bs_day_sound", "snd_deadmarshes_ambiance"),
 		  (assign, "$bs_night_sound", "snd_wind_ambiance"),
+          (assign, "$play_ambient_sounds", 0),
         (else_try),
           (eq, "$g_encountered_party", "p_legend_mirkwood"),
           (assign, ":lp_scene", "scn_mirkwood"),
 		  (assign, "$bs_day_sound", "snd_evilforest_ambiance"),
 		  (assign, "$bs_night_sound", "snd_evilforest_ambiance"),
+          (assign, "$play_ambient_sounds", 0),
         (else_try),
           #(eq, "$g_encountered_party", "p_legend_fangorn"),
           (assign, ":lp_scene", "scn_fangorn"),
 		  (assign, "$bs_day_sound", "snd_fangorn_ambiance"),
 		  (assign, "$bs_night_sound", "snd_night_ambiance"),
+          (assign, "$play_ambient_sounds", 0),
         (try_end),
         (modify_visitors_at_site,":lp_scene"),
         (reset_visitors),

@@ -981,6 +981,8 @@ friendship_reward_end = 3
 
 #Friendship Rewards End
 
+slot_troop_is_night_troop = 169
+slot_troop_is_berserker = 170
 
 
 # TRAIT SLOTS (=troop slots)

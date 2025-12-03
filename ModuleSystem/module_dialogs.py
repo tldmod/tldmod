@@ -2176,7 +2176,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 # Training
 [anyone|plyr,"player_hire_troop",[ (neg|party_slot_eq, "$g_encountered_party", slot_town_arena, -1)], 
-"I need some training.", "close_window", [(call_script,"script_stand_back"),(jump_to_menu, "mnu_auto_training_ground_trainer")]],
+"I need some training.", "close_window", [(call_script,"script_stand_back"),(finish_mission, 0),(jump_to_menu, "mnu_auto_training_ground_trainer")]],
 
 # Selling prisoners 
 [anyone|plyr, "player_hire_troop", [(store_num_regular_prisoners,reg5),(ge,reg5,1)],
@@ -5681,25 +5681,26 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (else_try),
     (str_store_string, s4, "@Steel must be kept sharp, soldiers and horses fed, fires kept burning, water fetched, wounds tended — a battle less glorious but no less important than the one you will fight on the ramparts. As we are spread too thin already to give you what is required, you must be prepared to provide what is needed to keep your army operational in a siege.^[requires {reg3} resources, {reg15} influence]"),
   (try_end),],
-  "{!}{s4}", "player_siege_discuss_2",
-  []],
-
-[anyone, "player_siege_discuss_2", [
-  (try_begin),
-    (eq, "$player_looks_like_an_orc", 1),
-    (str_store_string, s4, "@Next, if you try to attack an enemy capital, I’ll stick you if you ain’t dead already.. We only march there when the Master commands it. You go where the enemy is weak and can be beaten."),
-  (else_try),
-    (str_store_string, s4, "@Secondly, you do not have permission to lead our people against an enemy capital. These places can only be overcome when the full strength of our forces stands united. You are to strike only where our foe has been weakened sufficiently that they would be defeated."),
-  (try_end)],
   "{!}{s4}", "player_siege_discuss_3",
   []],
+
+#leave this out, as player also can siege capitals if there is no other center left
+# [anyone, "player_siege_discuss_2", [
+  # (try_begin),
+    # (eq, "$player_looks_like_an_orc", 1),
+    # (str_store_string, s4, "@Next, if you try to attack an enemy capital, I’ll stick you if you ain’t dead already.. We only march there when the Master commands it. You go where the enemy is weak and can be beaten."),
+  # (else_try),
+    # (str_store_string, s4, "@Secondly, you do not have permission to lead our people against an enemy capital. These places can only be overcome when the full strength of our forces stands united. You are to strike only where our foe has been weakened sufficiently that they would be defeated."),
+  # (try_end)],
+  # "{!}{s4}", "player_siege_discuss_3",
+  # []],
 
 [anyone, "player_siege_discuss_3", [
   (store_troop_faction,":fac", "$g_talk_troop"), 
   (str_store_faction_name, s2, ":fac"),
   (try_begin),
     (eq, "$player_looks_like_an_orc", 1),
-    (str_store_string, s4, "@Third, {s2} is on its own campaign. We’ll fight with you if the pickings look good, but you better be strong enough to win on your own, or you won’t last long."),
+    (str_store_string, s4, "@Know that {s2} is on its own campaign. We’ll fight with you if the pickings look good, but you better be strong enough to win on your own, or you won’t last long."),
   (else_try),
     (str_store_string, s4, "@Furthermore, you must know that {s2} is occupied with its own campaign. Our banners will follow you into battle if circumstance permits, but do not trust to hope — you may well be forced to stand alone."),
   (try_end)],
