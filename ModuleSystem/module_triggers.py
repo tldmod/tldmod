@@ -109,7 +109,8 @@ triggers = [
           
           (try_begin),
             #swy--> if the item doesn't belong to our faction, bail out early...
-            (eq,":item_faction_mask",0),
+            (this_or_next|eq,":item_faction_mask",0),
+            (item_has_property, ":item", itp_unique), #in theory, this itp should prevent the item from showing up in shops anyway, but just to be sure...
             (set_item_probability_in_merchandise, ":item", 0),
 
 
@@ -313,7 +314,8 @@ triggers = [
           
           (set_item_probability_in_merchandise,":item",100),
           (try_begin),
-            (eq,":item_faction_mask",0), # faction mismatch
+            (this_or_next|eq,":item_faction_mask",0), # faction mismatch
+            (item_has_property, ":item", itp_unique), #in theory, this itp should prevent the item from showing up in shops anyway, but just to be sure...
             (set_item_probability_in_merchandise,":item",0),
     ] + (is_a_wb_trigger==1 and [   
           (else_try), #InVain: Rank requirement for items + reduction chance per trading and center relation

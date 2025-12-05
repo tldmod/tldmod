@@ -2963,6 +2963,12 @@ itemsfile version 2
  itm_spider_mount Spider Spider 1  spider_black 0  18014398509486081 0 1200 0 0 100 0 30 0 3 60 75 50 0 0 25 0
 0
 
+ itm_marker_night_troop Trait:_Night_Troop Trait:_Night_Troop 1  prtcl_snow 0  4107 0 0 0 0 100 0 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_marker_berserker Trait:_Berserker Trait:_Berserker 1  prt_mesh_blood_3 0  4107 0 0 0 0 100 0 0 0 0 0 0 0 0 0 0 0
+0
+
  itm_torch Torch Torch 1  orc_club_a 0  6356995 9223635919737716976 11 0 2.5 100 0 0 0 0 11264 95 0 95 0 256 523
 1
 -50  3 1955 3 0 60 0 1965 1 12 1965 1 15 
