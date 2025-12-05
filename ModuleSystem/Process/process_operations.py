@@ -485,7 +485,7 @@ def save_statement_block(ofile,statement_name,can_fail_statement,statement_block
     # swy: enhancement to track down mistyped 'neg' operations when the intention was to use 'neq';
     #      neg|<something> is a modifier that needs to accompany other instructions and not go alone
     #      NOTE: keep in mind that this doesn't catch mistypings like (neq|faction_slot_eq)
-    if (opcode == neg):
+    if opcode == neg:
       print("WARNING: swy: neg (a modifier) used as operation instead of neq, probably a mistake: " + str(statement_name) + " / " + str(calling_script) + " " + str(i))
     # --
 
@@ -496,8 +496,18 @@ def save_statement_block(ofile,statement_name,can_fail_statement,statement_block
     #                   But a (neq|faction_slot_eq) would fail silently because eq|faction_slot_eq = 31|542 = 543, and opcode 543 is defined as scene_slot_eq. 
     #                   so, for all intents and purposes, (neq|faction_slot_eq) is the same as typing (neg|scene_slot_eq)... which is perfectly valid behavior,
     #                   but it's the kind of behavior that you don't want, and will cause subtle bugs. All just because of typing neq| instead of neg|. 
-    if ((opcode & 0xFFFF) not in defined_operations):
-      print("WARNING: swy: unrecognized opcode " + str(opcode & 0xFFFF) + " (full opcode with modifiers in hex: " + hex(opcode) + "). make sure you didn't use 'neq|' instead of 'neg|': " + str(statement_name) + " / " + str(calling_script) + " " + str(i))
+    if (opcode & 0xFFFF) not in defined_operations:
+      print("WARNING: swy: UNRECOGNIZED OPCODE " + str(opcode & 0xFFFF) + " (full opcode with modifiers in hex: " + hex(opcode) + "). make sure you use 'neg|' instead of 'neq|': " + str(statement_name) + " / " + str(calling_script) + " " + str(i))
+    # --
+
+    # swy: detect technically valid opcodes with buggy or unwanted behavior caused by bitwise OR'ing with neq instead of neg, like (neq|faction_slot_eq),
+    #      that we would not be able to detect otherwise. we just define neq with an extra dummy compile-time modifier,
+    #      and we make sure there's only eq in there as the only valid operation when stripped of modifiers.
+    if (opcode & noteq_marker) and (opcode & 0xFFFF) != eq:
+      print("WARNING: swy: BUG: make sure you use 'neg|' instead of 'neq|': " + str(statement_name) + " / " + str(calling_script) + " " + str(i))
+      
+    # swy: then, no matter what, get rid of the dummy marker bit, so that it doesn't appear in the .txt files and cause weird script interpreter bugs
+    opcode &= ~noteq_marker
     # --
 
     save_statement(ofile,opcode,no_variables,statement,variable_list,variable_uses,local_vars, local_var_uses,tag_uses,quick_strings, calling_script)

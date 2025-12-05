@@ -229,10 +229,13 @@ main_hero_fallen          = 1006 # (main_hero_fallen),
 neg          = 0x80000000	 # (neg|<operation>),
 this_or_next = 0x40000000	 # (this_or_next|<operation>),
 
+# swy: dummy compile-time marker (that won't appear in the .txt files) to detect mistakes, and bad lines
+#      that use (neq|<operation>), instead of the expected (neg|<operation>),
+noteq_marker = 0x20000000 
 
-lt           = neg | ge # less than		-- (lt,<value>,<value>),
-neq          = neg | eq # not equal to		-- (neq,<value>,<value>),
-le           = neg | gt # less or equal to	-- (le,<value>,<value>),
+lt           = neg | ge                # less than        -- ( lt,<value>,<value>),
+neq          = neg | eq | noteq_marker # not equal to     -- (neq,<value>,<value>),
+le           = neg | gt                # less or equal to -- ( le,<value>,<value>),
 
 #-------------------------------------------------------------------------------------------
 # CONSEQUENCE OPERATIONS                                                                   -
