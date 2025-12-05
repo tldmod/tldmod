@@ -34,6 +34,11 @@ if (not wb_compile_switch):
 else:
   from module_animations_wb import *
 
+# swy: defined_operations is used to add a check and detect opcodes unrecognized by the game,
+#      but at compile time, see the save_statement_block() function
+import header_operations as header_operations_def_all
+defined_operations = [obj for name, obj in header_operations_def_all.__dict__.items() if isinstance(obj, int) and obj < 0xffff]
+
 def get_id_value(tag, identifier, tag_uses):
   tag_type = -1
   id_no = -1
@@ -479,8 +484,20 @@ def save_statement_block(ofile,statement_name,can_fail_statement,statement_block
 
     # swy: enhancement to track down mistyped 'neg' operations when the intention was to use 'neq';
     #      neg|<something> is a modifier that needs to accompany other instructions and not go alone
+    #      NOTE: keep in mind that this doesn't catch mistypings like (neq|faction_slot_eq)
     if (opcode == neg):
       print("WARNING: swy: neg (a modifier) used as operation instead of neq, probably a mistake: " + str(statement_name) + " / " + str(calling_script) + " " + str(i))
+    # --
+
+    # swy: detect unrecognized opcodes like the ones caused by typos like (neq|is_currently_night) instead of correctly typing (neg|is_currently_night).
+    #      For example: (neq|is_currently_night) would throw 'Unrecognized opcode -2147481345', which means the game reads it as neg|2303,
+    #                   and we're lucky that opcode 2303 is casually undefined, whereas 2302 is not (it's store_num_parties_destroyed_by_player).
+    #
+    #                   But a (neq|faction_slot_eq) would fail silently because eq|faction_slot_eq = 31|542 = 543, and opcode 543 is defined as scene_slot_eq. 
+    #                   so, for all intents and purposes, (neq|faction_slot_eq) is the same as typing (neg|scene_slot_eq)... which is perfectly valid behavior,
+    #                   but it's the kind of behavior that you don't want, and will cause subtle bugs. All just because of typing neq| instead of neg|. 
+    if ((opcode & 0xFFFF) not in defined_operations):
+      print("WARNING: swy: unrecognized opcode " + str(opcode & 0xFFFF) + " (full opcode with modifiers in hex: " + hex(opcode) + "). make sure you didn't use 'neq|' instead of 'neg|': " + str(statement_name) + " / " + str(calling_script) + " " + str(i))
     # --
 
     save_statement(ofile,opcode,no_variables,statement,variable_list,variable_uses,local_vars, local_var_uses,tag_uses,quick_strings, calling_script)

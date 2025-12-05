@@ -19,8 +19,8 @@ def save_triggers(file,template_name,triggers,variable_list,variable_uses,tag_us
   for i in range(len(triggers)):
     trigger = triggers[i]
     file.write("%s %s %s "%(sf(trigger[trigger_check_pos]),sf(trigger[trigger_delay_pos]),sf(trigger[trigger_rearm_pos])))
-    save_statement_block(file, 0, 1, trigger[trigger_conditions_pos]  , variable_list,variable_uses,tag_uses,quick_strings, "mission template " + str(i) + " condition block")
-    save_statement_block(file, 0, 1, trigger[trigger_consequences_pos], variable_list,variable_uses,tag_uses,quick_strings, "mission template " + str(i) + " consequence block")
+    save_statement_block(file, 0, 1, trigger[trigger_conditions_pos]  , variable_list,variable_uses,tag_uses,quick_strings, "mission template " + template_name + "'s " + str(i) + " trigger, condition block, op")
+    save_statement_block(file, 0, 1, trigger[trigger_consequences_pos], variable_list,variable_uses,tag_uses,quick_strings, "mission template " + template_name + "'s " + str(i) + " trigger, consequence block, op ")
     file.write("\n")
   file.write("\n")
 
