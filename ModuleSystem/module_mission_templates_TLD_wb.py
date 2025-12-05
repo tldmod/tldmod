@@ -5443,7 +5443,7 @@ tld_battlefield_agent_effects = [
       (neg|is_currently_night),
       (display_message, "@The place is covered in darkness as if it was night."),
    (else_try), #night/day
-      (neq|is_currently_night),
+      (neg|is_currently_night),
       (eq, ":player_race", tf_orc),
       (display_message, "@It is night. You feel how your strength grows and your eyesight becomes sharper in the  darkness."),
    (else_try), #night

@@ -1614,7 +1614,7 @@ triggers = [
         (party_set_morale, "p_main_party", ":morale"),
         (str_store_string, s27, "str_trait_title_bravery"),
         (try_begin),
-          (neq|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+          (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
           (str_store_string, s27, "@Savagery"),
         (try_end),
         (display_log_message, "@{s27}: Party morale increased.", color_good_news),
