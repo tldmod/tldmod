@@ -2713,7 +2713,7 @@ spr_gondor_mt_gate_tower 0 0 mt_gate_tower bo_mt_gate_tower 0
 spr_gondor_mt_gate_tower_E 0 0 mt_gate_tower 0 0
 
 
-spr_gondor_mt_gate_house 0 0 mt_gate_house bo_mt_gate_house 0
+spr_gondor_mt_wall_gate_house 0 0 mt_wall_gate bo_mt_wall_gate 0
 
 
 spr_gondor_mt_gate_house_E 0 0 mt_gate_house 0 0
@@ -2803,10 +2803,10 @@ spr_gondor_mt_town_house_l 0 0 mt_town_house_l bo_town_house_l 0
 spr_town_house_steppe_i 0 0 town_house_steppe_i bo_town_house_steppe_i 0
 
 
-spr_gondor_mt_wall 0 0 mt_wall bo_mt_wall 0
+spr_gondor_mt_wall_bend 0 0 mt_wall_bend bo_mt_wall_bend 0
 
 
-spr_gondor_mt_wall_E 0 0 mt_wall 0 0
+spr_gondor_mt_wall_straight 0 0 mt_wall bo_mt_wall 0
 
 
 spr_gondor_tirith_gate 0 0 tirith_gate bo_tirith_gate 0

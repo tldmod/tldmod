@@ -17,7 +17,7 @@ imod_deadly      = 15 # --------
 imod_exquisite   = 16 # --------
 imod_masterwork  = 17 # +5 damage, ................. +1 speed, +4 prerequisite
 imod_heavy       = 18 # +2 damage, +3 armor, +10 hp, -2 speed, +1 prerequisite, +4 horse charge
-imod_strong      = 19 # +3 damage, ................. -3 speed, +2 preresuisite
+imod_strong      = 19 # +3 damage, ................. -3 speed, +2 prerequisite
 imod_powerful    = 20 # --------
 imod_tattered    = 21 # .......... -3 armor
 imod_ragged      = 22 # .......... -2 armor 		= "rough"

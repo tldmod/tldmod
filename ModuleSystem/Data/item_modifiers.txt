@@ -31,7 +31,7 @@ imod_lordly Lordly_%s 10 0.05
 imod_lame Lame_%s 0.8 1.0
 imod_swaybacked Swaybacked_%s 0.8 1.0
 imod_stubborn Stubborn_%s 0.9 0.5
-imod_timid Timid_%s 2 0.1
+imod_timid Timid_%s 1.1 0.3
 imod_meek Blood-covered_%s 1.0 0.2
 imod_spirited Spirited_%s 6 0.1
 imod_champion Champion_%s 10 0.05

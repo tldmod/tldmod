@@ -152,11 +152,11 @@ scn_edhellond_center edhellond_center 256 none none 0 0 200 200 -100 0x000000003
   0 
   0 
  New_outer_terrain_seaside_north_1 
-scn_lossarnach_center lossarnach_center 256 none none 0 0 200 200 -100 0x00000003300005000006ada4000051a90000386b00003791 
+scn_lossarnach_center lossarnach_center 256 none none 0 0 200 200 -100 0x00000005300005008009c5a200003ad200005a6f0000739d 
   0 
   0 
  outer_terrain_isen_low_far 
-scn_tarnost_center tarnost_center 256 none none 0 0 200 200 -100 0x30050d0d0002d4b300000e2f000027d200005f66 
+scn_tarnost_center tarnost_center 256 none none 0 0 200 200 -100 0x00000007300005008009c5a200000f5200005b280000739d 
   0 
   0 
  outer_mountains2east 
@@ -195,7 +195,7 @@ scn_edoras_center edoras_center 256 none none 0 0 200 200 -100 0x000000012000050
 scn_aldburg_center aldburg_center 256 none none 0 0 100 100 -100 0x0000000130000500000d234800002fba00004fd900006cf1 
   0 
   0 
- outer_mountains2south 
+ New_outer_mountains2south 
 scn_hornburg_center hornburg_center 256 none none 0 0 100 100 -100 0x0000000330000500000d234800006228000053bf00004eb9 
   0 
   0 
