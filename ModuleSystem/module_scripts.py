@@ -2060,7 +2060,7 @@ scripts = [
 #	(assign, "$sorcerer_quest", 0),
 	(assign, "$rescue_wall_battle", 0),
 	(assign, "$rescue_courtyard_scene_2", 0),
-	(assign, "$rescue_stealth_scene_2", 0),
+	(assign, "$rescue_stealth_scene_2", 0), #unused
 	(assign, "$wall_mounted_troop1", 0),
 	#(assign, "$wall_mounted_troop2", 0),
 	(assign, "$wall_mounted_troop3", 0),
@@ -23119,7 +23119,7 @@ scripts = [
 		(val_sub, "$no_dead_companions", 1),
 	(try_end),
 ]), 
-#script_mt_sneak_1
+#script_mt_sneak_1 #used for sorcerer
 ("mt_sneak_1",[
 	(store_script_param_1, ":enemy_agent"),
 	(try_begin),(eq, "$positions", 3),(eq, "$last_agent_position", 2),(agent_set_scripted_destination, ":enemy_agent", 2),
@@ -23134,40 +23134,7 @@ scripts = [
 	 (else_try),(assign, reg20, "$positions"),(val_add, reg20, 1),(agent_set_scripted_destination, ":enemy_agent", reg20),
 	(try_end),
 ]), 
-#script_mt_sneak_2 #unused
-("mt_sneak_2",[
-	(store_script_param_1, ":enemy_agent"),
-	(try_begin),(eq, "$positions", 4),(agent_set_scripted_destination, ":enemy_agent", 1),
-	 (else_try),(eq, "$positions", 8),(agent_set_scripted_destination, ":enemy_agent", 5),
-	 (else_try),(eq, "$positions", 14),(eq, "$last_agent_position", 13),(agent_set_scripted_destination, ":enemy_agent", 13),
-	 (else_try),(eq, "$positions", 13),(eq, "$last_agent_position", 14),(agent_set_scripted_destination, ":enemy_agent", 12),
-	 (else_try),(eq, "$positions", 12),(eq, "$last_agent_position", 13),(agent_set_scripted_destination, ":enemy_agent", 11),
-	 (else_try),(eq, "$positions", 11),(eq, "$last_agent_position", 12),(agent_set_scripted_destination, ":enemy_agent", 10),
-	 (else_try),(eq, "$positions", 10),(eq, "$last_agent_position", 11),(agent_set_scripted_destination, ":enemy_agent", 9),
-	 (else_try),(eq, "$positions", 20),(eq, "$last_agent_position", 19),(agent_set_scripted_destination, ":enemy_agent", 19),
-	 (else_try),(eq, "$positions", 19),(eq, "$last_agent_position", 20),(agent_set_scripted_destination, ":enemy_agent", 16),
-	 (else_try),(eq, "$positions", 16),(eq, "$last_agent_position", 19),(agent_set_scripted_destination, ":enemy_agent", 15),
-	 (else_try),(assign, reg20, "$positions"),(val_add, reg20, 1),(agent_set_scripted_destination, ":enemy_agent", reg20),
-	(try_end),
-]), 
-#script_isen_sneak_1 #unused
-("isen_sneak_1",[
-	(store_script_param_1, ":enemy_agent"),
-	(try_begin),(eq, "$positions", 1),(agent_set_scripted_destination, ":enemy_agent", 2),
-	 (else_try),(eq, "$positions", 2),(agent_set_scripted_destination, ":enemy_agent", 1),
-	 (else_try),(eq, "$positions", 3),(agent_set_scripted_destination, ":enemy_agent", 4),
-	 (else_try),(eq, "$positions", 4),(agent_set_scripted_destination, ":enemy_agent", 3),
-	 (else_try),(eq, "$positions", 6),(agent_set_scripted_destination, ":enemy_agent", 7),
-	 (else_try),(eq, "$positions", 7),(agent_set_scripted_destination, ":enemy_agent", 6),
-	 (else_try),(eq, "$positions", 9),(agent_set_scripted_destination, ":enemy_agent",10),
-	 (else_try),(eq, "$positions",10),(agent_set_scripted_destination, ":enemy_agent", 9),
-	 (else_try),(eq, "$positions",14),(agent_set_scripted_destination, ":enemy_agent",15),
-	 (else_try),(eq, "$positions",15),(agent_set_scripted_destination, ":enemy_agent",14),
-	 (else_try),(eq, "$positions",16),(agent_set_scripted_destination, ":enemy_agent",17),
-	 (else_try),(eq, "$positions",17),(agent_set_scripted_destination, ":enemy_agent",16),
-	 (else_try),(assign, reg20, "$positions"),(val_add, reg20, 1),(agent_set_scripted_destination, ":enemy_agent", reg20),
-	(try_end),
-]),
+
 #script_wounded_hero_cap_mission_health
 ("wounded_hero_cap_mission_health",[
 	(get_player_agent_no, ":player"),
@@ -23421,20 +23388,6 @@ scripts = [
       (convert_from_fixed_point, "$battle_renown_value"),
       (assign, reg8, "$battle_renown_value"),
       #(display_message, "@Renown value for this battle is {reg8}.",0xFFFFFFFF),
-]),
-  
-# script_injure_companions #unused - instead script_injury_routine is called directly
-("injure_companions",[
- 	 (try_begin),
-		(eq, "$tld_option_injuries",1),
-		(try_for_range, ":npc",companions_begin,new_companions_end), # assume companions are always in our main party, if ever spawned on battlefield
-        	(this_or_next|is_between, ":npc", companions_begin, companions_end),
-    		(is_between, ":npc", new_companions_begin, new_companions_end),
-			(troop_slot_eq, ":npc", slot_troop_wounded, 1), # was wounded in this battle?
-			(call_script, "script_injury_routine", ":npc"),
-			(troop_set_slot,":npc", slot_troop_wounded, 0),
-		(try_end),
-	(try_end),  
 ]),
 
 #script_check_equipped_items
@@ -31359,219 +31312,11 @@ if is_a_wb_script==1:
 
 ]),
 
-#unused
-("cf_get_custom_armor_ranges", [
-	(store_script_param_1, ":troop_id"),
-	(store_script_param_2, ":item_id"),
-
-	(troop_get_inventory_slot_modifier, ":imod", ":troop_id", ek_body),
-	(gt, ":imod", 0),
-
-	(try_begin),
-		(eq, ":imod", imod_powerful),
-		(eq, ":item_id", "itm_white_tunic_a"),
-		(assign, reg0, "str_dale_coat"),
-		(assign, reg1, "str_tld_wear"),
-	(else_try),
-		(eq, ":imod", imod_fresh),
-		(eq, ":item_id", "itm_white_tunic_a"),
-		(assign, reg0, "str_tld_wear"),
-		(assign, reg1, "str_dale_coat_end"),
-	(try_end),
-]),
-
-#unused
-("set_mordor_cloud_scene_prop", [
-	(get_player_agent_no, ":player"),
-	(agent_get_position, pos23, ":player"),
-	(set_spawn_position, pos23),
-	(spawn_scene_prop, "spr_mordor_clouds_3", 0),
-	(assign, ":mordor_clouds", reg0),
-	(set_fixed_point_multiplier, 10),
-	(prop_instance_set_scale, ":mordor_clouds", 500,500,500),
-	(display_message, "@{!}Mordor Cloud Spawned"),]),
-
-#unused
-("lorien_mist_effect", [
-
-	(get_player_agent_no, ":player"),
-	(agent_get_team, ":player_team", ":player"),
-	(faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
-
-	(try_for_agents, ":agent"),
-		(agent_is_active, ":agent"),
-		(agent_is_alive, ":agent"),
-		(agent_get_team, ":agent_team", ":agent"),
-		(try_begin),
-			(eq, ":player_side", faction_side_good), #If Good
-			(try_begin),
-				(eq, ":agent_team", ":player_team"),
-				(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_BUFF),
-				(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_BUFF),
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@A golden mist from Lórien covers the battlefield. Your troops feel encouraged by the presence of the Lady.", color_neutral_news),
-				(try_end),
-			(else_try),
-				(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF),
-				(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_DEBUFF),
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@A golden mist from Lórien covers the battlefield. The witch is near, sending shivers down you and your troops' spine.", color_neutral_news),
-				(try_end),
-			(try_end),
-		(else_try), #If Player is Evil
-			(eq, ":agent_team", ":player_team"), #And agent is in player's team
-			(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF),
-			(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_DEBUFF),
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@A golden mist from Lórien covers the battlefield. The witch is near, sending shivers down you and your troops' spine.", color_neutral_news),
-				(try_end),
-		(else_try), #If Player is Evil
-			(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_BUFF), #and agent is not in player's team, they must be good.
-			(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_BUFF),
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@A golden mist from Lórien covers the battlefield. Your troops feel encouraged by the presence of the Lady.", color_neutral_news),
-				(try_end),
-		(try_end),
-	(try_end),
- ]),
-
-#unused
-("sauron_darkness_effect", [
-
-	(get_player_agent_no, ":player"),
-	(agent_get_team, ":player_team", ":player"),
-	(faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
-
-	(try_for_agents, ":agent"),
-		(agent_is_active, ":agent"),
-		(agent_is_alive, ":agent"),
-		(agent_get_team, ":agent_team", ":agent"),
-		(try_begin),
-			(eq, ":player_side", faction_side_good), #If Good
-			(try_begin),
-				(eq, ":agent_team", ":player_team"),
-				(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF),
-				(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_DEBUFF),
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@Dark clouds from Mordor cover the battlefield. Your archers have trouble seeing the enemy, and the presence of evil terrifies your men.", color_neutral_news),
-				(try_end),
-			(else_try),
-				(agent_set_damage_modifier, ":agent", WEAPON_DAMAGE_BUFF),
-				(agent_set_speed_modifier, ":agent", SPEED_BUFF),
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@Dark clouds from Mordor cover the battlefield. The Dark Lord's presence strengthens you and your men.", color_neutral_news),
-				(try_end),
-			(try_end),
-		(else_try), #If Player is Evil
-			(eq, ":agent_team", ":player_team"), #And agent is in player's team
-			(agent_set_damage_modifier, ":agent", WEAPON_DAMAGE_BUFF),
-			(agent_set_speed_modifier, ":agent", SPEED_BUFF),
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@Dark clouds from Mordor cover the battlefield. The Dark Lord's presence strengthens you and your men.", color_neutral_news),
-				(try_end),
-		(else_try), #If Player is Evil
-			(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF), #and agent is not in player's team, they must be good.
-			(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_DEBUFF),
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@Dark clouds from Mordor cover the battlefield. Your archers have trouble seeing the enemy, and the presence of evil terrifies your men.", color_neutral_news),
-				(try_end),
-		(try_end),
-	(try_end),
- ]),
-
-#unused
-("saruman_storm_effect", [
-
-	(get_player_agent_no, ":player"),
-	(agent_get_team, ":player_team", ":player"),
-	(faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
-
-	(try_for_agents, ":agent"),
-		(agent_is_active, ":agent"),
-		(agent_is_alive, ":agent"),
-		(agent_get_team, ":agent_team", ":agent"),
-		(try_begin),
-			(eq, ":player_side", faction_side_good), #If Good
-			(try_begin),
-				(eq, ":agent_team", ":player_team"),
-				(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF),
-				(agent_set_speed_modifier, ":agent", SPEED_DEBUFF),
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@A thunderstorm from the Misty Mountains rages over the battlefield. Your troops are slowed down, and the superstitious amongst the men feel scared.", color_neutral_news),
-				(try_end),
-			(else_try),
-				(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF),
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@A thunderstorm from the Misty Mountains rages over the battlefield. Archers have difficulty in this weather.", color_neutral_news),
-				(try_end),
-			(try_end),
-		(else_try), #If Player is Evil
-			(eq, ":agent_team", ":player_team"), #And agent is in player's team
-			(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF),
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@A thunderstorm from the Misty Mountains rages over the battlefield. Archers have difficulty in this weather.", color_neutral_news),
-				(try_end),
-		(else_try), #If Player is Evil
-			(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF), #and agent is not in player's team, they must be good.
-			(agent_set_speed_modifier, ":agent", SPEED_DEBUFF),
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@A thunderstorm from the Misty Mountains rages over the battlefield. Your troops are slowed down, and the superstitious amongst the men feel scared.", color_neutral_news),
-				(try_end),
-		(try_end),
-	(try_end),
- ]),
-
-#unused
-("guldur_fog_effect", [
-
-	(get_player_agent_no, ":player"),
-	(agent_get_team, ":player_team", ":player"),
-	(faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
-
-	(try_for_agents, ":agent"),
-		(agent_is_active, ":agent"),
-		(agent_is_alive, ":agent"),
-		(agent_get_team, ":agent_team", ":agent"),
-		(try_begin),
-			(eq, ":player_side", faction_side_good), #If Good
-			(try_begin),
-				(eq, ":agent_team", ":player_team"),
-				(agent_set_max_hit_points, ":agent", MAX_HEALTH_DEBUFF),
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@A poisonous fog from Dol Guldur lingers on the battlefield. You and your troops feel weakened. There is fear amongst the men.", color_neutral_news),
-				(try_end),
-			(try_end),
-		(else_try), #If Player is Evil
-			(eq, ":agent_team", ":player_team"), #And agent is in player's team
-			# Do nothing
-				(try_begin), #DEBUG
-					(eq, ":agent", ":player"),
-					(display_message, "@A poisonous fog from Dol Guldur lingers on the battlefield. You do not feel any different, but you hear your enemies suffer and you can smell their fear.", color_neutral_news),
-				(try_end),
-		(else_try), #If Player is Evil
-			(agent_set_max_hit_points, ":agent", MAX_HEALTH_DEBUFF), #and agent is not in player's team, they must be good.
-		(try_end),
-	(try_end),
- ]),
-
-
-  #script_agent_reassign_team
+  # DUPLICATE!
+  #script_agent_reassign_team_duplicate
   # INPUT: arg1 = agent_no
   # OUTPUT: none
-  ("agent_reassign_team",
+  ("agent_reassign_team_duplicate",
     [
       (store_script_param, ":agent_no", 1),
       (get_player_agent_no, ":player_agent"),
@@ -31692,34 +31437,6 @@ if is_a_wb_script==1:
 	(position_set_z_to_ground_level, pos3),
 	(agent_set_position, ":teleport_agent", pos3),
 ]),
-
-("wield_agent_weapons", [
-	(store_script_param_1, ":agent"),
-
-	(agent_get_troop_id, ":troop", ":agent"),
-	(assign, ":found", 0),
-	(try_for_range, ":weapons", ek_item_0, ek_head),
-		(eq, ":found", 0),
-		(troop_get_inventory_slot, ":to_wield", ":troop", ":weapons"),
-		(gt, ":to_wield", 0),
-		(item_get_type, ":type", ":to_wield"),
-		(this_or_next|eq,":type", itp_type_one_handed_wpn),
-		(this_or_next|eq,":type", itp_type_two_handed_wpn),
-		(eq, ":type", itp_type_polearm),
-		(agent_set_wielded_item, ":agent", ":to_wield"),
-		(assign, ":found", 1),
-	(try_end),
-	(assign, ":found_2", 0),
-	(try_for_range, ":weapons", ek_item_0, ek_head),
-		(eq, ":found_2", 0),
-		(troop_get_inventory_slot, ":to_wield", "trp_player", ":weapons"),
-		(gt, ":to_wield", 0),
-		(item_get_type, ":type", ":to_wield"),
-		(eq, ":type", itp_type_shield),
-		(agent_set_wielded_item, ":agent", ":to_wield"),
-		(assign, ":found_2", 1),
-	(try_end),
-	]),
 
 #script_cf_surrounded_pushback
 #not used anymore, troll surround attack has been simplified
@@ -31889,7 +31606,7 @@ if is_a_wb_script==1:
         #(display_message, "@{s2} attacked"),
         (try_begin),
             (gt, ":dealer_agent", -1),
-            (agent_is_active, ":dealer_agent"), #hopefully avoid "invalid agent" error"),
+            (agent_is_active, ":dealer_agent"), #hopefully avoid "invalid agent" error"
             (agent_deliver_damage_to_agent, ":dealer_agent", ":nearby", ":damage", "itm_troll_aoe"),
         (else_try), #no dealer agent
             (agent_deliver_damage_to_agent, ":nearby", ":nearby", ":damage", "itm_troll_aoe"), #we use this weapon to avoid any "on_hit" triggers

@@ -7160,10 +7160,10 @@ mission_templates = [ # not used in game
 				(else_try),
 					(eq, reg45, "$rescue_stealth_scene_2"), #unused
 					(neg|eq, "$active_rescue", 4),
-					(call_script, "script_mt_sneak_2", ":enemy"),
+					#(call_script, "script_mt_sneak_2", ":enemy"),
 				(else_try),
 					(eq, "$active_rescue", 4), #unused
-					(call_script, "script_isen_sneak_1", ":enemy"),
+					#(call_script, "script_isen_sneak_1", ":enemy"),
 				(try_end),
 				(try_begin),
 					(neg|gt, "$position_distance", 200),

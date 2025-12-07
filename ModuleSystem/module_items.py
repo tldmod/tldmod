@@ -26,7 +26,117 @@ from module_info import wb_compile_switch as is_a_wb_item
 ####################################################################################################################
 #
 
+# damage formula shortened version
 #raw_damage = weapon_damage * hold_bonus * speed_bonus * (proficiency*0.01*0.15+0.85) * (powerstrike * 0,08 + 1) + STR/5
+
+
+### damage formula longer version
+# if hold_time >= 1.1
+	# hold_bonus = 1.2
+# elif hold_time >= 0.6:
+	# hold_bonus = (1.1 - hold_time) * 0.6 + 1.2
+# elif hold_time >= 0.5:
+	# hold_bonus = 1.5
+# else:
+	# hold_bonus = hold_time + 1.0
+
+# raw_damage = weapon_damage * (clamp(hold_bonus, 1.0, 2.0) * 0.5 + 0.5)
+
+# if weapon_type == 'one_handed' or weapon_type == 'two_handed' or weapon_type == 'polearm':
+	# raw_damage *= math.pow(melee_damage_speed_power, speed_bonus)
+# elif weapon_type == 'crossbow' or weapon_type == 'bow' or weapon_type == 'throwing':
+	# raw_damage *= math.pow(missile_damage_speed_power, speed_bonus)
+
+# if weapon_type == 'crossbow':
+	# if raining:
+		# raw_damage *= 0.75
+# else:
+	# raw_damage *= proficiency * 0.01 * 0.15 + 0.85
+	
+	# if weapon_type == 'bow':
+		# raw_damage *= min(power_draw, difficulty + 4) * 0.14 + 1
+		
+		# if mounted:
+			# raw_damage *= horse_archery * 0.019 + 0.8
+		
+		# if raining:
+			# raw_damage *= 0.9
+	# elif weapon_type == 'throwing':
+		# raw_damage *= power_throw * 0.1 + 1.0
+		
+		# if mounted:
+			# raw_damage *= horse_archery * 0.019 + 0.8
+	# elif weapon_type == 'one_handed' or weapon_type == 'two_handed' or weapon_type == 'polearm':
+		# raw_damage *= power_strike * 0.08 + 1.0
+
+	# raw_damage += strength / 5.0
+
+	# if (weapon_type == 'two_handed' or weapon_type == 'polearm') and (has_shield or mounted):
+		# raw_damage *= 0.85
+		
+		# if weapon_type == 'polearm':
+			# raw_damage *= 0.85
+		
+		# if weapon_flags & itp_two_handed:
+			# raw_damage *= 0.9
+
+# raw_damage = clamp(raw_damage, 0, 500)
+
+
+### attack speed formula
+# float mbAgent::getActionSpeed(int hand, bool reloading)
+# {
+    # mbItem item;
+    # item.m_itemKindNo = -1;
+
+    # if (reloading)
+    # {
+        # const mbItem *temp = getItem(hand);
+        # if (temp)
+            # item = *temp;
+    # }
+    # else
+    # {
+        # item = getWieldedItem(hand);
+    # }
+
+    # if (!item.isValid())
+        # return 1.0f;
+    
+    # mbItemKind *itemKind = item.getItemKind();
+    # int type = itemKind->getType();
+    # mbItem secondaryItem = getWieldedItem(ah_secondary);
+    # float speed = itemKind->getSpeedRating() * 0.01f;
+
+    # if (itemKind->isWeapon())
+    # {
+        # float weaponFactor = type == itp_type_bow ? 0.11f : 0.07f;
+
+        # speed *= 0.01f * (int)getTroop()->getProficiency(itemKind->getProficiency(secondaryItem.isValid())) * weaponFactor + 1.0f - weaponFactor;
+    # }
+
+    # if (type == itp_type_two_handed || type == itp_type_polearm)
+    # {
+        # if (secondaryItem.isValid() || hasMount())
+        # {
+            # speed -= 0.15f;
+
+            # if (itemKind->m_properties & itp_two_handed)
+                # speed -= 0.05f;
+        # }
+    # }
+    # else if (type == itp_type_shield)
+    # {
+        # speed *= g_game->getTroopSkill(m_troopNo, skl_shield, true) * 0.03f + 1.0f;
+    # }
+
+    # if (g_basicGame.isMultiplayer())
+        # speed *= 0.03f * g_networkManager.m_combatSpeed + 0.94f;
+    # else if (itemKind->isMeleeWeapon() && (m_no != g_mission->m_playerAgentNo || rglConfig::Battle::iCombatSpeed > 2))
+        # speed *= 0.03f * rglConfig::Battle::iCombatSpeed + 0.94f;
+
+    # return speed;
+# }
 
 #effective_damage = raw_damage - soak_factor - ((1 - 1/reduction_factor) * (raw_damage - soak_factor)) 
 
@@ -42,122 +152,6 @@ from module_info import wb_compile_switch as is_a_wb_item
 	# elif hit_bone == calf or hit_bone == thigh:
 		# effective_damage *= 0.9
 
-
-def troll_aoe(item):
-  return (ti_on_weapon_attack, [
-    ] + (is_a_wb_item==1 and [
-
-    (store_trigger_param_1, ":agent_no"),
-
-    (agent_is_active, ":agent_no"),
-    (agent_is_alive, ":agent_no"),
-
-    (store_random_in_range, ":rand", 0, 2),
-    (eq, ":rand", 0), # 1/2 chance of dealing AOE
-
-    (agent_get_attack_action, ":action", ":agent_no"),
-  
-    (is_between, ":action", 2, 7),
-    #(display_message, "@Clear"), 
-
-    (agent_get_position, pos9, ":agent_no"),
-    (set_fixed_point_multiplier, 100),
-
-    (try_for_agents, ":aoe_hit", pos9, 200),
-      (agent_is_active, ":aoe_hit"),
-      (agent_is_alive, ":aoe_hit"),
-      (agent_is_human, ":aoe_hit"),
-      (neq, ":aoe_hit", ":agent_no"), #don't hit yourself
-      (gt, ":aoe_hit", 0),
-
-      (agent_get_troop_id, ":victim_troop_id", ":aoe_hit"),
-      (troop_get_type, ":victim_type", ":victim_troop_id"),
-      (agent_get_horse, ":victim_horse", ":aoe_hit"),
-      
-      (store_random_in_range, ":flyback_anim", 0, 2),
-      # then, set animation
-      
-      (neq, ":victim_type", tf_troll), #no flyback for trolls
-
-      (try_begin),   
-      # human (non trolls, non horse) victims
-        (try_begin),
-          (eq, ":flyback_anim", 0),
-      # troll is in front of victim
-          (agent_set_animation, ":aoe_hit", "anim_strike_fly_back_rise_from_left"), # send them flying back
-        (else_try),
-          (agent_set_animation, ":aoe_hit", "anim_strike_fly_back_rise"), # send them flying back
-        (try_end),
-
-      (store_random_in_range, ":rand_sound", 0, 6),
-      (try_begin),
-        (eq, ":rand_sound", 0),
-        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_low_armor_low_damage"),
-      (else_try),
-        (eq, ":rand_sound", 1),
-        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_low_armor_high_damage"),
-      (else_try),
-        (eq, ":rand_sound", 2),
-        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_high_armor_low_damage"),
-      (else_try),
-        (eq, ":rand_sound", 3),
-        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_high_armor_low_damage"),
-      (else_try),
-        (eq, ":rand_sound", 4),
-        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_high_armor_high_damage"),
-      (else_try),
-        (agent_play_sound, ":aoe_hit", "snd_blunt_hit"),
-      (try_end),
-
-        (try_begin),
-          (gt, ":victim_horse", 1),
-          (agent_start_running_away, ":victim_horse"),
-          (agent_stop_running_away, ":victim_horse"),
-        (try_end),
-        (store_random_in_range,":random_timings",1,5),
-        (agent_set_animation_progress, ":aoe_hit", ":random_timings"), # differentiate timings a bit
-
-        (item_get_swing_damage, ":damage", item),
-        (val_div, ":damage", 2),
-        (agent_deliver_damage_to_agent, ":agent_no", ":aoe_hit", ":damage"),
-
-      (try_end),
-    (try_end),
-     ] or []) + [ 
-    ])
-
-def custom_reskin(item):
-  return (ti_on_init_item, [
-    ] + (is_a_wb_item==1 and [
-    # (store_trigger_param_1, ":agent_no"), #disabled to suppress compiler warnings
-    (store_trigger_param_2, ":troop_no"),
-    (troop_slot_eq, ":troop_no", slot_troop_has_custom_armour, 1),
-
-    (call_script, "script_cf_get_custom_armor_ranges", ":troop_no", item),
-    (assign, ":start", reg0),
-    (assign, ":end", reg1),
-
-    (str_clear, s1),
-    #(item_get_slot, ":start", item, slot_item_materials_begin),
-    #(item_get_slot, ":end", item, slot_item_materials_end),
-    (store_sub, ":total", ":end", ":start"),
-    (gt, ":total", 0),
-    (try_begin),
-      (gt, ":troop_no", -1),
-      (troop_is_hero, ":troop_no"),
-      (item_get_slot, ":value", item, slot_item_player_color),
-      (neq, ":value", -1),
-      (val_mod, ":value", ":total"),
-      (val_add, ":value", ":start"),
-    (else_try),
-      (store_random_in_range, ":value", ":start", ":end"),
-    (try_end),
-    (try_begin),
-      (str_store_string, s1, ":value"),
-      (cur_item_set_material, s1, 0),
-    (try_end),
-    ] or []) + [ 
-    ])
 
 
 # Female Armour Variation
@@ -193,9 +187,6 @@ def custom_female(item):
     ] or []) + [ 
     ])
 
-# Dunde's 1 Liner Heraldic Code
-def heraldic(item_tableau):
-  return (ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", item_tableau, ":agent_no", ":troop_no")])
 
 ###Some constants for ease of use.
 ### Kham - Unused imods for mesh hack
