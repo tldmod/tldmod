@@ -5487,7 +5487,7 @@ tld_battlefield_agent_effects = [
     (try_end),
     
     #light troops
-    (store_skill_level, ":athletics", ":troop_no", skl_athletics), #high athletics generally reserved for light troops, also light cavalry
+    (store_skill_level, ":athletics", skl_athletics, ":troop_no"), #high athletics generally reserved for light troops, also light cavalry
     (store_attribute_level, ":agility", ":troop_no", ca_agility), #use agility for heroes
     
     (try_begin),
@@ -5598,14 +5598,25 @@ tld_battlefield_agent_effects = [
     (agent_set_speed_modifier, ":agent_no", ":speed_mod"),
     (agent_set_reload_speed_modifier, ":agent_no", ":reload_speed_mod"),
     (agent_set_ranged_damage_modifier, ":agent_no", ":ranged_damage_mod"),
+
+    # (try_begin),
+        # #(eq, ":troop_no", "trp_player"),
+        # (assign, reg65, ":melee_damage_mod"),
+        # (assign, reg66, ":accuracy_mod"),
+        # (assign, reg67, ":speed_mod"),
+        # (assign, reg68, ":reload_speed_mod"),
+        # (assign, reg69, ":movement_malus"),
+        # (display_message, "@{s1} modifiers set: damage {reg65}; accuracy {reg66}; speed {reg67}; reload {reg68}; movement_malus {reg69}"),
+    # (try_end),
     
     # (try_begin),
-        # (eq, ":troop_no", "trp_player"),
+        # #(eq, ":troop_no", "trp_player"),
+        # (str_store_agent_name, s1, ":agent_no"),
         # (agent_get_damage_modifier, reg65, ":agent_no"), 
         # (agent_get_accuracy_modifier, reg66, ":agent_no"),
         # (agent_get_speed_modifier, reg67, ":agent_no"), 
         # (agent_get_reload_speed_modifier, reg68, ":agent_no"), 
-        # (display_message, "@modifiers: damage {reg65}; accuracy {reg66}; speed {reg67}; reload {reg68}"),
+        # (display_message, "@{s1} modifiers get: damage {reg65}; accuracy {reg66}; speed {reg67}; reload {reg68}"),
     # (try_end),
   ])
 ]

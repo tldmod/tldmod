@@ -2844,6 +2844,7 @@ FELLBEAST = 7
 END_EFFECTS = 8
 
 #terrain conditions $terrain_condition
+tc_none = 0
 tc_underground = 1 #assigns night, only for sieges
 tc_mountain = 2 #offsets orc daylight debuff, only for sieges
 tc_dark_forest = 3 #rough terrain, offsets orc daylight debuff

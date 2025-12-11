@@ -25081,12 +25081,12 @@ command_cursor_scripts = [
 		(neq, ":party_id", "p_main_party"),
         (party_is_active, ":party_id"), #avoids error messages when somehow trying to remove invalid parties
         (party_set_extra_text, ":party_id", "str_empty_string"), #just to be sure any extra text doesn't reappear if party ID is reused
-		(remove_party, ":party_id"),
 		(try_begin),
 			(eq, "$cheat_mode",1),
-        (str_store_party_name, s1, ":party_id"),
+            (str_store_party_name, s1, ":party_id"),
 			#(display_message, "@{s1} removed"),
 		(try_end),
+		(remove_party, ":party_id"),
 	(try_end),
   ]),
 
