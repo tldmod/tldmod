@@ -10740,9 +10740,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         (this_or_next|agent_slot_eq, ":guards", slot_agent_walker_type, 0), #nothing, guards spawned from entry points
         (agent_slot_eq, ":guards", slot_agent_walker_type, 3), #guards spawned per prop
         (agent_get_troop_id, ":troop", ":guards"),
-        (neg|troop_is_hero, ":guards"),
+        (neg|troop_is_hero, ":troop"),
         (is_between, ":guards", soldiers_begin, soldiers_end),
-        (agent_get_item_slot, ":weapon", ":guards", 0), #only send troops that have a weapon
+        (troop_get_inventory_slot, ":weapon", ":troop", ek_item_0), #only send troops that have a weapon
         (ge, ":weapon", 1),
         (store_random_in_range, ":chance", 0, 150),
         (ge, ":score", ":chance"),
