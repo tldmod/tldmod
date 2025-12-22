@@ -1141,6 +1141,8 @@ can_fail_operations = [ge,
                        is_currently_night
                        ]
 
+'''
+
 ### MBSE addon
 is_mbse_active							= 44  #(is_mbse_active),Fails if game is launched without MBSE
 str_cmp									= 3000#(str_cmp, <string_1>, <string_2>, [<case insensitive>]), Fails if strings arent the same
@@ -1238,3 +1240,5 @@ can_fail_operations += [
 	scene_prop_slot_le,
 	scene_prop_slot_lt,
 ]
+
+'''
