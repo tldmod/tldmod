@@ -1662,7 +1662,7 @@ tld_improved_horse_archer_ai =  (1, 0, 0, [ #Run it every 1 second instead of ev
                 (team_get_hold_fire_order, ":hold_fire", ":team_no", ":class_no"),
                 #(assign, ":thrown_ammo", 0),
                 (assign, ":ranged_weapon", -1),
-                (try_for_range, ":item", 0, 4),
+                (try_for_range, ":item", ek_item_0, ek_item_3 + 1),
                   (agent_get_item_slot, ":item_weapon", ":agent_no", ":item"),
                   (gt, ":item_weapon", 0),
                   (item_get_type, ":item_weapon_type", ":item_weapon"),

@@ -2144,7 +2144,7 @@ scene_props = [
         (assign, ":polearm_found", 0),
 
 ] + (is_a_wb_sceneprop==1 and [     
-        (try_for_range, ":weapon_slot", 0, 4), #find polearm
+        (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), #find polearm
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (item_get_type, ":item_type", ":item"),
@@ -2153,7 +2153,7 @@ scene_props = [
             (agent_set_wielded_item, reg0, ":item"),
             (assign, ":polearm_found", 1),
                 (eq, ":var2", 0), #not a patrol
-                (try_for_range, ":weapon_slot", 0, 4), #find shield
+                (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), #find shield
                     (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
                     (gt, ":item", 1),
                     (item_get_type, ":item_type", ":item"),
@@ -2219,7 +2219,7 @@ scene_props = [
 
 ] + (is_a_wb_sceneprop==1 and [   
         (assign, ":bow_found", 0),  
-        (try_for_range, ":weapon_slot", 0, 4), #find bow
+        (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), #find bow
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (item_get_type, ":item_type", ":item"),
@@ -2237,7 +2237,7 @@ scene_props = [
         (agent_set_animation_progress, reg0, reg6),
     (else_try),
         (agent_set_team, reg0, 2), #non-player defender team
-        (try_for_range, ":weapon_slot", 0, 4), #check if they have a bow
+        (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), #check if they have a bow
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (item_get_type, ":item_type", ":item"),
@@ -3210,7 +3210,7 @@ scene_props = [
     (store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),
         
     #remove weapons and helms    
-        (try_for_range, ":weapon_slot", 0, 4), 
+        (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), 
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (agent_unequip_item, reg0, ":item", ":weapon_slot"),
@@ -3237,7 +3237,7 @@ scene_props = [
     
         #remove weapons and helms
   ] + (is_a_wb_sceneprop==1 and [ 
-        (try_for_range, ":weapon_slot", 0, 4), 
+        (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), 
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (agent_unequip_item, reg0, ":item", ":weapon_slot"),
@@ -3278,7 +3278,7 @@ scene_props = [
   ] + (is_a_wb_sceneprop==1 and [     
     (agent_set_no_dynamics, reg0, 1),
     (agent_ai_set_interact_with_player, reg0, 0),        
-        (try_for_range, ":weapon_slot", 0, 3), 
+        (try_for_range, ":weapon_slot", ek_item_0, ek_item_2 + 1), # swy: three first weapon slots? not four?
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (agent_unequip_item, reg0, ":item", ":weapon_slot"),
@@ -4179,14 +4179,14 @@ scene_props = [
     (agent_set_team, reg0, 0),
 
 ] + (is_a_wb_sceneprop==1 and [     
-        (try_for_range, ":weapon_slot", 0, 4), #find polearm
+        (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), #find polearm
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (item_get_type, ":item_type", ":item"),
             (eq, ":item_type", itp_type_polearm),
             #(agent_equip_item, reg0, ":item", 1),
             (agent_set_wielded_item, reg0, ":item"),
-                (try_for_range, ":weapon_slot", 0, 4), #find shield
+                (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), #find shield
                     (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
                     (gt, ":item", 1),
                     (item_get_type, ":item_type", ":item"),
@@ -4489,7 +4489,7 @@ scene_props = [
     (try_begin),
         (prop_instance_get_variation_id, ":var1", ":instance_no"),
         (eq, ":var1", 0),
-        (try_for_range, ":weapon_slot", 0, 4), #remove weapons
+        (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), #remove weapons
             (agent_get_item_slot, ":item", ":fighter_1", ":weapon_slot"),
             (gt, ":item", 1),
             (agent_unequip_item, ":fighter_1", ":item", ":weapon_slot"),
@@ -4521,7 +4521,7 @@ scene_props = [
     (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
 
     (assign, ":weapon_found", 0),
-    (try_for_range, ":weapon_slot", 0, 4), #find weapon, non-polearm first
+    (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), #find weapon, non-polearm first
         (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
         (gt, ":item", 1),
         (item_get_type, ":item_type", ":item"),
@@ -4531,7 +4531,7 @@ scene_props = [
         (agent_set_wielded_item, reg0, ":item"),
         (assign, ":weapon_found", 1),
     (try_end),
-    (try_for_range, ":weapon_slot", 0, 4), #find shield
+    (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), #find shield
         (eq, ":weapon_found", 1),
         (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
         (gt, ":item", 1),
@@ -4542,7 +4542,7 @@ scene_props = [
     (try_end),
     
     (eq, ":weapon_found", 0), #no non-polearm weapon found? equip polearm w/o shield
-    (try_for_range, ":weapon_slot", 0, 4),      
+    (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1),      
         (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
         (gt, ":item", 1),
         (item_get_type, ":item_type", ":item"),
@@ -4628,7 +4628,7 @@ scene_props = [
     (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
     
     (assign, ":bow_found", 0),    
-    (try_for_range, ":weapon_slot", 0, 4), #check if they have a bow or throwing weapon
+    (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), #check if they have a bow or throwing weapon
         (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
         (gt, ":item", 1),
         (item_get_type, ":item_type", ":item"),
@@ -4660,7 +4660,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"), 
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+        (try_for_range, ":weapon_slot", ek_item_0, ek_head + 1), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (neg|item_has_property, ":item", itp_civilian),
@@ -4710,7 +4710,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+        (try_for_range, ":weapon_slot", ek_item_0, ek_head + 1), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (neg|item_has_property, ":item", itp_civilian),
@@ -4760,7 +4760,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+        (try_for_range, ":weapon_slot", ek_item_0, ek_head + 1), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (neg|item_has_property, ":item", itp_civilian),
@@ -4810,7 +4810,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),  
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+        (try_for_range, ":weapon_slot", ek_item_0, ek_head + 1), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (neg|item_has_property, ":item", itp_civilian),
@@ -4847,7 +4847,7 @@ scene_props = [
         (faction_get_slot, ":troop", ":fac", slot_faction_tier_1_troop), #get a tier 1 troop so they don't wear heavy armour
         (spawn_agent, ":troop"),   
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+        (try_for_range, ":weapon_slot", ek_item_0, ek_head + 1), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (neg|item_has_property, ":item", itp_civilian),
@@ -4901,7 +4901,7 @@ scene_props = [
     (agent_set_stand_animation, reg0, "anim_defend_forward_greatsword_keep"), 
     ] + (is_a_wb_sceneprop==1 and [         
     #(scene_prop_set_slot, ":instance_no", 99, reg0), #just a random slot for this single scene prop
-    (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+    (try_for_range, ":weapon_slot", ek_item_0, ek_head + 1), #remove weapons and helms
         (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
         (gt, ":item", 1),
         (neg|item_has_property, ":item", itp_civilian),
@@ -4928,7 +4928,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),          
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+        (try_for_range, ":weapon_slot", ek_item_0, ek_head + 1), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (neg|item_has_property, ":item", itp_civilian),
@@ -4978,7 +4978,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+        (try_for_range, ":weapon_slot", ek_item_0, ek_head + 1), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (neg|item_has_property, ":item", itp_civilian),
@@ -5031,7 +5031,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"),
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+        (try_for_range, ":weapon_slot", ek_item_0, ek_head + 1), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (neg|item_has_property, ":item", itp_civilian),
@@ -5071,7 +5071,7 @@ scene_props = [
         (party_get_slot, ":troop", "$current_town", ":walker_type"),
         (spawn_agent, ":troop"), 
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+        (try_for_range, ":weapon_slot", ek_item_0, ek_head + 1), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (neg|item_has_property, ":item", itp_civilian),
@@ -5120,7 +5120,7 @@ scene_props = [
         (spawn_agent, ":troop"),
         ] + (is_a_wb_sceneprop==1 and [           
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+        (try_for_range, ":weapon_slot", ek_item_0, ek_head + 1), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (neg|item_has_property, ":item", itp_civilian),
@@ -5148,7 +5148,7 @@ scene_props = [
         (spawn_agent, ":troop"),
         ] + (is_a_wb_sceneprop==1 and [           
         (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-        (try_for_range, ":weapon_slot", 0, 5), #remove weapons and helms
+        (try_for_range, ":weapon_slot", ek_item_0, ek_head + 1), #remove weapons and helms
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (neg|item_has_property, ":item", itp_civilian),
@@ -5182,7 +5182,7 @@ scene_props = [
     #remove weapons and helms
   ] + (is_a_wb_sceneprop==1 and [   
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),  
-        (try_for_range, ":weapon_slot", 0, 4), 
+        (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), 
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (agent_unequip_item, reg0, ":item", ":weapon_slot"),
@@ -5202,7 +5202,7 @@ scene_props = [
   ] + (is_a_wb_sceneprop==1 and [  
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),  
         (agent_set_is_alarmed, reg0, 1),
-        (try_for_range, ":weapon_slot", 0, 9), 
+        (try_for_range, ":weapon_slot", ek_item_0, ek_horse + 1), 
             (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
             (gt, ":item", 1),
             (agent_unequip_item, reg0, ":item", ":weapon_slot"),

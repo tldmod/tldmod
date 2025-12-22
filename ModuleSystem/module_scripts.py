@@ -32886,7 +32886,7 @@ if is_a_wb_script==1:
         (ge, ":level", 15),
         (try_begin),
             (eq, ":stage", 0),
-            (agent_get_item_slot, ":weapon", ":player_agent", 0),  
+            (agent_get_item_slot, ":weapon", ":player_agent", ek_item_0),  
             (agent_set_wielded_item, ":player_agent", ":weapon"),
         (else_try),
             (eq, ":stage", 1),
