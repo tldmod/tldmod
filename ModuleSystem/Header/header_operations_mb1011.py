@@ -1141,6 +1141,8 @@ can_fail_operations = [ge,
                        is_currently_night
                        ]
 
+depth_operations = [try_begin, try_for_range, try_for_range_backwards, try_for_parties, try_for_agents ]
+
 '''
 
 ### MBSE addon
@@ -1194,8 +1196,6 @@ scene_prop_slot_sub						= 3308#(scene_prop_slot_sub, <instance_no>, <slot_no>, 
 
 troop_set_name							= 3400#(troop_set_name, <troop_id>, <string>),
 troop_set_name_plural					= 3401#(troop_set_name_plural, <troop_id>, <string>),
-
-try_for_prop_instances                  = 3402 #just a dummy to make the M&B compiler work, since I had to add the operation to process_operations
 
 lhs_operations += [
 	str_join,

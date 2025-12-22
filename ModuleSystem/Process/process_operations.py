@@ -450,12 +450,7 @@ def save_statement_block(ofile,statement_name,can_fail_statement,statement_block
     else:
       opcode = statement[0]
       no_variables = 0
-    if (opcode in [try_begin,
-                   try_for_range,
-                   try_for_range_backwards,
-                   try_for_parties,
-                   try_for_agents,
-                   try_for_prop_instances]):
+    if (opcode in depth_operations):
       current_depth = current_depth + 1
     elif (opcode == try_end):
       current_depth = current_depth - 1
