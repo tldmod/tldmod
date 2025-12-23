@@ -1561,11 +1561,11 @@ scene_props = [
 ("evil_gondor_gate_tower",0,"mt_gate_tower_evil", "bo_mt_tower", []),
 ("evil_gondor_gate_house",0,"mt_gate_house_evil", "bo_mt_gate_house_evil", [(ti_on_scene_prop_init,
             [(set_fixed_point_multiplier, 1000),
-            (troop_set_name, "trp_fog_color", "@{!}0x07291D"),
+            (str_store_string, s_fog_color, "@{!}0x07291D"),
             (try_begin),(is_currently_night), (eq, "$bright_nights", 1), (set_fog_distance,450,0x07291D), (assign, "$base_fog", 450),
             (else_try), (is_currently_night), (set_fog_distance,200,0x07291D),  (assign, "$base_fog", 200),
              ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 40, 40, 50),(set_startup_sun_light, 5, 5, 10),(set_startup_ground_ambient_light, 25, 25, 25), ] or []) + [ 
-       (else_try),                      (set_fog_distance,700,0x4DB08D),  (assign, "$base_fog", 700), (troop_set_name, "trp_fog_color", "@{!}0x4DB08D"),
+       (else_try),                      (set_fog_distance,700,0x4DB08D),  (assign, "$base_fog", 700), (str_store_string, s_fog_color, "@{!}0x4DB08D"),
        (try_end),])]), #InVain: New collision mesh
   
 # old MT props  
@@ -1721,14 +1721,14 @@ scene_props = [
         [(set_rain, 0,100), (set_fixed_point_multiplier, 10000), (set_skybox, 10, 11),
         (try_begin), 
             (eq, "$bright_nights", 1), (set_fog_distance,80,0x030603),(set_startup_sun_light, 5, 5, 5), (set_startup_ambient_light, 150, 300, 150), 
-            (troop_set_name, "trp_fog_color", "@{!}0x030603"), (assign, "$base_fog", 80),
+            (str_store_string, s_fog_color, "@{!}0x030603"), (assign, "$base_fog", 80),
          (else_try), 
             (set_fog_distance,70,0x030603),
             (set_startup_sun_light, 5, 5, 5),
             (set_startup_ground_ambient_light, 5, 5, 5),
             #(set_startup_ambient_light, 150, 300, 150),
             (set_startup_ambient_light, 75, 150, 75),
-            (troop_set_name, "trp_fog_color", "@{!}0x030603"), (assign, "$base_fog", 60),
+            (str_store_string, s_fog_color, "@{!}0x030603"), (assign, "$base_fog", 60),
          (try_end),
     ])]),
     ] or [
@@ -2063,7 +2063,7 @@ scene_props = [
 ("dolguldur_copy",0,"dolguldur_copy","0", []),
 ("morannon_gate",0,"morannon_gate","bo_morannon_gate", [
      (ti_on_scene_prop_init,[ (set_fixed_point_multiplier, 100), 
-         (troop_set_name, "trp_fog_color", "@{!}0x150101"),
+         (str_store_string, s_fog_color, "@{!}0x150101"),
          (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,450,0x150101), (assign, "$base_fog", 450),
          (else_try),(is_currently_night),(set_fog_distance,450,0x150101),  (assign, "$base_fog", 450),
          ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 25, 25, 25),(set_startup_sun_light, 5, 5, 5),(set_startup_ground_ambient_light, 12, 12, 12), ] or []) + [ 
@@ -2766,9 +2766,9 @@ scene_props = [
 
 ("fog_elven_settlement",sokf_invisible|sokf_place_at_origin,"collision_cube", "0", [(ti_on_scene_prop_init,[(set_fixed_point_multiplier, 100),
   (try_begin),
-    (is_currently_night),(set_fog_distance,3000,0xeFFF3D),(assign, "$base_fog", 3000),(troop_set_name, "trp_fog_color", "@{!}0xeFFF3D"),
+    (is_currently_night),(set_fog_distance,3000,0xeFFF3D),(assign, "$base_fog", 3000),(str_store_string, s_fog_color, "@{!}0xeFFF3D"),
   (else_try),
-    (set_fog_distance,3000,0xeFFF3D),(assign, "$base_fog", 3000),(troop_set_name, "trp_fog_color", "@{!}0xeFFF3D"),
+    (set_fog_distance,3000,0xeFFF3D),(assign, "$base_fog", 3000),(str_store_string, s_fog_color, "@{!}0xeFFF3D"),
     ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 95, 95, 75),] or []) + [  
     (try_end)])]),
 ("fog_darkish_glow",sokf_invisible|sokf_place_at_origin,"collision_cube", "0", [ #Mordor and Minas Tirith siege, Erebor
@@ -2780,7 +2780,7 @@ scene_props = [
          (else_try),
          (set_fog_distance,200,0x010101), ] + (is_a_wb_sceneprop==1 and [  (set_startup_ambient_light, 40, 40, 40),(set_startup_sun_light, 10, 10, 10),(set_startup_ground_ambient_light, 12, 12, 12), ] or []) + [ 
          (try_end),
-         (set_fog_distance,":scale",0x010101),(assign, "$base_fog", ":scale"),(troop_set_name, "trp_fog_color", "@{!}0x010101"),
+         (set_fog_distance,":scale",0x010101),(assign, "$base_fog", ":scale"),(str_store_string, s_fog_color, "@{!}0x010101"),
          (eq, ":scale", 1000), #only show tutorial message if scale is unchanged
           ] + (is_a_wb_sceneprop==1 and [ (is_edit_mode_enabled), ] or []) + [ 
          (display_message, "@{!} debug: scale up down to increase/decrease fog distance, default is 1000m."),
@@ -2788,15 +2788,15 @@ scene_props = [
      ])]),
 ("fog_reddish_glow",sokf_invisible|sokf_place_at_origin,"collision_cube", "0", [# Goblin town and Isengard underground
     (ti_on_scene_prop_init,[(set_fixed_point_multiplier, 100),
-        (set_fog_distance,80,0x0F0200),(assign, "$base_fog", 80),(troop_set_name, "trp_fog_color", "@{!}0x0F0200"),
+        (set_fog_distance,80,0x0F0200),(assign, "$base_fog", 80),(str_store_string, s_fog_color, "@{!}0x0F0200"),
         ] + (is_a_wb_sceneprop==1 and [ (set_fixed_point_multiplier, 1000), (set_startup_ambient_light, 12, 9, 9),(set_startup_sun_light, 2, 2, 2), ] or []) + [
   ])]),
 ("fog_greenish_glow",sokf_invisible|sokf_place_at_origin,"collision_cube", "0", [ #Mirkwood
     (ti_on_scene_prop_init,[(set_fixed_point_multiplier, 100),
   (try_begin),
-    (is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,300,0x0F190F), (assign, "$base_fog", 300),(troop_set_name, "trp_fog_color", "@{!}0x0F190F"),
-    (else_try),(is_currently_night),(set_fog_distance,250,0x090F09),(assign, "$base_fog", 250),(troop_set_name, "trp_fog_color", "@{!}0x090F09"),
-    (else_try),(set_fog_distance,400,0x172617),(assign, "$base_fog", 400),(troop_set_name, "trp_fog_color", "@{!}0x172617"),
+    (is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,300,0x0F190F), (assign, "$base_fog", 300),(str_store_string, s_fog_color, "@{!}0x0F190F"),
+    (else_try),(is_currently_night),(set_fog_distance,250,0x090F09),(assign, "$base_fog", 250),(str_store_string, s_fog_color, "@{!}0x090F09"),
+    (else_try),(set_fog_distance,400,0x172617),(assign, "$base_fog", 400),(str_store_string, s_fog_color, "@{!}0x172617"),
     (try_end)])]),
   
 ("isen_furnace",0,"isen_furnace","bo_isen_furnace", []),
@@ -2990,20 +2990,20 @@ scene_props = [
 ] + (is_a_wb_sceneprop==1 and [
 ("distant_place_Morannon",0,"prop_Morannon", "0", [(ti_on_scene_prop_init,[
   (set_fixed_point_multiplier, 1000),
-  (troop_set_name, "trp_fog_color", "@{!}0x191919"),
+  (str_store_string, s_fog_color, "@{!}0x191919"),
   (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,1200,0x191919),(assign, "$base_fog", 1200),
   (else_try),(is_currently_night),(set_fog_distance,1000,0x191919),(assign, "$base_fog", 1000),
   (else_try),(set_fog_distance,1500,0x191919),(set_startup_sun_light, 80, 50, 50),(assign, "$base_fog", 1500),
   (try_end)])]), 
     ] or [
 ("distant_place_Morannon",0,"prop_Morannon", "0", [(ti_on_scene_prop_init,[
-  (troop_set_name, "trp_fog_color", "@{!}0x333333"),
+  (str_store_string, s_fog_color, "@{!}0x333333"),
   (try_begin),(is_currently_night),(set_fog_distance,1000,0x333333),(assign, "$base_fog", 1000),
   (else_try),(set_fog_distance,1500,0x333333),(assign, "$base_fog", 1500),(try_end)])]),
 ]) + [
 
 ("distant_place_Dolguldur",0,"prop_dolguldur", "0", [(ti_on_scene_prop_init,
-    [(troop_set_name, "trp_fog_color", "@{!}0x10593E"),
+    [(str_store_string, s_fog_color, "@{!}0x10593E"),
     (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,550,0x10593E),(assign, "$base_fog", 550),
     (else_try),(is_currently_night),(set_fog_distance,450,0x07291D),(assign, "$base_fog", 450),
     (else_try),(set_fog_distance,700,0x77BBB2),(assign, "$base_fog", 700),
@@ -3320,12 +3320,23 @@ scene_props = [
 ("morgul_gate_tower",0,"morgul_mt_gate_tower_evil","bo_mt_tower", []),
 ("morgul_gate_house",0,"morgul_mt_gate_house_evil","bo_morgul_mt_gate_house_evil", [
      (ti_on_scene_prop_init,[ (set_fixed_point_multiplier, 1000),
-        (troop_set_name, "trp_fog_color", "@{!}0x07291D"),
-         (try_begin),(is_currently_night),(eq, "$bright_nights", 1), (set_fog_distance,450,0x07291D), (assign, "$base_fog", 450),
-         (else_try),(is_currently_night),(set_fog_distance,450,0x07291D),  (assign, "$base_fog", 450),
-                ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 25, 40, 25),(set_startup_sun_light, 5, 5, 5),(set_startup_ground_ambient_light, 12, 30, 12), ] or []) + [ 
-         (else_try),(set_fog_distance,700,0x10261E),(troop_set_name, "trp_fog_color", "@{!}0x10261E"), (assign, "$base_fog", 700),
-                ] + (is_a_wb_sceneprop==1 and [ (set_startup_ambient_light, 40, 60, 40),(set_startup_sun_light, 10, 10, 10),(set_startup_ground_ambient_light, 12, 30, 12), ] or []) + [ 
+        (str_store_string, s_fog_color, "@{!}0x07291D"),
+         (try_begin),
+            (is_currently_night),
+            (eq, "$bright_nights", 1),
+            (set_fog_distance,450,0x07291D), (assign, "$base_fog", 450),
+         (else_try),
+            (is_currently_night),
+            (set_fog_distance,450,0x07291D), (assign, "$base_fog", 450),
+          ] + (is_a_wb_sceneprop==1 and [
+            (set_startup_ambient_light, 25, 40, 25), (set_startup_sun_light, 5, 5, 5), (set_startup_ground_ambient_light, 12, 30, 12),
+          ] or []) + [ 
+         (else_try),
+            (set_fog_distance,700,0x10261E),
+            (str_store_string, s_fog_color, "@{!}0x10261E"), (assign, "$base_fog", 700),
+         ] + (is_a_wb_sceneprop==1 and [
+            (set_startup_ambient_light, 40, 60, 40), (set_startup_sun_light, 10, 10, 10), (set_startup_ground_ambient_light, 12, 30, 12),
+         ] or []) + [ 
          (try_end),
      ])]),
 ("morgul__gate",0,"morgul_gate","bo_morgul_gate", []),
