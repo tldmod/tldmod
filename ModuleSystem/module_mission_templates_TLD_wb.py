@@ -3649,13 +3649,13 @@ formations_triggers_moto = [ #4 triggers
 #      (eq, "$tld_option_formations", 2),
 #      (store_trigger_param, ":missile", 5),
 #      (le, ":missile", 0),
-#      (store_trigger_param, ":inflicted_agent_id", 1),
+#      (store_trigger_param_1, ":inflicted_agent_id"),
 #      (agent_is_active,":inflicted_agent_id"),
 #      (agent_is_human, ":inflicted_agent_id"),
 #      (agent_is_alive, ":inflicted_agent_id"),
 #    ], [
-#      (store_trigger_param, ":inflicted_agent_id", 1),
-#      (store_trigger_param, ":dealer_agent_id", 2),
+#      (store_trigger_param_1, ":inflicted_agent_id"),
+#      (store_trigger_param_2, ":dealer_agent_id"),
 #      (store_trigger_param, ":inflicted_damage", 3),
 #      
 #      (try_begin),
@@ -4300,13 +4300,13 @@ beorning_shapeshift = [
         # Only non-blunt dmg draws blood
         (ge, reg0, 0), (item_get_swing_damage_type, ":dmg_type", reg0),(neq, ":dmg_type", blunt),
         # Damager has to be an animal (all animals have scripted attacks with predetermined anims)
-        (store_trigger_param, ":attacker", 2),
+        (store_trigger_param_2, ":attacker"),
         (agent_get_horse, ":animal", ":attacker"), (ge, ":animal", 0),
         (agent_get_animation, ":attack_anim", ":animal", 0),
         (is_between, ":attack_anim", "anim_bear_slap_right", "anim_unused_horse_anim_12"),
     ],[
         # Check item damage
-        (store_trigger_param, ":victim", 2),
+        (store_trigger_param_2, ":victim"),
         (store_trigger_param, ":dmg", 3),
         (item_get_swing_damage_type, ":dmg_type", reg0),
         (call_script, "script_cf_on_hit_blood", ":victim", ":dmg", ":dmg_type"),

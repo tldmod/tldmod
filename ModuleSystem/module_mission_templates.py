@@ -1046,7 +1046,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
   (ti_on_order_issued, 0, 0,
     [
       (eq, "$animal_is_present", 1),
-      (store_trigger_param, ":order_no", 1),
+      (store_trigger_param_1, ":order_no"),
       (eq, ":order_no", mordr_dismount),
     ],
     [

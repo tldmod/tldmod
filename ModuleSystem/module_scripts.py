@@ -31050,7 +31050,7 @@ if is_a_wb_script==1:
 ## Batching Process
 
 ("cf_batching_ti_agent_spawn_human", [
-	(store_trigger_param, ":agent", 1),
+	(store_trigger_param_1, ":agent"),
 
 	(agent_is_active, ":agent"),
 	(agent_is_human, ":agent"),
@@ -31065,7 +31065,7 @@ if is_a_wb_script==1:
 ]),
 
 ("cf_batching_ti_agent_spawn_mount", [
-	(store_trigger_param, ":agent", 1),
+	(store_trigger_param_1, ":agent"),
 
 	(agent_is_active, ":agent"),
 	(neg|agent_is_human, ":agent"), #Mount
