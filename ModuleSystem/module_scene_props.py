@@ -457,12 +457,14 @@ scene_props = [
    (ti_on_scene_prop_hit,
     [   (store_trigger_param_1, ":instance_no"),
         (store_trigger_param_2, ":damage"),
+        (get_player_agent_no, ":player_agent"),
+] + (is_a_wb_sceneprop==1 and [ 
         (store_trigger_param, ":agent", 3),
+        (eq, ":agent", ":player_agent"),
+] or []) + [
         (assign, reg60, ":damage"),
         (val_div, ":damage", 8),
         (prop_instance_get_position, pos2, ":instance_no"),
-        (get_player_agent_no, ":player_agent"),
-        (eq, ":agent", ":player_agent"),
         (agent_get_position, pos3, ":player_agent"),
         (try_begin),
           (position_is_behind_position, pos3, pos2),
@@ -4063,6 +4065,7 @@ scene_props = [
 
    (ti_on_scene_prop_hit,    [
     (try_begin),
+] + (is_a_wb_sceneprop==1 and [ 
         (store_trigger_param, ":attacker_agent",3),
         (store_trigger_param, ":missile", 6), 
         (agent_get_team, ":team", ":attacker_agent"),
@@ -4070,6 +4073,7 @@ scene_props = [
         (gt, ":missile", 0),
         (set_trigger_result, 0),
     (else_try),
+] or []) + [
         (play_sound, "snd_dummy_hit"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 3),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
@@ -4146,6 +4150,7 @@ scene_props = [
 
    (ti_on_scene_prop_hit,    [
     (try_begin),
+] + (is_a_wb_sceneprop==1 and [ 
         (store_trigger_param, ":attacker_agent",3),
         (store_trigger_param, ":missile", 6), 
         (agent_get_team, ":team", ":attacker_agent"),
@@ -4153,6 +4158,7 @@ scene_props = [
         (gt, ":missile", 0),
         (set_trigger_result, 0),
     (else_try),
+] or []) + [
         (play_sound, "snd_dummy_hit"),
         (particle_system_burst, "psys_dummy_smoke", pos1, 3),
         (particle_system_burst, "psys_dummy_straw", pos1, 10),
