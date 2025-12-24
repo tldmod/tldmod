@@ -1291,7 +1291,9 @@ scripts = [
 	(assign, ":mount_type", 0), # 0 = horse   1 = warg, 2 = huge warg  4 = pony
 	(try_begin),(eq,":mount_item", "itm_warg_reward"),                      (assign, ":mount_type", 2),
 	 (else_try),(is_between, ":mount_item", item_warg_begin, item_warg_end),(assign, ":mount_type", 1),
-	 (else_try),(eq, ":mount_item", "itm_spider"),                          (assign, ":mount_type", 1), # Only orcs can ride spiders 
+     ] + (is_a_wb_script==1 and [
+	 (else_try),(this_or_next|eq, ":mount_item", "itm_spider"),(eq, ":mount_item", "itm_spider_mount"), (assign, ":mount_type", 1), # Only orcs can ride spiders 
+     ] or [(else_try),(eq, ":mount_item", "itm_spider"), (assign, ":mount_type", 1),]) + [   
 	 (else_try),(eq, ":mount_item", "itm_pony"),                            (assign, ":mount_type", 4),
 	(try_end),
 
