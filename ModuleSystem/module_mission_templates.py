@@ -76,7 +76,7 @@ common_siege_check_defeat_condition = (1, 4, ti_once, [ (main_hero_fallen)],
     ])
 ## Reset Fog 
 reset_fog = (ti_before_mission_start,  0, ti_once, [], 
-            [(set_fog_distance,100000,0x999999), (assign, "$current_fog", 10000),(assign, "$base_fog", 10000),(assign, "$target_fog", 10000),(str_store_string, s_fog_color, "@{!}0x999999"), ])
+            [(set_fog_distance,100000,0x999999), (assign, "$current_fog", 10000),(assign, "$base_fog", 10000),(assign, "$target_fog", 10000),(assign, "$base_fog_color", 0x999999), ])
 
 ## Fade to Black
 fade =  ((is_a_wb_mt==1) and [
@@ -7044,13 +7044,13 @@ mission_templates = [ # not used in game
         # (set_fixed_point_multiplier, 10000),
         # (try_begin), 
             # (eq, "$bright_nights", 1), (set_fog_distance,80,0x01D261D),(set_startup_sun_light, 5, 5, 5), (set_startup_ambient_light, 300, 400, 300), 
-            # (str_store_string, s_fog_color, "@{!}0x01D261D"), (assign, "$base_fog", 80),
+            # (assign, "$base_fog_color", 0x01D261D), (assign, "$base_fog", 80),
          # (else_try), 
             # (set_fog_distance,60,0x030403),
             # (set_startup_sun_light, 5, 5, 5),
             # (set_startup_ambient_light, 60, 80, 60), 
             # (set_startup_ground_ambient_light, 60, 80, 60),
-            # (str_store_string, s_fog_color, "@{!}0x030403"), (assign, "$base_fog", 60),
+            # (assign, "$base_fog_color", 0x030403), (assign, "$base_fog", 60),
          # (try_end),
         ] or []) + [ 
     ]),
@@ -7081,7 +7081,7 @@ mission_templates = [ # not used in game
         (set_fixed_point_multiplier, 100),
         (set_fog_distance,15,0x010101),
         (assign, "$base_fog", 70),
-        (str_store_string, s_fog_color, "@{!}0x4E0000"),
+        (assign, "$base_fog_color", 0x4E0000),
         (play_sound, "snd_moria_ambiance", sf_looping),]),
     (0.1,0,ti_once,[],[(entry_point_get_position, pos1, 1), (set_spawn_position, pos1),(spawn_item, "itm_orc_throwing_arrow"),(play_sound, "snd_moria_ambiance", sf_looping),]),
 	dungeon_darkness_effect, reset_fog,

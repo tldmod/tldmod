@@ -2843,8 +2843,6 @@ GULDUR_FOG = 6
 FELLBEAST = 7
 END_EFFECTS = 8
 
-s_fog_color = s127 # swy: dedicate this string register just for relaying the fog value
-
 #terrain conditions $terrain_condition
 tc_none = 0
 tc_underground = 1 #assigns night, only for sieges

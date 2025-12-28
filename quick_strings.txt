@@ -1,21 +1,9 @@
-1798
-qstr_{***}0x07291D {***}0x07291D
-qstr_{***}0x4DB08D {***}0x4DB08D
+1785
 qstr_Gate_is_breached! Gate_is_breached!
-qstr_{***}0x150101 {***}0x150101
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
-qstr_{***}0xeFFF3D {***}0xeFFF3D
-qstr_{***}0x010101 {***}0x010101
 qstr_{***}_debug:_scale_up_ {***}_debug:_scale_up_down_to_increase/decrease_fog_distance,_default_is_1000m.
 qstr_{***}_debug:_scale_pro {***}_debug:_scale_prop_to_disable_this_message
-qstr_{***}0x0F0200 {***}0x0F0200
-qstr_{***}0x0F190F {***}0x0F190F
-qstr_{***}0x090F09 {***}0x090F09
-qstr_{***}0x172617 {***}0x172617
-qstr_{***}0x333333 {***}0x333333
-qstr_{***}0x10593E {***}0x10593E
-qstr_{***}0x10261E {***}0x10261E
 qstr_{***}_debug:_retreat_g {***}_debug:_retreat_gates_open_at_mission_start_and_close_when_the_assigned_rally_point_in_var_id_2_is_lost._Place_closed._var_id_1_checks_AI_limiters.
 qstr_{***}_debug:_sound_emi {***}_debug:_sound_emitter:_var1_x_10_+_var2_is_sound_no;_first_two_digits_after_comma_in_scale_x_is_range_in_metres
 qstr_{***}_debug:_ambient_s {***}_debug:_ambient_sound_emitter:_stops_all_looping_sounds,_sets_a_new_ambient_sound_while_in_range
@@ -716,7 +704,6 @@ qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
 qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!
-qstr_{***}0x999999 {***}0x999999
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_While_visiting_towns While_visiting_towns,_settlements_and_camps,_you_can_talk_to_people_walking_around._This_will_help_you_gain_their_trust_and_offer_valuable_information_about_the_local_culture._If_you_ask,_they_will_also_show_you_the_way_to_the_most_important_people_around.
 qstr_Cannot_leave_now. Cannot_leave_now.

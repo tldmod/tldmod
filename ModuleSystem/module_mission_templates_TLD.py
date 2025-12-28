@@ -3379,8 +3379,9 @@ dungeon_darkness_effect = (0.3, 0, 0, [(eq,"$dungeons_in_scene",1)], [
     (try_begin), #set color
         (ge, "$target_fog", "$base_fog"), #outside 
         (val_min, "$current_fog", "$base_fog"),
-        (set_fog_distance,"$current_fog",s_fog_color), # swy: use a dedicated string register (s127 aliased as s_fog_color) instead of the Warband only-(troop_set_name, "trp_fog_color", "@{!}0x999999"), troop stuff, i think this could be turned into a normal $ global without much fuss, though. not sure if the string hex code even works, but hey, it shouldn't regress Warband at least.
-        #(str_store_string, s11, s_fog_color),
+        (set_fog_distance,"$current_fog", "$base_fog_color"), # swy: use a dedicated string register (s127 aliased as s_fog_color) instead of the Warband only-(troop_set_name, "trp_fog_color", "@{!}0x999999"), troop stuff, i think this could be turned into a normal $ global without much fuss, though. not sure if the string hex code even works, but hey, it shouldn't regress Warband at least.
+        # InVain: string register somehow corrupts the color code. Global variable works, though.
+        #(str_store_string, s11, "$base_fog_color"),
         #(display_message, "@set color to {s11}"),
     (else_try),
         (eq, "$bright_nights", 1),
