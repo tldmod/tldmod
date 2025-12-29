@@ -395,5 +395,6 @@ mesh_choose_icon_uruk = 393
 mesh_choose_icon_evilman = 394
 mesh_draw_funeral_pyre_oath = 395
 mesh_troop_label_banner = 396
+mesh_warrider_logo = 397
 
 

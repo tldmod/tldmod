@@ -21,6 +21,7 @@ ai_scripts = [
 	[(store_script_param_1, ":theater"),
     (try_begin),
 	  (ge,"$tld_war_began",1),  # faction AI can change only if War started, GA
+      (neq,"$tld_war_began",100), #InVain
 	  (call_script, "script_init_ai_calculation"),
       (store_current_hours, ":cur_hours"),
 	  (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),   # recalculate AI for active non-player factions
@@ -84,6 +85,7 @@ ai_scripts = [
   ("decide_faction_ai",
    [(try_begin),
 	   (ge,"$tld_war_began",1),  # faction AI can change only if War started, GA
+       (neq,"$tld_war_began",100),#InVain
        
 	   (store_script_param_1, ":faction_no"),
 
@@ -2408,6 +2410,7 @@ ai_scripts = [
 ("decide_kingdom_party_ais", [
    (try_begin),
       (ge,"$tld_war_began",1),  # party AI can change only if War started, GA
+      (neq,"$tld_war_began",100),#InVain
 
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
          (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),

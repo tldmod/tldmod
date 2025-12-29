@@ -3999,6 +3999,220 @@ nazgul_flying = ((is_a_wb_mt==1) and [
 	]),
     
 	] or [])	
+
+tld_campaign_won =  ((is_a_wb_mt==1) and [ 
+
+ (1, 0, ti_once, [(eq, "$tld_war_began", 100),(neq, "$talk_context", tc_court_talk),],
+  [ (set_fixed_point_multiplier, 100),
+    (get_player_agent_no, ":player_agent"),
+    (agent_set_speed_limit, ":player_agent", 8),
+    (agent_set_speed_modifier, ":player_agent", 100), #if player runs too fast, it starts looking silly
+    (agent_get_position, pos5, ":player_agent"),
+    (position_move_y, pos5, -300),
+    (agent_get_team, ":player_team", ":player_agent"),
+    #(team_give_order, ":player_team", grc_everyone, mordr_follow),
+    (party_get_num_companion_stacks, ":num_stacks", p_main_party),
+    (try_for_range, ":stack_no", 1, ":num_stacks"),
+        (party_stack_get_troop_id, ":troop_id", p_main_party, ":stack_no"),
+        (troop_is_hero, ":troop_id"),
+        # (str_store_troop_name, s5, ":troop_id"),
+        # (display_message, "@{s5} found"),
+        (troop_slot_eq, ":troop_id", slot_troop_occupation, slto_player_companion), #double check
+        (set_spawn_position, pos5),
+        (spawn_agent, ":troop_id"),
+        (agent_set_team, reg0, ":player_team"),
+        (agent_set_slot, reg0, slot_agent_walker_type, 9),
+        (position_move_x, pos5, 200),
+    (try_end),
+    (try_for_range, ":entry", 32, 40), #spawn additional walkers running towards the player
+        (entry_point_get_position, pos6, ":entry"),
+        (set_spawn_position, pos6),
+        #two additional walkers per entry point
+        (store_random_in_range, ":walker_slot", slot_center_walker_0_troop, slot_center_walker_9_troop),
+        (party_get_slot, ":walker", "$current_town", ":walker_slot"),
+        (spawn_agent, ":walker"),
+        (party_get_slot, ":guard", "$current_town", slot_town_guard_troop),
+        (spawn_agent, ":guard"),
+        (agent_set_slot, reg0, slot_agent_walker_type, 9),
+    (try_end),
+    (entry_point_get_position, pos6, 0),
+    (set_spawn_position, pos6),
+    (try_for_range, ":entry", 0, 10), #and ten additional walkers spawning at the gate
+        (store_random_in_range, ":walker_slot", slot_center_walker_0_troop, slot_center_walker_9_troop),
+        (party_get_slot, ":walker", "$current_town", ":walker_slot"),
+        (spawn_agent, ":walker"),
+        (agent_set_slot, reg0, slot_agent_walker_type, 9),
+    (try_end),
+    (faction_get_slot, ":leader", "$players_kingdom", slot_faction_leader),
+    (str_store_troop_name, s5, ":leader"),
+    (tutorial_message, "@Visit the victory celebrations and speak to {s5}.", 0, 10),
+  ]),
+
+#in court, check all regular lords
+ (1, 0, 0, [(eq, "$tld_war_began", 100),(eq, "$talk_context", tc_court_talk),],
+  [ (set_fixed_point_multiplier, 100),
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_position, pos5, ":player_agent"),
+    (faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+    (try_for_agents, ":cur_agent"),
+        (agent_is_human, ":cur_agent"),
+        (neq, ":cur_agent", ":player_agent"),
+        (agent_get_troop_id, ":troop_no", ":cur_agent"),
+        (neg|faction_slot_eq, "$players_kingdom", slot_faction_leader, ":troop_no"),
+        (agent_set_slot, ":cur_agent", slot_agent_walker_type, 9), #for dialog
+        (store_random_in_range, ":rand", 0, 10),
+        (le, ":rand", 1),
+        (agent_set_animation, ":cur_agent", "anim_cheer"),
+        #(agent_set_look_target_position, ":cur_agent", pos5),
+        (agent_set_look_target_agent, ":cur_agent", ":player_agent"),
+        (call_script, "script_troop_get_cheer_sound", ":troop_no"),
+        (agent_play_sound, ":cur_agent", reg1),
+    (try_end),
+
+    (store_random_in_range, ":x", -500, 500),
+    (store_random_in_range, ":y", 200, 1000), #in front of the player
+    (store_random_in_range, ":z", 100, 300),
+    (position_move_x, pos5, ":x"),
+    (position_move_y, pos5, ":y"),
+    (position_move_z, pos5, ":z"),
+    (try_begin), #add particle effects
+        (eq, ":player_side", faction_side_good),
+        (particle_system_burst, "psys_moon_beam_1", pos5, 12),
+    (else_try),        
+        (eq, ":player_side", faction_side_hand),
+        (particle_system_burst, "psys_moon_beam_1", pos5, 12),
+    (else_try),
+        (particle_system_burst,  "psys_night_smoke_1", pos5, 30),
+        (particle_system_burst, "psys_scene_fog_red", pos5, 12),
+    (try_end),
+  ]),
+  
+ (1, 0, 0, [(eq, "$tld_war_began", 100),(neq, "$talk_context", tc_court_talk),], #campaign won condition here
+  [ (set_fixed_point_multiplier, 100),
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_position, pos5, ":player_agent"),
+    (try_for_agents, ":cur_agent"), #bystanders and walkers cheer and walkers can join
+        (agent_is_human, ":cur_agent"),
+        (neq, ":cur_agent", ":player_agent"),
+        (agent_get_position, pos6, ":cur_agent"),
+        (get_distance_between_positions, ":dist", pos5, pos6),
+        (agent_get_animation, ":current_anim", ":cur_agent"),
+        (neq, ":current_anim", "anim_cheer"),
+        (neq, ":current_anim", "anim_stand_townguard_polearm"),
+        (neq, ":current_anim", "anim_cheer_player_ride"),
+        (neg|agent_slot_eq, ":cur_agent", slot_agent_walker_type, 3),
+        (agent_get_horse, ":horse", ":cur_agent"),
+        (try_begin),
+            (le, ":dist", 3000),
+            (neg|agent_slot_eq, ":cur_agent", slot_agent_walker_type, 9),
+            (agent_get_troop_id, ":troop_no", ":cur_agent"),  
+            (store_random_in_range, ":rand", 0, 10),
+            (le, ":rand", 4),          
+            (try_begin), #regular walkers may carry things - get rid of it!
+               (agent_slot_eq, ":cur_agent", slot_agent_walker_type, 1),
+               (agent_set_wielded_item, ":cur_agent", -1),
+               (agent_set_attack_action, ":cur_agent", -2, 0),
+            (try_end),
+            (try_begin),
+                (eq, ":horse", -1),
+                (agent_set_animation, ":cur_agent", "anim_cheer"),
+            (else_try), #just in case
+                (agent_set_animation, ":cur_agent", "anim_cheer_player_ride"),
+            (try_end),
+            (try_begin), #reduce sounds
+                (le, ":rand", 3),
+                (call_script, "script_troop_get_cheer_sound", ":troop_no"),
+                (agent_play_sound, ":cur_agent", reg1),
+            (try_end),
+            #(agent_set_look_target_position, ":cur_agent", pos5),
+            (agent_set_look_target_agent, ":cur_agent", ":player_agent"),
+            (this_or_next|agent_slot_eq, ":cur_agent", slot_agent_walker_type, 1), #civilian walkers
+            (agent_slot_eq, ":cur_agent", slot_agent_walker_type, 4), #prop walkers
+            (agent_set_slot, ":cur_agent", slot_agent_walker_type, 9), #new walker type for cheering crowd
+            (agent_set_slot, ":cur_agent", slot_agent_target_entry_point, -1), #just in case
+            #(agent_set_slot, ":cur_agent", slot_agent_troll_status, 100),
+            (agent_clear_scripted_mode, ":cur_agent"),
+            (agent_set_speed_limit, ":cur_agent", 15), #allow them to run
+        (else_try),
+            (lt, ":dist", 1500),
+            #(agent_set_look_target_position, ":cur_agent", pos5),
+            (agent_clear_scripted_mode, ":cur_agent"),
+            (agent_set_look_target_agent, ":cur_agent", ":player_agent"),
+            (agent_slot_eq, ":cur_agent", slot_agent_walker_type, 9),
+            (store_random_in_range, ":rand", 0, 10),
+            (le, ":rand", 2),
+            (agent_get_troop_id, ":troop_no", ":cur_agent"),
+            (troop_get_type, ":gender", ":troop_no"),
+            (call_script, "script_troop_get_cheer_sound", ":troop_no"),
+            (try_begin),
+                (neq, ":gender", tf_female),
+                (agent_play_sound, ":cur_agent", reg1),
+            (else_try),
+                (le, ":rand", 1), #since we only have one female cheer sound, we play it less often
+                (agent_play_sound, ":cur_agent", reg1),
+            (try_end),
+            (try_begin),
+                (eq, ":horse", -1),
+                (agent_set_animation, ":cur_agent", "anim_cheer"),
+            (else_try), #just in case
+                (agent_set_animation, ":cur_agent", "anim_cheer_player_ride"),
+            (try_end),
+        (else_try),
+            (gt, ":dist", 500), #can also trigger if random check above fails
+            (agent_slot_eq, ":cur_agent", slot_agent_walker_type, 9),
+            #(agent_set_look_target_position, ":cur_agent", pos5),
+            (agent_set_look_target_agent, ":cur_agent", ":player_agent"),
+            (copy_position, pos7, pos5),
+            (store_random_in_range, ":x", -400, 400),
+            (store_random_in_range, ":y", 100, 600), #they try to get in front of the player
+            (position_move_x, pos7, ":x"),
+            (position_move_y, pos7, ":y"),
+            (agent_set_scripted_destination, ":cur_agent", pos5),
+            (agent_set_speed_modifier, ":cur_agent", 120), #so they can keep up with the player
+        (try_end),
+        #TODO: Maybe add a particle effect or additional sounds for more festiveness
+    (try_end),
+  ]),
+
+  #tld_cheer_on_space_when_battle_over_press
+  (0,1.5,0,[(eq, "$tld_war_began", 100),(neq, "$talk_context", tc_court_talk),
+    (game_key_clicked, gk_jump),
+    (all_enemies_defeated, 2),
+    (get_player_agent_no, reg10),
+    (agent_is_alive, reg10),
+    (call_script, "script_cf_bear_form_selected"), (neq, reg0, 1), # Arsakes not in bear form
+    (try_begin),(agent_get_horse, reg12, reg10),(ge, reg12, 0), 
+            (agent_set_animation, reg10, "anim_cheer_player_ride"),
+            (agent_set_animation, reg12, "anim_horse_cancel_ani"), # to remove horse jump
+    (else_try),
+            (agent_set_animation, reg10, "anim_cheer_player"),
+    (try_end),
+    (agent_get_troop_id, reg11, reg10),
+    (try_begin), 
+            (eq,"$player_cheering",0), # don't reshout if just shouted
+            (call_script, "script_troop_get_cheer_sound", reg11),
+            (gt, reg1, -1), #MV fix
+            (agent_play_sound, reg10, reg1),    
+    (try_end),
+    (assign,"$player_cheering",1),
+    ],[
+        (assign,"$player_cheering",2), # after 1 sec, can end ani
+  ]),
+  
+  #tld_cheer_on_space_when_battle_over_release
+  (0,0,0,[(eq,"$player_cheering",2),(neg|game_key_is_down, gk_jump), (eq, "$tld_war_began", 100),(neq, "$talk_context", tc_court_talk),],[
+        (call_script, "script_cf_bear_form_selected"), (neq, reg0, 1), # Arsakes not in bear form
+
+	(get_player_agent_no, reg10),
+	(agent_get_horse, reg12, reg10),
+	(try_begin),(ge, reg12, 0),(agent_set_animation, reg10, "anim_cancel_ani_ride"),
+	 (else_try),               (agent_set_animation, reg10, "anim_cancel_ani_stand"),
+	(try_end),
+	(assign,"$player_cheering",0),
+  ]),
+  
+	] or [])
+    
 # ( "custom_battle_football",mtf_battle_mode,-1,
     # "The match starts in a minute!",
     # [

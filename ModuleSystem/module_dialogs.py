@@ -1196,6 +1196,14 @@ dialogs = [
                      (this_or_next|eq, "$talk_context", tc_court_talk), #TLD
                      (this_or_next|eq, "$talk_context", tc_town_talk), #TLD
                      (eq, "$talk_context", tc_tavern_talk),
+                     (eq, "$tld_war_began", 100),
+                     (main_party_has_troop, "$g_talk_troop"),],
+"It has been an honor to fight with you, {playername}.", "close_window", [(call_script,"script_stand_back"),]],
+
+[anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
+                     (this_or_next|eq, "$talk_context", tc_court_talk), #TLD
+                     (this_or_next|eq, "$talk_context", tc_town_talk), #TLD
+                     (eq, "$talk_context", tc_tavern_talk),
                      (main_party_has_troop, "$g_talk_troop"),],
 "Let's leave whenever you are ready.", "close_window", [(call_script,"script_stand_back"),]],
 
@@ -2564,6 +2572,17 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                 [
                 (call_script,"script_stand_back"),
                 ]],
+
+#campaign won
+[anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
+                  (eq, "$tld_war_began", 100),
+                  (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 9),
+                  (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"),
+                  (agent_set_animation, "$g_talk_agent", "anim_cheer"),
+                  (call_script, "script_troop_get_cheer_sound", "$g_talk_troop"),
+                  (agent_play_sound, "$g_talk_agent", reg1),
+                   ],
+"Hail {playername}, {s24}!", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
                      (eq,"$talk_context",tc_town_talk),
@@ -4044,6 +4063,38 @@ How could I expect someone like {playername} to be up to the challenge. My serva
      (troop_set_slot, "$prisoner_lord_to_buy", slot_troop_prisoner_of_party, "$g_encountered_party")]],
 
 [anyone,"lord_buy_prisoner_deny", [], "Too bad, he would have been precious for us, {playername}.", "lord_pretalk", []],
+
+
+###InVain - Campaign Outro #####
+[anyone, "lord_start", [
+  # (check_quest_active, "qst_tld_introduction"),
+  # (quest_slot_eq, "qst_tld_introduction", slot_quest_target_troop, "$g_talk_troop"),
+  (faction_slot_eq,"$players_kingdom",slot_faction_leader,"$g_talk_troop"),
+  (eq, "$tld_war_began", 100),
+  (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"),
+  (faction_get_slot, ":side", "$players_kingdom", slot_faction_side),
+  (str_clear, s5),
+  (try_begin),
+    (eq, ":side", faction_side_good),
+    (str_store_string, s5, "@Hail, {playername}, {s24}! Glad am I to behold you, alive and unbroken. Through days of shadow we have endured, and in the thunder of battle we have stood fast. Bitter were the losses laid upon us, and many sorrows have we borne.^^ Yet this hour is not given to grief. Rather it is a time of gladness, for the darkness has passed, and a new Age dawns upon the world. Be thankful, for I am thankful, that in the Last Days of the Third Age you stood beside me, faithful and undaunted."),
+    (str_store_string, s6, "@Through shadow and strife I stood, not for glory, but for loyalty and hope unbroken. I remember the fallen and the cost that was paid. As a new Age has dawned, I pledge my strength to its keeping, in wisdom and in mercy."),
+  (else_try),
+    (eq, ":side", faction_side_hand),
+    (str_store_string, s5, "@So you stand before me still, {playername}, {s24}. Few have endured the storm and come forth unbroken. The world has been purged by fire and iron, and many were swept away who clung to the follies of the past. Such was the price of change.^^ The Age of decay has ended, and the long dominion of chance and fading dreams is overthrown. A new Age rises—ordered, measured, and strong—shaped not by hope alone, but by the knowledge and will of your wise Master, the White Hand of Isengard! ^^Behold it, and rejoice, for you have lived to see what few dared imagine. In the Last Days of the Third Age, when the old powers failed and the world stood at the brink, you chose to stand beside me. Remember this hour, for it is the hour of victory, and from it the world shall be remade."),
+    (str_store_string, s6, "@Hail to the White Hand!"),
+  (else_try),
+    (str_store_string, s5, "@Hear now the word of Barad-dûr, {playername}, {s24}, and give heed. The proud are fallen, the hopeful are silenced, and the counsels of the Wise have come to naught. Such was the end foreseen from the beginning. The Third Age is ended by decree of the Lord of the Dark Tower, whose will has prevailed over all resistance. What was weighed has been found wanting, and the world is now claimed under HIS dominion. ^^Let it further be proclaimed: those who stood and endured in the Last Days are numbered among the living by sufferance alone. Order is restored, fear is the law, and obedience is the measure of worth. The Red Eye watches all. Hail to the Red Eye."),
+    (str_store_string, s6, "@Hail to the Red Eye!"),
+  (try_end)],
+  "{!}{s5}", "campaign_won", [
+  ]],
+
+[anyone|plyr,"campaign_won", [], 
+    "{!}{s6}", "close_window", [
+    (change_screen_return),
+    (finish_mission, 0),
+    (jump_to_menu, "mnu_campaign_won"),]],
+
 ###Kham - Intro Quest START #####
 
 [anyone, "lord_start", [
@@ -13159,6 +13210,15 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone|plyr,"town_dweller_brawl_confirm", [], "No, I thought you were someone else.", "close_window",[(call_script,"script_stand_back"),]],
 [anyone|plyr,"town_dweller_talk", [], "[Leave]", "close_window",[(call_script,"script_stand_back"),]],
+
+[anyone,"start", [(this_or_next|eq, "$talk_context", 0), (eq, "$talk_context", tc_court_talk),
+                  (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 9),
+                  (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"),
+                  (agent_set_animation, "$g_talk_agent", "anim_cheer"),
+                  (call_script, "script_troop_get_cheer_sound", "$g_talk_troop"),
+                  (agent_play_sound, "$g_talk_agent", reg1),
+                  ],
+"Hail {playername}, {s24}!", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone,"start", [(eq, "$talk_context", 0),
                   (this_or_next|agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 5), 

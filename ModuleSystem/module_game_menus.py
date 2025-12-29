@@ -10133,28 +10133,133 @@ game_menus = [
     "^^^^^The War of the Ring is over!^^The {s1} have defeated all their enemies and stand victorious!",
     "none",
     # $g_notification_menu_var1 - faction_side_*
-    [ (assign, ":side", "$g_notification_menu_var1"),
+    [ 
+    (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+    (assign, ":winning_side_faction", "$players_kingdom"),
+    (troop_get_type, ":winning_side_race", trp_player),
+    
+    (try_begin),
+        # orc VS orc
+        # we use this, because we just had the WoTT
+        ( eq, ":winning_side_race", tf_orc ),
+        #(set_background_mesh, "mesh_draw_victory_orc"),  # specific victory-loss image:  orcs VS humans
+        (set_background_mesh, "mesh_draw_victory_orc_orc"),  # specific victory-loss image:  orcs VS orcs
+    (else_try),
+        # uurk VS anything
+        (eq, ":winning_side_race", tf_uruk ),
+        (set_background_mesh, "mesh_draw_victory_uruk"),  # specific victory-loss image: dwarves VS anything
+    (else_try),
+        # dwarf VS anything
+        (eq, ":winning_side_race", tf_dwarf ),
+        (set_background_mesh, "mesh_draw_victory_dwarf"),  # specific victory-loss image: dwarves VS anything
+    (else_try),
+        # evil men VS anything
+        (eq, ":winning_side_faction", "fac_mordor" ), #Mordor non-orc
+        (set_background_mesh, "mesh_draw_victory_evilman"),  # specific victory-loss image: evil men VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_gondor" ),
+        (set_background_mesh, "mesh_draw_victory_gondor"), # specific victory-loss image: gondor VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_rohan" ),
+        (set_background_mesh, "mesh_draw_victory_rohan"), # specific victory-loss image: rohan VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_imladris" ),
+        (set_background_mesh, "mesh_draw_victory_rivendell"), # specific victory-loss image: rivendell VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_woodelf" ),
+        (set_background_mesh, "mesh_draw_victory_mirkwood"), # specific victory-loss image: mirkwood VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_dunland" ),
+        (set_background_mesh, "mesh_draw_victory_dunland"), # specific victory-loss image: dunland VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_khand" ),
+        (set_background_mesh, "mesh_draw_victory_khand"), # specific victory-loss image: khand VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_harad" ),
+        (set_background_mesh, "mesh_draw_victory_harad"), # specific victory-loss image: harad VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_rhun" ),
+        (set_background_mesh, "mesh_draw_victory_rhun"), # specific victory-loss image: rhun VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_beorn" ),
+        (set_background_mesh, "mesh_draw_victory_beornings"), # specific victory-loss image: beorn VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_umbar" ),
+        (set_background_mesh, "mesh_draw_victory_corsairs"), # specific victory-loss image: umbar VS anything
+    (else_try),
+        (eq, ":winning_side_faction", "fac_dale" ),
+        (set_background_mesh, "mesh_draw_victory_dale"), # specific victory-loss image: dale VS anything
+    (try_end),
+    
+    (assign, ":side", "$g_notification_menu_var1"),
       (try_begin),
         (eq, ":side", faction_side_good),
-        (assign, ":faction", "fac_gondor"),
+        (play_sound, "snd_quest_succeeded"),
+        #(assign, ":faction", "fac_gondor"),
         (str_store_string, s1, "@Forces of Good"),
       (else_try),
         (eq, ":side", faction_side_eye),
-        (assign, ":faction", "fac_mordor"),
+        (play_sound, "snd_evil_horn"),
+        #(assign, ":faction", "fac_mordor"),
         (str_store_string, s1, "@Forces of Mordor"),
       (else_try),
         #(eq, ":side", faction_side_hand),
-        (assign, ":faction", "fac_isengard"),
+        #(assign, ":faction", "fac_isengard"),
+        (play_sound, "snd_evil_horn"),
         (str_store_string, s1, "@Forces of Isengard"),
       (try_end),
       
-      (set_fixed_point_multiplier, 100),
-      (position_set_x, pos0, 65),
-      (position_set_y, pos0, 30),
-      (position_set_z, pos0, 170),
-      (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction", pos0),
+      # (set_fixed_point_multiplier, 100),
+      # (position_set_x, pos0, 65),
+      # (position_set_y, pos0, 30),
+      # (position_set_z, pos0, 170),
+      # (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction", pos0),
     ],
-    [("continue",[],"Continue...",[(change_screen_return)])]
+
+    [
+    ] + (is_a_wb_menu==1 and [
+    ("go_to_capital",[],"Visit your capital and celebrate the victory...",[
+      (try_begin),
+        (eq, "$tld_war_began", 100),# assigned in Gandalf or Nazgul talk
+        (faction_get_slot, ":capital", "$players_kingdom", slot_faction_capital),
+        (party_slot_eq, ":capital", slot_center_destroyed, 0), #not destroyed
+        (try_for_range, ":lord", kingdom_heroes_begin, kingdom_heroes_end), #move faction lords to capital, respawn if necessary
+            (store_troop_faction, ":faction", ":lord"),
+            (eq, ":faction", "$players_kingdom"),
+            (neg|troop_slot_eq, ":lord", slot_troop_wound_mask, wound_death),
+            (troop_get_slot, ":party", ":lord", slot_troop_leaded_party),
+            (try_begin),
+                (gt,":party",0),
+                (party_detach, ":party"),
+                (party_attach_to_party, ":party", ":capital"),
+            (else_try),
+                (call_script, "script_create_kingdom_hero_party", ":lord", ":capital"),
+            (try_end),
+        (try_end),
+        
+        #move player to capital jump to scene
+        (set_encountered_party, ":capital"),
+        (assign, "$g_encountered_party", ":capital"),
+        (assign, "$current_town", ":capital"),
+        (assign, "$ambient_faction", "$players_kingdom"),
+        (party_get_position, pos1, ":capital"),
+        (party_set_position, p_main_party, pos1),
+        (set_passage_menu,"mnu_town"),
+        (call_script, "script_initialize_center_scene", 0),
+        (party_get_slot, ":town_scene", "$current_town", slot_town_center),
+		(assign, "$spawn_horse", 0),
+		(try_begin),(troop_is_mounted, "trp_player"),(set_jump_entry, 1),
+		 (else_try),                                 (set_jump_entry, 2),
+		(try_end),
+        (jump_to_scene, ":town_scene"),
+        (change_screen_mission),
+    (try_end), 
+    ]),
+	] or []) + [
+ 
+    ("exit_game1",[],"Exit",[(jump_to_menu, "mnu_campaign_won"),]),
+    
+    ],
  ),
 ( "notification_total_defeat",0,
     "^^^^^The War of the Ring is over for you!^^The {s1} have been defeated by their enemies and you stand alone in defeat!",
@@ -13371,6 +13476,19 @@ game_menus = [
     (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "trp_player", pos0)    ],
     [("continue",[],"Continue...",[(change_screen_map),]),]
  ),  
+
+( "campaign_won",0,
+    "^^Thank you for playing The Last Days of the Third Age!","none",
+    [
+    #(set_background_mesh, "mesh_warrider_logo"), #placeholder, need tableau
+    (set_fixed_point_multiplier, 100),
+    (position_set_x, pos0, 65),
+    (position_set_y, pos0, 30),
+    (position_set_z, pos0, 100),
+    (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "trp_player", pos0)    ],
+    [("exit_game2",[],"Go to main menu",[(change_screen_quit),]),]
+ ),  
+ 
 ] 
 
 ## quick scene chooser

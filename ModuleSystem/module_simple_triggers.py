@@ -650,6 +650,7 @@ simple_triggers = [
   # 7 hours in vanilla
   ( 3,[(try_begin),
         (ge,"$tld_war_began",1),  # vassal AI can change only if War started, GA
+        (neq,"$tld_war_began",100), #InVain
         (call_script, "script_init_ai_calculation"),
         (call_script, "script_decide_kingdom_party_ais"), # TLD, script modified to also decide if a lord spawns a host
       (try_end),
@@ -2918,7 +2919,7 @@ simple_triggers = [
       (try_end),
       (try_begin),
         (eq, ":game_over", 1),
-        (call_script, "script_add_notification_menu", "mnu_notification_one_side_left", ":living_side", 0),
+        #(call_script, "script_add_notification_menu", "mnu_notification_one_side_left", ":living_side", 0),
         
         #Send Gandalf on a victory chat - good player
         (try_begin),

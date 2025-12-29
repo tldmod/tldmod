@@ -23686,6 +23686,7 @@ scripts = [
       (val_or, "$g_tld_conversations_done", tld_conv_bit_gandalf_enemy_down),
     (else_try),
       (eq, ":convo_code", tld_cc_gandalf_victory),
+      (assign, "$tld_war_began", 100),
       
       (call_script, "script_get_faction_rank", "$g_talk_troop_faction"),
       (call_script, "script_get_own_rank_title_to_s24", "$players_kingdom", reg0),
@@ -23702,7 +23703,6 @@ scripts = [
       (str_store_string, s54, "@There is much to regret and mourn, and even more to rebuild and mend in the coming days. But for now, let us be jubilant with those of our friends that are with us still and celebrate all we have achieved in The Last Days Of The Third Age."),
       (assign, "$g_tld_convo_lines", 5),
       (val_or, "$g_tld_conversations_done", tld_conv_bit_gandalf_victory),
-      
     (else_try),
       (eq, ":convo_code", tld_cc_gandalf_rohan_quest_start),
       
@@ -23836,6 +23836,7 @@ scripts = [
       (val_or, "$g_tld_conversations_done", tld_conv_bit_nazgul_evil_war),
     (else_try),
       (eq, ":convo_code", tld_cc_nazgul_victory),
+      (assign, "$tld_war_began", 100),
       
       (str_store_string, s50, "@All... must... submit... and... serve..."),
       (try_begin),
@@ -24023,6 +24024,13 @@ scripts = [
     (else_try),
       (assign, "$g_tld_nazgul_state", ":state"),
     (try_end),
+    
+    (try_begin),
+        (eq, "$tld_war_began", 100),# assigned in Gandalf or Nazgul talk
+        (faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+        (call_script, "script_add_notification_menu", "mnu_notification_one_side_left", ":player_side", 0),
+    (try_end), 
+     
 ]),
 
 # script_party_eject_nonfaction (GA)
@@ -25075,19 +25083,19 @@ command_cursor_scripts = [
   		(disable_party, ":party_id"),
         (str_store_party_name, s1, ":party_id"),
   		(tutorial_box, "@{!}INVALID PARTY BEING REMOVED ({s1})! DISABLED INSTEAD. PLEASE LET THE DEVS KNOW. THIS IS A TEST AGAINST SAVE GAME CORRUPTION."),
-		(try_begin),
-			(eq, "$cheat_mode",1),
-			#(display_message, "@{s1} disabled"),
-		(try_end),
+		# (try_begin),
+			# (eq, "$cheat_mode",1),
+			# (display_message, "@{s1} disabled"),
+		# (try_end),
 	(else_try),
 		(neq, ":party_id", "p_main_party"),
         (party_is_active, ":party_id"), #avoids error messages when somehow trying to remove invalid parties
         (party_set_extra_text, ":party_id", "str_empty_string"), #just to be sure any extra text doesn't reappear if party ID is reused
-		(try_begin),
-			(eq, "$cheat_mode",1),
-            (str_store_party_name, s1, ":party_id"),
-			#(display_message, "@{s1} removed"),
-		(try_end),
+		# (try_begin),
+			# (eq, "$cheat_mode",1),
+            # (str_store_party_name, s1, ":party_id"),
+			# (display_message, "@{s1} removed"),
+		# (try_end),
 		(remove_party, ":party_id"),
 	(try_end),
   ]),
