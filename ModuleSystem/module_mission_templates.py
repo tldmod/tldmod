@@ -1400,6 +1400,7 @@ mission_templates = [ # not used in game
      (44,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(45,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(46,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),(47,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
      ],
     tld_common_wb_muddy_water+
+    tld_campaign_won +
 	#birds+			  
     tld_common_peacetime_scripts +[
 
@@ -1854,7 +1855,8 @@ mission_templates = [ # not used in game
      (28,mtef_visitor_source,af_castle_warlord,0,1,[]),(29,mtef_visitor_source,af_castle_warlord,0,1,[]),(30,mtef_visitor_source,af_castle_warlord,0,1,[]),(31,mtef_visitor_source,af_castle_warlord,0,1,[])
      ],
     tld_common_wb_muddy_water +
-    tld_common_peacetime_scripts + [
+    tld_common_peacetime_scripts + 
+    tld_campaign_won + [
       (ti_on_agent_spawn       , 0, 0, [],[ (store_trigger_param_1, ":agent_no"),(call_script, "script_init_town_agent", ":agent_no")]),
       (ti_before_mission_start , 0, 0, [],[ (call_script, "script_change_banners_and_chest"),(assign, "$dungeons_in_scene",1), (assign, "$temp_2", 0),]), #Use temp Global Var to prevent multiple scene prop spawns.
       (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)], []),

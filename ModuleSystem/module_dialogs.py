@@ -4067,10 +4067,11 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 ###InVain - Campaign Outro #####
 [anyone, "lord_start", [
-  # (check_quest_active, "qst_tld_introduction"),
-  # (quest_slot_eq, "qst_tld_introduction", slot_quest_target_troop, "$g_talk_troop"),
-  (faction_slot_eq,"$players_kingdom",slot_faction_leader,"$g_talk_troop"),
+  (check_quest_active, "qst_tld_introduction"),
+  (quest_slot_eq, "qst_tld_introduction", slot_quest_target_troop, "$g_talk_troop"),
+  #(faction_slot_eq,"$players_kingdom",slot_faction_leader,"$g_talk_troop"),
   (eq, "$tld_war_began", 100),
+  (assign, "$tld_war_began", 101), #this stops the cheering
   (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"),
   (faction_get_slot, ":side", "$players_kingdom", slot_faction_side),
   (str_clear, s5),
@@ -4087,19 +4088,21 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (str_store_string, s6, "@Hail to the Red Eye!"),
   (try_end)],
   "{!}{s5}", "campaign_won", [
+    (change_screen_return),
+    (finish_mission, 0),
+    (jump_to_menu, "mnu_campaign_won"),
+    #(assign,"$auto_menu", "mnu_campaign_won"),
   ]],
 
 [anyone|plyr,"campaign_won", [], 
-    "{!}{s6}", "close_window", [
-    (change_screen_return),
-    (finish_mission, 0),
-    (jump_to_menu, "mnu_campaign_won"),]],
+    "{!}{s6}", "close_window", []],
 
 ###Kham - Intro Quest START #####
 
 [anyone, "lord_start", [
   (check_quest_active, "qst_tld_introduction"),
   (quest_slot_eq, "qst_tld_introduction", slot_quest_target_troop, "$g_talk_troop"),
+  (lt, "$tld_war_began", 100), #war not won
   (faction_get_slot, ":side", "$players_kingdom", slot_faction_side),
   (str_clear, s5),
   (faction_get_slot, ":faction_theater", "$players_kingdom", slot_faction_active_theater),

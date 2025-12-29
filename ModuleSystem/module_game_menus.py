@@ -10135,6 +10135,7 @@ game_menus = [
     # $g_notification_menu_var1 - faction_side_*
     [ 
     (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+  
     (assign, ":winning_side_faction", "$players_kingdom"),
     (troop_get_type, ":winning_side_race", trp_player),
     
@@ -10195,35 +10196,40 @@ game_menus = [
       (try_begin),
         (eq, ":side", faction_side_good),
         (play_sound, "snd_quest_succeeded"),
-        #(assign, ":faction", "fac_gondor"),
+        (assign, ":icon", "mesh_choose_icon_good"),
         (str_store_string, s1, "@Forces of Good"),
       (else_try),
         (eq, ":side", faction_side_eye),
         (play_sound, "snd_evil_horn"),
-        #(assign, ":faction", "fac_mordor"),
+        (assign, ":icon", "mesh_choose_icon_eye"),
         (str_store_string, s1, "@Forces of Mordor"),
       (else_try),
         #(eq, ":side", faction_side_hand),
-        #(assign, ":faction", "fac_isengard"),
+        (assign, ":icon", "mesh_choose_icon_hand"),
         (play_sound, "snd_evil_horn"),
         (str_store_string, s1, "@Forces of Isengard"),
       (try_end),
       
-      # (set_fixed_point_multiplier, 100),
-      # (position_set_x, pos0, 65),
-      # (position_set_y, pos0, 30),
-      # (position_set_z, pos0, 170),
-      # (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction", pos0),
+      (set_fixed_point_multiplier, 100),
+      (position_set_x, pos0, 10),
+      (position_set_y, pos0, 10),
+      (position_set_z, pos0, 170),
+      # (init_position, pos0),
+      (set_game_menu_tableau_mesh, "tableau_single_icon_center", ":icon", pos0),
     ],
 
     [
     ] + (is_a_wb_menu==1 and [
-    ("go_to_capital",[],"Visit your capital and celebrate the victory...",[
-      (try_begin),
-        (eq, "$tld_war_began", 100),# assigned in Gandalf or Nazgul talk
+    ("go_to_capital",[
         (faction_get_slot, ":capital", "$players_kingdom", slot_faction_capital),
         (party_slot_eq, ":capital", slot_center_destroyed, 0), #not destroyed
-        (try_for_range, ":lord", kingdom_heroes_begin, kingdom_heroes_end), #move faction lords to capital, respawn if necessary
+        ],"Visit your capital and celebrate the victory...",[
+        
+        
+        (faction_get_slot, ":capital", "$players_kingdom", slot_faction_capital),
+        
+        #move faction lords to capital, respawn if necessary
+        (try_for_range, ":lord", kingdom_heroes_begin, kingdom_heroes_end), 
             (store_troop_faction, ":faction", ":lord"),
             (eq, ":faction", "$players_kingdom"),
             (neg|troop_slot_eq, ":lord", slot_troop_wound_mask, wound_death),
@@ -10253,12 +10259,20 @@ game_menus = [
 		(try_end),
         (jump_to_scene, ":town_scene"),
         (change_screen_mission),
-    (try_end), 
+        
+        #setup talk to leader quest
+        (str_store_party_name, s1, ":capital"),
+        (faction_get_slot, ":faction_lord", "$players_kingdom", slot_faction_leader),
+        (str_store_troop_name_link, s9, ":faction_lord"),
+        (setup_quest_text, "qst_tld_introduction"),
+        (str_store_string, s2, "@Go to {s1} and speak with {s9}."),
+        (call_script, "script_start_quest", "qst_tld_introduction", ":faction_lord"),
+        (quest_set_slot, "qst_tld_introduction", slot_quest_target_troop, ":faction_lord"),
     ]),
 	] or []) + [
  
     ("exit_game1",[],"Exit",[(jump_to_menu, "mnu_campaign_won"),]),
-    
+    #("reload",[],"reload",[(jump_to_menu, "mnu_notification_one_side_left"),]),
     ],
  ),
 ( "notification_total_defeat",0,
@@ -13478,14 +13492,14 @@ game_menus = [
  ),  
 
 ( "campaign_won",0,
-    "^^Thank you for playing The Last Days of the Third Age!","none",
+    "^^^Thank you for playing The Last Days of the Third Age!","none",
     [
-    #(set_background_mesh, "mesh_warrider_logo"), #placeholder, need tableau
-    (set_fixed_point_multiplier, 100),
-    (position_set_x, pos0, 65),
-    (position_set_y, pos0, 30),
-    (position_set_z, pos0, 100),
-    (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "trp_player", pos0)    ],
+      (set_fixed_point_multiplier, 100),
+      (position_set_x, pos0, 0),
+      (position_set_y, pos0, 10),
+      (position_set_z, pos0, 170),
+      (set_game_menu_tableau_mesh, "tableau_single_icon_center", "mesh_warrider_logo", pos0), 
+    ],
     [("exit_game2",[],"Go to main menu",[(change_screen_quit),]),]
  ),  
  

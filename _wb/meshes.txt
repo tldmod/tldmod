@@ -1,4 +1,4 @@
-404
+405
 mesh_ui_default_menu_window 0 ui_default_menu_window 0 0 0 0 0 0 1 1 1
 mesh_pic_mb_warrior_1 0 pic_mb_warrior_1 0 0 0 0 0 0 1 1 1
 mesh_relief01 0 relief01 0 0 0 0 0 0 1 1 1
@@ -403,3 +403,4 @@ mesh_choose_icon_uruk 0 icon_uruk 0 0 0 0 0 0 1 1 1
 mesh_choose_icon_evilman 0 icon_evilman 0 0 0 0 0 0 1 1 1
 mesh_draw_funeral_pyre_oath 0 draw_funeral_pyre_oath 0 0 0 0 0 0 1 1 1
 mesh_troop_label_banner 0 troop_label_banner 0 0 0 0 0 0 10 10 10
+mesh_warrider_logo 0 warrider_logo 0 0 0 0 0 0 2 2 2

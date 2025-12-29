@@ -866,6 +866,21 @@ tableaus = [
 ]),
 
 
+("single_icon_center", 0, "tableau_with_transparency", 1024, 1024, 0, 0, 350, 350,
+   [   
+       (store_script_param, ":mesh", 1),
+       # (cur_tableau_set_background_color, 0xFF808080), #debug
+       #(cur_tableau_set_ambient_light, 10,11,15),
+       (set_fixed_point_multiplier, 100),
+       #(cur_tableau_set_camera_parameters, 0, 40, 40, 0, 100000),
+
+       (init_position, pos1),
+       (position_set_z, pos1, 120),
+       (position_set_x, pos1, -10),
+       (position_set_y, pos1, 0),
+       (cur_tableau_add_mesh, ":mesh", pos1, 70, 0),
+]),
+
 ]
 
 

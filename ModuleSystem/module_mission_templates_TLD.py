@@ -4002,6 +4002,10 @@ nazgul_flying = ((is_a_wb_mt==1) and [
 
 tld_campaign_won =  ((is_a_wb_mt==1) and [ 
 
+ (ti_before_mission_start, 0, 0, [(eq, "$tld_war_began", 100)], [
+        (scene_set_day_time, 12),
+ ]),
+
  (1, 0, ti_once, [(eq, "$tld_war_began", 100),(neq, "$talk_context", tc_court_talk),],
   [ (set_fixed_point_multiplier, 100),
     (get_player_agent_no, ":player_agent"),
@@ -4163,11 +4167,16 @@ tld_campaign_won =  ((is_a_wb_mt==1) and [
             #(agent_set_look_target_position, ":cur_agent", pos5),
             (agent_set_look_target_agent, ":cur_agent", ":player_agent"),
             (copy_position, pos7, pos5),
-            (store_random_in_range, ":x", -400, 400),
+            (store_random_in_range, ":x", 200, 400),
+            (try_begin), #crude way to keep a passage for the player
+                (store_random_in_range, ":swap_side", 0, 2),
+                (eq, ":swap_side", 1),
+                (val_mul, ":x", -1),
+            (try_end),
             (store_random_in_range, ":y", 100, 600), #they try to get in front of the player
             (position_move_x, pos7, ":x"),
             (position_move_y, pos7, ":y"),
-            (agent_set_scripted_destination, ":cur_agent", pos5),
+            (agent_set_scripted_destination, ":cur_agent", pos7),
             (agent_set_speed_modifier, ":cur_agent", 120), #so they can keep up with the player
         (try_end),
         #TODO: Maybe add a particle effect or additional sounds for more festiveness

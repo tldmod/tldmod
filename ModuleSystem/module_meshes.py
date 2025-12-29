@@ -542,4 +542,5 @@ meshes+=[
 
 ("troop_label_banner",  0, "troop_label_banner", 0, 0, 0, 0, 0, 0, 10, 10, 10),
 
+("warrider_logo",  0, "warrider_logo", 0, 0, 0, 0, 0, 0, 2, 2, 2),
 ]
