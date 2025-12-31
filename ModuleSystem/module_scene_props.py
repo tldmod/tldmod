@@ -5913,6 +5913,179 @@ scene_props = [
 ("door_metal_a",0,"door_metal_a","bo_door_left", []),
 ("door_metal_b",0,"door_metal_b","bo_door_left", []),
 
+("victory_celebration_banner",0,"banner_e01","0", []), #will be replaced in victory celebration mission
+
+] + (is_a_wb_sceneprop==1 and [ 
+("victory_celebration_jubilant_group",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (eq, "$tld_war_began", 100), #victory
+    (faction_get_slot, ":player_side", "$ambient_faction", slot_faction_side),
+    
+    #place 4 random jubilants
+    (try_for_range, ":unused", 0, 4),
+        (store_random_in_range, ":troop_slot", slot_center_walker_0_troop, slot_center_walker_5_dna),
+        (party_get_slot, ":troop", "$current_town", ":troop_slot"),
+        (try_begin), #for roughly 1/3rd of tries, get a random troop from the party
+            (gt, ":troop_slot", slot_center_walker_9_troop),
+            (party_get_num_companion_stacks, ":num_stacks", "$current_town"),
+            (store_random_in_range, ":stack_no", 1, ":num_stacks"),
+            (party_stack_get_troop_id, ":troop", "$current_town", ":stack_no"),
+        (try_end),
+        (neg|troop_is_hero, ":troop"),
+        (neg|troop_is_guarantee_horse, ":troop"),
+
+        (try_begin), #equip weapon if they have one and if evil side
+          (neq, ":player_side", faction_side_good),
+          (agent_get_item_slot, ":item_no", reg0, ek_item_0),
+          (gt, ":item_no", 0),
+          (agent_set_wielded_item, reg0, ":item_no"),
+        (try_end),
+        
+        (prop_instance_get_position, pos1, ":instance_no"),
+        (store_random_in_range, ":x", -300, 300,),
+        (store_random_in_range, ":y", -400, -100,),
+        (position_move_x, pos1, ":x"),
+        (position_move_y, pos1, ":y"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+        (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
+    (try_end),
+    
+    #place a guard or a banner
+    (prop_instance_get_position, pos1, ":instance_no"),
+    (set_spawn_position, pos1),
+    (assign, ":spawn_troop", -1),
+    (store_random_in_range, ":rand", 0, 4),
+    (try_begin),
+        (eq, ":rand", 1),
+        (party_get_slot, ":troop", "$current_town", slot_town_castle_guard_troop),
+        (neg|troop_is_guarantee_horse, ":troop"),
+        (assign, ":spawn_troop", ":troop"),
+    (else_try), #fallback if castle guard is a mounted troop
+        #(lt, ":rand", 3),
+        (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),#
+        (try_for_range, ":unused", 0, 6),
+            (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 1), #try secondary upgrade path first - favours spearmen
+            (gt, ":upgrade_troop", 0),
+            (neg|troop_is_guarantee_ranged, ":upgrade_troop"),
+            (neg|troop_is_guarantee_horse, ":upgrade_troop"),
+            (assign, ":troop", ":upgrade_troop"),
+        (else_try), 
+            (troop_get_upgrade_troop, ":upgrade_troop", ":troop", 0),
+            (gt, ":upgrade_troop", 0),
+            (assign, ":troop", ":upgrade_troop"),
+        (try_end),
+        (neg|troop_is_guarantee_horse, ":troop"),
+        (neg|troop_is_guarantee_ranged, ":troop"),
+        (assign, ":spawn_troop", ":troop"),
+    (try_end),
+    
+    (gt, ":spawn_troop", 0),
+    (spawn_agent, ":spawn_troop"),
+    (agent_set_slot, reg0, slot_agent_walker_type, 2), #don't talk
+
+    #equip weapon
+    (agent_get_item_slot, ":item", reg0, ek_item_0),
+    (gt, ":item", 1),
+    (agent_set_wielded_item, reg0, ":item"),
+    (try_for_range, ":weapon_slot", ek_item_0, ek_item_3 + 1), #find shield
+        (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+        (gt, ":item", 1),
+        (item_get_type, ":item_type", ":item"),
+        (eq, ":item_type", itp_type_shield),
+        (agent_set_wielded_item, reg0, ":item"),
+    (try_end),
+    
+    (agent_set_position, reg0, pos1),
+    (agent_set_animation, reg0, "anim_stand_townguard_polearm"),
+    (agent_set_stand_animation, reg0, "anim_stand_townguard_polearm"),
+        
+    (store_random_in_range, reg6, 0, 100),
+    (agent_set_animation_progress, reg0, reg6),
+   ])]),
+] or [
+  ("victory_celebration_jubilant_group", sokf_invisible, "arrow_helper_blue", "0", []), 
+]) + [  
+
+#special edition with randomized banners
+("victory_celebration_banner_stand_auto",sokf_moveable,"battle_banner_stand_a_auto","0", [(ti_on_init_scene_prop,[
+    (try_begin),
+        (party_get_num_attached_parties, ":num_attached_parties", "$current_town"),
+        (store_random_in_range, ":rank", -1, ":num_attached_parties"),
+        (ge, ":rank", 0), #otherwise, it gets the town lords flag
+        (party_get_attached_party_with_rank, ":attached_party", "$current_town", ":rank"),
+        (party_stack_get_troop_id, ":leader", ":attached_party", 0),
+        (troop_is_hero, ":leader"),
+    (else_try),
+        (party_get_slot, ":leader", "$current_town", slot_town_lord),
+    (try_end),
+    (troop_get_slot, ":troop_banner_object", ":leader", slot_troop_banner_scene_prop),
+    (gt, ":troop_banner_object", 0),
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+] + (is_a_wb_sceneprop==1 and [ 
+    (spawn_scene_prop, ":troop_banner_object"),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+] or []) + [
+    ])]),
+
+] + (is_a_wb_sceneprop==1 and [ 
+("troop_guard_train",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (store_faction_of_party, ":current_faction", "$current_town"),
+    (faction_get_slot, ":troop", ":current_faction", slot_faction_guard_troop),
+    (try_begin), #make sure it's infantry
+        (troop_is_guarantee_horse, ":troop"),
+        (faction_get_slot, ":troop", ":current_faction", slot_faction_tier_2_troop),
+    (try_end),
+
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+
+    (assign, ":weapon_found", 0),
+    (try_for_range, ":weapon_slot", 0, 4), #find weapon
+        (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+        (gt, ":item", 1),
+        (item_get_type, ":item_type", ":item"),
+        (neq, ":item_type", itp_type_polearm),
+        (neq, ":item_type", itp_type_bow),
+        (neq, ":item_type", itp_type_crossbow),
+        (neq, ":item_type", itp_type_thrown),
+        (agent_set_wielded_item, reg0, ":item"),
+        (assign, ":weapon_found", 1),
+    (try_end),
+    (try_begin),
+        (eq, ":weapon_found", 0),
+        (agent_equip_item, reg0, "itm_practice_staff", 1),
+        (agent_set_wielded_item, reg0, ":item"),
+    (try_end),
+    (prop_instance_deform_in_range, ":instance_no", 0, 100, 500), #fake deform to get a timer
+   ]),
+  (ti_scene_prop_deformation_finished,[
+    (set_fixed_point_multiplier, 100),
+    (store_trigger_param_1, ":instance_no"),
+    (prop_instance_get_position, pos1, ":instance_no"),
+    (get_player_agent_no, ":player"),
+    (agent_get_position, pos3, ":player"),
+    (get_distance_between_positions, ":dist", pos1, pos3),
+    (try_begin),
+        (is_between, ":dist", 300, 4000), #stop at greater distances to avoid noise
+        (scene_prop_get_slot, ":agent", ":instance_no", slot_prop_agent_1),
+        (agent_set_position, ":agent", pos1),
+        (store_random_in_range, ":attack_direction", 1, 4), #no thrust
+        (agent_set_attack_action, ":agent", ":attack_direction", 0),
+    (try_end),
+
+    (store_random_in_range, ":timer", 1000, 2000),
+    (try_begin), #pauses
+        (ge, ":timer", 1800),
+        (store_random_in_range, ":timer", 8000, 13000),
+    (try_end),
+    (prop_instance_deform_in_range, ":instance_no", 0, 100, ":timer"), #fake deform to get a timer
+   ]),
+   ]),
+] or [
+  ("troop_guard_train", sokf_invisible, "arrow_helper_blue", "0", []), 
+]) + [  
+
+
 ("arrow_helper_blue",0,"arrow_helper_blue","0", []),
 ("save_compartibility4",0,"0","0", []),
 ("save_compartibility5",0,"0","0", []),

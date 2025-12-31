@@ -3808,4 +3808,28 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("trait_desc_stub_4", "{!}unused"),
 ("trait_title_stub_5", "{!}unused"),
 ("trait_desc_stub_5", "{!}unused"),
+
+  ("credits_tld_1", "{!}The last Days of the Third Age\
+^^InVain^Merlkir^Swyter^\
+"),
+  ("credits_tld_2", "{!}^^In honor and loving memory of\
+^^Ancientwanker\
+^^Original Creator and Team Leader of The Last Days of The Third Age\
+"),
+  ("credits_tld_3", "{!}Former Core Developers:\
+^^Brutus^CppCoder^GetAssista^JTLannister^Khamukhammu^Llew^MadVader^Marco Tarini (mtarini)^Octoburn^Triglav^\
+"),
+  ("credits_tld_4", "{!}Contributions, Help, Advice:\
+"),
+  ("credits_tld_5", "{!}^^^Aiden^Arsakes^Avelium^Burspa^Cozur^Darnokthemage^DarthMongolTheUnwise ^Giles \
+"),
+  ("credits_tld_6", "{!}^^^Rafael Casanova Morera ^Ruthven ^kalarhan ^Lightwolf Games ^Lolinilandecadon ^Madsci ^Mandible ^Morgul ^NPC99 \
+"),
+  ("credits_tld_7", "{!}^^^Noxbru ^Renmauzuo ^Sid the Kid ^Saxondragon ^Snouz ^Yarrum ^Zachary Foster \
+"),
+  ("credits_tld_8", "{!}^^Dain Ironfoot^Farodon^foxyman^Giles^Ursca^Yoshiboy ^Abhuva ^Amman ^Asterix ^Balduran ^Barf ^Buzvonlurt ^Conners ^dunde \
+"),
+  ("credits_tld_9", "{!}^^freakin wat ^Gutekfiutek ^HokieBT ^Kolba ^LynX ^mandible ^Pagan ^Petrovski ^Romainoir ^Rongar ^Smile ^Taal ^Treebeard ^Sibylla ^Stefano \
+"),
+  ("credits_tld_10", "{!}Pre 3.0 Contributors:"),
 ]
