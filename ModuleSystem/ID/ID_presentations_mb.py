@@ -25,3 +25,4 @@ prsnt_faction_selection_good = 23
 prsnt_faction_selection_evil = 24
 prsnt_faction_selection_eye = 25
 prsnt_faction_selection_hand = 26
+prsnt_game_credits_tld = 27

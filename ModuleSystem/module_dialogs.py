@@ -13215,7 +13215,9 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone|plyr,"town_dweller_talk", [], "[Leave]", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone,"start", [(this_or_next|eq, "$talk_context", 0), (eq, "$talk_context", tc_court_talk),
-                  (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 9),
+                  (this_or_next|agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 9),
+                  (this_or_next|agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 1),
+                  (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 5),
                   (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"),
                   (agent_set_animation, "$g_talk_agent", "anim_cheer"),
                   (call_script, "script_troop_get_cheer_sound", "$g_talk_troop"),

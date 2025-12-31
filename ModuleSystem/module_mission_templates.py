@@ -6662,6 +6662,8 @@ mission_templates = [ # not used in game
 	HD_ladders_init,HD_ladders_rise,
 	stonelobbing_init_stone,stonelobbing_pick_stone,stonelobbing_throw_stone,stonelobbing_fly_stone,stonelobbing_carry_stone,
 ]),
+
+#UNUSED
 ( "custom_battle_dynamic_scene", mtf_battle_mode,-1,"You lead your men to random scenery battle!",
     [ (0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
       (2 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(3 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
@@ -6695,7 +6697,8 @@ mission_templates = [ # not used in game
 	horse_whistle,
 	######################################## tree selection and 
 	#scene_init_fog,scene_set_fog,
-	scene_set_flora_init,scene_set_flora_army_spawn,
+	#scene_set_flora_init,
+    scene_set_flora_army_spawn,
 ]),
 ( "custom_battle_parade",mtf_battle_mode,-1,
     "You line up your troops for the parade",

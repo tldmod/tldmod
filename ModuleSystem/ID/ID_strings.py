@@ -2737,5 +2737,15 @@ str_trait_title_stub_4 = 2735
 str_trait_desc_stub_4 = 2736
 str_trait_title_stub_5 = 2737
 str_trait_desc_stub_5 = 2738
+str_credits_tld_1 = 2739
+str_credits_tld_2 = 2740
+str_credits_tld_3 = 2741
+str_credits_tld_4 = 2742
+str_credits_tld_5 = 2743
+str_credits_tld_6 = 2744
+str_credits_tld_7 = 2745
+str_credits_tld_8 = 2746
+str_credits_tld_9 = 2747
+str_credits_tld_10 = 2748
 
 

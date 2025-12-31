@@ -3184,17 +3184,18 @@ stonelobbing_carry_stone = (0,0,0, [(eq,"$stonelobbing_state",1)],
 ################## STONELOBBING END ########################################
 
 ################## FLORA BEGIN ###########################################
+############UNUSED############
 scene_set_flora_init = (ti_before_mission_start,0,0,[],
 	[(try_for_range,":pointer",0,20),
-		(store_random_in_range,":object","spr_tree0_yellow_flower","spr_trees_end"),	# assign type of tree
-		(troop_set_slot,"trp_temp_array_a",":pointer",":object"),
-		(assign,":num",1),
-		(try_for_range,":i",0,":pointer"),												# tree was previously assigned?
-			(try_begin),(troop_slot_eq,"trp_temp_array_a",":i",":object"),(val_add,":num",1),(try_end),
-		(try_end),
-		(troop_set_slot,"trp_temp_array_b",":pointer",":num"),
-		(store_add,":spr_pointer","spr_zz_pointer00",":pointer"),
-		(replace_scene_props,":spr_pointer",":object"),
+		# (store_random_in_range,":object","spr_tree0_yellow_flower","spr_trees_end"),	# assign type of tree
+		# (troop_set_slot,"trp_temp_array_a",":pointer",":object"),
+		# (assign,":num",1),
+		# (try_for_range,":i",0,":pointer"),												# tree was previously assigned?
+			# (try_begin),(troop_slot_eq,"trp_temp_array_a",":i",":object"),(val_add,":num",1),(try_end),
+		# (try_end),
+		# (troop_set_slot,"trp_temp_array_b",":pointer",":num"),
+		# (store_add,":spr_pointer","spr_zz_pointer00",":pointer"),
+		# (replace_scene_props,":spr_pointer",":object"),
 	(try_end)])
 scene_set_flora_army_spawn = (0, 0, ti_once, [], [
 	(get_scene_boundaries,pos1,pos2),
@@ -4039,11 +4040,15 @@ tld_campaign_won =  ((is_a_wb_mt==1) and [
         (spawn_agent, ":guard"),
         (agent_set_slot, reg0, slot_agent_walker_type, 9),
     (try_end),
-    (entry_point_get_position, pos6, 0),
-    (set_spawn_position, pos6),
     (try_for_range, ":entry", 0, 10), #and ten additional walkers spawning at the gate
         (store_random_in_range, ":walker_slot", slot_center_walker_0_troop, slot_center_walker_9_troop),
         (party_get_slot, ":walker", "$current_town", ":walker_slot"),
+        (entry_point_get_position, pos6, 0),
+        (store_random_in_range, ":x", -500, 500),
+        (store_random_in_range, ":y", -500, 500),
+        (position_move_x, pos6, ":x"),
+        (position_move_y, pos6, ":y"),
+        (set_spawn_position, pos6),
         (spawn_agent, ":walker"),
         (agent_set_slot, reg0, slot_agent_walker_type, 9),
     (try_end),

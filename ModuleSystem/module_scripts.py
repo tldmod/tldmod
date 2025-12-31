@@ -14670,6 +14670,16 @@ scripts = [
 #     (else_try),
 #       (replace_scene_props, banner_scene_props_begin, "spr_empty"),
      (try_end),
+     
+     #extra banners and bystanders for victory celebration
+     (try_begin),
+        (neq, "$tld_war_began", 100),
+        (replace_scene_props, "spr_victory_celebration_banner", "spr_empty"),
+        (replace_scene_props, "spr_victory_celebration_banner_stand_auto", "spr_empty"),
+     (else_try),
+        (replace_scene_props, "spr_victory_celebration_banner", ":troop_banner_object"),
+     (try_end),        
+     
      (try_begin),
        #(neq, ":cur_leader", "trp_player"),
        (faction_slot_eq, "$players_kingdom", slot_faction_capital, "$g_encountered_party"),
@@ -28483,6 +28493,7 @@ command_cursor_scripts = [
    (str_clear, s18),
    (str_clear, s19),
    #battle terrain
+   (assign, "$terrain_condition", tc_none),
    (try_begin), #forests
         (this_or_next|eq, "$current_player_region", region_fangorn),
         (this_or_next|is_between, "$current_player_region", region_n_mirkwood, region_grey_mountains),
