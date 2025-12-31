@@ -10195,7 +10195,7 @@ game_menus = [
     (assign, ":side", "$g_notification_menu_var1"),
       (try_begin),
         (eq, ":side", faction_side_good),
-        (play_sound, "snd_quest_succeeded"),
+        #(play_sound, "snd_quest_succeeded"),
         (assign, ":icon", "mesh_choose_icon_good"),
         (str_store_string, s1, "@Forces of Good"),
       (else_try),
@@ -13488,19 +13488,22 @@ game_menus = [
     (position_set_y, pos0, 30),
     (position_set_z, pos0, 100),
     (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "trp_player", pos0)    ],
-    [("continue",[],"Continue...",[(change_screen_map),]),]
+    [("continue",[],"Continue...",[(start_presentation, "prsnt_game_credits_tld"),]),]
  ),  
 
 ( "campaign_won",0,
     "^^^Thank you for playing The Last Days of the Third Age!","none",
-    [
-      (set_fixed_point_multiplier, 100),
-      (position_set_x, pos0, 0),
-      (position_set_y, pos0, 10),
-      (position_set_z, pos0, 170),
-      (set_game_menu_tableau_mesh, "tableau_single_icon_center", "mesh_warrider_logo", pos0), 
+    [(set_background_mesh, "mesh_relief01"),
+      # (set_fixed_point_multiplier, 100),
+      # (position_set_x, pos0, 0),
+      # (position_set_y, pos0, 10),
+      # (position_set_z, pos0, 170),
+      # (set_game_menu_tableau_mesh, "tableau_single_icon_center", "mesh_warrider_logo", pos0),
     ],
-    [("exit_game2",[],"Go to main menu",[(change_screen_quit),]),]
+    [
+    ("credits_tld",[],"TLD Credits",[(start_presentation, "prsnt_game_credits_tld"), (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),]),
+    ("exit_game2",[],"Quit to main menu",[(change_screen_quit),]),
+    ]
  ),  
  
 ] 
