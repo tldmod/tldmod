@@ -1607,6 +1607,7 @@ scripts = [
 	(faction_set_slot, faction_init[x][0], slot_faction_rider_troop       , faction_init[x][8][2]) for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_init[x][0], slot_faction_archer_troop      , faction_init[x][8][3]) for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_init[x][0], slot_faction_castle_guard_troop, faction_init[x][8][4]) for x in range(len(faction_init)) ]+[
+	(faction_set_slot, faction_init[x][0], slot_faction_banner_troop      , faction_init[x][8][5]) for x in range(len(faction_init)) ]+[
 
 	(faction_set_slot, faction_init[x][0], slot_faction_capital           , faction_init[x][9])    for x in range(len(faction_init)) ]+[
 	(faction_set_slot, faction_init[x][0], slot_faction_side              , faction_init[x][10])   for x in range(len(faction_init)) ]+[
@@ -2192,7 +2193,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 4273),  #Rafa: Savegame version; InVain: Changed to _roughly_ show the rev number, helps with savegame inspection
+    (assign,"$savegame_version", 4303),  #Rafa: Savegame version; InVain: Changed to _roughly_ show the rev number, helps with savegame inspection
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -2609,6 +2610,16 @@ scripts = [
 		#(str_store_party_name, s1, ":town"),
 		#(str_store_troop_name, s2, ":highest_level_troop"),
 		#(display_message, "@{s1}: removed volunteer {s2}"),
+        
+        #add banner carriers
+        (try_begin),
+            (ge, ":rank", 20), #rank 4 onwards
+            (faction_get_slot, ":banner_troop", ":fac", slot_faction_banner_troop),
+            (ge, ":banner_troop", 0),
+            (party_count_members_of_type, reg1, ":volunteers",":banner_troop"),
+            (lt, reg1, 2),
+            (party_add_members, ":volunteers", ":banner_troop", 1),
+        (try_end),
 	
         (try_begin), #umbar reward helm spawns black numenoreans for hire
             (troop_has_item_equipped, "trp_player", "itm_umb_helm_reward"),
@@ -25902,6 +25913,16 @@ command_cursor_scripts = [
             (troop_set_slot, "trp_npc9", slot_troop_is_berserker, 1), #Gulm
         (try_end),
     (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4303),
+        (assign, "$savegame_version", 4303),
+        (faction_set_slot, "fac_mordor", slot_faction_banner_troop, trp_i5_mordor_uruk_standard_bearer),
+        (faction_set_slot, "fac_isengard", slot_faction_banner_troop, trp_i5_isen_uruk_standard_bearer),
+        (faction_set_slot, "fac_lorien", slot_faction_banner_troop, trp_lothlorien_standard_bearer),
+        (faction_set_slot, "fac_imladris", slot_faction_banner_troop, trp_i6_rivendell_standard_bearer),
+        (faction_set_slot, "fac_woodelf", slot_faction_banner_troop, trp_i5_greenwood_standard_bearer),
+    (try_end),
     
     ] or []) + [ 
 ]),
@@ -28133,11 +28154,17 @@ command_cursor_scripts = [
             (assign, ":reward_troop", -1),
             (troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
             (store_troop_faction, ":hero_fac", ":troop_no"),
+            (store_random_in_range, ":rand", 0, 10),
 
             (try_begin),
                 #See if lord has retainer troops first
                 (troop_get_slot, ":reward_troop", ":troop_no", slot_troop_retainer_troop),
+                (gt, ":rand", 2), #leave a small chance for other reward troops
                 (gt, ":reward_troop", 0),
+            (else_try), #banner carriers
+                (faction_get_slot, ":reward_troop", ":hero_fac", slot_faction_banner_troop),
+                (ge, ":reward_troop", 0),
+                (le, ":rand", 2),
             (else_try),
                 #If no retainer then choose the highest level troop from the lord's party, prioritizing appropriate subfaction troops
                 (gt, ":party", 0),
@@ -28222,6 +28249,7 @@ command_cursor_scripts = [
         [
             (store_script_param, ":troop_no", 1),
             (troop_get_slot, ":reward_troop", ":troop_no", slot_troop_friendship_reward_id),
+            (store_troop_faction, ":hero_fac", ":troop_no"),
             
             #Determine number of troops
             (call_script, "script_troop_get_player_relation", ":troop_no"),
@@ -28230,6 +28258,11 @@ command_cursor_scripts = [
             (val_div, ":troop_count", 20), 
             (val_add, ":troop_count", 1), #2-6 troops based on relation
 
+            (try_begin),
+                (faction_slot_eq, ":hero_fac", slot_faction_banner_troop, ":reward_troop"),
+                (val_div, ":troop_count", 2),
+                (val_max, ":troop_count", 1),
+            (try_end),
             (try_begin),
                 #Give extra orcs
                 (troop_get_type, ":type", ":reward_troop"),
