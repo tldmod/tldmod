@@ -130,24 +130,60 @@ scripts = [
 ("troop_get_cheer_sound", [
 	(store_script_param_1, ":trp"),		
 	(troop_get_type, ":race",":trp"),
-	(try_begin),(eq,":race",0x0),(assign,reg1,"snd_man_victory"),
-	(else_try), (eq,":race",0x1),(assign,reg1,"snd_woman_yell"), # woman
-	(else_try), (eq,":race",0x2),(assign,reg1,"snd_gondor_victory_player"),
-	(else_try), (eq,":race",0x3),(assign,reg1,"snd_rohan_victory"),
-	(else_try), (eq,":race",0x4),(assign,reg1,"snd_dunlender_victory"),
-	(else_try), (eq,":race",0x5),(assign,reg1,"snd_orc_victory"),
-	(else_try), (eq,":race",0x6),(assign,reg1,"snd_uruk_victory"),
-	(else_try), (eq,":race",0x7),(assign,reg1,"snd_uruk_victory"),
-	(else_try), (eq,":race",0x8),(assign,reg1,"snd_haradrim_victory"),
-	(else_try), (eq,":race",0x9),(assign,reg1,"snd_man_victory"), # dwarf
-	(else_try), (eq,":race",0xA),(assign,reg1,"snd_troll_victory"),
-	(else_try), (eq,":race",0xB),(assign,reg1,"snd_dunedain_victory_player"),
-	(else_try), (eq,":race",0xC),(assign,reg1,"snd_mirkwood_victory_player"),
-	(else_try), (eq,":race",0xD),(assign,reg1,"snd_mirkwood_victory_player"),
-	(else_try), (eq,":race",0xE),(assign,reg1,"snd_mirkwood_victory_player"),
-	(else_try), (eq,":race",0xF),(assign,reg1,"snd_man_victory"), # Khand   +  Rhun   +   Easterling
-	(else_try),(assign,reg1,"snd_man_victory"), 
-	(try_end),
+    (assign,reg1,"snd_man_victory"),
+    
+    (try_begin), #player
+        (eq, ":trp", trp_player),
+        (try_begin),(eq,":race",0x0),(assign,reg1,"snd_man_victory"),
+        (else_try), (eq,":race",0x1),(assign,reg1,"snd_woman_yell"), # woman
+        (else_try), (eq,":race",0x2),(assign,reg1,"snd_gondor_victory_player"),
+        (else_try), (eq,":race",0x3),(assign,reg1,"snd_rohan_victory"),
+        (else_try), (eq,":race",0x4),(assign,reg1,"snd_dunlender_victory"),
+        (else_try), (eq,":race",0x5),(assign,reg1,"snd_orc_victory"),
+        (else_try), (eq,":race",0x6),(assign,reg1,"snd_uruk_victory"),
+        (else_try), (eq,":race",0x7),(assign,reg1,"snd_uruk_victory"),
+        (else_try), (eq,":race",0x8),(assign,reg1,"snd_haradrim_victory"),
+        (else_try), (eq,":race",0x9),(assign,reg1,"snd_man_victory"), # dwarf
+        (else_try), (eq,":race",0xA),(assign,reg1,"snd_troll_victory"),
+        (else_try), (eq,":race",0xB),(assign,reg1,"snd_dunedain_victory_player"),
+        (else_try), (eq,":race",0xC),(assign,reg1,"snd_mirkwood_victory_player"),
+        (else_try), (eq,":race",0xD),(assign,reg1,"snd_mirkwood_victory_player"),
+        (else_try), (eq,":race",0xE),(assign,reg1,"snd_mirkwood_victory_player"),
+        (else_try), (eq,":race",0xF),(assign,reg1,"snd_man_victory"), # Khand   +  Rhun   +   Easterling
+        (else_try),(assign,reg1,"snd_man_victory"), 
+        (try_end),
+    (else_try), #mix in regular man cheers
+        (store_random_in_range, ":rand", 0, 3),
+        (eq, ":rand", 0),
+        (this_or_next|eq,":race",0x2), #Gondor
+        (this_or_next|eq,":race",0x3), #Rohan
+        (this_or_next|eq,":race",0x4), #Dunlendings
+        (this_or_next|eq,":race",0x8), #Haradrim
+        (this_or_next|eq,":race",0xB), #Dunedain
+        (this_or_next|eq,":race",0xC),
+        (this_or_next|eq,":race",0xD),
+        (eq,":race",0xE),
+        (assign,reg1,"snd_man_victory"),
+    (else_try),
+        (try_begin),(eq,":race",0x0),(assign,reg1,"snd_man_victory"),
+        (else_try), (eq,":race",0x1),(assign,reg1,"snd_woman_yell"), # woman
+        (else_try), (eq,":race",0x2),(assign,reg1,"snd_gondor_victory"),
+        (else_try), (eq,":race",0x3),(assign,reg1,"snd_rohan_victory"),
+        (else_try), (eq,":race",0x4),(assign,reg1,"snd_dunlender_victory"),
+        (else_try), (eq,":race",0x5),(assign,reg1,"snd_orc_victory"),
+        (else_try), (eq,":race",0x6),(assign,reg1,"snd_uruk_victory"),
+        (else_try), (eq,":race",0x7),(assign,reg1,"snd_uruk_victory"),
+        (else_try), (eq,":race",0x8),(assign,reg1,"snd_haradrim_victory"),
+        (else_try), (eq,":race",0x9),(assign,reg1,"snd_dwarf_yell"), # dwarf, already has regular M&B yells mixed in
+        (else_try), (eq,":race",0xA),(assign,reg1,"snd_troll_victory"),
+        (else_try), (eq,":race",0xB),(assign,reg1,"snd_dunedain_victory"),
+        (else_try), (eq,":race",0xC),(assign,reg1,"snd_mirkwood_victory"),
+        (else_try), (eq,":race",0xD),(assign,reg1,"snd_mirkwood_victory"),
+        (else_try), (eq,":race",0xE),(assign,reg1,"snd_mirkwood_victory"),
+        (else_try), (eq,":race",0xF),(assign,reg1,"snd_man_victory"), # Khand   +  Rhun   +   Easterling
+        (else_try),(assign,reg1,"snd_man_victory"), 
+        (try_end),
+    (try_end),
 ]),
 
 ############################# TLD player icon (mtarini)
