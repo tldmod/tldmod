@@ -1993,7 +1993,6 @@ hp_shield_init = (ti_on_agent_spawn, 0, 0, [
 
 hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
   (store_trigger_param_1, ":agent"),
-
   (agent_slot_eq, ":agent", slot_agent_hp_shield_active, 1),
   ],
   
@@ -4933,6 +4932,7 @@ tld_animated_town_agents = [
     
     #important NPCs wave at player
     (try_for_agents, ":agent"),
+        (neq, "$tld_war_began", 100),
         (agent_is_human, ":agent"),
         (agent_get_troop_id, ":troop_no", ":agent"),
         (agent_get_entry_no, ":entry", ":agent"),

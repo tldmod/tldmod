@@ -13488,7 +13488,7 @@ game_menus = [
     (position_set_y, pos0, 30),
     (position_set_z, pos0, 100),
     (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "trp_player", pos0)    ],
-    [("continue",[],"Continue...",[(start_presentation, "prsnt_game_credits_tld"),]),]
+    [("continue",[],"Continue...",[(change_screen_map),]),]
  ),  
 
 ( "campaign_won",0,
@@ -13501,7 +13501,7 @@ game_menus = [
       # (set_game_menu_tableau_mesh, "tableau_single_icon_center", "mesh_warrider_logo", pos0),
     ],
     [
-    ("credits_tld",[],"TLD Credits",[(start_presentation, "prsnt_game_credits_tld"), (call_script, "script_music_set_situation_with_culture", mtf_sit_travel),]),
+    ("credits_tld",[],"TLD Credits",[(start_presentation, "prsnt_game_credits_tld"), (call_script, "script_music_set_situation_with_culture", mtf_sit_town),]),
     ("exit_game2",[],"Quit to main menu",[(change_screen_quit),]),
     ]
  ),  

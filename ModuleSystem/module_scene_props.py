@@ -2319,11 +2319,145 @@ scene_props = [
     (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand"),])]),
   
 
+#alternative/replacement for spr_troop_guard_fight_single
+] + (is_a_wb_sceneprop==1 and [ 
+("troop_guard_fight_single_alt",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (store_faction_of_party, ":current_faction", "$current_town"),
+    (faction_get_slot, ":troop", ":current_faction", slot_faction_guard_troop),
+    (try_begin), #make sure it's infantry
+        (troop_is_guarantee_horse, ":troop"),
+        (faction_get_slot, ":troop", ":current_faction", slot_faction_tier_2_troop),
+    (try_end),
+
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+
+    (assign, ":weapon_found", 0),
+    (try_for_range, ":weapon_slot", 0, 4), #find weapon
+        (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
+        (gt, ":item", 1),
+        (item_get_type, ":item_type", ":item"),
+        (neq, ":item_type", itp_type_polearm),
+        (neq, ":item_type", itp_type_bow),
+        (neq, ":item_type", itp_type_crossbow),
+        (neq, ":item_type", itp_type_thrown),
+        (agent_set_wielded_item, reg0, ":item"),
+        (assign, ":weapon_found", 1),
+    (try_end),
+    (try_begin),
+        (eq, ":weapon_found", 0),
+        (agent_equip_item, reg0, "itm_practice_staff", 1),
+        (agent_set_wielded_item, reg0, ":item"),
+    (try_end),
+    (prop_instance_deform_in_range, ":instance_no", 0, 100, 500), #fake deform to get a timer
+   ]),
+  (ti_scene_prop_deformation_finished,[
+    (set_fixed_point_multiplier, 100),
+    (store_trigger_param_1, ":instance_no"),
+    (prop_instance_get_position, pos1, ":instance_no"),
+    (get_player_agent_no, ":player"),
+    (agent_get_position, pos3, ":player"),
+    (get_distance_between_positions, ":dist", pos1, pos3),
+    (try_begin),
+        (is_between, ":dist", 300, 4000), #stop at greater distances to avoid noise
+        (scene_prop_get_slot, ":agent", ":instance_no", slot_prop_agent_1),
+        (agent_set_position, ":agent", pos1),
+        (store_random_in_range, ":attack_direction", 1, 4), #no thrust
+        (agent_set_attack_action, ":agent", ":attack_direction", 0),
+    (try_end),
+
+    (store_random_in_range, ":timer", 1000, 2000),
+    (try_begin), #pauses
+        (ge, ":timer", 1800),
+        (store_random_in_range, ":timer", 8000, 13000),
+    (try_end),
+    (prop_instance_deform_in_range, ":instance_no", 0, 100, ":timer"), #fake deform to get a timer
+   ]),
+   ]),
+] or [
+  ("troop_guard_fight_single_alt", sokf_invisible, "arrow_helper_blue", "0", []), 
+]) + [  
+
+] + (is_a_wb_sceneprop==1 and [ 
+("troop_guard_fight_duel_alt",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (store_faction_of_party, ":current_faction", "$current_town"),
+    (faction_get_slot, ":troop", ":current_faction", slot_faction_guard_troop),
+    (try_begin), #make sure it's infantry
+        (troop_is_guarantee_horse, ":troop"),
+        (faction_get_slot, ":troop", ":current_faction", slot_faction_tier_2_troop),
+    (try_end),
+
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0), (agent_set_no_dynamics, reg0, 1),
+    
+    (position_move_y, pos1, 120), (position_rotate_z, pos1, 180),(set_spawn_position, pos1),  (spawn_agent, ":troop"),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_2, reg0), (agent_set_no_dynamics, reg0, 1),
+
+    (try_for_range, ":agent_slot", slot_prop_agent_1, slot_prop_agent_2+1),
+        (scene_prop_get_slot, ":agent", ":instance_no", ":agent_slot"),
+        (assign, ":weapon_found", 0),
+        (try_for_range, ":weapon_slot", 0, 4), #find weapon
+            (agent_get_item_slot, ":item", ":agent", ":weapon_slot"),
+            (gt, ":item", 1),
+            (item_get_type, ":item_type", ":item"),
+            (neq, ":item_type", itp_type_polearm),
+            (neq, ":item_type", itp_type_bow),
+            (neq, ":item_type", itp_type_crossbow),
+            (neq, ":item_type", itp_type_thrown),
+            (agent_set_wielded_item, ":agent", ":item"),
+            (assign, ":weapon_found", 1),
+        (try_end),
+        (try_begin),
+            (eq, ":weapon_found", 0),
+            (agent_equip_item, ":agent", "itm_practice_staff", 1),
+            (agent_set_wielded_item, ":agent", ":item"),
+        (try_end),
+    (try_end),
+    (prop_instance_deform_in_range, ":instance_no", 0, 100, 500), #fake deform to get a timer
+   ]),
+  (ti_scene_prop_deformation_finished,[
+    (set_fixed_point_multiplier, 100),
+    (store_trigger_param_1, ":instance_no"),
+    (prop_instance_get_position, pos1, ":instance_no"),
+    (get_player_agent_no, ":player"),
+    (agent_get_position, pos3, ":player"),
+    (get_distance_between_positions, ":dist", pos1, pos3),
+    (store_random_in_range, ":attacker_slot", slot_prop_agent_1, slot_prop_agent_2+1),
+    (try_begin),
+        (eq, ":attacker_slot", slot_prop_agent_1),
+        (assign, ":defender_slot", slot_prop_agent_2),
+    (else_try),
+        (assign, ":defender_slot", slot_prop_agent_1),
+    (try_end),
+    (try_begin),
+        (is_between, ":dist", 200, 4000), #stop at greater distances to avoid noise
+        (scene_prop_get_slot, ":attacker_agent", ":instance_no", ":attacker_slot"),
+        (store_random_in_range, ":attack_direction", 1, 4), #no thrust
+        (agent_set_attack_action, ":attacker_agent", ":attack_direction", 0),
+        (scene_prop_get_slot, ":defender_agent", ":instance_no", ":defender_slot"),
+        (agent_set_defend_action, ":defender_agent", ":attack_direction", 1000),
+        (agent_add_relation_with_agent, ":attacker_agent", ":defender_agent", 0),
+    (try_end),
+
+    (store_random_in_range, ":timer", 1000, 2000),
+    (try_begin), #pauses
+        (ge, ":timer", 1900),
+        (store_random_in_range, ":timer", 8000, 13000),
+    (try_end),
+    (prop_instance_deform_in_range, ":instance_no", 0, 100, ":timer"), #fake deform to get a timer
+   ]),
+   ]),
+] or [
+  ("troop_guard_fight_duel_alt", sokf_invisible, "arrow_helper_blue", "0", []), 
+]) + [  
+
 # ("ZT_mb_", 0, "mesh", "bo_", []), for vanilla flora
 # ("ZT_pl_", 0, "mesh", "bo_", []), for gutek's flora
 # tree_meshes.brf from vanilla
-("ZT_mb_chestnut_DONT_USE", 0, "chestnut", "bosimple_tree", []), 
-("ZT_mb_oak_DONT_USE", 0, "oak_a", "bosimple_tree", []), 
+#("ZT_mb_chestnut_DONT_USE", 0, "chestnut", "bosimple_tree", []), 
+#("ZT_mb_oak_DONT_USE", 0, "oak_a", "bosimple_tree", []), 
 ("ZT_mb_oak_wide_DONT_USE", 0, "oak_b", "bosimple_tree", []), 
 ("ZT_mb_lowpoly1_DONT_USE", 0, "plane_tree_a", "0", []),   ("ZT_mb_lowpoly2_DONT_USE", 0, "plane_tree_b", "0", []),   ("ZT_mb_lowpoly3_DONT_USE", 0, "plane_tree_c", "0", []), 
 ("ZT_mb_pine_wide_DONT_USE", 0, "pine", "bosimple_tree", []), 
@@ -2901,6 +3035,7 @@ scene_props = [
 ("troop_guard_sitting",sokf_invisible,"sitting","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (neq, "$tld_war_began", 100),
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
   (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground"),
@@ -3310,6 +3445,7 @@ scene_props = [
     (store_trigger_param_1, ":instance_no"),
     (set_fixed_point_multiplier, 100),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (neq, "$tld_war_began", 100),
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(store_random_in_range, ":civilian_slot", 0, 5),
     (val_add, ":civilian_slot", slot_center_walker_0_troop),
@@ -3349,6 +3485,7 @@ scene_props = [
 ("troop_civ_sitting_chair",sokf_invisible,"sit","bo_sitting", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (neq, "$tld_war_began", 100),
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 
 	(store_random_in_range, ":civilian_slot", 0, 5),
@@ -4722,7 +4859,8 @@ scene_props = [
     (spawn_agent, ":troop"),(agent_set_team, reg0, 0),
     #(agent_set_no_dynamics, reg0, 1),
     (agent_set_scripted_destination, reg0, pos1), 
-    (agent_add_relation_with_agent, reg0, ":target", -1),(agent_ai_set_interact_with_player, reg0, 0),(agent_set_is_alarmed, reg0, 1),(agent_set_no_death_knock_down_only, reg0, 1),
+    (agent_add_relation_with_agent, reg0, ":target", -1),
+    (agent_ai_set_interact_with_player, reg0, 0),(agent_set_is_alarmed, reg0, 1),(agent_set_no_death_knock_down_only, reg0, 1),
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
     (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
     
@@ -4733,6 +4871,7 @@ scene_props = [
         (item_get_type, ":item_type", ":item"),
         (this_or_next|eq, ":item_type", itp_type_bow),
         (eq, ":item_type", itp_type_thrown),
+        (agent_set_wielded_item, reg0, ":item"),
         (assign, ":bow_found", 1),
     (try_end),
     (try_begin),        
@@ -6027,67 +6166,9 @@ scene_props = [
 ] or []) + [
     ])]),
 
-] + (is_a_wb_sceneprop==1 and [ 
-("troop_guard_train",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
-    (store_trigger_param_1, ":instance_no"),
-    (store_faction_of_party, ":current_faction", "$current_town"),
-    (faction_get_slot, ":troop", ":current_faction", slot_faction_guard_troop),
-    (try_begin), #make sure it's infantry
-        (troop_is_guarantee_horse, ":troop"),
-        (faction_get_slot, ":troop", ":current_faction", slot_faction_tier_2_troop),
-    (try_end),
-
-    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
-    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
-
-    (assign, ":weapon_found", 0),
-    (try_for_range, ":weapon_slot", 0, 4), #find weapon
-        (agent_get_item_slot, ":item", reg0, ":weapon_slot"),
-        (gt, ":item", 1),
-        (item_get_type, ":item_type", ":item"),
-        (neq, ":item_type", itp_type_polearm),
-        (neq, ":item_type", itp_type_bow),
-        (neq, ":item_type", itp_type_crossbow),
-        (neq, ":item_type", itp_type_thrown),
-        (agent_set_wielded_item, reg0, ":item"),
-        (assign, ":weapon_found", 1),
-    (try_end),
-    (try_begin),
-        (eq, ":weapon_found", 0),
-        (agent_equip_item, reg0, "itm_practice_staff", 1),
-        (agent_set_wielded_item, reg0, ":item"),
-    (try_end),
-    (prop_instance_deform_in_range, ":instance_no", 0, 100, 500), #fake deform to get a timer
-   ]),
-  (ti_scene_prop_deformation_finished,[
-    (set_fixed_point_multiplier, 100),
-    (store_trigger_param_1, ":instance_no"),
-    (prop_instance_get_position, pos1, ":instance_no"),
-    (get_player_agent_no, ":player"),
-    (agent_get_position, pos3, ":player"),
-    (get_distance_between_positions, ":dist", pos1, pos3),
-    (try_begin),
-        (is_between, ":dist", 300, 4000), #stop at greater distances to avoid noise
-        (scene_prop_get_slot, ":agent", ":instance_no", slot_prop_agent_1),
-        (agent_set_position, ":agent", pos1),
-        (store_random_in_range, ":attack_direction", 1, 4), #no thrust
-        (agent_set_attack_action, ":agent", ":attack_direction", 0),
-    (try_end),
-
-    (store_random_in_range, ":timer", 1000, 2000),
-    (try_begin), #pauses
-        (ge, ":timer", 1800),
-        (store_random_in_range, ":timer", 8000, 13000),
-    (try_end),
-    (prop_instance_deform_in_range, ":instance_no", 0, 100, ":timer"), #fake deform to get a timer
-   ]),
-   ]),
-] or [
-  ("troop_guard_train", sokf_invisible, "arrow_helper_blue", "0", []), 
-]) + [  
 
 
-("arrow_helper_blue",0,"arrow_helper_blue","0", []),
+("zz_arrow_helper_blue",0,"arrow_helper_blue","0", []), #useful for debugging
 ("save_compartibility4",0,"0","0", []),
 ("save_compartibility5",0,"0","0", []),
 ("save_compartibility6",0,"0","0", []),

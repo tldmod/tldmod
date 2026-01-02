@@ -2576,7 +2576,8 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 #campaign won
 [anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
                   (eq, "$tld_war_began", 100),
-                  (agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 9),
+                  (neg|quest_slot_eq, "qst_tld_introduction", slot_quest_target_troop, "$g_talk_troop"),
+                  #(agent_slot_eq, "$g_talk_agent", slot_agent_walker_type, 9),
                   (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"),
                   (agent_set_animation, "$g_talk_agent", "anim_cheer"),
                   (call_script, "script_troop_get_cheer_sound", "$g_talk_troop"),
@@ -2684,7 +2685,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 #[anyone, "lord_meet_enemy_2", [],  "{playername} eh? Never heard of you. What do want?", "lord_talk", []],
 
 [anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
-                   (le,"$talk_context",tc_siege_commander)],
+                   (le,"$talk_context",tc_siege_commander), (neq, "$tld_war_began", 100)],
 "Well, {playername}...", "lord_start",[]],
 
 [anyone,"lord_start", [(gt, "$g_comment_found", 0)], #changed to s32 from s62 because overlaps with setup_talk_info strings
@@ -4066,7 +4067,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 
 ###InVain - Campaign Outro #####
-[anyone, "lord_start", [
+[anyone, "start", [
   (check_quest_active, "qst_tld_introduction"),
   (quest_slot_eq, "qst_tld_introduction", slot_quest_target_troop, "$g_talk_troop"),
   #(faction_slot_eq,"$players_kingdom",slot_faction_leader,"$g_talk_troop"),
@@ -4091,7 +4092,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (change_screen_return),
     (finish_mission, 0),
     (jump_to_menu, "mnu_campaign_won"),
-    #(assign,"$auto_menu", "mnu_campaign_won"),
+    (assign,"$auto_menu", "mnu_campaign_won"),
   ]],
 
 [anyone|plyr,"campaign_won", [], 
