@@ -2515,7 +2515,8 @@ end       = 0
 #Aiming slots (agent slot)
 agent_aim_overridden = 302
 
-#Track Mount and Rider Slots (agent slot)
+#Track Mount and Rider Slots (agent slot) 
+#These are reserved for the "damage fallen riders" trigger and are cleared on dismount, so don't use for anything else
 slot_agent_horse_agent = 303
 slot_agent_rider_agent = 304
 

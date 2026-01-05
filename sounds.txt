@@ -942,9 +942,9 @@ snd_new_rank_evil 1793 1 646
 snd_new_rank_good 1793 1 647 
 snd_woman_yell 2592 2 648 649 
 snd_ghost_ambient_long 499 1 650 
-snd_bear_strike 2656 3 562 563 505 
+snd_bear_strike 2656 3 504 501 505 
 snd_spider_strike 2656 2 643 651 
-snd_wolf_strike 2656 2 560 651 
+snd_wolf_strike 2656 4 561 557 558 559 
 snd_bees_people_ambiance 1155 1 652 
 snd_bees_birds_ambiance 1411 1 653 
 snd_camel_sounds 0 4 654 655 656 657 

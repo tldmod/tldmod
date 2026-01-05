@@ -1,4 +1,4 @@
-2112
+2120
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -103,8 +103,8 @@ qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
 qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
-qstr_{!}_rev_427_wb__dev_ {!}_rev_427_wb_|_dev_^_Built_2025-12-28_15:29___
 qstr_Thank_you_for_playin Thank_you_for_playing
+qstr_{!}_rev_436_wb__dev_ {!}_rev_436_wb_|_dev_^_Built_2026-01-05_16:19___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -931,7 +931,6 @@ qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
 qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!
 qstr_{s5}_has_been_overco {s5}_has_been_overcome_by_fear_and_rage_and_is_now_uncontrollable.
 qstr_{s5}_is_running_amok {s5}_is_running_amok,_hurting_friend_and_foe_alike!
-qstr_Received_{reg66}_dam Received_{reg66}_damage.
 qstr_Cannot_Change_Camera Cannot_Change_Camera_Mode_while_in_First_Person.
 qstr_Switch_Back_to_3rd_P Switch_Back_to_3rd_Person_View_to_Cycle_Camera.
 qstr_Fixed_Custom_Camera Fixed_Custom_Camera
@@ -1005,6 +1004,7 @@ qstr_You_have_been_knocke You_have_been_knocked_unconscious_by_{s22}.
 qstr_{s21}_has_been_knock {s21}_has_been_knocked_off_of_{reg23?her:his}_mount_when_it_fell.
 qstr_{s21}_{reg24?killed: {s21}_{reg24?killed:knocked_unconscious}_by_{s22}.
 qstr_A_bear_has_been_summ A_bear_has_been_summoned_to_battle!
+qstr_Received_{reg66}_dam Received_{reg66}_damage.
 qstr_In_The_Last_Days_of_ In_The_Last_Days_of_the_Third_Age,_your_troops_will_position_themselves_and_hold_at_the_beginning_of_each_battle,_instead_of_blindly_charging.^^To_order_your_troops_into_formation,_press_'J'_for_Ranks,_'K'_for_Shield-Wall,_'L'_for_Wedge,_';'_for_Square._To_undo_the_formation,_press_'U'._^If_your_troops_are_fleeing,_you_can_press_'V'_to_rally_them._You_get_only_a_limited_amount_of_rallies_per_battle,_and_the_amount_depends_on_your_leadership_and_charisma.
 qstr_You_can_also_order_y You_can_also_order_your_troops_to_cycle_through_the_type_of_weapon_you_want_them_to_use.^^_Press_O_to_cycle_between_Weapon_Order_types._Press_P_to_cycle_between_Shield_Order_types.
 qstr_The_Last_Days_of_the The_Last_Days_of_the_Third_Age_has_implemented_a_Custom_Camera_in_order_to_bypass_the_current_camera_limitation_with_regards_to_shorter_races_(e.g_Orcs_and_Dwarves).^^See_Info_Pages_for_how_to_control_the_different_camera_modes.

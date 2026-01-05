@@ -3255,15 +3255,15 @@ troops = [
 
 ["spider","Mirkwood Spider","Mirkwood Spiders", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
 [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_spider],
-str_30| agi_7| int_4| cha_4|level(20),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_2,orc_face7,orc_face2],
+str_30| agi_7| int_4| cha_4|level(20),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
 ["bear","Bear","Bears", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
 [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_bear],
-str_127|agi_7|int_4|cha_4|level(35),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_2,orc_face7,orc_face2], #0x7D = str_127
+str_127|agi_7|int_4|cha_4|level(35),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_7,orc_face7,orc_face2], #0x7D = str_127
 
 ["wolf","Wolf","Wolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
 [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
-str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_2,orc_face7,orc_face2],
+str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
 #kham Spears Quest
 ["dorwinion_sack","Dorwinion_Sack","{!}BUG",tf_hero|tfg_helm|tf_inactive|tf_is_merchant,0,0,fac_neutral,   [itm_cram,itm_metal_scraps_good,itm_metal_scraps_good,itm_metal_scraps_good, itm_rhun_helm_horde],      def_attrib,0,knows_inventory_management_10,0],
@@ -3467,7 +3467,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 ["werewolf","Werewolf","Werewolves", tf_orc|tf_mounted| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive| tf_unmoveable_in_party_window,0,0,fac_outlaws,
   [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_werewolf],
-    str_30|agi_7|int_4|cha_4|level(25),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_2,orc_face7,orc_face2], #0x7D = str_127
+    str_30|agi_7|int_4|cha_4|level(25),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_7,orc_face7,orc_face2], #0x7D = str_127
 
 #Trolls  & ents
 ["moria_troll","Cave_Troll","Cave_Trolls",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_moria,[itm_troll_head_a,itm_troll_head_b,itm_troll_head_c,itm_troll_body,itm_troll_hands,itm_troll_feet,itm_tree_trunk_club_b,itm_tree_trunk_invis,],str_25| agi_30| int_3| cha_3|level(36),wp(75),knows_power_strike_5|knows_ironflesh_8|knows_athletics_8,troll_face1,troll_face2],

@@ -261,7 +261,7 @@ sounds = [
 
 ("thunder",sf_2d|sf_vol_15, ["thunder.wav"]),
 ("pull_ballista",sf_vol_8, ["pull_bow_1.ogg"]),
-("evil_orders",  sf_vol_3, ["order_form_ranks_(orc).wav"]),
+("evil_orders",  sf_vol_3, ["order_form_ranks_(orc).wav"]), #unused
 ("evil_horn",   sf_vol_10, ["horn_isengard.wav"]),
 
 ("nazgul_skreech_long", sf_priority_15|sf_2d|sf_vol_15, ["nazgul_02.wav"]),
@@ -272,8 +272,10 @@ sounds = [
 ("horror_scream_orc"  ,sf_priority_10|sf_vol_10,["horror_scream_orc.wav"]),
 
 ("warg_lone_woof",   sf_priority_3|sf_vol_5, ["warg_bark01.wav","warg_bark02.wav","warg_bark03.wav","warg_growl01.wav","warg_howl01.wav","warg_howl02.wav","warg_howl03.wav"]),
+#unused
 ("horse_snort_again",sf_priority_3|sf_vol_4,  ["horse_snort_1.wav","horse_snort_2.wav","horse_snort_3.wav","horse_snort_4.wav","horse_snort_5.wav"]),
 
+#unused
 ("spear_trap",sf_priority_7|sf_vol_9, ["spear_trap.wav"]),
  
 ("elf_song"   ,sf_priority_8|sf_vol_7,["elf_elfsong.wav"]), 
@@ -331,8 +333,8 @@ sounds = [
 #doubles for muted hardcoded sounds
 ("neigh1",                     sf_vol_2, ["horse_exterior_whinny_01.wav","horse_exterior_whinny_02.wav","horse_exterior_whinny_03.wav","horse_exterior_whinny_04.wav","horse_exterior_whinny_05.wav","horse_whinny.wav"]),
 ("horse_snort1" ,sf_priority_3|sf_vol_2, ["horse_snort_1.wav","horse_snort_2.wav","horse_snort_3.wav","horse_snort_4.wav","horse_snort_5.wav"]),
-("horse_low_whinny1",          sf_vol_4, ["horse_whinny-1.wav","horse_whinny-2.wav"]),
-("mount_death",                sf_vol_4, ["horse_snort_4.wav","horse_snort_5.wav"]),
+("horse_low_whinny1",          sf_vol_4, ["horse_whinny-1.wav","horse_whinny-2.wav"]), # used for animal horses
+("mount_death",                sf_vol_4, ["horse_snort_4.wav","horse_snort_5.wav"]), #unused
 
 ("waterfall" ,sf_priority_15|sf_vol_3|sf_looping|sf_start_at_random_pos, ["CWE_amb_waterfall_medium_01_2d_lp.ogg"]),
 ("orc_cheer", sf_priority_5|sf_vol_10,                                  ["orc_yell_1.wav","orc_yell_2.wav","orc_grunt_long_1.wav", "orc_victory_1.wav","orc_victory_2.wav","orc_victory_3.wav","orc_victory_4.wav","orc_victory_5.wav","orc_victory_6.wav"]), 
@@ -358,9 +360,11 @@ sounds = [
 
 ("ghost_ambient_long"         ,sf_2d|sf_priority_15|sf_vol_1|sf_looping, ["ghost_ambient_long02.wav"]),
 
-("bear_strike",   sf_priority_6|sf_vol_10, ["warg_howl02.wav", "warg_howl03.wav", "troll_growl.wav",]),
+("bear_strike",   sf_priority_6|sf_vol_10, ["troll_grunt_2.wav", "troll_death_1.wav", "troll_growl.wav",]), #troll_grunt_2.wav
 ("spider_strike", sf_priority_6|sf_vol_10, ["spider_battle01.wav", "trollSnarl.wav",]),
-("wolf_strike",   sf_priority_6|sf_vol_10, ["warg_growl01.wav", "trollSnarl.wav",]),
+("wolf_strike",   sf_priority_6|sf_vol_10, ["warg_howl01.wav", "warg_bark01.wav", "warg_bark02.wav", "warg_bark03.wav"]), #warg_bark01.wav warg_bark02.wav warg_bark03.wav
+#"orc_beast01.wav","orc_beast02.wav","orc_beast03.wav"
+
 
 ("bees_people_ambiance"   	,sf_2d|sf_priority_8|sf_vol_4|sf_looping, ["bees_people.wav"]),
 ("bees_birds_ambiance"      ,sf_2d|sf_priority_8|sf_vol_5|sf_looping, ["bees_birds.wav"]),

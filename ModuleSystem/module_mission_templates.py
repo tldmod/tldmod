@@ -427,7 +427,7 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
 ############## CUSTOM CAMERA END ###################################################################################
 
 ##Kham - Unified Animal triggers
-
+##InVain - replaced by TLD_animal_attacks
 tld_animals_init = (
    ti_on_agent_spawn, 0, 0, [],
   [  (store_trigger_param_1, ":agent_no"),
@@ -440,7 +440,7 @@ tld_animals_init = (
 
 
 ## TLD Animal Strikes: 2 Versions for WB (optimized) / MB (original)
-
+##InVain - replaced by TLD_animal_attacks
 
 tld_animal_strikes = ((is_a_wb_mt==1) and (
   1, 0, 0, [(eq, "$animal_is_present",1)], [
@@ -928,22 +928,23 @@ tld_warg_leap_attack = ((is_a_wb_mt==1) and [
 ] or [])
 
 ## TLD Remove Riderless Animals: 2 Versions for WB (optimized) / MB (original)
+## InVain: Moved to tld_animal_attacks
 
-tld_remove_riderless_animals =(
-  1, 0, 0, [(eq, "$animal_is_present",1)], [
-  (try_for_agents, ":agent"),
-    (agent_is_alive, ":agent"),
-    (agent_is_human, ":agent"),
-    (agent_get_troop_id, ":agent_trp", ":agent"),
-    (eq|this_or_next, ":agent_trp", "trp_spider"),
-    (eq|this_or_next, ":agent_trp", "trp_bear"),
-    (eq|this_or_next, ":agent_trp", "trp_werewolf"),
-    (eq,              ":agent_trp", "trp_wolf"),
-    (agent_get_horse, ":horse", ":agent"),
-    (lt, ":horse", 0),
-    (call_script, "script_remove_agent", ":agent"),
-  (try_end),
-])
+# tld_remove_riderless_animals =(
+  # 1, 0, 0, [(eq, "$animal_is_present",1)], [
+  # (try_for_agents, ":agent"),
+    # (agent_is_alive, ":agent"),
+    # (agent_is_human, ":agent"),
+    # (agent_get_troop_id, ":agent_trp", ":agent"),
+    # (eq|this_or_next, ":agent_trp", "trp_spider"),
+    # (eq|this_or_next, ":agent_trp", "trp_bear"),
+    # (eq|this_or_next, ":agent_trp", "trp_werewolf"),
+    # (eq,              ":agent_trp", "trp_wolf"),
+    # (agent_get_horse, ":horse", ":agent"),
+    # (lt, ":horse", 0),
+    # (call_script, "script_remove_agent", ":agent"),
+  # (try_end),
+# ])
 
 
 tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
@@ -1033,7 +1034,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
         (spawn_agent, "trp_wolf"),
       (try_end),
       (assign, ":animal", reg0),
-      (assign, "$animal_is_present", 1),
+      #(assign, "$animal_is_present", 1), #now assigned per spawn done in tld_animal_attacks
       (agent_add_relation_with_agent, ":agent", ":animal", 0),
       (agent_set_hit_points, ":animal", 100, 0),
       
@@ -1045,7 +1046,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
 
   (ti_on_order_issued, 0, 0,
     [
-      (eq, "$animal_is_present", 1),
+      (ge, "$animal_is_present", 1), #InVain: This is now a counter, not a binary
       (store_trigger_param_1, ":order_no"),
       (eq, ":order_no", mordr_dismount),
     ],
@@ -1101,6 +1102,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
 ] + beorning_shapeshift   #Chaning into bear
 + tld_bow_shield
 + tld_battlefield_agent_effects
++ tld_animal_attacks
 or [] ) + [
 
 	#tld_fix_viewpoint,
@@ -1115,9 +1117,9 @@ or [] ) + [
 	custom_track_companion_casualties,
 	common_battle_healing,
 	#common_battle_kill_underwater,
-  tld_animals_init,
-  tld_animal_strikes,
-  tld_remove_riderless_animals,
+  # tld_animals_init,
+  # tld_animal_strikes,
+  # tld_remove_riderless_animals,
   reset_fog,
   horse_whistle_init,
   horse_whistle,
@@ -1163,9 +1165,9 @@ tld_common_peacetime_scripts = [
     ] or []) + [ 
 	dungeon_darkness_effect,
     reset_fog,
-    tld_animals_init,
-    tld_animal_strikes,
-    tld_remove_riderless_animals,
+    # tld_animals_init,
+    # tld_animal_strikes,
+    # tld_remove_riderless_animals,
 ] + custom_tld_bow_to_kings + bright_nights + fade + reward_birds_wb + khams_custom_player_camera + nazgul_flying +((is_a_wb_mt==1) and tld_bow_shield + tld_animated_town_agents + tld_positional_sound_props + tld_points_of_interest or [] )#Custom Cam triggers
 
 
@@ -7764,9 +7766,10 @@ mission_templates = [ # not used in game
 	common_deathcam_triggers +
   #moto_formations_triggers + 
   khams_custom_player_camera+
+  tld_animal_attacks+
   fade+ [
 	
-  tld_animals_init,
+ # tld_animals_init,
 	custom_warg_sounds,
 	common_battle_on_player_down,
 
@@ -7852,8 +7855,9 @@ mission_templates = [ # not used in game
     (try_end),
 	]),
 
-tld_animal_strikes,
-tld_remove_riderless_animals,
+#tld_animal_strikes,
+#tld_remove_riderless_animals,
+custom_tld_spawn_troop,
 
 ]),
 

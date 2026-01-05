@@ -2739,16 +2739,16 @@ itemsfile version 2
  itm_feet_chains_dwarf Feet_Chains Feet_Chains 1  chains_full_dwarf 0  3854 0 200 0 10 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_spider Spider Spider 1  spider 0  18014398509486081 0 1200 0 0 100 0 30 0 3 60 75 30 60 0 12 0
+ itm_spider Spider Spider 1  spider 0  18014398509486081 0 1200 0 0 100 0 30 0 10 60 75 30 60 0 12 0
 0
 
- itm_bear Bear Bear 1  bear_2 0  4097 0 1200 0 0 100 0 48 0 10 130 48 50 120 0 25 0
+ itm_bear Bear Bear 1  bear_2 0  4097 0 1200 0 0 100 0 60 0 10 130 60 40 120 0 70 0
 0
 
- itm_wolf Wolf Wolf 1  wolf 0  4097 0 1200 0 0 100 0 25 0 10 50 50 50 85 0 25 0
+ itm_wolf Wolf Wolf 1  wolf 0  4097 0 1200 0 0 100 0 25 0 10 50 75 35 85 0 10 0
 0
 
- itm_werewolf Werewolf Werewolf 1  mm_warg_a 0  4097 0 1200 0 0 100 0 35 0 10 130 60 60 100 0 35 0
+ itm_werewolf Werewolf Werewolf 1  mm_warg_a 0  4097 0 1200 0 0 100 0 60 0 10 130 70 40 100 0 35 0
 0
 
  itm_thrush_reward Thrush Thrush 1  prop_reward_thrush 0  4107 0 1000 0 1 100 0 0 0 0 0 0 0 0 0 0 0

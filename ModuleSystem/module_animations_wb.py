@@ -2278,6 +2278,7 @@ animations = [
  ["horse_rear_twice", acf_enforce_lowerbody | acf_ignore_slope, amf_client_prediction,
    [4.0, "horse_rear_twice", 0, 83,  arf_blend_in_2],
  ],
+ #unused?
  ["horse_rear_fast_blend", acf_enforce_lowerbody | acf_ignore_slope, amf_client_prediction,
    [2.0, "horse_rear_twice", 0, 41,  arf_blend_in_2],
  ],
@@ -2319,6 +2320,7 @@ animations = [
  #  [1.2, "wargLeapAttack", 0, 20, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]
  # ],
 
+#same as horse_jump, but quicker
  ["warg_leapattack", acf_displace_position|acf_enforce_all|acf_rotate_body, amf_client_prediction|amf_priority_jump_end|amf_play, 
    [1.0, "anim_horse", 205, 222,  arf_use_walk_progress|arf_blend_in_8, 0, (0, 5.5, 0), 0], #|arf_end_pos_0_25],
  ],
