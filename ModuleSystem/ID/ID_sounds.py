@@ -288,5 +288,6 @@ snd_army_good = 286
 snd_bell = 287
 snd_raven = 288
 snd_moria_horror = 289
+snd_wolf_howl = 290
 
 

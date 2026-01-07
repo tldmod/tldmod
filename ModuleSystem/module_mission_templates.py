@@ -7774,7 +7774,9 @@ mission_templates = [ # not used in game
 	common_battle_on_player_down,
 
 	# Make the teams enemies...
-	(ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1),(assign, "$battle_won", 0), (val_div, reg21, 2), (assign, "$alarm_level", reg21)]),
+	(ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1),(assign, "$battle_won", 0),
+    #(assign, "$alarm_level", reg21)
+    ]),
 
 	(1, 0, ti_once, 
 	[
@@ -7789,7 +7791,7 @@ mission_templates = [ # not used in game
 	], 
 	[]),
 
-	(5, 10, 0,  #spawn two animals behind player every 10 seconds
+	(5, 0, 0,  #spawn a new behind player every 5 seconds
 	[(gt, "$alarm_level", 0)], 
 	[(set_fixed_point_multiplier, 100),
     (get_player_agent_no, ":player"),
@@ -7798,11 +7800,9 @@ mission_templates = [ # not used in game
     (set_spawn_position, pos1),
     (spawn_agent, reg20),
     (agent_set_team, reg0, 1),
-    (spawn_agent, reg20),
-    (agent_set_team, reg0, 1),  
     #(add_visitors_to_current_scene, 1, reg20, 2),
     #(display_message, "@animal spawned"),
-    (val_sub,"$alarm_level", 2), ]),
+    (val_sub,"$alarm_level", 1), ]),
 
 	(1, 60, ti_once, 
 	[

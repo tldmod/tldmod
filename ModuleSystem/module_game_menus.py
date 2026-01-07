@@ -3666,10 +3666,10 @@ game_menus = [
     ("player_enable_siege",[], "{!}Enable Player Siege", [(assign, "$player_allowed_siege",1),(display_message, "@{!}Player Siege Enabled", color_bad_news)]),
     ("animal_test",[], "{!}Animal Ambush Test", [
     	(try_begin), 
-    		(this_or_next|eq, "$current_player_region", region_n_mirkwood),
-			(this_or_next|eq, "$current_player_region", region_s_mirkwood), 
-			(this_or_next|eq, "$current_player_region", region_grey_mountains),
-			(			  eq, "$current_player_region", region_misty_mountains),
+    		# (this_or_next|eq, "$current_player_region", region_n_mirkwood),
+			# (this_or_next|eq, "$current_player_region", region_s_mirkwood), 
+			# (this_or_next|eq, "$current_player_region", region_grey_mountains),
+			# (			  eq, "$current_player_region", region_misty_mountains),
 			(jump_to_menu, "mnu_animal_ambush"),
 		(else_try),
 			(display_message, "@{!}You are not in the right region to spawn animal ambushes. Please go to N Mirkwood, S Mirkwood, Grey Mountains, or Misty Mountains", color_bad_news),
@@ -13018,10 +13018,15 @@ game_menus = [
     (store_add, ":ambush_count", ":player_level", ":party_size"), #ca. 10-60
     (val_div, ":ambush_count", 9), #1-7
     #(assign, ":ambush_scene", 0),
+	(store_random_in_range, ":rnd", 0, 100),
     
-    #todo: make animal count scale with player level and party size (if bigger party, only big packs dare to attack)
-    # but also allow player to bring their whole party to the fight?
 	(try_begin),
+		(eq, "$current_player_region", region_s_mirkwood),
+        (lt, ":rnd", 20),
+        (faction_slot_ge, "fac_guldur", slot_faction_strength, 5000),
+        (assign, ":ambush_troop", "trp_werewolf"),
+        (val_div, ":ambush_count", 2),
+    (else_try),    
 		(eq|this_or_next, "$current_player_region", region_n_mirkwood),
         (eq|this_or_next, "$current_player_region", region_c_mirkwood),
 		(eq, "$current_player_region", region_s_mirkwood),
@@ -13036,7 +13041,6 @@ game_menus = [
         (eq|this_or_next, "$current_player_region", region_s_misty_mountains),
         (eq, "$current_player_region", region_n_anduin_vale),
 		#(assign, ":ambush_scene", "scn_mountain_ambush"),
-		(store_random_in_range, ":rnd", 0, 100),
 		(try_begin),
 			(neq, "$players_kingdom", "fac_beorn"), # If not a beorning there is a 40% chance of a bear ambush
 			(lt, ":rnd", 40),
@@ -13061,6 +13065,7 @@ game_menus = [
     
     (val_clamp, ":ambush_count", 1, 15),
 	(assign, reg20, ":ambush_troop"),
+	(assign, "$alarm_level", ":ambush_count"),
 	(assign, reg21, ":ambush_count"),
 	#(assign, reg22, ":ambush_scene"),
   
@@ -13068,12 +13073,16 @@ game_menus = [
   (try_begin),
     (eq,":ambush_troop", "trp_spider"),
     (set_background_mesh, "mesh_draw_spiders"),
+    (play_sound, "snd_spider_die"),
   (else_try),
     (eq,":ambush_troop", "trp_bear"),
     (set_background_mesh, "mesh_draw_bear"),
+    (play_sound, "snd_bear_strike"),
   (else_try),
-    (eq,":ambush_troop", "trp_wolf"),
-    (set_background_mesh, "mesh_draw_wolf"), #swy-- we don't have an illustration for wolves yet!
+    (this_or_next|eq,":ambush_troop", "trp_wolf"),
+    (eq,":ambush_troop", "trp_werewolf"),
+    (set_background_mesh, "mesh_draw_wolf"),
+    (play_sound, "snd_wolf_howl"), #wolf howling
   (try_end)
  ],
  [
@@ -13085,9 +13094,10 @@ game_menus = [
     (call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"),
 	(modify_visitors_at_site, reg0),
 	(reset_visitors),
-    (val_div, reg21, 2), #only spawn half of them initially
-    (val_max, reg21, 1),
-    (set_visitors, 1, reg20, reg21),
+    (store_div, ":initial", "$alarm_level", 2), #only spawn half of them initially
+    (val_max, ":initial", 1),
+    (set_visitors, 1, reg20, ":initial"),
+    (val_sub, "$alarm_level", ":initial"),
 	(jump_to_scene, reg0),
     (change_screen_mission),
 	]),
@@ -13120,8 +13130,9 @@ game_menus = [
     (eq,":ambush_troop", "trp_bear"),
     (set_background_mesh, "mesh_draw_bear"),
   (else_try),
-    (eq,":ambush_troop", "trp_wolf"),
-    (set_background_mesh, "mesh_draw_wolf"), #swy-- we don't have an illustration for wolves yet!
+    (this_or_next|eq,":ambush_troop", "trp_wolf"),
+    (eq,":ambush_troop", "trp_werewolf"),
+    (set_background_mesh, "mesh_draw_wolf"), 
   (try_end),
   
 	(str_store_string, s3, "@You cover up your tracks and move onward."), 

@@ -377,4 +377,5 @@ sounds = [
 ("bell" ,sf_priority_5|sf_vol_7, ["dale_bell_1.wav","dale_bell_1_2_combined.wav", "dale_bell_2.wav", "dale_bell_3.wav"]),
 ("raven" ,sf_priority_5|sf_vol_7, ["evil_crow.wav"]),
 ("moria_horror" ,sf_priority_5|sf_vol_7, ["moria02.wav"]),
+("wolf_howl",sf_vol_5, ["wolf_short.wav"]),
 ]
