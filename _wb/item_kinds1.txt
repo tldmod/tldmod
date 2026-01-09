@@ -1097,7 +1097,7 @@ itemsfile version 2
  itm_orc_cleaver_a Orc_Cleaver Orc_Cleaver 2  bb_fight_cleaver_b 0  bb_war_cleaver_L82 786432  6356995 9223635919939043552 350 786582 4 94 0 0 0 13 27648 93 0 94 0 0 539
 0
 
- itm_orc_scimitar_b Orc_Scimitar Orc_Scimitar 2  orc_scimitar 0  uruk_falchion_a 786432  4299227138 9254615759470988544 300 786582 2 92 0 0 0 0 24576 96 0 77 0 0 536
+ itm_orc_scimitar_b Orc_Scimitar Orc_Scimitar 2  orc_scimitar 0  uruk_falchion_a 786432  4299227138 9223388529822793742 300 786582 2 92 0 0 0 0 24576 96 0 77 0 0 536
 0
 
  itm_orc_sabre_b Orc_Sabre Orc_Sabre 2  orc_falchion 0  orc_sabre 786432  4259842 9223388529822793742 285 786582 2.5 91 0 0 0 0 26624 87 0 74 0 256 26
@@ -2333,7 +2333,7 @@ itemsfile version 2
  itm_beorn_axe Beorning_Axe Beorning_Axe 1  beorning_axe 0  2251838810554372 9223635925844623584 470 156672 5 93 0 0 0 15 44032 94 0 92 0 256 43
 0
 
- itm_beorn_staff Woodmen_Staff Woodmen_Staff 3  woodman_staff 0  gandstaff 128  sarustaff 2097152  2252074830495748 4222131026005760 100 271496 2 90 0 0 0 0 22528 114 0 104 0 532 534
+ itm_beorn_staff Woodmen_Staff Woodmen_Staff 3  woodman_staff 0  gandstaff 65536  sarustaff 2097152  2252074830495748 4222131026005760 100 271496 2 90 0 0 0 0 22528 114 0 104 0 532 534
 0
 
  itm_beorn_battle_axe Beorning_War_Axe Beorning_War_Axe 1  beorning_war_axe 0  2251804450816004 9223635925844623584 540 156672 6 94 0 0 0 16 49152 94 0 90 0 256 48

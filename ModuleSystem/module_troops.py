@@ -1064,7 +1064,7 @@ itm_dunland_javelin_big = (itm_dunland_javelin, imod_large_bag)
 
 #Wizard staffs
 itm_gandstaff_shield = (itm_beorn_shield_reward, imod_crude)
-itm_gandstaff = (itm_beorn_staff, imod_crude)
+itm_gandstaff = (itm_beorn_staff, imod_exquisite)
 itm_sarustaff = (itm_beorn_staff, imod_tattered)
 
 # 0x000000018000004136db6db6db6db6db00000000001db6db0000000000000000  default player face

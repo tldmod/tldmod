@@ -1037,11 +1037,27 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
       #(assign, "$animal_is_present", 1), #now assigned per spawn done in tld_animal_attacks
       (agent_add_relation_with_agent, ":agent", ":animal", 0),
       (agent_set_hit_points, ":animal", 100, 0),
-      
-      (agent_get_team, ":agent_team", ":agent"),
-      (agent_set_team, ":animal", ":agent_team"),
-      (agent_get_division, ":agent_division", ":agent"),
-      (agent_set_division, ":animal", ":agent_division"),
+
+    #InVain: Make them uncontrollable
+    (try_begin),
+        (agent_is_defender, ":agent"),
+        (agent_set_team, ":animal", 4),
+        (team_set_relation, 4, 0, 1),
+        (team_set_relation, 4, 2, 1),
+        (team_set_relation, 4, 1, -1),
+        (team_set_relation, 4, 3, -1),
+        (team_set_relation, 4, 5, -1),
+        (team_give_order, 4, grc_everyone, mordr_charge),
+    (else_try),
+        (agent_set_team, ":animal", 5),
+        (team_set_relation, 5, 0, -1),
+        (team_set_relation, 5, 2, -1),
+        (team_set_relation, 5, 1, 1),
+        (team_set_relation, 5, 3, 1),
+        (team_set_relation, 5, 4, 1),
+        (team_give_order, 4, grc_everyone, mordr_charge),
+    (try_end),
+    (agent_force_rethink, ":animal"),
   ]),
 
   (ti_on_order_issued, 0, 0,
@@ -5113,6 +5129,7 @@ mission_templates = [ # not used in game
                 (display_message, "@Not enough allies nearby to capture this reinforcement point!"),
             (try_end),    
             (gt, ":friends_nearby", 4), #so players can't solo-sneak
+            (agent_is_alive, ":player_agent"),
             (troop_set_slot,"trp_no_troop",":slot",-2), #this should disable reinforcements
             (assign, reg78, ":entry_number"),
             (display_message, "@Defender reinforcement point {reg78} taken!"),
@@ -5301,6 +5318,7 @@ mission_templates = [ # not used in game
     ] + (is_a_wb_mt==1 and [
   (4, 0, 10,[
     (eq,"$battle_won",0),
+    (neg|main_hero_fallen),
     (assign, ":continue", 0),
     (try_begin),
         (eq, "$player_team_updated", 0),
@@ -5413,6 +5431,7 @@ mission_templates = [ # not used in game
      (try_begin),
         (neg|agent_is_defender, ":player_agent"),
         (ge,"$attacker_reinforcement_stage",19),
+        (eq, "$att_reinforcements_arrived", 1), #make sure this only triggers after a reinforcement
         #(display_message, "@attackers almost defeated!"),
         (question_box,"@Last attacker wave. Do you want to retreat?"),
     (else_try),  
