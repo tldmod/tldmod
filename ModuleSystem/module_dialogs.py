@@ -2087,6 +2087,71 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
       (jump_to_menu, "mnu_auto_player_garrison"), #...therefore, hackery ensues
   ]],
 
+# InVain: Hire captains
+
+[anyone|plyr,"player_hire_troop", 
+  [
+   (neg|party_slot_eq, "$current_town", slot_town_captain, -1),
+   (party_get_free_companions_capacity,reg10,"p_main_party"), 
+   (ge,reg10,1),
+   (try_begin),
+    (eq, "$player_looks_like_an_orc",1),
+    (str_store_string, s6, "@I need a captain who can keep my men in check and make sure they don't run away during battle."),
+   (else_try),
+    (str_store_string, s6, "@I am looking for a captain able to carry out my orders in battle!."),
+   (try_end),
+  ], 
+  "{s6}", "player_hire_captain_1", []],
+
+[anyone,"player_hire_captain_1", 
+  [(party_get_slot, ":captain_troop", "$current_town", slot_town_captain_available),
+  (gt, ":captain_troop", 0),
+   (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), 
+   (ge, reg0, 5),
+  (str_store_troop_name, s5, ":captain_troop"),
+  (assign, reg21, 8),
+  ], 
+  "I have one {s5} in my garrison that might be willing to serve under your command and help you organize your party. But he will be missed here. [costs {reg21} influence]", "player_hire_captain_2", []],
+
+[anyone,"player_hire_captain_1", 
+  [(party_slot_eq, "$current_town", slot_town_captain_available, 0),
+   (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), 
+   (lt, reg0, 5),
+   (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), 
+  ], 
+  "You are a mere {s24}. What would you do with a captain?", "close_window", [(call_script, "script_stand_back")]],
+  
+[anyone,"player_hire_captain_1", 
+  [(party_slot_eq, "$current_town", slot_town_captain_available, 0),
+  ], 
+  "No, I can't spare anyone at the moment.", "close_window", [(call_script, "script_stand_back")]],
+
+[anyone|plyr,"player_hire_captain_2", 
+  [ 
+    (faction_get_slot, reg20, "$g_talk_troop_faction", slot_faction_influence),
+    (ge, reg20, reg21), #reg21 is inf cost
+  ], 
+  "I will have him.", "player_hire_captain_3", []],
+  
+[anyone|plyr,"player_hire_captain_2", 
+  [], 
+  "I’ve changed my mind.", "close_window", [(call_script, "script_stand_back")]],
+
+[anyone,"player_hire_captain_3", 
+  [], 
+  "He will serve you well.", "close_window", 
+  [
+    (party_get_slot, ":captain_troop",  "$current_town", slot_town_captain_available),
+    (party_set_slot, "$current_town", slot_town_captain_available, 0),
+    (call_script, "script_spend_influence_of", reg21, "$g_talk_troop_faction"),
+    (party_add_members, "p_main_party", ":captain_troop", 1),
+    (str_store_troop_name, s5, ":captain_troop"),
+    (display_message, "@One {s5} joined your party."),
+    (call_script, "script_stand_back"),
+  ]],
+
+# Hire Captains End
+
 # TLD Kham - Player Hire Troll
 
 [anyone|plyr,"player_hire_troop", 
@@ -8825,6 +8890,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         (try_end),
     ], "Thank you, {reg42?I will gladly accept them into my party:but I fear I only have room for {reg41}}.", "close_window",[
         (party_add_members, "p_main_party", reg40, reg41),
+        (str_store_troop_name_by_count, s9, reg40, reg41),
+        (display_message, "@{reg41} {s9} joined your party."),
         (call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1)
     ]],
 

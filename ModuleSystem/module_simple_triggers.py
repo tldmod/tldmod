@@ -129,14 +129,34 @@ simple_triggers = [
   
   # (7) Pay day, every four days here
   (24.1 * 4,[ (call_script, "script_make_player_pay_upkeep")]),
-  # (8)
+  # (8) # Rank income, clear rumors in centers and reset a few town slots, friendship rewards progress
   (24,[(call_script, "script_rank_income_to_player"),
-      (try_for_range, ":center_no", centers_begin, centers_end),               # TLD clear rumors in centers
+      (try_for_range, ":center_no", centers_begin, centers_end),               
         (try_for_range, ":walker", town_walker_entries_start, town_walker_entries_start+num_town_walkers),
           (store_add, ":slot", slot_center_rumor_check_begin,":walker"),
           (party_set_slot, ":center_no", ":slot", 0),
         (try_end),
         (party_set_slot, ":center_no", slot_center_walker_soldiers_found, 0),
+        (try_begin),
+            (party_slot_eq, ":center_no", slot_town_captain_available, 0),
+            (store_random_in_range, ":chance", 0, 10),
+            (lt, ":chance", 3),
+            (party_get_slot, ":captain", ":center_no", slot_town_captain),
+            (store_faction_of_party, ":party_fac", ":center_no"),
+            #some centers or factions have a range of possible captains
+            (try_begin),
+                (eq, ":party_fac", "fac_imladris"),
+                (store_random_in_range, ":captain", "trp_riv_captain", "trp_rohan_captain"),
+            (else_try),
+                (this_or_next|eq, ":center_no", p_town_west_osgiliath),
+                (eq, ":center_no", p_town_cair_andros),
+                (eq, ":party_fac", "fac_gondor"),
+                (store_random_in_range, ":captain", "trp_gondor_captain", "trp_amroth_captain"),
+                (gt, ":captain", "trp_gondor_captain"),
+                (assign, ":captain", "trp_ithilien_captain"),
+            (try_end),
+            (party_set_slot, ":center_no", slot_town_captain_available, ":captain"), 
+        (try_end),
       (try_end),
       (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),  # TLD clear rumors in lords
         (troop_set_slot, ":troop_no", slot_troop_rumor_check, 0),

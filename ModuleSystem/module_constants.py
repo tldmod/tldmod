@@ -392,7 +392,8 @@ slot_town_all_found            = 41
 
 slot_center_last_player_alarm_hour = 42
 
-slot_village_land_quality          = 44
+slot_town_captain_available         = 45 #also stores troop ID if multiple captains possible
+#slot_village_land_quality          = 44
 slot_village_number_of_cattle      = 45
 slot_village_player_can_not_steal_cattle = 46
 

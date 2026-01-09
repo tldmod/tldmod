@@ -784,10 +784,14 @@ scripts = [
 	#(val_mul, ":join_cost", 2),
 	(val_div, ":join_cost", 2),
     
+    (try_begin),
+        (faction_slot_eq, "$ambient_faction", slot_faction_banner_troop, ":troop_id"),
+        (assign, ":join_cost", 500),
+    (try_end),
+    
     (store_sub, ":relation_mod", 120, ":relation"),
     (val_mul,  ":join_cost", ":relation_mod"),
     (val_div, ":join_cost", 100),
-    
     
     # trait discounts: 75% of the original price
     (store_troop_faction, ":troop_faction", ":troop_id"),
@@ -28129,7 +28133,8 @@ command_cursor_scripts = [
             (try_begin),
                 (troop_get_slot, ":reward", ":troop_no", slot_troop_friendship_reward_type),
                 (lt, ":reward", 1),
-                (store_random_in_range, ":random_reward", friendship_reward_troops, friendship_reward_end),
+                #(store_random_in_range, ":random_reward", friendship_reward_troops, friendship_reward_end),
+                (store_random_in_range, ":random_reward", friendship_reward_troops, friendship_reward_troops),
                 (troop_set_slot, ":troop_no", slot_troop_friendship_reward_type, ":random_reward"),
                 (try_begin),
                     (eq, ":random_reward", friendship_reward_troops),
@@ -28154,16 +28159,31 @@ command_cursor_scripts = [
             (assign, ":reward_troop", -1),
             (troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
             (store_troop_faction, ":hero_fac", ":troop_no"),
+            (call_script, "script_get_faction_rank", ":hero_fac"),
+            (assign, ":rank", reg0),
             (store_random_in_range, ":rand", 0, 10),
 
             (try_begin),
                 #See if lord has retainer troops first
                 (troop_get_slot, ":reward_troop", ":troop_no", slot_troop_retainer_troop),
-                (gt, ":rand", 2), #leave a small chance for other reward troops
+                (gt, ":rand", 4), #leave a small chance for other reward troops
                 (gt, ":reward_troop", 0),
+            (else_try), #captains
+                (le, ":rand", 1),
+                (ge, ":rank", 3), #one rank lower than regular recruitment condition
+                (faction_get_slot, ":capital", ":hero_fac", slot_faction_capital),
+                (party_get_slot, ":reward_troop", ":capital", slot_town_captain_available), #slot_town_captain_available is randomized for factions that have multiple captains
+                (try_for_range, ":cur_center", centers_begin, centers_end), #this covers subfactions
+                    (store_faction_of_party, ":cur_faction", ":cur_center"),
+                    (eq, ":cur_faction", ":hero_fac"),
+                    (party_slot_eq, ":cur_center", slot_town_lord, ":troop_no"),
+                    (party_get_slot, ":reward_troop", ":cur_center", slot_town_captain_available),
+                (try_end),
+                (ge, ":reward_troop", 0),
             (else_try), #banner carriers
                 (faction_get_slot, ":reward_troop", ":hero_fac", slot_faction_banner_troop),
                 (ge, ":reward_troop", 0),
+                (ge, ":rank", 3), #one rank lower than regular recruitment condition
                 (le, ":rand", 2),
             (else_try),
                 #If no retainer then choose the highest level troop from the lord's party, prioritizing appropriate subfaction troops
@@ -28262,6 +28282,10 @@ command_cursor_scripts = [
                 (faction_slot_eq, ":hero_fac", slot_faction_banner_troop, ":reward_troop"),
                 (val_div, ":troop_count", 2),
                 (val_max, ":troop_count", 1),
+            (try_end),
+            (try_begin),
+                (is_between, ":reward_troop", "trp_greenwood_captain", "trp_end_leaders"),
+                (assign, ":troop_count", 1),
             (try_end),
             (try_begin),
                 #Give extra orcs

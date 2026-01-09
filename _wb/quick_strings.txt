@@ -1,4 +1,4 @@
-2120
+2124
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -104,7 +104,7 @@ qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_Thank_you_for_playin Thank_you_for_playing
-qstr_{!}_rev_436_wb__dev_ {!}_rev_436_wb_|_dev_^_Built_2026-01-05_16:19___
+qstr_{!}_rev_438_wb__dev_ {!}_rev_438_wb_|_dev_^_Built_2026-01-09_18:21___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1646,6 +1646,9 @@ qstr_Greetings_{s23}. Greetings,_{s23}.
 qstr_So_you_are_{s23}._I_ So,_you_are_{s23}._I_hear_you_fight_for_our_{s25}_friends,_so_I_guess_I_should_consider_you_an_ally.
 qstr_I_need_volunteers_wi I_need_volunteers_willing_to_follow_me_on_dangerous_missions.
 qstr_I_need_some_soldiers I_need_some_soldiers_to_replace_my_dead.
+qstr_I_need_a_captain_who I_need_a_captain_who_can_keep_my_men_in_check_and_make_sure_they_don't_run_away_during_battle.
+qstr_I_am_looking_for_a_c I_am_looking_for_a_captain_able_to_carry_out_my_orders_in_battle!.
+qstr_One_{s5}_joined_your One_{s5}_joined_your_party.
 qstr_Maybe_the_weaklings_ Maybe_the_weaklings_of_the_south_put_armour_on_their_soft-skinned_Trolls._Not_us_-_our_Trolls_are_of_Gundabad!
 qstr_Do_I_look_like_a_smi Do_I_look_like_a_smith_to_you?_Pah._Go_talk_to_one.
 qstr_Excellent_job_{s23}! Excellent_job,_{s23}!_I_wish_all_our_commanders_were_as_dedicated_as_you.^
@@ -1916,6 +1919,7 @@ qstr_Take_these_warriors_a Take_these_warriors,_and_use_them_to_strike_down_our_
 qstr_Before_you_leave_{pl Before_you_leave,_{playername},_know_that_you_have_always_been_a_good_friend_to_me.
 qstr_Wait_{playername}._I_ Wait,_{playername}._I_don't_know_you_half_as_well_as_I_should_like,_but_thus_far_you_have_been_a_good_friend.
 qstr_Allow_me_to_repay_yo Allow_me_to_repay_you_by_giving_you_some_troops.
+qstr_{reg41}_{s9}_joined_ {reg41}_{s9}_joined_your_party.
 qstr_Wait_{playername}._C Wait,_{playername}._Capable_servants_like_you_and_your_warriors_deserve_the_best_equipment.
 qstr_Halt_{playername}._It Halt,_{playername}._It's_shameful_to_have_my_servants_using_such_inferior_equipment.
 qstr_Take_this_{s22}_and_ Take_this_{s22}_and_let_it_aid_your_rampage.
