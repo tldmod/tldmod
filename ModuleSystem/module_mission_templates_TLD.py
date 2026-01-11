@@ -4032,7 +4032,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
   [  (store_trigger_param_1, ":agent"),
      (agent_is_human, ":agent"),
      (agent_get_troop_id,":troopid", ":agent"),
-     (this_or_next|is_between,  ":troopid", "trp_spider", "trp_array_animals"),
+     (this_or_next|is_between,  ":troopid", "trp_spider", "trp_dorwinion_sack"),
      (eq, ":troopid", "trp_werewolf"),
      (agent_set_no_death_knock_down_only, ":agent", 1), # make the rider unkillable
      (val_add,"$animal_is_present",1),#reused for counting active animals, keep in mind that we only ever add to this counter - dying animals won't be substracted, because the array slots are not reordered
