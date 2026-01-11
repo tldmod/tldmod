@@ -1019,7 +1019,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
         (this_or_next|eq, ":agent_trp", "trp_npc17"),
         (this_or_next|eq, ":agent_trp", "trp_player"),
         (eq, ":agent_trp", "trp_beorn_lord"),
-        (spawn_agent, "trp_bear"),
+        (spawn_agent, "trp_bear_strong"),
         (store_faction_of_troop, ":troop_faction", ":agent_trp"),
         (store_relation, ":relations", ":troop_faction", "$players_kingdom"),
         (try_begin),
@@ -1036,7 +1036,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
       (assign, ":animal", reg0),
       #(assign, "$animal_is_present", 1), #now assigned per spawn done in tld_animal_attacks
       (agent_add_relation_with_agent, ":agent", ":animal", 0),
-      (agent_set_hit_points, ":animal", 100, 0),
+      #(agent_set_hit_points, ":animal", 100, 0),
 
     #InVain: Make them uncontrollable
     (try_begin),
@@ -1071,7 +1071,8 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
         (agent_get_troop_id, ":agent_trp",":agent"),
         (this_or_next|eq, ":agent_trp", "trp_wolf"),
         (eq|this_or_next, ":agent_trp", "trp_werewolf"),
-        (eq, ":agent_trp", "trp_bear"),
+        (eq|this_or_next, ":agent_trp", "trp_bear"),
+        (eq, ":agent_trp", "trp_bear_strong"),
         (agent_is_active, ":agent_trp"),
         (agent_is_alive,  ":agent_trp"),
         (get_player_agent_no, ":player_agent"),
@@ -7363,8 +7364,9 @@ mission_templates = [ # not used in game
 	],tld_common_wb_muddy_water+tld_common_battle_scripts+[
 	
     (0,0,ti_once,[],[	(call_script, "script_infiltration_mission_synch_agents_and_troops"),
-							(call_script, "script_infiltration_mission_set_hit_points"),
-							(call_script, "script_wounded_hero_cap_mission_health")]),
+						(call_script, "script_infiltration_mission_set_hit_points"),
+						(call_script, "script_wounded_hero_cap_mission_health"),
+                        (assign, "$alarm_level", 0),]),
 	(5,0,0,[],[(call_script, "script_infiltration_mission_update_companion_casualties")]),
 	
     (1,4,ti_once,[(main_hero_fallen),],[	(call_script, "script_rescue_failed"),

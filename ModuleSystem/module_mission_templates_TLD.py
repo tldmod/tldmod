@@ -4136,7 +4136,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (eq|this_or_next, ":agent_trp", "trp_spider"),
     (eq|this_or_next, ":agent_trp", "trp_wolf"),
     (eq|this_or_next, ":agent_trp", "trp_werewolf"),
-    (eq, ":agent_trp", "trp_bear"),
+    (eq|this_or_next, ":agent_trp", "trp_bear"),
+    (eq, ":agent_trp", "trp_bear_strong"),
 
     #This is where we get the mount
     (agent_get_horse, ":horse", ":agent"),
@@ -4224,7 +4225,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
       (agent_set_slot, ":agent", slot_agent_animal_is_striking, 75),
       (assign, ":anim", "anim_wolf_snap"),
     (else_try),
-      (eq, ":agent_trp", "trp_bear"),
+      (eq|this_or_next, ":agent_trp", "trp_bear"),
+      (eq, ":agent_trp", "trp_bear_strong"),
       (lt, ":smallest_dist", 250),
       (try_begin),
         (le, ":rnd_2", 25),
@@ -4278,7 +4280,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
       (eq, ":agent_trp", "trp_wolf"),
       (assign, ":sound", "snd_wolf_strike"),
     (else_try),
-      (eq, ":agent_trp", "trp_bear"),
+      (eq|this_or_next, ":agent_trp", "trp_bear"),
+      (eq, ":agent_trp", "trp_bear_strong"),
       (assign, ":sound", "snd_bear_strike"),
     (try_end),
     (agent_play_sound, ":horse", ":sound"),
@@ -4309,7 +4312,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (try_begin), #savegame compatibility
        (lt, ":damage", 4),
        (assign, ":damage", 5),
-       (eq, ":agent_trp", "trp_bear"),
+       (eq|this_or_next, ":agent_trp", "trp_bear"),
+       (eq, ":agent_trp", "trp_bear_strong"),
        (assign, ":damage", 7),
     (try_end),
     (val_mul, ":damage", 3), #15-21
