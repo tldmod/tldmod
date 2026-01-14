@@ -1094,10 +1094,10 @@ itemsfile version 2
  itm_orc_bastard_scimitar Orc_Great_Scimitar Orc_Great_Scimitar 3  khazad_orc_bastard_scimitar_3 0  khazad_orc_bastard_scimitar_1 150  khazad_orc_bastard_scimitar_2 794624  2251799952162819 9223652412613460206 400 786582 3 94 0 0 0 11 37888 99 0 106 0 256 37
 0
 
- itm_orc_cleaver_a Orc_Cleaver Orc_Cleaver 2  bb_fight_cleaver_b 0  bb_war_cleaver_L82 786432  6356995 9223635919939043552 350 786582 4 94 0 0 0 13 27648 93 0 94 0 0 539
+ itm_orc_cleaver_a Orc_Cleaver Orc_Cleaver 2  bb_fight_cleaver_b 0  bb_war_cleaver_L82 786432  6356995 9223635919939043552 350 786582 4 94 0 0 0 13 27648 93 0 94 0 256 27
 0
 
- itm_orc_scimitar_b Orc_Scimitar Orc_Scimitar 2  orc_scimitar 0  uruk_falchion_a 786432  4299227138 9223388529822793742 300 786582 2 92 0 0 0 0 24576 96 0 77 0 0 536
+ itm_orc_scimitar_b Orc_Scimitar Orc_Scimitar 2  orc_scimitar 0  uruk_falchion_a 786432  4299227138 9223388529822793742 300 786582 2 92 0 0 0 0 24576 96 0 77 0 256 24
 0
 
  itm_orc_sabre_b Orc_Sabre Orc_Sabre 2  orc_falchion 0  orc_sabre 786432  4259842 9223388529822793742 285 786582 2.5 91 0 0 0 0 26624 87 0 74 0 256 26
