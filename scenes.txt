@@ -152,11 +152,11 @@ scn_edhellond_center edhellond_center 256 none none 0 0 200 200 -100 0x000000003
   0 
   0 
  New_outer_terrain_seaside_north_1 
-scn_lossarnach_center lossarnach_center 256 none none 0 0 200 200 -100 0x00000003300005000006ada4000051a90000386b00003791 
+scn_lossarnach_center lossarnach_center 256 none none 0 0 200 200 -100 0x00000005300005008009c5a200003ad200005a6f0000739d 
   0 
   0 
  outer_terrain_isen_low_far 
-scn_tarnost_center tarnost_center 256 none none 0 0 200 200 -100 0x30050d0d0002d4b300000e2f000027d200005f66 
+scn_tarnost_center tarnost_center 256 none none 0 0 200 200 -100 0x00000007300005008009c5a200000f5200005b280000739d 
   0 
   0 
  outer_mountains2east 
@@ -192,10 +192,10 @@ scn_edoras_center edoras_center 256 none none 0 0 200 200 -100 0x000000012000050
   0 
   0 
  outer_terrain_rohan 
-scn_aldburg_center aldburg_center 256 none none 0 0 100 100 -100 0x000000032007956000025896000037e800000e860000674b 
+scn_aldburg_center aldburg_center 256 none none 0 0 100 100 -100 0x0000000130000500000d234800002fba00004fd900006cf1 
   0 
   0 
- outer_mountains2south 
+ New_outer_mountains2south 
 scn_hornburg_center hornburg_center 256 none none 0 0 100 100 -100 0x0000000330000500000d234800006228000053bf00004eb9 
   0 
   0 
@@ -1067,19 +1067,19 @@ scn_village_rohan_2 village_rohan_2 256 none none 0 0 100 100 -100 0x00000001200
 scn_scout_camp_mirk_evil_small scout_camp_mirk_evil_small 4352 none none 0 0 100 100 -100 0x00000001b00a11bd8002b8b6000059ce000067f400007f2e 
   0 
   0 
- outer_terrain_forest 
+ outer_terrain_forest_deep 
 scn_scout_camp_mirk_evil_big scout_camp_mirk_evil_big 4352 none none 0 0 100 100 -100 0x00000001b00a11bd8002b8b6000059ce000067f400007f2e 
   0 
   0 
- outer_terrain_forest 
+ outer_terrain_forest_deep 
 scn_scout_camp_mirk_good_small scout_camp_mirk_good_small 256 none none 0 0 100 100 -100 0x00000001b00a11bd8002b8b6000059ce000067f400007f2e 
   0 
   0 
- outer_terrain_forest 
+ outer_terrain_forest_deep 
 scn_scout_camp_mirk_good_big scout_camp_mirk_good_big 256 none none 0 0 100 100 -100 0x00000001b00a11bd8002b8b6000059ce000067f400007f2e 
   0 
   0 
- outer_terrain_forest 
+ outer_terrain_forest_deep 
 scn_scout_camp_rohan_evil_small scout_camp_rohan_evil_small 256 none none 0 0 100 100 -100 0x00000000200f96d700025896000074ef000021f700007ddd 
   0 
   0 
@@ -1096,19 +1096,19 @@ scn_scout_camp_rohan_good_big scout_camp_rohan_good_big 256 none none 0 0 100 10
   0 
   0 
  outer_terrain_rohan 
-scn_scout_camp_north_good_small scout_camp_north_good_small 256 none none 0 0 100 100 -100 0x00000001328b9d0b0002c4ab00003e4d00004b34000048a2 
+scn_scout_camp_north_good_small scout_camp_north_good_small 256 none none 0 0 100 100 -100 0x00000001a00b9d0b0002c4ab0000072400004b34000048a2 
   0 
   0 
  outer_mountains2north 
-scn_scout_camp_north_good_big scout_camp_north_good_big 256 none none 0 0 100 100 -100 0x00000001328b9d0b0002c4ab00003e4d00004b34000048a2 
+scn_scout_camp_north_good_big scout_camp_north_good_big 256 none none 0 0 100 100 -100 0x00000001a00b9d0b0002c4ab0000072400004b34000048a2 
   0 
   0 
  outer_mountains2north 
-scn_scout_camp_north_evil_small scout_camp_north_evil_small 256 none none 0 0 100 100 -100 0x00000001328b9d0b0002c4ab00003e4d00004b34000048a2 
+scn_scout_camp_north_evil_small scout_camp_north_evil_small 256 none none 0 0 100 100 -100 0x00000001a00b9d0b0002c4ab0000072400004b34000048a2 
   0 
   0 
  outer_mountains2north 
-scn_scout_camp_north_evil_big scout_camp_north_evil_big 256 none none 0 0 100 100 -100 0x00000001328b9d0b0002c4ab00003e4d00004b34000048a2 
+scn_scout_camp_north_evil_big scout_camp_north_evil_big 256 none none 0 0 100 100 -100 0x00000001a00b9d0b0002c4ab0000072400004b34000048a2 
   0 
   0 
  outer_mountains2north 
@@ -1256,11 +1256,11 @@ scn_goblin_south_outpost_center_siege goblin_south_outpost_center_siege 256 none
   0 
   0 
  outer_mountains2west 
-scn_village_anduin village_anduin 256 none none 0 0 100 100 -100 0x0000000037220db18006a5aa000061bc80003a9600004852 
+scn_village_anduin village_anduin 256 none none 0 0 100 100 -100 0x00000000a0020db1c006a5aa0000021780003a9600004852 
   0 
   0 
  outer_terrain_plain 
-scn_village_north village_north 256 none none 0 0 100 100 -100 0x000000003386c9370007b5ed000041800000026d00001a96 
+scn_village_north village_north 256 none none 0 0 100 100 -100 0x00000000a026c9374007b5ed00003dbb0000026d00001a96 
   0 
   0 
  outer_terrain_plain 
@@ -1732,7 +1732,7 @@ scn_forest_mirkwood_b9 forest_mirkwood_b9 4352 none none 0 0 100 100 -100 0x0000
   0 
   0 
  outer_terrain_forest 
-scn_gondor_battlefield_morgul gondor_battlefield_morgul 768 none none 0 0 100 100 -100 0x0000000120000500000691a40000065c00004b34000070b7 
+scn_gondor_battlefield_morgul gondor_battlefield_morgul 256 none none 0 0 200 200 -0.5 0x0000000120000500000691a4000051a100004b34000070b7 
   0 
   0 
  outer_terrain_isen_low_far 

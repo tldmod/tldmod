@@ -2456,9 +2456,11 @@ scene_props = [
 # ("ZT_mb_", 0, "mesh", "bo_", []), for vanilla flora
 # ("ZT_pl_", 0, "mesh", "bo_", []), for gutek's flora
 # tree_meshes.brf from vanilla
+
+#InVain Careful with these, don't replace for now. They're used in scenes all over the place
 #("ZT_mb_chestnut_DONT_USE", 0, "chestnut", "bosimple_tree", []), 
-#("ZT_mb_oak_DONT_USE", 0, "oak_a", "bosimple_tree", []), 
-("ZT_mb_oak_wide_DONT_USE", 0, "oak_b", "bosimple_tree", []), 
+("ZT_mb_oak_DONT_USE", 0, "oak_a", "bosimple_tree", []), 
+#("ZT_mb_oak_wide_DONT_USE", 0, "oak_b", "bosimple_tree", []), #not used in scenes
 ("ZT_mb_lowpoly1_DONT_USE", 0, "plane_tree_a", "0", []),   ("ZT_mb_lowpoly2_DONT_USE", 0, "plane_tree_b", "0", []),   ("ZT_mb_lowpoly3_DONT_USE", 0, "plane_tree_c", "0", []), 
 ("ZT_mb_pine_wide_DONT_USE", 0, "pine", "bosimple_tree", []), 
 ("ZT_mb_maple_DONT_USE", 0, "tree_6_a", "bo_tree_6_a", []), 

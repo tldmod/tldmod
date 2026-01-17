@@ -3502,7 +3502,7 @@ spr_troop_guard_fight_single_alt 16384 0 arrow_helper_blue 0 0
 spr_troop_guard_fight_duel_alt 16384 0 arrow_helper_blue 0 0
 
 
-spr_ZT_mb_oak_wide_DONT_USE 0 0 oak_b bosimple_tree 0
+spr_ZT_mb_oak_DONT_USE 0 0 oak_a bosimple_tree 0
 
 
 spr_ZT_mb_lowpoly1_DONT_USE 0 0 plane_tree_a 0 0
