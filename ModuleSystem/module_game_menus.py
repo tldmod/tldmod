@@ -4860,7 +4860,10 @@ game_menus = [
 
      ("set_gondor_active",   [],
       "{!}Set Gondor faction to active again.",
-      [(faction_set_slot, "fac_gondor", slot_faction_state, sfs_active),]),
+      [(faction_set_slot, "fac_gondor", slot_faction_state, sfs_active),
+       (call_script, "script_create_kingdom_hero_party", "trp_knight_1_3", "p_town_minas_tirith"),
+       (display_message, "@{!}Set Gondor faction state to active, respawn Imrahil; deactiveated cheat mode again"),
+       (assign, "$cheat_mode", 0),	(jump_to_menu, "mnu_camp"),]),
 
      ("cheat_original_version",   [],
       "{!}Display original savegame version.",

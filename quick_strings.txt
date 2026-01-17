@@ -94,7 +94,6 @@ qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_Thank_you_for_playin Thank_you_for_playing
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
-qstr_{s16}:_rank_{reg0} {s16}:_rank_{reg0}
 qstr_{s24}: {s24}:
 qstr_Great_Hope_of_{s5} Great_Hope_of_{s5}
 qstr_Hope_of_{s5} Hope_of_{s5}
@@ -1026,6 +1025,7 @@ qstr_{reg11}0___{reg11}9 {reg11}0_-_{reg11}9
 qstr_Regular_troops_only Regular_troops_only
 qstr_Heroes_only Heroes_only
 qstr_Regulars_and_Heroes Regulars_and_Heroes
+qstr_{***}Set_Gondor_factio {***}Set_Gondor_faction_state_to_active,_respawn_Imrahil;_deactiveated_cheat_mode_again
 qstr_{***}_debug:_Original_ {***}_debug:_Original_savegame_version:_{reg78}
 qstr_{***}ON {***}ON
 qstr_{***}OFF {***}OFF

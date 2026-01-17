@@ -2619,7 +2619,7 @@ scripts = [
         (try_begin),
             (ge, ":rank", 20), #rank 4 onwards
             (faction_get_slot, ":banner_troop", ":fac", slot_faction_banner_troop),
-            (ge, ":banner_troop", 0),
+            (gt, ":banner_troop", 0),
             (party_count_members_of_type, reg1, ":volunteers",":banner_troop"),
             (lt, reg1, 2),
             (party_add_members, ":volunteers", ":banner_troop", 1),
@@ -28182,10 +28182,10 @@ command_cursor_scripts = [
                     (party_slot_eq, ":cur_center", slot_town_lord, ":troop_no"),
                     (party_get_slot, ":reward_troop", ":cur_center", slot_town_captain_available),
                 (try_end),
-                (ge, ":reward_troop", 0),
+                (gt, ":reward_troop", 0),
             (else_try), #banner carriers
                 (faction_get_slot, ":reward_troop", ":hero_fac", slot_faction_banner_troop),
-                (ge, ":reward_troop", 0),
+                (gt, ":reward_troop", 0),
                 (ge, ":rank", 3), #one rank lower than regular recruitment condition
                 (le, ":rand", 2),
             (else_try),
