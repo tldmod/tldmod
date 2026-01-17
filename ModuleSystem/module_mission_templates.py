@@ -7366,7 +7366,9 @@ mission_templates = [ # not used in game
     (0,0,ti_once,[],[	(call_script, "script_infiltration_mission_synch_agents_and_troops"),
 						(call_script, "script_infiltration_mission_set_hit_points"),
 						(call_script, "script_wounded_hero_cap_mission_health"),
-                        (assign, "$alarm_level", 0),]),
+                        (assign, "$alarm_level", 0), #make sure this is zero at the beginning of the first mission
+                        (assign, "$meta_alarm", 0), #make sure this is zero at the beginning of the first mission
+                        ]),
 	(5,0,0,[],[(call_script, "script_infiltration_mission_update_companion_casualties")]),
 	
     (1,4,ti_once,[(main_hero_fallen),],[	(call_script, "script_rescue_failed"),

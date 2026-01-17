@@ -1,4 +1,4 @@
-2124
+2126
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -17,6 +17,8 @@ qstr_{!}_debug:_closest_n {!}_debug:_closest_nearby_scene_item_is_given_as_rewar
 qstr_{!}_debug:_secret_it {!}_debug:_secret_item:_{s9}
 qstr_Nothing_of_interest. Nothing_of_interest...
 qstr_No_inventory_space.. No_inventory_space...
+qstr_rank_req:_{reg78} rank_req:_{reg78}
+qstr_center_relation:_{re center_relation:_{reg78}
 qstr_We_don_t_know_you_en We_don't_know_you_enough_to_give_you_this...
 qstr_Take_it_friend_it_s_ Take_it,_friend,_it's_yours.
 qstr_Take_it_we_don_t_nee Take_it,_we_don't_need_it_anyway.
@@ -104,7 +106,7 @@ qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_Thank_you_for_playin Thank_you_for_playing
-qstr_{!}_rev_441_wb__dev_ {!}_rev_441_wb_|_dev_^_Built_2026-01-11_13:08___
+qstr_{!}_rev_445_wb__dev_ {!}_rev_445_wb_|_dev_^_Built_2026-01-17_20:04___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -690,7 +692,7 @@ qstr_But_I... But_I...
 qstr_Noone..._oppossssses Noone..._oppossssses..._Barad_Dur..._and_livessss!
 qstr_All..._must..._submi All..._must..._submit..._and..._serve...
 qstr_I_serve_the_Eye! I_serve_the_Eye!
-qstr_I_shall_serve_the_Ey I_shall_serve_the_Eye!
+qstr_Your_time_is_over_wr Your_time_is_over,_wraith,_begone!_Now_begins_the_Age_of_the_White_Hand!
 qstr_Go_to_{s1}_and_speak Go_to_{s1}_and_speak_with_{s9}.
 qstr_The_Remnant_Forces_o The_Remnant_Forces_of_{s22}_have_gathered_to_reinforce_the_{s15}_theater!
 qstr_The_strength_of_the_ The_strength_of_the_remaining_allied_factions_of_the_{s15}_theater_has_increased

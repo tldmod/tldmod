@@ -5174,8 +5174,9 @@ scripts = [
 	  	#(try_end),
 	(else_try), #orc-led parties are faster at night
         (is_currently_night),
+        (party_is_active, ":party_no"), #safeguard, apparently the game sometimes checks inactive parties
         (neq, ":party_no", p_main_party), #player party speed bonus works via pathfinding
-        (gt, ":leader", 0),
+        (is_between, ":leader", 0, trp_last), #second safeguard against invalid parties/troops
         (troop_get_type, ":leader_race", ":leader"),
         (eq, ":leader_race", tf_orc),
 		(set_trigger_result, 115),
@@ -16801,6 +16802,8 @@ scripts = [
 
 #script_agent_reassign_team
 # INPUT: arg1 = agent_no
+# This scripts checks for allied agents and makes them form their own team if they belong to another hero's party. 
+# Non-hero party members stay in the player's team.
 ("agent_reassign_team",
     [ (store_script_param, ":agent_no", 1),
       (get_player_agent_no, ":player_agent"),
@@ -23904,7 +23907,7 @@ scripts = [
         (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_eye),
         (str_store_string, s51, "@I serve the Eye!"),
       (else_try),
-        (str_store_string, s51, "@I shall serve the Eye!"),
+        (str_store_string, s51, "@Your time is over, wraith, begone! Now begins the Age of the White Hand!"),
       (try_end),
       (assign, "$g_tld_convo_lines", 2),      
       (val_or, "$g_tld_conversations_done", tld_conv_bit_nazgul_victory),
@@ -31426,7 +31429,7 @@ if is_a_wb_script==1:
 
 ]),
 
-  # DUPLICATE!
+  # DUPLICATE! Can be safely removed, as it's identical to the earlier script
   #script_agent_reassign_team_duplicate
   # INPUT: arg1 = agent_no
   # OUTPUT: none

@@ -886,9 +886,7 @@ moto_formations_triggers = (not is_a_wb_mt==1 and
 or  
 
   field_ai_triggers + order_weapon_type_triggers +
-  utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers_moto + AI_triggers_moto + battle_encounters_effects + [
-  tld_kill_or_wounded_triggers,
-])
+  utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers_moto + AI_triggers_moto + battle_encounters_effects)
 
 ## MadVader deathcam end
 
@@ -2744,12 +2742,13 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		(agent_set_animation, ":ghost", "anim_hide_inside_warg"), #anim_ride_1"),
 
 		#swy-- there's a 6% prob every 1.5 secs of random lone warg sounds!
-		(store_random_in_range, ":random", 0,100),
-		(try_begin),
-				(le,":random",6),
-				# should be brutal GRRR of attacking warg here
-				(agent_play_sound, ":ghost", "snd_warg_lone_woof"),
-		(try_end),
+        #InVain: Disabled, this is done for all mounts and animals in custom_warg_sounds
+		# (store_random_in_range, ":random", 0,100),
+		# (try_begin),
+				# (le,":random",6),
+				# # should be brutal GRRR of attacking warg here
+				# (agent_play_sound, ":ghost", "snd_warg_lone_woof"),
+		# (try_end),
 		
 		#swy-- add +1 to the time counter slot of this lone warg
 		(agent_get_slot, reg1, ":ghost", slot_agent_time_counter), (val_add, reg1, 1),
@@ -4035,6 +4034,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
      (this_or_next|is_between,  ":troopid", "trp_spider", "trp_dorwinion_sack"),
      (eq, ":troopid", "trp_werewolf"),
      (agent_set_no_death_knock_down_only, ":agent", 1), # make the rider unkillable
+     (agent_set_animation, ":agent", "anim_hide_inside_warg"),
      (val_add,"$animal_is_present",1),#reused for counting active animals, keep in mind that we only ever add to this counter - dying animals won't be substracted, because the array slots are not reordered
      (assign, ":upper_range", 1000),
      (try_for_range, ":slot", 0, ":upper_range"), #assign to array
