@@ -1,4 +1,4 @@
-2126
+2127
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -106,7 +106,7 @@ qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_Thank_you_for_playin Thank_you_for_playing
-qstr_{!}_rev_445_wb__dev_ {!}_rev_445_wb_|_dev_^_Built_2026-01-17_20:04___
+qstr_{!}_rev_446_wb__dev_ {!}_rev_446_wb_|_dev_^_Built_2026-01-17_20:53___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -188,6 +188,7 @@ qstr_Prevent_AI_from_taki Prevent_AI_from_taking_defensive:_
 qstr_AI_Controls_Troops_W AI_Controls_Troops_When_Player_is_KO'd:_
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
+qstr_{s16}:_rank_{reg0} {s16}:_rank_{reg0}
 qstr_{s24}: {s24}:
 qstr_Great_Hope_of_{s5} Great_Hope_of_{s5}
 qstr_Hope_of_{s5} Hope_of_{s5}

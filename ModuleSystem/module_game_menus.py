@@ -4858,6 +4858,10 @@ game_menus = [
  	 ("cheat_disabable",[],
 		"Disable cheat/modding options.",[(assign, "$cheat_mode", 0),	(jump_to_menu, "mnu_camp"),]),
 
+     ("set_gondor_active",   [],
+      "{!}Set Gondor faction to active again.",
+      [(faction_set_slot, "fac_gondor", slot_faction_state, sfs_active),]),
+
      ("cheat_original_version",   [],
       "{!}Display original savegame version.",
       [(assign, reg78, "$original_savegame_version"), (display_message, "@{!} debug: Original savegame version: {reg78}"),]),
