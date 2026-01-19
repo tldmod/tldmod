@@ -3714,7 +3714,7 @@ game_menus = [
         (try_for_range, ":item_slot", 0, 9), #all equippable item slots
             (troop_set_inventory_slot_modifier, trp_player, ":item_slot", reg5),
         (try_end),
-        (display_message, "@all equipped items set to {s1}"),],
+        (display_message, "@[!}all equipped items set to {s1}"),],
 	[	
 	("poor", [], "{!}poor", [
         (assign, reg5, imod_cracked),

@@ -5888,10 +5888,11 @@ scene_props = [
         
         #check conditions
         (party_get_slot, ":center_relation", "$current_town", slot_center_player_relation),
-        (val_div, ":center_relation", 5), #center relation /5 adds one rank 
+        (val_div, ":center_relation", 8), #center relation /8 adds one rank 
         (call_script, "script_get_faction_rank", "$ambient_faction"), 
         (val_add, ":center_relation", reg0),
         (item_get_abundance, ":rank_req", ":item_type"), #usually 90 to 100, but 100 equals 0
+        (val_min, ":rank_req", 100), #fixes some items that have above 100 abundance for some reason
         (try_begin),
             (eq, ":rank_req", 100),
             (assign, ":rank_req", 90),

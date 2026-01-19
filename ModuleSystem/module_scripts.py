@@ -28665,7 +28665,7 @@ command_cursor_scripts = [
         (str_store_string, 18, "@The fortress is shrouded in darkness."), 
     (try_end),
     
-    (str_store_string, 17, "@{s17} ^{s18}"),
+    (str_store_string, 17, "@{!}{s17} ^{s18}"),
      ]),
 
 ]
@@ -32732,8 +32732,6 @@ if is_a_wb_script==1:
         (eq, ":stage", 1),
         (assign, ":int_missing", 1),
         (store_time_of_day, ":time"),
-        (assign, reg78, ":time"),
-        (display_message, "@time: {reg78}"),
         (is_between, ":time", 18, 21),
         (assign, ":int_missing", 0),
         (tutorial_message, "@You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.",0, 15),
