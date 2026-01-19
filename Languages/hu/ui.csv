@@ -49,16 +49,16 @@ ui_notification_cant_upgrade|(Nem fejleszthetsz amíg egységeket adsz át)
 ui_lance_control|Kopja irányítás:
 ui_manual_easy|Kézi (Könnyű)
 ui_manual_hard|Kézi (Nehéz)
-; ui_campaign_ai|Campaign AI (Unused in TLD):
+ui_campaign_ai|Hadjárat mesterséges intelligencia (TLD-ben nem használt)
 ui_crouch|Gugolás
 
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Biztos benne, hogy importálni szeretné a karaktert?
-; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: Ironflesh, Power Strike, Power Throw, Power Draw.
+ui_explanation_strength|Erő: Minden pont +1 életerőt ad. A következő képességek nem fejleszthetők az Erő 1/3 magasabb szintre: Vasvér, Erőcsapás, Erődobás, Erőhúzás.
 ui_explanation_agility|Mozgékonyság: Minden pont öt fegyverforgatói pontot ad és megnöveli a fegyver sebességét 0,5 %-kal. A következő képességeket nem lehet a Mozgékonyság 1/3-a fölé növelni: Fegyvermester, Pajzshasználat, Atlétika, Lovaglás, Lovasíjászat, Zsákmányszerzés.
-; ui_explanation_intelligence|Intelligence: (Wisdom) The deep understanding of nature and crafts. Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Bargainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, First Aid, and Wildcraft.
-; ui_explanation_charisma|Charisma: (Will) The power to inspire or dominate. Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Trainer, Leadership.
+ui_explanation_intelligence|Intelligencia: (Bölcsesség) A természet és a mesterségek mély ismerete. Minden pont az intelligenciához azonnal egy extra képességpontot ad, és néhány alkalommal kissé növeli a tapasztalatszerzést. A következő képességek nem fejleszthetők az Intelligencia 1/3 magasabb szintre: Alkudozás, Nyomkövetés, Taktika, Útkeresés, Figyelés, Készletkezelés, Sebkezelés, Sebészet, Elsősegély, és Vadászat.
+ui_explanation_charisma|Karizma: (Akarat) A képesség, hogy inspirálj vagy dominálj. Javítja a kapcsolatodat az emberekkel és a frakciókkal. Minden pont +1 fővel növeli a csapatlétszám határát (kísérőknél +0,5). A következő képességek nem fejleszthetők a Karizma 1/3 magasabb szintre: Fogolykezelés, Kiképző, Vezetés.
 ui_delivered_number_damage|%d sebzést okoztál
 ui_mission_losses_killed|megölt :
 ui_party_losses|%s :%d sebesült --- %d megölték%d.
@@ -69,28 +69,28 @@ ui_dumping_value_item|Egy elem véglegesen elveszik, biztos benne?
 ui_notification_requirements_not_met|Nincs meg a szükséges képességek vagy attribútumok ehhez a fegyverhez.
 ui_disband|Elbocsát
 ui_you_hit_a_friendly_troop|Ön eltalál egy barátságos egységet!
-; ui_you_are_not_carrying_any_arrows|You are not carrying any arrows.
+ui_you_are_not_carrying_any_arrows|Nem viszel magaddal nyílvesszőt.
 ui_received_number_damage|%d  sebzést szenvedett el.
 ui_you_have_improved_your_proficiency_in_value_to_number|%s és %d között javította a jártasságát.
-; ui_your_proficiency_in_value_has_improved_by_number_to_number|Your proficiency in %s has improved by +%d to %d.
-; ui_value_killed_by_value|%s killed by %s.
-; ui_value_knocked_unconscious_by_value|%s knocked unconscious by %s.
-; ui_you_got_number_experience|You got %d experience.
-; ui_you_have_advanced_to_level_number|You have advanced to level %d.
+ui_your_proficiency_in_value_has_improved_by_number_to_number|A jártasságod a %s képességben %d -ról %d -ra nőtt.
+ui_value_killed_by_value|%s meghalt %s által
+ui_value_knocked_unconscious_by_value|%seszméletlenül ütötte ki %s által
+ui_you_got_number_experience|%d tapasztalat pontot szereztél
+ui_you_have_advanced_to_level_number|Előreléptél az %dszintre.
 ui_quest_succeeded_value|A küldetés sikerült:%s.
 ui_number_of_companions_exceeds_leadership_limit|A társak száma meghaladja a vezetői korlátot.
 ui_number_of_prisoners_exceeds_prisoner_management_limit|A fogvatartottak száma meghaladja a fogvatartási korlátot.
-; ui_shared_number_experience_within_party|Shared %d experience within party.
-; ui_your_relations_with_value_has_improved_from_number_to_number|Your relations with %s has improved from %d to %d.
-; ui_your_relations_with_value_has_deteriorated_from_number_to_number|Your relations with %s has deteriorated from %d to %d.
-; ui_you_lost_value|You lost %s.
+ui_shared_number_experience_within_party|Megosztott %d tapasztalat a csapaton belül.
+ui_your_relations_with_value_has_improved_from_number_to_number|A kapcsolatod %s -sel  %d-ról %d-ra javult.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|A kapcsolatod %s -sel  %d-ról %d-ra javult.
+ui_you_lost_value|Vesztettél %s.
 ui_change_graphics_settings_explanation|Néhány változtatás, amelyet végrehajtott, hatályba lép, amikor új területet ér.
 ui_game_log_window|Játéknapló ablak
 ui_blunt_short|b
 ui_tracks|Nyomok
 ui_need_to_learn_prisoner_management|Tanulnia kell a fogvatartást készséget a foglyok elfogásához.
 ui_unbalanced|Kiegyensúlyozatlan
-; ui_can_crush_through_blocks|Can crush through blocks
+ui_can_crush_through_blocks|Áttörheti a blokkokat
 
 ui_order_1|Parancs 1 kiválaszás
 ui_order_2|Parancs 2 kiválaszás
@@ -112,7 +112,7 @@ ui_order_button_dismount|Leszállni
 ui_order_button_hold_fire|Tüzet szüntess
 ui_order_button_fire_at_will|Lőj ha tudsz
 ui_order_button_use_blunt_weapons|Csak tompa fegyver használható
-; ui_order_button_use_any_weapon|Use weapons at will
+ui_order_button_use_any_weapon|Használhatod a fegyvereket szabadon
 ui_order_button_movement_orders|Mozgási parancsok
 ui_order_button_formation_orders|Alakzat parancsok
 ui_order_button_fire_orders|Tűzparancs
@@ -127,7 +127,7 @@ ui_fall_back_e_|%s, tíz lépéssel vissza!
 ui_stand_closer_e_|%s, Közelebb áll!
 ui_spread_out_e_|%s,  szétszóródni!
 ui_use_blunt_weapons_e_|%s, Csak tompa fegyver használható!
-; ui_use_any_weapon_e_|%s, use weapons at will!
+ui_use_any_weapon_e_|%s, használhatod a fegyvereket szabadon
 ui_hold_fire_e_|%s, Lőni tilos!
 ui_fire_at_will_e_|%s, Lőni tetszés szerint!
 ui_hold_this_position_e_|%s, tartsd ezt a poziciót!
@@ -143,7 +143,7 @@ ui_str_hear_me|%s, figyelem!
 ui_return|Visszatérés
 ui_factions|Frakciók
 ui_troop_upgrades|Csapatok fejlesztése
-; ui_hdr_mode|HDR Mode:
-; ui_autoexpore|Auto-exposure (recommended ON if HDR is turned on)
-; ui_saving_policy_realistic|No quitting without saving! (Not recommended.)
-; ui_saving_policy_nonrealistic|Quit without saving. (Recommended, keep multiple saves.)
+ui_hdr_mode|HDR Mód:
+ui_autoexpore|Automatikus expozíció (ajánlott BE, ha HDR be van kapcsolva)
+ui_saving_policy_realistic|Ne lépj ki mentés nélkül! (Nem ajánlott.)
+ui_saving_policy_nonrealistic|Kilépés mentés nélkül. (Ajánlott: tarts több mentést.)

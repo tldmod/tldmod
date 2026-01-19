@@ -4,8 +4,8 @@ dlga_mutiny_pretalk_2:close_window|Ahogy óhajtod parancsnok, ahogy óhajtod....
 dlga_start:mutiny_talk_1|Hé, parancsnok. Aszondom... A legények nem túl boldogak, egyáltalán nem. ^Nincs elég emberhús, nincs elég szórakozás. ^Azt mondják nem vagy elég jó, parancsnok!
 dlga_mutiny_talk_1:mutiny_talk_2|Mi? Zendülés háborúban? ^Ezért halál jár, féreg!
 dlga_mutiny_talk_2:close_window|Aszondom... ^A legények aszondják hogy jobb parancsnokuk lennék miután MEGÖLLEK!
-dlga_start:troll_introduce_1|Problem?
-dlga_start:troll_talk_1|U mad?
+dlga_start:troll_introduce_1|Gond van?
+dlga_start:troll_talk_1|Kiakadtál?
 dlga_troll_introduce_1:troll_goodbye|Hű! Egy beszélő troll?!
 dlga_troll_introduce_1:close_window|Van egy lovam.
 dlga_troll_talk_1:troll_talk_2|Trollkodj meg, troll!
@@ -34,30 +34,30 @@ dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Megértem. Akkor majd 
 dlga_hobbit_general_talk_3:close_window|Nos, viszlát.
 dlga_start:hobbit_merry_talk_met.1|Üdv ismét, {playername}!
 dlga_start:hobbit_pippin_talk_met.1|Üdv ismét, {playername}!
-dlga_hobbit_merry_talk_met:hobbit_deliver_message|Hello, Trufa mester. Levelet hoztam az unokatestvéredtől, Pippintől, Minas Tirithből.
-dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Hello, Pippin mester. Levelet hoztam az unokatestvéredtől, Trufától, Edorasból.
+dlga_hobbit_merry_talk_met:hobbit_deliver_message|Üdvözöllek Merry uram. Üzenetem van számodra az unokatestvéredtől Pippintől Minas Tirithből.
+dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Üdvözöllek Pippin uram. Üzenetem van számodra az unokatestvéredtől Merrytől Edorasból
 dlga_hobbit_deliver_message:close_window|Köszönöm, {playername}. Kedves volt tőled hogy elhoztad nekem.
 dlga_hobbit_merry_talk_met:close_window|Üdv, Trufa mester.
 dlga_hobbit_pippin_talk_met:close_window|Üdv, Pippin mester.
-; dlga_start:hd_defense_01|It is well that you are here, {playername}. My name is Aragorn, son of Arathorn, and I am the Heir of Isildur – see, here is Anduril, the Flame of the West, which I bear in battle. The Blade that was Broken shines again! It will not be long before Saruman’s forces reach these walls. I ask you now to lend me your aid and defend the Rohirrim, for the honour of the Lord of the Mark. Let this be the hour when we draw swords together!
-; dlga_start:hd_defense_01.1|Mae lovannen! Things here look ill, {playername}, but less ill now that you are here with us! Gellon len covad. I am Legolas of Mirkwood, and though I do not much like this place I like the approaching hordes of Saruman even less. What would I give for a hundred more of my kin here! There are too few of us, too few. We shall need your aid, Commander, though we may be but a few leaves in the forest. Come, let me show you where our bows will be of the most use…
-; dlga_start:hd_defense_01.2|Right glad am I to see you, kinsman! I am Gimli, son of Gloin. It is a great host that comes now against us, but my axe is restless in my hand, and I know you feel the same! Give us a row of orc-necks to hew and room to swing, and together we shall teach them the meaning of fear. Stout feet and hard axes, that is what will carry us through the night! Ai oi! There are enough for both of us. Baruk Khazâd! Khazâd ai-mênu!
-; dlga_hd_defense_01:close_window|Now, let us rest for a while. The enemy will be here by nightfall.
-; dlga_start:aragorn_thanks_hd|{playername}, I am glad to see you live still. The men are weary with battle, but thanks to you they see the dawn of a new day. The hillmen have given themselves up, and they shall be put to work to repair the evil which they have joined, after which I hope they will return to their own lands. They were easily deceived by Saruman, for much was taken from them, and much remains to be given back; we shall have to see what can be done for them later.
-; dlga_aragorn_thanks_hd:close_window|I hope our paths may cross again, {playername}. I bid you farewell now, for I ride on an errand most urgent. With the first light of morning we must go, my friends and I, and take a dark road out of this valley. {playername}, the times are evil, but your valour gladdens the hearts of all free peoples everywhere, from the North to the South. Fight well, and we may meet again beyond the shadows!
-; dlga_start:close_window.1|In a little while I take the road again, {playername}, a hard road untrodden by many for uncounted years. I hope your path is easier than mine, friend. In the meantime, perhaps you may wish to go into the deep Caverns of Helm's Deep, of which my companion Gimli the Dwarf has spoken much.
-; dlga_start:close_window.2|Have you yet been to the caves in the back? The Glittering Caves of Aglarond, {playername}! Happy is the chance that has led your footsteps here!
-; dlga_start:close_window.3|I have pledged to my friend Gimli Gloin's son that when the war is over, I shall return here with him and see the Glittering Caves of Aglarond for myself. If you have the time, {playername}, you could do this before you go on your way again. A brief respite from all the fighting!
-; dlga_start:treebeard_isengard_1|{s2} Ha, hmmm! Welcome, friends! Your arrival is timely. I have a Wizard to manage here, but first, we must nail him down in his tower. This will be a nasty business. Rock, axe and fire await us inside. Will you help us?
-; dlga_treebeard_isengard_1:treebeard_isengard_2|Yes, Gandalf sent me. Let us storm the Ring of Isengard!
-; dlga_treebeard_isengard_2:close_window|Very well, follow me then. We have already breached the Ring. Now, let us clean up inside! Hoom, hom! Hoom, hom! To Isengard with doom we come! With doom we come, with doom we come!
-; dlga_start:close_window.4|Hoom, hom! Hoom, hom! To Isengard with doom we come! With doom we come, with doom we come!
-; dlga_start:close_window.5|Thank you for your help. I must say it was quite satisfying to manage those Orcs. You were of great help to us. But now, hm, we have work to do that you cannot help with. You should maybe find a safe spot outside Isengard and wait until we are finished.
-; dlga_start:treebeard_isengard_3|Hello again. It is good to see you safe and dry. I must say it will take a long while to flush all of Saruman's filth away. But we’ve done quite well, hmm, yes. He will do no more harm.
-; dlga_treebeard_isengard_3:close_window|Ho, hmm, I owe you great thanks. I had not expected any help from others, and it is good to learn that our Last March may not end quite so badly, after all! Since the tree-killer is dealt with, we should now be able to keep Rohan's northern marches safe, for a while.
-; dlga_treebeard_isengard_3:close_window.1|Hmm? Ho, hmm… ah. So, you have come all the way from Rohan, have you? Hmm. I have heard some news from the south, yes. Good news, news to gladden all hearts. I have good will to Theoden King, and I am glad he was aided by the likes of you in his hour of peril, hmm! We have managed here well enough, and now we Ents will see to it that Saruman does not set foot beyond Isengard, without our leave. The Isen flows well again, and soon I hope the water will once more be fit to drink. Ha, hm, I feel a song coming on. A song of the old days… the old trees I knew…
-; dlga_start:ent_encounter|Hrooom! What do you want?
-; dlga_ent_encounter:close_window|Hail, tree shepherd! Thank you for keeping these marches safe. I will not stand in your way.
+dlga_start:hd_defense_01|Jó, hogy itt vagy, {playername}. A nevem Aragorn, Arathorn fia, Isildur örököse vagyok – lásd, íme Andúril, a Nyugat Lángja, melyet csatában hordok. A Törött Kard ismét ragyog! Nem telik sok idő, és Szarumán seregei elérik e falakat. Arra kérlek most, hogy segíts nekem megvédeni a rohaniakat, a Mark urának becsületéért. Legyen ez az óra, mikor együtt rántjuk ki kardjainkat!
+dlga_start:hd_defense_01.1|Mae govannen! Rosszul állnak itt a dolgok, {playername}, bár már kevésbé, hogy velünk vagy! Gellon len covad. Én Legolas vagyok, a Bakacsinerdőből, s bár nem kedvelem e vidéket, Szarumán közelgő hordáit még kevésbé. Mit nem adnék, ha itt lenne még száz fajtársam! Túl kevesen vagyunk, túl kevesen… Szükségünk lesz a segítségedre, Parancsnok, még ha csupán néhány levél vagyunk is az erdőben. Gyere, megmutatom, hol lesz íjainknak a legnagyobb hasznát venni…
+dlga_start:hd_defense_01.2|Örömmel látlak, atyámfia! Gimli vagyok, Glóin fia. Nagy sereg közeleg most ellenünk, de bárdom nyugtalanul pihen a kezemben, és tudom, hogy te is így érzel! Adj nekünk egy sor orktorkot, mit levághatunk, és helyet, ahol suhintani lehet, s együtt megtanítjuk nekik, mi a félelem! Szilárd lábak és kemény bárdok – ez az, ami átsegít minket az éjszakán! Ai oi! Jut majd elég mindkettőnknek. Baruk Khazâd! Khazâd ai-mênu!
+dlga_hd_defense_01:close_window|Most pihenjünk egy kicsit. Az ellenség éjfélre itt lesz.
+dlga_start:aragorn_thanks_hd|{playername} örülök hogy még élsz. Az emberek kimerültek a csatától de neked köszönhetően meglátják egy új nap hajnalát. A hegyilakók megadták magukat és munkára fogjuk őket hogy helyrehozzák a rosszat amiben részt vettek majd remélem visszatérnek saját földjeikre. Könnyen megtévesztette őket Szarumán mert sokat elvettek tőlük és sokat kell még visszaadni nekik később meglátjuk mit tehetünk értük.
+dlga_aragorn_thanks_hd:close_window|Remélem, útjaink még keresztezik egymást, {playername}. Most búcsút intek, mert sürgős ügyben kell indulnom. A reggel első fényével nekünk, barátaimmal el kell mennünk, és egy sötét úton kell kijutnunk ebből a völgyből. {playername}, rosszak az idők, de bátorságod minden szabad nép szívét megörvendezteti Északtól Délig. Harcolj jól, és talán még találkozunk a sötétség túlsó oldalán!
+dlga_start:close_window.1|Nemsokára ismét útra kelek, {playername}, egy nehéz úton, melyet sokan hosszú évek óta nem jártak. Remélem, a te utad könnyebb lesz, barátom. Addig talán szeretnél betérni a Helm-szurdok mély barlangjaiba, melyről társaim, Gimli a törp, sokat mesélt.
+dlga_start:close_window.2|Jártál már a hátsó barlangokban? Aglarond Csillogó Barlangjaiban, {playername}! Öröm a szerencse, amely ide vezette a lábnyomodat!
+dlga_start:close_window.3|Megfogadtam barátomnak, Gimli, Glóin fiának, hogy a háború végeztével visszatérek ide vele, és magam is megtekintem Aglarond Csillogó Barlangjait. Ha van rá időd, {playername}, te is megteheted ezt, mielőtt újra útra kelnél. Egy rövid szünet a harcok közepette!
+dlga_start:treebeard_isengard_1|{s2} Ha, hmmm! Üdv, barátaim! Érkezésetek jól jött. Van itt egy varázsló, akit el kell intéznünk, de előbb le kell csapnunk a tornyában. Nem lesz kellemes menet. Kő, balta és tűz vár ránk bent. Segítetek nekünk?
+dlga_treebeard_isengard_1:treebeard_isengard_2|Igen, Gandalf küldött. Ostromoljuk meg vasudvar gyűrűjét!
+dlga_treebeard_isengard_2:close_window|Nagyszerű, kövessetek hát. Már áttörtünk a gyűrűn. Most takarítsunk bent! Hoom, hom! Hoom, hom! Isengard felé jövünk a pusztítással! Pusztítással jövünk, pusztítással jövünk!
+dlga_start:close_window.4|Hoom, hom! Hoom, hom! Isengard felé jövünk a pusztítással! Pusztítással jövünk, pusztítással jövünk!
+dlga_start:close_window.5|Köszönöm a segítségedet. Azt kell mondanom, egészen kielégítő volt azokat az orkokat kezelni. Nagy segítségünkre voltál. De most, hm, van munka, amiben te nem tudsz segíteni. Talán érdemes lenne találnod egy biztonságos helyet Isengardon kívül, és várni, amíg végeztünk.
+dlga_start:treebeard_isengard_3|Üdv újra. Jó látni, hogy épségben és szárazon vagy. Azt kell mondanom, hosszú időbe telik majd, míg eltakarítjuk Szarumán minden mocskát. De egészen jól haladtunk, hmm, igen. Többet már nem árthat.
+dlga_treebeard_isengard_3:close_window|Ho, hmm, nagy köszönettel tartozom neked. Nem számítottam rá, hogy másoktól kapok segítséget, és jó megtudni, hogy a Mi Utolsó Határunk talán mégsem végződik olyan rosszul! Mivel a faölőt elintéztük, most már képesek leszünk egy ideig biztonságban tartani Rohan északi határát.
+dlga_treebeard_isengard_3:close_window.1|Hmm? Ho, hmm… ah. Tehát egész Rohanból jöttél, igaz? Hmm. Hallottam híreket délről, igen. Jó hírek, minden szívet megörvendeztető hírek. Jóakarattal vagyok Théoden király iránt, és örülök, hogy olyanok segítették őt, mint ti a veszély órájában, hmm! Itt elég jól boldogultunk, és most mi Entek gondoskodunk róla, hogy Szarumán ne tehesse be a lábát Isengardon túl, engedélyünk nélkül. Az Isen újra jól folyik, és hamarosan remélem, hogy a víz ismét iható lesz. Ha, hm, érzem, hogy dalra fakadok. Egy dal a régi időkről… a régi fákról, akiket ismertem…
+dlga_start:ent_encounter|Hrooom! Mit akarsz?
+dlga_ent_encounter:close_window|Üdv, faőr! Köszönöm, hogy biztonságban tartod ezeket a határokat. Nem állok az utadba.
 dlga_start:treebeard_introduce_1|(Rádöbbensz hogy most egy igazán rendkívüli teremtményt bámulsz. Nagyon magas és merev lábú, kéregszerű bőrrel és lomb hajjal. Moha is található teste egyes részein. De jelenleg egyiket sem veszed észre ezekből, csak a szemeit. A mély szemei felmérnek téged, lassan és ünnepélyesen, de nagyon élesen és áthatóan. Azt hiszed hogy barnák, zöld fénnyel burkolva, mintha egy hatalmas kút lenne mögöttük, megtelve évszázadok emlékeivel és hosszú, lassú, szilárd gondolkodással. De a felszínen a szemei a jelennel csillognak... mint ahogy a nap csillog a fa külső levelein, vagy a nagyon mély tó hullámain.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(Mondani akarnál valamit, de egy furcsa, fojtogató érzés fog el ahogy a levegő túl léghiányos vagy túl híg lesz ahhoz, hogy lélegezni lehessen... egy már-már kétségbeesett légvétellel sikerül leráznod magadról az érzést és a hatalmas fajellegű lény egy kicsit kevésbé bámul rád hevesen. A teremtmény továbbra is téged néz, és észreveszed hogy a többi, hatalmas fa lény is téged figyel, mintha arra számítanának, hogy megszólalsz...)
 dlga_treebeard_introduce_2:treebeard_introduce_3|Bocsássa meg a tolakodásomat... Csak egy megviselt utazó vagyok, aki menedéket keres a mostanában történtek elől... Az én nevem {playername}. Megkérdezhetem, hogy ki is vagy te?
@@ -159,8 +159,8 @@ dlga_ziggy_no:close_window.1|Rendben van, Parancsnok.
 dlga_ziggy_yes:ziggy_choose_prisoners|Kitűnő. Melyik példányokat adnád oda?
 dlga_ziggy_choose_prisoners:ziggy_no|Nincs semmi, amit felajánlhatnék.
 dlga_ziggy_chosen_prisoner:ziggy_ritual|Köszönöm, Parancsnok! Egy pillanat... á, igen, ez megteszi... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-; dlga_ziggy_chosen_prisoner:ziggy_ritual.1|What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-; dlga_ziggy_ritual:ziggy_ritual_succeed|Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.
+dlga_ziggy_chosen_prisoner:ziggy_ritual.1|Mi van itt? Büszke, ellenálló? Félő, ahogy illene? Most adok nektek valódi okot a félelemre! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_ritual:ziggy_ritual_succeed|Ó igen… igen! Tekints rá, Parancsnok! Nézd, mit értem el én, Zigûrphel! Hallottál az Angband farkasairól? Draugluinról, vagy a hatalmas Carcharothról, aki megölte Huant, Valinor Kutyáját? Ahogy a Sötét Úr el tudta hajlítani és fogságba ejteni a lelket, hogy saját céljaira szolgáljon, én is megkötöttem egy alacsonyabb szellemet, és árnyékok nagy állataként a szolgánkká tettem! Ez persze nem olyan nagy, mint Draugluin első kölykei, semmihez sem fogható, de megfelel majd.
 dlga_ziggy_ritual:ziggy_ritual_succeed.1|Mindig hatalmas öröm az ellenfeleinket térdre kényszeríteni.
 dlga_ziggy_ritual:ziggy_choose_prisoners|Áh! Ez itt túl gyenge! Használhatatlan! Adj nekem egy erősebbet, Parancsnok, egyet amelyik nem fog elbukni!
 dlga_ziggy_ritual_succeed:close_window|És persze, engedj nekem nem többet mint egy kis pihenést; aztán a gondjaimra bízhatsz egy másik fogolyt. A többit majd én megoldom.
@@ -196,8 +196,8 @@ dlga_player_hire_troll_buy_done:close_window|Viseld gondját ennek a nagy fickó
 dlga_player_hire_troop:close_window.1|Szükségem lenne némi kiképzésre.
 dlga_player_hire_troop:tld_sell_prisoners|Hoztam neked néhány foglyot.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Nézzük a nyomorult szemeteket.
-; dlga_player_hire_troop:tld_sell_prisoners_all|I want you to take all the prisoners I have with me.
-; dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Very well, I'll take them all to our dungeons.
+dlga_player_hire_troop:tld_sell_prisoners_all|Azt szeretném, hogy vidd el az összes foglyot, aki velem van.
+dlga_tld_sell_prisoners_all:player_hire_troop_nextcycle|Rendben, elviszem mindet a börtöneinkbe.
 dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Hadd ellenőrizzem a várbörtön nyilvántartását...
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Meggondoltad magad, eh?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Megbizonyosodom róla hogy nem fognak elszökni a várbörtönünkből.
@@ -232,8 +232,8 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|Ne támadj! Megadjuk m
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|A végsőkig harcolni fogunk!
 dlga_party_encounter_offer_dont_fight:close_window|Tartozok neked egyel, nemde. Nos... jól van, legyen. Elengedlek, most az egyszer.
 dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha. De én harcolni akarok veled.
-; dlga_start:close_window.13|Mmmh...
-; dlga_start:close_window.14|The lord is in deep thought and must not be disturbed!
+dlga_start:close_window.13|Mmmh...
+dlga_start:close_window.14|Az úr mélyen elgondolkodott, és nem szabad zavartatni!
 dlga_start:close_window.15|El veled, hitvány koldus.
 dlga_start:lord_start|Ez csak nem az én bátor bajnokom, {playername}...
 dlga_start:lord_start.1|Jó újra látni téged, {playername}...
@@ -273,7 +273,7 @@ dlga_lord_start:raid_village_failed|Láttuk az embereidet fejvesztve menekülni 
 dlga_raid_village_failed:close_window|Legközelebb jobban fog sikerülni.
 dlga_lord_start:lord_target_lord_failed|Hallottam hogy elbuktál abban amire megkértelek. Csalódáskeltő, {playername}.
 dlga_lord_target_lord_failed:close_window|Legközelebb jobban fog sikerülni.
-; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superior force.
+dlga_lord_start:lord_generic_mission_completed.5|A katonáid tanúi voltak a bátorságodnak a csatában, {playername}. Megmutattad nekik, hogy mi vagyunk a felsőbbrendű erő.
 dlga_lord_start:kill_quest_failed|Hallottam hogy elbuktál abban amire megkértelek. Csalódáskeltő, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Az embereid tanúi lehettek a bátorságodnak csata közben, {playername}. Kiérdemelted a tiszteletem.
 dlga_kill_quest_failed:close_window|Legközelebb jobban fog sikerülni.
@@ -294,7 +294,7 @@ dlga_lord_start:lord_hunt_refugees_failed|{playername}, a kémeink jelentették 
 dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|Csuszamlósak voltak, mester. Nem tudtam a nyomukra akadni.
 dlga_lord_hunt_refugees_failed_1:lord_pretalk|Talán nem vagy alkalmas arra hogy hadseregnek parancsolj amik majd térdre kényszerítik a világot ha még a betegeket és sérülteket sem tudod legyőzni!^^ Takarodj, és imádkozz hogy adjak majd második esélyt.
 dlga_lord_start:lord_generic_mission_completed.9|Legyek átkozott, de megcsináltad, {playername}. Az összes rabszolgát visszahoztad és máris az aratást készítik elő. Minden kétséget kizárólag megérdemelted a jutalmad. Tessék, vigyed, a jókívánságaimmal együtt.
-; dlga_lord_start:lord_generic_mission_completed.10|Well done, but you've done it, {playername}. The slaves are back and they're busy preparing for the harvest. I guess you had to kill some of them in order to make the others obey. Can't be helped, but I'll only reward you for those that have returned, not the ones you left rotting in the wilderness.
+dlga_lord_start:lord_generic_mission_completed.10|Ügyes munka, de sikerült, {playername}. A rabszolgák visszatértek, és épp a betakarításra készülnek. Gondolom, néhányukat meg kellett ölnöd, hogy a többiek engedelmeskedjenek. Nem lehet mit tenni, de csak azokért kapod a jutalmat, akik visszatértek, nem azokért, akiket a pusztában hagytál rothadni
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. Türelmesen vártam a a rabszolgáimra, de egyik se tért még vissza. Mik a mentségeid? Átjártak az eszeden egyszerű állatok, vagy egyszerűen te vagy inkompetens?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Bocsásson meg, {s65}, ezek a rabszolgák sikamlósak voltak mint az angolnák.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmm, ez aligha mentség a kudarcodra, {playername}. Most, ha megbocsájtasz, új embereket kell elfognom hogy a földeken dolgozzanak, még mielőtt mind éhen halnánk.
@@ -328,7 +328,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Nos, ő a tiéd.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Attől félek, hogy más terveim vannak neki.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Tökéletes! Elküldöm az embereimet, hogy lóhalálában elvigyék a börtönünkbe. Ez egyértelműen szolgálni fogja az ügyünket.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Kár, pedig igazán értékes lett volna a számunkra, {playername}.
-; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
+dlga_tld_intro_1:lord_pretalk|Háborús útmutató:\n^^- A frakciók csak akkor indítanak ostromot, ha elég erősek.^- A legtöbb települést csak akkor lehet ostromolni, ha a frakciójuk eléggé meggyengült. Általában a fővárosokat ostromolják utoljára.^- Ha egy frakció elveszíti a fővárosát, vereséget szenved.^- A frakciók erőt nyernek a csatákban aratott győzelmekből és bizonyos kulcsfontosságú települések birtoklásából.^- A frakciók erőt veszítenek a csatákban elszenvedett vereségek vagy települések elvesztése miatt.^- Egyes küldetések vagy események befolyásolhatják a frakciók erejét.^- A frakciók jelenlegi erejét a „Jelentések” menüben lehet összehasonlítani.^- További TLD útmutatókért lásd az Információs oldalakat.
 dlga_lord_start:lord_pretalk|Áh, üdvözöllek, {s24}.^Biztos tudod már, hogy {s12}. A feladatod az, hogy küzdj az ügyünkért, {playername}. Miután kiérdemled a bizalmamat [level {reg1}], azt is megfogom engedni, hogy használhasd azt a ládát, hogy majd tárolhasd benne a személyes tárgyaidat.
 dlga_lord_start:lord_talk|Mi az?
 dlga_lord_pretalk:lord_talk|Volna még más is?
@@ -375,23 +375,23 @@ dlga_ring_hunters_start:ring_hunters_check|{playername}, nagyszerű tetteket haj
 dlga_ring_hunters_check:ring_hunters_1|Igen, nagyuram. Van velem egy csapat képzett, harcot járt katona. Készen állunk bármire. 
 dlga_ring_hunters_check:ring_hunters_check_failed|Attól tartok nem, nagyuram.
 dlga_ring_hunters_check_failed:lord_pretalk|Akkor nem állsz készen a feladatra még, {playername}. Menj és gyűjtsd magadnak még több egységet.
-; dlga_ring_hunters_1:ring_hunters_2|Excellent. The North has recently been plagued by a marauding band of outlaws who raid villages and ambush travellers, searching for rings of any kind.^^   You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.^^   The first is returning with loot to their encampment on the eaves of Mirkwood. The other advances towards Beorn's House in great numbers and I fear what may happen if they are left unimpeded.
+dlga_ring_hunters_1:ring_hunters_2|Kiváló. Az északi vidéket nemrég egy fosztogató banditacsoport sújtotta, akik falvakat rabolnak és utazókat lesnek, bármilyen gyűrű után kutatva.^^ A te feladatod, hogy felkutasd ezeket a banditákat, és véget vess a küldetésüknek. Az előző fosztogatásuk túlélői két csoportot jelentettek.^^ Az egyik visszatér zsákmányával a Mirkwood szélére felállított táborukba. A másik nagy számban halad Beorn háza felé, és félek, mi történhet, ha akadálytalanul hagyjuk őket.
 dlga_ring_hunters_2:ring_hunters_what|Nagyuram, mit kereshetnek?
 dlga_ring_hunters_2:ring_hunters_accept|Nagyuram, megfogok tenni tőlem telhetőt hogy megállítsam ezeket a... 'Gyűrű Vadászokat'.
 dlga_ring_hunters_2:ring_hunters_reject|Még nem állok készen ilyen feladatra.
 dlga_ring_hunters_accept:close_window|Bátorsággal a szívedben és éles acéllal a kezedben így is lesz, {playername}. Várni fogjuk sikered hírét.
 dlga_ring_hunters_reject:lord_pretalk|Értem. Szólj ahogy készen állsz, de siess, nem akarjuk hogy sikerrel járjanak.
-; dlga_ring_hunters_what:ring_hunters_2|Designs of the Enemy are hidden from us, but we can see thes ruffians are bent on finding what they are looking for.  I cannot reveal all that we know, for much hangs in the balance and secrecy is paramount. Whatever they seek must be a powerful weapon, one to be used to cause more destruction in the Dark Lord's name.
-; dlga_ring_hunters_what:ring_hunters_2.1|The Dark Lord previously sent emissaries to different dwarven clans, asking about the rings of power given to our people. These bandits may be looking for them, or others like them...   Whether true or not, they must not fall into the Dark Lord's hands.
-; dlga_lord_talk:ring_hunter_party_defeated|My lord, I come bearing ill news... Though I have defeated the Ring Hunters terrorizing the villages, their leaders were not there. They may have found what they were looking for
-; dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|This is not ill news,{playername}. We have heard of your great victory! The lives of those villagers matter more to our cause than any weapon. As we speak, the Beornings are amassing their strength, invigorated by your victory.     Moreover, we don't believe that these Ring Hunters found what they are looking for. If it was the weapon we feared, then we would have felt something... a disturbance.
-; dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|I am glad, then. Whatever this weapon may have been... they may still be looking for it. I will remain vigilant and remain on the lookout for more of these Ring Hunters.
-; dlga_ring_hunter_quest_end:close_window|We all will. Thank you once more for your service, {playername}.
-; dlga_lord_talk:ring_hunter_lair_defeated_elf|My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able to defeat their leaders in their lair. They had this in their possession.
-; dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|I see, a ring, but not THE ring. Not even one of the great rings, yet not a mere trinket either. There is some power woven into it.
-; dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Then we were right to snatch it from the Dark Lord’s fingers, before he could use it to spread his Shadow over the land and have it seep into the hearts of many.
-; dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|You must keep this ring and use it to fight the Enemy and his armies. I trust you to use it well.
-; dlga_ring_hunter_lair_quest_end:close_window|This is an honour, my Lord, thank you! My heart will stay true and my arm strong.
+dlga_ring_hunters_what:ring_hunters_2|Az Ellenség tervei rejtve maradnak előttünk, de látjuk, hogy ezek a gazemberek elszántak a keresettük megtalálásában. Nem árulhatok el mindent, amit tudunk, mert sok minden forog kockán, és a titoktartás elsődleges. Amit keresnek, annak hatalmas fegyvernek kell lennie, olyannak, amit a Sötét Úr nevében további pusztításra lehet használni.
+dlga_ring_hunters_what:ring_hunters_2.1|A Sötét Úr korábban küldötteket menesztett különböző törzsi törpékhez, hogy érdeklődjenek a hatalom gyűrűi iránt, melyeket a népünk kapott. Ezek a banditák lehet, hogy ezeket keresik, vagy hasonlókat… Igaz legyen vagy sem, nem kerülhetnek a Sötét Úr kezébe.
+dlga_lord_talk:ring_hunter_party_defeated|Uram, rossz hírekkel jövök… Bár legyőztem a falvakat terrorizáló Gyűrűvadászokat, a vezetőik nem voltak ott. Lehet, hogy megtalálták, amit kerestek.
+dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|Ez nem rossz hír, {playername}. Hallottunk a nagy győzelmedről! Ezeknek a falusiaknak az élete fontosabb az ügyünk számára bármely fegyvernél. Ahogy beszélünk, a Beorningok gyűjtik erejüket, fellelkesítve a győzelmed által.\n\nRáadásul nem hisszük, hogy ezek a Gyűrűvadászok megtalálták, amit kerestek. Ha az a fegyver lett volna, amitől féltünk, már éreztünk volna valamit… valami zavaró hatást.
+dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|Örülök hát. Bármi is legyen ez a fegyver… lehet, hogy még mindig keresik. Éber maradok, és figyelemmel kísérem a további Gyűrűvadászokat.
+dlga_ring_hunter_quest_end:close_window|Mindannyian így leszünk. Még egyszer köszönöm a szolgálatodat, {playername}.
+dlga_lord_talk:ring_hunter_lair_defeated_elf|Uram, bár nem tudtam megakadályozni a falvakat terrorizáló Gyűrűvadászokat, sikerült legyőznöm a vezetőiket a rejtekhelyükön. Ez náluk volt.
+dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|Látom, egy gyűrű, de nem AZ a gyűrű. Még a nagy gyűrűk egyike sem, de nem is csupán egy apró ékszer. Valami hatalom van belefonva.
+dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Akkor helyesen cselekedtünk, hogy kicsavartuk a Sötét Úr ujjai közül, mielőtt felhasználhatta volna, hogy árnyékát a földre terjessze, és az sokak szívébe hatoljon.
+dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|Ezt a gyűrűt meg kell őrizned, és használnod kell az Ellenség és seregei ellen. Bízom benne, hogy jól használod majd.
+dlga_ring_hunter_lair_quest_end:close_window|Ez megtiszteltetés, Uram, köszönöm! A szívem hű marad, a karom erős.
 ; dlga_start:ring_hunters_party_attack|Look here, men. More lambs to the slaughter.
 ; dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Your rampage has come to an end.
 ; dlga_ring_hunters_party_attack_2:close_window|Check their packs and their fingers. Save one to torture. Everyone else is for eating!

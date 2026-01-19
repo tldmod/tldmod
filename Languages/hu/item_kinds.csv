@@ -65,9 +65,9 @@ itm_wargarmored_2b|Páncélozott varg
 itm_wargarmored_2c|Páncélozott varg
 itm_wargarmored_3a|Páncélozott varg
 itm_warg_reward|Böszme varg
-; itm_animal_big|Big Animal
-; itm_animal_small|Small Animal
-; itm_troll_weapon_long|Giant Halberd
+itm_animal_big|Nagy állatt
+itm_animal_small|Kis állatt
+itm_troll_weapon_long|Óriáspárbajbárd
 itm_troll_weapon_dmg|Óriási buzogány
 itm_tree_trunk_club_a|Fatörzs
 itm_giant_mace|Óriási buzogány
@@ -96,7 +96,7 @@ itm_hood_black|Fekete csuklya
 itm_hood_green|Zöld csuklya
 itm_hood_grey|Szürke Csuklya
 itm_hood_leather|Börcsuklya
-; itm_mail_coif|Mail Coif
+itm_mail_coif|Láncing fejvédő
 itm_axe_a|Északlakó balta
 itm_axe_b|Északlakó szakállas balta
 itm_axe_c|Északlakó balta
@@ -134,12 +134,12 @@ itm_harad_javelin|Haradi gerely
 itm_gondor_javelin|Gondori gerely
 itm_rohirrim_throwing_axe|Északlakó dobófejsze
 itm_loss_throwing_axes|Lossernachi dobófejsze
-; itm_free_dunedain_helm_a|Arnor Light Helm
+itm_free_dunedain_helm_a|Könnyű sisak páncél
 itm_free_dunedain_helm_b|Arnoriai sisak
 itm_arnor_helm_c|Arnoriai díszes sisak
 itm_arnor_helm_b|Arnoriai sisak
-; itm_arnor_helm_a|Arnor Light Helm
-; itm_arnor_light_a|Dunedain Ranger Jerkin
+itm_arnor_helm_a|Könnyű sisak páncél
+itm_arnor_light_a|Dunedaini Felderítő Mellény
 ; itm_arnor_light_b|Dunedain Ranger Mail
 ; itm_arnor_med_a|Dunedain Ranger Coat
 ; itm_arnor_med_b|Dunedain Mail

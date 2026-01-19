@@ -7,7 +7,7 @@ qst_raise_troops_text|{s9} megkért hogy képezz ki {reg1} {s14}t és vidd el {n
 qst_escort_messenger|Kísérd el a hírnököt {s14} városába
 qst_escort_messenger_text|Semmi
 qst_hunt_down_fugitive|Vadászd le {s4}t
-; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the traitor named {s4}. He is currently believed to be at {s3}.
+qst_hunt_down_fugitive_text|{s9} azt kérte, hogy üldözd le az árulót, akit {s4}-nek hívnak. Jelenleg úgy vélik, hogy {s3}-n tartózkodik.
 qst_bring_back_runaway_serfs|Vidd vissza a szökött parasztokat
 qst_bring_back_runaway_serfs_text|{s9} megkért hogy rángass vissza három csoportnyi menekülő rabszolgát {s2} városába. Azt mondta mind a három {s3} irányába szaladt.
 qst_follow_spy|Kövesd a kémet a találkozóra
@@ -61,8 +61,8 @@ qst_troublesome_bandits|Vadászd le a problémás koboldokat
 qst_troublesome_bandits_text|A {s4}i {s9} megkért rá hogy vadászd le a problémás koboldokat, akik a város környékén garázdálkodnak.
 qst_deal_with_looters|Bánj el a törzsi orkokkal
 qst_deal_with_looters_text|{s4} elöljárója megkért hogy bánj el {s4} környékén garázdálkodó törzsi orkok csapataival.
-; qst_deal_with_night_bandits|Deal with Night Bandits
-; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
+qst_deal_with_night_bandits|Értsd el az Éjjeli Fosztogatókat
+qst_deal_with_night_bandits_text|{s14} idős embere azt kérte, hogy intézkedj az éjjeli fosztogatók ellen {s14}-n.
 qst_deliver_food|Szállíts {s3} településébe {reg5} egységnyi ételt
 qst_deliver_food_text|{s3}i {s9} megkért rá hogy hozz neki {reg5} adagnyi ételt 10 napon belül.
 qst_deliver_iron|Szállíts {s3} településébe {reg5} adagnyi {s6} tárgyat

@@ -5,10 +5,10 @@ mno_faction_intros|Orta Dünya'nın farklı tarafları hakkında bilgi edinin
 mno_go_bback|Geri Dön
 menu_start_phase_2|^^^^^ Orta Dünya. Doguda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çagdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
 mno_go_forth|Seçtigin yolda ilerle...
-; mno_change_war_start_mode|War Starts:  {s7}
-; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
+mno_change_war_start_mode|Savaş Başlıyor {s7}
+mno_toggle_tutorial|Açılır Ögreticiler: {s7}
 mno_change_tld_options|TLD ayarlarını degiştir
-; mno_see_info_pages|TLD game concepts.
+mno_see_info_pages|TLD oyun kavramları
 menu_start_game_3|^^^^^^^^Senaryonu seç:
 mno_custom_battle_scenario_1|Çatışma, Gondor, Harad'a karşı
 mno_custom_battle_scenario_12|Savaş için tarafları seç
@@ -127,7 +127,7 @@ mno_camp_action|Bir nesne kullan.
 mno_camp_wait_here|Burada bir süreligine kamp kur.
 mno_camp_options|TLD ayarını degiştir
 mno_Dev_Menu|Geliştirici Menüsü
-; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+menu_dev_menu|Bunlar, oynarken kullanabileceginiz birçok hile/araç saglayan geliştirme seçenekleridir. Ancak, bu bazı tamamlanmamış etkinlikler, tetikleyiciler ve kampanya degişikliklerine yol açabilir; oyun dengesini bozabilir. Kendi sorumlulugunuzda kullanın! Ayrıca, hata raporu gönderirken Geliştirici Menüsü’nü kullandıgınızı belirtin.
 mno_cheat_enable|Hile/modlama ayarlarını etkinleştir.
 menu_game_options|^^^^^^^^Degiştirmek için bir ayara tıklayın:
 mno_game_options_war_level_start|Savaşın Başlayacagı Seviye: {s1}
@@ -160,8 +160,8 @@ mno_strat_tweaks_siege_reqs|Kuşatma gücü gereklilikleri: {s7}
 mno_strat_tweaks_siege_relax_rate|Kuşatma gücü gerekliliginin gevşeme oranı: {reg1}
 mno_strat_tweaks_regen_rate|Güç Yenilenme oranı: {s7}
 mno_strat_tweaks_siege_regen_limit|Taraf güç yenilenmesi {reg1} civarında yavaşlıyor.
-; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {reg0}%
-; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {reg0}%
+mno_strat_tweaks_influence_gain_rate|Etkileşim kazanma hızı: {reg0}%
+mno_strat_tweaks_rank_gain_rate|Rütbe kazanma hızı: {reg0}%
 mno_strat_tweaks_back|Ayarlar menüsüne dön.
 menu_camp_action|^^^^^^^^ Hangi Eşya?
 mno_camp_drink_water|Ent Suyundan İç !
@@ -255,11 +255,11 @@ menu_besiegers_camp_with_allies|{s1} kuşatma altında. Kuşatmacıların kampı
 mno_talk_to_siege_commander|Komutan ile görüşme talep et.
 mno_join_siege_with_allies|Sıradaki saldırıya katıl
 mno_join_siege_stay_back|Askerlerine sonraki mücadelede sensiz savaşmalarını emret.
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+menu_moria_must_escape|^^Kitap, Cücelerin Moria’ya yeniden yerleşme çabalarının son girişimini anlatıyor; görünüşe göre bu girişim tüm katılımcılar için korkunç bir ölümle sonuçlanmış. Karanlık kaderlerini düşünürken, aniden sert çıglıklar ve çok sayıda ayagın aceleyle geldigi sesi duyarsın.^ Geliyorlar!^ Hızla odadan çıkarak, seslerin salondan geldigini fark edersin. Başka çaren yok, dar ve dolambaçlı bir tünele girip aşagıya dogru kaçmak zorundasın… ^...^Birkaç saat sonra, Moria’nın derinliklerinde kayboldugunu ve bir çıkış yolu bulman gerektigini anlarsın.
 mno_moria_exit_scene|Çıkış yolunu bul!
 menu_castle_outside|Dışarıdasın {s2}.{s11} {s3} {s4}
 mno_cheat_steal_book_door|Kitabı al
-; mno_moria_enter|Return into main hall of Moria through the secret entrance
+mno_moria_enter|Gizli girişten Moria’nın ana salonuna dön
 mno_moria_enter_door|Moria'ya gir
 mno_castle_start_siege|{reg6?kasaba:kale}.'yi kuşat.
 mno_castle_leave|Ayrıl.
@@ -301,23 +301,23 @@ mno_aw_chamber_door|Kapıyı aç.
 mno_trade_with_arms_merchant|{s40}'ı ziyaret et.
 mno_trade_with_horse_merchant|{s41}'i ziyaret et.
 mno_town_prison_door|Egitim Alanları'na gider
-; mno_talk_to_healer|Speak with {s40}.
+mno_talk_to_healer|{s40} ile konuş.
 mno_talk_to_castle_commander|{s61} kışlasını ziyaret et.
 mno_speak_with_elder| {s6} ile konuş
-; mno_town_ask|Ask around for persons of import...
-; mno_player_initiate_siege|Attack the {reg6?town:castle}...
+mno_town_ask|Önemli kişiler hakkında soruştur…
+mno_player_initiate_siege|{reg6?town:castle}’a saldır…
 mno_isengard_underground|Yeraltı magaralarına git.
 mno_isengard_underground_door|Yeraltı magaralarına git
 mno_tirith_toplevel|Zirveye tırman.
 mno_tirith_toplevel_door|Kalenin tepesine çık
 mno_erebor_gates|Büyük Kapıları ziyaret et.
 mno_erebor_gates_door|Büyük Kapılara git.
-; mno_glittering_caves|Go to the Glittering Caves.
-; mno_glittering_caves_door|Go to the Glittering Caves
+mno_glittering_caves|Parıldayan Magaralara git.
+mno_glittering_caves_door|Parıldayan Magaralara git.
 mno_town_leave|Ayrıl...
 mno_town_leave_door|Bölgeden Ayrıl
 mno_town_find_NPCs_cont|Yap.
-; menu_town_find_NPCs_end|Talking to the people of {s2}, {reg3?you have found:{s3} has found} out the locations of the local stables and warehouse, the smithy, {s4} ^^{s6}
+menu_town_find_NPCs_end|{s2} halkıyla konuşurken, {reg3?sen ögrendin:{s3} ögrendi} yerel ahırlar ve depo, demirci atölyesi, {s4} ^^{s6} yerlerinin yerlerini ögrenirsin.
 menu_player_initiated_siege_result|{s2} sancagı altındaki bu merkeze saldırdın.
 menu_disembark|Karaya çıkmak mı istiyorsun?
 mno_disembark_yes|Evet.
@@ -415,7 +415,7 @@ mno_cb_mordor3|Haradrim
 mno_cb_mordor4|Dogulular
 mno_cb_mordor5|Moria
 mno_cb_mordor6|Gundabad
-; mno_cb_mordor7|Rhûn
+mno_cb_mordor7|Rhûn
 mno_cb_mordor8|Korsanlar
 mno_rescue_mission|Gecenin yardımıyla büyücünün sıgınagına sız.
 mno_next_rescue_scene_door|İleri marş!
@@ -447,4 +447,4 @@ menu_build_your_scene|Aşagıda verilen yuvalardan birini ve oyun düzenleme mod
 mno_back_3dot|Geri...
 mno_back|Geri dön
 mno_next|Sonraki...
-; mno_previous|Previous...
+mno_previous|Önceki...

@@ -60,8 +60,8 @@ qstr_Rotate|Rotacionar
 qstr_Close|Fechar
 qstr_Faction_Side:^^Campa|Lado da Facção:^^Dificuldade da Campanha*:^^Teatro Natal:^^Marechal:^^Inimigos:^^
 qstr_Campaign_Difficulty_|Dificuldade de Campanha é baseada na força inicial da facção, inimigos no Teatro,^ e árvore de tropas e do equipamento da facção.
-qstr_Rallies:|Reagrupamentos:
-qstr_View_Keybinds__Press|Ver Teclas de Atalho (Pressione Insert)
+qstr_Rallies:|Grupos:
+qstr_View_Keybinds__Press|Teclas de Atalho(Aperte Insert)
 qstr_What_do_you_fight_fo|Pelo o quê você luta?
 qstr_Go_Back...|Voltar...
 qstr_Learn_about_the_diff|Aprenda sobre as diferentes facções da Terra-Média
@@ -74,8 +74,8 @@ qstr_Dwarf|Anão
 qstr_Whom_Do_You_Serve?|A quem você serve?
 qstr_SAURON_of_Mordor_The|Sauron de Mordor, o Senhor dos Anéis
 qstr_SARUMAN_of_Isengard_|Saruman de Isengard, a Mão-Branca
-qstr_an_ORC^_serving_the_|um Orc,^ servindo o Olho Sem Pálpebra
-qstr_an_URUK^_the_new_bre|um Uruk,^ a nova raça de Orcs
+qstr_an_ORC^_serving_the_|um Orc,^ servindo ao Olho
+qstr_an_URUK^_the_new_bre|um Uruk,^ a nova raça Orc
 qstr_a_MAN^_subjugated_by|um Homem,^ subjugado por Sauron
 qstr_an_ORC^_serving_the_W|um Orc,^ servindo a Mão-Branca
 qstr_one_of_the_URUK_HAI^|um dos URUK-HAI,^ criado em Isengard

@@ -55,10 +55,10 @@ ui_crouch|çömelmek
 # swy: added from this spreadsheet, as requested by our translators:
 #      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
 ui_are_you_sure_you_want_to_import_the_character|Karakteri içe aktarmak istediginizden emin misiniz?
-; ui_explanation_strength|Strength: Every point adds +1 to hit points. The following skills can not be developed beyond 1/3 of Strength: Ironflesh, Power Strike, Power Throw, Power Draw.
+ui_explanation_strength|Güç: Her puan +1 Can Puanı ekler. Aşagıdaki yetenekler, Güç degerinin 1/3’ünden fazla geliştirilemez: Demir Beden, Güçlü Darbe, Güçlü Fırlatma, Güçlü Germe.
 ui_explanation_agility|Çeviklik: Her puan beş silah puanı verir ve silah hızını% 0,5 artırır. Aşagıdaki beceriler Çevikligin 1 / 3'ünün ötesinde geliştirilemez: Silah Ustası, Kalkan, Atletizm, Binicilik, Atlı Okçuluk, Yagma.
-; ui_explanation_intelligence|Intelligence: (Wisdom) The deep understanding of nature and crafts. Every point to intelligence immediately gives one extra skill point, and slightly increases XP gain on some occasions. The following skills can not be developed beyond 1/3 of Intelligence: Bargainer, Tracking, Tactics,  Path-finding, Spotting, Inventory Management, Wound Treatment, Surgery, First Aid, and Wildcraft.
-; ui_explanation_charisma|Charisma: (Will) The power to inspire or dominate. Improves your standing with people and factions. Each point increases your party size limit by +1 (0.5 for companions). The following skills can not be developed beyond 1/3 of Charisma: Prisoner Management, Trainer, Leadership.
+ui_explanation_intelligence|Zeka (Bilgelik): Doga ve zanaatler hakkında derin bir anlayışı temsil eder. Zekaya verilen her puan anında 1 ek Yetenek Puanı kazandırır ve bazı durumlarda XP kazanımını az da olsa artırır. Aşagıdaki yetenekler Zeka degerinin 1/3’ünden fazla geliştirilemez: Ticaret, İz Sürme, Taktik, Yön Bulma, Gözetleme, Envanter Yönetimi, Yara Bakımı, Cerrahlık, İlk Yardım ve Dogacılık.
+ui_explanation_charisma|Karizma (İrade): İlham verme ya da hükmetme gücünü temsil eder. İnsanlar ve fraksiyonlarla olan itibarını artırır. Her puan, grup büyüklügü sınırını +1 artırır (yoldaşlar için +0,5). Aşagıdaki yetenekler Karizma degerinin 1/3’ünden fazla geliştirilemez: Esir Yönetimi, Talimci ve Liderlik.
 ui_delivered_number_damage|%d hasar verildi.
 ui_mission_losses_killed|Öldürüldü
 ui_party_losses|%s :%d yaralandı --- %d öldürüldü %d

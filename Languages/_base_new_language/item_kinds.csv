@@ -302,8 +302,6 @@ itm_arnor_sword_a|Arnor Bastard Sword
 itm_arnor_sword_a_pl|Arnor Bastard Sword
 itm_arnor_sword_f|Arnor Shortsword
 itm_arnor_sword_f_pl|Arnor Shortsword
-itm_riv_helm_a|Rivendell Coif
-itm_riv_helm_a_pl|Rivendell Coif
 itm_riv_helm_b|Rivendell Archer Helm
 itm_riv_helm_b_pl|Rivendell Archer Helm
 itm_riv_helm_c|Rivendell Infantry Helm
@@ -572,8 +570,8 @@ itm_lorien_helm_b|Lorien Archer Helm
 itm_lorien_helm_b_pl|Lorien Archer Helm
 itm_lorien_helm_c|Lorien Infantry Helm
 itm_lorien_helm_c_pl|Lorien Infantry Helm
-itm_orc_coif|Orc Skullcap
-itm_orc_coif_pl|Orc Skullcap
+itm_orc_coif2|Orc Skullcap
+itm_orc_coif2_pl|Orc Skullcap
 itm_orc_greaves|Orc Chain Boots
 itm_orc_greaves_pl|Orc Chain Boots
 itm_orc_ragwrap|Orc Ragwrap
@@ -642,8 +640,16 @@ itm_uruk_pike_b|Mordor Pike
 itm_uruk_pike_b_pl|Mordor Pike
 itm_uruk_falchion_a|Uruk Falchion
 itm_uruk_falchion_a_pl|Uruk Falchion
-itm_uruk_falchion_b|Orc Great Scimitar
-itm_uruk_falchion_b_pl|Orc Great Scimitar
+itm_orc_bastard_scimitar|Orc Great Scimitar
+itm_orc_bastard_scimitar_pl|Orc Great Scimitar
+itm_orc_cleaver_a|Orc Cleaver
+itm_orc_cleaver_a_pl|Orc Cleaver
+itm_orc_scimitar_b|Orc Scimitar
+itm_orc_scimitar_b_pl|Orc Scimitar
+itm_orc_sabre_b|Orc Sabre
+itm_orc_sabre_b_pl|Orc Sabre
+itm_orc_mangler|Orc Mangler
+itm_orc_mangler_pl|Orc Mangler
 itm_isengard_sword|Isengard Sword
 itm_isengard_sword_pl|Isengard Sword
 itm_isengard_axe|Isengard Axe
@@ -682,8 +688,8 @@ itm_orc_club_b|Warg Rider Club
 itm_orc_club_b_pl|Warg Rider Club
 itm_orc_club_c|Spiky Orc Club
 itm_orc_club_c_pl|Spiky Orc Club
-itm_orc_club_d|Evil Mace
-itm_orc_club_d_pl|Evil Mace
+itm_orc_mace|Evil Mace
+itm_orc_mace_pl|Evil Mace
 itm_orc_sledgehammer|Orc Sledgehammer
 itm_orc_sledgehammer_pl|Orc Sledgehammer
 itm_orc_simple_spear|Orc Spear
@@ -752,6 +758,14 @@ itm_orc_bughelm|Orc Bughelm
 itm_orc_bughelm_pl|Orc Bughelm
 itm_orc_visorhelm|Orc Visorhelm
 itm_orc_visorhelm_pl|Orc Visorhelm
+itm_orc_coif|Evil Coif
+itm_orc_coif_pl|Evil Coif
+itm_orc_skullcap|Orc Skullcap
+itm_orc_skullcap_pl|Orc Skullcap
+itm_orc_skullhelm|Orc Skullhelm
+itm_orc_skullhelm_pl|Orc Skullhelm
+itm_orc_barbuta|Orc Nosehelm
+itm_orc_barbuta_pl|Orc Nosehelm
 itm_m_orc_light_a|Mordor Orc Light Armor
 itm_m_orc_light_a_pl|Mordor Orc Light Armor
 itm_m_orc_light_b|Mordor Orc Light Armor
@@ -1680,5 +1694,11 @@ itm_work_basket|Basket
 itm_work_basket_pl|Basket
 itm_work_basket_2|Basket
 itm_work_basket_2_pl|Basket
+itm_spider_mount|Spider
+itm_spider_mount_pl|Spider
+itm_marker_night_troop|Trait: Night Troop
+itm_marker_night_troop_pl|Trait: Night Troop
+itm_marker_berserker|Trait: Berserker
+itm_marker_berserker_pl|Trait: Berserker
 itm_torch|Torch
 itm_torch_pl|Torch

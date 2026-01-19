@@ -1,9 +1,9 @@
 skl_trade|Pazarlık
 skl_trade_desc|Demircileri ve tedarik ustalarını daha işbirlikçi yapar ve daha iyi ekipman sunar. (Grup yetenegi)
 skl_leadership|Liderlik
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
+skl_leadership_desc|Her puan, komuta edebilecegin azami asker sayısını 5 artırır (yoldaşlar için 3), ordu moralini ve savaş sırasında birlik bütünlügünü yükseltir. Daha fazla ve daha güçlü gönüllünün sana katılmasını saglar. (Kişisel yetenek)
 skl_prisoner_management|Esir yönetimi
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
+skl_prisoner_management_desc|Bu yetenegin her seviyesi, azami esir sayısını %d artırır. Esir ele geçirme ve elde tutma ihtimalini yükseltir. (Ordu yetenegi)
 skl_persuasion|Yaban Ustası
 skl_persuasion_desc|Vahşi yaşamda hayatta kalmak. Bu yetenek, partinin ormanlık arazide iken düşmandan gizlenmesini ve partinin hızını etkiler. (Grup Becerisi)
 skl_engineer|-----
@@ -15,13 +15,13 @@ skl_surgery_desc|Bu yetenege harcanan her puan grup üyelerinizin ölmek yerine 
 skl_wound_treatment|Yara bakımı
 skl_wound_treatment_desc|Grup iyileşme hızı bu yetenegin her puanı ile 20%% oranında artar.  (Grup Yetenegi)
 skl_inventory_management|Envanter yönetimi
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+skl_inventory_management_desc|Her yetenek seviyesi başına envanter kapasitesini +6 artırır. Yiyecek tüketimini azaltır. (Liderlik yetenegi)
 skl_spotting|Tespit etme
 skl_spotting_desc|Grubunuzun görüş sınırı yeteneginizin her puanı ile %10 artar. (Grup Yetenegi)
 skl_pathfinding|Yol bulma
 skl_pathfinding_desc|Yeteneginizin her seviyesi grubun haritadaki hareket hızını %3 arttırır. (Grup Yetenegi)
 skl_tactics|Taktik
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)
+skl_tactics_desc|Savaş avantajını artırır. Her seviye başına düşman birlikleri için savaşa katılma mesafesini artırır, dost birlikler için ise 3%%azaltır. (Liderlik yetenegi)
 skl_tracking|İz sürme
 skl_tracking_desc|Yol izleri hakkında daha detaylı bilgi verir.  (Grup yetenegi)
 skl_trainer|Talimci

@@ -122,12 +122,12 @@ trp_c4_rhun_veteran_swift_horseman|Rhûni veterán gyorslovas
 trp_c4_rhun_veteran_swift_horseman_pl|Rhûni veterán gyorslovasság
 trp_c5_rhun_falcon_horseman|Sólyom lovas
 trp_c5_rhun_falcon_horseman_pl|Sólyom lovasság
-; trp_i2_rhun_tribal_warrior|Rhun Tribal Footman
-; trp_i2_rhun_tribal_warrior_pl|Rhun Tribal Footmen
+trp_i2_rhun_tribal_warrior|Rhun törzsi gyalogos
+trp_i2_rhun_tribal_warrior_pl|Rhun törzsi gyalogos
 trp_i3_rhun_tribal_infantry|Rhûni törzsi harcos
 trp_i3_rhun_tribal_infantry_pl|Rhûni törzsi harcosok
-; trp_i4_rhun_vet_infantry|Rhun Veteran Warrior
-; trp_i4_rhun_vet_infantry_pl|Rhun Veteran Warriors
+trp_i4_rhun_vet_infantry|Rhun veterán harcos
+trp_i4_rhun_vet_infantry_pl|Rhun veterán harcos
 trp_i5_rhun_ox_warrior| Az Ökör Harcosa
 trp_i5_rhun_ox_warrior_pl|Az Ökör Harcosai
 trp_c2_rhun_horseman|Rhûn Lovas
@@ -764,16 +764,16 @@ trp_c4_mordor_num_horseman|Fekete númenori lovas
 trp_c4_mordor_num_horseman_pl|Fekete númenori lovasság
 trp_c5_mordor_num_knight|Fekete númenori lómester
 trp_c5_mordor_num_knight_pl|Fekete númenori lómesterek
-; trp_greenwood_captain|Greenwood Captain
-; trp_greenwood_captain_pl|Greenwood Captains
-; trp_lorien_captain|Lothlorien Captain
-; trp_lorien_captain_pl|Lothlorien Captains
-; trp_riv_captain|Rivendell Elf Lord
-; trp_riv_captain_pl|Rivendell Elf Lords
-; trp_arnor_captain|Captain of Arnor
-; trp_arnor_captain_pl|Captains of Arnor
-; trp_arnor_ranger_captain|Ranger Captain of Arnor
-; trp_arnor_ranger_captain_pl|Ranger Captains of Arnor
+trp_greenwood_captain|Zölderdei kapitány
+trp_greenwood_captain_pl|Zölderdei kapitány
+trp_lorien_captain|Lothlorieni kapitány
+trp_lorien_captain_pl|Lothlorieni kapitány
+trp_riv_captain|Rivendell tünde nagyúr
+trp_riv_captain_pl|Rivendell tünde nagyúr
+trp_arnor_captain|Arnor kapitánya
+trp_arnor_captain_pl|Arnor kapitánya
+trp_arnor_ranger_captain|Arnor vándorkapitánya
+trp_arnor_ranger_captain_pl|Arnor vándorkapitánya
 trp_rohan_captain|Rohan kapitánya
 trp_rohan_captain_pl|Rohan kapitányai
 ; trp_beorning_captain|Beorning Chieftain
@@ -1539,8 +1539,8 @@ trp_start_quest_beorning_pl|Beornfi szirtfői berzerkerek
 ; trp_black_shield_scout_pl|Amath Dollen's Scouts
 ; trp_black_shield_guard|Amath Dollen's Guard
 ; trp_black_shield_guard_pl|Amath Dollen's Guards
-; trp_dorwinion_spirit_leader|Spirit
-; trp_dorwinion_spirit|Lesser Spirit
+trp_dorwinion_spirit_leader|Szellem
+trp_dorwinion_spirit|Alacsonyabb rendű szellem
 trp_i6_beorning_bear_warrior|Medveharcos
 trp_i6_beorning_bear_warrior_pl|Medveharcosok
 trp_a5_dun_night_wolf|Dún éjfarkas
@@ -1566,7 +1566,7 @@ trp_c5_rhovanion_noble_pl|Rhovanioni nemesek
 trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigurphel
-; trp_npc21|Berta
+trp_npc21|Berta
 trp_werewolf|Vérfarkas
 trp_werewolf_pl|Farkasember
 trp_moria_troll|Barlangi troll
@@ -1623,11 +1623,11 @@ trp_a4_dism_veteran_skirmisher_of_rohan|Rohani talpas veterán csatározó
 trp_a4_dism_veteran_skirmisher_of_rohan_pl|Rohani talpas veterán csatározók
 trp_a5_dism_elite_skirmisher_of_rohan|Rohani talpas elit csatározó
 trp_a5_dism_elite_skirmisher_of_rohan_pl|Rohani talpas elit csatározók
-; trp_ac5_camel_rider|Harad Camel Rider
-; trp_ac5_camel_rider_pl|Harad Camel Riders
-; trp_aragorn|Aragorn
-; trp_legolas|Legolas
-; trp_gimli|Gimli
+trp_ac5_camel_rider|Haradi táborfő
+trp_ac5_camel_rider_pl|Haradi táborfő
+trp_aragorn|Aragorn
+trp_legolas|Legolas
+trp_gimli|Gimli
 trp_pippin_notmet|félszerzet
 trp_merry_notmet|félszerzet
 trp_pippin|Pippin

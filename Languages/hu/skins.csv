@@ -2,7 +2,7 @@ skinkey_chin_size|Áll mérete
 skinkey_chin_shape|Áll formája
 skinkey_chin_forward|Áll előreugrása
 skinkey_jaw_width|Állkapocs szélessége
-; skinkey_jaw_definition|Jaw Definition
+skinkey_jaw_definition|Állkapocs meghatározása
 skinkey_lower_lip|Alsó ajak
 skinkey_upper_lip|Felső ajak
 skinkey_mouth_nose_distance|Száj-orr távolsága
@@ -42,5 +42,5 @@ skinkey_frawn|Ráncosság
 skinkey_mouth_vert_pos|Száj függőleges görbülete
 skinkey_mouth_to_nose_dist|Száj és orr közti távolság
 skinkey_chin_width|Áll magassága
-; skinkey_ear_pointiness|Ear Pointiness
-; skinkey_ear_length|Ear Length
+skinkey_ear_pointiness|Fül hegyessége
+skinkey_ear_length|Fül hossza

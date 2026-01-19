@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|Gundabad Orc Fighter
 trp_i3_gunda_orc_fighter_pl|Gundabad Orc Fighters
 trp_i4_gunda_orc_warrior|Gundabad Orc Warrior
 trp_i4_gunda_orc_warrior_pl|Gundabad Orc Warriors
-trp_i4_gunda_orc_berserker|Gundabad Orc Berserker
-trp_i4_gunda_orc_berserker_pl|Gundabad Orc Berserkers
+trp_i5_gunda_orc_berserker|Gundabad Orc Berserker
+trp_i5_gunda_orc_berserker_pl|Gundabad Orc Berserkers
 trp_ca4_gunda_skirmisher|Gundabad Skirmisher
 trp_ca4_gunda_skirmisher_pl|Gundabad Skirmishers
 trp_ca5_gunda_clan_skirmisher|Goblin North Clan Skirmisher
@@ -748,7 +748,6 @@ trp_mountain_goblin2|Mountain Goblin
 trp_mountain_goblin2_pl|Mountain Goblins
 trp_tribal_orc2|Tribal Orc
 trp_tribal_orc2_pl|Tribal Orcs
-trp_i5_gunda_orc_champion2|Gundabad Orc Champion
 trp_i5_gunda_orc_champion2_pl|Gundabad Orc Champions
 trp_i2_mordor_num_renegade|Black Numenorean Renegade
 trp_i2_mordor_num_renegade_pl|Black Numenorean Renegades
@@ -1185,8 +1184,8 @@ trp_smith_gundabad_ne|Blurg Snowseller
 trp_smith_gundabad_ne_pl|smithy
 trp_smith_gundabad_nw|Blurg Snowseller
 trp_smith_gundabad_nw_pl|smithy
-trp_smith_gundabad_s|Blurg Snowseller
-trp_smith_gundabad_s_pl|smithy
+trp_smith_moria_s|Burgak Forger
+trp_smith_moria_s_pl|smithy
 trp_smith_gundabad_m|Blurg Snowseller
 trp_smith_gundabad_m_pl|smithy
 trp_barman_eastemnet|Tavern Keeper
@@ -1211,8 +1210,8 @@ trp_merchant_woodelf_west_camp|Supply Master
 trp_merchant_woodelf_west_camp_pl|elven supplies
 trp_merchant_gundabad_m|Supply Master
 trp_merchant_gundabad_m_pl|camp stash
-trp_merchant_gundabad_s|Supply Master
-trp_merchant_gundabad_s_pl|camp stash
+trp_merchant_moria_s|Supply Master
+trp_merchant_moria_s_pl|camp stash
 trp_merchant_gundabad_nw|Supply Master
 trp_merchant_gundabad_nw_pl|camp stash
 trp_merchant_gundabad_ne|Supply Master
@@ -1445,8 +1444,8 @@ trp_elder_gunda_ne|Orc Elder
 trp_elder_gunda_ne_pl|the camp
 trp_elder_gunda_nw|Orc Elder
 trp_elder_gunda_nw_pl|the camp
-trp_elder_gunda_s|Orc Elder
-trp_elder_gunda_s_pl|the camp
+trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s_pl|the camp
 trp_elder_gunda_m|Orc Elder
 trp_elder_gunda_m_pl|the camp
 trp_elder_ironhill|Camp Chief
@@ -1501,8 +1500,8 @@ trp_evil_priest|Evil Priest
 trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|Wolf Rider of Mirkwood
 trp_wolf_rider_of_mirkwood_pl|Wolf Riders of Mirkwood
-trp_warg_rider_of_mirkwood|Warg Rider of Mirkwood
-trp_warg_rider_of_mirkwood_pl|Warg Riders of Mirkwood
+trp_bear_strong|Bear
+trp_bear_strong_pl|Bears
 trp_gate_aggravator|Gate Defence
 trp_orc_pretender|Orc Pretender
 trp_human_prisoner|Human Prisoner
