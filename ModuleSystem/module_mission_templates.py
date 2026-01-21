@@ -433,8 +433,8 @@ tld_animals_init = (
   [  (store_trigger_param_1, ":agent_no"),
      (agent_is_human, ":agent_no"),
      (agent_get_troop_id,":troopid", ":agent_no"),
-     (this_or_next|is_between,  ":troopid", "trp_spider", "trp_dorwinion_sack"),
-     (eq, ":troopid", "trp_werewolf"),
+     (this_or_next|is_between,  ":troopid", "trp_spider", "trp_animals_end"),
+     (eq, ":troopid", "trp_werewolf_old"),  #savegame compatibility
      (assign,"$animal_is_present",1),#general to activate scripts
    ])
 
@@ -453,10 +453,8 @@ tld_animal_strikes = ((is_a_wb_mt==1) and (
     (agent_get_troop_id, ":agent_trp", ":agent"),
     
     #This is where we check the type of animal
-    (eq|this_or_next, ":agent_trp", "trp_spider"),
-    (eq|this_or_next, ":agent_trp", "trp_wolf"),
-    (eq|this_or_next, ":agent_trp", "trp_werewolf"),
-    (eq, ":agent_trp", "trp_bear"),
+     (this_or_next|is_between,  ":agent_trp", "trp_spider", "trp_animals_end"),
+     (eq, ":agent_trp", "trp_werewolf_old"), #savegame compatibility
 
     #This is where we get the mount
     (agent_get_horse, ":horse", ":agent"),
@@ -587,7 +585,7 @@ tld_animal_strikes = ((is_a_wb_mt==1) and (
             (le, ":riding_skill", 4),
             # Arsakes: never target dismount animals
             (neg|is_between, ":agent_trp", warg_ghost_begin, warg_ghost_end),
-            (neg|is_between, ":agent_trp", "trp_spider", "trp_dorwinion_sack"),
+            (neg|is_between, ":agent_trp", "trp_spider", "trp_animals_end"),
             (neq, ":agent_trp", "trp_multiplayer_profile_troop_male"), (neq, ":agent_trp", "trp_werewolf"),
 
             (assign, ":hit_anim", "anim_strike_fly_back"),
@@ -866,8 +864,8 @@ tld_warg_leap_attack = ((is_a_wb_mt==1) and [
       (gt, ":enemy_agent", 0),
       (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
       (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
-      (neg|is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"),
-      (neq, ":enemy_troop_id", "trp_werewolf"),
+      (neg|is_between, ":enemy_troop_id", "trp_spider", "trp_animals_end"),
+      (neq, ":enemy_troop_id", "trp_werewolf_old"),
       (agent_get_position, pos8, ":enemy_agent"),
       (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
       (lt, ":dist", 300),
@@ -1069,12 +1067,9 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
     [
       (try_for_agents, ":agent"),
         (agent_get_troop_id, ":agent_trp",":agent"),
-        (this_or_next|eq, ":agent_trp", "trp_wolf"),
-        (eq|this_or_next, ":agent_trp", "trp_werewolf"),
-        (eq|this_or_next, ":agent_trp", "trp_bear"),
-        (eq, ":agent_trp", "trp_bear_strong"),
-        (agent_is_active, ":agent_trp"),
-        (agent_is_alive,  ":agent_trp"),
+        (is_between, ":agent_trp", "trp_future_animal_0", "trp_animals_end"),
+        (agent_is_active, ":agent"),
+        (agent_is_alive,  ":agent"),
         (get_player_agent_no, ":player_agent"),
         (agent_get_team, ":player_team", ":player_agent"),
         (agent_get_division, ":animal_division", ":agent"),
@@ -5133,7 +5128,7 @@ mission_templates = [ # not used in game
             (agent_is_alive, ":player_agent"),
             (troop_set_slot,"trp_no_troop",":slot",-2), #this should disable reinforcements
             (assign, reg78, ":entry_number"),
-            #(display_message, "@Defender reinforcement point {reg78} taken!"),
+            (display_message, "@Defender reinforcement point {reg78} taken!"),
             (display_message, "@Defender reinforcement point taken!"),
             # (agent_set_animation, ":player_agent", "anim_cheer_player"),
             (call_script, "script_troop_get_cheer_sound", "trp_player"),

@@ -1095,8 +1095,8 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
     (agent_is_alive, ":agent_rider"),
     (agent_get_troop_id, ":troop_no", ":agent_rider"),
     (neg|is_between, ":troop_no", warg_ghost_begin, warg_ghost_end), # Dont allow wargs to fall unconscious
-    (neg|is_between, ":troop_no", "trp_spider", "trp_dorwinion_sack"),
-    (neq, ":troop_no", "trp_werewolf"),
+    (neg|is_between, ":troop_no", "trp_spider", "trp_animals_end"),
+    (neq, ":troop_no", "trp_werewolf_old"),
     
     
     # Old damage formula:
@@ -3936,9 +3936,9 @@ beorning_shapeshift = [
         (store_trigger_param_1, ":agent"),
         (agent_get_troop_id, ":troop", ":agent"),
         (this_or_next|is_between, ":troop", warg_ghost_begin, warg_ghost_end),
-        (this_or_next|is_between, ":troop", "trp_spider", "trp_dorwinion_sack"),
+        (this_or_next|is_between, ":troop", "trp_spider", "trp_animals_end"),
         (this_or_next|is_between, ":troop", "trp_warg_ghost_1b", "trp_a2_isen_uruk_tracker"),
-        (eq, ":troop", "trp_werewolf"),
+        (eq, ":troop", "trp_werewolf_old"),
         #(display_message, "@Agents glitch fix invisible"),
         (agent_set_visibility, ":agent", 0),
         #(display_message, "@Agents horse fix visible"),
@@ -5426,8 +5426,8 @@ tld_battlefield_agent_effects = [
     (agent_is_active, ":agent_no"),
     (agent_is_human, ":agent_no"),
     (agent_get_troop_id, ":troop_no", ":agent_no"),
-    (neg|is_between,  ":troop_no", "trp_spider", "trp_dorwinion_sack"),
-    (neq, ":troop_no", "trp_werewolf"),
+    (neg|is_between,  ":troop_no", "trp_spider", "trp_animals_end"),
+    (neq, ":troop_no", "trp_werewolf_old"),
     (troop_get_type, ":race", ":troop_no"),
     (agent_get_party_id, ":agent_party", ":agent_no"),
     (try_begin),

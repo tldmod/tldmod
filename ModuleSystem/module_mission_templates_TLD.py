@@ -2164,7 +2164,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
       #(neg|position_is_behind_position, pos17, pos18),
       (agent_get_troop_id, ":victim_troop_id", ":aoe_hit"),
       (neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
-      (neg|is_between, ":victim_troop_id", "trp_spider", "trp_dorwinion_sack"),
+      (neg|is_between, ":victim_troop_id", "trp_spider", "trp_animals_end"),
       (neq, ":victim_troop_id", "trp_werewolf"),
       # Arsakes troop for bear shapeshifter
       (neq, ":victim_troop_id", "trp_multiplayer_profile_troop_male"),
@@ -2494,8 +2494,8 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
                     (agent_get_troop_id, ":rider_troop", ":rider"), 
 
                     #never scared
-                    (neg|is_between, ":rider_troop", "trp_spider", "trp_dorwinion_sack"),
-                    (neq, ":rider_troop", "trp_werewolf"),
+                    (neg|is_between, ":rider_troop", "trp_spider", "trp_animals_end"),
+                    (neq, ":rider_troop", "trp_werewolf_old"),
                     (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"),
                     (neq, ":victim_horse_type", "itm_mearas_reward"),
 
@@ -2559,8 +2559,8 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
                     (agent_get_troop_id, ":rider_troop", ":victim"), #Riding skill helps avoid (InVain)
                     
                     #never scared
-                    (neg|is_between, ":rider_troop", "trp_spider", "trp_dorwinion_sack"),
-                    (neq, ":rider_troop", "trp_werewolf"),
+                    (neg|is_between, ":rider_troop", "trp_spider", "trp_animals_end"),
+                    (neq, ":rider_troop", "trp_werewolf_old"),
                     (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"),
 
                     #conditionally scared
@@ -2625,8 +2625,8 @@ or
 
                                         # Arsakes no animals or riderless wargs (no bear in MB)
                                         (neg|is_between, ":rider_troop", warg_ghost_begin, warg_ghost_end),
-                                        (neg|is_between, ":rider_troop", "trp_spider", "trp_dorwinion_sack"),
-                                        (neq, ":rider_troop", "trp_werewolf"),
+                                        (neg|is_between, ":rider_troop", "trp_spider", "trp_animals_end"),
+                                        (neq, ":rider_troop", "trp_werewolf_old"),
                                         (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"), 
 
 					(store_skill_level, ":riding", "skl_riding", ":rider_troop"),
@@ -4031,8 +4031,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
   [  (store_trigger_param_1, ":agent"),
      (agent_is_human, ":agent"),
      (agent_get_troop_id,":troopid", ":agent"),
-     (this_or_next|is_between,  ":troopid", "trp_spider", "trp_dorwinion_sack"),
-     (eq, ":troopid", "trp_werewolf"),
+     (this_or_next|is_between,  ":troopid", "trp_spider", "trp_animals_end"),
+     (eq, ":troopid", "trp_werewolf_old"), #savegame compatibility
      (agent_set_no_death_knock_down_only, ":agent", 1), # make the rider unkillable
      (agent_set_animation, ":agent", "anim_hide_inside_warg"),
      (val_add,"$animal_is_present",1),#reused for counting active animals, keep in mind that we only ever add to this counter - dying animals won't be substracted, because the array slots are not reordered
@@ -4133,11 +4133,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (agent_get_troop_id, ":agent_trp", ":agent"),
     
     #This is where we check the type of animal #Invain: Should've been assured via slot assignment, but keep it just to be sure)
-    (eq|this_or_next, ":agent_trp", "trp_spider"),
-    (eq|this_or_next, ":agent_trp", "trp_wolf"),
-    (eq|this_or_next, ":agent_trp", "trp_werewolf"),
-    (eq|this_or_next, ":agent_trp", "trp_bear"),
-    (eq, ":agent_trp", "trp_bear_strong"),
+    (is_between, ":agent_trp", "trp_future_animal_0", "trp_animals_end"),
 
     #This is where we get the mount
     (agent_get_horse, ":horse", ":agent"),
@@ -4341,7 +4337,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
       # (display_message, "@agent {reg78} is {s5}"),
       (agent_get_position, pos3, ":enemy_agent"),
       (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
-      (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
+      # (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end), #we actually want them to attack wargs
       #(store_skill_level, ":riding_skill", skl_riding, ":enemy_troop_id"),
       (agent_get_horse, ":target_horse", ":enemy_agent"),
       
@@ -4372,6 +4368,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         
         (ge, ":attack_range", 100),
         
+        #don't throw down trolls
+        (neg|is_between, ":enemy_troop_id", "trp_moria_troll", "trp_multiplayer_profile_troop_male"),
         #avoid stunlocking
         (store_mission_timer_a, ":timer"),
         (neg|agent_slot_ge, ":enemy_agent", slot_agent_last_knockdown_time, ":timer"),
@@ -4380,9 +4378,11 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         
         (call_script, "script_lookat", pos3, pos1), #make sure victim falls towards correct direction
         (agent_set_position, ":enemy_agent", pos3),
-        #(assign, ":hit_anim", "anim_strike_fall_back_rise"),
+        (assign, ":hit_anim", "anim_strike_fall_back_rise"),
         (try_begin),
             (ge, ":target_horse", 0),
+            (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end), #don't dehorse wargs and animals
+            (neg|is_between, ":enemy_troop_id", "trp_future_animal_0", "trp_animals_end"),
             (agent_start_running_away, ":target_horse"),
         (try_end),
         
