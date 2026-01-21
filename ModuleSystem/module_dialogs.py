@@ -2114,7 +2114,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
   "I have one {s5} in my garrison that might be willing to serve under your command and help you organize your party. But he will be missed here. [costs {reg21} influence]", "player_hire_captain_2", []],
 
 [anyone,"player_hire_captain_1", 
-  [(party_slot_eq, "$current_town", slot_town_captain_available, 0),
+  [#(party_slot_eq, "$current_town", slot_town_captain_available, 0),
    (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), 
    (lt, reg0, 5),
    (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), 
