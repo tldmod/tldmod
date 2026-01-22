@@ -10,20 +10,6 @@ from header_terrain_types import *
 
 ## cpp: Currently you can move outside of the boundries. TODO: Fix it. :)
 
-common_siege_refill_ammo = (60, 0, 0, [],
-  [#refill ammo of defenders every minute
-    (get_player_agent_no, ":player_agent"),
-    (try_for_agents, ":cur_agent"),
-      (agent_is_alive,":cur_agent"),
-      (neq, ":cur_agent", ":player_agent"),
-      (agent_get_team, ":agent_team", ":cur_agent"),
-      (this_or_next|eq, ":agent_team", "$defender_team"),
-      (this_or_next|eq, ":agent_team", "$defender_team_2"),
-      (eq, ":agent_team", "$defender_team_3"),
-      (agent_refill_ammo, ":cur_agent"),
-    (try_end),
-    ])
-
 common_init_deathcam_wb = (0, 0, ti_once, [],
 [
   (assign, "$tld_camera_on", 0),
@@ -722,62 +708,6 @@ field_ai_triggers = [
  ] 
 
 
-#### Kham Improved High Level Archer Aim VS Orcs (Credit: Oliveran)
-tld_archer_hold_fire = (1, 0, ti_once, [(eq,"$field_ai_archer_aim",1)],
-  [
-    (assign, ":counter", 0),
-    (get_player_agent_no, ":player"),
-    (agent_get_team, ":team", ":player"),
-
-    (try_for_agents, ":agent1"),
-
-        (agent_is_active,":agent1"),
-        (agent_is_alive,":agent1"),
-        (agent_is_non_player, ":agent1"),
-
-        (agent_get_team, ":agent_team", ":agent1"),
-        (eq, ":agent_team", ":team"),
-
-        (agent_get_wielded_item, ":weapon", ":agent1", 0),
-        (ge, ":weapon", 0),
-        (this_or_next|item_has_property, ":weapon", itp_type_bow),
-        (item_has_property, ":weapon", itp_type_crossbow),
-
-        #TLD Check
-        (agent_get_troop_id, ":troop1", ":agent1"),
-        (store_proficiency_level, ":prof", ":troop1", wpt_archery),
-        (ge, ":prof", 200),
-
-        (agent_ai_get_look_target,":agent2", ":agent1"),
-        (agent_is_active,":agent2"),
-        (agent_is_alive,":agent2"),
-
-        (agent_get_position, pos2, ":agent2"),
-        (agent_get_position, pos3, ":agent1"),
-        (get_distance_between_positions, ":distance", pos3, pos2),
-
-
-        (try_begin),
-          (eq, "$cheat_mode",1),
-          (eq,":counter",0),
-          (assign, reg1, ":distance"),
-         # (display_message, "@{!}DEBUG: Distance: {reg1}"),
-        (end_try),
-
-        (ge, ":distance", 7000),
-
-        (try_begin),
-          (eq, ":counter", 0),
-          (set_show_messages, 0),
-          (team_give_order, ":team", grc_archers, mordr_hold_fire),
-          (set_show_messages, 1),
-          (display_message, "@Your high-level archers determines that the enemy is too far away. They are holding their fire to conserve arrows until ordered otherwise.", color_good_news),
-          (assign, ":counter", 1),
-        (try_end),
-    (try_end),
-  ])
-
-
 
 
 # TLD: fix game bug: archers aim at hard-coded head/torax-position instead of real head/torax-position 
@@ -914,126 +844,7 @@ tld_archer_aim_fix_on_release = (0, 0, 0, [(eq,"$field_ai_archer_aim",1)],
     ])
 
 
-
 #### Kham Improved High Level Archer Aim VS Orcs (Credit: Oliveran) END
-
-
-tld_troll_aim_fix = (0, 0, 0, [(gt,"$trolls_in_battle",0)],
-    [   
-        (store_mission_timer_a_msec, ":batch_time"),
-
-        (assign, ":counter", 0),
-
-        (try_for_agents, ":agent1"),
-            (agent_is_active,":agent1"),
-            (agent_is_alive,":agent1"),
-            (agent_is_non_player, ":agent1"),
-            (agent_is_active, ":agent1"),
-            (agent_get_slot, ":check_time", ":agent1", slot_agent_tick_check_time),
-
-            (agent_get_troop_id, ":troop1", ":agent1"),
-            (troop_get_type, ":troll_type", ":troop1"),
-            (eq, ":troll_type", tf_troll),
-
-            (try_begin),
-              (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
-              (val_add, ":check_time", 100),
-              (agent_set_slot, ":agent1", slot_agent_tick_check_time, ":check_time"),
-              (try_begin),
-                (agent_slot_eq, ":agent1", agent_aim_overridden, 0), # override only once
-                
-                # is shooter in the process of aiming?
-                (agent_get_combat_state, ":state", ":agent1"),
-                (eq, ":state", 3),  
-                (agent_set_slot, ":agent1", agent_aim_overridden, 3),
-                (agent_ai_get_look_target,":agent2", ":agent1"),
-                
-                # is target alive? (not necessary?)
-                (agent_is_active,":agent2"),
-                (agent_is_alive,":agent2"),
-
-                # is target short?
-               # (agent_get_troop_id, ":troop2", ":agent2"),
-               # (ge, ":troop2", 0),  # not necessary?
-
-                #(troop_get_type, ":race", ":troop2"),
-                #(this_or_next|eq, ":race", tf_orc), 
-                #(eq, ":race", tf_dwarf),
-
-            
-                (val_add, ":counter",1), # book-keeping...
-
-                (assign, ":bone", 0), # by default, aim at torax
-           
-              # consider current distance to target to decide stuff (e.g. aim at head or torax? shoot or not?)
-                (agent_get_position, pos2, ":agent2"),  # pos2 = target pos
-                (agent_get_position, pos3, ":agent1"),  # pos3 = shooter pos
-                (get_distance_between_positions, ":distance", pos3, pos2),
-                
-                (try_begin),
-                  (lt, ":distance", 1000),
-                  (assign, ":continue", 1),
-                (try_end),
-                
-                (eq, ":continue", 1), #Do we modify aim? It will be based on distance
-
-                (agent_is_in_line_of_sight, ":agent1", pos2),
-               
-                (agent_get_bone_position, pos1, ":agent2", ":bone", 1), # pos1 = target BONE pos
-                (agent_set_look_target_position, ":agent1", pos1),      # override aimed location
-                (agent_set_attack_action, ":agent1", 3, 0),      # enforce shooting (DISABLED)
-                (agent_set_look_target_position, ":agent1", pos1),      # override aimed location
-               #(agent_set_look_target_agent, ":agent1", ":agent2"),    # desperate attempt at making archer fight on and actually shoot
-              (try_end),
-            (try_end),
-            (agent_get_slot, ":check_time", ":agent1", slot_agent_period_reset_time),
-            (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
-            (val_add, ":check_time", "$batching_check_period"),
-            (agent_set_slot, ":agent1", slot_agent_period_reset_time, ":check_time"),
-        (try_end),
-
-       # (try_begin),
-       #     (gt, ":counter",0),
-       #     (assign, reg10, ":counter"),
-       #     (assign, reg11, ":bone"),
-            #(assign, reg12, ":continue"),
-            #(display_message, "@{!}DEBUG: OVERRRIDING AIM x{reg10}!. TARGETTING {reg11}."),
-      #  (try_end),
-    ])
-
-
-# fix part II: call on release
-tld_troll_aim_fix_on_release = (0, 0, 0, [(gt,"$trolls_in_battle",0)],
-    [   (store_mission_timer_a_msec, ":batch_time"),
-        
-        (try_for_agents, ":agent1"),
-          (agent_is_active,":agent1"),
-          (agent_is_alive,":agent1"),
-          (agent_is_non_player, ":agent1"),
-          (agent_is_active, ":agent1"),
-          (agent_get_troop_id, ":troop1", ":agent1"),
-          (troop_get_type, ":troll_type", ":troop1"),
-          (eq, ":troll_type", tf_troll),
-          (agent_get_slot, ":check_time", ":agent1", slot_agent_tick_check_time),
-          (agent_get_slot, ":is_aiming", ":agent1", agent_aim_overridden),
-          (try_begin),
-            (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
-            (val_add, ":check_time", 100),
-            (agent_set_slot, ":agent1", slot_agent_tick_check_time, ":check_time"),
-            (try_begin),
-              (eq, ":is_aiming", 3),
-              (agent_get_attack_action, ":action", ":agent1"),
-              (this_or_next|eq, ":action", 6),
-              (eq, ":action", 4),
-              (agent_set_slot, ":agent1", agent_aim_overridden, 0),
-            (try_end),
-          (try_end),
-          (agent_get_slot, ":check_time", ":agent1", slot_agent_period_reset_time),
-          (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
-          (val_add, ":check_time", "$batching_check_period"),
-          (agent_set_slot, ":agent1", slot_agent_period_reset_time, ":check_time"),
-        (try_end),
-    ])
 
 
 #### Kham Improved Track & Damage Fallen Riders

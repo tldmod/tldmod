@@ -1302,7 +1302,7 @@ game_menus = [
 		 (else_try),(eq, "$g_custom_battle_scenario", 8),(set_jump_mission,"mt_ori_last_stand"),
 		 (else_try),(eq, "$g_custom_battle_scenario", 88),(set_jump_mission,"mt_darkness_attack"),(rest_for_hours,3,1000,0),(stop_all_sounds, 1),
 		 ] or []) + [
-         (else_try),(eq, "$g_custom_battle_scenario", 9),(set_jump_mission,"mt_custom_battle_dynamic_scene"),
+         #(else_try),(eq, "$g_custom_battle_scenario", 9),(set_jump_mission,"mt_custom_battle_dynamic_scene"),
          (else_try),(eq, "$g_custom_battle_scenario",16),(set_jump_mission,"mt_custom_battle_parade"),#(rest_for_hours,12,1000,0),
          (else_try),(eq, "$g_custom_battle_scenario",26),(set_jump_mission,"mt_custom_battle_parade"),#(rest_for_hours,12,1000,0),
          (else_try),(eq, "$g_custom_battle_scenario",98),(set_jump_mission,"mt_custom_battle_form_test"),
