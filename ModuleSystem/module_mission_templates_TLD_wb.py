@@ -1037,7 +1037,7 @@ tld_move_ai = (0.01, 0, 0, [(eq,"$field_ai_lord",1)],
       
       (troop_slot_eq, ":lord", slot_troop_has_combat_ai, 1), 
 
-      #(this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      #(this_or_next|is_between, ":lord", heroes_begin, heroes_end),
       #(this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
       #(this_or_next|eq, ":lord", "trp_nazgul"),
       #(this_or_next|eq, ":lord", "trp_mordor_olog_hai"),
@@ -1068,7 +1068,7 @@ tld_ai_kicking = (1, 0, 0, [(eq,"$field_ai_lord",1)],
       (troop_slot_eq, ":lord", slot_troop_has_combat_ai, 1), 
       (agent_is_alarmed, ":agent1"),
 
-      #(this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      #(this_or_next|is_between, ":lord", heroes_begin, heroes_end),
       #(this_or_next|eq, ":lord", "trp_nazgul"),
       #(this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
       #(this_or_next|eq, ":lord", "trp_mordor_olog_hai"),
@@ -1130,7 +1130,7 @@ tld_ai_is_kicked = (0.2, 0, 0, [(eq,"$field_ai_lord",1)],
       (agent_get_troop_id, ":lord", ":agent1"),
       (troop_slot_eq, ":lord", slot_troop_has_combat_ai, 1), 
 
-      #(this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      #(this_or_next|is_between, ":lord", heroes_begin, heroes_end),
       #(this_or_next|eq, ":lord", "trp_nazgul"),
       #(this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
       #(this_or_next|eq, ":lord", "trp_mordor_olog_hai"),
@@ -1200,7 +1200,7 @@ tld_melee_ai = (0, 0, 0, [(eq,"$field_ai_lord",1),
     # (try_for_agents,":agent1"),
        # #TLD Check
       # (agent_get_troop_id, ":lord", ":agent1"),
-      # (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      # (this_or_next|is_between, ":lord", heroes_begin, heroes_end),
       # (this_or_next|eq, ":lord", "trp_nazgul"),
       # (eq, ":lord", "trp_black_numenorean_sorcerer"),
     # (try_end),
@@ -1223,7 +1223,7 @@ tld_melee_ai = (0, 0, 0, [(eq,"$field_ai_lord",1),
           (agent_get_troop_id, ":lord", ":agent1"),
           (troop_slot_eq, ":lord", slot_troop_has_combat_ai, 1), 
 
-          #(this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+          #(this_or_next|is_between, ":lord", heroes_begin, heroes_end),
           #(this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
           #(is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
@@ -1315,7 +1315,8 @@ tld_footwork_melee_ai = (0.25, 0, 0, [(eq,"$field_ai_lord",1)],
 
        #TLD Check
       (agent_get_troop_id, ":lord", ":agent1"),
-      (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      #(this_or_next|is_between, ":lord", heroes_begin, heroes_end),
+      (this_or_next|troop_slot_eq, ":lord", slot_troop_occupation, slto_kingdom_hero),
       (this_or_next|eq, ":lord", "trp_nazgul"),
       (eq, ":lord", "trp_black_numenorean_sorcerer"),
       
@@ -1783,7 +1784,7 @@ hp_shield_init = (ti_on_agent_spawn, 0, 0, [
 		
 	(try_begin), #player and companions
         (this_or_next|eq, ":troop_id", "trp_player"),
-        (this_or_next|is_between, ":troop_id", "trp_npc1", heroes_begin),
+        (this_or_next|is_between, ":troop_id", "trp_npc1", "trp_knight_6_2"),
         (is_between, ":troop_id", "trp_npc18", "trp_werewolf"),
         (store_skill_level, ":ironflesh_base",  skl_ironflesh, ":troop_id",),
         (store_mul, ":ironflesh_sq", ":ironflesh_base", ":ironflesh_base"),
@@ -2037,6 +2038,7 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
    (else_try), # Is it a lord?
       (neq, ":agent_killer", ":agent_player"),
       (is_between, ":agent_killer", heroes_begin, heroes_end),
+      (troop_slot_eq, ":agent_killer", slot_troop_occupation, slto_kingdom_hero),
       (assign, ":continue", 1),
    (else_try),  #Berserkers
       (neq, ":agent_killer", ":agent_player"),
@@ -2071,6 +2073,7 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
     (else_try), # Is it a lord?
       (neq, ":agent_killer", ":agent_player"),
       (is_between, ":agent_killer", heroes_begin, heroes_end),
+      (troop_slot_eq, ":agent_killer", slot_troop_occupation, slto_kingdom_hero),
       (assign, ":health_regeneration", wp_hr_lord_rate),
       (assign, ":continue", 1),
     (else_try),  #Berserkers

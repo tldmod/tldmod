@@ -1021,7 +1021,7 @@ mission_templates = [ # not used in game
 	#birds+			  
     tld_common_peacetime_scripts +[
 
-    (ti_on_agent_spawn, 0, 0, [],[(store_trigger_param_1, ":agent_no"),(agent_get_troop_id, ":troop_no", ":agent_no"),(is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end), (call_script, "script_init_town_agent", ":agent_no")]),
+    (ti_on_agent_spawn, 0, 0, [],[(store_trigger_param_1, ":agent_no"),(agent_get_troop_id, ":troop_no", ":agent_no"),(is_between, ":troop_no", heroes_begin, heroes_end), (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),(call_script, "script_init_town_agent", ":agent_no")]),
        
 	(1, 0, ti_once, [],[ # set walkers, music and ambient sounds
 			(get_player_agent_no, "$current_player_agent"),

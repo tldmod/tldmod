@@ -2248,7 +2248,7 @@ game_menus = [
 
      	("camp_cctest_kill_lord",[],"{!}Kill a Random Lord",
 	[
-		#(store_random_in_range, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
+		#(store_random_in_range, ":cur_troop_id", "trp_knight_1_1", heroes_end), #kings and marshals cannot die for now
         (troop_get_slot, ":party", "trp_knight_2_2", slot_troop_leaded_party),
 		(call_script, "script_hero_leader_killed_abstractly", "trp_knight_1_7",":party"),
         (troop_set_slot, "trp_knight_1_7", slot_troop_killed_by, "trp_knight_2_2"),
@@ -2569,7 +2569,7 @@ game_menus = [
      # (display_message, "@{!}Hornburg razed - check map!", 0x30FFC8),
    # ]),
    # ("camp_mvtest_notes",[],"Update lord locations.",[
-     # (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+     # (try_for_range, ":troop_no", heroes_begin, heroes_end),
        # (call_script, "script_update_troop_location_notes", ":troop_no", 0),
      # (try_end),
      # (display_message, "@{!}Lord locations updated - see wiki!", 0x30FFC8),
@@ -2674,7 +2674,8 @@ game_menus = [
       
 	  # calculate number of active hosts
       (assign,":hosts",0),
-	  (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end), 
+	  (try_for_range, ":troop_no", heroes_begin, heroes_end), 
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (store_troop_faction, ":troop_faction_no", ":troop_no"),
         (eq, ":troop_faction_no", ":cur_kingdom"),
 		(troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
@@ -2768,7 +2769,8 @@ game_menus = [
       
 	  # calculate number of active hosts
       (assign,":hosts",0),
-	  (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end), 
+	  (try_for_range, ":troop_no", heroes_begin, heroes_end), 
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (store_troop_faction, ":troop_faction_no", ":troop_no"),
         (eq, ":troop_faction_no", ":cur_kingdom"),
 		(troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
@@ -2843,7 +2845,8 @@ game_menus = [
       (try_end),
       
 	  # AI details for each host
-	  (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end), 
+	  (try_for_range, ":troop_no", heroes_begin, heroes_end), 
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (store_troop_faction, ":troop_faction_no", ":troop_no"),
         (eq, ":troop_faction_no", ":cur_kingdom"),
 		(troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
@@ -5381,8 +5384,9 @@ game_menus = [
       	(assign, ":num_lords", 0),
       	(try_for_range, ":stack_no", 0, ":num_stacks"),
       		(party_stack_get_troop_id,   ":stack_troop","p_collective_friends",":stack_no"),
-      		(is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
-      		(val_add, ":num_lords", 1),
+      		(is_between, ":stack_troop", heroes_begin, heroes_end),
+      		(troop_slot_eq, ":stack_troop", slot_troop_occupation, slto_kingdom_hero),
+            (val_add, ":num_lords", 1),
       	(try_end),
       	(gt, ":num_lords", 0), # have to have lords in battle
       	],
@@ -5456,7 +5460,7 @@ game_menus = [
                   # (party_get_num_companion_stacks, ":num_stacks", "p_encountered_party_backup"),
                   # (try_for_range, ":stack_no", 0, ":num_stacks"),
                     # (party_stack_get_troop_id,   ":stack_troop","p_encountered_party_backup",":stack_no"),
-                    # (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
+                    # (is_between, ":stack_troop", heroes_begin, heroes_end),
                     # (store_troop_faction, ":victorious_faction", ":stack_troop"),
                     # (call_script, "script_add_log_entry", logent_player_retreated_from_lord, "trp_player",  -1, ":stack_troop", ":victorious_faction"),
                   # (try_end),
@@ -5516,7 +5520,8 @@ game_menus = [
      (assign, ":base_inf_cost", player_control_allies_inf),
      (try_for_range, ":stack_no", 0, ":num_stacks"),
         (party_stack_get_troop_id,   ":stack_troop","p_collective_friends",":stack_no"),
-        (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
+        (is_between, ":stack_troop", heroes_begin, heroes_end),
+        (troop_slot_eq, ":stack_troop", slot_troop_occupation, slto_kingdom_hero),
         (val_add, ":num_lords", 1),
      (try_end),
      (gt, ":num_lords", 0), # have to have lords in battle
@@ -5658,7 +5663,8 @@ game_menus = [
           (party_get_num_companion_stacks, ":num_stacks", "p_encountered_party_backup"),
           (try_for_range, ":stack_no", 0, ":num_stacks"),
               (party_stack_get_troop_id,   ":stack_troop","p_encountered_party_backup",":stack_no"),
-              (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
+              (is_between, ":stack_troop", heroes_begin, heroes_end),
+              (troop_slot_eq, ":stack_troop", slot_troop_occupation, slto_kingdom_hero),
               (store_troop_faction, ":victorious_faction", ":stack_troop"),
               (call_script, "script_add_log_entry", logent_player_retreated_from_lord_cowardly, "trp_player",  -1, ":stack_troop", ":victorious_faction"),
           (try_end),
@@ -6277,7 +6283,11 @@ game_menus = [
               (gt, ":progress", 20),
               (assign, ":escape", 1),
               (try_begin),
-                  (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end), #only kill regular lords for now. Marshalls and Kings have to be defeated by quest progress
+                  (is_between, ":stack_troop", heroes_begin, heroes_end), 
+                  (troop_slot_eq, ":stack_troop", slot_troop_occupation, slto_kingdom_hero),
+                  #only kill regular lords for now. Marshalls and Kings have to be defeated by quest progress
+                  (neg|faction_slot_eq, ":defeated_faction", slot_faction_leader, ":stack_troop"),
+                  (neg|faction_slot_eq, ":defeated_faction", slot_faction_marshall, ":stack_troop"),
                   (store_random_in_range, ":rand", 0, 100),
                   (lt, ":rand", ":progress"),
                   (assign, "$talk_context", tc_hero_defeated_vengeance),
@@ -6460,7 +6470,8 @@ game_menus = [
 #Post 0907 changes begin
         (party_stack_get_troop_id,   ":enemy_leader","p_encountered_party_backup",0),
         (try_begin),
-            (is_between, ":enemy_leader", kingdom_heroes_begin, kingdom_heroes_end),
+            (is_between, ":enemy_leader", heroes_begin, heroes_end),
+            (troop_slot_eq, ":enemy_leader", slot_troop_occupation, slto_kingdom_hero),
             (neg|is_between, "$g_encountered_party", centers_begin, centers_end),
             (store_troop_faction, ":enemy_leader_faction", ":enemy_leader"),
 
@@ -6691,7 +6702,8 @@ game_menus = [
           (party_get_num_companion_stacks, ":num_stacks", "p_encountered_party_backup"),
           (try_for_range, ":stack_no", 0, ":num_stacks"),
             (party_stack_get_troop_id,   ":stack_troop","p_encountered_party_backup",":stack_no"),
-            (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
+            (is_between, ":stack_troop", heroes_begin, heroes_end),
+            (troop_slot_eq, ":stack_troop", slot_troop_occupation, slto_kingdom_hero),
             (store_troop_faction, ":victorious_faction", ":stack_troop"),
             (call_script, "script_add_log_entry", logent_player_defeated_by_lord, "trp_player",  -1, ":stack_troop", ":victorious_faction"),
           (try_end),
@@ -7016,8 +7028,9 @@ game_menus = [
       	(assign, ":num_lords", 0),
       	(try_for_range, ":stack_no", 0, ":num_stacks"),
       		(party_stack_get_troop_id,   ":stack_troop","p_collective_friends",":stack_no"),
-      		(is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
-      		(val_add, ":num_lords", 1),
+      		(is_between, ":stack_troop", heroes_begin, heroes_end),
+      		(troop_slot_eq, ":stack_troop", slot_troop_occupation, slto_kingdom_hero),
+            (val_add, ":num_lords", 1),
       	(try_end),
       	(gt, ":num_lords", 0), # have to have lords in battle
       	],
@@ -7080,7 +7093,8 @@ game_menus = [
      (assign, ":base_inf_cost", player_control_allies_inf),
      (try_for_range, ":stack_no", 0, ":num_stacks"),
         (party_stack_get_troop_id,   ":stack_troop","p_collective_friends",":stack_no"),
-        (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
+        (is_between, ":stack_troop", heroes_begin, heroes_end),
+        (troop_slot_eq, ":stack_troop", slot_troop_occupation, slto_kingdom_hero),
         (val_add, ":num_lords", 1),
      (try_end),
      (gt, ":num_lords", 0), # have to have lords in battle
@@ -7718,7 +7732,8 @@ game_menus = [
             (try_for_range, ":attached_party_rank", 0, ":num_attached_parties"),
                 (party_get_attached_party_with_rank, ":attached_party", "p_town_moria", ":attached_party_rank"),
                 (party_stack_get_troop_id, ":leader", ":attached_party", 0),
-                (is_between, ":leader", kingdom_heroes_begin, kingdom_heroes_end),
+                (is_between, ":leader", heroes_begin, heroes_end),
+                (troop_slot_eq, ":leader", slot_troop_occupation, slto_kingdom_hero),
                 (gt, "$tld_war_began", 0),
                 (eq, "$found_moria_entrance", 0),
                 (assign, ":check",1),
@@ -8640,7 +8655,7 @@ game_menus = [
               (party_set_slot, "$g_encountered_party", slot_center_siege_hardness, ":siege_hardness"),
               (party_set_slot, "$g_enemy_party", slot_party_retreat_flag, 1),
 
-              (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+              (try_for_range, ":troop_no", heroes_begin, heroes_end),
                 (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
                 #(troop_slot_eq, ":troop_no", slot_troop_is_prisoner, 0),
                 (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
@@ -10236,7 +10251,8 @@ game_menus = [
         (faction_get_slot, ":capital", "$players_kingdom", slot_faction_capital),
         
         #move faction lords to capital, respawn if necessary
-        (try_for_range, ":lord", kingdom_heroes_begin, kingdom_heroes_end), 
+        (try_for_range, ":lord", heroes_begin, heroes_end), 
+            (troop_slot_eq, ":lord", slot_troop_occupation, slto_kingdom_hero),
             (store_troop_faction, ":faction", ":lord"),
             (eq, ":faction", "$players_kingdom"),
             (neg|troop_slot_eq, ":lord", slot_troop_wound_mask, wound_death),

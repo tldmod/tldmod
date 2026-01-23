@@ -1492,6 +1492,7 @@ formAI_scripts = [
 			#basic conditions:
 			(gt, ":hero_troop", 0), #The current team must have a leader
 			(is_between, ":hero_troop", heroes_begin, heroes_end), #Must be hero
+            (troop_slot_eq, ":hero_troop", slot_troop_occupation, slto_kingdom_hero),
 			(agent_is_alive, ":team_leader"), #and the team leader must be alive
 			#(agent_slot_eq, ":team_leader", slot_agent_is_running_away, 0), #and the leader must not be running away ... will never happen
 			(store_agent_hit_points, ":leader_hp", ":team_leader"), #gets leaders hit point percent
@@ -1521,6 +1522,7 @@ formAI_scripts = [
 			#---------------Normal form AI code for placing leader -- JL: let leader be in scripted mode before the fight starts only. And the leader primarily follows his cavalry if leader is on horse and has cavalry
 			(gt, ":team_leader", 0),
 			(is_between, ":hero_troop", heroes_begin, heroes_end), #Must be hero
+            (troop_slot_eq, ":hero_troop", slot_troop_occupation, slto_kingdom_hero),
 			(agent_is_alive, ":team_leader"),
 
 				(try_begin), #JL Kham added block to get rid of straying lords				

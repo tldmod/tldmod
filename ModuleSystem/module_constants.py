@@ -1173,17 +1173,20 @@ kingdoms_begin_i = fac_gondor
 kingdoms_end     = fac_kingdoms_end
 kingdoms_end_i   = fac_kingdoms_end
 
-kingdom_heroes_begin = trp_knight_6_2       # was: trp_gondor_lord
-kingdom_heroes_end   = trp_knight_6_1 + 1   # was: trp_heroes_end
-
-heroes_begin = kingdom_heroes_begin
-heroes_end   = kingdom_heroes_end
+#these are used in script_game_start in order to assign the initial kingdom lords
+kingdom_heroes_begin = trp_gondor_lord
+kingdom_heroes_end   = trp_knight_6_1 + 1
 
 companions_begin = trp_npc1
 companions_end   = trp_npc17 + 1
 
 new_companions_begin = trp_npc18
 new_companions_end = trp_npc27 + 1
+
+#this range collects _all_ heroes that can potentially lead a party, but also many random troops in between. 
+#All ranges need to check for slot_troop_occupation = slto_kingdom_hero!
+heroes_begin = companions_begin
+heroes_end   = new_companions_end 
 
 soldiers_begin = trp_farmer
 soldiers_end = trp_mirkwood_walker_1

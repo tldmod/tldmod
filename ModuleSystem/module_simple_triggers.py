@@ -158,7 +158,8 @@ simple_triggers = [
             (party_set_slot, ":center_no", slot_town_captain_available, ":captain"), 
         (try_end),
       (try_end),
-      (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),  # TLD clear rumors in lords
+      (try_for_range, ":troop_no", heroes_begin, heroes_end),  # TLD clear rumors in lords
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (troop_set_slot, ":troop_no", slot_troop_rumor_check, 0),
         #Friendship Rewards Begin
         (try_begin),
@@ -329,7 +330,8 @@ simple_triggers = [
   ]),
   
   # (14) Hiring men with center wealths (once a day)
-  (24,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+  (24,[(try_for_range, ":troop_no", heroes_begin, heroes_end),
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         (ge, ":party_no", 1),
         (party_is_active, ":party_no"), #MV
@@ -527,7 +529,8 @@ simple_triggers = [
   
   
   # (17) Give some xp to hero parties
-  (48,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+  (48,[(try_for_range, ":troop_no", heroes_begin, heroes_end),
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (store_random_in_range, ":rand", 0, 100),
         (lt, ":rand", 30),
         (troop_get_slot, ":hero_party", ":troop_no", slot_troop_leaded_party),
@@ -681,7 +684,8 @@ simple_triggers = [
 (24,[(try_begin),(ge,"$tld_war_began",1),(call_script, "script_process_sieges"),(try_end)]),
   
   # (24) Changing readiness to join army - MV: might remove all "readiness" calculations (including this trigger), so we have maximum lord participation in campaigns
-  (10,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+  (10,[(try_for_range, ":troop_no", heroes_begin, heroes_end),
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (assign, ":modifier", 1),
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         (try_begin),
@@ -754,7 +758,7 @@ simple_triggers = [
         (assign, ":attacker_strength", 0),
         (assign, ":marshall_attacking", 0),
 		#not 100% sure, but this double checks for those hosts that actually besiege the center, circles through, collects their individual party strengths and adds it to the sum of the attacker party strength
-        (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+        (try_for_range, ":troop_no", heroes_begin, heroes_end),
           (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
           #(troop_slot_eq, ":troop_no", slot_troop_is_prisoner, 0),
           (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
@@ -848,7 +852,7 @@ simple_triggers = [
           (call_script, "script_begin_assault_on_center", ":center_no"),
         (else_try),
           (eq, ":call_attack_back", 1),
-          (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+          (try_for_range, ":troop_no", heroes_begin, heroes_end),
             (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
             (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
             (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
@@ -869,6 +873,7 @@ simple_triggers = [
   # (27) Reset hero quest status
   # Change hero relation
   (12,[(try_for_range, ":troop_no", heroes_begin, heroes_end),
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (troop_set_slot, ":troop_no", slot_troop_does_not_give_quest, 0),
       (try_end),
       (try_for_range, ":troop_no", mayors_begin, mayors_end),
@@ -937,7 +942,7 @@ simple_triggers = [
   
   # (30) Respawn hero party after kingdom hero is released from captivity.
   (48,  # changed from 48 to 24 in TLD, GA # Changed again to 48, but gave them reinforcements - Kham (TLD 3.5 - Apr 2017)
-    [  (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+    [  (try_for_range, ":troop_no", heroes_begin, heroes_end),
         (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
         (neg|troop_slot_ge, ":troop_no", slot_troop_leaded_party, 1),
@@ -2100,7 +2105,8 @@ simple_triggers = [
       
   ]),
   # (50)
-  (2,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+  (2,[(try_for_range, ":troop_no", heroes_begin, heroes_end),
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         (ge, ":party_no", 1),
         (party_is_active, ":party_no"),
@@ -2309,7 +2315,7 @@ simple_triggers = [
   #NPC changes end
   
   ##(1,
-  ##   [(store_random_in_range, ":random_troop", kingdom_heroes_begin, kingdom_heroes_end),
+  ##   [(store_random_in_range, ":random_troop", heroes_begin, heroes_end),
   ##    (store_random_in_range, ":random_faction", kingdoms_begin, kingdoms_end),
   ##    (store_troop_faction, ":troop_faction", ":random_troop"),
   ##    (neq, ":troop_faction", ":random_faction"),
@@ -2326,7 +2332,7 @@ simple_triggers = [
   # seems to be realted to troops changing factions... why?
   # commenting out for now  (mtarini)
   # (4,
-  # [(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+  # [(try_for_range, ":troop_no", heroes_begin, heroes_end),
   # (troop_slot_ge, ":troop_no", slot_troop_change_to_faction, 1),
   # (store_troop_faction, ":faction_no", ":troop_no"),
   # (troop_get_slot, ":new_faction_no", ":troop_no", slot_troop_change_to_faction),
@@ -2351,8 +2357,8 @@ simple_triggers = [
   # (party_slot_eq, ":cur_center_no", slot_town_lord, ":troop_no"),
   
   # #checking if the party is away from his original faction parties
-  # (assign, ":end_cond", kingdom_heroes_end),
-  # (try_for_range, ":enemy_troop_no", kingdom_heroes_begin, ":end_cond"),
+  # (assign, ":end_cond", heroes_end),
+  # (try_for_range, ":enemy_troop_no", heroes_begin, ":end_cond"),
   # (troop_get_slot, ":enemy_party_no", ":enemy_troop_no", slot_troop_leaded_party),
   # (gt, ":enemy_party_no", 0),
   # (store_faction_of_party, ":enemy_faction_no", ":enemy_party_no"),
@@ -2706,7 +2712,8 @@ simple_triggers = [
           (try_end),
           
           # InVain: Lords have a chance to join a friendly faction
-          (try_for_range, ":defeated_lord", kingdom_heroes_begin, kingdom_heroes_end),
+          (try_for_range, ":defeated_lord", heroes_begin, heroes_end),
+            (troop_slot_eq, ":defeated_lord", slot_troop_occupation, slto_kingdom_hero),
             (store_troop_faction, ":defeated_lord_faction", ":defeated_lord"),
             (eq, ":defeated_lord_faction", ":cur_kingdom"),
             (troop_set_slot, ":defeated_lord", slot_troop_occupation, 0),
@@ -2868,7 +2875,8 @@ simple_triggers = [
             (try_end),
             (call_script, "script_succeed_quest", "qst_guardian_party_quest"),
             (call_script, "script_end_quest", "qst_guardian_party_quest"),
-            (try_for_range, ":lords", kingdom_heroes_begin, kingdom_heroes_end),
+            (try_for_range, ":lords", heroes_begin, heroes_end),
+              (troop_slot_eq, ":lords", slot_troop_occupation, slto_kingdom_hero),
               (store_troop_faction, ":lord_fac", ":lords"),
               (eq, ":lord_fac", "fac_rohan"),
               (troop_get_slot, ":lord_party", ":lords", slot_troop_leaded_party),
@@ -2880,7 +2888,8 @@ simple_triggers = [
 
           (try_begin),
             (faction_slot_ge, ":cur_kingdom", slot_faction_last_stand, 1),
-            (try_for_range, ":scripted_ai_lords", kingdom_heroes_begin, kingdom_heroes_end),
+            (try_for_range, ":scripted_ai_lords", heroes_begin, heroes_end),
+              (troop_slot_eq, ":scripted_ai_lords", slot_troop_occupation, slto_kingdom_hero),
               (troop_get_slot, ":lord_party", ":scripted_ai_lords", slot_troop_leaded_party),
               (gt, ":lord_party", 0),
               (party_is_active, ":lord_party"),
@@ -3588,7 +3597,7 @@ simple_triggers = [
   
   ##Kham - Eff it, lets buff Gondor completely by triggering hiring more often just for the special snowflakes -- Tested, they still suck, but they will be hard to defeat.
   
-  #(12,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+  #(12,[(try_for_range, ":troop_no", heroes_begin, heroes_end),
   #        (store_troop_faction, ":faction"),
   #        (eq, ":faction", "fac_gondor"),
   #        (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),

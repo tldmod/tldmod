@@ -1539,7 +1539,7 @@ scripts = [
 	(faction_set_slot, "fac_player_supporters_faction", slot_faction_state, sfs_inactive),
 	(troop_set_slot, "trp_player", slot_troop_occupation, slto_kingdom_hero),
 	(troop_set_slot, "trp_player", slot_troop_prisoner_of_party, -1),
-	(try_for_range, ":cur_troop", kingdom_heroes_begin, kingdom_heroes_end),
+	(try_for_range, ":cur_troop", heroes_begin, heroes_end),
 		(troop_set_slot, ":cur_troop", slot_troop_prisoner_of_party, -1),
 		(troop_set_slot, ":cur_troop", slot_troop_custom_banner_flag_type, -1),
 		(troop_set_slot, ":cur_troop", slot_troop_custom_banner_map_flag_type, -1),
@@ -1827,6 +1827,9 @@ scripts = [
 	(try_for_range, ":kingdom_hero", kingdom_heroes_begin, kingdom_heroes_end),
 		(troop_add_gold,":kingdom_hero",100000),
 		(store_troop_faction, ":kingdom_hero_faction", ":kingdom_hero"),
+		(is_between, ":kingdom_hero_faction", kingdoms_begin, kingdoms_end),
+		(troop_set_slot, ":kingdom_hero", slot_troop_original_faction, ":kingdom_hero_faction"),
+		(troop_set_slot, ":kingdom_hero", slot_troop_occupation, slto_kingdom_hero),
 	# other heroes get banners like lords, except Rohan & Gondor vassals (which will be overwritten later)
 		(faction_get_slot,":kingdom_leader",":kingdom_hero_faction",slot_faction_leader),
 		(troop_get_slot, ":banner_id", ":kingdom_leader", slot_troop_banner_scene_prop),
@@ -1924,18 +1927,19 @@ scripts = [
 	(party_set_slot, "p_town_woodsmen_village", slot_town_castle_guard_troop, "trp_i5_woodmen_night_guard"), # woodmen exception
 
 # set kingdom_heros status and wealth of heroes and kings
-	(try_for_range, ":troop_id", kingdom_heroes_begin, kingdom_heroes_end),
-		(store_troop_faction, ":faction_id", ":troop_id"),
-		(is_between, ":faction_id", kingdoms_begin, kingdoms_end),
-		(troop_set_slot, ":troop_id", slot_troop_original_faction, ":faction_id"),
-		(troop_set_slot, ":troop_id", slot_troop_occupation, slto_kingdom_hero),
-		# (try_begin), #No wealth in TLD, slot is used for different stuff
-			# (faction_slot_eq, ":faction_id", slot_faction_leader, ":troop_id"),
-			# (troop_set_slot, ":troop_id", slot_troop_wealth, 200000),
-		# (else_try),
-			# (troop_set_slot, ":troop_id", slot_troop_wealth, 60000),
-		# (try_end),
-	(try_end),
+#InVain: Moved this to another kingdom_heroes range above. No need to have duplicate range calls
+	# (try_for_range, ":troop_id", kingdom_heroes_begin, kingdom_heroes_end), 
+		# (store_troop_faction, ":faction_id", ":troop_id"),
+		# (is_between, ":faction_id", kingdoms_begin, kingdoms_end),
+		# (troop_set_slot, ":troop_id", slot_troop_original_faction, ":faction_id"),
+		# (troop_set_slot, ":troop_id", slot_troop_occupation, slto_kingdom_hero),
+		# # (try_begin), #No wealth in TLD, slot is used for different stuff
+			# # (faction_slot_eq, ":faction_id", slot_faction_leader, ":troop_id"),
+			# # (troop_set_slot, ":troop_id", slot_troop_wealth, 200000),
+		# # (else_try),
+			# # (troop_set_slot, ":troop_id", slot_troop_wealth, 60000),
+		# # (try_end),
+	# (try_end),
 	# Add town garrisons
 	(try_for_range, ":center_no", centers_begin, centers_end),
 		(assign, ":initial_wealth", 20000), #Add initial center wealth
@@ -2302,9 +2306,11 @@ scripts = [
 	
 
 	#Init HP shield
+   	#Init Advanced Combat AI
 
-	(try_for_range, ":has_hp_shield", heroes_begin, heroes_end),
-		(troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 200),
+	(try_for_range, ":has_hp_shield", kingdom_heroes_begin, kingdom_heroes_end),
+        (troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 200),
+        (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
 	(try_end),
     
 	(try_for_range, ":has_hp_shield", trp_aragorn, trp_gimli+1),
@@ -2321,6 +2327,14 @@ scripts = [
 
 	(troop_set_slot, "trp_killer_witcher", slot_troop_hp_shield, 200),
 	(troop_set_slot, "trp_badass_theo", slot_troop_hp_shield, 200),
+
+   	(troop_set_slot, "trp_npc5", slot_troop_has_combat_ai, 1), #Glorfindel
+   	(troop_set_slot, "trp_npc13", slot_troop_has_combat_ai, 1), #Lykyada
+
+   	(troop_set_slot, "trp_black_numenorean_sorcerer", slot_troop_has_combat_ai, 1),
+   	(troop_set_slot, "trp_nazgul", slot_troop_has_combat_ai, 1),
+   	(troop_set_slot, "trp_badass_theo", slot_troop_has_combat_ai, 1),
+   	(troop_set_slot, "trp_killer_witcher", slot_troop_has_combat_ai, 1),
 
 	# (call_script, "script_get_hp_shield_value", "trp_moria_troll"),
 
@@ -2339,10 +2353,10 @@ scripts = [
     (troop_set_slot, "trp_black_numenorean_sorcerer", slot_troop_hp_shield, 100),
     (troop_set_slot, "trp_orc_pretender", slot_troop_hp_shield, 50),
     
-	(try_for_range, ":NPC_hp_shield", "trp_npc1", heroes_begin),
+	(try_for_range, ":NPC_hp_shield", companions_begin, companions_end),
 		(troop_set_slot, ":NPC_hp_shield", slot_troop_hp_shield, 1),
 	(try_end),	
-    (try_for_range, ":NPC_hp_shield", "trp_npc18", "trp_werewolf"),
+    (try_for_range, ":NPC_hp_shield", new_companions_begin, new_companions_end),
 		(troop_set_slot, ":NPC_hp_shield", slot_troop_hp_shield, 1),
 	(try_end),	
 
@@ -2376,20 +2390,6 @@ scripts = [
 
 	(assign, "$g_wp_player_hr_active", 1),      # Set to 0 to prevent player regeneration.  1 to activate.
    	(assign, "$g_wp_ai_hr_active", 1),       	  # Set to 0 to prevent AI regeneration.  1 to activate.
-
-   	# Init Advanced Combat AI
-
-   	(try_for_range, ":has_combat_ai", kingdom_heroes_begin, kingdom_heroes_end),
-   		(troop_set_slot, ":has_combat_ai", slot_troop_has_combat_ai, 1),
-   	(try_end),
-
-   	(troop_set_slot, "trp_npc5", slot_troop_has_combat_ai, 1), #Glorfindel
-   	(troop_set_slot, "trp_npc13", slot_troop_has_combat_ai, 1), #Lykyada
-
-   	(troop_set_slot, "trp_black_numenorean_sorcerer", slot_troop_has_combat_ai, 1),
-   	(troop_set_slot, "trp_nazgul", slot_troop_has_combat_ai, 1),
-   	(troop_set_slot, "trp_badass_theo", slot_troop_has_combat_ai, 1),
-   	(troop_set_slot, "trp_killer_witcher", slot_troop_has_combat_ai, 1),
 
 	] or []) + [
 
@@ -2953,7 +2953,8 @@ scripts = [
 					(try_begin),
 						(ge, ":rand", hero_escape_after_defeat_chance),
 						(party_stack_get_troop_id, ":leader_troop_id", ":nonempty_winner_party", 0),
-						(is_between, ":leader_troop_id", kingdom_heroes_begin, kingdom_heroes_end), #disable non-kingdom parties capturing enemy lords
+						(is_between, ":leader_troop_id", heroes_begin, heroes_end), #disable non-kingdom parties capturing enemy lords
+                        (troop_slot_eq, ":leader_troop_id", slot_troop_occupation, slto_kingdom_hero),
 						#                 (party_add_prisoners, ":nonempty_winner_party", ":cur_troop_id", 1), #TLD: lords captured will later be moved to prisoner train
 						(gt, reg0, 0),
 						#(troop_set_slot, ":cur_troop_id", slot_troop_is_prisoner, 1),
@@ -2983,13 +2984,17 @@ scripts = [
 							(lt,":rnd", ":player_level"),
                             (gt, ":nonempty_winner_party", 0),
                             (party_stack_get_troop_id, ":leader_troop_id", ":nonempty_winner_party", 0),
-                            (is_between, ":leader_troop_id", kingdom_heroes_begin, kingdom_heroes_end), #disable non-kingdom parties capturing enemy lords
-							(is_between, ":cur_troop_id", "trp_knight_1_1", kingdom_heroes_end), #kings and marshals cannot die for now
+                            (is_between, ":leader_troop_id", heroes_begin, heroes_end), #disable non-kingdom parties capturing enemy lords
+							(troop_slot_eq, ":leader_troop_id", slot_troop_occupation, slto_kingdom_hero),
+                            #(is_between, ":cur_troop_id", "trp_knight_1_1", heroes_end), #kings and marshals cannot die for now
+                            (troop_slot_eq, ":cur_troop_id", slot_troop_occupation, slto_kingdom_hero),
                             (store_troop_faction, ":cur_troop_faction", ":cur_troop_id"),
                             (neg|faction_slot_eq, ":cur_troop_faction", slot_faction_marshall, ":cur_troop_id"), #make sure it's not a marshall
+                            (neg|faction_slot_eq, ":cur_troop_faction", slot_faction_leader, ":cur_troop_id"), #make sure it's not a marshall
                             # MV: additional random chance to survive if there are too few lords in the faction
                             (assign, ":total_lords", 0), # exclude non-active kings, but count himself
-                            (try_for_range, ":some_lord", kingdom_heroes_begin, kingdom_heroes_end),
+                            (try_for_range, ":some_lord", heroes_begin, heroes_end),
+                                (troop_slot_eq, ":some_lord", slot_troop_occupation, slto_kingdom_hero),
                                 (store_troop_faction, ":some_lord_faction", ":some_lord"),
                                 (eq, ":some_lord_faction", ":cur_troop_faction"),
                                 # is not a king OR is a marshall (=don't count non-active kings)
@@ -3133,7 +3138,8 @@ scripts = [
 						(party_get_num_companion_stacks, ":num_stacks", ":root_winner_party"),
 						(gt, ":num_stacks", 0),
 						(party_stack_get_troop_id, ":leader_troop_no", ":root_winner_party", 0),
-						(is_between, ":leader_troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+						(is_between, ":leader_troop_no", heroes_begin, heroes_end),
+                        (troop_slot_eq, ":leader_troop_no", slot_troop_occupation, slto_kingdom_hero),
 						(party_set_slot, ":root_defeated_party", slot_center_last_taken_by_troop, ":leader_troop_no"),
 					(else_try),
 						(party_set_slot, ":root_defeated_party", slot_center_last_taken_by_troop, -1),
@@ -3144,7 +3150,7 @@ scripts = [
 						(party_slot_ge, ":root_defeated_party", slot_center_destroy_on_capture, 1),
 						(call_script, "script_destroy_center", ":root_defeated_party"),
                         
-                        (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end), #InVain: Maybe this helps avoid parties continuing to attack destroyed centers
+                        (try_for_range, ":troop_no", heroes_begin, heroes_end), #InVain: Maybe this helps avoid parties continuing to attack destroyed centers
                             (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
                             #(troop_slot_eq, ":troop_no", slot_troop_is_prisoner, 0),
                             (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
@@ -3272,8 +3278,9 @@ scripts = [
     (store_script_param_2, ":root_attacker_party"),
       
 	#Fixing deleted heroes
-	(try_for_range, ":cur_troop", kingdom_heroes_begin, kingdom_heroes_end),
-		(troop_get_slot, ":cur_party", ":cur_troop", slot_troop_leaded_party),
+	(try_for_range, ":cur_troop", heroes_begin, heroes_end),
+		(troop_slot_eq, ":cur_troop", slot_troop_occupation, slto_kingdom_hero),
+        (troop_get_slot, ":cur_party", ":cur_troop", slot_troop_leaded_party),
 		(troop_get_slot, ":cur_prisoner_of_party", ":cur_troop", slot_troop_prisoner_of_party),
 		(try_begin),
 			(ge, ":cur_party", 0),
@@ -3326,8 +3333,9 @@ scripts = [
 			(try_end),
 			(eq, ":continue", 1),
 		#searching kingdom heroes
-			(try_for_range, ":cur_troop_2", kingdom_heroes_begin, kingdom_heroes_end),
-				(eq, ":continue", 1),
+			(try_for_range, ":cur_troop_2", heroes_begin, heroes_end),
+				(troop_slot_eq, ":cur_troop_2", slot_troop_occupation, slto_kingdom_hero),
+                (eq, ":continue", 1),
 				(troop_get_slot, ":cur_prisoner_of_party_2", ":cur_troop_2", slot_troop_leaded_party),
 				(party_is_active, ":cur_prisoner_of_party_2"),
 				(party_count_prisoners_of_type, ":amount", ":cur_prisoner_of_party_2", ":cur_troop"),
@@ -3397,7 +3405,8 @@ scripts = [
 	(store_script_param, ":winner_faction", 2),
 	(assign, ":best_party", -1),
 	(assign, ":best_party_strength", 0),
-	(try_for_range, ":kingdom_hero", kingdom_heroes_begin, kingdom_heroes_end),
+	(try_for_range, ":kingdom_hero", heroes_begin, heroes_end),
+        (troop_slot_eq, ":kingdom_hero", slot_troop_occupation, slto_kingdom_hero),
 		(troop_get_slot, ":kingdom_hero_party", ":kingdom_hero", slot_troop_leaded_party),
 		(gt, ":kingdom_hero_party", 0),
 		(store_distance_to_party_from_party, ":dist", ":kingdom_hero_party", ":defeated_center"),
@@ -3640,7 +3649,8 @@ scripts = [
         (try_begin),
           (party_slot_eq, ":party_id", slot_party_type, spt_kingdom_hero_party),
           (party_stack_get_troop_id, ":leader", ":party_id", 0),
-          (is_between, ":leader", kingdom_heroes_begin, kingdom_heroes_end),
+          (is_between, ":leader", heroes_begin, heroes_end),
+          (troop_slot_eq, ":leader", slot_troop_occupation, slto_kingdom_hero),
           (call_script, "script_update_troop_location_notes", ":leader", 0),
         (else_try),
           (is_between, ":party_id", centers_begin, centers_end),
@@ -3648,7 +3658,8 @@ scripts = [
           (try_for_range, ":attached_party_rank", 0, ":num_attached_parties"),
             (party_get_attached_party_with_rank, ":attached_party", ":party_id", ":attached_party_rank"),
             (party_stack_get_troop_id, ":leader", ":attached_party", 0),
-            (is_between, ":leader", kingdom_heroes_begin, kingdom_heroes_end),
+            (is_between, ":leader", heroes_begin, heroes_end),
+            (troop_slot_eq, ":leader", slot_troop_occupation, slto_kingdom_hero),
             (call_script, "script_update_troop_location_notes", ":leader", 0),
           (try_end),
         (try_end),
@@ -3662,7 +3673,8 @@ scripts = [
         (try_begin),
           (party_slot_eq, ":party_id", slot_party_type, spt_kingdom_hero_party),
           (party_stack_get_troop_id, ":leader", ":party_id", 0),
-          (is_between, ":leader", kingdom_heroes_begin, kingdom_heroes_end),
+          (is_between, ":leader", heroes_begin, heroes_end),
+          (troop_slot_eq, ":leader", slot_troop_occupation, slto_kingdom_hero), #just in case
           (call_script, "script_update_troop_location_notes", ":leader", 0),
         (try_end),
 ]),
@@ -4027,7 +4039,8 @@ scripts = [
       (try_begin),
         (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party),
         (gt, ":party_leader", 0), #Kham fix
-        (is_between, ":party_leader", kingdom_heroes_begin, kingdom_heroes_end),
+        (is_between, ":party_leader", heroes_begin, heroes_end),
+        (troop_slot_eq, ":party_leader", slot_troop_occupation, slto_kingdom_hero), #just in case
         (store_faction_of_party, ":faction_id", ":party_no"),
         (assign, ":limit", 40), #InVain: Was 10, increased by 30 to make up for removed renown bonus
 
@@ -4094,7 +4107,8 @@ scripts = [
     (try_end),
 
     (try_begin), #if hero is an exile, they have a smaller party
-        (is_between, ":party_leader", kingdom_heroes_begin, kingdom_heroes_end),
+        (is_between, ":party_leader", heroes_begin, heroes_end),
+        (troop_slot_eq, ":party_leader", slot_troop_occupation, slto_kingdom_hero),
         (troop_get_slot, ":original_faction", ":party_leader", slot_troop_original_faction),
         (neq, ":faction_id", ":original_faction"),
         (val_mul, ":limit", 2),
@@ -4605,7 +4619,8 @@ scripts = [
       (party_get_num_companion_stacks, ":num_stacks", ":party_no"),
       (gt, ":num_stacks", 0),
       (party_stack_get_troop_id, ":troop_no", ":party_no", 0),
-      (is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+      (is_between, ":troop_no", heroes_begin, heroes_end),
+      (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
       (context_menu_add_item, "@View notes", 2),
     (try_end),
     #MV debug stuff
@@ -9034,7 +9049,7 @@ scripts = [
 
               # (faction_get_slot, ":cur_target_troop", ":cur_target_faction", slot_faction_leader),
               # (assign, ":num_centerless_heroes", 0),
-              # (try_for_range, ":cur_kingdom_hero", kingdom_heroes_begin, kingdom_heroes_end),
+              # (try_for_range, ":cur_kingdom_hero", heroes_begin, heroes_end),
                 # (troop_slot_eq, ":cur_kingdom_hero", slot_troop_occupation, slto_kingdom_hero),
                 # #(troop_slot_eq, ":cur_kingdom_hero", slot_troop_is_prisoner, 0),
                 # (neg|troop_slot_ge, ":cur_kingdom_hero", slot_troop_prisoner_of_party, 0),
@@ -9048,7 +9063,7 @@ scripts = [
               # (gt, ":num_centerless_heroes", 0),
               # (assign, ":cur_object_troop", -1),
               # (store_random_in_range, ":random_kingdom_hero", 0, ":num_centerless_heroes"),
-              # (try_for_range, ":cur_kingdom_hero", kingdom_heroes_begin, kingdom_heroes_end),
+              # (try_for_range, ":cur_kingdom_hero", heroes_begin, heroes_end),
                 # (eq, ":cur_object_troop", -1),
                 # (troop_slot_eq, ":cur_kingdom_hero", slot_troop_occupation, slto_kingdom_hero),
                 # (neq, ":cur_target_troop", ":cur_kingdom_hero"),
@@ -10919,7 +10934,7 @@ scripts = [
                (assign, ":siege_lifted", 1),
              (try_end),
              (eq, ":siege_lifted", 1),
-             (try_for_range, ":enemy_hero", kingdom_heroes_begin, kingdom_heroes_end),
+             (try_for_range, ":enemy_hero", heroes_begin, heroes_end),
                (troop_slot_eq, ":enemy_hero", slot_troop_occupation, slto_kingdom_hero),
                (troop_get_slot, ":enemy_party", ":enemy_hero", slot_troop_leaded_party),
                (ge, ":enemy_party", 0),
@@ -11161,7 +11176,8 @@ scripts = [
         #Friendship Rewards Begin
         #Add relation change to friendship reward progress
         (try_begin),
-            (is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+            (is_between, ":troop_no", heroes_begin, heroes_end),
+            (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
             (val_mul, ":difference", 2),
             (call_script, "script_lord_friendship_reward_progress", ":troop_no", ":difference"),
         (try_end),
@@ -15032,7 +15048,8 @@ scripts = [
             ] or []) + [          
         (agent_set_position, ":agent_no", pos1),
       (else_try),
-        (is_between, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+        (is_between, ":troop_no", heroes_begin, heroes_end),
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (assign, ":stand_animation", "anim_stand_lord"),
       (else_try),
         (is_between, ":troop_no", soldiers_begin, soldiers_end),
@@ -16823,7 +16840,8 @@ scripts = [
           (assign, ":continue", 0),
         (else_try),
           (party_stack_get_troop_id, ":leader_troop_id", ":party_no", 0),
-          (neg|is_between, ":leader_troop_id", kingdom_heroes_begin, kingdom_heroes_end),
+          #(neg|is_between, ":leader_troop_id", heroes_begin, heroes_end),
+          (neg|troop_slot_eq, ":leader_troop_id", slot_troop_occupation, slto_kingdom_hero),
           (assign, ":continue", 0),
         (try_end),
         (eq, ":continue", 1),
@@ -16839,7 +16857,8 @@ scripts = [
     [(store_script_param, ":quest_no", 1),
      (store_script_param, ":giver_troop_no", 2),
      (try_begin),
-       (is_between, ":giver_troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+       (is_between, ":giver_troop_no", heroes_begin, heroes_end),
+       (troop_slot_eq, ":giver_troop_no", slot_troop_occupation, slto_kingdom_hero),
        (str_store_troop_name_link, s62, ":giver_troop_no"),
      (else_try),
        (str_store_troop_name, s62, ":giver_troop_no"),
@@ -17006,12 +17025,12 @@ scripts = [
        (try_end),
        (assign, ":num_members", 0),
        (str_store_string, s10, "@noone"),
-       (try_for_range_backwards, ":loop_var", kingdom_heroes_begin - 1, kingdom_heroes_end),
+       (try_for_range_backwards, ":loop_var", heroes_begin - 1, heroes_end),
          (assign, ":cur_troop", ":loop_var"),
          (try_begin),
            #swy: this seems to add an additional initial dummy
            #     entry to the heroes range and replace that by the player. was hardcoded.
-           (eq, ":loop_var", kingdom_heroes_begin - 1),
+           (eq, ":loop_var", heroes_begin - 1),
            (assign, ":cur_troop",     "trp_player"),
            (assign, ":troop_faction", "$players_kingdom"),
          (else_try),
@@ -17307,7 +17326,8 @@ scripts = [
 #script_update_all_notes
 ("update_all_notes",
     [ (call_script, "script_update_troop_notes", "trp_player"),
-      (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+      (try_for_range, ":troop_no", heroes_begin, heroes_end),
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (call_script, "script_update_troop_notes", ":troop_no"),
       (try_end),
       (try_for_range, ":center_no", centers_begin, centers_end),
@@ -17780,7 +17800,8 @@ scripts = [
        (store_num_parties_of_template, ":num_parties", "pt_deserters"),
        (lt,":num_parties",10), #was 15
        (set_spawn_radius, 4),
-       (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+       (try_for_range, ":troop_no", heroes_begin, heroes_end),
+         (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
          (store_random_in_range, ":random_no", 0, 100),
          (lt, ":random_no", 5),
          (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
@@ -18773,7 +18794,8 @@ scripts = [
 #script_event_player_captured_as_prisoner #InVain: Not used in TLD
 ("event_player_captured_as_prisoner",
     [   #Removing followers of the player
-        (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+        (try_for_range, ":troop_no", heroes_begin, heroes_end),
+          (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
           (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
           (gt, ":party_no", 0),
           (party_slot_eq, ":party_no", slot_party_commander_party, "p_main_party"),
@@ -19815,8 +19837,9 @@ scripts = [
 			(eq, "$cheat_mode", 1),
 			(display_message, "@Ally party is present"),
 		(try_end),
-		(try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end),
-			(party_count_companions_of_type, ":hero_present", "p_collective_friends", ":hero"),
+		(try_for_range, ":hero", heroes_begin, heroes_end),
+			(troop_slot_eq, ":hero", slot_troop_occupation, slto_kingdom_hero),
+            (party_count_companions_of_type, ":hero_present", "p_collective_friends", ":hero"),
 			(gt, ":hero_present", 0),
 			(troop_set_slot, ":hero", slot_troop_present_at_event, "$num_log_entries"),
 			#         (store_sub, ":skip_up_to_here", "$num_log_entries", 1),
@@ -22586,7 +22609,8 @@ scripts = [
 #script_display_dead_heroes
 ("display_dead_heroes",[
 	(try_for_range, ":hero", heroes_begin, heroes_end),
-		(troop_slot_eq, ":hero", slot_troop_wound_mask, wound_death),
+		(troop_slot_eq, ":hero", slot_troop_occupation, slto_kingdom_hero),
+        (troop_slot_eq, ":hero", slot_troop_wound_mask, wound_death),
 		(str_store_troop_name, s1, ":hero"),
 		(display_message, "@{s1}_is_logged_as_dead"),
 	(try_end),
@@ -24016,7 +24040,8 @@ scripts = [
 	
 	#clear recipient_initial from any hero troops and prisoners
 	(try_for_range, ":hero", heroes_begin, heroes_end),
-		#(remove_troops_from_prisoners, ":hero",":recipient_initial"), #InVain: This led to a bug where hero prisoners vanished after giving troops to a friend. Since the script isn't called in any situation that might affect heroes or hero prisoners, I think it's save to disable it.
+		(troop_slot_eq, ":hero", slot_troop_occupation, slto_kingdom_hero),
+        #(remove_troops_from_prisoners, ":hero",":recipient_initial"), #InVain: This led to a bug where hero prisoners vanished after giving troops to a friend. Since the script isn't called in any situation that might affect heroes or hero prisoners, I think it's save to disable it.
 		(remove_member_from_party, ":hero",":recipient_initial"),
 	(try_end),
 	(remove_member_from_party, "trp_player",":recipient_initial"),
@@ -25598,7 +25623,7 @@ command_cursor_scripts = [
         (le, "$savegame_version", 32),
         (check_quest_active, "qst_guardian_party_quest"),
         (quest_get_slot, ":attacking_faction", "qst_guardian_party_quest", slot_quest_object_center),
-        (try_for_range, ":lords", kingdom_heroes_begin, kingdom_heroes_end),
+        (try_for_range, ":lords", heroes_begin, heroes_end),
             (store_troop_faction, ":lord_fac", ":lords"),
             (eq, ":lord_fac", ":attacking_faction"),
             (troop_get_slot, ":lord_party", ":lords", slot_troop_leaded_party),
@@ -25633,7 +25658,7 @@ command_cursor_scripts = [
 
     (try_begin), #InVain - assign surgery to lords, turn on lore mode
         (le, "$savegame_version", 35),
-        (try_for_range, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+        (try_for_range, ":lord", heroes_begin, heroes_end),
             (store_troop_faction, ":faction", ":lord"),
             (faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
 	   		(troop_raise_skill, ":lord", skl_surgery, 8),
@@ -27310,7 +27335,8 @@ command_cursor_scripts = [
 	(faction_set_slot, ":faction", slot_faction_ai_state, sfai_default),
 
 	(try_for_range, ":lord", heroes_begin, heroes_end),
-		(store_troop_faction, ":lord_faction", ":lord"),
+		(troop_slot_eq, ":lord", slot_troop_occupation, slto_kingdom_hero),
+        (store_troop_faction, ":lord_faction", ":lord"),
 		(eq, ":lord_faction", ":faction"),
 		(neg|troop_slot_eq, ":lord", slot_troop_wound_mask, wound_death),
 		(call_script, "script_last_faction_stand_aux", ":lord", ":capital"),
@@ -29639,8 +29665,9 @@ if is_a_wb_script==1:
           (try_for_range, ":stack_no", 0, ":num_stacks"),
           	(eq, ":done",0),
             (party_stack_get_troop_id,   ":stack_troop","p_encountered_party_backup",":stack_no"),
-	        (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
-	        (val_add, ":num_heroes", 1),
+	        (is_between, ":stack_troop", heroes_begin, heroes_end),
+	        (troop_slot_eq, ":stack_troop", slot_troop_occupation, slto_kingdom_hero),
+            (val_add, ":num_heroes", 1),
 	        (assign, ":done",1),
           (try_end),
      (try_begin),
@@ -31211,8 +31238,9 @@ if is_a_wb_script==1:
 ("cf_find_target_patrolling_enemy_lord", [
 
 	(assign, ":lord_found", 0),
-	(try_for_range, ":lords", kingdom_heroes_begin, kingdom_heroes_end),
-		(eq, ":lord_found", 0),
+	(try_for_range, ":lords", heroes_begin, heroes_end),
+		(troop_slot_eq, ":lords", slot_troop_occupation, slto_kingdom_hero),
+        (eq, ":lord_found", 0),
 		(neg|troop_slot_eq, ":lords", slot_troop_wound_mask, wound_death), #not dead
 		(call_script, "script_cf_fails_if_sitting_king", ":lords"), #fail if sitting king
 		(troop_get_slot, ":party", ":lords", slot_troop_leaded_party),

@@ -1212,7 +1212,8 @@ morale_scripts = [
                 (store_skill_level, ":troop_leaderskip", skl_leadership, ":troop_type"),
                 (val_add, ":leadership_allies", ":troop_leaderskip"),
                 (this_or_next|eq, ":troop_type", "trp_player"), #double bonus for player or lords
-                (is_between, ":troop_type", kingdom_heroes_begin, kingdom_heroes_end),
+                (is_between, ":troop_type", heroes_begin, heroes_end),
+                (troop_slot_eq, ":troop_type", slot_troop_occupation, slto_kingdom_hero),
                 (val_add, ":leadership_allies", ":troop_leaderskip"),
             (try_end),
             (try_begin),
@@ -1247,7 +1248,8 @@ morale_scripts = [
                 (store_skill_level, ":troop_leaderskip", skl_leadership, ":troop_type"),
                 (val_add, ":leadership_enemies", ":troop_leaderskip"),
                 (this_or_next|eq, ":troop_type", "trp_player"), #double bonus for player or lords
-                (is_between, ":troop_type", kingdom_heroes_begin, kingdom_heroes_end),
+                (is_between, ":troop_type", heroes_begin, heroes_end),
+                (troop_slot_eq, ":troop_type", slot_troop_occupation, slto_kingdom_hero),
                 (val_add, ":leadership_enemies", ":troop_leaderskip"),
             (try_end),
             (try_begin),

@@ -71,6 +71,7 @@ ai_scripts = [
         (call_script, "script_party_calculate_and_set_nearby_friend_strength", ":cur_center"),
       (try_end),
       (try_for_range, ":cur_troop", heroes_begin, heroes_end),
+        (troop_slot_eq, ":cur_troop", slot_troop_occupation, slto_kingdom_hero),
         (troop_get_slot, ":cur_troop_party", ":cur_troop", slot_troop_leaded_party),
         (gt, ":cur_troop_party", 0),
         (party_is_active, ":cur_troop_party"),
@@ -128,7 +129,7 @@ ai_scripts = [
 		 (val_max, ":faction_marshall_army_strength", 1), #InVain: fixes a divide by zero error
          (party_get_slot, ":follower_strength", ":faction_marshall_party", slot_party_follower_strength),
          (val_add, ":faction_marshall_army_strength", ":follower_strength"),
-         (try_for_range, ":cur_troop", kingdom_heroes_begin, kingdom_heroes_end),
+         (try_for_range, ":cur_troop", heroes_begin, heroes_end),
            (troop_slot_eq, ":cur_troop", slot_troop_occupation, slto_kingdom_hero),
            (troop_get_slot, ":cur_party", ":cur_troop", slot_troop_leaded_party),
            (gt, ":cur_party", 0),
@@ -800,10 +801,10 @@ ai_scripts = [
       (assign, ":enemy_strength", 0),
       (store_faction_of_party, ":party_faction", ":party_no"),
 
-      (store_add, ":end_cond", kingdom_heroes_end, 1),      
-      (try_for_range, ":iteration", kingdom_heroes_begin, ":end_cond"),
+      (store_add, ":end_cond", heroes_end, 1),      
+      (try_for_range, ":iteration", heroes_begin, ":end_cond"),
         (try_begin),
-          (eq, ":iteration", kingdom_heroes_end),
+          (eq, ":iteration", heroes_end),
           (assign, ":cur_troop", "trp_player"),
         (else_try),
           (assign, ":cur_troop", ":iteration"),
@@ -869,7 +870,8 @@ ai_scripts = [
   ("faction_get_number_of_armies",
    [  (store_script_param_1, ":faction_no"),
       (assign, ":num_armies", 0),
-      (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+      (try_for_range, ":troop_no", heroes_begin, heroes_end),
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (store_troop_faction, ":hero_faction_no", ":troop_no"),
         (eq, ":hero_faction_no", ":faction_no"),
         (troop_get_slot, ":hero_party", ":troop_no", slot_troop_leaded_party),
@@ -1371,7 +1373,8 @@ ai_scripts = [
             (eq, "p_main_party", ":old_target_to_follow_other_party"),
             (val_add, ":num_available_to_follow", 999),
           (try_end),
-          (try_for_range, ":other_hero", kingdom_heroes_begin, kingdom_heroes_end),
+          (try_for_range, ":other_hero", heroes_begin, heroes_end),
+            (troop_slot_eq, ":other_hero", slot_troop_occupation, slto_kingdom_hero),
             (neq, ":other_hero", ":troop_no"),
             (store_troop_faction, ":troop_faction", ":other_hero"),
             (eq, ":troop_faction", ":faction_no"),
@@ -1406,7 +1409,8 @@ ai_scripts = [
             (eq, ":old_target_to_follow_other_party", ":target_to_follow_other_party"),
             (val_mul, ":chance_to_follow_other_party", 100),
           (try_end),
-          (try_for_range, ":other_hero", kingdom_heroes_begin, kingdom_heroes_end),
+          (try_for_range, ":other_hero", heroes_begin, heroes_end),
+            (troop_slot_eq, ":other_hero", slot_troop_occupation, slto_kingdom_hero),
             (eq, ":target_to_follow_other_party", -1),
             (neq, ":other_hero", ":troop_no"),
             (store_troop_faction, ":troop_faction", ":other_hero"),
@@ -1927,7 +1931,7 @@ ai_scripts = [
 # Output: none
 #called from triggers
 ("process_kingdom_parties_ai",
-    [  (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+    [  (try_for_range, ":troop_no", heroes_begin, heroes_end),
          (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),  # hero not prisoner and has party
          (neg|troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death), #Not dead - Kham
          (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
@@ -2062,7 +2066,8 @@ ai_scripts = [
             (assign, ":enemies_nearby", 0),
             (call_script, "script_party_calculate_regular_strength", ":party_no"),
             (assign, ":our_strength", reg0),
-            (try_for_range, ":enemy_hero", kingdom_heroes_begin, kingdom_heroes_end),
+            (try_for_range, ":enemy_hero", heroes_begin, heroes_end),
+              (troop_slot_eq, ":enemy_hero", slot_troop_occupation, slto_kingdom_hero),
               (store_troop_faction, ":enemy_hero_faction", ":enemy_hero"),
               (store_relation, ":reln", ":enemy_hero_faction", ":faction_no"),
               (lt, ":reln", 0),
@@ -2462,7 +2467,8 @@ ai_scripts = [
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
          (faction_set_slot, ":faction_no", slot_faction_hosts, 0),
       (try_end),
-      (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end), 
+      (try_for_range, ":troop_no", heroes_begin, heroes_end), 
+         (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
          (store_troop_faction, ":troop_faction_no", ":troop_no"),
          (troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
          (gt,":party",0),
@@ -2473,8 +2479,9 @@ ai_scripts = [
          (faction_set_slot, ":troop_faction_no", slot_faction_hosts, ":hosts"),
       (try_end),
       # host spawning conditions
-      (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end), # cycle through heros w/o hosts and try to spawn a host
+      (try_for_range, ":hero", heroes_begin, heroes_end), # cycle through heros w/o hosts and try to spawn a host
          #(neq, ":hero", "trp_isengard_lord"), #Lets not give saruman a host.
+         (troop_slot_eq, ":hero", slot_troop_occupation, slto_kingdom_hero),
          (call_script, "script_cf_fails_if_sitting_king", ":hero"),
          (store_troop_faction, ":troop_faction_no", ":hero"),
          (faction_slot_eq, ":troop_faction_no", slot_faction_state, sfs_active),
@@ -2577,7 +2584,8 @@ ai_scripts = [
          (try_end),
       (try_end),
       
-      (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end),
+      (try_for_range, ":hero", heroes_begin, heroes_end),
+         (troop_slot_eq, ":hero", slot_troop_occupation, slto_kingdom_hero),
          (store_troop_faction, ":troop_faction", ":hero"),
          (faction_slot_eq, ":troop_faction", slot_faction_state, sfs_active),
          (try_begin),
@@ -2590,7 +2598,8 @@ ai_scripts = [
          (call_script, "script_calculate_troop_ai", ":hero"),
       (try_end),
 
-      (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end),
+      (try_for_range, ":hero", heroes_begin, heroes_end),
+         (troop_slot_eq, ":hero", slot_troop_occupation, slto_kingdom_hero),
          (call_script, "script_calculate_troop_ai_under_command", ":hero"),
       (try_end),
    (try_end),
@@ -3269,7 +3278,7 @@ ai_scripts = [
     [
       (store_script_param, ":center_no", 1),
       
-      (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+      (try_for_range, ":troop_no", heroes_begin, heroes_end),
         (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
