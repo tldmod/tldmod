@@ -1,4 +1,4 @@
-2120
+2121
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -104,7 +104,7 @@ qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_Thank_you_for_playin Thank_you_for_playing
-qstr_{!}_rev_456_wb__dev_ {!}_rev_456_wb_|_dev_^_Built_2026-01-24_09:45___
+qstr_{!}_rev_457_wb__dev_ {!}_rev_457_wb_|_dev_^_Built_2026-01-24_09:50___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -969,6 +969,7 @@ qstr_Division_{reg1}_{s2}_f Division_{reg1}_{s2}_forms_line_(memorized).
 qstr_Division_{reg1}_{s2}_fo Division_{reg1}_{s2}_forms_{reg0}_lines_(memorized).
 qstr_A_Nazgul_on_a_winged A_Nazgul_on_a_winged_steed_circles_over_the_battle_field!
 qstr_{!}DEBUG__Health_Reg {!}DEBUG_(Health_Regen):_{s1}_regains_{reg0}%_health.__=_+{reg1}%_STR
+qstr_{reg5?A_group_of:A}_ {reg5?A_group_of:A}_{s1}_has_joined_the_fight_on_{reg6?the_enemy's:your}_side!
 qstr_Your_bear_form_has_{ Your_bear_form_has_{reg2}/{reg1}_HP!
 qstr_{!}DEBUG:_Ti_on_item {!}DEBUG:_Ti_on_item_wielded
 qstr_Underground_battle:_ Underground_battle:_Prepare_to_fight_in_the_dark.

@@ -874,6 +874,7 @@ noxbru_rider_mounts = (ti_on_agent_mount, 0, 0, [],
     (agent_set_slot, ":horse", slot_agent_rider_agent, ":agent"),
   ])
 
+#InVain: BUG, this only triggers at mission start. Probably should trigger at agent spawn
 kham_track_riders = (ti_after_mission_start, 0, ti_once, [],
   [
     (try_for_agents, ":agent_no"),
@@ -1970,6 +1971,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
                 (team_set_relation, 4, 1, -1),
                 (team_set_relation, 4, 3, -1),
                 (team_set_relation, 4, 5, -1),
+                (team_give_order, 4, grc_everyone, mordr_charge),
             (else_try),
                 (agent_set_team, ":agent", 5),
                 (team_set_relation, 5, 0, -1),
@@ -1977,6 +1979,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
                 (team_set_relation, 5, 1, 1),
                 (team_set_relation, 5, 3, 1),
                 (team_set_relation, 5, 4, 1),
+                (team_give_order, 5, grc_everyone, mordr_charge),
             (try_end),
             (agent_force_rethink, ":agent"),
         (else_try), #running amok
@@ -5435,3 +5438,152 @@ tld_battlefield_agent_effects = [
     # (try_end),
   ])
 ]
+
+tld_animals_join_battle =(
+  10, 0, ti_once, [ #this check triggers once per battle, after 90+x seconds - actual spawn conditions are handled in trigger consequences
+    (eq, "$tld_option_animal_ambushes", 1), # Allows option to be toggled on and off.
+	(store_mission_timer_a, ":time"),
+	(ge, ":time", 90),
+    (store_random_in_range, ":rand", 0, 100),
+    (lt, ":rand", 90),
+  ], [
+    (store_character_level, ":player_level", trp_player),
+    (ge,":player_level", 7),
+    #(faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+    (get_player_agent_no, ":player_agent"),
+    
+    (assign, ":ambush_count", "$number_of_combatants"), #calculated in script_calculate_battle_advantage    
+    (assign, ":ambush_troop", 0),
+    (assign, ":side", -1),
+    (assign, ":side_2", -1),
+    (assign, ":dont_use_scene_border", 0),
+    
+	(try_begin), #spiders or werewolves
+		(eq|this_or_next, "$current_player_region", region_n_mirkwood),
+        (eq|this_or_next, "$current_player_region", region_c_mirkwood),
+		(eq, "$current_player_region", region_s_mirkwood),
+        (assign, ":dont_use_scene_border", 0), #Mirkwood scenes may have obstructed scene borders
+        (store_random_in_range, ":rnd", 0, 100),
+        (try_begin),
+            (lt, ":rnd", 10),
+            (faction_slot_ge, "fac_guldur", slot_faction_strength, 2000),
+            (assign, ":ambush_troop", "trp_werewolf"),
+            (val_div, ":ambush_count", 50),
+        (else_try),
+            (assign, ":ambush_troop", "trp_spider"),
+            (val_div, ":ambush_count", 50),
+        (try_end),
+        (assign, ":side", faction_side_eye),
+	(else_try), #bears
+		(eq|this_or_next, "$current_player_region", region_grey_mountains),
+        (eq|this_or_next, "$current_player_region", region_misty_mountains),
+        (eq|this_or_next, "$current_player_region", region_s_misty_mountains),
+        (eq, "$current_player_region", region_n_anduin_vale),
+		(store_random_in_range, ":rnd", 0, 100),
+        (lt, ":rnd", 40), #bear can fail, so that wild trolls and wolves have a chance
+        (assign, ":ambush_troop", "trp_bear"),
+        (assign, ":side", faction_side_good),
+        (val_div, ":ambush_count", 80),
+    (else_try), #trolls and wolves
+        (eq|this_or_next, "$current_player_region", region_the_wold),
+        (eq|this_or_next, "$current_player_region", region_n_undeep),
+        (eq|this_or_next, "$current_player_region", region_s_undeep),
+		(eq|this_or_next, "$current_player_region", region_w_emyn_muil),
+        (eq|this_or_next, "$current_player_region", region_grey_mountains),
+        (eq|this_or_next, "$current_player_region", region_misty_mountains),
+        (eq|this_or_next, "$current_player_region", region_s_misty_mountains),
+        (eq, "$current_player_region", region_n_anduin_vale),
+        (store_random_in_range, ":rnd", 0, 100),
+        (try_begin),
+            (lt, ":rnd", 20),
+            (assign, ":ambush_troop", "trp_wild_troll"),
+            (val_div, ":ambush_count", 100),
+        (else_try),
+            (assign, ":ambush_troop", "trp_wolf"),
+            (val_div, ":ambush_count", 20),
+        (try_end),
+        (try_begin), #trolls and wolves can join both hand and eye
+            (eq, "$tld_war_began", 2), #WoTT
+            (store_random_in_range, ":side", 1, 3),
+        (else_try),
+            (assign, ":side", faction_side_hand),
+            (assign, ":side_2", faction_side_eye),
+        (try_end),
+	(try_end),
+    
+    #find out which side they should spawn on
+    (assign, ":parent_agent", -1),
+    (try_for_agents, ":agent_no"),
+        (eq, ":parent_agent", -1),
+        (agent_is_alive, ":agent_no"),
+        (agent_is_human, ":agent_no"),
+        (neq, ":agent_no", ":player_agent"),
+        (agent_get_party_id, ":agent_party", ":agent_no"),
+        (store_faction_of_party, ":agent_fac", ":agent_party"),
+        (this_or_next|faction_slot_eq, ":agent_fac", slot_faction_side, ":side"),
+        (faction_slot_eq, ":agent_fac", slot_faction_side, ":side_2"),
+        (assign, ":parent_agent", ":agent_no"),
+    (try_end),
+    
+    (ge, ":parent_agent", 0),
+    #apply wildcraft bonus / malus
+    (party_get_skill_level, ":wildcraft", p_main_party, "skl_persuasion"),
+    (assign, reg6, 0), #for message string
+    (try_begin),
+        (neg|agent_is_ally, ":parent_agent"),
+        (val_mul, ":wildcraft", -1),
+        (assign, reg6, 1),
+        (troop_slot_eq, trp_traits, slot_trait_animal_fighter, 1), #animal fighter: further reduce chance for hostile animals
+        (val_sub, ":wildcraft", -3), 
+    (try_end),
+    
+    (store_add, ":chance", 10, ":wildcraft"), #0-20
+    (store_random_in_range, ":rnd2", 0, 100),
+    (le, ":rnd2", ":chance"),
+    
+    #assign to uncontrollable allied team
+    (try_begin),
+        (agent_is_defender, ":parent_agent"),
+        (assign, ":spawn_entry", 1),
+        (assign, ":animal_team", 4),
+        (team_set_relation, 4, 0, 1),
+        (team_set_relation, 4, 2, 1),
+        (team_set_relation, 4, 1, -1),
+        (team_set_relation, 4, 3, -1),
+        (team_set_relation, 4, 5, -1),
+    (else_try),
+        (assign, ":animal_team", 5),
+        (assign, ":spawn_entry", 4),
+        (team_set_relation, 5, 0, -1),
+        (team_set_relation, 5, 2, -1),
+        (team_set_relation, 5, 1, 1),
+        (team_set_relation, 5, 3, 1),
+        (team_set_relation, 5, 4, 1),
+    (try_end),
+    
+    #debug
+    # (str_store_agent_name, s10, ":parent_agent"),
+    # (display_message, "@parent_agent: {s10}"),
+    # (assign, reg77, ":ambush_count"),
+    # (display_message, "@ambush_count: {reg77}"),
+    
+    (val_clamp, ":ambush_count", 1, 30),
+    (try_begin),
+        (eq, ":dont_use_scene_border", 1),
+        (entry_point_get_position, pos4, ":spawn_entry"),
+    (else_try),
+        (call_script, "script_find_exit_position_at_pos4", ":parent_agent"), #pretty cool script that finds the nearest scene border
+    (try_end),
+    (try_for_range, ":unused", 0, ":ambush_count"), 
+        (set_spawn_position, pos4),
+        (spawn_agent, ":ambush_troop"),
+        (agent_set_team, reg0, ":animal_team"),
+        (agent_set_is_alarmed, reg0, 1),
+        (agent_force_rethink, reg0),
+        (position_move_x, pos4, 150),
+    (try_end),
+    (team_give_order, ":animal_team", grc_everyone, mordr_charge),
+    (str_store_troop_name_by_count, s1, ":ambush_troop", ":ambush_count"),
+    (store_sub, reg5, ":ambush_count", 1), #so it's 0 or higher
+    (display_message, "@{reg5?A group of:A} {s1} has joined the fight on {reg6?the enemy's:your} side!"),
+]) 

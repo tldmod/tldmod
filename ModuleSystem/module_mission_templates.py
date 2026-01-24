@@ -547,7 +547,6 @@ tld_warg_leap_attack = ((is_a_wb_mt==1) and [
 ] or [])
 
 
-
 tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
 
   (ti_on_agent_spawn, 0,0, [
@@ -656,7 +655,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
         (team_set_relation, 5, 1, 1),
         (team_set_relation, 5, 3, 1),
         (team_set_relation, 5, 4, 1),
-        (team_give_order, 4, grc_everyone, mordr_charge),
+        (team_give_order, 5, grc_everyone, mordr_charge),
     (try_end),
     (agent_force_rethink, ":animal"),
   ]),
@@ -703,6 +702,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     hp_shield_trigger,
     health_restore_on_kill,
     common_battle_init_banner,
+    tld_animals_join_battle,
 
     #Batching
     batching_agent_spawn_human,
