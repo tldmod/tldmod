@@ -465,7 +465,7 @@ tld_archer_aim_fix = (0, 0, 0, [(eq,"$field_ai_archer_aim",1)],
               (val_add, ":check_time", 100),
               (agent_set_slot, ":agent1", slot_agent_tick_check_time, ":check_time"),
               (try_begin),
-                (agent_slot_eq, ":agent1", agent_aim_overridden, 0), # override only once
+                (agent_slot_eq, ":agent1", slot_agent_aim_overridden, 0), # override only once
 
                 # is agent a very good shooter? (not necessary?)
                 (store_proficiency_level, ":prof", ":troop1", wpt_archery),
@@ -482,7 +482,7 @@ tld_archer_aim_fix = (0, 0, 0, [(eq,"$field_ai_archer_aim",1)],
                 # is shooter in the process of aiming?
                 (agent_get_combat_state, ":state", ":agent1"),
                 (eq, ":state", 1),  
-                #(agent_set_slot, ":agent1", agent_aim_overridden, 1),
+                #(agent_set_slot, ":agent1", slot_agent_aim_overridden, 1),
                 (agent_ai_get_look_target,":agent2", ":agent1"),
                 
                 # is target alive? (not necessary?)
@@ -556,7 +556,7 @@ tld_archer_aim_fix_on_release = (0, 0, 0, [(eq,"$field_ai_archer_aim",1)],
           (agent_is_non_player, ":agent1"),
           (agent_is_active, ":agent1"),
           (agent_get_slot, ":check_time", ":agent1", slot_agent_tick_check_time),
-          (agent_get_slot, ":is_aiming", ":agent1", agent_aim_overridden),
+          (agent_get_slot, ":is_aiming", ":agent1", slot_agent_aim_overridden),
           (try_begin),
             (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
             (val_add, ":check_time", 100),
@@ -566,7 +566,7 @@ tld_archer_aim_fix_on_release = (0, 0, 0, [(eq,"$field_ai_archer_aim",1)],
               (agent_get_attack_action, ":action", ":agent1"),
               (eq, ":action", 0),
             
-              (agent_set_slot, ":agent1", agent_aim_overridden, 0),
+              (agent_set_slot, ":agent1", slot_agent_aim_overridden, 0),
             (try_end),
           (try_end),
           (agent_get_slot, ":check_time", ":agent1", slot_agent_period_reset_time),
@@ -1076,19 +1076,19 @@ tld_footwork_melee_ai = (0.25, 0, 0, [(eq,"$field_ai_lord",1)],
       
       (team_get_movement_order, ":order", ":team1", grc_everyone),#Only free if charging
       (try_begin),
-        (agent_get_slot, ":free_pathing", ":agent1", agent_is_free_of_pathing),
+        (agent_get_slot, ":free_pathing", ":agent1", slot_agent_is_free_of_pathing),
         (try_begin),
           (neq, ":order", 2),
           (neq, ":free_pathing", 1),
           (assign, ":free_pathing", 1),
           (agent_clear_scripted_mode, ":agent1"),
           (agent_force_rethink, ":agent1"),
-          (agent_set_slot, ":agent1", agent_is_free_of_pathing, ":free_pathing"),
+          (agent_set_slot, ":agent1", slot_agent_is_free_of_pathing, ":free_pathing"),
         (else_try),
           (eq, ":order", 2),
           (eq, ":free_pathing", 1),
           (assign, ":free_pathing", 0),
-          (agent_set_slot, ":agent1", agent_is_free_of_pathing, ":free_pathing"),
+          (agent_set_slot, ":agent1", slot_agent_is_free_of_pathing, ":free_pathing"),
         (try_end),
         (eq, ":free_pathing", 1),
       (else_try),

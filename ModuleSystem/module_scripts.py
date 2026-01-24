@@ -22030,15 +22030,15 @@ scripts = [
            (neg|party_is_active, "p_legend_deadmarshes"),
            (enable_party, "p_legend_deadmarshes"),
            (display_log_message, "@A new location is now available on the map!", color_good_news),
-           (party_set_slot, "p_legend_amonhen", slot_legendary_visited, 0),
-           (party_set_slot, "p_legend_amonhen", slot_legendary_explored, 0),
+           (party_set_slot, "p_legend_deadmarshes", slot_legendary_visited, 0),
+           (party_set_slot, "p_legend_deadmarshes", slot_legendary_explored, 0),
          (else_try),
            (eq, ":string", "str_legendary_rumor_mirkwood"),
            (neg|party_is_active, "p_legend_mirkwood"),
            (enable_party, "p_legend_mirkwood"),
            (display_log_message, "@A new location is now available on the map!", color_good_news),
-           (party_set_slot, "p_legend_amonhen", slot_legendary_visited, 0),
-           (party_set_slot, "p_legend_amonhen", slot_legendary_explored, 0),
+           (party_set_slot, "p_legend_mirkwood", slot_legendary_visited, 0),
+           (party_set_slot, "p_legend_mirkwood", slot_legendary_explored, 0),
          (else_try),
            (this_or_next|eq, ":string", "str_legendary_rumor_begin"),
            (eq, ":string", "str_legendary_rumor_fangorn"),
@@ -22046,8 +22046,8 @@ scripts = [
            (neg|party_is_active, "p_legend_fangorn"),
            (enable_party, "p_legend_fangorn"),
            (display_log_message, "@A new location is now available on the map!", color_good_news),
-           (party_set_slot, "p_legend_amonhen", slot_legendary_visited, 0),
-           (party_set_slot, "p_legend_amonhen", slot_legendary_explored, 0),
+           (party_set_slot, "p_legend_fangorn", slot_legendary_visited, 0),
+           (party_set_slot, "p_legend_fangorn", slot_legendary_explored, 0),
          (try_end),
        (try_end),
        (str_store_string, s61, ":string"),
@@ -28428,7 +28428,7 @@ command_cursor_scripts = [
       (spawn_around_party, ":home_center", "pt_none"),
       (assign, ":guard_party", reg0),
       (faction_set_slot, ":faction", slot_faction_guardian_party, ":guard_party"),
-      (faction_set_slot, ":faction", slot_faction_guardian_party_spawned, 1),
+      #(faction_set_slot, ":faction", slot_faction_guardian_party_spawned, 1), #slot isn't needed
       
       #party slots
       (str_store_faction_name, s6, ":faction"),
@@ -31513,7 +31513,7 @@ if is_a_wb_script==1:
 ]),
 
 #script_cf_surrounded_pushback
-#not used anymore, troll surround attack has been simplified
+#unused, troll surround attack has been simplified
 ("cf_surrounded_pushback", [
 	(store_script_param_1, ":agent"),\
 	(store_script_param_2, ":step"),
@@ -31524,7 +31524,7 @@ if is_a_wb_script==1:
 
 	(set_fixed_point_multiplier, 100),
 
-    (agent_slot_eq, ":agent", slot_troll_agent_charging, 0), #troll should not be charging
+    #(agent_slot_eq, ":agent", slot_troll_agent_charging, 0), #troll should not be charging
 	
 	(assign, ":counter", 0),
 

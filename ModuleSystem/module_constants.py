@@ -222,6 +222,25 @@ slot_agent_array_number         = 30
 slot_agent_original_team        = 31
 slot_agent_base_horse_speed	    = 32 #needed for keeping horse speed factor between triggers
 
+slot_agent_hp_shield_active = 43 #Modified Vyrn HP Shield - kham
+slot_agent_hp_shield = 44 #Modified Vyrn HP Shield - kham
+
+#Aiming slots (agent slot)
+slot_agent_aim_overridden = 302
+
+#Track Mount and Rider Slots (agent slot) 
+#These are reserved for the "damage fallen riders" trigger and are cleared on dismount, so don't use for anything else
+slot_agent_horse_agent = 303
+slot_agent_rider_agent = 304
+
+#AI footwork Slots (agent slot)
+slot_agent_is_free_of_pathing = 307
+
+#More agent slots
+# 8XX = PBOD
+# 9XX = NewFormAI
+# 10XX = agent batching
+
 ########################################################
 ##  FACTION SLOTS          #############################
 ########################################################
@@ -239,6 +258,27 @@ slot_faction_leader               = 10
 
 slot_faction_number_of_parties    = 20
 slot_faction_state                = 21
+
+#slot_faction_state values
+sfs_active                     = 0
+sfs_defeated                   = 1
+sfs_inactive                   = 2
+sfs_inactive_rebellion         = 3
+sfs_beginning_rebellion        = 4
+
+
+#slot_faction_ai_state values
+sfai_default                   = 0
+sfai_gathering_army            = 1
+sfai_attacking_center          = 2
+sfai_raiding_village           = 3
+sfai_attacking_enemy_army      = 4
+sfai_attacking_enemies_around_center = 5
+#Rebellion system changes begin
+sfai_nascent_rebellion          = 6
+#Rebellion system changes end
+
+
 slot_faction_scripted_until      = 22 #scripted AI mode blocks regular calculations, slot stores campaign hours
 
 slot_faction_player_alarm         = 30
@@ -316,11 +356,30 @@ slot_faction_occasional_sound3_night = 178
 slot_faction_temp_value = 179 # temp values used for various scripts
 slot_faction_guardian_party = 180 # keeps the party ID of the guardian party, spawned when the faction is dying
 
+#Adv Camps Revamp
+slot_faction_theater_retreated_from = 181
+
+slot_faction_guardian_party_spawned = 181 #unused
+slot_faction_allowed_follow = 182
+slot_faction_last_stand = 183
+
+#Rank Trigger Slots (faction slot)
+slot_faction_war_council = 184 #unused, was only used for notification menu
+slot_faction_siege_reports = 185 #unused, was only used for notification menu
+
+#FORM V5 (defined below)
+# slot_faction_d0_mem_formation           = 200
+# slot_faction_d0_mem_formation_space     = 209
+# slot_faction_d0_mem_relative_x_flag     = 218
+# slot_faction_d0_mem_relative_y          = 227
+
 # slots for stealth missions companion tracking
-slot_fcomp_troopid = 1
-slot_fcomp_agentid = 2
-slot_fcomp_hp      = 3
-slot_fcomp_kia     = 4
+#InVain: Unsure if these are still used, but better make sure they don't overwrite existing slots: Made them start with 30X
+slot_fcomp_troopid = 301
+slot_fcomp_agentid = 302
+slot_fcomp_hp      = 303
+slot_fcomp_kia     = 304
+
 
 ##################################
 
@@ -604,7 +663,7 @@ slot_center_walker_soldiers_found = 299
 
 #Legendary Places Slots (party slot)
 slot_legendary_visited = 300
-slot_legendary_explored = 301
+slot_legendary_explored = 301 #unused
 
 #Exploration Points Party Slots
 slot_exploration_point_1 = 302
@@ -613,6 +672,16 @@ slot_exploration_point_3 = 304
 slot_exploration_point_4 = 305
 
 slot_center_ideal_battle_size = 306
+
+#New Party Creation/Removal system (party slot)
+#slot_party_dormant = 306 #unused
+
+#Regular Parties Follow Player
+slot_party_number_following_player = 307
+
+slot_party_battle_encounter_effect = 308
+slot_party_scripted_ai = 309
+slot_party_has_companion = 310
 
 #slot_party_type values
 #spt_ruined_center      = 1 # TLD
@@ -638,24 +707,6 @@ spt_bandit             = 18 #WTH, native doesn't have a spt for bandits?! (TLD f
 kingdom_party_types_begin = spt_patrol
 kingdom_party_types_end = spt_guardian + 1
 
-#slot_faction_state values
-sfs_active                     = 0
-sfs_defeated                   = 1
-sfs_inactive                   = 2
-sfs_inactive_rebellion         = 3
-sfs_beginning_rebellion        = 4
-
-
-#slot_faction_ai_state values
-sfai_default                   = 0
-sfai_gathering_army            = 1
-sfai_attacking_center          = 2
-sfai_raiding_village           = 3
-sfai_attacking_enemy_army      = 4
-sfai_attacking_enemies_around_center = 5
-#Rebellion system changes begin
-sfai_nascent_rebellion          = 6
-#Rebellion system changes end
 
 #slot_party_ai_state values
 spai_undefined                  = -1
@@ -933,6 +984,11 @@ slot_troop_routed_us 		= 135
 slot_troop_routed_allies 	= 136
 slot_troop_routed_enemies 	= 137
 
+#swy-- used exclusively for the player, should be a global var,
+#      but the game doesn't update them/read them well inside
+#      hardcoded callback scripts such as <game_get_upgrade_cost>
+slot_troop_forbid_companion_upgrade_mode = 139
+
 # WEAPON MERCHANT ITP AVAILABILITY SLOTS -- warband only (=troop slots)
 
 #swy-- we use the slot range from [138 + 0x2 = 140] to [138 + 0x0f = 153] of the dummy 'trp_skill2item_type' troop
@@ -956,19 +1012,26 @@ slot_troop_shop_aval_itp_itp_type_body_armor     = slot_troop_shop_aval_itp_coun
 slot_troop_shop_aval_itp_itp_type_foot_armor     = slot_troop_shop_aval_itp_counter_base + itp_type_foot_armor     # 152
 slot_troop_shop_aval_itp_itp_type_hand_armor     = slot_troop_shop_aval_itp_counter_base + itp_type_hand_armor     # 153
 
-#swy-- used exclusively for the player, should be a global var,
-#      but the game doesn't update them/read them well inside
-#      hardcoded callback scripts such as <game_get_upgrade_cost>
-slot_troop_forbid_companion_upgrade_mode = 139
+
+slot_troop_hp_shield = 154 #Modified Vyrn HP Shield - kham
+
+slot_troop_player_clone = 155
+slot_troop_has_custom_armour = 156
+slot_troop_has_combat_ai = 157
+
+# Guildmaster Companion Strings Start
+slot_troop_gm_companion_ask = 158
+slot_troop_gm_companion_none = 159
+slot_troop_gm_companion_player_none = 160
+slot_troop_gm_companion_player_found = 161
+slot_troop_gm_companion_1 = 162
+slot_troop_gm_companion_2 = 163
 
 # Troll Hiring Constants
 slot_troop_troll_armoured_variant = 164 #Gets the armoured variant of a troll troop.
 
-#Retainers Begin
-
+#Retainers 
 slot_troop_retainer_troop = 165 #What type of troop (if any) a lord uses as their personal retainers
-
-#Retainers End
 
 #Friendship Rewards Begin
 
@@ -986,8 +1049,15 @@ friendship_reward_end = 3
 slot_troop_is_night_troop = 169
 slot_troop_is_berserker = 170
 
+#Healer Slots (troop slot)
+slot_troop_needs_healing = 308
+
+#Adv Camp Reserve Party (troop slot)
+slot_troop_player_reserve_adv_camp = 309
+
 
 # TRAIT SLOTS (=troop slots)
+# these are only applied to trp_traits
 tld_first_trait_string = "str_trait_title_elf_friend"
 
 slot_trait_elf_friend        = 1
@@ -1061,9 +1131,6 @@ slot_party_template_num_killed   = 1
 # Ryan END
 
 ########################################################
-rel_enemy   = 0
-rel_neutral = 1
-rel_ally    = 2
 
 
 #Talk contexts
@@ -2481,7 +2548,7 @@ slot_party_skirmish_d5 = slot_town_arena_melee_2_team_size
 slot_party_skirmish_d6 = slot_town_arena_melee_3_num_teams
 slot_party_skirmish_d7 = slot_town_arena_melee_3_team_size
 slot_party_skirmish_d8 = slot_town_arena_melee_cur_tier
-slot_agent_is_skirmisher = 32
+#slot_agent_is_skirmisher = 832
 
 #PBOD Preference Slots (used for p_main_party; available 72 - 108)
 slot_party_pref_div_dehorse  = 400        
@@ -2493,13 +2560,13 @@ slot_party_pref_dmg_tweaks   = 405
 
 
 #Agent Slots
-slot_agent_lance         = 33
-slot_agent_horsebow      = 34
-slot_agent_spear         = 35
-slot_agent_horse         = 36
-slot_agent_volley_fire   = 37
-slot_agent_alt_div_check = 40
-slot_agent_new_division  = 41
+slot_agent_lance         = 833
+slot_agent_horsebow      = 834
+slot_agent_spear         = 835
+slot_agent_horse         = 836
+slot_agent_volley_fire   = 837
+slot_agent_alt_div_check = 840
+slot_agent_new_division  = 841
 
 #Order Constants
 no_order  = -1
@@ -2516,29 +2583,9 @@ end       = 0
 
 ##Kham PBOD Additions END
 
-#Aiming slots (agent slot)
-agent_aim_overridden = 302
 
-#Track Mount and Rider Slots (agent slot) 
-#These are reserved for the "damage fallen riders" trigger and are cleared on dismount, so don't use for anything else
-slot_agent_horse_agent = 303
-slot_agent_rider_agent = 304
 
-#Rank Trigger Slots (faction slot)
-slot_faction_war_council = 305
-slot_faction_siege_reports = 306
 
-#New Party Creation/Removal system (party slot)
-slot_party_dormant = 306
-
-#AI Slots (agent slot)
-agent_is_free_of_pathing = 307
-
-#Healer Slots (troop slot)
-slot_troop_needs_healing = 308
-
-#Adv Camp Reserve Party (troop slot)
-slot_troop_player_reserve_adv_camp = 309
 
 #Morale Penalties / bonuses
 low_party_morale = 30
@@ -2569,9 +2616,6 @@ def sq(distance):
 #Labels
 max_distance_to_see_labels = 1500
 
-#Adv Camps Revamp
-
-slot_faction_theater_retreated_from = 181
 
 
 # Armour Customization Constants
@@ -2606,10 +2650,7 @@ key_for_ranged    = key_back_slash
 key_for_shield_up   = key_apostrophe
 key_for_noshield =  key_slash
 
-#Modified Vyrn HP Shield - kham
-slot_troop_hp_shield = 154
-slot_agent_hp_shield_active = 43
-slot_agent_hp_shield = 44
+
 
 ## Health Restore on Kill begin
 #  Rates listed below are per kill, not based on duration.  They are also % of health, not exact values.
@@ -2627,16 +2668,12 @@ wp_hr_diff_ally_penalty            = -3  # Amount the health regeneration of all
 wp_hr_debug                        = 0   # This turns ON (1) or OFF (0) all of the debug messages.
 ## Health Restore on Kill end
 
-slot_nazgul_timer = 46
+# slot_nazgul_timer = 46 #unused
 
 #Intro strings
 
 intro_strings_begin = str_gondor_faction_intro
 intro_strings_end = str_intro_faction_intro_strings_end
-
-#Regular Parties Follow Player
-slot_party_number_following_player = 307
-slot_faction_allowed_follow = 182
 
 #Batching
 slot_agent_tick_check_time = 1000
@@ -2803,7 +2840,7 @@ slot_faction_d0_mem_relative_y          = 227
 slot_agent_formation_rank      = 927
 slot_agent_inside_formation    = 928
 slot_agent_nearest_enemy_agent = 929
-slot_agent_new_division        = 930
+#slot_agent_new_division        = 930 #DUPLICATE
 slot_agent_positioned          = 931 #InVain: Also used for checking if agent is in formation, for example in order to disable horse archer AI
 
 slot_item_alternate            = 46	#table between swing/noswing versions of same weapon
@@ -2830,15 +2867,10 @@ mission_tpl_are_all_agents_spawned     = 1943   # (mission_tpl_are_all_agents_sp
 
 fac_str_reinforcement_boost = 1000 #Kham
 
-slot_faction_last_stand = 307
-slot_faction_guardian_party_spawned = 308
 
 slot_item_light_armor = 86
 
-slot_troop_player_clone = 155
-slot_troop_has_custom_armour = 156
 
-slot_party_battle_encounter_effect = 308
 
 NO_EFFECT_PRESENT = 0
 LORIEN_MIST = 1
@@ -2875,26 +2907,8 @@ MAX_HEALTH_DEBUFF = 90
 ENCOUNTER_EFFECT_MORALE_BUFF = 10
 ENCOUNTER_EFFECT_MORALE_DEBUFF = 10
 
-slot_party_scripted_ai = 309
 
 
-slot_troll_agent_charging = 50 #unused
-slot_troll_agent_last_charge = 51 #unused
-
-OLOG_ENT_HP_SHIELD = 320
-MORIA_TROLL_HP_SHIELD = 500
-
-slot_troop_has_combat_ai = 157
-
-# Guildmaster Companion Strings Start
-slot_troop_gm_companion_ask = 158
-slot_troop_gm_companion_none = 159
-slot_troop_gm_companion_player_none = 160
-slot_troop_gm_companion_player_found = 161
-slot_troop_gm_companion_1 = 162
-slot_troop_gm_companion_2 = 163
-
-slot_party_has_companion = 310
 
 # Control allies
 player_control_allies_inf = 3
