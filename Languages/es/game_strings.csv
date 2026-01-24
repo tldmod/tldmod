@@ -1895,7 +1895,7 @@ str_trait_desc_bravery|Has adquirido una reputación por tu gran valentía frent
 str_trait_title_oathkeeper|{Cumplidor/Cumplidora} de juramentos
 str_trait_desc_oathkeeper|Has pronunciado terribles juramentos y has vivido para cumplirlos. Por ello has adquirido la reputación de ser alguien de palabra. Cada vez que obtienes influencia, hay una pequeña posibilidad de recibir una bonificación de influencia.
 str_trait_title_oathbreaker|{Perjuro/Perjura}
-str_trait_desc_oathbreaker|Has pronunciado terribles juramentos y no has podido cumplirlos. Por ello has adquirido la reputación de seralguien cuya exaltación supera sus capacidades. Cada vez que obtienes influencia, hay una pequeña posibilidad de recibir una penalización de influencia.
+str_trait_desc_oathbreaker|Has pronunciado terribles juramentos y no has sabido cumplirlos. Por lo que has adquirido una reputación de ser alguien que habla más que hace. Así que cada vez que obtengas influencia sufrirás una pequeña posibilidad de perderla.
 str_trait_title_orc_pit_champion|{Campeón/Campeona} del reñidero orco
 str_trait_desc_orc_pit_champion|Has obtenido una fama de {guerrero/guerrera} brutal gracias a que has sido capaz de sobrevivir a duelos contra los orcos más crueles. Tal exhibición de fuerza es al mismo tiempo respetada y temida por tus seguidores de negro corazón, y desde ahora reciben una bonificación semanal a la moral.
 str_trait_title_despoiler|{Saqueador/Saqueadora}
@@ -2252,7 +2252,7 @@ str_npc18_payment_response|De eso no hay duda. Los subordinados de Lurmsakun's n
 str_npc19_payment_response|El Jefe Daeglaf tendrá que ceder ante mis deseos, una vez que se los haya comunicado. [cuesta {reg14}/{reg15} de Influencia]
 str_npc20_payment_response|Por supuesto que sí. ¡Vamos! Después de todo, no es un miserable snaga a quien vas a seguir. [cuesta {reg14}/{reg15} de Influencia]
 str_npc21_payment_response|Intente lo que intente, tú te vienes conmigo. [cuesta {reg14}/{reg15} de Influencia]
-str_npc22_payment_response|Confia en mí, serás más útil a nuestra causa si vienes conmigo. [cuesta {reg14}/{reg15} de Influencia]
+str_npc22_payment_response|Confía en mí, serás más útil a nuestra causa si vienes conmigo. [cuesta {reg14}/{reg15} de Influencia]
 str_npc23_payment_response|De ahora en adelante, tu deber está conmigo. [cuesta {reg14}/{reg15} de Influencia]
 str_npc24_payment_response|El señor Dwalin entenderá que un buen guerrero enano no puede pasar demasiado tiempo alejado de nuestros enemigos. [cuesta {reg14}/{reg15} de Influencia]
 str_npc25_payment_response|El bienestar del Rey es importante, pero salvarás más vidas si vienes conmigo. [cuesta {reg14}/{reg15} de Influencia]

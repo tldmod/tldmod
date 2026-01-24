@@ -259,7 +259,7 @@ mno_moria_exit_scene|Искать путь наружу!
 ; menu_moria_escape_sucess|^^After countless hours in the darkness, you finally find a staircase that leads up.  At first it is barely noticeable, but it steadily gets lighter. Finally — a junction that you remember. After a few more steps, you are out in the open.  Your troops have been waiting anxiously for you and can't wait to leave this valley as quickly as possible.
 ; mno_moria_exit_found|Get out of here!
 menu_castle_outside|Перед вами {s2}.{s11} {s3} {s4}
-; mno_cheat_steal_book_door|Inspect the tomb...
+mno_cheat_steal_book_door|Осмотреть гробницу...
 mno_moria_enter|Вернуться в главный зал Мории через потайной вход
 mno_moria_enter_door|Войти в Морию.
 mno_castle_start_siege|Нет.
@@ -343,7 +343,7 @@ menu_recover_after_death_town_alone|Вы пришли в сознание где
 menu_notification_center_under_siege|{s2} из {s3} осадил {s1}!
 menu_notification_one_side_left|^^^^^Война Кольца окончена!^^{s1} уничтожили всех врагов и победили!
 ; mno_go_to_capital|Visit your capital and celebrate the victory...
-; mno_exit_game1|Exit
+mno_exit_game1|Выйти
 menu_notification_total_defeat|^^^^^Война Кольца окончена для вас!^^{s1} уничтожены врагами, и вы остались один перед лицом разгрома!
 menu_notification_your_faction_collapsed|^^^^^Ваша родина - {s11} - была уничтожена!^Однако оставшиеся союзники продолжают вести войну. Вместе с немногими уцелевшими воинами фракции {s11} вы можете помочь вашим союзникам выиграть.
 menu_notification_faction_defeated|^^^^^Державы {s1} больше не существует!^^Она повержена силами из земель {s13}!
@@ -447,14 +447,14 @@ menu_isengard_flooding|^^^^^@ Вас окружают мертвые враги 
 mno_isengard_continue|Продолжить
 menu_build_your_scene|Вы можете создать ваше собственное место битвы здесь, используя один из слотов, предоставленных ниже и игровой Режим Редактирования (вам необходимо включить Edit Mode в лаунчере M&B на экране настроек). Вы можете потом представить вашу созданную локацию (а именно, файлы sco из папки TLD/SceneObj) команде TLD, и, если ваша локация удалась, она может появиться в следующих выпусках как одна из случайных полей битв!^^ Попытайтесь определить, на какой области карты должна появляться ваша локация.^ Пара подсказок: избегайте глубокой воды, крутых гор и других непроходимых мест, если только вы не опытный создатель локаций и знаете, как воспрепятствовать перемещению солдат ИИ в ненужные места и направить их в нужные.^ (Вход #0-1 для атакующих, #4 для защитников, не трогать #5-8
 mno_back_3dot|Назад...
-; menu_wott_expelled_from_faction|For your betrayal, you were expelled from your faction and {s11} has named you an outlaw and an enemy of the {reg11?Hand:Eye}. As an exile, you are now forced to join {s3}.
+menu_wott_expelled_from_faction|За ваше предательство вас исключили из фракции, и {s11} объявил вас преступником и врагом {reg11?Белой Длани:Ока}. Будучи изгнанником, теперь вы вынуждены присоединиться к другой фракции. {s3} - ваш новый хозяин.
 ; menu_wott_stay_with_faction|{s11} applauds your wise counsel. Your faction follows your example and collectively joins {s12}.
 ; menu_fulfilled_oath_personal|^As {s5} lies in the dust before you, a heavy burden is lifted from your shoulders. The death of {s6} has been avenged!
 ; menu_fulfilled_oath_personal_nokill|^Your troops recognize that you have defeated {s10} repeatedly and should rightfully be seen as {reg11?her:his} worst foe. Your oath is considered fulfilled. ^^The enemy paid dearly for the killing of {s11}. Still, there is a stale taste to this victory.
 ; menu_oath_quest_fail|You swore a bitter oath and you bitterly failed to keep it. Your enemies laugh at your failure, and all your friends suffer from the shame you have brought upon them. In all the lands of Middle-earth, you shall be known as an oathbreaker.
 ; menu_campaign_won|^^^Thank you for playing The Last Days of the Third Age!
 ; mno_credits_tld|TLD Credits
-; mno_exit_game2|Quit to main menu
+mno_exit_game2|Выйти в главное меню
 mno_back|Назад.
 mno_next|Далее...
 mno_previous|Назад...

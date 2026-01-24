@@ -72,7 +72,7 @@ qstr_Man|Человек
 qstr_Elf|Эльф
 qstr_Dwarf|Гном
 qstr_Whom_Do_You_Serve?|Кому ты служишь?
-; qstr_The_Age_of_Men_has_f|The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth! Whom will you serve?
+qstr_The_Age_of_Men_has_f|Эпоха Людей наконец-то закончилась. Теперь Две Башни собирают оставшихся воинов и союзников, чтобы решить, кто станет единоличным правителем Средиземья! Кому будете служить вы?
 qstr_SAURON_of_Mordor_The|САУРОНУ, повелителю Мордора, Властелину Колец
 qstr_SARUMAN_of_Isengard_|САРУМАНУ, повелителю Изенгарда, Белой Длани
 qstr_an_ORC^_serving_the_|ОРК,^ прислужник немигающего Ока
@@ -81,7 +81,7 @@ qstr_a_MAN^_subjugated_by|ЧЕЛОВЕК,^ подчинённый воле Са�
 qstr_an_ORC^_serving_the_W|ОРК,^ слуга Белой Длани
 qstr_one_of_the_URUK_HAI^|УРУК-ХАЙ,^выведенный в Изенгарде
 qstr_a_MAN_of_Dunland^_th|ЧЕЛОВЕК из Дунланда,^ с равнин на Западе
-; qstr_Thank_you_for_playin|Thank you for playing
+qstr_Thank_you_for_playin|Спасибо за игру!
 qstr_Click_the_center_but|Нажмите кнопку, чтобы переключить фракцию^Нажмите на аватар, чтобы просмотреть детали
 qstr_Level:_{reg3}^Health|Уровень: {reg3}^Здоровье: {reg4}
 qstr_Attributes|Параметры
@@ -123,11 +123,11 @@ qstr_Default_Camera|Камера по умолчанию
 qstr_Free_Mode_Custom_Cam|Свободная настраиваемая камера
 qstr_Fixed_Over_The_Shoul|Закреплённая камера - на плече игрока
 qstr_Brighter_Nights:__|Светлые ночи: 
-; qstr_Allow_to_use_bow_wit|Allow to use bow with small shields:  
+qstr_Allow_to_use_bow_wit|Позволяет использовать лук с малыми щитами:
 ; qstr_No__regular_troops_o|No (regular troops only)
 ; qstr_Companions_only|Companions only
 ; qstr_Player_only|Player only
-; qstr_Yes|Yes
+qstr_Yes|Да
 qstr_Done|Сделано
 qstr_Gameplay_Tweaks|Настройка геймплея... 
 qstr_Set_to_Native_if_you|Установите режим Native, если вы столкнетесь с какими-либо проблемами с искусственным интеллектом во время боя.
@@ -631,7 +631,7 @@ qstr_But_I...|Но я...
 qstr_Noone..._oppossssses|Никто... не с-с-с-сможет выс-с-ступить... против Барад-Дура... и ос-с-с-статьс-ся живым!
 qstr_All..._must..._submi|Всякий... должен... покориться... и... стать слугой...
 qstr_I_serve_the_Eye!|Я служу Оку!
-; qstr_Your_time_is_over_wr|Your time is over, wraith, begone! Now begins the Age of the White Hand!
+qstr_Your_time_is_over_wr|Твое время истекло, призрак! Прочь! Начинается эпоха Белой Длани!
 qstr_Go_to_{s1}_and_speak|Отправляйся в {s1} и поговори с {s9}.
 qstr_The_Remnant_Forces_o|Уцелевшие силы из {s22} собрались чтобы присоединиться к {s15}!
 qstr_The_strength_of_the_|Сила оставшихся союзных фракций {s15} возросла.
@@ -716,10 +716,10 @@ qstr_The_host_of_Isengard|Хозяин Изенгарда разрушил {s2}!
 ; qstr_The_battlefield_is_a|The battlefield is a dark forest.
 ; qstr_The_battlefield_is_f|The battlefield is forested.
 ; qstr_The_battlefield_is_a_|The battlefield is a treacherous marshland.
-; qstr_A_golden_mist_from_L|A golden mist from Lórien covers the battlefield.
-; qstr_Dark_clouds_from_Mor|Dark clouds from Mordor cover the battlefield.
-; qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the battlefield.
-; qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield.
+qstr_A_golden_mist_from_L|Золотой туман из Лориена покрывает поле боя.
+qstr_Dark_clouds_from_Mor|Тёмные тучи из Мордора покрывают поле боя.
+qstr_A_thunderstorm_from_|Над полем боя бушует гроза, спускающаяся с Мглистых гор.
+qstr_A_poisonous_fog_from|Ядовитый туман из Дол-Гулдура витает над полем боя.
 ; qstr_The_defenses_consist|The defenses consist of dark tunnels and underground halls.
 ; qstr_The_defenses_lie_in_|The defenses lie in the shadow of tall trees, blocking out the sunlight.
 ; qstr_The_defenses_lie_in_t|The defenses lie in the shadow of steep cliffs, blocking out the sunlight.
@@ -766,13 +766,13 @@ qstr_ready_polearms|приготовить копья
 qstr_shields_up|щиты наизготовку
 qstr_doff_shields|убрать щиты
 qstr_Distance___{reg70}__|Расстояние - {reg70} - {s11} Отряд - {s12}
-; qstr_A_golden_mist_from_L|A golden mist from Lórien covers the battlefield.
+qstr_A_golden_mist_from_L|Золотой туман из Лориена покрывает поле боя.
 qstr_A_golden_mist_from_Lr|Золотой туман Лориена застилает поле битвы. Ведьма совсем рядом. Она насылает дрожь по спине ваших воинов.
-; qstr_Dark_clouds_from_Mor|Dark clouds from Mordor cover the battlefield.
+qstr_Dark_clouds_from_Mor|Тёмные тучи из Мордора покрывают поле боя.
 qstr_Dark_clouds_from_Mord|Тёмные облака Мордора сгущаются на полем битвы. Присутствие Тёмного Владыки придаёт сил вам и вашим воинам.
-; qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the battlefield.
+qstr_A_thunderstorm_from_|Над полем боя бушует гроза, спускающаяся с Мглистых гор.
 qstr_A_thunderstorm_from_t|Над полем брани бушует гроза из Туманных Гор. Лучникам стало трудно целиться в такую погоду.
-; qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield.
+qstr_A_poisonous_fog_from|Ядовитый туман из Дол-Гулдура витает над полем боя.
 qstr_A_poisonous_fog_from_|Ядовитый туман из Дол Гулдура навис прямо над полем битвы. Вы не чувствуете ничего особенного, но слышите, как страдают ваши враги. Вы чувствуете их страх.
 qstr_You_shapeshift_into_|Вы превратились в медведя!
 qstr_You_got_{reg1}_exper|У вас {reg1} опыта в обличье медведя.
@@ -793,7 +793,7 @@ qstr_This_place_was_once_|Когда-то это место было убежи�
 qstr_Tirith_Aear_the_Sea_|Тирит Эар. Башня, Стерегущая Море - уже много веков медленные звуки её колокола указывают путь морякам.
 qstr_You_kneel_to_pay_you|Ты преклоняешь колени, чтобы выразить свое почтение павшим правителям этого прекрасного королевства. Рядом с тобой воительница Рохана поёт свою песню.. ^Ne sceal hearpan sweg wigend weccean; ne winfaet gylden guma sceal healdan! ^Твоё сердце щемит, когда ты слышишь её слова.
 qstr_You_wonder_about_the|Вы удивляетесь двум рядам курганов перед воротами, но, будучи простым {s24}ом, не понимаете их значения.
-; qstr_The_Toy_market_of_Da|The Toy market of Dale, A wonder of the North, bustling with sellers, workshops and craftsmen. Beautiful are the toys sold and crafted here, horns, pipes and drums. A buyer with a good eye can make great deals here.
+qstr_The_Toy_market_of_Da|Рынок игрушек в Дейле, настоящее чудо Севера, кипит жизнью: здесь множество торговцев, мастерских и ремесленников. Тут продаются и изготавливаются прекрасные игрушки: рога, дудки и барабаны. Покупатель с острым глазом может заключить здесь выгодные сделки.
 qstr_With_trepidation_you|С трепетом вы заглядываете в серебряную чашу. Вода являет вам ужасные картины: кровь, ужас и скорбь. Вы отшатываетесь... но затем видения исчезают, и вместо них вы видите чистое ночное небо, по которому, как вам кажется, плывет серебряная лодка. Вас охватывает чувство спокойствия. Надежда еще не совсем угасла.\n\n
 qstr_The_Lady_s_garden_li|Сад Госпожи мирно раскинулся в ярком дневном свете. Вы не чувствуете ничего необычного...
 ; qstr_Bees_big_as_a_thumb_|Bees big as a thumb swarm all around you, gathering nectar from the flowering meadows. They make the wonderful honey prized by Beorn's folk for their cakes.
@@ -801,16 +801,16 @@ qstr_A_flock_of_ravens_ci|Вокруг тебя кружит стая ворон
 ; qstr_A_fierce_fight_happe|A fierce fight happened here. Curiously, among the withered remains of both dwarves and goblins, you see bodies of orcs that were slain not long ago. ^^You should take a closer look at the ruined tomb.
 qstr_Alkarondas_Castle_of|Алькарондас, Морской Замок. Названный в честь знаменитого флагмана Ар-Фаразона, этот огромный черный корабль является гордостью корсарского флота и ужасом побережья Гондора.
 qstr_The_Mmakil_greatest_|Мумакил, величайшие звери этой эпохи! Ужасающие в сражениях, они несут в битву башни с лучниками.  Громовой рёв их хоботов, подобный военным трубам, заставит людей Гондора дрожать от страха.
-; qstr_The_famous_Variag_fi|The famous Variag fighting pits. Here, young warriors and war slaves fight for the right to join the ranks of the Variag warrior caste. Only the strongest survive and become the elite of their people. The others are left lying in the mud.
+qstr_The_famous_Variag_fi|Знаменитые бойцовские ямы варягов. Здесь молодые воины и боевые рабы сражаются за право вступить в ряды варяжской касты воинов. Только сильнейшие выживают и становятся элитой своего народа. Остальные остаются лежать в грязи.
 ; qstr_If_you_were_more_ski|If you were more skilled, you might be able to learn a thing or two from watching the fights.
 ; qstr_Watching_the_fights_|Watching the fights, you were able to pick up a few tricks.
 ; qstr_Gained_weapon_profic|Gained weapon proficiencies.
 qstr_A_new_Power_is_risin|Поднимается новая Сила. Против неё не устоят старые союзы. Её победа близка, и тех, кто помогал ей, ждет богатая награда.
 qstr_As_you_explore_the_c|Исследуя пещеры под Кольцом Изенгарда, где тысячи орков работают на снабжение растущих армий Белой Руки, ты обретаешь уверенность в появлении новой державы и гибели старого мира.
 qstr_The_Ring_of_Isengard|Кольцо Изенгарда затоплено, его каменные стены лежат в руинах. Пройдёт некоторое время, прежде чем вся грязь Сарумана будет смыта и Изен снова очистится. ^Кто знает,  быть может, это место ещё превратится вновь в сад, наполненный деревьями, плодами и чистой водой.
-; qstr_You_have_found_the_s|You have found the secret passage into Mordor, the pass of Cirith Ungol. Beyond those stairs, you sense a dark will ling in wait. You realize that you should not pursue this path any further if you value your own life.
-; qstr_A_great_man_was_tort|A great man was tortured here, his remains still held in place by cruel chains and cold will. You do not know who he was, yet you understand that such terrible fate awaits all who dare to oppose the Dark Lord.
-; qstr_You_endure_the_horro|You endure the horrors of the Dead City and explore its innermost circles. The Silent Watchers recognise your boldness and don't oppose you.
+qstr_You_have_found_the_s|Вы обнаружили тайный проход в Мордор, перевал Кирит-Унгол. Вы чувствуете, что за этими ступенями вас поджидает темная воля. Вы понимаете, что не следует идти по этому пути дальше, если ваша жизнь вам ещё дорога.
+qstr_A_great_man_was_tort|Здесь пытали великого человека, и его останки до сих пор скованы жестокими цепями и холодной волей. Вы не знаете, кем он был, но понимаете, что эта ужасная участь ожидает всех, кто осмеливается противостоять Тёмному Властелину.
+qstr_You_endure_the_horro|Вы выдержали ужасы Мёртвого Города и исследуете его самые сокровенные уголки. Безмолвные Соглядатаи признают вашу смелость и не оказывают вам сопротивления.
 ; qstr__You_gained_1_Charis|(You gained 1 Charisma.)
 qstr_You_endure_the_horror|Ты вытерпел{/а} ужасы невыразимых ритуалов в этом священном месте. Жестокие жители Руна осознают силу, которую ты продемонстрировал{/а}, и несколько самых могучих из них решают присоединиться к твоему отряду.
 ; qstr_Your_hackles_rise_as|Your hackles rise as you look around you, and you begin to feel a strange sense of danger. Raising your weapon high, you snarl your defiance at the unseen foe in this place. This may have been a place of wonder once... but now, with the true power you have gained, you realize you have nothing to fear from the forgotten past of a broken world.
@@ -1267,7 +1267,7 @@ qstr_{s1}_is_scouted.|{s1} разведан.
 ; qstr_{s1}_managed_to_esca|{s1} managed to escape the downfall of {s2} and found refuge in {s3}.
 ; qstr_{s3}_gained_faction_|{s3} gained faction strength.
 qstr_{s2}_was_defeated!|Держава {s2} потерпела поражение!
-; qstr_The_Age_of_Men_has_f|The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth! Whom will you serve?
+qstr_The_Age_of_Men_has_f|Эпоха Людей наконец-то закончилась. Теперь Две Башни собирают оставшихся воинов и союзников, чтобы решить, кто станет единоличным правителем Средиземья! Кому будете служить вы?
 qstr_The_War_of_the_Two_T|Война Двух Твердынь началась!
 qstr_The_forces_of_{s22}_|Держава {s22} стала сильнее! Теперь она {s23}.
 qstr_The_might_of_{s22}_h|Держава {s22} стала слабее! Теперь она {s23}.

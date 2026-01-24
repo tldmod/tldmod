@@ -59,7 +59,7 @@ qstr_Legs|Piernas
 qstr_Rotate|Girar
 qstr_Close|Cerrar
 qstr_Faction_Side:^^Campa|Bando de la facción:^^Dificultad de campaña*:^^Frente inicial:^^Mariscal:^^Enemigos:^^
-qstr_Campaign_Difficulty_|La dificultad de la campaña está basada en la fuerza inicial de la facción, los enemigos que hay en su frente inicical,^ y el árbol de tropas de la facción y su equipamiento.
+qstr_Campaign_Difficulty_|La dificultad de la campaña depende de la fuerza inicial de la facción, de los enemigos que hay en su frente inicial,^ y del árbol de tropas de la facción y su equipamiento.
 qstr_Rallies:|Arengas:
 qstr_View_Keybinds__Press|Ver lista de teclas (pulsa Insert)
 qstr_What_do_you_fight_fo|¿Por qué luchas?
@@ -694,7 +694,7 @@ qstr_A_few_of_your_enemie|Unos pocos de tus enemigos están huyendo de la batall
 qstr_Your_troops_flee_in_|¡Tus tropas huyen aterrorizadas!
 qstr_Many_of_your_troops_|Gran parte de tus tropas están huyendo de la batalla.
 qstr_Some_of_your_troops_|Una parte de tus tropas están huyendo de la batalla.
-qstr_A_few_of_your_troops|Una paequeña parte de tus tropas están huyendo de la batalla.
+qstr_A_few_of_your_troops|Una pequeña parte de tus tropas están huyendo de la batalla.
 qstr_Gained_permanent_+1_to_P|Has conseguido +1 punto permanente de Busca-rutas.
 qstr_Gained_permanent_+1_to_S|Has conseguido +1 punto permanente de Avistamiento.
 qstr_{s11}_recovered_from|{s11} se ha recuperado de una herida seria.
@@ -786,9 +786,9 @@ qstr_As_the_lights_begin_|Entre las luces que titilan y bailan, las ves: caras h
 qstr_This_must_be_the_spi|Este debe de ser el nido de arañas. Sin vacilación, enciendes una antorcha y prendes fuego a las telarañas. Esto eliminará la amenaza de las arañas en el Bosque Negro.
 qstr_You_have_explored_th|Has explorado las cuevas y has experimentado la belleza de Aglarond, una de las maravillas del mundo septentrional. Sientes que has ganado un entendimiento más profundo de todas las maravillas que se ocultan bajo tierra.
 qstr_You_see_the_Pelennor|Ves ante ti la extensión del Pelennor. Al otro lado, las ruinas de Osgiliath, antaño la capital de Gondor, de la que Minas Tirith era solo una fortaleza. Detrás, desdibujados por la distancia, los picos mellados de las Montañas de Mordor, y más allá, una oscuridad todavía más profunda. Los hombres de la Ciudad Blanca han vivido siempre con esa oscuridad a la vista.
-qstr_You_happen_upon_an_O|Te encuentras ante una vieja hostería. Mientras inspeccionas el desgastado edificio de piedra, reparas en un grupo de muchachos jugando entre las columnas, los únicos niños que has visto en  Minas Tirith.  Uno de ellos te saluda y tú le devuelves el gesto. Tu corazón se llena de alegría y olvidas, por un breve instante, los pesares de la guerra.
+qstr_You_happen_upon_an_O|Te encuentras ante una vieja hostería. Mientras inspeccionas el desgastado edificio de piedra, reparas en un grupo de muchachos jugando entre las columnas, los únicos niños que has visto en Minas Tirith. Uno de ellos te saluda y tú le devuelves el gesto. Tu corazón se llena de alegría y olvidas, por un breve instante, los pesares de la guerra.
 qstr_As_you_look_from_the|Mientras miras desde la alta proa de la isla adonde las aguas del  Anduin, el Gran Río, se dividen en dos brazos, comprendes por qué Cair Andros significa 'Barco de la Larga Espuma'.
-qstr_You_look_through_Hen|Miras a través de la cortina de agua de Henneth Annûn, la Ventana del Sol Poniente. La hermosa vista restaura tu fe en el Oeste y enlos Poderes de más allá.
+qstr_You_look_through_Hen|Miras a través de la cortina de agua de Henneth Annûn, la Ventana del Sol Poniente. La hermosa vista restaura tu fe en el Oeste y en los Poderes de más allá.
 qstr_This_place_was_once_|Este lugar fue antaño un puerto élfico, pero hoy en día solo las ruinas dan testimonio de esta herencia. Quedan pocos que conozcan su verdadero significado.
 qstr_Tirith_Aear_the_Sea_|Tirith Aear, la Torre del Mar: sus lentas campanadas han guiado a los marineros durante muchos siglos.
 qstr_You_kneel_to_pay_you|Te arrodillas para presentar tus respetos a los soberanos caídos de este hermoso reino. A tu lado, una doncella guerrera de Rohan entona un cántico. «Ne sceal hearpan sweg wigend weccean; ne winfaet gylden guma sceal healdan!». Tu corazón se estremece al oír sus palabras.

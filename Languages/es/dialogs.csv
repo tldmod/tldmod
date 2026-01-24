@@ -346,7 +346,7 @@ dlga_tld_intro_1:lord_pretalk|Tutorial de Guerra:^^- Las facciones solo iniciar�
 dlga_lord_start:lord_pretalk|Ah, {bienvenido/bienvenida}, {s24}.^Ya deberías saber que {s12}. Tu deber es ayudarnos en nuestra lucha, {playername}. Cuando hayas demostrado ser {digno/digna} de mi confianza [nivel {reg1}], te daré acceso a ese cofre de ahí, para que puedas almacenar tus pertenencias.
 dlga_lord_start:lord_talk|¿Qué es lo que quieres?
 dlga_lord_pretalk:lord_talk|¿Algo más? 
-dlga_lord_talk:lord_lend_companion_end|Me gustaría tener de vuelta a {s14}, {s65}, si ya no necesitas  {reg3?sus:sus} servicios.
+dlga_lord_talk:lord_lend_companion_end|Me gustaría tener de vuelta a {s14}, {s65}, si ya no necesitas {reg3?sus:sus} servicios.
 dlga_lord_lend_companion_end:lord_pretalk|Llevas a demasiados soldados en tu compañía, {playername}. No puedes llevar a nadie más de momento.
 dlga_lord_lend_companion_end:lord_pretalk.1|Por supuesto, {playername}. Es {reg3?una excelente doncella:un tipo excelente}, tienes suerte de contar con semejante compañía.
 dlga_lord_talk:lord_message_delivered|Traigo un mensaje de {s9}.
