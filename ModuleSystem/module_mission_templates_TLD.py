@@ -3412,7 +3412,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
      (agent_set_animation, ":agent", "anim_hide_inside_warg"),
      (val_add,"$animal_is_present",1),#reused for counting active animals, keep in mind that we only ever add to this counter - dying animals won't be substracted, because the array slots are not reordered
      (assign, ":upper_range", 1000),
-     (try_for_range, ":slot", 0, ":upper_range"), #assign to array
+     (try_for_range, ":slot", 1, ":upper_range"), #assign to array, leave out 0, because that would be the default slot value for slot_agent_array_number
         (troop_slot_eq, "trp_array_animals", ":slot", -1),
         (troop_set_slot, "trp_array_animals", ":slot", ":agent"),
         (agent_set_slot, ":agent", slot_agent_array_troop, "trp_array_animals"),       
@@ -3436,7 +3436,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (eq, ":mount_itm", "itm_werewolf"),
     (agent_get_slot, ":rider", ":killed", slot_agent_mount_orig_rider),
     (agent_is_active, ":rider"),
-    (agent_slot_eq, ":rider", slot_agent_array_troop, "trp_array_animals"),
+    # (agent_slot_eq, ":rider", slot_agent_array_troop, "trp_array_animals"), #in theory, this should always be true anyway. But the check isn't needed, so we leave it out just in case.
     (agent_get_slot, ":slot", ":rider", slot_agent_array_number),
     (troop_set_slot, "trp_array_animals", ":slot", -1),
         # (str_store_agent_name, s5, ":rider"),
@@ -3455,6 +3455,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
   ]),
   
   # deal with dismounted riders, just in case
+  # hopefully not needed for now, but keeping this in case there's still bugs with invisible riders persisting
   # tld_remove_riderless_animals =(
  # (1, 0, 0, [(ge, "$animal_is_present",1)], [
   # (try_for_agents, ":agent"),
@@ -3471,24 +3472,6 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
   # (try_end),
 # ])
 
-   # # deal with dismounted riders, just in case
-   # (ti_on_agent_dismount, 0, 1, [
-    # # Now check if agent that is dismounting is player agent (coz only he can be in bear form)
-     # (store_trigger_param_1, ":agent"),
-     # (store_trigger_param_2, ":horse"),
-     # (agent_is_alive, ":horse"),
-     # (agent_is_human, ":agent"),
-     # (agent_get_troop_id,":troopid", ":agent"),
-     # (this_or_next|is_between,  ":troopid", "trp_spider", "trp_array_animals"),
-     # (eq, ":troopid", "trp_werewolf"),
-   # ],[
-    # (store_trigger_param_1, ":agent"),
-    # (store_trigger_param_2, ":horse"),
-    # (agent_is_active, ":agent"),
-    # (call_script, "script_remove_agent", ":agent"),
-    # (agent_start_running_away, ":horse"),
-   # ]),
-
   #animal attacks
   #checks every 0.5 second, trigger delay is 0.6 seconds, rearms after 1 second, 
   #TODO find correct timing of trigger effect based on the attack animation
@@ -3496,7 +3479,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
   (ge, "$animal_is_present",1),
   (set_fixed_point_multiplier, 100),
   (assign, ":agent_found", 0),
-  (try_for_range, ":slot", 0, "$animal_is_present"),
+  (store_add, ":upper count", "$animal_is_present", 1),
+  (try_for_range, ":slot", 1, ":upper count"),
     (le, ":agent_found", 5), #not more than 5 animals strike at a time
     #(store_random_in_range, ":slot", 0, "$animal_is_present"),
     (troop_get_slot, ":agent", "trp_array_animals", ":slot"),
@@ -3516,6 +3500,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (try_begin), #deal with dismounted riders, just in case
         (lt, ":horse", 0),
         (call_script, "script_remove_agent", ":agent"),
+    (else_try),
+        (agent_set_slot, ":horse", slot_agent_mount_orig_rider, ":agent"), #there seems to be a problem with getting the mount at spawn, so we set the slot here
     (try_end),
     
     (ge, ":horse", 0),
@@ -3524,13 +3510,15 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (neq, ":current_anim", "anim_horse_rear_twice"),
 
     # (assign, reg78, ":slot"),
-    (str_store_agent_name, s5, ":agent"),
+    # (str_store_agent_name, s5, ":agent"),
     # (display_message, "@{s5} found in slot {reg78}"),
  
     #find cached enemies and check position
     (agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":agent"),
     (gt, ":num_nearby_agents", 0),
     (assign, ":enemy_in_front", 0),
+    (agent_get_speed, pos9, ":agent"),
+    (position_get_y, ":speed", pos9),
     (agent_get_position, pos6, ":agent"),
     (position_move_y, pos6, 50), #this helps with the position_is_behind_position operation
     (assign, ":smallest_dist", 600),
@@ -3546,6 +3534,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         # (assign, reg78, ":dist"),
         # (display_message, "@distance: {reg78}"),
       (assign, ":smallest_dist", ":dist"),
+      (this_or_next|le, ":speed", 50), #if speed is low, assume we're surrounded and trigger attack.
       (neg|position_is_behind_position, pos8, pos6), #2, 1
       (assign, ":enemy_in_front", 1),
     (try_end),
@@ -3553,19 +3542,6 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (eq, ":enemy_in_front", 1),
         # (assign, reg78, ":smallest_dist"),
         # (display_message, "@enemy in front, smallest distance: {reg78}"),
-    #Kham - Let's increase the likelihood of special attacks for the big guys, as charge attacks are not enough
-    # (try_begin),
-      # (eq, ":agent_trp", "trp_wolf"),
-      # (assign, ":chance", 45),
-    # (else_try),
-      # (assign, ":chance", 55),
-    # (try_end),
-
-    # #Chance is calculated and checked here:
-    # (store_random_in_range, ":rnd", 0, 100),
-    # (lt, ":rnd", ":chance"),
-    #(display_message, "@{s5} strikes"),
-    
     
     (agent_set_slot, ":agent", slot_agent_animal_is_striking, 0), # store aoe range as slot value
     #this slot can be overridden in the on_agent_hit trigger below, thus making it possible to stun the animal
@@ -3574,11 +3550,9 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (assign, ":anim", "anim_bear_slap_right"),
     (store_random_in_range, ":rnd_2", 0, 100),
     (try_begin), #first check: leap attack if moving fast
-      #(this_or_next|eq, ":agent_trp", "trp_bear"), 
+      (this_or_next|eq, ":agent_trp", "trp_bear"), #bears need this to keep up with wargs
       (this_or_next|eq, ":agent_trp", "trp_wolf"),
       (eq, ":agent_trp", "trp_werewolf"),
-      (agent_get_speed, pos9, ":agent"),
-      (position_get_y, ":speed", pos9),
       # (assign, reg78, ":speed"),
       # (display_message, "@speed: {reg78}"),
       (gt, ":speed", 400),
@@ -3665,7 +3639,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
 
   (set_fixed_point_multiplier, 100),
   (get_player_agent_no, ":player_agent"),
-  (try_for_range, ":slot", 0, "$animal_is_present"), #circle through slot array
+  (store_add, ":upper count", "$animal_is_present", 1),
+  (try_for_range, ":slot", 1, ":upper count"), #circle through slot array
     (troop_get_slot, ":agent", "trp_array_animals", ":slot"),
     (agent_is_active, ":agent"),
     (agent_is_alive, ":agent"),
@@ -3790,7 +3765,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
   [
     (store_trigger_param_1, ":agent"),
     (store_trigger_param_3, ":damage"),
-    (ge, ":damage", 10),
+    (ge, ":damage", 15),
     # (assign, reg78, ":damage"),
     # (display_message, "@damage to animal: {reg78}"),
     (agent_get_animation, ":current_anim", ":agent"),
@@ -3802,7 +3777,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     
     #assign sound
     (try_begin),
-        (ge, ":damage", 15),
+        (ge, ":damage", 20),
         (agent_get_item_id,":mount_itm",":agent"),
         (try_begin),
           (eq, ":mount_itm", "itm_spider"),
@@ -4065,4 +4040,3 @@ tld_campaign_won =  ((is_a_wb_mt==1) and [
   
 	] or [])
     
-

@@ -2799,11 +2799,12 @@ slot_faction_d0_mem_relative_y          = 227
 #NEXT                                   = 236
 
 #the following applied only to infantry in formation
-slot_agent_formation_rank      = 27
-slot_agent_inside_formation    = 28
-slot_agent_nearest_enemy_agent = 29
-slot_agent_new_division        = 30
-slot_agent_positioned          = 31 #InVain: Also used for checking if agent is in formation, for example in order to disable horse archer AI
+#InVain: Make these start with 9, making sure they don't overwrite any lower slots
+slot_agent_formation_rank      = 927
+slot_agent_inside_formation    = 928
+slot_agent_nearest_enemy_agent = 929
+slot_agent_new_division        = 930
+slot_agent_positioned          = 931 #InVain: Also used for checking if agent is in formation, for example in order to disable horse archer AI
 
 slot_item_alternate            = 46	#table between swing/noswing versions of same weapon
 
