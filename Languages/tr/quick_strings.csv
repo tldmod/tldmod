@@ -72,6 +72,7 @@ qstr_Man|İnsan
 qstr_Elf|Elf
 qstr_Dwarf|Cüce
 qstr_Whom_Do_You_Serve?|Kime hizmet ediyorsun?
+; qstr_The_Age_of_Men_has_f|The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth! Whom will you serve?
 qstr_SAURON_of_Mordor_The|Mordor'un Sauron'u, Yüzüklerin Efendisi
 qstr_SARUMAN_of_Isengard_|Isengard'ın Saruman'ı, Beyaz El
 qstr_an_ORC^_serving_the_|Bir ORK,^ Kapaksız Gözün Kölesi
@@ -80,6 +81,7 @@ qstr_a_MAN^_subjugated_by|Bir İNSAN,^ Sauron'a yenilmiş
 qstr_an_ORC^_serving_the_W|Bir ORK,^ Ak El'in Kölesi
 qstr_one_of_the_URUK_HAI^|Bir URUK-HAI,^ Isengard'da türetilmiş
 qstr_a_MAN_of_Dunland^_th|Bir Dunland İNSANI,^ Batı düzlüklerinden
+; qstr_Thank_you_for_playin|Thank you for playing
 qstr_Click_the_center_but|Grup degiştirmek için ortadaki dügmeyi tıklayın^ayrıntılarını görüntülemek için avatarları tıklayın
 qstr_Level:_{reg3}^Health|Seviye: {reg3}^Saglık: {reg4}
 qstr_Attributes|Nitelikler
@@ -121,6 +123,11 @@ qstr_Default_Camera|Varsayılan Kamera
 qstr_Free_Mode_Custom_Cam|Serbest-Mod Özel Kamera
 qstr_Fixed_Over_The_Shoul|Sabit Omuz Kamerası
 qstr_Brighter_Nights:__|Daha Aydınlık Geceler:
+; qstr_Allow_to_use_bow_wit|Allow to use bow with small shields:  
+; qstr_No__regular_troops_o|No (regular troops only)
+; qstr_Companions_only|Companions only
+; qstr_Player_only|Player only
+; qstr_Yes|Yes
 qstr_Done|Tamam
 qstr_Gameplay_Tweaks|Oyun Ayarı
 qstr_Set_to_Native_if_you|Savaş sırasında her türlü Yapay Zekâ sorunu yaşarsanız Native olarak ayarlayın.
@@ -264,6 +271,9 @@ qstr_Bonus_to_Strength__P|Gücü Geliştirir (Sadece oyuncu için)
 qstr_Lead_more_Orcs|Daha fazla Ork yönet
 qstr_Can_scare_horses|Atları korkutabilir
 qstr_+{reg1}_to_Party_Mor|Grup moraline +{reg1}
+; qstr_Not_affected_by_nigh|Not affected by nighttime
+; qstr_Increased_health_and|Increased health and stagger resistance
+; qstr_Can_heal_on_kill|Can heal on kill
 qstr_Range:_{reg55}|Menzil: {reg55}
 qstr_Dwarves|Cüceler
 qstr_Humans_and_Elves|İnsanlar ve Elfler
@@ -621,7 +631,7 @@ qstr_But_I...|Ama ben...
 qstr_Noone..._oppossssses|Kimssse... Barad Dur'a... karşıı gelippp... canlı kalamasssss!
 qstr_All..._must..._submi|Hepsi... boyun... egip... hizmet... etmeli...
 qstr_I_serve_the_Eye!|Göze hizmet ediyorum!
-qstr_I_shall_serve_the_Ey|Göze hizmet edecegim!
+; qstr_Your_time_is_over_wr|Your time is over, wraith, begone! Now begins the Age of the White Hand!
 qstr_Go_to_{s1}_and_speak|{S1}'e git ve {s9} ile konuş.
 qstr_The_Remnant_Forces_o|{S22} Kalan Kuvvetlerini {s15} noktasını güçlendirmek için toplandı!
 qstr_The_strength_of_the_|{S15} meydanda kalan müttefik gruplarının gücü arttı
@@ -703,6 +713,17 @@ qstr_{s2}_{reg3?was:is_ar|{S2} {reg3?oldu: {S5} civarındadır.
 qstr_Army_of_{s6}|{s6} Ordusu
 qstr_Host_of_{s6}|{s6} Ordugahı
 qstr_The_host_of_Isengard|Isengard ordusu {s2}’yi yerle bir etti!
+; qstr_The_battlefield_is_a|The battlefield is a dark forest.
+; qstr_The_battlefield_is_f|The battlefield is forested.
+; qstr_The_battlefield_is_a_|The battlefield is a treacherous marshland.
+; qstr_A_golden_mist_from_L|A golden mist from Lórien covers the battlefield.
+; qstr_Dark_clouds_from_Mor|Dark clouds from Mordor cover the battlefield.
+; qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the battlefield.
+; qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield.
+; qstr_The_defenses_consist|The defenses consist of dark tunnels and underground halls.
+; qstr_The_defenses_lie_in_|The defenses lie in the shadow of tall trees, blocking out the sunlight.
+; qstr_The_defenses_lie_in_t|The defenses lie in the shadow of steep cliffs, blocking out the sunlight.
+; qstr_The_fortress_is_shro|The fortress is shrouded in darkness.
 qstr_{s1}_{s0}|{S1}, {s0}
 qstr_{s1}_and_{s0}|{s1} ve {S0}
 qstr_No_Troops_Left.|hiç birlik kalmadı.
@@ -745,13 +766,13 @@ qstr_ready_polearms|Gönderli silahları hazır!
 qstr_shields_up|Kalkanlar Yukarı
 qstr_doff_shields|Kalkanları indirin
 qstr_Distance___{reg70}__|Mesafe - {reg70} - {s11} Grup - {s12} Asker
-qstr_A_golden_mist_from_L|Lórien'den altın bir sis savaş alanını kapatıyor. Birlikleriniz, Leydi'nin varlıgı ile cesaretlendirilmiş hissediyor.
+; qstr_A_golden_mist_from_L|A golden mist from Lórien covers the battlefield.
 qstr_A_golden_mist_from_Lr|Lórien'den altın bir sis savaş alanını kapsıyor. Cadı yakınlarda, sen ve askerlerin omurganızda bir ürperti hissediyorsunuz.
-qstr_Dark_clouds_from_Mor|Mordor'dan gelen kara bulutlar savaş alanını örtüyor. Okçularınız düşmanı görmekte zorlanıyorlar ve kötülügün varlıgı adamlarınızı korkutuyor.
+; qstr_Dark_clouds_from_Mor|Dark clouds from Mordor cover the battlefield.
 qstr_Dark_clouds_from_Mord|Mordor'dan gelen kara bulutlar savaş alanını örtüyor. Karanlık Lord'un varlıgı seni ve adamlarını güçlendiriyor.
-qstr_A_thunderstorm_from_|Dumanlı Daglar'dan gelen bir fırtına, savaş meydanında daha şiddetli bir hale geliyor. Askerleriniz yavaşlıyor ve adamlarınızın batıl inançları onları korkuya sürüklüyor.
+; qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the battlefield.
 qstr_A_thunderstorm_from_t|Dumanlı Daglar'dan gelen bir fırtına, savaş meydanında daha şiddetli bir hale geliyor. Okçular bu havada zorlanacak gibi görünüyor.
-qstr_A_poisonous_fog_from|Dol Guldur'dan zehirli bir sis, savaş alanını kaplıyor. Sen ve adamların zayıflamış hissediyorsunuz. Adamlarınız arasında korku dolaşıyor.
+; qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield.
 qstr_A_poisonous_fog_from_|Dol Guldur'dan zehirli bir sis, savaş alanını kaplıyor. Sen pek bir fark hissetmiyorsun, ama düşmanlarının acısını duyuyor ve korkunun kokusunu alabiliyorsun.
 qstr_You_shapeshift_into_|Bir ayıya dönüştün!
 qstr_You_got_{reg1}_exper|Ayı şeklindeyken {reg1} kadar tecrübe kazandın
@@ -760,28 +781,49 @@ qstr_You_change_back_to_h|İnsani şekline geri döndün...
 qstr_Refill_Ammunition|Mermini Yenile
 qstr_Take_a_closer_look..|Daha yakından bak...
 qstr_Look_around...|Etrafına bak…
+qstr_Amon_Hen_the_Hill_of|Amon Hen, Görme Tepesi, çevredeki topraklar üzerinde hâkim bir görüş saglar. Ancak, eski yüksek koltugu kendi yolunu tayin etmek umuduyla aradıysan, artık karar vermek sana kalmış oldugunu fark edersin.
+qstr_As_the_lights_begin_|Işıklar titremeye ve dans etmeye başladıgında onları görürsün: kasvetli yüzler ve kötülük, soylu yüzler ve hüzün. Birçok yüz gururlu ve güzel, saçlarında gümüş otlar. Ama hepsi pis, hepsi çürümüş, hepsi ölü.
+; qstr_This_must_be_the_spi|This must be the spider nest. Without hesitation, you light a torch and burn down the webs. This will eliminate the spider thread in Mirkwood.
+; qstr_You_have_explored_th|You have explored the caves and experienced the beauty of Aglarond, one of the marvels of the northern world. You feel that you have gained a better understanding of all the wonders that are hidden underground.
 qstr_You_see_the_Pelennor|Önünde Pelennor Ovası serilmiş durumda. Onun arkasında, hafifçe, Gondor’un bir zamanlar başkenti olan Osgiliath’ın harabeleri görünüyor; Minas Tirith ise sadece bir kale olarak duruyordu. Ve sonra, görüş alanının eşiginde, Mordor Dagları’nın sivri uçları yükseliyor ve ötesinde, daha da derin bir karanlık var. Beyaz Şehir’in insanları her zaman o gölgenin görünümünde yaşamışlardır.
+qstr_You_happen_upon_an_O|Eski bir Misafirhaneye rastlarsın. Hava koşullarından yıpranmış taş binayı incelerken, sütunların arasında oynayan bir grup çocugu fark edersin; Minas Tirith’te gördügün tek çocuklardır onlar. Birisi seni selamlar ve sen de el sallarsın. Kalbin sevinçle dolar ve kısa bir an için savaşın üzüntüsünü unutursun.
 qstr_As_you_look_from_the|Adanın yüksek pruvasından aşagı, Büyük Nehir Anduin’in iki kola ayrıldıgı yere bakarken, Cair Andros’un ‘Uzun Köpüklü Gemi’ anlamını neden taşıdıgını anlarsın.
+qstr_You_look_through_Hen|Günbatımının Penceresi Henneth Annun'a bakıyorsun. Güzel manzara, Batı'ya olan inancınızı ve ötesindeki Güçleri yeniden canlandırıyor.
 qstr_This_place_was_once_|Burası bir zamanlar elflerin sıgınagıydı, fakat bugün yalnızca harabeler mirasını anlatıyor. Gerçek anlamlarını hâlâ çok az kişi biliyor.
 qstr_Tirith_Aear_the_Sea_|Tirith Aear, Denize Bakan Kule – Yavaş çanı yüzyıllardır denizcilere yol gösteriyor.
 qstr_You_kneel_to_pay_you|Diz çökerek bu güzel diyarın düşmüş yöneticilerine saygını sunarsın. Yanında, Rohan’dan bir kalkan kız şarkısını yükseltir. Ne sceal hearpan sweg wigend weccean; ne winfaet gylden guma sceal healdan! Sözlerini duyarken kalbin sızlar.
 qstr_You_wonder_about_the|Kapıların önündeki iki sıra mezar tümseklerini merak edersin; fakat sıradan bir {s24} olarak onların anlamını kavrayamazsın.
+; qstr_The_Toy_market_of_Da|The Toy market of Dale, A wonder of the North, bustling with sellers, workshops and craftsmen. Beautiful are the toys sold and crafted here, horns, pipes and drums. A buyer with a good eye can make great deals here.
+qstr_With_trepidation_you|Korku içinde, gümüş legenin içine bakarsın. Su sana dehşet dolu görüntüler gösterir; kan, korku ve keder. Geri çekilirsin… ama sonra görüntüler kaybolur ve yerine berrak bir gece gökyüzü görürsün; genişlikte bir gümüş tekne süzülüyor gibi görünür. İçine bir huzur dolar. Umut tamamen kaybolmamış.
+qstr_The_Lady_s_garden_li|Leydi’nin bahçesi, parlak gündüz ışıgında huzur içinde duruyor. Olagan dışı bir şey hissetmezsin…
+; qstr_Bees_big_as_a_thumb_|Bees big as a thumb swarm all around you, gathering nectar from the flowering meadows. They make the wonderful honey prized by Beorn's folk for their cakes.
+qstr_A_flock_of_ravens_ci|Bir sürü kuzgun etrafında döner. Ne dediklerini, uzak diyarlardan hangi haberleri getirdiklerini anlayamazsın. Yine de, bu bilge hayvanların Dagın Altındaki Kral’ın eski dostları oldugunu bilmek içini rahatlatır.
+; qstr_A_fierce_fight_happe|A fierce fight happened here. Curiously, among the withered remains of both dwarves and goblins, you see bodies of orcs that were slain not long ago. ^^You should take a closer look at the ruined tomb.
 qstr_Alkarondas_Castle_of|Alkarondas, Deniz Kalesi. Ar-Pharazôn’un ünlü amiral gemisinin adını taşır; bu büyük siyah gemi korsan filosunun gururu ve Gondor sahillerinin korkusudur.
 qstr_The_Mmakil_greatest_|Mûmakil, bu çagın en büyük yaratıkları! Savaşta dehşet vericidirler, kuleler ve okçular taşırlar. Gövdeleri savaş boruları gibi ses çıkarır; Gondor’un insanlarını korku içinde titretir.
+; qstr_The_famous_Variag_fi|The famous Variag fighting pits. Here, young warriors and war slaves fight for the right to join the ranks of the Variag warrior caste. Only the strongest survive and become the elite of their people. The others are left lying in the mud.
+; qstr_If_you_were_more_ski|If you were more skilled, you might be able to learn a thing or two from watching the fights.
+; qstr_Watching_the_fights_|Watching the fights, you were able to pick up a few tricks.
+; qstr_Gained_weapon_profic|Gained weapon proficiencies.
 qstr_A_new_Power_is_risin|Yeni bir Güç yükseliyor. Eski ittifaklar ve politikalar buna karşı dayanamaz. Zaferi yakın; ve ona yardım edenler için zengin ödüller olacaktır.
 qstr_As_you_explore_the_c|Isengard Çemberi’nin altındaki magaraları keşfederken, binlerce orkun Beyaz El’in büyüyen ordularını beslemek için çalıştıgı yerde, yeni bir gücün yükselişine ve eski dünyanın çöküşüne dair güvenin artar.
 qstr_The_Ring_of_Isengard|Isengard Çemberi sular altında, taş duvarları harabe hâlinde. Saruman’ın tüm pisligi yıkanana kadar ve Isen tekrar temiz akana kadar zaman gerekecek. Kim bilir, belki bu yer bir gün yeniden meyve bahçeleri, agaçlar ve temiz suyla dolu bir bahçe hâline gelir.
-qstr_Amon_Hen_the_Hill_of|Amon Hen, Görme Tepesi, çevredeki topraklar üzerinde hâkim bir görüş saglar. Ancak, eski yüksek koltugu kendi yolunu tayin etmek umuduyla aradıysan, artık karar vermek sana kalmış oldugunu fark edersin.
-qstr_As_the_lights_begin_|Işıklar titremeye ve dans etmeye başladıgında onları görürsün: kasvetli yüzler ve kötülük, soylu yüzler ve hüzün. Birçok yüz gururlu ve güzel, saçlarında gümüş otlar. Ama hepsi pis, hepsi çürümüş, hepsi ölü.
-qstr_This_must_be_the_spi|Burası olmalı, örümcek yuvası. Tereddüt etmeden bir meşale yakar ve agları yakarsın.
-qstr_A_flock_of_ravens_ci|Bir sürü kuzgun etrafında döner. Ne dediklerini, uzak diyarlardan hangi haberleri getirdiklerini anlayamazsın. Yine de, bu bilge hayvanların Dagın Altındaki Kral’ın eski dostları oldugunu bilmek içini rahatlatır.
+; qstr_You_have_found_the_s|You have found the secret passage into Mordor, the pass of Cirith Ungol. Beyond those stairs, you sense a dark will ling in wait. You realize that you should not pursue this path any further if you value your own life.
+; qstr_A_great_man_was_tort|A great man was tortured here, his remains still held in place by cruel chains and cold will. You do not know who he was, yet you understand that such terrible fate awaits all who dare to oppose the Dark Lord.
+; qstr_You_endure_the_horro|You endure the horrors of the Dead City and explore its innermost circles. The Silent Watchers recognise your boldness and don't oppose you.
+; qstr__You_gained_1_Charis|(You gained 1 Charisma.)
+qstr_You_endure_the_horror|Bu kutsal yerdeki söylenemeyecek ritüellerin dehşetlerine dayanır ve keşfe devam edersin. Rhun’un zalim insanları gösterdigin gücü tanır ve en güçlülerinden bazıları partine katılmaya karar verir.
+; qstr_Your_hackles_rise_as|Your hackles rise as you look around you, and you begin to feel a strange sense of danger. Raising your weapon high, you snarl your defiance at the unseen foe in this place. This may have been a place of wonder once... but now, with the true power you have gained, you realize you have nothing to fear from the forgotten past of a broken world.
 qstr_Looking_around_you_d|Etrafına bakarken, buranın önemini anlayamazsın.
 qstr_Looking_around_you_f|Etrafına bakarken, bu insanları yeterince tanımadıgını ve buranın önemini kavrayamadıgını hissedersin.
+; qstr_Looking_around_you_fe|Looking around, you feel that you are not esteemed enough to learn the significance of this place.
+; qstr_Visit_the_victory_ce|Visit the victory celebrations and speak to {s5}.
 qstr_Your_mount_stumbles!|Bineginiz tökezliyor! Sakatlanmış gibi görünüyor.
 qstr_Bitten_by_your_own_w|Kendi wargın tarafından ısırıldın
 qstr_You_weigh_too_much_f|Bir midilli için çok agırsın
 qstr_Your_mount_rears_ref|Bineginiz şahlanıyor, emirlerinize itaat etmeyi reddediyor!
-qstr_Delivered_{reg60}_da|{reg60} hasar verdiniz.
+; qstr_{s5}_has_been_overco|{s5} has been overcome by fear and rage and is now uncontrollable.
+; qstr_{s5}_is_running_amok|{s5} is running amok, hurting friend and foe alike!
 qstr_Cannot_Change_Camera|Birinci Şahıstayken Kamera Modu Degiştirilemez.
 qstr_Switch_Back_to_3rd_P|Dönen Kamerayı Görmek için 3'üncü Kişi Kamerasına Degiştirin.
 qstr_Fixed_Custom_Camera|Özel Kamerayı Ayarla
@@ -794,22 +836,17 @@ qstr_Fixed_Camera___Left_|Sabit Kamera - Sol Omuz
 qstr_Fixed_Camera___Cente|Sabitlenmiş Kamera - Merkez
 qstr_The_Nazgul_retreats!|Nazgûl geri çekiliyor!
 qstr_Shield_is_too_big_to|Kalkan bir yayla birlikte kullanmak için fazla büyük.
+; qstr_Shield_reduces_accur|Shield reduces accuracy by {reg11} percent.
 qstr_{s7}_waves_at_you.|{s7} sana el sallıyor.
-qstr_You_happen_upon_an_O|Eski bir Misafirhaneye rastlarsın. Hava koşullarından yıpranmış taş binayı incelerken, sütunların arasında oynayan bir grup çocugu fark edersin; Minas Tirith’te gördügün tek çocuklardır onlar. Birisi seni selamlar ve sen de el sallarsın. Kalbin sevinçle dolar ve kısa bir an için savaşın üzüntüsünü unutursun.
-qstr_You_look_through_Hen|Günbatımının Penceresi Henneth Annun'a bakıyorsun. Güzel manzara, Batı'ya olan inancınızı ve ötesindeki Güçleri yeniden canlandırıyor.
-qstr_As_you_follow_the_st|Düz merdivenleri, dagın kayasına oyulmuş olanları, ardından uçurum yüzeyine yapışarak dolanan ikinci bir merdiven setini takip ederken, kendi hayatını önemsiyorsan bu yolu daha fazla takip etmemesi gerektigini anlarsın.
 qstr_You_are_unable_to_en|Ölü Şehir’in dehşetlerine dayanamazsın.
-qstr_You_endure_the_horro|Ölü Şehir’in dehşetlerine dayanır ve en iç halkalarını keşfedersin. Sessiz Bekçiler cesaretini fark eder ve sana karşı koymaz. (1 Karizma kazandın.)
 qstr_You_are_unable_to_end|Tapınagın dehşetlerine dayanamazsın.
-qstr_You_endure_the_horror|Bu kutsal yerdeki söylenemeyecek ritüellerin dehşetlerine dayanır ve keşfe devam edersin. Rhun’un zalim insanları gösterdigin gücü tanır ve en güçlülerinden bazıları partine katılmaya karar verir.
-qstr_You_find_yourself_in|Kendini derin bir magarada bulursun. Etrafına bakarken tüylerin diken diken olur ve garip bir tehlike hissi duyarsın. Senin gibi biri için burası uygun bir yer degil. Hırlayarak geri çekilirsin. Üstteki dünya Gölge ile kaplandıgında, belki o zaman korkusuzca buraya geri dönebilirsin…
-qstr_You_find_yourself_in_|Kendini derin bir magarada bulursun. Etrafına bakarken tüylerin diken diken olur ve garip bir tehlike hissi duyarsın. Silahını yukarı kaldırarak, bu yerde görünmeyen düşmana karşı meydan okur gibi hırlarsın. Burası bir zamanlar bir hayranlık yeri olmuş olabilir… fakat şimdi kazandıgın gerçek güçle, kırık bir dünyanın unutulmuş geçmişinden korkmana gerek olmadıgını anlarsın.
-qstr_With_trepidation_you|Korku içinde, gümüş legenin içine bakarsın. Su sana dehşet dolu görüntüler gösterir; kan, korku ve keder. Geri çekilirsin… ama sonra görüntüler kaybolur ve yerine berrak bir gece gökyüzü görürsün; genişlikte bir gümüş tekne süzülüyor gibi görünür. İçine bir huzur dolar. Umut tamamen kaybolmamış.
-qstr_The_Lady_s_garden_li|Leydi’nin bahçesi, parlak gündüz ışıgında huzur içinde duruyor. Olagan dışı bir şey hissetmezsin…
+; qstr_You_are_unable_to_op|You are unable to oppose the power of this holy place.
 qstr_Halt!_You_are_not_al|Dur! Buraya girmene izin yok!
 qstr_Halt!_You_are_not_all|Dur! Leydi’nin izni olmadan buraya girmene izin yok!
-qstr_While_visiting_towns|Kasabaları ziyaret ederken, yerleşkelerde ve kamplarda etrafta yürüyen insanlarla konuşabilirsin. Farklı tarafların halkları, farklı şeyler söyleyebilirler. Bazıları düşüncelerini, bazıları ise söylentileri sizinle paylaşacaktır. Her ikisi de  bölgenin kültürünü ve tarafını daha iyi anlatmak, gizli bölgeleri bulma ipuçları, Yaban Hayatı boyunca seyahat etmek, Yüzük Savaşında bulunma ipuçları ve püf noktaları saglamak için kullanılabilir.
+; qstr_While_visiting_towns|While visiting towns, settlements and camps, you can talk to people walking around. This will help you gain their trust and offer valuable information about the local culture. If you ask, they will also show you the way to the most important people around.
 qstr_Cannot_leave_now.|Şimdi ayrılamazsın
+; qstr_The_traitor_should_b|The traitor should be around somewhere. You should look around important places. If you have a good relation to them, you may also ask the local populace for suspicious strangers.
+; qstr_The_traitor_flees._C|The traitor flees. Catch him!
 qstr_You_have_found_the_l|Yerel demirciyi buldun.
 qstr_You_have_found_the_lo|Yerel idareyi buldun.
 qstr_You_have_found_the_loc|Yerel erzak deposunu buldun.
@@ -826,11 +863,26 @@ qstr_Division_{reg1}_{s2}_f|{reg1} . Kuvvetler {s2} çizgi oluşturdu(Ezberlendi
 qstr_Division_{reg1}_{s2}_fo|{reg1}. Kuvvetleri {s2} {reg0} Tane Çizgi oluşturdu(Ezberlendi).
 qstr_A_Nazgul_on_a_winged|Kanatlı bir binici üzerinde bir Nazgûl savaş alanının üzerinde dolaşıyor!
 qstr_Your_bear_form_has_{|Ayı şeklin {reg2}/{reg1} Canı kaldı!
+; qstr_Underground_battle:_|Underground battle: Prepare to fight in the dark.
+; qstr_Steep_mountain_sides|Steep mountain sides block out the sunlight.
+; qstr_Big_trees_block_out_|Big trees block out the sunlight.
+; qstr_The_place_is_covered|The place is covered in darkness as if it was night.
+; qstr_It_is_night._You_fee|It is night. You feel how your strength grows and your eyesight becomes sharper in the  darkness.
+; qstr_It_is_night._As_a_tr|It is night. As a trained Uruk, you fight at night or day and don't heed light or darkness.
+; qstr_It_is_night._In_the_|It is night. In the darkness, you have to move and fight more carefully.
+; qstr_Rough_terrain:_Heavy|Rough terrain: Heavy troops are at a disadvantage.
+qstr_A_golden_mist_from_Lr|Lórien'den altın bir sis savaş alanını kapsıyor. Cadı yakınlarda, sen ve askerlerin omurganızda bir ürperti hissediyorsunuz.
+qstr_A_golden_mist_from_Lri|Lórien'den altın bir sis savaş alanını kapsıyor. Cadı yakınlarda, sen ve askerlerin omurganızda bir ürperti hissediyorsunuz.
+qstr_Dark_clouds_from_Mord|Mordor'dan gelen kara bulutlar savaş alanını örtüyor. Karanlık Lord'un varlıgı seni ve adamlarını güçlendiriyor.
+qstr_Dark_clouds_from_Mordo|Mordor'dan gelen kara bulutlar savaş alanını örtüyor. Karanlık Lord'un varlıgı seni ve adamlarını güçlendiriyor.
+qstr_A_thunderstorm_from_t|Dumanlı Daglar'dan gelen bir fırtına, savaş meydanında daha şiddetli bir hale geliyor. Okçular bu havada zorlanacak gibi görünüyor.
+qstr_A_thunderstorm_from_th|Dumanlı Daglar'dan gelen bir fırtına, savaş meydanında daha şiddetli bir hale geliyor. Okçular bu havada zorlanacak gibi görünüyor.
+qstr_A_poisonous_fog_from_|Dol Guldur'dan zehirli bir sis, savaş alanını kaplıyor. Sen pek bir fark hissetmiyorsun, ama düşmanlarının acısını duyuyor ve korkunun kokusunu alabiliyorsun.
+qstr_A_poisonous_fog_from_D|Dol Guldur'dan zehirli bir sis, savaş alanını kaplıyor. Sen pek bir fark hissetmiyorsun, ama düşmanlarının acısını duyuyor ve korkunun kokusunu alabiliyorsun.
 qstr_Some_of_your_human_t|İnsan birliklerinin bir kısmı karanlıgın gölgesinde degiller. (Gece Askerleri gece cezalarından etkilenmez).
 qstr_You_are_filled_with_|Gözlerini düşmana dogru intikamla doldurdun (Çılgınlık Aktif)
 qstr_Your_mount_is_scared|Binegin {s5} Tarafından korkutuldu!
 qstr_Your_mount_is_scared_|Atın {s5} 'dan korkuyor, ama sen bunun üstesinden gelebilirsin!
-qstr_Received_{reg66}_dam|{Reg66} hasar alındı.
 qstr_You_yell_for_your_ho|Atın için sesleniyorsun
 qstr_You_do_not_need_to_r|Birliklerini henüz toplamana gerek yok.
 qstr_You_rally_{reg10}_tr|{reg10} birlik topluyorsunuz!
@@ -843,6 +895,7 @@ qstr_You_have_been_knocke| {s22} tarafından bayıltıldın.
 qstr_{s21}_has_been_knock|{s21} Atından düşünce baygınlık geçirdi.
 qstr_{s21}_{reg24?killed:| {s22} tarafından {s21} {reg24?öldürüldü:bayıltıldı} . 
 qstr_A_bear_has_been_summ|Savaş alanında bir Ayı ortaya çıktı!
+qstr_Received_{reg66}_dam|{Reg66} hasar alındı.
 qstr_In_The_Last_Days_of_|The Last Days of the Third Age modunda, askerlerin her savaşın başında kör gözüne saldırmaktansa pozisyonlarını korurlar.^^Askerlerine formasyon emri vermek için: 'J' Rütbeye göre, 'K' Kalkan duvarı, 'L' kama , ';' for Kare. Formasyonu bozmak içi; 'U'. ^Eger askerlerin kaçışıyorsa 'V' ile onları toplayabilirsin. Sınırlı sayıda toplama hakkın var ve bu senin karizmana baglıdır.
 qstr_You_can_also_order_y|Askerlerinize, kullanmasını istediginiz silah türünü kullanmalarını da emredebilirsiniz. ^^ Silah Düzeni türleri arasında geçiş yapmak için O tuşuna basın. Kalkan Emirleri arasında geçiş yapmak için P tuşuna basın.
 qstr_The_Last_Days_of_the|The Last Days of the Third Age, kısa ırklar (örnegin Orklar ve Cüceler) ile ilgili mevcut kamera kısıtlamasını aşmak için Özel Kamera adında bir özellik eklemiştir.^^Farklı kamera modlarını nasıl kontrol edeceginiz hakkında bilgi için Bilgi Sayfalarına bakın.
@@ -865,15 +918,20 @@ qstr_End_them_all!|Bitirin onları!!
 qstr_Drive_them_back!|Onları Geriye sürün!
 qstr_Protect_the_City!|Şehri Koruyun!
 qstr_Forward!_Board_them!|İleri! Onları yönetin!
-qstr_The_Last_Days_of_the_|Üçüncü Çagın Son Günleri, Yerelden büyük ölçüde farklı olan Gelişmiş bir Kuşatma Yapay Zekasına sahiptir. Tüm saldırganlar ve savunucular sol ve sag kanatlara ve merkeze dagıtılacaktır. Saldıran oyuncular kendi birliklerinin bir kısmını komuta eder.
+; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Players command some of their own troops. Troops from your party will also join when they're near to the player. Use them wisely to help out where needed most. // In order to win a siege attack, you must conquer all three defender reinforcement points. You can only take a reinforcement point if the defenders have already rallied there.
 qstr_on_the_left_flank|sol kanatta
 qstr_on_the_right_flank|sag kanatta
 qstr_through_the_center|merkezin ortasından
 qstr_Attackers_charge_{s2|Saldırganlar Hücum {s2}
 qstr_Attackers_charge_{s1|Saldırganlar Hücum {s1}
-qstr_Hold_this_area_to_st|Savunucu takviyelerin buradan gelmesini engellemek için bu alanı tut!
-; qstr_Defender_reinforceme|Defender reinforcement point taken!
-qstr_{s1}_rallied_to_your|{s1} Karizman dolayısıyla senin tarafına geçti.
+; qstr_You_must_break_the_f|You must break the first line of defense before you can capture a reinforcement point.
+; qstr_Capture_this_area_wi|Capture this area with your troops to stop defender reinforcements from here!
+; qstr_Not_enough_allies_ne|Not enough allies nearby to capture this reinforcement point!
+; qstr_Defender_reinforcemen|Defender reinforcement point taken!
+; qstr_{reg5}_{reg4?troops:|{reg5} {reg4?troops:troop} rallied to your side.
+; qstr_{reg5}_{reg4?troops:t|{reg5} {reg4?troops:troop} rallied to your side due to your Charisma.
+; qstr_{reg5}_{reg4?troops:tr|{reg5} {reg4?troops:troop} stopped following you (too far away).
+; qstr_{reg5}_{reg4?troops:tro|{reg5} {reg4?troops:troop} are currently following you.
 qstr_Last_attacker_wave._|Son saldırı. Geri çekilmek ister misin ?
 qstr_Attackers_almost_def|Saldırganlar neredeyse yenildi. Geri çekilmek ister misin ?
 qstr_The_remaining_attack|Kalan saldırganlar dagıldı!
@@ -888,7 +946,7 @@ qstr_THREE.._TWO..._ONE..|ÜÇ.. İKİ... BİR.... DÖVÜŞ!
 ; qstr_You_have_come_upon_th|You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^ In the darkness of night, you see lights like misty flames flickering slowly above unseen candles. Oddly compelled, you follow them deeper into the maze of puddles and streams.
 ; qstr_You_have_come_upon_the|You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^The marshlands have swallowed up what was once a grassy plain, and now the only green is the scum of livid weed on the dark greasy surfaces of the sullen waters. ^^In the grey light of day, you don't see anything that catches your interest.
 ; qstr_You_have_entered_the|You have entered the woods of Southern Mirkwood, once known as Greenwood the Great^^The woods feel sickly and full of decay. The place is crawling with spiders. There must be a nest around here somewhere...
-; qstr_You_have_found_the_G|You have found the Glittering Caves, one of the marvels of the Northern World.
+; qstr_You_enter_the_Glitte|You enter the Glittering Caves. However, in the encompassing darkness, you cannot see its marvels.
 qstr_You_have_found_the_D|Efsanevi mızrakların bulunabilecegi Cüce Deposunu buldun. Buldugun şeyi {s3}'e rapor et.
 qstr_Leave_the_Warehouse?|Ambardan ayrıl?
 qstr_Leave_the_place_in_s|Bölgeden barışcıl bir şekilde ayrıl?
@@ -1059,7 +1117,6 @@ qstr_{s3}_witnesses_your_|{s3} , {s4} karşısında kazandıgın zaferine tanık
 qstr_Even_though_there_we|Yakınlarınızda zaferinize şahitlik edecek hiçbir müttefik olmasa da, birlikleriniz yine de zaferinizi kutlar.
 qstr_{s1}_of_{s3}_managed|{s3}lü {s1}  kaçmana yardım etti.
 qstr_Prisoners_rescued_so|{reg1} adet Mahkum kurtarıldı. 
-qstr_{reg1}_kills_of_{s1}|{s1} tarafından yemin için geçerli {reg1} adet öldürme var. TOPLAM öldürülen: {reg0}
 qstr_Perhaps_I_m_getting_|Belki de şansızlaşıyorum...
 qstr_Retirement_is_starti|Emeklilik kulaga artık daha hoş gelmeye başlıyor.
 qstr_No_matter!_I_will_pe|Önemi yok! Ben direnecegim!
@@ -1075,9 +1132,10 @@ qstr__This_castle_seems_t|Bu kalenin hiçbir sahibi yok gibi gözüküyor.
 qstr__Your_own_banner_flie|Sancagın şehrin kapılarının üzerinde dalgalanıyor.
 qstr__You_see_the_banner_o|Şehir kapılarında {s7} bayragı görüyorsunuz.
 qstr__The_townsfolk_here_|Buradaki kasaba halkı bagımsızlıklarını ilan etti.
-qstr_Get_book.|Kitabı al.
+; qstr_A_ruined_tomb._The_i|A ruined tomb. The inscription on the lid is shattered and unreadable.
 qstr_Go_to_the_secret_ent|Moria'nın gizli kapısına git
 qstr_Search_for_a_secret_|Moria'ya giden gizle kapıyı ara
+; qstr_The_valley_is_too_we|The valley is too well guarded to linger here.
 qstr_The_{reg6?town_s:cas|{reg6?kasabanın:kalenin} yiyecek stokları {reg3} gün daha dayanabilir.
 qstr_The_{reg6?town_s:cast|{Reg6?kasabanın:kalenin} yiyecek stokları tükendi ve savunmacılar açlık çekiyor.
 qstr_You_re_preparing_to_|Duvarlara saldırmaya hazırlanıyorsunuz, hazırlıkların {reg9} saat içinde bitirilmesi gerekiyor.
@@ -1161,12 +1219,16 @@ qstr_You_wait_for_darknes|Karanlıgın düşüşünü bekliyorsun...
 qstr_You_are_quickly_disc|Düşman tarafından çabuk fark edildin.
 qstr_You_advance_stealthi|Gizlice ormanın içlerine dogru ilerlediniz. 
 qstr_You_cannot_leave_unt|Muhafızlara izini kaybettirmeden buradan ayrılamazsın!
-qstr_Enraged_by_the_death|{S4} 'un ölümünün öfkesiyle, {s3} kuvvetlerine intikam yemini ettin. Şimdi önümüzdeki günlerde mümkün oldugunca {s3} birligini yok etmelisiniz. Takipçilerinizin bu yemine tanıklık ettigine ve Yeminbozan olarak bilinmek istemedigininize eminsiniz. Kan akıtmanın şimdi başlaması gerekiyor!
+; qstr_You_hear_that_{s1}_h|You hear that {s1} has already been avenged by the death of {s28}.
+; qstr_Enraged_by_the_death|Enraged by the death of {s4}, you have sworn an oath of vengeance against {s3}. You must now seek out and fight {s3} and kill {reg11?her:him} if possible. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!
 qstr_flooded._Somebody_or|Sular altında kalmış. Birisi ya da bir şey Isen barajlarını mahvetmiş olmalı.
 qstr_destroyed._Only_smol|yerle bir edilmiş. Sadece yanan hala yanan kalıntılar kalmış.
 qstr_^^^You_lost_your_fig|^^^Ayaklanmaya karşı savaşımı kaybettin! ^Orkların yeni bir komutan varmış gibi görünüyor.
 qstr_^^^You_have_slain_th|^^^ Saldırganı öldürdün ve bunu gören diger Orklar çabucak geri çekildiler. ^ Solucanlar bir süre daha  seslerini çıkartamayacaklardır.
 qstr_You_cover_up_your_tr|İzlerini silip yoluna devam ediyorsun.
+; qstr_the_Eye|the Eye
+; qstr_the_Hand|the Hand
+; qstr_{s1}_has_joined_{s12|{s1} has joined {s12}
 qstr_Breaking_camp...|Kamp kaldırılıyor...
 ; qstr_Party_morale_is_low.|Party morale is low. Troops desert from your party.
 ; qstr_Desertion|Desertion
@@ -1189,14 +1251,23 @@ qstr_{s1}_has_been_defeat|{s1} maglup edildi. Görev iptal edildi.
 qstr_You_must_follow_{s1}|{s1}'i takip etmek zorundasın!
 qstr_You_must_follow_{s1}!|{s1}'i takip etmek zorundasın! Bu sizin son uyarınız!
 qstr_{s1}_parties_defeate|{s1} Grubunuz yenildi: {reg1} {reg2} dışında
-qstr_{reg65}_Moria_and/or|{reg65} Moria ve/veya Gundabad birlikleri öldürüldü. (Sayaç her saat yenilenir)
-qstr_{reg65}_{s3}_troops_|{reg65} {s3} birligi öldürüldü. (Sayaç her saat yenilenir)
+; qstr_Your_progress_to_ful|Your progress to fulfill your oath is considered not very great. (Progress less than a third.)
+; qstr_You_have_made_some_p|You have made some progress to fulfill your oath, but there is still a long way to go. (Progress about half.) ^^ The enemies are starting to look out for you.
+; qstr_You_have_won_the_hat|You have won the hatred of your enemies, press on further and you will fulfill your oath! (Progress more than two thirds.) ^^ The enemies are starting to dispatch additional parties around their fortresses and camps.
+; qstr_You_have_made_yourse|You have made yourself a name as one of the enemy's worst foes. Your oath is almost fulfilled!
+; qstr_Your_enemies_tremble|Your enemies tremble at the mentioning of you name! Your oath is fulfilled!
+; qstr_King_Dain_values_you|King Dain values your effort to fulfill your oath, but acknowledges that events unfolded too quickly. As a result, 
+qstr_{s22}You_have_fulfil|{s22} Balin ve onun grubunun intikamını almak için ettigin yemini yerine getirdin!
+; qstr_{s23}You_are_release|{s23}You are released from your oath.
+; qstr_Oath_Score:_{reg65}_|Oath Score: {reg65} (Counter refreshes every hour)
 qstr_{reg66}_{s5}_troops_|{reg66} {s5} birligi öldürüldü. (Sayaç her saat yenilenir)
 qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} birligi öldürüldü. (Sayaç her saat yenilenir)
 qstr_{s8}_in_{s9}_asked_y|{s9}'deki {s8}, {reg67} {s10}'ı öldürmenizi istedi.^ {reg68} {s11} öldürüldü. (Sayaç her saat başında yenilenir)
 qstr_{s1}_is_scouted.|{s1} gözlendi.
+; qstr_{s1}_managed_to_esca|{s1} managed to escape the downfall of {s2} and found refuge in {s3}.
+; qstr_{s3}_gained_faction_|{s3} gained faction strength.
 qstr_{s2}_was_defeated!|{s2} maglup edildi.
-qstr_The_Age_of_Men_has_f|İnsanların çagı sonunda geçti. Şimdi İki Kule, Orta Dünya'nın tek hükümdarının kim olacagına karar vermek için ordularını ve müttefiklerini topluyor!
+; qstr_The_Age_of_Men_has_f|The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth! Whom will you serve?
 qstr_The_War_of_the_Two_T|İki Kulenin savaşı başladı!
 qstr_The_forces_of_{s22}_|{s22} Tarafının kuvveti arttı! {s22} Şu an {s23}.
 qstr_The_might_of_{s22}_h|{s22} Tarafının gücü Zayıfladı! {s22} Şu an {s23}.
@@ -1211,6 +1282,9 @@ qstr_You_have_{reg69}_all|Seni takip eden bir {reg69} müttefik partin var
 qstr_You_have_{reg69}_ally|Seni takip eden bir {reg69} müttefik partin var
 qstr_The_forces_of_{s2}_h|{S2} Kuvvetleri toparlandı ve {s15}  tarafına yürüyorlar!
 qstr_Your_scouts_report_s|Gözcüleriniz yakınlarda bir {s2} belirtisi bildirdi.
+; qstr_{s5}_sent_out_a_host|{s5} sent out a host against you!
+; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. The general consensus is that you are released from your oath.
+; qstr_You_hear_rumors_that|You hear rumors that {s1}
 qstr_{s1}_from_{s2}|{s2}'den {s1}
 qstr_When_dealing_with_lo|{s11}'in yerlileriyle konuşurken unutma ki onlar seni tanımıyorlar ve senin {s10}'da kazandıklarını bilmiyorlar.^^({s11} bölgesinden olan kişilere dagıtabilecegin beceri puanları {s10} bölgesinde kazandıklarınla aynı degil. {s11} bölgesinden kazandıklarını sadece bu bölgeden olan kişilere dagıtabilirsin, -- bilgi için ayrıca için rapor ekranına göz atabilirsin.)
 qstr_Info|Bilgi.
@@ -1222,7 +1296,7 @@ qstr_The_water_you_drank_|Ent diyarından içtigin su vücudunda garip bir etkiy
 qstr_Ent_water_effect:_in|Ent suyu etkisi: Boy artışı!
 qstr__+1_to_Strength__per|Güce +1 (kalıcı)
 qstr__+1_to_Charisma__per|Karizmaya +1 (kalıcı)
-qstr_The_dark_shadow_fina|Karanlık gölgenin fırtınası sonunda başladı, ve kötülügün orduları Orta Dünya'nın özgür insanlarına karşı yürüyüşe geçti. Mordor Güney'de Gondor'a karşı, Isengard Batı'da Rohan'a, Dol Guldur tekrar Elflere Karşı... Uzak Kuzey'de bile savaş var artık.
+; qstr_The_dark_shadow_fina|The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard against Rohan in the West, Dol Guldur against the Elves... Even in the far North there is a war of its own.
 qstr_The_War_has_started!|Savaş başladı!
 qstr_The_forest_seems_pea|Orman barışçıl gözüküyor.
 qstr_There_is_a_sense_of_|Havada tehlike kokusu var.
@@ -1236,11 +1310,8 @@ qstr_{s27}:_Influence_wit|{s27}: {s1} etkisiyle {reg2} 'den {reg1}'e artıyor.
 qstr_{s27}:_Influence_with|{s27}: {s1} etkisiyle {reg2} 'den {reg1} 'e düşüyor.
 qstr_{s27}:_Party_morale_|{s27}: Grup morali arttı.
 qstr_{s27}:_Party_morale_d|{s27}: Grup morali düştü.
-qstr_You_have_failed_to_f|Balin ve onun grubunun intikamını almak için ettigin yemini yerine getimedin!
-qstr_You_have_failed_to_fu|{s1} 'in kahramanca ölümü için intikam yemininizi yerine getirmeyi başaramadınız!
-qstr_Your_troops_value_yo|Birlikleriniz yemininizi yerine getirme çabanıza deger veriyor, ancak olayların çok hızlı geliştiginin farkındalar. Sonuç olarak,
-qstr_{s22}You_have_fulfil|{s22} Balin ve onun grubunun intikamını almak için ettigin yemini yerine getirdin!
-qstr_{s22}You_have_fulfill|{s22} {s1}'in kahramanca ölümü için ettigin intikam yeminini yetine getirdin!
+; qstr_Avoided_animal_ambus|Avoided animal ambush via Spotting.
+; qstr_Avoided_animal_ambush|Avoided animal ambush via Wildcraft.
 qstr_Reinforcements|Destek Birlikler
 qstr_Refugees_Escaped:_{r|Kaçan Mülteciler: {reg10} --- Öldürülen Mülteciler: {reg11}
 qstr_Raider_Parties_Kille|{reg12} Yagmacı Grubu öldürüldü
@@ -1324,6 +1395,9 @@ qstr_Greetings_{s23}.|Selamlar, {s23}.
 qstr_So_you_are_{s23}._I_|İşte buradasın {s23}. Senin {s25} arkadaşlarım için savaştıgını duydum, bu yüzden sanırım seni müttefik olarak görmeliyiz.
 qstr_I_need_volunteers_wi|Beni tehlikeli bir görevde takip edecek gönüllülere ihtiyacım var.
 qstr_I_need_some_soldiers|Ölenlerin yerine koymak için biraz askere ihtiyacım var.
+; qstr_I_need_a_captain_who|I need a captain who can keep my men in check and make sure they don't run away during battle.
+; qstr_I_am_looking_for_a_c|I am looking for a captain able to carry out my orders in battle!.
+; qstr_One_{s5}_joined_your|One {s5} joined your party.
 qstr_Maybe_the_weaklings_|Belkide güneyin güçsüzleri zırhsız İfritler'ine zırh giydirmiştir. Biz degil - bizim İfritler'imiz Gundabad'dan! 
 qstr_Do_I_look_like_a_smi|Sana demirci gibi mi görünüyorum? Peh. Git biriyle konuş.
 qstr_Excellent_job_{s23}!|Harika iş, {s23}! Keşke tüm komutanlarımız da senin gibi kararlı olsaydı.^
@@ -1394,6 +1468,12 @@ qstr_Superb_work_{playern|Muhteşem bir iş, {playername}. Senin tarzını begen
 qstr_Your_efficiency_is_p|Verimliliginiz memnuniyet verici, {playername}. Devam edin daha da ileriye gidin.
 qstr_It_was_an_honour_to_|Hizmet etmek bir onurdu.
 qstr_Your_wish_is_my_comm|İsteginiz benim için bir emirdir.
+; qstr_Hail_{playername}_{s|Hail, {playername}, {s24}! Glad am I to behold you, alive and unbroken. Through days of shadow we have endured, and in the thunder of battle we have stood fast. Bitter were the losses laid upon us, and many sorrows have we borne.^^ Yet this hour is not given to grief. Rather it is a time of gladness, for the darkness has passed, and a new Age dawns upon the world. Be thankful, for I am thankful, that in the Last Days of the Third Age you stood beside me, faithful and undaunted.
+; qstr_Through_shadow_and_s|Through shadow and strife I stood, not for glory, but for loyalty and hope unbroken. I remember the fallen and the cost that was paid. As a new Age has dawned, I pledge my strength to its keeping, in wisdom and in mercy.
+; qstr_So_you_stand_before_|So you stand before me still, {playername}, {s24}. Few have endured the storm and come forth unbroken. The world has been purged by fire and iron, and many were swept away who clung to the follies of the past. Such was the price of change.^^ The Age of decay has ended, and the long dominion of chance and fading dreams is overthrown. A new Age rises—ordered, measured, and strong—shaped not by hope alone, but by the knowledge and will of your wise Master, the White Hand of Isengard! ^^Behold it, and rejoice, for you have lived to see what few dared imagine. In the Last Days of the Third Age, when the old powers failed and the world stood at the brink, you chose to stand beside me. Remember this hour, for it is the hour of victory, and from it the world shall be remade.
+; qstr_Hail_to_the_White_Ha|Hail to the White Hand!
+; qstr_Hear_now_the_word_of|Hear now the word of Barad-dûr, {playername}, {s24}, and give heed. The proud are fallen, the hopeful are silenced, and the counsels of the Wise have come to naught. Such was the end foreseen from the beginning. The Third Age is ended by decree of the Lord of the Dark Tower, whose will has prevailed over all resistance. What was weighed has been found wanting, and the world is now claimed under HIS dominion. ^^Let it further be proclaimed: those who stood and endured in the Last Days are numbered among the living by sufferance alone. Order is restored, fear is the law, and obedience is the measure of worth. The Red Eye watches all. Hail to the Red Eye.
+; qstr_Hail_to_the_Red_Eye!|Hail to the Red Eye!
 qstr_Sauron_in_Mordor_the|Mordor'daki Sauron, Umbar Korsanları, Khand'lı Variaglar ve Harad Kabile üyeleri
 qstr_Saruman_in_Isengard_|Isengard'daki Saruman ve Dunland'ın Vahşi Adamları
 qstr_Orcs_of_Moria_and_Do|Moria ve Dol Guldur Orkları
@@ -1419,8 +1499,9 @@ qstr_our|bizim
 qstr_your|senin
 qstr_Moria_and_Gundabad|Moria ve Gundabad
 qstr_Moria|Moria
+; qstr_Your_enemies_in_{s3}|Your enemies in {s3} hear of your oath and rally their strength to counter the threat.
 qstr_Gundabad|Gundabad
-qstr_You_swear_an_oath_of|{S3}  birliklerine karşı bir intikam yemin ettin. Şimdi önümüzdeki günlerde mümkün oldugunca Moria ve Gundabad birliklerini öldürmelisin. Takipçilerinizin bu yemin tanıklık ettigine ve Yeminbozan olarak bilinmek istemediginin farkındasın. Kan akıtmanın şimdi başlaması gerekiyor!^.
+; qstr_You_swear_an_oath_of|You swear an oath of vengeance against {s3}. You must now defeat as many parties and personally kill as many orcs of Moria and Gundabad as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^.
 qstr_The_search_for_the_L|Kayıp Mızrakların araştırılması sizi Kral Bladorthin'in eski kuzey krallıgının bulundugu Dorwinion'a götürdü. DEVAM EDECEK
 qstr__You_need_to_be_{s24|(En az {s24} yada daha yüksek olmalısın).
 qstr_You_are_not_worthy_o|Yeteneklerime degmezsin. İlk olarak kendini kanıtla, ve {s25} seviyesinin üzerine yüksel. {s2}
@@ -1468,9 +1549,7 @@ qstr_Firstly_we_must_thin|İlk olarak, bu görevin engellerini düşünmeliyiz:
 qstr_You_need_sharp_weapo|Keskin silahlara, birliklerin ve savaşlarınız için taze ete, yangınları doyurmak için odun ve zayıfların devam etmesini saglamak için taslaklara ihtiyacın var. Ayrıca pisliklerinizi emir altında tutmanız gerek, yoksa duvarlara bile varmadan hepsi birbirlerini öldürür. Senin elemanlarınla ugraşamayacak kadar kafamız kalabalık bizim — bu kurtçukları hizada tutmak için kafanı agrıtmaya hazır olun. ^ [{reg3} kaynakları, {reg15} nüfus gerektirir]
 qstr_Steel_must_be_kept_s|Çelik keskin tutulmalı, askerler ve atlar beslenmeli, ateş yakılmalı, su getirilmeli, yaralar bakılmalı - mücâdeleyi sürdüremezseniz siz ve adamlarınız bize fayda saglamaz. Size gerekenleri veremeyecek kadar ince bir hat üzerinde yayıldıgımızdan, ordunuzu yapacagımız kuşatma alanında tutmak için gerekenleri saglamaya hazır olmalısınız.^[{reg3}kaynak, {reg15} nüfuz gerekli]
 qstr_Steel_must_be_kept_sh|Çelik keskin tutulmalı, askerler ve atlar beslenmeli, ateş yakılmalı, su getirilmeli, yaralar bakılmalı - daha az ihtişamlı bir savaş ancak surlar üzerinde savaşacagından daha az önemli de degil. Size gerekenleri veremeyecek kadar ince bir hat olarak yayıldıgımızdan, ordunuzu kuşatma altında aktif durumda tutmak için gerekenleri saglamaya hazır olmalısınız.^[{Reg3} Kaynak, {reg15} Nüfuz]
-qstr_Next_if_you_try_to_a|Sonra, eger bir düşman başkentine saldırmaya çalışırsan... henüz ölmediysen sana sadık kalacagım. Sadece Efendi'nin emrettigi yere yürüyecegiz. Düşmanın zayıf oldugu ve yenilebilecegi bir yere gitmelisin.
-qstr_Secondly_you_do_not_|İkincisi, halkımızı bir düşman Başkentine karşı yönetme izniniz yok. Bu yerler, ancak, kuvvetlerimizin tam gücü birleştiginde aşılabilir. Düşmanımızı yendigimiz yerlerin zaman içerisinde yeteri kadar zayıflatıldıgı anı bekleyecegiz.
-qstr_Third_{s2}_is_on_its|Üçüncüsü, {s2} kendi mücadelesinde. Eger seçimler iyi gözüküyorsa sizinle savaşacagız, ancak kendi başınıza kazanabilecek kadar güçlü olmalısınız, yoksa uzun süre ayakta kalamazsınız.
+; qstr_Know_that_{s2}_is_on|Know that {s2} is on its own campaign. We’ll fight with you if the pickings look good, but you better be strong enough to win on your own, or you won’t last long.
 qstr_Furthermore_you_must|Ayrıca, {s2} kendi dertleriyle meşgul oldugunu bilmelisin. Eger şartlar uygunsa bizim sancaklarımız muharebelerde sana katılacak, ama umuda güvenme — yalnız kalmak zorunda kalabilirsin.
 qstr_Last_remember_that_a|Son olarak, bir {s25} olarak, Efendinin başarısızlık için vakti olmadıgını hatırlayın. Savaştıgınızda, {s2} için çok fazla risk alıyorsunuz — bize yenilgi getirirseniz, emin olun hiç dogmamış olmayı dilersiniz.
 qstr_Finally_remember_tha|Son olarak, {s25} olarak, başarıların ve başarısızlıklarınla yaşayıp öldügünü unutma. Her savaşında {s2} için pek çok risk alırsın — Eger olurda batarsan, sonuçları çok agır olur.
@@ -1585,6 +1664,7 @@ qstr_Take_these_warriors_a|Bu savaşçıları alın ve onları düşmanlarımız
 qstr_Before_you_leave_{pl|Senin için her zaman iyi bir dost oldum, {playername}.
 qstr_Wait_{playername}._I_|Bekle, {playername}. Seni yeterince iyi tanıyamadım ama şu ana kadar iyi bir dost oldun.
 qstr_Allow_me_to_repay_yo|Sizi ödüllendirmek için size bazı birlikler vermemi izin verin.
+; qstr_{reg41}_{s9}_joined_|{reg41} {s9} joined your party.
 qstr_Wait_{playername}._C|Bekle, {playername}. Senin gibi yetenekli hizmetkârlar ve savaşçılar en iyi ekipmana layık.
 qstr_Halt_{playername}._It|Dur, {playername}. Hizmetkârlarımın bu kadar düşük kaliteli ekipman kullanması utanç verici.
 qstr_Take_this_{s22}_and_|Bu {s22}'ı al ve saldırında sana yardım etsin.
@@ -1672,6 +1752,7 @@ qstr_One_{s6}_left_the_pa|Bir  {s6} grubu terketti.
 qstr_I_understand._I_will|Anlıyorum. Seninle kalacagım. Bir süre için.
 qstr_I_have_played_my_rol|Uzun yıllar boyunca, ölümlü insanların birçok yaşamı boyunca rolümü oynadım. Bu savaş, insanların savaşması içindir. Batı'ya gidecegim ve belki de bazıları benimle gelmeye karar verebilir.
 qstr_{reg1}_Veteran_Elves|{reg1} Kıdemli Elfler grubunuzdan ayrılmaya karar verdi.
+; qstr_{s5}_comes_for_your_|{s5} comes for your aid!
 qstr_What_an_amazing_feat|Ne şahane usta eller bunlar!
 qstr_Well_done!|Aferin!
 qstr_Nice_legwork.|Ayak hareketlerin yerinde.

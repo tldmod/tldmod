@@ -150,7 +150,6 @@ itm_arnor_shield_a|Rondache arnorienne
 itm_arnor_sword_c|Épée de guerre d'Arnor
 itm_arnor_sword_a|Épée bâtarde arnorienne
 itm_arnor_sword_f|Épée courte arnorienne
-itm_riv_helm_a|Coiffe de Fendeval
 itm_riv_helm_b|Casque d'archer de Fendeval
 itm_riv_helm_c|Casque d'infanterie de Fendeval
 itm_tiara_reward|Tiare de seigneur elfe
@@ -285,7 +284,7 @@ itm_lorien_round_shield|Bouclier rond de la Lórien
 itm_lorien_helm_a|Casque d'archer de la Lórien
 itm_lorien_helm_b|Casque d'archer de la Lórien
 itm_lorien_helm_c|Casque d'infanterie de la Lórien
-itm_orc_coif|Calotte orque
+itm_orc_coif2|Calotte orque
 itm_orc_greaves|Bottes en mailles orque
 itm_orc_ragwrap|Bandage tissé orque
 itm_orc_furboots|Bottes de fourrure orque 
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|Casque de capitaine uruk-hai
 itm_isen_uruk_helm_e|Casque de pisteur uruk-hai
 itm_uruk_pike_b|Pique du Mordor
 itm_uruk_falchion_a|Fauchon uruk
-itm_uruk_falchion_b|Grand cimeterre orque
+itm_orc_bastard_scimitar|Grand cimeterre orque
+itm_orc_cleaver_a|Couperet orque
+itm_orc_scimitar_b|Cimeterre orque
+itm_orc_sabre_b|Sabre orque
+itm_orc_mangler|Broyeur orque
 itm_isengard_sword|Épée de l'Isengard
 itm_isengard_axe|Hache de l'Isengard
 itm_isengard_hammer|Marteau de l'Isengard
@@ -340,7 +343,7 @@ itm_orc_pick|Pique orque
 itm_orc_hammer|Marteau maléfique
 itm_orc_club_b|Massue de cavalier de warg
 itm_orc_club_c|Massue à pointe orque
-itm_orc_club_d|Massue Maléfique
+itm_orc_mace|Massue Maléfique
 itm_orc_sledgehammer|Marteau orque
 itm_orc_simple_spear|Lance orque
 itm_orc_skull_spear|Lance de crâne orque
@@ -375,6 +378,10 @@ itm_orc_morion|Casque morion orque
 itm_orc_beakhelm|Casque à bec orque
 itm_orc_bughelm|Casque d'insecte orque
 itm_orc_visorhelm|Casque à visière orque
+itm_orc_coif|Coiffe maléfique
+itm_orc_skullcap|Calotte orque
+itm_orc_skullhelm|Heaume orque
+itm_orc_barbuta|Casque à nasal orque
 itm_m_orc_light_a|Armure légère orque du Mordor
 itm_m_orc_light_b|Armure légère orque du Mordor
 itm_m_orc_light_c|Armure légère orque du Mordor
@@ -839,3 +846,6 @@ itm_civilian_carry_oil|Huile
 itm_civilian_carry_wood2|Bois
 itm_work_basket|Panier
 itm_work_basket_2|Panier
+itm_spider_mount|Araignée
+itm_marker_night_troop|Trait : Troupe de nuit
+itm_marker_berserker|Trait : Berserker

@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|Orc Lutador de Gundabad
 trp_i3_gunda_orc_fighter_pl|Orcs Lutadores de Gundabad
 trp_i4_gunda_orc_warrior|Orc Guerreiro de Gundabad
 trp_i4_gunda_orc_warrior_pl|Orcs Guerreiros de Gundabad
-trp_i4_gunda_orc_berserker|Orc Berserker de Gundabad
-trp_i4_gunda_orc_berserker_pl|Orcs Berserkers de Gundabad
+trp_i5_gunda_orc_berserker|Orc Berserker de Gundabad
+trp_i5_gunda_orc_berserker_pl|Orcs Berserkers de Gundabad
 trp_ca4_gunda_skirmisher|Escaramuçador de Gundabad
 trp_ca4_gunda_skirmisher_pl|Escaramuçadores de Gundabad 
 trp_ca5_gunda_clan_skirmisher|Goblin Escaramuçador do Clã do Norte
@@ -1185,8 +1185,8 @@ trp_smith_gundabad_ne|Blurg Vende-neve
 trp_smith_gundabad_ne_pl|Ferreiro
 trp_smith_gundabad_nw|Blurg Vende-neve
 trp_smith_gundabad_nw_pl|Ferreiro
-trp_smith_gundabad_s|Blurg Vende-neve
-trp_smith_gundabad_s_pl|Ferreiro
+trp_smith_moria_s|Burgak Forjador
+trp_smith_moria_s_pl|Ferreiro
 trp_smith_gundabad_m|Blurg Vende-neve
 trp_smith_gundabad_m_pl|Ferreiro
 trp_barman_eastemnet|Gerente da Taverna
@@ -1211,8 +1211,8 @@ trp_merchant_woodelf_west_camp|Mestre dos Suprimentos
 trp_merchant_woodelf_west_camp_pl|Suprimentos Élficos
 trp_merchant_gundabad_m|Mestre dos Suprimentos
 trp_merchant_gundabad_m_pl|Esconderijo do Acampamento
-trp_merchant_gundabad_s|Mestre dos Suprimentos
-trp_merchant_gundabad_s_pl|Esconderijo do Acampamento
+trp_merchant_moria_s|Mestre dos Suprimentos
+trp_merchant_moria_s_pl|Esconderijo de Acampamento
 trp_merchant_gundabad_nw|Mestre dos Suprimentos
 trp_merchant_gundabad_nw_pl|Esconderijo do Acampamento
 trp_merchant_gundabad_ne|Mestre dos Suprimentos
@@ -1445,8 +1445,8 @@ trp_elder_gunda_ne|Orc Velho
 trp_elder_gunda_ne_pl|do acampamento
 trp_elder_gunda_nw|Orc Velho
 trp_elder_gunda_nw_pl|do acampamento
-trp_elder_gunda_s|Orc Velho
-trp_elder_gunda_s_pl|do acampamento
+; trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s_pl|do acampamento
 trp_elder_gunda_m|Orc Velho
 trp_elder_gunda_m_pl|do acampamento
 trp_elder_ironhill|Acampamento do Chefe
@@ -1501,8 +1501,8 @@ trp_evil_priest|Padre Maligno
 trp_evil_priest_pl|Padres Maligno
 trp_wolf_rider_of_mirkwood|Montador de Lobo da Floresta das Trevas
 trp_wolf_rider_of_mirkwood_pl|Montadores de Lobo da Floresta das Trevas
-trp_warg_rider_of_mirkwood|Montador de Warg da Floresta das Trevas
-trp_warg_rider_of_mirkwood_pl|Montadores de Warg da Floresta das Trevas
+trp_bear_strong|Urso
+trp_bear_strong_pl|Ursos
 trp_gate_aggravator|Defesa do Portão
 trp_orc_pretender|Orc Farsante
 trp_human_prisoner|Prisioneiro Humano

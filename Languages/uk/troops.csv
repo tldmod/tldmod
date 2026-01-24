@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|Орк боєць Гундабаду
 trp_i3_gunda_orc_fighter_pl|Орки бійці Гундабаду
 trp_i4_gunda_orc_warrior|Орк-воїн Гундабаду
 trp_i4_gunda_orc_warrior_pl|Орки-воїни Гундабаду
-trp_i4_gunda_orc_berserker|Орк-берсерк Гундабаду
-trp_i4_gunda_orc_berserker_pl|Орки-берсерки Гундабаду
+trp_i5_gunda_orc_berserker|Орк-берсерк Гундабаду
+trp_i5_gunda_orc_berserker_pl|Орки-берсерки Гундабаду
 trp_ca4_gunda_skirmisher|Лучник Гундабаду
 trp_ca4_gunda_skirmisher_pl|Лучники Гундабаду
 trp_ca5_gunda_clan_skirmisher|Гоблін-лучник Північного Клану
@@ -1185,8 +1185,8 @@ trp_smith_gundabad_ne|Блург Снігопродавець
 trp_smith_gundabad_ne_pl|кузню
 trp_smith_gundabad_nw|Блург Снігопродавець
 trp_smith_gundabad_nw_pl|кузню
-trp_smith_gundabad_s|Блург Снігопродавець
-trp_smith_gundabad_s_pl|кузню
+trp_smith_moria_s|Бургак Коваль
+trp_smith_moria_s_pl|кузню
 trp_smith_gundabad_m|Блург Снігопродавець
 trp_smith_gundabad_m_pl|кузню
 trp_barman_eastemnet|Господар таверни
@@ -1211,8 +1211,8 @@ trp_merchant_woodelf_west_camp|Відає запасами
 trp_merchant_woodelf_west_camp_pl|ельфійські склади
 trp_merchant_gundabad_m|Відає запасами
 trp_merchant_gundabad_m_pl|польовий склад
-trp_merchant_gundabad_s|Відає запасами
-trp_merchant_gundabad_s_pl|польовий склад
+trp_merchant_moria_s|Відає запасами
+trp_merchant_moria_s_pl|польовий склад
 trp_merchant_gundabad_nw|Відає запасами
 trp_merchant_gundabad_nw_pl|польовий склад
 trp_merchant_gundabad_ne|Відає запасами
@@ -1445,8 +1445,8 @@ trp_elder_gunda_ne|Оркський Ватажок
 trp_elder_gunda_ne_pl|табір
 trp_elder_gunda_nw|Оркський Ватажок
 trp_elder_gunda_nw_pl|табір
-trp_elder_gunda_s|Оркський Ватажок
-trp_elder_gunda_s_pl|табір
+; trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s_pl|табір
 trp_elder_gunda_m|Оркський Ватажок
 trp_elder_gunda_m_pl|табір
 trp_elder_ironhill|Табірний Управитель
@@ -1501,8 +1501,8 @@ trp_evil_priest|Служитель зла
 trp_evil_priest_pl|Служитель зла
 trp_wolf_rider_of_mirkwood|Вовчий вершник Темнолісся
 trp_wolf_rider_of_mirkwood_pl|Вовчі вершники Темнолісся
-trp_warg_rider_of_mirkwood|Темнолісський вершник на Варзі
-trp_warg_rider_of_mirkwood_pl|Темнолісські вершники на Варзі
+trp_bear_strong|Ведмідь
+trp_bear_strong_pl|Ведмеді
 trp_gate_aggravator|Сторож
 trp_orc_pretender|Претендент на лідерство
 trp_human_prisoner|Полонена людина

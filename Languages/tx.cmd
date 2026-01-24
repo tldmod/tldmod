@@ -28,4 +28,6 @@ copy /b it\ui_native_template.csv+it\ui_transifex.csv it\ui.csv /y
 del     it\ui_transifex.csv
 
 pause
-cls && goto :up
+cls 
+:: Commented out by Invain, being annoyed by the script re-running whenever I accidentally click a button
+::&& goto :up

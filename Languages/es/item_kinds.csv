@@ -150,7 +150,6 @@ itm_arnor_shield_a|Escudo redondo de Arnor
 itm_arnor_sword_c|Espada de guerra de Arnor
 itm_arnor_sword_a|Espada bastarda de Arnor
 itm_arnor_sword_f|Espada corta de Arnor
-itm_riv_helm_a|Cofia de Rivendel
 itm_riv_helm_b|Casco de arquero de Rivendel
 itm_riv_helm_c|Casco de infantería de Rivendel
 itm_tiara_reward|Tiara de Señor Elfo
@@ -285,7 +284,7 @@ itm_lorien_round_shield|Escudo redondo de Lórien
 itm_lorien_helm_a|Yelmo de arquero de Lórien
 itm_lorien_helm_b|Yelmo de arquero de Lórien
 itm_lorien_helm_c|Yelmo de infantería de Lórien
-itm_orc_coif|Capacete orco
+itm_orc_coif2|Capacete orco
 itm_orc_greaves|Botas orcas de malla
 itm_orc_ragwrap|Harapos orcos
 itm_orc_furboots|Botas orcas de piel
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|Yelmo de Capitán Uruk-hai
 itm_isen_uruk_helm_e|Yelmo de rastreador Uruk-hai
 itm_uruk_pike_b|Pica de Mordor
 itm_uruk_falchion_a|Alfanje de uruk
-itm_uruk_falchion_b|Gran cimitarra orca
+itm_orc_bastard_scimitar|Gran cimitarra orca
+itm_orc_cleaver_a|Alfanje orco
+itm_orc_scimitar_b|Cimitarra orca
+itm_orc_sabre_b|Sable orco
+itm_orc_mangler|Destripador orco
 itm_isengard_sword|Espada de Isengard
 itm_isengard_axe|Hacha de Isengard
 itm_isengard_hammer|Martillo de Isengard
@@ -340,7 +343,7 @@ itm_orc_pick|Pico orco
 itm_orc_hammer|Martillo maligno
 itm_orc_club_b|Garrote de jinete de huargo
 itm_orc_club_c|Garrote orco con pinchos
-itm_orc_club_d|Maza maligna
+itm_orc_mace|Maza maligna
 itm_orc_sledgehammer|Almádena orca
 itm_orc_simple_spear|Lanza orca
 itm_orc_skull_spear|Lanza de calavera orca
@@ -375,6 +378,10 @@ itm_orc_morion|Morrión orco
 itm_orc_beakhelm|Yelmo orco con pico
 itm_orc_bughelm|Yelmo de sabandija orco
 itm_orc_visorhelm|Yelmo orco con visor
+itm_orc_coif|Almófar malvado
+itm_orc_skullcap|Capacete orco
+itm_orc_skullhelm|Yelmo orco de calavera
+itm_orc_barbuta|Yelmo orco con nasal
 itm_m_orc_light_a|Armadura ligera de orco de Mordor
 itm_m_orc_light_b|Armadura ligera de orco de Mordor
 itm_m_orc_light_c|Armadura ligera de orco de Mordor
@@ -839,3 +846,6 @@ itm_civilian_carry_oil|Aceite
 itm_civilian_carry_wood2|Madera
 itm_work_basket|Cesta
 itm_work_basket_2|Cesta
+itm_spider_mount|Araña
+itm_marker_night_troop|Rasgo: tropa nocturna
+itm_marker_berserker|Rasgo: berserker

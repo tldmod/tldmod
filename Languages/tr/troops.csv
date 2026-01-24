@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|Gundabad Ork Dövüşçüsü
 trp_i3_gunda_orc_fighter_pl|Gundabad Ork Dövüşçüleri
 trp_i4_gunda_orc_warrior|Gundabad Ork Savaşçısı
 trp_i4_gunda_orc_warrior_pl|Gundabad Ork Savaşçıları
-trp_i4_gunda_orc_berserker|Gundabad Ork Vahşi Savaşçı
-trp_i4_gunda_orc_berserker_pl|Gundabad Ork Vahşi Savaşçılar
+trp_i5_gunda_orc_berserker|Gundabad Ork Vahşi Savaşçı
+trp_i5_gunda_orc_berserker_pl|Gundabad Ork Vahşi Savaşçılar
 trp_ca4_gunda_skirmisher|Gundabad Avcısı
 trp_ca4_gunda_skirmisher_pl|Gundabad Avcıları
 trp_ca5_gunda_clan_skirmisher|Kuzeyli Goblin Klanı Avcısı
@@ -1185,8 +1185,8 @@ trp_smith_gundabad_ne|Blurg Karsatan
 trp_smith_gundabad_ne_pl|Demirci 
 trp_smith_gundabad_nw|Blurg Karsatan 
 trp_smith_gundabad_nw_pl|Demirci 
-trp_smith_gundabad_s|Blurg Karsatan 
-trp_smith_gundabad_s_pl|Demirci 
+trp_smith_moria_s|Demirci Burgak
+trp_smith_moria_s_pl|Demirci 
 trp_smith_gundabad_m|Blurg Karsatan 
 trp_smith_gundabad_m_pl|Demirci 
 trp_barman_eastemnet| Hancı
@@ -1211,8 +1211,8 @@ trp_merchant_woodelf_west_camp|Erzak Efendisi
 trp_merchant_woodelf_west_camp_pl| elf erzakları
 trp_merchant_gundabad_m|Erzak Efendisi 
 trp_merchant_gundabad_m_pl|kamp kasası 
-trp_merchant_gundabad_s|Erzak Efendisi 
-trp_merchant_gundabad_s_pl|kamp kasası 
+trp_merchant_moria_s|Erzak Efendisi 
+trp_merchant_moria_s_pl|kamp kasası 
 trp_merchant_gundabad_nw|Erzak Efendisi 
 trp_merchant_gundabad_nw_pl|kamp kasası 
 trp_merchant_gundabad_ne|Erzak Efendisi 
@@ -1445,8 +1445,8 @@ trp_elder_gunda_ne|Ork Yaşlısı
 trp_elder_gunda_ne_pl|kamp
 trp_elder_gunda_nw|Ork Yaşlısı
 trp_elder_gunda_nw_pl|kamp
-trp_elder_gunda_s|Ork Yaşlısı
-trp_elder_gunda_s_pl|kamp
+; trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s_pl|kamp
 trp_elder_gunda_m|Ork Yaşlısı
 trp_elder_gunda_m_pl|kamp
 trp_elder_ironhill|Gundanad'lı Kamp Şefi
@@ -1501,8 +1501,8 @@ trp_evil_priest|Kötü Rahip
 trp_evil_priest_pl|Kötü Rahipler
 trp_wolf_rider_of_mirkwood|Kuytuorman'ın Kurt Binicisi
 trp_wolf_rider_of_mirkwood_pl|Kuytuorman'ın Kurt Binicileri
-trp_warg_rider_of_mirkwood|Kuytuorman'ın Warg Binicisi
-trp_warg_rider_of_mirkwood_pl|Kuytuorman'ın Warg Binicileri
+trp_bear_strong|Ayı
+trp_bear_strong_pl|Ayılar
 trp_gate_aggravator|Kapı Defansı
 trp_orc_pretender|Hak Sahibi Ork
 trp_human_prisoner|İnsan Mahkum

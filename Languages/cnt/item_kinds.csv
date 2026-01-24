@@ -150,7 +150,6 @@ itm_arnor_shield_a|亞爾諾圓盾
 itm_arnor_sword_c|亞爾諾戰劍
 itm_arnor_sword_a|亞爾諾變種劍
 itm_arnor_sword_f|亞爾諾短劍
-itm_riv_helm_a|瑞文戴爾頭巾
 itm_riv_helm_b|瑞文戴爾弓兵盔
 itm_riv_helm_c|瑞文戴爾步兵盔
 itm_tiara_reward|精靈領主冠
@@ -285,7 +284,7 @@ itm_lorien_round_shield|羅瑞安圓盾
 itm_lorien_helm_a|羅瑞安弓兵盔
 itm_lorien_helm_b|羅瑞安弓兵盔
 itm_lorien_helm_c|羅瑞安步兵盔
-itm_orc_coif|半獸人頭盔
+itm_orc_coif2|半獸人頭盔
 itm_orc_greaves|半獸人鏈靴
 itm_orc_ragwrap|半獸人裹腳布
 itm_orc_furboots|半獸人毛靴
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|強獸人隊長盔
 itm_isen_uruk_helm_e|強獸人追蹤者盔
 itm_uruk_pike_b|魔多長矛
 itm_uruk_falchion_a|強獸人彎刀
-itm_uruk_falchion_b|半獸人月牙大彎刀
+itm_orc_bastard_scimitar|半獸人月牙大彎刀
+; itm_orc_cleaver_a|Orc Cleaver
+itm_orc_scimitar_b|半獸人月牙彎刀
+itm_orc_sabre_b|半獸人軍刀
+; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|艾辛格劍
 itm_isengard_axe|艾辛格斧
 itm_isengard_hammer|艾辛格錘
@@ -340,7 +343,7 @@ itm_orc_pick|半獸人鎬
 itm_orc_hammer|邪惡錘
 itm_orc_club_b|座狼騎手棍
 itm_orc_club_c|半獸人帶刺棍
-itm_orc_club_d|邪惡戰錘
+itm_orc_mace|邪惡戰錘
 itm_orc_sledgehammer|半獸人大槌
 itm_orc_simple_spear|半獸人長槍
 itm_orc_skull_spear|半獸人頭骨長槍
@@ -375,6 +378,10 @@ itm_orc_morion|半獸人船狀盔
 itm_orc_beakhelm|半獸人鳥嘴盔
 itm_orc_bughelm|半獸人蟲盔
 itm_orc_visorhelm|半獸人覆面盔
+; itm_orc_coif|Evil Coif
+itm_orc_skullcap|半獸人頭盔
+; itm_orc_skullhelm|Orc Skullhelm
+itm_orc_barbuta|半獸人覆鼻盔
 itm_m_orc_light_a|魔多半獸人輕型鎧甲
 itm_m_orc_light_b|魔多半獸人輕型鎧甲
 itm_m_orc_light_c|魔多半獸人輕型鎧甲
@@ -839,3 +846,6 @@ itm_black_tunic_wb|黑色束腰外衣
 ; itm_civilian_carry_wood2|Wood
 ; itm_work_basket|Basket
 ; itm_work_basket_2|Basket
+itm_spider_mount|蜘蛛
+; itm_marker_night_troop|Trait: Night Troop
+; itm_marker_berserker|Trait: Berserker

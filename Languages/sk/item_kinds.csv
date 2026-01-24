@@ -150,7 +150,6 @@ itm_arnor_shield_c|Arnorský jazdecký štít
 ; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_a|Arnorský meč Bastard
 itm_arnor_sword_f|Arnosrký krátky meč
-itm_riv_helm_a|Roklinská čiapka
 itm_riv_helm_b|Roklinský lukostrelecká helma
 itm_riv_helm_c|Roklinská pechotná helma
 itm_tiara_reward|Elfská lordská čelenka
@@ -285,7 +284,7 @@ itm_lorien_round_shield|Lorienský guľatý štít
 itm_lorien_helm_a|Lorienská lukostrelecká prilba
 itm_lorien_helm_b|Lorienská lukostrelecká prilba
 itm_lorien_helm_c|Lorienská pechotná prilba
-itm_orc_coif|Ohyzdia prilba z lebky
+itm_orc_coif2|Ohyzdia prilba z lebky
 itm_orc_greaves|Ohyzdie krúžkové topánky
 itm_orc_ragwrap|Ohyzdia šatka
 itm_orc_furboots|Ohyzdie kožušinové topánky
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|Uruk-Haiská kapitánska helma
 itm_isen_uruk_helm_e|Uruk-Haiská stopárska helma
 itm_uruk_pike_b|Mordorská píka
 itm_uruk_falchion_a|Urukský Falchion
-itm_uruk_falchion_b|Veľká ohyzdia šabľa
+itm_orc_bastard_scimitar|Veľká ohyzdia šabľa
+; itm_orc_cleaver_a|Orc Cleaver
+itm_orc_scimitar_b|Ohyzdia zakrivená šabľa
+itm_orc_sabre_b|Ohyzdia šabľa
+; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|Isengardský meč
 itm_isengard_axe|Isengardská sekera
 itm_isengard_hammer|Isengardské kladivo
@@ -340,7 +343,7 @@ itm_bone_cudgel|Palica z kostí
 itm_orc_hammer|Temné kladivo
 itm_orc_club_b|Kyjak vročieho jazdca
 itm_orc_club_c|Ohyzdí kyj obitý klincami
-itm_orc_club_d|Temný palcát
+itm_orc_mace|Temný palcát
 itm_orc_sledgehammer|Ohyzdie tupé kladivo
 itm_orc_simple_spear|Ohyzdia kopija
 itm_orc_skull_spear|Ohyzdia lebková kopija
@@ -375,6 +378,10 @@ itm_orc_morion|Ohyzdí Morion
 itm_orc_beakhelm|Ohyzdia zobcovitá helma
 itm_orc_bughelm|Ohyzdia hmyzia helma
 itm_orc_visorhelm|Ohyzdia prilba s priezorom
+; itm_orc_coif|Evil Coif
+itm_orc_skullcap|Ohyzdia prilba z lebky
+; itm_orc_skullhelm|Orc Skullhelm
+itm_orc_barbuta|Ohyzdia prilba s nánosníkom
 itm_m_orc_light_a|Mordorské ľahké ohyzdie brnenie
 itm_m_orc_light_b|Mordorské ľahké ohyzdie brnenie
 itm_m_orc_light_c|Mordorské ľahké ohyzdie brnenie
@@ -839,3 +846,6 @@ itm_denethor_robe|Dobrá výstroj
 ; itm_civilian_carry_wood2|Wood
 ; itm_work_basket|Basket
 ; itm_work_basket_2|Basket
+itm_spider_mount|Pavúk
+; itm_marker_night_troop|Trait: Night Troop
+; itm_marker_berserker|Trait: Berserker

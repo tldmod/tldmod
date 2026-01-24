@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|Bojový ohyzd z Gundabadu
 trp_i3_gunda_orc_fighter_pl|Bojoví ohyzdi z Gundabadu
 trp_i4_gunda_orc_warrior| Ohyzdí vojak z Gundabadu
 trp_i4_gunda_orc_warrior_pl|Ohyzdí vojaci z Gundabadu
-trp_i4_gunda_orc_berserker|Ohyzdí berserk z Gundabadu
-trp_i4_gunda_orc_berserker_pl|Ohyzdí berserkovia z Gundabadu
+trp_i5_gunda_orc_berserker|Ohyzdí berserk z Gundabadu
+trp_i5_gunda_orc_berserker_pl|Ohyzdí berserkovia z Gundabadu
 trp_ca4_gunda_skirmisher|Gundabadský vrrči strelec
 trp_ca4_gunda_skirmisher_pl|Gundabadskí vrrči strelci strelci
 trp_ca5_gunda_clan_skirmisher|Zmočí vročí strelec Sevesného kmeňa škratov
@@ -1185,8 +1185,8 @@ trp_smith_gundabad_ne|Blurg Zlatosneh
 trp_smith_gundabad_ne_pl|kováčska dielňa
 trp_smith_gundabad_nw|Blurg Zlatosneh
 trp_smith_gundabad_nw_pl|kováčska dielňa
-trp_smith_gundabad_s|Blurg Zlatosneh
-trp_smith_gundabad_s_pl|kováčska dielňa
+trp_smith_moria_s|Burgak Kováč
+trp_smith_moria_s_pl|kováčska dielňa
 trp_smith_gundabad_m|Blurg Zlatosneh
 trp_smith_gundabad_m_pl|kováčska dielňa
 trp_barman_eastemnet|Krčmárka
@@ -1211,8 +1211,8 @@ trp_merchant_woodelf_west_camp|Obchodník so zásobami
 trp_merchant_woodelf_west_camp_pl|elfské zásoby
 trp_merchant_gundabad_m|Obchodník so zásobami
 trp_merchant_gundabad_m_pl|táborový sklad
-trp_merchant_gundabad_s|Obchodník so zásobami
-trp_merchant_gundabad_s_pl|táborový sklad
+trp_merchant_moria_s|Obchodník so zásobami
+trp_merchant_moria_s_pl|táborový sklad
 trp_merchant_gundabad_nw|Obchodník so zásobami
 trp_merchant_gundabad_nw_pl|táborový sklad
 trp_merchant_gundabad_ne|Obchodník so zásobami
@@ -1445,8 +1445,8 @@ trp_elder_gunda_ne|Ohyzdí Starší
 trp_elder_gunda_ne_pl|tábor
 trp_elder_gunda_nw|Ohyzdí Starší
 trp_elder_gunda_nw_pl|tábor
-trp_elder_gunda_s|Ohyzdí Starší
-trp_elder_gunda_s_pl|tábor
+; trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s_pl|tábor
 trp_elder_gunda_m|Ohyzdí Starší
 trp_elder_gunda_m_pl|tábor
 trp_elder_ironhill|Veliteľ tábora
@@ -1501,8 +1501,8 @@ trp_black_numenorean_sorcerer|Čierno-númenorejský černokňažník
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|Vlčí jazdec z Temnohvozdu
 trp_wolf_rider_of_mirkwood_pl|Vlčí jazdci z Temnohvozdu
-trp_warg_rider_of_mirkwood|Vročí jazdec z Temnohvozdu
-trp_warg_rider_of_mirkwood_pl|Vročí jazdci z Temnohvozdu
+trp_bear_strong|Medveď
+trp_bear_strong_pl|Medvede
 trp_gate_aggravator|Obrana Brány
 trp_orc_pretender|Ohyzdí podvodník
 trp_human_prisoner|Ľudský zajatec

@@ -1893,9 +1893,9 @@ str_trait_desc_merciful|Düşmana hizmet eden kötü adamlara karşı bile merha
 str_trait_title_bravery|Yigitlik
 str_trait_desc_bravery|Büyük tehlikeler karşısında bile cesaret gösterip şöhret sahibi oldunu. Cesaretin hem sessiz tavernalarda hem de bilge salonlarında konuşuluyor. Yaptıgın işler adamlarınıa ilham verir ve haftalık moral bonusu alırlar.
 str_trait_title_oathkeeper|Yemin Tutan
-str_trait_desc_oathkeeper|Verdigin sözleri tuttugun için. Sözünün adamı olarak nam kazandın. Haftalık bir etki bonusu aldın.
+; str_trait_desc_oathkeeper|You have sworn grim oaths and lived to see them fulfilled. Subsequently you have aquired a reputation as a man of his word. Whenever you receive influence, there is a small chance for an influence bonus.
 str_trait_title_oathbreaker|Yemin bozan
-str_trait_desc_oathbreaker|Verdigin sözleri tutmadıgın için. Namın lekelendi. Haftalık bir etki bonusu kaybettin.
+; str_trait_desc_oathbreaker|You have sworn grim oaths and failed to see them through to their conclusion. Subsequently you have aquired a reputation as a man whose passion outstrips his prowess. Whenever you receive influence, there is a small chance for an influence malus.
 str_trait_title_orc_pit_champion|Ork çukur Şampiyonu
 str_trait_desc_orc_pit_champion|Vahşi oldugun kadar şöhretli biri oldun, böyle bir güç hem kara kalpli takipçileriniz tarafından  saygı duyulmanıza hem de onların sizden korkmalarına neden oluyor. Şimdi haftalık bir moral bonusu alıyorlar.
 str_trait_title_despoiler|Çapulcu
@@ -2521,3 +2521,5 @@ str_shortname_region_n_anduin_vale|Kuzey Anduin Vadisi
 str_shortname_region_s_anduin_vale|Güney Anduin Vadisi
 str_shortname_region_cair_andros|Cair Andros
 str_isengard_hunting_camp_guildmaster_player_found_ok|Eger iyi savaşırsa, onu alacagım. Savaşmazsa, içini bir balık gibi deşecegim. Ve eger bu da işe yaramaz yalakalardan biri çıkarsa, geri dönecegim ve sana vaktimi ziyan etmenin bedelini ödetecegim! 
+; str_trait_title_animal_fighter|Beast Slayer
+; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.

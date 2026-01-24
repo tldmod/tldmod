@@ -20,7 +20,6 @@ mno_custom_battle_scenario_7|待ち伏せ攻撃、 オーク vs 闇の森のエ�
 mno_custom_battle_scenario_8|ドゥリンの一族の最後の抵抗
 mno_custom_battle_scenario_88|オーク偵察部隊の追跡
 mno_custom_battle_scenario_11|戦闘のテスト(バランス調整をしてください！)
-mno_custom_battle_scenario_10|シーナリーのテスト
 mno_troll_battle_scenario|トロルのテスト
 mno_warg_battle_scenario|ワーグのテスト
 mno_build_your_own_scene|** 自分だけのTLDのシーンを作ろう **
@@ -197,7 +196,7 @@ menu_cattle_herd|あなたは人間の一群に会った。
 mno_cattle_drive_away|ついてくるように言う。
 mno_cattle_stop|その場で待つように言う。
 mno_leave|立ち去る。
-menu_simple_encounter|^^^^^{s2}^この戦闘に参加できるあなたの部隊は総勢{reg22}名、 対する敵勢は{reg11}名です。^^この戦いは{s3}{s4}で行われます。^^どうしますか？
+; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.{s17}^^Your orders?
 mno_encounter_attack|{reg21?攻撃開始:迎え撃つ}。
 mno_encounter_order_attack|部下に{reg21?攻撃を開始する:迎え撃つ}よう命令し、 自身は後方に待機する。
 ; mno_control_allies_menu|Use influence to command your allies in the field.
@@ -232,7 +231,7 @@ mno_pre_join_help_attackers|{s2}に加勢をする。
 mno_pre_join_help_defenders|{s1}の味方にまわる。
 mno_pre_join_help_refugees|{s1}の味方にまわる。
 mno_pre_join_leave|巻き込まれないようにする。
-menu_join_battle|^^^{s1}と戦っている、 {s2}に加勢します。^敵勢{reg11}名に対して、 戦える状態の味方の兵は{reg22}名です。^^この戦いは{s3}{s4}で行われます。
+; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}. {s17}
 mno_join_attack|攻撃を開始する。
 mno_join_order_attack|部下に友軍と共に戦うよう指示をし、自分は後方に待機する。
 ; mno_control_allies_join_menu|Use influence to command your allies in the field.
@@ -251,14 +250,16 @@ menu_join_siege_outside|^^^^^^{s1}が{s2}による包囲攻撃を受けていま
 mno_approach_besiegers|包囲軍の陣営を訪ねる。
 mno_pass_through_siege|包囲網を突破し、{s1}へ入城する。
 menu_cut_siege_without_fight|包囲軍は、門に近づくあなたに対して 攻撃をしませんでした。
-menu_besiegers_camp_with_allies|{s1}は依然、包囲されています。 あなたの部隊を歓迎してくれた 包囲軍の陣営には、 {s2}の軍旗がたなびいています。
+; menu_besiegers_camp_with_allies|{s1} is under siege. The banners of {s2} fly above the camp of the besiegers, who are preparing for their next assault. {s17}
 mno_talk_to_siege_commander|指揮官に面会を申し入れる。
 mno_join_siege_with_allies|次の攻撃に参加する。
 mno_join_siege_stay_back|部下に次の攻撃に参加するよう指示をし、 自身は後方に待機する。
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+; menu_moria_must_escape|^^Here lies Balin, Lord of Moria. With some trouble, you can decipher these words on the shattered remains of the tomb.  They tell tale of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|出口を探すんだ！
+; menu_moria_escape_sucess|^^After countless hours in the darkness, you finally find a staircase that leads up.  At first it is barely noticeable, but it steadily gets lighter. Finally — a junction that you remember. After a few more steps, you are out in the open.  Your troops have been waiting anxiously for you and can't wait to leave this valley as quickly as possible.
+; mno_moria_exit_found|Get out of here!
 menu_castle_outside|ここは{s2}の外です。 {s11} {s3} {s4}
-mno_cheat_steal_book_door|本を入手する
+; mno_cheat_steal_book_door|Inspect the tomb...
 ; mno_moria_enter|Return into main hall of Moria through the secret entrance
 mno_moria_enter_door|モリアに入る。
 mno_castle_start_siege|この{reg6?町:城}を包囲する。
@@ -285,7 +286,7 @@ mno_siege_defender_troops_join_battle|部下に攻撃に参加するよう指示
 mno_siege_defender_do_not_join_battle|巻き込まれないようにする。
 menu_siege_join_defense|{s4}^^自軍犠牲者:{s8}^^友軍犠牲者:{s9}^^敵軍犠牲者:{s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^逃亡者の強烈な一撃を食らったあなたの視界は、 ぐるっと回った後に闇に包まれました。 しばらくの時間が経ち、あなたは目を覚ましました。 血まみれの体は痛みはするものの、 幸運な事に致命傷は受けていませんでした。
-menu_town_bandits_succeeded|^^^^^鎌に刈られる小麦のように、 ゴブリンどもはなぎ倒されました！ 立っているのはあなただけで、 ゴブリンどもは残らず気を失ったか、 死んだか、 または虫の息です。 このような脅威を取り除いたあなたに対し、 地元の民はとても感謝することでしょう。
+; menu_town_bandits_succeeded|^^^^^The bandits fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
 menu_town_brawl_lost|^^^^^^あなたは倒され、 完全に気を失いました。 彼らは素早くあなたの体から 金目の物を抜き取ると、 何食わぬ顔で普段の生活へと 戻っていきました。
 menu_town_brawl_won|^^^^^あなたが敵をすべて倒すと、 騒動を聞きつけた衛兵が 駆けつけてきました。 あなたは素早く倒れている者たちから 金目の物を抜き取ると、 騒ぎが落ち着くまで身を隠しました。^次に連中と顔を合わせる機会があれば、 彼らはもう少しあなたに敬意を払うでしょう。
 menu_close|何でもない。
@@ -334,13 +335,15 @@ menu_sneak_into_town_caught_dispersed_guards|衛兵どもを追い払ったあ�
 menu_sneak_into_town_caught_ran_away|あなたは門の外へ出ると、 素早く町の外の安全な場所へ撤退した。
 menu_tld_player_defeated|^^^^^突然、後頭部に激痛が走った！^目の前が真っ暗になり、あなたの体は震えた。^ここで死ぬのだろうか？
 menu_recover_after_death_fangorn|あなたは目を覚ました。 あいかわらず、 あたりはいちめんの森だ。 関節という関節が痛む。 あなたは奇跡的に一命をとりとめたようだ。^^敗北を喫したには違いないが、 少なくとも何が起こったのかを 知る事はできた。^ようやくこの呪われた森の正体を知ったあなたは、 この事実を人に伝えなくてはならない。^^しかし、 信じる者はいるだろうか？
-menu_recover_after_death_moria|^^^^^あなたは意識を取り戻した。 あなたの体はやわらかい地面に横たわり、 新鮮な空気を運ぶそよ風が顔をなでていく。 ここは外だ！^オークどもはあなたが死んだと思い込み、 その辺の暗い穴にあなたを放り込んだのだ。^おそらく、 地下を流れる水脈にここまで運ばれたのだろう。
+; menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream. Your party was attacked while waiting for your return.
 mno_whatever|起き上がれ！
 menu_recover_after_death_default|^^^^^あなたは意識を取り戻した。 ここは倒された場所だ。 おそらく敵はあなたが死んだと思い、 そのまま放置したのだろう。 しかし、 致命傷は負わずに済んだようだ。 ひどい気分だが、 なんとか自力で歩けるようだ。 あなたは起き上がると、 生き残った部下がいないか探し始めた。
 menu_recover_after_death_town|^^^^あなたが意識を取り戻すと、 そこは町の郊外だった。 あなたは生きのびた！ まわりに人の気配はせず、 あなたはなんとか町の外へと這い出した。 どうやら致命傷はまぬがれたようだ。 気分は最悪だが、 なんとか自力で歩くことは出来る。
 menu_recover_after_death_town_alone|あなたが意識を取り戻すと、 そこは町の郊外だった。 あなたは生きのびた！ まわりに人の気配はせず、 あなたはなんとか町の外へと這い出した。 コンパニオンがあなたを発見した。 どうやら致命傷はまぬがれたようだ。 気分は最悪だが、 なんとか自力で歩くことは出来る。
 menu_notification_center_under_siege|{s1}が{s3}の{s2}によって包囲されました！
 menu_notification_one_side_left|^^^^^指輪戦争は終わりました！^^{s1}はすべての敵を打ち倒し、 勝者となりました！
+; mno_go_to_capital|Visit your capital and celebrate the victory...
+; mno_exit_game1|Exit
 menu_notification_total_defeat|^^^^^あなたの指輪戦争は終わりました！^^{s1}は打ち倒され、 残ったのはあなたひとりです！
 menu_notification_your_faction_collapsed|^^^^^あなたの故郷である{s11}は壊滅しました！^しかしながら、 いまだ戦いを続ける同盟国は残っています。 あなたと{s11}の生き残った者たちは力を結集し、 味方の勝利の助けとならなければいけません。
 menu_notification_faction_defeated|^^^^^{s1}は敗れました！^{s1}は{s13}の軍勢によって壊滅し、 この世から消え去りました！
@@ -422,17 +425,16 @@ mno_next_rescue_scene_door|さらに進むぞ！
 mno_pick_troops1|この任務に同行させる部下を選んでください。 {reg0}名が選択されています
 ; menu_pick_troops|Whom would you take with you into the stealth mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg65?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg0} companions.
 mno_go_forward|同行者の選択を完了し、任務を遂行する。
-menu_burial_mound|あなたは{s2}の{s1}が埋葬されている塚に近づいた。 {s28}との戦いで命を落としたのだ。 塚は死んだ敵の刃のかけた武器が積み上げられている。
+; menu_burial_mound|^You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|ひざまずいて敬意を払う。
 mno_swear_oath|復讐の誓いを立てる！
 mno_despoil|この場所を穢す
 mno_leave_mound|この場を去る。
 menu_burial_mound_respects|あなたはひざまずいて{s1}に敬意を払い、 死者がまっすぐに死後の世界へ旅できるよう、 静かな祈りをささげた。 この場所でやるべき事はもうない。
-menu_burial_mound_oath|あなたは声を張り上げ、 {s4}の復讐の誓いを立てた。 あなたは{s3}の軍勢に対し、 容赦なく見つけ出してこれを破壊するだろう。 あなたの力強い言葉は風に乗り、 どこまでも遠く運ばれていった。 海の向こう側には届かないと、 誰に断言できるだろう？
+; menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s4}.   You would relentlessly seek out {s3} and destroy {reg11?her:him}.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
 menu_funeral_pyre_oath|あなたは声を張り上げ、 {s4}の復讐の誓いを立てた。 あなたは{s3}の軍勢に対し、 容赦なく見つけ出してこれを破壊するだろう。 あなたの力強い言葉は風に乗り、 どこまでも遠く運ばれていった。 海の向こう側には届かないと、 誰に断言できるだろう？
-mno_leave_pyre_oath|この場を去る。
 menu_burial_mound_despoil|あなたは{s1}の墓碑をみずからの手で取り壊すと、 墓碑に対して呪いの言葉を浴びせ、 残忍の歌を歌い、 言語に絶する行為を行った。 あなたの部下たちは死者の怒りを恐れて後ずさりをしたが、 あなたの底知れぬ邪悪さに対して敬意を新たにしたようだ。
-menu_funeral_pyre|あなたは{s2}の{s3}の、 火葬壇の炭となった残がいに近づいた。 {s28}との戦いで命を落としたのだ。 ここで彼の亡骸は彼の親衛兵たちの手によって火葬された。 何もめぼしいものは見当たらない。
+; menu_funeral_pyre|^You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
 mno_leave_pyre|この場を去る。
 menu_town_ruins|この{s1}は{s2}
 mno_ruin_menu_0|この場所を探索する。
@@ -440,11 +442,19 @@ mno_ruin_leave|立ち去る・・・
 menu_death|あなたは殺されました。 戦争の猛威はいまだ弱まる気配すらありませんが、 あなたの役目はここで終わりました。
 menu_animal_ambush|あなたとコンパニオンは、他の兵とはぐれてしまいました。すると突然・・・
 menu_animal_ambush_success|{s2}{reg0?の一群は:は}、 あなたの前に、 鎌に刈られる小麦のようになぎ倒されました！ 地面に横たわり、 ぴくりとも動きません。 {s3}
-menu_animal_ambush_fail|獣どもはあなた{reg0?:とコンパニオン{reg2?たち:}}に噛み付き、 突進してきましたが、 あなたはなんとか彼らを追い払うことができました。 これであきらめてくれることを願いましょう。
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
 ; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 ; mno_isengard_continue|Continue
 menu_build_your_scene|下に用意されたスロットのうちのひとつをエディットモードで編集して、 あなたの手で戦場シーンをつくる事ができます。 (M&Bのランチャーの設定でエディットモードをONにしたうえで、 任意のシーンを開いた状態でCtrl+Eを押すとエディットモードになります)。 あなたの作った戦場シーン (TLD/SceneObjフォルダにあるscoファイルです) をTLDの開発チームに送ってくれれば (出来が良ければの話ですが)、 戦場のうちのひとつとしてゲームに登場するかも知れません！^^どの地域で使われる事を想定したシーンなのかを明確にするようにしてください。^ちょっとしたヒントです:深い水場や、険しい山といった侵入不可な地形を登場させるのは、 AIが地形上をどのように移動するのかをしっかりと理解してからにしましょう。^(#0-1は攻撃側、#4は守備側のマップです。#5-8は編集しないでください)
 mno_back_3dot|戻る・・・
+; menu_wott_expelled_from_faction|For your betrayal, you were expelled from your faction and {s11} has named you an outlaw and an enemy of the {reg11?Hand:Eye}. As an exile, you are now forced to join {s3}.
+; menu_wott_stay_with_faction|{s11} applauds your wise counsel. Your faction follows your example and collectively joins {s12}.
+; menu_fulfilled_oath_personal|^As {s5} lies in the dust before you, a heavy burden is lifted from your shoulders. The death of {s6} has been avenged!
+; menu_fulfilled_oath_personal_nokill|^Your troops recognize that you have defeated {s10} repeatedly and should rightfully be seen as {reg11?her:his} worst foe. Your oath is considered fulfilled. ^^The enemy paid dearly for the killing of {s11}. Still, there is a stale taste to this victory.
+; menu_oath_quest_fail|You swore a bitter oath and you bitterly failed to keep it. Your enemies laugh at your failure, and all your friends suffer from the shame you have brought upon them. In all the lands of Middle-earth, you shall be known as an oathbreaker.
+; menu_campaign_won|^^^Thank you for playing The Last Days of the Third Age!
+; mno_credits_tld|TLD Credits
+; mno_exit_game2|Quit to main menu
 mno_back|戻る。
 mno_next|次へ・・・
 ; mno_previous|Previous...

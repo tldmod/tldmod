@@ -1893,9 +1893,9 @@ str_trait_desc_merciful|Hai acquisito una reputazione di trattamento misericordi
 str_trait_title_bravery|Coraggio
 str_trait_desc_bravery|Hai acquisito una reputazione per il coraggio di affrontare grandi pericoli. Del tuo coraggio di parla sia nelle tranquille taverne che nelle sale dei saggi. Le tue gesta ispirano i tuoi uomini e ricevi un bonus di morale settimanale.
 str_trait_title_oathkeeper|Custode del Giuramento
-str_trait_desc_oathkeeper|Hai fatto risoluti giuramenti e sei vissuto abbastanza da vederli compiuti. Di conseguenza hai ottenuto una reputazione di uomo di parola. Ricevi un bonus in Punti Influenza settimanale.
+str_trait_desc_oathkeeper|Hai fatto giuramenti solenni e sei sopravvissuto per vederli realizzati. Di conseguenza, ti sei guadagnato la reputazione di uomo di parola. Ogni volta che ricevi influenza, c'è una piccola possibilità di ottenere un bonus di influenza.
 str_trait_title_oathbreaker|Violatore del Giuramento
-str_trait_desc_oathbreaker|Hai fatto risoluti giuramenti e non sei riuscito a vederli giungere a buon fine. Di conseguenza hai acquisito una reputazione di uomo la cui passione supera il suo valore. Ricevi una penalità in Punti Influenza settimanale.
+str_trait_desc_oathbreaker|Hai fatto giuramenti solenni e non sei riuscito a mantenerli fino alla fine. Di conseguenza, ti sei guadagnato la reputazione di uomo la cui passione supera il suo valore. Ogni volta che ricevi influenza, c'è una piccola possibilità che ti venga applicato un malus all'influenza.
 str_trait_title_orc_pit_champion|Orco Campione dell'Arena
 str_trait_desc_orc_pit_champion|Sei diventato famoso come guerriero brutale in grado di sopravvivere alle più crudeli battaglie con gli orchi. Tanta forza è sia rispettata che temuta dai tuoi più malvagi sostenitori ed essi ricevono ora un bonus di morale settimanale.
 str_trait_title_despoiler|Saccheggiatore
@@ -2521,3 +2521,5 @@ str_shortname_region_n_anduin_vale|la valle settentrionale dell'Anduin
 str_shortname_region_s_anduin_vale|la valle meridionale dell'Anduin
 str_shortname_region_cair_andros|Cair Andros
 str_isengard_hunting_camp_guildmaster_player_found_ok|Se uccide bene, lo prenderò. Altrimenti, lo sventrerò come un pesce. E se si rivelerà essere un altro verme senza valore, tornerò e te la farò pagare per aver sprecato il mio tempo !
+str_trait_title_animal_fighter|Sventrabestie
+str_trait_desc_animal_fighter_|Le bestie selvatiche hanno imparato a evitarti. Riduce notevolmente le probabilità di incontrare animali ostili.

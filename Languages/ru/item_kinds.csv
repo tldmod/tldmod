@@ -150,7 +150,6 @@ itm_arnor_shield_a|Круглый щит Арнора
 itm_arnor_sword_c|Арнорский боевой меч
 itm_arnor_sword_a|Арнорский Полуторный Меч
 itm_arnor_sword_f|Арнорский короткий меч
-itm_riv_helm_a|Ривендельский койф
 itm_riv_helm_b|Ривендельский шлем лучника
 itm_riv_helm_c|Ривендельский шлем пехотинца
 itm_tiara_reward|Тиара эльфийского правителя
@@ -285,7 +284,7 @@ itm_lorien_round_shield|Лориэнский круглый щит
 itm_lorien_helm_a|Лориэнский шлем лучника
 itm_lorien_helm_b|Лориэнский шлем лучника
 itm_lorien_helm_c|Лориэнский шлем пехотинца
-itm_orc_coif|Орочий койф
+itm_orc_coif2|Орочий койф
 itm_orc_greaves|Орочьи кольчужные сапоги
 itm_orc_ragwrap|Орочьи рваные обмотки
 itm_orc_furboots|Орочьи меховые сапоги
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|Урук-хайский шлем полководца
 itm_isen_uruk_helm_e|Урук-хайский шлем следопыта
 itm_uruk_pike_b|Мордорская пика
 itm_uruk_falchion_a|Урукский фальшион
-itm_uruk_falchion_b|Большой орочий ятаган
+itm_orc_bastard_scimitar|Большой орочий ятаган
+; itm_orc_cleaver_a|Orc Cleaver
+itm_orc_scimitar_b|Орочий ятаган
+itm_orc_sabre_b|Орочья сабля
+; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|Изенгардский меч
 itm_isengard_axe|Изенгардский топор
 itm_isengard_hammer|Изенгардский молот
@@ -340,7 +343,7 @@ itm_orc_pick|Орочья кирка
 itm_orc_hammer|Молот Зла
 itm_orc_club_b|Дубина волчьего всадника
 itm_orc_club_c|Шипастая орочья дубина
-itm_orc_club_d|Зловещая булава
+itm_orc_mace|Зловещая булава
 itm_orc_sledgehammer|Орочья кувалда
 itm_orc_simple_spear|Орочье копьё
 itm_orc_skull_spear|Орочье копьё с черепом
@@ -375,6 +378,10 @@ itm_orc_morion|Орочий морион
 itm_orc_beakhelm|Орочий шлем с клювом
 itm_orc_bughelm|Орочий шлем жука
 itm_orc_visorhelm|Орочий шлем с прорезью
+; itm_orc_coif|Evil Coif
+itm_orc_skullcap|Орочий койф
+; itm_orc_skullhelm|Orc Skullhelm
+itm_orc_barbuta|Орочий шлем с наносником
 itm_m_orc_light_a|Мордорская орочья лёгкая броня
 itm_m_orc_light_b|Мордорская орочья лёгкая броня
 itm_m_orc_light_c|Мордорская орочья лёгкая броня
@@ -839,3 +846,6 @@ itm_civilian_carry_oil|Масло
 itm_civilian_carry_wood2|Бревно
 itm_work_basket|Корзина
 itm_work_basket_2|Корзина
+itm_spider_mount|Паук
+; itm_marker_night_troop|Trait: Night Troop
+; itm_marker_berserker|Trait: Berserker

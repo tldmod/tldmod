@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|Гундабадский орк-боец
 trp_i3_gunda_orc_fighter_pl|Гундабадские орки-бойцы
 trp_i4_gunda_orc_warrior|Гундабадский орк-воин
 trp_i4_gunda_orc_warrior_pl|Гундабадские орки-воины
-trp_i4_gunda_orc_berserker|Гундабадский орк-берсеркер
-trp_i4_gunda_orc_berserker_pl|Гундабадские орки-берсеркеры
+trp_i5_gunda_orc_berserker|Гундабадский орк-берсеркер
+trp_i5_gunda_orc_berserker_pl|Гундабадские орки-берсеркеры
 trp_ca4_gunda_skirmisher|Гундабадский гоблин-застрельщик
 trp_ca4_gunda_skirmisher_pl|Гундабадские гоблины-застрельщики
 trp_ca5_gunda_clan_skirmisher|Гоблин-застрельщик из Северного Клана
@@ -1185,8 +1185,8 @@ trp_smith_gundabad_ne|Блург Снегопродавец
 trp_smith_gundabad_ne_pl|кузницу
 trp_smith_gundabad_nw|Блург Снегопродавец
 trp_smith_gundabad_nw_pl|кузницу
-trp_smith_gundabad_s|Блург Снегопродавец
-trp_smith_gundabad_s_pl|кузницу
+trp_smith_moria_s|Бургак Кузнец
+trp_smith_moria_s_pl|кузницу
 trp_smith_gundabad_m|Блург Снегопродавец
 trp_smith_gundabad_m_pl|кузницу
 trp_barman_eastemnet|Хозяин таверны
@@ -1211,8 +1211,8 @@ trp_merchant_woodelf_west_camp|Жирослав Кладовщик
 trp_merchant_woodelf_west_camp_pl|эльфийские склады
 trp_merchant_gundabad_m|Жирослав Кладовщик
 trp_merchant_gundabad_m_pl|полевой склад
-trp_merchant_gundabad_s|Жирослав Кладовщик
-trp_merchant_gundabad_s_pl|полевой склад
+trp_merchant_moria_s|Жирослав Кладовщик
+trp_merchant_moria_s_pl|полевой склад
 trp_merchant_gundabad_nw|Жирослав Кладовщик
 trp_merchant_gundabad_nw_pl|полевой склад
 trp_merchant_gundabad_ne|Жирослав Кладовщик
@@ -1445,8 +1445,8 @@ trp_elder_gunda_ne|Старейшина орков
 trp_elder_gunda_ne_pl|лагерь
 trp_elder_gunda_nw|Старейшина орков
 trp_elder_gunda_nw_pl|лагерь
-trp_elder_gunda_s|Старейшина орков
-trp_elder_gunda_s_pl|лагерь
+; trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s_pl|лагерь
 trp_elder_gunda_m|Старейшина орков
 trp_elder_gunda_m_pl|лагерь
 trp_elder_ironhill|Лагерный управитель
@@ -1501,8 +1501,8 @@ trp_evil_priest|Злой жрец
 trp_evil_priest_pl|Злые жрецы
 trp_wolf_rider_of_mirkwood|Волчий всадник Темнолесья
 trp_wolf_rider_of_mirkwood_pl|Волчьи всадники Темнолесья
-trp_warg_rider_of_mirkwood|Темнолесский всадник на варге
-trp_warg_rider_of_mirkwood_pl|Темнолесские всадники на варгах
+trp_bear_strong|Медведь
+trp_bear_strong_pl|Медведи
 trp_gate_aggravator|Привратник
 trp_orc_pretender|Претендент на лидерство
 trp_human_prisoner|Пленный человек

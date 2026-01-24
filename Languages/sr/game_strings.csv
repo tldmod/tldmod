@@ -1893,9 +1893,9 @@ str_trait_desc_merciful|You have aquired a reputation for merciful treatment tow
 str_trait_title_bravery|Bravery
 str_trait_desc_bravery|You have aquired a reputation for bravery in the face of great danger. Your courage is spoken of in both quiet taverns and the halls of the wise. Your deeds inspire your men and they recieve a weekly morale bonus.
 str_trait_title_oathkeeper|Oathkeeper
-str_trait_desc_oathkeeper|You have sworn grim oaths and lived to see them fulfilled. Subsequently you have aquired a reputation as a man of his word. You receive a weekly influence bonus.
+; str_trait_desc_oathkeeper|You have sworn grim oaths and lived to see them fulfilled. Subsequently you have aquired a reputation as a man of his word. Whenever you receive influence, there is a small chance for an influence bonus.
 str_trait_title_oathbreaker|Oathbreaker
-str_trait_desc_oathbreaker|You have sworn grim oaths and failed to see them through to their conclusion. Subsequently you have aquired a reputation as a man whose passion outstrips his prowess. You receive a weekly influence penalty.
+; str_trait_desc_oathbreaker|You have sworn grim oaths and failed to see them through to their conclusion. Subsequently you have aquired a reputation as a man whose passion outstrips his prowess. Whenever you receive influence, there is a small chance for an influence malus.
 str_trait_title_orc_pit_champion|Orc Pit Champion
 str_trait_desc_orc_pit_champion|You have become renowned as a brutal warrior who was able to survive the cruelest of the orcish fighting contests. Such strength is both respected and feared by your black hearted followers and they now receive a weekly morale bonus.
 str_trait_title_despoiler|Despoiler
@@ -2521,3 +2521,5 @@ str_shortname_region_n_anduin_vale|the northern Vale of Anduin
 str_shortname_region_s_anduin_vale|the southern Vale of Anduin
 str_shortname_region_cair_andros|Cair Andros
 str_isengard_hunting_camp_guildmaster_player_found_ok|If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!
+; str_trait_title_animal_fighter|Beast Slayer
+; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.

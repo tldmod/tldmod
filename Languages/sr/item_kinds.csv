@@ -150,7 +150,6 @@ itm_arnor_shield_c|Arnorski Konjanički Štit
 ; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_a|Arnorski lažni mač
 itm_arnor_sword_f|Arnorski Kratki Mač
-itm_riv_helm_a|Rivendalska Kapa
 itm_riv_helm_b|Kaciga Rivendalskog Strelca
 itm_riv_helm_c|Kaciga Rivendalskog Pešadinca
 itm_tiara_reward|Tijara Vilenjačkog Lorda
@@ -285,7 +284,7 @@ itm_lorien_round_shield|Lorienski Okrugli Štit
 itm_lorien_helm_a|Kaciga Lorienskog Strelca
 itm_lorien_helm_b|Kaciga Lorienskog Strelca
 itm_lorien_helm_c|Kaciga Lorienske Pešadije
-; itm_orc_coif|Orc Skullcap
+; itm_orc_coif2|Orc Skullcap
 itm_orc_greaves|Orkovske Mrežaste Čizme
 itm_orc_ragwrap|Orkovski Dronjak
 itm_orc_furboots|Orkovske Krznene Čizme
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|Kaciga Uruk-Hai Kapetana
 itm_isen_uruk_helm_e|Kaciga Uruk-Hai Tragača
 ; itm_uruk_pike_b|Mordor Pike
 itm_uruk_falchion_a|Urukška Sablja
-; itm_uruk_falchion_b|Orc Great Scimitar
+; itm_orc_bastard_scimitar|Orc Great Scimitar
+; itm_orc_cleaver_a|Orc Cleaver
+itm_orc_scimitar_b|Orkovska Zakrivljena Sablja
+itm_orc_sabre_b|Orkovska Sablja
+; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|Izengardski Mač
 itm_isengard_axe|Izengardska Sekira
 itm_isengard_hammer|Izengardski Čekić
@@ -340,7 +343,7 @@ itm_bone_cudgel|Toljaga od Kostiju
 ; itm_orc_hammer|Evil Hammer
 ; itm_orc_club_b|Warg Rider Club
 ; itm_orc_club_c|Spiky Orc Club
-; itm_orc_club_d|Evil Mace
+; itm_orc_mace|Evil Mace
 itm_orc_sledgehammer|Orkovska Macola
 itm_orc_simple_spear|Orkovsko Koplje
 itm_orc_skull_spear|Orkovsko Koplje od Kostiju
@@ -375,6 +378,10 @@ itm_orc_buckethelm|Orkovska Kofasta Kaciga
 itm_orc_beakhelm|Orkovska Kljunasta Kaciga
 itm_orc_bughelm|Orkovska Bubasta Kaciga
 ; itm_orc_visorhelm|Orc Visorhelm
+; itm_orc_coif|Evil Coif
+; itm_orc_skullcap|Orc Skullcap
+; itm_orc_skullhelm|Orc Skullhelm
+; itm_orc_barbuta|Orc Nosehelm
 itm_m_orc_light_a|Mordorski Ork Laki Oklop
 itm_m_orc_light_b|Mordorski Ork Laki Oklop
 itm_m_orc_light_c|Mordorski Ork Laki Oklop
@@ -839,3 +846,6 @@ itm_denethor_robe|Fina Odeća
 ; itm_civilian_carry_wood2|Wood
 ; itm_work_basket|Basket
 ; itm_work_basket_2|Basket
+; itm_spider_mount|Spider
+; itm_marker_night_troop|Trait: Night Troop
+; itm_marker_berserker|Trait: Berserker

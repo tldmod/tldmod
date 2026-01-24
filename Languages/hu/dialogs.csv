@@ -128,8 +128,9 @@ dlga_member_question_2:member_health|Hogy szolgál az egészséged?
 dlga_member_question_2:member_background_recap|Meséld el megint a történeted.
 dlga_member_background_recap_3:do_member_trade|Aztán, nem sokkal később, csatlakoztam hozzád.
 dlga_do_member_view_char:member_talk|Volna még más is?
-dlga_start:close_window.11|Menjünk ahogy készen állsz.
-dlga_start:close_window.12|Kérlek ne pazarold ma már többet az időmet. Talán még találkozunk. 
+; dlga_start:close_window.11|It has been an honor to fight with you, {playername}.
+dlga_start:close_window.12|Menjünk ahogy készen állsz.
+dlga_start:close_window.13|Kérlek ne pazarold ma már többet az időmet. Talán még találkozunk. 
 dlga_companion_recruit_signup_response:close_window|Sajnálatos módon nem tudok több kezet alkalmazni a csapatomban.
 dlga_companion_recruit_rank:close_window|Úgy tűnik nem vagy eléggé megbecsült az embereim által, {playername}. Te egy {s29} vagy és neked {s24} kell lenned ahhoz, hogy csatlakozzak hozzád [{reg3} rang pontra van szükséged ehhez].^Beszéljünk erről újra, miután már megbecsültebb leszel.
 dlga_companion_recruit_rank:companion_recruit_payment.1|Örömmel látom hogy {s29} rangúvá váltál, és már alig várom hogy csatlakozhassak hozzád.
@@ -183,6 +184,13 @@ dlga_companion_home_description:close_window.1|Jobban szeretem ha a társaim nem
 dlga_start:player_hire_troop|{s33}^^Én vagyok a felelős {s21} laktanyáján elszállásolt erőkért. Látni akartál?
 dlga_player_hire_troop:player_hire_troop_give|Néhányan katona a csapatomból hasznosabb lenne itt, {s21} védelmében.
 dlga_player_hire_troop:close_window|Szeretném megszemlézni az itt elszállásolt katonáimat.
+; dlga_player_hire_troop:player_hire_captain_1|{s6}
+; dlga_player_hire_captain_1:player_hire_captain_2|I have one {s5} in my garrison that might be willing to serve under your command and help you organize your party. But he will be missed here. [costs {reg21} influence]
+; dlga_player_hire_captain_1:close_window|You are a mere {s24}. What would you do with a captain?
+; dlga_player_hire_captain_1:close_window.1|No, I can't spare anyone at the moment.
+; dlga_player_hire_captain_2:player_hire_captain_3|I will have him.
+dlga_player_hire_captain_2:close_window|Meggondoltam magam.
+; dlga_player_hire_captain_3:close_window|He will serve you well.
 dlga_player_hire_troop:player_hire_trolls_take|Olyan parancsnok vagyok aki méltó egy csata trollra - adj egyet!
 dlga_player_hire_trolls_take:close_window|Azért jöttél, hogy létrehozd a saját Fekete Légiódat, mi? Gyere vissza amikor egy teljesen felnőtt trollt tudhatsz a soraidban.
 dlga_player_hire_trolls_take:close_window.1|Te? Te alávaló féreg. Takarodj a szemem elől. Csata troll, persze. (Neked {s24}-nak/nek kell lenned vagy magasabbnak)
@@ -192,7 +200,7 @@ dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|Egy félelmetes best
 dlga_player_hire_trolls_how_many:player_hire_troll_armoured|Jobban fognak küzdeni ha vaslapok védik őket. Tedd meg!
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|Meggondoltam magam.
 dlga_player_hire_troll_buy_not_enough:close_window|Az időmet pazarlom...
-dlga_player_hire_troll_buy_done:close_window|Viseld gondját ennek a nagy fickónak, és ő is jól gondodat fogja viselni! Ha!
+; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha! He has not seen battle yet. Be aware that he may panick and ignore your orders.
 dlga_player_hire_troop:close_window.1|Szükségem lenne némi kiképzésre.
 dlga_player_hire_troop:tld_sell_prisoners|Hoztam neked néhány foglyot.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Nézzük a nyomorult szemeteket.
@@ -225,6 +233,8 @@ dlga_player_siege_ask_leave_unmolested_reject:close_window|Akkor az utolsó embe
 dlga_defeat_lord_answer:defeat_lord_answer_1|A foglyom vagy.
 dlga_defeat_lord_answer_1:close_window|A kegyelmedre bízom magam.
 dlga_defeat_lord_answer:defeat_lord_answer_2|Jól küzdöttél. Szabadon távozhatsz.
+; dlga_defeat_lord_answer_vengeance:defeat_lord_answer_vengeance_1|{s5}! You killed {s6} and I have sworn to avenge {reg11?her:him}. I hearby fulfill my oath. You will die now!
+; dlga_defeat_lord_answer_vengeance_1:close_window|One day you will pay.... Aaa-ghgllr!...
 dlga_start:party_encounter_lord_hostile_attacker|{playername}!
 dlga_start:party_encounter_lord_hostile_attacker.1|Megállni!
 dlga_party_encounter_lord_hostile_attacker_2:party_encounter_offer_dont_fight|Nem lehetne valahogy ezt a csatát elkerülni? Nem akarok harcolni veled.
@@ -232,9 +242,10 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|Ne támadj! Megadjuk m
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|A végsőkig harcolni fogunk!
 dlga_party_encounter_offer_dont_fight:close_window|Tartozok neked egyel, nemde. Nos... jól van, legyen. Elengedlek, most az egyszer.
 dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha. De én harcolni akarok veled.
-dlga_start:close_window.13|Mmmh...
-dlga_start:close_window.14|Az úr mélyen elgondolkodott, és nem szabad zavartatni!
-dlga_start:close_window.15|El veled, hitvány koldus.
+dlga_start:close_window.14|Mmmh...
+dlga_start:close_window.15|Az úr mélyen elgondolkodott, és nem szabad zavartatni!
+; dlga_start:close_window.16|Hail {playername}, {s24}!
+dlga_start:close_window.17|El veled, hitvány koldus.
 dlga_start:lord_start|Ez csak nem az én bátor bajnokom, {playername}...
 dlga_start:lord_start.1|Jó újra látni téged, {playername}...
 dlga_start:lord_start.2|Újra találkoztunk, {playername}...
@@ -245,6 +256,9 @@ dlga_lord_meet_enemy:lord_intro|Én {playername} vagyok.
 dlga_lord_meet_enemy:lord_intro.1|Úgy ismernek engem mint {playername}. Jegyezd meg jól, mert még sokat fogod hallani.
 dlga_start:lord_start.3|Nos, {playername}...
 dlga_lord_start:lord_generic_mission_completed|A seborvosod meggyőzte a barátomat és végrehajtotta a beavatkozást.  Nem tehetünk most már többet, mint hogy imádkozunk a felépülésért. Egyébként, köszönöm hogy kölcsönadtad a seborvosodat, {playername}. Nemes szív ver benned. Nem fogom elfelejteni.
+; dlga_lord_start:lord_oath_of_vengeance_fulfilled|{playername}, I see you return from your campaign against Moria and Gundabad! What news do you bring?
+; dlga_lord_oath_of_vengeance_fulfilled:lord_oath_of_vengeance_fulfilled1|My lord, I have pursued and ravaged the orc scum, destroying and routing their armies wherever I found them. They tremble with fear and hide in their deepest caves. Balin and his followers have been avenged!
+; dlga_lord_oath_of_vengeance_fulfilled1:close_window|You have accomplished more than I could ever have hoped for. Thanks to you, vengeance is ours! The fear and shame of our enemies fills our hearts with satisfaction! I name you Oathkeeper. Go now with the gratitude of Aules' people.
 dlga_lord_start:lord_investigate_fangorn_completed0|Szóval, {playername}, visszatértél a Fangorn-erdőből. Mit derítettél ki?
 dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|A fák élnek! Megtámadták a katonáinkat!
 dlga_lord_investigate_fangorn_completed1:close_window|Mindvégig sejtettem. Jó szolgálatot tettél nekem, {playername}.
@@ -343,16 +357,20 @@ dlga_lord_talk:dwarf_lord_book|{s3}, van valami amit muszáj lesz megbeszélnem 
 dlga_dwarf_lord_book:dwarf_lord_book_give|Mondd csak, {playername}.
 dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|Mélyen alászálltam Mória bányáiba és feljegyzéseket találtam Balin társaságáról.
 dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|Úgy beszéltem a rokonomról mintha már csak emlékek lennének. Erről van szó? 
-dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|Attól félek hogy igen. Kutattam volna továbbra is, de nagyszámú kobold ütött rajtam. Csak ezt tudtam magammal hozni...
-dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'Nem tudunk kijutni. Nem tudunk kijutni... Közelednek.'
+; dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_d|I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. Yet I found a tomb with Balin's name inscribed on the lid...
 dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|Akkor az történt amitől tartottam. Megpróbáltam lebeszélni Balint az expedícióról de nem lehetett meggyőzni. Bolond voltam hogy hagytam elmenni.
 dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|Jó szolgálatot tettél Erebornak, {playername}, és tetted nem fog jutalom nélkül maradni.
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|Köszönöm, {s3}.
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|Mit fogsz most tenni?
 dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|A rokonaink halálát nem fogjuk megválaszolatlanul hagyni. Romlást és halált hozunk arra kik sérelmeinket okozták. A Gundabad legmagasabb ormaitól Khazad-dûm legmélyebb üregeiig, a Köd-hegység feketére fog válni a kobold vértől. 
-dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, szeretnék segíteni {s4} népének megbosszulni Balint és társaságát.
+dlga_dwarf_lord_book_give_i:dwarf_lord_book_give_j|{s3}, szeretnék segíteni {s4} népének megbosszulni Balint és társaságát.
 dlga_dwarf_lord_book_give_i:lord_pretalk|Sok szerencsét kívánok hozzá.
-dlga_dwarf_lord_avenge:close_window|Nagyon jó, {playername}. Menj Durin népének áldásával és hozz halált az ellenségeinkre. Mutasd meg nekik a fájdalmat és a félelmet ugyanannyira amennyire a népeink már ismerik azt.
+; dlga_dwarf_lord_book_give_j:lord_pretalk|I have heard that you have already made a vow of vengeance. It would be unwise to divide your strength between two vows. I am afraid I cannot accept your offer.
+; dlga_dwarf_lord_book_give_j:dwarf_lord_book_give_k|Such a promise is not lightly given, {playername}. If you swear to avenge my kin, I will take you by the word. Are you ready to pledge an oath of vengeance against the goblin filth of the mountains?
+; dlga_dwarf_lord_book_give_k:dwarf_lord_book_give_l|I swear!
+; dlga_dwarf_lord_book_give_k:lord_pretalk|I understand. I am afraid I have other pressing obligations. Yet I wish you the best of luck in your fight against the orcs.
+; dlga_dwarf_lord_book_give_l:dwarf_lord_book_give_m|I swear not to rest and to bring death and destruction to all the orcs of the mountains before this moon wanes and rises again!
+dlga_dwarf_lord_book_give_m:close_window|Nagyon jó, {playername}. Menj Durin népének áldásával és hozz halált az ellenségeinkre. Mutasd meg nekik a fájdalmat és a félelmet ugyanannyira amennyire a népeink már ismerik azt.
 dlga_lord_talk:find_lost_spears_permission|Jóuram, engedélyt szeretnék kérni arra, hogy beléphessek a Magányos-hegybe, hogy megkereshessem Bladorthin király elveszett lándzsáit.
 dlga_find_lost_spears_permission:lord_pretalk|Már engedélyt adtam rá, {playername}.
 dlga_find_lost_spears_permission:find_lost_spears_permission_yes|Rendben van, {playername}, beléphetsz a hegyekbe.
@@ -644,7 +662,7 @@ dlga_start:castle_guard_players|Az utasításai, Parancsnok?
 dlga_castle_guard_players:close_window|Nyisd ki az ajtót. Bemegyek.
 dlga_castle_guard_players:close_window.1|Hagyjuk.
 dlga_start:castle_guard_sneaked_intro_1|Takarodj a szemem elől, koldus! Bűzlesz!
-dlga_start:close_window.16|Takarodj el mielőtt elvesztem a hidegvérem, te hitvány koldus!
+dlga_start:close_window.18|Takarodj el mielőtt elvesztem a hidegvérem, te hitvány koldus!
 dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|Beakarok menni, hogy beszélhessek az úrral.
 dlga_castle_guard_sneaked_intro_1:close_window|[Távozás]
 dlga_castle_guard_sneaked_intro_2:close_window|Elvesztetted a józan eszedet, {ember/asszony}? Koldusok nem léphetnek be a csarnokba. Most pedig takarodj mielőtt véresre verlek.
@@ -740,8 +758,8 @@ dlga_hungry_orc_choice:hungry_orc_no_check|Semmi esetre sem. Egyik emberemet sem
 ; dlga_sad_elf_choice:sad_elf_leave|I feel your pain. You have done your share in this war. You may leave.
 ; dlga_sad_elf_choice:sad_elf_no|The Elves must not abandon Middle-earth to the shadow. This war we fight not for ourselves and each of us will have to play their role. I cannot give you leave. [Leadership Check]
 ; dlga_sad_elf_leave:close_window|Thank you, my {lord/lady}!^^To the Sea, to the Sea! The white gulls are crying,^The wind is blowing, and the white foam is flying.^West, west away, the round sun is falling.
-dlga_start:close_window.17|Pont időben érkeztél. Egyesítsük most erőinket és tanítsuk móresre az ellenfelet.
-dlga_start:close_window.18|Nagy hibát követsz el azzal hogy ellenünk fordultál.
+dlga_start:close_window.19|Pont időben érkeztél. Egyesítsük most erőinket és tanítsuk móresre az ellenfelet.
+dlga_start:close_window.20|Nagy hibát követsz el azzal hogy ellenünk fordultál.
 dlga_start:ally_thanks_meet|Nem hiszem hogy megfelelően bemutattak volna minket egymásnak ezelőtt, barátom. Épp az előbb mentetted meg az életemet, és nem tudom még a nevedet se...
 dlga_start:ally_thanks_meet.1|A segítségét szívesen látjuk idegen. Az én nevem {s1}. Megtudhatom az önét?
 dlga_start:ally_thanks_meet.2|Köszönöm a segítségét, idegen. Még nem mutatkoztunk be egymásnak megfelelően, nemde? Hogy hívják?
@@ -749,13 +767,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|Az én nevem {playername}.
 dlga_ally_thanks_meet_2:close_window|Igazán örvendek a találkozásnak {playername}. Az én nevem {s1} és örökké az adósa leszek. Ha lesz valaha is valami, amiben segíthetek, csak szóljon...
 dlga_ally_thanks_meet_2:close_window.1|Örvendek a találkozásnak {playername}. Az adósa vagyok, ezek után amit tett. Remélem egy nap majd visszatudom fizetni.
 dlga_ally_thanks_meet_2:close_window.2|Örvendek a találkozásnak {playername}. Én {s1} vagyok. Köszönöm a segítséged, és remélem a jövőben még találkozunk.
-dlga_start:close_window.19|Már megint kihúztál minket a csávából, {playername}! Őszintén, te vagy a legjobb barát. {s43}
-dlga_start:close_window.20|Pont az utolsó pillanatban érkeztél, {playername}! Hálás köszönetem! {s43}
-dlga_start:close_window.21|Pont időben érkezett, {playername}. Nem fogom elfelejteni hogy segített. {s43}
-dlga_start:close_window.22|Jó téged itt látni, {playername}. {s43}
-dlga_start:close_window.25|Köszönöm a segítséged, Parancsnok. Megmentetted az {reg1?életünk:életem} az előbb.
-dlga_start:close_window.26|Köszönöm a segítséged, Parancsok. A dolgok nem igazán álltak jól, de aztán megérkeztél és minden megváltozott.
-dlga_start:close_window.27|Köszönöm a segítséged, Parancsnok. Igazi csoda volt hogy a közelben jártál.
+dlga_start:close_window.21|Már megint kihúztál minket a csávából, {playername}! Őszintén, te vagy a legjobb barát. {s43}
+dlga_start:close_window.22|Pont az utolsó pillanatban érkeztél, {playername}! Hálás köszönetem! {s43}
+dlga_start:close_window.23|Pont időben érkezett, {playername}. Nem fogom elfelejteni hogy segített. {s43}
+dlga_start:close_window.24|Jó téged itt látni, {playername}. {s43}
+dlga_start:close_window.27|Köszönöm a segítséged, Parancsnok. Megmentetted az {reg1?életünk:életem} az előbb.
+dlga_start:close_window.28|Köszönöm a segítséged, Parancsok. A dolgok nem igazán álltak jól, de aztán megérkeztél és minden megváltozott.
+dlga_start:close_window.29|Köszönöm a segítséged, Parancsnok. Igazi csoda volt hogy a közelben jártál.
 dlga_start:freed_hero_answer|Adósod vagyok azért hogy megmentettél, barátom.
 dlga_freed_hero_answer:freed_hero_answer_1|Nem mész sehova. Ezennel a foglyom vagy!
 dlga_freed_hero_answer_1:close_window|Jaj. Fog-e valaha a szerencsém jobbra fordulni?
@@ -849,7 +867,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|Íjak.
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|Dobófegyverek.
 dlga_trainer_choose_weapon_player:trainer_pretalk|Semelyik, meggondoltam magam.
 dlga_trainer_begin_training:close_window|Rendben van, legyen így. Miután végeztél az edzéseddel, gyere vissza és beszélj velem.
-dlga_start:close_window.28|El veled, hitvány koldus.
+dlga_start:close_window.30|El veled, hitvány koldus.
 ; dlga_start:mayor_begin|Good day, my lord.
 dlga_start:mayor_talk|Üdv idegen, úgy nézel ki új vagy {s9}ban/ben. Én vagyok a város céhmestere.
 dlga_start:mayor_begin.1|Szép napot, {playername}.
@@ -935,8 +953,8 @@ dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|Sajnálom, valaki m�
 ; dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Alright. I will escort the supply train.
 ; dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|I am afraid I don't have that many soldiers with me.
 ; dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Sorry. I can't do that right now
-; dlga_start:close_window.29|We can cover the rest of the way ourselves. Thanks.
-; dlga_start:close_window.30|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Thanks for escorting us. Good luck.^^[earned {reg14} Resource Points of {s14}]
+; dlga_start:close_window.31|We can cover the rest of the way ourselves. Thanks.
+; dlga_start:close_window.32|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Thanks for escorting us. Good luck.^^[earned {reg14} Resource Points of {s14}]
 ; dlga_start:merchant_caravan_intro_1|Greetings. You must be our escort, right?
 ; dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Yes. My name is {playername}. I will lead you to {s1}.
 ; dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Well, It is good to know we won't travel alone. What do you want us to do now?
@@ -986,7 +1004,7 @@ dlga_prisoner_chat_00:close_window|^^MORGÁS!^^
 ; dlga_prisoner_chat_4:close_window|Yeah, like I'm in a position for trying? Get lost!
 ; dlga_prisoner_slaughter:prisoner_slaughter_02|One day you will pay!
 ; dlga_prisoner_slaughter:close_window|One day you will pay.... Aaa-ghgllr!...
-dlga_start:close_window.31|El veled, hitvány koldus.
+dlga_start:close_window.33|El veled, hitvány koldus.
 ; dlga_start:town_merchant_talk|Greetings, Commander. How can I serve you today?
 ; dlga_start:town_merchant_talk.1|Good day. What can I do for you?
 ; dlga_town_merchant_talk:trade_requested_weapons|I want to request new equipment. Show me what you have in your warehouse.
@@ -1012,7 +1030,9 @@ dlga_town_merchant_talk:close_window|Viszlát
 ; dlga_start:town_dweller_talk|Excuse me?
 dlga_start:town_dweller_talk.1|Jó napot, Parancsnok.
 ; dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?
-; dlga_town_dweller_ask_fugitive:close_window|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
+; dlga_town_dweller_ask_fugitive:close_window|I don't know you. For all I care, you are that suspicious stranger to me!
+; dlga_town_dweller_ask_fugitive:close_window.1|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
+; dlga_town_dweller_ask_fugitive:close_window.2|No, I haven't seen anyone.
 ; dlga_town_dweller_talk:town_dweller_ask_info|What can you tell me about this village?
 ; dlga_town_dweller_talk:town_dweller_ask_info.1|What can you tell me about this place?
 ; dlga_town_dweller_talk:town_dweller_talk|How is life here?
@@ -1029,19 +1049,20 @@ dlga_town_dweller_ask_directions2:close_window|Hagyjuk.
 ; dlga_town_dweller_brawl_confirm:close_window|Oh really? Let's see what you've got.
 ; dlga_town_dweller_brawl_confirm:close_window.1|No, I thought you were someone else.
 dlga_town_dweller_talk:close_window|[Távozás]
-; dlga_start:close_window.32|Get lost!
-; dlga_start:close_window.33|Leave me alone!
+; dlga_start:close_window.34|Hail {playername}, {s24}!
+; dlga_start:close_window.35|Get lost!
+; dlga_start:close_window.36|Leave me alone!
 dlga_start:player_castle_guard_talk|Igen, Parancsnok?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|Hogyan megy az őrjárat, katona?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Minden csendes, Parancsnok. Nincs jelentenivalóm.
 dlga_player_castle_guard_talk_3:close_window|Helyes. Tartsd nyitva a szemeid.
-; dlga_start:close_window.34|Good day, {s24}. It's good having you here in {s10}.
-dlga_start:close_window.35|Figyelj oda a modorodra, és nem lesz itt semmi probléma.
+; dlga_start:close_window.37|Good day, {s24}. It's good having you here in {s10}.
+dlga_start:close_window.38|Figyelj oda a modorodra, és nem lesz itt semmi probléma.
 ; dlga_start:hall_guard_easter_egg|Ah, just past midnight. You know, an unusual incident happened recently - do you want to hear about it?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Igen, kérlek folytasd.
 dlga_hall_guard_easter_egg:close_window|Nem, nem érdekelnek a pletykák.
 dlga_hall_guard_easter_egg_scene:close_window|Nos... egy nem hétköznapi kalandor csapat tűnt fel nemrégiben: egy ember, egy törp és egy tünde, és aztán...
-dlga_start:close_window.36|Nem szabadna beszélgetnünk őrség közben, Parancsnok.
+dlga_start:close_window.39|Nem szabadna beszélgetnünk őrség közben, Parancsnok.
 dlga_enemy_defeated:close_window|Arggh! Utálom ezt.
 dlga_party_relieved:close_window|Köszönöm hogy kisegítettél minket ezek ellen a rohadékok ellen.
 dlga_member_chat_00:close_window.1|^^MORGÁS!^^
@@ -1074,32 +1095,32 @@ dlga_party_reinforce:party_reinforce_check|Erősítés a csapatunknak? Mi mindig
 ; dlga_party_reinforce_check:party_reinforce_check_1|Let me check the soldier roster... 
 dlga_party_reinforce_check_1:party_reinforce_end|Szóval, meggondoltad magad...^Értem.
 ; dlga_party_reinforce_check_1:party_reinforce_end.1|Those soldiers are of no use to us. ^Take them back.
-; dlga_start:close_window.37|You are making me late! Wizards are never late!
-; dlga_start:close_window.38|You are making me late! Wizards are never late!
-; dlga_start:close_window.39|It... beckonsssssss...
+; dlga_start:close_window.40|You are making me late! Wizards are never late!
+; dlga_start:close_window.41|You are making me late! Wizards are never late!
+; dlga_start:close_window.42|It... beckonsssssss...
 dlga_start:secret_guardian_let_through|Megállni!
 ; dlga_secret_guardian_let_through:secret_guardian_let_through1|I am {playername}, {s24}. Let me through!
 ; dlga_secret_guardian_let_through1:close_window|Yes commander, you may pass.
-dlga_start:close_window.41|Te ott! Túlélted? Nagyszerű! Nem hadonászhatsz csak egy bottal! Vedd ezt el!
+dlga_start:close_window.44|Te ott! Túlélted? Nagyszerű! Nem hadonászhatsz csak egy bottal! Vedd ezt el!
 dlga_start:ori_choose_1|Jól küzdesz, rokon! Nem tudom hogy élhetted túl ilyen sokáig. Emlékszem hogy nem rég csatlakoztál hozzánk, mielőtt még minden... mielőtt Balin elesett... Honnan származol?
 dlga_ori_choose_1:ori_choose_finish|Nyomkövető voltam, az erdőkbe küldve közel a Medve emberekhez. Nemrég hallottam Balin társaságáról és csatlakoztam.
 dlga_ori_choose_1:ori_choose_finish.1|Távoli rokon vagyok, egy veterán testőr egy távoli bányából. Aztán hallottam Balinról és csatlakoztam.
 dlga_ori_choose_1:ori_choose_finish.2|A Vasdombokból származom, háborús veterán vagyok és bányász békeidőkben. Hallottam Balinról és csatlakoztam, mivel még több orkot akartam ölni.
 dlga_ori_choose_finish:close_window|Jó tudni! Ezeket találtam, passzolnak a hátteredhez. Itt fogunk helytállni és annyit fogunk magunkkal vinni amennyit csak tudunk!
-dlga_start:close_window.42|Úgy látszik lerázod magadról azokat a berozsdált képességeidet, he? Tessék, igyál ebből egy kortyot. Jobban fogod magad tőle érezni. Még több ork közelít! 
-dlga_start:close_window.43|Vedd le azt a poros vackot és vedd fel ezt. Jobban kéne védenie. Ezek az orkok keményen harapnak!
-dlga_start:close_window.44|Valami nagy jön! Felkészülni!
-dlga_start:close_window.45|Túl sokan vannak... de mi törpök vagyunk!
-dlga_start:close_window.46|Ezek az orkok kinyitottak egy barlangot ami tele volt kincsekkel. Itt van pár dolog amit találtam, menj előre és vidd őket magaddal.
-dlga_start:close_window.47|Ne... hallom őket... kint vannak! Ott vannak mindenhol!
-dlga_start:close_window.48|Tessék... ez Balin nagyúré... megérdemled ezeket...
+dlga_start:close_window.45|Úgy látszik lerázod magadról azokat a berozsdált képességeidet, he? Tessék, igyál ebből egy kortyot. Jobban fogod magad tőle érezni. Még több ork közelít! 
+dlga_start:close_window.46|Vedd le azt a poros vackot és vedd fel ezt. Jobban kéne védenie. Ezek az orkok keményen harapnak!
+dlga_start:close_window.47|Valami nagy jön! Felkészülni!
+dlga_start:close_window.48|Túl sokan vannak... de mi törpök vagyunk!
+dlga_start:close_window.49|Ezek az orkok kinyitottak egy barlangot ami tele volt kincsekkel. Itt van pár dolog amit találtam, menj előre és vidd őket magaddal.
+dlga_start:close_window.50|Ne... hallom őket... kint vannak! Ott vannak mindenhol!
+dlga_start:close_window.51|Tessék... ez Balin nagyúré... megérdemled ezeket...
 dlga_start:party_encounter_hostile_attacker|Nincs esélyed ellenünk. Add meg magad vagy megölünk mindannyiótokat!
 dlga_party_encounter_hostile_attacker:close_window|Ne támadj! Megadjuk magunkat.
 dlga_party_encounter_hostile_attacker:close_window.1|A végsőkig harcolni fogunk!
 dlga_start:party_encounter_hostile_defender|Mit szeretnél?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Add meg magad vagy véged!
 dlga_party_encounter_hostile_defender:close_window|Semmi. Békén is hagyunk.
-dlga_start:close_window.50|* szavak nélkül rádmered *
+dlga_start:close_window.53|* szavak nélkül rádmered *
 dlga_start:battle_reason_stated|Add meg magad vagy meghalsz. Válassz.
 dlga_battle_reason_stated:close_window|Nem félek tőled. Harcolni fogok.
 dlga_start:free|Hello. Mit tehetek érted?

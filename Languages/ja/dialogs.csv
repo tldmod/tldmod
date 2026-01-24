@@ -128,8 +128,9 @@ dlga_member_question_2:member_health|体調はどう{だ/}？
 dlga_member_question_2:member_background_recap|もう一度、身の上話を聞かせて欲しい。
 dlga_member_background_recap_3:do_member_trade|その後はご存じの通り。
 dlga_do_member_view_char:member_talk|他に何か？
-dlga_start:close_window.11|あなたの準備が整い次第、出発しましょう。
-dlga_start:close_window.12|今日はもう勘弁してもらいたい。 またこんど会いましょう。
+; dlga_start:close_window.11|It has been an honor to fight with you, {playername}.
+dlga_start:close_window.12|あなたの準備が整い次第、出発しましょう。
+dlga_start:close_window.13|今日はもう勘弁してもらいたい。 またこんど会いましょう。
 dlga_companion_recruit_signup_response:close_window|残念だ{が/けれど}、今はこれ以上パーティの兵数を増やせないの{だ/}。
 dlga_companion_recruit_rank:close_window|どうやら、あなたはこの辺りでは 今ひとつ尊敬されていないようです、 {playername}殿。 今のあなたは{s29}ですが、 私を部下にするには{s24}になる必要があります [あと{reg3}のランクポイントが必要です]。^もう少しあなたが実績を積んだらまた会いましょう。
 dlga_companion_recruit_rank:companion_recruit_payment.1|今や{s29}となられたあなたに誘われれば、 私も断る理由はありません。
@@ -183,6 +184,13 @@ dlga_companion_home_description:close_window.1|こんなささいな事を、い
 dlga_start:player_hire_troop|{s33}^^私がここ、{s21}の守備隊の責任者です。 私に何かご用ですか？
 dlga_player_hire_troop:player_hire_troop_give|私の部下のうち数名は、{s21}防衛のためにここに配属されたほうがいいだろう。
 dlga_player_hire_troop:close_window|守備兵の確認をしたい。
+; dlga_player_hire_troop:player_hire_captain_1|{s6}
+; dlga_player_hire_captain_1:player_hire_captain_2|I have one {s5} in my garrison that might be willing to serve under your command and help you organize your party. But he will be missed here. [costs {reg21} influence]
+; dlga_player_hire_captain_1:close_window|You are a mere {s24}. What would you do with a captain?
+; dlga_player_hire_captain_1:close_window.1|No, I can't spare anyone at the moment.
+; dlga_player_hire_captain_2:player_hire_captain_3|I will have him.
+dlga_player_hire_captain_2:close_window|気が変わった。
+; dlga_player_hire_captain_3:close_window|He will serve you well.
 dlga_player_hire_troop:player_hire_trolls_take|私は戦闘用トロルを持つにふさわしい指揮官だ。私に一匹、預けてくれ！
 dlga_player_hire_trolls_take:close_window|ご自分の部隊を立派な黒の軍勢に仕立てよう、というおつもりですな？ 完成品のトロルができあがったらまた来ていただきたい。
 dlga_player_hire_trolls_take:close_window.1|おまえが？虫けらの分際で。おのれの身の程を知るが良い。 よりによって戦闘用トロルとは恐れ入る。 ({s24}以上である必要があります)
@@ -192,7 +200,7 @@ dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|恐るべき獣よ�
 dlga_player_hire_trolls_how_many:player_hire_troll_armoured|やつらは体を保護する鉄の板を与える事によって、より戦闘力が増すのだ。そのようにしてくれ！
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|気が変わった。
 dlga_player_hire_troll_buy_not_enough:close_window|時間の無駄だ・・・
-dlga_player_hire_troll_buy_done:close_window|よし！さあ、このでかぶつの面倒をしっかりと見てくださいよ。 そうすれば、こいつはあなたのためにしっかりと働きますよ！
+; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha! He has not seen battle yet. Be aware that he may panick and ignore your orders.
 dlga_player_hire_troop:close_window.1|訓練をしたい。
 dlga_player_hire_troop:tld_sell_prisoners|捕虜を連行してきた。
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} さて、哀れな囚人どもの顔を拝むとしましょうか。
@@ -225,6 +233,8 @@ dlga_player_siege_ask_leave_unmolested_reject:close_window|ならばこの城を
 dlga_defeat_lord_answer:defeat_lord_answer_1|おぬしは我らが捕虜となった。
 dlga_defeat_lord_answer_1:close_window|好きにするがいい。
 dlga_defeat_lord_answer:defeat_lord_answer_2|おぬしはよく戦った。解放してやろう。
+; dlga_defeat_lord_answer_vengeance:defeat_lord_answer_vengeance_1|{s5}! You killed {s6} and I have sworn to avenge {reg11?her:him}. I hearby fulfill my oath. You will die now!
+dlga_defeat_lord_answer_vengeance_1:close_window|いつかこの報いを受けるぞ・・・ ぎゃあああああ！・・・
 dlga_start:party_encounter_lord_hostile_attacker|{playername}！
 dlga_start:party_encounter_lord_hostile_attacker.1|止まれ！
 dlga_party_encounter_lord_hostile_attacker_2:party_encounter_offer_dont_fight|ここは戦わずに済ませられないものだろうか？ おぬしとは戦いたくない。
@@ -232,9 +242,10 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|待て！我々は降�
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|最後まで戦うぞ！
 dlga_party_encounter_offer_dont_fight:close_window|おぬしには借りがあったな。 うむ・・・ よかろう。 今回に限って、おぬしを見逃そう。
 dlga_party_encounter_offer_dont_fight:close_window.1|ハッハッ。 あいにく、 こちらは戦いたくて仕方ないのだ。
-; dlga_start:close_window.13|Mmmh...
-; dlga_start:close_window.14|The lord is in deep thought and must not be disturbed!
-dlga_start:close_window.15|あっちへ行け、この薄汚い物乞いめ。
+; dlga_start:close_window.14|Mmmh...
+; dlga_start:close_window.15|The lord is in deep thought and must not be disturbed!
+; dlga_start:close_window.16|Hail {playername}, {s24}!
+dlga_start:close_window.17|あっちへ行け、この薄汚い物乞いめ。
 dlga_start:lord_start|これはこれは、我が勇者、 {playername}ではないか・・・
 dlga_start:lord_start.1|再び会えてうれしく思う、{playername}・・・
 dlga_start:lord_start.2|また会ったな、{playername}・・・
@@ -245,6 +256,9 @@ dlga_lord_meet_enemy:lord_intro|私は{playername}。
 dlga_lord_meet_enemy:lord_intro.1|我が名は{playername}。 覚えておくがいい、 この先、 嫌というほど耳にすることになろう。
 dlga_start:lord_start.3|おや、{playername}・・・
 dlga_lord_start:lord_generic_mission_completed|おぬしの軍医は、我が友に手術を受ける決意をさせる事に成功した。 あとは我が友が順調に回復することを祈るばかりだ。 ともあれ、{playername}よ、 軍医を貸してくれたことに感謝する。おぬしは気高い心を持っている。 私は忘れることはないぞ。
+; dlga_lord_start:lord_oath_of_vengeance_fulfilled|{playername}, I see you return from your campaign against Moria and Gundabad! What news do you bring?
+; dlga_lord_oath_of_vengeance_fulfilled:lord_oath_of_vengeance_fulfilled1|My lord, I have pursued and ravaged the orc scum, destroying and routing their armies wherever I found them. They tremble with fear and hide in their deepest caves. Balin and his followers have been avenged!
+; dlga_lord_oath_of_vengeance_fulfilled1:close_window|You have accomplished more than I could ever have hoped for. Thanks to you, vengeance is ours! The fear and shame of our enemies fills our hearts with satisfaction! I name you Oathkeeper. Go now with the gratitude of Aules' people.
 dlga_lord_start:lord_investigate_fangorn_completed0|{playername}、 どうやらファンゴルンの森から帰ってきたようだな。 何か発見はあったか？
 dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|木が生きているのです！ 我々の兵を攻撃してきました！
 dlga_lord_investigate_fangorn_completed1:close_window|常々、そうではないかと考えておった。 おぬしはよくやってくれた、{playername}。
@@ -343,16 +357,20 @@ dlga_lord_talk:dwarf_lord_book|{s3}、申し上げたい事がございます。
 dlga_dwarf_lord_book:dwarf_lord_book_give|{playername}よ、遠慮はいらぬ。話せ。
 dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|モリアの坑道深くを探検したところ、バーリン一団の記録を発見しました。
 dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|我が一族の者を、まるで過去の事であるかのようにおぬしは話す。^そういう事なのか？
-dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|残念ながらその通りです。私はさらに坑道深くへと探検を試みましたが、^ゴブリンの大群に行く手を阻まれました。持ち帰る事が出来たのは、^これだけです・・・
-dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|「ここから脱出できない。わしらはここを抜け出す事ができない・・・^やつらがやってくる」
+; dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_d|I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. Yet I found a tomb with Balin's name inscribed on the lid...
 dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|わしの怖れていた通りになってしまったのだな。わしは探検を^思いとどまるようバーリンの説得を試みたのだが、^あやつの決意は固かった。引き止められなかったわしは愚かであった。
 dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|{playername}よ、おぬしはエレボールのために^よく働いてくれた。褒美をやらねばならん。
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|ありがとうございます、{s3}。
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|今後、なにかお考えはあるのですか？
 dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|我が一族の者を殺したやからは、ただではおかぬ。わしらに悪事を^働こうという者には、死と破滅をもたらしてくれる。^グンダバド山の頂からカザド＝ドゥームの奥底に至るまで、^霧ふり山脈のすべてをゴブリンどもの黒い血で染めてやろう。
-dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}、バーリン一団の復讐をしようという{s4}の民を、 私も助けたいと存じます。
+dlga_dwarf_lord_book_give_i:dwarf_lord_book_give_j|{s3}、バーリン一団の復讐をしようという{s4}の民を、 私も助けたいと存じます。
 dlga_dwarf_lord_book_give_i:lord_pretalk|幸運を祈ります。
-dlga_dwarf_lord_avenge:close_window|{playername}よ、よく言ってくれた。^ドゥリンの一族の加護とともに、わしらの敵に死をもたらしてくれ。^我が民の受けた痛みと恐怖を、敵にも知らしめてやるのだ。
+; dlga_dwarf_lord_book_give_j:lord_pretalk|I have heard that you have already made a vow of vengeance. It would be unwise to divide your strength between two vows. I am afraid I cannot accept your offer.
+; dlga_dwarf_lord_book_give_j:dwarf_lord_book_give_k|Such a promise is not lightly given, {playername}. If you swear to avenge my kin, I will take you by the word. Are you ready to pledge an oath of vengeance against the goblin filth of the mountains?
+; dlga_dwarf_lord_book_give_k:dwarf_lord_book_give_l|I swear!
+; dlga_dwarf_lord_book_give_k:lord_pretalk|I understand. I am afraid I have other pressing obligations. Yet I wish you the best of luck in your fight against the orcs.
+; dlga_dwarf_lord_book_give_l:dwarf_lord_book_give_m|I swear not to rest and to bring death and destruction to all the orcs of the mountains before this moon wanes and rises again!
+dlga_dwarf_lord_book_give_m:close_window|{playername}よ、よく言ってくれた。^ドゥリンの一族の加護とともに、わしらの敵に死をもたらしてくれ。^我が民の受けた痛みと恐怖を、敵にも知らしめてやるのだ。
 dlga_lord_talk:find_lost_spears_permission|王様、 ブラードルシン王の失われた槍の探索のため、 はなれ山への入山をお許し願いたい。
 dlga_find_lost_spears_permission:lord_pretalk|許可ならすでに出したであろう、 {playername}。
 dlga_find_lost_spears_permission:find_lost_spears_permission_yes|よかろう、 {playername}、 入山を許可する。
@@ -644,7 +662,7 @@ dlga_start:castle_guard_players|指揮官殿、ご命令は？
 dlga_castle_guard_players:close_window|扉を開けてくれ。中に用がある。
 dlga_castle_guard_players:close_window.1|なんでもない。
 dlga_start:castle_guard_sneaked_intro_1|よそへ行け、物乞いめ！ おまえはひどい臭いがするぞ！
-dlga_start:close_window.16|汚らしい物乞いめ、 俺の気が変わらんうちに消え失せろ！
+dlga_start:close_window.18|汚らしい物乞いめ、 俺の気が変わらんうちに消え失せろ！
 dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|ここの主に取り次ぎ願いたい。
 dlga_castle_guard_sneaked_intro_1:close_window|[立ち去る]
 dlga_castle_guard_sneaked_intro_2:close_window|この{男/女}は、気がふれたのか？ ここは物乞いの来るところではない。 痛い目にあわないうちに、さっさと消えろ。
@@ -740,8 +758,8 @@ dlga_sad_elf_2:sad_elf_choice|ああ、海からの物語です。それと、�
 dlga_sad_elf_choice:sad_elf_leave|君の苦痛は理解する。君はこの戦争において、よく戦ってくれた。 去るがいい。
 dlga_sad_elf_choice:sad_elf_no|闇の力に脅かされる中つ国を、エルフは見捨ててはならない。 この戦いは我々のための戦いではないが、我々にはそれぞれが 演じるべき役割がある。君の離脱を許可することはできない。[統率スキルのチェック]
 dlga_sad_elf_leave:close_window|指揮官殿、ありがとうございます！^^海へ行こう、海へと行こう！白いカモメたちが鳴いている、^風が吹いている、そして白い泡が飛んでいる。^西へ、西へと去ろう、まるい太陽が落ちていく。
-dlga_start:close_window.17|あぶないところであった。 我々の力を合わせ、 敵勢にたっぷりとお礼をしてやろうではないか。
-dlga_start:close_window.18|我々に戦いを挑むとは、 おぬしは大きな間違いを犯そうとしている。
+dlga_start:close_window.19|あぶないところであった。 我々の力を合わせ、 敵勢にたっぷりとお礼をしてやろうではないか。
+dlga_start:close_window.20|我々に戦いを挑むとは、 おぬしは大きな間違いを犯そうとしている。
 dlga_start:ally_thanks_meet|きちんとした挨拶を交わすのはこれが初めてであったな、わが友よ。 我ながら、わが命を救ってくれた者の名を知らないとは・・・
 dlga_start:ally_thanks_meet.1|危ないところの助勢、かたじけない。 私の名は{s1}。 そちらの名前を伺ってもよろしいか？
 dlga_start:ally_thanks_meet.2|助勢を感謝する。 挨拶はまだであったな？ おぬしの名はなんという？
@@ -749,13 +767,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|私の名は{playername}です。
 dlga_ally_thanks_meet_2:close_window|会えて光栄だ、{playername}。 私の名は{s1}、 この恩は一生忘れまい。 私に出来る事があれば、ぜひ言ってくれ。
 dlga_ally_thanks_meet_2:close_window.1|会えて光栄だ、{playername}。 今日の恩は忘れまい。 いつの日か、この恩に報いたいものだ。
 dlga_ally_thanks_meet_2:close_window.2|会えて光栄だ、{playername}。 私は{s1}。 おぬしの助勢に感謝する。 また会おう。
-dlga_start:close_window.19|またあぶないところを助けてもらったな、 {playername}！ まったく、おぬしは私の一番の友だ。 {s43}
-dlga_start:close_window.20|おぬしの助勢があと一歩遅かったら、私の命はなかったであろう！ {playername}よ、心より感謝する！ {s43}
-dlga_start:close_window.21|あぶないところを助けてもらったな、 {playername}！ この事は忘れまい。 {s43}
-dlga_start:close_window.22|{playername}、 ここでおぬしに会えるとはうれしい。 {s43}
-dlga_start:close_window.25|助勢を感謝します、指揮官殿。 あなたのおかげで{reg1?我々:私}は命拾いをしました。
-dlga_start:close_window.26|助勢を感謝します、指揮官殿。 あなたが近くにおられるだけで心強く思います。
-dlga_start:close_window.27|助勢を感謝します、指揮官殿。 あなたが近くにおられたのは我らの幸運でした。
+dlga_start:close_window.21|またあぶないところを助けてもらったな、 {playername}！ まったく、おぬしは私の一番の友だ。 {s43}
+dlga_start:close_window.22|おぬしの助勢があと一歩遅かったら、私の命はなかったであろう！ {playername}よ、心より感謝する！ {s43}
+dlga_start:close_window.23|あぶないところを助けてもらったな、 {playername}！ この事は忘れまい。 {s43}
+dlga_start:close_window.24|{playername}、 ここでおぬしに会えるとはうれしい。 {s43}
+dlga_start:close_window.27|助勢を感謝します、指揮官殿。 あなたのおかげで{reg1?我々:私}は命拾いをしました。
+dlga_start:close_window.28|助勢を感謝します、指揮官殿。 あなたが近くにおられるだけで心強く思います。
+dlga_start:close_window.29|助勢を感謝します、指揮官殿。 あなたが近くにおられたのは我らの幸運でした。
 dlga_start:freed_hero_answer|解放してくれて助かった。 わが友よ、恩に着る。
 dlga_freed_hero_answer:freed_hero_answer_1|解放したのではない。 おまえは我が捕虜となったのだ！
 dlga_freed_hero_answer_1:close_window|なんと。我らの運も尽きたのか？
@@ -849,7 +867,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|弓
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|投擲武器
 dlga_trainer_choose_weapon_player:trainer_pretalk|ちょっと待ってくれ、気が変わった。
 dlga_trainer_begin_training:close_window|さあ、これで準備完了です。 訓練が終わったら、私に声をかけてください。
-dlga_start:close_window.28|あっちへ行け、この薄汚い物乞いめ。
+dlga_start:close_window.30|あっちへ行け、この薄汚い物乞いめ。
 dlga_start:mayor_begin|ごきげんよう、指揮官殿。
 dlga_start:mayor_talk|ごきげんよう、お客人。 {s9}へは初めてのご様子。 私はこの拠点のギルドマスターです。
 dlga_start:mayor_begin.1|ごきげんよう、{playername}殿。
@@ -935,8 +953,8 @@ dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|我々は{s8}へ�
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|いいだろう。その補給隊を護衛する。
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|残念だが、我が部隊は護衛できるほどの兵数ではないのだ。
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|すまないが、今は引き受けられない。
-dlga_start:close_window.29|ここからはもう我々だけで大丈夫です。感謝します。
-dlga_start:close_window.30|やあ、もう{s21}まですぐですね。 ここからはもう我々だけで大丈夫です。 ここまでの護衛を感謝します。 あなたに幸運あれ。^^[{s14}のリソースポイントを{reg14}獲得しました]
+dlga_start:close_window.31|ここからはもう我々だけで大丈夫です。感謝します。
+dlga_start:close_window.32|やあ、もう{s21}まですぐですね。 ここからはもう我々だけで大丈夫です。 ここまでの護衛を感謝します。 あなたに幸運あれ。^^[{s14}のリソースポイントを{reg14}獲得しました]
 dlga_start:merchant_caravan_intro_1|やあ。我々の護衛ですな？
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|そうだ。私は{playername}。 {s1}まで護衛しよう。
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|これは心強い。我々はどうすればよろしいか？
@@ -986,7 +1004,7 @@ dlga_prisoner_chat_3:prisoner_slaughter|おまえが今夜の食材だ！{s20}
 dlga_prisoner_chat_4:close_window|フン、このような姿で、私に何ができるというのだ。 消え失せろ！
 dlga_prisoner_slaughter:prisoner_slaughter_02|いつかこの報いを受けるぞ！
 dlga_prisoner_slaughter:close_window|いつかこの報いを受けるぞ・・・ ぎゃあああああ！・・・
-dlga_start:close_window.31|あっちへ行け、この薄汚い物乞いめ。
+dlga_start:close_window.33|あっちへ行け、この薄汚い物乞いめ。
 dlga_start:town_merchant_talk|こんにちは、　指揮官殿。 今日はどういったご用件でしょう？
 dlga_start:town_merchant_talk.1|ごきげんよう。 何かご用ですか？
 dlga_town_merchant_talk:trade_requested_weapons|新しい装備が欲しい。在庫を見せてくれ。
@@ -1012,7 +1030,9 @@ dlga_town_merchant_talk:close_window|ではまた。
 dlga_start:town_dweller_talk|何か？
 dlga_start:town_dweller_talk.1|ごきげんよう、指揮官殿。
 ; dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?
-; dlga_town_dweller_ask_fugitive:close_window|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
+; dlga_town_dweller_ask_fugitive:close_window|I don't know you. For all I care, you are that suspicious stranger to me!
+; dlga_town_dweller_ask_fugitive:close_window.1|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
+; dlga_town_dweller_ask_fugitive:close_window.2|No, I haven't seen anyone.
 dlga_town_dweller_talk:town_dweller_ask_info|この村について教えてくれないか{/しら}？
 dlga_town_dweller_talk:town_dweller_ask_info.1|この場所について教えてくれないか{/しら}？
 dlga_town_dweller_talk:town_dweller_talk|ここでの生活はどう{だい/}？
@@ -1029,19 +1049,20 @@ dlga_town_dweller_brawl:town_dweller_brawl_confirm|脅しているのか？ 衛�
 dlga_town_dweller_brawl_confirm:close_window|ほう？確かめてみようじゃないか。
 dlga_town_dweller_brawl_confirm:close_window.1|{すまん/ごめんなさい}、間違えた{/わ}。
 dlga_town_dweller_talk:close_window|[立ち去る]
-; dlga_start:close_window.32|Get lost!
-; dlga_start:close_window.33|Leave me alone!
+; dlga_start:close_window.34|Hail {playername}, {s24}!
+; dlga_start:close_window.35|Get lost!
+; dlga_start:close_window.36|Leave me alone!
 dlga_start:player_castle_guard_talk|ご用ですか、指揮官殿？
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|見張りのほうはどうだ？
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|特に何もありません。いたって平穏です、指揮官殿。
 dlga_player_castle_guard_talk_3:close_window|そうか。油断するなよ。
-; dlga_start:close_window.34|Good day, {s24}. It's good having you here in {s10}.
-dlga_start:close_window.35|面倒は起こさないでくださいよ。
+; dlga_start:close_window.37|Good day, {s24}. It's good having you here in {s10}.
+dlga_start:close_window.38|面倒は起こさないでくださいよ。
 dlga_start:hall_guard_easter_egg|ああ、真夜中を過ぎましたね。 最近、変わった出来事があったんです。 聞きたいですか？
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|{ああ/ええ}、話して{くれ/}。
 dlga_hall_guard_easter_egg:close_window|{いや/結構よ}、うわさ話には興味がない{んだ/の}。
 dlga_hall_guard_easter_egg_scene:close_window|それが・・・ 最近、 一風変わった冒険者の一行が、 ここを訪れたんです。 人間がひとり、 ドワーフがひとり、 エルフがひとり、 そして・・・
-dlga_start:close_window.36|任務中は話をしない決まりになっています、指揮官殿。
+dlga_start:close_window.39|任務中は話をしない決まりになっています、指揮官殿。
 dlga_enemy_defeated:close_window|{うわっ/きゃっ}！{畜生め/もうやだ}。
 dlga_party_relieved:close_window|あの畜生どもをやっつけるのに手を貸してくれて、ありがとう。
 dlga_member_chat_00:close_window.1|^^咆哮！^^
@@ -1074,32 +1095,32 @@ dlga_party_reinforce:party_reinforce_end.2|せっかくだが、 あなたの部
 dlga_party_reinforce_check:party_reinforce_check_1|名簿を確認させて欲しい・・・
 dlga_party_reinforce_check_1:party_reinforce_end|そうか、気が変わったのだな・・・^なるほど。
 dlga_party_reinforce_check_1:party_reinforce_end.1|この兵は我が部隊では不要だ。^引き取って頂こう。
-dlga_start:close_window.37|おぬしのせいで遅刻してしまうではないか！ 魔法使いは遅刻などしてはならんのだ！
-dlga_start:close_window.38|おぬしのせいで遅刻してしまうではないか！ 魔法使いは遅刻などしてはならんのだ！
-dlga_start:close_window.39|それは・・・ 手招くのだ・・・
+dlga_start:close_window.40|おぬしのせいで遅刻してしまうではないか！ 魔法使いは遅刻などしてはならんのだ！
+dlga_start:close_window.41|おぬしのせいで遅刻してしまうではないか！ 魔法使いは遅刻などしてはならんのだ！
+dlga_start:close_window.42|それは・・・ 手招くのだ・・・
 dlga_start:secret_guardian_let_through|止まれ！
 ; dlga_secret_guardian_let_through:secret_guardian_let_through1|I am {playername}, {s24}. Let me through!
 ; dlga_secret_guardian_let_through1:close_window|Yes commander, you may pass.
-dlga_start:close_window.41|そこのおまえ！生き延びたのか？よし！ 棒っきれを振り回してもどうにもならんぞ！これを使うがいい！
+dlga_start:close_window.44|そこのおまえ！生き延びたのか？よし！ 棒っきれを振り回してもどうにもならんぞ！これを使うがいい！
 dlga_start:ori_choose_1|同胞よ、よく戦っているぞ！ よくここまで生き延びたものだ。 おぬしが我々の仲間になったのは最近の話だな。 このゴタゴタの前・・・バーリンが倒れる前か・・・ おぬしの出身はどこなんだ？
 dlga_ori_choose_1:ori_choose_finish|わしは熊人族の近くの森に派遣された追跡兵だった。最近バーリンの一団の話を耳にして、加わる事にしたのだ。
 dlga_ori_choose_1:ori_choose_finish.1|わしは遠い親戚で、遠く離れた坑道で長年護衛を務めていた。バーリンの話を耳にして、これに加わったのだ。
 dlga_ori_choose_1:ori_choose_finish.2|わしは平時はくろがね連山の坑夫で、戦争時には歴戦の戦士だ。バーリンの話を耳にして、たくさんのオークを殺したくて参加した。
 dlga_ori_choose_finish:close_window|それはいい事を聞いた！これを見つけたのだが、 経歴からするとおぬしにぴったりだ。 さあ、共に背水の戦いに臨み、 できるかぎりの敵を道連れにしてやろう！
-dlga_start:close_window.42|どうだ、だんだん調子が出てきたのではないか？  これを飲め、気分が良くなる。さあ新手のオークが来たぞ！
-dlga_start:close_window.43|そのくたびれたものを脱いでこれに着替えろ。 こちらのほうが防御力が上だ。 あのオークどもは相当強く噛みついてくるぞ！
-dlga_start:close_window.44|なにやら、どでかいものが来たぞ！準備はいいか！
-dlga_start:close_window.45|敵の数が多すぎる・・・だが、われらはドワーフだ！
-dlga_start:close_window.46|あのオークどもは宝物の詰まった洞窟を発見したようだ。 わしが見つけたぶんがいくらかある。持っていけ。
-dlga_start:close_window.47|なんということだ・・・聞こえるぞ・・・やつらは外にいる！ そこらじゅうにいるのだ！
-dlga_start:close_window.48|これを・・・我がバーリンの・・・おぬしにふさわしい・・・
+dlga_start:close_window.45|どうだ、だんだん調子が出てきたのではないか？  これを飲め、気分が良くなる。さあ新手のオークが来たぞ！
+dlga_start:close_window.46|そのくたびれたものを脱いでこれに着替えろ。 こちらのほうが防御力が上だ。 あのオークどもは相当強く噛みついてくるぞ！
+dlga_start:close_window.47|なにやら、どでかいものが来たぞ！準備はいいか！
+dlga_start:close_window.48|敵の数が多すぎる・・・だが、われらはドワーフだ！
+dlga_start:close_window.49|あのオークどもは宝物の詰まった洞窟を発見したようだ。 わしが見つけたぶんがいくらかある。持っていけ。
+dlga_start:close_window.50|なんということだ・・・聞こえるぞ・・・やつらは外にいる！ そこらじゅうにいるのだ！
+dlga_start:close_window.51|これを・・・我がバーリンの・・・おぬしにふさわしい・・・
 dlga_start:party_encounter_hostile_attacker|おまえに勝ち目はない。今すぐ降伏せよ。さもなくば皆殺しだ・・・
 dlga_party_encounter_hostile_attacker:close_window|待て！我々は降伏する。
 dlga_party_encounter_hostile_attacker:close_window.1|最後まで戦うぞ！
 dlga_start:party_encounter_hostile_defender|何か用か？
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|降伏せよ。さもなくば死だ！
 dlga_party_encounter_hostile_defender:close_window|なんでもない。揉め事はごめん{だ/よ}。
-dlga_start:close_window.50|* 黙ってあなたをにらみつけている *
+dlga_start:close_window.53|* 黙ってあなたをにらみつけている *
 dlga_start:battle_reason_stated|降伏か死か。好きなほうを選べ。
 dlga_battle_reason_stated:close_window|おまえなど怖れるものか。私は戦うぞ。
 dlga_start:free|ごきげんよう。私に何かできることはあるか？

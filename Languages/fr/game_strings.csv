@@ -1893,9 +1893,9 @@ str_trait_desc_merciful|Vous êtes maintenant connu{/e} pour votre traitement mi
 str_trait_title_bravery|Brave
 str_trait_desc_bravery|Vous avez acquis une réputation de bravoure face à un grand danger. Votre courage est mentionné dans les tavernes et dans les halls. Vos exploits inspirent vos hommes et ils reçoivent un bonus de moral hebdomadaire.
 str_trait_title_oathkeeper|Fidèle aux serments
-str_trait_desc_oathkeeper|Vous avez prononcé de terribles serments et avez vécu pour les accomplir. En conséquence, vous avez acquis la réputation d'une personne de parole. Vous recevez un bonus d'influence hebdomadaire.
+str_trait_desc_oathkeeper|Vous avez prononcé de terribles serments et avez vécu pour les accomplir. En conséquence, vous avez acquis la réputation d'une personne de parole. Lorsque vous recevrez de l'influence, il y a une petite chance pour que vous receviez un bonus d'influence.
 str_trait_title_oathbreaker|Parjure
-str_trait_desc_oathbreaker|Vous avez prononcé de terribles serments et avez échoué à les accomplir. En conséquence, vous avez acquis la réputation d'une psersonne dont les paroles dépassent les actes. Vous recevez une pénalité d'influence hebdomadaire.
+str_trait_desc_oathbreaker|Vous avez prononcé de terribles serments et avez échoué à les accomplir. En conséquence, vous avez acquis la réputation d'une personne dont les paroles dépassent les actes. Quand vous recevrez de l'influence, il y a une petite chance pour que vous receviez un malus d'influence.
 str_trait_title_orc_pit_champion|Champion orque de la fosse
 str_trait_desc_orc_pit_champion|Vous êtes devenu connu{/e} comme {un guerrier brutal/une guerrière brutale} capable de survivre aux plus cruelles compétitions de combat orques. Une telle force est respectée et crainte par vos suivants, ils reçoivent maintenant un bonus de moral hebdomadaire.
 str_trait_title_despoiler|Fléau
@@ -2492,7 +2492,7 @@ str_harad_guildmaster_player_found_ok|Je vois. J'espère que ce Lykyada est un a
 str_harad_main_guildmaster_companion| J'ai entendu une histoire autour des feux : lorsque le Serpent noir a appelé ses bannerets, qui sont parmi nos meilleurs archers à cheval, beaucoup se sont vantés de savoir que tous les trésors de l'Ouest seraient bientôt à eux ; mais celui que nous appelons Lykyada s'est tenu à l'écart et est resté silencieux. Et lorsqu'ils lui demandèrent ce qu'il espérait prendre à l'Ouest, il s'est penché, a ramassé une poignée de sable et a dit : "Que dois-je demander que la terre de ma naissance ne m'ait pas déjà donné ? Voyez, je leur fais un don du sable sur lequel je me suis tenu". Et disant cela, il a laissé le vent de l'est emporter le sable vers l'ouest. Alors tous ceux qui entendirent cela se repentirent de leurs paroles imprudentes et jurèrent de suivre son exemple. S'il vous trouve digne, commandant, il peut suivre les vôtres. Cherchez-le là où il se tient, en présence de nos chefs.
 str_rohan_hornburg_guildmaster_companion|Tout le monde à la Ferté-au-Cor a des tâches à accomplir, commandant. Tout le monde sauf un, devrais-je dire. Peut-être que celui-ci vous accompagnera, sinon il lui faudrait beaucoup de chance pour qu'un autre Éored accepte de le prendre ! Notre Ulfas est un ivrogne, il apporte de la bonne humeur à ses camarades et c'est un cavalier habile, mais il est bien incapable de poser une citerne sans la vider au préalable ! Cherchez-le dans la salle là-bas, si cela ne vous dérange pas.
 str_imladris_guildmaster_companion_player_ask|Ancien, je cherche l'aide de guerriers renommés, hommes ou elfes, du légendaire Nord.
-str_imladris_guildmaster_companion_none|Regardez bien, commandant. Devant vous se trouve peut-être le dernier grand rassemblement du Nord, dans cet Age et dans toute autre Age à venir. hommes et elfes, nous qui sommes venus ici n'espérons pas revenir. Nous sommes venus de la dernière maison familiale ; des vallées et des forêts de l'Eriador, les derniers Núnatani, que vous appelez Dúnedain, sont venus. Chacun d'entre nous a ses tâches assignées, aucun ne peut vous suivre comme vous le souhaitez, sauf si vous exercez votre décret et recrutez dans notre garnison.
+str_imladris_guildmaster_companion_none|Regardez bien, commandant. Devant vous se trouve peut-être le dernier grand rassemblement du Nord, dans cet Âge et dans toute autre Âge à venir. hommes et elfes, nous qui sommes venus ici n'espérons pas revenir. Nous sommes venus de la dernière maison familiale ; des vallées et des forêts de l'Eriador, les derniers Núnatani, que vous appelez Dúnedain, sont venus. Chacun d'entre nous a ses tâches assignées, aucun ne peut vous suivre comme vous le souhaitez, sauf si vous exercez votre décret et recrutez dans notre garnison.
 str_imladris_guildmaster_companion_player_none_ok|Je comprends, Ancien. Je vous remercie pour votre temps.
 str_imladris_guildmaster_player_found_ok|Je comprends, Ancien. Je vous remercie pour votre temps.
 str_show_keybinds_form|Touches spéciales :^^Touches de Formations :^ Utiliser F1-F4 pour donner des ordres aux divisions sélectionnées.^ Garder la touche F1 appuyée pour placer les divisions.^ Placer sur les divisions ennemies pour les cibler.^^ Changer les utilisations d'armes - O^^ Changer le type de caméra - CTRL+FIN ^^ Rallier - V ^^ Appeler Monture - M ^^ Voir Ordres / Minimap - Retour Arrière
@@ -2506,7 +2506,7 @@ str_fullname_region_rhun|l'est du Rhovanion, des deux côtés du fleuve Celduin
 str_fullname_region_erebor|les contreforts d'Erebor, la Montagne Solitaire
 str_fullname_region_celebrant|le Champ de la Celebrant, entre les rivières Celebrant et Limeclaire
 str_fullname_region_gladden_fields|les Champs de Flambes, le marais de la Rivière aux Flambes
-str_fullname_region_w_emyn_muil|ouest Emyn Muil
+str_fullname_region_w_emyn_muil|l'ouest d'Emyn Muil
 str_fullname_region_s_misty_mountains|les contreforts sud des Montagnes de Brume
 str_fullname_region_n_anduin_vale|la partie nord du Val d'Anduin, au nord du Carroc
 str_fullname_region_s_anduin_vale|la partie sud du Val d'Anduin, entre Lórien et les Bas-fonds
@@ -2515,9 +2515,11 @@ str_shortname_region_rhun|l'est du Rhovanion
 str_shortname_region_erebor|les contreforts d'Erebor
 str_shortname_region_celebrant|le Champ de la Celebrant
 str_shortname_region_gladden_fields|les Champs de Flambes
-str_shortname_region_w_emyn_muil|ouest Emyn Muil
+str_shortname_region_w_emyn_muil|l'ouest d'Emyn Muil
 str_shortname_region_s_misty_mountains|les contreforts sud des Montagnes de Brume
 str_shortname_region_n_anduin_vale|la partie nord du Val d'Anduin
 str_shortname_region_s_anduin_vale|la partie sud du Val d'Anduin
 str_shortname_region_cair_andros|Cair Andros
 str_isengard_hunting_camp_guildmaster_player_found_ok|S'il tue bien, je le prends. Sinon, je l'étriperai comme un poisson. Et s'il s'avère être un autre asticot sans valeur, je reviendrai et je vous ferai payer pour m'avoir fait perdre mon temps !
+str_trait_title_animal_fighter|Tueu{r/se} de bêtes.
+str_trait_desc_animal_fighter_|Les bêtes sauvages ont appris à vous éviter. Réduit considérablement les chances de rencontrer des animaux hostiles.

@@ -1893,9 +1893,9 @@ str_trait_desc_merciful|적을 섬기는 악자들에 대한 자비로운 대우
 str_trait_title_bravery|용기
 str_trait_desc_bravery|당신은 큰 위험과 맞서 용감했다는 평판을 얻었다. 당신의 용맹함은 선술집과 현자들의 회랑에서도 이야깃거리가 되었다. 당신의 행동은 부하들에게 큰 영감을 주었고, 매주 사기 보너스를 얻는다.
 str_trait_title_oathkeeper|서약수호자
-str_trait_desc_oathkeeper|당신은 엄숙히 맹세하고 그것들을 이행하는 것을 위해 살아왔다. 당신은 약속을 지키는 사람이라는 평판을 얻었다. 매주 영향력 보너스를 얻는다.
+; str_trait_desc_oathkeeper|You have sworn grim oaths and lived to see them fulfilled. Subsequently you have aquired a reputation as a man of his word. Whenever you receive influence, there is a small chance for an influence bonus.
 str_trait_title_oathbreaker|서약파괴자
-str_trait_desc_oathbreaker|당신은 엄숙히 맹세하지만 그것을 끝까지 이행하는 것은 실패해왔다. 당신은 능력이 열정을 뒤따라가지 못하는 사람이라는 평판을 얻었다. 당신은 매주 영향력 패널티를 받는다.
+; str_trait_desc_oathbreaker|You have sworn grim oaths and failed to see them through to their conclusion. Subsequently you have aquired a reputation as a man whose passion outstrips his prowess. Whenever you receive influence, there is a small chance for an influence malus.
 str_trait_title_orc_pit_champion|구덩이 오르크 챔피언
 str_trait_desc_orc_pit_champion|당신은 가장 잔인한 오르크 전투 축제에서 살아남은 잔인한 전사로 유명해졌다. 그런 힘은 검은 마음을 가진 추종자들에게조차 경외와 동시에 두려움의 대상이 되었다. 매주 사기 보너스를 얻는다.
 str_trait_title_despoiler|약탈자
@@ -2521,3 +2521,5 @@ str_shortname_region_n_anduin_vale|북부 안두인의 골짜기
 str_shortname_region_s_anduin_vale|남부 안두인의 골짜기
 str_shortname_region_cair_andros|카이르 안드로스
 str_isengard_hunting_camp_guildmaster_player_found_ok|만약 그 놈이 잘 해냈다면 내가 데려가지. 만약 아니라면, 생선처럼 내장을 끄집어내주겠어. 만약 그 놈이 다른 쓰레기들과 똑같다는 생각이 들면, 그러고 다시 돌아와서 내 시간을 낭비한 값을 치르게 해주겠다!
+; str_trait_title_animal_fighter|Beast Slayer
+; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.

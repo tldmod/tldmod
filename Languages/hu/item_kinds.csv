@@ -150,7 +150,6 @@ itm_arnor_shield_c|Arnoriai lovassági pajzs
 ; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_a|Arnoriai fattyúkard
 itm_arnor_sword_f|Arnoriai rövidkard
-itm_riv_helm_a|Völgyzugolyi főkötő
 itm_riv_helm_b|Völgyzugolyi íjászsisak
 itm_riv_helm_c|Völgyzugolyi gyalogsági sisak
 itm_tiara_reward|Tündeúri tiara
@@ -285,7 +284,7 @@ itm_lorien_round_shield|Lórieni körpajzs
 itm_lorien_helm_a|Lórieni íjászsisak
 itm_lorien_helm_b|Lórieni íjászsisak
 itm_lorien_helm_c|Lórieni gyalogsági sisak
-itm_orc_coif|Ork koponyasisak
+itm_orc_coif2|Ork koponyasisak
 itm_orc_greaves|Ork lánccsizma
 itm_orc_ragwrap|Ork kapcarongy
 itm_orc_furboots|Ork prémcsizmák
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|Uruk-hai kapitányi sisak
 itm_isen_uruk_helm_e|Uruk-hai nyomkövetői sisak
 itm_uruk_pike_b|Mordori pika
 itm_uruk_falchion_a|Uruk falchion
-; itm_uruk_falchion_b|Orc Great Scimitar
+; itm_orc_bastard_scimitar|Orc Great Scimitar
+; itm_orc_cleaver_a|Orc Cleaver
+itm_orc_scimitar_b|Ork szablya
+itm_orc_sabre_b|Ork szablya
+; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|Vasudvardi kard
 itm_isengard_axe|Vasudvardi balta
 itm_isengard_hammer|Vasudvardi csatakalapács
@@ -340,7 +343,7 @@ itm_bone_cudgel|Csonthusáng
 ; itm_orc_hammer|Evil Hammer
 itm_orc_club_b|Varglovas bunkó
 itm_orc_club_c|Tüskés ork bunkó
-itm_orc_club_d|Gonosz buzogány
+itm_orc_mace|Gonosz buzogány
 itm_orc_sledgehammer|Ork kőtörő-kalapács
 itm_orc_simple_spear|Ork lándzsa
 itm_orc_skull_spear|Ork koponyás lándzsa
@@ -375,6 +378,10 @@ itm_orc_morion|Ork körsisak
 itm_orc_beakhelm|Ork csőrsisak
 itm_orc_bughelm|Ork bogársisak
 itm_orc_visorhelm|Ork szemellenzős-sisak 
+; itm_orc_coif|Evil Coif
+itm_orc_skullcap|Ork koponyasisak
+; itm_orc_skullhelm|Orc Skullhelm
+itm_orc_barbuta|Ork orrsisak
 itm_m_orc_light_a|Mordori ork könnyű páncélzat
 itm_m_orc_light_b|Mordori ork könnyű páncélzat
 itm_m_orc_light_c|Mordori ork könnyű páncélzat
@@ -839,3 +846,6 @@ itm_denethor_robe|Szép öltözet
 ; itm_civilian_carry_wood2|Wood
 ; itm_work_basket|Basket
 ; itm_work_basket_2|Basket
+itm_spider_mount|Pók
+; itm_marker_night_troop|Trait: Night Troop
+; itm_marker_berserker|Trait: Berserker

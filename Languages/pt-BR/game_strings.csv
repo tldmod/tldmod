@@ -1893,9 +1893,9 @@ str_trait_desc_merciful|Você adquiriu a reputação de tratar com misericórdia
 str_trait_title_bravery|Bravura
 str_trait_desc_bravery|Você adquiriu a reputação de bravura diante de grandes perigos. Sua coragem é comentada tanto nas tavernas tranquilas quanto nos salões dos sábios. Seus feitos inspiram seus homens, e eles recebem um bônus de moral semanal.
 str_trait_title_oathkeeper|Guardião do Juramento
-str_trait_desc_oathkeeper|Você fez juramentos sombrios e viveu para vê-los cumpridos. Posteriormente, você adquiriu a reputação de um homem de palavra. Você recebe um bônus de influência semanal.
+; str_trait_desc_oathkeeper|You have sworn grim oaths and lived to see them fulfilled. Subsequently you have aquired a reputation as a man of his word. Whenever you receive influence, there is a small chance for an influence bonus.
 str_trait_title_oathbreaker|Quebrador de Juramento
-str_trait_desc_oathbreaker|Você fez juramentos sombrios e não conseguiu cumpri-los. Consequentemente, adquiriu a reputação de ser um homem cuja paixão supera sua destreza. Você recebe uma penalidade semanal de influência.
+; str_trait_desc_oathbreaker|You have sworn grim oaths and failed to see them through to their conclusion. Subsequently you have aquired a reputation as a man whose passion outstrips his prowess. Whenever you receive influence, there is a small chance for an influence malus.
 str_trait_title_orc_pit_champion|Campeão do Poço dos Orcs
 str_trait_desc_orc_pit_champion|Você se tornou conhecido como um guerreiro brutal, capaz de sobreviver às mais cruéis lutas entre orcs. Tal força é respeitada e temida por seus seguidores de coração negro, que agora recebem um bônus de moral semanal.
 str_trait_title_despoiler|Destruidor
@@ -2521,3 +2521,5 @@ str_shortname_region_n_anduin_vale|o norte do Vale do Anduin
 str_shortname_region_s_anduin_vale|o sul do Vale do Anduin
 str_shortname_region_cair_andros|Cair Andros
 str_isengard_hunting_camp_guildmaster_player_found_ok|Se ele matar bem, eu o pego. Se não, eu o estripo como um peixe. E se ele acabar sendo só mais um verme inútil, eu volto e pago você por desperdiçar meu tempo!
+; str_trait_title_animal_fighter|Beast Slayer
+; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.

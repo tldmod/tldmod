@@ -128,8 +128,9 @@ dlga_member_question_2:member_health|你的身體狀況如何？
 dlga_member_question_2:member_background_recap|再告訴我一遍你的故事。
 dlga_member_background_recap_3:do_member_trade|那之後不久，我就加入你了。
 dlga_do_member_view_char:member_talk|還有其他的嗎？
-dlga_start:close_window.11|只要你準備好我們就出發。
-dlga_start:close_window.12|今天請不要再浪費我的時間了。以後再說吧。
+; dlga_start:close_window.11|It has been an honor to fight with you, {playername}.
+dlga_start:close_window.12|只要你準備好我們就出發。
+dlga_start:close_window.13|今天請不要再浪費我的時間了。以後再說吧。
 dlga_companion_recruit_signup_response:close_window|很遺憾，我的隊伍現在不能再容納更多人手了。
 dlga_companion_recruit_rank:close_window|看來我的同胞對你的認可還不夠，{playername}。你目前是{s29}，要我加入你的隊伍你需要至少成為{s24}[還需要{reg3}階級點數]。^等你更有成就的時候我們再說吧。
 dlga_companion_recruit_rank:companion_recruit_payment.1|我很高興看見你成為了{s29}，我很樂意加入你的隊伍。
@@ -183,6 +184,13 @@ dlga_companion_home_description:close_window.1|我希望我的同伴不會用瑣
 dlga_start:player_hire_troop|{s33}^^我負責駐守在{s21}的部隊。你在找我嗎？
 dlga_player_hire_troop:player_hire_troop_give|我團隊裡的一些士兵，對在這防守{s21}更有幫助。
 dlga_player_hire_troop:close_window|我想檢閱我駐紮在這裡的士兵。
+; dlga_player_hire_troop:player_hire_captain_1|{s6}
+; dlga_player_hire_captain_1:player_hire_captain_2|I have one {s5} in my garrison that might be willing to serve under your command and help you organize your party. But he will be missed here. [costs {reg21} influence]
+; dlga_player_hire_captain_1:close_window|You are a mere {s24}. What would you do with a captain?
+; dlga_player_hire_captain_1:close_window.1|No, I can't spare anyone at the moment.
+; dlga_player_hire_captain_2:player_hire_captain_3|I will have him.
+dlga_player_hire_captain_2:close_window|我改變主意了。
+; dlga_player_hire_captain_3:close_window|He will serve you well.
 dlga_player_hire_troop:player_hire_trolls_take|我是個值得一隻戰鬥食人妖的指揮官-給我一隻！
 dlga_player_hire_trolls_take:close_window|想要訓練自己的暗黑軍團，是嗎？當你可以將成熟的食人妖添加到你的隊伍中時再說吧。
 dlga_player_hire_trolls_take:close_window.1|你？你這卑微的蛆蟲。滾出我的視線。戰鬥食人妖，個鬼啦。(你需要成為{s24}或者更高)
@@ -192,7 +200,7 @@ dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|真是一隻可怕�
 dlga_player_hire_trolls_how_many:player_hire_troll_armoured|如果有鐵片保護他們的戰鬥力會更好。做吧！
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|我改變主意了。
 dlga_player_hire_troll_buy_not_enough:close_window|浪費我的時間...
-dlga_player_hire_troll_buy_done:close_window|好好照顧這個大傢伙，他就會好好照顧你的！哈！
+; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha! He has not seen battle yet. Be aware that he may panick and ignore your orders.
 dlga_player_hire_troop:close_window.1|我需要一些訓練。
 dlga_player_hire_troop:tld_sell_prisoners|我為你帶來了一些囚犯。
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33}讓我們瞧瞧這些可悲的渣滓！
@@ -225,6 +233,8 @@ dlga_player_siege_ask_leave_unmolested_reject:close_window|那我們會死守這
 dlga_defeat_lord_answer:defeat_lord_answer_1|你現在是我的俘虜了。
 dlga_defeat_lord_answer_1:close_window|我會任你處置的。
 dlga_defeat_lord_answer:defeat_lord_answer_2|你打得不錯。你自由了。
+; dlga_defeat_lord_answer_vengeance:defeat_lord_answer_vengeance_1|{s5}! You killed {s6} and I have sworn to avenge {reg11?her:him}. I hearby fulfill my oath. You will die now!
+dlga_defeat_lord_answer_vengeance_1:close_window|總有一天你會付出代價的....啊-嘎嘎！...
 dlga_start:party_encounter_lord_hostile_attacker|{playername}！
 dlga_start:party_encounter_lord_hostile_attacker.1|站住！
 dlga_party_encounter_lord_hostile_attacker_2:party_encounter_offer_dont_fight|真的非打不可嗎？我不想和你戰鬥。
@@ -232,9 +242,10 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|別攻擊！我們投�
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|我們會與你戰鬥到底的！
 dlga_party_encounter_offer_dont_fight:close_window|我欠你一個人情，是吧？嗯…好吧。僅此一次我會讓你走的。
 dlga_party_encounter_offer_dont_fight:close_window.1|哈-哈。但我想和你戰鬥。
-dlga_start:close_window.13|嗯……
-dlga_start:close_window.14|主在深思，不可打擾！
-dlga_start:close_window.15|滾吧你，臭乞丐。
+dlga_start:close_window.14|嗯……
+dlga_start:close_window.15|主在深思，不可打擾！
+; dlga_start:close_window.16|Hail {playername}, {s24}!
+dlga_start:close_window.17|滾吧你，臭乞丐。
 dlga_start:lord_start|這不是我英勇的冠軍勇士，{playername}嗎…
 dlga_start:lord_start.1|很高興再次見到你{playername}…
 dlga_start:lord_start.2|我們又見面了，{playername}…
@@ -245,6 +256,9 @@ dlga_lord_meet_enemy:lord_intro|我是{playername}。
 dlga_lord_meet_enemy:lord_intro.1|人們叫我{playername}。記好，你將會聽到很多關於我的事績。
 dlga_start:lord_start.3|好吧，{playername}…
 dlga_lord_start:lord_generic_mission_completed|你的軍醫說服了我的朋友進行手術。我們現在只能為他的康復祈禱。無論如何，感謝你將軍醫借給我，{playername}。你有一顆高尚的心，我不會忘記的。
+; dlga_lord_start:lord_oath_of_vengeance_fulfilled|{playername}, I see you return from your campaign against Moria and Gundabad! What news do you bring?
+; dlga_lord_oath_of_vengeance_fulfilled:lord_oath_of_vengeance_fulfilled1|My lord, I have pursued and ravaged the orc scum, destroying and routing their armies wherever I found them. They tremble with fear and hide in their deepest caves. Balin and his followers have been avenged!
+; dlga_lord_oath_of_vengeance_fulfilled1:close_window|You have accomplished more than I could ever have hoped for. Thanks to you, vengeance is ours! The fear and shame of our enemies fills our hearts with satisfaction! I name you Oathkeeper. Go now with the gratitude of Aules' people.
 dlga_lord_start:lord_investigate_fangorn_completed0|所以，{playername}，你從法貢森林回來了。你發現了什麼？
 dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|那些樹是活著的！它們攻擊了我們的部隊！
 dlga_lord_investigate_fangorn_completed1:close_window|我早就在懷疑了。你做得很好，{playername}。
@@ -343,16 +357,20 @@ dlga_lord_talk:dwarf_lord_book|{s3}，我有件事必須請你過目。
 dlga_dwarf_lord_book:dwarf_lord_book_give|儘管開口吧，{playername}。
 dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|我深入莫瑞亞的礦坑並找到了巴林一眾的記錄。
 dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|你說起我的親屬時就像他們已經逝去了。是這樣嗎？
-dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|恐怕是的。我已經進行了更進一步的搜索但只找到哥布林，很多很多哥布林。我只能帶回這個...
-dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'我們出不去。我們出不去...他們要來了。'
+; dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_d|I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. Yet I found a tomb with Balin's name inscribed on the lid...
 dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|正如我擔心的。我曾勸過巴林取消這次遠征但他很堅定。讓他出發的我真是個傻子。
 dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|{playername}，你已經為孤山做了很多，你的行為不會得不到獎賞的。
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|謝謝你，{s3}。
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|你現在會怎麼做？
 dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|我們不會讓我們親屬的謀殺者置之不理。我們將給那些阻擋我們的人帶來毀滅和死亡。從剛達巴山的山頂到凱薩督姆的深淵，迷霧山脈將被哥布林血染成黑色。
-dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}，我希望能幫{s4}的人為巴林一眾復仇。
+dlga_dwarf_lord_book_give_i:dwarf_lord_book_give_j|{s3}，我希望能幫{s4}的人為巴林一眾復仇。
 dlga_dwarf_lord_book_give_i:lord_pretalk|祝你好運。
-dlga_dwarf_lord_avenge:close_window|非常好，{playername}。帶著都靈一族的祝福去為我們的敵人帶來死亡吧。讓他們嚐嚐與我們相同的痛苦和恐懼。
+; dlga_dwarf_lord_book_give_j:lord_pretalk|I have heard that you have already made a vow of vengeance. It would be unwise to divide your strength between two vows. I am afraid I cannot accept your offer.
+; dlga_dwarf_lord_book_give_j:dwarf_lord_book_give_k|Such a promise is not lightly given, {playername}. If you swear to avenge my kin, I will take you by the word. Are you ready to pledge an oath of vengeance against the goblin filth of the mountains?
+; dlga_dwarf_lord_book_give_k:dwarf_lord_book_give_l|I swear!
+; dlga_dwarf_lord_book_give_k:lord_pretalk|I understand. I am afraid I have other pressing obligations. Yet I wish you the best of luck in your fight against the orcs.
+; dlga_dwarf_lord_book_give_l:dwarf_lord_book_give_m|I swear not to rest and to bring death and destruction to all the orcs of the mountains before this moon wanes and rises again!
+dlga_dwarf_lord_book_give_m:close_window|非常好，{playername}。帶著都靈一族的祝福去為我們的敵人帶來死亡吧。讓他們嚐嚐與我們相同的痛苦和恐懼。
 dlga_lord_talk:find_lost_spears_permission|大人，我希望能進入孤山尋找布拉多辛王失落的長槍。
 dlga_find_lost_spears_permission:lord_pretalk|{playername}，我已經給你許可了。
 dlga_find_lost_spears_permission:find_lost_spears_permission_yes|好吧，{playername}，你可以進入山裡。
@@ -644,7 +662,7 @@ dlga_start:castle_guard_players|指揮官，你的命令是？
 dlga_castle_guard_players:close_window|開門。我要進去。
 dlga_castle_guard_players:close_window.1|算了。
 dlga_start:castle_guard_sneaked_intro_1|滾出我的視線，乞丐！你好臭！
-dlga_start:close_window.16|在我發火之前滾出我的視線吧你這臭乞丐！
+dlga_start:close_window.18|在我發火之前滾出我的視線吧你這臭乞丐！
 dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|我希望能進入大殿跟領主談話。
 dlga_castle_guard_sneaked_intro_1:close_window|[離開]
 dlga_castle_guard_sneaked_intro_2:close_window|{你/妳}，瘋了嗎？乞丐是不被允許進入大殿的。趕緊消失不然我就要扁人了。
@@ -740,8 +758,8 @@ dlga_sad_elf_2:sad_elf_choice|阿，來自海上的故事。甚至來自遙遠�
 dlga_sad_elf_choice:sad_elf_leave|我能理解你的痛苦。你已經為這場戰爭付出的夠多了。儘管走吧。
 dlga_sad_elf_choice:sad_elf_no|精靈們決不能放棄中土世界。這場戰爭不僅是為我們自己戰鬥而是每個人都必需發揮自己的作用。我不能準你離開。[統御測驗]
 dlga_sad_elf_leave:close_window|感謝你，{大人/女士}！^^至海，至海之上！白色海鷗正在哭泣，^風已起，白沫飛揚。^向西，向西而去，渾圓之日終將落下。
-dlga_start:close_window.17|你來得正好。讓我們一起給敵人好好上一課吧。
-dlga_start:close_window.18|想跟我們戰鬥的你真是愚蠢透頂。
+dlga_start:close_window.19|你來得正好。讓我們一起給敵人好好上一課吧。
+dlga_start:close_window.20|想跟我們戰鬥的你真是愚蠢透頂。
 dlga_start:ally_thanks_meet|朋友啊雖然我不覺得我們曾正式見過面。但你剛剛救了我的命，我卻還不知道你的名字…
 dlga_start:ally_thanks_meet.1|你出手的正是時候，陌生人。我叫{s1}。我能否請問你的名字？
 dlga_start:ally_thanks_meet.2|感謝相助，陌生人。我想我們沒有正式見過面，對吧？你叫什麼名字？
@@ -749,13 +767,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|我的名字是{playername}。
 dlga_ally_thanks_meet_2:close_window|遇到你真是好事啊{playername}。我是{s1}而我欠你的人情將終身難忘。如果你有任何事情是我能幫上忙的，就告訢我吧…
 dlga_ally_thanks_meet_2:close_window.1|你好{playername}。我欠你一個人情。希望有一天我能報答你。
 dlga_ally_thanks_meet_2:close_window.2|你好{playername}。我是{s1}。感謝你的幫忙也希望我們能夠再見。
-dlga_start:close_window.19|你又救了我們，{playername}！真的，你真是最好的朋友。{s43}
-dlga_start:close_window.20|幸好你及時趕到！{playername}。請接受我衷心的謝意！{s43}
-dlga_start:close_window.21|幸好你及時出現，{playername}。我不會忘記你的幫助。{s43}
-dlga_start:close_window.22|很高興見到你，{playername}。{s43}
-dlga_start:close_window.25|感謝你的幫忙，指揮官。你救了{reg1?我們的命:我的命}。
-dlga_start:close_window.26|感謝你的幫忙，指揮官。剛才的情勢很惡劣但你的出現扭轉了一切。
-dlga_start:close_window.27|感謝你的幫忙，指揮官。你就在附近我們真的很幸運。
+dlga_start:close_window.21|你又救了我們，{playername}！真的，你真是最好的朋友。{s43}
+dlga_start:close_window.22|幸好你及時趕到！{playername}。請接受我衷心的謝意！{s43}
+dlga_start:close_window.23|幸好你及時出現，{playername}。我不會忘記你的幫助。{s43}
+dlga_start:close_window.24|很高興見到你，{playername}。{s43}
+dlga_start:close_window.27|感謝你的幫忙，指揮官。你救了{reg1?我們的命:我的命}。
+dlga_start:close_window.28|感謝你的幫忙，指揮官。剛才的情勢很惡劣但你的出現扭轉了一切。
+dlga_start:close_window.29|感謝你的幫忙，指揮官。你就在附近我們真的很幸運。
 dlga_start:freed_hero_answer|朋友啊放我自由真是讓我欠你一個人情了。
 dlga_freed_hero_answer:freed_hero_answer_1|你哪裡都別想去。你現在是我的俘虜！
 dlga_freed_hero_answer_1:close_window|唉。我的運氣就不會轉變嗎？
@@ -849,7 +867,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|弓。
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|投擲武器。
 dlga_trainer_choose_weapon_player:trainer_pretalk|不用，我改變主意了。
 dlga_trainer_begin_training:close_window|很好，讓我們開始吧。當你完成訓練後，再回來找我。
-dlga_start:close_window.28|滾吧你，臭乞丐。
+dlga_start:close_window.30|滾吧你，臭乞丐。
 dlga_start:mayor_begin|日安，大人。
 dlga_start:mayor_talk|你好啊陌生人，你是第一次來到{s9}吧。我是這座城鎮的公會長。
 dlga_start:mayor_begin.1|日安，{playername}。
@@ -935,8 +953,8 @@ dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|我準備送一支
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|好吧。我會護送補給隊的。
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|我恐怕現在沒有足夠的士兵。
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|抱歉。我現在不能做這件事。
-dlga_start:close_window.29|剩下的路程我們可以自己搞定。謝謝。
-dlga_start:close_window.30|嗯，我們快到達{s21}了。剩下的路程我們可以自己搞定。謝謝你護送我們。祝你好運。^^[獲得{s14}的{reg14}資源點]
+dlga_start:close_window.31|剩下的路程我們可以自己搞定。謝謝。
+dlga_start:close_window.32|嗯，我們快到達{s21}了。剩下的路程我們可以自己搞定。謝謝你護送我們。祝你好運。^^[獲得{s14}的{reg14}資源點]
 dlga_start:merchant_caravan_intro_1|你好。你一定是我們的護衛，對吧？
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|對。我的名字是{playername}。我會帶你們到{s1}的。
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|嗯，知道我們不會孤單的旅行真是好消息。現在你要我們怎麼做呢？
@@ -986,7 +1004,7 @@ dlga_prisoner_chat_3:prisoner_slaughter|你正好是我們的下一頓晚餐！{
 dlga_prisoner_chat_4:close_window|是啊，講得好像我能嘗試一樣？滾啦！
 dlga_prisoner_slaughter:prisoner_slaughter_02|總有一天你會付出代價的！
 dlga_prisoner_slaughter:close_window|總有一天你會付出代價的....啊-嘎嘎！...
-dlga_start:close_window.31|滾吧你，臭乞丐。
+dlga_start:close_window.33|滾吧你，臭乞丐。
 dlga_start:town_merchant_talk|日安，指揮官。我今天該怎麼為你服務呢？
 dlga_start:town_merchant_talk.1|日安。我能為你做什麼嗎？
 dlga_town_merchant_talk:trade_requested_weapons|我想要請求新的裝備。讓我看看你的倉庫裡有什麼吧。
@@ -1012,7 +1030,9 @@ dlga_town_merchant_talk:close_window|再見。
 dlga_start:town_dweller_talk|不好意思？
 dlga_start:town_dweller_talk.1|日安，指揮官。
 ; dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?
-; dlga_town_dweller_ask_fugitive:close_window|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
+; dlga_town_dweller_ask_fugitive:close_window|I don't know you. For all I care, you are that suspicious stranger to me!
+; dlga_town_dweller_ask_fugitive:close_window.1|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
+; dlga_town_dweller_ask_fugitive:close_window.2|No, I haven't seen anyone.
 dlga_town_dweller_talk:town_dweller_ask_info|你能跟我說有關這座村子的事嗎？
 dlga_town_dweller_talk:town_dweller_ask_info.1|你能跟我說有關這個地方的事嗎？
 dlga_town_dweller_talk:town_dweller_talk|這裡的生活如何？
@@ -1029,19 +1049,20 @@ dlga_town_dweller_brawl:town_dweller_brawl_confirm|你是在威脅我嗎？守�
 dlga_town_dweller_brawl_confirm:close_window|哦真的嗎？那就讓我瞧瞧你有什麼本事吧。
 dlga_town_dweller_brawl_confirm:close_window.1|不，我把你跟別人搞混了。
 dlga_town_dweller_talk:close_window|[離開]
-dlga_start:close_window.32|滾吧！
-dlga_start:close_window.33|別打擾我！
+; dlga_start:close_window.34|Hail {playername}, {s24}!
+dlga_start:close_window.35|滾吧！
+dlga_start:close_window.36|別打擾我！
 dlga_start:player_castle_guard_talk|是的，指揮官？
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|士兵，有什麼動靜嗎？
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|一切正常指揮官。沒有事情需要報告。
 dlga_player_castle_guard_talk_3:close_window|很好。罩子放亮點。
-dlga_start:close_window.34|您好，{s24}。很高興您在{s10}。
-dlga_start:close_window.35|你不想惹上麻煩的話就老實點。
+dlga_start:close_window.37|您好，{s24}。很高興您在{s10}。
+dlga_start:close_window.38|你不想惹上麻煩的話就老實點。
 dlga_start:hall_guard_easter_egg|啊，剛過午夜啊。你知道嗎，最近這裡發生了件不尋常的事喔-你想聽聽看嗎？
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|是的，請繼續。
 dlga_hall_guard_easter_egg:close_window|不，我不在乎八卦。
 dlga_hall_guard_easter_egg_scene:close_window|嗯...最近出現了一群不尋常的冒險者：一個人類、一個矮人跟一個精靈，然後...
-dlga_start:close_window.36|我們在站崗時不該交談的，指揮官。
+dlga_start:close_window.39|我們在站崗時不該交談的，指揮官。
 dlga_enemy_defeated:close_window|噁！我討厭這個。
 dlga_party_relieved:close_window|謝謝你幫我們對付那些混蛋。
 dlga_member_chat_00:close_window.1|^^低吼！^^
@@ -1074,32 +1095,32 @@ dlga_party_reinforce:party_reinforce_end.2|很遺憾的你沒有任何來自{s22
 dlga_party_reinforce_check:party_reinforce_check_1|讓我查查士兵名冊…
 dlga_party_reinforce_check_1:party_reinforce_end|所以你改變主意了…^我明白了。
 dlga_party_reinforce_check_1:party_reinforce_end.1|這些士兵對我們沒有用。^把他們帶回去吧。
-dlga_start:close_window.37|你會害我遲到！巫師從不會遲到的！
-dlga_start:close_window.38|你會害我遲到！巫師從不會遲到的！
-dlga_start:close_window.39|它...在招手...
+dlga_start:close_window.40|你會害我遲到！巫師從不會遲到的！
+dlga_start:close_window.41|你會害我遲到！巫師從不會遲到的！
+dlga_start:close_window.42|它...在招手...
 dlga_start:secret_guardian_let_through|站住！
 dlga_secret_guardian_let_through:secret_guardian_let_through1|我是{playername}，{s24}。讓我通過！
 dlga_secret_guardian_let_through1:close_window|是的指揮官，您可以通過。
-dlga_start:close_window.41|那邊那個！你活下來了？好啊！你不只能拿著一根棍子亂揮！這個拿去！
+dlga_start:close_window.44|那邊那個！你活下來了？好啊！你不只能拿著一根棍子亂揮！這個拿去！
 dlga_start:ori_choose_1|你很能打啊，親屬！我不知道你是怎麼活到現在的。我記得你最近才剛加入我們，就在這之前...就在巴林死前...你是從哪裡來的啊？
 dlga_ori_choose_1:ori_choose_finish|我是名追蹤者，被派到靠近熊之民附近的林子。我是最近才聽說巴林一眾並加入的。
 dlga_ori_choose_1:ori_choose_finish.1|我是個遠房表親，本是個遙遠礦坑的資深保鑣。然後我聽說巴林的消息就加入了。
 dlga_ori_choose_1:ori_choose_finish.2|我來自鐵丘陵，是戰時的老兵，和平期間則是礦工。我聽說巴林的消息就加入了，為了殺掉更多半獸人。
 dlga_ori_choose_finish:close_window|很高興聽你說！我找到了這些，很符合你的背景。我們會在這裡做最後一搏然後能拖多少一起下地獄就拖多少！
-dlga_start:close_window.42|看來你也需要暖身一下嘛，是吧？來，喝一口這個。這會讓你感覺好點的。更多的半獸人要來了！
-dlga_start:close_window.43|脫掉你身上的破銅爛鐵然後換上這個。應該能更好的保護你。那些半獸人咬起來很痛啊！
-dlga_start:close_window.44|有大傢伙要來了！準備好！
-dlga_start:close_window.45|他們數量太多了...但我們可是矮人啊！
-dlga_start:close_window.46|那些半獸人打開了一個裝滿財寶的洞穴。這裡有些我找到的東西，動手拿走他們吧。
-dlga_start:close_window.47|不...我聽到他們了...他們就在外面！他們無所不在！
-dlga_start:close_window.48|這些...我們領主巴林的...你配得上這些...
+dlga_start:close_window.45|看來你也需要暖身一下嘛，是吧？來，喝一口這個。這會讓你感覺好點的。更多的半獸人要來了！
+dlga_start:close_window.46|脫掉你身上的破銅爛鐵然後換上這個。應該能更好的保護你。那些半獸人咬起來很痛啊！
+dlga_start:close_window.47|有大傢伙要來了！準備好！
+dlga_start:close_window.48|他們數量太多了...但我們可是矮人啊！
+dlga_start:close_window.49|那些半獸人打開了一個裝滿財寶的洞穴。這裡有些我找到的東西，動手拿走他們吧。
+dlga_start:close_window.50|不...我聽到他們了...他們就在外面！他們無所不在！
+dlga_start:close_window.51|這些...我們領主巴林的...你配得上這些...
 dlga_start:party_encounter_hostile_attacker|你們對上我們一點勝算都沒有。立刻投降不然我們就殺光你們...
 dlga_party_encounter_hostile_attacker:close_window|別攻擊！我們投降。
 dlga_party_encounter_hostile_attacker:close_window.1|我們會與你戰鬥到底的！
 dlga_start:party_encounter_hostile_defender|你想要什麼？
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|投降或死亡！
 dlga_party_encounter_hostile_defender:close_window|沒什麼。我們會安靜離開的。
-dlga_start:close_window.50|*靜靜地盯著你*
+dlga_start:close_window.53|*靜靜地盯著你*
 dlga_start:battle_reason_stated|投降或死亡。選擇吧。
 dlga_battle_reason_stated:close_window|我不怕你。我會跟你打的。
 dlga_start:free|你好。我能為你做什麼嗎？

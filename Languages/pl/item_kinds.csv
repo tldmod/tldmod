@@ -150,7 +150,6 @@ itm_arnor_shield_a|Arnorska Okrągła Tarcza
 itm_arnor_sword_c|Wojenny Miecz Arnoru
 itm_arnor_sword_a|Arnorski Miecz Półtoraręczny
 itm_arnor_sword_f|Arnorski Krótki Miecz
-itm_riv_helm_a|Czepiec z Rivendell
 itm_riv_helm_b|Hełm Łucznika z Rivendell
 itm_riv_helm_c|Hełm Piechura z Rivendell
 itm_tiara_reward|Tiara Elfiego Pana
@@ -285,7 +284,7 @@ itm_lorien_round_shield|Okrągła Tarcza z Lorien
 itm_lorien_helm_a|Hełm Łucznika z Lorien
 itm_lorien_helm_b|Hełm Łucznika z Lorien
 itm_lorien_helm_c|Hełm Piechoty z Lorien
-itm_orc_coif|Orkowa Czacha
+itm_orc_coif2|Orkowa Czacha
 itm_orc_greaves|Orkowe Kolcze Buty
 itm_orc_ragwrap|Orkowe Szmaty
 itm_orc_furboots|Orkowe Futrzane Buty
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|Hełm Wodza Uruk-hai
 itm_isen_uruk_helm_e|Hełm Tropiciela Uruk-hai
 itm_uruk_pike_b|Mordorska Pika
 itm_uruk_falchion_a|Ostrze Uruków
-itm_uruk_falchion_b|Wielki Orkowy Bułat
+itm_orc_bastard_scimitar|Wielki Orkowy Bułat
+; itm_orc_cleaver_a|Orc Cleaver
+itm_orc_scimitar_b|Orkowe Zakrzywione Ostrze
+itm_orc_sabre_b|Orkowa Szabla
+; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|Isengardzki Miecz
 itm_isengard_axe|Isengardzki Topór
 itm_isengard_hammer|Isengardzki Młot
@@ -340,7 +343,7 @@ itm_orc_pick|Orkowy Kilof
 itm_orc_hammer|Złowrogi Młot
 itm_orc_club_b|Buława Jeźdźcy Wargów
 itm_orc_club_c|Kolczasta Orkowa Pałka
-itm_orc_club_d|Złowroga Buława
+itm_orc_mace|Złowroga Buława
 itm_orc_sledgehammer|Orkowy Kafar
 itm_orc_simple_spear|Orkowy Włócznia
 itm_orc_skull_spear|Orkowa Włócznia z Czaszką
@@ -375,6 +378,10 @@ itm_orc_morion|Orkowy Kwarc
 itm_orc_beakhelm|Orkowy Hełm z Dziobem
 itm_orc_bughelm|Orkowy Hełm
 itm_orc_visorhelm|Orkowa Przyłbica
+; itm_orc_coif|Evil Coif
+itm_orc_skullcap|Orkowa Czacha
+; itm_orc_skullhelm|Orc Skullhelm
+itm_orc_barbuta|Orkowy Nosowy Hełm
 itm_m_orc_light_a|Mordorska Orkowa lekka Zbroja
 itm_m_orc_light_b|Mordorska Orkowa lekka Zbroja
 itm_m_orc_light_c|Mordorska Orkowa lekka Zbroja
@@ -839,3 +846,6 @@ itm_civilian_carry_oil|Olej
 itm_civilian_carry_wood2|Drewno
 itm_work_basket|Kosz
 itm_work_basket_2|Kosz
+itm_spider_mount|Pająk
+; itm_marker_night_troop|Trait: Night Troop
+; itm_marker_berserker|Trait: Berserker

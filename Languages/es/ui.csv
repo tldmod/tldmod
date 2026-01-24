@@ -68,7 +68,7 @@ ui_dumping_value_items|%d objetos se perderán permanentemente, ¿seguro que qui
 ui_dumping_value_item|Un objeto se perderá permanentemente, ¿seguro que quieres continuar? 
 ui_notification_requirements_not_met|No tienes los atributos o habilidades necesarias para esta arma.
 ui_disband|Licenciar
-ui_you_hit_a_friendly_troop|¡Has herido a una tropa amiga!
+ui_you_hit_a_friendly_troop|¡Has dado a un guerrero de tu bando!
 ui_you_are_not_carrying_any_arrows|No llevas ninguna flecha encima.
 ui_received_number_damage|Recibes %d puntos de daño.
 ui_you_have_improved_your_proficiency_in_value_to_number|Has mejorado tu competencia en %s a %d.

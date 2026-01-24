@@ -1893,9 +1893,9 @@ str_trait_desc_merciful|Du hast den Ruf erworben, die schlechten Menschen, die d
 str_trait_title_bravery|Mut
 str_trait_desc_bravery|Du hast den Ruf erworben, im Angesicht größter Gefahren besonders mutig zu sein. Sowohl in stillen Tavernen als auch in den Hallen der Weisen wird über deinen Mut gesprochen. Deine Taten inspirieren deine Männer und sie erhalten einen wöchentlichen Moralbonus.
 str_trait_title_oathkeeper|Eidhalter
-str_trait_desc_oathkeeper|Du hast grimmige Eide geschworen und sie erfüllt. Folglich hast du dir den Ruf erworben, ein Mann von Wort zu sein. Du erhältst einen wöchentlichen Einflussbonus.
+; str_trait_desc_oathkeeper|You have sworn grim oaths and lived to see them fulfilled. Subsequently you have aquired a reputation as a man of his word. Whenever you receive influence, there is a small chance for an influence bonus.
 str_trait_title_oathbreaker|Eidbrecher
-str_trait_desc_oathbreaker|Du hast grimmige Eide geschworen, sie aber nicht gehalten. Folglich hast du dir den Ruf eines Mannes erworben, dessen Leidenschaften sein Können übersteigen. Du verlierst jede Woche etwas Einfluss.
+; str_trait_desc_oathbreaker|You have sworn grim oaths and failed to see them through to their conclusion. Subsequently you have aquired a reputation as a man whose passion outstrips his prowess. Whenever you receive influence, there is a small chance for an influence malus.
 str_trait_title_orc_pit_champion|Held der Orkgruben
 str_trait_desc_orc_pit_champion|Du hast einen Ruf erworben als brutaler Krieger, der die grausamsten orkischen Wettkämpfe überleben konnte. Solche Stärke wird von deinem schwarzherzigen Gefolge sowohl respektiert als auch gefürchtet und sie erhalten einen wöchentlichen Moralbonus.
 str_trait_title_despoiler|Verwüster
@@ -2521,3 +2521,5 @@ str_shortname_region_n_anduin_vale|im nördlichen Tal des Anduin
 str_shortname_region_s_anduin_vale|im südlichen Tal des Anduin
 str_shortname_region_cair_andros|Cair Andros
 str_isengard_hunting_camp_guildmaster_player_found_ok|Wenn er gut im Töten ist, dann nehme ich ihn. Wenn nicht, dann schlitze ich ihn auf wie einen Fisch. Und wenn er doch nur eine wertlose Made ist, dann komme ich wieder und lasse dich dafür bezahlen, dass du meine Zeit verschwendet hast.
+; str_trait_title_animal_fighter|Beast Slayer
+; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.

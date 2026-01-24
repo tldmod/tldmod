@@ -20,7 +20,6 @@ mno_custom_battle_scenario_7|Přepadení, skřeti proti elfům z Temného hvozdu
 mno_custom_battle_scenario_8|Poslední vzdor lidu Durinova
 mno_custom_battle_scenario_88|Pronásledování orkských průzkumníků
 mno_custom_battle_scenario_11|Testovací bitvy (pro balancováni statu)
-mno_custom_battle_scenario_10|Testovací bitva pro procedurálně generovanou scénu
 mno_troll_battle_scenario|Testovací bitvy se zlobry
 mno_warg_battle_scenario|Testovací bitvy s vrrky
 mno_build_your_own_scene|**Postav svou vlastni scénu pro TLD**
@@ -197,7 +196,7 @@ menu_cattle_herd|Narazil jsi na nějaké lidi.
 mno_cattle_drive_away|Rozkázat jim aby tě následovali.
 mno_cattle_stop|Přimět je aby zastavili.
 mno_leave|Odejít.
-menu_simple_encounter|^^^^^{s2}^Máš k dispozici {reg22} jednotek k boji proti jejich {reg11}.^^Bitva se odehrává v {s3}{s4}.^^Jaké jsou tvé rozkazy?
+; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.{s17}^^Your orders?
 mno_encounter_attack|{reg21?Zaútočte na ně:Připravte se jim čelit}.
 mno_encounter_order_attack|Přikaž svým jednotkám, aby {reg21?zaútočili:se jim postavili} bez tebe.
 mno_control_allies_menu|Využij vliv, abys velel svým spojencům na bitevním poli.
@@ -232,7 +231,7 @@ mno_pre_join_help_attackers|Pomoci {s2}.
 mno_pre_join_help_defenders|Přispěchat na pomoc {s1}.
 mno_pre_join_help_refugees|Přispěchat na pomoc {s1}.
 mno_pre_join_leave|Nezapojit se.
-menu_join_battle|^^^Pomáháš {s2} proti {s1}.^ Máš {reg22} připravených vojáků proti {reg11} nepřátelům.^^Bitva se odehrává v {s3}{s4}.
+; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}. {s17}
 mno_join_attack|Zaútočit na nepřítele.
 mno_join_order_attack|Nařiď svým jednotkám, aby zaútočili s tvými spojenci, mezitím co ty zůstaneš vzadu.
 mno_control_allies_join_menu|Využij vliv, abys velel svým spojencům na bitevním poli.
@@ -251,14 +250,16 @@ menu_join_siege_outside|^^^^^^{s1} je obléháno {s2}.
 mno_approach_besiegers|Přijeď k obléhacímu táboru.
 mno_pass_through_siege|Projdi skrz obléhací linie a vejdi {s1}.
 menu_cut_siege_without_fight|Dobyvatelé ti umožnili přístup k branám bez obtíží.
-menu_besiegers_camp_with_allies|{s1} zůstává v obležení. Zástavy {s2} vlají nad táborem obléhatelů, kde jsi se svými muži vítán.
+; menu_besiegers_camp_with_allies|{s1} is under siege. The banners of {s2} fly above the camp of the besiegers, who are preparing for their next assault. {s17}
 mno_talk_to_siege_commander|Požádej o schůzku s velitelem.
 mno_join_siege_with_allies|Připoj se k dalšímu útoku.
 mno_join_siege_stay_back|Nařiď tvým vojákům, aby se přidali k dalšímu útoku bez tebe.
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+; menu_moria_must_escape|^^Here lies Balin, Lord of Moria. With some trouble, you can decipher these words on the shattered remains of the tomb.  They tell tale of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Najdi cestu ven!
+; menu_moria_escape_sucess|^^After countless hours in the darkness, you finally find a staircase that leads up.  At first it is barely noticeable, but it steadily gets lighter. Finally — a junction that you remember. After a few more steps, you are out in the open.  Your troops have been waiting anxiously for you and can't wait to leave this valley as quickly as possible.
+; mno_moria_exit_found|Get out of here!
 menu_castle_outside| Před tebou je {s2}. {s11} {s3} {s4}
-mno_cheat_steal_book_door|Získat knihu
+; mno_cheat_steal_book_door|Inspect the tomb...
 mno_moria_enter|Vrať se do hlavní síně Morie skrze tajný vstup
 mno_moria_enter_door|Vejdi do Morie.
 mno_castle_start_siege|Obléhat {reg6?město:hrad}.
@@ -285,7 +286,7 @@ mno_siege_defender_troops_join_battle|Přikaž svým mužům, aby se připojili 
 mno_siege_defender_do_not_join_battle|Nezapojit se.
 menu_siege_join_defense|{s4}^^Tvé ztráty: {s8}^^Spojenecké ztráty: {s9}^^Nepřátelské ztráty: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Těžký úder od uprchlíka tě posílá k zemi, hlava se ti točí a oči tmavnou. Čas běží. Když znovu otevřeš oči, zjišťuješ, že si pomlácený a zkrvavený, ale naštěstí žádná rána není smrtelná.
-menu_town_bandits_succeeded|^^^^^Goblini před tebou padají jako obílí před kosou! Brzy stojíš sám, zatímco většina útočníků leží v bezvědomí, mrtvá nebo umírající. Místní obyvatelé by byli jistě velmi vděční za to, že jsi je zachránil před tímto nebezpečím.
+; menu_town_bandits_succeeded|^^^^^The bandits fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
 menu_town_brawl_lost|^^^^^^Byl jsi omráčen. Lidé, na které si zaútočil tě rychle prohledají a seberou cennosti, než se vrátí ke svým denním činnostem.
 menu_town_brawl_won|^^^^^Porazil si všechny nepřátele a stráže, které byly poslány k potlačení nepokojů. Rychle je prohledáš pro cennosti a zmizíš dokud se vztek neuklidní.^Možná příště ukážou více respektu a ustoupí.
 menu_close|Nic.
@@ -334,13 +335,15 @@ menu_sneak_into_town_caught_dispersed_guards|Utíkáte před strážemi a zakrý
 menu_sneak_into_town_caught_ran_away|Našel jsi si cestu zpět k bráně a rychle se stahuješ do bezpečí mimo město.
 menu_tld_player_defeated|^^^^^Najednou začneš cítit tříštivou bolest vzadu v hlavě! \\ Třeseš se, když celý svět vedle tebe upadá do temnoty...^Je tohle tvůj konec?
 menu_recover_after_death_fangorn|Vzbudil ses. Stále se nacházíš v lese. Každá kost tě bolí. Zázrakem jsi přežil.^^Byla to porážka, alespoň jsi byl schopen vidět, co se stalo. ^Teď už víš, co se v tomto prokletém lese děje^a přežil jsi, abys jsi mohl vyprávět. ^^Bude ti někdo vůbec věřit?  
-menu_recover_after_death_moria|^^^^^Nabíráš vědomí. Ležíš na měkké půdě, svěží vánek ti vane po tváři. Jsi venku! ^ Skřeti tě považovali za mrtvého a hodili tě do nějaké kalné jámy. ^ Na povrch tě musel vynést podzemní proud.
+; menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream. Your party was attacked while waiting for your return.
 mno_whatever|Vstaň!
 menu_recover_after_death_default|^^^^^Nabýváš vědomí. Ležíš na místě, kde jsi padli. Nepřátelé tě museli považovat za mrtvého a nechali tě tam. Zdá se však, že žádná z tvých ran nebyla smrtelná a přestože se cítíš strašně, zjišťuješ, že stále můžeš chodit. Vstáváš a snažíš se hledat další přeživší z tvé skupiny.
 menu_recover_after_death_town|^^^^Nabýváš vědomí a ocitáš se na okraji města. Jsi živý! Nikdo není v okolí a ty využíváš svou šanci a vlečeš se mimo město. Zdá se, že žádná z tvých ran nebyla smrtelná a přestože se cítíš strašně, můžeš stále chodit.
 menu_recover_after_death_town_alone|Nabýváš vědomí a ocitáš se na okraji města. Jsi živý! Nikdo není v okolí a ty využíváš svou šanci a vlečeš se mimo město. Našli tě tví společníci. Zdá se, že žádná z tvých ran nebyla smrtelná a přestože se cítíš strašně, můžeš stále chodit.
 menu_notification_center_under_siege|{s1} je obléháno {s2} z {s3}!
 menu_notification_one_side_left|^^^^^Válka o Prsten je u konce!^^{s1} porazil všechny své nepřátelé a zvítězil!
+; mno_go_to_capital|Visit your capital and celebrate the victory...
+; mno_exit_game1|Exit
 menu_notification_total_defeat|^^^^^Válka o Prsten pro tebe končí!^^{s1} byl poražen nepřáteli a ty zůstáváš sám a poražen!
 menu_notification_your_faction_collapsed|^^^^^Tvá domovina, {s11}, byla poražena!^Ostatní i nadále bojují ve Valce. S ostatními, kdo zbyli z {s11}, můžeš stále pomoci své straně k vítězství.
 menu_notification_faction_defeated|^^^^^{s1} Je poražen!^{s1} zanikl, byl poražen jednotkami {s13}!
@@ -422,17 +425,16 @@ mno_next_rescue_scene_door|Pokračuj vpřed!
 mno_pick_troops1|Vyber společníky pro tento úkol, {reg0} vybráno
 menu_pick_troops|Koho by sis sebou vzal na tajnou misi?    ^Jen ty nejvíc hbitý jednotky a společníci se budou moct k tobě přidat.     ^Podle člena skupiny s nejvíší dovednosti zálesáctví, {reg65?{s1} advises:you decide} si můžeš vzít sebou {reg11} jednotek.     ^^V současné době sis vybral {reg0} společníků.
 mno_go_forward|Ukončit výběr společníků a pokračovat.
-menu_burial_mound|Blížíš se k zakopané hromadě {s1} z {s2}, poražených v bitvě s jednotkami {s28}. Zbraně padlých jsou poházeny okolo.
+; menu_burial_mound|^You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|Poklekněte a projevte úctu.
 mno_swear_oath|Složit přísahu pomsty!
 mno_despoil|Znesvětit toto místo
 mno_leave_mound|Opustit mohylu.
 menu_burial_mound_respects|Poklekl jsi a prokázal úctu jsi úctu {s1}, tiše pronášíš modlitbu za klidné spočinutí jeho duše v posmrtném životě.  Nezbývá nic jiného co by se dalo udělat.
-menu_burial_mound_oath|Hlasitě přísaháš pomstu za smrt {s4}. Bez odpočinku budeš pátrat po mužích {s3} a zničíš je. Tvá slova odnáší vítr daleko a kdo ví, zda je nebylo slyšet až za mořem?
+; menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s4}.   You would relentlessly seek out {s3} and destroy {reg11?her:him}.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
 menu_funeral_pyre_oath|Hlasitě přísaháš pomstu za smrt {s4}. Bez odpočinku budeš pátrat po mužích {s3} a zničíš je. Tvá slova odnáší vítr daleko a kdo ví, zda je nebylo slyšet až za mořem?
-mno_leave_pyre_oath|Odejít od vatry.
 menu_burial_mound_despoil|Strhl jsi sochu {s1} vlastníma rukama a znesvěcuješ každý kámen kletbami, zlými zpěvy a nepopsatelnými akty. Tví následovníci ustupují ve strachu z mrtvých ale zdá se že jsi opět získal jejich respekt díky své bezbožnosti.
-menu_funeral_pyre|Přistupuješ k spáleným zbytkům pohřební hranice {s3} z {s2}. Poražených v bitvě silami {s28}. Tady tato mrtvola byla slavnostně spálena jeho osobními strážci. Nezůstalo nic cenného.
+; menu_funeral_pyre|^You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
 mno_leave_pyre|Odejít od vatry.
 menu_town_ruins|Když se přiblížíš, vidíš že {s1} je {s2}
 mno_ruin_menu_0|Prozkoumat to místo.
@@ -440,11 +442,19 @@ mno_ruin_leave|Odejít...
 menu_death|Byl jsi zabit. Válka pokračuje, ale bez tebe.
 menu_animal_ambush|Ty a tví společníci jste se ocitli odděleni od zbytku vaši skupiny, když najednou...
 menu_animal_ambush_success|{s2} před tebou {reg0?padli:padli} jako obilí před kosou! Zanedlouho všichni útočníci leží na zemi, zranění nebo mrtví. {s3}
-menu_animal_ambush_fail|Zvířata vás koušou a trhají {reg0?,: a tvého společníka{reg2?s,:,}} ale naštěstí se ti podařilo je odrazit. Doufejme že na tebe znova nezaútočí .
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
 menu_isengard_flooding|^^^^^@Jsi obklopen mrtvými nepřáteli a vítěznými spojenci, včetně Entů; řvou, duní a troubí, až kameny praskají a padají všude kolem Orthancké věže. Jsou jako vyjící vichřice, lámou sloupy, vrhají laviny balvanů dolů šachtami, vyhazují do vzduchu obrovské kamenné desky jako listí... Nic takového jsi ještě nikdy neviděl.^^Bregalad -- nebo Quickbeam, jak ho znáš -- projde kolem a zastaví se, aby řekl, '{playername}! Opatrně! Drž se dál od věže -- brzy strhneme přehradu a přivedeme Isen do tohoto údolí, na krátkou dobu. Zjistíš že bude pro tebe těžké zde stát, myslím! Rychle, vzal sis jeho radu srdci a spěcháš pryč od Orthancu.^^ Kolem půlnoci se Železný Pas začíná plnit černými vkrádajícími se potoky a tůněmi. Nemůžeš si pomoci, ale chvěješ se, když vidíš kouř a páru stoupající ve velkých sloupech a velkou spirálu páry stoupající a klikatící se kolem věže, až to připomíná vysoký vrchol mraku, vespod ohnivý a nahoře osvícený měsícem. Hněv entů je pomalý, ale má zdrcující sílu...
 mno_isengard_continue|Pokračovat
 menu_build_your_scene|Zde si můžeš vytvořit vlastní bitevní scénář, použitím jednoho ze slotů níže a Editačního módu (musíš nejdříve přepnout editační mód na ZAPNOUT v M&B spouštěcí obrazovce v Nastavení). Poté můžeš odeslat scénář, který jsi vytvořil (jmenovitě, sco soubory ze složky TLD/SceneObj)  developerskému týmu TLD, a pokud bude dobrý, může se objevit v pozdějším vydání jako jeden z náhodných bojovišť!^^ Zkus specifikovat ve kterém regionu na mapě chceš aby se scénář odehrával.^ Pár rad: vyhni se hluboké vodě, strmým horám  a dalším nedosažitelným místům pokud nejsi zkušený vývojář a nevíš jak zabránit AI jednotkám aby chodily tam kde nechceš, a vytvoř AI síť na jiném místě.^ (Vložení #0-1 je pro útočníky, #4 pro obránce, nedotýkej se #5-8
 mno_back_3dot|Zpět...
+; menu_wott_expelled_from_faction|For your betrayal, you were expelled from your faction and {s11} has named you an outlaw and an enemy of the {reg11?Hand:Eye}. As an exile, you are now forced to join {s3}.
+; menu_wott_stay_with_faction|{s11} applauds your wise counsel. Your faction follows your example and collectively joins {s12}.
+; menu_fulfilled_oath_personal|^As {s5} lies in the dust before you, a heavy burden is lifted from your shoulders. The death of {s6} has been avenged!
+; menu_fulfilled_oath_personal_nokill|^Your troops recognize that you have defeated {s10} repeatedly and should rightfully be seen as {reg11?her:his} worst foe. Your oath is considered fulfilled. ^^The enemy paid dearly for the killing of {s11}. Still, there is a stale taste to this victory.
+; menu_oath_quest_fail|You swore a bitter oath and you bitterly failed to keep it. Your enemies laugh at your failure, and all your friends suffer from the shame you have brought upon them. In all the lands of Middle-earth, you shall be known as an oathbreaker.
+; menu_campaign_won|^^^Thank you for playing The Last Days of the Third Age!
+; mno_credits_tld|TLD Credits
+; mno_exit_game2|Quit to main menu
 mno_back|Jdi zpět.
 mno_next|další...
 mno_previous|Předchozí...

@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|Luchador orco de Gundabad
 trp_i3_gunda_orc_fighter_pl|Luchadores orcos de Gundabad
 trp_i4_gunda_orc_warrior|Guerrero orco de Gundabad
 trp_i4_gunda_orc_warrior_pl|Guerreros orcos de Gundabad
-trp_i4_gunda_orc_berserker|Berserker orco de Gundabad
-trp_i4_gunda_orc_berserker_pl|Berserkers orcos de Gundabad
+trp_i5_gunda_orc_berserker|Berserker orco de Gundabad
+trp_i5_gunda_orc_berserker_pl|Berserkers orcos de Gundabad
 trp_ca4_gunda_skirmisher|Escaramuzador de Gundabad
 trp_ca4_gunda_skirmisher_pl|Escaramuzadores de Gundabad
 trp_ca5_gunda_clan_skirmisher|Escaramuzador trasgo del clan del Norte
@@ -1185,8 +1185,8 @@ trp_smith_gundabad_ne|Blurg Vende-Nieve
 trp_smith_gundabad_ne_pl|al herrero
 trp_smith_gundabad_nw|Blurg Vende-Nieve
 trp_smith_gundabad_nw_pl|al herrero
-trp_smith_gundabad_s|Blurg Vende-Nieve
-trp_smith_gundabad_s_pl|al herrero
+trp_smith_moria_s|Burgak el Forjador
+trp_smith_moria_s_pl|al herrero
 trp_smith_gundabad_m|Blurg Vende-Nieve
 trp_smith_gundabad_m_pl|al herrero
 trp_barman_eastemnet|Tabernero
@@ -1211,8 +1211,8 @@ trp_merchant_woodelf_west_camp|Encargado de suministros
 trp_merchant_woodelf_west_camp_pl|los suministros élficos
 trp_merchant_gundabad_m|Encargado de suministros
 trp_merchant_gundabad_m_pl|el almacén del campamento
-trp_merchant_gundabad_s|Encargado de suministros
-trp_merchant_gundabad_s_pl|el almacén del campamento
+trp_merchant_moria_s|Encargado de suministros
+trp_merchant_moria_s_pl|el almacén del campamento
 trp_merchant_gundabad_nw|Encargado de suministros
 trp_merchant_gundabad_nw_pl|el almacén del campamento
 trp_merchant_gundabad_ne|Encargado de suministros
@@ -1389,7 +1389,7 @@ trp_elder_thalls|Anciano del Bosque Negro
 trp_elder_thalls_pl| las cuevas de los elfos
 trp_elder_imladris|Intendente del campamento de Rivendel
 trp_elder_imladris_pl|l campamento
-trp_elder_wvillage|Vicent del Bosque
+trp_elder_wvillage|Vicente del Bosque
 trp_elder_wvillage_pl|l pueblo
 trp_elder_beorn|Anciano Beórnida
 trp_elder_beorn_pl| la aldea
@@ -1445,8 +1445,8 @@ trp_elder_gunda_ne|Anciano orco
 trp_elder_gunda_ne_pl|l campamento
 trp_elder_gunda_nw|Anciano orco
 trp_elder_gunda_nw_pl|l campamento
-trp_elder_gunda_s|Anciano orco
-trp_elder_gunda_s_pl|l campamento
+trp_elder_moria_s|Jefe del campamento orco
+trp_elder_moria_s_pl|l campamento
 trp_elder_gunda_m|Anciano orco
 trp_elder_gunda_m_pl|l campamento
 trp_elder_ironhill|Jefe del campamento
@@ -1501,8 +1501,8 @@ trp_evil_priest|Sacerdote malvado
 trp_evil_priest_pl|Sacerdotes malvados
 trp_wolf_rider_of_mirkwood|Jinete de lobo del Bosque Negro
 trp_wolf_rider_of_mirkwood_pl|Jinetes de lobo del Bosque Negro
-trp_warg_rider_of_mirkwood|Jinete de huargo del Bosque Negro
-trp_warg_rider_of_mirkwood_pl|Jinetes de huargo del Bosque Negro
+trp_bear_strong|Oso
+trp_bear_strong_pl|Osos
 trp_gate_aggravator|Defensa de la puerta
 trp_orc_pretender|Aspirante a cabecilla orco
 trp_human_prisoner|Prisionero humano

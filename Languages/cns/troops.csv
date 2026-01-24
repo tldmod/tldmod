@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|刚达巴半兽人斗士
 trp_i3_gunda_orc_fighter_pl|刚达巴半兽人斗士
 trp_i4_gunda_orc_warrior|刚达巴兽人战士
 trp_i4_gunda_orc_warrior_pl|刚达巴兽人战士
-trp_i4_gunda_orc_berserker|刚达巴兽人狂战士
-trp_i4_gunda_orc_berserker_pl|刚达巴兽人狂战士
+trp_i5_gunda_orc_berserker|刚达巴兽人狂战士
+trp_i5_gunda_orc_berserker_pl|刚达巴兽人狂战士
 trp_ca4_gunda_skirmisher|刚达巴散兵
 trp_ca4_gunda_skirmisher_pl|刚达巴散兵
 trp_ca5_gunda_clan_skirmisher|半兽人北方氏族散兵
@@ -1185,8 +1185,8 @@ trp_smith_gundabad_ne|售雪者布瑞格
 trp_smith_gundabad_ne_pl|铁匠
 trp_smith_gundabad_nw|售雪者布瑞格
 trp_smith_gundabad_nw_pl|铁匠
-trp_smith_gundabad_s|售雪者布瑞格
-trp_smith_gundabad_s_pl|铁匠
+trp_smith_moria_s|铸铁者布鲁克
+trp_smith_moria_s_pl|铁匠
 trp_smith_gundabad_m|售雪者布瑞格
 trp_smith_gundabad_m_pl|铁匠
 trp_barman_eastemnet|酒店老板
@@ -1211,8 +1211,8 @@ trp_merchant_woodelf_west_camp|物资官
 trp_merchant_woodelf_west_camp_pl|精灵补给站
 trp_merchant_gundabad_m|物资官
 trp_merchant_gundabad_m_pl|后勤营地
-trp_merchant_gundabad_s|物资官
-trp_merchant_gundabad_s_pl|后勤营地
+trp_merchant_moria_s|物资官
+trp_merchant_moria_s_pl|后勤营地
 trp_merchant_gundabad_nw|物资官
 trp_merchant_gundabad_nw_pl|后勤营地
 trp_merchant_gundabad_ne|物资官
@@ -1445,8 +1445,8 @@ trp_elder_gunda_ne|Orc Elder
 trp_elder_gunda_ne_pl|营地
 trp_elder_gunda_nw|Orc Elder
 trp_elder_gunda_nw_pl|营地
-trp_elder_gunda_s|Orc Elder
-trp_elder_gunda_s_pl|营地
+; trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s_pl|营地
 trp_elder_gunda_m|Orc Elder
 trp_elder_gunda_m_pl|营地
 trp_elder_ironhill|营地酋长
@@ -1501,8 +1501,8 @@ trp_black_numenorean_sorcerer|黑暗努曼诺尔巫师
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|幽暗密林狼骑兵
 trp_wolf_rider_of_mirkwood_pl|幽暗密林狼骑兵
-trp_warg_rider_of_mirkwood|幽暗密林座狼骑兵
-trp_warg_rider_of_mirkwood_pl|幽暗密林座狼骑兵
+trp_bear_strong|熊
+trp_bear_strong_pl|熊
 trp_gate_aggravator|大门防御
 trp_orc_pretender|半兽人囚犯
 trp_human_prisoner|人类囚犯

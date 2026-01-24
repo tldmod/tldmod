@@ -128,8 +128,9 @@ dlga_member_question_2:member_health|Hoe is het met je gezondheid?
 dlga_member_question_2:member_background_recap|Vertel me je verhaal nog eens.
 dlga_member_background_recap_3:do_member_trade|Niet lang daarna ging ik met jou mee.
 dlga_do_member_view_char:member_talk|Nog iets anders?
-dlga_start:close_window.11|Laten we weggaan zodra je klaar bent.
-dlga_start:close_window.12|Verspil alsjeblieft nog niet meer van mijn tijd vandaag. Wellicht ontmoeten we elkaar opnieuw.
+; dlga_start:close_window.11|It has been an honor to fight with you, {playername}.
+dlga_start:close_window.12|Laten we weggaan zodra je klaar bent.
+dlga_start:close_window.13|Verspil alsjeblieft nog niet meer van mijn tijd vandaag. Wellicht ontmoeten we elkaar opnieuw.
 dlga_companion_recruit_signup_response:close_window|Helaas kan nu ik niet meer mensen in mijn partij aannemen.
 dlga_companion_recruit_rank:close_window|Het lijkt erop dat je niet genoeg gewaardeerd bent bij mijn volk, {playername}. Je bent een {s29} en je moet een {s24} zijn zodat ik tot [{reg3} more rank points needed].^ kan toetreden. Laat ons opnieuw spreken wanneer je meer bereikt hebt.
 dlga_companion_recruit_rank:companion_recruit_payment.1|ik ben blij om te zien wat je geworeden bent.  {s29}, en ik kijk er naar uit om je te helpen
@@ -183,6 +184,13 @@ dlga_companion_home_description:close_window.1|Ik heb liever dat mijn gezellen m
 dlga_start:player_hire_troop|{s33}^^Ik leid de strijdmacht die hier gelegerd is in {s21}. Wou je me zien?
 dlga_player_hire_troop:player_hire_troop_give|Sommige soldaten in mijn groep zouden hier nuttiger zijn, om {s21} te verdedigen.
 dlga_player_hire_troop:close_window|Ik wil mijn soldaten die hier gelegerd zijn overzien.
+; dlga_player_hire_troop:player_hire_captain_1|{s6}
+; dlga_player_hire_captain_1:player_hire_captain_2|I have one {s5} in my garrison that might be willing to serve under your command and help you organize your party. But he will be missed here. [costs {reg21} influence]
+; dlga_player_hire_captain_1:close_window|You are a mere {s24}. What would you do with a captain?
+; dlga_player_hire_captain_1:close_window.1|No, I can't spare anyone at the moment.
+; dlga_player_hire_captain_2:player_hire_captain_3|I will have him.
+dlga_player_hire_captain_2:close_window|Ik heb m'n gedachten veranderd.
+; dlga_player_hire_captain_3:close_window|He will serve you well.
 dlga_player_hire_troop:player_hire_trolls_take|Ik ben een commandant die waard is om met een Trol te vechten- geef mij een!
 ; dlga_player_hire_trolls_take:close_window|Looking to raise your own Black Legion, are you? Come back when you can add a full-grown Troll to your ranks.
 ; dlga_player_hire_trolls_take:close_window.1|You? You lowly maggot. Get out of my sight. Fighting Troll, indeed. (You need to be {s24} or higher)
@@ -192,7 +200,7 @@ dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|Een gruwelijk beest.
 dlga_player_hire_trolls_how_many:player_hire_troll_armoured|Ze zullen beter vechten met ijzeren platen die hen beschermen. Maak het zo!
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|Ik heb m'n gedachten veranderd.
 dlga_player_hire_troll_buy_not_enough:close_window|Mijn tijd aan het verspillen...
-dlga_player_hire_troll_buy_done:close_window|Zorg goed voor deze grote vriend nu, en zal hij goed voor jou zorgen! Ha!
+; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha! He has not seen battle yet. Be aware that he may panick and ignore your orders.
 dlga_player_hire_troop:close_window.1|Ik heb wat oefening nodig.
 dlga_player_hire_troop:tld_sell_prisoners|Ik heb wat gevangenen voor je meegebracht.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Laat ons dat elledig tuig eens zien.
@@ -225,6 +233,8 @@ dlga_player_siege_ask_leave_unmolested_reject:close_window|Dan zullen we dit kas
 dlga_defeat_lord_answer:defeat_lord_answer_1|U bent nu mijn gevangene.
 dlga_defeat_lord_answer_1:close_window|Ik ben in je genade.
 dlga_defeat_lord_answer:defeat_lord_answer_2|Je hebt goed gevochten. Je bent vrij om te gaan.
+; dlga_defeat_lord_answer_vengeance:defeat_lord_answer_vengeance_1|{s5}! You killed {s6} and I have sworn to avenge {reg11?her:him}. I hearby fulfill my oath. You will die now!
+dlga_defeat_lord_answer_vengeance_1:close_window|Ooit zul je boeten... Aaa-ghgllr!...
 dlga_start:party_encounter_lord_hostile_attacker|{spelernaam}!
 dlga_start:party_encounter_lord_hostile_attacker.1|Halt!
 dlga_party_encounter_lord_hostile_attacker_2:party_encounter_offer_dont_fight|Is er geen manier om dit gevecht te ontwijken? Ik wil niet met je vechten.
@@ -232,9 +242,10 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|Val niet aan! Wij geve
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|Wij zullen tot het einde vechten!
 dlga_party_encounter_offer_dont_fight:close_window|Ik ben je een gunst verschuldigd, niet? Wel... goed dan. Ik zal je deze ene keer laten gaan.
 dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha. Maar ik wil met jou vechten.
-dlga_start:close_window.13|Mmmh...
-; dlga_start:close_window.14|The lord is in deep thought and must not be disturbed!
-dlga_start:close_window.15|Heen met jou, vuile bedelaar.
+dlga_start:close_window.14|Mmmh...
+; dlga_start:close_window.15|The lord is in deep thought and must not be disturbed!
+; dlga_start:close_window.16|Hail {playername}, {s24}!
+dlga_start:close_window.17|Heen met jou, vuile bedelaar.
 dlga_start:lord_start|Kijk eens aan, het is mijn moedige kampioen, {playername}...
 dlga_start:lord_start.1|Goed om je terug te zien {playername}...
 dlga_start:lord_start.2|We treffen elkaar opnieuw, {playername}...
@@ -245,6 +256,9 @@ dlga_lord_meet_enemy:lord_intro|Ik ben {playername}.
 dlga_lord_meet_enemy:lord_intro.1|Ik sta bekend als {playername}. Schrijf het neer, je zal vaak over me horen spreken.
 dlga_start:lord_start.3|Wel, {playername}...
 dlga_lord_start:lord_generic_mission_completed|Jouw chirurg heeft mijn vriend kunnen overtuigen en heeft de operatie uitgevoerd. Wat we nu nog kunnen doen is bidden voor zijn herstel. Hoe dan ook, bedankt dat je jouw chirurg hebt uitgeleend, {playername}. Je hebt een nobele ziel. Dit zal ik niet vergeten.
+; dlga_lord_start:lord_oath_of_vengeance_fulfilled|{playername}, I see you return from your campaign against Moria and Gundabad! What news do you bring?
+; dlga_lord_oath_of_vengeance_fulfilled:lord_oath_of_vengeance_fulfilled1|My lord, I have pursued and ravaged the orc scum, destroying and routing their armies wherever I found them. They tremble with fear and hide in their deepest caves. Balin and his followers have been avenged!
+; dlga_lord_oath_of_vengeance_fulfilled1:close_window|You have accomplished more than I could ever have hoped for. Thanks to you, vengeance is ours! The fear and shame of our enemies fills our hearts with satisfaction! I name you Oathkeeper. Go now with the gratitude of Aules' people.
 dlga_lord_start:lord_investigate_fangorn_completed0|Dus, {playername}, je bent terug uit Fangorn. Waar ben je achter gekomen?
 dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|De bomen leven! Ze vallen onze troepen aan!
 dlga_lord_investigate_fangorn_completed1:close_window|Ik verdachte dit al de hele tijd. Je bent me goed van dienst geweest, {playername}.
@@ -343,16 +357,20 @@ dlga_lord_talk:lord_request_mission_ask|Heb je enige taken voor mij?
 dlga_dwarf_lord_book:dwarf_lord_book_give|Spreek openlijk, {spelernaam}.
 ; dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|I ventured deep into the Mines of Moria and found record of Balin's company.
 dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|Jij spreekt van m'n familie alsof ze een herinnering zijn. Is dat zo?
-; dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. I bring only this...
-dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'We kunnen er niet uit. We kunnen er niet uit... Ze komen er aan.'
+; dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_d|I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. Yet I found a tomb with Balin's name inscribed on the lid...
 ; dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|So it is as I feared. I had counseled Balin against this expedition but he was resolved. A fool I was for giving him leave to go.
 ; dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|You have done Erebor a great service, {playername}, and your deed will not go unrewarded.
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|Dank je, {s3}.
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|Wat ga je nu doen?
 ; dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|We will not let the murders of our kin go unanswered. We will bring ruin and death to those who have wronged us. From the peaks of Mt. Gundabad to the deepest pits of Khazad-dûm, the Misty Mountains will be stained black with goblin blood.
-; dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, I wish to help {s4} people avenge Balin and his company.
+; dlga_dwarf_lord_book_give_i:dwarf_lord_book_give_j|{s3}, I wish to help {s4} people avenge Balin and his company.
 dlga_dwarf_lord_book_give_i:lord_pretalk|Ik wens je veel geluk daarmee.
-; dlga_dwarf_lord_avenge:close_window|Very good, {playername}. Go with the blessings of Durin's folk and bring death to our enemies. Make them know pain and fear as our people have known them.
+; dlga_dwarf_lord_book_give_j:lord_pretalk|I have heard that you have already made a vow of vengeance. It would be unwise to divide your strength between two vows. I am afraid I cannot accept your offer.
+; dlga_dwarf_lord_book_give_j:dwarf_lord_book_give_k|Such a promise is not lightly given, {playername}. If you swear to avenge my kin, I will take you by the word. Are you ready to pledge an oath of vengeance against the goblin filth of the mountains?
+; dlga_dwarf_lord_book_give_k:dwarf_lord_book_give_l|I swear!
+; dlga_dwarf_lord_book_give_k:lord_pretalk|I understand. I am afraid I have other pressing obligations. Yet I wish you the best of luck in your fight against the orcs.
+; dlga_dwarf_lord_book_give_l:dwarf_lord_book_give_m|I swear not to rest and to bring death and destruction to all the orcs of the mountains before this moon wanes and rises again!
+; dlga_dwarf_lord_book_give_m:close_window|Very good, {playername}. Go with the blessings of Durin's folk and bring death to our enemies. Make them know pain and fear as our people have known them.
 dlga_lord_talk:find_lost_spears_permission|Mijn heer, Ik wens de eenzame bergen in te gaan, en te zoeken naar Koning Bladorthin's verloren speren.
 dlga_find_lost_spears_permission:lord_pretalk|Ik heb je al toestemming gegeven, {spelernaam}.
 dlga_find_lost_spears_permission:find_lost_spears_permission_yes|In orde, {spelernaam}, je mag de bergen binnenkomen.
@@ -644,7 +662,7 @@ dlga_start:castle_guard_players|Uw bevelen, Commandant?
 dlga_castle_guard_players:close_window|Open de deur. Ik zal naar binnen gaan.
 dlga_castle_guard_players:close_window.1|Laat maar zitten.
 dlga_start:castle_guard_sneaked_intro_1|Verdwijn uit mijn ogen, bedelaar! Je stinkt!
-dlga_start:close_window.16|Ga weg voor ik mijn geduld verlies jij verachtelijke bedelaar!
+dlga_start:close_window.18|Ga weg voor ik mijn geduld verlies jij verachtelijke bedelaar!
 ; dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|I want to enter the hall and speak to the lord.
 dlga_castle_guard_sneaked_intro_1:close_window|[leave]
 ; dlga_castle_guard_sneaked_intro_2:close_window|Are you out of your mind, {man/woman}? Beggars are not allowed into the hall. Now get lost or I'll beat you bloody.
@@ -740,8 +758,8 @@ dlga_sad_elf_1:sad_elf_2|Ik hoor hun stemmen. Wat nieuws brengen ze?
 ; dlga_sad_elf_choice:sad_elf_leave|I feel your pain. You have done your share in this war. You may leave.
 ; dlga_sad_elf_choice:sad_elf_no|The Elves must not abandon Middle-earth to the shadow. This war we fight not for ourselves and each of us will have to play their role. I cannot give you leave. [Leadership Check]
 ; dlga_sad_elf_leave:close_window|Thank you, my {lord/lady}!^^To the Sea, to the Sea! The white gulls are crying,^The wind is blowing, and the white foam is flying.^West, west away, the round sun is falling.
-; dlga_start:close_window.17|You have come just in time. Let us join our forces now and teach our enemy a lesson.
-dlga_start:close_window.18|Je maakt een grote fout door met ons te vechten.
+; dlga_start:close_window.19|You have come just in time. Let us join our forces now and teach our enemy a lesson.
+dlga_start:close_window.20|Je maakt een grote fout door met ons te vechten.
 ; dlga_start:ally_thanks_meet|I don't think we have met properly my friend. You just saved my life out there, and I still don't know your name...
 ; dlga_start:ally_thanks_meet.1|Your help was most welcome stranger. My name is {s1}. Can I learn yours?
 ; dlga_start:ally_thanks_meet.2|Thanks for your help, stranger. We haven't met properly yet, have we? What is your name?
@@ -749,13 +767,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|Mijn naam is {spelernaam}.
 ; dlga_ally_thanks_meet_2:close_window|Well met indeed {playername}. My name is {s1} and I am forever in your debt. If there is ever anything I can help you with, just let me know...
 ; dlga_ally_thanks_meet_2:close_window.1|Well met {playername}. I am in your debt for what you just did. I hope one day I will find a way to repay it.
 ; dlga_ally_thanks_meet_2:close_window.2|Well met {playername}. I am {s1}. Thanks for your help and I hope we meet again.
-; dlga_start:close_window.19|Again you save our necks, {playername}! Truly, you are the best of friends. {s43}
-; dlga_start:close_window.20|You arrived just in the nick of time! {playername}. You have my deepest thanks! {s43}
-dlga_start:close_window.21|Jij kwam juist op tijd, {spelernaam}. Ik zal jouw hulp niet vergeten. {s43}
-dlga_start:close_window.22|Goed om jou hier te zien, {spelernaam}. {s43}
-; dlga_start:close_window.25|Thank you for your help, Commander. You saved {reg1?our lives:my life} out there.
-; dlga_start:close_window.26|Thank you for your help, Commander. Things didn't look very well for us but then you came up and everything changed.
-; dlga_start:close_window.27|Thank you for your help, Commander. It was fortunate to have you nearby.
+; dlga_start:close_window.21|Again you save our necks, {playername}! Truly, you are the best of friends. {s43}
+; dlga_start:close_window.22|You arrived just in the nick of time! {playername}. You have my deepest thanks! {s43}
+dlga_start:close_window.23|Jij kwam juist op tijd, {spelernaam}. Ik zal jouw hulp niet vergeten. {s43}
+dlga_start:close_window.24|Goed om jou hier te zien, {spelernaam}. {s43}
+; dlga_start:close_window.27|Thank you for your help, Commander. You saved {reg1?our lives:my life} out there.
+; dlga_start:close_window.28|Thank you for your help, Commander. Things didn't look very well for us but then you came up and everything changed.
+; dlga_start:close_window.29|Thank you for your help, Commander. It was fortunate to have you nearby.
 ; dlga_start:freed_hero_answer|I am in your debt for freeing me friend.
 ; dlga_freed_hero_answer:freed_hero_answer_1|You're not going anywhere. You'll be my prisoner now!
 dlga_freed_hero_answer_1:close_window|Helaas. Zal mijn geluk nooit veranderen?
@@ -849,7 +867,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|Bogen.
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|Gegooide wapens.
 dlga_trainer_choose_weapon_player:trainer_pretalk|Geen, Ik heb m'n gedachten veranderd.
 dlga_trainer_begin_training:close_window|Erg goed, hier gaan we. Wanneer je training compleet is, kom terug met me spreken.
-dlga_start:close_window.28|Heen met jou, vuile bedelaar.
+dlga_start:close_window.30|Heen met jou, vuile bedelaar.
 dlga_start:mayor_begin|Fijne dag, mijn heer.
 dlga_start:mayor_talk|Hallo vreemdeling, jij lijkt nieuw voor {s9}. Ik ben de gildenmeester van de stad.
 dlga_start:mayor_begin.1|Fijne dag, {spelernaam}
@@ -935,8 +953,8 @@ dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|Ik heb het te druk o
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Oké. Ik zal de voorraadtrein escorteren.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Ik ben bang dat ik zoveel soldaten niet mee heb.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Sorry. Ik kan dat niet doen op dit moment.
-; dlga_start:close_window.29|We can cover the rest of the way ourselves. Thanks.
-; dlga_start:close_window.30|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Thanks for escorting us. Good luck.^^[earned {reg14} Resource Points of {s14}]
+; dlga_start:close_window.31|We can cover the rest of the way ourselves. Thanks.
+; dlga_start:close_window.32|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Thanks for escorting us. Good luck.^^[earned {reg14} Resource Points of {s14}]
 dlga_start:merchant_caravan_intro_1|Groeten. Jij bent onze escorte, toch?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Ja. Mijn naam is {spelernaam} Ik leid jullie naar {s1}.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Wel, het is goed om te weten dat we niet alleen reizen. Wat wil je dat wij nu doen?
@@ -986,7 +1004,7 @@ dlga_prisoner_chat_3:prisoner_slaughter|Jij bent toevallig ons volgende diner!{s
 ; dlga_prisoner_chat_4:close_window|Yeah, like I'm in a position for trying? Get lost!
 dlga_prisoner_slaughter:prisoner_slaughter_02|Ooit zul je boeten!
 dlga_prisoner_slaughter:close_window|Ooit zul je boeten... Aaa-ghgllr!...
-dlga_start:close_window.31|Heen met jou, vuile bedelaar.
+dlga_start:close_window.33|Heen met jou, vuile bedelaar.
 dlga_start:town_merchant_talk|Groeten, Commandant. Hoe kan ik u vandaag van dienst zijn?
 dlga_start:town_merchant_talk.1|Goede dag. Wat kan ik voor jou doen?
 ; dlga_town_merchant_talk:trade_requested_weapons|I want to request new equipment. Show me what you have in your warehouse.
@@ -1012,7 +1030,9 @@ dlga_town_merchant_talk:close_window|Vaarwel.
 dlga_start:town_dweller_talk|Excuseer mij?
 dlga_start:town_dweller_talk.1|Goede dag, Commandant.
 ; dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?
-; dlga_town_dweller_ask_fugitive:close_window|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
+; dlga_town_dweller_ask_fugitive:close_window|I don't know you. For all I care, you are that suspicious stranger to me!
+; dlga_town_dweller_ask_fugitive:close_window.1|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
+; dlga_town_dweller_ask_fugitive:close_window.2|No, I haven't seen anyone.
 dlga_town_dweller_talk:town_dweller_ask_info|Wat kun je mij vertellen over dit dorp?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Wat kun je mij vertellen over deze plek?
 dlga_town_dweller_talk:town_dweller_talk|Hoe is het leven hier?
@@ -1029,19 +1049,20 @@ dlga_town_dweller_ask_directions2:close_window|Laat maar zitten.
 dlga_town_dweller_brawl_confirm:close_window|Oh echt? Laten we eens zien wat je hebt.
 dlga_town_dweller_brawl_confirm:close_window.1|Nee, ik dacht dat u iemand anders was.
 dlga_town_dweller_talk:close_window|[leave]
-dlga_start:close_window.32|Op donderen!
-dlga_start:close_window.33|Laat mij met rust!
+; dlga_start:close_window.34|Hail {playername}, {s24}!
+dlga_start:close_window.35|Op donderen!
+dlga_start:close_window.36|Laat mij met rust!
 dlga_start:player_castle_guard_talk|Ja, Commandant?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|Hoe gaat de wacht, soldaat?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Alles is rustig Commandant. Niks om te rapporteren.
 dlga_player_castle_guard_talk_3:close_window|Goed, hou je ogen open.
-; dlga_start:close_window.34|Good day, {s24}. It's good having you here in {s10}.
-; dlga_start:close_window.35|Mind your manners around here and we'll have no trouble.
+; dlga_start:close_window.37|Good day, {s24}. It's good having you here in {s10}.
+; dlga_start:close_window.38|Mind your manners around here and we'll have no trouble.
 ; dlga_start:hall_guard_easter_egg|Ah, just past midnight. You know, an unusual incident happened recently - do you want to hear about it?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Ja, ga alstublieft verder.
 dlga_hall_guard_easter_egg:close_window|Nee, ik geef niet om geroddel.
 ; dlga_hall_guard_easter_egg_scene:close_window|Well.. an unusual group of adventurers appeared recently: a man, a dwarf and an elf, and then...
-; dlga_start:close_window.36|We are not supposed to talk while on guard, Commander.
+; dlga_start:close_window.39|We are not supposed to talk while on guard, Commander.
 dlga_enemy_defeated:close_window|Arggh! Ik haat dit.
 dlga_party_relieved:close_window|Dank je voor het helpen tegen die klootzakken.
 dlga_member_chat_00:close_window.1|^^GROM!^^
@@ -1074,32 +1095,32 @@ dlga_party_reinforce:party_reinforce_end.2|Spijtig genoeg heb je geen {s22} sold
 dlga_party_reinforce_check:party_reinforce_check_1|Laat mij het soldaten rooster nakijken...
 dlga_party_reinforce_check_1:party_reinforce_end|Dus je bent van mening veranderd...^ik snap het.
 dlga_party_reinforce_check_1:party_reinforce_end.1|Die soldaten zijn waardeloos voor ons. ^Neem ze terug.
-; dlga_start:close_window.37|You are making me late! Wizards are never late!
-; dlga_start:close_window.38|You are making me late! Wizards are never late!
-; dlga_start:close_window.39|It... beckonsssssss...
+; dlga_start:close_window.40|You are making me late! Wizards are never late!
+; dlga_start:close_window.41|You are making me late! Wizards are never late!
+; dlga_start:close_window.42|It... beckonsssssss...
 dlga_start:secret_guardian_let_through|Halt!
 ; dlga_secret_guardian_let_through:secret_guardian_let_through1|I am {playername}, {s24}. Let me through!
 dlga_secret_guardian_let_through1:close_window|Ja commandant, u mag passeren.
-; dlga_start:close_window.41|You there! You survived? Good! You can't be waving a stick about! Take this!
+; dlga_start:close_window.44|You there! You survived? Good! You can't be waving a stick about! Take this!
 ; dlga_start:ori_choose_1|You fight well, kinsman! I don't know how you've been surviving so far. I remember you joining us recently, before all this... before Balin fell... Where are you from?
 ; dlga_ori_choose_1:ori_choose_finish|I was a tracker, sent to the woods near the Bear people. I recently heard about Balin's company and joined.
 ; dlga_ori_choose_1:ori_choose_finish.1|I am a distant cousin, a veteran bodyguard from a mine far away. Then I heard of Balin and joined.
 ; dlga_ori_choose_1:ori_choose_finish.2|I am from the Iron Hills, a veteran of the wars, and a miner during peace. I heard of Balin and joined, wanting more kill orcs.
 ; dlga_ori_choose_finish:close_window|Good to know! I found these, fit for your background. We shall make our stand here and take as many of them with us!
-; dlga_start:close_window.42|It looks like you are shaking off those rusty skills, eh? Here, take a swig of this. It will make you feel better. More orcs are coming!
-; dlga_start:close_window.43|Take that dusty thing off you and wear this. Should protect you better. These orcs bite hard!
-dlga_start:close_window.44|Iets groot komt er aan! Maak je klaar!
-dlga_start:close_window.45|Ze zijn met te veel... maar wij zijn dwergen!
-; dlga_start:close_window.46|Those orcs opened up a cavern filled with treasures. Here are some that I found, go ahead and take them.
-dlga_start:close_window.47|Nee... Ik hoor ze... ze zijn buiten! Ze zijn overal!
-; dlga_start:close_window.48|Here... Our Lord Balin's... you are worthy of these...
+; dlga_start:close_window.45|It looks like you are shaking off those rusty skills, eh? Here, take a swig of this. It will make you feel better. More orcs are coming!
+; dlga_start:close_window.46|Take that dusty thing off you and wear this. Should protect you better. These orcs bite hard!
+dlga_start:close_window.47|Iets groot komt er aan! Maak je klaar!
+dlga_start:close_window.48|Ze zijn met te veel... maar wij zijn dwergen!
+; dlga_start:close_window.49|Those orcs opened up a cavern filled with treasures. Here are some that I found, go ahead and take them.
+dlga_start:close_window.50|Nee... Ik hoor ze... ze zijn buiten! Ze zijn overal!
+; dlga_start:close_window.51|Here... Our Lord Balin's... you are worthy of these...
 dlga_start:party_encounter_hostile_attacker|Je hebt geen kans tegen ons. Geef op of we zullen jullie allemaal vermoorden...
 dlga_party_encounter_hostile_attacker:close_window|Val niet aan! Wij geven ons over.
 dlga_party_encounter_hostile_attacker:close_window.1|Wij zullen tot het einde vechten!
 dlga_start:party_encounter_hostile_defender|Wat wil je?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Geef je over of sterf!
 dlga_party_encounter_hostile_defender:close_window|Niks, We zullen jou verlaten in vrede.
-dlga_start:close_window.50|*staart in stilte naar je*
+dlga_start:close_window.53|*staart in stilte naar je*
 dlga_start:battle_reason_stated|Geef je over of sterf. Maak jouw keuze.
 dlga_battle_reason_stated:close_window|Ik heb geen schrik van jou. Ik zal vechten.
 dlga_start:free|Hallo. What kan ik voor je doen?

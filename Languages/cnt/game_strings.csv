@@ -1893,9 +1893,9 @@ str_trait_desc_merciful|你因仁慈的對待敵人聲名遠播。有些強硬�
 str_trait_title_bravery|勇敢的
 str_trait_desc_bravery|你在巨大危難中挺身而出。被眾人傳頌為勇者。你的英姿鼓舞了你的人馬讓他們每週都會獲得士氣加成。
 str_trait_title_oathkeeper|守誓者
-str_trait_desc_oathkeeper|你曾發過嚴峻的誓言並活著將其兌現。所以人們都稱讚你言而有信。你將每週獲得影響力加成。
+; str_trait_desc_oathkeeper|You have sworn grim oaths and lived to see them fulfilled. Subsequently you have aquired a reputation as a man of his word. Whenever you receive influence, there is a small chance for an influence bonus.
 str_trait_title_oathbreaker|背誓者
-str_trait_desc_oathbreaker|你曾發過嚴峻的誓言但沒有成功將其兌現。所以人們都說你言過其實。你將每週受到影響力減益。
+; str_trait_desc_oathbreaker|You have sworn grim oaths and failed to see them through to their conclusion. Subsequently you have aquired a reputation as a man whose passion outstrips his prowess. Whenever you receive influence, there is a small chance for an influence malus.
 str_trait_title_orc_pit_champion|半獸人鬥坑冠軍
 str_trait_desc_orc_pit_champion|你在半獸人的戰鬥比賽中存活下來並獲得身為殘暴戰士的名聲。這樣的力量讓你的黑心追隨者們又敬又怕並使他們每週都會獲得士氣加成。
 str_trait_title_despoiler|掠奪者
@@ -2521,3 +2521,5 @@ str_shortname_region_n_anduin_vale|安都因河谷北部
 str_shortname_region_s_anduin_vale|安都因河谷南部
 str_shortname_region_cair_andros|凱爾安卓斯島
 str_isengard_hunting_camp_guildmaster_player_found_ok|如果他很會殺戮，那我就帶走他。如果不會，那我會把他像魚一樣宰了挖出內臟。再如果他其實又是一隻毫無價值的蛆蟲，那我會再回來讓你為浪費我的時間付出代價！
+; str_trait_title_animal_fighter|Beast Slayer
+; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.

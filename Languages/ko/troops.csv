@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|군다바드 오르크 투사
 trp_i3_gunda_orc_fighter_pl|군다바드 오르크 투사
 trp_i4_gunda_orc_warrior|군다바드 오르크 전사
 trp_i4_gunda_orc_warrior_pl|군다바드 오르크 전사
-trp_i4_gunda_orc_berserker|군다바드 오르크 광전사
-trp_i4_gunda_orc_berserker_pl|군다바드 오르크 광전사
+trp_i5_gunda_orc_berserker|군다바드 오르크 광전사
+trp_i5_gunda_orc_berserker_pl|군다바드 오르크 광전사
 trp_ca4_gunda_skirmisher|군다바드 척후병
 trp_ca4_gunda_skirmisher_pl|군다바드 척후병
 trp_ca5_gunda_clan_skirmisher|북부 부족 고블린 척후병
@@ -1185,8 +1185,8 @@ trp_smith_gundabad_ne|"눈 상인" 블러르그
 trp_smith_gundabad_ne_pl|대장간
 trp_smith_gundabad_nw|"눈 상인" 블러르그
 trp_smith_gundabad_nw_pl|대장간
-trp_smith_gundabad_s|"눈 상인" 블러르그
-trp_smith_gundabad_s_pl|대장간
+trp_smith_moria_s|풀무 장인 버르가크
+trp_smith_moria_s_pl|대장간
 trp_smith_gundabad_m|"눈 상인" 블러르그
 trp_smith_gundabad_m_pl|대장간
 trp_barman_eastemnet|여관 주인
@@ -1211,8 +1211,8 @@ trp_merchant_woodelf_west_camp|보급 담당자
 trp_merchant_woodelf_west_camp_pl|요정족 보급품
 trp_merchant_gundabad_m|보급 담당자
 trp_merchant_gundabad_m_pl|야영지 창고
-trp_merchant_gundabad_s|보급 담당자
-trp_merchant_gundabad_s_pl|야영지 창고
+trp_merchant_moria_s|보급 담당자
+trp_merchant_moria_s_pl|야영지 창고
 trp_merchant_gundabad_nw|보급 담당자
 trp_merchant_gundabad_nw_pl|야영지 창고
 trp_merchant_gundabad_ne|보급 담당자
@@ -1445,8 +1445,8 @@ trp_elder_gunda_ne|Orc Elder
 trp_elder_gunda_ne_pl|야영지
 trp_elder_gunda_nw|Orc Elder
 trp_elder_gunda_nw_pl|야영지
-trp_elder_gunda_s|Orc Elder
-trp_elder_gunda_s_pl|야영지
+; trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s_pl|야영지
 trp_elder_gunda_m|Orc Elder
 trp_elder_gunda_m_pl|야영지
 trp_elder_ironhill|야영지 대장
@@ -1501,8 +1501,8 @@ trp_black_numenorean_sorcerer|검은 누메노르 주술사
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|어둠숲 늑대기수
 trp_wolf_rider_of_mirkwood_pl|어둠숲 늑대기수
-trp_warg_rider_of_mirkwood|어둠숲 와르그기수
-trp_warg_rider_of_mirkwood_pl|어둠숲 와르그기수
+trp_bear_strong|곰
+trp_bear_strong_pl|곰
 trp_gate_aggravator|정문 수비대
 trp_orc_pretender|오르크 쟁탈자
 trp_human_prisoner|인간 죄수

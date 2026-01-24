@@ -150,7 +150,6 @@ itm_arnor_shield_a|Арнорський круглий щит
 itm_arnor_sword_c|Військовий меч Арнора
 itm_arnor_sword_a|Арнорський меч-бастард
 itm_arnor_sword_f|Арнорський короткий меч
-itm_riv_helm_a|Рівенділський коїф
 itm_riv_helm_b|Рівенділський шолом лучника
 itm_riv_helm_c|Рівенділський шолом піхотинця
 itm_tiara_reward|Тіара ельфійського правителя
@@ -285,7 +284,7 @@ itm_lorien_round_shield|Лоріенський круглий щит
 itm_lorien_helm_a|Лоріенський шолом лучника
 itm_lorien_helm_b|Лоріенський шолом лучника
 itm_lorien_helm_c|Лоріенський шолом піхотинця
-itm_orc_coif|Оркський черепник
+itm_orc_coif2|Оркський черепник
 itm_orc_greaves|Оркські кольчужні чоботи
 itm_orc_ragwrap|Оркські рвані обмотки
 itm_orc_furboots|Оркські хутряні чоботи
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|Урук-хайський шолом полководця
 itm_isen_uruk_helm_e|Урук-хайський шолом слідопита
 itm_uruk_pike_b|Мордорська піка
 itm_uruk_falchion_a|Урукський фальшіон
-itm_uruk_falchion_b|Великий Оркський Ятаган
+itm_orc_bastard_scimitar|Великий Оркський Ятаган
+; itm_orc_cleaver_a|Orc Cleaver
+itm_orc_scimitar_b|Оркський ятаган
+itm_orc_sabre_b|Оркська шабля
+; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|Ізенґардський меч
 itm_isengard_axe|Ізенґардська сокира
 itm_isengard_hammer|Ізенґардський молот
@@ -340,7 +343,7 @@ itm_orc_pick|Оркське Кайло
 itm_orc_hammer|Молот Зла
 itm_orc_club_b|Дубина вовчого вершника
 itm_orc_club_c|Шпичаста оркська дубина
-itm_orc_club_d|Зловісна булава
+itm_orc_mace|Зловісна булава
 itm_orc_sledgehammer|Оркська кувалда
 itm_orc_simple_spear|Оркський спис
 itm_orc_skull_spear|Оркський спис з черепом
@@ -375,6 +378,10 @@ itm_orc_morion|Оркський моріон
 itm_orc_beakhelm|Орочий шолом з дзьобом
 itm_orc_bughelm|Оркський шолом жука
 itm_orc_visorhelm|Орочий шолом з прорізом
+; itm_orc_coif|Evil Coif
+itm_orc_skullcap|Оркський черепник
+; itm_orc_skullhelm|Orc Skullhelm
+itm_orc_barbuta|Оркський шолом з наносником
 itm_m_orc_light_a|Мордорська ороча легка броня
 itm_m_orc_light_b|Мордорська ороча легка броня
 itm_m_orc_light_c|Мордорська ороча легка броня
@@ -839,3 +846,6 @@ itm_black_tunic_wb|Чорний одяг
 ; itm_civilian_carry_wood2|Wood
 ; itm_work_basket|Basket
 ; itm_work_basket_2|Basket
+itm_spider_mount|Павук
+; itm_marker_night_troop|Trait: Night Troop
+; itm_marker_berserker|Trait: Berserker

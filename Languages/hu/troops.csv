@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|Gundabadi ork harcos
 trp_i3_gunda_orc_fighter_pl|Gundabadi ork harcosok
 trp_i4_gunda_orc_warrior|Gundabadi ork harcos
 trp_i4_gunda_orc_warrior_pl|Gundabadi ork harcosok
-trp_i4_gunda_orc_berserker|Gundabadi ork berzerker
-trp_i4_gunda_orc_berserker_pl|Gundabadi ork berzerkerek
+trp_i5_gunda_orc_berserker|Gundabadi ork berzerker
+trp_i5_gunda_orc_berserker_pl|Gundabadi ork berzerkerek
 trp_ca4_gunda_skirmisher|Gundabadi portyázó
 trp_ca4_gunda_skirmisher_pl|Gundabadi portyázók
 trp_ca5_gunda_clan_skirmisher|Észak klánbeli kobold portyázó
@@ -1185,8 +1185,8 @@ trp_smith_gundabad_ne|Hóárus Blurg
 trp_smith_gundabad_ne_pl|kovács
 trp_smith_gundabad_nw|Hóárus Blurg
 trp_smith_gundabad_nw_pl|kovács
-trp_smith_gundabad_s|Hóárus Blurg
-trp_smith_gundabad_s_pl|kovács
+trp_smith_moria_s|Vasműves Burgak
+trp_smith_moria_s_pl|kovács
 trp_smith_gundabad_m|Hóárus Blurg
 trp_smith_gundabad_m_pl|kovács
 trp_barman_eastemnet|Fogadós
@@ -1211,8 +1211,8 @@ trp_merchant_woodelf_west_camp|Ellátmányos mester
 trp_merchant_woodelf_west_camp_pl|tünde készletek
 trp_merchant_gundabad_m|Ellátmányos mester
 trp_merchant_gundabad_m_pl|tábori elrejtett készlet
-trp_merchant_gundabad_s|Ellátmányos mester
-trp_merchant_gundabad_s_pl|tábori elrejtett készlet
+trp_merchant_moria_s|Ellátmányos mester
+trp_merchant_moria_s_pl|tábori elrejtett készlet
 trp_merchant_gundabad_nw|Ellátmányos mester
 trp_merchant_gundabad_nw_pl|tábori elrejtett készlet
 trp_merchant_gundabad_ne|Ellátmányos mester
@@ -1445,8 +1445,8 @@ trp_elder_rhun_nc_pl|a tábor
 trp_elder_gunda_ne_pl|a tábor
 ; trp_elder_gunda_nw|Orc Elder
 trp_elder_gunda_nw_pl|a tábor
-; trp_elder_gunda_s|Orc Elder
-trp_elder_gunda_s_pl|a tábor
+; trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s_pl|a tábor
 ; trp_elder_gunda_m|Orc Elder
 trp_elder_gunda_m_pl|a tábor
 trp_elder_ironhill|Tábori törzsfő
@@ -1501,8 +1501,8 @@ trp_black_numenorean_sorcerer|Fekete númenori varázsló
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|Bakacsinerdei farkaslovas
 trp_wolf_rider_of_mirkwood_pl|Bakacsinerdei farkaslovasok
-trp_warg_rider_of_mirkwood|Bakacsinerdei varglovas
-trp_warg_rider_of_mirkwood_pl|Bakacsinerdei varglovasok
+trp_bear_strong|Medve
+trp_bear_strong_pl|Medvék
 trp_gate_aggravator|Kapuvédelem
 trp_orc_pretender|Ork tettető
 trp_human_prisoner|Emberi fogoly

@@ -1893,9 +1893,9 @@ str_trait_desc_merciful|Rozsławiła cię reputacja miłosier{nego/nej} wobec lu
 str_trait_title_bravery|Waleczn{y/a}
 str_trait_desc_bravery|Zyskujesz reputację nieulęknione{go/j} w obliczu wielkiego niebezpieczeństwa. O twej odwadze rozprawia się w karczmach jak i salach mędrców. Twe czyny inspirują ludzi i co za tym idzie otrzymujesz cotygodniową premię do morale.
 str_trait_title_oathkeeper|Dotrzymując{y/a} Przysięgi
-str_trait_desc_oathkeeper|Przysiągł{e/a}ś i w pełni wypełnił{e/a}ś przysięgę. Zyskujesz reputację człowieka słownego. Otrzymujesz premię do wpływów.
+; str_trait_desc_oathkeeper|You have sworn grim oaths and lived to see them fulfilled. Subsequently you have aquired a reputation as a man of his word. Whenever you receive influence, there is a small chance for an influence bonus.
 str_trait_title_oathbreaker|Krzywoprzysięzca
-str_trait_desc_oathbreaker|Przysiągł{e/a}ś i złamał{e/a}ś przysięgę. Zyskujesz reputację człowieka kłamliwego, na którym nie można polegać. Otrzymujesz karę do cotygodniowych wpływów.
+; str_trait_desc_oathbreaker|You have sworn grim oaths and failed to see them through to their conclusion. Subsequently you have aquired a reputation as a man whose passion outstrips his prowess. Whenever you receive influence, there is a small chance for an influence malus.
 str_trait_title_orc_pit_champion|Orkowy Mistrz Jamy
 str_trait_desc_orc_pit_champion|Zyskał{e/a}ś sławę brutalne{go/j} wojowni{ka/czki}, któr{y/a} przetrwał{/a} najokrutniejsze z orkowych sprawdzianów. Twa siła budzi zarówno respekt jak i strach wśród twych zwolenników  i  co za tym idzie otrzymujesz cotygodniową premię do morale.
 str_trait_title_despoiler|Grabieżca
@@ -2521,3 +2521,5 @@ str_shortname_region_n_anduin_vale|Północna Dolina Anduiny
 str_shortname_region_s_anduin_vale|Południowa Dolina Anduiny
 str_shortname_region_cair_andros|Cair Andros
 str_isengard_hunting_camp_guildmaster_player_found_ok|Jeżeli umie zabijać, to zabieram go ze sobą. Jeśli nie, wypatroszę go jak rybę. I jeżeli okaże się być kolejnym nic nie wartym robalem, wrócę tutaj i zapłacisz za marnowanie mojego czasu!
+; str_trait_title_animal_fighter|Beast Slayer
+; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.

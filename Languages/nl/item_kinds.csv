@@ -150,7 +150,6 @@ itm_arnor_shield_c|Arnor Cavalerie Schild
 ; itm_arnor_sword_c|Arnor War Sword
 itm_arnor_sword_a|Arnor Bastaard Zwaard
 itm_arnor_sword_f|Arnor Kort Zwaard
-itm_riv_helm_a|Rivendell Huif
 itm_riv_helm_b|Rivendell Boogschutters Helm
 itm_riv_helm_c|Rivendell Infanterie Helm
 itm_tiara_reward|Elf Heer Diadeem
@@ -285,7 +284,7 @@ itm_lorien_round_shield|Lorien Rond Schild
 ; itm_lorien_helm_a|Lorien Archer Helm
 ; itm_lorien_helm_b|Lorien Archer Helm
 ; itm_lorien_helm_c|Lorien Infantry Helm
-; itm_orc_coif|Orc Skullcap
+; itm_orc_coif2|Orc Skullcap
 ; itm_orc_greaves|Orc Chain Boots
 ; itm_orc_ragwrap|Orc Ragwrap
 ; itm_orc_furboots|Orc Fur Boots
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|Uruk-Hai Kapiteinshelm
 ; itm_isen_uruk_helm_e|Uruk-Hai Tracker Helm
 ; itm_uruk_pike_b|Mordor Pike
 ; itm_uruk_falchion_a|Uruk Falchion
-; itm_uruk_falchion_b|Orc Great Scimitar
+; itm_orc_bastard_scimitar|Orc Great Scimitar
+; itm_orc_cleaver_a|Orc Cleaver
+; itm_orc_scimitar_b|Orc Scimitar
+; itm_orc_sabre_b|Orc Sabre
+; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|Isengard Zwaard
 itm_isengard_axe|Isengard Bijl
 itm_isengard_hammer|Isengard Hamer
@@ -340,7 +343,7 @@ itm_isen_uruk_shield_b|Isen Uruk Schild
 ; itm_orc_hammer|Evil Hammer
 ; itm_orc_club_b|Warg Rider Club
 ; itm_orc_club_c|Spiky Orc Club
-; itm_orc_club_d|Evil Mace
+; itm_orc_mace|Evil Mace
 ; itm_orc_sledgehammer|Orc Sledgehammer
 itm_orc_simple_spear|Orc Speer
 itm_orc_skull_spear|Orc Schedelspeer
@@ -375,6 +378,10 @@ itm_orc_buckethelm|Orc Emmerhelm
 itm_orc_beakhelm|Orc Snavelhelm
 itm_orc_bughelm|Orc Insectenhelm
 ; itm_orc_visorhelm|Orc Visorhelm
+; itm_orc_coif|Evil Coif
+; itm_orc_skullcap|Orc Skullcap
+; itm_orc_skullhelm|Orc Skullhelm
+; itm_orc_barbuta|Orc Nosehelm
 itm_m_orc_light_a|Mordor Orc Licht Pantser
 itm_m_orc_light_b|Mordor Orc Licht Pantser
 itm_m_orc_light_c|Mordor Orc Licht Pantser
@@ -839,3 +846,6 @@ itm_denethor_robe|Fijne Outfit
 ; itm_civilian_carry_wood2|Wood
 ; itm_work_basket|Basket
 ; itm_work_basket_2|Basket
+itm_spider_mount|Spin
+; itm_marker_night_troop|Trait: Night Troop
+; itm_marker_berserker|Trait: Berserker

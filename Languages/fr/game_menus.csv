@@ -20,7 +20,6 @@ mno_custom_battle_scenario_7|Embuscade, Orques contre Grand'Peur
 mno_custom_battle_scenario_8|Le dernier combat du peuple de Durin
 mno_custom_battle_scenario_88|Pourchasser un groupe d'éclaireurs orques
 mno_custom_battle_scenario_11|Batailles de test (équilibrage)
-mno_custom_battle_scenario_10|Bataille de test de scène
 mno_troll_battle_scenario|Test de batailles de trolls
 mno_warg_battle_scenario|Test de batailles de wargs
 mno_build_your_own_scene|** Construisez votre propre scène pour TLD **
@@ -197,7 +196,7 @@ menu_cattle_herd|Vous rencontrez plusieurs individus.
 mno_cattle_drive_away|Leur ordonner de vous suivre
 mno_cattle_stop|Les mener jusqu'à la prochaine halte.
 mno_leave|Partir.
-menu_simple_encounter|^^^^^{s2}^Vous disposez de {reg22} soldats fin prêts pour affronter {reg11}.^^La bataille se déroule en {s3}{s4}.^^Quels sont vos ordres ?
+menu_simple_encounter|^^^^^{s2}^Vous disposez de {reg22} soldats fin prêts pour affronter leurs {reg11}.^^La bataille se déroule en {s3}{s4}.{s17}^^Quels sont vos ordres ?
 mno_encounter_attack|{reg21?Les charger:Se préparer à leur faire face}.
 mno_encounter_order_attack|Ordonner à vos troupes de {reg21?les attaquer:leur faire face} sans vous.
 mno_control_allies_menu|Utiliser de influence pour commander vos alliés sur le terrain.
@@ -232,7 +231,7 @@ mno_pre_join_help_attackers|Aller aider {s2}.
 mno_pre_join_help_defenders|Foncer aider {s1}.
 mno_pre_join_help_refugees|Foncer aider {s1}.
 mno_pre_join_leave|Ne pas vous en mêler.
-menu_join_battle|^^^Vous aidez {s2} contre {s1}.^ Vous avez {reg22} soldats prêts à en découdre face à {reg11} ennemis.^^Le bataille a lieu en {s3}{s4}.
+menu_join_battle|^^^Vous aidez {s2} contre {s1}.^ Vous avez {reg22} soldats prêts à en découdre face à {reg11} ennemis.^^La bataille a lieu en {s3}{s4}. {s17}
 mno_join_attack|Charger l'ennemi.
 mno_join_order_attack|Donner l'ordre à vos soldats d'attaquer avec vos alliés tandis que vous restez en retrait.
 mno_control_allies_join_menu|Utiliser de influence pour commander vos alliés sur le terrain.
@@ -251,14 +250,16 @@ menu_join_siege_outside|^^^^^^{s1} vient d'être assiégé par {s2}.
 mno_approach_besiegers|Approcher du camp des assiégeants.
 mno_pass_through_siege|Traverser la ligne de siège et entrer dans {s1}.
 menu_cut_siege_without_fight|Les assiégeants vous laissent approcher des portes sans opposition.
-menu_besiegers_camp_with_allies|{s1} est assiégé. Les bannières de {s2} flottent au-dessus du camp des assiégeants, où vous et vos troupes sont bien accueillies.
+menu_besiegers_camp_with_allies|{s1} est assiégé. Les bannières de {s2} flottent au-dessus du camp des assiégeants qui préparent leur prochain assaut. {s17}
 mno_talk_to_siege_commander|Demander une audience avec le commandant.
 mno_join_siege_with_allies|Participer au prochain assaut.
 mno_join_siege_stay_back|Ordonner à vos soldats de participer au prochain assaut sans vous.
-menu_moria_must_escape|^^Le livre semble rendre compte de la dernière tentative des nains de se réinstaller dans la Moria, tentative qui s'est apparemment terminée par une mort horrible pour tous les participants. Alors que vous réfléchissez à leur sombre destin, vous entendez soudain des cris aigus et le bruit précipité de nombreux pieds.^Ils arrivent !^Quittant rapidement la pièce, vous remarquez que les bruits viennent du couloir. Vous n'avez d'autre choix que de fuir dans l'autre direction, suivant un étroit et sinueux tunnel qui s'enfonce dans les profondeurs...^...^Au bout de quelques heures, vous comprenez que vous avez perdu votre chemin au plus profond de la Moria et que vous devez trouver un moyen de sortir.
+menu_moria_must_escape|^^Ici repose Balin, Seigneur de la Moria. Avec quelques difficultés, vous parvenez à déchiffrer ces mots sur les vestiges brisés du tombeau. Ils racontent la dernière tentative des nains de se réinstaller dans la Moria, qui s'est apparemment soldée par une mort atroce pour tous ceux qui y ont participé. Alors que vous réfléchissez à leur sombre destin, vous entendez soudain des cris rauques et le bruit précipité de nombreux pas.^ Ils arrivent !^ En quittant rapidement la salle, vous remarquez que les bruits proviennent du hall. Vous n'avez d'autre choix que de fuir dans l'autre direction, dans un tunnel étroit et sinueux, puis vers le bas... ^...^Après quelques heures, vous comprenez que vous êtes perdu{/e} dans les profondeurs de la Moria et que vous devez trouver un moyen de sortir.
 mno_moria_exit_scene|Trouver la sortie
+menu_moria_escape_sucess|^^Après d'innombrables heures passées dans l'obscurité, vous trouvez enfin un escalier qui monte. Au début, il est à peine visible, mais il devient progressivement plus lumineux. Enfin, vous arrivez à un croisement dont vous vous souvenez. Après quelques marches supplémentaires, vous débouchez à l'air libre. Vos troupes vous ont attendu{/e} anxieusement et sont impatientes de quitter cette vallée au plus vite.
+mno_moria_exit_found|Sortez d'ici !
 menu_castle_outside|Vous êtes à l'extérieur de {s2}. {s11} {s3} {s4}
-mno_cheat_steal_book_door|Prendre le livre
+mno_cheat_steal_book_door|Inspecter la tombe...
 mno_moria_enter|Retourner au hall principal de la Moria par l'entrée secrète.
 mno_moria_enter_door|Entrer dans la Moria.
 mno_castle_start_siege|Assiéger {reg6?la ville:le château}.
@@ -285,7 +286,7 @@ mno_siege_defender_troops_join_battle|Ordonner à vos hommes de se battre sans v
 mno_siege_defender_do_not_join_battle|Ne pas vous en mêler.
 menu_siege_join_defense|{s4}^^Vos pertes : {s8}^^Pertes alliées : {s9}^^Pertes ennemies : {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Le coup de massue du fuyard vous jette à terre, votre vision se brouille et un voile noir tombe sur vos yeux. Le temps passe. Lorsque vous rouvrez vos yeux, vous vous découvrez blessé{/e} et ensanglanté{/e}, mais par chance aucune de vos blessures ne semble mortelle.
-menu_town_bandits_succeeded|^^^^^Les Gobelins tombent devant vous comme le blé sous la faux ! Bientôt vous vous tenez seul{/e}, tous vos attaquants gisant inconscients, morts ou mourants. Les locaux vous seront vraisemblablement très reconnaissants de les avoir sauvés de cette menace.
+menu_town_bandits_succeeded|^^^^^Les bandits tombent devant vous comme le blé sous la faux ! Bientôt vous vous tenez seul{/e}, tous vos attaquants gisant inconscients, morts ou mourants. Les locaux vous seront vraisemblablement très reconnaissants de les avoir sauvés de cette menace.
 menu_town_brawl_lost|^^^^^^Vous avez été assommé{/e}. Les gens que vous avez attaqué vous fouillent rapidement, à la recherche de marchandises de valeur, avant de reprendre leur activité journalière.
 menu_town_brawl_won|^^^^^Vous avez battu tous les adversaires et les gardes envoyés pour réprimer les troubles. Vous les détroussez rapidement, avant de vous éclipser jusqu'à ce que les choses se tassent. ^La prochaine fois, ils vous montreront peut-être plus de respect et reculeront.
 menu_close|Rien.
@@ -334,13 +335,15 @@ menu_sneak_into_town_caught_dispersed_guards|Vous semez les gardes et masquez vo
 menu_sneak_into_town_caught_ran_away|Vous parcourez le chemin jusqu'aux portes et vous vous repliez rapidement dans la sécurité de l'extérieur de la ville.
 menu_tld_player_defeated|^^^^^Soudainement une douleur fulgurante éclate à l'arrière de votre crâne ! \\\\ Vous vous affaissez alors que votre vue s'assombrit... ^Est-ce la fin pour vous ?
 menu_recover_after_death_fangorn|Vous vous réveillez. La forêt est toujours autour de vous. Chaque os vous fait mal. Par miracle vous êtes vivant{/e}.^^C'était une défaite, mais au moins vous avez pu voir ce qui s'est passé.^Maintenant vous savez ce qui se passe dans cette forêt maudite^et vous avez survécu pour le dire. ^^Mais y aura-t-il quelqu'un pour vous croire un jour ?
-menu_recover_after_death_moria|^^^^^Vous reprenez conscience. Vous êtes étendu{/e} sur un sol mou et de l'air frais souffle sur votre visage. Vous êtes dehors !^Les orques ont dû vous croire mort{/e} et vous jeter dans une sombre crevasse.^Vous avez sûrement été transporté{/e} à la surface par un courant sous-terrain.
+menu_recover_after_death_moria|^^^^^Vous reprenez conscience. Vous êtes étendu{/e} sur un sol mou et de l'air frais souffle sur votre visage. Vous êtes dehors !^Les orques ont dû vous croire mort{/e} et vous jeter dans une fosse boueuse.^Vous avez sûrement été transporté{/e} à la surface par un courant sous-terrain. Votre groupe a été attaqué durant leur attente de votre retour.
 mno_whatever|Levez-vous !
 menu_recover_after_death_default|^^^^^Vous reprenez conscience. Vous êtes étendu{/e} là où vous êtes tombé{/e}. Les ennemis ont dû vous croire mort{/e} et vous ont laissé{/e} là. Qu'importe, il semble qu'aucune de vos blessures n'ait été fatale et, bien que vous vous sentiez vraiment mal, vous pouvez toujours marcher. Vous essayez de vous lever afin de retrouver les éventuels survivants de votre groupe.
 menu_recover_after_death_town|^^^^Vous reprenez conscience dans la périphérie de la ville. Vous êtes vivant{/e} ! Les environs sont déserts et vous saisissez cette opportunité pour quitter la ville. Il semble qu'aucune de vos blessures n'ait été fatale et, bien que vous vous sentiez vraiment mal, vous pouvez marcher.
 menu_recover_after_death_town_alone|^^^^Vous reprenez conscience dans la périphérie de la ville. Vous êtes vivant{/e} ! Les environs sont déserts et vous saisissez cette opportunité pour quitter la ville. Vos compagnons vous trouvent alors. Il semble qu'aucune de vos blessures n'ait été fatale et, bien que vous vous sentiez vraiment mal, vous pouvez marcher.
 menu_notification_center_under_siege|{s2} de {s3} assiège {s1} !
 menu_notification_one_side_left|^^^^^La Guerre de l'Anneau est terminée !^Les {s1} ont défait tous leurs ennemis et sont victorieux !
+mno_go_to_capital|Visiter votre capitale et célébrer votre victoire...
+mno_exit_game1|Sortir
 menu_notification_total_defeat|^^^^^La Guerre de l'Anneau est terminée pour vous !^^Les {s1} ont été vaincus par leurs ennemis et vous restez seul dans la défaite !
 menu_notification_your_faction_collapsed|^^^^^Votre patrie, {s11}, a été défaite !^Toutefois, d'autres alliés continuent cette guerre. Avec tous ceux restant de {s11}, vous pouvez encore aider votre camp à emporter la victoire.
 menu_notification_faction_defeated|^^^^^{s1} est vaincue !^{s1} n'est plus, défait par les forces de {s13} !
@@ -422,17 +425,16 @@ mno_next_rescue_scene_door|Continuer à avancer !
 mno_pick_troops1|Choisir des compagnons pour la mission, {reg0} sélectionnés
 menu_pick_troops|Qui emmèneriez-vous avec vous lors de la mission furtive ?^Seuls vos soldats et compagnons les plus agiles pourront se joindre à vous. En tant que membre du groupe ayant la compétence la plus élevée en vie sauvage, {reg65?{s1} vous conseille:vous décidez} d'emmener jusqu'à {reg11} combattants avec vous. ^^Pour le moment, vous avez choisi {reg0} compagnons.
 mno_go_forward|Fin de la sélection des compagnons et continuer.
-menu_burial_mound|Vous approchez du monument funéraire de {s1} de {s2}. Vaincu au combat par les forces de {s28}, il a été enterré avec les armes de ses ennemis tombés au combat.
+menu_burial_mound|^Vous vous approchez du monument funéraire de {s1} de {s2}. Vaincu au combat par les forces de {s28}. Il est recouvert des armes entaillées de ses ennemis tombés au combat.
 mno_pay_respects|S'agenouiller et présenter ses respects.
 mno_swear_oath|Prêter serment de vengeance ! 
 mno_despoil|Profaner le site.
 mno_leave_mound|Quitter le monticule.
 menu_burial_mound_respects|Vous vous agenouillez et présentez vos respects à {s1}, murmurant une prière pour un rapide voyage vers l'au-delà. Il n'y a rien de plus à faire ici.
-menu_burial_mound_oath|Vous prêtez, haut et fort, le serment de venger la mort de {s4}. Vous jurez de traquer sans relâche les forces {s3} et de les détruire. Vos mots ont porté loin avec le vent, et qui sait s'ils n'ont pas été entendus au-delà de la mer ?
+menu_burial_mound_oath|Vous prêtez haut et fort le serment de venger la mort de {s4}. Vous jurez de traquer {s3} sans relâche et de {reg11?la:le} détruire. Vos mots ont porté loin avec le vent, qui sait s'ils n'ont pas été entendus au-delà de la mer ?
 menu_funeral_pyre_oath|Vous prêtez, haut et fort, le serment de venger la mort de {s4}. Vous jurez de traquer sans relâche les forces {s3} et de les détruire. Vos mots ont porté loin avec le vent, qui sait s'ils n'ont pas été entendus au-delà de la mer ?
-mno_leave_pyre_oath|Quitter le bûcher.
 menu_burial_mound_despoil|Vous démolissez le monument de {s1} de vos propres mains et souillez les pierres avec des malédictions, des chants déchus et des actes innommables. Vos partisans restent en retrait par peur de la mort, mais semblent avoir une déférence renouvelée envers votre méchanceté.
-menu_funeral_pyre|Vous approchez des restes carbonisés du bûcher funéraire de {s3} de {s2}, vaincu au combat par les forces de {s28}. Le corps a été brûlé avec cérémonie par ses gardes personnels. Il ne reste rien de valeur.
+menu_funeral_pyre|^Vous approchez des restes carbonisés du bûcher funéraire de {s3} de {s2}, vaincu au combat par les forces de {s28}. Le corps a été brûlé avec cérémonie par ses gardes personnels. Il ne reste rien de valeur.
 mno_leave_pyre|Quitter le bûcher.
 menu_town_ruins|En approchant, vous voyez que {s1} est {s2}
 mno_ruin_menu_0|Explorer la zone.
@@ -440,11 +442,19 @@ mno_ruin_leave|Partir...
 menu_death|Vous avez été tué{/e}. Bien que la guerre se poursuive, vous n'en ferez plus partie.
 menu_animal_ambush|Vous et vos compagnons ont été séparés du reste de votre groupe, lorsque soudain...
 menu_animal_ambush_success|Les {s2} {reg0?tombe:tombent} devant vous comme le blé devant la faux ! Bientôt, tous vos assaillants gisent sur le sol, blessés ou morts. {s3}
-menu_animal_ambush_fail|Les animaux mordent et déchirent vos vêtements {reg0?,: et ceux de {reg2?vos compagnons,:votre compagnon,}} mais par chance vous arrivez à vous dégager. Ils ne devraient plus vous attaquer.
+menu_animal_ambush_fail|Les animaux vous mordent et vous déchirent, mais heureusement, vous avez réussi à les repousser. Espérons qu'ils ne vous attaqueront plus.
 menu_isengard_flooding|^^^^^@Vous êtes entourés d'ennemis morts et d'alliés triomphants, y compris les Ents ; ils rugissent, font du bruit et trompent jusqu'à ce que des pierres se fendent et tombent tout autour de la tour Orthanc. Ils sont comme une tempête hurlante, brisant les piliers, lançant des avalanches de rochers dans les puits, projetant d'énormes dalles de pierre en l'air comme des feuilles... Bregalad (ou Primebranche, comme vous le connaissez) arrive à grands pas et ne s'arrête que pour dire : "{playername} ! Attention, ne vous approchez pas de la tour ! Nous allons bientôt rompre le barrage et amener l'Isen dans cette vallée pendant un petit moment. Je pense que vous aurez du mal à rester debout ici !" Sans attendre, vous suivez son avertissement et vous vous dépêchez de vous éloigner d'Orthanc.^^Vers minuit, Isengard commence à se remplir de ruisseaux et de mares noires. Vous ne pouvez vous empêcher de frissonner en voyant la fumée et la vapeur s'élever en grandes colonnes, et une grande spirale de vapeur s'élever et serpenter autour de la tour, jusqu'à ce qu'elle ressemble à un grand pic de nuages, enflammé en dessous et éclairé par la lune au-dessus. La colère des Ents est lente, mais elle possède une force irrésistible...
 mno_isengard_continue|Continuer
 menu_build_your_scene|Vous pouvez construire votre propre scène de bataille en utilisant l'un des emplacements prévus ci-dessous et le mode d'édition du jeu (vous devez d'abord activer le mode d'édition dans les options de l'écran de lancement de M&B, puis appuyer sur Ctrl+E dans une scène pour accéder au mode d'édition). Vous pourrez ensuite soumettre les scènes que vous avez construites (à savoir, les fichiers sco du dossier TLD/SceneObj) à l'équipe de développement de TLD et, si votre scène est bonne, elle pourra apparaître dans une version ultérieure comme l'un des champs de bataille aléatoires !^^ Essayez de spécifier la région de la carte où vous voulez que votre scène apparaisse.^ Quelques conseils : évitez les eaux profondes, les montagnes escarpées et autres endroits infranchissables, à moins que vous n'ayez l'expérience de la construction de scènes et que vous sachiez comment empêcher les troupes d'IA de marcher là où vous ne voulez pas qu'elles aillent, et faire des maillages d'IA dans d'autres endroits.^ (Les entrées #0-1 sont pour les attaquants, #4 pour les défenseurs, ne touchez pas aux entrées #5-8)
 mno_back_3dot|Retour...
+menu_wott_expelled_from_faction|Pour votre trahison, vous avez été expulsé{/e} de votre faction et {s11} vous a déclaré hors-la-loi et ennemi{/e} {reg11?de la Main:de l'Oeil}. En tant qu'exilé{/e}, vous êtes désormais contraint{/e} de rejoindre {s3}.
+menu_wott_stay_with_faction|{s11} salue votre sage conseil. Votre faction suit votre exemple et rejoint collectivement {s12}.
+menu_fulfilled_oath_personal|^Alors que {s5} gît dans la poussière devant vous, un lourd fardeau est retiré de vos épaules. La mort de {s6} a été vengée !
+menu_fulfilled_oath_personal_nokill|^Vos troupes reconnaissent que vous avez vaincu {s10} à plusieurs reprises et que vous devez être considéré à juste titre comme son pire ennemi. Votre serment est considéré comme accompli. ^^L'ennemi a payé cher le meurtre de {s11}. Pourtant, cette victoire a un goût amer.
+menu_oath_quest_fail|Vous avez prêté un serment solennel et vous avez lamentablement échoué à le respecter. Vos ennemis se moquent de votre échec, et tous vos amis souffrent de la honte que vous leur avez infligée. Dans tous les royaumes de la Terre du Milieu, vous serez connu{/e} comme parjure.
+menu_campaign_won|^^^Merci de jouer à The Last Days of the Third Age !
+mno_credits_tld|Crédits de TLD
+mno_exit_game2|Retour au menu principal
 mno_back|Retour.
 mno_next|Suivante...
 mno_previous|Précédent...

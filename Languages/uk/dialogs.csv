@@ -128,8 +128,9 @@ dlga_member_question_2:member_health|Як ваше здоров'я?
 dlga_member_question_2:member_background_recap|Розкажіть мені ще раз свою історію.
 dlga_member_background_recap_3:do_member_trade|Незабаром після цього я приєднався до вас.
 dlga_do_member_view_char:member_talk|Щось ще?
-dlga_start:close_window.11|Давай підемо, коли ти будеш готовий.
-dlga_start:close_window.12|Будь ласка, більше не витрачайте мій час сьогодні. Можливо, ми побачимося пізніше.
+; dlga_start:close_window.11|It has been an honor to fight with you, {playername}.
+dlga_start:close_window.12|Давай підемо, коли ти будеш готовий.
+dlga_start:close_window.13|Будь ласка, більше не витрачайте мій час сьогодні. Можливо, ми побачимося пізніше.
 dlga_companion_recruit_signup_response:close_window|Шкодую, я не можу прийняти в свій загін першого зустрічного.
 dlga_companion_recruit_rank:close_window|Здається, ви не заслужили визнання мого народу, {playername}. Ваш ранг - {s29}, а повинен бути {s24}, щоб я приєднався до вас [потрібно ще {reg3} очок рангу]. ^ Повертайтеся знову, коли будете краще підготовлені.
 dlga_companion_recruit_rank:companion_recruit_payment.1|Я радий бачити, що ви тепер {s29}, і я бажаю приєднатися до вас.
@@ -183,6 +184,13 @@ dlga_companion_home_description:close_window.1|Я вважаю за краще, 
 dlga_start:player_hire_troop|{s33}^^Я відповідаю за підготовку місцевого гарнізону {s21}. Ви хотіли мене бачити?
 dlga_player_hire_troop:player_hire_troop_give|Деякі з солдатів моєї групи більше знадобляться для оборони твердині {s21}.
 dlga_player_hire_troop:close_window|Я хочу провести огляд моїх солдатів, залишених тут.
+; dlga_player_hire_troop:player_hire_captain_1|{s6}
+; dlga_player_hire_captain_1:player_hire_captain_2|I have one {s5} in my garrison that might be willing to serve under your command and help you organize your party. But he will be missed here. [costs {reg21} influence]
+; dlga_player_hire_captain_1:close_window|You are a mere {s24}. What would you do with a captain?
+; dlga_player_hire_captain_1:close_window.1|No, I can't spare anyone at the moment.
+; dlga_player_hire_captain_2:player_hire_captain_3|I will have him.
+dlga_player_hire_captain_2:close_window|Я передумав
+; dlga_player_hire_captain_3:close_window|He will serve you well.
 dlga_player_hire_troop:player_hire_trolls_take|Я полководець, гідний бойового Троля - дайте мені одного!
 dlga_player_hire_trolls_take:close_window|Хочете підняти власний Чорний легіон? Поверніться, коли зможете додати дорослого троля у свої ряди.
 dlga_player_hire_trolls_take:close_window.1|Ти? Ти нікчемний черв'як. Геть з моїх очей. Щоб отримати Бойового троля. (Ваш ранг повинен бути {s24} або вище)
@@ -192,7 +200,7 @@ dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|Страшний з�
 dlga_player_hire_trolls_how_many:player_hire_troll_armoured|У битвах, з захисними пластинами з заліза, вони будуть краще захищені. Так і зроби!
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|Я передумав
 dlga_player_hire_troll_buy_not_enough:close_window|Даремно витрачаю час ...
-dlga_player_hire_troll_buy_done:close_window|Тепер гарненько подбай про цього здорованя, і він подбає про тебе! Ха!
+; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha! He has not seen battle yet. Be aware that he may panick and ignore your orders.
 dlga_player_hire_troop:close_window.1|Мені потрібно потренуватися.
 dlga_player_hire_troop:tld_sell_prisoners|Я маю кілька полонених...
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Давайте поглянемо на цих покидьків.
@@ -225,6 +233,8 @@ dlga_player_siege_ask_leave_unmolested_reject:close_window|Ми будемо з�
 dlga_defeat_lord_answer:defeat_lord_answer_1|Тепер ти мій бранець.
 dlga_defeat_lord_answer_1:close_window|Я здаюся на вашу милість.
 dlga_defeat_lord_answer:defeat_lord_answer_2|Ти добре бився. Я дарую тобі свободу.
+; dlga_defeat_lord_answer_vengeance:defeat_lord_answer_vengeance_1|{s5}! You killed {s6} and I have sworn to avenge {reg11?her:him}. I hearby fulfill my oath. You will die now!
+dlga_defeat_lord_answer_vengeance_1:close_window|Одного разу, ви заплатите за це... Аааггллр!..
 dlga_start:party_encounter_lord_hostile_attacker|{playername}!
 dlga_start:party_encounter_lord_hostile_attacker.1|Стійте!
 dlga_party_encounter_lord_hostile_attacker_2:party_encounter_offer_dont_fight|Ми можемо уникнути битви? Я не хочу битися з вами.
@@ -232,9 +242,10 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|Не атакуйте!
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|Ми будемо боротися до кінця!
 dlga_party_encounter_offer_dont_fight:close_window|Я в боргу перед тобою, чи не так? Що ж... тоді добре. Цього разу я тебе відпущу.
 dlga_party_encounter_offer_dont_fight:close_window.1|Ха-ха. Але я буду боротися з тобою.
-; dlga_start:close_window.13|Mmmh...
-; dlga_start:close_window.14|The lord is in deep thought and must not be disturbed!
-dlga_start:close_window.15|Забирайся звідси, мерзенний жебрак.
+; dlga_start:close_window.14|Mmmh...
+; dlga_start:close_window.15|The lord is in deep thought and must not be disturbed!
+; dlga_start:close_window.16|Hail {playername}, {s24}!
+dlga_start:close_window.17|Забирайся звідси, мерзенний жебрак.
 dlga_start:lord_start|Чи не {playername} це випадком, мій хоробрий боєць...
 dlga_start:lord_start.1|Радий знову тебе бачити, {playername}...
 dlga_start:lord_start.2|Ми знову зустрілися, {playername}...
@@ -245,6 +256,9 @@ dlga_lord_meet_enemy:lord_intro|Я {playername}.
 dlga_lord_meet_enemy:lord_intro.1|Мене знають під ім'ям {playername}. Зменшіть славу, ви повинні були чути про мене.
 dlga_start:lord_start.3|Що ж, {playername}...
 dlga_lord_start:lord_generic_mission_completed|Твій лікар переконав мого друга, що йому потрібне лікування і прооперував його. Нам залишається тільки молитися про його якнайшвидшому одужанні. Так чи інакше, я вдячний тобі за послуги лікаря, {playername}. У тебе є дух шляхетності. Я не забуду цього.
+; dlga_lord_start:lord_oath_of_vengeance_fulfilled|{playername}, I see you return from your campaign against Moria and Gundabad! What news do you bring?
+; dlga_lord_oath_of_vengeance_fulfilled:lord_oath_of_vengeance_fulfilled1|My lord, I have pursued and ravaged the orc scum, destroying and routing their armies wherever I found them. They tremble with fear and hide in their deepest caves. Balin and his followers have been avenged!
+; dlga_lord_oath_of_vengeance_fulfilled1:close_window|You have accomplished more than I could ever have hoped for. Thanks to you, vengeance is ours! The fear and shame of our enemies fills our hearts with satisfaction! I name you Oathkeeper. Go now with the gratitude of Aules' people.
 dlga_lord_start:lord_investigate_fangorn_completed0|Отже, {playername}, ви щойно з Фанґорну. Що ж в там дізналися?
 dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|Дерева - живі! Вони нападають на наших воїнів!
 dlga_lord_investigate_fangorn_completed1:close_window|Я підозрював це. Ви мені добре послужили, {playername}.
@@ -343,16 +357,20 @@ dlga_lord_talk:dwarf_lord_book|{s3}, важливе питання вимага�
 dlga_dwarf_lord_book:dwarf_lord_book_give|Кажи без страху, {playername}.
 dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|Я спускався глибоко в шахти Морії і знайшов записи про загін Баліна.
 dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|Ти говориш про моїх братів так, ніби їх немає серед живих. Це так?
-dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|Боюся що так. Я б зміг дізнатися більше, але на мене напали гобліни, і їм не було числа. Я приніс тільки це...
-dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|Нам не вибратися! Не вибратися... вони йдуть!
+; dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_d|I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. Yet I found a tomb with Balin's name inscribed on the lid...
 dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|Як я і боявся. Я намагався відрадити Баліна від цього походу, але безуспішно. Дурістю з мого боку було дозволити йому піти туди.
 dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|Ви надали Еребору велику послугу, {playername}, і не підете без нагороди.
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|Дякую, {s3}.
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|Що робитимеш далі?
 dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|Ми не дамо вбивцям наших братів піти безкарними. Ми принесемо загибель і руйнування тим, хто так поранив нас. Від вершин Ґундабада і до глибин Казад-Думу проллється багато крові гоблінів!
-dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, Я збираюся допомогти людям {s4} помститися за Баліна і його воїнів.
+dlga_dwarf_lord_book_give_i:dwarf_lord_book_give_j|{s3}, Я збираюся допомогти людям {s4} помститися за Баліна і його воїнів.
 dlga_dwarf_lord_book_give_i:lord_pretalk|Бажаю тобі удачі в цій справі.
-dlga_dwarf_lord_avenge:close_window|Дуже добре, {playername}. Іди з благословенням народу Дуріна і принеси смерть нашим ворогам. Нехай вони пізнають біль і страх не менші, ніж довелося пізнати нашим братам.
+; dlga_dwarf_lord_book_give_j:lord_pretalk|I have heard that you have already made a vow of vengeance. It would be unwise to divide your strength between two vows. I am afraid I cannot accept your offer.
+; dlga_dwarf_lord_book_give_j:dwarf_lord_book_give_k|Such a promise is not lightly given, {playername}. If you swear to avenge my kin, I will take you by the word. Are you ready to pledge an oath of vengeance against the goblin filth of the mountains?
+; dlga_dwarf_lord_book_give_k:dwarf_lord_book_give_l|I swear!
+; dlga_dwarf_lord_book_give_k:lord_pretalk|I understand. I am afraid I have other pressing obligations. Yet I wish you the best of luck in your fight against the orcs.
+; dlga_dwarf_lord_book_give_l:dwarf_lord_book_give_m|I swear not to rest and to bring death and destruction to all the orcs of the mountains before this moon wanes and rises again!
+dlga_dwarf_lord_book_give_m:close_window|Дуже добре, {playername}. Іди з благословенням народу Дуріна і принеси смерть нашим ворогам. Нехай вони пізнають біль і страх не менші, ніж довелося пізнати нашим братам.
 dlga_lord_talk:find_lost_spears_permission|Пане, я хочу увійти у підземелля Самотньої гори для пошуків втрачених копій короля Бладортіна.
 dlga_find_lost_spears_permission:lord_pretalk|Я вже дав тобі дозвіл, {playername}.
 dlga_find_lost_spears_permission:find_lost_spears_permission_yes|Добре, {playername}, ти можеш увійти в підземелля.
@@ -644,7 +662,7 @@ dlga_start:castle_guard_players|Який буде наказ, Командире
 dlga_castle_guard_players:close_window|Відкрий двері. Мені потрібно увійти.
 dlga_castle_guard_players:close_window.1|Не зважай.
 dlga_start:castle_guard_sneaked_intro_1|Геть звідси, жебрак! Ти смердиш!
-dlga_start:close_window.16|Забирайся, поки моє терпіння не скінчилося, жебрак!
+dlga_start:close_window.18|Забирайся, поки моє терпіння не скінчилося, жебрак!
 dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|Я хочу увійти в зал і поговорити з володарем.
 dlga_castle_guard_sneaked_intro_1:close_window|[Піти]
 dlga_castle_guard_sneaked_intro_2:close_window|Агов ти, що {здурів, мужик/з'їхала з глузду, бабо}? Жебраків не пускають у тронний зал. Забирайся, або я з тебе відбивну зроблю.
@@ -740,8 +758,8 @@ dlga_sad_elf_2:sad_elf_choice|Вісті з моря. І з далеких бе�
 dlga_sad_elf_choice:sad_elf_leave|Я відчуваю твій біль. Ти сповна розділив з нами тяготи цієї війни. Можеш вирушати.
 dlga_sad_elf_choice:sad_elf_no|Ельфи не повинні покидати Середзем'я на розтерзання темряві. У цій війні ми боремося не за себе, і кожен повинен зіграти свою роль. Я не можу дозволити тобі піти. [Потрібно досить Лідерства]
 dlga_sad_elf_leave:close_window|Дякую тобі, {мій пане/моя пані}!^^До моря, до моря! Під крики білих чайок,^під завивання вітру, і під бризки білої піни.^Вперед, на захід, назустріч при західного сонця!
-dlga_start:close_window.17|Ти якраз вчасно. Давай об'єднаємо наші війська і дамо ворогові хороший урок.
-dlga_start:close_window.18|Ти робиш велику помилку, намагаючись протистояти нам.
+dlga_start:close_window.19|Ти якраз вчасно. Давай об'єднаємо наші війська і дамо ворогові хороший урок.
+dlga_start:close_window.20|Ти робиш велику помилку, намагаючись протистояти нам.
 dlga_start:ally_thanks_meet|Ось вже не думав, що несподівано знайду друга. Ви дійсно врятували мені життя, а я так і не дізнався вашого імені...
 dlga_start:ally_thanks_meet.1|Твоя допомога була дуже доречною, незнайом цю-ка. Мене звуть {s1}. Можу я дізнатися твоє ім'я?
 dlga_start:ally_thanks_meet.2|Дякую за допомогу, незнайом цю-ка. Нам ще не доводилося зустрічатися, чи не так? Як тебе звати?
@@ -749,13 +767,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|Мене звуть {playername}.
 dlga_ally_thanks_meet_2:close_window|Радий зустрічі, {playername}. Мене звуть {s1}, і я навічно у тебе в боргу. Якщо є щось таке, чим я зможу тобі допомогти, просто дай мені знати...
 dlga_ally_thanks_meet_2:close_window.1|Радий зустрічі, {playername}. Тепер я в боргу перед тобою. Сподіваюся, одного разу я зумію відплатити тобі тим же.
 dlga_ally_thanks_meet_2:close_window.2|Радий зустрічі, {playername}. Я {s1}. Дякую за твою допомогу. Сподіваюся, ми ще зустрінемося.
-dlga_start:close_window.19|Ти знову врятува в-ла наші голови, {playername}! Ти й справді найкращий союзник. {S43}
-dlga_start:close_window.20|Ви з'явилися у скрутний час, {playername}! Прийміть мою щиру подяку! {s43}
-dlga_start:close_window.21|Ви з'явилися як ніколи вчасно, {playername}. Я не забуду вашу допомогу. {s43}
-dlga_start:close_window.22|Радий бачити тебе, {playername}. {s43}
-dlga_start:close_window.25|Дякую за допомогу, Командире. Ви врятували {reg1?Нам життя:мені життя}.
-dlga_start:close_window.26|Дякую за допомогу, Командире. Все складалося для нас дуже невдало, але, коли ви з'явилися, ми змогли переломити хід битви.
-dlga_start:close_window.27|Дякую за допомогу, Командире. Те, що ви були неподалік - велика удача.
+dlga_start:close_window.21|Ти знову врятува в-ла наші голови, {playername}! Ти й справді найкращий союзник. {S43}
+dlga_start:close_window.22|Ви з'явилися у скрутний час, {playername}! Прийміть мою щиру подяку! {s43}
+dlga_start:close_window.23|Ви з'явилися як ніколи вчасно, {playername}. Я не забуду вашу допомогу. {s43}
+dlga_start:close_window.24|Радий бачити тебе, {playername}. {s43}
+dlga_start:close_window.27|Дякую за допомогу, Командире. Ви врятували {reg1?Нам життя:мені життя}.
+dlga_start:close_window.28|Дякую за допомогу, Командире. Все складалося для нас дуже невдало, але, коли ви з'явилися, ми змогли переломити хід битви.
+dlga_start:close_window.29|Дякую за допомогу, Командире. Те, що ви були неподалік - велика удача.
 dlga_start:freed_hero_answer|Ти звільни в-ла мене. Я у тебе в боргу,мій друже.
 dlga_freed_hero_answer:freed_hero_answer_1|Ти нікуди не підеш. Тепер ти мій бранець!
 dlga_freed_hero_answer_1:close_window|На жаль мені. Невже удача не посміхнеться мені?
@@ -849,7 +867,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|Лук.
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|Метальна зброя.
 dlga_trainer_choose_weapon_player:trainer_pretalk|Ні, я передума "ла-в".
 dlga_trainer_begin_training:close_window|Добре, ось вам зброя. Коли закінчите тренування, повертайтеся і поговоріть зі мною.
-dlga_start:close_window.28|Забирайся звідси, мерзенний жебрак.
+dlga_start:close_window.30|Забирайся звідси, мерзенний жебрак.
 dlga_start:mayor_begin|Доброго дня, "моя пані - мій пане".
 dlga_start:mayor_talk|Вітаю тебе, мандрівнику. Здається, ви вперше прибули у {s9}. Я управитель цього міста.
 dlga_start:mayor_begin.1|Добрий день, {playername}.
@@ -935,8 +953,8 @@ dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|Я збираюс�
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Гаразд. Я супроводжу обоз.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Боюся, у мене недостатньо воїнів.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Вибачте, я не можу зайнятися цим прямо зараз.
-dlga_start:close_window.29|Ми можемо подолати решту шляху самостійно. Дякую.
-dlga_start:close_window.30|Що ж, {s21} вже недалеко. Ми можемо подолати решту шляху самостійно. Дякую, що захистили нас. Нехай щастить.^^[отримано {reg14} очок постачання фракції {s14}]
+dlga_start:close_window.31|Ми можемо подолати решту шляху самостійно. Дякую.
+dlga_start:close_window.32|Що ж, {s21} вже недалеко. Ми можемо подолати решту шляху самостійно. Дякую, що захистили нас. Нехай щастить.^^[отримано {reg14} очок постачання фракції {s14}]
 dlga_start:merchant_caravan_intro_1|Вітаю. Ви будете нас супроводжувати, так?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Так. Мене звуть {playername}. Я поведу вас у {s1}.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Що ж, приємно чути, що ми будемо подорожувати не поодинці. Що нам потрібно робити, як ви вважаєте?
@@ -986,7 +1004,7 @@ dlga_prisoner_chat_3:prisoner_slaughter|Тобі доведеться стати
 dlga_prisoner_chat_4:close_window|Ага, як ніби я в змозі втекти! Відчепіться від мене!
 dlga_prisoner_slaughter:prisoner_slaughter_02|Одного разу, ви заплатите за це!
 dlga_prisoner_slaughter:close_window|Одного разу, ви заплатите за це... Аааггллр!..
-dlga_start:close_window.31|Забирайся звідси, мерзенний жебрак.
+dlga_start:close_window.33|Забирайся звідси, мерзенний жебрак.
 dlga_start:town_merchant_talk|Вітаю, Командире. Як я можу вам сьогодні служити?
 dlga_start:town_merchant_talk.1|Доброго дня. Чим можу допомогти?
 dlga_town_merchant_talk:trade_requested_weapons|Я хочу запросити нове спорядження. Покажіть мені, що у вас на складі.
@@ -1012,7 +1030,9 @@ dlga_town_merchant_talk:close_window|До побачення.
 dlga_start:town_dweller_talk|Вибачте?
 dlga_start:town_dweller_talk.1|Добрий день, Командире.
 ; dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?
-; dlga_town_dweller_ask_fugitive:close_window|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
+; dlga_town_dweller_ask_fugitive:close_window|I don't know you. For all I care, you are that suspicious stranger to me!
+; dlga_town_dweller_ask_fugitive:close_window.1|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
+; dlga_town_dweller_ask_fugitive:close_window.2|No, I haven't seen anyone.
 dlga_town_dweller_talk:town_dweller_ask_info|Що ви можете розповісти про це село?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Що ви можете розповісти про це місце?
 dlga_town_dweller_talk:town_dweller_talk|Ну і як тут живеться?
@@ -1029,19 +1049,20 @@ dlga_town_dweller_brawl:town_dweller_brawl_confirm|Ти мені погрожу�
 dlga_town_dweller_brawl_confirm:close_window|О, невже? Давай подивимося, що у тебе є
 dlga_town_dweller_brawl_confirm:close_window.1|Ні, я вас переплутав з деким іншим.
 dlga_town_dweller_talk:close_window|[Піти]
-; dlga_start:close_window.32|Get lost!
-; dlga_start:close_window.33|Leave me alone!
+; dlga_start:close_window.34|Hail {playername}, {s24}!
+; dlga_start:close_window.35|Get lost!
+; dlga_start:close_window.36|Leave me alone!
 dlga_start:player_castle_guard_talk|Так, Командире?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|Як проходить варта, воїне?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Все тихо, Командире. Доповідати нічого.
 dlga_player_castle_guard_talk_3:close_window|Добре. Тримайте очі відкритими.
-; dlga_start:close_window.34|Good day, {s24}. It's good having you here in {s10}.
-dlga_start:close_window.35|Стеж за своєю поведінкою - і не буде ніяких проблем.
+; dlga_start:close_window.37|Good day, {s24}. It's good having you here in {s10}.
+dlga_start:close_window.38|Стеж за своєю поведінкою - і не буде ніяких проблем.
 dlga_start:hall_guard_easter_egg|Ах, тільки за північ - ось і все. До речі, днями сталося дивовижне пригода - не бажаєте послухати?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Так, продовжуй.
 dlga_hall_guard_easter_egg:close_window|Ні, мене не хвилюють плітки.
 dlga_hall_guard_easter_egg_scene:close_window|Що ж... Прибула незвичайна компанія шукачів пригод: людина, гном та ельф - а в же потім...
-dlga_start:close_window.36|Нам не можна розмовляти на посаді, Командире.
+dlga_start:close_window.39|Нам не можна розмовляти на посаді, Командире.
 dlga_enemy_defeated:close_window|Аргх! Ненавиджу це.
 dlga_party_relieved:close_window|Дуже дякую, що допомогли нам впоратися з цими виродками.
 dlga_member_chat_00:close_window.1|^^ГАРЧАННЯ!^^
@@ -1074,32 +1095,32 @@ dlga_party_reinforce:party_reinforce_end.2|На жаль, під вашим по
 dlga_party_reinforce_check:party_reinforce_check_1|Зараз я перевірю списки воїнів...
 dlga_party_reinforce_check_1:party_reinforce_end|Отже ви передумали... ^Як я бачу.
 dlga_party_reinforce_check_1:party_reinforce_end.1|Від цих воїнів нам немає ніякого пуття. ^Заберіть їх назад.
-dlga_start:close_window.37|Ти затримуєш мене! Чаклуни ніколи не спізнюються!
-dlga_start:close_window.38|Ти затримуєш мене! Чаклуни ніколи не спізнюються!
-dlga_start:close_window.39|Воно... вабить до с-с-с-с-себе...
+dlga_start:close_window.40|Ти затримуєш мене! Чаклуни ніколи не спізнюються!
+dlga_start:close_window.41|Ти затримуєш мене! Чаклуни ніколи не спізнюються!
+dlga_start:close_window.42|Воно... вабить до с-с-с-с-себе...
 dlga_start:secret_guardian_let_through|Стійте!
 dlga_secret_guardian_let_through:secret_guardian_let_through1|Я{імя гравця},{s24}. Відпустіть мене!
 dlga_secret_guardian_let_through1:close_window|Так, командире, ви можете йти.
-dlga_start:close_window.41|Агов ти! Ти там живий? Ти, що! Тут небезпечно ходити одному! Ось візьми це!
+dlga_start:close_window.44|Агов ти! Ти там живий? Ти, що! Тут небезпечно ходити одному! Ось візьми це!
 dlga_start:ori_choose_1|Ти добре бився, брате! Не знаю як тобі вдавалося залишатися в живих так довго. Я пам'ятаю що ти не так давно з нами... як раз з того дня як впав Балін... Звідки ти?
 dlga_ori_choose_1:ori_choose_finish|Я був слідопитом, відправленим в ліс поруч з Ведмежим народом. Я Нещодавно почув про похід Баліна і приєднався.
 dlga_ori_choose_1:ori_choose_finish.1|Я далекий родич, колишній охоронець з далекої шахти. Я багато чув про Баліна і вирішив піти з ним.
 dlga_ori_choose_1:ori_choose_finish.2|Я - з Залізних Горбів, ветеран багатьох битв, і рудокоп в мирний час. Я відправився з Баліном, щоб вбивати орків.
 dlga_ori_choose_finish:close_window|Радий знайомству! Я знайшов це, тобі якраз підійде. Ми закріпимося тут і постараємося забрати якомога більше з них з собою!
-dlga_start:close_window.42|Схоже що ти скинув з себе стару іржу і готовий до цієї бійки, вірно? Ось, ковтни цього. Відчуєш себе краще. Нові сили орків наближаються!
-dlga_start:close_window.43|Знімай свої обдерте лахміття і одягай ось це. Ось цим ти будеш захищений трохи краще. Ці орки боляче кусаються!
-dlga_start:close_window.44|Щось величезне наближається! Приготуйтеся!
-dlga_start:close_window.45|Їх занадто багато... але ми - народ Дуріна!
-dlga_start:close_window.46|Ці орки розкрили розлом, набитий скарбами. Ось що я знайшов, тепер ми їм покажемо!
-dlga_start:close_window.47|Ні.... Я чую їх... вони зовні! Вони всюди!
-dlga_start:close_window.48|Тут... Наш пан Балін... ти гідний всього цього...
+dlga_start:close_window.45|Схоже що ти скинув з себе стару іржу і готовий до цієї бійки, вірно? Ось, ковтни цього. Відчуєш себе краще. Нові сили орків наближаються!
+dlga_start:close_window.46|Знімай свої обдерте лахміття і одягай ось це. Ось цим ти будеш захищений трохи краще. Ці орки боляче кусаються!
+dlga_start:close_window.47|Щось величезне наближається! Приготуйтеся!
+dlga_start:close_window.48|Їх занадто багато... але ми - народ Дуріна!
+dlga_start:close_window.49|Ці орки розкрили розлом, набитий скарбами. Ось що я знайшов, тепер ми їм покажемо!
+dlga_start:close_window.50|Ні.... Я чую їх... вони зовні! Вони всюди!
+dlga_start:close_window.51|Тут... Наш пан Балін... ти гідний всього цього...
 dlga_start:party_encounter_hostile_attacker|У вас немає жодних шансів вистояти проти нас. Здавайтеся негайно, або ми всіх вас повбиваємо...
 dlga_party_encounter_hostile_attacker:close_window|Не атакуйте! Ми здаємося.
 dlga_party_encounter_hostile_attacker:close_window.1|Ми будемо боротися до кінця!
 dlga_start:party_encounter_hostile_defender|Що ви хочете?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Здайся або помри!
 dlga_party_encounter_hostile_defender:close_window|Нічого. Ми залишимо вас у спокої.
-dlga_start:close_window.50|* Мовчки дивиться на вас *
+dlga_start:close_window.53|* Мовчки дивиться на вас *
 dlga_start:battle_reason_stated|Здайся або помри. Обирай!
 dlga_battle_reason_stated:close_window|Я тебе не боюся. Я буду боротися.
 dlga_start:free|Вітаю. Що я можу зробити для тебе?

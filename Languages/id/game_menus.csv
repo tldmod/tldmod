@@ -20,7 +20,6 @@ mno_custom_battle_scenario_7|Penyergapan, Orcs vs Mirkwood
 mno_custom_battle_scenario_8|Pertahanan terakhir rakyat Durin
 mno_custom_battle_scenario_88|Mengejar seekor Orc Scout Parti
 mno_custom_battle_scenario_11|Uji pertempuran (Laraskan Keseimbangan!)
-mno_custom_battle_scenario_10|Uji scenery battle
 mno_troll_battle_scenario|Uji Pertempuran Troll
 mno_warg_battle_scenario|Uji Pertempuran Warg
 mno_build_your_own_scene|Buat adegan kamu sendiri untuk TLD
@@ -197,7 +196,7 @@ menu_cattle_herd|Anda bertemu dengan beberapa orang.
 mno_cattle_drive_away|Perintahkan mereka untuk mengikuti.
 mno_cattle_stop|Bawa mereka untuk berheenti.
 mno_leave|Pergi.
-menu_simple_encounter|^^^^^{s2}^Anda memiliki pasukan {reg22} yang siap berperang melawan {reg11} mereka.^^Pertempuran berlangsung di {s3}{s4}.^^Perintah Anda?
+; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.{s17}^^Your orders?
 ; mno_encounter_attack|{reg21?Charge them:Prepare to face them}.
 mno_encounter_order_attack|Perintahkan pasukanmu untuk {reg21?attack:face them} tanpamu.
 mno_control_allies_menu|Gunakan pengaruh untuk memerintah sekutu Anda di lapangan.
@@ -232,7 +231,7 @@ mno_pre_join_help_attackers|Pindah untuk membantu {s2}.
 mno_pre_join_help_defenders|Terburu-buru untuk membantu {s1}.
 mno_pre_join_help_refugees|Terburu-buru untuk membantu {s1}.
 mno_pre_join_leave|Jangan terlibat.
-menu_join_battle|^^^Anda membantu {s2} melawan {s1}.^ Anda memiliki pasukan {reg22} yang cocok untuk bertempur melawan {reg11} musuh.^^Pertempuran berlangsung di {s3}{s4}.
+; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}. {s17}
 mno_join_attack|Serang musuh.
 mno_join_order_attack|Perintahkan pasukan Anda untuk menyerang bersama sekutu Anda saat Anda mundur.
 mno_control_allies_join_menu|Gunakan pengaruh untuk memerintah sekutu Anda di lapangan.
@@ -251,14 +250,16 @@ menu_join_siege_outside|^^^^^^{s1} telah dikepung oleh {s2}.
 mno_approach_besiegers|Dekati kamp pengepungan.
 mno_pass_through_siege|Lewati garis pengepungan dan masuk ke {s1}.
 menu_cut_siege_without_fight|Para pengepung membiarkan Anda mendekati gerbang tanpa halangan.
-menu_besiegers_camp_with_allies|{s1} masih dikepung. Dengan bendera {s2} berkibar di atas kamp pengepungan, tempat Anda dan pasukan Anda disambut.
+; menu_besiegers_camp_with_allies|{s1} is under siege. The banners of {s2} fly above the camp of the besiegers, who are preparing for their next assault. {s17}
 mno_talk_to_siege_commander|Minta pertemuan dengan komandan.
 mno_join_siege_with_allies|Bergabunglah dengan serangan berikutnya.
 mno_join_siege_stay_back|Perintahkan tentara Anda untuk bergabung dalam serangan berikutnya tanpa Anda.
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+; menu_moria_must_escape|^^Here lies Balin, Lord of Moria. With some trouble, you can decipher these words on the shattered remains of the tomb.  They tell tale of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Temukan jalan keluarmu!
+; menu_moria_escape_sucess|^^After countless hours in the darkness, you finally find a staircase that leads up.  At first it is barely noticeable, but it steadily gets lighter. Finally — a junction that you remember. After a few more steps, you are out in the open.  Your troops have been waiting anxiously for you and can't wait to leave this valley as quickly as possible.
+; mno_moria_exit_found|Get out of here!
 menu_castle_outside|Kamu berada di luar {s2}.{s11} {s3} {s4}
-mno_cheat_steal_book_door|Dapatkan bukunya
+; mno_cheat_steal_book_door|Inspect the tomb...
 ; mno_moria_enter|Return into main hall of Moria through the secret entrance
 mno_moria_enter_door|Masuk ke Moria.
 mno_castle_start_siege|Kepung {reg6?town:castle}.
@@ -285,7 +286,7 @@ mno_siege_defender_troops_join_battle|Perintahkan anak buahmu untuk bergabung da
 mno_siege_defender_do_not_join_battle|Jangan terlibat.
 menu_siege_join_defense|{s4}^^Korban Anda: {s8}^^Korban sekutu: {s9}^^Korban musuh: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Pukulan keras dari buronan mengirimmu ke tanah, dan penglihatanmu berputar dan menjadi gelap. Waktu berlalu. Ketika Anda membuka mata lagi, Anda mendapati diri Anda babak belur dan berdarah, tetapi untungnya tidak ada satu pun luka yang tampak mematikan.
-menu_town_bandits_succeeded|^^^^^Para goblin jatuh di hadapanmu seperti gandum yang disabit! Segera Anda berdiri sendiri sementara sebagian besar penyerang Anda tidak sadarkan diri, mati atau sekarat. Tentunya penduduk setempat akan sangat berterima kasih karena Anda menyelamatkan mereka dari ancaman ini.
+; menu_town_bandits_succeeded|^^^^^The bandits fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
 menu_town_brawl_lost|^^^^^^Kau pingsan. Orang-orang yang Anda serang dengan cepat mencari barang berharga Anda, sebelum melanjutkan urusan sehari-hari mereka.
 menu_town_brawl_won|^^^^^Anda telah mengalahkan semua lawan dan penjaga yang dikirim untuk memadamkan gangguan. Anda segera menggeledah mereka untuk mendapatkan barang-barang berharga, lalu menghilang hingga emosi mereda.^Mungkin lain kali mereka akan lebih menunjukkan rasa hormat dan mundur.
 menu_close|Tidak ada.
@@ -334,13 +335,15 @@ menu_sneak_into_town_caught_dispersed_guards|Anda mengusir penjaga dan menutupi 
 menu_sneak_into_town_caught_ran_away|Anda kembali melewati gerbang dan segera mundur ke tempat aman di luar kota.
 menu_tld_player_defeated|^^^^^ Tiba-tiba rasa sakit yang luar biasa meledak di bagian belakang kepala Anda! \\ Kamu menggigil, karena seluruh dunia menjadi gelap di sekitarmu...^Apakah ini akhirmu?
 menu_recover_after_death_fangorn|Kamu bangun. Hutan masih ada di sekitarmu. Setiap tulang terasa sakit. Anda masih hidup, karena keajaiban.^^Itu adalah kekalahan, tapi setidaknya Anda bisa melihat apa yang terjadi. ^Sekarang kamu tahu apa yang terjadi di hutan terkutuk ini,^dan kamu selamat untuk menceritakannya. ^^ Akankah ada yang percaya padamu?
-menu_recover_after_death_moria|^^^^^Anda mendapatkan kembali kesadaran Anda. Anda berbaring di tanah lunak, udara segar menerpa wajah Anda. Kamu di luar!^Para Orc pasti mengira kamu sudah mati dan melemparkanmu ke dalam lubang keruh.^Kamu pasti dibawa ke permukaan melalui sungai bawah tanah.
+; menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream. Your party was attacked while waiting for your return.
 mno_whatever|Bangun!
 menu_recover_after_death_default|^^^^^Anda mendapatkan kembali kesadaran Anda. Anda berbaring di tempat Anda jatuh. Musuh pasti telah menganggapmu mati dan meninggalkanmu di sana. Namun, tampaknya tidak ada satu pun luka Anda yang mematikan, dan meskipun Anda merasa tidak enak, Anda menyadari bahwa Anda masih bisa berjalan. Anda bangun dan mencoba mencari orang lain yang selamat dari pesta Anda.
 menu_recover_after_death_town|^^^^Anda mendapatkan kembali kesadaran Anda dan menemukan diri Anda berada di pinggiran kota. Kamu hidup! Tidak ada orang di sekitar dan Anda mengambil kesempatan untuk menyeret diri Anda keluar kota. Tampaknya tidak ada luka Anda yang mematikan, dan meskipun Anda merasa tidak enak, Anda masih bisa berjalan.
 menu_recover_after_death_town_alone|Anda mendapatkan kembali kesadaran Anda dan menemukan diri Anda berada di pinggiran kota. Kamu hidup! Tidak ada orang di sekitar dan Anda mengambil kesempatan untuk menyeret diri Anda keluar kota. Teman Anda menemukan Anda. Tampaknya tidak ada luka Anda yang mematikan, dan meskipun Anda merasa tidak enak, Anda masih bisa berjalan.
 menu_notification_center_under_siege|{s1} telah dikepung oleh {s2} dari {s3}!
 menu_notification_one_side_left|^^^^^Perang Cincin telah berakhir!^^Para {s1} telah mengalahkan semua musuh mereka dan menang!
+; mno_go_to_capital|Visit your capital and celebrate the victory...
+; mno_exit_game1|Exit
 menu_notification_total_defeat|^^^^^Perang Cincin telah berakhir untuk Anda!^^Para {s1} telah dikalahkan oleh musuh mereka dan Anda berdiri sendiri dalam kekalahan!
 menu_notification_your_faction_collapsed|^^^^^Tanah air {s11} Anda telah dikalahkan!^Tetap saja, sekutu lainnya masih terlibat dalam Perang. Anda, bersama dengan siapa pun yang tersisa dari {s11}, masih dapat membantu tim Anda menang.
 menu_notification_faction_defeated|^^^^^{s1} Dikalahkan!^{s1} tidak ada lagi, dikalahkan oleh kekuatan {s13}!
@@ -422,17 +425,16 @@ mno_next_rescue_scene_door|Lanjutkan ke depan!
 mno_pick_troops1|Pilih pendamping untuk misi, {reg0} dipilih
 menu_pick_troops|Siapa yang akan Anda bawa ke dalam misi sembunyi-sembunyi? ^Hanya pasukan dan rekan Anda yang paling gesit yang dapat bergabung dengan Anda. ^Sebagai anggota party dengan skill wildcraft tertinggi, {reg65?{s1} menyarankan:Anda memutuskan} bahwa Anda dapat membawa hingga pasukan {reg11} bersama Anda. ^^Saat ini Anda telah memilih {reg0} teman.
 mno_go_forward|Akhiri pemilihan teman dan lanjutkan.
-menu_burial_mound|Anda mendekati gundukan kuburan {s1} dari {s2}. Dikalahkan dalam pertempuran oleh kekuatan {s28}. Itu penuh dengan senjata berlekuk dari musuh-musuhnya yang telah jatuh.
+; menu_burial_mound|^You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|Berlutut dan beri hormat.
 mno_swear_oath|Bersumpahlah untuk membalas dendam!
 mno_despoil|Menodai situs tersebut
 mno_leave_mound|Tinggalkan gundukan itu.
 menu_burial_mound_respects|Anda berlutut dan memberi hormat kepada {s1}, dalam hati mengucapkan doa agar perjalanan cepat menuju akhirat. Tidak ada lagi yang bisa dilakukan di sini.
-menu_burial_mound_oath|Anda dengan lantang bersumpah untuk membalas dendam atas kematian {s4}. Anda tanpa henti akan mencari kekuatan {s3} dan menghancurkan mereka. Kata-katamu terbawa angin dan siapa yang dapat mengatakan bahwa kata-kata itu tidak terdengar di luar lautan?
+; menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s4}.   You would relentlessly seek out {s3} and destroy {reg11?her:him}.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
 menu_funeral_pyre_oath|Anda dengan lantang bersumpah untuk membalas dendam atas kematian {s4}. Anda tanpa henti akan mencari kekuatan {s3} dan menghancurkan mereka. Kata-katamu terbawa angin dan siapa yang dapat mengatakan bahwa kata-kata itu tidak terdengar di luar lautan?
-mno_leave_pyre_oath|Tinggalkan tumpukan kayu itu.
 menu_burial_mound_despoil|Anda merobohkan monumen {s1} dengan tangan Anda sendiri dan mengotori batu-batu itu dengan kutukan, nyanyian yang menjatuhkan, dan tindakan yang tidak dapat diungkapkan dengan kata-kata. Pengikut Anda mundur karena takut pada orang mati tetapi mereka tampaknya mulai menghormati kejahatan Anda.
-menu_funeral_pyre|Anda mendekati sisa-sisa tumpukan kayu pemakaman {s3} dari {s2} yang hangus. Dikalahkan dalam pertempuran oleh kekuatan {s28}. Di sini, jenazah dibakar secara seremonial oleh pengawal pribadinya. Tidak ada barang berharga yang tersisa.
+; menu_funeral_pyre|^You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
 mno_leave_pyre|Tinggalkan tumpukan kayu itu.
 menu_town_ruins|Saat Kamu mendekat, Kamu melihat bahwa {s1} adalah {s2}
 mno_ruin_menu_0|Jelajahi tempat
@@ -440,11 +442,19 @@ mno_ruin_leave|Tinggalkan...
 menu_death|Kamu telah terbunuh. Meskipun perang masih berlangsung, kamu tidak akan lagi menjadi bagian darinya.
 menu_animal_ambush|Kamu dan teman pendampingmu seketika terpisah dari rombongan grupmu, di mana tiba-tiba...
 menu_animal_ambush_success|{s2} {reg0?fall:falls} di hadapan Kamu seperti gandum yang disabit! Segera semua penyerang Kamu tergeletak di lantai, terluka atau mati. {s3}
-menu_animal_ambush_fail|Hewan-hewan itu menggigit dan mencabik-cabikmu{reg0?,: dan temanmu{reg2?s,:,}} tapi untungnya kamu berhasil menangkisnya. Mudah-mudahan mereka tidak menyerangmu lagi.
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
 menu_isengard_flooding|^^^^^@Anda dikelilingi oleh musuh mati dan sekutu yang menang, termasuk Ent; mereka mengaum, menggelegar, dan terompet, hingga batu-batu pecah dan berjatuhan di sekeliling Menara Orthanc. Mereka bagaikan angin kencang yang menderu-deru, mematahkan pilar-pilar, melemparkan longsoran batu-batu besar ke dalam lubang-lubang, melemparkan lempengan-lempengan batu besar ke udara seperti dedaunan... Ini belum pernah Anda lihat sebelumnya.^^ Bregalad -- atau Quickbeam, sebagai Anda kenal dia -- datang dan berhenti sejenak untuk mengatakan, '{playername}! Gudang! Jauhi Menara -- kami akan segera menghancurkan bendungan dan membawa Isen ke lembah ini, untuk sementara waktu. Menurutku, kamu akan merasa sangat sulit untuk tetap berdiri di sini!' Segera, ikuti nasihatnya dan segera menjauh dari Orthanc.^^ Sekitar tengah malam, Isengard mulai dipenuhi sungai dan kolam hitam yang menjalar. Anda pasti menggigil saat melihat asap dan uap membubung di pilar-pilar besar, dan gulungan uap besar membubung dan meliuk-liuk di sekitar Menara, hingga menyerupai puncak awan yang tinggi, menyala di bawah dan diterangi cahaya bulan di atas. Kemarahan para Ent lambat, namun memiliki kekuatan yang tak tertahankan...
 mno_isengard_continue|Lanjutkan
 menu_build_your_scene|Anda dapat membuat adegan pertempuran Anda sendiri, menggunakan salah satu slot yang disediakan di bawah dan mode edit game (Anda perlu mengaktifkan mode edit di opsi layar peluncuran M&B terlebih dahulu, lalu tekan Ctrl+E dalam adegan untuk mengakses mode edit). Anda kemudian dapat mengirimkan adegan yang Anda buat (yaitu, file sco dari folder TLD/SceneObj) ke tim pengembang TLD, dan jika adegan Anda bagus, adegan tersebut dapat muncul di rilis selanjutnya sebagai salah satu medan pertempuran acak!^^ Coba tentukan yang mana wilayah di peta yang Anda inginkan untuk menampilkan adegan Anda.^ Beberapa petunjuk: hindari perairan dalam, pegunungan curam, dan tempat-tempat lain yang tidak dapat dilewati, kecuali Anda adalah pembuat adegan berpengalaman dan tahu cara melarang pasukan AI berjalan di tempat yang tidak Anda inginkan, dan buat AI mesh di tempat lain.^ (Entri #0-1 untuk penyerang, #4 untuk pemain bertahan, jangan sentuh #5-8
 mno_back_3dot|Kembali...
+; menu_wott_expelled_from_faction|For your betrayal, you were expelled from your faction and {s11} has named you an outlaw and an enemy of the {reg11?Hand:Eye}. As an exile, you are now forced to join {s3}.
+; menu_wott_stay_with_faction|{s11} applauds your wise counsel. Your faction follows your example and collectively joins {s12}.
+; menu_fulfilled_oath_personal|^As {s5} lies in the dust before you, a heavy burden is lifted from your shoulders. The death of {s6} has been avenged!
+; menu_fulfilled_oath_personal_nokill|^Your troops recognize that you have defeated {s10} repeatedly and should rightfully be seen as {reg11?her:his} worst foe. Your oath is considered fulfilled. ^^The enemy paid dearly for the killing of {s11}. Still, there is a stale taste to this victory.
+; menu_oath_quest_fail|You swore a bitter oath and you bitterly failed to keep it. Your enemies laugh at your failure, and all your friends suffer from the shame you have brought upon them. In all the lands of Middle-earth, you shall be known as an oathbreaker.
+; menu_campaign_won|^^^Thank you for playing The Last Days of the Third Age!
+; mno_credits_tld|TLD Credits
+; mno_exit_game2|Quit to main menu
 mno_back|Kembali.
 mno_next|Lanjut...
 ; mno_previous|Previous...

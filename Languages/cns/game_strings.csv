@@ -1893,9 +1893,9 @@ str_trait_desc_merciful|你因仁慈的对待敌人声名远播。然而，有�
 str_trait_title_bravery|临危之勇
 str_trait_desc_bravery|您在巨大危难中挺身而出，被众人传颂为勇者。您的英姿深深吸引着您的部下，让他们每周都会获得士气奖励。
 str_trait_title_oathkeeper|守信之誓
-str_trait_desc_oathkeeper|你曾庄严宣誓并最终将其兑现。所以，人们都称赞您一诺千金。您的影响力将每周提高。
+; str_trait_desc_oathkeeper|You have sworn grim oaths and lived to see them fulfilled. Subsequently you have aquired a reputation as a man of his word. Whenever you receive influence, there is a small chance for an influence bonus.
 str_trait_title_oathbreaker|破信之誓
-str_trait_desc_oathbreaker|你曾庄严宣誓，但却没有将其兑现。所以，您被认作是言过其实之人。您的影响力将每周降低。
+; str_trait_desc_oathbreaker|You have sworn grim oaths and failed to see them through to their conclusion. Subsequently you have aquired a reputation as a man whose passion outstrips his prowess. Whenever you receive influence, there is a small chance for an influence malus.
 str_trait_title_orc_pit_champion|群兽之冠
 str_trait_desc_orc_pit_champion|您在残酷的半兽人之间的战斗中存活下来，并获得狂暴勇士的称号。这样的实力让追随您的部下兽血沸腾，并使他们每周都会获得士气奖励。
 str_trait_title_despoiler|三光之掠
@@ -2521,3 +2521,5 @@ str_shortname_region_n_anduin_vale|北安都因河谷
 str_shortname_region_s_anduin_vale|南安都因河谷
 str_shortname_region_cair_andros|凯尔安卓斯
 str_isengard_hunting_camp_guildmaster_player_found_ok|如果他很擅长杀戮，我就收下他。如果不是，我就像鱼一样把他刨出内脏。如果他真的是另一个毫无价值的蛆虫，我就会回来让你给我浪费的时间付出代价！
+; str_trait_title_animal_fighter|Beast Slayer
+; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.

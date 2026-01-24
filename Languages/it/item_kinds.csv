@@ -150,7 +150,6 @@ itm_arnor_shield_a|Scudo Rotondo Arnoriano
 itm_arnor_sword_c|Spada da Guerra di Arnor
 itm_arnor_sword_a|Spada bastarda di Arnor
 itm_arnor_sword_f|Spada corta di Arnor
-itm_riv_helm_a|Calotta di Cuoio di Gran Burrone
 itm_riv_helm_b|Elmo da arciere di Gran Burrone
 itm_riv_helm_c|Elmo da fante di Gran Burrone
 itm_tiara_reward|Tiara da Elfo nobile
@@ -285,7 +284,7 @@ itm_lorien_round_shield|Scudo Rotondo di Lorien
 itm_lorien_helm_a|Elmo da Arciere di Lorien
 itm_lorien_helm_b|Elmo da Arciere di Lorien
 itm_lorien_helm_c|Elmo da Fanteria di Lorien
-itm_orc_coif|Elmo Orchesco
+itm_orc_coif2|Calotta Orchesca
 itm_orc_greaves|Stivali di Maglia di Ferro Orcheschi
 itm_orc_ragwrap|Stracci Orcheschi
 itm_orc_furboots|Stivali di Pelliccia Orcheschi
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|Elmo da Capitano Uruk-Hai
 itm_isen_uruk_helm_e|Elmo da Braccatore Uruk-Hai
 itm_uruk_pike_b|Picca di Mordor
 itm_uruk_falchion_a|Falcione Uruk
-itm_uruk_falchion_b|Grande Scimitarra Orchesca
+itm_orc_bastard_scimitar|Grande Scimitarra Orchesca
+itm_orc_cleaver_a|Mannaia Orchesca
+itm_orc_scimitar_b|Scimitarra Orchesca
+itm_orc_sabre_b|Sciabola Orchesca
+itm_orc_mangler|Devastatore Orchesco
 itm_isengard_sword|Spada di Isengard
 itm_isengard_axe|Ascia di Isengard
 itm_isengard_hammer|Martello di Isengard
@@ -340,7 +343,7 @@ itm_orc_pick|Picca Orchesca
 itm_orc_hammer|Martello Malvagio
 itm_orc_club_b|Mazza da Fantino di Warg
 itm_orc_club_c|Mazza Chiodata Orchesca
-itm_orc_club_d|Mazza Malvagia
+itm_orc_mace|Mazza Malvagia
 itm_orc_sledgehammer|Martello da Guerra Orchesco
 itm_orc_simple_spear|Lancia Orchesca
 itm_orc_skull_spear|Lancia del Teschio Orchesca
@@ -375,6 +378,10 @@ itm_orc_morion|Morione Orchesco
 itm_orc_beakhelm|Elmo a Becco Orschesco
 itm_orc_bughelm|Elmo insetto Orchesco
 itm_orc_visorhelm|Elmo con Visiera Orchesco
+itm_orc_coif|Copricapo Funesto
+itm_orc_skullcap|Elmo Orchesco
+itm_orc_skullhelm|Elmo a Teschio Orchesco
+itm_orc_barbuta|Elmo Nasale Orchesco
 itm_m_orc_light_a|Armatura Leggera Orchesca di Mordor
 itm_m_orc_light_b|Armatura Leggera Orchesca di Mordor
 itm_m_orc_light_c|Armatura Leggera Orchesca di Mordor
@@ -839,3 +846,6 @@ itm_civilian_carry_oil|Olio
 itm_civilian_carry_wood2|Legna
 itm_work_basket|Cesta
 itm_work_basket_2|Cesta
+itm_spider_mount|Ragno
+itm_marker_night_troop|Tratto: Truppa Notturna
+itm_marker_berserker|Tratto: Berserker

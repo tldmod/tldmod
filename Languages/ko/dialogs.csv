@@ -128,8 +128,9 @@ dlga_member_question_2:member_health|건강은 어떤가?
 dlga_member_question_2:member_background_recap|자네의 이야기를 다시 들려주게.
 dlga_member_background_recap_3:do_member_trade|그리고 얼마 안돼서, 당신과 함께하게 되었죠.
 dlga_do_member_view_char:member_talk|다른것은?
-dlga_start:close_window.11|준비 되는대로 떠납시다.
-dlga_start:close_window.12|오늘은 더 이상 제 시간을 낭비하지 말아주시기 바랍니다. 어쩌면 다시 만날 날이 있겠지요.
+; dlga_start:close_window.11|It has been an honor to fight with you, {playername}.
+dlga_start:close_window.12|준비 되는대로 떠납시다.
+dlga_start:close_window.13|오늘은 더 이상 제 시간을 낭비하지 말아주시기 바랍니다. 어쩌면 다시 만날 날이 있겠지요.
 dlga_companion_recruit_signup_response:close_window|애석하게도 더 이상 일행을 받을 수 없네.
 dlga_companion_recruit_rank:close_window|{playername}, 자네는 내 백성들로부터 충분한 존경을 받지 못하는군. 자네는 {s29}이고 나와 함께하려면 {s24}는 되어야 한다네. [{reg3}의 랭크 포인트 부족]. 좀 더 성장한 뒤 얘기해 보도록 하지.
 dlga_companion_recruit_rank:companion_recruit_payment.1|당신을 만나게 되서 정말 영광이오 {s29}, 그대에게 합류하기위해 수소문하고있던 중이었소.
@@ -183,6 +184,13 @@ dlga_companion_home_description:close_window.1|난 내 동료가 그런 사소�
 dlga_start:player_hire_troop|{s33}^^제가 {s21} 주둔군의 책임자입니다. 절 보자하셨다고요?
 dlga_player_hire_troop:player_hire_troop_give|내 부대의 대원들이 {s21}를 지키는데에 더 유용할걸세.
 dlga_player_hire_troop:close_window|여기 주둔한 내 병사들을 재검토하고 싶군.
+; dlga_player_hire_troop:player_hire_captain_1|{s6}
+; dlga_player_hire_captain_1:player_hire_captain_2|I have one {s5} in my garrison that might be willing to serve under your command and help you organize your party. But he will be missed here. [costs {reg21} influence]
+; dlga_player_hire_captain_1:close_window|You are a mere {s24}. What would you do with a captain?
+; dlga_player_hire_captain_1:close_window.1|No, I can't spare anyone at the moment.
+; dlga_player_hire_captain_2:player_hire_captain_3|I will have him.
+dlga_player_hire_captain_2:close_window|마음을 바꿨소.
+; dlga_player_hire_captain_3:close_window|He will serve you well.
 dlga_player_hire_troop:player_hire_trolls_take|나는 전투 트롤을 지휘하기에 충분한 지휘관이다- 이제 내놔!
 dlga_player_hire_trolls_take:close_window|당신만의 검은 군단을 육성하고싶은 모양이죠? 성체 트롤을 편성할 만큼의 랭크를 올리고 다시 오십시오.
 dlga_player_hire_trolls_take:close_window.1|네가? 구더기 같은 놈. 내 앞에서 당장 사라져라. 트롤. (당신은 {s24} 이상이 되어야합니다.)
@@ -192,7 +200,7 @@ dlga_player_hire_trolls_how_many:player_hire_troll_buy_done|이 무시무시한 
 dlga_player_hire_trolls_how_many:player_hire_troll_armoured|철판으로 보호받는 동안 그들은 더 잘 싸울 것입니다. 염두해두세요!
 dlga_player_hire_trolls_how_many:player_hire_troll_buy_not_enough|마음을 바꿨소.
 dlga_player_hire_troll_buy_not_enough:close_window|시간 낭비로군...
-dlga_player_hire_troll_buy_done:close_window|이 덩치를 잘 대해 주세요. 그러는 동안에는 이 녀석도 당신을 잘 대해줄테니!
+; dlga_player_hire_troll_buy_done:close_window|Take good care of this big fellow now, and he’ll take good care of you! Ha! He has not seen battle yet. Be aware that he may panick and ignore your orders.
 dlga_player_hire_troop:close_window.1|전 훈련이 필요합니다.
 dlga_player_hire_troop:tld_sell_prisoners|죄수들을 좀 데려왔다네.
 dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} 어디 그 망할 자식 좀 보자고.
@@ -225,6 +233,8 @@ dlga_player_siege_ask_leave_unmolested_reject:close_window|그렇다면 우린 �
 dlga_defeat_lord_answer:defeat_lord_answer_1|네놈은 이제 내 포로다.
 dlga_defeat_lord_answer_1:close_window|부디 자비를.
 dlga_defeat_lord_answer:defeat_lord_answer_2|그대는 잘 싸웠네. 풀어줄테니 잘 가게나.
+; dlga_defeat_lord_answer_vengeance:defeat_lord_answer_vengeance_1|{s5}! You killed {s6} and I have sworn to avenge {reg11?her:him}. I hearby fulfill my oath. You will die now!
+dlga_defeat_lord_answer_vengeance_1:close_window|언젠가 반드시 되갚아주마... 아으아악!...
 dlga_start:party_encounter_lord_hostile_attacker|{playername}!
 dlga_start:party_encounter_lord_hostile_attacker.1|멈춰라!
 dlga_party_encounter_lord_hostile_attacker_2:party_encounter_offer_dont_fight|이 싸움을 피할 수는 없겠소? 난 당신과 싸우고 싶지 않네만.
@@ -232,9 +242,10 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|공격하지 마시오
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|우린 마지막까지 싸울 것이다!
 dlga_party_encounter_offer_dont_fight:close_window|당신에겐 빚을 졌었죠. 뭐... 좋습니다. 이번만은 보내드리지요.
 dlga_party_encounter_offer_dont_fight:close_window.1|하하. 하지만 난 싸우고 싶은 걸.
-dlga_start:close_window.13|음...
-dlga_start:close_window.14|주군께서는 깊은 사색에 잠기셨다! 방해해서는 안 된다!
-dlga_start:close_window.15|저리 꺼져버려 이 못된 거지놈.
+dlga_start:close_window.14|음...
+dlga_start:close_window.15|주군께서는 깊은 사색에 잠기셨다! 방해해서는 안 된다!
+; dlga_start:close_window.16|Hail {playername}, {s24}!
+dlga_start:close_window.17|저리 꺼져버려 이 못된 거지놈.
 dlga_start:lord_start|내 용감한 용사 {playername}가 아니었다면...
 dlga_start:lord_start.1|다시 만나서 반갑습니다 {playername}님...
 dlga_start:lord_start.2|또 만났군요, {playername}님...
@@ -245,6 +256,9 @@ dlga_lord_meet_enemy:lord_intro|난 {playername} 다.
 dlga_lord_meet_enemy:lord_intro.1|저들은 나를 {playername} 라 알고있지, 기록해두게, 앞으로 그대 또한 나에 대해 듣게될 일이 많이 있을테니.
 dlga_start:lord_start.3|흠, {playername}...
 dlga_lord_start:lord_generic_mission_completed|자네의 군의관이 내 친구를 설득시켜 수술을 했네. 이제 그의 회복을 기도하는 수밖에 없군. 어쨌든, 자네 군의관을 빌려주어 고맙네 {playername}. 자네의 숭고한 정신을 잊지 않겠네.
+; dlga_lord_start:lord_oath_of_vengeance_fulfilled|{playername}, I see you return from your campaign against Moria and Gundabad! What news do you bring?
+; dlga_lord_oath_of_vengeance_fulfilled:lord_oath_of_vengeance_fulfilled1|My lord, I have pursued and ravaged the orc scum, destroying and routing their armies wherever I found them. They tremble with fear and hide in their deepest caves. Balin and his followers have been avenged!
+; dlga_lord_oath_of_vengeance_fulfilled1:close_window|You have accomplished more than I could ever have hoped for. Thanks to you, vengeance is ours! The fear and shame of our enemies fills our hearts with satisfaction! I name you Oathkeeper. Go now with the gratitude of Aules' people.
 dlga_lord_start:lord_investigate_fangorn_completed0|그래, {playername}. 팡고른에서 돌아왔군. 무엇을 알아냈나?
 dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|나무들이 살아있습니다! 우리 군대를 공격했다구요!
 dlga_lord_investigate_fangorn_completed1:close_window|그게 늘 의심스러웠지. 잘 해주었네 {playername}.
@@ -343,16 +357,20 @@ dlga_lord_talk:dwarf_lord_book|{s3}, 자네에게 알려줘야 할 문제가 있
 dlga_dwarf_lord_book:dwarf_lord_book_give|솔직히 말하자면, {playername}.
 dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|나는 과감히 모리아 광산으로 들어가 발린 일행이 남긴 기록을 발견했다.
 dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|너는 내 혈통을 마치 기억 속의 존재인 것처럼 말한다. 정말 그런가?
-dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|죄송하지만 그렇습니다. 더 찾을 수 있었지만 고블린들 때문에. 이것만 가져왔습니다.
-dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'우리는 나갈 수 없다. 우린 나갈 수 없다...그들이 오고 있다.'
+; dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_d|I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. Yet I found a tomb with Balin's name inscribed on the lid...
 dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|그럼 내가 두려워했던 일이 일어났군. 나는 발린에게 이 탐험에 대해 상담해 보았지만 그는 이미 결심한 뒤였지. 그를 놓아준 내가 바보였어.
 dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|너는 에레보르에게 있어 큰 일을 해냈으니, {playername}, 너의 행동은 보상받을 것이다.
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|고마워, {s3}.
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|이제 어떻게 하실 겁니까?
 dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|우리는 우리 가족의 살인에 대한 해답이 없는 상태로 내버려두지 않을 것이다. 우리에게 죄를 지은 사람들에게 파멸과 죽음을 가져올 것이다. 군다바드 산의 정상에서 카잣둠 가장 깊은 곳까지 안개 산맥은 고블린의 피로 검게 물들 것이다.
-dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, 나는 {s4}의 사람들이 발린과 그 동족에게 복수하는 것을 돕고 싶습니다.
+dlga_dwarf_lord_book_give_i:dwarf_lord_book_give_j|{s3}, 나는 {s4}의 사람들이 발린과 그 동족에게 복수하는 것을 돕고 싶습니다.
 dlga_dwarf_lord_book_give_i:lord_pretalk|행운을 빕니다.
-dlga_dwarf_lord_avenge:close_window|아주 좋아, {playername}. 두린의 축복을 따라 우리의 적들에게 죽음을 가져오게. 우리 국민들이 알고 있는 고통과 두려움을 알게 하게.
+; dlga_dwarf_lord_book_give_j:lord_pretalk|I have heard that you have already made a vow of vengeance. It would be unwise to divide your strength between two vows. I am afraid I cannot accept your offer.
+; dlga_dwarf_lord_book_give_j:dwarf_lord_book_give_k|Such a promise is not lightly given, {playername}. If you swear to avenge my kin, I will take you by the word. Are you ready to pledge an oath of vengeance against the goblin filth of the mountains?
+; dlga_dwarf_lord_book_give_k:dwarf_lord_book_give_l|I swear!
+; dlga_dwarf_lord_book_give_k:lord_pretalk|I understand. I am afraid I have other pressing obligations. Yet I wish you the best of luck in your fight against the orcs.
+; dlga_dwarf_lord_book_give_l:dwarf_lord_book_give_m|I swear not to rest and to bring death and destruction to all the orcs of the mountains before this moon wanes and rises again!
+dlga_dwarf_lord_book_give_m:close_window|아주 좋아, {playername}. 두린의 축복을 따라 우리의 적들에게 죽음을 가져오게. 우리 국민들이 알고 있는 고통과 두려움을 알게 하게.
 dlga_lord_talk:find_lost_spears_permission|군주이시여, 나는 Bladorthin 왕의 잃어버린 창을 찾아 외로운 산으로 들어가고 싶습니다.
 dlga_find_lost_spears_permission:lord_pretalk|이미 허락했다네, {playername}.
 dlga_find_lost_spears_permission:find_lost_spears_permission_yes|좋아, {playername}, 너는 산으로 들어갈 수 있어.
@@ -644,7 +662,7 @@ dlga_start:castle_guard_players|시키실 일이라도? 사령관님?
 dlga_castle_guard_players:close_window|문을 열어라. 들어가야겠다.
 dlga_castle_guard_players:close_window.1|신경쓰지 말게나.
 dlga_start:castle_guard_sneaked_intro_1|내 눈앞에서 꺼져라, 거지야! 냄새나니까!
-dlga_start:close_window.16|빡돌기 전에 꺼져, 이 못된 거지야!
+dlga_start:close_window.18|빡돌기 전에 꺼져, 이 못된 거지야!
 dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|홀에 들어가 영주님을 뵙고 싶다.
 dlga_castle_guard_sneaked_intro_1:close_window|[떠나기]
 dlga_castle_guard_sneaked_intro_2:close_window|너 정신 나갔냐, {이 놈/이 년}아? 거지는 홀에 못 들어가, 피떡이 될때까지 두들겨 패기 전에 꺼져.
@@ -740,8 +758,8 @@ dlga_sad_elf_2:sad_elf_choice|아, 바다의, 그 너머로부터 온 이야기�
 dlga_sad_elf_choice:sad_elf_leave|그대의 고통을 이해하네. 자네는 전쟁에서 자네 몫을 다했어. 떠나도 좋네.
 dlga_sad_elf_choice:sad_elf_no|요정은 중간계를 그림자 속에 버려둘 권리가 없네. 이 전쟁은 우리를 위한 것이 아니라 우리 모두 정해진 역할이 있는 것이지. 자네를 보낼 수 없네. [리더십 체크]
 dlga_sad_elf_leave:close_window|감사합니다, {군주/군주}이시여!^^ 바다로, 바다로! 흰 갈매기들이 노래합니다,^바람이 불고, 흰 거품이 이는군요.^서쪽으로, 서쪽으로, 둥근 해가 지는 곳으로..
-dlga_start:close_window.17|제 때에 와주었군. 우리에게 합류해서 적들에게 교훈을 새겨주자고.
-dlga_start:close_window.18|우리에게 맞서다니 큰 실수를 저지른거다.
+dlga_start:close_window.19|제 때에 와주었군. 우리에게 합류해서 적들에게 교훈을 새겨주자고.
+dlga_start:close_window.20|우리에게 맞서다니 큰 실수를 저지른거다.
 dlga_start:ally_thanks_meet|정식으로 만난 적이 없는 것 같군 친구. 방금 저기서 나의 목숨을 구해주었는데도, 이름조차 모른다니..
 dlga_start:ally_thanks_meet.1|그대의 도움을 환영하네 이방인, 내 이름은 {s1}일세. 그대의 이름을 물어도 되겠나?
 dlga_start:ally_thanks_meet.2|도움에 감사하네, 이방인. 정식으로 인사도 못했군, 그렇지 않나? 이름이 무엇인가?
@@ -749,13 +767,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|나의 이름은 {playername}이오.
 dlga_ally_thanks_meet_2:close_window|만나서 반갑네 {playername}. 내 이름은 {s1}이고, 이 빚은 잊지 않겠네. 내가 자네를 도울 수 있는 일이 있다면, 그게 무엇이든 말만 하게..
 dlga_ally_thanks_meet_2:close_window.1|만나서 반갑네 {playername}. 자네가 한 일에 빚을 졌군. 언젠가 이 빚을 갚을 날이 오기를 바라네.
 dlga_ally_thanks_meet_2:close_window.2|만나서 반갑네 {playername}. 나는 {s1}일세. 도움에 감사하며 다시 만나기를 바라겠네.
-dlga_start:close_window.19|또 내 목숨을 구해주는군, {playername}! 진정으로 그대는 내 최고의 친구로군. {s43}
-dlga_start:close_window.20|아슬아슬했군! {playername}. 내 진심어린 감사를 받아주게나! {s43}
-dlga_start:close_window.21|제 때에 도착했군, {playername}. 그대의 노고는 절대 잊지 않겠네. {s43}
-dlga_start:close_window.22|이런 곳에서 다시 보니 반갑군, {playername}. {s43}
-dlga_start:close_window.25|도와주셔서 감사합니다, 사령관님. 당신은 {reg1?저희 목숨을:제 목숨을} 구하셨습니다.
-dlga_start:close_window.26|도와주셔서 감사합니다, 사령관님. 상황이 좋지 않게 흘러갔지만 와주신 덕에 전황이 바뀌었습니다.
-dlga_start:close_window.27|도와주셔서 감사합니다, 사령관님. 근처에 계셨던 것이 행운이었군요.
+dlga_start:close_window.21|또 내 목숨을 구해주는군, {playername}! 진정으로 그대는 내 최고의 친구로군. {s43}
+dlga_start:close_window.22|아슬아슬했군! {playername}. 내 진심어린 감사를 받아주게나! {s43}
+dlga_start:close_window.23|제 때에 도착했군, {playername}. 그대의 노고는 절대 잊지 않겠네. {s43}
+dlga_start:close_window.24|이런 곳에서 다시 보니 반갑군, {playername}. {s43}
+dlga_start:close_window.27|도와주셔서 감사합니다, 사령관님. 당신은 {reg1?저희 목숨을:제 목숨을} 구하셨습니다.
+dlga_start:close_window.28|도와주셔서 감사합니다, 사령관님. 상황이 좋지 않게 흘러갔지만 와주신 덕에 전황이 바뀌었습니다.
+dlga_start:close_window.29|도와주셔서 감사합니다, 사령관님. 근처에 계셨던 것이 행운이었군요.
 dlga_start:freed_hero_answer|풀어준 은혜는 절대 잊지 않겠네, 친구여.
 dlga_freed_hero_answer:freed_hero_answer_1|넌 어디에도 갈 수 없다. 너는 이제 내 죄수다!
 dlga_freed_hero_answer_1:close_window|아아. 내 운명은 끝내 바꿀 수 없는가?
@@ -849,7 +867,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|활.
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|투척 무기.
 dlga_trainer_choose_weapon_player:trainer_pretalk|아무것도. 마음을 바꿨소.
 dlga_trainer_begin_training:close_window|좋습니다. 한번 해보죠. 훈련이 끝나면 저에게 와서 말을 걸어주세요.
-dlga_start:close_window.28|저리 꺼져버려 이 못된 거지놈.
+dlga_start:close_window.30|저리 꺼져버려 이 못된 거지놈.
 dlga_start:mayor_begin|좋은 하루로군요.
 dlga_start:mayor_talk|안녕하신가, 이방인, {s9}에는 처음 온 것 같은데. 나는 이 도시의 guild master라네.
 dlga_start:mayor_begin.1|좋은 하루로군, {playername}.
@@ -935,8 +953,8 @@ dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|나는 {s8}로 보
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|알겠습니다. 보급 수레를 호위해드리겠습니다.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|죄송하지만 그만한 병력이 없습니다.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|죄송합니다. 지금은 안될 것 같군요.
-dlga_start:close_window.29|나머지 길은 저희가 알아서 갈 수 있습니다. 고맙습니다.
-dlga_start:close_window.30|음, {s21}에 거의 도착한 것 같군요. 나머지는 저희가 알아서 갈 수 있습니다. 호위해주셔서 감사합니다. 행운을 빕니다.^^[{s14}의 자원 포인트 {reg14}만큼 획득]
+dlga_start:close_window.31|나머지 길은 저희가 알아서 갈 수 있습니다. 고맙습니다.
+dlga_start:close_window.32|음, {s21}에 거의 도착한 것 같군요. 나머지는 저희가 알아서 갈 수 있습니다. 호위해주셔서 감사합니다. 행운을 빕니다.^^[{s14}의 자원 포인트 {reg14}만큼 획득]
 dlga_start:merchant_caravan_intro_1|반갑습니다. 경호를 맡은 분들이시군요, 그렇죠?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|예. 내 이름은 {playername}. {s1}까지 데려다주겠습니다.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|좋아요, 우리만 여행하는 것이 아니라 다행이군요. 이제 어떻게 하면 될까요?
@@ -986,7 +1004,7 @@ dlga_prisoner_chat_3:prisoner_slaughter|우리 저녁식사가 되어주어야�
 dlga_prisoner_chat_4:close_window|그래, 내가 해볼만 해보이나? 꺼져!
 dlga_prisoner_slaughter:prisoner_slaughter_02|언젠가 반드시 되갚아주마!
 dlga_prisoner_slaughter:close_window|언젠가 반드시 되갚아주마... 아으아악!...
-dlga_start:close_window.31|저리 꺼져버려 이 못된 거지놈.
+dlga_start:close_window.33|저리 꺼져버려 이 못된 거지놈.
 dlga_start:town_merchant_talk|반갑습니다, 사령관님. 어떻게 도와드릴까요?
 dlga_start:town_merchant_talk.1|좋은 하루로군요. 무엇을 해드릴까요?
 dlga_town_merchant_talk:trade_requested_weapons|새 장비에 대해 알고 싶군요. 창고에 있는 물건들을 보여주시죠.
@@ -1012,7 +1030,9 @@ dlga_town_merchant_talk:close_window|잘 가게.
 dlga_start:town_dweller_talk|실례합니다?
 dlga_start:town_dweller_talk.1|좋은 하루로군요, 사령관님.
 ; dlga_town_dweller_talk:town_dweller_ask_fugitive|I am looking for a man named {s4}. Have you seen a stranger here who is acting suspiciously and spreading lies about the war?
-; dlga_town_dweller_ask_fugitive:close_window|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
+; dlga_town_dweller_ask_fugitive:close_window|I don't know you. For all I care, you are that suspicious stranger to me!
+; dlga_town_dweller_ask_fugitive:close_window.1|Well, I saw a suspicious stranger {s5}. If you are lucky, you may still find him there.
+; dlga_town_dweller_ask_fugitive:close_window.2|No, I haven't seen anyone.
 dlga_town_dweller_talk:town_dweller_ask_info|이 마을에 대해 설명해주겠나?
 dlga_town_dweller_talk:town_dweller_ask_info.1|이 장소에 대해 설명해주겠나?
 dlga_town_dweller_talk:town_dweller_talk|여기 생활은 좀 어떤가?
@@ -1029,19 +1049,20 @@ dlga_town_dweller_brawl:town_dweller_brawl_confirm|날 위협하는거요? 경�
 dlga_town_dweller_brawl_confirm:close_window|오 그렇소? 무엇을 가졌는지 좀 봅시다.
 dlga_town_dweller_brawl_confirm:close_window.1|아니오, 다른 사람으로 착각했나보군.
 dlga_town_dweller_talk:close_window|[떠나기]
-; dlga_start:close_window.32|Get lost!
-; dlga_start:close_window.33|Leave me alone!
+; dlga_start:close_window.34|Hail {playername}, {s24}!
+; dlga_start:close_window.35|Get lost!
+; dlga_start:close_window.36|Leave me alone!
 dlga_start:player_castle_guard_talk|네, 사령관님?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|주위 상황은 어떤가, 병사?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|사방이 조용합니다 사령관님. 보고드릴 것이 없습니다.
 dlga_player_castle_guard_talk_3:close_window|좋아. 눈 크게 뜨고 지켜보게.
-; dlga_start:close_window.34|Good day, {s24}. It's good having you here in {s10}.
-dlga_start:close_window.35|매너만 지켜주신다면 문제될 일은 없을 겁니다.
+; dlga_start:close_window.37|Good day, {s24}. It's good having you here in {s10}.
+dlga_start:close_window.38|매너만 지켜주신다면 문제될 일은 없을 겁니다.
 dlga_start:hall_guard_easter_egg|아, 자정이 좀 넘었군요. 아실지 모르겠는데, 최근 평범하지 않은 일이 일어났습니다. - 들어보시겠습니까?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|좋네. 계속하게.
 dlga_hall_guard_easter_egg:close_window|가십거리는 내 알 바 아니네.
 dlga_hall_guard_easter_egg_scene:close_window|흠... 최근 수상한 이들로 구성된 모험가 무리가 근방에 나타났습니다: 인간 남성, 난쟁이, 요정, 그리고...
-dlga_start:close_window.36|경계 중에는 잡담 금지입니다, 사령관님.
+dlga_start:close_window.39|경계 중에는 잡담 금지입니다, 사령관님.
 dlga_enemy_defeated:close_window|으아아! 정말 싫어.
 dlga_party_relieved:close_window|이 개자식들을 상대하는것을 도와주셔서 감사합니다.
 dlga_member_chat_00:close_window.1|^^크르릉!^^
@@ -1074,32 +1095,32 @@ dlga_party_reinforce:party_reinforce_end.2|불행히도 당신은 우리를 지�
 dlga_party_reinforce_check:party_reinforce_check_1|군인 명부를 확인해 볼게...
 dlga_party_reinforce_check_1:party_reinforce_end|마음이 바뀌신건가요...^알겠습니다.
 dlga_party_reinforce_check_1:party_reinforce_end.1|그 병사들은 우리에게 아무 쓸모가 없습니다. ^ 다시 데려가세요.
-dlga_start:close_window.37|너 때문에 늦는구나! 마법사는 절대 늦지 않아!
-dlga_start:close_window.38|너 때문에 늦는구나! 마법사는 절대 늦지 않아!
-dlga_start:close_window.39|그것이.. 손짓한다아아...
+dlga_start:close_window.40|너 때문에 늦는구나! 마법사는 절대 늦지 않아!
+dlga_start:close_window.41|너 때문에 늦는구나! 마법사는 절대 늦지 않아!
+dlga_start:close_window.42|그것이.. 손짓한다아아...
 dlga_start:secret_guardian_let_through|멈춰라!
 ; dlga_secret_guardian_let_through:secret_guardian_let_through1|I am {playername}, {s24}. Let me through!
 ; dlga_secret_guardian_let_through1:close_window|Yes commander, you may pass.
-dlga_start:close_window.41|거기 너! 살아남았나? 좋아! 더이상 막대기를 휘두르고 다니지 못할거다! 이걸 받아!
+dlga_start:close_window.44|거기 너! 살아남았나? 좋아! 더이상 막대기를 휘두르고 다니지 못할거다! 이걸 받아!
 dlga_start:ori_choose_1|훌륭하게 싸우더군, 친족! 어떻게 지금까지 살아왔는지 모르겠어. 최근에 우리에게 합류한 것 같은데, 그러니까... 발린 사후에... 어디서 왔나?
 dlga_ori_choose_1:ori_choose_finish|나는 추적자로서, 곰 사람들 근처의 숲에 파견되었다. 최근 발린 일행의 일에 대해 듣고 가담했다.
 dlga_ori_choose_1:ori_choose_finish.1|나는 먼 친척이다, 광산의 뛰어난 경호원이었지. 발린 일행에 대한 일을 듣고 가담했다.
 dlga_ori_choose_1:ori_choose_finish.2|나는 철산에서 왔고, 전쟁의 고참병이자, 평화시에는 뛰어난 광부이다. 발린에 대해 듣고 가담했고, 더 많은 오르크를 죽이고 싶다.
 dlga_ori_choose_finish:close_window|알려줘서 고맙네! 자네에게 꼭 맞을 만한 물건을 찾았네. 우리는 여기에 남아 더 많은 놈들을 데려가겠네!
-dlga_start:close_window.42|막 손을 풀기 시작한 모양이지, 허? 자, 저걸 좀 보라구. 기분이 좀 나아질테니까. 더 많은 오르크들이 온다!
-dlga_start:close_window.43|먼지 묻은 걸 벗고 이걸 입게. 자네를 더 잘 보호해줄테니. 이 오르크들은 정말 세게 무는군!
-dlga_start:close_window.44|뭔가 거대한 게 온다! 전투 준비!
-dlga_start:close_window.45|적들이 너무 많지만... 우리는 난쟁이들이다!
-dlga_start:close_window.46|저 오르크들이 보물로 가득한 동굴을 열었더군. 여기 내가 찾은 것들이 좀 있는데, 가서 그것들을 좀 받게.
-dlga_start:close_window.47|아니... 놈들이 들린다... 바깥에 있다! 놈들이 사방에 있다!
-dlga_start:close_window.48|여기... 우리 군주 발린의 것이네... 자네는 이걸 받을 가치가 있어...
+dlga_start:close_window.45|막 손을 풀기 시작한 모양이지, 허? 자, 저걸 좀 보라구. 기분이 좀 나아질테니까. 더 많은 오르크들이 온다!
+dlga_start:close_window.46|먼지 묻은 걸 벗고 이걸 입게. 자네를 더 잘 보호해줄테니. 이 오르크들은 정말 세게 무는군!
+dlga_start:close_window.47|뭔가 거대한 게 온다! 전투 준비!
+dlga_start:close_window.48|적들이 너무 많지만... 우리는 난쟁이들이다!
+dlga_start:close_window.49|저 오르크들이 보물로 가득한 동굴을 열었더군. 여기 내가 찾은 것들이 좀 있는데, 가서 그것들을 좀 받게.
+dlga_start:close_window.50|아니... 놈들이 들린다... 바깥에 있다! 놈들이 사방에 있다!
+dlga_start:close_window.51|여기... 우리 군주 발린의 것이네... 자네는 이걸 받을 가치가 있어...
 dlga_start:party_encounter_hostile_attacker|당신에겐 아무런 희망이 없소, 항복하지 않으면 당신들을 모두 죽이겠소...
 dlga_party_encounter_hostile_attacker:close_window|공격하지 마시오! 항복하겠소.
 dlga_party_encounter_hostile_attacker:close_window.1|우린 마지막까지 싸울 것이다!
 dlga_start:party_encounter_hostile_defender|원하는게 뭡니까?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|항복하거나, 아니면 죽어라!
 dlga_party_encounter_hostile_defender:close_window|아무것도, 당신을 그대로 두고가겠소.
-dlga_start:close_window.50|* 당신을 조용히 쳐다본다 *
+dlga_start:close_window.53|* 당신을 조용히 쳐다본다 *
 dlga_start:battle_reason_stated|항복이나 죽음을 선택해라.
 dlga_battle_reason_stated:close_window|난 너가 두렵지 않다. 난 싸울것이다.
 dlga_start:free|안녕하세요. 무엇을 도와드릴까요?

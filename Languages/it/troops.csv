@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|Orco Combattente di Gundabad
 trp_i3_gunda_orc_fighter_pl|Orchi Combattenti di Gundabad
 trp_i4_gunda_orc_warrior|Orco Guerriero di Gundabad
 trp_i4_gunda_orc_warrior_pl|Orchi Guerrieri di Gundabad
-trp_i4_gunda_orc_berserker|Orco Berserker di Gundabad
-trp_i4_gunda_orc_berserker_pl|Orchi Berserkers di Gundabad
+trp_i5_gunda_orc_berserker|Orco Berserker di Gundabad
+trp_i5_gunda_orc_berserker_pl|Orchi Berserkers di Gundabad
 trp_ca4_gunda_skirmisher|Schermagliatore di Gundabad
 trp_ca4_gunda_skirmisher_pl|Schermagliatori di Gundabad
 trp_ca5_gunda_clan_skirmisher|Schermagliatore Goblin del Clan Nordico
@@ -1185,8 +1185,8 @@ trp_smith_gundabad_ne|Blurg, il Vendineve
 trp_smith_gundabad_ne_pl|la fucina
 trp_smith_gundabad_nw|Blurg, il Vendineve
 trp_smith_gundabad_nw_pl|la fucina
-trp_smith_gundabad_s|Blurg, il Vendineve
-trp_smith_gundabad_s_pl|la fucina
+trp_smith_moria_s|Burgak, il Forgiatore
+trp_smith_moria_s_pl|La fucina
 trp_smith_gundabad_m|Blurg, il Vendineve
 trp_smith_gundabad_m_pl|la fucina
 trp_barman_eastemnet|Il taverniere
@@ -1211,8 +1211,8 @@ trp_merchant_woodelf_west_camp|Il Mastro dei Rifornimenti
 trp_merchant_woodelf_west_camp_pl|le provviste elfiche
 trp_merchant_gundabad_m|Il Mastro dei Rifornimenti
 trp_merchant_gundabad_m_pl|Le scorte del campo
-trp_merchant_gundabad_s|Il Mastro dei Rifornimenti
-trp_merchant_gundabad_s_pl|Le scorte del campo
+trp_merchant_moria_s|Il Mastro dei Rifornimenti
+trp_merchant_moria_s_pl|Le scorte del campo
 trp_merchant_gundabad_nw|Il Mastro dei Rifornimenti
 trp_merchant_gundabad_nw_pl|Le scorte del campo
 trp_merchant_gundabad_ne|Il Mastro dei Rifornimenti
@@ -1445,8 +1445,8 @@ trp_elder_gunda_ne|Orco Anziano
 trp_elder_gunda_ne_pl|Il campo
 trp_elder_gunda_nw|Orco Anziano
 trp_elder_gunda_nw_pl|Il campo
-trp_elder_gunda_s|Orco Anziano
-trp_elder_gunda_s_pl|Il campo
+trp_elder_moria_s|Capo del Campo Orchesco
+trp_elder_moria_s_pl|Il campo
 trp_elder_gunda_m|Orco Anziano
 trp_elder_gunda_m_pl|Il campo
 trp_elder_ironhill|Capo del Campo
@@ -1501,8 +1501,8 @@ trp_evil_priest|Sacerdote Oscuro
 trp_evil_priest_pl|Sacerdoti Oscuri
 trp_wolf_rider_of_mirkwood|Cavalca-Lupo di Bosco Atro
 trp_wolf_rider_of_mirkwood_pl|Cavalca-Lupi di Bosco Atro
-trp_warg_rider_of_mirkwood|Cavalca-Warg di Bosco Atro
-trp_warg_rider_of_mirkwood_pl|Cavalca-Warg di Bosco Atro
+trp_bear_strong|Orso
+trp_bear_strong_pl|Orsi
 trp_gate_aggravator|Difesa della Porta
 trp_orc_pretender|Orco Impostore
 trp_human_prisoner|Prigioniero Umano

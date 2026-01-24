@@ -20,7 +20,6 @@ mno_custom_battle_scenario_7|伏击，半兽人vs幽暗密林
 mno_custom_battle_scenario_8|都灵人的最后一站
 mno_custom_battle_scenario_88|追随一名斥候
 mno_custom_battle_scenario_11|测试战(平衡性调整)
-mno_custom_battle_scenario_10|场景测试战
 mno_troll_battle_scenario|食人妖测试战
 mno_warg_battle_scenario|座狼测试战
 mno_build_your_own_scene|**建立你的最后之日场景**
@@ -197,7 +196,7 @@ menu_cattle_herd|你遇见了一些人。
 mno_cattle_drive_away|让他们跟随你。
 mno_cattle_stop|让他们停下。
 mno_leave|离开。
-menu_simple_encounter|^^^^^{s2}^你的 {reg22} 名士兵与 {reg11} 名敌军于 {s3}{s4} 展开对决。请下达命令！
+; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.{s17}^^Your orders?
 mno_encounter_attack|{reg21?攻击:准备迎战}.
 mno_encounter_order_attack|你坐镇指挥命令你的部下 {reg21?攻击:迎战}
 mno_control_allies_menu|消耗影响力，获取在战场上指挥友军的权力。
@@ -232,7 +231,7 @@ mno_pre_join_help_attackers|对{s2}施以援手。
 mno_pre_join_help_defenders|对{s1}施以援手。
 mno_pre_join_help_refugees|对{s1}施以援手。
 mno_pre_join_leave|不卷入纷争。
-menu_join_battle|^^^你决定帮助{s2}对抗{s1}。^ 你将有{reg22}名士兵参加战斗对抗{reg11}名敌人。^^这次战斗在{s3}{s4}展开。
+; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}. {s17}
 mno_join_attack|攻入敌阵
 mno_join_order_attack|坐镇指挥，让你的部队帮助盟友进攻。
 mno_control_allies_join_menu|消耗影响力，获取在战场上指挥友军的权力。
@@ -251,14 +250,16 @@ menu_join_siege_outside|^^^^^^{s1}正被{s2}围攻。
 mno_approach_besiegers|进入围攻营地
 mno_pass_through_siege|穿过围城进入{s1}
 menu_cut_siege_without_fight|围城方放你进入了城堡
-menu_besiegers_camp_with_allies|{s1}正在遭到围攻。{s2}的旗帜飘扬在攻城营地上方，你和你的部队受到欢迎。
+; menu_besiegers_camp_with_allies|{s1} is under siege. The banners of {s2} fly above the camp of the besiegers, who are preparing for their next assault. {s17}
 mno_talk_to_siege_commander|要求与指挥官见面
 mno_join_siege_with_allies|加入下一轮冲锋
 mno_join_siege_stay_back|坐镇指挥，让你的部队加入下一轮冲锋。
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+; menu_moria_must_escape|^^Here lies Balin, Lord of Moria. With some trouble, you can decipher these words on the shattered remains of the tomb.  They tell tale of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|找到一条出去的路！
+; menu_moria_escape_sucess|^^After countless hours in the darkness, you finally find a staircase that leads up.  At first it is barely noticeable, but it steadily gets lighter. Finally — a junction that you remember. After a few more steps, you are out in the open.  Your troops have been waiting anxiously for you and can't wait to leave this valley as quickly as possible.
+; mno_moria_exit_found|Get out of here!
 menu_castle_outside|你在{s2}的外面。{s11} {s3} {s4}
-mno_cheat_steal_book_door|获得《马萨布尔之书》
+; mno_cheat_steal_book_door|Inspect the tomb...
 ; mno_moria_enter|Return into main hall of Moria through the secret entrance
 mno_moria_enter_door|进入摩瑞亚
 mno_castle_start_siege|围攻{reg6?城镇:城堡}。
@@ -285,7 +286,7 @@ mno_siege_defender_troops_join_battle|坐镇指挥，让你的部队攻击。
 mno_siege_defender_do_not_join_battle|不卷入纷争。
 menu_siege_join_defense|{s4}^^我军伤亡：{s8}^^盟军伤亡：{s9}^^敌军伤亡：{s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^整个世界在你眼前一黑，不知过了多久你恢复了意识，发现你自己躺在你倒下的地方。 你的敌人一定以为死死了，才把你留在原地。 不论怎样，似乎你身上的伤没有一处是致命的，虽然你感到很虚弱，但是你发现你自己还是勉强可以坚持站起来行走。
-menu_town_bandits_succeeded|^^^^^你如同割麦子一般宰杀着半兽人！ 当你再次孤身一人的时候，你的脚边散布着或昏厥，或垂死，或已经死亡的攻击者。当地人肯定会非常感激你的，毕竟你在这次的半兽人威胁中救了他们的命。
+; menu_town_bandits_succeeded|^^^^^The bandits fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
 menu_town_brawl_lost|^^^^^^你被击昏倒地了，人们迅速洗劫了你身上所有的贵重财物。
 menu_town_brawl_won|^^^^^你击败了你的对手，但守卫已经发出警号。 你迅速地从对手尸体身上搜刮出一点贵重物品消失在街口。^也许，下次他们会给你带来更多的麻烦了。
 menu_close|没什么。
@@ -334,13 +335,15 @@ menu_sneak_into_town_caught_dispersed_guards|你轻易地甩掉了守卫，消�
 menu_sneak_into_town_caught_ran_away|你杀开一条血路后终于夺路而逃，迅速逃到了附近的安全地带。
 menu_tld_player_defeated|^^^^^突然你的头部一阵剧痛！\\你全身颤抖，眼前越来越黑…^这就是你在中土世界的终点了？
 menu_recover_after_death_fangorn|你醒了过来，发现四周依旧是一片森林。 你的每根骨头都痛得厉害，你竟然奇迹般地还活着。^^你被击败了，但至少你还活着。 ^你现在弄清了这该死的树林中发生的一切^而且你还能活着汇报。^^但真有人会相信你么？
-menu_recover_after_death_moria|^^^^^你渐渐恢复意识，带着泥土气息的微风吹在你的脸上，你竟然还活着！^那些半兽人总喜欢挖个坑把死人的尸体丢进去放，它们当时肯定把你当成尸体丢到了最底下。^却不想他们挖的坑底下有条地下河，这就样，你掉进了地下河，河流把你带了出来。
+; menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream. Your party was attacked while waiting for your return.
 mno_whatever|站起来！
 menu_recover_after_death_default|^^^^^你渐渐恢复意识，发现四周静悄悄的。 你的敌人一定认为你已经死了，就这样把你丢在这里。 看起来你的伤口似乎并不致命；你感觉很糟糕，但你依然活着。 你慢慢站了起来，开始寻找其他幸存者。
 menu_recover_after_death_town|^^^^你渐渐恢复了意识，发现自己身处在城郊。 你还活着！ 周围一个人都没有。你拖着满是伤痕的身体离开了城镇。你感觉糟糕透顶，但幸好浑身没有一处致命伤，你还能走。
 menu_recover_after_death_town_alone|你渐渐恢复了意识，发现自己身处在城郊。 你还活着！ 周围一个人都没有。你拖着满是伤痕的身体离开了城镇。你的同伴找到了你。你感觉糟糕透顶，但幸好浑身没有一处致命伤，你还能走。
 menu_notification_center_under_siege|{s1}正被{s3}的{s2}围攻！
 menu_notification_one_side_left|^^^^^漫长的魔戒战争结束了^^ {s1}击败了所有敌人并取得最终的胜利！ 让我们欢呼吧！
+; mno_go_to_capital|Visit your capital and celebrate the victory...
+; mno_exit_game1|Exit
 menu_notification_total_defeat|^^^^^对于你来说，魔戒战争结束了！^^ {s1}被他们的敌人所击败，而你彻底失败了！
 menu_notification_your_faction_collapsed|^^^^^你的故乡{s11}被摧毁了！^但其他盟国仍在奋战中。你可以去帮助任意一个{s11}方的盟国，这也可以帮助你方获胜。
 menu_notification_faction_defeated|^^^^^ {s1}被击败了！^ {s1}从此将不复存在，摧毁它的势力是{s13}！
@@ -422,17 +425,16 @@ mno_next_rescue_scene_door|继续向前！
 mno_pick_troops1|选择一起执行任务的同伴，已选择了{reg0}人
 menu_pick_troops|你要选择谁和你一起执行这次潜行任务？^只有身手最敏捷的部下和同伴能够加入行动。^作为队伍中荒野求生技能最高的人，{reg65?{s1}建议你最多:你觉得能}带{reg11}名手下。^^目前你选择了{reg0}名。
 mno_go_forward|结束同伴选择，然后继续。
-menu_burial_mound|你来到曾隶属于{s2}的{s1}的埋尸处。他在和{s28}的战斗中战败。这里是由他斩杀敌人后留下的破损武器堆积而成的。
+; menu_burial_mound|^You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|跪下并献上你的敬意。
 mno_swear_oath|复仇誓言！
 mno_despoil|亵渎这里
 mno_leave_mound|离开这里
 menu_burial_mound_respects|你满怀敬意地在{s1}之墓前跪下，默默地为其祈祷，愿其往生极乐。现在是时候继续你的旅途了。
-menu_burial_mound_oath|你高声宣誓，一定要为{s4}的死复仇。你将坚持不懈地追逐超越{s3}的力量，并会亲手将其杀死。 你的誓言随风而漾，四海皆知。
+; menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s4}.   You would relentlessly seek out {s3} and destroy {reg11?her:him}.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
 menu_funeral_pyre_oath|你高声宣誓，一定要为{s4}的死复仇。你将日以夜继地追踪{s3}的部队，并亲手碾碎他们。你的誓言随风而漾，四海皆知。
-mno_leave_pyre_oath|离开火葬堆
 menu_burial_mound_despoil|你亲手推倒了{s1}的墓碑，恶毒地诅咒和谩骂，对这个石块做了一些无法形容的暴行。你的追随者因感到恐惧而后退，但他们为你的恶行再一次对你感到敬畏。
-menu_funeral_pyre|你来到一处属于{s3}的{s2}的火葬堆。他在和{s28}的战斗中战败。他的遗体被他的亲卫隆重地火葬，没有一丝残余。
+; menu_funeral_pyre|^You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
 mno_leave_pyre|离开火葬堆
 menu_town_ruins|当你靠近，你看到{s1}实际上是{s2}
 mno_ruin_menu_0|探索这个地方。
@@ -440,11 +442,19 @@ mno_ruin_leave|离开…
 menu_death|你被杀害了。 尽管战争仍旧如火如荼，但这已经不是你要关心的事儿了。
 menu_animal_ambush|你和你的同伴在休息的时候，突然分开了…
 menu_animal_ambush_success|你面前的{s2}{reg0?堕落者：堕落者}如小麦般被你收割。很快，所有的攻击者都躺倒在地，重伤或死亡。 {s3}
-menu_animal_ambush_fail|动物咬撕你{reg0?，:和你的同伴{reg2?们，:，}}但幸运的是，你设法避开他们。希望他们不会再攻击你。
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
 ; menu_isengard_flooding|^^^^^@You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 ; mno_isengard_continue|Continue
 menu_build_your_scene|你可以在这里创造属于你自己的战场场景。首先在设置中打开编辑模式，再选择底下任意一个存位，然后进入场景按Ctrl+E打开编辑模式。你可以把自己的作品提交给TLD制作组，做得很好的话，你的场景会在下一版本的随机战斗中出现！（提交时请重命名，并把TLD/SceneObj文件夹下相应的sco文件发给制作组）^^记得说明你所制作的场景，具体是在中土的哪个地方。 ^友情提示：不要做深水或高山，或是其他难以通行的地形——除非你是资深场景制作师，明白如何利用AI网格让AI避开“陷坑”。^（#0~1是给攻击方，＃4是给防守方，别碰＃5-8
 mno_back_3dot|返回…
+; menu_wott_expelled_from_faction|For your betrayal, you were expelled from your faction and {s11} has named you an outlaw and an enemy of the {reg11?Hand:Eye}. As an exile, you are now forced to join {s3}.
+; menu_wott_stay_with_faction|{s11} applauds your wise counsel. Your faction follows your example and collectively joins {s12}.
+; menu_fulfilled_oath_personal|^As {s5} lies in the dust before you, a heavy burden is lifted from your shoulders. The death of {s6} has been avenged!
+; menu_fulfilled_oath_personal_nokill|^Your troops recognize that you have defeated {s10} repeatedly and should rightfully be seen as {reg11?her:his} worst foe. Your oath is considered fulfilled. ^^The enemy paid dearly for the killing of {s11}. Still, there is a stale taste to this victory.
+; menu_oath_quest_fail|You swore a bitter oath and you bitterly failed to keep it. Your enemies laugh at your failure, and all your friends suffer from the shame you have brought upon them. In all the lands of Middle-earth, you shall be known as an oathbreaker.
+; menu_campaign_won|^^^Thank you for playing The Last Days of the Third Age!
+; mno_credits_tld|TLD Credits
+; mno_exit_game2|Quit to main menu
 mno_back|返回
 mno_next|接下来…
 ; mno_previous|Previous...

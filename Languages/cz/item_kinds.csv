@@ -150,7 +150,6 @@ itm_arnor_shield_a|Arnorský kulatý štít
 itm_arnor_sword_c|Arnorský válečný meč
 itm_arnor_sword_a|Arnorský meč bastard
 itm_arnor_sword_f|Arnorský krátký meč
-itm_riv_helm_a|Rivendelská čepka
 itm_riv_helm_b|Rivendelská lučišnická helma
 itm_riv_helm_c|Rivendelská pěchotní helma
 itm_tiara_reward|Elfí Pán Tiara
@@ -285,7 +284,7 @@ itm_lorien_round_shield|Lorienský kulatý štít
 itm_lorien_helm_a|Přilba Lorienských lučištníků
 itm_lorien_helm_b|Přilba Lorienských lučištníků
 itm_lorien_helm_c|Přilba Lorienské pěchoty
-itm_orc_coif|Skřetí přilba z lebky
+itm_orc_coif2|Skřetí přilba z lebky
 itm_orc_greaves|Orčí kroužkové boty
 itm_orc_ragwrap|Skřetí onuce
 itm_orc_furboots|Skřetí kožené boty
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|Helma kapitána Skurut-hai
 itm_isen_uruk_helm_e|Helma stopaře Skurut-hai
 itm_uruk_pike_b|Mordorská píka
 itm_uruk_falchion_a|Skurutí Falchion
-itm_uruk_falchion_b|Velká skřetí šavle
+itm_orc_bastard_scimitar|Velká skřetí šavle
+; itm_orc_cleaver_a|Orc Cleaver
+itm_orc_scimitar_b|Skřetí šavle
+itm_orc_sabre_b|Skřetí šavle
+; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|Meč ze Železného pasu
 itm_isengard_axe|Sekera Železného pasu
 itm_isengard_hammer|Kladivo Železného pasu
@@ -340,7 +343,7 @@ itm_orc_pick|Skřetí párátko
 itm_orc_hammer|Kladivo zla
 itm_orc_club_b|Palice jezdce na vrku
 itm_orc_club_c|Ostnatá skřetí palice
-itm_orc_club_d|Palcát zla
+itm_orc_mace|Palcát zla
 itm_orc_sledgehammer|Skřetí velké kladivo
 itm_orc_simple_spear|Skřetí oštěp
 itm_orc_skull_spear|Skřetí lebkový oštěp
@@ -375,6 +378,10 @@ itm_orc_morion|Skřetí morion
 itm_orc_beakhelm|Skřetí bascinet
 itm_orc_bughelm|Skřetí helma
 itm_orc_visorhelm|Skřetí přilba s hledím
+; itm_orc_coif|Evil Coif
+itm_orc_skullcap|Skřetí přilba z lebky
+; itm_orc_skullhelm|Orc Skullhelm
+itm_orc_barbuta|Skřetí helma s nánosníkem
 itm_m_orc_light_a|Mordorká skřetí lehká zbroj
 itm_m_orc_light_b|Mordorká skřetí lehká zbroj
 itm_m_orc_light_c|Mordorká skřetí lehká zbroj
@@ -839,3 +846,6 @@ itm_civilian_carry_oil|Olej
 itm_civilian_carry_wood2|Dřevo
 itm_work_basket|Košík
 itm_work_basket_2|Košík
+itm_spider_mount|Pavouk
+; itm_marker_night_troop|Trait: Night Troop
+; itm_marker_berserker|Trait: Berserker

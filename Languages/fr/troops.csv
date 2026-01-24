@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|Combattant orque de Gundabad
 trp_i3_gunda_orc_fighter_pl|Combattants orques de Gundabad
 trp_i4_gunda_orc_warrior|Guerrier orque de Gundabad
 trp_i4_gunda_orc_warrior_pl|Guerriers orque de Gundabad
-trp_i4_gunda_orc_berserker|Berserker orque de Gundabad
-trp_i4_gunda_orc_berserker_pl|Berserkers orques de Gundabad
+trp_i5_gunda_orc_berserker|Berserker orque de Gundabad
+trp_i5_gunda_orc_berserker_pl|Berserkers orques de Gundabad
 trp_ca4_gunda_skirmisher|Tirailleur de Gundabad
 trp_ca4_gunda_skirmisher_pl|Tirailleurs de Gundabad
 trp_ca5_gunda_clan_skirmisher|Tirailleur gobelin du clan du Nord
@@ -1185,8 +1185,8 @@ trp_smith_gundabad_ne|Blurg Vendeurneige
 trp_smith_gundabad_ne_pl|la Forge
 trp_smith_gundabad_nw|Blurg Vendeurneige
 trp_smith_gundabad_nw_pl|la Forge
-trp_smith_gundabad_s|Blurg Vendeurneige
-trp_smith_gundabad_s_pl|la Forge
+trp_smith_moria_s|Burgak le forgeron
+trp_smith_moria_s_pl|la Forge
 trp_smith_gundabad_m|Blurg Vendeurneige
 trp_smith_gundabad_m_pl|la Forge
 trp_barman_eastemnet|Tavernier
@@ -1211,8 +1211,8 @@ trp_merchant_woodelf_west_camp|Maître de l'approvisionnement
 trp_merchant_woodelf_west_camp_pl|l'entrepôt des elfes
 trp_merchant_gundabad_m|Maître de l'approvisionnement
 trp_merchant_gundabad_m_pl|la réserve du camp
-trp_merchant_gundabad_s|Maître de l'approvisionnement
-trp_merchant_gundabad_s_pl|la réserve du camp
+trp_merchant_moria_s|Maître de l'approvisionnement
+trp_merchant_moria_s_pl|la réserve du camp
 trp_merchant_gundabad_nw|Maître de l'approvisionnement
 trp_merchant_gundabad_nw_pl|la réserve du camp
 trp_merchant_gundabad_ne|Maître de l'approvisionnement
@@ -1445,8 +1445,8 @@ trp_elder_gunda_ne|Ancien orque
 trp_elder_gunda_ne_pl|le camp
 trp_elder_gunda_nw|Ancien orque
 trp_elder_gunda_nw_pl|le camp
-trp_elder_gunda_s|Ancien orque
-trp_elder_gunda_s_pl|le camp
+trp_elder_moria_s|Chef de camp orque
+trp_elder_moria_s_pl|le camp
 trp_elder_gunda_m|Ancien orque
 trp_elder_gunda_m_pl|le camp
 trp_elder_ironhill|Chef de camp
@@ -1501,8 +1501,8 @@ trp_evil_priest|Prêtre maléfique
 trp_evil_priest_pl|Prêtres maléfiques
 trp_wolf_rider_of_mirkwood|Chevaucheur de loup de Grand'Peur
 trp_wolf_rider_of_mirkwood_pl|Chevaucheurs de loups de Grand'Peur
-trp_warg_rider_of_mirkwood|Chevaucheur de warg de Grand'Peur
-trp_warg_rider_of_mirkwood_pl|Chevaucheurs de wargs de Grand'Peur
+trp_bear_strong|Ours
+trp_bear_strong_pl|Ours
 trp_gate_aggravator|Défense de la porte
 trp_orc_pretender|Prétendant orque
 trp_human_prisoner|Prisonnier humain

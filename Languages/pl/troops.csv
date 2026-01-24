@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|Gundabadzki Ork Wojownik
 trp_i3_gunda_orc_fighter_pl|Gundabadzkich Orków Wojowników
 trp_i4_gunda_orc_warrior|Gundabadzki Ork Wojownik
 trp_i4_gunda_orc_warrior_pl|Gundabadzkich Orków Wojowników
-trp_i4_gunda_orc_berserker|Gundabadzki Ork Berserker
-trp_i4_gunda_orc_berserker_pl|Gundabadzkich Orków Berserkerów
+trp_i5_gunda_orc_berserker|Gundabadzki Ork Berserker
+trp_i5_gunda_orc_berserker_pl|Gundabadzkich Orków Berserkerów
 trp_ca4_gunda_skirmisher|Gundabadzki Harcownik
 trp_ca4_gunda_skirmisher_pl|Gundabadzkich Harcowników
 trp_ca5_gunda_clan_skirmisher|Goblin Harcownik Północnych Klanów
@@ -1185,8 +1185,8 @@ trp_smith_gundabad_ne|Blurg Handlarz Śniegiem
 trp_smith_gundabad_ne_pl|Kuźnia
 trp_smith_gundabad_nw|Blurg Handlarz Śniegiem
 trp_smith_gundabad_nw_pl|Kuźnia
-trp_smith_gundabad_s|Blurg Handlarz Śniegiem
-trp_smith_gundabad_s_pl|Kuźnia
+trp_smith_moria_s|Kowal Burgak
+trp_smith_moria_s_pl|Kuźnia
 trp_smith_gundabad_m|Blurg Handlarz Śniegiem
 trp_smith_gundabad_m_pl|Kuźnia
 trp_barman_eastemnet|Karczmarz
@@ -1211,8 +1211,8 @@ trp_merchant_woodelf_west_camp|Zaopatrzeniowiec
 trp_merchant_woodelf_west_camp_pl|elfickie zasoby
 trp_merchant_gundabad_m|Zaopatrzeniowiec
 trp_merchant_gundabad_m_pl|obozowa skrytka
-trp_merchant_gundabad_s|Zaopatrzeniowiec
-trp_merchant_gundabad_s_pl|obozowa skrytka
+trp_merchant_moria_s|Zaopatrzeniowiec
+trp_merchant_moria_s_pl|obozowa skrytka
 trp_merchant_gundabad_nw|Zaopatrzeniowiec
 trp_merchant_gundabad_nw_pl|obozowa skrytka
 trp_merchant_gundabad_ne|Zaopatrzeniowiec
@@ -1445,8 +1445,8 @@ trp_elder_gunda_ne|Starszy Orków
 trp_elder_gunda_ne_pl|Obóz
 trp_elder_gunda_nw|Starszy Orków 
 trp_elder_gunda_nw_pl|Obóz
-trp_elder_gunda_s|Starszy Orków 
-trp_elder_gunda_s_pl|Obóz
+; trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s_pl|Obóz
 trp_elder_gunda_m|Starszy Orków 
 trp_elder_gunda_m_pl|Obóz
 trp_elder_ironhill|Przywódca Obozu
@@ -1501,8 +1501,8 @@ trp_evil_priest|Mroczny Kapłan
 trp_evil_priest_pl|Mroczni Kapłani
 trp_wolf_rider_of_mirkwood|Wilczy Jeździec z Mrocznej Puszczy
 trp_wolf_rider_of_mirkwood_pl|Wilczych Jeźdźców z Mrocznej Puszczy
-trp_warg_rider_of_mirkwood|Jeździec Wargów z Mrocznej Puszczy
-trp_warg_rider_of_mirkwood_pl|Jeźdźców Wargów z Mrocznej Puszczy
+trp_bear_strong|Niedźwiedź
+; trp_bear_strong_pl|Bears
 trp_gate_aggravator|Obrona Bram
 trp_orc_pretender|Ork Pretendent
 trp_human_prisoner|Więzień

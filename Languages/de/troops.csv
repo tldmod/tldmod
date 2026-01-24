@@ -730,8 +730,8 @@ trp_i3_gunda_orc_fighter|Ork-Kämpfer von Gundabad
 trp_i3_gunda_orc_fighter_pl|Ork-Kämpfer von Gundabad
 trp_i4_gunda_orc_warrior|Ork-Krieger von Gundabad
 trp_i4_gunda_orc_warrior_pl|Ork-Krieger von Gundabad
-trp_i4_gunda_orc_berserker|Ork-Berserker von Gundabad
-trp_i4_gunda_orc_berserker_pl|Ork-Berserker von Gundabad
+trp_i5_gunda_orc_berserker|Ork-Berserker von Gundabad
+trp_i5_gunda_orc_berserker_pl|Ork-Berserker von Gundabad
 trp_ca4_gunda_skirmisher|Scharmützler von Gundabad
 trp_ca4_gunda_skirmisher_pl|Scharmützler von Gundabad
 trp_ca5_gunda_clan_skirmisher|Warg-Scharmützler des Nordens
@@ -1185,8 +1185,8 @@ trp_smith_gundabad_ne|Blurg Schneehändler
 trp_smith_gundabad_ne_pl|die Schmiede
 trp_smith_gundabad_nw|Blurg Schneehändler
 trp_smith_gundabad_nw_pl|die Schmiede
-trp_smith_gundabad_s|Blurg Schneehändler
-trp_smith_gundabad_s_pl|die Schmiede
+trp_smith_moria_s|Burgak der Schmelzer
+trp_smith_moria_s_pl|die Schmiede
 trp_smith_gundabad_m|Blurg Schneehändler
 trp_smith_gundabad_m_pl|die Schmiede
 trp_barman_eastemnet|Wirt
@@ -1211,8 +1211,8 @@ trp_merchant_woodelf_west_camp|Lagerverwalter
 trp_merchant_woodelf_west_camp_pl|die Vorratslager der Elben
 trp_merchant_gundabad_m|Lagerverwalter
 trp_merchant_gundabad_m_pl|das Warenlager
-trp_merchant_gundabad_s|Lagerverwalter
-trp_merchant_gundabad_s_pl|das Warenlager
+trp_merchant_moria_s|Lagerverwalter
+trp_merchant_moria_s_pl|das Warenlager
 trp_merchant_gundabad_nw|Lagerverwalter
 trp_merchant_gundabad_nw_pl|das Warenlager
 trp_merchant_gundabad_ne|Lagerverwalter
@@ -1445,8 +1445,8 @@ trp_elder_gunda_ne|Orkältester
 trp_elder_gunda_ne_pl|dem Lager
 trp_elder_gunda_nw|Orkältester
 trp_elder_gunda_nw_pl|dem Lager
-trp_elder_gunda_s|Orkältester
-trp_elder_gunda_s_pl|dem Lager
+; trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s_pl|dem Lager
 trp_elder_gunda_m|Orkältester
 trp_elder_gunda_m_pl|dem Lager
 trp_elder_ironhill|Lageraufseher
@@ -1501,8 +1501,8 @@ trp_evil_priest|Böse Priester
 trp_evil_priest_pl|Böse Priester
 trp_wolf_rider_of_mirkwood|Wolfsreiter aus dem Düsterwald
 trp_wolf_rider_of_mirkwood_pl|Wolfsreiter aus dem Düsterwald
-trp_warg_rider_of_mirkwood|Wargreiter aus dem Düsterwald
-trp_warg_rider_of_mirkwood_pl|Wargreiter aus dem Düsterwald
+trp_bear_strong|Bär
+trp_bear_strong_pl|Bären
 trp_gate_aggravator|Torverteidigung
 trp_orc_pretender|Angeber-Ork
 trp_human_prisoner|Gefangener Mensch

@@ -1893,9 +1893,9 @@ str_trait_desc_merciful|あなたは悪意に満ちた敵の者にまで情け�
 str_trait_title_bravery|勇猛
 str_trait_desc_bravery|大いなる危機に直面した際に見せるあなたの勇猛さは、 広く知られています。 あなたの武勇は静かな酒場で語られ、 賢者の集う大広間で論じられています。 あなたの部下たちは勇気付けられ、 毎週士気ボーナスを受けます。
 str_trait_title_oathkeeper|誓いを守る者
-str_trait_desc_oathkeeper|あなたは不退転の誓いを宣言し、 なおかつそれを成就させました。 当然ながら、 あなたは有言実行の人物としての名声を手に入れました。 毎週影響力ポイントにボーナスを受けます。
+; str_trait_desc_oathkeeper|You have sworn grim oaths and lived to see them fulfilled. Subsequently you have aquired a reputation as a man of his word. Whenever you receive influence, there is a small chance for an influence bonus.
 str_trait_title_oathbreaker|誓いを破った者
-str_trait_desc_oathbreaker|あなたは不退転の誓いを宣言するも、 それを成し遂げる事に失敗しました。 そのため、 あなたは身の程を知らぬ者としての悪評を受けるようになりました。 毎週影響力ポイントにペナルティを受けます。
+; str_trait_desc_oathbreaker|You have sworn grim oaths and failed to see them through to their conclusion. Subsequently you have aquired a reputation as a man whose passion outstrips his prowess. Whenever you receive influence, there is a small chance for an influence malus.
 str_trait_title_orc_pit_champion|オーク闘技場の王者
 str_trait_desc_orc_pit_champion|最も過酷なオークの闘技会さえも最後まで生き残るあなたは、 残忍な戦士として知られるようになりました。 あなたの強さは、 配下の邪悪な者たちからの尊敬を集めると同時に、 大いに恐れられてもいます。 毎週士気にボーナスを受けます。
 str_trait_title_despoiler|略奪者
@@ -2521,3 +2521,5 @@ str_shortname_region_n_anduin_vale|アンドゥインの谷間の北部地方
 str_shortname_region_s_anduin_vale|アンドゥインの谷間の南部地方
 str_shortname_region_cair_andros|カイア・アンドロス
 str_isengard_hunting_camp_guildmaster_player_found_ok|その者の殺しっぷりが良ければ連れていくとしよう。そうでないのなら、 魚のようにおろしてやる。もしそこら辺にいるただのうじ虫であったら、 私を無駄にわずらわせたおまえもただではおかぬ！
+; str_trait_title_animal_fighter|Beast Slayer
+; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.

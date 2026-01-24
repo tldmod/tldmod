@@ -150,7 +150,6 @@ itm_arnor_shield_a|Escudo Redondo de Arnor
 itm_arnor_sword_c|Espada de Guerra de Arnor
 itm_arnor_sword_a|Espada Bastarda de Arnor
 itm_arnor_sword_f|Espada Curta de Arnor
-itm_riv_helm_a|Coifa de Valfenda
 itm_riv_helm_b|Elmo de Arqueiro de Valfenda
 itm_riv_helm_c|Elmo de Infantaria de Valfenda
 itm_tiara_reward|Tiara de Senhor Elfo
@@ -285,7 +284,7 @@ itm_lorien_round_shield|Escudo Redondo de Lorien
 itm_lorien_helm_a|Elmo de Arqueiro de Lorien
 itm_lorien_helm_b|Elmo de Arqueiro de Lorien
 itm_lorien_helm_c|Elmo de Infantaria de Lorien
-itm_orc_coif|Capacete de Orc
+itm_orc_coif2|Capacete de Orc
 itm_orc_greaves|Botas de Correntes de Orc
 itm_orc_ragwrap|Trapos de Orc
 itm_orc_furboots|Botas de Pele de Orc
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|Elmo de Uruk-Hai Capitão
 itm_isen_uruk_helm_e|Elmo de Rastreador Uruk-Hai
 itm_uruk_pike_b|Pique de Mordor
 itm_uruk_falchion_a|Cimitarra de Uruk
-itm_uruk_falchion_b|Grande Cimitarra de Orc
+itm_orc_bastard_scimitar|Grande Cimitarra de Orc
+; itm_orc_cleaver_a|Orc Cleaver
+itm_orc_scimitar_b|Cimitarra de Orc
+itm_orc_sabre_b|Sabre de Orc
+; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|Espada de Isengard
 itm_isengard_axe|Machado de Isengard
 itm_isengard_hammer|Martelo de Isengard
@@ -340,7 +343,7 @@ itm_orc_pick|Picareta de Orc
 itm_orc_hammer|Martelo Maligno
 itm_orc_club_b|Porrete do Cavaleiro de Warg
 itm_orc_club_c|Porrete Espetado de Orc
-itm_orc_club_d|Maça Maligna
+itm_orc_mace|Maça Maligna
 itm_orc_sledgehammer|Marreta de Orc
 itm_orc_simple_spear|Lança de Orc
 itm_orc_skull_spear|Lança de Orc de Caveira
@@ -375,6 +378,10 @@ itm_orc_morion|Morião de Orc
 itm_orc_beakhelm|Elmo de Bico de Orc
 itm_orc_bughelm|Elmo de Inseto de Orc
 itm_orc_visorhelm|Elmo com Viseira de Orc
+; itm_orc_coif|Evil Coif
+itm_orc_skullcap|Capacete de Orc
+; itm_orc_skullhelm|Orc Skullhelm
+itm_orc_barbuta|Elmo Nasal de Orc
 itm_m_orc_light_a|Armadura Leve de Orc de Mordor
 itm_m_orc_light_b|Armadura Leve de Orc de Mordor
 itm_m_orc_light_c|Armadura Leve de Orc de Mordor
@@ -839,3 +846,6 @@ itm_civilian_carry_oil|Óleo
 itm_civilian_carry_wood2|Madeira
 itm_work_basket|Cesta
 itm_work_basket_2|Cesta
+itm_spider_mount|Aranha
+; itm_marker_night_troop|Trait: Night Troop
+; itm_marker_berserker|Trait: Berserker

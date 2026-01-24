@@ -150,7 +150,6 @@ itm_arnor_shield_c|アルノール騎兵の盾
 itm_arnor_sword_c|アルノールの長剣
 itm_arnor_sword_a|アルノールのバスタードソード
 itm_arnor_sword_f|アルノールの短剣
-itm_riv_helm_a|裂け谷のコイフ
 itm_riv_helm_b|裂け谷弓兵の兜
 itm_riv_helm_c|裂け谷突撃兵の兜
 itm_tiara_reward|エルフロードのティアラ
@@ -285,7 +284,7 @@ itm_lorien_round_shield|ローリエンの丸盾
 itm_lorien_helm_a|ローリエン弓兵の兜
 itm_lorien_helm_b|ローリエン弓兵の兜
 itm_lorien_helm_c|ローリエン歩兵の兜
-itm_orc_coif|オークの帽子
+itm_orc_coif2|オークの帽子
 itm_orc_greaves|オークの鎖ブーツ
 itm_orc_ragwrap|オークのぼろ布
 itm_orc_furboots|オークの毛皮ブーツ
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|ウルク＝ハイキャプテンの兜
 itm_isen_uruk_helm_e|ウルク＝ハイ追跡兵の兜
 itm_uruk_pike_b|モルドールのパイク
 itm_uruk_falchion_a|ウルクのファルシオン
-itm_uruk_falchion_b|オークの大シミター
+itm_orc_bastard_scimitar|オークの大シミター
+; itm_orc_cleaver_a|Orc Cleaver
+itm_orc_scimitar_b|オークのシミター
+itm_orc_sabre_b|オークのサーベル
+; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|アイゼンガルドの剣
 itm_isengard_axe|アイゼンガルドの斧
 itm_isengard_hammer|アイゼンガルドの槌
@@ -340,7 +343,7 @@ itm_orc_pick|オークのつるはし
 itm_orc_hammer|邪の槌
 itm_orc_club_b|ワーグ乗りの棍棒
 itm_orc_club_c|とげつきのオークの棍棒
-itm_orc_club_d|闇のメイス
+itm_orc_mace|闇のメイス
 itm_orc_sledgehammer|オークの大槌
 itm_orc_simple_spear|オークの槍
 itm_orc_skull_spear|オークのどくろ槍
@@ -375,6 +378,10 @@ itm_orc_morion|オークのモリオン
 itm_orc_beakhelm|オークのくちばし付き兜
 itm_orc_bughelm|オークの虫兜
 itm_orc_visorhelm|オークのバイザー兜
+; itm_orc_coif|Evil Coif
+itm_orc_skullcap|オークの帽子
+; itm_orc_skullhelm|Orc Skullhelm
+itm_orc_barbuta|オークの鼻当て付き兜
 itm_m_orc_light_a|モルドールオークの軽装鎧
 itm_m_orc_light_b|モルドールオークの軽装鎧
 itm_m_orc_light_c|モルドールオークの軽装鎧
@@ -839,3 +846,6 @@ itm_denethor_robe|上等な衣装
 ; itm_civilian_carry_wood2|Wood
 ; itm_work_basket|Basket
 ; itm_work_basket_2|Basket
+itm_spider_mount|大蜘蛛
+; itm_marker_night_troop|Trait: Night Troop
+; itm_marker_berserker|Trait: Berserker

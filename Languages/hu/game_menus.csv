@@ -20,7 +20,6 @@ mno_custom_battle_scenario_7|Rajtaütés, Orkok a Bakacsinerdő ellen
 mno_custom_battle_scenario_8|Durin népének végső helytállása
 mno_custom_battle_scenario_88|egy Ork felderítő csapat üldözése
 mno_custom_battle_scenario_11|Teszt csaták (Összhang beállítása!)
-mno_custom_battle_scenario_10|Látvány tesztharc
 mno_troll_battle_scenario|Troll Csata Tesztelés
 mno_warg_battle_scenario|Varg Csata Tesztelés
 mno_build_your_own_scene|** Alkosd meg saját csatajelenetedet az Utolsó Napokhoz **
@@ -197,7 +196,7 @@ menu_cattle_herd|Találkozol néhány emberrel.
 mno_cattle_drive_away|Parancsold meg, hogy kövessenek.
 mno_cattle_stop|Állítsd meg őket.
 mno_leave|Távozás.
-menu_simple_encounter|^^^^^{s2}^{reg22} csapatod áll készen a csatára {reg11} ellen.^^A csata {s3}{s4} területén zajlik le.^^Parancsaid?
+; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.{s17}^^Your orders?
 mno_encounter_attack|{reg21?Megrohamozni őket:Felkészülni a csatára.}
 mno_encounter_order_attack|Parancsold meg csapataidnak, {reg21?támadjanak:nézzenek szembe velük} nélküled.
 mno_control_allies_menu|Használd a befolyásodat, hogy parancsot adj szövetségeseidnek a harctéren.
@@ -232,7 +231,7 @@ mno_pre_join_help_attackers|{s2} segítségére sietsz.
 mno_pre_join_help_defenders|{s1} segítségére sietsz.
 mno_pre_join_help_refugees|{s1} segítségére sietsz.
 mno_pre_join_leave|Nem avatkozol közbe.
-menu_join_battle|^^^{s2} segítségére sietsz {s1} ellen.^ {reg22} katona áll készen a csatára az ellenség {reg11} egysége ellen.^^A csata {s3}{s4} területén zajlik le.
+; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}. {s17}
 mno_join_attack|Az ellenség megrohamozása.
 mno_join_order_attack|Utasítsd csapataidat szövetségeseiddel az ellenség megtámadására, miközben te hátra maradsz.
 mno_control_allies_join_menu|Használd a befolyásodat, hogy parancsot adj szövetségeseidnek a harctéren.
@@ -251,14 +250,16 @@ menu_join_siege_outside|^^^^^^{s2} ostrom alá vette {s1}t.
 mno_approach_besiegers|Az ostromtábor megközelítése.
 mno_pass_through_siege|Átkelés az ostromvonalakon és belépés {s1} városába.
 menu_cut_siege_without_fight|Az ostromlók nem tartóztatnak fel a kapuhoz vezető úton.
-menu_besiegers_camp_with_allies|{s1} ostrom alatt marad. {s2} zászlói az ostromlók tábora felett lengedezik, ahol téged és csapataidat szívesen látják.
+; menu_besiegers_camp_with_allies|{s1} is under siege. The banners of {s2} fly above the camp of the besiegers, who are preparing for their next assault. {s17}
 mno_talk_to_siege_commander|Kérj találkozót a parancsnokkal.
 mno_join_siege_with_allies|Csatlakozz a következő támadáshoz.
 mno_join_siege_stay_back|Parancsold meg katonáidnak, hogy csatlakozzanak nélküled a következő támadáshoz.
-menu_moria_must_escape|^^A könyv úgy tűnik, az utolsó kísérletet írja le, amikor a törpék újra megpróbáltak letelepedni Móriában, ami látszólag minden résztvevő brutális halálával végződött. Ahogy a sötét végzetükön töprengsz, hirtelen éles kiáltásokat és sok láb sietős zaját hallod.^ Jönnek!^ Gyorsan elhagyva a termet, észreveszed, hogy a hangok a folyosóról érkeznek. Nincs más választásod, mint a másik irányba menekülni, egy keskeny, kanyargós alagútba és lefelé... ^...^Pár óra múlva rájössz, hogy mélyen Mória belsejében elvesztél, és ki kell találnod egy kiutat
+; menu_moria_must_escape|^^Here lies Balin, Lord of Moria. With some trouble, you can decipher these words on the shattered remains of the tomb.  They tell tale of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Találd meg a kifelé vezető utat!
+; menu_moria_escape_sucess|^^After countless hours in the darkness, you finally find a staircase that leads up.  At first it is barely noticeable, but it steadily gets lighter. Finally — a junction that you remember. After a few more steps, you are out in the open.  Your troops have been waiting anxiously for you and can't wait to leave this valley as quickly as possible.
+; mno_moria_exit_found|Get out of here!
 menu_castle_outside|Kint vagy {s2}.{s11} {s3} {s4}
-mno_cheat_steal_book_door|Szerezd meg a könyvet
+; mno_cheat_steal_book_door|Inspect the tomb...
 mno_moria_enter|Visszatérés Mória főcsarnokába a titkos bejáraton keresztül.
 mno_moria_enter_door|Belépés Móriába.
 mno_castle_start_siege|{reg6?város:kastély} megostromlása.
@@ -285,7 +286,7 @@ mno_siege_defender_troops_join_battle|Parancsold meg katonáidnak, hogy menjenek
 mno_siege_defender_do_not_join_battle|Nem avatkozol közbe.
 menu_siege_join_defense|{s4}^^Veszteségeid: {s8}^^Szövetségesek veszteségei: {s9}^^Ellenség veszteségei: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^A szökevény kemény csapása a földre küld, látásod elhomályosul és elájulsz. Az idő csak telik. Amikor kinyitod a szemeidet, véresen és kék-zöld foltosan heversz a földön, de szerencsédre egyik seb sem tűnik halálosnak.
-menu_town_bandits_succeeded|^^^^^A koboldok elhullanak előtted mint a búzakalászok a kasza előtt! Hamarosan egyedül vagy csak talpon, míg támadóid többsége eszméletlen, halott vagy éppen haldoklik. A helyiek biztosan nagyon hálásak lesznek, ha megtudják, megmentetted őket ettől a veszedelemtől.
+; menu_town_bandits_succeeded|^^^^^The bandits fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
 menu_town_brawl_lost|^^^^^^Kiütöttek téged. Akiket megtámadtál gyorsan átkutatnak értéktárgyaidért, mielőtt folytatnák mindennapi teendőiket.
 menu_town_brawl_won|^^^^^Minden ellenfelet és őrt megvertél, akiket a zavargás elfolyására küldtek. Gyorsan megmotozod őket értéktárgyakat keresve, majd eltűnsz amíg csillapodnak a kedélyek.^Talán legközelebb több tiszteletet mutatnak és kihátrálnak.
 menu_close|Semmi.
@@ -334,13 +335,15 @@ menu_sneak_into_town_caught_dispersed_guards|Sikerül leráznod az őröket, és
 menu_sneak_into_town_caught_ran_away|Sikerül átjutnod a kapun, és gyorsan visszavonulni a városon kívüli biztonságba.
 menu_tld_player_defeated|^^^^^Hirtelen kibírhatatlan fájdalmat érzel a tarkódban. \\ Összerázkódsz, ahogy a világ körülötted sötétségbe veszik...^Ez hát a vég?
 menu_recover_after_death_fangorn|Felébredsz. Az erdő nyugodt körülötted, és noha minden csontod sajog, csodával határos módon még élsz.^^Vereséget szenvedtél, de legalább láttad a történteket. ^Most már tudod mi folyik ebben az átkozott erdőben,^és élsz is, hogy elmondd másoknak. ^^De fog-e bárki hinni neked?
-menu_recover_after_death_moria|^^^^^Eszméletedhez térsz. Puha talajon fekszel, friss szél simogatja arcod. A természetben vagy!^Az orkok bizonyára halottnak néztek, és kidobtak valami sötét verembe.^Valószínűleg egy földalatti folyam sodort a felszínre.
+; menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream. Your party was attacked while waiting for your return.
 mno_whatever|Kelj fel!
 menu_recover_after_death_default|^^^^^Visszanyered az eszméleted. Ott fekszel, ahol elestél. Bizonyára halottnak néztek, és nem törődtek veled. Mindenesetre egyik sebed sem volt végzetes, és bár borzalmasan érzed magad, még képes vagy járni. Felkelsz, és további túlélők után kutatsz a csapatodból.
 menu_recover_after_death_town|^^^^Visszanyered az eszméletedet és a város határában találod magad. Életben vagy! Senki sincs körülötted, így élve a lehetőséggel kivonszolod magad a városból. Úgy látszik egyik sebesülésed sem volt végzetes, és bár borzalmasan érzed magad, még képes vagy járni.
 menu_recover_after_death_town_alone|Visszanyered az eszméletedet és a város határában találod magad. Életben vagy! Senki sincs körülötted, így élve a lehetőséggel kivonszolod magad a városból. A társaid megtalálnak téged. Úgy látszik egyik sebesülésed sem volt végzeted, és bár borzalmasan érzed magad, még képes vagy járni.
 menu_notification_center_under_siege|{s1} ostrom alá lett véve {s3}i {s2} által!
 menu_notification_one_side_left|^^^^^A Gyűrű Háborúja véget ért!^^A {s1} legyőzte az összes ellenfelét és győzelmet aratott!
+; mno_go_to_capital|Visit your capital and celebrate the victory...
+; mno_exit_game1|Exit
 menu_notification_total_defeat|^^^^^A Gyűrű Háborúja számodra véget ért!^^A {s1} legyőzetett ellenfelei által és vereséget szenvedtél!
 menu_notification_your_faction_collapsed|^^^^^A {s11} hazád vereséget szenvedett!^Ennek ellenére, szövetségeseseid még küzdenek a Háborúban. Te, együttműködve akárkivel {s11} népéből, még segíthet hogy a te oldalad győzzön.
 menu_notification_faction_defeated|^^^^^{s1} Legyőzetett!^{s1} nincs többé, le lett győzve {s13} serege által!
@@ -422,17 +425,16 @@ mno_next_rescue_scene_door|Haladj tovább!
 mno_pick_troops1|Válassz társat a küldetésre, {reg0} kiválasztva
 menu_pick_troops|Kit vinnél magaddal a lopakodós küldetésre? ^Csak a legfürgébb katonáid és társaid vehetnek részt. ^Mivel te vagy a párt tagja a legmagasabb vadászat/túlélés képességgel, {reg65?{s1} tanácsolja\\:te döntesz}, hogy legfeljebb {reg11} katonát vihetsz magaddal. ^^Jelenleg {reg0} társat választottál.
 mno_go_forward|Társak kiválasztásának befejezése, és folytatás.
-menu_burial_mound|Megközelíted {s2}i {s1} sírbuckáját. Csatában győzte le {s28} seregei.  Halmokban állnak rajta a legyőzött ellenfelei fogazott fegyverei.
+; menu_burial_mound|^You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|Térdelj le és tedd tiszteleted.
 mno_swear_oath|Esküdj bosszút!
 mno_despoil|Gyalázd meg a sírhelyet
 mno_leave_mound|Hagyd el a sírdombot.
 menu_burial_mound_respects|Letérdelsz és tiszteletedet teszed {s1} bajtársadnak, némán formálva az ima szavait amivel gyors utazást kívánsz neki a túlvilágra. Nincs más dolog amit itt tehetnél.
-menu_burial_mound_oath|Hangosan bosszút esküszöl {s4} halála miatt.  Fáradhatatlanul fogod keresni {s3} hadait és elpusztítani őket.  Szavaidat messzire viszi a szél, és ki a megmondhatója annak, hogy nem hallották őket még a tengerentúlon is?
+; menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s4}.   You would relentlessly seek out {s3} and destroy {reg11?her:him}.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
 menu_funeral_pyre_oath|Hangosan bosszút esküszöl {s4} halála miatt.  Fáradhatatlanul fogod keresni {s3} hadait és elpusztítani őket.  Szavaidat messzire viszi a szél, és ki a megmondhatója annak, hogy nem hallották őket még a tengerentúlon is?
-mno_leave_pyre_oath|Hagyd ott a halotti máglyát.
 menu_burial_mound_despoil|Ledöntöd {s1} emlékművét a saját kezeiddel és bemocskolod magukat a köveket is az átkaiddal, sátáni kántálásaiddal és elmondhatatlan tetteiddel.  A követőid hátrébb húzódnak a holtaktól való félelmükben, de úgy látszik megújult tisztelettettel tekintenek rád látva a gonoszságodat.
-menu_funeral_pyre|Megközelíted az elégetett maradványait a {s2}i {s3} halotti máglyájának. Csatában győzték le {s28} hadai.  Itt, a holteste szertartásos keretek közt lett elásva a személyes testőrei által. Semmi értékes nem maradt itt.
+; menu_funeral_pyre|^You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
 mno_leave_pyre|Hagyd ott a halotti máglyát.
 menu_town_ruins|Amikor megközelíted, látod hogy {s1} már {s2}
 mno_ruin_menu_0|Fedezd fel a helyszínt.
@@ -440,11 +442,19 @@ mno_ruin_leave|Távozás...
 menu_death|Megöltek. Bár a háború továbbfolyik, te nem leszel többé részese.
 menu_animal_ambush|Te és a társaid elszakadva találjátok magatokat a csapatotok többi tagjától, amikor hirtelen...
 menu_animal_ambush_success|A {s2} {reg0?elhull:elhullanak} előtted mint búza a kasza előtt! Hamarosan az összes támadód a földön fetreng, sebesülten vagy holtan. {s3}
-menu_animal_ambush_fail|Az állatok megharapnak és megtépnek{reg0?,: és a társadat{reg2?s,:,}} de szerencsére sikerül őket elkergetned. Remélhetőleg nem fognak újra rád támadni.
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
 menu_isengard_flooding|^^^^^@Körülvesznek a holt ellenségek és a diadalmas szövetségesek, köztük az Ent-ek; ők üvöltenek, dörrennek és trombitálnak, míg a kövek megrepednek és hullanak mindenfelé az Orthanc tornya körül. Olyanok, mint egy üvöltő vihar, törik az oszlopokat, lavinákat dobálnak a mélységbe, hatalmas kőtömböket vetnek a levegőbe, mintha levelek lennének… Ez olyasmi, amit még soha nem láttál.^^Bregalad — vagyis Gyorslomb, ahogy ismered — végiglépked, és csak annyit mond: „{playername}! Vigyázz! Tartsd távol magad a Tornytól — hamarosan feltörjük a gátat, és az Isent erre a völgyre engedjük egy kis időre. Nehéz lesz itt megállnod, azt hiszem!” Gyorsan követed tanácsát, és eltávolodsz Orthanctól.^^Éjfél körül Vasudvar elkezd megtelni fekete, kúszó patakokkal és medencékkel. Nem tudod megállni, hogy ne borzongj, miközben füstöt és gőzt látsz felszállni nagy oszlopokban, és egy hatalmas gőzkígyó emelkedik a torony köré, míg az olyan lesz, mint egy magas felhőcsúcs, alul tüzes, fent a hold fényében ragyogó. Az Ent-ek haragja lassú, de ellenállhatatlan erővel bír…
 mno_isengard_continue|Következő
 menu_build_your_scene|Itt tudod elkészíteni a saját csatajeleneteidet, az egyik alul biztosított férőhelyen és a játék Szerkesztő módjában  (először BE kell kapcsolnod a szerkesztő módot a M&B nyitólapján található Beállításokban).  Aztán beküldheted a jeleneteidet (név szerint, a .sco fájlt a TLD/SceneObj mappából) a TLD fejlesztő csapatának, és ha a jelenetedet jó, akkor egy későbbi kiadásban megjelenhet mint az egyik véletlenszerűen kiválasztott csatatér!^^ Próbáld meg pontosítani hogy a térkép melyik területén szeretnéd a jelenetedet megjeleníttetni.^ Néhány tanács: kerüld a mély vizet, a meredek hegyeket és már átjárhatatlan területeket,  kivéve ha te egy tapasztalt jelenet-készítő vagy és tudod hogy oldd meg, hogy az MI ne menjen olyan helyre, amelyre te nem akarod őket, és hogy ne akadjanak be.u.^ (Bejegyzések; #0-1 a támadóknak, #4 a védekezőknek, ne nyúlj a #5-8-hoz/höz
 mno_back_3dot|Vissza...
+; menu_wott_expelled_from_faction|For your betrayal, you were expelled from your faction and {s11} has named you an outlaw and an enemy of the {reg11?Hand:Eye}. As an exile, you are now forced to join {s3}.
+; menu_wott_stay_with_faction|{s11} applauds your wise counsel. Your faction follows your example and collectively joins {s12}.
+; menu_fulfilled_oath_personal|^As {s5} lies in the dust before you, a heavy burden is lifted from your shoulders. The death of {s6} has been avenged!
+; menu_fulfilled_oath_personal_nokill|^Your troops recognize that you have defeated {s10} repeatedly and should rightfully be seen as {reg11?her:his} worst foe. Your oath is considered fulfilled. ^^The enemy paid dearly for the killing of {s11}. Still, there is a stale taste to this victory.
+; menu_oath_quest_fail|You swore a bitter oath and you bitterly failed to keep it. Your enemies laugh at your failure, and all your friends suffer from the shame you have brought upon them. In all the lands of Middle-earth, you shall be known as an oathbreaker.
+; menu_campaign_won|^^^Thank you for playing The Last Days of the Third Age!
+; mno_credits_tld|TLD Credits
+; mno_exit_game2|Quit to main menu
 mno_back|Vissza.
 mno_next|Következő...
 mno_previous|Előző...

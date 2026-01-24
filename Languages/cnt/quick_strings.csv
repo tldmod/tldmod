@@ -72,6 +72,7 @@ qstr_Man|人類
 qstr_Elf|精靈
 qstr_Dwarf|矮人
 qstr_Whom_Do_You_Serve?|你要效忠於誰？
+; qstr_The_Age_of_Men_has_f|The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth! Whom will you serve?
 qstr_SAURON_of_Mordor_The|魔多的索倫，魔戒之主
 qstr_SARUMAN_of_Isengard_|艾辛格的薩魯曼，白掌
 qstr_an_ORC^_serving_the_|半獸人，^邪眼之僕
@@ -80,6 +81,7 @@ qstr_a_MAN^_subjugated_by|人類，^臣服於索倫
 qstr_an_ORC^_serving_the_W|半獸人，白掌之僕
 qstr_one_of_the_URUK_HAI^|強獸人，^生於艾辛格
 qstr_a_MAN_of_Dunland^_th|登蘭德人，^來自西方平原
+; qstr_Thank_you_for_playin|Thank you for playing
 qstr_Click_the_center_but|點擊中央按鈕以切換陣營^點擊人物以查看詳細資訊
 qstr_Level:_{reg3}^Health|等級：{reg3}^生命值：{reg4}
 qstr_Attributes|屬性
@@ -121,6 +123,11 @@ qstr_Default_Camera|預設鏡頭
 qstr_Free_Mode_Custom_Cam|自由模式自訂鏡頭
 qstr_Fixed_Over_The_Shoul|固定鏡頭-肩後
 qstr_Brighter_Nights:__|較明亮的夜晚：
+; qstr_Allow_to_use_bow_wit|Allow to use bow with small shields:  
+; qstr_No__regular_troops_o|No (regular troops only)
+; qstr_Companions_only|Companions only
+; qstr_Player_only|Player only
+; qstr_Yes|Yes
 qstr_Done|完成
 qstr_Gameplay_Tweaks|遊戲調整
 ; qstr_Set_to_Native_if_you|Set to Native if you encounter any types of AI problems during battle.
@@ -264,6 +271,9 @@ qstr_Bonus_to_Strength__P|力量加成(只限玩家)
 qstr_Lead_more_Orcs|領導更多半獸人
 qstr_Can_scare_horses|可以震懾馬匹
 qstr_+{reg1}_to_Party_Mor|隊伍士氣+{reg1}
+; qstr_Not_affected_by_nigh|Not affected by nighttime
+; qstr_Increased_health_and|Increased health and stagger resistance
+; qstr_Can_heal_on_kill|Can heal on kill
 qstr_Range:_{reg55}|距離：{reg55}
 qstr_Dwarves|矮人
 qstr_Humans_and_Elves|人類與精靈
@@ -621,7 +631,7 @@ qstr_But_I...|但我…
 qstr_Noone..._oppossssses|無人…能阻饒…黑邪塔…並存活！
 qstr_All..._must..._submi|所有人…必須… 屈從...且…臣服…
 qstr_I_serve_the_Eye!|我服從索倫之眼！
-qstr_I_shall_serve_the_Ey|我將服從索倫之眼！
+; qstr_Your_time_is_over_wr|Your time is over, wraith, begone! Now begins the Age of the White Hand!
 qstr_Go_to_{s1}_and_speak|去{s1}和{s9}交談。
 qstr_The_Remnant_Forces_o|{s22}殘餘的部隊聚集以增援{s15}戰區！
 qstr_The_strength_of_the_|{s15}戰區剩下的盟軍力量增強了
@@ -703,6 +713,17 @@ qstr_{s2}_{reg3?was:is_ar|{s2}{reg3?曾在:正在{s5}附近。
 ; qstr_Army_of_{s6}|Army of {s6}
 ; qstr_Host_of_{s6}|Host of {s6}
 ; qstr_The_host_of_Isengard|The host of Isengard has razed {s2}!
+; qstr_The_battlefield_is_a|The battlefield is a dark forest.
+; qstr_The_battlefield_is_f|The battlefield is forested.
+; qstr_The_battlefield_is_a_|The battlefield is a treacherous marshland.
+; qstr_A_golden_mist_from_L|A golden mist from Lórien covers the battlefield.
+; qstr_Dark_clouds_from_Mor|Dark clouds from Mordor cover the battlefield.
+; qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the battlefield.
+; qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield.
+; qstr_The_defenses_consist|The defenses consist of dark tunnels and underground halls.
+; qstr_The_defenses_lie_in_|The defenses lie in the shadow of tall trees, blocking out the sunlight.
+; qstr_The_defenses_lie_in_t|The defenses lie in the shadow of steep cliffs, blocking out the sunlight.
+; qstr_The_fortress_is_shro|The fortress is shrouded in darkness.
 qstr_{s1}_{s0}|{s1}，{s0}
 qstr_{s1}_and_{s0}|{s1}和{s0}
 qstr_No_Troops_Left.|沒有剩下任何部隊。
@@ -745,13 +766,13 @@ qstr_ready_polearms|準備好長柄武器
 qstr_shields_up|用盾
 qstr_doff_shields|棄盾
 qstr_Distance___{reg70}__|距離-{reg70}-{s11}隊伍-{s12}部隊
-qstr_A_golden_mist_from_L|來自羅瑞安的金色薄霧籠罩著戰場。女士的存在使你的部隊受到鼓舞。
+; qstr_A_golden_mist_from_L|A golden mist from Lórien covers the battlefield.
 qstr_A_golden_mist_from_Lr|來自羅瑞安的金色薄霧籠罩著戰場。女巫就在附近，你和你的部隊不禁打了寒顫。
-qstr_Dark_clouds_from_Mor|來自魔多的烏雲籠罩著戰場。你的弓兵看不清敵方，而且邪惡的存在嚇壞了你的人馬。
+; qstr_Dark_clouds_from_Mor|Dark clouds from Mordor cover the battlefield.
 qstr_Dark_clouds_from_Mord|來自魔多的烏雲籠罩著戰場。黑暗之主的存在使你和你的人馬感到更有力量。
-qstr_A_thunderstorm_from_|來自迷霧山脈的雷雨在戰場上肆虐。你的部隊被減慢了，而且其中迷信的人感到害怕。
+; qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the battlefield.
 qstr_A_thunderstorm_from_t|來自迷霧山脈的雷雨在戰場上肆虐。弓兵在這種天氣下作戰有困難。
-qstr_A_poisonous_fog_from|來自多爾哥多的毒霧在戰場上徘徊。你和你的部隊感到虛弱。人們都很害怕。
+; qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield.
 qstr_A_poisonous_fog_from_|來自多爾哥多的毒霧在戰場上徘徊。你沒有感到任何不適，但你能聽到敵方痛苦的聲音也能聞到他們的恐懼。
 qstr_You_shapeshift_into_|你變形成一頭熊！
 qstr_You_got_{reg1}_exper|你在熊型態下獲得{reg1}經驗值。
@@ -760,28 +781,49 @@ qstr_You_change_back_to_h|你變回人形...
 ; qstr_Refill_Ammunition|Refill Ammunition
 ; qstr_Take_a_closer_look..|Take a closer look...
 ; qstr_Look_around...|Look around...
+; qstr_Amon_Hen_the_Hill_of|Amon Hen, the Hill of Seeing, grants a commanding view over the surrounding lands. However, if you sought the ancient high seat in hope of gaining directions on your own course, you now realize that this on you to decide.
+; qstr_As_the_lights_begin_|As the lights begin to flicker and dance, you see them: grim faces and evil, and noble faces and sad. Many faces proud and fair, and weeds in their silver hair. But all foul, all rotting, all dead.
+; qstr_This_must_be_the_spi|This must be the spider nest. Without hesitation, you light a torch and burn down the webs. This will eliminate the spider thread in Mirkwood.
+; qstr_You_have_explored_th|You have explored the caves and experienced the beauty of Aglarond, one of the marvels of the northern world. You feel that you have gained a better understanding of all the wonders that are hidden underground.
 ; qstr_You_see_the_Pelennor|You see the Pelennor laid out before you. Behind that, faintly, the ruin of Osgiliath, once the capital of Gondor, of which Minas Tirith was only a fortress. And then, looming on the verge of sight, the jagged edges of the Mountains of Mordor, and beyond that, again a yet deeper gloom. Ever have the Men of the White City dwelt in sight of that shadow.
+; qstr_You_happen_upon_an_O|You happen upon an Old Guesthouse. As you inspect the weathered stone building, you notice a group of boys playing among the pillars, the only children you have seen in Minas Tirith.  One of them greets you and you wave back. Your heart is gladdened and you forget, for a brief moment, the sorrow of war.
 ; qstr_As_you_look_from_the|As you look from the Island’s high prow down to where Anduin, the Great River, splits into two arms, you understand why Cair Andros means 'Ship of Long Foam'.
+qstr_You_look_through_Hen|你透過日落之窗，漢那斯安南向外看。美麗的景象恢復了你對西方和世外之力的信心。
 ; qstr_This_place_was_once_|This place was once an elven haven, but today only ruins tell of its inheritance. Few still know their true meaning.
 ; qstr_Tirith_Aear_the_Sea_|Tirith Aear, the Sea-ward Tower - Its slow bell has been guiding sailors for many centuries.
 ; qstr_You_kneel_to_pay_you|You kneel to pay your respects to the fallen rulers of this fair realm. Beside you, a shield-maiden of Rohan raises her voice in song. Ne sceal hearpan sweg wigend weccean; ne winfaet gylden guma sceal healdan! Your heart aches to hear her words.
 ; qstr_You_wonder_about_the|You wonder about the two rows of burial mounds in front of the gates, yet as a mere {s24}, you do not understand their significance.
+; qstr_The_Toy_market_of_Da|The Toy market of Dale, A wonder of the North, bustling with sellers, workshops and craftsmen. Beautiful are the toys sold and crafted here, horns, pipes and drums. A buyer with a good eye can make great deals here.
+; qstr_With_trepidation_you|With trepidation, you look within the silver basin. The water shows you visions of horror; blood and terror and grief. You recoil... but then, the visions vanish and you see instead a clear night sky, with what seems to be a silver boat floating across the expanse. A sense of calm washes over you. Hope is not wholly gone.
+; qstr_The_Lady_s_garden_li|The Lady's garden lies peacefully in the bright daylight. You sense nothing out of the ordinary...
+; qstr_Bees_big_as_a_thumb_|Bees big as a thumb swarm all around you, gathering nectar from the flowering meadows. They make the wonderful honey prized by Beorn's folk for their cakes.
+; qstr_A_flock_of_ravens_ci|A flock of ravens circles around you. You do not understand what they say, what news they bring from distant lands. Yet you feel comforted, knowing that these wise animals are of old friends to the King under the Mountain.
+; qstr_A_fierce_fight_happe|A fierce fight happened here. Curiously, among the withered remains of both dwarves and goblins, you see bodies of orcs that were slain not long ago. ^^You should take a closer look at the ruined tomb.
 ; qstr_Alkarondas_Castle_of|Alkarondas, Castle of the Sea. Named after the famed flagship of Ar-Pharazôn, this great black ship is the pride of the corsair fleet - and the terror of Gondor's coasts.
 ; qstr_The_Mmakil_greatest_|The Mûmakil, greatest beasts of this age! Terrible in warfare, bearing towers and archers into battle. Their trunks calling like trumpets of war will make the Men of Gondor tremble with fear.
+; qstr_The_famous_Variag_fi|The famous Variag fighting pits. Here, young warriors and war slaves fight for the right to join the ranks of the Variag warrior caste. Only the strongest survive and become the elite of their people. The others are left lying in the mud.
+; qstr_If_you_were_more_ski|If you were more skilled, you might be able to learn a thing or two from watching the fights.
+; qstr_Watching_the_fights_|Watching the fights, you were able to pick up a few tricks.
+; qstr_Gained_weapon_profic|Gained weapon proficiencies.
 ; qstr_A_new_Power_is_risin|A new Power is rising. Against it the old alliances and policies will not stand. Its victory is at hand; and there will be rich reward for those that aided it.
 ; qstr_As_you_explore_the_c|As you explore the caverns underneath the Ring of Isengard, where thousands of orcs work to supply the growing armies of the White Hand, you gain confidence in the rise of a new power and the demise of the old world.
 ; qstr_The_Ring_of_Isengard|The Ring of Isengard is flooded, its rocky walls lay in ruin. It will take a while until all the filth of Saruman is washed away and the Isen may run clean again. Who knows, maybe this place will yet become again a garden filled with orchards and trees and clean water.
-; qstr_Amon_Hen_the_Hill_of|Amon Hen, the Hill of Seeing, grants a commanding view over the surrounding lands. However, if you sought the ancient high seat in hope of gaining directions on your own course, you now realize that this on you to decide.
-; qstr_As_the_lights_begin_|As the lights begin to flicker and dance, you see them: grim faces and evil, and noble faces and sad. Many faces proud and fair, and weeds in their silver hair. But all foul, all rotting, all dead.
-; qstr_This_must_be_the_spi|This must be the spider nest. Without hesitation, you light a torch and burn down the webs.
-; qstr_A_flock_of_ravens_ci|A flock of ravens circles around you. You do not understand what they say, what news they bring from distant lands. Yet you feel comforted, knowing that these wise animals are of old friends to the King under the Mountain.
+; qstr_You_have_found_the_s|You have found the secret passage into Mordor, the pass of Cirith Ungol. Beyond those stairs, you sense a dark will ling in wait. You realize that you should not pursue this path any further if you value your own life.
+; qstr_A_great_man_was_tort|A great man was tortured here, his remains still held in place by cruel chains and cold will. You do not know who he was, yet you understand that such terrible fate awaits all who dare to oppose the Dark Lord.
+; qstr_You_endure_the_horro|You endure the horrors of the Dead City and explore its innermost circles. The Silent Watchers recognise your boldness and don't oppose you.
+; qstr__You_gained_1_Charis|(You gained 1 Charisma.)
+; qstr_You_endure_the_horror|You endure the horrors of the unspeakable rituals in this sacred place. The cruel people of Rhun recognise the strength you have shown and some of their mightiest decide to join your party.
+; qstr_Your_hackles_rise_as|Your hackles rise as you look around you, and you begin to feel a strange sense of danger. Raising your weapon high, you snarl your defiance at the unseen foe in this place. This may have been a place of wonder once... but now, with the true power you have gained, you realize you have nothing to fear from the forgotten past of a broken world.
 ; qstr_Looking_around_you_d|Looking around, you do not understand the significance of this place.
 ; qstr_Looking_around_you_f|Looking around, you feel that you do not know this people well enough to understand the significance of this place.
+; qstr_Looking_around_you_fe|Looking around, you feel that you are not esteemed enough to learn the significance of this place.
+; qstr_Visit_the_victory_ce|Visit the victory celebrations and speak to {s5}.
 qstr_Your_mount_stumbles!|你的坐騎步履蹣跚！看來是瘸了。
 qstr_Bitten_by_your_own_w|你被自己的座狼咬了！
 qstr_You_weigh_too_much_f|你對小馬來說太重了！
 qstr_Your_mount_rears_ref|你的坐騎後腿直立，拒絕服從你的命令！
-qstr_Delivered_{reg60}_da|給予{reg60}傷害。
+; qstr_{s5}_has_been_overco|{s5} has been overcome by fear and rage and is now uncontrollable.
+; qstr_{s5}_is_running_amok|{s5} is running amok, hurting friend and foe alike!
 qstr_Cannot_Change_Camera|第一人稱時不能改變鏡頭模式。
 qstr_Switch_Back_to_3rd_P|換回第3人稱視角以切換鏡頭。
 qstr_Fixed_Custom_Camera|固定自訂鏡頭
@@ -794,22 +836,17 @@ qstr_Fixed_Camera___Left_|固定鏡頭-左肩
 qstr_Fixed_Camera___Cente|固定鏡頭-置中
 ; qstr_The_Nazgul_retreats!|The Nazgul retreats!
 qstr_Shield_is_too_big_to|盾太大不能跟弓一起使用。
+; qstr_Shield_reduces_accur|Shield reduces accuracy by {reg11} percent.
 ; qstr_{s7}_waves_at_you.|{s7} waves at you.
-; qstr_You_happen_upon_an_O|You happen upon an Old Guesthouse. As you inspect the weathered stone building, you notice a group of boys playing among the pillars, the only children you have seen in Minas Tirith.  One of them greets you and you wave back. Your heart is gladdened and you forget, for a brief moment, the sorrow of war.
-qstr_You_look_through_Hen|你透過日落之窗，漢那斯安南向外看。美麗的景象恢復了你對西方和世外之力的信心。
-; qstr_As_you_follow_the_st|As you follow the straight stairs, cut into the rock of the mountain, and then a second set of stairs, winding as it clings to the cliff-face, you realize that you should not pursue this path any further if you value your own life.
 ; qstr_You_are_unable_to_en|You are unable to endure the horrors of the Dead City.
-; qstr_You_endure_the_horro|You endure the horrors of the Dead City and explore its innermost circles. The Silent Watchers recognise your boldness and don't oppose you. (You gained 1 Charisma.)
 ; qstr_You_are_unable_to_end|You are unable to endure the horrors of the temple.
-; qstr_You_endure_the_horror|You endure the horrors of the unspeakable rituals in this sacred place. The cruel people of Rhun recognise the strength you have shown and some of their mightiest decide to join your party.
-; qstr_You_find_yourself_in|You find yourself in a deep cavern. Your hackles rise as you look around you, and you begin to feel a strange sense of danger. This is no place for one such as you. Snarling, you make your retreat. When the Shadow has covered the world above, perhaps then, you may return here without fear...
-; qstr_You_find_yourself_in_|You find yourself in a deep cavern. Your hackles rise as you look around you, and you begin to feel a strange sense of danger. Raising your weapon high, you snarl your defiance at the unseen foe in this place. This may have been a place of wonder once... but now, with the true power you have gained, you realize you have nothing to fear from the forgotten past of a broken world.
-; qstr_With_trepidation_you|With trepidation, you look within the silver basin. The water shows you visions of horror; blood and terror and grief. You recoil... but then, the visions vanish and you see instead a clear night sky, with what seems to be a silver boat floating across the expanse. A sense of calm washes over you. Hope is not wholly gone.
-; qstr_The_Lady_s_garden_li|The Lady's garden lies peacefully in the bright daylight. You sense nothing out of the ordinary...
+; qstr_You_are_unable_to_op|You are unable to oppose the power of this holy place.
 ; qstr_Halt!_You_are_not_al|Halt! You are not allowed to enter here!
 ; qstr_Halt!_You_are_not_all|Halt! You are not allowed to enter here without the Lady's leave!
-qstr_While_visiting_towns|在參觀城鎮、聚落和營地時，你可以跟周圍走動的人交談。不同陣營的成員會有不同的話能說-有些人會告訴你他們的想法，而其他則會分享謠言。兩者皆可以讓你更好地了解這個人的文化和陣營，或者他們可能會有找到秘密地點的線索，又或者是在荒野中旅行和在魔戒之戰中戰鬥的技巧和訣竅。
+; qstr_While_visiting_towns|While visiting towns, settlements and camps, you can talk to people walking around. This will help you gain their trust and offer valuable information about the local culture. If you ask, they will also show you the way to the most important people around.
 qstr_Cannot_leave_now.|現在不能離開。
+; qstr_The_traitor_should_b|The traitor should be around somewhere. You should look around important places. If you have a good relation to them, you may also ask the local populace for suspicious strangers.
+; qstr_The_traitor_flees._C|The traitor flees. Catch him!
 qstr_You_have_found_the_l|你找到了當地的鍛治匠。
 qstr_You_have_found_the_lo|你找到了地方官。
 qstr_You_have_found_the_loc|你找到了當地的倉庫。
@@ -826,11 +863,26 @@ qstr_Division_{reg1}_{s2}_f|第{reg1}分隊{s2}排成行(已記憶)。
 qstr_Division_{reg1}_{s2}_fo|第{reg1}分隊{s2}排成{reg0}行(已記憶)。
 ; qstr_A_Nazgul_on_a_winged|A Nazgul on a winged steed circles over the battle field!
 qstr_Your_bear_form_has_{|你的熊型態有{reg2}/{reg1}生命值！
+; qstr_Underground_battle:_|Underground battle: Prepare to fight in the dark.
+; qstr_Steep_mountain_sides|Steep mountain sides block out the sunlight.
+; qstr_Big_trees_block_out_|Big trees block out the sunlight.
+; qstr_The_place_is_covered|The place is covered in darkness as if it was night.
+; qstr_It_is_night._You_fee|It is night. You feel how your strength grows and your eyesight becomes sharper in the  darkness.
+; qstr_It_is_night._As_a_tr|It is night. As a trained Uruk, you fight at night or day and don't heed light or darkness.
+; qstr_It_is_night._In_the_|It is night. In the darkness, you have to move and fight more carefully.
+; qstr_Rough_terrain:_Heavy|Rough terrain: Heavy troops are at a disadvantage.
+qstr_A_golden_mist_from_Lr|來自羅瑞安的金色薄霧籠罩著戰場。女巫就在附近，你和你的部隊不禁打了寒顫。
+qstr_A_golden_mist_from_Lri|來自羅瑞安的金色薄霧籠罩著戰場。女巫就在附近，你和你的部隊不禁打了寒顫。
+qstr_Dark_clouds_from_Mord|來自魔多的烏雲籠罩著戰場。黑暗之主的存在使你和你的人馬感到更有力量。
+qstr_Dark_clouds_from_Mordo|來自魔多的烏雲籠罩著戰場。黑暗之主的存在使你和你的人馬感到更有力量。
+qstr_A_thunderstorm_from_t|來自迷霧山脈的雷雨在戰場上肆虐。弓兵在這種天氣下作戰有困難。
+qstr_A_thunderstorm_from_th|來自迷霧山脈的雷雨在戰場上肆虐。弓兵在這種天氣下作戰有困難。
+qstr_A_poisonous_fog_from_|來自多爾哥多的毒霧在戰場上徘徊。你沒有感到任何不適，但你能聽到敵方痛苦的聲音也能聞到他們的恐懼。
+qstr_A_poisonous_fog_from_D|來自多爾哥多的毒霧在戰場上徘徊。你沒有感到任何不適，但你能聽到敵方痛苦的聲音也能聞到他們的恐懼。
 qstr_Some_of_your_human_t|你部分的人類部隊並不畏懼黑暗。(夜間部隊不受夜間減益的影響)
 qstr_You_are_filled_with_|你注視了敵人後充滿了憤怒(發動狂暴化)。
 qstr_Your_mount_is_scared|你的座騎被{s5}嚇到了！
 qstr_Your_mount_is_scared_|你的座騎被{s5}嚇到了，但你還能駕馭牠！
-qstr_Received_{reg66}_dam|受到{reg66}傷害。
 qstr_You_yell_for_your_ho|你呼喚了你的馬。
 qstr_You_do_not_need_to_r|你還不需要鼓舞你的部隊。
 qstr_You_rally_{reg10}_tr|你集結了{reg10}部隊！
@@ -843,6 +895,7 @@ qstr_You_have_been_knocke|你被{s22}打昏了。
 qstr_{s21}_has_been_knock|{s21}從{reg23?她的:他的}坐騎上跌落了下來。
 qstr_{s21}_{reg24?killed:|{s21}被{s22}{reg24?殺死了:打昏了}。
 qstr_A_bear_has_been_summ|一隻熊被召喚出戰了！
+qstr_Received_{reg66}_dam|受到{reg66}傷害。
 qstr_In_The_Last_Days_of_|在第三紀元的最後之日裡，你的部隊將在每次戰鬥開始時堅守陣地，而不是盲目衝鋒。^^要命令你的部隊進入陣型，按'J'列陣，'K'組成盾牆，'L'組成楔形陣，';'組成方陣。按'U'取消陣型。^^如果你的部隊正在潰散，你可以按'V'來鼓舞他們。每次戰鬥你能鼓舞的次數有限，而數量取決於你的統御和魅力。
 qstr_You_can_also_order_y|你也可以命令你的部隊使用你想要他們使用的武器類型。^^按O在武器類型之間切換。按P可在盾的命令類型之間切換。
 qstr_The_Last_Days_of_the|為了避免原有的視角對較矮的種族（例如半獸人和矮人）造成的不便，TLD開發了自訂視角。 ^^查閱資訊頁面可以了解如何控制不同的視角模式。
@@ -865,15 +918,20 @@ qstr_End_them_all!|結束他們！
 qstr_Drive_them_back!|把他們趕回去！
 qstr_Protect_the_City!|保護城市！
 qstr_Forward!_Board_them!|前進！登上他們的船！
-qstr_The_Last_Days_of_the_|在第三紀元的最後之日中有進階攻城AI，跟原版的差很多。所有的攻方和守方都會被分為左翼右翼和中鋒。攻方玩家只能指揮部分自己的部下。
+; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All attackers and defenders will be distributed to the left and right flanks and the center. Players command some of their own troops. Troops from your party will also join when they're near to the player. Use them wisely to help out where needed most. // In order to win a siege attack, you must conquer all three defender reinforcement points. You can only take a reinforcement point if the defenders have already rallied there.
 qstr_on_the_left_flank|在左翼
 qstr_on_the_right_flank|在右翼
 qstr_through_the_center|從中間
 qstr_Attackers_charge_{s2|攻方向{s2}衝鋒
 qstr_Attackers_charge_{s1|攻方向{s1}衝鋒
-; qstr_Hold_this_area_to_st|Hold this area to stop defender reinforcements from here!
-; qstr_Defender_reinforceme|Defender reinforcement point taken!
-qstr_{s1}_rallied_to_your|{s1}受你的魅力鼓舞加入了你。
+; qstr_You_must_break_the_f|You must break the first line of defense before you can capture a reinforcement point.
+; qstr_Capture_this_area_wi|Capture this area with your troops to stop defender reinforcements from here!
+; qstr_Not_enough_allies_ne|Not enough allies nearby to capture this reinforcement point!
+; qstr_Defender_reinforcemen|Defender reinforcement point taken!
+; qstr_{reg5}_{reg4?troops:|{reg5} {reg4?troops:troop} rallied to your side.
+; qstr_{reg5}_{reg4?troops:t|{reg5} {reg4?troops:troop} rallied to your side due to your Charisma.
+; qstr_{reg5}_{reg4?troops:tr|{reg5} {reg4?troops:troop} stopped following you (too far away).
+; qstr_{reg5}_{reg4?troops:tro|{reg5} {reg4?troops:troop} are currently following you.
 qstr_Last_attacker_wave._|攻方只剩最後一波了。你要撤退嗎？
 qstr_Attackers_almost_def|攻方快被擊敗了。你要撤退嗎？
 qstr_The_remaining_attack|剩餘的攻方逃走了！
@@ -888,7 +946,7 @@ qstr_THREE.._TWO..._ONE..|三...二...一....開打！
 ; qstr_You_have_come_upon_th|You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^ In the darkness of night, you see lights like misty flames flickering slowly above unseen candles. Oddly compelled, you follow them deeper into the maze of puddles and streams.
 ; qstr_You_have_come_upon_the|You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^The marshlands have swallowed up what was once a grassy plain, and now the only green is the scum of livid weed on the dark greasy surfaces of the sullen waters. ^^In the grey light of day, you don't see anything that catches your interest.
 ; qstr_You_have_entered_the|You have entered the woods of Southern Mirkwood, once known as Greenwood the Great^^The woods feel sickly and full of decay. The place is crawling with spiders. There must be a nest around here somewhere...
-; qstr_You_have_found_the_G|You have found the Glittering Caves, one of the marvels of the Northern World.
+; qstr_You_enter_the_Glitte|You enter the Glittering Caves. However, in the encompassing darkness, you cannot see its marvels.
 qstr_You_have_found_the_D|你找到了理當存放傳說之槍的矮人倉庫。向{s3}報告你的發現
 qstr_Leave_the_Warehouse?|離開倉庫？
 qstr_Leave_the_place_in_s|悄悄地離開此地？
@@ -1059,7 +1117,6 @@ qstr_{s3}_witnesses_your_|{s3}目睹了你對{s4}的勝利。
 qstr_Even_though_there_we|即使沒有友方目睹你的勝利，你的部隊仍慶祝了你們的獲勝。
 qstr_{s1}_of_{s3}_managed|{s3}的{s1}設法逃離了。
 qstr_Prisoners_rescued_so|目前為止解救的囚犯：{reg1}
-qstr_{reg1}_kills_of_{s1}|有{s1}陣營部隊的{reg1}名擊殺數被計入誓言。擊殺總數：{reg0}
 qstr_Perhaps_I_m_getting_|也許我的運氣變差了...
 qstr_Retirement_is_starti|退休聽起來越來越像個好主意了。
 qstr_No_matter!_I_will_pe|無妨！我還能堅持下去！
@@ -1075,9 +1132,10 @@ qstr__This_castle_seems_t|這個城堡似乎不屬於任何人。
 qstr__Your_own_banner_flie|你自己的旗幟飄揚在城鎮大門上。
 qstr__You_see_the_banner_o|你看到{s7}的旗幟飄揚在城鎮大門上。
 qstr__The_townsfolk_here_|這裡的鎮民宣佈了獨立。
-qstr_Get_book.|拿書。
+; qstr_A_ruined_tomb._The_i|A ruined tomb. The inscription on the lid is shattered and unreadable.
 qstr_Go_to_the_secret_ent|前往摩瑞亞的秘密入口
 qstr_Search_for_a_secret_|尋找一個進入摩瑞亞的秘密入口
+; qstr_The_valley_is_too_we|The valley is too well guarded to linger here.
 qstr_The_{reg6?town_s:cas|{reg6?城鎮裡:城堡裡}的食物庫存應該還能堅持{reg3}天。
 qstr_The_{reg6?town_s:cast|{reg6?城鎮裡:城堡裡}的食物庫存已經沒了而守軍正在挨餓。
 qstr_You_re_preparing_to_|你正在準備攻擊城牆，準備還需要{reg9}個小時。
@@ -1161,12 +1219,16 @@ qstr_You_wait_for_darknes|你等待著黑暗的降臨...
 qstr_You_are_quickly_disc|你一下就被敵方發現了。
 qstr_You_advance_stealthi|你悄悄地前進森林深處。
 qstr_You_cannot_leave_unt|在守衛跟丟你之前不能離開！
-qstr_Enraged_by_the_death|被{s4}的死亡所激怒，你對{s3}的部隊發了一個復仇之誓。你必須在未來的日子裡盡可能摧毀更多{s3}的部隊。你確信你的追隨者都見證了你的誓言，而你也不希望被認為是背誓者。讓血祭開始吧！
+; qstr_You_hear_that_{s1}_h|You hear that {s1} has already been avenged by the death of {s28}.
+; qstr_Enraged_by_the_death|Enraged by the death of {s4}, you have sworn an oath of vengeance against {s3}. You must now seek out and fight {s3} and kill {reg11?her:him} if possible. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!
 qstr_flooded._Somebody_or|被淹沒了。一定是有人破壞了艾辛河的水壩。
 qstr_destroyed._Only_smol|被摧毀了。只留下冒著濃煙的廢墟。
 qstr_^^^You_lost_your_fig|^^^你在和叛亂者的戰鬥中失敗了！^看來你的半獸人有新的指揮官了。
 qstr_^^^You_have_slain_th|^^^你殺了出頭者，其他半獸人迅速的歸隊了。^短時間內蛆蟲們肯定會安分不少。
 qstr_You_cover_up_your_tr|你掩蓋了你的行蹤並繼續前進。
+; qstr_the_Eye|the Eye
+; qstr_the_Hand|the Hand
+; qstr_{s1}_has_joined_{s12|{s1} has joined {s12}
 qstr_Breaking_camp...|拔營...
 qstr_Party_morale_is_low.|部隊士氣過低，士兵離開了你的部隊。
 qstr_Desertion|逃兵
@@ -1189,14 +1251,23 @@ qstr_{s1}_has_been_defeat|{s1}已經被擊敗了。任務取消。
 qstr_You_must_follow_{s1}|你必須跟著{s1}！
 qstr_You_must_follow_{s1}!|你必須跟著{s1}！這是你最後的警告！
 qstr_{s1}_parties_defeate|已擊敗的{s1}隊伍：{reg2}之中的{reg1}
-qstr_{reg65}_Moria_and/or|已擊殺{reg65}名摩瑞亞和/或剛達巴山部隊。(計數器每小時刷新一次)
-qstr_{reg65}_{s3}_troops_|已擊殺{reg65}名{s3}的部隊。(計數器每小時刷新一次)
+; qstr_Your_progress_to_ful|Your progress to fulfill your oath is considered not very great. (Progress less than a third.)
+; qstr_You_have_made_some_p|You have made some progress to fulfill your oath, but there is still a long way to go. (Progress about half.) ^^ The enemies are starting to look out for you.
+; qstr_You_have_won_the_hat|You have won the hatred of your enemies, press on further and you will fulfill your oath! (Progress more than two thirds.) ^^ The enemies are starting to dispatch additional parties around their fortresses and camps.
+; qstr_You_have_made_yourse|You have made yourself a name as one of the enemy's worst foes. Your oath is almost fulfilled!
+; qstr_Your_enemies_tremble|Your enemies tremble at the mentioning of you name! Your oath is fulfilled!
+; qstr_King_Dain_values_you|King Dain values your effort to fulfill your oath, but acknowledges that events unfolded too quickly. As a result, 
+qstr_{s22}You_have_fulfil|{s22}你已經履行了為巴林一眾復仇的誓言！
+; qstr_{s23}You_are_release|{s23}You are released from your oath.
+; qstr_Oath_Score:_{reg65}_|Oath Score: {reg65} (Counter refreshes every hour)
 qstr_{reg66}_{s5}_troops_|已擊殺{reg66}名{s5}的部隊。(計數器每小時刷新一次)
 qstr_{reg67}_{s7}_{s8}_tr|已擊殺{reg67}名{s7}{s8}的部隊。(計數器每小時刷新一次)
 qstr_{s8}_in_{s9}_asked_y|{s9}的{s8}請求你殺死{reg67}個{s10}。 ^已殺{reg68}{s11}。 （計數器每小時刷新一次）
 qstr_{s1}_is_scouted.|{s1}已經偵查完畢了。
+; qstr_{s1}_managed_to_esca|{s1} managed to escape the downfall of {s2} and found refuge in {s3}.
+; qstr_{s3}_gained_faction_|{s3} gained faction strength.
 qstr_{s2}_was_defeated!|{s2}被擊敗了！
-qstr_The_Age_of_Men_has_f|人類的時代終於結束了。現在雙塔都在集結他們的軍隊和盟友來決定誰才是中土世界唯一的統治者！
+; qstr_The_Age_of_Men_has_f|The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth! Whom will you serve?
 qstr_The_War_of_the_Two_T|雙塔之戰已經開始了！
 qstr_The_forces_of_{s22}_|{s22}的勢力團結起來了！{s22}現在是{s23}的。
 qstr_The_might_of_{s22}_h|{s22}的力量已經被削弱了！{s22}現在是{s23}的。
@@ -1211,6 +1282,9 @@ qstr_You_have_{reg69}_all|你有{reg69}支友方隊伍跟隨著你
 qstr_You_have_{reg69}_ally|你有{reg69}支友方隊伍跟隨著你
 qstr_The_forces_of_{s2}_h|{s2 }的部隊已重新集結並向{s15}邁進！
 qstr_Your_scouts_report_s|你的斥候回報附近有{s2}的蹤跡。
+; qstr_{s5}_sent_out_a_host|{s5} sent out a host against you!
+; qstr_Your_troops_value_yo|Your troops value your effort to fulfill your oath, but acknowledge that events unfolded too quickly. The general consensus is that you are released from your oath.
+; qstr_You_hear_rumors_that|You hear rumors that {s1}
 qstr_{s1}_from_{s2}|來自{s2}的{s1}
 qstr_When_dealing_with_lo|在{s11}與當地人往來的時候，請記住他們並不認識你也不一定承認你在{s10}所取得的功績。^^(能在{s11}使用的資源點和你在{s10}取得的不一樣，你得在{s11}當地取得新的--建議查看報告頁面)
 qstr_Info|資訊
@@ -1222,7 +1296,7 @@ qstr_The_water_you_drank_|你喝下的樹人之水在你身上產生了奇怪的
 qstr_Ent_water_effect:_in|樹人之水的效果：身高增長！
 qstr__+1_to_Strength__per|力量+1(永久)
 qstr__+1_to_Charisma__per|魅力+1(永久)
-qstr_The_dark_shadow_fina|黑暗的陰影終於襲來了，邪惡的大群人馬正邁向中土世界的自由之民。南方有魔多與剛鐸交戰，西方有艾辛格與洛汗交戰，而多爾哥多則是與精靈交戰...甚至在遙遠的北方的都有自己的戰爭。
+; qstr_The_dark_shadow_fina|The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard against Rohan in the West, Dol Guldur against the Elves... Even in the far North there is a war of its own.
 qstr_The_War_has_started!|戰爭已經開始了！
 qstr_The_forest_seems_pea|森林看起來很平靜。
 qstr_There_is_a_sense_of_|空氣中瀰漫著危險的氣息。
@@ -1236,11 +1310,8 @@ qstr_{s27}:_Influence_wit|{s27}：對{s1}的影響力從{reg2}提升到{reg1}。
 qstr_{s27}:_Influence_with|{s27}：對{s1}的影響力從{reg2}降低到{reg1}。
 qstr_{s27}:_Party_morale_|{s27}：隊伍的士氣提升了。
 qstr_{s27}:_Party_morale_d|{s27}：隊伍的士氣降低了。
-qstr_You_have_failed_to_f|你未能履行為巴林一眾復仇的誓言！
-qstr_You_have_failed_to_fu|你未能履行為{s1}之死所立的復仇之誓！
-qstr_Your_troops_value_yo|你的部下重視你為完成誓言所做的努力，但也承認事情進展的太快了。因此，
-qstr_{s22}You_have_fulfil|{s22}你已經履行了為巴林一眾復仇的誓言！
-qstr_{s22}You_have_fulfill|{s22}你已經履行了對{s1}英勇死亡所立的複仇之誓！
+; qstr_Avoided_animal_ambus|Avoided animal ambush via Spotting.
+; qstr_Avoided_animal_ambush|Avoided animal ambush via Wildcraft.
 qstr_Reinforcements|增援
 qstr_Refugees_Escaped:_{r|已逃脫的難民：{reg10}---被殺掉的難民：{reg11}
 qstr_Raider_Parties_Kille|已殺掉的掠奪者隊伍：{reg12}
@@ -1324,6 +1395,9 @@ qstr_Greetings_{s23}.|你好，{s23}。
 qstr_So_you_are_{s23}._I_|所以，你就是{s23}吧。我聽說你為我們{s25}的朋友戰鬥，所以我想我應該把你當成友方吧。
 qstr_I_need_volunteers_wi|我需要一些志願者跟我去參加危險的任務。
 qstr_I_need_some_soldiers|我需要一些士兵來補充損失。
+; qstr_I_need_a_captain_who|I need a captain who can keep my men in check and make sure they don't run away during battle.
+; qstr_I_am_looking_for_a_c|I am looking for a captain able to carry out my orders in battle!.
+; qstr_One_{s5}_joined_your|One {s5} joined your party.
 qstr_Maybe_the_weaklings_|也許南方的弱者會給他們皮膚軟嫩的食人妖配戴鎧甲。但我們不會-我們的食人妖是來自剛達巴的！
 qstr_Do_I_look_like_a_smi|我看起來像個鍛治匠嗎？呸。去找一個來問吧。
 qstr_Excellent_job_{s23}!|幹得漂亮， {s23}！真希望我方的所有指揮官都像你這麼盡責。^
@@ -1394,6 +1468,12 @@ qstr_Superb_work_{playern|精湛的工作，{playername}。你的態度值得讚
 qstr_Your_efficiency_is_p|你的效率令人滿意，{playername}。堅持下去你就能步步高升。
 qstr_It_was_an_honour_to_|我很樂意效勞。
 qstr_Your_wish_is_my_comm|悉聽尊便。
+; qstr_Hail_{playername}_{s|Hail, {playername}, {s24}! Glad am I to behold you, alive and unbroken. Through days of shadow we have endured, and in the thunder of battle we have stood fast. Bitter were the losses laid upon us, and many sorrows have we borne.^^ Yet this hour is not given to grief. Rather it is a time of gladness, for the darkness has passed, and a new Age dawns upon the world. Be thankful, for I am thankful, that in the Last Days of the Third Age you stood beside me, faithful and undaunted.
+; qstr_Through_shadow_and_s|Through shadow and strife I stood, not for glory, but for loyalty and hope unbroken. I remember the fallen and the cost that was paid. As a new Age has dawned, I pledge my strength to its keeping, in wisdom and in mercy.
+; qstr_So_you_stand_before_|So you stand before me still, {playername}, {s24}. Few have endured the storm and come forth unbroken. The world has been purged by fire and iron, and many were swept away who clung to the follies of the past. Such was the price of change.^^ The Age of decay has ended, and the long dominion of chance and fading dreams is overthrown. A new Age rises—ordered, measured, and strong—shaped not by hope alone, but by the knowledge and will of your wise Master, the White Hand of Isengard! ^^Behold it, and rejoice, for you have lived to see what few dared imagine. In the Last Days of the Third Age, when the old powers failed and the world stood at the brink, you chose to stand beside me. Remember this hour, for it is the hour of victory, and from it the world shall be remade.
+; qstr_Hail_to_the_White_Ha|Hail to the White Hand!
+; qstr_Hear_now_the_word_of|Hear now the word of Barad-dûr, {playername}, {s24}, and give heed. The proud are fallen, the hopeful are silenced, and the counsels of the Wise have come to naught. Such was the end foreseen from the beginning. The Third Age is ended by decree of the Lord of the Dark Tower, whose will has prevailed over all resistance. What was weighed has been found wanting, and the world is now claimed under HIS dominion. ^^Let it further be proclaimed: those who stood and endured in the Last Days are numbered among the living by sufferance alone. Order is restored, fear is the law, and obedience is the measure of worth. The Red Eye watches all. Hail to the Red Eye.
+; qstr_Hail_to_the_Red_Eye!|Hail to the Red Eye!
 qstr_Sauron_in_Mordor_the|魔多的索倫、昂巴的海盜、侃德的維瑞亞人和哈拉德的部落民
 qstr_Saruman_in_Isengard_|艾辛格的薩魯曼和登蘭德的野人
 qstr_Orcs_of_Moria_and_Do|摩瑞亞和多爾哥多的半獸人
@@ -1419,8 +1499,9 @@ qstr_our|我們的
 qstr_your|你的
 qstr_Moria_and_Gundabad|摩瑞亞和剛達巴
 qstr_Moria|摩瑞亞
+; qstr_Your_enemies_in_{s3}|Your enemies in {s3} hear of your oath and rally their strength to counter the threat.
 qstr_Gundabad|剛達巴
-qstr_You_swear_an_oath_of|你發了對{s3}的復仇之誓。你必須在未來的日子裡盡可能摧毀更多摩瑞亞和剛達巴的部隊。你確信你的追隨者都見證了你的誓言，而你也不希望被認為是背誓者。讓血祭開始吧！^。
+; qstr_You_swear_an_oath_of|You swear an oath of vengeance against {s3}. You must now defeat as many parties and personally kill as many orcs of Moria and Gundabad as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^.
 qstr_The_search_for_the_L|尋找失落長槍的旅途帶著你來到了多溫尼安，古代布拉多辛王的北方王國所在地。未完待續
 qstr__You_need_to_be_{s24|(你至少需要升到{s24}以上)。
 qstr_You_are_not_worthy_o|你不配我效力。先證明自己，升到{s25}以上吧。{S2}
@@ -1468,9 +1549,7 @@ qstr_Firstly_we_must_thin|首先，我們必須考慮到這項任務會遇到的
 qstr_You_need_sharp_weapo|你需要鋒利的武器，新鮮的肉給你的部下和座狼，作為燃料的木頭，使弱者跟上的酒。你還必須把你的渣滓管好否則他們在你到牆邊之前就會開始自相殘殺。我們太忙著內鬥沒辦法照顧彼此—準備好提供讓蛆蟲們移動所需的物資。^[需要{reg3}資源，{reg15}影響力]
 qstr_Steel_must_be_kept_s|武器必須保持鋒利，人馬必須被餵飽，篝火必須保持燃燒，水必須足夠，傷口必須得到照料—如果你不能維持戰役你和你的人馬將對我們毫無用處。我們的戰線已經拉的太開所以沒辦法提供你的需求，你必須準備好提供保持軍隊圍城所需的資源。^[需要{reg3}資源，{reg15}影響力]
 qstr_Steel_must_be_kept_sh|武器必須保持鋒利，人馬必須被餵飽，篝火必須保持燃燒，水必須足夠，傷口必須得到照料—雖然沒那麼光彩但其重要性毫不遜於在壁壘上廝殺。我們的戰線已經拉的太開所以沒辦法提供你的需求，你必須準備好提供保持軍隊圍城所需的資源。^[需要{reg3}資源，{reg15}影響力]
-qstr_Next_if_you_try_to_a|接著，如果你試圖攻擊敵人的首都，而還沒死的話我會把你打一頓的..我們只會朝主人命令之處進軍。你要去找能擊潰的軟弱敵人。
-qstr_Secondly_you_do_not_|第二，你無權領導我們的同胞攻打敵人的首都。這些地方只有在我們全軍的力量團結起來後才能克服。你只能對被削弱到可以擊潰的敵人發起攻勢。
-qstr_Third_{s2}_is_on_its|第三，{s2}有自己的戰役。如果你的目標看起來不錯我們會和你戰鬥的，但你最好有足夠的力量自己獲勝，否則你活不久的。
+; qstr_Know_that_{s2}_is_on|Know that {s2} is on its own campaign. We’ll fight with you if the pickings look good, but you better be strong enough to win on your own, or you won’t last long.
 qstr_Furthermore_you_must|此外，你必須知道{s2}正忙於自己的戰役。如果情況允許我們的旗幟會跟著你進入戰鬥，但別抱太多希望—你很可能不得不獨自奮戰。
 qstr_Last_remember_that_a|最後，記住身為{s25}，主人沒空管我們的失敗。{s2}為你的戰鬥承擔很多風險—為我們帶來失敗的話我們會確保你感到生不如死的。
 qstr_Finally_remember_tha|最後，記住身為{s25}，你的成功和失敗會決定你的生死。{s2}為你的進軍承擔很多風險—為它帶來毀滅的話你將承擔嚴重的後果。
@@ -1585,6 +1664,7 @@ qstr_Take_these_warriors_a|帶上這些戰士，讓他們助力你擊潰我們�
 qstr_Before_you_leave_{pl|{playername}，在你離開之前我想讓你知道，對我來說你一直是個好戰友。
 qstr_Wait_{playername}._I_|等等，{playername}。我還不是很了解你，但一段時間來你都是好戰友。
 qstr_Allow_me_to_repay_yo|請讓我回贈你一些士兵作為感謝。
+; qstr_{reg41}_{s9}_joined_|{reg41} {s9} joined your party.
 qstr_Wait_{playername}._C|等等，{playername}。像你和你麾下戰士這樣能幹的僕人，值得配備最好的裝備。
 qstr_Halt_{playername}._It|別走，{playername}，我的僕人用寒磣的裝備可太不體面了。
 qstr_Take_this_{s22}_and_|收下這{s22}吧，讓其助力你在戰場上奮勇殺敵。
@@ -1672,6 +1752,7 @@ qstr_One_{s6}_left_the_pa|一名{s6}離開了隊伍。
 qstr_I_understand._I_will|我明白了。我會陪著你。一陣子。
 qstr_I_have_played_my_rol|在很長一段時間裡我都扮演著我的角色，甚至超越凡人的好幾輩子。這場戰爭是屬於人類的。我將前往西方而有些人可能會決定跟著我吧。
 qstr_{reg1}_Veteran_Elves|{reg1}資深的精靈決定離開你的隊伍。
+; qstr_{s5}_comes_for_your_|{s5} comes for your aid!
 qstr_What_an_amazing_feat|多麼驚人的戰功啊！
 qstr_Well_done!|幹的漂亮！
 qstr_Nice_legwork.|跑腿跑得好。

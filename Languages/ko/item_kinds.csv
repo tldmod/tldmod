@@ -150,7 +150,6 @@ itm_arnor_shield_c|아르노르 기병 방패
 itm_arnor_sword_c|아르노르 전쟁검
 itm_arnor_sword_a|아르노르 바스타드 소드
 itm_arnor_sword_f|아르노르 숏소드
-itm_riv_helm_a|리븐델 두건
 itm_riv_helm_b|리븐델 궁병 투구
 itm_riv_helm_c|리븐델 보병 투구
 itm_tiara_reward|요정 군주 왕관
@@ -285,7 +284,7 @@ itm_lorien_round_shield|로리엔 원형 방패
 itm_lorien_helm_a|로리엔 궁수 투구
 itm_lorien_helm_b|로리엔 궁수 투구
 itm_lorien_helm_c|로리엔 보병 투구
-itm_orc_coif|오르크 뼈 모자
+itm_orc_coif2|오르크 뼈 모자
 itm_orc_greaves|오르크 사슬 부츠
 itm_orc_ragwrap|오르크 헝겊두건
 itm_orc_furboots|오르크 모피 부츠
@@ -320,7 +319,11 @@ itm_isen_uruk_helm_d|우르크 하이 대장 투구
 itm_isen_uruk_helm_e|우르크 하이 추적자 투구
 itm_uruk_pike_b|모르도르 파이크
 itm_uruk_falchion_a|우르크 펄션
-itm_uruk_falchion_b|Orc Great Scimitar
+itm_orc_bastard_scimitar|Orc Great Scimitar
+; itm_orc_cleaver_a|Orc Cleaver
+itm_orc_scimitar_b|오르크 언월도
+itm_orc_sabre_b|오르크 사브르
+; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|아이센가드 검
 itm_isengard_axe|아이센가드 도끼
 itm_isengard_hammer|아이센가드 투구
@@ -340,7 +343,7 @@ itm_orc_pick|오르크 곡괭이
 itm_orc_hammer|악랄한 망치
 itm_orc_club_b|와르그 기수 몽둥이
 itm_orc_club_c|날카로운 오르크 몽둥이
-itm_orc_club_d|악랄한 철퇴
+itm_orc_mace|악랄한 철퇴
 itm_orc_sledgehammer|오르크 슬렛지헤머
 itm_orc_simple_spear|오르크 창
 itm_orc_skull_spear|오르크 뼈 창
@@ -375,6 +378,10 @@ itm_orc_morion|오르크 모리온 투구
 itm_orc_beakhelm|오르크 부리 투구
 itm_orc_bughelm|오르크 벅헬름
 itm_orc_visorhelm|오르크 덮개투구
+; itm_orc_coif|Evil Coif
+itm_orc_skullcap|오르크 뼈 모자
+; itm_orc_skullhelm|Orc Skullhelm
+itm_orc_barbuta|오르크 코덮는 투구
 itm_m_orc_light_a|모르도르 오르크 가벼운 갑옷
 itm_m_orc_light_b|모르도르 오르크 가벼운 갑옷
 itm_m_orc_light_c|모르도르 오르크 가벼운 갑옷
@@ -839,3 +846,6 @@ itm_denethor_robe|고급 의상
 ; itm_civilian_carry_wood2|Wood
 ; itm_work_basket|Basket
 ; itm_work_basket_2|Basket
+itm_spider_mount|거미
+; itm_marker_night_troop|Trait: Night Troop
+; itm_marker_berserker|Trait: Berserker
