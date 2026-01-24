@@ -105,586 +105,6 @@ bright_nights= ((is_a_wb_mt==1) and [
   ] or [])
 
 
-####################################################################################################################
-## CUSTOM CAMERA by dunde, modified to add fixed-camera + implemented by Kham (WB Only)
-####################################################################################################################
-
-
-khams_custom_player_camera = ((is_a_wb_mt==1) and [
-
-  #-- numeric constants
-
- # cam_mode_default = 0
- # cam_mode_free    = 1
- # cam_mode_fixed   = 2
-
-  #-- camera_init
-  (0, 0, ti_once,
-  [
-    (get_player_agent_no, "$cam_current_agent"),
-    (gt,                  "$cam_current_agent", -1)
-  ],
-  [
-    (assign, "$cam_mode",   "$pref_cam_mode"),
-    (assign, "$shoot_mode", 0),
-    (assign, "$cam_free",   0),
-  ]),
-
- # Piggyback on Camera Code for Displaying Agent Labels.
- #InVain: Disabled
-
-  # (ti_battle_window_opened, 0, 0, [(ge, "$g_display_agent_labels", 1),],
-    # [(start_presentation, "prsnt_display_agent_labels")]),
-
-  # (0,0,0, [(ge, "$g_display_agent_labels", 1), (key_clicked, key_y),],
-    # [(try_begin),
-      # (eq, "$show_hide_labels",1),
-      # (assign, "$show_hide_labels", 0),
-     # (else_try),
-      # (assign, "$show_hide_labels",1),
-      # (start_presentation, "prsnt_display_agent_labels"),
-     # (try_end)]),
-
-  #-- camera_mode
-  (0, 0, 0, [],
-  [
-
-    # Arsakes BEAR CAMERAa adjustment (when default camera is used)
-    (try_begin),
-      (eq, "$cam_mode", 4), # Shapeshifting into bear adds 10 to camera mode
-      # Now setup camera
-      (set_fixed_point_multiplier, 100),
-      (agent_get_look_position, pos7, "$cam_current_agent"),
-      (position_move_z, pos7,  360), # 180 default
-      (position_move_y, pos7, -150), # -210 default
-      (position_rotate_x, pos7, -30),
-      (mission_cam_animate_to_position, pos7, 100),
-    #
-    (else_try),
-    #(try_begin),
-      (eq, "$cam_mode", 1),
-      (set_fixed_point_multiplier, 100),
-      (agent_get_look_position, pos7, "$cam_current_agent"),
-      (position_get_rotation_around_x, ":angle", pos7),
-      (store_sub, ":reverse", 0, ":angle"),
-      (position_rotate_x, pos7, ":reverse"),
-      (position_move_y, pos7, "$g_camera_y"),
-      (position_move_z, pos7, "$g_camera_z"),
-      (agent_get_horse, ":horse_agent", "$cam_current_agent"),
-      (try_begin),
-        (ge, ":horse_agent", 0),
-        (position_move_z, pos7, 80),
-      (try_end),
-      (store_mul, ":reverse", -1, "$g_camera_y"),
-      (store_atan2, ":drop", "$g_camera_z", ":reverse"),
-      (convert_from_fixed_point, ":drop"),
-      (val_sub, ":angle", ":drop"),
-      (position_rotate_x, pos7, ":angle"),
-      (mission_cam_animate_to_position, pos7, 100, 0),
-
-    (else_try),
-      (eq, "$cam_mode", 2),
-      (try_begin),
-        (eq,"$cam_shoulder",0),
-        (set_fixed_point_multiplier, 100),
-        (agent_get_look_position, pos7, "$cam_current_agent"),
-        (position_move_z, pos7,  180),
-        (position_move_y, pos7, -190),
-        (position_move_x, pos7,   70),
-        (agent_get_horse, ":horse_agent", "$cam_current_agent"),
-        (try_begin),
-          (ge, ":horse_agent", 0),
-          (position_move_z, pos7, 80),
-        (try_end),
-        (mission_cam_animate_to_position, pos7, 100),
-      (else_try),
-        (eq,"$cam_shoulder",1),
-        (set_fixed_point_multiplier, 100),
-        (agent_get_look_position, pos7, "$cam_current_agent"),
-        (position_move_z, pos7,  180),
-        (position_move_y, pos7, -190),
-        (position_move_x, pos7,  -70),
-        (agent_get_horse, ":horse_agent", "$cam_current_agent"),
-        (try_begin),
-          (ge, ":horse_agent", 0),
-          (position_move_z, pos7, 80),
-        (try_end),
-        (mission_cam_animate_to_position, pos7, 100),
-      (else_try),
-        (eq, "$cam_shoulder", 2),
-        (set_fixed_point_multiplier, 100),
-        (agent_get_look_position, pos7, "$cam_current_agent"),
-        (position_move_z, pos7,  180),
-        (position_move_y, pos7, -210),
-        (agent_get_horse, ":horse_agent", "$cam_current_agent"),
-        (try_begin),
-          (ge, ":horse_agent", 0),
-          (position_move_z, pos7, 80),
-        (try_end),
-        (mission_cam_animate_to_position, pos7, 100),
-      (try_end),
-    (else_try),
-      (lt, "$cam_mode", 3),
-      (main_hero_fallen),
-      (agent_get_position, 1, "$cam_current_agent"),
-      (get_player_agent_no,   ":player_agent"),
-      (agent_set_position,    ":player_agent", 1),
-    (try_end),
-  ]),
-
-  #-- camera_raise
-  (0, 0, 0,
-  [
-    (this_or_next|key_is_down, key_right_control),
-    (             key_is_down, key_left_control),
-    (key_is_down, "$key_camera_height_plus"),
-    (eq,          "$cam_mode",  1)
-  ],
-  [
-    (val_add, "$g_camera_z",    1),
-    (this_or_next|neg|key_is_down, key_right_shift),
-    (             neg|key_is_down, key_left_shift),
-    (val_add, "$g_camera_z",    9)
-  ]),
-
-  #-- camera_lower
-  (0, 0, 0,
-  [
-    (this_or_next|key_is_down, key_right_control),
-    (             key_is_down, key_left_control),
-    (key_is_down, "$key_camera_height_min"),
-    (eq,          "$cam_mode",  1)
-  ],
-  [
-    (val_sub, "$g_camera_z",    1),
-    (this_or_next|neg|key_is_down, key_right_shift),
-    (             neg|key_is_down, key_left_shift),
-    (val_sub, "$g_camera_z",    9),
-    (val_max, "$g_camera_z",   50)
-  ]),
-
-  #--camera_zoom_out
-  (0, 0, 0,
-  [
-    (this_or_next|key_is_down, key_right_control),
-    (             key_is_down, key_left_control),
-    (key_is_down, "$key_camera_zoom_min"),
-    (eq,          "$cam_mode",  1)
-  ],
-  [
-    (val_sub, "$g_camera_y",    1),
-    (this_or_next|neg|key_is_down, key_right_shift),
-    (             neg|key_is_down, key_left_shift),
-    (val_sub, "$g_camera_y",    9),
-  ]),
-
-  #-- camera_zoom_in
-  (0, 0, 0,
-  [
-    (this_or_next|key_is_down, key_right_control),
-    (             key_is_down, key_left_control),
-    (             key_is_down, "$key_camera_zoom_plus"),
-    (eq, "$cam_mode",           1)
-  ],
-  [
-    (val_add, "$g_camera_y",    1),
-    (this_or_next|neg|key_is_down, key_right_shift),
-    (             neg|key_is_down, key_left_shift),
-    (val_add, "$g_camera_y",    9),
-    (val_min, "$g_camera_y",  -50),
-  ]),
-
-
-  #-- camera_set
-  (0, 0, 0,
-  [
-    (this_or_next|key_is_down, key_right_control),
-    (             key_is_down, key_left_control),
-    (key_clicked, "$key_camera_toggle"),
-    (try_begin),
-      (is_camera_in_first_person),
-      (display_message, "@Cannot Change Camera Mode while in First Person.", color_bad_news),
-      (display_message, "@Switch Back to 3rd Person View to Cycle Camera.", color_bad_news),
-    (try_end),
-    (neg|is_camera_in_first_person),
-    (lt, "$cam_mode", 3),
-    (neq, "$shoot_mode", 1)
-  ],
-  # toggling only when camera mode = 0, 1, 2 (3 = disable); shoot_mode = 1 temporarily disable toggling
-  [
-    (try_begin),
-      (eq,     "$cam_mode", 0),
-      (assign, "$cam_mode", 2),
-      (display_message, "@Fixed Custom Camera"),
-      (display_message, "@Press Ctrl + Left / Ctrl + Right Arrow Keys to Switch Shoulders"),
-      (display_message, "@Press Ctrl + Down to Center"),
-
-    (else_try),
-      (eq,     "$cam_mode", 2),
-      (assign, "$cam_mode", 1),
-      (display_message, "@Free-Mode Custom Camera"),
-      (display_message, "@Press Ctrl and +/- to zoom in/out"),
-      (display_message, "@Press Ctrl and Up/Down arrow keys to tilt up/down"),
-
-    (else_try),
-      (eq, "$cam_mode", 1),
-      # (try_begin),
-      #   (neg|main_hero_fallen, 0),
-      #   (get_player_agent_no, "$cam_current_agent"),
-      # (try_end),
-      (assign, "$cam_mode", 0),
-      (display_message, "@Default Camera"),
-    (try_end),
-
-    (mission_cam_set_mode, "$cam_mode"),
-  ]),
-
-  #-- camera_cycle_forwards
-  (0, 0, 0,
-  [
-    (this_or_next|key_is_down, key_right_control),
-    (             key_is_down, key_left_control),
-    (key_clicked, "$key_camera_next"),
-    (try_begin),
-      (eq, "$cam_mode",         3),
-      (call_script, "script_dmod_cycle_forwards"),
-    (else_try),
-      (eq,     "$cam_mode",     2),
-      (assign, "$cam_shoulder", 0),
-      (display_message, "@Fixed Camera - Right Shoulder"),
-    (try_end)
-  ], []),
-
-  #-- camera_cycle_backwards
-  (0, 0, 0,
-  [
-    (this_or_next|key_is_down, key_right_control),
-    (             key_is_down, key_left_control),
-    (key_clicked, "$key_camera_prev"),
-    (try_begin),
-      (eq, "$cam_mode",         3),
-      (call_script, "script_dmod_cycle_backwards"),
-    (else_try),
-      (eq,     "$cam_mode",     2),
-      (assign, "$cam_shoulder", 1),
-      (display_message, "@Fixed Camera - Left Shoulder"),
-    (try_end)
-  ], []),
-
-  #+-- camera_cycle_behind
-
-  (0, 0, 0,
-  [
-    (this_or_next|key_is_down, key_right_control),
-    (             key_is_down, key_left_control),
-    (key_clicked, key_down),
-    (try_begin),
-      (eq,     "$cam_mode",     2),
-      (assign, "$cam_shoulder", 2),
-      (display_message, "@Fixed Camera - Center"),
-    (try_end)
-  ], []),
-
-  #-- camera_shot
-  (0, 0, 0,
-  [
-    (key_is_down, key_left_mouse_button),
-    (eq, "$cam_mode", 1)
-  ],
-  [
-    #swy-- if the player agent is the currently selected agent
-    (get_player_agent_no, ":player_agent"),
-    (eq, ":player_agent", "$cam_current_agent"),
-
-    #swy-- is not empty-handed
-    (agent_get_wielded_item, ":weapon", "$cam_current_agent", 0),
-    (neq, ":weapon", -1),
-
-    #swy-- and is wielding a bow/crossbow/thrown
-    (item_get_type,   ":type", ":weapon"),
-    (this_or_next|eq, ":type", itp_type_bow),
-    (this_or_next|eq, ":type", itp_type_crossbow),
-    (             eq, ":type", itp_type_thrown),
-
-    (assign,  "$cam_mode", 0),
-    (assign,"$shoot_mode", 1),
-    (mission_cam_set_mode, "$cam_mode")
-  ]),
-
-  #-- camera_normal (exit from shooting mode)
-  (0, 0, 0,
-  [
-    (neg|key_is_down, key_left_mouse_button),
-    (eq,    "$shoot_mode", 1)
-  ],
-  [
-    (assign,  "$cam_mode", 1),
-    (assign,"$shoot_mode", 0),
-    (mission_cam_set_mode, "$cam_mode")
-  ])
-
-] or [])
-############## CUSTOM CAMERA END ###################################################################################
-
-
-
-tld_warg_leap_attack = ((is_a_wb_mt==1) and [ 
-  (3, 0, 0, [], [
-  (set_fixed_point_multiplier, 100),
-  
-  (try_for_agents, ":agent"), #Instead of Try_For_Agents nested loops, we cache them instead (WB only operation)
-    (agent_is_alive, ":agent"),
-    (agent_is_human, ":agent"),
-    (agent_get_troop_id, ":agent_trp", ":agent"),
-    (is_between, ":agent_trp", warg_ghost_begin, warg_ghost_end),
-    (agent_get_horse, ":warg", ":agent"),
-    (ge, ":warg", 0),
-    (agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":agent"),
-    (gt, ":num_nearby_agents", 0),
-
-    (store_random_in_range, ":rnd", 0, 100),
-    (lt, ":rnd", 55), #Increased the Chance, but reduced the frequency.
-    (assign, ":enemy_in_front", 0),
-
-    (agent_get_position, pos6, ":agent"),
-  
-  (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
-    (neq, ":enemy_in_front", 1),
-    (agent_ai_get_cached_enemy, ":enemy_agent", ":agent", ":nearby_agent_no"),
-    (agent_is_active, ":enemy_agent"),
-    (agent_is_alive, ":enemy_agent"),
-    (gt, ":enemy_agent", 0),
-    (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
-    (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
-    (store_skill_level, ":riding_skill", skl_riding, ":enemy_troop_id"),
-    (agent_get_position, pos8, ":enemy_agent"),
-    (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
-    (lt, ":dist", 300),
-    (neg|position_is_behind_position, pos8, pos6), #2, 1
-    (assign, ":enemy_in_front", 1),
-  (try_end),
-  
-    (eq, ":enemy_in_front", 1),
-
-    #Kham - let's give 'em some sounds when attacking
-    (try_begin),
-      (le, ":rnd", 25), 
-    (agent_play_sound, ":warg", "snd_wolf_strike"),
-    (else_try),
-      (agent_play_sound, ":warg", "snd_warg_lone_woof"),
-    (try_end),
-
-    (agent_set_animation, ":warg", "anim_warg_leapattack"),
-  
-  (assign, ":damaged_agents", 0),
-  (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
-    (agent_ai_get_cached_enemy, ":enemy_agent", ":agent", ":nearby_agent_no"),
-    (agent_is_alive, ":enemy_agent"),
-      (agent_is_human, ":enemy_agent"),
-      (agent_is_active, ":enemy_agent"),
-      (gt, ":enemy_agent", 0),
-      (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
-      (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
-      (neg|is_between, ":enemy_troop_id", "trp_spider", "trp_animals_end"),
-      (neq, ":enemy_troop_id", "trp_werewolf_old"),
-      (agent_get_position, pos8, ":enemy_agent"),
-      (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
-      (lt, ":dist", 300),
-      (neg|position_is_behind_position, pos8, pos6), #2, 1
-      (store_random_in_range, reg66, 10, 16),
-      (store_random_in_range, ":rand_2", 0, 100),
-      (assign, ":channel", 0),
-      (agent_get_horse, ":target_horse", ":enemy_agent"),
-      (try_begin),
-        (le, ":rand_2", 15), #15% chance for a fly back
-        (try_begin),
-          (lt, ":target_horse", 0),
-          (assign, ":hit_anim", "anim_strike_fly_back"),
-          (assign, reg66, 5),
-        (else_try),
-          (gt, ":target_horse", 0),
-          (le, ":riding_skill", 4),
-          (assign, ":hit_anim", "anim_strike_fly_back"),
-          (agent_start_running_away, ":target_horse"),
-          (agent_stop_running_away, ":target_horse"),
-          (assign, reg66, 5),
-        (else_try),
-          (assign, ":hit_anim", "anim_strike_legs_front"),
-          (assign, reg66, 5),
-          (assign, ":channel", 1),
-        (try_end),
-      (else_try),
-        (try_begin),
-          (gt, ":target_horse", 0), 
-          (assign, ":hit_anim", "anim_strike_legs_front"),
-          (assign, ":channel", 1),
-        (else_try),
-          (assign, ":hit_anim", "anim_strike_chest_front"),
-        (try_end),
-      (try_end),
-      #(display_message, "@DEBUG: Warg Jump!"),
-      (try_begin),
-        (get_player_agent_no, ":player"),
-        (eq, ":enemy_agent", ":player"),
-        (display_message, "@Received {reg66} damage."),
-      (try_end),
-      (le, ":damaged_agents", 1), # Allows us to limit the number of agents an animal can strike #
-      (set_show_messages, 0),
-      (store_agent_hit_points,":hp",":enemy_agent",1),
-      (val_sub, ":hp", reg66),
-      (agent_set_hit_points, ":enemy_agent", ":hp", 1),
-      (try_begin),
-        (le, ":hp", 0),
-        (agent_deliver_damage_to_agent, ":agent", ":enemy_agent"),
-      (try_end),
-      (set_show_messages, 1),
-      (val_add, ":damaged_agents", 1),
-      (agent_set_animation, ":enemy_agent", ":hit_anim", ":channel"),
-    (try_end),
-  (try_end),
-  ])
-
-] or [])
-
-
-tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
-
-  (ti_on_agent_spawn, 0,0, [
-    (eq, "$tld_spawn_battle_animals", 1),
-    (store_trigger_param_1, ":agent"),
-
-    (agent_get_troop_id, ":agent_trp",":agent"),
-    (ge, ":agent_trp", 0),
-
-    (this_or_next|eq, ":agent_trp", "trp_i5_dun_wolf_guard"),
-    (this_or_next|eq, ":agent_trp", "trp_beorn_lord"),
-    (this_or_next|eq, ":agent_trp", "trp_npc17"),
-    (eq, ":agent_trp", "trp_player"),
-
-    (assign, ":base_chance", 45), #45% chance to spawn a wolf
-
-    (try_begin),
-      (eq, ":agent_trp", "trp_player"),
-      (assign, ":beorn_shield_equipped", 0),
-      (try_for_range, ":item_slot", ek_item_0, ek_item_3 + 1),
-        (eq, ":beorn_shield_equipped", 0),
-        (agent_get_item_slot, ":item", ":agent", ":item_slot"),
-        (gt, ":item", "itm_no_item"),
-        (eq, ":item", "itm_beorn_shield_reward"),
-        (assign, ":beorn_shield_equipped", 1),
-      (try_end),
-
-      (eq, ":beorn_shield_equipped", 1),
-      (assign, ":base_chance", 10),
-      (store_skill_level, ":wildcraft", "skl_persuasion", "trp_player"), 
-      (store_mul, ":multiplier", ":wildcraft", 9),
-      (val_add, ":base_chance", ":multiplier"),
-      #(assign, reg72, ":base_chance"),
-      
-    (else_try),
-      (eq, ":agent_trp", "trp_player"),
-      (assign, ":base_chance", -1),
-    (else_try),
-      (eq, ":agent_trp", "trp_npc17"),
-      (store_character_level, ":dimborn_level", "trp_npc17"),
-      (assign, ":base_chance", 1),
-      (val_mul, ":dimborn_level", 5),
-      (val_add, ":base_chance", ":dimborn_level"),
-      (val_min, ":base_chance", 100),
-    (try_end),
-
-
-    (store_random_in_range, ":rnd", 0, 100),
-    #(assign, reg73, ":rnd"),
-    #(display_message, "@Player has Beorning Shield. Base chance = {reg72}, rnd = {reg73}"),
-
-    (le, ":rnd", ":base_chance")], 
-    [
-      (store_trigger_param_1, ":agent"),
-      (agent_is_human, ":agent"), # Arsakes attempting to fix a bug
-      (agent_get_troop_id, ":agent_trp",":agent"),
-
-      (ge, ":agent_trp", 0),
-
-      (this_or_next|eq, ":agent_trp", "trp_i5_dun_wolf_guard"),
-      (this_or_next|eq, ":agent_trp", "trp_beorn_lord"),
-      (this_or_next|eq, ":agent_trp", "trp_npc17"),
-      (eq, ":agent_trp", "trp_player"),
-
-      (set_fixed_point_multiplier, 100),
-      (agent_get_position, pos1, ":agent"),
-      (position_move_x, pos1, 150),
-      (set_spawn_position, pos1),
-      (try_begin),
-        (this_or_next|eq, ":agent_trp", "trp_npc17"),
-        (this_or_next|eq, ":agent_trp", "trp_player"),
-        (eq, ":agent_trp", "trp_beorn_lord"),
-        (spawn_agent, "trp_bear_strong"),
-        (store_faction_of_troop, ":troop_faction", ":agent_trp"),
-        (store_relation, ":relations", ":troop_faction", "$players_kingdom"),
-        (try_begin),
-          (gt, ":relations", 0),
-          (assign, ":color", color_good_news),
-        (else_try),
-          (assign, ":color", color_bad_news),
-        (try_end),
-        (call_script, "script_cf_update_bear_kinship"), # Arsakes: Update bear kinship for trait
-        (display_message, "@A bear has been summoned to battle!", ":color"),
-      (else_try),
-        (spawn_agent, "trp_wolf"),
-      (try_end),
-      (assign, ":animal", reg0),
-      #(assign, "$animal_is_present", 1), #now assigned per spawn done in tld_animal_attacks
-      (agent_add_relation_with_agent, ":agent", ":animal", 0),
-      #(agent_set_hit_points, ":animal", 100, 0),
-
-    #InVain: Make them uncontrollable
-    (try_begin),
-        (agent_is_defender, ":agent"),
-        (agent_set_team, ":animal", 4),
-        (team_set_relation, 4, 0, 1),
-        (team_set_relation, 4, 2, 1),
-        (team_set_relation, 4, 1, -1),
-        (team_set_relation, 4, 3, -1),
-        (team_set_relation, 4, 5, -1),
-        (team_give_order, 4, grc_everyone, mordr_charge),
-    (else_try),
-        (agent_set_team, ":animal", 5),
-        (team_set_relation, 5, 0, -1),
-        (team_set_relation, 5, 2, -1),
-        (team_set_relation, 5, 1, 1),
-        (team_set_relation, 5, 3, 1),
-        (team_set_relation, 5, 4, 1),
-        (team_give_order, 5, grc_everyone, mordr_charge),
-    (try_end),
-    (agent_force_rethink, ":animal"),
-  ]),
-
-  (ti_on_order_issued, 0, 0,
-    [
-      (ge, "$animal_is_present", 1), #InVain: This is now a counter, not a binary
-      (store_trigger_param_1, ":order_no"),
-      (eq, ":order_no", mordr_dismount),
-    ],
-    [
-      (try_for_agents, ":agent"),
-        (agent_get_troop_id, ":agent_trp",":agent"),
-        (is_between, ":agent_trp", "trp_future_animal_0", "trp_animals_end"),
-        (agent_is_active, ":agent"),
-        (agent_is_alive,  ":agent"),
-        (get_player_agent_no, ":player_agent"),
-        (agent_get_team, ":player_team", ":player_agent"),
-        (agent_get_division, ":animal_division", ":agent"),
-        (set_show_messages, 0),
-        (team_give_order, ":player_team", ":animal_division", mordr_mount),
-        (set_show_messages, 1),
-      (try_end),
-  ])
-  
-] or [])
-
-
-
 tld_common_battle_scripts = ((is_a_wb_mt==1) and [
 
     ### WB only triggers 
@@ -718,6 +138,9 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
 + tld_bow_shield
 + tld_battlefield_agent_effects
 + tld_animal_attacks
++ khams_custom_player_camera
++ field_ai_triggers
++ battle_encounters_effects
 or [] ) + [
 
 	#tld_fix_viewpoint,
@@ -738,7 +161,7 @@ or [] ) + [
   reset_fog,
   horse_whistle_init,
   horse_whistle,
-] + tld_morale_triggers + fade + khams_custom_player_camera + custom_troll_hitting_new + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack + reward_birds_wb + nazgul_flying
+] + tld_morale_triggers + fade + custom_troll_hitting_new + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack + reward_birds_wb + nazgul_flying
 
 
 tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
@@ -755,6 +178,7 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
 
   ] + tld_bow_shield
 + tld_battlefield_agent_effects
+ + khams_custom_player_camera
   or [] ) + [
 	#tld_fix_viewpoint,
  	custom_tld_spawn_troop, custom_tld_init_battle,
@@ -764,7 +188,7 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
   tld_assign_special_troops,
 	#common_battle_kill_underwater,
   reset_fog,
-] + fade + bright_nights + khams_custom_player_camera + custom_troll_hitting_new
+] + fade + bright_nights + custom_troll_hitting_new
 
 
 tld_common_peacetime_scripts = [
@@ -783,61 +207,7 @@ tld_common_peacetime_scripts = [
     # tld_animals_init,
     # tld_animal_strikes,
     # tld_remove_riderless_animals,
-] + custom_tld_bow_to_kings + bright_nights + fade + reward_birds_wb + khams_custom_player_camera + nazgul_flying +((is_a_wb_mt==1) and tld_bow_shield + tld_animated_town_agents + tld_positional_sound_props + tld_points_of_interest or [] )#Custom Cam triggers
-
-
-tld_common_wb_muddy_water = ((is_a_wb_mt==1) and [
-
-  (ti_before_mission_start,  0, 0, [], # swy: in march 2020 we found that this doesn't work; a mission trigger is too late, it needs to be done during scene dispatch, around the time of setting up entry points.
-  [                                    #      we haven't yet tried that, in general adding the sf_muddy_water flag should be enough, as it works every time as long as the 'river_mud' material exists somewhere,
-    (try_begin),                       #      but it's not dynamically configurable for Isengard and special occasions. that's when (set_river_shader_to_mud) may be actually useful, but not here.
-      (store_current_scene, ":cur_scene"),
-      (this_or_next|eq,  ":cur_scene", "scn_morannon_outside_1"),
-      (this_or_next|eq,  ":cur_scene", "scn_morannon_outside_2"),																 
-      (this_or_next|eq,  ":cur_scene", "scn_morannon_center"),
-      (this_or_next|eq,  ":cur_scene", "scn_morannon_siege"),																 
-      (this_or_next|eq,  ":cur_scene", "scn_deadmarshes"),
-      (this_or_next|eq,  ":cur_scene", "scn_fangorn"),
-      (this_or_next|eq,  ":cur_scene", "scn_mirkwood"),
-      
-      (this_or_next|is_between,  ":cur_scene", "scn_forest_mirkwood1", scn_forest_mirkwood9+1),
-      (this_or_next|is_between,  ":cur_scene", "scn_swamp_4", scn_swamp_small+1),
-      
-      (this_or_next|eq,  ":cur_scene", "scn_moria_castle"),
-      (this_or_next|eq,  ":cur_scene", "scn_moria_secret_entry"),
-      (this_or_next|eq,  ":cur_scene", "scn_moria_deep_mines"),
-      
-      (this_or_next|eq,  ":cur_scene", "scn_tld_sorcerer_forest_a"),
-      (this_or_next|eq,  ":cur_scene", "scn_tld_sorcerer_forest_b"),
-      (this_or_next|eq,  ":cur_scene", "scn_tld_sorcerer_forest_c"),
-      
-      (this_or_next|eq,  ":cur_scene", "scn_isengard_center"),
-      (this_or_next|eq,  ":cur_scene", "scn_isengard_underground"),
-      
-      (this_or_next|eq,  ":cur_scene", "scn_harad_camp_center"),
-      (this_or_next|eq,  ":cur_scene", "scn_north_rhun_camp_center"),
-      
-      (this_or_next|eq,  ":cur_scene", "scn_minas_morgul_siege"),
-      (             eq,  ":cur_scene", "scn_minas_morgul_center"),
-      
-      (set_river_shader_to_mud),
-    (try_end),
-    
-    # swy: new water river shader tinting functionality; Warband-only, replace that Minas Morgul poop color :)
-    (try_begin),
-      (store_current_scene, ":cur_scene"),
-      (this_or_next|eq,  ":cur_scene", "scn_minas_morgul_siege"),
-      (             eq,  ":cur_scene", "scn_minas_morgul_center"),
-      
-      (call_script, "script_tld_internal_set_river_color_tinting", True, int(0.01 * 1e6), int(0.002 * 1e6), int(0.002 * 1e6)), # swy: subtractive dark brown (see the module_scripts definition for more; but here it makes it look funkier because the numbers are negative)
-    (else_try),
-    
-      (call_script, "script_tld_internal_set_river_color_tinting", False, 0, 0, 0),
-    (try_end),
-
-  ]),
-
-] or [])
+] + custom_tld_bow_to_kings + bright_nights + fade + reward_birds_wb + nazgul_flying +((is_a_wb_mt==1) and tld_bow_shield + tld_animated_town_agents + tld_positional_sound_props + tld_points_of_interest  + khams_custom_player_camera or [] )#Custom Cam triggers
 
 
 mission_templates = [ # not used in game
@@ -3458,7 +2828,9 @@ mission_templates = [ # not used in game
   # Triggers
   tld_common_wb_muddy_water+
   common_deathcam_triggers + 
-  fade + khams_custom_player_camera + bright_nights + [
+  fade + bright_nights
+  +((is_a_wb_mt==1) and tld_bow_shield + khams_custom_player_camera or [] )
+  + [
   
   tld_slow_wounded,
   custom_tld_spawn_troop, custom_tld_init_battle,
@@ -3812,7 +3184,10 @@ mission_templates = [ # not used in game
   # Triggers
   tld_common_wb_muddy_water+
   common_deathcam_triggers + 
-  fade + khams_custom_player_camera + bright_nights + [
+  fade + bright_nights
+  +((is_a_wb_mt==1) and tld_bow_shield + khams_custom_player_camera or [] )
+  + [
+  
   
   tld_slow_wounded,
   custom_tld_spawn_troop, custom_tld_init_battle,
@@ -7262,9 +6637,10 @@ mission_templates = [ # not used in game
   tld_common_wb_muddy_water+
 	common_deathcam_triggers +
   #moto_formations_triggers + 
-  khams_custom_player_camera+
   tld_animal_attacks+
-  fade+ [
+  fade+ 
+  ((is_a_wb_mt==1) and tld_bow_shield + khams_custom_player_camera or [] )
+  + [
 	
  # tld_animals_init,
 	custom_warg_sounds,
@@ -9679,8 +9055,9 @@ custom_tld_spawn_troop,
   # Triggers
   tld_common_wb_muddy_water+
   common_deathcam_triggers + 
-  khams_custom_player_camera+
-  fade+ [
+  fade+ 
+  ((is_a_wb_mt==1) and tld_bow_shield + khams_custom_player_camera or [] )
+  + [
   
   common_battle_on_player_down,
   tld_move_ai,
