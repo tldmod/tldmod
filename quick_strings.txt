@@ -962,7 +962,7 @@ qstr_{***}Killer_WItcher_Sp {***}Killer_WItcher_Spawned,_Badass_King_Theo_added!
 qstr_{***}Player_Siege_Enab {***}Player_Siege_Enabled
 qstr_{***}You_are_not_in_th {***}You_are_not_in_the_right_region_to_spawn_animal_ambushes._Please_go_to_N_Mirkwood,_S_Mirkwood,_Grey_Mountains,_or_Misty_Mountains
 qstr_{***}{reg1} {***}{reg1}
-qstr_[!}all_equipped_item [!}all_equipped_items_set_to_{s1}
+qstr_{***}all_equipped_item {***}all_equipped_items_set_to_{s1}
 qstr_{***}cracked {***}cracked
 qstr_{***}heavy {***}heavy
 qstr_{***}balanced {***}balanced
@@ -1319,7 +1319,7 @@ qstr_You_gained_250_exper You_gained_250_experience.
 qstr_Hrooom..._Hmmm...Who Hrooom..._Hmmm...Who_are_you?
 qstr_Hrooom..._Hmmm...Oh_ Hrooom..._Hmmm...Oh,_it's_you_again,_{playername}.
 qstr_Treebeard_wants_you_ Treebeard_wants_you_find_and_defeat_the_orcs_cutting_down_trees_in_Fangorn.
-qstr_[!}Something_wrong_n [!}Something_wrong,_not_enough_troops_for_scout_party
+qstr_{***}Something_wrong_n {***}Something_wrong,_not_enough_troops_for_scout_party
 qstr_my_home_town my_home_town
 qstr_I_am_in_perfect_heal I_am_in_perfect_health.
 qstr_I_am_suffering_from_ I_am_suffering_from_{s1}.

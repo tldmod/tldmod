@@ -990,7 +990,7 @@ dialogs = [
         (party_remove_members, "p_main_party", ":mintroop", ":n"),
         (party_add_members, ":scout_party", ":mintroop", ":n"),
         (val_sub,":scouts2fill",":n"),
-    (else_try), (display_message,"@[!}Something wrong, not enough troops for scout party"),
+    (else_try), (display_message,"@{!}Something wrong, not enough troops for scout party"),
     (try_end),
     (try_end),
     (call_script, "script_party_calculate_strength", ":scout_party", 0),
