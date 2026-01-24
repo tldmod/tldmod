@@ -27,7 +27,9 @@ copy    it\ui.csv                 it\ui_transifex.csv           /y
 copy /b it\ui_native_template.csv+it\ui_transifex.csv it\ui.csv /y
 del     it\ui_transifex.csv
 
-pause
-cls 
-:: Commented out by Invain, being annoyed by the script re-running whenever I accidentally click a button
-::&& goto :up
+echo.
+echo ______________________________
+echo.
+echo Script processing has ended.
+echo Press any key to restart. . .
+pause>nul && echo. && echo. && goto :up
