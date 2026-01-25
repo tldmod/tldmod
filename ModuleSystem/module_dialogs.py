@@ -1931,11 +1931,22 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                         (eq, "$g_talk_troop", trp_npc21),
                         (store_conversation_agent, ":troll_agent"),
                         (agent_set_animation, ":troll_agent", "anim_troll_or_ent_bend_continue"),
-                     (try_end),],
+                     (try_end),
+                     #If faction is dying they will try to leave instead of just complain
+                     (faction_get_slot, ":npc_faction_strength", ":npc_faction", slot_faction_strength),
+                     (gt, ":npc_faction_strength", fac_str_dying),],
 "{s5}, {reg6?our:my} {s6} homeland is suffering grievously in the War, I ask you to consider helping {reg6?our:my} people as soon as we are rested and ready.", "companion_faction_demolished", []],
 
 [anyone|plyr, "companion_faction_demolished", [],  "Then we shall ride to aid {s6} immediately.", "close_window", [(call_script,"script_stand_back"),]],
 [anyone|plyr, "companion_faction_demolished", [],  "I'm sorry, but we are needed elsewhere.", "close_window", [(call_script,"script_stand_back"),]],
+
+[anyone, "event_triggered", [(eq, "$npc_map_talk_context", slot_troop_last_complaint_hours),],
+"{s5}, I am sorry, but the suffering of {reg6?our:my} {s6} homeland is too great. I must return at once to provide what aid I can.", "companion_faction_dying", []],
+
+[anyone|plyr, "companion_faction_dying", [],  "Very well. Perhaps we will meet again.", "close_window", [
+    (call_script,"script_stand_back"),
+    (call_script, "script_promote_companion_to_lord", "$g_talk_troop"),
+]],
 
 [anyone, "event_triggered", [
                      (eq, "$npc_map_talk_context", slot_troop_home), 
