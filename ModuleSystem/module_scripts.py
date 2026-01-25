@@ -11693,6 +11693,47 @@ scripts = [
       (display_message, "@{s6} has joined your party"),
 ]),
 
+# script_promote_companion_to_lord
+# Input: arg1 = troop_no,
+# Output: none
+("promote_companion_to_lord", [
+    (store_script_param_1, ":troop_no"),
+
+    #Remove companion from player party
+    #Might need to check they are actually in the party if we later decide to allow unrecruited or dismissed heroes to become lords
+    (remove_member_from_party, ":troop_no"),
+
+    #Give them the same treatment regular kingdom heroes get on game start, more or less
+    (troop_add_gold,":troop_no",100000), #Ren - I dunno if this matters but kingdom heroes get it so I copied it here
+    (store_troop_faction, ":troop_faction", ":troop_no"),
+    #We may need to do this in the game start script if there's a possibility the troop's faction and original faction might be different
+    (troop_set_slot, ":troop_no", slot_troop_original_faction, ":troop_faction"),
+    (troop_set_slot, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
+
+    #Set banner to leader's banner 
+    #Ren - I don't think we need to worry about exceptions currently since neither Gondor companion belongs to a fiefdom
+    (faction_get_slot,":faction_leader",":troop_faction",slot_faction_leader),
+    (troop_get_slot, ":banner_id", ":faction_leader", slot_troop_banner_scene_prop),
+    (troop_set_slot, ":troop_no", slot_troop_banner_scene_prop, ":banner_id"),
+
+    #Ren - It might interesting if renown factored in what they did while in the player's party, but level is probably a good enough approximation
+    (store_character_level, ":level", ":troop_no"),
+    (store_mul, ":renown", ":level", ":level"),
+    (val_div, ":renown", 2),
+    (troop_set_slot, ":troop_no", slot_troop_renown, ":renown"),
+    (store_random_in_range, ":random_readiness", 0, 100),
+    (troop_set_slot, ":troop_no", slot_troop_readiness_to_join_army, ":random_readiness"),
+    (troop_set_slot, ":troop_no", slot_troop_readiness_to_follow_orders, 100),
+    (troop_set_slot, ":troop_no", slot_troop_player_order_state, spai_undefined),
+    (troop_set_slot, ":troop_no", slot_troop_player_order_object, -1),
+    (troop_set_slot, ":troop_no", slot_troop_prisoner_of_party, -1),
+    (call_script, "script_update_troop_notes", ":troop_no"),
+
+    #Create their party in the capital
+    (faction_get_slot, ":town", ":troop_faction",  slot_faction_capital ),
+    (call_script, "script_create_kingdom_hero_party", ":troop_no", ":town"),
+]),
+
 #  "script_str_store_race_adj" (stringNo, raceNo)  (mtarini)
 ("str_store_race_adj", [
 	(store_script_param_1, ":stN"),

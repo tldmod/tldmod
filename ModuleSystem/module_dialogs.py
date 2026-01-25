@@ -1151,6 +1151,8 @@ dialogs = [
 [anyone,"member_background_recap_3", [], "Then shortly after, I joined up with you.", "do_member_trade",[]],
 [anyone,"do_member_view_char", [], "Anything else?", "member_talk",[]],
 
+[anyone|plyr,"member_talk", [(eq, "$cheat_mode", 1)], "{!}Become a Lord", "close_window",[(call_script, "script_promote_companion_to_lord", "$g_talk_troop"),]],
+
 # ORIGINAL MEMBER HEALTH
 #[anyone,"member_health", [
 # (troop_get_slot, ":wound_mask", "$g_talk_troop", slot_troop_wound_mask),
