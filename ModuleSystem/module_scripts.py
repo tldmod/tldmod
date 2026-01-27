@@ -1985,6 +1985,7 @@ scripts = [
     #Assign retainers before spawning parties
     (call_script, "script_assign_retainers"),
     #Retainers End
+    (call_script, "script_assign_loyalty"),
 
 # spawn some lords in distinct towns, TLD
     ]+[
@@ -25925,6 +25926,12 @@ command_cursor_scripts = [
         (faction_set_slot, "fac_imladris", slot_faction_banner_troop, trp_i6_rivendell_standard_bearer),
         (faction_set_slot, "fac_woodelf", slot_faction_banner_troop, trp_i5_greenwood_standard_bearer),
     (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4336),
+        (assign, "$savegame_version", 4336),
+        (call_script, "script_assign_loyalty"),
+    (try_end),
     
     ] or []) + [ 
 ]),
@@ -28407,6 +28414,19 @@ command_cursor_scripts = [
         ]),
     #Friendship Rewards End
 
+# Assigns loyalty to heroes at game start. Put in a separate script so it can also be called in the save game update.
+# #script_assign_loyalty
+# # INPUT: none
+# # OUTPUT: none
+("assign_loyalty", [
+    (try_for_range, ":troop_no", heroes_begin, heroes_end),
+        # This won't do anything for most troops but doesn't harm anything if it's set
+        (troop_set_slot, ":troop_no", slot_troop_faction_loyalty, faction_loyalty_loyal),
+    (try_end),
+    # Override the default for some specificl heroes
+    # Berta was a former prisoner of Gundabad
+    (troop_set_slot, trp_npc21, slot_troop_faction_loyalty, faction_loyalty_neutral),
+]),
 
 # script_cf_party_remove_random_prisoner, copy of script_cf_party_remove_random_regular_troop (InVain)
 # Input: arg1 = party_no

@@ -1934,7 +1934,10 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                      (try_end),
                      #If faction is dying they will try to leave instead of just complain
                      (faction_get_slot, ":npc_faction_strength", ":npc_faction", slot_faction_strength),
-                     (gt, ":npc_faction_strength", fac_str_dying),],
+                     (troop_get_slot, ":npc_loyalty", "$map_talk_troop", slot_troop_faction_loyalty),
+                     (this_or_next|gt, ":npc_faction_strength", fac_str_dying),
+                     #Low loyalty companions don't care to leave
+                     (le, ":npc_loyalty", faction_loyalty_neutral),],
 "{s5}, {reg6?our:my} {s6} homeland is suffering grievously in the War, I ask you to consider helping {reg6?our:my} people as soon as we are rested and ready.", "companion_faction_demolished", []],
 
 [anyone|plyr, "companion_faction_demolished", [],  "Then we shall ride to aid {s6} immediately.", "close_window", [(call_script,"script_stand_back"),]],
