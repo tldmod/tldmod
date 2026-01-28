@@ -5909,7 +5909,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone|plyr, "player_siege_accept",[(store_troop_faction,":fac", "$g_talk_troop"), (str_store_faction_name, s2, ":fac")],
   "Thank you, my Lord. I will not let you and {s2} down.", "close_window",
-  []],
+  [(assign, "$g_leave_encounter",1)]],
 
 [anyone, "marshall_answer", [],
    "Very well, {playername}, I shall defer to your judgement. I shall send messengers to gather our forces.^Follow me and stay close - we ride to {s4}!", "close_window",
