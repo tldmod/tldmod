@@ -25928,8 +25928,8 @@ command_cursor_scripts = [
     (try_end),
 
     (try_begin),
-        (lt, "$savegame_version", 4336),
-        (assign, "$savegame_version", 4336),
+        (lt, "$savegame_version", 4337),
+        (assign, "$savegame_version", 4337),
         (call_script, "script_assign_loyalty"),
     (try_end),
     
@@ -28426,6 +28426,8 @@ command_cursor_scripts = [
     # Override the default for some specificl heroes
     # Berta was a former prisoner of Gundabad
     (troop_set_slot, trp_npc21, slot_troop_faction_loyalty, faction_loyalty_neutral),
+    # The dwarves only just retook Erebor. Kili will not see them low it again
+    (troop_set_slot, trp_npc7, slot_troop_faction_loyalty, faction_loyalty_fanatical),
 ]),
 
 # script_cf_party_remove_random_prisoner, copy of script_cf_party_remove_random_regular_troop (InVain)
