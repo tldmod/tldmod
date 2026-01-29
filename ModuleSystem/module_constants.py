@@ -1049,6 +1049,14 @@ friendship_reward_end = 3
 slot_troop_is_night_troop = 169
 slot_troop_is_berserker = 170
 
+# How much a hero considers the interests of their home faction over other interests (their own, the player's, or other factions)
+# Ren - I'm padding these to make it easier to insert more tiers later but at the moment we only need 3
+slot_troop_faction_loyalty = 171
+
+faction_loyalty_neutral = 5     # Not overly loyal, but not treacherous. Could be a good hero who weighs the interests of all of Middle-Earth over their home
+faction_loyalty_loyal = 10      # Default for most heroes. Loyal to their faction but also concerned about their allies
+faction_loyalty_fanatical = 15 # Will drop everything else for their home faction
+
 #Healer Slots (troop slot)
 slot_troop_needs_healing = 308
 
