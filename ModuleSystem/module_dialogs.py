@@ -5437,7 +5437,17 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_talk_troop_faction")]],
 
 #Reinforcement code from town garrison reinforcement, register init above
-[anyone,"lord_give_troops", [(party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1)],
+[anyone,"lord_give_troops", [
+    #Make sure the temp party contains regular troops that could be given away
+    (party_get_num_companions, ":num_stacks","p_main_party_backup"),
+    (assign, ":regular_troops_available", 0),
+    (try_for_range_backwards, ":i_stack", 0, ":num_stacks"),
+        (party_stack_get_troop_id, ":stack_troop", "p_main_party_backup", ":i_stack"),
+		(neg|troop_is_hero, ":stack_troop"),  # heroes stay in A (for hosts and stuff)
+        (assign, ":regular_troops_available", 1),
+	(try_end),
+    (eq, ":regular_troops_available", 1),
+],
    "Reinforce my party? I can always use a few more soldiers.", 
    "lord_give_troops_check",
    [
@@ -13893,7 +13903,17 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
      (ge, ":party_size", ":party_limit")],
 "We don't need any more soldiers, thank you.", "party_reinforce_end", []],
 #Reinforcement code from town garrison reinforcement, register init above
-[anyone,"party_reinforce", [(party_get_num_companions,reg11,"p_main_party_backup"), (gt,reg11,1)],
+[anyone,"party_reinforce", [
+    #Make sure the temp party contains regular troops that could be given away
+    (party_get_num_companions, ":num_stacks","p_main_party_backup"),
+    (assign, ":regular_troops_available", 0),
+    (try_for_range_backwards, ":i_stack", 0, ":num_stacks"),
+        (party_stack_get_troop_id, ":stack_troop", "p_main_party_backup", ":i_stack"),
+		(neg|troop_is_hero, ":stack_troop"),  # heroes stay in A (for hosts and stuff)
+        (assign, ":regular_troops_available", 1),
+	(try_end),
+    (eq, ":regular_troops_available", 1),
+],
    "Reinforce our party? We can use a few more soldiers, but keep in mind we only accept troops of our faction.", 
    "party_reinforce_check", [
     #GA: allowed player to transfer whatever troops in exchange screen. Unfitting ones will be returned to him later
