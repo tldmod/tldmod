@@ -5439,7 +5439,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #Reinforcement code from town garrison reinforcement, register init above
 [anyone,"lord_give_troops", [
     #Make sure the temp party contains regular troops that could be given away
-    (party_get_num_companions, ":num_stacks","p_main_party_backup"),
+    (party_get_num_companion_stacks, ":num_stacks","p_main_party_backup"),
     (assign, ":regular_troops_available", 0),
     (try_for_range_backwards, ":i_stack", 0, ":num_stacks"),
         (party_stack_get_troop_id, ":stack_troop", "p_main_party_backup", ":i_stack"),
@@ -13905,7 +13905,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 #Reinforcement code from town garrison reinforcement, register init above
 [anyone,"party_reinforce", [
     #Make sure the temp party contains regular troops that could be given away
-    (party_get_num_companions, ":num_stacks","p_main_party_backup"),
+    (party_get_num_companion_stacks, ":num_stacks","p_main_party_backup"),
     (assign, ":regular_troops_available", 0),
     (try_for_range_backwards, ":i_stack", 0, ":num_stacks"),
         (party_stack_get_troop_id, ":stack_troop", "p_main_party_backup", ":i_stack"),
