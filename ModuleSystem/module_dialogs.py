@@ -1121,6 +1121,42 @@ dialogs = [
         (troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_dismissed),
         (remove_member_from_party, "$g_talk_troop"),(set_player_troop, "trp_player")]],
 
+[anyone|plyr,"member_talk", [
+    #This option is only available if their leadership is 3+
+    (store_skill_level, ":leadership", "skl_leadership", "$g_talk_troop"),
+    (ge, ":leadership", 3),
+
+    #Make sure their faction isn't defeated
+    (store_troop_faction, ":troop_faction", "$g_talk_troop"),
+    (neg|faction_slot_eq, ":troop_faction", slot_faction_state, sfs_defeated),
+
+    #Don't show if their faction is an enemy in WoTT
+    (store_troop_faction, "$g_talk_troop_faction", "$g_talk_troop"),
+    (store_relation, ":rel", "$g_talk_troop_faction", "$players_kingdom"),
+    (gt, ":rel", 0),
+    (str_store_faction_name, s14, ":troop_faction"),
+], "You should return to {s14} and gather warriors to lead against the enemy.", "member_promote_lord",[]],
+
+[anyone,"member_promote_lord", [
+], "Perhaps you're right. {s14} has need of more capable commanders. Are you sure you're ready for me to leave your side?", "member_promote_lord_2",[]],
+
+[anyone|plyr, "member_promote_lord_2", [],  "I am sure. You can do more leading a host of your own.", "member_promote_lord_leaving", []],
+[anyone, "member_promote_lord_leaving", [],  "Well. I'll be off, then. Perhaps we will meet again.", "close_window", [
+    (call_script,"script_stand_back"),
+    (call_script, "script_promote_companion_to_lord", "$g_talk_troop"),
+]],
+
+#This option is disabled temporarily since it causes a weird loop later on I need to figure out how to fix - Ren
+#[anyone|plyr,"member_promote_lord_2", [],
+#"I am sure. I will also send warriors of {s14} with you.", "companion_give_troops",[
+#    #Player can't change their mind now so spawn their party now before attempting the troop exchange
+#    (call_script, "script_promote_companion_to_lord", "$g_talk_troop"),
+#    # just to see if someone can be given away: backup party, then see if troops which can be given away 
+#    (call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
+#    (call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_talk_troop_faction")]],
+
+[anyone|plyr, "member_promote_lord_2", [],  "On second thought I'd rather you stay with me for now.", "do_member_trade", []],
+
 [anyone|plyr,"member_talk", [], "I'd like to ask you something.", "member_question",[]],
 #[anyone|plyr,"member_talk", [], "Never mind.", "close_window",[(call_script,"script_stand_back"),]],
 [anyone|plyr,"member_talk", [], "Never mind.", "close_window",[(set_player_troop, "trp_player"), (call_script,"script_stand_back")]], #RamonNZ: set back to trp_player at the end or you'll become the troop.
