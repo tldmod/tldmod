@@ -11733,6 +11733,14 @@ scripts = [
     #Create their party in the capital
     (faction_get_slot, ":town", ":troop_faction",  slot_faction_capital ),
     (call_script, "script_create_kingdom_hero_party", ":troop_no", ":town"),
+
+    #Give strength to their faction based on their level
+    (str_store_faction_name, s3, ":troop_faction"),
+    (display_message, "@{s3} gained faction strength."),
+    (store_mul, ":strength_increase", ":level", 10),
+    (faction_get_slot, ":fac_strength", ":troop_faction", slot_faction_strength_tmp),
+    (val_add, ":fac_strength", ":strength_increase"),
+    (faction_set_slot,":troop_faction",slot_faction_strength_tmp,":fac_strength"),
 ]),
 
 #  "script_str_store_race_adj" (stringNo, raceNo)  (mtarini)
