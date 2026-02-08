@@ -28426,6 +28426,8 @@ command_cursor_scripts = [
     # Override the default for some specificl heroes
     # Berta was a former prisoner of Gundabad
     (troop_set_slot, trp_npc21, slot_troop_faction_loyalty, faction_loyalty_neutral),
+    # The dwarves only just retook Erebor. Kili will not see them lose it again
+    (troop_set_slot, trp_npc7, slot_troop_faction_loyalty, faction_loyalty_fanatical),
 ]),
 
 # script_cf_party_remove_random_prisoner, copy of script_cf_party_remove_random_regular_troop (InVain)
