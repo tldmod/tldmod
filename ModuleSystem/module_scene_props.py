@@ -2546,7 +2546,7 @@ scene_props = [
     (scene_set_slot, "scn_aw_tomb", slot_scene_visited, 1),  ]),
   ]),
 ## isengard props
-("isen_orthanc_tower", 0, "isen_orthanc_tower", "bo_isen_orthanc_tower", []),
+("isen_orthanc_tower", 0, "isen_orthanc_tower", "bo_isen_orthanc_tower_new", []),
 ("isen_circular_wall", 0, "isen_circular_wall_new", "0", []),
 ("isen_roof_door", 0, "isen_roof_door", "bo_isen_roof_door", []),
 ("isen_wood_construction", 0, "isen_wood_construction", "0", []),
