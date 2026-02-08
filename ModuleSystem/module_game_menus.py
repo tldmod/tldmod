@@ -45,7 +45,7 @@ from module_info import wb_compile_switch as is_a_wb_menu
 tmp_menu_steps = 5 # how many entries per meny page
 tmp_menu_max_fac = 21
 tmp_menu_max_tier = 4
-tmp_max_troop = 858 # troop_end
+tmp_max_troop = trp_last # troop_end
 
 magic_items = [itm_lembas] + [itm_pony] +  [itm_warg_reward] + list(range(itm_ent_water, itm_witchking_helmet))  # first non magic item
 

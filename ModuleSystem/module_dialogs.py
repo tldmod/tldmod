@@ -1121,6 +1121,42 @@ dialogs = [
         (troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_dismissed),
         (remove_member_from_party, "$g_talk_troop"),(set_player_troop, "trp_player")]],
 
+[anyone|plyr,"member_talk", [
+    #This option is only available if their leadership is 3+
+    (store_skill_level, ":leadership", "skl_leadership", "$g_talk_troop"),
+    (ge, ":leadership", 3),
+
+    #Make sure their faction isn't defeated
+    (store_troop_faction, ":troop_faction", "$g_talk_troop"),
+    (neg|faction_slot_eq, ":troop_faction", slot_faction_state, sfs_defeated),
+
+    #Don't show if their faction is an enemy in WoTT
+    (store_troop_faction, "$g_talk_troop_faction", "$g_talk_troop"),
+    (store_relation, ":rel", "$g_talk_troop_faction", "$players_kingdom"),
+    (gt, ":rel", 0),
+    (str_store_faction_name, s14, ":troop_faction"),
+], "You should return to {s14} and gather warriors to lead against the enemy.", "member_promote_lord",[]],
+
+[anyone,"member_promote_lord", [
+], "Perhaps you're right. {s14} has need of more capable commanders. Are you sure you're ready for me to leave your side?", "member_promote_lord_2",[]],
+
+[anyone|plyr, "member_promote_lord_2", [],  "I am sure. You can do more leading a host of your own.", "member_promote_lord_leaving", []],
+[anyone, "member_promote_lord_leaving", [],  "Well. I'll be off, then. Perhaps we will meet again.", "close_window", [
+    (call_script,"script_stand_back"),
+    (call_script, "script_promote_companion_to_lord", "$g_talk_troop"),
+]],
+
+#This option is disabled temporarily since it causes a weird loop later on I need to figure out how to fix - Ren
+#[anyone|plyr,"member_promote_lord_2", [],
+#"I am sure. I will also send warriors of {s14} with you.", "companion_give_troops",[
+#    #Player can't change their mind now so spawn their party now before attempting the troop exchange
+#    (call_script, "script_promote_companion_to_lord", "$g_talk_troop"),
+#    # just to see if someone can be given away: backup party, then see if troops which can be given away 
+#    (call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
+#    (call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_talk_troop_faction")]],
+
+[anyone|plyr, "member_promote_lord_2", [],  "On second thought I'd rather you stay with me for now.", "do_member_trade", []],
+
 [anyone|plyr,"member_talk", [], "I'd like to ask you something.", "member_question",[]],
 #[anyone|plyr,"member_talk", [], "Never mind.", "close_window",[(call_script,"script_stand_back"),]],
 [anyone|plyr,"member_talk", [], "Never mind.", "close_window",[(set_player_troop, "trp_player"), (call_script,"script_stand_back")]], #RamonNZ: set back to trp_player at the end or you'll become the troop.
@@ -1920,11 +1956,11 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                      (store_conversation_troop, "$map_talk_troop"),
                      (troop_get_slot, ":honorific", "$map_talk_troop", slot_troop_honorific),
                      (str_store_string, s5, ":honorific"),
-                     (store_troop_faction, ":npc_faction", "$map_talk_troop"),
-                     (str_store_faction_name, s6, ":npc_faction"),
+                     (store_troop_faction, "$g_talk_troop_faction", "$g_talk_troop"),
+                     (str_store_faction_name, s6, "$g_talk_troop_faction"),
                      (assign, reg6, 0),
                      (try_begin),
-                       (eq, "$players_kingdom", ":npc_faction"),
+                       (eq, "$players_kingdom", "$g_talk_troop_faction"),
                        (assign, reg6, 1),
                      (try_end),
                      (try_begin),
@@ -1933,8 +1969,11 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                         (agent_set_animation, ":troll_agent", "anim_troll_or_ent_bend_continue"),
                      (try_end),
                      #If faction is dying they will try to leave instead of just complain
-                     (faction_get_slot, ":npc_faction_strength", ":npc_faction", slot_faction_strength),
-                     (gt, ":npc_faction_strength", fac_str_dying),],
+                     (faction_get_slot, ":npc_faction_strength", "$g_talk_troop_faction", slot_faction_strength),
+                     (troop_get_slot, ":npc_loyalty", "$map_talk_troop", slot_troop_faction_loyalty),
+                     (this_or_next|gt, ":npc_faction_strength", fac_str_dying),
+                     #Low loyalty companions don't care to leave
+                     (le, ":npc_loyalty", faction_loyalty_neutral),],
 "{s5}, {reg6?our:my} {s6} homeland is suffering grievously in the War, I ask you to consider helping {reg6?our:my} people as soon as we are rested and ready.", "companion_faction_demolished", []],
 
 [anyone|plyr, "companion_faction_demolished", [],  "Then we shall ride to aid {s6} immediately.", "close_window", [(call_script,"script_stand_back"),]],
@@ -1945,7 +1984,121 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone|plyr, "companion_faction_dying", [],  "Very well. Perhaps we will meet again.", "close_window", [
     (call_script,"script_stand_back"),
-    (call_script, "script_promote_companion_to_lord", "$g_talk_troop"),
+    (call_script, "script_promote_companion_to_lord", "$map_talk_troop"),
+]],
+
+#This is adapted from the logic for giving troops to regular lords, but with some of the pre-checks removed because they aren't needed in this context
+[anyone|plyr,"companion_faction_dying", [],
+"Of course. I shall also permit other warriors of {s6} to go with you.", "companion_give_troops",[
+    #Move faction name from s6 to s14 for the troop transfer strings
+    (str_store_string_reg, s14, s6),
+    #It's now too late for the player to persuade them to stay so spawn their party now before attempting the troop exchange
+    (call_script, "script_promote_companion_to_lord", "$map_talk_troop"),
+    # just to see if someone can be given away: backup party, then see if troops which can be given away 
+    (call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
+    (call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_talk_troop_faction")]],
+
+#Reinforcement code from town garrison reinforcement, register init above
+[anyone,"companion_give_troops", [
+    #Make sure the temp party contains regular troops that could be given away
+    (party_get_num_companions, ":num_stacks","p_main_party_backup"),
+    (assign, ":regular_troops_available", 0),
+    (try_for_range_backwards, ":i_stack", 0, ":num_stacks"),
+        (party_stack_get_troop_id, ":stack_troop", "p_main_party_backup", ":i_stack"),
+		(neg|troop_is_hero, ":stack_troop"),  # heroes stay in A (for hosts and stuff)
+        (assign, ":regular_troops_available", 1),
+	(try_end),
+    (eq, ":regular_troops_available", 1),
+],
+   "I will be glad to have them with me. {s6} needs all the help you can provide.", 
+   "companion_give_troops_check",
+   [
+    (party_clear, "p_main_party_backup"),#GA: changed to exchange from whole party then return non-faction guys to player
+    (assign, "$g_move_heroes", 0),
+    (call_script, "script_party_add_party_companions", "p_main_party_backup", "p_main_party"), #keep this backup for later
+    (party_get_num_companions, reg28, "p_main_party"), # reg28: initial main party size
+    (call_script, "script_get_party_disband_cost", "p_main_party", 1),
+    (assign, "$initial_party_value", reg0), # initial party total value
+   ] +
+
+#swy-- workaround a bug where the player would get stuck in the conversation menu with the barracks guy after donating some troops to his camp.
+#   -- because the player insists on upgrading his troops inside the give_members screen, the before/after count doesn't match and none of the following dialog options kick. Boom, stuck.
+#   -- what i've made is to make impossible for the player to upgrade his troops in here by returning a crazy amount of points/money in "script_game_get_upgrade_cost", so the button stays disabled.
+#   -- more info: http://mbx.streetofeyes.com/index.php/topic,3465.msg68239.html#msg68239
+
+  (is_a_wb_dialog
+   and
+  [
+   (assign, "$tld_forbid_troop_upgrade_mode", 1),
+   (change_screen_give_members, "$pout_party"),
+  ]
+   or
+  [
+   (change_screen_give_members, "$pout_party")
+  ])
+  
+# disabled in the next dialog -> lord_give_troops_check (already loaded when the give_members is accessed) -> lord_give_troops_check_1 (3 paths) -> lord_pretalk
+
+],
+
+[anyone,"companion_give_troops", [], "Unfortunately you don't have any {s14} soldiers to reinforce me with.", "companion_give_troops_final", []],
+
+[anyone,"companion_give_troops_check", [], "Let me check the soldier roster...", "companion_give_troops_check_1", [] ],
+
+[anyone,"companion_give_troops_check_1", [
+    (call_script, "script_party_eject_nonfaction","$pout_party", "p_main_party", "p_main_party_backup"), #"p_main_party_backup" contains nonfaction troops returned
+    (party_get_num_companions, reg0, "p_main_party"),
+    (party_get_num_companions, reg46, "p_main_party_backup"),
+    (eq, reg46, 0),(eq, reg28, reg0)], # player didn't give anyone (party size unchanged)
+"So you've changed your mind...^I see.", "companion_give_troops_final", []],
+
+[anyone,"companion_give_troops_check_1", [(gt, reg46, 0),(eq, reg28, reg0)], # player gave nonfittings only (party size unchanged)
+"I don't have use for those troops here...^Take them back.", "companion_give_troops_final", []],
+
+[anyone,"companion_give_troops_check_1", [(gt, reg28, reg0),# player gave fittings too (party size decreased)
+    (val_sub, reg28, reg0),(val_sub, reg28, 1), #calculate how many troops given (minus 1)
+    (call_script, "script_get_party_disband_cost", "p_main_party", 1),
+    (val_sub, "$initial_party_value", reg0), #calculate how much monetary value given
+    (str_store_string, s31, "@Thank you, commander.^"),(str_clear, s32),
+    (assign, reg14, "$initial_party_value"),
+    (try_begin),
+        (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+        (str_store_string, s4, "@{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32}"+earned_reg14_rp_of_s14),
+    (else_try),
+        (str_store_string, s4, "@{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}"+earned_reg14_rp_of_s14),
+    (try_end), 
+    (try_begin), # if nonfittings were given
+        (gt, reg46, 0),
+        (str_store_string, s4, "@{s4} ^Oh, and take back those soldiers who are not our kin, I have no use for them."),
+    (try_end)],
+"{!}{s4}", "companion_give_troops_check_2", [(call_script, "script_add_faction_rps", "$g_talk_troop_faction", "$initial_party_value")]],
+
+[anyone|plyr,"companion_give_troops_check_2", 
+  [ (try_begin),(neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+                             (str_store_string, s31, "@I don't need them anyway, so save it."),
+     (else_try),(eq, reg26, 1),(str_store_string, s31, "@It is my duty to help our people."),
+     (else_try),               (str_store_string, s31, "@It is my duty to help our allies."),
+    (try_end)],
+"{!}{s31}", "companion_give_troops_final", []],
+
+[anyone,"companion_give_troops_final", [],
+"Farewell, commander.", "close_window", [(call_script,"script_stand_back")]],
+
+[anyone|plyr, "companion_faction_dying", [],  "I understand, but you are needed here.", "companion_faction_dying_persuade", []],
+
+[anyone, "companion_faction_dying_persuade", [
+    #Fanatical companions cannot be persuaded
+    (troop_get_slot, ":npc_loyalty", "$map_talk_troop", slot_troop_faction_loyalty),
+    (le, ":npc_loyalty", faction_loyalty_fanatical),
+    #Loyal companions can be persauded if player's charisma is high enough
+    (store_character_level, ":npc_level", "$map_talk_troop"),
+    (store_attribute_level, ":charisma", "trp_player", ca_charisma),
+    (ge, ":charisma", ":npc_level"),
+], "Perhaps you are right. I can serve {s6} better by fighting at your side.", "close_window", [(call_script,"script_stand_back"),]],
+
+[anyone, "companion_faction_dying_persuade", [], "I'm afraid that {s6} needs me more. Farewell, {s5}.", "close_window", [
+    (call_script,"script_stand_back"),
+    (call_script, "script_promote_companion_to_lord", "$map_talk_troop"),
 ]],
 
 [anyone, "event_triggered", [

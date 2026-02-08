@@ -2290,6 +2290,10 @@ ai_scripts = [
 	# they don't leave the place
 	(this_or_next|faction_slot_eq,":faction_id",slot_faction_marshall,":troop_no"),
 	(neg|faction_slot_eq,":faction_id",slot_faction_leader,":troop_no"),
+
+    # Also fail for heroes with very low leadership (such as low level companions promoted to lords)
+    (store_skill_level, ":leadership", "skl_leadership", ":troop_no"),
+    (ge, ":leadership", 3), # 3 is the lowest leadership level among any of the default kingdom heroes
 ]),
 
 # script_create_kingdom_hero_party

@@ -1985,6 +1985,7 @@ scripts = [
     #Assign retainers before spawning parties
     (call_script, "script_assign_retainers"),
     #Retainers End
+    (call_script, "script_assign_loyalty"),
 
 # spawn some lords in distinct towns, TLD
     ]+[
@@ -11732,6 +11733,14 @@ scripts = [
     #Create their party in the capital
     (faction_get_slot, ":town", ":troop_faction",  slot_faction_capital ),
     (call_script, "script_create_kingdom_hero_party", ":troop_no", ":town"),
+
+    #Give strength to their faction based on their level
+    (str_store_faction_name, s3, ":troop_faction"),
+    (display_message, "@{s3} gained faction strength."),
+    (store_mul, ":strength_increase", ":level", 10),
+    (faction_get_slot, ":fac_strength", ":troop_faction", slot_faction_strength_tmp),
+    (val_add, ":fac_strength", ":strength_increase"),
+    (faction_set_slot,":troop_faction",slot_faction_strength_tmp,":fac_strength"),
 ]),
 
 #  "script_str_store_race_adj" (stringNo, raceNo)  (mtarini)
@@ -25925,6 +25934,12 @@ command_cursor_scripts = [
         (faction_set_slot, "fac_imladris", slot_faction_banner_troop, trp_i6_rivendell_standard_bearer),
         (faction_set_slot, "fac_woodelf", slot_faction_banner_troop, trp_i5_greenwood_standard_bearer),
     (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4336),
+        (assign, "$savegame_version", 4336),
+        (call_script, "script_assign_loyalty"),
+    (try_end),
     
     ] or []) + [ 
 ]),
@@ -28407,6 +28422,21 @@ command_cursor_scripts = [
         ]),
     #Friendship Rewards End
 
+# Assigns loyalty to heroes at game start. Put in a separate script so it can also be called in the save game update.
+# #script_assign_loyalty
+# # INPUT: none
+# # OUTPUT: none
+("assign_loyalty", [
+    (try_for_range, ":troop_no", heroes_begin, heroes_end),
+        # This won't do anything for most troops but doesn't harm anything if it's set
+        (troop_set_slot, ":troop_no", slot_troop_faction_loyalty, faction_loyalty_loyal),
+    (try_end),
+    # Override the default for some specificl heroes
+    # Berta was a former prisoner of Gundabad
+    (troop_set_slot, trp_npc21, slot_troop_faction_loyalty, faction_loyalty_neutral),
+    # The dwarves only just retook Erebor. Kili will not see them lose it again
+    (troop_set_slot, trp_npc7, slot_troop_faction_loyalty, faction_loyalty_fanatical),
+]),
 
 # script_cf_party_remove_random_prisoner, copy of script_cf_party_remove_random_regular_troop (InVain)
 # Input: arg1 = party_no

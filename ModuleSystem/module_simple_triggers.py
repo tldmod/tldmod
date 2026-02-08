@@ -2720,6 +2720,9 @@ simple_triggers = [
             (troop_set_slot, ":defeated_lord", slot_troop_wound_mask, wound_death), #show them as dead in the reports
             (call_script, "script_update_troop_notes", ":defeated_lord"),
             
+            #Former companions don't switch to new factions
+            (neg|is_between, ":defeated_lord", companions_begin, companions_end),
+            (neg|is_between, ":defeated_lord", new_companions_begin, new_companions_end),
             (store_random_in_range, ":chance", 0, 100), #chance to join closest kingdom of the same race, based on faction leader race
             (le, ":chance", 30),
             (faction_get_slot, ":cur_kingdom_leader", ":cur_kingdom", slot_faction_leader),
