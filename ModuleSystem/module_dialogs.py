@@ -1951,6 +1951,23 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (call_script, "script_promote_companion_to_lord", "$g_talk_troop"),
 ]],
 
+[anyone|plyr, "companion_faction_dying", [],  "I understand, but you are needed here.", "companion_faction_dying_persuade", []],
+
+[anyone, "companion_faction_dying_persuade", [
+    #Fanatical companions cannot be persuaded
+    (troop_get_slot, ":npc_loyalty", "$map_talk_troop", slot_troop_faction_loyalty),
+    (le, ":npc_loyalty", faction_loyalty_fanatical),
+    #Loyal companions can be persauded if player's charisma is high enough
+    (store_character_level, ":npc_level", "$map_talk_troop"),
+    (store_attribute_level, ":charisma", "trp_player", ca_charisma),
+    (ge, ":charisma", ":npc_level"),
+], "Perhaps you are right. I can serve {s6} better by fighting at your side.", "close_window", [(call_script,"script_stand_back"),]],
+
+[anyone, "companion_faction_dying_persuade", [], "I'm afraid that {s6} needs me more. Farewell, {s5}.", "close_window", [
+    (call_script,"script_stand_back"),
+    (call_script, "script_promote_companion_to_lord", "$map_talk_troop"),
+]],
+
 [anyone, "event_triggered", [
                      (eq, "$npc_map_talk_context", slot_troop_home), 
                      (store_conversation_troop, "$map_talk_troop"),
