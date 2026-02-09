@@ -71,7 +71,7 @@ itm_troll_weapon_long|Ogromna halabarda
 itm_troll_weapon_dmg|Wielka Maczuga
 itm_tree_trunk_club_a|Pień
 itm_giant_mace|Wielka Maczuga
-itm_troll_shield_a|Tarcza Troli
+itm_troll_shield_a|Tarcza Trolli
 itm_arrows|Strzały
 itm_gondor_arrows|Gondorskie Strzały
 itm_orc_javelin|Ciężki Oszczep Orków
@@ -284,7 +284,7 @@ itm_lorien_round_shield|Okrągła Tarcza z Lorien
 itm_lorien_helm_a|Hełm Łucznika z Lorien
 itm_lorien_helm_b|Hełm Łucznika z Lorien
 itm_lorien_helm_c|Hełm Piechoty z Lorien
-itm_orc_coif2|Orkowa Czacha
+itm_orc_coif2|Orkowa Łebka
 itm_orc_greaves|Orkowe Kolcze Buty
 itm_orc_ragwrap|Orkowe Szmaty
 itm_orc_furboots|Orkowe Futrzane Buty
@@ -320,10 +320,10 @@ itm_isen_uruk_helm_e|Hełm Tropiciela Uruk-hai
 itm_uruk_pike_b|Mordorska Pika
 itm_uruk_falchion_a|Ostrze Uruków
 itm_orc_bastard_scimitar|Wielki Orkowy Bułat
-; itm_orc_cleaver_a|Orc Cleaver
+itm_orc_cleaver_a|Orkowy Siekacz
 itm_orc_scimitar_b|Orkowe Zakrzywione Ostrze
 itm_orc_sabre_b|Orkowa Szabla
-; itm_orc_mangler|Orc Mangler
+itm_orc_mangler|Orkowa Wiekiera
 itm_isengard_sword|Isengardzki Miecz
 itm_isengard_axe|Isengardzki Topór
 itm_isengard_hammer|Isengardzki Młot
@@ -371,16 +371,16 @@ itm_mordor_uruk_shield_c|Mordorska Tarcza Uruków
 itm_mordor_man_shield_a|Mordorska Tarcza ludzi
 itm_mordor_man_shield_b|Mordorska Tarcza ludzi
 itm_angmar_shield|Tarcza z Angmaru
-itm_orc_nosehelm|Orkowy Nosowy Hełm
-itm_orc_kettlehelm|Orkowy Czajnik
-itm_orc_buckethelm|Orkowy Hełm
-itm_orc_morion|Orkowy Kwarc
+itm_orc_nosehelm|Orkowy Hełm z Nosalem
+itm_orc_kettlehelm|Orkowy Kłobuk
+itm_orc_buckethelm|Orkowy Hełm Garnczkowy
+itm_orc_morion|Orkowy Kapalin
 itm_orc_beakhelm|Orkowy Hełm z Dziobem
 itm_orc_bughelm|Orkowy Hełm
 itm_orc_visorhelm|Orkowa Przyłbica
-; itm_orc_coif|Evil Coif
-itm_orc_skullcap|Orkowa Czacha
-; itm_orc_skullhelm|Orc Skullhelm
+itm_orc_coif|Złowieszczy Czepiec
+itm_orc_skullcap|Orkowa Łebka
+itm_orc_skullhelm|Orkowa Czacha
 itm_orc_barbuta|Orkowy Nosowy Hełm
 itm_m_orc_light_a|Mordorska Orkowa lekka Zbroja
 itm_m_orc_light_b|Mordorska Orkowa lekka Zbroja
@@ -847,5 +847,5 @@ itm_civilian_carry_wood2|Drewno
 itm_work_basket|Kosz
 itm_work_basket_2|Kosz
 itm_spider_mount|Pająk
-; itm_marker_night_troop|Trait: Night Troop
-; itm_marker_berserker|Trait: Berserker
+itm_marker_night_troop|Cecha: Nocna Jednostka
+itm_marker_berserker|Cecha: Berserk

@@ -2,11 +2,11 @@ qstr_Received_{reg0}_dama|Otrzymano {reg0} obrażeń.
 qstr_Gate_is_breached!|Brama wyłamana!
 qstr_Gate_opens..._You_ha|Brama otwarta... Dotarł{eś/aś} do najświętszego miejsca Śródziemia!
 qstr_Secret_place_discove|Sekretna lokacja odkryta!
-; qstr_Nothing_of_interest.|Nothing of interest...
-; qstr_No_inventory_space..|No inventory space...
-; qstr_We_don_t_know_you_en|We don't know you enough to give you this...
-; qstr_Take_it_friend_it_s_|Take it, friend, it's yours.
-; qstr_Take_it_we_don_t_nee|Take it, we don't need it anyway.
+qstr_Nothing_of_interest.|Nic ciekawego...
+qstr_No_inventory_space..|Brak miejsca w ekwipunku...
+qstr_We_don_t_know_you_en|Nie znamy Cię na tyle, żeby ci to dać...
+qstr_Take_it_friend_it_s_|Proszę, to dla ciebie przyjacielu.
+qstr_Take_it_we_don_t_nee|Zabieraj, nie trzeba nam tego.
 qstr_Next_Page|Następna Strona
 qstr_Action|Akcja
 qstr_Mount|Dosiądź
@@ -72,7 +72,7 @@ qstr_Man|Człowiek
 qstr_Elf|Elf
 qstr_Dwarf|Krasnolud
 qstr_Whom_Do_You_Serve?|Komu służysz?
-; qstr_The_Age_of_Men_has_f|The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth! Whom will you serve?
+qstr_The_Age_of_Men_has_f|Era Ludzi w końcu minęła. Teraz Dwie Wieże zbierają pozostałych przy życiu zastępy i sojuszników, aby zdecydować, kto zostanie jedynym władcą Śródziemia! Komu będziesz służyć?
 qstr_SAURON_of_Mordor_The|SAURON, przywódca Mordoru, Władca Pierścieni
 qstr_SARUMAN_of_Isengard_|SARUMAN z Isengardu, Biała ręka
 qstr_an_ORC^_serving_the_|ORK,^ służący Ognistemu Oku
@@ -81,7 +81,7 @@ qstr_a_MAN^_subjugated_by|Ludzie, ^ podlegli Sauronowi
 qstr_an_ORC^_serving_the_W|ORC,^ słudzy Białej Ręki
 qstr_one_of_the_URUK_HAI^|Jeden z URUK-HAI, urodzony w Isengardzie
 qstr_a_MAN_of_Dunland^_th|człowiek z Dunlandu,^ Zachodnie Równiny
-; qstr_Thank_you_for_playin|Thank you for playing
+qstr_Thank_you_for_playin|Dziękujemy za grę
 qstr_Click_the_center_but|Wciśnij środkowy przycisk żeby przełączać frakcje^Wciśnij awatar, żeby odkryć szczegóły
 qstr_Level:_{reg3}^Health|Poziom: {reg3}^Zdrowie: {reg4}
 qstr_Attributes|Atrybuty
@@ -123,17 +123,17 @@ qstr_Default_Camera|Kamera domyślna
 qstr_Free_Mode_Custom_Cam|Dowolna Kamera Użytkownika
 qstr_Fixed_Over_The_Shoul|Nieruchoma kamera znad ramienia
 qstr_Brighter_Nights:__|Jaśniejsze noce: 
-; qstr_Allow_to_use_bow_wit|Allow to use bow with small shields:  
-; qstr_No__regular_troops_o|No (regular troops only)
-; qstr_Companions_only|Companions only
-; qstr_Player_only|Player only
-; qstr_Yes|Yes
+qstr_Allow_to_use_bow_wit|Pozwól na użycie łuku z małą tarczą:
+qstr_No__regular_troops_o|Nie (tylko zwykłe jednostki)
+qstr_Companions_only|Tylko Towarzysze
+qstr_Player_only|Tylko Ty
+qstr_Yes|Tak
 qstr_Done|Zrobione
 qstr_Gameplay_Tweaks|Rozgrywka
 qstr_Set_to_Native_if_you|Ustaw wartość Natywna, jeśli napotkasz jakiekolwiek problemy z SI podczas bitwy.
 qstr_Disable_cutscenes_if|Wyłącz przerywniki filmowe jeśli na początku wojny napotkasz jakiekolwiek problemy.
-; qstr_Campaign_Difficulty_a|Campaign Difficulty affects abundance of volunteers, lord party size, initial player faction strength, basic strength income for allied factions, and strength income from player victories.
-; qstr_Please_be_aware_that|Please be aware that the game is balanced for default difficulty. The other difficulty settings are not tested.
+qstr_Campaign_Difficulty_a|Poziom trudności kampanii wpływa na liczbę ochotników, wielkość oddziału lordów, początkową siłę frakcji graczy, podstawowy wzrost siły dla frakcji sojuszniczych i wzrost siły ze zwycięstw graczy.
+qstr_Please_be_aware_that|Należy pamiętać, że gra jest zbalansowana pod kątem domyślnego poziomu trudności. Inne poziomy trudności nie były testowane.
 qstr_Be_aware_that_many_q|Należy pamiętać, że wiele zadań i mechanik kampanii skaluje się wraz z poziomem gracza. Zwiększenie tego ustawienia da ci więcej czasu na przygotowanie, ale sprawi, że wojna rozwinie się szybciej.
 qstr_Requires_TLD_NewForm|Wymaga TLD NewFormAI
 qstr_Troop_Tree|Drzewo jednostki
@@ -271,9 +271,9 @@ qstr_Bonus_to_Strength__P|Bonus do Siły (Tylko dla gracza)
 qstr_Lead_more_Orcs|Poprowadź więcej Orków
 qstr_Can_scare_horses|Potrafi przestraszyć konie
 qstr_+{reg1}_to_Party_Mor|+{reg1} do morale drużyny
-; qstr_Not_affected_by_nigh|Not affected by nighttime
-; qstr_Increased_health_and|Increased health and stagger resistance
-; qstr_Can_heal_on_kill|Can heal on kill
+qstr_Not_affected_by_nigh|Niewrażliwy na noc
+qstr_Increased_health_and|Zwiększone zdrowie i odporność na chybotanie
+qstr_Can_heal_on_kill|Leczy przy zabijaniu
 qstr_Range:_{reg55}|Zasięg: {reg55}
 qstr_Dwarves|Krasnoludy
 qstr_Humans_and_Elves|Ludzie i Elfy
@@ -631,7 +631,7 @@ qstr_But_I...|Ale Ja...
 qstr_Noone..._oppossssses|Niiikt... nie przeciwsssstawi ssssię... Barad Dur... i żyyyyciu!
 qstr_All..._must..._submi|Wszyscy... muszą... poddać się... i... służyć...
 qstr_I_serve_the_Eye!|Służę Oku!
-; qstr_Your_time_is_over_wr|Your time is over, wraith, begone! Now begins the Age of the White Hand!
+qstr_Your_time_is_over_wr|Twój czas się skończył zjawo. Przepadnij! Teraz nastaje Era Białej Ręki!
 qstr_Go_to_{s1}_and_speak|Idź do {s1} i porozmawiaj z {s9}.
 qstr_The_Remnant_Forces_o|Remnant Forces of {s22} zebrały się, aby wzmocnić teatr {s15}!
 qstr_The_strength_of_the_|Siła pozostałych sprzymierzonych frakcji w teatrze {s15} wzrosła
@@ -1267,7 +1267,7 @@ qstr_{s1}_is_scouted.|Spatrolowano {s1} i okolice.
 ; qstr_{s1}_managed_to_esca|{s1} managed to escape the downfall of {s2} and found refuge in {s3}.
 ; qstr_{s3}_gained_faction_|{s3} gained faction strength.
 qstr_{s2}_was_defeated!|{s2} poniósł porażkę!
-; qstr_The_Age_of_Men_has_f|The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth! Whom will you serve?
+qstr_The_Age_of_Men_has_f|Era Ludzi w końcu minęła. Teraz Dwie Wieże zbierają pozostałych przy życiu zastępy i sojuszników, aby zdecydować, kto zostanie jedynym władcą Śródziemia! Komu będziesz służyć?
 qstr_The_War_of_the_Two_T|Wojna Dwóch Wież się rozpoczęła!
 qstr_The_forces_of_{s22}_|Siły {s22} wzrosła! {s22} jest teraz {s23}.
 qstr_The_might_of_{s22}_h|Potęga {s22} została złamana! {s22} jest teraz {s23}.

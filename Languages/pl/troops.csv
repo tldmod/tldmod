@@ -1445,7 +1445,7 @@ trp_elder_gunda_ne|Starszy Orków
 trp_elder_gunda_ne_pl|Obóz
 trp_elder_gunda_nw|Starszy Orków 
 trp_elder_gunda_nw_pl|Obóz
-; trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s|Przywódca Obozu Orków
 trp_elder_moria_s_pl|Obóz
 trp_elder_gunda_m|Starszy Orków 
 trp_elder_gunda_m_pl|Obóz
@@ -1502,7 +1502,7 @@ trp_evil_priest_pl|Mroczni Kapłani
 trp_wolf_rider_of_mirkwood|Wilczy Jeździec z Mrocznej Puszczy
 trp_wolf_rider_of_mirkwood_pl|Wilczych Jeźdźców z Mrocznej Puszczy
 trp_bear_strong|Niedźwiedź
-; trp_bear_strong_pl|Bears
+trp_bear_strong_pl|Niedźwiedzie
 trp_gate_aggravator|Obrona Bram
 trp_orc_pretender|Ork Pretendent
 trp_human_prisoner|Więzień
@@ -1579,7 +1579,7 @@ trp_gunda_troll|Górski Troll
 trp_gunda_troll_pl|Górskich Trolli
 trp_gunda_vet_troll|Wytrenowany Górski Troll
 trp_gunda_vet_troll_pl|Wytrenowanych Górskich Trolli
-trp_gunda_placeholder|Wytrenowanych Górskich Trolli
+trp_gunda_placeholder|Wytrenowany Górski Troll
 trp_gunda_placeholder_pl|Wytrenowanych Górskich Trolli
 trp_isen_troll|Troll z Isengardu
 trp_isen_troll_pl|Trolli z Isengardu
