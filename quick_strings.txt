@@ -282,6 +282,7 @@ qstr_{s2}_{reg3?was:is}_b {s2}_{reg3?was:is}_being_held_captive_at_{s3}.
 qstr_{s2}_{reg3?was:has_b {s2}_{reg3?was:has_been}_taken_captive_by_{reg4?her:his}_enemies.
 qstr_{reg3?{s2}_s_locatio {reg3?{s2}'s_location_was_unknown:I_don't_know_where_{s2}_is}.
 qstr_{s6}_has_joined_your {s6}_has_joined_your_party
+qstr_{s3}_gained_faction_ {s3}_gained_faction_strength.
 qstr_elven elven
 qstr_dwarven dwarven
 qstr_orc orc
@@ -599,6 +600,7 @@ qstr_The_Remnant_Forces_o The_Remnant_Forces_of_{s22}_have_gathered_to_reinforce
 qstr_The_strength_of_the_ The_strength_of_the_remaining_allied_factions_of_the_{s15}_theater_has_increased
 qstr_{s30}_reinforced_by_ {s30}_reinforced_by_{reg65}_fac_str
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
+qstr_{s5}_s_patrol {s5}'s_patrol
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_to_{s15}!
 qstr_{***}ERROR {***}ERROR
 qstr_Rohan_capital_moved_ Rohan_capital_moved_from_Edoras_to_Hornburg!
@@ -953,7 +955,6 @@ qstr_{***}SE_advance_camps_s {***}SE_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_{***}C_advance_camps_sp {***}C_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_{***}N_advance_camps_sp {***}N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_{***}Gandalf_would_lik {***}Gandalf_would_like_to_have_a_little_chat!
-qstr_{***}Kham_Cheat_Mode_O {***}Kham_Cheat_Mode_ON!
 qstr_{***}1_troll_added! {***}1_troll_added!
 qstr_{***}Raft_Men_party_en {***}Raft_Men_party_enabled._They_are_down_River_Running
 qstr_{***}Orc_Horde_Spawned {***}Orc_Horde_Spawned!
@@ -1208,7 +1209,6 @@ qstr_{reg67}_{s7}_{s8}_tr {reg67}_{s7}_{s8}_troops_killed._(Counter_refreshes_ev
 qstr_{s8}_in_{s9}_asked_y {s8}_in_{s9}_asked_you_to_slay_{reg67}_{s10}.^_{reg68}_{s11}_killed._(Counter_refreshes_every_hour)
 qstr_{s1}_is_scouted. {s1}_is_scouted.
 qstr_{s1}_managed_to_esca {s1}_managed_to_escape_the_downfall_of_{s2}_and_found_refuge_in_{s3}.
-qstr_{s3}_gained_faction_ {s3}_gained_faction_strength.
 qstr_{s2}_was_defeated! {s2}_was_defeated!
 qstr_The_forces_of_{s22}_ The_forces_of_{s22}_have_rallied!_{s22}_is_now_{s23}.
 qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.
@@ -1332,6 +1332,13 @@ qstr_Ah_it_s_you_again._G Ah,_it's_you_again._Goodbye.
 qstr_My_apologies_if_I_wa My_apologies_if_I_was_rude,_earlier._What_was_your_story_again?
 qstr_I_was_reconsidering_ I_was_reconsidering_our_last_conversation._What_was_your_story_again?
 qstr_Zigrphel_gained_{reg Zigûrphel_gained_{reg78}_experience.
+qstr_Thank_you_commander. Thank_you,_commander.^
+qstr_{s31}{reg28?Those:Th {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_our_lands.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
+qstr_{s31}{reg28?Those:Tha {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_wreak_more_havoc.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
+qstr_{s4}_^Oh_and_take_ba {s4}_^Oh,_and_take_back_those_soldiers_who_are_not_our_kin,_I_have_no_use_for_them.
+qstr_I_don_t_need_them_an I_don't_need_them_anyway,_so_save_it.
+qstr_It_is_my_duty_to_hel It_is_my_duty_to_help_our_people.
+qstr_It_is_my_duty_to_help It_is_my_duty_to_help_our_allies.
 qstr_Greetings_{s23}_{s24 Greetings,_{s23},_{s24}.
 qstr_Greetings_{s23}. Greetings,_{s23}.
 qstr_So_you_are_{s23}._I_ So,_you_are_{s23}._I_hear_you_fight_for_our_{s25}_friends,_so_I_guess_I_should_consider_you_an_ally.
@@ -1357,13 +1364,11 @@ qstr_Strenghten_defences_ Strenghten_defences_in_{s21}?_This_is_surely_welcome._
 qstr_Strenghten_defences_i Strenghten_defences_in_{s21}?_Well,_as_long_as_they_are_not_crippled,_why_not._Just_be_sure_you_give_away_our_own_troops,_for_we_have_no_use_for_outsiders_here.
 qstr_Please_return_them_i Please_return_them_in_one_piece._I_personally_know_the_valor_of_each_one_of_them._And_here_we_need_every_soul.
 qstr_Don_t_let_them_all_d Don't_let_them_all_die_in_one_place._Except_the_cowards._Put_those_in_your_front_ranks,_you_know_the_drill_by_now.
-qstr_Thank_you_commander. Thank_you,_commander.^
 qstr_^{s22}_is_grateful_t ^{s22}_is_grateful_to_you,_{s23},_{s29}^
-qstr_{s31}{reg28?Those:Th {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_{s21}.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
-qstr_{s31}{reg28?Those:Tha {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_hold_{s21}.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
-qstr_{s4}_^Oh_and_take_ba {s4}_^Oh,_and_take_back_those_of_your_soldiers,_that_are_not_our_kin.
+qstr_{s31}{reg28?Those:That {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_{s21}.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
+qstr_{s31}{reg28?Those:That} {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_hold_{s21}.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
+qstr_{s4}_^Oh_and_take_bac {s4}_^Oh,_and_take_back_those_of_your_soldiers,_that_are_not_our_kin.
 qstr_You_have_reinforced_ You_have_reinforced_{s8}_with_{reg55}_troops.
-qstr_I_don_t_need_them_an I_don't_need_them_anyway,_so_save_it.
 qstr_It_is_my_duty_to_pro It_is_my_duty_to_protect_our_people.
 qstr_It_is_my_duty_to_prot It_is_my_duty_to_protect_our_allies.
 qstr_I_am_{s4}_{s15}_of_{ I_am_{s4},_{s15}_of_{s6}
@@ -1473,11 +1478,6 @@ qstr_You_must_return_and_r You_must_return_and_report_back_that_you_have_defeate
 qstr_Do_you_need_reinforc Do_you_need_reinforcements?
 qstr_You_don_t_look_too_s You_don't_look_too_strong,_do_you_need_troops?
 qstr_^{s14}_is_grateful_t ^{s14}_is_grateful_to_you,_{playername},_{s29}^
-qstr_{s31}{reg28?Those:That {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_our_lands.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
-qstr_{s31}{reg28?Those:That} {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_wreak_more_havoc.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
-qstr_{s4}_^Oh_and_take_bac {s4}_^Oh,_and_take_back_those_soldiers_who_are_not_our_kin,_I_have_no_use_for_them.
-qstr_It_is_my_duty_to_hel It_is_my_duty_to_help_our_people.
-qstr_It_is_my_duty_to_help It_is_my_duty_to_help_our_allies.
 qstr_{s31}__Consumable._C {s31}_(Consumable._Can_be_rebought)
 qstr_I_wish_to_raze_an_en I_wish_to_raze_an_enemy_settlement_to_the_ground.
 qstr_I_wish_to_lead_our_m I_wish_to_lead_our_men_in_an_assault_on_an_enemy_settlement.

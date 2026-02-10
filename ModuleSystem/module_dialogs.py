@@ -6094,6 +6094,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      #make all available faction hosts follow
      (try_for_range, ":lord", heroes_begin, heroes_end),
        (troop_slot_eq, ":lord", slot_troop_occupation, slto_kingdom_hero),
+       (troop_slot_eq, ":lord", slot_troop_lord_state, stls_default),
        (neg|troop_slot_ge, ":lord", slot_troop_prisoner_of_party, 0),
        (store_troop_faction, ":lord_faction", ":lord"),
        (eq, ":lord_faction", "$g_talk_troop_faction"),
@@ -6327,6 +6328,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      # (eq, ":trait_check_passed", 1),
    ],
 "I have a new task for you.", "lord_give_order_ask",[]],
+
+[anyone,"lord_give_order_ask", 
+   [(neg|troop_slot_eq, "$g_talk_troop", slot_troop_lord_state, stls_default),], 
+    "My duty is to defend my homeland. I will not accept any other assignments.", "lord_pretalk",[]],
 
 [anyone,"lord_give_order_ask", [], "Yes?", "lord_give_order",[]],
 

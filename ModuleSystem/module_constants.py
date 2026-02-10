@@ -702,6 +702,7 @@ spt_guardian           = 15
 spt_ship               = 16
 spt_cattle_herd        = 17
 spt_bandit             = 18 #WTH, native doesn't have a spt for bandits?! (TLD foxyman)
+spt_kingdom_hero_minor_party = 19 #hero party below host threshold (so it doesn't count toward host count and faction AI)
 #spt_deserter           = 20
 
 kingdom_party_types_begin = spt_patrol
@@ -1056,6 +1057,14 @@ slot_troop_faction_loyalty = 171
 faction_loyalty_neutral = 5     # Not overly loyal, but not treacherous. Could be a good hero who weighs the interests of all of Middle-Earth over their home
 faction_loyalty_loyal = 10      # Default for most heroes. Loyal to their faction but also concerned about their allies
 faction_loyalty_fanatical = 15 # Will drop everything else for their 
+
+#slot for hardcoding lord behavior - this needs to be stored in a troop slot, so it is consistent over hero defeat and respawn cycles (which reset party ID)
+slot_troop_lord_state = 172
+stls_default = 0
+stls_defensive = 1 #always patrolling around home center
+stls_passive = 2 #always staying at home center
+
+slot_troop_death_chance_modifier = 173
 
 #Healer Slots (troop slot)
 slot_troop_needs_healing = 308
@@ -1745,7 +1754,7 @@ center_list = [
 	[trp_gondor_captain, trp_smith_mtirith, trp_merchant_mtirith, trp_elder_mtirith, pt_gondor_cap_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_man_gondor_blue,trp_walker_man_gondor_white,trp_walker_woman_gondor_bw], 
 	[icon_mfc_gondor],[700],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1, tld_siegable_capital, tld_siege_battle_size_big),
 (p_town_pelargir, [scn_pelargir_center, scn_gondor_castle_a, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_pelargir_siege,mesh_town_pelargir],
-	[trp_pel_captain, trp_smith_pelargir, trp_merchant_pelargir, trp_elder_pelargir, pt_pelargir_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_man_gondor_blue,trp_walker_woman_gondor_bw,trp_walker_man_gondor_white], 
+	[trp_pel_captain, trp_smith_pelargir, trp_merchant_pelargir, trp_elder_pelargir, pt_pelargir_recruits, trp_knight_1_4, trp_walker_man_gondor_black,trp_walker_man_gondor_blue,trp_walker_woman_gondor_bw,trp_walker_man_gondor_white], 
 	[icon_mfc_pelargir],[500],[4,4,4,6,4,8], str_income_med, garrison_limit_med, 0, tld_siegable_always, tld_siege_battle_size_default),
 (p_town_linhir, [scn_linhir_center, scn_gondor_castle_b, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_linhir_siege, mesh_ui_default_menu_window],
 	[trp_gondor_captain, trp_smith_linhir, trp_merchant_linhir, trp_elder_linhir, pt_gondor_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_bw,trp_walker_woman_gondor_b], 
@@ -1778,7 +1787,7 @@ center_list = [
 	[trp_ithilien_captain, trp_smith_candros, trp_merchant_candros, trp_elder_cairandros, pt_gondor_recruits, trp_gondor_lord, trp_i1_gon_levy,trp_i2_gon_watchman,trp_a4_ithilien_ranger,trp_i3_gon_footman], 
 	[icon_mfc_gondor],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 0, tld_siegable_always, tld_siege_battle_size_default),
 (p_town_calembel, [scn_ethring_center, scn_gondor_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena, scn_ethring_siege, mesh_town_calembel],
-	[trp_lam_captain, trp_smith_calembel, trp_merchant_calembel, trp_elder_ethring, pt_lamedon_recruits, trp_knight_6_1, trp_i1_gon_levy,trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
+	[trp_lam_captain, trp_smith_calembel, trp_merchant_calembel, trp_elder_ethring, pt_lamedon_recruits, trp_knight_1_1, trp_i1_gon_levy,trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_b], 
 	[icon_mfc_ethring],[500],[2,2,2,5,2,8], str_income_low, garrison_limit_low, 1, tld_siegable_normal, tld_siege_battle_size_default),
 # Rohan centers
 (p_town_edoras, [scn_edoras_center, scn_edoras_castle, scn_rohan_prison,scn_rohan_tavern,scn_rohan_arena, scn_edoras_siege,mesh_town_edoras],
@@ -2048,29 +2057,30 @@ routes_list = [
  (p_town_beorn_house,	   p_town_woodsmen_village, p_town_beorning_village),
 ]
 
+#also sets slot_troop_home, incase we need it in the future
 lords_spawn = [ 
-                #(trp_knight_1_1, p_town_calembel),
-				(trp_knight_1_2, p_town_minas_tirith),
-                (trp_knight_1_3, p_town_dol_amroth),
-                #(trp_knight_1_4, p_town_pelargir),
-                (trp_knight_1_5, p_town_erech),
-                (trp_knight_1_6, p_town_pinnath_gelin),
-                (trp_knight_1_7, p_town_west_osgiliath),
-                (trp_knight_1_8, p_town_lossarnach),
-                (trp_knight_2_51,p_town_minas_morgul),
-                (trp_knight_5_3, p_town_esgaroth),
-                (trp_knight_5_1, p_town_dale),
-                (trp_knight_5_2, p_town_dale),
-                (trp_knight_6_1, p_town_calembel),
-                (trp_knight_6_2, p_town_pinnath_gelin),
-                (trp_knight_4_11, p_town_woodsmen_village),
-				(trp_knight_4_12, p_town_beorning_village),
-                (trp_knight_1_9, p_town_west_emnet),
-                (trp_knight_1_10, p_town_hornburg),
-                (trp_knight_1_11, p_town_edoras),
-                (trp_knight_1_12, p_town_edoras),
-                (trp_knight_1_13, p_town_westfold),
-                (trp_knight_1_14, p_town_aldburg),
+                (trp_knight_1_1, p_town_calembel), #Angbor
+				(trp_knight_1_2, p_town_minas_tirith), #Hurin
+                (trp_knight_1_3, p_town_dol_amroth),    #Imrahil
+                (trp_knight_1_4, p_town_pelargir),      #Orthalion
+                (trp_knight_1_5, p_town_erech),         # Duinhir
+                (trp_knight_1_6, p_town_pinnath_gelin), # Hirluin
+                (trp_knight_1_7, p_town_west_osgiliath),    #Faramir
+                (trp_knight_1_8, p_town_lossarnach),    #Forlong
+                (trp_knight_6_1, p_town_calembel),      #Dervorin
+                (trp_knight_6_2, p_town_pinnath_gelin), #Golasgil
+                (trp_knight_2_51,p_town_minas_morgul),  #Gothmog
+                (trp_knight_5_3, p_town_esgaroth),      #Esgaraon
+                (trp_knight_5_1, p_town_dale),          #Halward
+                (trp_knight_5_2, p_town_dale),          #Bard
+                (trp_knight_4_11, p_town_woodsmen_village), #Ruel
+				(trp_knight_4_12, p_town_beorning_village), #Beranor
+                (trp_knight_1_9, p_town_west_emnet),    #Theodred
+                (trp_knight_1_10, p_town_hornburg),     #Erkenbrand
+                (trp_knight_1_11, p_town_edoras),       #Elfhelm
+                (trp_knight_1_12, p_town_edoras),       #Hama
+                (trp_knight_1_13, p_town_westfold),     #Grimbold
+                (trp_knight_1_14, p_town_aldburg),      #Eomer
 ]
 
 #### banner colors #0-130

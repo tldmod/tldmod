@@ -2175,7 +2175,8 @@ ai_scripts = [
       (try_begin),
         (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (neg|troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death), #Not dead - Kham
-		(call_script, "script_cf_fails_if_sitting_king", ":troop_no"),		
+		#(call_script, "script_cf_fails_if_sitting_king", ":troop_no"),
+        (troop_slot_eq,":troop_no",slot_troop_lord_state, stls_default),
 		
         #(troop_slot_eq, ":troop_no", slot_troop_is_prisoner, 0),
         (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
@@ -2249,7 +2250,8 @@ ai_scripts = [
         (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
         (neg|troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death), #Not dead - Kham  
 		
-		(call_script, "script_cf_fails_if_sitting_king", ":troop_no"),
+		#(call_script, "script_cf_fails_if_sitting_king", ":troop_no"),
+        (troop_slot_eq,":troop_no",slot_troop_lord_state, stls_default),
 		
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),         
         (gt, ":party_no", 0),
@@ -2282,6 +2284,8 @@ ai_scripts = [
       (str_store_string,s23,":strength"),
 ]),
 
+#script_cf_fails_if_sitting_king
+#UNUSED
 # a simple script: 	give a troop, fails if that troop is a sitting king, i.e. a faction leader with a different faction marshal
 ("cf_fails_if_sitting_king", [
 	(store_script_param, ":troop_no", 1),
@@ -2351,6 +2355,11 @@ ai_scripts = [
 	  (try_end),
 
       (call_script, "script_party_set_ai_state", "$pout_party", spai_undefined, -1),
+      (try_begin),
+        (this_or_next|troop_slot_eq, ":troop_no", slot_troop_lord_state, stls_defensive),
+        (troop_slot_eq, ":troop_no", slot_troop_lord_state, stls_passive),
+        (call_script, "script_party_set_ai_state", "$pout_party", spai_holding_center, ":center_no"),
+      (try_end),
       (troop_set_slot, ":troop_no", slot_troop_leaded_party, "$pout_party"),
       (party_add_leader, "$pout_party", ":troop_no"),
       (party_set_slot, "$pout_party", slot_party_commander_party, -1), #we need this because 0 is player's party!
@@ -2473,6 +2482,7 @@ ai_scripts = [
       (try_end),
       (try_for_range, ":troop_no", heroes_begin, heroes_end), 
          (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
+         (troop_slot_eq, ":troop_no", slot_troop_lord_state, stls_default),
          (store_troop_faction, ":troop_faction_no", ":troop_no"),
          (troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
          (gt,":party",0),
@@ -2482,11 +2492,13 @@ ai_scripts = [
          (val_add,":hosts",1),
          (faction_set_slot, ":troop_faction_no", slot_faction_hosts, ":hosts"),
       (try_end),
+      
       # host spawning conditions
       (try_for_range, ":hero", heroes_begin, heroes_end), # cycle through heros w/o hosts and try to spawn a host
          #(neq, ":hero", "trp_isengard_lord"), #Lets not give saruman a host.
          (troop_slot_eq, ":hero", slot_troop_occupation, slto_kingdom_hero),
-         (call_script, "script_cf_fails_if_sitting_king", ":hero"),
+         #(call_script, "script_cf_fails_if_sitting_king", ":hero"),
+         (neg|troop_slot_eq,":hero",slot_troop_lord_state, stls_passive),
          (store_troop_faction, ":troop_faction_no", ":hero"),
          (faction_slot_eq, ":troop_faction_no", slot_faction_state, sfs_active),
           
@@ -2536,6 +2548,9 @@ ai_scripts = [
             (check_quest_active, "qst_oath_personal"),
             (quest_slot_eq, "qst_oath_personal", slot_quest_target_troop, ":hero"),
             (assign,":check_pass",1),
+         (else_try), #minor lords always get a (minor) host
+            (troop_slot_eq, ":hero", slot_troop_lord_state, stls_defensive),
+            (assign,":check_pass",1),
         (else_try),
             (lt, ":hosts", ":strength"), # faction passes strength check 
             (assign,":check_pass",1),
@@ -2549,40 +2564,59 @@ ai_scripts = [
          (this_or_next|faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"), # marshall/king bypasses random check
          (lt, ":rnd", 10),  # faction passes random check 
 
-         (val_add, ":hosts",1),
-         (faction_set_slot, ":troop_faction_no", slot_faction_hosts,":hosts"), # host is spawned
-         
-         (party_set_slot, ":party", slot_party_type, spt_kingdom_hero_party), # TLD party type changed to host
-         (party_set_slot, ":party", slot_party_victory_value, ws_host_vp), # TLD victory points for party kill
-
-
-         (try_begin), #MV: double that for kings
-            (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"),
-            (party_set_slot, ":party", slot_party_victory_value, ws_host_vp*2),
-         (try_end),
 
          (str_store_faction_name, s6, ":troop_faction_no"), # TLD host naming after faction
          (str_store_troop_name, s5, ":hero"),
          (str_store_troop_name_link, s7, ":hero"),
-         #(party_set_name, ":party", "@Host of {s5}"),
-         (party_set_name, ":party", "str_s5_s_host"),
-         #(display_message, "@{s7} has assumed the command of a {s6} host!", 0x87D7FF),
-         #hire troops to host, marshals (kings) get more
-         (assign, ":num_tries", 30),
-         (try_begin),
-            (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"),
-            (assign, ":num_tries", 50),
-         (try_end),
-         (try_for_range, ":unused", 0, ":num_tries"),
+
+        #party slots and reinforcements
+        (try_begin), #minor lord forms a patrol
+            (troop_slot_eq, ":hero", slot_troop_lord_state, stls_defensive),
+            (party_set_slot, ":party", slot_party_type, spt_kingdom_hero_minor_party), # TLD party type changed to patrol
+            (party_set_slot, ":party", slot_party_victory_value, ws_patrol_vp), # TLD victory points for party kill
+            (party_set_name, ":party", "@{s5}'s patrol"),
+            (assign, ":num_reinforcements", 15),
+            (store_random_in_range, ":xp_rounds", 2, 5),
+            
+            #set hardcoded patrol ai here
+            (troop_get_slot, ":center", ":hero", slot_troop_home),
+            (try_begin), #fallback
+                (this_or_next|eq, ":center", 0),
+                (this_or_next|party_slot_eq, ":center", slot_center_destroyed, 1),
+                (neg|party_is_active, ":center"),
+                (faction_get_slot, ":center", ":troop_faction_no", slot_faction_capital),
+            (try_end),
+            (party_set_slot, ":party", slot_party_home_center, ":center"),
+            (party_set_slot, ":party", slot_party_ai_state, spai_patrolling_around_center),
+            (party_set_ai_behavior, ":party", ai_bhvr_patrol_party),
+            (party_set_ai_object, ":party", ":center"),
+            (party_set_ai_patrol_radius, ":party", 5), #very small patrol radius
+            (party_detach, ":party"),
+        (else_try), #regular lord forms a host
+            (val_add, ":hosts",1),
+            (faction_set_slot, ":troop_faction_no", slot_faction_hosts,":hosts"), # host is spawned
+            (party_set_name, ":party", "str_s5_s_host"),
+            (party_set_slot, ":party", slot_party_type, spt_kingdom_hero_party), # TLD party type changed to host
+            (party_set_slot, ":party", slot_party_victory_value, ws_host_vp), # TLD victory points for party kill
+            (assign, ":num_reinforcements", 30),
+            (store_random_in_range, ":xp_rounds", 2, 6),
+            (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"), #extra for marshalls/kings
+            (party_set_slot, ":party", slot_party_victory_value, ws_host_vp*2),
+            (assign, ":num_reinforcements", 50),
+            (store_random_in_range, ":xp_rounds", 3, 8),
+        (try_end),
+         
+         (try_for_range, ":unused", 0, ":num_reinforcements"),
             (call_script, "script_hire_men_to_kingdom_hero_party", ":hero"),
          (try_end),
+         
          # upgrade troops in party based on hero renown  #InVain: Replace renown with trainer
-         (store_random_in_range, ":xp_rounds", 2, 6),
          #(troop_get_slot, ":renown", ":hero", slot_troop_renown), #800 for lords, 1100 for kings
          #(store_div, ":renown_xp_rounds", ":renown", 100), #8 -11
          #(val_add, ":xp_rounds", ":renown_xp_rounds"), #10x - 16x
 		 (store_skill_level, ":trainer_level", skl_trainer, ":hero"), #lords have between 3 and 7 trainer skill
 		 (val_add, ":trainer_level", 5), #8x - 13, slightly less initial train-up than before
+         (val_add, ":xp_rounds", ":trainer_level"),
          (try_for_range, ":unused", 0, ":xp_rounds"),
             (call_script, "script_upgrade_hero_party", ":party", 4000), #40000-64000
          (try_end),

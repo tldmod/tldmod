@@ -2242,7 +2242,7 @@ troops = [
 
 #Rohan
 #renamed to "Theodred"
-["knight_1_9","Grimbold","{!}",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
+["knight_1_9","Theodred","{!}",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_thengel_warhorse_heavy,itm_rohan_guard_bad,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_inf_helmet_b_lordly,itm_rohan_sword_c,itm_rohan_shield_g,],
       attr_tier_7,wp_tier_6,knight_skills_4|knows_riding_4|knows_surgery_9,0x00000002bf003205475dd5c8256e170d0000000000ed991b0000000000000000],
 ["knight_1_10","Erkenbrand","{!}",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
@@ -2254,8 +2254,8 @@ troops = [
 ["knight_1_12","Hama","{!}",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_warhorse,itm_rohan_guard_good,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_inf_helmet_b_lordly,itm_rohirrim_long_hafted_axe,itm_rohan_lance_banner_horse,itm_rohan_shield_f],
       attr_tier_7,wp_tier_6,knight_skills_2|knows_riding_4|knows_surgery_9,0x0000000aa500124421188e67da1fcf3f00000000001cb4730000000000000000],
-#renamed to "Gamling"
-["knight_1_13","Gamling","{!}",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
+#renamed to "Grimbold"
+["knight_1_13","Grimbold","{!}",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_warhorse,itm_rohan_guard_bad,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_archer_helmet_c_good,itm_rohirrim_long_hafted_axe,itm_strong_bow,itm_khergit_arrows,itm_rohan_shield_f],
       attr_tier_7,wp_tier_6,knight_skills_3|knows_riding_4|knows_surgery_9,0x0000000fff00034220d88d77ea1fc10000000000001cb4730000000000000000],
 ["knight_1_14","Éomer","{!}",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
@@ -2932,7 +2932,7 @@ troops = [
 ["elder_aldburg","Aldburg_Thain","the_town",tf_hero| tf_rohan,0,0,fac_rohan,
    [itm_rohan_fine_outfit_dale_dress,itm_rohan_shoes,],
       def_attrib|level(2),wp(20),knows_common,0x0000000a2a0002c326c66a695e8e74f300000000001eeb230000000000000000],
-["elder_hornburg","Hornburg_Thain","the_fortress",tf_hero| tf_rohan,0,0,fac_rohan,
+["elder_hornburg","Gamling","the_fortress",tf_hero| tf_rohan,0,0,fac_rohan,
    [itm_rohan_mail_cloak,itm_rohan_shoes,],
       def_attrib|level(2),wp(20),knows_common,0x0000000fff00034220d88d77ea1fc10000000000001cb4730000000000000000],
 ["elder_eastemnet","East_Emnet_Thain","the_town",tf_hero| tf_rohan,0,0,fac_rohan,

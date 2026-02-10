@@ -1876,13 +1876,16 @@ scripts = [
 	] + (is_a_wb_script==1 and [
 
     #name changes for implementing Theodred
+    #not needed anymore, all savegames should have updated by now
     (troop_set_name, trp_knight_1_13, "@Grimbold"),
     (troop_set_name, trp_knight_1_9, "@Theodred"),
     (troop_set_name, trp_elder_hornburg, "@Gamling"),
     
-    #Angbor and Orthalion - will later be added back as "local" leaders and backup lords
-    (troop_set_faction, trp_knight_1_4, fac_commoners),
-    (troop_set_faction, trp_knight_1_1, fac_commoners),
+    #Angbor and Orthalion - start as defensive resp. passive lords
+    (troop_set_slot, "trp_knight_1_1", slot_troop_lord_state, stls_defensive),
+    (troop_set_slot, "trp_knight_1_1", slot_troop_home, "p_town_calembel"),
+    (troop_set_slot, "trp_knight_1_4", slot_troop_lord_state, stls_passive),
+    (troop_set_slot, "trp_knight_1_1", slot_troop_home, "p_town_pelargir"),
 
 	] or []) + [    
 
@@ -1987,9 +1990,12 @@ scripts = [
     #Retainers End
     (call_script, "script_assign_loyalty"),
 
-# spawn some lords in distinct towns, TLD
+# spawn some lords in distinct towns and set home town, TLD
     ]+[
-	(call_script, "script_create_kingdom_hero_party", lords_spawn[x][0], lords_spawn[x][1]) for x in range(len(lords_spawn)) ]+[  
+	(call_script, "script_create_kingdom_hero_party", lords_spawn[x][0], lords_spawn[x][1]) for x in range(len(lords_spawn))
+    ]+[  
+	(troop_set_slot, lords_spawn[x][0], slot_troop_home, lords_spawn[x][1]) for x in range(len(lords_spawn)) 
+    ]+[  
 
 # spawn other specific location lords
       (try_for_range, ":fac", kingdoms_begin, kingdoms_end),
@@ -3030,9 +3036,12 @@ scripts = [
                                 (store_troop_faction, ":some_lord_faction", ":some_lord"),
                                 (eq, ":some_lord_faction", ":cur_troop_faction"),
                                 # is not a king OR is a marshall (=don't count non-active kings)
-                                (this_or_next|neg|faction_slot_eq, ":some_lord_faction", slot_faction_leader, ":some_lord"),
-                                (faction_slot_eq, ":some_lord_faction", slot_faction_marshall, ":some_lord"),
+                                #InVain: condition replaced by slot_troop_lord_state
+                                # (this_or_next|neg|faction_slot_eq, ":some_lord_faction", slot_faction_leader, ":some_lord"),
+                                # (faction_slot_eq, ":some_lord_faction", slot_faction_marshall, ":some_lord"),
+                                (troop_slot_eq, ":some_lord", slot_troop_lord_state, stls_default), #not passive or minor
                                 (neg|troop_slot_eq, ":some_lord", slot_troop_wound_mask, wound_death), #not dead
+                                (troop_slot_eq, ":some_lord", slot_troop_lord_state, stls_default), #not passive or minor
                                 (val_add, ":total_lords", 1),
                             (try_end),
                             # 1 lord left (him) 0%, 2 lords left 10% (some small factions),... 6 lords left 50% chance to die
@@ -4069,7 +4078,8 @@ scripts = [
       (assign, ":limit", 30),
       (party_stack_get_troop_id, ":party_leader", ":party_no", 0),
       (try_begin),
-        (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party),
+        (this_or_next|party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party),
+        (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_minor_party),
         (gt, ":party_leader", 0), #Kham fix
         (is_between, ":party_leader", heroes_begin, heroes_end),
         (troop_slot_eq, ":party_leader", slot_troop_occupation, slto_kingdom_hero), #just in case
@@ -25936,9 +25946,14 @@ command_cursor_scripts = [
     (try_end),
 
     (try_begin),
-        (lt, "$savegame_version", 4336),
-        (assign, "$savegame_version", 4336),
+        (lt, "$savegame_version", 4338),
+        (assign, "$savegame_version", 4338),
         (call_script, "script_assign_loyalty"),
+        #formerly "sitting kings"
+        (troop_set_slot, "trp_isengard_lord", slot_troop_lord_state, stls_passive),
+        (troop_set_slot, "trp_mordor_lord", slot_troop_lord_state, stls_passive),
+        (troop_set_slot, "trp_gondor_lord", slot_troop_lord_state, stls_passive),
+        (troop_set_slot, "trp_lorien_lord", slot_troop_lord_state, stls_passive),
     (try_end),
     
     ] or []) + [ 
@@ -31344,7 +31359,8 @@ if is_a_wb_script==1:
 		(troop_slot_eq, ":lords", slot_troop_occupation, slto_kingdom_hero),
         (eq, ":lord_found", 0),
 		(neg|troop_slot_eq, ":lords", slot_troop_wound_mask, wound_death), #not dead
-		(call_script, "script_cf_fails_if_sitting_king", ":lords"), #fail if sitting king
+		#(call_script, "script_cf_fails_if_sitting_king", ":lords"), #fail if sitting king
+        (troop_slot_eq,":lords",slot_troop_lord_state, stls_default),
 		(troop_get_slot, ":party", ":lords", slot_troop_leaded_party),
 		(gt, ":party", 0),
 		(party_is_active, ":party"),
