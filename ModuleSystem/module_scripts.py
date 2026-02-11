@@ -2504,18 +2504,26 @@ scripts = [
 		# compute ideal number of volunteers #InVain: Adjusted to account for bigger starting garrison sizes, putting more weight on player progress
 		#current formula is =((garrison/10 + rank*5 + leadership*10) * (relation+100))/1000 +3
 		#(store_party_size_wo_prisoners, ":to_add", ":town"),
-        (party_get_slot, ":to_add", ":town", slot_center_garrison_limit), #get regular size instead of actual garrison size -- less room for exploits
+        (party_get_slot, ":ideal_size", ":town", slot_center_garrison_limit), #get regular size instead of actual garrison size -- less room for exploits
 
-    	(val_div, ":to_add", 10), 
+    	(val_div, ":ideal_size", 10), #garrison limits are big enough, so no data loss here
 	    (call_script, "script_get_faction_rank", ":fac"),
 	    (assign, ":rank", reg0),
 		(val_mul, ":rank", 5), 
-	    (val_add, ":to_add", ":rank"),
+	    (val_add, ":ideal_size", ":rank"),
 	    (store_skill_level, ":lead_bonus", "skl_leadership", "trp_player"),
 	    (val_mul, ":lead_bonus", 10),
-	    (val_add, ":to_add", ":lead_bonus"), 
-	    # orc bonus
-	    #(assign, ":is_orc_faction", 0),
+	    (val_add, ":ideal_size", ":lead_bonus"),
+	    # town relations bonus +size*rel/100
+	    (party_get_slot, ":center_relation", ":town", slot_center_player_relation),
+	    (val_add, ":center_relation", 100),
+	    (val_mul, ":ideal_size", ":center_relation"), 
+        
+        #campaign AI (difficulty setting)
+        (val_mul, ":ideal_size", "$tld_volunteers_multi"),
+        (assign, ":divisor", 100), #move all divisions to the end
+
+        #faction specific bonuses
 	    (try_begin),
 		    (this_or_next|eq, ":fac", "fac_mordor"),
 		    (this_or_next|eq, ":fac", "fac_isengard"),
@@ -2526,132 +2534,113 @@ scripts = [
             (this_or_next|eq, ":fac", "fac_harad"),
             (this_or_next|eq, ":fac", "fac_umbar"),
 		    (eq, ":fac", "fac_dunland"),
-		    #(assign, ":is_orc_faction", 1),
-	    	(val_mul, ":to_add", 120), (val_div, ":to_add", 100), #+20% for orc factions #InVain: Not sure if still needed (due to huge orc starting garrisons), but let's keep it for now.
+	    	(val_mul, ":ideal_size", 120), (val_mul, ":divisor", 100), #+20% for orc factions #InVain: Not sure if still needed (due to huge orc starting garrisons), but let's keep it for now.
         (else_try),
             (this_or_next|eq, ":fac", "fac_imladris"),
 		    (this_or_next|eq, ":fac", "fac_lorien"),
 		    (eq, ":fac", "fac_woodelf"),
-            (val_mul, ":to_add", 80), (val_div, ":to_add", 100), #-20% for elf factions
+            (val_mul, ":ideal_size", 80), (val_mul, ":divisor", 100), #-20% for elf factions
 	  	(try_end),
-	    # town relations bonus +size*rel/100
-	    (party_get_slot, ":center_relation", ":town", slot_center_player_relation),
-	    (val_add, ":center_relation", 100),
-	    (val_mul, ":to_add", ":center_relation"), 
         
-        #campaign AI (difficulty setting)
-        (val_mul, ":to_add", "$tld_volunteers_multi"),
-        (val_div, ":to_add", 100), 
-        
-		(val_div, ":to_add", 1000),
-		(val_add, ":to_add", 3), #add some extra, so the below code still works (volunteers don't fill up if less than 4)
-		(val_max, ":to_add", 6), #additional saveguard
-        
-
-	    
-	    #(assign, ":ideal_size", ":to_add"),
-		(store_party_size, ":vol_total", ":volunteers"),
+        (val_mul, ":divisor", 1000), #move all divisions to end of calculation
+		(val_div, ":ideal_size", ":divisor"),
+		(val_add, ":ideal_size", 3), #add some extra, so the below code still works (volunteers don't fill up if less than 4)
+		(val_max, ":ideal_size", 6), #additional saveguard       
 		
 		#InVain: before adding new volunteers, we train the old ones, using the same formula as above (without garrison size)
 		(store_add, ":vol_xp", ":rank", ":lead_bonus"),
 		(val_mul, ":vol_xp", ":center_relation"),
-		(val_mul, ":vol_xp", ":vol_total"), #multiply with number of volunteers, so big reserves don't level slower than small ones
+		(val_mul, ":vol_xp", 10), #tweakable
         (try_begin),
             (lt, "$tld_volunteers_multi", 100),
             (val_mul, ":vol_xp", "$tld_volunteers_multi"),
             (val_div, ":vol_xp", 100), 
         (try_end),
 		(val_div, ":vol_xp", 100),
-		(party_upgrade_with_xp, ":volunteers", ":vol_xp", 0),
+        (store_random_in_range, ":upgrade_path", 0, 3), 
+        (val_max, ":upgrade_path", 1), #prefer upgrade path 1 (mostly infantry) over path 2 (mostly archers)
+		(party_upgrade_with_xp, ":volunteers", ":vol_xp", ":upgrade_path"),
 		
-		
-		# compute how many soldiers to add to volunteers		
-		(val_sub, ":to_add", ":vol_total"), # how many troops to add/remove to volunteers (in theory)
-		(val_mul, ":to_add", 2), (val_div, ":to_add", 3), # fill 2/3 of the gap per time
-		(store_random_in_range, ":rand", 0, 5), (val_add, ":rand", -2), (val_add, ":to_add", ":rand"), # plus random -2 .. +2
-		(store_add, ":target_size", ":vol_total", ":to_add"),
-		
+        #get reinforcement template and backup base troops
 		(party_get_slot, ":recruit_template", ":town", slot_town_recruits_pt),
+        (faction_get_slot, ":t_1_troop", ":fac", slot_faction_tier_1_troop),
+        (faction_get_slot, ":t_2_troop", ":fac", slot_faction_tier_2_troop),
+        (try_begin), #workaround for gondor subfactions
+            (eq, ":fac", fac_gondor),
+            (neg|party_slot_eq, ":town", slot_party_subfaction, 0),
+            (party_get_slot, ":t_1_troop", ":town", slot_town_guard_troop),
+            (troop_get_upgrade_troop, ":t_2_troop", ":t_1_troop", 0),
+        (try_end),
+
+		#Remove high level troops every day (counters volunteer training going overboard)
+        #count number of basic troops available
+		(try_begin),
+            (party_get_num_companion_stacks, ":num_stacks", ":volunteers"),
+            (assign, ":highest_level", 0),
+            (assign, ":highest_level_stack_size", 0),
+            (assign, ":highest_level_troop", 0),
+            (assign, ":basic_troops", 0),
+            (try_for_range, ":i_stack", 0, ":num_stacks"),
+                (party_stack_get_troop_id, ":stack_troop", ":volunteers", ":i_stack"),
+                (store_character_level, ":troop_level", ":stack_troop"),
+                (party_stack_get_size, ":stack_size", ":volunteers", ":i_stack"),
+                (try_begin), #limit number of higher level volunteers
+                    (gt, ":troop_level", 12), #greater than t2
+                    (gt, ":stack_size", 2),
+                    (party_remove_members_wounded_first, ":volunteers", ":stack_troop", 1),
+                    (party_add_members, ":volunteers", ":t_2_troop", 1), #we stay fair - add a t2 troop to volunteers
+                (else_try),
+                    (le, ":troop_level", 12), #t1 and t2, t3 for evil
+                    (val_add, ":basic_troops", ":stack_size"),
+                (try_end),
+                (try_begin),
+                    (ge, ":troop_level", ":highest_level"),
+                    (gt, ":stack_size", ":highest_level_stack_size"),
+                    (assign, ":highest_level", ":troop_level"),
+                    (assign, ":highest_level_troop", ":stack_troop"),
+                    (assign, ":highest_level_stack_size", ":stack_size"),
+                (try_end),
+            (try_end),
+            (ge, ":highest_level", 6), #affects t2 troops (orcs: t3)
+            (val_mul, ":highest_level", ":highest_level_stack_size"),
+            (store_random_in_range, ":random", 0, 100),
+            (le, ":random", ":highest_level"),
+            (party_remove_members_wounded_first, ":volunteers", ":highest_level_troop", 1),
+            (party_add_members, ":volunteers", ":t_1_troop", 1), #add a basic troop to volunteers
+            #(str_store_party_name, s1, ":town"),
+            #(str_store_troop_name, s2, ":highest_level_troop"),
+            #(display_message, "@{s1}: removed volunteer {s2}"),
+        (try_end),
+    
+		(store_party_size, ":vol_total", ":volunteers"),
+		
+		# compute how many soldiers to add to volunteers
+		(store_sub, ":to_add", ":ideal_size", ":vol_total"), # how many troops to add/remove to volunteers (in theory)
+		(val_mul, ":to_add", 2), (val_div, ":to_add", 3), # fill max 2/3 of the gap per time
+		(store_add, ":target_size", ":vol_total", ":to_add"),
+        
 		(try_begin),
 			(party_is_active, ":town"),
-			(gt, ":to_add", 0), # add volunteers!
+			#(gt, ":to_add", 0), # add volunteers! #InVain: Not needed anymore, always reinforce until target size is reached
 	        # this is to simulate slower growth for smaller templates (e.g. rangers)
-	        (store_div, ":reinf_rounds", ":to_add", 3), #average troops per template is 3-4; need minimum of 3 to actually reinforce
+	        #(store_div, ":reinf_rounds", ":to_add", 3), #average troops per template is 3-4; need minimum of 3 to actually reinforce
+            (assign, ":reinf_rounds", 3), #Invain: Above code would invalidate numerical differences in reinforcement templates. This allows factions with bigger reinforcement templates to reinforce faster.
 	        (try_for_range, ":unused", 0, ":reinf_rounds"),
-	            (try_begin),
-	              	(store_party_size, ":current_size", ":volunteers"),
-	              	(le, ":target_size", ":current_size"),
-	              	(assign, ":reinf_rounds", 0), #stop reinforcing if already too many
-	            (else_try),
-	              	(party_add_template, ":volunteers", ":recruit_template"),
-	            (try_end),
+	            (lt, ":basic_troops", ":target_size"), #Invain: this only counts low-level troops below level 12, making sure that mid- and high-level troops don't take away volunteer space.
+	            (party_add_template, ":volunteers", ":recruit_template"),
+	        (else_try),
+	            (assign, ":reinf_rounds", 0), #stop reinforcing if already too many
 			(try_end),
             (store_party_size, ":current_size", ":volunteers"), #for every volunteer, remove a t1 or t2 troop from the garrison
             (store_sub, ":to_remove", ":current_size", ":vol_total"), #how many volunteers were added?
-            (faction_get_slot, ":t_1_troop", ":fac", slot_faction_tier_1_troop),
             (party_count_members_of_type, ":t_1_count", ":town", ":t_1_troop"),
             (party_remove_members, ":town", ":t_1_troop", ":to_remove"),
             (try_begin),
                 (lt, ":t_1_count", ":to_remove"),
-                (party_remove_members, ":town", ":t_1_troop", ":to_remove"), 
                 (val_sub, ":to_remove", ":t_1_count"),
-                (faction_get_slot, ":t_2_troop", ":fac", slot_faction_tier_2_troop),
                 (party_remove_members, ":town", ":t_2_troop", ":to_remove"), 
             (try_end),
-            
-	        #(store_party_size, ":vol_total", ":volunteers"), # recompute for the benefit of puny orcs below
-		(else_try),
-			(lt, ":to_add", 0), # remove volunteers! #MV: kept this code, effect: a trickle of player recruits joins the garrison #InVain: For the record, this code is invalid because we clamp the to_add value above, so it can never be less than 6
-			(val_mul, ":to_add", -1),
-			(try_for_range, ":unused", 0, ":to_add"),
-				(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"), (assign, ":guy", reg0),  # can fail
-				(try_begin), #Kham - When the chosen one is Volunteer, let us run the script again
-					(eq, ":guy", "trp_volunteers"), 
-					(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"), (assign, ":guy", reg0),
-				(try_end),
-				(neq, ":guy", "trp_volunteers"), #Kham - If it is still the volunteer, then just prevent him from being moved.
-				(party_remove_members_wounded_first, ":volunteers", ":guy", 1),
-				(party_add_members, ":town", ":guy", 1),
-			(try_end),
 	  	(try_end),
-    
-	    # add a couple of orc volunteers each day #InVain: Let's not do this, it clutters the volunteers party
-	    # (try_begin),
-		    # (eq, ":is_orc_faction", 1),
-		    # (gt, ":ideal_size", ":vol_total"), #only if needed
-		    # (faction_get_slot, ":puny_orc", ":fac", slot_faction_tier_1_troop),
-		    # (gt, ":puny_orc", 0),
-		    # (party_add_members, ":volunteers", ":puny_orc", 2),
-		# (try_end),
-
-		#Remove high level troops every day (counters volunteer training going overboard), and replace it with a basic troop
-		(party_get_num_companion_stacks, ":num_stacks", ":volunteers"),
-		(assign, ":highest_level", 0),
-			(try_for_range, ":i_stack", 0, ":num_stacks"),
-				(party_stack_get_troop_id, ":stack_troop", ":volunteers", ":i_stack"),
-				(store_character_level, ":troop_level", ":stack_troop"),
-                (party_stack_get_size, ":stack_size", ":volunteers", ":i_stack"),
-                (try_begin), #limit number of higher level volunteers
-                    (gt, ":troop_level", 10), (gt, ":stack_size", 2),
-                    (party_remove_members_wounded_first, ":volunteers", ":stack_troop", 1),
-                    (faction_get_slot, ":t_2_troop", ":fac", slot_faction_tier_2_troop),
-                    (party_add_members, ":volunteers", ":t_2_troop", 1), #we stay fair - add a t2 troop to volunteers
-                (try_end),
-				(gt, ":troop_level", ":highest_level"),
-				(assign, ":highest_level", ":troop_level"),
-				(assign, ":highest_level_troop", ":stack_troop"),
-				(assign, ":highest_level_stack_size", ":stack_size"),
-			(try_end),
-		(ge, ":highest_level", 6), #affects t2 troops (orcs: t3)
-		(val_mul, ":highest_level", ":highest_level_stack_size"),
-		(store_random_in_range, ":random", 0, 100),
-		(le, ":random", ":highest_level"),
-		(party_remove_members_wounded_first, ":volunteers", ":highest_level_troop", 1),
-        (faction_get_slot, ":t_1_troop", ":fac", slot_faction_tier_1_troop),
-        (party_add_members, ":volunteers", ":t_1_troop", 1), #add a basic troop to volunteers
-		#(str_store_party_name, s1, ":town"),
-		#(str_store_troop_name, s2, ":highest_level_troop"),
-		#(display_message, "@{s1}: removed volunteer {s2}"),
         
         #add banner carriers
         (try_begin),
