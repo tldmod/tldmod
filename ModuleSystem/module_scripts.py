@@ -1989,6 +1989,7 @@ scripts = [
     (call_script, "script_assign_retainers"),
     #Retainers End
     (call_script, "script_assign_loyalty"),
+    (call_script, "script_assign_unique_troop_lords"),
 
 # spawn some lords in distinct towns and set home town, TLD
     ]+[
@@ -6132,7 +6133,9 @@ scripts = [
             (this_or_next|eq,":race",tf_urukhai),
             (this_or_next|eq,":race",tf_lorien),
             (this_or_next|eq,":race",tf_imladris),
-            (eq,":race",tf_woodelf),
+            (this_or_next|eq,":race",tf_woodelf),
+            # Unique troops can't be captured (otherwise there would be a chance for duplicates on the map when their lord respawns)
+            (is_between, ":stack_troop", unique_troops_begin, unique_troops_end),
             (assign, ":capture_chance", 0),
             (try_begin),    #except if player party is involved and capture prisoners quest active
                 (neq, ":race", tf_orc), #still no orcs, poor guys
@@ -10672,6 +10675,17 @@ scripts = [
       # (val_mul, ":hiring_budget", 4),
       # (val_div, ":hiring_budget", 5),
       (assign, ":num_rounds", 1),
+
+      # Add any unique troops that belong to this lord and are missing from the party
+      (try_for_range, ":unique_troop", unique_troops_begin, unique_troops_end),
+        (troop_get_slot, ":unique_lord", ":unique_troop", slot_troop_unique_lord),
+        # See if this troop belongs to the leader of the current party
+        (eq, ":unique_lord", ":troop_no"),
+        # See if this troop is already in the party
+		(party_count_members_of_type,":num", ":party_no", ":unique_troop"),
+        (eq, ":num", 0),
+		(party_add_members, ":party_no", ":unique_troop", 1),
+      (try_end),
 
 	  #GA: add standard bearers to hero parties  
 	  (try_begin),
@@ -25955,6 +25969,12 @@ command_cursor_scripts = [
         (troop_set_slot, "trp_gondor_lord", slot_troop_lord_state, stls_passive),
         (troop_set_slot, "trp_lorien_lord", slot_troop_lord_state, stls_passive),
     (try_end),
+
+        (try_begin),
+        (lt, "$savegame_version", 4339),
+        (assign, "$savegame_version", 4339),
+        (call_script, "script_assign_unique_troop_lords"),
+    (try_end),
     
     ] or []) + [ 
 ]),
@@ -28451,6 +28471,15 @@ command_cursor_scripts = [
     (troop_set_slot, trp_npc21, slot_troop_faction_loyalty, faction_loyalty_neutral),
     # The dwarves only just retook Erebor. Kili will not see them lose it again
     (troop_set_slot, trp_npc7, slot_troop_faction_loyalty, faction_loyalty_fanatical),
+]),
+
+# Assigns lords to unique troops. Put in a separate script so it can also be called in the save game update.
+# #script_assign_unique_troop_lords
+# # INPUT: none
+# # OUTPUT: none
+("assign_unique_troop_lords", [
+    # Guthláf is Theoden's standard bearer
+    (troop_set_slot, trp_guthlaf, slot_troop_unique_lord, trp_rohan_lord),
 ]),
 
 # script_cf_party_remove_random_prisoner, copy of script_cf_party_remove_random_regular_troop (InVain)

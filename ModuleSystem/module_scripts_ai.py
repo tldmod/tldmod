@@ -2324,9 +2324,6 @@ ai_scripts = [
         (troop_get_slot, ":unique_lord", ":unique_troop", slot_troop_unique_lord),
         # See if this troop belongs to the leader of the current party
         (eq, ":unique_lord", ":troop_no"),
-        # See if this troop is already in the party
-		#(party_count_members_of_type,":num", ":party_no", ":unique_troop"),
-        #(eq, ":num", 0),
 		(party_add_members, "$pout_party", ":unique_troop", 1),
       (try_end),
       
