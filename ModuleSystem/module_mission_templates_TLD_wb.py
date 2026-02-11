@@ -2763,30 +2763,37 @@ tld_calculate_wounded = (ti_on_agent_killed_or_wounded, 0, 0, [], [
     (party_is_active, ":party_no"),
     (agent_get_troop_id, ":troop_no", ":agent_no"),
     (neg|troop_is_hero, ":troop_no"),
-    
-    #surgery
-    (party_stack_get_troop_id, ":party_leader", ":party_no", 0),
-    (store_skill_level, ":surgery", skl_surgery, ":party_leader"),    
-    (try_begin),
-        (eq, ":party_no", p_main_party),
-        (party_get_skill_level, ":surgery", "p_main_party", skl_surgery),
-    (try_end),        
-    (assign, reg75, ":surgery"),
-    (val_mul, ":surgery", 4),
-    
-    #troop level
-    (store_character_level, ":chance", ":troop_no"), 
-    (assign, reg76, ":chance"),
-    (troop_get_type, ":race", ":troop_no"),
+
     (try_begin), 
-        (is_between, ":race", tf_orc_begin, tf_orc_end),
-        (val_mul, ":chance", 2),
-        (val_div, ":chance", 3),
+        # Unique troops always wounded instead of killed, to make them more like hero companions
+        # This prevents the player from seeing "Soandso was killed" only for them to show up again in a future battle
+        (is_between, ":troop_no", unique_troops_begin, unique_troops_end),
+        (assign, ":chance", 100),
+    (else_try),
+        #surgery
+        (party_stack_get_troop_id, ":party_leader", ":party_no", 0),
+        (store_skill_level, ":surgery", skl_surgery, ":party_leader"),    
+        (try_begin),
+            (eq, ":party_no", p_main_party),
+            (party_get_skill_level, ":surgery", "p_main_party", skl_surgery),
+        (try_end),        
+        (assign, reg75, ":surgery"),
+        (val_mul, ":surgery", 4),
+        
+        #troop level
+        (store_character_level, ":chance", ":troop_no"), 
+        (assign, reg76, ":chance"),
+        (troop_get_type, ":race", ":troop_no"),
+        (try_begin), 
+            (is_between, ":race", tf_orc_begin, tf_orc_end),
+            (val_mul, ":chance", 2),
+            (val_div, ":chance", 3),
+        (try_end),
+        (val_add, ":chance", ":surgery"),
+        #(val_div, ":chance", 100),
+        (val_add, ":chance", 10),
+        (val_min, ":chance", 90),
     (try_end),
-    (val_add, ":chance", ":surgery"),
-    #(val_div, ":chance", 100),
-    (val_add, ":chance", 10),
-    (val_min, ":chance", 90),
     
     (assign, reg77, ":chance"),
     (str_store_agent_name, s55, ":agent_no"),

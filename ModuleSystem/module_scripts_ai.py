@@ -2318,6 +2318,17 @@ ai_scripts = [
         (neq, ":current_troop_faction_no", ":troop_faction_no"),
         (party_set_faction, "$pout_party", ":current_troop_faction_no"),
       (try_end),
+
+      # Add any unique troops that belong to this lord
+      (try_for_range, ":unique_troop", unique_troops_begin, unique_troops_end),
+        (troop_get_slot, ":unique_lord", ":unique_troop", slot_troop_unique_lord),
+        # See if this troop belongs to the leader of the current party
+        (eq, ":unique_lord", ":troop_no"),
+        # See if this troop is already in the party
+		#(party_count_members_of_type,":num", ":party_no", ":unique_troop"),
+        #(eq, ":num", 0),
+		(party_add_members, "$pout_party", ":unique_troop", 1),
+      (try_end),
       
 	  
 	  # make it use the icon of the corresponding host (mtarini)
