@@ -3037,6 +3037,13 @@ scripts = [
                             (store_random_in_range,":rnd_last_chance",0,100),
                             (store_sub, ":last_chance", ":total_lords", 1),
                             (val_mul, ":last_chance", 10),
+                            (troop_get_slot, ":modifier", ":cur_troop_id", slot_troop_death_chance_modifier),
+                            (try_begin), #fallback
+                                (le, ":modifier", 0),
+                                (assign, ":modifier", 100),
+                            (try_end),
+                            (val_mul, ":last_chance", ":modifier"),
+                            (val_div, ":last_chance", 100),
                             (lt, ":rnd_last_chance", ":last_chance"), # die for real?
                             (troop_set_slot, ":cur_troop_id", slot_troop_killed_by, ":leader_troop_id"),
 							(call_script, "script_hero_leader_killed_abstractly", ":cur_troop_id",":nonempty_winner_party"),
