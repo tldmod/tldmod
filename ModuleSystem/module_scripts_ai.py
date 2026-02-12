@@ -2319,7 +2319,15 @@ ai_scripts = [
         (party_set_faction, "$pout_party", ":current_troop_faction_no"),
       (try_end),
       
-	  
+      # Add any kingdom companions that belong to this lord
+      (try_for_range, ":kingdom_companion", kingdom_companions_begin, kingdom_companions_end),
+        (troop_get_slot, ":companion_lord", ":kingdom_companion", slot_troop_lord),
+        # See if this troop belongs to the leader of the current party
+        (eq, ":companion_lord", ":troop_no"),
+        (troop_slot_eq, ":kingdom_companion", slot_troop_occupation, slto_kingdom_companion),
+		(party_add_members, "$pout_party", ":kingdom_companion", 1),
+      (try_end),
+
 	  # make it use the icon of the corresponding host (mtarini)
 	  (store_sub, ":icon", ":troop_faction_no", "fac_gondor"),
 	  (val_add, ":icon", "icon_knight_gondo_trot_x3"),  # exlpoit ordering of combined icons, with a few exception below:

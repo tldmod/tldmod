@@ -1989,6 +1989,7 @@ scripts = [
     (call_script, "script_assign_retainers"),
     #Retainers End
     (call_script, "script_assign_loyalty"),
+    (call_script, "script_assign_kingdom_companion_lords"),
 
 # spawn some lords in distinct towns and set home town, TLD
     ]+[
@@ -2998,6 +2999,8 @@ scripts = [
 						(try_end),
 						(try_begin),
 							(neq, "$g_fast_mode", 1),
+                            #Don't show this message for companions
+                            (troop_slot_eq, ":cur_troop_id", slot_troop_occupation, slto_kingdom_hero),
 							(display_message,"@{s1} of {s3} was defeated in battle.", ":news_color"),
 						(try_end),
 						#(display_message,"@{s1} of {s3} was defeated in battle but managed to escape.", ":news_color"),
@@ -25951,6 +25954,12 @@ command_cursor_scripts = [
         (troop_set_slot, "trp_gondor_lord", slot_troop_lord_state, stls_passive),
         (troop_set_slot, "trp_lorien_lord", slot_troop_lord_state, stls_passive),
     (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4342),
+        (assign, "$savegame_version", 4342),
+        (call_script, "script_assign_kingdom_companion_lords"),
+    (try_end),
     
     ] or []) + [ 
 ]),
@@ -28447,6 +28456,18 @@ command_cursor_scripts = [
     (troop_set_slot, trp_npc21, slot_troop_faction_loyalty, faction_loyalty_neutral),
     # The dwarves only just retook Erebor. Kili will not see them lose it again
     (troop_set_slot, trp_npc7, slot_troop_faction_loyalty, faction_loyalty_fanatical),
+]),
+
+# Assigns lords to certain troops. Put in a separate script so it can also be called in the save game update.
+# #script_assign_kingdom_companion_lords
+# # INPUT: none
+# # OUTPUT: none
+("assign_kingdom_companion_lords", [
+    (try_for_range, ":kingdom_companion", kingdom_companions_begin, kingdom_companions_end),
+        (troop_set_slot, ":kingdom_companion", slot_troop_occupation, slto_kingdom_companion),
+    (try_end),
+    # Guthláf is Theoden's standard bearer
+    (troop_set_slot, trp_guthlaf, slot_troop_lord, trp_rohan_lord),
 ]),
 
 # script_cf_party_remove_random_prisoner, copy of script_cf_party_remove_random_regular_troop (InVain)

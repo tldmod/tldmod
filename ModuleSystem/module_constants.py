@@ -795,6 +795,7 @@ slto_player_companion  = 3
 #slto_kingdom_lady      = 4
 slto_kingdom_seneschal = 5
 slto_robber_knight     = 6
+slto_kingdom_companion = 7 # Companion for a kingdom hero's party
 slto_retirement        = 11
 stl_unassigned          = -1
 stl_reserved_for_player = -2
@@ -1066,6 +1067,8 @@ stls_passive = 2 #always staying at home center
 
 slot_troop_death_chance_modifier = 173
 
+slot_troop_lord = 174 # Troop id of a troop's lord. They will spawn in the appropriate lord's party
+
 #Healer Slots (troop slot)
 slot_troop_needs_healing = 308
 
@@ -1280,6 +1283,9 @@ tavern_minstrels_end   = companions_begin
 
 tavern_travelers_begin = trp_tavern_traveler_1
 tavern_travelers_end   = tavern_minstrels_begin
+
+kingdom_companions_begin = trp_future_unique_0
+kingdom_companions_end = trp_kingdom_companions_end
 
 lord_quests_begin = "qst_deliver_message"
 lord_quests_end   = "qst_follow_army"
