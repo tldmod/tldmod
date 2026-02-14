@@ -3523,8 +3523,10 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
       #(agent_set_hit_points, ":animal", 100, 0),
 
     #InVain: Make them uncontrollable
+    (agent_get_team, ":agent_team", ":agent"),
     (try_begin),
-        (agent_is_defender, ":agent"),
+        (this_or_next|eq, ":agent_team", 0),
+        (eq, ":agent_team", 2),
         (agent_set_team, ":animal", 4),
         (team_set_relation, 4, 0, 1),
         (team_set_relation, 4, 2, 1),
@@ -3533,6 +3535,8 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
         (team_set_relation, 4, 5, -1),
         (team_give_order, 4, grc_everyone, mordr_charge),
     (else_try),
+        (this_or_next|eq, ":agent_team", 1),
+        (eq, ":agent_team", 3),
         (agent_set_team, ":animal", 5),
         (team_set_relation, 5, 0, -1),
         (team_set_relation, 5, 2, -1),
@@ -3540,6 +3544,8 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
         (team_set_relation, 5, 3, 1),
         (team_set_relation, 5, 4, 1),
         (team_give_order, 5, grc_everyone, mordr_charge),
+    (else_try), #fallback
+        (agent_set_team, ":animal", ":agent_team"),
     (try_end),
     (agent_force_rethink, ":animal"),
   ]),

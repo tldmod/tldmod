@@ -1696,8 +1696,11 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
                 (str_store_agent_name, s5, ":agent"),
                 (display_message, "@{s5} has been overcome by fear and rage and is now uncontrollable."),
             (try_end),
-            (try_begin),
-                (agent_is_defender, ":agent"),
+            (try_begin), #defender teams, but we avoid "agent_is_defender" because it only checks if they spawn from a defender entry point
+                (this_or_next|eq, ":team", 0),
+                (this_or_next|eq, ":team", 2),
+                (eq, ":team", 6), #player team in sieges
+                (neg|teams_are_enemies, ":team", 4), #need this additional check because player team can be both attacker or defender
                 (agent_set_team, ":agent", 4),
                 (team_set_relation, 4, 0, 1),
                 (team_set_relation, 4, 2, 1),
@@ -1705,7 +1708,11 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
                 (team_set_relation, 4, 3, -1),
                 (team_set_relation, 4, 5, -1),
                 (team_give_order, 4, grc_everyone, mordr_charge),
-            (else_try),
+            (else_try), #attacker teams
+                (this_or_next|eq, ":team", 1),
+                (this_or_next|eq, ":team", 3),
+                (eq, ":team", 6), #player team in sieges
+                (neg|teams_are_enemies, ":team", 5), #need this additional check because player team can be both attacker or defender
                 (agent_set_team, ":agent", 5),
                 (team_set_relation, 5, 0, -1),
                 (team_set_relation, 5, 2, -1),
@@ -3988,8 +3995,10 @@ tld_animals_join_battle =(
     (le, ":rnd2", ":chance"),
     
     #assign to uncontrollable allied team
+    (agent_get_team, ":parent_team", ":parent_agent"),
     (try_begin),
-        (agent_is_defender, ":parent_agent"),
+        (this_or_next|eq, ":parent_team", 0),
+        (eq, ":parent_team", 2),
         (assign, ":spawn_entry", 1),
         (assign, ":animal_team", 4),
         (team_set_relation, 4, 0, 1),
@@ -3998,6 +4007,8 @@ tld_animals_join_battle =(
         (team_set_relation, 4, 3, -1),
         (team_set_relation, 4, 5, -1),
     (else_try),
+        (this_or_next|eq, ":agent_team", 1),
+        (eq, ":agent_team", 3),
         (assign, ":animal_team", 5),
         (assign, ":spawn_entry", 4),
         (team_set_relation, 5, 0, -1),

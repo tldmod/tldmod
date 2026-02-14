@@ -1238,6 +1238,8 @@ mission_templates = [ # not used in game
             (try_end),
 
             (try_begin), #if coherence has reached 0, stop reinforcements
+            # Maybe this is not the right place to do this, because there's no time for the temporary coherence boost to take effect.
+            # Possible fix: Set a time limit (only after x minutes); increase starting coherence in subsequent battle rounds; increase temporary coherence boost; only make this effective after X reinforcement rounds; don't allow full rout if they still have reinforcements left (hard to do, because we can't check troops left during battle).
                 (teams_are_enemies, 0, ":player_team"),
                 (lt, "$enemies_coh", 1),
                 (assign,"$defender_reinforcement_stage",20),
@@ -1271,6 +1273,8 @@ mission_templates = [ # not used in game
             (try_end),
             
             (try_begin), #if coherence has reached 0, stop reinforcements
+            # Maybe this is not the right place to do this, because there's no time for the temporary coherence boost to take effect.
+            # Possible fix: Set a time limit (only after x minutes); increase starting coherence in subsequent battle rounds; increase temporary coherence boost; only make this effective after X reinforcement rounds; don't allow full rout if they still have reinforcements left (hard to do, because we can't check troops left during battle).
                 (teams_are_enemies, 0, ":player_team"),
                 (lt, "$enemies_coh", 1),
                 (assign,"$attacker_reinforcement_stage",20),
@@ -2081,7 +2085,8 @@ mission_templates = [ # not used in game
   tld_common_wb_muddy_water+
   tld_common_battle_scripts+
   common_deathcam_triggers +
-  moto_formations_triggers + [
+  #moto_formations_triggers + 
+  [
   
 
   common_battle_on_player_down,
@@ -2210,7 +2215,8 @@ mission_templates = [ # not used in game
   tld_common_wb_muddy_water+
   tld_common_battle_scripts+
   common_deathcam_triggers +
-  moto_formations_triggers +  [
+  #moto_formations_triggers +  
+  [
   
 
   common_battle_on_player_down,

@@ -4683,7 +4683,7 @@ game_menus = [
 	("impose_quest_4",[],"{!}Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
 	("impose_quest_5",[],"{!}Hunt Down Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_02")]),
 	("impose_quest_6",[],"{!}Night Bandits",[(assign,"$cheat_imposed_quest","qst_deal_with_night_bandits")]),
-	("impose_quest_7",[],"{!}Lost Spears",[(assign,"$cheat_imposed_quest","qst_find_lost_spears")]),
+	("impose_quest_7",[],"{!}qst_defend_village",[(assign,"$cheat_imposed_quest","qst_defend_village")]),
 	("impose_quest_8", [], "{!}Destroy Scout Camp", [(assign, "$cheat_imposed_quest", "qst_destroy_scout_camp")]),
 	("impose_quest_9", [], "{!}Investigate Fangorn", [(assign, "$cheat_imposed_quest", "qst_investigate_fangorn")]),
 	("impose_quest_10", [], "{!}Raid Village", [(assign, "$cheat_imposed_quest", "qst_raid_village")]),
@@ -11467,6 +11467,7 @@ game_menus = [
 	        (set_party_battle_mode),
 	        (set_battle_advantage, 0),
 	        (assign, "$g_battle_result", 0),
+            (assign, "$small_scene_used", 1), #no formations
 	        (set_jump_mission,"mt_village_attack_bandits"),
 	       	(jump_to_scene, ":village_scene"),
 	        (change_screen_mission),
@@ -11546,6 +11547,7 @@ game_menus = [
 	        (set_party_battle_mode),
 	        (set_battle_advantage, 0),
 	        (assign, "$g_battle_result", 0),
+            (assign, "$small_scene_used", 1), #no formations
 	        (set_jump_mission,"mt_village_attack_farmers"),
 	        (jump_to_scene, ":village_scene"),
 	        (change_screen_mission),
@@ -11591,6 +11593,7 @@ game_menus = [
 	        (party_is_active,"$qst_raid_village_party"),
 	        (call_script, "script_safe_remove_party","$qst_raid_village_party"),
 	      (try_end),
+          (assign, "$small_scene_used", 0), #back to normal
 	     ],
 	    [
 	      ("continue", [], "Continue...",
@@ -11783,6 +11786,7 @@ game_menus = [
 	        (set_party_battle_mode),
 	        (set_battle_advantage, 0),
 	        (assign, "$g_battle_result", 0),
+            (assign, "$small_scene_used", 1), #no formations
 	        (set_jump_mission,"mt_destroy_scout_camp"),
 	        (jump_to_scene,":scout_camp_scene"),
 	        (change_screen_mission),
@@ -11813,11 +11817,12 @@ game_menus = [
 		  (else_try),
 	      	(neq, "$g_battle_result", 1),
 	        (call_script, "script_fail_quest", "qst_destroy_scout_camp"),
-	        (str_store_string, s9, "@You failed to destroy the Scout Camp. The enemy has taken measure of your faction and has decidedly stuck."),
+	        (str_store_string, s9, "@You failed to destroy the Scout Camp. The enemy has taken measure of your faction and has decidedly struck."),
 	       # (set_background_mesh, "mesh_draw_victory_gondor"),
 	        (party_is_active,"$g_encountered_party"),
 	        (call_script, "script_safe_remove_party","$g_encountered_party"),
 	      (try_end),
+          (assign, "$small_scene_used", 0), #back to normal
 	     ],
 	    [
 	      ("continue", [], "Continue...",
