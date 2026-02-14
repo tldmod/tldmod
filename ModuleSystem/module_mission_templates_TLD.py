@@ -2705,22 +2705,19 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
   ]),
   
   # deal with dismounted riders, just in case
-  # hopefully not needed for now, but keeping this in case there's still bugs with invisible riders persisting
-  # tld_remove_riderless_animals =(
- # (1, 0, 0, [(ge, "$animal_is_present",1)], [
-  # (try_for_agents, ":agent"),
-    # (agent_is_alive, ":agent"),
-    # (agent_is_human, ":agent"),
-    # (agent_get_troop_id, ":agent_trp", ":agent"),
-    # (eq|this_or_next, ":agent_trp", "trp_spider"),
-    # (eq|this_or_next, ":agent_trp", "trp_bear"),
-    # (eq|this_or_next, ":agent_trp", "trp_werewolf"),
-    # (eq,              ":agent_trp", "trp_wolf"),
-    # (agent_get_horse, ":horse", ":agent"),
-    # (lt, ":horse", 0),
-    # (call_script, "script_remove_agent", ":agent"),
-  # (try_end),
-# ])
+  #tld_remove_riderless_animals =
+  (2, 0, 0, [(ge, "$animal_is_present",1)], [
+    (try_for_agents, ":agent"),
+        (agent_is_alive, ":agent"),
+        (agent_is_human, ":agent"),
+        (agent_get_troop_id, ":agent_trp", ":agent"),
+        (this_or_next|is_between, ":agent_trp", "trp_spider", "trp_animals_end"),
+        (eq, ":agent_trp", "trp_werewolf_old"),
+        (agent_get_horse, ":horse", ":agent"),
+        (lt, ":horse", 0),
+        (call_script, "script_remove_agent", ":agent"),
+    (try_end),
+  ]),
 
   #animal attacks
   #checks every 0.5 second, trigger delay is 0.6 seconds, rearms after 1 second, 

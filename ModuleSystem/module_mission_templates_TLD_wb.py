@@ -4007,8 +4007,8 @@ tld_animals_join_battle =(
         (team_set_relation, 4, 3, -1),
         (team_set_relation, 4, 5, -1),
     (else_try),
-        (this_or_next|eq, ":agent_team", 1),
-        (eq, ":agent_team", 3),
+        (this_or_next|eq, ":parent_team", 1),
+        (eq, ":parent_team", 3),
         (assign, ":animal_team", 5),
         (assign, ":spawn_entry", 4),
         (team_set_relation, 5, 0, -1),
@@ -4016,6 +4016,8 @@ tld_animals_join_battle =(
         (team_set_relation, 5, 1, 1),
         (team_set_relation, 5, 3, 1),
         (team_set_relation, 5, 4, 1),
+    (else_try), #fallback
+        (assign, ":animal_team", ":parent_team"),
     (try_end),
     
     #debug
