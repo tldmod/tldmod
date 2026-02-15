@@ -25956,8 +25956,8 @@ command_cursor_scripts = [
     (try_end),
 
     (try_begin),
-        (lt, "$savegame_version", 4342),
-        (assign, "$savegame_version", 4342),
+        (lt, "$savegame_version", 4344),
+        (assign, "$savegame_version", 4344),
         (call_script, "script_assign_kingdom_companion_lords"),
     (try_end),
     
