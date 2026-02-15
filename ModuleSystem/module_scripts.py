@@ -28466,8 +28466,11 @@ command_cursor_scripts = [
     (try_for_range, ":kingdom_companion", kingdom_companions_begin, kingdom_companions_end),
         (troop_set_slot, ":kingdom_companion", slot_troop_occupation, slto_kingdom_companion),
     (try_end),
-    # Guthláf is Theoden's standard bearer
     (troop_set_slot, trp_guthlaf, slot_troop_lord, trp_rohan_lord),
+    (troop_set_slot, trp_damrod, slot_troop_lord, trp_knight_1_7),
+    (troop_set_slot, trp_duilin, slot_troop_lord, trp_knight_1_5),
+    (troop_set_slot, trp_derufin, slot_troop_lord, trp_knight_1_5),
+    (troop_set_slot, trp_rumil, slot_troop_lord, trp_knight_3_6),
 ]),
 
 # script_cf_party_remove_random_prisoner, copy of script_cf_party_remove_random_regular_troop (InVain)
