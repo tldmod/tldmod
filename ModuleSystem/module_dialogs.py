@@ -1122,9 +1122,9 @@ dialogs = [
         (remove_member_from_party, "$g_talk_troop"),(set_player_troop, "trp_player")]],
 
 [anyone|plyr,"member_talk", [
-    #This option is only available if their leadership is 3+
+    #This option is only available if they have ranks in leadership
     (store_skill_level, ":leadership", "skl_leadership", "$g_talk_troop"),
-    (ge, ":leadership", 3),
+    (ge, ":leadership", 1),
 
     #Make sure their faction isn't defeated
     (store_troop_faction, ":troop_faction", "$g_talk_troop"),
@@ -1138,12 +1138,21 @@ dialogs = [
 ], "You should return to {s14} and gather warriors to lead against the enemy.", "member_promote_lord",[]],
 
 [anyone,"member_promote_lord", [
-], "Perhaps you're right. {s14} has need of more capable commanders. Are you sure you're ready for me to leave your side?", "member_promote_lord_2",[]],
+    #Adjust text based on companion's leadership skill to communicate that low leadership companions will be defensive lords
+    (store_skill_level, ":leadership", "skl_leadership", "$g_talk_troop"),
+    (try_begin),
+        (ge, ":leadership", 3),
+        (str_store_string, 15, "@With the skills I have gained I should be able to raise a great host to march on the enemy."),
+    (else_try),
+        (str_store_string, 15, "@I'm not much of a leader, but I will rally defenders to protect my home."),
+    (try_end),
+], "Perhaps you're right. {s14} has need of more capable commanders. {s15} Are you sure you're ready for me to leave your side?", "member_promote_lord_2",[]],
 
 [anyone|plyr, "member_promote_lord_2", [],  "I am sure. You can do more leading a host of your own.", "member_promote_lord_leaving", []],
 [anyone, "member_promote_lord_leaving", [],  "Well. I'll be off, then. Perhaps we will meet again.", "close_window", [
     (call_script,"script_stand_back"),
     (call_script, "script_promote_companion_to_lord", "$g_talk_troop"),
+    (set_player_troop, "trp_player"),
 ]],
 
 #This option is disabled temporarily since it causes a weird loop later on I need to figure out how to fix - Ren
@@ -1187,7 +1196,7 @@ dialogs = [
 [anyone,"member_background_recap_3", [], "Then shortly after, I joined up with you.", "do_member_trade",[]],
 [anyone,"do_member_view_char", [], "Anything else?", "member_talk",[]],
 
-[anyone|plyr,"member_talk", [(eq, "$cheat_mode", 1)], "{!}Become a Lord", "close_window",[(call_script, "script_promote_companion_to_lord", "$g_talk_troop"),]],
+[anyone|plyr,"member_talk", [(eq, "$cheat_mode", 1)], "{!}Become a Lord", "close_window",[(call_script, "script_promote_companion_to_lord", "$g_talk_troop"),(set_player_troop, "trp_player")]],
 
 # ORIGINAL MEMBER HEALTH
 #[anyone,"member_health", [

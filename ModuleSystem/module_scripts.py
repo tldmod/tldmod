@@ -11723,7 +11723,7 @@ scripts = [
     (troop_get_slot, ":banner_id", ":faction_leader", slot_troop_banner_scene_prop),
     (troop_set_slot, ":troop_no", slot_troop_banner_scene_prop, ":banner_id"),
 
-    #Ren - It might interesting if renown factored in what they did while in the player's party, but level is probably a good enough approximation
+    #Ren - It might be interesting if renown factored in what they did while in the player's party, but level is probably a good enough approximation
     (store_character_level, ":level", ":troop_no"),
     (store_mul, ":renown", ":level", ":level"),
     (val_div, ":renown", 2),
@@ -11736,8 +11736,33 @@ scripts = [
     (troop_set_slot, ":troop_no", slot_troop_prisoner_of_party, -1),
     (call_script, "script_update_troop_notes", ":troop_no"),
 
-    #Create their party in the capital
-    (faction_get_slot, ":town", ":troop_faction",  slot_faction_capital ),
+    (store_skill_level, ":leadership", "skl_leadership", ":troop_no"),
+    (try_begin),
+        #Companions with at least 3 leadership (the minimum among lords) will behave like a normal lord
+        (ge, ":leadership", 3),
+        (troop_set_slot, ":troop_no", slot_troop_lord_state, stls_default),
+    (else_try),
+        #Companions with only 1 or 2 leadership will become defensive lords
+        (ge, ":leadership", 1),
+        (troop_set_slot, ":troop_no", slot_troop_lord_state, stls_defensive),
+    (else_try),
+        #Companions with no leadership skill become passive heroes
+        (troop_set_slot, ":troop_no", slot_troop_lord_state, stls_passive),
+    (try_end),
+
+
+    #Set the troop's home to where they were first met
+    (troop_get_slot, ":town", ":troop_no", slot_troop_first_encountered),
+    (troop_set_slot, ":troop_no", slot_troop_home, ":town"),
+
+    #If troop's home is destroyed spawn their party at the faction capital instead
+    (try_begin),  
+        (this_or_next|party_slot_eq, ":town", slot_center_destroyed, 1),
+        (neg|party_is_active, ":town"),
+        (faction_get_slot, ":town", ":troop_faction", slot_faction_capital),
+    (try_end),
+
+    #Create their party in the appropriate town
     (call_script, "script_create_kingdom_hero_party", ":troop_no", ":town"),
 
     #Give strength to their faction based on their level
