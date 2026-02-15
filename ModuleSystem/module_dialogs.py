@@ -14567,6 +14567,17 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     ], 
 "{!}{s5}", "companion_rehire",[]],
 
+# Lord companions
+[anyone ,"start", [
+    (troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_companion),
+    (str_store_troop_name, s1, "$g_talk_troop"),
+    (store_troop_faction, ":faction", "$g_talk_troop"),
+    (str_store_faction_name, s2, ":faction"),  
+    (troop_get_slot, ":lord", "$g_talk_troop", slot_troop_lord),
+    (str_store_troop_name, s3, ":lord"),
+],
+"I am {s1}, a soldier of {s2}. If you have business with our company you should speak with my commander, {s3}.", "close_window", []],
+
 
 
 [anyone|plyr,"party_encounter_hostile_defender", [], "Nothing. We'll leave you in peace.", "close_window", [(call_script,"script_stand_back"),(assign, "$g_leave_encounter",1)]],

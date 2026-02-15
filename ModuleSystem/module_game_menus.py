@@ -6262,7 +6262,8 @@ game_menus = [
             (party_stack_get_troop_id,   ":stack_troop","p_collective_enemy",":stack_no"),
             (party_stack_get_troop_dna,   ":stack_troop_dna","p_collective_enemy",":stack_no"),
             
-            (troop_is_hero, ":stack_troop"),
+            #only check this for party leaders, not their companions
+            (troop_slot_eq, ":stack_troop", slot_troop_occupation, slto_kingdom_hero),
             (store_add, "$last_defeated_hero", ":stack_no", 1),
         
             (call_script, "script_remove_troop_from_prison", ":stack_troop"),
@@ -6284,7 +6285,6 @@ game_menus = [
               (assign, ":escape", 1),
               (try_begin),
                   (is_between, ":stack_troop", heroes_begin, heroes_end), 
-                  (troop_slot_eq, ":stack_troop", slot_troop_occupation, slto_kingdom_hero),
                   #only kill regular lords for now. Marshalls and Kings have to be defeated by quest progress
                   (neg|faction_slot_eq, ":defeated_faction", slot_faction_leader, ":stack_troop"),
                   (neg|faction_slot_eq, ":defeated_faction", slot_faction_marshall, ":stack_troop"),

@@ -1989,6 +1989,7 @@ scripts = [
     (call_script, "script_assign_retainers"),
     #Retainers End
     (call_script, "script_assign_loyalty"),
+    (call_script, "script_assign_kingdom_companion_lords"),
 
 # spawn some lords in distinct towns and set home town, TLD
     ]+[
@@ -2998,6 +2999,8 @@ scripts = [
 						(try_end),
 						(try_begin),
 							(neq, "$g_fast_mode", 1),
+                            #Don't show this message for companions
+                            (troop_slot_eq, ":cur_troop_id", slot_troop_occupation, slto_kingdom_hero),
 							(display_message,"@{s1} of {s3} was defeated in battle.", ":news_color"),
 						(try_end),
 						#(display_message,"@{s1} of {s3} was defeated in battle but managed to escape.", ":news_color"),
@@ -22692,6 +22695,13 @@ scripts = [
 	(display_message, "@News_has_arrived_that_{s1}_of_{s2}_was_killed_in_battle_by_the_forces_of_{s28}!", ":news_color"),
 	(call_script,"script_build_mound_for_dead_hero",":hero",":place"),
     (call_script, "script_update_troop_notes", ":hero"),
+
+    #Reassign any of the dead lord's companions to the faction marshall
+    (faction_get_slot, ":faction_marshall", ":fac", slot_faction_marshall),
+    (try_for_range, ":kingdom_companion", kingdom_companions_begin, kingdom_companions_end),
+        (troop_slot_eq, ":kingdom_companion", slot_troop_lord, ":hero"),
+	    (troop_set_slot, ":kingdom_companion", slot_troop_lord, ":faction_marshall"),
+    (try_end),
  ]),
 #script_build_mound_for_dead_hero
 ("build_mound_for_dead_hero",[
@@ -25976,6 +25986,12 @@ command_cursor_scripts = [
         (troop_set_slot, "trp_gondor_lord", slot_troop_lord_state, stls_passive),
         (troop_set_slot, "trp_lorien_lord", slot_troop_lord_state, stls_passive),
     (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4344),
+        (assign, "$savegame_version", 4344),
+        (call_script, "script_assign_kingdom_companion_lords"),
+    (try_end),
     
     ] or []) + [ 
 ]),
@@ -28472,6 +28488,21 @@ command_cursor_scripts = [
     (troop_set_slot, trp_npc21, slot_troop_faction_loyalty, faction_loyalty_neutral),
     # The dwarves only just retook Erebor. Kili will not see them lose it again
     (troop_set_slot, trp_npc7, slot_troop_faction_loyalty, faction_loyalty_fanatical),
+]),
+
+# Assigns lords to certain troops. Put in a separate script so it can also be called in the save game update.
+# #script_assign_kingdom_companion_lords
+# # INPUT: none
+# # OUTPUT: none
+("assign_kingdom_companion_lords", [
+    (try_for_range, ":kingdom_companion", kingdom_companions_begin, kingdom_companions_end),
+        (troop_set_slot, ":kingdom_companion", slot_troop_occupation, slto_kingdom_companion),
+    (try_end),
+    (troop_set_slot, trp_guthlaf, slot_troop_lord, trp_rohan_lord),
+    (troop_set_slot, trp_damrod, slot_troop_lord, trp_knight_1_7),
+    (troop_set_slot, trp_duilin, slot_troop_lord, trp_knight_1_5),
+    (troop_set_slot, trp_derufin, slot_troop_lord, trp_knight_1_5),
+    (troop_set_slot, trp_rumil, slot_troop_lord, trp_knight_3_6),
 ]),
 
 # script_cf_party_remove_random_prisoner, copy of script_cf_party_remove_random_regular_troop (InVain)
