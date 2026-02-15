@@ -3972,6 +3972,7 @@ tld_animals_join_battle =(
         (agent_is_human, ":agent_no"),
         (neq, ":agent_no", ":player_agent"),
         (agent_get_party_id, ":agent_party", ":agent_no"),
+        (ge, ":agent_party", 0),
         (store_faction_of_party, ":agent_fac", ":agent_party"),
         (this_or_next|faction_slot_eq, ":agent_fac", slot_faction_side, ":side"),
         (faction_slot_eq, ":agent_fac", slot_faction_side, ":side_2"),

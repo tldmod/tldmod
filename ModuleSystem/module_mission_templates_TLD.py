@@ -681,7 +681,7 @@ common_deathcam_triggers = (not is_a_wb_mt==1 and
 moto_formations_triggers = ((is_a_wb_mt==1 and []
 
   + order_weapon_type_triggers +
-  utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers_moto + AI_triggers_moto + battle_encounters_effects)
+  utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers_moto + AI_triggers_moto)
   
   or  [] )
 
@@ -2256,11 +2256,11 @@ reward_birds_wb = ((is_a_wb_mt==1) and [
 nazgul_flying = ((is_a_wb_mt==1) and [ 
 
     (0.4, 0, 0, 
-    #slot 41: 0=alive; 1=dead; 2=?
+    # slot 41: fellbeast mode: circle, attack, retreat
     #slot 38 = rotation 
     #slot 39 = ideal height
     #pos1 = destination
-    [(ge, "$nazgul_in_battle", 1), (prop_instance_is_valid, "$nazgul_in_battle"),(scene_prop_slot_eq, "$nazgul_in_battle", 41, 0),],
+    [(ge, "$nazgul_in_battle", 1), (prop_instance_is_valid, "$nazgul_in_battle"),],
     [
     (store_mission_timer_b_msec, ":cur_time"),
 	(gt, ":cur_time", 500), #1/2 second grace period 
@@ -2273,22 +2273,7 @@ nazgul_flying = ((is_a_wb_mt==1) and [
           (try_for_range, ":count", 0, ":num_instances"),
             (scene_prop_get_instance, ":instance_no", "spr_fellbeast", ":count"),
             (try_begin),
-                (scene_prop_slot_eq, ":instance_no", 41, 0), #bird not shot or dead
-                #(prop_instance_get_starting_position, pos1, ":instance_no"),
-                
-               
-                # (try_begin), #if destination = starting pos, move prop away 
-                    # (prop_instance_get_position, pos2, ":instance_no"),
-                    # (get_distance_between_positions, ":dist_1", pos2, pos1),
-                    # (le, ":dist_1", 200),
-                    # (try_begin),
-                        # (neg|scene_prop_slot_eq, ":instance_no", 45, 1),
-                        # (position_move_z, pos2, 700),
-                    # (try_end),
-                    # (position_move_x, pos2, 12000),
-                    # (prop_instance_set_position, ":instance_no", pos2),
-                    # (prop_instance_enable_physics, ":instance_no", 1),
-                # (try_end),
+                (scene_prop_slot_eq, ":instance_no", 41, 0), #in circling mode
                 
                 (assign, ":is_close", 1),
                 (try_begin), #check if prop is animating and if close to destination
@@ -2303,13 +2288,43 @@ nazgul_flying = ((is_a_wb_mt==1) and [
                 (try_end),
                 
                 (eq, ":is_close", 1),
+                
+                
                 (store_random_in_range, ":chance", 0, 100), #make it screech from time to time
                 (try_begin),
-                    # (ge, ":chance", 95), #only use short screech, as a long screech denotes attack mode
-                    # (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_long" ),
-                # (else_try),
                     (ge, ":chance", 90),
                     (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_short" ),
+                    #morale effect
+                    (try_begin),
+                        (get_player_agent_no, ":player_agent"),
+                        (agent_get_team, ":player_team", ":player_agent"),
+                        (teams_are_enemies, ":player_team", "$nazgul_team"),
+                        (val_sub, "$allies_coh_modifier", 5),
+                    (else_try),
+                        (val_sub, "$enemies_coh_modifier", 5),
+                    (try_end),
+                    
+                    #oh no animation
+                    (try_for_agents, ":agent_no"),
+                        (agent_is_alive, ":agent_no"),
+                        (agent_is_human, ":agent_no"),
+                        (neq, ":agent_no", ":player_agent"),
+                        (agent_get_team, ":agent_team", ":agent_no"),
+                        (teams_are_enemies, ":agent_team", "$nazgul_team"),
+                        (store_random_in_range, ":chance", -100, 100),
+                        (agent_get_troop_id, ":troop_no", ":agent_no"),
+                        (store_character_level, ":trp_level", ":troop_no"),
+                        (val_mul, ":trp_level", 3), #high level troops are never afraid 
+                        (gt, ":chance", ":trp_level"),			
+                        (agent_get_horse, ":horse", ":agent_no"),
+                        (try_begin),
+                            (gt, ":horse", -1),
+                                (agent_set_animation, ":agent_no", "anim_nazgul_noooo_mounted_short"),
+                        (else_try),
+                            (le, ":horse", -1),
+                            (agent_set_animation, ":agent_no", "anim_nazgul_noooo_short"),	
+                        (try_end),
+                    (try_end),
                 (try_end),
 
                 #calculate destination based on current position
@@ -2477,6 +2492,12 @@ nazgul_flying = ((is_a_wb_mt==1) and [
     (prop_instance_get_position, pos20, ":instance_no"),
     (scene_prop_get_slot, ":target_agent", ":instance_no", 42),  
     
+    (try_begin), #if target agent no longer valid, abort
+        (this_or_next|neg|agent_is_active, ":target_agent"),
+        (neg|agent_is_alive, ":target_agent"),
+        (scene_prop_set_slot, ":instance_no", 41, 4), 
+    (try_end),
+        
     (try_begin), #attack direction and trigger retreat
         (scene_prop_slot_eq, ":instance_no", 41, 2), #attacking
         
@@ -2527,7 +2548,7 @@ nazgul_flying = ((is_a_wb_mt==1) and [
             (prop_instance_animate_to_position, ":instance_no", pos40, 85), #fly towards waypoint
         (else_try),
             (le, ":dist", 7000), #slow down a bit when closing in
-            (store_div, ":speed", ":dist", 25), #speed is dist/30; at 4000 dist, it's 1.5 seconds
+            (store_div, ":speed", ":dist", 25), #speed is dist/25; at 4000 dist, it's 1.6 seconds
             (position_copy_rotation, pos30, pos40), #so it doesn't take into account the target's rotation
             (position_rotate_x, pos30, 20),
             (prop_instance_animate_to_position, ":instance_no", pos30, ":speed"), #fly towards target
@@ -2535,11 +2556,11 @@ nazgul_flying = ((is_a_wb_mt==1) and [
         (try_end),
 
 
-        (le, ":dist", 6000), #about 1 second left? Play grab animation! ##possibly need another slot status to make sure this fires only once
+        (le, ":dist", 6000), #about 1 second left? Play grab animation!
         (prop_instance_get_current_deform_frame, ":start_frame", ":instance_no"),
         (prop_instance_deform_in_range, ":instance_no", ":start_frame", 72, 2500), #play it in 2 seconds
         (prop_instance_play_sound, ":instance_no", "snd_nazgul_skreech_short" ),
-        #(display_message, "@grab!"),
+        #(display_message, "@grab activated!"),
         (scene_prop_set_slot, ":instance_no", 41, 3), #grabbing
 
     (else_try),
@@ -2549,6 +2570,13 @@ nazgul_flying = ((is_a_wb_mt==1) and [
         (position_get_z, ":height", pos30),
         (val_add, ":height", 400),
         (position_set_z, pos30, ":height"),
+        #make sure we still fly towards the target
+        (get_distance_between_positions, ":dist", pos20, pos30),
+        (store_div, ":speed", ":dist", 25), #speed is dist/25; at 1000 dist, it's 0.4 seconds
+        (position_copy_rotation, pos30, pos40), #so it doesn't take into account the target's rotation
+        (position_rotate_x, pos30, 20),
+        (prop_instance_animate_to_position, ":instance_no", pos30, ":speed"), #fly towards target
+        
         (get_distance_between_positions, ":dist", pos20, pos30),
         # (assign, reg78, ":dist"),
         # (display_message, "@distance: {reg78}!"),
@@ -2561,23 +2589,28 @@ nazgul_flying = ((is_a_wb_mt==1) and [
         (agent_deliver_damage_to_agent, ":target_agent", ":target_agent", 50, itm_troll_aoe),
         (set_show_messages, 1),
         
+        (assign, ":agent_count", 0),
         (try_for_agents, ":agent", pos69, 2000), #morale effect
             (agent_get_team, ":agent_team", ":agent"),
             (teams_are_enemies, ":agent_team", "$nazgul_team"),
             (agent_get_slot, ":morale_bonus", ":agent", slot_agent_morale_modifier),
             (val_sub, ":morale_bonus", 25),
             (agent_set_slot, ":agent", slot_agent_morale_modifier, ":morale_bonus"),
+            (val_add, ":agent_count", 1),
         (try_end),
         
+        #overall coherence effect
+        (try_begin),
+            (get_player_agent_no, ":player_agent"),
+            (agent_get_team, ":player_team", ":player_agent"),
+            (teams_are_enemies, ":player_team", "$nazgul_team"),
+            (val_sub, "$allies_coh_modifier", ":agent_count"),
+        (else_try),
+            (val_sub, "$enemies_coh_modifier", ":agent_count"),
+        (try_end),
+    
         (scene_prop_set_slot, ":instance_no", 41, 4), #retreat
-        # (init_position, pos20), #set new target pos
-        # (init_position, pos40), #set directions
-        # (position_set_z, pos40, 4000),
-        # (position_set_y, pos40, 2000),
-        #(position_rotate_x, pos40, -30),
-        #(position_transform_position_to_parent, pos20, pos30, pos40),
         (prop_instance_get_position, pos20, ":instance_no"),
-        #(copy_position, pos20, pos3),
         (position_get_rotation_around_x, ":tilt", pos20), #reset x rotation
         (val_mul, ":tilt", -1),
         (position_rotate_x, pos20, ":tilt"),
@@ -2636,7 +2669,6 @@ nazgul_flying = ((is_a_wb_mt==1) and [
         (le, ":dist", 10000),
         (scene_prop_fade_out, ":instance_no", 100),
         (scene_prop_set_slot, ":instance_no", 41, 6), #gone
-        # add morale consequences here!
     (try_end),
 	]),
     
@@ -2675,7 +2707,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
   ]),
 
   #deactivate array slot on death
-  (ti_on_agent_killed_or_wounded, 0, 0, [], [
+  (ti_on_agent_killed_or_wounded, 0, 0, [(ge, "$animal_is_present",1)], [
     (store_trigger_param_1, ":killed"),
     (store_trigger_param_2, ":killer"),
     (neg|agent_is_human, ":killed"),
@@ -2694,7 +2726,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         # (display_message, "@{s5} was killed, stored in slot {reg78}"),
     (agent_set_no_death_knock_down_only, ":rider", 0),
     (agent_set_hit_points, ":rider", 1, 0),
-    (agent_deliver_damage_to_agent, ":killer", ":rider", 100),
+    (agent_deliver_damage_to_agent, ":killer", ":rider", 1000),
     (call_script, "script_remove_agent", ":rider"), #just in case
     
     #Give XP to killer
