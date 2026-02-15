@@ -22670,6 +22670,13 @@ scripts = [
 	(display_message, "@News_has_arrived_that_{s1}_of_{s2}_was_killed_in_battle_by_the_forces_of_{s28}!", ":news_color"),
 	(call_script,"script_build_mound_for_dead_hero",":hero",":place"),
     (call_script, "script_update_troop_notes", ":hero"),
+
+    #Reassign any of the dead lord's companions to the faction marshall
+    (faction_get_slot, ":faction_marshall", ":fac", slot_faction_marshall),
+    (try_for_range, ":kingdom_companion", kingdom_companions_begin, kingdom_companions_end),
+        (troop_slot_eq, ":kingdom_companion", slot_troop_lord, ":hero"),
+	    (troop_set_slot, ":kingdom_companion", slot_troop_lord, ":faction_marshall"),
+    (try_end),
  ]),
 #script_build_mound_for_dead_hero
 ("build_mound_for_dead_hero",[
