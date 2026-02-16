@@ -2380,7 +2380,7 @@ game_menus = [
      (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")
     ]
    ),
-   ("camp_mvtest_expwar",[(eq,"$tld_war_began",0)],"{!}Start the War!",[(add_xp_to_troop,9000,"trp_player"), (display_message, "@{!}9000 XP added - now wait for the War...(assumes war starts at level 8)", 0x30FFC8),]),
+   ("camp_mvtest_expwar",[(eq,"$tld_war_began",0)],"{!}Start the War!",[(assign, "$tld_start_war_by_day_or_level", 0),(assign, "$tld_player_level_to_begin_war",1),(add_xp_to_troop,1000,"trp_player"), (display_message, "@{!}now wait for the War...", 0x30FFC8),]),
    ("camp_mvtest_evilwar",[(eq,"$tld_war_began",1)],"{!}Start the War of Two Towers! (defeat all good factions)",[
     (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
        (neq, ":cur_kingdom", "fac_player_supporters_faction"),
@@ -4860,13 +4860,15 @@ game_menus = [
 	[
  	 ("cheat_disabable",[],
 		"Disable cheat/modding options.",[(assign, "$cheat_mode", 0),	(jump_to_menu, "mnu_camp"),]),
+	 
+     ("cheat_back",[],"{!}Back to camp menu.",[(jump_to_menu, "mnu_camp"),]),
 
-     ("set_gondor_active",   [],
-      "{!}Set Gondor faction to active again.",
-      [(faction_set_slot, "fac_gondor", slot_faction_state, sfs_active),
-       (call_script, "script_create_kingdom_hero_party", "trp_knight_1_3", "p_town_minas_tirith"),
-       (display_message, "@{!}Set Gondor faction state to active, respawn Imrahil; deactiveated cheat mode again"),
-       (assign, "$cheat_mode", 0),	(jump_to_menu, "mnu_camp"),]),
+     # ("set_gondor_active",   [],
+      # "{!}Set Gondor faction to active again.",
+      # [(faction_set_slot, "fac_gondor", slot_faction_state, sfs_active),
+       # (call_script, "script_create_kingdom_hero_party", "trp_knight_1_3", "p_town_minas_tirith"),
+       # (display_message, "@{!}Set Gondor faction state to active, respawn Imrahil; deactiveated cheat mode again"),
+       # (assign, "$cheat_mode", 0),	(jump_to_menu, "mnu_camp"),]),
 
      ("cheat_original_version",   [],
       "{!}Display original savegame version.",
@@ -4975,13 +4977,13 @@ game_menus = [
       # "Fill merchants with faction stuff",
       # [(call_script,"script_fill_merchants_cheat"),(display_message,"@{!}DEBUG: Smiths just got stuffed!"),(jump_to_menu, "mnu_camp"),]),
 
-      ("camp_mod_5",   [],
-      "{!}Disable realistic saving",
-      [  ] + (is_a_wb_menu==1 and [
-        (allow_ironman, 0),
-        ] or []) + [
-         (display_message, "@{!}Ironman turned off"),
-      ]),
+      # ("camp_mod_5",   [],
+      # "{!}Disable realistic saving",
+      # [  ] + (is_a_wb_menu==1 and [
+        # (allow_ironman, 0),
+        # ] or []) + [
+         # (display_message, "@{!}Ironman turned off"),
+      # ]),
 
       ("camp_mod_6",   [],
       "{!}Reset weather (for scening)",
@@ -4990,7 +4992,6 @@ game_menus = [
 
 	 #("test1",[],"Test: pay upkeep now", [(call_script,"script_make_player_pay_upkeep")]),
 	 #("test2",[],"Test: make unpaid troop leave now", [(call_script, "script_make_unpaid_troop_go")]),
-	 ("cheat_back",[],"{!}Back to camp menu.",[(jump_to_menu, "mnu_camp"),]),	 
  ]),
 
 ( "drank_ent_water_human",0,# human player drank Ent water

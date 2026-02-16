@@ -2968,7 +2968,7 @@ itemsfile version 2
  itm_marker_berserker Trait:_Berserker Trait:_Berserker 1  prt_mesh_blood_3 0  4107 0 0 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_torch {!}Torch {!}Torch 1  orc_club_a 0  6356995 9223635919737716976 11 0 2.5 100 0 0 0 0 11264 95 0 95 0 256 523
+ itm_torch Torch Torch 1  orc_club_a 0  6356995 9223635919737716976 11 0 2.5 100 0 0 0 0 11264 95 0 95 0 256 523
 1
 -50  3 1955 3 0 60 0 1965 1 12 1965 1 15 
 

@@ -2400,24 +2400,24 @@ scripts = [
 	(try_end),	
 
     #Night troops 
-	(try_for_range, ":troop_id", soldiers_begin, soldiers_end),
-        (this_or_next|eq, ":troop_id", "trp_a5_dun_night_wolf"),
-        (this_or_next|eq, ":troop_id", "trp_ac5_dun_raven_rider"),
-        (this_or_next|eq, ":troop_id", "trp_i5_woodmen_night_guard"),
-        (this_or_next|eq, ":troop_id", "trp_a5_woodmen_night_stalker"),
-        (this_or_next|eq, ":troop_id", "trp_i5_corsair_night_raider"),
-        (this_or_next|eq, ":troop_id", "trp_a5_corsair_master_assassin"),
-        (this_or_next|eq, ":troop_id", "trp_i5_far_harad_panther_guard"),
-        (this_or_next|eq, ":troop_id", "trp_i6_frealaf_raider"),
-        (			  eq, ":troop_id", "trp_a5_blackroot_shadow_hunter"),
+	(try_for_range, ":troop_id", soldiers_begin, trp_last), #need the extended range because some of these are outside of soldiers range
+        (this_or_next|eq, ":troop_id", "trp_a5_dun_night_wolf"), 
+        (this_or_next|eq, ":troop_id", "trp_ac5_dun_raven_rider"), 
+        (this_or_next|eq, ":troop_id", "trp_i5_woodmen_night_guard"), 
+        (this_or_next|eq, ":troop_id", "trp_a5_woodmen_night_stalker"), 
+        (this_or_next|eq, ":troop_id", "trp_i5_corsair_night_raider"), 
+        (this_or_next|eq, ":troop_id", "trp_a5_corsair_master_assassin"), 
+        (this_or_next|eq, ":troop_id", "trp_i5_far_harad_panther_guard"), 
+        (this_or_next|eq, ":troop_id", "trp_i6_frealaf_raider"), 
+        (			  eq, ":troop_id", "trp_a5_blackroot_shadow_hunter"), 
         (troop_set_slot, ":troop_id", slot_troop_is_night_troop, 1),
         (troop_add_item, ":troop_id", "itm_marker_night_troop"),
     #Berserkers
     (else_try),
-        (this_or_next|eq, ":troop_id", "trp_i5_beorning_carrock_berserker"),
-        (this_or_next|eq, ":troop_id", "trp_i6_isen_uruk_berserker"),
-        (this_or_next|eq, ":troop_id", "trp_i5_gunda_orc_berserker"),
-        (			  eq, ":troop_id", "trp_i5_khand_pit_master"),
+        (this_or_next|eq, ":troop_id", "trp_i5_beorning_carrock_berserker"), 
+        (this_or_next|eq, ":troop_id", "trp_i6_isen_uruk_berserker"), 
+        (this_or_next|eq, ":troop_id", "trp_i5_gunda_orc_berserker"), 
+        (			  eq, ":troop_id", "trp_i5_khand_pit_master"), 
         (troop_set_slot, ":troop_id", slot_troop_is_berserker, 1),
         (troop_add_item, ":troop_id", "itm_marker_berserker"),
         (troop_set_slot, ":troop_id", slot_troop_hp_shield, 40),
@@ -25988,9 +25988,19 @@ command_cursor_scripts = [
     (try_end),
 
     (try_begin),
-        (lt, "$savegame_version", 4344),
-        (assign, "$savegame_version", 4344),
+        (lt, "$savegame_version", 4348),
+        (assign, "$savegame_version", 4348),
         (call_script, "script_assign_kingdom_companion_lords"),
+        
+        #reassign troll troll hp shields incase they were overwritten before
+        (try_for_range, ":trolls", trp_moria_troll, trp_multiplayer_profile_troop_male),
+            (call_script, "script_get_hp_shield_value", ":trolls"),
+        (try_end),
+        
+        #fix some troops having a HP shield by mistake
+        (try_for_range, ":troop", trp_mountain_goblin, trp_aragorn),
+            (troop_set_slot, ":troop", slot_troop_hp_shield, -1),
+        (try_end),
     (try_end),
     
     ] or []) + [ 
@@ -28126,6 +28136,7 @@ command_cursor_scripts = [
 
 #script_get_hp_shield_value
 #outputs HP shield value to reg0
+#currently only used for trolls
 ("get_hp_shield_value", 
 	[
 		(store_script_param_1, ":troop_id"),
@@ -28133,15 +28144,6 @@ command_cursor_scripts = [
 		(store_skill_level, ":ironflesh",  skl_ironflesh, ":troop_id",),
 		(store_mul, reg0, ":ironflesh", 40), # tweakable. Slot is updated via savegame compat script.
 		(troop_set_slot, ":troop_id", slot_troop_hp_shield, reg0),
-        
-        (troop_set_slot, "trp_player", slot_troop_hp_shield, 1),
-        
-        (try_for_range, ":NPC_hp_shield", "trp_npc1", heroes_begin),
-            (troop_set_slot, ":NPC_hp_shield", slot_troop_hp_shield, 1),
-        (try_end),	
-        (try_for_range, ":NPC_hp_shield", "trp_npc18", "trp_werewolf"),
-            (troop_set_slot, ":NPC_hp_shield", slot_troop_hp_shield, 1),
-        (try_end),
 	]),
 
 # script_cf_bear_form_selected
