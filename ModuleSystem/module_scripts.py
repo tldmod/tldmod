@@ -2362,6 +2362,11 @@ scripts = [
         (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
 	(try_end),
     
+    (try_for_range, ":has_hp_shield", kingdom_companions_begin, kingdom_companions_end),
+        (troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 100),
+        (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
+    (try_end),
+
 	(troop_set_slot, "trp_nazgul", slot_troop_hp_shield, 1000000),
 
 	(troop_set_slot, "trp_killer_witcher", slot_troop_hp_shield, 200),
@@ -25993,6 +25998,15 @@ command_cursor_scripts = [
         #fix some troops having a HP shield by mistake
         (try_for_range, ":troop", trp_mountain_goblin, trp_aragorn),
             (troop_set_slot, ":troop", slot_troop_hp_shield, -1),
+        (try_end),
+    (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4350),
+        (assign, "$savegame_version", 4350),
+        (try_for_range, ":has_hp_shield", kingdom_companions_begin, kingdom_companions_end),
+            (troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 100),
+            (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
         (try_end),
     (try_end),
     
