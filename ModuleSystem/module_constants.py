@@ -1788,7 +1788,7 @@ center_list = [
 	[icon_mfc_gondor],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 0, tld_siegable_always, tld_siege_battle_size_big),
 (p_town_henneth_annun, [scn_henneth_annun_center, scn_henneth_annun_castle, -1, -1, -1, -1, mesh_town_henneth_annun],
 	[trp_ithilien_captain, trp_smith_hannun, trp_merchant_hannun, trp_elder_henneth, pt_ithilien_recruits, trp_gondor_lord, trp_a4_ithilien_ranger,trp_a4_ithilien_ranger,trp_a5_ithilien_vet_ranger,trp_a6_ithilien_master_ranger], 
-	[icon_mfc_gondor],[500],[2,1,4,1,4,1], str_income_none, garrison_limit_low, 1, tld_siegable_never, tld_siege_battle_size_default),
+	[icon_mfc_gondor],[500],[2,1,4,1,4,1], str_income_none, 200, 1, tld_siegable_never, tld_siege_battle_size_default),
 (p_town_cair_andros, [scn_cair_andros_center, -1, -1, -1, -1, scn_cair_andros_siege, mesh_town_cair_andros],
 	[trp_ithilien_captain, trp_smith_candros, trp_merchant_candros, trp_elder_cairandros, pt_gondor_recruits, trp_gondor_lord, trp_i1_gon_levy,trp_i2_gon_watchman,trp_a4_ithilien_ranger,trp_i3_gon_footman], 
 	[icon_mfc_gondor],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 0, tld_siegable_always, tld_siege_battle_size_default),

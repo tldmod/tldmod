@@ -2283,7 +2283,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 [anyone,"player_hire_captain_1", 
   [(party_get_slot, ":captain_troop", "$current_town", slot_town_captain_available),
   (gt, ":captain_troop", 0),
-   (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), 
+   (call_script, "script_get_faction_rank", "$ambient_faction"), 
    (ge, reg0, 5),
   (str_store_troop_name, s5, ":captain_troop"),
   (assign, reg21, 8),
@@ -2292,9 +2292,9 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone,"player_hire_captain_1", 
   [#(party_slot_eq, "$current_town", slot_town_captain_available, 0),
-   (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), 
+   (call_script, "script_get_faction_rank", "$ambient_faction"), 
    (lt, reg0, 5),
-   (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), 
+   (call_script, "script_get_rank_title_to_s24", "$ambient_faction"), 
   ], 
   "You are a mere {s24}. What would you do with a captain?", "close_window", [(call_script, "script_stand_back")]],
   
@@ -2305,7 +2305,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone|plyr,"player_hire_captain_2", 
   [ 
-    (faction_get_slot, reg20, "$g_talk_troop_faction", slot_faction_influence),
+    (faction_get_slot, reg20, "$ambient_faction", slot_faction_influence),
     (ge, reg20, reg21), #reg21 is inf cost
   ], 
   "I will have him.", "player_hire_captain_3", []],
@@ -2320,7 +2320,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
   [
     (party_get_slot, ":captain_troop",  "$current_town", slot_town_captain_available),
     (party_set_slot, "$current_town", slot_town_captain_available, 0),
-    (call_script, "script_spend_influence_of", reg21, "$g_talk_troop_faction"),
+    (call_script, "script_spend_influence_of", reg21, "$ambient_faction"),
     (party_add_members, "p_main_party", ":captain_troop", 1),
     (str_store_troop_name, s5, ":captain_troop"),
     (display_message, "@One {s5} joined your party."),

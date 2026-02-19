@@ -2000,7 +2000,7 @@ game_menus = [
     (try_end),
     (str_store_string, s1, "@_________Faction strengths report:^{s2}"),
     (assign, reg1, "$g_fac_str_siegable"),
-    (str_store_string, s1, "@{s1}^^Factions are normally sieged when below {reg1} strength."),
+    (str_store_string, s1, "@{s1}^^Factions are normally sieged when below {reg1} strength. (Some centers can always be sieged.)"),
     ],
     [("continue",[],"Continue...", [(jump_to_menu, "mnu_reports")])]
  ),
@@ -10250,6 +10250,10 @@ game_menus = [
         
         
         (faction_get_slot, ":capital", "$players_kingdom", slot_faction_capital),
+        (try_begin), #Minas Morgul is prettier than Morannon
+            (eq, "$players_kingdom", "fac_mordor"),
+            (assign, ":capital", "p_town_minas_morgul"),
+        (try_end),
         
         #move faction lords to capital, respawn if necessary
         (try_for_range, ":lord", heroes_begin, heroes_end), 

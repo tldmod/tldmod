@@ -778,6 +778,8 @@ scripts = [
 ("game_get_join_cost",
   [ (store_script_param_1, ":troop_id"),
 	(store_character_level, ":troop_level", ":troop_id"),
+    (val_sub, ":troop_level", 5),
+    (val_max, ":troop_level", 1),
     (party_get_slot, ":relation", "$current_town", slot_center_player_relation),
 	(call_script, "script_game_get_troop_wage", ":troop_id",0),
 	(store_mul, ":join_cost", reg0, ":troop_level"), # join cost: Wage*troop level: Higher level troops are expensive to recruit
@@ -792,6 +794,8 @@ scripts = [
     (store_sub, ":relation_mod", 120, ":relation"),
     (val_mul,  ":join_cost", ":relation_mod"),
     (val_div, ":join_cost", 100),
+    
+    (val_add, ":join_cost", 5), #for low-tier troops
     
     # trait discounts: 75% of the original price
     (store_troop_faction, ":troop_faction", ":troop_id"),
@@ -2577,6 +2581,7 @@ scripts = [
             (party_get_slot, ":t_1_troop", ":town", slot_town_guard_troop),
             (troop_get_upgrade_troop, ":t_2_troop", ":t_1_troop", 0),
         (try_end),
+        (store_character_level, ":base_troop_level", ":t_1_troop"), #Ithilien rangers start at t4
 
 		#Remove high level troops every day (counters volunteer training going overboard)
         #count number of basic troops available
@@ -2592,11 +2597,17 @@ scripts = [
                 (party_stack_get_size, ":stack_size", ":volunteers", ":i_stack"),
                 (try_begin), #limit number of higher level volunteers
                     (gt, ":troop_level", 12), #greater than t2
+                    (gt, ":troop_level", ":base_troop_level"), #Ithilien rangers start at t4
                     (gt, ":stack_size", 2),
                     (party_remove_members_wounded_first, ":volunteers", ":stack_troop", 1),
                     (party_add_members, ":volunteers", ":t_2_troop", 1), #we stay fair - add a t2 troop to volunteers
+                    (gt, ":stack_size", 6), #for bigger stacks, reduce by 1/4th additionally
+                    (val_div, ":stack_size", 4),
+                    (party_remove_members_wounded_first, ":volunteers", ":stack_troop", ":stack_size"),
+                    (party_add_members, ":volunteers", ":t_2_troop", ":stack_size"), #we stay fair - add a t2 troop to volunteers
                 (else_try),
-                    (le, ":troop_level", 12), #t1 and t2, t3 for evil
+                    (this_or_next|le, ":troop_level", 12), #t1 and t2, t3 for evil
+                    (le, ":troop_level", ":base_troop_level"), #Ithilien rangers start at t4
                     (val_add, ":basic_troops", ":stack_size"),
                 (try_end),
                 (try_begin),
@@ -2607,10 +2618,13 @@ scripts = [
                     (assign, ":highest_level_stack_size", ":stack_size"),
                 (try_end),
             (try_end),
-            (ge, ":highest_level", 6), #affects t2 troops (orcs: t3)
+            (ge, ":highest_level", 12), #greater than t2
             (val_mul, ":highest_level", ":highest_level_stack_size"),
             (store_random_in_range, ":random", 0, 100),
             (le, ":random", ":highest_level"),
+            (party_remove_members_wounded_first, ":volunteers", ":highest_level_troop", 1),
+            (party_add_members, ":volunteers", ":t_1_troop", 1), #add a basic troop to volunteers
+            (gt, ":highest_level_stack_size", 5),
             (party_remove_members_wounded_first, ":volunteers", ":highest_level_troop", 1),
             (party_add_members, ":volunteers", ":t_1_troop", 1), #add a basic troop to volunteers
             #(str_store_party_name, s1, ":town"),
@@ -17191,8 +17205,23 @@ scripts = [
          (try_end),
          (val_add, ":num_enemies", 1),
        (try_end),
-	# Maybe we could add more information about the factions? Like where they come from. -CC
+       
+       #faction strength report
+        (call_script, "script_faction_strength_string_to_s23", ":faction_no"),
+        (faction_get_slot, reg10, ":faction_no", slot_faction_strength),
+        #(faction_get_slot, reg11, ":faction_no", slot_faction_rank),
+        (faction_get_slot, reg12, ":faction_no", slot_faction_influence),
+        (faction_get_slot, reg13, ":faction_no", slot_faction_respoint),
+      	(call_script, "script_get_faction_rank", "fac_gondor"), 
+      	(assign, reg14, reg0),
+		(call_script, "script_get_rank_title_to_s24", ":faction_no"),
        (add_faction_note_from_sreg, ":faction_no", 0, "@{s5} is ruled by {s6}.^It controls {s8}.^Its commanders are {s10}.^{s5} is at war with {s12}.", 0),
+       (add_faction_note_from_sreg, ":faction_no", 1, "@{s5}'s strength is considered {s23} ({reg10}).", 0),
+       (try_begin),
+        (store_relation, ":rel", ":faction_no", "$players_kingdom"),
+        (ge, ":rel", 0),
+        (add_faction_note_from_sreg, ":faction_no", 2, "@You are {s24} ({reg14}). ({reg12} influence, {reg13} res. points.)", 0),
+       (try_end),
      (else_try),
        (is_between, ":faction_no", kingdoms_begin, kingdoms_end),
        (faction_slot_eq, ":faction_no", slot_faction_state, sfs_defeated),
@@ -17210,7 +17239,8 @@ scripts = [
 #       (is_between, ":faction_no", "fac_gondor", kingdoms_end), #Excluding player kingdom
 #       (add_faction_note_tableau_mesh, ":faction_no", "tableau_faction_note_mesh"),
 #     (else_try),
-       (add_faction_note_tableau_mesh, ":faction_no", "tableau_faction_note_mesh_banner"),
+       (add_faction_note_tableau_mesh, ":faction_no", "tableau_faction_note_mesh"),
+       #(add_faction_note_tableau_mesh, ":faction_no", "tableau_faction_note_mesh_banner"),
 #     (try_end),
 
       ] + (is_a_wb_script==1 and [
@@ -17224,7 +17254,7 @@ scripts = [
       ] or [])
 ),
 
-#script_update_faction_traveler_notes
+#script_update_faction_traveler_notes #unused
 # INPUT: faction_no
 ("update_faction_traveler_notes",
     [(store_script_param, ":faction_no", 1),
@@ -23381,6 +23411,11 @@ scripts = [
                 (set_visitor, 8, ":cur_troop"), #only one companion NPC per town!
             (try_end),
         (try_end),
+        
+        (try_begin),
+            (eq, "$current_town", "p_town_troll_cave"),
+            (set_visitor, 8, "trp_easter_egg_troll"), 
+        (try_end),
 
         (party_get_slot, ":spawned_troop", "$current_town", slot_town_weaponsmith),
         (try_begin),
@@ -26009,6 +26044,8 @@ command_cursor_scripts = [
             (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
         (try_end),
     (try_end),
+    
+    (call_script, "script_update_all_notes"),
     
     ] or []) + [ 
 ]),
