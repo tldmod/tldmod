@@ -2362,6 +2362,11 @@ scripts = [
         (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
 	(try_end),
     
+    (try_for_range, ":has_hp_shield", kingdom_companions_begin, kingdom_companions_end),
+        (troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 100),
+        (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
+    (try_end),
+
 	(troop_set_slot, "trp_nazgul", slot_troop_hp_shield, 1000000),
 
 	(troop_set_slot, "trp_killer_witcher", slot_troop_hp_shield, 200),
@@ -22695,13 +22700,6 @@ scripts = [
 	(display_message, "@News_has_arrived_that_{s1}_of_{s2}_was_killed_in_battle_by_the_forces_of_{s28}!", ":news_color"),
 	(call_script,"script_build_mound_for_dead_hero",":hero",":place"),
     (call_script, "script_update_troop_notes", ":hero"),
-
-    #Reassign any of the dead lord's companions to the faction marshall
-    (faction_get_slot, ":faction_marshall", ":fac", slot_faction_marshall),
-    (try_for_range, ":kingdom_companion", kingdom_companions_begin, kingdom_companions_end),
-        (troop_slot_eq, ":kingdom_companion", slot_troop_lord, ":hero"),
-	    (troop_set_slot, ":kingdom_companion", slot_troop_lord, ":faction_marshall"),
-    (try_end),
  ]),
 #script_build_mound_for_dead_hero
 ("build_mound_for_dead_hero",[
@@ -26000,6 +25998,15 @@ command_cursor_scripts = [
         #fix some troops having a HP shield by mistake
         (try_for_range, ":troop", trp_mountain_goblin, trp_aragorn),
             (troop_set_slot, ":troop", slot_troop_hp_shield, -1),
+        (try_end),
+    (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4350),
+        (assign, "$savegame_version", 4350),
+        (try_for_range, ":has_hp_shield", kingdom_companions_begin, kingdom_companions_end),
+            (troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 100),
+            (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
         (try_end),
     (try_end),
     
