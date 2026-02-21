@@ -2168,8 +2168,7 @@ scripts = [
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
 	(assign, "$tld_option_max_parties", 1500), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
 	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
-	(assign, "$gondor_reinforcement_event",0), #kham - Gondor Reinforcement Event
-	(assign, "$gondor_reinforcement_event_menu",0), #kham - Gondor Reinforcement Event
+
 	(assign, "$first_time_town", 0), #kham - rumour tutorial box
 	(assign, "$formations_tutorial", 0), #Kham - Formations Tutorial.
 	(assign, "$player_allowed_siege",0), #Kham - Player Initiated Sieges
@@ -2191,43 +2190,47 @@ scripts = [
       
     (assign, "$hold_f1", 0),  
 	(assign, "$dormant_spawn_radius", 0),
+    (assign, "$gondor_reinforcement_event",0), #unused
+	(assign, "$gondor_reinforcement_event_menu",0), #unused
 
 	(val_mul, "$hold_f1", "$dormant_spawn_radius"),
     (val_mul, "$hold_f1", "$allies_leadership"),
     (val_mul, "$dormant_spawn_radius", "$hold_f1"),
     (val_mul, "$dormant_spawn_radius", "$tld_option_bow_shield"), #wb only
     (val_mul, "$dormant_spawn_radius", "$allies_leadership"), #wb only
-	(val_mul, "$hold_f1", "$ballista_action", ),
-	(val_mul, "$hold_f1", "$ballista_fire", ),
-	(val_mul, "$hold_f1", "$missile_count", ),
-	(val_mul, "$hold_f1", "$missile_flying", ),
-	(val_mul, "$hold_f1", "$ballista_instance", ),
-	(val_mul, "$hold_f1", "$missile_max", ),
-	(val_mul, "$hold_f1", "$missile_flying_instance", ),
-	(val_mul, "$hold_f1", "$stonelobbing_state", ),
-	(val_mul, "$hold_f1", "$stone_horizontal_velocity", ),
-	(val_mul, "$hold_f1", "$stone_vertical_velocity", ),
-	(val_mul, "$hold_f1", "$stone_rotation_x", ),
-	(val_mul, "$hold_f1", "$stone_rotation_y", ),
-	(val_mul, "$hold_f1", "$stone_rotation_z", ),
-	(val_mul, "$hold_f1", "$stone_picked_instance", ),
-	(val_mul, "$hold_f1", "$battlemap_min_x", ),
-	(val_mul, "$hold_f1", "$battlemap_min_y", ),
-	(val_mul, "$hold_f1", "$battlemap_max_x", ),
-	(val_mul, "$hold_f1", "$battlemap_max_y", ),
-	(val_mul, "$hold_f1", "$rescue_wall_battle", ),
-	(val_mul, "$hold_f1", "$rescue_courtyard_scene_2", ),
-	(val_mul, "$hold_f1", "$wall_mounted_troop1", ),
-	(val_mul, "$hold_f1", "$wall_mounted_troop3", ),
-	(val_mul, "$hold_f1", "$wall_mounted_troop5", ),
-	(val_mul, "$hold_f1", "$wall_missile_troop1", ),
-	(val_mul, "$hold_f1", "$wall_missile_troop2", ),
-	(val_mul, "$hold_f1", "$wall_missile_troop3", ),
-	(val_mul, "$hold_f1", "$wall_missile_troop4", ),
-	(val_mul, "$hold_f1", "$wall_missile_troop5", ),
-	(val_mul, "$hold_f1", "$animal_is_present", ),
-	(val_mul, "$hold_f1", "$player_team_updated", ),
-	(val_mul, "$hold_f1", "$terrain_condition", ),
+	(val_mul, "$hold_f1", "$ballista_action"),
+	(val_mul, "$hold_f1", "$ballista_fire"),
+	(val_mul, "$hold_f1", "$missile_count"),
+	(val_mul, "$hold_f1", "$missile_flying"),
+	(val_mul, "$hold_f1", "$ballista_instance"),
+	(val_mul, "$hold_f1", "$missile_max"),
+	(val_mul, "$hold_f1", "$missile_flying_instance"),
+	(val_mul, "$hold_f1", "$stonelobbing_state"),
+	(val_mul, "$hold_f1", "$stone_horizontal_velocity"),
+	(val_mul, "$hold_f1", "$stone_vertical_velocity"),
+	(val_mul, "$hold_f1", "$stone_rotation_x"),
+	(val_mul, "$hold_f1", "$stone_rotation_y"),
+	(val_mul, "$hold_f1", "$stone_rotation_z"),
+	(val_mul, "$hold_f1", "$stone_picked_instance"),
+	(val_mul, "$hold_f1", "$battlemap_min_x"),
+	(val_mul, "$hold_f1", "$battlemap_min_y"),
+	(val_mul, "$hold_f1", "$battlemap_max_x"),
+	(val_mul, "$hold_f1", "$battlemap_max_y"),
+	(val_mul, "$hold_f1", "$rescue_wall_battle"),
+	(val_mul, "$hold_f1", "$rescue_courtyard_scene_2"),
+	(val_mul, "$hold_f1", "$wall_mounted_troop1"),
+	(val_mul, "$hold_f1", "$wall_mounted_troop3"),
+	(val_mul, "$hold_f1", "$wall_mounted_troop5"),
+	(val_mul, "$hold_f1", "$wall_missile_troop1"),
+	(val_mul, "$hold_f1", "$wall_missile_troop2"),
+	(val_mul, "$hold_f1", "$wall_missile_troop3"),
+	(val_mul, "$hold_f1", "$wall_missile_troop4"),
+	(val_mul, "$hold_f1", "$wall_missile_troop5"),
+	(val_mul, "$hold_f1", "$animal_is_present"),
+	(val_mul, "$hold_f1", "$player_team_updated"),
+	(val_mul, "$hold_f1", "$terrain_condition"),
+    (val_mul, "$hold_f1", "$gondor_reinforcement_event"),
+	(val_mul, "$hold_f1", "$gondor_reinforcement_event_menu"),
 
 	#Kham - Squelch compiler warnings END
 	
@@ -5927,7 +5930,7 @@ scripts = [
             (assign, reg84, ":int_xp_bonus"),
 
             (val_max, ":int_xp_bonus", 1),
-            (add_xp_to_troop, ":int_xp_bonus", ":stack_troop_new", ),
+            (add_xp_to_troop, ":int_xp_bonus", ":stack_troop_new"),
             
             #Debug
             # (try_begin),
@@ -28607,7 +28610,7 @@ command_cursor_scripts = [
     (store_script_param, ":destination",2),
     (store_script_param, ":reinforcement_waves",3),
     
-    (store_faction_of_party, ":faction", ":home_center", ),
+    (store_faction_of_party, ":faction", ":home_center"),
       #(party_get_slot, ":center_scouts", ":home_center", slot_center_spawn_scouts),
       (set_spawn_radius, 1),
       (spawn_around_party, ":home_center", "pt_none"),

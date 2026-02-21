@@ -4311,8 +4311,8 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 ###InVain - Campaign Outro #####
 [anyone, "start", [
   (check_quest_active, "qst_tld_introduction"),
-  (quest_slot_eq, "qst_tld_introduction", slot_quest_target_troop, "$g_talk_troop"),
-  #(faction_slot_eq,"$players_kingdom",slot_faction_leader,"$g_talk_troop"),
+  #(quest_slot_eq, "qst_tld_introduction", slot_quest_target_troop, "$g_talk_troop"), #for some reason, the quest doesn't seem to trigger reliably, so use different conditions here
+  (faction_slot_eq,"$players_kingdom",slot_faction_leader,"$g_talk_troop"),
   (eq, "$tld_war_began", 100),
   (assign, "$tld_war_began", 101), #this stops the cheering
   (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"),

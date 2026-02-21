@@ -1,4 +1,4 @@
-1798
+1795
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -959,7 +959,6 @@ qstr_{***}SE_advance_camps_s {***}SE_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_{***}C_advance_camps_sp {***}C_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_{***}N_advance_camps_sp {***}N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_{***}Gandalf_would_lik {***}Gandalf_would_like_to_have_a_little_chat!
-qstr_{***}Kham_Cheat_Mode_O {***}Kham_Cheat_Mode_ON!
 qstr_{***}1_troll_added! {***}1_troll_added!
 qstr_{***}Raft_Men_party_en {***}Raft_Men_party_enabled._They_are_down_River_Running
 qstr_{***}Orc_Horde_Spawned {***}Orc_Horde_Spawned!
@@ -1220,8 +1219,6 @@ qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_Advance_Camp_in_{s15
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_{playername}_s_Reser {playername}'s_Reserves
 qstr_{***}{reg70}___Last_St {***}{reg70}_-_Last_Stand
-qstr_Gondor_has_called_fo Gondor_has_called_for_aide!
-qstr_Gondor_is_accompanyi Gondor_is_accompanying_the_marshall!
 qstr_{s5}_has_stopped_fol {s5}_has_stopped_following_you.
 qstr_You_have_{reg69}_all You_have_{reg69}_ally_party_following_you
 qstr_You_have_{reg69}_ally You_have_{reg69}_ally_parties_following_you

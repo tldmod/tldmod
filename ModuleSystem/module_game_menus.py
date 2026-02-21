@@ -3633,7 +3633,7 @@ game_menus = [
 	"{!}^^^^^Click on an option to toggle.^^^Tweaks Gondor to have more troops in a party, gives them more hosts, gives them hosts more frequently, and lets Gondor lords wait longer to gather.^^Have to wait for the trigger to occur","none",[],
     [
     ("camp_khamtest_back",[],"{!}Back",[(jump_to_menu, "mnu_dev_menu")]),
-    ("enable_kham_cheat",[],"{!}Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@{!}Kham Cheat Mode ON!")]),
+    #("enable_kham_cheat",[],"{!}Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@{!}Kham Cheat Mode ON!")]),
     ] + (is_a_wb_menu==1 and [
     #("action_view_all_items",[],"{!}View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
     ("set_item_modifier",[],"{!}set all wielded items to modifier",[
@@ -10675,6 +10675,7 @@ game_menus = [
 
 
 ## Kham - Gondor Reinforcement Event Menu - Start
+#InVain: Unused
 
 ("gondor_reinforcement_event",0,
    "^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.",
