@@ -165,6 +165,9 @@ morale_scripts = [
 
 	# script_cf_agent_get_morale
 	# This script calculates an agents morale, and stores it in reg1.
+    # exclusively used in script_rout_allies and script_rout_enemies
+    # InVain: Be aware that this actually stores the chance to flee! So the higher the output, the lower the morale
+        # stored output in slot_agent_flee_chance
 	# param0 = agent
 	("cf_agent_get_morale", 
 	[
@@ -341,7 +344,7 @@ morale_scripts = [
 			(try_begin),
 				(teams_are_enemies, ":team_a", "$nazgul_team"),
 				#(store_mul, ":nazgul_modifier", "$nazgul_in_battle", 20),
-				(val_add, reg1, 20),
+				(val_add, reg1, 10), # InVain: Reduced from 20, Nazgul now also has a temporary coherence effect
 			(else_try),
 				#(store_mul, ":nazgul_modifier", "$nazgul_in_battle", 20),
 				(val_sub, reg1, 20),
@@ -385,11 +388,26 @@ morale_scripts = [
 		(try_end),
 
 		(try_begin),
-			(call_script, "script_count_ally_agents_around_agent", ":agent_no", 600),
+			(call_script, "script_count_ally_agents_around_agent", ":agent_no", 600), #Invain: NESTED AGENT LOOP!
 			(store_mul, ":morale_bonus", reg0, 3),
 			(val_sub, reg1, ":morale_bonus"),
 		(try_end),
 
+        (try_begin), #small chance for horror animation when morale is low
+            (gt, reg1, 75),
+       		(store_random_in_range,":rand",1,1000),
+            (lt, ":rand", reg1),
+			(agent_get_horse, ":horse", ":agent_no"),
+			(try_begin),
+				#(gt, ":horse", -1),
+          			#(agent_set_animation, ":agent_no", "anim_nazgul_noooo_mounted_short"),
+			#(else_try),
+			(le, ":horse", -1),
+          	(agent_set_animation, ":agent_no", "anim_nazgul_noooo_short"),
+			(try_end),
+		(try_end),
+
+    (agent_set_slot, ":agent_no", slot_agent_flee_chance, reg1), #let's store the output for a few seconds so we don't have to recalc it every time we need it. 
 
 	]),
 
@@ -855,10 +873,18 @@ morale_scripts = [
      ]),
 
   #script_morale_check
+  #allows individual troops to flee if coherence is lower than 75%
+  #but not if full routing already happens
     ("morale_check",
     [
+    #copied from below
+    (assign,":ally","$allies_coh"),
+	(assign,":enemy","$enemies_coh"),
+	(val_sub,":ally",":enemy"),
+    
 	(try_begin),
 		(lt,"$allies_coh",75),
+        (gt,":ally",tld_morale_rout_allies),
         (store_random_in_range,":routed",1,101),
         (assign,":chance_ply",80),
         (val_sub,":chance_ply","$allies_coh"),
@@ -871,6 +897,7 @@ morale_scripts = [
 
 	(try_begin),
         (lt,"$enemies_coh",75),
+        (lt,":ally",tld_morale_rout_enemies),
         (store_random_in_range,":routed",1,101),
         (assign,":chance_ply",80),
         (val_sub,":chance_ply","$enemies_coh"),
@@ -898,7 +925,7 @@ morale_scripts = [
 	(val_sub,":ally",":enemy"),
 
 	(try_begin),
-		(ge,":ally",tld_morale_rout_enemies),		
+		(ge,":ally",tld_morale_rout_enemies),
 		(call_script, "script_rout_enemies"),
 
 		(store_mul, ":enemies_ratio", reg1, 100),
@@ -919,6 +946,11 @@ morale_scripts = [
 				(gt, ":enemies_ratio", 10),
 				(display_message,"@A few of your enemies are fleeing from battle.", color_good_news),  
 			(try_end),
+            
+            #careful here: intended slight feedback loop
+            (val_div, ":enemies_ratio", 5),
+            (val_add, "$allies_coh_modifier", ":enemies_ratio"),
+            (val_sub, "$enemies_coh_modifier", ":enemies_ratio"),
 		(try_end),
 
 		#(assign, reg0, ":enemies_ratio"),
@@ -946,6 +978,11 @@ morale_scripts = [
 				(gt, ":allies_ratio", 10),
 				(display_message,"@A few of your troops are fleeing from battle.",color_bad_news),  
 			(try_end),
+            
+            #careful here: intended slight feedback loop
+            (val_div, ":allies_ratio", 5),
+            (val_sub, "$allies_coh_modifier", ":enemies_ratio"),
+            (val_add, "$enemies_coh_modifier", ":enemies_ratio"),
 		(try_end),
 	(try_end),
      ]),
@@ -956,6 +993,7 @@ morale_scripts = [
 ##==============================================##
 
     #script_flee_allies
+    #UNUSED
     ("flee_allies",
     [
 	(call_script, "script_find_exit_position_at_pos4", -1),
@@ -1000,6 +1038,7 @@ morale_scripts = [
      ]),
 
     #script_flee_enemies
+    #UNUSED
 	("flee_enemies",
 	[
 	(call_script, "script_find_exit_position_at_pos4", -1),
@@ -1063,13 +1102,14 @@ morale_scripts = [
 		#(assign, reg1, ":routed"),
 		#(display_message, "@{reg1} less than {reg0}"),
         (try_begin),
-			(call_script, "script_cf_agent_get_morale", ":agent"),
-            (assign, ":chance_ply", reg1),
+			# (call_script, "script_cf_agent_get_morale", ":agent"), #we do this now when calculating coherence
+            # (assign, ":chance_ply", reg1),
+            (agent_get_slot, ":chance_ply", ":agent", slot_agent_flee_chance), #InVain
             (store_random_in_range,":routed",0,101),
             (le,":routed",":chance_ply"),
 		   	(agent_slot_eq, ":agent", slot_agent_routed, 0),
 		   	(agent_set_slot, ":agent", slot_agent_routed, 1),
-            (agent_get_position,pos2,":agent"),
+            (agent_get_position,pos2,":agent"), #not sure what pos2 is used for
 		 	(position_move_z,pos2,200,0),
             (agent_clear_scripted_mode,":agent"),
                     
@@ -1105,7 +1145,7 @@ morale_scripts = [
 	(try_end),
 	(assign, reg0, ":allies_total"),
 	(assign, reg1, ":allies_routed"),	
-    (val_sub, "$allies_coh_modifier", ":allies_routed")
+    #(val_sub, "$allies_coh_modifier", ":allies_routed") #we do this in "script_rout_check"
      ]),
 
     #script_rout_enemies
@@ -1123,15 +1163,16 @@ morale_scripts = [
          	(neg|agent_is_ally,":agent"),
 		(val_add, ":enemies_total", 1),
 	 	(try_begin),
-			(call_script, "script_cf_agent_get_morale", ":agent"),
-         		(assign, ":chance_ply", reg1),
-         		(store_random_in_range,":routed",0,101),
-                   	(le,":routed",":chance_ply"),
+			# (call_script, "script_cf_agent_get_morale", ":agent"),
+         	# (assign, ":chance_ply", reg1),
+            (agent_get_slot, ":chance_ply", ":agent", slot_agent_flee_chance), #InVain
+            (store_random_in_range,":routed",0,101),
+            (le,":routed",":chance_ply"),
 		   	(agent_slot_eq, ":agent", slot_agent_routed, 0),
 		   	(agent_set_slot, ":agent", slot_agent_routed, 1),
-                	(agent_get_position,pos2,":agent"),
+            (agent_get_position,pos2,":agent"),
 		 	(position_move_z,pos2,200,0),
-                        (agent_clear_scripted_mode,":agent"),
+            (agent_clear_scripted_mode,":agent"),
 			        
 			        ] + ((is_a_wb_script==1) and [
 						
@@ -1164,7 +1205,7 @@ morale_scripts = [
 	(try_end),
 	(assign, reg0, ":enemies_total"),
 	(assign, reg1, ":enemies_routed"),
-    (val_sub, "$enemies_coh_modifier", ":enemies_routed")
+    #(val_sub, "$enemies_coh_modifier", ":enemies_routed") #we do this in "script_rout_check"
     ]),  
 
   
@@ -1185,11 +1226,18 @@ morale_scripts = [
  	(assign,":num_allies_routed",0),
 	(assign,":num_enemies_routed",0),
  	(assign,":leadership_allies",0),
-	(assign,":leadership_enemies",0),      
+	(assign,":leadership_enemies",0),
+    (assign, ":num_banner_carriers", 0),
+    (assign, ":num_captains", 0),
+    
+    (assign, ":allies_cohesion_old", "$allies_coh"),
+    (assign, ":enemies_cohesion_old", "$enemies_coh"),
 
 	(try_for_agents,":agent"), #allies
 		(agent_is_human,":agent"),
         (agent_is_alive, ":agent"),
+        (call_script, "script_cf_agent_get_morale", ":agent"), #InVain, stores slot_agent_flee_chance
+        
 		#(store_agent_hit_points,":hitpoints",":agent",0), #Invain: get rid of hitpoints on coherence level, only matters for agent morale 
 		(agent_get_troop_id,":troop_type", ":agent"),
 		(store_character_level, ":troop_level", ":troop_type"),
@@ -1209,6 +1257,7 @@ morale_scripts = [
             (try_end),
             (try_begin),
                 (troop_is_hero,":troop_type"),
+                (val_add, ":num_captains", 1),
                 (store_skill_level, ":troop_leaderskip", skl_leadership, ":troop_type"),
                 (val_add, ":leadership_allies", ":troop_leaderskip"),
                 (this_or_next|eq, ":troop_type", "trp_player"), #double bonus for player or lords
@@ -1225,10 +1274,12 @@ morale_scripts = [
                 (this_or_next|eq, ":troop_type", "trp_i5_greenwood_standard_bearer"),
                 (eq, ":troop_type", "trp_i5_greenwood_standard_bearer"),
                 (val_add, ":leadership_allies", 2),
+                (val_add, ":num_banner_carriers", 1),
             (try_end),
             (try_begin),
                 (is_between, ":troop_type", "trp_greenwood_captain", "trp_ithilien_captain"),
                 (val_add, ":leadership_allies", 3),
+                (val_add, ":num_captains", 1),
             (try_end),
         
         (else_try), # enemies
@@ -1410,6 +1461,24 @@ morale_scripts = [
 		(eq, ":num_allies", 0),
 		(assign, "$allies_coh", 0),
 	(try_end),
+    
+    (store_mission_timer_a, ":time"),
+    (gt, ":time", 180), #3 minutes
+    (store_random_in_range, ":notification", 0, 4),
+    (eq, ":notification", 0),
+    #has cohesion changed?
+    (val_sub, ":allies_cohesion_old", "$allies_coh"),
+    (val_sub, ":enemies_cohesion_old", "$enemies_coh"),
+    (this_or_next|neg|is_between, ":allies_cohesion_old", -2, 2),
+    (neg|is_between, ":enemies_cohesion_old", -2, 2),
+    
+    (call_script, "script_healthbars"),
+    (assign, reg5, ":num_captains"),
+    (assign, reg6, ":num_banner_carriers"),
+    (try_begin),
+        (gt, reg5+reg6, 0),
+        (display_message, "@Your side has {reg5} captains and {reg6} banner carriers.", 0x6495ed),
+     (try_end),
      ]),  
 
   #script_normalize_coherence_modifier by InVain: Reduces any temporary positive or negative coherence effects by 2/3 per tick

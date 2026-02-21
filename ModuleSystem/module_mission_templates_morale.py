@@ -27,7 +27,7 @@ tld_morale_triggers = [
             (assign, "$allies_coh_modifier", 50), #set initial coherence bonus, will lower over time
             (assign, "$enemies_coh_modifier", 50),            
 			(call_script, "script_coherence"),    
-			(call_script, "script_healthbars"),
+			(call_script, "script_healthbars"), #called within script_coherence too, but only after more than 3 minutes
 		(try_end),
         	#(assign,"$new_enemy_kills_a",0),
 		#(assign,"$new_enemy_kills",0),
@@ -46,11 +46,14 @@ tld_morale_triggers = [
 	# Rally your troops, five second wait inbetween. -CC #InVain: Increase to 15, so you can't spam
      	(0, 0, 15, [(eq, "$tld_option_morale", 1),(get_player_agent_no, ":player"),(agent_is_alive, ":player"),(key_clicked, key_v)], 
 	[
+        (set_fixed_point_multiplier, 100),
 		(assign,":ally","$allies_coh"),
 		(assign,":enemy","$enemies_coh"),
 		(val_sub,":ally",":enemy"),
 		(assign, ":continue", 0),
         (assign, ":rallied_agents", 0),
+        (assign, ":num_banner_carriers", 0),
+        (assign, ":num_captains", 0),
         (store_mission_timer_a, ":time"),
             
 		(try_begin),
@@ -105,15 +108,6 @@ tld_morale_triggers = [
 			(try_end),
             
             (agent_get_position, pos90, ":player"),
-            (set_fixed_point_multiplier, 100),
-
-            ] + ((is_a_wb_mt==1) and [ #
-            (try_for_agents, ":agent", pos90, ":rally_range"),
-                (neq, ":agent", ":player"),
-				(agent_is_human, ":agent"),
-				(agent_is_alive, ":agent"),
-				(agent_is_ally, ":agent"),
-            ] or [
             (try_for_agents, ":agent"),
                 (neq, ":agent", ":player"),
 				(agent_is_human, ":agent"),
@@ -122,7 +116,33 @@ tld_morale_triggers = [
                 (agent_get_position, pos0, ":agent"),
                 (get_distance_between_positions, ":dist", pos0, pos90),
                 (lt,":dist", ":rally_range"),
-            ]) + [
+                (agent_get_troop_id, ":troop_type", ":agent"),
+                
+                #any heroes or special troops expand the rally range
+                (try_begin),
+                    (troop_is_hero,":troop_type"),
+                    (store_skill_level, ":troop_leaderskip", "skl_leadership", ":troop_type"),
+                    (assign, ":leadership_allies", ":troop_leaderskip"),
+                    (val_add, ":num_captains", 1),
+                (try_end),
+                (try_begin),
+                    (this_or_next|eq, ":troop_type", "trp_lothlorien_standard_bearer"),
+                    (this_or_next|eq, ":troop_type", "trp_i5_greenwood_standard_bearer"),
+                    (this_or_next|eq, ":troop_type", "trp_i6_rivendell_standard_bearer"),
+                    (this_or_next|eq, ":troop_type", "trp_i5_isen_uruk_standard_bearer"),
+                    (this_or_next|eq, ":troop_type", "trp_i5_mordor_uruk_standard_bearer"),
+                    (this_or_next|eq, ":troop_type", "trp_i5_greenwood_standard_bearer"),
+                    (eq, ":troop_type", "trp_i5_greenwood_standard_bearer"),
+                    (assign, ":leadership_allies", 2),
+                    (val_add, ":num_banner_carriers", 1),
+                (try_end),
+                (try_begin),
+                    (is_between, ":troop_type", "trp_greenwood_captain", "trp_ithilien_captain"),
+                    (assign, ":leadership_allies", 3),
+                    (val_add, ":num_captains", 1),
+                (try_end),
+                (val_mul, ":leadership_allies", 200),
+                (val_add, ":rally_range", ":leadership_allies"),
             
 				(call_script, "script_cf_agent_get_leader_troop", ":agent"),
 				(assign, ":can_rally", 0),
@@ -178,6 +198,12 @@ tld_morale_triggers = [
             (val_mul, reg10, 10),
             (val_min, reg10, 500),
             (add_xp_as_reward, reg10),
+            (assign, reg5, ":num_captains"),
+            (assign, reg6, ":num_banner_carriers"),
+            (try_begin),
+                (gt, reg5+reg6, 0),
+                (display_message, "@{reg5} captains and {reg6} banner carriers support your rally."),
+            (try_end),
 		(try_end),
 
 	] + ((is_a_wb_mt==1) and [
@@ -353,28 +379,33 @@ tld_morale_triggers = [
      	(0, 0, 2, [(key_clicked, key_t),(eq, "$tld_option_morale", 1)], 
 	[
 		(call_script, "script_coherence"),    
-		(call_script, "script_healthbars"),       
+		#(call_script, "script_healthbars"),       
 	]),
       
 	# calculate coherence once
-	(1, 0, ti_once, [(eq, "$tld_option_morale", 1)], 
-	[
-		(call_script, "script_coherence"),    
-	]),						
+    # redundant, it's done in the first trigger of this file
+	# (1, 0, ti_once, [(eq, "$tld_option_morale", 1)], 
+	# [
+		# (call_script, "script_coherence"),    
+	# ]),						
 
 	# morale check (changed from 15)
 	(30, 0, 10, [(eq, "$tld_option_morale", 1)], 
 	[
 		(call_script, "script_coherence"),
-        (call_script, "script_normalize_coherence_modifier"),            
-		(call_script, "script_morale_check"),    
+        (call_script, "script_normalize_coherence_modifier"),
+        (store_mission_timer_a, ":time"),
+        (gt, ":time", 180), #3 minutes
+		(call_script, "script_morale_check"),  #allows individual troops to flee if coherence is lower than 75%
         ]),
 
 	# rout check (changed from 20)
-	(40, 0, 5, [(eq, "$tld_option_morale", 1)], 
+	(35, 0, 10, [(eq, "$tld_option_morale", 1)], 
 	[
-		(call_script, "script_coherence"),    
-		(call_script, "script_rout_check"),       
+		#(call_script, "script_coherence"), #InVain: This is timed so it fires shortly after the above trigger, taking freshly calculated coherence into account.
+        (store_mission_timer_a, ":time"),
+        (gt, ":time", 240), #4 minutes
+		(call_script, "script_rout_check"),  #calculates cohesion relation between both sides and can trigger a rout for one side.
         ]),
 
 
@@ -404,38 +435,39 @@ tld_morale_triggers = [
 	# Custom trigger, ensures agents get to position and when they do, remove them, but
 	# only after 90 seconds, to ensure agents have time to advance and engage in 
 	# battle before immediately fleeing, otherwise there is no fight. -CppCoder - Changed to 3.5 mins (kham)
-      	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,210)], 
-	[
-		(try_for_agents, ":cur_agent"),
-			(agent_is_alive, ":cur_agent"),
-			(try_begin),
-				(agent_slot_eq,":cur_agent",slot_agent_routed,1),
+    # InVain: Commented out, doesn't make any sense since WB operation agent_start_running_away makes them fade out automatically. Is potentially very performance heavy, too.
+      	# (0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,210)], 
+	# [
+		# (try_for_agents, ":cur_agent"),
+			# (agent_is_alive, ":cur_agent"),
+			# (try_begin),
+				# (agent_slot_eq,":cur_agent",slot_agent_routed,1),
 				
-				] + ((is_a_wb_mt==1) and [
+				# ] + ((is_a_wb_mt==1) and [
 
-		        ## WB has an operation for fleeing - Kham
-		        (agent_start_running_away, ":cur_agent"),
-		        (agent_set_slot, ":cur_agent", slot_agent_is_running_away, 1),
+		        # ## WB has an operation for fleeing - Kham
+		        # (agent_start_running_away, ":cur_agent"),
+		        # (agent_set_slot, ":cur_agent", slot_agent_is_running_away, 1),
 		            
-		        ] or [
-				(call_script, "script_find_exit_position_at_pos4", ":cur_agent"),
-				(agent_set_scripted_destination, ":cur_agent", pos4, 1),
+		        # ] or [
+				# (call_script, "script_find_exit_position_at_pos4", ":cur_agent"),
+				# (agent_set_scripted_destination, ":cur_agent", pos4, 1),
 				
-				]) + [
+				# ]) + [
 
-				(agent_get_position, pos2, ":cur_agent"),
-				(get_distance_between_positions, ":dist", pos4, pos2),
-				(lt, ":dist", 300),
-				(store_random_in_range, ":rand", 0, 100),
-				(lt, ":rand", 50),
-				(call_script, "script_count_enemy_agents_around_agent", ":cur_agent", 600),
-				(agent_get_troop_id,":troop_no", ":cur_agent"),
-				(le|this_or_next, reg0, 0),
-				(is_between, ":troop_no", warg_ghost_begin, warg_ghost_end), # Lone wargs can always flee
-				(call_script, "script_remove_agent_from_field", ":cur_agent"),
-			(try_end),
-		(try_end),
-	]),
+				# (agent_get_position, pos2, ":cur_agent"),
+				# (get_distance_between_positions, ":dist", pos4, pos2),
+				# (lt, ":dist", 300),
+				# (store_random_in_range, ":rand", 0, 100),
+				# (lt, ":rand", 50),
+				# (call_script, "script_count_enemy_agents_around_agent", ":cur_agent", 600),
+				# (agent_get_troop_id,":troop_no", ":cur_agent"),
+				# (le|this_or_next, reg0, 0),
+				# (is_between, ":troop_no", warg_ghost_begin, warg_ghost_end), # Lone wargs can always flee
+				# (call_script, "script_remove_agent_from_field", ":cur_agent"),
+			# (try_end),
+		# (try_end),
+	# ]),
 
      	(3, 0, 3, [(eq, "$tld_option_morale", 1)], 
 	[

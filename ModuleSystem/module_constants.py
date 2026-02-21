@@ -198,7 +198,7 @@ slot_agent_time_counter			= 18
 slot_agent_routed			= 19
 slot_agent_mount			= 20 
 slot_agent_morale_modifier			= 21 # Commanders use this slot to remember they've rallied their troops.
-slot_agent_alive			= 22 #unused
+slot_agent_flee_chance			= 22 
 slot_agent_wounded			= 23 #unused
 #swy-- keep a reference in the mount of its original rider for the lone_wargs mechanic
 #   -- so that we can check if the rider is unmounted but alive

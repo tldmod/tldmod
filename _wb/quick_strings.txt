@@ -1,4 +1,4 @@
-2122
+2124
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -104,7 +104,7 @@ qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_Thank_you_for_playin Thank_you_for_playing
-qstr_{!}_rev_482_wb__dev_ {!}_rev_482_wb_|_dev_^_Built_2026-02-19_16:29___
+qstr_{!}_rev_483_wb__dev_ {!}_rev_483_wb_|_dev_^_Built_2026-02-21_20:49___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -763,6 +763,7 @@ qstr_Your_troops_flee_in_ Your_troops_flee_in_terror!
 qstr_Many_of_your_troops_ Many_of_your_troops_are_fleeing_from_battle.
 qstr_Some_of_your_troops_ Some_of_your_troops_are_fleeing_from_battle.
 qstr_A_few_of_your_troops A_few_of_your_troops_are_fleeing_from_battle.
+qstr_Your_side_has_{reg5} Your_side_has_{reg5}_captains_and_{reg6}_banner_carriers.
 qstr_{!}lord_{reg1}:_{s1} {!}lord_{reg1}:_{s1}_is_defending_{s2}
 qstr_{!}lord_{reg1}:_{s1}_ {!}lord_{reg1}:_{s1}_NOT_defending_{s2}
 qstr_{!}lord_{reg1}:_{s1}_i {!}lord_{reg1}:_{s1}_is_patrolling_around_{s2}
@@ -997,6 +998,7 @@ qstr_Your_mount_is_scared_ Your_mount_is_scared_by_the_{s5},_but_you_can_master_
 qstr_You_yell_for_your_ho You_yell_for_your_horse.
 qstr_You_do_not_need_to_r You_do_not_need_to_rally_your_troops_yet.
 qstr_You_rally_{reg10}_tr You_rally_{reg10}_troops!
+qstr_{reg5}_captains_and_ {reg5}_captains_and_{reg6}_banner_carriers_support_your_rally.
 qstr_{s5}_rallies_{reg65? {s5}_rallies_{reg65?her:his}_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
 qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
