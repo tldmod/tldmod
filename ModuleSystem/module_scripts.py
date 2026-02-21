@@ -2604,7 +2604,7 @@ scripts = [
                     (gt, ":stack_size", 6), #for bigger stacks, reduce by 1/4th additionally
                     (val_div, ":stack_size", 4),
                     (party_remove_members_wounded_first, ":volunteers", ":stack_troop", ":stack_size"),
-                    (party_add_members, ":volunteers", ":t_2_troop", ":stack_size"), #we stay fair - add a t2 troop to volunteers
+                    (party_add_members, ":volunteers", ":t_1_troop", ":stack_size"), #add 1 troops to volunteers
                 (else_try),
                     (this_or_next|le, ":troop_level", 12), #t1 and t2, t3 for evil
                     (le, ":troop_level", ":base_troop_level"), #Ithilien rangers start at t4
@@ -2618,15 +2618,16 @@ scripts = [
                     (assign, ":highest_level_stack_size", ":stack_size"),
                 (try_end),
             (try_end),
-            (ge, ":highest_level", 12), #greater than t2
+            (ge, ":highest_level", 6), #greater than t2 (t3 for orcs)
             (val_mul, ":highest_level", ":highest_level_stack_size"),
             (store_random_in_range, ":random", 0, 100),
             (le, ":random", ":highest_level"),
             (party_remove_members_wounded_first, ":volunteers", ":highest_level_troop", 1),
-            (party_add_members, ":volunteers", ":t_1_troop", 1), #add a basic troop to volunteers
-            (gt, ":highest_level_stack_size", 5),
-            (party_remove_members_wounded_first, ":volunteers", ":highest_level_troop", 1),
-            (party_add_members, ":volunteers", ":t_1_troop", 1), #add a basic troop to volunteers
+            (party_add_members, ":volunteers", ":t_2_troop", 1), #add a t2 troop to volunteers
+            (gt, ":highest_level_stack_size", 6),
+            (val_div, ":stack_size", 4),
+            (party_remove_members_wounded_first, ":volunteers", ":highest_level_troop", ":stack_size"),
+            (party_add_members, ":volunteers", ":t_1_troop", ":stack_size"), #add basic troops to volunteers
             #(str_store_party_name, s1, ":town"),
             #(str_store_troop_name, s2, ":highest_level_troop"),
             #(display_message, "@{s1}: removed volunteer {s2}"),
@@ -2635,9 +2636,9 @@ scripts = [
 		(store_party_size, ":vol_total", ":volunteers"),
 		
 		# compute how many soldiers to add to volunteers
-		(store_sub, ":to_add", ":ideal_size", ":vol_total"), # how many troops to add/remove to volunteers (in theory)
+		(store_sub, ":to_add", ":ideal_size", ":basic_troops"), # how many troops to add/remove to volunteers (in theory)
 		(val_mul, ":to_add", 2), (val_div, ":to_add", 3), # fill max 2/3 of the gap per time
-		(store_add, ":target_size", ":vol_total", ":to_add"),
+		(store_add, ":target_size", ":basic_troops", ":to_add"),
         
 		(try_begin),
 			(party_is_active, ":town"),
