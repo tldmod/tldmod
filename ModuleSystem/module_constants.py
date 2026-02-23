@@ -1261,7 +1261,7 @@ kingdoms_end     = fac_kingdoms_end
 kingdoms_end_i   = fac_kingdoms_end
 
 #these are used in script_game_start in order to assign the initial kingdom lords
-kingdom_heroes_begin = trp_gondor_lord
+kingdom_heroes_begin = trp_knight_6_2
 kingdom_heroes_end   = trp_knight_6_1 + 1
 
 companions_begin = trp_npc1
