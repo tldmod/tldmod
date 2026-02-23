@@ -9036,12 +9036,18 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ], "Of course I will return {reg2?these items:this item} to you but it seems like you have no room in your inventory currently. Make some room, then ask me again.", "lord_talk",[]],
 
 [anyone,"lord_return_items", [
+    #Get the captain of their home to use as a template troop to replace any items that are taken
+    #This could be problematic for orc companions since the captains would be uruks, but I don't think any orc armor rewards are unique so it shouldn't matter - Ren
+    (troop_get_slot, ":town", "$g_talk_troop", slot_troop_home),
+    (party_get_slot, ":captain", ":town", slot_town_captain),
+
     (try_for_range, ":slot", ek_item_0, ek_food),
         (troop_get_inventory_slot, ":item", "$g_talk_troop", ":slot"),
         (ge, ":item", 0),
         (item_has_property, ":item", itp_unique),
         (troop_get_inventory_slot_modifier, ":mod", "$g_talk_troop", ":slot"),
-        (troop_set_inventory_slot, "$g_talk_troop", ":slot", -1),   # remove item from NPC
+        (troop_get_inventory_slot, ":replacement_item", ":captain", ":slot"),
+        (troop_set_inventory_slot, "$g_talk_troop", ":slot", ":replacement_item"),   # remove item from NPC
         (troop_add_item, "trp_player", ":item", ":mod"),            # return item to player
     (end_try),
 ], "Of course. Here {reg2?they are:it is}.", "lord_talk",[]],
