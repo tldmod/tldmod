@@ -9015,6 +9015,38 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 ##### TODO: QUESTS COMMENT OUT END
 
+[anyone|plyr,"lord_talk", [
+    (this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end),
+    (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
+    (assign, ":unique_count", 0),
+    (try_for_range, ":slot", ek_item_0, ek_food),
+        (troop_get_inventory_slot, ":item", "$g_talk_troop", ":slot"),
+        (ge, ":item", 0),
+        (item_has_property, ":item", itp_unique),
+        (val_add, ":unique_count", 1),
+    (end_try),
+    (gt, ":unique_count", 0),
+    (assign, reg2, ":unique_count"),
+    (val_sub, reg2, 1),
+], "I need you to return the unique {reg2?items:item} I gave you.", "lord_return_items",[]],
+
+[anyone,"lord_return_items", [
+    (store_free_inventory_capacity,reg1,"trp_player"),
+    (le, reg1, reg2)
+], "Of course I will return {reg2?these items:this item} to you but it seems like you have no room in your inventory currently. Make some room, then ask me again.", "lord_talk",[]],
+
+[anyone,"lord_return_items", [
+    (try_for_range, ":slot", ek_item_0, ek_food),
+        (troop_get_inventory_slot, ":item", "$g_talk_troop", ":slot"),
+        (ge, ":item", 0),
+        (item_has_property, ":item", itp_unique),
+        (troop_get_inventory_slot_modifier, ":mod", "$g_talk_troop", ":slot"),
+        (troop_set_inventory_slot, "$g_talk_troop", ":slot", -1),   # remove item from NPC
+        (troop_add_item, "trp_player", ":item", ":mod"),            # return item to player
+    (end_try),
+], "Of course. Here {reg2?they are:it is}.", "lord_talk",[]],
+
+
 #Leave
 [anyone|plyr,"lord_talk", [(troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0)], "I must leave now.", "lord_leave_prison",[]],
 [anyone|plyr,"lord_talk", [(lt, "$g_talk_troop_faction_relation", 0)], "This little chat is over. I leave now.", "lord_leave",[]],
