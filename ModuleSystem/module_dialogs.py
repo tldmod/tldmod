@@ -1989,7 +1989,10 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 [anyone|plyr, "companion_faction_demolished", [],  "I'm sorry, but we are needed elsewhere.", "close_window", [(call_script,"script_stand_back"),]],
 
 [anyone, "event_triggered", [(eq, "$npc_map_talk_context", slot_troop_last_complaint_hours),],
-"{s5}, I am sorry, but the suffering of {reg6?our:my} {s6} homeland is too great. I must return at once to provide what aid I can.", "companion_faction_dying", []],
+"{s5}, I am sorry, but the suffering of {reg6?our:my} {s6} homeland is too great. I must return at once to provide what aid I can.", "companion_faction_dying_pretalk", []],
+
+[anyone, "companion_faction_dying_pretalk", [],  "Farewell, {s5}.", "companion_faction_dying", [
+]],
 
 [anyone|plyr, "companion_faction_dying", [],  "Very well. Perhaps we will meet again.", "close_window", [
     (call_script,"script_stand_back"),
@@ -2092,6 +2095,18 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone,"companion_give_troops_final", [],
 "Farewell, commander.", "close_window", [(call_script,"script_stand_back")]],
+
+[anyone|plyr,"companion_faction_dying", [
+    #Don't show this for companions whose inventory isn't accessible
+    (neq, "$g_talk_troop", "trp_npc21"), #Berta
+
+    (store_character_level, ":talk_troop_level", "$g_talk_troop"),
+    (store_character_level, ":player_level", "trp_player"),
+    (val_add, ":player_level", 10),
+    (this_or_next|lt, ":talk_troop_level", ":player_level"),
+    (lt, ":talk_troop_level", 30),
+    ],"Let me see your equipment before you leave.", "companion_faction_dying_trade",[]],
+[anyone,"companion_faction_dying_trade", [], "Very well, it's all here...", "companion_faction_dying_pretalk",[(set_player_troop, "trp_player"),(change_screen_equip_other)]], 
 
 [anyone|plyr, "companion_faction_dying", [],  "I understand, but you are needed here.", "companion_faction_dying_persuade", []],
 
