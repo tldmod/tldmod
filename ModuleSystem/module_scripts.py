@@ -23408,6 +23408,7 @@ scripts = [
                 (store_relation, ":rel", ":town_faction", ":troop_faction"),
                 (ge, ":rel", 0), #only spawn if friendly center
                 (neg|troop_slot_eq, ":cur_troop", slot_troop_wound_mask, wound_death), # Do not reincarnate if dead
+                (neg|troop_slot_eq, ":cur_troop", slot_troop_occupation, slto_kingdom_hero), # Don't show up here if they've promoted to lord
                 (set_visitor, 8, ":cur_troop"), #only one companion NPC per town!
             (try_end),
         (try_end),
