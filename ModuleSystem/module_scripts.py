@@ -11784,6 +11784,36 @@ scripts = [
         (faction_get_slot, ":town", ":troop_faction", slot_faction_capital),
     (try_end),
 
+    (call_script, "script_get_template_troop_for_companion", ":troop_no"),
+    (assign, ":template_troop", reg1),
+
+    # Compare all of the troop's gear to the template troop and take any items that would be an upgrade
+    (try_for_range, ":slot", ek_item_0, ek_food),
+        (troop_get_inventory_slot, ":troop_item", ":troop_no", ":slot"),
+        (troop_get_inventory_slot, ":template_item", ":template_troop", ":slot"),
+
+        # Skip if the template troop has nothing
+        (neq, ":template_item", -1),
+        # Don't give uniques
+        (neg|item_has_property, ":template_item", itp_unique),
+
+        (try_begin),
+            # If slot is empty then replace it immediately
+            (eq, ":troop_item", -1),
+            (troop_set_inventory_slot, ":troop_no", ":slot", ":template_item"),
+        (else_try),
+            # If slot isn't empty see if replacement is appropriate
+            # Don't replace uniques
+            (neg|item_has_property, ":troop_item", itp_unique),
+
+            # Check if the template item is higher value
+            (store_item_value, ":troop_item_value", ":troop_item"),
+            (store_item_value, ":template_item_value", ":template_item"),
+            (gt, ":template_item_value", ":troop_item_value"),
+            (troop_set_inventory_slot, ":troop_no", ":slot", ":template_item"),
+        (try_end),
+    (end_try),
+
     #Create their party in the appropriate town
     (call_script, "script_create_kingdom_hero_party", ":troop_no", ":town"),
 
@@ -11794,6 +11824,56 @@ scripts = [
     (faction_get_slot, ":fac_strength", ":troop_faction", slot_faction_strength_tmp),
     (val_add, ":fac_strength", ":strength_increase"),
     (faction_set_slot,":troop_faction",slot_faction_strength_tmp,":fac_strength"),
+]),
+
+# script_get_template_troop_for_companion
+# Input: arg1 = troop_no,
+# Output: reg1 - troop_id of troop to use as a template
+("get_template_troop_for_companion", [
+    (store_script_param_1, ":troop_no"),
+    (store_troop_faction, ":troop_faction", ":troop_no"),
+
+    (try_begin),
+        # Can't use the captain troops for orcs because the captains will be uruks
+        (troop_get_type, ":race", ":troop_no"),
+        (eq, ":race", tf_orc),
+        (assign, ":template_troop", -1),
+        # Scan lords for an orc lord of the same faction
+        (try_for_range, ":kingdom_hero", kingdom_heroes_begin, kingdom_heroes_end),
+            (store_troop_faction, ":kingdom_hero_faction", ":kingdom_hero"),
+            (eq, ":kingdom_hero_faction", ":troop_faction"),
+            (troop_get_type, ":kingdom_hero_race", ":kingdom_hero"),
+            (eq, ":kingdom_hero_race", tf_orc),
+            (assign, ":template_troop", ":kingdom_hero"),
+        (try_end),
+
+        (try_begin),
+            (eq, ":template_troop", -1),
+            (assign, ":template_level", 0),
+            # If no suitable lord was found then look for a high level regular
+            (try_for_range, ":soldier", soldiers_begin, soldiers_end),
+                (store_troop_faction, ":soldier_faction", ":soldier"),
+                (eq, ":soldier_faction", ":troop_faction"),
+                (troop_get_type, ":soldier_race", ":soldier"),
+                (eq, ":soldier_race", tf_orc),
+
+                # If the qualified soldier troop is higher level than what we have already use it instead
+                (store_character_level,":level",":soldier"),
+                (gt, ":level", ":template_level"),
+                (assign,":template_troop", ":soldier"),
+            (try_end),
+        (try_end),
+    (else_try),
+        # For anyone other an orc use their home town's captain troop
+        (troop_get_slot, ":town", ":troop_no", slot_troop_home),
+        (party_get_slot, ":template_troop", ":town", slot_town_captain),
+    (try_end),
+    (try_begin),
+        (eq, "$cheat_mode", 1),
+        (str_store_troop_name, s3, ":template_troop"),
+        (display_message, "@{!}DEBUG: Template troop: {s3}"),
+    (try_end),
+    (assign, reg1, ":template_troop"),
 ]),
 
 #  "script_str_store_race_adj" (stringNo, raceNo)  (mtarini)
