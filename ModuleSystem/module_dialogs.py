@@ -9038,17 +9038,26 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 [anyone,"lord_return_items", [
     #Get the captain of their home to use as a template troop to replace any items that are taken
     #This could be problematic for orc companions since the captains would be uruks, but I don't think any orc armor rewards are unique so it shouldn't matter - Ren
-    (troop_get_slot, ":town", "$g_talk_troop", slot_troop_home),
-    (party_get_slot, ":captain", ":town", slot_town_captain),
+    (call_script, "script_get_template_troop_for_companion", "$g_talk_troop"),
+    (assign, ":template_troop", reg1),
 
     (try_for_range, ":slot", ek_item_0, ek_food),
         (troop_get_inventory_slot, ":item", "$g_talk_troop", ":slot"),
         (ge, ":item", 0),
         (item_has_property, ":item", itp_unique),
         (troop_get_inventory_slot_modifier, ":mod", "$g_talk_troop", ":slot"),
-        (troop_get_inventory_slot, ":replacement_item", ":captain", ":slot"),
-        (troop_set_inventory_slot, "$g_talk_troop", ":slot", ":replacement_item"),   # remove item from NPC
-        (troop_add_item, "trp_player", ":item", ":mod"),            # return item to player
+        (troop_add_item, "trp_player", ":item", ":mod"), # return item to player
+
+        (try_begin),
+            # Give a replacement item if the template has one that is not unique
+            (troop_get_inventory_slot, ":replacement_item", ":template_troop", ":slot"),
+            (neq, ":replacement_item", -1),
+            (neg|item_has_property, ":replacement_item", itp_unique),
+            (troop_set_inventory_slot, "$g_talk_troop", ":slot", ":replacement_item"),
+        (else_try),
+            # Just empty the slot
+            (troop_set_inventory_slot, "$g_talk_troop", ":slot", -1),
+        (try_end),
     (end_try),
 ], "Of course. Here {reg2?they are:it is}.", "lord_talk",[]],
 
