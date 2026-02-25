@@ -9015,6 +9015,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 ##### TODO: QUESTS COMMENT OUT END
 
+] + (is_a_wb_dialog and [
 [anyone|plyr,"lord_talk", [
     (this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end),
     (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
@@ -9060,7 +9061,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         (try_end),
     (end_try),
 ], "Of course. Here {reg2?they are:it is}.", "lord_talk",[]],
-
+] or []) + [ 
 
 #Leave
 [anyone|plyr,"lord_talk", [(troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0)], "I must leave now.", "lord_leave_prison",[]],

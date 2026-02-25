@@ -11788,6 +11788,7 @@ scripts = [
         (faction_get_slot, ":town", ":troop_faction", slot_faction_capital),
     (try_end),
 
+   ] + (is_a_wb_script==1 and [
     (call_script, "script_get_template_troop_for_companion", ":troop_no"),
     (assign, ":template_troop", reg1),
 
@@ -11816,8 +11817,9 @@ scripts = [
             (gt, ":template_item_value", ":troop_item_value"),
             (troop_set_inventory_slot, ":troop_no", ":slot", ":template_item"),
         (try_end),
-    (end_try),
-
+    (end_try),  
+    ] or []) + [
+    
     #Create their party in the appropriate town
     (call_script, "script_create_kingdom_hero_party", ":troop_no", ":town"),
 

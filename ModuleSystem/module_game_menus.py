@@ -2214,11 +2214,11 @@ game_menus = [
 	 ("cheat_enable",[(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),(jump_to_menu, "mnu_camp"), (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")]),
      ("camp_cheat_option", [(eq,"$cheat_mode",1)] ,"{!}Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat")]),
   ## MadVader test begin
-     ("camp_test_madvader",[],"{!}MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest"), (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}") ]),
+     ("camp_test_madvader",[(this_or_next|eq, cheat_switch, 1),(eq,"$cheat_mode",1)],"{!}Campaign Cheats",[(jump_to_menu, "mnu_camp_mvtest"), (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}") ]),
   ## MadVader test end
      ("camp_test_cppcoder",[(eq, cheat_switch, 1)],"{!}Cpp Test Menu",[(jump_to_menu, "mnu_camp_cctest"), (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")]),
   ## Kham Test begin
-  	 ("camp_test_kham",[(eq, cheat_switch, 1)],"{!}Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest"), (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")]),
+  	 ("camp_test_kham",[(eq, cheat_switch, 1)],"{!}Kham/InVain Test Menu",[(jump_to_menu, "mnu_camp_khamtest"), (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")]),
 
   	 ("camp_back_camp_menu",[],"{!}Back to Camp Menu.",[(jump_to_menu, "mnu_camp")]),
  ]
@@ -2330,56 +2330,58 @@ game_menus = [
 
 ## MadVader test begin
 ( "camp_mvtest",0,
-   "{!}What do you want to test today?",
+   "{!}These are cheats. Only use them if you know what you're doing. Don't advise others to use cheats.",
    "none", [],
   [
+  
+  ("back_map",[],"{!}Back to map.", [(change_screen_map),]),
  
-  ("camp_mvtest_pimp",[],"{!}Pimp me up first!",
-    [(troop_raise_attribute, "trp_player",ca_strength,20),
-     (troop_raise_attribute, "trp_player",ca_agility,20),
-     (troop_raise_attribute, "trp_player",ca_intelligence,20),
-     (troop_raise_attribute, "trp_player",ca_charisma,20),
-     (troop_raise_proficiency_linear, "trp_player", wpt_one_handed_weapon, 500),
-     (troop_raise_proficiency_linear, "trp_player", wpt_two_handed_weapon, 500),
-     (troop_raise_proficiency_linear, "trp_player", wpt_polearm, 500),
-     (troop_raise_proficiency_linear, "trp_player", wpt_archery, 500),
-     (troop_raise_proficiency_linear, "trp_player", wpt_crossbow, 500),
-     (troop_raise_proficiency_linear, "trp_player", wpt_throwing, 500),
-     (troop_raise_skill, "trp_player",skl_ironflesh,10),
-     (troop_raise_skill, "trp_player",skl_power_strike,10),
-     (troop_raise_skill, "trp_player",skl_weapon_master,10),
-     (troop_raise_skill, "trp_player",skl_athletics,10),
-     (troop_raise_skill, "trp_player",skl_power_draw,10),
-     (troop_raise_skill, "trp_player",skl_riding,10),
-     (troop_raise_skill, "trp_player",skl_spotting,10),
-     (troop_raise_skill, "trp_player",skl_prisoner_management,10),
-     (troop_raise_skill, "trp_player",skl_tactics,10),
-     (troop_raise_skill, "trp_player",skl_inventory_management,10),
-     (troop_raise_skill, "trp_player",skl_wound_treatment,10),
-     (troop_raise_skill, "trp_player",skl_surgery,10),
-     (troop_raise_skill, "trp_player",skl_first_aid,10),
-     (troop_raise_skill, "trp_player",skl_pathfinding,10),
-     (troop_raise_skill, "trp_player",skl_leadership,10),
-     (troop_raise_skill, "trp_player",skl_engineer,10),
-     (troop_add_gold, "trp_player", 1000000),
-	 (troop_set_health, "trp_player", 100),
-     (troop_add_item, "trp_player","itm_gondor_lance",imod_balanced),
-     (troop_add_item, "trp_player","itm_shield_of_tuor",imod_reinforced),
-     (troop_add_item, "trp_player","itm_orc_beakhelm",imod_masterwork),
-     (troop_add_item, "trp_player","itm_orc_beakhelm"),
-     (troop_add_item, "trp_player","itm_gondor_hunter",imod_champion),
-     (troop_add_item, "trp_player","itm_riv_helm_c",imod_lordly),
-     (troop_add_item, "trp_player","itm_gon_tower_knight",imod_lordly),
-     (troop_add_item, "trp_player","itm_mail_mittens",imod_lordly),
-     (troop_add_item, "trp_player","itm_dol_greaves",imod_lordly),
-     (troop_add_items, "trp_player","itm_lembas",3),
-     (troop_add_item, "trp_player","itm_map"),
-     (troop_equip_items, "trp_player"),
-     (troop_sort_inventory, "trp_player"),
-     (display_message, "@{!}You have been pimped up!", 0x30FFC8),
-     (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")
-    ]
-   ),
+  # ("camp_mvtest_pimp",[(eq, cheat_switch, 1)],"{!}Pimp me up first!",
+    # [(troop_raise_attribute, "trp_player",ca_strength,20),
+     # (troop_raise_attribute, "trp_player",ca_agility,20),
+     # (troop_raise_attribute, "trp_player",ca_intelligence,20),
+     # (troop_raise_attribute, "trp_player",ca_charisma,20),
+     # (troop_raise_proficiency_linear, "trp_player", wpt_one_handed_weapon, 500),
+     # (troop_raise_proficiency_linear, "trp_player", wpt_two_handed_weapon, 500),
+     # (troop_raise_proficiency_linear, "trp_player", wpt_polearm, 500),
+     # (troop_raise_proficiency_linear, "trp_player", wpt_archery, 500),
+     # (troop_raise_proficiency_linear, "trp_player", wpt_crossbow, 500),
+     # (troop_raise_proficiency_linear, "trp_player", wpt_throwing, 500),
+     # (troop_raise_skill, "trp_player",skl_ironflesh,10),
+     # (troop_raise_skill, "trp_player",skl_power_strike,10),
+     # (troop_raise_skill, "trp_player",skl_weapon_master,10),
+     # (troop_raise_skill, "trp_player",skl_athletics,10),
+     # (troop_raise_skill, "trp_player",skl_power_draw,10),
+     # (troop_raise_skill, "trp_player",skl_riding,10),
+     # (troop_raise_skill, "trp_player",skl_spotting,10),
+     # (troop_raise_skill, "trp_player",skl_prisoner_management,10),
+     # (troop_raise_skill, "trp_player",skl_tactics,10),
+     # (troop_raise_skill, "trp_player",skl_inventory_management,10),
+     # (troop_raise_skill, "trp_player",skl_wound_treatment,10),
+     # (troop_raise_skill, "trp_player",skl_surgery,10),
+     # (troop_raise_skill, "trp_player",skl_first_aid,10),
+     # (troop_raise_skill, "trp_player",skl_pathfinding,10),
+     # (troop_raise_skill, "trp_player",skl_leadership,10),
+     # (troop_raise_skill, "trp_player",skl_engineer,10),
+     # (troop_add_gold, "trp_player", 1000000),
+	 # (troop_set_health, "trp_player", 100),
+     # (troop_add_item, "trp_player","itm_gondor_lance",imod_balanced),
+     # (troop_add_item, "trp_player","itm_shield_of_tuor",imod_reinforced),
+     # (troop_add_item, "trp_player","itm_orc_beakhelm",imod_masterwork),
+     # (troop_add_item, "trp_player","itm_orc_beakhelm"),
+     # (troop_add_item, "trp_player","itm_gondor_hunter",imod_champion),
+     # (troop_add_item, "trp_player","itm_riv_helm_c",imod_lordly),
+     # (troop_add_item, "trp_player","itm_gon_tower_knight",imod_lordly),
+     # (troop_add_item, "trp_player","itm_mail_mittens",imod_lordly),
+     # (troop_add_item, "trp_player","itm_dol_greaves",imod_lordly),
+     # (troop_add_items, "trp_player","itm_lembas",3),
+     # (troop_add_item, "trp_player","itm_map"),
+     # (troop_equip_items, "trp_player"),
+     # (troop_sort_inventory, "trp_player"),
+     # (display_message, "@{!}You have been pimped up!", 0x30FFC8),
+     # (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")
+    # ]
+   # ),
    ("camp_mvtest_expwar",[(eq,"$tld_war_began",0)],"{!}Start the War!",[(assign, "$tld_start_war_by_day_or_level", 0),(assign, "$tld_player_level_to_begin_war",1),(add_xp_to_troop,1000,"trp_player"), (display_message, "@{!}now wait for the War...", 0x30FFC8),]),
    ("camp_mvtest_evilwar",[(eq,"$tld_war_began",1)],"{!}Start the War of Two Towers! (defeat all good factions)",[
     (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
@@ -2392,8 +2394,8 @@ game_menus = [
     (display_message, "@{!}Good factions defeated! Now wait for it...", 0x30FFC8),
     (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")
    ]),
-   ("camp_mvtest_rank",[(eq, cheat_switch, 1),],"{!}Give me local money, rank and influence.",[
-    (troop_add_gold, "trp_player", 10000),
+   ("camp_mvtest_rank",[],"{!}Give me local money, rank and influence.",[
+    (troop_add_gold, "trp_player", 1000),
     (call_script, "script_increase_rank", "$ambient_faction", 50),
     (faction_get_slot, reg0, "$ambient_faction", slot_faction_rank),
     (faction_get_slot, reg1, "$ambient_faction", slot_faction_influence),
@@ -2478,6 +2480,7 @@ game_menus = [
     # (display_message, "@{!}Playing track - can you hear it?", 0x30FFC8),
    # ]),
    ("camp_mvtest_sieges",[],"{!}Test sieges...",[(jump_to_menu, "mnu_mvtest_sieges")]),
+   ("camp_mvtest_facstr_change",[],"{!}Change faction strengths.",[(jump_to_menu, "mnu_mvtest_facstr_change")]),
    # ("camp_mvtest_trolls",[],"Test trolls in battle.",[
      # (party_add_members, "p_main_party", "trp_moria_troll", 3),
      # (set_spawn_radius, 0),
@@ -2550,7 +2553,7 @@ game_menus = [
     # (call_script, "script_get_line_through_parties", "p_town_morannon", "p_town_minas_tirith"),
     # (display_message, "@{!}Debug: Morannon-MT line: y = {reg0}/{reg1}*x + {reg2}"),
    # ]),
-   ("camp_mvtest_defeat",[],"{!}Set Faction to Crushed.",[(jump_to_menu, "mnu_mvtest_destroy_faction")]),
+   ("camp_mvtest_defeat",[(eq, cheat_switch, 1),],"{!}Set Faction to Crushed.",[(jump_to_menu, "mnu_mvtest_destroy_faction")]),
    ("camp_mvtest_destroy",[],"{!}Defeat a faction.",[(jump_to_menu, "mnu_mvtest_destroy_capital")]),
    ("camp_mvtest_advcamps",[(eq, cheat_switch, 1),],"{!}Test advance camps.",[(jump_to_menu, "mnu_mvtest_advcamps")]),
    # ("camp_mvtest_destroy",[],"Destroy Hornburg!",[
@@ -2639,6 +2642,58 @@ game_menus = [
   ]for y in range(len(faction_init)) ])      
  ),
 
+#Invain, simplified faction strength cheat
+( "mvtest_facstr_change",0,
+   "{!}{s1}",
+   "none",
+   [
+      (try_begin),
+	    (neg|is_between, "$g_mvtest_faction", kingdoms_begin, kingdoms_end), #first use?
+	    (assign, "$g_mvtest_faction", kingdoms_begin), #gondor
+	  (try_end),
+        
+      (str_store_faction_name, s7, "$g_mvtest_faction"),
+       (faction_get_slot, reg11, "$g_mvtest_faction",slot_faction_strength),
+      (str_store_string, s1, "@{!}{s7} faction strength: {reg11}"),
+      
+
+    ],
+    [("change",[
+        (str_store_faction_name, s7, "$g_mvtest_faction"),
+      ],
+      "{!}Change faction: {s7}",
+      [
+        (val_add, "$g_mvtest_faction", 1),
+        (try_begin),
+	      (eq, "$g_mvtest_faction", "fac_player_supporters_faction"),
+	      (assign, "$g_mvtest_faction", kingdoms_begin),
+	    (try_end),
+        (jump_to_menu, "mnu_mvtest_facstr_change"),
+      ]),
+     ("add100",[],"{!}add 100 fac strength.", [
+       (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength),
+       (val_add, ":fac_str", 100),
+       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength,":fac_str"),
+       ]),
+     ("add500",[],"{!}add 500 fac strength.", [
+       (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength),
+       (val_add, ":fac_str", 500),
+       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength,":fac_str"),
+       ]),
+     ("sub100",[],"{!}subtract 100 fac strength.", [
+       (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength),
+       (val_sub, ":fac_str", 100),
+       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength,":fac_str"),
+       ]),
+     ("sub500",[],"{!}subtract 500 fac strength.", [
+       (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength),
+       (val_sub, ":fac_str", 500),
+       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength,":fac_str"),
+       ]),
+     ("back_mv",[],"{!}Back to dev menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
+     ("back_map",[],"{!}Back to map.", [(change_screen_map),]),
+    ]
+ ),
 
 ( "mvtest_facstr_report",0,
    "{!}{s1}",
