@@ -1989,7 +1989,10 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 [anyone|plyr, "companion_faction_demolished", [],  "I'm sorry, but we are needed elsewhere.", "close_window", [(call_script,"script_stand_back"),]],
 
 [anyone, "event_triggered", [(eq, "$npc_map_talk_context", slot_troop_last_complaint_hours),],
-"{s5}, I am sorry, but the suffering of {reg6?our:my} {s6} homeland is too great. I must return at once to provide what aid I can.", "companion_faction_dying", []],
+"{s5}, I am sorry, but the suffering of {reg6?our:my} {s6} homeland is too great. I must return at once to provide what aid I can.", "companion_faction_dying_pretalk", []],
+
+[anyone, "companion_faction_dying_pretalk", [],  "Farewell, {s5}.", "companion_faction_dying", [
+]],
 
 [anyone|plyr, "companion_faction_dying", [],  "Very well. Perhaps we will meet again.", "close_window", [
     (call_script,"script_stand_back"),
@@ -2092,6 +2095,18 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone,"companion_give_troops_final", [],
 "Farewell, commander.", "close_window", [(call_script,"script_stand_back")]],
+
+[anyone|plyr,"companion_faction_dying", [
+    #Don't show this for companions whose inventory isn't accessible
+    (neq, "$g_talk_troop", "trp_npc21"), #Berta
+
+    (store_character_level, ":talk_troop_level", "$g_talk_troop"),
+    (store_character_level, ":player_level", "trp_player"),
+    (val_add, ":player_level", 10),
+    (this_or_next|lt, ":talk_troop_level", ":player_level"),
+    (lt, ":talk_troop_level", 30),
+    ],"Let me see your equipment before you leave.", "companion_faction_dying_trade",[]],
+[anyone,"companion_faction_dying_trade", [], "Very well, it's all here...", "companion_faction_dying_pretalk",[(set_player_troop, "trp_player"),(change_screen_equip_other)]], 
 
 [anyone|plyr, "companion_faction_dying", [],  "I understand, but you are needed here.", "companion_faction_dying_persuade", []],
 
@@ -8999,6 +9014,53 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 ##### TODO: QUESTS COMMENT OUT END
+
+[anyone|plyr,"lord_talk", [
+    (this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end),
+    (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
+    (assign, ":unique_count", 0),
+    (try_for_range, ":slot", ek_item_0, ek_food),
+        (troop_get_inventory_slot, ":item", "$g_talk_troop", ":slot"),
+        (ge, ":item", 0),
+        (item_has_property, ":item", itp_unique),
+        (val_add, ":unique_count", 1),
+    (end_try),
+    (gt, ":unique_count", 0),
+    (assign, reg2, ":unique_count"),
+    (val_sub, reg2, 1),
+], "I need you to return the unique {reg2?items:item} I gave you.", "lord_return_items",[]],
+
+[anyone,"lord_return_items", [
+    (store_free_inventory_capacity,reg1,"trp_player"),
+    (le, reg1, reg2)
+], "Of course I will return {reg2?these items:this item} to you but it seems like you have no room in your inventory currently. Make some room, then ask me again.", "lord_talk",[]],
+
+[anyone,"lord_return_items", [
+    #Get the captain of their home to use as a template troop to replace any items that are taken
+    #This could be problematic for orc companions since the captains would be uruks, but I don't think any orc armor rewards are unique so it shouldn't matter - Ren
+    (call_script, "script_get_template_troop_for_companion", "$g_talk_troop"),
+    (assign, ":template_troop", reg1),
+
+    (try_for_range, ":slot", ek_item_0, ek_food),
+        (troop_get_inventory_slot, ":item", "$g_talk_troop", ":slot"),
+        (ge, ":item", 0),
+        (item_has_property, ":item", itp_unique),
+        (troop_get_inventory_slot_modifier, ":mod", "$g_talk_troop", ":slot"),
+        (troop_add_item, "trp_player", ":item", ":mod"), # return item to player
+
+        (try_begin),
+            # Give a replacement item if the template has one that is not unique
+            (troop_get_inventory_slot, ":replacement_item", ":template_troop", ":slot"),
+            (neq, ":replacement_item", -1),
+            (neg|item_has_property, ":replacement_item", itp_unique),
+            (troop_set_inventory_slot, "$g_talk_troop", ":slot", ":replacement_item"),
+        (else_try),
+            # Just empty the slot
+            (troop_set_inventory_slot, "$g_talk_troop", ":slot", -1),
+        (try_end),
+    (end_try),
+], "Of course. Here {reg2?they are:it is}.", "lord_talk",[]],
+
 
 #Leave
 [anyone|plyr,"lord_talk", [(troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0)], "I must leave now.", "lord_leave_prison",[]],
