@@ -5940,8 +5940,10 @@ scene_props = [
   ("secret_viewpoint", sokf_invisible|sokf_moveable|spr_use_time(1), "arrow_helper_blue", "bo_spike_a", [
     (ti_on_scene_prop_init,[
         (store_trigger_param_1, ":instance_no"),
-        (prop_instance_deform_in_range, ":instance_no", 0, 100, 1000), #workaround for particle effect
         (set_fixed_point_multiplier, 10000),
+        #(prop_instance_deform_in_range, ":instance_no", 0, 100, 1000), #workaround for particle effect
+        (prop_instance_get_starting_position, pos5, ":instance_no"),
+        (prop_instance_animate_to_position, ":instance_no", pos5, 100),
         (prop_instance_get_scale, pos1, ":instance_no"), 
         (position_get_scale_z, ":scale", pos1),
         (try_begin),
@@ -5952,23 +5954,32 @@ scene_props = [
         (try_end),
     ]),
 
-    (ti_scene_prop_deformation_finished,[ #workaround for particle effect
-        (store_trigger_param_1, ":instance_no"),
-        (scene_prop_slot_eq, ":instance_no", slot_prop_active, 0),
-        (scene_prop_slot_eq, ":instance_no", slot_prop_playing_sound, 0),
-        (prop_instance_get_position, pos2, ":instance_no"),
-        (particle_system_burst, "psys_moon_beam_1", pos2, 4),
-        (particle_system_burst, "psys_fire_glow_1_white", pos2, 2),
-        (store_random_in_range, ":timer", 700, 1100),    
-        (prop_instance_deform_in_range, ":instance_no", 0, 100, ":timer"), #workaround for particle effect
-    ]),
+    #InVain: Switched to ti_on_scene_prop_animation_finished because this doesn't seem to work on all computers. 
+    # Unsure if requires a vertex animated model (did not help in a test conducted by a player) or if vertex animation tracking simply works differently on different hardware.
+    # (ti_scene_prop_deformation_finished,[ #workaround for particle effect 
+        # (store_trigger_param_1, ":instance_no"),
+        # (scene_prop_slot_eq, ":instance_no", slot_prop_active, 0),
+        # (scene_prop_slot_eq, ":instance_no", slot_prop_playing_sound, 0),
+        # (prop_instance_get_position, pos2, ":instance_no"),
+        # (particle_system_burst, "psys_moon_beam_1", pos2, 4),
+        # (particle_system_burst, "psys_fire_glow_1_white", pos2, 2),
+        # (store_random_in_range, ":timer", 700, 1100),    
+        # (prop_instance_deform_in_range, ":instance_no", 0, 100, ":timer"), #workaround for particle effect
+    # ]),
     
     (ti_on_scene_prop_use,[
       (store_trigger_param_2, ":instance_no"),
       (get_player_agent_no, "$current_player_agent"),
       #(scene_prop_set_visibility, ":instance_no", 0),
       (set_fixed_point_multiplier, 100),
-      (scene_prop_enable_after_time, ":instance_no", 10),
+      (prop_instance_get_variation_id_2, ":time", ":instance_no"), #animation in seconds
+      (try_begin),
+        (eq, ":time", 0),
+        (assign, ":time", 12), #default duration
+      (try_end),
+      (val_add, ":time", 4),
+      (val_mul, ":time", 100),
+      (scene_prop_enable_after_time, ":instance_no", ":time"),
       (prop_instance_get_position, pos5, ":instance_no"),
       (prop_instance_get_scale, pos2, ":instance_no"),
       (position_get_scale_y, ":radius", pos2),
@@ -5996,57 +6007,69 @@ scene_props = [
     (ti_on_scene_prop_animation_finished,[
       (store_trigger_param_1, ":instance_no"),
       (set_fixed_point_multiplier, 100),
-      (prop_instance_get_variation_id_2, ":time", ":instance_no"), #animation in seconds
-      (try_begin),
-        (eq, ":time", 0),
-        (assign, ":time", 12), #default duration
-      (try_end),
-      (val_mul, ":time", 100),
-      (val_div, ":time", 22), #time per 10° tick, need 23 ticks for full animation
       (prop_instance_get_starting_position, pos5, ":instance_no"),
-      (prop_instance_get_scale, pos2, ":instance_no"),
-      (position_get_scale_y, ":radius", pos2),
-      (val_mul, ":radius", 10),
-      (position_get_scale_z, ":elevation", pos2),
-      (val_mul, ":elevation", 10),
-      (val_sub, ":elevation", 1000),
-      # (assign, reg78, ":elevation"),
-      # (display_message, "@elevation: {reg78}"),      
-      (store_div, ":tilt", ":elevation", -100),  #camera tilts against elevation
-      # (assign, reg78, ":tilt"),
-      # (display_message, "@tilt: {reg78}"),
-      (scene_prop_get_slot, ":rotation", ":instance_no", slot_prop_active),
-      (try_begin),
-        (gt, ":rotation", -10),
-        (call_script, "script_scene_viewpoint_effect", ":instance_no", 1),
+      
+      (try_begin), #particle
+          (scene_prop_slot_eq, ":instance_no", slot_prop_active, 0),
+          (scene_prop_slot_eq, ":instance_no", slot_prop_playing_sound, 0),
+          (particle_system_burst, "psys_moon_beam_1", pos5, 4),
+          (particle_system_burst, "psys_fire_glow_1_white", pos5, 2),
+          (store_random_in_range, ":timer", 70, 110),
+          (prop_instance_animate_to_position, ":instance_no", pos5, ":timer"),
+      (else_try),#animation
+          (neg|scene_prop_slot_eq, ":instance_no", slot_prop_active, 0),
+          (prop_instance_get_variation_id_2, ":time", ":instance_no"), #animation in seconds
+          (try_begin),
+            (eq, ":time", 0),
+            (assign, ":time", 12), #default duration
+          (try_end),
+          (val_mul, ":time", 100),
+          (val_div, ":time", 22), #time per 10° tick, need 23 ticks for full animation
+          (prop_instance_get_scale, pos2, ":instance_no"),
+          (position_get_scale_y, ":radius", pos2),
+          (val_mul, ":radius", 10),
+          (position_get_scale_z, ":elevation", pos2),
+          (val_mul, ":elevation", 10),
+          (val_sub, ":elevation", 1000),
+          # (assign, reg78, ":elevation"),
+          # (display_message, "@elevation: {reg78}"),      
+          (store_div, ":tilt", ":elevation", -100),  #camera tilts against elevation
+          # (assign, reg78, ":tilt"),
+          # (display_message, "@tilt: {reg78}"),
+          (scene_prop_get_slot, ":rotation", ":instance_no", slot_prop_active),
+          (try_begin),
+            (gt, ":rotation", -10),
+            (call_script, "script_scene_viewpoint_effect", ":instance_no", 1),
+          (try_end),
+          (le, ":rotation", -1),
+          (val_sub, ":rotation", 10), #counter-clockwise
+          (position_rotate_z, pos5, 45), #starting rotation offset
+          (position_rotate_z, pos5, ":rotation"),
+          (position_move_y, pos5, ":radius"), #radius
+          (position_move_z, pos5, ":elevation"),
+          (position_rotate_z, pos5, 180), #look back
+          (position_rotate_x, pos5, ":tilt"),
+          (prop_instance_animate_to_position, ":instance_no", pos5, ":time"),      
+          # (set_spawn_position, pos5),
+          # (spawn_scene_prop, "spr_arrow_helper_blue"),
+          # (position_get_z, reg78, pos5),
+          # (display_message, "@camera height: {reg78}"),
+          (val_mul, ":time", 11),
+          (mission_cam_animate_to_position, pos5, ":time", 0),
+          # (assign, reg78, ":rotation"),
+          # (display_message, "@rotation: {reg78}"),
+          (scene_prop_set_slot, ":instance_no", slot_prop_active, ":rotation"),
+          (lt, ":rotation", -225), #don't go a full circle
+          (scene_prop_set_slot, ":instance_no", slot_prop_active, 0),
+          (prop_instance_get_starting_position, pos5, ":instance_no"),
+          (prop_instance_stop_animating, ":instance_no"),
+          (prop_instance_set_position, ":instance_no", pos5),
+          (mission_cam_set_mode, 0, 1600, 0),
+          (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi"), #assuming we're not in battle 
+          (prop_instance_animate_to_position, ":instance_no", pos5, 100),
+          #(prop_instance_deform_in_range, ":instance_no", 0, 100, 100),
+          (call_script, "script_scene_viewpoint_effect", ":instance_no", 2),
       (try_end),
-      (le, ":rotation", -1),
-      (val_sub, ":rotation", 10), #counter-clockwise
-      (position_rotate_z, pos5, 45), #starting rotation offset
-      (position_rotate_z, pos5, ":rotation"),
-      (position_move_y, pos5, ":radius"), #radius
-      (position_move_z, pos5, ":elevation"),
-      (position_rotate_z, pos5, 180), #look back
-      (position_rotate_x, pos5, ":tilt"),
-      (prop_instance_animate_to_position, ":instance_no", pos5, ":time"),      
-      # (set_spawn_position, pos5),
-      # (spawn_scene_prop, "spr_arrow_helper_blue"),
-      # (position_get_z, reg78, pos5),
-      # (display_message, "@camera height: {reg78}"),
-      (val_mul, ":time", 11),
-      (mission_cam_animate_to_position, pos5, ":time", 0),
-      # (assign, reg78, ":rotation"),
-      # (display_message, "@rotation: {reg78}"),
-      (scene_prop_set_slot, ":instance_no", slot_prop_active, ":rotation"),
-      (lt, ":rotation", -225), #don't go a full circle
-      (scene_prop_set_slot, ":instance_no", slot_prop_active, 0),
-      (prop_instance_get_starting_position, pos5, ":instance_no"),
-      (prop_instance_stop_animating, ":instance_no"),
-      (prop_instance_set_position, ":instance_no", pos5),
-      (mission_cam_set_mode, 0, 1600, 0),
-      (agent_set_speed_modifier, "$current_player_agent", "$tld_town_player_speed_multi"), #assuming we're not in battle
-      (prop_instance_deform_in_range, ":instance_no", 0, 100, 100),
-      (call_script, "script_scene_viewpoint_effect", ":instance_no", 2),
     ]),
   ]),
 ] or [
