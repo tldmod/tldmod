@@ -1122,6 +1122,11 @@ dialogs = [
         (remove_member_from_party, "$g_talk_troop"),(set_player_troop, "trp_player")]],
 
 [anyone|plyr,"member_talk", [
+    #Companions disloyal to their faction can't be made lords
+    (troop_get_slot, ":npc_loyalty", "$g_talk_troop", slot_troop_faction_loyalty),
+    (ge, ":npc_loyalty", faction_loyalty_neutral),
+    (assign, reg20, ":npc_loyalty"),
+
     #This option is only available if they have ranks in leadership
     (store_skill_level, ":leadership", "skl_leadership", "$g_talk_troop"),
     (ge, ":leadership", 1),
@@ -1135,6 +1140,21 @@ dialogs = [
     (store_relation, ":rel", "$g_talk_troop_faction", "$players_kingdom"),
     (gt, ":rel", 0),
     (str_store_faction_name, s14, ":troop_faction"),
+
+    #See if the companion's faction has lost any lords
+    (assign, ":lord_killed", 0),
+    (try_for_range, ":troop_no", heroes_begin, heroes_end),
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
+        (store_troop_faction, ":hero_faction_no", ":troop_no"),
+        (eq, "$g_talk_troop_faction", ":hero_faction_no"),
+        (troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death),
+        (assign, ":lord_killed", 1),
+    (try_end),
+
+    #Faction must be weak or have lost a lord to send companion back
+    (faction_get_slot, ":npc_faction_strength", "$g_talk_troop_faction", slot_faction_strength),
+    (this_or_next|le, ":npc_faction_strength", fac_str_very_weak),
+    (eq, ":lord_killed", 1),
 ], "You should return to {s14} and gather warriors to lead against the enemy.", "member_promote_lord",[]],
 
 [anyone,"member_promote_lord", [
@@ -1151,7 +1171,7 @@ dialogs = [
 [anyone|plyr, "member_promote_lord_2", [],  "I am sure. You can do more leading a host of your own.", "member_promote_lord_leaving", []],
 [anyone, "member_promote_lord_leaving", [],  "Well. I'll be off, then. Perhaps we will meet again.", "close_window", [
     (call_script,"script_stand_back"),
-    (call_script, "script_promote_companion_to_lord", "$g_talk_troop"),
+    (call_script, "script_promote_companion_to_lord", "$g_talk_troop", 1),
     (set_player_troop, "trp_player"),
 ]],
 
@@ -1159,7 +1179,7 @@ dialogs = [
 #[anyone|plyr,"member_promote_lord_2", [],
 #"I am sure. I will also send warriors of {s14} with you.", "companion_give_troops",[
 #    #Player can't change their mind now so spawn their party now before attempting the troop exchange
-#    (call_script, "script_promote_companion_to_lord", "$g_talk_troop"),
+#    (call_script, "script_promote_companion_to_lord", "$g_talk_troop", 1),
 #    # just to see if someone can be given away: backup party, then see if troops which can be given away 
 #    (call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
 #    (call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_talk_troop_faction")]],
@@ -1196,7 +1216,7 @@ dialogs = [
 [anyone,"member_background_recap_3", [], "Then shortly after, I joined up with you.", "do_member_trade",[]],
 [anyone,"do_member_view_char", [], "Anything else?", "member_talk",[]],
 
-[anyone|plyr,"member_talk", [(eq, "$cheat_mode", 1)], "{!}Become a Lord", "close_window",[(call_script, "script_promote_companion_to_lord", "$g_talk_troop"),(set_player_troop, "trp_player")]],
+[anyone|plyr,"member_talk", [(eq, "$cheat_mode", 1)], "{!}Become a Lord", "close_window",[(call_script, "script_promote_companion_to_lord", "$g_talk_troop", 0),(set_player_troop, "trp_player")]],
 
 # ORIGINAL MEMBER HEALTH
 #[anyone,"member_health", [
@@ -1996,7 +2016,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone|plyr, "companion_faction_dying", [],  "Very well. Perhaps we will meet again.", "close_window", [
     (call_script,"script_stand_back"),
-    (call_script, "script_promote_companion_to_lord", "$map_talk_troop"),
+    (call_script, "script_promote_companion_to_lord", "$map_talk_troop", 0),
 ]],
 
 #This is adapted from the logic for giving troops to regular lords, but with some of the pre-checks removed because they aren't needed in this context
@@ -2005,7 +2025,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     #Move faction name from s6 to s14 for the troop transfer strings
     (str_store_string_reg, s14, s6),
     #It's now too late for the player to persuade them to stay so spawn their party now before attempting the troop exchange
-    (call_script, "script_promote_companion_to_lord", "$map_talk_troop"),
+    (call_script, "script_promote_companion_to_lord", "$map_talk_troop", 0),
     # just to see if someone can be given away: backup party, then see if troops which can be given away 
     (call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
     (call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_talk_troop_faction")]],
@@ -2118,11 +2138,18 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (store_character_level, ":npc_level", "$map_talk_troop"),
     (store_attribute_level, ":charisma", "trp_player", ca_charisma),
     (ge, ":charisma", ":npc_level"),
+
+    #Rank and faction leader relation penalty for persuading companion to stay
+    (store_mul, ":rank_penalty", ":npc_level", -10),
+    (call_script, "script_increase_rank", "$g_talk_troop_faction", ":rank_penalty"),
+    (faction_get_slot,":leader","$g_talk_troop_faction",slot_faction_leader),
+    (store_mul, ":relation_penalty", ":npc_level", -1),
+    (call_script, "script_change_player_relation_with_troop", ":leader", ":relation_penalty"),
 ], "Perhaps you are right. I can serve {s6} better by fighting at your side.", "close_window", [(call_script,"script_stand_back"),]],
 
 [anyone, "companion_faction_dying_persuade", [], "I'm afraid that {s6} needs me more. Farewell, {s5}.", "close_window", [
     (call_script,"script_stand_back"),
-    (call_script, "script_promote_companion_to_lord", "$map_talk_troop"),
+    (call_script, "script_promote_companion_to_lord", "$map_talk_troop", 0),
 ]],
 
 [anyone, "event_triggered", [

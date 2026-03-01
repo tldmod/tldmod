@@ -11727,10 +11727,11 @@ scripts = [
 ]),
 
 # script_promote_companion_to_lord
-# Input: arg1 = troop_no,
+# Input: arg1 = troop_no, arg2 = voluntary
 # Output: none
 ("promote_companion_to_lord", [
     (store_script_param_1, ":troop_no"),
+    (store_script_param_2, ":voluntary"),
 
     #Remove companion from player party
     #Might need to check they are actually in the party if we later decide to allow unrecruited or dismissed heroes to become lords
@@ -11830,6 +11831,16 @@ scripts = [
     (faction_get_slot, ":fac_strength", ":troop_faction", slot_faction_strength_tmp),
     (val_add, ":fac_strength", ":strength_increase"),
     (faction_set_slot,":troop_faction",slot_faction_strength_tmp,":fac_strength"),
+
+    #If player sent companion away voluntarily grant rank and influence rewards
+    (try_begin),
+        (eq, ":voluntary", 1),
+        (faction_get_slot, ":influence", ":troop_faction", slot_faction_influence),
+        (val_add, ":influence", ":level"),
+        (faction_set_slot, ":troop_faction", slot_faction_influence, ":influence"),
+        (store_mul, ":rank_increase", ":level", 10),
+        (call_script, "script_increase_rank", ":troop_faction", ":rank_increase"),
+    (try_end),
 ]),
 
 # script_get_template_troop_for_companion
@@ -26099,7 +26110,6 @@ command_cursor_scripts = [
     (try_begin),
         (lt, "$savegame_version", 4338),
         (assign, "$savegame_version", 4338),
-        (call_script, "script_assign_loyalty"),
         #formerly "sitting kings"
         (troop_set_slot, "trp_isengard_lord", slot_troop_lord_state, stls_passive),
         (troop_set_slot, "trp_mordor_lord", slot_troop_lord_state, stls_passive),
@@ -26130,6 +26140,12 @@ command_cursor_scripts = [
             (troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 100),
             (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
         (try_end),
+    (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4360),
+        (assign, "$savegame_version", 4360),
+        (call_script, "script_assign_loyalty"),
     (try_end),
     
     (call_script, "script_update_all_notes"),
@@ -28618,7 +28634,7 @@ command_cursor_scripts = [
     (try_end),
     # Override the default for some specificl heroes
     # Berta was a former prisoner of Gundabad
-    (troop_set_slot, trp_npc21, slot_troop_faction_loyalty, faction_loyalty_neutral),
+    (troop_set_slot, trp_npc21, slot_troop_faction_loyalty, faction_loyalty_disloyal),
     # The dwarves only just retook Erebor. Kili will not see them lose it again
     (troop_set_slot, trp_npc7, slot_troop_faction_loyalty, faction_loyalty_fanatical),
 ]),
