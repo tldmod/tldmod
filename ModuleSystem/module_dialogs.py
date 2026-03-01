@@ -2138,6 +2138,13 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (store_character_level, ":npc_level", "$map_talk_troop"),
     (store_attribute_level, ":charisma", "trp_player", ca_charisma),
     (ge, ":charisma", ":npc_level"),
+
+    #Rank and faction leader relation penalty for persuading companion to stay
+    (store_mul, ":rank_penalty", ":npc_level", -10),
+    (call_script, "script_increase_rank", "$g_talk_troop_faction", ":rank_penalty"),
+    (faction_get_slot,":leader","$g_talk_troop_faction",slot_faction_leader),
+    (store_mul, ":relation_penalty", ":npc_level", -1),
+    (call_script, "script_change_player_relation_with_troop", ":leader", ":relation_penalty"),
 ], "Perhaps you are right. I can serve {s6} better by fighting at your side.", "close_window", [(call_script,"script_stand_back"),]],
 
 [anyone, "companion_faction_dying_persuade", [], "I'm afraid that {s6} needs me more. Farewell, {s5}.", "close_window", [
