@@ -14660,15 +14660,30 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 # Lord companions
 [anyone ,"start", [
     (troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_companion),
+    (eq, "$g_talk_troop_met", 0),
+],
+"I don't believe we have met.", "kingdom_companion_meet", []],
+  
+[anyone|plyr ,"kingdom_companion_meet", [],  "I am {playername}.", "kingdom_companion_intro", []],
+[anyone|plyr ,"kingdom_companion_meet", [],  "My name is {playername}. At your service.", "kingdom_companion_intro", []],
+
+[anyone ,"kingdom_companion_intro", [
     (str_store_troop_name, s1, "$g_talk_troop"),
     (store_troop_faction, ":faction", "$g_talk_troop"),
     (str_store_faction_name, s2, ":faction"),  
     (troop_get_slot, ":lord", "$g_talk_troop", slot_troop_lord),
     (str_store_troop_name, s3, ":lord"),
 ],
-"I am {s1}, a soldier of {s2}. If you have business with our company you should speak with my commander, {s3}.", "close_window", []],
+"I am {s1}, a soldier of {s2} in the company of {s3}.", "kingdom_companion_start", []],
 
+[anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_companion)],
+"Greetings, {playername}...", "kingdom_companion_start",[]],
 
+[anyone ,"kingdom_companion_start", [
+    (troop_get_slot, ":lord", "$g_talk_troop", slot_troop_lord),
+    (str_store_troop_name, s3, ":lord"),
+],
+"If you have business with our company you should speak with my commander, {s3}.", "close_window", []],
 
 [anyone|plyr,"party_encounter_hostile_defender", [], "Nothing. We'll leave you in peace.", "close_window", [(call_script,"script_stand_back"),(assign, "$g_leave_encounter",1)]],
 [trp_human_prisoner,"start", [], "* stares at you silently *", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")]],
