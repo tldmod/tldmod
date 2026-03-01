@@ -11727,10 +11727,11 @@ scripts = [
 ]),
 
 # script_promote_companion_to_lord
-# Input: arg1 = troop_no,
+# Input: arg1 = troop_no, arg2 = voluntary
 # Output: none
 ("promote_companion_to_lord", [
     (store_script_param_1, ":troop_no"),
+    (store_script_param_2, ":voluntary"),
 
     #Remove companion from player party
     #Might need to check they are actually in the party if we later decide to allow unrecruited or dismissed heroes to become lords
@@ -11830,6 +11831,16 @@ scripts = [
     (faction_get_slot, ":fac_strength", ":troop_faction", slot_faction_strength_tmp),
     (val_add, ":fac_strength", ":strength_increase"),
     (faction_set_slot,":troop_faction",slot_faction_strength_tmp,":fac_strength"),
+
+    #If player sent companion away voluntarily grant rank and influence rewards
+    (try_begin),
+        (eq, ":voluntary", 1),
+        (faction_get_slot, ":influence", ":troop_faction", slot_faction_influence),
+        (val_add, ":influence", ":level"),
+        (faction_set_slot, ":troop_faction", slot_faction_influence, ":influence"),
+        (store_mul, ":rank_increase", ":level", 10),
+        (call_script, "script_increase_rank", ":troop_faction", ":rank_increase"),
+    (try_end),
 ]),
 
 # script_get_template_troop_for_companion
