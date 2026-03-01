@@ -5834,6 +5834,7 @@ scene_props = [
         
         (try_begin),
             (is_edit_mode_enabled), 
+            (eq, cheat_switch, 1), 
             (is_between, ":item_type", 0, 980),
             (str_store_item_name, s9, ":item_type"),
             (display_message, "@{!} debug: secret item: {s9}"),
