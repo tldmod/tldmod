@@ -5749,7 +5749,7 @@ mission_templates = [ # not used in game
  "You visit a legendary place.",
     [(0,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),(1,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),(16,mtef_scene_source|mtef_team_0,0,0,1,[]),
      (17,mtef_scene_source|mtef_team_0,0,0,1,[]),(18,mtef_scene_source|mtef_team_0,0,0,1,[]),(19,mtef_scene_source|mtef_team_0,0,0,1,[]),
-     ],tld_common_wb_muddy_water+fade+tld_common_peacetime_scripts+[
+     ],tld_common_wb_muddy_water+fade+tld_common_peacetime_scripts+tld_animal_attacks+[
     
     (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
     (0,0,ti_once,[],[(music_set_situation, 0),]), #no music
@@ -5839,7 +5839,7 @@ mission_templates = [ # not used in game
         (position_move_x, pos6, ":x"),
         (position_move_y, pos6, ":y"),
         (play_sound_at_position, "snd_spider_die", pos6),
-        (lt, ":rand", 120),
+        (lt, ":rand", 50),
         (eq, "$tld_option_animal_ambushes", 1), #only spawn spiders if animal ambushes are allowed
         (set_spawn_position, pos6),
         (spawn_agent, "trp_spider"),

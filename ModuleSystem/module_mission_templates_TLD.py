@@ -2691,6 +2691,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
      (this_or_next|is_between,  ":troopid", "trp_spider", "trp_animals_end"),
      (eq, ":troopid", "trp_werewolf_old"), #savegame compatibility
      (agent_set_no_death_knock_down_only, ":agent", 1), # make the rider unkillable
+     (agent_set_hit_points, ":agent", 999,0), #absurdly high, we transfer all damage to the mount
      (agent_set_animation, ":agent", "anim_hide_inside_warg"),
      (val_add,"$animal_is_present",1),#reused for counting active animals, keep in mind that we only ever add to this counter - dying animals won't be substracted, because the array slots are not reordered
      (assign, ":upper_range", 1000),
@@ -2704,6 +2705,11 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         # (str_store_agent_name, s5, ":agent"),
         # (display_message, "@{s5} stored in slot {reg78}"),
      (try_end),
+    (agent_get_horse, ":horse", ":agent"),
+    (agent_set_visibility, ":agent", 0),
+    (agent_is_active, ":horse"),
+    (agent_set_slot, ":agent", slot_agent_mount, ":horse"),
+    (agent_set_visibility, ":horse", 1),
   ]),
 
   #deactivate array slot on death
@@ -2726,8 +2732,10 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         # (display_message, "@{s5} was killed, stored in slot {reg78}"),
     (agent_set_no_death_knock_down_only, ":rider", 0),
     (agent_set_hit_points, ":rider", 1, 0),
+    (set_show_messages, 0),
     (agent_deliver_damage_to_agent, ":killer", ":rider", 1000),
     (call_script, "script_remove_agent", ":rider"), #just in case
+    (set_show_messages, 1),
     
     #Give XP to killer
     (agent_get_troop_id,":killer_troop", ":killer"),
@@ -2745,6 +2753,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         (agent_get_troop_id, ":agent_trp", ":agent"),
         (this_or_next|is_between, ":agent_trp", "trp_spider", "trp_animals_end"),
         (eq, ":agent_trp", "trp_werewolf_old"),
+        (agent_set_animation, ":agent", "anim_hide_inside_warg"),
         (agent_get_horse, ":horse", ":agent"),
         (lt, ":horse", 0),
         (call_script, "script_remove_agent", ":agent"),
@@ -3029,50 +3038,56 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
 
 (ti_on_agent_hit, 0, 0, [
     (store_trigger_param_1, ":agent"),
-    (neg|agent_is_human, ":agent"),
+    (agent_get_troop_id,":troopid", ":agent"),
     (agent_get_item_id,":mount_itm",":agent"),
-    (this_or_next|eq, ":mount_itm", "itm_wolf"),
+    (this_or_next|is_between,  ":troopid", "trp_spider", "trp_animals_end"), #check for rider...
+    (this_or_next|eq, ":mount_itm", "itm_wolf"), #...or mount
     (this_or_next|eq, ":mount_itm", "itm_bear"),
     (this_or_next|eq, ":mount_itm", "itm_spider"),
     (eq, ":mount_itm", "itm_werewolf"),
-    # (agent_get_rider, ":rider", ":agent"),
-    # (agent_is_active,":rider"),
-    # (agent_get_troop_id, ":invis_warg", ":rider"),
-    # (is_between, ":invis_warg", warg_ghost_begin, warg_ghost_end), #Riderless Warg
   ],
 
   [
     (store_trigger_param_1, ":agent"),
     (store_trigger_param_3, ":damage"),
-    (ge, ":damage", 15),
-    # (assign, reg78, ":damage"),
-    # (display_message, "@damage to animal: {reg78}"),
-    (agent_get_animation, ":current_anim", ":agent"),
-    (neq, ":current_anim", "anim_wolf_snap"), #avoid stunlocking
-    (agent_get_position, pos5, ":agent"),
-    (position_move_y, pos5, -30), #fake recoil
-    (agent_set_position, ":agent", pos5),
-    (agent_set_slot, ":agent", slot_agent_animal_is_striking, 0), #abort any attack
     
-    #assign sound
-    (try_begin),
-        (ge, ":damage", 20),
-        (agent_get_item_id,":mount_itm",":agent"),
+    (try_begin), #is rider..
+        (agent_is_human, ":agent"),
+        (agent_get_horse, ":mount", ":agent"),
+        (ge, ":mount", 0),
+        (agent_deliver_damage_to_agent, ":agent", ":mount", ":damage", "itm_uruk_falchion_a"), #this re-fires the trigger, but makes sure that mount armour is counted in
+    (else_try), #...or mount
+        (neg|agent_is_human, ":agent"),
+        (ge, ":damage", 15),
+        # (assign, reg78, ":damage"),
+        # (display_message, "@damage to animal: {reg78}"),
+        (agent_get_animation, ":current_anim", ":agent"),
+        (neq, ":current_anim", "anim_wolf_snap"), #avoid stunlocking
+        (agent_get_position, pos5, ":agent"),
+        (position_move_y, pos5, -30), #fake recoil
+        (agent_set_position, ":agent", pos5),
+        (agent_set_slot, ":agent", slot_agent_animal_is_striking, 0), #abort any attack
+        
+        #assign sound
         (try_begin),
-          (eq, ":mount_itm", "itm_spider"),
-          (assign, ":sound", "snd_spider_strike"),
-        (else_try),
-          (eq|this_or_next, ":mount_itm", "itm_werewolf"),
-          (eq, ":mount_itm", "itm_wolf"),
-          (assign, ":sound", "snd_wolf_strike"),
-        (else_try),
-          (eq, ":mount_itm", "itm_bear"),
-          (assign, ":sound", "snd_bear_strike"),
+            (ge, ":damage", 20),
+            (agent_get_item_id,":mount_itm",":agent"),
+            (try_begin),
+              (eq, ":mount_itm", "itm_spider"),
+              (assign, ":sound", "snd_spider_strike"),
+            (else_try),
+              (eq|this_or_next, ":mount_itm", "itm_werewolf"),
+              (eq, ":mount_itm", "itm_wolf"),
+              (assign, ":sound", "snd_wolf_strike"),
+            (else_try),
+              (eq, ":mount_itm", "itm_bear"),
+              (assign, ":sound", "snd_bear_strike"),
+            (try_end),
+            (agent_play_sound, ":agent", ":sound"),
         (try_end),
-        (agent_play_sound, ":agent", ":sound"),
-    (try_end),
-    (agent_set_animation, ":agent", "anim_wolf_snap"), #TODO: In the future, maybe assign better animations and sounds
-    #(display_message, "@animal stunned"),
+        (agent_set_animation, ":agent", "anim_wolf_snap"), #TODO: In the future, maybe assign better animations and sounds
+        #(display_message, "@animal stunned"),
+     (try_end),
   ]),
 
 ## Piggy Back for Lone Wargs extra damage

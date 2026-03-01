@@ -2078,7 +2078,7 @@ animations = [
    [2.0, "oh_no_mounted",126,126+41, arf_blend_in_2], 
  ],     
  # used to make "ghost" rider hide inside warg
- ["hide_inside_warg", acf_enforce_lowerbody | acf_synch_with_horse, amf_client_prediction|amf_start_instantly|amf_keep,
+ ["hide_inside_warg", acf_enforce_lowerbody | acf_synch_with_horse, amf_client_prediction|amf_start_instantly|amf_keep|amf_priority_die,
    [1.0, "hide_inside_warg", 0, 31, arf_cyclic],
  ],
  ["ride_warg_jump", acf_enforce_lowerbody | acf_synch_with_horse, amf_client_prediction|amf_priority_die|amf_play,
