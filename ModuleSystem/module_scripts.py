@@ -26099,7 +26099,6 @@ command_cursor_scripts = [
     (try_begin),
         (lt, "$savegame_version", 4338),
         (assign, "$savegame_version", 4338),
-        (call_script, "script_assign_loyalty"),
         #formerly "sitting kings"
         (troop_set_slot, "trp_isengard_lord", slot_troop_lord_state, stls_passive),
         (troop_set_slot, "trp_mordor_lord", slot_troop_lord_state, stls_passive),
@@ -26130,6 +26129,12 @@ command_cursor_scripts = [
             (troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 100),
             (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
         (try_end),
+    (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4360),
+        (assign, "$savegame_version", 4360),
+        (call_script, "script_assign_loyalty"),
     (try_end),
     
     (call_script, "script_update_all_notes"),
@@ -28618,7 +28623,7 @@ command_cursor_scripts = [
     (try_end),
     # Override the default for some specificl heroes
     # Berta was a former prisoner of Gundabad
-    (troop_set_slot, trp_npc21, slot_troop_faction_loyalty, faction_loyalty_neutral),
+    (troop_set_slot, trp_npc21, slot_troop_faction_loyalty, faction_loyalty_disloyal),
     # The dwarves only just retook Erebor. Kili will not see them lose it again
     (troop_set_slot, trp_npc7, slot_troop_faction_loyalty, faction_loyalty_fanatical),
 ]),

@@ -1055,9 +1055,10 @@ slot_troop_is_berserker = 170
 # Ren - I'm padding these to make it easier to insert more tiers later but at the moment we only need 3
 slot_troop_faction_loyalty = 171
 
+faction_loyalty_disloyal = 3    # Not at all loyal to their home faction
 faction_loyalty_neutral = 5     # Not overly loyal, but not treacherous. Could be a good hero who weighs the interests of all of Middle-Earth over their home
 faction_loyalty_loyal = 10      # Default for most heroes. Loyal to their faction but also concerned about their allies
-faction_loyalty_fanatical = 15 # Will drop everything else for their 
+faction_loyalty_fanatical = 15  # Will drop everything else for their faction
 
 #slot for hardcoding lord behavior - this needs to be stored in a troop slot, so it is consistent over hero defeat and respawn cycles (which reset party ID)
 slot_troop_lord_state = 172

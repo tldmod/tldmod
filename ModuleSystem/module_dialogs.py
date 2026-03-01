@@ -1122,6 +1122,12 @@ dialogs = [
         (remove_member_from_party, "$g_talk_troop"),(set_player_troop, "trp_player")]],
 
 [anyone|plyr,"member_talk", [
+    #Companions disloyal to their faction can't be made lords
+    (troop_get_slot, ":npc_loyalty", "$g_talk_troop", slot_troop_faction_loyalty),
+    (ge, ":npc_loyalty", faction_loyalty_neutral),
+    (assign, reg20, ":npc_loyalty"),
+    (display_message, "@Loyalty: {reg20}"),
+
     #This option is only available if they have ranks in leadership
     (store_skill_level, ":leadership", "skl_leadership", "$g_talk_troop"),
     (ge, ":leadership", 1),
@@ -1135,6 +1141,21 @@ dialogs = [
     (store_relation, ":rel", "$g_talk_troop_faction", "$players_kingdom"),
     (gt, ":rel", 0),
     (str_store_faction_name, s14, ":troop_faction"),
+
+    #See if the companion's faction has lost any lords
+    (assign, ":lord_killed", 0),
+    (try_for_range, ":troop_no", heroes_begin, heroes_end),
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
+        (store_troop_faction, ":hero_faction_no", ":troop_no"),
+        (eq, "$g_talk_troop_faction", ":hero_faction_no"),
+        (troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death),
+        (assign, ":lord_killed", 1),
+    (try_end),
+
+    #Faction must be weak or have lost a lord to send companion back
+    (faction_get_slot, ":npc_faction_strength", "$g_talk_troop_faction", slot_faction_strength),
+    (this_or_next|le, ":npc_faction_strength", fac_str_very_weak),
+    (eq, ":lord_killed", 1),
 ], "You should return to {s14} and gather warriors to lead against the enemy.", "member_promote_lord",[]],
 
 [anyone,"member_promote_lord", [
