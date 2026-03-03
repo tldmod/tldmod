@@ -2436,6 +2436,7 @@ scripts = [
         (troop_set_slot, "trp_i5_gunda_orc_berserker", slot_troop_hp_shield, 20), #exception
         (troop_set_slot, "trp_npc9", slot_troop_is_berserker, 1), #Gulm
 	(try_end),
+    (troop_set_slot, "trp_i6_dun_retainer", slot_troop_hp_shield, 40),
 
 	#Init Health Regeneration on Kill
 
@@ -26143,9 +26144,10 @@ command_cursor_scripts = [
     (try_end),
 
     (try_begin),
-        (lt, "$savegame_version", 4360),
-        (assign, "$savegame_version", 4360),
+        (lt, "$savegame_version", 4364),
+        (assign, "$savegame_version", 4364),
         (call_script, "script_assign_loyalty"),
+        (troop_set_slot, "trp_i6_dun_retainer", slot_troop_hp_shield, 40),
     (try_end),
     
     (call_script, "script_update_all_notes"),
@@ -28326,6 +28328,9 @@ command_cursor_scripts = [
             (troop_set_slot, "trp_knight_5_7", slot_troop_retainer_troop, "trp_i6_iron_hills_grors_guard"), #Ironhills for Thorin
             (troop_set_slot, "trp_dwarf_lord", slot_troop_retainer_troop, "trp_i6_dwarf_longbeard_axeman"), #Longbeards for Dain
             (troop_set_slot, "trp_knight_2_7", slot_troop_retainer_troop, "trp_ac5_camel_rider"), #camel riders for Harad lord
+            (troop_set_slot, "trp_dunland_lord", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
+            (troop_set_slot, "trp_knight_5_11", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
+            (troop_set_slot, "trp_knight_5_12", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
         ]),
     #Retainers End
 

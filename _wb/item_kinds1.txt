@@ -303,10 +303,10 @@ itemsfile version 2
  itm_free_pilgrim_disguise {!}Pilgrim_Disguise {!}Pilgrim_Disguise 1  tld_robe_generic_dress 0  553713677 0 25 123731968 2 100 0 14 8 0 0 0 0 0 0 0 0
 0
 
- itm_leather_gloves Leather_Gloves Leather_Gloves 4  CWE_gloves_a_L 134  CWE_gloves_a_h_L 0  narf_leather_gauntlet_L 167772160  undeadtest_handL 64  65551 0 150 167772294 0 100 0 2 0 0 0 0 0 0 0 0 0
+ itm_leather_gloves Leather_Gloves Leather_Gloves 5  CWE_gloves_a_L 134  CWE_gloves_a_h_L 0  narf_leather_gauntlet_L 33554432  narf_demi_gauntlets_L 134217728  undeadtest_handL 64  65551 0 150 167772294 0 90 0 2 0 0 0 0 0 0 0 0 0
 0
 
- itm_mail_mittens Mail_Mittens Mail_Mittens 1  CWE_gauntlets_crysader_L 0  65551 0 600 704643206 1 100 0 4 0 0 0 0 0 0 0 0 0
+ itm_mail_mittens Mail_Mittens Mail_Mittens 1  CWE_gauntlets_crysader_L 0  65551 0 600 704643206 1 90 0 4 0 0 0 0 0 0 0 0 0
 0
 
  itm_leather_boots Leather_Boots Leather_Boots 2  fi_boot13 134  fi_boot8 0  65550 0 300 123731968 2 90 0 0 12 0 0 0 0 0 0 0 0
@@ -986,13 +986,13 @@ itemsfile version 2
  itm_orc_tribal_c Untreated_Skin Untreated_Skin 1  orc_tribal_c 0  16781325 0 1 123731968 3 100 0 1 2 0 0 0 0 0 0 0 0
 0
 
- itm_evil_gauntlets_a Black_Gloves Black_Gloves 4  CWE_gloves_a_black_L 134  CWE_gloves_a_black_h_L 0  CWE_gloves_lord_black_L 251658240  CWE_gauntlets_arabs_a_L 134217728  65551 0 500 123731968 0.25 100 0 2 0 0 0 0 0 0 0 0 0
+ itm_evil_gauntlets_a Black_Gloves Black_Gloves 4  CWE_gloves_a_black_L 134  CWE_gloves_a_black_h_L 0  CWE_gloves_lord_black_L 33554432  CWE_gauntlets_arabs_a_L 134217728  65551 0 160 167772294 0.25 90 0 2 0 0 0 0 0 0 0 0 0
 0
 
- itm_evil_gauntlets_b Black_Gauntlets Black_Gauntlets 2  narf_wisby_gauntlets_black_L 0  narf_wisby_gauntlets_red_L 704643072  65551 0 500 704643206 1 100 0 4 0 0 0 0 0 0 0 0 0
+ itm_evil_gauntlets_b Black_Gauntlets Black_Gauntlets 3  narf_demi_gauntlets_L 134  narf_wisby_gauntlets_black_L 0  narf_wisby_gauntlets_red_L 704643072  65551 0 600 704643206 1 90 0 4 0 0 0 0 0 0 0 0 0
 0
 
- itm_free_isen_orc_armor_a {!}Isengard_Orc_Armor {!}Isengard_Orc_Armor 1  orc_isen_light_1_b 0  16842765 0 51 123731968 5 100 0 5 3 0 0 0 0 0 0 0 0
+ itm_orc_mittens Orc_Mittens Orc_Mittens 4  CWE_gauntlets_crysader_orc_L 1  CWE_gauntlets_crysader_orc_L 0  CWE_gauntlets_crysader_orc_leather_L 134  narf_plate_mittens_L 167772160  65551 0 500 167772294 3 90 0 4 0 0 0 0 0 0 0 0 0
 0
 
  itm_isen_orc_light_a Isengard_Orc_Light_Harness Isengard_Orc_Light_Harness 4  orc_isen_light_1_b 1  orc_isen_light_1_b 0  orc_isen_light_1_a 134  orc_isen_light_1_c 167772160  16842765 0 401 123731968 4 90 0 7 2 0 0 0 0 0 0 0 0
@@ -1103,7 +1103,7 @@ itemsfile version 2
  itm_orc_sabre_b Orc_Sabre Orc_Sabre 2  orc_falchion 0  orc_sabre 786432  4259842 9223388529822793742 285 786582 2.5 91 0 0 0 0 26624 87 0 74 0 256 26
 0
 
- itm_orc_mangler Orc_Mangler Orc_Mangler 3  orc_club_a_long 0  orc_club_b_long 150  luc_morgenstern 786432  2251838810554372 4222125120425728 600 786582 6 93 0 0 0 13 25600 80 0 150 0 284 281
+ itm_orc_mangler Orc_Spiked_Staff Orc_Spiked_Staff 3  orc_club_a_long 0  orc_club_b_long 150  luc_morgenstern 786432  2251838810554372 4222125120425728 600 786582 6 93 0 0 0 13 25600 80 0 150 0 284 281
 0
 
  itm_isengard_sword Isengard_Sword Isengard_Sword 1  isengard_sword 0  4259842 9223388529822793742 300 786582 2.5 91 0 0 0 11 30720 93 0 75 0 256 30
@@ -1469,25 +1469,25 @@ itemsfile version 2
  itm_dunland_fur_2 Dunnish_Fur Dunnish_Fur 4  dunland_fur_3b 1  dunland_fur_3b 0  dunland_fur_3a 134  dunland_fur_3c 167772160  16842765 0 350 167772294 8 92 2 16 7 9 0 0 0 0 0 0 0
 0
 
- itm_dunland_mail_1 Dunnish_Hauberk Dunnish_Hauberk 4  dunland_hauberk_1b 1  dunland_hauberk_1b 0  dunland_hauberk_1a 134  dunland_hauberk_1c 167772160  16842765 0 800 167772294 23 92 2 22 7 12 0 0 0 0 0 0 0
+ itm_dunland_mail_1 Dunnish_Hauberk Dunnish_Hauberk 4  dunland_hauberk_1b 1  dunland_hauberk_1b 0  dunland_hauberk_1a 134  dunland_hauberk_1c 167772160  16842765 0 800 167772294 22 92 2 22 7 11 0 0 0 0 0 0 0
 0
 
- itm_dunland_mail_2 Dunnish_Hauberk Dunnish_Hauberk 4  dunland_hauberk_2b 1  dunland_hauberk_2b 0  dunland_hauberk_2a 134  dunland_hauberk_2c 167772160  16842765 0 1000 167772294 23 92 2 22 10 12 0 0 0 0 0 0 0
+ itm_dunland_mail_2 Dunnish_Hauberk Dunnish_Hauberk 4  dunland_hauberk_2b 1  dunland_hauberk_2b 0  dunland_hauberk_2a 134  dunland_hauberk_2c 167772160  16842765 0 1200 167772294 24 92 2 25 10 12 0 0 0 0 0 0 0
 0
 
- itm_dunland_chieftain Dunnish_Chief_Armor Dunnish_Chief_Armor 6  dunland_chieftain_b 1  dunland_chieftain_b 0  dunland_chieftain_a 134  dunland_chieftain_c 167772160  dunland_chieftain_spirit 256  barf_skeleton_greaves 64  16842765 0 1800 704643206 26 93 2 30 13 14 0 0 0 0 0 0 0
+ itm_dunland_chieftain Dunnish_Chief_Armor Dunnish_Chief_Armor 6  dunland_chieftain_b 1  dunland_chieftain_b 0  dunland_chieftain_a 134  dunland_chieftain_c 167772160  dunland_chieftain_spirit 256  barf_skeleton_greaves 64  16842765 0 1800 167772294 26 93 2 29 13 14 0 0 0 0 0 0 0
 0
 
- itm_dun_helm_a Dunnish_Wolf_Cap Dunnish_Wolf_Cap 1  dunland_wolfcap 0  65548 0 600 123731968 1 92 25 0 0 12 0 0 0 0 0 0 0
+ itm_dun_helm_a Dunnish_Wolf_Cap Dunnish_Wolf_Cap 4  dunland_wolfcap 134  dunland_wolfcap_2 1  dunland_wolfcap_2 0  dunland_wolfcap_3 167772160  65548 0 600 123731968 1 92 25 0 0 12 0 0 0 0 0 0 0
 0
 
- itm_dun_helm_b Dunnish_Fur_Cap Dunnish_Fur_Cap 4  dunland_furcap_1 134  dunland_furcap_2 1  dunland_furcap_2 0  dunland_antlercap 167772160  65548 0 400 123731968 1 91 21 0 0 10 0 0 0 0 0 0 0
+ itm_dun_helm_b Dunnish_Fur_Cap Dunnish_Fur_Cap 4  dunland_furcap_1 134  dunland_furcap_2 1  dunland_furcap_2 0  dunland_antlercap 167772160  65548 0 400 123731968 1 90 21 0 0 8 0 0 0 0 0 0 0
 0
 
  itm_dun_helm_c Dunnish_Tall_Helm Dunnish_Tall_Helm 4  dunland_helm_a 134  dunland_helm_b 1  dunland_helm_b 0  dunland_helm_c 167772160  65548 0 900 167772294 2 93 30 0 0 16 0 0 0 0 0 0 0
 0
 
- itm_free_dun_helm_d {!}Dunnish_Tall_Helm {!}Dunnish_Tall_Helm 1  dunland_helm_b 0  65548 0 900 167772294 2 93 30 0 0 16 0 0 0 0 0 0 0
+ itm_dun_helm_d Dunnish_Skullcap Dunnish_Skullcap 4  dunland_cap_1 134  dunland_cap_2 1  dunland_cap_2 0  dunland_cap_3 167772160  65548 0 500 167772294 2 91 23 0 0 9 0 0 0 0 0 0 0
 0
 
  itm_free_dun_helm_e {!}Dunnish_Antler_Helm {!}Dunnish_Antler_Helm 1  dunland_helm_c 0  65548 0 1200 704643206 4 94 35 0 0 17 0 0 0 0 0 0 0
@@ -1499,16 +1499,16 @@ itemsfile version 2
  itm_dun_shield_b Dunnish_Oval_Shield Dunnish_Oval_Shield 1  dun_roundshield_b_new 0  327687 5100273664 300 251658402 3.5 90 0 13 0 2 320 82 0 65 0 0 0
 0
 
- itm_dun_berserker Dunland_Chieftain_Sword Dunland_Chieftain_Sword 2  dunland_sword_1 0  dunland_sword_1_scab 3458764513820540928  4299161602 9223388564182532111 540 786582 3 95 0 0 0 12 32768 97 0 98 0 274 32
+ itm_dun_berserker Dunland_Chieftain_Sword Dunland_Chieftain_Sword 4  dunland_longsword_1 0  dunland_sword_1 156672  dunland_sword_1_scab 3458764513820540928  dunland_sword_1_scab 3458764513820697600  2251799817879554 9223388564182532111 540 786582 3 95 0 0 0 12 32768 97 0 98 0 274 32
 0
 
- itm_dunnish_antler_axe Dunnish_Antler_Axe Dunnish_Antler_Axe 1  dunland_antleraxe 0  80019458 9223388530091229198 300 150 2 90 0 0 0 0 35840 85 0 73 0 256 35
+ itm_dunnish_antler_axe Dunnish_Antler_Axe Dunnish_Antler_Axe 1  dunland_antleraxe_long 0  2251799820304388 4222129146954496 450 786582 3 91 0 0 0 10 35840 95 0 123 0 256 35
 0
 
- itm_dunnish_war_axe Dunnish_War_Axe Dunnish_War_Axe 1  dunland_axe_a 0  80019458 9223388530091229198 360 150 2 92 0 0 0 11 40960 97 0 50 0 256 40
+ itm_dunnish_war_axe Dunnish_War_Axe Dunnish_War_Axe 2  dunland_axe_a 0  dunland_axe_b 786432  80019458 9223388530091229198 360 786582 2 92 0 0 0 11 40960 97 0 50 0 256 40
 0
 
- itm_dunnish_axe Dunnish_Axe Dunnish_Axe 1  dunland_axe_b 0  80019458 9223388530091229198 320 150 2 91 0 0 0 0 35840 100 0 50 0 256 35
+ itm_dunnish_axe Dunnish_Light_Axe Dunnish_Light_Axe 4  bb_serbian_fight_axe_b 0  bb_serbian_fight_axe_b 1  bb_serbian_fight_axe_a 150  bb_slavic_axe_3 786432  12910594 9223388530091229198 320 150 2 91 0 0 0 0 35840 100 0 55 0 256 35
 0
 
  itm_dunland_spear Dunnish_Spear Dunnish_Spear 1  dunland_spear 0  2251802099941380 9254615759470985472 150 271496 2 90 0 0 0 0 0 95 0 150 0 276 0
@@ -1517,10 +1517,10 @@ itemsfile version 2
  itm_dunnish_pike Dunnish_Pike Dunnish_Pike 1  dunland_pike_2 0  2251800220893188 9254615759470985472 250 271496 3 91 0 0 0 10 0 85 0 205 0 282 0
 0
 
- itm_free_rohan_armor_a {!}Rohan_Shirt {!}Rohan_Shirt 1  rohan_recruit_poor 0  16842765 0 50 123731968 2 100 0 3 2 0 0 0 0 0 0 0 0
+ itm_dunnish_long_axe Dunnish_Long_Axe Dunnish_Long_Axe 4  bb_slavic_axe_1 0  bb_slavic_axe_1 1  bb_slavic_axe_2 150  bb_slavic_two_handed_axe_b 786432  2251799887413251 9223635923965575392 450 786582 3 94 0 0 0 13 35840 91 0 103 0 256 35
 0
 
- itm_free_rohan_armor_b {!}Rohan_Shirt_Cape {!}Rohan_Shirt_Cape 1  rohan_recruit_poor 0  16842765 0 400 123731968 3 100 0 5 3 0 0 0 0 0 0 0 0
+ itm_dun_shortsword Dunnish_Short_Sword Dunnish_Short_Sword 4  dunland_shortsword_1 0  dunland_shortsword_2 786432  dunland_shortsword_1 3458764513820540928  dunland_shortsword_2 3458764513821327360  2251799819976706 9223388564182532111 400 786582 3 91 0 0 0 0 26624 101 0 71 0 277 26
 0
 
  itm_free_rohan_armor_c {!}Rohan_Long_Shirt {!}Rohan_Long_Shirt 1  rohan_recruit_poor 0  16842765 0 500 123731968 5 100 0 8 5 0 0 0 0 0 0 0 0
@@ -2754,7 +2754,7 @@ itemsfile version 2
  itm_thrush_reward Thrush Thrush 1  prop_reward_thrush 0  4107 0 1000 0 1 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_gauntlets_reward Iron_Fists Iron_Fists 2  narf_finger_gauntlets_L 0  CWE_gauntlets_arabs_a_dwarf_L 536870912  4111 0 2000 0 2 100 0 4 0 15 0 0 0 0 0 0 0
+ itm_gauntlets_reward Iron_Fists Iron_Fists 2  narf_finger_gauntlets_L 0  CWE_gauntlets_arabs_a_dwarf_L 536870912  4111 0 2000 0 3 100 0 5 0 15 0 0 0 0 0 0 0
 0
 
  itm_save_compartibility_item10 {!}INVALID_ITEM {!}INVALID_ITEM 1  practice_sword 0  11 0 3 0 1.5 90 0 0 0 0 0 0 0 0 0 0 0
