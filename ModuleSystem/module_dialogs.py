@@ -1137,25 +1137,32 @@ dialogs = [
 [anyone|plyr,"member_talk", [
     (neg|troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_kingdom_companion),
 
-    #Companions disloyal to their faction can't be made lords
-    (troop_get_slot, ":npc_loyalty", "$g_talk_troop", slot_troop_faction_loyalty),
-    (ge, ":npc_loyalty", faction_loyalty_neutral),
-    (assign, reg20, ":npc_loyalty"),
-
-    #This option is only available if they have ranks in leadership
-    (store_skill_level, ":leadership", "skl_leadership", "$g_talk_troop"),
-    (ge, ":leadership", 1),
-
-    #Make sure their faction isn't defeated
-    (store_troop_faction, ":troop_faction", "$g_talk_troop"),
-    (neg|faction_slot_eq, ":troop_faction", slot_faction_state, sfs_defeated),
-
     #Don't show if their faction is an enemy in WoTT
     (store_troop_faction, "$g_talk_troop_faction", "$g_talk_troop"),
     (store_relation, ":rel", "$g_talk_troop_faction", "$players_kingdom"),
     (gt, ":rel", 0),
-    (str_store_faction_name, s14, ":troop_faction"),
+    (str_store_faction_name, s14, "$g_talk_troop_faction"),
+], "You should return to {s14} and gather warriors to lead against the enemy.", "member_promote_lord",[]],
 
+[anyone,"member_promote_lord", [
+    #Companions disloyal to their faction can't be made lords
+    (troop_get_slot, ":npc_loyalty", "$g_talk_troop", slot_troop_faction_loyalty),
+    (lt, ":npc_loyalty", faction_loyalty_neutral),
+    (assign, reg20, ":npc_loyalty"),
+], "Hrmph! Why should I care about {s14}? I'd rather stay here with you.", "member_talk",[]],
+
+[anyone,"member_promote_lord", [
+    #Make sure their faction isn't defeated
+    (faction_slot_eq, "$g_talk_troop_faction", slot_faction_state, sfs_defeated),
+], "Return to what? {s14} is gone. Perhaps if I had been able to return sooner it might have made some difference, but now the best place for me to seek vengeance is at your side.", "member_talk",[]],
+
+[anyone,"member_promote_lord", [
+    #This option is only available if they have ranks in leadership
+    (store_skill_level, ":leadership", "skl_leadership", "$g_talk_troop"),
+    (eq, ":leadership", 0),
+], "There are few who would follow me, I'm afraid. Perhaps I could learn a thing or two about leadership from you? Then we can discuss this again.", "member_talk",[]],
+
+[anyone,"member_promote_lord", [
     #See if the companion's faction has lost any lords
     (assign, ":lord_killed", 0),
     (try_for_range, ":troop_no", heroes_begin, heroes_end),
@@ -1165,12 +1172,12 @@ dialogs = [
         (troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death),
         (assign, ":lord_killed", 1),
     (try_end),
+    (eq, ":lord_killed", 0),
 
     #Faction must be weak or have lost a lord to send companion back
     (faction_get_slot, ":npc_faction_strength", "$g_talk_troop_faction", slot_faction_strength),
-    (this_or_next|le, ":npc_faction_strength", fac_str_very_weak),
-    (eq, ":lord_killed", 1),
-], "You should return to {s14} and gather warriors to lead against the enemy.", "member_promote_lord",[]],
+    (gt, ":npc_faction_strength", fac_str_weak),
+], "{s14} remains strong in the face of our enemies and has no need of additional commanders. If a commander of {s14} should fall in battle let us speak of this again, but for now I think it is better if I stay with you.", "member_talk",[]],
 
 [anyone,"member_promote_lord", [
     #Adjust text based on companion's leadership skill to communicate that low leadership companions will be defensive lords

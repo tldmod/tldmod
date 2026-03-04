@@ -27,7 +27,7 @@ imod_thick       = 25 # .......... +2 armor, +47 hp = "robust"
 imod_hardened    = 26 # .......... +3 armor
 imod_reinforced  = 27 # .......... +4 armor, +83 hp
 imod_cloak       = 28 # --------
-imod_lordly      = 29 # .......... +6 armor, +155 hp
+imod_lordly      = 29 # .......... +6 armor, +155 hp = "masterwork"
 imod_lame        = 30 # -5 horse maneuver, -10 horse speed
 imod_swaybacked  = 31 # -2 horse maneuver,  -4 horse speed
 imod_stubborn    = 32 # ..................... +5 hp, ......... +1 prerequisite
