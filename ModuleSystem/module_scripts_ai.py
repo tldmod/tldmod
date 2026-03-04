@@ -2325,6 +2325,8 @@ ai_scripts = [
         # See if this troop belongs to the leader of the current party
         (eq, ":companion_lord", ":troop_no"),
         (troop_slot_eq, ":kingdom_companion", slot_troop_occupation, slto_kingdom_companion),
+        # Make sure they aren't with the player currently
+        (neg|main_party_has_troop, ":kingdom_companion"),
 		(party_add_members, "$pout_party", ":kingdom_companion", 1),
       (try_end),
 

@@ -1069,6 +1069,16 @@ stls_passive = 2 #always staying at home center
 slot_troop_death_chance_modifier = 173
 
 slot_troop_lord = 174 # Troop id of a troop's lord. They will spawn in the appropriate lord's party
+slot_troop_lord_relation_string = 175 # How the troop refers to their lord, ie liege, commander, father
+slot_troop_relation_to_lord_string = 176 # How the lord refers to the troop, ie companion, son, captain. Not currently used but reserving it for the future
+
+slot_troop_quest_help_offer = 177 # Status of troop's offer to help the player complete their lord's quest
+slot_troop_quest_help_target = 178 # The quest the troop is offering to help with. Stored to avoid confusion if player got multiple quests from the same lord
+
+stqho_offer = 1 # Defaulting to 1 instead of 0 should prevent players with saved games from getting offers for quests they're in the middle of
+stqho_declined = 2
+stqho_party_full = 3
+stqho_accepted = 4
 
 #Healer Slots (troop slot)
 slot_troop_needs_healing = 308

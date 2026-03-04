@@ -2747,5 +2747,9 @@ str_credits_tld_7 = 2745
 str_credits_tld_8 = 2746
 str_credits_tld_9 = 2747
 str_credits_tld_10 = 2748
+str_commander = 2749
+str_companion = 2750
+str_player_name = 2751
+str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3 = 2752
 
 

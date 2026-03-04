@@ -17091,6 +17091,16 @@ scripts = [
        (is_between, ":giver_troop_no", heroes_begin, heroes_end),
        (troop_slot_eq, ":giver_troop_no", slot_troop_occupation, slto_kingdom_hero),
        (str_store_troop_name_link, s62, ":giver_troop_no"),
+
+       #Reset the "offer to help" slot of any companions of the giver troop
+       (try_for_range, ":kingdom_companion", kingdom_companions_begin, kingdom_companions_end),
+         (troop_slot_eq, ":kingdom_companion", slot_troop_occupation, slto_kingdom_companion),
+         (troop_get_slot, ":companion_lord", ":kingdom_companion", slot_troop_lord),
+         (eq, ":companion_lord", ":giver_troop_no"),
+         (troop_set_slot, ":kingdom_companion", slot_troop_quest_help_offer, stqho_offer),
+         (troop_set_slot, ":kingdom_companion", slot_troop_quest_help_target, ":quest_no"),
+       (try_end),
+
      (else_try),
        (str_store_troop_name, s62, ":giver_troop_no"),
      (try_end),
@@ -26120,7 +26130,6 @@ command_cursor_scripts = [
     (try_begin),
         (lt, "$savegame_version", 4348),
         (assign, "$savegame_version", 4348),
-        (call_script, "script_assign_kingdom_companion_lords"),
         
         #reassign troll troll hp shields incase they were overwritten before
         (try_for_range, ":trolls", trp_moria_troll, trp_multiplayer_profile_troop_male),
@@ -26146,6 +26155,12 @@ command_cursor_scripts = [
         (lt, "$savegame_version", 4360),
         (assign, "$savegame_version", 4360),
         (call_script, "script_assign_loyalty"),
+    (try_end),
+
+        (try_begin),
+        (lt, "$savegame_version", 4361),
+        (assign, "$savegame_version", 4361),
+        (call_script, "script_assign_kingdom_companion_lords"),
     (try_end),
     
     (call_script, "script_update_all_notes"),
@@ -28646,12 +28661,19 @@ command_cursor_scripts = [
 ("assign_kingdom_companion_lords", [
     (try_for_range, ":kingdom_companion", kingdom_companions_begin, kingdom_companions_end),
         (troop_set_slot, ":kingdom_companion", slot_troop_occupation, slto_kingdom_companion),
+        (troop_set_slot, ":kingdom_companion", slot_troop_lord_relation_string, str_commander),
+        (troop_set_slot, ":kingdom_companion", slot_troop_relation_to_lord_string, str_companion),
+        (troop_set_slot, ":kingdom_companion", slot_troop_honorific, str_player_name),
     (try_end),
     (troop_set_slot, trp_guthlaf, slot_troop_lord, trp_rohan_lord),
     (troop_set_slot, trp_damrod, slot_troop_lord, trp_knight_1_7),
     (troop_set_slot, trp_duilin, slot_troop_lord, trp_knight_1_5),
     (troop_set_slot, trp_derufin, slot_troop_lord, trp_knight_1_5),
     (troop_set_slot, trp_rumil, slot_troop_lord, trp_knight_3_6),
+
+    (troop_set_slot, trp_duilin, slot_troop_lord_relation_string, str_father),
+    (troop_set_slot, trp_derufin, slot_troop_lord_relation_string, str_father),
+    (troop_set_slot, trp_rumil, slot_troop_lord_relation_string, str_brother),
 ]),
 
 # script_cf_party_remove_random_prisoner, copy of script_cf_party_remove_random_regular_troop (InVain)

@@ -1026,7 +1026,8 @@ dialogs = [
             (store_character_level, ":player_level", "trp_player"),
             (val_add, ":player_level", 10),
             (this_or_next|ge, ":talk_troop_level", ":player_level"), # if player level + 10 > npc level (e.g. 46 for Glorfindel), skip this
-            (eq, "$g_talk_troop", "trp_npc21"), #also Berta
+            (this_or_next|eq, "$g_talk_troop", "trp_npc21"), #also Berta
+            (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_kingdom_companion),
                         ],
 "I'm sorry, my equipment is my own.", "do_member_trade",[]], #Glorfindel and others being pricks
 [anyone,"member_trade", [], "Very well, it's all here...", "do_member_trade",[(set_player_troop, "trp_player"),(change_screen_equip_other)]], #RamonNZ: set back to trp_player before open equipment or you get two screens of the NPCs equipment.
@@ -1117,11 +1118,25 @@ dialogs = [
 
 [anyone,"member_separate_yes", [], "Well. I'll be off, then. Look me up if you need me.", "close_window",[
     (call_script,"script_stand_back"),
-    (troop_set_slot, "$g_talk_troop", slot_troop_occupation, 0),
+    (try_begin),
+        (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_player_companion),
+        (troop_set_slot, "$g_talk_troop", slot_troop_occupation, 0),
         (troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_dismissed),
-        (remove_member_from_party, "$g_talk_troop"),(set_player_troop, "trp_player")]],
+    (try_end),
+    (remove_member_from_party, "$g_talk_troop"),(set_player_troop, "trp_player"),
+    (try_begin),
+        # If this is a kingdom companion then return them to their lord
+        (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_kingdom_companion),
+        (troop_get_slot, ":lord", "$g_talk_troop", slot_troop_lord),
+        (troop_get_slot, ":lord_party", ":lord", slot_troop_leaded_party),
+        (gt, ":lord_party", 0),
+        (party_add_members, ":lord_party", "$g_talk_troop", 1),
+    (try_end),    
+]],
 
 [anyone|plyr,"member_talk", [
+    (neg|troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_kingdom_companion),
+
     #Companions disloyal to their faction can't be made lords
     (troop_get_slot, ":npc_loyalty", "$g_talk_troop", slot_troop_faction_loyalty),
     (ge, ":npc_loyalty", faction_loyalty_neutral),
@@ -1194,7 +1209,10 @@ dialogs = [
 #MV: disabled - useless info, companions don't leave if their morale drops
 [anyone|plyr,"member_question_2", [(eq,1,0)], "How do you feel about the way things are going in this company?", "member_morale",[]],
 [anyone|plyr,"member_question_2", [], "How is your health?", "member_health",[]],
-[anyone|plyr,"member_question_2", [], "Tell me your story again.", "member_background_recap",[]],
+[anyone|plyr,"member_question_2", [
+    # Disable this for lord's companions that joind the player temporarily (for now)
+    (neg|troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_kingdom_companion),
+], "Tell me your story again.", "member_background_recap",[]],
 
 [anyone,"member_morale", [(call_script, "script_npc_morale", "$g_talk_troop"),], "{!}{s21}", "do_member_trade",[]],
 
@@ -14673,17 +14691,132 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (str_store_faction_name, s2, ":faction"),  
     (troop_get_slot, ":lord", "$g_talk_troop", slot_troop_lord),
     (str_store_troop_name, s3, ":lord"),
+    (str_store_string, s4, "str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3"),
 ],
-"I am {s1}, a soldier of {s2} in the company of {s3}.", "kingdom_companion_start", []],
+"{!}{s4}", "kingdom_companion_start", []],
 
 [anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_companion)],
 "Greetings, {playername}...", "kingdom_companion_start",[]],
 
+[anyone, "event_triggered", [
+    (eq, "$npc_map_talk_context", slot_troop_quest_help_offer),
+    (store_conversation_troop, "$g_talk_troop"),
+    (try_begin),
+        (troop_slot_eq,"$g_talk_troop",slot_troop_met, 0),
+        (troop_set_slot, "$g_talk_troop", slot_troop_met, 1),
+        (str_store_troop_name, s1, "$g_talk_troop"),
+        (store_troop_faction, ":faction", "$g_talk_troop"),
+        (str_store_faction_name, s2, ":faction"),  
+        (troop_get_slot, ":lord", "$g_talk_troop", slot_troop_lord),
+        (str_store_troop_name, s3, ":lord"),
+        (str_store_string, s4, "str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3"),
+        (str_store_string, s5, "@Wait! You are {playername}, correct? I don't believe we met yet. {s4} Before you leave..."),
+    (else_try),
+        (str_store_string, s5, "@Wait, {playername}, before you leave..."),
+    (try_end),
+],
+"{!}{s5}", "kingdom_companion_start", []],
+
+[anyone ,"kingdom_companion_start", [(main_party_has_troop, "$g_talk_troop"),],
+"I look forward to fighting alongside you.", "close_window",[]],
+
 [anyone ,"kingdom_companion_start", [
     (troop_get_slot, ":lord", "$g_talk_troop", slot_troop_lord),
     (str_store_troop_name, s3, ":lord"),
+    (troop_get_slot, ":lord_relation", "$g_talk_troop", slot_troop_lord_relation_string),
+    (str_store_string, s5, ":lord_relation"),
+    (assign, ":has_quest", 0),
+    (try_for_range, ":cur_quest", all_quests_begin, all_quests_end),
+        (quest_get_slot, ":giver_troop", ":cur_quest", slot_quest_giver_troop),
+        (eq, ":giver_troop", ":lord"),
+        (check_quest_active, ":cur_quest"),
+        (assign, ":has_quest", 1),
+    (try_end),
+    (eq, ":has_quest", 1),
+
+    (try_begin),
+        # Player has already declined help
+        (troop_slot_eq,"$g_talk_troop",slot_troop_quest_help_offer, stqho_declined),
+        (str_store_string,s4,"@My offer of assistance still stands, if you have changed your mind."),
+    (else_try),
+        # Player's party was full last time
+        (troop_slot_eq,"$g_talk_troop",slot_troop_quest_help_offer, stqho_party_full),
+        (str_store_string,s4,"@Have you room for me now? I may still be of assistance."),
+    (else_try),
+        # Player's accepted but the companion is no longer in the party
+        (troop_slot_eq,"$g_talk_troop",slot_troop_quest_help_offer, stqho_accepted),
+        (str_store_string,s4,"@Would you like me to join you again?"),
+    (else_try),
+        # This is the initial offer of help
+        (troop_slot_eq,"$g_talk_troop",slot_troop_quest_help_offer, stqho_offer),
+        (str_store_string,s4,"@I may be of assistance, if you would have me."),
+    (try_end),
 ],
-"If you have business with our company you should speak with my commander, {s3}.", "close_window", []],
+"My {s5}, {s3}, has given you a task of great importance. {s4}", "kingdom_companion_help_offer", []],
+
+[anyone|plyr ,"kingdom_companion_help_offer", [
+    # Can't take help if party is full
+    (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
+    (gt, ":free_capacity", 0)
+], "Your assistance would be most welcome.", "close_window", [
+    # Remove the troop from their lord's party
+    (troop_get_slot, ":lord", "$g_talk_troop", slot_troop_lord),
+    (troop_get_slot, ":lord_party", ":lord", slot_troop_leaded_party),
+    (remove_member_from_party, "$g_talk_troop", ":lord_party"),    
+
+    # Add them to player's party
+    (party_add_members, "p_main_party", "$g_talk_troop", 1),
+    (str_store_troop_name, s9, "$g_talk_troop"),
+    (display_message, "@{s9} joined your party"),
+
+    (troop_set_slot, "$g_talk_troop", slot_troop_quest_help_offer, stqho_accepted),
+]],
+
+[anyone|plyr ,"kingdom_companion_help_offer", [
+    (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
+    (le, ":free_capacity", 0)
+], "I fear I have no room for anyone else in my party.", "close_window", 
+[(troop_set_slot, "$g_talk_troop", slot_troop_quest_help_offer, stqho_party_full)]],
+
+[anyone|plyr ,"kingdom_companion_help_offer", [],  "Thank you, but your assistance is not required.", "close_window",
+[(troop_set_slot, "$g_talk_troop", slot_troop_quest_help_offer, stqho_declined)]],
+
+[anyone ,"kingdom_companion_start", [],
+"If you have business with our company you should speak with my {s5}, {s3}.", "close_window", []],
+
+# Lord's companion is ready to leave player since the lord's quest is finished
+
+[anyone, "event_triggered", [
+    (eq, "$npc_map_talk_context", slot_troop_quest_help_target), 
+    (store_conversation_troop, "$map_talk_troop"),
+    (troop_get_slot, ":lord_relation", "$map_talk_troop", slot_troop_lord_relation_string),
+    (str_store_string, s5, ":lord_relation"),
+
+    # Different dialog depending on the circumstances of the quest's completion
+    (try_begin),
+        (troop_get_slot, ":lord", "$map_talk_troop", slot_troop_lord),
+        (troop_slot_eq, ":lord", slot_troop_wound_mask, wound_death),
+        (str_store_string,s4,"@Ill tidings, {playername}. I have just learned that my {s5} has been slain in battle. I must return home at once!"),
+    (else_try),
+        (troop_get_slot, ":quest", "$map_talk_troop", slot_troop_quest_help_target),
+        (check_quest_failed , ":quest"),
+        (str_store_string,s4,"@Alas, we have failed in our mission! Let us hope we can each atone for this failure. I must now return to my {s5}."),
+    (else_try),
+        (str_store_string,s4,"@Now that your task for my {s5} is completed it is time for me to return."),
+    (try_end),
+],
+"{!}{s4}", "kingdom_companion_leaving", []],
+
+[anyone|plyr ,"kingdom_companion_leaving", [],  "Farewell.", "close_window", [
+    # Remove them from the player's party
+    (remove_member_from_party, "$map_talk_troop", "p_main_party"),
+
+    # Remove the troop from their lord's party (if lord's party hasn't been defeated)
+    (troop_get_slot, ":lord", "$g_talk_troop", slot_troop_lord),
+    (troop_get_slot, ":lord_party", ":lord", slot_troop_leaded_party),
+    (gt, ":lord_party", 0),
+    (party_add_members, ":lord_party", "$g_talk_troop", 1),
+]],
 
 [anyone|plyr,"party_encounter_hostile_defender", [], "Nothing. We'll leave you in peace.", "close_window", [(call_script,"script_stand_back"),(assign, "$g_leave_encounter",1)]],
 [trp_human_prisoner,"start", [], "* stares at you silently *", "close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")]],
