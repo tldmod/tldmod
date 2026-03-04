@@ -14717,7 +14717,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
         (troop_get_slot, ":lord", "$g_talk_troop", slot_troop_lord),
         (str_store_troop_name, s3, ":lord"),
         (str_store_string, s4, "str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3"),
-        (str_store_string, s5, "@Wait! You are {playername}, correct? I don't believe we met yet. {s4} Before you leave..."),
+        (str_store_string, s5, "@Wait! You are {playername}, correct? I don't believe we have met. {s4} Before you leave..."),
     (else_try),
         (str_store_string, s5, "@Wait, {playername}, before you leave..."),
     (try_end),
