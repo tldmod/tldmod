@@ -3698,14 +3698,9 @@ simple_triggers = [
   (12,[
     (gt, "$tld_war_began", 0),
     (try_for_range,":faction",kingdoms_begin,kingdoms_end),
-        (str_store_faction_name, s20, ":faction"),
-        (display_message, "@Checking faction {s20}"),
 
         (faction_get_slot, ":faction_strength", ":faction", slot_faction_strength),
         (le, ":faction_strength", fac_str_weak),
-
-        (display_message, "@{s20} Weak"),
-
 
         (assign, ":lord_killed", 0),
         (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
@@ -3714,9 +3709,6 @@ simple_triggers = [
             (eq, ":faction", ":hero_faction"),
             (troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death),
             (assign, ":lord_killed", 1),
-
-            (str_store_troop_name, s21, ":troop_no"),
-            (display_message, "@{s21} killed"),
         (try_end),
         (eq, ":lord_killed", 1),
 
