@@ -3694,37 +3694,49 @@ simple_triggers = [
       # (assign, "$gondor_reinforcement_event",1),
   ]),
   
-  
-  (12, #unused, 
-    [
-      (eq, 0, 1), #NEVER
-      #(eq, "$cheat_mode",1),
-      #(eq, "$tld_war_began", 1),
-      #(eq, "$gondor_reinforcement_event",1),
-      
-      # (faction_get_slot, ":strength", "fac_mordor", slot_faction_strength),
-      # (ge, ":strength", 3500),
-      
-      # (try_begin),
-        # (troop_get_slot, ":party", "trp_knight_1_3", slot_troop_leaded_party),
-        # (party_is_active, ":party"),
-        # #(call_script, "script_accompany_marshall", "trp_knight_1_1", "trp_knight_1_3"),
-        # (call_script, "script_accompany_marshall", "trp_knight_1_2", "trp_knight_1_3"),
-        # #(call_script, "script_accompany_marshall", "trp_knight_1_4", "trp_knight_1_3"),
-        # (call_script, "script_accompany_marshall", "trp_knight_1_5", "trp_knight_1_3"),
-        # (call_script, "script_accompany_marshall", "trp_knight_1_6", "trp_knight_1_3"),
-        # (call_script, "script_accompany_marshall", "trp_knight_1_7", "trp_knight_1_3"),
-        # (call_script, "script_accompany_marshall", "trp_knight_1_8", "trp_knight_1_3"),
-        # # (call_script, "script_accompany_marshall", "trp_knight_6_1", "trp_knight_1_3"),
-        # # (call_script, "script_accompany_marshall", "trp_knight_6_2", "trp_knight_1_3"),
-      # (try_end),
-      
-      # (try_begin),
-        # (eq, "$cheat_mode",1),
-        # (neq, "$g_fast_mode",1),
-        # (display_message, "@Gondor is accompanying the marshall!"),
-      # (try_end),
-      #(assign, "$gondor_reinforcement_event",0),
+  # Ren - since this is unused I'm repurposing it for the auto-promotion of unrecruited companions
+  (12,[
+    (gt, "$tld_war_began", 0),
+    (try_for_range,":faction",kingdoms_begin,kingdoms_end),
+        (str_store_faction_name, s20, ":faction"),
+        (display_message, "@Checking faction {s20}"),
+
+        (faction_get_slot, ":faction_strength", ":faction", slot_faction_strength),
+        (le, ":faction_strength", fac_str_weak),
+
+        (display_message, "@{s20} Weak"),
+
+
+        (assign, ":lord_killed", 0),
+        (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+            (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
+            (store_troop_faction, ":hero_faction", ":troop_no"),
+            (eq, ":faction", ":hero_faction"),
+            (troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death),
+            (assign, ":lord_killed", 1),
+
+            (str_store_troop_name, s21, ":troop_no"),
+            (display_message, "@{s21} killed"),
+        (try_end),
+        (eq, ":lord_killed", 1),
+
+        # Faction is weak and has lost a lord. Now see if it has any qualified companions
+        (try_for_range, ":lord_candidate", companions_begin, new_companions_end),
+            (this_or_next|is_between, ":lord_candidate", companions_begin, companions_end),
+            (is_between, ":lord_candidate", new_companions_begin, new_companions_end),
+            (store_troop_faction, ":candidate_faction", ":lord_candidate"),
+            (eq, ":candidate_faction", ":faction"),
+
+            # Troops must have leadership skill, not be in player's party, and not be dead
+            (neg|troop_slot_eq, ":lord_candidate", slot_troop_occupation, slto_kingdom_hero),
+            (neg|main_party_has_troop,":lord_candidate"),
+            (neg|troop_slot_eq, ":lord_candidate", slot_troop_wound_mask, wound_death),
+            (store_skill_level, ":leadership", "skl_leadership", ":lord_candidate"),
+            (ge, ":leadership", 3),
+
+            (call_script, "script_promote_companion_to_lord", ":lord_candidate", 0),
+        (try_end),
+    (try_end),
   ]),
   
   

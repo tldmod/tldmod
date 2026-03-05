@@ -11734,13 +11734,29 @@ scripts = [
     (store_script_param_1, ":troop_no"),
     (store_script_param_2, ":voluntary"),
 
-    #Remove companion from player party
-    #Might need to check they are actually in the party if we later decide to allow unrecruited or dismissed heroes to become lords
-    (remove_member_from_party, ":troop_no"),
+    (store_troop_faction, ":troop_faction", ":troop_no"),
+    (try_begin),
+        #Remove companion from player party
+        (main_party_has_troop,":troop_no"),
+        (remove_member_from_party, ":troop_no"),
+    (else_try),
+        #If they weren't in the player's party show a message to inform the player
+        (store_relation, ":rel", "$players_kingdom", ":troop_faction"),
+        (try_begin),
+            (ge, ":rel", 0), 
+            (assign, ":news_color", color_good_news),
+            (play_sound, "snd_enemy_lord_dies"),
+        (else_try),
+            (assign, ":news_color", color_bad_news),
+            (play_sound, "snd_lord_dies"),
+        (try_end),
+        (str_store_troop_name, s30,":troop_no"),
+        (str_store_faction_name, s31,":troop_faction"),
+        (display_message,"@{s30} of {s31} has assembled a host of warriors to join {s31}'s army.", ":news_color"),
+    (try_end),
 
     #Give them the same treatment regular kingdom heroes get on game start, more or less
     (troop_add_gold,":troop_no",100000), #Ren - I dunno if this matters but kingdom heroes get it so I copied it here
-    (store_troop_faction, ":troop_faction", ":troop_no"),
     #We may need to do this in the game start script if there's a possibility the troop's faction and original faction might be different
     (troop_set_slot, ":troop_no", slot_troop_original_faction, ":troop_faction"),
     (troop_set_slot, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
@@ -11778,9 +11794,8 @@ scripts = [
         (troop_set_slot, ":troop_no", slot_troop_lord_state, stls_passive),
     (try_end),
 
-
     #Set the troop's home to where they were first met
-    (troop_get_slot, ":town", ":troop_no", slot_troop_first_encountered),
+    (troop_get_slot, ":town", ":troop_no", slot_troop_cur_center),
     (troop_set_slot, ":troop_no", slot_troop_home, ":town"),
 
     #If troop's home is destroyed spawn their party at the faction capital instead
