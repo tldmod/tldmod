@@ -4111,8 +4111,8 @@ mission_templates = [ # not used in game
             (gt, ":friends_nearby", 4), #so players can't solo-sneak
             (agent_is_alive, ":player_agent"),
             (troop_set_slot,"trp_no_troop",":slot",-2), #this should disable reinforcements
-            (assign, reg78, ":entry_number"),
-            (display_message, "@Defender reinforcement point {reg78} taken!"),
+            # (assign, reg78, ":entry_number"),
+            # (display_message, "@Defender reinforcement point {reg78} taken!"),
             (display_message, "@Defender reinforcement point taken!"),
             # (agent_set_animation, ":player_agent", "anim_cheer_player"),
             (call_script, "script_troop_get_cheer_sound", "trp_player"),

@@ -1232,6 +1232,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
     (set_fixed_point_multiplier, 100),
 	(item_get_horse_speed, ":aoe", ":weapon"),
 	(val_div, ":damage", 2), #half damage for aoe hits
+    (agent_get_team, ":troll_team", ":dealer"),
 
     (try_for_agents, ":aoe_hit", pos3, ":aoe"),
       (agent_is_active, ":aoe_hit"),
@@ -1314,6 +1315,8 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 	  
 	  (try_begin),
 			(neq, ":aoe_hit", ":receiver"),
+            (agent_get_team, ":agent_team", ":aoe_hit"),
+            (teams_are_enemies, ":agent_team", ":troll_team"),
 			(agent_deliver_damage_to_agent, ":dealer", ":aoe_hit", -1, "itm_troll_aoe"),
 			#(agent_deliver_damage_to_agent_advanced, ":aoe_damage", ":dealer", ":aoe_hit", -1, "itm_troll_aoe"),
  # 			(agent_deliver_damage_to_agent_advanced, <destination>, <attacker_agent_id>, <agent_id>, <value>, [weapon_item_id]),
@@ -1370,7 +1373,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
     (agent_set_slot, ":troll", slot_agent_troll_status, 0),
     
     (agent_get_position, pos69, ":troll"), #used for script
-    (call_script, "script_aoe_pushback", 30, 400, ":troll"),
+    (call_script, "script_aoe_pushback", 30, 400, ":troll", 1), #friendly fire
 
     (try_for_agents, ":troll", pos69, 500), #morale effect
         (agent_get_team, ":agent_team", ":troll"),
@@ -1432,7 +1435,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
     (agent_play_sound, ":troll", "snd_troll_yell"),    
     (agent_get_position, pos69, ":troll"), #used for script
     (position_move_z, pos69, 100),
-    (call_script, "script_aoe_pushback", 5, 400, ":troll"),
+    (call_script, "script_aoe_pushback", 5, 400, ":troll", 1), #friendly fire
     (val_add, ":troll_found", 1),
     #(display_message, "@troll charges {s5} at distance {reg78}"),
   (try_end),
@@ -1454,7 +1457,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
     
     (agent_get_position, pos69, ":troll_agent"), #used for script
     (position_move_z, pos69, 100),
-    (call_script, "script_aoe_pushback", 60, 400, ":troll_agent"),
+    (call_script, "script_aoe_pushback", 60, 400, ":troll_agent", 1), #friendly fire
     
     (agent_get_team, ":agent_team", ":troll_agent"),
     (try_for_agents, ":enemy_agent", pos69, 500), #morale effect
@@ -1501,7 +1504,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
     (le, ":chance", 5),
     (agent_set_animation, ":troll", "anim_kick_right_leg"),
     (copy_position, pos69, pos6),
-    (call_script, "script_aoe_pushback", 20, 150, ":troll"),
+    (call_script, "script_aoe_pushback", 20, 150, ":troll", 0),
     # (str_store_agent_name, s5, ":target"),
     # (assign, reg78, ":dist"),
     # (display_message, "@troll kicking {s5} at distance {reg78}"),
@@ -2585,7 +2588,7 @@ nazgul_flying = ((is_a_wb_mt==1) and [
         (agent_play_sound, ":target_agent", "snd_blunt_hit"),
         (copy_position, pos69, pos30), #needed for script
         (set_show_messages, 0),
-        (call_script, "script_aoe_pushback", 50, 400, -1), #50 damage, 4m radius, no dealer agent
+        (call_script, "script_aoe_pushback", 50, 400, -1, 1), #50 damage, 4m radius, no dealer agent, friendly fire
         (agent_deliver_damage_to_agent, ":target_agent", ":target_agent", 50, itm_troll_aoe),
         (set_show_messages, 1),
         
@@ -2960,6 +2963,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (copy_position, pos2, pos1),
     (position_move_y, pos2, 100),
     (val_add, ":attack_range", 50), #aoe buff
+    
+    (agent_get_team, ":animal_team", ":agent"),
 
     (assign, ":hit_anim", -1),
     #Damaging Enemies  
@@ -2967,6 +2972,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
       (agent_is_alive, ":enemy_agent"),
       #(agent_is_human, ":enemy_agent"), also allow to damage mounts, but need to specify for animation further down
       (agent_is_active, ":enemy_agent"),
+      (agent_get_team, ":agent_team", ":enemy_agent"),
+      (teams_are_enemies, ":agent_team", ":animal_team"),
       (neq, ":enemy_agent", ":agent"),
       (neq, ":enemy_agent", ":horse"),
       (gt, ":enemy_agent", 0),

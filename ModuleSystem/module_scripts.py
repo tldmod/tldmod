@@ -31929,7 +31929,7 @@ if is_a_wb_script==1:
 				(agent_play_sound, ":agent", "snd_wooden_hit_high_armor_high_damage"),
 			  (else_try),
 				(agent_play_sound, ":agent", "snd_blunt_hit"),
-			  (try_end),  		    
+			  (try_end),
 	    (try_end),
 		(agent_set_slot, ":agent", slot_agent_troll_status, 0),
 	(try_end),
@@ -31942,8 +31942,14 @@ if is_a_wb_script==1:
 	(store_script_param_1, ":damage"), #if =0 damage will be calculated using attacker's weapon item and stats
 	(store_script_param_2, ":area"),
     (store_script_param, ":dealer_agent", 3),
+    (store_script_param, ":friendly_fire", 4), #deal damage to friendly agents - they will still be send flying back
 
 	(set_fixed_point_multiplier, 100),
+    (try_begin),
+        (ge, ":dealer_agent", 0),
+        (agent_is_active, ":dealer_agent"),
+        (agent_get_team, ":dealer_team", ":dealer_agent"),
+    (try_end),
 
     (try_for_agents, ":nearby", pos69, ":area"),
         (agent_is_alive, ":nearby"),
@@ -31969,11 +31975,14 @@ if is_a_wb_script==1:
           (agent_stop_running_away, ":target_horse"),
         (try_end),
         (agent_set_animation, ":nearby", ":hit_anim"),
-        (str_store_agent_name, s2, ":nearby"),
+        (agent_get_team, ":victim_team", ":nearby"),
+        #(str_store_agent_name, s2, ":nearby"),
         #(display_message, "@{s2} attacked"),
         (try_begin),
             (gt, ":dealer_agent", -1),
             (agent_is_active, ":dealer_agent"), #hopefully avoid "invalid agent" error"
+            (this_or_next|teams_are_enemies, ":dealer_team", ":victim_team"),
+            (eq, ":friendly_fire", 1),
             (agent_deliver_damage_to_agent, ":dealer_agent", ":nearby", ":damage", "itm_troll_aoe"),
         (else_try), #no dealer agent
             (agent_deliver_damage_to_agent, ":nearby", ":nearby", ":damage", "itm_troll_aoe"), #we use this weapon to avoid any "on_hit" triggers
@@ -32893,7 +32902,8 @@ if is_a_wb_script==1:
             (le, ":dist", 1600),
             # (set_spawn_position),
             # (spawn_scene_prop, spr_fire_big),
-            (prop_instance_add_particle_system, ":instance_no", "psys_fireplace_fire_big"),
+            (init_position, pos12),
+            (prop_instance_add_particle_system, ":instance_no", "psys_fireplace_fire_big", pos12),
         (try_end),
         (play_sound_at_position, snd_fire_loop, pos3), #only at last spiderweb instance
         (play_sound, "snd_spider_die", sf_2d|sf_vol_10),
@@ -32922,10 +32932,10 @@ if is_a_wb_script==1:
         (prop_instance_get_position, pos11, ":nearest_brazier"),
         (position_move_z, pos11, 50),
         (set_position_delta, 0, 0, 50),
-        (prop_instance_add_particle_system, ":nearest_brazier", "psys_cooking_fire_1"),
-        (prop_instance_add_particle_system, ":nearest_brazier", "psys_fire_sparks_1"),
-        (prop_instance_add_particle_system, ":nearest_brazier", "psys_fire_glow_1"),
-        (prop_instance_add_particle_system, ":nearest_brazier", "psys_cooking_smoke"),
+        (prop_instance_add_particle_system, ":nearest_brazier", "psys_cooking_fire_1", pos11),
+        (prop_instance_add_particle_system, ":nearest_brazier", "psys_fire_sparks_1", pos11),
+        (prop_instance_add_particle_system, ":nearest_brazier", "psys_fire_glow_1", pos11),
+        (prop_instance_add_particle_system, ":nearest_brazier", "psys_cooking_smoke", pos11),
         (play_sound_at_position, snd_torch_loop, pos11),
         (try_for_range, ":unused", 0, 20),
             (agent_get_position, pos10, ":player_agent"),
