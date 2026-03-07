@@ -3727,6 +3727,12 @@ simple_triggers = [
             (ge, ":leadership", 3),
 
             (call_script, "script_promote_companion_to_lord", ":lord_candidate"),
+
+            #Reuse the "besieged by" variables so we don't need to introduce new globals
+            (troop_get_slot, "$besieged_center_for_menu", ":lord_candidate", slot_troop_home),
+            (assign, "$besieged_by_troop_for_menu", ":lord_candidate"),
+            (assign, "$besieged_by_faction_for_menu", ":candidate_faction"),
+            (jump_to_menu, "mnu_companion_promoted_event"),
         (try_end),
     (try_end),
   ]),

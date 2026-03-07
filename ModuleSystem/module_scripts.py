@@ -11738,20 +11738,6 @@ scripts = [
         #Remove companion from player party
         (main_party_has_troop,":troop_no"),
         (remove_member_from_party, ":troop_no"),
-    (else_try),
-        #If they weren't in the player's party show a message to inform the player
-        (store_relation, ":rel", "$players_kingdom", ":troop_faction"),
-        (try_begin),
-            (ge, ":rel", 0), 
-            (assign, ":news_color", color_good_news),
-            (play_sound, "snd_enemy_lord_dies"),
-        (else_try),
-            (assign, ":news_color", color_bad_news),
-            (play_sound, "snd_lord_dies"),
-        (try_end),
-        (str_store_troop_name, s30,":troop_no"),
-        (str_store_faction_name, s31,":troop_faction"),
-        (display_message,"@{s30} of {s31} has assembled a host of warriors to join {s31}'s army.", ":news_color"),
     (try_end),
 
     #Give them the same treatment regular kingdom heroes get on game start, more or less
