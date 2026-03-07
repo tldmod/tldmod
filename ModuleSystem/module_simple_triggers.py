@@ -3726,7 +3726,7 @@ simple_triggers = [
             (store_skill_level, ":leadership", "skl_leadership", ":lord_candidate"),
             (ge, ":leadership", 3),
 
-            (call_script, "script_promote_companion_to_lord", ":lord_candidate", 0),
+            (call_script, "script_promote_companion_to_lord", ":lord_candidate"),
         (try_end),
     (try_end),
   ]),
