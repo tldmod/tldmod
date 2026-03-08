@@ -2310,6 +2310,31 @@ simple_triggers = [
           (assign, "$npc_map_talk_context", slot_troop_last_complaint_hours),
           (start_map_conversation, ":npc"),
         (try_end),
+        (neq, "$npc_map_talk_context", 0), #fail if nothing happened here
+      (else_try),
+        # See if a kingdom companion that has joined the player should leave because lord's quest is finished
+        (try_for_range, ":kingdom_companion", kingdom_companions_begin, kingdom_companions_end),
+            (troop_slot_eq, ":kingdom_companion", slot_troop_occupation, slto_kingdom_companion),
+            (main_party_has_troop, ":kingdom_companion"),
+            (troop_get_slot, ":quest", ":kingdom_companion", slot_troop_quest_help_target),
+            # Check all possible quest end states so players can't hang onto a companion forever by not turning in a completed quest
+            (this_or_next|check_quest_finished, ":quest"),
+            (this_or_next|check_quest_succeeded, ":quest"),
+            (this_or_next|check_quest_failed, ":quest"),
+            (this_or_next|check_quest_concluded, ":quest"),
+            (neg|check_quest_active, ":quest"),
+            (assign, "$npc_map_talk_context", slot_troop_quest_help_target),
+            (start_map_conversation, ":kingdom_companion"),
+        (try_end),
+        (neq, "$npc_map_talk_context", 0), #fail if nothing happened here
+    (else_try),
+        # See if a kingdom companion is willing to join the player to help with a quest
+        (try_for_range, ":kingdom_companion", kingdom_companions_begin, kingdom_companions_end),
+            (troop_slot_eq, ":kingdom_companion", slot_troop_occupation, slto_kingdom_companion),
+            (troop_slot_eq,":kingdom_companion",slot_troop_quest_help_offer, stqho_offer),
+            (assign, "$npc_map_talk_context", slot_troop_quest_help_offer),
+            (start_map_conversation, ":kingdom_companion"),
+        (try_end),
       (try_end),
   ]),
   #NPC changes end
