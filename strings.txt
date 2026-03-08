@@ -1,5 +1,5 @@
 stringsfile version 1
-2749
+2753
 str_no_string {***}NO_STRING!
 str_empty_string {***}_
 str_yes Yes.
@@ -2749,3 +2749,7 @@ str_credits_tld_7 {***}^^^Noxbru_^Renmauzuo_^Sid_the_Kid_^Saxondragon_^Snouz_^Ya
 str_credits_tld_8 {***}^^Dain_Ironfoot^Farodon^foxyman^Giles^Ursca^Yoshiboy_^Abhuva_^Amman_^Asterix_^Balduran_^Barf_^Buzvonlurt_^Conners_^dunde_
 str_credits_tld_9 {***}^^freakin_wat_^Gutekfiutek_^HokieBT_^Kolba_^LynX_^mandible_^Pagan_^Petrovski_^Romainoir_^Rongar_^Smile_^Taal_^Treebeard_^Sibylla_^Stefano_
 str_credits_tld_10 {***}Pre_3.0_Contributors:
+str_commander commander
+str_companion companion
+str_player_name {playername}
+str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3 I_am_{s1},_a_soldier_of_{s2}_in_the_company_of_{s3}.

@@ -679,7 +679,8 @@ simple_triggers = [
       (try_end),
   ]),
   # (22) Process vassal ai
-  ( 2,[(call_script, "script_process_kingdom_parties_ai")]),
+  ( 2,[(ge,"$tld_war_began",1),  # vassal AI can change only if War started, GA
+       (call_script, "script_process_kingdom_parties_ai")]),
   # (23) Process sieges
 (24,[(try_begin),(ge,"$tld_war_began",1),(call_script, "script_process_sieges"),(try_end)]),
   
@@ -4083,7 +4084,7 @@ simple_triggers = [
             (gt, ":fac_strength", 5000),
             (neg|faction_slot_eq, fac_rohan, slot_faction_marshall, "trp_rohan_lord"),
             (faction_set_slot, "fac_rohan", slot_faction_marshall, "trp_rohan_lord"), 
-            (display_message, "@{!}Theoden activated"),
+            #(display_message, "@{!}Theoden activated"),
             (le, ":fac_strength", 3000),
             (faction_get_slot,":fac_strength","fac_rohan",slot_faction_strength_tmp),
             (val_add, ":fac_strength", 1000),

@@ -38,6 +38,7 @@ hobbit_general_talk_ask_3
 hobbit_general_talk_ask_accept
 hobbit_general_talk_ask_reject
 hobbit_deliver_message
+morannon_quest_01
 HD_defense_01
 aragorn_thanks_HD
 treebeard_isengard_1
@@ -664,6 +665,11 @@ secret_guardian_let_through1
 party_encounter_hostile_attacker
 party_encounter_hostile_defender
 party_encounter_hostile_ultimatum_surrender
+kingdom_companion_meet
+kingdom_companion_intro
+kingdom_companion_start
+kingdom_companion_help_offer
+kingdom_companion_leaving
 battle_reason_stated
 free
 view_char_requested
