@@ -11728,19 +11728,20 @@ scripts = [
 ]),
 
 # script_promote_companion_to_lord
-# Input: arg1 = troop_no, arg2 = voluntary
+# Input: arg1 = troop_no
 # Output: none
 ("promote_companion_to_lord", [
     (store_script_param_1, ":troop_no"),
-    (store_script_param_2, ":voluntary"),
 
-    #Remove companion from player party
-    #Might need to check they are actually in the party if we later decide to allow unrecruited or dismissed heroes to become lords
-    (remove_member_from_party, ":troop_no"),
+    (store_troop_faction, ":troop_faction", ":troop_no"),
+    (try_begin),
+        #Remove companion from player party
+        (main_party_has_troop,":troop_no"),
+        (remove_member_from_party, ":troop_no"),
+    (try_end),
 
     #Give them the same treatment regular kingdom heroes get on game start, more or less
     (troop_add_gold,":troop_no",100000), #Ren - I dunno if this matters but kingdom heroes get it so I copied it here
-    (store_troop_faction, ":troop_faction", ":troop_no"),
     #We may need to do this in the game start script if there's a possibility the troop's faction and original faction might be different
     (troop_set_slot, ":troop_no", slot_troop_original_faction, ":troop_faction"),
     (troop_set_slot, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
@@ -11778,9 +11779,8 @@ scripts = [
         (troop_set_slot, ":troop_no", slot_troop_lord_state, stls_passive),
     (try_end),
 
-
     #Set the troop's home to where they were first met
-    (troop_get_slot, ":town", ":troop_no", slot_troop_first_encountered),
+    (troop_get_slot, ":town", ":troop_no", slot_troop_cur_center),
     (troop_set_slot, ":troop_no", slot_troop_home, ":town"),
 
     #If troop's home is destroyed spawn their party at the faction capital instead
@@ -11832,16 +11832,6 @@ scripts = [
     (faction_get_slot, ":fac_strength", ":troop_faction", slot_faction_strength_tmp),
     (val_add, ":fac_strength", ":strength_increase"),
     (faction_set_slot,":troop_faction",slot_faction_strength_tmp,":fac_strength"),
-
-    #If player sent companion away voluntarily grant rank and influence rewards
-    (try_begin),
-        (eq, ":voluntary", 1),
-        (faction_get_slot, ":influence", ":troop_faction", slot_faction_influence),
-        (val_add, ":influence", ":level"),
-        (faction_set_slot, ":troop_faction", slot_faction_influence, ":influence"),
-        (store_mul, ":rank_increase", ":level", 10),
-        (call_script, "script_increase_rank", ":troop_faction", ":rank_increase"),
-    (try_end),
 ]),
 
 # script_get_template_troop_for_companion

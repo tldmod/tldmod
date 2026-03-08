@@ -13605,6 +13605,24 @@ game_menus = [
     ("exit_game2",[],"Quit to main menu",[(change_screen_quit),]),
     ]
  ),  
+
+ ("companion_promoted_event",0,
+   "^^^^^A messenger arrived reporting that {s2} has assembled a host of warriors at {s1} to join the army of {s3}.",
+    "none",
+    [   
+    	(str_store_party_name, s1, "$besieged_center_for_menu"),
+    	(str_store_faction_name, s3, "$besieged_by_faction_for_menu"),
+    	(str_store_troop_name, s2, "$besieged_by_troop_for_menu"),
+		(party_get_slot,":mesh","$besieged_center_for_menu",slot_town_menu_background),
+		(set_background_mesh, ":mesh"),
+		(set_fixed_point_multiplier, 100),
+		(position_set_x, pos0, 65),
+		(position_set_y, pos0, 30),
+		(position_set_z, pos0, 100),
+		(set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "$besieged_by_troop_for_menu", pos0)],
+   	[("companion_promoted_event_close", [], "Close", [(change_screen_return)]),
+   	
+]),
  
 ] 
 
