@@ -26159,10 +26159,12 @@ command_cursor_scripts = [
         (troop_set_slot, "trp_i6_dun_retainer", slot_troop_hp_shield, 40),
     (try_end),
 
-        (try_begin),
-        (lt, "$savegame_version", 4361),
-        (assign, "$savegame_version", 4361),
+    (try_begin),
+        (lt, "$savegame_version", 4365),
+        (assign, "$savegame_version", 4365),
         (call_script, "script_assign_kingdom_companion_lords"),
+        (call_script, "script_clone_troop", "trp_i5_isen_fighting_uruk_champion", "trp_lugdush"),
+
     (try_end),
     
     (call_script, "script_update_all_notes"),
@@ -28675,6 +28677,7 @@ command_cursor_scripts = [
     (troop_set_slot, trp_duilin, slot_troop_lord, trp_knight_1_5),
     (troop_set_slot, trp_derufin, slot_troop_lord, trp_knight_1_5),
     (troop_set_slot, trp_rumil, slot_troop_lord, trp_knight_3_6),
+    (troop_set_slot, trp_lugdush, slot_troop_lord, trp_knight_1_15),
 
     (troop_set_slot, trp_duilin, slot_troop_lord_relation_string, str_father),
     (troop_set_slot, trp_derufin, slot_troop_lord_relation_string, str_father),
