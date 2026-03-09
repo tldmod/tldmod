@@ -23965,10 +23965,11 @@ scripts = [
 
         (setup_quest_text, "qst_guardian_party_quest"),
         (str_store_string, s2, "@Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard."),
-        (call_script, "script_start_quest", "qst_guardian_party_quest", "trp_gandalf"),
+        (quest_set_slot, "qst_guardian_party_quest", slot_quest_giver_troop, "trp_gandalf"),
         (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_center, ":target_center"),
         (quest_set_slot, "qst_guardian_party_quest", slot_quest_expiration_days, 3),
         (quest_set_slot, "qst_guardian_party_quest", slot_quest_xp_reward, 3000),
+        (call_script, "script_start_quest", "qst_guardian_party_quest", "trp_gandalf"),
 
           (try_begin), #send Theoden and disable Rohan faction AI
               (troop_get_slot, ":theoden_party", "trp_rohan_lord", slot_troop_leaded_party),
@@ -24055,6 +24056,7 @@ scripts = [
       (str_store_string, s52, "@You have failed me, {playername} – or perhaps it is I who have failed you. Perhaps there was some flaw in my design, some grave blunder I did not recognise… The terror of Mordor comes. Leave me now, {playername}. We may meet again… or perhaps not."),
       (assign, "$g_tld_convo_lines", 3),
       (call_script, "script_end_quest", "qst_guardian_party_quest"),
+      (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 99), #make sure it only happens once
             
     ##NAZGUL
     (else_try), 
@@ -28787,11 +28789,14 @@ command_cursor_scripts = [
   # # OUTPUT: none
   ("cf_isengard_guardian_quest_fail",
     [(neg|check_quest_failed, "qst_guardian_party_quest"),
-    (quest_get_slot, ":status", "qst_guardian_party_quest", slot_quest_current_state), 
-    (is_between, ":status", -10, 10), #lazy way of making sure this script only fires once
-    (val_mul, ":status", 10),
-    (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, ":status"),
+    (call_script, "script_fail_quest", "qst_guardian_party_quest"), 
+    #lazy way of making sure this script only fires once
+    #this is necessary because script_destroy_center also calls this script, so there's a possible loop 
+    # (quest_slot_eq, "qst_guardian_party_quest", slot_quest_target_amount, 0), 
+    # (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_amount, 1),
+    
     (quest_get_slot, ":target_party", "qst_guardian_party_quest", slot_quest_target_party),
+    (quest_get_slot, ":status", "qst_guardian_party_quest", slot_quest_current_state),
     (try_begin),
         (le, ":status", 0), #only catches Ents if Hornburg path or no path taken
         (gt, ":target_party", 1),
@@ -28801,34 +28806,36 @@ command_cursor_scripts = [
     (try_end),
     
     #detach all parties from destroyed center
-    (quest_get_slot, ":target_center", "qst_guardian_party_quest", slot_quest_target_center),
-    (remove_member_from_party, trp_aragorn, ":target_center"),
-    (remove_member_from_party, trp_legolas, ":target_center"),  
-    (remove_member_from_party, trp_gimli, ":target_center"),
-    (party_get_num_attached_parties, ":num_attached_parties", ":target_center"),
-    (try_for_range_backwards, ":attached_party_rank", 0, ":num_attached_parties"),
-        (party_get_attached_party_with_rank, ":attached_party", ":target_center", ":attached_party_rank"),
-        (gt, ":attached_party", 0),
-        (party_is_active, ":attached_party"),
-        (party_detach, ":attached_party"),
-        (inflict_casualties_to_party_group, ":attached_party", 300, p_temp_wounded),
-    (try_end),
+    (try_begin),
+        (quest_get_slot, ":target_center", "qst_guardian_party_quest", slot_quest_target_center),
+        (party_slot_eq, ":target_center", slot_center_destroyed, 0),
+        (remove_member_from_party, trp_aragorn, ":target_center"),
+        (remove_member_from_party, trp_legolas, ":target_center"),  
+        (remove_member_from_party, trp_gimli, ":target_center"),
+        (party_get_num_attached_parties, ":num_attached_parties", ":target_center"),
+        (try_for_range_backwards, ":attached_party_rank", 0, ":num_attached_parties"),
+            (party_get_attached_party_with_rank, ":attached_party", ":target_center", ":attached_party_rank"),
+            (gt, ":attached_party", 0),
+            (party_is_active, ":attached_party"),
+            (party_detach, ":attached_party"),
+            (inflict_casualties_to_party_group, ":attached_party", 300, p_temp_wounded),
+        (try_end),
 
-    (try_begin),#disable scripted mode for Theoden and Rohan
-        (troop_get_slot, ":theoden_party", "trp_rohan_lord", slot_troop_leaded_party),
-        (gt, ":theoden_party", 0),
-        (party_set_slot, ":theoden_party", slot_party_scripted_ai, 0),
-        (faction_set_slot, "fac_rohan", slot_faction_scripted_until, 0),
+        (try_begin),#disable scripted mode for Theoden and Rohan
+            (troop_get_slot, ":theoden_party", "trp_rohan_lord", slot_troop_leaded_party),
+            (gt, ":theoden_party", 0),
+            (party_set_slot, ":theoden_party", slot_party_scripted_ai, 0),
+            (faction_set_slot, "fac_rohan", slot_faction_scripted_until, 0),
+        (try_end),
+                    
+        #destroy it
+        (str_store_party_name, s2, ":target_center"),
+        (display_log_message, "@The host of Isengard has razed {s2}!", color_bad_news),
+        (call_script, "script_destroy_center", ":target_center"),
     (try_end),
-                
-    #destroy it
-    (str_store_party_name, s2, ":target_center"),
-    (display_log_message, "@The host of Isengard has razed {s2}!", color_bad_news),
-    (call_script, "script_destroy_center", ":target_center"),                
     
-    #send Gandalf to have a word with you...
-    (call_script, "script_fail_quest", "qst_guardian_party_quest"),    
-    (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_rohan_quest_fail),    
+    #send Gandalf to have a word with you...   
+    (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_rohan_quest_fail),
      ]),
 
 ("troop_get_horror_sound", [
