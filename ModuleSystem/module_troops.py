@@ -3713,6 +3713,11 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 ["kingdom_companions_end","{!}BUG","{!}BUG",0,0,0,fac_commoners,[],0,0,0,0],  
 
+# Unused stub since this was trp_last
+["unused_stop_march_2026","{!}","{!}",tf_dunedain| tfg_ranged| tfg_gloves| tfg_armor| tfg_boots,0,0,fac_imladris,[itm_arnor_helm_c_bad,itm_arnor_med_b_good_cloak,itm_leather_gloves,itm_leather_boots,itm_leather_boots_dark_bad,itm_elven_bow,itm_ithilien_arrows,itm_arnor_sword_f,itm_arnor_sword_a,itm_riv_spear,itm_arnor_shield_a,],attr_tier_6,wp_melee(360)|wp_archery(300),knows_common|knows_athletics_8|knows_shield_3|knows_power_draw_5|knows_power_strike_5|knows_ironflesh_6,arnor_face_older_1,arnor_face_older_2],
+
+["a5_arnor_dunedain_tracker","Dúnedain Tracker","Dúnedain Trackers",tf_dunedain| tfg_ranged| tfg_gloves| tfg_armor| tfg_boots,0,0,fac_imladris,[itm_arnor_helm_c_bad,itm_arnor_med_b_good_cloak,itm_leather_gloves,itm_leather_boots,itm_leather_boots_dark_bad,itm_elven_bow,itm_ithilien_arrows,itm_arnor_sword_f,itm_arnor_sword_a,itm_riv_spear,itm_arnor_shield_a,],attr_tier_6,wp_melee(360)|wp_archery(300),knows_common|knows_athletics_8|knows_shield_3|knows_power_draw_5|knows_power_strike_5|knows_ironflesh_6|knows_tracking_10,arnor_face_older_1,arnor_face_older_2],
+
 #Add new troops here, right before trp_last!
 ["last","{!}BUG","{!}BUG",0,0,0,fac_commoners,[],0,0,0,0],    #the last troop must stay a stub, so that range calls for all troops include the last but one troop.
 # For future troop additions, always make sure to fix trp_last overwrite in script_update_savegame

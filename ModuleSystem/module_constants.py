@@ -1080,6 +1080,8 @@ stqho_declined = 2
 stqho_party_full = 3
 stqho_accepted = 4
 
+slot_troop_boost_skill = 179 # Party skill enhanced when this troop is in the party
+
 #Healer Slots (troop slot)
 slot_troop_needs_healing = 308
 

@@ -13730,6 +13730,14 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (str_store_faction_name, s12, reg10)],
 "You are wounded... you should go back home in {s12}, where you can be more useful than here.", "disband_regular_member_confirm",[]],
 
+[anyone|plyr,"regular_member_talk", [
+    (troop_slot_ge, "$g_talk_troop", slot_troop_boost_skill, 0),
+], "What skills do you possess?", "regular_member_explain_skills",[]],
+
+[anyone,"regular_member_explain_skills", [
+    (troop_slot_eq, "$g_talk_troop", slot_troop_boost_skill, skl_tracking),
+], "I am a skilled tracker, commander. Whether you are hunting your foes or searching for allies in need of aid I can help you find them more easily.", "regular_member_talk",[]],
+
 [anyone|plyr,"regular_member_talk", [], "Nothing. Keep moving.", "close_window",[(call_script,"script_stand_back"),]],
   
 [anyone,"disband_regular_member_confirm", [

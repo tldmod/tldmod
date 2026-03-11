@@ -1995,6 +1995,8 @@ scripts = [
     (call_script, "script_assign_loyalty"),
     (call_script, "script_assign_kingdom_companion_lords"),
 
+    (troop_set_slot, "trp_a5_arnor_dunedain_tracker", slot_troop_boost_skill, "skl_tracking"),
+
 # spawn some lords in distinct towns and set home town, TLD
     ]+[
 	(call_script, "script_create_kingdom_hero_party", lords_spawn[x][0], lords_spawn[x][1]) for x in range(len(lords_spawn))
@@ -5160,6 +5162,40 @@ scripts = [
                 (try_end),
             (try_end),
         (end_try),
+
+        # Check for skill bonus troops in this troop's party (if this troop is party leader)
+        (try_begin),
+            (troop_is_hero, ":troop_no"),
+            (try_begin),
+                (eq, ":troop_no", trp_player),
+                (assign, ":party", "p_main_party"),
+            (else_try),
+                (troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
+            (try_end),
+
+            (ge, ":party", 0),
+            (party_is_active, ":party"),
+            (party_get_num_companion_stacks, ":num_stacks", ":party"),
+            (assign, ":troop_count", 0),
+            (try_for_range, ":stack", 0, ":num_stacks"),
+                (party_stack_get_troop_id, ":stack_troop", ":party", ":stack"),
+                (troop_slot_eq, ":stack_troop", slot_troop_boost_skill, ":skill_no"),
+                (party_stack_get_size, ":stack_size", ":party", ":stack"),
+                # Ren: Should orcs count for less? (If we add orc skill troops)
+                (val_add, ":troop_count", ":stack_size"),
+            (try_end),
+
+            (try_begin),
+                (ge, ":troop_count", 15),
+                (val_add, ":modifier_value", 3),
+            (else_try),
+                (ge, ":troop_count", 5),
+                (val_add, ":modifier_value", 2),
+            (else_try),
+                (ge, ":troop_count", 1),
+                (val_add, ":modifier_value", 1),
+            (try_end),
+        (try_end),
     (end_try),
 
     (set_trigger_result, ":modifier_value"),
@@ -26156,7 +26192,13 @@ command_cursor_scripts = [
         (assign, "$savegame_version", 4365),
         (call_script, "script_assign_kingdom_companion_lords"),
         (call_script, "script_clone_troop", "trp_i5_isen_fighting_uruk_champion", "trp_lugdush"),
+    (try_end),
 
+    (try_begin),
+        (lt, "$savegame_version", 4373),
+        (assign, "$savegame_version", 4373),
+        (call_script, "script_assign_retainers"),
+        (troop_set_slot, "trp_a5_arnor_dunedain_tracker", slot_troop_boost_skill, "skl_tracking"),
     (try_end),
     
     (call_script, "script_update_all_notes"),
@@ -28340,6 +28382,7 @@ command_cursor_scripts = [
             (troop_set_slot, "trp_dunland_lord", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
             (troop_set_slot, "trp_knight_5_11", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
             (troop_set_slot, "trp_knight_5_12", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
+            (troop_set_slot, "trp_knight_3_13", slot_troop_retainer_troop, "trp_a5_arnor_dunedain_tracker"), #Trackers for Halbarad
         ]),
     #Retainers End
 
