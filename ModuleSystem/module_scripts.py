@@ -1995,7 +1995,7 @@ scripts = [
     (call_script, "script_assign_loyalty"),
     (call_script, "script_assign_kingdom_companion_lords"),
 
-    (troop_set_slot, "trp_a5_arnor_dunedain_tracker", slot_troop_boost_skill, "skl_tracking"),
+    (troop_set_slot, "trp_a5_dunedain_hunter", slot_troop_boost_skill, "skl_tracking"),
 
 # spawn some lords in distinct towns and set home town, TLD
     ]+[
@@ -26198,7 +26198,7 @@ command_cursor_scripts = [
         (lt, "$savegame_version", 4373),
         (assign, "$savegame_version", 4373),
         (call_script, "script_assign_retainers"),
-        (troop_set_slot, "trp_a5_arnor_dunedain_tracker", slot_troop_boost_skill, "skl_tracking"),
+        (troop_set_slot, "trp_a5_dunedain_hunter", slot_troop_boost_skill, "skl_tracking"),
     (try_end),
     
     (call_script, "script_update_all_notes"),
@@ -28382,7 +28382,7 @@ command_cursor_scripts = [
             (troop_set_slot, "trp_dunland_lord", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
             (troop_set_slot, "trp_knight_5_11", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
             (troop_set_slot, "trp_knight_5_12", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
-            (troop_set_slot, "trp_knight_3_13", slot_troop_retainer_troop, "trp_a5_arnor_dunedain_tracker"), #Trackers for Halbarad
+            (troop_set_slot, "trp_knight_3_13", slot_troop_retainer_troop, "trp_a5_dunedain_hunter"), #Trackers for Halbarad
         ]),
     #Retainers End
 

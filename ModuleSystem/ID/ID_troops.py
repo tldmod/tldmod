@@ -1031,5 +1031,5 @@ trp_future_unique_9 = 1029
 trp_future_unique_10 = 1030
 trp_kingdom_companions_end = 1031
 trp_unused_stop_march_2026 = 1032
-trp_a5_arnor_dunedain_tracker = 1033
+trp_a5_dunedain_hunter = 1033
 trp_last = 1034
