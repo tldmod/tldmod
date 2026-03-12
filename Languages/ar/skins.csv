@@ -2,12 +2,12 @@ skinkey_chin_size|حجم الذقن
 skinkey_chin_shape|شكل الذقن
 skinkey_chin_forward|الذقن الى الامام
 skinkey_jaw_width|عرض الفك
-; skinkey_jaw_definition|Jaw Definition
-; skinkey_lower_lip|Lower Lip
-; skinkey_upper_lip|Upper Lip
+skinkey_jaw_definition|تحديد الفك
+skinkey_lower_lip|الشفة السفلى
+skinkey_upper_lip|الشفة العليا
 skinkey_mouth_nose_distance|البعد بين الفك و الانف
 skinkey_mouth_width|عرض الفم
-; skinkey_nostril_size|Nostril Size
+skinkey_nostril_size|حجم فتحتي الأنف
 skinkey_nose_height|طول الانف
 skinkey_nose_width|عرض الانف
 skinkey_nose_size|حجم الانف
@@ -42,5 +42,5 @@ skinkey_frawn|الشعر
 skinkey_mouth_vert_pos|مكان الفم الأفقى
 skinkey_mouth_to_nose_dist|المسافة من الفم للأنف
 skinkey_chin_width|عرض الذقن
-; skinkey_ear_pointiness|Ear Pointiness
-; skinkey_ear_length|Ear Length
+skinkey_ear_pointiness|مدى استدقاق الأذن
+skinkey_ear_length|طول الأذن

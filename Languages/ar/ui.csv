@@ -1,21 +1,21 @@
 ui_at_learning_limit|(فى مرحلة تعلم الحدود فى هذا السباق)
 ui_not_enough_skill_points_to_learn|(ليس هناك نقاط خبرة كافية للتعلم)
 ui_not_enough_attributetype_to_learn_this_skill|(لايكفى %s لكى تتعلم هذه المهارة)
-; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: weapon-master, Shield, Athletics, Riding, Mounted archery, Looting.
+ui_explanation_agility|الرشاقة: كل نقطة تمنح خمس نقاط سلاح وتزيد سرعة السلاح بنسبة 0.5%. لا يمكن تطوير المهارات التالية لأكثر من 1/3 من الرشاقة: سيد الأسلحة، الدرع، ألعاب القوى، الركوب، رماية الفروسية، النهب.
 ui_retreated_battle|%s قد هرب من المعركة.
 ui_riding_skill_not_adequate_to_mount|(مهارة ركوب الحصان قليلة جداً)
 ui_camp|أفعال
-; ui_tutorial_inventory|In The Last Days, you need Resource Points to obtain equipment. Resource Points are a measure of how willing a faction is to keep you supplied, and of how much of the faction resources you are entitled to use.
-; ui_you_dont_have_value|Don't have: %s
-; ui_merchant_cant_afford_value|%s: You are giving us more than we need! Maybe keep something more for you (you are giving goods for %s, we can use only %s).
-; ui_merchant_pay_whatever|No, I don't need any of that, keep it.
-ui_horse|امتطاء 
-; ui_reclaim_your_sold_goods|Reclaim the goods you gave before giving that!
-; ui_return_your_bought_goods|Return the goods you have taken before giving that!
-; ui_return_price|if returned: +%d Res.P.
-; ui_sell_price|if given: +%d Res.P.
-; ui_reclaim_price|to reclaim: -%d Res.P.
-; ui_buying_price|to claim: -%d Res.P.
+ui_tutorial_inventory|في The Last Days، تحتاج إلى نقاط موارد للحصول على المعدات. نقاط الموارد هي مقياس لمدى استعداد الفصيل لإمدادك، ومقدار موارد الفصيل التي يحق لك استخدامها.
+ui_you_dont_have_value|لا تملك: %s
+ui_merchant_cant_afford_value|%s: أنت تعطينا أكثر مما نحتاج! ربما احتفظ بشيء أكثر لنفسك (أنت تعطي بضائع بقيمة %s، يمكننا استخدام %s فقط).
+ui_merchant_pay_whatever|لا، لا أحتاج أيًا من ذلك، احتفظ به.
+ui_horse|امتطاء
+ui_reclaim_your_sold_goods|استعد البضائع التي أعطيتها قبل إعطاء ذلك!
+ui_return_your_bought_goods|أعد البضائع التي أخذتها قبل إعطاء ذلك!
+ui_return_price|إذا أُعيد: +%d نقطة مورد
+ui_sell_price|إذا أُعطي: +%d نقطة مورد
+ui_reclaim_price|لاستعادتها: -%d نقطة مورد
+ui_buying_price|لأخذها: -%d نقطة مورد
 ui_notification_riding_skill_not_enough|مهارة ركوب الحصان ليست عالية كافية لامتطاء هذا الحصان.
 ui_notification_payment_value|يستهلك %s
 ui_notification_payment_receive_value|يُحصل %s
@@ -46,8 +46,8 @@ ui_value_denars|%d نقاط الموارد.
 ui_cannot_be_used_on_horseback|لا يمكن استخدامه حينما يكون مُركب
 ui_upgrade_to_value| يطور إلى %s
 ui_notification_cant_upgrade|(لا يمكن التطوير حينما يعطى للجنود)
-; ui_lance_control|Lance Control:
-; ui_manual_easy|Manual (Easy)
-; ui_manual_hard|Manual (Hard)
-; ui_campaign_ai|Campaign AI (Unused):
-; ui_crouch|Crouch
+ui_lance_control|التحكم بالرمح:
+ui_manual_easy|يدوي (سهل)
+ui_manual_hard|يدوي (صعب)
+ui_campaign_ai|ذكاء اصطناعي للحملة (غير مستخدم):
+ui_crouch|انحناء

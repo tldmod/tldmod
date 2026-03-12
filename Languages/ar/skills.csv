@@ -4,45 +4,45 @@ skl_leadership|ٌقائد
 skl_leadership_desc|كل نقطة تُزيد الحد الأقصى للوحدات التي يمكن قيادتها بـ5، تزيد الروح المعنوية للمجموعة وتُنقص اجور الوحدات بـ5%%.(مهارة قائد)
 skl_prisoner_management|إدارة السجناء
 skl_prisoner_management_desc|كل مستوى من هذه المهارة يزيد الحد الأقصى للسجناء بـ%d.(مهارة قائد)
-; skl_persuasion|Wildcraft
-; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
-; skl_engineer|-----
-; skl_engineer_desc|-----
+skl_persuasion|الثقافة البرية
+skl_persuasion_desc|القدرة على البقاء في البرية وتسخيرها لإرادتك. تؤثر هذه المهارة على قدرة المجموعة على الاختباء من العدو، وسرعة المجموعة أثناء وجودها في التضاريس الحرجية. (مهارة مجموعة)
+skl_engineer|-----
+skl_engineer_desc|-----
 skl_first_aid|العلاج البدائي
-; skl_first_aid_desc|Heroes regain 5%% per skill level of hit-points lost during mission. (Party skill)
-; skl_surgery|Surgery
-; skl_surgery_desc|Each point to this skill gives a 4%% chance that a mortally struck party member will be wounded rather than killed. (Party skill)
-; skl_wound_treatment|Wound Treatment
-; skl_wound_treatment_desc|Party healing speed is increased by 20%% per level of this skill. (Party skill)
-; skl_inventory_management|Inventory Management
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. (Leader skill)
-; skl_spotting|Spotting
-; skl_spotting_desc|Party seeing range is increased by 10%% per skill level. (Party skill)
-; skl_pathfinding|Path-finding
-; skl_pathfinding_desc|Party map speed is increased by 3%% per skill level. (Party skill)
-; skl_tactics|Tactics
-; skl_tactics_desc|Every two levels of this skill increases starting battle advantage by 1. (Party skill)
-; skl_tracking|Tracking
-; skl_tracking_desc|Tracks become more informative. (Party skill)
-; skl_trainer|Trainer
-; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Personal skill)
-; skl_looting|Looting
-; skl_looting_desc|This skill increases the amount of loot obtained by 10%% per skill level. (Party skill)
-; skl_horse_archery|Mounted Archery
-; skl_horse_archery_desc|Reduces damage and accuracy penalties for archery and throwing when mounted. (Personal skill)
-; skl_riding|Riding
-; skl_riding_desc|enables you to ride horses (or other beasts) of higher difficulty levels and increases your riding speed and manuever. (Personal skill)
-; skl_athletics|Athletics
-; skl_athletics_desc|improves your running speed. (Personal skill)
-; skl_shield|Shield
-; skl_shield_desc|reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)
-; skl_weapon_master|Weapon Master
-; skl_weapon_master_desc|makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)
-; skl_power_draw|Power Draw
-; skl_power_draw_desc|lets character use more powerful bows. Each point to this skill (up to four plus power-draw requirement of the bow) increases bow damage by 14%%. (Personal skill)
-; skl_power_throw|Power Throw
-; skl_power_throw_desc|Each point to this skill increases throwing damage by 10%%. (Personal skill)
-; skl_power_strike|Power Strike
-; skl_power_strike_desc|Each point to this skill increases melee damage by 8%%. (Personal skill)
+skl_first_aid_desc|يستعيد الأبطال 5%% من نقاط الصحة المفقودة أثناء المهمة لكل مستوى مهارة. (مهارة مجموعة)
+skl_surgery|جراحة
+skl_surgery_desc|كل نقطة في هذه المهارة تعطي فرصة 4%% بأن عضو المجموعة المصاب بضربة قاتلة سيُصاب بدلاً من أن يُقتل. (مهارة مجموعة)
+skl_wound_treatment|علاج الجروح
+skl_wound_treatment_desc|تزداد سرعة شفاء المجموعة بنسبة 20%% لكل مستوى من هذه المهارة. (مهارة مجموعة)
+skl_inventory_management|إدارة المخزون
+skl_inventory_management_desc|تزيد سعة المخزون بمقدار +6 لكل مستوى مهارة. (مهارة قائد)
+skl_spotting|مراقبة
+skl_spotting_desc|يزداد مدى رؤية المجموعة بنسبة 10%% لكل مستوى مهارة. (مهارة مجموعة)
+skl_pathfinding|إيجاد الطريق
+skl_pathfinding_desc|تزداد سرعة المجموعة على الخريطة بنسبة 3%% لكل مستوى مهارة. (مهارة مجموعة)
+skl_tactics|تكتيكات
+skl_tactics_desc|كل مستويين من هذه المهارة يزيدان ميزة بدء المعركة بمقدار 1. (مهارة مجموعة)
+skl_tracking|تتبع
+skl_tracking_desc|تصبح الآثار أكثر إفادة. (مهارة مجموعة)
+skl_trainer|مدرب
+skl_trainer_desc|كل يوم، كل بطل لديه هذه المهارة يضيف بعض الخبرة إلى كل عضو آخر في المجموعة مستواه أقل من مستواه. الخبرة المكتسبة هي: {0,4,10,16,23,30,38,46,55,65,80}. (مهارة شخصية)
+skl_looting|نهب
+skl_looting_desc|تزيد هذه المهارة كمية الغنائم التي تم الحصول عليها بنسبة 10%% لكل مستوى مهارة. (مهارة مجموعة)
+skl_horse_archery|رماية الفروسية
+skl_horse_archery_desc|يقلل من عقوبات الضرر والدقة للرماية والرمي عند الركوب. (مهارة شخصية)
+skl_riding|ركوب
+skl_riding_desc|يمكنك من ركوب الخيول (أو الوحوش الأخرى) ذات مستويات الصعوبة الأعلى ويزيد من سرعة ركوبك ومناورتك. (مهارة شخصية)
+skl_athletics|ألعاب قوى
+skl_athletics_desc|يحسن سرعة جريك. (مهارة شخصية)
+skl_shield|درع
+skl_shield_desc|يقلل الضرر الذي يلحق بالدروع (بنسبة 8%% لكل مستوى مهارة) ويحسن سرعة الدرع وتغطيته. (مهارة شخصية)
+skl_weapon_master|سيد الأسلحة
+skl_weapon_master_desc|يجعل تعلم كفاءات الأسلحة أسهل ويزيد حدود الكفاءة. الحدود هي: 60، 100، 140، 180، 220، 260، 300، 340، 380، 420. (مهارة شخصية)
+skl_power_draw|سحب قوي
+skl_power_draw_desc|يسمح للشخصية باستخدام أقواس أكثر قوة. كل نقطة في هذه المهارة (حتى أربعة زائد متطلبات السحب القوي للقوس) تزيد من ضرر القوس بنسبة 14%%. (مهارة شخصية)
+skl_power_throw|رمي قوي
+skl_power_throw_desc|كل نقطة في هذه المهارة تزيد من ضرر الرمي بنسبة 10%%. (مهارة شخصية)
+skl_power_strike|ضربة قوية
+skl_power_strike_desc|كل نقطة في هذه المهارة تزيد من ضرر القتال المتلاحم بنسبة 8%%. (مهارة شخصية)
 skl_ironflesh|لحم الحديد
-; skl_ironflesh_desc|Each point to this skill increases hit points by +2. (Personal skill)
+skl_ironflesh_desc|كل نقطة في هذه المهارة تزيد نقاط الصحة بمقدار +2. (مهارة شخصية)
