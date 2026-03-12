@@ -26,7 +26,6 @@ itm_steppe_horse|حصان السهوب
 itm_courser|حصان جواد
 itm_hunter|حصان صياد
 itm_pony|مهر
-itm_arnor_warhorse|حصان حرب آرنوري
 itm_dunedain_warhorse|حصان حرب دونيدان
 itm_rohirrim_courser|جواد روهيريم
 itm_rohirrim_hunter|صياد روهيريم
@@ -66,21 +65,17 @@ itm_wargarmored_2b|ورغ مدرع
 itm_wargarmored_2c|ورغ مدرع
 itm_wargarmored_3a|ورغ مدرع
 itm_warg_reward|ورغ ضخم
-itm_axe_a|فأس الشماليين
-itm_axe_b|فأس ملتحي للشماليين
-itm_axe_c|فأس الشماليين
-itm_axe_d|فأس الشماليين
+; itm_animal_big|Big Animal
+; itm_animal_small|Small Animal
+; itm_troll_weapon_long|Giant Halberd
+; itm_troll_weapon_dmg|Giant Mace
 itm_tree_trunk_club_a|جذع شجرة
-itm_long_bearded_axe|فأس طويلة ملتحية للشماليين
-itm_2_handed_axe|فأس طويلة للشماليين
-itm_free_giant_hammer|مطرقة عملاقة
 itm_giant_mace|صولجان عملاق
 itm_troll_shield_a|درع القزم (الترول)
 itm_arrows|سهام
 itm_gondor_arrows|سهام غوندور
 itm_orc_javelin|رمح عفريت ثقيل
 itm_khergit_arrows|سهام شائكة
-itm_rohan_arrows_2|سهام روهيريم
 itm_harad_arrows|سهام هاردريم
 itm_corsair_arrows|سهام قرصان
 itm_ithilien_arrows|سهام إثيليان
@@ -91,8 +86,23 @@ itm_isengard_arrow|سهام آيزنغارد
 itm_leather_gloves|قفازات جلدية
 itm_mail_mittens|قفازات بريدية
 itm_leather_boots|أحذية جلدية
+; itm_leather_boots_dark|Rider Boots
+; itm_splinted_greaves|Splinted Greaves
 itm_white_tunic_a|زي مدني
+itm_rohan_shoes|أحذية جلدية
+itm_furry_boots|أحذية من الفرو
 itm_black_tunic|سترة سوداء
+; itm_hood_black|Black Hood
+; itm_hood_green|Green Hood
+; itm_hood_grey|Grey Hood
+; itm_hood_leather|Leather Hood
+; itm_mail_coif|Mail Coif
+itm_axe_a|فأس الشماليين
+itm_axe_b|فأس ملتحي للشماليين
+itm_axe_c|فأس الشماليين
+itm_axe_d|فأس الشماليين
+itm_long_bearded_axe|فأس طويلة ملتحية للشماليين
+itm_2_handed_axe|فأس طويلة للشماليين
 itm_shortened_spear|رمح مقصور
 itm_spear|رمح
 itm_light_lance|رمح خفيف
@@ -110,7 +120,7 @@ itm_dwarf_short_bow|قوس قزم قصير
 itm_harad_bow|قوس هاراد منحني
 itm_lg_bow|قوس حارس النسر
 itm_riv_bow|قوس ريفيندل
-itm_glorfi_bow|قوس غلورفيندل
+; itm_rhun_bow|Balchoth Bow
 itm_lorien_bow|قوس غالادريم
 itm_isengard_large_bow|قوس آيزنغارد كبير
 itm_dale_bow|قوس ديل
@@ -124,30 +134,25 @@ itm_harad_javelin|رمح هاراد
 itm_gondor_javelin|رمح غوندور
 itm_rohirrim_throwing_axe|فؤوس روهيريم للرمي
 itm_loss_throwing_axes|فؤوس لوسارناخ للرمي
-itm_arnor_helm_a|خوذة أرنور
-itm_arnor_helm_b|خوذة أرنور
+; itm_free_dunedain_helm_a|Arnor Light Helm
+; itm_free_dunedain_helm_b|Arnor Helm
 itm_arnor_helm_c|خوذة أرنور
-itm_dunedain_helm_a|قلنسوة دونيدان
-itm_dunedain_helm_b|خوذة أرنور مزخرفة
-itm_arnor_armor_a|درع آرنوري
-itm_arnor_armor_b|درع آرنوري
-itm_arnor_armor_c|جلد حارس دونيدان
-itm_arnor_armor_d|جلد حارس دونيدان
-itm_arnor_armor_e|سترة آرنورية معززة
-itm_arnor_armor_f|درع آرنوري رفيع
+itm_arnor_helm_b|خوذة أرنور
+itm_arnor_helm_a|خوذة أرنور
+; itm_arnor_light_a|Dunedain Ranger Jerkin
+; itm_arnor_light_b|Dunedain Ranger Mail
+; itm_arnor_med_a|Dunedain Ranger Coat
+; itm_arnor_med_b|Dunedain Mail
+; itm_arnor_heavy|Arnorian High Armor
 itm_arnor_greaves|ساقان آرنوريتان
-itm_arnor_splinted|ساقان آرنوريتان مصفحتان
-itm_arnor_shield_a|درع أرنور
 itm_arnor_shield_c|درع فرسان أرنور
-itm_arnor_shield_b|درع أرنور
-itm_arnor_shield_d|درع فرسان أرنور
-itm_arnor_sword_a|سيف أرنور النغل
+itm_arnor_shield_a|درع أرنور
 itm_arnor_sword_c|سيف أرنور النغل
+itm_arnor_sword_a|سيف أرنور النغل
 itm_arnor_sword_f|سيف أرنور قصير
-itm_riv_helm_a|قلنسوة ريفيندل
 itm_riv_helm_b|خوذة رامي ريفيندل
 itm_riv_helm_c|خوذة مشاة ريفيندل
-itm_riv_tiara|تاج لورد الجان
+; itm_tiara_reward|Elf Lord Tiara
 itm_riv_shield_a|درع ريفيندل
 itm_riv_shield_b|درع ريفيندل
 itm_riv_bas_sword|سيف ريفيندل النغل
@@ -155,14 +160,13 @@ itm_riv_1h_sword|سيف ريفيندل
 itm_riv_riding_sword|سيف فرسان ريفيندل
 itm_riv_archer_sword|سيف رامي ريفيندل
 itm_riv_spear|رمح ريفيندل
-itm_riv_armor_light|درع ريفيندل
-itm_riv_armor_light_inf|درع ريفيندل
-itm_riv_armor_archer|درع ريفيندل
-itm_riv_armor_m_archer|درع ريفيندل
-itm_riv_armor_med|درع ريفيندل
-itm_riv_armor_heavy|درع ريفيندل
+; itm_riv_light|Rivendell Tunic
+; itm_riv_leather|Rivendell Leather Armor
+; itm_riv_foot_mail|Rivendell Mail
+; itm_riv_foot_scale|Rivendell Scale
+; itm_riv_surcoat|Rivendell Surcoat
+; itm_riv_knight|Rivendell Knightly Armour
 itm_riv_armor_h_archer|درع ريفيندل
-itm_riv_armor_leader|درع قائد ريفيندل
 itm_riv_boots|أحذية ريفيندل
 itm_gon_footman|قميص بريدي غوندوري
 itm_gon_jerkin|سترة غوندور
@@ -183,16 +187,13 @@ itm_gondor_ranger_hood_mask|قلنسوة حارس غوندور
 itm_gondor_light_greaves|ساقان غوندوريتان من الجلد
 itm_gondor_med_greaves|ساقان غوندوريتان متوسطتان
 itm_gondor_heavy_greaves|ساقان غوندوريتان بريديتان
-itm_gondorian_light_helm|خوذة جندي مشاة غوندور
-itm_gondor_infantry_helm|خوذة مشاة غوندور
 itm_gondor_auxila_helm|خوذة مساعد غوندوري
-itm_gondorian_light_helm_b|خوذة رامي غوندوري
 itm_gondorian_archer_helm|خوذة رامي غوندوري
 itm_tower_archer_helm|خوذة رامي البرج
 itm_gondor_leader_helm|خوذة غوندور الرفيعة
 itm_tower_guard_helm|خوذة حارس البرج
 itm_gondor_citadel_knight_helm|خوذة فارس القلعة
-itm_gondor_squire_helm|خوذة مرافق غوندور
+itm_gondor_infantry_helm|خوذة مشاة غوندور
 itm_gondor_knight_helm|خوذة فارس غوندور
 itm_gondor_dolamroth_helm|خوذة دول امروث
 itm_swan_knight_helm|خوذة فارس البجعة
@@ -261,7 +262,7 @@ itm_gondor_short_sword|إيكيت لينهير
 itm_pelargir_eket|إيكيت بيلارغير
 itm_pelargir_sword|سيف بيلارغير
 itm_gondor_ranger_sword|سيف حارس غوندور
-itm_gondor_bastard|سيف غوندور النغل
+; itm_gondor_2h_sword|Gondor War Sword
 itm_gondor_citadel_sword|سيف غوندور القلعة
 itm_gondor_cav_sword|سيف فرسان غوندور
 itm_gondor_spear|رمح غوندوري
@@ -276,9 +277,6 @@ itm_lorien_archer|درع رامي لورين
 itm_lorien_armor_a|درع مشاة لورين
 itm_lorien_armor_b|درع مشاة لورين الثقيل
 itm_lorien_armor_c|درع رامي لورين الملكي
-itm_lorien_armor_d|درع سياف لورين الملكي
-itm_lorien_armor_e|عباءة حارس لورين
-itm_lorien_armor_f|درع لورين النخبة
 itm_lorien_boots|أحذية لوثلورين
 itm_lorien_shield_b|درع لورين البرجي
 itm_lorien_shield_c|درع لورين الطائرة الورقية
@@ -286,18 +284,15 @@ itm_lorien_round_shield|درع لورين الدائري
 itm_lorien_helm_a|خوذة رامي لورين
 itm_lorien_helm_b|خوذة رامي لورين
 itm_lorien_helm_c|خوذة مشاة لورين
-itm_orc_chain_greaves|ساقان عفريت
-itm_orc_coif|قلنسوة عفريت جمجمية
+; itm_orc_coif2|Orc Skullcap
 itm_orc_greaves|أحذية عفريت بريدية
 itm_orc_ragwrap|لفافة عفريت قماشية
 itm_orc_furboots|أحذية عفريت من الفرو
-itm_orc_furboot_tall|أحذية عفريت من الفرو
 itm_orc_tribal_a|جلد غير مدبوغ
 itm_orc_tribal_b|جلد غير مدبوغ
 itm_orc_tribal_c|جلد غير مدبوغ
 itm_evil_gauntlets_a|قفازات
 itm_evil_gauntlets_b|قفازات
-itm_free_isen_orc_armor_a|درع عفريت آيزنغارد
 itm_isen_orc_light_a|درع عفريت آيزنغارد
 itm_isen_orc_light_b|درع عفريت آيزنغارد
 itm_isen_orc_pad_a|درع عفريت آيزنغارد
@@ -307,8 +302,8 @@ itm_isen_orc_mail_b|درع عفريت آيزنغارد
 itm_isen_uruk_light_a|تسخير أوروك-هاي خفيف
 itm_isen_uruk_light_b|درع أوروك-هاي الجلدي
 itm_isen_uruk_light_c|درع أوروك-هاي الجلدي
-itm_isen_uruk_light_d|بريد وجلد أوروك-هاي
-itm_isen_uruk_light_e|تسخير بريدي أوروك-هاي
+; itm_isen_uruk_med_a|Uruk-hai Light Segmented Armour
+; itm_isen_uruk_med_b|Uruk-hai Mail
 itm_isen_uruk_heavy_a|بريد وجلد أوروك-هاي
 itm_isen_uruk_heavy_b|درع أوروك-هاي الثقيل
 itm_isen_uruk_heavy_c|درع أوروك-هاي الثقيل
@@ -319,22 +314,16 @@ itm_uruk_greaves|ساقان أوروك
 itm_uruk_chain_greaves|ساقان بريديتان أوروك
 itm_uruk_ragwrap|لفافة أوروك قماشية
 itm_isen_orc_helm_a|خوذة عفريت آيزنغارد
-itm_free_isen_orc_helm_b|خوذة عفريت آيزنغارد
-itm_free_isen_orc_helm_c|خوذة عفريت آيزنغارد
 itm_isen_uruk_helm_a|خوذة أوروك-هاي
-itm_free_isen_uruk_helm_a|خوذة أوروك-هاي
-itm_free_isen_uruk_helm_c|خوذة أوروك-هاي
 itm_isen_uruk_helm_d|خوذة قبطان أوروك-هاي
 itm_isen_uruk_helm_e|خوذة متعقب أوروك-هاي
-itm_free_isen_uruk_helm_f|خوذة متعقب أوروك-هاي
-itm_uruk_pike_a|مطرد أوروك
 itm_uruk_pike_b|مطرد موردور
 itm_uruk_falchion_a|سيف أوروك عريض
-itm_uruk_falchion_b|سيف أوروك عريض
-itm_uruk_spear|رمح موردور
-itm_uruk_skull_spear|رمح أوروك الجمجمي
-itm_uruk_voulge|فأس أوروك مزدوجة
-itm_uruk_heavy_axe|فأس أوروك ثقيل
+; itm_orc_bastard_scimitar|Orc Great Scimitar
+; itm_orc_cleaver_a|Orc Cleaver
+; itm_orc_scimitar_b|Orc Scimitar
+; itm_orc_sabre_b|Orc Sabre
+; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|سيف آيزنغارد
 itm_isengard_axe|فأس آيزنغارد
 itm_isengard_hammer|مطرقة آيزنغارد
@@ -350,11 +339,11 @@ itm_isen_uruk_shield_b|درع أوروك آيزنغارد
 itm_wood_club|هراوة خشبية
 itm_twohand_wood_club|هراوة خشبية كبيرة
 itm_bone_cudgel|هراوة عظمية
-itm_skull_club|هراوة جمجمية
-itm_orc_club_a|هراوة عفريت
+; itm_orc_pick|Orc Pick
+; itm_orc_hammer|Evil Hammer
 itm_orc_club_b|هراوة راكب الورغ
 itm_orc_club_c|هراوة عفريت شائكة
-itm_orc_club_d|صولجان شرير
+; itm_orc_mace|Evil Mace
 itm_orc_sledgehammer|مطرقة عفريت ثقيلة
 itm_orc_simple_spear|رمح عفريت
 itm_orc_skull_spear|رمح عفريت جمجمي
@@ -363,7 +352,7 @@ itm_orc_slasher|سيف عفريت قاطع
 itm_orc_falchion|سيف عفريت عريض
 itm_orc_scimitar|سيف عفريت منحني
 itm_orc_sabre|سيف عفريت
-itm_orc_machete|منجل عفريت
+; itm_orc_battle_axe|Orc Battle Axe
 itm_orc_axe|فأس عفريت
 itm_orc_two_handed_axe|فأس عفريت بيدين
 itm_orc_throwing_axes|فؤوس عفريت للرمي
@@ -389,6 +378,10 @@ itm_orc_morion|خوذة عفريت موريون
 itm_orc_beakhelm|خوذة عفريت منقارية
 itm_orc_bughelm|خوذة عفريت حشرية
 itm_orc_visorhelm|خوذة عفريت مزودة بحاجب
+itm_orc_coif|قلنسوة عفريت جمجمية
+; itm_orc_skullcap|Orc Skullcap
+; itm_orc_skullhelm|Orc Skullhelm
+; itm_orc_barbuta|Orc Nosehelm
 itm_m_orc_light_a|درع عفريت موردور الخفيف
 itm_m_orc_light_b|درع عفريت موردور الخفيف
 itm_m_orc_light_c|درع عفريت موردور الخفيف
@@ -408,8 +401,6 @@ itm_m_uruk_med_c|حراشف أوروك الخفيفة
 itm_m_uruk_heavy_a|حراشف أوروك الثقيلة
 itm_m_uruk_heavy_b|بريد أوروك المصفح
 itm_m_uruk_heavy_c|بريد لوغبورز المصفح
-itm_m_uruk_heavy_j|درع أوروك الثقيل
-itm_m_uruk_heavy_k|درع حارس أوروك
 itm_m_cap_armor|درع قبطان موردور
 itm_black_num_armor|درع النومينوري الأسود
 itm_m_armor_a|درع موردور
@@ -445,22 +436,16 @@ itm_gundabad_helm_c|خوذة غونداباد
 itm_gundabad_helm_d|خوذة غونداباد
 itm_gundabad_helm_e|خوذة راكب الورغ
 itm_dunland_wolfboots|أحذية دونلاند الذئبية
-itm_dunland_armor_a|درع دونيش من الفرو
-itm_dunland_armor_b|درع دونيش من الفرو
-itm_dunland_armor_c|درع دونيش من الفرو
-itm_dunland_armor_d|درع دونيش من الفرو
-itm_dunland_armor_e|درع دونيش من الفرو
-itm_dunland_armor_g|درع دونيش من الفرو
-itm_dunland_armor_h|درع دونيش طويل من الفرو
-itm_dunland_armor_i|جوشن دونيش
-itm_dunland_armor_j|جوشن دونلاند
-itm_dunland_armor_k|درع زعيم دون
+; itm_dunland_tunic_1|Dunnish Leather Tunic
+; itm_dunland_tunic_2|Dunnish Leather Tunic
+; itm_dunland_fur_1|Dunnish Fur
+; itm_dunland_fur_2|Dunnish Fur
+; itm_dunland_mail_1|Dunnish Hauberk
+; itm_dunland_mail_2|Dunnish Hauberk
+; itm_dunland_chieftain|Dunnish Chief Armor
 itm_dun_helm_a|قبعة دونيش ذئبية
 itm_dun_helm_b|قبعة دونيش ذات قرون
 itm_dun_helm_c|خوذة دونيش طويلة
-itm_dun_helm_d|خوذة دونيش طويلة
-
-itm_dun_helm_e|خوذة دونيش ذات قرون
 itm_dun_shield_a|درع دونيش
 itm_dun_shield_b|درع دونيش
 itm_dun_berserker|سيف زعيم دونلاند
@@ -469,10 +454,14 @@ itm_dunnish_war_axe|فأس حرب دونيش
 itm_dunnish_axe|فأس دونيش
 itm_dunland_spear|رمح دونيش
 itm_dunnish_pike|مطرد دونيش
-itm_rohan_armor_a|قميص روهان
-itm_rohan_armor_e|جوشن روهان
-itm_rohan_armor_h|درع روهان الجلدي
-itm_rohan_armor_k|جوشن روهان
+itm_rohan_cav_sword|سيف روهان للركوب
+itm_rohan_inf_sword|سيف روهان
+itm_rohan_spear|رمح روهان
+itm_rohan_lance|رمح روهان
+itm_rohan_sword_c|سيف روهان
+itm_rohirrim_short_axe|فأس روهيريم قصير
+itm_rohirrim_long_hafted_axe|فأس روهيريم طويل المقبض
+itm_rohan_2h_sword|سيف روهان الحربي
 itm_rohan_recruit|سترة روهان المبطن
 itm_rohan_leather|سترة روهان الجلدية
 itm_rohan_mail|جوشن روهان
@@ -487,10 +476,6 @@ itm_rohan_inf_helmet_b|خوذة روهان واقية العينين
 itm_rohan_archer_helmet_a|خوذة روهان الأنفية
 itm_rohan_archer_helmet_b|خوذة روهان الأنفية
 itm_rohan_archer_helmet_c|خوذة حارس روهان
-itm_rohan_cav_helmet_a|خوذة فرسان روهان
-itm_rohan_cav_helmet_b|خوذة فرسان روهان
-itm_rohan_cav_helmet_c|خوذة فرسان روهان
-itm_rohan_captain_helmet|خوذة قبطان روهان
 itm_rohan_shield_a|درع روهان
 itm_rohan_shield_b|درع روهان
 itm_rohan_shield_c|درع روهان
@@ -500,27 +485,17 @@ itm_rohan_shield_f|درع روهان
 itm_rohan_shield_g|درع روهان الملكي
 itm_rohan_light_greaves|ساقان روهان الخفيفتان
 itm_rohirrim_war_greaves|ساقان روهيريم الحربيتان
-itm_rohan_shoes|أحذية جلدية
-itm_rohan_cav_sword|سيف روهان للركوب
-itm_rohan_inf_sword|سيف روهان
-itm_rohan_spear|رمح روهان
-itm_rohan_lance|رمح روهان
-itm_rohan_sword_c|سيف روهان
-itm_rohirrim_short_axe|فأس روهيريم قصير
-itm_rohirrim_long_hafted_axe|فأس روهيريم طويل المقبض
-itm_rohan_2h_sword|سيف روهان الحربي
-itm_mirkwood_light_scale|حراشف جان الغابة الخفيفة
-itm_mirkwood_armor_a|جلد خفيف
-itm_mirkwood_armor_b|درع مبطن وحرشفي خفيف
-itm_mirkwood_armor_c|بريد ميركوود الملكي
-itm_mirkwood_armor_d|معطف مبطن خفيف
-itm_mirkwood_armor_e|بريد خفيف ومعطف
-itm_mirkwood_armor_f|حراشف ميركوود الورقية
+; itm_mirkwood_leather|Woodelf Leather Armor
+; itm_mirkwood_pad|Greenwood Quilted Coat
+; itm_mirkwood_mail|Greenwood Mail
+; itm_mirkwood_scale|Greenwood Light Scale
+; itm_mirkwood_heavy_scale|Greenwood Leafscale
+itm_mirkwood_sword|سيف ميركوود
 itm_mirkwood_great_spear|رمح ميركوود العظيم
 itm_mirkwood_war_spear|رمح ميركوود الحربي
 itm_mirkwood_short_spear|رمح ميركوود
 itm_mirkwood_knife|سكين ميركوود الأبيض
-itm_mirkwood_sword|سيف ميركوود
+; itm_mirkwood_axe|Woodelf Axe
 itm_mirkwood_spear_shield_a|درع حامل رمح ميركوود
 itm_mirkwood_spear_shield_b|درع ميركوود الحربي
 itm_mirkwood_spear_shield_c|درع سياف ميركوود
@@ -528,20 +503,17 @@ itm_mirkwood_helm_a|خوذة رامي ميركوود
 itm_mirkwood_helm_b|خوذة ميركوود
 itm_mirkwood_helm_c|خوذة حامل رمح ميركوود الملكي
 itm_mirkwood_helm_d|خوذة رامي ميركوود الملكي
+; itm_woodelf_leather_boots|Woodelf Leather Boots
 itm_mirkwood_boots|أحذية ميركوود
-itm_mirkwood_leather_greaves|ساقان ميركوود الجلديتان
 itm_harad_tunic|سترة هاراد
 itm_harad_padded|درع هاروندور المبطن
-itm_harad_hauberk|جوشن هاروندور
 itm_harad_lamellar|درع هاراسجالا
+; itm_harad_heavy_lamellar|Harad Heavy Scale Vest
 itm_harad_heavy|درع هاراد النبيل
-itm_harad_skirmisher|زي هاراد الخفيف للمناوشات
-itm_harad_archer|درع رامي هاراد
+; itm_harad_pectoral|Harad Breastplate
 itm_black_snake_armor|درع مارانكا
 itm_harad_champion|زي هاراد البعيدة
-itm_panther_guard|جلد النمر
 itm_harad_scale|درع هاراد الحرشفي
-itm_harad_tiger_scale|درع حارس النمر
 itm_harad_lion_scale|درع حارس الأسد
 itm_harad_dragon_helm|خوذة كيلوكا
 itm_harad_cav_helm_a|خوذة فرسان هاروندور
@@ -573,43 +545,28 @@ itm_harad_long_shield_e|درع هاراد الأفعواني
 itm_harad_shield_a|درع هاروندور
 itm_harad_shield_b|ترس هاروندور
 itm_harad_shield_c|ترس هاروندور
-itm_harad_tribal_a|درع هاراد البعيدة
-itm_harad_tribal_b|درع هاراد البعيدة
 itm_harad_yellow_shield|درع هاراد
 itm_desert_boots|أحذية صحراوية
 itm_harad_leather_greaves|ساقان هاراد الجلديتان
 itm_harad_scale_greaves|أحذية هاراد
 itm_harad_lamellar_greaves|أحذية هاراد
-itm_khand_helmet_a1|خوذة كهاند مع بريد للرقبة
-itm_khand_helmet_a2|خوذة كهاند
-itm_khand_helmet_a3|خوذة كهاند محجبة
-itm_khand_helmet_b1|خوذة كهاند مزخرفة
-itm_khand_helmet_b2|خوذة كهاند مقنعة
-itm_khand_helmet_b3|خوذة كهاند محجبة
-itm_khand_helmet_b4|خوذة كهاند مع بريد للرقبة
-itm_khand_helmet_c3|خوذة مشاة كهاند
-itm_khand_helmet_c4|خوذة مشاة كهاند
-itm_khand_helmet_d1|خوذة كهاند مقنعة
-itm_khand_helmet_d2|خوذة كهاند مع بريد للرقبة
-itm_khand_helmet_d3|خوذة كهاند مقنعة
-itm_khand_helmet_e1|خوذة كهاند محجبة
-itm_khand_helmet_e2|خوذة كهاند مع بريد للرقبة
-itm_khand_helmet_e3|خوذة كهاند
-itm_khand_helmet_e4|خوذة كهاند محجبة
-itm_khand_helmet_f1|خوذة كهاند محجبة
-itm_khand_helmet_mask1|قناع كهاند
-itm_khand_helmet_mask2|قناع كهاند
+; itm_camel|Harad Camel
+; itm_khand_inf_helm_a|Khand Helm
+; itm_khand_inf_helm_b|Khand Helm
+; itm_khand_inf_helm_c1|Khand Bowl Helm
+; itm_khand_inf_helm_c2|Khand Bowl Helm
+; itm_khand_inf_helm_d|Khand Cone Helm
+; itm_khand_cav_helm_a|Khand Rider Helm
+; itm_khand_cav_helm_b|Khand Rider Helm
+; itm_khand_cav_helm_c|Khand Decorated Helm
+; itm_khand_helm_mask|Khand Mask
 itm_khand_light|نقبة كهاند
-itm_khand_foot_lam_a|درع كهاند
-itm_khand_foot_lam_b|درع كهاند
-itm_khand_foot_lam_c|درع كهاند
-itm_khand_heavy_lam|حراشف كهاند الثقيلة
 itm_khand_light_lam|حراشف كهاند الخفيفة
-itm_khand_med_lam_b|حراشف كهاند المتوسطة
-itm_khand_med_lam_c|حراشف كهاند المتوسطة
-itm_khand_med_lam_d|حراشف كهاند المتوسطة
+; itm_khand_foot_lam|Khand Heavy Footman Armor
+; itm_khand_med_lam|Khand Medium Lamellar
+itm_khand_heavy_lam|حراشف كهاند الثقيلة
+; itm_khand_mail|Khand Mail
 itm_khand_noble_lam|درع كهاند النبيل
-itm_variag_greaves|ساقان فارياغ
 itm_khand_axe_great|فأس كهاند العظيم
 itm_khand_axe_winged|فأس كهاند المجنح
 itm_khand_halberd|مطرد كهاند
@@ -617,7 +574,7 @@ itm_khand_trident|رمح كهاند ثلاثي الشعب
 itm_khand_voulge|فأس كهاند المزدوجة
 itm_khand_mace1|صولجان كهاند
 itm_khand_mace2|صولجان كهاند
-itm_khand_mace_spiked|صولجان كهاند الشائك
+; itm_khand_throwing_axe|Khand Throwing Axe
 itm_khand_rammace|صولجان كهاند الكبشي
 itm_khand_pitsword|سيف مقاتل الحفرة
 itm_khand_tulwar|سيف كهاند التولوار
@@ -629,7 +586,7 @@ itm_easterling_hawk_shield|درع شرقي للصقر
 itm_rhun_bull1_shield|درع رون
 itm_rhun_bull2_shield|درع رون
 itm_rhun_bull3_shield|درع رون
-itm_furry_boots|أحذية من الفرو
+itm_rhun_shield|درع رون الطائرة الورقية
 itm_rhun_armor_a|ملابس رون الخفيفة للمعركة
 itm_rhun_armor_b|ملابس رون الخفيفة للمعركة
 itm_rhun_armor_d|ملابس رون الخفيفة للمعركة
@@ -641,19 +598,13 @@ itm_rhun_armor_n|ملابس رون المتوسطة للمعركة
 itm_rhun_armor_o|ملابس رون المتوسطة للمعركة
 itm_rhun_armor_p|درع رون النبيل
 itm_rhun_armor_k|درع رون النبيل
-itm_rhun_helm_a|خوذة رون الشائكة
-itm_rhun_helm_b|خوذة رون شائكة مع بريد
-itm_rhun_helm_c|خوذة رون الحشدية
-itm_rhun_helm_e|خوذة رون الحشدية ذات القرون
-itm_rhun_helm_g|خوذة رون قرنية مستديرة
-itm_rhun_helm_h|خوذة رون قرنية مستديرة
-itm_rhun_helm_i|خوذة رون مستديرة
-itm_rhun_helm_j|خوذة رون مستديرة مقنعة
-itm_rhun_helm_k|خوذة رون الجلدية
-itm_rhun_helm_l|خوذة رون الجلدية
-itm_rhun_helm_m|خوذة رون الجلدية
-itm_rhun_helm_n|خوذة زعيم رون
-itm_rhun_helm_o|خوذة زعيم رون
+; itm_rhun_helm_chieftain|Rhun Chieftain Helm
+; itm_rhun_helm_pot|Rhun Pot Helm
+; itm_rhun_helm_barbed|Rhun Barbed Helm
+; itm_rhun_helm_round|Rhun Round Helm
+; itm_rhun_helm_horde|Rhun Horde Helm
+; itm_rhun_helm_leather|Rhun Leather Helm
+; itm_rhun_warpick|Rhun War Pick
 itm_rhun_greataxe|فأس رون العظيم
 itm_rhun_battleaxe|فأس رون المعركة
 itm_rhun_falchion|سيف متوحش عريض
@@ -661,103 +612,58 @@ itm_rhun_glaive|رمح رون المعقوف
 itm_rhun_greatfalchion|سيف متوحش عريض كبير
 itm_rhun_greatsword|سيف متوحش كبير
 itm_rhun_shortsword|سيف متوحش قصير
-
 itm_rhun_sword|سيف متوحش
-itm_rhun_shield|درع رون الطائرة الورقية
+; itm_rhun_mangler|Rhun Mangler
 itm_dale_light_a|سترة ميليشيا ديل
-
 itm_dale_light_b|حراشف شمالية خفيفة
-
 itm_dale_med_a|حراشف شمالية ثقيلة
-
 itm_dale_med_b|درع ديل الجلدي
-
 itm_dale_med_c|جلد فوق بريد من ديل
-
 itm_dale_med_d|درع ديل الحرشفي
-
 itm_dale_heavy_a|حراشف فوق بريد من ديل
-
 itm_dale_heavy_b|معطف ديل المصفح
-
 itm_dale_heavy_c|بريد روفانيون
-
-itm_dale_armor_l|طوق ديل النبيل العنقي
-
+; itm_north_leather|Northmen Leather Vest
 itm_dale_helmet_a|خوذة مشاة ديل الخفيفة
-
 itm_dale_helmet_b|خوذة رامي ديل الخفيفة
-
 itm_dale_helmet_c|خوذة مشاة ديل
-
 itm_dale_helmet_d|خوذة رامي ديل
-
 itm_dale_helmet_e|خوذة باردينغ
-
 itm_dale_helmet_f|خوذة باردينغ
-
 itm_dale_sword|سيف ديل القصير
 itm_dale_sword_long|سيف ديل الطويل
 itm_dale_sword_broad|سيف مشاة ديل
 itm_dale_pike|رمح ديل
 itm_dale_billhook|منجل ديل المعقوف
 itm_dale_shield_a|درع ديل البرجي
-
 itm_dale_shield_b|درع ديل البرجي
-
 itm_dale_shield_c|درع ديل الدائري
-itm_dale_shield_d|درع ديل
 itm_umb_armor_a|درع القرصان الجلدي
-
 itm_umb_armor_b|درع مغير القرصان
-
 itm_umb_armor_c|درع القرصان المبطن
-
 itm_umb_armor_d|درع مغير القرصان المبطن
-
 itm_umb_armor_e|جوشن القرصان
-
 itm_umb_armor_f|درع مغير القرصان الثقيل
-
 itm_umb_helm_a|خوذة القرصان الصدفية
-
 itm_umb_helm_b|خوذة القرصان الصدفية
-
 itm_umb_helm_c|خوذة ميليشيا القرصان
-
 itm_umb_helm_d|خوذة مغير القرصان
-
-itm_umb_helm_e|خوذة القرصان الرفيعة
-
-itm_umb_helm_f|خوذة القرصان الرفيعة
-
-itm_umb_hood|قلنسوة سوداء
-
+; itm_umb_helm_reward|Ancient Numenorean Karma
+itm_corsair_trident|رمح ثالوث غضب البحر
 itm_corsair_boots|أحذية قرصان
-
 itm_umb_shield_a|درع قرصان
-
 itm_umb_shield_b|ترس قرصان
-
 itm_umb_shield_c|ترس قرصان
-
 itm_umb_shield_d|ترس قرصان
-
 itm_umbar_spear|رمح أمبار القصير
-
 itm_umbar_cutlass|سيف أمبار القصير العريض
-
 itm_kraken|سيف الكراكن العريض
-
 itm_umbar_rapier|سيف أمبار للصعود
-
 itm_corsair_harpoon|حربة قرصان
 itm_corsair_sword|إيكيت قرصان
-
 itm_corsair_throwing_dagger|خناجر ملتوية للرمي
 itm_umbar_pike|رمح قرصان ثلاثي الشعب
 itm_woodman_tunic|سترة الحطاب
-
 itm_woodman_scout|رداء كشاف الحطاب
 itm_woodman_padded|درع الحطاب المبطن
 itm_beorn_tunic|سترة بيورنينغ
@@ -765,110 +671,58 @@ itm_beorn_padded|درع بيورنينغ المبطن
 itm_beorn_heavy|درع بيورنينغ الثقيل
 itm_beorn_berserk|عدة برزيركر بيورنينغ
 itm_beorn_chief|سترة زعيم بيورنينغ
-
 itm_beorn_helmet|قبعة الدب الجمجمية
 itm_beorn_shield|درع الشماليين
 itm_beorn_axe|فأس بيورنينغ
 itm_beorn_staff|عصا الحطاب
 itm_beorn_battle_axe|فأس حرب بيورنينغ
 itm_dwarf_shield_a|درع قزمي زاوي
-
 itm_dwarf_shield_b|درع قزمي برجي
-
 itm_dwarf_shield_c|درع قزمي قتالي
-
 itm_dwarf_shield_d|درع قزمي دائري
-
 itm_north_round_shield|درع شمالي دائري
-
-itm_free_dwarf_shield_g|درع قزمي
-
-itm_free_dwarf_shield_i|درع قزمي
-
-itm_free_dwarf_shield_j|درع قزمي
-
-itm_free_dwarf_shield_k|درع قزمي
-
 itm_woodmen_heavy|درع ميركوود
-
 itm_dwarf_sword_a|سيف قزم
-
 itm_dwarf_sword_b|سيف بيورنينغ القصير
 itm_dwarf_sword_c|سيف قزم
 itm_dwarf_sword_d|سيف قزم
-
 itm_dwarf_battle_axe|فأس قزمي قتالي
-
 itm_dwarf_great_axe|فأس قزمي عظيم
-
 itm_dwarf_great_mattock|معول قزمي عظيم
-
 itm_dwarf_great_pick|منقار قزمي عظيم
-
-itm_dwarf_war_pick|منقار قزمي حربي
-
+; itm_dwarf_throwing_axe_reward|Erebor Flying Axes
 itm_dwarf_mattock|معول قزمي
-
 itm_dwarf_hand_axe|فأس قزمي قصير
-
 itm_dwarf_throwing_axe|فأس قزمي للرمي
-
 itm_dwarf_spear|رمح قزمي
-
 itm_dwarf_spear_b|مطرد قزمي
-
 itm_dwarf_spear_c|فأس قزمي طويلة
-
 itm_dwarf_helm_coif|قلنسوة قزمية بريدية
-
 itm_dwarf_nasal_b|خوذة قزمية أنفية
-
 itm_north_skullcap|قبعة شمالية جمجمية
-
 itm_dwarf_helm_kettle|خوذة قزمية كتل
-
 itm_dwarf_helm_fris|خوذة قزمية فريزية
-
 itm_north_leather_skullcap|قبعة شمالية جلدية خفيفة
-
 itm_dwarf_hood|قلنسوة قزمية
-
 itm_dwarf_nasal|خوذة قزمية أنفية علوية
-
 itm_north_nasal_helm|خوذة شمالية أنفية
-
 itm_dwarf_helm_p|خوذة ملك الأقزام
-
 itm_dwarf_miner|خوذة قزمية خفيفة لعامل المنجم
-
 itm_north_chieftain|خوذة زعيم شمالي
-
 itm_dwarf_helm_round|خوذة قزمية مستديرة
-
 itm_dwarf_helm_sallet|خوذة قزمية ساليت
-
 itm_dwarf_armor_d|معطف حراشف تلال الحديد
 itm_dwarf_armor_a|معطف إريبور فوق البريد
-
 itm_leather_dwarf_armor|معطف قزمي مبطن
-
 itm_dwarf_armor_b|سترة إريبور فوق البريد
-
 itm_leather_dwarf_armor_b|سترة قزمية مبطن
-
 itm_dwarf_armor_c|بريد إريبور الحرشفي
-
 itm_dwarf_vest|سترة قزمية
-
 itm_dwarf_vest_b|بريد تلال الحديد
 itm_dwarf_pad_boots|أحذية قزمية مبطن
 itm_dwarf_chain_boots|أحذية قزمية بريدية
 itm_dwarf_scale_boots|أحذية قزمية حرشفية
 itm_good_mace|صولجان
-itm_far_harad_shield_paint|درع من الخوص
-itm_nazgulrobe|رداء نازغول
-
-itm_werewolf|مستذئب
 itm_mordor_banner|راية موردور
 itm_isengard_banner|راية آيزنغارد
 itm_woodelf_banner|راية ميركوود
@@ -878,7 +732,7 @@ itm_gondor_lance_banner|رمح غوندور مع راية
 itm_amroth_lance_banner|رمح دول امروث مع راية
 itm_rohan_lance_banner_sun|رمح روهان مع راية الشمس
 itm_rohan_lance_banner_horse|رمح روهان مع راية الحصان
-
+; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|وعاء غريب من الماء
 itm_map|خرائط الأرض الوسطى
 itm_athelas_reward|نبات أثيلاس
@@ -894,7 +748,6 @@ itm_torque_reward|طوق شرير
 itm_orc_brew|جعة عفريت
 itm_rohan_saddle|سرج ثينغل
 itm_mearas_reward|فحل ميراس
-
 itm_shield_of_tuor|درع تور
 itm_riv_armor_reward|درع ريفيندل المزخرف
 itm_westernesse1h_reward|سيف ويسترنيس
@@ -910,8 +763,8 @@ itm_book_of_moria|كتاب مازاربول
 itm_ring_a_reward|تولكاريسيل
 itm_ring_b_reward|فينواريسيل
 itm_dale_bow_reward|قوس بارد
-itm_explosive_reward|لغم آيزنغارد
-itm_corsair_trident|رمح ثالوث غضب البحر
+; itm_tome_of_knowledge|Tome of Arcane Knowledge
+; itm_orc_idol_reward|Idol of the First Orc
 itm_crebain_reward|كريبان آيزنغارد
 itm_miruvor_reward|قارورة ميروفور
 itm_wheeled_cage|قفص ضخم بعجلات
@@ -921,27 +774,78 @@ itm_dwarf_shield_reward|درع خيليد-زارام
 itm_dwarf_great_axe_reward|فأس قزمي حاد
 itm_isen_uruk_heavy_reward|درع جنرال أوروك-هاي
 itm_lorien_bow_reward|قوس نولدوري
-itm_lorien_sword_reward|سيف غالادريم
+; itm_elven_cloak|Elven Cloak
 itm_dale_sword_reward|سيف ديل الملكي
-
 itm_dale_armor_reward|بريد نبلاء ديل
 itm_leather_gloves_reward|قفازات صيد
 itm_beorn_shield_reward|درع بيورنينغ
 itm_beorn_axe_reward|هراوة الدب
-itm_moria_arrow_reward|سهام موريا المسمومة
+; itm_drums_of_the_deep|Drums of the Deep
 itm_khamul_helm|خوذة خامول
-itm_gandstaff|عصا الساحر
-itm_sarustaff|عصا الساحر
+; itm_black_arrows_reward|Black Arrows
+; itm_leather_boots_reward|Hunter Boots
 itm_rohan_armor_th|درع روهان الملكي
+; itm_wilderness_cowl|Hunter Cowl
 itm_prisoner_coll_chain|سلاسل الأسير
 itm_witchking_helmet|خوذة خبيثة
-itm_lorien_royal_armor|درع لورين الملكي
 itm_feet_chains|سلاسل للأقدام
 itm_feet_chains_dwarf|سلاسل للأقدام
 itm_spider|عنكبوت
 itm_bear|دب
 itm_wolf|ذئب
-itm_defiled_armor_gondor|معطف قائد غوندور مدنس
-itm_defiled_armor_rohan|جوشن روهان مدنس
-itm_defiled_armor_dale|درع ديل النبيل مدنس
+itm_werewolf|مستذئب
+; itm_thrush_reward|Thrush
+; itm_gauntlets_reward|Iron Fists
+; itm_gondor_custom|Custom Gondor
+; itm_stones_siege|Siege Stones
 itm_beorn_axe_no_attack|فأس بيورنينغ
+; itm_tabard_b_wb|Tabard
+; itm_nobleman_outfit_b_new_wb|Nobleman Outfit
+; itm_peasant_man_a_wb|Peasant Outfit
+; itm_leather_jerkin_wb|Leather Jerkin
+; itm_white_tunic_c_wb|Tunic Jacket
+; itm_white_tunic_a_wb|White Tunic
+; itm_red_tunic_wb|Red Tunic
+; itm_fur_coat_wb|Dale Coat
+; itm_fur_hat_a_new_wb|Fur Hat
+; itm_noel_hat_a_wb|Fur Hat
+; itm_peasant_dress_b_new_wb|Blue Dress
+; itm_sarranid_lady_dress_wb|Blue Dress
+; itm_sar_robe_b_wb|Robe
+; itm_black_dress_wb|Black Dress
+; itm_blackwhite_dress_wb|Lady Dress
+; itm_white_tunic_b_wb|Simple Tunic
+; itm_blue_tunic_wb|Blue Tunic
+; itm_black_tunic_wb|Black Tunic
+; itm_green_tunic_wb|Green Tunic
+; itm_green_dress_wb|Green Dress
+; itm_gondor_fine_outfit_dress_wb|Fine Outfit
+; itm_rohan_fine_outfit_dale_dress_wb|Fine Outfit
+; itm_robe_generic_dress_wb|Robe
+; itm_wimple_a_wb|Wimple
+; itm_wimple_with_veil_wb|Wimple
+; itm_fine_hat_wb|Fine Hat
+; itm_rohan_tunic_a_wb|Rohan Tunic
+; itm_rohan_tunic_b_wb|Rohan Tunic
+; itm_denethor_robe|Fine Outfit
+; itm_civilian_hammer|Hammer
+; itm_civilian_woodaxe_1h|Axe
+; itm_civilian_woodaxe_2h|Heavy Axe
+; itm_civilian_war_mattock|Mattock
+; itm_civilian_great_mattock|Mattock
+; itm_civilian_adz|Mattock
+; itm_civilian_pickaxe|Mattock
+; itm_civilian_shovel|Shovel
+; itm_civilian_carry_wood_heap|Fire Wood
+; itm_civilian_carry_wood|Wood
+; itm_civilian_carry_amphora|Amphora
+; itm_civilian_carry_sack|Sack
+; itm_civilian_carry_basket|Basket
+; itm_civilian_carry_honey|Honey
+; itm_civilian_carry_oil|Oil
+; itm_civilian_carry_wood2|Wood
+; itm_work_basket|Basket
+; itm_work_basket_2|Basket
+; itm_spider_mount|Spider
+; itm_marker_night_troop|Trait: Night Troop
+; itm_marker_berserker|Trait: Berserker

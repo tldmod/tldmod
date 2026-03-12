@@ -20,7 +20,6 @@ mno_custom_battle_scenario_7|كمين, الغولة vs ميرك ود
 mno_custom_battle_scenario_8|الموقف الأخير لقوم دورين
 mno_custom_battle_scenario_88|مطاردة حزب الكشافة اورك
 mno_custom_battle_scenario_11|معركة اختبارية (موازنة للانسيابية)
-mno_custom_battle_scenario_10|اختبار معركة مشهدية
 mno_troll_battle_scenario|اختبار معركة للترولز
 mno_warg_battle_scenario|اختبار معركة للوراقز
 mno_build_your_own_scene|ابن مشهد خاص بك
@@ -257,6 +256,8 @@ mno_join_siege_with_allies|انضم إلى الهجوم التالي.
 mno_join_siege_stay_back|اطلب من جنودك الانضمام إلى الهجوم التالي بدونك.
 menu_moria_must_escape|^^يبدو أن الكتاب يروي آخر محاولة للأقزام لإعادة التوطين في موريا، والتي يبدو أنها انتهت بموت بشع لجميع المشاركين. بينما تتأمل مصيرهم المظلم، تسمع فجأة صيحات قاسية وصوت العديد من الأقدام المسرعة.^ إنهم قادمون!^ بمغادرة الحجرة بسرعة، تلاحظ أن الأصوات تأتي من القاعة. ليس لديك خيار سوى الفرار في الاتجاه الآخر، إلى نفق ضيق متعرج ونزولاً... ^...^بعد ساعتين تدرك أنك تائه في أعماق موريا وتحتاج إلى إيجاد مخرج.
 mno_moria_exit_scene|ابحث عن طريقك للخروج!
+; menu_moria_escape_sucess|^^After countless hours in the darkness, you finally find a staircase that leads up.  At first it is barely noticeable, but it steadily gets lighter. Finally — a junction that you remember. After a few more steps, you are out in the open.  Your troops have been waiting anxiously for you and can't wait to leave this valley as quickly as possible.
+; mno_moria_exit_found|Get out of here!
 menu_castle_outside|أنت خارج {s2}. {s11} {s3} {s4}
 mno_cheat_steal_book_door|احصل على الكتاب
 mno_moria_enter|عد إلى القاعة الرئيسية لموريا عبر المدخل السري
@@ -341,6 +342,8 @@ menu_recover_after_death_town|^ ^ ^ ^ تستعيد وعيك وتجد نفسك ف
 menu_recover_after_death_town_alone|تستعيد وعيك وتجد نفسك في ضواحي المدينة. انت على قيد الحياة! لا أحد في الجوار وأنت تغتنم فرصتك لتجر نفسك خارج المدينة. وجدك رفاقك. يبدو أن أيًا من جروحك لم تكن مميتة ، وعلى الرغم من شعورك بالسوء ، فلا يزال بإمكانك المشي.
 menu_notification_center_under_siege|تم محاصرة {s1} بواسطة {s2} من {s3}!
 menu_notification_one_side_left|^ ^ ^ ^ ^ انتهت حرب الخاتم! ^^ لقد هزم {s1} كل أعدائهم وانتصروا!
+; mno_go_to_capital|Visit your capital and celebrate the victory...
+; mno_exit_game1|Exit
 menu_notification_total_defeat|^ ^ ^ ^ ^ انتهت حرب الخاتم بالنسبة لك! ^^ {s1}لقد هزمهم أعداؤهم وأنت تقف وحيدًا في الهزيمة
 menu_notification_your_faction_collapsed|^ ^ ^ ^ ^ هزم وطنك {s11}! ^ ومع ذلك ، لا يزال الحلفاء الآخرون في الحرب. أنت ، مع أي شخص متبقٍ من {s11} ، لا يزال بإمكانك مساعدة فريقك على الفوز.
 menu_notification_faction_defeated|^ ^ ^ ^ ^ {s1} هزم! ^ {s1} ليس أكثر ، هزم من قبل قوى {s13}!
@@ -430,7 +433,6 @@ mno_leave_mound|اترك التل.
 menu_burial_mound_respects|تركع وتؤدي واجب الاحترام لـ {s1}، مرددًا صلاة صامتة من أجل رحلة سريعة إلى الحياة الآخرة. لم يبق شيء لفعله هنا.
 menu_burial_mound_oath|تقسم بصوت عالٍ يمينًا للانتقام لمقتل {s4}.   ستبحث بلا كلل عن قوى {s3} وتدمرهم.   تحمل الرياح كلماتك بعيدًا ومن يستطيع أن يقول إنها لم تُسمع عبر البحر؟
 menu_funeral_pyre_oath|تقسم بصوت عالٍ يمينًا للانتقام لمقتل {s4}.   ستبحث بلا كلل عن قوى {s3} وتدمرهم.   تحمل الرياح كلماتك بعيدًا ومن يستطيع أن يقول إنها لم تُسمع عبر البحر؟
-mno_leave_pyre_oath|اترك المحرقة.
 menu_burial_mound_despoil|تهدم النصب التذكاري لـ {s1} بيديك وتدنس الحجارة ذاتها باللعنات والترانيم الشريرة والأفعال الشنيعة. يتراجع أتباعك خوفًا من الموتى لكن يبدو أن لديهم احترامًا متجددًا لخبثك.
 menu_funeral_pyre|تقترب من البقايا المتفحمة لمحرقة جنازة {s3} من {s2}.   هُزم في المعركة على يد قوى {s28}. هنا، أُحرقت الجثة بشكل احتفالي على يد حراسه الشخصيين.   لم يبق أي شيء ذي قيمة.
 mno_leave_pyre|اترك المحرقة.
@@ -445,6 +447,14 @@ menu_isengard_flooding|^^^^^@أنت محاط بأعداء قتلى وحلفاء 
 mno_isengard_continue|استمر
 menu_build_your_scene|يمكنك بناء مشهد معركة خاص بك، باستخدام إحدى الفتحات المتوفرة أدناه ووضع تحرير اللعبة (تحتاج إلى تشغيل وضع التحرير في خيارات شاشة إطلاق M&B أولاً، ثم الضغط على Ctrl+E داخل مشهد للوصول إلى وضع التحرير). يمكنك بعد ذلك إرسال المشاهد التي بنيتها (أي ملفات sco من مجلد TLD/SceneObj) إلى فريق تطوير TLD، وإذا كان مشهدك جيدًا، يمكن أن يظهر في الإصدارات اللاحقة كإحدى ساحات القتال العشوائية!^^ حاول تحديد المنطقة على الخريطة التي تريد ظهور مشهدك فيها.^ بعض التلميحات: تجنب المياه العميقة والجبال شديدة الانحدار والأماكن الأخرى غير القابلة للعبور، إلا إذا كنت صانع مشاهد متمرسًا وتعرف كيفية منع قوات الذكاء الاصطناعي من السير حيث لا تريدهم، وجعل شبكة الذكاء الاصطناعي في أماكن أخرى.^ (الإدخالات #0-1 للمهاجمين، #4 للمدافعين، لا تلمس #5-8)
 mno_back_3dot|رجوع...
+; menu_wott_expelled_from_faction|For your betrayal, you were expelled from your faction and {s11} has named you an outlaw and an enemy of the {reg11?Hand:Eye}. As an exile, you are now forced to join {s3}.
+; menu_wott_stay_with_faction|{s11} applauds your wise counsel. Your faction follows your example and collectively joins {s12}.
+; menu_fulfilled_oath_personal|^As {s5} lies in the dust before you, a heavy burden is lifted from your shoulders. The death of {s6} has been avenged!
+; menu_fulfilled_oath_personal_nokill|^Your troops recognize that you have defeated {s10} repeatedly and should rightfully be seen as {reg11?her:his} worst foe. Your oath is considered fulfilled. ^^The enemy paid dearly for the killing of {s11}. Still, there is a stale taste to this victory.
+; menu_oath_quest_fail|You swore a bitter oath and you bitterly failed to keep it. Your enemies laugh at your failure, and all your friends suffer from the shame you have brought upon them. In all the lands of Middle-earth, you shall be known as an oathbreaker.
+; menu_campaign_won|^^^Thank you for playing The Last Days of the Third Age!
+; mno_credits_tld|TLD Credits
+; mno_exit_game2|Quit to main menu
 mno_back|عد للخلف
 mno_next|التالي...
 mno_previous|السابق...

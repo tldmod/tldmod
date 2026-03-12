@@ -78,27 +78,5 @@ qst_deliver_gift_text|لقد طلبت تسليم {s4} من {s1} إلى {s3} من
 qst_ring_hunters|صائدي الخواتم
 qst_ring_hunters2|صائدي الخواتم - اكتمل
 qst_deliver_message_hobbit|بخصوص الهوبيت
-qst_blank_quest_01|الدفاع عن اللاجئين
-qst_blank_quest_02|مطاردة اللاجئين
-qst_blank_quest_03|معركة بحرية
-qst_blank_quest_04|قتل {s35} من {s6} {s7}
-qst_blank_quest_05|قتل {s35} من قوات {s36}.
-
-
-
-
-
-
-
-
-
-
-qst_blank_quest_16|تعزيز المركز
-qst_blank_quest_17|ذبح {reg22} من {s6} في المعارك
-
-
-
-
-qst_guardian_party_quest|الموقف الأخير لآيزنغارد
-qst_quests_end|نهاية المهام
+; qst_oath_personal|Oath of Vengeance
 qst_quests_end_text|.
