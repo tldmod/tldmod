@@ -13409,68 +13409,9 @@ game_menus = [
     (call_script, "script_end_quest", "qst_oath_personal"),
     (set_show_messages, 1),
     (call_script, "script_cf_gain_trait_oathkeeper"),
-    (assign, ":winning_side_faction", "$players_kingdom"),
-    (troop_get_type, ":winning_side_race", trp_player),
-    (troop_get_type, ":target_type", ":target"),    
-    
-    (try_begin),
-        # orc VS anything not orc
-        ( eq, ":winning_side_race", tf_orc ),
-        (neq, ":target_type",  tf_orc ),
-        (set_background_mesh, "mesh_draw_victory_orc"),  # specific victory-loss image:  orcs VS humans
-    (else_try),	
-        # orc VS orc
-        ( eq, ":winning_side_race", tf_orc ),
-        (this_or_next| eq, ":target_type",  tf_orc ),
-        (this_or_next| eq, ":target_type",  tf_urukhai ),
-        ( eq, ":target_type", tf_uruk ),
-        (set_background_mesh, "mesh_draw_victory_orc_orc"),  # specific victory-loss image:  orcs VS orcs
-    (else_try),
-        # uurk VS anything
-        (eq, ":winning_side_race", tf_uruk ),
-        (set_background_mesh, "mesh_draw_victory_uruk"),  # specific victory-loss image: dwarves VS anything
-    (else_try),
-        # dwarf VS anything
-        (eq, ":winning_side_race", tf_dwarf ),
-        (set_background_mesh, "mesh_draw_victory_dwarf"),  # specific victory-loss image: dwarves VS anything
-    (else_try),
-        # evil men VS anything
-        (eq, ":winning_side_faction", "fac_mordor" ), #Mordor non-orc
-        (set_background_mesh, "mesh_draw_victory_evilman"),  # specific victory-loss image: evil men VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_gondor" ),
-        (set_background_mesh, "mesh_draw_victory_gondor"), # specific victory-loss image: gondor VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_rohan" ),
-        (set_background_mesh, "mesh_draw_victory_rohan"), # specific victory-loss image: rohan VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_imladris" ),
-        (set_background_mesh, "mesh_draw_victory_rivendell"), # specific victory-loss image: rivendell VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_woodelf" ),
-        (set_background_mesh, "mesh_draw_victory_mirkwood"), # specific victory-loss image: mirkwood VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_dunland" ),
-        (set_background_mesh, "mesh_draw_victory_dunland"), # specific victory-loss image: dunland VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_khand" ),
-        (set_background_mesh, "mesh_draw_victory_khand"), # specific victory-loss image: khand VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_harad" ),
-        (set_background_mesh, "mesh_draw_victory_harad"), # specific victory-loss image: harad VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_rhun" ),
-        (set_background_mesh, "mesh_draw_victory_rhun"), # specific victory-loss image: rhun VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_beorn" ),
-        (set_background_mesh, "mesh_draw_victory_beornings"), # specific victory-loss image: beorn VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_umbar" ),
-        (set_background_mesh, "mesh_draw_victory_corsairs"), # specific victory-loss image: umbar VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_dale" ),
-        (set_background_mesh, "mesh_draw_victory_dale"), # specific victory-loss image: dale VS anything
-    (try_end),
+
+    (call_script, "script_get_victory_mesh_per_troop", "trp_player"),
+    (set_background_mesh, reg0),
     
     ],
     [("continue",[],"Continue...",[(jump_to_menu,"mnu_total_victory")]),]
@@ -13489,68 +13430,9 @@ game_menus = [
     (set_show_messages, 0),
     (call_script, "script_end_quest", "qst_oath_personal"),
     (set_show_messages, 1),
-    (assign, ":winning_side_faction", "$players_kingdom"),
-    (troop_get_type, ":winning_side_race", trp_player),
-    (troop_get_type, ":target_type", ":target"),    
     
-    (try_begin),
-        # orc VS anything not orc
-        ( eq, ":winning_side_race", tf_orc ),
-        (neq, ":target_type",  tf_orc ),
-        (set_background_mesh, "mesh_draw_victory_orc"),  # specific victory-loss image:  orcs VS humans
-    (else_try),	
-        # orc VS orc
-        ( eq, ":winning_side_race", tf_orc ),
-        (this_or_next| eq, ":target_type",  tf_orc ),
-        (this_or_next| eq, ":target_type",  tf_urukhai ),
-        ( eq, ":target_type", tf_uruk ),
-        (set_background_mesh, "mesh_draw_victory_orc_orc"),  # specific victory-loss image:  orcs VS orcs
-    (else_try),
-        # uurk VS anything
-        (eq, ":winning_side_race", tf_uruk ),
-        (set_background_mesh, "mesh_draw_victory_uruk"),  # specific victory-loss image: dwarves VS anything
-    (else_try),
-        # dwarf VS anything
-        (eq, ":winning_side_race", tf_dwarf ),
-        (set_background_mesh, "mesh_draw_victory_dwarf"),  # specific victory-loss image: dwarves VS anything
-    (else_try),
-        # evil men VS anything
-        (eq, ":winning_side_faction", "fac_mordor" ), #Mordor non-orc
-        (set_background_mesh, "mesh_draw_victory_evilman"),  # specific victory-loss image: evil men VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_gondor" ),
-        (set_background_mesh, "mesh_draw_victory_gondor"), # specific victory-loss image: gondor VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_rohan" ),
-        (set_background_mesh, "mesh_draw_victory_rohan"), # specific victory-loss image: rohan VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_imladris" ),
-        (set_background_mesh, "mesh_draw_victory_rivendell"), # specific victory-loss image: rivendell VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_woodelf" ),
-        (set_background_mesh, "mesh_draw_victory_mirkwood"), # specific victory-loss image: mirkwood VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_dunland" ),
-        (set_background_mesh, "mesh_draw_victory_dunland"), # specific victory-loss image: dunland VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_khand" ),
-        (set_background_mesh, "mesh_draw_victory_khand"), # specific victory-loss image: khand VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_harad" ),
-        (set_background_mesh, "mesh_draw_victory_harad"), # specific victory-loss image: harad VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_rhun" ),
-        (set_background_mesh, "mesh_draw_victory_rhun"), # specific victory-loss image: rhun VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_beorn" ),
-        (set_background_mesh, "mesh_draw_victory_beornings"), # specific victory-loss image: beorn VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_umbar" ),
-        (set_background_mesh, "mesh_draw_victory_corsairs"), # specific victory-loss image: umbar VS anything
-    (else_try),
-        (eq, ":winning_side_faction", "fac_dale" ),
-        (set_background_mesh, "mesh_draw_victory_dale"), # specific victory-loss image: dale VS anything
-    (try_end),
+    (call_script, "script_get_victory_mesh_per_troop", "trp_player"),
+    (set_background_mesh, reg0),
 
     (set_fixed_point_multiplier, 100),
     (position_set_x, pos0, 65),

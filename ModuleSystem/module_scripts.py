@@ -28937,6 +28937,77 @@ command_cursor_scripts = [
     (str_store_string, 17, "@{!}{s17} ^{s18}"),
      ]),
 
+
+#script_get_victory_mesh_per_troop
+#input: troop_no
+#output: reg0 (drawing mesh, usable for menu backgrounds or tableaus/presentations)
+("get_victory_mesh_per_troop", [
+	(store_script_param_1, ":troop"),	
+    (troop_get_type, ":race", ":troop"),
+    (store_troop_faction, ":faction", ":troop"),
+    (try_begin),
+        (eq, ":troop", "trp_player"),
+        (assign, ":faction", "$players_kingdom"),
+    (try_end),
+    
+    (try_begin),
+        # orc VS orc
+        # WoTT
+        (eq, ":race", tf_orc),
+        (gt, "$tld_war_began", 1),
+        (assign, reg0, "mesh_draw_victory_orc_orc"),  # specific victory-loss image:  orcs VS orcs
+    (else_try),
+        # orc VS anything not orc
+        ( eq, ":race", tf_orc ),
+        (assign, reg0, "mesh_draw_victory_orc"),  # specific victory-loss image:  orcs VS humans
+    (else_try),	
+        # uruk VS anything
+        (eq, ":race", tf_uruk ),
+        (assign, reg0, "mesh_draw_victory_uruk"),  # specific victory-loss image: uruk VS anything
+    (else_try),
+        # dwarf VS anything
+        (eq, ":race", tf_dwarf ),
+        (assign, reg0, "mesh_draw_victory_dwarf"),  # specific victory-loss image: dwarves VS anything
+    (else_try),
+        # evil men VS anything
+        (eq, ":faction", "fac_mordor" ), #Mordor non-orc
+        (assign, reg0, "mesh_draw_victory_evilman"),  # specific victory-loss image: evil men VS anything
+    (else_try),
+        (eq, ":faction", "fac_gondor" ),
+        (assign, reg0, "mesh_draw_victory_gondor"), # specific victory-loss image: gondor VS anything
+    (else_try),
+        (eq, ":faction", "fac_rohan" ),
+        (assign, reg0, "mesh_draw_victory_rohan"), # specific victory-loss image: rohan VS anything
+    (else_try),
+        (eq, ":faction", "fac_imladris" ),
+        (assign, reg0, "mesh_draw_victory_rivendell"), # specific victory-loss image: rivendell VS anything
+    (else_try),
+        (eq, ":faction", "fac_woodelf" ),
+        (assign, reg0, "mesh_draw_victory_mirkwood"), # specific victory-loss image: mirkwood VS anything
+    (else_try),
+        (eq, ":faction", "fac_dunland" ),
+        (assign, reg0, "mesh_draw_victory_dunland"), # specific victory-loss image: dunland VS anything
+    (else_try),
+        (eq, ":faction", "fac_khand" ),
+        (assign, reg0, "mesh_draw_victory_khand"), # specific victory-loss image: khand VS anything
+    (else_try),
+        (eq, ":faction", "fac_harad" ),
+        (assign, reg0, "mesh_draw_victory_harad"), # specific victory-loss image: harad VS anything
+    (else_try),
+        (eq, ":faction", "fac_rhun" ),
+        (assign, reg0, "mesh_draw_victory_rhun"), # specific victory-loss image: rhun VS anything
+    (else_try),
+        (eq, ":faction", "fac_beorn" ),
+        (assign, reg0, "mesh_draw_victory_beornings"), # specific victory-loss image: beorn VS anything
+    (else_try),
+        (eq, ":faction", "fac_umbar" ),
+        (assign, reg0, "mesh_draw_victory_corsairs"), # specific victory-loss image: umbar VS anything
+    (else_try),
+        (eq, ":faction", "fac_dale" ),
+        (assign, reg0, "mesh_draw_victory_dale"), # specific victory-loss image: dale VS anything
+    (try_end),
+]),
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts+ formAI_v5_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts
