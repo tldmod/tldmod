@@ -4751,7 +4751,8 @@ game_menus = [
     	(else_try),
     		(assign, "$cheat_imposed_quest", "qst_capture_troll"),
     	(try_end)
-    ])
+    ]),
+    ("impose_quest_13", [], "{!}Capture an enemy commander", [(assign, "$cheat_imposed_quest", "qst_capture_enemy_hero")]),
     ]+[("mi21",[(str_store_quest_name,s21,x)],"{!}{s21}",[(assign,"$cheat_imposed_quest",x),(jump_to_menu, "mnu_cheat_impose_quest")]) for x in range(qst_quests_end) ]+[
   ]),
   
@@ -6374,7 +6375,12 @@ game_menus = [
               (str_store_string, s17, "@{s1} of {s3} managed to escape."),
               (display_log_message, "@{!}{s17}"),
               (display_log_message, "@{!}{s18}"),
-              (jump_to_menu, "mnu_enemy_slipped_away"),
+              (try_begin),
+                (check_quest_active, "qst_capture_enemy_hero"),
+                (jump_to_menu, "mnu_enemy_slipped_away"),
+              (else_try),
+                (jump_to_menu,"mnu_total_victory"),
+              (try_end),
               (assign, ":done", 1),
             (try_end),
           (try_end),
