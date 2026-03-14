@@ -1169,7 +1169,12 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
         (str_store_agent_name, s5, ":agent_no"),
      (try_end),
      
-     #additional teams for berserking trolls
+     (try_begin) ,#Ents don't run
+         (this_or_next|eq, ":troop_id", "trp_ent"),
+         (is_between, ":troop_id", "trp_treebeard", trp_ent_3+1),
+         (agent_set_speed_limit, ":agent_no", 9), 
+         (agent_set_speed_modifier, ":agent_no", 80),
+     (try_end),
      
   ]),
 
