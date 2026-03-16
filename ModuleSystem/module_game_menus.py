@@ -487,7 +487,7 @@ game_menus = [
  	   ## Kham - Troop Trees
 	   ((is_a_wb_menu==1) and
 	   [
-	      ("action_view_troop_trees",[],"View troop trees.", [(start_presentation, "prsnt_faction_troop_trees"),]),
+	      ("action_view_troop_trees",[],"View troop trees.", [(start_presentation, "prsnt_faction_troop_trees"),(store_sub, "$g_selected_page", "$players_kingdom", kingdoms_begin),]),
 	   ]
 	   or
 	   [

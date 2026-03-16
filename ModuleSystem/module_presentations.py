@@ -4672,6 +4672,7 @@ if wb_compile_switch==1:
           (overlay_add_item, "$g_presentation_obj_1", s0),
         (try_end),
         (store_sub, ":presentation_obj_val", ":num_factions", "$g_selected_page"),
+        (store_add, ":cur_faction", "$g_selected_page", kingdoms_begin), #for easier handling
         (val_sub, ":presentation_obj_val", 1),
         (overlay_set_val, "$g_presentation_obj_1", ":presentation_obj_val"),
         
@@ -4744,37 +4745,73 @@ if wb_compile_switch==1:
         (assign, "$g_cur_slot_no", 0),
         (assign, reg2, 75),
         # find all root troops of selected faction
-        (try_for_range, ":cur_troop", soldiers_begin, soldiers_end),
-          (neg|troop_is_hero, ":cur_troop"),
-          # can upgrade
-          (troop_get_upgrade_troop, ":upgrade_troop", ":cur_troop", 0),
-          (gt, ":upgrade_troop", 0), 
-          # page_no_for_cur_troop
-          (call_script, "script_get_page_no_of_troop_tree_for_troop_on", ":cur_troop"),
-          (assign, ":page_no_for_cur_troop", reg0),
-          # on current page_no
-          (eq, ":page_no_for_cur_troop", "$g_selected_page"),
-          # can't be upgraded from other troops of the same page
-          (assign, ":is_root_troop", 1),
-          (assign, ":end_cond", soldiers_end),
-          (try_for_range, ":loop_troop", soldiers_begin, ":end_cond"),
-            (neg|troop_is_hero, ":loop_troop"),
-            # page_no_for_loop_troop
-            (call_script, "script_get_page_no_of_troop_tree_for_troop_on", ":loop_troop"),
-            (assign, ":page_no_for_loop_troop", reg0),
-            # on current page_no
-            (eq,  ":page_no_for_loop_troop", "$g_selected_page"),
-            (troop_get_upgrade_troop, ":upgrade_troop_1", ":loop_troop", 0),
-            (troop_get_upgrade_troop, ":upgrade_troop_2", ":loop_troop", 1),
-            (this_or_next|eq, ":upgrade_troop_1", ":cur_troop"),
-            (eq, ":upgrade_troop_2", ":cur_troop"),
-            (assign, ":is_root_troop", 0),
-            (assign, ":end_cond", 0), #break
-          (try_end),
-          (eq, ":is_root_troop", 1), # draw troop tree of cur root_troop
-          (call_script, "script_troop_tree_recursive_backtracking", ":cur_troop", 50, reg2, ":offset_x"),
-          (val_add, reg2, 160),
-        (try_end),
+        # for most factions, we check base troops backwards, depending on where their main troop trees are situated in troops.py
+        (try_begin), 
+            (eq, ":cur_faction", "fac_isengard"),
+            (try_for_range, ":cur_troop", soldiers_begin, soldiers_end),
+              (neg|troop_is_hero, ":cur_troop"),
+              # can upgrade
+              (troop_get_upgrade_troop, ":upgrade_troop", ":cur_troop", 0),
+              (gt, ":upgrade_troop", 0), 
+              # page_no_for_cur_troop
+              (call_script, "script_get_page_no_of_troop_tree_for_troop_on", ":cur_troop"),
+              (assign, ":page_no_for_cur_troop", reg0),
+              # on current page_no
+              (eq, ":page_no_for_cur_troop", "$g_selected_page"),
+              # can't be upgraded from other troops of the same page
+              (assign, ":is_root_troop", 1),
+              (assign, ":end_cond", soldiers_end),
+              (try_for_range, ":loop_troop", soldiers_begin, ":end_cond"),
+                (neg|troop_is_hero, ":loop_troop"),
+                # page_no_for_loop_troop
+                (call_script, "script_get_page_no_of_troop_tree_for_troop_on", ":loop_troop"),
+                (assign, ":page_no_for_loop_troop", reg0),
+                # on current page_no
+                (eq,  ":page_no_for_loop_troop", "$g_selected_page"),
+                (troop_get_upgrade_troop, ":upgrade_troop_1", ":loop_troop", 0),
+                (troop_get_upgrade_troop, ":upgrade_troop_2", ":loop_troop", 1),
+                (this_or_next|eq, ":upgrade_troop_1", ":cur_troop"),
+                (eq, ":upgrade_troop_2", ":cur_troop"),
+                (assign, ":is_root_troop", 0),
+                (assign, ":end_cond", 0), #break
+              (try_end),
+              (eq, ":is_root_troop", 1), # draw troop tree of cur root_troop
+              (call_script, "script_troop_tree_recursive_backtracking", ":cur_troop", 50, reg2, ":offset_x"),
+              (val_add, reg2, 160),
+            (try_end),
+         (else_try),
+            (try_for_range_backwards, ":cur_troop", soldiers_begin, soldiers_end),
+              (neg|troop_is_hero, ":cur_troop"),
+              # can upgrade
+              (troop_get_upgrade_troop, ":upgrade_troop", ":cur_troop", 0),
+              (gt, ":upgrade_troop", 0), 
+              # page_no_for_cur_troop
+              (call_script, "script_get_page_no_of_troop_tree_for_troop_on", ":cur_troop"),
+              (assign, ":page_no_for_cur_troop", reg0),
+              # on current page_no
+              (eq, ":page_no_for_cur_troop", "$g_selected_page"),
+              # can't be upgraded from other troops of the same page
+              (assign, ":is_root_troop", 1),
+              (assign, ":end_cond", soldiers_end),
+              (try_for_range, ":loop_troop", soldiers_begin, ":end_cond"),
+                (neg|troop_is_hero, ":loop_troop"),
+                # page_no_for_loop_troop
+                (call_script, "script_get_page_no_of_troop_tree_for_troop_on", ":loop_troop"),
+                (assign, ":page_no_for_loop_troop", reg0),
+                # on current page_no
+                (eq,  ":page_no_for_loop_troop", "$g_selected_page"),
+                (troop_get_upgrade_troop, ":upgrade_troop_1", ":loop_troop", 0),
+                (troop_get_upgrade_troop, ":upgrade_troop_2", ":loop_troop", 1),
+                (this_or_next|eq, ":upgrade_troop_1", ":cur_troop"),
+                (eq, ":upgrade_troop_2", ":cur_troop"),
+                (assign, ":is_root_troop", 0),
+                (assign, ":end_cond", 0), #break
+              (try_end),
+              (eq, ":is_root_troop", 1), # draw troop tree of cur root_troop
+              (call_script, "script_troop_tree_recursive_backtracking", ":cur_troop", 50, reg2, ":offset_x"),
+              (val_add, reg2, 160),
+            (try_end),
+         (try_end),
         
         (set_container_overlay, -1),
         
