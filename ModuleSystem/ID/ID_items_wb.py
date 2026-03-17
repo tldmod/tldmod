@@ -982,4 +982,6 @@ itm_animal_warg = 980
 itm_spider_mount = 981
 itm_marker_night_troop = 982
 itm_marker_berserker = 983
-itm_torch = 984
+itm_marker_hp_shield = 984
+itm_marker_banner_troop = 985
+itm_torch = 986

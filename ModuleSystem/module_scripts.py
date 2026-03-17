@@ -2413,30 +2413,45 @@ scripts = [
 
     #Night troops 
 	(try_for_range, ":troop_id", soldiers_begin, trp_last), #need the extended range because some of these are outside of soldiers range
-        (this_or_next|eq, ":troop_id", "trp_a5_dun_night_wolf"), 
-        (this_or_next|eq, ":troop_id", "trp_ac5_dun_raven_rider"), 
-        (this_or_next|eq, ":troop_id", "trp_i5_woodmen_night_guard"), 
-        (this_or_next|eq, ":troop_id", "trp_a5_woodmen_night_stalker"), 
-        (this_or_next|eq, ":troop_id", "trp_i5_corsair_night_raider"), 
-        (this_or_next|eq, ":troop_id", "trp_a5_corsair_master_assassin"), 
-        (this_or_next|eq, ":troop_id", "trp_i5_far_harad_panther_guard"), 
-        (this_or_next|eq, ":troop_id", "trp_i6_frealaf_raider"), 
-        (			  eq, ":troop_id", "trp_a5_blackroot_shadow_hunter"), 
-        (troop_set_slot, ":troop_id", slot_troop_is_night_troop, 1),
-        (troop_add_item, ":troop_id", "itm_marker_night_troop"),
-    #Berserkers
-    (else_try),
-        (this_or_next|eq, ":troop_id", "trp_i5_beorning_carrock_berserker"), 
-        (this_or_next|eq, ":troop_id", "trp_i6_isen_uruk_berserker"), 
-        (this_or_next|eq, ":troop_id", "trp_i5_gunda_orc_berserker"), 
-        (			  eq, ":troop_id", "trp_i5_khand_pit_master"), 
-        (troop_set_slot, ":troop_id", slot_troop_is_berserker, 1),
-        (troop_add_item, ":troop_id", "itm_marker_berserker"),
-        (troop_set_slot, ":troop_id", slot_troop_hp_shield, 40),
-        (troop_set_slot, "trp_i5_gunda_orc_berserker", slot_troop_hp_shield, 20), #exception
-        (troop_set_slot, "trp_npc9", slot_troop_is_berserker, 1), #Gulm
-	(try_end),
-    (troop_set_slot, "trp_i6_dun_retainer", slot_troop_hp_shield, 40),
+        (try_begin),
+            (this_or_next|eq, ":troop_id", "trp_i5_woodmen_night_guard"), 
+            (this_or_next|eq, ":troop_id", "trp_a5_woodmen_night_stalker"),
+            (this_or_next|eq, ":troop_id", "trp_a5_blackroot_shadow_hunter"),
+            (this_or_next|eq, ":troop_id", "trp_i6_frealaf_raider"), 
+            (this_or_next|eq, ":troop_id", "trp_i5_far_harad_panther_guard"),
+            (this_or_next|eq, ":troop_id", "trp_ac5_dun_raven_rider"),
+            (this_or_next|eq, ":troop_id", "trp_a5_dun_night_wolf"),
+            (this_or_next|eq, ":troop_id", "trp_i5_corsair_night_raider"), 
+            (this_or_next|eq, ":troop_id", "trp_a5_corsair_master_assassin"),
+            (eq, ":troop_id", "trp_i5_mordor_num_assassin"),
+            (troop_set_slot, ":troop_id", slot_troop_is_night_troop, 1),
+            #(troop_add_item, ":troop_id", "itm_marker_night_troop"),
+        (try_end),
+        
+        #Berserkers
+        (try_begin),
+            (this_or_next|eq, ":troop_id", "trp_i5_beorning_carrock_berserker"), 
+            (this_or_next|eq, ":troop_id", "trp_i6_isen_uruk_berserker"), 
+            (this_or_next|eq, ":troop_id", "trp_i5_gunda_orc_berserker"), 
+            (			  eq, ":troop_id", "trp_i5_khand_pit_master"), 
+            (troop_set_slot, ":troop_id", slot_troop_is_berserker, 1),
+            #(troop_add_item, ":troop_id", "itm_marker_berserker"),
+            (troop_set_slot, ":troop_id", slot_troop_hp_shield, 40),
+            (troop_set_slot, "trp_i5_gunda_orc_berserker", slot_troop_hp_shield, 20), #exception
+            (troop_set_slot, "trp_npc9", slot_troop_is_berserker, 1), #Gulm
+        (try_end),
+        
+        #HP shield troops 
+        (try_begin),
+            (this_or_next|eq, ":troop_id", "trp_i5_rhun_ox_warrior"),
+            (this_or_next|eq, ":troop_id", "trp_i5_loss_axemaster"),
+            (this_or_next|eq, ":troop_id", "trp_i5_far_harad_panther_guard"), 
+            (this_or_next|eq, ":troop_id", "trp_i6_dun_retainer"), 
+            (			  eq, ":troop_id", "trp_i5_moria_orc_chieftain"), 
+            #(troop_add_item, ":troop_id", "itm_marker_hp_shield"),
+            (troop_set_slot, ":troop_id", slot_troop_hp_shield, 60),
+        (try_end),
+    (try_end),
 
 	#Init Health Regeneration on Kill
 
@@ -4571,6 +4586,10 @@ scripts = [
 	  	(eq, ":item_no", "itm_marker_berserker"),
         (try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Increased health and stagger resistance"),(try_end),
         (try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Can heal on kill"),(try_end),
+        (set_trigger_result, color_item_text_bonus),
+      (else_try),
+	  	(eq, ":item_no", "itm_marker_hp_shield"),
+        (try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Increased health and stagger resistance"),(try_end),
         (set_trigger_result, color_item_text_bonus),
 	  (else_try),
 		(this_or_next|eq, ":type", itp_type_bow),

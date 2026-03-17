@@ -252,7 +252,7 @@ imodbits_weapon_wood   = imodbit_bent | imodbit_crude | imodbit_fine | imodbit_h
 items =[
 ###item_name, mesh_name, item_properties, item_capabilities, slot_no, cost, bonus_flags, weapon_flags, scale, view_dir, pos_offset
 #next one is used in scripts
-["no_item","{!}INVALID_ITEM",[("invalid_item",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+["no_item","{!}INVALID_ITEM",[("invalid_item",0)],itp_type_goods|itp_unique,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
 ["horse_meat","Horse_Meat",[("raw_meat",0)],itp_type_goods|itp_consumable|itp_food,0,12,weight(40)|abundance(0)|food_quality(30)|max_ammo(40),imodbits_none],
 ###Items before this point are hardwired and their order should not be changed!
 #next one used by tutorial swordsman and in arena missions
@@ -1441,8 +1441,13 @@ items =[
 #last item for MnB
 ["save_compartibility_item10","{!}INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
 
-] + (is_a_wb_item==1 and [
+]
 
+#] + (is_a_wb_item==1 and [
+
+if wb_compile_switch==1:
+  items+=[
+    
 #Padded Cloth Custom
 ["gondor_custom", "Custom Gondor", [("gondor_knight",0)], itp_type_body_armor|itp_covers_legs|itp_unique,0,1500,weight(20)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(0),imodbits_armor|imodbit_lordly,
  [ #custom_reskin("itm_gondor_custom")
@@ -1586,8 +1591,10 @@ items =[
 
 ["spider_mount","Spider",[("spider_black",0)], itp_type_horse|itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(50)|horse_maneuver(75)|horse_charge(25),imodbits_none,[]],
 
-["marker_night_troop","Trait: Night Troop",[("prtcl_snow",0)],itp_type_goods|itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none],
-["marker_berserker","Trait: Berserker",[("prt_mesh_blood_3",0)],itp_type_goods|itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none],
+["marker_night_troop","Trait: Night Troop",[("icon_night_troop",0)],itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none],
+["marker_berserker","Trait: Berserker",[("icon_berserker",0)],itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none],
+["marker_hp_shield","Trait: Unyielding",[("icon_unyielding",0)],itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none],
+["marker_banner_troop","Trait: Banner",[("icon_night_troop",0)],itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none], #no fitting mesh yet
 
 #from VC
 ["torch",         "Torch", [("orc_club_a",0)], itp_type_two_handed_wpn|itp_two_handed|itp_primary|itp_shop, itc_greatsword, 11 , weight(2.5)|difficulty(0)|spd_rtng(95) | weapon_length(95)|swing_damage(11 , blunt) | thrust_damage(0 ,  pierce),imodbits_none,
@@ -1595,6 +1602,6 @@ items =[
                     # (set_current_color,150, 130, 70),(add_point_light, 10, 30), #light doesn't move
                     #(play_sound, snd_torch_loop), #sound doesn't move
 ])]],
-] or []) + [ 
+#] or []) + [ 
 
 ]
