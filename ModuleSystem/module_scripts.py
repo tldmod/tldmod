@@ -1890,6 +1890,15 @@ scripts = [
     (troop_set_slot, "trp_knight_1_1", slot_troop_home, "p_town_calembel"),
     (troop_set_slot, "trp_knight_1_4", slot_troop_lord_state, stls_passive),
     (troop_set_slot, "trp_knight_1_1", slot_troop_home, "p_town_pelargir"),
+    
+    #individual death chances
+    (troop_set_slot, "trp_knight_1_7", slot_troop_death_chance_modifier, 50),
+    (troop_set_slot, "trp_knight_1_9", slot_troop_death_chance_modifier, 50),
+    (troop_set_slot, "trp_knight_1_14", slot_troop_death_chance_modifier, 50),
+    (troop_set_slot, "trp_knight_3_6", slot_troop_death_chance_modifier, 50),
+    (troop_set_slot, "trp_knight_3_13", slot_troop_death_chance_modifier, 50),
+    (troop_set_slot, "trp_knight_5_2", slot_troop_death_chance_modifier, 50),
+    (troop_set_slot, "trp_knight_5_7", slot_troop_death_chance_modifier, 50),
 
 	] or []) + [    
 
@@ -3895,7 +3904,7 @@ scripts = [
 	  (assign,":total",0),
       (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
       
-      (try_for_range, ":i_stack", 0, ":num_stacks"), #leadership and charisma bonus from companions
+      (try_for_range, ":i_stack", 1, ":num_stacks"), #leadership and charisma bonus from companions
         (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
         (troop_is_hero, ":stack_troop"),
         (store_skill_level, ":skill", "skl_leadership", ":stack_troop"),
@@ -28666,10 +28675,20 @@ command_cursor_scripts = [
         (troop_set_slot, ":troop_no", slot_troop_faction_loyalty, faction_loyalty_loyal),
     (try_end),
     # Override the default for some specificl heroes
-    # Berta was a former prisoner of Gundabad
-    (troop_set_slot, trp_npc21, slot_troop_faction_loyalty, faction_loyalty_disloyal),
-    # The dwarves only just retook Erebor. Kili will not see them lose it again
-    (troop_set_slot, trp_npc7, slot_troop_faction_loyalty, faction_loyalty_fanatical),
+    (troop_set_slot, trp_npc21, slot_troop_faction_loyalty, faction_loyalty_disloyal),  # Berta was a former prisoner of Gundabad
+    (troop_set_slot, trp_npc3, slot_troop_faction_loyalty, faction_loyalty_disloyal),
+    (troop_set_slot, trp_npc11, slot_troop_faction_loyalty, faction_loyalty_disloyal),
+    
+    (troop_set_slot, trp_npc8, slot_troop_faction_loyalty, faction_loyalty_neutral),
+    (troop_set_slot, trp_npc9, slot_troop_faction_loyalty, faction_loyalty_neutral),
+    (troop_set_slot, trp_npc12, slot_troop_faction_loyalty, faction_loyalty_neutral),
+    (troop_set_slot, trp_npc18, slot_troop_faction_loyalty, faction_loyalty_neutral),
+    
+    (troop_set_slot, trp_npc1, slot_troop_faction_loyalty, faction_loyalty_fanatical),
+    (troop_set_slot, trp_npc7, slot_troop_faction_loyalty, faction_loyalty_fanatical), # The dwarves only just retook Erebor. Kili will not see them lose it again
+    (troop_set_slot, trp_npc14, slot_troop_faction_loyalty, faction_loyalty_fanatical),
+    (troop_set_slot, trp_npc16, slot_troop_faction_loyalty, faction_loyalty_fanatical),
+    (troop_set_slot, trp_npc19, slot_troop_faction_loyalty, faction_loyalty_fanatical),
 ]),
 
 # Assigns lords to certain troops. Put in a separate script so it can also be called in the save game update.
