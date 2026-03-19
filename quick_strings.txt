@@ -1,4 +1,4 @@
-1836
+1838
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -282,7 +282,6 @@ qstr_{s2}_{reg3?was:is}_b {s2}_{reg3?was:is}_being_held_captive_at_{s3}.
 qstr_{s2}_{reg3?was:has_b {s2}_{reg3?was:has_been}_taken_captive_by_{reg4?her:his}_enemies.
 qstr_{reg3?{s2}_s_locatio {reg3?{s2}'s_location_was_unknown:I_don't_know_where_{s2}_is}.
 qstr_{s6}_has_joined_your {s6}_has_joined_your_party
-qstr_{s3}_gained_faction_ {s3}_gained_faction_strength.
 qstr_{***}DEBUG:_Template_t {***}DEBUG:_Template_troop:_{s3}
 qstr_elven elven
 qstr_dwarven dwarven
@@ -1174,6 +1173,9 @@ qstr_You_cover_up_your_tr You_cover_up_your_tracks_and_move_onward.
 qstr_the_Eye the_Eye
 qstr_the_Hand the_Hand
 qstr_{s1}_has_joined_{s12 {s1}_has_joined_{s12}
+qstr_{s3}_gained_faction_ {s3}_gained_faction_strength.
+qstr_This_is_ill_news_but This_is_ill_news,_but_it_won't_help_them.
+qstr_Hopeful_tidings_inde Hopeful_tidings_indeed!
 qstr_Breaking_camp... Breaking_camp...
 qstr_Party_morale_is_low. Party_morale_is_low._Troops_desert_from_your_party.
 qstr_Desertion Desertion

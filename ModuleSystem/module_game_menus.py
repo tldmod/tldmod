@@ -2250,8 +2250,8 @@ game_menus = [
 	[
 		#(store_random_in_range, ":cur_troop_id", "trp_knight_1_1", heroes_end), #kings and marshals cannot die for now
         (troop_get_slot, ":party", "trp_knight_2_2", slot_troop_leaded_party),
-		(call_script, "script_hero_leader_killed_abstractly", "trp_knight_1_7",":party"),
-        (troop_set_slot, "trp_knight_1_7", slot_troop_killed_by, "trp_knight_2_2"),
+		(call_script, "script_hero_leader_killed_abstractly", "trp_knight_3_7",":party"),
+        (troop_set_slot, "trp_knight_3_7", slot_troop_killed_by, "trp_knight_2_2"),
         (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")
 	]),
 
@@ -2653,7 +2653,7 @@ game_menus = [
 	  (try_end),
         
       (str_store_faction_name, s7, "$g_mvtest_faction"),
-       (faction_get_slot, reg11, "$g_mvtest_faction",slot_faction_strength),
+       (faction_get_slot, reg11, "$g_mvtest_faction",slot_faction_strength_tmp),
       (str_store_string, s1, "@{!}{s7} faction strength: {reg11}"),
       
 
@@ -2671,24 +2671,24 @@ game_menus = [
         (jump_to_menu, "mnu_mvtest_facstr_change"),
       ]),
      ("add100",[],"{!}add 100 fac strength.", [
-       (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength),
+       (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength_tmp),
        (val_add, ":fac_str", 100),
-       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength,":fac_str"),
+       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,":fac_str"),
        ]),
      ("add500",[],"{!}add 500 fac strength.", [
-       (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength),
+       (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength_tmp),
        (val_add, ":fac_str", 500),
-       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength,":fac_str"),
+       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,":fac_str"),
        ]),
      ("sub100",[],"{!}subtract 100 fac strength.", [
-       (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength),
+       (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength_tmp),
        (val_sub, ":fac_str", 100),
-       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength,":fac_str"),
+       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,":fac_str"),
        ]),
      ("sub500",[],"{!}subtract 500 fac strength.", [
-       (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength),
+       (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength_tmp),
        (val_sub, ":fac_str", 500),
-       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength,":fac_str"),
+       (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,":fac_str"),
        ]),
      ("back_mv",[],"{!}Back to dev menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
      ("back_map",[],"{!}Back to map.", [(change_screen_map),]),
@@ -13495,20 +13495,45 @@ game_menus = [
  ),  
 
  ("companion_promoted_event",0,
-   "^^^^^A messenger arrived reporting that {s2} has assembled a host of warriors at {s1} to join the army of {s3}.",
+   "^^^A new hero\
+   ^^Rumor reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!",
     "none",
     [   
     	(str_store_party_name, s1, "$besieged_center_for_menu"),
     	(str_store_faction_name, s3, "$besieged_by_faction_for_menu"),
     	(str_store_troop_name, s2, "$besieged_by_troop_for_menu"),
-		(party_get_slot,":mesh","$besieged_center_for_menu",slot_town_menu_background),
-		(set_background_mesh, ":mesh"),
+		#(party_get_slot,":mesh","$besieged_center_for_menu",slot_town_menu_background),
+        (call_script, "script_get_victory_mesh_per_troop", "$besieged_by_troop_for_menu"),
+		(set_background_mesh, reg0),
 		(set_fixed_point_multiplier, 100),
 		(position_set_x, pos0, 65),
 		(position_set_y, pos0, 30),
 		(position_set_z, pos0, 100),
-		(set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "$besieged_by_troop_for_menu", pos0)],
-   	[("companion_promoted_event_close", [], "Close", [(change_screen_return)]),
+		(set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "$besieged_by_troop_for_menu", pos0),
+        (store_relation, ":rel", "$besieged_by_faction_for_menu", "$players_kingdom"),
+        
+        #Give strength to their faction based on their level        
+        (try_begin),
+            (lt, ":rel", 0),
+            (display_message, "@{s3} gained faction strength.", color_bad_news),
+        (else_try),
+            (display_message, "@{s3} gained faction strength.", color_good_news),
+        (try_end),
+        (store_character_level, ":level", "$besieged_by_troop_for_menu"),
+        (val_clamp, ":level", 10, 25),
+        (store_mul, ":strength_increase", ":level", 80),
+        (faction_get_slot, ":fac_strength", "$besieged_by_faction_for_menu", slot_faction_strength_tmp),
+        (val_add, ":fac_strength", ":strength_increase"),
+        (faction_set_slot,"$besieged_by_faction_for_menu",slot_faction_strength_tmp,":fac_strength"), 
+        
+        (try_begin),
+            (lt, ":rel", 0),
+            (str_store_string, s4, "@This is ill news, but it won't help them."),
+        (else_try),
+            (str_store_string, s4, "@Hopeful tidings indeed!"),
+        (try_end),
+        ],
+   	[("companion_promoted_event_close", [], "{s4}", [(change_screen_return)]),
    	
 ]),
  

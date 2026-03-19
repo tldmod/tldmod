@@ -11853,14 +11853,6 @@ scripts = [
     
     #Create their party in the appropriate town
     (call_script, "script_create_kingdom_hero_party", ":troop_no", ":town"),
-
-    #Give strength to their faction based on their level
-    (str_store_faction_name, s3, ":troop_faction"),
-    (display_message, "@{s3} gained faction strength."),
-    (store_mul, ":strength_increase", ":level", 10),
-    (faction_get_slot, ":fac_strength", ":troop_faction", slot_faction_strength_tmp),
-    (val_add, ":fac_strength", ":strength_increase"),
-    (faction_set_slot,":troop_faction",slot_faction_strength_tmp,":fac_strength"),
 ]),
 
 # script_get_template_troop_for_companion
@@ -29019,6 +29011,9 @@ command_cursor_scripts = [
     (else_try),
         (eq, ":faction", "fac_imladris" ),
         (assign, reg0, "mesh_draw_victory_rivendell"), # specific victory-loss image: rivendell VS anything
+    (else_try),
+        (eq, ":faction", "fac_lorien" ),
+        (assign, reg0, "mesh_draw_victory_lorien"), # specific victory-loss image: lorien VS anything
     (else_try),
         (eq, ":faction", "fac_woodelf" ),
         (assign, reg0, "mesh_draw_victory_mirkwood"), # specific victory-loss image: mirkwood VS anything

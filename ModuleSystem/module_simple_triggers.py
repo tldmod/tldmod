@@ -3754,7 +3754,8 @@ simple_triggers = [
             (neg|main_party_has_troop,":lord_candidate"),
             (neg|troop_slot_eq, ":lord_candidate", slot_troop_wound_mask, wound_death),
             (store_skill_level, ":leadership", "skl_leadership", ":lord_candidate"),
-            (ge, ":leadership", 3),
+            (ge, ":leadership", 1),
+            (troop_raise_skill, ":lord_candidate", "skl_leadership", 1), #give them a little extra..
 
             (call_script, "script_promote_companion_to_lord", ":lord_candidate"),
 

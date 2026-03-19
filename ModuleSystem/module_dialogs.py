@@ -1159,7 +1159,7 @@ dialogs = [
 [anyone,"member_promote_lord", [
     #This option is only available if they have ranks in leadership
     (store_skill_level, ":leadership", "skl_leadership", "$g_talk_troop"),
-    (eq, ":leadership", 0),
+    (le, ":leadership", 1),
 ], "There are few who would follow me, I'm afraid. Perhaps I could learn a thing or two about leadership from you? Then we can discuss this again.", "member_talk",[]],
 
 [anyone,"member_promote_lord", [
@@ -1176,7 +1176,7 @@ dialogs = [
 
     #Faction must be weak or have lost a lord to send companion back
     (faction_get_slot, ":npc_faction_strength", "$g_talk_troop_faction", slot_faction_strength),
-    (gt, ":npc_faction_strength", fac_str_weak),
+    (gt, ":npc_faction_strength", fac_str_ok),
 ], "{s14} remains strong in the face of our enemies and has no need of additional commanders. If a commander of {s14} should fall in battle let us speak of this again, but for now I think it is better if I stay with you.", "member_talk",[]],
 
 [anyone,"member_promote_lord", [
@@ -1197,11 +1197,16 @@ dialogs = [
     #Grant rank and influence rewards for sending companion away voluntarily
     (store_character_level, ":level", "$g_talk_troop"),
     (store_troop_faction, ":troop_faction", "$g_talk_troop"),
-    (faction_get_slot, ":influence", ":troop_faction", slot_faction_influence),
-    (val_add, ":influence", ":level"),
-    (faction_set_slot, ":troop_faction", slot_faction_influence, ":influence"),
     (store_mul, ":rank_increase", ":level", 10),
     (call_script, "script_increase_rank", ":troop_faction", ":rank_increase"),
+    
+    #Give strength to their faction based on their level
+    (str_store_faction_name, s3, ":troop_faction"),
+    (display_message, "@{s3} gained faction strength." , color_good_news),
+    (store_mul, ":strength_increase", ":level", 50),
+    (faction_get_slot, ":fac_strength", ":troop_faction", slot_faction_strength_tmp),
+    (val_add, ":fac_strength", ":strength_increase"),
+    (faction_set_slot,":troop_faction",slot_faction_strength_tmp,":fac_strength"),
 
     (call_script,"script_stand_back"),
     (set_player_troop, "trp_player"),
@@ -2051,7 +2056,19 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone|plyr, "companion_faction_dying", [],  "Very well. Perhaps we will meet again.", "close_window", [
     (call_script,"script_stand_back"),
+    (troop_raise_skill, "$map_talk_troop", "skl_leadership", 1), #give them a little extra..
     (call_script, "script_promote_companion_to_lord", "$map_talk_troop"),
+    
+    #Give strength to their faction based on their level
+
+    (store_troop_faction, ":troop_faction", "$map_talk_troop"),
+    (str_store_faction_name, s3, ":troop_faction"),
+    (display_message, "@{s3} gained faction strength.", color_good_news),
+    (store_character_level, ":level", "$map_talk_troop"),
+    (store_mul, ":strength_increase", ":level", 60),
+    (faction_get_slot, ":fac_strength", ":troop_faction", slot_faction_strength_tmp),
+    (val_add, ":fac_strength", ":strength_increase"),
+    (faction_set_slot,":troop_faction",slot_faction_strength_tmp,":fac_strength"),
 ]],
 
 #This is adapted from the logic for giving troops to regular lords, but with some of the pre-checks removed because they aren't needed in this context
@@ -2059,6 +2076,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 "Of course. I shall also permit other warriors of {s6} to go with you.", "companion_give_troops",[
     #Move faction name from s6 to s14 for the troop transfer strings
     (str_store_string_reg, s14, s6),
+    (troop_raise_skill, "$map_talk_troop", "skl_leadership", 1), #give them a little extra..
     #It's now too late for the player to persuade them to stay so spawn their party now before attempting the troop exchange
     (call_script, "script_promote_companion_to_lord", "$map_talk_troop"),
     # just to see if someone can be given away: backup party, then see if troops which can be given away 
@@ -2184,7 +2202,19 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone, "companion_faction_dying_persuade", [], "I'm afraid that {s6} needs me more. Farewell, {s5}.", "close_window", [
     (call_script,"script_stand_back"),
+    (troop_raise_skill, "$map_talk_troop", "skl_leadership", 1), #give them a little extra..
     (call_script, "script_promote_companion_to_lord", "$map_talk_troop"),
+    
+    #Give strength to their faction based on their level
+    
+    (store_troop_faction, ":troop_faction", "$map_talk_troop"),
+    (str_store_faction_name, s3, ":troop_faction"),
+    (display_message, "@{s3} gained faction strength.", color_good_news),
+    (store_character_level, ":level", "$map_talk_troop"),
+    (store_mul, ":strength_increase", ":level", 60),
+    (faction_get_slot, ":fac_strength", ":troop_faction", slot_faction_strength_tmp),
+    (val_add, ":fac_strength", ":strength_increase"),
+    (faction_set_slot,":troop_faction",slot_faction_strength_tmp,":fac_strength"),
 ]],
 
 [anyone, "event_triggered", [
@@ -4911,7 +4941,6 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone|plyr,"lord_talk", 
   [(eq, "$g_talk_troop", "trp_dwarf_lord"),
    (eq, "$moria_book_given",1),
-   (assign, "$moria_book_given",2),
    (store_troop_faction, ":faction", "trp_player"),
    (str_clear, s3),
    (try_begin),
