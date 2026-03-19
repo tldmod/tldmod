@@ -4920,7 +4920,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (else_try),
       (str_store_string, s3, "@Lord"),
     (try_end)], 
-      "{s3}, I have a matter which I must bring to your attention.", "dwarf_lord_book", []],
+      "{s3}, I have a matter which I must bring to your attention.", "dwarf_lord_book", [(assign, "$moria_book_given",2)]],
 
 [anyone,"dwarf_lord_book", 
   [], "Speak freely, {playername}.", "dwarf_lord_book_give", []],
