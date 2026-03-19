@@ -13502,6 +13502,11 @@ game_menus = [
     	(str_store_party_name, s1, "$besieged_center_for_menu"),
     	(str_store_faction_name, s3, "$besieged_by_faction_for_menu"),
     	(str_store_troop_name, s2, "$besieged_by_troop_for_menu"),
+        (troop_get_type, reg3, "$besieged_by_troop_for_menu"),
+        (try_begin),
+          (gt, reg3, 1), #MV: non-humans are male
+          (assign, reg3, 0),
+        (try_end),
 		#(party_get_slot,":mesh","$besieged_center_for_menu",slot_town_menu_background),
         (call_script, "script_get_victory_mesh_per_troop", "$besieged_by_troop_for_menu"),
 		(set_background_mesh, reg0),
