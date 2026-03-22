@@ -432,51 +432,41 @@ game_menus = [
 
 # This needs to be the fifth window!!!  
 ( "reports",0,
-   "{!}^^^{s9}", "none",
-   [(set_background_mesh, "mesh_ui_default_menu_window"),
-	# Player Reward System (mtarini)
-	(call_script, "script_update_respoint"), # so that current money is registered as res point of appropriate faction
-	(faction_get_slot, reg10, "$players_kingdom", slot_faction_rank),
-	(faction_get_slot, reg11, "$players_kingdom", slot_faction_influence),
-	(faction_get_slot, reg12, "$players_kingdom", slot_faction_respoint ),
-	(str_store_faction_name, s16, "$players_kingdom"),
-    (call_script, "script_get_faction_rank", "$players_kingdom"),
-    (assign, reg13, reg0),
-	(call_script, "script_get_own_rank_title_to_s24", "$players_kingdom", reg13),
-	(store_add, ":next_rank", reg13, 1),
-	(call_script, "script_get_rank_points_for_rank", ":next_rank"), #convert to rank points
-	(assign, reg20, reg0),
-	(val_sub, reg20, reg10),
-	(str_store_string, s11, "@{s24} ({reg13}) - {reg20} until next promotion^"),  # first title (own faction)
-	(str_store_string, s13, "@Influence:^ {reg11} (with {s16})^"),  # first inf
-	(str_store_string, s15, "@Resource Points:^ {reg12} (in {s16})^"),  # first rp
+   "^^^{s10}^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}", "none",
+   [
+   (set_background_mesh, "mesh_draw_war_starts"),
 
-	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
-		(neg|eq,"$players_kingdom", ":fac"),
-		(faction_get_slot, reg10, ":fac", slot_faction_rank),
-		(faction_get_slot, reg11, ":fac", slot_faction_influence),
-		(faction_get_slot, reg12, ":fac", slot_faction_respoint ),
-		(str_store_faction_name, s16, ":fac"),
-		
-		(call_script, "script_get_faction_rank", ":fac"),
-		(assign, reg13, reg0),
-		(call_script, "script_get_allied_rank_title_to_s24", ":fac", reg13),
-		(store_add, ":next_rank_ally", reg13, 1),
-		(call_script, "script_get_rank_points_for_rank", ":next_rank_ally"), #convert to rank points
-		(assign, reg21, reg0),
-		(val_sub, reg21, reg10),
-		(try_begin), 
-			(this_or_next|gt, reg10, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s11, "@{s11} {s24} ({reg13}) - {reg21} until next promotion^"),  # title
-		(try_end),
-		(try_begin), 
-			(this_or_next|gt, reg11, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s13, "@{s13} {reg11} (with {s16})^"),  # finf
-		(try_end),
-		(try_begin), 
-			(this_or_next|gt, reg12, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s15, "@{s15} {reg12} (in {s16})^"),  # first rp
-		(try_end),
+    (call_script, "script_game_get_party_companion_limit"),
+    (assign, ":party_size_limit", reg0),
+    (assign, reg7, ":party_size_limit"),
+    (party_get_morale, reg8, "p_main_party"),
+	# CppCoder: Injury Report. Feel free to edit/remove/improve. :)
+	(eq, 0, 0), # on / off toggle
+	(assign, ":str_reg", s1), 
+	(assign, ":wounds", 0), #count # of wounds
+	(assign, ":wound_mask", 0), #count # of wounds
+	(troop_get_slot, ":wound_mask", "trp_player", slot_troop_wound_mask),
+	(try_begin),(store_and,":x",":wound_mask",wound_head ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "str_wound_head"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_chest),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "str_wound_chest"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_arm  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "str_wound_arm"),(val_add, ":str_reg", 1),(try_end),
+	(try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(str_store_string, ":str_reg", "str_wound_leg"),(val_add, ":str_reg", 1),(try_end),
+	(str_store_string, s5, "@You are in perfect health."),
+        (try_begin),
+		(eq, ":wounds", 1),
+		(str_store_string, s5, "@You are suffering from {s1}."),
+	(else_try),
+		(eq, ":wounds", 2),
+		(str_store_string, s5, "@You are suffering from {s1} and {s2}."),
+	(else_try),
+		(eq, ":wounds", 3),
+		(str_store_string, s5, "@You are suffering from {s1}, {s2}, and {s3}."),
+	(else_try),
+		(eq, ":wounds", 4),
+		(str_store_string, s5, "@You are suffering from {s1}, {s2}, {s3} and {s4}."),
+	(else_try),
+		(str_store_string, s5, "@You are in perfect health."),
 	(try_end),
 	(str_store_troop_name, s10, "$g_player_troop"),
-	(str_store_string, s9, "@{!}-={s10}=-^{s11}^^^{s13}^^^{s15}."),
     ],
     [ 
  ]+concatenate_scripts([[		
@@ -497,7 +487,8 @@ game_menus = [
 	   +
 	 
 	 [("view_upkeep_costs"     ,[                    ],"View upkeep costs."       ,[(jump_to_menu, "mnu_upkeep_report" ),]),
-      ("view_character_report" ,[                    ],"View character report."   ,[(jump_to_menu, "mnu_character_report" ),]),
+      ("view_rank_report",[                         ],"View rank report."  ,[(jump_to_menu, "mnu_rank_report"),]),
+      #("view_character_report" ,[                    ],"View character report."   ,[(jump_to_menu, "mnu_character_report" ),]),
       ("view_party_size_report",[                    ],"View party size report."  ,[(jump_to_menu, "mnu_party_size_report"),]),
       ("view_morale_report"    ,[                    ],"View party morale report.",[(jump_to_menu, "mnu_morale_report"    ),]),
 #NPC companion changes begin
@@ -1837,6 +1828,56 @@ game_menus = [
       ("go_back_dot_ct",[],"{!}Go back.",[(jump_to_menu, "mnu_reports"),]),
     ]
  ),
+( "rank_report",0,
+   "^^^{s9}",
+   "none",
+   [(set_background_mesh, "mesh_ui_default_menu_window"),
+	(call_script, "script_update_respoint"), # so that current money is registered as res point of appropriate faction
+	(faction_get_slot, reg10, "$players_kingdom", slot_faction_rank),
+	(faction_get_slot, reg11, "$players_kingdom", slot_faction_influence),
+	(faction_get_slot, reg12, "$players_kingdom", slot_faction_respoint ),
+	(str_store_faction_name, s16, "$players_kingdom"),
+    (call_script, "script_get_faction_rank", "$players_kingdom"),
+    (assign, reg13, reg0),
+	(call_script, "script_get_own_rank_title_to_s24", "$players_kingdom", reg13),
+	(store_add, ":next_rank", reg13, 1),
+	(call_script, "script_get_rank_points_for_rank", ":next_rank"), #convert to rank points
+	(assign, reg20, reg0),
+	(val_sub, reg20, reg10),
+	(str_store_string, s11, "@{s24} ({reg13}) - {reg20} until next promotion^"),  # first title (own faction)
+	(str_store_string, s13, "@Influence:^ {reg11} (with {s16})^"),  # first inf
+	(str_store_string, s15, "@Resource Points:^ {reg12} (in {s16})^"),  # first rp
+
+	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
+		(neg|eq,"$players_kingdom", ":fac"),
+		(faction_get_slot, reg10, ":fac", slot_faction_rank),
+		(faction_get_slot, reg11, ":fac", slot_faction_influence),
+		(faction_get_slot, reg12, ":fac", slot_faction_respoint ),
+		(str_store_faction_name, s16, ":fac"),
+		
+		(call_script, "script_get_faction_rank", ":fac"),
+		(assign, reg13, reg0),
+		(call_script, "script_get_allied_rank_title_to_s24", ":fac", reg13),
+		(store_add, ":next_rank_ally", reg13, 1),
+		(call_script, "script_get_rank_points_for_rank", ":next_rank_ally"), #convert to rank points
+		(assign, reg21, reg0),
+		(val_sub, reg21, reg10),
+		(try_begin), 
+			(this_or_next|gt, reg10, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s11, "@{s11} {s24} ({reg13}) - {reg21} until next promotion^"),  # title
+		(try_end),
+		(try_begin), 
+			(this_or_next|gt, reg11, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s13, "@{s13} {reg11} (with {s16})^"),  # finf
+		(try_end),
+		(try_begin), 
+			(this_or_next|gt, reg12, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s15, "@{s15} {reg12} (in {s16})^"),  # first rp
+		(try_end),
+	(try_end),
+	(str_store_troop_name, s10, "$g_player_troop"),
+	(str_store_string, s9, "@{!}-={s10}=-^{s11}^^^{s13}^^^{s15}."),
+   ],
+   [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
+ ),
+ 
 ( "character_report",0,
    "^^^^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}",
 #   "^^^^^Character Renown: {reg5}^Honor Rating: {reg6}^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}",
@@ -1934,21 +1975,23 @@ game_menus = [
    [(set_background_mesh, "mesh_ui_default_menu_window"),
     (call_script, "script_game_get_party_companion_limit"),
     (assign, ":party_size_limit", reg0),
+    (assign, ":npc_leadership", 0),
+    (assign, ":npc_charisma", 0),
 
     (store_skill_level, ":leadership", "skl_leadership", "trp_player"),
     (val_mul, ":leadership", 5),
     (store_attribute_level, ":charisma", "trp_player", ca_charisma),
 
     (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
-    (try_for_range, ":i_stack", 0, ":num_stacks"), #leadership and charisma bonus from companions
+    (try_for_range, ":i_stack", 1, ":num_stacks"), #leadership and charisma bonus from companions
         (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
         (troop_is_hero, ":stack_troop"),
-        (store_skill_level, ":npc_skill", "skl_leadership", ":stack_troop"),
-        (store_attribute_level, ":npc_charisma", ":stack_troop", ca_charisma),
-        (val_mul, ":npc_skill", 3),
-        (val_div, ":npc_charisma", 2),
-        (val_add, ":charisma", ":npc_charisma"),
-        (val_add, ":leadership", ":npc_skill"),
+        (store_skill_level, ":troop_skill", "skl_leadership", ":stack_troop"),
+        (store_attribute_level, ":troop_cha", ":stack_troop", ca_charisma),
+        (val_mul, ":troop_skill", 3),
+        (val_div, ":troop_cha", 2),
+        (val_add, ":npc_charisma", ":troop_cha"),
+        (val_add, ":npc_leadership", ":troop_skill"),
     (try_end),
 
     (assign, ":ranks", 0),
@@ -1964,22 +2007,37 @@ game_menus = [
     (try_begin),(gt, ":leadership", 0),(str_store_string, s2, "@{!} +"),
      (else_try),                       (str_store_string, s2, "@{!} "),
     (try_end),
-    (try_begin),(gt, ":charisma", 0),(str_store_string, s3, "@{!} +"),
-     (else_try),                     (str_store_string, s3, "@{!} "),
+    (try_begin),(gt, ":npc_leadership", 0),(str_store_string, s3, "@{!} +"),
+     (else_try),                       (str_store_string, s3, "@{!} "),
     (try_end),
-    (try_begin),(gt, ":ranks", 0),(str_store_string, s4, "@{!} +"),
-     (else_try),                   (str_store_string, s4, "@{!} "),
+    (try_begin),(gt, ":charisma", 0),(str_store_string, s4, "@{!} +"),
+     (else_try),                     (str_store_string, s4, "@{!} "),
     (try_end),
-    (assign, reg5, ":party_size_limit"),
-    (assign, reg1, ":leadership"),
-    (assign, reg2, ":charisma"),
-    (assign, reg3, ":ranks"),
-    (str_clear, s5),
+    (try_begin),(gt, ":npc_charisma", 0),(str_store_string, s5, "@{!} +"),
+     (else_try),                     (str_store_string, s5, "@{!} "),
+    (try_end),
+    (try_begin),(gt, ":ranks", 0),(str_store_string, s6, "@{!} +"),
+     (else_try),                   (str_store_string, s6, "@{!} "),
+    (try_end),
+    (assign, reg7, ":party_size_limit"),
+    (assign, reg2, ":leadership"),
+    (assign, reg3, ":npc_leadership"),
+    (assign, reg4, ":charisma"),
+    (assign, reg5, ":npc_charisma"),
+    (assign, reg6, ":ranks"),
+    (str_clear, s8),
     (try_begin),
       (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-      (str_store_string, s5, "@Orc hiring bonus: +2/3 for each orc^"),
+      (str_store_string, s8, "@Orc hiring bonus: +2/3 for each orc^"),
     (try_end),
-    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Ranks: {s4}{reg3}^{s5}TOTAL:  {reg5}"),
+    (str_store_string, s1, "@Current party size limit is {reg7}.^Current party size modifiers are:^^\
+    Base size:  +10^\
+    Player Leadership: {s2}{reg2}^\
+    Companion Leadership: {s3}{reg3}^\
+    Player Charisma: {s4}{reg4}^\
+    Companion Charisma: {s5}{reg5}^\
+    Faction Ranks: {s6}{reg6}^\
+    {s8}TOTAL:  {reg7}"),
 #    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^TOTAL:  {reg5}"),
 #    (str_store_string, s1, "@Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Renown: {s4}{reg3}^TOTAL:  {reg5}"),
     ],
@@ -13496,7 +13554,7 @@ game_menus = [
 
  ("companion_promoted_event",0,
    "^^^A new hero\
-   ^^Rumor reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!",
+   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!",
     "none",
     [   
     	(str_store_party_name, s1, "$besieged_center_for_menu"),

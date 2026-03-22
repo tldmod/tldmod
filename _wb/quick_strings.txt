@@ -1,4 +1,4 @@
-2164
+2165
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -104,7 +104,7 @@ qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_Thank_you_for_playin Thank_you_for_playing
-qstr_{!}_rev_515_wb__dev_ {!}_rev_515_wb_|_dev_^_Built_2026-03-19_21:47___
+qstr_{!}_rev_517_wb__dev_ {!}_rev_517_wb_|_dev_^_Built_2026-03-22_14:04___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -685,6 +685,7 @@ qstr_Your_deed_has_greatl Your_deed_has_greatly_helped_my_design,_better_even_th
 qstr_{playername}_I_will_ {playername},_I_will_ask_you_a_thing_now._You_are_accounted_an_able_captain,_and_a_dutiful_one;_were_you_overmastered_by_great_foes?_Did_you_tarry_overlong,_for_caution_or_even_fear?_Behold,_we_are_now_come_into_a_greater_peril_than_I_could_have_foreseen._The_strength_of_Rohan_is_broken,_her_people_scattered_and_shieldless:_Helm’s_Deep_has_fallen._The_trees_are_withered_untimely,_and_night_lies_over_the_forge-fires_of_Isengard:_the_Ents_of_Fangorn_Forest_are_dead_or_driven_back.
 qstr_I... I...
 qstr_You_have_failed_me_{ You_have_failed_me,_{playername}_–_or_perhaps_it_is_I_who_have_failed_you._Perhaps_there_was_some_flaw_in_my_design,_some_grave_blunder_I_did_not_recognise…_The_terror_of_Mordor_comes._Leave_me_now,_{playername}._We_may_meet_again…_or_perhaps_not.
+qstr_{!}placeholder {!}placeholder
 qstr_Bagginsssss..._Ssssh Bagginsssss..._Sssshhhire...
 qstr_I..._don_t_know! I..._don't_know!
 qstr_It..._beckonsssssss. It..._beckonsssssss...
@@ -1124,13 +1125,11 @@ qstr_War_start_mode_can_o War_start_mode_can_only_be_set_at_game_start;_see_opti
 qstr_ON ON
 qstr_OFF OFF
 qstr_If_you_are_new_to_TL If_you_are_new_to_TLD,_tutorial_messages_are_recommended
-qstr_{s24}__{reg13}____{r {s24}_({reg13})_-_{reg20}_until_next_promotion^
-qstr_Influence:^_{reg11}_ Influence:^_{reg11}_(with_{s16})^
-qstr_Resource_Points:^_{r Resource_Points:^_{reg12}_(in_{s16})^
-qstr_{s11}_{s24}__{reg13} {s11}_{s24}_({reg13})_-_{reg21}_until_next_promotion^
-qstr_{s13}_{reg11}__with_ {s13}_{reg11}_(with_{s16})^
-qstr_{s15}_{reg12}__in_{s {s15}_{reg12}_(in_{s16})^
-qstr_{!}_={s10}=_^{s11}^^ {!}-={s10}=-^{s11}^^^{s13}^^^{s15}.
+qstr_You_are_in_perfect_h You_are_in_perfect_health.
+qstr_You_are_suffering_fr You_are_suffering_from_{s1}.
+qstr_You_are_suffering_fro You_are_suffering_from_{s1}_and_{s2}.
+qstr_You_are_suffering_from You_are_suffering_from_{s1},_{s2},_and_{s3}.
+qstr_You_are_suffering_from_ You_are_suffering_from_{s1},_{s2},_{s3}_and_{s4}.
 qstr_{!}{s1}___{s15} {!}{s1}_-_{s15}
 qstr_{!}{s1}___{reg1} {!}{s1}_-_{reg1}
 qstr_{!}{s4}:_M{reg3}_2M{ {!}{s4}:_M{reg3},_2M{reg4},_PC{reg5},_2PC{reg6},_PM{reg7}
@@ -1169,16 +1168,18 @@ qstr_Attacking_enemies_ar Attacking_enemies_around_{s11}
 qstr_No_one No_one
 qstr_{s9}{s10}^Current_st {s9}{s10}^Current_state:_{s11}^Marshall:_{s12}^Since_the_last_offensive:_{reg1}_hours^Offensive_maximum_followers:_{reg2}^^
 qstr_Selected_faction_is: Selected_faction_is:_{s10}^^{s9}
-qstr_You_are_in_perfect_h You_are_in_perfect_health.
-qstr_You_are_suffering_fr You_are_suffering_from_{s1}.
-qstr_You_are_suffering_fro You_are_suffering_from_{s1}_and_{s2}.
-qstr_You_are_suffering_from You_are_suffering_from_{s1},_{s2},_and_{s3}.
-qstr_You_are_suffering_from_ You_are_suffering_from_{s1},_{s2},_{s3}_and_{s4}.
+qstr_{s24}__{reg13}____{r {s24}_({reg13})_-_{reg20}_until_next_promotion^
+qstr_Influence:^_{reg11}_ Influence:^_{reg11}_(with_{s16})^
+qstr_Resource_Points:^_{r Resource_Points:^_{reg12}_(in_{s16})^
+qstr_{s11}_{s24}__{reg13} {s11}_{s24}_({reg13})_-_{reg21}_until_next_promotion^
+qstr_{s13}_{reg11}__with_ {s13}_{reg11}_(with_{s16})^
+qstr_{s15}_{reg12}__in_{s {s15}_{reg12}_(in_{s16})^
+qstr_{!}_={s10}=_^{s11}^^ {!}-={s10}=-^{s11}^^^{s13}^^^{s15}.
 qstr_Troop_upkeep__paid_e Troop_upkeep_(paid_every_four_days):^
 qstr_{s12}^^__{s4}:_{reg8 {s12}^^__{s4}:_{reg8}/{reg5}_Resource_Points_^Party:_{reg4}^Reserves:_{reg7}
 qstr_No_upkeep_costs No_upkeep_costs
 qstr_Orc_hiring_bonus:_+2 Orc_hiring_bonus:_+2/3_for_each_orc^
-qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size_modifiers_are:^^Base_size:__+10^Leadership:_{s2}{reg1}^Charisma:_{s3}{reg2}^Ranks:_{s4}{reg3}^{s5}TOTAL:__{reg5}
+qstr_Current_party_size_l Current_party_size_limit_is_{reg7}.^Current_party_size_modifiers_are:^^____Base_size:__+10^____Player_Leadership:_{s2}{reg2}^____Companion_Leadership:_{s3}{reg3}^____Player_Charisma:_{s4}{reg4}^____Companion_Charisma:_{s5}{reg5}^____Faction_Ranks:_{s6}{reg6}^____{s8}TOTAL:__{reg7}
 qstr_{s2}^_________{s4}:_ {s2}^_________{s4}:_{reg1}_({s23})
 qstr__________Faction_str _________Faction_strengths_report:^{s2}
 qstr_{s1}^^Factions_are_n {s1}^^Factions_are_normally_sieged_when_below_{reg1}_strength._(Some_centers_can_always_be_sieged.)
