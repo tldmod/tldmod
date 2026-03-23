@@ -26179,6 +26179,23 @@ command_cursor_scripts = [
         (call_script, "script_clone_troop", "trp_i5_isen_fighting_uruk_champion", "trp_lugdush"),
 
     (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4386),
+        (assign, "$savegame_version", 4386),
+        (try_for_range, ":ziggy_clone", trp_npc22, trp_werewolf_old),
+            ] + (is_a_wb_script==1 and [
+                (troop_set_note_available, ":ziggy_clone", 0),
+            ] or []) + [
+            (troop_set_faction, ":ziggy_clone", fac_no_faction),
+            (troop_raise_skill, ":ziggy_clone", skl_leadership, -2),
+            (troop_set_slot, ":ziggy_clone", slot_troop_occupation, 0),
+    		(troop_get_slot, ":party", ":ziggy_clone", slot_troop_leaded_party),
+            (gt, ":party", 0),
+            (remove_party, ":party"),
+            (troop_set_slot, ":ziggy_clone", slot_troop_leaded_party, -1),
+        (try_end),
+    (try_end),
     
     (call_script, "script_update_all_notes"),
     
