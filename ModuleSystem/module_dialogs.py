@@ -1203,7 +1203,9 @@ dialogs = [
     #Give strength to their faction based on their level
     (str_store_faction_name, s3, ":troop_faction"),
     (display_message, "@{s3} gained faction strength." , color_good_news),
-    (store_mul, ":strength_increase", ":level", 50),
+    (val_add, ":level", 10), #baseline
+    (val_clamp, ":level", 10, 40),
+    (store_mul, ":strength_increase", ":level", 30),
     (faction_get_slot, ":fac_strength", ":troop_faction", slot_faction_strength_tmp),
     (val_add, ":fac_strength", ":strength_increase"),
     (faction_set_slot,":troop_faction",slot_faction_strength_tmp,":fac_strength"),
@@ -2065,7 +2067,9 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (str_store_faction_name, s3, ":troop_faction"),
     (display_message, "@{s3} gained faction strength.", color_good_news),
     (store_character_level, ":level", "$map_talk_troop"),
-    (store_mul, ":strength_increase", ":level", 60),
+    (val_add, ":level", 10), #baseline
+    (val_clamp, ":level", 10, 40),
+    (store_mul, ":strength_increase", ":level", 40),
     (faction_get_slot, ":fac_strength", ":troop_faction", slot_faction_strength_tmp),
     (val_add, ":fac_strength", ":strength_increase"),
     (faction_set_slot,":troop_faction",slot_faction_strength_tmp,":fac_strength"),
@@ -2211,7 +2215,9 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (str_store_faction_name, s3, ":troop_faction"),
     (display_message, "@{s3} gained faction strength.", color_good_news),
     (store_character_level, ":level", "$map_talk_troop"),
-    (store_mul, ":strength_increase", ":level", 60),
+    (val_add, ":level", 10), #baseline
+    (val_clamp, ":level", 10, 40),
+    (store_mul, ":strength_increase", ":level", 40),
     (faction_get_slot, ":fac_strength", ":troop_faction", slot_faction_strength_tmp),
     (val_add, ":fac_strength", ":strength_increase"),
     (faction_set_slot,":troop_faction",slot_faction_strength_tmp,":fac_strength"),

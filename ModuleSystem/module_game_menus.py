@@ -13583,8 +13583,9 @@ game_menus = [
             (display_message, "@{s3} gained faction strength.", color_good_news),
         (try_end),
         (store_character_level, ":level", "$besieged_by_troop_for_menu"),
-        (val_clamp, ":level", 10, 25),
-        (store_mul, ":strength_increase", ":level", 80),
+        (val_add, ":level", 10), #baseline
+        (val_clamp, ":level", 10, 40),
+        (store_mul, ":strength_increase", ":level", 50),
         (faction_get_slot, ":fac_strength", "$besieged_by_faction_for_menu", slot_faction_strength_tmp),
         (val_add, ":fac_strength", ":strength_increase"),
         (faction_set_slot,"$besieged_by_faction_for_menu",slot_faction_strength_tmp,":fac_strength"), 

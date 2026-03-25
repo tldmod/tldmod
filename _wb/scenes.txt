@@ -1516,10 +1516,10 @@ scn_advcamp_lorien advcamp_lorien 256 none none 0 0 200 200 -0.5 0x0000000130000
   0 
   0 
  outer_terrain_rohan 
-scn_advcamp_imladris advcamp_imladris 256 none none 0 0 200 200 -0.5 0x00000000b0000500000691a40000065c00004b34000039d4  
+scn_advcamp_imladris advcamp_imladris 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
   0 
   0 
- outer_terrain_forest  
+ outer_terrain_rohan 
 scn_advcamp_beorn advcamp_beorn 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
   0 
   0 
@@ -1588,10 +1588,10 @@ scn_advcamp_lorien_siege advcamp_lorien_siege 256 none none 0 0 200 200 -0.5 0x0
   0 
   0 
  outer_terrain_rohan 
-scn_advcamp_imladris_siege advcamp_imladris_siege 256 none none 0 0 200 200 -0.5 0x00000000b0000500000691a40000065c00004b34000039d4  
+scn_advcamp_imladris_siege advcamp_imladris_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
   0 
   0 
- outer_terrain_forest  
+ outer_terrain_rohan 
 scn_advcamp_beorn_siege advcamp_beorn_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
   0 
   0 
