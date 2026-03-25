@@ -17109,8 +17109,26 @@ scripts = [
          (troop_slot_eq, ":kingdom_companion", slot_troop_occupation, slto_kingdom_companion),
          (troop_get_slot, ":companion_lord", ":kingdom_companion", slot_troop_lord),
          (eq, ":companion_lord", ":giver_troop_no"),
-         (troop_set_slot, ":kingdom_companion", slot_troop_quest_help_offer, stqho_offer),
+
+         #Only certain quests qualify
+         (this_or_next|eq,":quest_no",qst_escort_messenger),
+         (this_or_next|eq,":quest_no",qst_bring_back_runaway_serfs),
+         (this_or_next|eq,":quest_no",qst_capture_enemy_hero),
+         (this_or_next|eq,":quest_no",qst_capture_prisoners),
+         (this_or_next|eq,":quest_no",qst_capture_troll),
+         (this_or_next|eq,":quest_no",qst_kill_troll),
+         (this_or_next|eq,":quest_no",qst_defend_village),
+         (this_or_next|eq,":quest_no",qst_raid_village),
+         (this_or_next|eq,":quest_no",qst_destroy_scout_camp),
+         (this_or_next|eq,":quest_no",qst_rescue_prisoners),
+         (this_or_next|eq,":quest_no",qst_scout_enemy_town),
+         (this_or_next|eq,":quest_no",qst_dispatch_scouts),
+         (eq,":quest_no",qst_eliminate_patrols),
+
          (troop_set_slot, ":kingdom_companion", slot_troop_quest_help_target, ":quest_no"),
+         #Don't reset their help offer slot if they are already with the player from a prior quest
+         (neg|main_party_has_troop, ":kingdom_companion"),
+         (troop_set_slot, ":kingdom_companion", slot_troop_quest_help_offer, stqho_offer),
        (try_end),
 
      (else_try),
@@ -26194,6 +26212,46 @@ command_cursor_scripts = [
             (gt, ":party", 0),
             (remove_party, ":party"),
             (troop_set_slot, ":ziggy_clone", slot_troop_leaded_party, -1),
+        (try_end),
+    (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4387),
+        (assign, "$savegame_version", 4387),
+        (try_for_range, ":kingdom_companion", kingdom_companions_begin, kingdom_companions_end),
+            (try_begin),
+                # If a quest was completed and a new one immediately accepted the companion could enter a bugged state due to slot_troop_quest_help_offer being reset while the companion was already in the player's party
+                (main_party_has_troop, ":kingdom_companion"),
+                (troop_set_slot, ":kingdom_companion", slot_troop_quest_help_offer, stqho_accepted),
+            (try_end),
+
+            #If the player is on a quest that is no longer an allowed quest for this feature reset slots and remove them from the player's party
+            (troop_get_slot, ":quest_no", ":kingdom_companion", slot_troop_quest_help_target),
+
+            (neq,":quest_no",qst_escort_messenger),
+            (neq,":quest_no",qst_bring_back_runaway_serfs),
+            (neq,":quest_no",qst_capture_enemy_hero),
+            (neq,":quest_no",qst_capture_prisoners),
+            (neq,":quest_no",qst_capture_troll),
+            (neq,":quest_no",qst_kill_troll),
+            (neq,":quest_no",qst_defend_village),
+            (neq,":quest_no",qst_raid_village),
+            (neq,":quest_no",qst_destroy_scout_camp),
+            (neq,":quest_no",qst_rescue_prisoners),
+            (neq,":quest_no",qst_scout_enemy_town),
+            (neq,":quest_no",qst_dispatch_scouts),
+            (neq,":quest_no",qst_eliminate_patrols),
+
+            (troop_set_slot, ":kingdom_companion", slot_troop_quest_help_offer, 0),
+            (troop_set_slot, ":kingdom_companion", slot_troop_quest_help_target, 0),
+            (main_party_has_troop, ":kingdom_companion"),
+            (remove_member_from_party, ":kingdom_companion", "p_main_party"),
+
+            # Return the troop to their lord's party (if lord's party hasn't been defeated)
+            (troop_get_slot, ":lord", ":kingdom_companion", slot_troop_lord),
+            (troop_get_slot, ":lord_party", ":lord", slot_troop_leaded_party),
+            (gt, ":lord_party", 0),
+            (party_add_members, ":lord_party", ":kingdom_companion", 1),
         (try_end),
     (try_end),
     
