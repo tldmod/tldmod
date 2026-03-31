@@ -2256,7 +2256,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 4303),  #Rafa: Savegame version; InVain: Changed to _roughly_ show the rev number, helps with savegame inspection
+    (assign,"$savegame_version", 4391),  #Rafa: Savegame version; InVain: Changed to _roughly_ show the rev number, helps with savegame inspection
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -11795,6 +11795,7 @@ scripts = [
     (troop_set_slot, ":troop_no", slot_troop_player_order_object, -1),
     (troop_set_slot, ":troop_no", slot_troop_prisoner_of_party, -1),
     (call_script, "script_update_troop_notes", ":troop_no"),
+    (call_script, "script_update_faction_notes", ":troop_faction"),
 
     (store_skill_level, ":leadership", "skl_leadership", ":troop_no"),
     (try_begin),
@@ -11825,6 +11826,33 @@ scripts = [
     (call_script, "script_get_template_troop_for_companion", ":troop_no"),
     (assign, ":template_troop", reg1),
 
+    # Attrib
+    (try_for_range, ":i", 0, 3), #only strength and agility
+	  (troop_raise_attribute,  ":troop_no",":i",-1000), 	  
+	  (troop_raise_attribute,  ":troop_no",":i",25), #should be more than enough
+    (try_end),
+	
+    #Adjust attributes, proficiencies and combat skills to make sure that they can use any items they are given
+    # Skills
+    (assign, "$disable_skill_modifiers", 1),
+    (try_for_range, ":i", 23, 38 ), #only check for combat skills, not party or leader skills
+        (store_skill_level, ":x", ":i", ":template_troop"),
+        (store_skill_level, ":y", ":i", ":troop_no"),
+        (gt, ":x", ":y"),
+        (troop_raise_skill,  ":troop_no",":i",-1000), 	  
+        (troop_raise_skill,  ":troop_no",":i",":x"), 
+    (try_end),
+    (assign, "$disable_skill_modifiers", 0),
+	
+    # copy stats: proficiencies
+    (try_for_range, ":i", 0, 6),
+	  (store_proficiency_level, ":x", ":i", ":template_troop"),
+	  (store_proficiency_level, ":y", ":i", ":troop_no"),
+      (gt, ":x", ":y"),
+	  (troop_raise_proficiency,  ":troop_no",":i",-1000),
+	  (troop_raise_proficiency,  ":troop_no",":i",":x"), 
+    (try_end),
+
     # Compare all of the troop's gear to the template troop and take any items that would be an upgrade
     (try_for_range, ":slot", ek_item_0, ek_food),
         (troop_get_inventory_slot, ":troop_item", ":troop_no", ":slot"),
@@ -11834,6 +11862,7 @@ scripts = [
         (neq, ":template_item", -1),
         # Don't give uniques
         (neg|item_has_property, ":template_item", itp_unique),
+        (troop_get_inventory_slot_modifier, ":template_imod", ":template_troop", ":slot"),
 
         (try_begin),
             # If slot is empty then replace it immediately
@@ -11849,6 +11878,7 @@ scripts = [
             (store_item_value, ":template_item_value", ":template_item"),
             (gt, ":template_item_value", ":troop_item_value"),
             (troop_set_inventory_slot, ":troop_no", ":slot", ":template_item"),
+            (troop_set_inventory_slot_modifier, ":troop_no", ":slot", ":template_imod"),
         (try_end),
     (end_try),  
     ] or []) + [
@@ -26254,6 +26284,29 @@ command_cursor_scripts = [
             (troop_get_slot, ":lord_party", ":lord", slot_troop_leaded_party),
             (gt, ":lord_party", 0),
             (party_add_members, ":lord_party", ":kingdom_companion", 1),
+        (try_end),
+    (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4391),
+        (assign, "$savegame_version", 4391),
+        (try_for_range, ":companion", heroes_begin, heroes_end),
+            (this_or_next|is_between, ":companion", companions_begin, companions_end),
+            (is_between, ":companion", new_companions_begin, new_companions_end),
+            (troop_slot_eq, ":companion", slot_troop_occupation, slto_kingdom_hero),
+            (try_for_range, ":i", 0, 3), #only strength and agility
+                (troop_raise_attribute,  ":companion",":i",-1000), 	  
+                (troop_raise_attribute,  ":companion",":i",25), #should be more than enough
+            (try_end),
+            # Skills
+            (assign, "$disable_skill_modifiers", 1),
+            (try_for_range, ":i", 23, 38 ), #only check for combat skills, not party or leader skills
+                (store_skill_level, ":x", ":i", ":companion"),
+                (lt, ":x", 5),
+                (troop_raise_skill,  ":companion",":i",-1000), 	  
+                (troop_raise_skill,  ":companion",":i", 5), #this is enough to use the best bows, shields and horses
+            (try_end),
+            (assign, "$disable_skill_modifiers", 0),
         (try_end),
     (try_end),
     

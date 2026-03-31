@@ -104,7 +104,7 @@ qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_Thank_you_for_playin Thank_you_for_playing
-qstr_{!}_rev_520_wb__dev_ {!}_rev_520_wb_|_dev_^_Built_2026-03-25_11:50___
+qstr_{!}_rev_522_wb__dev_ {!}_rev_522_wb_|_dev_^_Built_2026-03-31_21:51___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -320,7 +320,7 @@ qstr_Do_you_want_to_disem Do_you_want_to_disembark?
 qstr_Move_here Move_here
 qstr_View_notes View_notes
 qstr_{!}Debug_str:_{reg0} {!}Debug_str:_{reg0}
-qstr_{!}initiative:_{reg2 {!}initiative:_{reg2}
+qstr_{!}Distance_to_party {!}Distance_to_party:_{reg44}
 qstr_{!}DEBUG:_Trolls_for {!}DEBUG:_Trolls_for_Troll_quest_are_sped_down.
 qstr_{!}_{s61} {!}_{s61}
 qstr_{!}ERROR:_More_than_ {!}ERROR:_More_than_15_trade_routes_are_given_for_{s1}.
