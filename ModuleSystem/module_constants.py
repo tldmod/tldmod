@@ -1600,7 +1600,7 @@ subfaction_data= [
 # Use -1 to indicate a center should not spawn such kind of party
 #
 ws_party_spawns_list = [
-#   ("p_town_name"            ,"pt_faction_scouts",       "pt_faction_raiders",    "pt_faction_patrol",   "pt_faction_caravan"),
+#   ("p_town_name"            ,"slot_center_spawn_scouts",       "slot_center_spawn_raiders",    "slot_center_spawn_patrol",   "slot_center_spawn_caravan"),
 #Gondor    
 (p_town_minas_tirith    ,pt_gondor_scouts,		pt_gondor_raiders,	pt_gondor_company,	pt_gondor_caravan),
 (p_town_pinnath_gelin	,pt_pinnath_gelin_auxila,-1,				pt_pinnath_patrol,	pt_gondor_caravan),

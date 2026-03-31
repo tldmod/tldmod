@@ -4721,10 +4721,12 @@ scripts = [
       (eq, cheat_switch, 1),
       (call_script, "script_party_calculate_strength", ":party_no", 0),
       (context_menu_add_item, "@{!}Debug str: {reg0}", 3),
-       ] + (is_a_wb_script==1 and [
-      (party_get_ai_initiative, reg2, ":party_no"),
-      (context_menu_add_item, "@{!}initiative: {reg2}", 4),
-       ] or []) + [
+       # ] + (is_a_wb_script==1 and [
+      # (party_get_ai_initiative, reg2, ":party_no"),
+      # (context_menu_add_item, "@{!}initiative: {reg2}", 4),
+       # ] or []) + [
+       (store_distance_to_party_from_party, reg44, "p_main_party", ":party_no"),
+      (context_menu_add_item, "@{!}Distance to party: {reg44}", 4),
     (try_end),
     
     ] + (is_a_wb_script==1 and [
@@ -26502,6 +26504,7 @@ command_cursor_scripts = [
 
 
 #Kham - Check if there are troop stack of the faction specified
+#unused
 	#script_find_troop_of_faction
 	#Input: party; faction
 	#Output: reg0: Number of Troop Stacks of Seleted Faction
@@ -28836,10 +28839,11 @@ command_cursor_scripts = [
     (store_script_param, ":destination",2),
     (store_script_param, ":reinforcement_waves",3),
     
-    (store_faction_of_party, ":faction", ":home_center"),
-      #(party_get_slot, ":center_scouts", ":home_center", slot_center_spawn_scouts),
+      (store_faction_of_party, ":faction", ":home_center"),
+      (faction_get_slot, ":capital", ":faction", slot_faction_capital),
+      (party_get_slot, ":center_patrol", ":capital", slot_center_spawn_patrol),
       (set_spawn_radius, 1),
-      (spawn_around_party, ":home_center", "pt_none"),
+      (spawn_around_party, ":home_center", ":center_patrol"),
       (assign, ":guard_party", reg0),
       (faction_set_slot, ":faction", slot_faction_guardian_party, ":guard_party"),
       #(faction_set_slot, ":faction", slot_faction_guardian_party_spawned, 1), #slot isn't needed
@@ -28868,7 +28872,6 @@ command_cursor_scripts = [
       (call_script, "script_party_set_ai_state", ":guard_party", spai_besieging_center, ":destination"),
       (party_set_ai_behavior, ":guard_party", ai_bhvr_attack_party),
       (party_set_flags, ":guard_party", pf_default_behavior, 1),
-      (party_set_slot, ":guard_party", slot_party_ai_substate, 1),      
 
       #fill it up with lord army reinforcements and upgrade a lot
       #(store_random_in_range, ":reinforcement_waves", 50, 60), #average about 8 troops per reinf

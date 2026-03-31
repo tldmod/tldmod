@@ -1230,6 +1230,8 @@ simple_triggers = [
 ]) + [
 
   # (33) Centers give alarm if the player is around
+  # Invain: Apparently, slot_faction_player_alarm is only important for sneaking into towns, so unused in TLD
+  # could be reused for quest helper triggers, for example making oath of vengeance target hunt the player
   (0.5,[(store_current_hours, ":cur_hours"),
       (store_mod, ":cur_hours_mod", ":cur_hours", 11),
       (store_sub, ":hour_limit", ":cur_hours", 5),
@@ -1275,6 +1277,30 @@ simple_triggers = [
           (str_store_party_name_link, s1, ":cur_center"),
           (display_message, "@Your party is spotted by {s1}."),
           (party_set_slot, ":cur_center", slot_center_last_player_alarm_hour, ":cur_hours"),
+        (try_end),
+        
+        #quest helpers
+        (try_begin), #classic oath of vengeance 
+            (check_quest_active, "qst_oath_of_vengeance"),
+            (neg|check_quest_concluded, "qst_oath_of_vengeance"),
+            (neg|check_quest_succeeded, "qst_oath_of_vengeance"),
+            (quest_get_slot, ":progress", "qst_oath_of_vengeance", slot_quest_current_state),
+            (ge, ":progress", 45),
+            (quest_get_slot, ":host", "qst_oath_of_vengeance", slot_quest_target_party),
+            (gt, ":host", 0),
+            (party_is_active, ":host"),
+            (party_set_slot, ":host", slot_party_home_center, ":cur_center"), #this will make the party patrol around the center if they can't find the player
+            (party_set_ai_object, ":host", ":cur_center"),
+            (party_get_position, pos2, "p_main_party"),
+            (party_set_slot, ":host", slot_party_ai_state, spai_patrolling_around_center), #probably not necessary, but doesn't hurt
+            (party_set_ai_behavior, ":host", ai_bhvr_patrol_location),
+            (party_set_ai_target_position, ":host", pos2),
+            (party_set_ai_patrol_radius, ":host", 3),
+             ] + (is_a_wb_trigger==1 and [
+            (party_set_aggressiveness, ":host", 15),
+            (party_set_courage, ":host", 15),
+            (party_set_ai_initiative, ":host", 25),
+            ] or []) + [  
         (try_end),
       (try_end),
 
@@ -2018,7 +2044,12 @@ simple_triggers = [
             (gt, ":progress", 99),
             (str_store_string, s4, "@Your enemies tremble at the mentioning of you name! Your oath is fulfilled!"),
             (call_script, "script_succeed_quest", "qst_oath_of_vengeance"), #triggers Dain dialog and oathkeeper trait
-        (try_end),        
+            (quest_get_slot, ":host", "qst_oath_of_vengeance", slot_quest_target_party),
+            (gt, ":host", 0),
+            (party_is_active, ":host"),
+            (party_detach, ":host"),
+            (call_script, "script_safe_remove_party", ":host"),
+        (try_end),
 
         (try_begin),
           (neg|faction_slot_eq, "fac_moria", slot_faction_state, sfs_active),
@@ -2036,7 +2067,7 @@ simple_triggers = [
             (str_store_string, s22, "@{s23}You are released from your oath.", color_good_news),
             (call_script, "script_cancel_quest", "qst_oath_of_vengeance"),           
           (try_end),
-          (jump_to_menu, "mnu_oath_quest_helper"), 
+          (jump_to_menu, "mnu_oath_quest_helper"),
         (try_end),      
             
         (assign, reg65, "$oath_kills"),
@@ -4284,7 +4315,7 @@ simple_triggers = [
 (12, 
 
   [
-    
+    (set_fixed_point_multiplier, 100),
     (try_begin),
       (check_quest_active, "qst_eliminate_patrols"),
       (neg|check_quest_concluded, "qst_eliminate_patrols"),
@@ -4360,7 +4391,19 @@ simple_triggers = [
       (neg|check_quest_succeeded, "qst_oath_of_vengeance"),
       (store_character_level, ":player_level", "trp_player"),
       (quest_get_slot, ":progress", "qst_oath_of_vengeance", slot_quest_current_state),
-      #(ge, ":progress", 45),
+      (ge, ":progress", 45),
+      
+      (try_begin), #reset host behavior
+        (quest_get_slot, ":host", "qst_oath_of_vengeance", slot_quest_target_party),
+        (gt, ":host", 0),
+        (party_is_active, ":host"),
+        (party_get_slot, ":center", ":host", slot_party_home_center),
+        (party_set_slot, ":host", slot_party_ai_state, spai_patrolling_around_center), #probably not necessary, but doesn't hurt
+        (party_set_ai_behavior, ":host", ai_bhvr_patrol_party),
+        (party_set_ai_object, ":host", ":center"),
+        (party_set_ai_patrol_radius, ":host", 3),
+      (try_end),
+      
       (assign, ":break", 0),
       (try_for_range, ":center", centers_begin, centers_end),
         (eq, ":break", 0),
@@ -4382,13 +4425,14 @@ simple_triggers = [
             (party_set_slot, ":patrol_party", slot_party_type, spt_patrol),
             (party_set_slot, ":patrol_party", slot_party_victory_value, 0), # no victory points for party kill, so these parties don't make the faction weaker
             (party_set_slot, ":patrol_party", slot_party_home_center, ":center"),
-            (party_set_slot, ":patrol_party", slot_party_ai_state, spai_undefined),
+            (party_set_slot, ":patrol_party", slot_party_ai_state, spai_patrolling_around_center),
             (party_set_ai_behavior, ":patrol_party", ai_bhvr_patrol_party),
             (party_set_ai_object, ":patrol_party", ":center"),
             (party_set_ai_patrol_radius, ":patrol_party", 5),
              ] + (is_a_wb_trigger==1 and [
             (party_set_aggressiveness, ":patrol_party", 15),
             (party_set_courage, ":patrol_party", 15),
+            (party_set_ai_initiative, ":patrol_party", 100),
             ] or []) + [  
             (try_for_range, ":unused", 0, ":player_level"), #make them scale with player level
                 (party_upgrade_with_xp, ":patrol_party", 100),
@@ -4396,9 +4440,58 @@ simple_triggers = [
             (assign, ":break", 1),
         (else_try), #legion
             (is_between, ":progress", 85, 99),
+            (quest_slot_eq, "qst_oath_of_vengeance", slot_quest_target_party, 0), #make sure we only spawn one host
             (call_script, "script_send_legion", ":center", "p_main_party", ":player_level"),
-            (str_store_faction_name, s5, ":center"),
+            (assign, ":host", reg0),
+            (quest_set_slot, "qst_oath_of_vengeance", slot_quest_target_party, reg0),     
+            (party_set_slot, ":host", slot_party_victory_value, ws_host_vp),
+            (party_set_slot, ":host", slot_party_type, spt_patrol),
+             ] + (is_a_wb_trigger==1 and [
+            (party_set_aggressiveness, ":host", 15),
+            (party_set_courage, ":host", 15),
+            (party_set_ai_initiative, ":host", 50),
+            ] or []) + [  
+            (party_set_slot, ":host", slot_party_home_center, ":center"),
+            (party_get_position, pos2, p_main_party),
+            (party_set_slot, ":host", slot_party_ai_state, spai_patrolling_around_center), #probably not necessary, but doesn't hurt
+            (party_set_ai_behavior, ":host", ai_bhvr_patrol_location),
+            (party_set_flags, ":host", pf_default_behavior, 0),
+            (party_set_ai_patrol_radius, ":host", 1),
+            (party_set_ai_target_position, ":host", pos2),
+            (str_store_party_name, s5, ":center"),
             (display_message, "@{s5} sent out a host against you!"),
+            (assign, ":break", 1),
+        (else_try), #guardian party moves to player position 
+                    # be aware that guardian party is also given new orders if player is spotted by a settlement, so this is only to give them a general direction to move towards
+            (quest_get_slot, ":host", "qst_oath_of_vengeance", slot_quest_target_party),
+            (gt, ":host", 0),
+            (party_is_active, ":host"),
+            (party_slot_eq, ":host", slot_party_home_center, ":center"),
+            (party_get_position, pos2, p_main_party),
+            (party_set_slot, ":host", slot_party_ai_state, spai_patrolling_around_center), #probably not necessary, but doesn't hurt
+            (party_set_ai_behavior, ":host", ai_bhvr_patrol_location),
+            (party_set_ai_target_position, ":host", pos2),
+             ] + (is_a_wb_trigger==1 and [
+            (party_set_aggressiveness, ":host", 15),
+            (party_set_courage, ":host", 15),
+            (party_set_ai_initiative, ":host", 50),
+            ] or []) + [  
+            
+            (assign, ":break", 1),
+        (else_try), #guardian party adjusts patrol center
+            (quest_get_slot, ":host", "qst_oath_of_vengeance", slot_quest_target_party),
+            (gt, ":host", 0),
+            (party_is_active, ":host"),
+            (party_set_slot, ":host", slot_party_home_center, ":center"),
+            (party_set_slot, ":host", slot_party_ai_state, spai_patrolling_around_center), #probably not necessary, but doesn't hurt
+            (party_set_ai_behavior, ":host", ai_bhvr_patrol_party),
+            (party_set_ai_object, ":host", ":center"),
+            (party_set_ai_patrol_radius, ":host", 3),
+             ] + (is_a_wb_trigger==1 and [
+            (party_set_aggressiveness, ":host", 5),
+            (party_set_courage, ":host", 15),
+            (party_set_ai_initiative, ":host", 5),
+            ] or []) + [  
             (assign, ":break", 1),
         (try_end),
       (try_end), 
