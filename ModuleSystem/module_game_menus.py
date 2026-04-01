@@ -4811,6 +4811,7 @@ game_menus = [
     	(try_end)
     ]),
     ("impose_quest_13", [], "{!}Capture an enemy commander", [(assign, "$cheat_imposed_quest", "qst_capture_enemy_hero")]),
+    ("impose_quest_14", [], "{!}Capture prisoners", [(assign, "$cheat_imposed_quest", "qst_capture_prisoners")]),
     ]+[("mi21",[(str_store_quest_name,s21,x)],"{!}{s21}",[(assign,"$cheat_imposed_quest",x),(jump_to_menu, "mnu_cheat_impose_quest")]) for x in range(qst_quests_end) ]+[
   ]),
   
