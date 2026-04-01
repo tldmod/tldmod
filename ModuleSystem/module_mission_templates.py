@@ -5736,14 +5736,10 @@ mission_templates = [ # not used in game
 #unused only used for cheat access to scenes, can be replaced
 ( "ai_training",0,-1,
   "You start training.",
-    [(0,0,0,aif_start_alarmed,30,[]),
+    [(0,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
      ],
-    tld_common_wb_muddy_water+
-    tld_common_battle_scripts+[
+    tld_common_wb_muddy_water+[
 	(ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
-	(0, 0, ti_once, [], [(assign,"$g_presentation_battle_active", 0),]),
-	common_battle_order_panel,
-	common_battle_order_panel_tick,
 ]),
 ("legendary_place_visit",0,-1,
  "You visit a legendary place.",

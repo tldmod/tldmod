@@ -7557,6 +7557,14 @@ game_menus = [
         ] or []) + [
           (leave_encounter),
           (change_screen_return)]),
+          
+       ("siege_cheat_town_walls",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1),(party_slot_eq,"$g_encountered_party",slot_party_type, spt_town),], "{!}CHEAT! Town Walls.",
+       [
+         (party_get_slot, ":scene", "$g_encountered_party", slot_town_walls),
+         (assign, "$gate_aggravator_agent", 0), #disable gate aggravators
+         (set_jump_mission,"mt_ai_training"), #for sake of spawning alone
+         (jump_to_scene,":scene"),
+         (change_screen_mission)]),
     ]
  ),
 
@@ -8056,18 +8064,30 @@ game_menus = [
  ] for ct in range(cheat_switch)])+[
 	   
  ]+concatenate_scripts([[
-	  ("town_sneak",[(eq,0,1)],"Dont.",[]),
-	  ("castle_start_siege",[(eq,0,1)],"Dont.",[]),
-	  ("cheat_castle_start_siege",[(eq,0,1)],"Dont.",[]),
+	  ("town_sneak",[(eq,0,1)],"{!}Dont.",[]),
+	  ("castle_start_siege",[(eq,0,1)],"{!}Dont.",[]),
+	  ("cheat_castle_start_siege",[(eq,0,1)],"{!}Dont.",[]),
  ] for ct in range(1-cheat_switch)])+[
 
       ("castle_leave",[],"Leave.",[(change_screen_return,0)]),
+      ("castle_cheats",[(eq, "$cheat_mode", 1)], "{!}CHEAT: Center cheats.",[(jump_to_menu, "mnu_castle_cheats")]),
 
- ]+concatenate_scripts([[
+    ]
+ ),
+ 
+ ( "castle_cheats",0,
+    "{!}Center cheats for testing and scening","none",
+    [ ],
+    [
       ("castle_cheat_interior",[(eq, "$cheat_mode", 1)], "{!}CHEAT! Interior.",[(set_jump_mission,"mt_ai_training"),
                                                        (party_get_slot, ":castle_scene", "$current_town", slot_town_castle),
-                                                       (jump_to_scene,":castle_scene"),
-                                                       (change_screen_mission)]),
+                                                       (try_begin),
+                                                           (gt, ":castle_scene", 0),
+                                                           (jump_to_scene,":castle_scene"),
+                                                           (change_screen_mission),
+                                                       (else_try),
+                                                            (display_message, "@{!}no interior scene"),
+                                                       (try_end),]),
       ("castle_cheat_exterior",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1)], "{!}CHEAT! Exterior.",[
                                                        (set_jump_mission,"mt_ai_training"),
                                                        (party_get_slot, ":castle_scene", "$current_town", slot_castle_exterior),
@@ -8077,12 +8097,49 @@ game_menus = [
        [
          (party_get_slot, ":scene", "$current_town", slot_town_walls),
          (assign, "$gate_aggravator_agent", 0), #disable gate aggravators
-         #(set_jump_mission,"mt_ai_training"),
+         (set_jump_mission,"mt_ai_training"),
          (jump_to_scene,":scene"),
          (change_screen_mission)]),
- ] for ct in range(cheat_switch)])+[
+
+      ("castle_cheat_order_siege",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1),], "{!}CHEAT! Order enemy faction to siege.",
+       [(jump_to_menu, "mnu_castle_cheat_siege_choose_faction")]),
+
+       ("go_back_dot",[],"Go back.", [(change_screen_return,0)]),
     ]
+ ),  
+
+( "castle_cheat_siege_choose_faction",0,
+   "{!}Who should besiege this place?.",
+   "none",
+   [],
+   [("go_back_dot",[],"Go back.", [(change_screen_return,0)]),]
+  +
+  concatenate_scripts([[
+  (
+	"siege_this_town",
+	[(faction_slot_eq, faction_init[y][0], slot_faction_state, sfs_active),
+     (party_get_slot, ":center_theater", "$current_town", slot_center_theater),
+     (faction_slot_eq, faction_init[y][0], slot_faction_active_theater, ":center_theater"),
+     (store_faction_of_party, ":town_faction", "$current_town"),
+     (store_relation, ":reln", ":town_faction", faction_init[y][0]),
+	 (lt, ":reln", 0),
+     (str_store_faction_name, s10, faction_init[y][0]),],
+	"{!}{s10}.",
+	[   (faction_get_slot, ":capital", faction_init[y][0], slot_faction_capital),
+        (call_script, "script_send_legion", ":capital", "$current_town", 70),
+        (party_relocate_near_party, reg0, "$current_town", 0),
+        (party_set_slot, "$current_town", slot_center_is_besieged_by, reg0),
+        (party_set_ai_behavior, reg0, ai_bhvr_attack_party),
+        (party_set_ai_object, reg0, "$current_town"),
+        (party_set_flags, reg0, pf_default_behavior, 1),
+        (str_store_party_name, s11, reg0),
+		(display_message, "@{!}{s11} spawned outside!", 0x30FFC8),
+        (change_screen_map),
+    ]
+  )
+  ]for y in range(len(faction_init)) ])
  ),
+ 
 ( "castle_besiege",mnf_enable_hot_keys,
     "You are laying siege to {s1}. {s2} {s3}",
     "none",
@@ -9624,77 +9681,19 @@ game_menus = [
 	 ##Kham - Player Initiated Siege END
 
 #      ("siege_leave",[(eq, "$g_defending_against_siege", 1)],"Try to break out...",[(jump_to_menu,"mnu_siege_break_out")]),#TODO: Go to Menu here.
- ]+concatenate_scripts([[ 
- #    ("town_cheat_alley",[(eq, cheat_switch, 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1)], "{!}CHEAT: Go to the alley.",[
-#							(party_get_slot, reg(11), "$current_town", slot_town_alley),
-#							(set_jump_mission,"mt_ai_training"),
-#							(jump_to_scene,reg(11)),
-#							(change_screen_mission)]),
-      ("castle_cheat_interior",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1)], "{!}CHEAT! Interior.",[
-							(set_jump_mission,"mt_ai_training"),
-							(party_get_slot, ":castle_scene", "$current_town", slot_town_castle),
-							(jump_to_scene,":castle_scene"),
-							(change_screen_mission)]),
-      ("castle_cheat_town_exterior",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1)], "{!}CHEAT: Exterior.",[
-							(try_begin),
-								(party_slot_eq,"$current_town",slot_party_type, spt_castle),
-								(party_get_slot, ":scene", "$current_town", slot_castle_exterior),
-							(else_try),
-								(party_get_slot, ":scene", "$current_town", slot_town_center),
-							(try_end),
-							(set_jump_mission,"mt_ai_training"),
-							(jump_to_scene,":scene"),
-							(change_screen_mission)]),
-       ("castle_cheat_dungeon",[(eq, cheat_switch, 1),(eq, 0, 1)], "{!}CHEAT: Prison.",[ # unneeded
-							(set_jump_mission,"mt_ai_training"),
-							(party_get_slot, ":castle_scene", "$current_town", slot_town_prison),
-							(jump_to_scene,":castle_scene"),
-							(change_screen_mission)]),
-      ("castle_cheat_town_walls",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),], "{!}CHEAT! Town Walls.",[
-							(party_get_slot, ":scene", "$current_town", slot_town_walls),
-							(set_jump_mission,"mt_ai_training"),
-							(jump_to_scene,":scene"),
-							(change_screen_mission)]),
-      ("cheat_town_start_siege",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1),
-								(party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1),
-								(lt, "$g_encountered_party_2", 1),
-								(call_script, "script_party_count_fit_for_battle","p_main_party"),
-								(gt, reg(0), 1),
-								(try_begin),
-									(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-									(assign, reg6, 1),
-								(else_try),
-									(assign, reg6, 0),
-								(try_end)],
-				   "{!}CHEAT: Besiege the {reg6?town:castle}...",
-				   [   (assign,"$g_player_besiege_town","$g_encountered_party"),
-					   (jump_to_menu, "mnu_castle_besiege"),
-					   ]),
-#      ("center_reports",[(eq, "$cheat_mode", 1),], "{!}CHEAT: Show reports.",
-#						[(jump_to_menu,"mnu_center_reports")]),
-#    ("sail_from_port",[(eq, cheat_switch, 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1),#(party_slot_eq,"$current_town",slot_town_near_shore, 1),
-#                       ], "{!}CHEAT: Sail from port.",
-#						[(assign, "$g_player_icon_state", pis_ship),
-#						(party_set_flags, "p_main_party", pf_is_ship, 1),
-#						(party_get_position, pos1, "p_main_party"),
-#						(map_get_water_position_around_position, pos2, pos1, 6),
-#						(party_set_position, "p_main_party", pos2),
-#						(assign, "$g_main_ship_party", -1),
-#						(change_screen_return)]),
- ] for ct in range(cheat_switch)])+[
 
+    
+    ("castle_cheats",[(eq, "$cheat_mode", 1)], "{!}CHEAT: Center cheats.",[(jump_to_menu, "mnu_castle_cheats")]),
 # Invisible placeholders keep the menu count:
 
- ]+concatenate_scripts([[ 
       #("town_cheat_alley",[(eq, 0, 1),], "{!}CHEAT",[]),
-	  ("castle_cheat_interior",[(eq, 0, 1),], "{!}CHEAT",[]),
-	  ("castle_cheat_town_exterior",[(eq, 0, 1),], "{!}CHEAT",[]),
-	  ("castle_cheat_dungeon",[(eq, 0, 1),], "{!}CHEAT",[]),
-	  ("castle_cheat_town_walls",[(eq, 0, 1),], "{!}CHEAT",[]),
-	  ("cheat_town_start_siege",[(eq, 0, 1),], "{!}CHEAT",[]),
+	  #("castle_cheat_interior",[(eq, 0, 1),], "{!}CHEAT",[]),
+	  ("dummy_1",[(eq, 0, 1),], "{!}CHEAT",[]),
+	  ("dummy_2",[(eq, 0, 1),], "{!}CHEAT",[]),
+	  ("dummy_3",[(eq, 0, 1),], "{!}CHEAT",[]),
+	  ("dummy_4",[(eq, 0, 1),], "{!}CHEAT",[]),
 	  # ("center_reports",[(eq, 0, 1),], "{!}CHEAT",[]),
 	  # ("sail_from_port",[(eq, 0, 1),], "{!}CHEAT",[]),
- ] for ct in range(1-cheat_switch)])+[
 
 #menu no. 19
 	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_isengard"),(eq,"$entry_to_town_forbidden",0), (this_or_next|scene_slot_eq, "scn_isengard_underground", slot_scene_visited, 1), (eq, "$cheat_mode", 1),
