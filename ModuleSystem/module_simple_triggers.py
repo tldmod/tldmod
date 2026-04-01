@@ -2368,6 +2368,13 @@ simple_triggers = [
         (try_for_range, ":kingdom_companion", kingdom_companions_begin, kingdom_companions_end),
             (troop_slot_eq, ":kingdom_companion", slot_troop_occupation, slto_kingdom_companion),
             (troop_slot_eq,":kingdom_companion",slot_troop_quest_help_offer, stqho_offer),
+            #Make sure the quest hasn't already been completed (can happen with rescue prisoners quest if the player has enough prisoners to turn in immediately)
+            (troop_get_slot, ":quest", ":kingdom_companion", slot_troop_quest_help_target),
+            (neg|check_quest_finished, ":quest"),
+            (neg|check_quest_succeeded, ":quest"),
+            (neg|check_quest_failed, ":quest"),
+            (neg|check_quest_concluded, ":quest"),
+            (check_quest_active, ":quest"),
             (assign, "$npc_map_talk_context", slot_troop_quest_help_offer),
             (start_map_conversation, ":kingdom_companion"),
         (try_end),
