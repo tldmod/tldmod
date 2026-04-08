@@ -1858,9 +1858,17 @@ triggers = [
   (2, 0, 2, [
       (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
       (party_get_morale, ":party_morale", p_main_party),
-      (le, ":party_morale", 90), #counter only ticks if morale is <90
-      (val_sub, "$mutiny_counter",2),
       
+      (try_begin),
+          (le, ":party_morale", 70), #counter only ticks if morale is <70
+          (val_sub, "$mutiny_counter",2),
+      (else_try),
+          (ge, ":party_morale", 80), #good morale makes the counter go backwards
+          (val_add, "$mutiny_counter",1),
+          (assign,"$mutiny_stage",0),
+      (try_end),       
+      
+      (display_message, "@mutiny check 1"),
       #InVain: Removed this block, instead added morale checks here and for final mutiny chance below
       ## Kham - Reduce rate of mutiny by level and rank (player faction, I could also look at player's rank in mordor & isengard, but lets start with this)
       # (store_character_level, ":level","trp_player"),
@@ -1885,6 +1893,7 @@ triggers = [
       (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
       (assign, ":orcs", 0),
       
+      (party_clear, "p_encountered_party_backup"),
       (try_for_range, ":stack_no", 0, ":num_stacks"), # count number of orcs and max level
         (party_stack_get_troop_id, ":stack_troop", "p_main_party" ,":stack_no"),
         (neg|troop_is_hero, ":stack_troop"),
@@ -1892,26 +1901,29 @@ triggers = [
         (eq, reg1, tf_orc),
         (party_stack_get_size, reg1, "p_main_party",":stack_no"),
         (val_add, ":orcs", reg1),
+        (party_add_members, "p_encountered_party_backup", ":stack_troop", reg1), #store them in a backup party for strength calculation
       (try_end),
       
-      (store_skill_level, reg1, "skl_leadership", "trp_player"), # persuasion neutralizes 5 orcs per level ##Kham - Change to Leadership instead, as there is nothing else persuasion is used for
-      (val_mul, reg1, 5),
-      (val_sub, ":orcs", reg1),
-      (troop_get_type, reg1, "trp_player"),
-      
+      (store_skill_level, reg1, "skl_leadership", "trp_player"), # persuasion neutralizes 10 orcs per level ##Kham - Change to Leadership instead, as there is nothing else persuasion is used for  
+      (val_mul, reg1, 10),    
       (try_begin),
-        (eq, reg1, tf_orc), (val_sub, ":orcs", 10),
-      (try_end), # player being an orc himself neutralizes 10 orcs
+        (troop_get_type, reg2, "trp_player"),
+        (eq, reg2, tf_orc), 
+        (val_mul, reg1, 120),
+        (val_div, reg1, 100),
+      (try_end), # player being an orc himself neutralizes enhances leadership effect
+      (val_sub, ":orcs", reg1),
       
+      
+
       (val_max, ":orcs", 1),
       (party_get_num_companions, reg1, "p_main_party"),
       (gt, reg1, 15), # for big enough party
       (val_div, reg1, ":orcs"),
       (lt, reg1, 2), # more than 50% of "adjusted orcs" in party?
-      
-      #(store_sub, ":chance", 100, ":party_morale"),
-      (store_random_in_range, reg1, 0, 80), 
-      (gt, reg1, ":party_morale"), #mutiny chance, doesn't happen when morale is >80
+
+      (store_random_in_range, reg1, 0, 60), 
+      (gt, reg1, ":party_morale"), #mutiny chance, doesn't happen when morale is >60
       
       ],[
       (assign, "$mutiny_counter",108), # 4.3 days between uprisings

@@ -3758,11 +3758,13 @@ game_menus = [
     ] or []) + [
     ("spawn_orc_horde_troll",[],"{!}Spawn Orc Horde with Trolls",[
         (jump_to_menu, "mnu_orc_horde_troll")]),
+    ("cheat_mutiny",[],"{!}Force orc mutiny",[
+        (jump_to_menu, "mnu_premutiny")]),
     ("add_trolls",[],"{!}Add 1 Troll to your party (spam for more!)",[
         (party_force_add_members, "p_main_party", "trp_mordor_olog_hai", 1),
         (display_message, "@{!}1 troll added!")]),
     #("give_siege_stones", [],"Siege Stones Test",[(troop_add_item, "trp_player","itm_stones_siege"), (party_add_members, "p_main_party", "trp_test_vet_archer", 10), (display_message, "@Siege Stones Test")]),
-    ("enable_raftmen",[],"{!}Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@{!}Raft Men party enabled. They are down River Running", color_good_news)]),
+    #("enable_raftmen",[],"{!}Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@{!}Raft Men party enabled. They are down River Running", color_good_news)]),
     #("test_presentation",[],"Test Presentation", [(start_presentation, "prsnt_faction_intro_text")]),
     ] + (is_a_wb_menu==1 and [
     ("what_theater",[], "{!}Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party"), (display_message, "@{!}theater: {reg0}")]),
@@ -13065,7 +13067,7 @@ game_menus = [
      ("ruin_leave",[],"Leave...",[(change_screen_return)]),
  ]),
 
-("premutiny",0,"{!}","none", #dummy menu for showing orc pretender pre-mutiny dialog
+("premutiny",0,"{s1}","none", #dummy menu for showing orc pretender pre-mutiny dialog
    [(try_begin),
 		(eq,"$mutiny_stage",0), # warning
 		(call_script, "script_setup_troop_meeting", "trp_orc_pretender",100),
@@ -13077,6 +13079,7 @@ game_menus = [
 ("mutiny",0,"{!}{s1}","none",
    [(try_begin),
 		(eq,"$mutiny_stage",5), # fight lost
+        (set_background_mesh, "mesh_draw_defeat_orc"),
 		(str_store_string, s1, "@^^^You lost your fight against the mutiny! ^Seems like your orcs have a new commander now."),
 		(party_get_num_companion_stacks, ":num_stacks","p_main_party"),
 		(try_for_range, ":stack_no", 0, ":num_stacks"), # remove all orcs
@@ -13090,6 +13093,8 @@ game_menus = [
 		(assign,"$mutiny_stage",0),
     (else_try),
 		(eq,"$mutiny_stage",4), #fight won
+        (call_script, "script_get_victory_mesh_per_troop", "trp_player"),
+        (set_background_mesh, reg0),
 		(str_store_string, s1, "@^^^You have slain the offender, and other orcs quickly fall back in line. ^ For some time the maggots will be quiet for sure."),
 		(assign,"$mutiny_stage",0),
         (assign, "$mutiny_counter",216), #double mutiny counter
@@ -13119,6 +13124,20 @@ game_menus = [
 		(set_jump_mission, "mt_arena_challenge_fight"),
 		(jump_to_scene, "scn_duel_scene"),
 		(change_screen_mission),
+	(else_try),
+		(eq,"$mutiny_stage",6), # infighting
+        (set_background_mesh, "mesh_draw_victory_orc_orc"),
+        (call_script, "script_party_calculate_strength", "p_encountered_party_backup", 0), #stores all orc troops
+        (assign, ":orc_strength", reg0),
+        (party_get_morale, ":party_morale", p_main_party),
+        (val_div, ":orc_strength", ":party_morale"), #the lower the morale, the higher the casualties
+        (inflict_casualties_to_party_group, "p_main_party", ":orc_strength", "p_temp_casualties"),
+		(call_script, "script_print_casualties_to_s0", "p_temp_casualties", 0),
+		(str_store_string_reg, s8, s0),
+        (str_store_string, s1, "@^^A fierce fight breaks out, but your loyal troop quickly gain the upper hand and slay the usurper and his mutineers. This will silence any grumblers for a good while. ^^Casualties: ^^{s8}"), 
+        #TODO: Risk for damage to player and wounding companions
+        (assign, "$mutiny_counter",216), #double mutiny counter
+        (assign,"$mutiny_stage",0),
 	(try_end),
     ],[
     # ("start_fight",[(eq, "$party_meeting", 0), (eq, 1,0),],"Confront the mutinee!",[

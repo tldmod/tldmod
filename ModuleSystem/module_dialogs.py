@@ -244,8 +244,10 @@ dialogs = [
 
 #GA: orc pretender dialogs
 [trp_orc_pretender, "start", [(eq,"$mutiny_stage",0)], "Hey, {playername}. We tell you what.. ^Lads here grumbling! Want more fun, less marching around.", "mutiny_pretalk_1",[]],
-[trp_orc_pretender|plyr, "mutiny_pretalk_1", [], "Fall back in line, maggot! We are at war and I'm your commander.", "mutiny_pretalk_2",[]],
-[trp_orc_pretender, "mutiny_pretalk_2", [], "As you wish, commander. As you wish...", "close_window",[(assign,"$mutiny_stage",1),(jump_to_menu, "mnu_premutiny")]],
+[trp_orc_pretender|plyr, "mutiny_pretalk_1", [], "Fall back in line, maggot! We are at war and I'm your commander. [Charisma]", "mutiny_pretalk_2",[]],
+[trp_orc_pretender|plyr, "mutiny_pretalk_1", [], "Want some fun eh? You maggot! I will slay you here and now, that will keep the lads entertained!", "close_window",[(assign,"$mutiny_stage",3),(jump_to_menu, "mnu_mutiny")]],
+[trp_orc_pretender|plyr, "mutiny_pretalk_1", [], "I will not tolerate such treacherous talk! Guards, kill him and his cronies!", "close_window",[(assign,"$mutiny_stage",6),(jump_to_menu, "mnu_mutiny")]],
+[trp_orc_pretender, "mutiny_pretalk_2", [], "As you wish, commander. As you wish...", "close_window",[(assign,"$mutiny_stage",1),(jump_to_menu, "mnu_premutiny"), (store_attribute_level, ":player_cha", trp_player, ca_charisma), (store_mul, "$mutiny_counter",":player_cha", 7),]],
 
 [trp_orc_pretender, "start", [(eq,"$mutiny_stage",2)], "Hey, commander. We tell you what... Lads here are not happy, not happy at all. ^Not enough manflesh, not enough fun. ^Lads here talk you not good enough, commander!", "mutiny_talk_1",[]],
 [trp_orc_pretender|plyr, "mutiny_talk_1", [], "What? Mutiny while at war? ^This is punishable by death, maggot!", "mutiny_talk_2",[]],

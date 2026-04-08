@@ -10,6 +10,7 @@ ip_custom_camera = 8
 ip_sieges = 9
 ip_battle_terrain = 10
 ip_night_penalty = 11
-ip_formations = 12
+ip_advanced_soldier_management = 12
+ip_formations = 13
 
 
