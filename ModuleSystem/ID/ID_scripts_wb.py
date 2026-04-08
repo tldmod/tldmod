@@ -756,5 +756,6 @@ script_game_get_use_string = 754
 script_lookat = 755
 script_animate_town_agents = 756
 script_scene_viewpoint_effect = 757
+script_initialize_exchange_screen_extensions = 758
 
 

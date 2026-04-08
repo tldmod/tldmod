@@ -2949,3 +2949,7 @@ ENCOUNTER_EFFECT_MORALE_DEBUFF = 10
 player_control_allies_inf = 3
 
 
+# Slots for trp_globals_troop
+slot_exchange_party = 10 #Party the player is exchanging troops with
+slot_last_requested_troop = 11 #related to slot_adv_transfer_mode 12
+slot_adv_transfer_mode = 12 #10 for prisoners, 12 for fiefs

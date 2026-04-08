@@ -3719,6 +3719,9 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 ["kingdom_companions_end","{!}BUG","{!}BUG",0,0,0,fac_commoners,[],0,0,0,0],  
 
+#This troop serves as a store for global variables. By using this troop's slots we can avoid adding more global variables that aren't as save compatible
+["globals_troop","{!}BUG","{!}BUG",0,0,0,fac_commoners,[],0,0,0,0],
+
 #Add new troops here, right before trp_last!
 ["last","{!}BUG","{!}BUG",0,0,0,fac_commoners,[],0,0,0,0],    #the last troop must stay a stub, so that range calls for all troops include the last but one troop.
 # For future troop additions, always make sure to fix trp_last overwrite in script_update_savegame
