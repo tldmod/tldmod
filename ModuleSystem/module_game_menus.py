@@ -6510,8 +6510,11 @@ game_menus = [
           (party_get_num_prisoners,  ":num_captured_enemies", "p_temp_party"),
           (store_add, ":total_capture_size", ":num_rescued_prisoners", ":num_captured_enemies"),
           (gt, ":total_capture_size", 0),
+          (troop_set_slot, "trp_globals_troop", slot_adv_transfer_mode, 10),
           (change_screen_exchange_with_party, "p_temp_party"),
         (else_try),
+          #Reset transfer mode after taking prisoners
+          (troop_set_slot, "trp_globals_troop", slot_adv_transfer_mode, 0),
           (eq, "$loot_screen_shown", 0),
           (assign, "$loot_screen_shown", 1),
           
@@ -10982,13 +10985,16 @@ game_menus = [
      (else_try),
      	(troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
      (try_end),
+      (troop_set_slot, "trp_globals_troop", slot_adv_transfer_mode, 12),
+      (troop_set_slot, "trp_globals_troop", slot_exchange_party, ":reserve_party"),
      (change_screen_exchange_with_party, ":reserve_party")
     ],
     []
  ),
 ( "auto_player_garrison_2",0,"{!}stub","none",
     [(jump_to_menu, "mnu_town"),
-     
+
+     (troop_set_slot, "trp_globals_troop", slot_adv_transfer_mode, 0),
      (set_jump_mission,"mt_conversation_encounter"),
      (modify_visitors_at_site,"scn_conversation_scene"),(reset_visitors),
      (try_begin),

@@ -177,6 +177,37 @@ Other races fight worse at night than they do at day, Men more so than Elves or 
 Underground battles are especially difficult. Orcs, Uruks, trolls and Dwarves don't mind fighting in dark tunnels.
   '''),
 
+("advanced_soldier_management", "Advanced Soldier Management",
+  '''
+TLD includes the OSP Advanced Soldier Management feature. This feature adds a few keyboard shortcuts that allow for easier management of large numbers of troops when recruiting prisoners after a battle or managing your reserves.
+
+Capturing/recruiting prisoners after a battle:
+
+To take all prisoners that your party can accomodate select the top prisoner stack, hold LEFT CTRL + A, then click "Capture."
+
+To recruit all rescued prisoners that your party can accomodate select the top soldier stack, hold LEFT CTRL + S, then click "Hire."
+
+Managing your reserves:
+
+To transfer all prisoners to your reserves select any prisoner stack, hold LEFT CTRL + D, then click "Release."
+
+To take all prisoners from reserves that your party can accommodate select any prisoner stack, hold LEFT CTRL + A, then click "Capture."
+
+To transfer all soldiers to your reserves select any soldier stack, hold RIGHT CTRL + ARROW LEFT, then click "Release."
+
+To take all soldiers from your reserves that your party can accomodate select any soldier stack, hold RIGHT CTRL + ARROW RIGHT, then click "Hire."
+
+To move a stack one position down within your reserves select the particular soldier stack, hold ARROW DOWN, then click "Hire."
+
+To move a stack one position up within your reserves select the particular soldier stack, hold ARROW UP, then click "Hire."
+
+To move a stack to the top of your reserves select the particular soldier stack, hold PAGE UP, then click "Hire."
+
+To move a stack to the bottom of your reserves select the particular soldier stack, hold PAGE DOWN, then click "Hire."
+
+The last 4 controls do not work if there is only 1 soldier in the stack.
+  '''),
+
 ("formations", "_", "_"),   # swy: don't use {!} formatting markers here, the game seemingly doesn't parse them in the game concepts screen, for some reason
 
 ]

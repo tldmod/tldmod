@@ -1030,4 +1030,5 @@ trp_future_unique_8 = 1028
 trp_future_unique_9 = 1029
 trp_future_unique_10 = 1030
 trp_kingdom_companions_end = 1031
-trp_last = 1032
+trp_globals_troop = 1032
+trp_last = 1033
