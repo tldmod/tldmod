@@ -1426,7 +1426,7 @@ items =[
 ["prisoner_coll_chain","Prisoner_Chains",[("prisoner_coll_chain",0)],itp_type_head_armor|itp_doesnt_cover_hair,0,10,weight(10)|head_armor(2)|difficulty(0),0],
 ["witchking_helmet","Sorcerer's_Mask",[("witchking_helmet",0),("glorfindelhair",imodbit_rotten),("DwarfHelmKingCrown",imodbit_old),("tiara",imodbit_well_made)],itp_type_head_armor|itp_unique,0,3000,weight(6)|abundance(100)|head_armor(30)|body_armor(5)|difficulty(18),0],
 # let   witchking_helmet  be the last item (mtarini)
-["free_lorien_royal_armor","{!}Lorien_Royal_Armor",[("lorien_royal",0)],itp_type_body_armor|itp_covers_legs,0,4000,weight(26)|abundance(100)|head_armor(1)|body_armor(46)|leg_armor(17)|difficulty(15),imodbits_armor|imodbit_lordly,],
+["bat_reward","Bat of Gundabad",[("reward_bat",0)],itp_unique,0,1000,weight(1)|abundance(0)|0,imodbits_none],
 ["feet_chains","Feet Chains",[("chains_full",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 ["feet_chains_dwarf","Feet Chains",[("chains_full_dwarf",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 
@@ -1435,7 +1435,7 @@ items =[
 ["wolf","Wolf",    [("wolf",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(35)|horse_maneuver(75)|horse_charge(10)|horse_scale(85)|difficulty(10),imodbits_none,[]],
 ["werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(60)|horse_speed(40)|horse_maneuver(70)|horse_charge(35)|horse_scale(100)|difficulty(10),imodbits_none,[]],
 
-["thrush_reward","Thrush",[("prop_reward_thrush",0)],itp_unique|itp_type_goods,0,1000,weight(1)|abundance(0)|0,imodbits_none],
+["thrush_reward","Thrush",[("prop_reward_thrush",0)],itp_unique,0,1000,weight(1)|abundance(0)|0,imodbits_none],
 ["gauntlets_reward","Iron_Fists",[("narf_finger_gauntlets_L",0),("CWE_gauntlets_arabs_a_dwarf_L",imodbit_lordly),],itp_type_hand_armor|itp_unique,0,2000,weight(3)|abundance(0)|body_armor(5)|difficulty(15),imodbits_none,[]],
 
 #last item for MnB
@@ -1595,6 +1595,8 @@ if wb_compile_switch==1:
 ["marker_berserker","Trait: Berserker",[("icon_berserker",0)],itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none],
 ["marker_hp_shield","Trait: Unyielding",[("icon_unyielding",0)],itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none],
 ["marker_banner_troop","Trait: Banner",[("icon_night_troop",0)],itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none], #no fitting mesh yet
+
+["pipeweed_reward","Pipe-weed",[("khazad_dwarf_tobacco_pouch",0)],itp_unique|itp_consumable,0,500,weight(0.2)|abundance(0)|max_ammo(4),imodbits_none],
 
 #from VC
 ["torch",         "Torch", [("orc_club_a",0)], itp_type_two_handed_wpn|itp_two_handed|itp_primary|itp_shop, itc_greatsword, 11 , weight(2.5)|difficulty(0)|spd_rtng(95) | weapon_length(95)|swing_damage(11 , blunt) | thrust_damage(0 ,  pierce),imodbits_none,

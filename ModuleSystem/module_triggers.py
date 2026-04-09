@@ -1867,8 +1867,7 @@ triggers = [
           (val_add, "$mutiny_counter",1),
           (assign,"$mutiny_stage",0),
       (try_end),       
-      
-      (display_message, "@mutiny check 1"),
+
       #InVain: Removed this block, instead added morale checks here and for final mutiny chance below
       ## Kham - Reduce rate of mutiny by level and rank (player faction, I could also look at player's rank in mordor & isengard, but lets start with this)
       # (store_character_level, ":level","trp_player"),

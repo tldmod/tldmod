@@ -4258,10 +4258,32 @@ game_menus = [
             (val_min, ":health", 100),
             (troop_set_health, ":troop_no", ":health"),
         (try_end),
-        (display_log_message, "@You and your companions drink a sip of Miruvor. You feel refreshed and strengthened."),
+        (display_message, "@You and your companions drink a sip of Miruvor. You feel refreshed and strengthened."),
         (jump_to_menu, "mnu_camp"),
         ]
     ),
+
+    ] + (is_a_wb_menu==1 and [
+    ("camp_use_pipeweed",
+        [
+            (player_has_item, "itm_pipeweed_reward"),
+            (item_slot_eq, "itm_pipeweed_reward", slot_item_is_active, 0),
+        ],
+        "Share pipe-weed with your companions (rest for a short duration).",
+        [
+        (store_current_hours, ":now_hours"),
+        (store_add, ":then_hours", ":now_hours", 12),
+        (item_set_slot, "itm_pipeweed_reward", slot_item_is_active, 1),
+        (item_set_slot, "itm_pipeweed_reward", slot_item_deactivation_hour, ":then_hours"),
+
+        (display_message, "@You share some pipe-weed with your companions (at least those who like it) and spend a brief moment of calm with them."),
+        (assign,"$g_camp_mode", 1),
+		(assign, "$g_player_icon_state", pis_camping),
+        (rest_for_hours,1, 1, 1), #rest while attackable
+        (change_screen_return),
+        ]
+    ),
+   ] or []) + [
 
     ("camp_use_athelas",
         [
@@ -4280,7 +4302,6 @@ game_menus = [
         (jump_to_menu, "mnu_camp"),
         ]
     ),
-    
         ("camp_use_drums",
         [
             (player_has_item, "itm_drums_of_the_deep"),
@@ -4288,7 +4309,7 @@ game_menus = [
             (item_get_slot, ":item_deactivation_hour", "itm_drums_of_the_deep", slot_item_deactivation_hour),
             (ge, ":now_hours", ":item_deactivation_hour"),
         ],
-        "Beat the Drums of the Deep.",
+        "Beat the Drums of the Deep (wait for some hours).",
         [
         (assign, ":continue", 0),
         (try_begin),
@@ -4300,7 +4321,7 @@ game_menus = [
         
         (eq, ":continue", 1),
         (store_current_hours, ":now_hours"),
-        (store_add, ":then_hours", ":now_hours", 24),
+        (store_add, ":then_hours", ":now_hours", 36),
         (item_set_slot, "itm_drums_of_the_deep", slot_item_deactivation_hour, ":then_hours"),
         
         (call_script, "script_find_theater", "p_main_party"),
@@ -4409,7 +4430,7 @@ game_menus = [
         (play_sound, "snd_new_rank_good"),
         (assign,"$g_camp_mode", 1),
 		(assign, "$g_player_icon_state", pis_camping),
-        (rest_for_hours,2, 1, 1), #rest while attackable
+        (rest_for_hours,4, 3, 1), #rest while attackable
         (change_screen_return),
         ]
     ),
@@ -13105,9 +13126,11 @@ game_menus = [
 	(else_try),
 		(eq,"$mutiny_stage",3), # pre-fight dialog ended and fight on the way
         (try_begin), #high level characters get extra challenge
-                (store_character_level, ":level","trp_player"),
-                (gt, ":level", 17),
-            	(troop_set_slot, "trp_orc_pretender", slot_troop_has_combat_ai, 1),
+            (store_character_level, ":level","trp_player"),
+            (gt, ":level", 15),
+            (val_mul, ":level", 5),
+            (troop_set_slot, "trp_orc_pretender", slot_troop_has_combat_ai, 1),
+            (troop_set_slot, "trp_orc_pretender", slot_troop_hp_shield, ":level"),
         (try_end),
 		(modify_visitors_at_site, "scn_duel_scene"),
 		(reset_visitors),

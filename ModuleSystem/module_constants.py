@@ -170,7 +170,7 @@ slot_item_horse_charge	= slot_item_swing_damage
 ##  AGENT SLOTS            #############################
 ########################################################
 
-slot_agent_target_entry_point     = 0 #for town walkers and siege archer reinforcements
+slot_agent_target_entry_point     = 0 #for town walkers and siege archer reinforcements, also fleeing agents
 slot_agent_target_x_pos           = 1
 slot_agent_status                 = 1
 slot_agent_target_y_pos           = 2
@@ -1080,6 +1080,8 @@ stqho_declined = 2
 stqho_party_full = 3
 stqho_accepted = 4
 
+slot_troop_trait_scares_mounts = 179 #1= all mounts, 2=wargs, 3=non-wargs
+
 #Healer Slots (troop slot)
 slot_troop_needs_healing = 308
 
@@ -1117,6 +1119,10 @@ slot_trait_butcher			 = 23 #Kham
 slot_trait_well_travelled	 = 24 #kham
 slot_trait_bear_shape        = 25 # Arsakes
 slot_trait_animal_fighter    = 26
+slot_trait_horse_fiend       = 27
+slot_trait_warg_fiend        = 28
+slot_trait_troll_slayer      = 29
+slot_trait_troll_hunter      = 30
 slot_trait_first             = slot_trait_elf_friend
 slot_trait_last              = slot_trait_animal_fighter
 
@@ -2200,7 +2206,7 @@ fac_reward_items_list = [
 #fac_gondor
 [(2,itm_cooking_cauldron,0),(3,itm_herbarium_reward,0),(4,itm_gondor_shield_e, 0), (5, itm_silmarillion_reward, 0), (6, itm_gon_tower_guard, 0), (7, itm_tower_guard_helm, 0), (8, itm_westernesse1h_reward, 0), (9, itm_horn_gondor_reward, 0)],
 #fac_dwarf
-[(2,itm_cooking_cauldron,0),(3,itm_hammer_reward ,0),(4,itm_dwarf_throwing_axe_reward, 0), (5, itm_dwarf_shield_reward, 0), (6, itm_gauntlets_reward, imod_lordly), (7, itm_dwarf_armor_c, imod_lordly), (8, itm_dwarf_great_axe_reward, 0), (9, itm_dwarf_helm_p, imod_lordly)],
+[(2,itm_pipeweed_reward,0),(3,itm_hammer_reward ,0),(4,itm_dwarf_throwing_axe_reward, 0), (5, itm_dwarf_shield_reward, 0), (6, itm_gauntlets_reward, imod_lordly), (7, itm_dwarf_armor_c, imod_lordly), (8, itm_dwarf_great_axe_reward, 0), (9, itm_dwarf_helm_p, imod_lordly)],
 #fac_rohan
 [(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_rohirrim_courser2, imod_heavy), (5, itm_rohan_lance_banner_horse, imod_balanced), (6, itm_rohan_armor_th, 0), (7, itm_rohan_saddle, imodbit_lordly), (8, itm_eorl_cavalry_sword, 0), (9, itm_mearas_reward, 0)],
 #fac_mordor
@@ -2228,7 +2234,7 @@ fac_reward_items_list = [
 #fac_guldur
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_orc_mace, imod_balanced), (5, itm_leather_gloves_reward, imod_crude), (6, itm_herbarium_reward, 0), (7, itm_spider_mount, 0), (8, itm_black_arrows_reward, 0), (9, itm_witchking_helmet, 0)],
 #fac_gundabad
-[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4, itm_orc_throwing_axes_reward, 0), (5, itm_orc_bastard_scimitar, imod_balanced), (6, itm_warg_reward, imod_champion), (7, itm_gundabad_helm_e, imod_lordly), (8, itm_gundabad_armor_e, imod_lordly), (9, itm_orc_idol_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4, itm_orc_throwing_axes_reward, 0), (5, itm_orc_bastard_scimitar, imod_balanced), (6, itm_warg_reward, imod_champion), (7, itm_bat_reward, 0), (8, itm_gundabad_helm_e, imod_lordly), (9, itm_orc_idol_reward, 0)],
 #fac_dunland
 [(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4, itm_crebain_reward, 0), (5, itm_wilderness_cowl, 0), (6, itm_fur_gloves_reward, 0), (7, itm_leather_boots_reward, 0), (8, itm_dunland_chieftain, imod_lordly), (9, itm_dun_berserker, imod_masterwork)],
 #fac_beorn
@@ -2947,7 +2953,6 @@ ENCOUNTER_EFFECT_MORALE_DEBUFF = 10
 
 # Control allies
 player_control_allies_inf = 3
-
 
 # Slots for trp_globals_troop
 slot_exchange_party = 10 #Party the player is exchanging troops with

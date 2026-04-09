@@ -907,8 +907,10 @@ scripts = [
     [ (store_script_param_1, ":troop_id"),
       (store_script_param_2, ":unused"), #party id
 
+	] + (is_a_wb_script==1 and [
       (call_script, "script_initialize_exchange_screen_extensions", ":troop_id"),
 	  (troop_set_slot, "trp_globals_troop", slot_last_requested_troop, ":troop_id"),
+	] or []) + [    
   
       (store_troop_faction, ":troop_faction", ":troop_id"),
 	  (store_character_level, ":troop_level", ":troop_id"),
@@ -3933,8 +3935,8 @@ scripts = [
 			(val_div, ":total", orc_bonus_denominator+4),
 		(else_try),
         	(player_has_item, "itm_orc_idol_reward"),
-			(val_mul, ":total", orc_bonus_nominator+2  ),
-			(val_div, ":total", orc_bonus_denominator+2),
+			(val_mul, ":total", orc_bonus_nominator+1  ),
+			(val_div, ":total", orc_bonus_denominator+1),
 		(else_try),
 			(val_mul, ":total", orc_bonus_nominator  ),
 			(val_div, ":total", orc_bonus_denominator),
@@ -4519,11 +4521,16 @@ scripts = [
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@when equipped"),(try_end),
         (try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@Recruit Black Numenoreans from various places"),(try_end),
         (try_begin),(eq, ":extra_text_id", 3),(set_result_string, "@(Scales with Charisma. Human leaders only.)"),(try_end),
-		(set_trigger_result, color_item_text_bonus),		
+		(set_trigger_result, color_item_text_bonus),
       (else_try),
 		(eq,":item_no","itm_thrush_reward"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Tactics"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+1 to Spotting"),(try_end),
+		(set_trigger_result, color_item_text_bonus),
+      (else_try),
+		(eq,":item_no","itm_bat_reward"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+2 to Spotting"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@(at night)"),(try_end),
 		(set_trigger_result, color_item_text_bonus),
 	  (else_try),
 		(eq,":item_no","itm_leather_boots_reward"),
@@ -4590,6 +4597,13 @@ scripts = [
           (set_trigger_result, color_item_text_morale),
         (try_end),
     ] + (is_a_wb_script==1 and [
+      (else_try),
+		(eq,":item_no","itm_pipeweed_reward"),
+        (try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Bonus to Trainer (Party)"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Bonus to Wound Treatment (Party)"),(try_end),
+        (try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@Bonus to Bargainer (Party)"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 3),(set_result_string, "@Use from Camp Menu"),(try_end),
+        (set_trigger_result, color_item_text_bonus),
       (else_try),
 	  	(eq, ":item_no", "itm_marker_night_troop"),
         (try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Not affected by nighttime"),(try_end),
@@ -4852,6 +4866,11 @@ scripts = [
                     (player_has_item, "itm_thrush_reward"),
                     (val_add, ":modifier_value", 1),
                 (try_end),
+                (try_begin),
+                    (player_has_item, "itm_bat_reward"),
+                    (is_currently_night),
+                    (val_add, ":modifier_value", 2),
+                (try_end),
             (else_try),
                 (eq, ":skill_no", "skl_first_aid"), # First Aid
                 (try_begin),
@@ -5019,6 +5038,13 @@ scripts = [
                     (neq, ":check", 0),
                     (val_sub, ":modifier_value", 1),
                 (try_end),
+                ] + (is_a_wb_script and [
+                (try_begin),
+                    (player_has_item, "itm_pipeweed_reward"),
+                    (item_slot_eq, "itm_pipeweed_reward", slot_item_is_active, 1),
+                    (val_add, ":modifier_value", 1),
+                (try_end),
+                ] or []) + [
             (else_try),
                 (eq, ":skill_no", "skl_first_aid"), # First Aid
 				(try_begin),
@@ -5139,6 +5165,13 @@ scripts = [
                     (item_slot_eq, "itm_orc_brew", slot_item_is_active, 1),
                     (val_add, ":modifier_value", 2),
                 (try_end),
+                ] + (is_a_wb_script and [
+                (try_begin),
+                    (player_has_item, "itm_pipeweed_reward"),
+                    (item_slot_eq, "itm_pipeweed_reward", slot_item_is_active, 1),
+                    (val_add, ":modifier_value", 1),
+                (try_end),
+                ] or []) + [
             (else_try),
                 (eq, ":skill_no", "skl_engineer"), # Engineering
                 (try_begin),
@@ -5172,7 +5205,7 @@ scripts = [
                     (assign, ":modifier_value", -10),
                 (try_end),
             (else_try),
-                (eq, ":skill_no", "skl_persuasion"),
+                (eq, ":skill_no", "skl_persuasion"), #wildcraft
                 (try_begin),
                     (troop_has_item_equipped, ":troop_no", "itm_wilderness_cowl"),
                     (troop_has_item_equipped, ":troop_no", "itm_leather_boots_reward"),
@@ -5180,7 +5213,16 @@ scripts = [
                     (val_add, ":modifier_value", 2),
                 (try_end),
             (else_try),
-                (eq, ":skill_no", "skl_tracking"), #Wildcraft
+                (eq, ":skill_no", "skl_trade"), #trade
+                ] + (is_a_wb_script and [
+                (try_begin),
+                    (player_has_item, "itm_pipeweed_reward"),
+                    (item_slot_eq, "itm_pipeweed_reward", slot_item_is_active, 1),
+                    (val_add, ":modifier_value", 1),
+                (try_end),
+                ] or []) + [
+            (else_try),
+                (eq, ":skill_no", "skl_tracking"), #tracking
                 (try_begin),
                     (troop_has_item_equipped, ":troop_no", "itm_wilderness_cowl"),
                     (val_add, ":modifier_value", 1),
@@ -28495,6 +28537,7 @@ command_cursor_scripts = [
             (troop_set_slot, "trp_dunland_lord", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
             (troop_set_slot, "trp_knight_5_11", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
             (troop_set_slot, "trp_knight_5_12", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
+            (troop_set_slot, "trp_npc20", slot_troop_retainer_troop, "trp_werewolf"), #werewolves for Ziggy!
         ]),
     #Retainers End
 
