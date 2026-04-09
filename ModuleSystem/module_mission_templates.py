@@ -120,7 +120,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     tld_improved_horse_archer_ai,
     hp_shield_init,
     hp_shield_trigger,
-    health_restore_on_kill,
+    #health_restore_on_kill,
     common_battle_init_banner,
     tld_animals_join_battle,
 
@@ -166,7 +166,7 @@ or [] ) + [
 
 tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
 
-  health_restore_on_kill, #Testing if this will be resource intensive.
+  #health_restore_on_kill, #Testing if this will be resource intensive.
   common_battle_init_banner,
   tld_melee_ai,
   hp_shield_init,
@@ -3140,7 +3140,7 @@ mission_templates = [ # not used in game
     (try_end),
     ]),
 
-  health_restore_on_kill,
+  #health_restore_on_kill,
 ] or []) + [
  
   common_inventory_not_available, 
@@ -3493,7 +3493,7 @@ mission_templates = [ # not used in game
     (try_end),
     ]),
 
-  health_restore_on_kill,
+  #health_restore_on_kill,
 
 ] or []) + [
  

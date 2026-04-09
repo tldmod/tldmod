@@ -4611,7 +4611,7 @@ scripts = [
       (else_try),
 	  	(eq, ":item_no", "itm_marker_berserker"),
         (try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Increased health and stagger resistance"),(try_end),
-        (try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Can heal on kill"),(try_end),
+        (try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Can enter battle rage"),(try_end),
         (set_trigger_result, color_item_text_bonus),
       (else_try),
 	  	(eq, ":item_no", "itm_marker_hp_shield"),
@@ -34137,7 +34137,65 @@ if is_a_wb_script==1:
 		(try_end),
 	(try_end),
     ]
-  )
+  ),
+
+# script_agent_become_uncontrollable #called from HP shield trigger
+# Input 1: agent_no
+# Input 2: uncontrollable or running amok
+("agent_become_uncontrollable", [
+    (store_script_param, ":agent", 1),
+    (store_script_param, ":mode", 2),
+    (agent_get_team, ":team", ":agent"),
+    (get_player_agent_no, "$current_player_agent"),
+    (agent_get_team, ":player_team", "$current_player_agent"),
+    
+    (try_begin),
+        (eq, ":team", ":player_team"),
+        (str_store_agent_name, s5, ":agent"),
+        (display_message, "@{s5} has been overcome by battle rage and is now uncontrollable."),
+    (try_end),
+    (try_begin), #defender teams, but we avoid "agent_is_defender" because it only checks if they spawn from a defender entry point
+        (eq, ":mode", 1),
+        (this_or_next|eq, ":team", 0),
+        (this_or_next|eq, ":team", 2),
+        (eq, ":team", 6), #player team in sieges
+        (neg|teams_are_enemies, ":team", 4), #need this additional check because player team can be both attacker or defender
+        (agent_set_team, ":agent", 4),
+        (team_set_relation, 4, 0, 1),
+        (team_set_relation, 4, 2, 1),
+        (team_set_relation, 4, 1, -1),
+        (team_set_relation, 4, 3, -1),
+        (team_set_relation, 4, 5, -1),
+        (team_give_order, 4, grc_everyone, mordr_charge),
+    (else_try), #attacker teams
+        (eq, ":mode", 1),
+        (this_or_next|eq, ":team", 1),
+        (this_or_next|eq, ":team", 3),
+        (eq, ":team", 6), #player team in sieges
+        (neg|teams_are_enemies, ":team", 5), #need this additional check because player team can be both attacker or defender
+        (agent_set_team, ":agent", 5),
+        (team_set_relation, 5, 0, -1),
+        (team_set_relation, 5, 2, -1),
+        (team_set_relation, 5, 1, 1),
+        (team_set_relation, 5, 3, 1),
+        (team_set_relation, 5, 4, 1),
+        (team_give_order, 5, grc_everyone, mordr_charge),
+    (try_end),
+    
+    (try_begin), #running amok
+        (eq, ":mode", 2),
+        (agent_set_team, ":agent", 6),
+        (try_for_range, ":other_team", 0, 6),
+            (team_set_relation, 6, ":other_team", -1),
+        (try_end),
+        (agent_set_animation, ":agent", "anim_troll_charge", 0), #send them away from formation
+        (str_store_agent_name, s5, ":agent"),
+        (display_message, "@{s5} is running amok, hurting friend and foe alike!"),
+        (agent_force_rethink, ":agent"),
+        #(agent_set_speed_modifier, ":agent", 130),
+    (try_end),
+    (agent_force_rethink, ":agent"),
+]),
 
 ] or [])
 
