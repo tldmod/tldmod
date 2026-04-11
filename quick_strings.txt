@@ -1,4 +1,4 @@
-1841
+1842
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -201,6 +201,8 @@ qstr_+1_to_Power_Throw +1_to_Power_Throw
 qstr_Recruit_Black_Numeno Recruit_Black_Numenoreans_from_various_places
 qstr__Scales_with_Charism (Scales_with_Charisma._Human_leaders_only.)
 qstr_+1_to_Spotting +1_to_Spotting
+qstr_+2_to_Spotting +2_to_Spotting
+qstr__at_night_ (at_night)
 qstr_+2_to_Weapon_Master +2_to_Weapon_Master
 qstr_+2_to_First_Aid +2_to_First_Aid
 qstr_Less_Dunnish_upkeep Less_Dunnish_upkeep
@@ -961,7 +963,6 @@ qstr_{***}C_advance_camps_sp {***}C_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_{***}N_advance_camps_sp {***}N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_{***}Gandalf_would_lik {***}Gandalf_would_like_to_have_a_little_chat!
 qstr_{***}1_troll_added! {***}1_troll_added!
-qstr_{***}Raft_Men_party_en {***}Raft_Men_party_enabled._They_are_down_River_Running
 qstr_{***}Orc_Horde_Spawned {***}Orc_Horde_Spawned!
 qstr_{***}Vet_Archer_Spawne {***}Vet_Archer_Spawned!
 qstr_{***}Killer_WItcher_Sp {***}Killer_WItcher_Spawned,_Badass_King_Theo_added!
@@ -1172,6 +1173,7 @@ qstr_flooded._Somebody_or flooded._Somebody_or_something_must_have_ruined_the_Is
 qstr_destroyed._Only_smol destroyed._Only_smoldering_ruins_remain.
 qstr_^^^You_lost_your_fig ^^^You_lost_your_fight_against_the_mutiny!_^Seems_like_your_orcs_have_a_new_commander_now.
 qstr_^^^You_have_slain_th ^^^You_have_slain_the_offender,_and_other_orcs_quickly_fall_back_in_line._^_For_some_time_the_maggots_will_be_quiet_for_sure.
+qstr_^^A_fierce_fight_bre ^^A_fierce_fight_breaks_out,_but_your_loyal_troop_quickly_gain_the_upper_hand_and_slay_the_usurper_and_his_mutineers._This_will_silence_any_grumblers_for_a_good_while._^^Casualties:_^^{s8}
 qstr_You_cover_up_your_tr You_cover_up_your_tracks_and_move_onward.
 qstr_the_Eye the_Eye
 qstr_the_Hand the_Hand
@@ -1180,6 +1182,7 @@ qstr_{s3}_gained_faction_ {s3}_gained_faction_strength.
 qstr_This_is_ill_news_but This_is_ill_news,_but_it_won't_help_them.
 qstr_Hopeful_tidings_inde Hopeful_tidings_indeed!
 qstr_Breaking_camp... Breaking_camp...
+qstr_{***}DEBUG:_Player_Con {***}DEBUG:_Player_Control_Allies_RESET
 qstr_Party_morale_is_low. Party_morale_is_low._Troops_desert_from_your_party.
 qstr_Desertion Desertion
 qstr_{s1}_has_deserted_fr {s1}_has_deserted_from_your_party.
@@ -1190,10 +1193,8 @@ qstr_You_are_entering_{s1 You_are_entering_{s1}_({s2}).
 qstr_You_are_entering_{s1} You_are_entering_{s1}.
 qstr_The_war_expands_comm The_war_expands,_commanders_are_getting_bolder!_(siege_requirements_reduced)
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
-qstr_{***}DEBUG:_Player_Con {***}DEBUG:_Player_Control_Allies_RESET
-qstr_The_effects_of_the_O The_effects_of_the_Orc_Brew_have_dissipated.
-qstr_The_effects_of_the_M The_effects_of_the_Miruvor_have_dissipated.
 qstr_Athelas_used_up. Athelas_used_up.
+qstr_The_effects_of_the_{ The_effects_of_the_{s9}_have_dissipated.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
 qstr_You_pay_for_accommod You_pay_for_accommodation.
 qstr_The_troll_outside_{s The_troll_outside_{s2}_was_killed._Mission_canceled.

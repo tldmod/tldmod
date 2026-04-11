@@ -1,4 +1,4 @@
-2166
+2170
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -104,7 +104,7 @@ qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_Thank_you_for_playin Thank_you_for_playing
-qstr_{!}_rev_524_wb__dev_ {!}_rev_524_wb_|_dev_^_Built_2026-04-01_17:01___
+qstr_{!}_rev_529_wb__dev_ {!}_rev_529_wb_|_dev_^_Built_2026-04-11_20:20___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -296,6 +296,8 @@ qstr_+1_to_Power_Throw +1_to_Power_Throw
 qstr_Recruit_Black_Numeno Recruit_Black_Numenoreans_from_various_places
 qstr__Scales_with_Charism (Scales_with_Charisma._Human_leaders_only.)
 qstr_+1_to_Spotting +1_to_Spotting
+qstr_+2_to_Spotting +2_to_Spotting
+qstr__at_night_ (at_night)
 qstr_+2_to_Weapon_Master +2_to_Weapon_Master
 qstr_+2_to_First_Aid +2_to_First_Aid
 qstr_Less_Dunnish_upkeep Less_Dunnish_upkeep
@@ -305,9 +307,12 @@ qstr_Bonus_to_Strength__P Bonus_to_Strength_(Player_only)
 qstr_Lead_more_Orcs Lead_more_Orcs
 qstr_Can_scare_horses Can_scare_horses
 qstr_+{reg1}_to_Party_Mor +{reg1}_to_Party_Morale
+qstr_Bonus_to_Trainer__Pa Bonus_to_Trainer_(Party)
+qstr_Bonus_to_Bargainer__ Bonus_to_Bargainer_(Party)
 qstr_Not_affected_by_nigh Not_affected_by_nighttime
 qstr_Increased_health_and Increased_health_and_stagger_resistance
-qstr_Can_heal_on_kill Can_heal_on_kill
+qstr_Can_enter_battle_rag Can_enter_battle_rage
+qstr_Can_scare_wargs Can_scare_wargs
 qstr_Range:_{reg55} Range:_{reg55}
 qstr_Dwarves Dwarves
 qstr_Humans_and_Elves Humans_and_Elves
@@ -928,13 +933,13 @@ qstr_Your_hackles_rise_as Your_hackles_rise_as_you_look_around_you,_and_you_begi
 qstr_Looking_around_you_d Looking_around,_you_do_not_understand_the_significance_of_this_place.
 qstr_Looking_around_you_f Looking_around,_you_feel_that_you_do_not_know_this_people_well_enough_to_understand_the_significance_of_this_place.
 qstr_Looking_around_you_fe Looking_around,_you_feel_that_you_are_not_esteemed_enough_to_learn_the_significance_of_this_place.
+qstr_{s5}_has_been_overco {s5}_has_been_overcome_by_battle_rage_and_is_now_uncontrollable.
+qstr_{s5}_is_running_amok {s5}_is_running_amok,_hurting_friend_and_foe_alike!
 qstr_Visit_the_victory_ce Visit_the_victory_celebrations_and_speak_to_{s5}.
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
 qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!
-qstr_{s5}_has_been_overco {s5}_has_been_overcome_by_fear_and_rage_and_is_now_uncontrollable.
-qstr_{s5}_is_running_amok {s5}_is_running_amok,_hurting_friend_and_foe_alike!
 qstr_The_Nazgul_retreats! The_Nazgul_retreats!
 qstr_Shield_is_too_big_to Shield_is_too_big_to_be_used_with_a_bow.
 qstr_Shield_reduces_accur Shield_reduces_accuracy_by_{reg11}_percent.
@@ -970,7 +975,6 @@ qstr_Formations_turned_OF Formations_turned_OFF_in_options_menu
 qstr_Division_{reg1}_{s2}_g Division_{reg1}_{s2}_goes_to_its_memorized_position...
 qstr_Division_{reg1}_{s2}_f Division_{reg1}_{s2}_forms_line_(memorized).
 qstr_Division_{reg1}_{s2}_fo Division_{reg1}_{s2}_forms_{reg0}_lines_(memorized).
-qstr_{!}DEBUG__Health_Reg {!}DEBUG_(Health_Regen):_{s1}_regains_{reg0}%_health.__=_+{reg1}%_STR
 qstr_{reg5?A_group_of:A}_ {reg5?A_group_of:A}_{s1}_has_joined_the_fight_on_{reg6?the_enemy's:your}_side!
 qstr_Your_bear_form_has_{ Your_bear_form_has_{reg2}/{reg1}_HP!
 qstr_{!}DEBUG:_Ti_on_item {!}DEBUG:_Ti_on_item_wielded
@@ -1261,7 +1265,6 @@ qstr_{!}Gandalf_would_lik {!}Gandalf_would_like_to_have_a_little_chat!
 qstr_{!}none {!}none
 qstr_{!}Theoden_activated {!}Theoden_activated
 qstr_{!}1_troll_added! {!}1_troll_added!
-qstr_{!}Raft_Men_party_en {!}Raft_Men_party_enabled._They_are_down_River_Running
 qstr_{!}theater:_{reg0} {!}theater:_{reg0}
 qstr_{!}Orc_Horde_Spawned {!}Orc_Horde_Spawned!
 qstr_{!}Vet_Archer_Spawne {!}Vet_Archer_Spawned!
@@ -1286,6 +1289,7 @@ qstr_Battles_only Battles_only
 qstr_You_drank_the_Ent_Wa You_drank_the_Ent_Water...
 qstr_You_used_the_Orc_Bre You_used_the_Orc_Brew.
 qstr_You_and_your_compani You_and_your_companions_drink_a_sip_of_Miruvor._You_feel_refreshed_and_strengthened.
+qstr_You_share_some_pipe_ You_share_some_pipe-weed_with_your_companions_(at_least_those_who_like_it)_and_spend_a_brief_moment_of_calm_with_them.
 qstr_You_give_a_few_leave You_give_a_few_leaves_of_Athelas_to_your_healers.
 qstr_Not_enough_party_spa Not_enough_party_space.
 qstr_elites elites
@@ -1472,6 +1476,7 @@ qstr_flooded._Somebody_or flooded._Somebody_or_something_must_have_ruined_the_Is
 qstr_destroyed._Only_smol destroyed._Only_smoldering_ruins_remain.
 qstr_^^^You_lost_your_fig ^^^You_lost_your_fight_against_the_mutiny!_^Seems_like_your_orcs_have_a_new_commander_now.
 qstr_^^^You_have_slain_th ^^^You_have_slain_the_offender,_and_other_orcs_quickly_fall_back_in_line._^_For_some_time_the_maggots_will_be_quiet_for_sure.
+qstr_^^A_fierce_fight_bre ^^A_fierce_fight_breaks_out,_but_your_loyal_troop_quickly_gain_the_upper_hand_and_slay_the_usurper_and_his_mutineers._This_will_silence_any_grumblers_for_a_good_while._^^Casualties:_^^{s8}
 qstr_You_cover_up_your_tr You_cover_up_your_tracks_and_move_onward.
 qstr_the_Eye the_Eye
 qstr_the_Hand the_Hand
@@ -1480,6 +1485,7 @@ qstr_{s3}_gained_faction_ {s3}_gained_faction_strength.
 qstr_This_is_ill_news_but This_is_ill_news,_but_it_won't_help_them.
 qstr_Hopeful_tidings_inde Hopeful_tidings_indeed!
 qstr_Breaking_camp... Breaking_camp...
+qstr_{!}DEBUG:_Player_Con {!}DEBUG:_Player_Control_Allies_RESET
 qstr_Party_morale_is_low. Party_morale_is_low._Troops_desert_from_your_party.
 qstr_Desertion Desertion
 qstr_{s1}_has_deserted_fr {s1}_has_deserted_from_your_party.
@@ -1491,10 +1497,8 @@ qstr_You_are_entering_{s1} You_are_entering_{s1}.
 qstr_{!}DEBUG:_{s1}_was_s {!}DEBUG:_{s1}_was_stuck,_repositioning_somewhere_else!
 qstr_The_war_expands_comm The_war_expands,_commanders_are_getting_bolder!_(siege_requirements_reduced)
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
-qstr_{!}DEBUG:_Player_Con {!}DEBUG:_Player_Control_Allies_RESET
-qstr_The_effects_of_the_O The_effects_of_the_Orc_Brew_have_dissipated.
-qstr_The_effects_of_the_M The_effects_of_the_Miruvor_have_dissipated.
 qstr_Athelas_used_up. Athelas_used_up.
+qstr_The_effects_of_the_{ The_effects_of_the_{s9}_have_dissipated.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
 qstr_You_pay_for_accommod You_pay_for_accommodation.
 qstr_The_troll_outside_{s The_troll_outside_{s2}_was_killed._Mission_canceled.

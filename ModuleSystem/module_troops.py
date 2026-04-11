@@ -413,10 +413,12 @@ itm_riv_tiara = (itm_tiara_reward, imod_lordly)
 # itm_fur_hat_a_new = itm_hood_black
 # itm_noel_hat_a = itm_hood_black
 
-if (is_a_wb_troop == 0):
-  itm_marker_night_troop = itm_no_item
-  itm_marker_berserker = itm_no_item
-  itm_marker_hp_shield = itm_no_item
+if is_a_wb_troop == 0:
+    itm_marker_night_troop = itm_no_item
+    itm_marker_berserker = itm_no_item
+    itm_marker_hp_shield = itm_no_item
+    itm_marker_scares_wargs = itm_no_item
+    itm_marker_scares_horses = itm_no_item
 
 
 itm_blue_tunic = (itm_white_tunic_a, imod_well_made) #dale_tunic, basic blue
@@ -915,6 +917,7 @@ itm_beorn_heavy_bad				= (itm_beorn_heavy, imod_cracked)
 itm_beorn_heavy_good			= (itm_beorn_heavy, imod_reinforced)
 itm_beorn_berserk_bad			= (itm_beorn_berserk, imod_cracked)
 itm_beorn_berserk_good			= (itm_beorn_berserk, imod_reinforced)
+itm_beorn_chief_bad			    = (itm_beorn_chief, imod_rusty)
 itm_beorn_helmet_light			= (itm_beorn_helmet, imod_cracked)
 
 #Rhun helms
@@ -1209,10 +1212,10 @@ troops = [
 ["i2_beorning_warrior","Beorning_Warrior","Beorning_Warriors",tfg_armor| tfg_boots,0,0,fac_beorn,[itm_north_skullcap,itm_gondor_ranger_hood,itm_beorn_tunic,itm_beorn_padded_bad,itm_furry_boots,itm_beorn_axe,itm_dwarf_sword_b,itm_beorn_shield,itm_north_round_shield,],attr_tier_2,wp_tier_2,knows_common|knows_ironflesh_3|knows_power_strike_2|knows_athletics_4|knows_tracking_2|knows_pathfinding_1|knows_spotting_1|knows_surgery_1|knows_persuasion_1|knows_trade_1,beorn_face1,beorn_face2],
 ["i3_beorning_tolltacker","Beorning_Toll-Taker","Beorning_Toll-Takers",tfg_armor| tfg_boots|tfg_shield,0,0,fac_beorn,[itm_north_skullcap,itm_beorn_helmet_light,itm_beorn_padded, itm_beorn_heavy_bad,itm_furry_boots,itm_dwarf_sword_b,itm_beorn_shield,itm_north_round_shield,itm_rohirrim_throwing_axe,],attr_tier_3,wp_tier_3,knows_common|knows_athletics_4|knows_power_strike_3|knows_ironflesh_4|knows_power_throw_2,beorn_face1,beorn_face2],
 ["i4_beorning_sentinel","Beorning_Sentinel","Beorning_Sentinels",tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_north_skullcap,itm_beorn_helmet_light,itm_beorn_heavy,itm_leather_boots,itm_dwarf_sword_b,itm_dale_sword,itm_beorn_shield,itm_beorn_shield_good,itm_rohirrim_throwing_axe,],attr_tier_4,wp_tier_4,knows_common|knows_athletics_4|knows_power_strike_3|knows_ironflesh_5|knows_shield_3|knows_power_throw_2,beorn_face1,beorn_face2],
-["i5_beorning_warden_of_the_ford","Beorning_Warden_of_the_Ford","Beorning_Wardens_of_the_Ford",tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_north_skullcap,itm_beorn_helmet, itm_beorn_heavy_good,itm_leather_gloves,itm_leather_boots,itm_dwarf_sword_a,itm_dwarf_sword_b,itm_dale_sword,itm_dale_sword_long,itm_beorn_shield_good,itm_rohirrim_throwing_axe,],attr_tier_5,wp_tier_5,knows_common|knows_athletics_5|knows_power_strike_3|knows_ironflesh_6|knows_shield_5|knows_power_throw_3,beorn_face1,beorn_face2],
+["i5_beorning_warden_of_the_ford","Beorning_Warden_of_the_Ford","Beorning_Wardens_of_the_Ford",tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_north_skullcap,itm_beorn_helmet,itm_beorn_heavy_good,itm_leather_gloves,itm_leather_boots,itm_dwarf_sword_a,itm_dwarf_sword_b,itm_dale_sword,itm_dale_sword_long,itm_beorn_shield_good,itm_rohirrim_throwing_axe,],attr_tier_5,wp_tier_5,knows_common|knows_athletics_5|knows_power_strike_4|knows_ironflesh_7|knows_shield_5|knows_power_throw_3,beorn_face1,beorn_face2],
 ["i3_beorning_carrock_lookout","Beorning_Carrock_Lookout","Beorning_Carrock_Lookouts",tfg_armor| tfg_boots,0,0,fac_beorn,[itm_north_skullcap,itm_beorn_helmet_light,itm_beorn_tunic_good,itm_beorn_padded_bad,itm_beorn_berserk_bad,itm_furry_boots,itm_beorn_axe,itm_javelin,],attr_tier_3,wp_tier_3,knows_common|knows_athletics_6|knows_power_strike_4|knows_ironflesh_6|knows_power_throw_2,beorn_face1,beorn_face2],
-["i4_beorning_carrock_fighter","Beorning_Carrock_Fighter","Beorning_Carrock_Fighters",tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_beorn_helmet,itm_beorn_helmet_light,itm_beorn_padded, itm_beorn_berserk,itm_furry_boots,itm_beorn_axe,itm_beorn_battle_axe,itm_javelin,itm_javelin,],attr_tier_4,wp_tier_4,knows_common|knows_athletics_7|knows_power_strike_5|knows_ironflesh_7|knows_power_throw_4,beorn_face1,beorn_face2],
-["i5_beorning_carrock_berserker","Beorning_Carrock_Berserker","Beorning_Carrock_Berserkers",tfg_gloves| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_beorn_helmet,itm_beorn_padded_good,itm_beorn_berserk_good,itm_furry_boots,itm_beorn_battle_axe,itm_javelin,itm_javelin,],attr_tier_5,wp_tier_6,knows_common|knows_athletics_8|knows_power_strike_7|knows_ironflesh_9|knows_power_throw_6,beorn_face1,beorn_face2],
+["i4_beorning_carrock_fighter","Beorning_Carrock_Fighter","Beorning_Carrock_Fighters",tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_beorn_helmet,itm_beorn_helmet_light,itm_beorn_padded, itm_beorn_berserk,itm_furry_boots,itm_beorn_axe,itm_beorn_battle_axe,itm_javelin,],attr_tier_4,wp_tier_4,knows_common|knows_athletics_7|knows_power_strike_5|knows_ironflesh_7|knows_power_throw_4,beorn_face1,beorn_face2],
+["i5_beorning_carrock_berserker","Beorning_Carrock_Berserker","Beorning_Carrock_Berserkers",tfg_gloves| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_beorn_helmet,itm_beorn_padded_good,itm_beorn_berserk_good,itm_furry_boots,itm_beorn_battle_axe,itm_javelin,itm_marker_berserker, itm_marker_scares_wargs, itm_marker_scares_horses,],attr_tier_5,wp_tier_6,knows_common|knows_athletics_8|knows_power_strike_7|knows_ironflesh_9|knows_power_throw_6,beorn_face1,beorn_face2],
 
 ["northmen_items","{!}BUG","{!}",tf_hero,0,0,fac_beorn,
    [itm_leather_gloves,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,itm_sumpter_horse,itm_saddle_horse,],
@@ -1485,7 +1488,7 @@ troops = [
 #FAR HARAD
 ["i2_far_harad_tribesman","Far_Harad_Tribesman","Far_Harad_Tribesmen",tf_harad| tfg_armor| tfg_boots,0,0,fac_harad,[itm_far_harad_2h_mace,itm_harad_short_spear,itm_harad_javelin,],attr_evil_tier_2,wp_tier_2,knows_common|knows_ironflesh_1|knows_power_strike_1|knows_power_throw_1|knows_athletics_4|knows_looting_2|knows_tracking_1|knows_pathfinding_1|knows_wound_treatment_2|knows_surgery_1,far_harad_face1,far_harad_face2],
 ["i4_far_harad_champion","Far_Harad_Champion","Far_Harad_Champions",tf_harad| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,[itm_harad_champion,itm_far_harad_2h_mace,itm_harad_short_spear,itm_harad_javelin,],attr_evil_tier_4,wp_tier_4,knows_common|knows_ironflesh_1|knows_power_strike_2|knows_power_throw_3|knows_athletics_5|knows_looting_2|knows_tracking_1|knows_pathfinding_1|knows_wound_treatment_2|knows_surgery_1,far_harad_face1,far_harad_face2],
-["i5_far_harad_panther_guard","Panther_Guard","Panther_Guards",tf_harad| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,[itm_harad_pantherhelm,itm_harad_champion_good,itm_harad_mace,itm_harad_javelin,itm_harad_long_shield_a,itm_marker_night_troop,itm_marker_hp_shield,],attr_evil_tier_5,wp_tier_5,knows_common|knows_power_throw_4|knows_power_strike_4|knows_ironflesh_3|knows_athletics_8,far_harad_face1,far_harad_face2],
+["i5_far_harad_panther_guard","Panther_Guard","Panther_Guards",tf_harad| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,[itm_harad_pantherhelm,itm_harad_champion_good,itm_harad_mace,itm_harad_javelin,itm_harad_long_shield_a,itm_marker_night_troop,itm_marker_scares_wargs, itm_marker_scares_horses,itm_marker_hp_shield,],attr_evil_tier_5,wp_tier_5,knows_common|knows_power_throw_4|knows_power_strike_4|knows_ironflesh_3|knows_athletics_8,far_harad_face1,far_harad_face2],
 
 
 ["harad_items","{!}BUG","{!}",tf_hero,0,0,fac_harad,
@@ -3379,9 +3382,9 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 #unused
 ["dummy_troop",  "{!}bug","{!}", 0, 0, 0, fac_gondor, [], lord_attrib,0,0,0],
-["i6_dun_retainer","Dunnish_Retainer","Dunnish_Retainers",tf_dunland| tf_randomize_face| tfg_armor| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dunland,[itm_dun_helm_a_good,itm_dun_helm_c,itm_dunland_chieftain, itm_dunland_mail_2_good, itm_dunland_mail_2_good,itm_evil_gauntlets_a_good,itm_orc_mittens, itm_splinted_greaves,itm_leather_boots_dark,itm_dunnish_antler_axe, itm_dun_berserker_heavy, itm_dunnish_long_axe_heavy,itm_dun_shield_a,itm_marker_hp_shield,],attr_evil_tier_6,wp_tier_6,knows_common|knows_athletics_5|knows_shield_5|knows_power_strike_6|knows_ironflesh_8|knows_power_throw_7,dunland_face1,dunland_face2],
+["i6_dun_retainer","Dunnish_Retainer","Dunnish_Retainers",tf_dunland| tf_randomize_face| tfg_armor| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dunland,[itm_dun_helm_a_good,itm_dun_helm_c,itm_dunland_chieftain, itm_dunland_mail_2_good, itm_dunland_mail_2_good,itm_evil_gauntlets_a_good,itm_orc_mittens, itm_splinted_greaves,itm_leather_boots_dark,itm_dunnish_antler_axe, itm_dun_berserker_heavy, itm_dunnish_long_axe_heavy,itm_dun_shield_a,itm_marker_hp_shield,itm_marker_scares_horses,itm_marker_scares_wargs,],attr_evil_tier_6,wp_tier_6,knows_common|knows_athletics_5|knows_shield_5|knows_power_strike_6|knows_ironflesh_8|knows_power_throw_7,dunland_face1,dunland_face2],
     
-["i6_beorning_bear_warrior","Bear_Warrior","Bear_Warriors",tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_beorn_helmet,itm_beorn_chief,itm_leather_gloves_good,itm_leather_boots, itm_leather_boots_dark,itm_splinted_greaves,itm_beorn_axe_reward,itm_beorn_shield_reward,itm_rohirrim_throwing_axe,],attr_evil_tier_6,wp_tier_6,knows_common|knows_athletics_5|knows_power_strike_4|knows_ironflesh_8|knows_shield_7|knows_power_throw_4,beorn_face1,beorn_face2],
+["i6_beorning_bear_warrior","Bear_Warrior","Bear_Warriors",tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,[itm_beorn_helmet,itm_beorn_chief_bad,itm_leather_gloves_good,itm_leather_boots, itm_leather_boots_dark,itm_splinted_greaves,itm_beorn_axe_reward,itm_beorn_shield_reward,itm_rohirrim_throwing_axe,itm_marker_scares_wargs, itm_marker_scares_horses,itm_marker_hp_shield,],attr_evil_tier_6,wp_tier_6,knows_common|knows_athletics_5|knows_power_strike_4|knows_ironflesh_8|knows_shield_7|knows_power_throw_4,beorn_face1,beorn_face2],
 
 ["a5_dun_night_wolf","Dunnish_Night_Wolf","Dunnish_Night_Wolfs",tf_dunland| tf_randomize_face| tfg_shield| tfg_armor| tfg_boots| tfg_ranged,0,0,fac_dunland,[itm_dun_helm_a, itm_wilderness_cowl,itm_dunland_mail_1, itm_dunland_chieftain_bad,itm_fur_gloves_reward,itm_dunland_wolfboots,itm_leather_boots_dark,itm_dunnish_axe_heavy,itm_dunnish_war_axe,itm_dunland_javelin,itm_dunland_javelin,itm_dunland_javelin,itm_dunland_javelin,itm_dunland_javelin,itm_dun_shield_a,itm_marker_night_troop],attr_evil_tier_5,wp_tier_5,knows_common|knows_athletics_7|knows_shield_3|knows_power_strike_3|knows_ironflesh_2|knows_power_throw_7,dunland_face1,dunland_face2],
 # ["test_vet_archer","Test_Vet_Archer","Test_Vet_Archer",tf_woodelf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,

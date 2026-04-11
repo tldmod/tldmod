@@ -1535,9 +1535,10 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
 			(agent_is_alive, ":monster"),
             (agent_is_human, ":monster"),
 			(agent_get_troop_id,":troop_no",":monster"),
+            (neq, ":troop_no", trp_player),
             (str_clear, s5),
             (str_clear, s6),
-            (assign, ":monster_horse_type", 0),            
+            (assign, ":monster_horse_type", 0),
 			(troop_get_type, ":type", ":troop_no"),
             (agent_get_horse, ":monster_horse", ":monster"),
             
@@ -1550,17 +1551,12 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
             (try_begin),
                 (neg|troop_is_hero, ":troop_no"),
                 
+                (this_or_next|troop_slot_ge, ":troop_no", slot_troop_trait_scares_mounts, 1),
                 (this_or_next|eq, ":type", tf_troll),
                 (this_or_next|eq, ":monster_horse_type", itm_camel),
                 (this_or_next|eq, ":monster_horse_type", itm_bear),
                 (eq, ":monster_horse_type", itm_werewolf),
                 (str_store_agent_name, s5, ":monster"),
-
-                (try_begin),
-                    (ge, ":monster_horse", 1),
-                    (agent_get_item_id, ":monster_horse_type", ":monster_horse"),
-                    (str_store_item_name, s5, ":monster_horse_type"),  
-                (try_end),
 
                 (agent_get_position,pos1,":monster"),
                 (agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":monster"),
@@ -1588,15 +1584,21 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
 
                     #conditionally scared
                     (assign, ":scare_check", 1),
-                    (try_begin), #wargs not scared by trolls
-                        (eq, ":type", tf_troll), (is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
+                    (try_begin), #wargs not scared 
+                        (is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
+                        (this_or_next|eq, ":type", tf_troll),
+                        (troop_slot_eq, ":troop_no", slot_troop_trait_scares_mounts, 2), #scare wargs trait
                         (assign, ":scare_check", 0),
-                    (else_try),
+                    (else_try), #camels only scare horses
                         (eq, ":monster_horse_type", itm_camel), (this_or_next|eq, ":victim_horse_type", itm_camel), (is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
+                        (assign, ":scare_check", 0),
+                    (else_try), #all non-wargs
+                        (neg|is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
+                        (troop_slot_eq, ":troop_no", slot_troop_trait_scares_mounts, 3), #scare wargs trait
                         (assign, ":scare_check", 0),
                     (else_try),
                         (eq, ":monster_horse_type", itm_bear), (eq, ":victim_horse_type", itm_bear),
-                        (assign, ":scare_check", 0),                    
+                        (assign, ":scare_check", 0),
                     (try_end),
 
                     (eq, ":scare_check", 1),
@@ -1606,11 +1608,26 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
                     (agent_set_slot, ":horse", slot_agent_last_knockdown_time, ":timer"),                        
                     (store_skill_level, ":riding", "skl_riding", ":rider_troop"), #Riding skill helps avoid (InVain)
                     (val_add, ":riding", 2),
+                    (try_begin),
+                        (gt,":dist",400),
+                        (val_add, ":riding", 2),
+                    (try_end),
                     (store_random_in_range, ":scare_chance", 0, 12),
                     (try_begin),
                         (ge,":scare_chance",":riding"),
                         (agent_set_animation,":horse","anim_horse_rear"),
-                        (agent_play_sound,":horse","snd_neigh"), 
+                        (agent_get_slot, ":morale_penalty", ":rider", slot_agent_morale_modifier),
+                        (val_sub, ":morale_penalty", 20),
+                        (agent_set_slot, ":rider", slot_agent_morale_modifier, ":morale_penalty"),
+                        # (str_store_agent_name, s5, ":horse"),
+                        # (display_message, "@{s5} scared"),
+                        (try_begin),
+                            (is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
+                            (agent_play_sound,":horse","snd_warg_lone_woof"),
+                        (else_try),
+                            (neq, ":monster_horse_type", "itm_camel"),
+                            (agent_play_sound,":horse","snd_neigh"),
+                        (try_end),
                     (try_end),                    
                     # let the player know what happened
                     (try_begin),
@@ -1631,6 +1648,7 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
                 (eq, ":troop_no", trp_player),
                 (agent_get_team, ":monster_team", ":monster"),
                 
+                (this_or_next|troop_slot_ge, ":troop_no", slot_troop_trait_scares_mounts, 1),
                 (this_or_next|eq, ":type", tf_troll),
                 (eq, ":monster_horse_type", itm_camel),
                           
@@ -1648,19 +1666,25 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
                     #never scared
                     (neg|is_between, ":rider_troop", "trp_spider", "trp_animals_end"),
                     (neq, ":rider_troop", "trp_werewolf_old"),
-                    (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"),
+                    (neq, ":rider_troop", "trp_multiplayer_profile_troop_male"), #player bear
 
                     #conditionally scared
                     (assign, ":scare_check", 1),
-                    (try_begin), #wargs not scared by trolls
-                        (eq, ":type", tf_troll), (is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
+                    (try_begin), #wargs not scared 
+                        (is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
+                        (this_or_next|eq, ":type", tf_troll),
+                        (troop_slot_eq, ":troop_no", slot_troop_trait_scares_mounts, 2), #scare wargs trait
                         (assign, ":scare_check", 0),
                     (else_try), #camels only scare horses
                         (eq, ":monster_horse_type", itm_camel), (this_or_next|eq, ":victim_horse_type", itm_camel), (is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
                         (assign, ":scare_check", 0),
+                    (else_try), #all non-wargs
+                        (neg|is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
+                        (troop_slot_eq, ":troop_no", slot_troop_trait_scares_mounts, 3), #scare wargs trait
+                        (assign, ":scare_check", 0),
                     (else_try),
                         (eq, ":monster_horse_type", itm_bear), (eq, ":victim_horse_type", itm_bear),
-                        (assign, ":scare_check", 0),                    
+                        (assign, ":scare_check", 0),
                     (try_end),
 
                     (eq, ":scare_check", 1),
@@ -1670,12 +1694,27 @@ custom_tld_horses_hate_trolls = ((is_a_wb_mt==1) and (
                     (agent_set_slot, ":horse", slot_agent_last_knockdown_time, ":timer"),                        
                     (store_skill_level, ":riding", "skl_riding", ":rider_troop"), #Riding skill helps avoid (InVain)
                     (val_add, ":riding", 2),
+                    (try_begin),
+                        (gt,":dist",400),
+                        (val_add, ":riding", 2),
+                    (try_end),
                     (store_random_in_range, ":scare_chance", 0, 12),
                     (try_begin),
                         (ge,":scare_chance",":riding"),
                         (agent_set_animation,":horse","anim_horse_rear"),
-                        (agent_play_sound,":horse","snd_neigh"), 
-                    (try_end),    
+                        (agent_get_slot, ":morale_penalty", ":rider", slot_agent_morale_modifier),
+                        (val_sub, ":morale_penalty", 20),
+                        (agent_set_slot, ":rider", slot_agent_morale_modifier, ":morale_penalty"),
+                        # (str_store_agent_name, s5, ":horse"),
+                        # (display_message, "@{s5} scared"),
+                        (try_begin),
+                            (is_between, ":victim_horse_type", item_warg_begin, item_warg_end),
+                            (agent_play_sound,":horse","snd_warg_lone_woof"),
+                        (else_try),
+                            (neq, ":monster_horse_type", "itm_camel"),
+                            (agent_play_sound,":horse","snd_neigh"),
+                        (try_end),
+                    (try_end),      
                 (try_end),
             (try_end),
 		(try_end),

@@ -220,7 +220,9 @@ imodbits_warg = imodbit_swaybacked | imodbit_lame | imodbit_heavy | imodbit_stub
 imodbits_good   = 0#imodbit_sturdy | imodbit_thick | imodbit_hardened | imodbit_reinforced
 imodbits_bad    = 0#imodbit_rusty | imodbit_chipped | imodbit_tattered | imodbit_ragged | imodbit_cracked | imodbit_bent
 #
-imodbits_cloth  =   imodbit_tattered | imodbit_ragged | imodbit_sturdy | imodbit_thick | imodbit_hardened
+imodbits_cloth  =   imodbit_cracked | imodbit_rusty | imodbit_ragged | imodbit_crude| imodbit_sturdy | imodbit_thick | imodbit_hardened
+imodbits_cloth_bad  =   imodbit_cracked | imodbit_rusty | imodbit_ragged | imodbit_crude
+imodbits_cloth_good  =  imodbit_sturdy | imodbit_thick | imodbit_hardened
 imodbits_orc_cloth  = imodbit_tattered | imodbit_ragged | imodbit_sturdy | imodbit_thick | imodbit_hardened
 imodbits_elf_cloth  = imodbit_sturdy | imodbit_thick | imodbit_hardened | imodbit_reinforced 
 #
@@ -1248,14 +1250,14 @@ items =[
 #
 #TLD NORTHMENMEN ITEMS##########
 ######ARMOR##########
-["woodman_tunic","Woodmen_Tunic",			[("woodman_tunic",0),("woodman_tunic_cloak",imodbit_cloak),("woodman_tunic_light",imodbits_armor_bad),("woodman_tunic_heavy",imodbits_armor_good),("woodman_tunic_heavy_cloak",imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,40,weight(4)|head_armor(0)|body_armor(7)|leg_armor(3)|difficulty(0),imodbits_armor|imodbit_lordly,],
-["woodman_scout","Woodmen_Scout_Cape",		[("woodman_scout",0),("woodman_scout_cloak",imodbit_cloak),("woodman_scout_light",imodbits_armor_bad),("woodman_scout_heavy",imodbits_armor_good),("woodman_scout_heavy_cloak",imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,600,weight(8)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_armor|imodbit_lordly,],
-["woodman_padded","Woodmen_Padded_Armor",	[("woodman_padded",0),("woodman_padded_cloak",imodbit_cloak),("woodman_padded_light",imodbits_armor_bad),("woodman_padded_heavy",imodbits_armor_good),("woodman_padded_heavy_cloak",imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,800,weight(12)|head_armor(0)|body_armor(20)|leg_armor(6)|difficulty(0),imodbits_armor|imodbit_lordly,],
-["beorn_tunic","Beorning_Tunic",			[("beorn_tunic",0),("beorn_tunic_light",imodbits_armor_bad),("beorn_tunic_heavy",imodbits_armor_good)],	itp_type_body_armor|itp_covers_legs|itp_shop,0,30,weight(2)|head_armor(0)|body_armor(7)|leg_armor(3)|difficulty(0),imodbits_armor|imodbit_lordly,],
-["beorn_padded","Beorning_Padded_Armor",	[("beorn_padded",0),("beorn_padded_light",imodbits_armor_bad),("beorn_padded_heavy",imodbits_armor_good)],	itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(10)|head_armor(0)|body_armor(12)|leg_armor(6)|difficulty(0),imodbits_armor|imodbit_lordly,],
-["beorn_heavy","Beorning_Heavy_Armor",		[("beorn_heavy",0),("beorn_heavy_light",imodbits_armor_bad),("beorn_heavy_heavy",imodbits_armor_good)],	itp_type_body_armor|itp_covers_legs|itp_shop,0,600,weight(13)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0),imodbits_armor|imodbit_lordly,],
-["beorn_berserk","Beorning_Berserker_Kit",	[("beorn_berserker",0),("beorn_berserker_light",imodbits_armor_bad),("beorn_berserker_heavy",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(2)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_armor|imodbit_lordly,[custom_female("itm_beorn_berserk")]],
-["beorn_chief","Beorning_Chieftan's_Tunic",[("beorn_chieftain",0)],itp_type_body_armor|itp_covers_legs,0,2300,weight(18)|abundance(100)|head_armor(1)|body_armor(33)|leg_armor(15)|difficulty(18),imodbits_armor|imodbit_lordly,],
+["woodman_tunic","Woodmen_Tunic",[("woodman_tunic",imodbit_plain),("woodman_tunic",0),("woodman_tunic_cloak",imodbit_cloak),("woodman_tunic_light",imodbits_cloth_bad),("woodman_tunic_heavy",imodbits_cloth_good),("woodman_tunic_heavy_cloak",imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,100,weight(2)|abundance(90)|head_armor(0)|body_armor(7)|leg_armor(3)|difficulty(0),imodbits_cloth|imodbit_lordly|imodbit_cloak,],
+["woodman_scout","Woodmen_Scout_Cape",[("woodman_scout",imodbit_plain),("woodman_scout",0),("woodman_scout_cloak",imodbit_cloak),("woodman_scout_light",imodbits_cloth_bad),("woodman_scout_heavy",imodbits_cloth_good),("woodman_scout_heavy_cloak",imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,400,weight(8)|abundance(91)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth|imodbit_lordly|imodbit_cloak,],
+["woodman_padded","Woodmen_Padded_Armor",[("woodman_padded",imodbit_plain),("woodman_padded",0),("woodman_padded_light",imodbits_cloth_bad),("woodman_padded_heavy",imodbits_cloth_good),("woodman_padded_heavy_cloak",imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,670,weight(12)|abundance(93)|head_armor(0)|body_armor(20)|leg_armor(6)|difficulty(0),imodbits_cloth|imodbit_lordly|imodbit_cloak,],
+["beorn_tunic","Beorning_Tunic",[("beorn_tunic",imodbit_plain),("beorn_tunic",0),("beorn_tunic_light",imodbits_cloth_bad),("beorn_tunic_heavy",imodbits_cloth_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,120,weight(4)|abundance(90)|head_armor(0)|body_armor(9)|leg_armor(2)|difficulty(0),imodbits_cloth|imodbit_lordly,],
+["beorn_padded","Beorning_Padded_Armor",[("beorn_padded",imodbit_plain),("beorn_padded",0),("beorn_padded_light",imodbits_cloth_bad),("beorn_padded_heavy",imodbits_cloth_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,480,weight(8)|abundance(92)|head_armor(0)|body_armor(16)|leg_armor(6)|difficulty(0),imodbits_cloth|imodbit_lordly,],
+["beorn_heavy","Beorning_Heavy_Armor",[("beorn_heavy",imodbit_plain),("beorn_heavy",0),("beorn_heavy_light",imodbits_armor_bad),("beorn_heavy_heavy",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,780,weight(13)|abundance(93)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_armor|imodbit_lordly,],
+["beorn_berserk","Beorning_Berserker_Kit",[("beorn_berserker",0),("beorn_berserker",imodbit_plain),("beorn_berserker_light",imodbits_armor_bad),("beorn_berserker_heavy",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,320,weight(2)|abundance(94)|head_armor(0)|body_armor(12)|leg_armor(6)|difficulty(15),imodbits_armor|imodbit_lordly,],
+["beorn_chief","Beorning_Chieftan's_Tunic",[("beorn_chieftain",0,),("beorn_chieftain",imodbit_plain,),("beorn_chieftain_light",imodbits_armor_bad,)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2300,weight(18)|abundance(100)|head_armor(1)|body_armor(33)|leg_armor(15)|difficulty(18),imodbits_armor|imodbit_lordly,],
 ######HELMS##########
 ["beorn_helmet","Bear_Skullcap",[("beorn_helmet",0),("beorn_helmet",imodbit_plain),("beorn_helmet_light",imodbits_armor_bad)],itp_type_head_armor|itp_shop,0,1000,weight(6)|abundance(94)|head_armor(32)|body_armor(0)|difficulty(15),imodbits_armor|imodbit_lordly | imodbit_cracked],
 #####SHIELDS##########
@@ -1573,7 +1575,6 @@ if wb_compile_switch==1:
 ["work_basket", "Basket", [("work_basket",0)], itp_type_one_handed_wpn|itp_primary | itp_attach_armature , itcf_carry_axe_back, 41 , weight(5)|difficulty(0)|weapon_length(53), 0],
 ["work_basket_2", "Basket", [("work_basket_2",0)], itp_type_one_handed_wpn|itp_primary | itp_attach_armature , itcf_carry_axe_back, 41 , weight(5)|difficulty(0)|weapon_length(53), 0],
 
-
 #non-ridable animals
 ["animal_spider",  "{!}Spider",   [("spider_black",0)], itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(3)|horse_maneuver(75)|horse_scale(4)|difficulty(10),imodbits_none,[]],
 ["animal_bear",    "{!}Bear",     [("bear_2",0)],       itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(130)|horse_speed(5)|horse_maneuver(48)|horse_scale(120)|difficulty(10),imodbits_none,[]],
@@ -1594,6 +1595,9 @@ if wb_compile_switch==1:
 ["marker_night_troop","Trait: Night Troop",[("icon_night_troop",0)],itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none],
 ["marker_berserker","Trait: Berserker",[("icon_berserker",0)],itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none],
 ["marker_hp_shield","Trait: Unyielding",[("icon_unyielding",0)],itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none],
+
+["marker_scares_wargs","Trait: Warg Fiend",[("icon_warg_fiend",0)],itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none],
+["marker_scares_horses","Trait: Horse Fiend",[("icon_horse_fiend",0)],itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none],
 ["marker_banner_troop","Trait: Banner",[("icon_night_troop",0)],itp_unique,0,0,weight(0)|abundance(0)|0,imodbits_none], #no fitting mesh yet
 
 ["pipeweed_reward","Pipe-weed",[("khazad_dwarf_tobacco_pouch",0)],itp_unique|itp_consumable,0,500,weight(0.2)|abundance(0)|max_ammo(4),imodbits_none],
