@@ -1895,7 +1895,13 @@ scripts = [
     (troop_set_slot, "trp_knight_1_1", slot_troop_home, "p_town_calembel"),
     (troop_set_slot, "trp_knight_1_4", slot_troop_lord_state, stls_passive),
     (troop_set_slot, "trp_knight_1_1", slot_troop_home, "p_town_pelargir"),
-    
+
+    #former "sitting kings"
+    (troop_set_slot, "trp_isengard_lord", slot_troop_lord_state, stls_passive),
+    (troop_set_slot, "trp_mordor_lord", slot_troop_lord_state, stls_passive),
+    (troop_set_slot, "trp_gondor_lord", slot_troop_lord_state, stls_passive),
+    (troop_set_slot, "trp_lorien_lord", slot_troop_lord_state, stls_passive),
+
     #individual death chances
     (troop_set_slot, "trp_knight_1_7", slot_troop_death_chance_modifier, 50),
     (troop_set_slot, "trp_knight_1_9", slot_troop_death_chance_modifier, 50),
@@ -26246,16 +26252,6 @@ command_cursor_scripts = [
     (try_end),
 
     (try_begin),
-        (lt, "$savegame_version", 4338),
-        (assign, "$savegame_version", 4338),
-        #formerly "sitting kings"
-        (troop_set_slot, "trp_isengard_lord", slot_troop_lord_state, stls_passive),
-        (troop_set_slot, "trp_mordor_lord", slot_troop_lord_state, stls_passive),
-        (troop_set_slot, "trp_gondor_lord", slot_troop_lord_state, stls_passive),
-        (troop_set_slot, "trp_lorien_lord", slot_troop_lord_state, stls_passive),
-    (try_end),
-
-    (try_begin),
         (lt, "$savegame_version", 4348),
         (assign, "$savegame_version", 4348),
         
@@ -26373,7 +26369,17 @@ command_cursor_scripts = [
             (assign, "$disable_skill_modifiers", 0),
         (try_end),
     (try_end),
-    
+
+    (try_begin),
+        (lt, "$savegame_version", 4400),
+        (assign, "$savegame_version", 4400),
+        #formerly "sitting kings"
+        (troop_set_slot, "trp_isengard_lord", slot_troop_lord_state, stls_passive),
+        (troop_set_slot, "trp_mordor_lord", slot_troop_lord_state, stls_passive),
+        (troop_set_slot, "trp_gondor_lord", slot_troop_lord_state, stls_passive),
+        (troop_set_slot, "trp_lorien_lord", slot_troop_lord_state, stls_passive),
+    (try_end),
+
     (call_script, "script_update_all_notes"),
     
     ] or []) + [ 
@@ -33028,6 +33034,7 @@ if is_a_wb_script==1:
         (assign, "$player_battlesize_changed",0),
         (options_set_battle_size, "$player_battlesize"),
     (try_end),
+    (assign, "$gate_aggravator_agent", 0), #helps with tracking sieges
      ]),
      
   #script_game_get_use_string #imported from native
