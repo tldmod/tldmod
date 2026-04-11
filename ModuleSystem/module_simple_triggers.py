@@ -116,15 +116,29 @@ simple_triggers = [
       (try_end),
   ]),
   
-  # (6) Music,
+  # (6) Music and piggybacks
   (1,[(map_free),(call_script, "script_music_set_situation_with_culture", mtf_sit_travel),
 
-# Piggyback for Horse Archer AI option
-  (try_begin),
-    (neq, "$options_horse_archer_ai", "$field_ai_horse_archer"),
-    (assign, "$field_ai_horse_archer", "$options_horse_archer_ai"), # Used to keep track of player choice.
-  (try_end),
+    # Piggyback for Horse Archer AI option
+    (try_begin),
+        (neq, "$options_horse_archer_ai", "$field_ai_horse_archer"),
+        (assign, "$field_ai_horse_archer", "$options_horse_archer_ai"), # Used to keep track of player choice.
+    (try_end),
 
+    ##Kham - Piggyback on trigger for Player Controlled allies
+    (try_begin),
+        (neq, "$player_control_allies",0),
+        (assign, "$player_control_allies",0),
+        (try_begin),
+          (eq, "$cheat_mode",1),
+          (display_message, "@{!}DEBUG: Player Control Allies RESET"),
+        (try_end),
+    (try_end),
+    
+    #InVain: reset battle size if changed for siege      
+      ] + (is_a_wb_trigger==1 and [
+        (call_script, "script_reset_battle_size"),
+      ] or []) + [   
     ]),
   
   # (7) Pay day, every four days here
@@ -262,7 +276,7 @@ simple_triggers = [
   ]),
   
   # (12) keep track of main party region ("$current_player_region"),
-  # and display log messages keey player informed of what region is he in,   (mtarini) // Reset battle size if changed for siege
+  # and display log messages keey player informed of what region is he in,   (mtarini)
   (0.5,[(call_script,"script_get_region_of_party", "p_main_party"),
       (assign, ":new_region", reg1),
       (neq, "$current_player_region", ":new_region"), # region change!
@@ -300,11 +314,7 @@ simple_triggers = [
         (try_end),
       (try_end),
       (assign, "$current_player_region", ":new_region"),
-      
-      
-      ] + (is_a_wb_trigger==1 and [
-        (call_script, "script_reset_battle_size"),
-      ] or []) + [      
+         
   ]),
   
   # (13) Party AI: pruning some of the prisoners in each center (once a week) - Kham: Changed from 72 to 46 hours
@@ -1304,15 +1314,6 @@ simple_triggers = [
         (try_end),
       (try_end),
 
-      ##Kham - Piggyback on trigger for Player Controlled allies
-      (try_begin),
-        (neq, "$player_control_allies",0),
-        (assign, "$player_control_allies",0),
-        (try_begin),
-          (eq, "$cheat_mode",1),
-          (display_message, "@{!}DEBUG: Player Control Allies RESET"),
-        (try_end),
-      (try_end),
   ]),
   
   # (34) Check active items for their deactivation hour
@@ -3728,13 +3729,43 @@ simple_triggers = [
       # (assign, "$gondor_reinforcement_event",1),
   ]),
   
-  # Ren - since this is unused I'm repurposing it for the auto-promotion of unrecruited companions
-  (12,[
+ # (65) handle unrecruited companions
+  (22,[ 
     (gt, "$tld_war_began", 0),
+    
+    #InVain slowly level up unrecruited companions
+    (store_character_level, ":player_level", "trp_player"),
+    (try_for_range, ":npc", companions_begin, new_companions_end),
+        (this_or_next|is_between, ":npc", companions_begin, companions_end),
+        (is_between, ":npc", new_companions_begin, new_companions_end),
+        (neg|troop_slot_eq, ":npc", slot_troop_occupation, slto_kingdom_hero),
+        (neg|main_party_has_troop,":npc"),
+        (neg|troop_slot_eq, ":npc", slot_troop_wound_mask, wound_death),
+        (store_character_level, ":npc_level", ":npc"),
+        (lt, ":npc_level", ":player_level"),
+        (val_mul, ":npc_level", ":player_level"),
+        (val_mul, ":npc_level", 2), #tweakable
+        (val_div, ":npc_level", 3), #tweakable
+        (add_xp_to_troop, ":npc_level", ":npc"),
+        # (str_store_troop_name, s15, ":npc"),
+        # (store_character_level, reg15, ":npc"),
+        # (neg|troop_slot_ge, ":npc",slot_troop_current_level, reg15),
+        # (troop_set_slot, ":npc", slot_troop_current_level, reg15),
+        # (display_message, "@{s15} levelled up to {reg15}"),
+    (try_end),
+    
+    #Ren - auto-promotion of unrecruited companions
     (try_for_range,":faction",kingdoms_begin,kingdoms_end),
 
         (faction_get_slot, ":faction_strength", ":faction", slot_faction_strength),
-        (le, ":faction_strength", fac_str_weak),
+        (store_relation, ":rel", ":faction", "$players_kingdom"),
+        (try_begin),
+            (lt, ":rel", 0),
+            (assign, ":threshold", fac_str_ok),
+        (else_try),
+            (assign, ":threshold", 2000), #ally faction need to be very weak before this happens
+        (try_end),
+        (le, ":faction_strength", ":threshold"),
 
         (assign, ":lord_killed", 0),
         (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
@@ -3745,6 +3776,9 @@ simple_triggers = [
             (assign, ":lord_killed", 1),
         (try_end),
         (eq, ":lord_killed", 1),
+        
+        (store_random_in_range, ":chance", 0, 6000),
+        (gt, ":chance", ":faction_strength"), #make it more likely when the faction is weaker
 
         # Faction is weak and has lost a lord. Now see if it has any qualified companions
         (try_for_range, ":lord_candidate", companions_begin, new_companions_end),
