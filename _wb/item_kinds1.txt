@@ -258,7 +258,7 @@ itemsfile version 2
  itm_free_olog_hands {!}Olog_Hai_Hands {!}Olog_Hai_Hands 1  olog_hand_L 0  137438957583 0 1 0 58 100 0 1 0 70 0 0 0 0 0 0 0
 0
 
- itm_warg_ghost_armour {!}HIDEME_armour {!}HIDEME_armour 1  gondor_tunic_b 0  139603218445 0 0 0 0 100 2 2 2 0 0 0 0 0 0 0 0
+ itm_warg_ghost_armour {!}HIDEME_armour {!}HIDEME_armour 1  dummy_mesh_skinned 0  139603218445 0 0 0 0 100 2 2 2 0 0 0 0 0 0 0 0
 0
 
  itm_warg_ghost_lance {!}HIDEME_lance {!}HIDEME_lance 1  dummy_mesh 0  2251937256853508 0 0 0 1 100 0 0 0 0 0 100 0 1 0 256 0
@@ -995,13 +995,13 @@ itemsfile version 2
  itm_orc_mittens Orc_Mittens Orc_Mittens 4  CWE_gauntlets_crysader_orc_L 1  CWE_gauntlets_crysader_orc_L 0  CWE_gauntlets_crysader_orc_leather_L 134  narf_plate_mittens_L 167772160  65551 0 500 167772294 3 90 0 4 0 0 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_light_a Isengard_Orc_Light_Harness Isengard_Orc_Light_Harness 4  orc_isen_light_1_b 1  orc_isen_light_1_b 0  orc_isen_light_1_a 134  orc_isen_light_1_c 167772160  16842765 0 401 123731968 4 90 0 7 2 0 0 0 0 0 0 0 0
+ itm_isen_orc_light_a Isengard_Orc_Light_Harness Isengard_Orc_Light_Harness 4  orc_isen_light_1_b 1  orc_isen_light_1_b 0  orc_isen_light_1_a 134  orc_isen_light_1_c 167772160  16842765 0 81 123731968 4 90 0 7 2 0 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_light_b Isengard_Orc_Light_Harness Isengard_Orc_Light_Harness 4  orc_isen_light_2_b 1  orc_isen_light_2_b 0  orc_isen_light_2_a 134  orc_isen_light_2_c 167772160  16842765 0 401 123731968 6 91 0 13 4 8 0 0 0 0 0 0 0
+ itm_isen_orc_light_b Isengard_Orc_Light_Harness Isengard_Orc_Light_Harness 4  orc_isen_light_2_b 1  orc_isen_light_2_b 0  orc_isen_light_2_a 134  orc_isen_light_2_c 167772160  16842765 0 201 123731968 6 91 0 13 4 8 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_pad_a Isengard_Orc_Light_Segmented_Armor Isengard_Orc_Light_Segmented_Armor 4  orc_isen_pad_1_b 1  orc_isen_pad_1_b 0  orc_isen_pad_1_a 134  orc_isen_pad_1_c 167772160  16842765 0 501 174063750 19 92 0 15 5 12 0 0 0 0 0 0 0
+ itm_isen_orc_pad_a Isengard_Orc_Light_Segmented_Armor Isengard_Orc_Light_Segmented_Armor 4  orc_isen_pad_1_b 1  orc_isen_pad_1_b 0  orc_isen_pad_1_a 134  orc_isen_pad_1_c 167772160  16842765 0 401 174063750 19 92 0 15 5 12 0 0 0 0 0 0 0
 0
 
  itm_isen_orc_pad_b Isengard_Orc_Medium_Segmented_Armor Isengard_Orc_Medium_Segmented_Armor 4  orc_isen_pad_2_b 1  orc_isen_pad_2_b 0  orc_isen_pad_2_a 134  orc_isen_pad_2_c 167772160  16842765 0 601 174063750 25 93 0 17 9 14 0 0 0 0 0 0 0
@@ -1010,7 +1010,7 @@ itemsfile version 2
  itm_isen_orc_mail_a Isengard_Orc_Mail Isengard_Orc_Mail 4  orc_isen_mail_b 1  orc_isen_mail_b 0  orc_isen_mail_a 134  orc_isen_mail_c 167772160  16842765 0 701 174063750 30 94 0 18 9 14 0 0 0 0 0 0 0
 0
 
- itm_isen_orc_mail_b Isengard_Orc_Heavy_Segmented_Armor Isengard_Orc_Heavy_Segmented_Armor 4  orc_isen_heavy_b 1  orc_isen_heavy_b 0  orc_isen_heavy_a 134  orc_isen_heavy_c 167772160  16842765 0 801 174063750 36 95 0 22 9 18 0 0 0 0 0 0 0
+ itm_isen_orc_mail_b Isengard_Orc_Heavy_Segmented_Armor Isengard_Orc_Heavy_Segmented_Armor 4  orc_isen_heavy_b 1  orc_isen_heavy_b 0  orc_isen_heavy_a 134  orc_isen_heavy_c 167772160  16842765 0 901 174063750 36 95 0 22 9 18 0 0 0 0 0 0 0
 0
 
  itm_isen_uruk_light_a Uruk-hai_Light_Harness Uruk-hai_Light_Harness 4  urukhai_isen_light_harness_b 1  urukhai_isen_light_harness_b 0  urukhai_isen_light_harness_a 134  urukhai_isen_light_harness_c 167772160  16842765 0 52 174063750 4 90 0 8 3 0 0 0 0 0 0 0 0
@@ -2221,22 +2221,22 @@ itemsfile version 2
  itm_free_umb_armor_g {!}Corsair_Hauberk_Pauldrons {!}Corsair_Hauberk_Pauldrons 1  corsair_mail_1 0  16842765 0 2000 704643206 22 100 0 25 7 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_a Corsair_Leather_Vest Corsair_Leather_Vest 4  corsair_light_leather_1 0  corsair_light_leather_0 134  corsair_light_leather_2 167772160  corsair_light_leather_1b 268435456  16842765 0 260 973078662 4 100 0 10 4 0 0 0 0 0 0 0 0
+ itm_umb_armor_a Corsair_Leather_Vest Corsair_Leather_Vest 6  corsair_light_leather_1 1  corsair_light_leather_1 0  corsair_light_leather_0 134  corsair_light_leather_2 167772160  corsair_light_leather_1b 268435456  corsair_light_leather_cape_pauldron 536870912  16842765 0 50 973078662 4 90 0 10 4 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_b Corsair_Leather_Armor Corsair_Leather_Armor 4  corsair_leather_pad_1 0  corsair_leather_pad_0 134  corsair_leather_pad_2 167772160  corsair_leather_pad_1b 268435456  16842765 0 400 973078662 8 100 0 12 5 0 0 0 0 0 0 0 0
+ itm_umb_armor_b Corsair_Leather_Armor Corsair_Leather_Armor 5  corsair_leather_pad_1 1  corsair_leather_pad_1 0  corsair_leather_pad_0 134  corsair_leather_pad_2 167772160  corsair_leather_pad_1b 268435456  16842765 0 200 973078662 8 90 0 14 5 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_c Corsair_Light_Scale Corsair_Light_Scale 5  corsair_light_scale_1 1  corsair_light_scale_1 0  corsair_light_scale_0 134  corsair_light_scale_2 167772160  corsair_light_scale_1b 268435456  16842765 0 400 973078662 12 91 0 15 4 9 0 0 0 0 0 0 0
+ itm_umb_armor_c Corsair_Light_Scale Corsair_Light_Scale 6  corsair_light_scale_1 1  corsair_light_scale_1 0  corsair_light_scale_0 134  corsair_light_scale_2 167772160  corsair_light_scale_1b 268435456  corsair_light_leather_cape_pauldron 536870912  16842765 0 480 973078662 12 91 0 18 4 9 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_d Corsair_Scale Corsair_Scale 5  corsair_scale_pad_1 1  corsair_scale_pad_1 0  corsair_scale_pad_0 134  corsair_scale_pad_3 167772160  corsair_scale_pad_cape_pauldron 268435456  16842765 0 400 973078662 14 92 0 16 5 12 0 0 0 0 0 0 0
+ itm_umb_armor_d Corsair_Scale Corsair_Scale 5  corsair_scale_pad_1 1  corsair_scale_pad_1 0  corsair_scale_pad_0 134  corsair_scale_pad_3 167772160  corsair_scale_pad_cape_pauldron 268435456  16842765 0 700 973078662 14 92 0 22 5 9 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_e Corsair_Hauberk Corsair_Hauberk 5  corsair_mail_1 1  corsair_mail_1 0  corsair_mail_0 134  corsair_mail_3 167772160  corsair_mail_1b 268435456  16842765 0 900 973078662 20 93 0 23 7 9 0 0 0 0 0 0 0
+ itm_umb_armor_e Corsair_Hauberk Corsair_Hauberk 5  corsair_mail_1 1  corsair_mail_1 0  corsair_mail_0 134  corsair_mail_3 167772160  corsair_mail_1b 268435456  16842765 0 900 973078662 20 93 0 26 7 11 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_f Corsair_Noble_Armour Corsair_Noble_Armour 5  corsair_heavy_1 1  corsair_heavy_1 0  corsair_heavy_0 134  corsair_heavy_2 167772160  corsair_heavy_3 268435456  16842765 0 1100 973078662 24 94 1 25 8 10 0 0 0 0 0 0 0
+ itm_umb_armor_f Corsair_Noble_Armour Corsair_Noble_Armour 6  corsair_heavy_1 1  corsair_heavy_1 0  corsair_heavy_0 134  corsair_heavy_2 167772160  corsair_heavy_cape 268435456  corsair_heavy_3 536870912  16842765 0 1400 973078662 24 94 1 30 8 12 0 0 0 0 0 0 0
 0
 
  itm_umb_helm_a Corsair_Shell_Helm Corsair_Shell_Helm 3  shell_helmet 1  shell_helmet 0  shell_helmet_b 167772160  65548 0 1200 704643072 4 96 35 0 0 16 0 0 0 0 0 0 0
@@ -2263,16 +2263,16 @@ itemsfile version 2
  itm_corsair_boots Corsair_Boots Corsair_Boots 1  corsair_boots 0  536940302 0 400 121634950 1 90 0 0 14 0 0 0 0 0 0 0 0
 0
 
- itm_umb_shield_a Corsair_Shield Corsair_Shield 4  corsair_buckler_long_a 0  corsair_buckler_long_a_carry 3458764513820540928  corsair_buckler_long_b 167772160  corsair_buckler_long_b_carry 3458764513988313088  327687 5100273664 300 251658402 2 92 0 16 0 1 240 92 0 35 0 0 0
+ itm_umb_shield_a Corsair_Shell_Shield Corsair_Shell_Shield 4  corsair_buckler_long_a 0  corsair_buckler_long_a_carry 3458764513820540928  corsair_buckler_long_b 167772160  corsair_buckler_long_b_carry 3458764513988313088  327687 5100273664 300 251658402 2 92 0 16 0 1 240 92 0 35 0 0 0
 0
 
- itm_umb_shield_b Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_a 0  corsair_buckler_round_a_carry 3458764513820540928  327687 5368709120 200 251658402 1 90 0 18 0 0 240 100 0 20 0 0 0
+ itm_umb_shield_b Corsair_Buckler Corsair_Buckler 7  corsair_buckler_round_b 0  corsair_buckler_round_b 1  corsair_buckler_round_b 3458764513820540928  corsair_buckler_round_a 134  corsair_buckler_round_a_carry 3458764513820541062  corsair_buckler_round_c 167772160  corsair_buckler_round_c_carry 3458764513988313088  327687 5368709120 200 251658402 1 90 0 18 0 0 240 100 0 20 0 0 0
 0
 
- itm_umb_shield_c Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_b 0  corsair_buckler_round_b_carry 3458764513820540928  327687 5368709120 200 251658402 1 90 0 18 0 0 240 100 0 20 0 0 0
+ itm_umb_shield_c Corsair_Round_Shield Corsair_Round_Shield 1  JFire_MBMC_nobleman_round_shield 0  327687 5100273664 200 251658402 2 95 0 20 0 2 280 94 0 30 0 0 0
 0
 
- itm_umb_shield_d Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_c 0  corsair_buckler_round_c_carry 3458764513820540928  327687 5368709120 200 251658402 1 90 0 18 0 0 240 100 0 20 0 0 0
+ itm_free_umb_shield_d {!}Corsair_Buckler {!}Corsair_Buckler 2  corsair_buckler_round_c 0  corsair_buckler_round_c_carry 3458764513820540928  327687 5368709120 200 251658402 1 90 0 20 0 0 280 100 0 20 0 0 0
 0
 
  itm_umbar_spear Umbar_Short_Spear Umbar_Short_Spear 1  corsair_spear 0  2251799818240004 9254615759470988544 200 271496 2 90 0 0 0 0 19456 102 0 132 0 282 531

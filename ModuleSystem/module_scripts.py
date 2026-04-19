@@ -2267,7 +2267,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 4391),  #Rafa: Savegame version; InVain: Changed to _roughly_ show the rev number, helps with savegame inspection
+    (assign,"$savegame_version", 4400),  #Rafa: Savegame version; InVain: Changed to _roughly_ show the rev number, helps with savegame inspection
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -28563,6 +28563,10 @@ command_cursor_scripts = [
             (troop_set_slot, "trp_knight_5_11", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
             (troop_set_slot, "trp_knight_5_12", slot_troop_retainer_troop, "trp_i6_dun_retainer"), #retainers for Dunland lords
             (troop_set_slot, "trp_npc20", slot_troop_retainer_troop, "trp_werewolf"), #werewolves for Ziggy!
+            (troop_set_slot, "trp_umbar_lord", slot_troop_retainer_troop, "trp_i6_corsair_guard"), #umbar guard
+            (troop_set_slot, "trp_knight_3_1", slot_troop_retainer_troop, "trp_i6_corsair_guard"), #umbar guard
+            (troop_set_slot, "trp_knight_3_2", slot_troop_retainer_troop, "trp_i6_corsair_guard"), #umbar guard
+            (troop_set_slot, "trp_knight_3_3", slot_troop_retainer_troop, "trp_i6_corsair_guard"), #umbar guard
         ]),
     #Retainers End
 

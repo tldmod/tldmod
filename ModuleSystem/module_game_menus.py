@@ -944,7 +944,7 @@ game_menus = [
 		(set_visitors, 25, "trp_i3_corsair_swordsman",				4),
 		(set_visitors, 26, "trp_i4_corsair_veteran_swordsman",		4),
 		(set_visitors, 27, "trp_i5_corsair_master_swordsman",		4),
-		(set_visitors, 28, "trp_a4_corsair_assassin",				4),
+		(set_visitors, 28, "trp_a4_corsair_veteran_marksman",				4),
 		(str_store_string, s16, "str_custom_battle_7"),
  ]+concatenate_scripts([[
 	(else_try),
