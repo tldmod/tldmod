@@ -1680,7 +1680,7 @@ itemsfile version 2
  itm_mirkwood_scale Greenwood_Light_Scale Greenwood_Light_Scale 3  mirkwood_light_scale 0  mirkwood_scalequilted_01 134  mirkwood_scalequilted_01b 704643072  16842765 0 1400 704643206 12 93 0 26 12 11 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_heavy_scale Greenwood_Leafscale Greenwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16842765 0 2500 704643206 23 96 0 38 12 15 0 0 0 0 0 0 0
+ itm_mirkwood_heavy_scale Greenwood_Leafscale Greenwood_Leafscale 2  mirkwood_scaleovermaille_01b 0  mirkwood_scaleovermaille_cloak 268435456  16842765 0 2500 973078662 23 96 0 38 12 15 0 0 0 0 0 0 0
 0
 
  itm_free_mirkwood_armor_e {!}Light_Mail_and_Surcoat {!}Light_Mail_and_Surcoat 1  mirkwood_maillewithsurcoat_01 0  16842765 0 2500 704643206 17 100 0 25 14 0 0 0 0 0 0 0 0
@@ -2570,7 +2570,7 @@ itemsfile version 2
  itm_map Maps_of_Middle_Earth Maps_of_Middle_Earth 1  middle_earth_map 0  11 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_athelas_reward Dried_Athelas_Leaves Dried_Athelas_Leaves 1  athelas_plant 0  33554443 0 1000 0 0 100 0 0 0 0 0 0 0 0 3 0 0
+ itm_athelas_reward Healing_Herbs Healing_Herbs 1  athelas_plant 0  33554443 0 1000 0 0 100 0 0 0 0 0 0 0 0 3 0 0
 0
 
  itm_phial_reward Light_of_Galadriel Light_of_Galadriel 1  galadriel_light 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0

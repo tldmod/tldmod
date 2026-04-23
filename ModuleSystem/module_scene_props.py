@@ -1817,6 +1817,7 @@ scene_props = [
     (agent_set_no_dynamics, ":gate_aggravator",1),
     (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, ":gate_aggravator"),
+    (agent_set_visibility, ":gate_aggravator", 0),
 ] or []) + [
     #(team_give_order, 7, grc_everyone, mordr_stand_ground),
   ]),
@@ -1910,6 +1911,7 @@ scene_props = [
     (agent_set_no_dynamics, ":gate_aggravator",1),
     (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
     (scene_prop_set_slot, ":gate_no", slot_prop_agent_1, ":gate_aggravator"),
+    (agent_set_visibility, ":gate_aggravator", 0),
 ] or []) + [
     #(team_give_order, 7, grc_everyone, mordr_stand_ground),
   ]),
@@ -3272,6 +3274,7 @@ scene_props = [
     (agent_set_no_dynamics, ":gate_aggravator",1),
     (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
     (scene_prop_set_slot, ":gate_no", slot_prop_agent_1, ":gate_aggravator"),
+    (agent_set_visibility, ":gate_aggravator", 0),
     ] or []) + [
     #(team_give_order, 7, grc_everyone, mordr_stand_ground),
   ]),
@@ -4234,6 +4237,7 @@ scene_props = [
     (agent_set_no_dynamics, ":gate_aggravator",1),
     (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, ":gate_aggravator"),
+    (agent_set_visibility, ":gate_aggravator", 0),
 ] or []) + [
   ]),
    
@@ -4319,6 +4323,7 @@ scene_props = [
     (agent_set_no_dynamics, ":gate_aggravator",1),
     (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
     (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, ":gate_aggravator"),
+    (agent_set_visibility, ":gate_aggravator", 0),
 ] or []) + [
   ]),
    

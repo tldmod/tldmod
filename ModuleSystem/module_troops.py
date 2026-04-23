@@ -865,7 +865,8 @@ itm_mirkwood_mail_good = (itm_mirkwood_mail, imod_reinforced)
 itm_mirkwood_scale_bad = (itm_mirkwood_scale, imod_cracked)
 itm_mirkwood_scale_good = (itm_mirkwood_scale, imod_reinforced)
 itm_mirkwood_heavy_scale_bad = (itm_mirkwood_heavy_scale, imod_cracked)
-itm_mirkwood_heavy_scale_good = (itm_mirkwood_heavy_scale, imod_reinforced)
+itm_mirkwood_heavy_scale_good = (itm_mirkwood_heavy_scale, imod_lordly)
+itm_mirkwood_heavy_scale_cloak = (itm_mirkwood_heavy_scale, imod_cloak)
 itm_woodelf_leather_boots_good = 	(itm_woodelf_leather_boots, imod_thick)
 
 #Rivendell armours
@@ -3283,7 +3284,7 @@ str_127|agi_7|int_4|cha_4|level(35),0,knows_riding_10|knows_ironflesh_10|knows_p
       # def_attrib|level(22),wp(135),knows_pathfinding_1|knows_horse_archery_3|knows_riding_4|knows_power_throw_3|knows_power_strike_4|knows_ironflesh_4,orc_face3,orc_face8],
 #spawned via scene prop
 ["gate_aggravator","Gate_Defence","{!}", tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
-   [itm_warg_ghost_armour,itm_empty_hands,itm_empty_legs,itm_empty_head],
+   [itm_rohan_armor_th,itm_empty_hands,itm_empty_legs,itm_empty_head],
       str_255|level(80),wp(5),knows_shield_10|knows_ironflesh_10,0,0],
 #spawned from menu, used for pretender fight
 ["orc_pretender","Orc_Pretender","{!}",tf_orc| tfg_shield| tfg_armor| tfg_helm| tf_no_capture_alive,0,0,fac_neutral,

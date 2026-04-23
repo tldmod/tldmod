@@ -14805,7 +14805,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
         (str_store_string, s1, "@I look forward to fighting alongside you."),
     (try_end),    
 ],
-"{!}{s1}", "close_window",[]],
+"{!}{s1}", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone ,"kingdom_companion_start", [
     (troop_get_slot, ":lord", "$g_talk_troop", slot_troop_lord),
@@ -14906,6 +14906,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (display_message, "@{s9} joined your party"),
 
     (troop_set_slot, "$g_talk_troop", slot_troop_quest_help_offer, stqho_accepted),
+    (call_script,"script_stand_back"),
 ]],
 
 [anyone|plyr ,"kingdom_companion_help_offer", [
@@ -14920,8 +14921,9 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (else_try),
         (str_store_string, s6, "@I fear I have no room for anyone else in my party."),
     (try_end),   
-], "{!}{s6}", "close_window", 
-[(troop_set_slot, "$g_talk_troop", slot_troop_quest_help_offer, stqho_party_full)]],
+], "{!}{s6}", "close_window", [
+    (troop_set_slot, "$g_talk_troop", slot_troop_quest_help_offer, stqho_party_full),
+    (call_script,"script_stand_back"),]],
 
 [anyone|plyr ,"kingdom_companion_help_offer", [
     (try_begin),
@@ -14933,11 +14935,12 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (else_try),
         (str_store_string, s6, "@Thank you, but your assistance is not required."),
     (try_end),   
-], "{!}{s6}", "close_window", 
-[(troop_set_slot, "$g_talk_troop", slot_troop_quest_help_offer, stqho_declined)]],
+], "{!}{s6}", "close_window", [
+    (troop_set_slot, "$g_talk_troop", slot_troop_quest_help_offer, stqho_declined),
+    (call_script,"script_stand_back"),]],
 
 [anyone ,"kingdom_companion_start", [],
-"If you have business with our company you should speak with my {s5}, {s3}.", "close_window", []],
+"If you have business with our company you should speak with my {s5}, {s3}.", "close_window", [(call_script,"script_stand_back"),]],
 
 # Lord's companion is ready to leave player since the lord's quest is finished
 
@@ -14988,6 +14991,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (troop_get_slot, ":lord_party", ":lord", slot_troop_leaded_party),
     (gt, ":lord_party", 0),
     (party_add_members, ":lord_party", "$g_talk_troop", 1),
+    (call_script,"script_stand_back"), #just in case
 ]],
 
 [anyone|plyr,"party_encounter_hostile_defender", [], "Nothing. We'll leave you in peace.", "close_window", [(call_script,"script_stand_back"),(assign, "$g_leave_encounter",1)]],

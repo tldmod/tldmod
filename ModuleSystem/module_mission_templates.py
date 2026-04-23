@@ -4627,6 +4627,7 @@ mission_templates = [ # not used in game
                 (agent_set_no_dynamics, ":gate_aggravator",1),
                 (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
                 (agent_set_position, ":gate_aggravator", pos1),
+                (agent_set_visibility, ":agent", 0),
                  
                 #find dependent barriers, move them into place
                 (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
@@ -5739,7 +5740,15 @@ mission_templates = [ # not used in game
     [(0,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
      ],
     tld_common_wb_muddy_water+[
-	(ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
+	(ti_tab_pressed, 0, 0, [],[(finish_mission,0),]),
+    (ti_before_mission_start, 0, 0, [], [
+        (team_set_relation, 0, 1, 1),
+        (team_set_relation, 0, 2, 1),
+        (team_set_relation, 0, 3, 1),
+        (team_set_relation, 0, 4, 1),
+        (team_set_relation, 0, 5, 1),
+        (team_set_relation, 0, 6, 1),
+    ]),
 ]),
 ("legendary_place_visit",0,-1,
  "You visit a legendary place.",

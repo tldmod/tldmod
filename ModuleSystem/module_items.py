@@ -997,7 +997,7 @@ items =[
 ["mirkwood_pad","Greenwood_Quilted_Coat",[("mirkwood_quiltedsurcoat_01",0),("mirkwood_quiltedsurcoat_01",imodbits_armor_bad),("mirkwood_quiltedsurcoat_01_b",imodbits_armor_good|imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,800,weight(6)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_armor|imodbit_lordly,],
 ["mirkwood_mail","Greenwood_Mail",[("mirkwood_maillewithsurcoat_01_b",0),("mirkwood_maillewithsurcoat_01",imodbits_armor_bad),("mirkwood_royal",imodbits_armor_good|imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1800,weight(17)|abundance(94)|head_armor(0)|body_armor(29)|leg_armor(14)|difficulty(12),imodbits_armor|imodbit_lordly,],
 ["mirkwood_scale","Greenwood_Light_Scale",[("mirkwood_light_scale",0),("mirkwood_scalequilted_01",imodbits_armor_bad),("mirkwood_scalequilted_01b",imodbits_armor_good|imodbit_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1400,weight(12)|abundance(93)|head_armor(0)|body_armor(26)|leg_armor(12)|difficulty(11),imodbits_armor|imodbit_lordly,],
-["mirkwood_heavy_scale","Greenwood_Leafscale",[("mirkwood_scaleovermaille_01",0),],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(23)|abundance(96)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(15),imodbits_armor|imodbit_lordly,],
+["mirkwood_heavy_scale","Greenwood_Leafscale",[("mirkwood_scaleovermaille_01b",0),("mirkwood_scaleovermaille_cloak",imodbit_cloak),],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(23)|abundance(96)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(15),imodbits_armor|imodbit_lordly|imodbit_cloak,],
 #next two free Jan 2020
 ["free_mirkwood_armor_e","{!}Light_Mail_and_Surcoat",[("mirkwood_maillewithsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(17)|head_armor(0)|body_armor(25)|leg_armor(14)|difficulty(0),imodbits_armor|imodbit_lordly,],
 #WEAPONS##########
@@ -1371,7 +1371,7 @@ items =[
 # magic items begin
 ["ent_water","Strange_Bowl_of_Water",[("ent_water",0)],itp_unique|itp_type_goods,0,200,weight(2)|abundance(0)|0,imodbits_none],
 ["map","Maps_of_Middle_Earth",[("middle_earth_map",0)],itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
-["athelas_reward","Dried_Athelas_Leaves",[("athelas_plant",0)],itp_type_goods|itp_consumable,0,1000,weight(0.2)|abundance(0)|max_ammo(3),imodbits_none],
+["athelas_reward","Healing Herbs",[("athelas_plant",0)],itp_type_goods|itp_consumable,0,1000,weight(0.2)|abundance(0)|max_ammo(3),imodbits_none],
 ["phial_reward","Light_of_Galadriel",[("galadriel_light",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["scroll_reward","On_the_Fall_of_Gondolin",[("quenya_scroll",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["hammer_reward","Smith's_Hammer",[("smith_hammer",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
