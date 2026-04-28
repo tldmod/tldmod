@@ -1,4 +1,4 @@
-; qstr_Received_{reg0}_dama|Received {reg0} damage.
+qstr_Received_{reg0}_dama|تلقى {reg0} ضررًا.
 qstr_Gate_is_breached!|البوابة محطمة!
 qstr_Gate_opens..._You_ha|البوابة تفتح... لقد وصلت إلى أقدس مكان في الأرض الوسطى!
 qstr_Secret_place_discove|تم اكتشاف مكان سري!
@@ -192,9 +192,9 @@ qstr_Superior_orders_from|أوامر عليا من {s11} لإعادة توزيع
 qstr_{reg12}_{s10}_left_t|غادر {reg12} من {s10} المجموعة!
 qstr_Fangorn_claimed_{reg|ادعى فانغورن مقتل {reg0} وجرح {reg1} من قواتك!
 qstr_You_were_wounded_in_|لقد أصبت في فانغورن!
-; qstr_Grimbold|Grimbold
-; qstr_Theodred|Theodred
-; qstr_Gamling|Gamling
+qstr_Grimbold|غاملينغ
+qstr_Theodred|غريمبولد
+qstr_Gamling|ثاين هورنبرغ
 qstr_{s1}_of_{s3}_was_def|{s1} من {s3} هُزم في المعركة.
 qstr_{s2}_have_razed_{s1}|{s2} دمروا {s1}!
 ; qstr_{s1}_Scouts|{s1} Scouts
@@ -614,7 +614,7 @@ qstr_There_is_much_to_reg|هناك الكثير لنأسف عليه ونحزن،
 ; qstr_Do_you_want_me_to_he|Do you want me to help King Theoden defend {s3}, or hasten to Isengard and see what I can do?
 ; qstr_Either_would_be_a_gr|Either would be a great boon to me. You must decide your course on your own, {playername}, as shall I. Shadowfax shall bear me now on a swift errand. You must act quickly as well! Hasten now!
 ; qstr_Gandalf_asked_you_to|Gandalf asked you to either help Theoden defend {s3} or find out what is happening in Isengard.
-; qstr_Ents|Ents
+qstr_Ents|إنت
 ; qstr_Hail_{playername}!_I|Hail, {playername}! I hope you are unhurt? At any rate, I am pleased you aided my friend Fangorn, or you may know him as Treebeard. The tree shepherds are very mighty, but it was likely that they marched to their doom. You have perhaps saved them from a great peril, Commander, and for that I am glad. I would not like to see the oldest of all living things pass from the world, no, not just yet… no, not before they see the Entwives again, I should hope.
 ; qstr_I_did_what_I_could.|I did what I could.
 ; qstr_Well_thank_you_{play|Well, thank you, {playername}, and farewell. We may meet again, ere the waning of the moon!
@@ -725,7 +725,7 @@ qstr_A_poisonous_fog_from|ضباب سام من دول غولدور يخيم عل
 ; qstr_The_defenses_lie_in_t|The defenses lie in the shadow of steep cliffs, blocking out the sunlight.
 ; qstr_The_fortress_is_shro|The fortress is shrouded in darkness.
 ; qstr_{s1}_{s0}|{s1}, {s0}
-; qstr_{s1}_and_{s0}|{s1} and {s0}
+qstr_{s1}_and_{s0}|{s1} و {s0}
 qstr_No_Troops_Left.|لا توجد قوات متبقية.
 qstr_avoid_melee|تجنب الاشتباك المباشر
 qstr_stand_and_fight|قف وقاتل
@@ -872,13 +872,13 @@ qstr_Division_{reg1}_{s2}_fo|الفرقة {reg1} {s2} تشكل {reg0} خطوط (
 ; qstr_It_is_night._In_the_|It is night. In the darkness, you have to move and fight more carefully.
 ; qstr_Rough_terrain:_Heavy|Rough terrain: Heavy troops are at a disadvantage.
 qstr_A_golden_mist_from_Lr|ضباب ذهبي من لورين يغطي ساحة المعركة. الساحرة قريبة، ترسل الرعشات في عمودك الفقري أنت وقواتك.
-; qstr_A_golden_mist_from_Lri|A golden mist from Lórien covers the battlefield. The witch is near, sending shivers down you and your troops' spine.
+qstr_A_golden_mist_from_Lri|ضباب ذهبي من لورين يغطي ساحة المعركة. الساحرة قريبة، ترسل الرعشات في عمودك الفقري أنت وقواتك.
 qstr_Dark_clouds_from_Mord|غيوم مظلمة من موردور تغطي ساحة المعركة. وجود الظلام يقويك أنت ورجالك.
-; qstr_Dark_clouds_from_Mordo|Dark clouds from Mordor cover the battlefield. The Dark Lord's presence strengthens you and your men.
+qstr_Dark_clouds_from_Mordo|غيوم مظلمة من موردور تغطي ساحة المعركة. وجود الظلام يقويك أنت ورجالك.
 qstr_A_thunderstorm_from_t|عاصفة رعدية من الجبال الضبابية تشتعل في ساحة المعركة. الرماة يجدون صعوبة في هذا الطقس.
-; qstr_A_thunderstorm_from_th|A thunderstorm from the Misty Mountains rages over the battlefield. Archers have difficulty in this weather.
+qstr_A_thunderstorm_from_th|عاصفة رعدية من الجبال الضبابية تشتعل في ساحة المعركة. الرماة يجدون صعوبة في هذا الطقس.
 qstr_A_poisonous_fog_from_|ضباب سام من دول غولدور يخيم على ساحة المعركة. أنت لا تشعر بأي اختلاف، لكنك تسمع أعداءك يعانون وتستطيع شم رائحة خوفهم.
-; qstr_A_poisonous_fog_from_D|A poisonous fog from Dol Guldur lingers on the battlefield. You do not feel any different, but you hear your enemies suffer and you can smell their fear.
+qstr_A_poisonous_fog_from_D|ضباب سام من دول غولدور يخيم على ساحة المعركة. أنت لا تشعر بأي اختلاف، لكنك تسمع أعداءك يعانون وتستطيع شم رائحة خوفهم.
 qstr_Some_of_your_human_t|بعض قواتك البشرية لا تثنيها الظلمة.(قوات الليل لا تتأثر بعقوبات الليل)
 qstr_You_are_filled_with_|أنت ممتلئ بغضب عادل عندما تضع عينيك على العدو (البرزيركر نشط).
 qstr_Your_mount_is_scared|دابتك خائفة من {reg73?الإنت:القزم}!
@@ -1162,8 +1162,8 @@ qstr_{s13}_ordered_you_to|{s13} أمرك بالانضمام إلى حصار {s14
 ; qstr_the_Secret_Cave|the Secret Cave
 ; qstr_Meduseld_the_Golden_|Meduseld, the Golden Hall
 ; qstr_the_Lord_Halls|the Lord Halls
-; qstr_the_Leader_s_Cave|the Leader's Cave
-; qstr_the_Tower|the Tower
+qstr_the_Leader_s_Cave|كهف القائد
+qstr_the_Tower|البرج
 ; qstr_the_tower_of_Orthanc|the tower of Orthanc
 ; qstr_Beorn_s_Hall|Beorn's Hall
 ; qstr_the_Hall|the Hall
@@ -1183,8 +1183,8 @@ qstr_{s13}_ordered_you_to|{s13} أمرك بالانضمام إلى حصار {s14
 ; qstr_Forces_of_Mordor|Forces of Mordor
 ; qstr_Forces_of_Isengard|Forces of Isengard
 ; qstr_their_enemies|their enemies
-; qstr_{s11}_and_{s13}|{s11} and {s13}
-; qstr_{s11}_{s13}|{s11}, {s13}
+qstr_{s11}_and_{s13}|{s11} و {s13}
+qstr_{s11}_{s13}|{s11}، {s13}
 ; qstr_a_scout_party_from_{|a scout party from {s3}
 ; qstr_two_scout_parties_an|two scout parties and a forager party from {s3}
 ; qstr_two_scout_parties_and|two scout parties and a raider party from {s3}
@@ -1317,7 +1317,7 @@ qstr_{s13}_ordered_you_to|{s13} أمرك بالانضمام إلى حصار {s14
 ; qstr_Raider_Parties_Kille|Raider Parties Killed: {reg12}
 ; qstr_One_of_the_target_ce|One of the target centers by the refugee trains have been destroyed. The refugees have scattered, and are nowhere to be found.
 ; qstr_As_an_Orc_or_a_Dwarf|As an Orc or a Dwarf, you can take advantage of the Custom Camera we have implemented in order to improve your experience with TLD's shorter races. See Game Concepts for more information about how to use this.
-; qstr_Custom_Camera|Custom Camera
+qstr_Custom_Camera|كاميرا مخصصة
 ; qstr_{reg65?my_Lady:my_Lo|{reg65?my Lady:my Lord}
 ; qstr_{reg65?My_Lady:My_Lo|{reg65?My Lady:My Lord}
 ; qstr_{reg65?mistress:mast|{reg65?mistress:master}
@@ -1357,14 +1357,14 @@ qstr_{s13}_ordered_you_to|{s13} أمرك بالانضمام إلى حصار {s14
 ; qstr_Why_did_you_make_mod|Why did you make mod installation so complex?
 ; qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've RTFM successfully after all
 ; qstr_You_just_got_windyfl|You just got windyflorated!
-; qstr_Merry|Merry
-; qstr_Pippin|Pippin
+qstr_Merry|ميري
+qstr_Pippin|بيبين
 ; qstr_the_Citadel|the Citadel
-; qstr_Minas_Tirith|Minas Tirith
-; qstr_Steward_Denethor|Steward Denethor
+qstr_Minas_Tirith|Minas Tirith
+qstr_Steward_Denethor|المضيف دينيثور
 ; qstr_the_Golden_Hall|the Golden Hall
-; qstr_Edoras|Edoras
-; qstr_King_Theoden|King Theoden
+qstr_Edoras|Edoras
+qstr_King_Theoden|الملك ثيودن
 ; qstr_Merry_asked_you_to_d|Merry asked you to deliver a message to his cousin, Pippin, in Minas Tirith.
 ; qstr_Pippin_asked_you_to_|Pippin asked you to deliver a message to his cousin, Merry, in Edoras.
 ; qstr_Tell_him_I_ve_grown_|Tell him I've grown another inch!
@@ -1376,7 +1376,7 @@ qstr_{s13}_ordered_you_to|{s13} أمرك بالانضمام إلى حصار {s14
 ; qstr_You_gained_250_exper|You gained 250 experience.
 ; qstr_Hrooom..._Hmmm...Who|Hrooom... Hmmm...Who are you?
 ; qstr_Hrooom..._Hmmm...Oh_|Hrooom... Hmmm...Oh, it's you again, {playername}.
-; qstr_Treebeard_wants_you_|Treebeard wants you find and defeat the orcs cutting down trees in Fangorn.
+qstr_Treebeard_wants_you_|يريد منك تريبيرد العثور على العفاريت التي تقطع الأشجار في فانغورن وهزيمتهم.
 ; qstr_my_home_town|my home town
 ; qstr_I_am_in_perfect_heal|I am in perfect health.
 ; qstr_I_am_suffering_from_|I am suffering from {s1}.
@@ -1478,7 +1478,7 @@ qstr_{s13}_ordered_you_to|{s13} أمرك بالانضمام إلى حصار {s14
 ; qstr_Orcs_of_Moria_and_Do|Orcs of Moria and Dol Guldur
 ; qstr_Orcs_of_Gundabad_and|Orcs of Gundabad and the Warriors of Rhun
 ; qstr_Men_of_Gondor|Men of Gondor
-; qstr_Riders_of_Rohan|Riders of Rohan
+qstr_Riders_of_Rohan|فرسان روهان
 ; qstr_Elves_of_Imladris_an|Elves of Imladris and Lothlorien
 ; qstr_Men_of_Dale_Dwarves_|Men of Dale, Dwarves of Erebor, Beorn's kinsmen, and the Elves of Mirkwood
 ; qstr_Ah_{playername}_it_i|Ah, {playername}, it is good you have come. War is at our doorstep and we need soldiers and captains alike to fulfill their oaths.^^We are at war with {s11}, but we have to gather our strength and weaken the enemy before we can hope to move against their strong-points and fortresses. Each defeat of our enemies will bring us closer to victory and strengthen our resolve, so I trust you to fight our enemy at every opportunity, be it a mere scout party or a war host. Yet do not rush into battle alone, you must fight alongside our brave captains and our allies also.
@@ -1491,7 +1491,7 @@ qstr_{s13}_ordered_you_to|{s13} أمرك بالانضمام إلى حصار {s14
 ; qstr_What?_Let_me_see_tha|What? Let me see that... Hmmm. It was good of you to bring me this, {playername}. Now begone.
 ; qstr_Give_me_that!_Hrmph!_|Give me that! Hrmph! You are a useful servant to your masters, {playername}, but all of you will be dead before long. Not now though, so scurry off.
 ; qstr_My_king|My king
-; qstr_Lord|Lord
+qstr_Lord|اللورد
 ; qstr_my_king|my king
 ; qstr_lord|lord
 ; qstr_our|our
@@ -1571,7 +1571,7 @@ qstr_Gundabad|غونداباد
 ; qstr_{reg3}_hours.|{reg3} hours.
 ; qstr_hour.|hour.
 ; qstr_Taking_{reg0}_inf._A|Taking {reg0} inf. Alt?={reg1}
-; qstr_You_spent_{reg0}_of_|You spent {reg0} of your influence with {s1}, with {reg1} remaining.
+qstr_You_spent_{reg0}_of_|لقد أنفقت {reg0} من نفوذك مع {s1}، وبقي {reg1}.
 ; qstr_The_War_is_over_{pla|The War is over, {playername}, haven't you heard?
 ; qstr_We_are_at_war_with_{|We are at war with {s12}. However, we are mostly fighting against {s13}.
 ; qstr_We_are_at_war_with_{s|We are at war with {s12}. However, there are only skirmishes at the moment.
@@ -1621,14 +1621,14 @@ qstr_Gundabad|غونداباد
 ; qstr_Is_that_all_you_coul|Is that all you could do, {playername}? These will hardly replace yesterday's losses. Give them to me!
 ; qstr_Well_the_soldiers_ar|Well, the soldiers are at your command now, sir. I am sure you will take good care of them.
 ; qstr_Well_you_may_do_as_y|Well, you may do as you please. My companions and I can always toughen up more if needed.
-; qstr_{s9}_asked_you_to_br|{s9} asked you to bring back a savage troll for use in his army.
+qstr_{s9}_asked_you_to_br|طلب منك {s9} إحضار قزم متوحش لاستخدامه في جيشه.
 ; qstr_{s9}_asked_you_to_fi|{s9} asked you to find out what is going on in the Fangorn Forest, and to report back.
 ; qstr_{s9}_asked_you_to_fin|{s9} asked you to find the lost spears the dwarves once made for King Bladorthin. You will have to ask {s5} for permission to search for the spears in the depths of the Lonely Mountain.
 ; qstr_{s9}_has_asked_you_t|{s9} has asked you to slay the Dol Guldur sorcerer in Mirkwood.
 ; qstr_{s9}_asked_you_to_ta|{s9} asked you to take a message to {s13}. {s13} was believed to be at {s4} when you were given this quest.
 ; qstr_{s9}_asked_you_to_tak|{s9} asked you to take a message to {s13} of {s15}. {s13} was believed to be at {s4} when you were given this quest.
 ; qstr_{s11}_asked_you_to_e|{s11} asked you to escort his messenger to {s14}.
-; qstr_Lend_your_experience|Lend your experienced surgeon {s3} to {s1}.
+qstr_Lend_your_experience|إعارة جراحك المتمرس {s3} إلى {s1}.
 ; qstr_No_commander_should_|No commander should have to admit this, {playername}, but I was inspecting my soldiers the other day and there are such here who don't know which end of a sword to hold. They need someone to show them the meaning of valor. You are a warrior of renown, {playername}. Will you train some troops for me? I would be grateful to you.
 ; qstr_No_commander_should_h|No commander should have to admit this, {playername}, but I was inspecting my soldiers the other day and executed some of them for incompetence. They need someone with steel in his back to flog some courage into them, or kill them trying. You are a warrior of renown, {playername}. Will you train some troops for me? I can make it worthwhile for you.
 ; qstr_{s9}_asked_you_to_rai|{s9} asked you to raise {reg1} {s14} and bring them to him.
@@ -1638,21 +1638,21 @@ qstr_Gundabad|غونداباد
 ; qstr_{s9}_asked_you_to_ca|{s9} asked you to catch the three groups of runaway slaves and bring them back to {s4}, alive and breathing. He said that all three groups are heading towards {s3}.
 ; qstr_{s11}_asked_you_to_f|{s11} asked you to follow the spy that will leave {s12}. Be careful not to let the spy see you on the way, or he may get suspicious and turn back. Once the spy meets with his accomplice, you are to capture them and bring them back to {s11}.
 ; qstr_{s11}_asked_you_to_c|{s11} asked you to capture an enemy commander and then bring him back to {s11} for questioning.
-; qstr_{s9}_asked_you_to_le|{s9} asked you to lend your companion {s3} to him for a week.
+qstr_{s9}_asked_you_to_le|طلب منك {s9} إعارة رفيقك {s3} إليه لمدة أسبوع.
 ; qstr_{s9}_has_requested_y|{s9} has requested you to bring him {reg1} enemy prisoners.
 ; qstr_We_have_reports_that|We have reports that several of our allied patrols were ambushed and defeated. Some of the men may still yet live, captured by the enemy. Yet, the morale of my troops suffers, as the captured men will surely be killed, imprisoned or worse. I want you to rescue {reg1} prisoners, and bolster the morale of our troops.
 ; qstr_We_have_reports_that_|We have reports that several of our patrols were ambushed and defeated. Some of the cowards may still yet live, captured by the enemy. As much as they are expendable, it's a waste to let them die in some prison hole. I want you to rescue {reg1} prisoners, and make them fight for us again.
 ; qstr_{s9}_has_asked_you_to|{s9} has asked you to rescue {reg1} prisoners.
 ; qstr_We_have_reports_that_a|We have reports that an enemy host may be gathering in {s13}. Clearly, this is of grave concern to me, as I don't know how many troops the enemy has and whether my soldiers will be ready to meet them on the field of battle. I want you to get close enough to {s13}, and find out as much as you can.
 ; qstr_My_spies_tell_me_of_|My spies tell me of a large group of warriors gathering in {s13}. They should be no match for us and our servants, but it wouldn't hurt to know just how many of them are there. I want you to get close enough to {s13}, and find out as much as you can.
-; qstr_{s9}_asked_you_to_sco|{s9} asked you to scout around {s13}.
+qstr_{s9}_asked_you_to_sco|طلب منك {s9} الاستكشاف حول {s13}.
 ; qstr_We_have_reports_of_s|We have reports of some enemy activity near {s13}. Our scouts have so far failed to get close enough and scout the area for enemy comings and goings. I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts. I will also give you a few recruits, but you should not send them out on their own.
 ; qstr_My_spies_tell_me_the|My spies tell me the enemy is up to something in {s13}. Our cowardly scouts have so far failed to get close enough and tell us anything of import. I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee! I will give you these recruits, they won't be missed.
 ; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain {reg1} soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 ; qstr_We_need_to_take_the_|We need to take the battle to the enemy, {playername}. At this moment, we can do this by striking at his patrols and communications. I want you to eliminate {reg1} {s13} parties, that would help us regain initiative.
 ; qstr_We_need_to_grind_dow|We need to grind down our worthless enemies, {playername}. Their patrols and supply trains are growing too bold for my liking. I want you to eliminate {reg1} {s13} parties, so they'll learn to fear what's coming.
 ; qstr_{s9}_asked_you_to_el|{s9} asked you to eliminate {reg1} {s13} parties.
-; qstr_{s9}_asked_you_to_fr|{s9} asked you to free {s13} from the menace of a Troll raging in its outskirts.
+qstr_{s9}_asked_you_to_fr|طلب منك {s9} تخليص {s13} من تهديد قزم يهيج في ضواحيها.
 ; qstr_{reg1}_{s16}_joined_|{reg1} {s16} joined your party.
 ; qstr_Wait_{playername}._I|Wait, {playername}. I don't say this often, but you are an exceptionally reliable servant.
 ; qstr_Halt_{playername}._I|Halt, {playername}. I once thought you little more than a snaga, but you are proving to be a useful servant.
@@ -1784,7 +1784,7 @@ qstr_What_do_you_want?|ماذا تريد؟
 ; qstr_The_{s9}_of_{s3}_ask|The {s9} of {s3} asked you to bring him {reg5} units of food in {reg6} days.
 ; qstr_The_{s9}_of_{s3}_aske|The {s9} of {s3} asked you to bring him {reg5} units of {s6} in {reg0} days.
 ; qstr_Escort_the_supply_tr|Escort the supply train to {s8}.
-; qstr_The_{s9}_of_{s4}_aske|The {s9} of {s4} asked you to hunt down the troublesome goblins in the vicinity of the town.
+qstr_The_{s9}_of_{s4}_aske|طلب منك {s9} في {s4} مطاردة العفاريت المزعجين في محيط البلدة.
 ; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of bandits making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
 ; qstr_refugees|refugees
 ; qstr_slaves|slaves

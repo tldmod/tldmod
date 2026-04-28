@@ -272,7 +272,7 @@ str_persuasion_summary_very_good|تلقي خطابًا عاطفيًا يتردد
 ; str_name_27|Derufin
 ; str_name_28|Dorlas
 ; str_name_29|Duilin
-; str_name_30|Duinhir
+str_name_30|دوينهير
 ; str_name_31|Egalmoth
 ; str_name_32|Emeldir
 ; str_name_33|Eradan
@@ -296,7 +296,7 @@ str_persuasion_summary_very_good|تلقي خطابًا عاطفيًا يتردد
 ; str_name_51|Hild
 ; str_name_52|Hunthor
 ; str_name_53|Imlach
-; str_name_54|Ioreth
+str_name_54|إيوريث
 ; str_name_55|Ivorwen
 ; str_name_56|Labadal
 ; str_name_57|Larnach
@@ -358,7 +358,7 @@ str_persuasion_summary_very_good|تلقي خطابًا عاطفيًا يتردد
 ; str_name_elf_33|Nimloth
 ; str_name_elf_34|Orodreth
 ; str_name_elf_35|Oropher
-; str_name_elf_36|Orophin
+str_name_elf_36|أوروفين
 ; str_name_elf_37|Saeros
 ; str_name_dwarf_1|Assistnik
 ; str_name_dwarf_2|Vader
@@ -2519,7 +2519,7 @@ str_npc27_honorific|أيها السيد
 ; str_shortname_region_s_misty_mountains|the foothills of the Southern Misty Mountains
 ; str_shortname_region_n_anduin_vale|the northern Vale of Anduin
 ; str_shortname_region_s_anduin_vale|the southern Vale of Anduin
-; str_shortname_region_cair_andros|Cair Andros
+str_shortname_region_cair_andros|Cair Andros
 ; str_isengard_hunting_camp_guildmaster_player_found_ok|If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!
 ; str_trait_title_animal_fighter|Beast Slayer
 ; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.

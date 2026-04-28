@@ -68,7 +68,7 @@ itm_warg_reward|ورغ ضخم
 ; itm_animal_big|Big Animal
 ; itm_animal_small|Small Animal
 ; itm_troll_weapon_long|Giant Halberd
-; itm_troll_weapon_dmg|Giant Mace
+itm_troll_weapon_dmg|صولجان عملاق
 itm_tree_trunk_club_a|جذع شجرة
 itm_giant_mace|صولجان عملاق
 itm_troll_shield_a|درع القزم (الترول)
@@ -92,8 +92,8 @@ itm_white_tunic_a|زي مدني
 itm_rohan_shoes|أحذية جلدية
 itm_furry_boots|أحذية من الفرو
 itm_black_tunic|سترة سوداء
-; itm_hood_black|Black Hood
-; itm_hood_green|Green Hood
+itm_hood_black|قلنسوة سوداء
+itm_hood_green|قلنسوة خضراء
 ; itm_hood_grey|Grey Hood
 ; itm_hood_leather|Leather Hood
 ; itm_mail_coif|Mail Coif
@@ -134,8 +134,8 @@ itm_harad_javelin|رمح هاراد
 itm_gondor_javelin|رمح غوندور
 itm_rohirrim_throwing_axe|فؤوس روهيريم للرمي
 itm_loss_throwing_axes|فؤوس لوسارناخ للرمي
-; itm_free_dunedain_helm_a|Arnor Light Helm
-; itm_free_dunedain_helm_b|Arnor Helm
+itm_free_dunedain_helm_a|خوذة أرنور
+itm_free_dunedain_helm_b|خوذة أرنور
 itm_arnor_helm_c|خوذة أرنور
 itm_arnor_helm_b|خوذة أرنور
 itm_arnor_helm_a|خوذة أرنور
@@ -321,8 +321,8 @@ itm_uruk_pike_b|مطرد موردور
 itm_uruk_falchion_a|سيف أوروك عريض
 ; itm_orc_bastard_scimitar|Orc Great Scimitar
 ; itm_orc_cleaver_a|Orc Cleaver
-; itm_orc_scimitar_b|Orc Scimitar
-; itm_orc_sabre_b|Orc Sabre
+itm_orc_scimitar_b|سيف عفريت منحني
+itm_orc_sabre_b|سيف عفريت
 ; itm_orc_mangler|Orc Mangler
 itm_isengard_sword|سيف آيزنغارد
 itm_isengard_axe|فأس آيزنغارد
@@ -381,7 +381,7 @@ itm_orc_visorhelm|خوذة عفريت مزودة بحاجب
 itm_orc_coif|قلنسوة عفريت جمجمية
 ; itm_orc_skullcap|Orc Skullcap
 ; itm_orc_skullhelm|Orc Skullhelm
-; itm_orc_barbuta|Orc Nosehelm
+itm_orc_barbuta|خوذة عفريت أنفية
 itm_m_orc_light_a|درع عفريت موردور الخفيف
 itm_m_orc_light_b|درع عفريت موردور الخفيف
 itm_m_orc_light_c|درع عفريت موردور الخفيف
@@ -816,7 +816,7 @@ itm_beorn_axe_no_attack|فأس بيورنينغ
 ; itm_blackwhite_dress_wb|Lady Dress
 ; itm_white_tunic_b_wb|Simple Tunic
 ; itm_blue_tunic_wb|Blue Tunic
-; itm_black_tunic_wb|Black Tunic
+itm_black_tunic_wb|سترة سوداء
 ; itm_green_tunic_wb|Green Tunic
 ; itm_green_dress_wb|Green Dress
 ; itm_gondor_fine_outfit_dress_wb|Fine Outfit
@@ -846,6 +846,6 @@ itm_beorn_axe_no_attack|فأس بيورنينغ
 ; itm_civilian_carry_wood2|Wood
 ; itm_work_basket|Basket
 ; itm_work_basket_2|Basket
-; itm_spider_mount|Spider
+itm_spider_mount|عنكبوت
 ; itm_marker_night_troop|Trait: Night Troop
 ; itm_marker_berserker|Trait: Berserker

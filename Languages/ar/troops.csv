@@ -138,7 +138,7 @@ trp_i5_rhun_ox_warrior_pl|محاربو الثور
 ; trp_c4_rhun_noble_rider_pl|Noble Riders of Rhun
 ; trp_c5_rhun_warrider|Warrider of Rhun
 ; trp_c5_rhun_warrider_pl|Warriders of Rhun
-; trp_c6_rhun_warlord|Warlord of Rhun
+trp_c6_rhun_warlord|قائد حرب رون
 ; trp_c6_rhun_warlord_pl|Warlords of Rhun
 trp_i1_dwarf_apprentice|قزم متدرب
 trp_i1_dwarf_apprentice_pl|أقزام متدربون
@@ -456,12 +456,12 @@ trp_c6_rider_guard_of_rohan|حارس إيورل في روهان
 trp_c6_rider_guard_of_rohan_pl|حراس إيورل في روهان
 trp_i6_2h_guard_of_rohan|حارس هيلم في روهان
 trp_i6_2h_guard_of_rohan_pl|حراس هيلم في روهان
-; trp_ac3_dism_skirmisher_of_rohan2|Skirmisher of Rohan
-; trp_ac3_dism_skirmisher_of_rohan2_pl|Skirmishers of Rohan
-; trp_ac4_dism_veteran_skirmisher_of_rohan2|Veteran Skirmisher of Rohan
-; trp_ac4_dism_veteran_skirmisher_of_rohan2_pl|Veteran Skirmishers of Rohan
-; trp_ac5_dism_elite_skirmisher_of_rohan2|Elite Skirmisher of Rohan
-; trp_ac5_dism_elite_skirmisher_of_rohan2_pl|Elite Skirmishers of Rohan
+trp_ac3_dism_skirmisher_of_rohan2|مناوش روهان
+trp_ac3_dism_skirmisher_of_rohan2_pl|مناوشو روهان
+trp_ac4_dism_veteran_skirmisher_of_rohan2|مناوش روهان مخضرم
+trp_ac4_dism_veteran_skirmisher_of_rohan2_pl|مناوشو روهان مخضرمون
+trp_ac5_dism_elite_skirmisher_of_rohan2|مناوش روهان النخبة
+trp_ac5_dism_elite_skirmisher_of_rohan2_pl|مناوشو روهان النخبة
 trp_i1_harad_levy|مجند هاراد
 trp_i1_harad_levy_pl|مجندو هاراد
 trp_i3_harad_infantry|مشاة هاراد الخفيفة
@@ -670,8 +670,8 @@ trp_armoured_troll|قزم مدرع
 trp_armoured_troll_pl|قزمة مدرعة
 trp_olog_hai|أولوغ-هاي موردور
 trp_olog_hai_pl|أولوغ-هاي موردور
-; trp_ent_old|Ent
-; trp_ent_old_pl|Ents
+trp_ent_old|إنت
+trp_ent_old_pl|إنت
 trp_i1_guldur_orc_snaga|سناغا عفريت غولدور
 trp_i1_guldur_orc_snaga_pl|سناغات عفاريت غولدور
 trp_a2_guldur_orc_tracker|متعقب عفريت غولدور
@@ -744,9 +744,9 @@ trp_c5_gunda_clan_rider|راكب عشيرة العفاريت الشمالية
 trp_c5_gunda_clan_rider_pl|ركاب عشيرة العفاريت الشمالية
 ; trp_i5_gunda_orc_champion|Gundabad Orc Champion
 ; trp_i5_gunda_orc_champion_pl|Gundabad Orc Champions
-; trp_mountain_goblin2|Mountain Goblin
-; trp_mountain_goblin2_pl|Mountain Goblins
-; trp_tribal_orc2|Tribal Orc
+trp_mountain_goblin2|عفريت جبلي
+trp_mountain_goblin2_pl|عفاريت جبلية
+trp_tribal_orc2|عفريت قبلي
 trp_tribal_orc2_pl|قبيلة العفاريت
 ; trp_i5_gunda_orc_champion2|Gundabad Orc Champion
 ; trp_i5_gunda_orc_champion2_pl|Gundabad Orc Champions
@@ -784,11 +784,11 @@ trp_c5_mordor_num_knight_pl|سادة خيل نومينوريون سود
 ; trp_isen_captain_pl|Captains of Isengard
 ; trp_isen_tracker_captain|Isengard Tracker Captain
 ; trp_isen_tracker_captain_pl|Isengard Tracker Captains
-; trp_mordor_uruk_captain|Mordor Uruk Captain
+trp_mordor_uruk_captain|قبطان أوروك موردور
 ; trp_mordor_uruk_captain_pl|Mordor Uruk Captains
 ; trp_mordor_captain|Captain of Mordor
 ; trp_mordor_captain_pl|Captains of Mordor
-; trp_umbar_captain|Captain of Umbar
+trp_umbar_captain|قبطان أمبار
 ; trp_umbar_captain_pl|Captains of Umbar
 ; trp_khand_captain|Variag War Chief
 ; trp_khand_captain_pl|Variag War Chiefs
@@ -798,32 +798,32 @@ trp_c5_mordor_num_knight_pl|سادة خيل نومينوريون سود
 ; trp_moria_captain_pl|Uruk Chieftains of Moria
 ; trp_dwarf_captain|Dwarf Captain
 ; trp_dwarf_captain_pl|Dwarf Captains
-; trp_dale_captain|Captain of Dale
+trp_dale_captain|قبطان ديل
 ; trp_dale_captain_pl|Captains of Dale
 ; trp_harad_captain|Haradrim Noble
 ; trp_harad_captain_pl|Haradrim Nobles
-; trp_a5_dun_night_wolf2|Dunnish Night Wolf
-; trp_a5_dun_night_wolf2_pl|Dunnish Night Wolf
+trp_a5_dun_night_wolf2|ذئب الليل الدونيش
+trp_a5_dun_night_wolf2_pl|ذئب الليل الدونيش
 ; trp_dun_captain|Dunnish Hetman
 ; trp_dun_captain_pl|Dunnish Hetmen
 ; trp_gunda_captain|Gundabad Chieftain
 ; trp_gunda_captain_pl|Gundabad Chieftains
-; trp_gondor_captain|Captain of Gondor
+trp_gondor_captain|قبطان غوندور
 ; trp_gondor_captain_pl|Captains of Gondor
-; trp_pel_captain|Captain of Pelargir
-; trp_pel_captain_pl|Captains of Pelargir
+trp_pel_captain|قبطان بيلارغير
+trp_pel_captain_pl|قباطنة بيلارغير
 ; trp_amroth_captain|Knight Captain of Dol Amroth
 ; trp_amroth_captain_pl|Knight Captains of Dol Amroth
-; trp_lam_captain|Captain of Lamedon
-; trp_lam_captain_pl|Captains of Lamedon
-; trp_loss_captain|Captain of Lossarnach
-; trp_loss_captain_pl|Captains of Lossarnach
-; trp_pinnath_captain|Captain of Pinnath Gelin
-; trp_pinnath_captain_pl|Captains of Pinnath Gelin
+trp_lam_captain|قبطان لاميدون
+trp_lam_captain_pl|قباطنة لاميدون
+trp_loss_captain|قبطان لوسارناخ
+trp_loss_captain_pl|قباطنة لوسارناخ
+trp_pinnath_captain|قبطان بينات غيلين
+trp_pinnath_captain_pl|قباطنة بينات غيلين
 ; trp_blackroot_captain|Captain of Blackroot Vale
 ; trp_blackroot_captain_pl|Captains of Blackroot Vale
-; trp_ithilien_captain|Captain of Ithilien Rangers
-; trp_ithilien_captain_pl|Captains of Ithilien Rangers
+trp_ithilien_captain|قبطان حراس إثيليان
+trp_ithilien_captain_pl|قباطنة حراس إثيليان
 trp_brigand|قاطع طريق
 trp_brigand_pl|قطاع الطريق
 trp_mountain_bandit|قاطع طريق جبلي
@@ -877,9 +877,9 @@ trp_walker_woman_gondor_w|نبيلة غوندور
 ; trp_mirkwood_walker_2|Greenwood Elf
 ; trp_lorien_walker_1|Lothlorien Elf
 ; trp_lorien_walker_2|Lothlorien Elf
-; trp_dwarf_walker|Dwarf
+trp_dwarf_walker|قزم
 ; trp_beorn_walker|Peasant Man
-; trp_beorn_walker_fem|Peasant Woman
+trp_beorn_walker_fem|فلاحة
 trp_trainer_4|مدرب
 trp_trainer_gondor|مدرب
 trp_trainer_rohan|مدرب
@@ -1161,34 +1161,34 @@ trp_smith_khand_ac|بوشورت المساوم
 trp_smith_khand_ac_pl|حدادة
 trp_smith_umbar_ac|فوينير الصانع
 trp_smith_umbar_ac_pl|حدادة
-; trp_smith_moria_ac|Burgak Forger
-; trp_smith_moria_ac_pl|smithy
-; trp_smith_dale_ac|Ardel Firehand
-; trp_smith_dale_ac_pl|smithy
-; trp_smith_beorn_ac|Beornalaf Axemaker
-; trp_smith_beorn_ac_pl|smithy
-; trp_smith_woodelf_west_camp|Dhoelath
-; trp_smith_woodelf_west_camp_pl|smithy
-; trp_smith_woodmen|Beornalaf Axemaker
-; trp_smith_woodmen_pl|smithy
-; trp_smith_beorn_v|Beornalaf Axemaker
-; trp_smith_beorn_v_pl|smithy
-; trp_smith_troll_cave|Burgak Forger
-; trp_smith_troll_cave_pl|smithy
-; trp_smith_dg_outpost|Shtazg Dulbash
-; trp_smith_dg_outpost_pl|smithy
-; trp_smith_main_rhun|Branimir Bronnik
-; trp_smith_main_rhun_pl|makeshift smithy
-; trp_smith_south_rhun|Branimir Bronnik
-; trp_smith_south_rhun_pl|makeshift smithy
-; trp_smith_gundabad_ne|Blurg Snowseller
-; trp_smith_gundabad_ne_pl|smithy
-; trp_smith_gundabad_nw|Blurg Snowseller
-; trp_smith_gundabad_nw_pl|smithy
-; trp_smith_moria_s|Burgak Forger
-; trp_smith_moria_s_pl|smithy
-; trp_smith_gundabad_m|Blurg Snowseller
-; trp_smith_gundabad_m_pl|smithy
+trp_smith_moria_ac|بورغاك الصانع
+trp_smith_moria_ac_pl|حدادة
+trp_smith_dale_ac|أرديل يد النار
+trp_smith_dale_ac_pl|حدادة
+trp_smith_beorn_ac|بيورنلاف صانع الفؤوس
+trp_smith_beorn_ac_pl|حدادة
+trp_smith_woodelf_west_camp|دويلاث
+trp_smith_woodelf_west_camp_pl|حدادة
+trp_smith_woodmen|بيورنلاف صانع الفؤوس
+trp_smith_woodmen_pl|حدادة
+trp_smith_beorn_v|بيورنلاف صانع الفؤوس
+trp_smith_beorn_v_pl|حدادة
+trp_smith_troll_cave|بورغاك الصانع
+trp_smith_troll_cave_pl|حدادة
+trp_smith_dg_outpost|شتازغ دولباش
+trp_smith_dg_outpost_pl|حدادة
+trp_smith_main_rhun|برانيمير برونيك
+trp_smith_main_rhun_pl|حدادة مؤقتة
+trp_smith_south_rhun|برانيمير برونيك
+trp_smith_south_rhun_pl|حدادة مؤقتة
+trp_smith_gundabad_ne|بلورغ بائع الثلج
+trp_smith_gundabad_ne_pl|حدادة
+trp_smith_gundabad_nw|بلورغ بائع الثلج
+trp_smith_gundabad_nw_pl|حدادة
+trp_smith_moria_s|بورغاك الصانع
+trp_smith_moria_s_pl|حدادة
+trp_smith_gundabad_m|بلورغ بائع الثلج
+trp_smith_gundabad_m_pl|حدادة
 trp_barman_eastemnet|صاحب حانة
 trp_barman_eastemnet_pl|القلعة
 trp_barman_westfold|صاحب حانة
@@ -1203,29 +1203,29 @@ trp_barman_morannon|صاحب حانة
 trp_barman_morannon_pl|كهف القائد
 trp_barman_mmorgul|صاحب حانة
 trp_barman_mmorgul_pl|البرج
-; trp_merchant_main_rhun|Supply Master
-; trp_merchant_main_rhun_pl|camp stash
-; trp_merchant_dg_outpost|Supply Master
-; trp_merchant_dg_outpost_pl|stable and warehouse
-; trp_merchant_woodelf_west_camp|Supply Master
-; trp_merchant_woodelf_west_camp_pl|elven supplies
-; trp_merchant_gundabad_m|Supply Master
-; trp_merchant_gundabad_m_pl|camp stash
-; trp_merchant_moria_s|Supply Master
-; trp_merchant_moria_s_pl|camp stash
-; trp_merchant_gundabad_nw|Supply Master
-; trp_merchant_gundabad_nw_pl|camp stash
-; trp_merchant_gundabad_ne|Supply Master
-; trp_merchant_gundabad_ne_pl|camp stash
-; trp_merchant_troll_cave|Supply Master
-; trp_merchant_troll_cave_pl|warg pit and supplies
-; trp_merchant_beorn_v|Supply Master
-; trp_merchant_beorn_v_pl|stable and warehouse
-; trp_merchant_orc_sentry|Supply Master
-; trp_merchant_orc_sentry_pl|camp stash
-; trp_merchant_candros|Supply Master
-; trp_merchant_candros_pl|stable and warehouse
-; trp_merchant_hannun|Supply Master
+trp_merchant_main_rhun|سيد الإمداد
+trp_merchant_main_rhun_pl|مخزن المعسكر
+trp_merchant_dg_outpost|سيد الإمداد
+trp_merchant_dg_outpost_pl|إسطبل ومستودع
+trp_merchant_woodelf_west_camp|سيد الإمداد
+trp_merchant_woodelf_west_camp_pl|مؤن جان
+trp_merchant_gundabad_m|سيد الإمداد
+trp_merchant_gundabad_m_pl|مخزن المعسكر
+trp_merchant_moria_s|سيد الإمداد
+trp_merchant_moria_s_pl|مخزن المعسكر
+trp_merchant_gundabad_nw|سيد الإمداد
+trp_merchant_gundabad_nw_pl|مخزن المعسكر
+trp_merchant_gundabad_ne|سيد الإمداد
+trp_merchant_gundabad_ne_pl|مخزن المعسكر
+trp_merchant_troll_cave|سيد الإمداد
+trp_merchant_troll_cave_pl|حفرة ورغ ومؤن
+trp_merchant_beorn_v|سيد الإمداد
+trp_merchant_beorn_v_pl|إسطبل ومستودع
+trp_merchant_orc_sentry|سيد الإمداد
+trp_merchant_orc_sentry_pl|مخزن المعسكر
+trp_merchant_candros|سيد الإمداد
+trp_merchant_candros_pl|إسطبل ومستودع
+trp_merchant_hannun|سيد الإمداد
 ; trp_merchant_hannun_pl|ranger supplies
 trp_merchant_mtirith|سيد الإمداد
 trp_merchant_mtirith_pl|إسطبل ومستودع
@@ -1416,41 +1416,41 @@ trp_elder_erebor_pl|القاعات
 trp_elder_dolguldur|زعيم غولدور
 trp_elder_dolguldur_pl|القلعة السوداء
 ; trp_elder_wosgiliath|Campmaster
-; trp_elder_wosgiliath_pl|the camp
+trp_elder_wosgiliath_pl|المعسكر
 ; trp_elder_oscamp|Campmaster
-; trp_elder_oscamp_pl|the camp
+trp_elder_oscamp_pl|المعسكر
 ; trp_elder_eosgiliath|Campmaster
-; trp_elder_eosgiliath_pl|the camp
+trp_elder_eosgiliath_pl|المعسكر
 ; trp_elder_uoutpost|Campmaster
-; trp_elder_uoutpost_pl|the camp
+trp_elder_uoutpost_pl|المعسكر
 ; trp_elder_uhcamp|Campmaster
-; trp_elder_uhcamp_pl|the camp
+trp_elder_uhcamp_pl|المعسكر
 ; trp_elder_urcamp|Campmaster
-; trp_elder_urcamp_pl|the camp
+trp_elder_urcamp_pl|المعسكر
 ; trp_elder_woodelf_camp|Elder
-; trp_elder_woodelf_camp_pl|the camp
+trp_elder_woodelf_camp_pl|المعسكر
 ; trp_elder_woodelf_west_camp|Elder
-; trp_elder_woodelf_west_camp_pl|the camp
+trp_elder_woodelf_west_camp_pl|المعسكر
 ; trp_elder_beorn_v|Beorning Elder
-; trp_elder_beorn_v_pl|the village
+trp_elder_beorn_v_pl|القرية
 ; trp_elder_troll_cave|Cave Chief
-; trp_elder_troll_cave_pl|the caves
+trp_elder_troll_cave_pl|الكهوف
 ; trp_elder_dg_outpost|Campmaster
-; trp_elder_dg_outpost_pl|the camp
+trp_elder_dg_outpost_pl|المعسكر
 ; trp_elder_rhun_sc|Rhun Camp Chief
-; trp_elder_rhun_sc_pl|the camp
+trp_elder_rhun_sc_pl|المعسكر
 ; trp_elder_rhun_nc|Rhun Camp Chief
-; trp_elder_rhun_nc_pl|the camp
+trp_elder_rhun_nc_pl|المعسكر
 ; trp_elder_gunda_ne|Orc Elder
-; trp_elder_gunda_ne_pl|the camp
+trp_elder_gunda_ne_pl|المعسكر
 ; trp_elder_gunda_nw|Orc Elder
-; trp_elder_gunda_nw_pl|the camp
+trp_elder_gunda_nw_pl|المعسكر
 ; trp_elder_moria_s|Orc Camp Chief
-; trp_elder_moria_s_pl|the camp
+trp_elder_moria_s_pl|المعسكر
 ; trp_elder_gunda_m|Orc Elder
-; trp_elder_gunda_m_pl|the camp
-; trp_elder_ironhill|Camp Chief
-; trp_elder_ironhill_pl|the camp
+trp_elder_gunda_m_pl|المعسكر
+trp_elder_ironhill|زعيم المعسكر
+trp_elder_ironhill_pl|المعسكر
 trp_village_1_elder|سيد السوط
 trp_village_1_elder_pl|الكهوف
 trp_tutorial_chest_1|صندوق أسلحة المشاجرة
@@ -1501,8 +1501,8 @@ trp_black_numenorean_sorcerer|ساحر نومينوري أسود
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|راكب ذئب ميركوود
 trp_wolf_rider_of_mirkwood_pl|ركاب ذئاب ميركوود
-; trp_bear_strong|Bear
-; trp_bear_strong_pl|Bears
+trp_bear_strong|دب
+trp_bear_strong_pl|دببة
 trp_gate_aggravator|دفاع البوابة
 trp_orc_pretender|عفريت مدعي
 trp_human_prisoner|سجين بشري
@@ -1567,10 +1567,10 @@ trp_c5_rhovanion_noble_pl|نبلاء روفانيون
 ; trp_npc19|Heidrek
 ; trp_npc20|Zigûrphel
 ; trp_npc21|Berta
-; trp_werewolf|Werewolf
+trp_werewolf|مستذئب
 ; trp_werewolf_pl|Werewolves
-; trp_moria_troll|Cave Troll
-; trp_moria_troll_pl|Cave Trolls
+trp_moria_troll|قزم كهوف
+trp_moria_troll_pl|قزمة كهوف
 ; trp_moria_vet_troll|Trained Cave Troll
 ; trp_moria_vet_troll_pl|Trained Cave Trolls
 ; trp_moria_armored_troll|Armored Cave Troll
@@ -1591,20 +1591,20 @@ trp_c5_rhovanion_noble_pl|نبلاء روفانيون
 ; trp_mordor_troll_pl|Mordor Trolls
 ; trp_mordor_vet_troll|Mordor Trained Troll
 ; trp_mordor_vet_troll_pl|Mordor Trained Trolls
-; trp_mordor_olog_hai|Olog Hai of Mordor
-; trp_mordor_olog_hai_pl|Olog Hai of Mordor
-; trp_troll_placeholder_1|Cave Troll
-; trp_troll_placeholder_1_pl|Cave Trolls
-; trp_troll_placeholder_2|Cave Troll
-; trp_troll_placeholder_2_pl|Cave Trolls
-; trp_troll_placeholder_3|Cave Troll
-; trp_troll_placeholder_3_pl|Cave Trolls
-; trp_troll_placeholder_4|Cave Troll
-; trp_troll_placeholder_4_pl|Cave Trolls
-; trp_troll_placeholder_5|Cave Troll
-; trp_troll_placeholder_5_pl|Cave Trolls
-; trp_troll_placeholder_6|Cave Troll
-; trp_troll_placeholder_6_pl|Cave Trolls
+trp_mordor_olog_hai|أولوغ-هاي موردور
+trp_mordor_olog_hai_pl|أولوغ-هاي موردور
+trp_troll_placeholder_1|قزم كهوف
+trp_troll_placeholder_1_pl|قزمة كهوف
+trp_troll_placeholder_2|قزم كهوف
+trp_troll_placeholder_2_pl|قزمة كهوف
+trp_troll_placeholder_3|قزم كهوف
+trp_troll_placeholder_3_pl|قزمة كهوف
+trp_troll_placeholder_4|قزم كهوف
+trp_troll_placeholder_4_pl|قزمة كهوف
+trp_troll_placeholder_5|قزم كهوف
+trp_troll_placeholder_5_pl|قزمة كهوف
+trp_troll_placeholder_6|قزم كهوف
+trp_troll_placeholder_6_pl|قزمة كهوف
 ; trp_wild_troll|Wild Cave Troll
 ; trp_wild_troll_pl|Wild Cave Trolls
 trp_ent|إنت
@@ -1617,12 +1617,12 @@ trp_tribal_orc_warrior|محارب عفريت قبلي
 trp_tribal_orc_warrior_pl|محاربو عفاريت قبليون
 ; trp_tribal_orc_chief|Tribal Orc Chief
 ; trp_tribal_orc_chief_pl|Tribal Orc Chiefs
-; trp_a3_dism_skirmisher_of_rohan|Skirmisher of Rohan
-; trp_a3_dism_skirmisher_of_rohan_pl|Skirmishers of Rohan
-; trp_a4_dism_veteran_skirmisher_of_rohan|Veteran Skirmisher of Rohan
-; trp_a4_dism_veteran_skirmisher_of_rohan_pl|Veteran Skirmishers of Rohan
-; trp_a5_dism_elite_skirmisher_of_rohan|Elite Skirmisher of Rohan
-; trp_a5_dism_elite_skirmisher_of_rohan_pl|Elite Skirmishers of Rohan
+trp_a3_dism_skirmisher_of_rohan|مناوش روهان
+trp_a3_dism_skirmisher_of_rohan_pl|مناوشو روهان
+trp_a4_dism_veteran_skirmisher_of_rohan|مناوش روهان مخضرم
+trp_a4_dism_veteran_skirmisher_of_rohan_pl|مناوشو روهان مخضرمون
+trp_a5_dism_elite_skirmisher_of_rohan|مناوش روهان النخبة
+trp_a5_dism_elite_skirmisher_of_rohan_pl|مناوشو روهان النخبة
 ; trp_ac5_camel_rider|Harad Camel Rider
 ; trp_ac5_camel_rider_pl|Harad Camel Riders
 ; trp_aragorn|Aragorn
