@@ -831,9 +831,6 @@ scripts = [
     (try_end),
     
     (try_begin),
-      (eq, ":troop_id", "trp_volunteers"),
-      (set_trigger_result, -1),
-    (else_try), 
 	    (assign, reg0, ":join_cost"),
 		(set_trigger_result, reg0),
 	(try_end),
@@ -2468,6 +2465,7 @@ scripts = [
             (this_or_next|eq, ":troop_id", "trp_i6_beorning_bear_warrior"),
             (this_or_next|eq, ":troop_id", "trp_i5_far_harad_panther_guard"), 
             (this_or_next|eq, ":troop_id", "trp_i6_dun_retainer"), 
+            (this_or_next|eq, ":troop_id", "trp_i6_greenwood_2h_axeman"), 
             (			  eq, ":troop_id", "trp_i5_moria_orc_chieftain"), 
             #(troop_add_item, ":troop_id", "itm_marker_hp_shield"),
             (troop_set_slot, ":troop_id", slot_troop_hp_shield, 60),
@@ -2478,6 +2476,7 @@ scripts = [
             (this_or_next|eq, ":troop_id", "trp_i5_beorning_carrock_berserker"),
             (this_or_next|eq, ":troop_id", "trp_i6_beorning_bear_warrior"),
             (this_or_next|eq, ":troop_id", "trp_i5_far_harad_panther_guard"),
+            (this_or_next|eq, ":troop_id", "trp_i6_greenwood_2h_axeman"), 
             (			  eq, ":troop_id", "trp_i6_dun_retainer"), 
             #(troop_add_item, ":troop_id", "itm_marker_hp_shield"),
             (troop_set_slot, ":troop_id", slot_troop_trait_scares_mounts, 1),
@@ -25697,13 +25696,14 @@ command_cursor_scripts = [
 # INPUT: nothing
 # OUTPUT: nothing
 # dirties reg0
+#unused
 ("migrate_volunteer_system",[
 	#for every party
    	(try_for_parties, ":party_no"),
    		#check if it has a volunteer stack and delete it if found
-		(party_count_members_of_type, ":volunteers_no", ":party_no", trp_volunteers),
+		#(party_count_members_of_type, ":volunteers_no", ":party_no", trp_volunteers),
    		 # does a 0 call to party_remove_members fails? if then, enclose this check on a try and add a (gt,":volunteers_no",0) here
-   		(party_remove_members, ":party_no", trp_volunteers, ":volunteers_no"),
+   		#(party_remove_members, ":party_no", trp_volunteers, ":volunteers_no"),
    	(try_end),
    	(try_for_range,":town",centers_begin,centers_end),
    		(try_begin),
@@ -28567,6 +28567,7 @@ command_cursor_scripts = [
             (troop_set_slot, "trp_knight_3_1", slot_troop_retainer_troop, "trp_i6_corsair_guard"), #umbar guard
             (troop_set_slot, "trp_knight_3_2", slot_troop_retainer_troop, "trp_i6_corsair_guard"), #umbar guard
             (troop_set_slot, "trp_knight_3_3", slot_troop_retainer_troop, "trp_i6_corsair_guard"), #umbar guard
+            (troop_set_slot, "trp_woodelf_lord", slot_troop_retainer_troop, "trp_i6_greenwood_2h_axeman"), #Greenwood guard
         ]),
     #Retainers End
 
