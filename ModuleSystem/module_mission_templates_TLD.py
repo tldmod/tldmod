@@ -366,7 +366,6 @@ tld_assign_special_troops = (ti_on_agent_spawn, 1, 0, [(is_between, "$current_to
 				(agent_get_troop_id,":troop", ":cur_agent"),
                 
                 (try_begin),
-                    (this_or_next|eq, ":troop", "trp_volunteers"),
                     (this_or_next|eq, ":troop", "trp_lorien_lord"),
                     (this_or_next|eq, ":troop", "trp_isengard_lord"),
                     (eq, ":troop", "trp_werewolf"),

@@ -165,7 +165,7 @@ morale_scripts = [
 
 	# script_cf_agent_get_morale
 	# This script calculates an agents morale, and stores it in reg1.
-    # exclusively used in script_rout_allies and script_rout_enemies
+    # exclusively used in script_coherence
     # InVain: Be aware that this actually stores the chance to flee! So the higher the output, the lower the morale
         # stored output in slot_agent_flee_chance
 	# param0 = agent
@@ -1091,11 +1091,11 @@ morale_scripts = [
 	(call_script, "script_find_exit_position_at_pos4", -1),
 	(assign, ":allies_routed", 0),
 	(assign, ":allies_total", 0),
+	(get_player_agent_no, ":player_agent"),
 	(try_for_agents,":agent"),
         (agent_is_alive,":agent"),
         (agent_is_human,":agent"),
         (agent_is_ally,":agent"),
-		(get_player_agent_no, ":player_agent"),
 		(neq, ":player_agent", ":agent"),
 		(val_add, ":allies_total", 1),
 		#(assign, reg0, ":chance_ply"),
@@ -1489,4 +1489,32 @@ morale_scripts = [
 	(val_mul,"$enemies_coh_modifier", 2),
     (val_div,"$enemies_coh_modifier", 3),
      ]),
+ 
+ 	] + ((is_a_wb_script==1) and [    
+    #script_cf_proceed_fleeing_agent
+    # checks if fleeing agent has reached destination, check rally chance or make them flee for good
+    ("cf_proceed_fleeing_agent",
+    [(set_fixed_point_multiplier, 100),
+    (store_script_param, ":agent", 1),
+    (agent_slot_eq, ":agent", slot_agent_is_running_away, 1),
+    (agent_get_slot, ":destination", ":agent", slot_agent_target_entry_point),
+    (ge, ":destination", 0),
+    (entry_point_get_position, pos5, ":destination"),
+    (agent_get_position, pos6, ":agent"),
+    (get_distance_between_positions, ":dist", pos5, pos6),
+    (lt, ":dist", 700), 
+    (agent_stop_running_away, ":agent"),
+    (agent_force_rethink, ":agent"),
+    (agent_get_slot, ":flee_chance", ":agent", slot_agent_flee_chance), #also contains current coherence
+    (store_random_in_range,":routed",0,75), #last chance to rally, but only up to 75% flee chance
+    (try_begin), #flee for good
+        (le,":routed",":flee_chance"),
+        (agent_start_running_away, ":agent"), #no target position, so they will leave the battlefield
+        (agent_set_slot, ":agent", slot_agent_is_running_away, 2),
+    (else_try), #rally
+        (agent_set_slot, ":agent", slot_agent_is_running_away, 0),
+        (agent_set_slot, ":agent", slot_agent_routed, 0),
+    (try_end),
+     ]),
+	] or []) + [
 ]

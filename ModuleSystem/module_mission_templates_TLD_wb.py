@@ -1734,6 +1734,24 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (try_end),
     ### Berserkers end###
 
+    ### Lords retreating begin
+    # (try_begin),
+        # (troop_slot_eq, ":troop_id", slot_troop_occupation, slto_kingdom_hero),
+        # (lt, ":new_hp_shield", 30), #kingdom heroes start with 200 hp shield
+        # (store_random_in_range, ":rand", 0, 40),
+        # (gt, ":rand", ":new_hp_shield"),
+        # # TODO: Maybe set their morale multiplier, so we set them to flee via morale scripts instead?
+        # # No, we want it to work in sieges also, so it's best to make it independant from morale
+        # # (agent_get_entry_no, ":spawn_entry", ":agent"),
+        # # (ge, ":entry", 0),
+        # # (neg|is_between, ":entry", 45, 48), #no siege attackers, due to possible pathfinding issues
+        # # (entry_point_get_position, pos5, ":entry"),
+        # # (agent_start_running_away, ":agent", pos5),
+        # (agent_start_running_away, ":agent"),
+        # (agent_set_slot, ":agent", slot_agent_is_running_away, 1),
+    # (try_end),
+    ### Lords retreating end
+
     (set_trigger_result, ":deal_damage"),
     (assign, reg0, ":weapon"),
 
@@ -3766,15 +3784,21 @@ tld_battlefield_agent_effects = [
     (try_begin),
         (troop_is_hero, ":troop_no"),
         (call_script, "script_ce_get_troop_encumbrance", ":troop_no", -1), #a fully equipped Dol Amroth Knight has ~65; a fully equipped master ranger has ~19
-        (val_sub, reg1, 5), #14-60 9-50
+        (val_sub, reg1, 5), #14-60
         (val_max, reg1, 1),
-        (val_div, reg1, 3), #4-20 3-17
+        (val_div, reg1, 3), #4-20
         (val_div, ":agility", 3),
         (store_sub, ":movement_malus", reg1, ":agility"),
-        (val_max, ":movement_malus", 0),
         # (str_store_troop_name, s6, ":troop_no"),
         # (assign, reg78, ":movement_malus"),
         # (display_message, "@{s6} movement malus: {reg78}"),
+        # (try_begin), #light armor trait
+            # (eq, ":troop_no", trp_player),
+            # (troop_get_slot, ":trait_score", "trp_traits", slot_trait_light_armor),
+            # (lt, ":movement_malus", 0),
+            # (store_mul, ":trait_score", ":movement_malus", -1),
+        # (try_end),
+        (val_max, ":movement_malus", 0),
     (else_try),
         (neg|troop_is_hero, ":troop_no"),
         (val_mul, ":athletics", 2), # 0-20

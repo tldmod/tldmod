@@ -1123,8 +1123,9 @@ slot_trait_horse_fiend       = 27
 slot_trait_warg_fiend        = 28
 slot_trait_troll_slayer      = 29
 slot_trait_troll_hunter      = 30
+slot_trait_light_armor       = 31
 slot_trait_first             = slot_trait_elf_friend
-slot_trait_last              = slot_trait_animal_fighter
+slot_trait_last              = slot_trait_light_armor
 
 
 ########################################################
