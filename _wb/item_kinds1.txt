@@ -1,5 +1,5 @@
 itemsfile version 2
-992
+990
  itm_no_item {!}INVALID_ITEM {!}INVALID_ITEM 1  invalid_item 0  4107 0 3 0 1.5 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -2980,12 +2980,6 @@ itemsfile version 2
 0
 
  itm_pipeweed_reward Pipe-weed Pipe-weed 1  khazad_dwarf_tobacco_pouch 0  33558528 0 500 0 0 100 0 0 0 0 0 0 0 0 4 0 0
-0
-
- itm_dummy1 Trait:_Unyielding Trait:_Unyielding 1  icon_unyielding 0  4096 0 0 0 0 100 0 0 0 0 0 0 0 0 0 0 0
-0
-
- itm_dummy2 Trait:_Unyielding Trait:_Unyielding 1  icon_unyielding 0  4096 0 0 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_torch Torch Torch 1  orc_club_a 0  6356995 9223635919737716976 11 0 2.5 100 0 0 0 0 11264 95 0 95 0 256 523

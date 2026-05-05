@@ -598,16 +598,16 @@ scripts = [
 		  (try_begin), #InVain: Charisma bonus
               (gt, ":difference", 0),
               (store_attribute_level, ":player_charisma", trp_player, ca_charisma),
+              (val_add, ":player_charisma", 6),
               (val_mul, ":difference", 100),
               (val_mul, ":difference", ":player_charisma"),
-              (val_div, ":difference", 1400), #starts to scale from 14, reduces below
+              (val_div, ":difference", 2000),
               (val_max, ":difference", 1),
           (try_end),
           
           # gain influence = 1/8 rank points gain (rounded) Was 1/10
           (faction_get_slot, ":old_inf", ":fac", slot_faction_influence),
           (store_add, ":inf_dif", ":difference", 4), #this is to make sure that we get 1 influence starting at 4 rank points
-          (val_div,   ":inf_dif", 8),
 
           #swy-- uninitialized globals default to zero,
           #   -- take advantage of this by adding one to get the saved multiplier:
@@ -618,6 +618,21 @@ scripts = [
           (val_mul,   ":inf_dif", ":inf_multiplier"),
           (val_div, ":inf_dif", 100),
           #swy--
+          
+
+          (try_begin), #fix rounding errors, this is relevant for early game 
+            (gt,   ":inf_dif", 0),
+            (assign, ":rest", ":inf_dif"),
+            (val_mod, ":rest", 8),
+            (val_add, "$tld_influence_rest", ":rest"),
+            (ge, "$tld_influence_rest", 8),
+            (val_sub, "$tld_influence_rest", 8),
+            (val_add, ":inf_dif", 8), #pre-division
+          (try_end),
+          
+          #final division
+          (val_div,   ":inf_dif", 8),
+
 
           (try_begin), #oathkeeper bonus
             (troop_slot_eq, "trp_traits", slot_trait_oathkeeper, 1),
@@ -1045,7 +1060,10 @@ scripts = [
 	(assign, ":party", "p_main_party"), # pay only for player party (no garrisons, for now)
     (troop_get_slot, ":reserve_party_cap", "trp_player", slot_troop_player_reserve_party),
     (troop_get_slot, ":reserve_party_ac", "trp_player", slot_troop_player_reserve_adv_camp),
-	
+	(store_skill_level, ":party_management", skl_inventory_management, "trp_player"),
+    (val_mul, ":party_management", 3),
+    (store_sub, ":reduction", 100, ":party_management"),
+    
 	(assign, ":n_tot_unpaid_troops",  0), # for all factions
     (assign, ":n_tot_unpaid_troops_reserve",  0), # for all factions
 	(assign, ":tot_spending",  0), # for all factions
@@ -1078,13 +1096,15 @@ scripts = [
 			
 			(call_script, "script_game_get_troop_wage", ":stack_troop",0 ),
 			(assign, ":cur_wage", reg0),
-			(val_mul, ":cur_wage", ":stack_size"),		
+			(val_mul, ":cur_wage", ":stack_size"),
+            (val_mul, ":cur_wage", ":reduction"),
 			
 			# up to 50% discont, if spent time indoor
 			(store_sub, ":total_payment", 8, "$g_cur_week_half_daily_wage_payments"), #between 0 and 4
 			(val_mul, ":cur_wage", ":total_payment"),
 		
-			(val_div, ":cur_wage", 8),
+			(val_div, ":cur_wage", 100),
+            (val_div, ":cur_wage", 8),
 		
 			(try_begin), (ge,  ":allowance",":cur_wage"), 
 				# CAN afford
@@ -1581,7 +1601,7 @@ scripts = [
 	(item_set_slot, "itm_dried_meat", slot_item_food_bonus, 5),
 	(item_set_slot, "itm_cattle_meat", slot_item_food_bonus, 7),
 	(item_set_slot, "itm_human_meat", slot_item_food_bonus, 6),
-	#(item_set_slot, "itm_lembas", slot_item_food_bonus, 20),
+	(item_set_slot, "itm_lembas", slot_item_food_bonus, 1),
 	(item_set_slot, "itm_maggoty_bread", slot_item_food_bonus, 2),
 	(item_set_slot, "itm_cram", slot_item_food_bonus, 3),
 	(item_set_slot, "itm_horse_meat", slot_item_food_bonus, 5),
@@ -2202,12 +2222,14 @@ scripts = [
     (assign, "$tld_start_war_by_day_or_level", 1), #0= by level (old setting), 1=by day (new setting)
     (assign, "$cheatmode_used", 0),
     (assign, "$tutorial_1_state", 0),
+	(assign, "$tld_influence_rest", 0),
+   	(assign, "$g_player_party_morale_modifier_captains", 0),
+    (assign, "$character_tutorial",0),
     
 	#Kham - Squelch compiler warnings
       
     (assign, "$hold_f1", 0),  
-	(assign, "$dormant_spawn_radius", 0),
-    (assign, "$gondor_reinforcement_event",0), #unused
+	(assign, "$dormant_spawn_radius", 0), 
 	(assign, "$gondor_reinforcement_event_menu",0), #unused
 
 	(val_mul, "$hold_f1", "$dormant_spawn_radius"),
@@ -2246,7 +2268,6 @@ scripts = [
 	(val_mul, "$hold_f1", "$animal_is_present"),
 	(val_mul, "$hold_f1", "$player_team_updated"),
 	(val_mul, "$hold_f1", "$terrain_condition"),
-    (val_mul, "$hold_f1", "$gondor_reinforcement_event"),
 	(val_mul, "$hold_f1", "$gondor_reinforcement_event_menu"),
 
 	#Kham - Squelch compiler warnings END
@@ -2485,8 +2506,6 @@ scripts = [
 
 	#Init Health Regeneration on Kill
 
-	(assign, "$g_wp_player_hr_active", 1),      # Set to 0 to prevent player regeneration.  1 to activate.
-   	(assign, "$g_wp_ai_hr_active", 1),       	  # Set to 0 to prevent AI regeneration.  1 to activate.
 
 	] or []) + [
 
@@ -5762,8 +5781,18 @@ scripts = [
       #(store_mul, ":loot_probability", player_loot_share, 2),
       (store_mul, ":loot_probability", player_loot_share, ":player_level"),
       (val_mul, ":loot_probability", "$g_strength_contribution_of_player"),
-      (party_get_skill_level, ":player_party_looting", "p_main_party", "skl_looting"),
-      (val_add, ":player_party_looting", 10),
+      #(party_get_skill_level, ":player_party_looting", "p_main_party", "skl_looting"),
+      (party_get_num_companion_stacks, reg10, "p_main_party"),
+      (assign, ":player_party_looting", 0),
+      (try_for_range, ":stack", 0, reg10),
+        (party_stack_get_troop_id, ":troop_no", ":stack"),
+        (troop_is_hero, ":troop_no"),
+        (store_skill_level, ":looting", ":troop_no", "skl_looting"),
+        (val_add, ":player_party_looting", ":looting"),
+      (try_end),
+      # (assign, reg10, ":player_party_looting"),
+      # (display_message, "@Cumulative Looting: {reg10}"),
+      (val_add, ":player_party_looting", 8),
       (val_mul, ":loot_probability", ":player_party_looting"), #InVain: X*(looting+10)^2/200 = X*0,5 ... X*2
       (val_mul, ":loot_probability", ":player_party_looting"),
       (val_div, ":loot_probability", 200),
@@ -11295,22 +11324,30 @@ scripts = [
         (neq, ":troop_no", "trp_player"),
         (neg|is_between, ":troop_no", soldiers_begin, soldiers_end),
         (neq, ":difference", 0),
-        
+
          #InVain: Charisma bonus
         (store_attribute_level, ":player_charisma", trp_player, ca_charisma),
+        (val_add, ":player_charisma", 6),
         (try_begin),
             (gt, ":difference", 0),
             (val_mul, ":difference", 100),
             (val_mul, ":difference", ":player_charisma"),
-            (val_div, ":difference", 1400), #starts to scale from 14, reduces below
+            (val_div, ":difference", 2000),
         (else_try),
             (val_mul, ":difference", 100),
             (val_div, ":difference", ":player_charisma"),
-            (val_div, ":difference", 10), #starts to scale from 10
+            (val_div, ":difference", 6),
         (try_end),
         
         (call_script, "script_troop_get_player_relation", ":troop_no"),
         (assign, ":old_effective_relation", reg0),
+
+        (try_begin), #reduce relation gain above 30 before the war starts
+            (ge, ":old_effective_relation", 30),
+            (eq, "$tld_war_began", 0),
+            (val_div, ":difference", 2),
+        (try_end),
+        
         (troop_get_slot, ":player_relation", ":troop_no", slot_troop_player_relation),
         (val_add, ":player_relation", ":difference"),
         (val_clamp, ":player_relation", -100, 101),
@@ -11358,19 +11395,24 @@ scripts = [
 
          #InVain: Charisma bonus
         (store_attribute_level, ":player_charisma", trp_player, ca_charisma),
+        (val_add, ":player_charisma", 6),
         (try_begin),
             (gt, ":difference", 0),
             (val_mul, ":difference", 100),
             (val_mul, ":difference", ":player_charisma"),
-            (val_div, ":difference", 1200), #starts to scale from 12, reduces below
-            (val_max, ":difference", 1),
+            (val_div, ":difference", 2000),
         (else_try),
             (val_mul, ":difference", 100),
-            (val_div, ":difference", 10), #starts to scale from 10
-            (val_min, ":difference", -1),
+            (val_div, ":difference", ":player_charisma"),
+            (val_div, ":difference", 6),
         (try_end),
       
       (party_get_slot, ":player_relation", ":center_no", slot_center_player_relation),
+      (try_begin), #reduce relation gain above 30 before the war starts
+          (ge, ":player_relation", 30),
+          (eq, "$tld_war_began", 0),
+          (val_div, ":difference", 2),
+      (try_end),
       (assign, reg1, ":player_relation"),
       (val_add, ":player_relation", ":difference"),
       (val_clamp, ":player_relation", -100, 100),
@@ -11505,20 +11547,26 @@ scripts = [
       # calculate the total number of guys and the cumulative level of the 
       # party.  
       (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
-      (assign, ":level_total", 0),
-      (assign, ":num_men", 0),
-      (try_for_range, ":i_stack", 0, ":num_stacks"),
+      (assign, ":level_total", 1), #avoid division by zero
+      (assign, ":num_men", 1), #count player
+      (assign, ":num_captains", 0),
+      (assign, ":npc_leadership", 0),
+      (try_for_range, ":i_stack", 1, ":num_stacks"), #omit player
          (party_stack_get_troop_id, ":stack_troop","p_main_party", ":i_stack"),
          (store_character_level, ":level", ":stack_troop"),         
          (try_begin),
             (troop_is_hero, ":stack_troop"),
             (val_add, ":num_men", 1), #InVain: Was 3, reduced to WB standart
             (val_add, ":level_total", ":level"),
+            (store_skill_level, ":lead", "skl_leadership", ":stack_troop"),
+            (val_add, ":npc_leadership", ":lead"),
          (else_try),
             (party_stack_get_size, ":stack_size","p_main_party",":i_stack"),
             (val_add, ":num_men", ":stack_size"),
             (val_mul, ":level", ":stack_size"),
             (val_add, ":level_total", ":level"),
+            (is_between, ":stack_troop", trp_greenwood_captain, trp_end_leaders),
+            (val_add, ":num_captains", ":stack_size"),
          (try_end),
       (try_end),
 
@@ -11560,14 +11608,20 @@ scripts = [
         (store_sub, ":penalty", ":num_men", ":party_size_limit"),
         (val_add, ":morale_penalty_for_size", ":penalty"),
       (try_end),
+      
+      
+      (assign, ":new_morale", 50),
 
       (assign, "$g_player_party_morale_modifier_party_size", ":morale_penalty_for_size"),
     
       (store_skill_level, ":player_leadership", "skl_leadership", "trp_player"),
       (store_mul, "$g_player_party_morale_modifier_leadership", ":player_leadership", 7),
-      (assign, ":new_morale", "$g_player_party_morale_modifier_leadership"),
+      (val_mul, ":npc_leadership", 3),
+      (val_add, "$g_player_party_morale_modifier_leadership", ":npc_leadership"),
+      (val_add, ":new_morale", "$g_player_party_morale_modifier_leadership"),
       (val_sub, ":new_morale", "$g_player_party_morale_modifier_party_size"),
-      (val_add, ":new_morale", 50),
+      (store_mul, "$g_player_party_morale_modifier_captains", ":num_captains", 9), #captains count like an npc with 3 leadership
+      (val_add, ":new_morale", ":num_captains"),
 
       (assign, "$g_player_party_morale_modifier_food", 0),
       (try_for_range, ":cur_edible", food_begin, food_end),
@@ -11581,7 +11635,11 @@ scripts = [
         (item_get_slot, ":food_bonus", "itm_horse_meat", slot_item_food_bonus),
         (val_add, "$g_player_party_morale_modifier_food", ":food_bonus"),
       (try_end),
-
+      
+      (try_begin), #For lembas (but only add 1, because the morale bonus is assigned elsewhere)
+      	(call_script, "script_cf_player_has_item_without_modifier", "itm_lembas", imod_rotten),
+        (val_add, "$g_player_party_morale_modifier_food", 1),
+      (try_end),
       (val_add, ":new_morale", "$g_player_party_morale_modifier_food"),
 
       (try_begin),

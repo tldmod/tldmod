@@ -664,7 +664,7 @@ qst_defend_village_party
 qst_raid_village_party
 qst_destroy_scout_camp_party
 play_ambient_sounds
-gondor_reinforcement_event
+character_tutorial
 first_time_town
 formations_tutorial
 former_players_kingdom
@@ -761,3 +761,5 @@ base_fog
 terrain_condition
 base_fog_color
 first_time
+tld_influence_rest
+g_player_party_morale_modifier_captains

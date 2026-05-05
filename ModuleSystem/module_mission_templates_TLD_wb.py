@@ -1841,11 +1841,10 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
     # Remove regeneration value if option not enabled for this unit type.
     (try_begin),  # Check if this is the player and regeneration is disabled.
       (eq, ":agent_killer", ":agent_player"),
-      (eq, "$g_wp_player_hr_active", 0),
+      #(eq, "$g_wp_player_hr_active", 0),
       (assign, ":health_regeneration", 0),
     (else_try),   # If not player assume AI troop and check if AI regen is disabled.
       (neq, ":agent_killer", ":agent_player"),  # To prevent player enabled, AI disabled conflicts.
-      (eq, "$g_wp_ai_hr_active", 0),
       (assign, ":health_regeneration", 0),
     (try_end),
     

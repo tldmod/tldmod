@@ -1,4 +1,4 @@
-1842
+1843
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -862,7 +862,7 @@ qstr_{***}__ {***}_-
 qstr_{***}_ {***}_
 qstr_{***}_+ {***}_+
 qstr_^No_food:___{reg7} ^No_food:__-{reg7}
-qstr_Current_party_morale Current_party_morale_is_{reg5}.^Current_party_morale_modifiers_are:^^Base_morale:__+50^Party_size:_{s2}{reg1}^Leadership:_{s3}{reg2}^Food_variety:_{s4}{reg3}{s5}^Special_items:_{s6}{reg6}^Recent_events:_{s7}{reg4}^TOTAL:__{reg5}
+qstr_Current_party_morale Current_party_morale_is_{reg5}.^Current_party_morale_modifiers_are:^^Base_morale:__+50^Party_size:_{s2}{reg1}^Leadership_(party):_{s3}{reg2}^Captains:_{s8}{reg8}^Food_variety:_{s4}{reg3}{s5}^Special_items:_{s6}{reg6}^Recent_events:_{s7}{reg4}^TOTAL:__{reg5}
 qstr_Defending Defending
 qstr_Gathering_army Gathering_army
 qstr_Besieging_{s11} Besieging_{s11}
@@ -878,6 +878,7 @@ qstr_{s11}_{s24}__{reg13} {s11}_{s24}_({reg13})_-_{reg21}_until_next_promotion^
 qstr_{s13}_{reg11}__with_ {s13}_{reg11}_(with_{s16})^
 qstr_{s15}_{reg12}__in_{s {s15}_{reg12}_(in_{s16})^
 qstr_{***}_={s10}=_^{s11}^^ {***}-={s10}=-^{s11}^^^{s13}^^^{s15}.
+qstr_Party_Management_dis Party_Management_discount_(party_only):_-{reg6}%
 qstr_Troop_upkeep__paid_e Troop_upkeep_(paid_every_four_days):^
 qstr_{s12}^^__{s4}:_{reg8 {s12}^^__{s4}:_{reg8}/{reg5}_Resource_Points_^Party:_{reg4}^Reserves:_{reg7}
 qstr_No_upkeep_costs No_upkeep_costs

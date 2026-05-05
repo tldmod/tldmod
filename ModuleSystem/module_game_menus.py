@@ -1617,18 +1617,16 @@ game_menus = [
     	(jump_to_menu,"$last_menu"),
     (try_end),]),    ]
  ),
-( "choose_skill",mnf_disable_all_keys|menu_text_color(0xFF0000FF),
- "{!}^^^^^^^^FOR DEVS:^*normally*, at this point^you would go to edit skills^and then face...","none",[
-	 (call_script, "script_start_as_one", "$player_current_troop_type"),
-     (try_begin),
-     (eq, cheat_switch, 0),
-     (jump_to_menu, "mnu_auto_return"), # comment this line to let devs skip skill/face editing
-     (try_end),
+( "choose_skill",mnf_disable_all_keys,
+ "Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.","none",[
+	 (set_background_mesh, "mesh_draw_war_starts"),
+     (call_script, "script_start_as_one", "$player_current_troop_type"),
 	],
-	[ ("skip",[],"{!}SKIP THAT: let me playtest now",[ #tick QoL options, disable tutorials
+	[ ("skip",[(eq, cheat_switch, 1),],"{!}SKIP THAT: let me playtest now",[ #tick QoL options, disable tutorials
         (assign, "$cheat_mode", 1), (assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0),(assign, "$formations_tutorial", 4),
         (assign, "$first_time_town",1),(jump_to_menu, "mnu_start_phase_2"),]),
-	  ("proc",[],"{!}Proceed as normal",[(jump_to_menu, "mnu_auto_return"),])]
+      ("see_info_pages",[],"TLD game concepts.",[(change_screen_notes, 5, 5),]),
+	  ("proc",[],"Proceed",[(jump_to_menu, "mnu_auto_return"),])]
  ),
 
 ##Kham Menu to Allow Easy Start 
@@ -1697,6 +1695,11 @@ game_menus = [
      (else_try),              (str_store_string, s3, "@{!} "),
     (try_end),
 
+    (assign, reg8, "$g_player_party_morale_modifier_captains"),
+    (try_begin),(gt, reg8, 0),(str_store_string, s8, "@{!} +"),
+     (else_try),              (str_store_string, s8, "@{!} "),
+    (try_end),
+
     (try_begin),
       (gt, "$g_player_party_morale_modifier_no_food", 0),
       (assign, reg7, "$g_player_party_morale_modifier_no_food"),
@@ -1727,7 +1730,7 @@ game_menus = [
     (try_begin),(gt, reg4, 0),(str_store_string, s7, "@{!} +"),
      (else_try),              (str_store_string, s7, "@{!} "),
     (try_end),
-    (str_store_string, s1, "@Current party morale is {reg5}.^Current party morale modifiers are:^^Base morale:  +50^Party size: {s2}{reg1}^Leadership: {s3}{reg2}^Food variety: {s4}{reg3}{s5}^Special items: {s6}{reg6}^Recent events: {s7}{reg4}^TOTAL:  {reg5}"),
+    (str_store_string, s1, "@Current party morale is {reg5}.^Current party morale modifiers are:^^Base morale:  +50^Party size: {s2}{reg1}^Leadership (party): {s3}{reg2}^Captains: {s8}{reg8}^Food variety: {s4}{reg3}{s5}^Special items: {s6}{reg6}^Recent events: {s7}{reg4}^TOTAL:  {reg5}"),
     ],
     
     [
@@ -1918,7 +1921,14 @@ game_menus = [
    [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
  ),
 ( "upkeep_report", 0,
- "{!}{s12}", "none",[ (set_background_mesh, "mesh_ui_default_menu_window"),
+ "{!}^{s13}^^{s12}", "none",[ (set_background_mesh, "mesh_ui_default_menu_window"),
+ 
+ 
+	(store_skill_level, reg6, skl_inventory_management, "trp_player"),
+    (val_mul, reg6, 3),
+    (str_clear, s13),
+    (str_store_string, s13, "@Party Management discount (party only): -{reg6}%"),
+    
     (assign, reg5, 0),
     (str_clear, s12),
     (troop_get_slot, ":reserve_party_cap", "trp_player", slot_troop_player_reserve_party),
