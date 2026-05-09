@@ -2285,7 +2285,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 4400),  #Rafa: Savegame version; InVain: Changed to _roughly_ show the rev number, helps with savegame inspection
+    (assign,"$savegame_version", 4410),  #Rafa: Savegame version; InVain: Changed to _roughly_ show the rev number, helps with savegame inspection
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -26438,6 +26438,20 @@ command_cursor_scripts = [
         (troop_set_slot, "trp_lorien_lord", slot_troop_lord_state, stls_passive),
     (try_end),
 
+    (try_begin), #reset a few globals for savegame compatibility
+        (lt, "$savegame_version", 4410),
+        (assign, "$savegame_version", 4410),
+		(assign, "$tld_influence_rest", 0),
+		(assign, "$battle_encounter_effects", 0),
+		(assign, "$options_horse_archer_ai", 1),
+		(assign, "$g_fast_mode", 0),
+		(assign, "$force_scene", 0),
+		(assign, "$FormAI_off", 0),
+		(assign, "$player_deploy_troops", 1),
+		(assign, "$tld_campaign_diffulty", 2),
+		(dialog_box, "@In the latest hotfix, some global variables had to be reset to their default values, for savegame compativility reasons. Please check your campaign difficulty and horse archery settings, if you have changed them before, and change it back to the value you want."),
+    (try_end),
+				
     (call_script, "script_update_all_notes"),
     
     ] or []) + [ 
