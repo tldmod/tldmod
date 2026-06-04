@@ -9783,7 +9783,25 @@ game_menus = [
                          (assign, "$bs_day_sound", "snd_moria_ambiance"),
                          (assign, "$play_ambient_sounds", 0),
                          ],"Go to the Glittering Caves"),
-						
+
+#menu no. 23
+  	  ("mountain_travel",[
+        (call_script, "script_get_faction_rank", "$ambient_faction"),
+        (store_mul, ":rank", reg0, 10),
+        (party_get_slot, ":relation", "$current_town", slot_center_player_relation),
+        (store_add, ":score", ":rank", ":relation"),
+        (ge, ":score", 35),
+        (party_slot_eq,"$current_town",slot_party_type, spt_town),
+        (eq,"$entry_to_town_forbidden",0), 
+        (store_faction_of_party, ":fac", "$current_town"),
+        (this_or_next|eq, ":fac", fac_gundabad),
+        (eq, ":fac", fac_moria),
+        (this_or_next|is_between, "$current_town", "p_town_gundabad", "p_town_goblin_south_outpost"), #exclude gladden fields and mirkwood outposts
+        (is_between, "$current_town", p_town_moria, p_town_dale),
+						], "Travel on hidden mountain paths.",
+						[(jump_to_menu, "mnu_mountain_travel"),
+                         ],"Travel on hidden mountain paths."),
+                         
       ("town_leave",[],"Leave...",[
             (assign, "$g_permitted_to_center",0),
             (change_screen_return,0),
@@ -13658,7 +13676,142 @@ game_menus = [
    	[("companion_promoted_event_close", [], "{s4}", [(change_screen_return)]),
    	
 ]),
+
+
+( "mountain_travel",0,
+    "As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.",
+    "none",
+    code_to_set_city_background + [ 
+     (call_script, "script_get_rank_title_to_s24", "$ambient_faction"),
+     (assign, ":destination_a", 0),
+     (assign, ":destination_b", 0),
+     (try_begin),
+        (eq, "$current_town", "p_town_troll_cave"),
+        (assign, ":destination_a", "p_town_moria"),
+     (else_try),
+        (eq, "$current_town", "p_town_moria"),
+        (assign, ":destination_a", "p_town_troll_cave"),
+        (assign, ":destination_b", "p_town_goblin_north_outpost"),
+     (else_try),
+        (eq, "$current_town", "p_town_goblin_north_outpost"),
+        (assign, ":destination_a", "p_town_moria"),
+        (assign, ":destination_b", "p_town_gundabad"),
+     (else_try),
+        (eq, "$current_town", "p_town_gundabad"),
+        (assign, ":destination_a", "p_town_goblin_north_outpost"),
+        (assign, ":destination_b", "p_town_gundabad_nw_outpost"),
+     (else_try),
+        (eq, "$current_town", "p_town_gundabad_nw_outpost"),
+        (assign, ":destination_a", "p_town_gundabad"),
+        (assign, ":destination_b", "p_town_gundabad_ne_outpost"),
+     (else_try),
+        (eq, "$current_town", "p_town_gundabad_ne_outpost"),
+        (assign, ":destination_a", "p_town_gundabad_nw_outpost"),
+     (try_end),
+     
+     (assign, reg11, ":destination_a"),
+     (assign, reg12, ":destination_b"),
+     (str_store_party_name, s11, reg11),
+     (str_store_party_name, s12, reg12),
+        
+    ],
+    [
+    ("mountain_trvl_option_a",[
+        (gt, reg11, 0),
+        (party_slot_eq, reg11, slot_center_destroyed, 0), #TLD
+        (store_faction_of_party, ":fac", reg11),
+        (store_relation, ":rel", ":fac", "$ambient_faction"),
+        (gt, ":rel", 0),
+    ],
+    "{!}{s11}",
+    [
+    (call_script, "script_mountain_travel", reg11),
+    (assign, "$auto_menu", "mnu_mountain_travel_arrived"),
+    (change_screen_map)
+    ]),
+    ("mountain_trvl_option_b",[
+        (gt, reg12, 0),
+        (party_slot_eq, reg12, slot_center_destroyed, 0), #TLD
+        (store_faction_of_party, ":fac", reg12),
+        (store_relation, ":rel", ":fac", "$ambient_faction"),
+        (gt, ":rel", 0),
+    ],
+    "{!}{s12}",
+    [
+    (call_script, "script_mountain_travel", reg12),
+    (assign, "$auto_menu", "mnu_mountain_travel_arrived"),
+    (change_screen_map)
+    ]),
+    ("go_back_dot",[],"Go back.",[(change_screen_return),]),]
+ ),
+
  
+( "mountain_travel_arrived",0,
+    "After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}",
+    "none",
+    code_to_set_city_background + [ 
+    (str_store_party_name, s4, "$current_town"),
+    (str_clear, s3), 
+    (str_clear, s5), 
+    (party_get_skill_level, ":pathfinding", "p_main_party", skl_pathfinding),
+    (val_mul, ":pathfinding", 15),
+    (party_get_num_companions, ":danger_score", "p_main_party"),
+    (val_sub, ":danger_score", ":pathfinding"),
+
+    # (assign, reg78, ":danger_score"),
+    # (display_message, "@danger score: {reg78}"),
+     
+    #race effect
+    (call_script, "script_party_get_dominant_race", "p_main_party"),
+    (try_begin),
+        (is_between, reg0, tf_orc_begin, tf_orc_end),
+        (str_store_string, s5, "@The orcs in your party enjoyed the underground journey."),
+        (call_script, "script_change_player_party_morale", 5),
+    (else_try),
+        (str_store_string, s5, "@The men in your party hated the underground journey."),
+        (call_script, "script_change_player_party_morale", -5),
+    (try_end),
+
+    (gt, ":danger_score", 10),
+    (inflict_casualties_to_party_group, "p_main_party", ":danger_score", "p_temp_casualties"),
+    (call_script, "script_print_casualties_to_s0", "p_temp_casualties", 0),
+    (str_store_string, s3, "@However, the dangerous journey took its toll: ^^{s0}"),
+    (try_begin),
+        (eq, "$tld_option_injuries",1),
+        (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+        (try_for_range, ":stack", 0, ":num_stacks"),
+            (gt, ":danger_score", 10),
+            (party_stack_get_troop_id, ":troop", "p_main_party", ":stack"),
+            (troop_is_hero, ":troop"),
+            (this_or_next|troop_slot_eq, ":troop", slot_troop_occupation, slto_player_companion),
+            (eq, ":troop", "trp_player"),
+            (troop_slot_eq, ":troop", slot_troop_wound_mask, 0), #only unwounded NPCs
+            (store_random_in_range, reg12,0,5),
+            (try_begin),
+                (eq,reg12,0),
+                (call_script, "script_injury_routine", ":troop"),
+                (troop_set_health, ":troop", 0),
+                (val_div, ":danger_score", 2),
+            (else_try),
+                (le,reg12,3),
+                (store_troop_health, ":hp", ":troop", 0), #relative health
+                (store_random_in_range, ":hp_loss", 2, ":danger_score"),
+                (val_sub, ":hp", ":hp_loss"),
+                (val_max, ":hp", 1),
+                (troop_set_health, ":troop", ":hp"),
+                (val_div, ":danger_score", 2),
+            (try_end),
+        (try_end),
+    (try_end),
+
+    ],
+    [("continue",[],"Continue...",[
+        (set_encountered_party, "$current_town"), 
+        (jump_to_menu, "mnu_town"),
+        (party_relocate_near_party,"p_main_party","$current_town",1),
+    ])]
+ ),  
+
 ] 
 
 ## quick scene chooser

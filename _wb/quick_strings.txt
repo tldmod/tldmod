@@ -792,6 +792,7 @@ qstr_{!}Notice:_Isengard_ {!}Notice:_Isengard_Last_Stand_quest_cancelled_for_sav
 qstr_{!}Hobbit_quest_abor {!}Hobbit_quest_aborted_for_compatibility_reasons._Hobbits_will_now_only_appear_after_certain_conditions_are_met.
 qstr_{!}This_update_has_c {!}This_update_has_changed_the_assignment_of_some_skills_to_their_attributes._If_you_would_like_to_review_your_companions'_skills,_you_can_now_import/export_them_if_you_ask_them_about_their_skills_from_the_party_menu.
 qstr_update_savegame:_swa update_savegame:_swap_spider_mount
+qstr_In_the_latest_hotfix In_the_latest_hotfix,_some_global_variables_had_to_be_reset_to_their_default_values,_for_savegame_compativility_reasons._Please_check_your_campaign_difficulty_and_horse_archery_settings,_if_you_have_changed_them_before,_and_change_it_back_to_the_value_you_want.
 qstr_{!}Something_wrong_n {!}Something_wrong,_not_enough_troops_to_remove
 qstr_{!}Troop:_{s6}___Lev {!}Troop:_{s6}_-_Level:_{reg1}
 qstr_{!}{reg6}_Centers_Le {!}{reg6}_Centers_Left_for_{s2}
@@ -1485,6 +1486,9 @@ qstr_{s1}_has_joined_{s12 {s1}_has_joined_{s12}
 qstr_{s3}_gained_faction_ {s3}_gained_faction_strength.
 qstr_This_is_ill_news_but This_is_ill_news,_but_it_won't_help_them.
 qstr_Hopeful_tidings_inde Hopeful_tidings_indeed!
+qstr_The_orcs_in_your_par The_orcs_in_your_party_enjoyed_the_underground_journey.
+qstr_The_men_in_your_part The_men_in_your_party_hated_the_underground_journey.
+qstr_However_the_dangerou However,_the_dangerous_journey_took_its_toll:_^^{s0}
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}DEBUG:_Player_Con {!}DEBUG:_Player_Control_Allies_RESET
 qstr_Party_morale_is_low. Party_morale_is_low._Troops_desert_from_your_party.

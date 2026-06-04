@@ -29320,6 +29320,30 @@ command_cursor_scripts = [
     (try_end),
 ]),
 
+#script_mountain_travel
+("mountain_travel", [
+    (set_fixed_point_multiplier, 100),
+	(store_script_param_1, ":destination"),
+    (store_distance_to_party_from_party, ":dist", "$current_town", ":destination"),
+    # (assign, reg78, ":dist"),
+    # (display_message, "@distance: {reg78}"),
+    (party_get_skill_level, ":pathfinding", "p_main_party", skl_pathfinding),
+    (val_mul, ":pathfinding", 5),
+    (val_mul, ":pathfinding", ":dist"),
+    (val_div, ":pathfinding", 100),
+    (val_sub, ":dist", ":pathfinding"),
+    (val_div, ":dist", 2), #tweakable
+    (val_max, ":dist", 2),
+    
+    (assign, "$current_town", ":destination"),
+    (assign, "$g_encountered_party", ":destination"),
+    # (assign, reg78, ":dist"),
+    # (display_message, "@wait time: {reg78}"),
+    (rest_for_hours, ":dist", 8, 0), #not attackable
+    (set_camera_follow_party, ":destination"),
+    
+]),
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts+ formAI_v5_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts
