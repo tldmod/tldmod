@@ -7556,7 +7556,8 @@ game_menus = [
            (assign, "$g_siege_battle_state", 1),
            #(assign, "$g_next_menu", "mnu_castle_besiege_inner_battle"),
            (assign, "$g_next_menu", "mnu_besiegers_camp_with_allies"), 
-           (jump_to_menu, "mnu_besiegers_camp_with_allies"),
+           (jump_to_menu, "mnu_battle_debrief"),
+           #(jump_to_menu, "mnu_besiegers_camp_with_allies"),
            (change_screen_mission),
           ]),
       ("join_siege_stay_back", [(call_script, "script_party_count_members_with_full_health", "p_main_party"),
@@ -9964,6 +9965,9 @@ game_menus = [
     	(str_clear, s2),
         (str_store_faction_name, s2, "$players_kingdom"),
         (assign, "$g_enemy_party", "$g_encountered_party"),
+        ] + (is_a_wb_menu==1 and [
+       (call_script, "script_reset_battle_size"),
+        ] or []) + [
         #(select_enemy, 0),
         (try_begin),
           (call_script, "script_party_count_members_with_full_health", "p_collective_enemy"),
@@ -9973,9 +9977,6 @@ game_menus = [
             (eq, "$g_battle_result", 1),
             (assign, ":enemy_finished", 1),
             (assign, ":next_menu", "mnu_total_victory"),
-            ] + (is_a_wb_menu==1 and [
-           (call_script, "script_reset_battle_size"),
-          	] or []) + [
             (assign, "$g_next_menu", -1),
             (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
 				(party_slot_ge, "$g_enemy_party", slot_center_destroy_on_capture, 1),
@@ -9994,35 +9995,28 @@ game_menus = [
             (ge, "$g_friend_fit_for_battle", 1),
             (assign, ":enemy_finished", 1),
             (assign, ":next_menu", "mnu_total_victory"),
-            ] + (is_a_wb_menu==1 and [
-           (call_script, "script_reset_battle_size"),
-         	] or []) + [
             (assign, "$g_next_menu", -1),
-          (else_try),
-          	(eq, "$g_battle_result", -1),
-          	(assign, "$player_allowed_siege", 0),
-          	] + (is_a_wb_menu==1 and [
-           (call_script, "script_reset_battle_size"),
-          	] or []) + [
-          	(str_store_faction_name, s4, "$players_kingdom"),
-          	(display_message, "@{s4}'s scouts have seen and reported your failure. You have brought shame to {s4} and the responsibility of this failure is yours alone.", color_bad_news),
-          	(call_script, "script_increase_rank", "$players_kingdom", -250),
           (try_end),
           (eq, ":enemy_finished", 1),
           (call_script, "script_party_wound_all_members", "$g_enemy_party"),
           (jump_to_menu, ":next_menu"),
-        (else_try),
-          #(call_script, "script_party_count_members_with_full_health", "p_collective_friends"),
-         # (assign, ":ally_num_soldiers", reg0),
+        (else_try), #check for total defeat
+          (call_script, "script_party_count_members_with_full_health", "p_collective_friends"),
+          (assign, ":ally_num_soldiers", reg0),
           (eq, "$g_battle_result", -1),
-          ] + (is_a_wb_menu==1 and [
-           (call_script, "script_reset_battle_size"),
-          ] or []) + [
-          #(eq, ":ally_num_soldiers", 0), #battle lost
-          #(assign, "$player_allowed_siege",0),
+          (eq, ":ally_num_soldiers", 0), #battle lost
 		  (assign, "$recover_after_death_menu", "mnu_recover_after_death_default"),
           (assign, "$g_next_menu", "mnu_tld_player_defeated"),
           (jump_to_menu, "mnu_total_defeat"),
+          (assign, "$player_allowed_siege", 0),
+          (str_store_faction_name, s4, "$players_kingdom"),
+          (display_message, "@{s4}'s scouts have seen and reported your failure. You lost the siege banner and have brought shame to {s4}.", color_bad_news),
+          (call_script, "script_increase_rank", "$players_kingdom", -100),
+        (else_try), #regular defeat or retreat
+          (eq, "$g_battle_result", -1),
+          (str_store_faction_name, s4, "$players_kingdom"),
+          (display_message, "@{s4} has taken note of your failed siege attempt.", color_bad_news),
+          (call_script, "script_increase_rank", "$players_kingdom", -50),
         (try_end),
         ],
     [
@@ -13806,7 +13800,9 @@ game_menus = [
 
     ],
     [("continue",[],"Continue...",[
+	   ] + (is_a_wb_menu==1 and [
         (set_encountered_party, "$current_town"), 
+	  ] or []) + [
         (jump_to_menu, "mnu_town"),
         (party_relocate_near_party,"p_main_party","$current_town",1),
     ])]
