@@ -104,7 +104,7 @@ qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_Thank_you_for_playin Thank_you_for_playing
-qstr_{!}_rev_543_wb__dev_ {!}_rev_543_wb_|_dev_^_Built_2026-06-07_14:54___
+qstr_{!}_rev_544_wb__dev_ {!}_rev_544_wb_|_dev_^_Built_2026-06-08_14:56___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -330,10 +330,10 @@ qstr_{!}DEBUG:_Trolls_for {!}DEBUG:_Trolls_for_Troll_quest_are_sped_down.
 qstr_{!}_{s61} {!}_{s61}
 qstr_{!}ERROR:_More_than_ {!}ERROR:_More_than_15_trade_routes_are_given_for_{s1}.
 qstr_Looted_your_items Looted_your_items
-qstr_nothing nothing
-qstr_Good Good
-qstr_Med Med
-qstr_Bad Bad
+qstr_{!}nothing {!}nothing
+qstr_{!}Good {!}Good
+qstr_{!}Med {!}Med
+qstr_{!}Bad {!}Bad
 qstr_You_gained_{reg84}_e You_gained_{reg84}_experience_from_your_intelligence.
 qstr_You_gained_{reg84}_w You_gained_{reg84}_weapon_points_from_your_agility.
 qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded,_{reg6}_routed

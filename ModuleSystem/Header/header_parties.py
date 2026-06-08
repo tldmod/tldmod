@@ -71,7 +71,7 @@ ai_bhvr_escort_party    = 10
 ai_bhvr_driven_by_party = 11
 
 #experience constants
-player_loot_share = 10
+player_loot_share = 9
 hero_loot_share = 3
 
 

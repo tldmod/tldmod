@@ -5766,37 +5766,39 @@ scripts = [
     [ (store_script_param_1, ":enemy_party"), #Enemy Party_id
 	  (faction_get_slot, ":faction_mask", "$players_kingdom", slot_faction_mask),
       (call_script, "script_calculate_main_party_shares"),(assign, ":num_player_party_shares", reg0),
-      #      (assign, ":num_ally_shares", reg1),
-      #      (store_add, ":num_shares",  ":num_player_party_shares", ":num_ally_shares"),
-      
-      #Calculate player loot probability
-      #      (assign, ":loot_probability", 100),
-      #      (val_mul, ":loot_probability", 10),
-      #      (val_div, ":loot_probability", ":num_shares"),
+      # (display_message, "@player party shares: {reg0}"),
 
 	  (assign, ":can_steal", 1),  # can steal objects of own faction or , of no faction
 	  (try_begin), (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), (assign, ":can_steal", 0),(try_end), # good guys don't steal
       # Loot the defeated party
       (store_character_level, ":player_level", trp_player),
-      #(store_mul, ":loot_probability", player_loot_share, 2),
+      (val_add, ":player_level", 3),
       (store_mul, ":loot_probability", player_loot_share, ":player_level"),
-      (val_mul, ":loot_probability", "$g_strength_contribution_of_player"),
+      # (assign, reg10, ":loot_probability"),
+      # (display_message, "@player_loot_share: {reg10}"),
+      (val_mul, ":loot_probability", "$g_strength_contribution_of_player"), #100 or less
+      # (assign, reg10, "$g_strength_contribution_of_player"),
+      # (display_message, "@g_strength_contribution_of_player: {reg10}"),
       #(party_get_skill_level, ":player_party_looting", "p_main_party", "skl_looting"),
       (party_get_num_companion_stacks, reg10, "p_main_party"),
       (assign, ":player_party_looting", 0),
       (try_for_range, ":stack", 0, reg10),
-        (party_stack_get_troop_id, ":troop_no", ":stack"),
+        (party_stack_get_troop_id, ":troop_no", "p_main_party", ":stack"),
         (troop_is_hero, ":troop_no"),
-        (store_skill_level, ":looting", ":troop_no", "skl_looting"),
+        (store_skill_level, ":looting", "skl_looting", ":troop_no"),
         (val_add, ":player_party_looting", ":looting"),
       (try_end),
       # (assign, reg10, ":player_party_looting"),
       # (display_message, "@Cumulative Looting: {reg10}"),
-      (val_add, ":player_party_looting", 8),
-      (val_mul, ":loot_probability", ":player_party_looting"), #InVain: X*(looting+10)^2/200 = X*0,5 ... X*2
-      (val_mul, ":loot_probability", ":player_party_looting"),
-      (val_div, ":loot_probability", 200),
+      (store_mul, ":rounding_score", ":player_party_looting", 2), #for later
+      (val_add, ":rounding_score", 100),
+      (store_mul, ":looting_score", ":player_party_looting", 10),
+      (val_add, ":looting_score", 40),
+      (val_mul, ":loot_probability", ":looting_score"),
+      (val_div, ":loot_probability", 100),
       (val_div, ":loot_probability", ":num_player_party_shares"),
+      # (assign, reg10, ":loot_probability"),
+      # (display_message, "@loot_probability vs player share: {reg10}"),
 
 	  (assign, ":dest", "trp_temp_troop"), #(try_begin),(eq,"$tld_option_crossdressing", 0),(assign, ":dest", "trp_temp_troop_2"),(try_end),
 	  (troop_clear_inventory,"trp_temp_troop"),
@@ -5821,6 +5823,8 @@ scripts = [
 	  
 	    (troop_clear_inventory,"trp_temp_troop"),
 		(troop_get_inventory_capacity, ":inv_cap", "trp_temp_troop_2"),
+		(troop_get_type, ":player_race","$g_player_troop"),
+        (assign, ":rest", 0),
 		
 		#(assign, reg10, ":inv_cap"), (display_message,"@{!}debug: starting scrapization over {reg10} objects..."),
 		
@@ -5832,22 +5836,17 @@ scripts = [
 				(item_get_type, ":it", ":item_id"),
 				(eq, ":it", itp_type_horse),
 				(try_begin),
-					(troop_get_type, ":race","$g_player_troop"),
-					(is_between, ":race", tf_orc_begin, tf_orc_end), # orcs:
+					(is_between, ":player_race", tf_orc_begin, tf_orc_end), # orcs:
 					(try_begin),
 						(is_between, ":item_id", item_warg_begin , item_warg_end),
 						(troop_add_item, "trp_temp_troop", ":item_id"), # keep any warg
 					(else_try),
 						(troop_add_item, "trp_temp_troop", "itm_horse_meat"), # turn any horse in meat
 					(try_end),
-				# (else_try),
-					# # non orcs: 
-					# (try_begin),
-						# (is_between, ":item_id", item_warg_begin , item_warg_end), # trash any warg
-					# (else_try),
-						# (troop_add_item, "trp_temp_troop", ":item_id"), # keep any horse
-					# (try_end),
 				(try_end),
+            (else_try),
+                (is_between, ":item_id", scraps_begin , scraps_end),
+				(troop_add_item, "trp_temp_troop", ":item_id"), # don't transform scraps
 			(else_try),
 				(eq, ":can_steal", 1), # if can steal...
 				(item_get_slot, reg10,  ":item_id", slot_item_faction),
@@ -5866,28 +5865,36 @@ scripts = [
 				# replace item with scrap
 				#(store_random_in_range, ":rand", 0, 100), (ge, ":rand", 75),
 				(store_item_value, ":val", ":item_id"),
+                (val_add, ":val", ":rest"), #rest from previous item
 				
 				(assign, reg20, ":val"),
 				(str_store_item_name,s20,":item_id"),
 				
 				# random rounding of values (so that average total values is kept the same)
-				(assign, ":rounding", 0),
-				(try_begin), (lt,":val",scrap_bad_value),   (store_random_in_range, ":rounding", 0, scrap_bad_value),
-				(else_try),  (lt,":val",scrap_medium_value),(store_random_in_range, ":rounding", 0, scrap_medium_value - scrap_bad_value),
-				(else_try),  (lt,":val",scrap_good_value),  (store_random_in_range, ":rounding", 0, scrap_good_value - scrap_medium_value),
+				# (assign, ":rounding", 0),
+				# (try_begin), (lt,":val",scrap_bad_value),   (store_random_in_range, ":rounding", 0, scrap_bad_value),
+				# (else_try),  (lt,":val",scrap_medium_value),(store_random_in_range, ":rounding", 0, scrap_medium_value - scrap_bad_value),
+				# (else_try),  (lt,":val",scrap_good_value),  (store_random_in_range, ":rounding", 0, scrap_good_value - scrap_medium_value),
+				# (try_end),
+                # (assign, reg21, ":rounding"),
+				# (val_add, ":val", ":rounding"), 
+                
+                #InVain: Instead of rounding, simply store the rest
+				(try_begin), (lt,":val",scrap_bad_value),   (assign, ":rest", ":val"),
+				(else_try),  (lt,":val",scrap_medium_value),(store_sub, ":rest", ":val", scrap_bad_value),
+				(else_try),  (lt,":val",scrap_good_value),  (store_sub, ":rest", ":val", scrap_medium_value),
 				(try_end),
-                (val_mul, ":rounding", ":player_party_looting"), #InVain: rounding*(looting+10)^2/200
-                (val_mul, ":rounding", ":player_party_looting"),
-                (val_div, ":rounding", 200), #=0,5...2,0
-				(val_add, ":val", ":rounding"), 
-				(assign, reg21, ":rounding"),
+                (assign, reg21, ":rest"),
+                
+                (val_mul, ":val", ":rounding_score"), #cumulative looting skill*102
+                (val_div, ":val", 100),
 				
-				(str_store_string, s22, "@nothing"),
-				(try_begin),(ge,":val",scrap_good_value),   (troop_add_item, "trp_temp_troop", "itm_metal_scraps_good"),  (str_store_string,s22,"@Good"),
-				(else_try), (ge,":val",scrap_medium_value), (troop_add_item, "trp_temp_troop", "itm_metal_scraps_medium"),(str_store_string,s22,"@Med"),
-				(else_try), (ge,":val",scrap_bad_value/2),    (troop_add_item, "trp_temp_troop", "itm_metal_scraps_bad"),   (str_store_string,s22,"@Bad"),
+				(str_store_string, s22, "@{!}nothing"),
+				(try_begin),(ge,":val",scrap_good_value),   (troop_add_item, "trp_temp_troop", "itm_metal_scraps_good"),  (str_store_string,s22,"@{!}Good"),
+				(else_try), (ge,":val",scrap_medium_value), (troop_add_item, "trp_temp_troop", "itm_metal_scraps_medium"),(str_store_string,s22,"@{!}Med"),
+				(else_try), (ge,":val",scrap_bad_value),    (troop_add_item, "trp_temp_troop", "itm_metal_scraps_bad"),   (str_store_string,s22,"@{!}Bad"),
 				(try_end),
-				#(display_message,"@{!}debug: turned a {s20} {reg20} (+{reg21}) into {reg22}..."),
+				#(display_message,"@{!}debug: turned a {s20} {reg20} (+{reg21}) into {s22} scraps..."),
 			(try_end),	  
 		(try_end),	  
       (try_end),	  
@@ -5904,47 +5911,12 @@ scripts = [
         (troop_add_item, "trp_temp_troop", ":item_no", ":item_modifier"),
       (try_end),
       (party_set_slot, "$g_enemy_party", slot_party_next_looted_item_slot, 0),
+
 	# put "goods" in loot if it was a caravan (or farmers)
-      (assign, ":num_looted_items",0),
-      (try_begin),
-        (party_slot_eq, "$g_enemy_party", slot_party_type, spt_kingdom_caravan),
-        (store_mul, ":plunder_amount", player_loot_share, 30),
-        (val_mul, ":plunder_amount", "$g_strength_contribution_of_player"),
-        (val_div, ":plunder_amount", 100),
-        (val_div, ":plunder_amount", ":num_player_party_shares"),
-        (try_begin),
-          (party_slot_eq, "$g_enemy_party", slot_party_type, spt_kingdom_caravan),
-		   #  (val_clamp, ":plunder_amount", 1, 50),
-          (reset_item_probabilities, 100),
-          (assign, ":range_min", trade_goods_begin),
-          (assign, ":range_max", trade_goods_end),
-        (else_try),
-          (val_div, ":plunder_amount", 5),
-		  #(val_clamp, ":plunder_amount", 1, 10),
-          (reset_item_probabilities, 1),
-          (assign, ":range_min", normal_food_begin),
-          (assign, ":range_max", food_end),
-        (try_end),
-        (store_sub, ":item_to_price_slot", slot_town_trade_good_prices_begin, trade_goods_begin),
-        (try_for_range, ":cur_goods", ":range_min", ":range_max"),
-          (store_add, ":cur_price_slot", ":cur_goods", ":item_to_price_slot"),
-          (party_get_slot, ":cur_price", "$g_enemy_party", ":cur_price_slot"),
-          (val_max, ":cur_price", 1), #Avoid division by zero
-          (assign, ":cur_probability", 100),
-          (val_mul, ":cur_probability", average_price_factor),
-          (val_div, ":cur_probability", ":cur_price"),
-          (val_mul, ":cur_probability", average_price_factor),
-          (val_div, ":cur_probability", ":cur_price"),
-          (val_mul, ":cur_probability", average_price_factor),
-          (val_div, ":cur_probability", ":cur_price"),
-          #(assign, reg0, ":cur_probability"),
-          (set_item_probability_in_merchandise, ":cur_goods", ":cur_probability"),
-        (try_end),
-        (troop_add_merchandise, "trp_temp_troop", itp_type_goods, ":plunder_amount"),
-        #(assign, reg5, ":plunder_amount"),
-        (val_add, ":num_looted_items", ":plunder_amount"),
-      (try_end),
+    #InVain: removed this, not needed in TLD. Eventually replace with custom system for supplies
+
 	# count how many objects were accumulated in total
+      (assign, ":num_looted_items",0),
       (troop_get_inventory_capacity, ":inv_cap", "trp_temp_troop"),
       (try_for_range, ":i_slot", 0, ":inv_cap"),
         (troop_get_inventory_slot, ":item_id", "trp_temp_troop", ":i_slot"),
@@ -5952,17 +5924,16 @@ scripts = [
         (val_add, ":num_looted_items",1),
       (try_end),
 
-      (try_begin), #if no loot at all, add a chance for one or two bad metal scraps
-        (eq, ":num_looted_items",0),
-        (store_random_in_range, ":rand", 0, 20),
-        (ge, ":player_party_looting", ":rand"),
-        (store_div, ":amount", ":player_party_looting", 10),
-        (troop_add_items, "trp_temp_troop", "itm_metal_scraps_bad", ":amount"),
-        (val_add, ":num_looted_items", ":amount"),
-      (try_end),
+      #add a small amount of low grade scraps for free
+      (val_div, ":player_party_looting", 5),
+      (val_add, ":player_party_looting", 1),
+      (store_random_in_range, ":amount", 1, ":player_party_looting"),
+      (troop_add_items, "trp_temp_troop", "itm_metal_scraps_bad", ":amount"),
+      (val_add, ":num_looted_items", ":amount"),
 
       (assign, reg0, ":num_looted_items"),
 ]),
+
 
 #script_calculate_main_party_shares:
 # Returns number of player party shares in reg0
@@ -5976,6 +5947,7 @@ scripts = [
         (try_begin),
           (neg|troop_is_hero, ":stack_troop"),
           (party_stack_get_size, ":stack_size","p_main_party",":i_stack"),
+          (val_min, ":stack_level", 25),
           (val_mul, ":stack_size", ":stack_level"),
           (val_add, ":num_player_party_shares", ":stack_size"),
         (else_try),
@@ -5989,6 +5961,7 @@ scripts = [
       (try_end),
       (assign, reg0, ":num_player_party_shares"),
 ]),
+
 
 #script_party_give_xp_and_gold:
 # INPUT: param1: destroyed Party-id
@@ -6169,12 +6142,12 @@ scripts = [
 	(else_try),
 		(set_visitor,17,":meeting_troop",":troop_dna"),
 	(try_end),
-	(call_script, "script_party_copy", "p_encountered_party_backup", ":meeting_party"),
-	(party_remove_members,"p_encountered_party_backup",":meeting_troop",1),
+	(call_script, "script_party_copy", "p_temp_party", ":meeting_party"),
+	(party_remove_members,"p_temp_party",":meeting_troop",1),
 	
 	#add company to an opponent talker cf_party_remove_random_regular_troop
 	(try_for_range, ":entry", 19, 30),
-		(call_script, "script_cf_party_remove_random_regular_troop", "p_encountered_party_backup"),
+		(call_script, "script_cf_party_remove_random_regular_troop", "p_temp_party"),
 		(store_random_in_range, ":rnd",1, 100000), # some random faces/equip for background troops
 		(set_visitor,":entry",reg0,":rnd"),
 	(try_end),

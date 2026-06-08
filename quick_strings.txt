@@ -1,4 +1,4 @@
-1843
+1847
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -228,10 +228,10 @@ qstr_{***}DEBUG:_Trolls_for {***}DEBUG:_Trolls_for_Troll_quest_are_sped_down.
 qstr_{***}_{s61} {***}_{s61}
 qstr_{***}ERROR:_More_than_ {***}ERROR:_More_than_15_trade_routes_are_given_for_{s1}.
 qstr_Looted_your_items Looted_your_items
-qstr_nothing nothing
-qstr_Good Good
-qstr_Med Med
-qstr_Bad Bad
+qstr_{***}nothing {***}nothing
+qstr_{***}Good {***}Good
+qstr_{***}Med {***}Med
+qstr_{***}Bad {***}Bad
 qstr_You_gained_{reg84}_e You_gained_{reg84}_experience_from_your_intelligence.
 qstr_You_gained_{reg84}_w You_gained_{reg84}_weapon_points_from_your_agility.
 qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded,_{reg6}_routed
@@ -1128,7 +1128,8 @@ qstr_You_have_already_fou You_have_already_found_all_persons_of_interest.
 qstr_the_captain_of_the_g the_captain_of_the_garrison,_and_the_civil_authority.
 qstr_and_the_captain_of_t and_the_captain_of_the_garrison._As_this_place_was_recently_captured,_it_has_not_civil_authority.
 qstr_You_also_heard_of_a_ You_also_heard_of_a_healer,_but_you_will_have_to_find_them_on_your_own.
-qstr_{s4}_s_scouts_have_s {s4}'s_scouts_have_seen_and_reported_your_failure._You_have_brought_shame_to_{s4}_and_the_responsibility_of_this_failure_is_yours_alone.
+qstr_{s4}_s_scouts_have_s {s4}'s_scouts_have_seen_and_reported_your_failure._You_lost_the_siege_banner_and_have_brought_shame_to_{s4}.
+qstr_{s4}_has_taken_note_ {s4}_has_taken_note_of_your_failed_siege_attempt.
 qstr_{s1}_s_Ship {s1}'s_Ship
 qstr_Time_passes... Time_passes...
 qstr_Forces_of_Good Forces_of_Good
@@ -1182,6 +1183,9 @@ qstr_{s1}_has_joined_{s12 {s1}_has_joined_{s12}
 qstr_{s3}_gained_faction_ {s3}_gained_faction_strength.
 qstr_This_is_ill_news_but This_is_ill_news,_but_it_won't_help_them.
 qstr_Hopeful_tidings_inde Hopeful_tidings_indeed!
+qstr_The_orcs_in_your_par The_orcs_in_your_party_enjoyed_the_underground_journey.
+qstr_The_men_in_your_part The_men_in_your_party_hated_the_underground_journey.
+qstr_However_the_dangerou However,_the_dangerous_journey_took_its_toll:_^^{s0}
 qstr_Breaking_camp... Breaking_camp...
 qstr_{***}DEBUG:_Player_Con {***}DEBUG:_Player_Control_Allies_RESET
 qstr_Party_morale_is_low. Party_morale_is_low._Troops_desert_from_your_party.

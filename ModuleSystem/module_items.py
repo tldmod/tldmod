@@ -285,6 +285,8 @@ items =[
 #************************************************************************************************
 ###Quest Items
 ["siege_supply","Supplies",[("ale_barrel",0)],itp_type_goods,0,96,weight(40)|abundance(70)|0,imodbits_none],
+
+#next two unused
 ["quest_wine","Wine",[("amphora_slim",0)],itp_type_goods,0,46,weight(40)|abundance(60)|max_ammo(50),imodbits_none],
 ["quest_ale","Ale",[("ale_barrel",0)],itp_type_goods,0,31,weight(40)|abundance(70)|max_ammo(50),imodbits_none],
 
