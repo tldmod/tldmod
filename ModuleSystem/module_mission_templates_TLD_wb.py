@@ -340,8 +340,12 @@ field_ai_triggers = [
                             (assign, ":inc_two_handers", 1),
                       (try_end),
                     (call_script, "script_weapon_use_backup_weapon", ":agent", ":inc_two_handers"), # Then equip a close weapon
+                    (position_move_y, pos1, 1000), 
+                    (agent_set_scripted_destination, ":agent", pos1), #try to get out if stuck!
                 (else_try),
                     (gt, ":dist", 500),
+                    (agent_clear_scripted_mode, ":agent"),
+                    (agent_force_rethink, ":agent"),
                     (neq, ":wielded", ":lance"), # Enemies farther than 5 meters and/or not fighting, and not using lance?
                     (neg|agent_slot_eq, ":agent", slot_team_shield_order, 2), #Not commanded to use side-arms
                     (agent_set_wielded_item, ":agent", ":lance"), # Then equip it!
@@ -393,18 +397,31 @@ field_ai_triggers = [
             (lt, ":shield_order", 0),
       
             (agent_get_position, pos1, ":agent"), # Find distance of nearest 3 enemies
-            (call_script, "script_get_closest3_distance_of_enemies_at_pos1", ":team", pos1),
-            (assign, ":avg_dist", reg0),
-            (assign, ":closest_dist", reg1),
+            
+            # (call_script, "script_get_closest3_distance_of_enemies_at_pos1", ":team", pos1),
+            # (assign, ":avg_dist", reg0),
+            # (assign, ":closest_dist", reg1),
+            (agent_ai_get_cached_enemy, ":enemy_agent", ":agent", 0), #InVain: get closest cached enemy instead
+            (ge, ":enemy_agent", 0),              
+            (agent_is_active, ":enemy_agent"),
+            (agent_is_alive, ":enemy_agent"),
+            (agent_is_human, ":enemy_agent"),
+            (agent_get_position, pos2, ":enemy_agent"),
+            (get_distance_between_positions, ":closest_dist", pos1, pos2),
+            
             (agent_get_wielded_item, ":wielded", ":agent", 0), # Get wielded
             (try_begin), #Weapon Use
-                (this_or_next|lt, ":closest_dist", 300), # Closest enemy within 3 meters?
-                (lt, ":avg_dist", 700), # Are the 3 enemies within an average of 7 meters?
-                (agent_get_combat_state, ":combat", ":agent"),
-                (gt, ":combat", 3), # Agent currently in combat? ...avoids switching before contact
+                # (this_or_next|lt, ":closest_dist", 300), # Closest enemy within 3 meters?
+                # (lt, ":avg_dist", 700), # Are the 3 enemies within an average of 7 meters?
+                # (agent_get_combat_state, ":combat", ":agent"),
+                # (gt, ":combat", 3), # Agent currently in combat? ...avoids switching before contact
+                (lt, ":closest_dist", 180), #InVain: only check closest enemy
                 (eq, ":wielded", ":spear"), # Still using spear?
                 (call_script, "script_weapon_use_backup_weapon", ":agent", 1), # Then equip a close weapon
             (else_try),
+                (gt, ":closest_dist", 400), #InVain: only switch back if enemy is farther away
+                (agent_get_combat_state, ":combat", ":agent"),
+                (eq, ":combat", 0),
                 (neq, ":wielded", ":spear"), # Enemies farther than 7 meters and/or not fighting, and not using spear?
                 (neg|agent_slot_eq, ":agent", slot_team_shield_order, 2),
                 (agent_set_wielded_item, ":agent", ":spear"), # Then equip it!                

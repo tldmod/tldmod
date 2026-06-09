@@ -29768,6 +29768,8 @@ if is_a_wb_script==1:
 					(gt, ":item", 0),
 					(item_get_type, ":weapontype", ":item"),
 					(eq, ":weapontype", itp_type_polearm),  # Is it a spear?
+                    (item_get_weapon_length, ":length", ":item"),
+                    (gt, ":length", 140), #only assign proper long spears, not shortened spears or axes
 					(agent_set_slot, ":agent", slot_agent_spear, ":item"), #Mark spearmen
 					(assign, ":end", ek_item_0), #loop Break
 				(try_end),

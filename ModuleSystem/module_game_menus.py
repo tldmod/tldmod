@@ -151,6 +151,7 @@ game_menus = [
 			(assign, ":i", centers_end),  # break
 		(try_end),
 		(call_script, "script_tld_party_relocate_near_party", "p_main_party", reg20, 5), # MV: was 16km - too far
+        (call_script, "script_move_party_to_hardcoded_locations", "p_main_party"), #Checks if party needs to be moved.
 	
 		# initialization of "search troop" menu (only once)  mtarini
 		(assign, "$menu_select_any_troop_search_race", len(race_names)),  # any race

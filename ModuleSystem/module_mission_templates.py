@@ -4413,6 +4413,7 @@ mission_templates = [ # not used in game
         (ge,"$attacker_reinforcement_stage",19),
         (eq, "$att_reinforcements_arrived", 1), #make sure this only triggers after a reinforcement
         #(display_message, "@attackers almost defeated!"),
+        (neg|main_hero_fallen),
         (question_box,"@Last attacker wave. Do you want to retreat?"),
     (else_try),  
         (lt, ":num_attackers", 7),
@@ -4421,6 +4422,7 @@ mission_templates = [ # not used in game
             (neg|agent_is_defender, ":player_agent"), 
             (agent_is_alive, ":player_agent"),
             #(display_message, "@attackers almost defeated!"),
+            (neg|main_hero_fallen),
             (question_box,"@Attackers almost defeated. Do you want to retreat?"),
             (assign, "$att_reinforcements_needed", 1),
         (else_try),
