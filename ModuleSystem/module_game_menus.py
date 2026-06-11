@@ -4827,7 +4827,7 @@ game_menus = [
 	("impose_quest_1",[],"{!}kill bandits",[(assign,"$cheat_imposed_quest","qst_blank_quest_17")]),
 	("impose_quest_2",[],"{!}mirkwood_sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
 	("impose_quest_3",[],"{!}qst_hunt_down_fugitive",[(assign,"$cheat_imposed_quest","qst_hunt_down_fugitive")]),
-	("impose_quest_4",[],"{!}Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
+	("impose_quest_4",[],"{!}qst_move_cattle_herd",[(assign,"$cheat_imposed_quest","qst_move_cattle_herd")]),
 	("impose_quest_5",[],"{!}Hunt Down Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_02")]),
 	("impose_quest_6",[],"{!}Night Bandits",[(assign,"$cheat_imposed_quest","qst_deal_with_night_bandits")]),
 	("impose_quest_7",[],"{!}qst_defend_village",[(assign,"$cheat_imposed_quest","qst_defend_village")]),
