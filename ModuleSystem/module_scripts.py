@@ -5900,18 +5900,21 @@ scripts = [
       (try_end),	  
 	  
 	  # adding any special loot from party "looted item" slots (item that where stolen by the party)
-      (try_for_range, ":i_loot", 0, num_party_loot_slots),
-        (store_add, ":cur_loot_slot", ":i_loot", slot_party_looted_item_1),
-        (party_get_slot, ":item_no", "$g_enemy_party", ":cur_loot_slot"),
-        (gt, ":item_no", 0),
-        (party_set_slot, "$g_enemy_party", ":cur_loot_slot", 0),
-        (val_sub, ":cur_loot_slot", slot_party_looted_item_1),
-        (val_add, ":cur_loot_slot", slot_party_looted_item_1_modifier),
-        (party_get_slot, ":item_modifier", "$g_enemy_party", ":cur_loot_slot"),
-        (troop_add_item, "trp_temp_troop", ":item_no", ":item_modifier"),
+      (party_get_num_attached_parties, ":num_attached", "$g_enemy_party"),
+      (try_for_range, ":attached_party_rank", 0, ":num_attached"),
+          (party_get_attached_party_with_rank, ":party_no", "$g_enemy_party", ":attached_party_rank"),
+          (try_for_range, ":i_loot", 0, num_party_loot_slots),
+            (store_add, ":cur_loot_slot", ":i_loot", slot_party_looted_item_1),
+            (party_get_slot, ":item_no", ":party_no", ":cur_loot_slot"),
+            (gt, ":item_no", 0),
+            (party_set_slot, ":party_no", ":cur_loot_slot", 0),
+            (val_sub, ":cur_loot_slot", slot_party_looted_item_1),
+            (val_add, ":cur_loot_slot", slot_party_looted_item_1_modifier),
+            (party_get_slot, ":item_modifier", ":party_no", ":cur_loot_slot"),
+            (troop_add_item, "trp_temp_troop", ":item_no", ":item_modifier"),
+          (try_end),
+          (party_set_slot, ":party_no", slot_party_next_looted_item_slot, 0),
       (try_end),
-      (party_set_slot, "$g_enemy_party", slot_party_next_looted_item_slot, 0),
-
 	# put "goods" in loot if it was a caravan (or farmers)
     #InVain: removed this, not needed in TLD. Eventually replace with custom system for supplies
 
@@ -8222,10 +8225,10 @@ scripts = [
           # (else_try),
           (assign, ":quest_target_item", "itm_siege_supply"), #TLD
           # (try_end),
-          (store_random_in_range, ":quest_target_amount", 4, 8),
-		  (val_div, ":player_level", 2),
-		  (val_add, ":quest_target_amount", ":player_level"),
-		  (val_clamp, ":quest_target_amount", 4, 30),
+          (store_random_in_range, ":quest_target_amount", 3, 8),
+		  (store_div, ":level_score", ":player_level", 2),
+		  (val_add, ":quest_target_amount", ":level_score"),
+		  (val_clamp, ":quest_target_amount", 4, 25),
           #(store_distance_to_party_from_party, ":dist", ":giver_center_no",":quest_target_center"),
           (assign, ":quest_gold_reward", ":cur_target_dist"),
           (val_add, ":quest_gold_reward", 2),
@@ -23740,10 +23743,10 @@ scripts = [
             (quest_get_slot, ":quest_object_troop", "qst_hunt_down_fugitive", slot_quest_object_troop),
             (set_visitor, 9, ":quest_object_troop"), #spawn in place of any NPC companion, so sceners won't make a fuss 
             (store_character_level, ":player_level", trp_player),
-            (store_mul, ":hp_shield", ":player_level", 7),
+            (store_mul, ":hp_shield", ":player_level", 4),
             (troop_set_slot, ":quest_object_troop", slot_troop_hp_shield, ":hp_shield"),
 
-            (gt, ":player_level", 10), #combat ai from player level 10
+            (gt, ":player_level", 12), #combat ai from player level 12
             (troop_set_slot, ":quest_object_troop", slot_troop_has_combat_ai, 1), 
         (try_end),
 
@@ -26803,7 +26806,10 @@ command_cursor_scripts = [
 		(ge, reg0, 10), 
 		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
 		(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
-
+        #InVain: Disable frontier fortresses
+        (neq, ":cur_target_center", "p_town_cair_andros"),
+        (neq, ":cur_target_center", "p_town_east_osgiliath"),
+        (neq, ":cur_target_center", "p_town_west_osgiliath"),
 
 		(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Center should not be destroyed
 		(ge, ":cur_target_center",0), #Should be valid center
@@ -27010,7 +27016,12 @@ command_cursor_scripts = [
 		(le, reg0, 20), 
 		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
 		(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
-
+        
+        #InVain: Skip frontier fortresses
+        (neq, ":cur_target_center", "p_town_cair_andros"),
+        (neq, ":cur_target_center", "p_town_east_osgiliath"),
+        (neq, ":cur_target_center", "p_town_west_osgiliath"),
+        
 		(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Center should not be destroyed
 		(ge, ":cur_target_center",0), #Should be valid center
 
@@ -28080,7 +28091,7 @@ command_cursor_scripts = [
 			(position_set_x, pos1, ":rand_x"),
 		(else_try),
 			(lt, ":x", -2900),
-			(gt, ":y", -21000),
+			(gt, ":y", -21800),
 			(store_random_in_range, ":rand_y", -21800, -22700),
 			(position_set_y, pos1, ":rand_y"),
             (lt, ":x", -6000), #make sure it isn't teleported into the lake
@@ -28132,7 +28143,19 @@ command_cursor_scripts = [
 		(party_set_position, ":party", pos1),
 		#(display_message, "@Scout Camp Party moved! - Misty Mountains"),
 	(try_end),
-
+    
+    #make sure that it's on walkable terrain
+    (assign, ":range", 1),
+    (try_for_range, ":unused", 0, 5),
+        (party_get_current_terrain, ":terrain", ":party"),
+        (this_or_next|le, ":terrain", rt_mountain),
+        (eq, ":terrain", rt_river),
+        (eq, ":terrain", rt_mountain_forest),
+        (map_get_land_position_around_position, pos2, pos1, ":range"),
+		(party_set_position, ":party", pos2),
+        (copy_position, pos1, pos2),
+        (val_add, ":range", 1),
+    (try_end),
 ]),
 
 #script_guild_master_update_troop_location_notes

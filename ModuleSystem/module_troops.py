@@ -3293,7 +3293,7 @@ str_127|agi_7|int_4|cha_4|level(35),0,knows_riding_10|knows_ironflesh_10|knows_p
 #spawned via scene prop
 ["human_prisoner","Human_Prisoner","{!}", tfg_helm,0,0,fac_neutral,
    [itm_prisoner_coll_chain,],
-      attr_orc_tier_4,wp_tier_6,knows_athletics_5|knows_power_strike_4,mercenary_face_1,mercenary_face_2],
+      attr_orc_tier_1,wp_tier_1,knows_athletics_1,mercenary_face_1,mercenary_face_2],
  
 # CC: Ambush troops here...
 
