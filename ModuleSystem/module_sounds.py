@@ -271,7 +271,7 @@ sounds = [
 ("horror_scream_woman",sf_priority_10|sf_vol_10,["horror_scream_woman.wav"]),
 ("horror_scream_orc"  ,sf_priority_10|sf_vol_10,["horror_scream_orc.wav"]),
 
-("warg_lone_woof",   sf_priority_3|sf_vol_5, ["warg_bark01.wav","warg_bark02.wav","warg_bark03.wav","warg_growl01.wav","warg_howl01.wav","warg_howl02.wav","warg_howl03.wav"]),
+("warg_lone_woof",   sf_priority_3|sf_vol_5, ["warg_bark01.wav","warg_bark02.wav","warg_bark03.wav","warg_growl01.wav","orc_beast01.wav","orc_beast02.wav","orc_beast03.wav","orc_beast04.wav","warg_howl01.wav","warg_howl03.wav"]), #warg_howl02 was bad
 #unused
 ("horse_snort_again",sf_priority_3|sf_vol_4,  ["horse_snort_1.wav","horse_snort_2.wav","horse_snort_3.wav","horse_snort_4.wav","horse_snort_5.wav"]),
 
@@ -362,20 +362,24 @@ sounds = [
 
 ("bear_strike",   sf_priority_6|sf_vol_10, ["troll_grunt_2.wav", "troll_death_1.wav", "troll_growl.wav",]), #troll_grunt_2.wav
 ("spider_strike", sf_priority_6|sf_vol_10, ["spider_battle01.wav", "trollSnarl.wav",]),
-("wolf_strike",   sf_priority_6|sf_vol_10, ["warg_howl01.wav", "warg_bark01.wav", "warg_bark02.wav", "warg_bark03.wav"]), #warg_bark01.wav warg_bark02.wav warg_bark03.wav
-#"orc_beast01.wav","orc_beast02.wav","orc_beast03.wav"
-
+("wolf_strike",   sf_priority_6|sf_vol_10, ["orc_beast04.wav", "warg_bark01.wav", "warg_bark02.wav", "warg_bark03.wav", "trollGruntle.wav"]),
 
 ("bees_people_ambiance"   	,sf_2d|sf_priority_8|sf_vol_4|sf_looping, ["bees_people.wav"]),
 ("bees_birds_ambiance"      ,sf_2d|sf_priority_8|sf_vol_5|sf_looping, ["bees_birds.wav"]),
 
 #doubles for muted hardcoded sounds
-("camel_sounds", 0,                      ["camelGargle.wav", "camelGroan01.wav", "camelGroan02.wav", "camelRoar01.wav"]),
-("camel_death" ,sf_priority_5|sf_vol_7, ["camelDeath01.wav", "camelDeath02.wav", "camelDeath03.wav"]),
+("camel_sounds", 0,                      ["camelGargle.wav", "camelGroan01.wav", "camelGroan02.wav", "camelRoar01.wav", "camelGargleRoar.wav", "camelWhinny.wav"]),
+("camel_death" ,sf_priority_5|sf_vol_7, ["camelDeath01.wav", "camelDeath03.wav"]), #camelDeath02 was a copy of camelDeath01
+("camel_hit" ,sf_priority_5|sf_vol_7, ["camelHit01.wav", "camelHit02.wav"]), #can also be used for boars
 
 ("army_good" ,sf_priority_5|sf_vol_9, ["gondor_army.wav"]),
 ("bell" ,sf_priority_5|sf_vol_7, ["dale_bell_1.wav","dale_bell_1_2_combined.wav", "dale_bell_2.wav", "dale_bell_3.wav"]),
 ("raven" ,sf_priority_5|sf_vol_7, ["evil_crow.wav"]),
 ("moria_horror" ,sf_priority_5|sf_vol_7, ["moria02.wav"]),
 ("wolf_howl",sf_vol_5, ["wolf_short.wav"]),
+("beast_groan" ,sf_priority_5|sf_vol_7, ["camelGroan01.wav", "camelGroan02.wav"]),
+("beast_roar" ,sf_priority_5|sf_vol_7, ["camelRoar01.wav", "camelRoar02.wav"]),
+("orc_beast" ,sf_priority_5|sf_vol_7, ["orc_beast01.wav", "orc_beast02.wav", "orc_beast03.wav", "camelRoar01.wav", "camelRoar02.wav", "trollGruntle.wav"]),
+("boar_sound" ,sf_priority_5|sf_vol_7, ["scla_boar.wav"]),
+("wolf_howl2",sf_vol_5, ["warg_howl01.wav", "warg_howl03.wav"]), #warg_howl02 was bad
 ]

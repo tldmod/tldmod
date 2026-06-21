@@ -284,10 +284,16 @@ snd_bees_people_ambiance = 282
 snd_bees_birds_ambiance = 283
 snd_camel_sounds = 284
 snd_camel_death = 285
-snd_army_good = 286
-snd_bell = 287
-snd_raven = 288
-snd_moria_horror = 289
-snd_wolf_howl = 290
+snd_camel_hit = 286
+snd_army_good = 287
+snd_bell = 288
+snd_raven = 289
+snd_moria_horror = 290
+snd_wolf_howl = 291
+snd_beast_groan = 292
+snd_beast_roar = 293
+snd_orc_beast = 294
+snd_boar_sound = 295
+snd_wolf_howl2 = 296
 
 

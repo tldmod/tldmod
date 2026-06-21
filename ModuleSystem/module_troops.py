@@ -419,6 +419,15 @@ if is_a_wb_troop == 0:
     itm_marker_hp_shield = itm_no_item
     itm_marker_scares_wargs = itm_no_item
     itm_marker_scares_horses = itm_no_item
+    itm_spider_mount = itm_spider
+    itm_bear_strong = itm_bear
+    itm_wolf_strong = itm_wolf
+    itm_boar = itm_no_item
+    itm_boar_strong = itm_no_item
+    itm_beast = itm_no_item
+    itm_beast_strong = itm_no_item
+    itm_kine = itm_no_item
+    itm_kine_strong = itm_no_item
 
 
 itm_blue_tunic = (itm_white_tunic_a, imod_well_made) #dale_tunic, basic blue
@@ -1812,18 +1821,24 @@ troops = [
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_2,wp_tier_2,knows_common,bandit_face1,bandit_face2],
  
+#unused
 ["kidnapped_girl","Kidnapped_Girl","Kidnapped_Girls",tf_hero| tf_female| tf_randomize_face| tf_unmoveable_in_party_window,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common|knows_riding_2,woman_face_1,woman_face_2],
+
+#unused
 ["refugee","Refugee","Refugees",tf_female| tfg_armor,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,refugee_face1,refugee_face2],
 ["peasant_woman","Peasant_Woman","Peasant_Women",tf_female| tf_randomize_face| tfg_armor|tfg_boots,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots, itm_practice_staff],
       attr_tier_1,wp_tier_1,knows_common,refugee_face1,refugee_face2],
+
+#unused
 ["caravan_master","Caravan_Master","Caravan_Masters",tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_2,wp_tier_2,knows_common|knows_riding_4|knows_ironflesh_3,merchant_face_1,merchant_face_2],
+#unused
 ["caravan_guard","Caravan_Guard","Caravan_Guards",tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_2,wp_tier_2,knows_common|knows_riding_2|knows_shield_1|knows_power_strike_2|knows_ironflesh_1,bandit_face1,bandit_face2],
@@ -1853,7 +1868,7 @@ troops = [
    [itm_khand_foot_lam,itm_splinted_greaves_good,],
       attr_tier_1,wp_tier_1,knows_common|knows_riding_2,khand_man1,khand_man2],
 
-#This troop is the troop marked as soldiers_end
+#These are all unused
 ["town_walker_1","Townsman","{!}",tf_gondor| tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
@@ -2125,7 +2140,7 @@ troops = [
       str_14|agi_8|int_7|cha_6|level(7),wp_one_handed(100)|wp_two_handed(115)|wp_polearm(115)|wp_archery(50)|wp_throwing(115),knows_common|knows_ironflesh_3|knows_power_strike_3|knows_power_throw_3|knows_weapon_master_2|knows_shield_3|knows_athletics_2|knows_riding_10|knows_horse_archery_10|knows_looting_4|knows_trainer_1|knows_prisoner_management_1|knows_leadership_2|knows_trade_3,0x00000001c000110336db6db6db6db6db00000000001db6db0000000000000000],
 ["npc8","Faniul","{!}",tf_female| tfg_ranged| tf_hero| tf_unmoveable_in_party_window,0,0,fac_dale,
    [itm_blue_tunic,itm_leather_boots_bad,itm_wimple_with_veil,itm_shortened_spear],
-      str_8|agi_6|int_11|cha_5|level(12),wp_one_handed(40)|wp_two_handed(40)|wp_polearm(60)|wp_archery(70)|wp_throwing(40),knows_common|knows_ironflesh_3|knows_power_strike_1|knows_power_draw_3|knows_weapon_master_2|knows_shield_3|knows_athletics_2|knows_riding_2|knows_looting_1|knows_spotting_2|knows_wound_treatment_4|knows_surgery_4|knows_first_aid_2|knows_prisoner_management_1|knows_leadership_1|knows_trade_2,0x0000000712003004589dae38ad69a64900000000001ec6cc0000000000000000],
+      str_8|agi_6|int_11|cha_5|level(12),wp_one_handed(40)|wp_two_handed(40)|wp_polearm(60)|wp_archery(70)|wp_throwing(40),knows_common|knows_ironflesh_3|knows_power_strike_1|knows_power_draw_3|knows_weapon_master_2|knows_shield_3|knows_athletics_2|knows_riding_2|knows_looting_1|knows_spotting_2|knows_wound_treatment_4|knows_surgery_4|knows_first_aid_2|knows_prisoner_management_1|knows_leadership_1|knows_trade_2,0x0000000d66001004589dae38ad69a64900000000001ec6cc0000000000000000],
 ["npc9","Gulm","{!}",tf_urukhai| tf_hero| tf_unmoveable_in_party_window,0,0,fac_isengard,
    [itm_isen_uruk_light_a,itm_uruk_chain_greaves,itm_isengard_mallet,itm_evil_gauntlets_a,],
       str_24|agi_17|int_8|cha_4|level(20),wp(185)|wp_throwing(185),knows_common|knows_ironflesh_10|knows_power_strike_5|knows_power_throw_5|knows_weapon_master_5|knows_shield_3|knows_athletics_7|knows_riding_2|knows_looting_5|knows_trainer_2,0x00000001b50000c2003d7dc5a4b2195c00000000000000000000000000000000],
@@ -3624,64 +3639,64 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 [itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_spider],
 str_30| agi_7| int_4| cha_4|level(20),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
-["spider_strong","Mirkwood Spider","Mirkwood Spiders", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_spider],
+["spider_strong","Great Spider","Great Spiders", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
+[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_spider_mount],
 str_30| agi_7| int_4| cha_4|level(20),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
 ["bear","Bear","Bears", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
 [itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_bear],
 str_127|agi_7|int_4|cha_4|level(35),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_7,orc_face7,orc_face2], #0x7D = str_127
 
-["bear_strong","Bear","Bears", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,(itm_bear, imod_lordly),],
+["bear_strong","Great Bear","Great Bears", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
+[itm_bear_strong, itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,],
 str_127|agi_7|int_4|cha_4|level(35),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_10,orc_face7,orc_face2], #0x7D = str_127
 
 ["wolf","Wolf","Wolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
+[itm_wolf, itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
 str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
-["wolf_strong","Wolf","Wolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
-str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
+["wolf_strong","Huge Wolf","Huge Wolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
+[itm_wolf_strong, itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
+str_30| agi_7| int_4| cha_4|level(25),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_5,orc_face7,orc_face2],
 
 ["werewolf","Werewolf","Werewolves", tf_orc|tf_mounted| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive| tf_unmoveable_in_party_window,0,0,fac_outlaws,
   [itm_warg_ghost_lance,itm_warg_ghost_armour, itm_empty_legs,itm_empty_hands,itm_empty_head,itm_werewolf],
-    str_30|agi_7|int_4|cha_4|level(25),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_7,orc_face7,orc_face2], #0x7D = str_127
+    str_30|agi_7|int_4|cha_4|level(40),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_7,orc_face7,orc_face2], #0x7D = str_127
 
 ["boar","Boar","Boars", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
+[itm_boar, itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
+str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_5,orc_face7,orc_face2],
+
+["boar_strong","Great Boar","Great Boars", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
+[itm_boar_strong, itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
+str_30| agi_7| int_4| cha_4|level(20),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_7,orc_face7,orc_face2],
+
+["evil_beast","Evil Beast","Evil Beast", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
+[itm_beast, itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
+str_30| agi_7| int_4| cha_4|level(25),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_5,orc_face7,orc_face2],
+
+["evil_beast_strong","Huge Evil Beast","Huge Evil Beasts", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
+[itm_beast_strong, itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
+str_30| agi_7| int_4| cha_4|level(30),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_6,orc_face7,orc_face2],
+
+["bull","Wild Bull","Wild Kine", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
+[itm_kine, itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
 str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
-["boar_strong","Boar","Boars", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
-str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
-
-["evil_beast","Great_Beast","Great_Beasts", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
-str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
+["bull_strong","Great Bull","Great Kine", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
+[itm_kine_strong, itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
+str_30| agi_7| int_4| cha_4|level(25),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
 ["stag","Stag","Stags", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
-str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
-
-["future_animal_1","Wolf","Wolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
-str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
-
-["future_animal_2","Wolf","Wolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
-str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
-
-["future_animal_3","Wolf","Wolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
+[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
 str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
 ["future_animal_4","Wolf","Wolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
+[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
 str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
 ["future_animal_5","Wolf","Wolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
+[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
 str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
 ["animals_end","{!}BUG","{!}BUG",0,0,0,fac_commoners,[],0,0,0,0],   
