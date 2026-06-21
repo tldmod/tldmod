@@ -67,8 +67,8 @@ tracks = [
 # ("fight_while_mounted_1", "fight_while_mounted_1.ogg",               mtf_sit_fight|mtf_sit_ambushed, 0),
 # ("fight_while_mounted_2", "fight_while_mounted_2.ogg",               mtf_sit_fight|mtf_sit_ambushed, 0),
   
-("infiltration_evil", "TLD_Infiltration_Evil.mp3", mtf_module_track|mtf_culture_evil|mtf_sit_town_infiltrate, mtf_culture_all),
-("infiltration_good", "TLD_Infiltrate_Good.mp3"  , mtf_module_track|mtf_culture_good|mtf_sit_town_infiltrate, mtf_culture_all),
+("infiltration_evil", "TLD_Infiltration_Evil.mp3", mtf_module_track|mtf_culture_evil|mtf_sit_town_infiltrate, 0),
+("infiltration_good", "TLD_Infiltrate_Good.mp3"  , mtf_module_track|mtf_culture_good|mtf_sit_town_infiltrate, 0),
 
 # ("lords_hall_swadian", "lords_hall_swadian.ogg"    ,                 mtf_culture_1|mtf_sit_travel, mtf_sit_night|mtf_sit_tavern),
 # ("lords_hall_goodmen", "TLD_Rohan_LordHall.mp3"    ,mtf_module_track|mtf_culture_2|mtf_sit_travel, mtf_sit_night|mtf_sit_tavern),
@@ -78,7 +78,7 @@ tracks = [
 # ("lords_hall_khand","TLD_Easterlings_LordsHall.mp3",mtf_module_track|mtf_culture_5|mtf_sit_travel, mtf_sit_night|mtf_sit_tavern|mtf_culture_all),
 
 # ("mounted_snow_terrain_calm", "mounted_snow_terrain_calm.ogg", mtf_sit_travel, mtf_sit_night|mtf_sit_tavern),
-("neutral_infiltration", "neutral_infiltration.ogg", mtf_sit_town_infiltrate, 0),
+("neutral_infiltration", "neutral_infiltration.ogg", 0, 0),
 # ("outdoor_beautiful_land", "outdoor_beautiful_land.ogg", mtf_sit_travel, mtf_sit_night|mtf_sit_tavern),
 ("retreat", "retreat.ogg", mtf_persist_until_finished|mtf_sit_killed, 0),
 

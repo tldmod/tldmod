@@ -417,7 +417,7 @@ ship 1 boat_sail_on 0.23 17 0 0.05 0 0
 ship_on_land 1 boat_sail_off 0.23 0 0 0 0 0
 
 
-castle_c 1 map_castle_c 0.35 0 0 0 0 0
+animal 0 icon_wolf 0.15 17 0.15 0.173 0 0
 
 
 mule 0 icon_mule 0.2 17 0.15 0.173 0 0

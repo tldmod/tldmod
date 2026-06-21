@@ -7498,6 +7498,54 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 ##### Raid Village - Kham - End #######
 ##### Village Quests - Kham - End ##########
 
+
+#### InVain Coop beast hunt mission start ####
+
+
+# [anyone,"lord_tell_mission", [
+  # (eq,"$random_quest_no","qst_hunt_beast_coop"),  
+  # (quest_get_slot, ":quest_target_troop", "qst_hunt_beast_coop", slot_quest_target_troop),
+  # (str_store_troop_name, s6, ":quest_target_troop"),
+  # (try_begin),
+    # (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    # (str_store_string, s5, "@Thank you for offering to help, {playername}.^^\
+# I have received reports of a {s6} stalking the surroundings. My men are worried. I will find and slay that beast. Will you join me on the hunt?"),
+  # (else_try),
+    # (str_store_string, s5, "@Care to join me on a hunt, {playername}.^^\
+# I have received reports of a {s6} stalking the surroundings. My men are worried. I will find and slay that beast. Will you join me on the hunt?"),
+  # (try_end)],
+    # "{!}{s5}", "lord_mission_hunt_beast_ask",
+# []],
+
+# [anyone|plyr,"lord_mission_hunt_beast_ask", [],
+    # "Yes, I will join you.", "lord_mission_hunt_beast_accept",
+# []],
+
+# [anyone|plyr,"lord_mission_hunt_beast_ask", [],
+    # "I do not have the time for this.", "lord_mission_hunt_beast_reject",
+# []],
+
+
+# [anyone,"lord_mission_hunt_beast_accept",[],
+  # "We shall await news of your success.","close_window",
+      # [
+      # ]],
+
+# [anyone,"lord_mission_hunt_beast_reject", [],
+    # "I see. That is disappointing.", "close_window",
+# [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
+    # (try_begin),
+      # (quest_slot_eq, "$random_quest_no", slot_quest_dont_give_again_remaining_days, 0),
+      # (quest_set_slot, "$random_quest_no", slot_quest_dont_give_again_remaining_days, 7),
+    # (try_end),
+ # (call_script,"script_safe_remove_party","$qst_destroy_scout_camp_party"),
+ # (call_script, "script_stand_back"),
+ # (assign, "$g_leave_encounter", 1),
+# ]],
+
+
+#### Kham Destroy Scout Camp Quest End #######
+
 # TLD - mirkwood sorcerer quest finish (GA, fixed by CppCoder) -- begin.
 
 [anyone|plyr,"lord_active_mission_1", [ 
@@ -12115,6 +12163,53 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   ],
 #### Kham Kill Quest Bandit Completion END ####
 
+#### hunt beast Start ####
+
+[anyone,"mayor_begin", [
+    (check_quest_active, "qst_hunt_beast_mayor"),
+    (check_quest_succeeded, "qst_hunt_beast_mayor"),
+    (quest_slot_eq, "qst_hunt_beast_mayor", slot_quest_giver_troop,"$g_talk_troop"),
+    (quest_get_slot, ":animal", "qst_hunt_beast_mayor", slot_quest_target_troop),
+    (str_store_troop_name, s9, ":animal"),
+    (try_begin),
+      (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+      (str_store_string, s5, "@Rumor has reached me that the {s9} has been slain. This was not a small deed. You have my thanks, {playername}."),
+    (else_try),
+      (str_store_string, s5, "@So, the {s9} is dead, I hear? Not bad, {playername}, It seems my trust was not misplaced."),
+    (try_end),
+    ],
+"{!}{s5}", "mayor_hunt_beast_quest_complete",[
+    (call_script, "script_finish_quest", "qst_hunt_beast_mayor", 100),
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
+    ]],
+
+[anyone|plyr,"mayor_hunt_beast_quest_complete", [
+    (try_begin),
+      (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+      (str_store_string, s5, "@It was indeed a fell beast. I am glad that it shall trouble these lands no more."),
+    (else_try),
+      (str_store_string, s5, "@That beast was dangerous enough, but it found its match in me."),
+    (try_end),
+    ],
+"{!}{s5}", "close_window",[
+    (call_script, "script_stand_back"),
+    ]],
+
+[anyone,"mayor_begin", [
+    (check_quest_active, "qst_hunt_beast_mayor"),
+    (check_quest_failed, "qst_hunt_beast_mayor"),
+    (quest_slot_eq, "qst_hunt_beast_mayor", slot_quest_giver_troop,"$g_talk_troop"),
+    (quest_get_slot, ":animal", "qst_hunt_beast_mayor", slot_quest_target_troop),
+    (str_store_troop_name, s9, ":animal"),],
+"I have heard that the {s9} slipped your grasp and that its trail was lost. It may have vanished for now, but the danger remains.", "mayor_hunt_beast_quest_failed",[
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
+    (cancel_quest, "qst_hunt_beast_mayor"),
+    ]],
+
+[anyone|plyr, "mayor_hunt_beast_quest_failed",[],
+  "This was no ordinary beast. I failed this time, but I shall not underestimate the wilds again.", "close_window",[],
+  ],
+#### Kham Kill Quest Bandit Completion END ####
 
 [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_food"),
                             (quest_slot_eq, "qst_deliver_food", slot_quest_target_center, "$g_encountered_party"),
@@ -12686,6 +12781,78 @@ There are {s6} moving about the area, thinking that they are in charge. No one i
 
 # Kill Quest Bandits END
 
+## hunt beast INIT START
+
+[anyone,"merchant_quest_requested", [
+  (eq,"$random_merchant_quest_no","qst_hunt_beast_mayor"),
+  (quest_get_slot, ":quest_target_troop", "qst_hunt_beast_mayor", slot_quest_target_troop),
+  (quest_get_slot, reg22, "qst_hunt_beast_mayor", slot_quest_target_amount),
+  (str_store_troop_name, s6, ":quest_target_troop"),
+  (str_store_party_name, s7, "$current_town"),
+  (try_begin),
+    (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (str_store_string, s5, "@Thank you for offering to help, {playername}.^^\
+A {s6} has been ranging the lands about {s7}, bringing fear wherever it goes. Few now dare to leave the safety of our walls. Hunt down the beast and slay it."),
+  (else_try),
+    (str_store_string, s5, "@You have come at a good time, {playername}.^^\
+A {s6} roams the lands about {s7}. It has slain our hunters, scattered our servants, and grown bold on its freedom. Such a creature cannot be suffered to wander unchecked."),
+  (try_end),], 
+"{!}{s5}", "merchant_quest_brief",[]],
+
+[anyone,"merchant_quest_brief", [
+  (eq,"$random_merchant_quest_no","qst_hunt_beast_mayor"),
+  (quest_get_slot, ":quest_target_troop", "qst_hunt_beast_mayor", slot_quest_target_troop),
+  (quest_get_slot, reg22, "qst_hunt_beast_mayor", slot_quest_target_amount),
+  (str_store_troop_name_plural, s6, ":quest_target_troop"),
+  (try_begin),
+    (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (str_store_string, s5, "@Be mindful that it so far has escaped all our hunters. Be warned: it has thus far escaped every hunter sent against it. A keen tracker and a handful of companions will serve you better than a great company. And when at last you draw near, take only a few men with you or it will surely try to flee."),
+  (else_try),
+    (str_store_string, s5, "@Track it down and kill it. It is a cunning beast and has slipped every snare laid for it thus far. Take a skilled tracker and a few reliable warriors. A large host will only drive it away before the trap can be sprung."),
+  (try_end),],
+ "{!}{s5}", "mayor_mission_told_hunt_beast",[]],
+
+[anyone|plyr,"mayor_mission_told_hunt_beast", [
+  (eq,"$random_merchant_quest_no","qst_hunt_beast_mayor"),
+  (try_begin),
+    (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (str_store_string, s7, "@Rest assured, we will bring an end to that beast."),  
+    (else_try),
+    (str_store_string, s7, "@It will not escape me. Before long, its carcass will lie at my feet."),
+  (try_end),
+  ],
+"{!}{s7}", "merchant_quest_taken",[
+    (quest_get_slot, ":quest_target_troop", "qst_hunt_beast_mayor", slot_quest_target_troop),
+    (quest_get_slot, ":ads_troop", "qst_hunt_beast_mayor", slot_quest_object_troop),
+    (quest_get_slot, ":ads_amount", "qst_hunt_beast_mayor", slot_quest_target_amount),
+    (str_store_troop_name, s6, ":quest_target_troop"),
+    (str_store_party_name, s7, "$current_town"),
+    (str_store_troop_name_link, s9, "$g_talk_troop"),
+    (setup_quest_text,"qst_hunt_beast_mayor"),
+    (str_store_string, s2, "@{s9} asked you to hunt down a {s6} in the vicinity of {s7}. ^^It will be easier if you have a skilled tracker and a small party. When you approach it, you will also need to bring only few men with you, or it will surely try to flee."),
+    (call_script, "script_start_quest", "qst_hunt_beast_mayor", "$g_talk_troop"),
+    (set_spawn_radius, 5),
+    (spawn_around_party, "$g_encountered_party", pt_none),
+    (assign, ":quest_target_party", reg0),
+    (quest_set_slot, "qst_hunt_beast_mayor", slot_quest_target_party, ":quest_target_party"),
+    (party_force_add_members, ":quest_target_party", ":quest_target_troop", 1),
+    (party_force_add_members, ":quest_target_party", ":ads_troop", ":ads_amount"),
+    (call_script, "script_move_party_to_hardcoded_locations", ":quest_target_party"),
+    (party_set_flags, ":quest_target_party", pf_hide_defenders|pf_quest_party, 1),
+    (party_set_faction, ":quest_target_party", fac_no_faction), #make sure it's not attacked by anyone
+    (party_set_name, ":quest_target_party", s6),
+    (party_set_icon, ":quest_target_party", "icon_animal"),
+    (party_set_slot, ":quest_target_party", slot_party_ai_state, spai_patrolling_around_center),
+    (party_set_ai_behavior, ":quest_target_party", ai_bhvr_patrol_location),
+    (party_set_ai_object, ":quest_target_party", "$current_town"),
+    (party_set_ai_patrol_radius, ":quest_target_party", 1),
+]],
+
+[anyone|plyr,"mayor_mission_told_hunt_beast", [
+  (eq,"$random_merchant_quest_no","qst_hunt_beast_mayor"),],
+"I cannot do this now.", "merchant_quest_stall",[]],
+
+# hunt beast END
 
 # deliver_food:
 [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_deliver_food"),], 

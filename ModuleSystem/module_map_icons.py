@@ -140,7 +140,7 @@ map_icons = map_icons_scribbler + [
 
 #  ("castle_a",mcn_no_shadow,"map_castle_a", 0.35,0),
 #  ("castle_b",mcn_no_shadow,"map_castle_b", 0.35,0),
-  ("castle_c",mcn_no_shadow,"map_castle_c", 0.35,0), #unused
+  ("animal",0,"icon_wolf", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),  
 #  ("castle_d",mcn_no_shadow,"map_castle_d", 0.35,0),
 #  ("town_snow",mcn_no_shadow,"map_town_snow_a", 0.35,0),
 

@@ -166,6 +166,13 @@ slot_item_horse_speed	= slot_item_needs_two_hands
 slot_item_horse_armor	= slot_item_thrust_damage
 slot_item_horse_charge	= slot_item_swing_damage
 
+#for later use
+slot_item_animal_sound_attack = 15
+slot_item_animal_sound_hit = 16
+slot_item_animal_sound_death = 17
+slot_item_animal_sound_random = 18
+slot_item_animal_sound_random_2 = 19
+
 ########################################################
 ##  AGENT SLOTS            #############################
 ########################################################
@@ -1318,7 +1325,7 @@ mayor_quests_begin  = "qst_move_cattle_herd"
 mayor_quests_end    = "qst_tld_introduction"
 
 mayor_quests_begin_2 = "qst_blank_quest_16" 
-mayor_quests_end_2 = "qst_blank_quest_18"
+mayor_quests_end_2 = "qst_blank_quest_19"
 
 army_quests_begin = "qst_deliver_cattle_to_army"
 army_quests_end   = mayor_quests_begin

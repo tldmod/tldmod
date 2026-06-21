@@ -2859,6 +2859,15 @@ scripts = [
 		(else_try),(eq, "$g_encountered_party_template", "pt_pyre" ),(jump_to_menu, "mnu_funeral_pyre"), #TLD 808
 		(else_try),(eq, "$g_encountered_party", "p_old_ford"   ),(jump_to_menu, "mnu_camp"),
 		(else_try),(eq, "$g_encountered_party_template", "pt_refugees"),(jump_to_menu, "mnu_refugees_quest"), #Kham
+		(else_try),
+            (this_or_next|quest_slot_eq, "qst_hunt_beast_mayor", slot_quest_target_party, "$g_encountered_party"),
+            (quest_slot_eq, "qst_hunt_beast_coop", slot_quest_target_party, "$g_encountered_party"),
+            (assign, "$tld_mission_companions", 0), #reset companions
+            (try_for_range, ":comp","fac_mission_companion_1","fac_mission_companion_11"), #clear companions
+                (faction_set_slot, ":comp", slot_fcomp_troopid, 0),
+                (faction_set_slot, ":comp", slot_fcomp_hp, 0),
+            (try_end),
+            (jump_to_menu, "mnu_hunt_beast"),  
 		(else_try),(jump_to_menu, "mnu_simple_encounter"),
 		(try_end),
 	(else_try), #Battle or siege
@@ -5330,6 +5339,10 @@ scripts = [
         (neg|check_quest_concluded, "qst_deal_with_looters"),
 		(eq, ":template_no", "pt_looters"),
 		(set_trigger_result, 65),
+    (else_try),
+        (this_or_next|quest_slot_eq, "qst_hunt_beast_mayor", slot_quest_target_party, "$g_encountered_party"),
+        (quest_slot_eq, "qst_hunt_beast_coop", slot_quest_target_party, "$g_encountered_party"),
+		(set_trigger_result, 80),
     (else_try),
 		(this_or_next|eq, ":template_no", "pt_looters"),
 		(this_or_next|eq, ":template_no", "pt_refugees"),
@@ -7917,8 +7930,7 @@ scripts = [
 				(assign, ":result", ":quest_no"),
 			(try_end),
 			] or [(eq, 0, 1),]) + [
-		(else_try),
-		
+		(else_try),		
 		  ##Kham: Defend village
           (eq, ":quest_no", "qst_defend_village"), 
           (try_begin),
@@ -8339,6 +8351,7 @@ scripts = [
           (assign, ":quest_expiration_days", 20),
           (assign, ":quest_dont_give_again_period", 18),
           (assign, ":result", ":quest_no"),
+          
         (else_try),
           (eq, ":quest_no", "qst_deal_with_night_bandits"),
           (neg|faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good), #TLD: evil factions only
@@ -8357,6 +8370,7 @@ scripts = [
           (assign, ":quest_expiration_days", 4),
           (assign, ":quest_dont_give_again_period", 10),
           (assign, ":result", ":quest_no"),
+          
         (else_try),
           (eq, ":quest_no", "qst_deliver_iron"),
           (eq, "$tld_option_crossdressing", 0), #only if Item Restriction is ON, so loot produces scraps
@@ -8424,6 +8438,85 @@ scripts = [
            (assign, ":quest_dont_give_again_period", 10),
            (assign, ":result", ":quest_no"),
 
+		(else_try),
+
+			#InVain: Hunt Beast (Mayor Quest)
+			] + (is_a_wb_script==1 and [
+			(eq, ":quest_no", "qst_hunt_beast_mayor"),
+			(try_begin),
+				(neg|check_quest_active, "qst_hunt_beast_mayor"),
+                (party_get_slot, ":theater", "$current_town", slot_center_theater),
+                
+                (assign, ":quest_target_amount", 1), #number of minor animals
+                (assign, ":upgrade_level", 8), #fallback
+                
+                (store_random_in_range, ":rand", 0, 10),
+                (try_begin),
+                    (this_or_next|eq, ":giver_center_no", p_town_woodsmen_village),
+                    (this_or_next|eq, ":giver_faction_no", fac_woodelf),
+                    (eq, ":giver_faction_no", fac_guldur),
+                    (ge, ":player_level", 4),
+                    (le, ":rand", 3),
+                    (assign, ":quest_target_troop", "trp_spider"),
+                    (assign, ":upgrade_level", 8), 
+                (else_try),
+                    (eq, ":theater", theater_N),
+                    (this_or_next|eq, ":giver_faction_no", fac_dale),
+                    (eq, ":giver_faction_no", fac_rhun),
+                    (ge, ":player_level", 5),
+                    (le, ":rand", 3),
+                    (assign, ":quest_target_troop", "trp_bull"),
+                    (assign, ":upgrade_level", 10),
+                (else_try),
+                    (this_or_next|eq, ":theater", theater_N),
+                    (eq, ":theater", theater_C),
+                    (neq, ":giver_faction_no", fac_beorn),
+                    (ge, ":player_level", 8),
+                    (le, ":rand", 2),
+                    (assign, ":quest_target_troop", "trp_bear"),
+                    (assign, ":upgrade_level", 14),
+                    (assign, ":quest_target_amount", 0), #bears are always alone
+                (else_try),
+                    (ge, ":player_level", 10),
+                    (le, ":rand", 2),
+                    (assign, ":quest_target_troop", "trp_evil_beast"),
+                    (assign, ":upgrade_level", 16),
+                (else_try),
+                    (le, ":rand", 5),
+                    (assign, ":quest_target_troop", "trp_boar"),
+                    (assign, ":upgrade_level", 10),
+                (else_try),
+                    (assign, ":quest_target_troop", "trp_wolf"),
+                    (assign, ":upgrade_level", 8),
+                (try_end),
+                
+                (assign, ":quest_object_troop", ":quest_target_troop"),
+                
+                (try_begin),
+                    (ge, ":player_level", ":upgrade_level"),
+                    (val_add, ":quest_target_troop", 1), #stronger version
+                (try_end),
+                
+                (try_begin),
+                    (gt, ":quest_target_amount", 0),
+                    (store_div, ":max_amount", ":player_level", 3),
+                    (store_sub, ":min_amount", ":player_level", ":upgrade_level"),
+                    (store_random_in_range, ":quest_target_amount", ":min_amount", ":max_amount"),
+                (try_end),
+
+                #copied from troublesome bandits
+                (assign, ":quest_gold_reward", ":player_level"), #assume 1-20
+                (val_add, ":quest_gold_reward", 10), #11-31
+                (val_mul, ":quest_gold_reward", 40), #ca 400-1200
+                (assign, ":quest_giver_fac_str_effect", 20),
+                (store_mul, ":quest_xp_reward", ":quest_gold_reward", 4),
+                (assign, ":quest_rank_reward", 12),
+                (assign, ":quest_importance", 6),
+                (assign, ":quest_expiration_days", 30),
+                (assign, ":quest_dont_give_again_period", 7),
+                (assign, ":result", ":quest_no"),
+			(try_end),
+			] or [(eq, 0, 1),]) + [
         (else_try),
 
 			##Kham - Reinforce Center
@@ -17352,7 +17445,7 @@ scripts = [
      (complete_quest, ":quest_no"),
      (try_begin),
        (this_or_next|is_between, ":quest_no", mayor_quests_begin, mayor_quests_end),
-       (is_between, ":quest_no", "qst_blank_quest_16", "qst_blank_quest_18"), 
+       (is_between, ":quest_no", mayor_quests_begin_2, mayor_quests_end_2), 
        (assign, "$merchant_quest_last_offerer", -1),
        (assign, "$merchant_offered_quest", -1),
      (try_end),
@@ -17384,7 +17477,7 @@ scripts = [
      (cancel_quest, ":quest_no"),
      (try_begin),
        (this_or_next|is_between, ":quest_no", mayor_quests_begin, mayor_quests_end),
-       (is_between, ":quest_no", "qst_blank_quest_16", "qst_blank_quest_18"), 
+       (is_between, ":quest_no", mayor_quests_begin_2, mayor_quests_end_2), 
        (assign, "$merchant_quest_last_offerer", -1),
        (assign, "$merchant_offered_quest", -1),
      (try_end),

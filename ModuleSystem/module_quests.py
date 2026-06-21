@@ -276,6 +276,7 @@ quests = [
   "{!}None"
 ),
 
+#Sea battle
 ("blank_quest_03", "{!}Sea Battle", qf_random_quest,
   "{!}None"
 ),
@@ -295,7 +296,8 @@ quests = [
   "{!}Placeholder"
 ),
 
-("blank_quest_07", "{!}Placeholder", qf_random_quest,
+# hunt beast with lord
+("hunt_beast_coop", "{!}hunt_beast_coop", qf_random_quest,
   "{!}Placeholder"
 ),
 
@@ -333,16 +335,17 @@ quests = [
 
 # Lets put mayor quests here
 
-
+# Reinforce center
 ("blank_quest_16", "{!}Reinforce Center", qf_random_quest,
   "{!}Placeholder"
 ),
 
+#Kill Quest Bandit
 ("blank_quest_17", "{!}Slay {reg22} {s6} in battles", qf_random_quest,
   "{!}Placeholder"
 ),
 
-("blank_quest_18", "{!}Placeholder", qf_random_quest,
+("hunt_beast_mayor", "{!}hunt_beast_mayor", qf_random_quest,
   "{!}Placeholder"
 ),
 
