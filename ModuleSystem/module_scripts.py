@@ -7768,23 +7768,61 @@ scripts = [
 		(else_try),
 
 			##Kham - Defend refugees
-			#(eq, cheat_switch, 1),
-			#(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
 			(eq, ":quest_no", "qst_defend_refugees"),
 			(try_begin),
 				(eq, "$tld_war_began", 1),
 				(neg|check_quest_active,"qst_defend_refugees"),
-				(call_script, "script_cf_init_quest_defend_refugees"),
+                (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+                (eq, ":side", faction_side_good),
+                (ge, "$g_talk_troop_faction_relation", 0),
+                (this_or_next|neq, "$g_talk_troop_faction", "fac_lorien"), #Elves don't care about the refugees
+                (			  neq, "$g_talk_troop_faction", "fac_woodelf"), #Elves don't care about the refugees
+                (store_character_level, ":player_level", "trp_player"),
+                (is_between, ":player_level", 14, 21),
+                (assign, ":giver_center_no", -1),
+                (troop_get_slot, ":giver_party_no", "$g_talk_troop", slot_troop_leaded_party),
+                (try_begin),
+                    (gt, ":giver_party_no", 0),
+                    (party_get_attached_to, ":giver_center_no", ":giver_party_no"),
+                (else_try),
+                    (is_between, "$g_encountered_party", centers_begin, centers_end),
+                    (assign, ":giver_center_no", "$g_encountered_party"),
+                (try_end),
+                (gt, ":giver_center_no", 0),#Skip if lord is outside the center
+                (eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
 
-				(assign, ":quest_target_party_template", reg55),		
-				(assign, ":quest_object_center", reg56),	
-				(assign, ":quest_target_center", reg57),	
-				(assign, ":quest_importance", reg58),	
-				(assign, ":quest_xp_reward", reg59),					
-				(assign, ":quest_gold_reward", reg60),					
-				(assign, ":quest_rank_reward", reg61),						
-				(assign, ":quest_expiration_days", reg62),					
-				(assign, ":quest_dont_give_again_period", reg63),
+                (assign, ":quest_object_center", ":giver_center_no"), #TLD: just start from the same town
+                (call_script, "script_cf_get_random_friendly_center_in_theater", "p_main_party",),
+                (assign, ":quest_target_center", reg0),
+                (store_faction_of_party, ":center_faction", ":quest_target_center"),
+                (try_begin),
+                    (this_or_next|eq, ":center_faction", "fac_lorien"),
+                    (this_or_next|eq, ":center_faction", "fac_woodelf"),
+                    (			  eq, ":center_faction", "fac_imladris"),
+                    (try_for_range, ":beorn_center", "p_town_woodsmen_village", "p_town_moria"),
+                        (party_slot_eq, ":beorn_center", slot_center_destroyed, 0),
+                        (assign, ":quest_target_center", ":beorn_center"),
+                    (try_end),
+                (try_end),
+                (call_script, "script_get_tld_distance", "p_main_party", ":quest_target_center"),
+                (ge, reg0, 10), 
+                (neq, ":quest_target_center", ":giver_center_no"),#Skip current center
+                (neq,":quest_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
+                #InVain: Disable frontier fortresses
+                (neq, ":quest_target_center", "p_town_cair_andros"),
+                (neq, ":quest_target_center", "p_town_east_osgiliath"),
+                (neq, ":quest_target_center", "p_town_west_osgiliath"),
+
+                (party_slot_eq, ":quest_target_center", slot_center_destroyed, 0), #Center should not be destroyed
+                (ge, ":quest_target_center",0), #Should be valid center
+
+				(assign, ":quest_target_party_template", "pt_refugees"),
+				(assign, ":quest_importance", 8),	
+				(assign, ":quest_xp_reward", 400),					
+				(assign, ":quest_gold_reward", 750),					
+				(assign, ":quest_rank_reward", 18),						
+				(assign, ":quest_expiration_days", 15),					
+				(assign, ":quest_dont_give_again_period", 10),
 
 				(assign, ":result", ":quest_no"),					
 			(try_end),
@@ -7797,17 +7835,59 @@ scripts = [
 			(eq, ":quest_no", "qst_hunt_down_refugees"),
 			(try_begin),
 				(neg|check_quest_active,"qst_hunt_down_refugees"),
-				(call_script, "script_cf_init_quest_hunt_refugees"),
+                (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+                (neq, ":side", faction_side_good),
+                (ge, "$g_talk_troop_faction_relation", 0),
+                (store_character_level, ":player_level", "trp_player"),
+                (is_between, ":player_level", 14, 21),
+                (assign, ":giver_center_no", -1),
+                (troop_get_slot, ":giver_party_no", "$g_talk_troop", slot_troop_leaded_party),
+                (try_begin),
+                    (gt, ":giver_party_no", 0),
+                    (party_get_attached_to, ":giver_center_no", ":giver_party_no"),
+                (else_try),
+                    (is_between, "$g_encountered_party", centers_begin, centers_end),
+                    (assign, ":giver_center_no", "$g_encountered_party"),
+                (try_end),
+                (gt, ":giver_center_no", 0),#Skip if lord is outside the center
+                (neq, ":giver_center_no", "p_town_morannon"), #Morannon is too far from any fiefs.
+                (eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
 
-				(assign, ":quest_target_party_template", reg55),		
-				(assign, ":quest_object_center", reg56),	
-				(assign, ":quest_target_center", reg57),	
-				(assign, ":quest_importance", reg58),	
-				(assign, ":quest_xp_reward", reg59),					
-				(assign, ":quest_gold_reward", reg60),					
-				(assign, ":quest_rank_reward", reg61),						
-				(assign, ":quest_expiration_days", reg62),					
-				(assign, ":quest_dont_give_again_period", reg63),
+                (assign, ":quest_object_center", ":giver_center_no"), #TLD: just start from the same town
+                (call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party",),
+                (assign, ":cur_target_center", reg0),
+                (store_faction_of_party, ":center_faction", ":cur_target_center"),
+                (try_begin),
+                    (this_or_next|eq, ":center_faction", "fac_lorien"),
+                    (this_or_next|eq, ":center_faction", "fac_woodelf"),
+                    (			  eq, ":center_faction", "fac_imladris"),
+                    (try_for_range, ":beorn_center", "p_town_woodsmen_village", "p_town_moria"),
+                        (party_slot_eq, ":beorn_center", slot_center_destroyed, 0),
+                        (assign, ":cur_target_center", ":beorn_center"),
+                    (try_end),
+                (try_end),
+                (call_script, "script_get_tld_distance", "p_main_party", ":cur_target_center"),
+                #(display_log_message, "@DEBUG: Distance {reg0}", color_bad_news),
+                (le, reg0, 20), 
+                (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
+                (neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
+                
+                #InVain: Skip frontier fortresses
+                (neq, ":cur_target_center", "p_town_cair_andros"),
+                (neq, ":cur_target_center", "p_town_east_osgiliath"),
+                (neq, ":cur_target_center", "p_town_west_osgiliath"),
+                
+                (party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Center should not be destroyed
+                (ge, ":cur_target_center",0), #Should be valid center
+                
+                (assign, ":quest_target_center", ":cur_target_center"),
+				(assign, ":quest_target_party_template", "pt_refugees"),
+				(assign, ":quest_importance", 8),	
+				(assign, ":quest_xp_reward", 300),					
+				(assign, ":quest_gold_reward", 600),					
+				(assign, ":quest_rank_reward", 9),						
+				(assign, ":quest_expiration_days", 10),					
+				(assign, ":quest_dont_give_again_period", 10),
 
 				(assign, ":result", ":quest_no"),	
 			(try_end),
@@ -7818,17 +7898,74 @@ scripts = [
 			(eq, ":quest_no", "qst_sea_battle"),
 			(try_begin),
 				(neg|check_quest_active, "qst_sea_battle"),
-				(call_script, "script_cf_init_quest_sea_battle"),
+                (store_character_level, ":player_level", "trp_player"),
+                (ge, ":player_level", 15),
+                
+                #possible quest givers
+                (this_or_next|eq, "$g_talk_troop", "trp_knight_1_3"), #Imrahil
+                (this_or_next|eq, "$g_talk_troop", "trp_gondor_lord"), #Denethor
+                (this_or_next|eq, "$g_talk_troop", "trp_knight_1_4"), #Orthalion (Pelargir Lord)
+                (this_or_next|eq, "$g_talk_troop", "trp_dale_lord"), #Brand
+                (this_or_next|is_between, 	  "$g_talk_troop", "trp_knight_5_1", "trp_knight_5_6"), # Other Dale Lords 
+                (this_or_next|eq, "$g_talk_troop", "trp_umbar_lord"), #Tulmir
+                (this_or_next|eq, "$g_talk_troop", "trp_rhun_lord"), #Jarl_Helcaroth
+                (this_or_next|is_between, "$g_talk_troop", "trp_knight_3_1", "trp_knight_3_6"), #Umbar Lords
+                (is_between, "$g_talk_troop", "trp_knight_2_11", "trp_knight_2_16"), #Rhun Lords
 
-				(assign, ":quest_object_troop", reg55),
-				(assign, ":quest_object_center", reg56),	
-				(assign, ":quest_target_center", reg57),	
-				(assign, ":quest_importance", reg58),	
-				(assign, ":quest_xp_reward", reg59),					
-				(assign, ":quest_gold_reward", reg60),					
-				(assign, ":quest_rank_reward", reg61),						
-				(assign, ":quest_expiration_days", reg62),					
-				(assign, ":quest_dont_give_again_period", reg63),
+                (assign, ":continue_2", 0), #need a second check for the faction strength checks
+
+                (assign, ":cur_target_center", "p_town_edhellond"), #Default to Edhellond
+                (store_random_in_range, ":rand", 0,100),
+                (try_begin),
+                    (this_or_next|eq, "$g_talk_troop_faction", "fac_gondor"),
+                    (eq, "$g_talk_troop_faction", "fac_umbar"),
+                    (faction_get_slot,":strength","fac_gondor",slot_faction_strength), #hacky way to ensure that enemy faction is still alive.
+                    (gt, ":strength", 500), 
+                    (faction_get_slot,":strength","fac_umbar",slot_faction_strength),
+                    (gt, ":strength", 500), 
+                    (assign, ":continue_2", 1),
+                    (try_begin),
+                        (ge, ":rand", 50),
+                        (assign, ":cur_target_center", "p_town_dol_amroth"),
+                    (try_end),
+                (else_try),
+                    (this_or_next|eq, "$g_talk_troop_faction", "fac_dale"),
+                    (eq, "$g_talk_troop_faction", "fac_rhun"),
+                    (faction_get_slot,":strength","fac_dale",slot_faction_strength), #hacky way to ensure that enemy faction is still alive.
+                    (gt, ":strength", 500), 
+                    (faction_get_slot,":strength","fac_rhun",slot_faction_strength),
+                    (gt, ":strength", 500), 
+                    (assign, ":continue_2", 1),
+                    (assign, ":cur_target_center", "p_town_esgaroth"),
+                (try_end),
+
+                (eq, ":continue_2", 1), 
+                
+                (try_begin),
+                    (eq, "$g_talk_troop_faction", "fac_umbar"),
+                    (assign, ":cur_object_center", "p_town_umbar_camp"), #If Umbar, Talk to Umbar Guild Master
+                (else_try),
+                    (eq, "$g_talk_troop_faction", "fac_rhun"),
+                    (assign, ":cur_object_center", "p_town_rhun_main_camp"), #If Rhun, Talk to Rhun Main Camp GM.
+                (else_try),
+                    (this_or_next|eq, "$g_talk_troop_faction", "fac_gondor"),
+                    (			  eq, "$g_talk_troop_faction", "fac_dale"),
+                    (assign, ":cur_object_center", ":cur_target_center"), #if Good, Target is Object
+                (try_end),
+
+                (party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Cant be destroyed / captured.
+                (ge, ":cur_target_center",0), #Should be valid center
+                (ge, ":cur_object_center",0), #Should be valid center
+                
+				(assign, ":quest_object_troop", "$g_talk_troop"),
+				(assign, ":quest_object_center", ":cur_object_center"),	
+				(assign, ":quest_target_center", ":cur_target_center"),	
+				(assign, ":quest_importance", 10),	
+				(assign, ":quest_xp_reward", 500),					
+				(assign, ":quest_gold_reward", 800),					
+				(assign, ":quest_rank_reward", 32),						
+				(assign, ":quest_expiration_days", 5),					
+				(assign, ":quest_dont_give_again_period", 15),
 
 				(assign, ":result", ":quest_no"),
 			(try_end),
@@ -7840,19 +7977,56 @@ scripts = [
 			(eq, ":quest_no", "qst_kill_quest_troop"),
 			(try_begin),
 				(neg|check_quest_active, "qst_kill_quest_troop"),
-				(call_script, "script_cf_init_kill_quest_target"),
+                (store_character_level, ":player_level", "trp_player"),
+                (ge, ":player_level", 20),
+                
+                (call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party",),
+                (assign, ":target_center", reg0),
+                (store_faction_of_party, ":target_faction", ":target_center"),
 
-				(assign, ":quest_target_faction", reg54),
-				(assign, ":quest_object_troop", reg55),
-				(assign, ":quest_target_troop", reg56),	
-				(assign, ":quest_target_amount", reg57),	
-				(assign, ":quest_importance", reg58),	
-				(assign, ":quest_xp_reward", reg59),					
-				(assign, ":quest_gold_reward", reg60),					
-				(assign, ":quest_rank_reward", reg61),						
-				(assign, ":quest_expiration_days", reg62),					
-				(assign, ":quest_dont_give_again_period", reg63),
-				(assign, ":quest_target_party_template", reg64),
+                (faction_get_slot, ":tier_3_troop", ":target_faction",  slot_faction_tier_3_troop),
+                (faction_get_slot, ":tier_4_troop", ":target_faction",  slot_faction_tier_4_troop),
+                (assign, ":type", 0),
+
+                (try_begin),
+                    (store_random_in_range, ":random_troop", 0, 10),
+                    (try_begin),
+                        (le, ":random_troop", 5),
+                        (assign, ":target", ":tier_3_troop"),
+                        (store_random_in_range, ":amount", 15, 26),
+                        (store_mul, ":xp_reward", ":amount", 25), #375 - 650
+                        (assign, ":type", 1),
+                    (else_try),
+                        (assign, ":target", ":tier_4_troop"),
+                        (store_random_in_range, ":amount", 16, 21), #640-840
+                        (store_mul, ":xp_reward", ":amount", 40),
+                        (assign, ":type", 2),
+                    (try_end),
+
+                    (try_begin),
+                        (ge, ":player_level", 27),
+                        (store_div, ":add", ":player_level", 2),
+                        (val_add, ":amount", ":add"),
+                    (try_end),
+                (try_end),
+
+                (store_add, ":gold_reward", ":xp_reward", 75), #450-715
+                (try_begin),
+                    (store_div, ":rank_reward", ":xp_reward", 20), #18-42
+                    (val_min, ":rank_reward", 30), #18-30
+                (try_end),
+                
+				(assign, ":quest_target_faction", ":target_faction"),
+				(assign, ":quest_object_troop", "$g_talk_troop"),
+				(assign, ":quest_target_troop", ":target"),	
+				(assign, ":quest_target_amount", ":amount"),	
+				(assign, ":quest_importance", 10),	
+				(assign, ":quest_xp_reward", ":xp_reward"),					
+				(assign, ":quest_gold_reward", ":gold_reward"),					
+				(assign, ":quest_rank_reward", ":rank_reward"),						
+				(assign, ":quest_expiration_days", 30),					
+				(assign, ":quest_dont_give_again_period", 10),
+				(assign, ":quest_target_party_template", ":type"),
 
 				(assign, ":result", ":quest_no"),
 			(try_end),
@@ -7861,21 +8035,42 @@ scripts = [
 
 			#Kham - Kill Quest Faction Troops
 			] + (is_a_wb_script==1 and [
-			(eq, "$tld_war_began", 1),
 			(eq, ":quest_no", "qst_kill_quest_faction"),
 			(try_begin),
 				(neg|check_quest_active, "qst_kill_quest_faction"),
-				(call_script, "script_cf_init_kill_quest_faction"),
+                (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), # Evil Only
+                (ge, "$tld_war_began", 1),
+                (store_character_level, ":player_level", "trp_player"),
+                
+                (call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party",),
+                (assign, ":target_center", reg0),
+                (store_faction_of_party, ":target_faction", ":target_center"),
 
-				(assign, ":quest_object_troop", reg55),
-				(assign, ":quest_target_faction", reg56),	
-				(assign, ":quest_target_amount", reg57),	
-				(assign, ":quest_importance", reg58),	
-				(assign, ":quest_xp_reward", reg59),					
-				(assign, ":quest_gold_reward", reg60),					
-				(assign, ":quest_rank_reward", reg61),						
-				(assign, ":quest_expiration_days", reg62),					
-				(assign, ":quest_dont_give_again_period", reg63),
+                (store_mul, ":amount", ":player_level", 3),
+                (store_mul, ":xp_reward", ":amount", 5), # lvl*15
+                (store_add, ":gold_reward", ":xp_reward", 75), #lvl*15+75
+
+                (try_begin),
+                    (store_div, ":rank_reward", ":xp_reward", 20),
+                    (val_min, ":rank_reward", 35),
+                (try_end),
+
+                (try_begin),
+                    (gt, ":player_level", 20),
+                    (val_add, ":xp_reward", 100),
+                    (val_add, ":gold_reward", 150),
+                    (val_add, ":rank_reward", 10),
+                (try_end),
+
+				(assign, ":quest_object_troop", "$g_talk_troop"),
+				(assign, ":quest_target_faction", ":target_faction"),	
+				(assign, ":quest_target_amount", ":amount"),	
+				(assign, ":quest_importance", 10),	
+				(assign, ":quest_xp_reward", ":xp_reward"),					
+				(assign, ":quest_gold_reward", ":gold_reward"),					
+				(assign, ":quest_rank_reward", ":rank_reward"),						
+				(assign, ":quest_expiration_days", 30),					
+				(assign, ":quest_dont_give_again_period", 15),
 
 				(assign, ":result", ":quest_no"),
 			(try_end),
@@ -7888,17 +8083,21 @@ scripts = [
 			(eq, ":quest_no", "qst_defeat_target_lord"),
 			(try_begin),
 				(neg|check_quest_active, "qst_defeat_target_lord"),
-				(call_script, "script_cf_init_defeat_lord_quest"),
 
-				(assign, ":quest_object_troop", reg55),
-				(assign, ":quest_target_troop", reg56),	
-				(assign, ":quest_target_amount", reg57),	
-				(assign, ":quest_importance", reg58),	
-				(assign, ":quest_xp_reward", reg59),					
-				(assign, ":quest_gold_reward", reg60),					
-				(assign, ":quest_rank_reward", reg61),						
-				(assign, ":quest_expiration_days", reg62),					
-				(assign, ":quest_dont_give_again_period", reg63),
+                (store_character_level, ":player_level", "trp_player"),
+                (ge, ":player_level", 18),
+                
+                (store_faction_of_troop, ":quest_giver_faction", "$g_talk_troop"),
+                (call_script, "script_cf_find_target_patrolling_enemy_lord_in_theater", ":quest_giver_faction"),
+                (assign, ":quest_target_troop", reg0),
+
+                (assign, ":quest_xp_reward", 150),
+                (assign, ":quest_gold_reward", 350),
+                (assign, ":quest_rank_reward", 55),
+                (assign, ":quest_expiration_days", 30),
+				(assign, ":quest_object_troop", "$g_talk_troop"),	
+				(assign, ":quest_importance", 8),				
+				(assign, ":quest_dont_give_again_period", 10),
 
 				(assign, ":result", ":quest_no"),
 			(try_end),
@@ -7910,18 +8109,30 @@ scripts = [
 			(eq, ":quest_no", "qst_kill_quest_bandit"),
 			(try_begin),
 				(neg|check_quest_active, "qst_kill_quest_bandit"),
-				(call_script, "script_cf_init_kill_quest_bandit"),
+                (store_character_level, ":player_level", "trp_player"),
+                (ge, ":player_level", 2),
 
-				(assign, ":quest_object_troop", reg55),
-				(assign, ":quest_target_troop", reg56),	
-				(assign, ":quest_target_amount", reg57),	
-				(assign, ":quest_importance", reg58),	
-				(assign, ":quest_xp_reward", reg59),					
-				(assign, ":quest_gold_reward", reg60),					
-				(assign, ":quest_rank_reward", reg61),						
-				(assign, ":quest_expiration_days", reg62),					
-				(assign, ":quest_dont_give_again_period", reg63),
-				(assign, ":quest_target_party_template", reg64),
+                (call_script, "script_cf_get_nearest_bandit_party"),
+                (ge, reg2, 0), # reg2 holds the distance to the bandit party
+
+                (assign, ":quest_target_troop", reg0),
+                (assign, ":quest_target_party_template", reg1),
+
+                (store_random_in_range, ":quest_target_amount", 15, 26),
+                (val_add, ":quest_target_amount", ":player_level"),
+
+                (store_mul, ":quest_xp_reward", ":quest_target_amount", 4), #min. 68-104
+                (store_add, ":quest_gold_reward", ":quest_xp_reward", 40), #min. 108-144
+
+                (store_div, ":quest_rank_reward", ":quest_xp_reward", 10), #min. 6-11
+                #(val_min, ":rank_reward", 10),
+
+                (store_div, ":quest_expiration_days", ":quest_target_amount", 3), #min 5-8
+                (val_add, ":quest_expiration_days", 7), #min 12-15
+                
+				(assign, ":quest_object_troop", "$g_talk_troop"),
+				(assign, ":quest_importance", 3),					
+				(assign, ":quest_dont_give_again_period", 10),
 				(assign, ":quest_target_center", ":giver_center_no"), #we need the giver center for the quest helper trigger #InVain
 				(assign, ":quest_object_faction", ":giver_faction_no"),
 				(assign, ":quest_giver_fac_str_effect", ":quest_xp_reward"),
@@ -8069,6 +8280,7 @@ scripts = [
             (assign, ":quest_expiration_days", 3),
             (assign, ":quest_dont_give_again_period", 7),
           (try_end),
+          
         (else_try), 
         ##Kham: Destroy Scout Camp
           (eq, ":quest_no", "qst_destroy_scout_camp"), 
@@ -8133,6 +8345,7 @@ scripts = [
 			(assign, ":quest_giver_fac_str_effect", 40),
 			(assign, ":result", ":quest_no"),
 		  (try_end),
+          
         (else_try),
 		  #mtarini: good-sided lords wants a troll be killed
           (eq, ":quest_no", "qst_kill_troll"),
@@ -8179,8 +8392,7 @@ scripts = [
           #Kolba: Lost spears - given by Brand
           (eq, ":quest_no", "qst_find_lost_spears"),
 		  (try_begin),
-		  	(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
- 			(eq, cheat_switch, 1), #CC: Enabled only with cheat switch, for now
+ 			(eq, 0, 1), #disabled
 			(eq, ":giver_troop", "trp_dale_lord"),  # only brand gives this quest
 			(ge, ":player_level", 4),
 			(assign, ":quest_expiration_days", 40),
@@ -8525,19 +8737,79 @@ scripts = [
 			(eq, ":quest_no", "qst_reinforce_center"),
 			(try_begin),
 				(eq, "$tld_war_began", 1),
-				(neg|check_quest_active,"qst_reinforce_center"),
-				(call_script, "script_cf_init_quest_reinforce_center"),
-				
-				(assign, ":quest_object_center", reg55),
-				(assign, ":quest_target_amount", reg56),	
-				(assign, ":quest_target_center", reg57),
+                (eq, "$g_talk_troop_faction", "$players_kingdom"),
+                (store_character_level, ":player_level", "trp_player"),
+                (ge, ":player_level", 12),
+                
+                (store_random_in_range, ":to_donate", 45, 76),
+                (assign, ":result", -1),
+                (assign, ":end", 100),
+
+                (try_for_range, ":unused", 0, ":end"),
+
+                  (store_random_in_range, ":centers", centers_begin, centers_end),
+                  (eq, ":result", -1),
+
+                  (party_is_active, ":centers"),
+                  (store_faction_of_party, ":fac", ":centers"),
+
+                  #(eq, ":fac", "$g_talk_troop_faction"), #Uncomment this if you want to limit to your own faction only.
+                  
+                  (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), 
+                  (assign, ":rank", reg0), #rank points to rank number 0-9
+                  (lt, ":rank", 1), #Must be at least known to the faction
+
+
+                  (str_store_party_name, s10, ":centers"),
+                  #(display_message, "@DEBUG: Center - {s10}", color_item_text_bonus),
+
+                  (party_get_num_companions, ":garrison", ":centers"),
+
+                  (try_begin),
+                  #Orc Factions
+                    (this_or_next|eq, ":fac", "fac_mordor"),
+                    (this_or_next|eq, ":fac", "fac_isengard"),
+                    (this_or_next|eq, ":fac", "fac_moria"),
+                    (this_or_next|eq, ":fac", "fac_guldur"),
+                    (       eq, ":fac", "fac_gundabad"),
+                    (le, ":garrison", 300),
+                    (store_random_in_range, ":to_donate", 85, 111),
+                    (assign, ":result", ":centers"),
+                    (assign, ":end", 0),
+                    #(display_log_message, "@DEBUG: Orc Center Found"),
+                  (else_try),
+                  #Dwarves / Elves
+                    (this_or_next|is_between, ":centers", "p_town_caras_galadhon", "p_town_woodsmen_village"),
+                    (this_or_next|is_between, ":centers", "p_town_erebor", "p_advcamp_gondor"),
+                    (eq, ":centers", "p_town_imladris_camp"),
+                    (le, ":garrison", 120),
+                    (store_random_in_range, ":to_donate", 40, 56),
+                    (assign, ":result", ":centers"),
+                    (assign, ":end", 0),
+                    #(display_log_message, "@DEBUG: Elf Center Found"),
+                  (else_try),
+                    (le, ":garrison", 200),
+                    (assign, ":result", ":centers"),
+                    (assign, ":end", 0),
+                    #(display_log_message, "@DEBUG: Other Center Found"),
+                  (try_end),
+                (try_end),
+
+                (neq, ":result", -1),
+                (assign, ":quest_target_center", ":result"),
+
+                (party_slot_eq, ":quest_target_center", slot_center_destroyed, 0), #Center shouldn't be destroyed
+                (ge, ":quest_target_center",0), #Should be valid center
+                
+				(assign, ":quest_object_center", "$g_encountered_party"),
+				(assign, ":quest_target_amount", ":to_donate"),	
 				(store_faction_of_party,":quest_object_faction",":quest_target_center"),				
-				(assign, ":quest_importance", reg58),	
-				(assign, ":quest_xp_reward", reg59),					
-				(assign, ":quest_gold_reward", reg60),					
-				(assign, ":quest_rank_reward", reg61),						
-				(assign, ":quest_expiration_days", reg62),					
-				(assign, ":quest_dont_give_again_period", reg63),
+				(assign, ":quest_importance", 5),	
+				(assign, ":quest_xp_reward", 200),					
+				(assign, ":quest_gold_reward", 300),					
+				(assign, ":quest_rank_reward", 16),						
+				(assign, ":quest_expiration_days", 7),					
+				(assign, ":quest_dont_give_again_period", 8),
 
 				(assign, ":result", ":quest_no"),					
 			(try_end),
@@ -9182,6 +9454,8 @@ scripts = [
               (eq, ":cur_target_troop", -1),
               (party_stack_get_troop_id, ":stack_troop","p_main_party",":i_stack"),
               (troop_is_hero, ":stack_troop"),
+              (this_or_next|is_between, ":stack_troop", companions_begin, companions_end),
+              (is_between, ":stack_troop", new_companions_begin, new_companions_end),
               (neq, ":stack_troop", "trp_player"),
               (store_character_level, ":stack_level", ":stack_troop"),
               (ge, ":stack_level", 15),
@@ -26867,66 +27141,6 @@ command_cursor_scripts = [
 
 ## Kham Quest Scripts
 
-#Defend Refugee Quest
-#script_cf_init_quest_defend_refugees
-#qst_defend_refugees
-
-("cf_init_quest_defend_refugees", [
-		(faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
-		(eq, ":side", faction_side_good),
-		(ge, "$g_talk_troop_faction_relation", 0),
-		(this_or_next|neq, "$g_talk_troop_faction", "fac_lorien"), #Elves don't care about the refugees
-		(			  neq, "$g_talk_troop_faction", "fac_woodelf"), #Elves don't care about the refugees
-		(store_character_level, ":player_level", "trp_player"),
-		(is_between, ":player_level", 14, 21),
-		(assign, ":giver_center_no", -1),
-		(troop_get_slot, ":giver_party_no", "$g_talk_troop", slot_troop_leaded_party),
-		(try_begin),
-			(gt, ":giver_party_no", 0),
-			(party_get_attached_to, ":giver_center_no", ":giver_party_no"),
-		(else_try),
-			(is_between, "$g_encountered_party", centers_begin, centers_end),
-			(assign, ":giver_center_no", "$g_encountered_party"),
-		(try_end),
-		(gt, ":giver_center_no", 0),#Skip if lord is outside the center
-		(eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
-
-		(assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
-		(call_script, "script_cf_get_random_friendly_center_in_theater", "p_main_party",),
-		(assign, ":cur_target_center", reg0),
-		(store_faction_of_party, ":center_faction", ":cur_target_center"),
-		(try_begin),
-			(this_or_next|eq, ":center_faction", "fac_lorien"),
-			(this_or_next|eq, ":center_faction", "fac_woodelf"),
-			(			  eq, ":center_faction", "fac_imladris"),
-			(try_for_range, ":beorn_center", "p_town_woodsmen_village", "p_town_moria"),
-				(party_slot_eq, ":beorn_center", slot_center_destroyed, 0),
-				(assign, ":cur_target_center", ":beorn_center"),
-			(try_end),
-		(try_end),
-		(call_script, "script_get_tld_distance", "p_main_party", ":cur_target_center"),
-		(ge, reg0, 10), 
-		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-		(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
-        #InVain: Disable frontier fortresses
-        (neq, ":cur_target_center", "p_town_cair_andros"),
-        (neq, ":cur_target_center", "p_town_east_osgiliath"),
-        (neq, ":cur_target_center", "p_town_west_osgiliath"),
-
-		(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Center should not be destroyed
-		(ge, ":cur_target_center",0), #Should be valid center
-
-		(assign, reg55, "pt_refugees"),			#quest_target_party_template
-		(assign, reg56, ":cur_object_center"),	#quest_object_center
-		(assign, reg57, ":cur_target_center"),	#quest_target_center
-		(assign, reg58, 8),						#quest_importance
-		(assign, reg59, 400),					#quest_xp_reward
-		(assign, reg60, 750),					#quest_gold_reward
-		(assign, reg61, 18),					#quest_rank_reward
-		(assign, reg62, 15),					#quest_expiration_days
-		(assign, reg63, 10),					#quest_dont_give_again_period
-]),
-
 ("cf_quest_defend_refugees_party_creation", [
       (quest_get_slot, ":quest_giver_center", "$random_quest_no", slot_quest_giver_center),
       (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
@@ -27077,67 +27291,7 @@ command_cursor_scripts = [
       (rest_for_hours, 1, 3),
 ]),
 
-# Hunt Down Refugee Quest
-#script_cf_init_quest_hunt_refugees
-#qst_hunt_down_refugees
-
-("cf_init_quest_hunt_refugees", [
-		(faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
-		(neq, ":side", faction_side_good),
-		(ge, "$g_talk_troop_faction_relation", 0),
-		(store_character_level, ":player_level", "trp_player"),
-		(is_between, ":player_level", 14, 21),
-		(assign, ":giver_center_no", -1),
-		(troop_get_slot, ":giver_party_no", "$g_talk_troop", slot_troop_leaded_party),
-		(try_begin),
-			(gt, ":giver_party_no", 0),
-			(party_get_attached_to, ":giver_center_no", ":giver_party_no"),
-		(else_try),
-			(is_between, "$g_encountered_party", centers_begin, centers_end),
-			(assign, ":giver_center_no", "$g_encountered_party"),
-		(try_end),
-		(gt, ":giver_center_no", 0),#Skip if lord is outside the center
-		(neq, ":giver_center_no", "p_town_morannon"), #Morannon is too far from any fiefs.
-		(eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
-
-		(assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
-		(call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party",),
-		(assign, ":cur_target_center", reg0),
-		(store_faction_of_party, ":center_faction", ":cur_target_center"),
-		(try_begin),
-			(this_or_next|eq, ":center_faction", "fac_lorien"),
-			(this_or_next|eq, ":center_faction", "fac_woodelf"),
-			(			  eq, ":center_faction", "fac_imladris"),
-			(try_for_range, ":beorn_center", "p_town_woodsmen_village", "p_town_moria"),
-				(party_slot_eq, ":beorn_center", slot_center_destroyed, 0),
-				(assign, ":cur_target_center", ":beorn_center"),
-			(try_end),
-		(try_end),
-		(call_script, "script_get_tld_distance", "p_main_party", ":cur_target_center"),
-		#(display_log_message, "@DEBUG: Distance {reg0}", color_bad_news),
-		(le, reg0, 20), 
-		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-		(neq,":cur_target_center", "p_town_henneth_annun"),#Skip Henneth Annun
-        
-        #InVain: Skip frontier fortresses
-        (neq, ":cur_target_center", "p_town_cair_andros"),
-        (neq, ":cur_target_center", "p_town_east_osgiliath"),
-        (neq, ":cur_target_center", "p_town_west_osgiliath"),
-        
-		(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Center should not be destroyed
-		(ge, ":cur_target_center",0), #Should be valid center
-
-		(assign, reg55, "pt_refugees"),			#quest_target_party_template
-		(assign, reg56, ":cur_object_center"),	#quest_object_center
-		(assign, reg57, ":cur_target_center"),	#quest_target_center
-		(assign, reg58, 8),						#quest_importance
-		(assign, reg59, 300),					#quest_xp_reward
-		(assign, reg60, 600),					#quest_gold_reward
-		(assign, reg61, 9),						#quest_rank_reward
-		(assign, reg62, 10),					#quest_expiration_days
-		(assign, reg63, 10),					#quest_dont_give_again_period
-]),
-
+#script_cf_quest_hunt_refugees_party_creation
 ("cf_quest_hunt_refugees_party_creation", [
       (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
       (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
@@ -27236,189 +27390,6 @@ command_cursor_scripts = [
 
 ]),
 
-#script_cf_init_quest_reinforce_center
-#qst_reinforce_center
-
-("cf_init_quest_reinforce_center",
-  [
-
-    (eq, "$g_talk_troop_faction", "$players_kingdom"),
-    (store_character_level, ":player_level", "trp_player"),
-    (ge, ":player_level", 12),
-    
-    (store_random_in_range, ":to_donate", 45, 76),
-    (assign, ":result", -1),
-    (assign, ":end", 100),
-
-    (try_for_range, ":unused", 0, ":end"),
-
-      (store_random_in_range, ":centers", centers_begin, centers_end),
-      (eq, ":result", -1),
-
-      (party_is_active, ":centers"),
-      (store_faction_of_party, ":fac", ":centers"),
-
-      #(eq, ":fac", "$g_talk_troop_faction"), #Uncomment this if you want to limit to your own faction only.
-      
-      (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), 
-      (assign, ":rank", reg0), #rank points to rank number 0-9
-      (lt, ":rank", 1), #Must be at least known to the faction
-
-
-      (str_store_party_name, s10, ":centers"),
-      #(display_message, "@DEBUG: Center - {s10}", color_item_text_bonus),
-
-      (party_get_num_companions, ":garrison", ":centers"),
-
-      (try_begin),
-      #Orc Factions
-        (this_or_next|eq, ":fac", "fac_mordor"),
-        (this_or_next|eq, ":fac", "fac_isengard"),
-        (this_or_next|eq, ":fac", "fac_moria"),
-        (this_or_next|eq, ":fac", "fac_guldur"),
-        (       eq, ":fac", "fac_gundabad"),
-        (le, ":garrison", 300),
-        (store_random_in_range, ":to_donate", 85, 111),
-        (assign, ":result", ":centers"),
-        (assign, ":end", 0),
-        #(display_log_message, "@DEBUG: Orc Center Found"),
-      (else_try),
-      #Dwarves / Elves
-        (this_or_next|is_between, ":centers", "p_town_caras_galadhon", "p_town_woodsmen_village"),
-        (this_or_next|is_between, ":centers", "p_town_erebor", "p_advcamp_gondor"),
-        (eq, ":centers", "p_town_imladris_camp"),
-        (le, ":garrison", 120),
-        (store_random_in_range, ":to_donate", 40, 56),
-        (assign, ":result", ":centers"),
-        (assign, ":end", 0),
-        #(display_log_message, "@DEBUG: Elf Center Found"),
-      (else_try),
-        (le, ":garrison", 200),
-        (assign, ":result", ":centers"),
-        (assign, ":end", 0),
-        #(display_log_message, "@DEBUG: Other Center Found"),
-      (try_end),
-    (try_end),
-
-    (neq, ":result", -1),
-    (assign, ":quest_target_center", ":result"),
-
-    (party_slot_eq, ":quest_target_center", slot_center_destroyed, 0), #Center shouldn't be destroyed
-    (ge, ":quest_target_center",0), #Should be valid center
-
-    (assign, reg55, "$g_encountered_party"),#quest_object_center
-    (assign, reg56, ":to_donate"),      #quest_target_amount
-    (assign, reg57, ":quest_target_center"),#quest_target_center
-    (assign, reg58, 5),           #quest_importance
-    (assign, reg59, 200),         #quest_xp_reward
-    (assign, reg60, 300),         #quest_gold_reward
-    (assign, reg61, 16),           #quest_rank_reward
-    (assign, reg62, 7),          #quest_expiration_days
-    (assign, reg63, 8),          #quest_dont_give_again_period
-
-    #Debug
-    #(assign, reg2, ":garrison"),
-    #(display_log_message, "@Target: {reg57} -- Garrison: {reg2}", color_good_news),
-
-]),
-
-#script_cf_init_quest_sea_battle
-#qst_sea_battle
-
-("cf_init_quest_sea_battle", [
-
-	(store_character_level, ":player_level", "trp_player"),
-	(ge, ":player_level", 15),
-
-	#(ge, "$g_talk_troop_faction_relation", 0),
-	
-	(try_begin),
-		(faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
-		(neq, ":side", faction_side_good),
-		(assign, ":quest_side", 1), #1 is Evil
-		#(display_message, "@DEBUG: Side Evil"),
-	(else_try),
-		(assign, ":quest_side", 0), #0 is Good
-		#(display_message, "@DEBUG: Side Good"),
-	(try_end),
-
-	(assign, ":continue", 0),
-
-	(try_begin),
-		(eq, ":quest_side", 0),
-		(this_or_next|eq, "$g_talk_troop", "trp_knight_1_3"), #Imrahil
-		(this_or_next|eq, "$g_talk_troop", "trp_gondor_lord"), #Denethor
-		(this_or_next|eq, "$g_talk_troop", "trp_knight_1_4"), #Orthalion (Pelargir Lord)
-		(this_or_next|eq, "$g_talk_troop", "trp_dale_lord"), #Brand
-		(is_between, 	  "$g_talk_troop", "trp_knight_5_1", "trp_knight_5_6"), # Other Dale Lords 
-		(assign, ":continue", 1),
-	(else_try),
-		(this_or_next|eq, "$g_talk_troop", "trp_umbar_lord"), #Tulmir
-		(this_or_next|eq, "$g_talk_troop", "trp_rhun_lord"), #Jarl_Helcaroth
-		(this_or_next|is_between, "$g_talk_troop", "trp_knight_3_1", "trp_knight_3_6"), #Umbar Lords
-		(is_between, "$g_talk_troop", "trp_knight_2_11", "trp_knight_2_16"), #Rhun Lords
-		(assign, ":continue", 1),
-	(try_end),
-
-	(eq, ":continue", 1),
-    (assign, ":continue_2", 0), #need a second check for the faction strength checks
-
-	(assign, ":cur_target_center", "p_town_edhellond"), #Default to Edhellond
-	(store_random_in_range, ":rand", 0,100),
-	(try_begin),
-		(this_or_next|eq, "$g_talk_troop_faction", "fac_gondor"),
-		(eq, "$g_talk_troop_faction", "fac_umbar"),
-		(faction_get_slot,":strength","fac_gondor",slot_faction_strength), #hacky way to ensure that enemy faction is still alive.
-		(gt, ":strength", 500), 
-		(faction_get_slot,":strength","fac_umbar",slot_faction_strength),
-		(gt, ":strength", 500), 
-        (assign, ":continue_2", 1),
-		(try_begin),
-			(ge, ":rand", 50),
-			(assign, ":cur_target_center", "p_town_dol_amroth"),
-		(try_end),
-	(else_try),
-		(this_or_next|eq, "$g_talk_troop_faction", "fac_dale"),
-		(eq, "$g_talk_troop_faction", "fac_rhun"),
-		(faction_get_slot,":strength","fac_dale",slot_faction_strength), #hacky way to ensure that enemy faction is still alive.
-		(gt, ":strength", 500), 
-		(faction_get_slot,":strength","fac_rhun",slot_faction_strength),
-		(gt, ":strength", 500), 
-        (assign, ":continue_2", 1),
-		(assign, ":cur_target_center", "p_town_esgaroth"),
-	(try_end),
-
-    (eq, ":continue_2", 1), 
-	
-	(try_begin),
-		(eq, "$g_talk_troop_faction", "fac_umbar"),
-		(assign, ":cur_object_center", "p_town_umbar_camp"), #If Umbar, Talk to Umbar Guild Master
-	(else_try),
-		(eq, "$g_talk_troop_faction", "fac_rhun"),
-		(assign, ":cur_object_center", "p_town_rhun_main_camp"), #If Rhun, Talk to Rhun Main Camp GM.
-	(else_try),
-		(this_or_next|eq, "$g_talk_troop_faction", "fac_gondor"),
-		(			  eq, "$g_talk_troop_faction", "fac_dale"),
-		(assign, ":cur_object_center", ":cur_target_center"), #if Good, Target is Object
-	(try_end),
-
-	(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Cant be destroyed / captured.
-	(ge, ":cur_target_center",0), #Should be valid center
-	(ge, ":cur_object_center",0), #Should be valid center
-
-	(assign, reg55, "$g_talk_troop"), #quest_object_troop
-	(assign, reg56, ":cur_object_center"),	#quest_object_center
-	(assign, reg57, ":cur_target_center"),	#quest_target_center
-	(assign, reg58, 10),						#quest_importance
-	(assign, reg59, 500),					#quest_xp_reward
-	(assign, reg60, 800),					#quest_gold_reward
-	(assign, reg61, 32),						#quest_rank_reward
-	(assign, reg62, 5),					#quest_expiration_days
-	(assign, reg63, 15),					#quest_dont_give_again_period
-
-
-]),
-
 #script_quest_sea_battle_consequences
 #arg1: 0: Mission failed           Not 0: Mission succeeded
 #Dirties s10,s14,s11,s13
@@ -27492,109 +27463,6 @@ command_cursor_scripts = [
     (faction_set_slot,":enemy_faction",slot_faction_strength_tmp,":enemy_strength"), 
 ]),
 		
-
-# script_cf_init_kill_quest
-# qst_kill_quest_troop
-
-("cf_init_kill_quest_target", [
-
-	(store_character_level, ":player_level", "trp_player"),
-	(ge, ":player_level", 20),
-	
-	(call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party",),
-	(assign, ":target_center", reg0),
-	(store_faction_of_party, ":target_faction", ":target_center"),
-
-	(faction_get_slot, ":tier_3_troop", ":target_faction",  slot_faction_tier_3_troop),
-	(faction_get_slot, ":tier_4_troop", ":target_faction",  slot_faction_tier_4_troop),
-	(assign, ":type", 0),
-
-	(try_begin),
-		(store_random_in_range, ":random_troop", 0, 10),
-
-
-		(try_begin),
-			(le, ":random_troop", 5),
-			(assign, ":target", ":tier_3_troop"),
-			(store_random_in_range, ":amount", 15, 26),
-			(store_mul, ":xp_reward", ":amount", 25), #375 - 650
-			(assign, ":type", 1),
-		(else_try),
-			(assign, ":target", ":tier_4_troop"),
-			(store_random_in_range, ":amount", 16, 21), #640-840
-			(store_mul, ":xp_reward", ":amount", 40),
-			(assign, ":type", 2),
-		(try_end),
-
-		(try_begin),
-			(ge, ":player_level", 27),
-			(store_div, ":add", ":player_level", 2),
-			(val_add, ":amount", ":add"),
-		(try_end),
-
-	(try_end),
-
-	(store_add, ":gold_reward", ":xp_reward", 75), #450-715
-	(try_begin),
-		(store_div, ":rank_reward", ":xp_reward", 20), #18-42
-		(val_min, ":rank_reward", 30), #18-30
-	(try_end),
-	
-	(assign, reg54, ":target_faction"),		#quest_target_faction
-	(assign, reg55, "$g_talk_troop"), 		#quest_object_troop
-	(assign, reg56, ":target"),				#quest_target_troop
-	(assign, reg57, ":amount"),				#quest_target_amount
-	(assign, reg58, 10),					#quest_importance
-	(assign, reg59, ":xp_reward"),			#quest_xp_reward #375-840
-	(assign, reg60, ":gold_reward"),		#quest_gold_reward #450-715
-	(assign, reg61, ":rank_reward"),		#quest_rank_reward #18-30
-	(assign, reg62, 30),					#quest_expiration_days
-	(assign, reg63, 10),					#quest_dont_give_again_period
-	(assign, reg64, ":type"),				#quest_target_party_template - analog for troop type
-
-]),
-
-# script_cf_init_kill_quest_faction
-#qst_kill_quest_faction
-
-("cf_init_kill_quest_faction", [
-
-	(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), # Evil Only
-    (ge, "$tld_war_began", 1),
-	(store_character_level, ":player_level", "trp_player"),
-	
-	(call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party",),
-	(assign, ":target_center", reg0),
-	(store_faction_of_party, ":target_faction", ":target_center"),
-
-	(store_mul, ":amount", ":player_level", 3),
-	(store_mul, ":xp_reward", ":amount", 5), # lvl*15
-	(store_add, ":gold_reward", ":xp_reward", 75), #lvl*15+75
-
-	(try_begin),
-		(store_div, ":rank_reward", ":xp_reward", 20),
-		(val_min, ":rank_reward", 35),
-	(try_end),
-
-	(try_begin),
-		(gt, ":player_level", 20),
-		(val_add, ":xp_reward", 100),
-		(val_add, ":gold_reward", 150),
-		(val_add, ":rank_reward", 10),
-	(try_end),
-
-	(assign, reg55, "$g_talk_troop"), 		#quest_object_troop
-	(assign, reg56, ":target_faction"),		#quest_target_faction
-	(assign, reg57, ":amount"),				#quest_target_amount
-	(assign, reg58, 10),					#quest_importance
-	(assign, reg59, ":xp_reward"),			#quest_xp_reward
-	(assign, reg60, ":gold_reward"),		#quest_gold_reward
-	(assign, reg61, ":rank_reward"),		#quest_rank_reward
-	(assign, reg62, 30),					#quest_expiration_days
-	(assign, reg63, 15),					#quest_dont_give_again_period
-
-]),
-
 #script_troop_talk_presentation
 #Shows a hero/enemy talking during battle
 #Inputs: 
@@ -32054,68 +31922,68 @@ if is_a_wb_script==1:
 # script_cf_init_kill_quest_bandit
 # qst_kill_quest_bandit
 
-("cf_init_kill_quest_bandit", [
-	(store_character_level, ":player_level", "trp_player"),
-	(ge, ":player_level", 2),
+# ("cf_init_kill_quest_bandit", [
+	# (store_character_level, ":player_level", "trp_player"),
+	# (ge, ":player_level", 2),
 
-	(call_script, "script_cf_get_nearest_bandit_party"),
-	(ge, reg2, 0), # reg2 holds the distance to the bandit party
+	# (call_script, "script_cf_get_nearest_bandit_party"),
+	# (ge, reg2, 0), # reg2 holds the distance to the bandit party
 
-	(assign, ":target_troop", reg0),
-	(assign, ":target_template", reg1),
+	# (assign, ":target_troop", reg0),
+	# (assign, ":target_template", reg1),
 
-	(store_random_in_range, ":amount", 15, 26),
-	(val_add, ":amount", ":player_level"),
+	# (store_random_in_range, ":amount", 15, 26),
+	# (val_add, ":amount", ":player_level"),
 
-	(store_mul, ":xp_reward", ":amount", 4), #min. 68-104
-	(store_add, ":gold_reward", ":xp_reward", 40), #min. 108-144
+	# (store_mul, ":xp_reward", ":amount", 4), #min. 68-104
+	# (store_add, ":gold_reward", ":xp_reward", 40), #min. 108-144
 
-	(store_div, ":rank_reward", ":xp_reward", 10), #min. 6-11
-	#(val_min, ":rank_reward", 10),
+	# (store_div, ":rank_reward", ":xp_reward", 10), #min. 6-11
+	# #(val_min, ":rank_reward", 10),
 
-	(store_div, ":exp", ":amount", 3), #min 5-8
-	(val_add, ":exp", 7), #min 12-15
+	# (store_div, ":exp", ":amount", 3), #min 5-8
+	# (val_add, ":exp", 7), #min 12-15
 
-	(assign, reg55, "$g_talk_troop"), 		#quest_object_troop
-	(assign, reg56, ":target_troop"),		#quest_target_troop
-	(assign, reg57, ":amount"),				#quest_target_amount
-	(assign, reg58, 3),						#quest_importance
-	(assign, reg59, ":xp_reward"),			#quest_xp_reward
-	(assign, reg60, ":gold_reward"),		#quest_gold_reward
-	(assign, reg61, ":rank_reward"),		#quest_rank_reward
-	(assign, reg62, ":exp"),				#quest_expiration_days
-	(assign, reg63, 10),					#quest_dont_give_again_period
-	(assign, reg64, ":target_template"),	#quest_target_party_template
-]),
+	# (assign, reg55, "$g_talk_troop"), 		#quest_object_troop
+	# (assign, reg56, ":target_troop"),		#quest_target_troop
+	# (assign, reg57, ":amount"),				#quest_target_amount
+	# (assign, reg58, 3),						#quest_importance
+	# (assign, reg59, ":xp_reward"),			#quest_xp_reward
+	# (assign, reg60, ":gold_reward"),		#quest_gold_reward
+	# (assign, reg61, ":rank_reward"),		#quest_rank_reward
+	# (assign, reg62, ":exp"),				#quest_expiration_days
+	# (assign, reg63, 10),					#quest_dont_give_again_period
+	# (assign, reg64, ":target_template"),	#quest_target_party_template
+# ]),
 
 # script_cf_init_defeat_lord_quest
 #qst_defeat_target_lord
 
-("cf_init_defeat_lord_quest", [
+# ("cf_init_defeat_lord_quest", [
 
-	(store_character_level, ":player_level", "trp_player"),
-	(ge, ":player_level", 18),
+	# (store_character_level, ":player_level", "trp_player"),
+	# (ge, ":player_level", 18),
 	
-	(store_faction_of_troop, ":quest_giver_faction", "$g_talk_troop"),
-	(call_script, "script_cf_find_target_patrolling_enemy_lord_in_theater", ":quest_giver_faction"),
-	(assign, ":target_lord", reg0),
+	# (store_faction_of_troop, ":quest_giver_faction", "$g_talk_troop"),
+	# (call_script, "script_cf_find_target_patrolling_enemy_lord_in_theater", ":quest_giver_faction"),
+	# (assign, ":target_lord", reg0),
 
-	(assign, ":xp_reward", 150),
-	(assign, ":gold_reward", 350),
-	(assign, ":rank_reward", 55),
+	# (assign, ":xp_reward", 150),
+	# (assign, ":gold_reward", 350),
+	# (assign, ":rank_reward", 55),
 	
-	(assign, ":exp", 30),
+	# (assign, ":exp", 30),
 
-	(assign, reg55, "$g_talk_troop"), 		#quest_object_troop
-	(assign, reg56, ":target_lord"),		#quest_target_troop
-	(assign, reg58, 8),						#quest_importance
-	(assign, reg59, ":xp_reward"),			#quest_xp_reward
-	(assign, reg60, ":gold_reward"),		#quest_gold_reward
-	(assign, reg61, ":rank_reward"),		#quest_rank_reward
-	(assign, reg62, ":exp"),				#quest_expiration_days
-	(assign, reg63, 10),					#quest_dont_give_again_period
+	# (assign, reg55, "$g_talk_troop"), 		#quest_object_troop
+	# (assign, reg56, ":target_lord"),		#quest_target_troop
+	# (assign, reg58, 8),						#quest_importance
+	# (assign, reg59, ":xp_reward"),			#quest_xp_reward
+	# (assign, reg60, ":gold_reward"),		#quest_gold_reward
+	# (assign, reg61, ":rank_reward"),		#quest_rank_reward
+	# (assign, reg62, ":exp"),				#quest_expiration_days
+	# (assign, reg63, 10),					#quest_dont_give_again_period
 
-]),
+# ]),
 
 # script_cf_find_target_patrolling_lord
 
