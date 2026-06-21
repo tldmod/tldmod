@@ -3190,7 +3190,7 @@ ai_scripts = [
             (disable_party, ":besieger"), #removing it causes script errors in script_simulate_battle, so we use this instead
             (check_quest_active, "qst_guardian_party_quest"),
             (str_store_string, s6, "@You have breached the Ring of Isengard with the help of the Tree Men. During the battle, Isengard was flooded, but Orthanc still stands unscathed in midst of the havoc. You should investigate the aftermath."),
-            (add_quest_note_from_sreg, "qst_blank_quest_05", 2, s6, 0),            
+            (add_quest_note_from_sreg, "qst_kill_quest_faction", 2, s6, 0),            
             #(dialog_box,s6,"@The Flooding of Isengard"),
             (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 2),
             (jump_to_menu, "mnu_isengard_flooding"),

@@ -2938,7 +2938,7 @@ mission_templates = [ # not used in game
       
       (val_add, "$enemy_reinforcement_stage", 1), 
       #This checks the faction of the quest giver.
-      (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
+      (quest_get_slot, ":troop", "qst_sea_battle", slot_quest_object_center),
       (store_faction_of_party, ":faction", ":troop"),      
       
       #This checks what type of enemy troops to spawn, depending on faction of quest giver (North or South)
@@ -3035,7 +3035,7 @@ mission_templates = [ # not used in game
       (val_add, "$ally_reinforcement_stage", 1),
 #      (store_random_in_range, ":chance", 0, 2),
  #     (ge, ":chance", 1), #2 out of 3 times  
-      (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
+      (quest_get_slot, ":troop", "qst_sea_battle", slot_quest_object_center),
       (store_faction_of_party, ":faction", ":troop"),      
       
       (try_begin),
@@ -3280,7 +3280,7 @@ mission_templates = [ # not used in game
       (lt,"$ally_reinforcement_stage", 4), #up to 4 reinforcements     
       (val_add, "$ally_reinforcement_stage", 1), 
       #This checks the faction of the quest giver.
-      (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
+      (quest_get_slot, ":troop", "qst_sea_battle", slot_quest_object_center),
       (store_faction_of_party, ":faction", ":troop"),      
       
       #This checks what type of enemy troops to spawn, depending on faction of quest giver (North or South)
@@ -3389,7 +3389,7 @@ mission_templates = [ # not used in game
       (try_end),
       
       (val_add, "$enemy_reinforcement_stage", 1),
-      (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
+      (quest_get_slot, ":troop", "qst_sea_battle", slot_quest_object_center),
       (store_faction_of_party, ":faction", ":troop"),      
       
       (try_begin),

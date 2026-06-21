@@ -7770,10 +7770,10 @@ scripts = [
 			##Kham - Defend refugees
 			#(eq, cheat_switch, 1),
 			#(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
-			(eq, ":quest_no", "qst_blank_quest_01"),
+			(eq, ":quest_no", "qst_defend_refugees"),
 			(try_begin),
 				(eq, "$tld_war_began", 1),
-				(neg|check_quest_active,"qst_blank_quest_01"),
+				(neg|check_quest_active,"qst_defend_refugees"),
 				(call_script, "script_cf_init_quest_defend_refugees"),
 
 				(assign, ":quest_target_party_template", reg55),		
@@ -7794,9 +7794,9 @@ scripts = [
 			#(eq, cheat_switch, 1),
 			#(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
 			(eq, "$tld_war_began", 1),
-			(eq, ":quest_no", "qst_blank_quest_02"),
+			(eq, ":quest_no", "qst_hunt_down_refugees"),
 			(try_begin),
-				(neg|check_quest_active,"qst_blank_quest_02"),
+				(neg|check_quest_active,"qst_hunt_down_refugees"),
 				(call_script, "script_cf_init_quest_hunt_refugees"),
 
 				(assign, ":quest_target_party_template", reg55),		
@@ -7815,9 +7815,9 @@ scripts = [
 			
 			#Kham - Sea Battle (both sides)
 			(eq, "$tld_war_began", 1),
-			(eq, ":quest_no", "qst_blank_quest_03"),
+			(eq, ":quest_no", "qst_sea_battle"),
 			(try_begin),
-				(neg|check_quest_active, "qst_blank_quest_03"),
+				(neg|check_quest_active, "qst_sea_battle"),
 				(call_script, "script_cf_init_quest_sea_battle"),
 
 				(assign, ":quest_object_troop", reg55),
@@ -7837,9 +7837,9 @@ scripts = [
 			] + (is_a_wb_script==1 and [
 			#Kham - Kill Quest Targeted
 			(eq, "$tld_war_began", 1),
-			(eq, ":quest_no", "qst_blank_quest_04"),
+			(eq, ":quest_no", "qst_kill_quest_troop"),
 			(try_begin),
-				(neg|check_quest_active, "qst_blank_quest_04"),
+				(neg|check_quest_active, "qst_kill_quest_troop"),
 				(call_script, "script_cf_init_kill_quest_target"),
 
 				(assign, ":quest_target_faction", reg54),
@@ -7862,9 +7862,9 @@ scripts = [
 			#Kham - Kill Quest Faction Troops
 			] + (is_a_wb_script==1 and [
 			(eq, "$tld_war_began", 1),
-			(eq, ":quest_no", "qst_blank_quest_05"),
+			(eq, ":quest_no", "qst_kill_quest_faction"),
 			(try_begin),
-				(neg|check_quest_active, "qst_blank_quest_05"),
+				(neg|check_quest_active, "qst_kill_quest_faction"),
 				(call_script, "script_cf_init_kill_quest_faction"),
 
 				(assign, ":quest_object_troop", reg55),
@@ -7885,9 +7885,9 @@ scripts = [
 			#Kham - Defeat Lord
 			] + (is_a_wb_script==1 and [
 			(eq, "$tld_war_began", 1),
-			(eq, ":quest_no", "qst_blank_quest_06"),
+			(eq, ":quest_no", "qst_defeat_target_lord"),
 			(try_begin),
-				(neg|check_quest_active, "qst_blank_quest_06"),
+				(neg|check_quest_active, "qst_defeat_target_lord"),
 				(call_script, "script_cf_init_defeat_lord_quest"),
 
 				(assign, ":quest_object_troop", reg55),
@@ -7907,9 +7907,9 @@ scripts = [
 
 			#Kham - Kill Quest - Bandits (Mayor Quest)
 			] + (is_a_wb_script==1 and [
-			(eq, ":quest_no", "qst_blank_quest_17"),
+			(eq, ":quest_no", "qst_kill_quest_bandit"),
 			(try_begin),
-				(neg|check_quest_active, "qst_blank_quest_17"),
+				(neg|check_quest_active, "qst_kill_quest_bandit"),
 				(call_script, "script_cf_init_kill_quest_bandit"),
 
 				(assign, ":quest_object_troop", reg55),
@@ -8522,10 +8522,10 @@ scripts = [
 			##Kham - Reinforce Center
 			#(eq, cheat_switch, 1),
 			#(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
-			(eq, ":quest_no", "qst_blank_quest_16"),
+			(eq, ":quest_no", "qst_reinforce_center"),
 			(try_begin),
 				(eq, "$tld_war_began", 1),
-				(neg|check_quest_active,"qst_blank_quest_16"),
+				(neg|check_quest_active,"qst_reinforce_center"),
 				(call_script, "script_cf_init_quest_reinforce_center"),
 				
 				(assign, ":quest_object_center", reg55),
@@ -8979,6 +8979,7 @@ scripts = [
             (assign, ":quest_target_center", reg0),
             #(assign, ":quest_target_dist", reg1),
             (neq, ":quest_target_center", ":giver_center_no"),
+            (neq, ":quest_target_center", "p_town_henneth_annun"),
 			(store_faction_of_party,":quest_target_faction",":quest_target_center"),
 			(assign,":quest_object_faction",":giver_faction_no"),
             
@@ -14852,7 +14853,7 @@ scripts = [
 
     #Kham - Edited to accommodate new MTs for quests.
     (try_begin),
-    	(check_quest_active, "qst_blank_quest_02"),
+    	(check_quest_active, "qst_hunt_down_refugees"),
     	(this_or_next|eq, "$g_encountered_party", "$qst_refugee_party_1"),
     	(this_or_next|eq, "$g_encountered_party", "$qst_refugee_party_2"),
     	(			  eq, "$g_encountered_party", "$qst_refugee_party_3"),
@@ -17451,7 +17452,7 @@ scripts = [
      (try_end),
 	 (try_begin), #find remaining quest target parties, make them normal parties (spawned from Quest Helper Trigger )
 	   (this_or_next|eq, ":quest_no", "qst_deal_with_looters"),
-	   (eq, ":quest_no", "qst_blank_quest_17"),
+	   (eq, ":quest_no", "qst_kill_quest_bandit"),
 	   (quest_get_slot, ":target_template", ":quest_no", slot_quest_target_party_template),
 		(try_for_parties, ":quest_targets"),
 			(party_get_template_id, ":party_template", ":quest_targets"),
@@ -17483,7 +17484,7 @@ scripts = [
      (try_end),
 	 (try_begin), #find remaining quest target parties, make them normal parties (spawned from Quest Helper Trigger )
 	   (this_or_next|eq, ":quest_no", "qst_deal_with_looters"),
-	   (eq, ":quest_no", "qst_blank_quest_17"),
+	   (eq, ":quest_no", "qst_kill_quest_bandit"),
 	   (quest_get_slot, ":target_template", ":quest_no", slot_quest_target_party_template),
 		(try_for_parties, ":quest_targets"),
 			(party_get_template_id, ":party_template", ":quest_targets"),
@@ -26868,7 +26869,7 @@ command_cursor_scripts = [
 
 #Defend Refugee Quest
 #script_cf_init_quest_defend_refugees
-#qst_blank_quest_01
+#qst_defend_refugees
 
 ("cf_init_quest_defend_refugees", [
 		(faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
@@ -27078,7 +27079,7 @@ command_cursor_scripts = [
 
 # Hunt Down Refugee Quest
 #script_cf_init_quest_hunt_refugees
-#qst_blank_quest_02
+#qst_hunt_down_refugees
 
 ("cf_init_quest_hunt_refugees", [
 		(faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
@@ -27236,7 +27237,7 @@ command_cursor_scripts = [
 ]),
 
 #script_cf_init_quest_reinforce_center
-#qst_blank_quest_16
+#qst_reinforce_center
 
 ("cf_init_quest_reinforce_center",
   [
@@ -27322,7 +27323,7 @@ command_cursor_scripts = [
 ]),
 
 #script_cf_init_quest_sea_battle
-#qst_blank_quest_03
+#qst_sea_battle
 
 ("cf_init_quest_sea_battle", [
 
@@ -27442,7 +27443,7 @@ command_cursor_scripts = [
         (assign,":news_color",color_good_news),
     (try_end),
 
-    (quest_get_slot, ":quest_giver_troop", "qst_blank_quest_03", slot_quest_object_troop),
+    (quest_get_slot, ":quest_giver_troop", "qst_sea_battle", slot_quest_object_troop),
     (store_troop_faction, ":quest_giver_faction", ":quest_giver_troop"),
 
     (try_begin),
@@ -27493,7 +27494,7 @@ command_cursor_scripts = [
 		
 
 # script_cf_init_kill_quest
-# qst_blank_quest_04
+# qst_kill_quest_troop
 
 ("cf_init_kill_quest_target", [
 
@@ -27554,7 +27555,7 @@ command_cursor_scripts = [
 ]),
 
 # script_cf_init_kill_quest_faction
-#qst_blank_quest_05
+#qst_kill_quest_faction
 
 ("cf_init_kill_quest_faction", [
 
@@ -32051,7 +32052,7 @@ if is_a_wb_script==1:
 
 
 # script_cf_init_kill_quest_bandit
-# qst_blank_quest_17
+# qst_kill_quest_bandit
 
 ("cf_init_kill_quest_bandit", [
 	(store_character_level, ":player_level", "trp_player"),
@@ -32088,7 +32089,7 @@ if is_a_wb_script==1:
 ]),
 
 # script_cf_init_defeat_lord_quest
-#qst_blank_quest_06
+#qst_defeat_target_lord
 
 ("cf_init_defeat_lord_quest", [
 

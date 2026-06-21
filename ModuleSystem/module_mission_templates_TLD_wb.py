@@ -1885,9 +1885,9 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
 
 
 tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
-    (this_or_next|check_quest_active, "qst_blank_quest_04"), #Targeted Kill quest
-    (this_or_next|check_quest_active, "qst_blank_quest_05"), #Faction Troop Kill Quest
-    (this_or_next|check_quest_active, "qst_blank_quest_17"), #Bandit Kill quest
+    (this_or_next|check_quest_active, "qst_kill_quest_troop"), #Targeted Kill quest
+    (this_or_next|check_quest_active, "qst_kill_quest_faction"), #Faction Troop Kill Quest
+    (this_or_next|check_quest_active, "qst_kill_quest_bandit"), #Bandit Kill quest
     (this_or_next|check_quest_active, "qst_oath_of_vengeance"),
     (check_quest_active, "qst_oath_personal"),     ],
 
@@ -1937,13 +1937,13 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
     (try_end),
 
     (try_begin),
-      (check_quest_active, "qst_blank_quest_04"), #Targeted Kill quest
-      (neg|check_quest_succeeded, "qst_blank_quest_04"),
-      (quest_get_slot, ":target", "qst_blank_quest_04", slot_quest_target_troop),
-      (quest_get_slot, ":target_faction", "qst_blank_quest_04", slot_quest_target_faction),
+      (check_quest_active, "qst_kill_quest_troop"), #Targeted Kill quest
+      (neg|check_quest_succeeded, "qst_kill_quest_troop"),
+      (quest_get_slot, ":target", "qst_kill_quest_troop", slot_quest_target_troop),
+      (quest_get_slot, ":target_faction", "qst_kill_quest_troop", slot_quest_target_faction),
       (store_character_level, ":target_level", ":target"),
-      (quest_get_slot, ":current_amount", "qst_blank_quest_04", slot_quest_current_state),
-      (quest_get_slot, ":target_amount", "qst_blank_quest_04", slot_quest_target_amount),
+      (quest_get_slot, ":current_amount", "qst_kill_quest_troop", slot_quest_current_state),
+      (quest_get_slot, ":target_amount", "qst_kill_quest_troop", slot_quest_target_amount),
       (store_character_level, ":killed_level", ":troop_id"), 
       (store_faction_of_troop, ":troop_faction", ":troop_id"),
       (eq, ":target_faction", ":troop_faction"),
@@ -1952,7 +1952,7 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
       (eq, ":result", 1), #or wounded
       (eq, ":killer", ":player"),
       (val_add, ":current_amount", 1),
-      (quest_set_slot, "qst_blank_quest_04", slot_quest_current_state, ":current_amount"),
+      (quest_set_slot, "qst_kill_quest_troop", slot_quest_current_state, ":current_amount"),
 
       #Debug
       #(assign, reg32, ":current_amount"),
@@ -1960,18 +1960,18 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
 
       (try_begin),
         (ge, ":current_amount", ":target_amount"),
-        (call_script, "script_succeed_quest", "qst_blank_quest_04"),
+        (call_script, "script_succeed_quest", "qst_kill_quest_troop"),
       (try_end),
 
     (try_end),
 
     (try_begin),
-      (check_quest_active, "qst_blank_quest_05"), #Faction Troop Kill Quest
-      (neg|check_quest_succeeded, "qst_blank_quest_05"),
+      (check_quest_active, "qst_kill_quest_faction"), #Faction Troop Kill Quest
+      (neg|check_quest_succeeded, "qst_kill_quest_faction"),
       (store_character_level, ":player_level", "trp_player"),
-      (quest_get_slot, ":target_faction", "qst_blank_quest_05", slot_quest_target_faction),
-      (quest_get_slot, ":current_amount", "qst_blank_quest_05", slot_quest_current_state),
-      (quest_get_slot, ":target_amount", "qst_blank_quest_05", slot_quest_target_amount),
+      (quest_get_slot, ":target_faction", "qst_kill_quest_faction", slot_quest_target_faction),
+      (quest_get_slot, ":current_amount", "qst_kill_quest_faction", slot_quest_current_state),
+      (quest_get_slot, ":target_amount", "qst_kill_quest_faction", slot_quest_target_amount),
       (store_faction_of_troop, ":troop_faction", ":troop_id"),
       (eq, ":target_faction", ":troop_faction"),
       (this_or_next|eq, ":result", 0), #killed
@@ -1984,7 +1984,7 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
         (val_add, ":current_amount", 1),
       (try_end),
 
-      (quest_set_slot, "qst_blank_quest_05", slot_quest_current_state, ":current_amount"),
+      (quest_set_slot, "qst_kill_quest_faction", slot_quest_current_state, ":current_amount"),
 
       #Debug
       #(assign, reg33, ":current_amount"),
@@ -1992,22 +1992,22 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
 
       (try_begin),
         (ge, ":current_amount", ":target_amount"),
-        (call_script, "script_succeed_quest", "qst_blank_quest_05"),
+        (call_script, "script_succeed_quest", "qst_kill_quest_faction"),
       (try_end),
     (try_end),
 
     (try_begin),
-      (check_quest_active, "qst_blank_quest_17"), #Bandit Kill quest
-      (neg|check_quest_succeeded, "qst_blank_quest_17"),
-      (quest_get_slot, ":target", "qst_blank_quest_17", slot_quest_target_troop),
-      (quest_get_slot, ":current_amount", "qst_blank_quest_17", slot_quest_current_state),
-      (quest_get_slot, ":target_amount", "qst_blank_quest_17", slot_quest_target_amount),
+      (check_quest_active, "qst_kill_quest_bandit"), #Bandit Kill quest
+      (neg|check_quest_succeeded, "qst_kill_quest_bandit"),
+      (quest_get_slot, ":target", "qst_kill_quest_bandit", slot_quest_target_troop),
+      (quest_get_slot, ":current_amount", "qst_kill_quest_bandit", slot_quest_current_state),
+      (quest_get_slot, ":target_amount", "qst_kill_quest_bandit", slot_quest_target_amount),
       (eq, ":target", ":troop_id"),
       (this_or_next|eq, ":result", 0), #killed
       (eq, ":result", 1), #or wounded
       #(eq, ":killer", ":player"),
       (val_add, ":current_amount", 1),
-      (quest_set_slot, "qst_blank_quest_17", slot_quest_current_state, ":current_amount"),
+      (quest_set_slot, "qst_kill_quest_bandit", slot_quest_current_state, ":current_amount"),
 
       #Debug
       #(assign, reg32, ":current_amount"),
@@ -2015,7 +2015,7 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
 
       (try_begin),
         (ge, ":current_amount", ":target_amount"),
-        (call_script, "script_succeed_quest", "qst_blank_quest_17"),
+        (call_script, "script_succeed_quest", "qst_kill_quest_bandit"),
       (try_end),
 
     (try_end),

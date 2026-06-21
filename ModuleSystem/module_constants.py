@@ -1315,8 +1315,8 @@ kingdom_companions_end = trp_kingdom_companions_end
 lord_quests_begin = "qst_deliver_message"
 lord_quests_end   = "qst_follow_army"
 
-lord_quests_begin_2 = "qst_blank_quest_01"
-lord_quests_end_2	= "qst_blank_quest_06"
+lord_quests_begin_2 = "qst_defend_refugees"
+lord_quests_end_2	= "qst_defeat_target_lord"
 
 enemy_lord_quests_begin = lord_quests_end #no enemy lord quests at present in TLD, was "qst_lend_surgeon"
 enemy_lord_quests_end   = lord_quests_end
@@ -1324,7 +1324,7 @@ enemy_lord_quests_end   = lord_quests_end
 mayor_quests_begin  = "qst_move_cattle_herd"
 mayor_quests_end    = "qst_tld_introduction"
 
-mayor_quests_begin_2 = "qst_blank_quest_16" 
+mayor_quests_begin_2 = "qst_reinforce_center" 
 mayor_quests_end_2 = "qst_blank_quest_19"
 
 army_quests_begin = "qst_deliver_cattle_to_army"

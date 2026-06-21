@@ -2704,36 +2704,36 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
     #Kham - Reinforce Center Troop Count    
     (try_begin),
-      (check_quest_active, "qst_blank_quest_16"),
-      (quest_get_slot, ":target_center", "qst_blank_quest_16", slot_quest_target_center),
+      (check_quest_active, "qst_reinforce_center"),
+      (quest_get_slot, ":target_center", "qst_reinforce_center", slot_quest_target_center),
       (eq, "$g_encountered_party", ":target_center"),
       (str_store_party_name, s8, ":target_center"),
-      (quest_get_slot, ":amount", "qst_blank_quest_16", slot_quest_target_amount),
-      (quest_get_slot, ":current", "qst_blank_quest_16", slot_quest_current_state),
+      (quest_get_slot, ":amount", "qst_reinforce_center", slot_quest_target_amount),
+      (quest_get_slot, ":current", "qst_reinforce_center", slot_quest_current_state),
       (try_begin),
         (lt, ":current", ":amount"), #This means that the player has given some troops already.
         (assign, ":amount", ":current"),
       (try_end),
       (try_begin),
         (eq, ":troops_given", ":amount"),
-        (call_script, "script_succeed_quest", "qst_blank_quest_16"),
-        (quest_set_slot, "qst_blank_quest_16", slot_quest_current_state, 0),
+        (call_script, "script_succeed_quest", "qst_reinforce_center"),
+        (quest_set_slot, "qst_reinforce_center", slot_quest_current_state, 0),
       (else_try),
         (lt, ":troops_given", ":amount"),
         (val_sub, ":amount", ":troops_given"),
-        (quest_set_slot, "qst_blank_quest_16", slot_quest_current_state, ":amount"),
+        (quest_set_slot, "qst_reinforce_center", slot_quest_current_state, ":amount"),
       (else_try),
         (gt, ":troops_given", ":amount"),
         (val_sub, ":amount", ":troops_given"),
-        (call_script, "script_succeed_quest", "qst_blank_quest_16"),
-        (quest_set_slot, "qst_blank_quest_16", slot_quest_current_state, ":amount"),
+        (call_script, "script_succeed_quest", "qst_reinforce_center"),
+        (quest_set_slot, "qst_reinforce_center", slot_quest_current_state, ":amount"),
       (try_end),
       
-      (quest_get_slot, ":donated", "qst_blank_quest_16", slot_quest_current_state),
-      (quest_get_slot, ":orig_amount", "qst_blank_quest_16", slot_quest_target_amount),
+      (quest_get_slot, ":donated", "qst_reinforce_center", slot_quest_current_state),
+      (quest_get_slot, ":orig_amount", "qst_reinforce_center", slot_quest_target_amount),
       (store_sub, reg55, ":orig_amount", ":donated"),
       (str_store_string, s5, "@You have reinforced {s8} with {reg55} troops."),
-      (add_quest_note_from_sreg, "qst_blank_quest_16", 3, s5, 0),
+      (add_quest_note_from_sreg, "qst_reinforce_center", 3, s5, 0),
     (try_end),],
 "{!}{s4}", "player_hire_troop_reunite_2", [(troop_add_gold, "$g_player_troop", "$initial_party_value"),]],
 
@@ -3589,11 +3589,11 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 #### Kham Defeat Lord Completion Start ####
 
 [anyone,"lord_start", [
-    (check_quest_active, "qst_blank_quest_06"),
-    (quest_slot_eq, "qst_blank_quest_06", slot_quest_object_troop,"$g_talk_troop"),
-    (check_quest_succeeded, "qst_blank_quest_06"),
-    (quest_slot_eq, "qst_blank_quest_06", slot_quest_object_troop,"$g_talk_troop"),
-    (quest_get_slot, ":quest_target_troop", "qst_blank_quest_06", slot_quest_target_troop),
+    (check_quest_active, "qst_defeat_target_lord"),
+    (quest_slot_eq, "qst_defeat_target_lord", slot_quest_object_troop,"$g_talk_troop"),
+    (check_quest_succeeded, "qst_defeat_target_lord"),
+    (quest_slot_eq, "qst_defeat_target_lord", slot_quest_object_troop,"$g_talk_troop"),
+    (quest_get_slot, ":quest_target_troop", "qst_defeat_target_lord", slot_quest_target_troop),
     (str_store_troop_name, s7, ":quest_target_troop"),
     (str_store_faction_name, s8, ":quest_target_troop"),
     (try_begin),
@@ -3604,12 +3604,12 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (try_end),
     ],
 "{!}{s5}", "lord_defeat_lord_complete",[
-    (call_script, "script_finish_quest", "qst_blank_quest_06", 100),
+    (call_script, "script_finish_quest", "qst_defeat_target_lord", 100),
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),
     ]],
 
 [anyone|plyr,"lord_defeat_lord_complete", [
-    (quest_get_slot, ":quest_target_troop", "qst_blank_quest_06", slot_quest_target_troop),
+    (quest_get_slot, ":quest_target_troop", "qst_defeat_target_lord", slot_quest_target_troop),
     (str_store_troop_name, s7, ":quest_target_troop"),
     (str_store_faction_name, s8, ":quest_target_troop"),
     (try_begin),
@@ -3619,19 +3619,19 @@ How could I expect someone like {playername} to be up to the challenge. My serva
       (str_store_string, s5, "@ I should rather make report of my victory over {s7} of {s8} myself - the chief glory is mine, and you will not forget it!"),
     (try_end),],
 "{!}{s5}", "close_window",[
-    (call_script, "script_finish_quest", "qst_blank_quest_06", 100),
+    (call_script, "script_finish_quest", "qst_defeat_target_lord", 100),
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 8),
     ]],
 
 
 [anyone,"lord_start", [
-    (check_quest_active, "qst_blank_quest_06"),
-    (quest_slot_eq, "qst_blank_quest_06", slot_quest_object_troop,"$g_talk_troop"),
-    (check_quest_failed, "qst_blank_quest_06"),
-    (quest_slot_eq, "qst_blank_quest_06", slot_quest_object_troop,"$g_talk_troop"),],
+    (check_quest_active, "qst_defeat_target_lord"),
+    (quest_slot_eq, "qst_defeat_target_lord", slot_quest_object_troop,"$g_talk_troop"),
+    (check_quest_failed, "qst_defeat_target_lord"),
+    (quest_slot_eq, "qst_defeat_target_lord", slot_quest_object_troop,"$g_talk_troop"),],
 "I have heard that you failed to do what I asked you to. Disappointing, {playername}.", "lord_target_lord_failed",[
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -2),
-    (cancel_quest, "qst_blank_quest_06"),
+    (cancel_quest, "qst_defeat_target_lord"),
     ]],
 
 [anyone|plyr, "lord_target_lord_failed",[],
@@ -3641,46 +3641,46 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 #### Kham Kill Quests Completion Start ####
 
 [anyone,"lord_start", [
-    (check_quest_active, "qst_blank_quest_04"),
-    (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),
-    (check_quest_succeeded, "qst_blank_quest_04"),
-    (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),
+    (check_quest_active, "qst_kill_quest_troop"),
+    (quest_slot_eq, "qst_kill_quest_troop", slot_quest_object_troop,"$g_talk_troop"),
+    (check_quest_succeeded, "qst_kill_quest_troop"),
+    (quest_slot_eq, "qst_kill_quest_troop", slot_quest_object_troop,"$g_talk_troop"),
     ],
 "Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superior force.", "lord_generic_mission_completed",[
-    (call_script, "script_finish_quest", "qst_blank_quest_04", 100),
+    (call_script, "script_finish_quest", "qst_kill_quest_troop", 100),
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),
     ]],
 
 [anyone,"lord_start", [
-    (check_quest_active, "qst_blank_quest_04"),
-    (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),
-    (check_quest_failed, "qst_blank_quest_04"),
-    (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),],
+    (check_quest_active, "qst_kill_quest_troop"),
+    (quest_slot_eq, "qst_kill_quest_troop", slot_quest_object_troop,"$g_talk_troop"),
+    (check_quest_failed, "qst_kill_quest_troop"),
+    (quest_slot_eq, "qst_kill_quest_troop", slot_quest_object_troop,"$g_talk_troop"),],
 "I have heard that you failed to do what I asked you to. Disappointing, {playername}.", "kill_quest_failed",[
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
-    (cancel_quest, "qst_blank_quest_04"),
+    (cancel_quest, "qst_kill_quest_troop"),
     ]],
 
 
 [anyone,"lord_start", [
-    (check_quest_active, "qst_blank_quest_05"),
-    (quest_slot_eq, "qst_blank_quest_05", slot_quest_object_troop,"$g_talk_troop"),
-    (check_quest_succeeded, "qst_blank_quest_05"),
-    (quest_slot_eq, "qst_blank_quest_05", slot_quest_object_troop,"$g_talk_troop"),
+    (check_quest_active, "qst_kill_quest_faction"),
+    (quest_slot_eq, "qst_kill_quest_faction", slot_quest_object_troop,"$g_talk_troop"),
+    (check_quest_succeeded, "qst_kill_quest_faction"),
+    (quest_slot_eq, "qst_kill_quest_faction", slot_quest_object_troop,"$g_talk_troop"),
     ],
 "Your men have witnessed your bravery in battle, {playername}. You have earned my respect.", "lord_generic_mission_completed",[
-    (call_script, "script_finish_quest", "qst_blank_quest_05", 100),
+    (call_script, "script_finish_quest", "qst_kill_quest_faction", 100),
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
     ]],
 
 [anyone,"lord_start", [
-    (check_quest_active, "qst_blank_quest_05"),
-    (quest_slot_eq, "qst_blank_quest_05", slot_quest_object_troop,"$g_talk_troop"),
-    (check_quest_failed, "qst_blank_quest_05"),
-    (quest_slot_eq, "qst_blank_quest_05", slot_quest_object_troop,"$g_talk_troop"),],
+    (check_quest_active, "qst_kill_quest_faction"),
+    (quest_slot_eq, "qst_kill_quest_faction", slot_quest_object_troop,"$g_talk_troop"),
+    (check_quest_failed, "qst_kill_quest_faction"),
+    (quest_slot_eq, "qst_kill_quest_faction", slot_quest_object_troop,"$g_talk_troop"),],
 "I have heard that you failed to do what I asked you to. Disappointing, {playername}.", "kill_quest_failed",[
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
-    (cancel_quest, "qst_blank_quest_05"),
+    (cancel_quest, "qst_kill_quest_faction"),
     ]],
 
 [anyone|plyr, "kill_quest_failed",[],
@@ -3776,12 +3776,12 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 ## Defend Refugees Completion Dialogues - Kham
 
-[anyone,"lord_start", [(check_quest_active,"qst_blank_quest_01"),
-                       (check_quest_succeeded, "qst_blank_quest_01"),
-                       (quest_get_slot, ":quest_giver", "qst_blank_quest_01", slot_quest_giver_troop),
+[anyone,"lord_start", [(check_quest_active,"qst_defend_refugees"),
+                       (check_quest_succeeded, "qst_defend_refugees"),
+                       (quest_get_slot, ":quest_giver", "qst_defend_refugees", slot_quest_giver_troop),
                        (eq, ":quest_giver", "$g_talk_troop"),],
 "I have received reports that all refugees were safely escorted. We thank you {playername} for your help. In this war, it is the innocent that suffer the most.", "lord_generic_mission_completed",
-   [(call_script, "script_finish_quest", "qst_blank_quest_01", 100),
+   [(call_script, "script_finish_quest", "qst_defend_refugees", 100),
     (assign, reg18, "$qst_raider_party_defeated"),
     (call_script, "script_cf_get_random_enemy_center_in_theater","p_main_party"),
     (store_faction_of_party, ":faction", reg0),
@@ -3793,9 +3793,9 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (display_message, "@Foiling the enemy's attempts at attacking the refugee trains have weakened their resolve ({s1} has lost {reg19} faction strength due to your victory against {reg18} raiders).", color_good_news),
     (faction_set_slot,":faction",slot_faction_strength_tmp,":enemy_strength"), ]],
 
-[anyone,"lord_start", [ (check_quest_active,"qst_blank_quest_01"),
-                        (check_quest_failed, "qst_blank_quest_01"),
-                        (quest_get_slot, ":quest_giver", "qst_blank_quest_01", slot_quest_giver_troop),
+[anyone,"lord_start", [ (check_quest_active,"qst_defend_refugees"),
+                        (check_quest_failed, "qst_defend_refugees"),
+                        (quest_get_slot, ":quest_giver", "qst_defend_refugees", slot_quest_giver_troop),
                         (eq, ":quest_giver", "$g_talk_troop"),],
 "{playername}, I have received reports that the refugees were intercepted by raiders and were all slaughtered. This is very disappointing...", "lord_defend_refugees_failed", []],
 
@@ -3805,7 +3805,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 [anyone,"lord_defend_refugees_failed_1a", [],
 "It is the innocent that suffer the most in wars. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.", "lord_pretalk",
    [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",-1),
-    (call_script, "script_end_quest", "qst_blank_quest_01"),
+    (call_script, "script_end_quest", "qst_defend_refugees"),
     (assign, reg18, "$qst_raider_party_defeated"),
     (call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party"),
     (store_faction_of_party, ":faction", reg0),
@@ -3819,15 +3819,15 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (display_message, "@You did, however, defeat {reg18} raiders, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).", color_good_news),
     (faction_set_slot, ":faction", slot_faction_strength_tmp, ":enemy_strength"), ]],
 
-[anyone,"lord_start", [(check_quest_active,"qst_blank_quest_01"),
-                       (check_quest_concluded, "qst_blank_quest_01"),
-                       (quest_get_slot, ":quest_giver", "qst_blank_quest_01", slot_quest_giver_troop),
+[anyone,"lord_start", [(check_quest_active,"qst_defend_refugees"),
+                       (check_quest_concluded, "qst_defend_refugees"),
+                       (quest_get_slot, ":quest_giver", "qst_defend_refugees", slot_quest_giver_troop),
                        (eq, ":quest_giver", "$g_talk_troop"),
                        (assign, reg17, "$qst_refugees_escaped")],
 "I have received reports that only {reg17} refugee trains reached their destination. This is unfortunate, but that is the cost of war. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.", "lord_defend_refugees_half_completed",
    [(store_mul, ":completion", "$qst_refugees_escaped", 100),
     (val_div, ":completion", 3),
-    (call_script, "script_finish_quest", "qst_blank_quest_01", ":completion"),
+    (call_script, "script_finish_quest", "qst_defend_refugees", ":completion"),
     (assign, reg18, "$qst_raider_party_defeated"),
     (call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party"),
     (store_faction_of_party, ":faction", reg0),
@@ -3850,12 +3850,12 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 ## Hunt Down Refugees Completion Dialogues - Kham
 
-[anyone,"lord_start", [(check_quest_active,"qst_blank_quest_02"),
-                       (check_quest_succeeded, "qst_blank_quest_02"),
-                       (quest_get_slot, ":quest_giver", "qst_blank_quest_02", slot_quest_giver_troop),
+[anyone,"lord_start", [(check_quest_active,"qst_hunt_down_refugees"),
+                       (check_quest_succeeded, "qst_hunt_down_refugees"),
+                       (quest_get_slot, ":quest_giver", "qst_hunt_down_refugees", slot_quest_giver_troop),
                        (eq, ":quest_giver", "$g_talk_troop")],
 "I have received reports that the refugees were all killed, and that prisoner trains will be coming soon... You did well, {playername}. This is only the beginning, we shall rule over this land soon enough.", "lord_generic_mission_completed",
-   [(call_script, "script_finish_quest", "qst_blank_quest_02", 100),
+   [(call_script, "script_finish_quest", "qst_hunt_down_refugees", 100),
     (call_script, "script_cf_get_random_enemy_center_in_theater","p_main_party"),
     (store_faction_of_party, ":faction", reg0),
     (str_store_faction_name, s1, ":faction"),
@@ -3864,9 +3864,9 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (display_message, "@Killing the refugees from {s1} and enslaving the survivors have demoralized their people ({s1} has lost {reg19} faction strength).", color_good_news),
     (faction_set_slot,":faction",slot_faction_strength_tmp,":enemy_strength"), ]],
 
-[anyone,"lord_start", [ (check_quest_active,"qst_blank_quest_02"),
-                        (check_quest_failed, "qst_blank_quest_02"),
-                        (quest_get_slot, ":quest_giver", "qst_blank_quest_02", slot_quest_giver_troop),
+[anyone,"lord_start", [ (check_quest_active,"qst_hunt_down_refugees"),
+                        (check_quest_failed, "qst_hunt_down_refugees"),
+                        (quest_get_slot, ":quest_giver", "qst_hunt_down_refugees", slot_quest_giver_troop),
                         (eq, ":quest_giver", "$g_talk_troop"),
                         (assign, reg1, "$qst_refugees_escaped")],
 "{playername}, our spies tell us that you failed to intercept {reg1} of the refugee trains. They are weak and slow, and still you fail. What use are you?", "lord_hunt_refugees_failed", []],
@@ -3877,7 +3877,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 [anyone,"lord_hunt_refugees_failed_1", [],
 "Maybe you are not good enough to command the armies that will bring this world to its heels if you cannot even defeat the wounded and the sick!^^ Begone, and pray I give you a second chance.", "lord_pretalk",
    [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",-1),
-    (call_script, "script_end_quest", "qst_blank_quest_02"),
+    (call_script, "script_end_quest", "qst_hunt_down_refugees"),
     (assign, reg18, "$qst_refugees_killed"),
     (call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party"),
     (store_faction_of_party, ":faction", reg0),
@@ -3907,11 +3907,11 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 #### Kham Sea Battle Quest Completion Start ####
 
 [anyone|plyr,"lord_start", [
-    (check_quest_active, "qst_blank_quest_03"),    
-    (check_quest_succeeded, "qst_blank_quest_03"),
-    (quest_get_slot, ":giver_troop", "qst_blank_quest_03", slot_quest_giver_troop),
+    (check_quest_active, "qst_sea_battle"),    
+    (check_quest_succeeded, "qst_sea_battle"),
+    (quest_get_slot, ":giver_troop", "qst_sea_battle", slot_quest_giver_troop),
     (eq, "$g_talk_troop", ":giver_troop"),
-    (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
+    (quest_get_slot, ":quest_target_center", "qst_sea_battle", slot_quest_target_center),
     (str_store_party_name, s12,":quest_target_center"),
     (try_begin),
     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
@@ -3932,7 +3932,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 "{!}{s6}", "lord_sea_battle_completed",[]],
 
 [anyone,"lord_sea_battle_completed", [
-    (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
+    (quest_get_slot, ":quest_target_center", "qst_sea_battle", slot_quest_target_center),
     (str_store_party_name, s12,":quest_target_center"),
     (try_begin),
       (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
@@ -3953,15 +3953,15 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 "{!}{s6}", "lord_pretalk",[
 
     (call_script,"script_quest_sea_battle_consequences",1),
-    (call_script, "script_finish_quest", "qst_blank_quest_03", 100),
+    (call_script, "script_finish_quest", "qst_sea_battle", 100),
     ]],
 
 [anyone|plyr,"lord_start", [
-    (check_quest_active, "qst_blank_quest_03"),
-    (check_quest_failed, "qst_blank_quest_03"),
-    (quest_get_slot, ":giver_troop", "qst_blank_quest_03", slot_quest_giver_troop),
+    (check_quest_active, "qst_sea_battle"),
+    (check_quest_failed, "qst_sea_battle"),
+    (quest_get_slot, ":giver_troop", "qst_sea_battle", slot_quest_giver_troop),
     (eq, "$g_talk_troop", ":giver_troop"),
-    (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
+    (quest_get_slot, ":quest_target_center", "qst_sea_battle", slot_quest_target_center),
     (str_store_faction_name,s12,":quest_target_center"),
     (try_begin),
     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
@@ -3982,7 +3982,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 "{!}{s5}", "sea_battle_quest_failed_1",[]],
 
 [anyone,"sea_battle_quest_failed_1", [
-    (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
+    (quest_get_slot, ":quest_target_center", "qst_sea_battle", slot_quest_target_center),
     (str_store_faction_name,s12,":quest_target_center"),
     (try_begin),
     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
@@ -4004,7 +4004,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -2),
 
     (call_script,"script_quest_sea_battle_consequences",0),
-    (cancel_quest, "qst_blank_quest_03"),
+    (cancel_quest, "qst_sea_battle"),
     ]],
 
 
@@ -7053,8 +7053,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 ## Kham - Defeat Target Lord Quest Init Start
 
 [anyone,"lord_tell_mission", [
-  (eq,"$random_quest_no","qst_blank_quest_06"),
-  (quest_get_slot, ":quest_target_troop", "qst_blank_quest_06", slot_quest_target_troop),
+  (eq,"$random_quest_no","qst_defeat_target_lord"),
+  (quest_get_slot, ":quest_target_troop", "qst_defeat_target_lord", slot_quest_target_troop),
   (str_store_troop_name, s7, ":quest_target_troop"),
   (str_store_faction_name, s8, ":quest_target_troop"),
   (try_begin),
@@ -7067,7 +7067,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 
 [anyone|plyr,"lord_mission_told_target_lord", [
-(eq,"$random_quest_no","qst_blank_quest_06"),
+(eq,"$random_quest_no","qst_defeat_target_lord"),
 (try_begin),
   (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
   (str_store_string, s5, "@This is a chance for me to show my quality. I shall defeat {s7} in the sight of enemy and ally alike."),
@@ -7075,7 +7075,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (str_store_string, s5, "@Accursed be those who follow {s7} this day, for I shall strike them down for all to see!."),
 (try_end),],
 "{!}{s5}", "lord_mission_accepted",[
-      (quest_get_slot, ":quest_target_troop", "qst_blank_quest_06", slot_quest_target_troop),
+      (quest_get_slot, ":quest_target_troop", "qst_defeat_target_lord", slot_quest_target_troop),
       (str_store_troop_name, s35, ":quest_target_troop"),
       (str_store_faction_name, s36, ":quest_target_troop"),
       (str_store_troop_name_link, s9, "$g_talk_troop"),
@@ -7084,7 +7084,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       (str_store_string, s2, "@{!}{s10}")]],
 
 [anyone|plyr,"lord_mission_told_target_lord", [
-(eq,"$random_quest_no","qst_blank_quest_06"),
+(eq,"$random_quest_no","qst_defeat_target_lord"),
 (try_begin),
   (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
   (str_store_string, s6, "@I humbly ask that you find another for this task. I do not think I could best {s7} in battle."),
@@ -7097,11 +7097,11 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 ## Kham Kill Quest INIT START
 [anyone,"lord_tell_mission", [
-  (eq,"$random_quest_no","qst_blank_quest_04"),
-  #(quest_get_slot, ":quest_target_troop", "qst_blank_quest_04", slot_quest_target_troop),
-  (quest_get_slot, ":quest_target_faction", "qst_blank_quest_04", slot_quest_target_faction),
-  (quest_get_slot, ":quest_target_troop_type", "qst_blank_quest_04", slot_quest_target_party_template), #Troop Type (1 or 2)
-  (quest_get_slot, reg22, "qst_blank_quest_04", slot_quest_target_amount),
+  (eq,"$random_quest_no","qst_kill_quest_troop"),
+  #(quest_get_slot, ":quest_target_troop", "qst_kill_quest_troop", slot_quest_target_troop),
+  (quest_get_slot, ":quest_target_faction", "qst_kill_quest_troop", slot_quest_target_faction),
+  (quest_get_slot, ":quest_target_troop_type", "qst_kill_quest_troop", slot_quest_target_party_template), #Troop Type (1 or 2)
+  (quest_get_slot, reg22, "qst_kill_quest_troop", slot_quest_target_amount),
   #(str_store_troop_name_plural, s6, ":quest_target_troop"),
   (str_store_faction_name, s7, ":quest_target_faction"),
   (try_begin),
@@ -7119,13 +7119,13 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
  "{!}{s5}", "lord_mission_told_kill_quest_targeted",[]],
 
 [anyone|plyr,"lord_mission_told_kill_quest_targeted", [
-(eq,"$random_quest_no","qst_blank_quest_04"),
+(eq,"$random_quest_no","qst_kill_quest_troop"),
 (str_store_string, s7, "@I will do what you asked, and the men will witness."),],
 "{!}{s7}", "lord_mission_accepted",[
-      #(quest_get_slot, ":quest_target_troop", "qst_blank_quest_04", slot_quest_target_troop),
-      (quest_get_slot, ":quest_target_faction", "qst_blank_quest_04", slot_quest_target_faction),
-      (quest_get_slot, ":quest_target_troop_type", "qst_blank_quest_04", slot_quest_target_party_template), #Troop Type (1 or 2)
-      (quest_get_slot, reg22, "qst_blank_quest_04", slot_quest_target_amount),
+      #(quest_get_slot, ":quest_target_troop", "qst_kill_quest_troop", slot_quest_target_troop),
+      (quest_get_slot, ":quest_target_faction", "qst_kill_quest_troop", slot_quest_target_faction),
+      (quest_get_slot, ":quest_target_troop_type", "qst_kill_quest_troop", slot_quest_target_party_template), #Troop Type (1 or 2)
+      (quest_get_slot, reg22, "qst_kill_quest_troop", slot_quest_target_amount),
 
       #(str_store_troop_name_plural, s6, ":quest_target_troop"),
       (str_store_troop_name_link, s9, "$g_talk_troop"),
@@ -7143,9 +7143,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       (str_store_string, s2, "@{!}{s8}")]],
 
 [anyone,"lord_tell_mission", [
-  (eq,"$random_quest_no","qst_blank_quest_05"),
-  (quest_get_slot, ":quest_target_faction", "qst_blank_quest_05", slot_quest_target_faction),
-  (quest_get_slot, reg22, "qst_blank_quest_05", slot_quest_target_amount),
+  (eq,"$random_quest_no","qst_kill_quest_faction"),
+  (quest_get_slot, ":quest_target_faction", "qst_kill_quest_faction", slot_quest_target_faction),
+  (quest_get_slot, reg22, "qst_kill_quest_faction", slot_quest_target_amount),
   (str_store_faction_name, s7, ":quest_target_faction"),
   (store_character_level, ":player_level", "trp_player"),
   (try_begin),
@@ -7158,11 +7158,11 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
  "{!}{s5}", "lord_mission_told_kill_quest_faction",[]],
 
 [anyone|plyr,"lord_mission_told_kill_quest_faction", [
-(eq,"$random_quest_no","qst_blank_quest_05"),
+(eq,"$random_quest_no","qst_kill_quest_faction"),
 (str_store_string, s7, "@I will do what you asked, and the men will witness."),],
 "{!}{s7}", "lord_mission_accepted",[
-      (quest_get_slot, ":quest_target_faction", "qst_blank_quest_05", slot_quest_target_faction),
-      (quest_get_slot, reg22, "qst_blank_quest_05", slot_quest_target_amount),
+      (quest_get_slot, ":quest_target_faction", "qst_kill_quest_faction", slot_quest_target_faction),
+      (quest_get_slot, reg22, "qst_kill_quest_faction", slot_quest_target_amount),
       (str_store_faction_name, s6, ":quest_target_faction"),
       (str_store_troop_name_link, s9, "$g_talk_troop"),
       (store_character_level, ":player_level", "trp_player"),
@@ -7179,21 +7179,21 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 
 [anyone|plyr,"lord_mission_told_kill_quest_targeted", [
-(eq,"$random_quest_no","qst_blank_quest_04"),
+(eq,"$random_quest_no","qst_kill_quest_troop"),
 ],
 "I cannot do this now.", "lord_mission_rejected",[]],
 
 [anyone|plyr,"lord_mission_told_kill_quest_faction", [
-(eq,"$random_quest_no","qst_blank_quest_05"),
+(eq,"$random_quest_no","qst_kill_quest_faction"),
 ],
 "I cannot do this now.", "lord_mission_rejected",[]],
 # Kill Quest END
 
 ## Kham Sea Battle INIT START
 [anyone,"lord_tell_mission", [
-  (eq,"$random_quest_no","qst_blank_quest_03"),
-  (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
-  (quest_get_slot, ":quest_object_center", "qst_blank_quest_03", slot_quest_object_center),
+  (eq,"$random_quest_no","qst_sea_battle"),
+  (quest_get_slot, ":quest_target_center", "qst_sea_battle", slot_quest_target_center),
+  (quest_get_slot, ":quest_object_center", "qst_sea_battle", slot_quest_object_center),
   (str_store_party_name, s6, ":quest_target_center"),
   (str_store_party_name, s7, ":quest_object_center"),
   (try_begin),
@@ -7238,7 +7238,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (str_store_string, s2, "@{!}{s7}")]],
 
 [anyone|plyr,"lord_mission_told_sea_battle", [
-(eq,"$random_quest_no","qst_blank_quest_03"),
+(eq,"$random_quest_no","qst_sea_battle"),
 (try_begin),
     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
     (try_begin), #South Good
@@ -7258,7 +7258,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 "{!}{s5}", "lord_mission_accepted",[]],
 
 [anyone|plyr,"lord_mission_told_sea_battle", [
-(eq,"$random_quest_no","qst_blank_quest_03"),
+(eq,"$random_quest_no","qst_sea_battle"),
 (try_begin),
     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
     (try_begin), #South Good
@@ -8774,8 +8774,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 ## Defend Refugees INIT START
 [anyone,"lord_tell_mission", [
-  (eq,"$random_quest_no","qst_blank_quest_01"),
-  (quest_get_slot, ":quest_target_center", "qst_blank_quest_01", slot_quest_target_center),
+  (eq,"$random_quest_no","qst_defend_refugees"),
+  (quest_get_slot, ":quest_target_center", "qst_defend_refugees", slot_quest_target_center),
   (str_store_party_name, s6, ":quest_target_center")],
  "There are refugees on their way to {s6}. They will be moving slow, and as such, is a moving target to our enemies. Defend them until they reach their destination.", "lord_mission_told",[
        (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
@@ -8790,8 +8790,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 ## Hunt Down Refugees INIT START
 [anyone,"lord_tell_mission", [
-  (eq,"$random_quest_no","qst_blank_quest_02"),
-  (quest_get_slot, ":quest_target_center", "qst_blank_quest_02", slot_quest_target_center),
+  (eq,"$random_quest_no","qst_hunt_down_refugees"),
+  (quest_get_slot, ":quest_target_center", "qst_hunt_down_refugees", slot_quest_target_center),
   (str_store_party_name, s6, ":quest_target_center")],
  "Our spies tell us that there are refugees on their way to {s6}. They will be slow because of all the old, the sick, and the dying. Hunt them down, kill all the men, and take everyone else as slaves. Make sure none arrive at their destination!", "lord_mission_told",[
        (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
@@ -9119,10 +9119,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (party_set_flags, "$qst_bring_back_runaway_serfs_party_3", pf_default_behavior, 0),
       (rest_for_hours, 3, 6), #Invain: slaves are slower now, so we can give them more of a headstart
     (else_try),
-      (eq, "$random_quest_no", "qst_blank_quest_01"), #Defend Refugees
+      (eq, "$random_quest_no", "qst_defend_refugees"), #Defend Refugees
       (call_script, "script_cf_quest_defend_refugees_party_creation"),
     (else_try),
-      (eq, "$random_quest_no", "qst_blank_quest_02"), #Hunt down Refugees
+      (eq, "$random_quest_no", "qst_hunt_down_refugees"), #Hunt down Refugees
       (call_script, "script_cf_quest_hunt_refugees_party_creation"),
     (else_try),
        (eq, "$random_quest_no", "qst_dispatch_scouts"), 
@@ -12033,12 +12033,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 [anyone|plyr,"mayor_deliver_iron_completed", [], "I do what I can.", "close_window",[(call_script,"script_stand_back"),]],
 
 #Kham - Sea Battle - Volunteer START
-[anyone|plyr,"mayor_talk", [(check_quest_active,"qst_blank_quest_03"),
-                            (neg|check_quest_succeeded, "qst_blank_quest_03"),
-                            (quest_slot_eq, "qst_blank_quest_03", slot_quest_object_center, "$g_encountered_party"),
-                            (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
+[anyone|plyr,"mayor_talk", [(check_quest_active,"qst_sea_battle"),
+                            (neg|check_quest_succeeded, "qst_sea_battle"),
+                            (quest_slot_eq, "qst_sea_battle", slot_quest_object_center, "$g_encountered_party"),
+                            (quest_get_slot, ":quest_target_center", "qst_sea_battle", slot_quest_target_center),
                             (str_store_party_name, s4, ":quest_target_center"),
-                            (quest_get_slot, ":giver", "qst_blank_quest_03", slot_quest_object_troop),
+                            (quest_get_slot, ":giver", "qst_sea_battle", slot_quest_object_troop),
                             (str_store_troop_name, s3, ":giver"),
                             (try_begin),
                               (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
@@ -12068,15 +12068,15 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 #Kham - Sea Battle - Volunteer END
 #Kham - Reinforce Center Completion
 
-[anyone|plyr,"mayor_talk", [(check_quest_active,"qst_blank_quest_16"),
-                            (quest_slot_eq, "qst_blank_quest_16", slot_quest_object_center, "$g_encountered_party"),
-                            (quest_get_slot, ":to_reinforce", "qst_blank_quest_16", slot_quest_target_center),
+[anyone|plyr,"mayor_talk", [(check_quest_active,"qst_reinforce_center"),
+                            (quest_slot_eq, "qst_reinforce_center", slot_quest_object_center, "$g_encountered_party"),
+                            (quest_get_slot, ":to_reinforce", "qst_reinforce_center", slot_quest_target_center),
                             (str_store_party_name, s3, ":to_reinforce"),
-                            (check_quest_succeeded, "qst_blank_quest_16")],
+                            (check_quest_succeeded, "qst_reinforce_center")],
 "I have reinforced {s3} as you have asked me to.", "mayor_reinforced_center_finished",[]],
 
 [anyone,"mayor_reinforced_center_finished", [
-  (quest_get_slot, ":troops_given", "qst_blank_quest_16", slot_quest_current_state),
+  (quest_get_slot, ":troops_given", "qst_reinforce_center", slot_quest_current_state),
   (val_mul, ":troops_given", -1),
   (try_begin),
     (gt, ":troops_given", 0),
@@ -12087,8 +12087,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (str_store_string, s4, "@Excellent, {playername}. That will surely help them out. We need to win this war as soon as possible."),
   (try_end)],
 "{!}{s4}", "close_window", [
-  (call_script, "script_finish_quest", "qst_blank_quest_16", 100),
-  (quest_get_slot, ":to_reinforce", "qst_blank_quest_16", slot_quest_target_center),
+  (call_script, "script_finish_quest", "qst_reinforce_center", 100),
+  (quest_get_slot, ":to_reinforce", "qst_reinforce_center", slot_quest_target_center),
   (str_store_party_name, s1, ":to_reinforce"),
   (store_faction_of_party, ":fac", ":to_reinforce"),
   (str_store_faction_name, s2, ":fac"),
@@ -12113,9 +12113,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 #### Kham Kill Quest Bandit Completion Start ####
 
 [anyone,"mayor_begin", [
-    (check_quest_active, "qst_blank_quest_17"),
-    (check_quest_succeeded, "qst_blank_quest_17"),
-    (quest_slot_eq, "qst_blank_quest_17", slot_quest_object_troop,"$g_talk_troop"),
+    (check_quest_active, "qst_kill_quest_bandit"),
+    (check_quest_succeeded, "qst_kill_quest_bandit"),
+    (quest_slot_eq, "qst_kill_quest_bandit", slot_quest_object_troop,"$g_talk_troop"),
     (try_begin),
       (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
       (str_store_string, s5, "@The watchmen in the city have reported a remarkable decrease in ambushes. You have done your job well. Thank you, {playername}."),
@@ -12124,7 +12124,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (try_end),
     ],
 "{!}{s5}", "mayor_kill_bandit_quest_complete",[
-    (call_script, "script_finish_quest", "qst_blank_quest_17", 100),
+    (call_script, "script_finish_quest", "qst_kill_quest_bandit", 100),
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
     ]],
 
@@ -12141,13 +12141,13 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     ]],
 
 [anyone,"mayor_begin", [
-    (check_quest_active, "qst_blank_quest_17"),
-    (check_quest_failed, "qst_blank_quest_17"),
-    (quest_slot_eq, "qst_blank_quest_17", slot_quest_object_troop,"$g_talk_troop"),],
+    (check_quest_active, "qst_kill_quest_bandit"),
+    (check_quest_failed, "qst_kill_quest_bandit"),
+    (quest_slot_eq, "qst_kill_quest_bandit", slot_quest_object_troop,"$g_talk_troop"),],
 "I have heard that you failed to do what I asked you to. Disappointing, {playername}.", "kill_quest_bandits_failed",[
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
 	(try_begin), #find remaining quest target parties, make them normal parties (spawned from Quest Helper Trigger )
-	   (quest_get_slot, ":target_template", "qst_blank_quest_17", slot_quest_target_party_template),
+	   (quest_get_slot, ":target_template", "qst_kill_quest_bandit", slot_quest_target_party_template),
 		(try_for_parties, ":quest_targets"),
 			(party_get_template_id, ":party_template", ":quest_targets"),
 			(eq, ":party_template", ":target_template"),
@@ -12155,7 +12155,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 			(party_set_flags, ":quest_targets", pf_quest_party, 0),
 		(try_end),
 	(try_end),
-    (cancel_quest, "qst_blank_quest_17"),
+    (cancel_quest, "qst_kill_quest_bandit"),
     ]],
 
 [anyone|plyr, "kill_quest_bandits_failed",[],
@@ -12469,8 +12469,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 [anyone|plyr,"mayor_talk", [
                               (store_partner_quest, ":partner_quest"),
                               (try_begin), #Reinforce Center Exception
-                                (this_or_next|check_quest_active, "qst_blank_quest_16"),
-                                (check_quest_active, "qst_blank_quest_17"),
+                                (this_or_next|check_quest_active, "qst_reinforce_center"),
+                                (check_quest_active, "qst_kill_quest_bandit"),
                                 (assign, ":partner_quest", 1),
                               (try_end),
                               (lt, ":partner_quest", 0),
@@ -12623,6 +12623,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (spawn_around_party,"$g_encountered_party",":looter_template"),
      (party_set_flags, reg0, pf_quest_party, 1),
      (party_set_faction, reg0, "fac_neutral"), #MV: so they don't get into fights
+     (party_set_ai_object, reg0, "$g_encountered_party"),
+     (party_set_ai_behavior, reg0, ai_bhvr_patrol_location),
+     (party_set_ai_patrol_radius, reg0, 2),
    (try_end),
    (str_store_troop_name, s9, "$g_talk_troop"),
    (str_store_party_name_link, s13, "$g_encountered_party"),
@@ -12678,16 +12681,16 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 #Kham - Reinforce Center INIT
 
-[anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_blank_quest_16"),], 
+[anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_reinforce_center"),], 
 "Thanks for offering to help.^^\
 This war has waged for so long that some of our centers are no longer looking good.^^\
 Perhaps you can go and reinforce a center in need...", "merchant_quest_brief",[]],
 
 [anyone,"merchant_quest_brief", [
-  (eq,"$random_merchant_quest_no","qst_blank_quest_16"),
-  (quest_get_slot, ":target_center", "qst_blank_quest_16", slot_quest_target_center),
+  (eq,"$random_merchant_quest_no","qst_reinforce_center"),
+  (quest_get_slot, ":target_center", "qst_reinforce_center", slot_quest_target_center),
   (str_store_party_name, s5, ":target_center"),
-  (quest_get_slot, ":amount", "qst_blank_quest_16", slot_quest_target_amount),
+  (quest_get_slot, ":amount", "qst_reinforce_center", slot_quest_target_amount),
   (assign, reg5, ":amount"),],
 "{s5} has been battered by the enemy. We will need to send help. ^^\
 I need someone to reinforce {s5} by at least {reg5} soldiers.^^ \
@@ -12696,20 +12699,20 @@ If you are able to do this, they can withstand more attacks.^^ What do you say?"
 
 [anyone|plyr,"merchant_quest_brief_reinforce_center", [],
 "Alright. I will do what I can.", "merchant_quest_taken",[
-    (quest_get_slot, reg5, "qst_blank_quest_16", slot_quest_target_amount),
-    (quest_get_slot, reg6, "qst_blank_quest_16", slot_quest_expiration_days),
-    (quest_get_slot, ":object_center", "qst_blank_quest_16", slot_quest_object_center),
-    (quest_get_slot, ":target_center", "qst_blank_quest_16", slot_quest_target_center),
-    (quest_set_slot, "qst_blank_quest_16", slot_quest_current_state, reg5),
+    (quest_get_slot, reg5, "qst_reinforce_center", slot_quest_target_amount),
+    (quest_get_slot, reg6, "qst_reinforce_center", slot_quest_expiration_days),
+    (quest_get_slot, ":object_center", "qst_reinforce_center", slot_quest_object_center),
+    (quest_get_slot, ":target_center", "qst_reinforce_center", slot_quest_target_center),
+    (quest_set_slot, "qst_reinforce_center", slot_quest_current_state, reg5),
     (str_store_troop_name, s9, "$g_talk_troop"),
     (str_store_party_name_link, s3, ":target_center"),
     (str_store_party_name_link, s4, ":object_center"),
     (str_clear, s6), 
-    (setup_quest_text,"qst_blank_quest_16"),
+    (setup_quest_text,"qst_reinforce_center"),
     (str_store_string, s2, "@The {s9} of {s4} asked you to reinforce {s3} with at least {reg5} troops within {reg6} days. Speak to {s3}'s barracks master. The quality of the troop you provide does not matter."),
-    (call_script, "script_start_quest", "qst_blank_quest_16", "$g_talk_troop"),
+    (call_script, "script_start_quest", "qst_reinforce_center", "$g_talk_troop"),
     (str_store_string, s5, "@You have reinforced {s3} with 0 troops."),
-    (add_quest_note_from_sreg, "qst_blank_quest_16", 3, s5, 0),
+    (add_quest_note_from_sreg, "qst_reinforce_center", 3, s5, 0),
  ]],
 
 [anyone|plyr,"merchant_quest_brief_reinforce_center", [], "I am sorry, you'll need to find someone else for that.", "merchant_quest_stall",[]],
@@ -12719,9 +12722,9 @@ If you are able to do this, they can withstand more attacks.^^ What do you say?"
 ## Kham Kill Quest Bandits INIT START
 
 [anyone,"merchant_quest_requested", [
-  (eq,"$random_merchant_quest_no","qst_blank_quest_17"),
-  (quest_get_slot, ":quest_target_troop", "qst_blank_quest_17", slot_quest_target_troop),
-  (quest_get_slot, reg22, "qst_blank_quest_17", slot_quest_target_amount),
+  (eq,"$random_merchant_quest_no","qst_kill_quest_bandit"),
+  (quest_get_slot, ":quest_target_troop", "qst_kill_quest_bandit", slot_quest_target_troop),
+  (quest_get_slot, reg22, "qst_kill_quest_bandit", slot_quest_target_amount),
   (str_store_troop_name_plural, s6, ":quest_target_troop"),
   (try_begin),
     (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
@@ -12734,9 +12737,9 @@ There are {s6} moving about the area, thinking that they are in charge. No one i
 "{!}{s5}", "merchant_quest_brief",[]],
 
 [anyone,"merchant_quest_brief", [
-  (eq,"$random_merchant_quest_no","qst_blank_quest_17"),
-  (quest_get_slot, ":quest_target_troop", "qst_blank_quest_17", slot_quest_target_troop),
-  (quest_get_slot, reg22, "qst_blank_quest_17", slot_quest_target_amount),
+  (eq,"$random_merchant_quest_no","qst_kill_quest_bandit"),
+  (quest_get_slot, ":quest_target_troop", "qst_kill_quest_bandit", slot_quest_target_troop),
+  (quest_get_slot, reg22, "qst_kill_quest_bandit", slot_quest_target_amount),
   (str_store_troop_name_plural, s6, ":quest_target_troop"),
   (try_begin),
     (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
@@ -12749,19 +12752,19 @@ There are {s6} moving about the area, thinking that they are in charge. No one i
  "{!}{s5}", "mayor_mission_told_kill_quest_bandit",[]],
 
 [anyone|plyr,"mayor_mission_told_kill_quest_bandit", [
-(eq,"$random_merchant_quest_no","qst_blank_quest_17"),
+(eq,"$random_merchant_quest_no","qst_kill_quest_bandit"),
 (str_store_string, s7, "@We will get rid of these pests."),],
 "{!}{s7}", "merchant_quest_taken",[
-      (quest_get_slot, ":quest_target_troop", "qst_blank_quest_17", slot_quest_target_troop),
-      (quest_get_slot, reg22, "qst_blank_quest_17", slot_quest_target_amount),
+      (quest_get_slot, ":quest_target_troop", "qst_kill_quest_bandit", slot_quest_target_troop),
+      (quest_get_slot, reg22, "qst_kill_quest_bandit", slot_quest_target_amount),
       (str_store_troop_name_plural, s6, ":quest_target_troop"),
       (str_store_troop_name_link, s9, "$g_talk_troop"),
       
       (str_store_troop_name_plural, s36, ":quest_target_troop"),
-      (setup_quest_text,"qst_blank_quest_17"),
+      (setup_quest_text,"qst_kill_quest_bandit"),
       (str_store_string, s2, "@{s9} wants you to slay {reg22} {s6} in battles."),
-      (call_script, "script_start_quest", "qst_blank_quest_17", "$g_talk_troop"),
-      (quest_get_slot, ":target_template", "qst_blank_quest_17", slot_quest_target_party_template),
+      (call_script, "script_start_quest", "qst_kill_quest_bandit", "$g_talk_troop"),
+      (quest_get_slot, ":target_template", "qst_kill_quest_bandit", slot_quest_target_party_template),
       (store_random_in_range, ":rand", 3, 7),
       (try_for_range, ":unused", 1, ":rand"),
         (store_random_in_range, ":rand_dist", 5, 20),
@@ -12775,7 +12778,7 @@ There are {s6} moving about the area, thinking that they are in charge. No one i
 ]],
 
 [anyone|plyr,"mayor_mission_told_kill_quest_bandit", [
-(eq,"$random_merchant_quest_no","qst_blank_quest_17"),
+(eq,"$random_merchant_quest_no","qst_kill_quest_bandit"),
 ],
 "I cannot do this now.", "merchant_quest_stall",[]],
 
@@ -13055,6 +13058,9 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (quest_get_slot, ":quest_giver_center", "qst_troublesome_bandits", slot_quest_giver_center),
     (spawn_around_party,":quest_giver_center","pt_troublesome_bandits"),
 	(assign, ":bandit_party", reg0),
+    (party_set_ai_object, reg0, "$g_encountered_party"),
+    (party_set_ai_behavior, reg0, ai_bhvr_patrol_location),
+    (party_set_ai_patrol_radius, reg0, 2),
 	(store_character_level, ":player_level", "trp_player"),
 	(try_for_range, ":unused", 0, ":player_level"),
 		(party_upgrade_with_xp, ":bandit_party", 100, 0),
