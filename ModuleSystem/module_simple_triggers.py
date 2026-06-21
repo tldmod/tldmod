@@ -37,7 +37,8 @@ simple_triggers = [
       (rest_for_hours, 0, 0, 0), #stop resting
   ]),
   # (3)
-  (0,[(eq,"$g_player_is_captive",1),
+  (0,[(call_script,"script_maybe_relocate_player_from_z0"), #piggyback, fallback 
+      (eq,"$g_player_is_captive",1),
       (gt, "$capturer_party", 0),
       (party_is_active, "$capturer_party"),
       (party_relocate_near_party, "p_main_party", "$capturer_party", 0),

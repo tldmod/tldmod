@@ -7249,6 +7249,7 @@ scripts = [
 ]),
 
 #script_inflict_casualties_to_party:
+#unused, probably ancient
 # INPUT: param1 = Party-id, param2 = number of rounds
 #OUTPUT: This script doesn't return a value but populates the parties p_temp_wounded and p_temp_killed with the wounded and killed.
 #Example: (script_inflict_casualties_to_party, "_p_main_party" ,50), - simulates 50 rounds of casualties to main_party.
@@ -7553,6 +7554,7 @@ scripts = [
 ]),
 
 #script_cf_select_random_town_at_peace_with_faction:
+#unused
 # This script selects a random town in range [centers_begin, centers_end) such that faction of the town is friendly to given_faction
 # INPUT: arg1 = faction_no
 #OUTPUT: reg0 = town_no, this script may return false if there is no matching town.
@@ -23146,9 +23148,10 @@ scripts = [
 	(try_for_range, ":faction", "fac_mission_companion_1", "fac_mission_companion_10"),
 		(faction_get_slot, ":kia", ":faction", slot_fcomp_kia),
 		(faction_get_slot, ":troop", ":faction", slot_fcomp_troopid),
-		(val_add, ":entry", 1),
+		#(val_add, ":entry", 1), #changed so all companions spawn on entry 0
 		(neg|eq, ":troop", 0),
 		(neg|eq, ":kia", 1),
+        (neg|troop_is_wounded, ":troop"),
 		(set_visitor, ":entry", ":troop", 0),
 	(try_end),
 ]), 
@@ -23289,39 +23292,41 @@ scripts = [
 ]), 
 
 #script_infiltration_mission_final_casualty_tabulation
+#called from menu
 ("infiltration_mission_final_casualty_tabulation",[
 	(try_for_range, ":faction", "fac_mission_companion_1", "fac_mission_companion_11"),
 		(faction_get_slot, ":troop", ":faction", slot_fcomp_agentid),
-		(faction_get_slot, ":local2", ":faction", slot_fcomp_hp),
-		(faction_get_slot, ":local3", ":faction", slot_fcomp_kia),
+		(faction_get_slot, ":hp", ":faction", slot_fcomp_hp),
+		(faction_get_slot, ":kia", ":faction", slot_fcomp_kia),
 		(try_begin),
 			(troop_is_hero, ":troop"),
 			(store_random_in_range, ":rnd", 20, 30),
 			(try_begin),
 				(eq, ":faction", "fac_mission_companion_10"),
-				(neg|gt, ":rnd", ":local2"),
-				(troop_set_health, ":troop", ":local2"),
+				(neg|gt, ":rnd", ":hp"),
+				(troop_set_health, ":troop", ":hp"),
 			  (else_try),
 				(eq, ":faction", "fac_mission_companion_10"),
-				(gt, ":rnd", ":local2"),
+				(gt, ":rnd", ":hp"),
 				(troop_set_health, ":troop", ":rnd"),
 			  (else_try),
 				(neg|eq, ":troop", 0),
-				(gt, ":rnd", ":local2"),
+				(gt, ":rnd", ":hp"),
 				(troop_set_health, ":troop", ":rnd"),
 			  (else_try),
 				(neg|eq, ":troop", 0),
-				(neg|gt, ":rnd", ":local2"),
-				(troop_set_health, ":troop", ":local2"),
+				(neg|gt, ":rnd", ":hp"),
+				(troop_set_health, ":troop", ":hp"),
 			(try_end),
 		  (else_try),
 			(neg|troop_is_hero, ":troop"),
-			(eq, ":local3", 1),
+			(eq, ":kia", 1),
 			(party_remove_members, "p_main_party", ":troop", 1),
 		(try_end),
 	(try_end),
 ]), 
 #script_infiltration_initialize_companion_records
+#unused
 ("infiltration_initialize_companion_records",[
 	(try_for_range, ":faction", "fac_mission_companion_1", "fac_mission_companion_11"),
 		(faction_set_slot, ":faction", slot_fcomp_troopid, 0), # troop ID
@@ -23331,6 +23336,7 @@ scripts = [
 	(try_end),
 ]),
 #script_infiltration_mission_update_companion_casualties
+#called in mission
 ("infiltration_mission_update_companion_casualties",[
 	#(faction_get_slot, ":compagent", "fac_mission_companion_10", slot_fcomp_agentid),
 	(faction_get_slot, ":local1", "fac_mission_companion_10", slot_fcomp_hp),
@@ -23382,10 +23388,10 @@ scripts = [
 		(agent_get_troop_id, ":troop", ":agent"),
 			(try_for_range, ":fac", "fac_mission_companion_1", "fac_mission_companion_10"),
 			(faction_get_slot, ":troop_comp", ":fac", slot_fcomp_troopid),
-			(faction_get_slot, ":local4", ":fac", slot_fcomp_agentid),
+			(faction_get_slot, ":agent", ":fac", slot_fcomp_agentid),
 			(faction_get_slot, ":local5", ":fac", slot_fcomp_kia),
 			(neg|eq, ":local5", 1), # not kia
-			(eq, ":local4", 0),
+			(eq, ":agent", 0),
 			(eq, ":troop_comp", ":troop"),
 			(assign, ":local6", 0),
 			(try_for_range, ":facc", "fac_mission_companion_1", "fac_mission_companion_10"),
@@ -23582,11 +23588,11 @@ scripts = [
 	(else_try),
 		(assign, ":hp", 100),
 	(try_end),
-	(store_add, ":comp", "fac_mission_companion_1", reg0), # reg0 traces total # of companions picked
+	(store_add, ":comp", "fac_mission_companion_1", "$tld_mission_companions"), # reg0 traces total # of companions picked
 	(faction_set_slot, ":comp", slot_fcomp_troopid, ":comp_troop"),
 	(faction_set_slot, ":comp", slot_fcomp_hp, ":hp"),
 	(faction_set_slot, ":comp", slot_fcomp_kia, 0),
-	(val_add, reg0,1), # one more companion added
+	(val_add, "$tld_mission_companions",1), # one more companion added
 ]), 
 
 
@@ -24556,6 +24562,7 @@ scripts = [
 ]),
  
  # another useful self explainatory script... (mtarini)
+ #script_troop_copy_all_items_from_troop
 ("troop_copy_all_items_from_troop",[
 	(store_script_param_1, ":dest"),
 	(store_script_param_2, ":source"),
@@ -24576,6 +24583,7 @@ scripts = [
 ]),
 
  # another useful self explainatory script... (mtarini)
+ #script_store_random_scene_position_in_pos10
 ("store_random_scene_position_in_pos10",[
 	(get_scene_boundaries,pos1,pos2),
 	(position_get_x,":min_x",pos1),(position_get_y,":min_y",pos1),
@@ -29340,6 +29348,38 @@ command_cursor_scripts = [
     
 ]),
 
+#script_count_mission_casualties_from_agents_custom
+#synchs agent casualties with main party for custom mission with spawned visitors (e.g. stealth missions)
+#and fills p_player_casualties
+("count_mission_casualties_from_agents_custom", [
+    (get_player_agent_no, ":player_agent"),
+    (party_clear, "p_player_casualties"),
+    (agent_get_team, ":player_team", ":player_agent"),
+    (try_for_agents, ":agent"),
+        (agent_is_human, ":agent"),
+        (neg|agent_is_alive, ":agent"),
+        ] + (is_a_wb_script and [
+        (neg|agent_is_routed, ":agent"),
+        ] or []) + [
+        (agent_get_team, ":agent_team", ":agent"),
+        (eq, ":agent_team", ":player_team"),
+        (agent_get_troop_id, ":troop", ":agent"),
+        (party_add_members, "p_player_casualties", ":troop", 1),
+        (try_begin),
+            (agent_is_wounded, ":agent"),
+            (party_wound_members, "p_player_casualties", ":troop", 1),
+            (party_wound_members, "p_main_party", ":troop", 1),
+        (else_try),
+            (party_remove_members, "p_main_party", ":troop", 1),
+        (try_end),
+        (try_for_range, ":fac", "fac_mission_companion_1", "fac_mission_companion_10"),
+            (faction_get_slot, ":comp_troop", ":fac", slot_fcomp_troopid),
+            (eq, ":troop", ":comp_troop"),
+            (faction_set_slot, ":fac", slot_fcomp_troopid, 0),
+        (try_end),
+    (try_end),
+]),
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts+ formAI_v5_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts
@@ -32857,7 +32897,7 @@ if is_a_wb_script==1:
 
 ]),
 
-# script_show_on_hit_blood 
+# script_cf_on_hit_blood
 # Spawn blood particle on hit
 # Inputs: 
 #   arg1 victim agent
