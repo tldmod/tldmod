@@ -1781,7 +1781,9 @@ or
 # make mount sound by scripts (bypasses MaB limit to customize mount sounds),
 custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg and horse sounds
   [ (assign, "$wargs_in_battle", 0), # recount them, to account for deaths
-    
+
+
+    ] + ((is_a_wb_mt==1) and [
     (try_for_agents, ":mount"),
 		(neg|agent_is_human, ":mount"),
 		(agent_get_item_id, ":item", ":mount"),
@@ -1811,7 +1813,9 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 				(agent_set_slot,":mount", slot_agent_mount_dead, 1),
 			(try_end),		
         (else_try),
-			(eq, ":item", "itm_spider"),			# CppCoder: Spider sounds
+			(this_or_next|eq, ":item", "itm_spider"),			# CppCoder: Spider sounds
+			(this_or_next|eq, ":item", "itm_spider_strong"),
+			(eq, ":item", "itm_spider_mount"),
 			(try_begin), 	
 				(agent_is_alive, ":mount"),
 				(store_random_in_range, ":random", 1, 101), 
@@ -1823,7 +1827,8 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 				(agent_set_slot,":mount", slot_agent_mount_dead, 1),
 			(try_end),
         (else_try),
-			(eq, ":item", "itm_bear"),
+			(this_or_next|eq, ":item", "itm_bear"),
+			(eq, ":item", "itm_bear_strong"),
 			(try_begin), 	
 				(agent_is_alive, ":mount"),
 				(store_random_in_range, ":random", 1, 101), 
@@ -1835,7 +1840,23 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 				(agent_set_slot,":mount", slot_agent_mount_dead, 1),
 			(try_end),
         (else_try),
+			(this_or_next|eq, ":item", "itm_beast"),
+			(this_or_next|eq, ":item", "itm_beast_strong"),
+			(this_or_next|eq, ":item", "itm_boar"),
+			(eq, ":item", "itm_boar_strong"),
+			(try_begin), 	
+				(agent_is_alive, ":mount"),
+				(store_random_in_range, ":random", 1, 101), 
+				(try_begin),(le, ":random", 7),(agent_play_sound, ":mount", "snd_beast_groan"),(try_end),
+			(else_try),
+                (neg|agent_is_alive, ":mount"),
+				(agent_slot_eq, ":mount", slot_agent_mount_dead, 0),
+				(agent_play_sound, ":mount", "snd_beast_roar"),
+				(agent_set_slot,":mount", slot_agent_mount_dead, 1),
+			(try_end),
+        (else_try),
 			(this_or_next|is_between, ":item", item_warg_begin ,item_warg_end),
+            (this_or_next|eq, ":item", "itm_wolf_strong"),
             (this_or_next|eq, ":item", "itm_wolf"),
             (eq, ":item", "itm_werewolf"),
 			(try_begin),						#sounds for alive wargs
@@ -1852,6 +1873,8 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 			(try_end),
 		(try_end),
 	(try_end),
+
+    ] or []) + [
 ])
 
 # mtarini: wargs attack even if they are not mounted
@@ -2767,6 +2790,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (this_or_next|eq, ":mount_itm", "itm_wolf"),
     (this_or_next|eq, ":mount_itm", "itm_bear"),
     (this_or_next|eq, ":mount_itm", "itm_spider"),
+    (this_or_next|is_between, ":mount_itm", "itm_spider_strong", "itm_kine_strong"),
     (eq, ":mount_itm", "itm_werewolf"),
     (agent_get_slot, ":rider", ":killed", slot_agent_mount_orig_rider),
     (agent_is_active, ":rider"),
@@ -2882,6 +2906,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
 
     #This is where Animation is assigned
     (assign, ":anim", "anim_bear_slap_right"),
+    (assign, ":sound", 0),
     (store_random_in_range, ":rnd_2", 0, 100),
     (try_begin), #first check: leap attack if moving fast
       (this_or_next|eq, ":agent_trp", "trp_bear"), #bears need this to keep up with wargs
@@ -2892,20 +2917,57 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
       (gt, ":speed", 400),
       (lt, ":rnd_2", 30),
       (assign, ":anim", "anim_warg_leapattack"),
-      (agent_set_slot, ":agent", slot_agent_animal_is_striking, 120), 
+      (agent_set_slot, ":agent", slot_agent_animal_is_striking, 120),
+      (agent_set_speed_limit, ":agent", 2), #cheap trick to reduce the speed of the jump
     (else_try),
-      (eq, ":agent_trp", "trp_spider"),
+      (this_or_next|eq, ":agent_trp", "trp_spider"),
+      (eq, ":agent_trp", "trp_spider_strong"),
+      (assign, ":sound", "snd_spider_strike"),
       (lt, ":smallest_dist", 200),
       (assign, ":anim", "anim_spider_attack"),
-      (agent_set_slot, ":agent", slot_agent_animal_is_striking, 100), 
+      (try_begin),
+        (le, ":rnd_2", 50),
+        (assign, ":anim", "anim_spider_attack"),
+        (agent_set_slot, ":agent", slot_agent_animal_is_striking, 100),
+      (else_try),
+        (assign, ":anim", "anim_bear_slap_right"),
+        (agent_set_slot, ":agent", slot_agent_animal_is_striking, 100),
+      (try_end),
     (else_try),
-      (eq, ":agent_trp", "trp_wolf"),
-      (lt, ":smallest_dist", 100),
-      (agent_set_slot, ":agent", slot_agent_animal_is_striking, 75),
+      (this_or_next|eq, ":agent_trp", "trp_evil_beast"),
+      (eq, ":agent_trp", "trp_evil_beast_strong"),
+      (assign, ":sound", "snd_camel_hit"),
+      (lt, ":smallest_dist", 140),
       (assign, ":anim", "anim_wolf_snap"),
+      (agent_set_slot, ":agent", slot_agent_animal_is_striking, 120),
+    (else_try),
+      (this_or_next|eq, ":agent_trp", "trp_boar"),
+      (eq, ":agent_trp", "trp_boar_strong"),
+      (assign, ":sound", "snd_camel_hit"),
+      (lt, ":smallest_dist", 100),
+      (assign, ":anim", "anim_wolf_snap"),
+      (agent_set_slot, ":agent", slot_agent_animal_is_striking, 90),
+    (else_try),
+      (this_or_next|eq, ":agent_trp", "trp_wolf"),
+      (eq, ":agent_trp", "trp_wolf_strong"),
+      (assign, ":sound", "snd_wolf_strike"),
+      (lt, ":smallest_dist", 100),
+      (try_begin),
+        (le, ":rnd_2", 30),
+        (assign, ":anim", "anim_wolf_snap"),
+        (agent_set_slot, ":agent", slot_agent_animal_is_striking, 75),
+      (else_try),
+        (le, ":rnd_2", 65),
+        (assign, ":anim", "anim_bear_slap_right"),
+        (agent_set_slot, ":agent", slot_agent_animal_is_striking, 80),
+      (else_try),
+        (assign, ":anim", "anim_spider_attack"),
+        (agent_set_slot, ":agent", slot_agent_animal_is_striking, 90),
+      (try_end),
     (else_try),
       (eq|this_or_next, ":agent_trp", "trp_bear"),
       (eq, ":agent_trp", "trp_bear_strong"),
+      (assign, ":sound", "snd_bear_strike"),
       (lt, ":smallest_dist", 250),
       (try_begin),
         (le, ":rnd_2", 25),
@@ -2925,6 +2987,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
       (try_end),
     (else_try),
       (eq, ":agent_trp", "trp_werewolf"),
+      (assign, ":sound", "snd_wolf_strike"),
       (lt, ":smallest_dist", 200),
       (try_begin),
         (le, ":rnd_2", 30),
@@ -2942,28 +3005,20 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         (assign, ":anim", "anim_bear_slam"),
         (agent_set_slot, ":agent", slot_agent_animal_is_striking, 160),
       (try_end),
+    (else_try),
+      (this_or_next|eq, ":agent_trp", "trp_bull"),
+      (eq, ":agent_trp", "trp_bull_strong"),
+      (lt, ":smallest_dist", 200),
+      (assign, ":anim", "anim_wolf_snap"),
+      (agent_set_slot, ":agent", slot_agent_animal_is_striking, 120),
     (try_end),
     
     (agent_slot_ge, ":agent", slot_agent_animal_is_striking, 1),
+    (agent_play_sound, ":horse", ":sound"),
     (agent_set_animation, ":horse", ":anim"),
     (agent_get_position, pos6, ":horse"),    
     (call_script, "script_lookat", pos6, pos8), #make sure to look at the enemy
     (agent_set_position, ":horse", pos6),
-
-    #Kham - let's give 'em some sounds when attacking
-    (try_begin),
-      (eq, ":agent_trp", "trp_spider"),
-      (assign, ":sound", "snd_spider_strike"),
-    (else_try),
-      (eq|this_or_next, ":agent_trp", "trp_werewolf"),
-      (eq, ":agent_trp", "trp_wolf"),
-      (assign, ":sound", "snd_wolf_strike"),
-    (else_try),
-      (eq|this_or_next, ":agent_trp", "trp_bear"),
-      (eq, ":agent_trp", "trp_bear_strong"),
-      (assign, ":sound", "snd_bear_strike"),
-    (try_end),
-    (agent_play_sound, ":horse", ":sound"),
     
     (val_add, ":agent_found", 1),
   (try_end),
@@ -2982,9 +3037,10 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (gt, ":attack_range", 0),
     (agent_get_troop_id, ":agent_trp", ":agent"),
     (agent_get_horse, ":horse", ":agent"),
+    (agent_set_speed_limit, ":agent", 100), #reset speed limit
     # (str_store_agent_name, s5, ":agent"),
     # (assign, reg78, ":attack_range"),
-    #(display_message, "@{s5} striked, attack range is {reg78}"),
+    # (display_message, "@{s5} striked, attack range is {reg78}"),
     
     
     #damage
@@ -2996,7 +3052,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
        (eq, ":agent_trp", "trp_bear_strong"),
        (assign, ":damage", 7),
     (try_end),
-    (val_mul, ":damage", 3), #15-21
+    (val_mul, ":damage", 10),
     
     #area of effect
     (val_mul, ":damage", ":attack_range"), #up to 200%
@@ -3094,18 +3150,21 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (this_or_next|eq, ":mount_itm", "itm_wolf"), #...or mount
     (this_or_next|eq, ":mount_itm", "itm_bear"),
     (this_or_next|eq, ":mount_itm", "itm_spider"),
+    (this_or_next|is_between, ":mount_itm", "itm_spider_strong", "itm_kine_strong"),
     (eq, ":mount_itm", "itm_werewolf"),
   ],
 
   [
     (store_trigger_param_1, ":agent"),
     (store_trigger_param_3, ":damage"),
+    #(copy_position, pos6, pos0), #hit position
     
     (try_begin), #is rider..
         (agent_is_human, ":agent"),
         (agent_get_horse, ":mount", ":agent"),
         (ge, ":mount", 0),
         (agent_deliver_damage_to_agent, ":agent", ":mount", ":damage", "itm_uruk_falchion_a"), #this re-fires the trigger, but makes sure that mount armour is counted in
+        (set_trigger_result, 0), #does this avoid hit sounds on the invisible rider?
     (else_try), #...or mount
         (neg|agent_is_human, ":agent"),
         (ge, ":damage", 15),
@@ -3123,15 +3182,24 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
             (ge, ":damage", 20),
             (agent_get_item_id,":mount_itm",":agent"),
             (try_begin),
-              (eq, ":mount_itm", "itm_spider"),
+              (eq|this_or_next, ":mount_itm", "itm_spider"),
+              (eq, ":mount_itm", "itm_spider_strong"),
               (assign, ":sound", "snd_spider_strike"),
             (else_try),
               (eq|this_or_next, ":mount_itm", "itm_werewolf"),
-              (eq, ":mount_itm", "itm_wolf"),
+              (eq|this_or_next, ":mount_itm", "itm_wolf"),
+              (eq, ":mount_itm", "itm_wolf_strong"),
               (assign, ":sound", "snd_wolf_strike"),
             (else_try),
-              (eq, ":mount_itm", "itm_bear"),
+              (eq|this_or_next, ":mount_itm", "itm_bear"),
+              (eq, ":mount_itm", "itm_bear_strong"),
               (assign, ":sound", "snd_bear_strike"),
+            (else_try),
+              (eq|this_or_next, ":mount_itm", "itm_boar"),
+              (eq, ":mount_itm", "itm_boar_strong"),
+              (assign, ":sound", "snd_beast_groan"),
+            (else_try), #boars, beasts, kine
+              (assign, ":sound", "snd_troll_hit"),
             (try_end),
             (agent_play_sound, ":agent", ":sound"),
         (try_end),

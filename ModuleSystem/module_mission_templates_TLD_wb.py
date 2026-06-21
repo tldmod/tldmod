@@ -1540,12 +1540,12 @@ hp_shield_init = (ti_on_agent_spawn, 0, 0, [
         (store_skill_level, ":ironflesh_base",  skl_ironflesh, ":troop_id",),
         (store_mul, ":ironflesh_sq", ":ironflesh_base", ":ironflesh_base"),
         (val_mul, ":ironflesh_base", 10),
-        (store_add, ":hp_shield", ":ironflesh_base", ":ironflesh_sq"),
+        (store_add, ":shield", ":ironflesh_base", ":ironflesh_sq"),
         (store_agent_hit_points, ":health", ":agent"),
-        (val_mul, ":hp_shield", ":health"),
-        (val_div, ":hp_shield", 100),
-        (agent_set_slot, ":agent", slot_agent_hp_shield, ":hp_shield"),
-        (troop_set_slot, ":troop_id", slot_troop_hp_shield, ":hp_shield"),
+        (val_mul, ":shield", ":health"),
+        (val_div, ":shield", 100),
+        (agent_set_slot, ":agent", slot_agent_hp_shield, ":shield"),
+        (troop_set_slot, ":troop_id", slot_troop_hp_shield, ":shield"),
     (try_end),
     
     #Debug
@@ -2594,7 +2594,7 @@ beorning_shapeshift = [
         (is_between, ":attack_anim", "anim_bear_slap_right", "anim_unused_horse_anim_12"),
     ],[
         # Check item damage
-        (store_trigger_param_2, ":victim"),
+        (store_trigger_param_1, ":victim"),
         (store_trigger_param, ":dmg", 3),
         (item_get_swing_damage_type, ":dmg_type", reg0),
         (call_script, "script_cf_on_hit_blood", ":victim", ":dmg", ":dmg_type"),

@@ -1518,7 +1518,7 @@ animations = [
   ],
 
  ["warg_leapattack", acf_enforce_all|acf_align_with_ground|acf_displace_position, 
-	[1.0, "wargLeapAttack", 0, 20, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]
+	[1.2, "wargLeapAttack", 0, 20, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]
   ],
 
 # Animal attack anims... (cppcoder, merlkir)
