@@ -2224,7 +2224,8 @@ scripts = [
     (assign, "$tutorial_1_state", 0),
 	(assign, "$tld_influence_rest", 0),
    	(assign, "$g_player_party_morale_modifier_captains", 0),
-    (assign, "$character_tutorial",0),
+    (assign, "$tracking_limit",10),
+    (assign, "$tracking_subtract",0),
     
 	#Kham - Squelch compiler warnings
       
@@ -5285,6 +5286,12 @@ scripts = [
                     (eq, ":race", tf_orc),
                     (val_add, ":modifier_value", 1),
                 (try_end),
+                (try_begin), #tracking modifier
+                    (val_sub, ":modifier_value", "$tracking_subtract"),
+                    (eq, ":troop_no", trp_player),
+                    # (assign, reg12, ":modifier_value"),
+                    # (display_message, "@modifier_value: {reg12}"),
+                (try_end), 
             (try_end),
         (end_try),
     (end_try),

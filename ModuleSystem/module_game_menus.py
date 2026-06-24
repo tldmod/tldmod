@@ -2252,6 +2252,64 @@ game_menus = [
 			(try_end), #end trying
 	]),
 
+    ("camp_adjust_tracking",
+		[(assign, reg9, "$tracking_limit"),
+         ],
+		"Current tracking limit: {reg9}",
+		[(val_sub, "$tracking_limit", 1),
+        # (assign, reg10, "$tracking_limit"),
+        # (display_message, "@new aim limit: {reg10}"),
+
+        (call_script, "script_get_max_skill_of_player_party", "skl_tracking"), 
+        (assign, ":tracking", reg0),
+        (assign, ":max_skill_owner", reg1),
+        (try_begin),
+            (eq, ":max_skill_owner", "trp_player"),
+            (store_skill_level, ":tracking", skl_tracking, "trp_player"), #this way, we don't account for the player bonus
+            (display_message, "@Be aware that the limit does not account for the player's bonus on party skills."),
+        (try_end),
+        #(party_get_skill_level, ":tracking", p_main_party, "skl_tracking"),
+        (try_begin),
+            (ge, "$tracking_limit", 0),
+            (lt, "$tracking_limit", ":tracking"),
+            #(assign, "$tracking_subtract", 0),
+            (assign, ":break", 0),
+            (try_for_range, ":unused", 0, 10),
+                (eq, ":break", 0),
+                # (assign, reg11, ":tracking"),
+                # (display_message, "@skill: {reg11}"),
+                (gt, ":tracking", "$tracking_limit"),
+                (val_add, "$tracking_subtract", 1),
+                (val_sub, ":tracking", 1),
+             (else_try),
+                (eq, ":break", 0),
+                (eq, ":tracking", "$tracking_limit"),
+                (assign, ":break", 1),
+                # (assign, reg13, "$tracking_subtract"),
+                # (display_message, "@tracking modifier found: {reg13}"),
+             (else_try),
+                (eq, ":break", 0), #should never happen, just in case
+                (lt, ":tracking", "$tracking_limit"),
+                (assign, "$tracking_limit", ":tracking"),
+             (try_end),
+         (try_end),
+
+         (lt, "$tracking_limit", 0),
+         (assign, "$tracking_subtract", 0),
+        # (party_get_skill_level, ":tracking_new", p_main_party, "skl_tracking"),
+         (call_script, "script_get_max_skill_of_player_party", "skl_tracking"),
+         (try_begin),
+             (eq, ":max_skill_owner", "trp_player"),
+             (store_skill_level, reg0, skl_tracking, "trp_player"), #this way, we don't account for the player bonus
+         (try_end),
+         (assign, "$tracking_limit", reg0),
+         # (assign, reg12, reg0),
+         # (display_message, "@aim limit is lower 0: reset to {reg12}"),
+		]
+	),
+
+    ("spacer_dev_options"    ,[],"{!}_"  ,[]),
+
    	] + (is_a_wb_menu==1 and [
 	("camp_options",[],"Change TLD options.",[
     (start_presentation, "prsnt_tld_mod_options"), 

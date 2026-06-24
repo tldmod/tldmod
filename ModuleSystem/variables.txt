@@ -664,7 +664,7 @@ qst_defend_village_party
 qst_raid_village_party
 qst_destroy_scout_camp_party
 play_ambient_sounds
-character_tutorial
+tracking_limit
 first_time_town
 formations_tutorial
 former_players_kingdom
@@ -764,3 +764,4 @@ first_time
 tld_influence_rest
 g_player_party_morale_modifier_captains
 tld_mission_companions
+tracking_subtract
