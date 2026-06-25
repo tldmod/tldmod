@@ -3834,6 +3834,6 @@ Even in the last case, the player can make formations up to four lines by orderi
   ("credits_tld_10", "{!}Pre 3.0 Contributors:"),
   ("commander", "commander"),
   ("companion", "companion"),
-  ("player_name", "{playername}"),
+  ("player_name", "{!}{playername}"),
   ("i_am_s1_a_soldier_of_s2_in_the_company_of_s3", "I am {s1}, a soldier of {s2} in the company of {s3}."),
 ]

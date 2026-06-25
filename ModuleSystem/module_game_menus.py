@@ -1833,7 +1833,7 @@ game_menus = [
     ]
  ),
 ( "rank_report",0,
-   "^^^{s9}",
+   "{!}^^^{s9}",
    "none",
    [(set_background_mesh, "mesh_ui_default_menu_window"),
 	(call_script, "script_update_respoint"), # so that current money is registered as res point of appropriate faction
@@ -13126,7 +13126,7 @@ game_menus = [
      ("ruin_leave",[],"Leave...",[(change_screen_return)]),
  ]),
 
-("premutiny",0,"{s1}","none", #dummy menu for showing orc pretender pre-mutiny dialog
+("premutiny",0,"{!}{s1}","none", #dummy menu for showing orc pretender pre-mutiny dialog
    [(try_begin),
 		(eq,"$mutiny_stage",0), # warning
 		(call_script, "script_setup_troop_meeting", "trp_orc_pretender",100),
@@ -13683,7 +13683,7 @@ game_menus = [
             (str_store_string, s4, "@Hopeful tidings indeed!"),
         (try_end),
         ],
-   	[("companion_promoted_event_close", [], "{s4}", [(change_screen_return)]),
+   	[("companion_promoted_event_close", [], "{!}{s4}", [(change_screen_return)]),
    	
 ]),
 
