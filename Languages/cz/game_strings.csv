@@ -4,7 +4,7 @@ str_noone|nikdo
 str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} a {s51}
 str_s5_s_party|{s5} a družina
-str_s5_s_host|{s5} Hostitel
+str_s5_s_host|{s5}ův host
 str_given_by_s1_at_s2|Přidělen {s1} v {s2}
 str_given_by_s1_in_wilderness|Přidělen {s1} v divočině
 str_s7_raiders|{s7} Nájezdníci
@@ -1515,10 +1515,10 @@ str_beorn_rumor_2|Divoký včely dělají ten nejlepší med!
 ; str_woodelf_rumor_7|Oduleg hi am man theled? We need to know your purpose here. Sorcerer's spies are everywhere.
 ; str_woodelf_rumor_8|Edain of Dale make intricate toys these days! They've learnt much from the Naugrim.
 ; str_woodelf_rumor_9|The shadow of Dol Guldur is spreading. Dark creatures have been seen in the woods, our outposts attacked, hunters disappear and are never seen again. Our patrols now number at least 35 soldiers, we have grown that fearful!
-; str_dale_rumor_begin|First there was the dragon, now this...
+str_dale_rumor_begin|Nejdřív tu byl drak a teď toto...
 ; str_dale_rumor_2|As if the orcs coming from the north weren't bad enough, now the hordes from the east are upon us!
 ; str_dale_rumor_3|Ever since the defeat of the dragon, we know how to look for the enemy's weak spot.
-; str_dale_rumor_4|Easterlings will never make it past us and our dwarven allies.
+str_dale_rumor_4|Východňané se nikdy nedostanou přes nás a naše trpasličí spojence.
 ; str_dale_rumor_5|Have you ever seen the sun rise over the Long lake? The colours used to make my heart sing. But now all I see is a red dawn. A bad omen.
 ; str_dale_rumor_6|Dwarves are a bit too attached to treasures. We still don't know what to think of Thorin Oakenshield.
 ; str_dale_rumor_7|The men of Rohan are our cousins and our own language is very similar to theirs.
@@ -1527,7 +1527,7 @@ str_beorn_rumor_2|Divoký včely dělají ten nejlepší med!
 ; str_dale_rumor_10|Our prosperity comes from trade with the Dwarves and the Elves. But it's hard to bargain with Dwarves. Very little profit there.
 ; str_harad_rumor_begin|The Black Snake will strike swift and deadly.
 ; str_harad_rumor_2|By the Serpent! Our beasts will trample Gondorians into the dirt.
-; str_harad_rumor_3|Odum vermajál otí verthaba av daranaja-e-jatánus!
+str_harad_rumor_3|Odum vermajál otí verthaba av daranaja-e-jatánus!
 ; str_harad_rumor_4|There is much gold and gems in Gondor. And even more in the lands beyond.
 ; str_harad_rumor_5|We will catch many western weaklings and sacrifice them to the Serpent God.
 ; str_harad_rumor_6|Corsairs have their uses, they sail well, but are rowdy and unclean in appearance and sneaky in behaviour.
@@ -1912,7 +1912,7 @@ str_trait_title_archer_captain|Kapitán lučištníků
 ; str_trait_desc_archer_captain|You have developed uncanny skill in the command of missile troops. Due to rigorous and specialized training such troops will receive a small health boost, once per battle.
 str_trait_title_cavalry_captain|Kapitán kavalérie
 ; str_trait_desc_cavalry_captain|You have developed uncanny skill in the command of mounted troops. Due to rigorous and specialized training such troops will receive a small health boost, once per battle.
-; str_trait_title_command_voice|Command Voice
+str_trait_title_command_voice|Velitelský hlas
 ; str_trait_desc_command_voice|Your experience with commanding men in the field has lent you an air of authority. The influence cost to give orders to armies in the field has been reduced.
 str_trait_title_foe_hammer|Nepřátelské kladivo
 ; str_trait_desc_foe_hammer|Having slain many of the great captains of the enemy you find that you have earned a reputation as a fearsome warrior. Troops under your command now receive a weekly morale bonus. Your experiences have also honed your skill in battle.
@@ -1931,7 +1931,7 @@ str_wound_chest|nějaká nalomená žebra
 str_wound_arm|ošklivě zmrzačená paže
 str_wound_leg|ošklivě zmrzačená noha
 str_gondor_gift0|Čerstvé ovoce a víno
-; str_gondor_gift1|Richly Dyed Cloth
+str_gondor_gift1|Bohatě zdobená látka
 ; str_gondor_gift2|Ancient Tomes and Family Trees
 ; str_gondor_gift3|Spices and Incense
 ; str_gondor_gift4|Auroch War Horns
@@ -2451,7 +2451,7 @@ str_npc27_honorific|Mistr
 ; str_rhun_maincamp_guildmaster_companion|Our greatest swordbearers and riders fight in the retinues of our warlords. But there is one who has found favour with none of our chiefs so far. Not because he is weak; far from it! He does not curb his tongue when he speaks, and he has spoken loudly against our chieftains, saying they are slow to act and over-cautious. If he had his way, I wager the countryside would be covered in flames by now. His name is Varfang, and he spends his hours training near the prisoner cages, not far from this tent.
 ; str_guldur_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
 ; str_guldur_guildmaster_companion_none|O ho! What do we have here? A great captain, are you? I reckon your bark’s worse than your bite, and no mistake. Orders are orders: you draw your troops from our garrison here, and that’s that. Keep talking like that where they’ve got ears to hear, though, and someone will stick a knife in your back one of these days, see if they don’t.
-; str_guldur_guildmaster_companion_player_none_ok|You’ll watch your words with me, if you know what’s good for you.
+str_guldur_guildmaster_companion_player_none_ok|Dávej pozor jak se mnou mluvíš pokud víš co je pro tebe dobré.
 ; str_guldur_guildmaster_player_found_ok|Scared witless by this woman, are you? I’ll go see if she’s all you make her out to be. This had better not be a waste of my time!
 ; str_guldur_main_guildmaster_companion|We’ve got stout lads aplenty, curse you. Ha… I know what you’re really after. Oh yes, indeed, I know just where you should go, Commander. See that cave over there, with steps leading down? If our boys get hurt badly enough we send them down there, and I reckon almost a third of them make it back up, har! They can do very strange things, down there… and that one in particular, the woman… she gives me the shivers, and that’s saying something. They say she’s got something to do with Number One, or even Higher Up, if you take my meaning. Talk to her, if you dare.
 ; str_moria_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
@@ -2499,13 +2499,13 @@ str_imladris_guildmaster_player_found_ok|Rozumím Starší. Děkuji za tvůj ča
 ; str_mordor_cungol_guildmaster_companion|O ho, you want a fighter! I’ve got just the lad for you. He’s a favourite of the Big Bosses, that one. Do not be deceived by his small stature, oh no! Why, I warrant he’d be a Boss himself before too long, the way he’s been carrying on! Just put a nice big axe in old Ufthak’s hands, put him right in the front, and watch him go! Cause the enemy no end of grief, he will, and no mistake! ‘Ere, pipe down, lads! What’re you laughing about? Go on about your rounds, you maggots! Sorry about that, Commander, these louts are an undisciplined lot. Not like Ufthak! Take him along, Commander, you won’t regret it. You can trust Ufthak with your very life. See, there he stands his watch, atop the tower. Cuts a majestic figure, eh?
 ; str_gundabad_guildmaster_companion_player_ask|All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?
 ; str_gundabad_guildmaster_companion_none| I care not where you come from -- you’ll watch your tongue around here! Oh yes, be careful how you speak to us, or you just might find yourself falling into a dark hole of snakes in these tunnels of ours. Our fighting lads are off in rebel lands, fighting thieves and brigands and murderous elf-friends. And what’re you about, eh? Shirking your own share of the fighting, spying on our private business? Off with you, back into the fray, like a proper soldier!
-; str_gundabad_guildmaster_companion_player_none_ok|You’ll watch your words with me, if you know what’s good for you.
+str_gundabad_guildmaster_companion_player_none_ok|Dávej pozor jak se mnou mluvíš pokud víš co je pro tebe dobré.
 ; str_gundabad_guildmaster_player_found_ok|Do I hear you aright? Is this “Berta” of yours a troll that thinks? Now this, I have to see for myself.
 ; str_gundabad_guildmaster_companion|Watch your tongue, you, or someone here will cut it off! Oh yes, put a foot wrong, and with a snap of my fingers, just like that -- off to the fighting pit you go! A special treat we have there, for loudmouth braggarts like you. Ha, see how you like it, when you’re in that pit with big ol’ Berta! I’d wager a month’s vittles you don’t stay standing after a blow from her. The most cunning troll we’ve ever found, but we’re more cunning, see, seeing as how we’re the ones who’ve got her chained up proper! Bit of a laugh we’re having, putting her below that big statue of that old dwarf king in the caves. So’s she doesn’t get lonely, heh heh heh. Well? Care to take a few swings at our Berta?
 ; str_fullname_region_rhun|East Rhovanion, on both sides of the river Celduin
 ; str_fullname_region_erebor|the foothills of Erebor, the Lonely Mountain
 ; str_fullname_region_celebrant|the Field of Celebrant, between the rivers Celebrant and Limlight
-; str_fullname_region_gladden_fields|the Gladden Fields, marshes of the river Gladden
+str_fullname_region_gladden_fields|Kosatcová pole, močály Kosatcové řeky
 str_fullname_region_w_emyn_muil|západní Emyn Muil
 ; str_fullname_region_s_misty_mountains|the foothills of the southern Misty Mountains
 ; str_fullname_region_n_anduin_vale|the northern Vale of Anduin, north of the Carrock
@@ -2514,12 +2514,12 @@ str_fullname_region_w_emyn_muil|západní Emyn Muil
 str_shortname_region_rhun|Východní Rhovanion
 str_shortname_region_erebor|podhůří Ereboru
 str_shortname_region_celebrant|Pole Celebrant
-; str_shortname_region_gladden_fields|the Gladden Fields
+str_shortname_region_gladden_fields|Kosatcová pole
 str_shortname_region_w_emyn_muil|západní Emyn Muil
 ; str_shortname_region_s_misty_mountains|the foothills of the Southern Misty Mountains
-; str_shortname_region_n_anduin_vale|the northern Vale of Anduin
-; str_shortname_region_s_anduin_vale|the southern Vale of Anduin
+str_shortname_region_n_anduin_vale|Severní údolí Anduiny
+str_shortname_region_s_anduin_vale|Jížní údolí Anduiny
 str_shortname_region_cair_andros|Cair Andros
 ; str_isengard_hunting_camp_guildmaster_player_found_ok|If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!
-; str_trait_title_animal_fighter|Beast Slayer
-; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.
+str_trait_title_animal_fighter|Zabíječ bestií
+str_trait_desc_animal_fighter_|Divoká zvěř se naučila se ti vyhýbat. Což velmi snižuje šanci na střet s agresivní zvěří.

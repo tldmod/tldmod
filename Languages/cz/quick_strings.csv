@@ -2,11 +2,11 @@ qstr_Received_{reg0}_dama|Obdrženo {reg0} poškození.
 qstr_Gate_is_breached!|Brána je proražena!
 qstr_Gate_opens..._You_ha|Brána se otvírá... Dostal ses na nejposvátnější místo ve Středozemi!
 qstr_Secret_place_discove|Posvátné místo objeveno!
-; qstr_Nothing_of_interest.|Nothing of interest...
-; qstr_No_inventory_space..|No inventory space...
-; qstr_We_don_t_know_you_en|We don't know you enough to give you this...
-; qstr_Take_it_friend_it_s_|Take it, friend, it's yours.
-; qstr_Take_it_we_don_t_nee|Take it, we don't need it anyway.
+qstr_Nothing_of_interest.|Nic zajímavého...
+qstr_No_inventory_space..|Žádné místo v invenáři...
+qstr_We_don_t_know_you_en|Neznáme tě dostatečně, abychom ti to daly...
+qstr_Take_it_friend_it_s_|Vezmi si to příteli, je to tvé.
+qstr_Take_it_we_don_t_nee|Vezmi si to, stejně to už nepotřebujeme.
 qstr_Next_Page|Další stránka
 qstr_Action|Akce
 qstr_Mount|Osedlat
@@ -81,7 +81,7 @@ qstr_a_MAN^_subjugated_by|ČLOVĚK,^ podřízený Sauronovi
 qstr_an_ORC^_serving_the_W|SKŘET,^ sloužící Bílé Ruce
 qstr_one_of_the_URUK_HAI^|Jeden z URUK-HAI,^ vypěstován v Železném pasu.
 qstr_a_MAN_of_Dunland^_th|ČLOVĚK z Vrchoviny,^ ze Západních plání
-; qstr_Thank_you_for_playin|Thank you for playing
+qstr_Thank_you_for_playin|Děkujeme ti za hraní
 qstr_Click_the_center_but|Klikni na prostřední tlačítko k přepnutí frakce^Klikni na avatara k zobrazení detailů o postavě
 qstr_Level:_{reg3}^Health|Úroveň: {reg3}^Životy: {reg4}
 qstr_Attributes|Schopnosti
@@ -103,7 +103,7 @@ qstr_Siege_AI:__|Umělá inteligence při obléhání:
 qstr_Basic__better_perfor|Základní (lepší výkon)
 qstr_Advanced|Pokročilé
 qstr_Campaign_difficulty:|Obtížnost kampaně:
-; qstr_Brutal|Brutal
+qstr_Brutal|Brutální
 qstr_Hard|Těžká
 qstr_Default|Defaultní
 qstr_Easy|Lehká
@@ -123,11 +123,11 @@ qstr_Default_Camera|Základní kamera
 qstr_Free_Mode_Custom_Cam|Volný režim vlastní kamery
 qstr_Fixed_Over_The_Shoul|Pevná kamera přes rameno
 qstr_Brighter_Nights:__|Světlejší noci:
-; qstr_Allow_to_use_bow_wit|Allow to use bow with small shields:  
-; qstr_No__regular_troops_o|No (regular troops only)
-; qstr_Companions_only|Companions only
-; qstr_Player_only|Player only
-; qstr_Yes|Yes
+qstr_Allow_to_use_bow_wit|Dovoleno použít luk s malým štítem:
+qstr_No__regular_troops_o|Ne (pouze běžné jednotky)
+qstr_Companions_only|Pouze společníci
+qstr_Player_only|Pouze hráč
+qstr_Yes|Ano
 qstr_Done|Hotovo
 qstr_Gameplay_Tweaks|Úpravy hratelnosti
 qstr_Set_to_Native_if_you|Nastav na "Native" při problémech s AI v bitvách.
@@ -241,7 +241,7 @@ qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} v bitvě
 qstr_+1_to_Charisma|+1 k Charisma
 qstr_Call_Reinforcements|Zavolat posily
 qstr__Effect_scales_with_|(Účinek se škáluje se Silou a Charisma)
-qstr_+1_to_First_Aid|+1 k První Pomoci
+qstr_+1_to_First_Aid|+1 k První pomoci
 qstr_+1_to_Surgery|+1 k Chirurgii
 qstr_+1_to_Intelligence|+1 k Intelligenci
 qstr_+2_to_Surgery|+2 k Chirurgii
@@ -271,9 +271,9 @@ qstr_Bonus_to_Strength__P|Bonus k Síle (pouze hráč)
 qstr_Lead_more_Orcs|Vést více skřetů
 qstr_Can_scare_horses|Může vystrašit koně
 qstr_+{reg1}_to_Party_Mor|+{reg1} k Morálce Družiny
-; qstr_Not_affected_by_nigh|Not affected by nighttime
+qstr_Not_affected_by_nigh|Neovlivněno nocí
 ; qstr_Increased_health_and|Increased health and stagger resistance
-; qstr_Can_heal_on_kill|Can heal on kill
+qstr_Can_heal_on_kill|Za každý zabití se můžeš léčit
 qstr_Range:_{reg55}|Vzdálenost: {reg55}
 qstr_Dwarves|Trpaslíci
 qstr_Humans_and_Elves|Lidé a Elfové
@@ -713,17 +713,17 @@ qstr_{s2}_{reg3?was:is_ar|{s2} {reg3?byl:je poblíž {s5}.
 qstr_Army_of_{s6}|Armáda {s6}
 qstr_Host_of_{s6}|Vojsko {s6}
 qstr_The_host_of_Isengard|Vojsko z Železného pasu vypálilo {s2}!
-; qstr_The_battlefield_is_a|The battlefield is a dark forest.
-; qstr_The_battlefield_is_f|The battlefield is forested.
-; qstr_The_battlefield_is_a_|The battlefield is a treacherous marshland.
-; qstr_A_golden_mist_from_L|A golden mist from Lórien covers the battlefield.
-; qstr_Dark_clouds_from_Mor|Dark clouds from Mordor cover the battlefield.
-; qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the battlefield.
-; qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield.
-; qstr_The_defenses_consist|The defenses consist of dark tunnels and underground halls.
-; qstr_The_defenses_lie_in_|The defenses lie in the shadow of tall trees, blocking out the sunlight.
-; qstr_The_defenses_lie_in_t|The defenses lie in the shadow of steep cliffs, blocking out the sunlight.
-; qstr_The_fortress_is_shro|The fortress is shrouded in darkness.
+qstr_The_battlefield_is_a|Bitevní pole je temný les.
+qstr_The_battlefield_is_f|Bitevní pole je zalesněno.
+qstr_The_battlefield_is_a_|Bitevní pole je zrádná bažina.
+qstr_A_golden_mist_from_L|Zlatá mlha z Lórienu zakrývají bitevní pole.
+qstr_Dark_clouds_from_Mor|Temné mraky z Mordoru zakrývají bitevní pole.
+qstr_A_thunderstorm_from_|Bouře z Mlžných hor zuří nad bojištěm.
+qstr_A_poisonous_fog_from|Jedovatá mlha z Dol Guldur se doznívá na bitevním poli.
+qstr_The_defenses_consist|Obrana se skládá z temných tunelů a podzemních hal.
+qstr_The_defenses_lie_in_|Obrana leží ve stínu vysokých stromů, které blokují sluneční světlo.
+qstr_The_defenses_lie_in_t|Obrana leží ve stínu strmých útesů, které blokují sluneční světlo.
+qstr_The_fortress_is_shro|Pevnost je zahalena do temnoty.
 qstr_{s1}_{s0}|{s1}, {s0}
 qstr_{s1}_and_{s0}|{s1} a {s0}
 qstr_No_Troops_Left.|Nezbývají žádní vojáci.
@@ -766,21 +766,21 @@ qstr_ready_polearms|připravit kopí
 qstr_shields_up|štíty nahoru
 qstr_doff_shields|odložit štíty
 qstr_Distance___{reg70}__|Vzdálenost - {reg70} - {s11} Skupina - {s12} Jednotka
-; qstr_A_golden_mist_from_L|A golden mist from Lórien covers the battlefield.
+qstr_A_golden_mist_from_L|Zlatá mlha z Lórienu zakrývají bitevní pole.
 qstr_A_golden_mist_from_Lr|Zlatá mlha z Lórienu pokrývá bojiště. Čarodějnice je blízko, sesílá na tebe třes a bodá tvé jednotky.
-; qstr_Dark_clouds_from_Mor|Dark clouds from Mordor cover the battlefield.
+qstr_Dark_clouds_from_Mor|Temné mraky z Mordoru zakrývají bitevní pole.
 qstr_Dark_clouds_from_Mord|Temné mraky z Mordoru pokrývají bojiště. Přítomnost Temného Pána posiluje tebe i tvé jednotky.
-; qstr_A_thunderstorm_from_|A thunderstorm from the Misty Mountains rages over the battlefield.
+qstr_A_thunderstorm_from_|Bouře z Mlžných hor zuří nad bojištěm.
 qstr_A_thunderstorm_from_t|Bouře z Mlžných hor zuří nad bojištěm. Lučištníci mají potíže v tomto počasí.
-; qstr_A_poisonous_fog_from|A poisonous fog from Dol Guldur lingers on the battlefield.
+qstr_A_poisonous_fog_from|Jedovatá mlha z Dol Guldur se doznívá na bitevním poli.
 qstr_A_poisonous_fog_from_|Otrávená mlha z Dol Gulduru přetrvává na bojišti. Necítíš se jinak než obvykle, ale slyšíš jak tví nepřátelé trpí a cítíš jejich strach.
 qstr_You_shapeshift_into_|Přeměnil ses v medvěda!
 qstr_You_got_{reg1}_exper|Získal si {reg1} zkušeností v medvědí formě.
 qstr_Your_ability_to_chan|Tvá schopnost převléknout kůži se projevila, nyní můžeš kráčet po divokých stezkách jako člověk i medvěd.
 qstr_You_change_back_to_h|Proměnil ses zpět na člověka...
 qstr_Refill_Ammunition|Doplnit munici
-; qstr_Take_a_closer_look..|Take a closer look...
-; qstr_Look_around...|Look around...
+qstr_Take_a_closer_look..|Koukni se blíže...
+qstr_Look_around...|Podívej se okolo...
 ; qstr_Amon_Hen_the_Hill_of|Amon Hen, the Hill of Seeing, grants a commanding view over the surrounding lands. However, if you sought the ancient high seat in hope of gaining directions on your own course, you now realize that this on you to decide.
 ; qstr_As_the_lights_begin_|As the lights begin to flicker and dance, you see them: grim faces and evil, and noble faces and sad. Many faces proud and fair, and weeds in their silver hair. But all foul, all rotting, all dead.
 ; qstr_This_must_be_the_spi|This must be the spider nest. Without hesitation, you light a torch and burn down the webs. This will eliminate the spider thread in Mirkwood.
@@ -811,7 +811,7 @@ qstr_You_look_through_Hen|Díváš se skrze Henneth Annun, Okno Západu slunce. 
 ; qstr_You_have_found_the_s|You have found the secret passage into Mordor, the pass of Cirith Ungol. Beyond those stairs, you sense a dark will ling in wait. You realize that you should not pursue this path any further if you value your own life.
 ; qstr_A_great_man_was_tort|A great man was tortured here, his remains still held in place by cruel chains and cold will. You do not know who he was, yet you understand that such terrible fate awaits all who dare to oppose the Dark Lord.
 ; qstr_You_endure_the_horro|You endure the horrors of the Dead City and explore its innermost circles. The Silent Watchers recognise your boldness and don't oppose you.
-; qstr__You_gained_1_Charis|(You gained 1 Charisma.)
+qstr__You_gained_1_Charis|(Dostal jsi 1 charisma.)
 ; qstr_You_endure_the_horror|You endure the horrors of the unspeakable rituals in this sacred place. The cruel people of Rhun recognise the strength you have shown and some of their mightiest decide to join your party.
 ; qstr_Your_hackles_rise_as|Your hackles rise as you look around you, and you begin to feel a strange sense of danger. Raising your weapon high, you snarl your defiance at the unseen foe in this place. This may have been a place of wonder once... but now, with the true power you have gained, you realize you have nothing to fear from the forgotten past of a broken world.
 ; qstr_Looking_around_you_d|Looking around, you do not understand the significance of this place.
@@ -822,7 +822,7 @@ qstr_Your_mount_stumbles!|Tvůj kůň zakopl! Vypadá že je chromý.
 qstr_Bitten_by_your_own_w|Kousl tě vlastní vrk!
 qstr_You_weigh_too_much_f|Vážíš příliš mnoho pro poníka!
 qstr_Your_mount_rears_ref|Tvůj kůň se plaší, odmítá poslouchat tvé příkazy!
-; qstr_{s5}_has_been_overco|{s5} has been overcome by fear and rage and is now uncontrollable.
+qstr_{s5}_has_been_overco|{s5} byl přemožen strachem a vztekem a je teď nekontrolovatelný.
 ; qstr_{s5}_is_running_amok|{s5} is running amok, hurting friend and foe alike!
 qstr_Cannot_Change_Camera|Nelze změnit mód kamery když jsi v pohledu první osoby.
 qstr_Switch_Back_to_3rd_P|Přepnout zpět na pohled třetí osoby na cyklickou kameru.
@@ -836,7 +836,7 @@ qstr_Fixed_Camera___Left_|Fixní kamera - Levé rameno
 qstr_Fixed_Camera___Cente|Fixní kamera - centrovaná
 qstr_The_Nazgul_retreats!|Nazgúl utíká!
 qstr_Shield_is_too_big_to|Štít je moc velký na to aby mohl být používán s lukem.
-; qstr_Shield_reduces_accur|Shield reduces accuracy by {reg11} percent.
+qstr_Shield_reduces_accur|Štít snižuje přesnost o {reg11} procent.
 qstr_{s7}_waves_at_you.|{s7} na tebe mává.
 ; qstr_You_are_unable_to_en|You are unable to endure the horrors of the Dead City.
 ; qstr_You_are_unable_to_end|You are unable to endure the horrors of the temple.
@@ -846,7 +846,7 @@ qstr_Halt!_You_are_not_al|Stůj! Nemáš povolení sem vstoupit!
 ; qstr_While_visiting_towns|While visiting towns, settlements and camps, you can talk to people walking around. This will help you gain their trust and offer valuable information about the local culture. If you ask, they will also show you the way to the most important people around.
 qstr_Cannot_leave_now.|Teď nemůžeš odejít.
 ; qstr_The_traitor_should_b|The traitor should be around somewhere. You should look around important places. If you have a good relation to them, you may also ask the local populace for suspicious strangers.
-; qstr_The_traitor_flees._C|The traitor flees. Catch him!
+qstr_The_traitor_flees._C|Zrádce utíká. Chytněte ho!
 qstr_You_have_found_the_l|Našel jsi místního kováře.
 qstr_You_have_found_the_lo|Našel jsi místní autoritu.
 qstr_You_have_found_the_loc|Našel jsi místní skladiště.
@@ -863,13 +863,13 @@ qstr_Division_{reg1}_{s2}_f|Divize {reg1} {s2} formuje řadu (zapamatováno).
 qstr_Division_{reg1}_{s2}_fo|Divize {reg1} {s2} formuje {reg0} řad (zapamatováno).
 qstr_A_Nazgul_on_a_winged|Nazgúl na okřídleném oři krouží nad bojištěm!
 qstr_Your_bear_form_has_{|Tvoje medvědí forma má {reg2}/{reg1} HP!
-; qstr_Underground_battle:_|Underground battle: Prepare to fight in the dark.
+qstr_Underground_battle:_|Podzemní bitva: Připrav se bojovat ve tmě.
 ; qstr_Steep_mountain_sides|Steep mountain sides block out the sunlight.
-; qstr_Big_trees_block_out_|Big trees block out the sunlight.
-; qstr_The_place_is_covered|The place is covered in darkness as if it was night.
-; qstr_It_is_night._You_fee|It is night. You feel how your strength grows and your eyesight becomes sharper in the  darkness.
-; qstr_It_is_night._As_a_tr|It is night. As a trained Uruk, you fight at night or day and don't heed light or darkness.
-; qstr_It_is_night._In_the_|It is night. In the darkness, you have to move and fight more carefully.
+qstr_Big_trees_block_out_|Velké stromy blokují sluneční světlo.
+qstr_The_place_is_covered|Toto místo je pokryto temnotou jako by byla noc.
+qstr_It_is_night._You_fee|Je noc. Cítíš jak síla roste a tvůj zrak se zostřuje v této temnotě.
+qstr_It_is_night._As_a_tr|Je noc. Jako trénovaný Uruk bojuješ v noci nebo ve dne a nevšímáš si světla nebo tmy.
+qstr_It_is_night._In_the_|Je noc. V temnotě se musíš pohybovat a bojovat víc opatrněji.
 ; qstr_Rough_terrain:_Heavy|Rough terrain: Heavy troops are at a disadvantage.
 qstr_A_golden_mist_from_Lr|Zlatá mlha z Lórienu pokrývá bojiště. Čarodějnice je blízko, sesílá na tebe třes a bodá tvé jednotky.
 qstr_A_golden_mist_from_Lri|Zlatá mlha z Lórienu pokrývá bojiště. Čarodějnice je blízko, sesílá na tebe třes a bodá tvé jednotky.
@@ -965,14 +965,14 @@ qstr_Alarm_Level_is_now_at_|Úroveň poplachu na 2!
 qstr_Enemy_reinforcements_|Nepřátelské posily dorazily.
 ; qstr_Venture_deeper_into_|Venture deeper into the forest and find a way onward.
 ; qstr_You_have_evaded_the_|You have evaded the patrols and crept close to the ruins. Find and kill the sorcerer! Do not let the guards stop you.
-; qstr_Kill_the_Sorcerer!|Kill the Sorcerer!
+qstr_Kill_the_Sorcerer!|Zabijte Čaroděje!
 qstr_The_sorcerer_has_fle|Čaroděj uprchl!
 qstr_Report_this_ill_news|Nahlásit hned tyto špatné zprávy Lady.
-; qstr_You_have_been_spotte|You have been spotted! Fight!
-; qstr_The_ritual_has_begun|The ritual has begun! You must hasten to disturb it!
+qstr_You_have_been_spotte|Byl jsi viděn! Bojuj!
+qstr_The_ritual_has_begun|Rituál započal! Musíte ho rychle přerušit!
 qstr_The_sorcerer_has_joi|Čaroděj se připojil k boji! Zabijte ho!
 qstr_The_sorcerer_is_flee|Čaroděj prchá! Zabijte ho!
-; qstr_base_troop:_{reg77}_|base troop: {reg77}, upgrade: {reg78}
+qstr_base_troop:_{reg77}_|základní jednotka : {reg77}, vylepšení: {reg78}
 qstr_The_sorcerer_is_dead|Čaroděj je mrtev!
 qstr_The_battle_is_won!|Vyhráli jsme bitvu!
 qstr_A_band_of_tribal_orc|Objevila se tlupa kmenových skřetů!
@@ -1170,7 +1170,7 @@ qstr_the_Hall|síň
 qstr_the_Great_Chamber_of|Velké Thrórovy komnaty
 qstr_Stay_indoors_for_som|Zůstat zde nějaký čas ({reg1} Resource pointů za noc)
 qstr_Camp_outside_for_som|Kempovat venku na nějaký čas (zdarma)
-; qstr_You_are_not_allowed_|You are not allowed to enter.
+qstr_You_are_not_allowed_|Nemáš povolení vstoupit.
 ; qstr_As_the_party_member_|As the party member with the highest Bargainer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to find the most notable persons in town. [Costs {reg5}/{reg6} influence]
 ; qstr_You_have_already_fou|You have already found all persons of interest.
 qstr_the_captain_of_the_g|kapitán posádky, a místní autorita.
@@ -1793,9 +1793,9 @@ qstr_{s1}_Slaves|{s1} Otroci
 qstr_The_{s11}_of_{s10}_a|{s11} z {s10} tě požádal, abys eskortoval {s12} do {s13}.
 qstr__Guards_slaughter_hi|Stráže, zabijte ho!
 qstr_Slaughter_him_for_fr|Zmasakrujte ho pro čerstvé lidské maso!
-; qstr_near_the_smithy|near the smithy
-; qstr_near_the_local_autho|near the local authority
-; qstr_near_the_warehouse|near the warehouse
+qstr_near_the_smithy|poblíž kováře
+qstr_near_the_local_autho|poblíž místní autority
+qstr_near_the_warehouse|poblíž skladiště
 qstr_This_is_{s5}_Command|Tohle je {s5}, Velitel.
 qstr_{s6}_This_place_and_|{s6} Tohle místo a okolí patří {s7} z {s8}.
 ; qstr_Hear_now_commander._|Hear now, commander. I am currently out of assignment, yet I would rather meet our enemies in the field than wait for them to come here. I hear you're a capable leader. Would you have me?
