@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|움바르 고참 검사
 trp_i4_corsair_veteran_swordsman_pl|움바르 고참 검사
 trp_i5_corsair_master_swordsman|해적 검술 대가
 trp_i5_corsair_master_swordsman_pl|해적 검술 대가
-trp_a4_corsair_assassin|해적 암살자
-trp_a4_corsair_assassin_pl|해적 암살자
+; trp_i6_corsair_guard|Captain's Guard of Umbar
+; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
 trp_a5_corsair_master_assassin|해적 암살자
 trp_a5_corsair_master_assassin_pl|해적 암살자
 trp_i4_corsair_veteran_spearman|움바르 고참 창병
@@ -748,7 +748,6 @@ trp_mountain_goblin2|산고블린
 trp_mountain_goblin2_pl|산고블린
 trp_tribal_orc2|부족 오르크
 trp_tribal_orc2_pl|부족 오르크
-trp_i5_gunda_orc_champion2|군다바드 오르크 챔피언
 trp_i5_gunda_orc_champion2_pl|군다바드 오르크 챔피언
 trp_i2_mordor_num_renegade|검은 누메노르 변절자
 trp_i2_mordor_num_renegade_pl|검은 누메노르 변절자
@@ -1501,17 +1500,17 @@ trp_black_numenorean_sorcerer|검은 누메노르 주술사
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|어둠숲 늑대기수
 trp_wolf_rider_of_mirkwood_pl|어둠숲 늑대기수
-trp_bear_strong|곰
-trp_bear_strong_pl|곰
+trp_bear_strong_old|곰
+trp_bear_strong_old_pl|곰
 trp_gate_aggravator|정문 수비대
 trp_orc_pretender|오르크 쟁탈자
 trp_human_prisoner|인간 죄수
-trp_spider|어둠숲 거미
-trp_spider_pl|어둠숲 거미
-trp_bear|곰
-trp_bear_pl|곰
-trp_wolf|늑대
-trp_wolf_pl|늑대
+trp_spider_old|어둠숲 거미
+trp_spider_old_pl|어둠숲 거미
+trp_bear_old|곰
+trp_bear_old_pl|곰
+trp_wolf_old|늑대
+trp_wolf_old_pl|늑대
 trp_dorwinion_sack|도르위니온 Sack
 trp_ring_hunter_captain|반지 추적자 대장
 trp_ring_hunter_lt|반지 추적자 대장
@@ -1541,6 +1540,10 @@ trp_start_quest_beorning_pl|베오른 망루 광전사
 ; trp_black_shield_guard_pl|Amath Dollen's Guards
 ; trp_dorwinion_spirit_leader|Spirit
 ; trp_dorwinion_spirit|Lesser Spirit
+; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
+; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
+; trp_i6_dun_retainer|Dunnish Retainer
+; trp_i6_dun_retainer_pl|Dunnish Retainers
 trp_i6_beorning_bear_warrior|곰 전사
 trp_i6_beorning_bear_warrior_pl|곰 전사
 trp_a5_dun_night_wolf|던랜드 밤늑대
@@ -1567,8 +1570,8 @@ trp_npc18|텀바투
 trp_npc19|하이드렉
 trp_npc20|지구르펠
 ; trp_npc21|Berta
-trp_werewolf|웨어울프
-trp_werewolf_pl|웨어울프
+trp_werewolf_old|웨어울프
+trp_werewolf_old_pl|웨어울프
 trp_moria_troll|동굴 트롤
 trp_moria_troll_pl|동굴 트롤
 trp_moria_vet_troll|훈련된 동굴 트롤
@@ -1633,3 +1636,43 @@ trp_merry_notmet|하플링
 trp_pippin|피핀
 trp_merry|메리
 trp_grima|뱀혓바닥 그리마
+trp_future_animal_0|늑대
+trp_future_animal_0_pl|늑대
+trp_spider|어둠숲 거미
+trp_spider_pl|어둠숲 거미
+; trp_spider_strong|Great Spider
+; trp_spider_strong_pl|Great Spiders
+trp_bear|곰
+trp_bear_pl|곰
+; trp_bear_strong|Great Bear
+; trp_bear_strong_pl|Great Bears
+trp_wolf|늑대
+trp_wolf_pl|늑대
+; trp_wolf_strong|Huge Wolf
+; trp_wolf_strong_pl|Huge Wolves
+trp_werewolf|웨어울프
+trp_werewolf_pl|웨어울프
+; trp_boar|Boar
+; trp_boar_pl|Boars
+; trp_boar_strong|Great Boar
+; trp_boar_strong_pl|Great Boars
+; trp_evil_beast|Evil Beast
+; trp_evil_beast_pl|Evil Beast
+; trp_evil_beast_strong|Huge Evil Beast
+; trp_evil_beast_strong_pl|Huge Evil Beasts
+; trp_bull|Wild Bull
+; trp_bull_pl|Wild Kine
+; trp_bull_strong|Great Bull
+; trp_bull_strong_pl|Great Kine
+; trp_stag|Stag
+; trp_stag_pl|Stags
+trp_future_animal_4|늑대
+trp_future_animal_4_pl|늑대
+trp_future_animal_5|늑대
+trp_future_animal_5_pl|늑대
+; trp_guthlaf|Guthláf
+trp_damrod|담로드
+trp_duilin|두일린
+trp_derufin|데루핀
+; trp_rumil|Rúmil
+; trp_lugdush|Lugdush

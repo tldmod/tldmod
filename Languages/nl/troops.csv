@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|Ervaren Zwaardvechter van Umbar
 trp_i4_corsair_veteran_swordsman_pl|Ervaren Zwaardvechters van Umbar
 trp_i5_corsair_master_swordsman|Zeerover Zwaardmeester
 trp_i5_corsair_master_swordsman_pl|Zeerover Zwaardsmeesters
-trp_a4_corsair_assassin|Zeerover Sluipmoordenaar
-trp_a4_corsair_assassin_pl|Zeerover Sluipmoordenaars
+; trp_i6_corsair_guard|Captain's Guard of Umbar
+; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
 trp_a5_corsair_master_assassin|Zeerover Sluipmoordenaar
 trp_a5_corsair_master_assassin_pl|Zeerover Sluipmoordenaars
 trp_i4_corsair_veteran_spearman|Ervaren Speerman van Umbar
@@ -748,7 +748,6 @@ trp_mountain_goblin2|Bergkobolden
 trp_mountain_goblin2_pl|Bergkobolden
 trp_tribal_orc2|Stamork
 trp_tribal_orc2_pl|Ork Stamleden
-; trp_i5_gunda_orc_champion2|Gundabad Orc Champion
 ; trp_i5_gunda_orc_champion2_pl|Gundabad Orc Champions
 ; trp_i2_mordor_num_renegade|Black Numenorean Renegade
 ; trp_i2_mordor_num_renegade_pl|Black Numenorean Renegades
@@ -1501,17 +1500,17 @@ trp_elder_ironhill_pl|het kamp
 ; trp_evil_priest_pl|Evil Priests
 ; trp_wolf_rider_of_mirkwood|Wolf Rider of Mirkwood
 ; trp_wolf_rider_of_mirkwood_pl|Wolf Riders of Mirkwood
-trp_bear_strong|Beer
-trp_bear_strong_pl|Beren
+trp_bear_strong_old|Beer
+trp_bear_strong_old_pl|Beren
 ; trp_gate_aggravator|Gate Defence
 ; trp_orc_pretender|Orc Pretender
 trp_human_prisoner|Menselijke Gevangene
-; trp_spider|Mirkwood Spider
-; trp_spider_pl|Mirkwood Spiders
-trp_bear|Beer
-trp_bear_pl|Beren
-trp_wolf|Wolf
-trp_wolf_pl|Wolven
+; trp_spider_old|Mirkwood Spider
+; trp_spider_old_pl|Mirkwood Spiders
+trp_bear_old|Beer
+trp_bear_old_pl|Beren
+trp_wolf_old|Wolf
+trp_wolf_old_pl|Wolven
 ; trp_dorwinion_sack|Dorwinion Sack
 ; trp_ring_hunter_captain|Ring Hunter Captain
 ; trp_ring_hunter_lt|Ring Hunter Captain
@@ -1541,6 +1540,10 @@ trp_start_quest_beorning_pl|Beorning Carrock Berserkers
 ; trp_black_shield_guard_pl|Amath Dollen's Guards
 ; trp_dorwinion_spirit_leader|Spirit
 ; trp_dorwinion_spirit|Lesser Spirit
+; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
+; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
+; trp_i6_dun_retainer|Dunnish Retainer
+; trp_i6_dun_retainer_pl|Dunnish Retainers
 ; trp_i6_beorning_bear_warrior|Bear Warrior
 ; trp_i6_beorning_bear_warrior_pl|Bear Warriors
 ; trp_a5_dun_night_wolf|Dunnish Night Wolf
@@ -1567,8 +1570,8 @@ trp_start_quest_beorning_pl|Beorning Carrock Berserkers
 ; trp_npc19|Heidrek
 ; trp_npc20|Zigûrphel
 ; trp_npc21|Berta
-trp_werewolf|Weerwolf
-trp_werewolf_pl|Weerwolven
+trp_werewolf_old|Weerwolf
+trp_werewolf_old_pl|Weerwolven
 trp_moria_troll|Grot Trol
 trp_moria_troll_pl|Grot Trollen
 trp_moria_vet_troll|Getrainde Grot Trol
@@ -1633,3 +1636,43 @@ trp_merry_notmet|halfling
 trp_pippin|Pepijn
 trp_merry|Merijn
 ; trp_grima|Grima Wormtongue
+trp_future_animal_0|Wolf
+trp_future_animal_0_pl|Wolven
+; trp_spider|Mirkwood Spider
+; trp_spider_pl|Mirkwood Spiders
+; trp_spider_strong|Great Spider
+; trp_spider_strong_pl|Great Spiders
+trp_bear|Beer
+trp_bear_pl|Beren
+; trp_bear_strong|Great Bear
+; trp_bear_strong_pl|Great Bears
+trp_wolf|Wolf
+trp_wolf_pl|Wolven
+; trp_wolf_strong|Huge Wolf
+; trp_wolf_strong_pl|Huge Wolves
+trp_werewolf|Weerwolf
+trp_werewolf_pl|Weerwolven
+; trp_boar|Boar
+; trp_boar_pl|Boars
+; trp_boar_strong|Great Boar
+; trp_boar_strong_pl|Great Boars
+; trp_evil_beast|Evil Beast
+; trp_evil_beast_pl|Evil Beast
+; trp_evil_beast_strong|Huge Evil Beast
+; trp_evil_beast_strong_pl|Huge Evil Beasts
+; trp_bull|Wild Bull
+; trp_bull_pl|Wild Kine
+; trp_bull_strong|Great Bull
+; trp_bull_strong_pl|Great Kine
+; trp_stag|Stag
+; trp_stag_pl|Stags
+trp_future_animal_4|Wolf
+trp_future_animal_4_pl|Wolven
+trp_future_animal_5|Wolf
+trp_future_animal_5_pl|Wolven
+; trp_guthlaf|Guthláf
+; trp_damrod|Damrod
+; trp_duilin|Duilin
+; trp_derufin|Derufin
+; trp_rumil|Rúmil
+; trp_lugdush|Lugdush

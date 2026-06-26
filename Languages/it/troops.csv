@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|Spadaccino Veterano di Umbar
 trp_i4_corsair_veteran_swordsman_pl|Spadaccini Veterani di Umbar
 trp_i5_corsair_master_swordsman|Mastro di Spada Corsaro
 trp_i5_corsair_master_swordsman_pl|Mastri di Spada Corsari
-trp_a4_corsair_assassin|Corsaro Assassino
-trp_a4_corsair_assassin_pl|Corsari Assassini
+; trp_i6_corsair_guard|Captain's Guard of Umbar
+; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
 trp_a5_corsair_master_assassin|Corsaro Assassino
 trp_a5_corsair_master_assassin_pl|Corsari Assassini
 trp_i4_corsair_veteran_spearman|Lanciere Veterano di Umbar
@@ -748,7 +748,6 @@ trp_mountain_goblin2|Goblin di Montagna
 trp_mountain_goblin2_pl|Goblin di Montagna
 trp_tribal_orc2|Orco Tribale
 trp_tribal_orc2_pl|Orchi Tribali
-trp_i5_gunda_orc_champion2|Orco Campione di Gundabad
 trp_i5_gunda_orc_champion2_pl|Orchi Campioni di Gundabad
 trp_i2_mordor_num_renegade|Rinnegato Numenoreano Nero
 trp_i2_mordor_num_renegade_pl|Rinnegati Numenoreani Neri
@@ -1501,17 +1500,17 @@ trp_evil_priest|Sacerdote Oscuro
 trp_evil_priest_pl|Sacerdoti Oscuri
 trp_wolf_rider_of_mirkwood|Cavalca-Lupo di Bosco Atro
 trp_wolf_rider_of_mirkwood_pl|Cavalca-Lupi di Bosco Atro
-trp_bear_strong|Orso
-trp_bear_strong_pl|Orsi
+trp_bear_strong_old|Orso
+trp_bear_strong_old_pl|Orsi
 trp_gate_aggravator|Difesa della Porta
 trp_orc_pretender|Orco Impostore
 trp_human_prisoner|Prigioniero Umano
-trp_spider|Ragni di Bosco Atro
-trp_spider_pl|Ragni di Bosco Atro
-trp_bear|Orso
-trp_bear_pl|Orsi
-trp_wolf|Lupo
-trp_wolf_pl|Lupi
+trp_spider_old|Ragni di Bosco Atro
+trp_spider_old_pl|Ragni di Bosco Atro
+trp_bear_old|Orso
+trp_bear_old_pl|Orsi
+trp_wolf_old|Lupo
+trp_wolf_old_pl|Lupi
 trp_dorwinion_sack|Fiordo di Dorwinion
 trp_ring_hunter_captain|Capitano dei Cacciatori dell'Anello
 trp_ring_hunter_lt|Capitano dei Cacciatori dell'Anello
@@ -1541,6 +1540,10 @@ trp_black_shield_guard|Guardia di Amath Dollen
 trp_black_shield_guard_pl|Guardie di Amath Dollen
 trp_dorwinion_spirit_leader|Spirito
 trp_dorwinion_spirit|Spirito Minore
+; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
+; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
+; trp_i6_dun_retainer|Dunnish Retainer
+; trp_i6_dun_retainer_pl|Dunnish Retainers
 trp_i6_beorning_bear_warrior|Guerriero Orso
 trp_i6_beorning_bear_warrior_pl|Guerrieri Orsi
 trp_a5_dun_night_wolf|Lupo Notturno Dunlandiano
@@ -1567,8 +1570,8 @@ trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel
 trp_npc21|Berta
-trp_werewolf|Mannaro
-trp_werewolf_pl|Mannari
+trp_werewolf_old|Mannaro
+trp_werewolf_old_pl|Mannari
 trp_moria_troll|Troll di Caverna
 trp_moria_troll_pl|Troll di Caverna
 trp_moria_vet_troll|Troll di Caverna Addestrato
@@ -1633,3 +1636,43 @@ trp_merry_notmet|Mezzuomo
 trp_pippin|Pipino
 trp_merry|Merry
 trp_grima|Grima Vermilinguo
+trp_future_animal_0|Lupo
+trp_future_animal_0_pl|Lupi
+trp_spider|Ragni di Bosco Atro
+trp_spider_pl|Ragni di Bosco Atro
+; trp_spider_strong|Great Spider
+; trp_spider_strong_pl|Great Spiders
+trp_bear|Orso
+trp_bear_pl|Orsi
+; trp_bear_strong|Great Bear
+; trp_bear_strong_pl|Great Bears
+trp_wolf|Lupo
+trp_wolf_pl|Lupi
+; trp_wolf_strong|Huge Wolf
+; trp_wolf_strong_pl|Huge Wolves
+trp_werewolf|Mannaro
+trp_werewolf_pl|Mannari
+; trp_boar|Boar
+; trp_boar_pl|Boars
+; trp_boar_strong|Great Boar
+; trp_boar_strong_pl|Great Boars
+; trp_evil_beast|Evil Beast
+; trp_evil_beast_pl|Evil Beast
+; trp_evil_beast_strong|Huge Evil Beast
+; trp_evil_beast_strong_pl|Huge Evil Beasts
+; trp_bull|Wild Bull
+; trp_bull_pl|Wild Kine
+; trp_bull_strong|Great Bull
+; trp_bull_strong_pl|Great Kine
+; trp_stag|Stag
+; trp_stag_pl|Stags
+trp_future_animal_4|Lupo
+trp_future_animal_4_pl|Lupi
+trp_future_animal_5|Lupo
+trp_future_animal_5_pl|Lupi
+; trp_guthlaf|Guthláf
+trp_damrod|Damrod
+trp_duilin|Duilin
+trp_derufin|Derufin
+; trp_rumil|Rúmil
+; trp_lugdush|Lugdush

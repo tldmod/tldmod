@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|Umbarský zkušený šermíř
 trp_i4_corsair_veteran_swordsman_pl|Umbarští  zkušení šermíři
 trp_i5_corsair_master_swordsman|Korzárský šermíř
 trp_i5_corsair_master_swordsman_pl|Korzárští šermíři
-trp_a4_corsair_assassin|Korzárský vrah
-trp_a4_corsair_assassin_pl|Korzárští vrazi
+; trp_i6_corsair_guard|Captain's Guard of Umbar
+; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
 trp_a5_corsair_master_assassin|Korzárský vrah
 trp_a5_corsair_master_assassin_pl|Korzárští vrazi
 trp_i4_corsair_veteran_spearman|Umbarský zkušený kopiník
@@ -748,7 +748,6 @@ trp_mountain_goblin2|Horský goblin
 trp_mountain_goblin2_pl|Horští goblini
 trp_tribal_orc2|Kmenový skřet
 trp_tribal_orc2_pl|Kmenoví skřeti
-trp_i5_gunda_orc_champion2|Skřet šampion z Gundabadu
 trp_i5_gunda_orc_champion2_pl|Skřeti šampioni z Gundabadu
 trp_i2_mordor_num_renegade|Černý Numenorejec odpadlík
 trp_i2_mordor_num_renegade_pl|Černí Numenorejci odpadlíci
@@ -1501,17 +1500,17 @@ trp_evil_priest|Zlý kněz
 trp_evil_priest_pl|Zlí kněží
 trp_wolf_rider_of_mirkwood|Jezdec na vlku z Temného hvozdu
 trp_wolf_rider_of_mirkwood_pl|Jezdci na vlcích z Temného hvozdu
-trp_bear_strong|Medvěd
-trp_bear_strong_pl|Mědvědi
+trp_bear_strong_old|Medvěd
+trp_bear_strong_old_pl|Mědvědi
 trp_gate_aggravator|Strážce brány
 trp_orc_pretender|Skřet uchazeč
 trp_human_prisoner|Lidský Vězeň
-trp_spider|Pavouk z Temného Hvozdu
-trp_spider_pl|Pavouci z Temného Hvozdu
-trp_bear|Medvěd
-trp_bear_pl|Mědvědi
-trp_wolf|Vlk
-trp_wolf_pl|Vlci
+trp_spider_old|Pavouk z Temného Hvozdu
+trp_spider_old_pl|Pavouci z Temného Hvozdu
+trp_bear_old|Medvěd
+trp_bear_old_pl|Mědvědi
+trp_wolf_old|Vlk
+trp_wolf_old_pl|Vlci
 trp_dorwinion_sack|Dorwionionská kořist
 trp_ring_hunter_captain|Kapitán hledačů prstenu
 trp_ring_hunter_lt|Kapitán hledačů prstenu
@@ -1541,6 +1540,10 @@ trp_black_shield_guard|Stráž z Amath Dollen
 trp_black_shield_guard_pl|Stráže z Amath Dollen
 trp_dorwinion_spirit_leader|Duch
 trp_dorwinion_spirit|Nižší duch
+; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
+; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
+; trp_i6_dun_retainer|Dunnish Retainer
+; trp_i6_dun_retainer_pl|Dunnish Retainers
 trp_i6_beorning_bear_warrior|Medvědí válečník
 trp_i6_beorning_bear_warrior_pl|Medvědí válečníci
 trp_a5_dun_night_wolf|Dunlandský noční vlk
@@ -1567,8 +1570,8 @@ trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel
 trp_npc21|Berta
-trp_werewolf|Vlkodlak
-trp_werewolf_pl|Vlkodlaci
+trp_werewolf_old|Vlkodlak
+trp_werewolf_old_pl|Vlkodlaci
 trp_moria_troll|Jeskynní Trol
 trp_moria_troll_pl|Jeskynní Trolové
 trp_moria_vet_troll|Trénovaný jeskynní Trol
@@ -1633,3 +1636,43 @@ trp_merry_notmet|půlčík
 trp_pippin|Pipin
 trp_merry|Smíšek
 trp_grima|Grima Červivec
+trp_future_animal_0|Vlk
+trp_future_animal_0_pl|Vlci
+trp_spider|Pavouk z Temného Hvozdu
+trp_spider_pl|Pavouci z Temného Hvozdu
+; trp_spider_strong|Great Spider
+; trp_spider_strong_pl|Great Spiders
+trp_bear|Medvěd
+trp_bear_pl|Mědvědi
+; trp_bear_strong|Great Bear
+; trp_bear_strong_pl|Great Bears
+trp_wolf|Vlk
+trp_wolf_pl|Vlci
+; trp_wolf_strong|Huge Wolf
+; trp_wolf_strong_pl|Huge Wolves
+trp_werewolf|Vlkodlak
+trp_werewolf_pl|Vlkodlaci
+; trp_boar|Boar
+; trp_boar_pl|Boars
+; trp_boar_strong|Great Boar
+; trp_boar_strong_pl|Great Boars
+; trp_evil_beast|Evil Beast
+; trp_evil_beast_pl|Evil Beast
+; trp_evil_beast_strong|Huge Evil Beast
+; trp_evil_beast_strong_pl|Huge Evil Beasts
+; trp_bull|Wild Bull
+; trp_bull_pl|Wild Kine
+; trp_bull_strong|Great Bull
+; trp_bull_strong_pl|Great Kine
+; trp_stag|Stag
+; trp_stag_pl|Stags
+trp_future_animal_4|Vlk
+trp_future_animal_4_pl|Vlci
+trp_future_animal_5|Vlk
+trp_future_animal_5_pl|Vlci
+; trp_guthlaf|Guthláf
+trp_damrod|Damrod
+trp_duilin|Duilin
+trp_derufin|Derufin
+; trp_rumil|Rúmil
+; trp_lugdush|Lugdush

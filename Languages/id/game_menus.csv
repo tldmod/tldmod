@@ -32,9 +32,10 @@ mno_tutorial_3b_door|level berikutnya
 mno_tutorial_4|Tunggang seekor kuda atau seekor Warg. {s4}
 mno_tutorial_5|Perintahkan sekelompok tentara. {s5}
 mno_go_back_dot|Kembali.
+; menu_reports|^^^{s10}^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}
 mno_action_view_troop_trees|Lihat cabang-cabang pasukan.
 mno_view_upkeep_costs|Lihat biaya pemeliharaan/gaji.
-mno_view_character_report|Lihat laporan karakter.
+; mno_view_rank_report|View rank report.
 mno_view_party_size_report|Lihat laporan ukuran parti.
 mno_view_morale_report|Lihat laporan moral parti.
 mno_view_faction_strengths_report|Lihat laporan kekuatan fraksi.
@@ -113,6 +114,8 @@ mno_start_2_bn|Di Benteng Necromancer, DOL GULDUR
 menu_choose_gender|Apa kelaminmu?
 mno_start_male|Pria
 mno_start_female|Perempuan
+; menu_choose_skill|Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.
+; mno_proc|Proceed
 menu_start_as_one|^^^^^^^^^^Tentara seperti apakah kamu?
 mno_start_default|Menjadi seperti {s23} (Bawaan)
 mno_start_up1|Menjadi seperti {s21} (Mudah)
@@ -166,8 +169,9 @@ menu_camp_action|^^^^^^^^^     Barang apa?
 mno_camp_drink_water|Teguklah Air Ent!
 mno_camp_drink_orc_brew|Bagikanlah Bir Orc!
 mno_camp_drink_miruvor|Bagikanlah Miruvor!
+; mno_camp_use_pipeweed|Share pipe-weed with your companions (rest for a short duration).
 mno_camp_use_athelas|Gunakan Athelas untuk pengobatan luka.
-mno_camp_use_drums|Tabuhlah Genderang dari Deep.
+; mno_camp_use_drums|Beat the Drums of the Deep (wait for some hours).
 mno_camp_action_4|Kembali.
 menu_assasins_attack_player_won|Kamu telah berhasil mengalahkan para pembunuh dari {s2}, yang diutus oleh {s3}. 
 menu_assasins_attack_player_retreat|Kamu berhasil menyelamatkan diri!
@@ -315,6 +319,8 @@ mno_erebor_gates|Kunjungi Gerbang Besar.
 mno_erebor_gates_door|Pergi ke Gerbang Besar
 ; mno_glittering_caves|Go to the Glittering Caves.
 ; mno_glittering_caves_door|Go to the Glittering Caves
+; mno_mountain_travel|Travel on hidden mountain paths.
+; mno_mountain_travel_door|Travel on hidden mountain paths.
 mno_town_leave|Tinggalkan...
 mno_town_leave_door|Tinggalkan Area
 mno_town_find_NPCs_cont|Lakukan.
@@ -423,7 +429,7 @@ mno_cb_mordor8|Corsairs
 mno_rescue_mission|Menyelinap ke sarang penyihir di bawah naungan malam.
 mno_next_rescue_scene_door|Lanjutkan ke depan!
 mno_pick_troops1|Pilih pendamping untuk misi, {reg0} dipilih
-menu_pick_troops|Siapa yang akan Anda bawa ke dalam misi sembunyi-sembunyi? ^Hanya pasukan dan rekan Anda yang paling gesit yang dapat bergabung dengan Anda. ^Sebagai anggota party dengan skill wildcraft tertinggi, {reg65?{s1} menyarankan:Anda memutuskan} bahwa Anda dapat membawa hingga pasukan {reg11} bersama Anda. ^^Saat ini Anda telah memilih {reg0} teman.
+; menu_pick_troops|Whom would you take with you into the mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg13?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg12} companions.
 mno_go_forward|Akhiri pemilihan teman dan lanjutkan.
 ; menu_burial_mound|^You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|Berlutut dan beri hormat.
@@ -443,7 +449,7 @@ menu_death|Kamu telah terbunuh. Meskipun perang masih berlangsung, kamu tidak ak
 menu_animal_ambush|Kamu dan teman pendampingmu seketika terpisah dari rombongan grupmu, di mana tiba-tiba...
 menu_animal_ambush_success|{s2} {reg0?fall:falls} di hadapan Kamu seperti gandum yang disabit! Segera semua penyerang Kamu tergeletak di lantai, terluka atau mati. {s3}
 ; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
-menu_isengard_flooding|^^^^^@Anda dikelilingi oleh musuh mati dan sekutu yang menang, termasuk Ent; mereka mengaum, menggelegar, dan terompet, hingga batu-batu pecah dan berjatuhan di sekeliling Menara Orthanc. Mereka bagaikan angin kencang yang menderu-deru, mematahkan pilar-pilar, melemparkan longsoran batu-batu besar ke dalam lubang-lubang, melemparkan lempengan-lempengan batu besar ke udara seperti dedaunan... Ini belum pernah Anda lihat sebelumnya.^^ Bregalad -- atau Quickbeam, sebagai Anda kenal dia -- datang dan berhenti sejenak untuk mengatakan, '{playername}! Gudang! Jauhi Menara -- kami akan segera menghancurkan bendungan dan membawa Isen ke lembah ini, untuk sementara waktu. Menurutku, kamu akan merasa sangat sulit untuk tetap berdiri di sini!' Segera, ikuti nasihatnya dan segera menjauh dari Orthanc.^^ Sekitar tengah malam, Isengard mulai dipenuhi sungai dan kolam hitam yang menjalar. Anda pasti menggigil saat melihat asap dan uap membubung di pilar-pilar besar, dan gulungan uap besar membubung dan meliuk-liuk di sekitar Menara, hingga menyerupai puncak awan yang tinggi, menyala di bawah dan diterangi cahaya bulan di atas. Kemarahan para Ent lambat, namun memiliki kekuatan yang tak tertahankan...
+; menu_isengard_flooding|^^^^^You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 mno_isengard_continue|Lanjutkan
 menu_build_your_scene|Anda dapat membuat adegan pertempuran Anda sendiri, menggunakan salah satu slot yang disediakan di bawah dan mode edit game (Anda perlu mengaktifkan mode edit di opsi layar peluncuran M&B terlebih dahulu, lalu tekan Ctrl+E dalam adegan untuk mengakses mode edit). Anda kemudian dapat mengirimkan adegan yang Anda buat (yaitu, file sco dari folder TLD/SceneObj) ke tim pengembang TLD, dan jika adegan Anda bagus, adegan tersebut dapat muncul di rilis selanjutnya sebagai salah satu medan pertempuran acak!^^ Coba tentukan yang mana wilayah di peta yang Anda inginkan untuk menampilkan adegan Anda.^ Beberapa petunjuk: hindari perairan dalam, pegunungan curam, dan tempat-tempat lain yang tidak dapat dilewati, kecuali Anda adalah pembuat adegan berpengalaman dan tahu cara melarang pasukan AI berjalan di tempat yang tidak Anda inginkan, dan buat AI mesh di tempat lain.^ (Entri #0-1 untuk penyerang, #4 untuk pemain bertahan, jangan sentuh #5-8
 mno_back_3dot|Kembali...
@@ -455,6 +461,12 @@ mno_back_3dot|Kembali...
 ; menu_campaign_won|^^^Thank you for playing The Last Days of the Third Age!
 ; mno_credits_tld|TLD Credits
 ; mno_exit_game2|Quit to main menu
+; menu_companion_promoted_event|^^^A new hero   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!
+; menu_mountain_travel|As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.
+; menu_mountain_travel_arrived|After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}
+; mno_hunt_begin|Let the hunt begin!.
+; mno_pick_troops_hunt|Pick companions for the hunt, {reg15} selected
+; menu_hunt_beast_debrief|{s9}^^Your Casualties:{s8}
 mno_back|Kembali.
 mno_next|Lanjut...
 ; mno_previous|Previous...

@@ -1,5 +1,7 @@
 dlga_start:mutiny_pretalk_1|Hej {playername}. Něco ti řekneme.. ^Chlapi si stěžují! Chtějí víc zábavy, méně pochodování.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|Zpátky do řady, červe! Jsme ve válce, a já jsem váš velitel.
+; dlga_mutiny_pretalk_1:mutiny_pretalk_2|Fall back in line, maggot! We are at war and I'm your commander. [Charisma]
+; dlga_mutiny_pretalk_1:close_window|Want some fun eh? You maggot! I will slay you here and now, that will keep the lads entertained!
+; dlga_mutiny_pretalk_1:close_window.1|I will not tolerate such treacherous talk! Guards, kill him and his cronies!
 dlga_mutiny_pretalk_2:close_window|Na váš rozkaz, veliteli. Jak si přejete...
 dlga_start:mutiny_talk_1|Zdravím veliteli. Chci vám něco říct... Chlapi nejsou moc nadšení, vlastně vůbec. ^Malo lidského masa, málo zábavy. ^Chlapi říkají, že nejste dost dobrý, veliteli!
 dlga_mutiny_talk_1:mutiny_talk_2|Cože?! Vzpoura ve válce? ^To se trestá smrtí, červe!
@@ -120,6 +122,15 @@ dlga_member_separate:member_separate_confirm|Skutečně? No já tu nebudu jen ta
 dlga_member_separate_confirm:member_separate_yes|Je to pravda. Musíme se rozdělit.
 dlga_member_separate_confirm:do_member_trade|Ne, radši bych tě měl na své straně.
 dlga_member_separate_yes:close_window|Nuže. Odcházím tedy. Vyhledej mně, až mě budeš potřebovat.
+; dlga_member_talk:member_promote_lord|You should return to {s14} and gather warriors to lead against the enemy.
+; dlga_member_promote_lord:member_talk|Hrmph! Why should I care about {s14}? I'd rather stay here with you.
+; dlga_member_promote_lord:member_talk.1|Return to what? {s14} is gone. Perhaps if I had been able to return sooner it might have made some difference, but now the best place for me to seek vengeance is at your side.
+; dlga_member_promote_lord:member_talk.2|There are few who would follow me, I'm afraid. Perhaps I could learn a thing or two about leadership from you? Then we can discuss this again.
+; dlga_member_promote_lord:member_talk.3|{s14} remains strong in the face of our enemies and has no need of additional commanders. If a commander of {s14} should fall in battle let us speak of this again, but for now I think it is better if I stay with you.
+; dlga_member_promote_lord:member_promote_lord_2|Perhaps you're right. {s14} has need of more capable commanders. {s15} Are you sure you're ready for me to leave your side?
+; dlga_member_promote_lord_2:member_promote_lord_leaving|I am sure. You can do more leading a host of your own.
+; dlga_member_promote_lord_leaving:close_window|Well. I'll be off, then. Perhaps we will meet again.
+; dlga_member_promote_lord_2:do_member_trade|On second thought I'd rather you stay with me for now.
 dlga_member_talk:member_question|Rád bych se tě na něco zeptal.
 dlga_member_talk:close_window|Tak nic.
 dlga_member_question:member_question_2|Dobrá. Na co jsi se chtěl zeptat?
@@ -178,6 +189,21 @@ dlga_companion_personalitymatch_response:close_window|Velmi dobře.
 dlga_event_triggered:companion_faction_demolished|{s5}, {reg6?naše:moje} {s6} vlast trpí těžce ve válce, žádám tě, abys zvážil pomoc {reg6?našim:mým} lidem, jakmile si odpočineme budeme připraveni.
 dlga_companion_faction_demolished:close_window|Pak tedy vyrazíme na pomoc {s6}.
 dlga_companion_faction_demolished:close_window.1|Je mi líto, ale jsme potřeba jinde.
+; dlga_event_triggered:companion_faction_dying_pretalk|{s5}, I am sorry, but the suffering of {reg6?our:my} {s6} homeland is too great. I must return at once to provide what aid I can.
+; dlga_companion_faction_dying_pretalk:companion_faction_dying|Farewell, {s5}.
+; dlga_companion_faction_dying:close_window|Very well. Perhaps we will meet again.
+; dlga_companion_faction_dying:companion_give_troops|Of course. I shall also permit other warriors of {s6} to go with you.
+; dlga_companion_give_troops:companion_give_troops_check|I will be glad to have them with me. {s6} needs all the help you can provide.
+dlga_companion_give_troops:companion_give_troops_final|Bohužel se zdá, že nemáš {s14} vojáky pro mě.
+dlga_companion_give_troops_check:companion_give_troops_check_1|Podívám se na seznam mužů.
+dlga_companion_give_troops_check_1:companion_give_troops_final|Takže sis to rozmyslel... ^Chápu.
+dlga_companion_give_troops_check_1:companion_give_troops_final.1|Nemáme tady využití pro tyto vojáky...^Vem si je zpátky.
+; dlga_companion_give_troops_final:close_window|Farewell, commander.
+; dlga_companion_faction_dying:companion_faction_dying_trade|Let me see your equipment before you leave.
+dlga_companion_faction_dying_trade:companion_faction_dying_pretalk|Dobře, všechno je to tady...
+; dlga_companion_faction_dying:companion_faction_dying_persuade|I understand, but you are needed here.
+; dlga_companion_faction_dying_persuade:close_window|Perhaps you are right. I can serve {s6} better by fighting at your side.
+; dlga_companion_faction_dying_persuade:close_window.1|I'm afraid that {s6} needs me more. Farewell, {s5}.
 dlga_companion_home_description:companion_home_description_2|Řekni mi více.
 dlga_companion_home_description:close_window|Teď opravdu není vhodná doba na vykecávání se. 
 dlga_companion_home_description:close_window.1|Byl bych radši, kdyby mě moji společníci nezatěžovali takovými malichernostmi.
@@ -456,6 +482,7 @@ dlga_send_gift_3:send_gift_4.1|Jaký úplatek jim chceš dár?
 dlga_send_gift_4:lord_pretalk|Nevadí.
 dlga_send_gift_5:lord_pretalk|Dobře {playername}. Hodně Štěstí.
 dlga_lord_talk:lord_give_order_ask|Mám pro tebe nový úkol.
+; dlga_lord_give_order_ask:lord_pretalk|My duty is to defend my homeland. I will not accept any other assignments.
 dlga_lord_give_order_ask:lord_give_order|Ano?
 dlga_lord_give_order:lord_give_order_answer|Následuj mě. [stojí {reg1}/{reg2} vlivu]
 dlga_lord_give_order:lord_give_order_details_ask|Jdi do... [stojí {reg1}/{reg2} vlivu]
@@ -641,6 +668,9 @@ dlga_lord_mission_told:lord_mission_accepted|Můžeš se mnou počítat, {s65}.
 dlga_lord_mission_told:lord_mission_rejected|Obávám se, že takovou misi nemohu v tento moment přijmout.
 dlga_lord_mission_accepted:close_window|Tak tedy dobře, {playername}, mám v tebe plnou důvěru.
 dlga_lord_mission_rejected:close_window|Vážně, inu asi tě nepřesvědčím. Měl bych se podívat po někom trochu ochotnějším.
+; dlga_lord_talk:lord_return_items|I need you to return the unique {reg2?items:item} I gave you.
+; dlga_lord_return_items:lord_talk|Of course I will return {reg2?these items:this item} to you but it seems like you have no room in your inventory currently. Make some room, then ask me again.
+; dlga_lord_return_items:lord_talk.1|Of course. Here {reg2?they are:it is}.
 dlga_lord_talk:lord_leave_prison|Musím jít.
 dlga_lord_talk:lord_leave|Náš hovor skončil. Odcházím.
 dlga_lord_talk:lord_leave.1|Omluv mě.
@@ -886,6 +916,8 @@ dlga_mayor_sea_battle_no:close_window|Pospěš si, nemáme moc času, než budem
 dlga_mayor_talk:mayor_reinforced_center_finished|Vedu posily {s3}, jak jsi mě žádal.
 dlga_mayor_begin:kill_quest_bandits_failed|Doslechl jsem se, že si nesplnil, o co jsem tě žádal. To je zklamání,{playername}.
 dlga_kill_quest_bandits_failed:close_window|Příště to udělám líp.
+; dlga_mayor_begin:mayor_hunt_beast_quest_failed|I have heard that the {s9} slipped your grasp and that its trail was lost. It may have vanished for now, but the danger remains.
+; dlga_mayor_hunt_beast_quest_failed:close_window|This was no ordinary beast. I failed this time, but I shall not underestimate the wilds again.
 dlga_mayor_talk:mayor_deliver_food|Tady je to jídlo, {reg9} kusů.
 dlga_mayor_deliver_food:mayor_deliver_food_completed|vyborně ! {playername}, naše sýpky jsou zase plné,nikdo už nehladoví 
 dlga_mayor_deliver_food_completed:close_window|Dělám co je v mích silách.
@@ -939,16 +971,17 @@ dlga_merchant_quest_brief_deliver_wine:merchant_quest_stall|Zdá se, že tolik n
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_taken|Dobře. Udělám co budu moci.
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_stall|Omlouvám se, ale na to si najděte někoho jiného.
 dlga_mayor_mission_told_kill_quest_bandit:merchant_quest_stall|Nemohu to nemohu provést.
-dlga_merchant_quest_requested:merchant_quest_brief.4|Děkuji za nabídku, potřebuji, aby nám někdo dodal jídlo. Možná bys mohl pomoci.
+dlga_mayor_mission_told_hunt_beast:merchant_quest_stall|Nemohu to nemohu provést.
+dlga_merchant_quest_requested:merchant_quest_brief.5|Děkuji za nabídku, potřebuji, aby nám někdo dodal jídlo. Možná bys mohl pomoci.
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Docházejí nám zásoby jídla, a karavany jsou napadány nepřítelem. Potřebuji, aby někdo nám za {reg6} dní přinesl {reg5} jednotek jídla, nebo vyhladovíme. Možná najdeš dost v okolních městech. Pomůžeš?
 dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|Dobře, najdu jídlo a přinesu ti ho.
 dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|Omlouvám se, ale na to si najděte někoho jiného.
-dlga_merchant_quest_requested:merchant_quest_brief.5|Úkol říkáš? Potřebuji, aby nám někdo dovezl zásoby rud a kovů. Doly a silnice už nejsou bezpečné, a získat suroviny je stále těžší a těžší. Nepřítel asi má vlastní záhadné způsoby těžby rudy, protože skřeti a jiná odporná stvoření chodí odění v kovu. Kvalita kovu odpovídá nositelům, je to slabé a levné železu, kterému bychom v jiných časech nevěřil, ale doba je zlá, a naši slévači se naučili pracovat i se špatným kovem. I troška pomůže.
-dlga_merchant_quest_requested:merchant_quest_brief.6|Úkol říkáš? Pán si každý den žádá nové vojáky, nikdy pro něj nejsou dost dobří. Zbroj neroste na stromech, víš? Ty ponravy starající se o zásoby rudy jsou slaboši a podrazáci, snadno je někdo povije a my přijdeme o zásoby. Ale lidi, elfové, chodí si v lesklém drahém kovu, jako králové. I chudáci. Ober jejich mrtvoly a přines mi kov, {playername}. Z libry kovu udělá náš slévač zbroj pro celou tlupu.
+dlga_merchant_quest_requested:merchant_quest_brief.6|Úkol říkáš? Potřebuji, aby nám někdo dovezl zásoby rud a kovů. Doly a silnice už nejsou bezpečné, a získat suroviny je stále těžší a těžší. Nepřítel asi má vlastní záhadné způsoby těžby rudy, protože skřeti a jiná odporná stvoření chodí odění v kovu. Kvalita kovu odpovídá nositelům, je to slabé a levné železu, kterému bychom v jiných časech nevěřil, ale doba je zlá, a naši slévači se naučili pracovat i se špatným kovem. I troška pomůže.
+dlga_merchant_quest_requested:merchant_quest_brief.7|Úkol říkáš? Pán si každý den žádá nové vojáky, nikdy pro něj nejsou dost dobří. Zbroj neroste na stromech, víš? Ty ponravy starající se o zásoby rudy jsou slaboši a podrazáci, snadno je někdo povije a my přijdeme o zásoby. Ale lidi, elfové, chodí si v lesklém drahém kovu, jako králové. I chudáci. Ober jejich mrtvoly a přines mi kov, {playername}. Z libry kovu udělá náš slévač zbroj pro celou tlupu.
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|Potřebujeme {reg5} jednotek {s6} za {reg6} dní, než náš zbrojíř přijde o materiál. Co na to říkáš?
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|Dobře. Seženu ty kovový šrot a přinesu ti ho.
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|Jsem příliš zaneprázdněn, abych se s tím vypořádal.
-dlga_merchant_quest_requested:merchant_quest_brief.7|Děkuji že nabízíš pomoc. Vlastně jsem hledal někoho, kdo by eskortoval zásobovací karavanu. Možná bys to mohl udělat ty...
+dlga_merchant_quest_requested:merchant_quest_brief.8|Děkuji že nabízíš pomoc. Vlastně jsem hledal někoho, kdo by eskortoval zásobovací karavanu. Možná bys to mohl udělat ty...
 ; dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|I am going to send a supply train to {s8}. However with all those enemy patrols out there, I don't want to send them without an extra escort. A group at least {reg4} would offer them adequate protection. Can you lead that supply train to {s8} in 7 days?^^[you will earn {reg14} Resource Points of {s14}]
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Dobře. Doprovodím tu zásobovací karavanu.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Obávám že se sebou nemám tolik vojáků.
@@ -963,7 +996,7 @@ dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|Následujte mě. 
 dlga_merchant_caravan_follow_lead:close_window|Dobře. Budeme hned za tebou.
 dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|Počkej tu, půjdu napřed a prozkoumám cestu.
 dlga_merchant_caravan_stay_here:close_window|Dobře, počkáme tu na tebe.
-dlga_merchant_quest_requested:merchant_quest_brief.8|Vlastně, hledal jsem schopného velitele jako jsi ty. Je tu jedna skupina velice problémových skřetů. Vetřeli se do sousedství a napadají povozy se zásobami a osamělé válečníky. Do teď se jim dařilo všem našim hlídkám vyhýbat. Pokud je někdo nezasaví, budu potřebovat vážný vojenský zásah...
+dlga_merchant_quest_requested:merchant_quest_brief.9|Vlastně, hledal jsem schopného velitele jako jsi ty. Je tu jedna skupina velice problémových skřetů. Vetřeli se do sousedství a napadají povozy se zásobami a osamělé válečníky. Do teď se jim dařilo všem našim hlídkám vyhýbat. Pokud je někdo nezasaví, budu potřebovat vážný vojenský zásah...
 ; dlga_merchant_quest_brief:troublesome_bandits_quest_brief|I need someone to hunt down those troublesome goblins. It's dangerous work. But I believe that you are the one for it. What do you say?^^[you will earn {reg14} Resource Points of {s14}]
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Dobře, ulovím ty skřety.
 dlga_merchant_quest_taken_bandits:close_window|Skutečně? To mě velice těší. Hodně štěstí.
@@ -973,7 +1006,7 @@ dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|Okolí obtěžu
 dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Zabíjení loupežníků? No, samozřejmě!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Ne, nemám zájem.
 ; dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|That takes a weight off my shoulders, {playername}. You can expect a fine reward if you come back successful. Just don't get yourself killed, eh?
-dlga_merchant_quest_requested:merchant_quest_brief.9|Velitel tábora tady hledá schopného válečníka který by vzal skupinu {s12} do {s13}.
+dlga_merchant_quest_requested:merchant_quest_brief.10|Velitel tábora tady hledá schopného válečníka který by vzal skupinu {s12} do {s13}.
 ; dlga_merchant_quest_brief:move_cattle_herd_quest_brief|The group must arrive at {s13} within {reg6} days. Sooner is better, much better,  but it must be absolutely no later than {reg6} days.  Can you do that?^^[you will earn {reg14} Resource Points of {s14}]
 dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Ano, můžu je vzít k {s13}.
 dlga_move_cattle_herd_quest_brief:merchant_quest_stall|Je mi líto, ale ne.
@@ -1119,6 +1152,11 @@ dlga_party_encounter_hostile_attacker:close_window|Neutocte! Vzdavame se.
 dlga_party_encounter_hostile_attacker:close_window.1|Budeme s vami bojovat az do konce!
 dlga_start:party_encounter_hostile_defender|Co si prejete?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Vzdejte se nebo zemřete.
+dlga_kingdom_companion_meet:kingdom_companion_intro|Já jsem {playername}.
+dlga_kingdom_companion_meet:kingdom_companion_intro.1|Moje jméno je {playername}. K vašim službám.
+; dlga_start:kingdom_companion_start|Greetings, {playername}...
+; dlga_kingdom_companion_start:close_window.1|If you have business with our company you should speak with my {s5}, {s3}.
+dlga_kingdom_companion_leaving:close_window|Neshledanou.
 dlga_party_encounter_hostile_defender:close_window|Nic. Necháme vás na pokoji.
 dlga_start:close_window.53|Tiše zírá.
 dlga_start:battle_reason_stated|Vzdejte se nebo zemřete. Je to na vás.

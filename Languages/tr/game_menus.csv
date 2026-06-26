@@ -32,9 +32,10 @@ mno_tutorial_3b_door|sonraki seviye
 mno_tutorial_4|Tutorial #4: At veya warg sürmek. {s4}
 mno_tutorial_5|Ögretici # 5: Bir grup askeri komuta etmek.{s5}
 mno_go_back_dot|Geri dön.
+; menu_reports|^^^{s10}^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}
 mno_action_view_troop_trees|Birim agacını göster.
 mno_view_upkeep_costs|Bakım ücretini gör.
-mno_view_character_report|Karakter raporunu gör.
+; mno_view_rank_report|View rank report.
 mno_view_party_size_report|Grup boyutu raporunu görüntüle.
 mno_view_morale_report|Grup moral raporuna görüntüle.
 mno_view_faction_strengths_report|Taraf kuvvetlerinin raporunu görüntüle.
@@ -113,6 +114,8 @@ mno_start_2_bn|Ölü Çagıran'ın kalesinde, DOL GULDUR'da
 menu_choose_gender|^^^^^^^^^^Cinsiyetin?
 mno_start_male|Erkek
 mno_start_female|Kadın
+; menu_choose_skill|Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.
+; mno_proc|Proceed
 menu_start_as_one|^^^^^^^^^^Sen ne tür bir askersin?
 mno_start_default|{s23} Ol (Varsayılan)
 mno_start_up1|{s21} Ol (Kolay)
@@ -166,8 +169,9 @@ menu_camp_action|^^^^^^^^ Hangi Eşya?
 mno_camp_drink_water|Ent Suyundan İç !
 mno_camp_drink_orc_brew|Ork içkisinden herkes alsın ve  yanındakine uzatsın!
 mno_camp_drink_miruvor|Miruvor'dan herkes alsın ve  yanındakine uzatsın!
+; mno_camp_use_pipeweed|Share pipe-weed with your companions (rest for a short duration).
 mno_camp_use_athelas|Yara tedavisi için Athelas kullan.
-mno_camp_use_drums|Derinlerin Davullarını Çal.
+; mno_camp_use_drums|Beat the Drums of the Deep (wait for some hours).
 mno_camp_action_4|Geri.
 menu_assasins_attack_player_won|{s3} tarafından gönderilen {s2} suikastçilerini başarıyla alt ettin.
 menu_assasins_attack_player_retreat|Hayatını Kurtardın.
@@ -315,6 +319,8 @@ mno_erebor_gates|Büyük Kapıları ziyaret et.
 mno_erebor_gates_door|Büyük Kapılara git.
 mno_glittering_caves|Parıldayan Magaralara git.
 mno_glittering_caves_door|Parıldayan Magaralara git.
+; mno_mountain_travel|Travel on hidden mountain paths.
+; mno_mountain_travel_door|Travel on hidden mountain paths.
 mno_town_leave|Ayrıl...
 mno_town_leave_door|Bölgeden Ayrıl
 mno_town_find_NPCs_cont|Yap.
@@ -423,7 +429,7 @@ mno_cb_mordor8|Korsanlar
 mno_rescue_mission|Gecenin yardımıyla büyücünün sıgınagına sız.
 mno_next_rescue_scene_door|İleri marş!
 mno_pick_troops1|Görev için yoldaş seç, {reg0} seçili.
-menu_pick_troops|Gizli görev için kimleri yanınıza alırdınız? ^Sadece en çevik askerleriniz ve yol arkadaşlarınız size katılabilme yetenegine sahip olacak. ^En yüksek vahşi yetenek puanına sahip parti üyesi olarak, {reg65?{s1} advises:you decide} en fazla {reg11}  askeri yanınıza alabileceginizi düşünüyorsunuz. ^^Şu anda {reg0} yol arkadaşı seçtiniz.
+; menu_pick_troops|Whom would you take with you into the mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg13?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg12} companions.
 mno_go_forward|Yoldaş seçimini bitir ve devam et.
 ; menu_burial_mound|^You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|Diz çök ve saygılarını sun.
@@ -443,7 +449,7 @@ menu_death|Öldürüldün. Savaş devam etse bile artık onun bir parçası degi
 menu_animal_ambush|Yoldaşlarınla birlikte kendinizi grubunuzdan izole edilmiş olarak buluyorsunuz ve aniden...
 menu_animal_ambush_success|Tıpkı ekinlerin oraga boyun egdigi gibi, {s2}'de sana {reg0?egiliyor:egiliyorlar}! Çok geçmeden tüm saldırganlar yerde yatıyor, yaralı ya da ölü. {s3}
 ; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
-menu_isengard_flooding|^^^^^@Ölü düşmanlar ve zafer kazanmış müttefikler tarafından çevrili durumdasın, Ent'ler dahil; kükreyerek, gürleyerek ve trompet çalarak, taşların çatladıgı ve Orthanc Kulesi etrafında düştügü bir ses dalgası yaratıyorlar. Adeta uguldayan bir fırtına gibi, sütunları kırıyor, taşların lavinelerini şaftlara dogru savuruyor, büyük taş levhalarını yapraklar gibi havaya fırlatıyorlar... Daha önce hiç görmedigin bir manzara gibi.^^ Bregalad - ya da onu tanıdıgın gibi Quickbeam - yanından geçiyor ve sadece şunu söyleyip duruyor, '{playername}! Dikkat! Kuleden uzak dur -- yakında barajı kıracagız ve Isen'i bu vadiye getirecegiz, kısa bir süreligine. Burada durmak oldukça zor olacaktır, diye düşünüyorum!' Hızlıca, onun tavsiyesini dinleyip Orthanc'tan uzaklaşıyorsun.^^ Yaklaşık gece yarısında, Isengard sürünen kara akıntılar ve göletlerle dolmaya başlıyor. Büyük sütunlar halinde yükselen duman ve buharı görünce ürpermekten kendini alamıyorsun ve bu buharın Kulenin etrafında yükselip büyük bir sarmal oluşturdugunu görüyorsun, adeta alttan alevli, üstten ay ışıgı vuran bulanık bir zirve... Ent'lerin öfkesi yavaş, ancak kararlı bir güce sahip...
+; menu_isengard_flooding|^^^^^You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 mno_isengard_continue|Devam et
 menu_build_your_scene|Aşagıda verilen yuvalardan birini ve oyun düzenleme modunu kullanarak kendi savaş sahnenizi oluşturabilirsiniz (önce M&B Başlangıç ekranı Seçeneklerinde düzenleme modunu AÇIK duruma getirmeniz, ardından düzenleme moduna erişmek için bir sahnede Ctrl + E tuşlarına basmanız gerekir). Daha sonra oluşturdugunuz sahneleri (yani, TLD / SceneObj klasöründen sco dosyaları) TLD'nin geliştirici ekibine gönderebilirsiniz ve sahneniz iyiyse, sonraki sürümlerde rastgele savaş alanlarından biri olarak görünebilir!^^ Sahnenizin görünmesini istediginiz haritada hangi bölgeyi belirlemeye çalışın.^ Birkaç ipucu: deneyimli bir sahne yapımcısı degilseniz ve yapay zeka birliklerinin istemediginiz yerde yürümesini nasıl engelleyeceginizi ve diger yerlerde yapay zeka örgüsü oluşturmayı bilmiyorsanız derin sulardan, sarp daglardan ve diger geçilmez yerlerden kaçının.^ (Girişler # 0-1 saldırganlar içindir, # 4 savunanlar içindir, # 5-8'e dokunmayın)
 mno_back_3dot|Geri...
@@ -455,6 +461,12 @@ mno_back_3dot|Geri...
 ; menu_campaign_won|^^^Thank you for playing The Last Days of the Third Age!
 ; mno_credits_tld|TLD Credits
 ; mno_exit_game2|Quit to main menu
+; menu_companion_promoted_event|^^^A new hero   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!
+; menu_mountain_travel|As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.
+; menu_mountain_travel_arrived|After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}
+; mno_hunt_begin|Let the hunt begin!.
+; mno_pick_troops_hunt|Pick companions for the hunt, {reg15} selected
+; menu_hunt_beast_debrief|{s9}^^Your Casualties:{s8}
 mno_back|Geri dön
 mno_next|Sonraki...
 mno_previous|Önceki...

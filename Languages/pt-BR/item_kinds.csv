@@ -293,6 +293,7 @@ itm_orc_tribal_b|Pele Não Tratada
 itm_orc_tribal_c|Pele Não Tratada
 itm_evil_gauntlets_a|Luvas Escuras
 itm_evil_gauntlets_b|Manoplas Escuras
+; itm_orc_mittens|Orc Mittens
 itm_isen_orc_light_a|Arreios Leves de Orc
 itm_isen_orc_light_b|Arreios Leves de Orc
 itm_isen_orc_pad_a|Armadura Leve Segmentada de Orc de Isengard
@@ -323,7 +324,7 @@ itm_orc_bastard_scimitar|Grande Cimitarra de Orc
 ; itm_orc_cleaver_a|Orc Cleaver
 itm_orc_scimitar_b|Cimitarra de Orc
 itm_orc_sabre_b|Sabre de Orc
-; itm_orc_mangler|Orc Mangler
+; itm_orc_mangler|Orc Spiked Staff
 itm_isengard_sword|Espada de Isengard
 itm_isengard_axe|Machado de Isengard
 itm_isengard_hammer|Martelo de Isengard
@@ -446,14 +447,17 @@ itm_dunland_chieftain|Armadura do Chefe das Terras Pardas
 itm_dun_helm_a|Touca de Lobo das Terras Pardas
 itm_dun_helm_b|Gorro de Pele das Terras Pardas
 itm_dun_helm_c|Elmo Alto das Terras Pardas
+; itm_dun_helm_d|Dunnish Skullcap
 itm_dun_shield_a|Escudo Redondo das Terras Pardas
 itm_dun_shield_b|Escudo Oval das Terras Pardas
 itm_dun_berserker|Espada de Chefe das Terras Pardas
 itm_dunnish_antler_axe|Machado de Veado das Terras Pardas
 itm_dunnish_war_axe|Machado de Guerra das Terras Pardas
-itm_dunnish_axe|Machado das Terras Pardas
+; itm_dunnish_axe|Dunnish Light Axe
 itm_dunland_spear|Lança das Terras Pardas
 itm_dunnish_pike|Pique das Terras Pardas
+; itm_dunnish_long_axe|Dunnish Long Axe
+; itm_dun_shortsword|Dunnish Short Sword
 itm_rohan_cav_sword|Espada de Cavalaria de Rohan
 itm_rohan_inf_sword|Espada de Rohan
 itm_rohan_spear|Lança de Rohan
@@ -490,6 +494,7 @@ itm_mirkwood_pad|Sobretudo Acolchoado da Floresta Verde
 itm_mirkwood_mail|Malha da Floresta Verde
 itm_mirkwood_scale|Escamas Leves da Floresta Verde
 itm_mirkwood_heavy_scale|Escamas de Folha da Floresta Verde
+; itm_mirkwood_axe_2h|Greenwood Great axe
 itm_mirkwood_sword|Espada de Elfo Silvestre
 itm_mirkwood_great_spear|Lança Grande da Floresta Verde
 itm_mirkwood_war_spear|Lança de Guerra da Floresta Verde
@@ -651,10 +656,9 @@ itm_umb_helm_d|Elmo de Cavaleiro Corsário
 itm_umb_helm_reward|Karma Numenoreano Antigo
 itm_corsair_trident|Tridente da Fúria do Mar
 itm_corsair_boots|Botas de Corsário
-itm_umb_shield_a|Escudo de Corsário
+; itm_umb_shield_a|Corsair Shell Shield
 itm_umb_shield_b|Broquel de Corsário
-itm_umb_shield_c|Broquel de Corsário
-itm_umb_shield_d|Broquel de Corsário
+; itm_umb_shield_c|Corsair Round Shield
 itm_umbar_spear|Lança Curta Umbar
 itm_umbar_cutlass|Cutelo de Umbar
 itm_kraken|Cutello de Kraken
@@ -735,7 +739,7 @@ itm_rohan_lance_banner_horse|Lança com Estandarte do Cavalo de Rohan
 itm_fur_gloves_reward|Luvas de Caçador
 itm_ent_water|Estranha Tigela de Água
 itm_map|Mapas da Terra Média
-itm_athelas_reward|Folhas secas do rei.
+; itm_athelas_reward|Healing Herbs
 itm_phial_reward|Luz de Galadriel
 itm_scroll_reward|Na Queda de Gondolin
 itm_hammer_reward|Martelo de Ferreiro
@@ -788,6 +792,7 @@ itm_rohan_armor_th|Armadura Real de Rohan
 itm_wilderness_cowl|Capuz de Caçador
 itm_prisoner_coll_chain|Correntes de Prisioneiro
 itm_witchking_helmet|Máscara do Feiticeiro
+; itm_bat_reward|Bat of Gundabad
 itm_feet_chains|Correntes de Pés
 itm_feet_chains_dwarf|Correntes de Pés
 itm_spider|Aranha
@@ -849,3 +854,18 @@ itm_work_basket_2|Cesta
 itm_spider_mount|Aranha
 ; itm_marker_night_troop|Trait: Night Troop
 ; itm_marker_berserker|Trait: Berserker
+; itm_marker_hp_shield|Trait: Unyielding
+; itm_marker_scares_wargs|Trait: Warg Fiend
+; itm_marker_scares_horses|Trait: Horse Fiend
+; itm_marker_banner_troop|Trait: Banner
+; itm_pipeweed_reward|Pipe-weed
+; itm_spider_strong|Huge Spider
+; itm_bear_strong|Great Bear
+itm_wolf_strong|Lobo Grande
+; itm_boar|Boar
+; itm_boar_strong|Great Boar
+; itm_beast|Evil Beast
+; itm_beast_strong|Huge Evil Beast
+; itm_kine|Wild Bull
+; itm_kine_strong|Great Bull
+; itm_torch|Torch

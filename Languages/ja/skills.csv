@@ -1,9 +1,9 @@
 skl_trade|取引
 skl_trade_desc|鍛冶屋と補給係が より協力的になり、 より良い装備を融通して くれるようになります。 (パーティスキル)
 skl_leadership|統率力
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you (player only). (Cumulative skill)
 skl_prisoner_management|囚人管理
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners. (Party skill)
 skl_persuasion|ワイルドクラフト
 skl_persuasion_desc|自然を操り、自然の中を生き延びる 能力です。木々の生い茂る地形に おいて、パーティの移動速度と、 敵から姿を隠す能力に影響を与えます。 (パーティスキル)
 skl_engineer|-----
@@ -14,20 +14,20 @@ skl_surgery|手術
 skl_surgery_desc|1レベル毎に4%%の確率で、 戦闘で致死ダメージを受けたメンバーが “死亡”ではなく“負傷”状態で パーティに残ります。 (パーティスキル)
 skl_wound_treatment|治療
 skl_wound_treatment_desc|パーティの回復速度が 1レベル毎に20%%速くなります。 (パーティスキル)
-skl_inventory_management|荷物管理
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+; skl_inventory_management|Party Management
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption by 5%% and upkeep for troops in your party by 3%% per level. (Leader skill)
 skl_spotting|観測術
 skl_spotting_desc|1レベル毎に、 マップ画面上での視界が 10%%広くなります。 (パーティスキル)
 skl_pathfinding|経路探索
 skl_pathfinding_desc|マップ画面上でのパーティの速度が 1レベル毎に3%%速くなります。 (パーティスキル)
 skl_tactics|戦略
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Decreases battle join range for enemy parties and increases battle join range for friendly parties by 3%% per level. (Leader skill)
 skl_tracking|追跡術
 skl_tracking_desc|レベルが高い程マップ画面上での 情報量が増えます。 (パーティスキル)
 skl_trainer|訓練
-skl_trainer_desc|このスキルを持っているメンバーが パーティにいると、より低いレベルの 他のメンバーの経験値が 毎日いくらかの割合で増えます。 得られる経験値は次の通り: レベル0から {0,4,10,16,23,30,38,46,55,65,80} (個人スキル)
+; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Cumulative skill)
 skl_looting|略奪
-skl_looting_desc|戦闘後に得られる戦利品の 質と量が向上します。 (パーティスキル)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Cumulative skill)
 skl_horse_archery|馬上弓術
 skl_horse_archery_desc|馬上からの弓や投擲の ダメージと命中精度へのペナルティが 減少します。 (個人スキル)
 skl_riding|乗馬

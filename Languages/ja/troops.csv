@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|ウンバール ベテラン剣士
 trp_i4_corsair_veteran_swordsman_pl|ウンバール ベテラン剣士
 trp_i5_corsair_master_swordsman|海賊 精鋭剣士
 trp_i5_corsair_master_swordsman_pl|海賊 精鋭剣士
-trp_a4_corsair_assassin|海賊 暗殺兵
-trp_a4_corsair_assassin_pl|海賊 暗殺兵
+; trp_i6_corsair_guard|Captain's Guard of Umbar
+; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
 trp_a5_corsair_master_assassin|海賊 暗殺兵
 trp_a5_corsair_master_assassin_pl|海賊 暗殺兵
 trp_i4_corsair_veteran_spearman|ウンバール ベテラン槍兵
@@ -748,7 +748,6 @@ trp_mountain_goblin2|山ゴブリン
 trp_mountain_goblin2_pl|山ゴブリン
 trp_tribal_orc2|部族オーク
 trp_tribal_orc2_pl|部族オーク
-trp_i5_gunda_orc_champion2|グンダバド  オークチャンピオン
 trp_i5_gunda_orc_champion2_pl|グンダバド  オークチャンピオン
 trp_i2_mordor_num_renegade|黒きヌーメノール 背教者
 trp_i2_mordor_num_renegade_pl|黒きヌーメノール 背教者
@@ -1501,17 +1500,17 @@ trp_black_numenorean_sorcerer|黒きヌーメノール人の妖術師
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|闇の森の狼騎兵
 trp_wolf_rider_of_mirkwood_pl|闇の森の狼騎兵
-trp_bear_strong|熊
-trp_bear_strong_pl|熊
+trp_bear_strong_old|熊
+trp_bear_strong_old_pl|熊
 trp_gate_aggravator|門の防御力
 trp_orc_pretender|なまいきオーク
 trp_human_prisoner|捕虜の人間
-trp_spider|闇の森の大蜘蛛
-trp_spider_pl|闇の森の大蜘蛛
-trp_bear|熊
-trp_bear_pl|熊
-trp_wolf|狼
-trp_wolf_pl|狼
+trp_spider_old|闇の森の大蜘蛛
+trp_spider_old_pl|闇の森の大蜘蛛
+trp_bear_old|熊
+trp_bear_old_pl|熊
+trp_wolf_old|狼
+trp_wolf_old_pl|狼
 trp_dorwinion_sack|ドルウィニオンの袋
 trp_ring_hunter_captain|指輪狩り一味隊長
 trp_ring_hunter_lt|指輪狩り一味隊長
@@ -1541,6 +1540,10 @@ trp_start_quest_beorning_pl|ビヨルン カーロック狂戦士
 ; trp_black_shield_guard_pl|Amath Dollen's Guards
 ; trp_dorwinion_spirit_leader|Spirit
 ; trp_dorwinion_spirit|Lesser Spirit
+; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
+; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
+; trp_i6_dun_retainer|Dunnish Retainer
+; trp_i6_dun_retainer_pl|Dunnish Retainers
 trp_i6_beorning_bear_warrior|熊戦士
 trp_i6_beorning_bear_warrior_pl|熊戦士
 trp_a5_dun_night_wolf|褐色人 ナイトウルフ
@@ -1567,8 +1570,8 @@ trp_npc18|テュルムバシュ
 trp_npc19|ヘイズレク
 trp_npc20|ジグールフェル
 ; trp_npc21|Berta
-trp_werewolf|巨狼
-trp_werewolf_pl|巨狼
+trp_werewolf_old|巨狼
+trp_werewolf_old_pl|巨狼
 trp_moria_troll|岩穴トロル
 trp_moria_troll_pl|岩穴トロル
 trp_moria_vet_troll|調教された岩穴トロル
@@ -1633,3 +1636,43 @@ trp_merry_notmet|ホビット
 trp_pippin|ピピン
 trp_merry|メリー
 trp_grima|蛇の舌グリマ
+trp_future_animal_0|狼
+trp_future_animal_0_pl|狼
+trp_spider|闇の森の大蜘蛛
+trp_spider_pl|闇の森の大蜘蛛
+; trp_spider_strong|Great Spider
+; trp_spider_strong_pl|Great Spiders
+trp_bear|熊
+trp_bear_pl|熊
+; trp_bear_strong|Great Bear
+; trp_bear_strong_pl|Great Bears
+trp_wolf|狼
+trp_wolf_pl|狼
+; trp_wolf_strong|Huge Wolf
+; trp_wolf_strong_pl|Huge Wolves
+trp_werewolf|巨狼
+trp_werewolf_pl|巨狼
+; trp_boar|Boar
+; trp_boar_pl|Boars
+; trp_boar_strong|Great Boar
+; trp_boar_strong_pl|Great Boars
+; trp_evil_beast|Evil Beast
+; trp_evil_beast_pl|Evil Beast
+; trp_evil_beast_strong|Huge Evil Beast
+; trp_evil_beast_strong_pl|Huge Evil Beasts
+; trp_bull|Wild Bull
+; trp_bull_pl|Wild Kine
+; trp_bull_strong|Great Bull
+; trp_bull_strong_pl|Great Kine
+; trp_stag|Stag
+; trp_stag_pl|Stags
+trp_future_animal_4|狼
+trp_future_animal_4_pl|狼
+trp_future_animal_5|狼
+trp_future_animal_5_pl|狼
+; trp_guthlaf|Guthláf
+trp_damrod|ダムロド
+trp_duilin|ドゥイリン
+trp_derufin|デルフィン
+; trp_rumil|Rúmil
+; trp_lugdush|Lugdush

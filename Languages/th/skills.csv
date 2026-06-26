@@ -1,9 +1,9 @@
 skl_trade|ทักษะในการต่อรอง
 skl_trade_desc|ทำให้ช่างเหล็กและผู้เชี่ยวชาญด้านอุปทานร่วมมือกันมากขึ้นและนำเสนออุปกรณ์ที่ดีกว่า (สกิลปาร์ตี้)
 skl_leadership|ความเป็นผู้นำ
-skl_leadership_desc|ทุกแต้มที่เพิ่มขึ้นจะช่วยเพิ่มจำนวนทหารสูงสุดที่เจ้าสามารถบัญชาการได้ 5 นาย (3 นายสำหรับสหายร่วมรบ) นอกจากนี้ยังช่วยเพิ่ม ขวัญกำลังใจและความเป็นปึกแผ่นของกองทัพในสนามรบ อีกทั้งยังทำให้ อาสาสมัครที่แข็งแกร่งและมากขึ้นยินดีติดตามเจ้า (สกิลส่วนตัว)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you (player only). (Cumulative skill)
 skl_prisoner_management|การจัดการนักโทษ
-skl_prisoner_management_desc|ทุกระดับของสกิลนี้จะเพิ่มจำนวนเชลยสูงสุดได้อีก %d. และช่วยเพิ่มโอกาสในการ จับกุมและควบคุมเชลยให้อยู่ในกองของเจ้า (สกิลกองทัพ)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners. (Party skill)
 skl_persuasion|พรานป่า
 skl_persuasion_desc|ความสามารถในการเอาตัวรอดและใช้ประโยนช์จากป่า ความสามารถนี้จะส่งผลต่อกองทัพในการเคลื่อนที่และการซ่อนตัวในป่า (สกิลที่ส่งผลทั้งกองทัพ)
 skl_engineer|-----
@@ -14,20 +14,20 @@ skl_surgery|การผ่าตัด
 skl_surgery_desc|ทุกเวลเวลของสกิลจะเพิ่มโอกาส 4%% ที่จะทำให้ทหารของเราที่จะตายมีโอกาสที่จะบาดเจ็บแทนตาย (สกิลที่ส่งผลทั้งกองทัพ)
 skl_wound_treatment|การดูแลรักษาบาดแผล
 skl_wound_treatment_desc|อัตราการฟื้นฟูของกองทัพเพิ่มขึ้น 20%% ต่อเลเวลของสกิล (สกิลที่ส่งผลทั้งกองทัพ)
-skl_inventory_management|การจัดการช่องเก็บของ
-skl_inventory_management_desc|เพิ่มความจุช่องเก็บของ +6 ต่อระดับสกิล และ ลดการบริโภคเสบียงอาหาร (สกิลผู้นำ)
+; skl_inventory_management|Party Management
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption by 5%% and upkeep for troops in your party by 3%% per level. (Leader skill)
 skl_spotting|การสังเกต
 skl_spotting_desc|เพิ่มระยะการมองเห็นของกองทัพ 10%% ต่อเลเวลสกิล (สกิลที่ส่งผลทั้งกองทัพ)
 skl_pathfinding|การสำรวจเส้นทาง
 skl_pathfinding_desc|เพิ่มความเร็วในการเดินทัพ 3%% ต่อเลเวลสกิล (สกิลสำหรับผู้นำกองทัพ)
 skl_tactics|การวางกลยุทธ
-skl_tactics_desc|เพิ่มความได้เปรียบในสนามรบ และ เพิ่มระยะที่กองทัพศัตรูสามารถเข้าร่วมการต่อสู้ได้ ขณะเดียวกันลดระยะที่กองทัพฝ่ายพันธมิตรสามารถเข้าร่วมได้ลง 3%% ต่อระดับสกิล (สกิลผู้นำ)
+; skl_tactics_desc|Improves battle advantage. Decreases battle join range for enemy parties and increases battle join range for friendly parties by 3%% per level. (Leader skill)
 skl_tracking|การสะกดรอย
 skl_tracking_desc|การสะกดรอยจะละเอียด มีข้อมูลมากยิ่งขึ้น (สกิลที่ส่งผลทั้งกองทัพ)
 skl_trainer|การฝึกทหาร
-skl_trainer_desc|ทุกๆวัน ตัวละครที่มีสกิลนี้จะเพิ่มค่าประสบการณ์ให้ทหารในกองทัพที่มีเลเวลต่ำกว่า\nค่าประสบการณ์จะเพิ่มขึ้นตามเลเวลสกิลดังนี้:{0,4,10,16,23,30,38,46,55,65,80} (สกิลส่วนบุคคล)
+; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Cumulative skill)
 skl_looting|การดรอปของ
-skl_looting_desc|เพิ่มจำนวนและคุณภาพของที่ได้รับหลังการต่อสู้ (สกิลปาร์ตี้)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Cumulative skill)
 skl_horse_archery|การขี่ม้ายิงธนู
 skl_horse_archery_desc|ลดผลลบของความเสียหาย และความแม่นยำในการยิงธนู และ การขว้าง เมื่อทำการขี่ม้า/สัตว์ (ความสามารถส่วนบุคคล)
 skl_riding|การขี่ม้า/สัตว์อื่นๆ

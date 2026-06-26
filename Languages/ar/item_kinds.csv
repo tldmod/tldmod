@@ -293,6 +293,7 @@ itm_orc_tribal_b|جلد غير مدبوغ
 itm_orc_tribal_c|جلد غير مدبوغ
 itm_evil_gauntlets_a|قفازات
 itm_evil_gauntlets_b|قفازات
+; itm_orc_mittens|Orc Mittens
 itm_isen_orc_light_a|درع عفريت آيزنغارد
 itm_isen_orc_light_b|درع عفريت آيزنغارد
 itm_isen_orc_pad_a|درع عفريت آيزنغارد
@@ -323,7 +324,7 @@ itm_uruk_falchion_a|سيف أوروك عريض
 ; itm_orc_cleaver_a|Orc Cleaver
 itm_orc_scimitar_b|سيف عفريت منحني
 itm_orc_sabre_b|سيف عفريت
-; itm_orc_mangler|Orc Mangler
+; itm_orc_mangler|Orc Spiked Staff
 itm_isengard_sword|سيف آيزنغارد
 itm_isengard_axe|فأس آيزنغارد
 itm_isengard_hammer|مطرقة آيزنغارد
@@ -446,14 +447,17 @@ itm_dunland_wolfboots|أحذية دونلاند الذئبية
 itm_dun_helm_a|قبعة دونيش ذئبية
 itm_dun_helm_b|قبعة دونيش ذات قرون
 itm_dun_helm_c|خوذة دونيش طويلة
+; itm_dun_helm_d|Dunnish Skullcap
 itm_dun_shield_a|درع دونيش
 itm_dun_shield_b|درع دونيش
 itm_dun_berserker|سيف زعيم دونلاند
 itm_dunnish_antler_axe|فأس دونيش ذو قرون
 itm_dunnish_war_axe|فأس حرب دونيش
-itm_dunnish_axe|فأس دونيش
+; itm_dunnish_axe|Dunnish Light Axe
 itm_dunland_spear|رمح دونيش
 itm_dunnish_pike|مطرد دونيش
+; itm_dunnish_long_axe|Dunnish Long Axe
+; itm_dun_shortsword|Dunnish Short Sword
 itm_rohan_cav_sword|سيف روهان للركوب
 itm_rohan_inf_sword|سيف روهان
 itm_rohan_spear|رمح روهان
@@ -490,6 +494,7 @@ itm_rohirrim_war_greaves|ساقان روهيريم الحربيتان
 ; itm_mirkwood_mail|Greenwood Mail
 ; itm_mirkwood_scale|Greenwood Light Scale
 ; itm_mirkwood_heavy_scale|Greenwood Leafscale
+; itm_mirkwood_axe_2h|Greenwood Great axe
 itm_mirkwood_sword|سيف ميركوود
 itm_mirkwood_great_spear|رمح ميركوود العظيم
 itm_mirkwood_war_spear|رمح ميركوود الحربي
@@ -651,10 +656,9 @@ itm_umb_helm_d|خوذة مغير القرصان
 ; itm_umb_helm_reward|Ancient Numenorean Karma
 itm_corsair_trident|رمح ثالوث غضب البحر
 itm_corsair_boots|أحذية قرصان
-itm_umb_shield_a|درع قرصان
+; itm_umb_shield_a|Corsair Shell Shield
 itm_umb_shield_b|ترس قرصان
-itm_umb_shield_c|ترس قرصان
-itm_umb_shield_d|ترس قرصان
+; itm_umb_shield_c|Corsair Round Shield
 itm_umbar_spear|رمح أمبار القصير
 itm_umbar_cutlass|سيف أمبار القصير العريض
 itm_kraken|سيف الكراكن العريض
@@ -735,7 +739,7 @@ itm_rohan_lance_banner_horse|رمح روهان مع راية الحصان
 ; itm_fur_gloves_reward|Hunter Gloves
 itm_ent_water|وعاء غريب من الماء
 itm_map|خرائط الأرض الوسطى
-itm_athelas_reward|نبات أثيلاس
+; itm_athelas_reward|Healing Herbs
 itm_phial_reward|نور غالادرييل
 itm_scroll_reward|في سقوط غوندولين
 itm_hammer_reward|مطرقة الحداد
@@ -788,6 +792,7 @@ itm_rohan_armor_th|درع روهان الملكي
 ; itm_wilderness_cowl|Hunter Cowl
 itm_prisoner_coll_chain|سلاسل الأسير
 itm_witchking_helmet|خوذة خبيثة
+; itm_bat_reward|Bat of Gundabad
 itm_feet_chains|سلاسل للأقدام
 itm_feet_chains_dwarf|سلاسل للأقدام
 itm_spider|عنكبوت
@@ -849,3 +854,18 @@ itm_black_tunic_wb|سترة سوداء
 itm_spider_mount|عنكبوت
 ; itm_marker_night_troop|Trait: Night Troop
 ; itm_marker_berserker|Trait: Berserker
+; itm_marker_hp_shield|Trait: Unyielding
+; itm_marker_scares_wargs|Trait: Warg Fiend
+; itm_marker_scares_horses|Trait: Horse Fiend
+; itm_marker_banner_troop|Trait: Banner
+; itm_pipeweed_reward|Pipe-weed
+; itm_spider_strong|Huge Spider
+; itm_bear_strong|Great Bear
+itm_wolf_strong|ذئب عظيم
+; itm_boar|Boar
+; itm_boar_strong|Great Boar
+; itm_beast|Evil Beast
+; itm_beast_strong|Huge Evil Beast
+; itm_kine|Wild Bull
+; itm_kine_strong|Great Bull
+; itm_torch|Torch

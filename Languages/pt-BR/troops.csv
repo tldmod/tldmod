@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|Espadachim Veterano de Umbar
 trp_i4_corsair_veteran_swordsman_pl|Espadachins Veteranos de Umbar
 trp_i5_corsair_master_swordsman|Mestre da Espada Corsário
 trp_i5_corsair_master_swordsman_pl|Mestres da Espada Corsários
-trp_a4_corsair_assassin|Assassino Corsário
-trp_a4_corsair_assassin_pl|Assassinos Corsários
+; trp_i6_corsair_guard|Captain's Guard of Umbar
+; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
 trp_a5_corsair_master_assassin|Assassino Corsário
 trp_a5_corsair_master_assassin_pl|Assassinos Corsários
 trp_i4_corsair_veteran_spearman|Lanceiro Veterano de Umbar
@@ -748,7 +748,6 @@ trp_mountain_goblin2|Goblin das Montanhas
 trp_mountain_goblin2_pl|Goblins das Montanhas
 trp_tribal_orc2|Orc Tribal
 trp_tribal_orc2_pl|Orcs Tribais
-trp_i5_gunda_orc_champion2|Orc Campeão de Gundabad
 trp_i5_gunda_orc_champion2_pl|Orcs Campeões de Gundabad
 trp_i2_mordor_num_renegade|Numenoriano Negro Renegado
 trp_i2_mordor_num_renegade_pl|Numenorianos Negros Renegados
@@ -1501,17 +1500,17 @@ trp_evil_priest|Padre Maligno
 trp_evil_priest_pl|Padres Maligno
 trp_wolf_rider_of_mirkwood|Montador de Lobo da Floresta das Trevas
 trp_wolf_rider_of_mirkwood_pl|Montadores de Lobo da Floresta das Trevas
-trp_bear_strong|Urso
-trp_bear_strong_pl|Ursos
+trp_bear_strong_old|Urso
+trp_bear_strong_old_pl|Ursos
 trp_gate_aggravator|Defesa do Portão
 trp_orc_pretender|Orc Farsante
 trp_human_prisoner|Prisioneiro Humano
-trp_spider|Aranha da Floresta das Trevas
-trp_spider_pl|Aranhas da Floresta das Trevas
-trp_bear|Urso
-trp_bear_pl|Ursos
-trp_wolf|Lobo
-trp_wolf_pl|Lobos
+trp_spider_old|Aranha da Floresta das Trevas
+trp_spider_old_pl|Aranhas da Floresta das Trevas
+trp_bear_old|Urso
+trp_bear_old_pl|Ursos
+trp_wolf_old|Lobo
+trp_wolf_old_pl|Lobos
 trp_dorwinion_sack|Saco de Dorwinion
 trp_ring_hunter_captain|Capitão Caçador de Anél
 trp_ring_hunter_lt|Capitães Caçadores de Anéis
@@ -1541,6 +1540,10 @@ trp_black_shield_guard|Guarda de Amath Dollen
 trp_black_shield_guard_pl|Guardas de Amath Dollen
 trp_dorwinion_spirit_leader|Espírito
 trp_dorwinion_spirit|Espírito Menor
+; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
+; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
+; trp_i6_dun_retainer|Dunnish Retainer
+; trp_i6_dun_retainer_pl|Dunnish Retainers
 trp_i6_beorning_bear_warrior|Urso Guerreiro
 trp_i6_beorning_bear_warrior_pl|Ursos Guerreiros
 trp_a5_dun_night_wolf|Lobo da Noite Terra-pardense
@@ -1567,8 +1570,8 @@ trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel
 trp_npc21|Berta
-trp_werewolf|Lobisomem
-trp_werewolf_pl|Lobisomens
+trp_werewolf_old|Lobisomem
+trp_werewolf_old_pl|Lobisomens
 trp_moria_troll|Troll da Caverna
 trp_moria_troll_pl|Trolls da Caverna
 trp_moria_vet_troll|Troll Treinado da Caverna
@@ -1633,3 +1636,43 @@ trp_merry_notmet|Pequenino
 trp_pippin|Pippin
 trp_merry|Merry
 trp_grima|Grima Língua de Cobra
+trp_future_animal_0|Lobo
+trp_future_animal_0_pl|Lobos
+trp_spider|Aranha da Floresta das Trevas
+trp_spider_pl|Aranhas da Floresta das Trevas
+; trp_spider_strong|Great Spider
+; trp_spider_strong_pl|Great Spiders
+trp_bear|Urso
+trp_bear_pl|Ursos
+; trp_bear_strong|Great Bear
+; trp_bear_strong_pl|Great Bears
+trp_wolf|Lobo
+trp_wolf_pl|Lobos
+; trp_wolf_strong|Huge Wolf
+; trp_wolf_strong_pl|Huge Wolves
+trp_werewolf|Lobisomem
+trp_werewolf_pl|Lobisomens
+; trp_boar|Boar
+; trp_boar_pl|Boars
+; trp_boar_strong|Great Boar
+; trp_boar_strong_pl|Great Boars
+; trp_evil_beast|Evil Beast
+; trp_evil_beast_pl|Evil Beast
+; trp_evil_beast_strong|Huge Evil Beast
+; trp_evil_beast_strong_pl|Huge Evil Beasts
+; trp_bull|Wild Bull
+; trp_bull_pl|Wild Kine
+; trp_bull_strong|Great Bull
+; trp_bull_strong_pl|Great Kine
+; trp_stag|Stag
+; trp_stag_pl|Stags
+trp_future_animal_4|Lobo
+trp_future_animal_4_pl|Lobos
+trp_future_animal_5|Lobo
+trp_future_animal_5_pl|Lobos
+; trp_guthlaf|Guthláf
+trp_damrod|Damrod
+trp_duilin|Duilin
+trp_derufin|Derufin
+; trp_rumil|Rúmil
+; trp_lugdush|Lugdush

@@ -1,9 +1,9 @@
 skl_trade|Торговець
 skl_trade_desc|Торговці стають більш поступливими і пропонують більш краще спорядження. (Вміння загону)
 skl_leadership|Лідерство
-skl_leadership_desc|Кожне очко збільшує максимальну кількість військ, якими ви можете керувати, на 5 (3 для компаньйонів), підвищує моральний дух вашої групи та злагодженість у бою. Змушує більше і сильніших добровольців йти за вами. (Особиста майстерність)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you (player only). (Cumulative skill)
 skl_prisoner_management|Утримання полонених
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners. (Party skill)
 skl_persuasion|Виживання
 skl_persuasion_desc|Здатність вижити в дикій природі та підкорити її своїй волі. Ця навичка впливає на здатність загону сховатися від ворога та швидкість загону у лісистій місцевості. (групове уміння)
 skl_engineer|-----
@@ -14,20 +14,20 @@ skl_surgery|Хірургія
 skl_surgery_desc|З кожним новим рівнем цієї навички кожен член загону отримує 4 %% шанс вижити при отриманні смертельного поранення (вміння групи).
 skl_wound_treatment|Перев'язка ран
 skl_wound_treatment_desc|З кожним новим рівнем цієї навички швидкість вилікування загону зростає на 20 %% (вміння групи).
-skl_inventory_management|Упаковка
-skl_inventory_management_desc|Збільшує місткість інвентарю на +6 за кожен рівень вміння. Зменшує споживання їжі. (Уміння лідера)
+; skl_inventory_management|Party Management
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption by 5%% and upkeep for troops in your party by 3%% per level. (Leader skill)
 skl_spotting|Пильність
 skl_spotting_desc|З кожним новим рівнем цієї навички поле зору загону збільшується на 10%% (вміння загону).
 skl_pathfinding|Пошук шляху
 skl_pathfinding_desc|З кожним новим рівнем цієї навички швидкість пересування загону по карті збільшується на 3%% (вміння групи).
 skl_tactics|Тактика
-skl_tactics_desc|Покращує перевагу у бою. Збільшує відстань підкріплення для ворожих груп і зменшує відстань підкріплення для дружніх груп на 3%% за рівень. (Лідерська майстерність)
+; skl_tactics_desc|Improves battle advantage. Decreases battle join range for enemy parties and increases battle join range for friendly parties by 3%% per level. (Leader skill)
 skl_tracking|Стеження
 skl_tracking_desc|Стеження стає більш інформативним (вміння групи).
 skl_trainer|Тренер
-skl_trainer_desc|Раз на день кожен герой віддає трохи досвіду тим членам загону, чиї навички гірше його власних. Кількість одержуваного досвіду: {0,4,10,16,23,30,38,46,55,65,80} (персональне вміння).
+; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Cumulative skill)
 skl_looting|Мародерство
-skl_looting_desc|Збільшує кількість та якість здобичі після битв. (Вміння загону)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Cumulative skill)
 skl_horse_archery|Верхова стрільба
 skl_horse_archery_desc|Знижує штрафи на точність та шкоду при стрільбі верхи, поширюється на будь-яку далекобійну зброю, яку можна використовувати верхом (приватне вміння).
 skl_riding|Верхова їзда

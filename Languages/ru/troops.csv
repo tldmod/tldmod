@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|Опытный мечник Умбара
 trp_i4_corsair_veteran_swordsman_pl|Опытные мечники Умбара
 trp_i5_corsair_master_swordsman|Искусный корсар-мечник
 trp_i5_corsair_master_swordsman_pl|Искусные корсары-мечники
-trp_a4_corsair_assassin|Корсар-убийца
-trp_a4_corsair_assassin_pl|Корсары-убийцы
+; trp_i6_corsair_guard|Captain's Guard of Umbar
+; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
 trp_a5_corsair_master_assassin|Корсар-убийца
 trp_a5_corsair_master_assassin_pl|Корсары-убийцы
 trp_i4_corsair_veteran_spearman|Умбарский копейщик-ветеран
@@ -748,7 +748,6 @@ trp_mountain_goblin2|Горный гоблин
 trp_mountain_goblin2_pl|Горные гоблины
 trp_tribal_orc2|Дикий орк
 trp_tribal_orc2_pl|Дикие орки
-trp_i5_gunda_orc_champion2|Гундабадский орк-чемпион
 trp_i5_gunda_orc_champion2_pl|Гундабадские орки-чемпионы
 trp_i2_mordor_num_renegade|Чёрный нуменорец-ренегат
 trp_i2_mordor_num_renegade_pl|Чёрные нуменорцы-ренегаты
@@ -1501,17 +1500,17 @@ trp_evil_priest|Злой жрец
 trp_evil_priest_pl|Злые жрецы
 trp_wolf_rider_of_mirkwood|Волчий всадник Темнолесья
 trp_wolf_rider_of_mirkwood_pl|Волчьи всадники Темнолесья
-trp_bear_strong|Медведь
-trp_bear_strong_pl|Медведи
+trp_bear_strong_old|Медведь
+trp_bear_strong_old_pl|Медведи
 trp_gate_aggravator|Привратник
 trp_orc_pretender|Претендент на лидерство
 trp_human_prisoner|Пленный человек
-trp_spider|Паук из Темнолесья
-trp_spider_pl|Пауки из Темнолесья
-trp_bear|Медведь
-trp_bear_pl|Медведи
-trp_wolf|Волк
-trp_wolf_pl|Волки
+trp_spider_old|Паук из Темнолесья
+trp_spider_old_pl|Пауки из Темнолесья
+trp_bear_old|Медведь
+trp_bear_old_pl|Медведи
+trp_wolf_old|Волк
+trp_wolf_old_pl|Волки
 trp_dorwinion_sack|дорвинионский мешок
 trp_ring_hunter_captain|Командир Охотников за Кольцом
 trp_ring_hunter_lt|Командир Охотников за Кольцом
@@ -1541,6 +1540,10 @@ trp_black_shield_guard|Охранник Амат Доллен
 trp_black_shield_guard_pl|Охранники Амат Доллен
 trp_dorwinion_spirit_leader|Дух
 trp_dorwinion_spirit|Меньший дух
+; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
+; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
+; trp_i6_dun_retainer|Dunnish Retainer
+; trp_i6_dun_retainer_pl|Dunnish Retainers
 trp_i6_beorning_bear_warrior|Воин-Медведь
 trp_i6_beorning_bear_warrior_pl|Воины-Медведи
 trp_a5_dun_night_wolf|Дунландский ночной волк
@@ -1567,8 +1570,8 @@ trp_npc18|Турмбату
 trp_npc19|Хейдрек
 trp_npc20|Зигурфель
 trp_npc21|Берта
-trp_werewolf|Оборотень
-trp_werewolf_pl|Оборотни
+trp_werewolf_old|Оборотень
+trp_werewolf_old_pl|Оборотни
 trp_moria_troll|Пещерный Тролль
 trp_moria_troll_pl|Пещерные Тролли
 trp_moria_vet_troll|Выдрессированный Пещерный Тролль
@@ -1633,3 +1636,43 @@ trp_merry_notmet|полурослик
 trp_pippin|Пиппин
 trp_merry|Мерри
 trp_grima|Грима Змеиный Язык
+trp_future_animal_0|Волк
+trp_future_animal_0_pl|Волки
+trp_spider|Паук из Темнолесья
+trp_spider_pl|Пауки из Темнолесья
+; trp_spider_strong|Great Spider
+; trp_spider_strong_pl|Great Spiders
+trp_bear|Медведь
+trp_bear_pl|Медведи
+; trp_bear_strong|Great Bear
+; trp_bear_strong_pl|Great Bears
+trp_wolf|Волк
+trp_wolf_pl|Волки
+; trp_wolf_strong|Huge Wolf
+; trp_wolf_strong_pl|Huge Wolves
+trp_werewolf|Оборотень
+trp_werewolf_pl|Оборотни
+; trp_boar|Boar
+; trp_boar_pl|Boars
+; trp_boar_strong|Great Boar
+; trp_boar_strong_pl|Great Boars
+; trp_evil_beast|Evil Beast
+; trp_evil_beast_pl|Evil Beast
+; trp_evil_beast_strong|Huge Evil Beast
+; trp_evil_beast_strong_pl|Huge Evil Beasts
+; trp_bull|Wild Bull
+; trp_bull_pl|Wild Kine
+; trp_bull_strong|Great Bull
+; trp_bull_strong_pl|Great Kine
+; trp_stag|Stag
+; trp_stag_pl|Stags
+trp_future_animal_4|Волк
+trp_future_animal_4_pl|Волки
+trp_future_animal_5|Волк
+trp_future_animal_5_pl|Волки
+; trp_guthlaf|Guthláf
+trp_damrod|Дамрод
+trp_duilin|Дуилин
+trp_derufin|Деруфин
+; trp_rumil|Rúmil
+; trp_lugdush|Lugdush

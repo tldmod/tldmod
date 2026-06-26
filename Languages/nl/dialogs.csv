@@ -1,5 +1,7 @@
 dlga_start:mutiny_pretalk_1|Hey, {spelernaam}. Kom hier.. ^De mannen hier mopperen! We willen meer plezier en dus minder rond marcheren.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|Terug in je linie, idioot! We zijn in oorlog en ik geef hier de orders als generaal.
+; dlga_mutiny_pretalk_1:mutiny_pretalk_2|Fall back in line, maggot! We are at war and I'm your commander. [Charisma]
+; dlga_mutiny_pretalk_1:close_window|Want some fun eh? You maggot! I will slay you here and now, that will keep the lads entertained!
+; dlga_mutiny_pretalk_1:close_window.1|I will not tolerate such treacherous talk! Guards, kill him and his cronies!
 dlga_mutiny_pretalk_2:close_window|Zoals u wilt, Commandant. Zoals u wilt...
 dlga_start:mutiny_talk_1|Hey, commandant. We moeten je wat mededelen.. De mannen zijn niet erg gelukkig, sterker nog totaal niet gelukkig. ^Er is niet genoeg mensenvlees en dus niet genoeg plezier. ^ Onze soldaten zeggen dat je niet goed genoeg bent, Commandant!
 dlga_mutiny_talk_1:mutiny_talk_2|Wat? Een opstand terwijl we in in oorlog zijn? ^Hier staat de doodstraf op, Idioot!
@@ -120,6 +122,15 @@ dlga_member_separate:member_separate_confirm|Oh echt? Nou, ik ga niet hier zitte
 dlga_member_separate_confirm:member_separate_yes|Dat is goed. Me moeten onze wegen scheiden.
 dlga_member_separate_confirm:do_member_trade|Nee, ik heb je liever aan mijn zijde. 
 dlga_member_separate_yes:close_window|Nou. Ik ga er dan maar vandoor. Zoek me op als je me nodig hebt.
+; dlga_member_talk:member_promote_lord|You should return to {s14} and gather warriors to lead against the enemy.
+; dlga_member_promote_lord:member_talk|Hrmph! Why should I care about {s14}? I'd rather stay here with you.
+; dlga_member_promote_lord:member_talk.1|Return to what? {s14} is gone. Perhaps if I had been able to return sooner it might have made some difference, but now the best place for me to seek vengeance is at your side.
+; dlga_member_promote_lord:member_talk.2|There are few who would follow me, I'm afraid. Perhaps I could learn a thing or two about leadership from you? Then we can discuss this again.
+; dlga_member_promote_lord:member_talk.3|{s14} remains strong in the face of our enemies and has no need of additional commanders. If a commander of {s14} should fall in battle let us speak of this again, but for now I think it is better if I stay with you.
+; dlga_member_promote_lord:member_promote_lord_2|Perhaps you're right. {s14} has need of more capable commanders. {s15} Are you sure you're ready for me to leave your side?
+; dlga_member_promote_lord_2:member_promote_lord_leaving|I am sure. You can do more leading a host of your own.
+; dlga_member_promote_lord_leaving:close_window|Well. I'll be off, then. Perhaps we will meet again.
+; dlga_member_promote_lord_2:do_member_trade|On second thought I'd rather you stay with me for now.
 dlga_member_talk:member_question|Ik zou je iets willen vragen.
 dlga_member_talk:close_window|Laat maar zitten.
 dlga_member_question:member_question_2|Prima. Wat wilde je vragen?
@@ -178,6 +189,21 @@ dlga_companion_personalitymatch_response:close_window|Uitstekend.
 dlga_event_triggered:companion_faction_demolished|{s5}, {reg6?ons:mijn} {s6} thuisland is smartelijk aan het lijden in de Oorlog, ik vraag je om het te overwegen {reg6?ons:mijn} volk te helpen van zodra we gereed en uitgerust zijn.
 dlga_companion_faction_demolished:close_window|Dan zullen we onmiddellijk {s6} te hulp rijden.
 dlga_companion_faction_demolished:close_window.1|Het spijt me, maar wij zijn ergens anders nodig.
+; dlga_event_triggered:companion_faction_dying_pretalk|{s5}, I am sorry, but the suffering of {reg6?our:my} {s6} homeland is too great. I must return at once to provide what aid I can.
+; dlga_companion_faction_dying_pretalk:companion_faction_dying|Farewell, {s5}.
+; dlga_companion_faction_dying:close_window|Very well. Perhaps we will meet again.
+; dlga_companion_faction_dying:companion_give_troops|Of course. I shall also permit other warriors of {s6} to go with you.
+; dlga_companion_give_troops:companion_give_troops_check|I will be glad to have them with me. {s6} needs all the help you can provide.
+dlga_companion_give_troops:companion_give_troops_final|Spijtig genoeg heb je geen {s14} soldaten om mij mee te versterken.
+dlga_companion_give_troops_check:companion_give_troops_check_1|Laat mij het soldaten rooster bekijken...
+dlga_companion_give_troops_check_1:companion_give_troops_final|Dus je bent van mening veranderd...^ik snap het.
+; dlga_companion_give_troops_check_1:companion_give_troops_final.1|I don't have use for those troops here...^Take them back.
+; dlga_companion_give_troops_final:close_window|Farewell, commander.
+; dlga_companion_faction_dying:companion_faction_dying_trade|Let me see your equipment before you leave.
+dlga_companion_faction_dying_trade:companion_faction_dying_pretalk|Prima, dit is het...
+; dlga_companion_faction_dying:companion_faction_dying_persuade|I understand, but you are needed here.
+; dlga_companion_faction_dying_persuade:close_window|Perhaps you are right. I can serve {s6} better by fighting at your side.
+; dlga_companion_faction_dying_persuade:close_window.1|I'm afraid that {s6} needs me more. Farewell, {s5}.
 dlga_companion_home_description:companion_home_description_2|Vertel me meer.
 dlga_companion_home_description:close_window|We hebben nu geen tijd voor een babbel.
 dlga_companion_home_description:close_window.1|Ik heb liever dat mijn gezellen me niet storen met zulke onbenulligheden.
@@ -456,6 +482,7 @@ dlga_send_gift_2:lord_pretalk|Laat maar zitten.
 dlga_send_gift_4:lord_pretalk|Laat maar zitten.
 dlga_send_gift_5:lord_pretalk|Oké {spelernaam}. Succes.
 dlga_lord_talk:lord_give_order_ask|Ik heb een nieuwe taak voor je.
+; dlga_lord_give_order_ask:lord_pretalk|My duty is to defend my homeland. I will not accept any other assignments.
 dlga_lord_give_order_ask:lord_give_order|Ja?
 dlga_lord_give_order:lord_give_order_answer|Volg mij. [Kost {reg1}/{reg2} Invloed]
 dlga_lord_give_order:lord_give_order_details_ask|Ga naar... [Kost {reg1}/{reg2} invloed]
@@ -641,6 +668,9 @@ dlga_lord_mission_told:lord_mission_accepted|Je kunt op me rekenen, {s65}.
 ; dlga_lord_mission_told:lord_mission_rejected|I fear I cannot accept such a mission at the moment.
 ; dlga_lord_mission_accepted:close_window|Excellent, {playername}, excellent. I have every confidence in you.
 ; dlga_lord_mission_rejected:close_window|Is that so? Well, I suppose you're just not up to the task. I shall have to look for somebody with more mettle.
+; dlga_lord_talk:lord_return_items|I need you to return the unique {reg2?items:item} I gave you.
+; dlga_lord_return_items:lord_talk|Of course I will return {reg2?these items:this item} to you but it seems like you have no room in your inventory currently. Make some room, then ask me again.
+; dlga_lord_return_items:lord_talk.1|Of course. Here {reg2?they are:it is}.
 dlga_lord_talk:lord_leave_prison|Ik moet nu weg.
 ; dlga_lord_talk:lord_leave|This little chat is over. I leave now.
 dlga_lord_talk:lord_leave.1|Ik smeken om mijn verlof.
@@ -886,6 +916,8 @@ dlga_mayor_sea_battle_question:mayor_sea_battle_no|Ik heb wat tijd nodig om mij 
 ; dlga_mayor_talk:mayor_reinforced_center_finished|I have reinforced {s3} as you have asked me to.
 dlga_mayor_begin:kill_quest_bandits_failed|Ik heb gehoord dat jij hebt gefaald om te doen wat ik je vroeg. Teleurstellend, {spelernaam}.
 dlga_kill_quest_bandits_failed:close_window|Ik zal het volgende keer beter doen.
+; dlga_mayor_begin:mayor_hunt_beast_quest_failed|I have heard that the {s9} slipped your grasp and that its trail was lost. It may have vanished for now, but the danger remains.
+; dlga_mayor_hunt_beast_quest_failed:close_window|This was no ordinary beast. I failed this time, but I shall not underestimate the wilds again.
 dlga_mayor_talk:mayor_deliver_food|Hier is je eten, {reg9} eenheden.
 ; dlga_mayor_deliver_food:mayor_deliver_food_completed|Very nice work, {playername}, our food stores are full again and nobody will starve for now.
 dlga_mayor_deliver_food_completed:close_window|Ik doe wat ik kan.
@@ -939,16 +971,17 @@ dlga_merchant_quest_brief_deliver_wine:merchant_quest_taken|Prima. Ik zal de lev
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_taken|In orde. Ik doe wat ik kan.
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_stall|Het spijt me, je zult iemand anders moeten vinden daarvoor.
 dlga_mayor_mission_told_kill_quest_bandit:merchant_quest_stall|Ik kan dit nu niet doen.
-; dlga_merchant_quest_requested:merchant_quest_brief.4|Thanks for offering to help.Actually I was looking for someone to supply us with Food.Perhaps you can do that...
+dlga_mayor_mission_told_hunt_beast:merchant_quest_stall|Ik kan dit nu niet doen.
+; dlga_merchant_quest_requested:merchant_quest_brief.5|Thanks for offering to help.Actually I was looking for someone to supply us with Food.Perhaps you can do that...
 ; dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Our food supplies are dwindling and the supply trains are getting waylaid by the enemy.I need someone to bring us {reg5} units of food in {reg6} days, or we'll begin to starve.Maybe nearby friendly towns have enough for us too. What do you say?
 dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|In orde. Ik zal het eten vinden en naar je brengen.
 dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|Het spijt me, je zult iemand anders moeten vinden daarvoor.
-; dlga_merchant_quest_requested:merchant_quest_brief.5|A task, you say? Actually I am looking for someone to supply us with ore and metals. Mines and roads are not safe anymore, and getting resupplied with raw materials is more and more difficult. The enemy must have its own obscure, but efficient ways of extracting ore, as we've seen even orcs and other lowly beasts in their ranks go around covered with metal. Its quality matches that of the wearers: it is low-grade, cheap iron; the kind we would consider treacherous and not trust in normal times. But in these times our smelters learnt how to deal with poor materials too, if necessary. Every little bit helps.
-; dlga_merchant_quest_requested:merchant_quest_brief.6|A task, you say? The Master demands more troops every day, and they are never battle-worthy enough for Him... but armours don't just grow on skins, you know?^The maggots in charge of bringing ore supplies are treacherous and weak, they get themselves slaughtered too easily and we are left without materials. But these men, these elves... they always go around covered with shiny, precious metals protecting them as if they were all kings, down to their lowest-born...^Scavenge their corpses and bring me the metal, {playername}. With a pound of that iron, our smelter can make enough material to cover an entire pack of warriors.
+; dlga_merchant_quest_requested:merchant_quest_brief.6|A task, you say? Actually I am looking for someone to supply us with ore and metals. Mines and roads are not safe anymore, and getting resupplied with raw materials is more and more difficult. The enemy must have its own obscure, but efficient ways of extracting ore, as we've seen even orcs and other lowly beasts in their ranks go around covered with metal. Its quality matches that of the wearers: it is low-grade, cheap iron; the kind we would consider treacherous and not trust in normal times. But in these times our smelters learnt how to deal with poor materials too, if necessary. Every little bit helps.
+; dlga_merchant_quest_requested:merchant_quest_brief.7|A task, you say? The Master demands more troops every day, and they are never battle-worthy enough for Him... but armours don't just grow on skins, you know?^The maggots in charge of bringing ore supplies are treacherous and weak, they get themselves slaughtered too easily and we are left without materials. But these men, these elves... they always go around covered with shiny, precious metals protecting them as if they were all kings, down to their lowest-born...^Scavenge their corpses and bring me the metal, {playername}. With a pound of that iron, our smelter can make enough material to cover an entire pack of warriors.
 ; dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|We need {reg5} units of {s6} in {reg6} days, before our weaponsmiths run out of raw materials. What do you say?
 ; dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|Alright. I will get the metal scraps and bring them to you.
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|Ik heb het te druk om daar mee om te gaan.
-; dlga_merchant_quest_requested:merchant_quest_brief.7|Thanks for offering to help. Actually I was looking for someone to escort a supply train. Perhaps you can do that...
+; dlga_merchant_quest_requested:merchant_quest_brief.8|Thanks for offering to help. Actually I was looking for someone to escort a supply train. Perhaps you can do that...
 ; dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|I am going to send a supply train to {s8}. However with all those enemy patrols out there, I don't want to send them without an extra escort. A group at least {reg4} would offer them adequate protection. Can you lead that supply train to {s8} in 7 days?^^[you will earn {reg14} Resource Points of {s14}]
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Oké. Ik zal de voorraadtrein escorteren.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Ik ben bang dat ik zoveel soldaten niet mee heb.
@@ -963,7 +996,7 @@ dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Wel, het is goed om t
 dlga_merchant_caravan_follow_lead:close_window|Oké. We zijn recht achter jou.
 dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|Jullie blijven even hier. Ik ga de weg controleren.
 dlga_merchant_caravan_stay_here:close_window|Oké. We zullen hier wachten op u.
-; dlga_merchant_quest_requested:merchant_quest_brief.8|Actually, I was looking for an able commander like you. There's this group of particularly troublesome goblins. They have infested the neighbourhood and are preying on supply trains and stray warriors. They have avoided all our patrols up to now. If someone doesn't stop them soon, I would need to request serious military action...
+; dlga_merchant_quest_requested:merchant_quest_brief.9|Actually, I was looking for an able commander like you. There's this group of particularly troublesome goblins. They have infested the neighbourhood and are preying on supply trains and stray warriors. They have avoided all our patrols up to now. If someone doesn't stop them soon, I would need to request serious military action...
 ; dlga_merchant_quest_brief:troublesome_bandits_quest_brief|I need someone to hunt down those troublesome goblins. It's dangerous work. But I believe that you are the one for it. What do you say?^^[you will earn {reg14} Resource Points of {s14}]
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Oké. Ik zal de goblins opjagen.
 ; dlga_merchant_quest_taken_bandits:close_window|You will? I am so happy to hear that. Good luck to you.
@@ -973,7 +1006,7 @@ dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Sorry. Ik heb hier nu 
 dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Bandieten doden? Maar, natuurlijk!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Nee, ik ben niet geïnteresseerd. 
 ; dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|That takes a weight off my shoulders, {playername}. You can expect a fine reward if you come back successful. Just don't get yourself killed, eh?
-; dlga_merchant_quest_requested:merchant_quest_brief.9|The garrison commander here is looking for a resourceful warrior to take a group of {s12} to {s13}.
+; dlga_merchant_quest_requested:merchant_quest_brief.10|The garrison commander here is looking for a resourceful warrior to take a group of {s12} to {s13}.
 ; dlga_merchant_quest_brief:move_cattle_herd_quest_brief|The group must arrive at {s13} within {reg6} days. Sooner is better, much better,  but it must be absolutely no later than {reg6} days.  Can you do that?^^[you will earn {reg14} Resource Points of {s14}]
 dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Aye, Ik kan ze naar {s13} nemen.
 dlga_move_cattle_herd_quest_brief:merchant_quest_stall|Het spijt me, maar nee.
@@ -1119,6 +1152,11 @@ dlga_party_encounter_hostile_attacker:close_window|Val niet aan! Wij geven ons o
 dlga_party_encounter_hostile_attacker:close_window.1|Wij zullen tot het einde vechten!
 dlga_start:party_encounter_hostile_defender|Wat wil je?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Geef je over of sterf!
+dlga_kingdom_companion_meet:kingdom_companion_intro|Ik ben {playername}.
+dlga_kingdom_companion_meet:kingdom_companion_intro.1|Mijn naam is {playername}. Tot uw dienst.
+; dlga_start:kingdom_companion_start|Greetings, {playername}...
+; dlga_kingdom_companion_start:close_window.1|If you have business with our company you should speak with my {s5}, {s3}.
+dlga_kingdom_companion_leaving:close_window|Vaarwel.
 dlga_party_encounter_hostile_defender:close_window|Niks, We zullen jou verlaten in vrede.
 dlga_start:close_window.53|*staart in stilte naar je*
 dlga_start:battle_reason_stated|Geef je over of sterf. Maak jouw keuze.

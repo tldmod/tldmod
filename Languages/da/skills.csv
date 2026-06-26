@@ -1,9 +1,9 @@
 skl_trade|Bargevinst
 ; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Lederskab
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you (player only). (Cumulative skill)
 skl_prisoner_management|Fange Administration
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners. (Party skill)
 ; skl_persuasion|Wildcraft
 ; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
 ; skl_engineer|-----
@@ -14,20 +14,20 @@ skl_surgery|Kirurgi
 skl_surgery_desc|Hvert point til denne færdighed giver en 4%% chance at en dødelig ramt hold medlem vil blive skadet ildstedet for dræbt. (Hold færdighed)
 skl_wound_treatment|Sår Behandling
 skl_wound_treatment_desc|Holdets helbrednings hastighed stiger med 20%% per niveau til denne færdighed. (Hold færdighed)
-skl_inventory_management|Lagerstyring
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+; skl_inventory_management|Party Management
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption by 5%% and upkeep for troops in your party by 3%% per level. (Leader skill)
 skl_spotting|Opdage
 skl_spotting_desc|Holdets syns rækkevide er forhøjet med 10%% per færdigheds niveau. (Hold færdighed)
 skl_pathfinding|Sti-finder
 skl_pathfinding_desc|Holdets kort hastighed er forhøjet med 3%% per færdighed niveau. (Hold færdighed) 
 skl_tactics|Taktik
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Decreases battle join range for enemy parties and increases battle join range for friendly parties by 3%% per level. (Leader skill)
 skl_tracking|Spore
 skl_tracking_desc|Spor bliver mere informative. (Hold færdighed)
 skl_trainer|Træner
-skl_trainer_desc|Hver dag, hver helt med denne færdighed tilføjer erfaring til alle andre medlemmer af holdet hvis niveau er lavere end hans/hendes. Erfaring givet forløber således:{0,4,10,16,23,30,38,46,55,65,80}. (Personlig færdighed)
+; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Cumulative skill)
 skl_looting|Plyndring
-; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Cumulative skill)
 skl_horse_archery|Ridende Bueskydning
 skl_horse_archery_desc|Reducer skade og nøjagtigheds straf for bueskydning og kastning nåd du rider. (Personlig færdighed)
 skl_riding|Ridning

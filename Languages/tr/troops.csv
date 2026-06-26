@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|Kıdemli Umbar Kılıç Ustası
 trp_i4_corsair_veteran_swordsman_pl|Kıdemli Umbar Kılıç Ustaları
 trp_i5_corsair_master_swordsman|Korsan Kılıç Ustası
 trp_i5_corsair_master_swordsman_pl|Korsan Kılıç Ustaları
-trp_a4_corsair_assassin|Korsan Suikastçisi
-trp_a4_corsair_assassin_pl|Korsan Suikastçileri
+; trp_i6_corsair_guard|Captain's Guard of Umbar
+; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
 trp_a5_corsair_master_assassin|Korsan Suikastçisi
 trp_a5_corsair_master_assassin_pl|Korsan Suikastçileri
 trp_i4_corsair_veteran_spearman|Umbar Kıdemli Mızraklısı
@@ -748,7 +748,6 @@ trp_mountain_goblin2|Dag Goblini
 trp_mountain_goblin2_pl|Dag Goblinleri
 trp_tribal_orc2|Kabile Orku
 trp_tribal_orc2_pl|Kabile Orkları
-trp_i5_gunda_orc_champion2|Gundabad Ork Şampiyonu
 trp_i5_gunda_orc_champion2_pl|Gundabad Ork Şampiyonları
 trp_i2_mordor_num_renegade|Kara Numenor Haini
 trp_i2_mordor_num_renegade_pl|Kara Numenor Hainleri
@@ -1501,17 +1500,17 @@ trp_evil_priest|Kötü Rahip
 trp_evil_priest_pl|Kötü Rahipler
 trp_wolf_rider_of_mirkwood|Kuytuorman'ın Kurt Binicisi
 trp_wolf_rider_of_mirkwood_pl|Kuytuorman'ın Kurt Binicileri
-trp_bear_strong|Ayı
-trp_bear_strong_pl|Ayılar
+trp_bear_strong_old|Ayı
+trp_bear_strong_old_pl|Ayılar
 trp_gate_aggravator|Kapı Defansı
 trp_orc_pretender|Hak Sahibi Ork
 trp_human_prisoner|İnsan Mahkum
-trp_spider|Kuytuorman Örümcegi
-trp_spider_pl|Kuytuorman Örümcekleri
-trp_bear|Ayı
-trp_bear_pl|Ayılar
-trp_wolf|Kurt
-trp_wolf_pl|Kurtlar
+trp_spider_old|Kuytuorman Örümcegi
+trp_spider_old_pl|Kuytuorman Örümcekleri
+trp_bear_old|Ayı
+trp_bear_old_pl|Ayılar
+trp_wolf_old|Kurt
+trp_wolf_old_pl|Kurtlar
 trp_dorwinion_sack|Dorwinion'lu Yagmacı
 trp_ring_hunter_captain|Yüzük Avcısı Kaptanı
 trp_ring_hunter_lt|Yüzük Avcısı Kaptanı
@@ -1541,6 +1540,10 @@ trp_black_shield_guard|Amath Dollen Muhafızı
 trp_black_shield_guard_pl|Amath Dollen Muhafızları
 trp_dorwinion_spirit_leader|Ruh
 trp_dorwinion_spirit|Alt Ruh
+; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
+; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
+; trp_i6_dun_retainer|Dunnish Retainer
+; trp_i6_dun_retainer_pl|Dunnish Retainers
 trp_i6_beorning_bear_warrior|Ayı Savaşçısı
 trp_i6_beorning_bear_warrior_pl|Ayı Savaşçıları
 trp_a5_dun_night_wolf|Dunnish Gece Kurdu
@@ -1567,8 +1570,8 @@ trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel
 trp_npc21|Berta
-trp_werewolf|Kurtadam
-trp_werewolf_pl|kurt adamlar
+trp_werewolf_old|Kurtadam
+trp_werewolf_old_pl|kurt adamlar
 trp_moria_troll|Magara Trolü
 trp_moria_troll_pl|Magara Trolleri
 trp_moria_vet_troll|Talimli Magara Trolü
@@ -1633,3 +1636,43 @@ trp_merry_notmet|buçukluk
 trp_pippin|Pippin
 trp_merry|Merry
 trp_grima|Grima Solucandil
+trp_future_animal_0|Kurt
+trp_future_animal_0_pl|Kurtlar
+trp_spider|Kuytuorman Örümcegi
+trp_spider_pl|Kuytuorman Örümcekleri
+; trp_spider_strong|Great Spider
+; trp_spider_strong_pl|Great Spiders
+trp_bear|Ayı
+trp_bear_pl|Ayılar
+; trp_bear_strong|Great Bear
+; trp_bear_strong_pl|Great Bears
+trp_wolf|Kurt
+trp_wolf_pl|Kurtlar
+; trp_wolf_strong|Huge Wolf
+; trp_wolf_strong_pl|Huge Wolves
+trp_werewolf|Kurtadam
+trp_werewolf_pl|kurt adamlar
+; trp_boar|Boar
+; trp_boar_pl|Boars
+; trp_boar_strong|Great Boar
+; trp_boar_strong_pl|Great Boars
+; trp_evil_beast|Evil Beast
+; trp_evil_beast_pl|Evil Beast
+; trp_evil_beast_strong|Huge Evil Beast
+; trp_evil_beast_strong_pl|Huge Evil Beasts
+; trp_bull|Wild Bull
+; trp_bull_pl|Wild Kine
+; trp_bull_strong|Great Bull
+; trp_bull_strong_pl|Great Kine
+; trp_stag|Stag
+; trp_stag_pl|Stags
+trp_future_animal_4|Kurt
+trp_future_animal_4_pl|Kurtlar
+trp_future_animal_5|Kurt
+trp_future_animal_5_pl|Kurtlar
+; trp_guthlaf|Guthláf
+trp_damrod|Damrod
+trp_duilin|Duilin
+trp_derufin|Derufin
+; trp_rumil|Rúmil
+; trp_lugdush|Lugdush

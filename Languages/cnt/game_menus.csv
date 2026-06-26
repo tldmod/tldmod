@@ -32,9 +32,10 @@ mno_tutorial_3b_door|下一關
 mno_tutorial_4|教學#4：騎馬或座狼。{s4}
 mno_tutorial_5|教學#5：指揮一團士兵。{s5}
 mno_go_back_dot|返回。
+; menu_reports|^^^{s10}^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}
 mno_action_view_troop_trees|查閱兵種樹狀圖。
 mno_view_upkeep_costs|查閱工資費用。
-mno_view_character_report|查閱人物報告。
+; mno_view_rank_report|View rank report.
 mno_view_party_size_report|查閱隊伍上限。
 mno_view_morale_report|查閱隊伍士氣。
 mno_view_faction_strengths_report|查閱陣營力量。
@@ -113,6 +114,8 @@ mno_start_2_bn|在多爾哥多，死靈法師的要塞
 menu_choose_gender|^^^^^^^^^^你的性別？
 mno_start_male|男性
 mno_start_female|女性
+; menu_choose_skill|Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.
+; mno_proc|Proceed
 menu_start_as_one|^^^^^^^^^^你是何種士兵？
 mno_start_default|成為{s23} (預設)
 mno_start_up1|成為{s21} (簡單)
@@ -166,8 +169,9 @@ menu_camp_action|^^^^^^^^^     哪件物品？
 mno_camp_drink_water|喝下樹人之水！
 mno_camp_drink_orc_brew|跟夥伴一起喝半獸人酒！
 mno_camp_drink_miruvor|跟夥伴一起喝米盧沃酒！
+; mno_camp_use_pipeweed|Share pipe-weed with your companions (rest for a short duration).
 mno_camp_use_athelas|用阿系拉斯草來療傷。
-mno_camp_use_drums|奏響深淵之鼓。
+; mno_camp_use_drums|Beat the Drums of the Deep (wait for some hours).
 mno_camp_action_4|返回。
 menu_assasins_attack_player_won|你成功擊敗了從{s2}來的刺客，{s3}的手下。
 menu_assasins_attack_player_retreat|你逃過了一劫！
@@ -315,6 +319,8 @@ mno_erebor_gates|訪問大門。
 mno_erebor_gates_door|前往大門
 ; mno_glittering_caves|Go to the Glittering Caves.
 ; mno_glittering_caves_door|Go to the Glittering Caves
+; mno_mountain_travel|Travel on hidden mountain paths.
+; mno_mountain_travel_door|Travel on hidden mountain paths.
 mno_town_leave|離開...
 mno_town_leave_door|離開區域
 mno_town_find_NPCs_cont|執行。
@@ -423,7 +429,7 @@ mno_cb_mordor8|海盜
 mno_rescue_mission|在黑夜的掩護下潛入巫師的巢穴。
 mno_next_rescue_scene_door|繼續向前！
 mno_pick_troops1|選擇一起執行任務的同伴，已選擇了{reg0}人
-menu_pick_troops|你要選擇誰和你一起執行這次潛行任務？ ^只有身手最敏捷的部下和同伴能夠加入行動。 ^身為隊伍中荒野求生技能最高的人，{reg65?{s1}建議你最多:你覺得能}帶{reg11}名手下。 ^^目前你選了{reg0}名。
+; menu_pick_troops|Whom would you take with you into the mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg13?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg12} companions.
 mno_go_forward|結束同伴選擇並且繼續。
 ; menu_burial_mound|^You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|跪下並獻上你的敬意。
@@ -443,7 +449,7 @@ menu_death|你已經被殺害了。雖然戰爭仍舊如火如荼，但你將不
 menu_animal_ambush|你和你的同伴發現跟隊伍的其他人走散了，忽然間...
 menu_animal_ambush_success|{s2}在你面前如同收割麥子一般地{reg0?倒下:倒下}！很快地所有攻擊者都躺在地上，受傷或已死亡。{s3}
 ; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
-menu_isengard_flooding|^^^^^@你被死去的敵人和勝利的盟友包圍，包括樹人；他們咆哮、轟鳴、吹號，直到石頭在奧桑克塔周圍裂開並掉落。他們就像呼嘯的狂風，打破柱子，把巨石的雪崩扔下井道，將巨大的石板像葉子一樣拋向空中……這是你前所未見的場景。布雷戈拉德——或者你所知道的迅速樹梁——大步走過來，僅停下來說：「{playername}！小心！離塔遠點——我們很快就會打破大壩，將艾辛河帶入這個山谷，雖然只是一小會兒。我想你會發現很難一直站在這裡！」你迅速接受他的建議，匆匆離開奧桑克塔。午夜時分，艾辛格開始被黑色的潛流和水池填滿。當你看到煙霧和蒸汽在空中冒出巨大的柱子，並且一股巨大的蒸汽捲繞著塔，直到它看起來像一座高聳的雲峰，底下燃燒著，頂上被月光照亮時，你不禁顫抖。樹人的憤怒來得緩慢，但擁有不可抵擋的力量……
+; menu_isengard_flooding|^^^^^You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 mno_isengard_continue|繼續
 menu_build_your_scene|你可以打造自己的戰場場景。首先在遊戲設定中打開編輯模式，然後選擇底下任意一個存位(你需要先在M&B啟動螢幕設定中將編輯模式切換為ON，然後進入場景中按Ctrl+E打開編輯模式)。  你可以將你創造的場景提交給TLD製作組(TLD/SceneObj資料夾中的sco檔)，做得好的話，它將會作為隨機戰場之一出現在以後的版本中！^^ 記得說明你想要自己作的場景出現在地圖上的哪個地方。^ 附加提示：避免製作深水、陡峭或其他難以通行的地形，除非你是經驗豐富的場景製作者並且知道如何利用AI網格讓AI部隊避開指定區域。^ (#0-1 用於攻擊方，#4用於防守方，別碰#5-8
 mno_back_3dot|返回...
@@ -455,6 +461,12 @@ mno_back_3dot|返回...
 ; menu_campaign_won|^^^Thank you for playing The Last Days of the Third Age!
 ; mno_credits_tld|TLD Credits
 ; mno_exit_game2|Quit to main menu
+; menu_companion_promoted_event|^^^A new hero   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!
+; menu_mountain_travel|As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.
+; menu_mountain_travel_arrived|After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}
+; mno_hunt_begin|Let the hunt begin!.
+; mno_pick_troops_hunt|Pick companions for the hunt, {reg15} selected
+; menu_hunt_beast_debrief|{s9}^^Your Casualties:{s8}
 mno_back|返回。
 mno_next|下一個...
 ; mno_previous|Previous...

@@ -1,9 +1,9 @@
 skl_trade|Сметкаджия
 ; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Лидерство
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you (player only). (Cumulative skill)
 skl_prisoner_management|Управление на затворниците
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners. (Party skill)
 ; skl_persuasion|Wildcraft
 ; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
 ; skl_engineer|-----
@@ -14,20 +14,20 @@ skl_surgery|Хирургия
 skl_surgery_desc|Всяка точка на това умение дава 4%% шанс, че смъртно поразен член на партията ще бъде ранен, а не убит. (Парти умение)
 skl_wound_treatment|Лекуване на рани
 skl_wound_treatment_desc|Скоростта на изцеляване на партията  се увеличава с 20 %% за всяко ниво на това умение. (Парти умение)
-skl_inventory_management|Управление на запасите
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+; skl_inventory_management|Party Management
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption by 5%% and upkeep for troops in your party by 3%% per level. (Leader skill)
 skl_spotting|Наблюдаване
 skl_spotting_desc|Обхватът на забелязване на партията се увеличава с 10 %% за всяко ниво на умение. (Парти умение)
 skl_pathfinding|Намиране на път
 skl_pathfinding_desc|Скоростта на партията на картата се увеличава с 3%% за всяко ниво на умение. (Парти умение)
 skl_tactics|Тактика
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Decreases battle join range for enemy parties and increases battle join range for friendly parties by 3%% per level. (Leader skill)
 skl_tracking|Проследяване
 skl_tracking_desc|Следите стават по- осведомителни. (Парти умение)
 skl_trainer|Треньор
-skl_trainer_desc|Всеки ден, всеки герой с това умение добавя някакъв опит на всеки друг член на партията, чието ниво е по-ниско от неговото. Придобитият опит следва да е: {0,4,10,16,23,30,38,46,55,65,80} (Лично умение)
+; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Cumulative skill)
 skl_looting|Плячкосване
-; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Cumulative skill)
 skl_horse_archery|Стрелба с лък от кон
 skl_horse_archery_desc|Намалява санкциите за щети и точност за стрелба с лък и хвърляне, когато сте на кон. (Лично умение)
 skl_riding|Езда

@@ -2523,3 +2523,6 @@ str_shortname_region_cair_andros|Cair Andros
 str_isengard_hunting_camp_guildmaster_player_found_ok|Se ele matar bem, eu o pego. Se não, eu o estripo como um peixe. E se ele acabar sendo só mais um verme inútil, eu volto e pago você por desperdiçar meu tempo!
 ; str_trait_title_animal_fighter|Beast Slayer
 ; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.
+str_commander|comandante
+; str_companion|companion
+; str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3|I am {s1}, a soldier of {s2} in the company of {s3}.

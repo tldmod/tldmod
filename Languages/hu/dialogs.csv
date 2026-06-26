@@ -1,5 +1,7 @@
 dlga_start:mutiny_pretalk_1|Hé, {playername}. Aszondom... ^A legények itt nyavalyognak! Több szórakozás és kevesebb menetelés kéne.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|Vissza a sorba, féreg! Háború van és én vagyok a parancsnokod.
+; dlga_mutiny_pretalk_1:mutiny_pretalk_2|Fall back in line, maggot! We are at war and I'm your commander. [Charisma]
+; dlga_mutiny_pretalk_1:close_window|Want some fun eh? You maggot! I will slay you here and now, that will keep the lads entertained!
+; dlga_mutiny_pretalk_1:close_window.1|I will not tolerate such treacherous talk! Guards, kill him and his cronies!
 dlga_mutiny_pretalk_2:close_window|Ahogy óhajtod parancsnok, ahogy óhajtod....
 dlga_start:mutiny_talk_1|Hé, parancsnok. Aszondom... A legények nem túl boldogak, egyáltalán nem. ^Nincs elég emberhús, nincs elég szórakozás. ^Azt mondják nem vagy elég jó, parancsnok!
 dlga_mutiny_talk_1:mutiny_talk_2|Mi? Zendülés háborúban? ^Ezért halál jár, féreg!
@@ -120,6 +122,15 @@ dlga_member_separate:member_separate_confirm|Ó, igazán? Nos, nem fogok csak it
 dlga_member_separate_confirm:member_separate_yes|Így van. Utainknak el kell válniuk.
 dlga_member_separate_confirm:do_member_trade|Nem, szívesebben tudnálak magam mellett.
 dlga_member_separate_yes:close_window|Legyen. Akkor elmegyek. Keress meg ha szükséged lesz rám.
+; dlga_member_talk:member_promote_lord|You should return to {s14} and gather warriors to lead against the enemy.
+; dlga_member_promote_lord:member_talk|Hrmph! Why should I care about {s14}? I'd rather stay here with you.
+; dlga_member_promote_lord:member_talk.1|Return to what? {s14} is gone. Perhaps if I had been able to return sooner it might have made some difference, but now the best place for me to seek vengeance is at your side.
+; dlga_member_promote_lord:member_talk.2|There are few who would follow me, I'm afraid. Perhaps I could learn a thing or two about leadership from you? Then we can discuss this again.
+; dlga_member_promote_lord:member_talk.3|{s14} remains strong in the face of our enemies and has no need of additional commanders. If a commander of {s14} should fall in battle let us speak of this again, but for now I think it is better if I stay with you.
+; dlga_member_promote_lord:member_promote_lord_2|Perhaps you're right. {s14} has need of more capable commanders. {s15} Are you sure you're ready for me to leave your side?
+; dlga_member_promote_lord_2:member_promote_lord_leaving|I am sure. You can do more leading a host of your own.
+; dlga_member_promote_lord_leaving:close_window|Well. I'll be off, then. Perhaps we will meet again.
+; dlga_member_promote_lord_2:do_member_trade|On second thought I'd rather you stay with me for now.
 dlga_member_talk:member_question|Szeretnék kérdezni tőled valamit.
 dlga_member_talk:close_window|Hagyjuk.
 dlga_member_question:member_question_2|Legyen. Mit szeretnél tudni?
@@ -178,6 +189,21 @@ dlga_companion_personalitymatch_response:close_window|Nagyon jó.
 dlga_event_triggered:companion_faction_demolished|{s5}, {reg6?a mi hazánk:az én hazám} {s6} keservesen megszenvedi a háborút, arra kérlek fontold meg hogy segítesz {reg6?a népünknek:a népemnek} ahogy kipihented magad és készen állsz.
 dlga_companion_faction_demolished:close_window|Akkor {s6} segítségére kéne lovagolnunk azonnal.
 dlga_companion_faction_demolished:close_window.1|Sajnálom, de ránk máshol van szükség.
+; dlga_event_triggered:companion_faction_dying_pretalk|{s5}, I am sorry, but the suffering of {reg6?our:my} {s6} homeland is too great. I must return at once to provide what aid I can.
+; dlga_companion_faction_dying_pretalk:companion_faction_dying|Farewell, {s5}.
+; dlga_companion_faction_dying:close_window|Very well. Perhaps we will meet again.
+; dlga_companion_faction_dying:companion_give_troops|Of course. I shall also permit other warriors of {s6} to go with you.
+; dlga_companion_give_troops:companion_give_troops_check|I will be glad to have them with me. {s6} needs all the help you can provide.
+dlga_companion_give_troops:companion_give_troops_final|Sajnálatos módon nincs több {s14} olyan katonád akit magam mellé tudnék venni.
+dlga_companion_give_troops_check:companion_give_troops_check_1|Hadd ellenőrizzem a katonák listáját...
+dlga_companion_give_troops_check_1:companion_give_troops_final|Szóval, meggondoltad magad...^Értem.
+dlga_companion_give_troops_check_1:companion_give_troops_final.1|Nincs szükségem ezekre az egységekre...^Vedd őket vissza.
+; dlga_companion_give_troops_final:close_window|Farewell, commander.
+; dlga_companion_faction_dying:companion_faction_dying_trade|Let me see your equipment before you leave.
+dlga_companion_faction_dying_trade:companion_faction_dying_pretalk|Rendben, itt volna...
+; dlga_companion_faction_dying:companion_faction_dying_persuade|I understand, but you are needed here.
+; dlga_companion_faction_dying_persuade:close_window|Perhaps you are right. I can serve {s6} better by fighting at your side.
+; dlga_companion_faction_dying_persuade:close_window.1|I'm afraid that {s6} needs me more. Farewell, {s5}.
 dlga_companion_home_description:companion_home_description_2|Mesélj nekem többet.
 dlga_companion_home_description:close_window|Most nincs időnk csevegni.
 dlga_companion_home_description:close_window.1|Jobban szeretem ha a társaim nem zavarnak ilyen jelentéktelen dolgokkal.
@@ -456,6 +482,7 @@ dlga_send_gift_3:send_gift_4.1|Mivel akarod megvesztegetni őket?
 dlga_send_gift_4:lord_pretalk|Mindegy.
 dlga_send_gift_5:lord_pretalk|Rendben van, {playername}. Sok szerencsét.
 dlga_lord_talk:lord_give_order_ask|Egy új feladatom van számodra.
+; dlga_lord_give_order_ask:lord_pretalk|My duty is to defend my homeland. I will not accept any other assignments.
 dlga_lord_give_order_ask:lord_give_order|Igen?
 dlga_lord_give_order:lord_give_order_answer|Kövess. [{reg1}/{reg2} befolyásba kerül]
 dlga_lord_give_order:lord_give_order_details_ask|Menj el... [{reg1}/{reg2} befolyásba kerül]
@@ -641,6 +668,9 @@ dlga_lord_mission_told:lord_mission_accepted|Számíthat rám, {s65}.
 dlga_lord_mission_told:lord_mission_rejected|Attól tartok jelenleg nem fogadhatok el egy ilyen küldetést.
 dlga_lord_mission_accepted:close_window|Nagyszerű, {playername}, nagyszerű. Minden reményem benned van.
 dlga_lord_mission_rejected:close_window|Így lenne? Nos, biztosan nem állsz készen a feladatra. Akkor keresnem kell valakit több kurázsival.
+; dlga_lord_talk:lord_return_items|I need you to return the unique {reg2?items:item} I gave you.
+; dlga_lord_return_items:lord_talk|Of course I will return {reg2?these items:this item} to you but it seems like you have no room in your inventory currently. Make some room, then ask me again.
+; dlga_lord_return_items:lord_talk.1|Of course. Here {reg2?they are:it is}.
 dlga_lord_talk:lord_leave_prison|Most mennem kell.
 dlga_lord_talk:lord_leave|Ennek a kis csevejnek ezennel vége. Most megyek.
 ; dlga_lord_talk:lord_leave.1|I must beg my leave.
@@ -886,6 +916,8 @@ dlga_start:mayor_begin.1|Szép napot, {playername}.
 ; dlga_mayor_talk:mayor_reinforced_center_finished|I have reinforced {s3} as you have asked me to.
 dlga_mayor_begin:kill_quest_bandits_failed|Hallottam hogy elbuktál abban amire megkértelek. Csalódáskeltő, {playername}.
 dlga_kill_quest_bandits_failed:close_window|Legközelebb jobban fog sikerülni.
+; dlga_mayor_begin:mayor_hunt_beast_quest_failed|I have heard that the {s9} slipped your grasp and that its trail was lost. It may have vanished for now, but the danger remains.
+; dlga_mayor_hunt_beast_quest_failed:close_window|This was no ordinary beast. I failed this time, but I shall not underestimate the wilds again.
 ; dlga_mayor_talk:mayor_deliver_food|Here's your food, {reg9} units.
 ; dlga_mayor_deliver_food:mayor_deliver_food_completed|Very nice work, {playername}, our food stores are full again and nobody will starve for now.
 ; dlga_mayor_deliver_food_completed:close_window|I do what I can.
@@ -939,16 +971,17 @@ dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|Van egy szállítmá
 ; dlga_merchant_quest_brief_reinforce_center:merchant_quest_taken|Alright. I will do what I can.
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_stall|Sajnálom, valaki mást kell találnom erre.
 dlga_mayor_mission_told_kill_quest_bandit:merchant_quest_stall|Ezt nem tudom most megtenni.
-dlga_merchant_quest_requested:merchant_quest_brief.4|Köszönöm hogy felajánlottad a segítségedet. Igazából épp kerestem valakit aki ellátott volna minket Étellel. Talán te megtudnád oldani...
+dlga_mayor_mission_told_hunt_beast:merchant_quest_stall|Ezt nem tudom most megtenni.
+dlga_merchant_quest_requested:merchant_quest_brief.5|Köszönöm hogy felajánlottad a segítségedet. Igazából épp kerestem valakit aki ellátott volna minket Étellel. Talán te megtudnád oldani...
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Az étel készleteink egyre csak apadnak és az ellátmányos konvojokat folyamatosan feltartóztatják az ellenfeleink. Szükségem lenne valakire aki hoz {reg5} adagnyi ételt {reg6} napon belül, vagy mi mind elkezdhetünk éhezni. Talán a közeli barátságos városokban lenne elég nekünk is. Mit mondasz?
 dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|Rendben van. Keresek ennivalót és visszahozom neked.
 dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|Sajnálom, valaki mást kell találnom erre.
-; dlga_merchant_quest_requested:merchant_quest_brief.5|A task, you say? Actually I am looking for someone to supply us with ore and metals. Mines and roads are not safe anymore, and getting resupplied with raw materials is more and more difficult. The enemy must have its own obscure, but efficient ways of extracting ore, as we've seen even orcs and other lowly beasts in their ranks go around covered with metal. Its quality matches that of the wearers: it is low-grade, cheap iron; the kind we would consider treacherous and not trust in normal times. But in these times our smelters learnt how to deal with poor materials too, if necessary. Every little bit helps.
-; dlga_merchant_quest_requested:merchant_quest_brief.6|A task, you say? The Master demands more troops every day, and they are never battle-worthy enough for Him... but armours don't just grow on skins, you know?^The maggots in charge of bringing ore supplies are treacherous and weak, they get themselves slaughtered too easily and we are left without materials. But these men, these elves... they always go around covered with shiny, precious metals protecting them as if they were all kings, down to their lowest-born...^Scavenge their corpses and bring me the metal, {playername}. With a pound of that iron, our smelter can make enough material to cover an entire pack of warriors.
+; dlga_merchant_quest_requested:merchant_quest_brief.6|A task, you say? Actually I am looking for someone to supply us with ore and metals. Mines and roads are not safe anymore, and getting resupplied with raw materials is more and more difficult. The enemy must have its own obscure, but efficient ways of extracting ore, as we've seen even orcs and other lowly beasts in their ranks go around covered with metal. Its quality matches that of the wearers: it is low-grade, cheap iron; the kind we would consider treacherous and not trust in normal times. But in these times our smelters learnt how to deal with poor materials too, if necessary. Every little bit helps.
+; dlga_merchant_quest_requested:merchant_quest_brief.7|A task, you say? The Master demands more troops every day, and they are never battle-worthy enough for Him... but armours don't just grow on skins, you know?^The maggots in charge of bringing ore supplies are treacherous and weak, they get themselves slaughtered too easily and we are left without materials. But these men, these elves... they always go around covered with shiny, precious metals protecting them as if they were all kings, down to their lowest-born...^Scavenge their corpses and bring me the metal, {playername}. With a pound of that iron, our smelter can make enough material to cover an entire pack of warriors.
 ; dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|We need {reg5} units of {s6} in {reg6} days, before our weaponsmiths run out of raw materials. What do you say?
 ; dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|Alright. I will get the metal scraps and bring them to you.
 ; dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|I am too busy to deal with that.
-; dlga_merchant_quest_requested:merchant_quest_brief.7|Thanks for offering to help. Actually I was looking for someone to escort a supply train. Perhaps you can do that...
+; dlga_merchant_quest_requested:merchant_quest_brief.8|Thanks for offering to help. Actually I was looking for someone to escort a supply train. Perhaps you can do that...
 ; dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|I am going to send a supply train to {s8}. However with all those enemy patrols out there, I don't want to send them without an extra escort. A group at least {reg4} would offer them adequate protection. Can you lead that supply train to {s8} in 7 days?^^[you will earn {reg14} Resource Points of {s14}]
 ; dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Alright. I will escort the supply train.
 ; dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|I am afraid I don't have that many soldiers with me.
@@ -963,7 +996,7 @@ dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|Sajnálom, valaki m�
 ; dlga_merchant_caravan_follow_lead:close_window|Alright. We'll be right behind you.
 ; dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|You stay here for a while. I'll go ahead and check the road.
 ; dlga_merchant_caravan_stay_here:close_window|Alright. We'll be waiting here for you.
-; dlga_merchant_quest_requested:merchant_quest_brief.8|Actually, I was looking for an able commander like you. There's this group of particularly troublesome goblins. They have infested the neighbourhood and are preying on supply trains and stray warriors. They have avoided all our patrols up to now. If someone doesn't stop them soon, I would need to request serious military action...
+; dlga_merchant_quest_requested:merchant_quest_brief.9|Actually, I was looking for an able commander like you. There's this group of particularly troublesome goblins. They have infested the neighbourhood and are preying on supply trains and stray warriors. They have avoided all our patrols up to now. If someone doesn't stop them soon, I would need to request serious military action...
 ; dlga_merchant_quest_brief:troublesome_bandits_quest_brief|I need someone to hunt down those troublesome goblins. It's dangerous work. But I believe that you are the one for it. What do you say?^^[you will earn {reg14} Resource Points of {s14}]
 ; dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Alright. I will hunt down the goblins.
 ; dlga_merchant_quest_taken_bandits:close_window|You will? I am so happy to hear that. Good luck to you.
@@ -973,7 +1006,7 @@ dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Sajnálom. Erre most n
 ; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue bandits? Why, certainly!
 ; dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|No, I'm not interested.
 ; dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|That takes a weight off my shoulders, {playername}. You can expect a fine reward if you come back successful. Just don't get yourself killed, eh?
-; dlga_merchant_quest_requested:merchant_quest_brief.9|The garrison commander here is looking for a resourceful warrior to take a group of {s12} to {s13}.
+; dlga_merchant_quest_requested:merchant_quest_brief.10|The garrison commander here is looking for a resourceful warrior to take a group of {s12} to {s13}.
 ; dlga_merchant_quest_brief:move_cattle_herd_quest_brief|The group must arrive at {s13} within {reg6} days. Sooner is better, much better,  but it must be absolutely no later than {reg6} days.  Can you do that?^^[you will earn {reg14} Resource Points of {s14}]
 ; dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Aye, I can take them to {s13}.
 ; dlga_move_cattle_herd_quest_brief:merchant_quest_stall|I am sorry, but no.
@@ -1119,6 +1152,11 @@ dlga_party_encounter_hostile_attacker:close_window|Ne támadj! Megadjuk magunkat
 dlga_party_encounter_hostile_attacker:close_window.1|A végsőkig harcolni fogunk!
 dlga_start:party_encounter_hostile_defender|Mit szeretnél?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Add meg magad vagy véged!
+dlga_kingdom_companion_meet:kingdom_companion_intro|Én {playername} vagyok.
+dlga_kingdom_companion_meet:kingdom_companion_intro.1|Az én nevem {playername}. Szolgálatodra.
+; dlga_start:kingdom_companion_start|Greetings, {playername}...
+; dlga_kingdom_companion_start:close_window.1|If you have business with our company you should speak with my {s5}, {s3}.
+dlga_kingdom_companion_leaving:close_window|Viszlát.
 dlga_party_encounter_hostile_defender:close_window|Semmi. Békén is hagyunk.
 dlga_start:close_window.53|* szavak nélkül rádmered *
 dlga_start:battle_reason_stated|Add meg magad vagy meghalsz. Válassz.

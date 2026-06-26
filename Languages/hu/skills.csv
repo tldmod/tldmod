@@ -1,9 +1,9 @@
 skl_trade|Alkudozás
 skl_trade_desc|A kovácsokat és hadtáposokat együttműködőbbé teszi, és jobb felszereléseket fognak felkínálni. (Csapat képesség) 
 skl_leadership|Hadvezetés
-skl_leadership_desc|Minden pont 5-tel növeli a vezethető egységek maximális számát (3 a társaknál), javítja a csapat morálját és összetartását a csatában. Több és erősebb önkéntes lesz hajlandó követni téged. (Személyes képesség)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you (player only). (Cumulative skill)
 skl_prisoner_management|Fogolytartás
-skl_prisoner_management_desc|Ez a képesség növeli a maximum foglyok számát %d-al. (Vezető képesség)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners. (Party skill)
 skl_persuasion|Vadonjárás
 skl_persuasion_desc|A vadonban való túlélés és az akaratod alá való hajtásának képessége. Ez a képesség határozza meg a csapat elrejtőző-képességét, és a csapat sebességét erdős területen. (Csapat képesség)
 skl_engineer|-----
@@ -14,20 +14,20 @@ skl_surgery|Sebészet
 skl_surgery_desc|Minden pont ad 4%% esélyt, hogy egy halálra sebzett társ csak megsebesül, ahelyett, hogy meghalna. (Csapat képesség)
 skl_wound_treatment|Sebkezelés
 skl_wound_treatment_desc|A csapat gyógyulási sebessége szintenként 20%%-al nő. (Csapat képesség)
-skl_inventory_management|Tárgykezelés
-skl_inventory_management_desc|Minden képzettségi szint +6-tal növeli a tárolókapacitást. Csökkenti az élelmiszer-fogyasztást. (Vezetői képesség)
+; skl_inventory_management|Party Management
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption by 5%% and upkeep for troops in your party by 3%% per level. (Leader skill)
 skl_spotting|Éberség
 skl_spotting_desc|A csapat látótávolságát megnöveli 10%% egységnyivel per képesség szint. (Csapat képesség)
 skl_pathfinding|Útkeresés
 skl_pathfinding_desc|A csapat mozgási sebességét növeli 3%% egységnyivel per képesség szint. (Csapat képeség)
 skl_tactics|Taktika
-skl_tactics_desc|Javítja a csatabeli előnyt. Növeli az ellenséges csapatok csatlakozási távolságát és csökkenti a baráti csapatok csatlakozási távolságát 3 %% szintenként . (Vezetői készség)
+; skl_tactics_desc|Improves battle advantage. Decreases battle join range for enemy parties and increases battle join range for friendly parties by 3%% per level. (Leader skill)
 skl_tracking|Nyomkeresés
 skl_tracking_desc|Több információt kapsz a nyomokból. (Csapat képesség)
 skl_trainer|Kiképző
-skl_trainer_desc|Minden nap, minden hős ezzel a képességgel ad némi tapasztalatot minden más csapattagnak, akinek a szintje alacsonyabb az övénél. A tapasztalat szerzés a következő képen megy: {0, 4, 10, 16, 23, 30, 38, 46, 55, 65, 80}. (Személyes képesség)
+; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Cumulative skill)
 skl_looting|Zsákmányszerzés
-skl_looting_desc|Növeli a csaták után szerzett zsákmány mennyiségét és minőségét. (Csapat skill)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Cumulative skill)
 skl_horse_archery|Lovasíjászat
 skl_horse_archery_desc|Csökkenti a sebzés- és célzás büntetést íjászatra és dobófegyverre lovaglás közben. (Személyes képesség)
 skl_riding|Lovaglás

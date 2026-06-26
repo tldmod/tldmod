@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|Doświadczony Umbarski Zbrojny
 trp_i4_corsair_veteran_swordsman_pl|Doświadczonych Umbarskich Zbrojnych
 trp_i5_corsair_master_swordsman|Korsarski Mistrz Miecza
 trp_i5_corsair_master_swordsman_pl|Korsarskich Mistrzów Miecza
-trp_a4_corsair_assassin|Korsarz Zabójca
-trp_a4_corsair_assassin_pl|Korsarzy Zabójców
+; trp_i6_corsair_guard|Captain's Guard of Umbar
+; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
 trp_a5_corsair_master_assassin|Korsarz Zabójca
 trp_a5_corsair_master_assassin_pl|Korsarzy Zabójców
 trp_i4_corsair_veteran_spearman|Doborowy Włócznik z Umbaru
@@ -748,7 +748,6 @@ trp_mountain_goblin2|Górski Goblin
 trp_mountain_goblin2_pl|Górskich Goblinów
 trp_tribal_orc2|Plemienny Ork
 trp_tribal_orc2_pl|Plemiennych Orków
-trp_i5_gunda_orc_champion2|Gundabadzki Czempion Orków
 trp_i5_gunda_orc_champion2_pl|Gundabadzkich Orkowi Czempioni
 trp_i2_mordor_num_renegade|Renegat - Czarny Numenorejczyk
 trp_i2_mordor_num_renegade_pl|Renegatów - Czarnych Numenorejczyków
@@ -1501,17 +1500,17 @@ trp_evil_priest|Mroczny Kapłan
 trp_evil_priest_pl|Mroczni Kapłani
 trp_wolf_rider_of_mirkwood|Wilczy Jeździec z Mrocznej Puszczy
 trp_wolf_rider_of_mirkwood_pl|Wilczych Jeźdźców z Mrocznej Puszczy
-trp_bear_strong|Niedźwiedź
-trp_bear_strong_pl|Niedźwiedzie
+trp_bear_strong_old|Niedźwiedź
+trp_bear_strong_old_pl|Niedźwiedzie
 trp_gate_aggravator|Obrona Bram
 trp_orc_pretender|Ork Pretendent
 trp_human_prisoner|Więzień
-trp_spider|Pająk z Mrocznej Puszczy
-trp_spider_pl|Pająków z Mrocznej Puszczy
-trp_bear|Niedźwiedź
-trp_bear_pl|Niedźwiedzi
-trp_wolf|Wilk
-trp_wolf_pl|Wilków
+trp_spider_old|Pająk z Mrocznej Puszczy
+trp_spider_old_pl|Pająków z Mrocznej Puszczy
+trp_bear_old|Niedźwiedź
+trp_bear_old_pl|Niedźwiedzie
+trp_wolf_old|Wilk
+trp_wolf_old_pl|Wilków
 trp_dorwinion_sack|Dorwiniański 
 trp_ring_hunter_captain|Kapitan łowców pierścienia
 trp_ring_hunter_lt|Kapitan łowców pierścienia
@@ -1541,6 +1540,10 @@ trp_black_shield_guard|Strażnik Amath Dollen
 trp_black_shield_guard_pl|Strażnicy Amath Dollen
 trp_dorwinion_spirit_leader|Duch
 trp_dorwinion_spirit|Mniejszy Duch
+; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
+; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
+; trp_i6_dun_retainer|Dunnish Retainer
+; trp_i6_dun_retainer_pl|Dunnish Retainers
 trp_i6_beorning_bear_warrior|Niedźwiedzi Wojownik
 trp_i6_beorning_bear_warrior_pl|Niedźwiedzi Wojownik
 trp_a5_dun_night_wolf|Dunlandzki Nocny Wilk
@@ -1567,8 +1570,8 @@ trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel
 trp_npc21|Berta
-trp_werewolf|Wilkołak
-trp_werewolf_pl|Wilkołaki
+trp_werewolf_old|Wilkołak
+trp_werewolf_old_pl|Wilkołaki
 trp_moria_troll|Jaskiniowy Troll
 trp_moria_troll_pl|Jaskiniowy Troll
 trp_moria_vet_troll|Wytrenowany Jaskiniowy Troll
@@ -1633,3 +1636,43 @@ trp_merry_notmet|Niziołek
 trp_pippin|Pippin
 trp_merry|Merry
 trp_grima|Grima Gadzi Język
+trp_future_animal_0|Wilk
+trp_future_animal_0_pl|Wilków
+trp_spider|Pająk z Mrocznej Puszczy
+trp_spider_pl|Pająków z Mrocznej Puszczy
+; trp_spider_strong|Great Spider
+; trp_spider_strong_pl|Great Spiders
+trp_bear|Niedźwiedź
+trp_bear_pl|Niedźwiedzi
+; trp_bear_strong|Great Bear
+; trp_bear_strong_pl|Great Bears
+trp_wolf|Wilk
+trp_wolf_pl|Wilków
+; trp_wolf_strong|Huge Wolf
+; trp_wolf_strong_pl|Huge Wolves
+trp_werewolf|Wilkołak
+trp_werewolf_pl|Wilkołaki
+; trp_boar|Boar
+; trp_boar_pl|Boars
+; trp_boar_strong|Great Boar
+; trp_boar_strong_pl|Great Boars
+; trp_evil_beast|Evil Beast
+; trp_evil_beast_pl|Evil Beast
+; trp_evil_beast_strong|Huge Evil Beast
+; trp_evil_beast_strong_pl|Huge Evil Beasts
+; trp_bull|Wild Bull
+; trp_bull_pl|Wild Kine
+; trp_bull_strong|Great Bull
+; trp_bull_strong_pl|Great Kine
+; trp_stag|Stag
+; trp_stag_pl|Stags
+trp_future_animal_4|Wilk
+trp_future_animal_4_pl|Wilków
+trp_future_animal_5|Wilk
+trp_future_animal_5_pl|Wilków
+; trp_guthlaf|Guthláf
+trp_damrod|Damrod
+trp_duilin|Duilin
+trp_derufin|Derufin
+; trp_rumil|Rúmil
+; trp_lugdush|Lugdush

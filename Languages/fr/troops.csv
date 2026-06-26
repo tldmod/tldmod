@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|Épéiste vétéran d'Umbar
 trp_i4_corsair_veteran_swordsman_pl|Épéistes vétérans d'Umbar
 trp_i5_corsair_master_swordsman|Maître-épéiste corsaire
 trp_i5_corsair_master_swordsman_pl|Maîtres-épéistes corsaires
-trp_a4_corsair_assassin|Assassin corsaire
-trp_a4_corsair_assassin_pl|Assassins corsaires
+; trp_i6_corsair_guard|Captain's Guard of Umbar
+; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
 trp_a5_corsair_master_assassin|Assassin corsaire
 trp_a5_corsair_master_assassin_pl|Assassins corsaires
 trp_i4_corsair_veteran_spearman|Lancier vétéran d'Umbar
@@ -748,7 +748,6 @@ trp_mountain_goblin2|Gobelin des montagnes
 trp_mountain_goblin2_pl|Gobelins des montagnes
 trp_tribal_orc2|Orque tribal
 trp_tribal_orc2_pl|Orques tribaux
-trp_i5_gunda_orc_champion2|Champion orque de Gundabad
 trp_i5_gunda_orc_champion2_pl|Champions orques de Gundabad
 trp_i2_mordor_num_renegade|Númenoréen noir renégat
 trp_i2_mordor_num_renegade_pl|Númenoréens noirs renégats
@@ -1501,17 +1500,17 @@ trp_evil_priest|Prêtre maléfique
 trp_evil_priest_pl|Prêtres maléfiques
 trp_wolf_rider_of_mirkwood|Chevaucheur de loup de Grand'Peur
 trp_wolf_rider_of_mirkwood_pl|Chevaucheurs de loups de Grand'Peur
-trp_bear_strong|Ours
-trp_bear_strong_pl|Ours
+trp_bear_strong_old|Ours
+trp_bear_strong_old_pl|Ours
 trp_gate_aggravator|Défense de la porte
 trp_orc_pretender|Prétendant orque
 trp_human_prisoner|Prisonnier humain
-trp_spider|Araignée de Grand'Peur
-trp_spider_pl|Araignées de Grand'Peur
-trp_bear|Ours
-trp_bear_pl|Ours
-trp_wolf|Loup
-trp_wolf_pl|Loups
+trp_spider_old|Araignée de Grand'Peur
+trp_spider_old_pl|Araignées de Grand'Peur
+trp_bear_old|Ours
+trp_bear_old_pl|Ours
+trp_wolf_old|Loup
+trp_wolf_old_pl|Loups
 trp_dorwinion_sack|Sac du Dorwinion
 trp_ring_hunter_captain|Capitaine des chasseurs d'anneau
 trp_ring_hunter_lt|Capitaine des chasseurs d'anneau
@@ -1541,6 +1540,10 @@ trp_black_shield_guard|Garde d'Amath Dollen
 trp_black_shield_guard_pl|Gardes d'Amath Dollen
 trp_dorwinion_spirit_leader|Esprit
 trp_dorwinion_spirit|Esprit mineur
+; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
+; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
+; trp_i6_dun_retainer|Dunnish Retainer
+; trp_i6_dun_retainer_pl|Dunnish Retainers
 trp_i6_beorning_bear_warrior|Guerrier ours
 trp_i6_beorning_bear_warrior_pl|Guerriers ours
 trp_a5_dun_night_wolf|Loup nocturne dunlandais
@@ -1567,8 +1570,8 @@ trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel
 trp_npc21|Berta
-trp_werewolf|Loup-garou
-trp_werewolf_pl|Loups-garous
+trp_werewolf_old|Loup-garou
+trp_werewolf_old_pl|Loups-garous
 trp_moria_troll|Troll des cavernes
 trp_moria_troll_pl|Trolls des cavernes
 trp_moria_vet_troll|Troll des cavernes entraîné
@@ -1633,3 +1636,43 @@ trp_merry_notmet|Demi-Homme
 trp_pippin|Pippin
 trp_merry|Merry
 trp_grima|Grima Langue-de-Serpent
+trp_future_animal_0|Loup
+trp_future_animal_0_pl|Loups
+trp_spider|Araignée de Grand'Peur
+trp_spider_pl|Araignées de Grand'Peur
+; trp_spider_strong|Great Spider
+; trp_spider_strong_pl|Great Spiders
+trp_bear|Ours
+trp_bear_pl|Ours
+; trp_bear_strong|Great Bear
+; trp_bear_strong_pl|Great Bears
+trp_wolf|Loup
+trp_wolf_pl|Loups
+; trp_wolf_strong|Huge Wolf
+; trp_wolf_strong_pl|Huge Wolves
+trp_werewolf|Loup-garou
+trp_werewolf_pl|Loups-garous
+; trp_boar|Boar
+; trp_boar_pl|Boars
+; trp_boar_strong|Great Boar
+; trp_boar_strong_pl|Great Boars
+; trp_evil_beast|Evil Beast
+; trp_evil_beast_pl|Evil Beast
+; trp_evil_beast_strong|Huge Evil Beast
+; trp_evil_beast_strong_pl|Huge Evil Beasts
+; trp_bull|Wild Bull
+; trp_bull_pl|Wild Kine
+; trp_bull_strong|Great Bull
+; trp_bull_strong_pl|Great Kine
+; trp_stag|Stag
+; trp_stag_pl|Stags
+trp_future_animal_4|Loup
+trp_future_animal_4_pl|Loups
+trp_future_animal_5|Loup
+trp_future_animal_5_pl|Loups
+; trp_guthlaf|Guthláf
+trp_damrod|Damrod
+trp_duilin|Duilin
+trp_derufin|Derufin
+; trp_rumil|Rúmil
+; trp_lugdush|Lugdush

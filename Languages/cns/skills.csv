@@ -1,9 +1,9 @@
 skl_trade|交易
 skl_trade_desc|你能够更好地与铁匠和物资官合作，让他们提供给好的装备。（队伍技能）
 skl_leadership|统御
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you (player only). (Cumulative skill)
 skl_prisoner_management|俘虏管理
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners. (Party skill)
 skl_persuasion|自然力
 skl_persuasion_desc|助于在野外生存和掌控自然的能力。该能力会影响部队躲避敌人的能力和在有森林覆盖的地区移动的速度。（部队能力）
 skl_engineer|-----
@@ -14,20 +14,20 @@ skl_surgery|手术
 skl_surgery_desc|每点增加4%%的机会，使得本来会死亡的队伍成员保住性命。(队伍技能)
 skl_wound_treatment|疗伤
 skl_wound_treatment_desc|每级增加队伍生命值回复速度20%%。(队伍技能)
-skl_inventory_management|物品管理
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+; skl_inventory_management|Party Management
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption by 5%% and upkeep for troops in your party by 3%% per level. (Leader skill)
 skl_spotting|侦查
 skl_spotting_desc|每点增加队伍侦察范围10%%。(队伍技能)
 skl_pathfinding|向导
 skl_pathfinding_desc|每点增加队伍地图移动速度3%%。(队伍技能)
 skl_tactics|战术
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Decreases battle join range for enemy parties and increases battle join range for friendly parties by 3%% per level. (Leader skill)
 skl_tracking|跟踪
 skl_tracking_desc|从脚印和其它印迹中发现更多信息。(队伍技能)
 skl_trainer|教练
-skl_trainer_desc|每天每位有该项技能的英雄会增加经验值给其它级别较低的队伍成员。传授的经验值依次为：{0,4,10,16,23,30,38,46,55,65,80}。(个人技能)
+; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Cumulative skill)
 skl_looting|掠夺
-skl_looting_desc|提高胜利后战利品的数量和质量。（队伍技能）
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Cumulative skill)
 skl_horse_archery|骑射
 skl_horse_archery_desc|减少在马背上射箭与投掷的精度和伤害损失。(个人技能)
 skl_riding|骑术

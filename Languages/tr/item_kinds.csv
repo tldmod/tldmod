@@ -293,6 +293,7 @@ itm_orc_tribal_b|İşlenmemiş Deri
 itm_orc_tribal_c|İşlenmemiş Deri
 itm_evil_gauntlets_a|Siyah Eldiven
 itm_evil_gauntlets_b|Siyah Zırhlı Eldiven
+; itm_orc_mittens|Orc Mittens
 itm_isen_orc_light_a|Hafif Isengard Ork Zırhı
 itm_isen_orc_light_b|Hafif Isengard Ork Zırhı
 itm_isen_orc_pad_a|Isengard Ork Hafif Kademeli Zırhı
@@ -323,7 +324,7 @@ itm_orc_bastard_scimitar|Büyük Ork Palası
 ; itm_orc_cleaver_a|Orc Cleaver
 itm_orc_scimitar_b|Ork Egri Kılıcı
 itm_orc_sabre_b|Ork Süvari Kılıcı
-; itm_orc_mangler|Orc Mangler
+; itm_orc_mangler|Orc Spiked Staff
 itm_isengard_sword|Isengard Kılıcı
 itm_isengard_axe|Isengard Baltası
 itm_isengard_hammer|Isengard Çekici
@@ -446,14 +447,17 @@ itm_dunland_chieftain|Dunnish Şef Zırhı
 itm_dun_helm_a|Dunnish Kurt Kepi
 itm_dun_helm_b|Dunnish Kürk Şapkası
 itm_dun_helm_c|Dunnish Uzun Migfer
+; itm_dun_helm_d|Dunnish Skullcap
 itm_dun_shield_a|Dunnish Yuvarlak Kalkanı
 itm_dun_shield_b|Dunnish Oval Kalkanı 
 itm_dun_berserker|Dunland Kabile Reisi Kılıcı
 itm_dunnish_antler_axe|Dunnish Anten Baltası
 itm_dunnish_war_axe|Dunnish Savaş Baltası
-itm_dunnish_axe|Dunnish Baltası
+; itm_dunnish_axe|Dunnish Light Axe
 itm_dunland_spear|Dunnish Mızragı
 itm_dunnish_pike|Dunnish Kargısı
+; itm_dunnish_long_axe|Dunnish Long Axe
+; itm_dun_shortsword|Dunnish Short Sword
 itm_rohan_cav_sword|Rohan Binici Kılıcı
 itm_rohan_inf_sword|Rohan Kılıcı
 itm_rohan_spear|Rohan Mızragı
@@ -490,6 +494,7 @@ itm_mirkwood_pad|Yeşilorman Kapitone Mont
 itm_mirkwood_mail|Yeşilorman Örme Zırhı
 itm_mirkwood_scale|Yeşilorman Hafif Pullu Zırh
 itm_mirkwood_heavy_scale|Kuytuorman Yaprakpulu
+; itm_mirkwood_axe_2h|Greenwood Great axe
 itm_mirkwood_sword|Orman Elfi Kılıcı
 itm_mirkwood_great_spear|Yeşilorman Büyük Mızragı
 itm_mirkwood_war_spear|Yeşilorman Savaş Mızragı
@@ -651,10 +656,9 @@ itm_umb_helm_d|Korsan Akıncı Migferi
 itm_umb_helm_reward|Antik Numenorean Kama
 itm_corsair_trident|Deniz Öfkesinin Zıpkını
 itm_corsair_boots|Korsan Çizmesi
-itm_umb_shield_a|Korsan Kalkanı
+; itm_umb_shield_a|Corsair Shell Shield
 itm_umb_shield_b|Korsan Küçük Kalkanı
-itm_umb_shield_c|Korsan Küçük Kalkanı
-itm_umb_shield_d|Korsan Küçük Kalkanı 
+; itm_umb_shield_c|Corsair Round Shield
 itm_umbar_spear|Umbar Kısa Mızragı
 itm_umbar_cutlass|Umbar Denizci Kaması
 itm_kraken|Kraken Denizci Kaması
@@ -735,7 +739,7 @@ itm_rohan_lance_banner_horse|Rohan At Sancak Mızragı
 itm_fur_gloves_reward|Avcı Eldivenleri
 itm_ent_water|Tuhaf Su Kabı
 itm_map|Orta Dünya'nınHaritaları
-itm_athelas_reward|Kurutulmuş Athelas Yaprakları
+; itm_athelas_reward|Healing Herbs
 itm_phial_reward|Galadriel'in Işıgı
 itm_scroll_reward|Gondolin'in Çöküşü
 itm_hammer_reward|Demircinin Çekici
@@ -788,6 +792,7 @@ itm_rohan_armor_th|Rohan Kraliyet Zırhı
 itm_wilderness_cowl|Avcı Cüppesi
 itm_prisoner_coll_chain|Esir Zincirleri
 itm_witchking_helmet|Sihirbaz'ın Maskesi
+; itm_bat_reward|Bat of Gundabad
 itm_feet_chains|Ayak Zincirleri
 itm_feet_chains_dwarf|Ayak Zincirleri
 itm_spider|Örümcek
@@ -849,3 +854,18 @@ itm_work_basket_2|Sepet
 itm_spider_mount|Örümcek
 ; itm_marker_night_troop|Trait: Night Troop
 ; itm_marker_berserker|Trait: Berserker
+; itm_marker_hp_shield|Trait: Unyielding
+; itm_marker_scares_wargs|Trait: Warg Fiend
+; itm_marker_scares_horses|Trait: Horse Fiend
+; itm_marker_banner_troop|Trait: Banner
+; itm_pipeweed_reward|Pipe-weed
+; itm_spider_strong|Huge Spider
+; itm_bear_strong|Great Bear
+itm_wolf_strong|Büyük kurt
+; itm_boar|Boar
+; itm_boar_strong|Great Boar
+; itm_beast|Evil Beast
+; itm_beast_strong|Huge Evil Beast
+; itm_kine|Wild Bull
+; itm_kine_strong|Great Bull
+; itm_torch|Torch

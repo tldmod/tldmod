@@ -1,9 +1,9 @@
 skl_trade|Người mặc cả
 skl_trade_desc|Làm cho thợ rèn và thợ cung cấp hợp tác hơn và cung cấp thiết bị tốt hơn. (Kỹ năng nhóm)
 skl_leadership|Khả năng lãnh đạo
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you (player only). (Cumulative skill)
 skl_prisoner_management|Quản lý tù nhân
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners. (Party skill)
 skl_persuasion|Wildcraft
 skl_persuasion_desc|Khả năng tồn tại trong vùng hoang dã và uốn nắn nó theo ý muốn của bạn. Kỹ năng này ảnh hưởng đến khả năng ẩn nấp khỏi kẻ thù của cả nhóm và tốc độ của nhóm khi ở trong địa hình nhiều cây cối. (Kỹ năng nhóm)
 skl_engineer|-----
@@ -14,20 +14,20 @@ skl_surgery|Ca phẫu thuật
 skl_surgery_desc|Mỗi điểm của kỹ năng này cho 4%% cơ hội khiến một thành viên trong nhóm bị trọng thương sẽ bị thương hơn là bị giết. (Kỹ năng nhóm)
 skl_wound_treatment|Điều trị vết thương
 skl_wound_treatment_desc|Tốc độ hồi máu của nhóm được tăng thêm 20%% mỗi cấp của kỹ năng này. (Kỹ năng nhóm)
-skl_inventory_management|Quản lý hàng tồn kho
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+; skl_inventory_management|Party Management
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption by 5%% and upkeep for troops in your party by 3%% per level. (Leader skill)
 skl_spotting|Đánh dấu
 skl_spotting_desc|Phạm vi nhìn thấy nhóm được tăng thêm 10%% mỗi cấp độ kỹ năng. (Kỹ năng nhóm)
 skl_pathfinding|Tìm đường
 skl_pathfinding_desc|Tốc độ bản đồ của nhóm được tăng thêm 3%% mỗi cấp độ kỹ năng. (Kỹ năng nhóm)
 skl_tactics|Chiến thuật
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Decreases battle join range for enemy parties and increases battle join range for friendly parties by 3%% per level. (Leader skill)
 skl_tracking|Theo dõi
 skl_tracking_desc|Theo dõi trở nên nhiều thông tin hơn. (Kỹ năng nhóm)
 skl_trainer|Huấn luyện viên
-skl_trainer_desc|Mỗi ngày, mỗi anh hùng có kỹ năng này sẽ thêm một số kinh nghiệm cho mọi thành viên khác trong nhóm có cấp độ thấp hơn anh/cô ấy. Kinh nghiệm nhận được là: {0,4,10,16,23,30,38,46,55,65,80}. (Kỹ năng cá nhân)
+; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Cumulative skill)
 skl_looting|Cướp phá
-; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Cumulative skill)
 skl_horse_archery|Bắn cung
 skl_horse_archery_desc|Giảm sát thương và hình phạt chính xác cho bắn cung và ném khi được gắn. (Kỹ năng cá nhân)
 skl_riding|Cưỡi ngựa

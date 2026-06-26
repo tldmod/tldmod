@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|Umbari veterán kardforgató
 trp_i4_corsair_veteran_swordsman_pl|Umbari veterán kardforgatók
 trp_i5_corsair_master_swordsman|Kalóz kardforgató
 trp_i5_corsair_master_swordsman_pl|Kalóz kardforgatók
-trp_a4_corsair_assassin|Kalóz orgyilkos
-trp_a4_corsair_assassin_pl|Kalóz orgyilkosok
+; trp_i6_corsair_guard|Captain's Guard of Umbar
+; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
 trp_a5_corsair_master_assassin|Kalóz orgyilkos
 trp_a5_corsair_master_assassin_pl|Kalóz orgyilkosok
 trp_i4_corsair_veteran_spearman|Umbari veterán lándzsás
@@ -748,7 +748,6 @@ trp_mountain_goblin2|Hegyi kobold
 trp_mountain_goblin2_pl|Hegyi koboldok
 trp_tribal_orc2|Törzsi ork
 trp_tribal_orc2_pl|Törzsi orkok
-trp_i5_gunda_orc_champion2|Gundabadi Ork Bajnok
 trp_i5_gunda_orc_champion2_pl|Gundabadi Ork Bajnokok
 trp_i2_mordor_num_renegade|Fekete númenori köpönyegforgató
 trp_i2_mordor_num_renegade_pl|Fekete númenori köpönyegforgatók
@@ -1501,17 +1500,17 @@ trp_black_numenorean_sorcerer|Fekete númenori varázsló
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|Bakacsinerdei farkaslovas
 trp_wolf_rider_of_mirkwood_pl|Bakacsinerdei farkaslovasok
-trp_bear_strong|Medve
-trp_bear_strong_pl|Medvék
+trp_bear_strong_old|Medve
+trp_bear_strong_old_pl|Medvék
 trp_gate_aggravator|Kapuvédelem
 trp_orc_pretender|Ork tettető
 trp_human_prisoner|Emberi fogoly
-trp_spider|Bakacsinerdei pók
-trp_spider_pl|Bakacsinerdei pókok
-trp_bear|Medve
-trp_bear_pl|Medvék
-trp_wolf|Farkas
-trp_wolf_pl|Farkasok
+trp_spider_old|Bakacsinerdei pók
+trp_spider_old_pl|Bakacsinerdei pókok
+trp_bear_old|Medve
+trp_bear_old_pl|Medvék
+trp_wolf_old|Farkas
+trp_wolf_old_pl|Farkasok
 trp_dorwinion_sack|Dorwinioni zsák
 trp_ring_hunter_captain|Gyűrűvadász kapitány
 trp_ring_hunter_lt|Gyűrűvadász kapitány
@@ -1541,6 +1540,10 @@ trp_start_quest_beorning_pl|Beornfi szirtfői berzerkerek
 ; trp_black_shield_guard_pl|Amath Dollen's Guards
 trp_dorwinion_spirit_leader|Szellem
 trp_dorwinion_spirit|Alacsonyabb rendű szellem
+; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
+; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
+; trp_i6_dun_retainer|Dunnish Retainer
+; trp_i6_dun_retainer_pl|Dunnish Retainers
 trp_i6_beorning_bear_warrior|Medveharcos
 trp_i6_beorning_bear_warrior_pl|Medveharcosok
 trp_a5_dun_night_wolf|Dún éjfarkas
@@ -1567,8 +1570,8 @@ trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigurphel
 trp_npc21|Berta
-trp_werewolf|Vérfarkas
-trp_werewolf_pl|Farkasember
+trp_werewolf_old|Vérfarkas
+trp_werewolf_old_pl|Farkasember
 trp_moria_troll|Barlangi troll
 trp_moria_troll_pl|Barlangi trollok
 trp_moria_vet_troll|Képzett barlangi troll
@@ -1633,3 +1636,43 @@ trp_merry_notmet|félszerzet
 trp_pippin|Pippin
 trp_merry|Trufa
 trp_grima|Kígyónyelvű Gríma
+trp_future_animal_0|Farkas
+trp_future_animal_0_pl|Farkasok
+trp_spider|Bakacsinerdei pók
+trp_spider_pl|Bakacsinerdei pókok
+; trp_spider_strong|Great Spider
+; trp_spider_strong_pl|Great Spiders
+trp_bear|Medve
+trp_bear_pl|Medvék
+; trp_bear_strong|Great Bear
+; trp_bear_strong_pl|Great Bears
+trp_wolf|Farkas
+trp_wolf_pl|Farkasok
+; trp_wolf_strong|Huge Wolf
+; trp_wolf_strong_pl|Huge Wolves
+trp_werewolf|Vérfarkas
+trp_werewolf_pl|Farkasember
+; trp_boar|Boar
+; trp_boar_pl|Boars
+; trp_boar_strong|Great Boar
+; trp_boar_strong_pl|Great Boars
+; trp_evil_beast|Evil Beast
+; trp_evil_beast_pl|Evil Beast
+; trp_evil_beast_strong|Huge Evil Beast
+; trp_evil_beast_strong_pl|Huge Evil Beasts
+; trp_bull|Wild Bull
+; trp_bull_pl|Wild Kine
+; trp_bull_strong|Great Bull
+; trp_bull_strong_pl|Great Kine
+; trp_stag|Stag
+; trp_stag_pl|Stags
+trp_future_animal_4|Farkas
+trp_future_animal_4_pl|Farkasok
+trp_future_animal_5|Farkas
+trp_future_animal_5_pl|Farkasok
+; trp_guthlaf|Guthláf
+trp_damrod|Damrod
+trp_duilin|Duilin
+trp_derufin|Derufin
+; trp_rumil|Rúmil
+; trp_lugdush|Lugdush

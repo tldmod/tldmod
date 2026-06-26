@@ -1,5 +1,7 @@
 dlga_start:mutiny_pretalk_1|Hé, {playername}, faut qu'on vous le dise... ^Les gars sont mécontents ! On veut plus d'amusement et moins de marches forcées.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|Retourne dans le rang, vermine ! Nous sommes en guerre et c'est moi qui commande !
+; dlga_mutiny_pretalk_1:mutiny_pretalk_2|Fall back in line, maggot! We are at war and I'm your commander. [Charisma]
+; dlga_mutiny_pretalk_1:close_window|Want some fun eh? You maggot! I will slay you here and now, that will keep the lads entertained!
+; dlga_mutiny_pretalk_1:close_window.1|I will not tolerate such treacherous talk! Guards, kill him and his cronies!
 dlga_mutiny_pretalk_2:close_window|Comme vous voulez, commandant. Comme vous voulez...
 dlga_start:mutiny_talk_1|Hé, commandant. Vous savez quoi.... Les hommes ne sont pas contents, pas contents du tout. ^Pas assez de chair humaine, pas assez d'amusement. ^Les hommes disent que vous n'êtes pas assez bon, commandant !
 dlga_mutiny_talk_1:mutiny_talk_2|Quoi ? Une mutinerie en temps de guerre ? ^C'est puni de mort, microbe !
@@ -120,6 +122,15 @@ dlga_member_separate:member_separate_confirm|Ah vraiment ? Dans ce cas je ne vai
 dlga_member_separate_confirm:member_separate_yes|C'est juste. C'est ici que nos chemins se séparent.
 dlga_member_separate_confirm:do_member_trade|Non, je préférerais vous avoir à mes côtés.
 dlga_member_separate_yes:close_window|Bien, je m'en vais dans ce cas. Revenez me voir si vous avez besoin de moi.
+; dlga_member_talk:member_promote_lord|You should return to {s14} and gather warriors to lead against the enemy.
+; dlga_member_promote_lord:member_talk|Hrmph! Why should I care about {s14}? I'd rather stay here with you.
+; dlga_member_promote_lord:member_talk.1|Return to what? {s14} is gone. Perhaps if I had been able to return sooner it might have made some difference, but now the best place for me to seek vengeance is at your side.
+; dlga_member_promote_lord:member_talk.2|There are few who would follow me, I'm afraid. Perhaps I could learn a thing or two about leadership from you? Then we can discuss this again.
+; dlga_member_promote_lord:member_talk.3|{s14} remains strong in the face of our enemies and has no need of additional commanders. If a commander of {s14} should fall in battle let us speak of this again, but for now I think it is better if I stay with you.
+; dlga_member_promote_lord:member_promote_lord_2|Perhaps you're right. {s14} has need of more capable commanders. {s15} Are you sure you're ready for me to leave your side?
+; dlga_member_promote_lord_2:member_promote_lord_leaving|I am sure. You can do more leading a host of your own.
+; dlga_member_promote_lord_leaving:close_window|Well. I'll be off, then. Perhaps we will meet again.
+; dlga_member_promote_lord_2:do_member_trade|On second thought I'd rather you stay with me for now.
 dlga_member_talk:member_question|Je voudrais vous demander quelque chose.
 dlga_member_talk:close_window|Oubliez ça.
 dlga_member_question:member_question_2|Entendu. Que vouliez-vous demander ?
@@ -178,6 +189,21 @@ dlga_companion_personalitymatch_response:close_window|Très bien.
 dlga_event_triggered:companion_faction_demolished|{s5}, {reg6?notre:ma} patrie {s6} souffre cruellement de la guerre, je vous demande d’envisager d’aider {reg6?notre:mon} peuple dès que nous serons reposés et prêts.
 dlga_companion_faction_demolished:close_window|Alors nous chevaucherons pour aider {s6} sans délai.
 dlga_companion_faction_demolished:close_window.1|Je suis navré, mais nous sommes attendus ailleurs.
+; dlga_event_triggered:companion_faction_dying_pretalk|{s5}, I am sorry, but the suffering of {reg6?our:my} {s6} homeland is too great. I must return at once to provide what aid I can.
+; dlga_companion_faction_dying_pretalk:companion_faction_dying|Farewell, {s5}.
+; dlga_companion_faction_dying:close_window|Very well. Perhaps we will meet again.
+; dlga_companion_faction_dying:companion_give_troops|Of course. I shall also permit other warriors of {s6} to go with you.
+; dlga_companion_give_troops:companion_give_troops_check|I will be glad to have them with me. {s6} needs all the help you can provide.
+dlga_companion_give_troops:companion_give_troops_final|Malheureusement vous n’avez pas les {s14} soldats nécessaires pour me renforcer.
+dlga_companion_give_troops_check:companion_give_troops_check_1|Laissez-moi vérifier l'état des troupes...
+; dlga_companion_give_troops_check_1:companion_give_troops_final|So you've changed your mind...^I see.
+dlga_companion_give_troops_check_1:companion_give_troops_final.1|Ceux-ci ne me sont d'aucune utilité ici... ^Reprenez-les..
+; dlga_companion_give_troops_final:close_window|Farewell, commander.
+; dlga_companion_faction_dying:companion_faction_dying_trade|Let me see your equipment before you leave.
+dlga_companion_faction_dying_trade:companion_faction_dying_pretalk|Entendu, tout est ici...
+; dlga_companion_faction_dying:companion_faction_dying_persuade|I understand, but you are needed here.
+; dlga_companion_faction_dying_persuade:close_window|Perhaps you are right. I can serve {s6} better by fighting at your side.
+; dlga_companion_faction_dying_persuade:close_window.1|I'm afraid that {s6} needs me more. Farewell, {s5}.
 dlga_companion_home_description:companion_home_description_2|Dites m'en plus.
 dlga_companion_home_description:close_window|Nous n'avons pas le temps de discuter maintenant.
 dlga_companion_home_description:close_window.1|Je préfère que mes compagnons ne me dérangent pas pour de telles futilités.
@@ -456,6 +482,7 @@ dlga_send_gift_3:send_gift_4.1|Que jugez-vous utile de leur envoyer pour les sou
 dlga_send_gift_4:lord_pretalk|Oubliez ça.
 dlga_send_gift_5:lord_pretalk|Très bien {playername}. Bonne chance.
 dlga_lord_talk:lord_give_order_ask|J'ai une nouvelle tâche à vous confier.
+; dlga_lord_give_order_ask:lord_pretalk|My duty is to defend my homeland. I will not accept any other assignments.
 dlga_lord_give_order_ask:lord_give_order|Oui ?
 dlga_lord_give_order:lord_give_order_answer|Suivez-moi. [Cette action vous coûtera {reg1}/{reg2} d'influence]
 dlga_lord_give_order:lord_give_order_details_ask|Allez à… [Cette action vous coûtera {reg1}/{reg2} d'influence]
@@ -641,6 +668,9 @@ dlga_lord_mission_told:lord_mission_accepted|Vous pouvez compter sur moi, {s65}.
 dlga_lord_mission_told:lord_mission_rejected|Je crains de ne pouvoir accepter une telle mission pour le moment.
 dlga_lord_mission_accepted:close_window|Excellent, {playername}, excellent. J'ai toute confiance en vous.
 dlga_lord_mission_rejected:close_window|Ah c'est comme ça ? Je suppose que vous n'êtes simplement pas à la hauteur. Je vais devoir chercher une personne plus courageuse.
+; dlga_lord_talk:lord_return_items|I need you to return the unique {reg2?items:item} I gave you.
+; dlga_lord_return_items:lord_talk|Of course I will return {reg2?these items:this item} to you but it seems like you have no room in your inventory currently. Make some room, then ask me again.
+; dlga_lord_return_items:lord_talk.1|Of course. Here {reg2?they are:it is}.
 dlga_lord_talk:lord_leave_prison|Je dois partir à présent.
 dlga_lord_talk:lord_leave|Cette petite discussion est terminée. Je dois y aller.
 dlga_lord_talk:lord_leave.1|Je dois prendre congé.
@@ -886,6 +916,8 @@ dlga_mayor_sea_battle_no:close_window|Dépêchez-vous, nous n'avons que peu de t
 dlga_mayor_talk:mayor_reinforced_center_finished|J'ai renforcé {s3} comme vous me l'avez demandé.
 dlga_mayor_begin:kill_quest_bandits_failed|J'ai appris que vous aviez échoué à accomplir ce que je vous ai demandé. C'est décevant {playername}.
 dlga_kill_quest_bandits_failed:close_window|Je ferais mieux la prochaine fois.
+; dlga_mayor_begin:mayor_hunt_beast_quest_failed|I have heard that the {s9} slipped your grasp and that its trail was lost. It may have vanished for now, but the danger remains.
+; dlga_mayor_hunt_beast_quest_failed:close_window|This was no ordinary beast. I failed this time, but I shall not underestimate the wilds again.
 dlga_mayor_talk:mayor_deliver_food|Voici vos provisions, {reg9} unités.
 dlga_mayor_deliver_food:mayor_deliver_food_completed|Très beau travail, {playername}, nos magasins d'alimentation sont pleins à nouveau et personne ne mourra de faim.
 dlga_mayor_deliver_food_completed:close_window|Je fais ce que je peux.
@@ -939,16 +971,17 @@ dlga_merchant_quest_brief:merchant_quest_brief_reinforce_center|{s5} à été ma
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_taken|Très bien. Je vais faire mon possible.
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_stall|Je suis désolé{/e}, vous allez devoir trouver quelqu'un d'autre pour ceci.
 dlga_mayor_mission_told_kill_quest_bandit:merchant_quest_stall|Je ne peux pas faire ça maintenant.
-dlga_merchant_quest_requested:merchant_quest_brief.4|Merci de proposer votre aide. En fait, je cherche quelqu'un pour nous approvisionner en nourriture. Peut-être pouvez-vous le faire...
+dlga_mayor_mission_told_hunt_beast:merchant_quest_stall|Je ne peux pas faire ça maintenant.
+dlga_merchant_quest_requested:merchant_quest_brief.5|Merci de proposer votre aide. En fait, je cherche quelqu'un pour nous approvisionner en nourriture. Peut-être pouvez-vous le faire...
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Nos réserves de nourriture s'amenuisent et les convois d'approvisionnement sont harcelés par l'ennemi. J'ai besoin de quelqu'un pour nous apporter {reg5} unités de nourriture en {reg6} jours, ou nous allons commencer à mourir de faim. Peut-être que les cités voisines ont assez de surplus pour nous. Qu'en dites-vous ?
 dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|Bien. Je vais trouver de la nourriture et vous l'apporter.
 dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|Je suis désolé{/e}, vous allez devoir trouver quelqu'un d'autre pour ceci.
-dlga_merchant_quest_requested:merchant_quest_brief.5|Une tâche, dites-vous ? En fait je cherche quelqu'un pour nous fournir du minerai et des métaux. Les mines et les routes ne sont plus sûres, et être réapprovisionné en matières premières est de plus en plus difficile. L'ennemi doit avoir ses propres moyens obscurs, mais efficaces d'extraire du minerai, car nous avons vu des orques et d'autres vermines aller au combat couverts de métal. Leur qualité correspond à celle de leur porteurs : c'est du fer de qualité inférieure ; du genre à vous lâcher au pire moment et que nous n'utiliserions pas en temps normal. Mais en ces temps troublés, nos forgerons ont appris à se débrouiller avec des matériaux pauvres si nécessaire. Le moindre geste peut aider.
-dlga_merchant_quest_requested:merchant_quest_brief.6|Une tâche, dites-vous ? Le Maître demande de plus en plus de troupes chaque jour, et ils ne se sont jamais suffisamment près pour la bataille pour Lui... Mais les armures ne poussent pas sur la peau , vous savez ?^ Ces asticots en charge de l'approvisionnement en minerai sont perfides et faibles, ils se font facilement massacrer et alors nous nous retrouvons sans matériaux. Mais ces hommes, ces elfes... ils sont toujours couverts de brillants et riches métaux qui les protègent comme s'ils étaient tous des rois, quelque soit leur naissance.^Pillez leurs cadavres et ramenez-moi ce métal, {playername}. Avec une livre de fer, notre fonderie peut créer suffisamment d'équipement pour recouvrir un groupe entier de guerriers.
+dlga_merchant_quest_requested:merchant_quest_brief.6|Une tâche, dites-vous ? En fait je cherche quelqu'un pour nous fournir du minerai et des métaux. Les mines et les routes ne sont plus sûres, et être réapprovisionné en matières premières est de plus en plus difficile. L'ennemi doit avoir ses propres moyens obscurs, mais efficaces d'extraire du minerai, car nous avons vu des orques et d'autres vermines aller au combat couverts de métal. Leur qualité correspond à celle de leur porteurs : c'est du fer de qualité inférieure ; du genre à vous lâcher au pire moment et que nous n'utiliserions pas en temps normal. Mais en ces temps troublés, nos forgerons ont appris à se débrouiller avec des matériaux pauvres si nécessaire. Le moindre geste peut aider.
+dlga_merchant_quest_requested:merchant_quest_brief.7|Une tâche, dites-vous ? Le Maître demande de plus en plus de troupes chaque jour, et ils ne se sont jamais suffisamment près pour la bataille pour Lui... Mais les armures ne poussent pas sur la peau , vous savez ?^ Ces asticots en charge de l'approvisionnement en minerai sont perfides et faibles, ils se font facilement massacrer et alors nous nous retrouvons sans matériaux. Mais ces hommes, ces elfes... ils sont toujours couverts de brillants et riches métaux qui les protègent comme s'ils étaient tous des rois, quelque soit leur naissance.^Pillez leurs cadavres et ramenez-moi ce métal, {playername}. Avec une livre de fer, notre fonderie peut créer suffisamment d'équipement pour recouvrir un groupe entier de guerriers.
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|Nous avons besoin de {reg5} unités de {s6} en {reg6} jours, avant que le forgeron tombe à court de matériaux. Qu'en dites-vous ? 
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|Très bien. J'irais chercher des déchets métalliques et je vous les apporterai.
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|Je suis trop occupé{/e} pour me charger de ça.
-dlga_merchant_quest_requested:merchant_quest_brief.7|Merci de proposer votre aide. En fait, je cherche quelqu'un pour escorter un convoi d'approvisionnement. Peut-être pourriez-vous vous en charger ?
+dlga_merchant_quest_requested:merchant_quest_brief.8|Merci de proposer votre aide. En fait, je cherche quelqu'un pour escorter un convoi d'approvisionnement. Peut-être pourriez-vous vous en charger ?
 dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|Je suis sur le point d'envoyer un convoi de ravitaillement à {s8}. Cependant, avec tous ces ennemis en patrouille par ici, je n'ai pas envie de les envoyer sans escorte supplémentaire. Un groupe d'au moins {reg4} personnes leur offrirait une bonne protection. Pourriez-vous emmener ce convoi à {s8} en 7 jours ?^^[vous gagnerez {reg14} points de ressources de {s14}]
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Très bien. Je vais escorter le convoi de ravitaillement.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Je crains de ne pas avoir suffisamment d'hommes avec moi. 
@@ -963,7 +996,7 @@ dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|Suivez-moi. Je vo
 dlga_merchant_caravan_follow_lead:close_window|Très bien. Nous serons juste derrière vous.
 dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|Restez ici quelques temps. Je vais partir en éclaireur pour vérifier la route.
 dlga_merchant_caravan_stay_here:close_window|Très bien. Nous vous attendrons ici.
-dlga_merchant_quest_requested:merchant_quest_brief.8|En fait, je cherche un commandant compétent comme vous. Il y a ce  groupe de gobelins particulièrement problématique. Ils infestent les environs, attaquant les convois de marchandises et les guerriers isolés. Ils ont évité toutes nos patrouilles jusqu'à maintenant. Si personne ne les arrête bientôt, je devrais demander une sérieuse action militaire...
+dlga_merchant_quest_requested:merchant_quest_brief.9|En fait, je cherche un commandant compétent comme vous. Il y a ce  groupe de gobelins particulièrement problématique. Ils infestent les environs, attaquant les convois de marchandises et les guerriers isolés. Ils ont évité toutes nos patrouilles jusqu'à maintenant. Si personne ne les arrête bientôt, je devrais demander une sérieuse action militaire...
 dlga_merchant_quest_brief:troublesome_bandits_quest_brief|J'ai besoin de quelqu'un pour chasser ces gobelins qui posent problème. C'est un travail dangereux, mais vous avez l'air d'être la personne de la situation. Qu'en dites-vous ?^^[vous gagnerez {reg14} points de ressource de {s14}]
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|D'accord, je vais traquer ces gobelins.
 dlga_merchant_quest_taken_bandits:close_window|Vraiment ? Je suis si heureux d'entendre cela. Bonne chance à vous.
@@ -973,7 +1006,7 @@ dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|Il y a un group
 dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Tuer des bandits rebelles ? Mais avec plaisir !
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Non, je ne suis pas intéressé{/e}.
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|Cela m'ôte un poids des épaules, {playername}. Vous pouvez vous attendre à une belle récompense si vous revenez victorieu{x/se}. Surtout ne vous faites pas tuer, hein ?
-dlga_merchant_quest_requested:merchant_quest_brief.9|Le commandant de la de garnison cherche un guerrier plein de ressources pour accompagner un groupe de {s12} à {s13}.
+dlga_merchant_quest_requested:merchant_quest_brief.10|Le commandant de la de garnison cherche un guerrier plein de ressources pour accompagner un groupe de {s12} à {s13}.
 dlga_merchant_quest_brief:move_cattle_herd_quest_brief|Le groupe doit arriver à {s13} dans les {reg6} jours. Le plus tôt sera le mieux, mais cela doit être absolument pas plus tard que {reg6} jours. Pouvez-vous faire cela ?^^[vous gagnerez {reg14} points de ressources de {s14}]
 dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Oui, je peux les mener à {s13}.
 dlga_move_cattle_herd_quest_brief:merchant_quest_stall|Non, sans façon.
@@ -1119,6 +1152,11 @@ dlga_party_encounter_hostile_attacker:close_window|N'attaquez pas ! Nous nous re
 dlga_party_encounter_hostile_attacker:close_window.1|Nous vous combattrons jusqu'à la mort !
 dlga_start:party_encounter_hostile_defender|Que voulez-vous ?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Rendez-vous ou vous mourrez !
+dlga_kingdom_companion_meet:kingdom_companion_intro|Je m'appelle {playername}.
+dlga_kingdom_companion_meet:kingdom_companion_intro.1|Mon nom est {playername}. À votre service.
+; dlga_start:kingdom_companion_start|Greetings, {playername}...
+; dlga_kingdom_companion_start:close_window.1|If you have business with our company you should speak with my {s5}, {s3}.
+dlga_kingdom_companion_leaving:close_window|Adieu.
 dlga_party_encounter_hostile_defender:close_window|Rien, nous vous laissons en paix.
 dlga_start:close_window.53|*vous dévisage silencieusement*
 dlga_start:battle_reason_stated|Rendez-vous ou mourrez. Faites votre choix.

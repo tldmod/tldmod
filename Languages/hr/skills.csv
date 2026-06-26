@@ -1,9 +1,9 @@
 skl_trade|Trgovac
 ; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
 skl_leadership|Vodstvo
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you. (Personal skill)
+; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you (player only). (Cumulative skill)
 skl_prisoner_management|Upravljanje zatvorenicima
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners .(Party skill)
+; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners. (Party skill)
 skl_persuasion|Preživljavanje u divljini
 skl_persuasion_desc|Sposobnost preživljavanja u divljini. Ovaj vještina utječe na sposobnost vojske da se sakrije, i brzinu vojske da se kreče kroz šumu. (Vještina vojske)
 ; skl_engineer|-----
@@ -14,20 +14,20 @@ skl_surgery|Kirurgija
 skl_surgery_desc|Svaki dodatni bod ove vještine daje 4%%  priliku da će smrtno pogođen član družine prije biti ranjen nego ubijen. (vještina družine)
 skl_wound_treatment|Obrada rana
 skl_wound_treatment_desc|Svakim  dodatni nivo ove vještine ubrzava oporavak Družine za 20%%. (vještina družine)
-skl_inventory_management|Upravljanje inventarom
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption. (Leader skill)
+; skl_inventory_management|Party Management
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption by 5%% and upkeep for troops in your party by 3%% per level. (Leader skill)
 skl_spotting|Uočavanje
 skl_spotting_desc|Doseg pogleda družine se povećava za 10%%  za svaki dodatni nivo vještine. (vještina družine)
 skl_pathfinding|Pronalazak puta
 skl_pathfinding_desc|Za svaki dodatni nivo vještine brzina otkrivanja mape za Družinu se povećava za 3%%. (vještina družine)
 skl_tactics|Taktika
-; skl_tactics_desc|Improves battle advantage. Increases battle join distance for enemy parties and decreases battle join distance for friendly parties by 3%% per level. (Leader skill)
+; skl_tactics_desc|Improves battle advantage. Decreases battle join range for enemy parties and increases battle join range for friendly parties by 3%% per level. (Leader skill)
 skl_tracking|Praćenje
 skl_tracking_desc|Više se može pročitati iz traga. (vještina družine)
 skl_trainer|Trener
-skl_trainer_desc|Svaki dan, svaki junak s ovom vještinom daje iskustvo svakom drugom članu družine čije je nivo niži od njegovog/ njenog. Dobiveno iskustvo ide od: {0,4,10,16,23,30,38,46,55,65,80}. (Osobna vještina)
+; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Cumulative skill)
 skl_looting|Pljačkanje
-; skl_looting_desc|Increases amount and quality of loot gained after battles. (Party skill)
+; skl_looting_desc|Increases amount and quality of loot gained after battles. (Cumulative skill)
 skl_horse_archery|Streličarstvo na konju
 skl_horse_archery_desc|Smanjuje oštećenja i kaznu za preciznost za streličarstvo i bacanje kad se nalažiš na konju. (Osobna vještina)
 skl_riding|jahanje

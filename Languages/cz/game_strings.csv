@@ -2523,3 +2523,6 @@ str_shortname_region_cair_andros|Cair Andros
 ; str_isengard_hunting_camp_guildmaster_player_found_ok|If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!
 str_trait_title_animal_fighter|Zabíječ bestií
 str_trait_desc_animal_fighter_|Divoká zvěř se naučila se ti vyhýbat. Což velmi snižuje šanci na střet s agresivní zvěří.
+str_commander|velitel
+; str_companion|companion
+; str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3|I am {s1}, a soldier of {s2} in the company of {s3}.

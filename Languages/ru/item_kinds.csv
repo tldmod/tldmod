@@ -293,6 +293,7 @@ itm_orc_tribal_b|Необработанная кожа
 itm_orc_tribal_c|Необработанная кожа
 itm_evil_gauntlets_a|Чёрные перчатки
 itm_evil_gauntlets_b|Чёрные латные перчатки
+; itm_orc_mittens|Orc Mittens
 itm_isen_orc_light_a|Изенгардская орочья лёгкая сбруя
 itm_isen_orc_light_b|Изенгардская орочья лёгкая сбруя
 itm_isen_orc_pad_a|Изенгардская легкая пластинчатая броня
@@ -323,7 +324,7 @@ itm_orc_bastard_scimitar|Большой орочий ятаган
 itm_orc_cleaver_a|Орочий колун
 itm_orc_scimitar_b|Орочий ятаган
 itm_orc_sabre_b|Орочья сабля
-itm_orc_mangler|Орочий кромсатель
+; itm_orc_mangler|Orc Spiked Staff
 itm_isengard_sword|Изенгардский меч
 itm_isengard_axe|Изенгардский топор
 itm_isengard_hammer|Изенгардский молот
@@ -446,14 +447,17 @@ itm_dunland_chieftain|Дунландская броня вождя
 itm_dun_helm_a|Дунландский волчий шлем
 itm_dun_helm_b|Дунландская меховая шапка
 itm_dun_helm_c|Дунландский высокий шлем
+; itm_dun_helm_d|Dunnish Skullcap
 itm_dun_shield_a|Дунландский круглый щит 
 itm_dun_shield_b|Дунландский овальный щит
 itm_dun_berserker|Меч дунландского вождя
 itm_dunnish_antler_axe|Дунландский топор из оленьего рога
 itm_dunnish_war_axe|Дунландский боевой топор
-itm_dunnish_axe|Дунландский топор
+; itm_dunnish_axe|Dunnish Light Axe
 itm_dunland_spear|Дунландское копьё
 itm_dunnish_pike|Дунландская пика
+; itm_dunnish_long_axe|Dunnish Long Axe
+; itm_dun_shortsword|Dunnish Short Sword
 itm_rohan_cav_sword|Роханский кавалерийский меч
 itm_rohan_inf_sword|Роханский меч
 itm_rohan_spear|Роханское копьё
@@ -490,6 +494,7 @@ itm_mirkwood_pad|Зеленолесская стёганая куртка
 itm_mirkwood_mail|Зеленолесская Кольчуга
 itm_mirkwood_scale|Зеленолесская Лёгкая Чешуйчатая Броня
 itm_mirkwood_heavy_scale|Чешуйчатый Доспех Зеленолесья
+; itm_mirkwood_axe_2h|Greenwood Great axe
 itm_mirkwood_sword|Меч Лесных эльфов
 itm_mirkwood_great_spear|Зеленолесское большое копьё
 itm_mirkwood_war_spear|Зеленолесское боевое копьё
@@ -651,10 +656,9 @@ itm_umb_helm_d|Корсарский шлем налётчика
 itm_umb_helm_reward|Древняя нуменорская карма
 itm_corsair_trident|Трезубец гнева моря
 itm_corsair_boots|Корсарские сапоги
-itm_umb_shield_a|Корсарский щит
+; itm_umb_shield_a|Corsair Shell Shield
 itm_umb_shield_b|Корсарский баклер
-itm_umb_shield_c|Корсарский баклер
-itm_umb_shield_d|Корсарский баклер
+; itm_umb_shield_c|Corsair Round Shield
 itm_umbar_spear|Умбарское короткое копьё
 itm_umbar_cutlass|Умбарская абордажная сабля
 itm_kraken|Абордажная сабля Кракена
@@ -735,7 +739,7 @@ itm_rohan_lance_banner_horse|Роханское копьё со знаменем
 itm_fur_gloves_reward|Перчатки Охотника
 itm_ent_water|Странная чаша с водой
 itm_map|Карты Средиземья
-itm_athelas_reward|Сушеные листья Ателаса
+; itm_athelas_reward|Healing Herbs
 itm_phial_reward|Светоч Галадриэли
 itm_scroll_reward|О падении Гондолина
 itm_hammer_reward|Кузнечный молот
@@ -788,6 +792,7 @@ itm_rohan_armor_th|Роханская королевская броня
 itm_wilderness_cowl|Капюшон охотника
 itm_prisoner_coll_chain|Кандалы
 itm_witchking_helmet|Маска чародея
+; itm_bat_reward|Bat of Gundabad
 itm_feet_chains|Кандалы на ноги
 itm_feet_chains_dwarf|Кандалы на ноги
 itm_spider|Паук
@@ -849,3 +854,18 @@ itm_work_basket_2|Корзина
 itm_spider_mount|Паук
 itm_marker_night_troop|Черта: Ночной отряд
 itm_marker_berserker|Черта: Берсеркер
+; itm_marker_hp_shield|Trait: Unyielding
+; itm_marker_scares_wargs|Trait: Warg Fiend
+; itm_marker_scares_horses|Trait: Horse Fiend
+; itm_marker_banner_troop|Trait: Banner
+; itm_pipeweed_reward|Pipe-weed
+; itm_spider_strong|Huge Spider
+; itm_bear_strong|Great Bear
+itm_wolf_strong|Великий волк
+; itm_boar|Boar
+; itm_boar_strong|Great Boar
+; itm_beast|Evil Beast
+; itm_beast_strong|Huge Evil Beast
+; itm_kine|Wild Bull
+; itm_kine_strong|Great Bull
+; itm_torch|Torch

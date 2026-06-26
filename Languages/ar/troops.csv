@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|سياف أمبار مخضرم
 trp_i4_corsair_veteran_swordsman_pl|سيافو أمبار مخضرمون
 trp_i5_corsair_master_swordsman|سيد السيف القرصان
 trp_i5_corsair_master_swordsman_pl|سادة السيف القراصنة
-trp_a4_corsair_assassin|قاتل قرصان
-trp_a4_corsair_assassin_pl|قتلة قراصنة
+; trp_i6_corsair_guard|Captain's Guard of Umbar
+; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
 trp_a5_corsair_master_assassin|قـاتل قرصان
 trp_a5_corsair_master_assassin_pl|قتلة قراصنة
 trp_i4_corsair_veteran_spearman|حامل رمح أمبار مخضرم
@@ -748,7 +748,6 @@ trp_mountain_goblin2|عفريت جبلي
 trp_mountain_goblin2_pl|عفاريت جبلية
 trp_tribal_orc2|عفريت قبلي
 trp_tribal_orc2_pl|قبيلة العفاريت
-; trp_i5_gunda_orc_champion2|Gundabad Orc Champion
 ; trp_i5_gunda_orc_champion2_pl|Gundabad Orc Champions
 trp_i2_mordor_num_renegade|منشق نومينوري أسود
 trp_i2_mordor_num_renegade_pl|منشقون نومينوريون سود
@@ -1501,17 +1500,17 @@ trp_black_numenorean_sorcerer|ساحر نومينوري أسود
 ; trp_evil_priest_pl|Evil Priests
 trp_wolf_rider_of_mirkwood|راكب ذئب ميركوود
 trp_wolf_rider_of_mirkwood_pl|ركاب ذئاب ميركوود
-trp_bear_strong|دب
-trp_bear_strong_pl|دببة
+trp_bear_strong_old|دب
+trp_bear_strong_old_pl|دببة
 trp_gate_aggravator|دفاع البوابة
 trp_orc_pretender|عفريت مدعي
 trp_human_prisoner|سجين بشري
-trp_spider|عنكبوت ميركوود
-trp_spider_pl|عناكب ميركوود
-trp_bear|دب
-trp_bear_pl|دببة
-trp_wolf|ذئب
-trp_wolf_pl|ذئاب
+trp_spider_old|عنكبوت ميركوود
+trp_spider_old_pl|عناكب ميركوود
+trp_bear_old|دب
+trp_bear_old_pl|دببة
+trp_wolf_old|ذئب
+trp_wolf_old_pl|ذئاب
 trp_dorwinion_sack|كيس دوروينيون
 trp_ring_hunter_captain|قائد صيادي الخواتم
 trp_ring_hunter_lt|قبطان صيادي الخواتم
@@ -1541,6 +1540,10 @@ trp_start_quest_beorning_pl|برزيركرو كاروك البيورنينغ
 ; trp_black_shield_guard_pl|Amath Dollen's Guards
 ; trp_dorwinion_spirit_leader|Spirit
 ; trp_dorwinion_spirit|Lesser Spirit
+; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
+; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
+; trp_i6_dun_retainer|Dunnish Retainer
+; trp_i6_dun_retainer_pl|Dunnish Retainers
 trp_i6_beorning_bear_warrior|محارب دب
 trp_i6_beorning_bear_warrior_pl|محاربو دببة
 trp_a5_dun_night_wolf|ذئب الليل الدونيش
@@ -1567,8 +1570,8 @@ trp_c5_rhovanion_noble_pl|نبلاء روفانيون
 ; trp_npc19|Heidrek
 ; trp_npc20|Zigûrphel
 ; trp_npc21|Berta
-trp_werewolf|مستذئب
-; trp_werewolf_pl|Werewolves
+trp_werewolf_old|مستذئب
+; trp_werewolf_old_pl|Werewolves
 trp_moria_troll|قزم كهوف
 trp_moria_troll_pl|قزمة كهوف
 ; trp_moria_vet_troll|Trained Cave Troll
@@ -1633,3 +1636,43 @@ trp_merry_notmet|هوبيت
 trp_pippin|بيبين
 trp_merry|ميري
 ; trp_grima|Grima Wormtongue
+trp_future_animal_0|ذئب
+trp_future_animal_0_pl|ذئاب
+trp_spider|عنكبوت ميركوود
+trp_spider_pl|عناكب ميركوود
+; trp_spider_strong|Great Spider
+; trp_spider_strong_pl|Great Spiders
+trp_bear|دب
+trp_bear_pl|دببة
+; trp_bear_strong|Great Bear
+; trp_bear_strong_pl|Great Bears
+trp_wolf|ذئب
+trp_wolf_pl|ذئاب
+; trp_wolf_strong|Huge Wolf
+; trp_wolf_strong_pl|Huge Wolves
+trp_werewolf|مستذئب
+; trp_werewolf_pl|Werewolves
+; trp_boar|Boar
+; trp_boar_pl|Boars
+; trp_boar_strong|Great Boar
+; trp_boar_strong_pl|Great Boars
+; trp_evil_beast|Evil Beast
+; trp_evil_beast_pl|Evil Beast
+; trp_evil_beast_strong|Huge Evil Beast
+; trp_evil_beast_strong_pl|Huge Evil Beasts
+; trp_bull|Wild Bull
+; trp_bull_pl|Wild Kine
+; trp_bull_strong|Great Bull
+; trp_bull_strong_pl|Great Kine
+; trp_stag|Stag
+; trp_stag_pl|Stags
+trp_future_animal_4|ذئب
+trp_future_animal_4_pl|ذئاب
+trp_future_animal_5|ذئب
+trp_future_animal_5_pl|ذئاب
+; trp_guthlaf|Guthláf
+; trp_damrod|Damrod
+; trp_duilin|Duilin
+; trp_derufin|Derufin
+; trp_rumil|Rúmil
+; trp_lugdush|Lugdush
