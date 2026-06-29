@@ -32,10 +32,10 @@ mno_tutorial_3b_door|siguiente nivel
 mno_tutorial_4|Tutorial nº 4: Montar a caballo o en huargo. {s4}
 mno_tutorial_5|Tutorial nº 5: Dirigir a un grupo de soldados. {s5}
 mno_go_back_dot|Volver atrás.
-; menu_reports|^^^{s10}^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}
+menu_reports|^^^{s10}^^Moral del grupo: {reg8}^Limite de tamaño del grupo: {reg7}^{s5}
 mno_action_view_troop_trees|Ver árboles de tropas.
 mno_view_upkeep_costs|Ver costes de mantenimiento.
-; mno_view_rank_report|View rank report.
+mno_view_rank_report|Ver informe de rango.
 mno_view_party_size_report|Ver informe del tamaño del grupo.
 mno_view_morale_report|Ver informe de la moral del grupo.
 mno_view_faction_strengths_report|Ver informe de fuerza de facción.
@@ -114,8 +114,8 @@ mno_start_2_bn|En la fortaleza del Nigromante, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^¿Cuál es tu sexo?
 mno_start_male|Hombre
 mno_start_female|Mujer
-; menu_choose_skill|Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.
-; mno_proc|Proceed
+menu_choose_skill|Por favor, ten en cuenta que TLD cambia los valores y los efectos de muchas habilidades. Si es la primera vez que juegas a TLD o no has jugado en mucho tiempo, te recomendamos que leas atentamente las descripciones de los atributos y las habilidades.^^Muchas otras cuestiones específicas de TLD están también explicadas en la sección de conceptos del juego.
+mno_proc|Proceder
 menu_start_as_one|^^^^^^^^^^¿Qué clase de soldado eres?
 mno_start_default|Empezar como {s23} (Por defecto)
 mno_start_up1|Empezar como {s21} (Fácil)
@@ -169,9 +169,9 @@ menu_camp_action|^^^^^^^^^     ¿Qué objeto?
 mno_camp_drink_water|¡Beber el Agua de los Ents!
 mno_camp_drink_orc_brew|¡Repartir el brebaje orco entre tus tropas!
 mno_camp_drink_miruvor|¡Repartir el Miruvor!
-; mno_camp_use_pipeweed|Share pipe-weed with your companions (rest for a short duration).
+mno_camp_use_pipeweed|Compartir hierba para pipa con tus compañeros (descansar durante un breve periodo de tiempo).
 mno_camp_use_athelas|Usar Athelas para tratar heridas.
-; mno_camp_use_drums|Beat the Drums of the Deep (wait for some hours).
+mno_camp_use_drums|Tocar los Tambores de los Abismos (esperar unas horas).
 mno_camp_action_4|Atrás.
 menu_assasins_attack_player_won|Has derrotado los asesinos de {s2}, enviados por {s3}.
 menu_assasins_attack_player_retreat|¡Has escapado con vida!
@@ -319,8 +319,8 @@ mno_erebor_gates|Visitar las Grandes Puertas.
 mno_erebor_gates_door|Ir a las Grandes Puertas.
 mno_glittering_caves|Ir a las Cavernas Centelleantes.
 mno_glittering_caves_door|Ir a las Cavernas Centelleantes.
-; mno_mountain_travel|Travel on hidden mountain paths.
-; mno_mountain_travel_door|Travel on hidden mountain paths.
+mno_mountain_travel|Viajar por senderos de mopntaña ocultos.
+mno_mountain_travel_door|Viajar por senderos de mopntaña ocultos.
 mno_town_leave|Irse...
 mno_town_leave_door|Salir del área
 mno_town_find_NPCs_cont|Hacerlo.
@@ -364,7 +364,7 @@ menu_gondor_beacons|Levantas la vista hacia {s1}, una de las almenaras de Gondor
 mno_gondor_beacons_close|Irse...
 menu_player_added_to_war_council|^^^^^Ha llegado un mensajero a decirte que, en cumplimiento de tus deberes como {s24}, {s2} ha solicitado que formes parte de su Concilio de Guerra. Ahora puedes sugerir estrategias que pueden influir en el curso de la guerra.
 mno_player_added_to_war_council_close|Cerrar
-menu_player_added_to_siege_reports|^^^^^Ha llegado un mensajero a decirte que, a partir de ahora, como {s24}, recibirás informes cada vez que {s2} ponga un centro bajo asedio o cuando alguno de los centros de {s2} sea asediado.
+menu_player_added_to_siege_reports|^^^^^Ha llegado un mensajero a decirte que, a partir de ahora, como {s24}, recibirás informes cada vez que {s2} inicie un asedio o cuando alguna de las plazas fuertes de {s2} sea asediada.
 mno_player_added_to_siege_reports_close|Cerrar
 menu_player_added_to_allow_follow|^^^^^Ha llegado un mensajero a decirte que, a partir de ahora, como {s24}, se te permitirá dar órdenes a {s2} para que te sigan, hasta un máximo de {reg55} seguidores.
 mno_player_added_to_allow_follow_close|Cerrar
@@ -429,7 +429,7 @@ mno_cb_mordor8|Corsarios
 mno_rescue_mission|Deslizarse sigilosamente dentro de la guarida del hechicero bajo el abrigo de la noche.
 mno_next_rescue_scene_door|¡Seguir adelante!
 mno_pick_troops1|Elige compañeros para la misión, {reg0} seleccionados
-; menu_pick_troops|Whom would you take with you into the mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg13?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg12} companions.
+menu_pick_troops|¿Quiénes te acompañarán en la misión?    ^Solo tus soldados y compañeros más ágiles podrán ir contigo.    ^Como el miembro de tu compañía mejor versado en Dominio de las tierras salvajes, {reg13?{s1} te aconseja:decides} no llevar contigo a más de {reg11} guerreros.    ^^Actualmente, has seleccionado {reg12} seguidores.
 mno_go_forward|Terminar de elegir compañeros y continuar.
 menu_burial_mound|^Te aproximas al túmulo funerario de {s1} de {s2}, que cayó en batalla contra las fuerzas de {s28}.  A sus pies se apilan las melladas armas de sus enemigos caídos.
 mno_pay_respects|Arrodillarte y mostrar tus respetos.
@@ -449,7 +449,7 @@ menu_death|Te han matado. Aunque la guerra sigue su sangriento curso tú ya no f
 menu_animal_ambush|Tú y tus compañeros os encontráis separados del resto del grupo cuando de repente...
 menu_animal_ambush_success|{reg0?El:Los} {s2} {reg0?cae:caen} ante ti como el trigo seco bajo la guadaña. Poco después todos tus atacantes yacen en el suelo, muertos o heridos. {s3}
 menu_animal_ambush_fail|Los animales te lanzan dentelladas y arañazos, pero consigues mantenerlos a raya y ahuyentarlos. Con un poco de suerte no te atacarán de nuevo.
-; menu_isengard_flooding|^^^^^You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
+menu_isengard_flooding|^^^^^Te rodean enemigos muertos y aliados triunfantes, incluyendo a los Ents; rugen y braman y aúllan de tal modo que las piedras se resquebrajan y caen en torno a la torre de Orthanc. Son como una tempestad, despedazando las columnas, arrojando avalanchas de piedras a los fosos, lanzando al aire enormes bloques de roca como si fuesen hojas... No se parece a nada que hayas visto antes.^^ Bregalad -- o Ramaviva, como tú lo conoces -- se acerca a grandes zancadas y se detiene solo para decir: '¡{playername}! ¡Cuidado! Mantente lejos de la Torre; pronto romperemos el dique y traeremos el Isen al valle durante un tiempo. ¡Creo que encontrarás muy difícil quedarte aquí!' Te apresuras a seguir su consejo y te apartas de Orthanc.^^ Cerca de medianoche, Isengard empieza a llenarse de charcos y arroyos de aguas negras. No puedes evitar un estremecimiento al ver grandes columnas de humo y vapor elevándose y enroscándose alrededor de la Torre, hasta que parece un elevado pico envuelto en nubes, incandescente por abajo y arriba iluminado por la luna. La cólera de los Ents es lenta, pero posee una fuerza irresistible...
 mno_isengard_continue|Continuar
 menu_build_your_scene|Puedes crear tu propio escenario de batalla, utilizando una de las ranuras disponibles abajo y activando el modo de edición (primero tienes que activar el modo de edición en las opciones del lanzador al iniciar el juego, entrar en un escenario de batalla y pulsar Ctrl+E para acceder al editor). Puedes enviarnos los escenarios que hayas creado (los archivos sco de la carpeta TLD/SceneObj) y si tu creación es lo bastante buena, podría aparecer en versiones posteriores como uno de los mapas de batalla aleatorios.^^ Intenta especificar en qué región del mapa quieres que aparezca.^ Un par de consejos: evita las aguas profundas, las montañas empinadas y otros obstáculos infranqueables, a no ser que tengas experiencia creando mapas y sepas crear "AI mesh" y evitar que las tropas de la IA vayan donde no quieres.^ (Los puntos de entrada del 0 al 1 son para atacantes, el 4 para los defensores, ni se te ocurra tocar los que van del 5 al 8)
 mno_back_3dot|Atrás...
@@ -461,12 +461,12 @@ menu_oath_quest_fail|Pronunciaste un terrible juramento y has sido incapaz de da
 menu_campaign_won|^^^¡Gracias por jugar a The Last Days of the Third Age!
 mno_credits_tld|Créditos de TLD
 mno_exit_game2|Volver al menú principal
-; menu_companion_promoted_event|^^^A new hero   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!
-; menu_mountain_travel|As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.
-; menu_mountain_travel_arrived|After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}
-; mno_hunt_begin|Let the hunt begin!.
-; mno_pick_troops_hunt|Pick companions for the hunt, {reg15} selected
-; menu_hunt_beast_debrief|{s9}^^Your Casualties:{s8}
+menu_companion_promoted_event|^^^Un nuevo héroe   ^^Recibes la noticia de que {s2} ha reclutado una hueste de guerreros para unirse al ejército de {s3}. ¡El pueblo de {s1} se congrega bajo su estandarte!
+menu_mountain_travel|Como {s24} que eres, se te permite recorrer los pasos y túneles escondidos que conectan todas las fortalezas subterráneas de las Montañas Nubladas y las Montañas Grises. Dependiendo de tu habilidad de Busca-rutas, el trayecto puede ser largo y peligroso. Pero te mantendrá  a cubierto de los ojos vigilantes que otean las llanuras.
+menu_mountain_travel_arrived|Después de recorrer peligrosos senderos de montaña y atravesar túneles oscuros, llegas por fin a {s4}. {s5}^^{s3}
+mno_hunt_begin|¡Que dé comienzo la cacería!
+mno_pick_troops_hunt|Elige compañeros para la cacería, {reg15} seleccionados
+menu_hunt_beast_debrief|{s9}^^Tus bajas:{s8}
 mno_back|Volver atrás.
 mno_next|Siguiente...
 mno_previous|Anterior...

@@ -1,9 +1,9 @@
 skl_trade|Commerce
 skl_trade_desc|Les forgerons et les maîtres d'approvisionnement sont plus coopératifs et offrent de meilleurs équipements. (Compétence de groupe)
 skl_leadership|Commandement
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you (player only). (Cumulative skill)
+skl_leadership_desc|Chaque point augmente de 5 le nombre maximal de soldats que vous pouvez commander (3 pour les compagnons), et renforce le moral et la cohésion de votre groupe au combat. Cela incite des volontaires plus forts et plus nombreux à vous suivre (joueur uniquement). (Compétence cumulative)
 skl_prisoner_management|Gestion des prisonniers
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners. (Party skill)
+skl_prisoner_management_desc|Chaque niveau de cette compétence augmente le nombre maximal de prisonniers de %d. Améliore les chances de capturer et de retenir des prisonniers. (Compétence de groupe)
 skl_persuasion|Vie Sauvage
 skl_persuasion_desc|La capacité de survivre dans les régions sauvages et les plier à votre volonté. Cette compétence influence la capacité de votre groupe à se cacher des ennemis, et la vitesse de votre groupe dans les forêts. (Compétence de groupe) 
 skl_engineer|-----
@@ -14,20 +14,20 @@ skl_surgery|Chirurgie
 skl_surgery_desc|Chaque point de cette compétence donne 4 %% de chances qu'une personne ayant reçu une blessure potentiellement mortelle soit seulement blessée et non tuée. (Compétence de groupe)
 skl_wound_treatment|Soins
 skl_wound_treatment_desc|La vitesse de guérison du groupe est augmentée de 20 %% par niveau de compétence. (Compétence de groupe)
-; skl_inventory_management|Party Management
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption by 5%% and upkeep for troops in your party by 3%% per level. (Leader skill)
+skl_inventory_management|Gestion du groupe
+skl_inventory_management_desc|Augmente la capacité de l'inventaire de 6 cases par niveau de compétence. Réduit la consommation de nourriture de 5 %% et les frais d'entretien des troupes de votre groupe de 3 par niveau. (Compétence de chef)
 skl_spotting|Repérage
 skl_spotting_desc|La distance de vision du groupe est augmentée de 10 %% par niveau de compétence. (Compétence de groupe)
 skl_pathfinding|Marche forcée
 skl_pathfinding_desc|La vitesse de voyage sur la carte est augmentée de 3 %% par niveau de compétence. (Compétence de groupe)
 skl_tactics|Tactique
-; skl_tactics_desc|Improves battle advantage. Decreases battle join range for enemy parties and increases battle join range for friendly parties by 3%% per level. (Leader skill)
+skl_tactics_desc|Améliore l'avantage au combat. Réduit la portée d'engagement au combat des groupes ennemis et augmente celle des groupes alliés de 3 %% par niveau. (Compétence de chef)
 skl_tracking|Pistage
 skl_tracking_desc|Les empreintes révèlent plus d'informations. (Compétence de groupe)
 skl_trainer|Mentor
-; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Cumulative skill)
+skl_trainer_desc|Chaque jour, chaque héros avec cette compétence ajoute de l'expérience à tous les autres membres du groupe dont le niveau est inférieur au sien. L'expérience gagnée augmente ainsi : 0, 4, 10, 16, 23, 30, 38, 46, 55, 65, 80. (Compétence cumulative)
 skl_looting|Pillage
-; skl_looting_desc|Increases amount and quality of loot gained after battles. (Cumulative skill)
+skl_looting_desc|Augmente la quantité et la qualité du butin récolté après les batailles. (Compétence cumulative)
 skl_horse_archery|Archerie montée
 skl_horse_archery_desc|Réduit les pénalités à la précision et aux dégâts que l'archerie montée provoque. (Compétence personnelle)
 skl_riding|Équitation

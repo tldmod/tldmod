@@ -324,7 +324,7 @@ itm_orc_bastard_scimitar|Gran cimitarra orca
 itm_orc_cleaver_a|Alfanje orco
 itm_orc_scimitar_b|Cimitarra orca
 itm_orc_sabre_b|Sable orco
-; itm_orc_mangler|Orc Spiked Staff
+itm_orc_mangler|Bastón de pinchos orco
 itm_isengard_sword|Espada de Isengard
 itm_isengard_axe|Hacha de Isengard
 itm_isengard_hammer|Martillo de Isengard
@@ -447,17 +447,17 @@ itm_dunland_chieftain|Armadura de caudillo dunlendino
 itm_dun_helm_a|Gorro de lobo dunlendino
 itm_dun_helm_b|Gorro de pieles dunlendino
 itm_dun_helm_c|Yelmo alto dunlendino
-; itm_dun_helm_d|Dunnish Skullcap
+itm_dun_helm_d|Casquete dunlendino
 itm_dun_shield_a|Escudo redondo dunlendino
 itm_dun_shield_b|Escudo oval dunlendino
 itm_dun_berserker|Espada de caudillo dunlendino
 itm_dunnish_antler_axe|Hacha de cuerno dunlendina
 itm_dunnish_war_axe|Hacha de guerra dunlendina
-; itm_dunnish_axe|Dunnish Light Axe
+itm_dunnish_axe|Hacha ligera dunlendina
 itm_dunland_spear|Lanza dunlendina
 itm_dunnish_pike|Pica dunlendina
-; itm_dunnish_long_axe|Dunnish Long Axe
-; itm_dun_shortsword|Dunnish Short Sword
+itm_dunnish_long_axe|Hacha larga dunlendina
+itm_dun_shortsword|Espada corta dunlendina
 itm_rohan_cav_sword|Espada de montar de Rohan
 itm_rohan_inf_sword|Espada de Rohan
 itm_rohan_spear|Lanza de Rohan
@@ -494,7 +494,7 @@ itm_mirkwood_pad|Cota acolchada del Bosque Verde
 itm_mirkwood_mail|Malla del Bosque Verde
 itm_mirkwood_scale|Armad. ligera de escamas del Bosque Verde
 itm_mirkwood_heavy_scale|Armadura hojaescama del Bosque Verde
-; itm_mirkwood_axe_2h|Greenwood Great axe
+itm_mirkwood_axe_2h|Gran hacha del Bosque Verde
 itm_mirkwood_sword|Espada de los Elfos del Bosque
 itm_mirkwood_great_spear|Gran lanza del Bosque Verde
 itm_mirkwood_war_spear|Lanza de guerra del Bosque Verde
@@ -656,9 +656,9 @@ itm_umb_helm_d|Yelmo de incursor corsario
 itm_umb_helm_reward|Karma antiguo de Númenor
 itm_corsair_trident|Tridente de la Furia Marina
 itm_corsair_boots|Botas de corsario
-; itm_umb_shield_a|Corsair Shell Shield
+itm_umb_shield_a|Escudo caracola corsario
 itm_umb_shield_b|Broquel de corsario
-; itm_umb_shield_c|Corsair Round Shield
+itm_umb_shield_c|Escudo redondo corsario
 itm_umbar_spear|Lanza corta de Umbar
 itm_umbar_cutlass|Chafarote de Umbar
 itm_kraken|Chafarote Kraken
@@ -739,7 +739,7 @@ itm_rohan_lance_banner_horse|Lanza con pendón del Corcel de Rohan
 itm_fur_gloves_reward|Guantes de caza
 itm_ent_water|Recipiente extraño con agua
 itm_map|Mapas de la Tierra Media
-; itm_athelas_reward|Healing Herbs
+itm_athelas_reward|Hierbas curativas
 itm_phial_reward|Luz de Galadriel
 itm_scroll_reward|Sobre La caída de Góndolin
 itm_hammer_reward|Martillo de herrero
@@ -784,7 +784,7 @@ itm_dale_armor_reward|Cota de malla noble de Valle
 itm_leather_gloves_reward|Guantes de arquero
 itm_beorn_shield_reward|Escudo Beórnida
 itm_beorn_axe_reward|Garrote de oso
-itm_drums_of_the_deep|Tambores en lo profundo
+itm_drums_of_the_deep|Tambores de los Abismos
 itm_khamul_helm|Yelmo de Khamul
 itm_black_arrows_reward|Flechas negras
 itm_leather_boots_reward|Botas de cazador
@@ -792,10 +792,10 @@ itm_rohan_armor_th|Armadura real de Rohan
 itm_wilderness_cowl|Capucha de cazador
 itm_prisoner_coll_chain|Cadenas de prisionero
 itm_witchking_helmet|Máscara del Hechicero
-; itm_bat_reward|Bat of Gundabad
+itm_bat_reward|Murciélago de Gundabad
 itm_feet_chains|Grilletes
 itm_feet_chains_dwarf|Grilletes
-itm_spider|Araña
+itm_spider|la araña
 itm_bear|Oso
 itm_wolf|Lobo
 itm_werewolf|Licántropo
@@ -854,12 +854,12 @@ itm_work_basket_2|Cesta
 itm_spider_mount|Araña
 itm_marker_night_troop|Rasgo: tropa nocturna
 itm_marker_berserker|Rasgo: berserker
-; itm_marker_hp_shield|Trait: Unyielding
-; itm_marker_scares_wargs|Trait: Warg Fiend
-; itm_marker_scares_horses|Trait: Horse Fiend
-; itm_marker_banner_troop|Trait: Banner
-; itm_pipeweed_reward|Pipe-weed
-; itm_spider_strong|Huge Spider
+itm_marker_hp_shield|Rasgo: Inquebrantable
+itm_marker_scares_wargs|Rasgo: Terror de los huargos
+itm_marker_scares_horses|Rasgo: Terror de los caballos
+itm_marker_banner_troop|Rasgo: Estandarte
+itm_pipeweed_reward|Hierba para pipa
+itm_spider_strong|Araña gigantesca
 itm_bear_strong|Gran oso
 itm_wolf_strong|Gran {Lobo/Loba}
 itm_boar|Jabalí
@@ -868,4 +868,4 @@ itm_beast|Bestia malvada
 itm_beast_strong|Bestia malvada enorme
 itm_kine|Toro salvaje
 itm_kine_strong|Gran toro
-; itm_torch|Torch
+itm_torch|Antorcha

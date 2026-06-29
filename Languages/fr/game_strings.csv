@@ -2524,5 +2524,5 @@ str_isengard_hunting_camp_guildmaster_player_found_ok|S'il tue bien, je le prend
 str_trait_title_animal_fighter|Tueu{r/se} de bêtes.
 str_trait_desc_animal_fighter_|Les bêtes sauvages ont appris à vous éviter. Réduit considérablement les chances de rencontrer des animaux hostiles.
 str_commander|commandant
-; str_companion|companion
-; str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3|I am {s1}, a soldier of {s2} in the company of {s3}.
+str_companion|compagnon
+str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3|Je m'appelle {s1}, je suis soldat de {s2} et j'appartiens à la compagnie de {s3}.

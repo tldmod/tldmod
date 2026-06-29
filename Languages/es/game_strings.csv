@@ -2524,5 +2524,5 @@ str_isengard_hunting_camp_guildmaster_player_found_ok|Si mata bien, me lo llevo.
 str_trait_title_animal_fighter|Cazabestias
 str_trait_desc_animal_fighter_|Las bestias salvajes han aprendido a evitarte. Reduce considerablemente las posibilidades de encontrar animales hostiles.
 str_commander|Capitán
-; str_companion|companion
-; str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3|I am {s1}, a soldier of {s2} in the company of {s3}.
+str_companion|compañero
+str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3|Soy {s1}, soldado de {s2} en la compañía de {s3}.

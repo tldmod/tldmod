@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|Épéiste vétéran d'Umbar
 trp_i4_corsair_veteran_swordsman_pl|Épéistes vétérans d'Umbar
 trp_i5_corsair_master_swordsman|Maître-épéiste corsaire
 trp_i5_corsair_master_swordsman_pl|Maîtres-épéistes corsaires
-; trp_i6_corsair_guard|Captain's Guard of Umbar
-; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
+trp_i6_corsair_guard|Garde du capitaine d'Umbar
+trp_i6_corsair_guard_pl|Gardes du capitaine d'Umbar
 trp_a5_corsair_master_assassin|Assassin corsaire
 trp_a5_corsair_master_assassin_pl|Assassins corsaires
 trp_i4_corsair_veteran_spearman|Lancier vétéran d'Umbar
@@ -1540,10 +1540,10 @@ trp_black_shield_guard|Garde d'Amath Dollen
 trp_black_shield_guard_pl|Gardes d'Amath Dollen
 trp_dorwinion_spirit_leader|Esprit
 trp_dorwinion_spirit|Esprit mineur
-; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
-; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
-; trp_i6_dun_retainer|Dunnish Retainer
-; trp_i6_dun_retainer_pl|Dunnish Retainers
+trp_i6_greenwood_2h_axeman|Maître-hacheur de Vertbois
+trp_i6_greenwood_2h_axeman_pl|Maître-hacheur de Vertbois
+trp_i6_dun_retainer|Écuyer dunlandais
+trp_i6_dun_retainer_pl|Écuyers dunlandais
 trp_i6_beorning_bear_warrior|Guerrier ours
 trp_i6_beorning_bear_warrior_pl|Guerriers ours
 trp_a5_dun_night_wolf|Loup nocturne dunlandais
@@ -1640,39 +1640,39 @@ trp_future_animal_0|Loup
 trp_future_animal_0_pl|Loups
 trp_spider|Araignée de Grand'Peur
 trp_spider_pl|Araignées de Grand'Peur
-; trp_spider_strong|Great Spider
-; trp_spider_strong_pl|Great Spiders
+trp_spider_strong|Araignée géante
+trp_spider_strong_pl|Araignées géantes
 trp_bear|Ours
 trp_bear_pl|Ours
-; trp_bear_strong|Great Bear
-; trp_bear_strong_pl|Great Bears
+trp_bear_strong|Grand ours
+trp_bear_strong_pl|Grands ours
 trp_wolf|Loup
 trp_wolf_pl|Loups
-; trp_wolf_strong|Huge Wolf
-; trp_wolf_strong_pl|Huge Wolves
+trp_wolf_strong|Énorme loup
+trp_wolf_strong_pl|Énormes loups
 trp_werewolf|Loup-garou
 trp_werewolf_pl|Loups-garous
-; trp_boar|Boar
-; trp_boar_pl|Boars
-; trp_boar_strong|Great Boar
-; trp_boar_strong_pl|Great Boars
-; trp_evil_beast|Evil Beast
-; trp_evil_beast_pl|Evil Beast
-; trp_evil_beast_strong|Huge Evil Beast
-; trp_evil_beast_strong_pl|Huge Evil Beasts
-; trp_bull|Wild Bull
-; trp_bull_pl|Wild Kine
-; trp_bull_strong|Great Bull
-; trp_bull_strong_pl|Great Kine
-; trp_stag|Stag
-; trp_stag_pl|Stags
+trp_boar|Sanglier
+trp_boar_pl|Sangliers
+trp_boar_strong|Grand sanglier
+trp_boar_strong_pl|Grands sangliers
+trp_evil_beast|Bête maléfique
+trp_evil_beast_pl|Bête maléfique
+trp_evil_beast_strong|Grande bête maléfique
+trp_evil_beast_strong_pl|Grandes bêtes maléfiques
+trp_bull|Taureau sauvage
+trp_bull_pl|Vache sauvage
+trp_bull_strong|Grand taureau
+trp_bull_strong_pl|Grande vache
+trp_stag|Cerf
+trp_stag_pl|Cerfs
 trp_future_animal_4|Loup
 trp_future_animal_4_pl|Loups
 trp_future_animal_5|Loup
 trp_future_animal_5_pl|Loups
-; trp_guthlaf|Guthláf
+trp_guthlaf|Guthláf
 trp_damrod|Damrod
 trp_duilin|Duilin
 trp_derufin|Derufin
-; trp_rumil|Rúmil
-; trp_lugdush|Lugdush
+trp_rumil|Rúmil
+trp_lugdush|Lugdush

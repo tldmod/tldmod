@@ -262,8 +262,8 @@ qstr_+1_to_Power_Throw|+1 in Potenza di Lancio
 qstr_Recruit_Black_Numeno|Recluta Numenoreani Neri da vari luoghi
 qstr__Scales_with_Charism|(Bilancia con il Carisma. Solo per comandanti umani.)
 qstr_+1_to_Spotting|+1 in Avvistamento
-; qstr_+2_to_Spotting|+2 to Spotting
-; qstr__at_night_|(at night)
+qstr_+2_to_Spotting|+2 in Avvistamento
+qstr__at_night_|(di notte)
 qstr_+2_to_Weapon_Master|+2 in Maestria nelle armi
 qstr_+2_to_First_Aid|+2 in Primo soccorso
 qstr_Less_Dunnish_upkeep|Minore gestione Dunlandiana
@@ -273,12 +273,12 @@ qstr_Bonus_to_Strength__P|Bonus alla Forza (Solo per il personaggio)
 qstr_Lead_more_Orcs|Comanda più Orchi
 qstr_Can_scare_horses|Può spaventare i cavalli
 qstr_+{reg1}_to_Party_Mor|+{reg1} al morale della compagnia
-; qstr_Bonus_to_Trainer__Pa|Bonus to Trainer (Party)
-; qstr_Bonus_to_Bargainer__|Bonus to Bargainer (Party)
+qstr_Bonus_to_Trainer__Pa|Bonus in Addestramento (Compagnia)
+qstr_Bonus_to_Bargainer__|Bonus in Commercio (Compagnia)
 qstr_Not_affected_by_nigh|Non influenzato dalla notte
 qstr_Increased_health_and|Aumento della salute e della resistenza allo sbandamento in battaglia
-; qstr_Can_enter_battle_rag|Can enter battle rage
-; qstr_Can_scare_wargs|Can scare wargs
+qstr_Can_enter_battle_rag|Può entrare in modalità "Furia di Battaglia"
+qstr_Can_scare_wargs|Può atterrire i wargs
 qstr_Range:_{reg55}|Portata: {reg55}
 qstr_Dwarves|Nani
 qstr_Humans_and_Elves|Uomini ed Elfi
@@ -472,8 +472,8 @@ qstr_no_one|nessuno
 qstr_{s11}_and_{s12}|{s11} e {s12}
 qstr_{s11}_{s12}|{s11}, {s12}
 qstr_{s5}_is_ruled_by_{s6|{s5} Capo: {s6}.^Controlla: {s8}.^Isuoi comandanti sono: {s10}.^{s5} in guerra con: {s12}.
-; qstr_{s5}_s_strength_is_c|{s5}'s strength is considered {s23} ({reg10}).
-; qstr_You_are_{s24}__{reg1|You are {s24} ({reg14}). ({reg12} influence, {reg13} res. points.)
+qstr_{s5}_s_strength_is_c|La forza di {s5} è considerata {s23} ({reg10}).
+qstr_You_are_{s24}__{reg1|Tu sei {s24} ({reg14}). ({reg12} influenza, {reg13} punti risorsa.)
 qstr_{s5}_has_been_defeat|{s5} è stato sconfitto !
 qstr_{s5}_has_a_strength_|{s5} ha una forza di {reg1} uomini in tutto.
 qstr_no_holdings|nessun possedimento
@@ -640,7 +640,7 @@ qstr_The_Remnant_Forces_o|Le forze rimanenti di {s22} si sono radunate per rinfo
 qstr_The_strength_of_the_|La forza delle fazioni alleate rimanenti nella zona di {s15} è aumentata.
 qstr_{s30}_reinforced_by_|{s30} rifnorzato da {reg65} for faz
 qstr_{s1}_has_been_besieg|{s1} è sotto assedio da parte di {s2} di {s3}.
-; qstr_{s5}_s_patrol|{s5}'s patrol
+qstr_{s5}_s_patrol|Pattuglia {s5}
 qstr_The_forces_of_{s2}_m|Le forze di {s2} marciano su {s15} !
 qstr_Rohan_capital_moved_|La capitale di Rohan si è spostata da Edoras a Fosso di Helm !
 qstr_Dale_capital_moved_f|La capitale di Dale si è spostata da Dale a Esgaroth !
@@ -699,7 +699,7 @@ qstr_Your_troops_flee_in_|Le tue truppe fuggono terrorizzate!
 qstr_Many_of_your_troops_|Molte delle tue truppe stanno scappando dalla battaglia.
 qstr_Some_of_your_troops_|Alcune delle tue truppe stanno scappando dalla battaglia.
 qstr_A_few_of_your_troops|Un paio delle tue truppe stanno scappando dalla battaglia.
-; qstr_Your_side_has_{reg5}|Your side has {reg5} captains and {reg6} banner carriers.
+qstr_Your_side_has_{reg5}|La tua fazione dispone di {reg5} capitani e {reg6} portabandiera.
 qstr_Gained_permanent_+1_to_P|Ottenuto un valore +1 permanente in Orientamento.
 qstr_Gained_permanent_+1_to_S|Ottenuto un +1 permanente in Avvistamento.
 qstr_{s11}_recovered_from|{s11} ha recuperato dopo una grave ferita.
@@ -709,8 +709,8 @@ qstr_have_taken_measure_o|hanno soppesato la forza attuale della tua fazione e s
 qstr_loses_Faction_Streng|perde Forza Fazione quando le sue linee di rifornimento vengono interrotte.
 qstr_loses_Faction_Strengt|perde Forza Fazione a causa della distruzione del proprio campo.
 qstr_gains_Faction_Streng|ottiene Forza Fazione appena le notizie sulla tua vittoria si diffondono.
-; qstr_update_savegame:_swa|update savegame: swap spider mount
-; qstr_In_the_latest_hotfix|In the latest hotfix, some global variables had to be reset to their default values, for savegame compativility reasons. Please check your campaign difficulty and horse archery settings, if you have changed them before, and change it back to the value you want.
+qstr_update_savegame:_swa|Aggiornamento del salvataggio: scambia la cavalcatura del ragno
+qstr_In_the_latest_hotfix|Nell'ultimo hotfix, alcune variabili globali sono state ripristinate ai valori predefiniti per motivi di compatibilità con i salvataggi. Si prega di verificare le impostazioni di difficoltà della campagna e di tiro con l'arco a cavallo, se modificate in precedenza, e di riportarle ai valori desiderati.
 qstr_Raiders|Razziatori
 qstr_have_won_the_sea_bat|ha vinto la battaglia sul mare, demoralizzando le tue truppe. Il nemico può ottenere un vantaggio da questa sconfitta e attaccare con più frequenza.
 qstr_loses_Faction_Strength|Perde Forza Fazione a causa della distruttiva incursione.
@@ -816,7 +816,7 @@ qstr_Your_hackles_rise_as| peli sulla nuca si rizzano mentre ti guardi attorno e
 qstr_Looking_around_you_d|Guardandoti intorno, non comprendi il significato di questo posto.
 qstr_Looking_around_you_f|Guardandoti attorno, hai la sensazione di non conoscere abbastanza bene queste persone da comprendere il significato di questo luogo.
 qstr_Looking_around_you_fe|Guardandoti attorno, senti di non godere di sufficiente stima per comprendere il significato di questo luogo.
-; qstr_{s5}_has_been_overco|{s5} has been overcome by battle rage and is now uncontrollable.
+qstr_{s5}_has_been_overco|{s5} è pervaso dalla furia di battaglia ed è ormai incontenibile.
 qstr_{s5}_is_running_amok|{s5} sta impazzendo, ferendo amici e nemici allo stesso tempo !
 qstr_Visit_the_victory_ce|Partecipa ai festeggiamenti per la vittoria e parla con {s5}.
 qstr_Your_mount_stumbles!|Il tuo animale incespica ! Sembra sia zoppo.
@@ -858,7 +858,7 @@ qstr_Formations_turned_OF|Formazioni DISATTIVATE nel menu opzioni
 qstr_Division_{reg1}_{s2}_g|Il Reparto {reg1} {s2} sta raggiungendo la posizione memorizzata...
 qstr_Division_{reg1}_{s2}_f|Reparto {reg1} {s2} forma una linea (memorizzato).
 qstr_Division_{reg1}_{s2}_fo|Reparto {reg1} {s2} forma {reg0} linee (memorizzato).
-; qstr_{reg5?A_group_of:A}_|{reg5?A group of:A} {s1} has joined the fight on {reg6?the enemy's:your} side!
+qstr_{reg5?A_group_of:A}_|{reg5?Un gruppo di:Un} {s1} si è unito al combattimento {reg6?dalla parte del nemico:in tuo sostegno} !
 qstr_Your_bear_form_has_{|La tua forma d'orso ha {reg2}/{reg1} HP !
 qstr_Underground_battle:_|Battaglia sotterranea: preparati a combattere nell'oscurità.
 qstr_Steep_mountain_sides|Le ripide pendici montane oscurano la luce del sole.
@@ -884,7 +884,7 @@ qstr_Your_mount_is_scared_|La tua cavalcatura è spaventata da {s5}, ma puoi dom
 qstr_You_yell_for_your_ho|Chiami il tuo animale.
 qstr_You_do_not_need_to_r|Non hai bisogno d'incitare le truppe, per adesso.
 qstr_You_rally_{reg10}_tr|Raduni {reg10} truppe!
-; qstr_{reg5}_captains_and_|{reg5} captains and {reg6} banner carriers support your rally.
+qstr_{reg5}_captains_and_|{reg5} capitani e {reg6} portabandiera aderiscono alla tua chiamata.
 qstr_{s5}_rallies_{reg65?|{s5} sprona {reg65?le sue:le sue} truppe !
 qstr_You_have_killed_{reg|Hai ucciso {reg1} nemici in questa battaglia !
 qstr_Your_bravery_inspire|Il tuo coraggio ispira le tue truppe !
@@ -971,13 +971,13 @@ qstr_The_sorcerer_is_flee|Lo stregone sta scappando ! Uccidilo !
 qstr_base_troop:_{reg77}_|truppe di base: {reg77}, promozione: {reg78}
 qstr_The_sorcerer_is_dead|Lo stregone è morto !
 qstr_The_battle_is_won!|La battaglia è vinta !
-; qstr_The_beast_must_be_he|The beast must be here somewhere. Find and kill it, before it escapes!
-; qstr_You_lost_the_beast_b|You lost the beast, but it is still nearby.
-; qstr_The_beast_is_fleeing|The beast is fleeing. Don't let it escape!
-; qstr_The_beast_has_escape|The beast has escaped.
-; qstr_The_beast_has_been_s|The beast has been slain!
-; qstr_Cannot_leave_now|Cannot leave now
-; qstr_Are_you_sure_you_wan|Are you sure you want to give up the hunt?
+qstr_The_beast_must_be_he|La bestia deve trovarsi altrove. Trovala e uccidila, prima che fugga !
+qstr_You_lost_the_beast_b|Hai perso le tracce della bestia, ma deve trovarsi nelle vicinanze.
+qstr_The_beast_is_fleeing|La bestia sta fuggendo. Non lasciarla scappare !
+qstr_The_beast_has_escape|La bestia è fuggita.
+qstr_The_beast_has_been_s|La bestia è stata uccisa !
+qstr_Cannot_leave_now|Non puoi andartene adesso
+qstr_Are_you_sure_you_wan|Vuoi davvero interrompere la caccia ?
 qstr_A_band_of_tribal_orc|È apparso un gruppo di orchi tribali !
 qstr_Gaaaar!!_We_wants_th|Gaaaar !! Vogliamo quella carne umana !
 qstr_{s31}_scouts_have_ap|{s31} sono apparsi degli esploratori !
@@ -1022,7 +1022,7 @@ qstr_You_are_suffering_from_|Sei affetto da {s1}, {s2}, {s3} e {s4}.
 qstr_Four_years_after_bri|Quattro anni dopo aver portato un gruppo di Nani da Erebor per tentare di reinsediare la città un tempo nanica di Khazad-dûm, Balin fu ucciso da una freccia d'Orco mentre scrutava il Mirolago, e il suo popolo fu immediatamente attaccato da molti Orchi che giunsero sul fiume Argentaroggia. A seguito di continue ritirate dalla Porta Est e dalla Prima Sala, poi dal Ponte di Khazad-dûm e dalla Seconda Sala, i rimanenti Lungobarba furono costretti a tornare nella Ventunesima Sala. Dopo un tentativo infruttuoso di fuggire attraverso le Porte di Durin che hanno visto la morte di Óin, la Camera di Mazarbul è diventata l'ultima resistenza della Colonia quando persero la ventunesima sala appena fuori dalla camera. Sbarrando le porte, Ori e i pochi sopravvissuti organizzarono un'ultima difesa.
 qstr_You_chase_an_orc_sco|Insegui un gruppo di orchi nella foresta...
 qstr_^No_food:___{reg7}|^Niente cibo: -{reg7}
-; qstr_Current_party_morale|Current party morale is {reg5}.^Current party morale modifiers are:^^Base morale:  +50^Party size: {s2}{reg1}^Leadership (party): {s3}{reg2}^Captains: {s8}{reg8}^Food variety: {s4}{reg3}{s5}^Special items: {s6}{reg6}^Recent events: {s7}{reg4}^TOTAL:  {reg5}
+qstr_Current_party_morale|Il morale attuale della compagnia è pari a {reg5}.^I modificatori attuali del morale sono:^^Morale Base: +50^Dimensione Compagnia: {s2}{reg1}^Comando (Compagnia): {s3}{reg2}^Capitani: {s8}{reg8}^Varietà del Cibo: {s4}{reg3}{s5}^Oggetti Speciali: {s6}{reg6}^Eventi Recenti: {s7}{reg4}^TOTALE: {reg5}
 qstr_Defending|Difendendo
 qstr_Gathering_army|Raccogliendo esercito
 qstr_Besieging_{s11}|Assediando {s11}
@@ -1037,15 +1037,15 @@ qstr_Resource_Points:^_{r|Punti Risorsa:^ {reg12} (in {s16})^
 qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} alla prossima promozione^
 qstr_{s13}_{reg11}__with_|{s13} {reg11} (con {s16})^
 qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (a {s16})^
-; qstr_Party_Management_dis|Party Management discount (party only): -{reg6}%
+qstr_Party_Management_dis|Deduzione benefici gestione Compagnia (solo Compagnia): -{reg6}%
 qstr_Troop_upkeep__paid_e|Sostentamento Truppe (pagate ogni quattro giorni):^
 qstr_{s12}^^__{s4}:_{reg8|{s12}^^ {s4}: {reg8}/{reg5} Punti Risorsa ^Compagnia: {reg4}^Riserve: {reg7}
 qstr_No_upkeep_costs|Nessun costo di mantenimento
 qstr_Orc_hiring_bonus:_+2|Bonus orchi arruolati: +2/3 per ogni orco^
-; qstr_Current_party_size_l|Current party size limit is {reg7}.^Current party size modifiers are:^^    Base size:  +10^    Player Leadership: {s2}{reg2}^    Companion Leadership: {s3}{reg3}^    Player Charisma: {s4}{reg4}^    Companion Charisma: {s5}{reg5}^    Faction Ranks: {s6}{reg6}^    {s8}TOTAL:  {reg7}
+qstr_Current_party_size_l|Attuale Limite Dimensione Compagnia {reg7}.^Modificatori Dimensione Compagnia:^^ Dimensione Base: +10^ Livello Comando Personaggio: {s2}{reg2}^ Livello Comando Compagni: {s3}{reg3}^ Carisma Personaggio: {s4}{reg4}^ Carisma Compagni {s5}{reg5}^ Rango Fazione: {s6}{reg6}^ {s8}TOTALE: {reg7}
 qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
 qstr__________Faction_str|Rapporto forza fazione:^{s2}
-; qstr_{s1}^^Factions_are_n|{s1}^^Factions are normally sieged when below {reg1} strength. (Some centers can always be sieged.)
+qstr_{s1}^^Factions_are_n|{s1}^^Le fazioni vengono normalmente assediate quando la loro potenza è a l di sotto di {reg1}. (Alcuni centri possono sempre essere posti sotto assedio.)
 qstr_Savagery|Ferocia
 qstr_Traits_gained:^{s2}|Tratto acquisito:^{s2}
 qstr_^^You_are_{s17}.|^^Tu sei {s17}.
@@ -1061,7 +1061,7 @@ qstr_Battles_only|Solo per le battaglie
 qstr_You_drank_the_Ent_Wa|Hai bevuto l'acqua Ent
 qstr_You_used_the_Orc_Bre|Hai usato la Birra Orchesca.
 qstr_You_and_your_compani|Tu e i tuoi compagni bevete un sorso di Miruvor. Senti che le tue forze si rigenerano.
-; qstr_You_share_some_pipe_|You share some pipe-weed with your companions (at least those who like it) and spend a brief moment of calm with them.
+qstr_You_share_some_pipe_|Condividi un po' della tua erba pipa con i tuoi compagni (quanto meno con coloro che la apprezzano) e trascorri un breve momento di quiete insieme a loro.
 qstr_You_give_a_few_leave|Dai qualche foglia di Athelas ai tuoi guaritori.
 qstr_Not_enough_party_spa|Non c'è abbastanza spazio nella compagnia.
 qstr_elites|élite
@@ -1181,8 +1181,8 @@ qstr_You_have_already_fou|Hai già trovato tutte le persone d'interesse.
 qstr_the_captain_of_the_g|il capitano della guarnigione e l'autorità civile.
 qstr_and_the_captain_of_t|e il capitano della guarnigione. Poiché questo luogo è stato conquistato di recente, non ha autorità civile.
 qstr_You_also_heard_of_a_|Hai anche sentito parlare di un guaritore, ma dovrai trovarli da solo.
-; qstr_{s4}_s_scouts_have_s|{s4}'s scouts have seen and reported your failure. You lost the siege banner and have brought shame to {s4}.
-; qstr_{s4}_has_taken_note_|{s4} has taken note of your failed siege attempt.
+qstr_{s4}_s_scouts_have_s|Esploratori di {s4} hanno visto e riportato il tuo fallimento. Hai perso lo strendardo d'assedio e portato il biasimo su {s4}.
+qstr_{s4}_has_taken_note_|{s4} ha preso nota del tuo fallito tentativo d'assedio.
 qstr_{s1}_s_Ship|Nave di {s1}
 qstr_Time_passes...|Il tempo scorre...
 qstr_Forces_of_Good|Le forze del Bene
@@ -1203,7 +1203,7 @@ qstr_Try_as_you_might_you|Fai tutto ciò che è in tuo potere, ma non riesci a s
 qstr_The_village_has_been|Il villaggio è stato razziato, gli abitanti sono stati uccisi o resi schiavi. L'Oscuro Signore ne sarà compiaciuto.
 qstr_You_failed_to_raid_t|Hai fallito nel razziare il villaggio e vieni mandato in fuga con i tuoi compagni. Senti le grida dei vincitori mentre percepisci lo sguardo di disapprovazione dell'Occhio.
 qstr_The_Scout_Camp_has_b|Il Campo degli Esploratori è stato raso al suolo, questo rallenterà l'avanzata del nemico.
-; qstr_You_failed_to_destro|You failed to destroy the Scout Camp. The enemy has taken measure of your faction and has decidedly struck.
+qstr_You_failed_to_destro|Hai fallito nel distruggere il Campo dei Ricognitori. Il nemico ha potuto valutare la forza della tua fazione, decidendo di sferrare un pesante attacco.
 qstr_You_have_defeated_the|Hai sconfitto la flotta assalitrice ! Si tratta di un duro colpo ai piani del nemico !
 qstr_You_defeated_the_int|Hai sconfitto la flotta nemica ! Benché tu non disponga di forze sufficienti ad assaltare la città, si tratta di una grande vittoria !
 qstr_You_drove_back_the_e|Hai respinto la flotta nemica, ma hai perso la maggior parte delle tue navi !
@@ -1231,19 +1231,19 @@ qstr_flooded._Somebody_or|è allagato. Qualcuno deve aver aperto le dighe di Ise
 qstr_destroyed._Only_smol|è distrutto. Restano solo fumanti rovine.
 qstr_^^^You_lost_your_fig|^^^Hai avuto la peggio contro l'ammutinamento ! ^Sembra che la tua armata di orchi ha un nuovo comandante ora .
 qstr_^^^You_have_slain_th|^^^Hai ucciso l'autore del reato, e gli altri orchi rapidamente tornano in linea. ^Per qualche tempo queste spregevoli creature saranno tranquille di sicuro.
-; qstr_^^A_fierce_fight_bre|^^A fierce fight breaks out, but your loyal troop quickly gain the upper hand and slay the usurper and his mutineers. This will silence any grumblers for a good while. ^^Casualties: ^^{s8}
+qstr_^^A_fierce_fight_bre|^^Scoppia una violenta battaglia, ma le tue fedeli truppe prendono rapidamente il sopravvento e uccidono l'usurpatore con i suoi ammutinati. Questo metterà a tacere tutti i cospiratori per un bel po'. ^^Perdite: ^^{s8}
 qstr_You_cover_up_your_tr|Copri le tue tracce e continui a muoverti.
 qstr_the_Eye|l'Occhio
 qstr_the_Hand|la Mano
 qstr_{s1}_has_joined_{s12|{s1} si è unito a {s12}
 qstr_{s3}_gained_faction_|{s3} guadagna forza per la fazione.
-; qstr_This_is_ill_news_but|This is ill news, but it won't help them.
-; qstr_Hopeful_tidings_inde|Hopeful tidings indeed!
-; qstr_The_orcs_in_your_par|The orcs in your party enjoyed the underground journey.
-; qstr_The_men_in_your_part|The men in your party hated the underground journey.
-; qstr_However_the_dangerou|However, the dangerous journey took its toll: ^^{s0}
-; qstr_You_have_tracked_dow|You have tracked down the beast and ordered your party to encircle it, so it may not escape from the area. ^Now, decide how many companions should accompany you on your hunt. The more you take with you, the easier it is to find and kill the beast, but your part in the hunt will be smaller.
-; qstr_You_have_tracked_down|You have tracked down the beast.
+qstr_This_is_ill_news_but|Questa è una pessima notizia, ma non sarà per loro d'aiuto.
+qstr_Hopeful_tidings_inde|Notizie davvero incoraggianti !
+qstr_The_orcs_in_your_par|Gli orchi del tuo gruppo hanno apprezzato il viaggio sotterraneo.
+qstr_The_men_in_your_part|Gli uomini del tuo gruppo hanno detestato il viaggio nel sottosuolo.
+qstr_However_the_dangerou|Tuttavia, il periglioso viaggio ha avuto conseguenze: ^^{s0}
+qstr_You_have_tracked_dow|Hai rintracciato la bestia e hai ordinato al tuo gruppo di accerchiarla, in modo che non possa allontanarsi dalla zona. Ora, devi decidere quanti compagni ti affiancheranno nella caccia. Più ne porterai con te, più facile sarà trovare e uccidere la bestia, ma in quel caso il tuo ruolo nella caccia sarà minore.
+qstr_You_have_tracked_down|Hai rintracciato la bestia.
 ; qstr_The_{s7}_lies_dead_b|The {s7} lies dead before you. You and your troops celebrate the triumph and share the experience of the successful hunt.
 ; qstr_Shared_{reg16}_exper|Shared {reg16} experience with {reg15} companions
 ; qstr_The_beast_has_overco|The beast has overcome you, and only by fortune did you escape being torn apart. When at last you regain your senses, you find that the trail has gone cold. The creature is far beyond your reach now, and there is no hope of catching it again.
