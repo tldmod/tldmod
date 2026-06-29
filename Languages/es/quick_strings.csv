@@ -277,7 +277,7 @@ qstr_Bonus_to_Trainer__Pa|Bonificación a Instrucción (Grupo)
 qstr_Bonus_to_Bargainer__|Bonificación a Comercio (Grupo)
 qstr_Not_affected_by_nigh|No le afecta la noche
 qstr_Increased_health_and|Aumenta salud y resistencia al desequilibrio
-qstr_Can_enter_battle_rag|Puede entrar en furia de combatea
+qstr_Can_enter_battle_rag|Puede entrar en furia de combate
 qstr_Can_scare_wargs|Asusta a los huargos
 qstr_Range:_{reg55}|Distancia: {reg55}
 qstr_Dwarves|enanos
@@ -709,7 +709,7 @@ qstr_have_taken_measure_o|han tomado buena nota de la fuerza actual de tu facci�
 qstr_loses_Faction_Streng|pierde fuerza de facción, ya que las líneas de suministros se han visto interrumpidas.
 qstr_loses_Faction_Strengt|pierde fuerza de facción debido a la destrucción de su campamento.
 qstr_gains_Faction_Streng|gana fuerza de facción al extenderse las noticias de tu victoria.
-qstr_update_savegame:_swa|actualizar partida guardada: cambiar montura de arañaswap spider mount
+qstr_update_savegame:_swa|actualizar partida guardada: cambiar montura de araña
 qstr_In_the_latest_hotfix|En el último parche, algunas variables globales han tenido que ser restauradas a sus valores predeterminados, para asegurar la comptabilidad de las partidas guardas. Comprueba tus opciones de dificultad de campaña y arquería montada, si las habías cmabiado anteriormente, y selecciona los valores que prefieras.
 qstr_Raiders|Incursores
 qstr_have_won_the_sea_bat|han ganado la batalla naval, desmoralizando a tus tropas. El enemigo podría aprovechar esta derrota para aumentar la frecuencia de sus ataques.
@@ -1802,7 +1802,7 @@ qstr_I_want_you_to_slay_a|Quiero que liquides al menos a {reg22} {s6}, para demo
 qstr_We_will_get_rid_of_t|Nos libraremos de estas alimañas.
 qstr_{s9}_wants_you_to_sl|{s9} quiere que mates a {reg22} {s6} en combate.
 qstr_Thank_you_for_offerin|Gracias por ofrecer tu asistencia, {playername}.^^ Necesito ayuda con {s6} que ha estado deambulando por las cercanías de {s7}, sembrando el terror a su paso. Ha llegado a tal punto que pocos se atreven a  dejar la seguridad de nuestros muros. Da caza a la bestia y mátala.
-qstr_You_have_come_at_a_g|Viene sne buen momento, {playername}.^^Vas a lidiar con {s6} que deambula por las cercanías de {s7}. Ha matado  a nuestros cazadores, ha hecho huir a nuestros srivientes y su libertad se ha tornado en atrevimiento. No podemos permitir que esa criatura siga vagando sin control.
+qstr_You_have_come_at_a_g|Vienes en buen momento, {playername}.^^Vas a lidiar con {s6} que deambula por las cercanías de {s7}. Ha matado a nuestros cazadores, ha hecho huir a nuestros sirvientes y su libertad se ha tornado en atrevimiento. No podemos permitir que esa criatura siga vagando sin control.
 qstr_Be_mindful_that_it_s|Ten cuidado: la bestia ha eludido a todos los cazadores que hemos enviado tras ella. Un buen rastreador y un puñado de compañeros te servirán mejor que una gran compañía. Y cuando te acerques a ella, lleva contigo solo unos pocos guerreros, o de lo contrario tratará de huir.
 qstr_Track_it_down_and_ki|Rastrea a la bestia y mátala. Es una criatura astuta y ha evitado todas las emboscadas que le hemos tendido. Lleva contigo a un rastreador hábil y unos pocos guerreros de confiazna. Una hueste numerosa solo la espantará antes de que caiga en la trampa.
 qstr_Rest_assured_we_will|No te preocupes, pondremos fin a esa bestia.
@@ -1899,7 +1899,7 @@ qstr_Wait!_You_must_be_{p|¡Espera! Tú debes de ser {playername}. {s4} Escúcha
 qstr_Wait!_I_am_told_you_|¡Espera! Me han dicho que tú eres {playername}. {s4} Antes de que te vayas...
 qstr_Wait!_You_are_{playe|¡Espera! Eres {playername}, ¿verdad?. Creo que no nos conocemos. {s4} Antes de que te vayas...
 qstr_Wait_{playername}_he|Espera, {playername}, escúchame antes de irte...
-qstr_Wait_{playername}_be|Espera,  {playername}, antes de que te vayas...
+qstr_Wait_{playername}_be|Espera, {playername}, antes de que te vayas...
 qstr_I_hope_your_rabble_f|Espero que tu chusma sepa luchar.
 qstr_Let_us_bring_ruin_to|Traeremos la ruina a nuestros enemigos.
 qstr_I_look_forward_to_fi|Estoy deseando luchar a tu lado.
@@ -1917,11 +1917,11 @@ qstr_Let_me_join_you_and_|Déjame ir contigo y asegurar el éxito.
 qstr_I_may_be_of_assistan|Podría ser de ayuda, si me aceptas.
 qstr_Are_you_certain_you_|¿Seguro que puedes encargarte de cumplir las órdenes que te ha dado mi {s5}, {s3}? {s4}
 qstr_The_task_given_to_yo|La tarea que te ha encomendado mi {s5}, {s3}, es demasiado importante para arriesgarnos a que fracase. {s4}
-qstr_My_{s5}_{s3}_has_giv|Mi {s5}, {s3}, te ha encomendado una tarea de gran imporancia. {s4}
-qstr_Join_my_horde_but_re|únete a mi horda, pero recuerda que respondo ante {s3}, no ante ti.
+qstr_My_{s5}_{s3}_has_giv|Mi {s5}, {s3}, te ha encomendado una tarea de gran importancia. {s4}
+qstr_Join_my_horde_but_re|Únete a mi horda, pero recuerda que respondo ante {s3}, no ante ti.
 qstr_Very_well_let_s_see_|Muy bien, veremos si de verdad eres tan útil.
 qstr_Your_assistance_woul|Tu ayuda es más que bienvenida.
-qstr_My_horde_has_no_room|En mi horda no cabe naide más.
+qstr_My_horde_has_no_room|En mi horda no cabe nadie más.
 qstr_My_party_has_no_plac|En mi compañía no hay sitio para nadie más
 qstr_I_fear_I_have_no_roo|Me temo que no hay espacio para nadie más en mi compañía.
 qstr_Hrmph_I_can_do_this_|Bah, puedo hacerlo por mi cuenta.
