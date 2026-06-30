@@ -1,5 +1,5 @@
 itemsfile version 2
-999
+1022
  itm_no_item {!}INVALID_ITEM {!}INVALID_ITEM 1  invalid_item 0  4107 0 3 0 1.5 90 0 0 0 0 0 0 0 0 0 0 0
 0
 
@@ -207,10 +207,10 @@ itemsfile version 2
  itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_huge 0  1 0 3000 16106389504 0 100 0 32 0 3 120 55 35 100 0 35 0
 0
 
- itm_animal_big Big_Animal Big_Animal 8  bry_cow_a 0  bry_cow_b 2  bry_cow_c 4  bry_cow_d 8  CWE_cow_mod_a 16  bry_wild_donkey 2199023255552  spak_yak1 1099511627776  spak_yak2 4398046511104  18014398509482003 0 10 0 0 10 0 0 0 10 25 5 5 90 0 0 0
+ itm_warg_wild_1 Wild_Warg Wild_Warg 1  warg_1B 0  65537 0 600 84825866240 0 90 0 10 0 2 80 64 36 95 0 25 0
 0
 
- itm_animal_small Small_Animal Small_Animal 6  bry_goat 0  bry_goat_c 2  CWE_sheep_mod_a 4  CWE_sheep_mod_b 8  wolf_dog 16  pk_pig 32  18014398509482003 0 10 0 0 10 0 0 0 10 25 5 5 50 0 0 0
+ itm_warg_wild_2 Wild_Warg Wild_Warg 1  warg_1C 0  65537 0 600 84825866240 0 90 0 10 0 2 80 64 36 95 0 25 0
 0
 
  itm_troll_weapon_long Giant_Halberd Giant_Halberd 1  isengard_halberd_troll 0  2251941637783556 512 1 0 58 100 0 0 0 0 30720 70 120 200 0 542 542
@@ -321,10 +321,10 @@ itemsfile version 2
  itm_white_tunic_a Civilian_Outfit Civilian_Outfit 16  gondor_tunic_b 0  gondor_dress_a 64  gondor_dress_b 256  generic_tunic_c 512  dale_tunic 2048  rohan_tunic 4096  smith_leather_apron 32768  generic_leather_jerkin 65536  dale_coat 1048576  rohan_dress 8388608  tld_robe_generic_dress 137438953472  L_roh_shirt_M1 549755813888  L_roh_long_shirt_cape_M4 1099511627776  generic_tunic_a 274877906944  rohan_fine_outfit_dale_dress 2199023255552  gondor_fine_outfit_dress 4398046511104  553648141 0 100 121634950 2 100 0 6 1 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_shoes Leather_Shoes Leather_Shoes 3  ankle_boots_a_new 134  narf_rus_shoes 0  fi_boot14 1024  536940302 0 80 121634950 1 90 0 0 8 0 0 0 0 0 0 0 0
+ itm_rohan_shoes Leather_Shoes Leather_Shoes 3  ankle_boots_a_new 134  wrapping_boots_a 0  narf_rus_shoes 1024  536940302 0 80 121634950 1 90 0 0 8 0 0 0 0 0 0 0 0
 0
 
- itm_furry_boots Furry_Boots Furry_Boots 1  furry_boots 0  65550 0 200 123731968 2 90 0 0 10 0 0 0 0 0 0 0 0
+ itm_furry_boots Nomad_Boots Nomad_Boots 3  furry_boots 134  nomad_boots_a 0  hide_boots_a 167772160  65550 0 200 123731968 2 90 0 0 10 0 0 0 0 0 0 0 0
 0
 
  itm_free_blue_tunic {!}Blue_Tunic {!}Blue_Tunic 1  dale_tunic 0  553713677 0 100 121634950 2 100 0 3 3 0 0 0 0 0 0 0 0
@@ -348,7 +348,7 @@ itemsfile version 2
  itm_mail_coif Mail_Coif Mail_Coif 2  maci_mail_coif 0  crusader_koif_a 167772160  1073807372 0 250 167772294 2 100 22 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_free_green_dress {!}Green_Dress {!}Green_Dress 1  rohan_dress 0  553713677 0 500 121634950 6 100 0 10 6 0 0 0 0 0 0 0 0
+ itm_cloth_coif Cloth_Cap Cloth_Cap 2  arming_cap_a_new 0  padded_coif_a_new 167772160  1073807372 0 60 167772294 2 100 10 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_free_tld_tunic {!}Tunic {!}Tunic 1  tld_tunic 0  553648141 0 100 121634950 2 100 0 3 3 0 0 0 0 0 0 0 0
@@ -2714,7 +2714,7 @@ itemsfile version 2
  itm_black_arrows_reward Black_Arrows Black_Arrows 6  khazad_orc_arrow_2 0  khazad_orc_arrow_2.lod2 2305843009213693952  khazad_orc_arrow_2_quiver 3458764513820540928  rohan_arrow2_black 131072  rohan_arrow2_black_flying 2305843009213825024  rohan_quiver2_black 3458764513820672000  141750702085 1610612736 2000 4398046520456 3 100 0 0 0 0 0 0 0 95 25 3 0
 0
 
- itm_leather_boots_reward Hunter_Boots Hunter_Boots 1  got_stark_hanter_boots 0  4110 0 200 121634950 1 100 0 0 22 0 0 0 0 0 0 0 0
+ itm_hunter_boots Hunter_Boots Hunter_Boots 2  hunter_boots_a 0  got_stark_hanter_boots 536870912  65550 0 200 121634950 1 100 0 0 14 0 0 0 0 0 0 0 0
 0
 
  itm_rohan_armor_th Rohan_Royal_Armor Rohan_Royal_Armor 10  theoden_armour 0  dno_priest_3_1_dark 2048  dm_nazgulrobe 512  tld_robe_generic_dress 256  pippin 32  merry 16  dno_priest_3_1 2199023255552  dno_priest_3_final 8  old_nazgulrobe 256  galadriel 4  16777229 0 4800 704643206 35 100 0 44 25 18 0 0 0 0 0 0 0
@@ -2778,7 +2778,7 @@ itemsfile version 2
  itm_peasant_man_a_wb Peasant_Outfit Peasant_Outfit 1  peasant_man_a 0  553648141 0 100 121634950 2 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_leather_jerkin_wb Leather_Jerkin Leather_Jerkin 1  ragged_leather_jerkin 0  553648141 0 300 121634950 6 100 0 10 6 0 0 0 0 0 0 0 0
+ itm_leather_jerkin_wb Leather_Jerkin Leather_Jerkin 1  ragged_leather_jerkin 0  553648141 0 100 121634950 6 100 0 10 6 0 0 0 0 0 0 0 0
 0
 
  itm_white_tunic_c_wb Tunic_Jacket Tunic_Jacket 1  coarse_tunic_a_new 0  553648141 0 100 121634950 2 100 0 3 3 0 0 0 0 0 0 0 0
@@ -2790,7 +2790,7 @@ itemsfile version 2
  itm_red_tunic_wb Red_Tunic Red_Tunic 1  rich_tunic_a 0  553648141 0 100 121634950 2 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_fur_coat_wb Dale_Coat Dale_Coat 1  dale_coat 0  553648141 0 400 121634950 6 100 0 13 6 0 0 0 0 0 0 0 0
+ itm_fur_coat_tld Dale_Coat Dale_Coat 1  dale_coat 0  553648141 0 100 121634950 6 100 0 13 6 0 0 0 0 0 0 0 0
 0
 
  itm_fur_hat_a_new_wb Fur_Hat Fur_Hat 1  fur_hat_a_new 0  1627389964 0 100 167772294 1 100 12 0 0 0 0 0 0 0 0 0 0
@@ -2808,10 +2808,10 @@ itemsfile version 2
  itm_sar_robe_b_wb Robe Robe 1  sar_robe_b 0  553648141 0 100 121634950 2 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_black_dress_wb Black_Dress Black_Dress 1  gondor_dress_a 0  553648141 0 500 121634950 3 100 0 10 10 0 0 0 0 0 0 0 0
+ itm_black_dress_wb Black_Dress Black_Dress 1  gondor_dress_a 0  553648141 0 100 121634950 3 100 0 10 10 0 0 0 0 0 0 0 0
 0
 
- itm_blackwhite_dress_wb Lady_Dress Lady_Dress 1  gondor_dress_b 0  553648141 0 500 121634950 3 100 0 10 10 0 0 0 0 0 0 0 0
+ itm_blackwhite_dress_wb Lady_Dress Lady_Dress 1  gondor_dress_b 0  553648141 0 100 121634950 3 100 0 10 10 0 0 0 0 0 0 0 0
 0
 
  itm_white_tunic_b_wb Simple_Tunic Simple_Tunic 1  gondor_tunic_b 0  553648141 0 100 121634950 2 100 0 3 3 0 0 0 0 0 0 0 0
@@ -2826,25 +2826,25 @@ itemsfile version 2
  itm_green_tunic_wb Green_Tunic Green_Tunic 1  rohan_tunic 0  553648141 0 100 121634950 2 100 0 3 3 0 0 0 0 0 0 0 0
 0
 
- itm_green_dress_wb Green_Dress Green_Dress 1  rohan_dress 0  553648141 0 500 121634950 6 100 0 10 6 0 0 0 0 0 0 0 0
+ itm_green_dress_wb Green_Dress Green_Dress 1  rohan_dress 0  553648141 0 100 121634950 6 100 0 10 6 0 0 0 0 0 0 0 0
 0
 
- itm_gondor_fine_outfit_dress_wb Fine_Outfit Fine_Outfit 1  gondor_fine_outfit_dress 0  553648141 0 500 121634950 3 100 0 10 10 0 0 0 0 0 0 0 0
+ itm_gondor_fine_outfit_dress_wb Fine_Outfit Fine_Outfit 1  gondor_fine_outfit_dress 0  553648141 0 100 121634950 3 100 0 10 10 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_fine_outfit_dale_dress_wb Fine_Outfit Fine_Outfit 1  rohan_fine_outfit_dale_dress 0  553648141 0 500 121634950 3 100 0 10 10 0 0 0 0 0 0 0 0
+ itm_rohan_fine_outfit_dale_dress_wb Fine_Outfit Fine_Outfit 1  rohan_fine_outfit_dale_dress 0  553648141 0 100 121634950 3 100 0 10 10 0 0 0 0 0 0 0 0
 0
 
- itm_robe_generic_dress_wb Robe Robe 1  tld_robe_generic_dress 0  553648141 0 500 121634950 3 100 0 10 10 0 0 0 0 0 0 0 0
+ itm_robe_generic_dress_wb Robe Robe 1  tld_robe_generic_dress 0  553648141 0 100 121634950 3 100 0 10 10 0 0 0 0 0 0 0 0
 0
 
- itm_wimple_a_wb Wimple Wimple 1  gondor_wimple_a 0  1610612748 0 10 121634950 0.5 100 4 0 0 0 0 0 0 0 0 0 0
+ itm_wimple_a_wb Wimple Wimple 1  gondor_wimple_a 0  1610612748 0 100 121634950 0.5 100 4 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_wimple_with_veil_wb Wimple Wimple 1  gondor_wimple_b 0  1610612748 0 10 121634950 0.5 100 4 0 0 0 0 0 0 0 0 0 0
+ itm_wimple_with_veil_wb Wimple Wimple 1  gondor_wimple_b 0  1610612748 0 100 121634950 0.5 100 4 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_fine_hat_wb Fine_Hat Fine_Hat 1  gondor_fine_fem_hat 0  536870924 0 10 121634950 0.5 100 4 0 0 0 0 0 0 0 0 0 0
+ itm_fine_hat_wb Fine_Hat Fine_Hat 1  gondor_fine_fem_hat 0  536870924 0 100 121634950 0.5 100 4 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_rohan_tunic_a_wb Rohan_Tunic Rohan_Tunic 1  L_roh_shirt_M1 0  553648141 0 100 121634950 2 100 0 6 3 0 0 0 0 0 0 0 0
@@ -2853,7 +2853,7 @@ itemsfile version 2
  itm_rohan_tunic_b_wb Rohan_Tunic Rohan_Tunic 1  L_roh_long_shirt_cape_M4 0  553648141 0 100 121634950 2 100 0 6 4 0 0 0 0 0 0 0 0
 0
 
- itm_denethor_robe Fine_Outfit Fine_Outfit 1  dno_priest_3_1_dark 0  553648141 0 500 121634950 3 100 0 10 10 0 0 0 0 0 0 0 0
+ itm_denethor_robe Fine_Outfit Fine_Outfit 1  dno_priest_3_1_dark 0  553648141 0 100 121634950 3 100 0 10 10 0 0 0 0 0 0 0 0
 0
 
  itm_ent_head_helm2 {!}Ent_Head {!}Ent_Head 1  ent_head2 0  4108 0 1 0 58 100 60 0 0 30 0 0 0 0 0 0 0
@@ -3007,6 +3007,75 @@ itemsfile version 2
 0
 
  itm_kine_strong Great_Bull Great_Bull 1  spak_yak2 0  4097 0 1200 0 0 100 0 30 0 10 90 75 40 130 0 70 0
+0
+
+ itm_animal_big Big_Animal Big_Animal 8  bry_cow_a 0  bry_cow_b 2  bry_cow_c 4  bry_cow_d 8  CWE_cow_mod_a 16  bry_wild_donkey 2199023255552  spak_yak1 1099511627776  spak_yak2 4398046511104  18014398509482003 0 10 0 0 10 0 0 0 10 25 5 5 90 0 0 0
+0
+
+ itm_animal_small Small_Animal Small_Animal 6  bry_goat 0  bry_goat_c 2  CWE_sheep_mod_a 4  CWE_sheep_mod_b 8  wolf_dog 16  pk_pig 32  18014398509482003 0 10 0 0 10 0 0 0 10 25 5 5 50 0 0 0
+0
+
+ itm_fur_coat Fur_Coat Fur_Coat 1  fur_coat 0  553648141 0 100 167772294 6 100 0 13 6 0 0 0 0 0 0 0 0
+0
+
+ itm_leather_jacket Leather_Jacket Leather_Jacket 1  leather_jacket_new 0  553648141 0 100 121634950 3 100 0 20 0 0 0 0 0 0 0 0 0
+0
+
+ itm_nomad_armor Nomad_Armor Nomad_Armor 1  nomad_armor_new 0  16777229 0 100 167772294 4 92 0 12 4 0 0 0 0 0 0 0 0
+0
+
+ itm_khergit_armor Nomad_Armor Nomad_Armor 1  khergit_armor_new 0  16777229 0 100 167772294 4 92 0 12 4 0 0 0 0 0 0 0 0
+0
+
+ itm_rawhide_coat Rawhide_Coat Rawhide_Coat 1  coat_of_plates_b 0  16777229 0 100 167772294 4 92 0 8 4 0 0 0 0 0 0 0 0
+0
+
+ itm_leather_armor Leather_Armor Leather_Armor 1  tattered_leather_armor_a 0  16777229 0 100 167772294 4 92 0 14 8 0 0 0 0 0 0 0 0
+0
+
+ itm_nomad_vest Nomad_Vest Nomad_Vest 1  nomad_vest_new 0  16777229 0 100 167772294 4 92 0 8 4 0 0 0 0 0 0 0 0
+0
+
+ itm_ragged_outfit Ragged_Outfit Ragged_Outfit 1  ragged_outfit_a_new 0  16777229 0 100 167772294 4 92 0 11 6 0 0 0 0 0 0 0 0
+0
+
+ itm_padded_leather Padded_Leather Padded_Leather 1  leather_armor_b 0  16777229 0 100 167772294 4 92 0 16 2 0 0 0 0 0 0 0 0
+0
+
+ itm_pelt_coat Pelt_Coat Pelt_Coat 1  thick_coat_a 0  16777229 0 100 167772294 4 92 0 8 4 0 0 0 0 0 0 0 0
+0
+
+ itm_leather_vest Leather_Vest Leather_Vest 1  leather_vest_a 0  16777229 0 100 167772294 4 92 0 8 6 0 0 0 0 0 0 0 0
+0
+
+ itm_wimple_a Wimple Wimple 1  tld_wimple_a_new 0  1610612748 0 100 121634950 0.5 100 4 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_wimple_with_veil Wimple_with_Veil Wimple_with_Veil 1  tld_wimple_b_new 0  1610612748 0 100 121634950 0.5 100 4 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_headcloth Headcloth Headcloth 1  tld_headcloth_a_new 0  536870924 0 100 121634950 0.5 100 4 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_fur_hat Fur_Hat Fur_Hat 1  tld_fur_hat_a_new 0  553648140 0 100 121634950 0.5 100 8 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_nomad_cap_b Nomad_Cap Nomad_Cap 1  tld_nomad_cap_b_new 0  536870924 0 100 121634950 0.75 100 13 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_felt_hat Felt_Hat Felt_Hat 1  tld_felt_hat_a_new 0  553648140 0 100 121634950 1 100 8 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_felt_hat_b Felt_Hat Felt_Hat 1  tld_felt_hat_b_new 0  553648140 0 100 121634950 1 100 8 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_leather_cap Leather_Cap Leather_Cap 1  tld_leather_cap_a_new 0  536870924 0 100 121634950 1 100 18 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_leather_steppe_cap_a Steppe_Cap Steppe_Cap 1  tld_leather_steppe_cap_a_new 0  536870924 0 100 121634950 1 100 15 0 0 0 0 0 0 0 0 0 0
+0
+
+ itm_civ_fine_shoes Fine_Shoes Fine_Shoes 1  fi_boot14 0  536874766 0 100 121634950 1.25 100 0 0 1 0 0 0 0 0 0 0 0
 0
 
  itm_torch Torch Torch 1  orc_club_a 0  6356995 9223635919737716976 11 0 2.5 100 0 0 0 0 11264 95 0 95 0 256 523

@@ -1,4 +1,4 @@
-1865
+1861
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -892,6 +892,7 @@ qstr_{***}{s2}^^{s5}^{s6} {***}{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2} Traits_gained:^{s2}
 qstr_^^You_are_{s17}. ^^You_are_{s17}.
 qstr_Assassins_in_the_cam Assassins_in_the_camp,_defend_yourself!
+qstr_Be_aware_that_the_li Be_aware_that_the_limit_does_not_account_for_the_player's_bonus_on_party_skills.
 qstr_{***}Cheats_used:_{reg {***}Cheats_used:_{reg78}
 qstr_{***}Ally_party_size:_ {***}Ally_party_size:_{reg1}
 qstr_{***}Enemy_party_size: {***}Enemy_party_size:_{reg1}
@@ -963,13 +964,8 @@ qstr_{***}SE_advance_camps_s {***}SE_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_{***}C_advance_camps_sp {***}C_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_{***}N_advance_camps_sp {***}N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_{***}Gandalf_would_lik {***}Gandalf_would_like_to_have_a_little_chat!
-qstr_{***}1_troll_added! {***}1_troll_added!
-qstr_{***}Orc_Horde_Spawned {***}Orc_Horde_Spawned!
-qstr_{***}Vet_Archer_Spawne {***}Vet_Archer_Spawned!
-qstr_{***}Killer_WItcher_Sp {***}Killer_WItcher_Spawned,_Badass_King_Theo_added!
-qstr_{***}Player_Siege_Enab {***}Player_Siege_Enabled
-qstr_{***}You_are_not_in_th {***}You_are_not_in_the_right_region_to_spawn_animal_ambushes._Please_go_to_N_Mirkwood,_S_Mirkwood,_Grey_Mountains,_or_Misty_Mountains
 qstr_{***}{reg1} {***}{reg1}
+qstr_{***}Orc_Horde_Spawned {***}Orc_Horde_Spawned!
 qstr_{***}all_equipped_item {***}all_equipped_items_set_to_{s1}
 qstr_{***}cracked {***}cracked
 qstr_{***}heavy {***}heavy

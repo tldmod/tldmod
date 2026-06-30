@@ -1573,7 +1573,7 @@ fac_str_max = 8000
 
 fac_str_guardian = 1300 # was: 1000 # less than this, spawn the guardian party
 
-# faction ,	initial strength,culture,			faction lord,  	faction marshall,  [5 tiers of troops],			T2							t3								t4									slot_faction_tier_5_troop			slot_faction_ranged_troop		slot_faction_troll_troop[reinforcement templates, prisoner trains],                                       main banner,  map party banner, [slot_faction: deserter_troop, slot_faction_guard_troop,	slot_faction_rider_troop, 			slot_faction_archer_troop, 		    slot_faction_castle_guard_troop]	slot_faction_banner_troop      faction capital         side              home theater, advance camp
+# faction ,	initial strength,culture,			faction lord,  	faction marshall,  [5 tiers of troops],			T2							t3								t4									slot_faction_tier_5_troop			slot_faction_ranged_troop		slot_faction_troll_troop[reinforcement templates, prisoner trains],                                       main banner,  map party banner, [slot_faction_deserter_troop, slot_faction_guard_troop,	slot_faction_rider_troop, 			slot_faction_archer_troop, 		    slot_faction_castle_guard_troop]	slot_faction_banner_troop      faction capital         side              home theater, advance camp
 faction_init = [
 (fac_gondor  ,4400,mtf_culture_gondor       ,[trp_gondor_lord  ,trp_knight_1_3    ],[trp_i1_gon_levy,     		trp_i2_gon_watchman,		trp_i3_gon_footman,       		trp_i4_gon_swordsman,          		trp_c5_gon_vet_knight, 				trp_a4_gon_archer, 								 -1],	[pt_gondor_reinf_a,  pt_gondor_reinf_b,  pt_gondor_reinf_c,  pt_gondor_p_train],  spr_banner_a, icon_mfp_gondor,  [-1,                      trp_i2_gon_watchman,        	trp_c2_gon_squire,       		    trp_a3_gon_bowman,  				trp_i6_gon_tower_swordsman,                                 -1], p_town_minas_tirith,    faction_side_good,theater_SE,p_advcamp_gondor),
 (fac_rohan   ,4000,mtf_culture_rohan_goodmen,[trp_rohan_lord   ,trp_rohan_lord    ],[trp_i1_rohan_youth,      	trp_c2_squire_of_rohan, 	trp_c3_rider_of_rohan,      	trp_c4_veteran_rider_of_rohan,    	trp_c6_rider_guard_of_rohan,		trp_a3_dism_skirmisher_of_rohan, 		 			 -1],[pt_rohan_reinf_a,   pt_rohan_reinf_b,   pt_rohan_reinf_c,   pt_rohan_p_train],  spr_banner_b, icon_mfp_rohan,   [-1,                      trp_i2_guardsman_of_rohan,		trp_c2_squire_of_rohan,	            trp_a3_dism_skirmisher_of_rohan,	trp_c6_king_s_man_of_rohan,                                 -1], p_town_edoras,          faction_side_good,theater_SW,p_advcamp_rohan),
@@ -2244,9 +2244,9 @@ fac_reward_items_list = [
 #fac_gundabad
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4, itm_orc_throwing_axes_reward, 0), (5, itm_orc_bastard_scimitar, imod_balanced), (6, itm_warg_reward, imod_champion), (7, itm_bat_reward, 0), (8, itm_gundabad_helm_e, imod_lordly), (9, itm_orc_idol_reward, 0)],
 #fac_dunland
-[(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4, itm_crebain_reward, 0), (5, itm_wilderness_cowl, 0), (6, itm_fur_gloves_reward, 0), (7, itm_leather_boots_reward, 0), (8, itm_dunland_chieftain, imod_lordly), (9, itm_dun_berserker, imod_masterwork)],
+[(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4, itm_crebain_reward, 0), (5, itm_wilderness_cowl, 0), (6, itm_fur_gloves_reward, 0), (7, itm_hunter_boots, imod_lordly), (8, itm_dunland_chieftain, imod_lordly), (9, itm_dun_berserker, imod_masterwork)],
 #fac_beorn
-[(2,itm_cooking_cauldron,0),(3, itm_fur_gloves_reward, 0),(4, itm_leather_boots_reward, 0), (5, itm_wilderness_cowl, 0), (6, itm_herbarium_reward, 0), (7, itm_beorn_axe_reward, imod_masterwork), (8, itm_beorn_chief, imod_lordly), (9, itm_beorn_shield_reward, imod_reinforced)],
+[(2,itm_cooking_cauldron,0),(3, itm_fur_gloves_reward, 0),(4, itm_hunter_boots, imod_lordly), (5, itm_wilderness_cowl, 0), (6, itm_herbarium_reward, 0), (7, itm_beorn_axe_reward, imod_masterwork), (8, itm_beorn_chief, imod_lordly), (9, itm_beorn_shield_reward, imod_reinforced)],
 
 ] or [
 #fac_gondor
@@ -2282,9 +2282,9 @@ fac_reward_items_list = [
 #fac_gundabad
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4, itm_orc_throwing_axes_reward, 0), (5, itm_orc_bastard_scimitar, imod_balanced), (6, itm_warg_reward, 0), (7, itm_gundabad_helm_e, imod_lordly), (8, itm_gundabad_armor_e, imod_lordly), (9, itm_orc_idol_reward, 0)],
 #fac_dunland
-[(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4, itm_crebain_reward, 0), (5, itm_wilderness_cowl, 0), (6, itm_fur_gloves_reward, 0), (7, itm_leather_boots_reward, 0), (8, itm_dunland_chieftain, imod_lordly), (9, itm_dun_berserker, imod_masterwork)],
+[(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4, itm_crebain_reward, 0), (5, itm_wilderness_cowl, 0), (6, itm_fur_gloves_reward, 0), (7, itm_hunter_boots, imod_lordly), (8, itm_dunland_chieftain, imod_lordly), (9, itm_dun_berserker, imod_masterwork)],
 #fac_beorn
-[(2,itm_cooking_cauldron,0),(3, itm_fur_gloves_reward, 0),(4, itm_leather_boots_reward, 0), (5, itm_wilderness_cowl, 0), (6, itm_herbarium_reward, 0), (7, itm_beorn_axe_reward, imod_masterwork), (8, itm_beorn_chief, imod_lordly), (9, itm_beorn_shield_reward, imod_reinforced)],
+[(2,itm_cooking_cauldron,0),(3, itm_fur_gloves_reward, 0),(4, itm_hunter_boots, imod_lordly), (5, itm_wilderness_cowl, 0), (6, itm_herbarium_reward, 0), (7, itm_beorn_axe_reward, imod_masterwork), (8, itm_beorn_chief, imod_lordly), (9, itm_beorn_shield_reward, imod_reinforced)],
 ]) + [ 
 
 ]

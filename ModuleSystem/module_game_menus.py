@@ -2586,7 +2586,7 @@ game_menus = [
     (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")
    ]),
    # ("camp_mvtest_free_willy",[],"Free all prisoners (for corrupt saves)",[
-    # (spawn_around_party, "p_main_party", "pt_looters"),
+    # (spawn_around_party, "p_main_party", "pt_tribal_orcs"),
     # (try_for_parties, ":cur_party"),
       # (party_is_active, ":cur_party"),
       # (party_get_num_prisoner_stacks, ":num_stacks", ":cur_party"),
@@ -2599,7 +2599,7 @@ game_menus = [
     # (display_message, "@{!}All prisoners freed!", 0x30FFC8),
    # ]),
    # ("camp_mvtest_save_bug",[],"Create a party (for corrupt saves)",[
-    # (spawn_around_party, "p_main_party", "pt_looters"),
+    # (spawn_around_party, "p_main_party", "pt_tribal_orcs"),
     # (display_message, "@{!}Party created, ID={reg0}!", 0x30FFC8),
    # ]),
    # ("camp_mvtest_test_music",[],"Test music path (plays track)",[
@@ -2706,7 +2706,7 @@ game_menus = [
    # ]),            
    # ("camp_mvtest_rescue",[],"Spawn a party with prisoners.",[
      # (set_spawn_radius, 0),
-     # (spawn_around_party, "p_main_party", "pt_looters"),
+     # (spawn_around_party, "p_main_party", "pt_tribal_orcs"),
      # (party_add_prisoners, reg0, "trp_peasant_woman", 10),
      # (display_message, "@{!}Tribal orcs with women spawned!", 0x30FFC8),
    #]),
@@ -3818,13 +3818,21 @@ game_menus = [
     #("enable_kham_cheat",[],"{!}Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@{!}Kham Cheat Mode ON!")]),
     ] + (is_a_wb_menu==1 and [
     #("action_view_all_items",[],"{!}View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
-    ("set_item_modifier",[],"{!}set all wielded items to modifier",[
+    ("show_bandit_spawns",[],"{!}show_bandit_spawns",[
+        (try_for_range, ":party", "p_looter_spawn_point", "p_gondor_test"),
+            (enable_party, ":party"),
+            (party_set_icon, ":party", icon_camp),
+            (party_set_flags, ":party", pf_always_visible, 1),
+        (try_end),
+        (change_screen_map),
+        (display_message, "@{!}show all bandit spawners"),
+        ]),
+   ("set_item_modifier",[],"{!}set all wielded items to modifier",[
         (jump_to_menu, "mnu_set_imod"),(str_store_string, s1, "@{!}none"),(assign, reg5, 0),]),
     ("rohan_set_marshall",[],"{!}Activate Theoden", [
         (faction_set_slot,"fac_rohan",slot_faction_strength_tmp, 5500),
         (display_message, "@{!}Theoden activated"),
         ]),
-    ] or []) + [
     ("spawn_orc_horde_troll",[],"{!}Spawn Orc Horde with Trolls",[
         (jump_to_menu, "mnu_orc_horde_troll")]),
     ("cheat_mutiny",[],"{!}Force orc mutiny",[
@@ -3835,13 +3843,12 @@ game_menus = [
     #("give_siege_stones", [],"Siege Stones Test",[(troop_add_item, "trp_player","itm_stones_siege"), (party_add_members, "p_main_party", "trp_test_vet_archer", 10), (display_message, "@Siege Stones Test")]),
     #("enable_raftmen",[],"{!}Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@{!}Raft Men party enabled. They are down River Running", color_good_news)]),
     #("test_presentation",[],"Test Presentation", [(start_presentation, "prsnt_faction_intro_text")]),
-    ] + (is_a_wb_menu==1 and [
     ("what_theater",[], "{!}Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party"), (display_message, "@{!}theater: {reg0}")]),
     ("what_region",[], "{!}Add 1000000 XP to Party", 
     	[(party_add_xp, "p_main_party", 1000000), (display_message, "@{!}XP added", color_good_news),
     	]),
     ("player_control_allies",[],"{!}Battlesize set to {reg66}", [(options_set_battle_size, reg66),]),
-     ] or []) + [
+
     ("spawn_orc_horde",[],"{!}Spawn Orc Horde with Nazgul", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_mordor_war_party"),(display_message, "@{!}Orc Horde Spawned!"),(party_set_slot, reg0, slot_party_battle_encounter_effect, FELLBEAST),]),
     ("spawn_ent_party",[],"{!}Spawn Ent Party", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_ents"),]),    
     ("spawn_vet_archer",[],"{!}Spawn Vet Archer", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_vet_archer"),(display_message, "@{!}Vet Archer Spawned!"),(assign, ":party", reg0),(call_script, "script_party_wound_all_members", ":party"),]),
@@ -3863,6 +3870,7 @@ game_menus = [
 		(try_end)]),
     #("check_if_capital",[], "{!}How Many Centers Left (Gondor)", [(call_script, "script_cf_check_if_only_capital_left", "p_town_pinnath_gelin")]),
     ("camp_khamtest_back",[],"{!}Back",[(jump_to_menu, "mnu_dev_menu")]),
+    ] or []) + [
  ]),
 
 ( "orc_horde_troll",0,
@@ -5175,7 +5183,7 @@ game_menus = [
 
       # ("camp_mod_4",   [],
       # "{!}Spawn a looter party nearby.",
-      # [  (spawn_around_party, "p_main_party", "pt_looters"),
+      # [  (spawn_around_party, "p_main_party", "pt_tribal_orcs"),
          # (display_message, "@{!}Looter party was spawned nearby."),
          # (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")
       # ]),
@@ -5491,7 +5499,7 @@ game_menus = [
     (set_background_mesh, "mesh_ui_default_menu_window"),
     (try_begin),
       #swy-- native looters are tribal orcs, neat, huh?
-      (eq, "$g_encountered_party_template", "pt_looters"),
+      (eq, "$g_encountered_party_template", "pt_tribal_orcs"),
       (set_background_mesh, "mesh_draw_tribal_orcs"),
     (else_try),
       #swy-- if "tree-chopping orcs" then show this illustration thingy...
@@ -5519,7 +5527,7 @@ game_menus = [
       (is_between, "$g_encountered_party_template", "pt_forest_bandits", "pt_steppe_bandits"),
       (set_background_mesh, "mesh_draw_orc_raiders"),
     (else_try),
-      (is_between, "$g_encountered_party_template", "pt_wild_troll", "pt_looters"),
+      (is_between, "$g_encountered_party_template", "pt_wild_troll", "pt_tribal_orcs"),
       (set_background_mesh, "mesh_draw_wild_troll"),
     (else_try),
     	(eq, "$g_encountered_party_template", "pt_ring_hunters"),
@@ -5546,7 +5554,7 @@ game_menus = [
        # For unfriendly enemies (e.g bandits, trolls, quest parties)
       ("encounter_attack",[
           (this_or_next|eq, 		"$encountered_party_friendly", 0),
-		  (this_or_next|is_between, "$g_encountered_party_template", "pt_wild_troll" ,"pt_looters"),
+		  (this_or_next|is_between, "$g_encountered_party_template", "pt_wild_troll" ,"pt_tribal_orcs"),
 		  (this_or_next|eq, 		"$g_encountered_party_template", "pt_ring_hunters"),
 		  (this_or_next|eq,			"$g_encountered_party", "$qst_raider_party_1"),
 		  (this_or_next|eq,			"$g_encountered_party", "$qst_raider_party_2"),
@@ -5617,7 +5625,7 @@ game_menus = [
 
 		("special_whip",[
 			(eq, "$new_encounter", 1),
-		    (is_between, "$g_encountered_party_template", "pt_looters","pt_steppe_bandits"),
+		    (is_between, "$g_encountered_party_template", "pt_tribal_orcs","pt_steppe_bandits"),
 		    (player_has_item, "itm_angmar_whip_reward"),
 			(str_store_item_name, s4, "itm_angmar_whip_reward"),
 			(party_can_join_party, "$g_encountered_party","p_main_party"),
@@ -5637,7 +5645,7 @@ game_menus = [
  ] for ct in range(cheat_switch)]) + (is_a_wb_menu==1 and [
           ("encounter_attack_bearform",[
           (this_or_next|eq, 		"$encountered_party_friendly", 0),
-		  (this_or_next|is_between, "$g_encountered_party_template", "pt_wild_troll", "pt_looters"),
+		  (this_or_next|is_between, "$g_encountered_party_template", "pt_wild_troll", "pt_tribal_orcs"),
 		  (this_or_next|eq,"$g_encountered_party_template", "pt_ring_hunters"),
 		  (this_or_next|eq, "$g_encountered_party", "$qst_raider_party_1"),
 		  (this_or_next|eq, "$g_encountered_party", "$qst_raider_party_2"),
