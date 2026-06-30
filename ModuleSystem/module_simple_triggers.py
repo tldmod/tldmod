@@ -1334,7 +1334,7 @@ simple_triggers = [
 		(store_current_hours, ":now_hours"),
 		(item_get_slot, ":expiration_hours", ":cur_item", slot_item_deactivation_hour),
 		(le, ":expiration_hours", ":now_hours"),
-		(item_set_slot, "itm_orc_brew", slot_item_is_active, 0),
+		(item_set_slot, ":cur_item", slot_item_is_active, 0),
         (troop_inventory_slot_get_item_amount, ":cur_amount", "trp_player", ":cur_slot"),
         (val_sub, ":cur_amount", 1),
         (troop_inventory_slot_set_item_amount, "trp_player", ":cur_slot", ":cur_amount"),
