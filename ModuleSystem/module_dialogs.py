@@ -830,9 +830,9 @@ dialogs = [
    (change_screen_return),
      (assign, "$g_leave_encounter", 1)]],
   
-#[party_tpl|pt_looters|plyr,"looters_2", [(store_character_level,reg1,"trp_player"),(lt,reg1,4)], 
+#[party_tpl|pt_tribal_orcs|plyr,"looters_2", [(store_character_level,reg1,"trp_player"),(lt,reg1,4)], 
 #"I'm not afraid of you lot. Fight me if you dare!", "close_window", [(encounter_attack)]],
-# [party_tpl|pt_looters|plyr,"looters_2", [], 
+# [party_tpl|pt_tribal_orcs|plyr,"looters_2", [], 
 # "You'll have nothing of mine but cold steel, scum.", "close_window", [(call_script,"script_start_current_battle"),(encounter_attack)]],
 #####################################################################
 #TLD STUFFF
@@ -12459,12 +12459,18 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 [anyone|plyr,"mayor_talk", [(store_partner_quest, ":partner_quest"),
                               (lt, ":partner_quest", 0),
-                              (neq, "$merchant_quest_last_offerer", "$g_talk_troop")],
+                              #(neq, "$merchant_quest_last_offerer", "$g_talk_troop"),
+                              (troop_get_slot, "$merchant_offered_quest", "$g_talk_troop", slot_troop_merchant_offered_quest),
+                              (eq,"$merchant_offered_quest",0)
+                              ],
 "How can I serve our cause?", "merchant_quest_requested",[
-     (assign,"$merchant_quest_last_offerer", "$g_talk_troop"),
+     #(assign,"$merchant_quest_last_offerer", "$g_talk_troop"),
      (call_script, "script_get_random_quest", "$g_talk_troop"),
      (assign, "$random_merchant_quest_no", reg0),
-     (assign,"$merchant_offered_quest","$random_merchant_quest_no")]],
+     #(assign,"$merchant_offered_quest","$random_merchant_quest_no"),
+     (troop_set_slot, "$g_talk_troop", slot_troop_merchant_offered_quest, "$random_merchant_quest_no"), #InVain
+     (quest_set_slot, "$random_merchant_quest_no", slot_quest_dont_give_again_remaining_days, 3), #InVain
+     ]],
 
 [anyone|plyr,"mayor_talk", [
                               (store_partner_quest, ":partner_quest"),
@@ -12474,8 +12480,11 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                 (assign, ":partner_quest", 1),
                               (try_end),
                               (lt, ":partner_quest", 0),
-                              (eq,"$merchant_quest_last_offerer", "$g_talk_troop"),
-                              (ge,"$merchant_offered_quest",0)],
+                              # (eq,"$merchant_quest_last_offerer", "$g_talk_troop"),
+                              # (ge,"$merchant_offered_quest",0)
+                              (troop_get_slot, "$merchant_offered_quest", "$g_talk_troop", slot_troop_merchant_offered_quest),
+                              (ge,"$merchant_offered_quest",1)
+                              ],
 "About that task you needed me to do...", "merchant_quest_last_offered_job",[]],
 
 [anyone|plyr,"mayor_talk", [(store_partner_quest,reg2),(ge,reg2,0)],
@@ -12860,13 +12869,13 @@ A {s6} roams the lands about {s7}. It has slain our hunters, scattered our serva
 # deliver_food:
 [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_deliver_food"),], 
 "Thanks for offering to help.\
-Actually I was looking for someone to supply us with Food.\
-Perhaps you can do that...", "merchant_quest_brief",[]],
+ Actually I was looking for someone to supply us with Food.\
+ Perhaps you can do that...", "merchant_quest_brief",[]],
 
 [anyone,"merchant_quest_brief", [(eq,"$random_merchant_quest_no","qst_deliver_food")],
 "Our food supplies are dwindling and the supply trains are getting waylaid by the enemy.\
-I need someone to bring us {reg5} units of food in {reg6} days, or we'll begin to starve.\
-Maybe nearby friendly towns have enough for us too. What do you say?", "merchant_quest_brief_deliver_food",[
+ I need someone to bring us {reg5} units of food in {reg6} days, or we'll begin to starve.\
+ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant_quest_brief_deliver_food",[
      (quest_get_slot, reg5, "qst_deliver_food", slot_quest_target_amount),
      (quest_get_slot, reg6, "qst_deliver_food", slot_quest_expiration_days),
      #(quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),

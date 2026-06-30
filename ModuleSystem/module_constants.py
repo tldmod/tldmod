@@ -1089,6 +1089,8 @@ stqho_accepted = 4
 
 slot_troop_trait_scares_mounts = 179 #1= all mounts, 2=wargs, 3=non-wargs
 
+slot_troop_merchant_offered_quest = 180
+
 #Healer Slots (troop slot)
 slot_troop_needs_healing = 308
 

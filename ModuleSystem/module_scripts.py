@@ -8530,6 +8530,9 @@ scripts = [
           (assign, ":cur_target_dist", reg1),
           (neq, ":giver_center_no", reg0),
           (assign, ":quest_target_center", reg0),
+		  (neq,":cur_target_center", "p_town_henneth_annun"),#Skip border settlements
+		  (neq,":cur_target_center", "p_town_cair_andros"),
+		  (neq,":cur_target_center", "p_town_west_osgiliath"),
 		  (store_faction_of_party,":quest_target_faction",":quest_target_center"),
           #(store_distance_to_party_from_party, ":dist",":giver_center_no",":quest_target_center"),
           (assign, ":quest_gold_reward", ":cur_target_dist"),
@@ -17740,8 +17743,10 @@ scripts = [
      (try_begin),
        (this_or_next|is_between, ":quest_no", mayor_quests_begin, mayor_quests_end),
        (is_between, ":quest_no", mayor_quests_begin_2, mayor_quests_end_2), 
-       (assign, "$merchant_quest_last_offerer", -1),
-       (assign, "$merchant_offered_quest", -1),
+       # (assign, "$merchant_quest_last_offerer", -1),
+       # (assign, "$merchant_offered_quest", -1),
+       (quest_get_slot, ":quest_giver", ":quest_no", slot_quest_giver_troop), #InVain
+       (troop_set_slot, ":quest_giver", slot_troop_merchant_offered_quest, 0), #InVain
      (try_end),
 	 (try_begin), #find remaining quest target parties, make them normal parties (spawned from Quest Helper Trigger )
 	   (this_or_next|eq, ":quest_no", "qst_deal_with_looters"),
@@ -17772,8 +17777,10 @@ scripts = [
      (try_begin),
        (this_or_next|is_between, ":quest_no", mayor_quests_begin, mayor_quests_end),
        (is_between, ":quest_no", mayor_quests_begin_2, mayor_quests_end_2), 
-       (assign, "$merchant_quest_last_offerer", -1),
-       (assign, "$merchant_offered_quest", -1),
+       # (assign, "$merchant_quest_last_offerer", -1),
+       # (assign, "$merchant_offered_quest", -1),
+       (quest_get_slot, ":quest_giver", ":quest_no", slot_quest_giver_troop), #InVain
+       (troop_set_slot, ":quest_giver", slot_troop_merchant_offered_quest, 0), #InVain
      (try_end),
 	 (try_begin), #find remaining quest target parties, make them normal parties (spawned from Quest Helper Trigger )
 	   (this_or_next|eq, ":quest_no", "qst_deal_with_looters"),

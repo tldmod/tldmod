@@ -74,7 +74,7 @@ scn_random_scene_desert_forest_small random_scene_desert_forest_small 768 none n
  outer_terrain_flat 
 scn_camp_scene camp_scene 256 none none 0 0 100 100 -0.5 0x000000003004cd26800354d70000618700003c3300007a8c 
   0 
-  2  831  832 
+  2  837  838 
  outer_terrain_plain 
 scn_test_scene test_scene 256 none none 0 0 120 120 -100 0x0230817a00028ca300007f4a0000479400161992 
   0 
@@ -192,10 +192,10 @@ scn_edoras_center edoras_center 256 none none 0 0 200 200 -100 0x000000012000050
   0 
   0 
  outer_terrain_rohan 
-scn_aldburg_center aldburg_center 256 none none 0 0 100 100 -100 0x000000032007956000025896000037e800000e860000674b 
+scn_aldburg_center aldburg_center 256 none none 0 0 100 100 -100 0x0000000130000500000d234800002fba00004fd900006cf1 
   0 
   0 
- outer_mountains2south 
+ New_outer_mountains2south 
 scn_hornburg_center hornburg_center 256 none none 0 0 100 100 -100 0x0000000330000500000d234800006228000053bf00004eb9 
   0 
   0 
@@ -250,7 +250,7 @@ scn_uruk_hai_r_camp_center uruk_hai_r_camp_center 256 none none 0 0 100 100 -100
  New_outer_terrain_anduin 
 scn_caras_galadhon_center caras_galadhon_center 256 none none 0 0 100 100 -100 0x0000000030000500000985dc00000e2f000027d200005f66 
   0 
-  1  833 
+  1  839 
  outer_terrain_forest 
 scn_cerin_dolen_center cerin_dolen_center 256 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
   0 
@@ -274,7 +274,7 @@ scn_woodsmen_village_center woodsmen_village_center 256 none none 0 0 100 100 -1
  outer_terrain_plain 
 scn_moria_center moria_center 256 none none 0 0 100 100 -100 0x00000007300005000008160b00000f768000576c00001d2c 
   0 
-  1  833 
+  1  839 
  0 
 scn_troll_cave_center troll_cave_center 256 none none 0 0 100 100 -100 0x00000001b00005000005a16c00006794000027d200006794 
   0 
@@ -294,23 +294,23 @@ scn_erebor_center erebor_center 1 hallfini bo_hallfini_inner_tld -100 -200 100 2
  0 
 scn_dunland_camp_center dunland_camp_center 4352 none none 0 0 100 100 -100 0x0000000120000500000691a40000065c00004b34000070b7 
   0 
-  1  833 
+  1  839 
  outer_terrain_rohan 
 scn_harad_camp_center harad_camp_center 4352 none none 0 0 100 100 -100 0x0000000020040de3000699aa00005234000048ba000004b5 
   0 
-  1  833 
+  1  839 
  New_outer_mountains2east_ithilien 
 scn_khand_camp_center khand_camp_center 4352 none none 0 0 100 100 -100 0x0000000020040de3000699aa00005234000048ba000004b5 
   0 
-  1  833 
+  1  839 
  outer_terrain_rohan 
 scn_umbar_camp_center umbar_camp_center 256 none none 0 0 100 100 -100 0x000000002001c9a50007e1ed0000154e800026f300004e2d 
   0 
-  1  833 
+  1  839 
  New_outer_terrain_seaside_west 
 scn_rivendell_camp_center rivendell_camp_center 256 none none 0 0 100 100 -100 0x00000000300349e300084e1600005afd00006c26000063e2 
   0 
-  1  833 
+  1  839 
  outer_terrain_plain 
 scn_dol_guldur_center dol_guldur_center 4352 none none 0 0 100 100 -100 0x00000003b0050d0d0004b12c000072f5000027d200005f66 
   0 
@@ -318,11 +318,11 @@ scn_dol_guldur_center dol_guldur_center 4352 none none 0 0 100 100 -100 0x000000
  New_outer_terrain_forest 
 scn_north_rhun_camp_center north_rhun_camp_center 4352 none none 0 0 100 100 -100 0x00000001200005000006d9e10000065c00004b3400000dfd 
   0 
-  1  833 
+  1  839 
  outer_terrain_rohan 
 scn_gundabad_camp_center gundabad_camp_center 4352 none none 0 0 100 100 -100 0x00000003200005000009c5a200000f5200005bd50000739d 
   0 
-  1  833 
+  1  839 
  New_outer_mountains2south_helmsdeep 
 scn_ironhill_camp_center ironhill_camp_center 256 none none 0 0 100 100 -100 0x00000007200016da000364d9000060f500007591000064e7 
   0 
@@ -334,11 +334,11 @@ scn_gondor_castle gondor_castle 1 interior_castle_v bo_interior_castle_v -100 -1
  0 
 scn_minas_tirith_castle minas_tirith_castle 3 throne_room bo_throne_room -1000 -1000 1000 1000 -100 0 
   1  100000 
-  1  833 
+  1  839 
  0 
 scn_rohan_castle rohan_castle 1 interior_castle_t bo_interior_castle_t -100 -100 100 100 -100 0 
   1  100000 
-  1  833 
+  1  839 
  0 
 scn_elf_castle elf_castle 1 interior_castle_t bo_interior_castle_t -100 -100 100 100 -100 0 
   1  100000 
@@ -346,15 +346,15 @@ scn_elf_castle elf_castle 1 interior_castle_t bo_interior_castle_t -100 -100 100
  0 
 scn_mordor_castle mordor_castle 1 interior_castle_t bo_interior_castle_t -100 -100 100 100 -100 0 
   1  100000 
-  1  833 
+  1  839 
  0 
 scn_edoras_castle edoras_castle 1 rohan_meduseld_int bo_rohan_meduseld_int -200 -200 200 200 -100 0 
   1  100000 
-  1  833 
+  1  839 
  0 
 scn_erebor_castle erebor_castle 1 erebor_throne_room_b bo_erebor_throne_room_b -40 -40 40 40 -100 0 
   0 
-  1  833 
+  1  839 
  0 
 scn_gondor_tavern gondor_tavern 1 interior_tavern_b bo_interior_tavern_b -100 -100 100 100 -100 0 
   1  100000 
@@ -514,7 +514,7 @@ scn_dol_amroth_castle dol_amroth_castle 1 interior_castle_dolamroth bo_interior_
  0 
 scn_isengard_castle isengard_castle 1 interior_throneroom_isengard_a bo_interior_castle_gondor_d -100 -100 100 100 -100 0 
   0 
-  1  833 
+  1  839 
  0 
 scn_gondor_castle_a gondor_castle_a 1 interior_castle_gondor_a bo_interior_castle_gondor_a -100 -100 100 100 -100 0 
   0 
@@ -562,7 +562,7 @@ scn_mordor_castle_a mordor_castle_a 1 interior_castle_mordor_a bo_interior_castl
  0 
 scn_mordor_castle_b mordor_castle_b 1 interior_castle_morgul bo_interior_castle_gondor_d -100 -100 100 100 -100 0 
   0 
-  1  833 
+  1  839 
  0 
 scn_rhun_south_camp_center rhun_south_camp_center 4352 none none 0 0 100 100 -100 0x00000003a0001d9300031ccb0000156f000048ba0000361c 
   0 
@@ -618,7 +618,7 @@ scn_erebor_gate erebor_gate 256 none none 0 0 100 100 -100 0x0000000730000500400
  outer_mountains2west 
 scn_thranduil_hall_room thranduil_hall_room 3 thranduil_hall bo_thranduil_hall -100 -100 100 100 -100 0 
   0 
-  1  833 
+  1  839 
  0 
 scn_random_scene_parade random_scene_parade 256 none none 0 0 220 220 -0.5 0x00000002362011800004411a00003efe00004b34000059be 
   0 
@@ -626,7 +626,7 @@ scn_random_scene_parade random_scene_parade 256 none none 0 0 220 220 -0.5 0x000
  outer_terrain_forest 
 scn_beorn_castle beorn_castle 1 lofotrinterior2 bo_lofotrinterior2 -100 -100 100 100 -100 0 
   0 
-  1  833 
+  1  839 
  0 
 scn_moria_castle moria_castle 4097 interior_round_isengard bo_interior_round_isengard -100 -100 100 100 -100 0 
   0 
@@ -638,7 +638,7 @@ scn_hornburg_castle hornburg_castle 256 none none 0 0 100 100 -100 0x00000002400
  0 
 scn_morannon_castle morannon_castle 256 none none 0 0 100 100 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
   0 
-  1  833 
+  1  839 
  outer_mountains2west_mordor 
 scn_amon_hen amon_hen 256 none none 0 0 100 100 -100 0x00000002a0000500400c2304000003ce800047ca0000794b 
   0 
@@ -716,10 +716,10 @@ scn_edoras_siege edoras_siege 256 none none 0 0 200 200 -100 0x00000001200005008
   0 
   0 
  outer_terrain_rohan 
-scn_aldburg_siege aldburg_siege 256 none none 0 0 100 100 -100 0x000000072007956000025896000037e800000e860000674b 
+scn_aldburg_siege aldburg_siege 256 none none 0 0 100 100 -100 0x0000000130000500000d234800002fba00004fd900006cf1 
   0 
   0 
- outer_mountains2south 
+ New_outer_mountains2south 
 scn_hornburg_siege hornburg_siege 256 none none 0 0 100 100 -100 0x0000000330000500000d234800006228000053bf00004eb9 
   0 
   0 
@@ -1142,7 +1142,7 @@ scn_black_shield_fortress_siege_player black_shield_fortress_siege_player 256 no
  outer_mountains2north 
 scn_dale_castle dale_castle 3 interior_castle_dale bo_interior_castle_m -100 -100 100 100 -100 0 
   1  100000 
-  1  833 
+  1  839 
  0 
 scn_esgaroth_castle esgaroth_castle 3 interior_castle_rohan_a bo_interior_castle_i -100 -100 100 100 -100 0 
   0 
@@ -1170,7 +1170,7 @@ scn_woodelf_west_camp_siege woodelf_west_camp_siege 256 none none 0 0 100 100 -1
  outer_terrain_forest 
 scn_rivendell_camp_siege rivendell_camp_siege 256 none none 0 0 100 100 -100 0x00000000300349e300084e1600005afd00006c26000063e2 
   0 
-  1  833 
+  1  839 
  outer_terrain_plain 
 scn_woodsmen_village2_siege woodsmen_village2_siege 256 none none 0 0 100 100 -100 0x00000000b0000500000461190000482500006c26000038f2 
   0 
@@ -1186,19 +1186,19 @@ scn_troll_cave_siege troll_cave_siege 4352 none none 0 0 100 100 -100 0x00000001
  outer_mountains2north 
 scn_dunland_camp_siege dunland_camp_siege 4352 none none 0 0 100 100 -100 0x0000000120000500000691a40000065c00004b34000070b7 
   0 
-  1  833 
+  1  839 
  outer_terrain_rohan 
 scn_harad_camp_siege harad_camp_siege 4352 none none 0 0 100 100 -100 0x0000000020040de3000699aa00005234000048ba000004b5 
   0 
-  1  833 
+  1  839 
  New_outer_mountains2east_ithilien 
 scn_khand_camp_siege khand_camp_siege 4352 none none 0 0 100 100 -100 0x0000000020040de3000699aa00005234000048ba000004b5 
   0 
-  1  833 
+  1  839 
  outer_terrain_rohan 
 scn_north_rhun_camp_siege north_rhun_camp_siege 4352 none none 0 0 100 100 -100 0x00000001200005000006d9e10000065c00004b3400000dfd 
   0 
-  1  833 
+  1  839 
  outer_terrain_rohan 
 scn_rhun_south_camp_siege rhun_south_camp_siege 4352 none none 0 0 100 100 -100 0x00000003a0001d9300031ccb0000156f000048ba0000361c 
   0 
@@ -1516,10 +1516,10 @@ scn_advcamp_lorien advcamp_lorien 256 none none 0 0 200 200 -0.5 0x0000000130000
   0 
   0 
  outer_terrain_rohan 
-scn_advcamp_imladris advcamp_imladris 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+scn_advcamp_imladris advcamp_imladris 256 none none 0 0 200 200 -0.5 0x00000000b0000500000691a40000065c00004b34000039d4  
   0 
   0 
- outer_terrain_rohan 
+ outer_terrain_forest 
 scn_advcamp_beorn advcamp_beorn 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
   0 
   0 
@@ -1838,7 +1838,7 @@ scn_tutorial_5 tutorial_5 256 none none 0 0 120 120 -100 0x3a06dca80005715c00005
  outer_terrain_plain 
 scn_erebor_castle_2 erebor_castle_2 1 erebor_throne_room_b bo_erebor_throne_room_b -40 -40 40 40 -100 0 
   0 
-  1  833 
+  1  839 
  0 
 scn_random_scene_plain_forest_custom_5 random_scene_plain_forest_custom_5 256 none none 0 0 240 240 -0.5 0x00000000bc618a63000d234800004a3e00005cd6000045cc 
   0 

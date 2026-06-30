@@ -151,6 +151,13 @@ simple_triggers = [
           (store_add, ":slot", slot_center_rumor_check_begin,":walker"),
           (party_set_slot, ":center_no", ":slot", 0),
         (try_end),
+        (try_begin), #clear stored mayor quests after 2-3 days
+            (party_get_slot, ":mayor", ":center_no", slot_town_elder),
+            (gt, ":mayor", 0),
+            (troop_get_slot, ":offered_quest", ":mayor", slot_troop_merchant_offered_quest),
+            (neg|quest_slot_ge, ":offered_quest", slot_quest_dont_give_again_remaining_days, 2),
+            (troop_set_slot, ":mayor", slot_troop_merchant_offered_quest, 0),
+        (try_end),
         (party_set_slot, ":center_no", slot_center_walker_soldiers_found, 0),
         (try_begin),
             (party_slot_eq, ":center_no", slot_town_captain_available, 0),
