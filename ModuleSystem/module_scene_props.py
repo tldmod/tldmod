@@ -2004,8 +2004,8 @@ scene_props = [
 
 #("distant_mountain4",sokf_moveable|sokf_place_at_origin,"rom_mountain4","0",[]),
 ("mordor_clouds",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay","0",[]),
-("distant_mountain1",sokf_moveable|sokf_place_at_origin,"kkk","0",[]),
-("distant_mountain2",sokf_moveable|sokf_place_at_origin,"kkk2","0",[]),
+("distant_mountain1_dont_use",sokf_moveable|sokf_place_at_origin,"kkk","0",[]),
+("distant_mountain2_dont_use",sokf_moveable|sokf_place_at_origin,"kkk2","0",[]),
 
 #####DALE PROPS#####
 ("laketown",0,"laketown","bo_laketown", []),
@@ -2741,8 +2741,8 @@ scene_props = [
 ("argo1",0,"argo1","bo_argo1",[]),
 ("argo2",0,"argo2","bo_argo2",[]),
 #("argo3",0,"argo3","0",[]),
-("mist_a",sokf_moveable,"mist_a","0",[]),
-("mist_b",sokf_moveable,"mist_b","0",[]),
+("mist_a",sokf_moveable,"mist_a","0",[]), #Amon Hen, Dead Marshes
+("mist_b",sokf_moveable,"mist_b","0",[]), #Amon Hen, Dead Marshes
 
 ###InVain added treeline collision better usability in editor
 
@@ -2765,11 +2765,11 @@ scene_props = [
   
 ("rohan_burial_mound",0,"roh_burial_mound","bo_roh_burial_mound", []), 
 ("tree_huorn",0,"tree_huorn","0", []), 
-("waterfall_stream",0,"waterfall_stream","0", [(ti_on_init_scene_prop,[(play_sound, "snd_waterfall")])]),
+("waterfall_stream",0,"waterfall_stream","0", [(ti_on_init_scene_prop,[(play_sound, "snd_waterfall")])]), #used in dale, scn_gondor_battlefield_morgul, scn_gundabad_nw_outpost
 ("waterfall",0,"waterfall","bo_waterfall", []),
 ("tunnel_cave",0,"tunnel_cave","bo_tunnel_cave", []), 
 
-("moria_a",0,"moria_hall","bo_moria_hall", []), 
+("moria_pillar",0,"moria_pillar","bo_moria_pillar", []), 
 ("moria_entry_a",0,"moria_entry_a","bo_moria_entry_a", []), 
 ("moria_stairs_a",0,"moria_stairs_a","bo_moria_stairs_a", []), 
 ("moria_corridor_a",0,"moria_corridor_a","bo_moria_corridor_a", []), 
@@ -2781,7 +2781,7 @@ scene_props = [
 ("moria_stairs_b",0,"moria_stairs_b","bo_moria_stairs_a", []), 
 ("moria_cell_b",0,"moria_cell_b","bo_moria_cell_b", []), 
 ("moria_tower_stairs_a",0,"moria_tower_stairs_a","bo_moria_tower_stairs_a", []), 
-("moria_tower_cell_a",0,"moria_tower_cell_a","bo_moria_tower_cell_a", []), 
+("moria_tower_cell_a",0,"moria_tower_cell_a_new","bo_moria_tower_cell_a_new", []), 
 #fog triggers
 ("light_fog_black0",sokf_invisible,"f0_pointer","0",  []),
 ("light_fog_black1",sokf_invisible,"f1_pointer","0",  []),
@@ -3070,7 +3070,8 @@ scene_props = [
 ("gothic_chair_nocol",0,"gothic_chair",  "0", []), #swy--disabled collision so Denethor can sit correctly on Minas Tirith's castle without looking funny.
 ("smaug_skeleton",    0,"smaug_skeleton","0", []), #swy--added unused but otherwise pretty cool (both technically and artistically) Smaug skeleton, for the Lone Mountain I guess.
 
-("dorwinion_sack",sokf_type_container,"dorwinion_sack","bo_dorwinion_sack", []), # Kham - for Spears quest 
+("moria_stairs_c",0,"moria_stairs_c","0", []),
+#("dorwinion_sack",sokf_type_container,"dorwinion_sack","bo_dorwinion_sack", []), # Kham - for Spears quest 
 ("pointer_arrow", 0, "pointer_arrow", "0", []),
 
 #InVain props start
@@ -3346,8 +3347,8 @@ scene_props = [
 ("arena_awning",0,"arena_block_j_awning","bo_arena_block_j_awning", []),
 
 #WB only props below, replaced or hidden in M&B
-("tree_shelter",0,"tree_shelter_a","bo_tree_shelter_a", []),
-("tree_house",0,"tree_house_a","bo_tree_house_a", []),
+("tree_shelter",0,"tree_shelter_a_tld","bo_tree_shelter_a", []),
+("tree_house",0,"tree_house_a_tld","bo_tree_house_a", []),
 ("suspension_bridge",0,"suspension_bridge_a","bo_suspension_bridge_a", []),
 ("arabian_tent_umbar",0,"arabian_tent_umbar","bo_arabian_tent", []),
 ("arabian_tent_umbar_b",0,"arabian_tent_umbar_b","bo_arabian_tent_b", []),
@@ -3362,9 +3363,9 @@ scene_props = [
 ( "smithy_grindstone_wheel"                    ,0,"smithy_grindstone_wheel","bo_smithy_grindstone_wheel",[]),
 ( "smithy_forge_bellows"                       ,0,"smithy_forge_bellows","bo_smithy_forge_bellows",[]),
 ( "smithy_forge"                               ,0,"smithy_forge","bo_smithy_forge",[]),
-( "smithy_anvil"                               ,0,"smithy_anvil","0",[]),
-( "tannery_hide_a"                             ,0,"tannery_hide_a","bo_tannery_hide_a",[]),
-( "tannery_hide_b"                             ,0,"tannery_hide_b","bo_tannery_hide_b",[]),
+( "smithy_anvil"                               ,0,"smithy_anvil_tld","0",[]),
+( "tannery_hide_a"                             ,0,"tannery_hide_a_tld","bo_tannery_hide_a",[]),
+( "tannery_hide_b"                             ,0,"tannery_hide_b_tld","bo_tannery_hide_b",[]),
 #WB only props end
 
 	( "woodplanks_exima"                           ,0,"exima_woodplanks","bo_exima_woodplanks",[]),

@@ -7967,7 +7967,7 @@ game_menus = [
                 (party_stack_get_troop_id, ":leader", ":attached_party", 0),
                 (is_between, ":leader", heroes_begin, heroes_end),
                 (troop_slot_eq, ":leader", slot_troop_occupation, slto_kingdom_hero),
-                (gt, "$tld_war_began", 0),
+                #(eq, "$tld_war_began", 0),
                 (eq, "$found_moria_entrance", 0),
                 (assign, ":check",1),
                 (display_message, "@The valley is too well guarded to linger here."),
