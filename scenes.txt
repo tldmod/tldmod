@@ -192,10 +192,10 @@ scn_edoras_center edoras_center 256 none none 0 0 200 200 -100 0x000000012000050
   0 
   0 
  outer_terrain_rohan 
-scn_aldburg_center aldburg_center 256 none none 0 0 100 100 -100 0x0000000130000500000d234800002fba00004fd900006cf1 
+scn_aldburg_center aldburg_center 256 none none 0 0 100 100 -100 0x000000032007956000025896000037e800000e860000674b 
   0 
   0 
- New_outer_mountains2south 
+ outer_mountains2south 
 scn_hornburg_center hornburg_center 256 none none 0 0 100 100 -100 0x0000000330000500000d234800006228000053bf00004eb9 
   0 
   0 
@@ -716,10 +716,10 @@ scn_edoras_siege edoras_siege 256 none none 0 0 200 200 -100 0x00000001200005008
   0 
   0 
  outer_terrain_rohan 
-scn_aldburg_siege aldburg_siege 256 none none 0 0 100 100 -100 0x0000000130000500000d234800002fba00004fd900006cf1 
+scn_aldburg_siege aldburg_siege 256 none none 0 0 100 100 -100 0x000000072007956000025896000037e800000e860000674b 
   0 
   0 
- New_outer_mountains2south 
+ outer_mountains2south 
 scn_hornburg_siege hornburg_siege 256 none none 0 0 100 100 -100 0x0000000330000500000d234800006228000053bf00004eb9 
   0 
   0 
@@ -1516,10 +1516,10 @@ scn_advcamp_lorien advcamp_lorien 256 none none 0 0 200 200 -0.5 0x0000000130000
   0 
   0 
  outer_terrain_rohan 
-scn_advcamp_imladris advcamp_imladris 256 none none 0 0 200 200 -0.5 0x00000000b0000500000691a40000065c00004b34000039d4  
+scn_advcamp_imladris advcamp_imladris 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
   0 
   0 
- outer_terrain_forest 
+ outer_terrain_rohan 
 scn_advcamp_beorn advcamp_beorn 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
   0 
   0 

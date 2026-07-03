@@ -8573,10 +8573,12 @@ scripts = [
           # (store_faction_of_party, ":cur_object_faction", ":giver_center_no"),
           (assign, ":quest_target_party_template", "pt_looters_new"), #can be regionalized for different bandits
           (try_begin),
+            ] + (is_a_wb_script==1 and [
             (gt, ":player_level", 5),
             (call_script, "script_cf_get_nearest_bandit_party"),
             (gt, reg1, 0),
             (assign, ":quest_target_party_template", reg1),
+            ] or [(eq, 0, 1),]) + [
           (else_try),
             (this_or_next|eq, "$g_talk_troop_faction", fac_mordor),
             (this_or_next|eq, "$g_talk_troop_faction", fac_isengard),

@@ -1196,9 +1196,9 @@ qstr_Desertion Desertion
 qstr_{s1}_has_deserted_fr {s1}_has_deserted_from_your_party.
 qstr_You_don_t_have_enoug You_don't_have_enough_troops_to_guard_all_your_prisoners._Their_chance_of_escaping_is_increased.
 qstr_{s1}_has_escaped_fro {s1}_has_escaped_from_your_party.
-qstr_You_have_left_{s1}. You_have_left_{s1}.
-qstr_You_are_entering_{s1 You_are_entering_{s1}_({s2}).
-qstr_You_are_entering_{s1} You_are_entering_{s1}.
+qstr_You_have_left_{s8}. You_have_left_{s8}.
+qstr_You_are_entering_{s8 You_are_entering_{s8}_({s9}).
+qstr_You_are_entering_{s8} You_are_entering_{s8}.
 qstr_The_war_expands_comm The_war_expands,_commanders_are_getting_bolder!_(siege_requirements_reduced)
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_Athelas_used_up. Athelas_used_up.
@@ -1737,7 +1737,7 @@ qstr_It_was_indeed_a_fell It_was_indeed_a_fell_beast._I_am_glad_that_it_shall_tr
 qstr_That_beast_was_dange That_beast_was_dangerous_enough,_but_it_found_its_match_in_me.
 qstr_town town
 qstr_village village
-qstr_The_{s9}_of_{s13}_ha The_{s9}_of_{s13}_has_asked_you_to_deal_with_tribal_orcs_in_the_surrounding_countryside.
+qstr_The_{s9}_of_{s13}_ha The_{s9}_of_{s13}_has_asked_you_to_deal_with_{s6}_in_the_surrounding_countryside.
 qstr_{s9}_of_{s3}_asked_y {s9}_of_{s3}_asked_you_to_deliver_{reg5}_units_of_{s6}_to_the_{s10}_in_{s4}_in_{reg6}_days.
 qstr_The_{s9}_of_{s4}_ask The_{s9}_of_{s4}_asked_you_to_reinforce_{s3}_with_at_least_{reg5}_troops_within_{reg6}_days._Speak_to_{s3}'s_barracks_master._The_quality_of_the_troop_you_provide_does_not_matter.
 qstr_You_have_reinforced_{ You_have_reinforced_{s3}_with_0_troops.
