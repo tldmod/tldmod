@@ -12248,19 +12248,26 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 [anyone|plyr,"mayor_looters_quest_response",[
      (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
+     (try_begin),
+        (store_random_party_of_template, ":rand_party", ":looter_template"),
+        (gt, ":rand_party", 0),
+        (str_store_party_name, s5, ":rand_party"),
+     (else_try),
+        (str_store_faction_name, s5, fac_outlaws),
+     (try_end),
      (store_num_parties_destroyed_by_player, ":num_looters_destroyed", ":looter_template"),
      (party_template_get_slot,":previous_looters_destroyed",":looter_template",slot_party_template_num_killed),
      (val_sub,":num_looters_destroyed",":previous_looters_destroyed"),
      (quest_get_slot,":looters_paid_for","qst_deal_with_looters",slot_quest_current_state),
      (lt,":looters_paid_for",":num_looters_destroyed")],
-"I've killed some tribal orcs.", "mayor_looters_quest_destroyed",[]],
+"I've killed some {s5}.", "mayor_looters_quest_destroyed",[]],
   #[anyone|plyr,"mayor_looters_quest_response", [(eq,1,0)
   # ],
    # "I've brought you some goods.", "mayor_looters_quest_goods",[]],
 [anyone|plyr,"mayor_looters_quest_response", [], "Not yet, sir. Farewell.", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone,"mayor_looters_quest_destroyed", [],
-"Aye, my scouts saw the whole thing. That should keep those tribal orcs at bay!"+earned_reg14_times_reg15_rp_of_s14, "mayor_looters_quest_destroyed_2",[
+"Aye, my scouts saw the whole thing. That should keep those {s5} at bay!"+earned_reg14_times_reg15_rp_of_s14, "mayor_looters_quest_destroyed_2",[
       (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
 	  (quest_get_slot,":total_looters","qst_deal_with_looters",slot_quest_target_amount),
       (store_num_parties_destroyed_by_player, ":num_looters_destroyed", ":looter_template"),
@@ -12300,7 +12307,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         (eq, ":cur_party_template", ":looter_template"),
         (party_set_flags, ":cur_party_no", pf_quest_party, 0),
       (try_end)],
-"And that's not the only good news! Thanks to you, the tribal orcs have ceased to be a threat. We've not had a single attack reported for some time now. \
+"And that's not the only good news! Thanks to you, the {s5} have ceased to be a threat. We've not had a single attack reported for some time now. \
  If there are any of them left, they've either run off or gone deep into hiding. That's good for the safety of the place! \
  I think that concludes your task, {playername}. Thank you, and farewell.", "close_window",[(call_script,"script_stand_back"),]],
 
@@ -12597,16 +12604,32 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 [anyone,"merchant_quest_brief",[
      (eq,"$random_merchant_quest_no","qst_deal_with_looters"),
-     (try_begin),
-       (party_slot_eq,"$g_encountered_party",slot_party_type,spt_town),
-       (str_store_string,s5,"@town"),
-     (else_try),
-       (party_slot_eq,"$g_encountered_party",slot_party_type,spt_village),
-       (str_store_string,s5,"@village"),
-     (try_end)],
-"We've had some fighting near the {s5} lately, with all the chaos that comes with it,\
- and that's attracted a few bands of tribal orcs to raid the surroundings during the confusion.\
- I need somebody to teach those orcs a lesson.\
+    (try_begin),
+    # Rafa: For towns that don't get destroyed, we get the original elder's plural name
+    ]+concatenate_scripts([[
+        (eq, "$current_town", center_list[x][0]),
+        (neg|party_slot_eq, "$current_town", slot_town_elder, "trp_no_troop"),
+        (str_store_troop_name_plural, s5, center_list[x][2][3]),
+    (else_try),] for x in range(len(center_list)) if center_list[x][8]==0] )+[
+        (neg|party_slot_eq, "$current_town", slot_town_elder, "trp_no_troop"),
+        (party_get_slot, ":elder_troop", "$current_town", slot_town_elder),
+        (str_store_troop_name_plural, s5, ":elder_troop"),
+    (else_try),
+        (str_store_string, s5, "@the_place"),
+    (try_end),
+
+   #just spawn a looter party to get the party name. Doesn't hurt anyone.
+   (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
+   (set_spawn_radius,7),
+   (spawn_around_party,"$g_encountered_party",":looter_template"),
+   (party_set_ai_object, reg0, "$g_encountered_party"),
+   (party_set_ai_behavior, reg0, ai_bhvr_patrol_location),
+   (party_set_ai_patrol_radius, reg0, 2),
+   (str_store_party_name, s6, reg0),
+     ],
+"We've had some fighting near {s5} lately, with all the chaos that comes with it,\
+ and that's attracted a few bands of {s6} to raid the surroundings during the confusion.\
+ I need somebody to teach those pests a lesson.\
  Sound like your kind of work?", "merchant_quest_looters_choice", []],
 
 [anyone|plyr,"merchant_quest_looters_choice", [], "Aye, I'll do it.", "merchant_quest_looters_brief", []],
@@ -12631,22 +12654,23 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (set_spawn_radius,":random_radius"),
      (spawn_around_party,"$g_encountered_party",":looter_template"),
      (party_set_flags, reg0, pf_quest_party, 1),
-     (party_set_faction, reg0, "fac_neutral"), #MV: so they don't get into fights
+     (party_set_faction, reg0, "fac_deserters"), #MV: so they don't get into fights
      (party_set_ai_object, reg0, "$g_encountered_party"),
      (party_set_ai_behavior, reg0, ai_bhvr_patrol_location),
      (party_set_ai_patrol_radius, reg0, 2),
+     (str_store_party_name, s6, reg0),
    (try_end),
    (str_store_troop_name, s9, "$g_talk_troop"),
    (str_store_party_name_link, s13, "$g_encountered_party"),
    (str_store_party_name, s4, "$g_encountered_party"),
    (setup_quest_text, "qst_deal_with_looters"),
-   (str_store_string, s2, "@The {s9} of {s13} has asked you to deal with tribal orcs in the surrounding countryside."),
+   (str_store_string, s2, "@The {s9} of {s13} has asked you to deal with {s6} in the surrounding countryside."),
    (call_script, "script_start_quest", "qst_deal_with_looters", "$g_talk_troop"),
    (assign, "$g_leave_encounter",1)],
-"Excellent! You'll find the tribal orcs roaming around the countryside, probably looking to raid more farms.\
- Kill the tribal orcs, and rid us of their presence.\
- I'll pass a word to our supply chief, and you will get rewarded for every band of tribal orcs you destroy,\
- until all the orcs are dealt with.", "close_window",[(call_script,"script_stand_back"),]],
+"Excellent! You'll find the {s6} roaming around the countryside, probably looking for easy prey.\
+ Kill them, and rid us of their presence.\
+ I'll pass a word to our supply chief, and you will get rewarded for every band you destroy,\
+ until they are all are dealt with.", "close_window",[(call_script,"script_stand_back"),]],
 # Ryan END
 
   # deliver wine:
