@@ -1973,13 +1973,6 @@ troops = [
         attr_tier_1,wp_tier_1,knows_common,rohan_woman_face_1,rohan_woman_face_2],
         
                 ] or [
-                
-                ["looter","Looter","Looters",tf_evil_man| tfg_armor,0,subfac_rangers,fac_outlaws,[itm_leather_jerkin,itm_leather_boots],attr_evil_tier_1,wp_tier_1,knows_common,khand_man1,khand_man2],
-                ["brigand","Brigand","Brigands",tf_evil_man| tfg_armor| tfg_boots,0,subfac_rangers,fac_outlaws,[itm_leather_jerkin,itm_leather_boots],attr_evil_tier_2,wp_tier_2,knows_common,khand_man1,khand_man2],
-                ["marauder","Marauder","Marauders",tf_evil_man| tfg_armor| tfg_boots,0,subfac_rangers,fac_outlaws,[itm_leather_jerkin,itm_leather_boots],attr_evil_tier_3,wp_tier_3,knows_common,khand_man1,khand_man2],
-                ["mirkwood_bandit","Mirkwood Bandit","Mirkwood Bandits",tf_evil_man| tfg_armor| tfg_boots,0,subfac_rangers,fac_outlaws,[itm_leather_jerkin,itm_leather_boots],attr_evil_tier_3,wp_tier_3,knows_common,khand_man1,khand_man2],
-                ["easterling_bandit","Easterling Bandit","Easterling Bandits",tf_evil_man| tfg_armor| tfg_boots,0,subfac_rangers,fac_outlaws,[itm_leather_jerkin,itm_leather_boots],attr_evil_tier_3,wp_tier_3,knows_common,khand_man1,khand_man2],
-                ["rhovanion_bandit","Rhovanion Bandit","Rhovanion Bandits",tf_evil_man| tfg_armor| tfg_boots,0,subfac_rangers,fac_outlaws,[itm_leather_jerkin,itm_leather_boots],attr_evil_tier_3,wp_tier_3,knows_common,khand_man1,khand_man2],
 
                 ["walker_man_gondor_black","Townsman","{!}",tf_gondor| tfg_boots| tfg_armor,0,0,fac_gondor,[itm_corsair_boots,itm_pelargir_hood, itm_gondor_fine_outfit_dress, itm_blue_tunic, itm_white_tunic_a, itm_gon_jerkin, itm_white_tunic_a, itm_white_tunic_b, itm_white_tunic_c, itm_black_tunic, itm_leather_boots,], attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
                 ["walker_man_gondor_white","Townsman","{!}",tf_gondor| tfg_boots| tfg_armor,0,0,fac_gondor,[itm_corsair_boots, itm_gondor_fine_outfit_dress, itm_gondor_fine_outfit_dress, itm_white_tunic_a, itm_white_tunic_b, itm_white_tunic_c, itm_blue_tunic, itm_black_tunic, itm_denethor_robe, itm_leather_boots,], attr_tier_5,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
