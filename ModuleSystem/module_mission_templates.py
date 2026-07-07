@@ -76,7 +76,13 @@ common_siege_check_defeat_condition = (1, 4, ti_once, [ (main_hero_fallen)],
     ])
 ## Reset Fog 
 reset_fog = (ti_before_mission_start,  0, ti_once, [], 
-            [(set_fog_distance,100000,0x999999), (assign, "$current_fog", 10000),(assign, "$base_fog", 10000),(assign, "$target_fog", 10000),(assign, "$base_fog_color", 0x999999), ])
+            [   (set_fog_distance,100000,0x999999), (assign, "$current_fog", 10000),(assign, "$base_fog", 10000),(assign, "$target_fog", 10000),(assign, "$base_fog_color", 0x999999), 
+                (try_begin),
+                    (is_currently_night),
+                    (set_fog_distance,1000,0x060607), #overwrite distant haze at night
+                    (display_message, "@night fog"),
+                (try_end),
+            ])
 
 ## Fade to Black
 fade =  ((is_a_wb_mt==1) and [
@@ -93,8 +99,8 @@ fade =  ((is_a_wb_mt==1) and [
 bright_nights= ((is_a_wb_mt==1) and [ 
   
   (ti_after_mission_start, 0, 2,
-    [ (eq, "$bright_nights", 1),
-      (is_currently_night),
+    [ (is_currently_night),
+      (eq, "$bright_nights", 1),
       #(neg|party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), # Make it dark during Saruman Storm
       ],[
       (set_fixed_point_multiplier, 1000),
@@ -932,7 +938,7 @@ mission_templates = [ # not used in game
 
   ],
   #tld_common_peacetime_scripts +
-  tld_common_wb_muddy_water + bright_nights +
+  tld_common_wb_muddy_water + bright_nights + 
   [  
  
   # make friend, prisoners, players, etc appear at the right locations and with scripted short starting walks
@@ -1159,6 +1165,8 @@ mission_templates = [ # not used in game
 	(agent_clear_scripted_mode, ":i"),
 	(try_end),
   ],),
+  
+  reset_fog,
 
   ],
 ),
@@ -5741,7 +5749,7 @@ mission_templates = [ # not used in game
   "You start training.",
     [(0,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
      ],
-    tld_common_wb_muddy_water+[
+    tld_common_wb_muddy_water+fade+bright_nights+[
 	(ti_tab_pressed, 0, 0, [],[(finish_mission,0),]),
     (ti_before_mission_start, 0, 0, [], [
         (team_set_relation, 0, 1, 1),
@@ -5751,6 +5759,7 @@ mission_templates = [ # not used in game
         (team_set_relation, 0, 5, 1),
         (team_set_relation, 0, 6, 1),
     ]),
+    reset_fog,
 ]),
 ("legendary_place_visit",0,-1,
  "You visit a legendary place.",
