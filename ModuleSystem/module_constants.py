@@ -1776,7 +1776,7 @@ str_shortname_region_begin_new = str_shortname_region_rhun
 # instead of ordering scenes and npcs in module_troops, which is cumbersome
 center_list = [
     # (party_center,  [scenes: center, castle, prison, tavern, arena, siege, menu mesh], 
-	#     [npcs: captain, smith, merchant, elder, lord, 4 walkers], 
+	#     [npcs: slot_town_captain, smith, merchant, elder, lord, 4 walkers], 
 	#     [map banner],[arena:team#,size 123], strength income, garrison limit, destroy-on-capture flag, siegability flag, siege max battle size) 
     # -1 if no such subscene, "trp_no_troop" if no such npc
 	
@@ -1997,13 +1997,13 @@ center_list = [
 	[trp_harad_captain, trp_smith_harad, trp_merchant_harad, trp_no_troop, pt_harad_recruits, trp_harad_lord,trp_i1_harad_levy,trp_i1_harad_levy,trp_i3_harad_infantry,trp_c3_harondor_rider], 
 	[icon_mfc_harad],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_low, 3, tld_siegable_always, tld_siege_battle_size_default),
 (p_advcamp_rhun, [scn_advcamp_rhun, -1, -1,-1,-1, scn_advcamp_rhun_siege, mesh_town_rhun_north],
-	[trp_c6_rhun_warlord, trp_smith_north_rhun, trp_merchant_north_rhun, trp_no_troop, pt_rhun_recruits,  trp_rhun_lord, trp_i1_rhun_tribesman, trp_i2_rhun_tribal_warrior, trp_i3_rhun_tribal_infantry, trp_i4_rhun_vet_infantry,], 
+	[trp_rhun_captain, trp_smith_north_rhun, trp_merchant_north_rhun, trp_no_troop, pt_rhun_recruits,  trp_rhun_lord, trp_i1_rhun_tribesman, trp_i2_rhun_tribal_warrior, trp_i3_rhun_tribal_infantry, trp_i4_rhun_vet_infantry,], 
 	[icon_mfc_rhun],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_low, 3, tld_siegable_always, tld_siege_battle_size_default),
 (p_advcamp_khand, [scn_advcamp_khand, -1, -1,-1,-1, scn_advcamp_khand_siege, mesh_town_evilcamp],
 	[trp_khand_captain, trp_smith_khand, trp_merchant_khand, trp_no_troop, pt_khand_recruits, trp_khand_lord, trp_i1_khand_bondsman, trp_i3_khand_warrior,trp_i3_khand_pitfighter,trp_i4_khand_pit_champion], 
 	[icon_mfc_khand],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_low, 3, tld_siegable_always, tld_siege_battle_size_default),
 (p_advcamp_umbar, [scn_advcamp_umbar, -1, -1,-1,-1, scn_advcamp_umbar_siege, mesh_town_evilcamp],
-	[-1, trp_smith_umbar, trp_merchant_umbar, trp_no_troop, pt_umbar_recruits, trp_umbar_lord, trp_i1_corsair_youth, trp_i2_corsair_warrior, trp_a4_corsair_veteran_marksman,trp_a2_corsair_marine], 
+	[trp_umbar_captain, trp_smith_umbar, trp_merchant_umbar, trp_no_troop, pt_umbar_recruits, trp_umbar_lord, trp_i1_corsair_youth, trp_i2_corsair_warrior, trp_a4_corsair_veteran_marksman,trp_a2_corsair_marine], 
 	[icon_mfc_umbar],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_low, 3, tld_siegable_always, tld_siege_battle_size_default),
 (p_advcamp_lorien, [scn_advcamp_lorien, -1, -1, -1, -1, scn_advcamp_lorien_siege, mesh_town_goodcamp],
 	[trp_lorien_captain, trp_smith_camroth, trp_merchant_camroth, trp_no_troop, pt_lorien_recruits,  trp_lorien_lord, trp_a1_lorien_scout, trp_a2_lorien_archer, trp_a3_lorien_vet_warden, trp_i3_lorien_inf], 
@@ -2015,7 +2015,7 @@ center_list = [
 	[trp_greenwood_captain, trp_smith_woodelf_camp, trp_merchant_woodelf_camp, trp_no_troop, pt_woodelf_recruits, trp_woodelf_lord, trp_a3_greenwood_archer, trp_a1_greenwood_scout, trp_a3_greenwood_archer, trp_i2_greenwood_infantry], 
 	[icon_mfc_woodelf],[900],[2,1,4,1,4,1], 0, garrison_limit_low, 3, tld_siegable_always, tld_siege_battle_size_default),
 (p_advcamp_moria, [scn_advcamp_moria, -1, -1,-1,-1, scn_advcamp_moria_siege, mesh_town_evilcamp],
-	[-1, trp_smith_moria_ac, trp_merchant_moria, trp_no_troop, pt_moria_recruits, trp_moria_lord,trp_i1_moria_snaga,trp_i2_moria_goblin,trp_c3_moria_wolf_rider,trp_i3_moria_large_goblin], 
+	[trp_moria_captain, trp_smith_moria_ac, trp_merchant_moria, trp_no_troop, pt_moria_recruits, trp_moria_lord,trp_i1_moria_snaga,trp_i2_moria_goblin,trp_c3_moria_wolf_rider,trp_i3_moria_large_goblin], 
 	[icon_mfc_moria],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_low, 3, tld_siegable_always, tld_siege_battle_size_default),
 (p_advcamp_guldur, [scn_advcamp_guldur, -1, -1,-1,-1, scn_advcamp_guldur_siege, mesh_town_evilcamp],
 	[trp_mordor_captain, trp_smith_dolguldur, trp_merchant_dolguldur, trp_no_troop, pt_guldur_recruits, trp_guldur_lord, trp_i2_mordor_uruk, trp_i2_mordor_orc, trp_i3_mordor_large_orc, trp_a3_guldur_large_orc_tracker], 
@@ -2024,16 +2024,16 @@ center_list = [
 	[trp_gunda_captain, trp_smith_gundabad, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_i1_gunda_goblin,trp_i2_gunda_orc,trp_i3_gunda_orc_fighter,trp_c4_gunda_warg_rider], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_low, 3, tld_siegable_always, tld_siege_battle_size_default),
 (p_advcamp_dale, [scn_advcamp_dale, -1, -1, -1, -1, scn_advcamp_dale_siege, mesh_town_goodcamp],
-	[-1, trp_smith_dale_ac, trp_merchant_esgaroth, trp_no_troop, pt_dale_recruits, trp_dale_lord, trp_i1_dale_militia, trp_i2_dale_man_at_arms,trp_i4_dale_billman,trp_a4_dale_archer], 
+	[trp_dale_captain, trp_smith_dale_ac, trp_merchant_esgaroth, trp_no_troop, pt_dale_recruits, trp_dale_lord, trp_i1_dale_militia, trp_i2_dale_man_at_arms,trp_i4_dale_billman,trp_a4_dale_archer], 
 	[icon_mfc_dale],[900],[2,1,4,1,4,1], 0, garrison_limit_low, 3, tld_siegable_always, tld_siege_battle_size_default),
 (p_advcamp_dwarf, [scn_advcamp_erebor, -1, -1,-1,-1, scn_advcamp_erebor_siege, mesh_town_goodcamp],
-	[-1, trp_smith_ironhill, trp_merchant_ironhill, trp_no_troop, pt_dwarf_recruits, trp_dwarf_lord,trp_a2_dwarf_lookout, trp_a4_dwarf_bowman, trp_i4_iron_hills_infantry, trp_i2_iron_hills_miner], 
+	[trp_dwarf_captain, trp_smith_ironhill, trp_merchant_ironhill, trp_no_troop, pt_dwarf_recruits, trp_dwarf_lord,trp_a2_dwarf_lookout, trp_a4_dwarf_bowman, trp_i4_iron_hills_infantry, trp_i2_iron_hills_miner], 
 	[icon_mfc_dwarf],[900],[2,1,4,1,4,1], 0, garrison_limit_low, 3, tld_siegable_always, tld_siege_battle_size_default),
 (p_advcamp_dunland, [scn_advcamp_dunland, -1, -1,-1,-1, scn_advcamp_dunland_siege, mesh_town_evilcamp],
 	[trp_dun_captain, trp_smith_dunland, trp_merchant_dunland, trp_no_troop, pt_dunland_recruits, trp_dunland_lord, trp_i1_dun_wildman,trp_i2_dun_warrior, trp_i3_dun_pikeman, trp_i5_dun_wolf_guard], 
 	[icon_mfc_dunland],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_low, 3, tld_siegable_always, tld_siege_battle_size_default),
 (p_advcamp_beorn, [scn_advcamp_beorn, -1, -1,-1,-1, scn_advcamp_beorn_siege, mesh_town_goodcamp],
-	[-1, trp_smith_beorn_ac, trp_merchant_woodmen, trp_no_troop, pt_beorn_recruits, trp_beorn_lord, trp_i5_beorning_carrock_berserker, trp_i4_beorning_sentinel, trp_i2_beorning_warrior, trp_i3_beorning_tolltacker], 
+	[trp_beorning_captain, trp_smith_beorn_ac, trp_merchant_woodmen, trp_no_troop, pt_beorn_recruits, trp_beorn_lord, trp_i5_beorning_carrock_berserker, trp_i4_beorning_sentinel, trp_i2_beorning_warrior, trp_i3_beorning_tolltacker], 
 	[icon_mfc_northmen],[900],[2,1,4,1,4,1], 0, garrison_limit_low, 3, tld_siegable_always, tld_siege_battle_size_default),
 ]
 

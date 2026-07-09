@@ -4171,26 +4171,29 @@ scene_props = [
     (display_message,"@Gate is breached!"),
     #(assign, ":gate_aggravator_found", 0),
 
-] + (is_a_wb_sceneprop==1 and [        
-    (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_prop_agent_1),
-    (call_script, "script_remove_agent", ":gate_aggravator"), 
-] or [    
-    (assign, ":gate_aggravator_found", 0),
-    (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
-        (eq, ":gate_aggravator_found", 0),
-        (gt, ":agent_no", 0),
-        (agent_is_alive, ":agent_no"),  
-        (agent_get_troop_id, ":troop_id", ":agent_no"),
-        (eq, ":troop_id", "trp_gate_aggravator"),
-        (agent_get_position, pos2, ":agent_no"),
-        (set_fixed_point_multiplier, 100),
-        (get_distance_between_positions, ":distance", pos1, pos2),
-        (le, ":distance", 200),
-        #(display_message, "@gate_aggravator found"),
-        (call_script, "script_remove_agent", ":agent_no"), 
-        (assign, ":gate_aggravator_found", 1),
+    (try_begin),
+    ] + (is_a_wb_sceneprop==1 and [        
+        (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_prop_agent_1),
+        (ge, ":gate_aggravator", 0),
+        (call_script, "script_remove_agent", ":gate_aggravator"), 
+    ] or [(eq, 0, 1),]) + [
+    (else_try), #fallback in case the slot did not work
+        (assign, ":gate_aggravator_found", 0),
+        (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
+            (eq, ":gate_aggravator_found", 0),
+            (gt, ":agent_no", 0),
+            (agent_is_alive, ":agent_no"),  
+            (agent_get_troop_id, ":troop_id", ":agent_no"),
+            (eq, ":troop_id", "trp_gate_aggravator"),
+            (agent_get_position, pos2, ":agent_no"),
+            (set_fixed_point_multiplier, 100),
+            (get_distance_between_positions, ":distance", pos1, pos2),
+            (le, ":distance", 200),
+            #(display_message, "@gate_aggravator found"),
+            (call_script, "script_remove_agent", ":agent_no"), 
+            (assign, ":gate_aggravator_found", 1),
+        (try_end),
     (try_end),
-    ]) + [
        
     (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"),  #move away all dependent barriers
     (try_begin),

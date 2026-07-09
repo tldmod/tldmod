@@ -2181,6 +2181,7 @@ game_menus = [
             (assign, "$enemy_count1", 100), # use a big scene
 			(call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"), 
 			#    (jump_to_scene, "scn_camp_scene"),
+			(set_jump_mission,"mt_ai_training"),
 			(change_screen_mission)]),
 		("camp_troop"      ,[
 		    (party_get_num_companions,reg10,"p_main_party"),(val_sub,reg10,1),
@@ -2771,7 +2772,7 @@ game_menus = [
 
 #Invain, simplified faction strength cheat
 ( "mvtest_facstr_change",0,
-   "{!}{s1}",
+   "{!}^^^^^^{s1}",
    "none",
    [
       (try_begin),
@@ -2785,10 +2786,16 @@ game_menus = [
       
 
     ],
-    [("change",[
+    [("change_fac_next",[
         (str_store_faction_name, s7, "$g_mvtest_faction"),
+        (store_add, ":next", "$g_mvtest_faction", 1),
+        (try_begin),
+	      (eq, ":next", "fac_player_supporters_faction"),
+	      (assign, ":next", kingdoms_begin),
+	    (try_end),
+        (str_store_faction_name, s8, ":next"),
       ],
-      "{!}Change faction: {s7}",
+      "{!}Change faction: {s7} --> {s8}",
       [
         (val_add, "$g_mvtest_faction", 1),
         (try_begin),
@@ -2801,21 +2808,29 @@ game_menus = [
        (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength_tmp),
        (val_add, ":fac_str", 100),
        (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,":fac_str"),
+       (assign, reg78, ":fac_str"),
+       (display_message, "@{!}Fac str: {reg78}"),
        ]),
      ("add500",[],"{!}add 500 fac strength.", [
        (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength_tmp),
        (val_add, ":fac_str", 500),
        (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,":fac_str"),
+       (assign, reg78, ":fac_str"),
+       (display_message, "@{!}Fac str: {reg78}"),
        ]),
      ("sub100",[],"{!}subtract 100 fac strength.", [
        (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength_tmp),
        (val_sub, ":fac_str", 100),
        (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,":fac_str"),
+       (assign, reg78, ":fac_str"),
+       (display_message, "@{!}Fac str: {reg78}"),
        ]),
      ("sub500",[],"{!}subtract 500 fac strength.", [
        (faction_get_slot, ":fac_str", "$g_mvtest_faction",slot_faction_strength_tmp),
        (val_sub, ":fac_str", 500),
        (faction_set_slot,"$g_mvtest_faction",slot_faction_strength_tmp,":fac_str"),
+       (assign, reg78, ":fac_str"),
+       (display_message, "@{!}Fac str: {reg78}"),
        ]),
      ("back_mv",[],"{!}Back to dev menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
      ("back_map",[],"{!}Back to map.", [(change_screen_map),]),
@@ -4309,6 +4324,16 @@ game_menus = [
         (item_set_slot, "itm_orc_brew", slot_item_is_active, 1),
         (item_set_slot, "itm_orc_brew", slot_item_deactivation_hour, ":then_hours"),
 
+        (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+        (try_for_range, ":stack_no", 0, ":num_stacks"),
+            (party_stack_get_troop_id, ":troop_no", "p_main_party", ":stack_no"),
+            (troop_is_hero, ":troop_no"),
+            (store_troop_health, ":health", ":troop_no", 0),
+            (val_add, ":health", 30),
+            (val_min, ":health", 100),
+            (troop_set_health, ":troop_no", ":health"),
+        (try_end),
+
         (display_log_message, "@You used the Orc Brew."),
         (jump_to_menu, "mnu_camp"),
         ]
@@ -4331,7 +4356,7 @@ game_menus = [
             (party_stack_get_troop_id, ":troop_no", "p_main_party", ":stack_no"),
             (troop_is_hero, ":troop_no"),
             (store_troop_health, ":health", ":troop_no", 0),
-            (val_add, ":health", 20),
+            (val_add, ":health", 50),
             (val_min, ":health", 100),
             (troop_set_health, ":troop_no", ":health"),
         (try_end),

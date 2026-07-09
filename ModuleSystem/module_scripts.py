@@ -15697,6 +15697,9 @@ scripts = [
 		(neq, "$g_defending_against_siege", 0), # walkers there when siege
 
         (try_begin), ## Kham Edit for more town walkers!
+            (eq, "$current_town", p_town_isengard),
+            (assign, ":num_walkers", 7),
+        (else_try),
             (this_or_next|is_between, 			"$current_town", isengard_mordor_centers_begin, isengard_mordor_centers_end),
             (this_or_next|is_between, 			"$current_town", 		   moria_centers_begin, 		  moria_centers_end),
             (			  is_between, 			"$current_town", 		gundabad_centers_begin, 	   gundabad_centers_end),

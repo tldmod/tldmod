@@ -4637,7 +4637,7 @@ mission_templates = [ # not used in game
                 (agent_set_no_dynamics, ":gate_aggravator",1),
                 (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
                 (agent_set_position, ":gate_aggravator", pos1),
-                (agent_set_visibility, ":agent", 0),
+                (agent_set_visibility, ":gate_aggravator", 0),
                  
                 #find dependent barriers, move them into place
                 (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
