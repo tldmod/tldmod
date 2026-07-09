@@ -1,4 +1,4 @@
-1861
+1863
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -713,6 +713,7 @@ qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
 qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!
+qstr_night_fog night_fog
 qstr_While_visiting_towns While_visiting_towns,_settlements_and_camps,_you_can_talk_to_people_walking_around._This_will_help_you_gain_their_trust_and_offer_valuable_information_about_the_local_culture._If_you_ask,_they_will_also_show_you_the_way_to_the_most_important_people_around.
 qstr_Cannot_leave_now. Cannot_leave_now.
 qstr_The_traitor_should_b The_traitor_should_be_around_somewhere._You_should_look_around_important_places._If_you_have_a_good_relation_to_them,_you_may_also_ask_the_local_populace_for_suspicious_strangers.
@@ -908,6 +909,7 @@ qstr_{***}All_four_legendar {***}All_four_legendary_places_enabled!
 qstr_{***}{s10}_crushed!_Lo {***}{s10}_crushed!_Lords_will_go_to_their_capitals...
 qstr_{***}{s10}_defeated!_N {***}{s10}_defeated!_Now_wait_for_it...
 qstr_{***}{s7}_faction_stre {***}{s7}_faction_strength:_{reg11}
+qstr_{***}Fac_str:_{reg78} {***}Fac_str:_{reg78}
 qstr_{***}{s2}^{s4}:_{reg1} {***}{s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}
 qstr_{***}Faction_strengths {***}Faction_strengths_report:^{s2}
 qstr_{***}Defending {***}Defending
