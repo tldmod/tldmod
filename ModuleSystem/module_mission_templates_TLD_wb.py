@@ -324,12 +324,12 @@ field_ai_triggers = [
                 (agent_is_alive, ":enemy_agent"),
                 (agent_is_human, ":enemy_agent"),
                 (agent_get_position, pos2, ":enemy_agent"),
-                (get_distance_between_positions, ":dist", pos1, pos2),
+                (get_distance_between_positions, ":dist_enemy", pos1, pos2),
     
      #SHOULD CLOSEST MATTER???
                 (try_begin),
                     (eq, ":wielded", ":lance"), # Still using lance?
-                    (lt, ":dist", 500), # Are the enemies within 5 meters? (InVain: changed to closest cached enemy only)
+                    (lt, ":dist_enemy", 500), # Are the enemies within 5 meters? (InVain: changed to closest cached enemy only)
                     (lt, ":speed", 300), #slowed down? (InVain)
                     (agent_get_combat_state, ":combat", ":agent"),
                     (gt, ":combat", 3), # Agent currently in combat? ...avoids switching before contact                    
@@ -340,10 +340,17 @@ field_ai_triggers = [
                             (assign, ":inc_two_handers", 1),
                       (try_end),
                     (call_script, "script_weapon_use_backup_weapon", ":agent", ":inc_two_handers"), # Then equip a close weapon
-                    (position_move_y, pos1, 1000), 
-                    (agent_set_scripted_destination, ":agent", pos1), #try to get out if stuck!
+                    (try_begin),
+                        (team_get_movement_order, ":order", ":team", ":class"),#Only if charging
+                        (eq, ":order", mordr_charge),
+                        (call_script, "script_store_random_scene_position_in_pos10"),
+                        (agent_set_scripted_destination, ":agent", pos10), #try to get out if stuck!
+                    (try_end),
                 (else_try),
-                    (gt, ":dist", 500),
+                    (agent_get_scripted_destination, pos9, ":agent"),
+                    (get_distance_between_positions, ":dist_escape", pos1, pos9),
+                    (this_or_next|gt, ":dist_enemy", 500),
+                    (le, ":dist_escape", 500),
                     (agent_clear_scripted_mode, ":agent"),
                     (agent_force_rethink, ":agent"),
                     (neq, ":wielded", ":lance"), # Enemies farther than 5 meters and/or not fighting, and not using lance?
