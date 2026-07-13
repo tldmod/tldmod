@@ -710,7 +710,7 @@ qstr_loses_Faction_Streng|pierde fuerza de facción, ya que las líneas de sumin
 qstr_loses_Faction_Strengt|pierde fuerza de facción debido a la destrucción de su campamento.
 qstr_gains_Faction_Streng|gana fuerza de facción al extenderse las noticias de tu victoria.
 qstr_update_savegame:_swa|actualizar partida guardada: cambiar montura de araña
-qstr_In_the_latest_hotfix|En el último parche, algunas variables globales han tenido que ser restauradas a sus valores predeterminados, para asegurar la comptabilidad de las partidas guardas. Comprueba tus opciones de dificultad de campaña y arquería montada, si las habías cmabiado anteriormente, y selecciona los valores que prefieras.
+qstr_In_the_latest_hotfix|En el último parche, algunas variables globales han tenido que ser restauradas a sus valores predeterminados, para asegurar la compatibilidad de las partidas guardadas. Comprueba tus opciones de dificultad de campaña y arquería montada, si las habías cambiado anteriormente, y selecciona los valores que prefieras.
 qstr_Raiders|Incursores
 qstr_have_won_the_sea_bat|han ganado la batalla naval, desmoralizando a tus tropas. El enemigo podría aprovechar esta derrota para aumentar la frecuencia de sus ataques.
 qstr_loses_Faction_Strength|pierde fuerza de facción debido a un asalto destructivo.

@@ -1,7 +1,7 @@
 dlga_start:mutiny_pretalk_1|Ehi, {playername}. Sai che ti diciamo.. Qui la gente è in tumulto ! Vogliamo divertirci di più, basta marciare..
-; dlga_mutiny_pretalk_1:mutiny_pretalk_2|Fall back in line, maggot! We are at war and I'm your commander. [Charisma]
-; dlga_mutiny_pretalk_1:close_window|Want some fun eh? You maggot! I will slay you here and now, that will keep the lads entertained!
-; dlga_mutiny_pretalk_1:close_window.1|I will not tolerate such treacherous talk! Guards, kill him and his cronies!
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|Torna in fila, verme ! Siamo in guerra e io sono il tuo comandante. [Carisma]
+dlga_mutiny_pretalk_1:close_window|Vuoi divertirti un po', eh ? Verme ! Ti ucciderò qui e ora, così i ragazzi si divertiranno !
+dlga_mutiny_pretalk_1:close_window.1|Non tollererò simili discorsi infidi ! Guardie, uccidete questa persona e i suoi complici !
 dlga_mutiny_pretalk_2:close_window|Come vuoi, comandante, come vuoi..
 dlga_start:mutiny_talk_1|Ehi, comandante. Ti diciamo questo.. La gente non è felice, non è felice per niente. Non c'è abbastanza carne umana, non ci si diverte. Qui parlano, dicono che non sei abbastanza bravo, comandante !
 dlga_mutiny_talk_1:mutiny_talk_2|Cosa ? Ammutinamento mentre siamo in guerra ? C'è la morte per questo, verme !
@@ -122,15 +122,15 @@ dlga_member_separate:member_separate_confirm|Ah davvero ? Beh, non ti aspettare 
 dlga_member_separate_confirm:member_separate_yes|Sta bene. Le nostre strade si dividono.
 dlga_member_separate_confirm:do_member_trade|No, in realtà preferisco averti al mio fianco.
 dlga_member_separate_yes:close_window|Bene. Sono fuori, allora. Vienimi a cercare se avessi bisogno di me.
-; dlga_member_talk:member_promote_lord|You should return to {s14} and gather warriors to lead against the enemy.
-; dlga_member_promote_lord:member_talk|Hrmph! Why should I care about {s14}? I'd rather stay here with you.
-; dlga_member_promote_lord:member_talk.1|Return to what? {s14} is gone. Perhaps if I had been able to return sooner it might have made some difference, but now the best place for me to seek vengeance is at your side.
-; dlga_member_promote_lord:member_talk.2|There are few who would follow me, I'm afraid. Perhaps I could learn a thing or two about leadership from you? Then we can discuss this again.
-; dlga_member_promote_lord:member_talk.3|{s14} remains strong in the face of our enemies and has no need of additional commanders. If a commander of {s14} should fall in battle let us speak of this again, but for now I think it is better if I stay with you.
-; dlga_member_promote_lord:member_promote_lord_2|Perhaps you're right. {s14} has need of more capable commanders. {s15} Are you sure you're ready for me to leave your side?
-; dlga_member_promote_lord_2:member_promote_lord_leaving|I am sure. You can do more leading a host of your own.
-; dlga_member_promote_lord_leaving:close_window|Well. I'll be off, then. Perhaps we will meet again.
-; dlga_member_promote_lord_2:do_member_trade|On second thought I'd rather you stay with me for now.
+dlga_member_talk:member_promote_lord|Dovresti tornare a {s14} e radunare dei guerrieri da guidare contro il nemico.
+dlga_member_promote_lord:member_talk|Hrmph ! Perché dovrei preoccuparmi di {s14} ? Preferirei restare qui con te.
+dlga_member_promote_lord:member_talk.1|Tornare a cosa ? {s14} non c'è più. Forse se fossi riuscito a tornare prima avrebbe potuto fare la differenza, ma ora il posto migliore per me per cercare vendetta è al tuo fianco.
+dlga_member_promote_lord:member_talk.2|Temo che siano pochi coloro che mi seguirebbero. Forse potrei imparare qualcosa sul comando da te ? Ne riparleremo.
+dlga_member_promote_lord:member_talk.3|{s14} rimane forte di fronte ai nostri nemici e non ha bisogno di ulteriori comandanti. Se un comandante di {s14} dovesse cadere in battaglia, ne riparleremo, ma per ora credo sia meglio che io resti con voi.
+dlga_member_promote_lord:member_promote_lord_2|Forse hai ragione. {s14} ha bisogno di comandanti più capaci. {s15} Sei sicuro di potermi lasciare andare ?
+dlga_member_promote_lord_2:member_promote_lord_leaving|Lo so per certo. Puoi fare di più gestendo un gruppo tutto tuo.
+dlga_member_promote_lord_leaving:close_window|Bene. Allora vado. Forse ci rivedremo.
+dlga_member_promote_lord_2:do_member_trade|Ripensandoci, preferirei che tu rimanessi con me per ora.
 dlga_member_talk:member_question|Vorrei chiederti una cosa.
 dlga_member_talk:close_window|Grazie, non ti trattengo oltre.
 dlga_member_question:member_question_2|Molto bene. Cosa vuoi chiedermi  ?
@@ -189,21 +189,21 @@ dlga_companion_personalitymatch_response:close_window|Molto bene.
 dlga_event_triggered:companion_faction_demolished|{s5}, {reg6?la nostra:la mia} {s6} sta soffrendo gravemente per la guerra, ti chiedo di valutare l'opportunità di venire in aiuto del {reg6?nostro:mio} popolo non appena ci saremo ristorati e saremo pronti.
 dlga_companion_faction_demolished:close_window|Quindi dovremo correre in aiuto di {s6} immediatamente.
 dlga_companion_faction_demolished:close_window.1|Mi spiace, ma hanno bisogno di noi altrove.
-; dlga_event_triggered:companion_faction_dying_pretalk|{s5}, I am sorry, but the suffering of {reg6?our:my} {s6} homeland is too great. I must return at once to provide what aid I can.
-; dlga_companion_faction_dying_pretalk:companion_faction_dying|Farewell, {s5}.
-; dlga_companion_faction_dying:close_window|Very well. Perhaps we will meet again.
-; dlga_companion_faction_dying:companion_give_troops|Of course. I shall also permit other warriors of {s6} to go with you.
-; dlga_companion_give_troops:companion_give_troops_check|I will be glad to have them with me. {s6} needs all the help you can provide.
+dlga_event_triggered:companion_faction_dying_pretalk|{s5}, mi dispiace, ma lo stato di sofferenza della {reg6?nostra:mia} {s6} patria è troppo grande. Devo tornare subito per fornire tutto l'aiuto possibile.
+dlga_companion_faction_dying_pretalk:companion_faction_dying|Addio, {s5}.
+dlga_companion_faction_dying:close_window|Molto bene. Forse ci incontreremo ancora.
+dlga_companion_faction_dying:companion_give_troops|Certamente. Permetterò anche ad altri guerrieri di {s6} di venire con te.
+dlga_companion_give_troops:companion_give_troops_check|Sarò felice di averli con me. {s6} ha bisogno di tutto l'aiuto che puoi fornire.
 dlga_companion_give_troops:companion_give_troops_final|Sfortunatamente non hai alcun soldato {s14} per darmi rinforzo.
 dlga_companion_give_troops_check:companion_give_troops_check_1|Fammi dare un'occhiata alla lista dei soldati...
 dlga_companion_give_troops_check_1:companion_give_troops_final|Così hai cambiato idea, a quanto vedo...
 dlga_companion_give_troops_check_1:companion_give_troops_final.1|Non ho modo di impiegare queste truppe qui...^Riprenditele.
-; dlga_companion_give_troops_final:close_window|Farewell, commander.
-; dlga_companion_faction_dying:companion_faction_dying_trade|Let me see your equipment before you leave.
+dlga_companion_give_troops_final:close_window|Addio, comandante.
+dlga_companion_faction_dying:companion_faction_dying_trade|Fammi dare un'occhiata alla tua attrezzatura, prima che tu vada.
 dlga_companion_faction_dying_trade:companion_faction_dying_pretalk|Certo, è tutto qui, guarda pure.
-; dlga_companion_faction_dying:companion_faction_dying_persuade|I understand, but you are needed here.
-; dlga_companion_faction_dying_persuade:close_window|Perhaps you are right. I can serve {s6} better by fighting at your side.
-; dlga_companion_faction_dying_persuade:close_window.1|I'm afraid that {s6} needs me more. Farewell, {s5}.
+dlga_companion_faction_dying:companion_faction_dying_persuade|Capisco, ma qui c'è bisogno di te.
+dlga_companion_faction_dying_persuade:close_window|Forse hai ragione. Posso servire {s6} al meglio combattendo al tuo fianco.
+dlga_companion_faction_dying_persuade:close_window.1|Temo che {s6} abbia più bisogno di me. Addio, {s5}.
 dlga_companion_home_description:companion_home_description_2|Dimmi di più.
 dlga_companion_home_description:close_window|Non abbiamo tempo da perdere in chiacchiere adesso.
 dlga_companion_home_description:close_window.1|Preferirei che i miei compagni non mi annoiassero con queste trivialità.
@@ -482,7 +482,7 @@ dlga_send_gift_3:send_gift_4.1|Che cosa vuoi dare per corromperli ?
 dlga_send_gift_4:lord_pretalk|Non importa
 dlga_send_gift_5:lord_pretalk|Va bene, {playername}, Buona fortuna.
 dlga_lord_talk:lord_give_order_ask|Ho un nuovo compito per te.
-; dlga_lord_give_order_ask:lord_pretalk|My duty is to defend my homeland. I will not accept any other assignments.
+dlga_lord_give_order_ask:lord_pretalk|Il mio dovere è difendere la mia patria. Non accetterò altri incarichi.
 dlga_lord_give_order_ask:lord_give_order|Sì ?
 dlga_lord_give_order:lord_give_order_answer|Seguimi. [Costo: {reg1}/{reg2} Punti Influenza]
 dlga_lord_give_order:lord_give_order_details_ask|Raggiungi.... [Costo: {reg1}/{reg2} Punti Influenza]
@@ -668,9 +668,9 @@ dlga_lord_mission_told:lord_mission_accepted|Puoi contare su di me, {s65}.
 dlga_lord_mission_told:lord_mission_rejected|Ho paura di non poter accettare tale compito al momento.
 dlga_lord_mission_accepted:close_window|Eccellente, {playername}, eccellente. Ho piena fiducia in te.
 dlga_lord_mission_rejected:close_window|È così allora ? Bene, credo che tu non sia all'altezza della missione. Avrei dovuto cercare qualcuno dotato di maggior coraggio.
-; dlga_lord_talk:lord_return_items|I need you to return the unique {reg2?items:item} I gave you.
-; dlga_lord_return_items:lord_talk|Of course I will return {reg2?these items:this item} to you but it seems like you have no room in your inventory currently. Make some room, then ask me again.
-; dlga_lord_return_items:lord_talk.1|Of course. Here {reg2?they are:it is}.
+dlga_lord_talk:lord_return_items|Ho bisogno che tu mi restituisca {reg2?gli oggetti unici:l'oggetto unico} che ti ho fornito.
+dlga_lord_return_items:lord_talk|Ti restituirò certamente {reg2?quegli oggetti:quell'oggetto}, ma a quanto pare al momento non hai spazio nell'inventario. Fai un po' di spazio e poi chiedimelo di nuovo.
+dlga_lord_return_items:lord_talk.1|Certo. {reg2?Eccoli:Eccolo}.
 dlga_lord_talk:lord_leave_prison|Devo andare adesso.
 dlga_lord_talk:lord_leave|Questa discussione è giunta al termine. Me ne vado.
 dlga_lord_talk:lord_leave.1|Ora devo andare.
@@ -916,8 +916,8 @@ dlga_mayor_sea_battle_no:close_window|Sbrigati, non abbiamo molto tempo prima di
 dlga_mayor_talk:mayor_reinforced_center_finished|Ho rinforzato {s3} come mi avevi chiesto.
 dlga_mayor_begin:kill_quest_bandits_failed|Ho sentito che hai fallito in ciò che ti avevo chiesto di fare. Deludente, {playername}.
 dlga_kill_quest_bandits_failed:close_window|Farò meglio la prossima volta.
-; dlga_mayor_begin:mayor_hunt_beast_quest_failed|I have heard that the {s9} slipped your grasp and that its trail was lost. It may have vanished for now, but the danger remains.
-; dlga_mayor_hunt_beast_quest_failed:close_window|This was no ordinary beast. I failed this time, but I shall not underestimate the wilds again.
+dlga_mayor_begin:mayor_hunt_beast_quest_failed|Ho sentito dire che il {s9} ti è sfuggito di mano e che le sue tracce si sono perse. Potrebbe essere scomparso per ora, ma il pericolo rimane.
+dlga_mayor_hunt_beast_quest_failed:close_window|Non si trattava di una bestia qualunque. Questa volta ho fallito, ma non sottovaluterò più la natura selvaggia.
 dlga_mayor_talk:mayor_deliver_food|Ecco il tuo cibo, {reg9} unità.
 dlga_mayor_deliver_food:mayor_deliver_food_completed|Ottimo lavoro, {playername}, i nostri depositi di cibo sono di nuovo pieni e per ora nessuno morirà di fame.
 dlga_mayor_deliver_food_completed:close_window|Faccio quel che posso.
@@ -1154,8 +1154,8 @@ dlga_start:party_encounter_hostile_defender|Che cosa vuoi ?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Arrendetevi o morirete !
 dlga_kingdom_companion_meet:kingdom_companion_intro|Io sono {playername}.
 dlga_kingdom_companion_meet:kingdom_companion_intro.1|Il mio nome è {playername}. Al tuo servizio.
-; dlga_start:kingdom_companion_start|Greetings, {playername}...
-; dlga_kingdom_companion_start:close_window.1|If you have business with our company you should speak with my {s5}, {s3}.
+dlga_start:kingdom_companion_start|Salute, {playername}...
+dlga_kingdom_companion_start:close_window.1|Se avete affari con la nostra azienda, dovreste parlare con i miei {s5}, {s3}.
 dlga_kingdom_companion_leaving:close_window|Addio.
 dlga_party_encounter_hostile_defender:close_window|Niente. Non vi daremo fastidio.
 dlga_start:close_window.53|* ti fissa in silenzio *
