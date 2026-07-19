@@ -9872,6 +9872,86 @@ scripts = [
             (assign, ":quest_expiration_days", 40),
             (assign, ":quest_dont_give_again_period", 16),
           (try_end),
+		(else_try),
+
+			#InVain: Hunt Beast Coop (Lord Quest)
+			] + (is_a_wb_script==1 and [
+			(eq, ":quest_no", "qst_hunt_beast_coop"),
+            (eq, 0, 1), #disabled
+			(try_begin),
+				(neg|check_quest_active, "qst_hunt_beast_mayor"),
+                (call_script, "script_find_theater", p_main_party),
+                (assign, ":theater", reg0),
+                
+                (assign, ":quest_target_amount", 1), #number of minor animals
+                (assign, ":upgrade_level", 8), #fallback
+                
+                (store_random_in_range, ":rand", 0, 10),
+                (try_begin),
+                    (is_between, "$current_player_region", region_n_mirkwood, region_s_mirkwood+1),
+                    (ge, ":player_level", 4),
+                    (le, ":rand", 3),
+                    (assign, ":quest_target_troop", "trp_spider"),
+                    (assign, ":upgrade_level", 8), 
+                (else_try),
+                    (eq, ":theater", theater_N),
+                    (this_or_next|eq, ":giver_faction_no", fac_dale),
+                    (eq, ":giver_faction_no", fac_rhun),
+                    (ge, ":player_level", 5),
+                    (le, ":rand", 3),
+                    (assign, ":quest_target_troop", "trp_bull"),
+                    (assign, ":upgrade_level", 10),
+                (else_try),
+                    (this_or_next|eq, ":theater", theater_N),
+                    (eq, ":theater", theater_C),
+                    (neq, ":giver_faction_no", fac_beorn),
+                    (ge, ":player_level", 8),
+                    (le, ":rand", 2),
+                    (assign, ":quest_target_troop", "trp_bear"),
+                    (assign, ":upgrade_level", 14),
+                    (assign, ":quest_target_amount", 0), #bears are always alone
+                (else_try),
+                    (ge, ":player_level", 10),
+                    (le, ":rand", 2),
+                    (assign, ":quest_target_troop", "trp_evil_beast"),
+                    (assign, ":upgrade_level", 16),
+                (else_try),
+                    (le, ":rand", 5),
+                    (assign, ":quest_target_troop", "trp_boar"),
+                    (assign, ":upgrade_level", 10),
+                (else_try),
+                    (assign, ":quest_target_troop", "trp_wolf"),
+                    (assign, ":upgrade_level", 4),
+                (try_end),
+                
+                (assign, ":quest_object_troop", ":quest_target_troop"),
+                
+                (try_begin),
+                    (ge, ":player_level", ":upgrade_level"),
+                    (val_add, ":quest_target_troop", 1), #stronger version
+                (try_end),
+                
+                (try_begin),
+                    (gt, ":quest_target_amount", 0),
+                    (store_div, ":max_amount", ":player_level", 3),
+                    (store_sub, ":min_amount", ":player_level", ":upgrade_level"),
+                    (store_random_in_range, ":quest_target_amount", ":min_amount", ":max_amount"),
+                (try_end),
+
+                #copied from troublesome bandits
+                (assign, ":quest_gold_reward", ":player_level"), #assume 1-20
+                (val_add, ":quest_gold_reward", 10), #11-31
+                (val_mul, ":quest_gold_reward", 20), #ca 200-600
+                (assign, ":quest_giver_fac_str_effect", 0),
+                (store_mul, ":quest_xp_reward", ":quest_gold_reward", 4),
+                (assign, ":quest_rank_reward", 15),
+                (assign, ":quest_importance", 6),
+                (assign, ":quest_expiration_days", 30),
+                (assign, ":quest_dont_give_again_period", 7),
+                (assign, ":result", ":quest_no"),
+			(try_end),
+			] or [(eq, 0, 1),]) + [
+        
         (try_end),
       (try_end),
       (try_begin),

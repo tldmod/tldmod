@@ -6815,7 +6815,10 @@ custom_tld_spawn_troop,
     (set_fixed_point_multiplier, 100),
     (call_script, "script_find_exit_position_at_pos4", ":player_agent"),
     (agent_get_position, pos10, ":player_agent"),
-    (position_move_y, pos10, -250),
+    (scene_prop_get_instance, ":prop", "spr_inventory", 0),
+    (position_move_y, pos10, 150),
+    (prop_instance_set_position, ":prop", pos10),
+    (position_move_y, pos10, -400),
     
     (try_for_agents, ":agent"),
         (agent_is_human, ":agent"), #get rider, not mount
@@ -6827,6 +6830,10 @@ custom_tld_spawn_troop,
             (position_move_x, pos10, 100),
             (agent_set_position, ":agent", pos10),
             #(display_message, "@{s5} found in team 0."),
+            (try_begin), #store coop lord
+                (quest_slot_eq, "qst_hunt_beast_coop", slot_quest_giver_troop, ":troop_id"),
+                (quest_set_slot, "qst_hunt_beast_coop", slot_quest_target_item, ":agent"),
+            (try_end),
         (else_try),
             (eq, ":team", 1),
             (str_store_agent_name, s5, ":agent"),
@@ -6850,8 +6857,8 @@ custom_tld_spawn_troop,
     #make the beast roam around
 	(1, 0, 20, 
 	[(quest_slot_eq, "$random_quest_no", slot_quest_current_state, 0), 
-    # (store_random_in_range, ":rand", 0, 10),
-    # (gt, ":rand", 8),
+    (store_random_in_range, ":rand", 0, 10),
+    (gt, ":rand", 4),
 	], 
 	[(set_fixed_point_multiplier, 100),
     (call_script, "script_store_random_scene_position_in_pos10"),
@@ -7103,17 +7110,27 @@ custom_tld_spawn_troop,
     (quest_set_slot, "$random_quest_no", slot_quest_current_state, 12),
 	]),
 
+    #check defeat
+	(2, 10, ti_once, 
+	[(main_hero_fallen),
+	],
+	[(quest_set_slot, "$random_quest_no", slot_quest_current_state, -1), #player down
+    (jump_to_menu, "mnu_hunt_beast_debrief"),
+    (finish_mission,0),
+    (call_script, "script_count_mission_casualties_from_agents_custom"),
+	]),
+
 	(ti_tab_pressed,0,0,[],
 	[
 		(try_begin),
 			(eq, "$battle_won", 1),
-            (quest_set_slot, "$random_quest_no", slot_quest_current_state, 12),
+            (quest_set_slot, "$random_quest_no", slot_quest_current_state, 12), #beast slain
 			(jump_to_menu, "mnu_hunt_beast_debrief"),
 			(finish_mission,0),
             (call_script, "script_count_mission_casualties_from_agents_custom"),
 		(else_try),
 			(main_hero_fallen),
-            (quest_set_slot, "$random_quest_no", slot_quest_current_state, -1),
+            (quest_set_slot, "$random_quest_no", slot_quest_current_state, -1), #player down
 			(jump_to_menu, "mnu_hunt_beast_debrief"),
 			(finish_mission,0),
             (call_script, "script_count_mission_casualties_from_agents_custom"),
@@ -7122,8 +7139,8 @@ custom_tld_spawn_troop,
             (neq, cheat_switch, 1),
             (display_message, "@Cannot leave now"),
         (else_try),
-            #(eq, cheat_switch, 1),
             (question_box, "@Are you sure you want to give up the hunt?"),
+            (call_script, "script_count_mission_casualties_from_agents_custom"),
 		(try_end),
 	]),
     
@@ -7141,6 +7158,35 @@ custom_tld_spawn_troop,
       (jump_to_menu, "mnu_hunt_beast_debrief"),
     ]),
 
+  #store player score and ally score in unused quest slots
+  (ti_on_agent_hit, 0, 0, [
+    ],[
+      (store_trigger_param_1, ":victim"),
+      (store_trigger_param_2, ":attacker"),
+      (store_trigger_param, ":dmg", 3),
+      (eq, "$random_quest_no", "qst_hunt_beast_coop"),
+      (agent_get_troop_id, ":attacker_troop", ":attacker"),
+      (agent_get_troop_id, ":victim_troop", ":victim"),
+      
+      (try_begin), #anti-cheat
+        (eq, ":attacker_troop", "trp_player"),
+        (quest_slot_eq, "qst_hunt_beast_coop", slot_quest_giver_troop, ":victim_troop"),
+        (val_mul, ":dmg", -2),
+      (try_end),
+      
+      (try_begin),
+        (eq, ":attacker_troop", "trp_player"),
+        (quest_get_slot, ":player_score", slot_quest_giver_fac_str_effect, "qst_hunt_beast_coop"),
+        (val_add, ":player_score", ":dmg"),
+        (quest_set_slot, "qst_hunt_beast_coop", slot_quest_giver_fac_str_effect, ":player_score"),
+      (else_try),
+        (quest_slot_eq, "qst_hunt_beast_coop", slot_quest_giver_troop, ":attacker_troop"),
+        (quest_get_slot, ":partner_score", slot_quest_target_fac_str_effect, "qst_hunt_beast_coop"),
+        (val_add, ":partner_score", ":dmg"),
+        (quest_set_slot, "qst_hunt_beast_coop", slot_quest_target_fac_str_effect, ":partner_score"),
+      (try_end),
+    ]),
+
 custom_tld_spawn_troop,
 custom_warg_sounds,
 common_battle_on_player_down,
@@ -7150,6 +7196,8 @@ hp_shield_init,
 hp_shield_trigger,
 tld_calculate_wounded,
 reset_fog,
+common_battle_inventory,
+common_battle_on_player_down,
 
        ] or []) + [
 

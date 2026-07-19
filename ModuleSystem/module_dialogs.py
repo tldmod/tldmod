@@ -3076,6 +3076,65 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
   #TLD quests fail/success BEGIN:
 
+[anyone,"event_triggered", [(store_partner_quest,":lords_quest"),
+                       (eq,":lords_quest","qst_hunt_beast_coop"),
+                       (quest_slot_eq, "qst_hunt_beast_coop", slot_quest_giver_troop, "$g_talk_troop"),
+                       (check_quest_succeeded, "qst_hunt_beast_coop")],
+"{!}{s9}{s10}", "lord_hunt_beast_coop_win", #strings are defined in mnu_hunt_beast_debrief
+  []],
+  
+[anyone,"event_triggered", [(store_partner_quest,":lords_quest"),
+                       (eq,":lords_quest","qst_hunt_beast_coop"),
+                       (quest_slot_eq, "qst_hunt_beast_coop", slot_quest_giver_troop, "$g_talk_troop"),
+                       (check_quest_failed, "qst_hunt_beast_coop")],
+"{!}{s9}{s10}", "lord_hunt_beast_coop_fail", #strings are defined in mnu_hunt_beast_debrief
+  []],
+
+[anyone,"lord_hunt_beast_coop_win", [],
+"{s9}", "lord_generic_mission_completed",
+  [(quest_get_slot,":quest_target_troop", "qst_hunt_beast_coop", slot_quest_target_troop),
+   (str_store_troop_name, s6, ":quest_target_troop"),
+   (troop_get_type, ":race","$g_talk_troop"),
+   (assign, ":completion", 100),
+   (try_begin),
+        (quest_slot_eq, "$random_quest_no", slot_quest_current_state, 12),
+        (is_between, ":race", tf_orc_begin, tf_orc_end),
+        (str_store_string, s9, "@Well, we slaughtered that beast!"),
+    (else_try),
+        (quest_slot_eq, "$random_quest_no", slot_quest_current_state, 12),
+        (str_store_string, s9, "@In the end, the beast is dead! I have achieved what I wanted."),
+    (else_try),
+        (quest_slot_eq, "$random_quest_no", slot_quest_current_state, 13),
+        (is_between, ":race", tf_orc_begin, tf_orc_end),
+        (str_store_string, s9, "@Damn it, it has escaped. But my men we able to hunt it down. At least it's dead, I guess."),
+        (assign, ":completion", 60),
+    (else_try),
+        (quest_slot_eq, "$random_quest_no", slot_quest_current_state, 13),
+        (str_store_string, s9, "@Well, the beast tried to escape wounded. But my men we able to hunt it down. At least it's dead, I guess."),
+        (assign, ":completion", 60),
+   (try_end), 
+  
+  (call_script, "script_finish_quest", "qst_hunt_beast_coop", ":completion"),
+  (troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
+
+[anyone,"lord_hunt_beast_coop_fail", [],
+"{s9}", "lord_hunt_beast_coop_fail_2",
+  [(quest_get_slot,":quest_target_troop", "qst_hunt_beast_coop", slot_quest_target_troop),
+   (str_store_troop_name, s6, ":quest_target_troop"),
+   (try_begin),
+        (quest_slot_eq, "$random_quest_no", slot_quest_current_state, -1),
+        (str_store_string, s9, "@Alas, the beast has overcome us and escaped! We have utterly failed."),
+    (else_try),
+        (str_store_string, s9, "@That beast was slippery. It has escaped."),
+    (try_end),
+  
+    (cancel_quest, "qst_hunt_beast_coop"),
+  (troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
+
+[anyone|plyr, "lord_hunt_beast_coop_fail_2",[],
+  "I will do better next time.", "close_window",[],
+  ],
+
 [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
                        (eq,":lords_quest","qst_oath_of_vengeance"),
                        (check_quest_succeeded, "qst_oath_of_vengeance")],
@@ -7502,46 +7561,58 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #### InVain Coop beast hunt mission start ####
 
 
-# [anyone,"lord_tell_mission", [
-  # (eq,"$random_quest_no","qst_hunt_beast_coop"),  
-  # (quest_get_slot, ":quest_target_troop", "qst_hunt_beast_coop", slot_quest_target_troop),
-  # (str_store_troop_name, s6, ":quest_target_troop"),
-  # (try_begin),
-    # (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-    # (str_store_string, s5, "@Thank you for offering to help, {playername}.^^\
-# I have received reports of a {s6} stalking the surroundings. My men are worried. I will find and slay that beast. Will you join me on the hunt?"),
-  # (else_try),
-    # (str_store_string, s5, "@Care to join me on a hunt, {playername}.^^\
-# I have received reports of a {s6} stalking the surroundings. My men are worried. I will find and slay that beast. Will you join me on the hunt?"),
-  # (try_end)],
-    # "{!}{s5}", "lord_mission_hunt_beast_ask",
-# []],
+[anyone,"lord_tell_mission", [
+  (eq,"$random_quest_no","qst_hunt_beast_coop"),  
+  (quest_get_slot, ":quest_target_troop", "qst_hunt_beast_coop", slot_quest_target_troop),
+  (str_store_troop_name, s6, ":quest_target_troop"),
+  (try_begin),
+    (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (str_store_string, s5, "@Thank you for offering to help, {playername}.^^\
+I have received reports of a {s6} stalking the surroundings. My men are worried. I will find and slay that beast. Will you join me on the hunt?"),
+  (else_try),
+    (str_store_string, s5, "@Care to join me on a hunt, {playername}.^^\
+I have received reports of a {s6} stalking the surroundings. My men are worried. I will find and slay that beast. Will you join me on the hunt?"),
+  (try_end)],
+    "{!}{s5}", "lord_mission_hunt_beast_ask",
+[]],
 
-# [anyone|plyr,"lord_mission_hunt_beast_ask", [],
-    # "Yes, I will join you.", "lord_mission_hunt_beast_accept",
-# []],
+[anyone|plyr,"lord_mission_hunt_beast_ask", [],
+    "Yes, I will join you.", "lord_mission_hunt_beast_accept",
+[]],
 
-# [anyone|plyr,"lord_mission_hunt_beast_ask", [],
-    # "I do not have the time for this.", "lord_mission_hunt_beast_reject",
-# []],
+[anyone|plyr,"lord_mission_hunt_beast_ask", [],
+    "I do not have the time for this.", "lord_mission_rejected",
+[]],
 
 
-# [anyone,"lord_mission_hunt_beast_accept",[],
-  # "We shall await news of your success.","close_window",
-      # [
-      # ]],
-
-# [anyone,"lord_mission_hunt_beast_reject", [],
-    # "I see. That is disappointing.", "close_window",
-# [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
-    # (try_begin),
-      # (quest_slot_eq, "$random_quest_no", slot_quest_dont_give_again_remaining_days, 0),
-      # (quest_set_slot, "$random_quest_no", slot_quest_dont_give_again_remaining_days, 7),
-    # (try_end),
- # (call_script,"script_safe_remove_party","$qst_destroy_scout_camp_party"),
- # (call_script, "script_stand_back"),
- # (assign, "$g_leave_encounter", 1),
-# ]],
+[anyone,"lord_mission_hunt_beast_accept",[],
+  "Very well. My scouts have already found the {s6} and its pack and made sure that it will not escape. Now it is on us to bring it to its end.","close_window",
+    [
+    (quest_get_slot, ":quest_target_troop", "qst_hunt_beast_coop", slot_quest_target_troop),
+    (quest_get_slot, ":ads_troop", "qst_hunt_beast_coop", slot_quest_object_troop),
+    (quest_get_slot, ":ads_amount", "qst_hunt_beast_coop", slot_quest_target_amount),
+    (str_store_troop_name, s6, ":quest_target_troop"),
+    (str_store_troop_name_link, s9, "$g_talk_troop"),
+    (setup_quest_text,"qst_hunt_beast_coop"),
+    (str_store_string, s2, "@{s9} asked you to hunt down a {s6} in the vicinity of {s7}. ^^It will be easier if you have a skilled tracker and a small party. When you approach it, you will also need to bring only few men with you, or it will surely try to flee."),
+    (call_script, "script_start_quest", "qst_hunt_beast_coop", "$g_talk_troop"),
+    (set_spawn_radius, 1),
+    (spawn_around_party, "p_main_party", pt_none),
+    (assign, ":quest_target_party", reg0),
+    (quest_set_slot, "qst_hunt_beast_coop", slot_quest_target_party, ":quest_target_party"), #makes it easier for the menu
+    (party_force_add_members, ":quest_target_party", ":quest_target_troop", 1),
+    (party_force_add_members, ":quest_target_party", ":ads_troop", ":ads_amount"),
+    (party_set_flags, ":quest_target_party", pf_hide_defenders|pf_quest_party, 1),
+    (party_set_faction, ":quest_target_party", fac_no_faction), #make sure it's not attacked by anyone
+    (party_set_name, ":quest_target_party", s6),
+    (party_set_icon, ":quest_target_party", "icon_animal"),
+    (party_set_ai_object, ":quest_target_party", p_main_party),
+    (party_set_ai_behavior, ":quest_target_party", ai_bhvr_attack_party),
+    (call_script, "script_stand_back"),
+    (assign, "$g_leave_encounter", 1),
+    (assign, "$g_leave_town", 1),
+    (rest_for_hours, 1, 10),
+      ]],
 
 
 #### Kham Destroy Scout Camp Quest End #######

@@ -1156,8 +1156,9 @@ slot_quest_giver_center             = 12
 slot_quest_target_dna               = 13
 slot_quest_target_item              = 14
 slot_quest_object_faction           = 15
+slot_quest_score                    = 16
 
-slot_quest_convince_value           = 19
+slot_quest_convince_value           = 19 #unused
 slot_quest_importance               = 20
 slot_quest_xp_reward                = 21
 slot_quest_gold_reward              = 22
