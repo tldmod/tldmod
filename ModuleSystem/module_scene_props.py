@@ -3070,7 +3070,7 @@ scene_props = [
 ("gothic_chair_nocol",0,"gothic_chair",  "0", []), #swy--disabled collision so Denethor can sit correctly on Minas Tirith's castle without looking funny.
 ("smaug_skeleton",    0,"smaug_skeleton","0", []), #swy--added unused but otherwise pretty cool (both technically and artistically) Smaug skeleton, for the Lone Mountain I guess.
 
-("moria_stairs_c",0,"moria_stairs_c","0", []),
+("moria_stairs_c",0,"moria_stairs_c","bo_moria_stairs_c", []),
 #("dorwinion_sack",sokf_type_container,"dorwinion_sack","bo_dorwinion_sack", []), # Kham - for Spears quest 
 ("pointer_arrow", 0, "pointer_arrow", "0", []),
 

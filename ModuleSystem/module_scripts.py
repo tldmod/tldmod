@@ -2291,7 +2291,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 4410),  #Rafa: Savegame version; InVain: Changed to _roughly_ show the rev number, helps with savegame inspection
+    (assign,"$savegame_version", 4443),  #Rafa: Savegame version; InVain: Changed to _roughly_ show the rev number, helps with savegame inspection
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -8135,6 +8135,8 @@ scripts = [
                 (call_script, "script_cf_get_nearest_bandit_party"),
                 (ge, reg2, 0), # reg2 holds the distance to the bandit party
 
+                (gt, reg0, 0), #just to be sure
+                (neg|troop_is_hero, reg0),
                 (assign, ":quest_target_troop", reg0),
                 (assign, ":quest_target_party_template", reg1),
 
@@ -8877,15 +8879,16 @@ scripts = [
 					(assign, ":max_surgery_level", ":cur_surgery_skill"),
 					(assign, ":best_surgeon", ":stack_troop"),
 				(try_end),
-            	(store_character_level, ":cur_level", "trp_player"),
-				(assign, ":required_skill", 5),
-				(val_div, ":cur_level", 10),
-				(val_add, ":required_skill", ":cur_level"),
-				(ge, ":max_surgery_level", ":required_skill"), #Skip if party skill level is less than the required value
+            	# (store_character_level, ":cur_level", "trp_player"), 
+				# (assign, ":required_skill", 5),
+				# (val_div, ":cur_level", 10),
+				# (val_add, ":required_skill", ":cur_level"),
+				# (ge, ":max_surgery_level", ":required_skill"), #Skip if party skill level is less than the required value
+				(ge, ":max_surgery_level", 5), #InVain: Disabled level scaling
 				(assign, ":quest_object_troop", ":best_surgeon"),
 				(assign, ":quest_importance", 4),
 				(assign, ":quest_xp_reward", 100),
-				(assign, ":quest_gold_reward", 200),
+				(store_mul, ":quest_gold_reward", ":max_surgery_level", 50),
 				(assign, ":quest_dont_give_again_period", 15),
 				(assign, ":result", ":quest_no"),
 			(try_end),
@@ -18754,6 +18757,9 @@ scripts = [
                 (store_num_parties_of_template, ":num_parties", "pt_looters_new"),
                 (lt,":num_parties",20),
                 (spawn_around_party,":spawn_point","pt_looters_new"),
+                (party_set_slot, reg0, slot_party_type, spt_bandit), # Added by foxyman, TLD
+                (assign, ":spawned_party_id", reg0),
+                (party_set_flags, ":spawned_party_id", pf_quest_party, 0),
            (else_try),
                 (this_or_next|eq, ":fac", fac_gundabad),
                 (this_or_next|eq, ":fac", fac_guldur),
@@ -18762,10 +18768,10 @@ scripts = [
                 (store_num_parties_of_template, ":num_parties", "pt_tribal_orcs"),
                 (lt,":num_parties",20),
                 (spawn_around_party,":spawn_point","pt_tribal_orcs"),
+                (party_set_slot, reg0, slot_party_type, spt_bandit), # Added by foxyman, TLD
+                (assign, ":spawned_party_id", reg0),
+                (party_set_flags, ":spawned_party_id", pf_quest_party, 0),
            (try_end),
-           (party_set_slot, reg0, slot_party_type, spt_bandit), # Added by foxyman, TLD
-           (assign, ":spawned_party_id", reg0),
-           (party_set_flags, ":spawned_party_id", pf_quest_party, 0),
        (try_end),
      (try_end),
      
@@ -26986,6 +26992,60 @@ command_cursor_scripts = [
 		(assign, "$player_deploy_troops", 1),
 		(assign, "$tld_campaign_diffulty", 2),
 		(dialog_box, "@In the latest hotfix, some global variables had to be reset to their default values, for savegame compativility reasons. Please check your campaign difficulty and horse archery settings, if you have changed them before, and change it back to the value you want."),
+    (try_end),
+
+    (try_begin), #fix towns
+        (lt, "$savegame_version", 4443),
+        (party_set_slot, "p_main_party", slot_party_type, 0),
+        (try_for_parties, ":cur_party"),
+            (is_between, ":cur_party", centers_begin, centers_end),
+            (party_set_slot, ":cur_party", slot_party_type, spt_town),
+        (else_try),
+            (party_is_active, ":cur_party"),
+            (party_get_num_companion_stacks, ":num_stacks", ":cur_party"),
+            (gt, ":num_stacks", 0),
+            (party_stack_get_troop_id, ":leader_troop", ":cur_party", 0),
+            (eq, ":leader_troop", "trp_player"),
+            (neq, ":cur_party", "p_main_party"),
+            (call_script, "script_safe_remove_party", ":cur_party"),
+        (try_end),
+        (try_for_parties, ":cur_party"),
+            (party_is_active, ":cur_party"),
+            (party_slot_eq, ":cur_party", slot_party_type, spt_bandit),
+            (try_begin),
+                (party_slot_eq, ":cur_party", slot_party_victory_value, ws_scout_vp),
+                (party_set_slot, ":cur_party", slot_party_type, spt_scout),
+            (else_try),
+                (party_slot_eq, ":cur_party", slot_party_victory_value, ws_raider_vp),
+                (party_set_slot, ":cur_party", slot_party_type, spt_raider),
+            (else_try),
+                (party_slot_eq, ":cur_party", slot_party_victory_value, ws_patrol_vp),
+                (party_set_slot, ":cur_party", slot_party_type, spt_patrol),
+            (else_try),
+                (party_slot_eq, ":cur_party", slot_party_victory_value, ws_caravan_vp),
+                (party_set_slot, ":cur_party", slot_party_type, spt_kingdom_caravan),
+            (else_try),
+                (party_slot_eq, ":cur_party", slot_party_victory_value, ws_alone_vp),
+                (party_set_slot, ":cur_party", slot_party_type, spt_kingdom_hero_alone),
+            (else_try),
+                (party_slot_eq, ":cur_party", slot_party_victory_value, ws_host_vp),
+                (party_set_slot, ":cur_party", slot_party_type, spt_kingdom_hero_party),
+            (else_try),
+                (party_slot_eq, ":cur_party", slot_party_victory_value, ws_p_train_vp),
+                (party_set_slot, ":cur_party", slot_party_type, spt_prisoner_train),
+            (else_try),
+                (party_slot_eq, ":cur_party", slot_party_victory_value, ws_guard_vp),
+                (party_set_slot, ":cur_party", slot_party_type, spt_guardian),
+            (try_end),
+        (try_end),
+        
+        (try_begin),
+            (call_script, "script_cf_get_nearest_bandit_party"),
+            (gt, reg0, 0), #just to be sure
+            (neg|troop_is_hero, reg0),
+            (quest_set_slot, "qst_kill_quest_bandit", slot_quest_target_troop, reg0),
+        (try_end),
+        (assign, "$savegame_version", 4443),
     (try_end),
 				
     (call_script, "script_update_all_notes"),

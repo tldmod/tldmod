@@ -12547,6 +12547,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (assign, "$random_merchant_quest_no", reg0),
      #(assign,"$merchant_offered_quest","$random_merchant_quest_no"),
      (troop_set_slot, "$g_talk_troop", slot_troop_merchant_offered_quest, "$random_merchant_quest_no"), #InVain
+     (gt, "$random_merchant_quest_no", 0),
      (quest_set_slot, "$random_merchant_quest_no", slot_quest_dont_give_again_remaining_days, 3), #InVain
      ]],
 

@@ -4395,6 +4395,7 @@ simple_triggers = [
       (neg|check_quest_concluded, "qst_kill_quest_bandit"),
       (quest_get_slot, ":target_template", "qst_kill_quest_bandit", slot_quest_target_party_template),
       (quest_get_slot, ":target_troop", "qst_kill_quest_bandit", slot_quest_target_troop),
+      (gt, ":target_troop", 0),
 	  (quest_get_slot, ":target_amount", "qst_kill_quest_bandit", slot_quest_target_amount),
 	  (quest_get_slot, ":defeated", "qst_kill_quest_bandit", slot_quest_current_state),
 	  (quest_get_slot, ":target_center", "qst_kill_quest_bandit", slot_quest_target_center),
