@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|Espadachim Veterano de Umbar
 trp_i4_corsair_veteran_swordsman_pl|Espadachins Veteranos de Umbar
 trp_i5_corsair_master_swordsman|Mestre da Espada Corsário
 trp_i5_corsair_master_swordsman_pl|Mestres da Espada Corsários
-; trp_i6_corsair_guard|Captain's Guard of Umbar
-; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
+trp_i6_corsair_guard|Guarda do Capitão de Umbar
+trp_i6_corsair_guard_pl|Guardas do Capitão de Umbar
 trp_a5_corsair_master_assassin|Assassino Corsário
 trp_a5_corsair_master_assassin_pl|Assassinos Corsários
 trp_i4_corsair_veteran_spearman|Lanceiro Veterano de Umbar
@@ -1444,7 +1444,7 @@ trp_elder_gunda_ne|Orc Velho
 trp_elder_gunda_ne_pl|do acampamento
 trp_elder_gunda_nw|Orc Velho
 trp_elder_gunda_nw_pl|do acampamento
-; trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s|Orc Chefe do Acampamento
 trp_elder_moria_s_pl|do acampamento
 trp_elder_gunda_m|Orc Velho
 trp_elder_gunda_m_pl|do acampamento
@@ -1540,10 +1540,10 @@ trp_black_shield_guard|Guarda de Amath Dollen
 trp_black_shield_guard_pl|Guardas de Amath Dollen
 trp_dorwinion_spirit_leader|Espírito
 trp_dorwinion_spirit|Espírito Menor
-; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
-; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
-; trp_i6_dun_retainer|Dunnish Retainer
-; trp_i6_dun_retainer_pl|Dunnish Retainers
+trp_i6_greenwood_2h_axeman|Mestre do Machado de Greenwood
+trp_i6_greenwood_2h_axeman_pl|Mestre do Machado de Greenwood
+trp_i6_dun_retainer|Retentor Dunnish
+trp_i6_dun_retainer_pl|Retentores Dunnish
 trp_i6_beorning_bear_warrior|Urso Guerreiro
 trp_i6_beorning_bear_warrior_pl|Ursos Guerreiros
 trp_a5_dun_night_wolf|Lobo da Noite Terra-pardense
@@ -1640,39 +1640,39 @@ trp_future_animal_0|Lobo
 trp_future_animal_0_pl|Lobos
 trp_spider|Aranha da Floresta das Trevas
 trp_spider_pl|Aranhas da Floresta das Trevas
-; trp_spider_strong|Great Spider
-; trp_spider_strong_pl|Great Spiders
+trp_spider_strong|Aranha Grande
+trp_spider_strong_pl|Aranhas Grandes
 trp_bear|Urso
 trp_bear_pl|Ursos
-; trp_bear_strong|Great Bear
-; trp_bear_strong_pl|Great Bears
+trp_bear_strong|Urso Grande
+trp_bear_strong_pl|Ursos Grandes
 trp_wolf|Lobo
 trp_wolf_pl|Lobos
-; trp_wolf_strong|Huge Wolf
-; trp_wolf_strong_pl|Huge Wolves
+trp_wolf_strong|Lobo Enorme
+trp_wolf_strong_pl|Lobos Enormes
 trp_werewolf|Lobisomem
 trp_werewolf_pl|Lobisomens
-; trp_boar|Boar
-; trp_boar_pl|Boars
-; trp_boar_strong|Great Boar
-; trp_boar_strong_pl|Great Boars
-; trp_evil_beast|Evil Beast
-; trp_evil_beast_pl|Evil Beast
-; trp_evil_beast_strong|Huge Evil Beast
-; trp_evil_beast_strong_pl|Huge Evil Beasts
-; trp_bull|Wild Bull
-; trp_bull_pl|Wild Kine
-; trp_bull_strong|Great Bull
-; trp_bull_strong_pl|Great Kine
-; trp_stag|Stag
-; trp_stag_pl|Stags
+trp_boar|Javali
+trp_boar_pl|Javalis
+trp_boar_strong|Javali Grande
+trp_boar_strong_pl|Javalis Grandes
+trp_evil_beast|Besta Maligna
+trp_evil_beast_pl|Bestas Malignas
+trp_evil_beast_strong|Besta Maligna Enorme
+trp_evil_beast_strong_pl|Bestas Malignas Enormes
+trp_bull|Touro Selvagem
+trp_bull_pl|Touros Selvagens
+trp_bull_strong|Touro Grande
+trp_bull_strong_pl|Touros Grandes
+trp_stag|Veado
+trp_stag_pl|Veados
 trp_future_animal_4|Lobo
 trp_future_animal_4_pl|Lobos
 trp_future_animal_5|Lobo
 trp_future_animal_5_pl|Lobos
-; trp_guthlaf|Guthláf
+trp_guthlaf|Guthláf
 trp_damrod|Damrod
 trp_duilin|Duilin
 trp_derufin|Derufin
-; trp_rumil|Rúmil
-; trp_lugdush|Lugdush
+trp_rumil|Rumil
+trp_lugdush|Lugdush
