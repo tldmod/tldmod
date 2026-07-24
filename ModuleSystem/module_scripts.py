@@ -955,8 +955,10 @@ scripts = [
 	  (try_begin), #discount if you have warg rider helmet
 	  (troop_has_item_equipped, "trp_player", "itm_gundabad_helm_e"),
 	  (this_or_next|eq, ":troop_id", "trp_c4_gunda_warg_rider"),
-	  (this_or_next|eq, ":troop_id", "trp_c4_gunda_warg_rider"),
-        (eq, ":troop_id", "trp_c5_gunda_clan_rider"),
+	  (this_or_next|eq, ":troop_id", "trp_ca4_gunda_skirmisher"),
+	  (this_or_next|eq, ":troop_id", "trp_ca5_gunda_clan_skirmisher"),
+      (this_or_next|eq, ":troop_id", "trp_c5_gunda_clan_rider"),
+      (eq, ":troop_id", "trp_gunda_captain"),
 		  (val_mul, ":wage", 100),
         (val_div, ":wage", 120),
       (try_end),
@@ -1372,7 +1374,7 @@ scripts = [
 	#(assign, reg10,":rider_type"),(assign, reg12,":mount_item"),(assign, reg11,":mount_type"), (display_message, "@cazz {reg10} {reg11} (itm: {reg12})"),
     (try_begin), #orcs can ride great wargs with higher riding skill
         (eq, ":race", tf_orc),(eq,":mount_item", "itm_warg_reward"), 
-        (store_skill_level, ":riding", skl_riding, ":trp"), (gt, ":riding", 5),
+        (store_skill_level, ":riding", skl_riding, ":trp"), (ge, ":riding", 4),
         (assign, ":mount_type", ":rider_type"),
     (try_end),
     
