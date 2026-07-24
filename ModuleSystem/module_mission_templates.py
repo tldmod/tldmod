@@ -3636,7 +3636,7 @@ mission_templates = [ # not used in game
 
 # Siege Tutorial
   (6, 0 , ti_once, [
-      (eq, "$formations_tutorial", 3), (neq, "$cheat_mode", 1),(eq, "$tld_show_tutorials", 1),],
+      (eq, "$formations_tutorial", 3), (neq, "$cheat_mode", 1),(eq, "$tld_show_tutorials", 1),(eq, "$advanced_siege_ai",1),],
       [
       ] + (is_a_wb_mt==1 and [
       (tutorial_message_set_background, 1), 
@@ -3698,24 +3698,6 @@ mission_templates = [ # not used in game
         (team_set_relation, 6, 0, 1),(team_set_relation, 6, 2, 1),(team_set_relation, 6, 4, 1), # player team (seems to need manual settings)
     (try_end),    
     ]), 
-    
-    common_battle_tab_press,
-  (ti_question_answered, 0, 0, [],[
-    (store_trigger_param_1,":answer"),
-    (eq,":answer",0),
-    (assign, "$pin_player_fallen", 0),
-    (get_player_agent_no, ":player_agent"),
-    (try_begin),
-      (agent_is_defender, ":player_agent"),
-      (str_store_string, s5, "str_can_not_retreat"),
-      #(call_script, "script_simulate_retreat", 8, 15),
-    (else_try),
-      (str_store_string, s5, "str_retreat"),
-      (call_script, "script_simulate_retreat", 5, 20),
-    (try_end),
-      (call_script, "script_count_mission_casualties_from_agents"),
-      (finish_mission,0),
-    ]),
 
 #assign initial teams
    (2, 0, ti_once, [], 
@@ -4031,6 +4013,7 @@ mission_templates = [ # not used in game
     
       ] + (is_a_wb_mt==1 and [
         (call_script, "script_siege_adjust_battle_size"),
+        (assign, ":spawn_point_counter", 0),
       ] or []) + [    
 
     (set_fixed_point_multiplier, 100),
@@ -4065,33 +4048,36 @@ mission_templates = [ # not used in game
 
         ] + (is_a_wb_mt==1 and [
         
-        (assign, ":spawn_point_counter", 0),
         #don't spawn defenders if attacking player is nearby, also check for spawn point taken
         (try_begin),
             #block spawn point
             #(neg|troop_slot_eq,"trp_no_troop",":slot",-2),
-            (entry_point_get_position, pos10, ":entry_number"),
-            (agent_get_position, pos0, ":player_agent"),
-            (get_distance_between_positions, ":dist", pos0, pos10),
+            (eq, "$advanced_siege_ai",1),
             (neg|agent_is_defender,":player_agent"),
-            (agent_is_alive, ":player_agent"),            
+            (agent_is_alive, ":player_agent"),
+            (agent_get_position, pos0, ":player_agent"),
+            (entry_point_get_position, pos10, ":entry_number"),
+            (get_distance_between_positions, ":dist", pos0, pos10),
             (try_begin),
                 (troop_slot_ge,"trp_no_troop",":slot",1),
                 (lt,":dist", 1000),
                 (display_message, "@You must break the first line of defense before you can capture a reinforcement point."),
             (try_end),             
             (troop_slot_eq,"trp_no_troop",":slot",-1), #only if choke point is taken
-            (set_show_messages, 0),
-            (team_give_order, ":defteam", grc_infantry, mordr_hold), #make them hold
-            (team_give_order, ":defteam", grc_cavalry, mordr_hold),
-            (team_give_order, ":defteam", grc_archers, mordr_stand_ground), 
-            (team_set_order_position, ":defteam", grc_everyone, pos10),
+            (store_mission_timer_a,":mission_time"),
+            (gt, ":mission_time", 300),
+            (ge, "$defender_reinforcement_stage", 6),
             (lt,":dist", 1500),
-            (team_give_order, ":defteam", grc_everyone, mordr_charge), #if player is nearby, make defenders charge
+            (set_show_messages, 0),
+            (team_give_order, ":defteam", grc_infantry, mordr_charge), #if player is nearby, make defenders charge
+            (team_give_order, ":defteam", grc_cavalry, mordr_charge),
             (set_show_messages, 1),
             (try_begin),
                 (le, ":spawn_point_counter", 2),
                 (assign, ":spawn_point_blocked", 1),
+                (assign, ":reinforcements", 0),
+                # (assign, reg78, ":entry_number"),
+                # (display_message, "@spawn point {reg78} blocked!"),
                 (val_add, ":spawn_point_counter", 1), #this doesn't reset, making sure that max 2 spawn points can be blocked per time (temporary fixes a possible exploit in small scenes)
             (try_end),
             (display_message, "@Capture this area with your troops to stop defender reinforcements from here!"),
@@ -4188,45 +4174,13 @@ mission_templates = [ # not used in game
         (main_hero_fallen),
         (agent_is_defender, ":player_agent"),
         (assign, "$defender_reinforcement_stage",200),
-    (try_end),   
-
-	# ] + (is_a_wb_mt==1 and [ #piggyback attacker reinforcement team assignment. This trigger always fires 1 second after the attacker reinforcement trigger, so it should catch the spawned troops.)
-    # (try_for_range, ":entry", 47, 50), #attacker spawn entries
-		# (entry_point_get_position, pos10, ":entry"),
-		# (try_for_agents, ":agent", pos10, 1500), #15m around spawn point should be enough
-			# (agent_is_human, ":agent"),
-			# (agent_is_alive, ":agent"),
-			# (neg|agent_is_defender,":agent"),
-			# (get_player_agent_no, ":player_agent"),
-            # (neg|agent_is_defender,":player_agent"), #just in case...
-			# (neq, ":agent", ":player_agent"),
-			# (agent_get_entry_no, ":entry", 	":agent"), #12, 13, 14 spawn records, not actual entry number
-			# (store_sub, ":team", ":entry", 12), #0, 1, 2
-			# (val_mul, ":team", 2), # 0, 2, 4
-			# (val_add, ":team", 1), # 1, 3, 5
-			# (agent_set_team, ":agent", ":team"), 
-			# (agent_get_party_id, ":party_no", ":agent"),
-           
-            # (try_begin),
-                # (neq, ":party_no", "p_main_party"),
-                # (agent_get_class, ":class", ":agent"),
-                # (eq, ":class", grc_archers),
-                # (agent_get_wielded_item, ":weapon", ":agent", 0),
-                # (item_get_type, ":type", ":weapon"),
-                # (eq, ":type", itp_type_thrown),
-                # (agent_set_division, ":agent", grc_infantry),
-            # (try_end),
-            
-			# (eq, ":party_no", "p_main_party"),
-			# (agent_set_team, ":agent", 6), 
-		# (try_end),
-	# (try_end),
-     # ] or []) + [				  
+    (try_end),   		  
 
 # choke point taken? after a while, defenders rally at spawn  
     (try_begin), 
+        (eq, "$advanced_siege_ai",1),
         (store_mission_timer_a,":mission_time"),
-        #(gt, ":mission_time", 180),
+        (gt, ":mission_time", 300),
         (ge, "$defender_reinforcement_stage", 6),
         (assign,":defteam","$defender_team"), #0, 2, 4
         (assign,":entry_number", 44), # 44,45,46 --> actual entry point
@@ -4237,11 +4191,13 @@ mission_templates = [ # not used in game
             (team_give_order, ":defteam", grc_infantry, mordr_hold), 
             (team_give_order, ":defteam", grc_cavalry, mordr_hold), 
             (team_give_order, ":defteam", grc_everyone, mordr_stand_closer),
-            (team_give_order, ":defteam", grc_archers, mordr_stand_ground), 
+            #(team_give_order, ":defteam", grc_archers, mordr_stand_ground), 
             (team_set_order_position, ":defteam", grc_everyone, pos10),
             (assign, reg78, ":defteam"),
             (assign, reg77, ":entry_number"),
-            #(display_message, "@team {reg78} retreats to entry {reg77}"),
+            #debug
+            # (set_show_messages, 1),
+            # (display_message, "@{!}team {reg78} retreats to entry {reg77}"),
             (val_add,":defteam",2),
             (val_add,":entry_number",1),
        (try_end),
@@ -4280,7 +4236,31 @@ mission_templates = [ # not used in game
             (scene_prop_set_slot, ":gate_no", scene_prop_open_or_close_slot, 1),
             (prop_instance_get_starting_position, pos1, ":gate_no"),
             (position_rotate_z, pos1, 85), 
-            (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second                             
+            (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
+            
+            #find and remove gate aggravator
+            (try_begin),    
+                (scene_prop_get_slot, ":gate_aggravator", ":gate_no", slot_prop_agent_1),
+                (ge, ":gate_aggravator", 0),
+                (call_script, "script_remove_agent", ":gate_aggravator"), 
+            (else_try), #fallback in case the slot did not work
+                (assign, ":gate_aggravator_found", 0),
+                (try_for_agents, ":agent_no"), #find and remove gate aggravator agent
+                    (eq, ":gate_aggravator_found", 0),
+                    (gt, ":agent_no", 0),
+                    (agent_is_alive, ":agent_no"),  
+                    (agent_get_troop_id, ":troop_id", ":agent_no"),
+                    (eq, ":troop_id", "trp_gate_aggravator"),
+                    (agent_get_position, pos2, ":agent_no"),
+                    (set_fixed_point_multiplier, 100),
+                    (get_distance_between_positions, ":distance", pos1, pos2),
+                    (le, ":distance", 200),
+                    #(display_message, "@gate_aggravator found"),
+                    (call_script, "script_remove_agent", ":agent_no"), 
+                    (assign, ":gate_aggravator_found", 1),
+                (try_end),
+            (try_end),
+            
             #find dependent barriers, move them underground
             (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
             (try_begin), # barriers start
@@ -4508,21 +4488,6 @@ mission_templates = [ # not used in game
   ]),
 
      ] or []) + [
-     
-   ## This block calls the script to move archers to archer positions. 
-   ## In TLD, attacker archers are asked to hold ground in entry point 60, 61, and 62 if the right,left, center flanks have NOT been taken by the attackers
-
-  (5, 0, 0,[(gt, "$defender_reinforcement_stage", 0)],[(call_script, "script_siege_move_archers_to_archer_positions")]),
-
-  common_battle_check_friendly_kills,
-  common_battle_check_victory_condition,
-  common_battle_victory_display,
-  common_siege_refill_ammo,
-  common_siege_check_defeat_condition,
-  common_battle_order_panel,
-  common_battle_order_panel_tick,
-  common_inventory_not_available,
-
    												 
   ### CHOKEPOINTS ###
   
@@ -4535,21 +4500,22 @@ mission_templates = [ # not used in game
       (neg|troop_slot_eq,"trp_no_troop",":slot",-2), # -2 means that the spawn point was taken, too.
       (troop_set_slot,"trp_no_troop",":slot",0),
       #(display_message, "@DEBUG: Slot Set to 0"),
-	  (set_show_messages, 1),
     (try_end),
 
-	# (try_for_agents, ":agent"), #keep this just in case we want to revert
-		# (agent_is_alive,":agent"),
-		# (agent_is_defender,":agent"),
-			# (try_for_range, ":entry",41,44), 
-				# (entry_point_get_position, pos10, ":entry"),
-				# (agent_get_position, pos0, ":agent"),
-				# (get_distance_between_positions, ":dist", pos0, pos10),
-				# (lt,":dist", 500),
+
 	(set_fixed_point_multiplier, 100),
-	(try_for_range, ":entry",41,44), # entry loop
+	(try_for_agents, ":agent"),
+		(agent_is_alive,":agent"),
+		(agent_is_defender,":agent"),
+        (try_for_range, ":entry",41,44), 
+            (entry_point_get_position, pos10, ":entry"),
+            (agent_get_position, pos0, ":agent"),
+            (get_distance_between_positions, ":dist", pos0, pos10),
+            (lt,":dist", 500),
+	
+    # (try_for_range, ":entry",41,44), # entry loop
 		
-		(entry_point_get_position, pos90, ":entry"),
+		# (entry_point_get_position, pos90, ":entry"),
         
         #debug
 		# (position_get_x, reg76, pos90),
@@ -4558,16 +4524,16 @@ mission_templates = [ # not used in game
 		# (assign, reg10, ":entry"), #debug
 		# (display_message, "@entry {reg10}: {reg76} / {reg77} / {reg78}"),
 		
-		] + ((is_a_wb_mt==1) and [
-		(try_for_agents, ":agent", pos90, 500),
-			(agent_is_alive,":agent"),
-		] or [
-		(try_for_agents, ":agent"),
-			(agent_is_alive,":agent"),
-			(agent_get_position, pos0, ":agent"),
-			(get_distance_between_positions, ":dist", pos0, pos90),
-			(lt,":dist", 500),
-		]) + [
+		# ] + ((is_a_wb_mt==1) and [
+		# (try_for_agents, ":agent", pos90, 500),
+			# (agent_is_alive,":agent"),
+		# ] or [
+		# (try_for_agents, ":agent"),
+			# (agent_is_alive,":agent"),
+			# (agent_get_position, pos0, ":agent"),
+			# (get_distance_between_positions, ":dist", pos0, pos90),
+			# (lt,":dist", 500),
+		# ]) + [
 
 		## Step 1: Fill up defender and attacker chokepoint slots	
 
@@ -4579,28 +4545,30 @@ mission_templates = [ # not used in game
 			#(assign, reg11, ":x"), #debug
 			#(display_message, "@DEBUG: entry {reg10}: +1 defender found, total {reg11}", color_good_news),
 			(troop_set_slot,"trp_no_troop",":slot_defender",":x"),
-		(try_end),
-
+		(try_end), #entry loop
+    (try_end), #agent loop
 
 
 ## Step 2: Now, check slot counts
-		(try_begin), # slot counts start
-			(store_sub,":slot_defender",":entry",41), #0, 1, 2
-			
-			#debug
-			# (store_add, reg10, ":slot_defender", 41), #get chokepoint entry number, 41, 42, 43
-			# (troop_get_slot, reg11, "trp_no_troop",":slot_defender"), #get number of defenders
-			# (display_message, "@Entry {reg10}: {reg11} defenders"),
-				 
-		  (neg|troop_slot_ge,"trp_no_troop",":slot_defender",2), #if 0-1 defenders standing -> defenders charge
-		  (troop_slot_ge,"trp_no_troop",":slot_defender",0), #we do this only once
-		  (troop_set_slot,"trp_no_troop",":slot_defender",-1),
-		  (store_mul,":defteam",":slot_defender",2),(store_add,":atkteam",":defteam",1), #this just calls the relevant team numbers from the slot number
-		  (team_give_order, ":defteam", grc_infantry, mordr_charge),
-		  (team_give_order, ":defteam", grc_cavalry, mordr_charge),
-		  (team_give_order, ":atkteam", grc_archers, mordr_charge),
+    (try_for_range, ":entry",41,44), 
+        (eq, "$advanced_siege_ai",1),
+        (store_sub,":slot_defender",":entry",41), #0, 1, 2
+        
+        #debug
+        # (store_add, reg10, ":slot_defender", 41), #get chokepoint entry number, 41, 42, 43
+        # (troop_get_slot, reg11, "trp_no_troop",":slot_defender"), #get number of defenders
+        # (set_show_messages, 1),
+        # (display_message, "@{!}Entry {reg10}: {reg11} defenders"),
+             
+        (neg|troop_slot_ge,"trp_no_troop",":slot_defender",2), #if 0-1 defenders standing -> defenders charge
+        (troop_slot_ge,"trp_no_troop",":slot_defender",0), #we do this only once
+        (troop_set_slot,"trp_no_troop",":slot_defender",-1),
+        (store_mul,":defteam",":slot_defender",2),(store_add,":atkteam",":defteam",1), #this just calls the relevant team numbers from the slot number
+        (team_give_order, ":defteam", grc_infantry, mordr_charge),
+        (team_give_order, ":defteam", grc_cavalry, mordr_charge),
+        (team_give_order, ":atkteam", grc_archers, mordr_charge),
 
-    ] + (is_a_wb_mt==1 and [ 
+          ] + (is_a_wb_mt==1 and [ 
           #find and close retreat gates
             (scene_prop_get_num_instances,":max_gates","spr_gate_destructible_retreat"), 
             (try_begin), #gates start
@@ -4609,6 +4577,7 @@ mission_templates = [ # not used in game
                 (scene_prop_get_instance,":gate_no", "spr_gate_destructible_retreat", ":count"),
                 (prop_instance_get_variation_id_2, ":var2", ":gate_no"),
                 (eq, ":var2", ":entry"),
+                #(display_message, "@{!}Entry {reg10}: gate closes"),
                 (scene_prop_slot_eq, ":gate_no", scene_prop_open_or_close_slot, 1),
                 (scene_prop_set_slot, ":gate_no", scene_prop_open_or_close_slot, 0),
                 (prop_instance_get_starting_position, pos1, ":gate_no"),
@@ -4655,15 +4624,15 @@ mission_templates = [ # not used in game
                 (try_end), # barriers end
               (try_end), # gates loop
             (try_end), # gates end
-    ] or []) + [
-		(try_end), # slot counts end
+        ] or []) + [
+    
 	(try_end), # entry loop
    ]),
 
 
     ### TEAM DISTRIBUTION ###
 
- (10, 0, 0,[(eq, "$cheat_mode", 1)], # report attackers and defenders distribution
+ (10, 0, 0,[(eq, "$cheat_mode", 1), (eq, 0, 1)], # report attackers and defenders distribution ##disabled
    [(assign,reg0,0),(assign,reg1,0),(assign,reg2,0),(assign,reg3,0),(assign,reg4,0),(assign,reg5,0),(assign,reg6,0),
   (try_for_agents, ":agent"),
     (agent_is_alive,":agent"),
@@ -4681,12 +4650,40 @@ mission_templates = [ # not used in game
   (try_end),
 						 
   (set_show_messages, 1),
-  #(display_message, "@Attackers: {reg1}/{reg3}/{reg5}/{reg7} Defenders: {reg0}/{reg2}/{reg4}/{reg6}"),
+  #(display_message, "@{!}Attackers: {reg1}/{reg3}/{reg5}/{reg7} Defenders: {reg0}/{reg2}/{reg4}/{reg6}"),
   (get_player_agent_no, ":player_agent_no"),
   (agent_get_team, reg7, ":player_agent_no"),
   #(display_message, "@player_team: {reg7}"),
   ]),
+
+  (5, 0, 0,[(gt, "$defender_reinforcement_stage", 0)],[(call_script, "script_siege_move_archers_to_archer_positions")]),
+
+  common_battle_check_friendly_kills,
+  common_battle_check_victory_condition,
+  common_battle_victory_display,
+  common_siege_refill_ammo,
+  common_siege_check_defeat_condition,
+  common_battle_order_panel,
+  common_battle_order_panel_tick,
+  common_inventory_not_available,
+  common_battle_tab_press,
   
+  (ti_question_answered, 0, 0, [],[
+    (store_trigger_param_1,":answer"),
+    (eq,":answer",0),
+    (assign, "$pin_player_fallen", 0),
+    (get_player_agent_no, ":player_agent"),
+    (try_begin),
+      (agent_is_defender, ":player_agent"),
+      (str_store_string, s5, "str_can_not_retreat"),
+      #(call_script, "script_simulate_retreat", 8, 15),
+    (else_try),
+      (str_store_string, s5, "str_retreat"),
+      (call_script, "script_simulate_retreat", 5, 20),
+    (try_end),
+      (call_script, "script_count_mission_casualties_from_agents"),
+      (finish_mission,0),
+    ]), 
 ]),
 
 ( "castle_attack_walls_ladder_native",mtf_battle_mode,-1, #InVain: Reduced version of the siege MT, for bugfixing or improving performance
