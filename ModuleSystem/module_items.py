@@ -350,8 +350,8 @@ items =[
 ["warg_reward","Huge_Warg",[("wargArmored_huge",0)],itp_type_horse,0,3000,hit_points(120)|body_armor(32)|difficulty(3)|horse_speed(35)|horse_maneuver(55)|horse_charge(35)|horse_scale(100)|abundance(100),imodbits_horse_basic,[]],
 
 #for future use
-["warg_wild_1","Wild Warg",[("warg_1B",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(36)|horse_maneuver(64)|horse_charge(25)|horse_scale(95)|abundance(90),imodbits_horse_basic|imodbits_warg,[]],
-["warg_wild_2","Wild Warg",[("warg_1C",0)],itp_type_horse|itp_shop,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(36)|horse_maneuver(64)|horse_charge(25)|horse_scale(95)|abundance(90),imodbits_horse_basic|imodbits_warg,[]],
+["warg_wild_1","Wild Warg",[("warg_1B",0)],itp_type_horse,0,600,hit_points(80)|body_armor(10)|difficulty(1)|horse_speed(36)|horse_maneuver(69)|horse_charge(20)|horse_scale(80)|abundance(90),imodbits_horse_basic|imodbits_warg,[]],
+["warg_wild_2","Huge Wild Warg",[("warg_1C",0)],itp_type_horse,0,600,hit_points(80)|body_armor(10)|difficulty(3)|horse_speed(36)|horse_maneuver(69)|horse_charge(20)|horse_scale(90)|abundance(90),imodbits_horse_basic|imodbits_warg,[]],
 #first non WARG item: itm_warg_reward+1
 
 #Troll weapons
@@ -1435,7 +1435,7 @@ items =[
 ["wolf","Wolf",    [("wolf",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(30)|horse_maneuver(75)|horse_charge(5)|horse_scale(85)|difficulty(10),imodbits_none,[]],
 ["werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(60)|horse_speed(40)|horse_maneuver(70)|horse_charge(35)|horse_scale(100)|difficulty(10),imodbits_none,[]],
 
-["thrush_reward","Thrush",[("prop_reward_thrush",0)],itp_unique,0,1000,weight(1)|abundance(0)|0,imodbits_none],
+["thrush_reward","Thrush",[("prop_reward_thrush",0)],itp_unique|itp_type_goods,0,1000,weight(1)|abundance(0)|0,imodbits_none],
 ["gauntlets_reward","Iron_Fists",[("narf_finger_gauntlets_L",0),("CWE_gauntlets_arabs_a_dwarf_L",imodbit_lordly),],itp_type_hand_armor|itp_unique,0,2000,weight(3)|abundance(0)|body_armor(5)|difficulty(15),imodbits_none,[]],
 
 #last item for MnB

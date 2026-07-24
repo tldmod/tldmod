@@ -155,6 +155,7 @@ simple_triggers = [
             (party_get_slot, ":mayor", ":center_no", slot_town_elder),
             (gt, ":mayor", 0),
             (troop_get_slot, ":offered_quest", ":mayor", slot_troop_merchant_offered_quest),
+            (gt, ":offered_quest", 0),
             (neg|quest_slot_ge, ":offered_quest", slot_quest_dont_give_again_remaining_days, 2),
             (troop_set_slot, ":mayor", slot_troop_merchant_offered_quest, 0),
         (try_end),
@@ -1341,7 +1342,7 @@ simple_triggers = [
         (str_store_item_name, s9, ":cur_item"),
         (try_begin),
             (eq, ":cur_item", "itm_athelas_reward"),
-            (display_message, "@Athelas used up."),
+            (display_message, "@{s9} used up."),
         (else_try),
             (display_message, "@The effects of the {s9} have dissipated."),
         (try_end),
@@ -2758,6 +2759,7 @@ simple_triggers = [
           # InVain: Lords have a chance to join a friendly faction
           (try_for_range, ":defeated_lord", heroes_begin, heroes_end),
             (troop_slot_eq, ":defeated_lord", slot_troop_occupation, slto_kingdom_hero),
+            (neg|troop_slot_eq, ":defeated_lord", slot_troop_wound_mask, wound_death), #not already dead
             (store_troop_faction, ":defeated_lord_faction", ":defeated_lord"),
             (eq, ":defeated_lord_faction", ":cur_kingdom"),
             (troop_set_slot, ":defeated_lord", slot_troop_occupation, 0),

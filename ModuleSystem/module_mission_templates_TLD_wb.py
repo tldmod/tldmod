@@ -1542,8 +1542,8 @@ hp_shield_init = (ti_on_agent_spawn, 0, 0, [
 		
 	(try_begin), #player and companions
         (this_or_next|eq, ":troop_id", "trp_player"),
-        (this_or_next|is_between, ":troop_id", "trp_npc1", "trp_knight_6_2"),
-        (is_between, ":troop_id", "trp_npc18", "trp_werewolf"),
+        (this_or_next|is_between, ":troop_id", companions_begin, companions_end),
+        (is_between, ":troop_id", new_companions_begin, new_companions_end),
         (store_skill_level, ":ironflesh_base",  skl_ironflesh, ":troop_id",),
         (store_mul, ":ironflesh_sq", ":ironflesh_base", ":ironflesh_base"),
         (val_mul, ":ironflesh_base", 10),

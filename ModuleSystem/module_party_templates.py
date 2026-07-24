@@ -327,7 +327,7 @@ party_templates = [
 ("dale_reinf_c"    ,"{!}",0,0,fac_commoners,0,[(trp_c4_rhovanion_rider,3,6),(trp_i4_dale_billman,1,2),(trp_i4_dale_sergeant,1,2),]), #InVain: More Cav
 #Erebor (7-14, 5-10, 4-8)
 ("dwarf_reinf_a"   ,"{!}",0,0,fac_commoners,0,[(trp_i2_dwarf_warrior,2,3),(trp_i2_iron_hills_miner,1,2),(trp_i1_dwarf_apprentice,4,8),]), #InVain: no archers
-("dwarf_reinf_b"   ,"{!}",0,0,fac_commoners,0,[(trp_a3_dwarf_scout,2,4),(trp_a4_dwarf_bowman,1,2),(trp_i3_dwarf_hardened_warrior,2,4),(trp_i2_iron_hills_miner,0,1),]), #InVain: More archers, less infantry
+("dwarf_reinf_b"   ,"{!}",0,0,fac_commoners,0,[(trp_a3_dwarf_scout,1,3),(trp_a4_dwarf_bowman,1,2),(trp_i3_dwarf_hardened_warrior,2,4),(trp_i2_iron_hills_miner,0,2),]), #InVain: More archers, less infantry
 ("dwarf_reinf_c"   ,"{!}",0,0,fac_commoners,0,[(trp_i4_dwarf_axeman,2,4),(trp_i4_dwarf_spearman,2,4),(trp_i4_iron_hills_infantry,1,2),]), #InVain: No archers, more Erebor infantry
 #Dunlenders (7-14, 5-10, 4-8)
 ("dunland_reinf_a" ,"{!}",0,0,fac_commoners,0,[(trp_i2_dun_warrior,3,6),(trp_i1_dun_wildman,4,8),]),

@@ -4396,7 +4396,7 @@ game_menus = [
         [
         # Athelas will be active until:
         (store_current_hours, ":now_hours"),
-        (store_add, ":then_hours", ":now_hours", 6),
+        (store_add, ":then_hours", ":now_hours", 12),
         (item_set_slot, "itm_athelas_reward", slot_item_is_active, 1),
         (item_set_slot, "itm_athelas_reward", slot_item_deactivation_hour, ":then_hours"),
 

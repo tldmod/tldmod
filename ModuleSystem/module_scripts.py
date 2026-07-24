@@ -19536,7 +19536,7 @@ scripts = [
 	    (troop_set_slot, "trp_npc21", slot_troop_rank_request, 5),  #TLD
         
 	    #Others (placeholder)
-	    (try_for_range, ":placeholder_troops", "trp_npc22", "trp_werewolf"),
+	    (try_for_range, ":placeholder_troops", "trp_npc22", new_companions_end),
 		   	(troop_set_slot, ":placeholder_troops", slot_troop_morality_type, -1),
 		    (troop_set_slot, ":placeholder_troops", slot_troop_morality_value, 0), 
 		    (troop_set_slot, ":placeholder_troops", slot_troop_2ary_morality_type, -1), 
@@ -32134,6 +32134,7 @@ if is_a_wb_script==1:
 		(party_slot_eq, ":nearest_bandit_party", slot_party_type, spt_bandit),
 		(party_get_template_id, ":party_template", ":nearest_bandit_party"),
 		(neq, ":party_template", "pt_deserters"), #not deserter troops
+        (gt, ":party_template", pt_none), #not spawned helper parties
 		(call_script, "script_get_tld_distance", "p_main_party", ":nearest_bandit_party"),
 		(assign, ":dist", reg0),
 		(le, ":dist", 75),
