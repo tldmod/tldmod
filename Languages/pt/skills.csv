@@ -1,48 +1,48 @@
-skl_trade|Pechincheiro
-; skl_trade_desc|Makes smiths and supply masters more cooperative and offer better equipment. (Party skill)
+skl_trade|Negociação
+skl_trade_desc|Faz que ferreiros e mestres de suprimentos sejam mais cooperativos e ofereçam melhor equipamento (Habilidade de Grupo)
 skl_leadership|Liderança
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5 (3 for companions), increases your party morale and coherence in battle. Makes more and stronger volunteers willing to follow you (player only). (Cumulative skill)
+skl_leadership_desc|Cada ponto aumenta em 5 o número máximo de tropas que você pode comandar (3 para companheiros), aumenta o moral e a coesão do seu grupo em batalha. Faz com que mais voluntários, e mais fortes, estejam dispostos a segui-lo (apenas para o jogador). (Habilidade cumulativa)
 skl_prisoner_management|Gestão de Prisioneiros
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. Improves chances of capturing and keeping prisoners. (Party skill)
-; skl_persuasion|Wildcraft
-; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
-; skl_engineer|-----
-; skl_engineer_desc|-----
+skl_prisoner_management_desc|Cada nível dessa habilidade aumenta o número máximo de prisioneiros em%dAumenta as chances de capturar e manter prisioneiros. (Habilidade de grupo)
+skl_persuasion|Sobrevivência na Natureza
+skl_persuasion_desc|A habilidade de sobreviver em áreas selvagens e dobrá-las à sua vontade. Essa habilidade afeta a habilidade do grupo em se esconder do inimigo, e a velocidade do grupo enquanto estiver em terrenos arborizados. (Habilidade de Grupo)
+skl_engineer|-----
+skl_engineer_desc|-----
 skl_first_aid|Primeiros Socorros
-skl_first_aid_desc|Heróis recuperam 5%% por nível de habilidade dos pontos de vida perdido em missão. ( Habilidade do partido)
+skl_first_aid_desc|Heróis regeneram 5%% de seus pontos de saúde perdidos por nível de habilidade durante uma missão. (Habilidade de Grupo)
 skl_surgery|Cirurgia
-skl_surgery_desc|Cada ponto para esta habilidade fornece 4%% de chance de que um membro do grupo mortalmente atingido será ferido em vez de morto.(Habilidade do grupo)
+skl_surgery_desc|Cada ponto nesta habilidade lhe dá 4%% de chance de que um membro do grupo motalmente ferido fique apenas ferido ao invés de morrer. (Habilidade de Grupo)
 skl_wound_treatment|Tratamento de Feridas
-skl_wound_treatment_desc|A velocidade de cura do grupo é aumentada a 20%% por nível dessa habilidade. (Habilidade do Grupo)
-; skl_inventory_management|Party Management
-; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. Reduces food consumption by 5%% and upkeep for troops in your party by 3%% per level. (Leader skill)
-skl_spotting|Avistamento
-skl_spotting_desc|A visão do grupo é aumento a 10%% a cada nível de habilidade (Habilidade do grupo)
-skl_pathfinding|Encontrando o caminho.
-skl_pathfinding_desc|velocidade do grupo no mapa é aumentado a 3 %% por nível de habilidade. (Habilidade do grupo)
+skl_wound_treatment_desc|Velocidade de regeneração do grupo é aumentada em 20%% por nível de habilidade. (Habilidade de Grupo)
+skl_inventory_management|Gestão de Grupos
+skl_inventory_management_desc|Aumenta a capacidade de inventário em +6 por nível de habilidade. Reduz o consumo de alimentos em 5.%%e a manutenção das tropas em seu grupo por 3%%por nível. (Habilidade de liderança)
+skl_spotting|Detecção
+skl_spotting_desc|O alcance da visão do grupo é aumentado em 10%% por cada nível. (Habilidade do Grupo)
+skl_pathfinding|Exploração
+skl_pathfinding_desc|A velocidade do grupo no mapa é aumentada em 3%% por cada nível. (Habilidade do Grupo)
 skl_tactics|Táticas
-; skl_tactics_desc|Improves battle advantage. Decreases battle join range for enemy parties and increases battle join range for friendly parties by 3%% per level. (Leader skill)
-skl_tracking|Rastreamento
-skl_tracking_desc|Rastros tornam-se mais informativos. (Habilidade do grupo)
+skl_tactics_desc|Aumenta a vantagem em batalha. Diminui o alcance de entrada em batalha para grupos inimigos e aumenta o alcance de entrada em batalha para grupos aliados em 3.%%por nível. (Habilidade de liderança)
+skl_tracking|Rastreio
+skl_tracking_desc|Obtem-se mais informação sobre os rastros. (Habilidade de Grupo)
 skl_trainer|Treinador
-; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Cumulative skill)
-skl_looting|Saquear
-; skl_looting_desc|Increases amount and quality of loot gained after battles. (Cumulative skill)
-skl_horse_archery|Arqueria Montada
-skl_horse_archery_desc|Reduz a penalidade de dano e precisão para arco e flecha e armas de arremesso quando montado. ( Habilidade pessoal)
-skl_riding|Cavalgar
-skl_riding_desc|permite-lhe montar a cavalo (ou outros animais) de níveis de dificuldade maiores e aumenta a sua velocidade de condução e manobra. ( Habilidade pessoal)
+skl_trainer_desc|Diariamente, cada herói com essa habilidade concede um pouco de experiência a todos os outros membros do grupo cujo nível seja menor que o seu. A experiência ganha segue a seguinte ordem: {0,4,10,16,23,30,38,46,55,65,80}. (Habilidade cumulativa)
+skl_looting|Saque
+skl_looting_desc|Aumenta a quantidade e a qualidade dos itens obtidos após as batalhas. (Habilidade cumulativa)
+skl_horse_archery|Arquearia Montada
+skl_horse_archery_desc|Reduz a penalização de dano e pontaria ao utilizar arcos e armas de arremesso sobre cavalos. (Habilidade Pessoal)
+skl_riding|Montaria
+skl_riding_desc|Permite montar em cavalos (ou outras feras) de maiores níveis de dificuldade em montaria e aumenta sua velocidade e manobra montado. (Habilidade Pessoal)
 skl_athletics|Atletismo
-skl_athletics_desc|melhora a sua velocidade de corrida. ( Habilidade pessoal)
+skl_athletics_desc|Aumenta a sua velocidade de corrida. (Habilidade Pessoal)
 skl_shield|Escudo
-; skl_shield_desc|reduces damage to shields (by 8%% per skill level), improves shield speed and coverage, reduces shield penalty when used with bows. (Personal skill)
-skl_weapon_master|Maestria em armas
-skl_weapon_master_desc|Facilita o aprendizado da proficiência de armas e aumenta os limites de proficiência . Limites vão de acordo: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (habilidade pessoal)
-skl_power_draw|Potência de alongamento de arcos
-skl_power_draw_desc|permite que personagem use arcos mais poderosos. Cada ponto a esta habilidade (até quatro pontos a mais do requisito de potência do arco) aumenta o dano de arcos a 14 %%. (Habilidade pessoal)
-skl_power_throw|Potência de armas de arremesso
-skl_power_throw_desc|Cada ponto desta habilidade aumenta o dano de armas de arremesso para 10%% (Habilidade Pessoal)
-skl_power_strike|Potência de ataque
-skl_power_strike_desc|Cada ponto desta habilidade aumenta o dano de armas brancas a 8%%. (Habilidade Pessoal)
-skl_ironflesh|Vigor
-; skl_ironflesh_desc|Each point to this skill increases hit points by +2, and lets you shrug off some damage without being wounded. (Personal skill)
+skl_shield_desc|Reduz o dano aos escudos (em 8%% por nível de habilidade), melhora a velocidade ao se defender e sua cobertura e reduz a penalidade de escudo quando usado com arcos. (Habilidade Pessoal)
+skl_weapon_master|Maestria em Armas
+skl_weapon_master_desc|Facilita o aprendizado de armas e aumenta o limite de competência. Os limites são: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Habilidade Pessoal)
+skl_power_draw|Potência de Tensionamento
+skl_power_draw_desc|Permite que o personagem use arcos mais poderosos. Cada ponto desta habilidade (até quatro pontos acima dos requisitos do arco) aumenta o dano feito pelos arcos em 14%%. (Habilidade Pessoal)
+skl_power_throw|Potência de Arremesso
+skl_power_throw_desc|Cada ponto aumenta o dano de arremesso em 10%%. (Habilidade Pessoal)
+skl_power_strike|Potência de Golpe
+skl_power_strike_desc|Cada ponto nesta habilidade aumenta o dano corpo a corpo em 8%%. (Habilidade Pessoal)
+skl_ironflesh|Pele de Ferro
+skl_ironflesh_desc|Cada ponto nesta habilidade aumenta os pontos de vida em +2 e permite que você suporte algum dano sem ser ferido. (Habilidade Pessoal)
