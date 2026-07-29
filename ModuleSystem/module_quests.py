@@ -297,7 +297,7 @@ quests = [
 ),
 
 # hunt beast with lord
-("hunt_beast_coop", "{!}hunt_beast_coop", qf_random_quest,
+("hunt_beast_coop", "Hunt a {s6} with {s9}", qf_random_quest,
   "{!}Placeholder"
 ),
 
@@ -345,7 +345,7 @@ quests = [
   "{!}Placeholder"
 ),
 
-("hunt_beast_mayor", "{!}hunt_beast_mayor", qf_random_quest,
+("hunt_beast_mayor", "Hunt down a beast", qf_random_quest,
   "{!}Placeholder"
 ),
 
@@ -438,6 +438,10 @@ quests = [
 ),
 
 ( "oath_personal", "Oath of Vengeance", qf_random_quest,
+  "{!}Placeholder"
+  ),
+
+( "morannon_quest", "The Black Gate Opens", qf_random_quest,
   "{!}Placeholder"
   ),
 

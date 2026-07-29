@@ -3617,8 +3617,8 @@ attr_orc_tier_3,wp_orc_tier_3,knows_athletics_4|knows_power_strike_3,orc_face1,o
 
 #animals
 #keep first animal a stub for now (Jan 2026), because it's the trp_end overwrite, which can cause savegame bugs
-["future_animal_0","Wolf","Wolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
+["future_animal_0","Stag","Stags", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
+[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
 str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
 ["spider","Mirkwood Spider","Mirkwood Spiders", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
@@ -3673,12 +3673,12 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 [itm_kine_strong, itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
 str_30| agi_7| int_4| cha_4|level(25),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
-["stag","Stag","Stags", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
+["wild_warg","Wild Warg","Wild Wargs", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
+[itm_warg_wild_1, itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
 str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
-["future_animal_4","Wolf","Wolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
-[itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
+["wild_warg_strong","Huge Wild Warg","Huge Wild Wargs", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
+[itm_warg_wild_2, itm_warg_ghost_lance,itm_empty_legs,itm_empty_hands,itm_empty_head],
 str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_4,orc_face7,orc_face2],
 
 ["future_animal_5","Wolf","Wolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,

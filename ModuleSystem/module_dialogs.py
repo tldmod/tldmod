@@ -7594,7 +7594,7 @@ I have received reports of a {s6} stalking the surroundings. My men are worried.
     (str_store_troop_name, s6, ":quest_target_troop"),
     (str_store_troop_name_link, s9, "$g_talk_troop"),
     (setup_quest_text,"qst_hunt_beast_coop"),
-    (str_store_string, s2, "@{s9} asked you to hunt down a {s6} in the vicinity of {s7}. ^^It will be easier if you have a skilled tracker and a small party. When you approach it, you will also need to bring only few men with you, or it will surely try to flee."),
+    (str_store_string, s2, "@{s9} asked you to join the hunt for a {s6}."),
     (call_script, "script_start_quest", "qst_hunt_beast_coop", "$g_talk_troop"),
     (set_spawn_radius, 1),
     (spawn_around_party, "p_main_party", pt_none),
@@ -12900,7 +12900,7 @@ There are {s6} moving about the area, thinking that they are in charge. No one i
   (try_begin),
     (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
     (str_store_string, s5, "@Thank you for offering to help, {playername}.^^\
-A {s6} has been ranging the lands about {s7}, bringing fear wherever it goes. Few now dare to leave the safety of our walls. Hunt down the beast and slay it."),
+A {s6} has been ranging the lands about {s7}, bringing fear wherever it goes. Few now dare to leave the safety of our walls."),
   (else_try),
     (str_store_string, s5, "@You have come at a good time, {playername}.^^\
 A {s6} roams the lands about {s7}. It has slain our hunters, scattered our servants, and grown bold on its freedom. Such a creature cannot be suffered to wander unchecked."),
@@ -12911,12 +12911,12 @@ A {s6} roams the lands about {s7}. It has slain our hunters, scattered our serva
   (eq,"$random_merchant_quest_no","qst_hunt_beast_mayor"),
   (quest_get_slot, ":quest_target_troop", "qst_hunt_beast_mayor", slot_quest_target_troop),
   (quest_get_slot, reg22, "qst_hunt_beast_mayor", slot_quest_target_amount),
-  (str_store_troop_name_plural, s6, ":quest_target_troop"),
+  (str_store_troop_name, s6, ":quest_target_troop"),
   (try_begin),
     (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-    (str_store_string, s5, "@Be mindful that it so far has escaped all our hunters. Be warned: it has thus far escaped every hunter sent against it. A keen tracker and a handful of companions will serve you better than a great company. And when at last you draw near, take only a few men with you or it will surely try to flee."),
+    (str_store_string, s5, "@Hunt down the {s6} and slay it. Be warned: it has thus far escaped every hunter sent against it. A keen tracker and a handful of companions will serve you better than a great company. And when at last you draw near, take only a few men with you or it will surely try to flee."),
   (else_try),
-    (str_store_string, s5, "@Track it down and kill it. It is a cunning beast and has slipped every snare laid for it thus far. Take a skilled tracker and a few reliable warriors. A large host will only drive it away before the trap can be sprung."),
+    (str_store_string, s5, "@Track down the {s6} and kill it. It is a cunning beast and has slipped every snare laid for it thus far. Take a skilled tracker and a few reliable warriors. A large host will only drive it away before the trap can be sprung."),
   (try_end),],
  "{!}{s5}", "mayor_mission_told_hunt_beast",[]],
 

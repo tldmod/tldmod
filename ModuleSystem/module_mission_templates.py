@@ -6768,7 +6768,7 @@ custom_tld_spawn_troop,
  
       ] + (is_a_wb_mt==1 and [
 
-	# Make the teams neutral...but wait half a second so everyone draws their weapons first
+	#0 Make the teams neutral...but wait half a second so everyone draws their weapons first
 	(0.5, 0, ti_once, [], [
     
     (team_set_relation, 0, 1, 0),
@@ -6784,6 +6784,7 @@ custom_tld_spawn_troop,
     (set_party_battle_mode),
     ]),
 
+    #1
     (ti_on_agent_spawn, 0, 0, [],
     [
     (store_trigger_param_1, ":agent"),
@@ -6805,9 +6806,10 @@ custom_tld_spawn_troop,
     # (spawn_scene_prop, spr_banner_stand_a),
     ]),
 
-    #catch and store beast, move it to a random location at map border
+    #2 catch and store beast, move it to a random location at map border
 	(0.5, 0, ti_once, 
-	[], 
+	[
+    ], 
 	[(get_player_agent_no, ":player_agent"),
     (set_fixed_point_multiplier, 100),
     (call_script, "script_find_exit_position_at_pos4", ":player_agent"),
@@ -6822,6 +6824,7 @@ custom_tld_spawn_troop,
         (agent_get_troop_id, ":troop_id", ":agent"),
         (neq, ":troop_id", "trp_player"),
         (agent_get_team, ":team", ":agent"),
+        (str_store_agent_name, s5, ":agent"),
         (try_begin),
             (eq, ":team", 0),
             (position_move_x, pos10, 100),
@@ -6833,7 +6836,6 @@ custom_tld_spawn_troop,
             (try_end),
         (else_try),
             (eq, ":team", 1),
-            (str_store_agent_name, s5, ":agent"),
             #(display_message, "@{s5} found in team 1."),
             (agent_set_speed_limit, ":agent", 15),
             (agent_set_position, ":agent", pos4),
@@ -6851,7 +6853,7 @@ custom_tld_spawn_troop,
     (try_end),
     ]),
     
-    #make the beast roam around
+    #3 make the beast roam around
 	(1, 0, 20, 
 	[(quest_slot_eq, "$random_quest_no", slot_quest_current_state, 0), 
     (store_random_in_range, ":rand", 0, 10),
@@ -6875,7 +6877,7 @@ custom_tld_spawn_troop,
     (try_end),
     ]),
 
-    #react to ranged attacks
+    #4 react to ranged attacks
     (ti_on_agent_hit, 0.4, 0, [
         (store_trigger_param, ":dmg", 3), (gt, ":dmg", 3),
         (quest_slot_eq, "$random_quest_no", slot_quest_current_state, 0), 
@@ -6906,7 +6908,7 @@ custom_tld_spawn_troop,
         (try_end),
     ]),
 
-    #track encounters and trigger battle
+    #5 track encounters and trigger battle
 	(1, 0, 0, 
 	[
 	(store_mission_timer_a,reg1),
@@ -6974,7 +6976,7 @@ custom_tld_spawn_troop,
     (try_end),
     ]),
 
-    #chance for beast to flee when wounded, minor beasts follow a few seconds later
+    #6 chance for beast to flee when wounded, minor beasts follow a few seconds later
 	(ti_on_agent_hit, 3, 0, 
 	[(quest_slot_eq, "$random_quest_no", slot_quest_current_state, 1),
     (store_trigger_param_1, ":victim"),
@@ -7017,7 +7019,7 @@ custom_tld_spawn_troop,
     (team_give_order, 1, mordr_hold),
 	]),
 
-    #process fleeing
+    #7 process fleeing
 	(2, 0, 0, 
 	[
     #debug
@@ -7065,7 +7067,7 @@ custom_tld_spawn_troop,
     (try_end),
 	]),
 
-    #beast escapes 
+    #8 beast escapes 
 	(5, 0, ti_once, 
 	[(store_mission_timer_a,":time"),
     (ge,":time",30),
@@ -7089,7 +7091,7 @@ custom_tld_spawn_troop,
     (jump_to_menu, "mnu_hunt_beast_debrief"),
 	]),
 
-    #check victory
+    #9 check victory
 	(2, 4, ti_once, 
 	[
     (store_mission_timer_a,reg1),
@@ -7107,7 +7109,7 @@ custom_tld_spawn_troop,
     (quest_set_slot, "$random_quest_no", slot_quest_current_state, 12),
 	]),
 
-    #check defeat
+    #10 check defeat
 	(2, 10, ti_once, 
 	[(main_hero_fallen),
 	],
@@ -7140,7 +7142,8 @@ custom_tld_spawn_troop,
             (call_script, "script_count_mission_casualties_from_agents_custom"),
 		(try_end),
 	]),
-    
+  
+  #11
   (ti_question_answered, 0, 0, [],[
       (store_trigger_param_1,":answer"),
       (eq,":answer",0),
@@ -7149,13 +7152,14 @@ custom_tld_spawn_troop,
       (jump_to_menu, "mnu_hunt_beast_debrief"),
       ]),
 
+  #12
   (ti_on_leave_area, 0, 0,[], [
       (finish_mission,0),
       (call_script, "script_count_mission_casualties_from_agents_custom"),
       (jump_to_menu, "mnu_hunt_beast_debrief"),
     ]),
 
-  #store player score and ally score in unused quest slots
+  #13 store player score and ally score in unused quest slots
   (ti_on_agent_hit, 0, 0, [
     ],[
       (store_trigger_param_1, ":victim"),
@@ -7195,6 +7199,7 @@ tld_calculate_wounded,
 reset_fog,
 common_battle_inventory,
 common_battle_on_player_down,
+tld_place_inventory_backup,
 
        ] or []) + [
 
