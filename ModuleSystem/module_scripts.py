@@ -8136,10 +8136,8 @@ scripts = [
 
                 (call_script, "script_cf_get_nearest_bandit_party"),
                 (ge, reg2, 0), # reg2 holds the distance to the bandit party
-
                 (gt, reg0, 0), #just to be sure
-                (neg|troop_is_hero, reg0),
-                (assign, ":quest_target_troop", reg0),
+                (assign, ":quest_target_troop", reg3),
                 (assign, ":quest_target_party_template", reg1),
 
                 (store_random_in_range, ":quest_target_amount", 15, 26),
@@ -8616,10 +8614,11 @@ scripts = [
           
         (else_try),
           (eq, ":quest_no", "qst_deal_with_night_bandits"),
-          (neg|faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good), #TLD: evil factions only
+          #(neg|faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good), #TLD: evil factions only
           (is_between, ":player_level", 0, 20),
           (is_between, ":giver_center_no", centers_begin, centers_end),
-          (faction_get_slot, ":bandit_troop", ":giver_faction_no", slot_faction_tier_1_troop),
+          (faction_get_slot, ":bandit_troop", ":giver_faction_no", slot_faction_deserter_troop),
+          (gt, ":bandit_troop", 1),
           (party_set_slot, ":giver_center_no", slot_center_has_bandits, ":bandit_troop"),
           #(party_slot_ge, ":giver_center_no", slot_center_has_bandits, 1),
           (assign, ":quest_target_center", ":giver_center_no"),
@@ -18779,66 +18778,45 @@ scripts = [
      
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_deserters"),
-       (lt,":num_parties",10), #was 15
+       (lt,":num_parties",15), #was 15
        (set_spawn_radius, 4),
        (try_for_range, ":troop_no", heroes_begin, heroes_end),
-         (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
-         (store_random_in_range, ":random_no", 0, 100),
-         (lt, ":random_no", 5),
-         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
-         (store_troop_faction, ":troop_faction", ":troop_no"),
-         (neq, ":troop_faction", "fac_player_supporters_faction"),
-         (neg|faction_slot_eq, ":troop_faction", slot_faction_side, faction_side_good),
-         (gt, ":party_no", 0),
-         (neg|party_is_in_any_town, ":party_no"), #MV: this doesn't seem to work, so added two equivalent lines
-         (party_get_attached_to, ":attached_to_party", ":party_no"),
-         (neg|is_between, ":attached_to_party", centers_begin, centers_end),
-         (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party),
-         (party_get_num_companions, ":size", ":party_no"),
-         (gt, ":size", 100),
-         (faction_get_slot, ":tier_1_troop", ":troop_faction", slot_faction_deserter_troop),
-         (faction_get_slot, ":tier_ranged_troop", ":troop_faction", slot_faction_ranged_troop),
-         (try_begin), # only evil factions have deserters, good ones have -1 for deserter troop
-           (ge, ":tier_1_troop", 0),		 
-##           (party_get_attached_to, ":attached_party_no", ":party_no"),
-##           (lt, ":attached_party_no", 0),#in wilderness
-           (spawn_around_party, ":party_no", "pt_deserters"),
-           (party_set_slot, reg0, slot_party_type, spt_bandit), # Added by foxyman, TLD
-           (assign, ":new_party", reg0),
-           (store_character_level, ":level", "trp_player"),
-           (store_mul, ":max_number_to_add", ":level", 2),
-           (val_add, ":max_number_to_add", 5),
-           (store_random_in_range, ":number_to_add", 2, ":level"), #high tier units
-           (party_add_members, ":new_party", ":tier_1_troop", ":number_to_add"),
-           (store_random_in_range, ":random_no", 1, 4),
-           (try_for_range, ":unused", 0, ":random_no"),
-             (party_upgrade_with_xp, ":new_party", 1000000, 0),
-           (try_end),
-           (store_random_in_range, ":number_to_add", 3, ":level"),
-           (party_add_members, ":new_party", ":tier_1_troop", ":number_to_add"),
-           (store_random_in_range, ":random_no", 0, 2),
-           (try_for_range, ":unused", 0, ":random_no"),
-             (party_upgrade_with_xp, ":new_party", 20000, 0),
-           (try_end),
-           (store_random_in_range, ":number_to_add", 2, ":level"),
-           (party_add_members, ":new_party", ":tier_ranged_troop", ":number_to_add"),
-           (store_random_in_range, ":random_no", 0, 2),
-           (try_for_range, ":unused", 0, ":random_no"),
-             (party_upgrade_with_xp, ":new_party", 25000, 0),
-           (try_end),
-           (store_random_in_range, ":number_to_add", 10, ":max_number_to_add"),
-           (party_add_members, ":new_party", ":tier_1_troop", ":number_to_add"),
-		 (try_end),
-##         (str_store_party_name, s1, ":party_no"),
-##         (call_script, "script_get_closest_center", ":party_no"),
-##         (try_begin),
-##           (gt, reg0, 0),
-##           (str_store_party_name, s2, reg0),
-##         (else_try),
-##           (str_store_string, s2, "@unknown place"),
-##         (try_end),
-##         (assign, reg1, ":number_to_add"),
-##         (display_message, "@{reg1} Deserters spawned from {s1}, near {s2}."),
+            (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
+            (store_random_in_range, ":random_no", 0, 100),
+            (lt, ":random_no", 5),
+            (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
+            (store_troop_faction, ":troop_faction", ":troop_no"),
+            (neq, ":troop_faction", "fac_player_supporters_faction"),
+            (neg|faction_slot_eq, ":troop_faction", slot_faction_side, faction_side_good),
+            (gt, ":party_no", 0),
+            (neg|party_is_in_any_town, ":party_no"), #MV: this doesn't seem to work, so added two equivalent lines
+            (party_get_attached_to, ":attached_to_party", ":party_no"),
+            (neg|is_between, ":attached_to_party", centers_begin, centers_end),
+            (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party),
+            (party_get_num_companions, ":size", ":party_no"),
+            (gt, ":size", 100),
+            
+            (faction_get_slot, ":party_template_a", ":troop_faction", slot_faction_reinforcements_a),
+            (faction_get_slot, ":party_template_b", ":troop_faction", slot_faction_reinforcements_b),
+            (spawn_around_party, ":party_no", "pt_deserters"),
+            (party_set_slot, reg0, slot_party_type, spt_bandit), # Added by foxyman, TLD
+            (assign, ":new_party", reg0),
+            (store_character_level, ":level", "trp_player"),
+            
+            (party_add_template, ":new_party", ":party_template_a"),
+            (try_for_range, ":unused", 0, ":level"),
+                (party_upgrade_with_xp, ":new_party", 100, 0),
+            (try_end),
+            
+            (gt, ":level", 10),
+            (party_add_template, ":new_party", ":party_template_b"),
+
+            (gt, ":level", 15),
+            (party_add_template, ":new_party", ":party_template_a"),
+            (try_for_range, ":unused", 0, ":level"),
+                (party_upgrade_with_xp, ":new_party", 100, 0),
+            (try_end),
+            
        (try_end),
      (try_end),
 ]),
@@ -19057,7 +19035,7 @@ scripts = [
      (eq, ":inv_cap", 0),
 ]),
 
-# script_cf_troop_has_active_item
+# script_cf_troop_has_active_item #unused, also doesn't really make sense because the item slot is global
 # INPUT: arg1 = troop_no, arg2 = item_no
 ("cf_troop_has_active_item",
     [(store_script_param, ":troop_no", 1),
@@ -32127,42 +32105,45 @@ if is_a_wb_script==1:
 #         reg0 - party_id
 #         reg1 - party_template
 #         reg2 - distance
+#         reg3 - leader troop
 ("cf_get_nearest_bandit_party", [
-	(assign, ":found", 0),
-
-	(try_for_parties, ":nearest_bandit_party"),
-		(eq, ":found", 0),
-		(party_is_active, ":nearest_bandit_party"),
-		(party_slot_eq, ":nearest_bandit_party", slot_party_type, spt_bandit),
-		(party_get_template_id, ":party_template", ":nearest_bandit_party"),
+    (assign, ":nearest_distance", 75),
+    (assign, ":nearest_bandit_party", -1),
+	(try_for_parties, ":party"),
+		(party_is_active, ":party"),
+		(party_slot_eq, ":party", slot_party_type, spt_bandit),
+		(party_get_template_id, ":party_template", ":party"),
 		(neq, ":party_template", "pt_deserters"), #not deserter troops
         (gt, ":party_template", pt_none), #not spawned helper parties
-		(call_script, "script_get_tld_distance", "p_main_party", ":nearest_bandit_party"),
+		(call_script, "script_get_tld_distance", "p_main_party", ":party"),
 		(assign, ":dist", reg0),
-		(le, ":dist", 75),
-		(call_script, "script_party_count_fit_for_battle", ":nearest_bandit_party"),
+		(le, ":dist", ":nearest_distance"),
+		(call_script, "script_party_count_fit_for_battle", ":party"),
 		(gt, reg0, 0),
-		(party_stack_get_troop_id, ":troop", ":nearest_bandit_party", 0),
-		(assign, ":found", 1),
-
-		#Debug
-		(try_begin),
-			(eq, "$cheat_mode", 1),
-			(str_store_party_name, s11, ":nearest_bandit_party"),
-			(str_store_troop_name, s12, ":troop"),
-			(assign, reg70, ":dist"),
-			(display_message, "@Distance - {reg70} - {s11} Party - {s12} Troop"),
-		(try_end),
+		(party_stack_get_troop_id, ":troop", ":party", 0),
+        (neg|troop_is_hero, ":troop"), #just in case
+        (assign, ":nearest_bandit_party", ":party"),
+        (assign, ":nearest_bandit_party_template", ":party_template"),
+        (assign, ":nearest_distance", ":dist"),
+        # (str_store_party_name, s11, ":nearest_bandit_party"),
+        # (display_message, "@found {s11}"),
 	(try_end),
+ 
 
-	(try_begin),
-		(eq, ":found", 1),
-		(assign, reg0, ":troop"),
-		(assign, reg1, ":party_template"),
-		(assign, reg2, ":dist"),
-	(else_try),
-		(assign, reg2, -1),
-	(try_end),
+    (ge, ":nearest_bandit_party", 0), 
+    #Debug
+    (try_begin),
+        (eq, "$cheat_mode", 1),
+        (str_store_party_name, s11, ":nearest_bandit_party"),
+        (str_store_troop_name, s12, ":troop"),
+        (assign, reg70, ":nearest_distance"),
+        (display_message, "@Distance - {reg70} - {s11} Party - {s12} Troop"),
+    (try_end),
+
+    (assign, reg0, ":nearest_bandit_party"),
+    (assign, reg1, ":nearest_bandit_party_template"),
+    (assign, reg2, ":nearest_distance"),
+    (assign, reg3, ":troop"),
 ]),
 
 

@@ -2326,7 +2326,7 @@ game_menus = [
 
     #Kham - Removed Compile Dependence for Cheat Menu
 
- 	("spacer_dev_menu"    ,[],"{!}_"  ,[]),
+ 	#("spacer_dev_menu"    ,[],"{!}_"  ,[]),
  	("Dev_Menu", [], "Developer Menu", [(jump_to_menu, "mnu_dev_menu"),]),
     ("resume_travelling",[],"Resume travelling.",[(change_screen_return)]),
     ]
@@ -4916,7 +4916,7 @@ game_menus = [
 	("just_back",[],"{!}Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"{!}None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
 	("impose_quest_1",[],"{!}qst_hunt_beast_coop",[(assign,"$cheat_imposed_quest","qst_hunt_beast_coop")]),
-	("impose_quest_2",[],"{!}mirkwood_sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
+	("impose_quest_2",[],"{!}qst_troublesome_bandits",[(assign,"$cheat_imposed_quest","qst_troublesome_bandits")]),
 	("impose_quest_3",[],"{!}qst_hunt_down_fugitive",[(assign,"$cheat_imposed_quest","qst_hunt_down_fugitive")]),
 	("impose_quest_4",[],"{!}qst_move_cattle_herd",[(assign,"$cheat_imposed_quest","qst_move_cattle_herd")]),
 	("impose_quest_5",[],"{!}Hunt Down Refugees",[(assign,"$cheat_imposed_quest","qst_hunt_down_refugees")]),
@@ -5101,7 +5101,8 @@ game_menus = [
  	 ("cheat_disabable",[],
 		"Disable cheat/modding options.",[(assign, "$cheat_mode", 0),	(jump_to_menu, "mnu_camp"),]),
 	 
-     ("cheat_back",[],"{!}Back to camp menu.",[(jump_to_menu, "mnu_camp"),]),
+     ("cheat_back",[],"{!}Back to CAMP MENU.",[(jump_to_menu, "mnu_camp"),]),
+     ("cheat_back_map",[],"{!}Back to MAP.",[(change_screen_map),]),
 
      # ("set_gondor_active",   [],
       # "{!}Set Gondor faction to active again.",
@@ -5534,10 +5535,10 @@ game_menus = [
       #swy-- if "wild goblins" then show this illustration thingy...
       (eq, "$g_encountered_party_template", "pt_mountain_bandits"),
       (set_background_mesh, "mesh_draw_mountain_goblins"),
-    (else_try),
-      #swy-- if "troublesome goblins" then show this illustration thingy...
-      (eq, "$g_encountered_party_template", "pt_troublesome_bandits"),
-      (set_background_mesh, "mesh_draw_troublesome_goblins"),
+    # (else_try),
+      # #swy-- if "troublesome goblins" then show this illustration thingy...
+      # (eq, "$g_encountered_party_template", "pt_troublesome_bandits"),
+      # (set_background_mesh, "mesh_draw_troublesome_goblins"), #InVain: Quest now allows mannish bandits, so we should use this drawing for something else
     (else_try),
       #swy-- if "corsair renegades" or "corsair scouts" then show this illustration thingy...
       (this_or_next|eq, "$g_encountered_party_template", "pt_sea_raiders"),

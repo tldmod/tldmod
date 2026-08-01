@@ -12505,7 +12505,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 [anyone,"mayor_begin", [(check_quest_active, "qst_troublesome_bandits"),
                           (check_quest_succeeded, "qst_troublesome_bandits"),
                           (quest_slot_eq, "qst_troublesome_bandits", slot_quest_giver_troop, "$g_talk_troop")],
-"I have heard about your deeds. You have given those goblins the punishment they deserved. \
+"I have heard about your deeds. You have given those bandits the punishment they deserved. \
  You are really as good as they say."+earned_reg14_rp_of_s14,
    "mayor_friendly_pretalk", [(quest_get_slot, ":quest_gold_reward", "qst_troublesome_bandits", slot_quest_gold_reward),
                               # (call_script, "script_troop_add_gold", "trp_player", ":quest_gold_reward"),
@@ -13147,35 +13147,69 @@ A {s6} roams the lands about {s7}. It has slain our hunters, scattered our serva
 # Troublesome bandits:
 [anyone,"merchant_quest_requested", [(eq, "$random_merchant_quest_no", "qst_troublesome_bandits")],
  "Actually, I was looking for an able commander like you.\
- There's this group of particularly troublesome goblins.\
+ There's this group of particularly troublesome bandits.\
  They have infested the neighbourhood and are preying on supply trains and stray warriors.\
  They have avoided all our patrols up to now.\
  If someone doesn't stop them soon, I would need to request serious military action...", "merchant_quest_brief",[]],
 
 [anyone,"merchant_quest_brief", [(eq,"$random_merchant_quest_no", "qst_troublesome_bandits")],
-  "I need someone to hunt down those troublesome goblins.\
+  "I need someone to hunt down those troublesome bandits.\
  It's dangerous work. But I believe that you are the one for it.\
  What do you say?"+promise_reg14_rp_of_s14, "troublesome_bandits_quest_brief",[(quest_get_slot, reg14, "qst_troublesome_bandits", slot_quest_gold_reward)]],
 
 [anyone|plyr,"troublesome_bandits_quest_brief", [],
-"Alright. I will hunt down the goblins.", "merchant_quest_taken_bandits",
-   [(set_spawn_radius,4),
-    (quest_get_slot, ":quest_giver_center", "qst_troublesome_bandits", slot_quest_giver_center),
+"Alright. I will hunt down the bandits.", "merchant_quest_taken_bandits",
+   [(quest_get_slot, ":quest_giver_center", "qst_troublesome_bandits", slot_quest_giver_center),
+	(store_character_level, ":player_level", "trp_player"),
+    (try_begin),
+        ] + (is_a_wb_dialog==1 and [
+        (gt, ":player_level", 5),
+        (call_script, "script_cf_get_nearest_bandit_party"),
+        (assign, ":quest_target_party_template", reg1),
+        ] or [(eq, 0, 1),]) + [
+    (else_try),
+        (this_or_next|eq, "$g_talk_troop_faction", fac_mordor),
+        (this_or_next|eq, "$g_talk_troop_faction", fac_isengard),
+        (eq, "$g_talk_troop_faction", fac_guldur),
+        (assign, ":quest_target_party_template", "pt_forest_bandits"), #orc stragglers
+    (else_try),
+        (this_or_next|eq, "$g_talk_troop_faction", fac_gundabad),
+        (this_or_next|eq, "$g_talk_troop_faction", fac_dwarf),
+        (this_or_next|eq, "$g_talk_troop_faction", fac_imladris),
+        (this_or_next|eq, "$g_talk_troop_faction", fac_lorien),
+        (this_or_next|eq, "$g_talk_troop_faction", fac_woodelf),
+        (eq, "$g_talk_troop_faction", fac_moria),
+        (assign, ":quest_target_party_template", "pt_tribal_orcs"),
+    (else_try),
+        (assign, ":quest_target_party_template", "pt_looters_new"),
+    (try_end),
+    
+    (set_spawn_radius,5),
     (spawn_around_party,":quest_giver_center","pt_troublesome_bandits"),
 	(assign, ":bandit_party", reg0),
+    (party_clear, ":bandit_party"),
+    (try_begin),
+        (store_random_party_of_template, ":icon_party", ":quest_target_party_template"),  #can fail
+        (party_get_icon, ":party_icon", ":icon_party"),
+        (party_set_icon, ":bandit_party", ":party_icon"),
+    (try_end),
     (party_set_ai_object, reg0, "$g_encountered_party"),
     (party_set_ai_behavior, reg0, ai_bhvr_patrol_location),
     (party_set_ai_patrol_radius, reg0, 2),
-	(store_character_level, ":player_level", "trp_player"),
+    
+    (store_mul, ":party_size", ":player_level", 3),
+    (val_clamp, ":party_size", 12, 60),
+    
+    (try_for_range, ":unused", 0, ":party_size"),
+        (party_get_num_companions, ":num_companions", ":bandit_party"),
+        (lt, ":num_companions", ":party_size"),
+        (party_add_template, ":bandit_party", ":quest_target_party_template"),
+    (else_try),
+        (assign, ":party_size", 0),
+    (try_end),
+
 	(try_for_range, ":unused", 0, ":player_level"),
 		(party_upgrade_with_xp, ":bandit_party", 100, 0),
-	(try_end),
-	(try_begin),
-		(store_random_in_range, ":troll_chance", 0, 100),
-		(ge, ":player_level", 12),
-		(val_mul, ":player_level", 2),
-		(ge, ":player_level", ":troll_chance"),
-		(party_force_add_members, ":bandit_party", "trp_wild_troll", 1),
 	(try_end),
     (quest_set_slot, "qst_troublesome_bandits", slot_quest_target_party, ":bandit_party"),
     (store_num_parties_destroyed,"$qst_troublesome_bandits_eliminated","pt_troublesome_bandits"),
@@ -13183,14 +13217,11 @@ A {s6} roams the lands about {s7}. It has slain our hunters, scattered our serva
     (str_store_troop_name, s9, "$g_talk_troop"),
     (str_store_party_name_link, s4, "$g_encountered_party"),
     (setup_quest_text,"qst_troublesome_bandits"),
-    (str_store_string, s2, "@The {s9} of {s4} asked you to hunt down the troublesome goblins in the vicinity of the town."),
+    (str_store_string, s2, "@The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town."),
     (call_script, "script_start_quest", "qst_troublesome_bandits", "$g_talk_troop")]],
 
 [anyone,"merchant_quest_taken_bandits", [], "You will? I am so happy to hear that. Good luck to you.", "close_window",[(call_script,"script_stand_back"),]],
 [anyone|plyr,"troublesome_bandits_quest_brief", [], "Sorry. I don't have time for this right now.", "merchant_quest_stall",[]],
-
-
-
 #deal with night bandits
 [anyone,"merchant_quest_requested",[(eq, "$random_merchant_quest_no", "qst_deal_with_night_bandits")],
 "Do I indeed! There's a group of bandits harassing the place, and I'm at the end of my rope as to how to deal with them.\
@@ -13338,10 +13369,10 @@ A {s6} roams the lands about {s7}. It has slain our hunters, scattered our serva
   
 [party_tpl|pt_troublesome_bandits,"start", [(quest_slot_eq, "qst_troublesome_bandits", slot_quest_target_party, "$g_encountered_party")],"What? We will kill. We will take your food and mounts and eat 'em. We will eat you.", "troublesome_bandits_intro_1",[]],
 [anyone|plyr,"troublesome_bandits_intro_1", [],
-"You'll regret causing trouble around these parts. You should have never left your mountain caves.",
+"You'll regret causing trouble around these parts. You should have never left your holes.",
    "troublesome_bandits_intro_2", []],
 [anyone,"troublesome_bandits_intro_2", [],
-"Kill now! Eat later!", "close_window",[(call_script,"script_stand_back"),(encounter_attack)]],
+"When we're done with you, YOU will be the one to lie in the dirt!", "close_window",[(call_script,"script_stand_back"),(encounter_attack)]],
  
 [party_tpl|pt_fangorn_orcs,"start", [(quest_slot_eq, "qst_treebeard_kill_orcs", slot_quest_target_party, "$g_encountered_party")],
    "Eh? The Old Man won't be happy if you interrupt the work of his servants.", "fangorn_orcs_intro_1",[]],
