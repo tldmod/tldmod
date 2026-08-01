@@ -207,10 +207,10 @@ itemsfile version 2
  itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_huge 0  1 0 3000 16106389504 0 100 0 32 0 3 120 55 35 100 0 35 0
 0
 
- itm_warg_wild_1 Wild_Warg Wild_Warg 1  warg_1B 0  65537 0 600 84825866240 0 90 0 10 0 2 80 64 36 95 0 25 0
+ itm_warg_wild_1 Wild_Warg Wild_Warg 1  warg_1B 0  1 0 600 84825866240 0 90 0 10 0 1 80 69 36 80 0 20 0
 0
 
- itm_warg_wild_2 Wild_Warg Wild_Warg 1  warg_1C 0  65537 0 600 84825866240 0 90 0 10 0 2 80 64 36 95 0 25 0
+ itm_warg_wild_2 Huge_Wild_Warg Huge_Wild_Warg 1  warg_1C 0  1 0 600 84825866240 0 90 0 10 0 3 80 69 36 90 0 20 0
 0
 
  itm_troll_weapon_long Giant_Halberd Giant_Halberd 1  isengard_halberd_troll 0  2251941637783556 512 1 0 58 100 0 0 0 0 30720 70 120 200 0 542 542
@@ -2750,7 +2750,7 @@ itemsfile version 2
  itm_werewolf Werewolf Werewolf 1  mm_warg_a 0  4097 0 1200 0 0 100 0 60 0 10 130 70 40 100 0 35 0
 0
 
- itm_thrush_reward Thrush Thrush 1  prop_reward_thrush 0  4096 0 1000 0 1 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_thrush_reward Thrush Thrush 1  prop_reward_thrush 0  4107 0 1000 0 1 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_gauntlets_reward Iron_Fists Iron_Fists 2  narf_finger_gauntlets_L 0  CWE_gauntlets_arabs_a_dwarf_L 536870912  4111 0 2000 0 3 100 0 5 0 15 0 0 0 0 0 0 0

@@ -4201,7 +4201,7 @@ spr_arabian_lighthouse_a 0 0 arabian_lighthouse_a bo_arabian_lighthouse_a 0
 spr_thranduil_hall_entrance 0 0 thranduil_hall_entrance bo_thranduil_hall_entrance 0
 
 
-spr_thranduil_throne 0 0 thranduil_throne bo_thranduil_throne 0
+spr_thranduil_cave 0 0 thranduil_cave bo_thranduil_cave 0
 
 
 spr_distant_mountain_white 69632 0 mountains_outer 0 0
@@ -4704,7 +4704,7 @@ spr_gothic_chair_nocol 0 0 gothic_chair 0 0
 spr_smaug_skeleton 0 0 smaug_skeleton 0 0
 
 
-spr_moria_stairs_c 0 0 moria_stairs_c 0 0
+spr_moria_stairs_c 0 0 moria_stairs_c bo_moria_stairs_c 0
 
 
 spr_pointer_arrow 0 0 pointer_arrow 0 0

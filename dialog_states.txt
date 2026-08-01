@@ -175,6 +175,9 @@ lord_intro
 lord_meet_neutral
 lord_meet_enemy
 lord_generic_mission_completed
+lord_hunt_beast_coop_win
+lord_hunt_beast_coop_fail
+lord_hunt_beast_coop_fail_2
 lord_oath_of_vengeance_fulfilled
 lord_oath_of_vengeance_fulfilled1
 lord_investigate_fangorn_completed0
@@ -339,6 +342,8 @@ lord_mission_defend_reject
 lord_mission_raid_village_a
 lord_raid_village_accept
 lord_raid_village_reject
+lord_mission_hunt_beast_ask
+lord_mission_hunt_beast_accept
 lord_mission_sorcerer_completed
 lord_mission_sorcerer_failed
 lord_active_mission_2
