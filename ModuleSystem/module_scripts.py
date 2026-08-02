@@ -26841,7 +26841,7 @@ command_cursor_scripts = [
         (try_end),
         
         #fix some troops having a HP shield by mistake
-        (try_for_range, ":troop", trp_mountain_goblin, trp_aragorn),
+        (try_for_range, ":troop", trp_i2_goblin_raider, trp_aragorn),
             (troop_set_slot, ":troop", slot_troop_hp_shield, -1),
         (try_end),
     (try_end),

@@ -44,20 +44,20 @@ party_templates = [
 # ("manhunters","Manhunters",icon_generic_knight,0,fac_manhunters,soldier_personality,[(trp_manhunter,9,40)]),
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
 
-("wild_troll",       "Wild Troll",          icon_wild_troll   |pf_quest_party,  0,fac_neutral,	bandit_personality,[(trp_wild_troll,1,2),]),
-("raging_trolls",    "Raging Trolls",       icon_wild_troll   |pf_quest_party,  0,fac_neutral,	bandit_personality,[(trp_wild_troll,1,3),]),
-("tribal_orcs",          "Rogue Goblins",         icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_tribal_orc_warrior,0,1),(trp_tribal_orc,2,25)]),
-("forest_bandits",   "Orc Brigands",      icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
-("mountain_bandits", "Mountain Goblins",        icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_mountain_goblin,2,40)]),
-("steppe_bandits",   "Dunland Outcasts",    icon_dunlander    |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i2_dun_warrior,3,10), (trp_i1_dun_wildman,5,35)]),
-("sea_raiders",      "Corsair Renegades",   icon_umbar_corsair|carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i4_corsair_raider,1,5),(trp_i2_corsair_warrior,3,20),(trp_a2_corsair_marine,3,15)]),
+("wild_troll",       "Wild Troll",        icon_wild_troll   |pf_quest_party,  0,fac_neutral,	bandit_personality,[(trp_wild_troll,1,2),]),
+("raging_trolls",    "Raging Trolls",     icon_wild_troll   |pf_quest_party,  0,fac_neutral,	bandit_personality,[(trp_wild_troll,1,3),]),
+("tribal_orcs",      "Rogue Goblins",     icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i3_goblin_warrior,0,2),(trp_i1_tribal_goblin,2,25)]),
+("forest_bandits",   "Orc Brigands",      icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i4_orc_marauder,0,8),(trp_i2_orc_straggler,3,20),(trp_i3_orc_brigand,1,15),(trp_i2_uruk_rogue,3,20),(trp_i3_uruk_brigand,1,15)]),
+("mountain_bandits", "Mountain Goblins",  icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i3_goblin_warrior,0,3),(trp_c3_goblin_wolf_rider,0,10),(trp_i2_goblin_raider,2,40)]),
+("steppe_bandits",   "Dunland Outcasts",  icon_dunlander    |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i2_dun_warrior,3,10), (trp_i1_dun_wildman,5,35)]),
+("sea_raiders",      "Corsair Renegades", icon_umbar_corsair|carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i4_corsair_raider,1,5),(trp_i2_corsair_warrior,3,20),(trp_a2_corsair_marine,3,15)]),
 
 ("deserters","Deserters",icon_axeman|carries_goods(3),0,fac_deserters,bandit_personality,[]),
 
 #unused
 ("merchant_caravan","Merchant Caravan",icon_mule|carries_goods(20)|pf_auto_remove_in_town|pf_quest_party,0,fac_commoners,escorted_merchant_personality,[(trp_caravan_master,1,1),(trp_caravan_guard,5,25)]),
 
-("troublesome_bandits","Troublesome Bandits",icon_orc_tribal|carries_goods(9)|pf_quest_party,0,fac_deserters,bandit_personality,[(trp_tribal_orc,14,55)]),
+("troublesome_bandits","Troublesome Bandits",icon_orc_tribal|carries_goods(9)|pf_quest_party,0,fac_deserters,bandit_personality,[(trp_i1_tribal_goblin,14,55)]),
 ("fangorn_orcs","Tree-chopping Orcs",icon_orc_x4|carries_goods(9)|pf_quest_party,0,fac_neutral,bandit_personality,[(trp_i5_isen_fighting_uruk_champion,1,1),(trp_i3_isen_large_uruk,3,8),(trp_a3_isen_large_uruk_tracker,8,13),(trp_i1_isen_uruk_snaga,12,24)]),
 # ("bandits_awaiting_ransom","Bandits Awaiting Ransom",icon_axeman|carries_goods(9)|pf_auto_remove_in_town|pf_quest_party,0,fac_neutral,bandit_personality,[(trp_brigand,24,58),(trp_kidnapped_girl,1,1,pmf_is_prisoner)]),
 # ("kidnapped_girl","Kidnapped Girl",icon_woman|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_kidnapped_girl,1,1)]),

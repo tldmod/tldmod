@@ -350,8 +350,8 @@ items =[
 ["warg_reward","Huge_Warg",[("wargArmored_huge",0)],itp_type_horse,0,3000,hit_points(120)|body_armor(32)|difficulty(3)|horse_speed(35)|horse_maneuver(55)|horse_charge(35)|horse_scale(100)|abundance(100),imodbits_horse_basic,[]],
 
 #for future use
-["warg_wild_1","Wild Warg",[("warg_1B",0)],itp_type_horse,0,600,hit_points(80)|body_armor(10)|difficulty(1)|horse_speed(36)|horse_maneuver(69)|horse_charge(20)|horse_scale(80)|abundance(90),imodbits_horse_basic|imodbits_warg,[]],
-["warg_wild_2","Huge Wild Warg",[("warg_1C",0)],itp_type_horse,0,600,hit_points(80)|body_armor(10)|difficulty(3)|horse_speed(36)|horse_maneuver(69)|horse_charge(20)|horse_scale(90)|abundance(90),imodbits_horse_basic|imodbits_warg,[]],
+["warg_wild_1","Wild Warg",[("mm_warg_b",0)],itp_type_horse,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(36)|horse_maneuver(69)|horse_charge(20)|horse_scale(70)|abundance(90),imodbits_horse_basic|imodbits_warg,[]],
+["warg_wild_2","Huge Wild Warg",[("mm_warg_b",0)],itp_type_horse,0,600,hit_points(80)|body_armor(10)|difficulty(4)|horse_speed(36)|horse_maneuver(69)|horse_charge(20)|horse_scale(80)|abundance(90),imodbits_horse_basic|imodbits_warg,[]],
 #first non WARG item: itm_warg_reward+1
 
 #Troll weapons
@@ -1603,7 +1603,7 @@ if wb_compile_switch==1:
 #wild beasts and bigger variants
 ["spider_strong","Huge Spider",[("spider",0)],      itp_type_horse|itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(90)|body_armor(30)|difficulty(10)|horse_speed(30)|horse_maneuver(75)|horse_charge(12)|horse_scale(90),imodbits_none,[]],
 ["bear_strong","Great Bear",    [("bear_2",0)],     itp_type_horse|itp_unique, 0, 1200, hit_points(200)|body_armor(60)|horse_speed(40)|horse_maneuver(60)|horse_charge(70)|horse_scale(130)|difficulty(10),imodbits_none,[]],
-["wolf_strong","Great Wolf",    [("wolf_black",0)],       itp_type_horse|itp_unique, 0, 1200, hit_points(80)|body_armor(25)|horse_speed(35)|horse_maneuver(75)|horse_charge(12)|horse_scale(105)|difficulty(10),imodbits_none,[]],
+["wolf_strong","Great Wolf",    [("wolf_black_ridable",0)],       itp_type_horse|itp_unique, 0, 1200, hit_points(80)|body_armor(25)|horse_speed(35)|horse_maneuver(75)|horse_charge(12)|horse_scale(70)|difficulty(2),imodbits_none,[]],
 ["boar","Boar",                 [("boar",0)],       itp_type_horse|itp_unique, 0, 1200, hit_points(70)|body_armor(25)|horse_speed(30)|horse_maneuver(75)|horse_charge(45)|horse_scale(105)|difficulty(10),imodbits_none,[]],
 ["boar_strong","Great Boar",    [("boar",0)],       itp_type_horse|itp_unique, 0, 1200, hit_points(110)|body_armor(30)|horse_speed(35)|horse_maneuver(75)|horse_charge(60)|horse_scale(105)|difficulty(10),imodbits_none,[]],
 ["beast","Evil Beast",          [("boar_black",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(80)|body_armor(20)|horse_speed(35)|horse_maneuver(75)|horse_charge(50)|horse_scale(105)|difficulty(10),imodbits_none,[]],

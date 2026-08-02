@@ -7285,8 +7285,8 @@ tld_place_inventory_backup,
 
       (assign, ":theater", reg0),
       (assign, ":interloper", 0),  #Interloper 0 = Default = Tribal Orcs
-      (assign, ":interloper_1", "trp_tribal_orc_warrior"),
-      (assign, ":interloper_2", "trp_tribal_orc"),
+      (assign, ":interloper_1", "trp_i3_goblin_warrior"),
+      (assign, ":interloper_2", "trp_i1_tribal_goblin"),
 
       (store_random_in_range, ":random", 0, 100),
 
