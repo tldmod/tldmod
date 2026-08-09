@@ -48,7 +48,7 @@ party_templates = [
 ("raging_trolls",    "Raging Trolls",     icon_wild_troll   |pf_quest_party,  0,fac_neutral,	bandit_personality,[(trp_wild_troll,1,3),]),
 ("tribal_orcs",      "Rogue Goblins",     icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i3_goblin_warrior,0,2),(trp_i1_tribal_goblin,2,25)]),
 ("forest_bandits",   "Orc Brigands",      icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i4_orc_marauder,0,8),(trp_i2_orc_straggler,3,20),(trp_i3_orc_brigand,1,15),(trp_i2_uruk_rogue,3,20),(trp_i3_uruk_brigand,1,15)]),
-("mountain_bandits", "Mountain Goblins",  icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i3_goblin_warrior,0,3),(trp_c3_goblin_wolf_rider,0,10),(trp_i2_goblin_raider,2,40)]),
+("mountain_bandits", "Mountain Goblins",  icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i3_goblin_warrior,0,3),(trp_c3_goblin_wolf_rider,0,10),(trp_i2_goblin_raider,2,40), (trp_wild_warg, 0, 10),]),
 ("steppe_bandits",   "Dunland Outcasts",  icon_dunlander    |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i2_dun_warrior,3,10), (trp_i1_dun_wildman,5,35)]),
 ("sea_raiders",      "Corsair Renegades", icon_umbar_corsair|carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_i4_corsair_raider,1,5),(trp_i2_corsair_warrior,3,20),(trp_a2_corsair_marine,3,15)]),
 
@@ -425,5 +425,5 @@ party_templates = [
 ("rhovanion_bandits","Rhovanion_Bandits",icon_axeman   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_rhovanion_bandit,2,25)]),
 ("easterling_bandits","Easterling_Bandits",icon_easterling_horseman   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_easterling_bandit,2,15)]),
 ("wolf_pack","Wolf_Pack",icon_animal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_wolf_strong,0,1),(trp_wolf,2,25)]),
-("warg_pack","Warg_Pack",icon_animal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_wolf_strong,0,1),(trp_wolf,2,25)]),
+("warg_pack","Warg_Pack",icon_animal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_wild_warg_strong,0,1),(trp_wild_warg,2,15)]),
 ] + common_warp_templates

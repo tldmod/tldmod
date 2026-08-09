@@ -348,20 +348,20 @@ items =[
 ["wargarmored_2c","Armored_Warg",[("wargArmored_2C",0)],itp_type_horse|itp_shop,0,1600,hit_points(120)|body_armor(30)|difficulty(4)|horse_speed(33)|horse_maneuver(61)|horse_charge(30)|horse_scale(95)|abundance(94),imodbits_horse_basic|imodbits_warg,[]],
 ["wargarmored_3a","Armored_Warg",[("wargArmored_3A",0)],itp_type_horse|itp_shop,0,2000,hit_points(130)|body_armor(35)|difficulty(5)|horse_speed(33)|horse_maneuver(60)|horse_charge(35)|horse_scale(95)|abundance(95),imodbits_horse_basic|imodbits_warg,[]],
 ["warg_reward","Huge_Warg",[("wargArmored_huge",0)],itp_type_horse,0,3000,hit_points(120)|body_armor(32)|difficulty(3)|horse_speed(35)|horse_maneuver(55)|horse_charge(35)|horse_scale(100)|abundance(100),imodbits_horse_basic,[]],
+["warg_wild_1","Wild Warg",[("mm_warg_c",0)],itp_type_horse,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(36)|horse_maneuver(75)|horse_charge(20)|horse_scale(70)|abundance(90),imodbits_horse_basic|imodbits_warg,[]],
+["warg_wild_2","Huge Wild Warg",[("mm_warg_b",0)],itp_type_horse,0,600,hit_points(100)|body_armor(15)|difficulty(4)|horse_speed(36)|horse_maneuver(69)|horse_charge(20)|horse_scale(80)|abundance(90),imodbits_horse_basic|imodbits_warg,[]],
 
-#for future use
-["warg_wild_1","Wild Warg",[("mm_warg_b",0)],itp_type_horse,0,600,hit_points(80)|body_armor(10)|difficulty(2)|horse_speed(36)|horse_maneuver(69)|horse_charge(20)|horse_scale(70)|abundance(90),imodbits_horse_basic|imodbits_warg,[]],
-["warg_wild_2","Huge Wild Warg",[("mm_warg_b",0)],itp_type_horse,0,600,hit_points(80)|body_armor(10)|difficulty(4)|horse_speed(36)|horse_maneuver(69)|horse_charge(20)|horse_scale(80)|abundance(90),imodbits_horse_basic|imodbits_warg,[]],
-#first non WARG item: itm_warg_reward+1
-
-#Troll weapons
+#Troll weapons #doesn't hurt that these are within extended warg range
 ["troll_weapon_long","Giant_Halberd",[("isengard_halberd_troll",0),],																						itp_no_pick_up_from_ground|itp_type_polearm|itp_no_blur|itp_two_handed|itp_primary|itp_crush_through|itp_bonus_against_shield|itp_can_penetrate_shield,itcf_overswing_polearm|0,1,			weight(250)|difficulty(0)|spd_rtng(70)|weapon_length(200)|swing_damage(30,blunt)|thrust_damage(30,blunt)|horse_speed(120),0,[]],
 ["troll_weapon_dmg","Giant_Mace",[("0",imodbit_cracked),("orc_sledgehammer_troll",imodbit_bent),("giant_mace",imodbit_plain),("giant_hammer",imodbit_strong)],itp_no_pick_up_from_ground|itp_type_two_handed_wpn|itp_primary|itp_crush_through|itp_bonus_against_shield|itp_can_penetrate_shield,itc_troll_attack|0,1,									weight(250)|difficulty(0)|spd_rtng(85)|weapon_length(110)|swing_damage(30,blunt)|thrust_damage(30,blunt)|horse_speed(90),0,[]],
 ["tree_trunk_club_a","Tree_Trunk",[("0",0),("bone_cudgel_troll",imodbit_crude),("troll_club",imodbit_bent),("tree_trunk_club",imodbit_fine),("orc_club_a_troll",imodbit_heavy),("giant_mace_b",imodbit_strong)],itp_no_pick_up_from_ground|itp_type_two_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack|itp_crush_through|itp_can_penetrate_shield|itp_bonus_against_shield,itc_troll_attack|0,1,	weight(250)|difficulty(0)|spd_rtng(70)|weapon_length(130)|swing_damage(25,blunt)|thrust_damage(25,blunt)|horse_speed(100),0, []],
-
 ["troll_aoe","{!}troll_aoe",[("0",0),],itp_no_pick_up_from_ground|itp_type_two_handed_wpn|itp_primary|itp_crush_through|itp_bonus_against_shield|itp_can_penetrate_shield,itc_troll_attack|0,1,									weight(250)|difficulty(0)|spd_rtng(90)|weapon_length(110)|swing_damage(1,blunt)|thrust_damage(1,blunt)|horse_speed(0),0,[]],
 
-["free_2_handed_axe","{!}Northmen_Longaxe",[("2_handed_axe",0)],itp_type_polearm|itp_no_blur|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,700,weight(8)|difficulty(10)|spd_rtng(82)|weapon_length(110)|swing_damage(47,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
+["wolf_ridable","Great Wolf",[("wolf_black_ridable",0)],itp_type_horse|itp_unique, 0, 1200, hit_points(80)|body_armor(25)|horse_speed(35)|horse_maneuver(75)|horse_charge(12)|horse_scale(70)|difficulty(2),imodbits_none,[]],
+#first non WARG item: itm_wolf_ridable+1
+
+
+#["free_2_handed_axe","{!}Northmen_Longaxe",[("2_handed_axe",0)],itp_type_polearm|itp_no_blur|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback|itp_crush_through|itp_unbalanced,itc_nodachi|itcf_carry_axe_back,700,weight(8)|difficulty(10)|spd_rtng(82)|weapon_length(110)|swing_damage(47,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 # ["tree_trunk_club_b","Tree_Trunk",[("tree_trunk_club",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,cut)|thrust_damage(48,cut),0],
 # ["tree_trunk_invis","{!}Tree_Trunk",[("0",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,cut)|thrust_damage(48,cut),0],
 ["free_giant_hammer","{!}Giant_Hammer",[("giant_hammer",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(80,cut)|thrust_damage(65,cut),0],

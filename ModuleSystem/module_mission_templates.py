@@ -167,7 +167,7 @@ or [] ) + [
   reset_fog,
   horse_whistle_init,
   horse_whistle,
-] + tld_morale_triggers + fade + custom_troll_hitting_new + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack + reward_birds_wb + nazgul_flying
+] + tld_morale_triggers + fade + custom_troll_hitting_new + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + reward_birds_wb + nazgul_flying
 
 
 tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [

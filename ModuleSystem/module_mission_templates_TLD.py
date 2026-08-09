@@ -856,41 +856,15 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
   (agent_get_troop_id, ":agent_trp",       ":agent"),
   (agent_get_item_id,  ":agent_mount_itm", ":agent"),
   
-  # (try_begin), # when trolls in battle #InVain: Moved to troll trigger group
-    # (troop_get_type, ":agent_trp_type", ":agent_trp"),
-    # (eq,             ":agent_trp_type", tf_troll),
-    # #--
-    # (agent_set_speed_limit, ":agent", 4), # trolls go 4 km/h max <GA>
-    # (assign, "$trolls_in_battle", 1),     # condition on future troll triggers
-    
-    # # a failed test: set custom troll walking/standing animations... why wouldn't this work?
-    # #(agent_set_walk_forward_animation,":troll","anim_walk_forward_troll"),
-    # #(agent_set_stand_animation,":troll","anim_walk_forward_troll"),
-  # (try_end),
-  
   (try_begin), # when wargs in battle
     (is_between, ":agent_mount_itm", item_warg_begin, item_warg_end),
     #--
     (val_add, "$wargs_in_battle", 1), # keep warg count up to date...
     (agent_set_slot, ":agent", slot_agent_mount_dead, 0),
-    
-    #(try_begin),
-    #  (is_mbse_active),
-    #  (display_message, "@MBSE working, warg spawning"),
-    #  (agent_set_sound, ":agent", sound_horse_walk, "snd_warg_lone_woof"),
-    #  (agent_set_sound, ":agent", sound_trot, "snd_evil_orders"),
-    #  (agent_set_sound, ":agent", sound_canter, "snd_warg_lone_woof"),
-    #  (agent_set_sound, ":agent", sound_gallop, "snd_warg_lone_woof"),
-    #  (agent_set_sound, ":agent", sound_snort, "snd_warg_lone_woof"),
-    #  (agent_set_sound, ":agent", sound_hit, "snd_nazgul_skreech_short"),
-    #  (agent_set_sound, ":agent", sound_die, "snd_evil_orders"),
-    #  (agent_set_sound, ":agent", sound_neigh, "snd_nazgul_skreech_short"),
-    #(try_end),
   (try_end),
   
   (try_begin), # for ghost wargs: set it up to replace the unmounted warg
     (is_between, ":agent_trp", warg_ghost_begin, warg_ghost_end),
-    (agent_set_slot, ":agent", slot_agent_time_counter, 0),
     (try_begin),
       (neq, "$warg_to_be_replaced", -1),                  # else, if is a spawn of a warg from start...
       (agent_get_position, pos4, "$warg_to_be_replaced"), # set position to match warg to be replaced...
@@ -1888,18 +1862,11 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		(is_between,        ":trp_ghost", warg_ghost_begin, warg_ghost_end),
 		
 		(agent_set_animation, ":ghost", "anim_hide_inside_warg"), #anim_ride_1"),
-
-		#swy-- there's a 6% prob every 1.5 secs of random lone warg sounds!
-        #InVain: Disabled, this is done for all mounts and animals in custom_warg_sounds
-		# (store_random_in_range, ":random", 0,100),
-		# (try_begin),
-				# (le,":random",6),
-				# # should be brutal GRRR of attacking warg here
-				# (agent_play_sound, ":ghost", "snd_warg_lone_woof"),
-		# (try_end),
 		
 		#swy-- add +1 to the time counter slot of this lone warg
-		(agent_get_slot, reg1, ":ghost", slot_agent_time_counter), (val_add, reg1, 1),
+		(agent_get_slot, reg1, ":ghost", slot_agent_time_counter), 
+        (ge, reg1, 1), #not an "animal" warg but a warg that has lost its rider
+        (val_add, reg1, 1),
 		(agent_set_slot,       ":ghost", slot_agent_time_counter,            reg1),
 		
 		#swy-- make riderless wargs run away after X secs
@@ -1934,13 +1901,23 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		
 		#swy-- if this mount is a warg and riderless...
 		(is_between, ":warg_itm", item_warg_begin, item_warg_end),
-		#--- {ensure that the original rider hasn't just dismounted}
+
+		(agent_get_rider,    ":curr_rider", ":cur_warg"),
 		(agent_get_slot,     ":orig_rider", ":cur_warg", slot_agent_mount_orig_rider),
+        
+        (try_begin), #InVain band-aid bugfix for horse archers not being initialised correctly. If the original rider is still alive, we store it here.)
+            (gt, ":curr_rider", -1),
+            (agent_is_alive, ":curr_rider"),
+            (eq, ":orig_rider", 0),
+            (agent_set_slot, ":cur_warg", slot_agent_mount_orig_rider, ":curr_rider"),
+        (try_end),
+                
+		#--- {there's no rider on top of the warg right now, old or new}
+		(eq,                 ":curr_rider", -1),
+        
+		#--- {ensure that the original rider hasn't just dismounted}
 		(gt, ":orig_rider", 0), #Kham - patch fix to MT errors. Not sure why it is getting 0 in that slot after the gundabad update. Will have to study.
 		(neg|agent_is_alive, ":orig_rider"),
-		#--- {there's no rider on top of the warg right now, old or new}
-		(agent_get_rider,    ":curr_rider", ":cur_warg"),
-		(eq,                 ":curr_rider", -1),
 		#--- {this warg isn't owned by a ghost}
 		(agent_get_troop_id, ":orig_rider_trp", ":orig_rider"),
 		(neg|is_between,     ":orig_rider_trp", warg_ghost_begin, warg_ghost_end),
@@ -1953,6 +1930,10 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		#swy-- calculate the correct ghost warg troop by using the warg item offset, they are listed in the same order...
 		(store_sub, ":warg_ghost_trp", ":warg_itm", item_warg_begin),
 		(val_add,   ":warg_ghost_trp",             warg_ghost_begin),
+        (try_begin),
+            (eq, ":warg_itm", itm_wolf_ridable),
+            (assign, ":warg_ghost_trp", trp_warg_ghost_wolf),
+        (try_end),
 		#--
 		(assign, ":continue", 1),
 		(agent_get_position, pos10, ":cur_warg"),
@@ -1987,6 +1968,7 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		#swy-- new Warband code path for spawning wargs
 		(set_spawn_position, pos10),
 		(spawn_agent,":warg_ghost_trp"),
+        (agent_set_slot, reg0, slot_agent_time_counter, 1), #mark for timer
     
 		]) + [
 	#	(str_store_troop_name, s12, ":warg_ghost_trp"), 
@@ -2758,6 +2740,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
      (agent_is_human, ":agent"),
      (agent_get_troop_id,":troopid", ":agent"),
      (this_or_next|is_between,  ":troopid", "trp_spider", "trp_animals_end"),
+     (this_or_next|is_between,  ":troopid", warg_ghost_begin, warg_ghost_end),
      (eq, ":troopid", "trp_werewolf_old"), #savegame compatibility
      (agent_set_no_death_knock_down_only, ":agent", 1), # make the rider unkillable
      (agent_set_hit_points, ":agent", 999,0), #absurdly high, we transfer all damage to the mount
@@ -2786,14 +2769,19 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (store_trigger_param_1, ":killed"),
     (store_trigger_param_2, ":killer"),
     (neg|agent_is_human, ":killed"),
+    (agent_get_slot, ":rider", ":killed", slot_agent_mount_orig_rider),
+    (agent_is_active, ":rider"),
+    (agent_get_troop_id, ":rider_troop", ":rider"),
     (agent_get_item_id,":mount_itm",":killed"),
     (this_or_next|eq, ":mount_itm", "itm_wolf"),
     (this_or_next|eq, ":mount_itm", "itm_bear"),
     (this_or_next|eq, ":mount_itm", "itm_spider"),
     (this_or_next|is_between, ":mount_itm", "itm_spider_strong", "itm_kine_strong"),
+    (this_or_next|is_between, ":mount_itm", item_warg_begin, item_warg_end),
     (eq, ":mount_itm", "itm_werewolf"),
-    (agent_get_slot, ":rider", ":killed", slot_agent_mount_orig_rider),
-    (agent_is_active, ":rider"),
+    (this_or_next|is_between, ":rider_troop", "trp_spider", "trp_animals_end"),
+    (is_between, ":rider_troop", warg_ghost_begin, warg_ghost_end),
+    
     # (agent_slot_eq, ":rider", slot_agent_array_troop, "trp_array_animals"), #in theory, this should always be true anyway. But the check isn't needed, so we leave it out just in case.
     (agent_get_slot, ":slot", ":rider", slot_agent_array_number),
     (troop_set_slot, "trp_array_animals", ":slot", -1),
@@ -2812,6 +2800,16 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (troop_is_hero, ":killer_troop"),
     (item_get_hit_points, ":xp", ":mount_itm"),
     (add_xp_to_troop, ":xp", ":killer_troop"),
+    (eq, ":killer_troop", "trp_player"),
+    (agent_get_slot, ":animal_kills", ":killer", slot_agent_player_animal_kills),
+    (val_add, ":animal_kills", 1),
+    (agent_set_slot, ":killer", slot_agent_player_animal_kills, ":animal_kills"),
+    (ge, ":animal_kills", 3),
+    (troop_get_slot, ":trait_kills", "trp_traits", slot_trait_animal_fighter),
+    (neq, ":trait_kills", 1), 
+    (val_add, ":trait_kills", 2), #add two points per kill, because 1 meants trait gained
+    (troop_set_slot, trp_traits, slot_trait_animal_fighter, ":trait_kills"),
+
   ]),
   
   # deal with dismounted riders, just in case
@@ -2822,6 +2820,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         (agent_is_human, ":agent"),
         (agent_get_troop_id, ":agent_trp", ":agent"),
         (this_or_next|is_between, ":agent_trp", "trp_spider", "trp_animals_end"),
+        (this_or_next|is_between, ":agent_trp", warg_ghost_begin, warg_ghost_end),
         (eq, ":agent_trp", "trp_werewolf_old"),
         (agent_set_animation, ":agent", "anim_hide_inside_warg"),
         (agent_get_horse, ":horse", ":agent"),
@@ -2831,8 +2830,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
   ]),
 
   #animal attacks
-  #checks every 0.5 second, trigger delay is 0.6 seconds, rearms after 1 second, 
-  #TODO find correct timing of trigger effect based on the attack animation
+  #checks every 0.5 second, trigger delay is 0.6 seconds, rearms after 1 second
   (0.5, 0.6, 1, [ 
   (ge, "$animal_is_present",1),
   (set_fixed_point_multiplier, 100),
@@ -2850,7 +2848,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (agent_get_troop_id, ":agent_trp", ":agent"),
     
     #This is where we check the type of animal #Invain: Should've been assured via slot assignment, but keep it just to be sure)
-    (is_between, ":agent_trp", "trp_future_animal_0", "trp_animals_end"),
+    (this_or_next|is_between, ":agent_trp", "trp_future_animal_0", "trp_animals_end"),
+    (is_between, ":agent_trp", warg_ghost_begin, warg_ghost_end),
 
     #This is where we get the mount
     (agent_get_horse, ":horse", ":agent"),
@@ -2909,9 +2908,9 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (assign, ":sound", 0),
     (store_random_in_range, ":rnd_2", 0, 100),
     (try_begin), #first check: leap attack if moving fast
-      (this_or_next|eq, ":agent_trp", "trp_bear"), #bears need this to keep up with wargs
-      (this_or_next|eq, ":agent_trp", "trp_wolf"),
-      (eq, ":agent_trp", "trp_werewolf"),
+      (this_or_next|is_between, ":agent_trp", "trp_bear", "trp_boar"), #bears need this to keep up with wargs
+      (this_or_next|is_between, ":agent_trp", warg_ghost_begin, warg_ghost_end),
+      (is_between, ":agent_trp", "trp_wild_warg", "trp_future_animal_5"),
       # (assign, reg78, ":speed"),
       # (display_message, "@speed: {reg78}"),
       (gt, ":speed", 400),
@@ -2948,6 +2947,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
       (assign, ":anim", "anim_wolf_snap"),
       (agent_set_slot, ":agent", slot_agent_animal_is_striking, 90),
     (else_try),
+      (this_or_next|is_between, ":agent_trp", warg_ghost_begin, warg_ghost_end),
       (this_or_next|eq, ":agent_trp", "trp_wolf"),
       (eq, ":agent_trp", "trp_wolf_strong"),
       (assign, ":sound", "snd_wolf_strike"),
@@ -3147,10 +3147,12 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (agent_get_troop_id,":troopid", ":agent"),
     (agent_get_item_id,":mount_itm",":agent"),
     (this_or_next|is_between,  ":troopid", "trp_spider", "trp_animals_end"), #check for rider...
+    (this_or_next|is_between,  ":troopid", warg_ghost_begin, warg_ghost_end),
     (this_or_next|eq, ":mount_itm", "itm_wolf"), #...or mount
     (this_or_next|eq, ":mount_itm", "itm_bear"),
     (this_or_next|eq, ":mount_itm", "itm_spider"),
     (this_or_next|is_between, ":mount_itm", "itm_spider_strong", "itm_kine_strong"),
+    (this_or_next|is_between, ":mount_itm", item_warg_begin, item_warg_end),
     (eq, ":mount_itm", "itm_werewolf"),
   ],
 
@@ -3167,11 +3169,18 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         (set_trigger_result, 0), #does this avoid hit sounds on the invisible rider?
     (else_try), #...or mount
         (neg|agent_is_human, ":agent"),
-        (ge, ":damage", 15),
         # (assign, reg78, ":damage"),
         # (display_message, "@damage to animal: {reg78}"),
+        (ge, ":damage", 15),
+        
+        (agent_get_rider, ":rider", ":agent"), #make sure it has a ghost rider
+        (ge, ":rider", 1),
+        (this_or_next|is_between,  ":rider", "trp_spider", "trp_animals_end"),
+        (is_between,  ":rider", warg_ghost_begin, warg_ghost_end),
+        
         (agent_get_animation, ":current_anim", ":agent"),
         (neq, ":current_anim", "anim_wolf_snap"), #avoid stunlocking
+        
         (agent_get_position, pos5, ":agent"),
         (position_move_y, pos5, -30), #fake recoil
         (agent_set_position, ":agent", pos5),
@@ -3187,6 +3196,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
               (assign, ":sound", "snd_spider_strike"),
             (else_try),
               (eq|this_or_next, ":mount_itm", "itm_werewolf"),
+              (this_or_next|is_between, ":mount_itm", item_warg_begin, item_warg_end),
               (eq|this_or_next, ":mount_itm", "itm_wolf"),
               (eq, ":mount_itm", "itm_wolf_strong"),
               (assign, ":sound", "snd_wolf_strike"),
@@ -3473,7 +3483,7 @@ tld_campaign_won =  ((is_a_wb_mt==1) and [
 	] or [])
 
 
-
+#unused, Wargs now use animal_attacks triggers
 tld_warg_leap_attack = ((is_a_wb_mt==1) and [ 
   (3, 0, 0, [], [
   (set_fixed_point_multiplier, 100),

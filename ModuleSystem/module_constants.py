@@ -1402,10 +1402,10 @@ item_horse_begin = itm_sumpter_horse
 item_horse_end = itm_warg_1b
 
 item_warg_begin = itm_warg_1b
-item_warg_end = itm_warg_reward+1
+item_warg_end = itm_wolf_ridable+1
 
 warg_ghost_begin = trp_warg_ghost_1b
-warg_ghost_end = trp_a2_isen_uruk_tracker
+warg_ghost_end = trp_warg_ghost_future9+1 
 
 trade_goods_begin = itm_human_meat #MV: was itm_smoked_fish
 trade_goods_end = itm_siege_supply

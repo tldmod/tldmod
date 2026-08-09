@@ -3866,7 +3866,7 @@ game_menus = [
 
     ("spawn_orc_horde",[],"{!}Spawn Orc Horde with Nazgul", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_mordor_war_party"),(display_message, "@{!}Orc Horde Spawned!"),(party_set_slot, reg0, slot_party_battle_encounter_effect, FELLBEAST),]),
     ("spawn_ent_party",[],"{!}Spawn Ent Party", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_ents"),]),    
-    ("spawn_vet_archer",[],"{!}Spawn Vet Archer", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_vet_archer"),(display_message, "@{!}Vet Archer Spawned!"),(assign, ":party", reg0),(call_script, "script_party_wound_all_members", ":party"),]),
+    ("spawn_vet_archer",[],"{!}spawn gunda scouts", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_gundabad_scouts"),(display_message, "@{!}scouts Spawned!"),(assign, ":party", reg0),(party_clear, ":party"),(party_add_members, ":party", "trp_ca4_gunda_skirmisher", 1),(party_add_members, ":party", "trp_c3_gunda_goblin_rider", 1),]),
     ("melee_ai_test",[],"{!}Melee AI Test", [
     	(set_spawn_radius,1),
     	(spawn_around_party, "p_main_party", "pt_vet_archer"),
