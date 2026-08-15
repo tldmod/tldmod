@@ -2293,7 +2293,7 @@ scripts = [
 	# Set Light Armor Slot for Berserker Trait
 	(call_script, "script_set_slot_light_armor"),
 
-    (assign,"$savegame_version", 4443),  #Rafa: Savegame version; InVain: Changed to _roughly_ show the rev number, helps with savegame inspection
+    (assign,"$savegame_version", 4455),  #Rafa: Savegame version; InVain: Changed to _roughly_ show the rev number, helps with savegame inspection
     (assign,"$original_savegame_version", "$savegame_version"),
     
 	] + (is_a_wb_script==1 and [
@@ -27027,6 +27027,22 @@ command_cursor_scripts = [
         (try_end),
         (assign, "$savegame_version", 4443),
     (try_end),
+
+    (try_begin), #thranduils halls
+        (lt, "$savegame_version", 4455),
+        (assign, "$savegame_version", 4455),
+        (party_set_slot, "p_town_thranduils_halls", slot_center_ambient_sound_day, 0),
+        (party_set_slot, "p_town_thranduils_halls", slot_center_ambient_sound_always, snd_moria_ambiance),
+        (party_set_slot, "p_town_thranduils_halls", slot_center_occasional_sound1_day, 0),
+        
+        #reset mayor slots
+        (try_for_range, ":center_no", centers_begin, centers_end),
+            (party_get_slot, ":mayor", ":center_no", slot_town_elder),
+            (gt, ":mayor", 0),
+            (troop_set_slot, ":mayor", slot_troop_merchant_offered_quest, 0),
+        (try_end),
+    (try_end),
+
 				
     (call_script, "script_update_all_notes"),
     
