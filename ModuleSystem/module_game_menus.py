@@ -4915,7 +4915,7 @@ game_menus = [
   ],[
 	("just_back",[],"{!}Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"{!}None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
-	("impose_quest_1",[],"{!}qst_hunt_beast_coop",[(assign,"$cheat_imposed_quest","qst_hunt_beast_coop")]),
+	("impose_quest_1",[],"{!}qst_hunt_beast_mayor",[(assign,"$cheat_imposed_quest","qst_hunt_beast_mayor")]),
 	("impose_quest_2",[],"{!}qst_troublesome_bandits",[(assign,"$cheat_imposed_quest","qst_troublesome_bandits")]),
 	("impose_quest_3",[],"{!}qst_hunt_down_fugitive",[(assign,"$cheat_imposed_quest","qst_hunt_down_fugitive")]),
 	("impose_quest_4",[],"{!}qst_move_cattle_herd",[(assign,"$cheat_imposed_quest","qst_move_cattle_herd")]),
@@ -12991,7 +12991,8 @@ game_menus = [
 						(faction_set_slot, ":comp", slot_fcomp_troopid, 0),
 						(faction_set_slot, ":comp", slot_fcomp_hp, 0),
 					(try_end),
-					(jump_to_menu, "$quest_auto_menu")
+					(jump_to_menu, "$quest_auto_menu"),
+                    (assign, "$quest_auto_menu", 0), #clear stored menu
                     ]),  
  ]),  
 ( "burial_mound", 0, 
