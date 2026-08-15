@@ -3106,7 +3106,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (else_try),
         (quest_slot_eq, "$random_quest_no", slot_quest_current_state, 13),
         (is_between, ":race", tf_orc_begin, tf_orc_end),
-        (str_store_string, s9, "@Damn it, it has escaped. But my men we able to hunt it down. At least it's dead, I guess."),
+        (str_store_string, s9, "@Damn it, it has escaped. But my men were able to hunt it down. At least it's dead, I guess."),
         (assign, ":completion", 60),
     (else_try),
         (quest_slot_eq, "$random_quest_no", slot_quest_current_state, 13),
@@ -12925,7 +12925,7 @@ A {s6} roams the lands about {s7}. It has slain our hunters, scattered our serva
   (try_begin),
     (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
     (str_store_string, s7, "@Rest assured, we will bring an end to that beast."),  
-    (else_try),
+  (else_try),
     (str_store_string, s7, "@It will not escape me. Before long, its carcass will lie at my feet."),
   (try_end),
   ],
@@ -12954,6 +12954,7 @@ A {s6} roams the lands about {s7}. It has slain our hunters, scattered our serva
     (party_set_ai_behavior, ":quest_target_party", ai_bhvr_patrol_location),
     (party_set_ai_object, ":quest_target_party", "$current_town"),
     (party_set_ai_patrol_radius, ":quest_target_party", 1),
+    (rest_for_hours, 2, 10, 0),
 ]],
 
 [anyone|plyr,"mayor_mission_told_hunt_beast", [

@@ -17860,15 +17860,29 @@ scripts = [
        (troop_set_slot, ":quest_giver", slot_troop_merchant_offered_quest, 0), #InVain
      (try_end),
 	 (try_begin), #find remaining quest target parties, make them normal parties (spawned from Quest Helper Trigger )
-	   (this_or_next|eq, ":quest_no", "qst_deal_with_looters"),
-	   (eq, ":quest_no", "qst_kill_quest_bandit"),
-	   (quest_get_slot, ":target_template", ":quest_no", slot_quest_target_party_template),
-		(try_for_parties, ":quest_targets"),
-			(party_get_template_id, ":party_template", ":quest_targets"),
-			(eq, ":party_template", ":target_template"),
-			(party_set_faction, ":quest_targets", "fac_outlaws"),
-			(party_set_flags, ":quest_targets", pf_quest_party, 0),
-		(try_end),
+        (this_or_next|eq, ":quest_no", "qst_deal_with_looters"),
+        (eq, ":quest_no", "qst_kill_quest_bandit"),
+        (quest_get_slot, ":target_template", ":quest_no", slot_quest_target_party_template),
+        (try_for_parties, ":quest_targets"),
+            (party_get_template_id, ":party_template", ":quest_targets"),
+            (eq, ":party_template", ":target_template"),
+            (party_set_faction, ":quest_targets", "fac_outlaws"),
+            (party_set_flags, ":quest_targets", pf_quest_party, 0),
+        (try_end),
+     (else_try),
+        (eq, ":quest_no", "qst_capture_troll"),
+        (try_for_parties, ":quest_targets"),
+            (party_get_template_id, ":party_template", ":quest_targets"),
+            (eq, ":party_template", "pt_wild_troll"),
+            (call_script, "script_safe_remove_party", ":quest_targets"),
+        (try_end),
+     (else_try),
+        (eq, ":quest_no", "qst_kill_troll"),
+        (try_for_parties, ":quest_targets"),
+            (party_get_template_id, ":party_template", ":quest_targets"),
+            (eq, ":party_template", "pt_raging_trolls"),
+            (call_script, "script_safe_remove_party", ":quest_targets"),
+        (try_end),
      (try_end),
 ]),
 #script_cancel_quest
@@ -33538,6 +33552,7 @@ if is_a_wb_script==1:
         (gt, ":int", 13),
         (assign, ":int_missing", 0),
         (scene_set_slot, ":cur_scene", ":slot", 1),
+        (party_set_slot, "p_legend_deadmarshes", slot_legendary_visited, 1),
         (assign, ":xp_reward",  1000),
     (else_try), # Dead Marshes
         (eq, ":cur_scene", "scn_deadmarshes"),
@@ -33563,6 +33578,7 @@ if is_a_wb_script==1:
         (try_end),
         (scene_slot_eq, ":cur_scene", ":slot", 0),
         (scene_set_slot, ":cur_scene", ":slot", 1),
+        (party_set_slot, "p_legend_deadmarshes", slot_legendary_visited, 1),
         (assign, ":xp_reward",  600),
     (else_try), #Mirkwood
         (eq, ":cur_scene", "scn_mirkwood"),
@@ -33987,7 +34003,16 @@ if is_a_wb_script==1:
         (eq, ":stage", 1),
         (tutorial_message, "@Looking around, you feel that you are not esteemed enough to learn the significance of this place.",0, 10),
     (try_end),
-    
+
+    (try_begin), #trait
+        (troop_get_slot, ":counter", "trp_traits", slot_trait_well_travelled),
+        (neq, ":counter", 1), #trait not acquired yet
+        (scene_slot_eq, ":cur_scene", ":slot", 1), #secret unlocked?
+        (scene_set_slot, ":cur_scene", ":slot", 2), #count each secret only once
+        (val_add, ":counter", 2), 
+        (troop_set_slot, "trp_traits", slot_trait_well_travelled, ":counter"),
+    (try_end),
+
     #InVain: Bonus quest XP from intelligence
     (store_attribute_level, ":int", "trp_player", ca_intelligence),
     (store_mul, ":int_xp_multi", ":int",":int"),

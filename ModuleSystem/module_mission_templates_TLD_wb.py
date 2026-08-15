@@ -4041,6 +4041,11 @@ tld_animals_join_battle =(
     (ge, ":parent_agent", 0),
     #apply wildcraft bonus / malus
     (party_get_skill_level, ":wildcraft", p_main_party, "skl_persuasion"),
+    (try_for_range, ":item_slot", ek_item_0, ek_item_3 + 1),
+        (agent_get_item_slot, ":item", ":player_agent", ":item_slot"),
+        (eq, ":item", "itm_beorn_shield_reward"),
+        (val_add, ":wildcraft", 4),
+    (try_end),
     (assign, reg6, 0), #for message string
     (try_begin),
         (neg|agent_is_ally, ":parent_agent"),
@@ -4078,6 +4083,16 @@ tld_animals_join_battle =(
         (team_set_relation, 5, 4, 1),
     (else_try), #fallback
         (assign, ":animal_team", ":parent_team"),
+    (try_end),
+    
+    (try_begin), #bear trait
+        (eq, ":ambush_troop", "trp_bear"),
+        (eq, "$players_kingdom", "fac_beorn"),
+        (troop_get_slot, ":bear_kinship", "trp_traits", slot_trait_bear_shape),
+        (neq, ":bear_kinship", 1), #slot=1 means trait active
+        (val_add, ":bear_kinship", 2),
+        (troop_set_slot, "trp_traits", slot_trait_bear_shape, ":bear_kinship"),
+        #(call_script, "script_update_bear_kinship"),
     (try_end),
     
     #debug

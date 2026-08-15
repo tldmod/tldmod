@@ -1740,14 +1740,14 @@ triggers = [
       #(assign, "$morannon_healing"    , 0),
       
       (try_begin), #Well-Travelled
-        (troop_slot_eq, "trp_traits", slot_trait_well_travelled, 0),
-        (assign, ":visited", 0),
+        (troop_get_slot, ":counter", "trp_traits", slot_trait_well_travelled),
+        (neq, ":counter", 1),
         (try_for_range, ":places", "p_legend_amonhen", "p_theater_SE_center"),
           (party_slot_eq, ":places", slot_legendary_visited, 1),
-          (val_add, ":visited",1),
+          (val_add, ":counter",5),
         (try_end),
         #Don't forget to add Fangorn condition for side_good later, when we've added Fangorn description - Kham
-        (ge, ":visited",3),
+        (ge, ":counter",20),
         (call_script, "script_gain_trait_well_travelled"),
       (try_end),
     ] + (is_a_wb_trigger==1 and [

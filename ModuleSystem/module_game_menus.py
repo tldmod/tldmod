@@ -13481,16 +13481,16 @@ game_menus = [
     (troop_get_slot, ":counter", "trp_traits", slot_trait_animal_fighter),
     (neq, ":counter", 1), #counter still active? 1 means trait gained    
     #(assign, reg78, ":counter"), (display_message, "@counter: {reg78}"),
-    (val_add, ":counter", 2), 
+    (val_add, ":counter", 20), 
     (troop_set_slot, "trp_traits", slot_trait_animal_fighter, ":counter"),
-    (ge, ":counter", 6), #at least 3 encounters
+    (ge, ":counter", 60), #at least 3 encounters
     
     (store_skill_level, ":wildcraft", skl_persuasion, trp_player),
     (ge, ":wildcraft", 3),
     (val_mul, ":counter", ":wildcraft"), #3 wildcraft and 5 wins means 30% chance; 5 wildcraft and 5 wins 50% chance;
     #(assign, reg78, ":counter"), (display_message, "@counter and wildcraft: {reg78}"),
     
-    (store_random_in_range, ":rnd", 0, 100),
+    (store_random_in_range, ":rnd", 0, 1000),
     (lt, ":rnd", ":counter"), 
     (call_script, "script_gain_trait", slot_trait_animal_fighter),
     (troop_raise_skill, trp_player, skl_persuasion, 1),
@@ -14052,6 +14052,24 @@ game_menus = [
         (quest_get_slot, ":party", "$random_quest_no", slot_quest_target_party),
         (party_is_active, ":party"),
         (call_script, "script_safe_remove_party", ":party"),
+        
+        #trait counter
+        (try_begin),
+            (troop_get_slot, ":trait_kills", "trp_traits", slot_trait_animal_fighter),
+            (neq, ":trait_kills", 1), 
+            (val_add, ":trait_kills", 20),
+            (troop_set_slot, trp_traits, slot_trait_animal_fighter, ":trait_kills"),
+                
+            (store_skill_level, ":wildcraft", skl_persuasion, trp_player),
+            (ge, ":wildcraft", 3),
+            (val_mul, ":trait_kills", ":wildcraft"), #3 wildcraft and 5 wins means 30% chance; 5 wildcraft and 5 wins 50% chance;
+            #(assign, reg78, ":counter"), (display_message, "@counter and wildcraft: {reg78}"),
+            
+            (store_random_in_range, ":rnd", 0, 1000),
+            (lt, ":rnd", ":trait_kills"), 
+            (call_script, "script_gain_trait", slot_trait_animal_fighter),
+            (troop_raise_skill, trp_player, skl_persuasion, 1),
+        (try_end),
         
         #compute xp reward
         (quest_get_slot, ":num_companions", "$random_quest_no", slot_quest_target_item),
