@@ -2801,15 +2801,22 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (item_get_hit_points, ":xp", ":mount_itm"),
     (add_xp_to_troop, ":xp", ":killer_troop"),
     (eq, ":killer_troop", "trp_player"),
-    (agent_get_slot, ":animal_kills", ":killer", slot_agent_player_animal_kills),
-    (val_add, ":animal_kills", 1),
-    (agent_set_slot, ":killer", slot_agent_player_animal_kills, ":animal_kills"),
-    (ge, ":animal_kills", 3),
-    (troop_get_slot, ":trait_kills", "trp_traits", slot_trait_animal_fighter),
-    (neq, ":trait_kills", 1), 
-    (val_add, ":trait_kills", 2), #add two points per kill, because 1 meants trait gained
-    (troop_set_slot, trp_traits, slot_trait_animal_fighter, ":trait_kills"),
-
+    (try_begin),
+        (is_between, ":mount_itm", item_warg_begin, item_warg_end),
+        (troop_get_slot, ":trait_kills", "trp_traits", slot_trait_warg_fiend),
+        (neq, ":trait_kills", 1), 
+        (val_add, ":trait_kills", 2), #add two points per kill, because 1 means trait gained
+        (troop_set_slot, trp_traits, slot_trait_warg_fiend, ":trait_kills"),
+    (else_try),
+        (agent_get_slot, ":animal_kills", ":killer", slot_agent_player_animal_kills),
+        (val_add, ":animal_kills", 1),
+        (agent_set_slot, ":killer", slot_agent_player_animal_kills, ":animal_kills"),
+        (ge, ":animal_kills", 3),
+        (troop_get_slot, ":trait_kills", "trp_traits", slot_trait_animal_fighter),
+        (neq, ":trait_kills", 1), 
+        (val_add, ":trait_kills", 2), #add two points per kill, because 1 means trait gained
+        (troop_set_slot, trp_traits, slot_trait_animal_fighter, ":trait_kills"),
+    (try_end),
   ]),
   
   # deal with dismounted riders, just in case

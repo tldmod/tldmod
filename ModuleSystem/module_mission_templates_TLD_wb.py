@@ -1638,6 +1638,24 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
 	  #(assign, reg56, ":damage"),
       #(display_message, "@{s2} weapon - {reg55} Before - {reg56} after - {reg57} Dist from Head"),
 
+      (try_begin), #troll traits
+        (troop_slot_eq, "trp_traits", slot_trait_troll_hunter, 1),
+        (eq, ":dealer", ":player_agent"),
+        (this_or_next|eq, ":type", itp_type_bow),
+        (this_or_next|eq, ":type", itp_type_crossbow),
+        (eq, ":type", itp_type_thrown),
+        (val_mul, ":damage", 130),
+        (val_div, ":damage", 100),
+      (else_try),
+        (troop_slot_eq, "trp_traits", slot_trait_troll_slayer, 1),
+        (eq, ":dealer", ":player_agent"),
+        (this_or_next|eq, ":type", itp_type_one_handed_wpn),
+        (this_or_next|eq, ":type", itp_type_two_handed_wpn),
+        (eq, ":type", itp_type_polearm),
+        (val_mul, ":damage", 130),
+        (val_div, ":damage", 100),
+      (try_end),
+
       # weapon type
       (try_begin),
         (eq, ":type", itp_type_bow),
@@ -1902,11 +1920,13 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
 
 
 tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
-    (this_or_next|check_quest_active, "qst_kill_quest_troop"), #Targeted Kill quest
-    (this_or_next|check_quest_active, "qst_kill_quest_faction"), #Faction Troop Kill Quest
-    (this_or_next|check_quest_active, "qst_kill_quest_bandit"), #Bandit Kill quest
-    (this_or_next|check_quest_active, "qst_oath_of_vengeance"),
-    (check_quest_active, "qst_oath_personal"),     ],
+    # (this_or_next|check_quest_active, "qst_kill_quest_troop"), #Targeted Kill quest
+    # (this_or_next|check_quest_active, "qst_kill_quest_faction"), #Faction Troop Kill Quest
+    # (this_or_next|check_quest_active, "qst_kill_quest_bandit"), #Bandit Kill quest
+    # (this_or_next|check_quest_active, "qst_oath_of_vengeance"),
+    # (check_quest_active, "qst_oath_personal"),   
+    # InVain: Remove quest conditions, re-use this trigger for counting all kinds of kills
+    ],
 
     # trigger param 1 = defeated agent_id
     # trigger param 2 = attacker agent_id
@@ -2029,12 +2049,31 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
       #Debug
       #(assign, reg32, ":current_amount"),
       #(display_message, "@Kill Quest - {reg32}", color_good_news),
-
       (try_begin),
         (ge, ":current_amount", ":target_amount"),
         (call_script, "script_succeed_quest", "qst_kill_quest_bandit"),
       (try_end),
-
+    (try_end),
+    
+    (try_begin), #troll slayer traits
+        (eq, ":killer", ":player"),
+        (eq, ":type", tf_troll), #includes ents
+        (agent_get_wielded_item, ":item", ":player", 0),
+        (item_get_type, ":item_type", ":item"),
+        (try_begin),
+            (this_or_next|eq, ":item_type", itp_type_bow),
+            (this_or_next|eq, ":item_type", itp_type_crossbow),
+            (eq, ":item_type", itp_type_thrown),
+            (troop_get_slot, ":counter", "trp_traits", slot_trait_troll_hunter),
+            (neq, ":counter", 1),
+            (val_add, ":counter", 2),
+            (troop_set_slot, "trp_traits", slot_trait_troll_hunter, ":counter"),
+        (else_try),
+            (troop_get_slot, ":counter", "trp_traits", slot_trait_troll_slayer),
+            (neq, ":counter", 1),
+            (val_add, ":counter", 2),
+            (troop_set_slot, "trp_traits", slot_trait_troll_slayer, ":counter"),
+        (try_end),
     (try_end),
   ])
 
@@ -3825,12 +3864,14 @@ tld_battlefield_agent_effects = [
         # (str_store_troop_name, s6, ":troop_no"),
         # (assign, reg78, ":movement_malus"),
         # (display_message, "@{s6} movement malus: {reg78}"),
-        # (try_begin), #light armor trait
-            # (eq, ":troop_no", trp_player),
-            # (troop_get_slot, ":trait_score", "trp_traits", slot_trait_light_armor),
-            # (lt, ":movement_malus", 0),
-            # (store_mul, ":trait_score", ":movement_malus", -1),
-        # (try_end),
+        (try_begin), #light armor trait
+            (eq, ":troop_no", trp_player),
+            (troop_get_slot, ":trait_score", "trp_traits", slot_trait_light_armor),
+            (neq, ":trait_score", 1),
+            (lt, ":movement_malus", 2),
+            (val_add, ":trait_score", 2),
+            (troop_set_slot, "trp_traits", slot_trait_light_armor, ":trait_score"),
+        (try_end),
         (val_max, ":movement_malus", 0),
     (else_try),
         (neg|troop_is_hero, ":troop_no"),
@@ -3839,7 +3880,17 @@ tld_battlefield_agent_effects = [
         (val_max, ":athletics", 0),
         (store_sub, ":movement_malus", 15, ":athletics"), #1-15
     (try_end),
-        
+
+    (try_begin), #light armor trait
+        (eq, ":troop_no", trp_player),
+        (troop_slot_eq, "trp_traits", slot_trait_light_armor, 1),
+        (val_add, ":horse_speed_mod", 10),
+        (val_add, ":melee_damage_mod", 5),
+        (val_add, ":accuracy_mod", 5),
+        (val_add, ":reload_speed_mod", 5),
+        (val_add, ":speed_mod", 10),
+    (try_end),
+
      #environment effects
     (try_begin),
         (this_or_next|eq, "$terrain_condition", tc_dark_forest),

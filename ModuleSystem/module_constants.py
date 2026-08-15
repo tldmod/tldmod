@@ -221,13 +221,23 @@ slot_agent_warg_pounce_time		= slot_agent_troll_uncontrollable
 slot_agent_is_running_away		= 25
 
 #InVain
-slot_agent_base_accuracy		= 26 #used for resetting accuracy after unquipping shields
-slot_agent_walker_joined        = 27 #1= accepted; 2= denied
-slot_agent_animal_is_striking   = 28 #also stores attack range
-slot_agent_array_troop          = 29
-slot_agent_array_number         = 30
-slot_agent_original_team        = 31
+slot_agent_walker_joined        = 26 #1= accepted; 2= denied
+slot_agent_animal_is_striking   = 27 #also stores attack range
+slot_agent_array_troop          = 28
+slot_agent_array_number         = 29
+slot_agent_original_team        = 30
+
+slot_agent_base_accuracy		= 31 #used for resetting accuracy after unquipping shields
 slot_agent_base_horse_speed	    = 32 #needed for keeping horse speed factor between triggers
+slot_agent_base_damage_multi    = 33
+slot_agent_base_speed_multi     = 34
+slot_agent_base_reload_speed_multi = 35
+slot_agent_base_ranged_damage_multi = 36
+
+slot_agent_player_berserker_kills = 37
+slot_agent_player_animal_kills = 38
+slot_agent_player_warg_kills = 39
+slot_agent_player_horse_kills = 40
 
 slot_agent_hp_shield_active = 43 #Modified Vyrn HP Shield - kham
 slot_agent_hp_shield = 44 #Modified Vyrn HP Shield - kham
@@ -1133,6 +1143,9 @@ slot_trait_warg_fiend        = 28
 slot_trait_troll_slayer      = 29
 slot_trait_troll_hunter      = 30
 slot_trait_light_armor       = 31
+slot_trait_ranger            = 32
+slot_trait_night_fighter     = 33
+slot_trait_day_fighter       = 34
 slot_trait_first             = slot_trait_elf_friend
 slot_trait_last              = slot_trait_light_armor
 
