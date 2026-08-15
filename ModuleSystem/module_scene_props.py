@@ -2676,7 +2676,7 @@ scene_props = [
 ("LMH_base",0,"LMH_base","bo_LMH_base",[]),
 ("LMH_wall_a",0,"LMH_wall_a","bo_LMH_wall_a",[]),
   
-("thranduil_hall",0,"thranduil_hall","bo_thranduil_hall", [(ti_on_scene_prop_init,[(set_fog_distance,210,0x015050),]),]),
+("thranduil_hall",0,"thranduil_hall","bo_thranduil_hall", [(ti_on_scene_prop_init,[(set_fog_distance,210,0x015050),]),]), #unused
 ("thranduil_helm1",0,"statuemirk_helm1","0",[]),
 ("thranduil_helm2",0,"statuemirk_helm2","0",[]),
 ("thranduil_helm3",0,"statuemirk_helm3","0",[]),
@@ -2718,7 +2718,20 @@ scene_props = [
 ("arabian_lighthouse_a",0,"arabian_lighthouse_a","bo_arabian_lighthouse_a", []), #WB
 
 ("thranduil_hall_entrance",0,"thranduil_hall_entrance","bo_thranduil_hall_entrance",[]),
-("thranduil_throne",0,"thranduil_throne","bo_thranduil_throne",[]),
+#("thranduil_throne",0,"thranduil_throne","bo_thranduil_throne",[]),
+("thranduil_cave",0,"thranduil_cave","bo_thranduil_cave",[
+    (ti_on_scene_prop_init,[
+        (set_fixed_point_multiplier, 10000),
+        (set_fog_distance,400,0x172617),
+        (assign, "$base_fog", 200),
+        (assign, "$base_fog_color", 0x172617),
+    ] + (is_a_wb_sceneprop==1 and [
+        (set_startup_sun_light, 5, 5, 5),
+        (set_startup_ground_ambient_light, 5, 5, 5),
+        #(set_startup_ambient_light, 150, 300, 150),
+        (set_startup_ambient_light, 750, 900, 750),
+    ] or []) + [ 
+    ])]),
 ("distant_mountain_white",sokf_place_at_origin|sokf_moveable,"mountains_outer","0",[]),
 ("distant_mountain_white_farther",sokf_place_at_origin|sokf_moveable,"mountains_outer_farther","0",[]),
   
@@ -2898,6 +2911,7 @@ scene_props = [
 ("tunnel_spiderweb1",0,"spiderweb1","0", []),
 ("tunnel_spiderweb2",0,"spiderweb2","0", []),
 ("tunnel_spiderweb3",0,"spiderweb3","0", []),
+#crystals used in scn_goblin_north_outpost_center/siege, scn_umbar_camp_center, scn_umbar_arena
 ("tunnel_crystal1",0,"crystal1","bo_crystal134", []),
 ("tunnel_crystal2",0,"crystal2","bo_crystal256", []),
 ("tunnel_crystal3",0,"crystal3","bo_crystal134", []),

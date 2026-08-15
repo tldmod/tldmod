@@ -24305,6 +24305,7 @@ scripts = [
         (try_begin),
             (this_or_next|eq, "$current_town", "p_town_moria"), #no mounts in cave towns
             (this_or_next|eq, "$current_town", "p_town_goblin_north_outpost"), 
+            (this_or_next|eq, "$current_town", "p_town_thranduils_halls"), 
             (eq, "$current_town", "p_town_erebor"),
             (mission_tpl_entry_set_override_flags, "mt_town_center", 1, ":override_state"),
             (mission_tpl_entry_set_override_flags, "mt_town_center", 2, ":override_state"),

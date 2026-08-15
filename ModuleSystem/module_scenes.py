@@ -118,7 +118,7 @@ scenes = [
 #  ("caras_galadhon_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],["player_chest"],"outer_terrain_forest"),#Kolba  
   ("cerin_dolen_center"     ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
   ("cerin_amroth_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
-  ("thranduils_halls_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
+  ("thranduils_halls_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000140000500c003d8f600003efe80001f95000040d0",[],[],0),#Kolba
   ("woodelf_camp_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001b01918d980058d66000023ad0000751200006b67",[],[],"outer_terrain_forest"),
   ("woodsmen_village_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000000200005d000057d5e000074e600006c2600006d0d",[],[],"outer_terrain_plain"), #
   ("moria_center"           ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000008160b00000f768000576c00001d2c",[],["player_chest"]),
@@ -217,8 +217,9 @@ scenes = [
 ("battle_scene_plain_01",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x000000023001c600000691a400003efe00004b34000059be",[],[], "outer_terrain_plain"), ## Plain Battle Field with a small farm and a road crossing the map
 ("battle_scene_plain_02",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x0000000230054800000691a400003efe00004b34000011d9",[],[], "outer_terrain_plain"), ## Plain Battle Field with a road crossing the map and a river with small bridge, lake with a fisher-house
 ("bridge_1",sf_generate,"none", "none", (0,0),(120,120),-100,"0x3a078bb2000589630000667200002fb90000179c",[],[], "outer_terrain_plain"), ## Plain Bridge Battle with destroyed buildings
-("battle_scene_mountain_forest_01",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x0000000230054800000691a400003efe00004b34000011d9",[],[], "outer_terrain_plain"), ## Mountain Forest with mines
+#("battle_scene_mountain_forest_01",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x0000000230054800000691a400003efe00004b34000011d9",[],[], "outer_terrain_plain"), ## Mountain Forest with mines
 
+("thranduils_halls_gate",sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
 ("aw_tomb"              ,sf_indoors,"aw_tomb"                       , "bo_aw_tomb"                  , (-100,-100),(240,240),-100,"0",[],[]),
 ("dol_amroth_castle"    ,sf_indoors,"interior_castle_dolamroth"     , "bo_interior_castle_dolamroth", (-100,-100),(100,100),-100,"0",[],[]),
 ("isengard_castle"      ,sf_indoors,"interior_throneroom_isengard_a", "bo_interior_castle_gondor_d" , (-100,-100),(100,100),-100,"0",[],["player_chest"]),

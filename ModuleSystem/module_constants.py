@@ -2174,6 +2174,7 @@ center_sounds=[#center      slot_center_ambient_sound_day , slot_center_ambient_
     (p_town_lossarnach   ,snd_gondor_ambiance ,snd_goodforest_ambiance      ,snd_elves_occasional),
     (p_town_pinnath_gelin,snd_gondor_ambiance ,snd_goodforest_ambiance      ,snd_elves_occasional),
     (p_town_erebor       ,snd_town_ambiance   ,snd_moria_ambiance           ,snd_dwarf_occasional),
+    (p_town_thranduils_halls,0                ,snd_moria_ambiance           ,snd_elves_occasional),
     (p_town_minas_morgul ,0                   ,snd_morgul_ambiance          ,snd_morgul_occasional),
     (p_town_gundabad     ,0                   ,snd_wind_ambiance            ,snd_orc_occasional),    
     (p_town_gundabad_m_outpost,snd_orcs_ambiance,snd_evilforest_ambiance	,snd_orc_occasional),

@@ -609,6 +609,12 @@ mission_templates = [ # not used in game
 				(             eq,  ":cur_scene", "scn_west_osgiliath_center"),
 				(replace_scene_props, "spr_osgiliath_broken_bridge_beams", "spr_empty"),
 			(try_end),
+			# put appropriate rain/snow
+			(try_begin),
+					(store_current_scene, ":cur_scene"),
+					(is_between,  ":cur_scene", "scn_caras_galadhon_center", "scn_woodsmen_village_center"),
+					(set_rain, 2,100), #yellow thingies in elven places
+			(try_end),
 			# check if dungeons are present in a scene
 			(assign, "$dungeons_in_scene", 0), 
 			(try_for_range,":cur_scene","spr_light_fog_black0","spr_moria_rock"),
@@ -616,12 +622,6 @@ mission_templates = [ # not used in game
 				(ge,":max_instance", 1),
 				(assign, "$dungeons_in_scene", 1),
 				(set_rain, 0,100), #rain would be visible in dungeons, too.
-			(try_end),
-			# put appropriate rain/snow
-			(try_begin),
-					(store_current_scene, ":cur_scene"),
-					(is_between,  ":cur_scene", "scn_caras_galadhon_center", "scn_woodsmen_village_center"),
-					(set_rain, 2,100), #yellow thingies in elven places
 			(try_end),
 			
 			]),

@@ -9854,16 +9854,23 @@ game_menus = [
 						 (change_screen_mission)],"Go to the Citadel"),
 						 
 #menu no. 21						 
-  	  ("erebor_gates",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_erebor"),(eq,"$entry_to_town_forbidden",0)
+  	  ("erebor_gates",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(this_or_next|eq, "$current_town", "p_town_erebor"),(eq, "$current_town", "p_town_thranduils_halls"),(eq,"$entry_to_town_forbidden",0)
 						], "Visit the Great Gates.",
-						[
-                        (call_script, "script_initialize_center_scene", "scn_erebor_gate"),
-                         #(set_jump_mission, "mt_town_center"),
-                         (assign,"$dungeons_in_scene",1),
-                         (assign, "$bs_night_sound", "snd_wind_ambiance"),
-                         (assign, "$bs_day_sound", "snd_wind_ambiance"),
-						 (jump_to_scene, "scn_erebor_gate"),
-						 (change_screen_mission)],"Go to the Great Gates"),
+                        [(try_begin),
+                            (eq, "$current_town", "p_town_erebor"),
+                            (assign,"$dungeons_in_scene",1),
+                            (assign, "$bs_night_sound", "snd_wind_ambiance"),
+                            (assign, "$bs_day_sound", "snd_wind_ambiance"),
+                            (assign, ":scene_to_use", "scn_erebor_gate"),
+                        (else_try),
+                            (eq, "$current_town", "p_town_thranduils_halls"),
+                            (assign, "$bs_night_sound", "snd_goodforest_ambiance"),
+                            (assign, "$bs_day_sound", "snd_goodforest_ambiance"),
+                            (assign, ":scene_to_use", "scn_thranduils_halls_gate"),
+                        (try_end),
+                        (call_script, "script_initialize_center_scene", ":scene_to_use"),
+                        (jump_to_scene, ":scene_to_use"),
+						(change_screen_mission)],"Go to the Great Gates"),
 
 #menu no. 22						 
   	  ("glittering_caves",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_hornburg"),(eq,"$entry_to_town_forbidden",0), (this_or_next|scene_slot_eq, "scn_hornburg_castle", slot_scene_visited, 1), (eq, "$cheat_mode", 1),
