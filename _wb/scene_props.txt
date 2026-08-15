@@ -4201,7 +4201,8 @@ spr_arabian_lighthouse_a 0 0 arabian_lighthouse_a bo_arabian_lighthouse_a 0
 spr_thranduil_hall_entrance 0 0 thranduil_hall_entrance bo_thranduil_hall_entrance 0
 
 
-spr_thranduil_cave 0 0 thranduil_cave bo_thranduil_cave 0
+spr_thranduil_cave 0 0 thranduil_cave bo_thranduil_cave 1
+-40  7 2124 1 10000 1798 2 400 1517079 2133 2 144115188075856780 200 2133 2 144115188075856782 1517079 2390 3 5 5 5 2392 3 5 5 5 2391 3 750 900 750 
 
 
 spr_distant_mountain_white 69632 0 mountains_outer 0 0

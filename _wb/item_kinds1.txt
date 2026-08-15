@@ -207,10 +207,10 @@ itemsfile version 2
  itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_huge 0  1 0 3000 16106389504 0 100 0 32 0 3 120 55 35 100 0 35 0
 0
 
- itm_warg_wild_1 Wild_Warg Wild_Warg 1  warg_1B 0  1 0 600 84825866240 0 90 0 10 0 1 80 69 36 80 0 20 0
+ itm_warg_wild_1 Wild_Warg Wild_Warg 1  mm_warg_c 0  1 0 600 84825866240 0 90 0 10 0 2 80 75 36 70 0 20 0
 0
 
- itm_warg_wild_2 Huge_Wild_Warg Huge_Wild_Warg 1  warg_1C 0  1 0 600 84825866240 0 90 0 10 0 3 80 69 36 90 0 20 0
+ itm_warg_wild_2 Huge_Wild_Warg Huge_Wild_Warg 1  mm_warg_b 0  1 0 600 84825866240 0 90 0 15 0 4 100 69 36 80 0 20 0
 0
 
  itm_troll_weapon_long Giant_Halberd Giant_Halberd 1  isengard_halberd_troll 0  2251941637783556 512 1 0 58 100 0 0 0 0 30720 70 120 200 0 542 542
@@ -225,7 +225,7 @@ itemsfile version 2
  itm_troll_aoe {!}troll_aoe {!}troll_aoe 1  dummy_mesh 0  141822001155 9259400833873739810 1 0 58 100 0 0 0 0 1024 90 0 110 0 513 513
 0
 
- itm_free_2_handed_axe {!}Northmen_Longaxe {!}Northmen_Longaxe 1  2_handed_axe 0  2251838810554372 9223635923965575392 700 156672 8 100 0 0 0 10 48128 82 0 110 0 256 47
+ itm_wolf_ridable Great_Wolf Great_Wolf 1  wolf_black_ridable 0  4097 0 1200 0 0 100 0 25 0 2 80 75 35 70 0 12 0
 0
 
  itm_free_giant_hammer {!}Giant_Hammer {!}Giant_Hammer 1  giant_hammer 0  137443147778 9223372036854775808 1 0 58 100 0 0 0 0 16384 96 0 150 0 65 80
@@ -2988,7 +2988,7 @@ itemsfile version 2
  itm_bear_strong Great_Bear Great_Bear 1  bear_2 0  4097 0 1200 0 0 100 0 60 0 10 200 60 40 130 0 70 0
 0
 
- itm_wolf_strong Great_Wolf Great_Wolf 1  wolf_black 0  4097 0 1200 0 0 100 0 25 0 10 80 75 35 105 0 12 0
+ itm_wolf_strong Great_Wolf Great_Wolf 1  wolf_black_ridable 0  4097 0 1200 0 0 100 0 25 0 2 80 75 35 70 0 12 0
 0
 
  itm_boar Boar Boar 1  boar 0  4097 0 1200 0 0 100 0 25 0 10 70 75 30 105 0 45 0
