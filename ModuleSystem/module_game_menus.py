@@ -1516,7 +1516,7 @@ game_menus = [
  ),
 ( "start_gondor",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where are you from, in Gondor?", "none",[(assign, "$last_menu", "mnu_start_gondor")],[
- ("quick_start_gondor"     ,[(eq, cheat_switch, 1),],"{!}[dev: quick start]",[(assign, "$cheat_mode", 1),(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_c1_gon_nobleman"), (jump_to_menu,"mnu_start_phase_2" ),]),
+ ("quick_start_gondor"     ,[(eq, cheat_switch, 1),],"{!}[dev: quick start]",[(assign, "$cheat_mode", 1),(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_c1_gon_nobleman"),(troop_raise_attribute, "trp_player", ca_intelligence, -30),(troop_add_proficiency_points, "trp_player", -100), (jump_to_menu,"mnu_start_phase_2" ),]),
  ("start_mt",[],"MINAS TIRITH, the Capital"                    ,[(troop_set_slot, "trp_player", slot_troop_subfaction, subfac_regular),(jump_to_menu,"mnu_start_gondor_mt"),]),
  ("start_ls",[],"LOSSARNACH, the Fiefdom of the Axemen"        ,[(assign,"$player_current_troop_type","trp_i1_loss_woodsman"),  (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_lossarnach),  	   (jump_to_menu,"mnu_choose_gender"),]),
  ("start_la",[],"LAMEDON, the Fiefdom of the Mountain Clansmen",[(assign,"$player_current_troop_type","trp_i1_lam_clansman"),     (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_ethring),   	   (jump_to_menu,"mnu_choose_gender"),]),
@@ -1531,7 +1531,7 @@ game_menus = [
  ),
 ( "start_eye_man",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your people:", "none",[(assign, "$last_menu", "mnu_start_eye_man")],[
- ("quick_start_harad"     ,[(eq, cheat_switch, 1),],"{!}[dev: quick start]",[(assign, "$cheat_mode", 1),(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_c2_harondor_scout"), (jump_to_menu,"mnu_start_phase_2" ),]),
+ ("quick_start_harad"     ,[(eq, cheat_switch, 1),],"{!}[dev: quick start]",[(assign, "$cheat_mode", 1),(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_c2_harondor_scout"),(troop_raise_attribute, "trp_player", ca_intelligence, -30),(troop_add_proficiency_points, "trp_player", -100), (jump_to_menu,"mnu_start_phase_2" ),]),
  ("start_hr",[],"HARADRIM, the desert people from the South",    [(jump_to_menu,"mnu_start_haradrim"),]),  
  ("start_bn",[],"Black NUMENOREANS, the renegades from the West",[(assign,"$player_current_troop_type","trp_i2_mordor_num_renegade"),(jump_to_menu,"mnu_start_numenorean"),]),
  ("start_um",[],"UMBAR, the pirates from the South Seas",        [(assign,"$player_current_troop_type","trp_i1_corsair_youth"),            (jump_to_menu,"mnu_choose_gender"),]),
@@ -1545,7 +1545,7 @@ game_menus = [
 
 ( "start_eye_uruk",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[(assign, "$last_menu", "mnu_start_eye_uruk")],[
- ("quick_start_uruk"     ,[(eq, cheat_switch, 1),],"{!}[dev: quick start]",[(assign, "$cheat_mode", 1),(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_i1_mordor_uruk_snaga"), (jump_to_menu,"mnu_start_phase_2" ),]),
+ ("quick_start_uruk"     ,[(eq, cheat_switch, 1),],"{!}[dev: quick start]",[(assign, "$cheat_mode", 1),(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_i1_mordor_uruk_snaga"),(troop_raise_attribute, "trp_player", ca_intelligence, -30),(troop_add_proficiency_points, "trp_player", -100), (jump_to_menu,"mnu_start_phase_2" ),]),
  ("start_arm_uruk",[],"in the armies amassed at MORDOR", [(assign,"$player_current_troop_type","trp_i1_mordor_uruk_snaga"),   (jump_to_menu,"mnu_start_as_one"),]),
  ("start_cav_uruk",[],"in the caves of DOL GULDUR",      [(assign,"$player_current_troop_type","trp_i1_mordor_uruk_snaga"), (call_script, "script_player_join_faction", "fac_guldur"), (jump_to_menu,"mnu_start_as_one"),]),
  ("spacer" ,[],"{!}_"  ,[]),
@@ -1555,7 +1555,7 @@ game_menus = [
  ),
 ( "start_eye_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[(assign, "$last_menu", "mnu_start_eye_orc")],[
- ("quick_start_orc"     ,[(eq, cheat_switch, 1),],"{!}[dev: quick start]",[(assign, "$cheat_mode", 1),(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_i1_mordor_orc_snaga"), (jump_to_menu,"mnu_start_phase_2" ),]),
+ ("quick_start_orc"     ,[(eq, cheat_switch, 1),],"{!}[dev: quick start]",[(assign, "$cheat_mode", 1),(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_i1_mordor_orc_snaga"),(troop_raise_attribute, "trp_player", ca_intelligence, -30),(troop_add_proficiency_points, "trp_player", -100), (jump_to_menu,"mnu_start_phase_2" ),]),
  ("start_arm",[],"in the armies amassed at MORDOR", [(assign,"$player_current_troop_type","trp_i1_mordor_orc_snaga"),   (jump_to_menu,"mnu_start_as_one"),]),
  ("start_cav",[],"in the caves of DOL GULDUR",      [(assign,"$player_current_troop_type","trp_i1_guldur_orc_snaga"),   (jump_to_menu,"mnu_start_as_one"),]),
  ("spacer" ,[],"{!}_"  ,[]),
@@ -1565,7 +1565,7 @@ game_menus = [
  ),
 ( "start_hand_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[(assign, "$last_menu", "mnu_start_hand_orc")],[
- ("quick_start_moria"     ,[(eq, cheat_switch, 1),],"{!}[dev: quick start Moria]",[(assign, "$cheat_mode", 1),(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_i1_moria_snaga"), (jump_to_menu,"mnu_start_phase_2" ),]),
+ ("quick_start_moria"     ,[(eq, cheat_switch, 1),],"{!}[dev: quick start Moria]",[(assign, "$cheat_mode", 1),(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (call_script,"script_start_as_one","trp_i1_moria_snaga"),(troop_raise_attribute, "trp_player", ca_intelligence, -30),(troop_add_proficiency_points, "trp_player", -100), (jump_to_menu,"mnu_start_phase_2" ),]),
  ("start_armis",[],"in the Armies amassed at ISENGARD",[(assign,"$player_current_troop_type","trp_i1_isen_orc_snaga"),(jump_to_menu,"mnu_start_as_one"),]),
  ("start_minmo",[],"in the Mines of MORIA"            ,[(assign,"$player_current_troop_type","trp_i1_moria_snaga"),       (jump_to_menu,"mnu_start_as_one"),]),
  ("start_cliff",[],"in the cliffs of Mount GUNDABAD",  [(assign,"$player_current_troop_type","trp_i1_gunda_goblin"),      (jump_to_menu,"mnu_start_as_one"),]),
@@ -1625,7 +1625,7 @@ game_menus = [
 	],
 	[ ("skip",[(eq, cheat_switch, 1),],"{!}SKIP THAT: let me playtest now",[ #tick QoL options, disable tutorials
         (assign, "$cheat_mode", 1), (assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0),(assign, "$formations_tutorial", 4),
-        (assign, "$first_time_town",1),(jump_to_menu, "mnu_start_phase_2"),]),
+        (assign, "$first_time_town",1),(troop_raise_attribute, "trp_player", ca_intelligence, -30),(troop_add_proficiency_points, "trp_player", -100),  (jump_to_menu, "mnu_start_phase_2"),]),
       ("see_info_pages",[],"TLD game concepts.",[(change_screen_notes, 5, 5),]),
 	  ("proc",[],"Proceed",[(jump_to_menu, "mnu_auto_return"),])]
  ),
@@ -1661,7 +1661,7 @@ game_menus = [
 	],
 	    
     [
-     ("quick_default"     ,[(eq, cheat_switch, 1),],"{!}[dev: quick start]",[(call_script, "script_start_as_one", "$player_current_troop_type"),(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0), (jump_to_menu,"mnu_start_phase_2" ),]),
+     ("quick_default"     ,[(eq, cheat_switch, 1),],"{!}[dev: quick start]",[(call_script, "script_start_as_one", "$player_current_troop_type"),(assign, "$tld_option_cutscenes", 0),(assign, "$tld_option_town_menu_hidden", 0),(assign, "$formations_tutorial", 4),(assign, "$first_time_town",1),(troop_raise_attribute, "trp_player", ca_intelligence, -30),(troop_add_proficiency_points, "trp_player", -100), (jump_to_menu,"mnu_start_phase_2" ),]),
 	 ("start_default",[], "Become a {s23} (Default)", [(troop_add_proficiency_points, "trp_player", 10),(jump_to_menu, "mnu_choose_skill")]),
      ("start_up1", [(gt,reg0,0)], "Become a {s21} (Easy)", [(assign,"$player_current_troop_type", reg0),(troop_add_proficiency_points, "trp_player", 15), (try_begin), (eq, reg55, 1), (call_script, "script_player_join_faction", "fac_guldur"), (try_end), (jump_to_menu, "mnu_choose_skill")]),
      ("start_up2", [(gt,reg1,0)], "Become a {s22} (Easy)", [(assign,"$player_current_troop_type", reg1),(troop_add_proficiency_points, "trp_player", 15), (try_begin), (eq, reg55, 1), (call_script, "script_player_join_faction", "fac_guldur"), (try_end), (jump_to_menu, "mnu_choose_skill")]),
