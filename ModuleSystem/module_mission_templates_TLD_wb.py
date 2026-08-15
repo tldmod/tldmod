@@ -1519,7 +1519,8 @@ hp_shield_init = (ti_on_agent_spawn, 0, 0, [
   (agent_is_human, ":agent"),
   (agent_get_troop_id, ":troop_id", ":agent"),
   (troop_get_slot, ":has_shield", ":troop_id", slot_troop_hp_shield),
-  (gt, ":has_shield", 0)],
+  (this_or_next|gt, ":has_shield", 0),
+  (troop_is_hero, ":troop_id")],
   
   [
     (store_trigger_param_1, ":agent"),
@@ -1569,7 +1570,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
   
   [  
     (store_trigger_param_1, ":agent"),
-    #(store_trigger_param_2, ":dealer"),
+    (store_trigger_param_2, ":dealer"),
     (store_trigger_param_3, ":damage"),
     
     (assign, ":weapon", reg0),
@@ -1584,6 +1585,15 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
 
     (get_player_agent_no, ":player_agent"),
     (agent_get_team, ":player_team", ":player_agent"),
+    
+    (try_begin), #anti-frustration cheat
+        (eq, ":agent", ":player_agent"),
+        (agent_get_bone_position, pos1, ":agent", 7, 1),
+        (get_distance_between_positions, ":dist", pos0, pos1),
+        (le, ":dist", 20),
+        (val_mul, ":damage", 100),
+        (val_div, ":damage", 150),
+    (try_end),
 
     (agent_get_slot, ":current_hp_shield", ":agent", slot_agent_hp_shield),
     (troop_get_slot, ":max_hp_shield", ":troop_id", slot_troop_hp_shield),
