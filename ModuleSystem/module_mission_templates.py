@@ -3960,7 +3960,8 @@ mission_templates = [ # not used in game
         (val_add, ":reinforcements", ":bonus"),
       (try_end),
       (add_reinforcements_to_entry, ":entry", ":reinforcements"),
-      #(display_message, "@Attackers Reinforced", color_good_news),
+      (assign, reg78, "$attacker_reinforcement_stage"),
+      #(display_message, "@attacker_reinforcement_stage {reg78}", 0),
       (val_add,"$attacker_reinforcement_stage", 1),
       (assign, "$att_reinforcements_arrived", 1),
     (try_end),
@@ -4062,16 +4063,8 @@ mission_templates = [ # not used in game
                 (troop_slot_ge,"trp_no_troop",":slot",1),
                 (lt,":dist", 1000),
                 (display_message, "@You must break the first line of defense before you can capture a reinforcement point."),
-            (try_end),             
-            (troop_slot_eq,"trp_no_troop",":slot",-1), #only if choke point is taken
-            (store_mission_timer_a,":mission_time"),
-            (gt, ":mission_time", 300),
-            (ge, "$defender_reinforcement_stage", 6),
+            (try_end),
             (lt,":dist", 1500),
-            (set_show_messages, 0),
-            (team_give_order, ":defteam", grc_infantry, mordr_charge), #if player is nearby, make defenders charge
-            (team_give_order, ":defteam", grc_cavalry, mordr_charge),
-            (set_show_messages, 1),
             (try_begin),
                 (le, ":spawn_point_counter", 2),
                 (assign, ":spawn_point_blocked", 1),
@@ -4080,10 +4073,16 @@ mission_templates = [ # not used in game
                 # (display_message, "@spawn point {reg78} blocked!"),
                 (val_add, ":spawn_point_counter", 1), #this doesn't reset, making sure that max 2 spawn points can be blocked per time (temporary fixes a possible exploit in small scenes)
             (try_end),
+            (troop_slot_eq,"trp_no_troop",":slot",-1), #only if choke point is taken
+            (store_mission_timer_a,":mission_time"),
+            (gt, ":mission_time", 300),
+            (set_show_messages, 0),
+            (team_give_order, ":defteam", grc_infantry, mordr_charge), #if player is nearby, make defenders charge
+            (team_give_order, ":defteam", grc_cavalry, mordr_charge),
+            (set_show_messages, 1),
             (display_message, "@Capture this area with your troops to stop defender reinforcements from here!"),
 
             #check for team defeated
-            #(ge,"$defender_reinforcement_stage", 6),
             (assign, ":enemies_left", 0),
             (assign, ":friends_nearby", 0),
             (try_for_agents, ":nearby", pos10, 1500),
@@ -4181,25 +4180,28 @@ mission_templates = [ # not used in game
         (eq, "$advanced_siege_ai",1),
         (store_mission_timer_a,":mission_time"),
         (gt, ":mission_time", 300),
-        (ge, "$defender_reinforcement_stage", 6),
+        (ge, "$defender_reinforcement_stage", 9),
         (assign,":defteam","$defender_team"), #0, 2, 4
-        (assign,":entry_number", 44), # 44,45,46 --> actual entry point
+        (assign,":entry_number", 41), # 44,45,46 --> actual entry point
         (get_player_agent_no, ":player_agent"),
-        (try_for_range,":slot",0,3),
+        (try_for_range,":slot",0,3), #0, 1, 2
+            (val_add,":defteam",2), #0, 2, 4
+            (val_add,":entry_number",1), # 44,45,46 --> actual entry point
             (troop_slot_eq,"trp_no_troop",":slot",-1),
             (entry_point_get_position, pos10, ":entry_number"),
             (team_give_order, ":defteam", grc_infantry, mordr_hold), 
             (team_give_order, ":defteam", grc_cavalry, mordr_hold), 
             (team_give_order, ":defteam", grc_everyone, mordr_stand_closer),
-            #(team_give_order, ":defteam", grc_archers, mordr_stand_ground), 
-            (team_set_order_position, ":defteam", grc_everyone, pos10),
+            (team_give_order, ":defteam", grc_archers, mordr_stand_ground), 
+            (team_set_order_position, ":defteam", grc_infantry, pos10),
+            (team_give_order, ":defteam", grc_infantry, mordr_stand_closer),
+            (team_set_order_position, ":defteam", grc_cavalry, pos10),
+            (team_give_order, ":defteam", grc_cavalry, mordr_stand_closer),
             (assign, reg78, ":defteam"),
             (assign, reg77, ":entry_number"),
             #debug
             # (set_show_messages, 1),
             # (display_message, "@{!}team {reg78} retreats to entry {reg77}"),
-            (val_add,":defteam",2),
-            (val_add,":entry_number",1),
        (try_end),
     (try_end),
 
@@ -4494,7 +4496,7 @@ mission_templates = [ # not used in game
   ## We check the troop slot of trp_no_troop (defenders: 0,1,2) which corresponds to each choke point (entry 41,42,43)
   ## If we find less than 2 defenders near the chokepoint, we consider that chokepoint taken and the team that is assigned to that choke point is asked to charge.
 
-  (10, 0, 0,[(gt, "$defender_reinforcement_stage", -1)], [# check if targets are captured by attackers;
+  (10, 0, 0,[(gt, "$attacker_reinforcement_stage", 6), (eq, "$advanced_siege_ai",1),], [# check if targets are captured by attackers;
     (try_for_range, ":slot",0,6),
       (neg|troop_slot_eq,"trp_no_troop",":slot",-1), # -1 in slot means this flank defeated its choke and proceeds with charge
       (neg|troop_slot_eq,"trp_no_troop",":slot",-2), # -2 means that the spawn point was taken, too.
@@ -4507,33 +4509,11 @@ mission_templates = [ # not used in game
 	(try_for_agents, ":agent"),
 		(agent_is_alive,":agent"),
 		(agent_is_defender,":agent"),
-        (try_for_range, ":entry",41,44), 
+        (try_for_range, ":entry",41,44), #if this internal loop is too heavy, we could in future store the relevant entry in an agent slot
             (entry_point_get_position, pos10, ":entry"),
             (agent_get_position, pos0, ":agent"),
             (get_distance_between_positions, ":dist", pos0, pos10),
             (lt,":dist", 500),
-	
-    # (try_for_range, ":entry",41,44), # entry loop
-		
-		# (entry_point_get_position, pos90, ":entry"),
-        
-        #debug
-		# (position_get_x, reg76, pos90),
-		# (position_get_y, reg77, pos90),
-		# (position_get_z, reg78, pos90),
-		# (assign, reg10, ":entry"), #debug
-		# (display_message, "@entry {reg10}: {reg76} / {reg77} / {reg78}"),
-		
-		# ] + ((is_a_wb_mt==1) and [
-		# (try_for_agents, ":agent", pos90, 500),
-			# (agent_is_alive,":agent"),
-		# ] or [
-		# (try_for_agents, ":agent"),
-			# (agent_is_alive,":agent"),
-			# (agent_get_position, pos0, ":agent"),
-			# (get_distance_between_positions, ":dist", pos0, pos90),
-			# (lt,":dist", 500),
-		# ]) + [
 
 		## Step 1: Fill up defender and attacker chokepoint slots	
 
@@ -4551,19 +4531,25 @@ mission_templates = [ # not used in game
 
 ## Step 2: Now, check slot counts
     (try_for_range, ":entry",41,44), 
-        (eq, "$advanced_siege_ai",1),
         (store_sub,":slot_defender",":entry",41), #0, 1, 2
         
         #debug
-        # (store_add, reg10, ":slot_defender", 41), #get chokepoint entry number, 41, 42, 43
-        # (troop_get_slot, reg11, "trp_no_troop",":slot_defender"), #get number of defenders
-        # (set_show_messages, 1),
-        # (display_message, "@{!}Entry {reg10}: {reg11} defenders"),
+        (store_add, reg10, ":slot_defender", 41), #get chokepoint entry number, 41, 42, 43
+        (troop_get_slot, reg11, "trp_no_troop",":slot_defender"), #get number of defenders
+        (set_show_messages, 1),
+        #(display_message, "@{!}Entry {reg10}: {reg11} defenders"),
+        (store_mul,":defteam",":slot_defender",2),(store_add,":atkteam",":defteam",1), #this just calls the relevant team numbers from the slot number
+        # (assign, reg69, ":defteam"),
+        # (team_get_movement_order, reg70, ":defteam", grc_infantry),
+        # (team_get_order_position, pos22, ":defteam", grc_infantry),
+        # (position_get_x, reg71, pos22),
+        # (position_get_y, reg72, pos22),
+        # (position_get_z, reg73, pos22),
+        # (display_message, "@Team {reg69} order: {reg70}. Position: {reg71}/{reg72}/{reg73}"),
              
         (neg|troop_slot_ge,"trp_no_troop",":slot_defender",2), #if 0-1 defenders standing -> defenders charge
         (troop_slot_ge,"trp_no_troop",":slot_defender",0), #we do this only once
         (troop_set_slot,"trp_no_troop",":slot_defender",-1),
-        (store_mul,":defteam",":slot_defender",2),(store_add,":atkteam",":defteam",1), #this just calls the relevant team numbers from the slot number
         (team_give_order, ":defteam", grc_infantry, mordr_charge),
         (team_give_order, ":defteam", grc_cavalry, mordr_charge),
         (team_give_order, ":atkteam", grc_archers, mordr_charge),
