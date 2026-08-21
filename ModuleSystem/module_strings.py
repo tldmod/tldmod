@@ -2869,8 +2869,9 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("trait_title_stealthy", "Stealthy"),
 ("trait_desc_stealthy", "You_have_developed_uncanny_skill_in_the_art_of_stealthy_infiltration._You_receive_a_bonus_to_your_stealth_rating_when_undertaking_such_missions."),
 
-("trait_title_berserker", "Berserker"),
-("trait_desc_berserker", "After_many_battles_where_you_eschewed_the_use_of_armor_your_ferocious_will_has_become_like_iron._While_fighting_lightly_armoured,_each_slain_foe_fills_you_with_grim_vigor."),
+("trait_title_berserker", "Battle-fury"),
+("trait_desc_berserker", 
+"Your habit of ignoring any injuries during your reckless fighting has turned into a devastating battle_fury. As long as your rage persists, you will now ignore most of the attacks directed at you and, in return, deliver terrible blows."),
 
 ("trait_title_infantry_captain", "Infantry_Captain"),
 ("trait_desc_infantry_captain", "You_have_developed_uncanny_skill_in_the_command_of_infantry_troops._Due_to_rigorous_and_specialized_training_such_troops_will_receive_a_small_health_boost,_once_per_battle."),
@@ -2897,7 +2898,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("trait_desc_butcher", "Experience_has_honed_your_skill_in_extracting_more_meat_from_the_flesh_of_your_enemies._You_gain_an_extra_pound_of_flesh_every_time_you_slaughter_one_of_your_prisoners_for_meat._You_also_get_more_human_meat_after_every_battle."),
 
 ("trait_title_well_travelled", "Well-Travelled"),
-("trait_desc_well_travelled", "On_stone_paved_roads_and_mossy_animal_paths,_over_the_tallest_mountains_and_in_the_deepest_vales,_you've_discovered_hidden_places_and_seen_long_forgotten_marvels._From_your_experiences,_you've_learnt_to_spot_enemies_before_they_see_you,_and_the_easiest_route_for_your_troops."),
+("trait_desc_well_travelled", "On_stone_paved_roads_and_mossy_animal_paths,_over_the_tallest_mountains_and_in_the_deepest_vales,_you've_discovered_hidden_places_and_seen_long_forgotten_marvels."),
 
 ("trait_title_bear_shape", "Skinchanger"),
 ("trait_desc_bear_shape", "It_is_said_that_men_of_Beorn's_line_have_the_ability_to_take_bear_form._Through_your_kinship_with_bears_you_have_discovered_that_you_too_have_that_gift."),
@@ -3811,7 +3812,7 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("trait_title_ranger", "Ranger"),
 ("trait_desc_ranger", "You are well adapted to fighting in difficult terrain."),
 ("trait_title_night_fighter", "Night Fighter"),
-("trait_desc_night_fighter", "You are well adapted to fighting in the darkness."),
+("trait_desc_night_fighter", "You have acquired the skills of moving and fighting in the dark. No longer is the night your enemy."),
 ("trait_title_day_fighter", "Day Fighter"),
 ("trait_desc_day_fighter", "You do not fear the bright daylight anymore!"),
 ("trait_desc_stub_1", "{!}unused"),

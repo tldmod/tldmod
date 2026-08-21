@@ -771,7 +771,8 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 	(assign,"$animal_is_present",0), #Init Animals - Kham
 	(assign,"$warg_to_be_replaced",-1),	#  this warg needs replacing
 	(assign,"$nazgul_team", -1), # will be found when needed
-	(call_script, "script_check_agent_armor"), # check for berserker trait
+    (assign, "$new_berserker_kills", 0),
+	#(call_script, "script_check_agent_armor"), # check for berserker trait
 	#(set_rain, 0,100), #switch off vanilla rain and snow
 	
 	(try_for_range, ":npc",companions_begin,companions_end), #reset KO tracking for companions
@@ -791,26 +792,20 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 	    (try_for_range, ":stack", 0, ":num_stacks"),
 	    	(eq, ":yes", 0),
 			(party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
-			(this_or_next|eq, ":troop_id", "trp_a5_dun_night_wolf"),
-			(this_or_next|eq, ":troop_id", "trp_i5_woodmen_night_guard"),
-			(this_or_next|eq, ":troop_id", "trp_a5_woodmen_night_stalker"),
-			(this_or_next|eq, ":troop_id", "trp_i5_corsair_night_raider"),
-			(this_or_next|eq, ":troop_id", "trp_a5_corsair_master_assassin"),			
-			(this_or_next|eq, ":troop_id", "trp_i5_far_harad_panther_guard"),
-			(this_or_next|eq, ":troop_id", "trp_i6_frealaf_raider"),
-			(			  eq, ":troop_id", "trp_a5_blackroot_shadow_hunter"),
-			(assign, ":yes",1),
-			(display_message, "@Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)", color_neutral_news),
+            (troop_slot_eq, ":troop_id", slot_troop_is_night_troop, 1),
+            (assign, ":yes", 1),
 		(try_end),
+        (eq, ":yes", 1),
+        (display_message, "@Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)", color_neutral_news),
 	(try_end),
 
-	(try_begin), # Player has berserker trait?
-      (troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
-      (troop_get_inventory_slot, ":armor", "trp_player", ek_body),
-	  (this_or_next|eq, ":armor", -1),
-      (item_slot_eq, ":armor", slot_item_light_armor, 1),
-      (display_message, "@You are filled with just rage as you set your eyes upon the enemy (Berserk active).", color_neutral_news),
-    (try_end),
+	# (try_begin), # Player has berserker trait?
+      # (troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
+      # (troop_get_inventory_slot, ":armor", "trp_player", ek_body),
+	  # (this_or_next|eq, ":armor", -1),
+      # (item_slot_eq, ":armor", slot_item_light_armor, 1),
+      # (display_message, "@You are filled with just rage as you set your eyes upon the enemy (Berserk active).", color_neutral_news),
+    # (try_end),
 ])
 
 # cheer instead of jump on space if battle is won  (mtarini)
@@ -1492,7 +1487,94 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
 #Troll kicking end
 
+# piggyback berserker counter
 
+  (8, 2, 0, [  
+  (set_fixed_point_multiplier, 100),
+  (troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
+  (get_player_agent_no, "$current_player_agent"),
+  (agent_get_slot, ":old_kills", "$current_player_agent", slot_agent_troll_status), #re-use slot
+  (store_sub, ":new_b_kills", "$new_berserker_kills", ":old_kills"),
+  (agent_set_slot, "$current_player_agent", slot_agent_troll_status, "$new_berserker_kills"),
+  (try_begin),
+    (agent_slot_eq, "$current_player_agent", slot_agent_troll_uncontrollable, 0),
+    (ge, ":new_b_kills", 3),
+    (agent_set_slot, "$current_player_agent", slot_agent_troll_uncontrollable, 1), #activate charge
+    (agent_get_damage_modifier, ":mod", "$current_player_agent"),
+    (store_attribute_level, ":str", trp_player, ca_strength),
+    (val_add, ":mod", ":str"),
+    (agent_set_damage_modifier, "$current_player_agent", ":mod"),
+    (agent_get_slot, ":hp_shield", "$current_player_agent", slot_agent_hp_shield),
+    (troop_set_slot, "trp_player", slot_troop_hp_shield, ":hp_shield"), #store current hp shield, will be reset next battle
+    (val_add, ":hp_shield", 200),
+    (agent_set_slot, "$current_player_agent", slot_agent_hp_shield, ":hp_shield"),
+    (agent_set_slot, "$current_player_agent", slot_agent_hp_shield_active, 1),
+    (store_agent_hit_points, ":hp", "$current_player_agent", 0),
+    (store_sub, ":hp_gain", 50, ":hp"),
+    (val_div, ":hp_gain", 2),
+    (val_add, ":hp", ":hp_gain"),
+    (agent_set_hit_points, "$current_player_agent", ":hp", 0),
+    (display_message, "@You have entered a battle-fury."),
+    (agent_set_animation, "$current_player_agent", "anim_troll_charge", 0),
+    (call_script, "script_troop_get_cheer_sound", trp_player),
+    (agent_play_sound, "$current_player_agent", reg1),
+  (else_try),
+    (neg|agent_slot_eq, "$current_player_agent", slot_agent_troll_uncontrollable, 0),
+    (ge, ":new_b_kills", 1),
+    (val_mul, ":new_b_kills", 2),
+    (agent_get_damage_modifier, ":mod", "$current_player_agent"),
+    (val_add, ":mod", ":new_b_kills"),
+    (val_min, ":mod", 150),
+    (agent_set_damage_modifier, "$current_player_agent", ":mod"),
+    (display_message, "@Your battle-fury is growing."),
+  (else_try),
+    (agent_slot_eq, "$current_player_agent", slot_agent_troll_uncontrollable, 2),
+    (le, ":new_b_kills", 0),
+    (agent_get_damage_modifier, ":mod", "$current_player_agent"),
+    (val_sub, ":mod", 10),
+    (agent_set_damage_modifier, "$current_player_agent", ":mod"),
+    (agent_set_slot, "$current_player_agent", slot_agent_troll_uncontrollable, 3),
+    (display_message, "@Your battle-fury is waning."),
+  (else_try),
+    (agent_slot_eq, "$current_player_agent", slot_agent_troll_uncontrollable, 3),
+    (le, ":new_b_kills", 0),
+    (agent_set_slot, "$current_player_agent", slot_agent_troll_uncontrollable, 0),
+    (display_message, "@Your battle-fury has faded."),
+    (agent_get_slot, ":hp_shield", "$current_player_agent", slot_agent_hp_shield),
+    (troop_get_slot, ":old_hp_shield", "$current_player_agent", slot_troop_hp_shield),
+    (val_min, ":hp_shield", ":old_hp_shield"),
+    (troop_set_slot, "trp_player", slot_troop_hp_shield, ":hp_shield"), 
+    (agent_get_slot, ":damage_mod", "$current_player_agent", slot_agent_base_damage_multi),
+    (agent_set_damage_modifier, "$current_player_agent", ":damage_mod"),
+    (mission_cam_animate_to_screen_color, 0x00000000, 2500),
+  (try_end),
+  ],[
+    #end of charge
+    (get_player_agent_no, "$current_player_agent"),
+    (agent_slot_eq, "$current_player_agent", slot_agent_troll_uncontrollable, 1),
+    (agent_set_slot, "$current_player_agent", slot_agent_troll_uncontrollable, 2),
+    (agent_get_position, pos69, "$current_player_agent"), #used for script
+    (position_move_z, pos69, 100),
+    (call_script, "script_aoe_pushback", 60, 200, "$current_player_agent", 1), #friendly fire
+    
+    (agent_get_team, ":agent_team", "$current_player_agent"),
+    (try_for_agents, ":enemy_agent", pos69, 500), #morale effect
+        (agent_get_team, ":enemy_team", ":enemy_agent"),
+        (teams_are_enemies, ":agent_team", ":enemy_team"),
+        (agent_get_slot, ":morale_penalty", ":enemy_agent", slot_agent_morale_modifier),
+        (val_sub, ":morale_penalty", 30),
+        (agent_set_slot, ":enemy_agent", slot_agent_morale_modifier, ":morale_penalty"),
+    (try_end),
+	]),
+
+#from VC
+#dedal_berserk_visuals = 
+(1, 0.3, 0,[
+    (neg|agent_slot_eq, "$current_player_agent", slot_agent_troll_uncontrollable, 0),
+    (mission_cam_animate_to_screen_color, 0x55aa0000, 200),
+    ],[
+    (mission_cam_animate_to_screen_color, 0x22aa0000, 1000),
+])
 
 ] or [])
 

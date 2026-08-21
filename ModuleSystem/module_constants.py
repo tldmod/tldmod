@@ -198,7 +198,7 @@ slot_agent_last_knockdown_time    = slot_agent_walker_type #Use for tracking Kno
 
 slot_agent_troll_status     	= 13 #1= pushback stage 1, 2= pushback stage 2, 3=charge
 slot_agent_troll_uncontrollable       	= 14 #1=uncontrollable but friendly, 2= running amok
-slot_agent_last_hp		        = 15
+slot_agent_last_hp		        = 15 #used only for prisoner agents
 slot_agent_mount_side		       	= 16 # a mount has the side as its rider
 slot_agent_mount_dead			= 17
 slot_agent_time_counter			= 18
@@ -234,10 +234,7 @@ slot_agent_base_speed_multi     = 34
 slot_agent_base_reload_speed_multi = 35
 slot_agent_base_ranged_damage_multi = 36
 
-slot_agent_player_berserker_kills = 37
-slot_agent_player_animal_kills = 38
-slot_agent_player_warg_kills = 39
-slot_agent_player_horse_kills = 40
+slot_agent_player_animal_kills = 37
 
 slot_agent_hp_shield_active = 43 #Modified Vyrn HP Shield - kham
 slot_agent_hp_shield = 44 #Modified Vyrn HP Shield - kham
@@ -1147,7 +1144,7 @@ slot_trait_ranger            = 32
 slot_trait_night_fighter     = 33
 slot_trait_day_fighter       = 34
 slot_trait_first             = slot_trait_elf_friend
-slot_trait_last              = slot_trait_light_armor
+slot_trait_last              = slot_trait_day_fighter
 
 
 ########################################################

@@ -2150,7 +2150,7 @@ scripts = [
     (assign, "$trait_captain_cavalry_week", 0),
     (assign, "$trait_check_commands_issued", 0),
 	(assign, "$trait_check_stealth_success", 0),
-	(assign, "$trait_check_unarmored_berserker", 0),
+	(assign, "$new_berserker_kills", 0),
 	(assign, "$trait_check_battle_scarred", 0),
 #	(assign, "$minas_tirith_healing", 0),
 #    (assign, "$edoras_healing"      , 0),
@@ -4617,9 +4617,8 @@ scripts = [
 	  (else_try),
 	  	(eq, ":item_no", "itm_beorn_chief"),
         (eq, ":item_modifier", imod_lordly),
-	  	(try_begin),(eq, ":extra_text_id", 0), (set_result_string, "@Light Armor"), (try_end),
-                (try_begin),(eq, ":extra_text_id", 1), (set_result_string, "@Bonus to Strength (Player only)"),(set_trigger_result, color_item_text_bonus),(try_end),
-		(try_begin),(eq, ":extra_text_id", 2),(set_result_string, "@(Scales with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),
+        (try_begin),(eq, ":extra_text_id", 0), (set_result_string, "@Bonus to Strength (Player only)"),(set_trigger_result, color_item_text_bonus),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@(Scales with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),
 	  (else_try),
 		(eq,":item_no","itm_orc_idol_reward"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Lead more Orcs"),(try_end),
@@ -23023,7 +23022,10 @@ scripts = [
         (val_add, ":title_string", tld_first_trait_string),
     (try_end),
     (str_store_string, s5, ":title_string"),
-    (display_log_message, "@New trait gained: {s5}.", color_good_news),
+    (val_add, ":title_string", 1),
+    (str_store_string, s6, ":title_string"), #description string
+    #(display_log_message, "@New trait gained: {s5}.", color_good_news),
+    (dialog_box, "@{!}{s6}", "@^New trait gained: ^{s5}"),
     (play_sound, "snd_gong"),
 ]),
 
@@ -23110,10 +23112,11 @@ scripts = [
     (call_script, "script_gain_trait", slot_trait_accursed),
 ]), 
 #script_cf_gain_trait_berserker
+#unused
 ("cf_gain_trait_berserker",[
     (troop_slot_eq, "trp_traits", slot_trait_berserker, 0),
-	(troop_raise_attribute, "trp_player", ca_strength, 2),
-    (display_log_message, "@Gained permanent +2 to Strength.", color_good_news),
+	# (troop_raise_attribute, "trp_player", ca_strength, 2),
+    # (display_log_message, "@Gained permanent +2 to Strength.", color_good_news),
     (call_script, "script_gain_trait", slot_trait_berserker),
 ]), 
 #script_cf_gain_trait_stealthy
@@ -23275,7 +23278,7 @@ scripts = [
 		  (this_or_next|neg|ge, ":armor", 1),
           (item_slot_eq, ":armor", slot_item_light_armor, 1),
 		  (store_random_in_range, ":x", 0, 2),
-		  (val_add, "$trait_check_unarmored_berserker", ":x"),
+		  (val_add, "$new_berserker_kills", ":x"),
 		(try_end),
 	(try_end),
  ]),
@@ -25741,20 +25744,8 @@ command_cursor_scripts = [
 #script_gain_trait_well_travelled
 ("gain_trait_well_travelled",[
     (call_script, "script_gain_trait", slot_trait_well_travelled),
-
-    (store_skill_level, ":skill_1", skl_pathfinding, "trp_player"),
-    (try_begin),
-      (lt, ":skill_1", 10),
-      (troop_raise_skill, "trp_player", skl_pathfinding, 1),
-      (display_log_message, "@Gained permanent +1 to Pathfinding.", color_good_news),
-    (try_end),
-
-    (store_skill_level, ":skill_2", skl_spotting, "trp_player"),
-    (try_begin),
-	(lt, ":skill_2", 10),
-	  (troop_raise_skill, "trp_player", skl_spotting, 1),
-      (display_log_message, "@Gained permanent +1 to Spotting.", color_good_news),
-    (try_end),
+    (troop_raise_attribute, "trp_player", ca_intelligence, 1),
+    (display_message, "@Gained 1 Intelligence"),
 ]),
 
 
@@ -27058,7 +27049,7 @@ command_cursor_scripts = [
         (try_end),
     (try_end),
 
-				
+    (call_script, "script_assign_kingdom_companion_lords"),
     (call_script, "script_update_all_notes"),
     
     ] or []) + [ 

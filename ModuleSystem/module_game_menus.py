@@ -13379,10 +13379,11 @@ game_menus = [
 		(eq|this_or_next, "$current_player_region", region_grey_mountains),
         (eq|this_or_next, "$current_player_region", region_misty_mountains),
         (eq|this_or_next, "$current_player_region", region_s_misty_mountains),
+        (eq|this_or_next, "$current_player_region", region_anduin_banks),
         (eq, "$current_player_region", region_n_anduin_vale),
 		#(assign, ":ambush_scene", "scn_mountain_ambush"),
 		(try_begin),
-			(neq, "$players_kingdom", "fac_beorn"), # If not a beorning there is a 40% chance of a bear ambush
+			#(neq, "$players_kingdom", "fac_beorn"), # If not a beorning there is a 40% chance of a bear ambush
 			(lt, ":rnd", 40),
 			(assign, ":ambush_troop", "trp_bear"),
 			(val_div, ":ambush_count", 2),
@@ -13428,18 +13429,24 @@ game_menus = [
  [
 	("continue",[],"Continue...",
 	[
-	(set_jump_mission, "mt_animal_ambush"),
-    (set_battle_advantage, 0),
-    (assign,"$number_of_combatants",1), #use a small scene
-    (call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"),
-	(modify_visitors_at_site, reg0),
-	(reset_visitors),
-    (store_div, ":initial", "$alarm_level", 2), #only spawn half of them initially
-    (val_max, ":initial", 1),
-    (set_visitors, 1, reg20, ":initial"),
-    (val_sub, "$alarm_level", ":initial"),
-	(jump_to_scene, reg0),
-    (change_screen_mission),
+    (try_begin),
+        (eq, "$players_kingdom", fac_beorn),
+        (eq, reg20, "trp_bear"),
+        (jump_to_menu, "mnu_beorn_bear_encounter"),
+    (else_try),
+        (set_jump_mission, "mt_animal_ambush"),
+        (set_battle_advantage, 0),
+        (assign,"$number_of_combatants",1), #use a small scene
+        (call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"),
+        (modify_visitors_at_site, reg0),
+        (reset_visitors),
+        (store_div, ":initial", "$alarm_level", 2), #only spawn half of them initially
+        (val_max, ":initial", 1),
+        (set_visitors, 1, reg20, ":initial"),
+        (val_sub, "$alarm_level", ":initial"),
+        (jump_to_scene, reg0),
+        (change_screen_mission),
+    (try_end),
 	]),
     
  ("back_to_kham",[(eq, cheat_switch, 1)],"{!}DEBUG: back...",[(jump_to_menu, "mnu_camp_khamtest"),]),    
@@ -13527,6 +13534,19 @@ game_menus = [
 [
 	("continue",[],"Continue...",[(change_screen_map)]),
 	("repeat",[(eq, cheat_switch, 1)],"{!}DEBUG: Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
+]),
+
+
+("beorn_bear_encounter",0,
+   "^^^As the bear approaches, you realize that it seems calm and doesn't appear threatening. Its small eyes study you with mild interest before it disappears into the undergrowth.",
+    "none",
+    [(set_background_mesh, "mesh_draw_bear"),
+    (troop_get_slot, ":bear_kinship", "trp_traits", slot_trait_bear_shape),
+    (neq, ":bear_kinship", 1), #slot=1 means trait active
+    (val_add, ":bear_kinship", 2),
+    (troop_set_slot, "trp_traits", slot_trait_bear_shape, ":bear_kinship"),
+    ],
+   	[("continue", [], "Continue...", [(change_screen_map),]),
 ]),
 
 ("isengard_flooding",0,
