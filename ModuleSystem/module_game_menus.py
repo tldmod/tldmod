@@ -13849,6 +13849,7 @@ game_menus = [
     [
     ("mountain_trvl_option_a",[
         (gt, reg11, 0),
+        (party_is_active, reg11),
         (party_slot_eq, reg11, slot_center_destroyed, 0), #TLD
         (store_faction_of_party, ":fac", reg11),
         (store_relation, ":rel", ":fac", "$ambient_faction"),
@@ -13862,6 +13863,7 @@ game_menus = [
     ]),
     ("mountain_trvl_option_b",[
         (gt, reg12, 0),
+        (party_is_active, reg12),
         (party_slot_eq, reg12, slot_center_destroyed, 0), #TLD
         (store_faction_of_party, ":fac", reg12),
         (store_relation, ":rel", ":fac", "$ambient_faction"),

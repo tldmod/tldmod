@@ -5811,8 +5811,12 @@ scripts = [
       # (assign, reg10, ":loot_probability"),
       # (display_message, "@player_loot_share: {reg10}"),
       (val_mul, ":loot_probability", "$g_strength_contribution_of_player"), #100 or less
-      # (assign, reg10, "$g_strength_contribution_of_player"),
-      # (display_message, "@g_strength_contribution_of_player: {reg10}"),
+      (try_begin), #more loot after succesful sieges
+        (is_between, "$g_encountered_party", centers_begin, centers_end),
+        (val_mul, ":loot_probability", 2),
+      (try_end),
+      (assign, reg10, "$g_strength_contribution_of_player"),
+      (display_message, "@g_strength_contribution_of_player: {reg10}"),
       #(party_get_skill_level, ":player_party_looting", "p_main_party", "skl_looting"),
       (party_get_num_companion_stacks, reg10, "p_main_party"),
       (assign, ":player_party_looting", 0),
@@ -8748,6 +8752,7 @@ scripts = [
                 (else_try),
                     (assign, ":quest_target_troop", "trp_wolf"),
                     (assign, ":upgrade_level", 8),
+                    (assign, ":quest_target_amount", 2),
                 (try_end),
                 
                 (assign, ":quest_object_troop", ":quest_target_troop"),
@@ -8759,7 +8764,8 @@ scripts = [
                 
                 (try_begin),
                     (gt, ":quest_target_amount", 0),
-                    (store_div, ":max_amount", ":player_level", 3),
+                    (store_div, ":max_amount", ":player_level", 4),
+                    (val_add, ":max_amount", ":quest_target_amount"),
                     (store_sub, ":min_amount", ":player_level", ":upgrade_level"),
                     (store_random_in_range, ":quest_target_amount", ":min_amount", ":max_amount"),
                 (try_end),
@@ -29292,7 +29298,8 @@ command_cursor_scripts = [
         (call_script, "script_cf_reinforce_party", ":guard_party"),
       (try_end),
       (try_for_range, ":unused", 0, 50),
-        (party_upgrade_with_xp, ":guard_party", 6000, 0),
+        (store_random_in_range, ":path", 0, 2), #favor first upgrade path
+        (party_upgrade_with_xp, ":guard_party", 6000, ":path"),
       (try_end),
       # (store_random_in_range, ":reinforcement_waves", 50, 60), #average about 8 troops per reinf
       # (try_for_range, ":unused", 0, ":reinforcement_waves"),

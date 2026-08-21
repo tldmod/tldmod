@@ -1775,6 +1775,7 @@ tld_siegable_never   = 4  # never siege
 
 tld_siege_battle_size_default = 200
 tld_siege_battle_size_big = 250
+tld_siege_battle_size_bigger = 250
 tld_siege_battle_size_huge = 360
 
 str_fullname_region_begin = str_fullname_region_pelennor
@@ -1796,7 +1797,7 @@ center_list = [
 	#	[0],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_med, 0, tld_siegable_never, tld_siege_battle_size_default),
 (p_town_minas_tirith, [scn_minas_tirith_center, scn_minas_tirith_castle, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_minas_tirith_siege,mesh_town_minas_tirith],
 	[trp_gondor_captain, trp_smith_mtirith, trp_merchant_mtirith, trp_elder_mtirith, pt_gondor_cap_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_man_gondor_blue,trp_walker_man_gondor_white,trp_walker_woman_gondor_bw], 
-	[icon_mfc_gondor],[700],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1, tld_siegable_capital, tld_siege_battle_size_big),
+	[icon_mfc_gondor],[700],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1, tld_siegable_capital, tld_siege_battle_size_bigger),
 (p_town_pelargir, [scn_pelargir_center, scn_gondor_castle_a, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_pelargir_siege,mesh_town_pelargir],
 	[trp_pel_captain, trp_smith_pelargir, trp_merchant_pelargir, trp_elder_pelargir, pt_pelargir_recruits, trp_knight_1_4, trp_walker_man_gondor_black,trp_walker_man_gondor_blue,trp_walker_woman_gondor_bw,trp_walker_man_gondor_white], 
 	[icon_mfc_pelargir],[500],[4,4,4,6,4,8], str_income_med, garrison_limit_med, 0, tld_siegable_always, tld_siege_battle_size_default),
