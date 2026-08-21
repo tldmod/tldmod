@@ -1,4 +1,4 @@
-1882
+1879
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -207,7 +207,6 @@ qstr_+2_to_Weapon_Master +2_to_Weapon_Master
 qstr_+2_to_First_Aid +2_to_First_Aid
 qstr_Less_Dunnish_upkeep Less_Dunnish_upkeep
 qstr_Less_Wargs_upkeep Less_Wargs_upkeep
-qstr_Light_Armor Light_Armor
 qstr_Bonus_to_Strength__P Bonus_to_Strength_(Player_only)
 qstr_Lead_more_Orcs Lead_more_Orcs
 qstr_Can_scare_horses Can_scare_horses
@@ -228,6 +227,7 @@ qstr_{***}DEBUG:_Trolls_for {***}DEBUG:_Trolls_for_Troll_quest_are_sped_down.
 qstr_{***}_{s61} {***}_{s61}
 qstr_{***}ERROR:_More_than_ {***}ERROR:_More_than_15_trade_routes_are_given_for_{s1}.
 qstr_Looted_your_items Looted_your_items
+qstr_g_strength_contribut g_strength_contribution_of_player:_{reg10}
 qstr_{***}nothing {***}nothing
 qstr_{***}Good {***}Good
 qstr_{***}Med {***}Med
@@ -483,18 +483,18 @@ qstr_Elapsed_hours:_{reg7 Elapsed_hours:_{reg7}
 qstr_Reputation_type:_{s1 Reputation_type:_{s15}
 qstr_Entries_up_to_#{reg5 Entries_up_to_#{reg5}_skipped
 qstr_A_new_location_is_no A_new_location_is_now_available_on_the_map!
-qstr_New_trait_gained:_{s New_trait_gained:_{s5}.
+qstr_{***}{s6} {***}{s6}
+qstr_^New_trait_gained:_^ ^New_trait_gained:_^{s5}
 qstr_Gained_permanent_+1_ Gained_permanent_+1_to_Strength.
 qstr_Gained_permanent_+1_t Gained_permanent_+1_to_Agility.
 qstr_Gained_permanent_+1_to Gained_permanent_+1_to_Charisma.
 qstr_Gained_permanent_+20 Gained_permanent_+20_to_weapon_proficiencies.
-qstr_Gained_permanent_+2_ Gained_permanent_+2_to_Strength.
-qstr_Gained_permanent_+2_t Gained_permanent_+2_to_Charisma.
+qstr_Gained_permanent_+2_ Gained_permanent_+2_to_Charisma.
 qstr_Lost_permanent__1_to Lost_permanent_-1_to_Charisma.
 qstr_Gained_permanent_+1_to_ Gained_permanent_+1_to_Ironflesh.
 qstr_Gained_permanent_+5_ Gained_permanent_+5_to_Strength.
 qstr_Lost_permanent__2_to Lost_permanent_-2_to_Charisma.
-qstr_Gained_permanent_+2_to Gained_permanent_+2_to_Ironflesh.
+qstr_Gained_permanent_+2_t Gained_permanent_+2_to_Ironflesh.
 qstr_Gained_permanent_+10 Gained_permanent_+10_to_weapon_proficiencies.
 qstr_Gained_permanent_+1_to_T Gained_permanent_+1_to_Tactics.
 qstr_You_have You_have
@@ -650,8 +650,7 @@ qstr_{***}lord_{reg1}:_{s1}_i {***}lord_{reg1}:_{s1}_is_patrolling_around_{s2}
 qstr_{***}lord_{reg1}:_{s1}_N {***}lord_{reg1}:_{s1}_NOT_patrolling_around_{s2}
 qstr_{***}lord_{reg1}:_{s1}_is {***}lord_{reg1}:_{s1}_is_accompanying_{s2}
 qstr_{***}lord_{reg1}:_{s1}_NO {***}lord_{reg1}:_{s1}_NOT_accompanying_{s2}
-qstr_Gained_permanent_+1_to_P Gained_permanent_+1_to_Pathfinding.
-qstr_Gained_permanent_+1_to_S Gained_permanent_+1_to_Spotting.
+qstr_Gained_1_Intelligenc Gained_1_Intelligence
 qstr_{***}INVALID_PARTY_BEI {***}INVALID_PARTY_BEING_REMOVED_({s1})!_DISABLED_INSTEAD._PLEASE_LET_THE_DEVS_KNOW._THIS_IS_A_TEST_AGAINST_SAVE_GAME_CORRUPTION.
 qstr_{s11}_recovered_from {s11}_recovered_from_a_serious_wound.
 qstr_Volunteers Volunteers
@@ -724,7 +723,6 @@ qstr_You_have_found_the_c You_have_found_the_captain_of_the_garrison.
 qstr__cancelled_the_{reg1 (cancelled_the_{reg10}_exp_pts_earned_from_killing_prisoners)
 qstr_Forming_ranks. Forming_ranks.
 qstr_Some_of_your_human_t Some_of_your_human_troops_are_not_daunted_by_the_darkness.(Night_Troops_are_not_affected_by_night_time_penalties)
-qstr_You_are_filled_with_ You_are_filled_with_just_rage_as_you_set_your_eyes_upon_the_enemy_(Berserk_active).
 qstr_Your_mount_is_scared Your_mount_is_scared_by_the_{reg73?ent:troll}!
 qstr_Your_mount_is_scared_ Your_mount_is_scared_by_the_{reg73?ent:troll},_but_you_can_master_it!
 qstr_You_yell_for_your_ho You_yell_for_your_horse.
@@ -1276,7 +1274,6 @@ qstr_Your_party_witnessed Your_party_witnessed_orcs_eating_prisoners.
 qstr_Your_party_s_morale_ Your_party's_morale_has_risen_from_hatred.
 qstr_Your_party_s_morale_h Your_party's_morale_has_fallen_from_fear.
 qstr_{s27}:_Influence_wit {s27}:_Influence_with_{s1}_increases_from_{reg2}_to_{reg1}.
-qstr_{s27}:_Influence_with {s27}:_Influence_with_{s1}_decreases_from_{reg2}_to_{reg1}.
 qstr_{s27}:_Party_morale_ {s27}:_Party_morale_increased.
 qstr_{s27}:_Party_morale_d {s27}:_Party_morale_decreased.
 qstr_Avoided_animal_ambus Avoided_animal_ambush_via_Spotting.

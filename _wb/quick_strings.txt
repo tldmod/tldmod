@@ -1,4 +1,4 @@
-2224
+2228
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -104,7 +104,7 @@ qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_Thank_you_for_playin Thank_you_for_playing
-qstr_{!}_rev_596_wb__dev_ {!}_rev_596_wb_|_dev_^_Built_2026-08-15_07:12___
+qstr_{!}_rev_600_wb__dev_ {!}_rev_600_wb_|_dev_^_Built_2026-08-21_16:20___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -302,7 +302,6 @@ qstr_+2_to_Weapon_Master +2_to_Weapon_Master
 qstr_+2_to_First_Aid +2_to_First_Aid
 qstr_Less_Dunnish_upkeep Less_Dunnish_upkeep
 qstr_Less_Wargs_upkeep Less_Wargs_upkeep
-qstr_Light_Armor Light_Armor
 qstr_Bonus_to_Strength__P Bonus_to_Strength_(Player_only)
 qstr_Lead_more_Orcs Lead_more_Orcs
 qstr_Can_scare_horses Can_scare_horses
@@ -330,6 +329,7 @@ qstr_{!}DEBUG:_Trolls_for {!}DEBUG:_Trolls_for_Troll_quest_are_sped_down.
 qstr_{!}_{s61} {!}_{s61}
 qstr_{!}ERROR:_More_than_ {!}ERROR:_More_than_15_trade_routes_are_given_for_{s1}.
 qstr_Looted_your_items Looted_your_items
+qstr_g_strength_contribut g_strength_contribution_of_player:_{reg10}
 qstr_{!}nothing {!}nothing
 qstr_{!}Good {!}Good
 qstr_{!}Med {!}Med
@@ -583,18 +583,18 @@ qstr_Elapsed_hours:_{reg7 Elapsed_hours:_{reg7}
 qstr_Reputation_type:_{s1 Reputation_type:_{s15}
 qstr_Entries_up_to_#{reg5 Entries_up_to_#{reg5}_skipped
 qstr_A_new_location_is_no A_new_location_is_now_available_on_the_map!
-qstr_New_trait_gained:_{s New_trait_gained:_{s5}.
+qstr_{!}{s6} {!}{s6}
+qstr_^New_trait_gained:_^ ^New_trait_gained:_^{s5}
 qstr_Gained_permanent_+1_ Gained_permanent_+1_to_Strength.
 qstr_Gained_permanent_+1_t Gained_permanent_+1_to_Agility.
 qstr_Gained_permanent_+1_to Gained_permanent_+1_to_Charisma.
 qstr_Gained_permanent_+20 Gained_permanent_+20_to_weapon_proficiencies.
-qstr_Gained_permanent_+2_ Gained_permanent_+2_to_Strength.
-qstr_Gained_permanent_+2_t Gained_permanent_+2_to_Charisma.
+qstr_Gained_permanent_+2_ Gained_permanent_+2_to_Charisma.
 qstr_Lost_permanent__1_to Lost_permanent_-1_to_Charisma.
 qstr_Gained_permanent_+1_to_ Gained_permanent_+1_to_Ironflesh.
 qstr_Gained_permanent_+5_ Gained_permanent_+5_to_Strength.
 qstr_Lost_permanent__2_to Lost_permanent_-2_to_Charisma.
-qstr_Gained_permanent_+2_to Gained_permanent_+2_to_Ironflesh.
+qstr_Gained_permanent_+2_t Gained_permanent_+2_to_Ironflesh.
 qstr_Gained_permanent_+10 Gained_permanent_+10_to_weapon_proficiencies.
 qstr_Gained_permanent_+1_to_T Gained_permanent_+1_to_Tactics.
 qstr_You_have You_have
@@ -775,8 +775,7 @@ qstr_{!}lord_{reg1}:_{s1}_i {!}lord_{reg1}:_{s1}_is_patrolling_around_{s2}
 qstr_{!}lord_{reg1}:_{s1}_N {!}lord_{reg1}:_{s1}_NOT_patrolling_around_{s2}
 qstr_{!}lord_{reg1}:_{s1}_is {!}lord_{reg1}:_{s1}_is_accompanying_{s2}
 qstr_{!}lord_{reg1}:_{s1}_NO {!}lord_{reg1}:_{s1}_NOT_accompanying_{s2}
-qstr_Gained_permanent_+1_to_P Gained_permanent_+1_to_Pathfinding.
-qstr_Gained_permanent_+1_to_S Gained_permanent_+1_to_Spotting.
+qstr_Gained_1_Intelligenc Gained_1_Intelligence
 qstr_{!}INVALID_PARTY_BEI {!}INVALID_PARTY_BEING_REMOVED_({s1})!_DISABLED_INSTEAD._PLEASE_LET_THE_DEVS_KNOW._THIS_IS_A_TEST_AGAINST_SAVE_GAME_CORRUPTION.
 qstr_{s11}_recovered_from {s11}_recovered_from_a_serious_wound.
 qstr_Volunteers Volunteers
@@ -988,6 +987,7 @@ qstr_It_is_night._You_fee It_is_night._You_feel_how_your_strength_grows_and_your
 qstr_It_is_night._As_a_tr It_is_night._As_a_trained_Uruk,_you_fight_at_night_or_day_and_don't_heed_light_or_darkness.
 qstr_It_is_night._In_the_ It_is_night._In_the_darkness,_you_have_to_move_and_fight_more_carefully.
 qstr_Rough_terrain:_Heavy Rough_terrain:_Heavy_troops_are_at_a_disadvantage.
+qstr_As_an_experienced_ra As_an_experienced_ranger,_you_are_well_adapted_to_fighting_in_rough_terrain.
 qstr_A_golden_mist_from_Lr A_golden_mist_from_Lórien_covers_the_battlefield._Your_troops_feel_encouraged_by_the_presence_of_the_Lady.
 qstr_A_golden_mist_from_Lri A_golden_mist_from_Lórien_covers_the_battlefield._The_witch_is_near,_sending_shivers_down_you_and_your_troops'_spine.
 qstr_Dark_clouds_from_Mord Dark_clouds_from_Mordor_cover_the_battlefield._Your_archers_have_trouble_seeing_the_enemy,_and_the_presence_of_evil_terrifies_your_men.
@@ -998,7 +998,6 @@ qstr_A_poisonous_fog_from_ A_poisonous_fog_from_Dol_Guldur_lingers_on_the_battle
 qstr_A_poisonous_fog_from_D A_poisonous_fog_from_Dol_Guldur_lingers_on_the_battlefield._You_do_not_feel_any_different,_but_you_hear_your_enemies_suffer_and_you_can_smell_their_fear.
 qstr_A_Nazgul_on_a_winged A_Nazgul_on_a_winged_steed_circles_over_the_battle_field!
 qstr_Some_of_your_human_t Some_of_your_human_troops_are_not_daunted_by_the_darkness.(Night_Troops_are_not_affected_by_night_time_penalties)
-qstr_You_are_filled_with_ You_are_filled_with_just_rage_as_you_set_your_eyes_upon_the_enemy_(Berserk_active).
 qstr_Your_mount_is_scared Your_mount_is_scared_by_the_{s5}!
 qstr_Your_mount_is_scared_ Your_mount_is_scared_by_the_{s5},_but_you_can_master_it!
 qstr_You_yell_for_your_ho You_yell_for_your_horse.
@@ -1008,11 +1007,17 @@ qstr_{reg5}_captains_and_ {reg5}_captains_and_{reg6}_banner_carriers_support_you
 qstr_{s5}_rallies_{reg65? {s5}_rallies_{reg65?her:his}_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
 qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
+qstr_You_have_entered_a_b You_have_entered_a_battle-fury.
+qstr_Your_battle_fury_is_ Your_battle-fury_is_growing.
+qstr_Your_battle_fury_is_w Your_battle-fury_is_waning.
+qstr_Your_battle_fury_has Your_battle-fury_has_faded.
 qstr_Your_mount_has_falle Your_mount_has_fallen_to_the_ground_beneath_you!
 qstr_Receive_{reg22}_dama Receive_{reg22}_damage.
 qstr_You_have_been_knocke You_have_been_knocked_unconscious_by_{s22}.
 qstr_{s21}_has_been_knock {s21}_has_been_knocked_off_of_{reg23?her:his}_mount_when_it_fell.
 qstr_{s21}_{reg24?killed: {s21}_{reg24?killed:knocked_unconscious}_by_{s22}.
+qstr_warg_kill_b_1 warg_kill_b_1
+qstr_warg_kill_b_2 warg_kill_b_2
 qstr_A_bear_has_been_summ A_bear_has_been_summoned_to_battle!
 qstr_In_The_Last_Days_of_ In_The_Last_Days_of_the_Third_Age,_your_troops_will_position_themselves_and_hold_at_the_beginning_of_each_battle,_instead_of_blindly_charging.^^To_order_your_troops_into_formation,_press_'J'_for_Ranks,_'K'_for_Shield-Wall,_'L'_for_Wedge,_';'_for_Square._To_undo_the_formation,_press_'U'._^If_your_troops_are_fleeing,_you_can_press_'V'_to_rally_them._You_get_only_a_limited_amount_of_rallies_per_battle,_and_the_amount_depends_on_your_leadership_and_charisma.
 qstr_You_can_also_order_y You_can_also_order_your_troops_to_cycle_through_the_type_of_weapon_you_want_them_to_use.^^_Press_O_to_cycle_between_Weapon_Order_types._Press_P_to_cycle_between_Shield_Order_types.
@@ -1594,9 +1599,9 @@ qstr_Your_party_witnessed Your_party_witnessed_orcs_eating_prisoners.
 qstr_Your_party_s_morale_ Your_party's_morale_has_risen_from_hatred.
 qstr_Your_party_s_morale_h Your_party's_morale_has_fallen_from_fear.
 qstr_{s27}:_Influence_wit {s27}:_Influence_with_{s1}_increases_from_{reg2}_to_{reg1}.
-qstr_{s27}:_Influence_with {s27}:_Influence_with_{s1}_decreases_from_{reg2}_to_{reg1}.
 qstr_{s27}:_Party_morale_ {s27}:_Party_morale_increased.
 qstr_{s27}:_Party_morale_d {s27}:_Party_morale_decreased.
+qstr_slot_trait_troll_hun slot_trait_troll_hunter_{reg78}
 qstr_Avoided_animal_ambus Avoided_animal_ambush_via_Spotting.
 qstr_Avoided_animal_ambush Avoided_animal_ambush_via_Wildcraft.
 qstr_Reinforcements Reinforcements
@@ -2181,7 +2186,6 @@ qstr_............... ...............
 qstr_Sleep_sounds_good... Sleep_sounds_good...
 qstr_For_Balin!! For_Balin!!
 qstr_For_Balin... For_Balin...
-qstr_{!}{s6} {!}{s6}
 qstr_What_snaga_dares_app What_snaga_dares_approach_me?
 qstr_I_don_t_believe_we_h I_don't_believe_we_have_met.
 qstr_Wait!_You_must_be_{p Wait!_You_must_be_{playername}._{s4}_Hear_me_before_you_depart...
