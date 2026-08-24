@@ -4105,6 +4105,10 @@ upgrade(troops,"marauder","i2_mordor_num_renegade")
 upgrade2(troops,"mirkwood_bandit","i3_rhun_tribal_infantry", "i2_mordor_num_renegade")
 upgrade2(troops,"rhovanion_bandit","c2_rhun_horseman","i2_mordor_num_renegade")
 upgrade2(troops,"easterling_bandit","c2_rhun_horseman","i2_mordor_num_renegade")
+upgrade(troops,"i2_orc_straggler","i3_orc_brigand")
+upgrade(troops,"i3_orc_brigand","i4_orc_marauder")
+upgrade(troops,"i2_uruk_rogue","i3_uruk_brigand")
+upgrade(troops,"i3_uruk_brigand","i4_uruk_marauder")
 
 
 

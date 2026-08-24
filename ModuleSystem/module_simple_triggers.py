@@ -4368,8 +4368,11 @@ simple_triggers = [
       (quest_get_slot, ":party_template", "qst_deal_with_looters", slot_quest_target_party_template),
 	  (quest_get_slot, ":target_center", "qst_deal_with_looters", slot_quest_target_center),
 	  (quest_get_slot, ":target_amount", "qst_deal_with_looters", slot_quest_target_amount),
-	  (quest_get_slot, ":defeated", "qst_deal_with_looters", slot_quest_current_state),
-	  (lt, ":defeated", ":target_amount"), #Additional check. The above neg|check_quest_concluded doesn't seem to work, parties kept spawning. 
+	  #(quest_get_slot, ":defeated", "qst_deal_with_looters", slot_quest_current_state), #this is actually "paid for"
+      (store_num_parties_destroyed_by_player, ":num_looters_destroyed", ":party_template"),
+      (party_template_get_slot,":previous_looters_destroyed",":party_template",slot_party_template_num_killed),
+      (val_sub,":num_looters_destroyed",":previous_looters_destroyed"),
+	  (lt, ":num_looters_destroyed", ":target_amount"), #Additional check. The above neg|check_quest_concluded doesn't seem to work, parties kept spawning. 
 	  (gt, ":target_center", 0),
 	  (store_distance_to_party_from_party, ":distance", "p_main_party", ":target_center"),
 	  (le, ":distance", 25), #only spawn looters if the player is still in the area

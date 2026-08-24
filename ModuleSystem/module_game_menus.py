@@ -2376,10 +2376,10 @@ game_menus = [
 
      	("camp_cctest_kill_lord",[],"{!}Kill a Random Lord",
 	[
-		#(store_random_in_range, ":cur_troop_id", "trp_knight_1_1", heroes_end), #kings and marshals cannot die for now
+		(store_random_in_range, ":cur_troop_id", "trp_knight_1_1", "trp_knight_6_1"), #kings and marshals cannot die for now
         (troop_get_slot, ":party", "trp_knight_2_2", slot_troop_leaded_party),
-		(call_script, "script_hero_leader_killed_abstractly", "trp_knight_3_7",":party"),
-        (troop_set_slot, "trp_knight_3_7", slot_troop_killed_by, "trp_knight_2_2"),
+		(call_script, "script_hero_leader_killed_abstractly",  ":cur_troop_id", ":party"),
+        (troop_set_slot,  ":cur_troop_id", slot_troop_killed_by, "trp_knight_2_2"),
         (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")
 	]),
 

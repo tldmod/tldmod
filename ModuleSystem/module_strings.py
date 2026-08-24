@@ -2871,7 +2871,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("trait_title_berserker", "Battle-fury"),
 ("trait_desc_berserker", 
-"Your habit of ignoring any injuries during your reckless fighting has turned into a devastating battle_fury. As long as your rage persists, you will now ignore most of the attacks directed at you and, in return, deliver terrible blows."),
+"Your habit of ignoring any injuries during your reckless fighting has turned into a devastating battle fury. As long as your rage persists, you will now ignore most of the attacks directed at you and, in return, deliver terrible blows."),
 
 ("trait_title_infantry_captain", "Infantry_Captain"),
 ("trait_desc_infantry_captain", "You_have_developed_uncanny_skill_in_the_command_of_infantry_troops._Due_to_rigorous_and_specialized_training_such_troops_will_receive_a_small_health_boost,_once_per_battle."),
