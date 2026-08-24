@@ -4248,6 +4248,65 @@ tld_animals_join_battle =(
     (display_message, "@{reg5?A group of:A} {s1} has joined the fight on {reg6?the enemy's:your} side!"),
 ]) 
 
+    
+tld_pickup_arrows =   (ti_on_item_picked_up, 0, 0, [], [
+    (store_trigger_param_1, ":agent"),
+    (store_trigger_param_2, ":picked_item_no"),
+    (store_trigger_param_3, ":picked_item_instance"),
+    (set_fixed_point_multiplier, 100),
+    (get_player_agent_no, ":player_agent"),
+    (eq, ":agent", ":player_agent"),
+    (item_get_type, ":picked_item_type", ":picked_item_no"),
+    (this_or_next|eq, ":picked_item_type", itp_type_arrows),
+    (eq, ":picked_item_type", itp_type_thrown),
+    
+    (assign, ":current_ammo", 0),
+    (assign, ":total_max_ammo", 0),
+    (try_for_range_backwards, ":slot", ek_item_0, ek_item_3 + 1),
+        (agent_get_item_slot, ":slot_item_no", ":agent", ":slot"),
+        (ge, ":slot_item_no", 0),
+        (item_get_type, ":slot_item_type", ":slot_item_no"),
+        (eq, ":slot_item_type", ":picked_item_type"),
+        (assign, ":players_quiver_item", ":slot_item_no"),
+        (agent_get_ammo_for_slot, ":ammo", ":agent", ":slot"),
+        (val_add, ":current_ammo", ":ammo"),
+        (item_get_max_ammo, ":max_ammo", ":slot_item_no"),
+        (val_add, ":total_max_ammo", ":max_ammo"),
+    (try_end),
+    (store_sub, ":ammo_potential", ":total_max_ammo", ":current_ammo"),
+    
+    (store_skill_level, ":looting", "skl_looting", "trp_player"),
+    (store_mul, ":looting_dist", ":looting", 10),
+    (val_add, ":looting_dist", 50),
+    (store_mul, ":max_picks", ":looting", 2),
+    (val_min, ":max_picks", ":ammo_potential"),
+    (prop_instance_get_position, pos4, ":picked_item_instance"),
+    (assign, ":picked_items", 0),
+    (try_for_prop_instances, ":spawned_item_instance", -1, somt_spawned_single_ammo_item),
+        (neq, ":spawned_item_instance", ":picked_item_instance"),
+        (lt, ":picked_items", ":max_picks"),
+        (prop_instance_get_scene_prop_kind, ":spawned_item", ":spawned_item_instance"),
+        (item_get_type, ":spawned_item_type", ":spawned_item"),
+        (eq, ":spawned_item_type", ":picked_item_type"),
+        (prop_instance_get_position, pos5, ":spawned_item_instance"),
+        (get_distance_between_positions, ":dist", pos4, pos5),
+        (lt, ":dist", ":looting_dist"),
+        (val_add, ":picked_items", 1),
+        (scene_prop_set_prune_time, ":spawned_item_instance", 0),
+    (try_end),
+    (try_begin), #small looting bonus
+        (store_random_in_range, ":rand", 2, 11),
+        (lt, ":rand", ":looting"),
+        (lt, ":picked_items", ":max_picks"),
+        (val_add, ":picked_items", 1),
+    (try_end),
+    (gt, ":picked_items", 1),
+    (val_add, ":current_ammo", ":picked_items"),
+    (val_min, ":current_ammo", ":total_max_ammo"),
+    (agent_set_ammo, ":agent", ":players_quiver_item", ":current_ammo"), #add ammo to last (=highest order) checked quiver
+    (store_add, reg12, ":picked_items", 1), #add the initial arrow
+    (display_message, "@Picked up {reg12} pieces of ammunition (looting)."),
+    ]) 
 
 ####################################################################################################################
 ## CUSTOM CAMERA by dunde, modified to add fixed-camera + implemented by Kham (WB Only)

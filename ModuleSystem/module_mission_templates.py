@@ -139,6 +139,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     tld_ai_melee_spheres,
     tld_calculate_wounded,
     tld_kill_or_wounded_triggers,
+    tld_pickup_arrows,
 
 ] + beorning_shapeshift   #Chaning into bear
 + tld_bow_shield
@@ -181,6 +182,7 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
   tld_ai_melee_spheres,
   tld_calculate_wounded,
   tld_kill_or_wounded_triggers,
+  tld_pickup_arrows,
 
   ] + tld_bow_shield
 + tld_battlefield_agent_effects
@@ -207,6 +209,7 @@ tld_common_peacetime_scripts = [
     tld_melee_ai,
     hp_shield_init,
     hp_shield_trigger,
+    tld_pickup_arrows,
     ] or []) + [ 
 	dungeon_darkness_effect,
     reset_fog,
