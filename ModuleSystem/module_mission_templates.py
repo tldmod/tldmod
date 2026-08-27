@@ -80,7 +80,6 @@ reset_fog = (ti_before_mission_start,  0, ti_once, [],
                 (try_begin),
                     (is_currently_night),
                     (set_fog_distance,1000,0x060607), #overwrite distant haze at night
-                    (display_message, "@night fog"),
                 (try_end),
             ])
 

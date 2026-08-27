@@ -5815,8 +5815,6 @@ scripts = [
         (is_between, "$g_encountered_party", centers_begin, centers_end),
         (val_mul, ":loot_probability", 2),
       (try_end),
-      (assign, reg10, "$g_strength_contribution_of_player"),
-      (display_message, "@g_strength_contribution_of_player: {reg10}"),
       #(party_get_skill_level, ":player_party_looting", "p_main_party", "skl_looting"),
       (party_get_num_companion_stacks, reg10, "p_main_party"),
       (assign, ":player_party_looting", 0),
