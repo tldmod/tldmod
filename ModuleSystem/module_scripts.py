@@ -8727,24 +8727,24 @@ scripts = [
                     (eq, ":theater", theater_N),
                     (this_or_next|eq, ":giver_faction_no", fac_dale),
                     (eq, ":giver_faction_no", fac_rhun),
-                    (ge, ":player_level", 5),
+                    (ge, ":player_level", 8),
                     (le, ":rand", 3),
                     (assign, ":quest_target_troop", "trp_bull"),
-                    (assign, ":upgrade_level", 10),
+                    (assign, ":upgrade_level", 16),
                 (else_try),
                     (this_or_next|eq, ":theater", theater_N),
                     (eq, ":theater", theater_C),
                     (neq, ":giver_faction_no", fac_beorn),
-                    (ge, ":player_level", 8),
+                    (ge, ":player_level", 12),
                     (le, ":rand", 2),
                     (assign, ":quest_target_troop", "trp_bear"),
-                    (assign, ":upgrade_level", 14),
+                    (assign, ":upgrade_level", 20),
                     (assign, ":quest_target_amount", 0), #bears are always alone
                 (else_try),
                     (ge, ":player_level", 10),
                     (le, ":rand", 2),
                     (assign, ":quest_target_troop", "trp_evil_beast"),
-                    (assign, ":upgrade_level", 16),
+                    (assign, ":upgrade_level", 18),
                 (else_try),
                     (le, ":rand", 5),
                     (assign, ":quest_target_troop", "trp_boar"),
@@ -8767,10 +8767,11 @@ scripts = [
                     (store_div, ":max_amount", ":player_level", 4),
                     (val_add, ":max_amount", ":quest_target_amount"),
                     (store_sub, ":min_amount", ":player_level", ":upgrade_level"),
+                    (val_div, ":min_amount", 2),
+                    (val_max, ":min_amount", 1),
                     (store_random_in_range, ":quest_target_amount", ":min_amount", ":max_amount"),
                 (try_end),
 
-                #copied from troublesome bandits
                 (assign, ":quest_gold_reward", ":player_level"), #assume 1-20
                 (val_add, ":quest_gold_reward", 10), #11-31
                 (val_mul, ":quest_gold_reward", 40), #ca 400-1200
