@@ -23328,6 +23328,9 @@ scripts = [
 		  (store_random_in_range, ":x", 0, 3),
 		  (val_add, "$new_berserker_kills", ":x"),
 		(try_end),
+    (else_try),
+        (troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
+        (assign, "$new_berserker_kills", 0),
 	(try_end),
  ]),
 ############### HEALING AND DEATH FROM 808 modified by GA ############################
