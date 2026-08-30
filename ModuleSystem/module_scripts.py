@@ -2025,6 +2025,14 @@ scripts = [
 		(assign,  ":food_store_limit", reg0),
 		(val_div, ":food_store_limit", 2),
 		(party_set_slot, ":center_no", slot_party_food_store, ":food_store_limit"),
+
+        
+        #initial volunteers
+        (party_get_slot, ":recruit_template", ":center_no", slot_town_recruits_pt),
+        (call_script, "script_create_volunteers_party",":center_no",0),
+        (assign,":volunteers",reg0),
+        (party_add_template, ":volunteers", ":recruit_template"),
+        (party_add_template, ":volunteers", ":recruit_template"),
 	(try_end),
 
     #Retainers Begin
@@ -2512,9 +2520,6 @@ scripts = [
         (try_end),
     (try_end),
 
-	#Init Health Regeneration on Kill
-
-
 	] or []) + [
 
 	#Squelch MB 1.011 Compiler Warnings
@@ -2642,10 +2647,18 @@ scripts = [
             (val_mul, ":vol_xp", "$tld_volunteers_multi"),
             (val_div, ":vol_xp", 100), 
         (try_end),
-		(val_div, ":vol_xp", 100),
-        (store_random_in_range, ":upgrade_path", 0, 3), 
-        (val_max, ":upgrade_path", 1), #prefer upgrade path 1 (mostly infantry) over path 2 (mostly archers)
-		(party_upgrade_with_xp, ":volunteers", ":vol_xp", ":upgrade_path"),
+		(val_div, ":vol_xp", 1000),
+        
+        (try_for_range, ":unused", 0, 10), #helps with better randomisation per tick
+            (store_random_in_range, ":upgrade_path", 0, 2),  #prefer upgrade path 1 (mostly infantry) over path 2 (mostly archers)
+            (try_begin), #exceptions
+                (this_or_next|eq, ":fac", "fac_woodelf"),
+                (eq, ":fac", "fac_imladris"),
+                #(assign, ":upgrade_path", 0), #this doesn't work as intended
+                (store_random_in_range, ":upgrade_path", 1, 3),
+            (try_end),
+            (party_upgrade_with_xp, ":volunteers", ":vol_xp", ":upgrade_path"),
+       (try_end),
 		
         #get reinforcement template and backup base troops
 		(party_get_slot, ":recruit_template", ":town", slot_town_recruits_pt),
@@ -17648,6 +17661,7 @@ scripts = [
 	  #(val_div, ":x", 4), # weapon proficiencies are too high!
 	  #(val_min, ":x", 60),
 	  (troop_raise_proficiency,  "trp_player",":i",":x"), 
+	  (troop_raise_proficiency_linear,  "trp_player",":bonus_prof",4), 
 	(try_end),
 
 	(troop_equip_items, "trp_player"),
