@@ -198,7 +198,7 @@ slot_agent_last_knockdown_time    = slot_agent_walker_type #Use for tracking Kno
 
 slot_agent_troll_status     	= 13 #1= pushback stage 1, 2= pushback stage 2, 3=charge
 slot_agent_troll_uncontrollable       	= 14 #1=uncontrollable but friendly, 2= running amok
-slot_agent_last_hp		        = 15 #used only for prisoner agents
+slot_agent_last_hp		        = 15 #used only for prisoner agents and player
 slot_agent_mount_side		       	= 16 # a mount has the side as its rider
 slot_agent_mount_dead			= 17
 slot_agent_time_counter			= 18
@@ -825,7 +825,7 @@ slot_troop_renown              = 7
 slot_troop_prisoner_of_party   = 8  # important for heroes only
 slot_troop_wounded             = 9  # TLD, for tracking wounded in current battle 
 slot_troop_leaded_party        = 10 # important for kingdom heroes only
-slot_troop_wealth              = 11 # important for kingdom heroes only (in TLD, only used for Zigurphel)
+slot_troop_wealth              = 11 # important for kingdom heroes only (in TLD, only used for Zigurphel and DImborn)
 slot_troop_respawn_timer       = 11 # TLD, for tracking hero respawn
 slot_troop_cur_center          = 12 # important for royal family members only (non-kingdom heroes)
 

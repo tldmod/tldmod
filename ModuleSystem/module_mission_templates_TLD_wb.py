@@ -1826,6 +1826,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
         (agent_get_speed_modifier, ":speed_mod", ":agent"),
         (val_add, ":speed_mod", 30),
         (agent_set_speed_modifier, ":agent", ":speed_mod"),
+        (val_add, "$new_berserker_kills", 1), #counter
     (try_end),
     ### Berserkers end###
 
@@ -1875,6 +1876,11 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
       (item_slot_eq, ":armor", slot_item_light_armor, 1), #or is the player wearing light armour / berserk appropriate clothing
       (eq, ":agent_killer", ":agent_player"),
       (assign, ":continue", 1),
+   (else_try),
+      (eq, ":agent_killer", ":agent_player"),
+      (troop_slot_eq, "trp_traits", slot_trait_berserker, 1), # Player doesn't have berserker trait yet
+      (call_script, "script_check_agent_armor"),
+      (assign, ":continue", 0),
    (else_try), # Is it a lord?
       (neq, ":agent_killer", ":agent_player"),
       (is_between, ":agent_killer", heroes_begin, heroes_end),
@@ -1909,6 +1915,7 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
       (this_or_next|eq, ":armor", -1), #and is not wearing anything 
       (item_slot_eq, ":armor", slot_item_light_armor, 1), #or is the player wearing light armour / berserk appropriate clothing
       (assign, ":health_regeneration", wp_hr_player_rate),
+      (ge, "$new_berserker_kills", 5), #player: only activate life steal if at least 5 berserker kills
       (assign, ":continue", 1),
     (else_try), # Is it a lord?
       (neq, ":agent_killer", ":agent_player"),
@@ -2101,30 +2108,28 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
     (try_begin), #berserker trait 
         (eq, "$tld_option_injuries",1), #only if player injuries allowed
         (eq, ":killer", ":player"),
-        (neg|key_clicked, key_f4),
-        (neg|key_is_down, key_f4),
-        (neg|key_clicked, key_left_control),
-        (neg|key_is_down, key_left_control),
         (agent_get_wielded_item, ":item", ":player", 0),
         (item_get_type, ":item_type", ":item"),
         (this_or_next|eq, ":item_type", itp_type_one_handed_wpn),
         (this_or_next|eq, ":item_type", itp_type_two_handed_wpn),
         (this_or_next|eq, ":item_type", itp_type_polearm),
-        (eq, ":item_type", itp_type_thrown), #we also count throwing weapons, because their fighting range is very short
+        (eq, ":item_type", itp_type_thrown), 
         (store_agent_hit_points, ":hp", ":killer", 0),
-        (troop_get_slot, ":counter", "trp_traits", slot_trait_berserker),
+        (troop_get_slot, ":counter", 875, 15),
+        (agent_get_slot, ":kill_counter", ":killer", 15),
         (try_begin),
             (lt, ":hp", 50),
-            (eq, ":counter", 1), #trait active
-            (val_add, "$new_berserker_kills", 1),
+            (eq, ":counter", 1),
+            (val_add, ":kill_counter", 1),
         (else_try),
-            (lt, ":hp", 30),
-            (val_add, "$new_berserker_kills", 1),
-            (ge, "$new_berserker_kills", 3),
+            (lt, ":hp", 40),
+            (val_add, ":kill_counter", 1),
+            (ge, ":kill_counter", 3),
             (neq, ":counter", 1),
             (val_add, ":counter", 2),
-            (troop_set_slot, "trp_traits", slot_trait_berserker, ":counter"),
+            (troop_set_slot, 875, 15, ":counter"),
         (try_end),
+        (agent_set_slot, ":killer", 15, ":kill_counter"),
     (try_end),
   ])
 
@@ -4050,6 +4055,7 @@ tld_battlefield_agent_effects = [
     (agent_set_horse_speed_factor, ":agent_no", ":horse_speed_mod"), 
     (agent_set_slot, ":agent_no", slot_agent_base_horse_speed, ":horse_speed_mod"), #transfer to dplmc_horse_speed
     (agent_set_damage_modifier, ":agent_no", ":melee_damage_mod"),
+    (agent_set_slot, ":agent_no", slot_agent_base_damage_multi, ":melee_damage_mod"),
     (agent_set_accuracy_modifier, ":agent_no", ":accuracy_mod"), #handled by slot_agent_base_accuracy
     (agent_set_speed_modifier, ":agent_no", ":speed_mod"),
     (agent_set_reload_speed_modifier, ":agent_no", ":reload_speed_mod"),
@@ -4213,12 +4219,20 @@ tld_animals_join_battle =(
     
     (try_begin), #bear trait
         (eq, ":ambush_troop", "trp_bear"),
-        (eq, "$players_kingdom", "fac_beorn"),
         (troop_get_slot, ":bear_kinship", "trp_traits", slot_trait_bear_shape),
         (neq, ":bear_kinship", 1), #slot=1 means trait active
         (val_add, ":bear_kinship", 2),
         (troop_set_slot, "trp_traits", slot_trait_bear_shape, ":bear_kinship"),
         #(call_script, "script_update_bear_kinship"),
+        # (try_begin), #Dimborn trait
+            # (main_party_has_troop, "trp_npc17"),
+            # (store_character_level, ":dimborn_level", "trp_npc17"),
+            # (ge, ":dimborn_level", 7),
+            # (troop_get_slot, ":dimborn_bear", "trp_npc17", slot_troop_wealth), #re-use slot
+            # (neq, ":dimborn_bear", 1000), #slot=1000 means trait active
+            # (val_add, ":dimborn_bear", 1),
+            # (troop_set_slot, "trp_npc17", slot_troop_wealth, ":bear_kinship"),
+        # (try_end),
     (try_end),
     
     #debug

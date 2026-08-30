@@ -1,4 +1,4 @@
-2230
+2226
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{!}Siege_weapon_dama {!}Siege_weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -104,7 +104,7 @@ qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_Thank_you_for_playin Thank_you_for_playing
-qstr_{!}_rev_604_wb__dev_ {!}_rev_604_wb_|_dev_^_Built_2026-08-24_15:17___
+qstr_{!}_rev_610_wb__dev_ {!}_rev_610_wb_|_dev_^_Built_2026-08-30_11:08___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -329,7 +329,6 @@ qstr_{!}DEBUG:_Trolls_for {!}DEBUG:_Trolls_for_Troll_quest_are_sped_down.
 qstr_{!}_{s61} {!}_{s61}
 qstr_{!}ERROR:_More_than_ {!}ERROR:_More_than_15_trade_routes_are_given_for_{s1}.
 qstr_Looted_your_items Looted_your_items
-qstr_g_strength_contribut g_strength_contribution_of_player:_{reg10}
 qstr_{!}nothing {!}nothing
 qstr_{!}Good {!}Good
 qstr_{!}Med {!}Med
@@ -590,12 +589,13 @@ qstr_Gained_permanent_+1_ Gained_permanent_+1_to_Strength.
 qstr_Gained_permanent_+1_t Gained_permanent_+1_to_Agility.
 qstr_Gained_permanent_+1_to Gained_permanent_+1_to_Charisma.
 qstr_Gained_permanent_+20 Gained_permanent_+20_to_weapon_proficiencies.
-qstr_Gained_permanent_+2_ Gained_permanent_+2_to_Charisma.
+qstr_Gained_permanent_+2_ Gained_permanent_+2_to_Strength.
+qstr_Gained_permanent_+2_t Gained_permanent_+2_to_Charisma.
 qstr_Lost_permanent__1_to Lost_permanent_-1_to_Charisma.
 qstr_Gained_permanent_+1_to_ Gained_permanent_+1_to_Ironflesh.
 qstr_Gained_permanent_+5_ Gained_permanent_+5_to_Strength.
 qstr_Lost_permanent__2_to Lost_permanent_-2_to_Charisma.
-qstr_Gained_permanent_+2_t Gained_permanent_+2_to_Ironflesh.
+qstr_Gained_permanent_+2_to Gained_permanent_+2_to_Ironflesh.
 qstr_Gained_permanent_+10 Gained_permanent_+10_to_weapon_proficiencies.
 qstr_Gained_permanent_+1_to_T Gained_permanent_+1_to_Tactics.
 qstr_You_have You_have
@@ -942,7 +942,6 @@ qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
 qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!
 qstr_Picked_up_{reg12}_pi Picked_up_{reg12}_pieces_of_ammunition_(looting).
-qstr_night_fog night_fog
 qstr_The_Nazgul_retreats! The_Nazgul_retreats!
 qstr_Shield_is_too_big_to Shield_is_too_big_to_be_used_with_a_bow.
 qstr_Shield_reduces_accur Shield_reduces_accuracy_by_{reg11}_percent.
@@ -1027,8 +1026,6 @@ qstr_The_Last_Days_of_the The_Last_Days_of_the_Third_Age_has_implemented_a_Custo
 qstr_Battlefield_is_too_s Battlefield_is_too_small_for_complex_AI_formations.
 qstr_You_have_a_clear_per You_have_a_clear_perception_of_great_imminent_danger,_from_all_around_you!
 qstr_New_ent_reached_batt New_ent_reached_battle_scene...
-qstr_{!}battle_won_trigge {!}battle_won_triggered_-_Good
-qstr_{!}battle_won_trigger {!}battle_won_triggered_-_Evil
 qstr_You_receive_word_tha You_receive_word_that_Beorning_villages_were_attacked._Beornings_lose_faction_strength.
 qstr_You_receive_word_that You_receive_word_that_the_Ring_Hunter_Leaders_were_seen_travelling_towards_Mordor,_a_chest_in_tow._Mordor_gains_faction_strength.
 qstr_Enemy_reinforcements Enemy_reinforcements_have_arrived
@@ -1603,7 +1600,6 @@ qstr_Your_party_s_morale_h Your_party's_morale_has_fallen_from_fear.
 qstr_{s27}:_Influence_wit {s27}:_Influence_with_{s1}_increases_from_{reg2}_to_{reg1}.
 qstr_{s27}:_Party_morale_ {s27}:_Party_morale_increased.
 qstr_{s27}:_Party_morale_d {s27}:_Party_morale_decreased.
-qstr_slot_trait_troll_hun slot_trait_troll_hunter_{reg78}
 qstr_Avoided_animal_ambus Avoided_animal_ambush_via_Spotting.
 qstr_Avoided_animal_ambush Avoided_animal_ambush_via_Wildcraft.
 qstr_Reinforcements Reinforcements

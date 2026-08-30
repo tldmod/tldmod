@@ -1,4 +1,4 @@
-1880
+1877
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -227,7 +227,6 @@ qstr_{***}DEBUG:_Trolls_for {***}DEBUG:_Trolls_for_Troll_quest_are_sped_down.
 qstr_{***}_{s61} {***}_{s61}
 qstr_{***}ERROR:_More_than_ {***}ERROR:_More_than_15_trade_routes_are_given_for_{s1}.
 qstr_Looted_your_items Looted_your_items
-qstr_g_strength_contribut g_strength_contribution_of_player:_{reg10}
 qstr_{***}nothing {***}nothing
 qstr_{***}Good {***}Good
 qstr_{***}Med {***}Med
@@ -490,12 +489,13 @@ qstr_Gained_permanent_+1_ Gained_permanent_+1_to_Strength.
 qstr_Gained_permanent_+1_t Gained_permanent_+1_to_Agility.
 qstr_Gained_permanent_+1_to Gained_permanent_+1_to_Charisma.
 qstr_Gained_permanent_+20 Gained_permanent_+20_to_weapon_proficiencies.
-qstr_Gained_permanent_+2_ Gained_permanent_+2_to_Charisma.
+qstr_Gained_permanent_+2_ Gained_permanent_+2_to_Strength.
+qstr_Gained_permanent_+2_t Gained_permanent_+2_to_Charisma.
 qstr_Lost_permanent__1_to Lost_permanent_-1_to_Charisma.
 qstr_Gained_permanent_+1_to_ Gained_permanent_+1_to_Ironflesh.
 qstr_Gained_permanent_+5_ Gained_permanent_+5_to_Strength.
 qstr_Lost_permanent__2_to Lost_permanent_-2_to_Charisma.
-qstr_Gained_permanent_+2_t Gained_permanent_+2_to_Ironflesh.
+qstr_Gained_permanent_+2_to Gained_permanent_+2_to_Ironflesh.
 qstr_Gained_permanent_+10 Gained_permanent_+10_to_weapon_proficiencies.
 qstr_Gained_permanent_+1_to_T Gained_permanent_+1_to_Tactics.
 qstr_You_have You_have
@@ -713,7 +713,6 @@ qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
 qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!
-qstr_night_fog night_fog
 qstr_While_visiting_towns While_visiting_towns,_settlements_and_camps,_you_can_talk_to_people_walking_around._This_will_help_you_gain_their_trust_and_offer_valuable_information_about_the_local_culture._If_you_ask,_they_will_also_show_you_the_way_to_the_most_important_people_around.
 qstr_Cannot_leave_now. Cannot_leave_now.
 qstr_The_traitor_should_b The_traitor_should_be_around_somewhere._You_should_look_around_important_places._If_you_have_a_good_relation_to_them,_you_may_also_ask_the_local_populace_for_suspicious_strangers.
@@ -750,8 +749,6 @@ qstr_The_Last_Days_of_the The_Last_Days_of_the_Third_Age_has_implemented_a_Custo
 qstr_Battlefield_is_too_s Battlefield_is_too_small_for_complex_AI_formations.
 qstr_You_have_a_clear_per You_have_a_clear_perception_of_great_imminent_danger,_from_all_around_you!
 qstr_New_ent_reached_batt New_ent_reached_battle_scene...
-qstr_{***}battle_won_trigge {***}battle_won_triggered_-_Good
-qstr_{***}battle_won_trigger {***}battle_won_triggered_-_Evil
 qstr_You_receive_word_tha You_receive_word_that_Beorning_villages_were_attacked._Beornings_lose_faction_strength.
 qstr_You_receive_word_that You_receive_word_that_the_Ring_Hunter_Leaders_were_seen_travelling_towards_Mordor,_a_chest_in_tow._Mordor_gains_faction_strength.
 qstr_Enemy_reinforcements Enemy_reinforcements_have_arrived

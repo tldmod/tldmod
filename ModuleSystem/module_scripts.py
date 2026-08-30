@@ -23156,11 +23156,13 @@ scripts = [
     (call_script, "script_gain_trait", slot_trait_accursed),
 ]), 
 #script_cf_gain_trait_berserker
-#unused
+#this is where we actually activate berserker trait, all requirements end up here and previous conditions are met
+#berserker is activated after at least 400 relevant kills (see script_check_agent_armor)
 ("cf_gain_trait_berserker",[
     (troop_slot_eq, "trp_traits", slot_trait_berserker, 0),
-	# (troop_raise_attribute, "trp_player", ca_strength, 2),
-    # (display_log_message, "@Gained permanent +2 to Strength.", color_good_news),
+    (gt, "$new_berserker_kills", 400),
+	(troop_raise_attribute, "trp_player", ca_strength, 2),
+    (display_log_message, "@Gained permanent +2 to Strength.", color_good_news),
     (call_script, "script_gain_trait", slot_trait_berserker),
 ]), 
 #script_cf_gain_trait_stealthy
@@ -23321,7 +23323,7 @@ scripts = [
 		(try_begin),
 		  (this_or_next|neg|ge, ":armor", 1),
           (item_slot_eq, ":armor", slot_item_light_armor, 1),
-		  (store_random_in_range, ":x", 0, 2),
+		  (store_random_in_range, ":x", 0, 3),
 		  (val_add, "$new_berserker_kills", ":x"),
 		(try_end),
 	(try_end),
@@ -26808,7 +26810,7 @@ command_cursor_scripts = [
                 (party_set_slot, ":town", slot_town_captain, ":troop"),
             (try_end),
         (try_end),
-        (party_set_slot, "p_town_henneth_annun", slot_town_captain, "trp_a6_ithilien_leader"), #bugged because of troop overwrite
+        #(party_set_slot, "p_town_henneth_annun", slot_town_captain, "trp_a6_ithilien_leader"), #bugged because of troop overwrite
     (try_end),    
 
     (try_begin),
@@ -33022,6 +33024,7 @@ if is_a_wb_script==1:
 # Triggered after conditions to get the trait are satisfied
 ("cf_gain_trait_bear_shape",[
     (neg|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1), 
+    (eq, "$players_kingdom", "fac_beorn"),        
     # special case as not having the trait could be denoted in many ways
     (display_log_message, "@Your ability to change skin has manifested, from now on you can walk wild paths both as man and a bear.", color_good_news),
     (call_script, "script_gain_trait", slot_trait_bear_shape),

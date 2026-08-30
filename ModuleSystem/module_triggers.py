@@ -1514,7 +1514,7 @@ triggers = [
   # ),
   
   #################################################################################
-  (1, 0, 90, [], [ #traits crunching
+  (1, 0, 3, [], [ #traits crunching
       # traits effect on influence
       (try_begin),
         # (try_begin),
@@ -1674,13 +1674,15 @@ triggers = [
       (try_begin),
         (troop_get_slot, ":counter", "trp_traits", slot_trait_berserker),
         (neq, ":counter", 1),
-        (val_sub, ":counter", 10), #slight relaxation over time
+        (val_sub, ":counter", 10), 
         (val_max, ":counter", 2),
+        (val_sub, "$new_berserker_kills", 20), #slight relaxation over time
+        (val_min, "$new_berserker_kills", ":counter"),
         (gt, ":counter", 300),
         (store_attribute_level, ":str", "trp_player", ca_strength),
         (ge, ":str", 20),
-        (call_script, "script_gain_trait", slot_trait_berserker),
-        #(call_script, "script_cf_gain_trait_berserker"),
+        (call_script, 338, 10+5), #just in case, shouldn't hurt
+        (call_script, "script_cf_gain_trait_berserker"), #activate berserker trait here
       (try_end),
       (try_begin),
         (troop_slot_eq, "trp_traits", slot_trait_battle_scarred, 0),
@@ -1752,7 +1754,7 @@ triggers = [
       (try_begin), #Skinchanger trait -> BEAR Arsakes
         # Chance ~num_of_private_bear_meetings, but has to be more than 5
         # special case as we store value related to chance of getting it in the slot itslef
-        (neg|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1), 
+        (neg|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
         (troop_get_slot, ":chance", "trp_traits", slot_trait_bear_shape),
         (val_sub, ":chance", 5),
         (ge, ":chance", 0), 
@@ -1764,23 +1766,23 @@ triggers = [
       (try_begin),
         (troop_get_slot, ":counter", "trp_traits", slot_trait_troll_slayer),
         (neq, ":counter", 1),
-        (val_sub, ":counter", 40), #slight relaxation over time
+        (val_sub, ":counter", 60), #slight relaxation over time
         (val_max, ":counter", 2),
         (troop_set_slot, "trp_traits", slot_trait_troll_slayer, ":counter"),
         # (assign, reg78, ":counter"),
         # (display_message, "@slot_trait_troll_slayer {reg78}"),
-        (gt, ":counter", 800),
+        (gt, ":counter", 1000),
         (call_script, "script_gain_trait", slot_trait_troll_slayer),
       (try_end),
       (try_begin),
         (troop_get_slot, ":counter", "trp_traits", slot_trait_troll_hunter),
         (neq, ":counter", 1),
-        (val_sub, ":counter", 40), #slight relaxation over time
+        (val_sub, ":counter", 60), #slight relaxation over time
         (val_max, ":counter", 2),
         (troop_set_slot, "trp_traits", slot_trait_troll_hunter, ":counter"),
-        (assign, reg78, ":counter"),
-        (display_message, "@slot_trait_troll_hunter {reg78}"),
-        (gt, ":counter", 800),
+        # (assign, reg78, ":counter"),
+        # (display_message, "@slot_trait_troll_hunter {reg78}"),
+        (gt, ":counter", 1000),
         (call_script, "script_gain_trait", slot_trait_troll_hunter),
       (try_end),
       (try_begin),

@@ -771,7 +771,6 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 	(assign,"$animal_is_present",0), #Init Animals - Kham
 	(assign,"$warg_to_be_replaced",-1),	#  this warg needs replacing
 	(assign,"$nazgul_team", -1), # will be found when needed
-    (assign, "$new_berserker_kills", 0),
 	#(call_script, "script_check_agent_armor"), # check for berserker trait
 	#(set_rain, 0,100), #switch off vanilla rain and snow
 	
@@ -1487,15 +1486,18 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
 #Troll kicking end
 
-# piggyback berserker counter
+# piggyback trait counter
 
   (8, 2, 0, [  
   (set_fixed_point_multiplier, 100),
   (troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
   (get_player_agent_no, "$current_player_agent"),
-  (agent_get_slot, ":old_kills", "$current_player_agent", slot_agent_troll_status), #re-use slot
-  (store_sub, ":new_b_kills", "$new_berserker_kills", ":old_kills"),
-  (agent_set_slot, "$current_player_agent", slot_agent_troll_status, "$new_berserker_kills"),
+  (agent_get_slot, ":old_b_kills", "$current_player_agent", slot_agent_troll_status), #re-use slot
+  (agent_get_slot, ":new_b_kills", "$current_player_agent", slot_agent_last_hp), #re-use slot
+  (agent_set_slot, "$current_player_agent", slot_agent_troll_status, ":new_b_kills"),
+  (val_sub, ":new_b_kills", ":old_b_kills"),
+  # (assign, reg78, ":new_b_kills"),
+  # (display_message, "@new kills {reg78}!"),
   (try_begin),
     (agent_slot_eq, "$current_player_agent", slot_agent_troll_uncontrollable, 0),
     (ge, ":new_b_kills", 3),
@@ -1521,12 +1523,18 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
   (else_try),
     (neg|agent_slot_eq, "$current_player_agent", slot_agent_troll_uncontrollable, 0),
     (ge, ":new_b_kills", 1),
-    (val_mul, ":new_b_kills", 2),
+    (val_mul, ":new_b_kills", 5),
     (agent_get_damage_modifier, ":mod", "$current_player_agent"),
     (val_add, ":mod", ":new_b_kills"),
-    (val_min, ":mod", 150),
+    (val_min, ":mod", 200),
     (agent_set_damage_modifier, "$current_player_agent", ":mod"),
     (display_message, "@Your battle-fury is growing."),
+    (call_script, "script_troop_get_cheer_sound", trp_player),    
+    (agent_get_slot, ":hp_shield", "$current_player_agent", slot_agent_hp_shield),
+    (val_add, ":hp_shield", 10),
+    (agent_set_slot, "$current_player_agent", slot_agent_hp_shield, ":hp_shield"),
+    (agent_set_slot, "$current_player_agent", slot_agent_hp_shield_active, 1),
+    (agent_play_sound, "$current_player_agent", reg1),
   (else_try),
     (agent_slot_eq, "$current_player_agent", slot_agent_troll_uncontrollable, 2),
     (le, ":new_b_kills", 0),
@@ -1567,9 +1575,9 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
     (try_end),
 	]),
 
-#from VC
-#dedal_berserk_visuals = 
+#from VC (dedal)
 (1, 0.3, 0,[
+    (get_player_agent_no, "$current_player_agent"),
     (neg|agent_slot_eq, "$current_player_agent", slot_agent_troll_uncontrollable, 0),
     (mission_cam_animate_to_screen_color, 0x55aa0000, 200),
     ],[

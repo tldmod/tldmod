@@ -1673,6 +1673,19 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
      # (assign, "$g_center_taken_by_player_faction", -1),
      # ]],
 
+# Dimborn Event
+
+# [anyone, "event_triggered", [
+                    # (eq, "$g_talk_troop", "trp_npc17"), #Dimborn
+                    # (eq, "$talk_context", tc_starting_quest), 
+                    # (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth),
+                    # (is_between, ":score", 10, 100), #first encounter
+                    # (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
+                    # (str_store_string, s5, ":honorific"),
+                     # ],
+  # "{s5}, did you not notice that marvellous wild beast that graciously lent us its aid in that last battle? I cannot stop thinking about it.", "dimborn_ask_bear", []],
+
+
 # Ziggy's Werewolf Convo First / Second Time
 
 [anyone, "event_triggered", [

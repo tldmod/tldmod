@@ -3514,6 +3514,16 @@ simple_triggers = [
       (assign, "$talk_context", tc_starting_quest), #Use this for Ziggy's first convo
       (start_map_conversation, "trp_npc20"),
     (try_end),
+    
+    # (try_begin),
+      # (main_party_has_troop, "trp_npc17"), #player has Dimborn
+      # (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth), #score only starts counting up after Dimborn has reached level 10
+      # (this_or_next|is_between, ":score", 10, 100), #initial encounter, therse high numbers help with stages
+      # (this_or_next|is_between, ":score", 110, 200), #first reminder
+      # (is_between, ":score", 210, 300), #second reminder
+      # (assign, "$talk_context", tc_starting_quest),
+      # (start_map_conversation, "trp_npc17"),
+    # (try_end),
   ]),
   
   # (62) Control Gandalf and Nazgul states
