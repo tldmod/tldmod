@@ -17581,24 +17581,45 @@ scripts = [
 		(troop_add_item, "trp_player", ":item", imod_battered),
 	(try_end),
 
-	(try_begin),(store_and,reg13,":flags",tfg_ranged),(neq,reg13,0),
-		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_bow,itp_type_thrown+1),(assign,":item",reg0),
+	# assign weapon
+    (assign, ":bonus_prof", wpt_one_handed_weapon),
+	(try_begin),
+		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_one_handed_wpn,itp_type_polearm),(assign,":item",reg0), #don't assign polearms, because most beginner spears are painful
 		(gt,":item",0),
-		(troop_add_item, "trp_player", ":item", imod_bent),
+		(assign,":problem", imod_cracked),
+		(try_begin), #exceptions
+            (eq, ":troop", "trp_i1_woodmen_man"), (assign, ":item", "itm_beorn_staff"), 
+        (else_try),
+            (eq, ":troop", "trp_i2_iron_hills_miner"), (assign, ":item", "itm_dwarf_mattock"),
+        (try_end),
+		(try_begin),(store_item_value, ":value", ":item"),(lt,":value", 50),(assign,":problem", 0), (try_end), # pity for pityful weapons!
+		(troop_add_item, "trp_player", ":item", ":problem"),
+        (str_store_item_name, s12, ":item"),
+        (item_get_type, ":type", ":item"),
+        (try_begin),
+            (eq, ":type", itp_type_polearm),
+            (assign, ":bonus_prof", wpt_polearm),
+         (else_try),
+            (eq, ":type", itp_type_two_handed_wpn), 
+            (assign, ":bonus_prof", wpt_two_handed_weapon),
+        (try_end),
+	(try_end),
+    
+	(try_begin),(store_and,reg13,":flags",tfg_ranged),(neq,reg13,0),
+		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_bow,itp_type_thrown+1),(assign,":ranged_item",reg0),
+		(gt,":ranged_item",0),
+		(troop_add_item, "trp_player", ":ranged_item", imod_bent),
+        (item_get_type, ":type", ":ranged_item"),
+        (try_begin),
+            (eq, ":type", itp_type_bow),
+            (assign, ":bonus_prof", wpt_archery),
+         # (else_try), #if throwing, give bonus to melee wp
+            # (assign, ":bonus_prof", wpt_throwing),
+        (try_end),
 
 		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_arrows,0),(assign,":item",reg0),
 		(gt,":item",0),
 		(troop_add_item, "trp_player", ":item", imod_bent),
-	(try_end),
-
-	# assign weapon
-	(try_begin),
-		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_one_handed_wpn,itp_type_polearm+1),(assign,":item",reg0),
-		(gt,":item",0),
-		(assign,":problem", imod_cracked), 
-		(try_begin),(eq, ":troop", "trp_i1_dun_wildman"), (assign, ":item", "itm_dunland_spear"), (try_end), # exception!   Otherwie they get "orc club"
-		(try_begin),(store_item_value, ":value", ":item"),(lt,":value", 50),(assign,":problem", 0), (try_end), # pity for pityful weapons!
-		(troop_add_item, "trp_player", ":item", ":problem"),
 	(try_end),
 
 	# copy stats: attrib
