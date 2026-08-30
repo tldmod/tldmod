@@ -3928,13 +3928,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
                        (eq, ":quest_giver", "$g_talk_troop")],
 "I have received reports that the refugees were all killed, and that prisoner trains will be coming soon... You did well, {playername}. This is only the beginning, we shall rule over this land soon enough.", "lord_generic_mission_completed",
    [(call_script, "script_finish_quest", "qst_hunt_down_refugees", 100),
-    (call_script, "script_cf_get_random_enemy_center_in_theater","p_main_party"),
-    (store_faction_of_party, ":faction", reg0),
-    (str_store_faction_name, s1, ":faction"),
-    (faction_get_slot,":enemy_strength",":faction",slot_faction_strength_tmp),
-    (val_sub, ":enemy_strength", 75), #75 Str Points reduction for completing the quest
-    (display_message, "@Killing the refugees from {s1} and enslaving the survivors have demoralized their people ({s1} has lost {reg19} faction strength).", color_good_news),
-    (faction_set_slot,":faction",slot_faction_strength_tmp,":enemy_strength"), ]],
+    ]],
 
 [anyone,"lord_start", [ (check_quest_active,"qst_hunt_down_refugees"),
                         (check_quest_failed, "qst_hunt_down_refugees"),

@@ -7917,6 +7917,7 @@ scripts = [
                 (ge, ":cur_target_center",0), #Should be valid center
                 
                 (assign, ":quest_target_center", ":cur_target_center"),
+                (assign, ":quest_target_faction", ":center_faction"),
 				(assign, ":quest_target_party_template", "pt_refugees"),
 				(assign, ":quest_importance", 8),	
 				(assign, ":quest_xp_reward", 300),					
@@ -7924,6 +7925,7 @@ scripts = [
 				(assign, ":quest_rank_reward", 9),						
 				(assign, ":quest_expiration_days", 10),					
 				(assign, ":quest_dont_give_again_period", 10),
+                (assign, ":quest_target_fac_str_effect", -80), 
 
 				(assign, ":result", ":quest_no"),	
 			(try_end),
