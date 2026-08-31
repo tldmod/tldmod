@@ -3515,12 +3515,25 @@ simple_triggers = [
       (start_map_conversation, "trp_npc20"),
     (try_end),
     
-    # (try_begin),
+    # (try_begin), #Dimborn asks for leave to find bear companion
       # (main_party_has_troop, "trp_npc17"), #player has Dimborn
       # (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth), #score only starts counting up after Dimborn has reached level 10
       # (this_or_next|is_between, ":score", 10, 100), #initial encounter, therse high numbers help with stages
       # (this_or_next|is_between, ":score", 110, 200), #first reminder
       # (is_between, ":score", 210, 300), #second reminder
+      # (assign, "$talk_context", tc_starting_quest),
+      # (start_map_conversation, "trp_npc17"),
+    # (try_end),
+        
+    # (try_begin), #Dimborn comes back
+      # (neg|main_party_has_troop, "trp_npc17"), #player has Dimborn
+      # (troop_slot_eq, "trp_npc17", slot_troop_occupation, slto_player_companion),
+      # (troop_slot_eq, "trp_npc17", slot_troop_wealth, 400), #Dimborn on mission
+      # (troop_get_slot, ":return_day", "trp_npc17", slot_troop_respawn_timer),
+      # (store_current_day, ":cur_day"),
+      # (ge, ":cur_day", ":return_day"),
+      # (call_script, "script_find_theater", p_main_party"),
+      # (eq, reg0, theater_C),
       # (assign, "$talk_context", tc_starting_quest),
       # (start_map_conversation, "trp_npc17"),
     # (try_end),

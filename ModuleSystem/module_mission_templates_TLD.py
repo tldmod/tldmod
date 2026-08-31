@@ -1566,7 +1566,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
     (call_script, "script_aoe_pushback", 60, 200, "$current_player_agent", 1), #friendly fire
     
     (agent_get_team, ":agent_team", "$current_player_agent"),
-    (try_for_agents, ":enemy_agent", pos69, 500), #morale effect
+    (try_for_agents, ":enemy_agent", pos69, 1500), #morale effect
         (agent_get_team, ":enemy_team", ":enemy_agent"),
         (teams_are_enemies, ":agent_team", ":enemy_team"),
         (agent_get_slot, ":morale_penalty", ":enemy_agent", slot_agent_morale_modifier),

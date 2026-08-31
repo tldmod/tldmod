@@ -1514,7 +1514,7 @@ triggers = [
   # ),
   
   #################################################################################
-  (1, 0, 3, [], [ #traits crunching
+  (1, 0, 90, [], [ #traits crunching
       # traits effect on influence
       (try_begin),
         # (try_begin),
@@ -1758,14 +1758,14 @@ triggers = [
         (call_script, "script_cf_gain_trait_bear_shape"),
       (try_end),
       (try_begin),
-        (troop_get_slot, ":counter", 338, 15),
+        (troop_get_slot, ":counter", 872, 15),
         (neq, ":counter", 1),
         (val_sub, ":counter", 10), 
         (val_max, ":counter", 2),
         (gt, ":counter", 300),
-        (store_attribute_level, ":str", "trp_player", ca_strength),
-        (ge, ":str", 20),
-        (call_script, 338, 10+5), 
+        (store_attribute_level, ":att", "trp_player", 0),
+        (ge, ":att", 20),
+        (call_script, 338, 10+5),
       (try_end),
       (try_begin),
         (troop_get_slot, ":counter", "trp_traits", slot_trait_troll_slayer),

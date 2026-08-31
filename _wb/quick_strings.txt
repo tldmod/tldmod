@@ -104,7 +104,7 @@ qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
 qstr_one_of_the_URUK_HAI^ one_of_the_URUK-HAI,^_bred_in_Isengard
 qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_Thank_you_for_playin Thank_you_for_playing
-qstr_{!}_rev_610_wb__dev_ {!}_rev_610_wb_|_dev_^_Built_2026-08-30_11:08___
+qstr_{!}_rev_614_wb__dev_ {!}_rev_614_wb_|_dev_^_Built_2026-08-31_20:49___
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -1049,6 +1049,7 @@ qstr_through_the_center through_the_center
 qstr_Attackers_charge_{s2 Attackers_charge_{s2}
 qstr_Attackers_charge_{s1 Attackers_charge_{s1}
 qstr_You_must_break_the_f You_must_break_the_first_line_of_defense_before_you_can_capture_a_reinforcement_point.
+qstr_You_must_weaken_the_ You_must_weaken_the_defenders_before_you_can_capture_a_reinforcement_point.
 qstr_Capture_this_area_wi Capture_this_area_with_your_troops_to_stop_defender_reinforcements_from_here!
 qstr_Not_enough_allies_ne Not_enough_allies_nearby_to_capture_this_reinforcement_point!
 qstr_Defender_reinforceme Defender_reinforcement_point_taken!
@@ -1742,7 +1743,6 @@ qstr_Foiling_the_enemy_s_ Foiling_the_enemy's_attempts_at_attacking_the_refugee_
 qstr_The_slaughter_and_lo The_slaughter_and_looting_of_the_refugee_train_has_strengthened_the_enemy_({s1}_has_gained_50_faction_strength).
 qstr_You_did_however_defe You_did,_however,_defeat_{reg18}_raiders,_weakening_the_enemy's_resolve_({s1}_has_lost_{reg19}_faction_strength).
 qstr_The_slaughter_and_loo The_slaughter_and_looting_of_the_refugee_train_has_strengthened_the_enemy_({s1}_has_gained_{reg20}_faction_strength).
-qstr_Killing_the_refugees Killing_the_refugees_from_{s1}_and_enslaving_the_survivors_have_demoralized_their_people_({s1}_has_lost_{reg19}_faction_strength).
 qstr_{reg20}_refugee_trai {reg20}_refugee_trains_escaped_and_improved_the_enemy's_morale_({s1}_has_gained_{reg22}_faction_strength).
 qstr_You_did_however_defea You_did,_however,_defeat_{reg18}_refugee_trains,_weakening_the_enemy's_resolve_({s1}_has_lost_{reg19}_faction_strength).
 qstr_My_lord_{s12}_is_saf My_lord,_{s12}_is_safe._The_Corsairs_were_defeated.

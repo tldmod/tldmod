@@ -1,4 +1,4 @@
-1877
+1876
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1414,7 +1414,6 @@ qstr_Foiling_the_enemy_s_ Foiling_the_enemy's_attempts_at_attacking_the_refugee_
 qstr_The_slaughter_and_lo The_slaughter_and_looting_of_the_refugee_train_has_strengthened_the_enemy_({s1}_has_gained_50_faction_strength).
 qstr_You_did_however_defe You_did,_however,_defeat_{reg18}_raiders,_weakening_the_enemy's_resolve_({s1}_has_lost_{reg19}_faction_strength).
 qstr_The_slaughter_and_loo The_slaughter_and_looting_of_the_refugee_train_has_strengthened_the_enemy_({s1}_has_gained_{reg20}_faction_strength).
-qstr_Killing_the_refugees Killing_the_refugees_from_{s1}_and_enslaving_the_survivors_have_demoralized_their_people_({s1}_has_lost_{reg19}_faction_strength).
 qstr_{reg20}_refugee_trai {reg20}_refugee_trains_escaped_and_improved_the_enemy's_morale_({s1}_has_gained_{reg22}_faction_strength).
 qstr_You_did_however_defea You_did,_however,_defeat_{reg18}_refugee_trains,_weakening_the_enemy's_resolve_({s1}_has_lost_{reg19}_faction_strength).
 qstr_My_lord_{s12}_is_saf My_lord,_{s12}_is_safe._The_Corsairs_were_defeated.
