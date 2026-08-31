@@ -4044,6 +4044,7 @@ mission_templates = [ # not used in game
     (assign,":entry_number", 43), # 44,45,46 --> actual entry point
     (assign, ":reinforcements", 0),
     (get_player_agent_no, ":player_agent"),
+    (store_mission_timer_a,":mission_time"),
 
     #cycle through defender teams, check if depleted and reinforce
     (try_for_range,":slot",0,3), 
@@ -4053,17 +4054,23 @@ mission_templates = [ # not used in game
         (val_add,":entry",1),
         (val_add,":entry_number",1),
         
+        # (assign, reg66, ":entry_number"),
+        # (troop_get_slot, reg77, "trp_no_troop",":slot"),
+        # (display_message, "@{!}Entry {reg66}: {reg77} defenders"),
+        
         (try_begin),
           (neg|troop_slot_eq,"trp_no_troop",":slot",-1), #team 0 slot number, choke point not taken yet
           (neg|troop_slot_eq,"trp_no_troop",":slot",-2), # team not defeated yet
-          (neg|troop_slot_ge,"trp_no_troop",":slot",15), #if choke point not taken, we check for choke point guards
+          (neg|troop_slot_ge,"trp_no_troop",":slot",20), #if choke point not taken, we check for choke point guards
           #(lt,":num_defenders",14),
-          (assign, reg77, -1),
           (assign, ":reinforcements", 1), # defender reinforcements trickle in.
+          (neg|troop_slot_ge,"trp_no_troop",":slot",10), #if chokepoint is weakened, sent more
+          (assign, ":reinforcements", 3),
+          (neg|troop_slot_ge,"trp_no_troop",":slot",5), #almost taken? Sent a bunch! But these count towards the reinforcement counter
+          (assign, ":reinforcements", 6),
         (else_try), #if choke point is taken, we check overall defender number
           (troop_slot_eq,"trp_no_troop",":slot",-1),
           (store_normalized_team_count,":num_defenders",":defteam"), #note: gets overall defender number, not actual team size
-          (assign, reg77, ":num_defenders"),
           (lt,":num_defenders",30),
           (assign, ":reinforcements", 9), #1.5x attackers, to push them back.
         (try_end),
@@ -4080,28 +4087,37 @@ mission_templates = [ # not used in game
             (agent_get_position, pos0, ":player_agent"),
             (entry_point_get_position, pos10, ":entry_number"),
             (get_distance_between_positions, ":dist", pos0, pos10),
-            (try_begin),
-                (troop_slot_ge,"trp_no_troop",":slot",1),
-                (lt,":dist", 1000),
-                (display_message, "@You must break the first line of defense before you can capture a reinforcement point."),
-            (try_end),
             (lt,":dist", 1500),
+            #(assign, reg77, ":dist"),
             (try_begin),
                 (le, ":spawn_point_counter", 2),
                 (assign, ":spawn_point_blocked", 1),
                 (assign, ":reinforcements", 0),
-                # (assign, reg78, ":entry_number"),
-                # (display_message, "@spawn point {reg78} blocked!"),
+                #(assign, reg78, ":entry_number"),
+                #(display_message, "@spawn point {reg78} blocked, distance {reg77}!"),
                 (val_add, ":spawn_point_counter", 1), #this doesn't reset, making sure that max 2 spawn points can be blocked per time (temporary fixes a possible exploit in small scenes)
             (try_end),
+            
+            #messages
+            (try_begin),
+                (troop_slot_ge,"trp_no_troop",":slot",0),
+                (lt,":dist", 1000),
+                (display_message, "@You must break the first line of defense before you can capture a reinforcement point."),
+            (else_try),
+                (this_or_next|le, ":mission_time", 210),
+                (lt,"$defender_reinforcement_stage", 9),
+                (lt,":dist", 1000),
+                (display_message, "@You must weaken the defenders before you can capture a reinforcement point."),
+             (else_try),
+                (display_message, "@Capture this area with your troops to stop defender reinforcements from here!"),
+            (try_end),
+            
             (troop_slot_eq,"trp_no_troop",":slot",-1), #only if choke point is taken
-            (store_mission_timer_a,":mission_time"),
-            (gt, ":mission_time", 300),
+            (gt, ":mission_time", 210),
             (set_show_messages, 0),
             (team_give_order, ":defteam", grc_infantry, mordr_charge), #if player is nearby, make defenders charge
             (team_give_order, ":defteam", grc_cavalry, mordr_charge),
             (set_show_messages, 1),
-            (display_message, "@Capture this area with your troops to stop defender reinforcements from here!"),
 
             #check for team defeated
             (assign, ":enemies_left", 0),
@@ -4176,9 +4192,9 @@ mission_templates = [ # not used in game
       (gt, ":reinforcements", 0),
       (eq, ":spawn_point_blocked", 0),
       (add_reinforcements_to_entry, ":entry", ":reinforcements"),
+      (val_add,"$defender_reinforcement_stage",1),
       (try_begin), 
-        (gt, ":reinforcements", 1), #only count "full" reinforcements, not minor ones
-        (val_add,"$defender_reinforcement_stage",1),
+        (gt, ":reinforcements", 3), #only count "full" reinforcements, not minor ones
       (try_end),
       
       (assign, reg0,":entry_number"),
@@ -4459,7 +4475,7 @@ mission_templates = [ # not used in game
    ]),
 
   #cleanup leftover attackers/defenders
-  (5, 10, 0,[
+  (5, 15, 0,[
     (store_normalized_team_count,":num_defenders",0),
     (store_normalized_team_count,":num_attackers",1),
     (this_or_next|le, ":num_defenders", 3),
@@ -4517,7 +4533,9 @@ mission_templates = [ # not used in game
   ## We check the troop slot of trp_no_troop (defenders: 0,1,2) which corresponds to each choke point (entry 41,42,43)
   ## If we find less than 2 defenders near the chokepoint, we consider that chokepoint taken and the team that is assigned to that choke point is asked to charge.
 
-  (10, 0, 0,[(gt, "$attacker_reinforcement_stage", 6), (eq, "$advanced_siege_ai",1),], [# check if targets are captured by attackers;
+  (10, 0, 0,[
+    #(gt, "$attacker_reinforcement_stage", 6), 
+    (eq, "$advanced_siege_ai",1),], [# check if targets are captured by attackers;
     (try_for_range, ":slot",0,6),
       (neg|troop_slot_eq,"trp_no_troop",":slot",-1), # -1 in slot means this flank defeated its choke and proceeds with charge
       (neg|troop_slot_eq,"trp_no_troop",":slot",-2), # -2 means that the spawn point was taken, too.
