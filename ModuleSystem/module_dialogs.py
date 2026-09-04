@@ -1675,17 +1675,66 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 # Dimborn Event
 
-# [anyone, "event_triggered", [
-                    # (eq, "$g_talk_troop", "trp_npc17"), #Dimborn
-                    # (eq, "$talk_context", tc_starting_quest), 
-                    # (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth),
-                    # (is_between, ":score", 10, 100), #first encounter
-                    # (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
-                    # (str_store_string, s5, ":honorific"),
-                     # ],
-  # "{s5}, did you not notice that marvellous wild beast that graciously lent us its aid in that last battle? I cannot stop thinking about it.", "dimborn_ask_bear", []],
+[anyone, "event_triggered", [
+                    (eq, "$g_talk_troop", "trp_npc17"), #Dimborn
+                    (eq, "$talk_context", tc_starting_quest), 
+                    (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth),
+                    (is_between, ":score", 10, 100), #first encounter
+                    (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
+                    (str_store_string, s5, ":honorific"),
+                     ],
+  "{s5}, did you not notice that marvellous wild beast that graciously lent us its aid in that last battle? I cannot stop thinking about it.", "dimborn_ask_bear", []],
 
+[anyone, "event_triggered", [
+                    (eq, "$g_talk_troop", "trp_npc17"), #Dimborn
+                    (eq, "$talk_context", tc_starting_quest), 
+                    (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth),
+                    (is_between, ":score", 100, 300), #second or third encounter
+                    (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
+                    (str_store_string, s5, ":honorific"),
+                    (str_clear, s10),
+                    (ge, ":score", 200),
+                    (str_store_string, s10, "@I feel that this may be my last chance.")
+                     ],
+  "{s5}, there it was again, that great bear whom I recognise as my kin. I must find it! {s10}", "dimborn_ask_bear", []],
 
+[trp_npc17, "dimborn_ask_bear", [
+                     ],
+  "{playername}, please grant me leave so I may search for that bear.", "dimborn_ask_bear_response", []],
+
+[anyone|plyr, "dimborn_ask_bear_response", [],
+  "I grant you leave. Good luck on your quest.", "dimborn_ask_bear_leave", []],
+
+[anyone|plyr, "dimborn_ask_bear_response", [
+                    (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth),
+                    (is_between, ":score", 0, 200), #first or second encounter
+                    ],
+  "I am sorry, but I can't give you leave at the moment.", "dimborn_ask_bear_wait", []],
+  
+[anyone|plyr, "dimborn_ask_bear_response", [
+                    (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth),
+                    (gt, ":score", 100), #second encounter
+                    ],
+  "Don't trouble me with this ever again.", "dimborn_ask_bear_forbidden", []],
+
+[trp_npc17, "dimborn_ask_bear_leave", [
+                     ],
+  "Thank you, {playername}. I will be away for some time. When I have fullfilled my quest, I will find you again, if you are somewhere in the Northern Valley of Anduin.", "dimborn_ask_bear_response", [(change_screen_map),]],
+  
+[trp_npc17, "dimborn_ask_bear_wait", [
+                    (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth),
+                    (val_div, ":score", 100),
+                    (val_add, ":score", 1),
+                    (val_mul, ":score", 100), #move score to next encounter
+                    (troop_set_slot, "trp_npc17", slot_troop_wealth, ":score"),
+                     ],
+  "I understand. I hope that I may see that bear again some day.", "dimborn_ask_bear_response", [(change_screen_map),]],
+  
+[trp_npc17, "dimborn_ask_bear_forbidden", [
+                    (troop_set_slot, "trp_npc17", slot_troop_wealth, -1), #never again
+                     ],
+  "I am sorry that you are so averse to nature. I will not bother you with this again.", "dimborn_ask_bear_response", [(change_screen_map),]],
+  
 # Ziggy's Werewolf Convo First / Second Time
 
 [anyone, "event_triggered", [

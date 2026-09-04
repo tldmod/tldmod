@@ -4258,6 +4258,7 @@ tld_animals_join_battle =(
             # (store_character_level, ":dimborn_level", "trp_npc17"),
             # (ge, ":dimborn_level", 7),
             # (troop_get_slot, ":dimborn_bear", "trp_npc17", slot_troop_wealth), #re-use slot
+            # (neq, ":dimborn_bear", -1), #slot=-1 means search forbidden
             # (neq, ":dimborn_bear", 1000), #slot=1000 means trait active
             # (val_add, ":dimborn_bear", 1),
             # (troop_set_slot, "trp_npc17", slot_troop_wealth, ":bear_kinship"),
