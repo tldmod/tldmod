@@ -4080,8 +4080,8 @@ mission_templates = [ # not used in game
         #don't spawn defenders if attacking player is nearby, also check for spawn point taken
         (try_begin),
             #block spawn point
-            #(neg|troop_slot_eq,"trp_no_troop",":slot",-2),
             (eq, "$advanced_siege_ai",1),
+            (neg|troop_slot_eq,"trp_no_troop",":slot",-2),
             (neg|agent_is_defender,":player_agent"),
             (agent_is_alive, ":player_agent"),
             (agent_get_position, pos0, ":player_agent"),
@@ -4216,14 +4216,12 @@ mission_templates = [ # not used in game
     (try_begin), 
         (eq, "$advanced_siege_ai",1),
         (store_mission_timer_a,":mission_time"),
-        (gt, ":mission_time", 300),
+        (gt, ":mission_time", 190), #triggers a bit earlier than player being allowed to capture reinforcement points
         (ge, "$defender_reinforcement_stage", 9),
         (assign,":defteam","$defender_team"), #0, 2, 4
-        (assign,":entry_number", 41), # 44,45,46 --> actual entry point
+        (assign,":entry_number", 44), # 44,45,46 --> actual entry point
         (get_player_agent_no, ":player_agent"),
         (try_for_range,":slot",0,3), #0, 1, 2
-            (val_add,":defteam",2), #0, 2, 4
-            (val_add,":entry_number",1), # 44,45,46 --> actual entry point
             (troop_slot_eq,"trp_no_troop",":slot",-1),
             (entry_point_get_position, pos10, ":entry_number"),
             (team_give_order, ":defteam", grc_infantry, mordr_hold), 
@@ -4239,6 +4237,8 @@ mission_templates = [ # not used in game
             #debug
             # (set_show_messages, 1),
             # (display_message, "@{!}team {reg78} retreats to entry {reg77}"),
+            (val_add,":defteam",2), #0, 2, 4
+            (val_add,":entry_number",1), # 44,45,46 --> actual entry point
        (try_end),
     (try_end),
 

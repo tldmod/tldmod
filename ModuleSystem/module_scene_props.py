@@ -2175,7 +2175,7 @@ scene_props = [
 ] or []) + [     
        
     (try_begin),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
         (agent_set_team, reg0, 0),
         (agent_set_slot, reg0, slot_agent_target_entry_point, ":instance_no"), #home position
         (agent_set_slot, reg0, slot_agent_walker_type, 2), #patrol
@@ -2251,7 +2251,7 @@ scene_props = [
             
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
     (try_begin),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
         (agent_set_slot, reg0, slot_agent_target_entry_point, ":instance_no"), #home position
         (agent_set_slot, reg0, slot_agent_walker_type, 2), #patrol
         (agent_set_team, reg0, 0),
@@ -2299,7 +2299,7 @@ scene_props = [
     (party_get_slot, ":troop", "$current_town", slot_town_castle_guard_troop),
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
     (try_begin),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
         (agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),
     (else_try),
         (agent_set_team, reg0, 2), #non-player defender team
@@ -2313,7 +2313,7 @@ scene_props = [
 ##### TROLLS #####
 ("troop_troll",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (store_faction_of_party, ":fac", "$current_town"),
     (faction_get_slot, ":troop", ":fac", slot_faction_troll_troop),    
@@ -3052,7 +3052,7 @@ scene_props = [
     (spawn_agent, "trp_human_prisoner"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground")])]),
 ("troop_guard_sitting",sokf_invisible,"sitting","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (neq, "$tld_war_began", 100),
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
@@ -3414,7 +3414,7 @@ scene_props = [
 
 ("troop_civilian",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
     (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(store_random_in_range, ":civilian_slot", 0, 5),
     (val_add, ":civilian_slot", slot_center_walker_0_troop),
@@ -3464,7 +3464,7 @@ scene_props = [
 ("troop_civ_sitting_ground",sokf_invisible,"sitting","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (set_fixed_point_multiplier, 100),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (neq, "$tld_war_began", 100),
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(store_random_in_range, ":civilian_slot", 0, 5),
@@ -3504,7 +3504,7 @@ scene_props = [
 	
 ("troop_civ_sitting_chair",sokf_invisible,"sit","bo_sitting", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (neq, "$tld_war_began", 100),
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 
@@ -4432,7 +4432,7 @@ scene_props = [
     (try_end),
             
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn riders in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn riders in siege battles
     (agent_set_slot, reg0, slot_agent_target_entry_point, ":instance_no"), #home position
     (agent_set_slot, reg0, slot_agent_walker_type, 2), #patrol
     (store_random_in_range,reg10,5,12), 
@@ -4482,7 +4482,7 @@ scene_props = [
     (try_end),
             
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),  (spawn_agent, ":troop"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn riders in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn riders in siege battles
     (agent_set_team, reg0, 0),
     (agent_set_slot, reg0, slot_agent_walker_type, 3), #messenger  
     
@@ -4504,7 +4504,7 @@ scene_props = [
 
 ("troop_civ_walker",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
     (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(store_random_in_range, ":rand", 0, 9),
     (store_add, ":troop_slot", slot_center_walker_0_troop, ":rand"),
@@ -4667,7 +4667,7 @@ scene_props = [
 
 ("troop_civ_lying",sokf_invisible,"man_body_lie","bo_man_body_lie", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (store_faction_of_party, ":fac", "$current_town"),
     (faction_get_slot, ":troop", ":fac", slot_faction_tier_1_troop), #get a tier 1 troop so they don't wear heavy armour
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
@@ -4722,7 +4722,7 @@ scene_props = [
 ] + (is_a_wb_sceneprop==1 and [  
     (store_trigger_param_1, ":instance_no"),
     (set_fixed_point_multiplier, 100),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
     (spawn_agent, ":troop"), (assign, ":fighter_1", reg0),(agent_set_team, ":fighter_1", 0),(agent_ai_set_interact_with_player, ":fighter_1", 0),(agent_set_is_alarmed, ":fighter_1", 1),(agent_set_no_death_knock_down_only, ":fighter_1", 1),    
@@ -4770,7 +4770,7 @@ scene_props = [
 ] + (is_a_wb_sceneprop==1 and [  
     (store_trigger_param_1, ":instance_no"),
     (set_fixed_point_multiplier, 100),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"),
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
     
@@ -4837,7 +4837,7 @@ scene_props = [
 ] + (is_a_wb_sceneprop==1 and [  
     (store_trigger_param_1, ":instance_no"),
     (set_fixed_point_multiplier, 100),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (store_faction_of_party, ":fac", "$current_town"),
     (faction_get_slot, ":troop", ":fac", slot_faction_troll_troop),
@@ -4858,7 +4858,7 @@ scene_props = [
 ] + (is_a_wb_sceneprop==1 and [  
     (store_trigger_param_1, ":instance_no"),
     (set_fixed_point_multiplier, 100),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), 
     (set_spawn_position, pos1),
     #(position_set_z_to_ground_level, pos1),
@@ -4914,7 +4914,7 @@ scene_props = [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"), 
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -95,0),(set_spawn_position, pos2),
@@ -4964,7 +4964,7 @@ scene_props = [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"), 
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -130,0),(set_spawn_position, pos2),
@@ -5014,7 +5014,7 @@ scene_props = [
         (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"), 
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -160,0),(set_spawn_position, pos2),
@@ -5064,7 +5064,7 @@ scene_props = [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"),
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -150,0),(set_spawn_position, pos2),
@@ -5100,7 +5100,7 @@ scene_props = [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
-        (lt, "$g_encountered_party_2", 0), 
+        (eq, "$gate_aggravator_agent", 0), 
         (prop_instance_get_position, pos1, ":instance_no"), 
         
         #spawn smith
@@ -5150,7 +5150,7 @@ scene_props = [
 
 ("troop_smith_helper",sokf_invisible,"defend_twohanded_WB_frame","bo_defend_twohanded_WB_frame", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (store_faction_of_party, ":fac", "$current_town"),
     (faction_get_slot, ":troop", ":fac", slot_faction_tier_1_troop), #get a tier 1 troop so they don't wear heavy armour
     (prop_instance_get_position, pos3, ":instance_no"), (set_spawn_position, pos1),
@@ -5182,7 +5182,7 @@ scene_props = [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"),
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -90,0),(set_spawn_position, pos2),
@@ -5232,7 +5232,7 @@ scene_props = [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"), 
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -100,0),(set_spawn_position, pos2),
@@ -5285,7 +5285,7 @@ scene_props = [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"), 
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -120,0),(set_spawn_position, pos2),
@@ -5325,7 +5325,7 @@ scene_props = [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"), 
         (copy_position, pos2, pos1),
         (position_move_x, pos2, -95,0),(set_spawn_position, pos2),
@@ -5374,7 +5374,7 @@ scene_props = [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"),
         (set_spawn_position, pos1),
         (store_random_in_range, ":walker_type", 0, 2), #only use first two town walkers, make sure they're not "rich" walkers
@@ -5401,7 +5401,7 @@ scene_props = [
     (ti_on_init_scene_prop,[
         (store_trigger_param_1, ":instance_no"),
         (set_fixed_point_multiplier, 100),
-        (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+        (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
         (prop_instance_get_position, pos1, ":instance_no"),
         (copy_position, pos2, pos1),
         (position_move_y, pos2, -40,0),(set_spawn_position, pos2),
@@ -5439,7 +5439,7 @@ scene_props = [
 
 ("troop_civ_cheer",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
     (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
 	(store_random_in_range, ":slot", 0, 4),
     (val_add, ":slot", slot_center_walker_0_troop),
@@ -5459,7 +5459,7 @@ scene_props = [
 
 ("troop_priest",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
     (store_trigger_param_1, ":instance_no"),
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (spawn_agent, "trp_evil_priest"),(agent_set_team, reg0, 0),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),
     (agent_set_slot, reg0, slot_agent_walker_type, 5), #don't talk
@@ -5532,7 +5532,7 @@ scene_props = [
     [
     	
 ] + (is_a_wb_sceneprop==1 and [
-    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles												 
+    (eq, "$gate_aggravator_agent", 0), #don't spawn guards in siege battles												 
     (store_trigger_param_1, ":instance_no"),
     (prop_instance_get_variation_id_2, ":var2", ":instance_no"),
     (try_begin),
