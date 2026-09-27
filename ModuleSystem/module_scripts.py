@@ -2026,13 +2026,6 @@ scripts = [
 		(val_div, ":food_store_limit", 2),
 		(party_set_slot, ":center_no", slot_party_food_store, ":food_store_limit"),
 
-        
-        #initial volunteers
-        (party_get_slot, ":recruit_template", ":center_no", slot_town_recruits_pt),
-        (call_script, "script_create_volunteers_party",":center_no",0),
-        (assign,":volunteers",reg0),
-        (party_add_template, ":volunteers", ":recruit_template"),
-        (party_add_template, ":volunteers", ":recruit_template"),
 	(try_end),
 
     #Retainers Begin

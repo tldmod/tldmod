@@ -189,6 +189,17 @@ game_menus = [
           (else_try),
             (eq, "$tld_campaign_diffulty", 0),  (assign, "$tld_volunteers_multi", 60), (assign, "$tld_host_size_multi", 200), (assign, "$tld_ally_str_income_multi", 80), (assign, "$tld_victory_str_multi", 50), (assign, "$tld_player_fac_init_strength_multi", 60),
         (try_end),
+        #initial volunteers
+        (try_for_range, ":center_no", centers_begin, centers_end),
+            (store_faction_of_party, ":fac", ":center_no"), # friendly towns only
+            (store_relation, ":rel", ":fac", "$players_kingdom"),
+            (ge, ":rel", 0),
+            (party_get_slot, ":recruit_template", ":center_no", slot_town_recruits_pt),
+            (call_script, "script_create_volunteers_party",":center_no",0),
+            (assign,":volunteers",reg0),
+            (party_add_template, ":volunteers", ":recruit_template"),
+            (party_add_template, ":volunteers", ":recruit_template"),
+        (try_end),
         (try_begin),
             (eq, "$cheat_mode", 1),
             (change_screen_map),
