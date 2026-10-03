@@ -1365,6 +1365,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
   (5, 2, 0, [ #animation duration is 2.6s, so we fire trigger consequences at that delay
   (ge, "$trolls_in_battle",1),
+  (eq, "$gate_aggravator_agent",0),
   #(eq, 1, 0),
   (set_fixed_point_multiplier, 100),
   (assign, ":troll_found", 0),

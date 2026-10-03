@@ -2025,7 +2025,6 @@ scripts = [
 		(assign,  ":food_store_limit", reg0),
 		(val_div, ":food_store_limit", 2),
 		(party_set_slot, ":center_no", slot_party_food_store, ":food_store_limit"),
-
 	(try_end),
 
     #Retainers Begin
@@ -16606,19 +16605,27 @@ scripts = [
 # script_siege_move_archers_to_archer_positions
 ("siege_move_archers_to_archer_positions",
 	[(try_for_agents, ":agent_no"),
-	(agent_is_alive, ":agent_no"),
-	(agent_get_class, ":agent_class", ":agent_no"),
+        (agent_is_alive, ":agent_no"),
+        (agent_is_human, ":agent_no"), #just in case, there shouldn't be any non-human agents in sieges
+        (agent_get_class, ":agent_class", ":agent_no"),
 	
-	  ] + (is_a_wb_script==1 and [
-       (try_begin), #Kham : horse archer siege fix? 
+        ] + (is_a_wb_script==1 and [
+        (try_begin), #Kham : horse archer siege fix? 
           (agent_get_troop_id, ":agent_troop", ":agent_no"),
           (troop_is_guarantee_ranged, ":agent_troop"),
           (troop_is_guarantee_horse, ":agent_troop"),
           (troop_is_mounted, ":agent_troop"),
           (assign, ":agent_class", grc_archers),
           ## TODO proficiency check to make sure they're suited to ranged (not throwing)?
-       (try_end),
-      ] or []) + [
+        (try_end),
+
+        (try_begin), #make agents reconsider more often, helps with finding the closest enemy
+            (neg|agent_is_in_special_mode, ":agent_no"),
+            (agent_get_combat_state,":combat_state", ":agent_no"),
+            (eq, ":combat_state", 0), #not aiming at anyone
+            (agent_force_rethink, ":agent_no"),
+        (try_end),
+        ] or []) + [
 
 		(eq, ":agent_class", grc_archers),
 
@@ -16699,7 +16706,7 @@ scripts = [
 			    (agent_force_rethink, ":agent_no"),
 			    ] or []) + [
             (else_try),   
-                (ge,"$attacker_reinforcement_stage",10),            
+                (ge,"$attacker_reinforcement_stage",10),
                 (agent_get_combat_state,":combat_state", ":agent_no"),
                 (eq, ":combat_state", 0), #not aiming at anyone
                 (agent_clear_scripted_mode, ":agent_no"),
@@ -34765,6 +34772,184 @@ if is_a_wb_script==1:
     (try_end),
     (agent_force_rethink, ":agent"),
 ]),
+
+  # #script_open_close_retreat_gates
+  # # INPUT: entry no; open or close
+  # # OUTPUT: none
+  ("open_close_retreat_gates",
+    [
+    (store_script_param, ":entry",1), #0=all gates
+    (store_script_param, ":closed", 2), #0=open; 1=closed
+    (scene_prop_get_num_instances,":max_gates","spr_gate_destructible_retreat"),
+    (try_begin), #gates start
+        (eq, ":closed", 0),
+        (try_for_range,":count",0,":max_gates"), #gates loop
+            (scene_prop_get_instance,":gate_no", "spr_gate_destructible_retreat", ":count"),
+            (prop_instance_get_variation_id_2, ":var2", ":gate_no"),
+            (this_or_next|eq, ":var2", ":entry"),
+            (eq, ":entry", 0),
+            (scene_prop_slot_eq, ":gate_no", scene_prop_open_or_close_slot, 0),
+            (scene_prop_set_slot, ":gate_no", scene_prop_open_or_close_slot, 1),
+            (prop_instance_get_starting_position, pos1, ":gate_no"),
+            (prop_instance_get_scale, pos2, ":gate_no"),
+            (position_get_scale_x, ":orientation", pos2),
+            (try_begin),
+                (lt, ":orientation", 0), #mirrored?
+                (position_rotate_z, pos1, -85),
+            (else_try),
+                (position_rotate_z, pos1, 85), 
+            (try_end),
+            (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
+                      
+            #find dependent barriers, move them underground
+            (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
+            (try_begin), # barriers start
+              (gt, ":max_barriers",0),
+              (try_for_range,":count",0,":max_barriers"), #barriers loop
+                (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached", ":count"),
+                (prop_instance_get_starting_position, pos1, ":barrier_no"),
+                (prop_instance_get_variation_id, ":var1", ":barrier_no"),
+                (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
+                (eq, ":var1", ":var1_gate"),
+                #(display_message, "@barrier found"),
+                (position_move_z,pos1,-1000),
+                (prop_instance_set_position,":barrier_no",pos1),
+              (try_end), # barriers loop
+            (try_end), # barriers end
+        (try_end), # gates loop
+    (else_try),
+        (eq, ":closed", 1),
+        (try_for_range,":count",0,":max_gates"), #gates loop
+        (scene_prop_get_instance,":gate_no", "spr_gate_destructible_retreat", ":count"),
+        (prop_instance_get_variation_id_2, ":var2", ":gate_no"),
+        (this_or_next|eq, ":var2", ":entry"),
+        (eq, ":var2", 0),
+        #(display_message, "@{!}Entry {reg10}: gate closes"),
+        (scene_prop_slot_eq, ":gate_no", scene_prop_open_or_close_slot, 1),
+        (scene_prop_set_slot, ":gate_no", scene_prop_open_or_close_slot, 0),
+        (prop_instance_get_starting_position, pos1, ":gate_no"),
+        (position_rotate_z, pos1, 0), #back to starting position
+        (prop_instance_animate_to_position, ":gate_no", pos1, 200), #animate in 2 second
+
+        #spawn gate aggravator
+        (position_move_z, pos1, 50,1), #safeguard against aggravators spawning underground
+        (prop_instance_get_scale, pos2, ":gate_no"),
+        (position_get_scale_x, ":x", pos2),
+        (val_mul, ":x", -2),
+        (position_move_x, pos1, ":x",0), 
+        # (try_begin), #move them slightly into the middle so they're easier to hit
+            # (lt, ":orientation", 0), #mirrored?
+            # (position_move_x, pos1, 100,0), 
+        # (else_try),
+            # (position_move_x, pos1, -100,0), 
+        # (try_end),
+        (set_spawn_position, pos1),
+        #(spawn_scene_prop, spr_banner_stand_a), #debug
+        (spawn_agent,"trp_gate_aggravator"),
+        (assign, ":gate_aggravator", reg0),
+        (scene_prop_set_slot, ":gate_no", slot_prop_agent_1, ":gate_aggravator"),
+        (agent_set_speed_limit, ":gate_aggravator", 0),
+        (agent_set_team, ":gate_aggravator", 2),
+        (agent_set_no_dynamics, ":gate_aggravator",1),
+        (agent_set_no_death_knock_down_only, ":gate_aggravator", 1),
+        (agent_set_position, ":gate_aggravator", pos1),
+        (agent_set_visibility, ":gate_aggravator", 0),
+         
+        #find dependent barriers, move them into place
+        (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"), 
+        (try_begin), # barriers start
+          (gt, ":max_barriers",0),
+          (try_for_range,":count",0,":max_barriers"), #barriers loop
+            (scene_prop_get_instance,":barrier_no", "spr_ai_limiter_gate_breached", ":count"),
+            (prop_instance_get_starting_position, pos1, ":barrier_no"),
+            (prop_instance_get_variation_id, ":var1", ":barrier_no"),
+            (prop_instance_get_variation_id, ":var1_gate", ":gate_no"),
+            (eq, ":var1", ":var1_gate"),
+            (position_move_z,pos1,0), #back to starting position
+            (prop_instance_set_position,":barrier_no",pos1),
+          (try_end), # barriers loop
+        (try_end), # barriers end
+        (try_end), # gates loop
+    (try_end), # gates end
+     ]),
+
+  # #script_siege_control_point_taken
+  # # INPUT: entry no; player nearby
+  # # OUTPUT: none
+  ("siege_control_point_taken",
+    [
+    (store_script_param, ":entry_number",1), 
+    (store_script_param, ":player_nearby",2),
+    (entry_point_get_position, pos10, ":entry_number"),
+    (get_player_agent_no, ":player_agent"),
+    (assign, reg77, ":entry_number"),
+    #cheer
+    (assign, ":counter", 0),
+    (try_for_agents, ":friends", pos10, 1000),
+        (agent_is_alive, ":friends"),
+        (agent_is_human, ":friends"),
+        (neg|agent_is_defender, ":friends"),
+        (neq, ":friends", ":player_agent"),
+        (agent_get_combat_state, ":agent_cs", ":friends"),
+        (eq, ":agent_cs", 0),
+        (agent_set_animation, ":friends", "anim_cheer_player"),
+        
+        (eq,":player_nearby", 1), #only if player nearby
+        (agent_set_look_target_position, ":friends", pos0),
+        (agent_set_hit_points, ":friends", 100), #heal up
+        (agent_get_team, ":team", ":friends"),
+        (neq, ":team", 6),
+        (agent_set_team, ":friends", 6),
+        (agent_clear_scripted_mode, ":friends"),
+        (agent_force_rethink, ":friends"),
+        (val_add, ":counter", 1),
+    (try_end),
+    (try_begin),
+        (eq,":player_nearby", 1),
+        (call_script, "script_troop_get_cheer_sound", "trp_player"),
+        (agent_play_sound, ":player_agent", reg1),
+        (agent_set_hit_points, ":player_agent", 100), #heal up
+        (ge, ":counter", 1),
+        (assign, reg5, ":counter"),
+        (store_sub, reg4, ":counter", 1),
+        (display_message, "@{reg5} {reg4?troops:troop} rallied to your side."),
+    (try_end),
+    #BURN THE BANNER!
+    (try_for_prop_instances, ":banner_stand", "spr_banner_stand_auto"),
+        (scene_prop_get_slot, reg77,  ":banner_stand", slot_prop_sound),
+        (scene_prop_slot_eq, ":banner_stand", slot_prop_sound, ":entry_number"),
+        (prop_instance_get_position, pos11, ":banner_stand"),
+        (position_move_z, pos11, -50),
+        (set_spawn_position, pos11),
+        (spawn_scene_prop, "spr_fire_big"),
+        
+        (spawn_scene_prop, "spr_flue_smoke_tall"),
+        (position_move_z, pos11, -50),
+        (set_spawn_position, pos11),
+        (spawn_scene_prop, "spr_fire_big"),
+        (prop_instance_play_sound, reg0, "snd_fire_loop", 0),
+    (try_end),
+    #activate any siege fires
+    (try_for_prop_instances, ":fire_prop", "spr_siege_fire_big_var1"),
+        (prop_instance_get_variation_id, ":var1", ":fire_prop"),
+        (eq, ":var1", ":entry_number"),
+        (init_position, pos12),
+        (prop_instance_add_particle_system, ":fire_prop", "psys_fireplace_fire_big", pos12),
+        #(position_move_z, pos12, 100),
+        (prop_instance_add_particle_system, ":fire_prop", "psys_flue_smoke_tall", pos12),
+        (prop_instance_play_sound, ":fire_prop", "snd_fire_loop", 0), #don't place too many, or you will get a sound overload
+    (try_end),
+    (try_for_prop_instances, ":fire_prop", "spr_siege_village_fire_var1"),
+        (prop_instance_get_variation_id, ":var1", ":fire_prop"),
+        (eq, ":var1", ":entry_number"),
+        (init_position, pos12),
+        (prop_instance_add_particle_system, ":fire_prop", "psys_village_fire_big", pos12),
+        (position_move_z, pos12, 100),
+        (prop_instance_add_particle_system, ":fire_prop", "psys_village_fire_smoke_big", pos12),
+        (prop_instance_play_sound, ":fire_prop", "snd_fire_loop", 0), #don't place too many, or you will get a sound overload
+    (try_end),
+
+     ]),
 
 ] or [])
 
