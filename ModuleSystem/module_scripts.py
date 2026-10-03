@@ -17483,6 +17483,7 @@ scripts = [
 	(try_for_range, ":i_slot", 0, ":max"),
         (troop_get_inventory_slot, ":item", ":troop", ":i_slot"),
         (ge, ":item", 0),
+        (neq, ":item", "itm_wood_club"), #let's not give this crappy club to players
 		(item_get_type,  ":type", ":item"),
 		(is_between, ":type", ":item_type_min", ":item_type_max"),
 		(store_item_value, ":value", ":item"),
@@ -17593,13 +17594,21 @@ scripts = [
     (assign, ":bonus_prof", wpt_one_handed_weapon),
 	(try_begin),
 		(call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_one_handed_wpn,itp_type_polearm),(assign,":item",reg0), #don't assign polearms, because most beginner spears are painful
-		(gt,":item",0),
-		(assign,":problem", imod_cracked),
+        (try_begin),
+            (le,":item",0),
+            (call_script,"script_find_cheapest_item_in_inv_of_type",":troop",itp_type_one_handed_wpn,itp_type_polearm+1),(assign,":item",reg0), #polearm only if there is no other weapon available
+        (try_end),
 		(try_begin), #exceptions
             (eq, ":troop", "trp_i1_woodmen_man"), (assign, ":item", "itm_beorn_staff"), 
         (else_try),
             (eq, ":troop", "trp_i2_iron_hills_miner"), (assign, ":item", "itm_dwarf_mattock"),
+        (else_try),
+            (eq, ":troop", "trp_i1_dun_wildman"), (assign, ":item", "itm_dunnish_axe"),
+        (else_try),
+            (this_or_next|eq, ":troop", "trp_i2_far_harad_tribesman"), (eq, ":troop", "trp_i4_far_harad_champion"), (assign, ":item", "itm_harad_short_spear"), #mace has strength requirement
         (try_end),
+        (gt,":item",0),
+		(assign,":problem", imod_cracked),
 		(try_begin),(store_item_value, ":value", ":item"),(lt,":value", 50),(assign,":problem", 0), (try_end), # pity for pityful weapons!
 		(troop_add_item, "trp_player", ":item", ":problem"),
         (str_store_item_name, s12, ":item"),
