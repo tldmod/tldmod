@@ -1995,6 +1995,7 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
     (get_player_agent_no, ":player"),
     (agent_get_team, ":player_team", ":player"),
     (agent_get_team, ":agent_team", ":killer"),
+    (agent_get_troop_id, ":killer_troop", ":killer"),
 
     (eq, ":agent_team", ":player_team"), #Is part of player's team?
 
@@ -2057,6 +2058,30 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
         (agent_set_slot, ":killer", 15, ":x"),
     (try_end),
     
+    #agility wp bonus
+    (try_begin),
+        (this_or_next|eq, ":killer", ":player"),
+        (troop_slot_eq, ":killer_troop", slot_troop_occupation, slto_player_companion),
+        (store_attribute_level, ":agi", ":killer_troop", ca_agility),
+        (ge, ":agi", 12),
+        (store_character_level, ":killed_level", ":troop_id"),
+        (val_sub, ":killed_level", 5),
+        (val_max, ":killed_level", 1),
+        (store_add, ":agi_wp_bonus_chance", ":agi", ":killed_level"), #12...60
+        (store_random_in_range, ":chance", 0, 200),
+        (ge, ":agi_wp_bonus_chance", ":chance"),
+        (store_div, ":agi_wp_bonus", ":chance", 10),
+        (val_max, ":agi_wp_bonus", ":chance", 1),
+        (troop_add_proficiency_points, ":killer_troop", ":agi_wp_bonus"),
+        
+        (try_begin),
+            (eq, ":killer_troop", "trp_player"),
+            (gt, ":agi_wp_bonus", 2),
+            (assign, reg84, ":agi_wp_bonus"),
+            (display_message, "@You gained {reg84} weapon points from your agility."),
+        (try_end),
+    (try_end),
+        
     (try_begin),
       (check_quest_active, "qst_kill_quest_troop"), #Targeted Kill quest
       (neg|check_quest_succeeded, "qst_kill_quest_troop"),

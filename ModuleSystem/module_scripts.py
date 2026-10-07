@@ -6095,23 +6095,6 @@ scripts = [
             (try_end),
         (try_end),
 
-        #agility wp bonus
-        (try_begin),
-            (store_attribute_level, ":agi", ":stack_troop_new", ca_agility),
-            (ge, ":agi", 12),
-            (store_sub, ":agi_wp_bonus_multi", ":agi", 3),
-            (val_mul, ":agi_wp_bonus_multi",":agi_wp_bonus_multi"), #exponential base
-            (store_mul, ":agi_wp_bonus", ":base_xp_share", ":agi_wp_bonus_multi"),
-            (val_div, ":agi_wp_bonus", 1000),
-            (troop_add_proficiency_points, ":stack_troop_new", ":agi_wp_bonus"),
-            (assign, reg84, ":agi_wp_bonus"),
-            
-            (try_begin),
-                (eq, ":stack_troop_new", "trp_player"),
-                (gt, ":agi_wp_bonus", 2),
-                (display_message, "@You gained {reg84} weapon points from your agility."),
-            (try_end),
-        (try_end),
       (try_end),
       
       # TLD - XP Bonus for INT Characters END

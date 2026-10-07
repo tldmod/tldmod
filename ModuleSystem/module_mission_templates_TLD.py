@@ -767,7 +767,6 @@ custom_tld_bow_always = [
 	  
 custom_tld_init_battle = (ti_before_mission_start,0,0,[],
   [ (assign,"$trolls_in_battle",0),	
-	(assign,"$wargs_in_battle",0), (eq, "$wargs_in_battle", 0), #MV: to get rid of build warnings - remove on use
 	(assign,"$animal_is_present",0), #Init Animals - Kham
 	(assign,"$warg_to_be_replaced",-1),	#  this warg needs replacing
 	(assign,"$nazgul_team", -1), # will be found when needed
@@ -853,7 +852,6 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
   (try_begin), # when wargs in battle
     (is_between, ":agent_mount_itm", item_warg_begin, item_warg_end),
     #--
-    (val_add, "$wargs_in_battle", 1), # keep warg count up to date...
     (agent_set_slot, ":agent", slot_agent_mount_dead, 0),
   (try_end),
   
@@ -1846,10 +1844,7 @@ or
 
 # make mount sound by scripts (bypasses MaB limit to customize mount sounds),
 custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg and horse sounds
-  [ (assign, "$wargs_in_battle", 0), # recount them, to account for deaths
-
-
-    ] + ((is_a_wb_mt==1) and [
+  [ ] + ((is_a_wb_mt==1) and [
     (try_for_agents, ":mount"),
 		(neg|agent_is_human, ":mount"),
 		(agent_get_item_id, ":item", ":mount"),
@@ -1938,6 +1933,17 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 				(agent_set_slot,":mount", slot_agent_mount_dead, 1),
 			(try_end),
 		(try_end),
+        
+        #piggyback: Check for appropiate riders
+        (agent_get_rider, ":rider", ":mount"),
+        (try_begin),
+            (ge, ":rider", 0),
+            (agent_get_troop_id, ":rider_troop", ":rider"),
+            (call_script, "script_cf_troop_cant_ride_item",  ":rider_troop", ":item"),
+            (agent_set_animation, ":mount", "anim_horse_rear"),
+            (agent_set_animation, ":rider", "anim_strike_fly_back_rise"),
+            (agent_start_running_away, ":mount"),
+        (try_end),
 	(try_end),
 
     ] or []) + [
