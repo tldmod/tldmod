@@ -87,7 +87,7 @@ reset_fog = (ti_before_mission_start,  0, ti_once, [],
 fade =  ((is_a_wb_mt==1) and [
 
         (ti_after_mission_start, 0, 0, [],
-          [(neq, "$cheat_mode", 1),
+          [#(neq, "$cheat_mode", 1),
           (mission_cam_set_screen_color,        0xFF000000), 
            (mission_cam_animate_to_screen_color, 0x00000000, 2500)])
         
@@ -4124,11 +4124,12 @@ mission_templates = [ # not used in game
                     (display_message, "@You must break the first line of defense before you can capture a reinforcement point."),
                 (else_try),
                     (this_or_next|le, ":mission_time", 210),
-                    (this_or_next|lt,"$defender_reinforcement_stage", 9),
                     (neg|team_slot_ge, ":defteam", slot_team_reinforcement_stage, 2),
                     (troop_slot_eq,"trp_no_troop",":slot",-1),
                     (lt,":dist", 1000),
                     (display_message, "@You must weaken the defenders before you can capture a reinforcement point."),
+                    (val_add, ":team_reinf_stage", 1),
+                    (team_set_slot, ":defteam", slot_team_reinforcement_stage, ":team_reinf_stage"),
                  (else_try),
                     (lt,":dist", 1500),
                     (troop_slot_eq,"trp_no_troop",":slot",-1),
@@ -4142,7 +4143,7 @@ mission_templates = [ # not used in game
             
             (troop_slot_eq,"trp_no_troop",":slot",-1), #only if choke point is taken
             (gt, ":mission_time", 210),
-            (team_slot_ge, ":defteam", slot_team_reinforcement_stage, 2),
+            (ge, ":team_reinf_stage", 2),
             (this_or_next|eq,":player_nearby", 1), #if player is not nearby, attackers need to fight longer
             (team_slot_ge, ":defteam", slot_team_reinforcement_stage, 4),
 
@@ -4164,7 +4165,7 @@ mission_templates = [ # not used in game
                 (val_add, ":attackers", 1),                
             (try_end),
             (try_begin),
-                (le, ":attackers", 4), #so players can't solo-sneak
+                (le, ":attackers", 3), #so players can't solo-sneak
                 (lt,":dist", 1500),
                 (display_message, "@Not enough allies nearby to capture this reinforcement point!"),
                 (assign, ":attackers", 0),
@@ -4611,7 +4612,7 @@ mission_templates = [ # not used in game
   #(display_message, "@player_team: {reg7}"),
   ]),
 
-  (5, 0, 0,[(gt, "$defender_reinforcement_stage", 0)],[(call_script, "script_siege_move_archers_to_archer_positions")]),
+  (5, 0, 0,[],[(call_script, "script_siege_move_archers_to_archer_positions")]),
 
   common_battle_check_friendly_kills,
   common_battle_check_victory_condition,

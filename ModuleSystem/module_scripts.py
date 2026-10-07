@@ -16705,8 +16705,9 @@ scripts = [
                 (agent_set_division, ":agent_no", grc_infantry),
 			    (agent_force_rethink, ":agent_no"),
 			    ] or []) + [
-            (else_try),   
-                (ge,"$attacker_reinforcement_stage",10),
+                (str_store_agent_name, s5, ":agent_no"),
+            (else_try),
+                (ge,"$attacker_reinforcement_stage",6),
                 (agent_get_combat_state,":combat_state", ":agent_no"),
                 (eq, ":combat_state", 0), #not aiming at anyone
                 (agent_clear_scripted_mode, ":agent_no"),
@@ -34908,7 +34909,17 @@ if is_a_wb_script==1:
         (eq,":player_nearby", 1),
         (call_script, "script_troop_get_cheer_sound", "trp_player"),
         (agent_play_sound, ":player_agent", reg1),
-        (agent_set_hit_points, ":player_agent", 100), #heal up
+        (store_agent_hit_points, ":hp", ":player_agent", 0),
+        (val_add, ":hp", 25),
+        (val_min, ":hp", 100),
+        (agent_set_hit_points, ":player_agent", ":hp"), #heal up
+        (agent_get_slot, ":current_hp_shield", ":player_agent", slot_agent_hp_shield),
+        (troop_get_slot, ":max_hp_shield", "trp_player", slot_troop_hp_shield),
+        (val_max, ":max_hp_shield", ":current_hp_shield"), #accounts for hp shield bonus from other effects
+        (val_mul, ":current_hp_shield", 125),
+        (val_div, ":current_hp_shield", 100),
+        (val_min, ":current_hp_shield", ":max_hp_shield"),
+        (agent_set_slot, ":player_agent", slot_agent_hp_shield, ":current_hp_shield"),
         (ge, ":counter", 1),
         (assign, reg5, ":counter"),
         (store_sub, reg4, ":counter", 1),
@@ -34939,7 +34950,7 @@ if is_a_wb_script==1:
         (prop_instance_add_particle_system, ":fire_prop", "psys_flue_smoke_tall", pos12),
         (prop_instance_play_sound, ":fire_prop", "snd_fire_loop", 0), #don't place too many, or you will get a sound overload
     (try_end),
-    (try_for_prop_instances, ":fire_prop", "spr_siege_village_fire_var1"),
+    (try_for_prop_instances, ":fire_prop", "spr_siege_fire_huge_var1"),
         (prop_instance_get_variation_id, ":var1", ":fire_prop"),
         (eq, ":var1", ":entry_number"),
         (init_position, pos12),

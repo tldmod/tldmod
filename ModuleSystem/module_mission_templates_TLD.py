@@ -2160,6 +2160,13 @@ dungeon_darkness_effect = (0.3, 0, 0, [(eq,"$dungeons_in_scene",1)], [
         (val_min, ":new_darkness", "$base_fog"),
         (assign, "$current_fog", ":new_darkness"),
     (try_end),
+    
+    (try_begin), #player just spawned?
+        (store_mission_timer_a, ":time"),
+        (lt, ":time", 1),
+        (assign, "$current_fog", "$target_fog"),
+    (try_end),
+
 
     (try_begin), #set color
         (ge, "$target_fog", "$base_fog"), #outside 

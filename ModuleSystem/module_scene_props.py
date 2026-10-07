@@ -3300,7 +3300,7 @@ scene_props = [
     (particle_system_burst,"psys_game_hoof_dust",pos1,40),
     (particle_system_burst,"psys_dummy_smoke",pos1,30),
     #(particle_system_burst,"psys_pistol_smoke",pos1,200),
-    (position_rotate_x, pos1, 85),
+    (position_rotate_x, pos1, -85),
     (prop_instance_animate_to_position, ":gate_no", pos1, 400), #animate in 4 second
     (play_sound, "snd_dummy_destroyed"),
     (display_message,"@Gate is breached!"),
@@ -6216,7 +6216,8 @@ scene_props = [
 ] or []) + [
     ])]),
 
-
+("siege_fire_big_var1",0,"arrow_helper_blue","0", []),
+("siege_fire_huge_var1",0,"arrow_helper_blue","0", []),
 
 ("zz_arrow_helper_blue",0,"arrow_helper_blue","0", []), #useful for debugging
 ("save_compartibility4",0,"0","0", []),

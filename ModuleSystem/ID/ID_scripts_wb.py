@@ -753,5 +753,7 @@ script_animate_town_agents = 751
 script_scene_viewpoint_effect = 752
 script_initialize_exchange_screen_extensions = 753
 script_agent_become_uncontrollable = 754
+script_open_close_retreat_gates = 755
+script_siege_control_point_taken = 756
 
 
