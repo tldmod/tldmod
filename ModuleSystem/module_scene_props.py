@@ -2772,15 +2772,15 @@ scene_props = [
 ("tunnel_curved",0,"tunnel_curved","bo_tunnel_curved", []),
 ("tunnel_support",0,"tunnel_support","bo_tunnel_support", []),
 ("tunnel_sloped",0,"tunnel_sloped","bo_tunnel_sloped", []),
-("tunnel_split",0,"tunnel_split","bo_tunnel_split", []),
-("tunnel_crossing",0,"tunnel_crossing","bo_tunnel_crossing", []),
-("tunnel_chasm",0,"chasm","bo_chasm", []),
+("tunnel_split",0,"tunnel_split_new","bo_tunnel_split_new", []),
+("tunnel_crossing",0,"tunnel_crossing_new","bo_tunnel_crossing_new", []),
+("tunnel_chasm",0,"chasm_new","bo_chasm_new", []),
   
 ("rohan_burial_mound",0,"roh_burial_mound","bo_roh_burial_mound", []), 
 ("tree_huorn",0,"tree_huorn","0", []), 
 ("waterfall_stream",0,"waterfall_stream","0", [(ti_on_init_scene_prop,[(play_sound, "snd_waterfall")])]), #used in dale, scn_gondor_battlefield_morgul, scn_gundabad_nw_outpost
 ("waterfall",0,"waterfall","bo_waterfall", []),
-("tunnel_cave",0,"tunnel_cave","bo_tunnel_cave", []), 
+("tunnel_cave",0,"tunnel_cave_new","bo_tunnel_cave_new", []), 
 
 ("moria_pillar",0,"moria_pillar","bo_moria_pillar", []), 
 ("moria_entry_a",0,"moria_entry_a","bo_moria_entry_a", []), 
@@ -2788,11 +2788,11 @@ scene_props = [
 ("moria_corridor_a",0,"moria_corridor_a","bo_moria_corridor_a", []), 
 ("moria_direction_a",0,"moria_direction_a","bo_moria_direction_a", []), 
 ("moria_corridor_b",0,"moria_corridor_b","bo_moria_corridor_b", []), 
-("moria_cell_a",0,"moria_cell_a","bo_moria_cell_a", []), 
+("moria_cell_a",0,"moria_cell_a_new","bo_moria_cell_a_new", []), 
 ("moria_entry_b",0,"moria_entry_b","bo_moria_entry_b", []), 
 ("moria_room_a",0,"moria_room_a","bo_moria_room_a", []), 
 ("moria_stairs_b",0,"moria_stairs_b","bo_moria_stairs_a", []), 
-("moria_cell_b",0,"moria_cell_b","bo_moria_cell_b", []), 
+("moria_cell_b",0,"moria_cell_b_new","bo_moria_cell_b_new", []), 
 ("moria_tower_stairs_a",0,"moria_tower_stairs_a","bo_moria_tower_stairs_a", []), 
 ("moria_tower_cell_a",0,"moria_tower_cell_a_new","bo_moria_tower_cell_a_new", []), 
 #fog triggers
