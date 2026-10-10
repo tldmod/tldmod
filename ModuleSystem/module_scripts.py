@@ -4215,7 +4215,9 @@ scripts = [
       #below code will increase limits a little as the game progresses and player gains level
       (store_character_level, ":level", "trp_player"),
       (val_min, ":level", 90),
-      (store_add, ":level_factor", 90, ":level"),
+      (store_add, ":level_factor", 90, ":level"), 
+      (val_mul,  ":level_factor", 100),
+      (val_div, ":level_factor", "$tld_host_size_multi"), #difficulty affects host size scaling
       (val_mul, ":limit", ":level_factor"),
       (val_div, ":limit", 90),
       
@@ -18411,6 +18413,7 @@ scripts = [
 	(set_fixed_point_multiplier, 100),
 	(assign, ":banner_mesh", -1),
 	(troop_get_slot, ":banner_spr", ":troop_no", slot_troop_banner_scene_prop),
+    (troop_get_type, ":race", ":troop_no"),
 	(store_add, ":banner_scene_props_end", banner_scene_props_end_minus_one, 1),
 	(try_begin),
 		(is_between, ":banner_spr", banner_scene_props_begin, ":banner_scene_props_end"),
@@ -18424,6 +18427,7 @@ scripts = [
 		(this_or_next|eq,":troop_no","trp_mordor_lord"),
 		(this_or_next|eq,":troop_no","trp_dorwinion_spirit"),
 		(this_or_next|eq,":troop_no","trp_dorwinion_spirit_leader"),
+		(this_or_next|eq,":race",tf_troll), #trolls keep their head
 		(eq, ":troop_no", "trp_nazgul"),
 		(cur_tableau_set_override_flags, af_override_weapons),
 	(else_try),

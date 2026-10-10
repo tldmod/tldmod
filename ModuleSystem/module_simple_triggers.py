@@ -3825,6 +3825,7 @@ simple_triggers = [
             (neg|troop_slot_eq, ":lord_candidate", slot_troop_occupation, slto_kingdom_hero),
             (neg|main_party_has_troop,":lord_candidate"),
             (neg|troop_slot_eq, ":lord_candidate", slot_troop_wound_mask, wound_death),
+            (neg|troop_slot_eq, ":lord_candidate", slot_troop_occupation, slto_player_companion),
             (store_skill_level, ":leadership", "skl_leadership", ":lord_candidate"),
             (ge, ":leadership", 1),
             (troop_raise_skill, ":lord_candidate", "skl_leadership", 1), #give them a little extra..

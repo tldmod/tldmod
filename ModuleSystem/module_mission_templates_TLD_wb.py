@@ -2071,7 +2071,7 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
         (store_random_in_range, ":chance", 0, 200),
         (ge, ":agi_wp_bonus_chance", ":chance"),
         (store_div, ":agi_wp_bonus", ":chance", 10),
-        (val_max, ":agi_wp_bonus", ":chance", 1),
+        (val_max, ":agi_wp_bonus", 1),
         (troop_add_proficiency_points, ":killer_troop", ":agi_wp_bonus"),
         
         (try_begin),

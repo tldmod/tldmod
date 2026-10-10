@@ -1024,6 +1024,7 @@ dialogs = [
 
 [anyone|plyr,"member_talk", [(call_script, "script_unequip_items", "$g_talk_troop")],"Let me see your equipment.", "member_trade",[]],
 [anyone,"member_trade",[      (store_character_level, ":talk_troop_level", "$g_talk_troop"),
+            (this_or_next|troop_slot_ge, "$g_talk_troop", slot_troop_occupation, slto_kingdom_companion),
             (ge, ":talk_troop_level", 30),
             (store_character_level, ":player_level", "trp_player"),
             (val_add, ":player_level", 10),

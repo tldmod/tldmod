@@ -10565,6 +10565,8 @@ game_menus = [
         (assign, "$g_encountered_party", ":capital"),
         (assign, "$current_town", ":capital"),
         (assign, "$ambient_faction", "$players_kingdom"),
+        (assign, "$all_doors_locked", 0),
+        (assign, "$sneaked_into_town", 0),
         (party_get_position, pos1, ":capital"),
         (party_set_position, p_main_party, pos1),
         (set_passage_menu,"mnu_town"),
@@ -13794,6 +13796,10 @@ game_menus = [
           (gt, reg3, 1), #MV: non-humans are male
           (assign, reg3, 0),
         (try_end),
+        (try_begin),
+          (eq, "$besieged_by_troop_for_menu", "trp_npc21"), #except Berta
+          (assign, reg3, 1),
+        (try_end),
 		#(party_get_slot,":mesh","$besieged_center_for_menu",slot_town_menu_background),
         (call_script, "script_get_victory_mesh_per_troop", "$besieged_by_troop_for_menu"),
 		(set_background_mesh, reg0),
@@ -13997,6 +14003,9 @@ game_menus = [
     
   [ ("hunt_begin",  [], "Let the hunt begin!",
         [(quest_set_slot, "qst_hunt_beast_mayor", slot_quest_target_item, reg0), #store number of companions
+        (quest_set_slot, "qst_hunt_beast_coop", slot_quest_target_item, 0), #coop partner agent
+        (quest_set_slot, "$random_quest_no", slot_quest_current_state, 0),
+        (quest_set_slot, "$random_quest_no", slot_quest_target_dna, 0), #target animal agent
         (set_jump_mission, "mt_hunt_beast"),
         (set_battle_advantage, 0),
         (set_party_battle_mode),

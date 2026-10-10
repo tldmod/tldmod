@@ -1939,6 +1939,7 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
         (try_begin),
             (ge, ":rider", 0),
             (agent_get_troop_id, ":rider_troop", ":rider"),
+            (neg|is_between, ":rider_troop", "trp_future_animal_0", "trp_animals_end"),
             (call_script, "script_cf_troop_cant_ride_item",  ":rider_troop", ":item"),
             (agent_set_animation, ":mount", "anim_horse_rear"),
             (agent_set_animation, ":rider", "anim_strike_fly_back_rise"),

@@ -364,9 +364,9 @@ itcf_parry_right_polearm                             = 0x0004000000000000
 itcf_parry_left_polearm                              = 0x0008000000000000
 
 itcf_horseback_slash_polearm                         = 0x0010000000000000
-itcf_overswing_spear                                 = 0x0020000000000000
-itcf_overswing_musket                                = 0x0040000000000000
-itcf_thrust_musket                                   = 0x0080000000000000
+itcf_overswing_spear                                 = 0x0020000000000000 #two handed overhead stab
+itcf_overswing_musket                                = 0x0040000000000000 #one handed overhead stab
+itcf_thrust_musket                                   = 0x0080000000000000 #custom troll sideswing
 
 itcf_force_64_bits                                   = 0x8000000000000000
 
@@ -410,7 +410,7 @@ itc_ghost_lance = itcf_thrust_onehanded_lance_horseback
 itc_spear_upstab =  itc_spear|itcf_force_64_bits|itcf_overswing_spear|itcf_overswing_musket|itcf_slashleft_polearm|itcf_slashright_polearm
 itc_lance_upstab =  itc_spear|itcf_force_64_bits|itcf_overswing_spear|itcf_overswing_musket
 itc_great_lance_upstab =  itc_greatlance|itcf_force_64_bits|itcf_overswing_spear|itcf_overswing_musket
-itc_pike_upstab = itc_parry_polearm|itcf_force_64_bits|itcf_overswing_spear|itcf_thrust_polearm
+itc_pike_upstab = itc_parry_polearm|itcf_force_64_bits|itcf_overswing_spear|itcf_thrust_polearm #no 1h, no mounted
 #Hoboistice end
 
 itc_troll_attack = itcf_force_64_bits| itcf_thrust_musket | itcf_overswing_twohanded | itcf_overswing_onehanded

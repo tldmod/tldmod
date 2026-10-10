@@ -6761,16 +6761,18 @@ custom_tld_spawn_troop,
 
     #2 catch and store beast, move it to a random location at map border
 	(0.5, 0, ti_once, 
-	[
+	[(mission_tpl_are_all_agents_spawned),
     ], 
 	[(get_player_agent_no, ":player_agent"),
     (set_fixed_point_multiplier, 100),
     (call_script, "script_find_exit_position_at_pos4", ":player_agent"),
     (agent_get_position, pos10, ":player_agent"),
-    (scene_prop_get_instance, ":prop", "spr_inventory", 0),
-    (position_move_y, pos10, 150),
-    (prop_instance_set_position, ":prop", pos10),
-    (position_move_y, pos10, -400),
+    (try_begin), #just in case, as scene_prop_get_instance can fail
+        (scene_prop_get_instance, ":prop", "spr_inventory", 0),
+        (position_move_y, pos10, 150),
+        (prop_instance_set_position, ":prop", pos10),
+        (position_move_y, pos10, -400),
+    (try_end),
     
     (try_for_agents, ":agent"),
         (agent_is_human, ":agent"), #get rider, not mount
@@ -6820,6 +6822,11 @@ custom_tld_spawn_troop,
         (agent_is_alive, ":agent"),
         (agent_is_human, ":agent"),
         (agent_get_team, ":team", ":agent"),
+        (agent_get_troop_id, ":troop_id", ":agent"),
+        (try_begin), #just in case, as mission start checks apparently fails sometimes
+            (quest_slot_eq, "$random_quest_no", slot_quest_target_troop, ":troop_id"),
+            (quest_set_slot, "$random_quest_no", slot_quest_target_dna, ":agent"), #store agent
+        (try_end),
         (eq, ":team", 1),
         (copy_position, pos11, pos10),
         (store_random_in_range, ":x", -1000, 1000),
