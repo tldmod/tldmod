@@ -548,7 +548,7 @@ game_menus = [
       ("view_faction_strengths_report",[],"View faction strengths report.",[(jump_to_menu, "mnu_faction_strengths_report"),]),
       #("view_faction_relations_report",[],"View faction relations report.",[(jump_to_menu, "mnu_faction_relations_report"),]),
       ("view_traits_report",[],"View traits.",[(jump_to_menu, "mnu_traits_report"),]),
-      ("resume_travelling"            ,[],"Resume travelling."            ,[(change_screen_return),]),
+      ("resume_travelling"            ,[],"Resume travelling."            ,[(change_screen_map),]),
     ]
  ),
 
@@ -12707,7 +12707,7 @@ game_menus = [
         [(jump_to_menu, "mnu_alternate_training_fight")],
       ),
 
-      ("alternate_training_finish",[(gt, "$g_arena_training_kills", 0), (quest_set_slot, "qst_raise_troops", slot_quest_current_state, "$g_arena_training_kills"), (troop_set_health, "trp_player", 100)],"Leave the arena...",
+      ("alternate_training_finish",[(gt, "$g_arena_training_kills", 0), (quest_set_slot, "qst_raise_troops", slot_quest_current_state, "$g_arena_training_kills"), (troop_set_health, "trp_player", 100), (call_script, "script_conclude_quest", "qst_raise_troops")],"Leave the arena...",
         [(change_screen_map)],
       ),
   ]),
@@ -13387,6 +13387,7 @@ game_menus = [
 	(try_begin),
 		(eq, "$current_player_region", region_s_mirkwood),
         (lt, ":rnd", 20),
+        (ge, ":player_level", 10),
         (faction_slot_ge, "fac_guldur", slot_faction_strength, 5000),
         (assign, ":ambush_troop", "trp_werewolf"),
         (val_div, ":ambush_count", 2),
@@ -13394,6 +13395,7 @@ game_menus = [
 		(eq|this_or_next, "$current_player_region", region_n_mirkwood),
         (eq|this_or_next, "$current_player_region", region_c_mirkwood),
 		(eq, "$current_player_region", region_s_mirkwood),
+        (ge, ":player_level", 6),
 		(assign, ":ambush_troop", "trp_spider"),
         (store_random_in_range, ":ambush_extra", -1, 2),
         (val_add, ":ambush_count", ":ambush_extra"),
@@ -13404,35 +13406,40 @@ game_menus = [
         (eq|this_or_next, "$current_player_region", region_misty_mountains),
         (eq|this_or_next, "$current_player_region", region_s_misty_mountains),
         (eq|this_or_next, "$current_player_region", region_anduin_banks),
-        (eq, "$current_player_region", region_n_anduin_vale),
-		#(assign, ":ambush_scene", "scn_mountain_ambush"),
-		(try_begin),
-			#(neq, "$players_kingdom", "fac_beorn"), # If not a beorning there is a 40% chance of a bear ambush
-			(lt, ":rnd", 40),
-			(assign, ":ambush_troop", "trp_bear"),
-			(val_div, ":ambush_count", 2),
-		(else_try),
-			(assign, ":ambush_troop", "trp_wolf"),
-            (store_random_in_range, ":ambush_extra", -1, 4),
-            (val_add, ":ambush_count", ":ambush_extra"),
-            (val_max, ":ambush_count", 3),
-		(try_end),
+        (eq|this_or_next, "$current_player_region", region_n_anduin_vale),
+        (eq|this_or_next, "$current_player_region", region_westfold), #some southern regions have bears, too
+        (eq|this_or_next, "$current_player_region", region_lamedon),
+        (eq|this_or_next, "$current_player_region", region_ringlo),
+        (lt, ":rnd", 40),
+        (ge, ":player_level", 8),
+        (assign, ":ambush_troop", "trp_bear"),
+        (val_div, ":ambush_count", 2),
     (else_try),
-        (eq|this_or_next, "$current_player_region", region_the_wold),
-        (eq|this_or_next, "$current_player_region", region_n_undeep),
-        (eq|this_or_next, "$current_player_region", region_s_undeep),
-		(eq, "$current_player_region", region_w_emyn_muil),
+        # (eq|this_or_next, "$current_player_region", region_the_wold),
+        # (eq|this_or_next, "$current_player_region", region_n_undeep),
+        # (eq|this_or_next, "$current_player_region", region_s_undeep),
+		# (eq, "$current_player_region", region_w_emyn_muil),
         (assign, ":ambush_troop", "trp_wolf"),
         (store_random_in_range, ":ambush_extra", -1, 4),
         (val_add, ":ambush_count", ":ambush_extra"),
         (val_max, ":ambush_count", 3),
 	(try_end),
     
-    (val_clamp, ":ambush_count", 1, 15),
+    (val_clamp, ":ambush_count", 5, 15),
 	(assign, reg20, ":ambush_troop"),
 	(assign, "$alarm_level", ":ambush_count"),
-	(assign, reg21, ":ambush_count"),
+	(assign, reg21, "$alarm_level"),
 	#(assign, reg22, ":ambush_scene"),
+    #(display_message, "@ambush count: {reg21}"),
+  
+    #need to create a fake party, because the mission template assumes it's an actual encounter
+    (set_spawn_radius, 1),
+    (spawn_around_party, "p_main_party", pt_none),
+    (assign, ":animal_party", reg0),
+    (party_force_add_members, ":animal_party", ":ambush_troop", 1),
+    ] + (is_a_wb_menu==1 and [
+    (set_encountered_party, ":animal_party"),
+	] or []) + [
   
   #swy-- set the background mesh depending on what's going to attack us!
   (try_begin),
@@ -13461,6 +13468,9 @@ game_menus = [
         (set_jump_mission, "mt_animal_ambush"),
         (set_battle_advantage, 0),
         (assign,"$number_of_combatants",1), #use a small scene
+        (party_get_current_terrain, "$current_player_terrain","p_main_party"),
+        (call_script, "script_get_region_of_party","p_main_party"),(assign, "$current_player_region", reg1),
+        (call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
         (call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"),
         (modify_visitors_at_site, reg0),
         (reset_visitors),
@@ -13478,8 +13488,23 @@ game_menus = [
  
  ),
 
-("animal_ambush_success", 0, "The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}", "none", 
+("animal_ambush_success", 0, "The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3} ^^{s10}", "none", 
 [
+    (str_clear, s10),
+    (try_begin),
+        (party_get_num_companions, reg1, "p_player_casualties"),
+        (gt, reg1, 0),
+        (call_script, "script_print_casualties_to_s0", "p_player_casualties", 0),
+        (str_store_string_reg, s11, s0),
+        (str_store_string, s10,  "@Your Casualties: {s11}"),
+    (try_end),
+    
+    (try_begin),
+        (store_encountered_party, ":fake_party"),
+        (party_is_active),
+        (remove_party, ":fake_party"),
+    (try_end),
+    
 	(call_script,"script_maybe_relocate_player_from_z0"),
     (assign, reg5, -1), # Reward item id.
 	(try_begin),
@@ -13538,8 +13563,23 @@ game_menus = [
 	("repeat",[(eq, cheat_switch, 1)],"{!}DEBUG: Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
 ]),
 
-("animal_ambush_fail", 0, "The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.", "none", 
+("animal_ambush_fail", 0, "The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again. ^^{s10}", "none", 
 [
+  (str_clear, s10),
+  (try_begin),
+    (party_get_num_companions, reg1, "p_player_casualties"),
+    (gt, reg1, 0),
+    (call_script, "script_print_casualties_to_s0", "p_player_casualties", 0),
+    (str_store_string_reg, s11, s0),
+    (str_store_string, s10,  "@Your Casualties: {s11}"),
+  (try_end),
+  
+    (try_begin),
+        (store_encountered_party, ":fake_party"),
+        (party_is_active),
+        (remove_party, ":fake_party"),
+    (try_end),
+    
   (call_script,"script_maybe_relocate_player_from_z0"),
   (assign,":ambush_troop", reg20),
 

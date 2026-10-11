@@ -6598,43 +6598,37 @@ mission_templates = [ # not used in game
 
 
 # Animal Ambushes (CppCoder)
-("animal_ambush",mtf_battle_mode,charge,
+("animal_ambush",mtf_battle_mode,charge, #mtf_commit_casualties #mtf_battle_mode #mtf_arena_fight
  "You are ambushed by an animal.",
  [
-     (1,mtef_attackers|mtef_team_0|mtef_use_exact_number,af_override_horse,aif_start_alarmed,25,[]), #max 25 troops
+     (1,mtef_defenders|mtef_team_0|mtef_use_exact_number,af_override_horse,aif_start_alarmed,25,[]), #max 25 troops
      (4,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
 
  ],
 	# Triggers
   tld_common_wb_muddy_water+
-	common_deathcam_triggers +
-  #moto_formations_triggers + 
+  common_deathcam_triggers +
   tld_animal_attacks+
   fade+ 
   ((is_a_wb_mt==1) and tld_bow_shield + khams_custom_player_camera or [] )
   + [
-	
- # tld_animals_init,
-	custom_warg_sounds,
-	common_battle_on_player_down,
 
 	# Make the teams enemies...
 	(ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1),(assign, "$battle_won", 0),
-    #(assign, "$alarm_level", reg21)
     ]),
 
 	(1, 0, ti_once, 
+	[], 
 	[
 		#(str_store_troop_name, s1, reg20),
 		#(display_message, "@DEBUG: Enemy to spawn: {s1}"),
-		#(display_message, "@DEBUG: Enemies to spawn: {reg21}"),
+        # (assign, reg21, "$alarm_level"),
+		# (display_message, "@DEBUG: Enemies to spawn: {reg21}"),
 
 		# Make enemies charge...
 		(set_show_messages, 0),
 			(team_give_order, 1, grc_everyone, mordr_charge),
-		(set_show_messages, 1),
-	], 
-	[]),
+		(set_show_messages, 1),]),
 
 	(5, 0, 0,  #spawn a new behind player every 5 seconds
 	[(gt, "$alarm_level", 0)], 
@@ -6648,7 +6642,10 @@ mission_templates = [ # not used in game
     (agent_set_team, reg0, 1),
     #(add_visitors_to_current_scene, 1, reg20, 2),
     #(display_message, "@animal spawned"),
-    (val_sub,"$alarm_level", 1), ]),
+    (val_sub,"$alarm_level", 1),
+    #(assign, reg21, "$alarm_level"),
+    #(display_message, "@DEBUG: Enemies to spawn: {reg21}"),
+	]),
 
 	(1, 60, ti_once, 
 	[
@@ -6677,7 +6674,12 @@ mission_templates = [ # not used in game
 			(finish_mission),
         (else_try),
             (eq, cheat_switch, 1),
-            (finish_mission),
+            (finish_mission),    
+            (try_begin),
+                (store_encountered_party, ":fake_party"),
+                (party_is_active),
+                (remove_party, ":fake_party"),
+            (try_end),
 		(try_end),
     # Apply health changes...
     (try_begin),
@@ -6699,11 +6701,21 @@ mission_templates = [ # not used in game
         (troop_set_health, ":troop", ":hp"),
       (try_end),
     (try_end),
+    (call_script, "script_count_mission_casualties_from_agents_custom"),
 	]),
 
 #tld_animal_strikes,
 #tld_remove_riderless_animals,
 custom_tld_spawn_troop,
+custom_warg_sounds,
+common_battle_on_player_down,
+ ] + (is_a_wb_mt==1 and [
+tld_move_ai,
+tld_melee_ai,
+hp_shield_init,
+hp_shield_trigger,
+tld_calculate_wounded,
+] or []) + [
 
 ]),
 
@@ -7150,7 +7162,6 @@ custom_tld_spawn_troop,
 
 custom_tld_spawn_troop,
 custom_warg_sounds,
-common_battle_on_player_down,
 tld_move_ai,
 tld_melee_ai,
 hp_shield_init,

@@ -2026,7 +2026,8 @@ triggers = [
   (8, 0, 0, [],[
       (eq, "$tld_option_animal_ambushes", 1), # Allows option to be toggled on and off.
       (store_character_level, ":player_level", trp_player),
-      (ge,":player_level", 7),
+      (ge,":player_level", 5),
+      (assign, ":continue", 0),
       (try_begin),
         (party_get_attached_to, ":attached_to_party", "p_main_party"),
         (neg|is_between, ":attached_to_party", centers_begin, centers_end),
@@ -2036,11 +2037,17 @@ triggers = [
         (eq|this_or_next, "$current_player_region", region_n_anduin_vale),
         (eq|this_or_next, "$current_player_region", region_n_mirkwood),
         (eq|this_or_next, "$current_player_region", region_c_mirkwood),
-        (eq|this_or_next, "$current_player_region", region_s_mirkwood),        
-        (eq|this_or_next, "$current_player_region", region_the_wold),
+        (eq|this_or_next, "$current_player_region", region_s_mirkwood),
+        (eq|this_or_next, "$current_player_region", region_celebrant),
         (eq|this_or_next, "$current_player_region", region_n_undeep),
         (eq|this_or_next, "$current_player_region", region_s_undeep),
-		(eq, "$current_player_region", region_w_emyn_muil),
+        (eq|this_or_next, "$current_player_region", region_w_emyn_muil),
+        (eq|this_or_next, "$current_player_region", region_the_wold),
+        (is_between|this_or_next, "$current_player_region", region_east_emnet, region_eastfold),
+        (eq|this_or_next, "$current_player_region", region_westfold),
+        (eq|this_or_next, "$current_player_region", region_ringlo),
+        (eq|this_or_next, "$current_player_region", region_green_hills),
+		(eq, "$current_player_region", region_lamedon),
         (assign, ":continue", 1),
         
         (try_begin), #if spider nest destroyed
