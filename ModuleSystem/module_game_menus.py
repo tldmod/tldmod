@@ -3884,16 +3884,16 @@ game_menus = [
     	(party_add_members, "p_main_party", "trp_badass_theo",1), 
     	(display_message, "@{!}Killer WItcher Spawned, Badass King Theo added!")]),
     ("player_enable_siege",[], "{!}Enable Player Siege", [(assign, "$player_allowed_siege",1),(display_message, "@{!}Player Siege Enabled", color_bad_news)]),
-    ("animal_test",[], "{!}Animal Ambush Test", [
-    	(try_begin), 
-    		# (this_or_next|eq, "$current_player_region", region_n_mirkwood),
-			# (this_or_next|eq, "$current_player_region", region_s_mirkwood), 
-			# (this_or_next|eq, "$current_player_region", region_grey_mountains),
-			# (			  eq, "$current_player_region", region_misty_mountains),
-			(jump_to_menu, "mnu_animal_ambush"),
-		(else_try),
-			(display_message, "@{!}You are not in the right region to spawn animal ambushes. Please go to N Mirkwood, S Mirkwood, Grey Mountains, or Misty Mountains", color_bad_news),
-		(try_end)]),
+    # ("animal_test",[], "{!}Animal Ambush Test", [ #not useful anymore, due to changes in ambush system
+    	# (try_begin), 
+    		# # (this_or_next|eq, "$current_player_region", region_n_mirkwood),
+			# # (this_or_next|eq, "$current_player_region", region_s_mirkwood), 
+			# # (this_or_next|eq, "$current_player_region", region_grey_mountains),
+			# # (			  eq, "$current_player_region", region_misty_mountains),
+			# (jump_to_menu, "mnu_animal_ambush"),
+		# (else_try),
+			# (display_message, "@{!}You are not in the right region to spawn animal ambushes. Please go to N Mirkwood, S Mirkwood, Grey Mountains, or Misty Mountains", color_bad_news),
+		# (try_end)]),
     #("check_if_capital",[], "{!}How Many Centers Left (Gondor)", [(call_script, "script_cf_check_if_only_capital_left", "p_town_pinnath_gelin")]),
     ("camp_khamtest_back",[],"{!}Back",[(jump_to_menu, "mnu_dev_menu")]),
     ] or []) + [
@@ -13374,74 +13374,15 @@ game_menus = [
  "You and your companions find yourselves separated from the rest of your party, when suddenly...",
  "none", 
  [
-	(assign, ":ambush_troop", "trp_wolf"), # (CppCoder) Default, just in case something glitches...
+    # (store_encountered_party, reg55),
+    # (store_encountered_party2, reg56),
     
-    (store_character_level, ":player_level", trp_player),
-    (party_get_num_companions, ":party_size", "p_main_party"),
-    (val_min, ":party_size", 35), #there's also a party size check within the trigger, but need it here for testing
-    (store_add, ":ambush_count", ":player_level", ":party_size"), #ca. 10-60
-    (val_div, ":ambush_count", 9), #1-7
-    #(assign, ":ambush_scene", 0),
-	(store_random_in_range, ":rnd", 0, 100),
+    # (display_message, "@encounter 1  {reg55}; encounter 2  {reg56}" ),
+    # (assign, reg57, "$g_encountered_party"),
+    # (display_message, "@g_encountered_party  {reg57}" ),
     
-	(try_begin),
-		(eq, "$current_player_region", region_s_mirkwood),
-        (lt, ":rnd", 20),
-        (ge, ":player_level", 10),
-        (faction_slot_ge, "fac_guldur", slot_faction_strength, 5000),
-        (assign, ":ambush_troop", "trp_werewolf"),
-        (val_div, ":ambush_count", 2),
-    (else_try),    
-		(eq|this_or_next, "$current_player_region", region_n_mirkwood),
-        (eq|this_or_next, "$current_player_region", region_c_mirkwood),
-		(eq, "$current_player_region", region_s_mirkwood),
-        (ge, ":player_level", 6),
-		(assign, ":ambush_troop", "trp_spider"),
-        (store_random_in_range, ":ambush_extra", -1, 2),
-        (val_add, ":ambush_count", ":ambush_extra"),
-        (val_max, ":ambush_count", 2),
-		#(assign, ":ambush_scene", "scn_mirkwood_ambush"),
-	(else_try), #northern wilderness
-		(eq|this_or_next, "$current_player_region", region_grey_mountains),
-        (eq|this_or_next, "$current_player_region", region_misty_mountains),
-        (eq|this_or_next, "$current_player_region", region_s_misty_mountains),
-        (eq|this_or_next, "$current_player_region", region_anduin_banks),
-        (eq|this_or_next, "$current_player_region", region_n_anduin_vale),
-        (eq|this_or_next, "$current_player_region", region_westfold), #some southern regions have bears, too
-        (eq|this_or_next, "$current_player_region", region_lamedon),
-        (eq|this_or_next, "$current_player_region", region_ringlo),
-        (lt, ":rnd", 40),
-        (ge, ":player_level", 8),
-        (assign, ":ambush_troop", "trp_bear"),
-        (val_div, ":ambush_count", 2),
-    (else_try),
-        # (eq|this_or_next, "$current_player_region", region_the_wold),
-        # (eq|this_or_next, "$current_player_region", region_n_undeep),
-        # (eq|this_or_next, "$current_player_region", region_s_undeep),
-		# (eq, "$current_player_region", region_w_emyn_muil),
-        (assign, ":ambush_troop", "trp_wolf"),
-        (store_random_in_range, ":ambush_extra", -1, 4),
-        (val_add, ":ambush_count", ":ambush_extra"),
-        (val_max, ":ambush_count", 3),
-	(try_end),
-    
-    (val_clamp, ":ambush_count", 5, 15),
-	(assign, reg20, ":ambush_troop"),
-	(assign, "$alarm_level", ":ambush_count"),
-	(assign, reg21, "$alarm_level"),
-	#(assign, reg22, ":ambush_scene"),
-    #(display_message, "@ambush count: {reg21}"),
-  
-    #need to create a fake party, because the mission template assumes it's an actual encounter
-    (set_spawn_radius, 1),
-    (spawn_around_party, "p_main_party", pt_none),
-    (assign, ":animal_party", reg0),
-    (party_force_add_members, ":animal_party", ":ambush_troop", 1),
-    ] + (is_a_wb_menu==1 and [
-    (set_encountered_party, ":animal_party"),
-	] or []) + [
-  
   #swy-- set the background mesh depending on what's going to attack us!
+  (party_stack_get_troop_id, ":ambush_troop", "$g_encountered_party", 0),
   (try_begin),
     (eq,":ambush_troop", "trp_spider"),
     (set_background_mesh, "mesh_draw_spiders"),
@@ -13465,6 +13406,7 @@ game_menus = [
         (eq, reg20, "trp_bear"),
         (jump_to_menu, "mnu_beorn_bear_encounter"),
     (else_try),
+        (set_party_battle_mode),
         (set_jump_mission, "mt_animal_ambush"),
         (set_battle_advantage, 0),
         (assign,"$number_of_combatants",1), #use a small scene
@@ -13472,18 +13414,15 @@ game_menus = [
         (call_script, "script_get_region_of_party","p_main_party"),(assign, "$current_player_region", reg1),
         (call_script, "script_get_close_landmark","p_main_party"), (assign, "$current_player_landmark", reg0),
         (call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"),
-        (modify_visitors_at_site, reg0),
-        (reset_visitors),
-        (store_div, ":initial", "$alarm_level", 2), #only spawn half of them initially
-        (val_max, ":initial", 1),
-        (set_visitors, 1, reg20, ":initial"),
-        (val_sub, "$alarm_level", ":initial"),
-        (jump_to_scene, reg0),
+        #(jump_to_scene, reg0),
         (change_screen_mission),
     (try_end),
 	]),
     
- ("back_to_kham",[(eq, cheat_switch, 1)],"{!}DEBUG: back...",[(jump_to_menu, "mnu_camp_khamtest"),]),    
+ ("back_to_kham",[(eq, cheat_switch, 1)],"{!}DEBUG: back...",[
+    #(jump_to_menu, "mnu_camp_khamtest"),
+    (change_screen_map),
+ ]),    
  ],
  
  ),
@@ -13505,18 +13444,18 @@ game_menus = [
         (remove_party, ":fake_party"),
     (try_end),
     
+    (assign, ":ambush_troop", "$besieged_by_troop_for_menu"),
+    
 	(call_script,"script_maybe_relocate_player_from_z0"),
     (assign, reg5, -1), # Reward item id.
 	(try_begin),
-		(gt, reg21, 1),
+		(gt, "$meta_alarm", 1),
 		(assign, reg0, 1),
-		(str_store_troop_name_plural, s2, reg20),
+		(str_store_troop_name_plural, s2, ":ambush_troop"),
 	(else_try),
 		(assign, reg0, 0),
-		(str_store_troop_name, s2, reg20),
+		(str_store_troop_name, s2, ":ambush_troop"),
 	(try_end),
-  
-  (assign,":ambush_troop", reg20),
   
   #swy-- set the background mesh depending on what's going to attack us!
   (try_begin),

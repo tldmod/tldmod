@@ -2023,86 +2023,160 @@ triggers = [
   ]),
   
   # CC: Ambushes
-  (8, 0, 0, [],[
-      (eq, "$tld_option_animal_ambushes", 1), # Allows option to be toggled on and off.
-      (store_character_level, ":player_level", trp_player),
-      (ge,":player_level", 5),
+  (2, 0, 0, [],[
+    (eq, "$tld_option_animal_ambushes", 1), # Allows option to be toggled on and off.
+    (store_character_level, ":player_level", trp_player),
+    (ge,":player_level", 5),
+    (party_get_attached_to, ":attached_to_party", "p_main_party"),
+    (neg|is_between, ":attached_to_party", centers_begin, centers_end),
+    (assign, ":continue", 1), 
+    (try_for_range, ":party_id", centers_begin, centers_end), # Don't allow ambushes if player is close to a center.
+      (party_is_active, ":party_id"), # Skip non-existant adv. camps.
+      (store_distance_to_party_from_party, ":dist", ":party_id", "p_main_party"),
+      #(display_message, "@8 Units away..."),
+      (lt, ":dist", 8),
       (assign, ":continue", 0),
-      (try_begin),
-        (party_get_attached_to, ":attached_to_party", "p_main_party"),
-        (neg|is_between, ":attached_to_party", centers_begin, centers_end),
-        (eq|this_or_next, "$current_player_region", region_misty_mountains),
-        (eq|this_or_next, "$current_player_region", region_grey_mountains),
-        (eq|this_or_next, "$current_player_region", region_s_misty_mountains),
-        (eq|this_or_next, "$current_player_region", region_n_anduin_vale),
+    (try_end),
+    (eq, ":continue", 1),
+    
+    (eq|this_or_next, "$current_player_region", region_misty_mountains),
+    (eq|this_or_next, "$current_player_region", region_grey_mountains),
+    (eq|this_or_next, "$current_player_region", region_s_misty_mountains),
+    (eq|this_or_next, "$current_player_region", region_n_anduin_vale),
+    (eq|this_or_next, "$current_player_region", region_n_mirkwood),
+    (eq|this_or_next, "$current_player_region", region_c_mirkwood),
+    (eq|this_or_next, "$current_player_region", region_s_mirkwood),
+    (eq|this_or_next, "$current_player_region", region_celebrant),
+    (eq|this_or_next, "$current_player_region", region_n_undeep),
+    (eq|this_or_next, "$current_player_region", region_s_undeep),
+    (eq|this_or_next, "$current_player_region", region_w_emyn_muil),
+    (eq|this_or_next, "$current_player_region", region_the_wold),
+    (is_between|this_or_next, "$current_player_region", region_east_emnet, region_eastfold),
+    (eq|this_or_next, "$current_player_region", region_westfold),
+    (eq|this_or_next, "$current_player_region", region_ringlo),
+    (eq|this_or_next, "$current_player_region", region_green_hills),
+    (eq, "$current_player_region", region_lamedon),
+        
+    #get ambush animal and count
+    (party_get_num_companions, ":party_size_for_ambush_count", "p_main_party"),
+    (val_min, ":party_size_for_ambush_count", 35), #there's also a party size check within the trigger, but need it here for testing
+    (store_add, ":ambush_count", ":player_level", ":party_size_for_ambush_count"), #ca. 10-60
+    (val_div, ":ambush_count", 9), #1-7
+    (store_random_in_range, ":rnd", 0, 100),
+    (try_begin),
+        (eq, "$current_player_region", region_s_mirkwood),
+        (lt, ":rnd", 20),
+        (ge, ":player_level", 10),
+        (faction_slot_ge, "fac_guldur", slot_faction_strength, 5000),
+        (assign, ":ambush_troop", "trp_werewolf"),
+        (val_div, ":ambush_count", 2),
+    (else_try),    
         (eq|this_or_next, "$current_player_region", region_n_mirkwood),
         (eq|this_or_next, "$current_player_region", region_c_mirkwood),
-        (eq|this_or_next, "$current_player_region", region_s_mirkwood),
-        (eq|this_or_next, "$current_player_region", region_celebrant),
-        (eq|this_or_next, "$current_player_region", region_n_undeep),
-        (eq|this_or_next, "$current_player_region", region_s_undeep),
-        (eq|this_or_next, "$current_player_region", region_w_emyn_muil),
-        (eq|this_or_next, "$current_player_region", region_the_wold),
-        (is_between|this_or_next, "$current_player_region", region_east_emnet, region_eastfold),
-        (eq|this_or_next, "$current_player_region", region_westfold),
+        (eq, "$current_player_region", region_s_mirkwood),
+        (ge, ":player_level", 6),
+        (assign, ":ambush_troop", "trp_spider"),
+        (store_random_in_range, ":ambush_extra", -1, 2),
+        (val_add, ":ambush_count", ":ambush_extra"),
+        (val_max, ":ambush_count", 2),
+        #(assign, ":ambush_scene", "scn_mirkwood_ambush"),
+    (else_try), #northern wilderness
+        (eq|this_or_next, "$current_player_region", region_grey_mountains),
+        (eq|this_or_next, "$current_player_region", region_misty_mountains),
+        (eq|this_or_next, "$current_player_region", region_s_misty_mountains),
+        (eq|this_or_next, "$current_player_region", region_anduin_banks),
+        (eq|this_or_next, "$current_player_region", region_n_anduin_vale),
+        (eq|this_or_next, "$current_player_region", region_westfold), #some southern regions have bears, too
+        (eq|this_or_next, "$current_player_region", region_lamedon),
         (eq|this_or_next, "$current_player_region", region_ringlo),
-        (eq|this_or_next, "$current_player_region", region_green_hills),
-		(eq, "$current_player_region", region_lamedon),
-        (assign, ":continue", 1),
-        
-        (try_begin), #if spider nest destroyed
-            (eq|this_or_next, "$current_player_region", region_n_mirkwood),
-            (eq|this_or_next, "$current_player_region", region_c_mirkwood),
-            (eq,              "$current_player_region", region_s_mirkwood),
-            (party_slot_eq, "p_legend_mirkwood", slot_scene_visited, 1), 
-            (assign, ":continue", 0),
-        (try_end),
-        (try_for_range, ":party_id", centers_begin, centers_end), # Don't allow ambushes if player is close to a center.
-          (eq, ":continue", 1),
-          (party_is_active, ":party_id"), # Skip non-existant adv. camps.
-          (store_distance_to_party_from_party, ":dist", ":party_id", "p_main_party"),
-          #(display_message, "@8 Units away..."),
-          (lt, ":dist", 8),
-          (assign, ":continue", 0),
-        (try_end),
-        
-        (eq, ":continue", 1),
-        
-        (party_get_num_companions, ":party_size", "p_main_party"),
-        (val_mul, ":party_size", 3),
-        
-        (call_script, "script_get_max_skill_of_player_party", "skl_spotting"),
-        (store_mul, ":max_spotting", reg0, 2),
-        (val_add, ":max_spotting", ":party_size"),
-        (assign, ":max_spotting_owner", reg1),       
-        
-        (call_script, "script_get_max_skill_of_player_party", "skl_persuasion"),
-        (store_mul, ":max_wildcraft", reg0, 3),
-        (val_add, ":max_wildcraft", ":max_spotting"),
-        (assign, ":max_wildcraft_owner", reg1),
+        (lt, ":rnd", 40),
+        (ge, ":player_level", 8),
+        (assign, ":ambush_troop", "trp_bear"),
+        (val_div, ":ambush_count", 2),
+        (val_min, ":ambush_count", 2),
+    (else_try),
+        (eq|this_or_next, "$current_player_region", region_grey_mountains),
+        (eq|this_or_next, "$current_player_region", region_misty_mountains),
+        (eq|this_or_next, "$current_player_region", region_s_misty_mountains),
+        (eq|this_or_next, "$current_player_region", region_anduin_banks),
+        (eq|this_or_next, "$current_player_region", region_n_anduin_vale),
+        (eq|this_or_next, "$current_player_region", region_celebrant),
+        (lt, ":rnd", 60),
+        (ge, ":player_level", 6),
+        (assign, ":ambush_troop", "trp_wild_warg"),
+        (store_random_in_range, ":ambush_extra", -2, 2),
+        (val_add, ":ambush_count", ":ambush_extra"),
+        (val_max, ":ambush_count", 2),
+    (else_try),
+        (assign, ":ambush_troop", "trp_wolf"),
+        (store_random_in_range, ":ambush_extra", -1, 4),
+        (val_add, ":ambush_count", ":ambush_extra"),
+        (val_max, ":ambush_count", 3),
+    (try_end),
 
-        
-        (store_random_in_range, ":rnd", 0, 200),
-        (try_begin),
-            (troop_slot_eq, trp_traits, slot_trait_animal_fighter, 1),
-            (store_random_in_range, ":rnd", 0, 400),
-        (try_end),
-        (le, ":rnd", 100), # 50% chance by default
-        (gt, ":rnd", ":party_size"),
-        (try_begin),
-            (le, ":rnd", ":max_spotting"),
-            (display_message, "@Avoided animal ambush via Spotting."),
-            (add_xp_to_troop, 200, ":max_spotting_owner"),
-        (else_try),
-            (le, ":rnd", ":max_wildcraft"),
-            (display_message, "@Avoided animal ambush via Wildcraft."),
-            (add_xp_to_troop, 200, ":max_wildcraft_owner"),
-        (else_try),
-            (lt, "$creature_ambush_counter", 1),
-            (val_add, "$creature_ambush_counter", 1),
-            (jump_to_menu, "mnu_animal_ambush"),
-        (try_end),
-      (try_end),
+    (try_begin), #if spider nest destroyed
+        (eq, ":ambush_troop", trp_spider),
+        (party_slot_eq, "p_legend_mirkwood", slot_scene_visited, 1), 
+        (assign, ":ambush_troop", 0),
+    (try_end),
+
+    (val_clamp, ":ambush_count", 1, 15),
+    (assign, "$alarm_level", ":ambush_count"), #for tracking reinforcements in mission
+    (assign, "$meta_alarm", ":ambush_count"), #for post-battle menu
+    (assign, "$besieged_by_troop_for_menu",":ambush_troop"), #for post-battle menu
+    
+    (ge, ":ambush_troop", 1),
+    
+    # (str_store_troop_name, s25, ":ambush_troop"),
+    # (display_message, "@ambush troop: {s25}"),
+    
+    #need to create a fake party, because the mission template assumes it's an actual encounter
+    (set_spawn_radius, 1),
+    (spawn_around_party, "p_main_party", pt_none),
+    (assign, ":animal_party", reg0),
+    (party_set_slot, ":animal_party", slot_party_type, spt_animal_ambush),
+    (store_div, ":initial", "$alarm_level", 2), #only spawn half of them initially
+    (party_force_add_members, ":animal_party", ":ambush_troop", ":initial"),
+    (val_sub, "$alarm_level", ":initial"),
+    (party_get_num_companions, reg55, ":animal_party"),
+    #(display_message, "@initial: {reg55}"),
+    
+    
+    (party_get_num_companions, ":party_size", "p_main_party"),
+    (val_mul, ":party_size", 3),
+    
+    (call_script, "script_get_max_skill_of_player_party", "skl_spotting"),
+    (store_mul, ":max_spotting", reg0, 2),
+    (val_add, ":max_spotting", ":party_size"),
+    (assign, ":max_spotting_owner", reg1),       
+    
+    (call_script, "script_get_max_skill_of_player_party", "skl_persuasion"),
+    (store_mul, ":max_wildcraft", reg0, 3),
+    (val_add, ":max_wildcraft", ":max_spotting"),
+    (assign, ":max_wildcraft_owner", reg1),
+
+    
+    (store_random_in_range, ":rnd", 0, 200),
+    (try_begin),
+        (troop_slot_eq, trp_traits, slot_trait_animal_fighter, 1),
+        (store_random_in_range, ":rnd", 0, 400),
+    (try_end),
+    (le, ":rnd", 100), # 50% chance by default
+    (gt, ":rnd", ":party_size"),
+    (try_begin),
+        (le, ":rnd", ":max_spotting"),
+        (display_message, "@Avoided animal ambush via Spotting."),
+        (add_xp_to_troop, 200, ":max_spotting_owner"),
+    (else_try),
+        (le, ":rnd", ":max_wildcraft"),
+        (display_message, "@Avoided animal ambush via Wildcraft."),
+        (add_xp_to_troop, 200, ":max_wildcraft_owner"),
+    (else_try),
+        (lt, "$creature_ambush_counter", 1),
+        (val_add, "$creature_ambush_counter", 1),
+        (jump_to_menu, "mnu_animal_ambush"),
+        (start_encounter, ":animal_party"),
+    (try_end),
   ]),
   
   # Decrement the ambush counter every 20 hours (CppCoder)

@@ -2855,7 +2855,8 @@ scripts = [
 				    (party_slot_eq, "$g_encountered_party", slot_center_destroyed, 0), (jump_to_menu, "mnu_castle_outside"),
 		 (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
 				    (party_slot_eq, "$g_encountered_party", slot_center_destroyed, 1),	(jump_to_menu, "mnu_town_ruins"),
-         (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_cattle_herd),(jump_to_menu, "mnu_cattle_herd"), #MV: DON'T REMOVE
+         (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_cattle_herd),(jump_to_menu, "mnu_cattle_herd"),
+         (else_try),(party_slot_eq, "$g_encountered_party", slot_party_type, spt_animal_ambush),(jump_to_menu, "mnu_animal_ambush"), #MV: DON'T REMOVE
 		 (else_try),(eq, "$g_encountered_party", "p_test_scene"     ),(jump_to_menu, "mnu_test_scene"),
 		 (else_try),(eq, "$g_encountered_party", "p_battlefields"   ),(jump_to_menu, "mnu_battlefields"),
 		#(else_try),(eq, "$g_encountered_party", "p_training_ground"),(jump_to_menu, "mnu_tutorial"),

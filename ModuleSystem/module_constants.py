@@ -718,6 +718,7 @@ spt_cattle_herd        = 17
 spt_bandit             = 18 #WTH, native doesn't have a spt for bandits?! (TLD foxyman)
 spt_kingdom_hero_minor_party = 19 #hero party below host threshold (so it doesn't count toward host count and faction AI)
 #spt_deserter           = 20
+spt_animal_ambush       = 20
 
 kingdom_party_types_begin = spt_patrol
 kingdom_party_types_end = spt_guardian + 1
