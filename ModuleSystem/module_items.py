@@ -1432,7 +1432,7 @@ items =[
 
 ["spider","Spider",[("spider",0)], itp_type_horse|itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(60)|body_armor(30)|difficulty(10)|horse_speed(30)|horse_maneuver(75)|horse_charge(12)|horse_scale(60),imodbits_none,[]],
 ["bear","Bear",    [("bear_2",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(60)|horse_speed(40)|horse_maneuver(60)|horse_charge(55)|horse_scale(110)|difficulty(10),imodbits_none,[]],
-["wolf","Wolf",    [("wolf",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(30)|horse_maneuver(75)|horse_charge(5)|horse_scale(85)|difficulty(10),imodbits_none,[]],
+["wolf","Wolf",    [("wolf",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(25)|horse_maneuver(75)|horse_charge(1)|horse_scale(85)|difficulty(10),imodbits_none,[]],
 ["werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(60)|horse_speed(40)|horse_maneuver(70)|horse_charge(35)|horse_scale(100)|difficulty(10),imodbits_none,[]],
 
 ["thrush_reward","Thrush",[("prop_reward_thrush",0)],itp_unique|itp_type_goods,0,1000,weight(1)|abundance(0)|0,imodbits_none],

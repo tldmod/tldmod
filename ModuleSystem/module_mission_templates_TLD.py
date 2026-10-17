@@ -3174,13 +3174,14 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (agent_get_position, pos1, ":horse"),
     (copy_position, pos2, pos1),
     (position_move_y, pos2, 100),
-    (val_add, ":attack_range", 50), #aoe buff
+    (store_add, ":aoe_range", ":attack_range", 50), #aoe buff
     
     (agent_get_team, ":animal_team", ":agent"),
 
     (assign, ":hit_anim", -1),
+    (assign, ":agents_hit", 0),
     #Damaging Enemies  
-    (try_for_agents, ":enemy_agent",  pos2, ":attack_range"),
+    (try_for_agents, ":enemy_agent",  pos2, ":aoe_range"),
       (agent_is_alive, ":enemy_agent"),
       #(agent_is_human, ":enemy_agent"), also allow to damage mounts, but need to specify for animation further down
       (agent_is_active, ":enemy_agent"),
@@ -3188,6 +3189,16 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
       (teams_are_enemies, ":agent_team", ":animal_team"),
       (neq, ":enemy_agent", ":agent"),
       (neq, ":enemy_agent", ":horse"),
+      (try_begin), #small range attacks (wolves) can only hit one enemy
+        (lt, ":attack_range", 90),
+        (ge, ":agents_hit", 1),
+        (assign, ":enemy_agent", 0),
+      (else_try),
+        (lt, ":attack_range", 120),
+        (ge, ":agents_hit", 3),
+        (assign, ":enemy_agent", 0),
+      (try_end),
+      (le, ":agents_hit", 6),
       (gt, ":enemy_agent", 0),
       # (str_store_agent_name, s5, ":enemy_agent"),
       # (assign, reg78, ":enemy_agent"),
@@ -3245,6 +3256,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         
         (ge, ":attack_range", 130),
         (assign, ":hit_anim", "anim_strike_fly_back_rise"),
+        (val_add, ":agents_hit", 1),
       (try_end),
       
       (agent_is_human, ":enemy_agent"), #needed here so we don't try to set human animation to a horse
@@ -3252,6 +3264,15 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
       (agent_set_animation, ":enemy_agent", ":hit_anim"),
     (try_end),
     (agent_set_slot, ":agent", slot_agent_animal_is_striking, 0),
+    
+    (store_random_in_range, ":rand", 0, 10),
+    (try_begin),
+        (agent_get_slot, ":parent_agent", ":agent", slot_agent_parent),
+        (gt, ":parent_agent", 0),
+        (this_or_next|neg|agent_is_alive, ":parent_agent"),
+        (ge, ":rand", 5),
+        (call_script, "script_agent_become_uncontrollable", ":agent", 1),
+    (try_end),
   (try_end),
   ]),
 
@@ -3298,6 +3319,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         (position_move_y, pos5, -30), #fake recoil
         (agent_set_position, ":agent", pos5),
         (agent_set_slot, ":agent", slot_agent_animal_is_striking, 0), #abort any attack
+        
+        (call_script, "script_agent_become_uncontrollable", ":agent", 1),
         
         #assign sound
         (try_begin),
@@ -3805,34 +3828,11 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
       (assign, ":animal", reg0),
       #(assign, "$animal_is_present", 1), #now assigned per spawn done in tld_animal_attacks
       (agent_add_relation_with_agent, ":agent", ":animal", 0),
+      (agent_set_slot, ":animal", slot_agent_parent, ":agent"),
+      (agent_set_slot, ":agent", slot_agent_spawned_agent, ":animal"),
       #(agent_set_hit_points, ":animal", 100, 0),
-
-    #InVain: Make them uncontrollable
-    (agent_get_team, ":agent_team", ":agent"),
-    (try_begin),
-        (this_or_next|eq, ":agent_team", 0),
-        (eq, ":agent_team", 2),
-        (agent_set_team, ":animal", 4),
-        (team_set_relation, 4, 0, 1),
-        (team_set_relation, 4, 2, 1),
-        (team_set_relation, 4, 1, -1),
-        (team_set_relation, 4, 3, -1),
-        (team_set_relation, 4, 5, -1),
-        (team_give_order, 4, grc_everyone, mordr_charge),
-    (else_try),
-        (this_or_next|eq, ":agent_team", 1),
-        (eq, ":agent_team", 3),
-        (agent_set_team, ":animal", 5),
-        (team_set_relation, 5, 0, -1),
-        (team_set_relation, 5, 2, -1),
-        (team_set_relation, 5, 1, 1),
-        (team_set_relation, 5, 3, 1),
-        (team_set_relation, 5, 4, 1),
-        (team_give_order, 5, grc_everyone, mordr_charge),
-    (else_try), #fallback
-        (agent_set_team, ":animal", ":agent_team"),
-    (try_end),
-    (agent_force_rethink, ":animal"),
+      (agent_get_team, ":agent_team", ":agent"),
+      (agent_set_team, ":animal",  ":agent_team"),
   ]),
 
   (ti_on_order_issued, 0, 0,

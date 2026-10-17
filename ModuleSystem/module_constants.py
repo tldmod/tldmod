@@ -239,6 +239,9 @@ slot_agent_player_animal_kills = 37
 slot_agent_hp_shield_active = 43 #Modified Vyrn HP Shield - kham
 slot_agent_hp_shield = 44 #Modified Vyrn HP Shield - kham
 
+slot_agent_parent = 44 #stores ID of parent agent, e.g. dimborn for bear
+slot_agent_spawned_agent = 44 #stores ID of child agent, e.g. bear agent for dimborn
+
 #Aiming slots (agent slot)
 slot_agent_aim_overridden = 302
 

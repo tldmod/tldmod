@@ -34716,6 +34716,7 @@ if is_a_wb_script==1:
     
     (try_begin),
         (eq, ":team", ":player_team"),
+        (agent_slot_eq, ":agent", slot_agent_troll_uncontrollable, 1), #only for berserkers and trolls, animals don't use this flag
         (str_store_agent_name, s5, ":agent"),
         (display_message, "@{s5} has been overcome by battle rage and is now uncontrollable."),
     (try_end),
