@@ -4574,6 +4574,7 @@ mission_templates = [ # not used in game
         (try_begin),
             (entry_point_get_position, pos5, ":entry"),
             (get_player_agent_no, ":player_agent"),
+            (neg|agent_is_defender, ":player_agent"),
             (agent_get_position, pos6, ":player_agent"),
             (get_distance_between_positions, ":dist", pos5, pos6),
             (lt, ":dist", 1000),
