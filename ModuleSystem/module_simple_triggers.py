@@ -3834,6 +3834,10 @@ simple_triggers = [
 
             #Reuse the "besieged by" variables so we don't need to introduce new globals
             (troop_get_slot, "$besieged_center_for_menu", ":lord_candidate", slot_troop_home),
+            (try_begin),
+                (party_slot_eq, "$besieged_center_for_menu", slot_center_destroyed, 1),
+                (troop_get_slot, "$besieged_center_for_menu", ":candidate_faction", slot_faction_capital),
+            (try_end),
             (assign, "$besieged_by_troop_for_menu", ":lord_candidate"),
             (assign, "$besieged_by_faction_for_menu", ":candidate_faction"),
             (jump_to_menu, "mnu_companion_promoted_event"),
