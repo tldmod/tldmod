@@ -2418,6 +2418,10 @@ ai_scripts = [
       (store_skill_level, ":tmp", skl_leadership, ":troop_no"),
       (val_mul, ":tmp", 2),
       (val_add, ":tmp", 5), #up to 25
+      (try_begin),
+        (neq, ":current_troop_faction_no", ":troop_faction_no"),
+        (val_div, ":tmp", 2),
+      (try_end),
 	  (party_add_members,"$pout_party",":guard",":tmp"),
     (try_begin),
       (eq, ":troop_no", "trp_dwarf_lord"),
@@ -2512,9 +2516,12 @@ ai_scripts = [
          (gt,":party",0),
          (party_is_active, ":party"),
          (party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_alone), # if lonely hero
+         (store_current_day, ":cur_day"),
+         (neg|troop_slot_ge, ":hero", slot_troop_respawn_timer, ":cur_day"),
 
          (faction_get_slot, ":hosts", ":troop_faction_no", slot_faction_hosts),
          (faction_get_slot, ":strength", ":troop_faction_no", slot_faction_strength),
+         (gt, ":strength", fac_str_very_weak), #don't spawn hosts if faction is on the brink of defeat
          (try_begin), ## Kham - Lets give Gondor and Rohan more Hosts
             #(eq, "$gondor_ai_testing", 1),
             (this_or_next|eq, ":faction_no", "fac_gondor"),
@@ -2532,7 +2539,7 @@ ai_scripts = [
          # Rafa: If the faction marshall has no host, reserve one for them only if their faction strength if above 1000,
          #       to reflect the faction weakening, (and to avoid them charging their faction to oblivion)
          (try_begin),
-            (gt,":strength",1),            
+            (gt,":strength",2),            
             (try_begin), # case 1: Marshall is not spawned
                (neg|troop_slot_ge, ":faction_marshall", slot_troop_leaded_party, 1),
 
@@ -2548,7 +2555,7 @@ ai_scripts = [
                (val_sub,":strength", 1),
             (end_try),
 
-            (eq,":hero",":faction_marshall"), # marshall/king will always get a host if their faction strength is over 1000
+            (eq,":hero",":faction_marshall"), # marshall/king will always get a host if their faction strength is over 2000
             (assign,":check_pass",1),
          (else_try), #oath of vengeance target always gets a host
             (check_quest_active, "qst_oath_personal"),

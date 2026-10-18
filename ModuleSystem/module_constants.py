@@ -863,7 +863,7 @@ slot_troop_trainer_opponent_troop            = 35
 slot_troop_trainer_training_difficulty       = 36
 
 slot_lord_reputation_type     = 37
-slot_troop_change_to_faction          = 38
+slot_troop_change_to_faction          = 38 #unused
 slot_troop_readiness_to_join_army     = 39
 slot_troop_readiness_to_follow_orders = 40
 

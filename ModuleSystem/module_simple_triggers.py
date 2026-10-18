@@ -992,9 +992,13 @@ simple_triggers = [
           (call_script, "script_create_kingdom_hero_party", ":troop_no", ":center_no"),
           (party_attach_to_party, "$pout_party", ":center_no"),
           (call_script, "script_cf_reinforce_party", "$pout_party"), #Kham  (TLD 3.5 Apr 2017)
-        (else_try),
-          (neg|faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),
-          (troop_set_slot, ":troop_no", slot_troop_change_to_faction, "fac_commoners"), #TLD: defeated faction lords simply disappear
+          (store_current_day, ":cur_day"),
+          (store_random_in_range, ":delay", 2,7),
+          (val_add, ":cur_day", ":delay"),
+          (troop_set_slot, ":troop_no", slot_troop_respawn_timer, ":cur_day"), #delay before they can form a host
+        # (else_try),
+          # (neg|faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),
+          # (troop_set_slot, ":troop_no", slot_troop_change_to_faction, "fac_commoners"), #TLD: defeated faction lords simply disappear
           # (try_begin),
           # (is_between, ":troop_no", kings_begin, kings_end),
           # (troop_set_slot, ":troop_no", slot_troop_change_to_faction, "fac_commoners"),
@@ -2837,6 +2841,7 @@ simple_triggers = [
             (troop_set_slot, ":defeated_lord", slot_troop_occupation, slto_kingdom_hero),
             (troop_set_slot, ":defeated_lord", slot_troop_wound_mask, 0), #revive
             (troop_set_slot, ":defeated_lord", slot_troop_leaded_party, -1),
+            (troop_set_slot, ":defeated_lord", slot_troop_death_chance_modifier, 150), #should help with keeping overall lord numbers lower during end game
             (store_current_day, ":day_of_defeat"),
             (troop_set_slot, ":defeated_lord", slot_troop_respawn_timer, ":day_of_defeat"),
             (call_script, "script_update_troop_notes", ":defeated_lord"),
@@ -2938,19 +2943,19 @@ simple_triggers = [
             (try_end),
           (try_end),
 
-          (try_begin),
-            (faction_slot_ge, ":cur_kingdom", slot_faction_last_stand, 1),
-            (try_for_range, ":scripted_ai_lords", heroes_begin, heroes_end),
-              (troop_slot_eq, ":scripted_ai_lords", slot_troop_occupation, slto_kingdom_hero),
-              (troop_get_slot, ":lord_party", ":scripted_ai_lords", slot_troop_leaded_party),
-              (gt, ":lord_party", 0),
-              (party_is_active, ":lord_party"),
-              (party_slot_ge, ":lord_party", slot_party_scripted_ai, 1),
-              (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
-              (str_store_troop_name, s30, ":scripted_ai_lords"),
-              #(display_message, "@{s30} scripted AI cleared", color_neutral_news),
-            (try_end),
-          (try_end),
+          # (try_begin),
+            # (faction_slot_ge, ":cur_kingdom", slot_faction_last_stand, 1),
+            # (try_for_range, ":scripted_ai_lords", heroes_begin, heroes_end),
+              # (troop_slot_eq, ":scripted_ai_lords", slot_troop_occupation, slto_kingdom_hero),
+              # (troop_get_slot, ":lord_party", ":scripted_ai_lords", slot_troop_leaded_party),
+              # (gt, ":lord_party", 0),
+              # (party_is_active, ":lord_party"),
+              # (party_slot_ge, ":lord_party", slot_party_scripted_ai, 1),
+              # (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
+              # (str_store_troop_name, s30, ":scripted_ai_lords"),
+              # #(display_message, "@{s30} scripted AI cleared", color_neutral_news),
+            # (try_end),
+          # (try_end),
           
           #If the player's home faction was defeated, offer the player to join another faction of the same side
           (try_begin),
@@ -3421,70 +3426,71 @@ simple_triggers = [
   # Kham - Thanks! Will use for Faction Last Stand Event
   
   (3,[
-    (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
-      (faction_slot_eq, ":faction", slot_faction_state, sfs_active), #still active
-      (faction_get_slot, ":last_stand_counter", ":faction", slot_faction_last_stand),
-      (try_begin),
-        (eq, "$cheat_mode", 1),
-        (assign, reg70, ":last_stand_counter"),
-        (gt, reg70, 0),
-        (display_message, "@{!}{reg70} - Last Stand", color_bad_news),
-      (try_end),
-      (gt, ":last_stand_counter", 0),
-      (call_script, "script_last_faction_stand", ":faction"),
-      (val_add, ":last_stand_counter", 1),
-      (faction_set_slot, ":faction", slot_faction_last_stand, ":last_stand_counter"),
-      #(assign, reg50, ":last_stand_counter"),
-      #(display_message, "@Current Last Stand Counter: {reg50}"),
-    (try_end),
-
-    (try_begin),
-      #(troop_slot_eq, "trp_player", slot_troop_home, 22), #kham test
-      (eq, "$cheat_mode", 1),
       (eq, 0, 1), #InVain: Make sure players don't accidentally activate this shit
-      (try_for_range, ":enemy_faction", kingdoms_begin, kingdoms_end),
-        (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active),
-        (faction_slot_ge, ":enemy_faction", slot_faction_last_stand, 11),
-        (faction_get_slot, ":capital", ":enemy_faction", slot_faction_capital),
-        (party_slot_eq, ":capital", slot_center_destroyed, 0),
-        (faction_get_slot, ":enemy_faction_current_theater", ":enemy_faction", slot_faction_active_theater),
+      
+    # (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
+      # (faction_slot_eq, ":faction", slot_faction_state, sfs_active), #still active
+      # (faction_get_slot, ":last_stand_counter", ":faction", slot_faction_last_stand),
+      # (try_begin),
+        # (eq, "$cheat_mode", 1),
+        # (assign, reg70, ":last_stand_counter"),
+        # (gt, reg70, 0),
+        # (display_message, "@{!}{reg70} - Last Stand", color_bad_news),
+      # (try_end),
+      # (gt, ":last_stand_counter", 0),
+      # (call_script, "script_last_faction_stand", ":faction"),
+      # (val_add, ":last_stand_counter", 1),
+      # (faction_set_slot, ":faction", slot_faction_last_stand, ":last_stand_counter"),
+      # #(assign, reg50, ":last_stand_counter"),
+      # #(display_message, "@Current Last Stand Counter: {reg50}"),
+    # (try_end),
 
-        (try_for_range, ":besieger_faction", kingdoms_begin, kingdoms_end),
-          (faction_slot_eq, ":besieger_faction", slot_faction_state, sfs_active), #must be active
-          (faction_slot_ge, ":besieger_faction", slot_faction_strength, fac_str_ok),
-          (faction_get_slot, ":attacker_faction_theater", ":besieger_faction", slot_faction_active_theater),
-          (eq, ":attacker_faction_theater", ":enemy_faction_current_theater"), #Should be same theater
-          (store_relation, ":reln", ":besieger_faction", ":enemy_faction"),
-          (lt, ":reln", 0), #Must be enemies
-          (faction_get_slot, ":faction_ai_state",  ":besieger_faction", slot_faction_ai_state),
-          (neq, ":faction_ai_state", sfai_gathering_army), #Make sure they can gather army
-          (faction_get_slot, ":besieger_marshall", ":besieger_faction", slot_faction_marshall), 
-          (troop_get_slot, ":marshall_party", ":besieger_marshall", slot_troop_leaded_party),
-          (gt, ":marshall_party", 0),
-          (neg|party_slot_eq, ":marshall_party", slot_party_type, spt_kingdom_hero_alone), #Should not be alone
-          (call_script, "script_party_count_fit_regulars", ":marshall_party"), 
-          (ge, reg0, tld_siege_min_party_size),
-          (faction_set_slot, ":besieger_faction", slot_faction_ai_state, sfai_attacking_center),
-          (call_script, "script_party_set_ai_state", ":marshall_party", spai_besieging_center, ":capital"),
-          (party_set_ai_behavior, ":marshall_party", ai_bhvr_attack_party),
-          (party_set_ai_object, ":marshall_party", ":capital"),
-          (party_set_flags, ":marshall_party", pf_default_behavior, 1),
-          (party_set_slot, ":marshall_party", slot_party_ai_substate, 1),
-          (call_script, "script_begin_assault_on_center", ":capital"),
-          (party_set_slot, ":marshall_party", slot_party_scripted_ai, 1),
-          (party_set_ai_initiative, ":marshall_party", 10),
-          #(str_store_troop_name, s31, ":besieger_marshall"),
-          #(display_message, "@{s31} scripted AI set", color_neutral_news),
-          #(display_message, "@Faction Marshall Starts Besieging last stand capital"),
-        (try_end),
-      (try_end),
+    # (try_begin),
+      # #(troop_slot_eq, "trp_player", slot_troop_home, 22), #kham test
+      # (eq, "$cheat_mode", 1),
+      # (try_for_range, ":enemy_faction", kingdoms_begin, kingdoms_end),
+        # (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active),
+        # (faction_slot_ge, ":enemy_faction", slot_faction_last_stand, 11),
+        # (faction_get_slot, ":capital", ":enemy_faction", slot_faction_capital),
+        # (party_slot_eq, ":capital", slot_center_destroyed, 0),
+        # (faction_get_slot, ":enemy_faction_current_theater", ":enemy_faction", slot_faction_active_theater),
 
-      (try_begin),
-        (faction_slot_eq, ":enemy_faction", slot_faction_last_stand, 15),
-        (faction_set_slot, ":enemy_faction", slot_faction_last_stand, 1),
-      (try_end),
+        # (try_for_range, ":besieger_faction", kingdoms_begin, kingdoms_end),
+          # (faction_slot_eq, ":besieger_faction", slot_faction_state, sfs_active), #must be active
+          # (faction_slot_ge, ":besieger_faction", slot_faction_strength, fac_str_ok),
+          # (faction_get_slot, ":attacker_faction_theater", ":besieger_faction", slot_faction_active_theater),
+          # (eq, ":attacker_faction_theater", ":enemy_faction_current_theater"), #Should be same theater
+          # (store_relation, ":reln", ":besieger_faction", ":enemy_faction"),
+          # (lt, ":reln", 0), #Must be enemies
+          # (faction_get_slot, ":faction_ai_state",  ":besieger_faction", slot_faction_ai_state),
+          # (neq, ":faction_ai_state", sfai_gathering_army), #Make sure they can gather army
+          # (faction_get_slot, ":besieger_marshall", ":besieger_faction", slot_faction_marshall), 
+          # (troop_get_slot, ":marshall_party", ":besieger_marshall", slot_troop_leaded_party),
+          # (gt, ":marshall_party", 0),
+          # (neg|party_slot_eq, ":marshall_party", slot_party_type, spt_kingdom_hero_alone), #Should not be alone
+          # (call_script, "script_party_count_fit_regulars", ":marshall_party"), 
+          # (ge, reg0, tld_siege_min_party_size),
+          # (faction_set_slot, ":besieger_faction", slot_faction_ai_state, sfai_attacking_center),
+          # (call_script, "script_party_set_ai_state", ":marshall_party", spai_besieging_center, ":capital"),
+          # (party_set_ai_behavior, ":marshall_party", ai_bhvr_attack_party),
+          # (party_set_ai_object, ":marshall_party", ":capital"),
+          # (party_set_flags, ":marshall_party", pf_default_behavior, 1),
+          # (party_set_slot, ":marshall_party", slot_party_ai_substate, 1),
+          # (call_script, "script_begin_assault_on_center", ":capital"),
+          # (party_set_slot, ":marshall_party", slot_party_scripted_ai, 1),
+          # (party_set_ai_initiative, ":marshall_party", 10),
+          # #(str_store_troop_name, s31, ":besieger_marshall"),
+          # #(display_message, "@{s31} scripted AI set", color_neutral_news),
+          # #(display_message, "@Faction Marshall Starts Besieging last stand capital"),
+        # (try_end),
+      # (try_end),
 
-    (try_end),
+      # (try_begin),
+        # (faction_slot_eq, ":enemy_faction", slot_faction_last_stand, 15),
+        # (faction_set_slot, ":enemy_faction", slot_faction_last_stand, 1),
+      # (try_end),
+
+    # (try_end),
 
   ]),
 
