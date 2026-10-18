@@ -13374,14 +13374,8 @@ game_menus = [
  "You and your companions find yourselves separated from the rest of your party, when suddenly...",
  "none", 
  [
-    # (store_encountered_party, reg55),
-    # (store_encountered_party2, reg56),
-    
-    # (display_message, "@encounter 1  {reg55}; encounter 2  {reg56}" ),
-    # (assign, reg57, "$g_encountered_party"),
-    # (display_message, "@g_encountered_party  {reg57}" ),
-    
   #swy-- set the background mesh depending on what's going to attack us!
+
   (party_stack_get_troop_id, ":ambush_troop", "$g_encountered_party", 0),
   (try_begin),
     (eq,":ambush_troop", "trp_spider"),
@@ -13390,12 +13384,16 @@ game_menus = [
   (else_try),
     (eq,":ambush_troop", "trp_bear"),
     (set_background_mesh, "mesh_draw_bear"),
-    (play_sound, "snd_bear_strike"),
+    (play_sound, "snd_bear_growl"),
   (else_try),
     (this_or_next|eq,":ambush_troop", "trp_wolf"),
     (eq,":ambush_troop", "trp_werewolf"),
     (set_background_mesh, "mesh_draw_wolf"),
     (play_sound, "snd_wolf_howl"), #wolf howling
+  (else_try),
+    (eq,":ambush_troop", "trp_wild_warg"),
+    (set_background_mesh, "mesh_draw_wolf"),
+    (play_sound, "snd_warg_howl"), #wargs howling
   (try_end)
  ],
  [

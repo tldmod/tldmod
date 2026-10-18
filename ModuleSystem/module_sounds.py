@@ -376,10 +376,11 @@ sounds = [
 ("bell" ,sf_priority_5|sf_vol_7, ["dale_bell_1.wav","dale_bell_1_2_combined.wav", "dale_bell_2.wav", "dale_bell_3.wav"]),
 ("raven" ,sf_priority_5|sf_vol_7, ["evil_crow.wav"]),
 ("moria_horror" ,sf_priority_5|sf_vol_7, ["moria02.wav"]),
-("wolf_howl",sf_vol_5, ["wolf_short.wav"]),
+("wolf_howl",sf_vol_8, ["wolf_short.wav"]), 
 ("beast_groan" ,sf_priority_5|sf_vol_7, ["camelGroan01.wav", "camelGroan02.wav"]),
 ("beast_roar" ,sf_priority_5|sf_vol_7, ["camelRoar01.wav", "camelRoar02.wav"]),
 ("orc_beast" ,sf_priority_5|sf_vol_7, ["orc_beast01.wav", "orc_beast02.wav", "orc_beast03.wav", "camelRoar01.wav", "camelRoar02.wav", "trollGruntle.wav"]),
 ("boar_sound" ,sf_priority_5|sf_vol_7, ["scla_boar.wav"]),
-("wolf_howl2",sf_vol_5, ["warg_howl01.wav", "warg_howl03.wav"]), #warg_howl02 was bad
+("warg_howl",sf_vol_5, ["warg_howl01.wav", "warg_howl03.wav"]), #warg_howl02 was bad
+("bear_growl",   sf_priority_6|sf_vol_10, ["troll_growl.wav",]), 
 ]

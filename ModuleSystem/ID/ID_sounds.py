@@ -294,6 +294,7 @@ snd_beast_groan = 292
 snd_beast_roar = 293
 snd_orc_beast = 294
 snd_boar_sound = 295
-snd_wolf_howl2 = 296
+snd_warg_howl = 296
+snd_bear_growl = 297
 
 
