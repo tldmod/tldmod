@@ -4215,12 +4215,10 @@ scripts = [
       #Kham - if player has level of 0 then ideal limit will be exactly same, if player has level of 80 then ideal limit will be multiplied by 2 ((80 + 80) / 80)
       #below code will increase limits a little as the game progresses and player gains level
       (store_character_level, ":level", "trp_player"),
-      (val_min, ":level", 90),
-      (store_add, ":level_factor", 90, ":level"), 
-      (val_mul,  ":level_factor", 100),
-      (val_div, ":level_factor", "$tld_host_size_multi"), #difficulty affects host size scaling
+      (store_div, ":level_add",6000, "$tld_host_size_multi"), #difficulty affects host size scaling
+      (store_add, ":level_factor", ":level_add", ":level"), 
       (val_mul, ":limit", ":level_factor"),
-      (val_div, ":limit", 90),
+      (val_div, ":limit", ":level_add"),
       
       #Kham - comment out old party limit increase
       #(store_character_level, ":level", "trp_player"), #increase limits a little bit as the game progresses.
@@ -26817,20 +26815,6 @@ command_cursor_scripts = [
     (try_end),    
 
     (try_begin),
-        (lt, "$savegame_version", 4217),
-        (assign, "$savegame_version", 4217),
-        (try_begin), #assign difficulty values
-            (eq, "$tld_campaign_diffulty", 3),  (assign, "$tld_volunteers_multi", 125), (assign, "$tld_host_size_multi", 75), (assign, "$tld_ally_str_income_multi", 120), (assign, "$tld_victory_str_multi", 100),  (assign, "$tld_player_fac_init_strength_multi", 110), 
-        (else_try),
-            (eq, "$tld_campaign_diffulty", 2),  (assign, "$tld_volunteers_multi", 100), (assign, "$tld_host_size_multi", 100), (assign, "$tld_ally_str_income_multi", 100), (assign, "$tld_victory_str_multi", 75),  (assign, "$tld_player_fac_init_strength_multi", 90), 
-        (else_try),
-            (eq, "$tld_campaign_diffulty", 1),  (assign, "$tld_volunteers_multi", 75), (assign, "$tld_host_size_multi", 150), (assign, "$tld_ally_str_income_multi", 90), (assign, "$tld_victory_str_multi", 50),  (assign, "$tld_player_fac_init_strength_multi", 70),
-        (else_try),
-            (eq, "$tld_campaign_diffulty", 0),  (assign, "$tld_volunteers_multi", 60), (assign, "$tld_host_size_multi", 200), (assign, "$tld_ally_str_income_multi", 80), (assign, "$tld_victory_str_multi", 50), (assign, "$tld_player_fac_init_strength_multi", 60),
-        (try_end),
-    (try_end),
-
-    (try_begin),
         (lt, "$savegame_version", 4220),
         (assign, "$savegame_version", 4220),
         (troop_set_slot, "trp_traits", slot_trait_animal_fighter, 0),
@@ -27095,6 +27079,20 @@ command_cursor_scripts = [
             (party_get_slot, ":mayor", ":center_no", slot_town_elder),
             (gt, ":mayor", 0),
             (troop_set_slot, ":mayor", slot_troop_merchant_offered_quest, 0),
+        (try_end),
+    (try_end),
+
+    (try_begin),
+        (lt, "$savegame_version", 4500),
+        (assign, "$savegame_version", 4500),
+        (try_begin), #assign difficulty values
+            (eq, "$tld_campaign_diffulty", 3),  (assign, "$tld_volunteers_multi", 125), (assign, "$tld_host_size_multi", 75), (assign, "$tld_ally_str_income_multi", 120), (assign, "$tld_victory_str_multi", 100),  (assign, "$tld_player_fac_init_strength_multi", 110), 
+        (else_try),
+            (eq, "$tld_campaign_diffulty", 2),  (assign, "$tld_volunteers_multi", 100), (assign, "$tld_host_size_multi", 100), (assign, "$tld_ally_str_income_multi", 100), (assign, "$tld_victory_str_multi", 75),  (assign, "$tld_player_fac_init_strength_multi", 90), 
+        (else_try),
+            (eq, "$tld_campaign_diffulty", 1),  (assign, "$tld_volunteers_multi", 75), (assign, "$tld_host_size_multi", 115), (assign, "$tld_ally_str_income_multi", 90), (assign, "$tld_victory_str_multi", 50),  (assign, "$tld_player_fac_init_strength_multi", 70),
+        (else_try),
+            (eq, "$tld_campaign_diffulty", 0),  (assign, "$tld_volunteers_multi", 60), (assign, "$tld_host_size_multi", 140), (assign, "$tld_ally_str_income_multi", 80), (assign, "$tld_victory_str_multi", 50), (assign, "$tld_player_fac_init_strength_multi", 60),
         (try_end),
     (try_end),
 
