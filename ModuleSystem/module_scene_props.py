@@ -885,7 +885,7 @@ scene_props = [
 ("weavery_spinning_wheel",0,"weavery_spinning_wheel","bo_weavery_spinning_wheel", []), #wb
 ("windmill_fan_turning",sokf_moveable,"windmill_fan_turning","bo_windmill_fan_turning", []),
 ("windmill_fan",0,"windmill_fan","bo_windmill_fan", []),
-("winery_barrel_shelf_unused",0,"winery_barrel_shelf","bo_winery_barrel_shelf", []), #wb
+("winery_barrel_shelf_unused",0,"tld_winery_barrel_shelf","bo_winery_barrel_shelf", []), #wb
 #("fake_house_a",0,"fake_house_a","bo_fake_house_a", []),
 #("fake_house_b",0,"fake_house_b","bo_fake_house_b", []),
 #("fake_house_c",0,"fake_house_c","bo_fake_house_c", []),
@@ -3367,13 +3367,13 @@ scene_props = [
 ("arabian_tent_umbar",0,"arabian_tent_umbar","bo_arabian_tent", []),
 ("arabian_tent_umbar_b",0,"arabian_tent_umbar_b","bo_arabian_tent_b", []),
 
-( "winery_barrel_shelf"                        ,0,"winery_barrel_shelf","bo_winery_barrel_shelf",[]),
-( "winery_huge_barrel"                         ,0,"winery_huge_barrel","bo_winery_huge_barrel",[]),
-( "winery_middle_barrel"                       ,0,"winery_middle_barrel","bo_winery_middle_barrel",[]),
-( "winery_wine_cart_small_loaded"              ,0,"winery_wine_cart_small_loaded","bo_winery_wine_cart_small_loaded",[]),
-( "winery_wine_cart_loaded"                    ,0,"winery_wine_cart_loaded","bo_winery_wine_cart_loaded",[]),
-( "winery_wine_cart_empty"                     ,0,"winery_wine_cart_empty","bo_winery_wine_cart_empty",[]),
-( "winery_wine_cart_small_empty"               ,0,"winery_wine_cart_small_empty","bo_winery_wine_cart_small_empty",[]),
+( "winery_barrel_shelf"                        ,0,"tld_winery_barrel_shelf","bo_winery_barrel_shelf",[]),
+( "winery_huge_barrel"                         ,0,"tld_winery_huge_barrel","bo_winery_huge_barrel",[]),
+( "winery_middle_barrel"                       ,0,"tld_winery_middle_barrel","bo_winery_middle_barrel",[]),
+( "winery_wine_cart_small_loaded"              ,0,"tld_winery_wine_cart_small_loaded","bo_winery_wine_cart_small_loaded",[]),
+( "winery_wine_cart_loaded"                    ,0,"tld_winery_wine_cart_loaded","bo_winery_wine_cart_loaded",[]),
+( "winery_wine_cart_empty"                     ,0,"tld_winery_wine_cart_empty","bo_winery_wine_cart_empty",[]),
+( "winery_wine_cart_small_empty"               ,0,"tld_winery_wine_cart_small_empty","bo_winery_wine_cart_small_empty",[]),
 ( "smithy_grindstone_wheel"                    ,0,"smithy_grindstone_wheel","bo_smithy_grindstone_wheel",[]),
 ( "smithy_forge_bellows"                       ,0,"smithy_forge_bellows","bo_smithy_forge_bellows",[]),
 ( "smithy_forge"                               ,0,"smithy_forge","bo_smithy_forge",[]),
