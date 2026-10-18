@@ -1804,7 +1804,7 @@ center_list = [
 	[icon_mfc_gondor],[700],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_med, 1, tld_siegable_capital, tld_siege_battle_size_bigger),
 (p_town_pelargir, [scn_pelargir_center, scn_gondor_castle_a, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_pelargir_siege,mesh_town_pelargir],
 	[trp_pel_captain, trp_smith_pelargir, trp_merchant_pelargir, trp_elder_pelargir, pt_pelargir_recruits, trp_knight_1_4, trp_walker_man_gondor_black,trp_walker_man_gondor_blue,trp_walker_woman_gondor_bw,trp_walker_man_gondor_white], 
-	[icon_mfc_pelargir],[500],[4,4,4,6,4,8], str_income_med, garrison_limit_med, 0, tld_siegable_always, tld_siege_battle_size_default),
+	[icon_mfc_pelargir],[500],[4,4,4,6,4,8], str_income_med, garrison_limit_med, 0, tld_siegable_normal, tld_siege_battle_size_default),
 (p_town_linhir, [scn_linhir_center, scn_gondor_castle_b, scn_gondor_prison,scn_gondor_tavern,scn_gondor_arena,scn_linhir_siege, mesh_ui_default_menu_window],
 	[trp_gondor_captain, trp_smith_linhir, trp_merchant_linhir, trp_elder_linhir, pt_gondor_recruits, trp_gondor_lord, trp_walker_man_gondor_black,trp_walker_man_gondor_green,trp_walker_woman_gondor_bw,trp_walker_woman_gondor_b], 
 	[icon_mfc_gondor],[500],[2,8,2,8,2,8], str_income_low, garrison_limit_med, 1, tld_siegable_always, tld_siege_battle_size_default),
@@ -1915,7 +1915,7 @@ center_list = [
 
 (p_town_woodsmen_village, [scn_woodsmen_village2_center, -1, -1,-1,-1,scn_woodsmen_village2_siege, mesh_ui_default_menu_window],
 	[trp_woodmen_captain, trp_smith_woodmen, trp_merchant_woodmen, trp_elder_wvillage, pt_woodman_recruits, trp_knight_4_11, trp_i1_woodmen_man, trp_beorn_walker, trp_i2_woodmen_forester, trp_beorn_walker_fem], 
-	[icon_mfc_northmen],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_always, tld_siege_battle_size_default),
+	[icon_mfc_northmen],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_normal, tld_siege_battle_size_default),
 (p_town_beorning_village, [scn_beorning_village_center, -1, -1,-1,-1,scn_beorning_village_siege, mesh_ui_default_menu_window],
 	[trp_beorning_captain, trp_smith_beorn_v, trp_merchant_beorn_v, trp_elder_beorn_v, pt_beorn_recruits, trp_knight_4_12, trp_i1_beorning_man, trp_i1_woodmen_man, trp_beorn_walker,  trp_beorn_walker_fem], 
 	[icon_mfc_northmen],[500],[2,1,4,1,4,1], str_income_low, garrison_limit_med, 1, tld_siegable_always, tld_siege_battle_size_default),

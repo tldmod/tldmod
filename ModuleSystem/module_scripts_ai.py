@@ -256,9 +256,11 @@ ai_scripts = [
        (try_begin),
          (this_or_next|neq, "$tld_option_siege_reqs", 0), # Disabled normal attacking siege reqs
          (ge, ":faction_strength", fac_str_ok), #TLD
-         (store_character_level, ":player_level", "trp_player"), #InVain: Delay sieges by player level
-         (val_sub, ":player_level", "$tld_player_level_to_begin_war"),
-         (ge, ":player_level", 2),
+         # (store_character_level, ":player_level", "trp_player"), #InVain: Delay sieges by player level
+         # (val_sub, ":player_level", "$tld_player_level_to_begin_war"),
+         # (ge, ":player_level", 2),
+         (store_current_day, ":cur_day"),
+         (ge, ":cur_day", "$tld_siege_delay"),
          (neq, ":old_faction_ai_state", sfai_default),
          (gt, ":faction_marshall_party", 0),
          (assign, ":old_target_attacking_center", -1),
@@ -1652,6 +1654,9 @@ ai_scripts = [
           (try_end),
           (eq, ":continue", 1),
 
+          (store_current_day, ":cur_day"),
+          (ge, ":cur_day", "$tld_siege_delay"),
+          
           (assign, ":our_estimated_str", ":our_follower_strength"),
           (val_add, ":our_estimated_str", ":our_strength"),
 		  (val_max, ":our_estimated_str", 1), #InVain: Avoid potential division by zero errors

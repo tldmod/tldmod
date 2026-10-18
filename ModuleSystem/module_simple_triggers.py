@@ -622,7 +622,10 @@ simple_triggers = [
         (assign, ":siege_requirements_relax", tld_player_level_to_own_chest),
       (try_end),
       (try_begin),
+        (gt, "$tld_war_began", 0),
         (gt, ":player_level", ":siege_requirements_relax"), #some min level needed to do this
+        (store_current_day, ":cur_day"),
+        (gt, ":cur_day", "$tld_siege_delay"),
         (store_sub, ":new_fac_str_siegable", ":player_level", ":siege_requirements_relax"), #1-..
         (val_mul, ":new_fac_str_siegable", "$tld_option_siege_relax_rate"),
         (val_add, ":new_fac_str_siegable", fac_str_weak),

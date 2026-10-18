@@ -1279,6 +1279,9 @@ triggers = [
     (try_begin),
       (eq,"$tld_war_began",0),
       (assign, "$tld_war_began",1),
+      
+      (store_current_day, ":cur_day"),
+      (store_add, "$tld_siege_delay", ":cur_day", 7),
       (dialog_box,"@The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard against Rohan in the West, Dol Guldur against the Elves... Even in the far North there is a war of its own.","@The War has started!"),
       (play_sound,"snd_evil_horn", sf_2d),
       # move Dun camp across Isen
