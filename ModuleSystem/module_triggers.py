@@ -2023,7 +2023,7 @@ triggers = [
   ]),
   
   # CC: Ambushes
-  (2, 0, 0, [],[
+  (8, 0, 0, [],[
     (eq, "$tld_option_animal_ambushes", 1), # Allows option to be toggled on and off.
     (store_character_level, ":player_level", trp_player),
     (ge,":player_level", 5),
@@ -2129,19 +2129,7 @@ triggers = [
     
     # (str_store_troop_name, s25, ":ambush_troop"),
     # (display_message, "@ambush troop: {s25}"),
-    
-    #need to create a fake party, because the mission template assumes it's an actual encounter
-    (set_spawn_radius, 1),
-    (spawn_around_party, "p_main_party", pt_none),
-    (assign, ":animal_party", reg0),
-    (party_set_slot, ":animal_party", slot_party_type, spt_animal_ambush),
-    (store_div, ":initial", "$alarm_level", 2), #only spawn half of them initially
-    (party_force_add_members, ":animal_party", ":ambush_troop", ":initial"),
-    (val_sub, "$alarm_level", ":initial"),
-    (party_get_num_companions, reg55, ":animal_party"),
-    #(display_message, "@initial: {reg55}"),
-    
-    
+ 
     (party_get_num_companions, ":party_size", "p_main_party"),
     (val_mul, ":party_size", 3),
     
@@ -2174,7 +2162,16 @@ triggers = [
     (else_try),
         (lt, "$creature_ambush_counter", 1),
         (val_add, "$creature_ambush_counter", 1),
-        (jump_to_menu, "mnu_animal_ambush"),
+        #need to create a fake party, because the mission template assumes it's an actual encounter
+        (set_spawn_radius, 1),
+        (spawn_around_party, "p_main_party", pt_none),
+        (assign, ":animal_party", reg0),
+        (party_set_slot, ":animal_party", slot_party_type, spt_animal_ambush),
+        (store_div, ":initial", "$alarm_level", 2), #only spawn half of them initially
+        (party_force_add_members, ":animal_party", ":ambush_troop", ":initial"),
+        (val_sub, "$alarm_level", ":initial"),
+        #(party_get_num_companions, reg55, ":animal_party"),
+        #(display_message, "@initial: {reg55}"),
         (start_encounter, ":animal_party"),
     (try_end),
   ]),
