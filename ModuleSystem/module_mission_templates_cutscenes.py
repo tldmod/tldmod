@@ -1218,7 +1218,13 @@ mission_templates_cutscenes = [
           (agent_set_scripted_destination, ":cur_agent", pos1, 1),
           
         ] + ((is_a_wb_cutscene==1) and [
-           (agent_set_wielded_item, ":cur_agent", "itm_beorn_staff"), #equip staff 
+            (try_begin),
+                (eq, ":cur_agent_trp", trp_gandalf),
+                #(agent_equip_item, ":cur_agent", "itm_gandstaff"),
+                (agent_set_wielded_item, ":cur_agent", "itm_gandstaff"), #equip staff (not shield)
+            (else_try),
+                (agent_set_wielded_item, ":cur_agent", "itm_beorn_staff"),
+            (try_end),
         ] or []) + [
 
         (try_end)

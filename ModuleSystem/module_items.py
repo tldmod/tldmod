@@ -1647,6 +1647,10 @@ if wb_compile_switch==1:
 
 ["civ_fine_shoes", "Fine Shoes", [("fi_boot14",0)],  itp_type_foot_armor  |itp_civilian | itp_attach_armature,0, 100 , weight(1.25)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(1)|difficulty(0) ,imodbits_cloth ],
 
+#Gandalf
+["gandstaff_shield","{!}gandstaff_shield",[("gandstaff",0)],itp_type_shield|itp_wooden_parry|itp_force_attach_left_hand,0,100,weight(2)|hit_points(999)|body_armor(100)|spd_rtng(140)|weapon_length(40),0,],
+["gandstaff","{!}Woodmen_Staff",[("gandstaff",0),("sarustaff",imodbit_tattered),],itp_type_polearm|itp_two_handed|itp_no_blur|itp_primary|itp_spear|itp_wooden_parry|itp_wooden_attack|itp_can_knock_down,itc_staff,1,weight(2)|spd_rtng(114)|weapon_length(150)|swing_damage(6,blunt)|thrust_damage(6,blunt),0],
+
 #from VC
 ["torch",         "Torch", [("orc_club_a",0)], itp_type_two_handed_wpn|itp_two_handed|itp_primary|itp_shop, itc_greatsword, 11 , weight(2.5)|difficulty(0)|spd_rtng(95) | weapon_length(95)|swing_damage(11 , blunt) | thrust_damage(0 ,  pierce),imodbits_none,
  [(ti_on_init_item, [(set_position_delta,0,60,0),(particle_system_add_new, "psys_torch_fire"),(particle_system_add_new, "psys_torch_smoke"),

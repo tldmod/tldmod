@@ -423,6 +423,10 @@ if is_a_wb_troop == 0:
     itm_kine = itm_no_item
     itm_kine_strong = itm_no_item
     itm_fur_coat = (itm_white_tunic_a, imod_powerful) #dale_coat
+    itm_gandstaff_shield = (itm_beorn_shield_reward, imod_crude) 
+    itm_gandstaff = (itm_beorn_staff, imod_exquisite)
+    itm_sarustaff = (itm_beorn_staff, imod_tattered)
+    itm_civ_fine_shoes = itm_rohan_shoes
 
 
 itm_blue_tunic = (itm_white_tunic_a, imod_well_made) #dale_tunic, basic blue
@@ -1102,10 +1106,6 @@ itm_javelin_big = (itm_javelin, imod_large_bag)
 itm_harad_javelin_big = (itm_harad_javelin, imod_large_bag) 
 itm_dunland_javelin_big = (itm_dunland_javelin, imod_large_bag) 
 
-#Wizard staffs
-itm_gandstaff_shield = (itm_beorn_shield_reward, imod_crude)
-itm_gandstaff = (itm_beorn_staff, imod_exquisite)
-itm_sarustaff = (itm_beorn_staff, imod_tattered)
 
 # 0x000000018000004136db6db6db6db6db00000000001db6db0000000000000000  default player face
 # 0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000  bearded player face
@@ -3189,7 +3189,7 @@ troops = [
 
 # Gandalf and Nazgul for conversations
 ["gandalf","Gandalf","{!}Home-grown Gandalves",tf_hero| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
-   [itm_mearas_reward,itm_whiterobe,itm_leather_boots,itm_riv_bas_sword,itm_gandstaff],
+   [itm_mearas_reward,itm_whiterobe,itm_civ_fine_shoes,itm_riv_bas_sword,itm_gandstaff_shield, itm_gandstaff],
       attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10|knows_shield_10,0x0000000fc000234721419ab9eeafbeff00000000001d89110000000000000000],
 ["nazgul","Nazgul","{!}Domesticated Nazgul",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_commoners,
    [itm_uruk_greaves,itm_evil_gauntlets_a,itm_nazgulrobe,itm_empty_head,itm_nazgul_sword,itm_mordor_warhorse2,],

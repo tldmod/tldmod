@@ -1019,4 +1019,6 @@ itm_felt_hat_b = 1017
 itm_leather_cap = 1018
 itm_leather_steppe_cap_a = 1019
 itm_civ_fine_shoes = 1020
-itm_torch = 1021
+itm_gandstaff_shield = 1021
+itm_gandstaff = 1022
+itm_torch = 1023
