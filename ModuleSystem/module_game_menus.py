@@ -8898,7 +8898,7 @@ game_menus = [
  ),
  
 ( "siege_started_defender",mnf_scale_picture|mnf_enable_hot_keys,
-    "{s1} is launching an assault against {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...",
+    "{s1} is launching an assault against {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. ^{s17}^You decide to...",
     "none",
     code_to_set_city_background + [
         (select_enemy,1),
@@ -8908,6 +8908,7 @@ game_menus = [
         (str_store_party_name, 2,"$g_ally_party"),
         (call_script, "script_encounter_calculate_fit"),
         (assign, reg22, reg10), #TLD fix
+        (call_script, "script_store_terrain_condition_to_s17_s18"),
         (try_begin),
           (eq, "$g_siege_first_encounter", 1),
           (call_script, "script_let_nearby_parties_join_current_battle", 0, 1), #MV from 0, 1, so no enemies standing by would join - Kham - That is actually what we want.

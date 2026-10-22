@@ -2028,6 +2028,7 @@ triggers = [
   # CC: Ambushes
   (8, 0, 0, [],[
     (eq, "$tld_option_animal_ambushes", 1), # Allows option to be toggled on and off.
+    (neq, "$g_fast_mode", 1),
     (store_character_level, ":player_level", trp_player),
     (ge,":player_level", 5),
     (party_get_attached_to, ":attached_to_party", "p_main_party"),

@@ -5730,7 +5730,7 @@ scene_props = [
       (scene_prop_set_slot, ":instance_no", 42, -1), #target agent
       (prop_instance_deform_in_cycle_loop, ":instance_no", 0, 49, 2000),
       (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_1, 4),
-      (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_2, 3),
+      (scene_prop_set_slot, ":instance_no", slot_prop_temp_hp_2, 50),
       (assign, "$nazgul_in_battle", ":instance_no"),
     ]),
     (ti_on_scene_prop_hit,

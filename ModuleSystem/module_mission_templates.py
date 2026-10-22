@@ -186,6 +186,7 @@ tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
   ] + tld_bow_shield
 + tld_battlefield_agent_effects
  + khams_custom_player_camera
+ + nazgul_flying
   or [] ) + [
 	#tld_fix_viewpoint,
  	custom_tld_spawn_troop, custom_tld_init_battle,
@@ -4517,6 +4518,8 @@ mission_templates = [ # not used in game
 
   (10, 0, 0,[
     #(gt, "$attacker_reinforcement_stage", 6), 
+    (store_mission_timer_a, ":time"),
+    (gt, ":time", 30),
     (eq, "$advanced_siege_ai",1),], [# check if targets are captured by attackers;
     (try_for_range, ":slot",0,6),
       (neg|troop_slot_eq,"trp_no_troop",":slot",-1), # -1 in slot means this flank defeated its choke and proceeds with charge
@@ -5902,11 +5905,11 @@ mission_templates = [ # not used in game
     [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[])
 	],tld_common_wb_muddy_water+[
 	(ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
-	(ti_before_mission_start, 0, 0, [], [(assign, "$dungeons_in_scene",1), 
        ] + (is_a_wb_mt==1 and [
-        (scene_set_day_time, 12),
-       ] or []) + [
+	(ti_after_mission_start, 0, 0, [],[ (get_player_agent_no, ":player"),(agent_set_speed_modifier, ":player", 250)]),
+	(ti_before_mission_start, 0, 0, [], [(assign, "$dungeons_in_scene",1), (scene_set_day_time, 12),
     ]),	
+    ] or []) + [
 	#dungeon_darkness_effect,
 ]),
 

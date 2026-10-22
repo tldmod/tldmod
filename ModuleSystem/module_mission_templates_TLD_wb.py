@@ -2293,11 +2293,14 @@ battle_encounters_effects = [
     (eq, ":encountered_party_2_faction", fac_mordor),
     
     #no fellbeast assigned yet
+    (assign, ":nazgul_exists", 1),
     (neg|party_slot_eq, "$g_encountered_party", slot_party_battle_encounter_effect, FELLBEAST),
     (try_begin),
         (gt, "$g_encountered_party_2", 0),
         (neg|party_slot_eq, "$g_encountered_party_2", slot_party_battle_encounter_effect, FELLBEAST),
+        (assign, ":nazgul_exists", 0),
     (try_end),
+    (eq, ":nazgul_exists", 1),
     
     (gt, "$g_starting_strength_enemy_party", 1000),
     (this_or_next|gt, "$g_starting_strength_friends", 1000),
@@ -3839,6 +3842,7 @@ tld_battlefield_agent_effects = [
    (else_try), #evil darkness
       (eq, "$terrain_condition", tc_darkness),
       (neg|is_currently_night),
+      (set_skybox, 10, 11),
       (display_message, "@The place is covered in darkness as if it was night."),
    (else_try), #night/day
       (is_currently_night),
