@@ -1341,13 +1341,14 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
     (eq, ":race", tf_troll),
     (agent_slot_eq, ":troll", slot_agent_troll_status, 2),
     (agent_set_slot, ":troll", slot_agent_troll_status, 0),
+    (agent_get_team, ":troll_team", ":troll"),
     
     (agent_get_position, pos69, ":troll"), #used for script
     (call_script, "script_aoe_pushback", 30, 400, ":troll", 1), #friendly fire
 
     (try_for_agents, ":troll", pos69, 500), #morale effect
         (agent_get_team, ":agent_team", ":troll"),
-        (teams_are_enemies, ":agent_team", "$nazgul_team"),
+        (teams_are_enemies, ":agent_team", ":troll_team"),
         (agent_get_slot, ":morale_penalty", ":troll", slot_agent_morale_modifier),
         (val_sub, ":morale_penalty", 10),
         (agent_set_slot, ":troll", slot_agent_morale_modifier, ":morale_penalty"),
@@ -2596,13 +2597,23 @@ nazgul_flying = ((is_a_wb_mt==1) and [
         (agent_is_alive, ":agent_no"),
         (agent_is_human, ":agent_no"),
         (neq, ":agent_no", ":player_agent"),
+        (agent_get_team, ":agent_team", ":agent_no"),
+        (try_begin), #assign nazgul team just in case
+            (eq, "$nazgul_team", -1),
+            (agent_get_party_id, ":agent_party", ":agent_no"),
+            (ge, ":agent_party", 0),
+            (party_is_active, ":agent_party"),
+            (store_faction_of_party, ":party_fac", ":agent_party"),
+            (this_or_next|eq, ":party_fac", "fac_mordor"),
+            (eq, ":party_fac", "fac_guldur"),
+            (assign, "$nazgul_team", ":agent_team"),
+        (try_end),
         (store_random_in_range, ":rand", 0, 100),
         (lt, ":rand", 10),
-        (agent_get_position, pos6, ":agent_no"),
+        # (agent_get_position, pos6, ":agent_no"),
         # (get_distance_between_positions, ":dist", pos5, pos6),
         # (lt, ":dist", 5000),
         (neg|scene_prop_slot_eq, "$nazgul_in_battle", 42, ":agent_no"), #not previous target agent
-        (agent_get_team, ":agent_team", ":agent_no"),
         (teams_are_enemies, ":agent_team", "$nazgul_team"),
         (assign, ":target_agent", ":agent_no"),
     (try_end),

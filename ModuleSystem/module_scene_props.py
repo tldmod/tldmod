@@ -206,7 +206,8 @@ scene_props = [
 ("pillow_b",0,"pillow_b","bo_pillow", []),
 ("pillow_c",0,"pillow_c","0", []),
 
-("interior_castle_g_square_keep_b",0,"0","0", []), #unused
+("banner_aragorn",0,"b_arms_aragorn","0", []),
+#("interior_castle_g_square_keep_b",0,"0","0", []), #unused
 
 ("carpet_with_pillows_a",0,"carpet_with_pillows_a","bo_carpet_with_pillows", []),
 ("carpet_with_pillows_b",0,"carpet_with_pillows_b","bo_carpet_with_pillows", []),
@@ -6195,7 +6196,7 @@ scene_props = [
   ("victory_celebration_jubilant_group", sokf_invisible, "arrow_helper_blue", "0", []), 
 ]) + [  
 
-#special edition with randomized banners
+#special edition for victory celebration
 ("victory_celebration_banner_stand_auto",sokf_moveable,"battle_banner_stand_a_auto","0", [(ti_on_init_scene_prop,[
     (try_begin),
         (party_get_num_attached_parties, ":num_attached_parties", "$current_town"),
@@ -6218,6 +6219,27 @@ scene_props = [
 
 ("siege_fire_big_var1",0,"arrow_helper_blue","0", []),
 ("siege_fire_huge_var1",0,"arrow_helper_blue","0", []),
+
+#same as victory_celebration_banner_stand_auto, but this one can be used in all scenes (=doesnt get removed)
+("banner_stand_auto_random",sokf_moveable,"battle_banner_stand_a_auto","0", [(ti_on_init_scene_prop,[
+    (try_begin),
+        (party_get_num_attached_parties, ":num_attached_parties", "$current_town"),
+        (store_random_in_range, ":rank", 0, ":num_attached_parties"),
+        (ge, ":rank", 0), #otherwise, it gets the town lords flag
+        (party_get_attached_party_with_rank, ":attached_party", "$current_town", ":rank"),
+        (party_stack_get_troop_id, ":leader", ":attached_party", 0),
+        (troop_is_hero, ":leader"),
+    (else_try),
+        (party_get_slot, ":leader", "$current_town", slot_town_lord),
+    (try_end),
+    (troop_get_slot, ":troop_banner_object", ":leader", slot_troop_banner_scene_prop),
+    (gt, ":troop_banner_object", 0),
+    (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+] + (is_a_wb_sceneprop==1 and [ 
+    (spawn_scene_prop, ":troop_banner_object"),
+    (scene_prop_set_slot, ":instance_no", slot_prop_agent_1, reg0),
+] or []) + [
+    ])]),
 
 ("zz_arrow_helper_blue",0,"arrow_helper_blue","0", []), #useful for debugging
 ("save_compartibility4",0,"0","0", []),

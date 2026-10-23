@@ -2167,7 +2167,7 @@ troops = [
 
 #governors (plural contains how player refers to the guy
 ["gondor_lord","Steward_Denethor","Steward",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
-   [itm_gondor_warhorse,itm_denethor_robe,itm_gondor_light_greaves,itm_mail_mittens,itm_gondor_leader_helm,itm_gondor_citadel_sword,itm_gondor_shield_e],
+   [itm_gondor_warhorse,itm_denethor_robe,itm_civ_fine_shoes,itm_mail_mittens,itm_gondor_leader_helm,itm_gondor_citadel_sword,itm_gondor_shield_e],
       attr_tier_7,wp_tier_6,knight_skills_5|knows_riding_4|knows_trainer_5|knows_surgery_9,0x0000000efe00400726c34cb9d447d0cc00000000001cb4580000000000000000],
 ["rohan_lord","King_Theoden","King",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_mearas_reward,itm_rohan_armor_th,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_archer_helmet_c_lordly,itm_eorl_cavalry_sword,itm_rohan_shield_g, itm_rohan_lance],

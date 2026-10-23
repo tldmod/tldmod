@@ -4166,6 +4166,7 @@ mission_templates = [ # not used in game
                 (val_add, ":attackers", 1),                
             (try_end),
             (try_begin),
+                (eq, ":player_nearby", 1),
                 (le, ":attackers", 3), #so players can't solo-sneak
                 (lt,":dist", 1500),
                 (display_message, "@Not enough allies nearby to capture this reinforcement point!"),
