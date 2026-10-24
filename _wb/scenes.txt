@@ -1,5 +1,5 @@
 scenesfile version 1
- 461
+ 462
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -744,42 +744,42 @@ scn_cirith_ungol_siege cirith_ungol_siege 256 none none 0 0 100 100 -100 0x00000
   0 
   0 
  outer_terrain_rohan 
-scn_custom_1 custom_1 256 none none 0 0 200 200 -0.5 0x0000000230000500000691a4000009e100004b34000070b7 
+scn_custom_1 custom_1 256 none none 0 0 200 200 -0.5 0x0000000130000500c008521a0000783b00002d1a000012bc 
   0 
   0 
- outer_terrain_plain 
-scn_custom_2 custom_2 256 none none 0 0 200 200 -0.5 0x0000000130010daa000691a40000482b00004b34000070b7 
+ New_outer_terrain_anduin 
+scn_custom_2 custom_2 256 none none 0 0 200 200 -0.5 0x0000000130000500c008521a000050f800005047000065ea 
   0 
   0 
  New_outer_mountains2east_ithilien 
-scn_custom_3 custom_3 256 none none 0 0 200 200 -0.5 0x00000001300005000003d8f600003efe00004b34000059be 
+scn_custom_3 custom_3 256 none none 0 0 200 200 -0.5 0x0000000130000500c008521a000050f80000504700000261 
   0 
   0 
- outer_terrain_plain 
-scn_custom_4 custom_4 256 none none 0 0 200 200 -0.5 0x0000000220000500000691a40000065c00004b34000070b7 
+ New_outer_mountains2east_ithilien 
+scn_custom_4 custom_4 256 none none 0 0 200 200 -0.5 0x0000000130000500c008521a000050f80000504700003e85 
   0 
   0 
- outer_terrain_rohan 
-scn_custom_5 custom_5 256 none none 0 0 200 200 -0.5 0x0000000120000500000691a40000065c00004b34000070b7 
+ New_outer_mountains2east_ithilien 
+scn_custom_5 custom_5 256 none none 0 0 200 200 -0.5 0x0000000130000500c008521a000050f8000050470000199c 
   0 
   0 
- outer_terrain_rohan 
-scn_custom_6 custom_6 256 none none 0 0 200 200 -0.5 0x00000001200005000003d8f600003efe00004b34000059be 
+ New_outer_mountains2east_ithilien 
+scn_custom_6 custom_6 256 none none 0 0 200 200 -0.5 0x0000000130000500c008521a0000783b00002d1a00003bbf 
   0 
   0 
- outer_terrain_rohan 
-scn_custom_7 custom_7 256 none none 0 0 200 200 -0.5 0x00000002b0000500000691a40000065c00004b3400000dfd 
+ New_outer_mountains2east_ithilien 
+scn_custom_7 custom_7 256 none none 0 0 200 200 -0.5 0x0000000130000500c008521a0000783b00002d1a000016c0 
   0 
   0 
- outer_terrain_forest 
-scn_custom_8 custom_8 256 none none 0 0 200 200 -0.5 0x00000001b0000500000691a40000065c00004b34000039d4 
+ New_outer_mountains2east_ithilien 
+scn_custom_8 custom_8 256 none none 0 0 200 200 -0.5 0x0000000130000500c008521a0000783b00002d1a00003208 
   0 
   0 
- outer_terrain_forest 
-scn_custom_9 custom_9 256 none none 0 0 200 200 -0.5 0x00000001b00005000003d8f60000442500004b340000152d 
+ New_outer_mountains2east_ithilien 
+scn_custom_9 custom_9 256 none none 0 0 200 200 -0.5 0x0000000130000500c008521a0000783b00002d1a000012bc 
   0 
   0 
- outer_terrain_forest 
+ New_outer_mountains2east_ithilien 
 scn_small_ford small_ford 256 none none 0 0 200 200 -0.5 0x0000000235864d634005c96d0000734a00004b340000734a 
   0 
   0 
@@ -1816,6 +1816,10 @@ scn_forest_ithilien_crossroads forest_ithilien_crossroads 256 none none 0 0 200 
   0 
   0 
  New_outer_mountains2east_ithilien 
+scn_morannon_quest_battle morannon_quest_battle 256 none none 0 0 100 100 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
+  0 
+  0 
+ outer_mountains2west_mordor 
 scn_tutorial_1 tutorial_1 1 tutorial_1_scene bo_tutorial_1_scene -100 -100 100 100 -100 0 
   0 
   0 

@@ -697,6 +697,7 @@ custom_tld_bow_to_kings = [
 		# to do: this way you bow to leaders OR to marshalls. Must both to both
 	    (store_trigger_param_1, ":agent_no"), 
 		(agent_get_troop_id, ":troop_no", ":agent_no"),
+        (neq, ":troop_no", "trp_player"),
 		(store_troop_faction, ":faction_no", ":troop_no",),
 		#(this_or_next|faction_slot_eq,":faction_no",slot_faction_marshall,":troop_no"),
 		(faction_slot_eq,":faction_no",slot_faction_leader,":troop_no"),
@@ -715,7 +716,9 @@ custom_tld_bow_to_kings = [
 		# see if same height..
 		(position_get_z,reg20,pos2),
 		(position_get_z,reg21,pos1),
-		(val_sub,reg20,reg21),(val_abs,reg20),(le,reg20,200.0),
+		(val_sub,reg20,reg21),
+        (val_abs,reg20),
+        (le,reg20,300.0),
 		#(agent_set_scripted_destination, reg10, pos1, 1), # hopefully, turn toward lord
 	    (get_player_agent_no, reg10),(agent_set_animation, reg10, "anim_bow_to_lord_go_down"),
 		(assign, "$player_is_bowing", 1),

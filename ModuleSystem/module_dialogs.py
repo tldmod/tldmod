@@ -529,6 +529,149 @@ dialogs = [
 [anyone|plyr, "hobbit_merry_talk_met", [], "Hello, messer Merry.","close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")] ],
 [anyone|plyr, "hobbit_pippin_talk_met", [], "Hello, messer Pippin.","close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")] ],
 
+#InVain: Aragorn/Legolas/Gimli Morannon dialog
+
+] + (is_a_wb_dialog and [
+
+[trp_aragorn,"start", [  (check_quest_active, "qst_morannon_quest"),
+                    (eq, "$talk_context", tc_entering_center_quest_talk),
+                    (eq, "$g_encountered_party", "p_advcamp_gondor"),
+                    #(eq, "$g_talk_troop", "trp_aragorn")
+                    (eq, "$g_talk_troop_met", 0),
+                    ],
+"Well met again, {playername}. I am glad that you have come, for we come now to the very brink, where hope and despair are akin, and it is good to have true friends beside us.", "morannon_quest_aragorn",
+   [ ]],
+
+[trp_aragorn,"start", [  (check_quest_active, "qst_morannon_quest"),
+                    (eq, "$talk_context", tc_entering_center_quest_talk),
+                    (eq, "$g_encountered_party", "p_advcamp_gondor"),
+                    #(eq, "$g_talk_troop", "trp_aragorn")
+                    ],
+"You are welcome, {playername}. I am Aragorn, son of Arathorn, Chieftain of the Dúnedain of the North, and I am glad that you have come.", "morannon_quest_aragorn",
+   [ ]],
+
+[anyone,"morannon_quest_aragorn", [  ],
+"The Captains of the West now gather before the Black Gate. Our hope is small, but while Men remain true to one another, hope is not wholly lost. Come, let us show the Enemy that the Men of the West have not forgotten courage.", "morannon_quest_start_battle", [ ]],
+
+[anyone,"start", [  (check_quest_active, "qst_morannon_quest"),
+                    (eq, "$talk_context", tc_entering_center_quest_talk),
+                    (eq, "$g_encountered_party", "p_advcamp_gondor"),
+                    (eq, "$g_talk_troop", "trp_gimli"),],
+"Another Elf to join our host? Well, I shall not complain, so long as you can wield a sword or draw a bow. We have need of every stout heart here; although I see little chance of our accomplishing much against those walls.", "morannon_quest_lego_1",
+   [ ]], 
+
+[anyone,"start", [  (check_quest_active, "qst_morannon_quest"),
+                    (eq, "$talk_context", tc_entering_center_quest_talk),
+                    (eq, "$g_encountered_party", "p_advcamp_gondor"),
+                    (eq, "$g_talk_troop", "trp_legolas")],
+"Well met! My friend Gimli will be glad to see another of his own folk here. And if you wield your axe as well as he does, I shall have no complaint!", "morannon_quest_gimli_1",
+   []],   
+
+[anyone,"morannon_quest_gimli_1", [],
+"Welcome, kinsman! We have need of every stout heart here; although I see little chance of our accomplishing much against those walls.", "morannon_quest_lego_1",
+   [(set_conversation_speaker_troop, "trp_gimli")]],   
+
+[anyone,"morannon_quest_lego_1", [],
+"Up with your beard, my friend! We have travelled dark paths and fought great battles, lead by the will and by our love of Aragorn. Oft hope is born, when all is forlorn. Now, the captains prepare to ride to the Gate, and we are to speak for the folk of the Wood and the Mountain. Let us see if we can lure out whatever is hiding behind those doors.", "morannon_quest_gimli_2",
+   [(set_conversation_speaker_troop, "trp_legolas")]],
+
+[anyone,"morannon_quest_gimli_2", [],
+"Very well, I shall come. Whatever is still to do, I hope to have a part in it, for the honour of the folk of the Lonely Mountain. {playername}, wait here for our return. Before long, you may have your own part to play, and I would be glad to have you by my side.", "morannon_quest_start_battle",
+   [(set_conversation_speaker_troop, "trp_gimli")]],  
+
+[anyone,"morannon_quest_start_battle", [], "Now, prepare yourself! The Black Gate will soon open!", "close_window",
+   [
+   (store_character_level, ":count", "trp_player"),
+    (val_mul, ":count", 2),
+    (val_add, ":count", 40),
+    (party_get_num_attached_parties, ":num_attached", "p_advcamp_gondor"),
+    (val_mul, ":num_attached", 5),
+    (val_add, ":count", ":num_attached"),
+    #(val_min, ":count", 1), #for testing
+    (call_script, "script_send_legion", "p_town_morannon", "p_advcamp_gondor", ":count"),
+    (assign, ":guardian_party", reg0),
+    (party_add_template, ":guardian_party", "pt_khand_war_party"), #add a few Easterlings
+    (party_add_template, ":guardian_party", "pt_khand_war_party"), 
+    (party_add_leader, ":guardian_party", "trp_mordor_captain", 4),
+    (troop_raise_skill, "trp_mordor_captain", skl_tactics, 10),
+    (quest_set_slot, "qst_morannon_quest", slot_quest_target_party, ":guardian_party"),
+    (quest_set_slot, "qst_morannon_quest", slot_quest_current_state, 1),
+    (quest_set_slot, "qst_morannon_quest", slot_quest_expiration_days, 5),
+    #(party_force_add_members, "p_advcamp_gondor", trp_aragorn, 1),
+    (party_add_leader, "p_advcamp_gondor", trp_gimli, 1), 
+    (party_add_leader, "p_advcamp_gondor", trp_legolas, 1), 
+    (party_add_leader, "p_advcamp_gondor", trp_aragorn, 1),
+    (party_add_leader, "p_advcamp_gondor", trp_gandalf, 1), #add as leader so Gandalf shows up in tc_ally_thanks
+    (party_set_slot, "p_advcamp_gondor", slot_center_ideal_battle_size, 500), #huge battle allowed
+    (assign,"$auto_enter_town","p_advcamp_gondor"),
+    (assign, "$g_town_visit_after_rest", 1),
+    (assign, "$g_last_rest_center", "$current_town"),
+    (rest_for_hours, 24, 6), #rest while not attackable   
+    (change_screen_return),
+    (set_rain, 0, 0),]],
+
+[anyone,"start", [  (check_quest_active, "qst_morannon_quest"),
+                    (quest_slot_eq, "qst_morannon_quest", slot_quest_current_state, 1),
+                    (quest_set_slot, "qst_morannon_quest", slot_quest_current_state, 2),
+                    (eq, "$current_town", "p_advcamp_gondor"),
+                    (eq, "$talk_context", tc_ally_thanks),
+                    (modify_visitors_at_site, "scn_conversation_scene"),
+                    (reset_visitors),
+                    (set_visitor, 1, "trp_aragorn"),],
+"Rejoice, {playername}, the Ring-bearer has fulfilled his Quest. The realm of Sauron is ended, and the road is open for Aragorn to claim the kingship that is his by right. You may stand by him, but I have one last errand, and I have need of speed greater than any wind. We will meet again.", "close_window",
+   [
+    # (assign, "$g_leave_encounter",1),
+    # (change_screen_return),
+    (remove_member_from_party, trp_aragorn, "p_advcamp_gondor"),
+    (remove_member_from_party, trp_legolas, "p_advcamp_gondor"),  
+    (remove_member_from_party, trp_gimli, "p_advcamp_gondor"),
+    (remove_member_from_party, trp_gandalf, "p_advcamp_gondor"),
+    (disable_party, "p_advcamp_gondor"), #the rest is done in the return of the king trigger for easier testing
+    # kill all mordor lords in morannon
+	(party_get_num_attached_parties, ":num_attached_parties", "p_town_morannon"),
+	(try_for_range_backwards, ":attached_party_rank", 0, ":num_attached_parties"),
+		(party_get_attached_party_with_rank, ":attached_party", "p_town_morannon", ":attached_party_rank"),
+		(gt, ":attached_party", 0),
+		(party_is_active, ":attached_party"),
+        (party_stack_get_troop_id, ":lord", ":attached_party", 0),
+        (gt, ":lord", 0),
+        (troop_is_hero, ":lord"),
+        (troop_set_slot, ":lord", slot_troop_wound_mask, wound_death),
+        (troop_set_slot, ":lord", slot_troop_occupation, 0),
+		(party_detach, ":attached_party"),
+        (call_script, "script_safe_remove_party", ":attached_party"),
+	(try_end),
+    (call_script, "script_destroy_center", "p_town_morannon"), #killing Mordor will also make Aragorn king
+    (try_begin),
+        (quest_get_slot, ":target_party", "qst_morannon_quest", slot_quest_target_party),
+        (gt, ":target_party", 0),
+        (party_is_active, ":target_party"),
+        (call_script, "script_clear_party_group", ":target_party", "fac_gondor"),
+    (try_end),
+    (try_begin),
+        (troop_get_slot, ":mouth_party", trp_mordor_lord, slot_troop_leaded_party),
+        (gt, ":mouth_party", 0),
+        (party_is_active, ":mouth_party"),
+        (call_script, "script_clear_party_group", ":mouth_party", "fac_gondor"),
+    (troop_set_slot, trp_mordor_lord, slot_troop_occupation, 0), #just to be sure
+    (try_end),
+    #(call_script, "script_setup_troop_meeting","trp_aragorn", 0),
+    ]],
+
+#aragorn talks about claiming his inheritance
+[trp_aragorn,"start", [(check_quest_active, "qst_morannon_quest"),
+                    (quest_slot_eq, "qst_morannon_quest", slot_quest_current_state, 2),
+                    (eq, "$current_town", "p_advcamp_gondor"),
+                    (eq, "$talk_context", tc_ally_thanks),],
+"The battle is won, and I thank you, {playername}, for standing with me in this hour of doom. We have faced the darkness together, and I expect that our paths shall cross again. Now I must return to Minas Tirith, for the time has come for me to claim the inheritance that is mine.", "close_window",
+   [
+    (call_script, "script_change_player_relation_with_troop", "trp_aragorn", 20),
+    (assign, "$g_leave_encounter",1),
+    (change_screen_return),
+    ]],
+
+] or []) + [ 
+
 #InVain: Aragorn/Legolas/Gimli HD dialog
 
 [anyone,"start", [  (check_quest_active, "qst_guardian_party_quest"),
@@ -4952,106 +5095,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      #(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1),
      (assign, "$g_leave_encounter", 1)]],
 
-  #[anyone|plyr,"lord_talk", [(check_quest_active,"qst_deliver_message_to_prisoner_lord"),
-                             # (quest_slot_eq, "qst_deliver_message_to_prisoner_lord", slot_quest_target_troop, "$g_talk_troop"),
-                             # (quest_get_slot, ":quest_giver_troop", "qst_deliver_message_to_prisoner_lord", slot_quest_giver_troop),
-                             # (str_store_troop_name, s11, ":quest_giver_troop")],
-   # "I bring a message from {s11}.", "lord_deliver_message_prisoner",
-   # [
-     # #TODO: Add reward
-     # (call_script, "script_end_quest", "qst_deliver_message_to_prisoner_lord"),
-     # ]],
-
-  #[anyone,"lord_deliver_message_prisoner", [], "Can it be true?\
- # Oh, thank you kindly, {playername}! You have brought hope and some small ray of light to these bleak walls.\
- # Perhaps one day I will be able to repay you.", "lord_deliver_message_prisoner_2",[]],
-  #[anyone|plyr,"lord_deliver_message_prisoner_2", [], " 'Twas the least I could do, {s65}.", "lord_deliver_message_prisoner_2a",[]],
-  #[anyone,"lord_deliver_message_prisoner_2a", [], "You've no idea how grateful I am, {playername}. A thousand thanks and more.", "close_window",[]],
-  #[anyone|plyr,"lord_deliver_message_prisoner_2", [], "Worry not, {s65}. You'll have ample opportunity once you are free again.", "lord_deliver_message_prisoner_2b",[]],
-  #[anyone,"lord_deliver_message_prisoner_2b", [], "Hah, of course, {playername}. My eternal thanks go with you.", "close_window",[]],
-
-  #[anyone|plyr,"lord_talk", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 1),
-                             # (troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
-                             # (check_quest_active,"qst_rescue_lord_by_replace"),
-                             # (quest_slot_eq, "qst_rescue_lord_by_replace", slot_quest_target_troop, "$g_talk_troop"),
-                             # (neg|check_quest_succeeded, "qst_rescue_lord_by_replace")],
-   # "Fear not, I am here to rescue you.", "lord_rescue_by_replace_offer",[]],
-  #[anyone,"lord_rescue_by_replace_offer", [],
-   # "By God, are you serious? What is your plan?", "lord_rescue_by_replace_offer_2",[]],
-  #[anyone|plyr,"lord_rescue_by_replace_offer_2", [],
-   # "A simple ruse, {s65}. If we exchange garments, I shall take your place here in prison,\
- # while you make your escape disguised as myself.\
- # I paid the guards a handsome bribe, with which I am sure they have already purchased half the wine stocks of the nearest tavern.\
- # With some luck they'll soon get so drunk they'd have trouble\
- # recognising their own mothers, let alone telling one of us from the other.\
- # At least not until you are safely away.", "lord_rescue_by_replace_offer_3",[]],
-  #[anyone,"lord_rescue_by_replace_offer_3", [],
-   # "Hmm, it might just work... But what of you, my {friend/lady}? The guards won't take kindly to this trickery.\
- # You may end up spending some time in this cell yourself.", "lord_rescue_by_replace_offer_4",[]],
-  #[anyone|plyr,"lord_rescue_by_replace_offer_4", [],
-   # "Not to worry, {s65}. The place is already starting to grow on me.", "lord_rescue_by_replace_offer_5a",[]],
-  #[anyone|plyr,"lord_rescue_by_replace_offer_4", [],
-   # "I shall be fine as long there is an ample reward waiting at the end.", "lord_rescue_by_replace_offer_5b",[]],
-  #[anyone,"lord_rescue_by_replace_offer_5a",[],
-   # "You are a brave soul indeed. I won't forget this.", "lord_rescue_by_replace_offer_6",[]],
-  #[anyone,"lord_rescue_by_replace_offer_5b",[],
-   # "Of course, my {friend/lady}, of course! Come to me when you have regained your freedom,\
- # and perhaps I shall be able to repay the debt I owe you.", "lord_rescue_by_replace_offer_6",[]],
-  #[anyone|plyr,"lord_rescue_by_replace_offer_6",[],
-   # "Quickly, {s65}, let us change garments. It is past time you were away from here.", "close_window",
-   # [(call_script, "script_succeed_quest", "qst_rescue_lord_by_replace"),
-    # (quest_get_slot, ":quest_target_troop", "qst_rescue_lord_by_replace", slot_quest_target_troop),
-    # (quest_get_slot, ":quest_target_center", "qst_rescue_lord_by_replace", slot_quest_target_center),
-    # (party_remove_prisoners, ":quest_target_center", ":quest_target_troop", 1),
-    # #(troop_set_slot, ":quest_target_troop", slot_troop_is_prisoner, 0),
-    # (troop_set_slot, ":quest_target_troop", slot_troop_prisoner_of_party, -1),
-    # (assign, "$auto_menu", -1),
-    # (assign, "$capturer_party", "$g_encountered_party"),
-    # (jump_to_menu, "mnu_captivity_rescue_lord_taken_prisoner"),
-    # (finish_mission),
-    # ]],
-
-##  
-##[anyone|plyr,"lord_talk", [(check_quest_active, "qst_deliver_message_to_lover"),
-##                             (troop_get_slot, ":cur_daughter", "$g_talk_troop", slot_troop_daughter),
-##                             (quest_slot_eq, "qst_deliver_message_to_lover", slot_quest_target_troop, ":cur_daughter"),
-##                             (quest_get_slot, ":troop_no", "qst_deliver_message_to_lover", slot_quest_giver_troop),
-##                             (str_store_troop_name, 3, ":troop_no"),
-##                             (str_store_troop_name, 4, ":cur_daughter")],
-##   "My lord, {s3} asked me to give this letter to your daughter, but I think you should read it first.", "lord_deliver_message_to_lover_tell_father",[]],
-##
-##[anyone,"lord_deliver_message_to_lover_tell_father", [],
-##   "That swine called {s3} is trying to approach my daughter eh? You have made the right decision by bringing this letter to me. I'll have a long talk with {s4} about it.", "lord_pretalk",
-##   [(add_xp_as_reward, 200),
-##    (call_script, "script_troop_add_gold", "trp_player", 1000),
-##    (quest_get_slot, ":quest_giver", "qst_deliver_message_to_lover", slot_quest_giver_troop),
-##    (quest_get_slot, ":target_troop", "qst_deliver_message_to_lover", slot_quest_target_troop),
-##    (call_script, "script_change_player_relation_with_troop", ":quest_giver", -20),
-##    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 10),
-##    (call_script, "script_change_player_relation_with_troop", ":target_troop", -10),
-##    (call_script, "script_end_quest", "qst_deliver_message_to_lover"),
-##    #Adding betrayal to the quest giver
-##    (troop_set_slot, ":quest_giver", slot_troop_last_quest, "qst_deliver_message_to_lover"),
-##    (troop_set_slot, ":quest_giver", slot_troop_last_quest_betrayed, 1)]],
-##
-##
-##### TODO: QUESTS COMMENT OUT END
-
 [anyone|plyr,"lord_talk", [(store_partner_quest,":lords_quest"),
                              (ge,":lords_quest",0)],
 "About the task you gave me...", "lord_active_mission_1",[]],
-
-# [anyone|plyr,"lord_talk", [(faction_slot_eq,"$g_talk_troop_faction",slot_faction_leader, "$g_talk_troop"),
-                             # (eq, "$players_kingdom", "$g_talk_troop_faction"),
-                             # (gt, "$mercenary_service_accumulated_pay", 0)],
-# "{s67}, I humbly request the weekly payment for my service.", "lord_pay_mercenary",[]],
-
-# [anyone,"lord_pay_mercenary", [(assign, reg8, "$mercenary_service_accumulated_pay")],
-# "Hmm, let me see... According to my ledgers, we owe you {reg8} RPs for your work. Here you are.", "lord_pay_mercenary_2",
-   # [(troop_add_gold, "trp_player", "$mercenary_service_accumulated_pay"),
-    # (assign, "$mercenary_service_accumulated_pay", 0)]],
-# [anyone|plyr,"lord_pay_mercenary_2", [], "Thank you, sir.", "lord_pretalk", []],
-
 
 [anyone|plyr,"lord_talk", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
                              (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),

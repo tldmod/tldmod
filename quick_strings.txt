@@ -1,4 +1,4 @@
-1876
+1882
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -232,7 +232,6 @@ qstr_{***}Good {***}Good
 qstr_{***}Med {***}Med
 qstr_{***}Bad {***}Bad
 qstr_You_gained_{reg84}_e You_gained_{reg84}_experience_from_your_intelligence.
-qstr_You_gained_{reg84}_w You_gained_{reg84}_weapon_points_from_your_agility.
 qstr_{reg4}_killed_{reg5} {reg4}_killed,_{reg5}_wounded,_{reg6}_routed
 qstr_{reg4}_killed_{reg5}_ {reg4}_killed,_{reg5}_wounded
 qstr_{reg4}_killed_{reg5}_r {reg4}_killed,_{reg5}_routed
@@ -592,6 +591,13 @@ qstr_Your_deed_has_greatl Your_deed_has_greatly_helped_my_design,_better_even_th
 qstr_{playername}_I_will_ {playername},_I_will_ask_you_a_thing_now._You_are_accounted_an_able_captain,_and_a_dutiful_one;_were_you_overmastered_by_great_foes?_Did_you_tarry_overlong,_for_caution_or_even_fear?_Behold,_we_are_now_come_into_a_greater_peril_than_I_could_have_foreseen._The_strength_of_Rohan_is_broken,_her_people_scattered_and_shieldless:_Helm’s_Deep_has_fallen._The_trees_are_withered_untimely,_and_night_lies_over_the_forge-fires_of_Isengard:_the_Ents_of_Fangorn_Forest_are_dead_or_driven_back.
 qstr_I... I...
 qstr_You_have_failed_me_{ You_have_failed_me,_{playername}_–_or_perhaps_it_is_I_who_have_failed_you._Perhaps_there_was_some_flaw_in_my_design,_some_grave_blunder_I_did_not_recognise…_The_terror_of_Mordor_comes._Leave_me_now,_{playername}._We_may_meet_again…_or_perhaps_not.
+qstr_{playername}_I_am_gl {playername},_I_am_glad_to_find_you_alive._I_had_feared_you_lost,_as_so_many_brave_men_of_the_West_have_been,_for_we_have_been_defeated_and_our_hopes_brought_very_low._It_may_soon_prove_that_I_have_failed_in_my_errand,_and_that_the_Enemy_will_proclaim_himself_Lord_of_all_Middle-earth_once_more.
+qstr_{playername}_I_did_n {playername},_I_did_not_see_you_at_the_Black_Gate;_did_you_linger_too_long,_or_were_you_held_back_by_some_mischance?_We_have_been_defeated,_and_our_hopes_are_brought_very_low;_it_may_soon_prove_that_I_have_failed_in_my_errand,_and_that_the_Enemy_will_proclaim_himself_Lord_of_all_Middle-earth_once_more.
+qstr_What_can_we_do_again What_can_we_do_against_the_overwhelming_might_of_Mordor?_Is_there_any_hope_left_at_all?
+qstr_I_will_be_the_last_t I_will_be_the_last_to_say_that_hope_is_lost._For_even_in_our_defeat_there_is_some_purpose:_We_called_out_the_Enemy’s_hidden_strength_and_he_has_emptied_his_land._We_must_keep_his_gaze_fixed_upon_us.
+qstr_The_Enemy_in_his_tri The_Enemy,_in_his_triumph,_will_now_seek_to_secure_his_victory,_but_Lord_Aragorn_is_still_alive._He_will_believe_that_Aragorn_holds_the_thing_he_most_desires,_and_his_wrath_will_turn_upon_him;_thus_his_eye_may_be_blind_to_any_other,_smaller_perils,_of_which_I_cannot_speak_now.
+qstr_But_what_can_we_do?_ But_what_can_we_do?_What_power_is_left_in_Middle-earth_to_challenge_the_Dark_Lord?
+qstr_Gondor_has_little_st Gondor_has_little_strength_left_to_withstand_another_assault,_but_other_realms_yet_endure._Go_north,_and_aid_the_Elves,_the_Dwarves,_and_the_Northmen_against_the_enemies_that_assail_them,_that_they_may_gather_their_strength_and_come_south_to_the_aid_of_Gondor_before_it_is_too_late.
 qstr_Bagginsssss..._Ssssh Bagginsssss..._Sssshhhire...
 qstr_I..._don_t_know! I..._don't_know!
 qstr_It..._beckonsssssss. It..._beckonsssssss...
@@ -701,6 +707,7 @@ qstr_The_defenses_lie_in_ The_defenses_lie_in_the_shadow_of_tall_trees,_blocking
 qstr_The_defenses_lie_in_t The_defenses_lie_in_the_shadow_of_steep_cliffs,_blocking_out_the_sunlight.
 qstr_The_fortress_is_shro The_fortress_is_shrouded_in_darkness.
 qstr_{***}{s17}_^{s18} {***}{s17}_^{s18}
+qstr__{s22}_qualified _{s22}_qualified
 qstr_{***}warp_array_create {***}warp_array_created_at_{reg1}
 qstr_{***}warp_temp_array_c {***}warp_temp_array_created_at_{reg1}
 qstr_{***}{s0} {***}{s0}
@@ -1132,11 +1139,6 @@ qstr_Forces_of_Isengard Forces_of_Isengard
 qstr_their_enemies their_enemies
 qstr_{s11}_and_{s13} {s11}_and_{s13}
 qstr_{s11}_{s13} {s11},_{s13}
-qstr_a_scout_party_from_{ a_scout_party_from_{s3}
-qstr_two_scout_parties_an two_scout_parties_and_a_forager_party_from_{s3}
-qstr_two_scout_parties_and two_scout_parties_and_a_raider_party_from_{s3}
-qstr_three_scouts_two_for three_scouts,_two_foragers,_and_a_patrol_from_{s3}
-qstr_three_scouts_two_rai three_scouts,_two_raiders,_and_a_war_party_from_{s3}
 qstr_You_see_the_village_ You_see_the_village_being_raided_by_bandits._You_ask_most_of_your_troops_to_watch_out_for_other_raiders_while_you_take_a_small_group_and_prepare_to_defend_villagers.
 qstr_You_see_the_village_y You_see_the_village_you_were_tasked_to_raid._You_and_a_small_group_of_your_raiders_prepare_to_attack_the_village_so_as_not_to_be_seen.
 qstr_The_raiders_are_defe The_raiders_are_defeated!_Those_few_who_remain_alive_and_conscious_scurry_off_to_the_darkness_from_whence_they_came,_terrified_of_the_villagers_and_their_new_champion.
@@ -1170,6 +1172,7 @@ qstr_destroyed._Only_smol destroyed._Only_smoldering_ruins_remain.
 qstr_^^^You_lost_your_fig ^^^You_lost_your_fight_against_the_mutiny!_^Seems_like_your_orcs_have_a_new_commander_now.
 qstr_^^^You_have_slain_th ^^^You_have_slain_the_offender,_and_other_orcs_quickly_fall_back_in_line._^_For_some_time_the_maggots_will_be_quiet_for_sure.
 qstr_^^A_fierce_fight_bre ^^A_fierce_fight_breaks_out,_but_your_loyal_troop_quickly_gain_the_upper_hand_and_slay_the_usurper_and_his_mutineers._This_will_silence_any_grumblers_for_a_good_while._^^Casualties:_^^{s8}
+qstr_Your_Casualties:_{s1 Your_Casualties:_{s11}
 qstr_You_cover_up_your_tr You_cover_up_your_tracks_and_move_onward.
 qstr_the_Eye the_Eye
 qstr_the_Hand the_Hand
@@ -1183,7 +1186,6 @@ qstr_However_the_dangerou However,_the_dangerous_journey_took_its_toll:_^^{s0}
 qstr_You_have_tracked_dow You_have_tracked_down_the_beast_and_ordered_your_party_to_encircle_it,_so_it_may_not_escape_from_the_area._^Now,_decide_how_many_companions_should_accompany_you_on_your_hunt._The_more_you_take_with_you,_the_easier_it_is_to_find_and_kill_the_beast,_but_your_part_in_the_hunt_will_be_smaller.
 qstr_You_have_tracked_down You_have_tracked_down_the_beast.
 qstr_{s6}_s_soldiers_have {s6}'s_soldiers_have_tracked_down_the_beast_and_encircled_it,_so_it_may_not_escape_from_the_area._{s6}_and_you_now_need_to_meet_it_in_fight.
-qstr_Your_Casualties:_{s1 Your_Casualties:_{s11}
 qstr_The_{s7}_lies_dead_b The_{s7}_lies_dead_before_you._You_and_{reg11?{s12}:your_troops}_celebrate_the_triumph_and_share_the_experience_of_the_successful_hunt.
 qstr_Shared_{reg16}_exper Shared_{reg16}_experience_with_{reg15}_companions
 qstr_The_beast_has_overco The_beast_has_overcome_you,_and_only_by_fortune_did_you_escape_being_torn_apart._When_at_last_you_regain_your_senses,_you_find_that_the_trail_has_gone_cold._The_creature_is_far_beyond_your_reach_now,_and_there_is_no_hope_of_catching_it_again.
@@ -1197,6 +1199,10 @@ qstr_However However
 qstr_Well_fought_{playern Well_fought,_{playername}.^^
 qstr_{s11}_I_had_to_save_ {s11},_I_had_to_save_your_life_there._Next_time,_better_look_after_yourself.
 qstr_{s11}_I_nearly_died_ {s11},_I_nearly_died_there!_Where_were_you_when_that_beast_attacked_me?
+qstr_^^^The_Return_of_the ^^^The_Return_of_the_King^^Gondor_has_a_King_again!_Aragorn_Elessar,_the_Heir_of_Elendil,_has_taken_up_the_Winged_Crown!
+qstr_{s8}_gained_faction_ {s8}_gained_faction_strength.
+qstr_^^^The_Return_of_the_ ^^^The_Return_of_the_King^^One_who_calls_himself_Elessar_has_claimed_the_crown_of_Gondor._Let_him_have_it,_for_now!_It_needs_more_to_make_a_king_than_a_piece_of_Elvish_glass,_or_a_rabble_such_as_his_following.
+qstr_Before_long_all_thei Before_long,_all_their_hopes_will_be_crushed_und_their_pride_humbled!
 qstr_Breaking_camp... Breaking_camp...
 qstr_{***}DEBUG:_Player_Con {***}DEBUG:_Player_Control_Allies_RESET
 qstr_Party_morale_is_low. Party_morale_is_low._Troops_desert_from_your_party.
@@ -1241,7 +1247,6 @@ qstr_In_a_desperate_attem In_a_desperate_attempt_to_defend_against_his_enemies,_
 qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_Advance_Camp_in_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_{playername}_s_Reser {playername}'s_Reserves
-qstr_{***}{reg70}___Last_St {***}{reg70}_-_Last_Stand
 qstr_{s5}_has_stopped_fol {s5}_has_stopped_following_you.
 qstr_You_have_{reg69}_all You_have_{reg69}_ally_party_following_you
 qstr_You_have_{reg69}_ally You_have_{reg69}_ally_parties_following_you
@@ -1354,6 +1359,7 @@ qstr_Good_day_to_you. Good_day_to_you.
 qstr_Ah_it_s_you_again._G Ah,_it's_you_again._Goodbye.
 qstr_My_apologies_if_I_wa My_apologies_if_I_was_rude,_earlier._What_was_your_story_again?
 qstr_I_was_reconsidering_ I_was_reconsidering_our_last_conversation._What_was_your_story_again?
+qstr_I_feel_that_this_may I_feel_that_this_may_be_my_last_chance.
 qstr_Zigrphel_gained_{reg Zigûrphel_gained_{reg78}_experience.
 qstr_Thank_you_commander. Thank_you,_commander.^
 qstr_{s31}{reg28?Those:Th {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_our_lands.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]

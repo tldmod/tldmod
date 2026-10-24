@@ -2474,6 +2474,13 @@ game_menus = [
   [
   
   ("back_map",[],"{!}Back to map.", [(change_screen_map),]),
+  
+     ] + (is_a_wb_menu==1 and [
+    ("camp_mvtest_morannon",[],"{!}Start Black Gate quest",[
+    (jump_to_menu, "mnu_morannon_quest"), 
+    (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")
+   ]),
+	] or []) + [
  
   # ("camp_mvtest_pimp",[(eq, cheat_switch, 1)],"{!}Pimp me up first!",
     # [(troop_raise_attribute, "trp_player",ca_strength,20),
@@ -2632,7 +2639,7 @@ game_menus = [
      # (party_add_members, ":troll_party", "trp_i3_mordor_large_orc", 20),
      # (display_message, "@Mordor party with olog hai spawned!", 0x30FFC8),
    # ]),            
-   ("camp_mvtest_legend",[],"{!}Enable legendary places.",[
+   ("camp_mvtest_legend",[(eq, cheat_switch, 1)],"{!}Enable legendary places.",[
     (enable_party, "p_legend_amonhen"),
     (enable_party, "p_legend_deadmarshes"),
     (enable_party, "p_legend_mirkwood"),
@@ -7884,6 +7891,28 @@ game_menus = [
           (assign, "$talk_context", tc_entering_center_quest_talk),
           (change_screen_map_conversation, ":quest_object_troop"),
         (else_try),
+          (check_quest_active, "qst_morannon_quest"),
+          (eq, "$current_town", "p_advcamp_gondor"),
+          (troop_get_type, ":player_race", "trp_player"),
+          (assign, ":quest_object_troop", "trp_aragorn"),
+          (try_begin),
+            (eq, ":player_race",  tf_dwarf), (assign, ":quest_object_troop", trp_legolas),
+            (assign, ":quest_object_troop2", trp_gimli),
+          (else_try),
+            (is_between, ":player_race", tf_elf_begin, tf_elf_end),
+            (assign, ":quest_object_troop", trp_gimli),
+            (assign, ":quest_object_troop2", trp_legolas),
+          (try_end),          
+          (modify_visitors_at_site,"scn_conversation_scene"),
+          (reset_visitors),
+          (set_visitor,0, "trp_player"),
+          (set_visitor,17, ":quest_object_troop"),
+          (set_visitor,1, ":quest_object_troop2"),
+          (set_jump_mission, "mt_conversation_encounter"),
+          (jump_to_scene, "scn_conversation_scene"),
+          (assign, "$talk_context", tc_entering_center_quest_talk),
+          (change_screen_map_conversation, ":quest_object_troop"), 
+        (else_try),
           (check_quest_active, "qst_guardian_party_quest"),
           (quest_slot_eq, "qst_guardian_party_quest", slot_quest_target_center, "$current_town"),
           (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
@@ -8953,6 +8982,11 @@ game_menus = [
             (this_or_next|eq, ":battle_lost",1),
             (eq,"$g_player_surrenders",1),
 			(assign, "$recover_after_death_menu", "mnu_recover_after_death_town"),
+            (try_begin),
+                (check_quest_active, "qst_morannon_quest"),
+                (eq, "$g_encountered_party", "p_advcamp_gondor"),
+                (assign, "$recover_after_death_menu", "mnu_recover_after_death_default"),
+            (try_end),
             (assign, "$g_next_menu", "mnu_tld_player_defeated"),
             ] + (is_a_wb_menu==1 and [
            (call_script, "script_reset_battle_size"),
@@ -14100,6 +14134,197 @@ game_menus = [
 	]
  ),
 
+] + (is_a_wb_menu==1 and [
+( "morannon_quest",0,
+"^^You receive a message that Lord Aragorn, Chieftain of the Rangers of the North, has come to help in the defense of Gondor. \
+Is he indeed the King Returned, as rumor says? A spark of hope. A fool's hope, perhaps. \
+But hope is needed as the Captains of the West assemble their host and march towards the Black Gate. \
+All faithful commanders of the west are summoned to join them there, to strike fast while the Enemy seems undecided.",
+    "none",
+    [(set_background_mesh, "mesh_town_morannon"),
+    (set_fixed_point_multiplier, 100),
+    (position_set_x, pos0, 65),
+    (position_set_y, pos0, 30),
+    (position_set_z, pos0, 100),
+    
+    #set up Aragorn for tableau
+    (troop_set_slot, "trp_aragorn", slot_troop_banner_scene_prop, "spr_banner_a"), #not yet royal banner
+    (troop_add_item, "trp_aragorn", "itm_gon_leader_surcoat_cloak", imod_lordly),
+    (troop_add_item, "trp_aragorn", "itm_gondor_leader_helm"),
+    (troop_add_item, "trp_aragorn", "itm_gondor_heavy_greaves"),
+    (troop_add_item, "trp_aragorn", "itm_leather_gloves_reward", imod_thick),
+    (troop_add_item, "trp_aragorn", "itm_gondor_warhorse", imod_heavy),
+    (troop_equip_items, "trp_aragorn"),
+    (troop_set_slot, "trp_aragorn", slot_troop_occupation, slto_kingdom_hero),
+    (troop_set_faction, "trp_aragorn", "fac_gondor"),
+    
+    (set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "trp_aragorn", pos0)    ],
+    
+    [("morannon_quest_start",[],"To the Black Gate!",
+    [(change_screen_map),
+    
+    #disable Denethor and make Imrahil faction leader
+    (faction_set_slot, "fac_gondor", slot_faction_leader, "trp_knight_1_3"), #Imrahil
+    (troop_set_slot, "trp_gondor_lord", slot_troop_wound_mask, wound_death),
+    (troop_set_faction, "trp_gondor_lord", "fac_commoners"), #remove from faction list
+    (troop_set_slot, "trp_gondor_lord", slot_troop_occupation, 0),
+    (troop_get_slot, ":denethor_party", "trp_gondor_lord", slot_troop_leaded_party),
+    (troop_set_note_available, "trp_gondor_lord", 0),
+    (try_begin),
+        (gt, ":denethor_party", 0),
+        (party_detach, ":denethor_party"),
+        (call_script, "script_safe_remove_party", ":denethor_party"),
+    (try_end),
+    (try_for_range, ":cur_center", centers_begin, centers_end),
+        (party_slot_eq, ":cur_center", slot_town_lord, "trp_gondor_lord"),
+        (party_set_slot, ":cur_center", slot_town_lord, "trp_knight_1_3"),
+    (try_end),
+    
+    (call_script, "script_update_troop_notes", "trp_aragorn"),
+    (call_script, "script_update_all_notes"),
+    
+    #set up advance camp and start quest
+    (faction_get_slot, ":adv_camp", "fac_gondor", slot_faction_advance_camp),
+    (neg|party_is_active, ":adv_camp"), #not already established, just in case
+    #(party_set_slot, ":adv_camp", slot_center_theater, ":active_theater"),
+    (party_set_name, ":adv_camp", "@Host of the West"),
+    (party_set_flags, ":adv_camp", pf_hide_defenders|pf_quest_party, 1),
+    (set_fixed_point_multiplier,100),
+    (init_position, pos5),
+    (position_set_x, pos5, -7557),
+    (position_set_y, pos5, -3790),
+    (party_set_position, ":adv_camp", pos5),
+    (enable_party, ":adv_camp"), #enable.. works if it's enabled already too
+    (try_for_range, ":unused", 0, 5),
+      (call_script, "script_cf_reinforce_party", ":adv_camp"),
+    (try_end),
+    (party_add_template, ":adv_camp", "pt_imladris_patrol"), 
+    (try_for_range, ":unused", 0, 30),
+        (store_random_in_range, ":path", 0, 2), #favor first upgrade path
+        (party_upgrade_with_xp, ":adv_camp", 6000, ":path"),
+    (try_end),
+    (party_set_slot, ":adv_camp", slot_town_walls, "scn_morannon_quest_battle"), #change to custom scene
+    (party_set_slot, ":adv_camp", slot_center_ideal_battle_size, 500), #huge battle allowed
+    #(quest_set_slot, "qst_morannon_quest", slot_quest_target_center, ":adv_camp"),
+    (quest_set_slot, "qst_morannon_quest", slot_quest_expiration_days, 5),
+    (quest_set_slot, "qst_morannon_quest", slot_quest_giver_troop, "trp_gandalf"),
+    (quest_set_slot, "qst_morannon_quest", slot_quest_xp_reward, 3000),
+    (setup_quest_text, "qst_morannon_quest"),
+    (str_store_string, s2, "@All faithful commanders of the west are summoned to Morannon, to challenge the might of the Dark Lord."),
+	(call_script, "script_start_quest", "qst_morannon_quest", "trp_aragorn"),
+    
+    #faction AI
+    (store_current_hours, ":cur_hours"),
+    (val_add, ":cur_hours", 24*5), #5 days no AI recalc for all southern facions
+    (try_for_range, ":lord", heroes_begin, heroes_end),
+        (store_troop_faction, ":lord_faction", ":lord"),
+        (faction_slot_eq, ":lord_faction", slot_faction_active_theater, theater_SE),
+        (faction_set_slot, ":lord_faction", slot_faction_scripted_until, ":cur_hours"),
+        (faction_set_slot, ":lord_faction", slot_faction_ai_state, sfai_default),
+        (faction_set_slot, ":lord_faction", slot_faction_ai_object, -1),
+        (call_script,"script_check_and_finish_active_army_quests_for_faction",":lord_faction",), #quit any campaign quests
+        
+        (troop_get_slot, ":lord_party", ":lord", slot_troop_leaded_party),
+        (gt, ":lord_party", 0),
+        (party_is_active, ":lord_party"),
+        (party_slot_eq, ":lord_party", slot_party_type, spt_kingdom_hero_party),
+        (party_set_ai_initiative, ":lord_party",5),
+        
+        (try_begin),
+            (faction_slot_eq, ":lord_faction", slot_faction_side, faction_side_good), #send all good side hosts that are in the theater towards morannon
+            (call_script, "script_party_set_ai_state", ":lord_party", spai_holding_center, "p_advcamp_gondor"),
+            (store_random_in_range, ":rand", 0, 10),
+            (lt, ":rand", 5),
+            (troop_set_slot, ":lord", slot_troop_death_chance_modifier, 1000), #yes
+         (else_try), #all evil hosts retreat
+            (neg|faction_slot_eq, ":lord_faction", slot_faction_side, faction_side_good),
+            (call_script, "script_cf_select_random_walled_center_with_faction_and_owner_priority_no_siege", ":lord_faction", ":lord"),
+            (call_script, "script_party_set_ai_state", ":lord_party", spai_holding_center, reg0),
+         (try_end),
+        (party_set_slot, ":lord_party", slot_party_scripted_ai, ":cur_hours"),
+      (try_end),
+    ]),]
+ ),
+] or []) + [
+    
+ ("return_of_the_king",0,
+   "{!}^^{s15}",
+    "none",
+    [   (call_script, "script_get_victory_mesh_per_troop", "trp_aragorn"),
+		(set_background_mesh, reg0),
+		(set_fixed_point_multiplier, 100),
+		(position_set_x, pos0, 65),
+		(position_set_y, pos0, 30),
+		(position_set_z, pos0, 100),
+        
+        #in case we call this menu outside of the quest
+        (troop_set_slot, "trp_aragorn", slot_troop_banner_scene_prop, "spr_banner_aragorn"),
+        (troop_set_slot, "trp_aragorn", slot_troop_banner_mesh, "mesh_banner_aragorn"),
+        (troop_add_item, "trp_aragorn", "itm_gon_leader_surcoat_cloak", imod_lordly),
+        (troop_add_item, "trp_aragorn", "itm_gondor_leader_helm"),
+        (troop_add_item, "trp_aragorn", "itm_gondor_heavy_greaves"),
+        (troop_add_item, "trp_aragorn", "itm_leather_gloves_reward", imod_thick),
+        (troop_add_item, "trp_aragorn", "itm_gondor_warhorse", imod_heavy),
+        (troop_equip_items, "trp_aragorn"),
+		(set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "trp_aragorn", pos0),
+        
+        (str_clear, s8),
+        (str_clear, s15),
+        (str_store_faction_name, s8, "fac_gondor"),
+             
+        (try_begin),
+            (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+            (str_store_string, s15, "@^^^The Return of the King^^Gondor has a King again! Aragorn Elessar, the Heir of Elendil, has taken up the Winged Crown!"),
+            (display_message, "@{s8} gained faction strength.", color_good_news),
+        (else_try),
+            (str_store_string, s15, "@^^^The Return of the King^^One who calls himself Elessar has claimed the crown of Gondor. Let him have it, for now! It needs more to make a king than a piece of Elvish glass, or a rabble such as his following."),
+            (display_message, "@{s8} gained faction strength.", color_bad_news),
+        (try_end),
+        (faction_get_slot, ":fac_strength", "fac_gondor", slot_faction_strength_tmp),
+        (val_add, ":fac_strength", 2000),
+        (faction_set_slot,"fac_gondor",slot_faction_strength_tmp,":fac_strength"),
+        ] + (is_a_wb_menu==1 and [
+        (troop_set_name, "trp_aragorn", "@King Aragorn Elessar"),
+        (troop_set_plural_name, "trp_aragorn", "@King"),
+		 ] or []) + [
+        (faction_get_slot, ":cur_leader", "fac_gondor", slot_faction_leader),
+        (try_for_range, ":cur_center", centers_begin, centers_end),
+            (store_faction_of_party, ":town_faction", ":cur_center"),
+            (eq, ":town_faction", "fac_gondor"),
+            (party_slot_eq, ":cur_center", slot_town_lord, ":cur_leader"),
+            (party_set_slot, ":cur_center", slot_town_lord, "trp_aragorn"),
+        (try_end),
+        (troop_set_faction, "trp_aragorn", "fac_gondor"),
+        (troop_set_slot, "trp_aragorn", slot_troop_original_faction, "fac_gondor"),
+        (troop_set_slot, "trp_aragorn", slot_troop_occupation, slto_kingdom_hero),
+        (troop_set_slot, "trp_aragorn", slot_troop_prisoner_of_party, -1),
+        (troop_set_slot, "trp_aragorn", slot_troop_lord_state, stls_default),
+        (troop_set_slot, "trp_aragorn", slot_troop_home, "p_town_minas_tirith"),
+        (faction_set_slot, "fac_gondor", slot_faction_leader, "trp_aragorn"),
+        (faction_set_slot,"fac_gondor",slot_faction_marshall,"trp_aragorn"),
+        (troop_set_slot, "trp_gimli", slot_troop_lord, "trp_aragorn"),
+        (troop_set_slot, "trp_gimli", slot_troop_occupation, slto_kingdom_companion),
+        (troop_set_slot, "trp_gimli", slot_troop_lord_relation_string, str_commander),
+        (troop_set_slot, "trp_legolas", slot_troop_lord, "trp_aragorn"),
+        (troop_set_slot, "trp_legolas", slot_troop_occupation, slto_kingdom_companion),
+        (troop_set_slot, "trp_legolas", slot_troop_lord_relation_string, str_commander),
+        (call_script, "script_create_kingdom_hero_party", "trp_aragorn", "p_town_minas_tirith"),
+        (party_set_slot, "p_town_dol_amroth", slot_town_lord, "trp_knight_1_3"),
+        (call_script, "script_update_all_notes"),
+        
+        (try_begin),
+            (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+            (str_store_string, s4, "@Hopeful tidings indeed!"),
+        (else_try),
+            (str_store_string, s4, "@Before long, all their hopes will be crushed und their pride humbled!"),
+        (try_end),
+        ],
+   	[("return_of_the_king_close", [], "{!}{s4}", [
+        (change_screen_return),
+        (call_script, "script_update_troop_notes", "trp_aragorn"), #needs to fire a escond time to update slots correctly
+    ]),
+   	
+]),
 ] 
 
 ## quick scene chooser

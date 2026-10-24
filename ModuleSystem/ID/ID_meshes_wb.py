@@ -403,5 +403,6 @@ mesh_choose_icon_evilman = 401
 mesh_draw_funeral_pyre_oath = 402
 mesh_troop_label_banner = 403
 mesh_warrider_logo = 404
+mesh_banner_aragorn = 405
 
 

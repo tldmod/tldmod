@@ -1700,6 +1700,18 @@ simple_triggers = [
                 (eq, ":cur_quest", "qst_guardian_party_quest"),
                 (call_script, "script_cf_isengard_guardian_quest_fail"),
               (else_try),
+                (eq, ":cur_quest", "qst_morannon_quest"),
+                (party_collect_attachments_to_party, "p_advcamp_gondor", "p_temp_party"),
+                (party_get_num_companion_stacks, ":num_stacks", "p_temp_party"),
+                (try_for_range, ":stack_no", 0, ":num_stacks"),
+                    (party_stack_get_troop_id, ":troop", "p_temp_party", ":stack_no"),
+                    (troop_is_hero, ":troop"),
+                    (troop_slot_eq, ":troop", slot_troop_occupation, slto_kingdom_hero),
+                    (troop_slot_eq, ":troop", slot_troop_death_chance_modifier, 1000), 
+                    (troop_set_slot, ":troop", slot_troop_death_chance_modifier, 999), 
+                (try_end),
+                (call_script, "script_destroy_center", "p_advcamp_gondor"), #also triggers quest failure script
+              (else_try),
                 (eq, ":cur_quest", "qst_raid_village"),
                 (call_script, "script_safe_remove_party", "$qst_raid_village_party"),
                 (call_script, "script_fail_quest", ":cur_quest"),
@@ -3074,16 +3086,16 @@ simple_triggers = [
         #CC: spawn mordor legions of old when mordor strength is <= 2000, and mordor is the only (eye) faction left.
         (try_begin),
           (eq, ":faction", "fac_mordor"),
-          (faction_slot_eq, ":faction", slot_faction_guardian_party, 0), #CC: We use this to track wether or not the legions have been spawned.
+          (neg|faction_slot_ge, ":faction", slot_faction_guardian_party_spawned, 2), #CC: We use this to track wether or not the legions have been spawned.
           (neg|faction_slot_ge, ":faction", slot_faction_strength, fac_str_guardian), #CC: Skip if the faction isn't weak enough
           (assign, ":mordor_only", 1),
-          #(try_for_range, ":other_fac", kingdoms_begin, kingdoms_end),
-          #	(eq, ":mordor_only", 1),
-          #	(neq, ":other_fac", ":faction"),
-          #	(faction_slot_eq, ":other_fac", slot_faction_state, sfs_active), # faction lives
-          #	(faction_slot_eq, ":other_fac", slot_faction_side, faction_side_eye),
-          #	(assign, ":mordor_only", 0), # Found another eye faction, do not spawn yet...
-          #(try_end),
+          (try_for_range, ":other_fac", kingdoms_begin, kingdoms_end),
+          	(eq, ":mordor_only", 1),
+          	(neq, ":other_fac", ":faction"),
+          	(faction_slot_eq, ":other_fac", slot_faction_state, sfs_active), # faction lives
+          	(faction_slot_eq, ":other_fac", slot_faction_side, faction_side_eye),
+          	(assign, ":mordor_only", 0), # Found another eye faction, do not spawn yet...
+          (try_end),
           (eq, ":mordor_only", 1),
           (set_spawn_radius, 8),
           (spawn_around_party, "p_town_morannon", "pt_legion_barad_dur"),
@@ -3094,16 +3106,16 @@ simple_triggers = [
           (party_set_slot, ":guard_party", slot_party_ai_object, "p_town_morannon"),
           (party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
           (party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
-          (party_set_ai_patrol_radius, ":guard_party", 10),
+          (party_set_ai_patrol_radius, ":guard_party", 1),
           (spawn_around_party, "p_town_morannon", "pt_legion_minas_morgul"),
           (assign, ":guard_party", reg0),
           (party_set_slot, ":guard_party", slot_party_type, spt_guardian),
           (party_set_slot, ":guard_party", slot_party_victory_value, 200),
-          (party_set_slot, ":guard_party", slot_party_home_center, "p_town_morannon"),
-          (party_set_slot, ":guard_party", slot_party_ai_object, "p_town_morannon"),
+          (party_set_slot, ":guard_party", slot_party_home_center, "p_town_minas_morgul"),
+          (party_set_slot, ":guard_party", slot_party_ai_object, "p_town_minas_morgul"),
           (party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
           (party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
-          (party_set_ai_patrol_radius, ":guard_party", 10),
+          (party_set_ai_patrol_radius, ":guard_party", 1),
           (spawn_around_party, "p_town_morannon", "pt_legion_udun"),
           (assign, ":guard_party", reg0),
           (party_set_slot, ":guard_party", slot_party_type, spt_guardian),
@@ -3112,7 +3124,7 @@ simple_triggers = [
           (party_set_slot, ":guard_party", slot_party_ai_object, "p_town_morannon"),
           (party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
           (party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
-          (party_set_ai_patrol_radius, ":guard_party", 10),
+          (party_set_ai_patrol_radius, ":guard_party", 1),
           (spawn_around_party, "p_town_morannon", "pt_legion_gorgoroth"),
           (assign, ":guard_party", reg0),
           (party_set_slot, ":guard_party", slot_party_type, spt_guardian),
@@ -3121,8 +3133,8 @@ simple_triggers = [
           (party_set_slot, ":guard_party", slot_party_ai_object, "p_town_morannon"),
           (party_set_slot, ":guard_party", slot_party_ai_state, spai_undefined),
           (party_set_ai_behavior, ":guard_party", ai_bhvr_patrol_location),
-          (party_set_ai_patrol_radius, ":guard_party", 10),
-          (faction_set_slot, "fac_mordor", slot_faction_guardian_party, 1),
+          (party_set_ai_patrol_radius, ":guard_party", 1),
+          (faction_set_slot, "fac_mordor", slot_faction_guardian_party_spawned, 2),
           (try_begin),
             (store_relation, ":rel", "$players_kingdom", ":faction"),
             (gt, ":rel", 0),
@@ -3990,16 +4002,6 @@ simple_triggers = [
       
   ]),
   
-  ## Kham Gondor Reinforcement Event - Let them patrol around the center
-  
-  ## Kham Denethor Sends Faramir to West Osgiliath
-  
-  ## Kham Gondor hero hears  the Horn of Gondor (Lore Trigger)
-  
-  ## Kham Isengard Hero sees Isengards Crebains (Lore Trigger)
-  
-  
-  
   #Kham - Cannibalsim / Elven Migration Trigger Start
   (36,
     [
@@ -4163,6 +4165,8 @@ simple_triggers = [
   #lore events trigger
   
   (7, [
+      ] + (is_a_wb_trigger==1 and [
+
       (faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
         (faction_get_slot, ":fac_strength", ":faction_no", slot_faction_strength),
@@ -4185,6 +4189,8 @@ simple_triggers = [
         (try_begin), #Isengard Last Stand
             (eq, "$lore_mode", 1),
             (eq, ":faction_no", fac_isengard),
+            (store_character_level, ":player_level", "trp_player"),
+            (ge, ":player_level", 15),
             (store_sub, ":capital_siegable_str", "$g_fac_str_siegable", fac_str_weak-fac_str_very_weak),
             (le, ":fac_strength", ":capital_siegable_str"),
             (party_slot_eq, "p_town_isengard", slot_center_destroyed, 0), #double check
@@ -4202,7 +4208,136 @@ simple_triggers = [
             (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_rohan_quest_start),
         (try_end),
 
+        (try_begin), #Mordor Last Stand
+            (eq, "$lore_mode", 1),
+            (eq, 0, 1), #disabled for now
+            (neg|check_quest_active, "qst_morannon_quest"),
+            (neg|check_quest_concluded, "qst_morannon_quest"),
+            (quest_slot_eq, "qst_morannon_quest", slot_quest_current_state, 0),
+            (eq, ":player_side", faction_side_good),
+            (eq, ":faction_no", fac_mordor),
+            (store_character_level, ":player_level", "trp_player"),
+            (ge, ":player_level", 15),
+            (store_sub, ":capital_siegable_str", "$g_fac_str_siegable", fac_str_weak-fac_str_very_weak),
+            #(le, ":fac_strength", ":capital_siegable_str"),
+            (party_slot_eq, "p_town_morannon", slot_center_destroyed, 0), #double check
+            (party_slot_eq, "p_town_morannon", slot_center_is_besieged_by, -1), #triple check
+            (faction_slot_ge, "fac_gondor", slot_faction_strength, fac_str_ok), #Gondor still okay?
+            (party_slot_eq, "p_town_minas_tirith", slot_center_destroyed, 0), #double check            
+            (party_slot_eq, "p_town_minas_tirith", slot_center_is_besieged_by, -1), #triple check
+            (store_faction_of_party, ":owner", "p_town_west_osgiliath"), #both Osgiliaths need to be in good side's hands
+            (faction_slot_eq, ":owner", slot_faction_side, faction_side_good),
+            (store_faction_of_party, ":owner", "p_town_east_osgiliath"),
+            (faction_slot_eq, ":owner", slot_faction_side, faction_side_good),
+            (party_slot_eq, "p_town_umbar_camp", slot_center_destroyed, 1), #Umbar defeated?
+            (faction_get_slot, ":adv_camp", "fac_gondor", slot_faction_advance_camp),
+            (neg|party_is_active, ":adv_camp"), #not already established, just in case
+            (call_script, "script_find_theater", "p_main_party"),
+            (eq, reg0, theater_SE), #player in Gondor?
+            (jump_to_menu, "mnu_morannon_quest"), 
+        (try_end),
+
+       (try_begin), #Return of the King
+            (eq, "$lore_mode", 1),
+            (neg|faction_slot_eq, "fac_gondor", slot_faction_leader, "trp_aragorn"),
+            (party_slot_eq, "p_town_morannon", slot_center_destroyed, 1), 
+            (faction_slot_ge, "fac_gondor", slot_faction_strength, fac_str_weak), #Gondor still alive?
+            (party_slot_eq, "p_town_minas_tirith", slot_center_destroyed, 0), #double check            
+            (party_slot_eq, "p_town_minas_tirith", slot_center_is_besieged_by, -1), #triple check 
+            (jump_to_menu, "mnu_return_of_the_king"), 
+            (check_quest_active, "qst_morannon_quest"),
+            (neg|check_quest_concluded, "qst_morannon_quest"),
+            (call_script, "script_finish_quest", "qst_morannon_quest", 100),
+            (party_set_name, "p_advcamp_gondor", "@Gondor Advance Camp"),
+            (party_set_flags, "p_advcamp_gondor", pf_hide_defenders|pf_quest_party, 0),
+            (party_set_slot, "p_advcamp_gondor", slot_town_walls, "scn_advcamp_gondor_siege"),
+            (party_set_slot, "p_advcamp_gondor", slot_center_ideal_battle_size, tld_siege_battle_size_default),
+            (call_script, "script_increase_rank", "fac_gondor", 50),
+        (try_end),
+
+       (try_begin), #Return of the King / evil side
+            (eq, "$lore_mode", 1),
+            (neq, ":player_side", faction_side_good),
+            (this_or_next|neg|faction_slot_ge, "fac_gondor", slot_faction_strength, 2000),
+            (faction_slot_ge, "fac_gondor", slot_faction_strength, 6000),
+            (party_slot_eq, "p_town_minas_tirith", slot_center_destroyed, 0), #double check            
+            (party_slot_eq, "p_town_minas_tirith", slot_center_is_besieged_by, -1), #triple check
+            (neg|faction_slot_ge, "fac_gondor", slot_faction_leader, "trp_aragorn"),
+            (jump_to_menu, "mnu_return_of_the_king"),
+            
+            #disable Denethor
+            (troop_set_slot, "trp_gondor_lord", slot_troop_wound_mask, wound_death),
+            (troop_set_faction, "trp_gondor_lord", "fac_commoners"), #remove from faction list
+            (troop_set_slot, "trp_gondor_lord", slot_troop_occupation, 0),
+            (troop_get_slot, ":denethor_party", "trp_gondor_lord", slot_troop_leaded_party),
+            (troop_set_note_available, "trp_gondor_lord", 0),
+            (try_begin),
+                (gt, ":denethor_party", 0),
+                (party_detach, ":denethor_party"),
+                (call_script, "script_safe_remove_party", ":denethor_party"),
+            (try_end),
+            
+            (call_script, "script_update_troop_notes", "trp_aragorn"),
+            (call_script, "script_update_all_notes"),
+        (try_end),
+
+       (try_begin), #Morannon quest failed
+            (eq, "$lore_mode", 1),
+            (check_quest_active, "qst_morannon_quest"),
+            (check_quest_failed, "qst_morannon_quest"),
+            (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_morannon_quest_fail),
+        (try_end),
+
+       (try_begin), #Legolas and Gimli join their factions after some time
+            (eq, "$lore_mode", 1),
+            (quest_slot_eq, "qst_morannon_quest", slot_quest_current_state, 99), #failed
+            (store_current_day, ":cur_day"),
+            (neg|quest_slot_ge, "qst_morannon_quest", slot_quest_expiration_days, ":cur_day"),
+            (store_random_in_range, ":rand", 0, 10),
+            (try_begin),
+                (lt, ":rand", 3),
+                (call_script, "script_promote_companion_to_lord", "trp_legolas"),
+            (try_end),
+            (store_random_in_range, ":rand2", 0, 10),
+            (try_begin),
+                (lt, ":rand2", 3),
+                (call_script, "script_promote_companion_to_lord", "trp_gimli"),
+            (try_end),
+        (try_end),
+
+        (try_begin), #Last Alliance
+          (eq, "$lore_mode", 1),
+          (eq, ":faction_no", "fac_mordor"),
+          (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
+          (neg|faction_slot_ge, ":faction_no", slot_faction_strength, fac_str_ok), #CC: Skip if the faction isn't weak enough
+          (assign, ":mordor_only", 1),
+          (try_for_range, ":other_fac", kingdoms_begin, kingdoms_end),
+          	(eq, ":mordor_only", 1),
+          	(neq, ":other_fac", ":faction_no"),
+          	(faction_slot_eq, ":other_fac", slot_faction_state, sfs_active), # faction lives
+          	(neg|faction_slot_eq, ":other_fac", slot_faction_side, faction_side_good),
+          	(assign, ":mordor_only", 0), # Found another evil faction, do not spawn yet...
+          (try_end),
+          (eq, ":mordor_only", 1),
+          (party_set_slot, "p_town_morannon", slot_center_siegability, tld_siegable_normal),
+          (party_set_slot, "p_town_minas_morgul", slot_center_siegability, tld_siegable_normal),
+          (faction_slot_eq, ":faction_no", slot_faction_guardian_party_spawned, 0), #CC: We use this to track wether or not the legions have been spawned.
+          (faction_set_slot, ":faction_no", slot_faction_guardian_party_spawned, 1),
+          #Todo: Notification menu
+          (assign, ":legions", 0),
+          (try_for_range, ":unused", 0, 10),
+            (lt, ":legions", 3),
+            (store_random_in_range, ":rand_adv_camp", advcamps_begin, advcamps_end),
+            (party_is_active, ":rand_adv_camp"),
+            (call_script, "script_send_legion", "p_town_morannon", ":rand_adv_camp", 70),
+            (val_add, ":legions", 1),
+          (try_end),
+          (display_message, "@In a desperate attempt to defend against his enemies, Sauron sends out his legions of Mordor!"),
+        (try_end),
+        
       (try_end), #end faction loop
+      
+      ] or []) + [   
   ]),
   
   # Encounter Effects Trigger - InVain & Kham

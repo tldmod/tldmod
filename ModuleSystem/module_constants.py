@@ -376,8 +376,7 @@ slot_faction_guardian_party = 180 # keeps the party ID of the guardian party, sp
 #Adv Camps Revamp
 slot_faction_theater_retreated_from = 181
 
-slot_faction_guardian_party_spawned = 181 #unused
-slot_faction_allowed_follow = 182
+slot_faction_guardian_party_spawned = 182 
 slot_faction_last_stand = 183
 
 #Rank Trigger Slots (faction slot)
@@ -846,21 +845,21 @@ slot_troop_present_at_event    = 19
 slot_troop_does_not_give_quest = 20
 #@ slot_troop_player_debt         = 21   # NOT USED in TLD
 slot_troop_player_relation     = 22
-slot_companion_agent_id        = 23 #TLD, tracks companion agent in battle 
+slot_companion_agent_id        = 23 #TLD, tracks companion agent in battle
 slot_troop_last_quest          = 24
-slot_troop_last_quest_betrayed = 25
-slot_troop_last_persuasion_time= 26
-slot_troop_last_comment_time   = 27
-slot_troop_spawned_before      = 28
+slot_troop_last_quest_betrayed = 25 #unused
+slot_troop_last_persuasion_time= 26 #unused
+slot_troop_last_comment_time   = 27 #unused
+slot_troop_spawned_before      = 28 #unused
 slot_troop_last_comment_slot   = 29
 
-slot_troop_trainer_met                       = 30
+slot_troop_trainer_met                       = 30 #only used for ziggy
 slot_troop_trainer_waiting_for_result        = 31 #used in TLD
 slot_troop_trainer_training_result           = 32 #used in TLD
 slot_troop_trainer_training_mode             = 33 #used in TLD
 slot_troop_trainer_num_opponents_to_beat     = 34 #used in TLD
-slot_troop_trainer_opponent_troop            = 35
-slot_troop_trainer_training_difficulty       = 36
+slot_troop_trainer_opponent_troop            = 35 #unused
+slot_troop_trainer_training_difficulty       = 36 #unused
 
 slot_lord_reputation_type     = 37
 slot_troop_change_to_faction          = 38 #unused
@@ -1102,6 +1101,7 @@ slot_troop_trait_scares_mounts = 179 #1= all mounts, 2=wargs, 3=non-wargs
 
 slot_troop_merchant_offered_quest = 180
 
+slot_troop_banner_mesh         = 181 #TLD, used for custom tableau banners
 #Healer Slots (troop slot)
 slot_troop_needs_healing = 308
 
@@ -1431,10 +1431,10 @@ scraps_begin = itm_metal_scraps_bad
 scraps_end = itm_oliphant #itm_metal_scraps_good+1
 
 # Banner constants
-banner_meshes_begin = mesh_banner_gondor
+banner_meshes_begin = mesh_banner_gondor #used for script_add_troop_to_cur_tableau and faction related tableaus
 banner_meshes_end_minus_one = mesh_banner_f20
 
-arms_meshes_begin = mesh_arms_a01
+arms_meshes_begin = mesh_arms_a01 #only used for heraldic armour tableau (unused) and banner icons in battle
 arms_meshes_end_minus_one = mesh_arms_f21
 
 custom_banner_charges_begin = mesh_custom_banner_charge_01
@@ -1777,6 +1777,7 @@ tld_siegable_normal  = 2  # siege if attstr>fac_str_ok and defstr<fac_str_weak
 tld_siegable_capital = 3  # capital, siege if attstr>fac_str_ok and defstr<fac_str_very_weak; may be redundant, but gives some flexibility
 tld_siegable_never   = 4  # never siege
 
+#slot_center_ideal_battle_size
 tld_siege_battle_size_default = 200
 tld_siege_battle_size_big = 250
 tld_siege_battle_size_bigger = 250
@@ -2499,6 +2500,7 @@ tld_cc_nazgul_victory     = 7
 tld_cc_gandalf_rohan_quest_start     = 8
 tld_cc_gandalf_rohan_quest_win     = 9
 tld_cc_gandalf_rohan_quest_fail = 10
+tld_cc_gandalf_morannon_quest_fail = 11      
 
 #conversation bit masks for $g_tld_conversations_done
 tld_conv_bit_gandalf_advice     = 0x01

@@ -2406,9 +2406,11 @@ scripts = [
 	(try_end),
     
 	(try_for_range, ":has_hp_shield", trp_aragorn, trp_gimli+1),
-		(troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 200),
+		(troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 400),
         (troop_set_slot, ":has_hp_shield", slot_troop_has_combat_ai, 1),
 	(try_end),
+    (troop_set_slot, "trp_gandalf", slot_troop_hp_shield, 400),
+    (troop_set_slot, "trp_gandalf", slot_troop_has_combat_ai, 1),
 
 	(try_for_range, ":has_hp_shield", trp_greenwood_captain, trp_end_leaders),
 		(troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 100),
@@ -15919,6 +15921,16 @@ scripts = [
         (eq, "$current_town", "p_town_thranduils_halls"),
         (assign, ":stand_animation", "anim_sit_on_throne"), # GA: sitting Thranduil, but only in his halls
       (else_try),
+        (eq, ":troop_no", "trp_aragorn"),
+        (faction_slot_eq, "fac_gondor", slot_faction_leader, "trp_aragorn"),
+        (eq, "$current_town", "p_town_minas_tirith"),
+        (entry_point_get_position, pos1, 10),
+        (assign, ":stand_animation", "anim_sit_on_throne"), # InVain: Aragorn sits on the King's throne
+         ] + ((is_a_wb_script==1) and [
+        (agent_set_no_dynamics, ":agent_no", 1),
+         ] or []) + [
+        (agent_set_position, ":agent_no", pos1),
+      (else_try),
         (eq, ":troop_no", "trp_gundabad_lord"),
         (eq, "$current_town", "p_town_gundabad"),
         (assign, ":stand_animation", "anim_sit_on_throne"), # GA: sitting Burza, but only in his cave
@@ -18434,6 +18446,11 @@ scripts = [
 		(store_add, ":banner_mesh", ":banner_spr", banner_meshes_begin),
 	(try_end),
 
+    (try_begin), #slot allows to set custom banner meshes outside of range
+        (troop_slot_ge, ":troop_no", slot_troop_banner_mesh, 1),
+        (troop_get_slot, ":banner_mesh", ":troop_no", slot_troop_banner_mesh),
+    (try_end),
+    
 	(cur_tableau_clear_override_items),
 
 	(try_begin),#TLD: mouth of sauron keeps his hood
@@ -24620,6 +24637,7 @@ scripts = [
       (this_or_next|eq, ":convo_code", tld_cc_gandalf_rohan_quest_start),
       (this_or_next|eq, ":convo_code", tld_cc_gandalf_rohan_quest_win),
       (this_or_next|eq, ":convo_code", tld_cc_gandalf_rohan_quest_fail),
+      (this_or_next|eq, ":convo_code", tld_cc_gandalf_morannon_quest_fail),
       (this_or_next|eq, ":convo_code", tld_cc_gandalf_advice),
       (this_or_next|eq, ":convo_code", tld_cc_gandalf_ally_down),
       (this_or_next|eq, ":convo_code", tld_cc_gandalf_enemy_down),
@@ -24854,7 +24872,23 @@ scripts = [
       (assign, "$g_tld_convo_lines", 3),
       (call_script, "script_end_quest", "qst_guardian_party_quest"),
       (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 99), #make sure it only happens once
-            
+
+    (else_try),
+      (eq, ":convo_code", tld_cc_gandalf_morannon_quest_fail),
+      (str_store_string, s50, "@{playername}, I am glad to find you alive. I had feared you lost, as so many brave men of the West have been, for we have been defeated and our hopes brought very low. It may soon prove that I have failed in my errand, and that the Enemy will proclaim himself Lord of all Middle-earth once more."),
+      (try_begin),
+        (quest_slot_eq, "qst_morannon_quest", slot_quest_current_state, 0), #in case the player did not even come
+        (str_store_string, s50, "@{playername}, I did not see you at the Black Gate; did you linger too long, or were you held back by some mischance? We have been defeated, and our hopes are brought very low; it may soon prove that I have failed in my errand, and that the Enemy will proclaim himself Lord of all Middle-earth once more."),
+      (try_end),
+      (str_store_string, s51, "@What can we do against the overwhelming might of Mordor? Is there any hope left at all?"),      
+      (str_store_string, s52, "@I will be the last to say that hope is lost. For even in our defeat there is some purpose: We called out the Enemy’s hidden strength and he has emptied his land. We must keep his gaze fixed upon us."),
+      (str_store_string, s53, "@What do you mean?"),
+      (str_store_string, s54, "@The Enemy, in his triumph, will now seek to secure his victory, but Lord Aragorn is still alive. He will believe that Aragorn holds the thing he most desires, and his wrath will turn upon him; thus his eye may be blind to any other, smaller perils, of which I cannot speak now."),
+      (str_store_string, s55, "@But what can we do? What power is left in Middle-earth to challenge the Dark Lord?"),
+      (str_store_string, s56, "@Gondor has little strength left to withstand another assault, but other realms yet endure. Go north, and aid the Elves, the Dwarves, and the Northmen against the enemies that assail them, that they may gather their strength and come south to the aid of Gondor before it is too late."),
+      (assign, "$g_tld_convo_lines", 7),
+      (call_script, "script_end_quest", "qst_morannon_quest"),
+      (quest_set_slot, "qst_morannon_quest", slot_quest_current_state, 99),
     ##NAZGUL
     (else_try), 
       (eq, ":convo_code", tld_cc_nazgul_baggins),
@@ -24922,6 +24956,7 @@ scripts = [
       (this_or_next|eq, ":mission_code", tld_cc_gandalf_advice),
       (this_or_next|eq, ":mission_code", tld_cc_gandalf_ally_down),
       (this_or_next|eq, ":mission_code", tld_cc_gandalf_enemy_down),
+      (this_or_next|eq, ":mission_code", tld_cc_gandalf_morannon_quest_fail),
       (eq, ":mission_code", tld_cc_gandalf_victory),
       (assign, ":mission_troop_side", faction_side_good),
       (assign, ":state", "$g_tld_gandalf_state"),
@@ -29505,6 +29540,7 @@ command_cursor_scripts = [
         (assign, "$terrain_condition", tc_mountain),
         (str_store_string, 18, "@The defenses lie in the shadow of steep cliffs, blocking out the sunlight."),
     (else_try),
+        (this_or_next|quest_slot_eq, "qst_morannon_quest", slot_quest_target_party, "$g_encountered_party_2"), 
         (this_or_next|eq, "$g_encountered_party", "p_town_dol_guldur"),
         (this_or_next|eq, "$g_encountered_party", "p_town_minas_morgul"),
         (eq, "$g_encountered_party", "p_town_morannon"),
@@ -29645,6 +29681,70 @@ command_cursor_scripts = [
     (try_end),
 ]),
 
+#script_morannon_quest_fail
+("morannon_quest_fail", [
+    (call_script, "script_fail_quest", "qst_morannon_quest"),
+    (party_get_position, pos10, "p_advcamp_gondor"),
+    (call_script,"script_create_temp_map_prop_on_pos10","icon_debris",16,1,"psys_map_village_looted_smoke"),
+    # (call_script,"script_create_smoking_remnants","p_main_party","icon_debris",12,1),
+    #make Mordor undefeatable
+    (party_set_slot, "p_town_morannon", slot_center_siegability, tld_siegable_never),
+    (party_set_slot, "p_town_minas_morgul", slot_center_siegability, tld_siegable_never),
+    (party_set_slot, "p_town_morannon", slot_center_strength_income, 40),
+    (party_set_slot, "p_town_minas_morgul", slot_center_strength_income, str_income_very_high),
+    (remove_member_from_party, trp_aragorn, "p_advcamp_gondor"),
+    (remove_member_from_party, trp_gandalf, "p_advcamp_gondor"),  
+    (remove_member_from_party, trp_legolas, "p_advcamp_gondor"),  
+    (remove_member_from_party, trp_gimli, "p_advcamp_gondor"),
+    
+    #disable scripted mode
+    (assign, ":lords_killed", 0),
+    (troop_get_slot, ":mouth_party", "trp_mordor_lord", slot_troop_leaded_party),
+    (faction_set_slot, "fac_mordor", slot_faction_marshall, "trp_mordor_lord"), #activate mouth so we can take an oath of vengeance against him
+    (troop_set_slot, "trp_mordor_lord", slot_troop_lord_state, stls_default),
+    (try_for_range, ":lord", heroes_begin, heroes_end),
+        (troop_slot_eq, ":lord", slot_troop_occupation, slto_kingdom_hero),
+        (neg|troop_slot_eq, ":lord", slot_troop_wound_mask, wound_death),
+        (str_store_troop_name, s22, ":lord"),
+        (store_troop_faction, ":lord_faction", ":lord"),
+        (faction_slot_eq, ":lord_faction", slot_faction_side, faction_side_good),
+        (faction_slot_eq, ":lord_faction", slot_faction_active_theater, theater_SE),
+        (faction_set_slot, ":lord_faction", slot_faction_scripted_until, 0),
+        (faction_set_slot, ":lord_faction", slot_faction_ai_state, sfai_default),
+        (faction_set_slot, ":lord_faction", slot_faction_ai_object, -1),
+        
+        (try_begin),
+            (troop_get_slot, ":lord_party", ":lord", slot_troop_leaded_party),
+            (gt, ":lord_party", 0),
+            (party_set_ai_initiative, ":lord_party", 100),
+        (try_end),
+        
+        (neq, ":lord", "trp_knight_1_3"), #not Imrahil
+        (neq, ":lord", "trp_knight_1_7"), #not Faramir
+        (lt, ":lords_killed", 3),
+        (quest_slot_eq, "qst_morannon_quest", slot_quest_current_state, 0), #player didn't help
+        (troop_slot_eq, ":lord", slot_troop_death_chance_modifier, 999), #predefined
+        #(troop_slot_eq, ":lord", slot_troop_leaded_party, -1),
+        # (troop_get_slot, ":day_of_defeat", ":lord", slot_troop_respawn_timer),
+        # (val_sub, ":cur_day", 1),
+        # (ge, ":day_of_defeat", ":cur_day"), #only kill lords that have been defeated yesterday or today
+        (display_message, "@ {s22} qualified"),
+        
+        # (store_random_in_range, ":rand", 0, 10),
+        # (lt, ":rand", 3),
+        (val_add, ":lords_killed", 1),
+        (gt, ":mouth_party", 0),
+        (call_script, "script_hero_leader_killed_abstractly", ":lord",":mouth_party"),
+        (troop_set_slot, ":lord", slot_troop_killed_by, "trp_mordor_lord"),
+    (try_end),
+    (faction_set_slot, "fac_gondor", slot_faction_marshall, "trp_aragorn"),
+    (faction_set_slot, "fac_gondor", slot_faction_leader, "trp_knight_1_7"),
+    #todo: Notification menu
+    (store_current_day, ":cur_day"),
+    (store_random_in_range, ":waiting_time", 5, 10),
+    (val_add, ":cur_day", ":waiting_time"),
+    (quest_set_slot, "qst_morannon_quest", slot_quest_expiration_days, ":cur_day"), #player didn't help
+]),
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts+ formAI_v5_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts

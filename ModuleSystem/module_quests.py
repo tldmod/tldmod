@@ -442,7 +442,7 @@ quests = [
   ),
 
 ( "morannon_quest", "The Black Gate Opens", qf_random_quest,
-  "{!}Placeholder"
+  "All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord."
   ),
 
   ("quests_end", "{!}Quests End", qf_random_quest, "."),

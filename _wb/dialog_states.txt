@@ -38,6 +38,11 @@ hobbit_general_talk_ask_3
 hobbit_general_talk_ask_accept
 hobbit_general_talk_ask_reject
 hobbit_deliver_message
+morannon_quest_aragorn
+morannon_quest_start_battle
+morannon_quest_lego_1
+morannon_quest_gimli_1
+morannon_quest_gimli_2
 HD_defense_01
 aragorn_thanks_HD
 treebeard_isengard_1
@@ -105,6 +110,11 @@ companion_recruit_backstory_delayed_response
 companion_rehire
 companion_was_dismissed
 companion_rehire_refused
+dimborn_ask_bear
+dimborn_ask_bear_response
+dimborn_ask_bear_leave
+dimborn_ask_bear_wait
+dimborn_ask_bear_forbidden
 ziggy_ask_prisoners
 ziggy_ask_why
 ziggy_reason

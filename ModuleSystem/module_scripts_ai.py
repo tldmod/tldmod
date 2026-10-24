@@ -2335,6 +2335,13 @@ ai_scripts = [
         (neg|main_party_has_troop, ":kingdom_companion"),
 		(party_add_members, "$pout_party", ":kingdom_companion", 1),
       (try_end),
+      
+      (try_for_range, ":kingdom_companion", trp_legolas, trp_gimli+1), #they won't be able to help with quests like other companions, but still hang around
+        (eq, ":troop_no", "trp_aragorn"),
+        (troop_slot_eq, ":kingdom_companion", slot_troop_occupation, slto_kingdom_companion),
+        (neg|main_party_has_troop, ":kingdom_companion"),
+		(party_add_members, "$pout_party", ":kingdom_companion", 1),
+      (try_end),
 
 	  # make it use the icon of the corresponding host (mtarini)
 	  (store_sub, ":icon", ":troop_faction_no", "fac_gondor"),
@@ -3207,6 +3214,12 @@ ai_scripts = [
             (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 2),
             (jump_to_menu, "mnu_isengard_flooding"),
         (try_end),
+    (try_end),
+
+    (try_begin),
+        (check_quest_active, "qst_morannon_quest"),
+        (eq, ":center", "p_advcamp_gondor"),
+        (call_script, "script_morannon_quest_fail"),
     (try_end),
     
 	# detach all attached parties, in case there are parties in the camp

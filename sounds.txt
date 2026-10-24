@@ -667,7 +667,7 @@ soundsfile version 2
  camelHit02.wav 1872
  gondor_army.wav 2384
  camelRoar02.wav 1872
-297
+298
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -959,9 +959,10 @@ snd_army_good 2384 1 665
 snd_bell 1872 4 612 613 614 615 
 snd_raven 1872 1 616 
 snd_moria_horror 1872 1 624 
-snd_wolf_howl 1280 1 49 
+snd_wolf_howl 2048 1 49 
 snd_beast_groan 1872 2 656 657 
 snd_beast_roar 1872 2 658 666 
 snd_orc_beast 1872 6 561 562 563 658 666 652 
 snd_boar_sound 1872 1 233 
-snd_wolf_howl2 1280 2 565 566 
+snd_warg_howl 1280 2 565 566 
+snd_bear_growl 2656 1 505 
