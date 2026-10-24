@@ -2136,7 +2136,7 @@ scripts = [
 	(assign, "$found_moria_entrance", 0),
 	(assign, "$current_player_region", -1),
 	(assign, "$spawn_horse", 1),
-	(assign, "$gate_aggravator_agent", 1), #re-used for controlling if aggravators spawn
+	(assign, "$gate_aggravator_agent", 0), #re-used for controlling if aggravators spawn
 #    (assign, "$equip_needs_checking", 1),
 	(assign, "$g_tld_conversations_done", 0),
 	(assign, "$g_tld_gandalf_state", -1),
@@ -3295,6 +3295,19 @@ scripts = [
 					(else_try),
 						(party_set_slot, ":root_defeated_party", slot_center_last_taken_by_troop, -1),
 					(try_end),
+                    
+                    (try_begin), #TLD: if besieger party is a scripted legion, send it back home
+                        (party_slot_eq, ":root_winner_party", slot_party_type, spt_guardian),
+                        (party_is_active, ":root_winner_party"),
+                        (party_get_slot, ":home", ":root_winner_party", slot_party_home_center),
+                        (gt, ":home", 1),
+                        (party_is_active, ":home"),
+                        (party_set_flags, ":root_winner_party", pf_auto_remove_in_town, 1),
+                        (party_set_ai_behavior, ":root_winner_party", ai_bhvr_travel_to_party),
+                        (party_set_ai_object, ":root_winner_party", ":home"),
+                        (party_set_ai_initiative, ":root_winner_party", 0),
+                        (party_set_flags, ":root_winner_party", pf_default_behavior, 0),
+                    (try_end),
 
 					(call_script, "script_lift_siege", ":root_defeated_party", 0),
 					(try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
@@ -16604,6 +16617,7 @@ scripts = [
         (try_end),
 
         (try_begin), #make agents reconsider more often, helps with finding the closest enemy
+            (neg|agent_is_defender, ":agent_no"),
             (neg|agent_is_in_special_mode, ":agent_no"),
             (agent_get_combat_state,":combat_state", ":agent_no"),
             (eq, ":combat_state", 0), #not aiming at anyone
@@ -29332,9 +29346,11 @@ command_cursor_scripts = [
       (call_script, "script_party_set_ai_state", ":guard_party", spai_besieging_center, ":destination"),
       (party_set_ai_behavior, ":guard_party", ai_bhvr_attack_party),
       (party_set_flags, ":guard_party", pf_default_behavior, 1),
+      
+      (val_mul, ":reinforcement_waves", "$tld_host_size_multi"),      
+      (val_div, ":reinforcement_waves", 100),
 
       #fill it up with lord army reinforcements and upgrade a lot
-      #(store_random_in_range, ":reinforcement_waves", 50, 60), #average about 8 troops per reinf
       (try_for_range, ":unused", 0, ":reinforcement_waves"),
         (call_script, "script_cf_reinforce_party", ":guard_party"),
       (try_end),
@@ -29342,13 +29358,6 @@ command_cursor_scripts = [
         (store_random_in_range, ":path", 0, 2), #favor first upgrade path
         (party_upgrade_with_xp, ":guard_party", 6000, ":path"),
       (try_end),
-      # (store_random_in_range, ":reinforcement_waves", 50, 60), #average about 8 troops per reinf
-      # (try_for_range, ":unused", 0, ":reinforcement_waves"),
-        # (call_script, "script_cf_reinforce_party", ":guard_party"),
-      # (try_end),
-      
-        # (str_store_party_name, s5, ":destination"),
-        # (display_message, "@host attacking {s5}"),
         
     (assign, reg0, ":guard_party"), #should be already reg0 from spawning, just to be sure
      ]),
