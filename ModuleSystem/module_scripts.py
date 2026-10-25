@@ -29698,6 +29698,7 @@ command_cursor_scripts = [
     (remove_member_from_party, trp_gimli, "p_advcamp_gondor"),
     
     #disable scripted mode
+    (assign, "$g_recalculate_ais", theater_SE),
     (assign, ":lords_killed", 0),
     (troop_get_slot, ":mouth_party", "trp_mordor_lord", slot_troop_leaded_party),
     (faction_set_slot, "fac_mordor", slot_faction_marshall, "trp_mordor_lord"), #activate mouth so we can take an oath of vengeance against him
@@ -29716,7 +29717,12 @@ command_cursor_scripts = [
         (try_begin),
             (troop_get_slot, ":lord_party", ":lord", slot_troop_leaded_party),
             (gt, ":lord_party", 0),
-            (party_set_ai_initiative, ":lord_party", 100),
+            (party_is_active, ":lord_party"),
+            (party_slot_eq, ":lord_party", slot_party_type, spt_kingdom_hero_party),
+            (party_set_ai_initiative, ":lord_party",100),
+            (call_script, "script_cf_select_random_walled_center_with_faction_and_owner_priority_no_siege", ":lord_faction", ":lord"),
+            (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
+            (call_script, "script_party_set_ai_state", ":lord_party", spai_holding_center, reg0),
         (try_end),
         
         (neq, ":lord", "trp_knight_1_3"), #not Imrahil
@@ -29724,14 +29730,6 @@ command_cursor_scripts = [
         (lt, ":lords_killed", 3),
         (quest_slot_eq, "qst_morannon_quest", slot_quest_current_state, 0), #player didn't help
         (troop_slot_eq, ":lord", slot_troop_death_chance_modifier, 999), #predefined
-        #(troop_slot_eq, ":lord", slot_troop_leaded_party, -1),
-        # (troop_get_slot, ":day_of_defeat", ":lord", slot_troop_respawn_timer),
-        # (val_sub, ":cur_day", 1),
-        # (ge, ":day_of_defeat", ":cur_day"), #only kill lords that have been defeated yesterday or today
-        (display_message, "@ {s22} qualified"),
-        
-        # (store_random_in_range, ":rand", 0, 10),
-        # (lt, ":rand", 3),
         (val_add, ":lords_killed", 1),
         (gt, ":mouth_party", 0),
         (call_script, "script_hero_leader_killed_abstractly", ":lord",":mouth_party"),
@@ -29743,7 +29741,7 @@ command_cursor_scripts = [
     (store_current_day, ":cur_day"),
     (store_random_in_range, ":waiting_time", 5, 10),
     (val_add, ":cur_day", ":waiting_time"),
-    (quest_set_slot, "qst_morannon_quest", slot_quest_expiration_days, ":cur_day"), #player didn't help
+    (quest_set_slot, "qst_morannon_quest", slot_quest_expiration_days, ":cur_day"), #use this timer for Legolas and Gimli rejoining their factions
 ]),
 ]
 

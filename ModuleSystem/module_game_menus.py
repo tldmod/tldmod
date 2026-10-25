@@ -14215,7 +14215,7 @@ All faithful commanders of the west are summoned to join them there, to strike f
     
     #faction AI
     (store_current_hours, ":cur_hours"),
-    (val_add, ":cur_hours", 24*5), #5 days no AI recalc for all southern facions
+    (val_add, ":cur_hours", 24*5), #5 days no AI recalc for all southern faczions
     (try_for_range, ":lord", heroes_begin, heroes_end),
         (store_troop_faction, ":lord_faction", ":lord"),
         (faction_slot_eq, ":lord_faction", slot_faction_active_theater, theater_SE),
