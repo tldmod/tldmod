@@ -8773,6 +8773,8 @@ scripts = [
                     (store_sub, ":min_amount", ":player_level", ":upgrade_level"),
                     (val_div, ":min_amount", 2),
                     (val_max, ":min_amount", 1),
+                    (val_max, ":max_amount", ":min_amount"),
+                    (val_add, ":max_amount", 1),
                     (store_random_in_range, ":quest_target_amount", ":min_amount", ":max_amount"),
                 (try_end),
 
@@ -25241,7 +25243,7 @@ scripts = [
 	(position_get_x,":min_x",pos1),(position_get_y,":min_y",pos1),
 	(position_get_x,":max_x",pos2),(position_get_y,":max_y",pos2),
 	(val_add, ":min_x", 100),(val_sub, ":max_x", 100),
-	(val_add, ":min_y", 100),(val_sub, ":min_y", 100),
+	(val_add, ":min_y", 100),(val_sub, ":max_y", 100),
 	(store_random_in_range, ":x", ":min_x", ":max_x"),
 	(store_random_in_range, ":y", ":min_y", ":max_y"),
 	(init_position, pos10),

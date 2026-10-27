@@ -41,7 +41,9 @@ mission_templates_cutscenes = [
      (1,mtef_visitor_source|mtef_team_2,0,0,1,[]),
     ], fade_cutscene+
     [
-    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu, "mnu_auto_intro_gondor"),]),
+    (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu, "mnu_auto_intro_gondor"),
+           (assign, "$current_town", "p_town_minas_tirith"), #fixes banners in MT
+           (assign, "$g_encountered_party", "p_town_minas_tirith"), ]),
     
     (ti_before_mission_start, 0, 0, [],
       [ #remove cabbage guard spawn points
@@ -224,6 +226,8 @@ mission_templates_cutscenes = [
            (val_add, "$g_tld_intro_state", 1),
            #chain to next intro mission
            (jump_to_menu, "mnu_auto_intro_gondor"), #GA: Minas Tirith causes crashes for many people
+           (assign, "$current_town", "p_town_minas_tirith"), #fixes banners in MT
+           (assign, "$g_encountered_party", "p_town_minas_tirith"), 
          (try_end),
          ], []),
     ],
@@ -248,7 +252,7 @@ mission_templates_cutscenes = [
     (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu, "mnu_auto_intro_mordor"),]),
 
     ### TOWN CENTER TRIGGERS
-            
+    (ti_before_mission_start,  0, 0, [], [(call_script, "script_change_banners_and_chest")]),
             
     (1, 0, ti_once, [],[(call_script, "script_init_town_walker_agents"),]),
     (3, 0, 0, [(call_script, "script_tick_town_walkers")], []),

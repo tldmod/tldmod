@@ -3840,6 +3840,13 @@ simple_triggers = [
             (this_or_next|is_between, ":lord_candidate", companions_begin, companions_end),
             (is_between, ":lord_candidate", new_companions_begin, new_companions_end),
             (store_troop_faction, ":candidate_faction", ":lord_candidate"),
+            
+            (try_begin), #disloyal companions of the player's side don't get promoted
+                (store_relation, ":rel", ":candidate_faction", "$players_kingdom"),
+                (gt, ":rel", 0),
+                (troop_slot_eq, ":lord_candidate", slot_troop_faction_loyalty, faction_loyalty_disloyal),
+                (assign, ":candidate_faction", 0),
+            (try_end),
             (eq, ":candidate_faction", ":faction"),
 
             # Troops must have leadership skill, not be in player's party, and not be dead

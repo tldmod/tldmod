@@ -13884,7 +13884,7 @@ game_menus = [
         (set_jump_mission, "mt_hunt_beast"),
         (set_battle_advantage, 0),
         (set_party_battle_mode),
-        (assign,"$number_of_combatants",5), #use a big scene
+        (assign,"$number_of_combatants",100), #use a big scene
         (call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"),
         (modify_visitors_at_site, reg0),
         (reset_visitors),

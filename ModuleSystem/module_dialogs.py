@@ -140,6 +140,12 @@ dialogs = [
              (else_try),               (agent_set_animation, "$current_player_agent", "anim_lean_from_camera_mounted"),
             (try_end),
           (try_end),
+          #TLD Kham - If troll, bend.
+          (try_begin),
+              (troop_get_type, ":is_troll", "$g_talk_troop"),
+              (eq, ":is_troll", tf_troll),
+              (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"),
+          (try_end),
           (eq, 1, 0)],
 "{!}Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
 

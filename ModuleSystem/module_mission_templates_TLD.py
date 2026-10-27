@@ -3208,7 +3208,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         (ge, ":agents_hit", 1),
         (assign, ":enemy_agent", 0),
       (else_try),
-        (lt, ":attack_range", 120),
+        (le, ":attack_range", 120),
         (ge, ":agents_hit", 3),
         (assign, ":enemy_agent", 0),
       (try_end),
