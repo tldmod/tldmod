@@ -3189,7 +3189,7 @@ troops = [
 
 # Gandalf and Nazgul for conversations
 ["gandalf","Gandalf","{!}Home-grown Gandalves",tf_hero| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
-   [itm_mearas_reward,itm_whiterobe,itm_civ_fine_shoes,itm_riv_bas_sword,itm_gandstaff_shield, itm_gandstaff],
+   [itm_mearas_reward,itm_whiterobe,itm_civ_fine_shoes, (itm_riv_riding_sword, imod_champion),itm_gandstaff_shield, itm_gandstaff],
       attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10|knows_shield_10,0x0000000fc000234721419ab9eeafbeff00000000001d89110000000000000000],
 ["nazgul","Nazgul","{!}Domesticated Nazgul",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_commoners,
    [itm_uruk_greaves,itm_evil_gauntlets_a,itm_nazgulrobe,itm_empty_head,itm_nazgul_sword,itm_mordor_warhorse2,],
@@ -3557,7 +3557,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 ["ac5_camel_rider","Harad_Camel_Rider","Harad_Camel_Riders",tf_harad| tfg_ranged| tf_mounted| tfg_armor| tfg_helm| tfg_horse|tfg_gloves| tfg_boots,0,0,fac_harad,[itm_black_snake_helm,itm_harad_heavy_inf_helm,itm_black_snake_armor,itm_leather_gloves,itm_harad_leather_greaves,itm_harad_javelin_big,itm_harad_javelin_big,itm_far_harad_2h_mace,itm_harad_long_spear,itm_camel],attr_evil_tier_5,wp_tier_5,knows_common|knows_ironflesh_6|knows_power_strike_4|knows_power_throw_7|knows_riding_7|knows_horse_archery_8 ,haradrim_face_1,haradrim_face_2],
 
 ["aragorn","Aragorn","{!}",tf_hero| tf_dunedain| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_imladris,
-   [itm_leather_boots,itm_leather_gloves,itm_arnor_light_b_good_cloak,itm_riv_bas_sword,],
+   [itm_leather_boots,itm_leather_gloves,itm_arnor_light_b_good_cloak,(itm_arnor_sword_c, imod_champion),],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_riding_5|knows_persuasion_7|knows_power_draw_4,0x00000002bf00114f269c66a89466598b00000000001d42db0000000000000000],
       
 ["legolas","Legolas","{!}",tf_hero| tf_woodelf| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_woodelf,
@@ -3566,7 +3566,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
       
 ["gimli","Gimli","{!}",tf_hero| tf_dwarf| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
    [itm_dwarf_vest_b,itm_dwarf_chain_boots,itm_leather_gloves,itm_dwarf_throwing_axe,itm_dwarf_great_axe,itm_rohan_shield_g,itm_dwarf_throwing_axe,],
-      attr_dwarf_tier_6,wp_dwarf_tier_6,knows_riding_10|knows_persuasion_3|knight_skills_5|knows_riding_4,0x00000009cc004182254c6a57e6b2656d00000000001f689e0000000000000000],
+      attr_dwarf_tier_6,wp_dwarf_tier_6,knight_skills_5|knows_riding_10|knows_persuasion_3,0x00000009cc004182254c6a57e6b2656d00000000001f689e0000000000000000],
 
 ["unused_fog_color","{!}BUG","{!}BUG",0,0,0,fac_commoners,[],0,0,0,0], #unused; previously used for storing fog color string in name
 
