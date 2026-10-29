@@ -13312,10 +13312,11 @@ game_menus = [
  ],
  [
 	("continue",[],"Continue...",
-	[
+	[(party_stack_get_troop_id, ":ambush_troop", "$g_encountered_party", 0),
     (try_begin),
-        (eq, "$players_kingdom", fac_beorn),
-        (eq, reg20, "trp_bear"),
+        (eq, ":ambush_troop", "trp_bear"),
+        (this_or_next|eq, "$players_kingdom", fac_beorn),
+        (main_party_has_troop, "trp_npc17"), #Dimborn
         (jump_to_menu, "mnu_beorn_bear_encounter"),
     (else_try),
         (set_party_battle_mode),
