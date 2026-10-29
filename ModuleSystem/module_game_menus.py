@@ -190,7 +190,7 @@ game_menus = [
             (eq, "$tld_campaign_diffulty", 0),  (assign, "$tld_volunteers_multi", 60), (assign, "$tld_host_size_multi", 200), (assign, "$tld_ally_str_income_multi", 80), (assign, "$tld_victory_str_multi", 50), (assign, "$tld_player_fac_init_strength_multi", 60),
         (try_end),
         #initial volunteers
-        (try_for_range, ":center_no", centers_begin, centers_end),
+        (try_for_range, ":center_no", centers_begin, p_advcamp_gondor), #exclude advance camps
             (store_faction_of_party, ":fac", ":center_no"), # friendly towns only
             (store_relation, ":rel", ":fac", "$players_kingdom"),
             (ge, ":rel", 0),
@@ -201,6 +201,14 @@ game_menus = [
             (party_add_template, ":volunteers", ":recruit_template"),
         (try_end),
         (try_begin),
+            (eq, "$lore_mode", 1),
+            (troop_set_slot, "trp_rohan_lord", slot_troop_lord_state, stls_passive),
+            (faction_set_slot, "fac_rohan", slot_faction_marshall, "trp_knight_1_9"),
+            (party_set_slot, "p_town_morannon", slot_center_siegability, tld_siegable_never),
+            (party_set_slot, "p_town_isengard", slot_center_siegability, tld_siegable_never),
+        (try_end),
+        
+        (try_begin),
             (eq, "$cheat_mode", 1),
             (change_screen_map),
         (else_try),
@@ -209,13 +217,31 @@ game_menus = [
        ]),
 	  ("spacer",[],"{!}_",[]),
 
-	("change_war_start_mode",[(try_begin),(eq, "$tld_start_war_by_day_or_level", 0),(str_store_string, s7, "@BY LEVEL / by day"), 
-								 (else_try),(str_store_string, s7, "@by level / BY DAY"),(try_end),
+	("change_war_start_mode",[
+            (try_begin),(eq, "$tld_start_war_by_day_or_level", 0),(str_store_string, s7, "@BY LEVEL / by day"), (else_try),(str_store_string, s7, "@by level / BY DAY"),(try_end),
+            (str_store_string, s11, "@War start mode can only be set at game start; ^see options to adjust level or date."),
+            (set_tooltip_text, s11),
 	    ],"War Starts:  {s7}",[
-	    (store_sub,"$tld_start_war_by_day_or_level",1,"$tld_start_war_by_day_or_level"),(val_clamp,"$tld_start_war_by_day_or_level",0,2),(jump_to_menu, "mnu_start_phase_2"),(display_message, "@War start mode can only be set at game start; see options to adjust level or date."),]), 
+	    (store_sub,"$tld_start_war_by_day_or_level",1,"$tld_start_war_by_day_or_level"),(val_clamp,"$tld_start_war_by_day_or_level",0,2),(jump_to_menu, "mnu_start_phase_2"),
+        (display_message, s11),]), 
 
-	("toggle_tutorial",[(try_begin),(eq, "$tld_show_tutorials", 0),(str_store_string, s7, "@ON"), 
-								 (else_try),(str_store_string, s7, "@OFF"),(display_message, "@If you are new to TLD, tutorial messages are recommended"),(try_end),
+      ("lore_events_switch",[
+            (try_begin),(eq,"$lore_mode",0),(str_store_string, s7, "@OFF"), (else_try),(str_store_string, s7, "@ON"),(try_end),
+            (str_store_string, s12, "@Lore events can alter the course of your campaign. ^More lore events may be added in the future. ^If you prefer a classic TLD experience, you can turn them off. Can only be set at game start."),
+            (set_tooltip_text, s12),],
+        "Lore events:  {s7}",[
+        (store_sub, "$lore_mode", 1, "$lore_mode"),
+        (val_clamp, "$lore_mode", 0, 2),
+        (display_message, s12),
+        (jump_to_menu, "mnu_start_phase_2"),
+        ]),
+
+	("toggle_tutorial",[
+            (str_store_string, s13, "@If you are new to TLD, tutorial messages are recommended"),
+            (set_tooltip_text, s13),
+            (try_begin),(eq, "$tld_show_tutorials", 0),(str_store_string, s7, "@ON"), 
+            (else_try),(str_store_string, s7, "@OFF"), (display_message, s13),
+            (try_end),
 	    ],"Pop-Up Tutorials:  {s7}",[
 	    (store_sub,"$tld_show_tutorials",1,"$tld_show_tutorials"),(val_clamp,"$tld_show_tutorials",0,2),(jump_to_menu, "mnu_start_phase_2"),]), 
 	  
@@ -225,17 +251,7 @@ game_menus = [
 	  ("change_tld_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options")]),
 	  ]) + [
 
-        ##InVain: Disabled for now. We enable the switch when a few more events have been added
-      # ("lore_events_switch",[(try_begin),(eq,"$lore_mode",0),(str_store_string, s7, "@OFF"),
-									# (else_try),(str_store_string, s7, "@ON"),(try_end),],
-        # "Lore events:  {s7}",[
-        # (store_sub, "$lore_mode", 1, "$lore_mode"),
-        # (val_clamp, "$lore_mode", 0, 2),
-        # (jump_to_menu, "mnu_start_phase_2"),
-        # (display_message, "@Lore events can alter the course of your campaign. More lore events may be added in the future. If you prefer a classic TLD experience, you can turn them off. Can only be changed at game start."),
-        # ]),
-
-      ("see_info_pages",[],"TLD game concepts.",[(change_screen_notes, 5, 5),]),
+      #("see_info_pages",[],"TLD game concepts.",[(change_screen_notes, 5, 5),]),
 
 	  ("spacer",[],"{!}_",[]),
 	]+concatenate_scripts([[
