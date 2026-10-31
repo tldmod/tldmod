@@ -4395,6 +4395,8 @@ mission_templates = [ # not used in game
         (store_sub, reg4, ":counter_1", 1),
         (display_message, "@{reg5} {reg4?troops:troop} rallied to your side due to your Charisma."),
         (assign, "$player_team_updated", 1),
+        (store_mul, ":xp_amount", 50),
+        (add_xp_as_reward, ":xp_amount"),
     (try_end),
     (try_begin),
         (ge, ":counter_2", 1),

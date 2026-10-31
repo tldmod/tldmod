@@ -3053,6 +3053,7 @@ simple_triggers = [
         (faction_slot_eq, ":faction", slot_faction_state, sfs_active),
         (faction_get_slot,":strength",":faction",slot_faction_strength),
         (ge, ":strength", 1), #additional check for above
+        (call_script, "script_update_faction_notes", ":faction"),
         (faction_get_slot,":strength_new",":faction",slot_faction_strength_tmp),
         (faction_set_slot,":faction",slot_faction_strength,":strength_new"),
         #       (val_add,":strength",999),
@@ -3289,7 +3290,7 @@ simple_triggers = [
         (faction_get_slot, ":active_theater", ":faction", slot_faction_active_theater),
         (neg|faction_slot_eq, ":faction", slot_faction_home_theater, ":active_theater"), #not in home theater
         
-        (faction_get_slot, ":strength", ":faction", slot_faction_strength),
+        (faction_get_slot, ":strength", ":faction", slot_faction_strength_tmp),
         (gt, ":strength", 3000), #Kham- don't create adv camps when lower than 1500 #InVain -- fac_str_weak = 3000
         
         (faction_get_slot, ":adv_camp", ":faction", slot_faction_advance_camp),
@@ -3307,7 +3308,7 @@ simple_triggers = [
 		(lt, ":rand", ":strength"), #faction strength /300 is spawn chance
         #(lt, ":rand", 30), # 30% chance every 6 hours
         (val_sub, ":strength", 1000),
-        (faction_set_slot, ":faction", slot_faction_strength, ":strength"), #simulate effort of establishing an advance camp (hopefully slows down steamrolling)
+        (faction_set_slot, ":faction", slot_faction_strength_tmp, ":strength"), #simulate effort of establishing an advance camp (hopefully slows down steamrolling)
         
         # set up the advance camp
         (party_set_slot, ":adv_camp", slot_center_theater, ":active_theater"),
