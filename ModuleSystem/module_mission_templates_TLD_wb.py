@@ -4192,6 +4192,18 @@ tld_animals_join_battle =(
         (assign, ":ambush_troop", "trp_bear"),
         (assign, ":side", faction_side_good),
         (val_div, ":ambush_count", 80),
+	(else_try), #ents
+		(eq|this_or_next, "$current_player_region", region_fangorn),
+        (eq|this_or_next, "$current_player_region", region_the_wold),
+        (eq|this_or_next, "$current_player_region", region_celebrant),
+        (eq|this_or_next, "$current_player_region", region_entwash),
+        (eq, "$current_player_region", region_east_emnet),
+        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 2), #if you helped ents in Isengard quest
+		(store_random_in_range, ":rnd", 0, 100),
+        (lt, ":rnd", 40),
+        (assign, ":ambush_troop", "trp_ent"),
+        (assign, ":side", faction_side_good),
+        (val_div, ":ambush_count", 80),
     (else_try), #trolls and wolves
         (eq|this_or_next, "$current_player_region", region_the_wold),
         (eq|this_or_next, "$current_player_region", region_n_undeep),
