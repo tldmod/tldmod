@@ -3867,15 +3867,29 @@ game_menus = [
     #("enable_kham_cheat",[],"{!}Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@{!}Kham Cheat Mode ON!")]),
     ] + (is_a_wb_menu==1 and [
     #("action_view_all_items",[],"{!}View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
-    ("show_bandit_spawns",[],"{!}show_bandit_spawns",[
-        (try_for_range, ":party", "p_looter_spawn_point", "p_gondor_test"),
-            (enable_party, ":party"),
-            (party_set_icon, ":party", icon_camp),
-            (party_set_flags, ":party", pf_always_visible, 1),
+     ("dimborn_bear_level",[],"{!}level dimborn trait",[
+        (try_begin), #Dimborn trait
+            (main_party_has_troop, "trp_npc17"),
+            (store_character_level, ":dimborn_level", "trp_npc17"),
+            (ge, ":dimborn_level", 7),
+            (troop_get_slot, ":dimborn_bear", "trp_npc17", slot_troop_state), #re-use slot
+            (neq, ":dimborn_bear", -1), #slot=-1 means search forbidden
+            (neq, ":dimborn_bear", 1000), #slot=1000 means trait active
+            (val_add, ":dimborn_bear", 2),
+            (troop_set_slot, "trp_npc17", slot_troop_state, ":dimborn_bear"),
+            (assign, reg78, ":dimborn_bear"),
+            (display_message, "@Dimborn bear: {reg78}"),
         (try_end),
-        (change_screen_map),
-        (display_message, "@{!}show all bandit spawners"),
         ]),
+    # ("show_bandit_spawns",[],"{!}show_bandit_spawns",[
+        # (try_for_range, ":party", "p_looter_spawn_point", "p_gondor_test"),
+            # (enable_party, ":party"),
+            # (party_set_icon, ":party", icon_camp),
+            # (party_set_flags, ":party", pf_always_visible, 1),
+        # (try_end),
+        # (change_screen_map),
+        # (display_message, "@{!}show all bandit spawners"),
+        # ]),
    ("set_item_modifier",[],"{!}set all wielded items to modifier",[
         (jump_to_menu, "mnu_set_imod"),(str_store_string, s1, "@{!}none"),(assign, reg5, 0),]),
     ("rohan_set_marshall",[],"{!}Activate Theoden", [
@@ -13315,6 +13329,8 @@ game_menus = [
 	[(party_stack_get_troop_id, ":ambush_troop", "$g_encountered_party", 0),
     (try_begin),
         (eq, ":ambush_troop", "trp_bear"),
+        (party_get_skill_level, ":wildcraft", "p_main_party", "skl_persuasion"),
+        (ge, ":wildcraft", 3),
         (this_or_next|eq, "$players_kingdom", fac_beorn),
         (main_party_has_troop, "trp_npc17"), #Dimborn
         (jump_to_menu, "mnu_beorn_bear_encounter"),
@@ -13457,6 +13473,23 @@ game_menus = [
    "^^^As the bear approaches, you realize that it seems calm and doesn't appear threatening. Its small eyes study you with mild interest before it disappears into the undergrowth.",
     "none",
     [(set_background_mesh, "mesh_draw_bear"),
+    (try_begin),
+        (store_encountered_party, ":fake_party"),
+        (party_is_active),
+        (remove_party, ":fake_party"),
+    (try_end),
+    (try_begin), #Dimborn trait
+        (main_party_has_troop, "trp_npc17"),
+        (store_character_level, ":dimborn_level", "trp_npc17"),
+        (ge, ":dimborn_level", 7),
+        (troop_get_slot, ":dimborn_bear", "trp_npc17", slot_troop_state), #re-use slot
+        (neq, ":dimborn_bear", -1), #slot=-1 means search forbidden
+        (neq, ":dimborn_bear", 1000), #slot=1000 means trait active
+        (val_add, ":dimborn_bear", 2),
+        (troop_set_slot, "trp_npc17", slot_troop_state, ":dimborn_bear"),
+        (assign, reg78, ":dimborn_bear"),
+        (display_message, "@Dimborn bear: {reg78}"),
+    (try_end),
     (troop_get_slot, ":bear_kinship", "trp_traits", slot_trait_bear_shape),
     (neq, ":bear_kinship", 1), #slot=1 means trait active
     (val_add, ":bear_kinship", 2),

@@ -4283,21 +4283,23 @@ tld_animals_join_battle =(
     
     (try_begin), #bear trait
         (eq, ":ambush_troop", "trp_bear"),
+        (party_get_skill_level, ":wildcraft", "p_main_party", "skl_persuasion"),
+        (ge, ":wildcraft", 3),
+        (try_begin), #Dimborn trait
+            (main_party_has_troop, "trp_npc17"),
+            (store_character_level, ":dimborn_level", "trp_npc17"),
+            (ge, ":dimborn_level", 7),
+            (troop_get_slot, ":dimborn_bear", "trp_npc17", slot_troop_state), #re-use slot
+            (neq, ":dimborn_bear", -1), #slot=-1 means search forbidden
+            (neq, ":dimborn_bear", 1000), #slot=1000 means trait active
+            (val_add, ":dimborn_bear", 1),
+            (troop_set_slot, "trp_npc17", slot_troop_state, ":dimborn_bear"),
+        (try_end),
         (troop_get_slot, ":bear_kinship", "trp_traits", slot_trait_bear_shape),
         (neq, ":bear_kinship", 1), #slot=1 means trait active
         (val_add, ":bear_kinship", 2),
         (troop_set_slot, "trp_traits", slot_trait_bear_shape, ":bear_kinship"),
         #(call_script, "script_update_bear_kinship"),
-        # (try_begin), #Dimborn trait
-            # (main_party_has_troop, "trp_npc17"),
-            # (store_character_level, ":dimborn_level", "trp_npc17"),
-            # (ge, ":dimborn_level", 7),
-            # (troop_get_slot, ":dimborn_bear", "trp_npc17", slot_troop_wealth), #re-use slot
-            # (neq, ":dimborn_bear", -1), #slot=-1 means search forbidden
-            # (neq, ":dimborn_bear", 1000), #slot=1000 means trait active
-            # (val_add, ":dimborn_bear", 1),
-            # (troop_set_slot, "trp_npc17", slot_troop_wealth, ":bear_kinship"),
-        # (try_end),
     (try_end),
     
     #debug

@@ -24314,6 +24314,7 @@ scripts = [
         		(is_between, ":cur_troop", new_companions_begin, new_companions_end),
                 (troop_slot_eq, ":cur_troop", slot_troop_cur_center, "$current_town"),
                 (neg|main_party_has_troop, ":cur_troop"), #not already hired
+                (neg|troop_slot_eq, ":cur_troop", slot_troop_state, 400), #dimborn
                 (assign, ":on_lease", 0),
                 (try_begin),
                     (check_quest_active,"qst_lend_companion"),

@@ -1431,7 +1431,7 @@ items =[
 ["feet_chains_dwarf","Feet Chains",[("chains_full_dwarf",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 
 ["spider","Spider",[("spider",0)], itp_type_horse|itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(60)|body_armor(30)|difficulty(10)|horse_speed(30)|horse_maneuver(75)|horse_charge(12)|horse_scale(60),imodbits_none,[]],
-["bear","Bear",    [("bear_2",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(60)|horse_speed(40)|horse_maneuver(60)|horse_charge(55)|horse_scale(110)|difficulty(10),imodbits_none,[]],
+["bear","Bear",    [("bear_2",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(60)|horse_speed(40)|horse_maneuver(60)|horse_charge(55)|horse_scale(90)|difficulty(10),imodbits_none,[]],
 ["wolf","Wolf",    [("wolf",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(25)|horse_maneuver(75)|horse_charge(1)|horse_scale(85)|difficulty(10),imodbits_none,[]],
 ["werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(60)|horse_speed(40)|horse_maneuver(70)|horse_charge(35)|horse_scale(100)|difficulty(10),imodbits_none,[]],
 
@@ -1575,7 +1575,7 @@ if wb_compile_switch==1:
 
 #non-ridable animals
 ["animal_spider",  "{!}Spider",   [("spider_black",0)], itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(60)|horse_speed(3)|horse_maneuver(75)|horse_scale(4)|difficulty(10),imodbits_none,[]],
-["animal_bear",    "{!}Bear",     [("bear_2",0)],       itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(130)|horse_speed(5)|horse_maneuver(48)|horse_scale(120)|difficulty(10),imodbits_none,[]],
+["animal_bear",    "{!}Bear",     [("bear_2",0)],       itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(130)|horse_speed(5)|horse_maneuver(48)|horse_scale(100)|difficulty(10),imodbits_none,[]],
 ["animal_wolf",    "{!}Wolf",     [("wolf",0)],         itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(5)|horse_maneuver(50)|horse_scale(85),imodbits_none,[]],
 ["animal_werewolf","{!}Werewolf", [("mm_warg_a",0)],    itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(130)|horse_speed(6)|horse_maneuver(60)|horse_scale(100)|difficulty(10),imodbits_none,[]],
 ["animal_dog",     "{!}Dog",      [("wolf_dog",0)],     itp_type_animal|itp_disable_agent_sounds, 0, 1200, hit_points(50)|horse_speed(13)|horse_maneuver(50)|horse_charge(25)|horse_scale(55),imodbits_none,[]],

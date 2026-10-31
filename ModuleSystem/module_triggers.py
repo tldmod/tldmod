@@ -1753,9 +1753,7 @@ triggers = [
         # special case as we store value related to chance of getting it in the slot itslef
         (neg|troop_slot_eq, "trp_traits", slot_trait_bear_shape, 1),
         (troop_get_slot, ":chance", "trp_traits", slot_trait_bear_shape),
-        (val_sub, ":chance", 5),
-        (ge, ":chance", 0), 
-        (val_add, ":chance", 5), 
+        (ge, ":chance", 10),
         (store_random_in_range, ":rnd", 0, 100),
         (le, ":rnd", ":chance"),
         (call_script, "script_cf_gain_trait_bear_shape"),

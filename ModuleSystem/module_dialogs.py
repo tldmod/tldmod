@@ -1825,66 +1825,112 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 # Dimborn Event
 
-[anyone, "event_triggered", [
+[trp_npc17, "event_triggered", [
                     (eq, "$g_talk_troop", "trp_npc17"), #Dimborn
                     (eq, "$talk_context", tc_starting_quest), 
-                    (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth),
+                    (troop_get_slot, ":score", "trp_npc17", slot_troop_state),
                     (is_between, ":score", 10, 100), #first encounter
                     (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
                     (str_store_string, s5, ":honorific"),
                      ],
-  "{s5}, did you not notice that marvellous wild beast that graciously lent us its aid in that last battle? I cannot stop thinking about it.", "dimborn_ask_bear", []],
+  "Hey, {s5}. Did you see it? The big bear, in the fight. It came out of the trees and helped us. Very big. Very strong. And it moved so quiet, like a tree would move, if trees moved. I cannot stop thinking about it.", "dimborn_ask_bear", []],
 
-[anyone, "event_triggered", [
+[trp_npc17, "event_triggered", [
                     (eq, "$g_talk_troop", "trp_npc17"), #Dimborn
                     (eq, "$talk_context", tc_starting_quest), 
-                    (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth),
+                    (troop_get_slot, ":score", "trp_npc17", slot_troop_state),
                     (is_between, ":score", 100, 300), #second or third encounter
                     (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
                     (str_store_string, s5, ":honorific"),
                     (str_clear, s10),
-                    (ge, ":score", 200),
-                    (str_store_string, s10, "@I feel that this may be my last chance.")
+                    (try_begin),
+                        (ge, ":score", 200),
+                        (str_store_string, s10, "@Bears do not stay in one place. Maybe this is my last chance."),
+                    (try_end),
                      ],
-  "{s5}, there it was again, that great bear whom I recognise as my kin. I must find it! {s10}", "dimborn_ask_bear", []],
+  "{s5}, it was there again! The big bear, between the trees. I know it now. It is my kin, I can feel it. I must find it! {s10}", "dimborn_ask_bear", []],
 
 [trp_npc17, "dimborn_ask_bear", [
                      ],
-  "{playername}, please grant me leave so I may search for that bear.", "dimborn_ask_bear_response", []],
+  "Umm. {playername}. I would like to go and look for the bear. Only for some time. Please, can I go?", "dimborn_ask_bear_response", []],
 
 [anyone|plyr, "dimborn_ask_bear_response", [],
   "I grant you leave. Good luck on your quest.", "dimborn_ask_bear_leave", []],
 
 [anyone|plyr, "dimborn_ask_bear_response", [
-                    (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth),
+                    (troop_get_slot, ":score", "trp_npc17", slot_troop_state),
                     (is_between, ":score", 0, 200), #first or second encounter
                     ],
   "I am sorry, but I can't give you leave at the moment.", "dimborn_ask_bear_wait", []],
   
 [anyone|plyr, "dimborn_ask_bear_response", [
-                    (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth),
+                    (troop_get_slot, ":score", "trp_npc17", slot_troop_state),
                     (gt, ":score", 100), #second encounter
                     ],
   "Don't trouble me with this ever again.", "dimborn_ask_bear_forbidden", []],
 
-[trp_npc17, "dimborn_ask_bear_leave", [
-                     ],
-  "Thank you, {playername}. I will be away for some time. When I have fullfilled my quest, I will find you again, if you are somewhere in the Northern Valley of Anduin.", "dimborn_ask_bear_response", [(change_screen_map),]],
+[trp_npc17, "dimborn_ask_bear_leave", [ ],
+  "Thank you, {playername}! Thank you. I go to the woods now, the ones I know. The bear will not come quick, bears are shy, but I am patient. I am good with waiting. When I am done, I find you again. Just be somewhere in the Northern Valley of Anduin, near the woods.", "close_window", [(change_screen_map),(store_current_day, ":day"),
+    (store_random_in_range, ":duration", 7, 15), 
+    (val_add, ":day", ":duration"),
+    (assign, reg78, ":day"),
+    (display_message, "@dimborn will come back on day {reg78}"),
+    (troop_set_slot, "trp_npc17", slot_troop_respawn_timer, ":day"),
+    (troop_set_slot, "trp_npc17", slot_troop_state, 400),
+    (remove_member_from_party, "trp_npc17", "p_main_party"),]],
   
 [trp_npc17, "dimborn_ask_bear_wait", [
-                    (troop_get_slot, ":score", "trp_npc17", slot_troop_wealth),
+                    (troop_get_slot, ":score", "trp_npc17", slot_troop_state),
                     (val_div, ":score", 100),
                     (val_add, ":score", 1),
                     (val_mul, ":score", 100), #move score to next encounter
-                    (troop_set_slot, "trp_npc17", slot_troop_wealth, ":score"),
+                    (troop_set_slot, "trp_npc17", slot_troop_state, ":score"),
                      ],
-  "I understand. I hope that I may see that bear again some day.", "dimborn_ask_bear_response", [(change_screen_map),]],
+  "Yes, chief. Is all right. Many things to do, I know. The bear will still be there. Maybe. I hope I see it again one day.", "close_window", [(change_screen_map),]],
   
 [trp_npc17, "dimborn_ask_bear_forbidden", [
-                    (troop_set_slot, "trp_npc17", slot_troop_wealth, -1), #never again
+                    (troop_set_slot, "trp_npc17", slot_troop_state, -1), #never again
                      ],
-  "I am sorry that you are so averse to nature. I will not bother you with this again.", "dimborn_ask_bear_response", [(change_screen_map),]],
-  
+  "Oh. Hmm. Is all right. I do not ask again, I promise. I just hope the bear is well. And I still have trees. Trees stay.", "close_window", [(change_screen_map),]],
+
+# Dimborn Returns With The Bear
+
+[anyone, "event_triggered", [
+                    (eq, "$g_talk_troop", "trp_npc17"),
+                    (eq, "$talk_context", tc_starting_quest),
+                    (troop_slot_eq, "trp_npc17", slot_troop_state, 400), #Dimborn is on his bear mission
+                    (neg|main_party_has_troop, "trp_npc17"),
+                    (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
+                    (str_store_string, s5, ":honorific"),
+                     ],
+
+  "{s5}! {s5}, I found it! The bear. It was in the woods at home, by the old oaks, like I thought. First it was shy. Then it was not. We sat together a long time, no talking. Now it knows me. It is behind me, there. Do not worry, it is friendly. Mostly.", "dimborn_return_response", []],
+
+[anyone|plyr, "dimborn_return_response", [(hero_can_join, "p_main_party")],
+  "Welcome back, Dimborn! I am glad you found your friend. You are both welcome in my company.", "dimborn_return_join", []],
+
+[anyone|plyr, "dimborn_return_response", [],
+  "Welcome back, Dimborn. But I can't take on anyone else right now.", "dimborn_return_full", []],
+
+[trp_npc17, "dimborn_return_join", [],
+  "Thank you, {playername}. Thank you. When there is a fight, the bear will come to my side. It knows who is friend and who is not. Better than a shield. Not better than a tree, but better than a shield. Now we go. I am ready.", "close_window", [
+                    (call_script, "script_recruit_troop_as_companion", "$g_talk_troop"),
+                    (troop_set_slot, "trp_npc17", slot_troop_state, 1000), #bear companion is active
+                    (add_xp_to_troop, 3000, "trp_npc17"),
+                    (troop_raise_skill, "trp_npc17", "skl_persuasion", 2),
+                    (troop_get_slot, ":bear_kinship", "trp_traits", slot_trait_bear_shape),
+                    (neq, ":bear_kinship", 1), #slot=1 means trait active
+                    (val_add, ":bear_kinship", 16),
+                    (troop_set_slot, "trp_traits", slot_trait_bear_shape, ":bear_kinship"),
+                    (change_screen_map),
+                    ]],
+
+[trp_npc17, "dimborn_return_full", [],
+  "Oh. Yes. Is all right. We are big, the bear and me, I know. I stay near the trees and ask again soon. Please make some room.", "close_window", [(change_screen_map)]],
+
+
+
+
 # Ziggy's Werewolf Convo First / Second Time
 
 [anyone, "event_triggered", [
