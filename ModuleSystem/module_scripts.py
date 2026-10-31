@@ -13908,7 +13908,11 @@ scripts = [
     
     (try_begin),
         (eq, ":castle_scene", "scn_edoras_castle"),
-        (neg|faction_slot_eq, fac_rohan, slot_faction_marshall, "trp_rohan_lord"),
+        (troop_slot_eq, "trp_rohan_lord", slot_troop_lord_state, stls_passive),
+        (set_visitor, 9, "trp_grima"),
+    (else_try),
+        (eq, ":castle_scene", "scn_isengard_castle"),
+        (neg|troop_slot_eq, "trp_rohan_lord", slot_troop_lord_state, stls_passive),
         (set_visitor, 9, "trp_grima"),
     (try_end),
     

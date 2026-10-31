@@ -3132,11 +3132,12 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
   #[anyone|plyr ,"lord_invite_3", [],  "Yes, {s65}.", "lord_give_oath_2",  []],
   #[anyone|plyr ,"lord_invite_3", [],  "No, {s65}. I cannot serve you right now.", "lord_enter_service_reject",  []],
   
-[trp_rohan_lord ,"start", [ (neg|faction_slot_eq, fac_rohan, slot_faction_marshall, "$g_talk_troop"),
-                     (assign, "$g_talk_troop_met", 0),(start_mission_conversation, trp_grima),],
+[trp_rohan_lord ,"start", [ 
+                    (troop_slot_eq, "trp_rohan_lord", slot_troop_lord_state, stls_passive),
+                    (assign, "$g_talk_troop_met", 0),(start_mission_conversation, trp_grima),],
 "Mmmh...", "close_window", []],
 
-[trp_grima,"start", [], #for later use, need to place grima first
+[trp_grima,"start", [],
 "The lord is in deep thought and must not be disturbed!", "close_window",
                 [
                 (call_script,"script_stand_back"),

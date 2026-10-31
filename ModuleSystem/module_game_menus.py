@@ -217,6 +217,7 @@ game_menus = [
        ]),
 	  ("spacer",[],"{!}_",[]),
 
+	   ] + (is_a_wb_menu==1 and [
 	("change_war_start_mode",[
             (try_begin),(eq, "$tld_start_war_by_day_or_level", 0),(str_store_string, s7, "@BY LEVEL / by day"), (else_try),(str_store_string, s7, "@by level / BY DAY"),(try_end),
             (str_store_string, s11, "@War start mode can only be set at game start; ^see options to adjust level or date."),
@@ -245,7 +246,6 @@ game_menus = [
 	    ],"Pop-Up Tutorials:  {s7}",[
 	    (store_sub,"$tld_show_tutorials",1,"$tld_show_tutorials"),(val_clamp,"$tld_show_tutorials",0,2),(jump_to_menu, "mnu_start_phase_2"),]), 
 	  
-	   ] + (is_a_wb_menu==1 and [
 	  ("change_tld_options",[],"Change TLD options.",[(start_presentation, "prsnt_tld_mod_options")]),
 	  ] or [
 	  ("change_tld_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options")]),
@@ -14340,8 +14340,64 @@ All faithful commanders of the west are summoned to join them there, to strike f
         (change_screen_return),
         (call_script, "script_update_troop_notes", "trp_aragorn"), #needs to fire a escond time to update slots correctly
     ]),
-   	
 ]),
+
+ ("healing_of_theoden",0,
+   "^^^Word reaches you that Théoden, King of Rohan, has cast off the weariness of age and taken his sword once more in hand. Throughout the streets of Edoras the clash of shields and spears is heard, and a great cry is raised among the people: ^^Arise now, arise, Riders of Théoden! ^Dire deeds awake, dark is it eastward. ^Let horse be bridled, horn be sounded! ^Forth Eorlingas!",
+    "none",
+    [   
+        (call_script, "script_get_victory_mesh_per_troop", "trp_rohan_lord"),
+		(set_background_mesh, reg0),
+		(set_fixed_point_multiplier, 100),
+		(position_set_x, pos0, 65),
+		(position_set_y, pos0, 30),
+		(position_set_z, pos0, 100),
+		(set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "trp_rohan_lord", pos0),
+        (store_relation, ":rel", "fac_rohan", "$players_kingdom"),
+
+        (faction_get_slot, ":fac_strength", "fac_rohan", slot_faction_strength_tmp),
+        (val_add, ":fac_strength", 1500),
+        (faction_set_slot, "fac_rohan" ,slot_faction_strength_tmp,":fac_strength"), 
+        
+        (troop_set_slot, "trp_rohan_lord", slot_troop_lord_state, stls_default),
+        (faction_set_slot, "fac_rohan", slot_faction_marshall, "trp_rohan_lord"),
+        (try_begin),
+            (le, ":fac_strength", 3000),
+            (faction_get_slot,":fac_strength","fac_rohan",slot_faction_strength_tmp),
+            (val_add, ":fac_strength", 1000),
+            (faction_set_slot,"fac_rohan",slot_faction_strength_tmp,":fac_strength"),
+        (try_end),
+
+        (try_begin),
+            (lt, ":rel", 0),
+            (str_store_string, s4, "@Let the old king rouse his horsemen; they shall find their end on the field."), 
+            (assign, ":reinforcement", 60),
+        (else_try),
+            (str_store_string, s4, "@The Lord of the Mark will ride! Forth Eorlingas!"), 
+            (assign, ":reinforcement", 40),
+        (try_end),
+        
+        #give him a host
+        (try_begin),
+            (troop_get_slot, ":party", "trp_rohan_lord", slot_troop_leaded_party),
+            (gt,":party",0),
+            (party_is_active, ":party"),
+            (faction_get_slot, ":hosts", "fac_rohan", slot_faction_hosts),
+            (val_add, ":hosts", 1),
+            (faction_set_slot, "fac_rohan", slot_faction_hosts,":hosts"),
+            (str_store_troop_name, s5, "trp_rohan_lord"),
+            (party_set_name, ":party", "str_s5_s_host"),
+            (party_set_slot, ":party", slot_party_type, spt_kingdom_hero_party),
+            (party_set_slot, ":party", slot_party_victory_value, ws_host_vp*2), 
+            (try_for_range, ":unused", 0, ":reinforcement"),
+                (call_script, "script_hire_men_to_kingdom_hero_party", "trp_rohan_lord"),
+                (call_script, "script_upgrade_hero_party", ":party", 1000), 
+            (try_end),
+        (try_end),
+        ],
+   	[("healing_of_theoden_close", [], "{!}{s4}", [(change_screen_return)]),
+]),
+
 ] 
 
 ## quick scene chooser

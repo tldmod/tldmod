@@ -4182,15 +4182,9 @@ simple_triggers = [
         (try_begin), #Healing of Theoden
             (eq, "$lore_mode", 1),
             (eq, ":faction_no", fac_rohan),
-            (this_or_next|le, ":fac_strength", 3000),
-            (gt, ":fac_strength", 5000),
-            (neg|faction_slot_eq, fac_rohan, slot_faction_marshall, "trp_rohan_lord"),
-            (faction_set_slot, "fac_rohan", slot_faction_marshall, "trp_rohan_lord"), 
-            #(display_message, "@{!}Theoden activated"),
-            (le, ":fac_strength", 3000),
-            (faction_get_slot,":fac_strength","fac_rohan",slot_faction_strength_tmp),
-            (val_add, ":fac_strength", 1000),
-            (faction_set_slot,"fac_rohan",slot_faction_strength_tmp,":fac_strength"),       
+            (troop_slot_eq, "trp_rohan_lord", slot_troop_lord_state, stls_passive),
+            (neg|is_between, ":fac_strength", 3000, 5000), #Rohan starts at 4000
+            (jump_to_menu, "mnu_healing_of_theoden"),
         (try_end),
         
         (try_begin), #Isengard Last Stand
