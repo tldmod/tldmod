@@ -2072,8 +2072,8 @@ scene_props = [
 # trees, bushes and rocks props
 
 #Unused
-("tree0_yellow_flower_DONT_USE", 0, "yellow_flower", "0", []),
-("tree1_yellow_flower_DONT_USE", 0, "tree_e_2","bo_tree_e_2", []),
+("tree0_yellow_flower_DONT_USE", 0, "yellow_flower", "0", []), #linhir siege
+("tree1_yellow_flower_DONT_USE", 0, "tree_e_2","bo_tree_e_2", []), #pinnath gelin
 #("tree_seedy_plant_a", 0, "seedy_plant_a", "0", []),
 #("tree_ground_bush", 0, "ground_bush", "0", []),
 #("tree1_ground_bush", 0, "tree_e_2", "bo_tree_e_2", []),
@@ -2081,12 +2081,12 @@ scene_props = [
 #("tree1_bushes07_a", 0, "tree_e_1", "0", []),
 #("tree_bushes04_a", 0, "bushes04_a", "0", []),
 #("tree1_bushes04_a", 0, "tree_e_3", "0", []),
-("tree1_aspen_a_DONT_USE", 0, "aspen_a", "bo_aspen_a", []),
-("tree1_aspen_b_DONT_USE", 0, "aspen_b", "bo_aspen_b", []),
-("tree1_aspen_c_DONT_USE", 0, "aspen_c", "bo_aspen_c", []),
-("tree1_pine_1_a_DONT_USE", 0, "pine_1_a", "bo_pine_1_a", []),
+("elf_boat", 0, "elf_boat", "bo_elf_boat", []), 
+("tree1_aspen_b_DONT_USE", 0, "aspen_b", "bo_aspen_b", []), #unused
+("tree1_aspen_c_DONT_USE", 0, "aspen_c", "bo_aspen_c", []), #linhir siege
+("tree1_pine_1_a_DONT_USE", 0, "pine_1_a", "bo_pine_1_a", []), #scn_dale_village_battlefield_1
 ("tree1_pine_1_b_DONT_USE", 0, "pine_1_b", "bo_pine_1_b", []),
-("tree1_pine_2_a_DONT_USE", 0, "pine_2_a", "bo_pine_2_a", []),
+("tree1_pine_2_a_DONT_USE", 0, "pine_2_a", "bo_pine_2_a", []), #scn_dale_village_battlefield_1
 ("tree1_pine_3_a_DONT_USE", 0, "pine_3_a", "bo_pine_3_a", []),
 ("tree1_pine_4_a_DONT_USE", 0, "pine_4_a", "bo_pine_4_a", []),
 ("tree1_rock_c_DONT_USE", 0, "rock_c", "bo_rock_c", []),
