@@ -1898,16 +1898,6 @@ scripts = [
 	(troop_set_slot, "trp_knight_1_5",  slot_troop_banner_scene_prop, "spr_banner_ed"),  # blackroot vale
 	(troop_set_slot, "trp_knight_1_6",  slot_troop_banner_scene_prop, "spr_banner_eg"),  # pinnath gelin
 	(troop_set_slot, "trp_knight_1_8",  slot_troop_banner_scene_prop, "spr_banner_f21"), # lossarnach
-
-
-    #lord changes here first, so they only affect new games --> will be transferred into module_troops at a later point
-	] + (is_a_wb_script==1 and [
-
-    #name changes for implementing Theodred
-    #not needed anymore, all savegames should have updated by now
-    (troop_set_name, trp_knight_1_13, "@Grimbold"),
-    (troop_set_name, trp_knight_1_9, "@Theodred"),
-    (troop_set_name, trp_elder_hornburg, "@Gamling"),
     
     #Angbor and Orthalion - start as defensive resp. passive lords
     (troop_set_slot, "trp_knight_1_1", slot_troop_lord_state, stls_defensive),
@@ -1924,13 +1914,11 @@ scripts = [
     #individual death chances
     (troop_set_slot, "trp_knight_1_7", slot_troop_death_chance_modifier, 50),
     (troop_set_slot, "trp_knight_1_9", slot_troop_death_chance_modifier, 50),
-    (troop_set_slot, "trp_knight_1_14", slot_troop_death_chance_modifier, 50),
+    (troop_set_slot, "trp_knight_1_14", slot_troop_death_chance_modifier, 30),
     (troop_set_slot, "trp_knight_3_6", slot_troop_death_chance_modifier, 50),
     (troop_set_slot, "trp_knight_3_13", slot_troop_death_chance_modifier, 50),
     (troop_set_slot, "trp_knight_5_2", slot_troop_death_chance_modifier, 50),
     (troop_set_slot, "trp_knight_5_7", slot_troop_death_chance_modifier, 50),
-
-	] or []) + [    
 
 
 # fill center slots	
@@ -27155,6 +27143,12 @@ command_cursor_scripts = [
         (try_end),
     (try_end),
 
+    (try_begin), #fix siege delay for old savegames
+        (lt, "$savegame_version", 4510),
+        (assign, "$savegame_version", 4510),
+        (assign, "$tld_siege_delay", 1),
+    (try_end),
+
     (call_script, "script_assign_kingdom_companion_lords"),
     (call_script, "script_update_all_notes"),
     
@@ -30216,6 +30210,8 @@ if is_a_wb_script==1:
 			(agent_get_rider, ":agent", ":horse"),
 			(agent_is_active, ":agent"), 
 			(agent_get_troop_id, ":troop",":agent"),
+            (neg|is_between,  ":troop", "trp_spider", "trp_animals_end"), #not an animal; should be redundant because warg_gost_lance isn't couchable
+            (neg|is_between,  ":troop", warg_ghost_begin, warg_ghost_end),
 			(agent_get_wielded_item, ":wielded", ":agent", 0),
 			(try_begin),
 				(neg|troop_is_guarantee_ranged, ":troop"), # Not a horsearcher

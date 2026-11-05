@@ -4190,6 +4190,7 @@ simple_triggers = [
         
         (try_begin), #Isengard Last Stand
             (eq, "$lore_mode", 1),
+            (neg|check_quest_active, "qst_morannon_quest"),
             (eq, ":faction_no", fac_isengard),
             (store_character_level, ":player_level", "trp_player"),
             (ge, ":player_level", 15),
@@ -4200,6 +4201,7 @@ simple_triggers = [
             (neg|check_quest_active, qst_guardian_party_quest),
             (neg|check_quest_finished, qst_guardian_party_quest),
             (neg|check_quest_failed, qst_guardian_party_quest),
+            (neg|check_quest_active, "qst_guardian_party_quest"),
             (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0), #another check: This slot never resets, so it should make sure the quest can only be given once
             (eq, ":player_side", faction_side_good),
             (faction_slot_ge, fac_rohan, slot_faction_strength, fac_str_guardian), #Rohan still okay?
@@ -4208,13 +4210,12 @@ simple_triggers = [
             (call_script, "script_find_theater", "p_main_party"),
             (eq, reg0, theater_SW), #player in Rohan?
             (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_rohan_quest_start),
-        (try_end),
 
-        (try_begin), #Mordor Last Stand
+        (else_try), #Mordor Last Stand
             (eq, "$lore_mode", 1),
-            (eq, 0, 1), #disabled for now
             (neg|check_quest_active, "qst_morannon_quest"),
             (neg|check_quest_concluded, "qst_morannon_quest"),
+            (neg|check_quest_active, "qst_guardian_party_quest"),
             (quest_slot_eq, "qst_morannon_quest", slot_quest_current_state, 0),
             (eq, ":player_side", faction_side_good),
             (eq, ":faction_no", fac_mordor),

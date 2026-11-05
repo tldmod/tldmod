@@ -203,7 +203,7 @@ game_menus = [
         (try_begin),
             (eq, "$lore_mode", 1),
             (troop_set_slot, "trp_rohan_lord", slot_troop_lord_state, stls_passive),
-            (faction_set_slot, "fac_rohan", slot_faction_marshall, "trp_knight_1_9"),
+            (faction_set_slot, "fac_rohan", slot_faction_marshall, "trp_knight_1_14"),
             (party_set_slot, "p_town_morannon", slot_center_siegability, tld_siegable_never),
             (party_set_slot, "p_town_isengard", slot_center_siegability, tld_siegable_never),
         (try_end),
@@ -7949,6 +7949,9 @@ game_menus = [
           (troop_get_type, ":player_race", "trp_player"),
           (assign, ":quest_object_troop", "trp_aragorn"),
           (try_begin),
+            (neg|quest_slot_eq, "qst_morannon_quest", slot_quest_current_state, 0),
+            (assign, ":quest_object_troop", "trp_elder_hornburg"),
+          (else_try),
             (eq, ":player_race",  tf_dwarf), (assign, ":quest_object_troop", trp_gimli),
           (else_try),
             (is_between, ":player_race", tf_elf_begin, tf_elf_end),(assign, ":quest_object_troop", trp_legolas),
@@ -13934,7 +13937,7 @@ game_menus = [
         (set_jump_mission, "mt_hunt_beast"),
         (set_battle_advantage, 0),
         (set_party_battle_mode),
-        (assign,"$number_of_combatants",100), #use a big scene
+        (assign,"$number_of_combatants",5), #use a small scene
         (call_script, "script_jump_to_random_scene", "$current_player_region", "$current_player_terrain",  "$current_player_landmark"),
         (modify_visitors_at_site, reg0),
         (reset_visitors),
