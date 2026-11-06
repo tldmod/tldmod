@@ -10706,6 +10706,7 @@ game_menus = [
     "^^^^^{s1} Defeated!^{s1} is no more, defeated by the forces of {s13}!",
     "none",
     [ (str_store_faction_name, s1, "$g_notification_menu_var1"),
+      (call_script, "script_cancel_all_related_faction_quests", "$g_notification_menu_var1"),
     
       (assign, ":num_theater_enemies", 0),
       (str_store_string, s13, "@their enemies"), #defensive

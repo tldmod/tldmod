@@ -29340,7 +29340,29 @@ command_cursor_scripts = [
     (try_end),
 ]),
 
-
+#script_cancel_all_related_faction_quests
+# INPUT: arg1 = party_no
+("cancel_all_related_faction_quests",
+    [(store_script_param, ":faction", 1),
+    (try_for_range, ":quest", lord_quests_begin, lord_quests_end),
+        (quest_get_slot, ":giver", ":quest", slot_quest_giver_troop),
+        (store_troop_faction, ":giver_fac", ":giver"),
+        (check_quest_active, ":quest"),
+        (this_or_next|quest_slot_eq, ":quest", slot_quest_target_faction, ":faction"),
+        (this_or_next|quest_slot_eq, ":quest", slot_quest_object_faction, ":faction"),
+        (eq, ":giver_fac", ":faction"),
+        (call_script, "script_cancel_quest", ":quest"),
+    (try_end),
+    (try_for_range, ":quest", lord_quests_begin_2, lord_quests_end_2),
+        (quest_get_slot, ":giver", ":quest", slot_quest_giver_troop),
+        (store_troop_faction, ":giver_fac", ":giver"),
+        (check_quest_active, ":quest"),
+        (this_or_next|quest_slot_eq, ":quest", slot_quest_target_faction, ":faction"),
+        (this_or_next|quest_slot_eq, ":quest", slot_quest_object_faction, ":faction"),
+        (eq, ":giver_fac", ":faction"),
+        (call_script, "script_cancel_quest", ":quest"),
+    (try_end),
+]),
 # script_send_legion
 # INPUT:    arg1 = home_center
 #           arg2 = destination_center
