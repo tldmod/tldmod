@@ -5,7 +5,8 @@
 
 2. Don't use any of the assets for commercial purposes. (Feel free to use them to mod other games, though)
 3. Give us credit if you use our stuff. (if you want to credit specific creators, [*here*](https://github.com/tldmod/tldmod/blob/master/credits.txt)'s our own credit list, based on the [original MBX forum thread](https://web.archive.org/web/2017/http://mbx.streetofeyes.com/index.php/topic,2465.0.html#msg58201))
-4. *Optional*: Tell us about what you're doing with this OSP. Show it off! :)
+4. *TLD*-derived mods should keep their source code open-source in turn; we want to foster a mod-it-to-your-hearts-content but share-alike spirit.
+5. *Optional*: Tell us about what you're doing with this OSP. Show it off! :)
 
 ## Addendum
 ![CC BY-NC-SA logo](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg)
