@@ -935,6 +935,7 @@ pp_history_scattered         = 1
 pp_history_dismissed         = 2
 pp_history_quit              = 3
 pp_history_indeterminate     = 4
+pp_history_promoted          = 5 #not used yet
 
 slot_troop_playerparty_history_string   = 83
 slot_troop_return_renown        = 84

@@ -7407,6 +7407,7 @@ scripts = [
 #OUTPUT: reg0 = town_no, this script may return false if there is no matching town. reg1 = distance
 ("cf_select_random_town_allied",
     [ (store_script_param_1, ":faction_no"),
+      (store_script_param_2, ":max_distance"), #InVain
       (assign, ":result", -1),
       (assign, ":dist", 0),
       # First count num matching spawn points
@@ -7420,7 +7421,7 @@ scripts = [
         #(store_distance_to_party_from_party, ":dist", "p_main_party", ":cur_town"),
         (call_script, "script_get_tld_distance", "p_main_party", ":cur_town"),
         (assign, ":dist", reg0),
-        (le, ":dist", tld_max_quest_distance), #TLD: not too far
+        (le, ":dist", ":max_distance"), #TLD: not too far
         (val_add, ":no_towns", 1),
       (try_end),
       (gt, ":no_towns", 0), #Fail if there are no towns
@@ -7436,7 +7437,7 @@ scripts = [
         #(store_distance_to_party_from_party, ":dist", "p_main_party", ":cur_town"),
         (call_script, "script_get_tld_distance", "p_main_party", ":cur_town"),
         (assign, ":dist", reg0),
-        (le, ":dist", tld_max_quest_distance), #TLD: not too far
+        (le, ":dist", ":max_distance"), #TLD: not too far
         (val_add, ":no_towns", 1),
         (gt, ":no_towns", ":random_town"),
         (assign, ":result", ":cur_town"),
@@ -8426,7 +8427,7 @@ scripts = [
           (is_between, ":giver_center_no", centers_begin, centers_end),
           (party_get_slot, ":quest_target_party_template", ":giver_center_no", slot_center_spawn_caravan),
           (gt, ":quest_target_party_template", 0), #only for centers that spawn caravans
-          (call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
+          (call_script, "script_cf_select_random_town_allied", ":giver_faction_no", tld_max_quest_distance),#Can fail
           (assign, ":cur_target_dist", reg1),
           (neq, ":giver_center_no", reg0),
 		  (neq, reg0, "p_town_henneth_annun"),#Skip Henneth Annun
@@ -8451,7 +8452,7 @@ scripts = [
           (eq, ":quest_no", "qst_deliver_wine"),
           (is_between, ":giver_center_no", centers_begin, centers_end),
           #(store_random_party_in_range, ":quest_target_center", centers_begin, centers_end),
-          (call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
+          (call_script, "script_cf_select_random_town_allied", ":giver_faction_no", tld_max_quest_distance),#Can fail
 		  (neq, reg0, "p_town_henneth_annun"),#Skip Henneth Annun
           (assign, ":quest_target_center", reg0),
           (assign, ":cur_target_dist", reg1),
@@ -8524,7 +8525,7 @@ scripts = [
           (eq, ":quest_no", "qst_move_cattle_herd"),
           (is_between, ":giver_center_no", centers_begin, centers_end),
           #(call_script, "script_cf_select_random_town_at_peace_with_faction", ":giver_faction_no"),
-          (call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
+          (call_script, "script_cf_select_random_town_allied", ":giver_faction_no", tld_max_quest_distance),#Can fail
           (assign, ":cur_target_dist", reg1),
           (neq, ":giver_center_no", reg0),
           (assign, ":quest_target_center", reg0),
@@ -8995,7 +8996,7 @@ scripts = [
             (else_try),
               (assign, ":cur_object_troop", "trp_messenger_man"),
             (try_end),
-            (call_script, "script_cf_select_random_town_allied", ":giver_faction_no"),#Can fail
+            (call_script, "script_cf_select_random_town_allied", ":giver_faction_no", tld_max_quest_distance),#Can fail
             (assign, ":cur_target_center", reg0),
             (assign, ":cur_target_dist", reg1),
             (neq, ":cur_target_center", ":giver_center_no"),
@@ -10405,7 +10406,7 @@ scripts = [
 	(eq, ":ok", 1),
 ]),
 
-# script_get_closest_walled_center_of_faction
+# script_get_closest_center_of_faction
 # Input: arg1 = party_no, arg2 = kingdom_no
 # Output: reg0 = center_no (closest)
 ("get_closest_center_of_faction",
@@ -13945,6 +13946,8 @@ scripts = [
         	(this_or_next|eq, ":stack_troop", "trp_knight_3_12"),
         	(this_or_next|eq, ":stack_troop", "trp_imladris_lord"),
         	(this_or_next|eq, ":stack_troop", "trp_lorien_lord"),
+            (this_or_next|eq, ":stack_troop", "trp_npc21"), #berta needs her head
+            (this_or_next|eq, ":stack_troop", "trp_npc5"), #and Glorfi needs his shiny hair
         	             (eq, ":stack_troop", "trp_mordor_lord"), # Mouth of Sauron in hood
         	(mission_tpl_entry_set_override_flags,
         	    "mt_visit_town_castle",
@@ -24306,6 +24309,7 @@ scripts = [
                 (troop_slot_eq, ":cur_troop", slot_troop_cur_center, "$current_town"),
                 (neg|main_party_has_troop, ":cur_troop"), #not already hired
                 (neg|troop_slot_eq, ":cur_troop", slot_troop_state, 400), #dimborn
+                (neg|troop_slot_eq, ":cur_troop", slot_troop_playerparty_history, pp_history_scattered),
                 (assign, ":on_lease", 0),
                 (try_begin),
                     (check_quest_active,"qst_lend_companion"),
@@ -24351,12 +24355,21 @@ scripts = [
             (party_get_num_companion_stacks, ":num_stacks","p_temp_party"),
             (try_for_range, ":i_stack", 0, ":num_stacks"),
                 (party_stack_get_troop_id, ":stack_troop","p_temp_party",":i_stack"),
+                (try_begin),
+                  #swy-- throne entry point for leader only
+                  ( eq, ":cur_pos", 16),
+                  (neg|faction_slot_eq, "$ambient_faction", slot_faction_leader, ":stack_troop"),
+                  #   --
+                  (val_max, ":cur_pos", 17),
+                (try_end),
                 (lt, ":cur_pos", 23), # spawn up to entry point 22
                 (set_visitor, ":cur_pos", ":stack_troop"),
                 (try_begin),
                     (this_or_next|eq, ":stack_troop", "trp_knight_3_11"), #imladris elves all in helms
                     (this_or_next|eq, ":stack_troop", "trp_knight_3_12"),
                     (this_or_next|eq, ":stack_troop", "trp_imladris_lord"),
+                    (this_or_next|eq, ":stack_troop", "trp_npc21"), #berta needs her head
+                    (this_or_next|eq, ":stack_troop", "trp_npc5"), #and Glorfi needs his shiny hair
                                  (eq, ":stack_troop", "trp_lorien_lord"), #Galadriel in her invis peryphery
 
                     #swy-- debug thingie, it gets called, so the loop works as intended in wb

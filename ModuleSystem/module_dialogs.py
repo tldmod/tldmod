@@ -1708,7 +1708,10 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (troop_add_item, "trp_npc18", "itm_khand_pitsword"),
     (troop_add_item, "trp_npc18", "itm_easterling_hawk_shield"),
     (troop_equip_items, "trp_npc18"),
-  (try_end),]],
+  (try_end),
+  (troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, 0),
+  (remove_member_from_party, "$g_talk_troop", "$current_town"), #in case they were scattered and joined the town
+  ]],
 
 
 

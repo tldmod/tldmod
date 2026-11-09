@@ -3867,20 +3867,24 @@ game_menus = [
     #("enable_kham_cheat",[],"{!}Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@{!}Kham Cheat Mode ON!")]),
     ] + (is_a_wb_menu==1 and [
     #("action_view_all_items",[],"{!}View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
-     ("dimborn_bear_level",[],"{!}level dimborn trait",[
-        (try_begin), #Dimborn trait
-            (main_party_has_troop, "trp_npc17"),
-            (store_character_level, ":dimborn_level", "trp_npc17"),
-            (ge, ":dimborn_level", 7),
-            (troop_get_slot, ":dimborn_bear", "trp_npc17", slot_troop_state), #re-use slot
-            (neq, ":dimborn_bear", -1), #slot=-1 means search forbidden
-            (neq, ":dimborn_bear", 1000), #slot=1000 means trait active
-            (val_add, ":dimborn_bear", 2),
-            (troop_set_slot, "trp_npc17", slot_troop_state, ":dimborn_bear"),
-            (assign, reg78, ":dimborn_bear"),
-            (display_message, "@Dimborn bear: {reg78}"),
-        (try_end),
+     ("cheat_defeat_player",[],"{!}cheat_defeat_player",[
+        (jump_to_menu, "mnu_tld_player_defeated"),
         ]),
+
+     # ("dimborn_bear_level",[],"{!}level dimborn trait",[
+        # (try_begin), #Dimborn trait
+            # (main_party_has_troop, "trp_npc17"),
+            # (store_character_level, ":dimborn_level", "trp_npc17"),
+            # (ge, ":dimborn_level", 7),
+            # (troop_get_slot, ":dimborn_bear", "trp_npc17", slot_troop_state), #re-use slot
+            # (neq, ":dimborn_bear", -1), #slot=-1 means search forbidden
+            # (neq, ":dimborn_bear", 1000), #slot=1000 means trait active
+            # (val_add, ":dimborn_bear", 2),
+            # (troop_set_slot, "trp_npc17", slot_troop_state, ":dimborn_bear"),
+            # (assign, reg78, ":dimborn_bear"),
+            # (display_message, "@Dimborn bear: {reg78}"),
+        # (try_end),
+        # ]),
     # ("show_bandit_spawns",[],"{!}show_bandit_spawns",[
         # (try_for_range, ":party", "p_looter_spawn_point", "p_gondor_test"),
             # (enable_party, ":party"),
@@ -10402,27 +10406,33 @@ game_menus = [
 			#(jump_to_menu, "$recover_after_death_menu"),
             
             #MV: lose some of your companions
-            (try_for_range, ":npc", companions_begin, companions_end),
+            (try_for_range, ":npc", companions_begin, new_companions_end),
               (main_party_has_troop, ":npc"),
+              (troop_is_hero, ":npc"),
+              (troop_slot_eq, ":npc", slot_troop_occupation, slto_player_companion),
               (store_random_in_range, ":rand", 0, 100),
               (lt, ":rand", 30),
+              (try_begin),
+                (call_script, "script_cf_select_random_town_allied", "$players_kingdom", 50),#Can fail
+              (else_try),
+                (call_script, "script_cf_select_random_town_allied", "$players_kingdom", 75),#Can fail
+              (else_try),
+                (call_script, "script_cf_select_random_town_allied", "$players_kingdom", 150),#Can fail
+              (else_try),
+                (call_script, "script_get_closest_center_of_faction", "p_main_party", "$ambient_faction"),
+              (try_end),
+              (assign, ":target_center", reg0),
+              (gt, ":target_center", 0),
               (remove_member_from_party, ":npc", "p_main_party"),
               (troop_set_slot, ":npc", slot_troop_occupation, 0),
               (troop_set_slot, ":npc", slot_troop_playerparty_history, pp_history_scattered),
               (store_faction_of_party, ":victorious_faction", "$g_encountered_party"),
               (troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
               (troop_set_health, ":npc", 100),
-            (try_end),
-            (try_for_range, ":npc", new_companions_begin, new_companions_end),
-              (main_party_has_troop, ":npc"),
-              (store_random_in_range, ":rand", 0, 100),
-              (lt, ":rand", 30),
-              (remove_member_from_party, ":npc", "p_main_party"),
-              (troop_set_slot, ":npc", slot_troop_occupation, 0),
-              (troop_set_slot, ":npc", slot_troop_playerparty_history, pp_history_scattered),
-              (store_faction_of_party, ":victorious_faction", "$g_encountered_party"),
-              (troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
-              (troop_set_health, ":npc", 100),
+              (party_force_add_members, ":target_center", ":npc", 1),
+              # (str_store_party_name, s16, ":target_center"),
+              # (str_store_troop_name, s15, ":npc"),
+              # (display_message, "@{s15} fled to {s16}"),
             (try_end),
             
 			(change_screen_map),
