@@ -3282,6 +3282,13 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 [anyone ,"lord_intro", [],
 "{!}{s11}", "lord_start",   [(faction_get_slot, ":faction_leader", "$g_talk_troop_faction", slot_faction_leader),
                           (str_store_faction_name, s6, "$g_talk_troop_faction"),
+                          (try_begin),
+                             (this_or_next|eq, "$g_talk_troop_faction", fac_moria),
+                             (is_between, "$g_talk_troop_faction", fac_gundabad, fac_kingdoms_end),
+                             (str_store_string, s16, "@chieftain"),
+                          (else_try),
+                             (str_store_string, s16, "@captain"), #"captain"
+                          (try_end),
                           (assign, reg4, 0),
                           (str_store_troop_name, s4, "$g_talk_troop"),
                           (try_begin),
@@ -3289,7 +3296,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                             (str_store_troop_name_plural, s15,"$g_talk_troop"), #GA: plural name for kings contains referral to them
                             (str_store_string, s9, "@I am {s4}, {s15} of {s6}", 0),
                           (else_try),
-                            (str_store_string, s9, "@I am {s4}, a commander of {s6}", 0),
+                            (str_store_string, s9, "@I am {s4}, a {s16} of {s6}", 0),
                           (try_end),
                           (assign, ":num_centers", 0),
                           (str_clear, s8),
@@ -3311,7 +3318,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                             (val_add, ":num_centers", 1),
                           (try_end),
                           (assign, reg5, ":num_centers"),
-                          (str_store_string, s11, "@{s9}{reg5? and the ruler of {s8}.:.", 0)]],
+                          (str_store_string, s11, "@{s9} {reg5?. I hold command over {s8}.:.", 0)]],
 
 #[anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
 #                     (eq, "$g_talk_troop_met", 0),

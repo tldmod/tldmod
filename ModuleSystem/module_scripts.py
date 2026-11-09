@@ -18209,7 +18209,7 @@ scripts = [
          (troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death), #dead
          (assign, reg10, 1),
        (try_end),
-       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}{reg10?^{reg3?She:He} died on the battlefield!:}", 0),
+       (add_troop_note_from_sreg, ":troop_no", 0, "@{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}{reg9?{reg3?She:He} commands {s58}.:}{s59}{reg10?^{reg3?She:He} died on the battlefield!:}", 0),
        (add_troop_note_tableau_mesh, ":troop_no", "tableau_troop_note_mesh"),
 
        ] + (is_a_wb_script==1 and [
@@ -18281,7 +18281,7 @@ scripts = [
        (else_try),
          (str_store_string, s51, "@{!}{s50}"),
        (try_end),
-       (str_store_string, s2, "@{s50} belongs to {s1} of {s2}.^"), #TLD: was s51
+       (str_store_string, s2, "@{s50} is held by {s1} of {s2}.^"), #TLD: was s51
        ] + (is_a_wb_script==1 and [
              
        #swy-- this is needed to show by default the note entries on Warband, this one goes in the loop because we don't want to show everything...
