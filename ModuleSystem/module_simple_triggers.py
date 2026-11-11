@@ -146,7 +146,8 @@ simple_triggers = [
   (24.1 * 4,[ (call_script, "script_make_player_pay_upkeep")]),
   # (8) # Rank income, clear rumors in centers and reset a few town slots, friendship rewards progress
   (24,[(call_script, "script_rank_income_to_player"),
-      (try_for_range, ":center_no", centers_begin, centers_end),               
+      (try_for_range, ":center_no", centers_begin, centers_end),
+        (store_faction_of_party, ":party_fac", ":center_no"),
         (try_for_range, ":walker", town_walker_entries_start, town_walker_entries_start+num_town_walkers),
           (store_add, ":slot", slot_center_rumor_check_begin,":walker"),
           (party_set_slot, ":center_no", ":slot", 0),
@@ -158,6 +159,11 @@ simple_triggers = [
             (gt, ":offered_quest", 0),
             (neg|quest_slot_ge, ":offered_quest", slot_quest_dont_give_again_remaining_days, 2),
             (troop_set_slot, ":mayor", slot_troop_merchant_offered_quest, 0),
+        (else_try), #if town has no mayor (captured town or advance camp), we set town relation according to faction rank
+            (lt, ":mayor", 0),
+            (faction_get_slot, ":rank", ":party_fac", slot_faction_rank),
+            (val_mul, ":rank", 8),
+            (party_set_slot, ":center_no", slot_center_player_relation, ":rank"),
         (try_end),
         (party_set_slot, ":center_no", slot_center_walker_soldiers_found, 0),
         (try_begin),
@@ -165,7 +171,6 @@ simple_triggers = [
             (store_random_in_range, ":chance", 0, 10),
             (lt, ":chance", 3),
             (party_get_slot, ":captain", ":center_no", slot_town_captain),
-            (store_faction_of_party, ":party_fac", ":center_no"),
             #some centers or factions have a range of possible captains
             (try_begin),
                 (eq, ":party_fac", "fac_imladris"),
