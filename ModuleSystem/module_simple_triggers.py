@@ -4203,6 +4203,9 @@ simple_triggers = [
             (le, ":fac_strength", ":capital_siegable_str"),
             (party_slot_eq, "p_town_isengard", slot_center_destroyed, 0), #double check
             (party_slot_eq, "p_town_isengard", slot_center_is_besieged_by, -1), #triple check
+            (party_slot_eq, "p_town_urukhai_outpost", slot_center_destroyed, 1), 
+            (party_slot_eq, "p_town_urukhai_h_camp", slot_center_destroyed, 1), 
+            (party_slot_eq, "p_town_urukhai_r_camp", slot_center_destroyed, 1), 
             (neg|check_quest_active, qst_guardian_party_quest),
             (neg|check_quest_finished, qst_guardian_party_quest),
             (neg|check_quest_failed, qst_guardian_party_quest),
