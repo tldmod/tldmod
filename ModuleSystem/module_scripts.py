@@ -29385,7 +29385,8 @@ command_cursor_scripts = [
 
 #script_cancel_all_related_faction_quests
 # INPUT: arg1 = party_no
-("cancel_all_related_faction_quests",
+#script_cancel_quest overwrites s1
+("cancel_all_related_faction_quests", 
     [(store_script_param, ":faction", 1),
     (try_for_range, ":quest", lord_quests_begin, lord_quests_end),
         (quest_get_slot, ":giver", ":quest", slot_quest_giver_troop),

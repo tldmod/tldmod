@@ -3318,7 +3318,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                             (val_add, ":num_centers", 1),
                           (try_end),
                           (assign, reg5, ":num_centers"),
-                          (str_store_string, s11, "@{s9} {reg5?. I hold command over {s8}.:.", 0)]],
+                          (str_store_string, s11, "@{s9}{reg5?. I hold command over {s8}.:.", 0)]],
 
 #[anyone ,"start", [(troop_slot_eq,"$g_talk_troop",slot_troop_occupation, slto_kingdom_hero),
 #                     (eq, "$g_talk_troop_met", 0),
