@@ -9500,9 +9500,9 @@ scripts = [
             (gt, ":total_heroes", 0),#Skip if party has no eligible heroes
             (store_random_in_range, ":random_hero", 0, ":total_heroes"),
             (assign, ":total_heroes", 0),
-            (assign, ":cur_target_troop", -1),
+            (assign, ":quest_target_troop", -1),
             (try_for_range, ":i_stack", 0, ":num_stacks"),
-              (eq, ":cur_target_troop", -1),
+              (eq, ":quest_target_troop", -1),
               (party_stack_get_troop_id, ":stack_troop","p_main_party",":i_stack"),
               (troop_is_hero, ":stack_troop"),
               (this_or_next|is_between, ":stack_troop", companions_begin, companions_end),
@@ -9519,10 +9519,10 @@ scripts = [
               (try_end),
               (eq, ":is_quest_hero", 0),
               (val_add, ":total_heroes", 1),
-              (gt, ":total_heroes", ":random_hero"),
-              (assign, ":cur_target_troop", ":stack_troop"),
+              (eq, ":total_heroes", ":random_hero"),
+              (assign, ":quest_target_troop", ":stack_troop"),
             (try_end),
-            (assign, ":quest_target_troop", ":cur_target_troop"),
+            (gt, ":quest_target_troop", 0),
             (store_current_day, ":quest_target_amount"),
             (val_add, ":quest_target_amount", 5), #Kham - from 8 to 5.
 
@@ -9882,22 +9882,25 @@ scripts = [
 			#InVain: Hunt Beast Coop (Lord Quest)
 			] + (is_a_wb_script==1 and [
 			(eq, ":quest_no", "qst_hunt_beast_coop"),
-            (eq, 0, 1), #disabled
+            #(eq, 0, 1), #disabled
 			(try_begin),
 				(neg|check_quest_active, "qst_hunt_beast_mayor"),
                 (call_script, "script_find_theater", p_main_party),
                 (assign, ":theater", reg0),
                 
-                (assign, ":quest_target_amount", 1), #number of minor animals
+                (assign, ":ads_level", 0), #min level for ads to spawn
                 (assign, ":upgrade_level", 8), #fallback
+                (assign, ":quest_target_amount", 0),
                 
                 (store_random_in_range, ":rand", 0, 10),
                 (try_begin),
-                    (is_between, "$current_player_region", region_n_mirkwood, region_s_mirkwood+1),
+                    (this_or_next|is_between, "$current_player_region", region_n_mirkwood, region_s_mirkwood+1),
+                    (eq, "$current_town", "p_town_woodsmen_village"),
                     (ge, ":player_level", 4),
                     (le, ":rand", 3),
                     (assign, ":quest_target_troop", "trp_spider"),
-                    (assign, ":upgrade_level", 8), 
+                    (assign, ":upgrade_level", 8),
+                    (assign, ":ads_level", 6),
                 (else_try),
                     (eq, ":theater", theater_N),
                     (this_or_next|eq, ":giver_faction_no", fac_dale),
@@ -9906,27 +9909,50 @@ scripts = [
                     (le, ":rand", 3),
                     (assign, ":quest_target_troop", "trp_bull"),
                     (assign, ":upgrade_level", 10),
+                    (assign, ":ads_level", 7),
+                (else_try),
+                    (eq, ":theater", theater_C),
+                    (ge, ":player_level", 10),
+                    (le, ":rand", 1),
+                    (assign, ":quest_target_troop", "trp_wolf_strong"),
+                    (assign, ":upgrade_level", 12), #upgrade into werewolf
+                    (assign, ":ads_level", 15),
                 (else_try),
                     (this_or_next|eq, ":theater", theater_N),
-                    (eq, ":theater", theater_C),
+                    (this_or_next|eq, ":theater", theater_C),
+                    (this_or_next|eq, "$current_town", "p_town_pinnath_gelin"),
+                    (this_or_next|eq, "$current_town", "p_town_calembel"),
+                    (eq, "$current_town", "p_town_hornburg"),
                     (neq, ":giver_faction_no", fac_beorn),
                     (ge, ":player_level", 8),
                     (le, ":rand", 2),
                     (assign, ":quest_target_troop", "trp_bear"),
                     (assign, ":upgrade_level", 14),
-                    (assign, ":quest_target_amount", 0), #bears are always alone
+                    (assign, ":ads_level", 1000), #bears are always alone
+                (else_try),
+                    (this_or_next|eq, ":theater", theater_N),
+                    (this_or_next|eq, ":theater", theater_C),
+                    (neq, ":giver_faction_no", fac_gundabad),
+                    (ge, ":player_level", 6),
+                    (le, ":rand", 2),
+                    (assign, ":quest_target_troop", "trp_wild_warg"),
+                    (assign, ":upgrade_level", 12),
+                    (assign, ":ads_level", 7),
                 (else_try),
                     (ge, ":player_level", 10),
                     (le, ":rand", 2),
                     (assign, ":quest_target_troop", "trp_evil_beast"),
                     (assign, ":upgrade_level", 16),
+                    (assign, ":ads_level", 13),
                 (else_try),
                     (le, ":rand", 5),
                     (assign, ":quest_target_troop", "trp_boar"),
                     (assign, ":upgrade_level", 10),
+                    (assign, ":ads_level", 4),
                 (else_try),
                     (assign, ":quest_target_troop", "trp_wolf"),
                     (assign, ":upgrade_level", 4),
+                    (assign, ":ads_level", 2),
                 (try_end),
                 
                 (assign, ":quest_object_troop", ":quest_target_troop"),
@@ -9937,10 +9963,13 @@ scripts = [
                 (try_end),
                 
                 (try_begin),
-                    (gt, ":quest_target_amount", 0),
-                    (store_div, ":max_amount", ":player_level", 3),
-                    (store_sub, ":min_amount", ":player_level", ":upgrade_level"),
+                    (ge, ":player_level", ":ads_level"),
+                    (val_add, ":ads_level", 2),
+                    (store_div, ":min_amount", ":player_level", ":ads_level"),
+                    (store_mul, ":max_amount", ":min_amount", 2),
+                    (val_add, ":max_amount", 2),
                     (store_random_in_range, ":quest_target_amount", ":min_amount", ":max_amount"),
+                    (val_max, ":quest_target_amount", 0),
                 (try_end),
 
                 #copied from troublesome bandits
@@ -11821,6 +11850,7 @@ scripts = [
 
         (try_begin), #reduce relation gain above 30 before the war starts
             (ge, ":old_effective_relation", 30),
+            (gt, ":difference", 0),
             (eq, "$tld_war_began", 0),
             (val_div, ":difference", 2),
         (try_end),

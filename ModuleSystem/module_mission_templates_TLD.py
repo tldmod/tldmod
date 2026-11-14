@@ -2911,7 +2911,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (agent_set_no_death_knock_down_only, ":rider", 0),
     (agent_set_hit_points, ":rider", 1, 0),
     (set_show_messages, 0),
-    (agent_deliver_damage_to_agent, ":killer", ":rider", 1000),
+    (agent_deliver_damage_to_agent, ":killer", ":rider", 100),
     (call_script, "script_remove_agent", ":rider"), #just in case
     (set_show_messages, 1),
     
