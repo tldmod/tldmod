@@ -7230,12 +7230,12 @@ tld_calculate_wounded,
 reset_fog,
 common_battle_inventory,
 common_battle_on_player_down,
-tld_place_inventory_backup,
+tld_place_inventory_backup, #26
 
        ] or []) + [
 
 ] +
-  tld_common_wb_muddy_water+
+  tld_common_wb_muddy_water+ #27
   tld_animal_attacks+
   fade+ 
   ((is_a_wb_mt==1) and tld_bow_shield + khams_custom_player_camera + bright_nights or [] )

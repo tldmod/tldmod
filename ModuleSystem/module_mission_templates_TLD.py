@@ -2992,6 +2992,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (agent_get_animation, ":current_anim", ":horse"),
     (neq, ":current_anim", "anim_horse_rear"), #don't initiate an attack if just taken damage
     (neq, ":current_anim", "anim_horse_rear_twice"),
+    (neq, ":current_anim", "anim_wolf_snap"),
 
     # (assign, reg78, ":slot"),
     # (str_store_agent_name, s5, ":agent"),
@@ -3164,6 +3165,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (gt, ":attack_range", 0),
     (agent_get_troop_id, ":agent_trp", ":agent"),
     (agent_get_horse, ":horse", ":agent"),
+    (ge, ":horse", 0), #could've been killed in the meantime
     (agent_set_speed_limit, ":agent", 100), #reset speed limit
     # (str_store_agent_name, s5, ":agent"),
     # (assign, reg78, ":attack_range"),
@@ -3174,7 +3176,7 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     (store_skill_level, ":damage", ":agent_trp", skl_power_strike), #0-10
     (try_begin), #savegame compatibility
        (lt, ":damage", 4),
-       (assign, ":damage", 5),
+       (assign, ":damage", 4),
        (eq|this_or_next, ":agent_trp", "trp_bear"),
        (eq, ":agent_trp", "trp_bear_strong"),
        (assign, ":damage", 7),
@@ -3219,8 +3221,6 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
       # (display_message, "@agent {reg78} is {s5}"),
       (agent_get_position, pos3, ":enemy_agent"),
       (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
-      # (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end), #we actually want them to attack wargs
-      #(store_skill_level, ":riding_skill", skl_riding, ":enemy_troop_id"),
       (agent_get_horse, ":target_horse", ":enemy_agent"),
       
       (try_begin), #check for blocks
@@ -3236,7 +3236,8 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
         (gt, ":damage", 1),
         (try_begin), #player cheat 
             (eq, ":enemy_agent", ":player_agent"),
-            (val_div, ":damage", 2),
+            (val_div, ":damage", 3),
+            (val_mul, ":damage", 2),
         (try_end),
         (agent_deliver_damage_to_agent, ":agent", ":enemy_agent", ":damage", "itm_uruk_falchion_a"), #just a random slashing weapon
         # (str_store_agent_name, s5, ":agent"),
