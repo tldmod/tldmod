@@ -14382,7 +14382,18 @@ All faithful commanders of the west are summoned to join them there, to strike f
         (troop_add_item, "trp_aragorn", "itm_gondor_warhorse", imod_heavy),
         (troop_equip_items, "trp_aragorn"),
 		(set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "trp_aragorn", pos0),
-        
+ 
+        (troop_set_slot, "trp_gondor_lord", slot_troop_wound_mask, wound_death),
+        (troop_set_faction, "trp_gondor_lord", "fac_commoners"), #remove from faction list
+        (troop_set_slot, "trp_gondor_lord", slot_troop_occupation, 0),
+        (troop_get_slot, ":denethor_party", "trp_gondor_lord", slot_troop_leaded_party),
+        (troop_set_note_available, "trp_gondor_lord", 0),
+        (try_begin),
+            (gt, ":denethor_party", 0),
+            (party_detach, ":denethor_party"),
+            (call_script, "script_safe_remove_party", ":denethor_party"),
+        (try_end),
+ 
         (str_clear, s8),
         (str_clear, s15),
         (str_store_faction_name, s8, "fac_gondor"),

@@ -3174,12 +3174,17 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
     
     #damage
     (store_skill_level, ":damage", ":agent_trp", skl_power_strike), #0-10
+        # (assign, reg78, ":damage"),
+        # (display_message, "@power strike: {reg78}!"),
     (try_begin), #savegame compatibility
        (lt, ":damage", 4),
        (assign, ":damage", 4),
        (eq|this_or_next, ":agent_trp", "trp_bear"),
        (eq, ":agent_trp", "trp_bear_strong"),
        (assign, ":damage", 7),
+    (else_try),
+        (is_between, ":agent_trp", trp_warg_ghost_1b, trp_warg_ghost_future0),
+        (val_min, ":damage", 5),
     (try_end),
     (val_mul, ":damage", 10),
     
@@ -3240,11 +3245,11 @@ tld_animal_attacks =  ((is_a_wb_mt==1) and [
             (val_mul, ":damage", 2),
         (try_end),
         (agent_deliver_damage_to_agent, ":agent", ":enemy_agent", ":damage", "itm_uruk_falchion_a"), #just a random slashing weapon
-        # (str_store_agent_name, s5, ":agent"),
-        # (assign, reg78, ":damage"),
-        # (display_message, "@{s5} dealt {reg78} damage!"),
-        # (agent_get_damage_modifier, reg66, ":agent"),
-        # (display_message, "@damage mod is {reg66}"),
+            # (str_store_agent_name, s5, ":agent"),
+            # (assign, reg78, ":damage"),
+            # (display_message, "@{s5} dealt {reg78} damage!"),
+            # (agent_get_damage_modifier, reg66, ":agent"),
+            # (display_message, "@damage mod is {reg66}"),
         (store_random_in_range, ":rand_sound", 0, 3),
         (store_add, ":sound", ":rand_sound", "snd_wooden_hit_low_armor_low_damage"),
         (agent_play_sound, ":agent", ":sound"),

@@ -3558,7 +3558,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 ["aragorn","Aragorn","{!}",tf_hero| tf_dunedain| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_imladris,
    [itm_leather_boots,itm_leather_gloves,itm_arnor_light_b_good_cloak,(itm_arnor_sword_c, imod_champion),],
-      attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_riding_5|knows_persuasion_7|knows_power_draw_4,0x00000002bf00114f269c66a89466598b00000000001d42db0000000000000000],
+      attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_riding_5|knows_persuasion_7|knows_power_draw_4,0x00000002bf00100f26dc6e489566599b0000000000fd24db0000000000000000],
       
 ["legolas","Legolas","{!}",tf_hero| tf_woodelf| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_woodelf,
    [itm_lorien_light_good_cloak,itm_mirkwood_boots,itm_leather_gloves,itm_lorien_bow,itm_woodelf_arrows,itm_mirkwood_knife],
