@@ -1640,7 +1640,7 @@ if wb_compile_switch==1:
 #duplicate
 ["fur_hat", "Fur Hat", [("tld_fur_hat_a_new",0)],  itp_type_head_armor |itp_civilian |itp_doesnt_cover_hair  ,0, 100 , weight(0.5)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["nomad_cap_b", "Nomad Cap", [("tld_nomad_cap_b_new",0)],  itp_type_head_armor |itp_civilian    ,0, 100 , weight(0.75)|abundance(100)|head_armor(13)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["felt_hat", "Felt Hat", [("tld_felt_hat_a_new",0)],  itp_type_head_armor |itp_civilian |itp_doesnt_cover_hair ,0, 100 , weight(1)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["felt_hat", "Felt Hat", [("tld_felt_hat_a_new",0)],  itp_type_head_armor |itp_civilian  ,0, 100 , weight(1)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["felt_hat_b", "Felt Hat", [("tld_felt_hat_b_new",0)],  itp_type_head_armor |itp_civilian |itp_doesnt_cover_hair ,0, 100 , weight(1)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["leather_cap", "Leather Cap", [("tld_leather_cap_a_new",0)],  itp_type_head_armor|itp_civilian ,0, 100, weight(1)|abundance(100)|head_armor(18)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["leather_steppe_cap_a", "Steppe Cap", [("tld_leather_steppe_cap_a_new",0)], itp_type_head_armor|itp_civilian    ,0, 100 , weight(1)|abundance(100)|head_armor(15)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],

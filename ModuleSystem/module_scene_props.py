@@ -3444,6 +3444,7 @@ scene_props = [
         (assign, ":animation", "anim_stand_lord"),
     (try_end),
     (agent_set_stand_animation, reg0, ":animation"),
+    (agent_set_slot, reg0, slot_agent_walker_type, 2),
     
     (store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),
         
