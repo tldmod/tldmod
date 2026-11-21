@@ -3385,7 +3385,8 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 [anyone,"event_triggered", [(store_partner_quest,":lords_quest"),
                        (eq,":lords_quest","qst_hunt_beast_coop"),
                        (quest_slot_eq, "qst_hunt_beast_coop", slot_quest_giver_troop, "$g_talk_troop"),
-                       (check_quest_failed, "qst_hunt_beast_coop")],
+                       #(check_quest_failed, "qst_hunt_beast_coop"),
+                       ],
 "{!}{s9}{s10}", "lord_hunt_beast_coop_fail", #strings are defined in mnu_hunt_beast_debrief
   []],
 
@@ -3433,9 +3434,9 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (else_try),
         (str_store_string, s9, "@Unfortunately, the beast slipped away. Our hunt is over."),
     (try_end),
-  
-    (cancel_quest, "qst_hunt_beast_coop"),
-  (troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
+
+    (call_script, "script_abort_quest", "qst_hunt_beast_coop", 1),
+    (troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
 
 [anyone|plyr, "lord_hunt_beast_coop_fail_2",[],
   "I will do better next time.", "close_window",[],

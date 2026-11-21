@@ -13946,6 +13946,8 @@ game_menus = [
         (quest_set_slot, "qst_hunt_beast_coop", slot_quest_target_item, 0), #coop partner agent
         (quest_set_slot, "$random_quest_no", slot_quest_current_state, 0),
         (quest_set_slot, "$random_quest_no", slot_quest_target_dna, -1), #target animal agent
+        (quest_set_slot, "$random_quest_no", slot_quest_score_1, 0),
+        (quest_set_slot, "$random_quest_no", slot_quest_score_2, 0),
         (set_jump_mission, "mt_hunt_beast"),
         (set_battle_advantage, 0),
         (set_party_battle_mode),
@@ -14124,7 +14126,7 @@ game_menus = [
     (else_try),
         (str_store_string, s9, "@The beast has escaped. {reg11?The hunt has ended.:You need to pick up its track again.}"),
         (eq, "$random_quest_no", "qst_hunt_beast_coop"),
-        (quest_get_slot, ":party", "$random_quest_no", slot_quest_target_party),
+        (quest_get_slot, ":party", "qst_hunt_beast_coop", slot_quest_target_party),
         (party_is_active, ":party"),
         (call_script, "script_safe_remove_party", ":party"),
     (try_end),
@@ -14186,7 +14188,7 @@ game_menus = [
             (str_clear, s11),
             (try_begin),
                 (this_or_next|le, ":player_damage", 20),
-                (lt, ":player_performance", 100),
+                (lt, ":player_performance", 85),
                 (try_begin),
                     (eq, ":partner_is_orc", 0),
                     (str_store_string, s9, "@You barely lifted your blade in that hunt, {playername}. I had hoped for more from you.^^"),
