@@ -13436,7 +13436,7 @@ game_menus = [
 ],
 [
 	("continue",[],"Continue...",[
-		(store_mul, ":exp", 100, reg21),
+		(store_mul, ":exp", 100, "$meta_alarm"),
 		(add_xp_as_reward, ":exp"),
 		(try_begin),
 			(gt, reg5, -1),
@@ -14360,7 +14360,6 @@ All faithful commanders of the west are summoned to join them there, to strike f
       (try_end),
     ]),]
  ),
-] or []) + [
     
  ("return_of_the_king",0,
    "{!}^^{s15}",
@@ -14409,10 +14408,8 @@ All faithful commanders of the west are summoned to join them there, to strike f
         (faction_get_slot, ":fac_strength", "fac_gondor", slot_faction_strength_tmp),
         (val_add, ":fac_strength", 2000),
         (faction_set_slot,"fac_gondor",slot_faction_strength_tmp,":fac_strength"),
-        ] + (is_a_wb_menu==1 and [
         (troop_set_name, "trp_aragorn", "@King Aragorn Elessar"),
         (troop_set_plural_name, "trp_aragorn", "@King"),
-		 ] or []) + [
         (faction_get_slot, ":cur_leader", "fac_gondor", slot_faction_leader),
         (try_for_range, ":cur_center", centers_begin, centers_end),
             (store_faction_of_party, ":town_faction", ":cur_center"),
@@ -14507,6 +14504,7 @@ All faithful commanders of the west are summoned to join them there, to strike f
    	[("healing_of_theoden_close", [], "{!}{s4}", [(change_screen_return)]),
 ]),
 
+] or []) + [
 ] 
 
 ## quick scene chooser

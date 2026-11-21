@@ -4543,7 +4543,7 @@ formAI_v5_scripts = [
         (agent_set_slot, ":agent", slot_agent_new_division, ":target_division"),
       (try_end),]),
   
-  # script_store_battlegroup_type_moto_moto
+  # script_store_battlegroup_type_moto
   # Input: team, division
   # Output: reg0 and slot_team_dx_type with sdt_* value
   # Automatically called from store_battlegroup_data
