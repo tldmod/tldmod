@@ -374,12 +374,12 @@ items =[
 ["free_olog_head_helm_c","{!}Olog_Hai_Head",[("olog_head_c",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(62)|difficulty(70),0],
 ["free_olog_body","{!}Olog_Hai_Armor",[("olog_body",0),("olog_body",imodbit_rusty),("olog_body_b",imodbit_tattered)],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(70),0,],
 ["free_olog_body_b","{!}Olog_Hai_Armor",[("olog_body_b",0)],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(70),0,],
-["free_olog_hands","{!}Olog_Hai_Hands",[("olog_hand_L",0)],itp_no_pick_up_from_ground|itp_type_hand_armor|itp_unique,0,1,weight(250)|body_armor(1)|difficulty(70),0],
 #
 # warg ghost items...  (mtarini)
 #  invisible items which are used for ghost riders (riding unmounted wargs)
-["warg_ghost_armour","{!}HIDEME_armour" ,[("dummy_mesh_skinned",0)],itp_unique|itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(2)|body_armor(2)|leg_armor(2)|difficulty(0),0],
 ["warg_ghost_lance" ,"{!}HIDEME_lance"  ,[("0",0)],itp_unique|itp_no_pick_up_from_ground|itp_type_polearm|itp_no_blur|itp_primary|itp_no_parry,0,0,weight(1)|difficulty(0)|spd_rtng(100)|weapon_length(1)|thrust_damage(0,pierce),imodbits_none],
+["warg_ghost_armour","{!}HIDEME_armour" ,[("dummy_mesh_skinned",0)],itp_unique|itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_head|itp_covers_legs,0,0,weight(0)|head_armor(2)|body_armor(2)|leg_armor(2)|difficulty(0),0],
+["warg_ghost_sword" ,"{!}HIDEME_sword"  ,[("0",0)],itp_unique|itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_no_blur|itp_primary|itp_no_parry,0,0,weight(1)|difficulty(0)|spd_rtng(100)|weapon_length(1)|thrust_damage(0,pierce),imodbits_none],
 # CC: ghost lance had itcf_thrust_onehanded_lance_horseback before, changed to prevent animals from couching
 # other HIDEME items already ingame
 
@@ -1430,9 +1430,9 @@ items =[
 ["feet_chains","Feet Chains",[("chains_full",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 ["feet_chains_dwarf","Feet Chains",[("chains_full_dwarf",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 
-["spider","Spider",[("spider",0)], itp_type_horse|itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(60)|body_armor(30)|difficulty(10)|horse_speed(15)|horse_maneuver(75)|horse_charge(1)|horse_scale(60),imodbits_none,[]],
+["spider","Spider",[("spider",0)], itp_type_horse|itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(60)|body_armor(30)|difficulty(10)|horse_speed(20)|horse_maneuver(75)|horse_charge(1)|horse_scale(60),imodbits_none,[]],
 ["bear","Bear",    [("bear_2",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(60)|horse_speed(40)|horse_maneuver(60)|horse_charge(55)|horse_scale(90)|difficulty(10),imodbits_none,[]],
-["wolf","Wolf",    [("wolf",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(15)|horse_maneuver(75)|horse_charge(1)|horse_scale(85)|difficulty(10),imodbits_none,[]],
+["wolf","Wolf",    [("wolf",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(20)|horse_maneuver(75)|horse_charge(1)|horse_scale(85)|difficulty(10),imodbits_none,[]],
 ["werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(60)|horse_speed(30)|horse_maneuver(70)|horse_charge(35)|horse_scale(100)|difficulty(10),imodbits_none,[]],
 
 ["thrush_reward","Thrush",[("prop_reward_thrush",0)],itp_unique|itp_type_goods,0,1000,weight(1)|abundance(0)|0,imodbits_none],
@@ -1601,15 +1601,15 @@ if wb_compile_switch==1:
 ["pipeweed_reward","Pipe-weed",[("khazad_dwarf_tobacco_pouch",0)],itp_unique|itp_consumable,0,500,weight(0.2)|abundance(0)|max_ammo(4),imodbits_none],
 
 #wild beasts and bigger variants
-["spider_strong","Huge Spider",[("spider",0)],      itp_type_horse|itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(90)|body_armor(30)|difficulty(10)|horse_speed(20)|horse_maneuver(75)|horse_charge(3)|horse_scale(90),imodbits_none,[]],
+["spider_strong","Huge Spider",[("spider",0)],      itp_type_horse|itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(90)|body_armor(30)|difficulty(10)|horse_speed(23)|horse_maneuver(75)|horse_charge(3)|horse_scale(90),imodbits_none,[]],
 ["bear_strong","Great Bear",    [("bear_2",0)],     itp_type_horse|itp_unique, 0, 1200, hit_points(200)|body_armor(60)|horse_speed(40)|horse_maneuver(60)|horse_charge(70)|horse_scale(130)|difficulty(10),imodbits_none,[]],
-["wolf_strong","Great Wolf",    [("wolf_black_ridable",0)],       itp_type_horse|itp_unique, 0, 1200, hit_points(80)|body_armor(25)|horse_speed(20)|horse_maneuver(75)|horse_charge(3)|horse_scale(70)|difficulty(2),imodbits_none,[]],
+["wolf_strong","Great Wolf",    [("wolf_black_ridable",0)],       itp_type_horse|itp_unique, 0, 1200, hit_points(80)|body_armor(25)|horse_speed(23)|horse_maneuver(75)|horse_charge(3)|horse_scale(70)|difficulty(2),imodbits_none,[]],
 ["boar","Boar",                 [("boar",0)],       itp_type_horse|itp_unique, 0, 1200, hit_points(70)|body_armor(25)|horse_speed(30)|horse_maneuver(75)|horse_charge(45)|horse_scale(105)|difficulty(10),imodbits_none,[]],
 ["boar_strong","Great Boar",    [("boar",0)],       itp_type_horse|itp_unique, 0, 1200, hit_points(110)|body_armor(30)|horse_speed(35)|horse_maneuver(75)|horse_charge(60)|horse_scale(105)|difficulty(10),imodbits_none,[]],
-["beast","Evil Beast",          [("boar_black",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(80)|body_armor(20)|horse_speed(35)|horse_maneuver(75)|horse_charge(50)|horse_scale(105)|difficulty(10),imodbits_none,[]],
-["beast_strong","Huge Evil Beast",[("boar_black",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(120)|body_armor(30)|horse_speed(38)|horse_maneuver(75)|horse_charge(70)|horse_scale(130)|difficulty(10),imodbits_none,[]],
-["kine","Wild Bull",            [("spak_yak1",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(60)|body_armor(18)|horse_speed(35)|horse_maneuver(75)|horse_charge(50)|horse_scale(105)|difficulty(10),imodbits_none,[]],
-["kine_strong","Great Bull",    [("spak_yak2",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(90)|body_armor(30)|horse_speed(40)|horse_maneuver(75)|horse_charge(70)|horse_scale(130)|difficulty(10),imodbits_none,[]],
+["beast","Evil Beast",          [("boar_black",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(80)|body_armor(20)|horse_speed(30)|horse_maneuver(75)|horse_charge(50)|horse_scale(105)|difficulty(10),imodbits_none,[]],
+["beast_strong","Huge Evil Beast",[("boar_black",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(120)|body_armor(30)|horse_speed(33)|horse_maneuver(75)|horse_charge(70)|horse_scale(130)|difficulty(10),imodbits_none,[]],
+["kine","Wild Bull",            [("spak_yak1",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(60)|body_armor(18)|horse_speed(30)|horse_maneuver(75)|horse_charge(50)|horse_scale(105)|difficulty(10),imodbits_none,[]],
+["kine_strong","Great Bull",    [("spak_yak2",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(90)|body_armor(30)|horse_speed(35)|horse_maneuver(75)|horse_charge(70)|horse_scale(130)|difficulty(10),imodbits_none,[]],
 
 
 ["animal_big","Big_Animal", [
