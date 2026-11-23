@@ -2491,13 +2491,7 @@ game_menus = [
   
   ("back_map",[],"{!}Back to map.", [(change_screen_map),]),
   
-     ] + (is_a_wb_menu==1 and [
-    ("camp_mvtest_morannon",[],"{!}Start Black Gate quest",[
-    (jump_to_menu, "mnu_morannon_quest"), 
-    (val_add, "$cheatmode_used", 1), (assign, reg78, "$cheatmode_used"), (display_message,"@{!}Cheats used: {reg78}")
-   ]),
-	] or []) + [
- 
+
   # ("camp_mvtest_pimp",[(eq, cheat_switch, 1)],"{!}Pimp me up first!",
     # [(troop_raise_attribute, "trp_player",ca_strength,20),
      # (troop_raise_attribute, "trp_player",ca_agility,20),
@@ -4980,7 +4974,7 @@ game_menus = [
 	("impose_quest_1",[],"{!}qst_hunt_beast_mayor",[(assign,"$cheat_imposed_quest","qst_hunt_beast_mayor")]),
 	("impose_quest_2",[],"{!}qst_hunt_beast_coop",[(assign,"$cheat_imposed_quest","qst_hunt_beast_coop")]),
 	("impose_quest_3",[],"{!}qst_hunt_down_fugitive",[(assign,"$cheat_imposed_quest","qst_hunt_down_fugitive")]),
-	("impose_quest_4",[],"{!}qst_move_cattle_herd",[(assign,"$cheat_imposed_quest","qst_move_cattle_herd")]),
+	("impose_quest_4",[],"{!}qst_kill_quest_bandit",[(assign,"$cheat_imposed_quest","qst_kill_quest_bandit")]),
 	("impose_quest_5",[],"{!}Hunt Down Refugees",[(assign,"$cheat_imposed_quest","qst_hunt_down_refugees")]),
 	("impose_quest_6",[],"{!}Night Bandits",[(assign,"$cheat_imposed_quest","qst_deal_with_night_bandits")]),
 	("impose_quest_7",[],"{!}qst_defend_village",[(assign,"$cheat_imposed_quest","qst_defend_village")]),
