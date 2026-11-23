@@ -1,6 +1,6 @@
 menu_start_game_1|^^^^^^^^^^Ne için savaşıyorsun?
 mno_start_good|Yeni bir çagın ŞAFAGI
-mno_start_evil|İnsanların alacakaranlıgı
+mno_start_evil|insanlıgın ALACAKARANLIGI
 mno_faction_intros|Orta Dünya'nın farklı tarafları hakkında bilgi edinin
 mno_go_bback|Geri Dön
 menu_start_phase_2|^^^^^ Orta Dünya. Doguda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çagdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
@@ -32,10 +32,10 @@ mno_tutorial_3b_door|sonraki seviye
 mno_tutorial_4|Tutorial #4: At veya warg sürmek. {s4}
 mno_tutorial_5|Ögretici # 5: Bir grup askeri komuta etmek.{s5}
 mno_go_back_dot|Geri dön.
-; menu_reports|^^^{s10}^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}
+menu_reports|^^^{s10}^^Grubun Morali: {reg8}^Grubun Boyut Limiti: {reg7}^{s5}
 mno_action_view_troop_trees|Birim agacını göster.
 mno_view_upkeep_costs|Bakım ücretini gör.
-; mno_view_rank_report|View rank report.
+mno_view_rank_report|Rütbe raporunu görüntüle.
 mno_view_party_size_report|Grup boyutu raporunu görüntüle.
 mno_view_morale_report|Grup moral raporuna görüntüle.
 mno_view_faction_strengths_report|Taraf kuvvetlerinin raporunu görüntüle.
@@ -114,8 +114,8 @@ mno_start_2_bn|Ölü Çagıran'ın kalesinde, DOL GULDUR'da
 menu_choose_gender|^^^^^^^^^^Cinsiyetin?
 mno_start_male|Erkek
 mno_start_female|Kadın
-; menu_choose_skill|Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.
-; mno_proc|Proceed
+menu_choose_skill|Lütfen TLD'nin birçok yetenek ve tahsis'i degiştirdigini unutmayın. TLD'de yeni veya uzun süredir oynamadıysanız, özellik ve yeteneklerin açıklamasını okumanızı tavsiye ederiz. ^^Ayrıca oyun konsepti menüsüde birçok TLD'ye özgü içerik açıklanmıştır
+mno_proc|Devam et
 menu_start_as_one|^^^^^^^^^^Sen ne tür bir askersin?
 mno_start_default|{s23} Ol (Varsayılan)
 mno_start_up1|{s21} Ol (Kolay)
@@ -169,9 +169,9 @@ menu_camp_action|^^^^^^^^ Hangi Eşya?
 mno_camp_drink_water|Ent Suyundan İç !
 mno_camp_drink_orc_brew|Ork içkisinden herkes alsın ve  yanındakine uzatsın!
 mno_camp_drink_miruvor|Miruvor'dan herkes alsın ve  yanındakine uzatsın!
-; mno_camp_use_pipeweed|Share pipe-weed with your companions (rest for a short duration).
+mno_camp_use_pipeweed|Yoldaşlarınla pipo tütününü paylaş (kısa süreligine dinlenin)
 mno_camp_use_athelas|Yara tedavisi için Athelas kullan.
-; mno_camp_use_drums|Beat the Drums of the Deep (wait for some hours).
+mno_camp_use_drums|Derinlerin Davullarını Çal (birkaç saat bekle).
 mno_camp_action_4|Geri.
 menu_assasins_attack_player_won|{s3} tarafından gönderilen {s2} suikastçilerini başarıyla alt ettin.
 menu_assasins_attack_player_retreat|Hayatını Kurtardın.
@@ -200,7 +200,7 @@ menu_cattle_herd|Bazı insanlarla karşılaşıyorsun.
 mno_cattle_drive_away|Takip emri ver.
 mno_cattle_stop|Onları bir mola yerine götür.
 mno_leave|Ayrıl.
-; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.{s17}^^Your orders?
+menu_simple_encounter|^^^^^{s2}^Senin {reg22} askerin onların {reg11} askerine karşı savaşacak.^^Muharebe alanı {s3}{s4}.{s17}^^Emirleriniz?
 mno_encounter_attack|{reg21?Hücum et:Karşılaşmaya hazırlan}.
 mno_encounter_order_attack|Askerlerine sensiz {reg21?saldırmalarını:çarpışmalarını} emret.
 mno_control_allies_menu|Saha içinde müttefiklerinizi etkileme yeteneginizi kullanarak onlara emir verin.
@@ -235,7 +235,7 @@ mno_pre_join_help_attackers|{s2}'e yardıma git.
 mno_pre_join_help_defenders|{s1}'in yardımına koş.
 mno_pre_join_help_refugees|{s1}'in yardımına koş.
 mno_pre_join_leave|Karışma.
-; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}. {s17}
+menu_join_battle|^^^{s1}'e karşı savaşan {s2}'ye yardım ediyorsun.^ Senin {reg22} askerine karşı düşmanın {reg11} askeri bulunuyor.^^Muharebe alanı {s3}{s4}. {s17}
 mno_join_attack|Düşmana hücum et.
 mno_join_order_attack|Askerlerine, sen geride kalırken müttefiklerinizle saldırmalarını emret.
 mno_control_allies_join_menu|Saha içinde müttefiklerinizi etkileme yeteneginizi kullanarak onlara emir verin.
@@ -254,16 +254,16 @@ menu_join_siege_outside|^^^^^^{s1}, {s2} tarafından kuşatıldı.
 mno_approach_besiegers|Kuşatma kampına yaklaş.
 mno_pass_through_siege|Kuşatmayı geç ve {s1} e gir.
 menu_cut_siege_without_fight|Kuşatmacılar zorluk çıkartmadan kapılara yaklaşmana izin verdi.
-; menu_besiegers_camp_with_allies|{s1} is under siege. The banners of {s2} fly above the camp of the besiegers, who are preparing for their next assault. {s17}
+menu_besiegers_camp_with_allies|{s1} kuşatılmaktadır. bir sonraki saldırılarına hazırlanan {s2}'nin sancagı kuştanların kampının üzerinde dalgalanmaktadır. {s17}
 mno_talk_to_siege_commander|Komutan ile görüşme talep et.
 mno_join_siege_with_allies|Sıradaki saldırıya katıl
 mno_join_siege_stay_back|Askerlerine sonraki mücadelede sensiz savaşmalarını emret.
-; menu_moria_must_escape|^^Here lies Balin, Lord of Moria. With some trouble, you can decipher these words on the shattered remains of the tomb.  They tell tale of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
+menu_moria_must_escape|^^Burada Moria'nın lordu Balin yatmaktadır. Birkaç sorun ile, mezardaki parçalanmış kalıntılardan çözebilirsiniz. Cücelerin son bir kez Moria'ya yerleşme çabasını anlatıyordu, deneyen herkesin trajik sonunu da. Onların hazin kaderini düşünürken, biranda fazlaca acıyla aglayan ve acele eden birçok adım sesi duydun.^ Onlar geliyor!^ Çemberi hızlıca terk ediyorsun, seslerin cehennemden geldigini fark ediyorsun. Başka yöne tüymekten başka bir seçenegin yok, daracık, kıvrımlı bir tünelde aşagıya dogru... ^...^Birkaç saat sonra Moriada çok fena kayboldugunu anlıyorsun ve buradan bir çıkış yolu bulman şart.
 mno_moria_exit_scene|Çıkış yolunu bul!
-; menu_moria_escape_sucess|^^After countless hours in the darkness, you finally find a staircase that leads up.  At first it is barely noticeable, but it steadily gets lighter. Finally — a junction that you remember. After a few more steps, you are out in the open.  Your troops have been waiting anxiously for you and can't wait to leave this valley as quickly as possible.
-; mno_moria_exit_found|Get out of here!
+menu_moria_escape_sucess|^^Karanlıkta geçen onca saat sonra, sonunda yukarıya çıkan bir merdiven buluyorsun. Başta neredeyse fark edemedin ama gittikçe daha hafifliyodu. Sonunda — hatırladıgın bir yol. Birkaç adım sonra, dışarıdaydın. Askerlerin sabırsızlıkla seni bekliyordu ve bu vadiyi olabildigince hızlı terk etmek için sabırsızlanıyorlardı
+mno_moria_exit_found|Kaybol!
 menu_castle_outside|Dışarıdasın {s2}.{s11} {s3} {s4}
-; mno_cheat_steal_book_door|Inspect the tomb...
+mno_cheat_steal_book_door|Mezarı incele...
 mno_moria_enter|Gizli girişten Moria’nın ana salonuna dön
 mno_moria_enter_door|Moria'ya gir
 mno_castle_start_siege|{reg6?kasaba:kale}.'yi kuşat.
@@ -290,7 +290,7 @@ mno_siege_defender_troops_join_battle|Askerlerine sensiz savaşa katılmaların�
 mno_siege_defender_do_not_join_battle|Karışma.
 menu_siege_join_defense|{s4}^^Senin kayıpların: {s8}^^Müttefikinin kayıpları: {s9}^^Düşmanın kayıpları: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Bir kaçak tarafından gelen sert bir darbe seni yere yıgar ve gözlerin dönmeye başlar ve kararır. Zaman geçer. Uyandıgında kendini yıpranmış ve kanlar içinde bulursun fakat şans eseri aldıgın hiç bir yara ölümcül degildir.
-; menu_town_bandits_succeeded|^^^^^The bandits fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
+menu_town_bandits_succeeded|^^^^^Bandit'ler önünde bugdayların oraga karşı yıgılması gibi yere yıgıldılar. Az bir zaman sonra kendini tek başına , askerlerini ise bilinçsiz, ölü ve ölmek üzere buldun. Hiç şüphesiz yerliler, onları bu saldırıdan kurtardıgın için sana minnettar olacaklar.
 menu_town_brawl_lost|^^^^^^Şuurunu kaybettin. Saldırdıgın kişiler günlük işlerine dönmeden önce çabucak degerli eşyalar için üzerini ararlar.
 menu_town_brawl_won|^^^^^Rahatsızlıgı yatıştırmak için gönderilen tüm gardiyanları ve rakipleri yendin. Hızlıca degerli eşyalar için onları arıyor ve ardından ortalık sakinleşene kadar ortadan kayboluyorsun.^Belki gelecek sefere daha fazla saygı gösterir ve kenara çekilirler.
 menu_close|Hiçbir şey.
@@ -319,8 +319,8 @@ mno_erebor_gates|Büyük Kapıları ziyaret et.
 mno_erebor_gates_door|Büyük Kapılara git.
 mno_glittering_caves|Parıldayan Magaralara git.
 mno_glittering_caves_door|Parıldayan Magaralara git.
-; mno_mountain_travel|Travel on hidden mountain paths.
-; mno_mountain_travel_door|Travel on hidden mountain paths.
+mno_mountain_travel|Gizli dag yollarında yolculuk yap
+mno_mountain_travel_door|Gizli dag yollarında yolculuk yap
 mno_town_leave|Ayrıl...
 mno_town_leave_door|Bölgeden Ayrıl
 mno_town_find_NPCs_cont|Yap.
@@ -341,15 +341,15 @@ menu_sneak_into_town_caught_dispersed_guards|Kaçmadan önce muhafızları ekip,
 menu_sneak_into_town_caught_ran_away|Kapı tarafından şehirden ayrılıp kasaba dışına, güvenli yerlere geri çekiliyorsun.
 menu_tld_player_defeated|^^^^^Aniden kafanı patlatacakmışcasına bir agrı hissediyorsun! \\ Gözün kararıyor ve titremeye başlıyorsun...^Yoksa bu senin sonun mu?
 menu_recover_after_death_fangorn|Uyandın. Etrafında hala orman var. Her kemigin sızlıyor. Mucize eseri hayattasın.^^Bu bir yenilgiydi fakat en azından neler oldugunu görebildin. ^Şimdi bu lanetlenmiş ormanda neler oldugunu biliyorsun, ^ve bunları anlatabilmek için hayatta kaldın.^^Sana kimse inanır mı ki?
-; menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream. Your party was attacked while waiting for your return.
+menu_recover_after_death_moria|^^^^^Bilincini tekrar kazandın. Yumuşak topragın üzerine uzanmış, temiz havanın yüzünde dolaşmasını hissediyorsun. Dışardasın! ^Orklar öldügünü düşünüp seni kuytu bir çukura atmış olmalılar. ^Bir yeraltı akıntısıyla yüzeye sürüklenmiş olmalısın. Senin dönmeni beklerken grubun saldırıya ugradı.
 mno_whatever|Uyan!
 menu_recover_after_death_default|^^^^^Bilincini tekrar kazandın. Düştügün yerde yatıyorsun. Düşmanların öldügünü düşünüp seni orada bırakmış olmalılar. Ancak, yaraların hiç ölümcül görünmüyor ve berbat hissetmene ragmen hala yürüyebilecegini farkediyorsun. Ayaga kalk ve grubundan birileri hala hayatta mı diye bir göz at.
 menu_recover_after_death_town|^^^^Bilincini tekrar kazanıyorsun ve kendini kasabanın dışında buluyorsun. Hayattasın! Etrafında kimse yok. Kendini kasabadan dışarı sürüklemeye çalışıyorsun. Görünen o ki yaralarının hiç biri ölümcül degilmiş ve kendini çok kötü hissetsen de, hala yürüyebiliyorsun.
 menu_recover_after_death_town_alone|Bilincini tekrar kazanıyorsun ve kendini kasabanın dışında buluyorsun. Hayattasın! Etrafında kimse yok. Kendini kasabadan dışarı sürüklemeye çalışıyorsun. Görünen o ki yaralarının hiç biri ölümcül degilmiş ve kendini çok kötü hissetsen de, hala yürüyebiliyorsun.
 menu_notification_center_under_siege|{s1}, {s3}'ten {s2} tarafından kuşatıldı.
 menu_notification_one_side_left|^^^^^Yüzük için savaş sona erdi!^^ {s1} Tüm düşmanlarını yenerek zafere ulaştı!
-; mno_go_to_capital|Visit your capital and celebrate the victory...
-; mno_exit_game1|Exit
+mno_go_to_capital|Başkenti ziyaret et ve zaferini kutla...
+mno_exit_game1|Çıkış
 menu_notification_total_defeat|^^^^^Yüzük savaşı senin için sona erdi!^^ {s1} düşmanları tarafından bozguna ugratıldı ve sen tek başına maglubiyet içinde kıvranıyorsun!
 menu_notification_your_faction_collapsed|^^^^^Memleketin {s11} yenildi! Yine de, diger müttefiklerin savaşta. {s11}'den kalanlarla beraber, tarafına kazanması için yardım edebilirsin.
 menu_notification_faction_defeated|^^^^^{s1} yenildi!^{s1} artık yok, {s13} kuvvetleri tarafından yok edildi!
@@ -429,44 +429,44 @@ mno_cb_mordor8|Korsanlar
 mno_rescue_mission|Gecenin yardımıyla büyücünün sıgınagına sız.
 mno_next_rescue_scene_door|İleri marş!
 mno_pick_troops1|Görev için yoldaş seç, {reg0} seçili.
-; menu_pick_troops|Whom would you take with you into the mission?    ^Only your most nimble troops and companions will be able to join you.    ^As the party member with the highest wildcraft skill, {reg13?{s1} advises:you decide} that you can take up to {reg11} troops with you.    ^^Currently you have picked {reg12} companions.
+menu_pick_troops|Gizli görev için kimleri yanınıza alırdınız? ^Sadece en çevik askerleriniz ve yol arkadaşlarınız size katılabilme yetenegine sahip olacak. ^En yüksek vahşi yetenek puanına sahip parti üyesi olarak, {reg13?{s1} advises:you decide} en fazla {reg11}  askeri yanınıza alabileceginizi düşünüyorsunuz. ^^Şu anda {reg12} yol arkadaşı seçtiniz.
 mno_go_forward|Yoldaş seçimini bitir ve devam et.
-; menu_burial_mound|^You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
+menu_burial_mound|^{s2} Bölgesinden {s1} isimli kişinin gömülü oldugu topraga yaklaşıyorsun. {s28} Kuvvetleri tarafından savaşta maglup edilmiş. Mezar, ölmüş düşmanlarının çentikli silahlarıyla dolu.
 mno_pay_respects|Diz çök ve saygılarını sun.
 mno_swear_oath|İntikam yemini et!
 mno_despoil|Mekanı kirlet.
 mno_leave_mound|Höyügü terket.
 menu_burial_mound_respects|Diz çöküp {s1}'e saygını sunuyorsun, öteki hayata hızlı geçişi için sessizce dua ediyorsun. Burada yapacak bir şey kalmadı.
-; menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s4}.   You would relentlessly seek out {s3} and destroy {reg11?her:him}.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
+menu_burial_mound_oath|{s4}'ün ölümü üzerine bagırarak intikam yemini ediyorsun. Hiç durmadan {s3}'ü arayacak ve {reg11?her:him}'i yok edeceksin. Sözlerin rüzgarla uzaklara taşınıyor, denizin ötesinden duyulmadıklarını kim söyleyebilir?
 menu_funeral_pyre_oath|{s4}'ün ölümü üzerine bagırarak intikam yemini ediyorsun. Hiç durmadan {s3} kuvvetlerini arayacak ve onları yok edeceksin. Sözlerin rüzgarla uzaklara taşınıyor, denizin ötesinden duyulmadıklarını kim söyleyebilir?
 menu_burial_mound_despoil| {s1}'ın mezarını ellerinle yıkıyorsun ve taşlarını lanetlerle, merhametsiz şarkılarla ve agza alınmayacak hareketlerle lekeliyorsun. Yoldaşların ölünün korkusundan geri çekiliyorlar fakat senin kötülügüne duydukları saygı yenilenmiş gibi görünüyor.
-; menu_funeral_pyre|^You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
+menu_funeral_pyre|^{s3} {s2} arasında kömürleşmiş cenazesinin kalıntılarına yaklaşıyorsun. {s28} ile savaşırken bozguna ugramışlar. Burada, onun cesedi muhafızları tarafından törenle yakılmış. Kayda deger hiçbir şey kalmamış.
 mno_leave_pyre|Kremasyon alanını terket.
-menu_town_ruins|{s1} 'in {s2} oldupunu görmek için yaklaştıgında..
+menu_town_ruins|{s1} 'in {s2} oldugunu görmek için yaklaştıgında..
 mno_ruin_menu_0|Etrafı keşfet.
 mno_ruin_leave|Ayrıl...
 menu_death|Öldürüldün. Savaş devam etse bile artık onun bir parçası degilsin.
 menu_animal_ambush|Yoldaşlarınla birlikte kendinizi grubunuzdan izole edilmiş olarak buluyorsunuz ve aniden...
 menu_animal_ambush_success|Tıpkı ekinlerin oraga boyun egdigi gibi, {s2}'de sana {reg0?egiliyor:egiliyorlar}! Çok geçmeden tüm saldırganlar yerde yatıyor, yaralı ya da ölü. {s3}
-; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
-; menu_isengard_flooding|^^^^^You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
+menu_animal_ambush_fail|Hayvanlar hırlamaya ve sizi ısırmaya çalışıyorlar, şans eseri onları geri püskürtmeyi başardın. Umarım tekrardan saldırmazlar.
+menu_isengard_flooding|^^^^^Ölü düşmanlar ve zafer kazanmış müttefikler tarafından çevrili durumdasın, Ent'ler dahil; kükreyerek, gürleyerek ve trompet çalarak, taşların çatladıgı ve Orthanc Kulesi etrafında düştügü bir ses dalgası yaratıyorlar. Adeta uguldayan bir fırtına gibi, sütunları kırıyor, taşların lavinelerini şaftlara dogru savuruyor, büyük taş levhalarını yapraklar gibi havaya fırlatıyorlar... Daha önce hiç görmedigin bir manzara gibi.^^ Bregalad - ya da onu tanıdıgın gibi Quickbeam - yanından geçiyor ve sadece şunu söyleyip duruyor, '{playername}! Dikkat! Kuleden uzak dur -- yakında barajı kıracagız ve Isen'i bu vadiye getirecegiz, kısa bir süreligine. Burada durmak oldukça zor olacaktır, diye düşünüyorum!' Hızlıca, onun tavsiyesini dinleyip Orthanc'tan uzaklaşıyorsun.^^ Yaklaşık gece yarısında, Isengard sürünen kara akıntılar ve göletlerle dolmaya başlıyor. Büyük sütunlar halinde yükselen duman ve buharı görünce ürpermekten kendini alamıyorsun ve bu buharın Kulenin etrafında yükselip büyük bir sarmal oluşturdugunu görüyorsun, adeta alttan alevli, üstten ay ışıgı vuran bulanık bir zirve... Ent'lerin öfkesi yavaş, ancak kararlı bir güce sahip...
 mno_isengard_continue|Devam et
 menu_build_your_scene|Aşagıda verilen yuvalardan birini ve oyun düzenleme modunu kullanarak kendi savaş sahnenizi oluşturabilirsiniz (önce M&B Başlangıç ekranı Seçeneklerinde düzenleme modunu AÇIK duruma getirmeniz, ardından düzenleme moduna erişmek için bir sahnede Ctrl + E tuşlarına basmanız gerekir). Daha sonra oluşturdugunuz sahneleri (yani, TLD / SceneObj klasöründen sco dosyaları) TLD'nin geliştirici ekibine gönderebilirsiniz ve sahneniz iyiyse, sonraki sürümlerde rastgele savaş alanlarından biri olarak görünebilir!^^ Sahnenizin görünmesini istediginiz haritada hangi bölgeyi belirlemeye çalışın.^ Birkaç ipucu: deneyimli bir sahne yapımcısı degilseniz ve yapay zeka birliklerinin istemediginiz yerde yürümesini nasıl engelleyeceginizi ve diger yerlerde yapay zeka örgüsü oluşturmayı bilmiyorsanız derin sulardan, sarp daglardan ve diger geçilmez yerlerden kaçının.^ (Girişler # 0-1 saldırganlar içindir, # 4 savunanlar içindir, # 5-8'e dokunmayın)
 mno_back_3dot|Geri...
-; menu_wott_expelled_from_faction|For your betrayal, you were expelled from your faction and {s11} has named you an outlaw and an enemy of the {reg11?Hand:Eye}. As an exile, you are now forced to join {s3}.
-; menu_wott_stay_with_faction|{s11} applauds your wise counsel. Your faction follows your example and collectively joins {s12}.
-; menu_fulfilled_oath_personal|^As {s5} lies in the dust before you, a heavy burden is lifted from your shoulders. The death of {s6} has been avenged!
-; menu_fulfilled_oath_personal_nokill|^Your troops recognize that you have defeated {s10} repeatedly and should rightfully be seen as {reg11?her:his} worst foe. Your oath is considered fulfilled. ^^The enemy paid dearly for the killing of {s11}. Still, there is a stale taste to this victory.
-; menu_oath_quest_fail|You swore a bitter oath and you bitterly failed to keep it. Your enemies laugh at your failure, and all your friends suffer from the shame you have brought upon them. In all the lands of Middle-earth, you shall be known as an oathbreaker.
-; menu_campaign_won|^^^Thank you for playing The Last Days of the Third Age!
-; mno_credits_tld|TLD Credits
-; mno_exit_game2|Quit to main menu
-; menu_companion_promoted_event|^^^A new hero   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!
-; menu_mountain_travel|As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.
-; menu_mountain_travel_arrived|After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}
-; mno_hunt_begin|Let the hunt begin!.
-; mno_pick_troops_hunt|Pick companions for the hunt, {reg15} selected
-; menu_hunt_beast_debrief|{s9}^^Your Casualties:{s8}
+menu_wott_expelled_from_faction|İhanetin için, tarafından atıldın ve {s11} seni kanun kaçagı ve {reg11?Hand:Eye}'in düşmanı olarak tarihe geçirdi. {s3}e katılmaya sürgün edildin.
+menu_wott_stay_with_faction|{s11} senin bilge nasihatini takdir etti. Tarafın artık seni ögrnek olarak görüyor {s12}.
+menu_fulfilled_oath_personal|^{s5} önündeki yatarken, omuzlarından koca bir yük kalktı. {s6}'nın ölümü yerde kalmadı!
+menu_fulfilled_oath_personal_nokill|^Askerlerin  {s10} u çok kez yendigini farketti {reg11?her:his} ün en kötü düşmanın olarak görülüyorsun. Yeminin tamamlandı sayıldı. ^^Düşman {s11}'i öldürmenin nası bişey oldugunu gösterdik. Yinede, bu zaferin bayat bir tadı var.
+menu_oath_quest_fail|Çok agır bir yemin ettin ve bunu tutmakta başarısız oldun. Düşmanların senin başarısızlıgına gülüyor, tüm arkadaşların senin getirdigin utançdan muzdaripler. Orta Dünyadaki bütün topraklarda yeminini tutamayan biri olarak anılacaksın.
+menu_campaign_won|^^^The Last Days of the Third Age'i oynadıgınız için teşekkür ederiz!
+mno_credits_tld|TLD Yapımcıları
+mno_exit_game2|Ana menüye dön
+menu_companion_promoted_event|^^^Yeni bir kahraman   ^^Dünya sana sesleniyor... {s2} savaşçısı {s3}'ün saflarına katıldı. {s1}'in halkı sancagına dogru {reg3?her:his} mitinge!
+menu_mountain_travel|{s24} olarak, Dumanlı ve Gri Daglarındaki tüm yeraltı kasabalarını birbirine baglayan gizli geçit ve tünellere girmene izin verildi. Yön bulma yetenegine baglı, geçit uzun ve tehlikeli olabilir. Ama ovadaki gözetleyen gözlerden gizli olacaksın.
+menu_mountain_travel_arrived|Tehlikeli daglardan ve kara tünellerden sonra, sonunda vardıgın yer {s4}. {s5}^^{s3}
+mno_hunt_begin|Av başlasın!
+mno_pick_troops_hunt|Av için yoldaş seç,  {reg15} seçildi
+menu_hunt_beast_debrief|{s9}^^Kayıplarınız:{s8}
 mno_back|Geri dön
 mno_next|Sonraki...
 mno_previous|Önceki...

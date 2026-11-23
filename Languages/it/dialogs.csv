@@ -1155,7 +1155,7 @@ dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrende
 dlga_kingdom_companion_meet:kingdom_companion_intro|Io sono {playername}.
 dlga_kingdom_companion_meet:kingdom_companion_intro.1|Il mio nome è {playername}. Al tuo servizio.
 dlga_start:kingdom_companion_start|Salute, {playername}...
-dlga_kingdom_companion_start:close_window.1|Se avete affari con la nostra azienda, dovreste parlare con i miei {s5}, {s3}.
+dlga_kingdom_companion_start:close_window.1|Per ogni situazione, dovresti conferire con mio {s5}, {s3}.
 dlga_kingdom_companion_leaving:close_window|Addio.
 dlga_party_encounter_hostile_defender:close_window|Niente. Non vi daremo fastidio.
 dlga_start:close_window.53|* ti fissa in silenzio *

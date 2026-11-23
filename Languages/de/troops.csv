@@ -110,7 +110,7 @@ trp_i1_rhun_tribesman|Stammesmann aus Rhun
 trp_i1_rhun_tribesman_pl|Stammesmänner aus Rhun
 trp_ac2_rhun_horse_scout|Berittener Späher aus Rhun
 trp_ac2_rhun_horse_scout_pl|Berittene Späher aus Rhun
-trp_ac3_rhun_horse_archer|Berittene Bogenschützen aus Rhun
+trp_ac3_rhun_horse_archer|Berittener Bogenschütze aus Rhun
 trp_ac3_rhun_horse_archer_pl|Berittene Bogenschützen aus Rhun
 trp_ac4_rhun_veteran_horse_archer|Erfahrener berittener Bogenschütze aus Rhun
 trp_ac4_rhun_veteran_horse_archer_pl|Erfahrene berittene Bogenschützen aus Rhun
@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|Erfahrener Schwertkämpfer aus Umbar
 trp_i4_corsair_veteran_swordsman_pl|Erfahrene Schwertkämpfer aus Umbar
 trp_i5_corsair_master_swordsman|Schwertmeister der Korsaren
 trp_i5_corsair_master_swordsman_pl|Schwertmeister der Korsaren
-; trp_i6_corsair_guard|Captain's Guard of Umbar
-; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
+trp_i6_corsair_guard|Kapitänsgardist aus Umbar
+trp_i6_corsair_guard_pl|Kapitänsgardisten aus Umbar
 trp_a5_corsair_master_assassin|Meuchler der Korsaren
 trp_a5_corsair_master_assassin_pl|Meuchler der Korsaren
 trp_i4_corsair_veteran_spearman|Erfahrener Speerträger aus Umbar
@@ -1444,7 +1444,7 @@ trp_elder_gunda_ne|Orkältester
 trp_elder_gunda_ne_pl|dem Lager
 trp_elder_gunda_nw|Orkältester
 trp_elder_gunda_nw_pl|dem Lager
-; trp_elder_moria_s|Orc Camp Chief
+trp_elder_moria_s|Lageraufseher der Orks
 trp_elder_moria_s_pl|dem Lager
 trp_elder_gunda_m|Orkältester
 trp_elder_gunda_m_pl|dem Lager
@@ -1540,10 +1540,10 @@ trp_black_shield_guard|Wache aus Amath Dollen
 trp_black_shield_guard_pl|Wachen aus Amath Dollen
 trp_dorwinion_spirit_leader|Geist
 trp_dorwinion_spirit|Niederer Geist
-; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
-; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
-; trp_i6_dun_retainer|Dunnish Retainer
-; trp_i6_dun_retainer_pl|Dunnish Retainers
+trp_i6_greenwood_2h_axeman|Axtmeister aus dem Grünwald
+trp_i6_greenwood_2h_axeman_pl|Axtmeister aus dem Grünwald
+trp_i6_dun_retainer|Bestienzähmer aus Dunland
+trp_i6_dun_retainer_pl|Bestienzähmer aus Dunland
 trp_i6_beorning_bear_warrior|Bärenkrieger
 trp_i6_beorning_bear_warrior_pl|Bärenkrieger
 trp_a5_dun_night_wolf|Nachtwolf aus Dunland
@@ -1640,39 +1640,39 @@ trp_future_animal_0|Wolf
 trp_future_animal_0_pl|Wölfe
 trp_spider|Spinne des Düsterwalds
 trp_spider_pl|Spinnen des Düsterwalds
-; trp_spider_strong|Great Spider
-; trp_spider_strong_pl|Great Spiders
+trp_spider_strong|Riesenspinne
+trp_spider_strong_pl|Riesenspinnen
 trp_bear|Bär
 trp_bear_pl|Bären
-; trp_bear_strong|Great Bear
-; trp_bear_strong_pl|Great Bears
+trp_bear_strong|großer Bär
+trp_bear_strong_pl|große Bären
 trp_wolf|Wolf
 trp_wolf_pl|Wölfe
-; trp_wolf_strong|Huge Wolf
-; trp_wolf_strong_pl|Huge Wolves
+trp_wolf_strong|Riesenwolf
+trp_wolf_strong_pl|Riesenwölfe
 trp_werewolf|Werwolf
 trp_werewolf_pl|Werwölfe
-; trp_boar|Boar
-; trp_boar_pl|Boars
-; trp_boar_strong|Great Boar
-; trp_boar_strong_pl|Great Boars
-; trp_evil_beast|Evil Beast
-; trp_evil_beast_pl|Evil Beast
-; trp_evil_beast_strong|Huge Evil Beast
-; trp_evil_beast_strong_pl|Huge Evil Beasts
-; trp_bull|Wild Bull
-; trp_bull_pl|Wild Kine
-; trp_bull_strong|Great Bull
-; trp_bull_strong_pl|Great Kine
-; trp_stag|Stag
-; trp_stag_pl|Stags
+trp_boar|Wildschwein
+trp_boar_pl|Wildschweine
+trp_boar_strong|Riesenwildschwein
+trp_boar_strong_pl|Riesenwildschweine
+trp_evil_beast|garstiges Biest
+trp_evil_beast_pl|garstige Biester
+trp_evil_beast_strong|riesiges Monstrum
+trp_evil_beast_strong_pl|riesige Monstren
+trp_bull|wilder Stier
+trp_bull_pl|wilde Stiere
+trp_bull_strong|Großbulle
+trp_bull_strong_pl|Großbullen
+trp_stag|Hirsch
+trp_stag_pl|Hirsche
 trp_future_animal_4|Wolf
 trp_future_animal_4_pl|Wölfe
 trp_future_animal_5|Wolf
 trp_future_animal_5_pl|Wölfe
-; trp_guthlaf|Guthláf
+trp_guthlaf|Guthláf
 trp_damrod|Damrod
 trp_duilin|Duilin
 trp_derufin|Derufin
-; trp_rumil|Rúmil
-; trp_lugdush|Lugdush
+trp_rumil|Rúmil
+trp_lugdush|Lugdusch

@@ -1,7 +1,7 @@
 dlga_start:mutiny_pretalk_1|Эй, {playername}, вот что мы тебе скажем... ^Парни недовольны! Хотят веселиться, а не маршировать туда-сюда.
-; dlga_mutiny_pretalk_1:mutiny_pretalk_2|Fall back in line, maggot! We are at war and I'm your commander. [Charisma]
-; dlga_mutiny_pretalk_1:close_window|Want some fun eh? You maggot! I will slay you here and now, that will keep the lads entertained!
-; dlga_mutiny_pretalk_1:close_window.1|I will not tolerate such treacherous talk! Guards, kill him and his cronies!
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|В строй, червяк! Мы на войне, и я — твой командир. [Харизма]
+dlga_mutiny_pretalk_1:close_window|Хочешь повеселиться, а? Ах ты червь! Я прикончу тебя прямо здесь и сейчас — вот уж ребята позабавятся!
+dlga_mutiny_pretalk_1:close_window.1|Я не потерплю подобных предательских речей! Стража, убейте его и его приспешников!
 dlga_mutiny_pretalk_2:close_window|Как прикажешь, командир. Как прикажешь...
 dlga_start:mutiny_talk_1|Эй, командир, вот что мы тебе скажем... Парни не рады, совсем не рады.^Мало человечины, мало веселья.^Парни толкуют, что ты не так уж и хорош, командир!
 dlga_mutiny_talk_1:mutiny_talk_2|Что? Бунт в военное время?^Такое карается смертью, слизняк!
@@ -122,15 +122,15 @@ dlga_member_separate:member_separate_confirm|Серьезно? Что ж, я н�
 dlga_member_separate_confirm:member_separate_yes|Именно так. Наши пути расходятся.
 dlga_member_separate_confirm:do_member_trade|Нет, останься со мной.
 dlga_member_separate_yes:close_window|Ну, я тогда пойду. Обращайся, если понадоблюсь.
-; dlga_member_talk:member_promote_lord|You should return to {s14} and gather warriors to lead against the enemy.
-; dlga_member_promote_lord:member_talk|Hrmph! Why should I care about {s14}? I'd rather stay here with you.
-; dlga_member_promote_lord:member_talk.1|Return to what? {s14} is gone. Perhaps if I had been able to return sooner it might have made some difference, but now the best place for me to seek vengeance is at your side.
-; dlga_member_promote_lord:member_talk.2|There are few who would follow me, I'm afraid. Perhaps I could learn a thing or two about leadership from you? Then we can discuss this again.
-; dlga_member_promote_lord:member_talk.3|{s14} remains strong in the face of our enemies and has no need of additional commanders. If a commander of {s14} should fall in battle let us speak of this again, but for now I think it is better if I stay with you.
-; dlga_member_promote_lord:member_promote_lord_2|Perhaps you're right. {s14} has need of more capable commanders. {s15} Are you sure you're ready for me to leave your side?
-; dlga_member_promote_lord_2:member_promote_lord_leaving|I am sure. You can do more leading a host of your own.
-; dlga_member_promote_lord_leaving:close_window|Well. I'll be off, then. Perhaps we will meet again.
-; dlga_member_promote_lord_2:do_member_trade|On second thought I'd rather you stay with me for now.
+dlga_member_talk:member_promote_lord|Вам следует вернуться в {s14} и собрать воинов, чтобы повести их против врага.
+dlga_member_promote_lord:member_talk|Хмф! С какой стати мне интересоваться {s14}? Лучше останусь здесь, с тобой.
+dlga_member_promote_lord:member_talk.1|Вернуться  куда? {s14} больше нет. Возможно, если бы мне удалось вернуться раньше, это что-то изменило бы, но теперь лучшее место, чтобы вершить месть, рядом с тобой.
+dlga_member_promote_lord:member_talk.2|Боюсь, найдётся немного желающих последовать за мной. Может быть, я мог бы кое-чему научиться у вас в плане лидерства? А потом мы сможем вернуться к этому разговору.
+dlga_member_promote_lord:member_talk.3|{s14} твердо стоит перед лицом наших врагов, и дополнительные командиры ей не нужны. Если кто-то из командиров {s14} падет в бою — что ж, тогда мы вернемся к этому разговору, а пока, думаю, мне лучше остаться с вами.
+dlga_member_promote_lord:member_promote_lord_2|Пожалуй, ты прав. {s14} нуждается в более способных командирах. {s15} Ты уверен, что готов к тому, что я покину твою сторону?
+dlga_member_promote_lord_2:member_promote_lord_leaving|Я уверен. Возглавляя собственное войско, ты сможешь добиться большего.
+dlga_member_promote_lord_leaving:close_window|Что ж. Пожалуй, я пойду. Возможно, мы ещё встретимся.
+dlga_member_promote_lord_2:do_member_trade|Пожалуй, лучше будет, если ты пока останешься со мной.
 dlga_member_talk:member_question|Я хочу попросить тебя об услуге.
 dlga_member_talk:close_window|Неважно.
 dlga_member_question:member_question_2|Очень хорошо. Что вы хотели спросить?
@@ -189,21 +189,21 @@ dlga_companion_personalitymatch_response:close_window|Очень хорошо.
 dlga_event_triggered:companion_faction_demolished|{s5}!  {reg6?Наша:Моя} родина,  {s6}, тяжело страдает в этой войне. ^Я прошу тебя подумать о том, чтобы помочь {reg6?нашему:моему} народу, как только мы отдохнем и будем готовы.
 dlga_companion_faction_demolished:close_window|Мы немедленно отправляемся на помощь державе {s6}.
 dlga_companion_faction_demolished:close_window.1|Мне жаль, но мы нужны в другом месте.
-; dlga_event_triggered:companion_faction_dying_pretalk|{s5}, I am sorry, but the suffering of {reg6?our:my} {s6} homeland is too great. I must return at once to provide what aid I can.
-; dlga_companion_faction_dying_pretalk:companion_faction_dying|Farewell, {s5}.
-; dlga_companion_faction_dying:close_window|Very well. Perhaps we will meet again.
-; dlga_companion_faction_dying:companion_give_troops|Of course. I shall also permit other warriors of {s6} to go with you.
-; dlga_companion_give_troops:companion_give_troops_check|I will be glad to have them with me. {s6} needs all the help you can provide.
+dlga_event_triggered:companion_faction_dying_pretalk|{s5}, извините, но страдания {reg6?our:my} {s6} слишком велики. Я должен немедленно вернуться, чтобы оказать всю возможную помощь.
+dlga_companion_faction_dying_pretalk:companion_faction_dying|Прощай, {s5}.
+dlga_companion_faction_dying:close_window|Что ж. Возможно, мы ещё встретимся.
+dlga_companion_faction_dying:companion_give_troops|Разумеется. Я также позволю другим воинам {s6} отправиться вместе с вами.
+dlga_companion_give_troops:companion_give_troops_check|Буду рад, если они будут со мной. {s6} нуждается в любой помощи, которую вы можете оказать.
 dlga_companion_give_troops:companion_give_troops_final|К несчастью, при тебе нет воинов из державы {s14}, которых я бы мог взять с собой.
 dlga_companion_give_troops_check:companion_give_troops_check_1|Дай мне проверить списки воинов...
 dlga_companion_give_troops_check_1:companion_give_troops_final|Так вы изменили своё решение...^Понимаю.
 dlga_companion_give_troops_check_1:companion_give_troops_final.1|От этих бойцов мне нет толку...^Забери их обратно.
-; dlga_companion_give_troops_final:close_window|Farewell, commander.
-; dlga_companion_faction_dying:companion_faction_dying_trade|Let me see your equipment before you leave.
+dlga_companion_give_troops_final:close_window|Прощайте, командир.
+dlga_companion_faction_dying:companion_faction_dying_trade|Покажите мне своё снаряжение, прежде чем уйти.
 dlga_companion_faction_dying_trade:companion_faction_dying_pretalk|Очень хорошо, есть все необходимое...
-; dlga_companion_faction_dying:companion_faction_dying_persuade|I understand, but you are needed here.
-; dlga_companion_faction_dying_persuade:close_window|Perhaps you are right. I can serve {s6} better by fighting at your side.
-; dlga_companion_faction_dying_persuade:close_window.1|I'm afraid that {s6} needs me more. Farewell, {s5}.
+dlga_companion_faction_dying:companion_faction_dying_persuade|Я понимаю, но вы здесь нужны.
+dlga_companion_faction_dying_persuade:close_window|Пожалуй, вы правы. Я смогу принести {s6} больше пользы, сражаясь на вашей стороне.
+dlga_companion_faction_dying_persuade:close_window.1|Боюсь, что {s6} нуждается во мне больше. Прощай, {s5}.
 dlga_companion_home_description:companion_home_description_2|Расскажите мне больше.
 dlga_companion_home_description:close_window|У нас нет времени на болтовню.
 dlga_companion_home_description:close_window.1|Я предпочитаю, чтобы мои соратники не беспокоили меня из-за такой ерунды.
@@ -482,7 +482,7 @@ dlga_send_gift_3:send_gift_4.1|Какую взятку ты хочешь им д
 dlga_send_gift_4:lord_pretalk|Неважно.
 dlga_send_gift_5:lord_pretalk|Хорошо {playername}. Удачи.
 dlga_lord_talk:lord_give_order_ask|У меня для вас есть новое задание.
-; dlga_lord_give_order_ask:lord_pretalk|My duty is to defend my homeland. I will not accept any other assignments.
+dlga_lord_give_order_ask:lord_pretalk|Мой долг — защищать свою родину. Никаких других поручений я не приму.
 dlga_lord_give_order_ask:lord_give_order|Да?
 dlga_lord_give_order:lord_give_order_answer|Следуйте за мной. [потратить {reg1}/{reg2} очков влияния]
 dlga_lord_give_order:lord_give_order_details_ask|Направиться в... [потратить {reg1}/{reg2} очков влияния]
@@ -668,9 +668,9 @@ dlga_lord_mission_told:lord_mission_accepted|Вы можете рассчиты�
 dlga_lord_mission_told:lord_mission_rejected|Боюсь, я не могу сейчас за это взяться.
 dlga_lord_mission_accepted:close_window|Превосходно, {playername}, превосходно. На тебя можно положиться.
 dlga_lord_mission_rejected:close_window|Вот как? Что ж, думаю, ты просто не справишься с этим заданием. Я поищу кого-нибудь похрабрее.
-; dlga_lord_talk:lord_return_items|I need you to return the unique {reg2?items:item} I gave you.
-; dlga_lord_return_items:lord_talk|Of course I will return {reg2?these items:this item} to you but it seems like you have no room in your inventory currently. Make some room, then ask me again.
-; dlga_lord_return_items:lord_talk.1|Of course. Here {reg2?they are:it is}.
+dlga_lord_talk:lord_return_items|Мне нужно, чтобы ты вернул тот уникальный {reg2?items:item} который я тебе дал.
+dlga_lord_return_items:lord_talk|Конечно, я верну {reg2?these items:this item} тебе, но, похоже, у тебя сейчас нет места в инвентаре. Освободи место, а потом попроси меня снова.
+dlga_lord_return_items:lord_talk.1|Конечно. Здесь {reg2?they are:it is}.
 dlga_lord_talk:lord_leave_prison|Мне надо идти.
 dlga_lord_talk:lord_leave|Наша короткая беседа подошла к концу. Мне надо идти.
 dlga_lord_talk:lord_leave.1|Я долж{ен/на} идти.
@@ -916,8 +916,8 @@ dlga_mayor_sea_battle_no:close_window|Поспешите, мы не можем �
 dlga_mayor_talk:mayor_reinforced_center_finished|Я помог{/ла} {s3} как ты меня и просил.
 dlga_mayor_begin:kill_quest_bandits_failed|Я слышал что Вы не справились с моим поручением. Я огорчён, {playername}.
 dlga_kill_quest_bandits_failed:close_window|В следующий раз я постараюсь быть лучше.
-; dlga_mayor_begin:mayor_hunt_beast_quest_failed|I have heard that the {s9} slipped your grasp and that its trail was lost. It may have vanished for now, but the danger remains.
-; dlga_mayor_hunt_beast_quest_failed:close_window|This was no ordinary beast. I failed this time, but I shall not underestimate the wilds again.
+dlga_mayor_begin:mayor_hunt_beast_quest_failed|До меня дошли слухи, что {s9} ускользнул у вас из рук и его след был потерян. Возможно, сейчас он исчез, но опасность никуда не делась.
+dlga_mayor_hunt_beast_quest_failed:close_window|Это был не обычный зверь. В этот раз я потерпел неудачу, но впредь не стану недооценивать дикую природу.
 dlga_mayor_talk:mayor_deliver_food|Вот провиант, {reg9} мешков.
 dlga_mayor_deliver_food:mayor_deliver_food_completed|Отличная работа, {playername}, наши запасы пополнены, и угроза голода миновала.
 dlga_mayor_deliver_food_completed:close_window|Я стараюсь, как могу.
@@ -1154,8 +1154,8 @@ dlga_start:party_encounter_hostile_defender|Что вы хотите?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Сдайся или умри!
 dlga_kingdom_companion_meet:kingdom_companion_intro|Я {playername}.
 dlga_kingdom_companion_meet:kingdom_companion_intro.1|Меня зовут {playername}. Я к вашим услугам.
-; dlga_start:kingdom_companion_start|Greetings, {playername}...
-; dlga_kingdom_companion_start:close_window.1|If you have business with our company you should speak with my {s5}, {s3}.
+dlga_start:kingdom_companion_start|Приветствую, {playername}...
+dlga_kingdom_companion_start:close_window.1|Если у вас есть дела с нашей компанией, вам следует поговорить с моим {s5}, {s3}.
 dlga_kingdom_companion_leaving:close_window|Прощайте.
 dlga_party_encounter_hostile_defender:close_window|Ничего. Мы оставим вас в покое.
 dlga_start:close_window.53|* молча смотрит на вас *

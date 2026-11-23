@@ -860,12 +860,12 @@ itm_spider_mount|Spinne
 ; itm_marker_banner_troop|Trait: Banner
 ; itm_pipeweed_reward|Pipe-weed
 ; itm_spider_strong|Huge Spider
-; itm_bear_strong|Great Bear
+itm_bear_strong|großer Bär
 itm_wolf_strong|Großer Wolf
-; itm_boar|Boar
-; itm_boar_strong|Great Boar
-; itm_beast|Evil Beast
-; itm_beast_strong|Huge Evil Beast
-; itm_kine|Wild Bull
-; itm_kine_strong|Great Bull
+itm_boar|Wildschwein
+itm_boar_strong|Riesenwildschwein
+itm_beast|garstiges Biest
+itm_beast_strong|riesiges Monstrum
+itm_kine|wilder Stier
+itm_kine_strong|Großbulle
 ; itm_torch|Torch

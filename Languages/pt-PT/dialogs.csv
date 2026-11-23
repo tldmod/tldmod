@@ -1,5 +1,5 @@
 dlga_start:mutiny_pretalk_1|Ei, {playername}. Nós queremos dizer uma coisa... ^Os rapazes estão reclamando! Queremos mais diversão, e menos marcha por ai.
-; dlga_mutiny_pretalk_1:mutiny_pretalk_2|Fall back in line, maggot! We are at war and I'm your commander. [Charisma]
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|Volte para a formação, verme! Estamos em guerra e eu sou seu comandante. [Carisma]
 ; dlga_mutiny_pretalk_1:close_window|Want some fun eh? You maggot! I will slay you here and now, that will keep the lads entertained!
 ; dlga_mutiny_pretalk_1:close_window.1|I will not tolerate such treacherous talk! Guards, kill him and his cronies!
 dlga_mutiny_pretalk_2:close_window|Como desejar, comandante. Como desejar...

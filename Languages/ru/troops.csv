@@ -578,8 +578,8 @@ trp_i4_corsair_veteran_swordsman|Опытный мечник Умбара
 trp_i4_corsair_veteran_swordsman_pl|Опытные мечники Умбара
 trp_i5_corsair_master_swordsman|Искусный корсар-мечник
 trp_i5_corsair_master_swordsman_pl|Искусные корсары-мечники
-; trp_i6_corsair_guard|Captain's Guard of Umbar
-; trp_i6_corsair_guard_pl|Captain's Guards of Umbar
+trp_i6_corsair_guard|Капитанская стража Умбара
+trp_i6_corsair_guard_pl|Капитанская стража Умбара
 trp_a5_corsair_master_assassin|Корсар-убийца
 trp_a5_corsair_master_assassin_pl|Корсары-убийцы
 trp_i4_corsair_veteran_spearman|Умбарский копейщик-ветеран
@@ -1540,10 +1540,10 @@ trp_black_shield_guard|Охранник Амат Доллен
 trp_black_shield_guard_pl|Охранники Амат Доллен
 trp_dorwinion_spirit_leader|Дух
 trp_dorwinion_spirit|Меньший дух
-; trp_i6_greenwood_2h_axeman|Greenwood Axemaster
-; trp_i6_greenwood_2h_axeman_pl|Greenwood Axemaster
-; trp_i6_dun_retainer|Dunnish Retainer
-; trp_i6_dun_retainer_pl|Dunnish Retainers
+trp_i6_greenwood_2h_axeman|Мастер топора Зеленолесья
+trp_i6_greenwood_2h_axeman_pl|Мастер топора Зеленолесья
+trp_i6_dun_retainer|Дунландский слуга
+trp_i6_dun_retainer_pl|Дунландские слуги
 trp_i6_beorning_bear_warrior|Воин-Медведь
 trp_i6_beorning_bear_warrior_pl|Воины-Медведи
 trp_a5_dun_night_wolf|Дунландский ночной волк
@@ -1640,39 +1640,39 @@ trp_future_animal_0|Волк
 trp_future_animal_0_pl|Волки
 trp_spider|Паук из Темнолесья
 trp_spider_pl|Пауки из Темнолесья
-; trp_spider_strong|Great Spider
-; trp_spider_strong_pl|Great Spiders
+trp_spider_strong|Великий паук
+trp_spider_strong_pl|Великие пауки
 trp_bear|Медведь
 trp_bear_pl|Медведи
-; trp_bear_strong|Great Bear
-; trp_bear_strong_pl|Great Bears
+trp_bear_strong|Большой Медведь
+trp_bear_strong_pl|Великие медведи
 trp_wolf|Волк
 trp_wolf_pl|Волки
-; trp_wolf_strong|Huge Wolf
-; trp_wolf_strong_pl|Huge Wolves
+trp_wolf_strong|Огромный волк
+trp_wolf_strong_pl|Огромные волки
 trp_werewolf|Оборотень
 trp_werewolf_pl|Оборотни
-; trp_boar|Boar
-; trp_boar_pl|Boars
-; trp_boar_strong|Great Boar
-; trp_boar_strong_pl|Great Boars
-; trp_evil_beast|Evil Beast
-; trp_evil_beast_pl|Evil Beast
-; trp_evil_beast_strong|Huge Evil Beast
-; trp_evil_beast_strong_pl|Huge Evil Beasts
-; trp_bull|Wild Bull
-; trp_bull_pl|Wild Kine
-; trp_bull_strong|Great Bull
-; trp_bull_strong_pl|Great Kine
-; trp_stag|Stag
-; trp_stag_pl|Stags
+trp_boar|Кабан
+trp_boar_pl|Кабаны
+trp_boar_strong|Большой Кабан
+trp_boar_strong_pl|Великие  кабаны
+trp_evil_beast|Злой зверь
+trp_evil_beast_pl|Злой зверь
+trp_evil_beast_strong|Большой Злой зверь
+trp_evil_beast_strong_pl|Огромные злобные звери
+trp_bull|Дикий бык
+trp_bull_pl|Дикая корова 
+trp_bull_strong|Большой Бык
+trp_bull_strong_pl|Великая корова
+trp_stag|Олень
+trp_stag_pl|Олени
 trp_future_animal_4|Волк
 trp_future_animal_4_pl|Волки
 trp_future_animal_5|Волк
 trp_future_animal_5_pl|Волки
-; trp_guthlaf|Guthláf
+trp_guthlaf|Гутлаф
 trp_damrod|Дамрод
 trp_duilin|Дуилин
 trp_derufin|Деруфин
-; trp_rumil|Rúmil
-; trp_lugdush|Lugdush
+trp_rumil|Румил
+trp_lugdush|Лугдуш

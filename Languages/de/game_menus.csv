@@ -35,7 +35,7 @@ mno_go_back_dot|Zurück.
 ; menu_reports|^^^{s10}^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}
 mno_action_view_troop_trees|Truppenbäume ansehen.
 mno_view_upkeep_costs|Unterhaltskosten betrachten.
-; mno_view_rank_report|View rank report.
+mno_view_rank_report|Betrachte Rang- und Namensbericht
 mno_view_party_size_report|Betrachte Truppengröße-Bericht
 mno_view_morale_report|Betrachte Truppenmoral-Bericht
 mno_view_faction_strengths_report|Betrachte Fraktionsstärken-Bericht
@@ -114,8 +114,8 @@ mno_start_2_bn|In der Festung des Nekromanten, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^Dein Geschlecht?
 mno_start_male|Männlich
 mno_start_female|Weiblich
-; menu_choose_skill|Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.
-; mno_proc|Proceed
+menu_choose_skill|Bitte seid euch im Klaren darüber, dass TLD den Nutzen und die Effekte einiger Fertigkeiten verändert. Solltet ihr neu sein (herzlich willkommen) oder seit einer Weile nicht mehr gespielt haben (willkommen zurück), so ist es empfohlen, euch die Attributs- und Fertigkeitsbeschreibungen durchzulesen.^^Viele weitere Besonderheiten TLDs werden in der Rubrik "Konzepte" näher erläutert.
+mno_proc|Fahre fort
 menu_start_as_one|^^^^^^^^^^Was für ein Soldat bist du?
 mno_start_default|Werde ein {s23} (Standard)
 mno_start_up1|Werde ein {s21} (Einfach)
@@ -169,9 +169,9 @@ menu_camp_action|^^^^^^^^^ Welchen Gegenstand?
 mno_camp_drink_water|Trink das Entwasser!
 mno_camp_drink_orc_brew|Schenke das Orkgebräu aus!
 mno_camp_drink_miruvor|Schenke etwas Miruvor aus!
-; mno_camp_use_pipeweed|Share pipe-weed with your companions (rest for a short duration).
+mno_camp_use_pipeweed|Lasse deine Gefährten am Pfeifenkraut teilhaben (rastet hier eine Weile).
 mno_camp_use_athelas|Benutze Athelas für die Wundbehandlung.
-; mno_camp_use_drums|Beat the Drums of the Deep (wait for some hours).
+mno_camp_use_drums|Schlagt die Trommeln der Tiefe (wartet einige Stunden).
 mno_camp_action_4|Zurück.
 menu_assasins_attack_player_won|Du hast die Attentäter aus {s2}, ausgesandt von {s3}, besiegt.
 menu_assasins_attack_player_retreat|Du bist mit deinem Leben davongekommen!
@@ -261,9 +261,9 @@ mno_join_siege_stay_back|Befiehl deinen Truppen, sich dem nächsten Angriff ohne
 ; menu_moria_must_escape|^^Here lies Balin, Lord of Moria. With some trouble, you can decipher these words on the shattered remains of the tomb.  They tell tale of the last attempt of dwarves to resettle in Moria, which apparently ended with gruesome death for all involved. As you ponder their dark fate,  you suddenly hear harsh cries and the hurrying sound of many feet.^ They are coming!^  Quickly leaving the chamber, you notice that the sounds come from the hall. You have no choice but to flee in the other direction,  into a narrow winding tunnel and down...  ^...^After a couple of hours you understand that you are lost deep in Moria and need to find a way out.
 mno_moria_exit_scene|Finde einen Weg hinaus!
 ; menu_moria_escape_sucess|^^After countless hours in the darkness, you finally find a staircase that leads up.  At first it is barely noticeable, but it steadily gets lighter. Finally — a junction that you remember. After a few more steps, you are out in the open.  Your troops have been waiting anxiously for you and can't wait to leave this valley as quickly as possible.
-; mno_moria_exit_found|Get out of here!
+mno_moria_exit_found|Raus hier!
 menu_castle_outside|Du befindest dich außerhalb von {s2}.{s11} {s3} {s4}
-; mno_cheat_steal_book_door|Inspect the tomb...
+mno_cheat_steal_book_door|Untersucht das Grab...
 mno_moria_enter|Kehre durch den geheimen Eingang in die Haupthalle Morias zurück
 mno_moria_enter_door|Betrete Moria.
 mno_castle_start_siege|Belagere die {reg6?Stadt:Feste}.
@@ -319,8 +319,8 @@ mno_erebor_gates|Suche das Haupttor auf.
 mno_erebor_gates_door|Gehe zum Haupttor
 mno_glittering_caves|Besuche die Glitzernden Grotten.
 mno_glittering_caves_door|Besuche die Glitzernden Grotten
-; mno_mountain_travel|Travel on hidden mountain paths.
-; mno_mountain_travel_door|Travel on hidden mountain paths.
+mno_mountain_travel|Folgt den verborgenen Bergpfaden.
+mno_mountain_travel_door|Folgt den verborgenen Bergpfaden.
 mno_town_leave|Verlassen...
 mno_town_leave_door|Verlasse die Gegend
 mno_town_find_NPCs_cont|Mach es.
@@ -348,8 +348,8 @@ menu_recover_after_death_town|^^^^Du kommst zu Bewusstsein und befindest dich am
 menu_recover_after_death_town_alone|Du kommst zu Bewusstsein und befindest dich am Stadtrand. Du bist am Leben! Niemand ist heir und du nutzt die Chance, um dich aus der Stadt zu schleifen. Deine Gefährten fanden dich. Es scheint als wäre keine deiner Verletzungen ernsthaft, und auch wenn du dich fürchterlich fühlst, kannst du immer noch gehen.
 menu_notification_center_under_siege|{s1} wird von {s2} von {s3} belagert!
 menu_notification_one_side_left|^^^^^Der Ringkrieg ist vorüber!^^Die {s1} haben all ihre Gegner bezwungen und sind siegreich!
-; mno_go_to_capital|Visit your capital and celebrate the victory...
-; mno_exit_game1|Exit
+mno_go_to_capital|Stattet eurer Hauptstadt einen Besuch ab und feiert diesen Sieg...
+mno_exit_game1|Verlassen
 menu_notification_total_defeat|^^^^^Der Ringkrieg ist für dich vorbei!^^Die {s1} wurden von ihren Feinden besiegt und in der Niederlage stehst du nun allein. 
 menu_notification_your_faction_collapsed|^^^^^Dein Heimatland {s11} wurde besiegt!^Andere Verbündete verbleiben aber im Krieg. Du kannst immer noch, zusammen mit jedem Überlebenden von {s11}, deiner Seite zum Sieg verhelfen.
 menu_notification_faction_defeated|^^^^^{s1} Besiegt!^{s1} ist nicht mehr, bezwungen durch die Armeen von {s13}!
@@ -449,7 +449,7 @@ menu_death|Du wurdest getötet. Auch wenn der Krieg andauert, wirst du nicht lä
 menu_animal_ambush|Du und deine Gefährten finden sich vom Rest der Truppen getrennt, als plötzlich...
 menu_animal_ambush_success|Die {s2} {reg0?fallen:fällt} vor dir wie die Fliegen! Schon bald liegen all deine Angreifer am Boden, verwundet oder tot. {s3}
 ; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
-; menu_isengard_flooding|^^^^^You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
+menu_isengard_flooding|^^^^^Ihr seid umringt von den Leichen eurer Feinde und dem Jubel eurer Freunde, darunter auch die Ents; diese lärmen und stürmen und drängen, bis Fels und Stein um den Orthanc herum brechen. Sie sind ein heulender Sturm, zertrümmern die Stützpfeiler und stoßen Fels um Fels in die Schluchten der Schächte, während sie Steine herumschwirren lassen, wie Blätter im Wind … Es ist ungleich allem, was ihr bisher erblickt habt.^^Bregalad – oder Flinkbaum, wie ihr ihn kennt – unterbricht sein Schlendern nur, um euch mitzuteilen: "{playername}! Gebt Acht! Haltet euch fern vom Turm – bald werden wir den Damm gebrochen haben und dann rauscht der Isen durch dieses Tal, zumindest eine Weile. Mir scheint, dort wo ihr jetzt steht, könnte es etwas mühselig werden!" Ihr folgt rasch seiner Empfehlung, und bringt Distanz zwischen euch und den Orthanc.^^Gegen Mitternacht beginnt sich Isengart mit schwarz spiegelnden Strömen und Pfützen zu füllen. Ihr erschaudert beim Anblick der, von wabernden Dämpfen umspielten Rauchsäulen, die sich gen Himmel winden, bis der ganze Turm einer kerzengeraden Wolke gleicht, den Schimmer der Glut unter, und den des Mondes über sich. Der Zorn der Ents ist langsam, und doch von einer unaufhaltsamen Kraft durchdrungen …
 mno_isengard_continue|Fortsetzen
 menu_build_your_scene|Du kannst hier dein eigenes Schlachtfeld erstellen, indem du eine der Optionen unten und den Editiermodus verwendest: Schalte ihn zunächst im M&B-Launcher ein, betritt eine der Szenen unten und drücke Strg+E. Du kannst fertige eigene Szenen (also die sco-Dateien im Ordner TLD/SceneObj) an das TLD-Entwicklerteam einreichen und vielleicht tauchen sie in späteren Versionen als Zufallsschlachtfelder auf!^^ Gib möglichst genau an, in welcher Gegend auf der Karte deine Szene auftauchen soll.^ Hinweise: Vermeide tiefes Wasser, steile Berge und andere unpassierbare Orte, es sei denn, du weißt, wie du die AI daran hinderst, diese zu betreten. Erstelle auch ein AI-Mesh.^ (Die Eintrittspunkte "Entry #0-1" sind für die Angreifer, #4 für die Verteidiger, lass #5-8 unverändert.)
 mno_back_3dot|Zurück...
@@ -457,14 +457,14 @@ mno_back_3dot|Zurück...
 ; menu_wott_stay_with_faction|{s11} applauds your wise counsel. Your faction follows your example and collectively joins {s12}.
 ; menu_fulfilled_oath_personal|^As {s5} lies in the dust before you, a heavy burden is lifted from your shoulders. The death of {s6} has been avenged!
 ; menu_fulfilled_oath_personal_nokill|^Your troops recognize that you have defeated {s10} repeatedly and should rightfully be seen as {reg11?her:his} worst foe. Your oath is considered fulfilled. ^^The enemy paid dearly for the killing of {s11}. Still, there is a stale taste to this victory.
-; menu_oath_quest_fail|You swore a bitter oath and you bitterly failed to keep it. Your enemies laugh at your failure, and all your friends suffer from the shame you have brought upon them. In all the lands of Middle-earth, you shall be known as an oathbreaker.
+menu_oath_quest_fail|Ihr schwurt einen Eid im Gram und seid kläglich daran gescheitert, ihn zu erfüllen. Eure Feinde verlachen euch ob eures Versagens, und all eure Freunde leiden unter der Schmach, die ihr schändlich über sie brachtet. Fortan sollt ihr in ganz Mittelerde als Eidbrecher bekannt sein.
 ; menu_campaign_won|^^^Thank you for playing The Last Days of the Third Age!
-; mno_credits_tld|TLD Credits
-; mno_exit_game2|Quit to main menu
+mno_credits_tld|TLD Credits
+mno_exit_game2|Verlassen und zum Hauptmenü zurückkehren
 ; menu_companion_promoted_event|^^^A new hero   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!
 ; menu_mountain_travel|As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.
 ; menu_mountain_travel_arrived|After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}
-; mno_hunt_begin|Let the hunt begin!.
+mno_hunt_begin|Lasst die Jagd beginnen!
 ; mno_pick_troops_hunt|Pick companions for the hunt, {reg15} selected
 ; menu_hunt_beast_debrief|{s9}^^Your Casualties:{s8}
 mno_back|Zurück.

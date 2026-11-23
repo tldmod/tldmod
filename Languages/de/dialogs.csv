@@ -1,7 +1,7 @@
 dlga_start:mutiny_pretalk_1|He, {playername}. Ich sag Euch was... ^Die Jungs sind am murren! Wir wollen mehr Spaß und weniger Rummarschieren.
 ; dlga_mutiny_pretalk_1:mutiny_pretalk_2|Fall back in line, maggot! We are at war and I'm your commander. [Charisma]
-; dlga_mutiny_pretalk_1:close_window|Want some fun eh? You maggot! I will slay you here and now, that will keep the lads entertained!
-; dlga_mutiny_pretalk_1:close_window.1|I will not tolerate such treacherous talk! Guards, kill him and his cronies!
+dlga_mutiny_pretalk_1:close_window|Du willst Spaß, du willst Spaß, Made? Ich schlitze dich hier und jetzt auf, das wird ein Spaß für die ganze Truppe! 
+dlga_mutiny_pretalk_1:close_window.1|Solch verräterisches Geschätz werde ich nicht tolerieren! Wachen, tötet {ihn/sie} und {seine/ihre} ganze Gefolgschaft!
 dlga_mutiny_pretalk_2:close_window|Wie Ihr wünscht, Anführer, wie Ihr wünscht...
 dlga_start:mutiny_talk_1|Hey, Anführer. Ich sag Euch was... Die Jungs sind nicht zufrieden, überhaupt nicht zufrieden. ^Nicht genug Menschenfleisch, nicht genug Spaß. ^Die Jungs reden nicht gerade gut über Euch, Anführer!
 dlga_mutiny_talk_1:mutiny_talk_2|Was? Aufruhr im Krieg?^Darauf steht der Tod, Made!
@@ -128,9 +128,9 @@ dlga_member_separate_yes:close_window|Gut. Ich werde gehen. Fragt nach mir, wenn
 ; dlga_member_promote_lord:member_talk.2|There are few who would follow me, I'm afraid. Perhaps I could learn a thing or two about leadership from you? Then we can discuss this again.
 ; dlga_member_promote_lord:member_talk.3|{s14} remains strong in the face of our enemies and has no need of additional commanders. If a commander of {s14} should fall in battle let us speak of this again, but for now I think it is better if I stay with you.
 ; dlga_member_promote_lord:member_promote_lord_2|Perhaps you're right. {s14} has need of more capable commanders. {s15} Are you sure you're ready for me to leave your side?
-; dlga_member_promote_lord_2:member_promote_lord_leaving|I am sure. You can do more leading a host of your own.
-; dlga_member_promote_lord_leaving:close_window|Well. I'll be off, then. Perhaps we will meet again.
-; dlga_member_promote_lord_2:do_member_trade|On second thought I'd rather you stay with me for now.
+dlga_member_promote_lord_2:member_promote_lord_leaving|Ich bin mir sicher. Ihr könnt Größeres vollbringen, indem ihr eine eigene Streitmacht führt.
+dlga_member_promote_lord_leaving:close_window|So sei es, ich mache mich auf den Weg. Eines Tages sehen wir uns vielleicht wieder.
+dlga_member_promote_lord_2:do_member_trade|Haltet ein! Wenn ich es mir genau überlege, bleibt ihr vorerst besser bei mir.
 dlga_member_talk:member_question|Ich möchte Euch etwas fragen.
 dlga_member_talk:close_window|Schon gut.
 dlga_member_question:member_question_2|Sehr gut. Was wolltet Ihr fragen?
@@ -139,7 +139,7 @@ dlga_member_question_2:member_health|Wie ist Eure Gesundheit?
 dlga_member_question_2:member_background_recap|Erzählt mir noch einmal Eure Geschichte.
 dlga_member_background_recap_3:do_member_trade|Kurz danach schloss ich mich Euch an.
 dlga_do_member_view_char:member_talk|Sonst noch etwas?
-; dlga_start:close_window.11|It has been an honor to fight with you, {playername}.
+dlga_start:close_window.11|Es war mir eine Ehre, an eurer Seite zu kämpfen, {playername}.
 dlga_start:close_window.12|Wir können jederzeit aufbrechen.
 dlga_start:close_window.13|Bitte verschwendet nicht meine Zeit. Vielleicht sehen wir uns ein andermal wieder.
 dlga_companion_recruit_signup_response:close_window|Leider kann ich gerade niemanden mehr in meine Truppe aufnehmen.
@@ -190,15 +190,15 @@ dlga_event_triggered:companion_faction_demolished|{s5}, {reg6?unser:mein} Heimat
 dlga_companion_faction_demolished:close_window|Dann werden wir sofort {s6} zu Hilfe kommen.
 dlga_companion_faction_demolished:close_window.1|Tut mir leid, wir werden anderswo gebraucht.
 ; dlga_event_triggered:companion_faction_dying_pretalk|{s5}, I am sorry, but the suffering of {reg6?our:my} {s6} homeland is too great. I must return at once to provide what aid I can.
-; dlga_companion_faction_dying_pretalk:companion_faction_dying|Farewell, {s5}.
-; dlga_companion_faction_dying:close_window|Very well. Perhaps we will meet again.
+dlga_companion_faction_dying_pretalk:companion_faction_dying|Lebt wohl, {s5}.
+dlga_companion_faction_dying:close_window|Wohl an. Vielleicht sehen wir uns eines Tages wieder.
 ; dlga_companion_faction_dying:companion_give_troops|Of course. I shall also permit other warriors of {s6} to go with you.
 ; dlga_companion_give_troops:companion_give_troops_check|I will be glad to have them with me. {s6} needs all the help you can provide.
 dlga_companion_give_troops:companion_give_troops_final|Leider habt Ihr keine Soldaten aus {s14} dabei.
 dlga_companion_give_troops_check:companion_give_troops_check_1|Ich will die Truppenliste sehen...
 dlga_companion_give_troops_check_1:companion_give_troops_final|Ihr habt Euch also umentschieden...^Nun gut.
 dlga_companion_give_troops_check_1:companion_give_troops_final.1|Ich kann diese Truppen hier nicht gebrauchen...^Nehmt sie wieder mit.
-; dlga_companion_give_troops_final:close_window|Farewell, commander.
+dlga_companion_give_troops_final:close_window|Lebt wohl, Kommandant.
 ; dlga_companion_faction_dying:companion_faction_dying_trade|Let me see your equipment before you leave.
 dlga_companion_faction_dying_trade:companion_faction_dying_pretalk|Sehr wohl, es ist alles da...
 ; dlga_companion_faction_dying:companion_faction_dying_persuade|I understand, but you are needed here.
@@ -270,7 +270,7 @@ dlga_party_encounter_offer_dont_fight:close_window|Ich schulde Euch noch etwas, 
 dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha! Aber ich will gegen Euch kämpfen.
 dlga_start:close_window.14|Hmm....
 dlga_start:close_window.15|Der Herr ist tief in Gedanken versunken und darf nicht gestört werden!
-; dlga_start:close_window.16|Hail {playername}, {s24}!
+dlga_start:close_window.16|Heil {playername}, {s24}!
 dlga_start:close_window.17|Weg mit dir, elender Schurke.
 dlga_start:lord_start|Wenn das nicht mein tapferer Held {playername} ist...
 dlga_start:lord_start.1|Gut, Euch wieder zu sehen, {playername}...
@@ -1063,9 +1063,9 @@ dlga_town_merchant_talk:close_window|Lebt wohl.
 dlga_start:town_dweller_talk|Verzeiht?
 dlga_start:town_dweller_talk.1|Guten Tag, Hauptmann.
 dlga_town_dweller_talk:town_dweller_ask_fugitive|Ich bin auf der Suche nach einem Mann namens {s4}. Hast du hier einen Fremden gesehen, der sich verdächtig verhält und Lügen über den Krieg verbreitet?
-; dlga_town_dweller_ask_fugitive:close_window|I don't know you. For all I care, you are that suspicious stranger to me!
+dlga_town_dweller_ask_fugitive:close_window|Ich kenne euch überhaupt nicht. Was mich betrifft, seid der einzig verdächtige Fremdling hier ihr!
 dlga_town_dweller_ask_fugitive:close_window.1|Nun, ich habe einen verdächtigen Fremden {s5} gesehen. Wenn Ihr Glück habt, findet Ihr ihn vielleicht noch dort.
-; dlga_town_dweller_ask_fugitive:close_window.2|No, I haven't seen anyone.
+dlga_town_dweller_ask_fugitive:close_window.2|Nein, ich habe niemanden gesehen.
 dlga_town_dweller_talk:town_dweller_ask_info|Was könnt Ihr mir über dieses Dorf erzählen?
 dlga_town_dweller_talk:town_dweller_ask_info.1|Was könnt Ihr mir über diesen Ort erzählen?
 dlga_town_dweller_talk:town_dweller_talk|Wie ist das Leben hier?
@@ -1082,7 +1082,7 @@ dlga_town_dweller_brawl:town_dweller_brawl_confirm|Drohst du mir? Die Wachen hie
 dlga_town_dweller_brawl_confirm:close_window|So, wirklich? Dann zeig mal, was du drauf hast.
 dlga_town_dweller_brawl_confirm:close_window.1|Nein, ich dachte Ihr wärt jemand anders.
 dlga_town_dweller_talk:close_window|[Verlassen]
-; dlga_start:close_window.34|Hail {playername}, {s24}!
+dlga_start:close_window.34|Heil {playername}, {s24}!
 dlga_start:close_window.35|Verschwinde!
 dlga_start:close_window.36|Lasst mich allein!
 dlga_start:player_castle_guard_talk|Ja, Hauptmann?
@@ -1154,7 +1154,7 @@ dlga_start:party_encounter_hostile_defender|Was wollt ihr?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Gebt auf oder sterbt!
 dlga_kingdom_companion_meet:kingdom_companion_intro|Ich bin {playername}.
 dlga_kingdom_companion_meet:kingdom_companion_intro.1|Mein Name ist {playername}. Zu Euren Diensten.
-; dlga_start:kingdom_companion_start|Greetings, {playername}...
+dlga_start:kingdom_companion_start|Seid gegrüßt, {playername}...
 ; dlga_kingdom_companion_start:close_window.1|If you have business with our company you should speak with my {s5}, {s3}.
 dlga_kingdom_companion_leaving:close_window|Lebt wohl.
 dlga_party_encounter_hostile_defender:close_window|Nichts. Wir lassen Euch in Ruhe.

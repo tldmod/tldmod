@@ -127,7 +127,7 @@ qstr_Brighter_Nights:__|Hellere Nächte:
 ; qstr_No__regular_troops_o|No (regular troops only)
 ; qstr_Companions_only|Companions only
 ; qstr_Player_only|Player only
-; qstr_Yes|Yes
+qstr_Yes|Ja
 qstr_Done|Fertig
 qstr_Gameplay_Tweaks|Gameplay-Optimierungen...
 qstr_Set_to_Native_if_you|Setze diese Option auf "Nativ", wenn du im Gefecht auf KI-Probleme stößt.
@@ -721,7 +721,7 @@ qstr_Army_of_{s6}|Armee von {s6}
 qstr_Host_of_{s6}|Heer von {s6}
 qstr_The_host_of_Isengard|Die Heere von Isengart haben {s2} niedergebrannt!
 ; qstr_The_battlefield_is_a|The battlefield is a dark forest.
-; qstr_The_battlefield_is_f|The battlefield is forested.
+qstr_The_battlefield_is_f|Das Schlachtfeld ist bewaldet.
 ; qstr_The_battlefield_is_a_|The battlefield is a treacherous marshland.
 ; qstr_A_golden_mist_from_L|A golden mist from Lórien covers the battlefield.
 ; qstr_Dark_clouds_from_Mor|Dark clouds from Mordor cover the battlefield.
@@ -926,7 +926,7 @@ qstr_Attackers_charge_{s1|Angreifer rücken {s1} vor.
 ; qstr_You_must_break_the_f|You must break the first line of defense before you can capture a reinforcement point.
 ; qstr_Capture_this_area_wi|Capture this area with your troops to stop defender reinforcements from here!
 ; qstr_Not_enough_allies_ne|Not enough allies nearby to capture this reinforcement point!
-qstr_Defender_reinforceme|Verstärkungspunkt der Verteidiger erobert!
+qstr_Defender_reinforceme|Verstärkungspunkt erobert!
 ; qstr_{reg5}_{reg4?troops:|{reg5} {reg4?troops:troop} rallied to your side.
 ; qstr_{reg5}_{reg4?troops:t|{reg5} {reg4?troops:troop} rallied to your side due to your Charisma.
 ; qstr_{reg5}_{reg4?troops:tr|{reg5} {reg4?troops:troop} stopped following you (too far away).
