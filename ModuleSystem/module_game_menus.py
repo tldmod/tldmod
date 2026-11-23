@@ -13502,8 +13502,6 @@ game_menus = [
         (neq, ":dimborn_bear", 1000), #slot=1000 means trait active
         (val_add, ":dimborn_bear", 2),
         (troop_set_slot, "trp_npc17", slot_troop_state, ":dimborn_bear"),
-        (assign, reg78, ":dimborn_bear"),
-        (display_message, "@Dimborn bear: {reg78}"),
     (try_end),
     (troop_get_slot, ":bear_kinship", "trp_traits", slot_trait_bear_shape),
     (neq, ":bear_kinship", 1), #slot=1 means trait active

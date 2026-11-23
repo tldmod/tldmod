@@ -132,16 +132,18 @@ itm_wargarmored_3a|Armored Warg
 itm_wargarmored_3a_pl|Armored Warg
 itm_warg_reward|Huge Warg
 itm_warg_reward_pl|Huge Warg
-itm_animal_big|Big Animal
-itm_animal_big_pl|Big Animal
-itm_animal_small|Small Animal
-itm_animal_small_pl|Small Animal
+itm_warg_wild_1|Wild Warg
+itm_warg_wild_1_pl|Wild Warg
+itm_warg_wild_2|Huge Wild Warg
+itm_warg_wild_2_pl|Huge Wild Warg
 itm_troll_weapon_long|Giant Halberd
 itm_troll_weapon_long_pl|Giant Halberd
 itm_troll_weapon_dmg|Giant Mace
 itm_troll_weapon_dmg_pl|Giant Mace
 itm_tree_trunk_club_a|Tree Trunk
 itm_tree_trunk_club_a_pl|Tree Trunk
+itm_wolf_ridable|Great Wolf
+itm_wolf_ridable_pl|Great Wolf
 itm_giant_mace|Giant Mace
 itm_giant_mace_pl|Giant Mace
 itm_troll_shield_a|Troll Shield
@@ -182,8 +184,8 @@ itm_white_tunic_a|Civilian Outfit
 itm_white_tunic_a_pl|Civilian Outfit
 itm_rohan_shoes|Leather Shoes
 itm_rohan_shoes_pl|Leather Shoes
-itm_furry_boots|Furry Boots
-itm_furry_boots_pl|Furry Boots
+itm_furry_boots|Nomad Boots
+itm_furry_boots_pl|Nomad Boots
 itm_black_tunic|Black Tunic
 itm_black_tunic_pl|Black Tunic
 itm_hood_black|Black Hood
@@ -196,6 +198,8 @@ itm_hood_leather|Leather Hood
 itm_hood_leather_pl|Leather Hood
 itm_mail_coif|Mail Coif
 itm_mail_coif_pl|Mail Coif
+itm_cloth_coif|Cloth Cap
+itm_cloth_coif_pl|Cloth Cap
 itm_axe_a|Northmen Axe
 itm_axe_a_pl|Northmen Axe
 itm_axe_b|Northmen Bearded Axe
@@ -1576,8 +1580,8 @@ itm_khamul_helm|Helm of Khamul
 itm_khamul_helm_pl|Helm of Khamul
 itm_black_arrows_reward|Black Arrows
 itm_black_arrows_reward_pl|Black Arrows
-itm_leather_boots_reward|Hunter Boots
-itm_leather_boots_reward_pl|Hunter Boots
+itm_hunter_boots|Hunter Boots
+itm_hunter_boots_pl|Hunter Boots
 itm_rohan_armor_th|Rohan Royal Armor
 itm_rohan_armor_th_pl|Rohan Royal Armor
 itm_wilderness_cowl|Hunter Cowl
@@ -1624,8 +1628,8 @@ itm_white_tunic_a_wb|White Tunic
 itm_white_tunic_a_wb_pl|White Tunic
 itm_red_tunic_wb|Red Tunic
 itm_red_tunic_wb_pl|Red Tunic
-itm_fur_coat_wb|Dale Coat
-itm_fur_coat_wb_pl|Dale Coat
+itm_fur_coat_tld|Dale Coat
+itm_fur_coat_tld_pl|Dale Coat
 itm_fur_hat_a_new_wb|Fur Hat
 itm_fur_hat_a_new_wb_pl|Fur Hat
 itm_noel_hat_a_wb|Fur Hat
@@ -1738,5 +1742,51 @@ itm_kine|Wild Bull
 itm_kine_pl|Wild Bull
 itm_kine_strong|Great Bull
 itm_kine_strong_pl|Great Bull
+itm_animal_big|Big Animal
+itm_animal_big_pl|Big Animal
+itm_animal_small|Small Animal
+itm_animal_small_pl|Small Animal
+itm_fur_coat|Fur Coat
+itm_fur_coat_pl|Fur Coat
+itm_leather_jacket|Leather Jacket
+itm_leather_jacket_pl|Leather Jacket
+itm_nomad_armor|Nomad Armor
+itm_nomad_armor_pl|Nomad Armor
+itm_khergit_armor|Nomad Armor
+itm_khergit_armor_pl|Nomad Armor
+itm_rawhide_coat|Rawhide Coat
+itm_rawhide_coat_pl|Rawhide Coat
+itm_leather_armor|Leather Armor
+itm_leather_armor_pl|Leather Armor
+itm_nomad_vest|Nomad Vest
+itm_nomad_vest_pl|Nomad Vest
+itm_ragged_outfit|Ragged Outfit
+itm_ragged_outfit_pl|Ragged Outfit
+itm_padded_leather|Padded Leather
+itm_padded_leather_pl|Padded Leather
+itm_pelt_coat|Pelt Coat
+itm_pelt_coat_pl|Pelt Coat
+itm_leather_vest|Leather Vest
+itm_leather_vest_pl|Leather Vest
+itm_wimple_a|Wimple
+itm_wimple_a_pl|Wimple
+itm_wimple_with_veil|Wimple with Veil
+itm_wimple_with_veil_pl|Wimple with Veil
+itm_headcloth|Headcloth
+itm_headcloth_pl|Headcloth
+itm_fur_hat|Fur Hat
+itm_fur_hat_pl|Fur Hat
+itm_nomad_cap_b|Nomad Cap
+itm_nomad_cap_b_pl|Nomad Cap
+itm_felt_hat|Felt Hat
+itm_felt_hat_pl|Felt Hat
+itm_felt_hat_b|Felt Hat
+itm_felt_hat_b_pl|Felt Hat
+itm_leather_cap|Leather Cap
+itm_leather_cap_pl|Leather Cap
+itm_leather_steppe_cap_a|Steppe Cap
+itm_leather_steppe_cap_a_pl|Steppe Cap
+itm_civ_fine_shoes|Fine Shoes
+itm_civ_fine_shoes_pl|Fine Shoes
 itm_torch|Torch
 itm_torch_pl|Torch

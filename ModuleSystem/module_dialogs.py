@@ -1906,8 +1906,6 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
   "Thank you, {playername}! Thank you. I go to the woods now, the ones I know. The bear will not come quick, bears are shy, but I am patient. I am good with waiting. When I am done, I find you again. Just be somewhere in the Northern Valley of Anduin, near the woods.", "close_window", [(change_screen_map),(store_current_day, ":day"),
     (store_random_in_range, ":duration", 7, 15), 
     (val_add, ":day", ":duration"),
-    (assign, reg78, ":day"),
-    (display_message, "@dimborn will come back on day {reg78}"),
     (troop_set_slot, "trp_npc17", slot_troop_respawn_timer, ":day"),
     (troop_set_slot, "trp_npc17", slot_troop_state, 400),
     (remove_member_from_party, "trp_npc17", "p_main_party"),]],

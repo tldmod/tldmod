@@ -797,12 +797,10 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
             (troop_set_slot, trp_traits, slot_trait_horse_fiend, ":trait_kills"),
         (else_try),
             (is_between, ":mount_itm", item_warg_begin, item_warg_end),
-            (display_message, "@warg kill b 1"),
             (troop_get_slot, ":trait_kills", "trp_traits", slot_trait_warg_fiend),
             (neq, ":trait_kills", 1), 
             (val_add, ":trait_kills", 2), #add two points per kill, because 1 means trait gained
             (troop_set_slot, trp_traits, slot_trait_warg_fiend, ":trait_kills"),
-            (display_message, "@warg kill b 2"),
         (try_end),
     (try_end),
   ])
