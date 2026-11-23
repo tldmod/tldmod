@@ -6,9 +6,9 @@ mno_go_bback|返回
 menu_start_phase_2|^^^^^中土世界。 黑暗的阴影正在东方蔓延，^潜伏了近一个纪元的邪恶势力重现世间。 ^中土世界的自由之民能否再一次战胜黑暗。 ^人类，精灵，矮人和半兽人，各种势力在这里继续角逐^^这场战争的走向如何？让我们拭目以待…
 mno_go_forth|向着你选择的道路前进
 ; mno_change_war_start_mode|War Starts:  {s7}
+; mno_lore_events_switch|Lore events:  {s7}
 ; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|更改最后之日选项。
-; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^^选择情景：
 mno_custom_battle_scenario_1|小规模冲突，刚铎vs哈拉德
 mno_custom_battle_scenario_12|选择出战派系
@@ -115,6 +115,7 @@ mno_start_2_bn|在多尔哥多，死灵法师的堡垒里
 mno_start_male|男性
 mno_start_female|女性
 ; menu_choose_skill|Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.
+; mno_see_info_pages|TLD game concepts.
 ; mno_proc|Proceed
 menu_start_as_one|^^^^^^^^^^你是何种士兵?
 mno_start_default|成为{s23}（默认）
@@ -127,6 +128,7 @@ mno_camp_scene|到处走走。
 mno_camp_troop|检查{reg10? 士兵:} {reg12? 和:} {reg11? 囚犯:}。
 mno_camp_action|做些事情。
 mno_camp_wait_here|在这里待一会儿。
+; mno_camp_adjust_tracking|Current tracking limit: {reg9}
 mno_camp_options|更改最后之日选项。
 mno_Dev_Menu|开发者菜单
 ; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
@@ -284,7 +286,7 @@ menu_castle_taken_by_friends|这里没有东西看
 menu_castle_taken|你的部队攻陷了{s3}，现在你已经完全地掌控了这个{reg2?城镇：城堡}。 {reg1? 看起来已经没有什么能阻止你将它据为己有了…:}
 menu_castle_taken_2|你的部队攻陷了{s3}，现在你已经完全地掌控了这个城堡。 现在应该把这个胜利的消息告诉给{s9}了。 {s5}
 mno_castle_taken_no_claim|不要求封赏。
-menu_siege_started_defender|{s1}正在攻击{s2}的城墙。你有{reg22}名士兵可以参战对抗敌人的{reg11}名士兵。你决定…
+; menu_siege_started_defender|{s1} is launching an assault against {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. ^{s17}^You decide to...
 mno_siege_defender_join_battle|加入战斗
 mno_siege_defender_troops_join_battle|坐镇指挥，让你的部队攻击。
 mno_siege_defender_do_not_join_battle|不卷入纷争。
@@ -358,16 +360,6 @@ menu_legendary_place|^^^^你遵循传闻发现了{s1}。 现在你可以探索�
 mno_explore|探索这个地方。
 menu_ring_hunter_lair|^^^^你跟随魔戒猎手们的足迹横穿幽暗密林并到达了{s1}。你看到他们正准备留下一个箱子。
 mno_attack_lair|马上攻击他们
-menu_gondor_reinforcement_event|^^^^^刚铎的烽火台是亮着的，米那斯提力斯在呼救！^^南方封地的领主们将立即向北集结，对抗即将到来的黑暗保卫白城。
-mno_gondor_reinforcement_event_close|关闭
-menu_gondor_beacons|你抬起头看着{s1}—用于在北刚铎和南刚铎发出警告刚铎警戒烽火台中的一个。
-mno_gondor_beacons_close|离开…
-menu_player_added_to_war_council|^^^^^一个信使来了并且告诉你，{s24}，{s2}邀请你成为军事会议的一员。你现在能提出能够影响战争进程的策略了。
-mno_player_added_to_war_council_close|关闭
-menu_player_added_to_siege_reports|^^^^^一个信使到达并告诉你，作为{s24}，无论{s2}围攻一个据点还是当{s2}的据点中心被围攻时，你都能够收到报告。
-mno_player_added_to_siege_reports_close|关闭
-menu_player_added_to_allow_follow|^^^^^一位信使通知你，你身为{s24}，能够命令{s2}跟随你一起行动了。你最多能够有{reg55}队随从部队。
-mno_player_added_to_allow_follow_close|关闭
 menu_center_besieged_event|^^^^^一个信使到达并报告{s1}已经被{s3}的{s2}围攻。
 mno_center_besieged_event_close|关闭
 menu_guardian_party_spawned|斥候来报：{s6}在{s7}周围聚集了庞大的军队，他们在做最后的挣扎，企图保卫他们的首都。
@@ -447,8 +439,9 @@ mno_ruin_menu_0|探索这个地方。
 mno_ruin_leave|离开…
 menu_death|你被杀害了。 尽管战争仍旧如火如荼，但这已经不是你要关心的事儿了。
 menu_animal_ambush|你和你的同伴在休息的时候，突然分开了…
-menu_animal_ambush_success|你面前的{s2}{reg0?堕落者：堕落者}如小麦般被你收割。很快，所有的攻击者都躺倒在地，重伤或死亡。 {s3}
-; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
+; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3} ^^{s10}
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again. ^^{s10}
+; menu_beorn_bear_encounter|^^^As the bear approaches, you realize that it seems calm and doesn't appear threatening. Its small eyes study you with mild interest before it disappears into the undergrowth.
 ; menu_isengard_flooding|^^^^^You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 ; mno_isengard_continue|Continue
 menu_build_your_scene|你可以在这里创造属于你自己的战场场景。首先在设置中打开编辑模式，再选择底下任意一个存位，然后进入场景按Ctrl+E打开编辑模式。你可以把自己的作品提交给TLD制作组，做得很好的话，你的场景会在下一版本的随机战斗中出现！（提交时请重命名，并把TLD/SceneObj文件夹下相应的sco文件发给制作组）^^记得说明你所制作的场景，具体是在中土的哪个地方。 ^友情提示：不要做深水或高山，或是其他难以通行的地形——除非你是资深场景制作师，明白如何利用AI网格让AI避开“陷坑”。^（#0~1是给攻击方，＃4是给防守方，别碰＃5-8
@@ -464,9 +457,11 @@ mno_back_3dot|返回…
 ; menu_companion_promoted_event|^^^A new hero   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!
 ; menu_mountain_travel|As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.
 ; menu_mountain_travel_arrived|After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}
-; mno_hunt_begin|Let the hunt begin!.
+; mno_hunt_begin|Let the hunt begin!
 ; mno_pick_troops_hunt|Pick companions for the hunt, {reg15} selected
-; menu_hunt_beast_debrief|{s9}^^Your Casualties:{s8}
+; menu_morannon_quest|^^You receive a message that Lord Aragorn, Chieftain of the Rangers of the North, has come to help in the defense of Gondor. Is he indeed the King Returned, as rumor says? A spark of hope. A fool's hope, perhaps. But hope is needed as the Captains of the West assemble their host and march towards the Black Gate. All faithful commanders of the west are summoned to join them there, to strike fast while the Enemy seems undecided.
+; mno_morannon_quest_start|To the Black Gate!
+; menu_healing_of_theoden|^^^Word reaches you that Théoden, King of Rohan, has cast off the weariness of age and taken his sword once more in hand. Throughout the streets of Edoras the clash of shields and spears is heard, and a great cry is raised among the people: ^^Arise now, arise, Riders of Théoden! ^Dire deeds awake, dark is it eastward. ^Let horse be bridled, horn be sounded! ^Forth Eorlingas!
 mno_back|返回
 mno_next|接下来…
 ; mno_previous|Previous...

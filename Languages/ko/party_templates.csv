@@ -8,14 +8,14 @@ pt_mound|영웅의 무덤
 pt_pyre|영웅의 화장터
 pt_wild_troll|야생 트롤들
 pt_raging_trolls|성난 트롤들
-pt_looters|부족 오르크
-pt_forest_bandits|오르크 낙오자들
-pt_mountain_bandits|야생 고블린들
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+pt_mountain_bandits|산고블린
 pt_steppe_bandits|던랜드 추방자들
 pt_sea_raiders|해적 배신자들
 pt_deserters|사막인
 pt_merchant_caravan|대상의 상단
-pt_troublesome_bandits|성가신 고블린들
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|나무를 베고있는 오르크들
 pt_village_farmers|촌락 농부들
 pt_spy_partners|의심스러운 여행자들
@@ -148,3 +148,11 @@ pt_volunteers|예비군
 pt_refugees|난민
 pt_retreat_troops|Cover Troops
 pt_radagast|말을 탄 낯선 이
+pt_looters_new|약탈자
+pt_brigands|노상강도
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

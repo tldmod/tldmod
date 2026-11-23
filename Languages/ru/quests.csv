@@ -57,9 +57,9 @@ qst_escort_merchant_caravan|Сопроводите караван в {s8}
 qst_escort_merchant_caravan_text|Сопроводите обоз до {s8} и поговорите с ними, когда окажетесь рядом.
 qst_deliver_wine|Привезите {reg5} бочонков {s6} в {s4}
 qst_deliver_wine_text|{s9} из {s3} попросил вас привезти {reg5} бочонков {s6} в {s4} в течение 7 дней.
-qst_troublesome_bandits|Уничтожьте опасную банду гоблинов 
-qst_troublesome_bandits_text|{s9} из поселения {s4} попросил тебя уничтожить опасную банду гоблинов поблизости.
-qst_deal_with_looters|Покончите с дикими орками
+; qst_troublesome_bandits|Hunt Down Troublesome Bandits
+; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town.
+; qst_deal_with_looters|Deal with {s6}
 qst_deal_with_looters_text|Управитель поселения {s4} попросил тебя покончить с несколькими бандами диких орков поблизости.
 qst_deal_with_night_bandits|Разберитесь с ночными бандитами
 qst_deal_with_night_bandits_text|Управитель {s14} попросил вас разобраться с бандитами, разгуливающими по ночам в {s14}.
@@ -78,5 +78,9 @@ qst_deliver_gift_text|Вы пожелали д{s4} - {s1}, державе {s3} �
 qst_ring_hunters|Охотники за Кольцом
 qst_ring_hunters2|Охотники за кольцом - Завершено
 qst_deliver_message_hobbit|Касательно хоббитов
+; qst_hunt_beast_coop|Hunt a {s6} with {s9}
+; qst_hunt_beast_mayor|Hunt down a beast
 qst_oath_personal|Клятва Мести
+; qst_morannon_quest|The Black Gate Opens
+; qst_morannon_quest_text|All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord.
 qst_quests_end_text|.

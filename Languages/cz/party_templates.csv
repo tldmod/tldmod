@@ -8,14 +8,14 @@ pt_mound|Mohyla hrdiny
 pt_pyre|Pořební vatra
 pt_wild_troll|Divoký trol
 pt_raging_trolls|Běsnící trolové
-pt_looters|Kmenový skřeti
-pt_forest_bandits|Opoždění skřeti
-pt_mountain_bandits|Divocí goblini
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+pt_mountain_bandits|Horští goblini
 pt_steppe_bandits|Vyhnanci z Vrchoviny
 pt_sea_raiders|Odpadlí Korzáři
 pt_deserters|Zběhové
 pt_merchant_caravan|Kupecká karavana
-pt_troublesome_bandits|Otravní goblini
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|Skřeti dřevorubci
 pt_village_farmers|Vesničané
 pt_spy_partners|Podezřelí poutníci
@@ -148,3 +148,11 @@ pt_volunteers|Rezervy
 pt_refugees|Uprchlíci
 pt_retreat_troops|Záložní jednotky
 pt_radagast|Osamělý jezdec
+pt_looters_new|Kořistníci
+; pt_brigands|Brigands
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

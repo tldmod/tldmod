@@ -8,14 +8,14 @@ pt_mound|Herojska Humka
 pt_pyre|Herojska Lomaca
 pt_wild_troll|Divlji Trol
 pt_raging_trolls|Razjaren Trol
-pt_looters|Plemenski orkovi
-pt_forest_bandits|Zaostali Orkovi
-pt_mountain_bandits|Divlji Goblini
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+; pt_mountain_bandits|Mountain Goblins
 pt_steppe_bandits|Dunlandski Izgnanici
 pt_sea_raiders|Corsairski Odmetnici
 pt_deserters|Dezerteri
 pt_merchant_caravan|Trogvinski Karavan
-pt_troublesome_bandits|Goblini koji prave probleme
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|Orkovi Drvosece
 pt_village_farmers|Seljaci
 pt_spy_partners|Sumnjivi Putnici
@@ -148,3 +148,11 @@ pt_ring_hunters|Lovći prstena
 ; pt_refugees|Refugees
 ; pt_retreat_troops|Cover Troops
 pt_radagast|Usamljeni Jahac
+; pt_looters_new|Looters
+pt_brigands|Brigands
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

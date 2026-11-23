@@ -6,9 +6,9 @@ mno_go_bback|戻る
 menu_start_phase_2|^^^^^ここは中つ国。東に広がる闇は日々ふくれあがり、^遠く忘れ去られてきた暗いものたちが、その姿をあらわす。^自由の民は、長く経験したことのない未曾有の戦いを前に、その身を固くする。^人間、エルフ、ドワーフ、そしてオーク。^すべてのものがそれぞれの運命を演じていく。^^運命の先にあるものは何か、それはまだわからない・・・
 mno_go_forth|定められし運命の道ならば、これを進もう・・・
 ; mno_change_war_start_mode|War Starts:  {s7}
+; mno_lore_events_switch|Lore events:  {s7}
 ; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|TLDのオプション
-; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^^シナリオを選んでください:
 mno_custom_battle_scenario_1|小規模戦闘、 ゴンドール勢 vs ハラド
 mno_custom_battle_scenario_12|所属する勢力を選んでください
@@ -115,6 +115,7 @@ menu_choose_gender|^^^^^^^^^^あなたの性別は？
 mno_start_male|男性
 mno_start_female|女性
 ; menu_choose_skill|Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.
+; mno_see_info_pages|TLD game concepts.
 ; mno_proc|Proceed
 menu_start_as_one|^^^^^^^^^^どんな戦士ですか？
 mno_start_default|{s23} (標準)
@@ -127,6 +128,7 @@ mno_camp_scene|この辺りを散歩する
 mno_camp_troop|{reg10?部下:}{reg12?および:}{reg11?捕虜:}の確認をする
 mno_camp_action|アイテムを使う
 mno_camp_wait_here|ここで野営する
+; mno_camp_adjust_tracking|Current tracking limit: {reg9}
 mno_camp_options|TLDのオプション
 mno_Dev_Menu|開発者用メニュー
 ; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
@@ -284,7 +286,7 @@ menu_castle_taken_by_friends|ここに用はない。
 menu_castle_taken|{s3}はあなたの軍の手に落ち、 現在、 この{reg2?町:城}は完全にあなたの軍の 管理下におかれています。 {reg1? ここをあなたの領地とすることを 止めるものはいません・・・:}
 menu_castle_taken_2|{s3}はあなたの軍の手に落ち、 現在、 この城は完全にあなたの軍の 管理下におかれています。 {s9}に、 この勝利を報告しましょう。 {s5}
 mno_castle_taken_no_claim|褒美の要求をしない。
-menu_siege_started_defender|{s2}の城壁に対し、 {s1}が攻撃を仕掛けています。 あなたの部隊で戦闘可能な兵は{reg22}名、 対する敵勢は{reg11}名です。 あなたは・・・
+; menu_siege_started_defender|{s1} is launching an assault against {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. ^{s17}^You decide to...
 mno_siege_defender_join_battle|攻撃に参加する。
 mno_siege_defender_troops_join_battle|部下に攻撃に参加するよう指示し、自身は後方に待機する。
 mno_siege_defender_do_not_join_battle|巻き込まれないようにする。
@@ -358,16 +360,6 @@ menu_legendary_place|^^^^あなたは噂話を頼りに{s1}を発見しました
 mno_explore|探索を始める。
 menu_ring_hunter_lair|^^^^闇の森から{s1}到着まで指輪狩り一味の痕跡を追跡した。 指輪狩り一味が宝箱を後にする準備を始めている。
 mno_attack_lair|今すぐ攻撃する。
-menu_gondor_reinforcement_event|^^^^^救援を求めるミナス・ティリスによって、ゴンドールの烽火がともされた！^^迫りくる暗闇から白の都を守るため、これより南方の領主たちが北上するだろう。
-mno_gondor_reinforcement_event_close|閉じる
-menu_gondor_beacons|あなたはゴンドールの南北に危急を知らせる、 ゴンドールの烽火のうちのひとつである{s1}を見上げた。
-mno_gondor_beacons_close|立ち去る・・・
-menu_player_added_to_war_council|^^^^^ただいま伝令があり、 今や{s24}であるあなたも戦略協議に加わるよう、 {s2}から要請を受けました。 これにより、 あなたは戦争の行方に影響を与える、 戦略上の提案ができるようになりました。
-mno_player_added_to_war_council_close|閉じる
-menu_player_added_to_siege_reports|^^^^^ただいまの伝令によると、 今や{s24}であるあなたにも、 {s2}が敵の拠点を攻撃した際、 または{s2}の拠点が包囲攻撃を受けた際の報告が 届けられるようになったとのことです。
-mno_player_added_to_siege_reports_close|閉じる
-menu_player_added_to_allow_follow|^^^^^ただいまの伝令によると、 {s24}となったあなたに、 {s2}に対して、 あなたに同行するように命令を出す権限が与えられました。 最大で{reg55}部隊の同行が許されています。
-mno_player_added_to_allow_follow_close|閉じる
 menu_center_besieged_event|^^^^^ただいま伝令があり、{s3}の{s2}によって  {s1}が包囲されたとの報告がありました。
 mno_center_besieged_event_close|閉じる
 menu_guardian_party_spawned|^^^^^偵察隊の報告によると、{s6}は首都防衛のための最後の企てとして、 {s7}周辺に大規模な軍を集結させている模様です。
@@ -447,8 +439,9 @@ mno_ruin_menu_0|この場所を探索する。
 mno_ruin_leave|立ち去る・・・
 menu_death|あなたは殺されました。 戦争の猛威はいまだ弱まる気配すらありませんが、 あなたの役目はここで終わりました。
 menu_animal_ambush|あなたとコンパニオンは、他の兵とはぐれてしまいました。すると突然・・・
-menu_animal_ambush_success|{s2}{reg0?の一群は:は}、 あなたの前に、 鎌に刈られる小麦のようになぎ倒されました！ 地面に横たわり、 ぴくりとも動きません。 {s3}
-; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
+; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3} ^^{s10}
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again. ^^{s10}
+; menu_beorn_bear_encounter|^^^As the bear approaches, you realize that it seems calm and doesn't appear threatening. Its small eyes study you with mild interest before it disappears into the undergrowth.
 ; menu_isengard_flooding|^^^^^You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 ; mno_isengard_continue|Continue
 menu_build_your_scene|下に用意されたスロットのうちのひとつをエディットモードで編集して、 あなたの手で戦場シーンをつくる事ができます。 (M&Bのランチャーの設定でエディットモードをONにしたうえで、 任意のシーンを開いた状態でCtrl+Eを押すとエディットモードになります)。 あなたの作った戦場シーン (TLD/SceneObjフォルダにあるscoファイルです) をTLDの開発チームに送ってくれれば (出来が良ければの話ですが)、 戦場のうちのひとつとしてゲームに登場するかも知れません！^^どの地域で使われる事を想定したシーンなのかを明確にするようにしてください。^ちょっとしたヒントです:深い水場や、険しい山といった侵入不可な地形を登場させるのは、 AIが地形上をどのように移動するのかをしっかりと理解してからにしましょう。^(#0-1は攻撃側、#4は守備側のマップです。#5-8は編集しないでください)
@@ -464,9 +457,11 @@ mno_back_3dot|戻る・・・
 ; menu_companion_promoted_event|^^^A new hero   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!
 ; menu_mountain_travel|As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.
 ; menu_mountain_travel_arrived|After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}
-; mno_hunt_begin|Let the hunt begin!.
+; mno_hunt_begin|Let the hunt begin!
 ; mno_pick_troops_hunt|Pick companions for the hunt, {reg15} selected
-; menu_hunt_beast_debrief|{s9}^^Your Casualties:{s8}
+; menu_morannon_quest|^^You receive a message that Lord Aragorn, Chieftain of the Rangers of the North, has come to help in the defense of Gondor. Is he indeed the King Returned, as rumor says? A spark of hope. A fool's hope, perhaps. But hope is needed as the Captains of the West assemble their host and march towards the Black Gate. All faithful commanders of the west are summoned to join them there, to strike fast while the Enemy seems undecided.
+; mno_morannon_quest_start|To the Black Gate!
+; menu_healing_of_theoden|^^^Word reaches you that Théoden, King of Rohan, has cast off the weariness of age and taken his sword once more in hand. Throughout the streets of Edoras the clash of shields and spears is heard, and a great cry is raised among the people: ^^Arise now, arise, Riders of Théoden! ^Dire deeds awake, dark is it eastward. ^Let horse be bridled, horn be sounded! ^Forth Eorlingas!
 mno_back|戻る。
 mno_next|次へ・・・
 ; mno_previous|Previous...

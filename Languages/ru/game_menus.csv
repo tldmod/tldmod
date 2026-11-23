@@ -6,9 +6,9 @@ mno_go_bback|Назад
 menu_start_phase_2|^^^^^              Средиземье. Тень сгущается на Востоке, ^             И зло, что было скрыто, расползается вокруг. ^              Свободные народы готовятся к войне, какой не видели целую Эпоху. ^             Люди, эльфы, гномы, орки - всем суждено сыграть свою роль. ^^              Но какую именно - ещё предстоит узнать... 
 mno_go_forth| Вступить на выбранную вами стезю...
 mno_change_war_start_mode|Начало Войны: {s7}
+; mno_lore_events_switch|Lore events:  {s7}
 mno_toggle_tutorial|Всплывающие подсказки: {s7}
 mno_change_tld_options|Изменить настройки TLD.
-mno_see_info_pages|TLD - Суть игры
 menu_start_game_3|^^^^^^^^Выберите сценарий боя:
 mno_custom_battle_scenario_1| Стычка: гондорские фракции против Харада.
 mno_custom_battle_scenario_12|Выбери фракцию для сражения
@@ -115,6 +115,7 @@ menu_choose_gender|^^^^^^^^^^Ваш пол?
 mno_start_male|Мужской
 mno_start_female|Женский
 menu_choose_skill|Обратите внимание: в TLD меняется распределение и действие многих навыков. Если вы новичок в TLD или давно не играли, рекомендуем внимательно ознакомиться с описаниями характеристик и навыков.^^Многие другие особенности TLD также разъясняются в разделе, посвященном игровым концепциям.
+mno_see_info_pages|TLD - Суть игры
 mno_proc|Продолжить
 menu_start_as_one|^^^^^^^^^^Выберите тип солдата.
 mno_start_default|Стать {s23} (По умолчанию)
@@ -127,6 +128,7 @@ mno_camp_scene|Прогуляться вокруг.
 mno_camp_troop|Устроить смотр{reg10? воинов:}{reg12? и:}{reg11? пленников:}.
 mno_camp_action|Воспользоваться предметом.
 mno_camp_wait_here|Устроить стоянку.
+; mno_camp_adjust_tracking|Current tracking limit: {reg9}
 mno_camp_options|Изменить настройки TLD.
 mno_Dev_Menu|Меню разработчика
 menu_dev_menu|Это меню разработчиков, которые предоставляют вам множество читов / инструментов для игры.^^ Однако это приведет к некоторым WIP-событиям, триггерам, изменениям в кампании, которые могут нарушить работу игры.^^ Используйте на свой страх и риск! ^^ Кроме того, сообщая об ошибках, пожалуйста, сообщите нам, что вы используете меню разработчиков.
@@ -284,7 +286,7 @@ menu_castle_taken_by_friends|Здесь ничего нет.
 menu_castle_taken|{s3} - пал под натиском ваших войск, и вы теперь полностью контролируете {reg2?город:замок}. {reg1? Кажется, ничто не мешает вам оставить его себе...:}
 menu_castle_taken_2|{s3} - пал под натиском ваших войск, и вы теперь полностью контролируете замок. Самое время послать весть {s9} о вашей победе. {s5}
 mno_castle_taken_no_claim|Не просить никакой награды.
-menu_siege_started_defender|{s1} начинает штурм стен {s2}. У вас {reg22} войск, готовых к бою, против {reg11} войск противника. Вы решаете...
+; menu_siege_started_defender|{s1} is launching an assault against {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. ^{s17}^You decide to...
 mno_siege_defender_join_battle|Вступить в битву.
 mno_siege_defender_troops_join_battle|Приказать воинам вступить в битву без вашего участия.
 mno_siege_defender_do_not_join_battle|Не вмешиваться.
@@ -358,16 +360,6 @@ menu_legendary_place|^^^^Вы решили довериться слухам - �
 mno_explore|Обследовать местность.
 menu_ring_hunter_lair|^^^^Пройдя по следу Охотников за Кольцом через Лихолесье, вы прибыли в {s1}. Вы видите их, готовых сбежать вместе с сундуком.
 mno_attack_lair|Атаковать их сейчас
-menu_gondor_reinforcement_event|^^^^^Сигнальные костры Гондора зажглись, Минас Тирит просит о помощи!^^Лорды из южных владений теперь выступят на север, чтобы защищать Белый Город от надвигающейся тьмы.
-mno_gondor_reinforcement_event_close|Закрыть
-menu_gondor_beacons|Вы видите {s1}, один из сигнальных маяков Гондора, с помощью которого объявляли о начале войны всему королевству.
-mno_gondor_beacons_close|Покинуть...
-menu_player_added_to_war_council|^^^^^Посыльный сообщает вам что теперь, в качестве {s24}, {s2} просит вас участвовать в военном совете. Вы сможете предлагать решения, которые повлияют на ход этой войны.
-mno_player_added_to_war_council_close|Закрыть
-menu_player_added_to_siege_reports|^^^^^Посыльный сообщает вам что теперь, в качестве {s24}, вы будете получать донесения каждый раз, когда {s2} осаждает гарнизон или когда гарнизон {s2} подвергается вражеской осаде.
-mno_player_added_to_siege_reports_close|Закрыть
-menu_player_added_to_allow_follow|^^^^^Прибыл гонец и сообщает вам, что теперь, в качестве {s24}, вам дозволено приказать {s2} следовать за вами, при этом число сопровождающих отрядов не может превышать {reg55}.
-mno_player_added_to_allow_follow_close|Закрыть
 menu_center_besieged_event|^^^^^Прибыл посыльный, сообщивший, что {s1} в настоящее время находится под осадой {s2} из {s3}.
 mno_center_besieged_event_close|Закрыть
 menu_guardian_party_spawned|^^^^^Разведчики сообщают, что {s6} собрал большую армию в окрестностях {s7}, в последней отчаянной попытке защитить столицу.
@@ -447,8 +439,9 @@ mno_ruin_menu_0|Осмотреть местность.
 mno_ruin_leave|Продолжить...
 menu_death|Вас убили. Война продолжается, но уже без вашего участия.
 menu_animal_ambush|Заплутав, вы немного отстали от своих, как вдруг...
-menu_animal_ambush_success|{s2} {reg0?пали:пал} как колосья под серпом! {reg0?Враги:Враг} {reg0?убиты:убит} или {reg0?истекают:истекает} кровью. {s3}
-menu_animal_ambush_fail|Звери кусают и царапают вас, Но, к счастью вам удалось от них отбиться. Надеемся, они вас больше не тронут.
+; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3} ^^{s10}
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again. ^^{s10}
+; menu_beorn_bear_encounter|^^^As the bear approaches, you realize that it seems calm and doesn't appear threatening. Its small eyes study you with mild interest before it disappears into the undergrowth.
 menu_isengard_flooding|Вокруг вас  поверженные враги и ликующие союзники, среди которых — энты. Они ревут, грохочут и трубят так, что камни трескаются и сыплются вокруг башни Ортханк. Подобно неистовому урагану, они сокрушают колонны, обрушивают в провалы целые лавины валунов, подбрасывают в воздух огромные каменные плиты, словно сухие листья... Ничего подобного вы еще никогда не видели. Мимо проходит Брегалад — или, как вы его называете, Быстролуч,  и, остановившись лишь на мгновение, произносит: «{playername}! Берегись! Держись подальше от башни — скоро мы разрушим плотину, и воды реки Изен хлынут в эту долину, пусть даже ненадолго. Боюсь, устоять здесь на ногах будет непросто!» Вы спешите последовать его совету и поскорее удаляетесь от Ортханка. Около полуночи Изенгард начинает заполняться черными, расползающимися потоками и заводями. Вас пробирает дрожь при виде того, как огромными столбами поднимаются дым и пар; клубы испарений, извиваясь, окутывают башню, превращая ее в подобие высокой облачной вершины — огненной у основания и озаренной лунным светом на пике. Гнев энтов пробуждается неспешно, но обладает неодолимой силой...
 mno_isengard_continue|Продолжить
 menu_build_your_scene|Вы можете создать ваше собственное место битвы здесь, используя один из слотов, предоставленных ниже и игровой Режим Редактирования (вам необходимо включить Edit Mode в лаунчере M&B на экране настроек). Вы можете потом представить вашу созданную локацию (а именно, файлы sco из папки TLD/SceneObj) команде TLD, и, если ваша локация удалась, она может появиться в следующих выпусках как одна из случайных полей битв!^^ Попытайтесь определить, на какой области карты должна появляться ваша локация.^ Пара подсказок: избегайте глубокой воды, крутых гор и других непроходимых мест, если только вы не опытный создатель локаций и знаете, как воспрепятствовать перемещению солдат ИИ в ненужные места и направить их в нужные.^ (Вход #0-1 для атакующих, #4 для защитников, не трогать #5-8
@@ -464,9 +457,11 @@ mno_exit_game2|Выйти в главное меню
 menu_companion_promoted_event|^^^Новый герой ^^До вас дошли вести, что {s2} собрал отряд воинов, чтобы присоединиться к армии {s3}. Жители {s1} встают под {reg3?her:his} знамёна!
 menu_mountain_travel|Будучи {s24}, вы можете передвигаться по скрытым проходам и туннелям, соединяющим все подземные города в Туманных и Серых горах. В зависимости от ваших навыков поиска пути, этот путь может оказаться долгим и опасным. Зато вы останетесь невидимыми для тех, кто наблюдает за равниной.
 menu_mountain_travel_arrived|Преодолев опасные горные тропы и тёмные туннели, вы наконец прибываете в {s4}. {s5}^^{s3}
-mno_hunt_begin|Пусть охота начнётся!
+; mno_hunt_begin|Let the hunt begin!
 mno_pick_troops_hunt|Выберите спутников для охоты, {reg15} выбрано
-menu_hunt_beast_debrief|{s9}^^Ваши потери:{s8}
+; menu_morannon_quest|^^You receive a message that Lord Aragorn, Chieftain of the Rangers of the North, has come to help in the defense of Gondor. Is he indeed the King Returned, as rumor says? A spark of hope. A fool's hope, perhaps. But hope is needed as the Captains of the West assemble their host and march towards the Black Gate. All faithful commanders of the west are summoned to join them there, to strike fast while the Enemy seems undecided.
+; mno_morannon_quest_start|To the Black Gate!
+; menu_healing_of_theoden|^^^Word reaches you that Théoden, King of Rohan, has cast off the weariness of age and taken his sword once more in hand. Throughout the streets of Edoras the clash of shields and spears is heard, and a great cry is raised among the people: ^^Arise now, arise, Riders of Théoden! ^Dire deeds awake, dark is it eastward. ^Let horse be bridled, horn be sounded! ^Forth Eorlingas!
 mno_back|Назад.
 mno_next|Далее...
 mno_previous|Назад...

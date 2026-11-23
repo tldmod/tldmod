@@ -606,24 +606,6 @@ trp_ac3_isen_warg_rider|Изенгардский всадник на варге
 trp_ac3_isen_warg_rider_pl|Изенгардские всадники на варгах
 trp_ac4_isen_white_hand_rider|Всадник Белой Длани
 trp_ac4_isen_white_hand_rider_pl|Всадники Белой Длани
-trp_warg_ghost_1b|Варг
-trp_warg_ghost_1b_pl|Варги
-trp_warg_ghost_1c|Варг
-trp_warg_ghost_1c_pl|Варги
-trp_warg_ghost_1d|Варг
-trp_warg_ghost_1d_pl|Варги
-trp_warg_ghost_a1b|Варг
-trp_warg_ghost_a1b_pl|Варги
-trp_warg_ghost_a1c|Варг в броне
-trp_warg_ghost_a1c_pl|Варги в броне
-trp_warg_ghost_a2b|Варг в броне
-trp_warg_ghost_a2b_pl|Варги в броне
-trp_warg_ghost_a2c|Варг в броне
-trp_warg_ghost_a2c_pl|Варги в броне
-trp_warg_ghost_a3a|Варг в броне
-trp_warg_ghost_a3a_pl|Варги в броне
-trp_warg_ghost_h|Крупный варг
-trp_warg_ghost_h_pl|Крупные варги
 trp_a2_isen_uruk_tracker|Следопыт урук-хай
 trp_a2_isen_uruk_tracker_pl|Следопыты урук-хай
 trp_a3_isen_large_uruk_tracker|Крупный следопыт урук-хай
@@ -742,10 +724,10 @@ trp_c4_gunda_warg_rider|Гундабадский волчий всадник
 trp_c4_gunda_warg_rider_pl|Гундабадские волчьи всадники
 trp_c5_gunda_clan_rider|Гоблин-всадник из северного клана
 trp_c5_gunda_clan_rider_pl|Гоблины-всадники из северных кланов
+trp_i5_gunda_orc_champion_new|Гундабадский орк-чемпион
+trp_i5_gunda_orc_champion_new_pl|Гундабадские орки-чемпионы
 trp_i5_gunda_orc_champion|Гундабадский орк-чемпион
 trp_i5_gunda_orc_champion_pl|Гундабадские орки-чемпионы
-trp_mountain_goblin2|Горный гоблин
-trp_mountain_goblin2_pl|Горные гоблины
 trp_tribal_orc2|Дикий орк
 trp_tribal_orc2_pl|Дикие орки
 trp_i5_gunda_orc_champion2_pl|Гундабадские орки-чемпионы
@@ -801,8 +783,8 @@ trp_dale_captain|Полководец Дэйла
 trp_dale_captain_pl|Полководцы Дэйла
 trp_harad_captain|Знатный Харадрим
 trp_harad_captain_pl|Знатные Харадримы
-trp_a5_dun_night_wolf2|Дунландский ночной волк
-trp_a5_dun_night_wolf2_pl|Дунландский ночной волк
+; trp_far_harad_captain|Far Harad Chief
+; trp_far_harad_captain_pl|Far Harad Chiefs
 trp_dun_captain|Дунландский верховный вождь
 trp_dun_captain_pl|Дунландские верховные вожди
 trp_gunda_captain|Гундабадский вождь
@@ -823,18 +805,6 @@ trp_blackroot_captain|Капитан Долины Чёрного Корня
 trp_blackroot_captain_pl|Капитаны Долины Чёрного Корня
 trp_ithilien_captain|Командир отряда итилиэнских рейнджеров
 trp_ithilien_captain_pl|Командиры отрядов итилиэнских рейнджеров
-trp_brigand|Разбойник
-trp_brigand_pl|Бандиты
-trp_mountain_bandit|Горный разбойник
-trp_mountain_bandit_pl|Горные разбойники
-trp_forest_bandit|Лесной разбойник
-trp_forest_bandit_pl|Лесные разбойники
-trp_sea_raider|Морской налётчик
-trp_sea_raider_pl|Морские налётчики
-trp_steppe_bandit|Степной разбойник
-trp_steppe_bandit_pl|Степные разбойники
-trp_manhunter|Охотник за головами
-trp_manhunter_pl|Охотники за головами
 trp_kidnapped_girl|Похищенная девушка
 trp_kidnapped_girl_pl|Похищенные девушки
 trp_refugee|Беженец
@@ -877,8 +847,8 @@ trp_mirkwood_walker_2|Эльф Зеленолесья
 trp_lorien_walker_1|Лотлориэнский эльф
 trp_lorien_walker_2|Лотлориэнский эльф
 trp_dwarf_walker|Гном
-trp_beorn_walker|Крестьянин
-trp_beorn_walker_fem|Крестьянка
+; trp_beorn_walker|Vale Man
+; trp_beorn_walker_fem|Vale Woman
 trp_trainer_4|Наставник
 trp_trainer_gondor|Наставник
 trp_trainer_rohan|Наставник
@@ -1612,14 +1582,22 @@ trp_wild_troll|Дикий Пещерный Тролль
 trp_wild_troll_pl|Дикие Пещерные Тролли
 trp_ent|Энт
 trp_ent_pl|Энты
-trp_mountain_goblin|Горный Гоблин
-trp_mountain_goblin_pl|Горные Гоблины
-trp_tribal_orc|Дикий Орк
-trp_tribal_orc_pl|Дикие Орки
-trp_tribal_orc_warrior|Дикий Орк-Воин
-trp_tribal_orc_warrior_pl|Дикие Орки-Воины
-trp_tribal_orc_chief|Вождь Диких Орков
-trp_tribal_orc_chief_pl|Вожди Диких Орков
+; trp_i1_tribal_goblin|Tribal Goblin
+; trp_i1_tribal_goblin_pl|Tribal Goblins
+; trp_i2_goblin_raider|Mountain Goblin Raider
+; trp_i2_goblin_raider_pl|Mountain Goblin Raiders
+; trp_i3_goblin_warrior|Mountain Goblin Warrior
+; trp_i3_goblin_warrior_pl|Mountain Goblin Warriors
+; trp_i4_goblin_fell_warrior|Fell Goblin Warrior
+; trp_i4_goblin_fell_warrior_pl|Fell Goblin Warriors
+; trp_i5_goblin_great_warrior|Great Goblin Warrior
+; trp_i5_goblin_great_warrior_pl|Great Goblin Warriors
+; trp_c3_goblin_wolf_rider|Mountain Goblin Wolf Rider
+; trp_c3_goblin_wolf_rider_pl|Mountain Goblin Wolf Riders
+; trp_c4_goblin_warg_rider|Goblin Warg Rider
+; trp_c4_goblin_warg_rider_pl|Goblin Warg Riders
+; trp_c5_goblin_great_wargrider|Great Goblin Warg Rider
+; trp_c5_goblin_great_wargrider_pl|Great Goblin Warg Riders
 trp_a3_dism_skirmisher_of_rohan|Застрельщик Рохана
 trp_a3_dism_skirmisher_of_rohan_pl|Застрельщики Рохана
 trp_a4_dism_veteran_skirmisher_of_rohan|Опытный застрельщик Рохана
@@ -1636,8 +1614,8 @@ trp_merry_notmet|полурослик
 trp_pippin|Пиппин
 trp_merry|Мерри
 trp_grima|Грима Змеиный Язык
-trp_future_animal_0|Волк
-trp_future_animal_0_pl|Волки
+trp_future_animal_0|Олень
+trp_future_animal_0_pl|Олени
 trp_spider|Паук из Темнолесья
 trp_spider_pl|Пауки из Темнолесья
 trp_spider_strong|Великий паук
@@ -1664,10 +1642,10 @@ trp_bull|Дикий бык
 trp_bull_pl|Дикая корова 
 trp_bull_strong|Большой Бык
 trp_bull_strong_pl|Великая корова
-trp_stag|Олень
-trp_stag_pl|Олени
-trp_future_animal_4|Волк
-trp_future_animal_4_pl|Волки
+; trp_future_animal_3|Wild Warg
+; trp_future_animal_3_pl|Wild Wargs
+; trp_future_animal_4|Huge Wild Warg
+; trp_future_animal_4_pl|Huge Wild Wargs
 trp_future_animal_5|Волк
 trp_future_animal_5_pl|Волки
 trp_guthlaf|Гутлаф
@@ -1676,3 +1654,51 @@ trp_duilin|Дуилин
 trp_derufin|Деруфин
 trp_rumil|Румил
 trp_lugdush|Лугдуш
+; trp_looter|Looter
+; trp_looter_pl|Looters
+trp_brigand|Разбойник
+trp_brigand_pl|Бандиты
+; trp_marauder|Marauder
+; trp_marauder_pl|Marauders
+; trp_mirkwood_bandit|Mirkwood Bandit
+; trp_mirkwood_bandit_pl|Mirkwood Bandits
+; trp_easterling_bandit|Easterling Bandit
+; trp_easterling_bandit_pl|Easterling Bandits
+; trp_rhovanion_bandit|Rhovanion Bandit
+; trp_rhovanion_bandit_pl|Rhovanion Bandits
+; trp_i2_orc_straggler|Orc Straggler
+trp_i2_orc_straggler_pl|Бродячие орки
+; trp_i3_orc_brigand|Orc Brigand
+; trp_i3_orc_brigand_pl|Orc Brigands
+; trp_i4_orc_marauder|Orc Marauder
+; trp_i4_orc_marauder_pl|Orc Marauders
+; trp_i2_uruk_rogue|Uruk Rogue
+; trp_i2_uruk_rogue_pl|Uruk Rogues
+; trp_i3_uruk_brigand|Uruk Brigand
+; trp_i3_uruk_brigand_pl|Uruk Brigands
+; trp_i4_uruk_marauder|Uruk Marauder
+; trp_i4_uruk_marauder_pl|Uruk Marauders
+trp_warg_ghost_1b|Варг
+trp_warg_ghost_1b_pl|Варги
+trp_warg_ghost_1c|Варг
+trp_warg_ghost_1c_pl|Варги
+trp_warg_ghost_1d|Варг
+trp_warg_ghost_1d_pl|Варги
+trp_warg_ghost_a1b|Варг
+trp_warg_ghost_a1b_pl|Варги
+trp_warg_ghost_a1c|Варг в броне
+trp_warg_ghost_a1c_pl|Варги в броне
+trp_warg_ghost_a2b|Варг в броне
+trp_warg_ghost_a2b_pl|Варги в броне
+trp_warg_ghost_a2c|Варг в броне
+trp_warg_ghost_a2c_pl|Варги в броне
+trp_warg_ghost_a3a|Варг в броне
+trp_warg_ghost_a3a_pl|Варги в броне
+trp_warg_ghost_h|Крупный варг
+trp_warg_ghost_h_pl|Крупные варги
+; trp_wild_warg|Wild Warg
+; trp_wild_warg_pl|Wild Wargs
+; trp_wild_warg_strong|Huge Wild Warg
+; trp_wild_warg_strong_pl|Huge Wild Wargs
+trp_warg_ghost_wolf|Великий волк
+; trp_warg_ghost_wolf_pl|Great Wolves

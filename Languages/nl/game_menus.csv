@@ -6,9 +6,9 @@ mno_go_bback|Ga Terug
 menu_start_phase_2|^^^^^             Midden Aarde. Een schaduw is groeiende in het Oosten,^              en donkere zaken komen naar voren die lang zijn verborgen.^            De vrije mensheid bereidt zich voor op oorlog, wat lange tijd niet is gezien. ^           Mensen, Elven, Dwergen en Orks; allen zullen zij hun eigen rol spelen.^^        Welke rol, blijft echter nog te bezien...
 mno_go_forth|Ga heen op jouw gekozen pad...
 ; mno_change_war_start_mode|War Starts:  {s7}
+; mno_lore_events_switch|Lore events:  {s7}
 ; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|Verander TLD opties.
-; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^^Kies je scenario:
 mno_custom_battle_scenario_1|Schermutseling, Gondor facties vs Harad
 mno_custom_battle_scenario_12|Kies facties voor gevecht
@@ -115,6 +115,7 @@ menu_choose_gender|^^^^^^^^^^Jouw geslacht?
 mno_start_male|Man
 mno_start_female|Vrouw
 ; menu_choose_skill|Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.
+; mno_see_info_pages|TLD game concepts.
 ; mno_proc|Proceed
 menu_start_as_one|^^^^^^^^^Wat voor soort Soldaat ben je?
 mno_start_default|Wordt een{s23} (Standaard)
@@ -127,6 +128,7 @@ mno_camp_scene|Loop rond.
 mno_camp_troop|Inspecteer{reg10? troepen:}{reg12? en:}{reg11? gevangenen:}.
 mno_camp_action|Gebruik een object.
 mno_camp_wait_here|Wacht hier voor enige tijd.
+; mno_camp_adjust_tracking|Current tracking limit: {reg9}
 mno_camp_options|Verander TLD opties.
 mno_Dev_Menu|Ontwikkelaars Menu
 ; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
@@ -284,7 +286,7 @@ menu_castle_taken_by_friends|Niks te zien hier.
 menu_castle_taken|{s3} heeft moeten buigen voor jouw troepen, en nu heb je de volledige controle over het {reg2?stad:kasteel}. {reg1? Het lijkt erop dat niks je zal stoppen om het voor jezelf te nemen...:}
 menu_castle_taken_2|{s3} heeft moeten buigen voor jouw troepen, en nu heb je de volledige controle over het kasteel. Het is tijd om het bericht uit te sturen naar {s9} van jouw overwinning. {s5}
 mno_castle_taken_no_claim|Vraag voor geen beloningen.
-menu_siege_started_defender|{s1} lanceert een aanval tegen de muren van {s2}. Je hebt {reg22} troepen fit om de strijd aan te gaan tegen de {reg11} vijandelijke troepen. Je besluit om...
+; menu_siege_started_defender|{s1} is launching an assault against {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. ^{s17}^You decide to...
 mno_siege_defender_join_battle|Mee te doen aan de strijd.
 mno_siege_defender_troops_join_battle|Beveel je soldaten om mee te doen aan de strijd zonder jou.
 mno_siege_defender_do_not_join_battle|Besluit om niet betrokken te raken bij het gevecht.
@@ -358,16 +360,6 @@ menu_legendary_place|^^^^Je hebt de geruchten gevolgd en vond {s1}. Je kunt de p
 mno_explore|Verken deze plaats.
 menu_ring_hunter_lair|^^^^Je hebt het spoor van de Ringjagers door Demsterwold gevolgd en je bent aan de {s1} gekomen. Je ziet hen zich voorbereiden om te vertrekken met een kist.
 mno_attack_lair|Val hen nu aan.
-menu_gondor_reinforcement_event|^^^^^^De Bakens van Gondor zijn aangestoken, Minas Tirith vraagt om hulp!^^De Heren van de zuide leengoeden zullen nu naar het noorden marcheren om de Grote Witte Stad te verdedigen tegen de Duisternis.
-mno_gondor_reinforcement_event_close|Sluiten
-menu_gondor_beacons|Je kijkt op naar {s1}, een van de waarschuwings bakens van Gondor, gebruikt om alarm te slaan in Noord en Zuid Gondor
-mno_gondor_beacons_close|Ga weg...
-menu_player_added_to_war_council|^^^^^Een boodschapper is geariveerd en verteld je dat nu als {s24} gevraagd bent door {s2} om jje bij de oorlogsraad aan te sluiten. Je kan nu strategieen die de oorlog beinvloeden sugesteren.
-mno_player_added_to_war_council_close|Sluiten
-menu_player_added_to_siege_reports|^^^^^Een boodschapper is geariveerd en verteld je dat nu als {s24} Boodschappen krijgt als {s2} een belegering voert of als {s2} belegerd wordt.
-mno_player_added_to_siege_reports_close|Sluiten
-menu_player_added_to_allow_follow|^^^^^Een boodschapper is geariveerd en verteld je dat nu als {s24} Je {s2} mag commanderen voor een totaal van {reg55} maximale volgers.
-mno_player_added_to_allow_follow_close|Sluiten
 menu_center_besieged_event|^^^^^Een boodschapper is geariveerd en verteld dat {s1} is belegerd door {s2} en {s3}
 mno_center_besieged_event_close|Sluiten
 menu_guardian_party_spawned|^^^^^Verkenners rapporteren dat {s6} een groote leger in de buurt van {s7} hebben gezien, in een laatste poging om hun hoofdstad te verdedigen.
@@ -447,8 +439,9 @@ mno_ruin_menu_0|Verken de plaats.
 mno_ruin_leave|Ga weg...
 menu_death|Je bent gedood, Hoewel de oorlog nog steeds woedt, zal je er niet langer een deel van uitmaken.
 menu_animal_ambush|U en uw gezelschap zijn gescheiden van de rest van uw partij, wanneer plotseling...
-menu_animal_ambush_success|De {s2} {reg0?fall:falls} Valt voor je als een tarwe aan ene zeis! Al snel liggen al uw aanvallers op de vloer, dood of gewond. {s3}
-; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
+; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3} ^^{s10}
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again. ^^{s10}
+; menu_beorn_bear_encounter|^^^As the bear approaches, you realize that it seems calm and doesn't appear threatening. Its small eyes study you with mild interest before it disappears into the undergrowth.
 ; menu_isengard_flooding|^^^^^You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 mno_isengard_continue|Ga verder
 menu_build_your_scene|U kunt uw eigen battlescene hier te bouwen, met behulp van een van de sleuven hieronder en game Edit mode (je nodig hebt om edit mode Schakel eerst in M & B lauching scherm Opties). Vervolgens kunt u indienen scènes u geconstrueerd (namelijk SCO bestanden van TLD / SceneObj map) naar het dev team van TLD, en als uw scène is goed, het kan in latere releases als een van willekeurige slagvelden! ^^ Probeer aan te geven welke regio op de kaart u wilt dat uw scene te verschijnen ^ Paar tips:. vermijd diep water, steile bergen en andere onbegaanbare plaatsen, tenzij je ervaren scene-maker en weten hoe AI troepen bar van het lopen, waar je ze niet wilt, en maken AI maas in andere plaatsen. ^ (Inzendingen # 0-1 zijn voor aanvallers, # 4 voor verdedigers, niet aanraken # 5-8
@@ -464,9 +457,11 @@ mno_back_3dot|Terug...
 ; menu_companion_promoted_event|^^^A new hero   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!
 ; menu_mountain_travel|As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.
 ; menu_mountain_travel_arrived|After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}
-; mno_hunt_begin|Let the hunt begin!.
+; mno_hunt_begin|Let the hunt begin!
 ; mno_pick_troops_hunt|Pick companions for the hunt, {reg15} selected
-; menu_hunt_beast_debrief|{s9}^^Your Casualties:{s8}
+; menu_morannon_quest|^^You receive a message that Lord Aragorn, Chieftain of the Rangers of the North, has come to help in the defense of Gondor. Is he indeed the King Returned, as rumor says? A spark of hope. A fool's hope, perhaps. But hope is needed as the Captains of the West assemble their host and march towards the Black Gate. All faithful commanders of the west are summoned to join them there, to strike fast while the Enemy seems undecided.
+; mno_morannon_quest_start|To the Black Gate!
+; menu_healing_of_theoden|^^^Word reaches you that Théoden, King of Rohan, has cast off the weariness of age and taken his sword once more in hand. Throughout the streets of Edoras the clash of shields and spears is heard, and a great cry is raised among the people: ^^Arise now, arise, Riders of Théoden! ^Dire deeds awake, dark is it eastward. ^Let horse be bridled, horn be sounded! ^Forth Eorlingas!
 mno_back|Ga terug.
 mno_next|Volgende...
 ; mno_previous|Previous...

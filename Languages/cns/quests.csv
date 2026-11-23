@@ -57,9 +57,9 @@ qst_escort_merchant_caravan|护送补给队前往{s8}
 qst_escort_merchant_caravan_text|护送补给队前往{s8}并在目的地附近与他们交谈。
 qst_deliver_wine|给{s4}带{reg5}单位的{s6}
 qst_deliver_wine_text|{s3}的{s9}希望你能在7天内带{reg5}单位的{s6}到{s4}。
-qst_troublesome_bandits|追捕棘手的半兽人
-qst_troublesome_bandits_text|{s4}的{s9}希望你在城镇附近追捕棘手的半兽人
-qst_deal_with_looters|解决掉部落半兽人
+; qst_troublesome_bandits|Hunt Down Troublesome Bandits
+; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town.
+; qst_deal_with_looters|Deal with {s6}
 qst_deal_with_looters_text|{s4}的长老希望你能解决掉位于{s4}附近的几队部落半兽人。
 qst_deal_with_night_bandits|解决夜匪
 qst_deal_with_night_bandits_text|{s14}的长老希望你能解决肆虐{s14}的夜匪。
@@ -78,5 +78,9 @@ qst_deliver_gift_text|你已经请求了从{s2}将{s1}的{s4}带给{s3}。
 qst_ring_hunters|魔戒猎手
 qst_ring_hunters2|魔戒猎手-任务完成
 qst_deliver_message_hobbit|担心的霍比特人
+; qst_hunt_beast_coop|Hunt a {s6} with {s9}
+; qst_hunt_beast_mayor|Hunt down a beast
 ; qst_oath_personal|Oath of Vengeance
+; qst_morannon_quest|The Black Gate Opens
+; qst_morannon_quest_text|All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord.
 qst_quests_end_text|。

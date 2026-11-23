@@ -8,14 +8,14 @@ pt_mound|Kahraman Höyük
 pt_pyre|Kahraman Külleri
 pt_wild_troll|Vahşi Trol
 pt_raging_trolls|Azgın Trol
-pt_looters|Kabile Orkları
-pt_forest_bandits|Ork Kaçaklar
-pt_mountain_bandits|Vahşi Goblinler
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+pt_mountain_bandits|Dag Goblinleri
 pt_steppe_bandits|Dunland Serserileri
 pt_sea_raiders|Hain Korsanlar
 pt_deserters|Kaçaklar
 pt_merchant_caravan|Tüccar Karavanı
-pt_troublesome_bandits|Belalı Goblinler
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|Agaç Kesen Orklar
 pt_village_farmers|Çiftlik Köylüleri
 pt_spy_partners|Şüpheli Seyyahlar
@@ -148,3 +148,11 @@ pt_volunteers|Rezervler
 pt_refugees|Mülteciler
 pt_retreat_troops|Koruma Birlikleri
 pt_radagast|Yalnız Atlı
+pt_looters_new|Yagmacılar
+pt_brigands|Eşkiyalar
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

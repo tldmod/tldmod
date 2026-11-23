@@ -57,9 +57,9 @@ qst_escort_merchant_caravan|Escorter un convoi de ravitaillement à {s8}
 qst_escort_merchant_caravan_text|Escorter le convoi de ravitaillement jusqu'à {s8} et leur parler leur quand vous serez à proximité.
 qst_deliver_wine|Apporter {reg5} unités de {s6} à {s4}
 qst_deliver_wine_text|Le {s9} de {s3} vous a demandé de livrer {reg5} unités de {s6} à {s4} en 7 jours.
-qst_troublesome_bandits|Traquer les gobelins gênants.
-qst_troublesome_bandits_text|Le {s9} de {s4} vous a demandé de traquer les gobelins gênants dans le voisinage de la ville.
-qst_deal_with_looters|S'occuper des orques tribaux
+; qst_troublesome_bandits|Hunt Down Troublesome Bandits
+; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town.
+; qst_deal_with_looters|Deal with {s6}
 qst_deal_with_looters_text|L'ancien de {s4} vous a demandé de vous occuper de plusieurs groupes d'orques tribaux autour de {s4}.
 qst_deal_with_night_bandits|S'occuper des bandits nocturnes
 qst_deal_with_night_bandits_text|L'ancien de {s14} vous a demandé de vous occuper des bandits nocturnes à {s14}.
@@ -78,5 +78,9 @@ qst_deliver_gift_text|On vous a demandé de livrer un {s4} au {s1} des {s3} depu
 qst_ring_hunters|Chasseurs d'anneau
 qst_ring_hunters2|Chasseurs d'anneau - Terminé
 qst_deliver_message_hobbit|Au sujet des hobbits
+; qst_hunt_beast_coop|Hunt a {s6} with {s9}
+; qst_hunt_beast_mayor|Hunt down a beast
 qst_oath_personal|Serment de Vengeance
+; qst_morannon_quest|The Black Gate Opens
+; qst_morannon_quest_text|All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord.
 qst_quests_end_text|.

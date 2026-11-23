@@ -57,9 +57,9 @@ qst_escort_merchant_caravan|{s8}への 補給隊を護衛せよ
 qst_escort_merchant_caravan_text|{s8}まで補給隊を護衛し、 目的地付近に到達したらその旨を彼らに知らせよう。
 qst_deliver_wine|{s4}へ {s6}を{reg5}個届けよ
 qst_deliver_wine_text|7日以内に{s4}まで{s6}を{reg5}個届けるよう、 {s3}の{s9}に頼まれた。
-qst_troublesome_bandits|迷惑なゴブリンを退治せよ
-qst_troublesome_bandits_text|町の周辺にいる迷惑なゴブリンを退治するよう、 {s4}の{s9}に頼まれた。
-qst_deal_with_looters|部族オークを退治せよ
+; qst_troublesome_bandits|Hunt Down Troublesome Bandits
+; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town.
+; qst_deal_with_looters|Deal with {s6}
 qst_deal_with_looters_text|{s4}周辺にいる、 いくつかの部族オークの群れを退治するよう、 {s4}の長老に頼まれた。
 ; qst_deal_with_night_bandits|Deal with Night Bandits
 ; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
@@ -78,5 +78,9 @@ qst_deliver_gift_text|{s2}からの{s1}の{s4}を、 {s3}に届けるように�
 qst_ring_hunters|指輪狩り一味
 qst_ring_hunters2|指輪狩り一味 - 完了
 qst_deliver_message_hobbit|心配するホビット
+; qst_hunt_beast_coop|Hunt a {s6} with {s9}
+; qst_hunt_beast_mayor|Hunt down a beast
 qst_oath_personal|復讐の誓い
+; qst_morannon_quest|The Black Gate Opens
+; qst_morannon_quest_text|All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord.
 qst_quests_end_text|。

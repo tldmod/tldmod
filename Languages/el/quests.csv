@@ -57,9 +57,9 @@ qst_escort_merchant_caravan|Συνόδεψε το Τρένο Εφόδων στο
 qst_escort_merchant_caravan_text|Συνόδεψε το τρένο εφόδων στο {s8} και μίλησε τους όταν είστε κοντά.
 qst_deliver_wine|Παράδωσε {reg5} Μονάδες από {s6} στο {s4}
 qst_deliver_wine_text|Ο/Η {s9} του {s3} σου ζήτησε να πας {reg5} μονάδες από {s6} στο {s4} σε 7 ημέρες.
-qst_troublesome_bandits|Κυνήγησε τα Προβληματικά Γκόμπλιν
-qst_troublesome_bandits_text|Ο/Η {s9} του {s4} σου ζήτησε να κυνηγήσεις κάτι προβληματικά γκόμπλιν που είναι κοντά στην πόλη.
-qst_deal_with_looters|Αντιμετώπισε τα Άγρια Ορκ
+; qst_troublesome_bandits|Hunt Down Troublesome Bandits
+; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town.
+; qst_deal_with_looters|Deal with {s6}
 qst_deal_with_looters_text|Ο Γέροντας του {s4} σου ζήτησε να αντιμετωπίσεις διάφορες ομάδες από άγρια ορκ που είναι κοντά στο {s4}.
 ; qst_deal_with_night_bandits|Deal with Night Bandits
 ; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
@@ -78,5 +78,9 @@ qst_tld_introduction_text|Καμία
 ; qst_ring_hunters|Ring Hunters
 ; qst_ring_hunters2|Ring Hunters - Completed
 ; qst_deliver_message_hobbit|Concerning Hobbits
+; qst_hunt_beast_coop|Hunt a {s6} with {s9}
+; qst_hunt_beast_mayor|Hunt down a beast
 ; qst_oath_personal|Oath of Vengeance
+; qst_morannon_quest|The Black Gate Opens
+; qst_morannon_quest_text|All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord.
 ; qst_quests_end_text|.

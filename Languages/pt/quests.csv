@@ -57,9 +57,9 @@ qst_escort_merchant_caravan|Escoltar Caravana de Suprimentos para {s8}
 qst_escort_merchant_caravan_text|Escoltar a caravana de suprimentos para {s8} e falar com eles quando estiverem por perto.
 qst_deliver_wine|Entregar {reg5} Unidades de {s6} para {s4}
 qst_deliver_wine_text|O {s9} de {s3} pediu que você entregasse {reg5} unidades de {s6} para {s4} em 7 dias.
-qst_troublesome_bandits|Caçar Goblins Incômodos
-qst_troublesome_bandits_text|O {s9} de {s4} pediu que você caçasse os goblins problemáticos nas proximidades da cidade.
-qst_deal_with_looters|Lidar com Orcs Tribais
+; qst_troublesome_bandits|Hunt Down Troublesome Bandits
+; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town.
+; qst_deal_with_looters|Deal with {s6}
 qst_deal_with_looters_text|O Ancião de {s4} pediu que você lidasse com vários bandos de orcs tribais ao redor de {s4}.
 qst_deal_with_night_bandits|Lidar com Bandidos Noturnos
 qst_deal_with_night_bandits_text|O Ancião de {s14} pediu que você lidasse com bandidos noturnos em {s14}.
@@ -78,5 +78,9 @@ qst_deliver_gift_text|Você solicitou a entrega de um {s4} de {s1} para {s3} de 
 qst_ring_hunters|Caçadores de Anéis
 qst_ring_hunters2|Caçadores de Anéis - Concluído
 qst_deliver_message_hobbit|Sobre os Hobbits
+; qst_hunt_beast_coop|Hunt a {s6} with {s9}
+; qst_hunt_beast_mayor|Hunt down a beast
 qst_oath_personal|Juramento de Vingança
+; qst_morannon_quest|The Black Gate Opens
+; qst_morannon_quest_text|All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord.
 qst_quests_end_text|.

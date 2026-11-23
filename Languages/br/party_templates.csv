@@ -8,14 +8,14 @@ pt_mound|Tuchenn an haroz
 pt_pyre|Keuneudeg an haroz
 pt_wild_troll|Troll gouez
 pt_raging_trolls|Trolled kounnaret
-pt_looters|Meuriad Orked
-pt_forest_bandits|Staenourien Ork
-pt_mountain_bandits|Goblined gouez
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+; pt_mountain_bandits|Mountain Goblins
 pt_steppe_bandits|Dunland Forc'het
 pt_sea_raiders|Morlaerien renead
 pt_deserters|Dizertourien
 pt_merchant_caravan|Karavanenn marc'hadourien
-pt_troublesome_bandits|Goblined nec'hus
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|Orked keuneutaer
 pt_village_farmers|Fermourien kêr
 pt_spy_partners|Beajourien susped
@@ -148,3 +148,11 @@ pt_orc_horde|Hord Ork
 ; pt_refugees|Refugees
 ; pt_retreat_troops|Cover Troops
 pt_radagast|Marc'heger e-unan
+; pt_looters_new|Looters
+pt_brigands|Laerien
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

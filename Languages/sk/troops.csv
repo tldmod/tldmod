@@ -606,24 +606,6 @@ trp_ac3_isen_warg_rider|Vročí jazdec z Isengardu
 trp_ac3_isen_warg_rider_pl|Vročí jazdci z Isengardu
 trp_ac4_isen_white_hand_rider|Jazdec Bielej Ruky
 trp_ac4_isen_white_hand_rider_pl|Jazdci Bielej Ruky
-trp_warg_ghost_1b|Vrok
-trp_warg_ghost_1b_pl|Vroci
-trp_warg_ghost_1c|Vrok
-trp_warg_ghost_1c_pl|Vroci
-trp_warg_ghost_1d|Vrok
-trp_warg_ghost_1d_pl|Vroci
-trp_warg_ghost_a1b|Vrok
-trp_warg_ghost_a1b_pl|Vroci
-trp_warg_ghost_a1c|Obrnený Vrok
-trp_warg_ghost_a1c_pl|Obrnené Vroky
-trp_warg_ghost_a2b|Obrnený Vrok
-trp_warg_ghost_a2b_pl|Obrnené Vroky
-trp_warg_ghost_a2c|Obrnený Vrok
-trp_warg_ghost_a2c_pl|Obrnené Vroky
-trp_warg_ghost_a3a|Obrnený Vrok
-trp_warg_ghost_a3a_pl|Obrnené Vroky
-trp_warg_ghost_h|Obrovský Vrok
-trp_warg_ghost_h_pl|Obrovské Vroky
 trp_a2_isen_uruk_tracker|Uruk Hai stopár
 trp_a2_isen_uruk_tracker_pl|Uruk Hai stopári
 trp_a3_isen_large_uruk_tracker|Veľký Uruk Hai stopár
@@ -742,10 +724,10 @@ trp_c4_gunda_warg_rider|Vročí jazdec z Gundabadu
 trp_c4_gunda_warg_rider_pl|Vročí jazdci z Gundabadu
 trp_c5_gunda_clan_rider|Jazdec Severského kmeňa škratov
 trp_c5_gunda_clan_rider_pl|Jazdci Severského kmeňa škratov
+trp_i5_gunda_orc_champion_new|Ohyzdí šampión z Gundabadu
+trp_i5_gunda_orc_champion_new_pl|Ohyzdí šampióni z Gundabadu
 trp_i5_gunda_orc_champion|Ohyzdí šampión z Gundabadu
 trp_i5_gunda_orc_champion_pl|Ohyzdí šampióni z Gundabadu
-trp_mountain_goblin2|Horský škrat
-trp_mountain_goblin2_pl|Horskí škrati
 trp_tribal_orc2|Kmeňový ohyzd
 trp_tribal_orc2_pl|Kmeňoví ohyzdi
 trp_i5_gunda_orc_champion2_pl|Ohyzdí šampióni z Gundabadu
@@ -801,8 +783,8 @@ trp_dale_captain|Kapitán z Dolu
 ; trp_dale_captain_pl|Captains of Dale
 ; trp_harad_captain|Haradrim Noble
 ; trp_harad_captain_pl|Haradrim Nobles
-trp_a5_dun_night_wolf2|Vrchovecký Nočný vlk
-trp_a5_dun_night_wolf2_pl|Vrchovecký Nočný vlk
+; trp_far_harad_captain|Far Harad Chief
+; trp_far_harad_captain_pl|Far Harad Chiefs
 trp_dun_captain|Vrchovecký hajtman
 trp_dun_captain_pl|Vrchoveckí hajtmani
 ; trp_gunda_captain|Gundabad Chieftain
@@ -812,7 +794,7 @@ trp_gondor_captain_pl|Kapitáni z Gondoru
 trp_pel_captain|Kapitán z Pelargiru
 trp_pel_captain_pl|Kapitáni z Pelargiru
 ; trp_amroth_captain|Knight Captain of Dol Amroth
-; trp_amroth_captain_pl|Knight Captains of Dol Amroth
+; trp_amroth_captain_pl|Knights Captain of Dol Amroth
 trp_lam_captain|Kapitán z Lamedonu
 trp_lam_captain_pl|Kapitáni z Lamedonu
 trp_loss_captain|Veliteľ z Lossarnachu
@@ -823,18 +805,6 @@ trp_pinnath_captain_pl|Kapitáni z Pinnath Gelin
 ; trp_blackroot_captain_pl|Captains of Blackroot Vale
 trp_ithilien_captain|Kapitán Ithilienských hraničiarov
 trp_ithilien_captain_pl|Kapitáni Ithilienských hraničiarov
-trp_brigand|Zbojník
-trp_brigand_pl|Zbojníci
-trp_mountain_bandit|Horský bandita
-trp_mountain_bandit_pl|Horskí Banditi
-trp_forest_bandit|Lesný bandita
-trp_forest_bandit_pl|Lesní Banditi
-trp_sea_raider|Morský pirát
-trp_sea_raider_pl|Morskí piráti
-trp_steppe_bandit|Stepný bandita
-trp_steppe_bandit_pl|Stepní banditi
-trp_manhunter|Lovec ľudí
-trp_manhunter_pl|Lovci Ľudí
 trp_kidnapped_girl|Unesené dievča
 trp_kidnapped_girl_pl|Unesené dievčatá
 trp_refugee|Utečenec
@@ -877,8 +847,8 @@ trp_walker_woman_gondor_w|Gondorský šľachtic
 ; trp_lorien_walker_1|Lothlorien Elf
 ; trp_lorien_walker_2|Lothlorien Elf
 trp_dwarf_walker|Trpaslík
-; trp_beorn_walker|Peasant Man
-trp_beorn_walker_fem|Roľnícka žena
+; trp_beorn_walker|Vale Man
+; trp_beorn_walker_fem|Vale Woman
 trp_trainer_4|Tréner
 trp_trainer_gondor|Tréner
 trp_trainer_rohan|Tréner
@@ -1612,14 +1582,22 @@ trp_wild_troll|Divoký Jaskynný Zlobor
 trp_wild_troll_pl|Divokí Jaskynní Zlobri
 trp_ent|Ent
 trp_ent_pl|Enti
-trp_mountain_goblin|Horský škrat
-trp_mountain_goblin_pl|Horskí škrati
-trp_tribal_orc|Kmeňový Ohyzd
-trp_tribal_orc_pl|Kmeňoví Ohyzdi
-trp_tribal_orc_warrior|Bojový Kmeňový Ohyzd
-trp_tribal_orc_warrior_pl|Bojoví Kmeňoví Ohyzdi
-trp_tribal_orc_chief|Ohyzdí náčelník kmeňa
-trp_tribal_orc_chief_pl|Ohyzdí náčelníci kmeňa
+; trp_i1_tribal_goblin|Tribal Goblin
+; trp_i1_tribal_goblin_pl|Tribal Goblins
+; trp_i2_goblin_raider|Mountain Goblin Raider
+; trp_i2_goblin_raider_pl|Mountain Goblin Raiders
+; trp_i3_goblin_warrior|Mountain Goblin Warrior
+; trp_i3_goblin_warrior_pl|Mountain Goblin Warriors
+; trp_i4_goblin_fell_warrior|Fell Goblin Warrior
+; trp_i4_goblin_fell_warrior_pl|Fell Goblin Warriors
+; trp_i5_goblin_great_warrior|Great Goblin Warrior
+; trp_i5_goblin_great_warrior_pl|Great Goblin Warriors
+; trp_c3_goblin_wolf_rider|Mountain Goblin Wolf Rider
+; trp_c3_goblin_wolf_rider_pl|Mountain Goblin Wolf Riders
+; trp_c4_goblin_warg_rider|Goblin Warg Rider
+; trp_c4_goblin_warg_rider_pl|Goblin Warg Riders
+; trp_c5_goblin_great_wargrider|Great Goblin Warg Rider
+; trp_c5_goblin_great_wargrider_pl|Great Goblin Warg Riders
 trp_a3_dism_skirmisher_of_rohan|Rohanský ľahký kavalerista
 trp_a3_dism_skirmisher_of_rohan_pl|Ľahká jazda Rohanu
 trp_a4_dism_veteran_skirmisher_of_rohan|Skúsený ľahký kavalerista z Rohanu
@@ -1636,8 +1614,8 @@ trp_merry_notmet|hobit
 trp_pippin|Pútnik Bral
 trp_merry|Chicholm Brandylen
 trp_grima|Gríma Červivec
-trp_future_animal_0|Vlk
-trp_future_animal_0_pl|Vlky
+; trp_future_animal_0|Stag
+; trp_future_animal_0_pl|Stags
 trp_spider|Temnohvozdský pavúk
 trp_spider_pl|Temnohvozdskí pavúci
 ; trp_spider_strong|Great Spider
@@ -1664,10 +1642,10 @@ trp_werewolf_pl|Vlkodlaci
 ; trp_bull_pl|Wild Kine
 ; trp_bull_strong|Great Bull
 ; trp_bull_strong_pl|Great Kine
-; trp_stag|Stag
-; trp_stag_pl|Stags
-trp_future_animal_4|Vlk
-trp_future_animal_4_pl|Vlky
+; trp_future_animal_3|Wild Warg
+; trp_future_animal_3_pl|Wild Wargs
+; trp_future_animal_4|Huge Wild Warg
+; trp_future_animal_4_pl|Huge Wild Wargs
 trp_future_animal_5|Vlk
 trp_future_animal_5_pl|Vlky
 ; trp_guthlaf|Guthláf
@@ -1676,3 +1654,51 @@ trp_duilin|Duilin
 trp_derufin|Derufin
 ; trp_rumil|Rúmil
 ; trp_lugdush|Lugdush
+trp_looter|Lupič
+trp_looter_pl|Lupiči
+trp_brigand|Zbojník
+trp_brigand_pl|Zbojníci
+; trp_marauder|Marauder
+; trp_marauder_pl|Marauders
+; trp_mirkwood_bandit|Mirkwood Bandit
+; trp_mirkwood_bandit_pl|Mirkwood Bandits
+; trp_easterling_bandit|Easterling Bandit
+; trp_easterling_bandit_pl|Easterling Bandits
+; trp_rhovanion_bandit|Rhovanion Bandit
+; trp_rhovanion_bandit_pl|Rhovanion Bandits
+; trp_i2_orc_straggler|Orc Straggler
+trp_i2_orc_straggler_pl|Podradní ohyzdi
+; trp_i3_orc_brigand|Orc Brigand
+; trp_i3_orc_brigand_pl|Orc Brigands
+; trp_i4_orc_marauder|Orc Marauder
+; trp_i4_orc_marauder_pl|Orc Marauders
+; trp_i2_uruk_rogue|Uruk Rogue
+; trp_i2_uruk_rogue_pl|Uruk Rogues
+; trp_i3_uruk_brigand|Uruk Brigand
+; trp_i3_uruk_brigand_pl|Uruk Brigands
+; trp_i4_uruk_marauder|Uruk Marauder
+; trp_i4_uruk_marauder_pl|Uruk Marauders
+trp_warg_ghost_1b|Vrok
+trp_warg_ghost_1b_pl|Vroci
+trp_warg_ghost_1c|Vrok
+trp_warg_ghost_1c_pl|Vroci
+trp_warg_ghost_1d|Vrok
+trp_warg_ghost_1d_pl|Vroci
+trp_warg_ghost_a1b|Vrok
+trp_warg_ghost_a1b_pl|Vroci
+trp_warg_ghost_a1c|Obrnený Vrok
+trp_warg_ghost_a1c_pl|Obrnené Vroky
+trp_warg_ghost_a2b|Obrnený Vrok
+trp_warg_ghost_a2b_pl|Obrnené Vroky
+trp_warg_ghost_a2c|Obrnený Vrok
+trp_warg_ghost_a2c_pl|Obrnené Vroky
+trp_warg_ghost_a3a|Obrnený Vrok
+trp_warg_ghost_a3a_pl|Obrnené Vroky
+trp_warg_ghost_h|Obrovský Vrok
+trp_warg_ghost_h_pl|Obrovské Vroky
+; trp_wild_warg|Wild Warg
+; trp_wild_warg_pl|Wild Wargs
+; trp_wild_warg_strong|Huge Wild Warg
+; trp_wild_warg_strong_pl|Huge Wild Wargs
+trp_warg_ghost_wolf|Veľký vlk
+; trp_warg_ghost_wolf_pl|Great Wolves

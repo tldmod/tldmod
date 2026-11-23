@@ -57,9 +57,9 @@ qst_escort_merchant_caravan|مرافقة قافلة الإمداد إلى {s8}
 qst_escort_merchant_caravan_text|رافق قافلة الإمداد إلى {s8} وتحدث معهم عندما تقترب.
 qst_deliver_wine|تسليم {reg5} وحدة من {s6} إلى {s4}
 qst_deliver_wine_text|طلب منك {s9} في {s3} تسليم {reg5} وحدة من {s6} إلى {s4} في غضون 7 أيام.
-qst_troublesome_bandits|مطاردة العفاريت المزعجين
-qst_troublesome_bandits_text|طلب منك {s9} في {s4} مطاردة العفاريت المزعجين في محيط البلدة.
-qst_deal_with_looters|التعامل مع العفاريت القبلية
+; qst_troublesome_bandits|Hunt Down Troublesome Bandits
+; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town.
+; qst_deal_with_looters|Deal with {s6}
 qst_deal_with_looters_text|طلب منك شيخ {s4} التعامل مع عدة عصابات من العفاريت القبلية حول {s4}.
 qst_deal_with_night_bandits|التعامل مع العفاريت المارقة
 qst_deal_with_night_bandits_text|طلب منك شيخ {s14} التعامل مع عفاريت الليل في {s14}.
@@ -78,5 +78,9 @@ qst_deliver_gift_text|لقد طلبت تسليم {s4} من {s1} إلى {s3} من
 qst_ring_hunters|صائدي الخواتم
 qst_ring_hunters2|صائدي الخواتم - اكتمل
 qst_deliver_message_hobbit|بخصوص الهوبيت
+; qst_hunt_beast_coop|Hunt a {s6} with {s9}
+; qst_hunt_beast_mayor|Hunt down a beast
 qst_oath_personal|قسم الانتقام
+; qst_morannon_quest|The Black Gate Opens
+; qst_morannon_quest_text|All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord.
 qst_quests_end_text|.

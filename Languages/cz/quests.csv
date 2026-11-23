@@ -57,9 +57,9 @@ qst_escort_merchant_caravan|Doprovázej zásobování do {s8}
 qst_escort_merchant_caravan_text|Eskortuj zásobovací konvoj do {s8} a promluv si s nimi, když budeš poblíž .
 qst_deliver_wine|Doruč {reg5} jednotek {s6} do {s4}
 qst_deliver_wine_text|{s9} z {s3} tě požádal o doručení {reg5} jednotek {s6} do {s4} do 7 dnu.
-qst_troublesome_bandits|Dopadni gobliny, kteří dělají problémy.
-qst_troublesome_bandits_text| {s9} z {s4} tě požádal, aby si ulovil gobliny v okolí města.
-qst_deal_with_looters|Postarej se o klanové skřety.
+; qst_troublesome_bandits|Hunt Down Troublesome Bandits
+; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town.
+; qst_deal_with_looters|Deal with {s6}
 qst_deal_with_looters_text|Stařešina z {s4} tě požádal, aby si se vypořádal s několika tlupami divokých orků okolo {s4}.
 qst_deal_with_night_bandits|Vypořádej se s nočními bandity
 qst_deal_with_night_bandits_text|Stařešina {s14} tě požádal aby jsi se vypořádal s nočními bandity v {s14}
@@ -78,5 +78,9 @@ qst_deliver_gift_text|Byl jsi požádán o doručení {s4} z {s1} do {s3} z {s2}
 qst_ring_hunters|Lovci prstenů
 qst_ring_hunters2|Lovci prstenů - Splněno
 qst_deliver_message_hobbit|Týkající se Hobbitů 
+; qst_hunt_beast_coop|Hunt a {s6} with {s9}
+; qst_hunt_beast_mayor|Hunt down a beast
 qst_oath_personal|Přísaha pomsty.
+; qst_morannon_quest|The Black Gate Opens
+; qst_morannon_quest_text|All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord.
 qst_quests_end_text|.

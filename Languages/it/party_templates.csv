@@ -8,14 +8,14 @@ pt_mound|Tumulo di eroe
 pt_pyre|Pira di eroe
 pt_wild_troll|Troll Selvaggio
 pt_raging_trolls|Troll Furiosi
-pt_looters|Orchi Tribali
-pt_forest_bandits|Orchi Disertori
-pt_mountain_bandits|Goblin Selvaggi
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+pt_mountain_bandits|Goblin di Montagna
 pt_steppe_bandits|Banditi Dunlandiani
 pt_sea_raiders|Corsari Rinnegati
 pt_deserters|Disertori
 pt_merchant_caravan|Carovana di mercanti
-pt_troublesome_bandits|Goblin Molesti
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|Orchi Taglialegna
 pt_village_farmers|Contadini
 pt_spy_partners|Viandanti Sospetti
@@ -148,3 +148,11 @@ pt_volunteers|Riserve
 pt_refugees|Profughi
 pt_retreat_troops|Truppe di copertura
 pt_radagast|Viaggiatore Solitario
+pt_looters_new|Sciacalli
+pt_brigands|Briganti
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

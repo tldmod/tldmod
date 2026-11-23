@@ -1904,8 +1904,8 @@ str_trait_title_accursed|Maledetto
 str_trait_desc_accursed|Senti che hai provocato la collera delle potenze aldilà del mare. I tuoi sostenitori sentono bene questa condanna e la paura vi assale. Ricevono una penalità di morale settimanale.
 str_trait_title_stealthy|Silenziosamente
 str_trait_desc_stealthy|Hai sviluppato una sconcertante abilità nell'arte dell'infiltrarsi silenziosamente. Ricevi un bonus per la tua silenziosità valutato quando intraprendi missioni stealth.
-str_trait_title_berserker|Berserker 
-str_trait_desc_berserker|Dopo molte battaglie in cui hai ignorato l'uso di un'armatura, la tua feroce determinazione è divenuta come il ferro. Mentre combatti con leggere protezioni, ogni nemico ucciso ti riempe di risoluto vigore.
+; str_trait_title_berserker|Battle-fury
+; str_trait_desc_berserker|Your habit of ignoring any injuries during your reckless fighting has turned into a devastating battle fury. As long as your rage persists, you will now ignore most of the attacks directed at you and, in return, deliver terrible blows.
 str_trait_title_infantry_captain|Capitano di Fanteria
 str_trait_desc_infantry_captain|Hai sviluppato una sconcertante abilità nel comando della fanteria. Grazie al rigoroso e specializzato allenamento molte truppe riceveranno un piccolo miglioramento di vita una volta a battaglia.
 str_trait_title_archer_captain|Capitano degli Arcieri
@@ -1923,7 +1923,7 @@ str_trait_desc_fell_beast|La tua pelle è lacerata dalle cicatrici di innumerevo
 str_trait_title_butcher|Macellaio
 str_trait_desc_butcher|L'esperienza ha affinato la tua abilità nell'estrarre più carne dal corpo dei tuoi nemici. Guadagni un chilo di carne in più ogni volta che squarti uno dei tuoi prigionieri. Riesci anche ad ottenere più carne umana dopo ogni battaglia.
 str_trait_title_well_travelled|Ben percorsa
-str_trait_desc_well_travelled|Sulle strade lastricate di pietra e sui sentieri muschiosi degli animali, sulle montagne più alte e nelle valli più profonde, hai scoperto luoghi nascosti e hai visto meraviglie da tempo dimenticate. Dalle tue esperienze, hai imparato ad individuare i nemici prima che ti vedano e a scoprire il percorso più agevole per le tue truppe.
+; str_trait_desc_well_travelled|On stone paved roads and mossy animal paths, over the tallest mountains and in the deepest vales, you've discovered hidden places and seen long forgotten marvels.
 str_trait_title_bear_shape|Mutaforma
 str_trait_desc_bear_shape|Si dice che gli uomini della discendenza di Beorn abbiano l'abilità di trasformarsi in orsi. Per via delle tue connessioni con gli orsi hai scoperto di possedere anche tu quel dono.
 str_wound_head|un colpo pesante alla testa
@@ -2433,7 +2433,7 @@ str_woodelf_guildmaster_companion_player_ask|Col permesso di Thranduil, il re el
 str_woodelf_guildmaster_companion_none|Davvero ? Allora potrai chiedere a quelli della nostra guarnigione, e forse qualcuno sarà disposto a seguirti. Ma sento che il tuo desiderio è più profondo. Ti immagini un grande eroe, come quelli di Nargothrond o Gondolin di un tempo ? I nostri migliori guerrieri sono necessari per difenderci dall'ombra crescente a Mirkwood. Porta con te i soldati che possiamo risparmiare e accontentati.
 str_woodelf_guildmaster_companion_player_none_ok|Molto bene, Saggio. Sia come tu dici.
 str_woodelf_guildmaster_player_found_ok|Ti ringrazio per il tuo consiglio, Saggio. Navaer !
-str_woodelf_halls_guildmaster_companion|Davvero ? C'è una tra noi il cui aiuto non dovresti disprezzare. Luevanna è il suo nome e, guarda caso, è mia parente. È giovane, per come la considera la nostra gente, e nutre un amore costante per i boschi e tutte le creature che vi abitano, tranne quelle malvagie. Il suo è uno spirito gentile -- non ha combattuto nelle nostre schiere. Tuttavia, spero che possa essere persuasa a seguirti, perché allora potrebbe imparare che, sebbene amiamo modi pacifici in giorni pacifici, i tempi di guerra sono richieste azioni guerresche. Guarda, eccola lì -- puoi parlare con lei. Harthon gerithach presta vaer !
+; str_woodelf_halls_guildmaster_companion|Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit -- she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. She rarely stays in these halls - you will likely find her at the edge of the forest outside the gates.. Harthon gerithach lend vaer!
 str_dale_guildmaster_companion_player_ask|Buon maestro, sono in cerca di guerrieri temprati che combattano al mio fianco in questa guerra.
 str_dale_guildmaster_companion_none|Beh, adesso... Qui nella nostra città ci siamo sempre occupati di gestire i nostri affari tranquillamente, e solo di recente ci siamo trovati nel bisogno di combattere. Immagino che tu possa chiedere presso le nostre caserme, e trovare tutte le reclute che vuoi nella nostra guarnigione, ma non conosco nessuno dei nostri capitani qui, che abbandonerebbe il suo posto per seguire te.
 str_dale_guildmaster_companion_player_none_ok|Lo farò, buon maestro. Arriverderci a te.
@@ -2522,7 +2522,23 @@ str_shortname_region_s_anduin_vale|la valle meridionale dell'Anduin
 str_shortname_region_cair_andros|Cair Andros
 str_isengard_hunting_camp_guildmaster_player_found_ok|Se uccide bene, lo prenderò. Altrimenti, lo sventrerò come un pesce. E se si rivelerà essere un altro verme senza valore, tornerò e te la farò pagare per aver sprecato il mio tempo !
 str_trait_title_animal_fighter|Sventrabestie
-str_trait_desc_animal_fighter_|Le bestie selvatiche hanno imparato a evitarti. Riduce notevolmente le probabilità di incontrare animali ostili.
+; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Your skill at avoiding hostile animals through your wildcraft is greatly enhanced.
+; str_trait_title_horse_fiend|Horse Fiend
+; str_trait_desc_horse_fiend|You are a slayer of horses. Horses are frightened by your sheer presence in battle.
+; str_trait_title_warg_fiend|Warg Fiend
+; str_trait_desc_warg_fiend|Your terrible reputation as a Wolf Slayer has spread. Your presence may frighten wargs and wolves in battle.
+; str_trait_title_troll_slayer|Troll Slayer
+; str_trait_desc_troll_slayer|Your skill in fighting trolls in melee is renowned. You deal additional melee damage against trolls.
+; str_trait_title_troll_hunter|Troll Hunter
+; str_trait_desc_troll_hunter|Your skill in fighting trolls from afar is renowned. You deal additional ranged damage against trolls.
+; str_trait_title_light_armor|Light Armored
+; str_trait_desc_light_armor|You are well adapted to wearing light armor in battle. You receive a fighting and movement bonus when wearing light armor, sclaing with your agility.
+; str_trait_title_ranger|Ranger
+; str_trait_desc_ranger|You are well adapted to fighting in difficult terrain.
+; str_trait_title_night_fighter|Night Fighter
+; str_trait_desc_night_fighter|You have acquired the skills of moving and fighting in the dark. No longer is the night your enemy.
+; str_trait_title_day_fighter|Day Fighter
+; str_trait_desc_day_fighter|You do not fear the bright daylight anymore!
 str_commander|comandante 
 str_companion|compagno
 str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3|Io sono {s1}, un soldato di {s2} nella compagnia di {s3}.

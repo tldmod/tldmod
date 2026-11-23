@@ -57,9 +57,9 @@ qst_move_cattle_herd_text|Стареишината на {s10} каза да пр
 ; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
 qst_deliver_wine|Занеси {reg5} Предмета {s6} до {s4}
 qst_deliver_wine_text|{s9} на {s3} каза да занесеш {reg5} предмета {s6} до {s4} за 7 дни.
-qst_troublesome_bandits|Отиди на лов за проблемни гоблини.
-; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome goblins in the vicinity of the town.
-qst_deal_with_looters|Спазари се с племенните орки.
+; qst_troublesome_bandits|Hunt Down Troublesome Bandits
+; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town.
+; qst_deal_with_looters|Deal with {s6}
 ; qst_deal_with_looters_text|The Elder of {s4} has asked you to deal with several bands of tribal orcs around {s4}.
 ; qst_deal_with_night_bandits|Deal with Night Bandits
 ; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
@@ -78,5 +78,9 @@ qst_deliver_gift|Занеси {s4} на {s1} от {s2} до {s3}
 ; qst_ring_hunters|Ring Hunters
 ; qst_ring_hunters2|Ring Hunters - Completed
 ; qst_deliver_message_hobbit|Concerning Hobbits
+; qst_hunt_beast_coop|Hunt a {s6} with {s9}
+; qst_hunt_beast_mayor|Hunt down a beast
 ; qst_oath_personal|Oath of Vengeance
+; qst_morannon_quest|The Black Gate Opens
+; qst_morannon_quest_text|All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord.
 ; qst_quests_end_text|.

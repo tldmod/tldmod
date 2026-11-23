@@ -8,14 +8,14 @@ pt_mound|Hero Mound
 pt_pyre|Hero Pyre
 pt_wild_troll|Wild Troll
 pt_raging_trolls|Raging Trolls
-pt_looters|قبيلة العفاريت
-pt_forest_bandits|Orc Stragglers
-pt_mountain_bandits|Wild Goblins
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+pt_mountain_bandits|عفاريت جبلية
 pt_steppe_bandits|Dunland Outcasts
 pt_sea_raiders|Corsair Renegades
 pt_deserters|الفارون
 pt_merchant_caravan|Merchant Caravan
-pt_troublesome_bandits|Troublesome Goblins
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|Tree-chopping Orcs
 pt_village_farmers|Village Farmers
 pt_spy_partners|Suspicious Travellers
@@ -148,3 +148,11 @@ pt_volunteers|احتياط
 pt_refugees|لاجئون
 ; pt_retreat_troops|Cover Troops
 pt_radagast|Lone Rider
+; pt_looters_new|Looters
+pt_brigands|قطاع الطريق
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

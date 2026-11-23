@@ -6,9 +6,9 @@ mno_go_bback|إرجع
 menu_start_phase_2|^^^^^في منتصف الارض.الظلام ينتشر الى الشرق,^
 mno_go_forth|انطلق لصراطك المختار
 mno_change_war_start_mode|بدء الحرب: {s7}
+; mno_lore_events_switch|Lore events:  {s7}
 mno_toggle_tutorial|دروس تعليمية منبثقة: {s7}
 mno_change_tld_options|تغيير خيارات TLD.
-mno_see_info_pages|مفاهيم لعبة TLD.
 menu_start_game_3|اختر السنايرو
 mno_custom_battle_scenario_1|مناوشة, قاندور vs هاراد
 mno_custom_battle_scenario_12|اختر الطائفة للمعركة
@@ -115,6 +115,7 @@ menu_choose_gender|ماهوا جنسك؟
 mno_start_male|ذكر
 mno_start_female|انثى
 ; menu_choose_skill|Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.
+mno_see_info_pages|مفاهيم لعبة TLD.
 ; mno_proc|Proceed
 menu_start_as_one|مانوعك من الجنود
 mno_start_default|كن (Default) {s23}
@@ -127,6 +128,7 @@ mno_camp_scene|تجول
 mno_camp_troop|مراجعة {reg10؟ القوات:} {reg12؟ و:} {reg11؟ السجناء:}.
 mno_camp_action|استعمل الغرض
 mno_camp_wait_here|خيم هنا لبعض الوقت
+; mno_camp_adjust_tracking|Current tracking limit: {reg9}
 mno_camp_options|تغيير خيارات TLD.
 mno_Dev_Menu|قائمة المطور
 menu_dev_menu|هذه خيارات تطوير تمنحك الكثير من خيارات الغش/الأدوات للعب بها.^^ ومع ذلك، سيؤدي هذا إلى بعض الأحداث قيد التطوير والمشغلات وتغييرات الحملة التي قد تفسد اللعبة.^^ استخدمها على مسؤوليتك الخاصة! ^^ أيضًا، عند الإبلاغ عن الأخطاء، يرجى إخبارنا بأنك تستخدم قائمة المطور.
@@ -284,7 +286,7 @@ menu_castle_taken_by_friends|مافيه شي تراه هنا.
 menu_castle_taken|{s3} سقطت بيد قواتك ، وأنت الآن تتحكم بشكل كامل في {reg2؟ town: castle}. {reg1؟ يبدو أنه لا يوجد ما يمنعك من أخذها لنفسك ...:}
 menu_castle_taken_2|لقد سقط {s3} في يد قواتك ، وأنت الآن تتمتع بالسيطرة الكاملة على القلعة. حان الوقت لإرسال كلمة إلى {s9} حول انتصارك. {s5}
 mno_castle_taken_no_claim|الشريف ماياخذ مكافاة.
-menu_siege_started_defender|{s1} يشن هجومًا على جدران {s2}. لديك {reg22} من القوات الصالحة للمعركة ضد العدو {reg11}. قررت أن ...
+; menu_siege_started_defender|{s1} is launching an assault against {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. ^{s17}^You decide to...
 mno_siege_defender_join_battle|انضم للمعركه .
 mno_siege_defender_troops_join_battle|اطلب من رجالك الانضمام إلى المعركة بدونك.
 mno_siege_defender_do_not_join_battle|مالي دخل فيهم
@@ -358,16 +360,6 @@ menu_legendary_place|^ ^ ^ ^ لقد اتبعت الشائعات ووجدت {s1}.
 mno_explore|اسكتشف هاذا المكان.
 menu_ring_hunter_lair|^ ^ ^ ^ لقد اتبعت درب Ring Hunters عبر غابة ميركوود ووصلت إلى {s1}. تراهم يستعدون للمغادرة بصدر.
 mno_attack_lair|هاجمهم الآن
-menu_gondor_reinforcement_event|^ ^ ^ ^ ^ مضاءة منارات جوندور ، ويدعو ميناس تيريث للمساعدة! سوف يسير أمراء الإقطاعيات الجنوبية الآن شمالًا للدفاع عن المدينة البيضاء ضد الظلام القادم.
-mno_gondor_reinforcement_event_close|القريب
-menu_gondor_beacons|تنظر إلى {s1} ، أحد منارات التحذير في جوندور ، والتي تُستخدم في دق ناقوس الخطر في شمال وجنوب جوندور.
-mno_gondor_beacons_close|ارحل...
-menu_player_added_to_war_council|^^^^^وصل رسول وأخبرك أنه الآن، بصفتك {s24}، طلب منك {s2} أن تكون جزءًا من مجلس الحرب الخاص به. يمكنك الآن اقتراح استراتيجيات يمكن أن تؤثر على مسار هذه الحرب.
-mno_player_added_to_war_council_close|القريب
-menu_player_added_to_siege_reports|^^^^^وصل رسول وأخبرك أنه الآن، بصفتك {s24}، ستتلقى تقارير كلما حاصر {s2} مركزًا أو عندما تتعرض مراكز {s2} للحصار.
-mno_player_added_to_siege_reports_close|القريب
-menu_player_added_to_allow_follow|^^^^^وصل رسول وأخبرك أنه الآن، بصفتك {s24}، سيُسمح لك بإصدار أوامر لـ {s2} باتباعك، بحد أقصى إجمالي {reg55} من التابعين.
-mno_player_added_to_allow_follow_close|القريب
 menu_center_besieged_event|^^^^^وصل رسول يبلغ أن {s1} قد حوصر من قبل {s2} من {s3}.
 mno_center_besieged_event_close|القريب
 menu_guardian_party_spawned|^^^^^أفاد الكشافة أن {s6} جمع جيشًا كبيرًا في محيط {s7}، في محاولة أخيرة للدفاع عن العاصمة.
@@ -447,8 +439,9 @@ mno_ruin_menu_0|استكشف المكان.
 mno_ruin_leave|ارحل...
 menu_death|لقد قُتلت. على الرغم من أن الحرب لا تزال مستعرة، إلا أنك لن تكون جزءًا منها بعد الآن.
 menu_animal_ambush|تجد نفسك ورفقاؤك منفصلين عن بقية مجموعتك، عندما فجأة...
-menu_animal_ambush_success|يسقط {s2} {reg0?أمامك:أمامك} كالقمح أمام المنجل! سرعان ما يرقد جميع مهاجميك على الأرض، مصابين أو موتى. {s3}
-menu_animal_ambush_fail|تعضك الحيوانات وتمزقك {reg0?,: أنت ورفيقك {reg2?s,:,}} لكن لحسن الحظ تمكنت من صدهم. نأمل ألا يهاجموك مرة أخرى.
+; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3} ^^{s10}
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again. ^^{s10}
+; menu_beorn_bear_encounter|^^^As the bear approaches, you realize that it seems calm and doesn't appear threatening. Its small eyes study you with mild interest before it disappears into the undergrowth.
 ; menu_isengard_flooding|^^^^^You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 mno_isengard_continue|استمر
 menu_build_your_scene|يمكنك بناء مشهد معركة خاص بك، باستخدام إحدى الفتحات المتوفرة أدناه ووضع تحرير اللعبة (تحتاج إلى تشغيل وضع التحرير في خيارات شاشة إطلاق M&B أولاً، ثم الضغط على Ctrl+E داخل مشهد للوصول إلى وضع التحرير). يمكنك بعد ذلك إرسال المشاهد التي بنيتها (أي ملفات sco من مجلد TLD/SceneObj) إلى فريق تطوير TLD، وإذا كان مشهدك جيدًا، يمكن أن يظهر في الإصدارات اللاحقة كإحدى ساحات القتال العشوائية!^^ حاول تحديد المنطقة على الخريطة التي تريد ظهور مشهدك فيها.^ بعض التلميحات: تجنب المياه العميقة والجبال شديدة الانحدار والأماكن الأخرى غير القابلة للعبور، إلا إذا كنت صانع مشاهد متمرسًا وتعرف كيفية منع قوات الذكاء الاصطناعي من السير حيث لا تريدهم، وجعل شبكة الذكاء الاصطناعي في أماكن أخرى.^ (الإدخالات #0-1 للمهاجمين، #4 للمدافعين، لا تلمس #5-8)
@@ -464,9 +457,11 @@ mno_back_3dot|رجوع...
 ; menu_companion_promoted_event|^^^A new hero   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!
 ; menu_mountain_travel|As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.
 ; menu_mountain_travel_arrived|After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}
-; mno_hunt_begin|Let the hunt begin!.
+; mno_hunt_begin|Let the hunt begin!
 ; mno_pick_troops_hunt|Pick companions for the hunt, {reg15} selected
-; menu_hunt_beast_debrief|{s9}^^Your Casualties:{s8}
+; menu_morannon_quest|^^You receive a message that Lord Aragorn, Chieftain of the Rangers of the North, has come to help in the defense of Gondor. Is he indeed the King Returned, as rumor says? A spark of hope. A fool's hope, perhaps. But hope is needed as the Captains of the West assemble their host and march towards the Black Gate. All faithful commanders of the west are summoned to join them there, to strike fast while the Enemy seems undecided.
+; mno_morannon_quest_start|To the Black Gate!
+; menu_healing_of_theoden|^^^Word reaches you that Théoden, King of Rohan, has cast off the weariness of age and taken his sword once more in hand. Throughout the streets of Edoras the clash of shields and spears is heard, and a great cry is raised among the people: ^^Arise now, arise, Riders of Théoden! ^Dire deeds awake, dark is it eastward. ^Let horse be bridled, horn be sounded! ^Forth Eorlingas!
 mno_back|عد للخلف
 mno_next|التالي...
 mno_previous|السابق...

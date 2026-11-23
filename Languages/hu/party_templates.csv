@@ -8,14 +8,14 @@ pt_mound|Hős sírdombja
 pt_pyre|Hős halotti máglyája
 pt_wild_troll|Vad troll
 pt_raging_trolls|Dühöngő trollok
-pt_looters|Törzsi orkok
-pt_forest_bandits|Ork kóborgók
-pt_mountain_bandits|Vad koboldok
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+pt_mountain_bandits|Hegyi koboldok
 pt_steppe_bandits|Dúnföldi száműzöttek
 pt_sea_raiders|Kalóz árulók
 pt_deserters|Dezertőtök
 pt_merchant_caravan|Kereskedő karaván
-pt_troublesome_bandits|Problémás koboldok
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|Favágó orkok
 pt_village_farmers|Falusi parasztok
 pt_spy_partners|Gyanús utazók
@@ -148,3 +148,11 @@ pt_volunteers|Tartalékok
 pt_refugees|Menekültek
 pt_retreat_troops|Támogató Egységek
 pt_radagast|Magányos lovas
+pt_looters_new|Fosztogatók
+pt_brigands|Brigantik
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

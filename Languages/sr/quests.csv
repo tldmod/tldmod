@@ -57,9 +57,9 @@ qst_escort_merchant_caravan|Dovedi Vagon sa Zalihama do {s8}
 qst_escort_merchant_caravan_text|Odvedi vagon sa zalihama do {s8} i pričaj  sa njima kada ste bilzu
 qst_deliver_wine|Odnesi {reg5} vrste {s6} u {s4}
 qst_deliver_wine_text|{s9} od {s3} je trazio da doneses {reg5} vrsta {s6} u {s4} za 7 dana.
-qst_troublesome_bandits|Ulovi Gobline koje prave probleme
-qst_troublesome_bandits_text|{s9} od {s4} je trazio da ulovis Gobline koje prave probleme u blizini grada.
-qst_deal_with_looters|Ubij Plemenske Orkove
+; qst_troublesome_bandits|Hunt Down Troublesome Bandits
+; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town.
+; qst_deal_with_looters|Deal with {s6}
 qst_deal_with_looters_text|Vodja od {s4} je tražio da se obračunas sa nekoliko bandi plemenskih orkova koji se nalaze u blizini {s4}.
 ; qst_deal_with_night_bandits|Deal with Night Bandits
 ; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
@@ -78,5 +78,9 @@ qst_deliver_gift_text|Trazio si da pošaljes {s4} od {s1} iz {s3} do {s2}.
 qst_ring_hunters|Lovći prstena
 qst_ring_hunters2|Lovći prstena - Zavrseno
 qst_deliver_message_hobbit|O Hobitima
+; qst_hunt_beast_coop|Hunt a {s6} with {s9}
+; qst_hunt_beast_mayor|Hunt down a beast
 qst_oath_personal|Zakletva na osvetu
+; qst_morannon_quest|The Black Gate Opens
+; qst_morannon_quest_text|All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord.
 ; qst_quests_end_text|.

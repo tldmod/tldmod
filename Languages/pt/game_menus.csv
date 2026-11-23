@@ -6,9 +6,9 @@ mno_go_bback|Voltar
 menu_start_phase_2|^^^^^ Terra-média. Uma sombra cresce no Leste, ^ e coisas obscuras vêm à tona há muito tempo escondidas. ^ Os povos livres se preparam para uma guerra como não se via há séculos. ^ Homens, Elfos, Anãos e Orcs; todos desempenharão seu papel. ^^ Que papel, no entanto, ainda está para ser desempenhado...
 mno_go_forth|Siga em frente no caminho que você escolheu...
 mno_change_war_start_mode|Início da Guerra:  {s7}
+; mno_lore_events_switch|Lore events:  {s7}
 mno_toggle_tutorial|Tutoriais pop-up:  {s7}
 mno_change_tld_options|Alterar opções de TLD.
-mno_see_info_pages|Conceitos do jogo TLD.
 menu_start_game_3|^^^^^^^^Escolha seu cenário:
 mno_custom_battle_scenario_1|Conflito, facções de Gondor vs Harad
 mno_custom_battle_scenario_12|Escolha as facções para a batalha
@@ -115,6 +115,7 @@ menu_choose_gender|^^^^^^^^^^Seu gênero?
 mno_start_male|Masculino
 mno_start_female|Feminino
 menu_choose_skill|Por favor, esteja ciente de que TLD altera a distribuição e os efeitos de muitas habilidades. Se você é novo em TLD ou não joga há algum tempo, recomendamos que leia atentamente as descrições dos atributos e habilidades.^^Muitos outros detalhes específicos de TLD também são explicados na seção de conceitos do jogo.
+mno_see_info_pages|Conceitos do jogo TLD.
 mno_proc|Prosseguir
 menu_start_as_one|^^^^^^^^^^Que tipo de Soldado é você?
 mno_start_default|Tornar-se um {s23} (Padrão)
@@ -127,6 +128,7 @@ mno_camp_scene|Caminhar ao redor.
 mno_camp_troop|RevIsão{reg10? tropas:}{reg12? e:}{reg11? prisioneiros:}.
 mno_camp_action|Usar um objeto.
 mno_camp_wait_here|Acampar aqui por algum tempo.
+; mno_camp_adjust_tracking|Current tracking limit: {reg9}
 mno_camp_options|Alterar opções de TLD.
 mno_Dev_Menu|Menu de Desenvolvedor
 menu_dev_menu|Essas são opções de desenvolvimento que oferecem muitos truques/ferramentas para você usar.^^ No entanto, isso resultará em alguns eventos WIP, gatilhos e mudanças de campanha que podem prejudicar o jogo.^^ Use por sua conta e risco! ^^ Além disso, ao relatar bugs, informe-nos que você está usando o Menu Desenvolvedor.
@@ -284,7 +286,7 @@ menu_castle_taken_by_friends|Não há nada para ver aqui.
 menu_castle_taken|{s3} caiu para suas tropas, e agora você tem controle total {reg2?da cidade:do castelo}. {reg1? Parece que nada o impede de tomá-lo para si...:}
 menu_castle_taken_2|{s3} caiu para suas tropas, e agora você tem controle total do castelo. É hora de avisar {s9} sobre sua vitória. {s5}
 mno_castle_taken_no_claim|Não pedir recompensas.
-menu_siege_started_defender|{s1} está lançando um ataque contra as muralhas de {s2}. Você tem {reg22} tropas prontas para a batalha contra as {reg11} do inimigo. Você decide...
+; menu_siege_started_defender|{s1} is launching an assault against {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. ^{s17}^You decide to...
 mno_siege_defender_join_battle|Junte-se à batalha.
 mno_siege_defender_troops_join_battle|Ordenar que seus homens se juntem à batalha sem você.
 mno_siege_defender_do_not_join_battle|Não se envolver.
@@ -358,16 +360,6 @@ menu_legendary_place|^^^^Você seguiu os rumores e encontrou {s1}. Agora você p
 mno_explore|Explorar o lugar.
 menu_ring_hunter_lair|^^^^Você seguiu a trilha dos Caçadores do Anel pela Floresta das Trevas e chegou a {s1}. Você os vê se preparando para partir com um baú.
 mno_attack_lair|Atacar eles agora
-menu_gondor_reinforcement_event|^^^^^Os faróis de Gondor estão acesos, Minas Tirith clama por ajuda!^^Os senhores dos feudos do sul marcharão para o norte para defender a Cidade Branca contra a escuridão que se aproxima.
-mno_gondor_reinforcement_event_close|Fechar
-menu_gondor_beacons|Você olha para {s1}, um dos faróis de alerta de Gondor, usado para dar o alarme no norte e no sul de Gondor.
-mno_gondor_beacons_close|Deixar...
-menu_player_added_to_war_council|^^^^^Um mensageiro chegou e lhe disse que agora, como {s24}, {s2} pediu que você fizesse parte do seu Conselho de Guerra. Agora você pode sugerir estratégias que podem influenciar o curso desta guerra.
-mno_player_added_to_war_council_close|Fechar
-menu_player_added_to_siege_reports|^^^^^Um mensageiro chegou e lhe disse que agora, como {s24}, você receberá relatórios sempre que {s2} sitiar um centro ou quando os centros de {s2} forem sitiados.
-mno_player_added_to_siege_reports_close|Fechar
-menu_player_added_to_allow_follow|^^^^^Um mensageiro chegou e lhe disse que agora, como {s24}, você poderá comandar {s2} para segui-lo, para um total máximo de {reg55} seguidores.
-mno_player_added_to_allow_follow_close|Fechar
 menu_center_besieged_event|^^^^^Um mensageiro chegou relatando que {s1} foi sitiado por {s2} de {s3}.
 mno_center_besieged_event_close|Fechar
 menu_guardian_party_spawned|^^^^^Os batedores relatam que {s6} reuniu um grande exército nas proximidades de {s7}, em uma última tentativa de defender a capital.
@@ -447,8 +439,9 @@ mno_ruin_menu_0|Explorar o lugar.
 mno_ruin_leave|Deixar...
 menu_death|Você foi morto. Embora a guerra ainda continue, você não fará mais parte dela.
 menu_animal_ambush|Você e seus companheiros se encontram separados do resto do grupo quando, de repente...
-menu_animal_ambush_success|{reg0?O {s2} cai:Os {s2} caem} diante de você como trigo para uma foice! Logo todos os seus agressores jazem no chão, feridos ou mortos. {s3}
-menu_animal_ambush_fail|Os animais mordem e dilaceram você, mas felizmente você conseguiu se defender. Espero que não ataquem novamente.
+; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3} ^^{s10}
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again. ^^{s10}
+; menu_beorn_bear_encounter|^^^As the bear approaches, you realize that it seems calm and doesn't appear threatening. Its small eyes study you with mild interest before it disappears into the undergrowth.
 menu_isengard_flooding|^^^^^Você está cercado por inimigos mortos e aliados triunfantes, incluindo os Ents; eles rugem, estrondosam e tocam trombetas, até que pedras racham e caem ao redor da Torre de Orthanc. São como um vendaval uivante, quebrando pilares, lançando avalanches de pedregulhos pelos poços, arremessando enormes lajes de pedra para o ar como folhas... É algo que você nunca viu antes. ^^Bregalad — ou Tronquesperto, como você o conhece — passa a passos largos e para apenas para dizer: '{playername}! Cuidado! Mantenha-se longe da Torre — em breve romperemos a represa e traremos o O gelo para este vale, por um tempo. Você achará muito difícil ficar parado aqui, eu acho!' Rapidamente, você segue seu conselho e se apressa para longe de Orthanc. ^^Por volta da meia-noite, Isengard começa a se encher de riachos e poças negras e rastejantes. É impossível não estremecer ao ver a fumaça e o vapor subindo em grandes colunas, e uma vasta espiral de vapor serpenteando ao redor da Torre, até se assemelhar a um alto pico de nuvem, flamejante por baixo e iluminado pela lua acima. A fúria dos Ents é lenta, mas possui uma força irresistível...
 mno_isengard_continue|Continuar
 menu_build_your_scene|Você pode construir sua própria cena de batalha, usando um dos slots fornecidos abaixo e o modo de edição do jogo (você precisa ativar o modo de edição nas Opções da tela de inicialização do M&B primeiro e, em seguida, pressionar Ctrl+E dentro de uma cena para acessar o modo de edição). Você pode então enviar as cenas que construiu (ou seja, arquivos sco da pasta TLD/SceneObj) para a equipe de desenvolvimento do TLD e, se sua cena for boa, ela pode aparecer em versões posteriores como um dos campos de batalha aleatórios!^^ Tente especificar em qual região do mapa você quer que sua cena apareça.^ Algumas dicas: evite águas profundas, montanhas íngremes e outros lugares intransitáveis, a menos que você seja um criador de cenas experiente e saiba como impedir que tropas de IA andem onde você não as quer e faça a IA se misturar em outros lugares.^ (As entradas #0-1 são para atacantes, #4 para defensores, não toque em #5-8
@@ -464,9 +457,11 @@ mno_exit_game2|Voltar ao menu principal
 menu_companion_promoted_event|^^^Um novo herói ^^Chegou até você a notícia de que {s2} reuniu uma horda de guerreiros para se juntar ao exército de {s3}. O povo de {s1} se une sob a sua bandeira!
 menu_mountain_travel|Como um {s24}, você tem permissão para percorrer as passagens e túneis secretos que conectam todas as cidades subterrâneas nas Montanhas Nebulosas e nas Montanhas Cinzentas. Dependendo do seubusca de caminhosCom suas habilidades, a passagem será longa e perigosa. Mas você permanecerá escondido de todos os olhares atentos na planície.
 menu_mountain_travel_arrived|Após percorrer trilhas perigosas nas montanhas e atravessar túneis escuros, você finalmente chega em {s4}. {s5}^^{s3}
-mno_hunt_begin|Que a caçada comece!
+; mno_hunt_begin|Let the hunt begin!
 mno_pick_troops_hunt|Escolha companheiros para a caçada, {reg15} selecionados
-menu_hunt_beast_debrief|{s9}^^Suas baixas:{s8}
+; menu_morannon_quest|^^You receive a message that Lord Aragorn, Chieftain of the Rangers of the North, has come to help in the defense of Gondor. Is he indeed the King Returned, as rumor says? A spark of hope. A fool's hope, perhaps. But hope is needed as the Captains of the West assemble their host and march towards the Black Gate. All faithful commanders of the west are summoned to join them there, to strike fast while the Enemy seems undecided.
+; mno_morannon_quest_start|To the Black Gate!
+; menu_healing_of_theoden|^^^Word reaches you that Théoden, King of Rohan, has cast off the weariness of age and taken his sword once more in hand. Throughout the streets of Edoras the clash of shields and spears is heard, and a great cry is raised among the people: ^^Arise now, arise, Riders of Théoden! ^Dire deeds awake, dark is it eastward. ^Let horse be bridled, horn be sounded! ^Forth Eorlingas!
 mno_back|Volte.
 mno_next|Próximo...
 mno_previous|Anterior...

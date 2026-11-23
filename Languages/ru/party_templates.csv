@@ -8,14 +8,14 @@ pt_mound|Курган воителя
 pt_pyre|Погребальный костёр воителя
 pt_wild_troll|Дикий тролль
 pt_raging_trolls|Свирепые тролли
-pt_looters|Дикие орки
-pt_forest_bandits|Бродячие орки
-pt_mountain_bandits|Дикие гоблины
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+; pt_mountain_bandits|Mountain Goblins
 pt_steppe_bandits|Дунландцы-изгнанники
 pt_sea_raiders|Мятежные корсары
 pt_deserters|Дезертиры
 pt_merchant_caravan|Торговый караван
-pt_troublesome_bandits|Опасные гоблины
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|Орки-лесорубы
 pt_village_farmers|Крестьяне
 pt_spy_partners|Подозрительные путники
@@ -148,3 +148,11 @@ pt_volunteers|Резервы
 pt_refugees|Беженцы
 pt_retreat_troops|Войска прикрытия
 pt_radagast|Одинокий всадник
+; pt_looters_new|Looters
+pt_brigands|Наёмники
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

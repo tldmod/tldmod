@@ -41,20 +41,34 @@ dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Здравствуйте, с�
 dlga_hobbit_deliver_message:close_window|Спасибо, {playername}. Хорошо, что ты принес это мне.
 dlga_hobbit_merry_talk_met:close_window|Здравствуйте, господин Мерри.
 dlga_hobbit_pippin_talk_met:close_window|Здравствуйте, господин Пиппин.
-dlga_start:hd_defense_01|Хорошо, что ты здесь, {playername}. Меня зовут Арагорн, сын Араторна, и я наследник Исилдура - взгляни, вот Андурил, Пламя Запада, которое я несу в битву. Клинок, что был сломан, снова сияет! ^Пройдет совсем немного времени, и войска Сарумана достигнут этих стен. Я прошу тебя помочь мне и защитить рохиррим во имя чести Владыки Марки. Пусть этот час станет часом, когда мы вместе обнажим мечи!
-dlga_start:hd_defense_01.1|Mae lovannen! Дела здесь обстоят неважно, {playername}, но теперь, когда ты с нами, всё не так плохо! Gellon len covad. ^Я Леголас из Темнолесья, и хотя мне не очень нравится это место, приближающиеся орды Сарумана нравятся мне ещё меньше. Многое я бы отдал за то, чтобы здесь была сотня моих сородичей! Нас слишком мало, слишком мало. Нам нужна твоя помощь, командир, хотя мы, возможно, всего лишь несколько листьев в лесу...^Пойдём, я покажу тебе, где наши луки будут наиболее полезны...
-dlga_start:hd_defense_01.2|Как же я рад видеть тебя, родич! Я Гимли, сын Глоина. ^Против нас идет огромное войско, но мой топор не хочет покоя, и я знаю, что ты чувствуешь то же самое! Дайте нам ряды орочьих шей, чтобы было, что косить, и место для размаха, и вместе мы научим их, что такое страх. Крепкие ноги и крепкие топоры - вот что поможет нам пережить ночь! ^Ай-ай-ай! Их хватит для нас обоих. Барук Казад! Казад ай-мену!
+; dlga_start:morannon_quest_aragorn|Well met again, {playername}. I am glad that you have come, for we come now to the very brink, where hope and despair are akin, and it is good to have true friends beside us.
+; dlga_start:morannon_quest_aragorn.1|You are welcome, {playername}. I am Aragorn, son of Arathorn, Chieftain of the Dúnedain of the North, and I am glad that you have come.
+; dlga_morannon_quest_aragorn:morannon_quest_start_battle|The Captains of the West now gather before the Black Gate. Our hope is small, but while Men remain true to one another, hope is not wholly lost. Come, let us show the Enemy that the Men of the West have not forgotten courage.
+; dlga_start:morannon_quest_lego_1|Another Elf to join our host? Well, I shall not complain, so long as you can wield a sword or draw a bow. We have need of every stout heart here; although I see little chance of our accomplishing much against those walls.
+; dlga_start:morannon_quest_gimli_1|Well met! My friend Gimli will be glad to see another of his own folk here. And if you wield your axe as well as he does, I shall have no complaint!
+; dlga_morannon_quest_gimli_1:morannon_quest_lego_1|Welcome, kinsman! We have need of every stout heart here; although I see little chance of our accomplishing much against those walls.
+; dlga_morannon_quest_lego_1:morannon_quest_gimli_2|Up with your beard, my friend! We have travelled dark paths and fought great battles, lead by the will and by our love of Aragorn. Oft hope is born, when all is forlorn. Now, the captains prepare to ride to the Gate, and we are to speak for the folk of the Wood and the Mountain. Let us see if we can lure out whatever is hiding behind those doors.
+; dlga_morannon_quest_gimli_2:morannon_quest_start_battle|Very well, I shall come. Whatever is still to do, I hope to have a part in it, for the honour of the folk of the Lonely Mountain. {playername}, wait here for our return. Before long, you may have your own part to play, and I would be glad to have you by my side.
+; dlga_morannon_quest_start_battle:close_window|Now, prepare yourself! The Black Gate will soon open!
+; dlga_start:close_window.1|Rejoice, {playername}, the Ring-bearer has fulfilled his Quest. The realm of Sauron is ended, and the road is open for Aragorn to claim the kingship that is his by right. You may stand by him, but I have one last errand, and I have need of speed greater than any wind. We will meet again.
+; dlga_start:close_window.2|The battle is won, and I thank you, {playername}, for standing with me in this hour of doom. We have faced the darkness together, and I expect that our paths shall cross again. Now I must return to Minas Tirith, for the time has come for me to claim the inheritance that is mine.
+; dlga_start:hd_defense_01|Hail {s24}! You come in good time, for the enemy is hard upon your heels. These walls are strong, and shall not fall while men have strength to defend them. Yet I will not deny that every sword-arm is welcome!
+dlga_start:hd_defense_01.1|Хорошо, что ты здесь, {playername}. Меня зовут Арагорн, сын Араторна, и я наследник Исилдура - взгляни, вот Андурил, Пламя Запада, которое я несу в битву. Клинок, что был сломан, снова сияет! ^Пройдет совсем немного времени, и войска Сарумана достигнут этих стен. Я прошу тебя помочь мне и защитить рохиррим во имя чести Владыки Марки. Пусть этот час станет часом, когда мы вместе обнажим мечи!
+dlga_start:hd_defense_01.2|Mae lovannen! Дела здесь обстоят неважно, {playername}, но теперь, когда ты с нами, всё не так плохо! Gellon len covad. ^Я Леголас из Темнолесья, и хотя мне не очень нравится это место, приближающиеся орды Сарумана нравятся мне ещё меньше. Многое я бы отдал за то, чтобы здесь была сотня моих сородичей! Нас слишком мало, слишком мало. Нам нужна твоя помощь, командир, хотя мы, возможно, всего лишь несколько листьев в лесу...^Пойдём, я покажу тебе, где наши луки будут наиболее полезны...
+dlga_start:hd_defense_01.3|Как же я рад видеть тебя, родич! Я Гимли, сын Глоина. ^Против нас идет огромное войско, но мой топор не хочет покоя, и я знаю, что ты чувствуешь то же самое! Дайте нам ряды орочьих шей, чтобы было, что косить, и место для размаха, и вместе мы научим их, что такое страх. Крепкие ноги и крепкие топоры - вот что поможет нам пережить ночь! ^Ай-ай-ай! Их хватит для нас обоих. Барук Казад! Казад ай-мену!
 dlga_hd_defense_01:close_window|Теперь давайте немного отдохнем. Враг будет здесь к ночи.
 dlga_start:aragorn_thanks_hd|{playername}, я рад видеть, что ты жив{/а}. Воины измучены битвой, но благодаря тебе они увидят рассвет нового дня. ^Горцы сдались, и их заставят работать, чтобы исправить зло, к которому они приобщились, после чего, я надеюсь, они вернутся в свои земли. Они были легко обмануты Саруманом, ибо многое у них было отнято, и многое ещё предстоит вернуть. Нам придётся подумать, что можно для них сделать в будущем.
-dlga_aragorn_thanks_hd:close_window|Надеюсь, наши пути ещё пересекутся вновь, {playername}. Прощай, я уезжаю по важному делу. С первыми лучами солнца мы с друзьями должны покинуть эту долину и отправиться по тёмному пути. ^{playername}, времена недобрые, но твоя доблесть радует сердца всех свободных народов повсюду, от Севера до Юга. Сражайся хорошо, и, возможно, мы встретимся снова за гранью тени!
-dlga_start:close_window.1|Через некоторое время я снова отправлюсь в путь, {playername}, трудной дорогой, на которую не ступала ничья нога на протяжении многих лет бесчисленных лет. Надеюсь, твой путь будет легче, чем мой, друг. ^А пока, возможно, ты захочешь посетить глубокие пещеры Хельмовой впадины, о которых много рассказывал мой спутник, гном Гимли.
-dlga_start:close_window.2|Ты еще не бывал{/а} в пещерах в глубине? Сверкающие пещеры Агларонда, {playername}! Счастлив тот случай, что привёл тебя сюда!
-dlga_start:close_window.3|Я пообещал моему другу Гимли, сыну Глоина, что, когда война закончится, я вернусь сюда вместе с ним и сам увижу Сверкающие Пещеры Агларонда. Если у тебя есть время, {playername}, ты мог{/ла} бы тоже сделать это, прежде чем снова отправишься в путь. Небольшая передышка от всех этих боев!
+dlga_aragorn_thanks_hd:player_thanks_hd|Надеюсь, наши пути ещё пересекутся вновь, {playername}. Прощай, я уезжаю по важному делу. С первыми лучами солнца мы с друзьями должны покинуть эту долину и отправиться по тёмному пути. ^{playername}, времена недобрые, но твоя доблесть радует сердца всех свободных народов повсюду, от Севера до Юга. Сражайся хорошо, и, возможно, мы встретимся снова за гранью тени!
+; dlga_start:player_thanks_hd|{playername}, I am glad to see you live still. The men are weary with battle, but thanks to you they see the dawn of a new day.
+; dlga_player_thanks_hd:close_window|It was an honor to fight by sour side, lord.
+dlga_start:close_window.3|Через некоторое время я снова отправлюсь в путь, {playername}, трудной дорогой, на которую не ступала ничья нога на протяжении многих лет бесчисленных лет. Надеюсь, твой путь будет легче, чем мой, друг. ^А пока, возможно, ты захочешь посетить глубокие пещеры Хельмовой впадины, о которых много рассказывал мой спутник, гном Гимли.
+dlga_start:close_window.4|Ты еще не бывал{/а} в пещерах в глубине? Сверкающие пещеры Агларонда, {playername}! Счастлив тот случай, что привёл тебя сюда!
+dlga_start:close_window.5|Я пообещал моему другу Гимли, сыну Глоина, что, когда война закончится, я вернусь сюда вместе с ним и сам увижу Сверкающие Пещеры Агларонда. Если у тебя есть время, {playername}, ты мог{/ла} бы тоже сделать это, прежде чем снова отправишься в путь. Небольшая передышка от всех этих боев!
 dlga_start:treebeard_isengard_1|{s2} Ха, хммм! Добро пожаловать, друзья! Ваше прибытие своевременно. Мне нужно разобраться с Волшебником, но сначала мы должны прижать его в его башне. Это будет неприятное дело. Внутри нас ждут камень, топор и огонь. Поможете ли вы нам?
 dlga_treebeard_isengard_1:treebeard_isengard_2|Да, меня послал Гэндальф. Давайте возьмем штурмом Кольцо Изенгарда!
 dlga_treebeard_isengard_2:close_window|Хорошо, тогда следуйте за мной. Мы уже проникли за Кольцо. Теперь давайте приберёмся внутри! ^Хууум, хом! Хууум, хом! ^Изенгард крушить идём! ^Крушить идём, крушить идём!
-dlga_start:close_window.4|^Хууум, хом! Хууум, хом! ^Изенгард крушить идём! ^Крушить идём, крушить идём!
-dlga_start:close_window.5|Спасибо за помощь. Должен сказать, было весьма приятно управиться с этими орками. Вы нам очень помогли. Но теперь, хм, у нас есть работа, с которой вы не можете помочь. Вам, пожалуй, стоит найти безопасное место за пределами Изенгарда и подождать, пока мы не закончим.
+dlga_start:close_window.6|^Хууум, хом! Хууум, хом! ^Изенгард крушить идём! ^Крушить идём, крушить идём!
+dlga_start:close_window.7|Спасибо за помощь. Должен сказать, было весьма приятно управиться с этими орками. Вы нам очень помогли. Но теперь, хм, у нас есть работа, с которой вы не можете помочь. Вам, пожалуй, стоит найти безопасное место за пределами Изенгарда и подождать, пока мы не закончим.
 dlga_start:treebeard_isengard_3|И снова здравствуй. Рад видеть тебя в целости и сохранности и сух{им/ой} . Должен сказать, что потребуется немало времени, чтобы смыть всю мерзость Сарумана. Но мы неплохо справились, хм, да. Он больше не причинит вреда.
 dlga_treebeard_isengard_3:close_window|Хо, хм, я очень благодарен тебе. Я не ожидал помощи от других, и приятно узнать, что наш Последний Поход может закончиться не так уж плохо в конце концов! Поскольку с убийцей деревьев покончено, мы теперь сможем обеспечить безопасность северных рубежей Рохана на какое-то время.
 dlga_treebeard_isengard_3:close_window.1|Хм? Хо, хм... а. Значит, ты проделал весь путь из Рохана, да? Хм. Я слышал кое-какие новости с юга, да. Хорошие новости, новости, радующие все сердца. Я благосклонен к королю Теодену и рад, что в трудную минуту ему помогли такие, как вы, хм! Мы справились здесь достаточно хорошо, и теперь мы, энты, будем следить за тем, чтобы Саруман не ступал за пределы Изенгарда без нашего разрешения. Изен снова течет хорошо, и скоро, я надеюсь, вода снова станет пригодной для питья. Ха, хм, я чувствую, что начинаю петь. Песня о былых днях... о старых деревьях, которые я знал...
@@ -81,13 +95,13 @@ dlga_treebeard_about_himself:treebeard_pretalk.1|Груум... Я самый с�
 dlga_treebeard_about_entwives:treebeard_pretalk|(Внезапно предводитель энтов выказывает опечаленность, а его голос становится необычайно глубоким)^"Хуммм... Это грустная история... когда наши леса будут спасены от орков, тогда мы сможем поговорить об этом".
 dlga_treebeard_about_entwives:treebeard_pretalk.1|Ахуммм... наши прекрасные жены... они любили сажать и выращивать... нам нужно было больше к ним прислушиваться. Груум... потом они ушли в Бурые земли, чтобы устроить сады, и научили смертных, как делать землю плодородной... мы, бывало, навещали их... покуда... не напал Саурон... ныне жёны энтов исчезли... Хммм.... Фибретиль...  она имела цвет спелого зерна... мы искали их... но не нашли... пока...
 dlga_treebeard_about_ents:treebeard_pretalk|Груум... Энты - пастыри деревьев, и мы оберегаем их от опасностей. Мы старше, чем любой из смертных народов, но не сравнимся с эльфами, которые избавили нас от немоты. Всё изменилось с тех пор. В молодости мы были более торопливыми и гибкими. За века многие из нас были потеряны. Некоторые из нас остались истинными энтами и следуют нашим традициям, но многие погрузились в сон, или одеревенели, в вашем понимании. Большинство деревьев — деревья и есть, но некоторые наполовину пробудились, а некоторые пробудились уже совсем. А кое-кто становится энтами. Так всегда было.. Когда это случается с деревьями, оказывается, что у некоторых плохая сердцевина. Что ж, мы делаем, что можем. Не пускаем чужестранцев и безрассудных храбрецов. И воспитываем, и учим, и очищаем от сорняков.
-dlga_start:close_window.6|Ммммм?
-dlga_start:close_window.7|Ммххрммм?
-dlga_start:close_window.8|Mммрхррхмм?
+dlga_start:close_window.8|Ммммм?
+dlga_start:close_window.9|Ммххрммм?
+dlga_start:close_window.10|Mммрхррхмм?
 dlga_start:looters_2_join|Склонитесь перед властью Кнута Господина и служите мне!
 dlga_looters_2_join:close_window|Мы подчиняемся, госпо{дин/жа}.
-dlga_start:close_window.9|^^ГРРРР!^^
-dlga_start:close_window.10|^^ГРРРР!^^
+dlga_start:close_window.11|^^ГРРРР!^^
+dlga_start:close_window.12|^^ГРРРР!^^
 dlga_start:member_castellan_talk|Да, {playername}? Чем могу помочь?
 dlga_member_castellan_pretalk:member_castellan_talk|Еще что-нибудь?
 dlga_member_castellan_talk:member_review_castle_garrison|Я хочу осмотреть гарнизон замка.
@@ -139,9 +153,9 @@ dlga_member_question_2:member_health|Как ваше здоровье?
 dlga_member_question_2:member_background_recap|Расскажите снова о себе.
 dlga_member_background_recap_3:do_member_trade|Вскоре после этого я присоединился к вам.
 dlga_do_member_view_char:member_talk|Еще что-нибудь?
-dlga_start:close_window.11|Было честью сражаться с вами, {playername}.
-dlga_start:close_window.12|Давай уйдем, когда ты будешь готов.
-dlga_start:close_window.13|Пожалуйста, больше не тратьте моё время сегодня. Возможно, мы увидимся позже.
+dlga_start:close_window.13|Было честью сражаться с вами, {playername}.
+dlga_start:close_window.14|Давай уйдем, когда ты будешь готов.
+dlga_start:close_window.15|Пожалуйста, больше не тратьте моё время сегодня. Возможно, мы увидимся позже.
 dlga_companion_recruit_signup_response:close_window|Сожалею, я не могу принять в свой отряд первого встречного.
 dlga_companion_recruit_rank:close_window|Кажется, ты не заслужил{/а} расположения моего народа, {playername}. Твой ранг - {s29}, а должен быть {s24}, чтобы мне было можно присоединиться к тебе [нужно ещё {reg3} очков ранга].^Возвращайся снова, когда будешь лучше подготовлен{/а}.
 dlga_companion_recruit_rank:companion_recruit_payment.1|Приятно видеть, что ты теперь {s29}! Я с нетерпением жду возможности присоединиться к тебе.
@@ -160,6 +174,20 @@ dlga_companion_was_dismissed:companion_rehire|{s5}. Хотите, чтобы я 
 dlga_companion_rehire:companion_recruit_signup_confirm|С возвращением, мой друг!
 dlga_companion_rehire:companion_rehire_refused|Извини, я не могу взять кого-то еще сейчас.
 dlga_companion_rehire_refused:close_window|Ладно... Разыщете меня, если измените мнение по этому поводу, да?
+; dlga_event_triggered:dimborn_ask_bear|Hey, {s5}. Did you see it? The big bear, in the fight. It came out of the trees and helped us. Very big. Very strong. And it moved so quiet, like a tree would move, if trees moved. I cannot stop thinking about it.
+; dlga_event_triggered:dimborn_ask_bear.1|{s5}, it was there again! The big bear, between the trees. I know it now. It is my kin, I can feel it. I must find it! {s10}
+; dlga_dimborn_ask_bear:dimborn_ask_bear_response|Umm. {playername}. I would like to go and look for the bear. Only for some time. Please, can I go?
+; dlga_dimborn_ask_bear_response:dimborn_ask_bear_leave|I grant you leave. Good luck on your quest.
+; dlga_dimborn_ask_bear_response:dimborn_ask_bear_wait|I am sorry, but I can't give you leave at the moment.
+; dlga_dimborn_ask_bear_response:dimborn_ask_bear_forbidden|Don't trouble me with this ever again.
+; dlga_dimborn_ask_bear_leave:close_window|Thank you, {playername}! Thank you. I go to the woods now, the ones I know. The bear will not come quick, bears are shy, but I am patient. I am good with waiting. When I am done, I find you again. Just be somewhere in the Northern Valley of Anduin, near the woods.
+; dlga_dimborn_ask_bear_wait:close_window|Yes, chief. Is all right. Many things to do, I know. The bear will still be there. Maybe. I hope I see it again one day.
+; dlga_dimborn_ask_bear_forbidden:close_window|Oh. Hmm. Is all right. I do not ask again, I promise. I just hope the bear is well. And I still have trees. Trees stay.
+; dlga_event_triggered:dimborn_return_response|{s5}! {s5}, I found it! The bear. It was in the woods at home, by the old oaks, like I thought. First it was shy. Then it was not. We sat together a long time, no talking. Now it knows me. It is behind me, there. Do not worry, it is friendly. Mostly.
+; dlga_dimborn_return_response:dimborn_return_join|Welcome back, Dimborn! I am glad you found your friend. You are both welcome in my company.
+; dlga_dimborn_return_response:dimborn_return_full|Welcome back, Dimborn. But I can't take on anyone else right now.
+; dlga_dimborn_return_join:close_window|Thank you, {playername}. Thank you. When there is a fight, the bear will come to my side. It knows who is friend and who is not. Better than a shield. Not better than a tree, but better than a shield. Now we go. I am ready.
+; dlga_dimborn_return_full:close_window|Oh. Yes. Is all right. We are big, the bear and me, I know. I stay near the trees and ask again soon. Please make some room.
 dlga_event_triggered:ziggy_ask_prisoners|Командир, у меня к Вам одно дело. Вы разбили наших врагов, и взяли нескольких в плен - это хорошо. У меня для Вас есть достойный подарок, взамен я прошу лишь о небольшой услуге: отдайте мне одного из пленных.
 dlga_event_triggered:ziggy_ask_prisoners.1|Командир, поздравляю с победой. Если Вы помните наш последний разговор, то я собиралась найти применение одному из этих пленников. Это к нашей обоюдной пользе, я уверяю Вас!
 dlga_ziggy_ask_prisoners:ziggy_ask_why|Довольно тайн, Зигурфель! Говори напрямую! Зачем тебе пленник?
@@ -268,10 +296,10 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|Не нападайт�
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|Мы будем драться до конца!
 dlga_party_encounter_offer_dont_fight:close_window|Я в долгу перед тобой, не так ли? Что ж... тогда ладно. На сей раз я тебя отпущу.
 dlga_party_encounter_offer_dont_fight:close_window.1|Ха-ха. Но я буду сражаться с тобой.
-dlga_start:close_window.14|Мхмхм....
-dlga_start:close_window.15|Господин погружен в свои думы, и его нельзя беспокоить!
-dlga_start:close_window.16|Приветствую {playername}, {s24}!
-dlga_start:close_window.17|Проваливай, мерзкий попрошайка.
+dlga_start:close_window.16|Мхмхм....
+dlga_start:close_window.17|Господин погружен в свои думы, и его нельзя беспокоить!
+dlga_start:close_window.18|Приветствую {playername}, {s24}!
+dlga_start:close_window.19|Проваливай, мерзкий попрошайка.
 dlga_start:lord_start|Не {playername} ли это случаем, мой храбрейший боец...
 dlga_start:lord_start.1|Рад снова тебя видеть, {playername}...
 dlga_start:lord_start.2|Мы снова встретились, {playername}...
@@ -282,6 +310,9 @@ dlga_lord_meet_enemy:lord_intro|Я {playername}.
 dlga_lord_meet_enemy:lord_intro.1|Меня знают под именем {playername}. Убавьте гонор, вы должны были слышать обо мне.
 dlga_start:lord_start.3|Что ж, {playername}...
 dlga_lord_start:lord_generic_mission_completed|Твой лекарь убедил моего друга, что ему нужно лечение и прооперировал его. Нам остаётся только молиться о его скорейшем выздоровлении. Так или иначе, я благодарен тебе за услуги лекаря, {playername}. В тебе есть дух благородства. Я не забуду этого.
+; dlga_lord_hunt_beast_coop_win:lord_generic_mission_thank|{s9}
+; dlga_lord_hunt_beast_coop_fail:lord_hunt_beast_coop_fail_2|{s9}
+dlga_lord_hunt_beast_coop_fail_2:close_window|В следующий раз я постараюсь быть лучше.
 dlga_lord_start:lord_oath_of_vengeance_fulfilled|{playername}, Я вижу вы вернулись из похода против Мории и Гундабада! Какие же вести?
 dlga_lord_oath_of_vengeance_fulfilled:lord_oath_of_vengeance_fulfilled1|Мой господин, Я нагнал и разбил оркскую погань, задавил и рассеял все их армии что нашел. Они, дрожа от страха, спрятались в самых глубоких пещерах. Балин и его сподвижники отомщены!
 dlga_lord_oath_of_vengeance_fulfilled1:close_window|Вы достигли куда большего, чем я ожидал. Спасибо вам, месть свершилась! Страх и срам наших врагов, наполняет наши сердца гордостью и усладой! Я именую тебя Хранителем-клятвы. Ступай же с благодарностью народа Аулэ.
@@ -546,6 +577,9 @@ dlga_lord_mission_raid_village_a:lord_raid_village_reject|Я не могу се�
 dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|У меня нет времени грабить жалкие деревни!
 dlga_lord_raid_village_accept:close_window|Тогда почему ты всё еще здесь? 
 dlga_lord_raid_village_reject:close_window|Оправдание труса. Убирайся, твой трусливый бубнёж выводит меня из себя.
+; dlga_lord_mission_hunt_beast_ask:lord_mission_hunt_beast_accept|Yes, I will join you.
+dlga_lord_mission_hunt_beast_ask:lord_mission_rejected|У меня нет времени на это.
+; dlga_lord_mission_hunt_beast_accept:close_window|Very well. My scouts have already found the {s6} and its pack and made sure that it will not escape. Now it is on us to bring it to its end.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Колдун из Темнолесья повержен, Владычица.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Простите, Владычица, но мне пришлось заняться другими срочными делами, и Колдун успел скрыться.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|Колдун из Темнолесья всё ещё жив. Мы прервали его ритуал, но он сбежал.
@@ -692,7 +726,7 @@ dlga_start:castle_guard_players|Каков будет приказ, госпо{�
 dlga_castle_guard_players:close_window|Открой дверь. Мне нужно войти.
 dlga_castle_guard_players:close_window.1|Неважно.
 dlga_start:castle_guard_sneaked_intro_1|Прочь отсюда, попрошайка! Ты смердишь!
-dlga_start:close_window.18|Убирайся, покуда моё терпение не кончилось, попрошайка!
+dlga_start:close_window.20|Убирайся, покуда моё терпение не кончилось, попрошайка!
 dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|Я хочу войти в зал и поговорить с владыкой.
 dlga_castle_guard_sneaked_intro_1:close_window|[Продолжить]
 dlga_castle_guard_sneaked_intro_2:close_window|Ты {спятил, мужик/спятила, баба}? Нищих не пускают в тронный зал. Убирайся, или я из тебя отбивную сделаю.
@@ -788,8 +822,8 @@ dlga_sad_elf_2:sad_elf_choice|Вести с моря. И с далёких бе�
 dlga_sad_elf_choice:sad_elf_leave|Я чувствую твою боль. Ты сполна разделил с нами тяготы этой войны. Можешь отправляться.
 dlga_sad_elf_choice:sad_elf_no|Эльфы не должны бросать Средиземье на растерзание тьме. В этой войне мы сражаемся не за себя, и каждый должен сыграть свою роль. Я не могу позволить тебе уйти. [Требуется достаточно Лидерства]
 dlga_sad_elf_leave:close_window|Благодарю тебя, {мой господин/моя госпожа}!^^К морю, к морю! Под крики белых чаек,^под завывание ветра, и под разлетающиеся брызги белой пены.^Вперёд, на запад, навстречу заходящему солнцу!
-dlga_start:close_window.19|Ты как раз вовремя. Давай объединим наши войска и дадим врагу хороший урок.
-dlga_start:close_window.20|Ты совершаешь большую ошибку, пытаясь противостоять нам.
+dlga_start:close_window.21|Ты как раз вовремя. Давай объединим наши войска и дадим врагу хороший урок.
+dlga_start:close_window.22|Ты совершаешь большую ошибку, пытаясь противостоять нам.
 dlga_start:ally_thanks_meet|Вот уж не думал, что неожиданно обрету друга. Ты действительно спас{/ла} мне жизнь, а я так и не узнал твоего имени...
 dlga_start:ally_thanks_meet.1|Твоя помощь была как нельзя кстати, незнаком{ец/ка}. Меня зовут {s1}. Могу я узнать твоё имя?
 dlga_start:ally_thanks_meet.2|Спасибо за помощь, незнаком{ец/ка}. Нам ещё не доводилось встречаться, не так ли? Как тебя зовут?
@@ -797,13 +831,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|Меня зовут {playername}.
 dlga_ally_thanks_meet_2:close_window|Рад встрече, {playername}. Меня зовут {s1}, и я навечно у тебя в долгу. Если есть что-то такое, чем я смогу тебе помочь, просто дай мне знать...
 dlga_ally_thanks_meet_2:close_window.1|Рад встрече, {playername}. Теперь я в долгу перед тобой. Надеюсь, однажды я сумею отплатить тебе тем же.
 dlga_ally_thanks_meet_2:close_window.2|Рад встрече, {playername}. Я {s1}. Спасибо за твою помощь. Надеюсь, мы ещё встретимся.
-dlga_start:close_window.21|Ты снова спас{/ла} наши головы, {playername}! Ты и вправду лучший союзник. {s43}
-dlga_start:close_window.22|Ты появил{ся/ась} в самый подходящий момент, {playername}! Прими мою искреннюю благодарность! {s43}
-dlga_start:close_window.23|Ты появил{ся/ась} как никогда вовремя, {playername}. Я не забуду твою помощь. {s43}
-dlga_start:close_window.24|Рад видеть тебя, {playername}. {s43}
-dlga_start:close_window.27|Спасибо за помощь, {playername}. Ты спас{/ла} {reg1?нам жизнь:мне жизнь}.
-dlga_start:close_window.28|Спасибо за помощь, {playername}. Всё складывалось для нас очень неудачно, но, когда ты появил{ся/ась}, мы переломили ход битвы.
-dlga_start:close_window.29|Спасибо за помощь, {playername}. То, что ты оказал{ся/ась} неподалёку - большая удача.
+dlga_start:close_window.23|Ты снова спас{/ла} наши головы, {playername}! Ты и вправду лучший союзник. {s43}
+dlga_start:close_window.24|Ты появил{ся/ась} в самый подходящий момент, {playername}! Прими мою искреннюю благодарность! {s43}
+dlga_start:close_window.25|Ты появил{ся/ась} как никогда вовремя, {playername}. Я не забуду твою помощь. {s43}
+dlga_start:close_window.26|Рад видеть тебя, {playername}. {s43}
+dlga_start:close_window.29|Спасибо за помощь, {playername}. Ты спас{/ла} {reg1?нам жизнь:мне жизнь}.
+dlga_start:close_window.30|Спасибо за помощь, {playername}. Всё складывалось для нас очень неудачно, но, когда ты появил{ся/ась}, мы переломили ход битвы.
+dlga_start:close_window.31|Спасибо за помощь, {playername}. То, что ты оказал{ся/ась} неподалёку - большая удача.
 dlga_start:freed_hero_answer|Ты освободил{/а} меня. Я у тебя в долгу, друг.
 dlga_freed_hero_answer:freed_hero_answer_1|Ты никуда не уйдёшь. Теперь ты мой пленник!
 dlga_freed_hero_answer_1:close_window|Увы мне. Неужели удача не улыбнётся мне?
@@ -897,7 +931,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|Лук.
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|Метательное оружие.
 dlga_trainer_choose_weapon_player:trainer_pretalk|Нет, я передумал{/а}.
 dlga_trainer_begin_training:close_window|Хорошо, вот вам оружие. Когда закончите тренировку, возвращайтесь и поговорите со мной.
-dlga_start:close_window.30|Проваливай, мерзкий попрошайка.
+dlga_start:close_window.32|Проваливай, мерзкий попрошайка.
 dlga_start:mayor_begin|Добрый день, мо{й/я} госпо{дин/жа}.
 dlga_start:mayor_talk|Здравствуйте, странник. Кажется, вы впервые прибыли в {s9}. Я управитель этого города.
 dlga_start:mayor_begin.1|Добрый день, {playername}.
@@ -922,17 +956,17 @@ dlga_mayor_talk:mayor_deliver_food|Вот провиант, {reg9} мешков.
 dlga_mayor_deliver_food:mayor_deliver_food_completed|Отличная работа, {playername}, наши запасы пополнены, и угроза голода миновала.
 dlga_mayor_deliver_food_completed:close_window|Я стараюсь, как могу.
 dlga_mayor_begin:mayor_looters_quest_response|А, {playername}. Есть ли у вас какие-либо новости?
-dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|Я расправил{ся/ась} с несколькими дикими орками.
+; dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|I've killed some {s5}.
 dlga_mayor_looters_quest_response:close_window|Пока нет, сударь. Прощайте.
-dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|Да, мои разведчики доложили о ситуации в округе. Теперь дикие орки поутихнут!^^[получено {reg14}x{reg15} очков снабжения фракции {s14}]
-dlga_mayor_looters_quest_destroyed_2:close_window|И это не единственная хорошая новость! Спасибо вам, теперь дикие орки перестали быть угрозой для нас. В последнее время не было никаких донесений об их атаках. Если кто из них и остался в живых, они или убежали, или спрятались. Значит, в наших краях стало безопаснее! Я думаю, вы выполнили задание, {playername}. Спасибо вам, и прощайте.
+; dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|Aye, my scouts saw the whole thing. That should keep those {s5} at bay!^^[earned {reg14}x{reg15} Resource Points of {s14}]
+; dlga_mayor_looters_quest_destroyed_2:close_window|And that's not the only good news! Thanks to you, the {s5} have ceased to be a threat. We've not had a single attack reported for some time now.  If there are any of them left, they've either run off or gone deep into hiding. That's good for the safety of the place!  I think that concludes your task, {playername}. Thank you, and farewell.
 dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|Нужно ли вам ещё что-нибудь?
 dlga_mayor_begin:close_window|Рад снова видеть вас, {playername}. Я слышал, что вы успешно сопроводили тех путников. Я расскажу нашему правителю, что на вас можно положиться.^^[получено {reg14} очков снабжения фракции {s14}]
 dlga_mayor_begin:move_cattle_herd_failed|Я слышал, что вы не привели тех путников в {s9}. И мне пришлось пережить неприятные минуты, рассказывая правителю о вашем провале. Вам есть что сказать?
 dlga_move_cattle_herd_failed:move_cattle_herd_failed_2|Я прошу прощения. Но меня атаковали по дороге.
 dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|Я прошу прощения. Но те люди самовольно вышли из лагеря ночью.
 dlga_move_cattle_herd_failed_2:close_window|В любом случае вы были ответственны за то, чтобы обеспечить их безопасность. И заметьте, что правитель захотел узнать, кто виновен в этом провале. Потому я рассказал ему, что это вы.
-dlga_mayor_begin:mayor_friendly_pretalk|Я слышал о ваших деяниях. Вы наказали этих гоблинов, как они того и заслуживали. Вы действительно хороший воин, как и говорят.^^[получено {reg14} очков снабжения фракции {s14}]
+; dlga_mayor_begin:mayor_friendly_pretalk|I have heard about your deeds. You have given those bandits the punishment they deserved.  You are really as good as they say.^^[earned {reg14} Resource Points of {s14}]
 dlga_mayor_begin:mayor_talk|Что я могу сделать для вас?
 dlga_mayor_friendly_pretalk:mayor_talk|Сейчас... Что ещё я могу сделать для вас?
 dlga_mayor_pretalk:mayor_talk|Да?
@@ -958,10 +992,10 @@ dlga_merchant_quest_stall:mayor_pretalk|Что ж, я попытаюсь най�
 dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|Я сделаю все, что смогу. Я только слышу их приход и уход, если они недавно были в другом центре. Если они не находятся в центре, я слышу о регионе, где они находятся, от караванов.
 dlga_mayor_talk_ask_location_2:mayor_pretalk|Неважно.
 dlga_merchant_quest_requested:merchant_quest_brief|Ну, вы, кажется, годитесь для этой работы. Я могу кое-что вам предложить.
-dlga_merchant_quest_brief:merchant_quest_looters_choice|Недавно рядом с нашим городом произошла битва - со всей неразберихой, которая сопутствует таким событиям. Это привлекло несколько племён диких орков, которые стали грабить окрестности, пользуясь ситуацией. Мне нужен кто-то, кто мог бы преподать мародёрам урок. Вам не кажется, что эта работа как раз для вас?
+; dlga_merchant_quest_brief:merchant_quest_looters_choice|We've had some fighting near {s5} lately, with all the chaos that comes with it, and that's attracted a few bands of {s6} to raid the surroundings during the confusion. I need somebody to teach those pests a lesson. Sound like your kind of work?
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|Ладно, я сделаю это.
 dlga_merchant_quest_looters_choice:merchant_quest_stall|Нет, боюсь, вам стоит поискать кого-нибудь другого.
-dlga_merchant_quest_looters_brief:close_window|Отлично! Этих орков легко найти: они бродят по окрестностям, грабя селения. Убейте их, избавьте нас от них. Я дам знать нашему смотрителю за припасами, и вы будете получать вознаграждение за каждую орочью банду, которую уничтожили, покуда со всеми орками не будет покончено. 
+; dlga_merchant_quest_looters_brief:close_window|Excellent! You'll find the {s6} roaming around the countryside, probably looking for easy prey. Kill them, and rid us of their presence. I'll pass a word to our supply chief, and you will get rewarded for every band you destroy, until they are all are dealt with.
 dlga_merchant_quest_requested:merchant_quest_brief.1|Спасибо, что предложил{/а} помощь. В самом деле, я как раз искал кого-нибудь, кто мог бы перевезти {s4}. Вероятно, ты сможешь это сделать...
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|У меня есть груз {s6}, его должен получить {s10}, что живёт в городе {s4}. Нужно, чтобы вы доставили {s6}, {reg5} бочонков, в {s4} в течение {reg6} дней. Вы сможете сделать это?^^[вы получите {reg14} очков снабжения фракции {s14}]
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_taken|Идёт. Я перевезу груз.
@@ -972,8 +1006,8 @@ dlga_merchant_quest_brief_reinforce_center:merchant_quest_taken|Хорошо, я
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_stall|Извините, но вам придётся поискать кого-нибудь другого.
 dlga_mayor_mission_told_kill_quest_bandit:merchant_quest_stall|Я сейчас не могу заняться этим.
 dlga_mayor_mission_told_hunt_beast:merchant_quest_stall|Я не могу сейчас этим заняться.
-dlga_merchant_quest_requested:merchant_quest_brief.5|Спасибо, что предложил{/а} помощь. В самом деле, я как раз искал кого-нибудь, кто мог бы снабдить нас провиантом. Вероятно, ты сможешь сделать это...
-dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Наши запасы тают, а караваны гибнут во вражеских засадах. Мне нужен кто-то, кто доставил бы нам {reg5} порций еды в течение {reg6} дней, иначе здесь начнётся голод. Может быть, в близлежащих дружественных городах есть достаточно еды и для себя, и для нас. Что скажете?
+; dlga_merchant_quest_requested:merchant_quest_brief.5|Thanks for offering to help. Actually I was looking for someone to supply us with Food. Perhaps you can do that...
+; dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Our food supplies are dwindling and the supply trains are getting waylaid by the enemy. I need someone to bring us {reg5} units of food in {reg6} days, or we'll begin to starve. Maybe nearby friendly towns have enough for us too. What do you say?
 dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|Идёт. Я найду провиант и доставлю его вам.
 dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|Извините, но вам придётся поискать кого-нибудь другого.
 dlga_merchant_quest_requested:merchant_quest_brief.6|Задание, говоришь? На самом деле я как раз искал кого-нибудь, кто смог бы снабдить нас рудой или металлом. Рудники и дороги теперь небезопасны, а потому получать сырьё становится всё труднее. Должно быть, у врага есть свои неведомые, но действенные способы добывать руду, потому что, как мы видим, даже орки и другое отребье закованы с ног до головы. Качество материала соответствует тем, кто его носит: это низкокачественное, дешёвое железо. В иные времена мы бы сочли такой сорт металла ненадёжным, но теперь мастера наших плавилен выучились работать и с такой бедной рудой. Даже из этого можно извлечь небольшую пользу.
@@ -986,8 +1020,8 @@ dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|Я собираю�
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Идёт. Я сопровожу обоз.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Боюсь, у меня недостаточно воинов.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Извините, я не могу заняться этим прямо сейчас.
-dlga_start:close_window.31|Мы можем преодолеть оставшуюся часть пути самостоятельно. Спасибо.
-dlga_start:close_window.32|Что ж, {s21} уже недалеко. Мы можем преодолеть оставшуюся часть пути самостоятельно. Спасибо, что защитили нас. Удачи.^^[получено {reg14} очков снабжения фракции {s14}]
+dlga_start:close_window.33|Мы можем преодолеть оставшуюся часть пути самостоятельно. Спасибо.
+dlga_start:close_window.34|Что ж, {s21} уже недалеко. Мы можем преодолеть оставшуюся часть пути самостоятельно. Спасибо, что защитили нас. Удачи.^^[получено {reg14} очков снабжения фракции {s14}]
 dlga_start:merchant_caravan_intro_1|Приветствую. Вы будете нас сопровождать, так?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Да. Меня зовут {playername}. Я поведу вас в {s1}.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Что ж, приятно слышать, что мы будем путешествовать не в одиночку. Что нам нужно делать, как вы считаете?
@@ -996,9 +1030,9 @@ dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|Следуйте 
 dlga_merchant_caravan_follow_lead:close_window|Хорошо. Мы пойдём прямо за вами.
 dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|Оставайтесь пока здесь. Я проеду дальше и разведаю дорогу.
 dlga_merchant_caravan_stay_here:close_window|Идёт. Мы будем ждать вас здесь.
-dlga_merchant_quest_requested:merchant_quest_brief.9|На самом деле я искал способного воина вроде вас. Тут завелась банда исключительно назойливых, досаждающих нам гоблинов. Они наводнили окрестности и нападают на караваны и бойцов, отбившихся от войска. Покуда они уходили от наших дозорных отрядов. Если кто-нибудь не остановит их как можно скорее, нам придётся затевать целый поход...
-dlga_merchant_quest_brief:troublesome_bandits_quest_brief|Мне нужен кто-нибудь, кто смог бы отыскать этих назойливых гоблинов. Это опасная работа. Но я верю, что вы од{ин/на} из тех, кто способен взяться за неё. Что вы скажете?^^[вы получите {reg14} очков снабжения фракции {s14}]
-dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Идёт. Я разыщу этих гоблинов и покончу с ними.
+; dlga_merchant_quest_requested:merchant_quest_brief.9|Actually, I was looking for an able commander like you. There's this group of particularly troublesome bandits. They have infested the neighbourhood and are preying on supply trains and stray warriors. They have avoided all our patrols up to now. If someone doesn't stop them soon, I would need to request serious military action...
+; dlga_merchant_quest_brief:troublesome_bandits_quest_brief|I need someone to hunt down those troublesome bandits. It's dangerous work. But I believe that you are the one for it. What do you say?^^[you will earn {reg14} Resource Points of {s14}]
+; dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Alright. I will hunt down the bandits.
 dlga_merchant_quest_taken_bandits:close_window|Сделаете? Я так рад это слышать. Удачи вам.
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Извините, у меня сейчас нет на это времени.
 dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Ещё как можете! У нас завелась бандитская шайка, и я никак не могу справиться с ними, хоть в петлю лезь. Они выходят по ночам и грабят пьяных новобранцев, а, когда появляется стража, они исчезают с быстротой молнии. Мы не сумели поймать ни одного из них. Они нападают только на одиноких прохожих, никогда не отваживаясь показываться при виде какой-нибудь компании. Мне нужен кто-то, кто смог бы в одиночку выманить этих бандитов и победить их. Кажется, это единственный способ управиться с ними. Вы можете взяться за это?
@@ -1017,8 +1051,8 @@ dlga_goods_trade_requested:goods_trade_completed|Конечно-конечно..
 dlga_goods_trade_completed:goods_merchant_talk|Что-нибудь ещё?
 dlga_goods_merchant_talk:close_window|Ничего, спасибо.
 dlga_start:troublesome_bandits_intro_1|Что? Мы всех убьём. Мы заберём твои припасы и твоих лошадей и сожрём их. И тебя мы тоже сожрём.
-dlga_troublesome_bandits_intro_1:troublesome_bandits_intro_2|Вы горько пожалеете, что творили беды в этих краях. Не вернуться вам в горные пещеры.
-dlga_troublesome_bandits_intro_2:close_window|Сейчас убьём - потом сожрём!
+; dlga_troublesome_bandits_intro_1:troublesome_bandits_intro_2|You'll regret causing trouble around these parts. You should have never left your holes.
+; dlga_troublesome_bandits_intro_2:close_window|When we're done with you, YOU will be the one to lie in the dirt!
 dlga_start:fangorn_orcs_intro_1|Чё? Нашему Старику не понравится, если ты помешаешь работе его слуг.
 dlga_fangorn_orcs_intro_1:fangorn_orcs_intro_2|Хватит вредить этому лесу! Убирайтесь - или пожалеете!
 dlga_fangorn_orcs_intro_2:close_window|Хар-хар! Мы будем рубить и жечь всё, что захотим! После того, как покончим с тобой...
@@ -1037,7 +1071,7 @@ dlga_prisoner_chat_3:prisoner_slaughter|Тебе придётся стать н�
 dlga_prisoner_chat_4:close_window|Ага, как будто я в состоянии сбежать! Отстаньте от меня!
 dlga_prisoner_slaughter:prisoner_slaughter_02|Придёт день, и ты заплатишь за это!
 dlga_prisoner_slaughter:close_window|Придёт день, и ты заплатишь за это... Аааггллр!..
-dlga_start:close_window.33|Проваливай, мерзкий попрошайка.
+dlga_start:close_window.35|Проваливай, мерзкий попрошайка.
 dlga_start:town_merchant_talk|Приветствую, командир. Могу ли я чем-нибудь услужить вам сегодня?
 dlga_start:town_merchant_talk.1|Добрый день. Чем могу помочь?
 dlga_town_merchant_talk:trade_requested_weapons|Я хочу запросить новое снаряжение. Покажи, что у тебя припасено.
@@ -1082,20 +1116,20 @@ dlga_town_dweller_brawl:town_dweller_brawl_confirm|Ты на кого вякае
 dlga_town_dweller_brawl_confirm:close_window|О, неужели? Давай посмотрим, что у тебя есть
 dlga_town_dweller_brawl_confirm:close_window.1|Нет, я вас спутал с кое-кем другим.
 dlga_town_dweller_talk:close_window|[Уйти]
-dlga_start:close_window.34|Приветствую {playername}, {s24}!
-dlga_start:close_window.35|Проваливай!
-dlga_start:close_window.36|Оставь меня в покое!
+dlga_start:close_window.36|Приветствую {playername}, {s24}!
+dlga_start:close_window.37|Проваливай!
+dlga_start:close_window.38|Оставь меня в покое!
 dlga_start:player_castle_guard_talk|Да, командир?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|Как проходит стража, воин?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Всё тихо, командир. Докладывать нечего.
 dlga_player_castle_guard_talk_3:close_window|Хорошо. Будь настороже.
-dlga_start:close_window.37|Доброго дня, {s24}. Хорошо, что ты здесь, в {s10}.
-dlga_start:close_window.38|Следи за своим поведением - и не будет никаких проблем.
+dlga_start:close_window.39|Доброго дня, {s24}. Хорошо, что ты здесь, в {s10}.
+dlga_start:close_window.40|Следи за своим поведением - и не будет никаких проблем.
 dlga_start:hall_guard_easter_egg|А, времени за полночь - вот и всё. Кстати, на днях случилось удивительное происшествие - не хотите послушать?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Да, продолжай.
 dlga_hall_guard_easter_egg:close_window|Нет, меня не волнуют сплетни.
 dlga_hall_guard_easter_egg_scene:close_window|Что ж... Прибыла необычная компания искателей приключений: человек, гном и эльф - и потом...
-dlga_start:close_window.39|Нам нельзя разговаривать на посту, командир.
+dlga_start:close_window.41|Нам нельзя разговаривать на посту, командир.
 dlga_enemy_defeated:close_window|Аргх! Ненавижу это.
 dlga_party_relieved:close_window|Спасибо, что помогли нам справиться с этими ублюдками.
 dlga_member_chat_00:close_window.1|^^ГРРРР!^^ 
@@ -1128,25 +1162,25 @@ dlga_party_reinforce:party_reinforce_end.2|К сожалению, под ваш�
 dlga_party_reinforce_check:party_reinforce_check_1|Сейчас я проверю списки воинов... 
 dlga_party_reinforce_check_1:party_reinforce_end|Так вы изменили своё решение...^Понимаю.
 dlga_party_reinforce_check_1:party_reinforce_end.1|От этих воинов нам нет никакого проку. ^Заберите их назад.
-dlga_start:close_window.40|Ты задерживаешь меня! Маги никогда не опаздывают!
-dlga_start:close_window.41|Ты задерживаешь меня! Маги никогда не опаздывают!
-dlga_start:close_window.42|Оно... манит к с-с-с-с-себе...
+dlga_start:close_window.42|Ты задерживаешь меня! Маги никогда не опаздывают!
+dlga_start:close_window.43|Ты задерживаешь меня! Маги никогда не опаздывают!
+dlga_start:close_window.44|Оно... манит к с-с-с-с-себе...
 dlga_start:secret_guardian_let_through|Стойте!
 dlga_secret_guardian_let_through:secret_guardian_let_through1|Я {playername}, {s24}. Пропусти меня!
 dlga_secret_guardian_let_through1:close_window|Да, командир. Проходи.
-dlga_start:close_window.44|Эй, ты! Ты там живой? Хорошо! Опасно ходить одному! Возьми это!
+dlga_start:close_window.46|Эй, ты! Ты там живой? Хорошо! Опасно ходить одному! Возьми это!
 dlga_start:ori_choose_1|Ты хорошо сражался, брат! Не знаю как тебе удавалось оставаться в живых так долго. Я помню что ты не так давно с нами... как раз с того дня как пал Балин... Откуда ты?
 dlga_ori_choose_1:ori_choose_finish|Я был следопытом, отправленным в лес рядом с Медвежьим народом. Я Недавно услышал о походе Балина и присоединился.
 dlga_ori_choose_1:ori_choose_finish.1|Я дальний родственник, бывший охранник из далёкой шахты. Я услышал о Балине и решил пойти с ним.
 dlga_ori_choose_1:ori_choose_finish.2|Я - с Железных Холмов, ветеран многих битв, и рудокоп в мирное время. Я отправился с Балином, чтобы убивать орков.
 dlga_ori_choose_finish:close_window|Рад познакомиться! Я нашёл это, тебе как раз подойдёт. Мы закрепимся здесь и постараемся забрать как можно больше из них с собой!
-dlga_start:close_window.45|Похоже что ты сбросил с себя старую ржавчину и готов к настоящей драке, верно? Вот, глотни этого. Почувствуешь себя лучше. Новые орки лезут!
-dlga_start:close_window.46|Снимай свои пыльные тряпки и одевай вот это. Будешь защищён чуть лучше. Эти орки больно кусаются!
-dlga_start:close_window.47|Что-то громадное приближается! Приготовьтесь!
-dlga_start:close_window.48|Их слишком много... но мы гномы!
-dlga_start:close_window.49|Эти орки вскрыли разлом, набитый сокровищами. Вот что я нашёл, теперь мы им покажем!
-dlga_start:close_window.50|Нет.... Я слышу их... они снаружи! Они повсюду!
-dlga_start:close_window.51|Здесь... Наш господин Балин... ты достоин всего этого...
+dlga_start:close_window.47|Похоже что ты сбросил с себя старую ржавчину и готов к настоящей драке, верно? Вот, глотни этого. Почувствуешь себя лучше. Новые орки лезут!
+dlga_start:close_window.48|Снимай свои пыльные тряпки и одевай вот это. Будешь защищён чуть лучше. Эти орки больно кусаются!
+dlga_start:close_window.49|Что-то громадное приближается! Приготовьтесь!
+dlga_start:close_window.50|Их слишком много... но мы гномы!
+dlga_start:close_window.51|Эти орки вскрыли разлом, набитый сокровищами. Вот что я нашёл, теперь мы им покажем!
+dlga_start:close_window.52|Нет.... Я слышу их... они снаружи! Они повсюду!
+dlga_start:close_window.53|Здесь... Наш господин Балин... ты достоин всего этого...
 dlga_start:party_encounter_hostile_attacker|У вас нет никаких шансов выстоять против нас. Сдавайтесь немедленно, или мы всех вас перебьём...
 dlga_party_encounter_hostile_attacker:close_window|Не атакуйте! Мы сдаёмся.
 dlga_party_encounter_hostile_attacker:close_window.1|Мы будем сражаться до конца!
@@ -1158,7 +1192,7 @@ dlga_start:kingdom_companion_start|Приветствую, {playername}...
 dlga_kingdom_companion_start:close_window.1|Если у вас есть дела с нашей компанией, вам следует поговорить с моим {s5}, {s3}.
 dlga_kingdom_companion_leaving:close_window|Прощайте.
 dlga_party_encounter_hostile_defender:close_window|Ничего. Мы оставим вас в покое.
-dlga_start:close_window.53|* молча смотрит на вас *
+dlga_start:close_window.55|* молча смотрит на вас *
 dlga_start:battle_reason_stated|Сдайся или умри. Выбирай!
 dlga_battle_reason_stated:close_window|Я тебя не боюсь. Я буду сражаться.
 dlga_start:free|Приветствую. Что я могу сделать для тебя?

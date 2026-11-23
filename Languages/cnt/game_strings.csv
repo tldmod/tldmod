@@ -1904,8 +1904,8 @@ str_trait_title_accursed|受詛咒的
 str_trait_desc_accursed|你似乎正被大海彼端的力量所詛咒。你的追隨者也感受到厄運並害怕待在你身邊。他們會每週受到士氣減益。
 str_trait_title_stealthy|潛行者
 str_trait_desc_stealthy|你學到了秘密潛行的不凡技藝。你每次秘密行動都會獲得潛行加成。
-str_trait_title_berserker|狂戰士
-str_trait_desc_berserker|在許許多多丟棄鎧甲的戰鬥後你的兇猛意志變得跟鐵一樣。在輕裝戰鬥中，每殺一個敵人都會讓你充滿活力。
+; str_trait_title_berserker|Battle-fury
+; str_trait_desc_berserker|Your habit of ignoring any injuries during your reckless fighting has turned into a devastating battle fury. As long as your rage persists, you will now ignore most of the attacks directed at you and, in return, deliver terrible blows.
 str_trait_title_infantry_captain|步兵隊長
 str_trait_desc_infantry_captain|你掌握了指揮步兵部隊的不凡技藝。在嚴格的特訓下這些部下會獲得少量的生命值加成，每場戰鬥一次。
 str_trait_title_archer_captain|弓兵隊長
@@ -1923,7 +1923,7 @@ str_trait_desc_fell_beast|你的皮上刻著無數戰鬥的傷疤而你的邪惡
 str_trait_title_butcher|屠夫
 str_trait_desc_butcher|經驗的磨練讓你可以從敵人身上完美割下每一塊肉。 每次屠殺一名囚犯時你都會獲得額外的一磅鮮肉。 每次戰鬥後你也都會得到更多的人肉。
 str_trait_title_well_travelled|遊歷豐富的
-str_trait_desc_well_travelled|無論是在石頭鋪砌的道路和長滿青苔的動物小徑上，或是在最高的山脈和最深的山谷裡，你都看過了隱藏的地方與見證了早已被遺忘的奇蹟。根據你的經驗，你學會在敵人看到你之前發現他們，並為你的部隊找到最簡單的路線。
+; str_trait_desc_well_travelled|On stone paved roads and mossy animal paths, over the tallest mountains and in the deepest vales, you've discovered hidden places and seen long forgotten marvels.
 str_trait_title_bear_shape|變身者
 str_trait_desc_bear_shape|據說比翁一族的人擁有變形成熊的能力。自你與熊的親緣中你發現了自己也有那個天賦。
 str_wound_head|頭部遭到重擊
@@ -2433,7 +2433,7 @@ str_woodelf_guildmaster_companion_player_ask|長者，以瑟蘭督伊精靈王�
 ; str_woodelf_guildmaster_companion_none|Indeed? Then you may ask those of our garrison, and maybe some will be willing to follow you. But I sense your desire runs deeper than that. Do you fancy yourself a great hero, like those from Nargothrond or Gondolin of old? Our finest warriors are needed to guard against the growing shadow in Mirkwood. Take with you what soldiers we can spare, and be content.
 str_woodelf_guildmaster_companion_player_none_ok|好吧，長者。如你所言。
 str_woodelf_guildmaster_player_found_ok|我感謝你的諫言，長者。再見！
-; str_woodelf_halls_guildmaster_companion|Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit -- she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. See, there she stands -- you may speak with her. Harthon gerithach lend vaer!
+; str_woodelf_halls_guildmaster_companion|Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit -- she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. She rarely stays in these halls - you will likely find her at the edge of the forest outside the gates.. Harthon gerithach lend vaer!
 str_dale_guildmaster_companion_player_ask|好先生，我正在尋找能在這場戰爭中和我一起戰鬥的堅強戰士。
 str_dale_guildmaster_companion_none|我吧，我想想。在我們的城鎮裡，我們一直以來都靜靜的在貿易和管理自家的事務，直到最近才大量需要能作戰的人手。我想你可以去問問我們的兵營，從駐軍中找找新兵。我不認為隊長們之中會有人離開崗位去跟隨你的。
 str_dale_guildmaster_companion_player_none_ok|我會那麼做的，好先生。在此告別。
@@ -2522,7 +2522,23 @@ str_shortname_region_s_anduin_vale|安都因河谷南部
 str_shortname_region_cair_andros|凱爾安卓斯島
 str_isengard_hunting_camp_guildmaster_player_found_ok|如果他很會殺戮，那我就帶走他。如果不會，那我會把他像魚一樣宰了挖出內臟。再如果他其實又是一隻毫無價值的蛆蟲，那我會再回來讓你為浪費我的時間付出代價！
 ; str_trait_title_animal_fighter|Beast Slayer
-; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.
+; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Your skill at avoiding hostile animals through your wildcraft is greatly enhanced.
+; str_trait_title_horse_fiend|Horse Fiend
+; str_trait_desc_horse_fiend|You are a slayer of horses. Horses are frightened by your sheer presence in battle.
+; str_trait_title_warg_fiend|Warg Fiend
+; str_trait_desc_warg_fiend|Your terrible reputation as a Wolf Slayer has spread. Your presence may frighten wargs and wolves in battle.
+; str_trait_title_troll_slayer|Troll Slayer
+; str_trait_desc_troll_slayer|Your skill in fighting trolls in melee is renowned. You deal additional melee damage against trolls.
+; str_trait_title_troll_hunter|Troll Hunter
+; str_trait_desc_troll_hunter|Your skill in fighting trolls from afar is renowned. You deal additional ranged damage against trolls.
+; str_trait_title_light_armor|Light Armored
+; str_trait_desc_light_armor|You are well adapted to wearing light armor in battle. You receive a fighting and movement bonus when wearing light armor, sclaing with your agility.
+; str_trait_title_ranger|Ranger
+; str_trait_desc_ranger|You are well adapted to fighting in difficult terrain.
+; str_trait_title_night_fighter|Night Fighter
+; str_trait_desc_night_fighter|You have acquired the skills of moving and fighting in the dark. No longer is the night your enemy.
+; str_trait_title_day_fighter|Day Fighter
+; str_trait_desc_day_fighter|You do not fear the bright daylight anymore!
 str_commander|指揮官
 ; str_companion|companion
 ; str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3|I am {s1}, a soldier of {s2} in the company of {s3}.

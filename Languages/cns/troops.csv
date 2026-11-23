@@ -606,24 +606,6 @@ trp_ac3_isen_warg_rider|艾辛格座狼骑兵
 trp_ac3_isen_warg_rider_pl|艾辛格座狼骑兵
 trp_ac4_isen_white_hand_rider|白手骑兵
 trp_ac4_isen_white_hand_rider_pl|白手骑兵
-trp_warg_ghost_1b|座狼
-trp_warg_ghost_1b_pl|座狼
-trp_warg_ghost_1c|座狼
-trp_warg_ghost_1c_pl|座狼
-trp_warg_ghost_1d|座狼
-trp_warg_ghost_1d_pl|座狼
-trp_warg_ghost_a1b|座狼
-trp_warg_ghost_a1b_pl|座狼
-trp_warg_ghost_a1c|披甲座狼
-trp_warg_ghost_a1c_pl|披甲座狼
-trp_warg_ghost_a2b|披甲座狼
-trp_warg_ghost_a2b_pl|披甲座狼
-trp_warg_ghost_a2c|披甲座狼
-trp_warg_ghost_a2c_pl|披甲座狼
-trp_warg_ghost_a3a|披甲座狼
-trp_warg_ghost_a3a_pl|披甲座狼
-trp_warg_ghost_h|巨型座狼
-trp_warg_ghost_h_pl|巨型座狼
 trp_a2_isen_uruk_tracker|强兽人追踪者
 trp_a2_isen_uruk_tracker_pl|强兽人追踪者
 trp_a3_isen_large_uruk_tracker|大型强兽人追踪者
@@ -742,10 +724,10 @@ trp_c4_gunda_warg_rider|刚达巴座狼骑兵
 trp_c4_gunda_warg_rider_pl|刚达巴座狼骑兵
 trp_c5_gunda_clan_rider|半兽人北方氏族骑兵
 trp_c5_gunda_clan_rider_pl|半兽人北方氏族骑兵
+trp_i5_gunda_orc_champion_new|刚达巴半兽人冠军战士
+trp_i5_gunda_orc_champion_new_pl|刚达巴半兽人冠军战士
 trp_i5_gunda_orc_champion|刚达巴半兽人冠军战士
 trp_i5_gunda_orc_champion_pl|刚达巴半兽人冠军战士
-trp_mountain_goblin2|山地半兽人
-trp_mountain_goblin2_pl|山地半兽人
 trp_tribal_orc2|部落半兽人
 trp_tribal_orc2_pl|部落半兽人
 trp_i5_gunda_orc_champion2_pl|刚达巴半兽人冠军战士
@@ -801,8 +783,8 @@ trp_umbar_captain|昂巴队长
 ; trp_dale_captain_pl|Captains of Dale
 ; trp_harad_captain|Haradrim Noble
 ; trp_harad_captain_pl|Haradrim Nobles
-trp_a5_dun_night_wolf2|丹尼斯夜狼
-trp_a5_dun_night_wolf2_pl|丹尼斯夜狼
+; trp_far_harad_captain|Far Harad Chief
+; trp_far_harad_captain_pl|Far Harad Chiefs
 trp_dun_captain|丹尼斯中尉
 trp_dun_captain_pl|丹尼斯中尉
 ; trp_gunda_captain|Gundabad Chieftain
@@ -812,7 +794,7 @@ trp_gondor_captain_pl|刚铎队长
 trp_pel_captain|佩拉格卫队长
 trp_pel_captain_pl|佩拉格卫队长
 ; trp_amroth_captain|Knight Captain of Dol Amroth
-; trp_amroth_captain_pl|Knight Captains of Dol Amroth
+; trp_amroth_captain_pl|Knights Captain of Dol Amroth
 trp_lam_captain|拉密顿卫队长
 trp_lam_captain_pl|拉密顿卫队长
 trp_loss_captain|罗萨那奇卫队长
@@ -823,18 +805,6 @@ trp_pinnath_captain_pl|皮那斯杰林卫队长
 ; trp_blackroot_captain_pl|Captains of Blackroot Vale
 trp_ithilien_captain|伊西力安游侠队长
 trp_ithilien_captain_pl|伊西力安游侠队长
-trp_brigand|强盗
-trp_brigand_pl|强盗
-trp_mountain_bandit|山贼
-trp_mountain_bandit_pl|山贼
-trp_forest_bandit|林匪
-trp_forest_bandit_pl|林匪
-trp_sea_raider|海贼
-trp_sea_raider_pl|海贼
-trp_steppe_bandit|马匪
-trp_steppe_bandit_pl|马匪
-trp_manhunter|赏金猎人
-trp_manhunter_pl|赏金猎人
 trp_kidnapped_girl|被绑架的女孩儿
 trp_kidnapped_girl_pl|被绑架的女孩儿
 trp_refugee|难民
@@ -877,8 +847,8 @@ trp_walker_woman_gondor_w|刚铎贵族
 ; trp_lorien_walker_1|Lothlorien Elf
 ; trp_lorien_walker_2|Lothlorien Elf
 trp_dwarf_walker|矮人
-; trp_beorn_walker|Peasant Man
-trp_beorn_walker_fem|农妇
+; trp_beorn_walker|Vale Man
+; trp_beorn_walker_fem|Vale Woman
 trp_trainer_4|教练
 trp_trainer_gondor|教练
 trp_trainer_rohan|教练
@@ -1612,14 +1582,22 @@ trp_wild_troll|洞穴食人妖
 trp_wild_troll_pl|洞穴食人妖
 trp_ent|树人
 trp_ent_pl|树人
-trp_mountain_goblin|山地半兽人
-trp_mountain_goblin_pl|山地半兽人
-trp_tribal_orc|部落半兽人
-trp_tribal_orc_pl|部落半兽人
-trp_tribal_orc_warrior|部落半兽人战士
-trp_tribal_orc_warrior_pl|部落半兽人战士
-trp_tribal_orc_chief|部落半兽人酋长
-trp_tribal_orc_chief_pl|部落半兽人酋长
+; trp_i1_tribal_goblin|Tribal Goblin
+; trp_i1_tribal_goblin_pl|Tribal Goblins
+; trp_i2_goblin_raider|Mountain Goblin Raider
+; trp_i2_goblin_raider_pl|Mountain Goblin Raiders
+; trp_i3_goblin_warrior|Mountain Goblin Warrior
+; trp_i3_goblin_warrior_pl|Mountain Goblin Warriors
+; trp_i4_goblin_fell_warrior|Fell Goblin Warrior
+; trp_i4_goblin_fell_warrior_pl|Fell Goblin Warriors
+; trp_i5_goblin_great_warrior|Great Goblin Warrior
+; trp_i5_goblin_great_warrior_pl|Great Goblin Warriors
+; trp_c3_goblin_wolf_rider|Mountain Goblin Wolf Rider
+; trp_c3_goblin_wolf_rider_pl|Mountain Goblin Wolf Riders
+; trp_c4_goblin_warg_rider|Goblin Warg Rider
+; trp_c4_goblin_warg_rider_pl|Goblin Warg Riders
+; trp_c5_goblin_great_wargrider|Great Goblin Warg Rider
+; trp_c5_goblin_great_wargrider_pl|Great Goblin Warg Riders
 trp_a3_dism_skirmisher_of_rohan|洛汗骑射手
 trp_a3_dism_skirmisher_of_rohan_pl|洛汗骑射手
 trp_a4_dism_veteran_skirmisher_of_rohan|洛汗资深骑射手
@@ -1636,8 +1614,8 @@ trp_merry_notmet|半身人
 trp_pippin|皮平
 trp_merry|梅里
 trp_grima|格瑞玛虫舌
-trp_future_animal_0|狼
-trp_future_animal_0_pl|狼
+; trp_future_animal_0|Stag
+; trp_future_animal_0_pl|Stags
 trp_spider|幽暗密林蜘蛛
 trp_spider_pl|幽暗密林蜘蛛
 ; trp_spider_strong|Great Spider
@@ -1664,10 +1642,10 @@ trp_werewolf_pl|妖狼
 ; trp_bull_pl|Wild Kine
 ; trp_bull_strong|Great Bull
 ; trp_bull_strong_pl|Great Kine
-; trp_stag|Stag
-; trp_stag_pl|Stags
-trp_future_animal_4|狼
-trp_future_animal_4_pl|狼
+; trp_future_animal_3|Wild Warg
+; trp_future_animal_3_pl|Wild Wargs
+; trp_future_animal_4|Huge Wild Warg
+; trp_future_animal_4_pl|Huge Wild Wargs
 trp_future_animal_5|狼
 trp_future_animal_5_pl|狼
 ; trp_guthlaf|Guthláf
@@ -1676,3 +1654,51 @@ trp_duilin|杜林
 trp_derufin|德茹芬
 ; trp_rumil|Rúmil
 ; trp_lugdush|Lugdush
+trp_looter|劫匪
+trp_looter_pl|劫匪
+trp_brigand|强盗
+trp_brigand_pl|强盗
+; trp_marauder|Marauder
+; trp_marauder_pl|Marauders
+; trp_mirkwood_bandit|Mirkwood Bandit
+; trp_mirkwood_bandit_pl|Mirkwood Bandits
+; trp_easterling_bandit|Easterling Bandit
+; trp_easterling_bandit_pl|Easterling Bandits
+; trp_rhovanion_bandit|Rhovanion Bandit
+; trp_rhovanion_bandit_pl|Rhovanion Bandits
+; trp_i2_orc_straggler|Orc Straggler
+; trp_i2_orc_straggler_pl|Orc Stragglers
+; trp_i3_orc_brigand|Orc Brigand
+; trp_i3_orc_brigand_pl|Orc Brigands
+; trp_i4_orc_marauder|Orc Marauder
+; trp_i4_orc_marauder_pl|Orc Marauders
+; trp_i2_uruk_rogue|Uruk Rogue
+; trp_i2_uruk_rogue_pl|Uruk Rogues
+; trp_i3_uruk_brigand|Uruk Brigand
+; trp_i3_uruk_brigand_pl|Uruk Brigands
+; trp_i4_uruk_marauder|Uruk Marauder
+; trp_i4_uruk_marauder_pl|Uruk Marauders
+trp_warg_ghost_1b|座狼
+trp_warg_ghost_1b_pl|座狼
+trp_warg_ghost_1c|座狼
+trp_warg_ghost_1c_pl|座狼
+trp_warg_ghost_1d|座狼
+trp_warg_ghost_1d_pl|座狼
+trp_warg_ghost_a1b|座狼
+trp_warg_ghost_a1b_pl|座狼
+trp_warg_ghost_a1c|披甲座狼
+trp_warg_ghost_a1c_pl|披甲座狼
+trp_warg_ghost_a2b|披甲座狼
+trp_warg_ghost_a2b_pl|披甲座狼
+trp_warg_ghost_a2c|披甲座狼
+trp_warg_ghost_a2c_pl|披甲座狼
+trp_warg_ghost_a3a|披甲座狼
+trp_warg_ghost_a3a_pl|披甲座狼
+trp_warg_ghost_h|巨型座狼
+trp_warg_ghost_h_pl|巨型座狼
+; trp_wild_warg|Wild Warg
+; trp_wild_warg_pl|Wild Wargs
+; trp_wild_warg_strong|Huge Wild Warg
+; trp_wild_warg_strong_pl|Huge Wild Wargs
+; trp_warg_ghost_wolf|Great Wolf
+; trp_warg_ghost_wolf_pl|Great Wolves

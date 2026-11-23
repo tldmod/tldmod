@@ -606,24 +606,6 @@ trp_ac3_isen_warg_rider|Isengardzki Jeździec Wargów
 trp_ac3_isen_warg_rider_pl|Isengardzkich Jeźdźców Wargów
 trp_ac4_isen_white_hand_rider|Jeździec Białej Ręki
 trp_ac4_isen_white_hand_rider_pl|Jeźdźców Białej Ręki
-trp_warg_ghost_1b|Warg
-trp_warg_ghost_1b_pl|Wargów
-trp_warg_ghost_1c|Warg
-trp_warg_ghost_1c_pl|Wargów
-trp_warg_ghost_1d|Warg
-trp_warg_ghost_1d_pl|Wargów
-trp_warg_ghost_a1b|Warg
-trp_warg_ghost_a1b_pl|Wargów
-trp_warg_ghost_a1c|Opancerzony Warg
-trp_warg_ghost_a1c_pl|Opancerzonych Wargów
-trp_warg_ghost_a2b|Opancerzony Warg
-trp_warg_ghost_a2b_pl|Opancerzonych Wargów
-trp_warg_ghost_a2c|Opancerzony Warg
-trp_warg_ghost_a2c_pl|Opancerzonych Wargów
-trp_warg_ghost_a3a|Opancerzony Warg
-trp_warg_ghost_a3a_pl|Opancerzonych Wargów
-trp_warg_ghost_h|Olbrzymi Warg
-trp_warg_ghost_h_pl|Olbrzymich Wargów
 trp_a2_isen_uruk_tracker|Tropiciel Uruk-Hai
 trp_a2_isen_uruk_tracker_pl|Tropicieli Uruk-Hai
 trp_a3_isen_large_uruk_tracker|Wielki Tropiciel Uruk-Hai
@@ -742,10 +724,10 @@ trp_c4_gunda_warg_rider|Gundabadzki Jeździec Wargów
 trp_c4_gunda_warg_rider_pl|Gundabadzkich Jeźdźców Wargów
 trp_c5_gunda_clan_rider|Goblini Jeździec Północnego Klanu
 trp_c5_gunda_clan_rider_pl|Goblinich Jeźdźców Północnego Klanu
+trp_i5_gunda_orc_champion_new|Gundabadzki Czempion Orków
+trp_i5_gunda_orc_champion_new_pl|Gundabadzkich Orkowi Czempioni
 trp_i5_gunda_orc_champion|Gundabadzki Czempion Orków
 trp_i5_gunda_orc_champion_pl|Gundabadzkich Orkowi Czempioni
-trp_mountain_goblin2|Górski Goblin
-trp_mountain_goblin2_pl|Górskich Goblinów
 trp_tribal_orc2|Plemienny Ork
 trp_tribal_orc2_pl|Plemiennych Orków
 trp_i5_gunda_orc_champion2_pl|Gundabadzkich Orkowi Czempioni
@@ -801,8 +783,8 @@ trp_dale_captain|Kapitan Dale
 trp_dale_captain_pl|Kapitanowie Dale
 trp_harad_captain|Szlachcic Haradrimów
 trp_harad_captain_pl|Szlachcice Haradrimów
-trp_a5_dun_night_wolf2|Dunlandzki Nocny Wilk
-trp_a5_dun_night_wolf2_pl|Dunlandzki Nocny Wilk
+; trp_far_harad_captain|Far Harad Chief
+; trp_far_harad_captain_pl|Far Harad Chiefs
 trp_dun_captain|Dunlandzki Hetman
 trp_dun_captain_pl|Dunlandzkich Hetmen
 trp_gunda_captain|Wódz Gundabadu
@@ -823,18 +805,6 @@ trp_blackroot_captain|Kapitan z Doliny Czarnego Korzenia
 trp_blackroot_captain_pl|Kapitnowie z Doliny Czarnego Korzenia
 trp_ithilien_captain|Kapitan Strażników Ithilien
 trp_ithilien_captain_pl|Kapitanów Strażników Ithilien
-trp_brigand|Zbój
-trp_brigand_pl|Zbójów
-trp_mountain_bandit|Bandyta z Gór
-trp_mountain_bandit_pl|Bandytów z Gór
-trp_forest_bandit|Leśny Bandyta
-trp_forest_bandit_pl|Leśnych Bandytów
-trp_sea_raider|Morski Łupieżca
-trp_sea_raider_pl|Morskich Łupieżców
-trp_steppe_bandit|Bandyta Stepowy
-trp_steppe_bandit_pl|Bandytów Stepowych
-trp_manhunter|Łowca Głów
-trp_manhunter_pl|Łowców Głów
 trp_kidnapped_girl|Pojmane Dziewczę
 trp_kidnapped_girl_pl|Pojmanych Dziewcząt
 trp_refugee|Uchodźca
@@ -877,8 +847,8 @@ trp_mirkwood_walker_2|Elf Mrocznej Puszczy
 trp_lorien_walker_1|Elf Lothlorien
 trp_lorien_walker_2|Elf Lothlorien
 trp_dwarf_walker|Krasnolud
-trp_beorn_walker|Chłop
-trp_beorn_walker_fem|Chłopka
+; trp_beorn_walker|Vale Man
+; trp_beorn_walker_fem|Vale Woman
 trp_trainer_4|Instruktor
 trp_trainer_gondor|Instruktor
 trp_trainer_rohan|Instruktor
@@ -1612,14 +1582,22 @@ trp_wild_troll|Dziki Jaskiniowy Troll
 trp_wild_troll_pl|Dzikich Jaskiniowych Trolli
 trp_ent|Ent
 trp_ent_pl|Entów
-trp_mountain_goblin|Górski Goblin
-trp_mountain_goblin_pl|Górskich Goblinów
-trp_tribal_orc|Plemienny Ork
-trp_tribal_orc_pl|Plemiennych Orków
-trp_tribal_orc_warrior|Plemienny Ork Wojownik
-trp_tribal_orc_warrior_pl|Plemiennych Orków Wojowników
-trp_tribal_orc_chief|Wódz Plemiennych Orków
-trp_tribal_orc_chief_pl|Wodzów Plemiennych Orków
+; trp_i1_tribal_goblin|Tribal Goblin
+; trp_i1_tribal_goblin_pl|Tribal Goblins
+; trp_i2_goblin_raider|Mountain Goblin Raider
+; trp_i2_goblin_raider_pl|Mountain Goblin Raiders
+; trp_i3_goblin_warrior|Mountain Goblin Warrior
+; trp_i3_goblin_warrior_pl|Mountain Goblin Warriors
+; trp_i4_goblin_fell_warrior|Fell Goblin Warrior
+; trp_i4_goblin_fell_warrior_pl|Fell Goblin Warriors
+; trp_i5_goblin_great_warrior|Great Goblin Warrior
+; trp_i5_goblin_great_warrior_pl|Great Goblin Warriors
+; trp_c3_goblin_wolf_rider|Mountain Goblin Wolf Rider
+; trp_c3_goblin_wolf_rider_pl|Mountain Goblin Wolf Riders
+; trp_c4_goblin_warg_rider|Goblin Warg Rider
+; trp_c4_goblin_warg_rider_pl|Goblin Warg Riders
+; trp_c5_goblin_great_wargrider|Great Goblin Warg Rider
+; trp_c5_goblin_great_wargrider_pl|Great Goblin Warg Riders
 trp_a3_dism_skirmisher_of_rohan|Rohański Harcownik
 trp_a3_dism_skirmisher_of_rohan_pl|Rohańskich Harcowników
 trp_a4_dism_veteran_skirmisher_of_rohan|Doświadczony Rohański Harcownik
@@ -1636,8 +1614,8 @@ trp_merry_notmet|Niziołek
 trp_pippin|Pippin
 trp_merry|Merry
 trp_grima|Grima Gadzi Język
-trp_future_animal_0|Wilk
-trp_future_animal_0_pl|Wilków
+; trp_future_animal_0|Stag
+; trp_future_animal_0_pl|Stags
 trp_spider|Pająk z Mrocznej Puszczy
 trp_spider_pl|Pająków z Mrocznej Puszczy
 ; trp_spider_strong|Great Spider
@@ -1664,10 +1642,10 @@ trp_werewolf_pl|Wilkołaki
 ; trp_bull_pl|Wild Kine
 ; trp_bull_strong|Great Bull
 ; trp_bull_strong_pl|Great Kine
-; trp_stag|Stag
-; trp_stag_pl|Stags
-trp_future_animal_4|Wilk
-trp_future_animal_4_pl|Wilków
+; trp_future_animal_3|Wild Warg
+; trp_future_animal_3_pl|Wild Wargs
+; trp_future_animal_4|Huge Wild Warg
+; trp_future_animal_4_pl|Huge Wild Wargs
 trp_future_animal_5|Wilk
 trp_future_animal_5_pl|Wilków
 ; trp_guthlaf|Guthláf
@@ -1676,3 +1654,51 @@ trp_duilin|Duilin
 trp_derufin|Derufin
 ; trp_rumil|Rúmil
 ; trp_lugdush|Lugdush
+trp_looter|Rabuś
+trp_looter_pl|Rabusi
+trp_brigand|Zbój
+trp_brigand_pl|Zbójów
+; trp_marauder|Marauder
+; trp_marauder_pl|Marauders
+; trp_mirkwood_bandit|Mirkwood Bandit
+; trp_mirkwood_bandit_pl|Mirkwood Bandits
+; trp_easterling_bandit|Easterling Bandit
+; trp_easterling_bandit_pl|Easterling Bandits
+; trp_rhovanion_bandit|Rhovanion Bandit
+; trp_rhovanion_bandit_pl|Rhovanion Bandits
+; trp_i2_orc_straggler|Orc Straggler
+trp_i2_orc_straggler_pl|Szajka Orkowych Maruderów
+; trp_i3_orc_brigand|Orc Brigand
+; trp_i3_orc_brigand_pl|Orc Brigands
+; trp_i4_orc_marauder|Orc Marauder
+; trp_i4_orc_marauder_pl|Orc Marauders
+; trp_i2_uruk_rogue|Uruk Rogue
+; trp_i2_uruk_rogue_pl|Uruk Rogues
+; trp_i3_uruk_brigand|Uruk Brigand
+; trp_i3_uruk_brigand_pl|Uruk Brigands
+; trp_i4_uruk_marauder|Uruk Marauder
+; trp_i4_uruk_marauder_pl|Uruk Marauders
+trp_warg_ghost_1b|Warg
+trp_warg_ghost_1b_pl|Wargów
+trp_warg_ghost_1c|Warg
+trp_warg_ghost_1c_pl|Wargów
+trp_warg_ghost_1d|Warg
+trp_warg_ghost_1d_pl|Wargów
+trp_warg_ghost_a1b|Warg
+trp_warg_ghost_a1b_pl|Wargów
+trp_warg_ghost_a1c|Opancerzony Warg
+trp_warg_ghost_a1c_pl|Opancerzonych Wargów
+trp_warg_ghost_a2b|Opancerzony Warg
+trp_warg_ghost_a2b_pl|Opancerzonych Wargów
+trp_warg_ghost_a2c|Opancerzony Warg
+trp_warg_ghost_a2c_pl|Opancerzonych Wargów
+trp_warg_ghost_a3a|Opancerzony Warg
+trp_warg_ghost_a3a_pl|Opancerzonych Wargów
+trp_warg_ghost_h|Olbrzymi Warg
+trp_warg_ghost_h_pl|Olbrzymich Wargów
+; trp_wild_warg|Wild Warg
+; trp_wild_warg_pl|Wild Wargs
+; trp_wild_warg_strong|Huge Wild Warg
+; trp_wild_warg_strong_pl|Huge Wild Wargs
+trp_warg_ghost_wolf|Wspaniały Wilk
+; trp_warg_ghost_wolf_pl|Great Wolves

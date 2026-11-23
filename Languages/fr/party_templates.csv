@@ -8,14 +8,14 @@ pt_mound|Tertre de héros
 pt_pyre|Bûcher de héros
 pt_wild_troll|Troll sauvage
 pt_raging_trolls|Trolls enragés
-pt_looters|Orques tribaux
-pt_forest_bandits|Traînards orques
-pt_mountain_bandits|Gobelins sauvages
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+pt_mountain_bandits|Gobelins des montagnes
 pt_steppe_bandits|Parias dunlandais
 pt_sea_raiders|Corsaires renégats
 pt_deserters|Déserteurs
 pt_merchant_caravan|Caravane
-pt_troublesome_bandits|Gobelins gênants
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|Orques bûcherons 
 pt_village_farmers|Fermiers
 pt_spy_partners|Voyageurs méfiants
@@ -148,3 +148,11 @@ pt_volunteers|Réserves
 pt_refugees|Réfugiés
 pt_retreat_troops|Troupes de couverture
 pt_radagast|Cavalier solitaire
+pt_looters_new|Pillards
+pt_brigands|Brigands
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

@@ -8,14 +8,14 @@ pt_mound|Stos Bohatera
 pt_pyre|Stos Pogrzebowy Bohatera
 pt_wild_troll|Dziki Trol
 pt_raging_trolls|Banda Krwiożerczych Troli
-pt_looters|Banda Orków
-pt_forest_bandits|Szajka Orkowych Maruderów
-pt_mountain_bandits|Banda Dzikich Goblinów
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+pt_mountain_bandits|Górskich Goblinów
 pt_steppe_bandits|Banda Dunlandzkich Wyrzutków
 pt_sea_raiders|Oddział Korsarzy Renegatów
 pt_deserters|Kompania Dezerterów
 pt_merchant_caravan|Karawana Kupiecka
-pt_troublesome_bandits|Szajka Kłopotliwych Goblinów
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|Grupa Orkowych Drwali
 pt_village_farmers|Grupa Farmerów
 pt_spy_partners|Podejrzani Podróżnicy
@@ -148,3 +148,11 @@ pt_volunteers|Rezerwy
 pt_refugees|Uchodźców
 pt_retreat_troops|Osłaniać Jednostki
 pt_radagast|Samotny Jeździec
+pt_looters_new|Rabusi
+pt_brigands|Zbójów
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

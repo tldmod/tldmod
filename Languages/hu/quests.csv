@@ -57,9 +57,9 @@ qst_escort_merchant_caravan|Kísérd el a szállítmányos konvojt {s8} települ
 qst_escort_merchant_caravan_text|Kísérd el a szállítmányos konvojt {s8} településbe és szólítsd meg őket amikor már közelben jártok.
 qst_deliver_wine|Szállíts {reg5} adagot {s4}i {s6} szövetségesnek
 qst_deliver_wine_text|A {s3}i {s9} megkért hogy szállíts {reg5} adagnyi {s6} tárgyat {s4} településre 7 napon belül.
-qst_troublesome_bandits|Vadászd le a problémás koboldokat
-qst_troublesome_bandits_text|A {s4}i {s9} megkért rá hogy vadászd le a problémás koboldokat, akik a város környékén garázdálkodnak.
-qst_deal_with_looters|Bánj el a törzsi orkokkal
+; qst_troublesome_bandits|Hunt Down Troublesome Bandits
+; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town.
+; qst_deal_with_looters|Deal with {s6}
 qst_deal_with_looters_text|{s4} elöljárója megkért hogy bánj el {s4} környékén garázdálkodó törzsi orkok csapataival.
 qst_deal_with_night_bandits|Értsd el az Éjjeli Fosztogatókat
 qst_deal_with_night_bandits_text|{s14} idős embere azt kérte, hogy intézkedj az éjjeli fosztogatók ellen {s14}-n.
@@ -78,5 +78,9 @@ qst_deliver_gift_text|Meglettél rá kérve, hogy szállíts le egy {s1}i {s4} t
 qst_ring_hunters|Gyűrűvadászok
 qst_ring_hunters2|Gyűrűvadászok - Teljesítve
 qst_deliver_message_hobbit|Aggódó hobbitok
+; qst_hunt_beast_coop|Hunt a {s6} with {s9}
+; qst_hunt_beast_mayor|Hunt down a beast
 qst_oath_personal|Bosszúeskü
+; qst_morannon_quest|The Black Gate Opens
+; qst_morannon_quest_text|All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord.
 qst_quests_end_text|.

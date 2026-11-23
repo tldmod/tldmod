@@ -8,14 +8,14 @@ pt_mound|英雄塚
 pt_pyre|英雄火葬堆
 pt_wild_troll|野生食人妖
 pt_raging_trolls|憤怒的食人妖
-pt_looters|部落半獸人
-pt_forest_bandits|掉隊半獸人
-pt_mountain_bandits|野生哥布林
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+pt_mountain_bandits|山地哥布林
 pt_steppe_bandits|登蘭德放逐者
 pt_sea_raiders|法外海盜
 pt_deserters|逃兵
 pt_merchant_caravan|商隊
-pt_troublesome_bandits|棘手的哥布林
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|半獸人伐木隊
 pt_village_farmers|農夫
 pt_spy_partners|可疑的旅人
@@ -148,3 +148,11 @@ pt_volunteers|預備役
 pt_refugees|難民
 pt_retreat_troops|斷後部隊
 pt_radagast|孤獨騎手
+pt_looters_new|搶匪
+pt_brigands|土匪
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

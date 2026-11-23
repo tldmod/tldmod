@@ -41,20 +41,34 @@ dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Hallo Meister Pippin. Ich bri
 dlga_hobbit_deliver_message:close_window|Habt Dank, {playername}. Ihr seid sehr freundlich.
 dlga_hobbit_merry_talk_met:close_window|Hallo, Meister Merry.
 dlga_hobbit_pippin_talk_met:close_window|Hallo, Meister Pippin.
-dlga_start:hd_defense_01|Gut, dass Ihr hier seid, {playername}. Ich bin Aragorn, Arathorns Sohn, und ich bin Isildurs Erbe - seht, hier ist Anduril, die Flamme des Westens, die ich in den Kampf trage. Die Klinge, die zerbrochen war, erstrahlt wieder! Es wird nicht mehr lange dauern, bis Sarumans Streitkräfte diese Mauern erreichen. Ich bitte Euch nun, mir zu helfen und die Rohirrim zu verteidigen, für die Ehre des Herrn der Mark. Dies soll die Stunde sein, in der wir gemeinsam die Schwerter ziehen!
-dlga_start:hd_defense_01.1|Mae lovannen! Die Dinge hier sehen schlecht aus, {playername}, aber weniger schlecht, jetzt, wo Ihr hier bei uns seid! Gellon len covad. Ich bin Legolas vom Dunkelwald und obwohl ich diesen Ort nicht besonders mag, mag ich die herannahenden Horden Sarumans noch weniger. Was würde ich dafür geben, wenn noch hundert meiner Sippe hier wären! Wir sind zu wenige, einfach zu wenige. Wir werden Eure Hilfe brauchen, auch wenn wir nur ein paar Blätter im Wald sind. Kommt, ich zeige Euch, wo unsere Bögen am nützlichsten sein werden...
-dlga_start:hd_defense_01.2|Ich bin sehr froh, dich zu sehen, Vetter! Ich bin Gimli, Gloins Sohn. Es ist ein großes Heer, das sich uns jetzt entgegenstellt, aber meine Axt ist unruhig in meiner Hand und ich weiß, dass du dasselbe fühlst! Gebt uns eine Reihe von Orkhälsen zum Hacken und Platz zum Schwingen und gemeinsam werden wir sie das Fürchten lehren. Starke Füße und harte Äxte, das ist es, was uns durch die Nacht tragen wird! Ai oi! Es ist genug für uns beide da. Baruk Khazad! Khazad ai-menu!
+; dlga_start:morannon_quest_aragorn|Well met again, {playername}. I am glad that you have come, for we come now to the very brink, where hope and despair are akin, and it is good to have true friends beside us.
+; dlga_start:morannon_quest_aragorn.1|You are welcome, {playername}. I am Aragorn, son of Arathorn, Chieftain of the Dúnedain of the North, and I am glad that you have come.
+; dlga_morannon_quest_aragorn:morannon_quest_start_battle|The Captains of the West now gather before the Black Gate. Our hope is small, but while Men remain true to one another, hope is not wholly lost. Come, let us show the Enemy that the Men of the West have not forgotten courage.
+; dlga_start:morannon_quest_lego_1|Another Elf to join our host? Well, I shall not complain, so long as you can wield a sword or draw a bow. We have need of every stout heart here; although I see little chance of our accomplishing much against those walls.
+; dlga_start:morannon_quest_gimli_1|Well met! My friend Gimli will be glad to see another of his own folk here. And if you wield your axe as well as he does, I shall have no complaint!
+; dlga_morannon_quest_gimli_1:morannon_quest_lego_1|Welcome, kinsman! We have need of every stout heart here; although I see little chance of our accomplishing much against those walls.
+; dlga_morannon_quest_lego_1:morannon_quest_gimli_2|Up with your beard, my friend! We have travelled dark paths and fought great battles, lead by the will and by our love of Aragorn. Oft hope is born, when all is forlorn. Now, the captains prepare to ride to the Gate, and we are to speak for the folk of the Wood and the Mountain. Let us see if we can lure out whatever is hiding behind those doors.
+; dlga_morannon_quest_gimli_2:morannon_quest_start_battle|Very well, I shall come. Whatever is still to do, I hope to have a part in it, for the honour of the folk of the Lonely Mountain. {playername}, wait here for our return. Before long, you may have your own part to play, and I would be glad to have you by my side.
+; dlga_morannon_quest_start_battle:close_window|Now, prepare yourself! The Black Gate will soon open!
+; dlga_start:close_window.1|Rejoice, {playername}, the Ring-bearer has fulfilled his Quest. The realm of Sauron is ended, and the road is open for Aragorn to claim the kingship that is his by right. You may stand by him, but I have one last errand, and I have need of speed greater than any wind. We will meet again.
+; dlga_start:close_window.2|The battle is won, and I thank you, {playername}, for standing with me in this hour of doom. We have faced the darkness together, and I expect that our paths shall cross again. Now I must return to Minas Tirith, for the time has come for me to claim the inheritance that is mine.
+; dlga_start:hd_defense_01|Hail {s24}! You come in good time, for the enemy is hard upon your heels. These walls are strong, and shall not fall while men have strength to defend them. Yet I will not deny that every sword-arm is welcome!
+dlga_start:hd_defense_01.1|Gut, dass Ihr hier seid, {playername}. Ich bin Aragorn, Arathorns Sohn, und ich bin Isildurs Erbe - seht, hier ist Anduril, die Flamme des Westens, die ich in den Kampf trage. Die Klinge, die zerbrochen war, erstrahlt wieder! Es wird nicht mehr lange dauern, bis Sarumans Streitkräfte diese Mauern erreichen. Ich bitte Euch nun, mir zu helfen und die Rohirrim zu verteidigen, für die Ehre des Herrn der Mark. Dies soll die Stunde sein, in der wir gemeinsam die Schwerter ziehen!
+dlga_start:hd_defense_01.2|Mae lovannen! Die Dinge hier sehen schlecht aus, {playername}, aber weniger schlecht, jetzt, wo Ihr hier bei uns seid! Gellon len covad. Ich bin Legolas vom Dunkelwald und obwohl ich diesen Ort nicht besonders mag, mag ich die herannahenden Horden Sarumans noch weniger. Was würde ich dafür geben, wenn noch hundert meiner Sippe hier wären! Wir sind zu wenige, einfach zu wenige. Wir werden Eure Hilfe brauchen, auch wenn wir nur ein paar Blätter im Wald sind. Kommt, ich zeige Euch, wo unsere Bögen am nützlichsten sein werden...
+dlga_start:hd_defense_01.3|Ich bin sehr froh, dich zu sehen, Vetter! Ich bin Gimli, Gloins Sohn. Es ist ein großes Heer, das sich uns jetzt entgegenstellt, aber meine Axt ist unruhig in meiner Hand und ich weiß, dass du dasselbe fühlst! Gebt uns eine Reihe von Orkhälsen zum Hacken und Platz zum Schwingen und gemeinsam werden wir sie das Fürchten lehren. Starke Füße und harte Äxte, das ist es, was uns durch die Nacht tragen wird! Ai oi! Es ist genug für uns beide da. Baruk Khazad! Khazad ai-menu!
 dlga_hd_defense_01:close_window|Jetzt lasst uns eine Weile ruhen. Der Feind wird bei Einbruch der Nacht hier sein.
 dlga_start:aragorn_thanks_hd|{playername}, ich bin froh, dass Ihr noch lebt. Die Männer sind müde vom Kampf, aber dank Euch sehen sie den Anbruch eines neuen Tages. Die Dunländer haben sich ergeben. Man wird sie an die Arbeit schicken, um das Übel zu beheben, das sie verursacht haben, und danach, so hoffe ich, werden sie in ihre eigenen Länder zurückkehren. Sie wurden von Saruman getäuscht, denn es wurde ihnen viel genommen, und vieles muss noch zurückgegeben werden; wir werden sehen, was später für sie getan werden kann.
-dlga_aragorn_thanks_hd:close_window|Ich hoffe, dass sich unsere Wege wieder treffen mögen, {playername}.Ich verabschiede mich jetzt, denn ich muss in einer äußerst dringenden Angelegenheit aufbrechen. Mit dem ersten Licht des Morgens müssen wir, meine Freunde und ich, einen dunklen Weg aus diesem Tal nehmen. {playername}, die Zeiten sind böse, aber Euer Mut erfreut die Herzen aller freien Völker überall, vom Norden bis zum Süden. Kämpft tapfer und wir mögen uns jenseits der Schatten wiedersehen!
-dlga_start:close_window.1|In Kürze werde ich mich wieder auf den Weg machen, {playername}, einen harten Weg, der seit unzähligen Jahren nicht mehr begangen wurde. Ich hoffe, Euer Weg ist einfacher als meiner, {mein Freund/meine Freundin}. In der Zwischenzeit nutzt Ihr vielleicht die Gelegenheit und besucht die tiefen Höhlen von Helms Klamm, von denen mein Begleiter Gimli der Zwerg viel gesprochen hat.
-dlga_start:close_window.2|Habt Ihr schon die Höhlen hinten im Tal besucht? Die Glitzernden Grotten von Aglarond, {playername}! Glücklich ist der Zufall, der Eure Schritte hierher geführt hat!
-dlga_start:close_window.3|Ich habe meinem Freund hier, Gimli, Gloins Sohn, versprochen, mit ihm, wenn der Krieg vorbei ist, hierher zurückzukehren, um die Glitzernden Grotten von Aglarond mit eigenen Augen zu sehen. Wenn Ihr die Muße habt, {playername}, könntet Ihr dies ebenfalls tun, bevor Ihr Euch wieder auf den Weg macht. Eine kurze Ruhepause von all den Kämpfen!
+dlga_aragorn_thanks_hd:player_thanks_hd|Ich hoffe, dass sich unsere Wege wieder treffen mögen, {playername}.Ich verabschiede mich jetzt, denn ich muss in einer äußerst dringenden Angelegenheit aufbrechen. Mit dem ersten Licht des Morgens müssen wir, meine Freunde und ich, einen dunklen Weg aus diesem Tal nehmen. {playername}, die Zeiten sind böse, aber Euer Mut erfreut die Herzen aller freien Völker überall, vom Norden bis zum Süden. Kämpft tapfer und wir mögen uns jenseits der Schatten wiedersehen!
+; dlga_start:player_thanks_hd|{playername}, I am glad to see you live still. The men are weary with battle, but thanks to you they see the dawn of a new day.
+; dlga_player_thanks_hd:close_window|It was an honor to fight by sour side, lord.
+dlga_start:close_window.3|In Kürze werde ich mich wieder auf den Weg machen, {playername}, einen harten Weg, der seit unzähligen Jahren nicht mehr begangen wurde. Ich hoffe, Euer Weg ist einfacher als meiner, {mein Freund/meine Freundin}. In der Zwischenzeit nutzt Ihr vielleicht die Gelegenheit und besucht die tiefen Höhlen von Helms Klamm, von denen mein Begleiter Gimli der Zwerg viel gesprochen hat.
+dlga_start:close_window.4|Habt Ihr schon die Höhlen hinten im Tal besucht? Die Glitzernden Grotten von Aglarond, {playername}! Glücklich ist der Zufall, der Eure Schritte hierher geführt hat!
+dlga_start:close_window.5|Ich habe meinem Freund hier, Gimli, Gloins Sohn, versprochen, mit ihm, wenn der Krieg vorbei ist, hierher zurückzukehren, um die Glitzernden Grotten von Aglarond mit eigenen Augen zu sehen. Wenn Ihr die Muße habt, {playername}, könntet Ihr dies ebenfalls tun, bevor Ihr Euch wieder auf den Weg macht. Eine kurze Ruhepause von all den Kämpfen!
 dlga_start:treebeard_isengard_1|{s2} Ha, hmmm! Willkommen, Freunde! Ihr kommt gerade rechtzeitig. Ich habe hier einen Zauberer zu bewältigen, aber zuerst müssen wir ihn in seinem Turm festnageln. Das wird eine üble Angelegenheit. Fels, Axt und Feuer erwarten uns drinnen. Werdet Ihr uns helfen?
 dlga_treebeard_isengard_1:treebeard_isengard_2|Ja, Gandalf hat mich geschickt. Lasst uns den Ring von Isengart stürmen!
 dlga_treebeard_isengard_2:close_window|Sehr gut, folgt mir. Wir haben den Ring bereits durchbrochen. Nun lasst uns drinnen aufräumen! Hoom, hom! Hoom, hom! Nach Isengart! Am Tor gescharrt, und sei's so hart wie Stein! Den Felsenwall mit Hörnerschall und Trommelschall reißt ein!
-dlga_start:close_window.4|Hoom, hom! Hooom, hooom! Nach Isengart! Am Tor gescharrt, und sei's so hart wie Stein! Den Felsenwall mit Hörnerschall und Trommelschall reißt ein!
-dlga_start:close_window.5|Vielen Dank für Eure Hilfe. Ich muss sagen, dass es recht befriedigend war, mit diesen Orks abzurechnen. Ihr wart uns eine große Hilfe. Aber jetzt, hm, haben wir Arbeit zu erledigen, bei der Ihr nicht helfen könnt. Ihr solltet Euch vielleicht einen sicheren Fleck außerhalb Isengarts suchen und warten, bis wir fertig sind.
+dlga_start:close_window.6|Hoom, hom! Hooom, hooom! Nach Isengart! Am Tor gescharrt, und sei's so hart wie Stein! Den Felsenwall mit Hörnerschall und Trommelschall reißt ein!
+dlga_start:close_window.7|Vielen Dank für Eure Hilfe. Ich muss sagen, dass es recht befriedigend war, mit diesen Orks abzurechnen. Ihr wart uns eine große Hilfe. Aber jetzt, hm, haben wir Arbeit zu erledigen, bei der Ihr nicht helfen könnt. Ihr solltet Euch vielleicht einen sicheren Fleck außerhalb Isengarts suchen und warten, bis wir fertig sind.
 dlga_start:treebeard_isengard_3|Hallo nochmal. Es ist schön, Euch sicher und trocken zu sehen. Ich muss sagen, es wird eine Weile dauern, um all den Schmutz Sarumans wegzuspülen. Aber wir haben uns ziemlich gut geschlagen, hmm, ja. Er wird keinen weiteren Schaden anrichten.
 dlga_treebeard_isengard_3:close_window|Ho, hmm, ich schulde Euch großen Dank. Ich hatte keine Hilfe von anderen erwartet und es ist gut zu wissen, dass unser letzter Marsch doch nicht so schlecht enden wird! Da der Baummörder erledigt ist, sollten wir jetzt in der Lage sein, Rohans nördliche Marken für eine Weile sicher zu halten.
 dlga_treebeard_isengard_3:close_window.1|Hmm? Ho, hmm… ah. Ihr seid also den ganzen Weg aus Rohan gekommen? Hm. Ich habe Neuigkeiten aus dem Süden gehört, ja. Gute Nachrichten, Nachrichten, die alle Herzen erfreuen. Ich bin König Théoden wohlgesonnen, und ich bin froh, dass er in seiner schweren Stunde Hilfe von jemandem wie Euch erhalten hat. Wir sind hier gut zurechtgekommen, und nun werden wir Ents dafür sorgen, dass Saruman ohne unsere Erlaubnis keinen Fuß aus Isengart heraus setzt. Der Isen fließt wieder ruhig, und ich hoffe, dass das Wasser bald wieder trinkbar sein wird. Ha, hm, ich spüre ein Lied aufkommen. Ein Lied über die alten Tage... die alten Bäume, die ich kannte...
@@ -81,13 +95,13 @@ dlga_treebeard_about_himself:treebeard_pretalk.1|Hrumm... Ich bin der älteste m
 dlga_treebeard_about_entwives:treebeard_pretalk|(Der Anführer der Ents wirkt traurig und seine Stimme ist ungewöhnlich tief.)^"Hammm... Dies ist eine traurige Geschichte... Wenn die Wälder von Orks gesäubert sind, können wir darüber reden."
 dlga_treebeard_about_entwives:treebeard_pretalk.1|Ahummm... die wunderschönen Entfrauen... Sie lieben es, zu pflanzen und zu züchten... Wir hätten mehr auf sie hören sollen... Hrummm... Dann zogen sie in die braunen Lande, um Gärten anzulegen, und sie brachten den Sterblichen bei, das Land fruchtbar zu machen... Wir besuchten sie bisweilen... bis... Sauron sie angriff... Die Entfrauen sind nun verloren... Hummm... Fimbrethil... ihr Haar von der Farbe reifen Weizens... Wir haben sie gesucht... aber noch nicht gefunden... bisher...
 dlga_treebeard_about_ents:treebeard_pretalk|Hruummm... Wir sind die Hirten der Bäume und wir schützen sie vor Gefahren. Wir sind älter als alle sterblichen Arten, aber nicht so alt wie die Elben, die uns von der Stummheit heilten. Die Dinge haben sich geändert, im Laufe der Zeitalter. Am Anfang waren wir hastiger und beweglicher. Aber im Laufe der Zeit haben wir viele von uns verloren. Einige von uns sind noch immer wahre Ents und auf unsere Weise lebendig genug, aber viele werden schläfrig, werden baumisch, könnte man sagen. Die meisten Bäume sind natürlich einfach Bäume; aber viele sind halb wach. Manche sind hellwach, und ein paar, nun ja, werden richtig entisch. So geht es die ganze Zeit. Wenn das mit einem Baum geschieht, stellt sich manchmal heraus, dass er ein schlechtes Herz hat. Immerhin, wir tun was wir können. Wir halten Fremde und Waghalsige fern: Wir raten und wir belehren, wir wandern und wachen.
-dlga_start:close_window.6|Mmmmm?
-dlga_start:close_window.7|Mmhhrmmm?
-dlga_start:close_window.8|Mmmrhrrhmm?
+dlga_start:close_window.8|Mmmmm?
+dlga_start:close_window.9|Mmhhrmmm?
+dlga_start:close_window.10|Mmmrhrrhmm?
 dlga_start:looters_2_join|Unterwerft euch der Macht der {s4} und dient mir!
 dlga_looters_2_join:close_window|Wir werden gehorchen, Herr.
-dlga_start:close_window.9|^^KNURR!^^
-dlga_start:close_window.10|^^KNURR!^^
+dlga_start:close_window.11|^^KNURR!^^
+dlga_start:close_window.12|^^KNURR!^^
 dlga_start:member_castellan_talk|Ja, {playername}? Was kann ich für Euch tun?
 dlga_member_castellan_pretalk:member_castellan_talk|Sonst noch etwas?
 dlga_member_castellan_talk:member_review_castle_garrison|Ich möchte die Besatzung überprüfen.
@@ -139,9 +153,9 @@ dlga_member_question_2:member_health|Wie ist Eure Gesundheit?
 dlga_member_question_2:member_background_recap|Erzählt mir noch einmal Eure Geschichte.
 dlga_member_background_recap_3:do_member_trade|Kurz danach schloss ich mich Euch an.
 dlga_do_member_view_char:member_talk|Sonst noch etwas?
-dlga_start:close_window.11|Es war mir eine Ehre, an eurer Seite zu kämpfen, {playername}.
-dlga_start:close_window.12|Wir können jederzeit aufbrechen.
-dlga_start:close_window.13|Bitte verschwendet nicht meine Zeit. Vielleicht sehen wir uns ein andermal wieder.
+dlga_start:close_window.13|Es war mir eine Ehre, an eurer Seite zu kämpfen, {playername}.
+dlga_start:close_window.14|Wir können jederzeit aufbrechen.
+dlga_start:close_window.15|Bitte verschwendet nicht meine Zeit. Vielleicht sehen wir uns ein andermal wieder.
 dlga_companion_recruit_signup_response:close_window|Leider kann ich gerade niemanden mehr in meine Truppe aufnehmen.
 dlga_companion_recruit_rank:close_window|Es scheint, Euer Ansehen bei meinem Volk ist noch nicht groß genug, {playername}. Ihr seid {s29} und Ihr müsst {s24} sein, damit ich Euch folge. [noch {reg3} Rangpunkte benötigt]. ^Wir sprechen uns wieder, wenn Ihr mehr erreicht habt.
 dlga_companion_recruit_rank:companion_recruit_payment.1|Ich bin froh, dass Ihr nun {s29} seid, und freue mich, Euch folgen zu dürfen.
@@ -160,6 +174,20 @@ dlga_companion_was_dismissed:companion_rehire|{s5}. Wollt Ihr Euch mir wieder an
 dlga_companion_rehire:companion_recruit_signup_confirm|Willkommen zurück, mein Freund!
 dlga_companion_rehire:companion_rehire_refused|Verzeiht, ich kann gerade niemanden mehr aufnehmen.
 dlga_companion_rehire_refused:close_window|Nun... Kommt wieder, wenn Ihr Euch umentscheidet, ja?
+; dlga_event_triggered:dimborn_ask_bear|Hey, {s5}. Did you see it? The big bear, in the fight. It came out of the trees and helped us. Very big. Very strong. And it moved so quiet, like a tree would move, if trees moved. I cannot stop thinking about it.
+; dlga_event_triggered:dimborn_ask_bear.1|{s5}, it was there again! The big bear, between the trees. I know it now. It is my kin, I can feel it. I must find it! {s10}
+; dlga_dimborn_ask_bear:dimborn_ask_bear_response|Umm. {playername}. I would like to go and look for the bear. Only for some time. Please, can I go?
+; dlga_dimborn_ask_bear_response:dimborn_ask_bear_leave|I grant you leave. Good luck on your quest.
+; dlga_dimborn_ask_bear_response:dimborn_ask_bear_wait|I am sorry, but I can't give you leave at the moment.
+; dlga_dimborn_ask_bear_response:dimborn_ask_bear_forbidden|Don't trouble me with this ever again.
+; dlga_dimborn_ask_bear_leave:close_window|Thank you, {playername}! Thank you. I go to the woods now, the ones I know. The bear will not come quick, bears are shy, but I am patient. I am good with waiting. When I am done, I find you again. Just be somewhere in the Northern Valley of Anduin, near the woods.
+; dlga_dimborn_ask_bear_wait:close_window|Yes, chief. Is all right. Many things to do, I know. The bear will still be there. Maybe. I hope I see it again one day.
+; dlga_dimborn_ask_bear_forbidden:close_window|Oh. Hmm. Is all right. I do not ask again, I promise. I just hope the bear is well. And I still have trees. Trees stay.
+; dlga_event_triggered:dimborn_return_response|{s5}! {s5}, I found it! The bear. It was in the woods at home, by the old oaks, like I thought. First it was shy. Then it was not. We sat together a long time, no talking. Now it knows me. It is behind me, there. Do not worry, it is friendly. Mostly.
+; dlga_dimborn_return_response:dimborn_return_join|Welcome back, Dimborn! I am glad you found your friend. You are both welcome in my company.
+; dlga_dimborn_return_response:dimborn_return_full|Welcome back, Dimborn. But I can't take on anyone else right now.
+; dlga_dimborn_return_join:close_window|Thank you, {playername}. Thank you. When there is a fight, the bear will come to my side. It knows who is friend and who is not. Better than a shield. Not better than a tree, but better than a shield. Now we go. I am ready.
+; dlga_dimborn_return_full:close_window|Oh. Yes. Is all right. We are big, the bear and me, I know. I stay near the trees and ask again soon. Please make some room.
 dlga_event_triggered:ziggy_ask_prisoners|{Kriegsherr/Kriegsherrin}, auf ein Wort. Ihr habt unsere Feinde zerschmettert und einige gefangen genommen - so weit so gut. Ich habe Euch ein mächtiges Geschenk anzubieten, wenn Ihr mir eine Kleinigkeit im Austausch geben würdet: Überlasst mir einen von denen, die wir gefangen genommen haben.
 dlga_event_triggered:ziggy_ask_prisoners.1|{Kriegsherr/Kriegsherrin}, erneut habt Ihr obsiegt! Vielleicht erinnert Ihr, worum ich Euch das letzte Mal bat - ich könnte einen Eurer Gefangenen gebrauchen. Es wäre nur zu Eurem Vorteil, {Kriegsherr/Kriegsherrin}, das versichere ich Euch.
 dlga_ziggy_ask_prisoners:ziggy_ask_why|Genug der Rätseleien, Zigûrphel! Drücke dich klar aus - wofür brauchst du einen Gefangenen?
@@ -268,10 +296,10 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|Greift nicht an! Wir e
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|Wir kämpfen bis zum Ende!
 dlga_party_encounter_offer_dont_fight:close_window|Ich schulde Euch noch etwas, nicht wahr? Nun gut... ich werde Euch dieses eine Mal davon lassen.
 dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha! Aber ich will gegen Euch kämpfen.
-dlga_start:close_window.14|Hmm....
-dlga_start:close_window.15|Der Herr ist tief in Gedanken versunken und darf nicht gestört werden!
-dlga_start:close_window.16|Heil {playername}, {s24}!
-dlga_start:close_window.17|Weg mit dir, elender Schurke.
+dlga_start:close_window.16|Hmm....
+dlga_start:close_window.17|Der Herr ist tief in Gedanken versunken und darf nicht gestört werden!
+dlga_start:close_window.18|Heil {playername}, {s24}!
+dlga_start:close_window.19|Weg mit dir, elender Schurke.
 dlga_start:lord_start|Wenn das nicht mein tapferer Held {playername} ist...
 dlga_start:lord_start.1|Gut, Euch wieder zu sehen, {playername}...
 dlga_start:lord_start.2|So sehen wir uns wieder, {playername}...
@@ -282,6 +310,9 @@ dlga_lord_meet_enemy:lord_intro|Ich bin {playername}.
 dlga_lord_meet_enemy:lord_intro.1|Man kennt mich als {playername}. Merkt Euch den Namen, Ihr werdet ihn noch oft hören.
 dlga_start:lord_start.3|Nun, {playername}...
 dlga_lord_start:lord_generic_mission_completed|Euer Wundarzt konnte meinen Freund überzeugen und hat die Operation durchgeführt. Alles, was wir jetzt noch tun können, ist, für seine Gesundung zu beten. Ich danke Euch, dass Ihr mir Euren Arzt überlassen habt, {playername}. Ihr seid von edler Art. Ich werde es nicht vergessen.
+; dlga_lord_hunt_beast_coop_win:lord_generic_mission_thank|{s9}
+; dlga_lord_hunt_beast_coop_fail:lord_hunt_beast_coop_fail_2|{s9}
+dlga_lord_hunt_beast_coop_fail_2:close_window|Ich werde nicht noch einmal versagen.
 ; dlga_lord_start:lord_oath_of_vengeance_fulfilled|{playername}, I see you return from your campaign against Moria and Gundabad! What news do you bring?
 ; dlga_lord_oath_of_vengeance_fulfilled:lord_oath_of_vengeance_fulfilled1|My lord, I have pursued and ravaged the orc scum, destroying and routing their armies wherever I found them. They tremble with fear and hide in their deepest caves. Balin and his followers have been avenged!
 ; dlga_lord_oath_of_vengeance_fulfilled1:close_window|You have accomplished more than I could ever have hoped for. Thanks to you, vengeance is ours! The fear and shame of our enemies fills our hearts with satisfaction! I name you Oathkeeper. Go now with the gratitude of Aules' people.
@@ -546,6 +577,9 @@ dlga_lord_mission_raid_village_a:lord_raid_village_reject|Ich kann mit diesen Sc
 dlga_lord_mission_raid_village_a:lord_raid_village_reject.1|Ich habe keine Zeit, mickrige Dörfer zu überfallen.
 dlga_lord_raid_village_accept:close_window|Was stehst du dann noch hier herum?
 dlga_lord_raid_village_reject:close_window|Die Ausrede eines Feiglings. Weg mit dir, der Geruch von Feiglingen widert mich an.
+; dlga_lord_mission_hunt_beast_ask:lord_mission_hunt_beast_accept|Yes, I will join you.
+dlga_lord_mission_hunt_beast_ask:lord_mission_rejected|Ich habe gerade keine Zeit dafür.
+; dlga_lord_mission_hunt_beast_accept:close_window|Very well. My scouts have already found the {s6} and its pack and made sure that it will not escape. Now it is on us to bring it to its end.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Der Zauberer aus dem Düsterwald ist erschlagen, meine Herrin.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Vergebt mir, meine Herrin, aber dringende Angelegenheiten hielten mich davon ab, den Zauberer zu erschlagen, und in der Zwischenzeit ist er entkommen.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|Der Zauberer aus dem Düsterwald lebt noch. Wir unterbrachen seine Rituale, aber er konnte fliehen.
@@ -692,7 +726,7 @@ dlga_start:castle_guard_players|Eure Befehle, Herr?
 dlga_castle_guard_players:close_window|Öffnet die Tür, ich will hinein.
 dlga_castle_guard_players:close_window.1|Schon gut.
 dlga_start:castle_guard_sneaked_intro_1|Aus meinen Augen, Bettler! Du stinkst!
-dlga_start:close_window.18|Verzieh dich, bevor ich meine Geduld verliere, widerlicher Bettler!
+dlga_start:close_window.20|Verzieh dich, bevor ich meine Geduld verliere, widerlicher Bettler!
 dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|Ich will die Halle betreten und mit dem Fürsten sprechen.
 dlga_castle_guard_sneaked_intro_1:close_window|[Verlassen]
 dlga_castle_guard_sneaked_intro_2:close_window|Bist du wahnsinnig, {Mann/Weib}? Bettler werden nicht in die Halle gelassen. Nun verzieh dich, oder ich werde dich blutig prügeln.
@@ -788,8 +822,8 @@ dlga_sad_elf_2:sad_elf_choice|Ah, sie berichten von der See. Und von dem, was je
 dlga_sad_elf_choice:sad_elf_leave|Ich fühle Euren Schmerz. Ihr habt euren Teil in diesem Krieg geleistet. Ihr dürft gehen.
 dlga_sad_elf_choice:sad_elf_no|Die Elben dürfen Mittelerde nicht dem Schatten überlassen. Diesen Krieg führen wir nicht für uns selbst allein und jeder von uns muss seinen Teil beitragen. Ich kann Euch keinen Urlaub geben. [Führerschaft]
 dlga_sad_elf_leave:close_window|Habt Dank {mein Herr/meine Herrin}!^^Zum Meer! Zum Meer! Dort schäumen die Wellen, / Und die Schreie der weißen Möwen gellen. / Der Sonnenball sinkt im Westen hernieder.
-dlga_start:close_window.19|Ihr kommt gerade rechtzeitig. Lasst uns unsere Kräfte vereinen und dem Feind eine Lehre erteilen.
-dlga_start:close_window.20|Ihr macht einen großen Fehler, wenn Ihr gegen uns kämpft.
+dlga_start:close_window.21|Ihr kommt gerade rechtzeitig. Lasst uns unsere Kräfte vereinen und dem Feind eine Lehre erteilen.
+dlga_start:close_window.22|Ihr macht einen großen Fehler, wenn Ihr gegen uns kämpft.
 dlga_start:ally_thanks_meet|Ich glaube nicht, dass wir uns bekannt sind, Freund. Ihr habt mein Leben gerettet, und ich kenne immer noch nicht Euren Namen...
 dlga_start:ally_thanks_meet.1|Eure Hilfe war höchst willkommen, Fremder. Mein Name ist {s1}. Kann ich den Euren hören?
 dlga_start:ally_thanks_meet.2|Danke für Eure Hilfe, Fremder. Wir kennen uns noch nicht, oder? Was ist Euer Name?
@@ -797,13 +831,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|Mein Name ist {playername}.
 dlga_ally_thanks_meet_2:close_window|Wahrlich eine glückliche Begegnung, {playername}. Mein Name ist {s1} und ich stehe für immer in Eurer Schuld. Wenn es jemals irgendetwas gibt, was ich für Euch tun könnte, lasst es mich wissen...
 dlga_ally_thanks_meet_2:close_window.1|Glückliche Begegnung, {playername}. Ich stehe in Eurer Schuld für Eure Hilfe. Ich hoffe, ich kann sie eines Tages begleichen.
 dlga_ally_thanks_meet_2:close_window.2|Gut, Euch zu treffen, {playername}. Ich bin {s1}. Danke für die Hilfe und ich hoffe, wir sehen uns wieder.
-dlga_start:close_window.21|Erneut rettet Ihr uns das Leben, {playername}. Wahrlich, Ihr seid der beste aller Freunde. {s43}
-dlga_start:close_window.22|Ihr seid gerade rechtzeitig gekommen! {playername}, ich danke Euch zutiefst! {s43}
-dlga_start:close_window.23|Ihr seid gerade rechtzeitig gekommen, {playername}. Ich werde Eure Hilfe nicht vergessen. {s43}
-dlga_start:close_window.24|Gut, Euch hier zu sehen,  {playername}. {s43}
-dlga_start:close_window.27|Danke für Eure Hilfe, Hauptmann. Ihr habt {reg1?uns:mir} das Leben gerettet.
-dlga_start:close_window.28|Danke für Eure Hilfe, Hauptmann. Es sah nicht sehr gut für uns aus, aber dann kamt Ihr und alles ging gut aus.
-dlga_start:close_window.29|Danke für Eure Hilfe, Hauptmann. Es war ein Glück, dass Ihr in der Nähe wart.
+dlga_start:close_window.23|Erneut rettet Ihr uns das Leben, {playername}. Wahrlich, Ihr seid der beste aller Freunde. {s43}
+dlga_start:close_window.24|Ihr seid gerade rechtzeitig gekommen! {playername}, ich danke Euch zutiefst! {s43}
+dlga_start:close_window.25|Ihr seid gerade rechtzeitig gekommen, {playername}. Ich werde Eure Hilfe nicht vergessen. {s43}
+dlga_start:close_window.26|Gut, Euch hier zu sehen,  {playername}. {s43}
+dlga_start:close_window.29|Danke für Eure Hilfe, Hauptmann. Ihr habt {reg1?uns:mir} das Leben gerettet.
+dlga_start:close_window.30|Danke für Eure Hilfe, Hauptmann. Es sah nicht sehr gut für uns aus, aber dann kamt Ihr und alles ging gut aus.
+dlga_start:close_window.31|Danke für Eure Hilfe, Hauptmann. Es war ein Glück, dass Ihr in der Nähe wart.
 dlga_start:freed_hero_answer|Ich stehe in Eurer Schuld dafür, dass Ihr mich befreit habt, mein Freund.
 dlga_freed_hero_answer:freed_hero_answer_1|Ihr geht nirgendwo hin. Ihr seid nun mein Gefangener!
 dlga_freed_hero_answer_1:close_window|Ach je! Wird sich mein Unglück niemals wenden?
@@ -897,7 +931,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|Bogen.
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|Wurfwaffen.
 dlga_trainer_choose_weapon_player:trainer_pretalk|Keine, ich habe mich umentschieden.
 dlga_trainer_begin_training:close_window|Sehr gut, los geht's. Sobald Ihr fertig seid, kommt zu wieder und sprecht mit mir.
-dlga_start:close_window.30|Weg mit dir, elender Schurke.
+dlga_start:close_window.32|Weg mit dir, elender Schurke.
 dlga_start:mayor_begin|Guten Tag, mein Herr,
 dlga_start:mayor_talk|Hallo, Fremder. Ihr scheint neu zu sein hier in {s9}. Ich bin der Verwalter der Stadt.
 dlga_start:mayor_begin.1|Guten Tag, {playername}.
@@ -922,17 +956,17 @@ dlga_mayor_talk:mayor_deliver_food|Hier ist der Nahrungsvorrat, {reg9} Einheiten
 dlga_mayor_deliver_food:mayor_deliver_food_completed|Sehr gute Arbeit, {playername}. Unsere Vorratshäuser sind wieder voll und niemand muss hungern.
 dlga_mayor_deliver_food_completed:close_window|Ich tue was ich kann.
 dlga_mayor_begin:mayor_looters_quest_response|Ah, {playername}. Habt Ihr schon Fortschritte gemacht?
-dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|Ich habe einige Stammesorks getötet.
+; dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|I've killed some {s5}.
 dlga_mayor_looters_quest_response:close_window|Noch nicht, Herr. Lebt wohl.
-dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|Ah ja, meine Späher haben alles verfolgt. Das sollte diese Stammesorks in Schach halten!^^[{reg14}x{reg15} Ressourcenpunkte von {s14} verdient]
-dlga_mayor_looters_quest_destroyed_2:close_window|Und das ist nicht die einzige gute Neuigkeit! Dank Euch sind die Stammesorks nun keine Bedrohung mehr. Wir hatten seit einiger Zeit keinen einzigen Angriff mehr. Wenn noch welche von ihnen übrig sind, dann sind sie entweder geflohen oder haben sich gut versteckt. Das ist gut für die Sicherheit dieser Gegend! Ich denke, Ihr habt die Aufgabe abgeschlossen, {playername}. Habt Dank und lebt wohl.
+; dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|Aye, my scouts saw the whole thing. That should keep those {s5} at bay!^^[earned {reg14}x{reg15} Resource Points of {s14}]
+; dlga_mayor_looters_quest_destroyed_2:close_window|And that's not the only good news! Thanks to you, the {s5} have ceased to be a threat. We've not had a single attack reported for some time now.  If there are any of them left, they've either run off or gone deep into hiding. That's good for the safety of the place!  I think that concludes your task, {playername}. Thank you, and farewell.
 dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|Braucht Ihr sonst noch etwas?
 dlga_mayor_begin:close_window|Gut, Euch wiederzusehen, {playername}. Ich habe gehört, dass Ihr die Leute sicher begleitet habt. Ich werde Eurem Befehlshaber berichten, wie zuverlässig Ihr seid.^^[{reg14} Ressourcenpunkte von {s14} verdient]
 dlga_mayor_begin:move_cattle_herd_failed|Ich habe gehört, dass Ihr diese Leute auf dem Weg an {s9} verloren habt. Ich hatte einige Schwierigkeiten, Euer Versagen dem Befehlshaber hier zu erklären. Habt Ihr irgendetwas zu sagen?
 dlga_move_cattle_herd_failed:move_cattle_herd_failed_2|Es tut mir leid. Ich wurde angegriffen.
 dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|Es tut mir Leid. Die Leute gingen in der Nacht verloren.
 dlga_move_cattle_herd_failed_2:close_window|Nun, es war Euer Auftrag, sie sicher zu überbringen, egal unter welchen Umständen. Ihr solltet wissen, dass der Befehlshaber zu wissen verlangte, wer für dieses Versagen verantwortlich ist. Also habe ich ihm berichtet, dass Ihr das seid.
-dlga_mayor_begin:mayor_friendly_pretalk|Ich habe von Euren Taten gehört. Ihr habt diese Orks der Bestrafung zugeführt, die sie verdient haben. Ihr seid wirklich so gut, wie es heißt.^^[{reg14} Ressourcenpunkte von {s14} verdient]
+; dlga_mayor_begin:mayor_friendly_pretalk|I have heard about your deeds. You have given those bandits the punishment they deserved.  You are really as good as they say.^^[earned {reg14} Resource Points of {s14}]
 dlga_mayor_begin:mayor_talk|Was kann ich für Euch tun?
 dlga_mayor_friendly_pretalk:mayor_talk|Nun... Was kann ich sonst noch für Euch tun?
 dlga_mayor_pretalk:mayor_talk|Ja?
@@ -958,10 +992,10 @@ dlga_merchant_quest_stall:mayor_pretalk|Nun, ich versuche, jemand anderen zu fin
 dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|Ich tue was ich kann. Ich höre sie kommen und gehen nur wenn sie kürzlich an einer anderen Siedlung waren.  Sonst höre ich von den Kaufmannszügen, um welche Gegend sie sich befinden.
 dlga_mayor_talk_ask_location_2:mayor_pretalk|Schon gut.
 dlga_merchant_quest_requested:merchant_quest_brief|Nun, Ihr seht fähig genug aus. Ich glaube, ich hätte was für Euch.
-dlga_merchant_quest_brief:merchant_quest_looters_choice|Wir hatten kürzlich ein paar Kämpfe hier in der {s5}umgebung, mit all dem Chaos, das darauf folgt. Und das hat ein paar Banden von Stammesorks dazu verleitet, die Gegend zu überfallen. Ich brauche jemanden, der den Orks eine Lektion erteilt. Wäre das was?
+; dlga_merchant_quest_brief:merchant_quest_looters_choice|We've had some fighting near {s5} lately, with all the chaos that comes with it, and that's attracted a few bands of {s6} to raid the surroundings during the confusion. I need somebody to teach those pests a lesson. Sound like your kind of work?
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|Ja, ich mache es.
 dlga_merchant_quest_looters_choice:merchant_quest_stall|Ich fürchte, Ihr müsst jemanden anders dafür finden.
-dlga_merchant_quest_looters_brief:close_window|Hervorragend! Die Orks streunen in der Gegend herum, wahrscheinlich auf der Suche nach Gehöften, die sie überfallen können. Tötet sie und befreit uns von ihrer Gegenwart. Ich werde unserem Lagermeister Bescheid geben und Ihr werdet für jede vernichtete Bande belohnt, bis alle Orks tot sind.
+; dlga_merchant_quest_looters_brief:close_window|Excellent! You'll find the {s6} roaming around the countryside, probably looking for easy prey. Kill them, and rid us of their presence. I'll pass a word to our supply chief, and you will get rewarded for every band you destroy, until they are all are dealt with.
 dlga_merchant_quest_requested:merchant_quest_brief.1|Danke für das Angebot. Ich suche tatsächlich nach jemandem, der etwas {s4} überbringt. Vielleicht könntet Ihr das tun...
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|Ich habe eine Ladung {s6}, die zum {s10} in {s4} gebracht werden muss. Sie brauchen dort in {s4} binnen {reg6} Tagen {reg5} Einheiten {s6}. Könnt Ihr das erledigen?^^[Du würdest {reg14} Ressourcenpunkte von {s14} verdienen]
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_taken|In Ordnung. Ich erledige das.
@@ -972,8 +1006,8 @@ dlga_merchant_quest_brief_reinforce_center:merchant_quest_taken|Gut, ich werde t
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_stall|Tut mir leid, Ihr werdet jemanden anderen finden müssen.
 dlga_mayor_mission_told_kill_quest_bandit:merchant_quest_stall|Ich kann dies gerade nicht tun.
 dlga_mayor_mission_told_hunt_beast:merchant_quest_stall|Ich kann dies gerade nicht tun.
-dlga_merchant_quest_requested:merchant_quest_brief.5|Danke für das Angebot. Ich suche tatsächlich nach jemandem, der uns Nahrungsvorräte bringt. Vielleicht könntet Ihr das tun...
-dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Unsere Vorräte schwinden und die Nachschubwege werden von unseren Feinden angegriffen. Ich brauche jemanden, der uns in {reg6} Tagen {reg5} Einheiten Nahrung liefern kann, oder wir werden hier hungern müssen. Vielleicht haben befreundete Städte etwas für uns über. Was sagt Ihr?
+; dlga_merchant_quest_requested:merchant_quest_brief.5|Thanks for offering to help. Actually I was looking for someone to supply us with Food. Perhaps you can do that...
+; dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Our food supplies are dwindling and the supply trains are getting waylaid by the enemy. I need someone to bring us {reg5} units of food in {reg6} days, or we'll begin to starve. Maybe nearby friendly towns have enough for us too. What do you say?
 dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|Gut. Ich werde Nahrung auftreiben und Euch bringen.
 dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|Tut mir leid, Ihr werdet jemanden anderen finden müssen.
 dlga_merchant_quest_requested:merchant_quest_brief.6|Eine Aufgabe, sagt Ihr? Ich suche tatsächlich nach jemandem, der uns mit Erz und Metall versorgt. Die Minen und Straßen sind nicht mehr sicher und es wird immer schwieriger, Rohmaterial aufzutreiben. Der Feind muss wohl seine eigenen, geheimen Methoden haben, Erz zu schürfen, denn wir haben Orks und andere niedere Kreaturen in voller Rüstung gesehen. Ihre Qualität passt zu den Trägern: es ist schlechtes, billiges Eisen von der unzuverlässigen Sorte, der wir normalerweise nicht trauen würden. Aber in diesen Zeiten haben unsere Schmelzer gelernt, auch mit diesen schlechten Rohstoffen umzugehen, wenn nötig. Jedes bisschen hilft.
@@ -986,8 +1020,8 @@ dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|Ich will eine Lief
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Gut, ich begleite die Lieferung.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Ich fürchte, ich habe nicht genügend Soldaten dabei.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Tut mir leid, ich kann das gerade nicht tun.
-dlga_start:close_window.31|Wir schaffen den Rest selbst. Danke.
-dlga_start:close_window.32|Nun, wir haben beinahe {s21} erreicht. Wir schaffen den Rest des Weges allein. Habt Dank für den Schutz. Viel Glück!^^[{reg14} Ressourcenpunkte von {s14} verdient]
+dlga_start:close_window.33|Wir schaffen den Rest selbst. Danke.
+dlga_start:close_window.34|Nun, wir haben beinahe {s21} erreicht. Wir schaffen den Rest des Weges allein. Habt Dank für den Schutz. Viel Glück!^^[{reg14} Ressourcenpunkte von {s14} verdient]
 dlga_start:merchant_caravan_intro_1|Seid gegrüßt. Ihr müsst unser Geleit sein, richtig?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Ja. Mein Name ist {playername}. Ich werde Euch nach {s1} führen.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Nun, gut zu wissen, dass wir nicht allein reisen werden. Was sollen wir tun?
@@ -996,9 +1030,9 @@ dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|Ihr folgt mir. Ic
 dlga_merchant_caravan_follow_lead:close_window|Gut. Wir sind direkt hinter Euch.
 dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|Wartet hier eine Weile. Ich gehe vor und überprüfe den Weg.
 dlga_merchant_caravan_stay_here:close_window|Gut. Wir warten hier auf Euch.
-dlga_merchant_quest_requested:merchant_quest_brief.9|Ich suche tatsächlich nach {einem fähigen Befehlshaber/einer fähigen Befehlshaberin} wie Euch. Es gibt eine Gruppe lästiger Orks, die die Umgebung befallen hat und nun Nachschublieferungen und verstreuten Kriegern nachstellt. Sie ist all unseren Suchtrupps bis jetzt entwischt. Wenn sie nicht bald jemand aufhält, müsste ich ein ernsthaftes militärisches Vorgehen beantragen...
-dlga_merchant_quest_brief:troublesome_bandits_quest_brief|Ich brauche jemanden, der diese lästigen Orks jagt. Es ist gefährlich, aber ich glaube, Ihr seid dafür geeignet. Was sagt Ihr?^^[Du wirst {reg14} Ressourcenpunkte von {s14} verdienen]
-dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Gut, ich werde die Orks jagen.
+; dlga_merchant_quest_requested:merchant_quest_brief.9|Actually, I was looking for an able commander like you. There's this group of particularly troublesome bandits. They have infested the neighbourhood and are preying on supply trains and stray warriors. They have avoided all our patrols up to now. If someone doesn't stop them soon, I would need to request serious military action...
+; dlga_merchant_quest_brief:troublesome_bandits_quest_brief|I need someone to hunt down those troublesome bandits. It's dangerous work. But I believe that you are the one for it. What do you say?^^[you will earn {reg14} Resource Points of {s14}]
+; dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Alright. I will hunt down the bandits.
 dlga_merchant_quest_taken_bandits:close_window|Werdet Ihr? Ich bin sehr froh, das zu hören. Viel Glück!
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Verzeihung, aber ich habe gerade keine Zeit dafür.
 dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Allerdings! Eine Gruppe Räuber macht die Gegend unsicher und ich weiß nicht, wie ich mit ihnen fertig werden soll. Sie überfallen und berauben betrunkene Rekruten im Schutze der Nacht und verschwinden dann schnell wie der Blitz, wenn die Wachen endlich auftauchen. Wir haben keinen einzigen von ihnen fangen können. Sie greifen nur einzelne Leute an und zeigen sich nicht, wenn eine Gruppe in der Nähe ist. Ich brauche jemanden, der es mit diesen Räubern allein aufnimmt und sie besiegt. Das scheint der einzige Weg zu sein, sie loszuwerden. Schafft Ihr das?
@@ -1017,8 +1051,8 @@ dlga_goods_trade_requested:goods_trade_completed|Sicher, sicher... Hier ist mein
 dlga_goods_trade_completed:goods_merchant_talk|Sonst noch etwas?
 dlga_goods_merchant_talk:close_window|Nichts. Danke.
 dlga_start:troublesome_bandits_intro_1|Was? Wir töten. Wir nehmen dein Essen und dein Reittier und essen alles. Wir essen dich!
-dlga_troublesome_bandits_intro_1:troublesome_bandits_intro_2|Ihr werdet es bereuhen, hier Unruhe zu stiften. Ihr hättet niemals eure Berghöhlen verlassen sollen.
-dlga_troublesome_bandits_intro_2:close_window|Jetzt töten! Später essen!
+; dlga_troublesome_bandits_intro_1:troublesome_bandits_intro_2|You'll regret causing trouble around these parts. You should have never left your holes.
+; dlga_troublesome_bandits_intro_2:close_window|When we're done with you, YOU will be the one to lie in the dirt!
 dlga_start:fangorn_orcs_intro_1|So? Der Alte wird nicht sehr glücklich sein, wenn ihr die Arbeit seiner Diener unterbrecht.
 dlga_fangorn_orcs_intro_1:fangorn_orcs_intro_2|Hört auf, dem Wald zu schaden und zieht ab, oder ihr werdet es bereuen!
 dlga_fangorn_orcs_intro_2:close_window|Harr Harr! Wir roden und branden wie es uns gefällt. Wenn wir mit dir erstmal fertig sind...
@@ -1037,7 +1071,7 @@ dlga_prisoner_chat_3:prisoner_slaughter|Du bist unsere nächste Mahlzeit!{s20}
 dlga_prisoner_chat_4:close_window|Ja? Als wäre ich überhaupt in der Lage, irgendwas zu versuchen! Verzieht Euch!
 dlga_prisoner_slaughter:prisoner_slaughter_02|Eines Tages werdet Ihr bezahlen!
 dlga_prisoner_slaughter:close_window|Eines Tages werdet ihr bezahlen.... Aaa-ghgllr!...
-dlga_start:close_window.33|Weg mit dir, elender Schurke.
+dlga_start:close_window.35|Weg mit dir, elender Schurke.
 dlga_start:town_merchant_talk|Seid gegrüßt, Hauptmann. Wie kann ich Euch dienen?
 dlga_start:town_merchant_talk.1|Guten Tag, was kann ich für Euch tun?
 dlga_town_merchant_talk:trade_requested_weapons|Ich brauche neue Ausrüstung. Zeigt mir, was Ihr in Eurem Warenlager habt.
@@ -1082,20 +1116,20 @@ dlga_town_dweller_brawl:town_dweller_brawl_confirm|Drohst du mir? Die Wachen hie
 dlga_town_dweller_brawl_confirm:close_window|So, wirklich? Dann zeig mal, was du drauf hast.
 dlga_town_dweller_brawl_confirm:close_window.1|Nein, ich dachte Ihr wärt jemand anders.
 dlga_town_dweller_talk:close_window|[Verlassen]
-dlga_start:close_window.34|Heil {playername}, {s24}!
-dlga_start:close_window.35|Verschwinde!
-dlga_start:close_window.36|Lasst mich allein!
+dlga_start:close_window.36|Heil {playername}, {s24}!
+dlga_start:close_window.37|Verschwinde!
+dlga_start:close_window.38|Lasst mich allein!
 dlga_start:player_castle_guard_talk|Ja, Hauptmann?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|Wie läuft die Wache, Soldat?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Alles ist ruhig, Hauptmann. Es gibt nichts zu berichten.
 dlga_player_castle_guard_talk_3:close_window|Gut. Haltet Eure Augen offen.
-dlga_start:close_window.37|Guten Tag, {s24}. Es ist gut, Euch hier in {s10} zu sehen.
-dlga_start:close_window.38|Benehmt Euch und wir haben keine Probleme miteinander.
+dlga_start:close_window.39|Guten Tag, {s24}. Es ist gut, Euch hier in {s10} zu sehen.
+dlga_start:close_window.40|Benehmt Euch und wir haben keine Probleme miteinander.
 dlga_start:hall_guard_easter_egg|Ah, kurz nach Mitternacht. Wisst Ihr? Hier ist kürzlich etwas sehr Ungewöhnliches vor sich gegangen - wollt Ihr davon hören?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Ja. Bitte, erzählt weiter.
 dlga_hall_guard_easter_egg:close_window|Nein, ich interessiere mich nicht für Klatsch.
 dlga_hall_guard_easter_egg_scene:close_window|Nun... eine ungewöhnliche Gruppe von Abenteurern tauchte hier auf: Ein Mensch, ein Zwerg und ein Elb. Und dann...
-dlga_start:close_window.39|Wir dürfen während der Wache nicht reden, Hauptmann.
+dlga_start:close_window.41|Wir dürfen während der Wache nicht reden, Hauptmann.
 dlga_enemy_defeated:close_window|Argh! Ich hasse es.
 dlga_party_relieved:close_window|Danke, dass Ihr uns gegen diese Bastarde geholfen habt.
 dlga_member_chat_00:close_window.1|^^KNURR!^^
@@ -1128,25 +1162,25 @@ dlga_party_reinforce:party_reinforce_end.2|Leider habt Ihr keine Soldaten aus {s
 dlga_party_reinforce_check:party_reinforce_check_1|Ich will die Truppenliste sehen...
 dlga_party_reinforce_check_1:party_reinforce_end|Ihr habt Euch also umentschieden...^Nun gut.
 dlga_party_reinforce_check_1:party_reinforce_end.1|Wir können diese Truppen hier nicht gebrauchen...^Nehmt sie wieder mit.
-dlga_start:close_window.40|Euretwegen bin ich spät! Ein Zauberer kommt nie zu spät!
-dlga_start:close_window.41|Euretwegen bin ich spät! Ein Zauberer kommt nie zu spät!
-dlga_start:close_window.42|Er... ruuuuft...
+dlga_start:close_window.42|Euretwegen bin ich spät! Ein Zauberer kommt nie zu spät!
+dlga_start:close_window.43|Euretwegen bin ich spät! Ein Zauberer kommt nie zu spät!
+dlga_start:close_window.44|Er... ruuuuft...
 dlga_start:secret_guardian_let_through|Halt!
 dlga_secret_guardian_let_through:secret_guardian_let_through1|Ich bin {playername}, {s24}. Lasst mich durch!
 dlga_secret_guardian_let_through1:close_window|Ja, Ihr dürft passieren.
-dlga_start:close_window.44|Du da! Du hast überlebt? Gut! Du kannst hier nicht mit einem Knüppel rumlaufen. Nimm das!
+dlga_start:close_window.46|Du da! Du hast überlebt? Gut! Du kannst hier nicht mit einem Knüppel rumlaufen. Nimm das!
 dlga_start:ori_choose_1|Du kämpfst gut, Vetter! Ich weiß nicht, wie du bis hierher überlebt hast. Ich erinnere mich, dass du dich uns erst kürzlich angeschlossen hast, bevor all dies hier begann... bevor Balin fiel... Woher kommst du?
 dlga_ori_choose_1:ori_choose_finish|Ich war ein Späher, ausgesandt in die Wälder der Beorninger. Ich hörte von Balins Unternehmen und schloss mich euch an.
 dlga_ori_choose_1:ori_choose_finish.1|Ich bin ein entfernter Verwandter, ein Leibwächter aus einer Mine weit von hier. Ich hörte von Balin und zog hierher.
 dlga_ori_choose_1:ori_choose_finish.2|Ich komme aus den Eisenbergen, habe in den Orkkriegen gekämpft und später, als der Krieg vorüber war, in den Minen gearbeitet. Ich hörte von Balin und schloss mich euch an, um wieder Orks zu jagen.
 dlga_ori_choose_finish:close_window|Gut zu wissen! Ich habe dieses Zeug hier, du dürftest wissen, wie man damit umgeht. Wir werden hier standhalten und so viele von Ihnen mit uns nehmen, wie möglich!
-dlga_start:close_window.45|Sieht so aus, als wären deine Arme schon nicht mehr ganz so eingerostet, wie? Hier, nimm einen Schluck hiervon, davon wirst du dich besser fühlen. Es werden noch mehr Orks kommen!
-dlga_start:close_window.46|Ziehe das staubige Ding da aus und trage das hier. Es sollte dich etwas besser schützen. Diese Orks beißen ziemlich hart zu!
-dlga_start:close_window.47|Da kommt etwas Großes! Macht euch bereit!
-dlga_start:close_window.48|Es sind zu viele von denen... aber wir sind Zwerge!
-dlga_start:close_window.49|Diese Orks haben eine Höhle voller Schätze geöffnet. Hier sind einige, die ich gefunden habe, bediene dich.
-dlga_start:close_window.50|Nein... ich höre sie... sie sind dort draußen! Sie sind überall!
-dlga_start:close_window.51|Hier... Von unserem Herrn Balin... Du bist ihrer würdig...
+dlga_start:close_window.47|Sieht so aus, als wären deine Arme schon nicht mehr ganz so eingerostet, wie? Hier, nimm einen Schluck hiervon, davon wirst du dich besser fühlen. Es werden noch mehr Orks kommen!
+dlga_start:close_window.48|Ziehe das staubige Ding da aus und trage das hier. Es sollte dich etwas besser schützen. Diese Orks beißen ziemlich hart zu!
+dlga_start:close_window.49|Da kommt etwas Großes! Macht euch bereit!
+dlga_start:close_window.50|Es sind zu viele von denen... aber wir sind Zwerge!
+dlga_start:close_window.51|Diese Orks haben eine Höhle voller Schätze geöffnet. Hier sind einige, die ich gefunden habe, bediene dich.
+dlga_start:close_window.52|Nein... ich höre sie... sie sind dort draußen! Sie sind überall!
+dlga_start:close_window.53|Hier... Von unserem Herrn Balin... Du bist ihrer würdig...
 dlga_start:party_encounter_hostile_attacker|Ihr könnt gegen uns nicht gewinnen. Ergebt Euch jetzt oder wir töten Euch alle.
 dlga_party_encounter_hostile_attacker:close_window|Greift nicht an! Wir ergeben uns.
 dlga_party_encounter_hostile_attacker:close_window.1|Wir kämpfen bis zum Ende!
@@ -1158,7 +1192,7 @@ dlga_start:kingdom_companion_start|Seid gegrüßt, {playername}...
 ; dlga_kingdom_companion_start:close_window.1|If you have business with our company you should speak with my {s5}, {s3}.
 dlga_kingdom_companion_leaving:close_window|Lebt wohl.
 dlga_party_encounter_hostile_defender:close_window|Nichts. Wir lassen Euch in Ruhe.
-dlga_start:close_window.53|* starrt dich schweigend an *
+dlga_start:close_window.55|* starrt dich schweigend an *
 dlga_start:battle_reason_stated|Gebt auf oder sterbt. Trefft Eure Wahl.
 dlga_battle_reason_stated:close_window|Ich fürchte mich nicht. Ich werde kämpfen.
 dlga_start:free|Hallo. Was kann ich für Euch tun?

@@ -6,9 +6,9 @@ mno_go_bback|Zpět
 menu_start_phase_2|^^^^^ Středozem. Na Východě se zvedá Stín, ^ přichází odtamtud dlouho skryté a  temné věci. ^ Svobodné národy se připravují na válku. Válku jakou nezažily po celý věk. ^ Lidé, elfové, trpaslíci a skřeti - všichni budou hrát svou roli. ^^ Jakou roli, to se teprve ukáže...
 mno_go_forth|Vydej se po své zvolené cestě...
 mno_change_war_start_mode|Válka začíná:  {s7}
+; mno_lore_events_switch|Lore events:  {s7}
 mno_toggle_tutorial|Vyskakovací výuka:  {s7}
 mno_change_tld_options|Změnit NASTAVENÍ TLD.
-mno_see_info_pages|Herní koncepty TLD.
 menu_start_game_3|^^^^^^^^Zvol si scénář:
 mno_custom_battle_scenario_1|Šarvátka, Gondor proti Haradu
 mno_custom_battle_scenario_12|Vyber frakce pro bitvu
@@ -115,6 +115,7 @@ menu_choose_gender|^^^^^^^^^^Tvé pohlaví?
 mno_start_male|Muž
 mno_start_female|Žena
 ; menu_choose_skill|Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.
+mno_see_info_pages|Herní koncepty TLD.
 ; mno_proc|Proceed
 menu_start_as_one|^^^^^^^^^^Jaký typ Vojáka jsi?
 mno_start_default|Staň se {s23} (Default)
@@ -127,6 +128,7 @@ mno_camp_scene|Projít si okolí.
 mno_camp_troop|Prohlédnout{reg10? vojáky:}{reg12? and:}{reg11? zajatce:}.
 mno_camp_action|Použít předmět.
 mno_camp_wait_here|Nějakou dobu tady tábořit.
+; mno_camp_adjust_tracking|Current tracking limit: {reg9}
 mno_camp_options|Změnit NASTAVENÍ TLD.
 mno_Dev_Menu|Menu pro vývojáře
 menu_dev_menu|Tohle je Vývojářské nastavení, které vám zpřístupní hodně cheatů/nástrojů se kterými můžete hrát.^^ Nicméně, to povede k některým WIP událostem, spoštěčům a změnám v kampani, které můžou způsobit pády hry^^ Používej je na vlastní nebezpečí! ^^ Také, když nahlašujete bugy, řekněte nám prosím, jestli používáte Vývojářské menu.
@@ -284,7 +286,7 @@ menu_castle_taken_by_friends|Tady není nic k vidění.
 menu_castle_taken|{s3} padl a teď máš plnou kontrolu nad {reg2?městem:hradem}. {reg1? Zdá se, že ti nic nebrání v tom, zabrat si ho pro sebe...:} 
 menu_castle_taken_2|{s3} padl pod tvým nátlakem a teď máš plnou kontrolu nad tímto hradem. Je čas poslat zprávu {s9}  o tvém vítězství. {s5}
 mno_castle_taken_no_claim|Nežádat o odměnu.
-menu_siege_started_defender|{s1} zahajuje útok na opevnění {s2}. Máš {reg22} bojeschopných jednotek proti nepřátelským {reg11}. Rozhodneš se...
+; menu_siege_started_defender|{s1} is launching an assault against {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. ^{s17}^You decide to...
 mno_siege_defender_join_battle|Připojit se k bitvě.
 mno_siege_defender_troops_join_battle|Přikaž svým mužům, aby se připojili do bitvy bez tebe.
 mno_siege_defender_do_not_join_battle|Nezapojit se.
@@ -358,16 +360,6 @@ menu_legendary_place|^^^^Následoval jsi zvěsti a našel {s1}. Nyní můžeš p
 mno_explore|Prozkoumej toto místo.
 menu_ring_hunter_lair|^^^^Sledoval jsi stopy Lovců Prstenu skrz Temný hvozd a došel jsi k {s1}. Vidíš je, jak se chystají odejít s truhlou.
 mno_attack_lair|Zaútoč na ně hned
-menu_gondor_reinforcement_event|^^^^^Svítí majáky Gondoru, Minas Tirith žádá o pomoc! ^^ Pánové jižních knížectví nyní pochodují na sever, aby bránili Bílé město před přicházející temnotou.
-mno_gondor_reinforcement_event_close|Zavřít
-menu_gondor_beacons|Podíváš se nahoru na {s1}, jeden z výstražných majáků Gondoru, který se používal ke spuštění poplachu v severním a jižním Gondoru.
-mno_gondor_beacons_close|Odejít...
-menu_player_added_to_war_council|^^^^^Dorazil k tobě posel a řekl ti, že teď, když jsi {s24}, požádal tě {s2}, aby jsi se stal součástí jeho válečné rady. Nyní můžeš navrhovat strategie které mohou ovlivnit průběh války.
-mno_player_added_to_war_council_close|Zavřít
-menu_player_added_to_siege_reports|^^^^^Dorazil k tobě posel a řekl ti že nyní, jako {s24}, obdržíš hlášení kdykoli {s2} oblehne město nebo když budou města {s2} v obležení.
-mno_player_added_to_siege_reports_close|Zavřít
-menu_player_added_to_allow_follow|^^^^^Dorazil posel a řekli ti, že jelikož jsi teď {s24}, budeš moci přikázat, aby tě následovaly {s2}, maximální počet skupin, které tě mohou následovat je {reg55}.
-mno_player_added_to_allow_follow_close|Zavřít
 menu_center_besieged_event|^^^^^Dorazil k tobě posel a řekl ti, že {s2} z {s3} obléhá {s1}.
 mno_center_besieged_event_close|Zavřít
 menu_guardian_party_spawned|^^^^^Zvědové hlásí že {s6} shromáždil velkou armádu v blízkosti {s7}, jako poslední naději jak zabránit postupu na hlavní město.
@@ -447,8 +439,9 @@ mno_ruin_menu_0|Prozkoumat to místo.
 mno_ruin_leave|Odejít...
 menu_death|Byl jsi zabit. Válka pokračuje, ale bez tebe.
 menu_animal_ambush|Ty a tví společníci jste se ocitli odděleni od zbytku vaši skupiny, když najednou...
-menu_animal_ambush_success|{s2} před tebou {reg0?padli:padli} jako obilí před kosou! Zanedlouho všichni útočníci leží na zemi, zranění nebo mrtví. {s3}
-menu_animal_ambush_fail|Zvířata vás koušou a trhají {reg0?,: a tvého společníka{reg2?s,:,}} ale naštěstí se ti podařilo je odrazit. Doufejme že na tebe znova nezaútočí .
+; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3} ^^{s10}
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again. ^^{s10}
+; menu_beorn_bear_encounter|^^^As the bear approaches, you realize that it seems calm and doesn't appear threatening. Its small eyes study you with mild interest before it disappears into the undergrowth.
 ; menu_isengard_flooding|^^^^^You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 mno_isengard_continue|Pokračovat
 menu_build_your_scene|Zde si můžeš vytvořit vlastní bitevní scénář, použitím jednoho ze slotů níže a Editačního módu (musíš nejdříve přepnout editační mód na ZAPNOUT v M&B spouštěcí obrazovce v Nastavení). Poté můžeš odeslat scénář, který jsi vytvořil (jmenovitě, sco soubory ze složky TLD/SceneObj)  developerskému týmu TLD, a pokud bude dobrý, může se objevit v pozdějším vydání jako jeden z náhodných bojovišť!^^ Zkus specifikovat ve kterém regionu na mapě chceš aby se scénář odehrával.^ Pár rad: vyhni se hluboké vodě, strmým horám  a dalším nedosažitelným místům pokud nejsi zkušený vývojář a nevíš jak zabránit AI jednotkám aby chodily tam kde nechceš, a vytvoř AI síť na jiném místě.^ (Vložení #0-1 je pro útočníky, #4 pro obránce, nedotýkej se #5-8
@@ -464,9 +457,11 @@ mno_exit_game2|Odejít do hlavního menu
 ; menu_companion_promoted_event|^^^A new hero   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!
 ; menu_mountain_travel|As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.
 ; menu_mountain_travel_arrived|After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}
-; mno_hunt_begin|Let the hunt begin!.
+; mno_hunt_begin|Let the hunt begin!
 ; mno_pick_troops_hunt|Pick companions for the hunt, {reg15} selected
-; menu_hunt_beast_debrief|{s9}^^Your Casualties:{s8}
+; menu_morannon_quest|^^You receive a message that Lord Aragorn, Chieftain of the Rangers of the North, has come to help in the defense of Gondor. Is he indeed the King Returned, as rumor says? A spark of hope. A fool's hope, perhaps. But hope is needed as the Captains of the West assemble their host and march towards the Black Gate. All faithful commanders of the west are summoned to join them there, to strike fast while the Enemy seems undecided.
+; mno_morannon_quest_start|To the Black Gate!
+; menu_healing_of_theoden|^^^Word reaches you that Théoden, King of Rohan, has cast off the weariness of age and taken his sword once more in hand. Throughout the streets of Edoras the clash of shields and spears is heard, and a great cry is raised among the people: ^^Arise now, arise, Riders of Théoden! ^Dire deeds awake, dark is it eastward. ^Let horse be bridled, horn be sounded! ^Forth Eorlingas!
 mno_back|Jdi zpět.
 mno_next|další...
 mno_previous|Předchozí...

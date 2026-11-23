@@ -57,9 +57,9 @@ qst_escort_merchant_caravan|คุ้มกันเสบียงที่ก�
 qst_escort_merchant_caravan_text|คุ้มกันเสบียงที่กำลังขนส่งไปที่ {s8} และพูดคุยกับพวกเขาเมื่ออยู่ใกล้
 qst_deliver_wine|ส่ง {reg5} หน่วยของ {s6} ถึง {s4}
 qst_deliver_wine_text|{s9} จาก {s3} ขอให้คุณส่ง {reg5} หน่วยของ {s6} ไปยัง {s4} ใน 7 วัน
-qst_troublesome_bandits|ตามล่า Goblins เจ้าปัญหา
-qst_troublesome_bandits_text|{s9} จาก {s4} ขอให้คุณตามล่า Goblins เจ้าปัญหาในบริเวณใกล้เคียงเมือง
-qst_deal_with_looters|จัดการกับเผ่า Orcs
+; qst_troublesome_bandits|Hunt Down Troublesome Bandits
+; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town.
+; qst_deal_with_looters|Deal with {s6}
 qst_deal_with_looters_text|ผู้อาวุโสของ {s4} ขอให้คุณจัดการกับชนเผ่า Orc บริเวณรอบๆนี้ {s4}
 qst_deal_with_night_bandits|จัดการกับพวก Night Bandits
 qst_deal_with_night_bandits_text|ผู้อาวุโสแห่ง {s14} ได้ร้องขอให้เจ้าจัดการกับพวก Night Bandits ที่ {s14}.
@@ -78,5 +78,9 @@ qst_deliver_gift_text|คุณได้ร้องขอให้ส่ง {s4
 qst_ring_hunters|นักล่าแหวน
 qst_ring_hunters2|นักล่าแหวน - เสร็จสมบูรณ์
 qst_deliver_message_hobbit|ว่าด้วยเรื่อง Hobbits
+; qst_hunt_beast_coop|Hunt a {s6} with {s9}
+; qst_hunt_beast_mayor|Hunt down a beast
 qst_oath_personal|คำสาบานแห่งการล้างแค้น
+; qst_morannon_quest|The Black Gate Opens
+; qst_morannon_quest_text|All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord.
 qst_quests_end_text|.

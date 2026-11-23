@@ -57,9 +57,9 @@ qst_escort_merchant_caravan|Sprevádzaj karavanu do {s8}
 qst_escort_merchant_caravan_text|Sprevádzaj karavanu do {s8} a prehovor s nimi keď budete neďaleko.
 qst_deliver_wine|Doruč {reg5} kusov {s6} do {s4}
 qst_deliver_wine_text|{s9} z {s3} ťa požiadal aby si doručil {reg5} kusov {s6} do {s4} do 7 dní.
-qst_troublesome_bandits|Postaraj sa o Dobiedzavých Škratov.
-qst_troublesome_bandits_text|{s9} z {s4} ťa požiadal aby si našiel a zabil dobiedzavých škratov v blízkosti mesta.
-qst_deal_with_looters|Postaraj sa o Kmeňových Ohyzdov.
+; qst_troublesome_bandits|Hunt Down Troublesome Bandits
+; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome bandits in the vicinity of the town.
+; qst_deal_with_looters|Deal with {s6}
 qst_deal_with_looters_text|Starosta z {s4}u ťa požiadal, aby si pobil niekoľko tlúp Kmeňových Ohyzdov v okolí {s4}u.
 ; qst_deal_with_night_bandits|Deal with Night Bandits
 ; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night bandits at {s14}.
@@ -78,5 +78,9 @@ qst_deliver_gift_text|Bol si požiadaný aby si doručil {s4} z {s1} do {s3} z {
 qst_ring_hunters|Hľadači Prsteňa
 qst_ring_hunters2|Lovci Prsteňa - Splnené
 qst_deliver_message_hobbit|O Hobitoch
+; qst_hunt_beast_coop|Hunt a {s6} with {s9}
+; qst_hunt_beast_mayor|Hunt down a beast
 qst_oath_personal|Prísaha pomsty
+; qst_morannon_quest|The Black Gate Opens
+; qst_morannon_quest_text|All faithful commanders of the west are summoned to the Black Gate, to challenge the Dark Lord.
 qst_quests_end_text|.

@@ -1904,8 +1904,8 @@ str_trait_title_accursed|Prekliatý
 str_trait_desc_accursed|Pociťuješ, že si prebudil hnev neznámych mocí ďaleko za morom. Tvoji nasledovníci taktiež vnímajú túto kliatbu a boja sa vôkol teba zotrvávať. Každý týždeň je im utŕžený morálny postih.
 str_trait_title_stealthy|Obozretný
 str_trait_desc_stealthy|Rozvinul si svoju schopnosť nepozorovane prenikať do blízkosti svojich nepriateľov. Kedykoľvek podnikáš takúto úlohu, získavaš bonus k nepozorovanosti.
-str_trait_title_berserker|Berserk
-str_trait_desc_berserker|Po mnohých bojoch, kedy si sa vyhýbal užívaniu zbroje, sa tvoja myseľ zocelila ako železo. Keď bojuješ len v ľahkom brnení, každý zabitý sok naplňuje tvoje údy stále väčšou silou.
+; str_trait_title_berserker|Battle-fury
+; str_trait_desc_berserker|Your habit of ignoring any injuries during your reckless fighting has turned into a devastating battle fury. As long as your rage persists, you will now ignore most of the attacks directed at you and, in return, deliver terrible blows.
 str_trait_title_infantry_captain|Veliteľ  pechoty
 str_trait_desc_infantry_captain|Rozvinul si svoju schopnosť veliť pechote. Vďaka tvrdému výcviku, aký poskytuješ zvlášť im, vojaci tohto typu získajú raz za boj malý bonus k životu.
 str_trait_title_archer_captain|Veliteľ lukostrelcov
@@ -1923,7 +1923,7 @@ str_trait_desc_fell_beast|Tvoja koža je poznamenaná mnohými jazvami z nespoč
 str_trait_title_butcher|Mäsiar
 str_trait_desc_butcher|Skúsenosti vycibrili tvoje schopnosti vykrojiť čo najviac mäsa z tiel tvojich padlých nepriateľov. Každý krát, keď necháš podrezať väzňov na mäso, získaš libru mäsa naviac. Tiež získaš po každej bitke viac ľudského mäsa.
 str_trait_title_well_travelled|Zcestovaný
-str_trait_desc_well_travelled|Na dláždených cestách či lesných prtiach, v najvyšších pohoriach aj v najtemnejších údoliach sa ti podarilo nájsť skrýše a dávno zabudnuté divy sveta. Naučil si sa, ako odhaliť nepriateľov dávno pred tým, než si ťa dokážu všimnúť, a tiež určiť najlepšiu cestu pochodu divočinou pre svojich vojakov.
+; str_trait_desc_well_travelled|On stone paved roads and mossy animal paths, over the tallest mountains and in the deepest vales, you've discovered hidden places and seen long forgotten marvels.
 str_trait_title_bear_shape|Tváromenič
 str_trait_desc_bear_shape|Hovorí sa že potomkovia Grizla dokážu nadobudnúť medvediu podobu. Pomocou tvojho príbuzenstva s medveďmi si zistil že tiež máš tento dar.
 str_wound_head|ťažký úder do hlavy
@@ -2433,7 +2433,7 @@ str_woodelf_guildmaster_companion_player_ask|So zvolením Thranduila Elfského K
 ; str_woodelf_guildmaster_companion_none|Indeed? Then you may ask those of our garrison, and maybe some will be willing to follow you. But I sense your desire runs deeper than that. Do you fancy yourself a great hero, like those from Nargothrond or Gondolin of old? Our finest warriors are needed to guard against the growing shadow in Mirkwood. Take with you what soldiers we can spare, and be content.
 str_woodelf_guildmaster_companion_player_none_ok|Dobre, Múdry. Ďakujem. Učiním, ako vravíš.
 str_woodelf_guildmaster_player_found_ok|Ďakujem ti za radu, Múdry. Navaer!
-; str_woodelf_halls_guildmaster_companion|Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit -- she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. See, there she stands -- you may speak with her. Harthon gerithach lend vaer!
+; str_woodelf_halls_guildmaster_companion|Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit -- she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. She rarely stays in these halls - you will likely find her at the edge of the forest outside the gates.. Harthon gerithach lend vaer!
 str_dale_guildmaster_companion_player_ask|Pán starosta, hľadám nejakých statných bojovníkov, ktorí by sa ku mne pripojili na cestách v týchto časoch vojny.
 str_dale_guildmaster_companion_none|Nuž, tu. Toto je naše mesto, vždy sme radšej obchodovali a o prípadných sporoch vyjednávali, pričom sme nepotrebovali mnohých bojaschopných mužov. Mal by si sa po nich poohliadnuť v kasárňach, určite tam nájdeš medzi našou posádkou nejakých odvedencov ochotných ísť s tebou. Avšak neviem o žiadnom veliteľovi, ktorý by ťa nasledovala a opustil svoje stanovisko.
 str_dale_guildmaster_companion_player_none_ok|Tak urobím, starosta. Nech sa ti darí.
@@ -2522,7 +2522,23 @@ str_gundabad_guildmaster_companion_player_none_ok|A ty budeš krotiť svoj slizk
 str_shortname_region_cair_andros|Cair Andros
 str_isengard_hunting_camp_guildmaster_player_found_ok|Pokiaľ dokáže zabíjať, beriem ho. A keď nie, rozpáram ho ako rybu. Ak sa ukáže byť len ďalším naničhodným červom, vrátim sa a odplatím ti plytvanie môjho času!
 ; str_trait_title_animal_fighter|Beast Slayer
-; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.
+; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Your skill at avoiding hostile animals through your wildcraft is greatly enhanced.
+; str_trait_title_horse_fiend|Horse Fiend
+; str_trait_desc_horse_fiend|You are a slayer of horses. Horses are frightened by your sheer presence in battle.
+; str_trait_title_warg_fiend|Warg Fiend
+; str_trait_desc_warg_fiend|Your terrible reputation as a Wolf Slayer has spread. Your presence may frighten wargs and wolves in battle.
+; str_trait_title_troll_slayer|Troll Slayer
+; str_trait_desc_troll_slayer|Your skill in fighting trolls in melee is renowned. You deal additional melee damage against trolls.
+; str_trait_title_troll_hunter|Troll Hunter
+; str_trait_desc_troll_hunter|Your skill in fighting trolls from afar is renowned. You deal additional ranged damage against trolls.
+; str_trait_title_light_armor|Light Armored
+; str_trait_desc_light_armor|You are well adapted to wearing light armor in battle. You receive a fighting and movement bonus when wearing light armor, sclaing with your agility.
+; str_trait_title_ranger|Ranger
+; str_trait_desc_ranger|You are well adapted to fighting in difficult terrain.
+; str_trait_title_night_fighter|Night Fighter
+; str_trait_desc_night_fighter|You have acquired the skills of moving and fighting in the dark. No longer is the night your enemy.
+; str_trait_title_day_fighter|Day Fighter
+; str_trait_desc_day_fighter|You do not fear the bright daylight anymore!
 str_commander|veliteľ
 ; str_companion|companion
 ; str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3|I am {s1}, a soldier of {s2} in the company of {s3}.

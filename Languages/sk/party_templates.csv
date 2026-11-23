@@ -8,14 +8,14 @@ pt_mound|Mohyla hrdiny
 pt_pyre|Pohrebná vatra hrdiny
 pt_wild_troll|Divoký zlobor
 pt_raging_trolls|Zúriví zlobri
-pt_looters|Kmeňoví Ohyzdi
-pt_forest_bandits|Podradní ohyzdi
-pt_mountain_bandits|Divokí Škrati
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+pt_mountain_bandits|Horskí škrati
 pt_steppe_bandits|Vyhnanci z Vrchoviny
 pt_sea_raiders|Korzárski odpadlíci
 pt_deserters|Dezertéri
 pt_merchant_caravan|Kupecký konvoj
-pt_troublesome_bandits|Dobiedzaví Škrati
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|Ohyzdí drevorubači
 pt_village_farmers|Vidiečania
 pt_spy_partners|Podozriví cestovatelia
@@ -148,3 +148,11 @@ pt_volunteers|Zálohy
 pt_refugees|Utečenci
 pt_retreat_troops|Kryť jednotky
 pt_radagast|Nazgul
+pt_looters_new|Lupiči
+pt_brigands|Zbojníci
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

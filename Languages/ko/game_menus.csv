@@ -6,9 +6,9 @@ mno_go_bback|돌아가기
 menu_start_phase_2|^^^^^중간계. 동쪽의 암운은 짙어지고,^ 암흑의 족속들은 오랜 은둔을 끝내고 나오고 있다.^ 자유민들은 그들이 이제껏 보지 못 한 전쟁을 준비하고 있다.^인간, 요정, 난쟁이 그리고 오르크들은 그들의 역할을 행할것이다.^^다만, 어떠한 역할인가는 앞으로 지켜봐야 할 것이리라...
 mno_go_forth|당신이 선택한 길을 따라 앞으로 가십시오...
 ; mno_change_war_start_mode|War Starts:  {s7}
+; mno_lore_events_switch|Lore events:  {s7}
 ; mno_toggle_tutorial|Pop-Up Tutorials:  {s7}
 mno_change_tld_options|제 3세계 옵션 변경
-; mno_see_info_pages|TLD game concepts.
 menu_start_game_3|^^^^^^^당신의 이야기를 선택하세요:
 mno_custom_battle_scenario_1|교전, 곤도르 vs 하라드
 mno_custom_battle_scenario_12|전투를 위한 진영을 선택하세요.
@@ -115,6 +115,7 @@ menu_choose_gender|^^^^^^^^^^성별은?
 mno_start_male|남자
 mno_start_female|여자
 ; menu_choose_skill|Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.
+; mno_see_info_pages|TLD game concepts.
 ; mno_proc|Proceed
 menu_start_as_one|^^^^^^^^^^당신의 병종은 무엇입니까?
 mno_start_default|{s23}되기 (기본)
@@ -127,6 +128,7 @@ mno_camp_scene|주변을 걷는다
 mno_camp_troop|보기{reg10?병사:}{reg12?그리고:}{reg11? 포로:}.
 mno_camp_action|물품 사용
 mno_camp_wait_here|캠프를 차려 시간을 보낸다
+; mno_camp_adjust_tracking|Current tracking limit: {reg9}
 mno_camp_options|제 3세계 옵션 변경
 mno_Dev_Menu|개발자 메뉴
 ; menu_dev_menu|These are development options that give you a lot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
@@ -284,7 +286,7 @@ menu_castle_taken_by_friends|여기서 볼 건 없다.
 menu_castle_taken|여기는 볼 일이 없습니다.\nmenu_castle_taken|{s3}는 당신의 군대에게 함락 되었고, 지금 당신은 {reg2?도시의:성의} 모든 통제권을 가졌습니다.{reg1? 당신이 이 곳을 취하는 것을 막을 자는 아무도 없는 것으로 보입니다...:}
 menu_castle_taken_2|{s3}은 당신의 군사에게 함락되었고, 당신은 성의 모든 통제권을 가졌습니다. {s9}에게 당신의 승리에 대한 서신을 보낼 시간입니다. {s5}
 mno_castle_taken_no_claim|보상 요구하지 않기
-menu_siege_started_defender|{s1}은(는) {s2}에 대한 공성전을 감행하고 있습니다. ^{reg22}명의 아군을 이끌고 {reg11}명의 적을 상대해야 합니다. 당신은...
+; menu_siege_started_defender|{s1} is launching an assault against {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. ^{s17}^You decide to...
 mno_siege_defender_join_battle|전투에 참가하기
 mno_siege_defender_troops_join_battle|당신없이 전투에 참가하라고 명령
 mno_siege_defender_do_not_join_battle|참전하지 않는다
@@ -358,16 +360,6 @@ menu_legendary_place|^^^^당신은 소문을 따라 {s1}을 찾아냈다. 당신
 mno_explore|이 장소 탐험하기
 menu_ring_hunter_lair|^^^^당신은 어둠숲 속 반지 추적자들의 흔적을 따라갔고 {s1}에 도착했고 그들이 상자를 들고 떠나려는 것을 목격했습니다.
 mno_attack_lair|지금 그들을 공격하자
-menu_gondor_reinforcement_event|^^^^^곤도르의 봉화대에 불이 지펴졌군요,  미나스 티리스에 도움이 필요합니다!^^ 남쪽 영지의 군주들은 백색도시에 다가오는 어둠의 무리로부터 미나스 티리스를 구원하기 위해 북쪽을 향할것입니다.
-mno_gondor_reinforcement_event_close|닫기
-menu_gondor_beacons|당신은 곤도르의 봉화중 하나이자, 북부와 남부 곤도르에 신호를 보내기 위해 사용돼었던 {s1}을 방문했습니다.
-mno_gondor_beacons_close|떠나기
-menu_player_added_to_war_council|^^^^^전령이 말하길{s2}가 당신을 그의 전쟁 자문회에 {s24}로서 참여하길 원한다고 합니다. 당신은 이제 이 전쟁의 방식에 영향을 줄 수 있는 전략들을 제안할 수 있습니다.
-mno_player_added_to_war_council_close|닫기
-menu_player_added_to_siege_reports|^^^^^전령이 와 말하길, 당신은 {s24}로서 {s2}가 적진을 공략하거나 되려 {s2}가 공략당할 때 보고를 받게 될 것이라고 했습니다.
-mno_player_added_to_siege_reports_close|닫기
-menu_player_added_to_allow_follow|^^^^^전령이. 당신에게 다가와서 당신은 이제 최대 {reg55}명의 군사를 가진 {s24}로서 {s2}에게 당신을 따르도록 명령할 수 있다고 전했습니다.
-mno_player_added_to_allow_follow_close|닫기
 menu_center_besieged_event|^^^^^전령이 당신에게 황급히 달려와 {s3}의 {s2}가 {s1}을 포위하고 있다고 보고했습니다.
 mno_center_besieged_event_close|닫기
 menu_guardian_party_spawned|^^^^^전령이 {s6}이 수도를 방어하기 위한 최후의 시도로 거대한 군세를 {s7}에 집결시키고 있다 보고했습니다.
@@ -447,8 +439,9 @@ mno_ruin_menu_0|이 장소 탐험하기
 mno_ruin_leave|떠나기
 menu_death|당신은 죽었습니다. 전쟁은 계속되고 있지만 당신은 이제 거기에 끼지 못합니다.
 menu_animal_ambush|당신과 당신의 동료들은 나머지 일행과 떨어져 있다는 것을 알아차렸습니다, 그리고 갑자기...
-menu_animal_ambush_success|{s2}들은 당신 앞에 낫에 잘린 벼이삭마냥 {reg0?쓰러졌습니다:쓰러졌습니다} !  곧 당신을 공격한 이들은 전부 죽거나 기절해 쓰러져 있습니다. {s3}
-; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
+; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3} ^^{s10}
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again. ^^{s10}
+; menu_beorn_bear_encounter|^^^As the bear approaches, you realize that it seems calm and doesn't appear threatening. Its small eyes study you with mild interest before it disappears into the undergrowth.
 ; menu_isengard_flooding|^^^^^You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 ; mno_isengard_continue|Continue
 menu_build_your_scene|아래에 제공된 슬롯 중 하나와 게임 편집 모드를 사용하여 자신만의 전투 장면을 만들 수 있습니다(먼저 M&B 화면 옵션에서 편집 모드를 ON으로 전환한 다음 장면 내에서 Ctrl+E를 눌러 편집 모드에 액세스해야 합니다). 그런 다음 작성한 장면(예: TLD/SceneObj 폴더의 sco 파일)을 TLD의 개발 팀에 제출할 수 있으며, 장면이 좋으면 이후 릴리스에서 랜덤 배틀그라운드 중 하나로 나타날 수 있습니다!^^ 지도에서 장면을 표시할 영역을 지정합니다.^ 몇 가지 힌트: 여러분이 장면 제작자가 아니어서 AI 부대가 원하지 않는 곳을 걷지 못하게 하는 방법을 알지 못한다면 깊은 물, 가파른 산 및 기타 통행할 수 없는 장소를 피하고 AI 메쉬를 다른 장소에 만들 수 있습니다.^ (0-1번 항목은 공격자, 4번 항목은 수비수, 5-8번 항목은 터치하지 마십시오.
@@ -464,9 +457,11 @@ mno_back_3dot|돌아가기...
 ; menu_companion_promoted_event|^^^A new hero   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!
 ; menu_mountain_travel|As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.
 ; menu_mountain_travel_arrived|After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}
-; mno_hunt_begin|Let the hunt begin!.
+; mno_hunt_begin|Let the hunt begin!
 ; mno_pick_troops_hunt|Pick companions for the hunt, {reg15} selected
-; menu_hunt_beast_debrief|{s9}^^Your Casualties:{s8}
+; menu_morannon_quest|^^You receive a message that Lord Aragorn, Chieftain of the Rangers of the North, has come to help in the defense of Gondor. Is he indeed the King Returned, as rumor says? A spark of hope. A fool's hope, perhaps. But hope is needed as the Captains of the West assemble their host and march towards the Black Gate. All faithful commanders of the west are summoned to join them there, to strike fast while the Enemy seems undecided.
+; mno_morannon_quest_start|To the Black Gate!
+; menu_healing_of_theoden|^^^Word reaches you that Théoden, King of Rohan, has cast off the weariness of age and taken his sword once more in hand. Throughout the streets of Edoras the clash of shields and spears is heard, and a great cry is raised among the people: ^^Arise now, arise, Riders of Théoden! ^Dire deeds awake, dark is it eastward. ^Let horse be bridled, horn be sounded! ^Forth Eorlingas!
 mno_back|돌아간다.
 mno_next|다음으로...
 ; mno_previous|Previous...

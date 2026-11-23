@@ -8,14 +8,14 @@ pt_mound|Grabhügel
 pt_pyre|Scheiterhaufen
 pt_wild_troll|Wilder Troll
 pt_raging_trolls|Wütende Trolle
-pt_looters|Stammesorks
-pt_forest_bandits|Orknachzügler
-pt_mountain_bandits|Wilde Orks
+; pt_tribal_orcs|Rogue Goblins
+; pt_forest_bandits|Orc Brigands
+pt_mountain_bandits|Bergorks
 pt_steppe_bandits|Ausgestoßene aus Dunland
 pt_sea_raiders|Abtrünnige Korsaren
 pt_deserters|Fahnenflüchtige
 pt_merchant_caravan|Kaufmannskarawane
-pt_troublesome_bandits|Störende Orks
+; pt_troublesome_bandits|Troublesome Bandits
 pt_fangorn_orcs|Rodende Orks
 pt_village_farmers|Dorfbauern
 pt_spy_partners|Verdächtige Reisende
@@ -148,3 +148,11 @@ pt_volunteers|Reserven
 pt_refugees|Flüchtlinge
 pt_retreat_troops|Rückzugstrupp
 pt_radagast|Einsamer Reiter
+pt_looters_new|Plünderer
+pt_brigands|Briganten
+; pt_marauders|Marauders
+; pt_mirkwood_bandits|Mirkwood Bandits
+; pt_rhovanion_bandits|Rhovanion Bandits
+; pt_easterling_bandits|Easterling Bandits
+; pt_wolf_pack|Wolf Pack
+; pt_warg_pack|Warg Pack

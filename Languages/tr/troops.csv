@@ -606,24 +606,6 @@ trp_ac3_isen_warg_rider|Isengard Warg Binicisi
 trp_ac3_isen_warg_rider_pl|Isengard Warg Binicileri
 trp_ac4_isen_white_hand_rider|Ak El Binicisi
 trp_ac4_isen_white_hand_rider_pl|Ak El Binicileri
-trp_warg_ghost_1b|Binek Kurt
-trp_warg_ghost_1b_pl|Warglar
-trp_warg_ghost_1c|Binek Kurt
-trp_warg_ghost_1c_pl|Warglar
-trp_warg_ghost_1d|Binek Kurt
-trp_warg_ghost_1d_pl|Warglar 
-trp_warg_ghost_a1b|Binek Kurt
-trp_warg_ghost_a1b_pl|Warglar 
-trp_warg_ghost_a1c|Zırhlı Binek Kurt
-trp_warg_ghost_a1c_pl|Zırhlı Warglar
-trp_warg_ghost_a2b|Zırhlı Binek Kurt
-trp_warg_ghost_a2b_pl|Zırhlı Warglar 
-trp_warg_ghost_a2c|Zırhlı Binek Kurt
-trp_warg_ghost_a2c_pl|Zırhlı Warglar 
-trp_warg_ghost_a3a|Zırhlı Binek Kurt
-trp_warg_ghost_a3a_pl|Zırhlı Warglar 
-trp_warg_ghost_h|Dev Kurt
-trp_warg_ghost_h_pl|Dev Warglar
 trp_a2_isen_uruk_tracker|Uruk Hai İz Sürücüsü
 trp_a2_isen_uruk_tracker_pl|Uruk Hai İz Sürücüleri
 trp_a3_isen_large_uruk_tracker|Büyük Uruk Hai İz Sürücüsü
@@ -742,10 +724,10 @@ trp_c4_gunda_warg_rider|Gundabad Warg Binicisi
 trp_c4_gunda_warg_rider_pl|Gundabad Warg Binicileri
 trp_c5_gunda_clan_rider|Kuzeyli Goblin Klan Binicisi
 trp_c5_gunda_clan_rider_pl|Kuzeyli Goblin Klan Binicileri
+trp_i5_gunda_orc_champion_new|Gundabad Ork Şampiyonu
+trp_i5_gunda_orc_champion_new_pl|Gundabad Ork Şampiyonları
 trp_i5_gunda_orc_champion|Gundabad Ork Şampiyonu
 trp_i5_gunda_orc_champion_pl|Gundabad Ork Şampiyonları
-trp_mountain_goblin2|Dag Goblini
-trp_mountain_goblin2_pl|Dag Goblinleri
 trp_tribal_orc2|Kabile Orku
 trp_tribal_orc2_pl|Kabile Orkları
 trp_i5_gunda_orc_champion2_pl|Gundabad Ork Şampiyonları
@@ -801,8 +783,8 @@ trp_dale_captain|Dale Kaptanı
 trp_dale_captain_pl|Dale Kaptanları
 trp_harad_captain|Haradrim Asili
 trp_harad_captain_pl|Haradrim Asilleri
-trp_a5_dun_night_wolf2|Dunnish Gece Kurdu
-trp_a5_dun_night_wolf2_pl|Dunnish Gece Kurdu
+; trp_far_harad_captain|Far Harad Chief
+; trp_far_harad_captain_pl|Far Harad Chiefs
 trp_dun_captain|Dunnish Beyi
 trp_dun_captain_pl|Dunnish Beyleri
 trp_gunda_captain|Gundabad Reisi
@@ -812,7 +794,7 @@ trp_gondor_captain_pl|Gondor Kaptanları
 trp_pel_captain|Pelargir Kaptanı
 trp_pel_captain_pl|Pelargir Kaptanları
 trp_amroth_captain|Dol Amroth Şövalye Kaptanı
-trp_amroth_captain_pl|Dol Amroth Şövalye Kaptanları
+; trp_amroth_captain_pl|Knights Captain of Dol Amroth
 trp_lam_captain|Lamedon kaptanı
 trp_lam_captain_pl|Lamedon kaptanları
 trp_loss_captain|Lossarnach Kaptanı
@@ -823,18 +805,6 @@ trp_blackroot_captain|Blackroot Vadisi Kaptanı
 trp_blackroot_captain_pl|Blackroot Vadisi Kaptanları
 trp_ithilien_captain|Ithilien Okçularının Kaptanı
 trp_ithilien_captain_pl|Ithilien Okçularının Kaptanları
-trp_brigand|Eşkiya
-trp_brigand_pl|Eşkiyalar
-trp_mountain_bandit|Dag Haydutu
-trp_mountain_bandit_pl|Dag Haydutları
-trp_forest_bandit|Orman Haydutu
-trp_forest_bandit_pl|Orman Haydutları
-trp_sea_raider|Deniz Akıncısı
-trp_sea_raider_pl|Deniz Akıncıları
-trp_steppe_bandit|Bozkır Haydutu
-trp_steppe_bandit_pl|Bozkır Haydutları
-trp_manhunter|Kelle Avcısı
-trp_manhunter_pl|Kelle Avcıları
 trp_kidnapped_girl|Kaçırılmış Kız
 trp_kidnapped_girl_pl|Kaçırılmış Kızlar
 trp_refugee|Mülteci
@@ -877,8 +847,8 @@ trp_mirkwood_walker_2|Yeşilorman Elfi
 trp_lorien_walker_1|Lothlórien Elfi
 trp_lorien_walker_2|Lothlórien Elfi
 trp_dwarf_walker|Cüce
-trp_beorn_walker|Köylü Adam
-trp_beorn_walker_fem|Köylü Kadın
+; trp_beorn_walker|Vale Man
+; trp_beorn_walker_fem|Vale Woman
 trp_trainer_4|Talimci
 trp_trainer_gondor|Talimci
 trp_trainer_rohan|Talimci
@@ -1612,14 +1582,22 @@ trp_wild_troll|Vahşi Magara Trollü
 trp_wild_troll_pl|Vahşi magara Trolleri
 trp_ent|Agaç Adam
 trp_ent_pl|Agaç Adamlar
-trp_mountain_goblin|Dag Goblini
-trp_mountain_goblin_pl|Dag Goblinleri
-trp_tribal_orc|Kabile Orku
-trp_tribal_orc_pl|Kabile Orkları
-trp_tribal_orc_warrior|Kabile Ork Savaşçısı
-trp_tribal_orc_warrior_pl|Kabile Ork Savaşçıları
-trp_tribal_orc_chief|Kabile Ork Şefi
-trp_tribal_orc_chief_pl|Kabile Ork Şefleri
+; trp_i1_tribal_goblin|Tribal Goblin
+; trp_i1_tribal_goblin_pl|Tribal Goblins
+; trp_i2_goblin_raider|Mountain Goblin Raider
+; trp_i2_goblin_raider_pl|Mountain Goblin Raiders
+; trp_i3_goblin_warrior|Mountain Goblin Warrior
+; trp_i3_goblin_warrior_pl|Mountain Goblin Warriors
+; trp_i4_goblin_fell_warrior|Fell Goblin Warrior
+; trp_i4_goblin_fell_warrior_pl|Fell Goblin Warriors
+; trp_i5_goblin_great_warrior|Great Goblin Warrior
+; trp_i5_goblin_great_warrior_pl|Great Goblin Warriors
+; trp_c3_goblin_wolf_rider|Mountain Goblin Wolf Rider
+; trp_c3_goblin_wolf_rider_pl|Mountain Goblin Wolf Riders
+; trp_c4_goblin_warg_rider|Goblin Warg Rider
+; trp_c4_goblin_warg_rider_pl|Goblin Warg Riders
+; trp_c5_goblin_great_wargrider|Great Goblin Warg Rider
+; trp_c5_goblin_great_wargrider_pl|Great Goblin Warg Riders
 trp_a3_dism_skirmisher_of_rohan|Rohan Çatışmacısı
 trp_a3_dism_skirmisher_of_rohan_pl|Rohan Çatışmacıları 
 trp_a4_dism_veteran_skirmisher_of_rohan|Kıdemli Rohan Çatışmacısı 
@@ -1636,8 +1614,8 @@ trp_merry_notmet|buçukluk
 trp_pippin|Pippin
 trp_merry|Merry
 trp_grima|Grima Solucandil
-trp_future_animal_0|Kurt
-trp_future_animal_0_pl|Kurtlar
+trp_future_animal_0|Geyik
+trp_future_animal_0_pl|Geyikler
 trp_spider|Kuyutorman Örümcegi
 trp_spider_pl|Kuyutorman Örümcekleri
 trp_spider_strong|Büyük Örümcek
@@ -1664,10 +1642,10 @@ trp_bull|Vahşi Boga
 trp_bull_pl|Vahşi İnek
 trp_bull_strong|Büyük Boga
 trp_bull_strong_pl|Büyük İnek
-trp_stag|Geyik
-trp_stag_pl|Geyikler
-trp_future_animal_4|Kurt
-trp_future_animal_4_pl|Kurtlar
+; trp_future_animal_3|Wild Warg
+; trp_future_animal_3_pl|Wild Wargs
+; trp_future_animal_4|Huge Wild Warg
+; trp_future_animal_4_pl|Huge Wild Wargs
 trp_future_animal_5|Kurt
 trp_future_animal_5_pl|Kurtlar
 trp_guthlaf|Guthláf
@@ -1676,3 +1654,51 @@ trp_duilin|Duilin
 trp_derufin|Derufin
 trp_rumil|Rúmil
 trp_lugdush|Lugdush
+trp_looter|Yagmacı
+trp_looter_pl|Yagmacılar
+trp_brigand|Eşkiya
+trp_brigand_pl|Eşkiyalar
+; trp_marauder|Marauder
+; trp_marauder_pl|Marauders
+; trp_mirkwood_bandit|Mirkwood Bandit
+; trp_mirkwood_bandit_pl|Mirkwood Bandits
+; trp_easterling_bandit|Easterling Bandit
+; trp_easterling_bandit_pl|Easterling Bandits
+; trp_rhovanion_bandit|Rhovanion Bandit
+; trp_rhovanion_bandit_pl|Rhovanion Bandits
+; trp_i2_orc_straggler|Orc Straggler
+trp_i2_orc_straggler_pl|Ork Kaçaklar
+; trp_i3_orc_brigand|Orc Brigand
+; trp_i3_orc_brigand_pl|Orc Brigands
+; trp_i4_orc_marauder|Orc Marauder
+; trp_i4_orc_marauder_pl|Orc Marauders
+; trp_i2_uruk_rogue|Uruk Rogue
+; trp_i2_uruk_rogue_pl|Uruk Rogues
+; trp_i3_uruk_brigand|Uruk Brigand
+; trp_i3_uruk_brigand_pl|Uruk Brigands
+; trp_i4_uruk_marauder|Uruk Marauder
+; trp_i4_uruk_marauder_pl|Uruk Marauders
+trp_warg_ghost_1b|Binek Kurt
+trp_warg_ghost_1b_pl|Warglar
+trp_warg_ghost_1c|Binek Kurt
+trp_warg_ghost_1c_pl|Warglar
+trp_warg_ghost_1d|Binek Kurt
+trp_warg_ghost_1d_pl|Warglar 
+trp_warg_ghost_a1b|Binek Kurt
+trp_warg_ghost_a1b_pl|Warglar 
+trp_warg_ghost_a1c|Zırhlı Binek Kurt
+trp_warg_ghost_a1c_pl|Zırhlı Warglar
+trp_warg_ghost_a2b|Zırhlı Binek Kurt
+trp_warg_ghost_a2b_pl|Zırhlı Warglar 
+trp_warg_ghost_a2c|Zırhlı Binek Kurt
+trp_warg_ghost_a2c_pl|Zırhlı Warglar 
+trp_warg_ghost_a3a|Zırhlı Binek Kurt
+trp_warg_ghost_a3a_pl|Zırhlı Warglar 
+trp_warg_ghost_h|Dev Kurt
+trp_warg_ghost_h_pl|Dev Warglar
+; trp_wild_warg|Wild Warg
+; trp_wild_warg_pl|Wild Wargs
+; trp_wild_warg_strong|Huge Wild Warg
+; trp_wild_warg_strong_pl|Huge Wild Wargs
+trp_warg_ghost_wolf|Büyük kurt
+; trp_warg_ghost_wolf_pl|Great Wolves

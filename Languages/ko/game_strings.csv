@@ -1904,8 +1904,8 @@ str_trait_title_accursed|저주받은
 str_trait_desc_accursed|당신은 바다 너머의 힘이 당신을 주목하고 있다는 것을 느낀다.. 당신의 추종자들 또한 이 재앙을 감지했으며, 당신 주위에 있는 것을 두려워한다. 매주 사기 패널티를 받는다.
 str_trait_title_stealthy|은밀한
 str_trait_desc_stealthy|당신은 은밀한 침투에 대한 자신만의 요령을 터득해 발달시켰다. 당신은 그런 임무를 수행할 때 은신 등급에 대한 보너스를 받는다.
-str_trait_title_berserker|광전사
-str_trait_desc_berserker|갑옷을 입는 것을 피하는 많은 전투를 통해 당신의 흉포한 의지는 쇠와 같이 되었다. 가벼운 장비로 싸우는 동안, 적을 죽일 때마다 우울한 활기를 얻는다.
+; str_trait_title_berserker|Battle-fury
+; str_trait_desc_berserker|Your habit of ignoring any injuries during your reckless fighting has turned into a devastating battle fury. As long as your rage persists, you will now ignore most of the attacks directed at you and, in return, deliver terrible blows.
 str_trait_title_infantry_captain|보병대장
 str_trait_desc_infantry_captain|보병 부대를 지휘하는 신묘한 전술을 발달시켰다. 엄격하고 전문적인 훈련을 통해 당신의 보병 부대는 전투 당 한 번 소량의 체력 보너스를 받는다.
 str_trait_title_archer_captain|궁병대장
@@ -1923,7 +1923,7 @@ str_trait_desc_fell_beast|당신의 가죽은 수많은 전투들로 인해 찢�
 str_trait_title_butcher|도살자
 str_trait_desc_butcher|경험이 당신이 적들의 살에서 더 많은 고기를 추출하는 기술을 발달시켰다. 죄수를 고기를 얻기 위해 죽일 때마다 더 많은 양을 얻는다. 또 당신은 모든 전투에서 더 많은 인간 고기를 얻을 수 있다.
 str_trait_title_well_travelled|잘 여행했다
-str_trait_desc_well_travelled|돌로 포장된 도로와 이끼 낀 가축 길, 가장 높은 산과 가장 깊은 계곡에서 당신은 숨겨진 장소를 발견했고 오랫동안 잊혀진 경이로운 것들을 발견했다. 당신은 경험을 토대로 적들이 당신을 보기 전에 먼저 그들을 발견하는 법을 배웠고, 당신의 군대는 가장 쉬운 길을 선택했다.
+; str_trait_desc_well_travelled|On stone paved roads and mossy animal paths, over the tallest mountains and in the deepest vales, you've discovered hidden places and seen long forgotten marvels.
 str_trait_title_bear_shape|형태변화자
 str_trait_desc_bear_shape|베오른족 사람들은 모습을 변화하는 능력이 있다고들 한다. 곰과의 친족관계를 통해 당신도 그 재능을 갖고 있다는 것을 알게 되었다.
 str_wound_head|머리에 세게 맞은
@@ -2433,7 +2433,7 @@ str_woodelf_guildmaster_companion_player_ask|요정왕 스란두일을 떠나, �
 ; str_woodelf_guildmaster_companion_none|Indeed? Then you may ask those of our garrison, and maybe some will be willing to follow you. But I sense your desire runs deeper than that. Do you fancy yourself a great hero, like those from Nargothrond or Gondolin of old? Our finest warriors are needed to guard against the growing shadow in Mirkwood. Take with you what soldiers we can spare, and be content.
 str_woodelf_guildmaster_companion_player_none_ok|알겠습니다, 장로님. 당신 말대로.
 str_woodelf_guildmaster_player_found_ok|조언에 감사드립니다, 장로님. Navaer!
-; str_woodelf_halls_guildmaster_companion|Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit -- she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. See, there she stands -- you may speak with her. Harthon gerithach lend vaer!
+; str_woodelf_halls_guildmaster_companion|Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit -- she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. She rarely stays in these halls - you will likely find her at the edge of the forest outside the gates.. Harthon gerithach lend vaer!
 str_dale_guildmaster_companion_player_ask|좋은 주인, 나는 이 전쟁에서 내 곁에서 싸울 튼튼한 용맹의 전사를 찾고 있다.
 str_dale_guildmaster_companion_none|자, 이제. 여기 우리 동네에서는 항상 장사를 하며 조용히 일을 처리해왔으며, 최근에 이르기까지 전투원에 대한 필요가 딱히 없었다. 우리 병영에 가서 우리 수비대로부터 어떤 신병들을 구할 수 있는 지 물어봐야할 것 같군. 난 여기 있는 우리 대장들 중 자리를 내팽겨치고 널 따라갈 사람이 없다고 생각해.
 str_dale_guildmaster_companion_player_none_ok|그렇게 하지, 좋은 주인. 안녕히.
@@ -2522,7 +2522,23 @@ str_shortname_region_s_anduin_vale|남부 안두인의 골짜기
 str_shortname_region_cair_andros|카이르 안드로스
 str_isengard_hunting_camp_guildmaster_player_found_ok|만약 그 놈이 잘 해냈다면 내가 데려가지. 만약 아니라면, 생선처럼 내장을 끄집어내주겠어. 만약 그 놈이 다른 쓰레기들과 똑같다는 생각이 들면, 그러고 다시 돌아와서 내 시간을 낭비한 값을 치르게 해주겠다!
 ; str_trait_title_animal_fighter|Beast Slayer
-; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Greatly reduces the chances of encountering hostile animals.
+; str_trait_desc_animal_fighter_|Wild beasts have learned to avoid you. Your skill at avoiding hostile animals through your wildcraft is greatly enhanced.
+; str_trait_title_horse_fiend|Horse Fiend
+; str_trait_desc_horse_fiend|You are a slayer of horses. Horses are frightened by your sheer presence in battle.
+; str_trait_title_warg_fiend|Warg Fiend
+; str_trait_desc_warg_fiend|Your terrible reputation as a Wolf Slayer has spread. Your presence may frighten wargs and wolves in battle.
+; str_trait_title_troll_slayer|Troll Slayer
+; str_trait_desc_troll_slayer|Your skill in fighting trolls in melee is renowned. You deal additional melee damage against trolls.
+; str_trait_title_troll_hunter|Troll Hunter
+; str_trait_desc_troll_hunter|Your skill in fighting trolls from afar is renowned. You deal additional ranged damage against trolls.
+; str_trait_title_light_armor|Light Armored
+; str_trait_desc_light_armor|You are well adapted to wearing light armor in battle. You receive a fighting and movement bonus when wearing light armor, sclaing with your agility.
+; str_trait_title_ranger|Ranger
+; str_trait_desc_ranger|You are well adapted to fighting in difficult terrain.
+; str_trait_title_night_fighter|Night Fighter
+; str_trait_desc_night_fighter|You have acquired the skills of moving and fighting in the dark. No longer is the night your enemy.
+; str_trait_title_day_fighter|Day Fighter
+; str_trait_desc_day_fighter|You do not fear the bright daylight anymore!
 str_commander|사령관
 ; str_companion|companion
 ; str_i_am_s1_a_soldier_of_s2_in_the_company_of_s3|I am {s1}, a soldier of {s2} in the company of {s3}.

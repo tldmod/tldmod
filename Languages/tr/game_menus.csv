@@ -6,9 +6,9 @@ mno_go_bback|Geri Dön
 menu_start_phase_2|^^^^^ Orta Dünya. Doguda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çagdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
 mno_go_forth|Seçtigin yolda ilerle...
 mno_change_war_start_mode|Savaş Başlıyor {s7}
+; mno_lore_events_switch|Lore events:  {s7}
 mno_toggle_tutorial|Açılır Ögreticiler: {s7}
 mno_change_tld_options|TLD ayarlarını degiştir
-mno_see_info_pages|TLD oyun kavramları
 menu_start_game_3|^^^^^^^^Senaryonu seç:
 mno_custom_battle_scenario_1|Çatışma, Gondor, Harad'a karşı
 mno_custom_battle_scenario_12|Savaş için tarafları seç
@@ -115,6 +115,7 @@ menu_choose_gender|^^^^^^^^^^Cinsiyetin?
 mno_start_male|Erkek
 mno_start_female|Kadın
 menu_choose_skill|Lütfen TLD'nin birçok yetenek ve tahsis'i degiştirdigini unutmayın. TLD'de yeni veya uzun süredir oynamadıysanız, özellik ve yeteneklerin açıklamasını okumanızı tavsiye ederiz. ^^Ayrıca oyun konsepti menüsüde birçok TLD'ye özgü içerik açıklanmıştır
+mno_see_info_pages|TLD oyun kavramları
 mno_proc|Devam et
 menu_start_as_one|^^^^^^^^^^Sen ne tür bir askersin?
 mno_start_default|{s23} Ol (Varsayılan)
@@ -127,6 +128,7 @@ mno_camp_scene|Etrafta yürü.
 mno_camp_troop|Gözden geçir{reg10? askerler:}{reg12? and:}{reg11? esirler:}.
 mno_camp_action|Bir nesne kullan.
 mno_camp_wait_here|Burada bir süreligine kamp kur.
+; mno_camp_adjust_tracking|Current tracking limit: {reg9}
 mno_camp_options|TLD ayarını degiştir
 mno_Dev_Menu|Geliştirici Menüsü
 menu_dev_menu|Bunlar, oynarken kullanabileceginiz birçok hile/araç saglayan geliştirme seçenekleridir. Ancak, bu bazı tamamlanmamış etkinlikler, tetikleyiciler ve kampanya degişikliklerine yol açabilir; oyun dengesini bozabilir. Kendi sorumlulugunuzda kullanın! Ayrıca, hata raporu gönderirken Geliştirici Menüsü’nü kullandıgınızı belirtin.
@@ -284,7 +286,7 @@ menu_castle_taken_by_friends|Burada görülecek bir şey yok.
 menu_castle_taken|{s3} askerlerinin eline geçti ve {reg2?kasaba:kale}. 'nin tüm kontrolü artık sana ait. {reg1? Görünüşe göre kaleyi kendin için almanı engelleyen bir şey yok...:}
 menu_castle_taken_2|{s3} askerlerinin eline geçti ve kalenin tüm kontrolü artık sana ait. Artık zaferin için {s9}' a haber verme vakti geldi. {s5}
 mno_castle_taken_no_claim|Ödül isteme.
-menu_siege_started_defender|{s1}, {s2} ' nin duvarlarına bir taarruz başlatıyor. Düşmanın {reg11} 'ine karşı hazır {reg22} askerin var. Kararın...
+; menu_siege_started_defender|{s1} is launching an assault against {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. ^{s17}^You decide to...
 mno_siege_defender_join_battle|Savaşa katıl
 mno_siege_defender_troops_join_battle|Askerlerine sensiz savaşa katılmalarını emret.
 mno_siege_defender_do_not_join_battle|Karışma.
@@ -358,16 +360,6 @@ menu_legendary_place|^^^^Söylentileri takip ettin ve {s1}'i buldun. Şimdi bura
 mno_explore|Etrafı keşfet
 menu_ring_hunter_lair|^^^^Yüzük avcılarının izini Kuyutormanı'nın içinden takip ettin ve {s1}'e vardın. Bir sandıkla gitmeye hazırlandıklarını görüyorsun.
 mno_attack_lair|Onlara şimdi saldır
-menu_gondor_reinforcement_event|^^^^^Gondor işaret ateşleri hazır, Minas Tirith yardım çagrısı yapıyor!^^Güney topraklarının lordları gelecek olan karanlıga karşı Ak Şehri savunmak için kuzeye ilerliyor.
-mno_gondor_reinforcement_event_close|Kapat
-menu_gondor_beacons|Bir zamanlar kuzeyden güney Gondor'a tehlike sinyali veren Gondor işaret kulelerinden biri {s1} bakıyorsun.
-mno_gondor_beacons_close|Ayrıl...
-menu_player_added_to_war_council|^^^^^Bir ulak geldi ve şuanda sana {s24} olarak, {s2} Savaş Konseyi'ne  katılmanı istiyor. Şimdi savaşın seyrini degiştirebilecek stratejiler önerme hakkına sahipsin.
-mno_player_added_to_war_council_close|Kapat
-menu_player_added_to_siege_reports|^^^^^Bir ulak geldi ve şuanda {s24} olarak, her ne zaman {s2} bir merkezi kuşattıgında veya {s2}'nin merkezleri kuşatıldıgında sana bir rapor gönderilecegini söylüyor.
-mno_player_added_to_siege_reports_close|Kapat
-menu_player_added_to_allow_follow|^^^^^Bir ulak geldi ve şuanda {s24} olarak, senin en fazla {reg55} takipçin karşılıgında, {s2}'i seni takip etmesi için komuta edebilecegini söyledi.
-mno_player_added_to_allow_follow_close|Kapat
 menu_center_besieged_event|^^^^^{s1}'in {s3}'ten {s2} tarafından kuşatıldıgını bildiren bir ulak geldi.
 mno_center_besieged_event_close|Kapat
 menu_guardian_party_spawned|^^^^^Gözcüler {s6} 'in  {s7} yakınlarında başkenti son bir kere savunmak amacıyla büyük bir ordu topladıgını rapor ediyor.
@@ -447,8 +439,9 @@ mno_ruin_menu_0|Etrafı keşfet.
 mno_ruin_leave|Ayrıl...
 menu_death|Öldürüldün. Savaş devam etse bile artık onun bir parçası degilsin.
 menu_animal_ambush|Yoldaşlarınla birlikte kendinizi grubunuzdan izole edilmiş olarak buluyorsunuz ve aniden...
-menu_animal_ambush_success|Tıpkı ekinlerin oraga boyun egdigi gibi, {s2}'de sana {reg0?egiliyor:egiliyorlar}! Çok geçmeden tüm saldırganlar yerde yatıyor, yaralı ya da ölü. {s3}
-menu_animal_ambush_fail|Hayvanlar hırlamaya ve sizi ısırmaya çalışıyorlar, şans eseri onları geri püskürtmeyi başardın. Umarım tekrardan saldırmazlar.
+; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3} ^^{s10}
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again. ^^{s10}
+; menu_beorn_bear_encounter|^^^As the bear approaches, you realize that it seems calm and doesn't appear threatening. Its small eyes study you with mild interest before it disappears into the undergrowth.
 menu_isengard_flooding|^^^^^Ölü düşmanlar ve zafer kazanmış müttefikler tarafından çevrili durumdasın, Ent'ler dahil; kükreyerek, gürleyerek ve trompet çalarak, taşların çatladıgı ve Orthanc Kulesi etrafında düştügü bir ses dalgası yaratıyorlar. Adeta uguldayan bir fırtına gibi, sütunları kırıyor, taşların lavinelerini şaftlara dogru savuruyor, büyük taş levhalarını yapraklar gibi havaya fırlatıyorlar... Daha önce hiç görmedigin bir manzara gibi.^^ Bregalad - ya da onu tanıdıgın gibi Quickbeam - yanından geçiyor ve sadece şunu söyleyip duruyor, '{playername}! Dikkat! Kuleden uzak dur -- yakında barajı kıracagız ve Isen'i bu vadiye getirecegiz, kısa bir süreligine. Burada durmak oldukça zor olacaktır, diye düşünüyorum!' Hızlıca, onun tavsiyesini dinleyip Orthanc'tan uzaklaşıyorsun.^^ Yaklaşık gece yarısında, Isengard sürünen kara akıntılar ve göletlerle dolmaya başlıyor. Büyük sütunlar halinde yükselen duman ve buharı görünce ürpermekten kendini alamıyorsun ve bu buharın Kulenin etrafında yükselip büyük bir sarmal oluşturdugunu görüyorsun, adeta alttan alevli, üstten ay ışıgı vuran bulanık bir zirve... Ent'lerin öfkesi yavaş, ancak kararlı bir güce sahip...
 mno_isengard_continue|Devam et
 menu_build_your_scene|Aşagıda verilen yuvalardan birini ve oyun düzenleme modunu kullanarak kendi savaş sahnenizi oluşturabilirsiniz (önce M&B Başlangıç ekranı Seçeneklerinde düzenleme modunu AÇIK duruma getirmeniz, ardından düzenleme moduna erişmek için bir sahnede Ctrl + E tuşlarına basmanız gerekir). Daha sonra oluşturdugunuz sahneleri (yani, TLD / SceneObj klasöründen sco dosyaları) TLD'nin geliştirici ekibine gönderebilirsiniz ve sahneniz iyiyse, sonraki sürümlerde rastgele savaş alanlarından biri olarak görünebilir!^^ Sahnenizin görünmesini istediginiz haritada hangi bölgeyi belirlemeye çalışın.^ Birkaç ipucu: deneyimli bir sahne yapımcısı degilseniz ve yapay zeka birliklerinin istemediginiz yerde yürümesini nasıl engelleyeceginizi ve diger yerlerde yapay zeka örgüsü oluşturmayı bilmiyorsanız derin sulardan, sarp daglardan ve diger geçilmez yerlerden kaçının.^ (Girişler # 0-1 saldırganlar içindir, # 4 savunanlar içindir, # 5-8'e dokunmayın)
@@ -464,9 +457,11 @@ mno_exit_game2|Ana menüye dön
 menu_companion_promoted_event|^^^Yeni bir kahraman   ^^Dünya sana sesleniyor... {s2} savaşçısı {s3}'ün saflarına katıldı. {s1}'in halkı sancagına dogru {reg3?her:his} mitinge!
 menu_mountain_travel|{s24} olarak, Dumanlı ve Gri Daglarındaki tüm yeraltı kasabalarını birbirine baglayan gizli geçit ve tünellere girmene izin verildi. Yön bulma yetenegine baglı, geçit uzun ve tehlikeli olabilir. Ama ovadaki gözetleyen gözlerden gizli olacaksın.
 menu_mountain_travel_arrived|Tehlikeli daglardan ve kara tünellerden sonra, sonunda vardıgın yer {s4}. {s5}^^{s3}
-mno_hunt_begin|Av başlasın!
+; mno_hunt_begin|Let the hunt begin!
 mno_pick_troops_hunt|Av için yoldaş seç,  {reg15} seçildi
-menu_hunt_beast_debrief|{s9}^^Kayıplarınız:{s8}
+; menu_morannon_quest|^^You receive a message that Lord Aragorn, Chieftain of the Rangers of the North, has come to help in the defense of Gondor. Is he indeed the King Returned, as rumor says? A spark of hope. A fool's hope, perhaps. But hope is needed as the Captains of the West assemble their host and march towards the Black Gate. All faithful commanders of the west are summoned to join them there, to strike fast while the Enemy seems undecided.
+; mno_morannon_quest_start|To the Black Gate!
+; menu_healing_of_theoden|^^^Word reaches you that Théoden, King of Rohan, has cast off the weariness of age and taken his sword once more in hand. Throughout the streets of Edoras the clash of shields and spears is heard, and a great cry is raised among the people: ^^Arise now, arise, Riders of Théoden! ^Dire deeds awake, dark is it eastward. ^Let horse be bridled, horn be sounded! ^Forth Eorlingas!
 mno_back|Geri dön
 mno_next|Sonraki...
 mno_previous|Önceki...

@@ -606,24 +606,6 @@ trp_ac3_isen_warg_rider|Vasudvardi varglovas
 trp_ac3_isen_warg_rider_pl|Vasudvardi varglovasság
 trp_ac4_isen_white_hand_rider|A Fehér Kéz lovasa
 trp_ac4_isen_white_hand_rider_pl|A Fehéz Kéz lovassága
-trp_warg_ghost_1b|Varg
-trp_warg_ghost_1b_pl|Vargok
-trp_warg_ghost_1c|Varg
-trp_warg_ghost_1c_pl|Vargok
-trp_warg_ghost_1d|Varg
-trp_warg_ghost_1d_pl|Vargok
-trp_warg_ghost_a1b|Varg
-trp_warg_ghost_a1b_pl|Vargok
-trp_warg_ghost_a1c|Páncélozott varg
-trp_warg_ghost_a1c_pl|Páncélozott vargok
-trp_warg_ghost_a2b|Páncélozott varg
-trp_warg_ghost_a2b_pl|Páncélozott vargok
-trp_warg_ghost_a2c|Páncélozott varg
-trp_warg_ghost_a2c_pl|Páncélozott vargok
-trp_warg_ghost_a3a|Páncélozott varg
-trp_warg_ghost_a3a_pl|Páncélozott vargok
-trp_warg_ghost_h|Böszme varg
-trp_warg_ghost_h_pl|Böszme varg
 trp_a2_isen_uruk_tracker|Uruk-hai nyomkövető
 trp_a2_isen_uruk_tracker_pl|Uruk-hai nyomkövetők
 trp_a3_isen_large_uruk_tracker|Hatalmas uruk-hai nyomkövető
@@ -742,10 +724,10 @@ trp_c4_gunda_warg_rider|Gundabadi varglovas
 trp_c4_gunda_warg_rider_pl|Gundabadi varglovasság
 trp_c5_gunda_clan_rider|Észak klánbeli kobold lovas
 trp_c5_gunda_clan_rider_pl|Észak klánbeli kobold lovasság
+trp_i5_gunda_orc_champion_new|Gundabadi Ork Bajnok
+trp_i5_gunda_orc_champion_new_pl|Gundabadi Ork Bajnokok
 trp_i5_gunda_orc_champion|Gundabadi Ork Bajnok
 trp_i5_gunda_orc_champion_pl|Gundabadi Ork Bajnokok
-trp_mountain_goblin2|Hegyi kobold
-trp_mountain_goblin2_pl|Hegyi koboldok
 trp_tribal_orc2|Törzsi ork
 trp_tribal_orc2_pl|Törzsi orkok
 trp_i5_gunda_orc_champion2_pl|Gundabadi Ork Bajnokok
@@ -801,8 +783,8 @@ trp_dale_captain|Suhatag kapitánya
 ; trp_dale_captain_pl|Captains of Dale
 ; trp_harad_captain|Haradrim Noble
 ; trp_harad_captain_pl|Haradrim Nobles
-trp_a5_dun_night_wolf2|Dún éjfarkas
-trp_a5_dun_night_wolf2_pl|Dún éjfarkas
+; trp_far_harad_captain|Far Harad Chief
+; trp_far_harad_captain_pl|Far Harad Chiefs
 trp_dun_captain|Dún hetman
 trp_dun_captain_pl|Dún hetmanok
 ; trp_gunda_captain|Gundabad Chieftain
@@ -812,7 +794,7 @@ trp_gondor_captain_pl|Gondor kapitányai
 trp_pel_captain|Pelargiri kapitány
 trp_pel_captain_pl|Pelargiri kapitányok
 ; trp_amroth_captain|Knight Captain of Dol Amroth
-; trp_amroth_captain_pl|Knight Captains of Dol Amroth
+; trp_amroth_captain_pl|Knights Captain of Dol Amroth
 trp_lam_captain|Lamedoni kapitány
 trp_lam_captain_pl|Lamedoni kapitányok
 trp_loss_captain|Lossarnachi kapitány
@@ -823,18 +805,6 @@ trp_pinnath_captain_pl|Pinnath Gelini kapitányok
 ; trp_blackroot_captain_pl|Captains of Blackroot Vale
 trp_ithilien_captain|Ithilieni kósza kapitány
 trp_ithilien_captain_pl|Ithilieni kósza kapitányok
-trp_brigand|Briganti
-trp_brigand_pl|Brigantik
-trp_mountain_bandit|Hegyi bandita
-trp_mountain_bandit_pl|Hegyi banditák
-trp_forest_bandit|Erdei bandita
-trp_forest_bandit_pl|Erdei banditák
-trp_sea_raider|Tengeri rabló
-trp_sea_raider_pl|Tengeri rablók
-trp_steppe_bandit|Sztyeppei bandita
-trp_steppe_bandit_pl|Sztyeppei banditák
-trp_manhunter|Embervadász
-trp_manhunter_pl|Embervadászok
 trp_kidnapped_girl|Elrabolt leány
 trp_kidnapped_girl_pl|Elrabolt leányok
 trp_refugee|Menekült
@@ -877,8 +847,8 @@ trp_walker_woman_gondor_w|Gondori nemes
 ; trp_lorien_walker_1|Lothlorien Elf
 ; trp_lorien_walker_2|Lothlorien Elf
 trp_dwarf_walker|Törp
-; trp_beorn_walker|Peasant Man
-trp_beorn_walker_fem|Zsellér nő
+; trp_beorn_walker|Vale Man
+; trp_beorn_walker_fem|Vale Woman
 trp_trainer_4|Kiképző
 trp_trainer_gondor|Kiképző
 trp_trainer_rohan|Kiképző
@@ -1612,14 +1582,22 @@ trp_wild_troll|Vad barlangi troll
 trp_wild_troll_pl|Vad barlangi trollok
 trp_ent|Ent
 trp_ent_pl|Entek
-trp_mountain_goblin|Hegyi kobold
-trp_mountain_goblin_pl|Hegyi koboldok
-trp_tribal_orc|Törzsi ork
-trp_tribal_orc_pl|Törzsi orkok
-trp_tribal_orc_warrior|Törzsi ork harcos
-trp_tribal_orc_warrior_pl|Törzsi ork harcosok
-trp_tribal_orc_chief|Törzsi ork főnök
-trp_tribal_orc_chief_pl|Törzsi ork főnök
+; trp_i1_tribal_goblin|Tribal Goblin
+; trp_i1_tribal_goblin_pl|Tribal Goblins
+; trp_i2_goblin_raider|Mountain Goblin Raider
+; trp_i2_goblin_raider_pl|Mountain Goblin Raiders
+; trp_i3_goblin_warrior|Mountain Goblin Warrior
+; trp_i3_goblin_warrior_pl|Mountain Goblin Warriors
+; trp_i4_goblin_fell_warrior|Fell Goblin Warrior
+; trp_i4_goblin_fell_warrior_pl|Fell Goblin Warriors
+; trp_i5_goblin_great_warrior|Great Goblin Warrior
+; trp_i5_goblin_great_warrior_pl|Great Goblin Warriors
+; trp_c3_goblin_wolf_rider|Mountain Goblin Wolf Rider
+; trp_c3_goblin_wolf_rider_pl|Mountain Goblin Wolf Riders
+; trp_c4_goblin_warg_rider|Goblin Warg Rider
+; trp_c4_goblin_warg_rider_pl|Goblin Warg Riders
+; trp_c5_goblin_great_wargrider|Great Goblin Warg Rider
+; trp_c5_goblin_great_wargrider_pl|Great Goblin Warg Riders
 trp_a3_dism_skirmisher_of_rohan|Rohani csatározó
 trp_a3_dism_skirmisher_of_rohan_pl|Rohani csatározók
 trp_a4_dism_veteran_skirmisher_of_rohan|Rohani talpas veterán csatározó
@@ -1636,8 +1614,8 @@ trp_merry_notmet|félszerzet
 trp_pippin|Pippin
 trp_merry|Trufa
 trp_grima|Kígyónyelvű Gríma
-trp_future_animal_0|Farkas
-trp_future_animal_0_pl|Farkasok
+; trp_future_animal_0|Stag
+; trp_future_animal_0_pl|Stags
 trp_spider|Bakacsinerdei pók
 trp_spider_pl|Bakacsinerdei pókok
 ; trp_spider_strong|Great Spider
@@ -1664,10 +1642,10 @@ trp_werewolf_pl|Farkasember
 ; trp_bull_pl|Wild Kine
 ; trp_bull_strong|Great Bull
 ; trp_bull_strong_pl|Great Kine
-; trp_stag|Stag
-; trp_stag_pl|Stags
-trp_future_animal_4|Farkas
-trp_future_animal_4_pl|Farkasok
+; trp_future_animal_3|Wild Warg
+; trp_future_animal_3_pl|Wild Wargs
+; trp_future_animal_4|Huge Wild Warg
+; trp_future_animal_4_pl|Huge Wild Wargs
 trp_future_animal_5|Farkas
 trp_future_animal_5_pl|Farkasok
 ; trp_guthlaf|Guthláf
@@ -1676,3 +1654,51 @@ trp_duilin|Duilin
 trp_derufin|Derufin
 ; trp_rumil|Rúmil
 ; trp_lugdush|Lugdush
+trp_looter|Fosztogató
+trp_looter_pl|Fosztogatók
+trp_brigand|Briganti
+trp_brigand_pl|Brigantik
+; trp_marauder|Marauder
+; trp_marauder_pl|Marauders
+; trp_mirkwood_bandit|Mirkwood Bandit
+; trp_mirkwood_bandit_pl|Mirkwood Bandits
+; trp_easterling_bandit|Easterling Bandit
+; trp_easterling_bandit_pl|Easterling Bandits
+; trp_rhovanion_bandit|Rhovanion Bandit
+; trp_rhovanion_bandit_pl|Rhovanion Bandits
+; trp_i2_orc_straggler|Orc Straggler
+trp_i2_orc_straggler_pl|Ork kóborgók
+; trp_i3_orc_brigand|Orc Brigand
+; trp_i3_orc_brigand_pl|Orc Brigands
+; trp_i4_orc_marauder|Orc Marauder
+; trp_i4_orc_marauder_pl|Orc Marauders
+; trp_i2_uruk_rogue|Uruk Rogue
+; trp_i2_uruk_rogue_pl|Uruk Rogues
+; trp_i3_uruk_brigand|Uruk Brigand
+; trp_i3_uruk_brigand_pl|Uruk Brigands
+; trp_i4_uruk_marauder|Uruk Marauder
+; trp_i4_uruk_marauder_pl|Uruk Marauders
+trp_warg_ghost_1b|Varg
+trp_warg_ghost_1b_pl|Vargok
+trp_warg_ghost_1c|Varg
+trp_warg_ghost_1c_pl|Vargok
+trp_warg_ghost_1d|Varg
+trp_warg_ghost_1d_pl|Vargok
+trp_warg_ghost_a1b|Varg
+trp_warg_ghost_a1b_pl|Vargok
+trp_warg_ghost_a1c|Páncélozott varg
+trp_warg_ghost_a1c_pl|Páncélozott vargok
+trp_warg_ghost_a2b|Páncélozott varg
+trp_warg_ghost_a2b_pl|Páncélozott vargok
+trp_warg_ghost_a2c|Páncélozott varg
+trp_warg_ghost_a2c_pl|Páncélozott vargok
+trp_warg_ghost_a3a|Páncélozott varg
+trp_warg_ghost_a3a_pl|Páncélozott vargok
+trp_warg_ghost_h|Böszme varg
+trp_warg_ghost_h_pl|Böszme varg
+; trp_wild_warg|Wild Warg
+; trp_wild_warg_pl|Wild Wargs
+; trp_wild_warg_strong|Huge Wild Warg
+; trp_wild_warg_strong_pl|Huge Wild Wargs
+trp_warg_ghost_wolf|Nagy Farkas
+; trp_warg_ghost_wolf_pl|Great Wolves

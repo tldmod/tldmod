@@ -6,9 +6,9 @@ mno_go_bback|Vissza
 menu_start_phase_2|^^^^^ Középfölde. Egy árnyék növekszik Keleten, ^ és sötét dolgok bújnak elő, melyek sokáig rejtőztek. ^ A szabad népek felkészülnek a háborúra, egy olyanra melyet évszázadok óta nem látott a világ. ^ Emberek, Tündék, Törpék, Orkok; mindannyian kiveszik belőle a részüket. ^^ Hogy milyen részt, azt még nem tudni,..
 mno_go_forth|Haladj előre a választott utadon...
 mno_change_war_start_mode|A háború kezdete: {s7}
+; mno_lore_events_switch|Lore events:  {s7}
 mno_toggle_tutorial|Felugró útmutatók: {s7}
 mno_change_tld_options|Az Utolsó Napok beállításainak megváltoztatása.
-mno_see_info_pages|TLD játékkoncepciók.
 menu_start_game_3|^^^^^^^^Válaszd ki a körülményeket:
 mno_custom_battle_scenario_1|Portyázás, Gondor népei Harad ellen
 mno_custom_battle_scenario_12|Válaszd ki a népeket a csatára
@@ -115,6 +115,7 @@ menu_choose_gender|^^^^^^^^^Nemed?
 mno_start_male|Férfi
 mno_start_female|Nő
 ; menu_choose_skill|Please be aware that TLD changes the allocation and effects of many skills. If you are new to TLD or haven't played for a while, you are advised to carefully read the attribute and skill descriptions.^^Many more TLD specifics are also explained in the game concepts section.
+mno_see_info_pages|TLD játékkoncepciók.
 ; mno_proc|Proceed
 menu_start_as_one|^^^^^^^^^^Milyen típusú katona vagy?
 mno_start_default|Légy {s23} (Alapvető)
@@ -127,6 +128,7 @@ mno_camp_scene|Sétálás.
 mno_camp_troop|{reg10? troops:}{reg12? and:}{reg11? prisoners:} áttekintése.
 mno_camp_action|Tárgy használata.
 mno_camp_wait_here|Letáborozás.
+; mno_camp_adjust_tracking|Current tracking limit: {reg9}
 mno_camp_options|Az Utolsó Napok beállításainak megváltoztatása.
 mno_Dev_Menu|Fejlesztői Menü
 menu_dev_menu|Ezek fejlesztői opciók, amelyek rengeteg csalást/eszközt adnak a játékhoz.^^ Azonban ez néhány félkész eseményt, trigger-t, kampányváltozást eredményezhet, amelyek tönkretehetik a játékot.^^ Csak saját felelősségre használd!^^ Emellett hibajelentésnél mindenképp jelezd, hogy a Fejlesztői Menü használatban van.
@@ -284,7 +286,7 @@ menu_castle_taken_by_friends|Semmi említésre méltó nincs itt.
 menu_castle_taken|{s3} elbukott seregeiddel szemben és most teljes hatalmad van {reg2?város:kastély} felett. {reg1? Úgy néz ki, semmi sem akadályoz meg abban, hogy mindet magadhoz vedd...:}
 menu_castle_taken_2|{s3} elbukott seregeiddel szemben, és most teljesen átvetted az irányítást a kastély felett. Ideje üzenni {s9}nek győzelmedről. {s5}
 mno_castle_taken_no_claim|Ne kérj jutalmat.
-menu_siege_started_defender|{s1} támadást indított {s2} falai ellen. {reg22} csapatod áll készen megütközni az ellenség {reg11} csapatával szemben. Úgy döntesz, hogy...
+; menu_siege_started_defender|{s1} is launching an assault against {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. ^{s17}^You decide to...
 mno_siege_defender_join_battle|Csatlakozol a csatához.
 mno_siege_defender_troops_join_battle|Parancsold meg katonáidnak, hogy menjenek a csatába nélküled.
 mno_siege_defender_do_not_join_battle|Nem avatkozol közbe.
@@ -358,16 +360,6 @@ menu_legendary_place|^^^^A szóbeszédeket követve megtaláltad {s1} erdejét. 
 mno_explore|Fedezd fel a helyszínt.
 menu_ring_hunter_lair|^^^^Követted a Gyűrű Vadászok nyomát a Bakacsinerdőn keresztül, és megérkeztél {s1}-hoz/höz. Látod ahogy készen állnak távozni egy ládával.
 mno_attack_lair|Támadd meg őket azonnal
-menu_gondor_reinforcement_event|^^^^^Gondor őrtüzei kigyulladtak, Minas Tirith segítséget kér!^^A déli hűbérbirtokok urai északnak menetelnek hogy megvédjék a Fehér Várost az eljövendő sötétségtől.
-mno_gondor_reinforcement_event_close|Bezár
-menu_gondor_beacons|Felnézel {s1}re, Gondor egyik őrtűzére, amit arra szoktak használni hogy riadóztassák Gondor északi és déli részeit.
-mno_gondor_beacons_close|Távozás...
-menu_player_added_to_war_council|^^^^^Egy hírnök érkezett és azt mondta, hogy mostantól, mint {s24}, {s2} megkért rá hogy legyél a Hadi Tanácsának a tagja. Mostantól ajánlhatsz stratégiákat amik befolyásolhatják a háború menetét.
-mno_player_added_to_war_council_close|Bezár
-menu_player_added_to_siege_reports|^^^^^Egy hírnök érkezett és azt mondta, hogy mostantól, mint {s24}, mostantól jelentéseket kapsz ha valaha {s2} megostromol egy központot vagy amikor {s2} központjait megostromolják.
-mno_player_added_to_siege_reports_close|Bezár
-menu_player_added_to_allow_follow|^^^^^Egy hírnök érkezett és azt mondta, hogy mostantól, mint {s24}, megparancsolhatod {s2}nak/nek hogy kövessen, összesen {reg55} követő áráért.
-mno_player_added_to_allow_follow_close|Bezár
 menu_center_besieged_event|^^^^^Egy hírnök érkezett azt jelentve hogy {s1} ostrom alá lett véve a {s3}ból/ből érkező {s2} által.
 mno_center_besieged_event_close|Bezár
 menu_guardian_party_spawned|^^^^^Felderítők jelentik hogy {s6} összemustrált egy hatalmas sereget {s7} környékén, egy utolsó elkeseredett próbálkozásként hogy megvédhesse a fővárost.
@@ -447,8 +439,9 @@ mno_ruin_menu_0|Fedezd fel a helyszínt.
 mno_ruin_leave|Távozás...
 menu_death|Megöltek. Bár a háború továbbfolyik, te nem leszel többé részese.
 menu_animal_ambush|Te és a társaid elszakadva találjátok magatokat a csapatotok többi tagjától, amikor hirtelen...
-menu_animal_ambush_success|A {s2} {reg0?elhull:elhullanak} előtted mint búza a kasza előtt! Hamarosan az összes támadód a földön fetreng, sebesülten vagy holtan. {s3}
-; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again.
+; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3} ^^{s10}
+; menu_animal_ambush_fail|The animals bite and tear at you, but luckily you managed to fend them off. Hopefully they won't attack you again. ^^{s10}
+; menu_beorn_bear_encounter|^^^As the bear approaches, you realize that it seems calm and doesn't appear threatening. Its small eyes study you with mild interest before it disappears into the undergrowth.
 ; menu_isengard_flooding|^^^^^You are surrounded by dead foes and triumphant allies, including the Ents; they roar, and boom, and trumpet, until stones crack and fall all around the Tower of Orthanc. They are like a howling gale, breaking pillars, hurling avalanches of boulders down the shafts, tossing up huge slabs of stone into the air like leaves... It is like nothing you have ever seen.^^ Bregalad -- or Quickbeam, as you know him -- comes striding by, and pauses only to say, '{playername}! Ware! Keep away from the Tower -- we shall soon break the dam and bring the Isen into this valley, for a little while. You will find it very hard to stay standing here, I think!' Quickly, you take his advice and hasten away from Orthanc.^^ At about midnight, Isengard begins to fill up with black creeping streams and pools. You cannot help but shiver as you see smoke and steam rising in great pillars, and a great coil of vapour rising and snaking around the Tower, until it resembles a tall peak of cloud, fiery underneath and moonlit above. The wrath of the Ents is slow, but possesses an irresistible force...
 mno_isengard_continue|Következő
 menu_build_your_scene|Itt tudod elkészíteni a saját csatajeleneteidet, az egyik alul biztosított férőhelyen és a játék Szerkesztő módjában  (először BE kell kapcsolnod a szerkesztő módot a M&B nyitólapján található Beállításokban).  Aztán beküldheted a jeleneteidet (név szerint, a .sco fájlt a TLD/SceneObj mappából) a TLD fejlesztő csapatának, és ha a jelenetedet jó, akkor egy későbbi kiadásban megjelenhet mint az egyik véletlenszerűen kiválasztott csatatér!^^ Próbáld meg pontosítani hogy a térkép melyik területén szeretnéd a jelenetedet megjeleníttetni.^ Néhány tanács: kerüld a mély vizet, a meredek hegyeket és már átjárhatatlan területeket,  kivéve ha te egy tapasztalt jelenet-készítő vagy és tudod hogy oldd meg, hogy az MI ne menjen olyan helyre, amelyre te nem akarod őket, és hogy ne akadjanak be.u.^ (Bejegyzések; #0-1 a támadóknak, #4 a védekezőknek, ne nyúlj a #5-8-hoz/höz
@@ -464,9 +457,11 @@ mno_back_3dot|Vissza...
 ; menu_companion_promoted_event|^^^A new hero   ^^Word reaches you that {s2} has assembled a host of warriors to join the army of {s3}. The people of {s1} rally to {reg3?her:his} banner!
 ; menu_mountain_travel|As a {s24}, you are allowed to walk the hidden passes and tunnels that connect all underground towns in the Misty Mountains and the Grey Mountains. Depending on your pathfinding skills, the passage will be long and dangerous. But you will stay hidden from all watchful eyes on the plain.
 ; menu_mountain_travel_arrived|After journeying on dangerous mountain paths and through black tunnels, you finally arrive in {s4}. {s5}^^{s3}
-; mno_hunt_begin|Let the hunt begin!.
+; mno_hunt_begin|Let the hunt begin!
 ; mno_pick_troops_hunt|Pick companions for the hunt, {reg15} selected
-; menu_hunt_beast_debrief|{s9}^^Your Casualties:{s8}
+; menu_morannon_quest|^^You receive a message that Lord Aragorn, Chieftain of the Rangers of the North, has come to help in the defense of Gondor. Is he indeed the King Returned, as rumor says? A spark of hope. A fool's hope, perhaps. But hope is needed as the Captains of the West assemble their host and march towards the Black Gate. All faithful commanders of the west are summoned to join them there, to strike fast while the Enemy seems undecided.
+; mno_morannon_quest_start|To the Black Gate!
+; menu_healing_of_theoden|^^^Word reaches you that Théoden, King of Rohan, has cast off the weariness of age and taken his sword once more in hand. Throughout the streets of Edoras the clash of shields and spears is heard, and a great cry is raised among the people: ^^Arise now, arise, Riders of Théoden! ^Dire deeds awake, dark is it eastward. ^Let horse be bridled, horn be sounded! ^Forth Eorlingas!
 mno_back|Vissza.
 mno_next|Következő...
 mno_previous|Előző...
