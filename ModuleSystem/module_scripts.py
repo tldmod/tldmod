@@ -2212,7 +2212,7 @@ scripts = [
 	(assign, "$FormAI_AI_no_defense",0), #Kham - FormAI - don't allow AI Defensive
 	(assign, "$tld_option_bow_shield",3), #InVain: 3 = allow; 2 = player only; 1= NPC only; 0 = none
 	(party_set_slot, "p_main_party", slot_party_number_following_player, 0),
-	(assign, "$lore_mode", 1),# unused      
+	(assign, "$lore_mode", 1),      
     (assign, "$play_ambient_sounds", 1),
     (assign, "$tld_start_war_by_day_or_level", 1), #0= by level (old setting), 1=by day (new setting)
     (assign, "$cheatmode_used", 0),
@@ -28444,8 +28444,8 @@ command_cursor_scripts = [
     (else_try),
 		(eq, ":region", region_n_mirkwood),
 		(try_begin),
-			(is_between, ":x", -2200, -2900),
-			(is_between, ":y", -19600, -21700),
+			(is_between, ":x", -2900, -2200),
+			(is_between, ":y", -21700, -19600),
 			(store_random_in_range, ":rand_x", -2200, -2000),
 			(position_set_x, pos1, ":rand_x"),
 		(else_try),
@@ -28484,6 +28484,7 @@ command_cursor_scripts = [
 		(party_set_position, ":party", pos1),
 		#(display_message, "@Scout Camp Party moved! - Isengard"),
 	(else_try),
+        # east of Mirkwood and Erebor
 		(lt, ":x", -7000),
 		(lt, ":y", -18000),
 		(store_random_in_range, ":rand_x", -3134, -2435),
@@ -28492,12 +28493,15 @@ command_cursor_scripts = [
 		(position_set_y, pos1, ":rand_y"),
 		(party_set_position, ":party", pos1),
 		#(display_message, "@Scout Camp Party moved! - North"),
-	(else_try),
-		(this_or_next|eq, ":region", region_gap_of_rohan),
-		(this_or_next|eq, ":region", region_misty_mountains),
-		(eq, ":region", region_anduin_banks),
+	(else_try), #north of grey mountains
+		(lt, ":y", -24500),
+		(store_random_in_range, ":rand_y", -24500, -23000),
+		(position_set_y, pos1, ":rand_y"),
+		(party_set_position, ":party", pos1),
+		#(display_message, "@Scout Camp Party moved! - Misty Mountains"),
+	(else_try), #other misty mountains, no region check
 		(gt, ":x", 5500),
-		(store_random_in_range, ":rand_x", 3000, 100),
+		(store_random_in_range, ":rand_x", 3300, 4500),
 		(position_set_x, pos1, ":rand_x"),
 		(party_set_position, ":party", pos1),
 		#(display_message, "@Scout Camp Party moved! - Misty Mountains"),
